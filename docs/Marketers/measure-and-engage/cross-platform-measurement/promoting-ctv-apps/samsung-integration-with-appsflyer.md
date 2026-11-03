@@ -1,5 +1,5 @@
 ---
-title: Samsung integration with AppsFlyer
+title: Integración de Samsung con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -15,49 +15,48 @@ x-zendesk:
     - Marketers
     - CTV Attribution
   created_at: '2022-05-03T09:19:48Z'
-  edited_at: '2026-10-05T07:00:31Z'
+  edited_at: '2026-10-07T00:11:24Z'
   id: 5860544738065
-  locale: en-us
+  locale: es
   section: Promoting CTV apps
   section_id: 15328952633489
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/5860544738065-Samsung-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/5860544738065
 ---
-> **At a glance:** Integrate your Samsung Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Samsung.
+> **At a glance:** Integra tu aplicación Samsung Connected TV (CTV) con AppsFlyer para recibir datos de atribución y eventos para tus campañas en Samsung.
 
-## About Samsung CTV attribution
+## Acerca de la atribución de CTV de Samsung
 
-The Samsung Tizen OS for streaming runs across all Samsung TVs.
+El sistema operativo Samsung Tizen para streaming se ejecuta en todos los televisores Samsung.
 
-CTV apps streaming on Samsung can integrate with AppsFlyer via API to receive attribution data and performance measurements about which sources (organic and non-organic) and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+Las aplicaciones de CTV que hacen streaming en Samsung pueden integrarse con AppsFlyer a través de la API para recibir Datos de atribución y mediciones de rendimiento sobre qué fuentes (orgánicas y no orgánicas) y campañas impulsan la apertura de la Aplicación y los eventos in-app. Los marketers confían en estos insights para medir y optimizar las actividades de marketing.
 
-The Samsung API integration supports:
+La integración de la API de Samsung admite:
 
-* Samsung Smart TVs.
-* CTV-to-CTV attribution and event recording, meaning attribution and recording take place on a user's Samsung device.
+* Smart TVs de Samsung.
+* Atribución de CTV a CTV y registro de eventos, lo que significa que la atribución y el registro se realizan en el dispositivo Samsung del usuario.
 
-### Samsung attribution flow
+### Flujo de atribución de Samsung
 
-![[CONFIRM: Diagram of the Samsung CTV attribution flow, showing install, session, and in-app event data moving from the Samsung app to AppsFlyer via the S2S API or SDK]](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
+![[CONFIRM: Diagrama del flujo de atribución de Samsung CTV, que muestra los datos de instalación, Sesión y evento in-app moviéndose desde la Aplicación de Samsung a AppsFlyer a través de la API S2S o del SDK]](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
 
-## Integration procedures
+## Procedimientos de integración
 
-The following table lists the tasks required to integrate your Samsung CTV app with AppsFlyer.
+La siguiente tabla enumera las tareas necesarias para integrar tu aplicación Samsung CTV con AppsFlyer.
 
-| Task | Actions | Who's involved |
+| Tarea | Acciones | ¿Quiénes están involucrados? |
 | --- | --- | --- |
-| App setup | To integrate your Samsung CTV app with AppsFlyer:<ul><li><Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Create an AppsFlyer account</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/user-management">Add account users with appropriate permissions</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">Add your Samsung CTV app in AppsFlyer</Anchor></li></ul> | Marketer |
-| API integration with your app (via S2S or SDK) | There are two methods of integration you can use: server-to-server (S2S) and SDK.<br /><br />For the S2S method, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview">integrate the AppsFlyer API</Anchor> into your app with commands to report the following events to AppsFlyer.<ul><li>First opens</li><li>In-app events</li><li>Sessions</li></ul>**<span id="h_01M349521V96NRS5CJKXZKMA6P"></span>Note**<ul><li>Report installs before in-app events and sessions.</li><li>Send events using the API. Tell your developer which events to send, and verify that you set up and map the events to send to AppsFlyer.</li></ul><br /><br />To report owned media engagements, integrate the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">impression engagement API</Anchor>.<br /><br />For the SDK method, see the developer hub for <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-html5-ctv-sdk">Samsung documentation</Anchor>. | App developer |
-| Partner integration | Add Samsung as an ad network (integrated partner) in AppsFlyer.<ol><li><Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#a-activate-partner">Activate partner</Anchor></li><li>[Optional] Turn on <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#e-install-attribution">**View-through attribution**</Anchor>.</li></ol> | Marketer |
-| Link setup | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor> | Marketer |
-| Report setup/view data | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor> | Marketer/Data engineer |
+| Configuración de la aplicación | Para integrar tu aplicación Samsung CTV con AppsFlyer:<ul><li><Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Crea una cuenta de AppsFlyer.</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/user-management">Añadir usuarios de cuenta con los permisos adecuados</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">Agrega tu aplicación Samsung CTV en AppsFlyer</Anchor></li></ul> | marketer |
+| Integración API con tu aplicación (a través de S2S o SDK) | Hay dos métodos de integración que puedes usar: server-to-server (S2S) y SDK.<br /><br />Para el método S2S, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview">integra la API de AppsFlyer</Anchor> en tu aplicación con comandos para reportar los siguientes eventos a AppsFlyer.<ul><li>Primero abre</li><li>Eventos dentro de la app</li><li>Sesiones</li></ul>**<span id="h_01M349521V96NRS5CJKXZKMA6P"></span>Nota:**<ul><li>Reporta las instalaciones antes que los eventos in-app y las sesiones.</li><li>Envía eventos usando la API. Indica a tu desarrollador qué eventos debe enviar y verifica que configuras y asignas los eventos que vas a enviar a AppsFlyer.</li></ul><br /><br />Para reportar interacciones con Medios propios, integra la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">API de engagement de impresiones</Anchor>.<br /><br />Para el método del SDK, consulta el centro para desarrolladores para ver la <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-html5-ctv-sdk">documentación de Samsung</Anchor>. | Desarrolladores de aplicaciones |
+| Integración de partners | Agrega Samsung como red publicitaria (partner integrado) en AppsFlyer.<ol><li><Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#a-activate-partner">Activar partner</Anchor></li><li>[Opcional] Activa la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#e-install-attribution">**atribución view-through**</Anchor>.</li></ol> | Comercializador |
+| Configuración de OneLink | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor> | Comercializador |
+| Configuración de reportes/ver datos | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Aprender más sobre la disponibilidad de datos en paneles de control y reportes</Anchor> | Marketer/Ingeniero de datos |
 
-## Traits and limitations
+## Rasgos y limitaciones
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Retargeting | Not currently supported |
-| Cost data | Import cost data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file **by email** method. You can also pull data **via API** for Google, Meta, or TikTok. |
-| Supported regions | CTV and preload campaign support varies by region, as follows.<ul><li>AppsFlyer supports Connected TV (CTV) campaigns only in the US, including sharing postbacks with Samsung through the Samsung demand-side platform (DSP) integration (`samsungdsp_int`).</li><li>In the EMEA (Europe, Middle East, and Africa) region, AppsFlyer supports CTV campaigns without sharing postbacks with Samsung through the Samsung EMEA DSP integration (`samsungemea_int`).</li><li>Other regions don't support CTV campaigns.</li><li>AppsFlyer supports preload campaigns globally.</li></ul> |
+| Reorientación | Actualmente no es compatible |
+| Datos de costo | Importa datos de costo a través de <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Cost Import</Anchor> utilizando el método de carga de archivos **por correo electrónico**. También puedes extraer datos **a través de la API** de Google, Meta o TikTok. |
+| Regiones compatibles | El soporte para CTV y las campañas de precarga varía según la región, de la siguiente manera.<ul><li>AppsFlyer admite campañas de Connected TV (CTV) solo en EE. UU., lo que incluye compartir postbacks con Samsung a través de la integración de la plataforma DSP (Demand-side platform) de Samsung (`samsungdsp_int`).</li><li>En la región de EMEA (Europa, Oriente Medio y África), AppsFlyer admite campañas de CTV sin compartir postbacks con Samsung a través de la integración DSP de Samsung para EMEA (`samsungemea_int`).</li><li>Otras regiones no admiten campañas de CTV.</li><li>AppsFlyer admite campañas de precarga a nivel global.</li></ul> |
 
-<div data-zendesk-anchors="01H7Z17A1QPJQH9R5MRBVTMG37=about-samsung-ctv-attribution 01H7Z17A1Q03CEJT848FRFHDPQ=samsung-attribution-flow 01H7Z17A1QQN4FYJXZFS5FP2NY=integration-procedures 01H7Z17A1QVW58B2FZE7SDJHHJ=traits-and-limitations" />
+<div data-zendesk-anchors="about-samsung-ctv-attribution=acerca-de-la-atribuci%C3%B3n-de-ctv-de-samsung 01H7Z17A1QPJQH9R5MRBVTMG37=acerca-de-la-atribuci%C3%B3n-de-ctv-de-samsung samsung-attribution-flow=flujo-de-atribuci%C3%B3n-de-samsung 01H7Z17A1Q03CEJT848FRFHDPQ=flujo-de-atribuci%C3%B3n-de-samsung integration-procedures=procedimientos-de-integraci%C3%B3n 01H7Z17A1QQN4FYJXZFS5FP2NY=procedimientos-de-integraci%C3%B3n traits-and-limitations=rasgos-y-limitaciones 01H7Z17A1QVW58B2FZE7SDJHHJ=rasgos-y-limitaciones" />

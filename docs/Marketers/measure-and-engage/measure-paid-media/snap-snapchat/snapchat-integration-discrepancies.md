@@ -1,5 +1,5 @@
 ---
-title: Snapchat integration discrepancies
+title: Discrepancias de integración de Snapchat
 metadata:
   keywords:
     - Advertisers
@@ -13,76 +13,75 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-01-24T08:57:20Z'
-  edited_at: '2023-11-02T10:20:16Z'
+  edited_at: '2026-08-12T12:21:50Z'
   id: 4417686973841
-  locale: en-us
+  locale: es
   section: Snap (Snapchat)
   section_id: 6551316540945
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4417686973841-Snapchat-integration-discrepancies
+  url: https://support.appsflyer.com/hc/es/articles/4417686973841
 ---
-> **At a glance:** Learn about the different discrepancies between Snapchat and AppsFlyer dashboards and reposts.
+> **En resumen:** Descubre las diferentes discrepancias entre los dashboards de Snapchat y AppsFlyer, y los reportes.
 
-In certain instances, advertisers can see fewer installs on AppsFlyer dashboard than on the Snapchat Ads Manager dashboard. Sometimes, the discrepancy can be addressed by making changes to the settings in the AppsFlyer dashboard or Snapchat Ads Manager (e.g timezone settings, attribution windows etc.). However, a discrepancy between the two dashboards is expected. Advertisers should rely on the AppsFlyer dashboard as the source of truth when evaluating CPI and performance.
+En algunos casos, los anunciantes pueden ver menos instalaciones en el dashboard de AppsFlyer que en el dashboard de Snapchat Ads Manager. A veces, la discrepancia se puede solucionar cambiando la configuración en el dashboard de AppsFlyer o en Snapchat Ads Manager (por ejemplo, la configuración de la zona horaria, las ventanas de atribución, etc.). Sin embargo, es normal que haya discrepancias entre los dos dashboards. Los anunciantes deben basarse en el dashboard de AppsFlyer como fuente de referencia al evaluar el CPI y el rendimiento.
 
-Advertisers should be aware of the following causes and consider taking the necessary actions.
+Los anunciantes deben tener en cuenta las siguientes causas y valorar si es necesario realizar las acciones correspondientes.
 
-## Source of discrepancies and solutions
+## Fuentes de discrepancias y soluciones
 
-Set out below are a number of causes of discrepancies and possible solutions.
+A continuación se describen varias causas de discrepancias y sus posibles soluciones.
 
-### Different lookback windows
+### Diferentes ventanas de lookback
 
-By default, Snapchat Ads Manager and AppsFlyer have different attribution windows.
+De forma predeterminada, Snapchat Ads Manager y AppsFlyer tienen ventanas de atribución diferentes.
 
-| Lookback Window | Snapchat Ads Manager | AppsFlyer |
+| Ventana retrospectiva | Snapchat Ads Manager | AppsFlyer |
 | --- | --- | --- |
-| Click Attribution Lookback Window | 28 days | 7 days by default (can be configured to be 1-30 days) |
-| View-Through Attribution Lookback Window | 1 day | 1 day by default (can be configured to be 1-48 hours) |
+| Ventana retrospectiva de atribución por clics | 28 días | 7 días por defecto (se puede configurar entre 1 y 30 días) |
+| Ventana Retrospectiva de Atribución por Impresiones | 1 día | 1 día por defecto (se puede configurar entre 1 y 48 horas) |
 
-> 👍 **Solutions**
+> 👍 **Soluciones**
 >
-> 1. Configure the attribution window in AppsFlyer to match Snapchat’s default values.
-> 2. Advertisers can select attribution windows in the Ads Manager dashboard to match what they have set as default in their attribution partner (MMP) dashboard. Contact your Snapchat CSM to have your account allowlisted to activate this feature.
+> 1. Configura la ventana de atribución en AppsFlyer para que coincida con los valores predeterminados de Snapchat.
+> 2. Los anunciantes pueden seleccionar ventanas de atribución en el dashboard de Ads Manager para que coincidan con lo que han establecido como predeterminado en el dashboard de su partner de atribución (MMP). Ponte en contacto con tu CSM de Snapchat para que incluyan tu cuenta en la allowlist y así activar esta función.
 
-### Time zone differences
+### Diferencias en la zona horaria
 
-By default, Ads Manager uses PST timezone whereas AppsFlyer uses UTC +0 by default. As a result, for example, Snapchat might attribute an install to Friday while AppsFlyer attributes it to Saturday.
+De forma predeterminada, Ads Manager usa la zona horaria PST, mientras que AppsFlyer usa UTC +0. Como resultado, por ejemplo, Snapchat puede atribuir una instalación al viernes, mientras que AppsFlyer la atribuye al sábado.
 
-> 👍 **Solution**
+> 👍 **SOLUCIÓN**
 >
-> Configure PST as the timezone for each app in AppsFlyer. Click <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">here</Anchor> for details of how to change the time zone for existing apps.
+> Configura PST como zona horaria de cada app en AppsFlyer. Haz clic <Anchor target="_blank" href="/marketers/es/docs/changing-app-time-zone-settings">aquí</Anchor> para ver los detalles sobre cómo cambiar la zona horaria de las apps existentes.
 
-### Multi-channel source attribution
+### Atribución de fuentes multicanal
 
-A user might engage with an ad for the same app on multiple platforms, especially with very large multi-platform campaigns. When the user installs the app, multiple platforms may take credit for the install.
+Un usuario puede interactuar con un anuncio de la misma app en varias plataformas, especialmente en campañas multiplataforma muy grandes. Cuando el usuario instala la app, varias plataformas pueden atribuirse la instalación.
 
 Snapchat Ads Manager:
 
-* Counts each install occurring within the attribution window as an install attributed to Snapchat.
-* Attributes in-app events up to 28 days after install.
+* Cuenta cada instalación que se produce dentro de la ventana de atribución como una instalación atribuida a Snapchat.
+* Atribuye eventos in-app hasta 28 días después de la instalación.
 
-AppsFlyer:
+AppsFlyer
 
-* Applies last touch attribution and credits only the last platform to show the user an ad that led to an install.
-* Attributes in-app events to the source of the install up to 180 days.
+* Aplica la atribución de último toque y atribuye el mérito únicamente a la última plataforma que mostró al usuario un anuncio que dio lugar a una instalación.
+* Atribuye los eventos in-app a la fuente de la instalación durante un máximo de 180 días.
 
-This can lead to discrepancies as high as 40% between AppsFlyer and Snapchat Ads Manager.
+Esto puede dar lugar a discrepancias de hasta el 40% entre AppsFlyer y Snapchat Ads Manager.
 
-> 👍 **Solution**
+> 👍 **SOLUCIÓN**
 >
-> Snapchat is just one mobile application, whereas other platforms own multiple mobile applications or mobile ad networks/exchanges. Due to their additional reach across multiple properties, it is possible that competitors might win the last touch, yet Snapchat is still driving significant value.
+> Snapchat es solo una aplicación móvil, mientras que otras plataformas tienen varias aplicaciones móviles o ad networks/intercambios de anuncios para móviles. Debido a su alcance adicional en varias propiedades, es posible que la competencia gane el último toque y, aun así, Snapchat siga generando un valor significativo.
 >
-> Ultimately, AppsFlyer should be the dashboard used to evaluate eCPI and performance. When there is a discrepancy, default to AppsFlyer as the source of truth. Keep in mind that to fully evaluate the impact of your Snapchat campaigns, you should work with AppsFlyer to keep a record of the volume of conversions where Snapchat was a contributor to the conversion but was not the last touch. There is value to understanding this even if you attribute based on the last touch.
+> En última instancia, AppsFlyer debe ser el dashboard que se utilice para evaluar el eCPI y el rendimiento. Cuando haya una discrepancia, usa AppsFlyer como fuente de referencia. Recuerda que, para evaluar por completo el impacto de tus campañas de Snapchat, debes trabajar con AppsFlyer para mantener un registro del volumen de conversiones en las que Snapchat contribuyó a la conversión, pero no fue el último toque. Es útil entender esto incluso si atribuyes en función del último toque.
 >
-> To manage the discrepancy, advertisers should keep records of the approximate percentage of total conversions for which Snapchat was a contributor but not the last contributor and as such create a new eCPI goal for Snapchat based on this approximate delta.
+> Para gestionar la discrepancia, los anunciantes deben mantener registros del porcentaje aproximado del total de conversiones en las que Snapchat contribuyó, pero no fue el último contribuyente y, en consecuencia, crear un nuevo objetivo de eCPI para Snapchat en función de este delta aproximado.
 
-### Fewer installs in raw data
+### Menos instalaciones en raw data
 
-In certain instances, due to raw data restrictions from Snapchat, installs via <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary?query=glossary#aggregated-advancedprivacy">Aggregated Advanced Privacy</Anchor> won't show in raw data reports. This means that advertisers may see on the AppsFlyer platform fewer installs in raw data than in aggregated data.
+En algunos casos, debido a las restricciones de raw data de Snapchat, las instalaciones a través de <Anchor target="_blank" href="/marketers/es/docs/appsflyer-knowledge-base-glossary?query=glossary#aggregated-advancedprivacy">Aggregated Advanced Privacy</Anchor> no aparecerán en los Reportes de raw data. Esto significa que los anunciantes pueden ver en la plataforma de AppsFlyer menos instalaciones en raw data que en Datos agregados.
 
-> 📄 **See also**
+> 📄 **Ver también**
 >
-> <Anchor target="_blank" href="/marketers/docs/skan-interoperation-with-snapchat">Snapchat and AppsFlyer SKAdNetwork interoperation</Anchor>
+> <Anchor target="_blank" href="/marketers/es/docs/skan-interoperation-with-snapchat">Interoperabilidad de Snapchat y SKAdNetwork de AppsFlyer</Anchor>
 
-<div data-zendesk-anchors="h_01HE7RM7ME5JTFFC2MYSBG6SWC=source-of-discrepancies-and-solutions h_01HE7RM7MEYAZ42A1Y7X8J008Q=different-lookback-windows h_01HE7RM7ME31WACZRZDXRW5CNR=solutions h_01HE7RM7METGPE38QV8FAMW9WA=time-zone-differences h_01HE7RM7MEC91WZDZQMXZ4Q7DV=solution multichannel-source-attribution=multi-channel-source-attribution h_01HE7RM7ME2NAB9ET38P5JD82E=multi-channel-source-attribution h_01HE7RM7MFP65KYHFDZZTC8K3J=solution-1 h_01HE7RM7MFR4CSEK2HCZWB8BT9=fewer-installs-in-raw-data h_01HE7RP6VPPAY2CCSNTJ0RVSXM=see-also" />
+<div data-zendesk-anchors="source-of-discrepancies-and-solutions=fuentes-de-discrepancias-y-soluciones h_01HE7RM7ME5JTFFC2MYSBG6SWC=fuentes-de-discrepancias-y-soluciones different-lookback-windows=diferentes-ventanas-de-lookback h_01HE7RM7MEYAZ42A1Y7X8J008Q=diferentes-ventanas-de-lookback h_01HE7RM7ME31WACZRZDXRW5CNR=soluciones time-zone-differences=diferencias-en-la-zona-horaria h_01HE7RM7METGPE38QV8FAMW9WA=diferencias-en-la-zona-horaria h_01HE7RM7MEC91WZDZQMXZ4Q7DV=soluci%C3%B3n multichannel-source-attribution=atribuci%C3%B3n-de-fuentes-multicanal h_01HE7RM7ME2NAB9ET38P5JD82E=atribuci%C3%B3n-de-fuentes-multicanal h_01HE7RM7MFP65KYHFDZZTC8K3J=soluci%C3%B3n-1 fewer-installs-in-raw-data=menos-instalaciones-en-raw-data h_01HE7RM7MFR4CSEK2HCZWB8BT9=menos-instalaciones-en-raw-data h_01HE7RP6VPPAY2CCSNTJ0RVSXM=ver-tambi%C3%A9n" />

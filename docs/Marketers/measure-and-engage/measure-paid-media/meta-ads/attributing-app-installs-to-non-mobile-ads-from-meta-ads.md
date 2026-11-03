@@ -1,5 +1,5 @@
 ---
-title: Attributing app installs to non-mobile ads from Meta ads
+title: Atribución de instalaciones de la app a anuncios no móviles de Meta
 metadata:
   keywords:
     - Facebook
@@ -17,34 +17,35 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-03-19T07:12:45Z'
-  edited_at: '2023-03-23T15:19:31Z'
+  edited_at: '2026-08-12T12:19:59Z'
   id: 115001460566
-  locale: en-us
+  locale: es
   section: Meta ads
   section_id: 6551109855761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115001460566-Attributing-app-installs-to-non-mobile-ads-from-Meta-ads
+  url: https://support.appsflyer.com/hc/es/articles/115001460566
 ---
-> **At a glance:** Attribute installs coming from non-mobile Meta ads campaigns.
+> **De un vistazo:** Atribuye las instalaciones procedentes de campañas de anuncios no móviles de Meta.
 
-## Attributing mobile app installs
+## Atribución de instalaciones de apps móviles
 
-Advertisers create ads on Meta ads to serve different objectives, including brand awareness, website conversions, and more. However, the influence of seeing or clicking these ads may indirectly lead to a mobile app install. 
+Los anunciantes crean anuncios en Meta para servir distintos objetivos, como el reconocimiento de marca, las conversiones en sitios web y más. Sin embargo, la influencia de ver o hacer clic en estos anuncios puede dar lugar indirectamente a una instalación de la app móvil. 
 
-AppsFlyer can attribute mobile app installs back to any type of ad on Meta ads, helping advertisers understand the full impact of their marketing efforts.
+AppsFlyer puede atribuir instalaciones de apps móviles a cualquier tipo de anuncio en Meta, lo que ayuda a los anunciantes a comprender el impacto total de sus esfuerzos de marketing.
 
-**Note**: Clicks that display in the dashboard for non-mobile app ads could refer to any of the following; likes, comments, shares, video plays or link clicks.
+**Nota**: Los clics que se muestran en el dashboard de los anuncios de apps no móviles pueden referirse a cualquiera de los siguientes: Me gusta, comentarios, compartidos, reproducciones de vídeo o clics en enlaces.
 
-**To attribute mobile app installs to any ad type:**
+**Para atribuir instalaciones de aplicaciones móviles a cualquier tipo de anuncio:**
 
-1. Go to your Meta advertiser account and select Ads Manager, or follow this link: <Anchor target="_blank" href="https://business.facebook.com/adsmanager/">https://business.facebook.com/adsmanager/</Anchor>
-2. Click **Create Campaign**
-3. Select an objective **other than** default objectives for mobile apps, such as:
-   * **App Installs**
-   * **Traffic** or **Conversions** (used for App Engagement campaigns)
-4. Continue to set up an **Ad Set** and **Advert** as usual.
-5. On the **Adverts** tab make sure to associate your app under Mobile App Events Recording.
+1. Ve a tu cuenta de anunciante de Meta y selecciona Ads Manager, o sigue este enlace: <Anchor target="_blank" href="https://business.facebook.com/adsmanager/">https://business.facebook.com/adsmanager/</Anchor>
+2. Haz clic en **Crear campaña**
+3. Selecciona un objetivo **distinto de** los objetivos predeterminados para aplicaciones móviles, como:
+   * **Instalaciones de la app**
+   * **Tráfico** o **Conversiones** (se usa en campañas de engagement en la aplicación)
+4. Sigue configurando un **conjunto de anuncios** y un **anuncio** como de costumbre.
+5. En la pestaña **Anuncios**, asegúrate de asociar tu app en Registro de eventos de apps móviles.
 
 ![fb_app_events_ui.jpg](https://files.readme.io/304df530557ddaf6252d9a7c11fcb54b549f5cbdb7ebd4b0da61f847a57867a3-360016319338.jpg)
 
-Once this has been configured, you can see mobile app installs resulting from these ads on both the Meta ads and AppsFlyer dashboards in real time.
+Una vez configurado, puedes ver en tiempo real en los dashboards de Meta y AppsFlyer las instalaciones de apps móviles resultantes de estos anuncios.
+
+<div data-zendesk-anchors="attributing-mobile-app-installs=atribuci%C3%B3n-de-instalaciones-de-apps-m%C3%B3viles" />

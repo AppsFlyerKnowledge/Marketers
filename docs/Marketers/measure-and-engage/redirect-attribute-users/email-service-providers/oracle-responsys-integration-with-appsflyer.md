@@ -1,5 +1,5 @@
 ---
-title: Oracle Responsys integration with AppsFlyer
+title: Integración de Oracle Responsys con AppsFlyer
 metadata:
   keywords:
     - Oracle Responsys
@@ -15,96 +15,95 @@ x-zendesk:
     - Marketers
     - OneLink
   created_at: '2019-11-20T09:26:13Z'
-  edited_at: '2026-08-14T16:22:53Z'
+  edited_at: '2026-08-22T00:33:41Z'
   id: 360003798297
-  locale: en-us
+  locale: es
   section: Email service providers
   section_id: 6551247620881
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360003798297-Oracle-Responsys-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/360003798297
 ---
-> **At a glance:** Oracle Responsys, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. Email recipients who click the link are deep linked into your app.
+> **At a glance:** Oracle Responsys, una plataforma de entrega y análisis de correo electrónico, integra AppsFlyer OneLink dentro de los correos electrónicos. Los destinatarios de correo electrónico que hacen clic en el enlace deben tener enlaces profundos a tu aplicación.
 
 ![oracle-responsys-af-logo.png](https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png)
 
-ESPs (Email Service Providers) can be excellent sources for segmented user traffic.
+Los ESP (proveedores de servicios de correo electrónico) pueden ser excelentes fuentes para el tráfico segmentado de usuarios.
 
-One of the challenges with ESPs is performing correct attribution and deep linking. ESPs wrap the deep linking URL with their own ESP's click recording domain. This procedure often breaks the functionality of iOS Universal Links and Android App Links.
+Uno de los desafíos con los ESP es realizar una atribución y unos enlaces profundos correctos. Los ESP envuelven la URL del enlace profundo con el dominio de registro de clics de su propio ESP. Este procedimiento a menudo rompe la funcionalidad de los enlaces universales de iOS y los enlaces de aplicaciones de Android.
 
-However, deep linking and click recording are still possible with ESPs that support Universal Links and App Links on top of their click recording domain. In addition, you can set up your own click domain to act as the click recording domain.
+Sin embargo, los enlaces profundos y el registro de clics siguen siendo posibles con los ESP que admiten enlaces universales y enlaces de aplicaciones además de su dominio de grabación de clics. Además, puedes configurar tu propio dominio de clic para que actúe como dominio de registro de clics.
 
-## Prerequisites
+## Requisitos previos
 
-* Configure your app to support <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking with OneLink</Anchor>.
-* Verify your SDK version (both Android and iOS)
+* Configura tu aplicación para admitir <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">enlaces profundos con OneLink</Anchor>.
+* Verifica la versión de tu SDK (tanto Android como iOS).
 
 <Tabs>
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-* AppsFlyer iOS SDK version 4.9.0 (or above)
+* Versión 4.9.0 del SDK de iOS para AppsFlyer (o superior)
 
 </Tab>
 
 <Tab title="Android">
 
-* AppsFlyer Android SDK version 4.9.0 (or above)
+* Versión 4.9.0 del SDK de Android para AppsFlyer (o superior)
 
 </Tab>
 </Tabs>
 
-## Setting up Oracle Responsys click domain
+## Configuración del dominio de clic de Oracle Responsys
 
-Follow this section to set up your click domain (click recording domain) in Oracle Responsys.
+Sigue esta sección para configurar tu dominio de clic (dominio de registro del clic) en Oracle Responsys.
 
-### Step 1: Set up a click domain in Oracle Responsys
+### Paso 1: Configura un dominio de clic en Oracle Responsys
 
-To set up a click domain, follow Oracle Responsys official guide on how to <Anchor target="_blank" href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCEA/LinkTable_Main.htm?cshid=LinkTable_Main">create click domains</Anchor>. Oracle Responsys uses Link Tables to help record clicks for a specific campaign
+Para configurar un dominio de clic, sigue la guía oficial de Oracle Responsys sobre cómo <Anchor target="_blank" href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCEA/LinkTable_Main.htm?cshid=LinkTable_Main">crear dominios de clic</Anchor>. Oracle Responsys utiliza tablas de enlaces para ayudar a registrar clics para una campaña específica
 
-**Note**, in Link tables, you can define **IOS link URL** to be the same as the Link URL:
+**Ten en cuenta** que, en las tablas de enlaces, puedes definir la **URL de enlace IOS** para que sea la misma que la URL de enlace:
 
 ![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
 
-Once you set click domains in Link Tables, Responsys uses these domains to wrap OneLinks that you include in email campaigns. This way, Responsys can record clicks in their system while preserving OneLink and deep linking functionality.
+Una vez que configures los dominios de clic en las tablas de enlaces, Responsys utiliza estos dominios para encapsular los OneLink que incluyas en campañas de correo electrónico. De esta manera, Responsys puede registrar clics en su sistema mientras conserva los OneLinks y la funcionalidad de enlaces profundos.
 
-### Step 2: Give Responsys an AASA (iOS) and an Asset Links file (Android)
+### Paso 2: Proporciona a Responsys un archivo AASA (iOS) y un archivo Asset Links (Android)
 
 <div id="aasa-for-ios" />
 
-<Accordion title="AASA for iOS">
+<Accordion title="AASA para iOS">
 
-For Responsys to support iOS Universal Links, they need an AASA file. See the following instructions.
+Para que Responsys sea compatible con los enlaces universales de iOS, necesita un archivo AASA. Consulta las siguientes instrucciones.
 
-When you set up OneLink with Universal Links, you already have an AASA associated with the OneLink. To obtain the AASA:
+Cuando configuras OneLink con enlaces universales, ya tienes un AASA asociado con OneLink. Para obtener el AASA:
 
-1. Go to OneLink configuration and find a OneLink that is configured with Universal Links.
-2. Add **/.well-known/apple-app-site-association** to the end of the OneLink URL.
-3. Paste the OneLink in the browser address bar and hit enter. For example: **`<OneLinkSubdomain>`.onelink.me/.well-known/apple-app-site-association**. When you do so, the AASA file is downloaded to your computer. You can open it using any simple text editor.
-4. Send this AASA file to Responsys. For more information and to learn more about the contents of this file, see page 11 of <Anchor target="_blank" href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/pdf/ios-universal-links-dev-guide.pdf">Oracle's guide</Anchor>.
+1. Ve a la configuración de OneLink y busca un OneLink que esté configurado con enlaces universales.
+2. Agrega **/.well-known/apple-app-site-association** al final de la URL de OneLink.
+3. Pega el OneLink en la barra de direcciones del navegador y presiona enter. Por ejemplo: **`<OneLinkSubdomain>`.onelink.me/.well-known/apple-app-site-association**. Cuando lo haces, el archivo AASA se descarga en tu computadora. Puedes abrirlo usando cualquier editor de texto simple.
+4. Envía este archivo AASA a Responsys. Para obtener más información y conocer más sobre el contenido de este archivo, consulta la página 11 de la <Anchor target="_blank" href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/pdf/ios-universal-links-dev-guide.pdf">guía de Oracle</Anchor>.
 
 </Accordion>
 
 <div id="asset-links-for-android" />
 
-<Accordion title="Asset Links for Android">
+<Accordion title="Asset Links para Android">
 
-When you set up OneLink with App Links, you already have an Asset Links file associated with the OneLink. To obtain the Asset Links file. To obtain the Asset Links file:
+Cuando configuras OneLink con enlaces de aplicaciones, ya tienes un archivo Asset Links asociado con OneLink. Para obtener el archivo Asset Links. Para obtener el archivo Asset Links:
 
-1. Go to OneLink configuration and find a OneLink that is configured with App Links.
-2. Add **/.well-known/assetlinks.json** to the end of the OneLink URL.
-3. Paste the OneLink in the browser address bar and hit enter. For example:**`<OneLinkSubdomain>`.onelink.me/.well-known/assetlinks.json**. When you do so, the Asset Links file is downloaded to your computer. You can open it using any simple text editor.
-4. Send this Asset Links file to Responsys. For more information and to learn more about the contents of this file, see <Anchor target="_blank" href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/android/app-links/">this guide</Anchor>.
+1. Ve a la configuración de OneLink y busca un OneLink que esté configurado con enlaces de aplicaciones.
+2. Agrega **/.well-known/assetlinks.json** al final de la URL de OneLink.
+3. Pega el OneLink en la barra de direcciones del navegador y presiona enter. Por ejemplo:**`<OneLinkSubdomain>`.onelink.me/.well-known/assetlinks.json**. Cuando lo haces, el archivo Asset Links se descarga en tu computadora. Puedes abrirlo usando cualquier editor de texto simple.
+4. Envía este archivo Asset Links a Responsys. Para obtener más información y saber más sobre el contenido de este archivo, consulta <Anchor target="_blank" href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/android/app-links/">esta guía</Anchor>.
 
 </Accordion>
 
-## Setting up your app
+## Configuración de tu aplicación
 
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
-<Accordion title="Step 1 for Android: Setting up your app to support App Links">
+<Accordion title="Paso 1 para Android: Configuración de tu aplicación para que sea compatible con App Links">
 
-#### Adding the click domain to the activity in the Android manifest
+#### Agregar el dominio de clic a la actividad en el manifiesto de Android
 
-In the Android manifest, add the click domain host and any prefix in the activity tag of the activity you want to deep link into.
+En el manifiesto de Android, agrega el host del dominio de clic y cualquier prefijo en la etiqueta de actividad de la actividad a la que quieres hacer un enlace profundo.
 
 ```html Markup
 <activity android:name=".DeepLinkActivity">
@@ -119,20 +118,20 @@ In the Android manifest, add the click domain host and any prefix in the activit
 </activity>
 ```
 
-#### Setting up the app to resolve click domains
+#### Configuración de la aplicación para resolver dominios de clic
 
-The SDK needs to resolve the OneLink behind the click domain to get the campaign details. The details are returned in the `onAppOpenAttribution` method.
+El SDK necesita resolver el OneLink detrás del dominio de clic para obtener los detalles de la campaña. Los detalles se devuelven en el método `onAppOpenAttribution`.
 
-To resolve click domains:
+Para resolver dominios de clic:
 
-1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information please refer to SDK documentation <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">here</Anchor>.  
+1. Asegúrate de que la versión de tu SDK sea al menos 4.9.0.
+2. Enumera los dominios de clic en la API del SDK `setResolveDeepLinkURLs`. Esta API debe llamarse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">aquí</Anchor>.  
 
    ```java
    AppsFlyerLib.getInstance().setResolveDeepLinkURLs("click.example.com");
    ```
 
-   * **Important!** If you are using Movable Ink (MI) in conjunction with Oracle, you need to get the MI CNAME and internal domains from your MI account manager and add them to `setResolveDeepLinkURLs`, in addition to the click link for Oracle. For example:
+   * **Nota:** **Importante:** Si estás utilizando Movable Ink (MI) junto con Oracle, necesitas obtener el MI CNAME y los dominios internos de tu administrador de cuenta MI y agregarlos a `setResolveDeepLinkURLs`, además del enlace de clic para Oracle. Por ejemplo:
 
      ```java
      AppsFlyerLib.getInstance().setResolveDeepLinkURLs("oracle-click.example.com", "mi.example.com", "example.micpn.com");
@@ -142,28 +141,27 @@ To resolve click domains:
 
 <div id="step-1-for-ios-setting-up-your-app-to-support-universal-links" />
 
-<Accordion title="Step 1 for iOS: Setting up your app to support Universal Links">
+<Accordion title="Paso 1 para iOS: Configurar tu aplicación para que sea compatible con enlaces universales">
 
-This section discusses how to set up your app to support Universal Links.
+En esta sección se explica cómo configurar tu aplicación para que sea compatible con enlaces universales.
 
-#### Associating click domains in Xcode
+#### Asociar dominios de clic en Xcode
 
-1. In Xcode, click on your project.
-2. Click on ***Capabilities***.
-   ![configure-xcode-deeplinking-domain.png](https://files.readme.io/177ab2205a106cac6f5167f857d39b39cf51c305dd3e3af94e4c12ddf206a475-49839256668433.png)
-3. Turn ***Associated Domains*** on.
-4. Click the + sign and add your click domain. For example, applinks:click.example.com.
+1. En Xcode, haz clic en tu proyecto.
+2. Haz clic en ***Capabilities***. ![configure-xcode-deeplinking-domain.png](https://files.readme.io/90d0dcc0eba2d7d081ab7d5d4ea697e9257b9107af463fa8c973169f8a2651db-49839256220433.png)
+3. Activa ***Associated Domains***.
+4. Haz clic en el signo + y agrega tu dominio de clic. Por ejemplo, applinks:click.example.com.
 
 </Accordion>
 
-### Step 2: Setting up the app to resolve click domains
+### Paso 2: Configurar la aplicación para resolver dominios de clic
 
-The SDK needs to resolve the OneLink behind the click domain to get the campaign details. The details are returned in the `onAppOpenAttribution` method.
+El SDK necesita resolver el OneLink detrás del dominio de clic para obtener los detalles de la campaña. Los detalles se devuelven en el método `onAppOpenAttribution`.
 
-To resolve click domains:
+Para resolver dominios de clic:
 
-1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information please refer to SDK documentation <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">here</Anchor>.  
+1. Asegúrate de que la versión de tu SDK sea al menos 4.9.0.
+2. Enumera los dominios de clic en la propiedad del SDK `resolveDeepLinkURLs`. Esta propiedad debe establecerse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">aquí</Anchor>.  
 
    <Tabs>
    <Tab title="Objective-C">
@@ -183,16 +181,16 @@ To resolve click domains:
    </Tab>
    </Tabs>
 
-   * **Important!** If you are using Movable Ink (MI) in conjunction with Oracle, you need to get the MI CNAME and internal domains from your MI account manager and add them to `setResolveDeepLinkURLs`, in addition to the click link for Oracle. Domain examples:
-     * Oracle domain: oracle-click.example.com
-     * MI CNAME domain: mi.example.com
-     * MI internal domain: example.micpn.com
-3. Add the following code so that the SDK can resolve the click recording domain:  
+   * **Nota:** **Importante:** Si estás utilizando Movable Ink (MI) junto con Oracle, necesitas obtener el MI CNAME y los dominios internos de tu administrador de cuenta MI y agregarlos a `setResolveDeepLinkURLs`, además del enlace de clic para Oracle. Ejemplos de dominios:
+     * Dominio de Oracle: oracle-click.example.com
+     * Dominio MI CNAME: mi.example.com
+     * Dominio interno de MI: ejemplo.micpn.com
+3. Agrega el siguiente código para que el SDK pueda resolver el dominio de registro de clics:  
 
    <Tabs>
    <Tab title="Objective-C">
 
-   Add this code in AppDelegate.m
+   Agrega este código en AppDelegate.m
 
    ```objectivec
    - (NSDictionary *)allHTTPHeaderFieldsForResolveDeepLinkURL:(NSURL *)URL {
@@ -209,10 +207,10 @@ To resolve click domains:
 
    <Tab title="Swift">
 
-   Add this code in AppDelgate.swift
+   Agrega este código en AppDelgate.swift
 
    ```swift
-   func allHTTPHeaderFields(forResolveDeepLinkURL URL: URL!) -> [String : String]! {
+   func allHTTPHeaderFields(forResolveDeepLinkURL URL: -> [String : String]! URL!) -> [String : String]! {
        if (URL.host == "click.example.com") {
            /// Change User-Agent
            return [:]
@@ -225,30 +223,30 @@ To resolve click domains:
    </Tab>
    </Tabs>
 
-## Sending your first email
+## Envío de tu primer correo electrónico
 
-1. Create a OneLink URL in the Link Management page (or manually).
-2. When creating the OneLink URL make sure to URL encode all parameter values.
-3. The following parameters are highly recommended to use:
-   * pid (media source) - Use a media source that signifies this usage such as Email.
-   * c (campaign) - The name of the campaign you want to measure.
-   * af\_dp - The deep link URI scheme you want to deep link your users into.
-   * af\_web\_dp - Where to redirect users clicking the link on a desktop.
-   * af\_ios\_url - Where to redirect users that don't have the app clicking the link on an iOS device.
-   * af\_android\_url - Where to redirect users that don't have the app click the link on an Android device.
-4. Place the OneLink URL in the email that you create in Responsys. Example:
+1. Crea una URL de OneLink en la página de Gestión de enlaces (o manualmente).
+2. Al crear la URL de OneLink, asegúrate de codificar por URL todos los valores de los parámetros.
+3. Los siguientes parámetros son muy recomendables para usar:
+   * pid (media source): utiliza una fuente de medios que signifique este uso, por ejemplo Email.
+   * c (campaña): el nombre de la campaña que se quiere medir.
+   * af\_dp: el esquema de URI de enlace profundo al que deseas enlazar profundamente a tus usuarios.
+   * af\_web\_dp: dónde redirigir a los usuarios haciendo clic en el enlace en un dispositivo de escritorio.
+   * af\_ios\_url - Dónde redirigir a los usuarios que no tienen la aplicación al hacer clic en el enlace en un dispositivo iOS.
+   * af\_android\_url - Dónde redirigir a los usuarios que no tienen la aplicación al hacer clic en el enlace en un dispositivo Android.
+4. Introduce la URL de OneLink en el correo electrónico que hayas creado en Responsys. Ejemplo:
 
    ```http
    <a href="greatapp.onelink.me/abcd/1234567">Download my great app!</a>
    ```
 
-   At this stage, Responsys wraps the above link with the click domain that you set in the previous steps. Any click on the click domain redirects to the OneLink attribution link. If the app is installed on the user's device, the click domain deep links into the app.
+   En esta etapa, Responsys envuelve el enlace anterior con el dominio de clic que configuraste en los pasos anteriores. Cualquier clic en el dominio de clic redirige al enlace de atribución de OneLink. Si la aplicación está instalada en el dispositivo del usuario, el dominio de clic se enlaza profundamente a la aplicación.
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> URL parameters are not URL encoded in this example, just for the sake of readability:
+> Los parámetros de URL no están codificados por URL en este ejemplo, para que sean legibles.
 >
 > ```http
 > https://greatapp.onelink.me/abcd?pid=Email&c=Spring_Newsletter&is_retargeting=true&
@@ -256,13 +254,13 @@ To resolve click domains:
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
 
-### Testing your links
+### Prueba tus enlaces
 
-After following all the required steps mentioned above, creating the appropriate OneLink URL, and placing it in an email, send yourself a test email.
+Después de seguir todos los pasos requeridos mencionados anteriormente, crear la URL de OneLink adecuada y colocarla en un correo electrónico, envíate un correo electrónico de prueba.
 
-What should you expect?
+¿Qué debes esperar?
 
-If you have the app installed, the app should be invoked. If the relevant AppsFlyer SDK deep linking APIs are implemented you should be deep linked into the relevant content.  
-In addition, a click should appear in both the AppsFlyer dashboard, attributed to the provided media source and campaign, and also in Responsys data.
+Si tienes la aplicación instalada, la aplicación debe ser invocada. Si se implementan las API de enlaces profundos relevantes del SDK de AppsFlyer, debes tener un enlace profundo al contenido relevante.  
+Además, debe aparecer un clic tanto en el panel de control de AppsFlyer, atribuido a la fuente de medios y campaña proporcionadas, como también en los datos de Responsys.
 
-<div data-zendesk-anchors="h_01HDNSK7GR33AN2M4GP956S1FD=prerequisites h_01HDNSK7GR84QSRTS86GH556WK=setting-up-oracle-responsys-click-domain h_01HDNSK7GRHYJZSMYCMT9RVEBW=step-1-set-up-a-click-domain-in-oracle-responsys h_01HDNSK7GRW57NNXMN1SWFTTFZ=step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android h_01HDNSK7GR77N60SFVBD57S9GQ=aasa-for-ios h_01HDNSK7GR6ADJCPG63ZVP19NJ=asset-links-for-android h_01HDNSK7GRN751HAPPQ3HVRMDG=setting-up-your-app h_01HDNSK7GRHCK378A8XKMK7ZZF=step-1-for-android-setting-up-your-app-to-support-app-links h_01HDNSK7GRQNQGWXAEGHSTHADH=adding-the-click-domain-to-the-activity-in-the-android-manifest h_01HDNSK7GRP9ND0MHC3ZHD7G8H=setting-up-the-app-to-resolve-click-domains h_01HDNSK7GRJ682QYAMPB4PSGRZ=step-1-for-ios-setting-up-your-app-to-support-universal-links h_01HDNSK7GSRENM232MQ25EB3J3=associating-click-domains-in-xcode h_01HDNSK7GSP08G2EQSNVR5G45B=step-2-setting-up-the-app-to-resolve-click-domains h_01HDNSK7GSA9VAMTRFCX8SZGSC=sending-your-first-email h_01HDNSK7GSTAJXAP6KGKE9TD8T=testing-your-links" />
+<div data-zendesk-anchors="prerequisites=requisitos-previos h_01HDNSK7GR33AN2M4GP956S1FD=requisitos-previos setting-up-oracle-responsys-click-domain=configuraci%C3%B3n-del-dominio-de-clic-de-oracle-responsys h_01HDNSK7GR84QSRTS86GH556WK=configuraci%C3%B3n-del-dominio-de-clic-de-oracle-responsys step-1-set-up-a-click-domain-in-oracle-responsys=paso-1-configura-un-dominio-de-clic-en-oracle-responsys h_01HDNSK7GRHYJZSMYCMT9RVEBW=paso-1-configura-un-dominio-de-clic-en-oracle-responsys step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android=paso-2-proporciona-a-responsys-un-archivo-aasa-ios-y-un-archivo-asset-links-android h_01HDNSK7GRW57NNXMN1SWFTTFZ=paso-2-proporciona-a-responsys-un-archivo-aasa-ios-y-un-archivo-asset-links-android h_01HDNSK7GR77N60SFVBD57S9GQ=aasa-for-ios h_01HDNSK7GR6ADJCPG63ZVP19NJ=asset-links-for-android setting-up-your-app=configuraci%C3%B3n-de-tu-aplicaci%C3%B3n h_01HDNSK7GRN751HAPPQ3HVRMDG=configuraci%C3%B3n-de-tu-aplicaci%C3%B3n h_01HDNSK7GRHCK378A8XKMK7ZZF=step-1-for-android-setting-up-your-app-to-support-app-links adding-the-click-domain-to-the-activity-in-the-android-manifest=agregar-el-dominio-de-clic-a-la-actividad-en-el-manifiesto-de-android h_01HDNSK7GRQNQGWXAEGHSTHADH=agregar-el-dominio-de-clic-a-la-actividad-en-el-manifiesto-de-android setting-up-the-app-to-resolve-click-domains=configuraci%C3%B3n-de-la-aplicaci%C3%B3n-para-resolver-dominios-de-clic h_01HDNSK7GRP9ND0MHC3ZHD7G8H=configuraci%C3%B3n-de-la-aplicaci%C3%B3n-para-resolver-dominios-de-clic h_01HDNSK7GRJ682QYAMPB4PSGRZ=step-1-for-ios-setting-up-your-app-to-support-universal-links associating-click-domains-in-xcode=asociar-dominios-de-clic-en-xcode h_01HDNSK7GSRENM232MQ25EB3J3=asociar-dominios-de-clic-en-xcode step-2-setting-up-the-app-to-resolve-click-domains=paso-2-configurar-la-aplicaci%C3%B3n-para-resolver-dominios-de-clic h_01HDNSK7GSP08G2EQSNVR5G45B=paso-2-configurar-la-aplicaci%C3%B3n-para-resolver-dominios-de-clic sending-your-first-email=env%C3%ADo-de-tu-primer-correo-electr%C3%B3nico h_01HDNSK7GSA9VAMTRFCX8SZGSC=env%C3%ADo-de-tu-primer-correo-electr%C3%B3nico testing-your-links=prueba-tus-enlaces h_01HDNSK7GSTAJXAP6KGKE9TD8T=prueba-tus-enlaces" />

@@ -1,5 +1,5 @@
 ---
-title: Google Ads (AdWords)—Create web campaigns for website apps
+title: 'Google Ads (AdWords): crea campañas web para aplicaciones web'
 metadata:
   keywords:
     - Advertisers
@@ -15,244 +15,243 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2026-04-07T12:46:10Z'
-  edited_at: '2026-10-16T09:34:25Z'
+  edited_at: '2026-10-20T03:47:54Z'
   id: 45498975339537
-  locale: en-us
+  locale: es
   section: Google Ads
   section_id: 6551205645457
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/45498975339537-Google-Ads-AdWords-Create-web-campaigns-for-website-apps
+  url: https://support.appsflyer.com/hc/es/articles/45498975339537
 ---
-> **At a glance:** Set up a Google Ads integration for your website app to send web conversion signals to Google via the Offline Conversion API (OCI).
+> **At a glance:** Configura una integración de Google Ads para tu aplicación web a fin de enviar señales de conversión web a Google mediante la API de Conversiones Offline (OCI).
 
-## Overview
+## Descripción general
 
-AppsFlyer supports integration with Google Ads (`googleads_int`) for website app campaigns and reports conversion data through the Google Offline Conversion API (OCI).
+AppsFlyer admite la integración con Google Ads (`googleads_int`) para campañas de aplicaciones en sitios web y reporta datos de conversión mediante la API de Conversiones Offline de Google (OCI).
 
-In this article, you'll learn how to set up web campaigns in AppsFlyer and Google Ads, targeting users who interact with Google Ads and convert on your website.
+En este artículo aprenderás a configurar campañas web en AppsFlyer y Google Ads, segmentadas a usuarios que interactúan con Google Ads y realizan conversiones en tu sitio web.
 
-The campaign flow starts when a user clicks a Google ad and lands on your website. When the user completes a website event (for example, a purchase or sign-up), AppsFlyer sends the conversion signal to Google Ads via OCI. Google uses this data to optimize ad targeting and measure campaign performance.
+El flujo de la campaña comienza cuando un usuario hace clic en un anuncio de Google y llega a tu sitio web. Cuando el usuario completa un evento en el sitio web (por ejemplo, una compra o un registro), AppsFlyer envía la señal de conversión a Google Ads mediante OCI. Google utiliza estos datos para optimizar la segmentación de anuncios y medir el rendimiento de las campañas.
 
-### Prerequisites
+### Requisitos previos
 
-Before activating the Google Ads integration for website app campaigns, make sure you have:
+Antes de activar la integración de Google Ads para campañas de aplicaciones web, asegúrate de tener lo siguiente:
 
-* A website app set up in AppsFlyer
-* Either the AppsFlyer Web SDK deployed on your website, or a fully server-side integration using the server-to-server (S2S) API. For more information, see <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement#set-up-a-fully-server-side-integration">Set up a fully server-side integration</Anchor>
-* An AppsFlyer account with appropriate roles or permissions
+* Una aplicación web configurada en AppsFlyer
+* El SDK web de AppsFlyer implementado en tu sitio web, o una integración totalmente del lado del servidor mediante la API Server-to-Server (S2S). Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/server-to-server-s2s-api-for-web-performance-measurement#configurar-una-integración-completamente-del-lado-del-servidor">Configura una integración totalmente del lado del servidor</Anchor>
+* Una cuenta de AppsFlyer con los roles o permisos adecuados.
 
-### How to set up a Google Ads web campaign
+### Cómo configurar una campaña web de Google Ads
 
-The setup has two parts:
+La configuración consta de dos partes:
 
-1. Set up the Google Ads integration in AppsFlyer (required)
-2. Set up the campaign in Google Ads (required)
+1. Configura la integración de Google Ads en AppsFlyer (obligatorio)
+2. Configura la campaña en Google Ads (obligatorio)
 
-## Set up the Google Ads integration in AppsFlyer
+## Configura la integración de Google Ads en AppsFlyer
 
-Start by activating the Google Ads integration for web campaigns and setting up the postbacks that AppsFlyer sends to OCI.
+Para empezar, activa la integración de Google Ads para campañas web y configura los postbacks que AppsFlyer envía a OCI.
 
 <div id="step-1-activate-the-integration" />
 
-<Accordion title="Step 1: Activate the integration">
+<Accordion title="Paso 1: Para activar la integración">
 
-1. In AppsFlyer, from the side menu, open **Collaborate > Partner Marketplace**.
-2. Search for **Google Ads Web** and select it.
-3. Click **Set up integration**. You are directed to the **Active Integrations** setup page.
-4. In the app dropdown, select the web app.
-5. In the **Integration** tab, turn on **Activate Partner**.
+1. En AppsFlyer, en el menú lateral, ve a **Colaborar > Partner Marketplace**.
+2. Busca **Google Ads Web** y selecciónalo.
+3. Haz clic en **Configurar integración**. Se te redirigirá a la página de configuración de **Integraciones activas**.
+4. En el menú desplegable de la app, selecciona la aplicación web.
+5. En la pestaña **Integración**, selecciona **Activar partner**.
 
-   > 📘 **Note**
+   > 📘 **Nota**
    >
-   > The toggle must stay on (activated) for as long as you work with this partner.
+   > El interruptor debe permanecer (activado) mientras trabajes con el partner.
 
-6. Enter your **Customer ID**. You can retrieve it from your Google Ads Manager:
-   1. Log in to your Google Ads account.
-   2. In the top-right corner, click the Google account icon and scroll down to where the Customer ID is displayed.
-   3. Perform one of the following:
-      * If you have multiple Google Ads accounts running campaigns for your app, use the Customer ID from a Manager (MCC) account for cross-account conversion tracking. Paste the MCC ID (and not a specific account’s Customer ID) in the Customer ID field and also in the MCC Customer ID text box (same ID in both boxes).  For more information, see <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">Google's instructions on configuring an MCC account</Anchor>.
-      * If you only use a single Google Ads account to run ads, paste the account ID in the Customer ID text box. Leave the MCC Customer ID text box empty.
-7. To allow AppsFlyer to upload conversions to Google Ads, click **Sign in with Google**.
-8. Select the admin account of the MCC account from which you retrieved the Customer ID.
-9. Click **Allow**.
+6. Ingresa tu **Customer ID**. Puedes recuperarlo desde tu Google Ads Manager:
+   1. Inicia sesión en tu cuenta de Google Ads.
+   2. En la esquina superior derecha, haz clic en el icono de la cuenta de Google y desplázate hacia abajo hasta donde se muestra el Customer ID.
+   3. Realiza una de las siguientes acciones:
+      * Si tienes varias cuentas de Google Ads que ejecutan campañas para tu aplicación, debes usar el Customer ID de un administrador (MCC) para el seguimiento de conversiones de varias cuentas. Pega el ID de MCC (y no el Customer ID de una cuenta específica) en el campo Customer ID y también en el cuadro de texto MCC Customer ID (el mismo ID en ambos campos).  Para más información, consulta <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">las instrucciones de Google sobre cómo configurar una cuenta MCC</Anchor>.
+      * Si solo utilizas una cuenta de Google Ads para publicar anuncios, pega el ID de la cuenta en el cuadro de texto "Customer ID". Deja vacío el cuadro de texto MCC Customer ID.
+7. Para permitir que AppsFlyer suba conversiones a Google Ads, haz clic en **Iniciar sesión con Google**.
+8. Selecciona la cuenta de administrador de la cuenta MCC de la que recuperaste el Customer ID en el paso 7.
+9. Haz clic en **Permitir**.
 
-   > 📘 **Note**
+   > 📘 **Nota**
    >
-   > The **Missing token** error message will stop appearing once you sign in with Google and allow AppsFlyer to fetch the token. If the error persists after sign-in, verify that your token has the required permissions.
+   > El mensaje de error **Missing token** dejará de aparecer una vez que inicies sesión con Google y permitas que AppsFlyer obtenga el token. Si el error persiste después de iniciar sesión, *verifica que tu token tenga los permisos requeridos*.
 
 
 </Accordion>
 
 <div id="step-2-set-inapp-event-postbacks" />
 
-<Accordion title="Step 2: Set in-app event postbacks">
+<Accordion title="Paso 2: Configurar postbacks de eventos in-app">
 
-Map your website events to Google Ads conversion actions. AppsFlyer sends these events to Google via OCI to power conversion-based optimization.
+Asocia los eventos de tu sitio web con las acciones de conversión de Google Ads. AppsFlyer envía estos eventos a Google a través de OCI para impulsar la optimización basada en conversiones.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> For website apps, all events are web events. There are no install events. Each event you want Google to optimize for must be mapped to a corresponding Google Ads conversion action ID.
+> En las aplicaciones web, todos los eventos son eventos web. No hay eventos de instalación. Cada evento para el que quieras que Google optimice debe asociarse a un ID de acción de conversión correspondiente de Google Ads.
 
-1. Turn on **In-app event postbacks**.
-2. Set the **In-app event postback window** if needed. The window is opened at the time of the user's first website conversion event (the web equivalent of the mobile install date).
-3. Click **Add event**.
-4. In the **AppsFlyer event** column, select the website event you want to send (for example, `purchase`, `sign_up`).
+1. Activa **Postbacks de eventos in-app**.
+2. Configura la **Ventana de postback de eventos in-app**, si es necesario. La ventana se abre cuando se produce el primer evento de conversión del usuario en el sitio web (el equivalente web de la fecha de instalación en dispositivos móviles).
+3. Haz clic en **Agregar evento**.
+4. En la columna **Evento de AppsFlyer**, selecciona el evento del sitio web que quieres enviar (por ejemplo, `purchase`, `sign_up`).
 
-   > 📘 **Note**
+   > 📘 **Nota**
    >
-   > Visit events are excluded. Only custom web events are available in this dropdown.
+   > Los eventos de visita están excluidos. En este menú desplegable solo están disponibles los eventos web personalizados.
 
-5. In the **Mapped to partner event** column, enter the Google Ads **conversion action ID**. Before you can do this, you need to create the conversion action in Google Ads (see [Step 2: Create conversion actions](#step-2-create-conversion-actions)). To find the conversion action ID:
-   * In Google Ads, open the conversion action page.
-   * Open the **Details** tab.
-   * From the page URL, copy the value of the `ctid=*` query parameter. For example, if `ctid=123456789`, enter `123456789`.
-6. In the **For users from** column, select **This partner only**, to send events attributed to Google Ads only.
-7. In the **Including** column, select whether to include revenue values in the postback.
-8. Click **Save integration**.
+5. En la columna **Asignado al evento de partner**, introduce el **ID de la acción de conversión** de Google Ads. Antes de hacerlo, debes crear la acción de conversión en Google Ads (consulta el [paso 2: Crear acciones de conversión](#step-2-create-conversion-actions)). Para encontrar el ID de la acción de conversión:
+   * En Google Ads, abre la página de la acción de conversión.
+   * Abre la pestaña **Detalles**.
+   * En la URL de la página, copia el valor del parámetro de consulta `ctid=*`. Por ejemplo, si `ctid=123456789`, introduce `123456789`.
+6. En la columna **Para usuarios de**, selecciona **Solo este partner** para enviar únicamente los eventos atribuidos a Google Ads.
+7. En la columna **Incluir**, selecciona si quieres incluir los valores de ingresos en el postback.
+8. Haz clic en **Guardar integración**.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> If you send S2S events and want AppsFlyer to send postbacks for them to Google Ads, make sure each event has at least one Google click ID: `gclid`, `gbraid`, or `wbraid`. If an event has none, AppsFlyer doesn't send the postback. For all supported event fields, see <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement#measure-an-event">Server-to-Server (S2S) API for Web Performance Measurement</Anchor>.
+> Si envías eventos S2S y quieres que AppsFlyer envíe postbacks de esos eventos a Google Ads, asegúrate de que cada evento tenga al menos un Google click ID: `gclid`, `gbraid` o `wbraid`. Si un evento no tiene ninguno, AppsFlyer no envía el postback. Para consultar todos los campos de evento compatibles, consulta <Anchor target="_blank" href="/marketers/es/docs/server-to-server-s2s-api-for-web-performance-measurement#medir-un-evento">Server-to-Server (S2S) API for Web Performance Measurement</Anchor>.
 
 </Accordion>
 
-## Set up a web conversion campaign in Google Ads
+## Configura una campaña de conversión web en Google Ads
 
 <div id="step-1-set-the-campaign-type-objective-and-goals" />
 
-<Accordion title="Step 1: Set the campaign type, objective, and goals">
+<Accordion title="Paso 1: Configura el tipo de campaña, el objetivo y las metas">
 
-1. Log in to Google Ads and create a campaign.
-2. Select the **campaign objective**:
-   * All objectives are applicable except **App promotion**, which is for mobile app campaigns only.
-   * We recommend **Sales** or **Leads** for optimization based on specific website conversion events.
-3. Select your **conversion goals**. By default, you see the account-level goals. You can keep those or remove ones that are not relevant.
-   * If the goal you want to optimize for is not listed, create a custom conversion action (see [Step 2: Create conversion actions](#step-2-create-conversion-actions)).
-4. Select the **campaign type**:
-   * All types are applicable except **Shopping**, which requires a product catalog and a verified domain.
+1. Inicia sesión en Google Ads y crea una campaña.
+2. Selecciona el **objetivo de la campaña**:
+   * Todos los objetivos son compatibles excepto **Promoción de aplicaciones**, que solo se utiliza para campañas de aplicaciones móviles.
+   * Recomendamos **Ventas** o **Clientes potenciales** para optimizar campañas en función de eventos de conversión específicos del sitio web.
+3. Selecciona tus **objetivos de conversión**. De forma predeterminada, verás los objetivos a nivel de cuenta. Puedes mantenerlos o eliminar los que no sean relevantes.
+   * Si el objetivo para el que quieres optimizar no aparece en la lista, crea una acción de conversión personalizada (consulta el [paso 2: Crear acciones de conversión](#step-2-create-conversion-actions)).
+4. Selecciona el **tipo de campaña**:
+   * Todos los tipos son compatibles excepto **Compras**, que requiere un catálogo de productos y un dominio verificado.
 
 </Accordion>
 
 <div id="step-2-create-conversion-actions" />
 
-<Accordion title="Step 2: Create conversion actions">
+<Accordion title="Paso 2: Crea acciones de conversión">
 
-For each website event you mapped in AppsFlyer, create a corresponding conversion action in Google Ads. After creating it, copy the conversion action ID and paste it into the AppsFlyer event mapping in the previous section.
+Para cada evento del sitio web que hayas asociado en AppsFlyer, crea la acción de conversión correspondiente en Google Ads. Después de crearla, copia el ID de la acción de conversión y pégalo en la asignación de eventos de AppsFlyer de la sección anterior.
 
-1. In Google Ads, from the side menu, open **Goals > Conversions > Summary**.
-2. Click **+ New conversion action**.
-3. Select **Import** as the conversion data source, then select either:
-   * **Manual import using API or uploads > Track conversions from clicks**, OR
-   * **CRM, files, or other data sources > Track conversions from clicks**, and under Data source, select **Skip this step and set up data source later**.
-4. Click **Continue**.
-5. In **Conversion goal**, select a conversion action category.
-6. Enter a **Conversion name** and click **Add**.
+1. En Google Ads, en el menú lateral, ve a **Objetivos > Conversiones > Resumen**.
+2. Haz clic en **+ Nueva acción de conversión**.
+3. Selecciona **Importar** como fuente de datos de conversión y, a continuación, elige una de las siguientes opciones:
+   * **Importación manual mediante API o cargas > Seguimiento de conversiones a partir de clics**, O
+   * **CRM, archivos u otras fuentes de datos > Seguimiento de conversiones a partir de clics** y, en Fuente de datos, selecciona **Omitir este paso y configurar la fuente de datos más adelante**.
+4. Haz clic en **Continuar**.
+5. En **Objetivo de conversión**, selecciona una categoría de acción de conversión.
+6. Introduce un **Nombre de la conversión** y haz clic en **Agregar**.
 
-   > 🚧 **Important!**
+   > 🚧 **¡Importante!**
    >
-   > To use the Offline Conversions API with GBRAID/WBRAID (in addition to GCLID), make sure the **Count** field in the conversion action is set to **Every** (default) and not **One**.
+   > Para usar la API de Conversiones Offline con GBRAID/WBRAID (además de GCLID), asegúrate de que el campo **Count** en la acción de conversión esté configurado en **Every** (predeterminado) y no en **One**.
 
 
-   > 📘 **Note**
+   > 📘 **Nota**
    >
-   > If you only want your campaigns to optimize to a single action, include only that action in this category. For example, if you want your campaign to optimize toward a purchase conversion action, make sure that it is the only one in its category. You can then select this category as the conversion goal for performance optimization when creating the campaign.
+   > Si quieres que tus campañas se optimicen únicamente para una acción, incluye solo esa acción en esta categoría. Por ejemplo, si quieres que tu campaña se optimice para una acción de conversión de compra, asegúrate de que sea la única dentro de su categoría. Después podrás seleccionar esta categoría como objetivo de conversión para optimizar el rendimiento al crear la campaña.
 
-7. Click **Save and continue**, then **Done** without setting up data sources. Your new conversion action might initially appear as **Inactive**. It will change to **Active** once actual data is sent.
-8. To map the new conversion action to the AppsFlyer postback event, retrieve the conversion action ID: In the conversion goals **Summary** page, click the conversion action you created and copy the value of the `ctid=*` query parameter from the page URL.
-9. In AppsFlyer, paste the `ctid` value into the **Mapped to partner event** column of the postback event you want Google to optimize for. See [Step 2: Set in-app event postbacks](#step-2-set-inapp-event-postbacks).
+7. Haz clic en **Guardar y continuar** y, a continuación, en **Listo**, sin configurar fuentes de datos. Es posible que tu nueva acción de conversión aparezca inicialmente como **Inactive**. Cambiará a **Activo** una vez que se envíen datos reales.
+8. Para asociar la nueva acción de conversión al evento de postback de AppsFlyer, obtén el ID de la acción de conversión: En la página **Resumen** de objetivos de conversión, haz clic en la acción de conversión que creaste y copia el valor del parámetro de consulta `ctid=*` de la URL de la página.
+9. En AppsFlyer, pega el valor `ctid` en la columna **Asignado al evento de partner** del evento de postback para el que quieres que Google optimice. Consulta [Paso 2: Configurar postbacks de eventos in-app](#step-2-set-inapp-event-postbacks).
 
 </Accordion>
 
 <div id="step-3-set-the-campaigns-final-url" />
 
-<Accordion title="Step 3: Set the campaign's Final URL">
+<Accordion title="Paso 3: Configura la URL final de la campaña">
 
-Google <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU">defines the Final URL</Anchor> as "the URL address of the webpage in your website that people reach after they click your ad, also known as the 'landing page.'"
+Google <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU">define la URL final</Anchor> como "la dirección URL de la página de tu sitio web a la que llegan los usuarios después de hacer clic en tu anuncio, también conocida como 'landing page'".
 
-1. In Google Ads, open the **Campaigns > Ads** page.
-2. In the ad row, click the edit icon.
-3. In the **Final URL field**, enter the URL of your landing page.
+1. En Google Ads, abre la página **Campañas > Anuncios**.
+2. En la fila del anuncio, haz clic en el icono de edición.
+3. En el **campo URL final**, introduce la URL de tu landing page.
 
-   > 🚧 **Important!**
+   > 🚧 **¡Importante!**
    >
-   > The Final URL cannot be an AppsFlyer URL (OneLink or a single-platform attribution URL), as this might cause your campaign to be rejected. Only use a direct web address with no redirects.
+   > La URL final no puede ser una URL de AppsFlyer (OneLink o una URL de atribución de una sola plataforma), ya que esto podría provocar que tu campaña fuera rechazada. Utiliza únicamente una dirección web directa, sin redirecciones.
    >
-   > You can add AF attribution parameters to the Final URL and map them to Google ValueTrack parameters, for example, `af_c_id={campaignid}`. Once the Google ad is clicked and the landing page is loaded, these parameters are available on the page. To learn about the available ValueTrack parameters, see the <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348">Google documentation</Anchor>.
+   > Puedes añadir parámetros de atribución de AF a la URL final y asociarlos a los parámetros ValueTrack de Google; por ejemplo, `af_c_id={campaignid}`. Una vez que el usuario hace clic en el anuncio de Google y se carga la landing page, estos parámetros están disponibles en la página. Para más información sobre los parámetros ValueTrack disponibles, consulta la <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348">documentación de Google</Anchor>.
    >
-   > For example:
+   > Por ejemplo:
    >
    > ```http
    > https://example.com?product=1234&af_c_id={campaignid}
    > ```
 
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Google Web Ads campaigns can use two URLs per engagement: the Final URL and the Tracking Template URL. However, the Tracking Template URL is not required for website app campaigns where the ad destination is a website. A Tracking Template URL might be needed only when the campaign goal is web-to-mobile. For more information, see the <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-create-web-based-campaigns">Google Ads web-to-app campaign article</Anchor>.
+> Las campañas de Google Web Ads pueden utilizar dos URL por engagement: la URL final y la URL de la plantilla de seguimiento. Sin embargo, la URL de la plantilla de seguimiento no es necesaria para las campañas de aplicaciones web cuyo destino del anuncio es un sitio web. Puede que solo necesites una URL de plantilla de tracking cuando el objetivo de la campaña sea web-to-mobile. Para más información, consulta el <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-create-web-based-campaigns">artículo sobre campañas web-to-app de Google Ads</Anchor>.
 
 </Accordion>
 
-## View Web Performance Measurement data
+## Ver datos de Medición del performance web
 
-Web attribution data for Google Ads campaigns is available in the cross-platform dashboard and in raw data exports:
+Los datos de atribución web de las campañas de Google Ads están disponibles en el dashboard multiplataforma y en las exportaciones de raw data:
 
-* **Dashboard:** In <Anchor target="_blank" href="/marketers/docs/my-dashboards#crossplatform-dashboard">the cross-platform dashboard</Anchor>, web and app data are displayed side by side, giving you a unified view of campaign performance across platforms.
-* **Raw data exports:** Web attribution data is also available in the <Anchor target="_blank" href="/marketers/docs/raw-data-export-page">Raw data exports page</Anchor>.
-  * The `media_source` field shows `googleadwords_int` for web events attributed to Google Ads.
+* **Dashboard:** En el <Anchor target="_blank" href="/marketers/es/docs/my-dashboards#crossplatform-dashboard">dashboard multiplataforma</Anchor>, los datos web y de la app se muestran uno al lado del otro, lo que te ofrece una vista unificada del rendimiento de las campañas en todas las plataformas.
+* **Exportaciones de raw data:** Los datos de atribución web también están disponibles en la página <Anchor target="_blank" href="/marketers/es/docs/raw-data-export-page">Exportaciones de raw data</Anchor>.
+  * El campo `media_source` muestra `googleadwords_int` para los eventos web atribuidos a Google Ads.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> This unified reporting view lets you analyze both web and app campaign performance in one place, including full mobile and web cost reporting.
+> Esta vista unificada de reportes te permite analizar el rendimiento de las campañas web y de apps en un solo lugar, incluidos los reportes completos de costos web y móviles.
 
-## Measure web performance data with web cost
+## Mide los datos de rendimiento web con el costo web
 
-You can get a complete performance view of web attribution data and web cost data from Google Ads in the dashboard and in <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">Cost ETL reports</Anchor>. To do this, make sure you have <Anchor target="_blank" href="/marketers/docs/roi360-onboarding-guide#about-roi360">the ROI360 package</Anchor> and complete the following setup:
+En el dashboard y en los <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">reportes de Cost ETL</Anchor>, puedes obtener una vista completa del rendimiento de los datos de atribución web y los datos de costo web de Google Ads. Para hacerlo, asegúrate de tener <Anchor target="_blank" href="/marketers/es/docs/roi360-onboarding-guide#sobre-roi360">el paquete ROI360</Anchor> y completa la siguiente configuración:
 
-1. Connect the cost to your website app via  `googleadwords_int` (not via `googleads_int`)  from the **Cost** tab or the **Cost Settings** page. For more information about how to connect to cost, see <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">Set up ROI360 cost API to measure cost data</Anchor>.
-2. Include the campaign ID (`af_c_id`) in the landing page URL. Make sure the URL includes the full campaign hierarchy to view cost, clicks, and impressions matched to web attribution at the most granular level.
+1. Conecta el costo a tu aplicación web mediante `googleadwords_int` (no mediante `googleads_int`) desde la pestaña **Costo** o la página **Configuración de costos**. Para más información sobre cómo conectar el costo, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enabling-cost-api">Configurar la API de costos de ROI360 para medir los datos de costos</Anchor>.
+2. Incluye el ID de la campaña (`af_c_id`) en la URL de la landing page. Asegúrate de que la URL incluya la jerarquía completa de la campaña para ver los costos, clics e impresiones asociados a la atribución web con el mayor nivel de detalle posible.
 
-## Troubleshooting in-app event postbacks
+## Solución de problemas de postbacks de eventos in-app
 
-If event data is not appearing in Google Ads, check the following before contacting support.
+Si los datos de los eventos no aparecen en Google Ads, comprueba lo siguiente antes de ponerte en contacto con el equipo de soporte.
 
 <div id="set-token-permissions" />
 
-<Accordion title="Set token permissions">
+<Accordion title="Configurar los permisos del token">
 
-In Google Ads, make sure that your access token has the necessary permissions to upload offline conversions:
+En Google Ads, asegúrate de que tu token de acceso tenga los permisos necesarios para subir conversiones offline:
 
-1. Go to the Google Developers Console.
-2. Make sure that `uploadClickConversions` has the following OAuth scope: `https://www.googleapis.com/auth/adwords`
-3. In AppsFlyer, in the Integration tab, click **Sign in with Google**.
-4. Select the admin account of the MCC account.
-5. Click **Allow**.
+1. Ve a Google Developers Console.
+2. Asegúrate de que `uploadClickConversions` tenga el siguiente alcance de OAuth: `https://www.googleapis.com/auth/adwords`.
+3. En AppsFlyer, en la pestaña Integración, haz clic en **Iniciar sesión con Google**.
+4. Selecciona la cuenta de administrador de la cuenta MCC.
+5. Haz clic en **Permitir**.
 
 </Accordion>
 
 <div id="mcc-customer-id" />
 
-<Accordion title="MCC customer ID">
+<Accordion title="ID de cliente de MCC">
 
-If you have multiple Google Ads accounts running campaigns for your app, you must use the Customer ID of an MCC account. See <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6139186">Google's instructions on configuring an MCC account</Anchor>.
+Si tienes varias cuentas de Google Ads ejecutando campañas para tu app, debes utilizar el Customer ID de una cuenta MCC. Consulta las <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6139186">instrucciones de Google para configurar una cuenta MCC</Anchor>.
 
 </Accordion>
 
 <div id="conversion-action-id" />
 
-<Accordion title="Conversion action ID">
+<Accordion title="ID de la acción de conversión">
 
-Make sure the postback in-app events are mapped to the correct conversion action ID. To find the conversion action ID in Google Ads, see [Step 2: Create conversion actions](#step-2-create-conversion-actions).
+Asegúrate de que los postbacks de eventos in-app estén asociados al ID de acción de conversión correcto. Para encontrar el ID de la acción de conversión en Google Ads, consulta el [Paso 2:](#step-2-create-conversion-actions) Crear acciones de conversión.
 
 </Accordion>
 
-## Traits and limitations
+## Características y limitaciones
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Clicks and impressions | Clicks and impressions for web campaigns require an <Anchor target="_blank" href="/marketers/docs/roi360-onboarding-guide">ROI360 subscription</Anchor>. |
+| Clics e impresiones | Los clics y las impresiones de las campañas web requieren una <Anchor target="_blank" href="/marketers/es/docs/roi360-onboarding-guide">suscripción a ROI360</Anchor>. |
 
-> 📄 **See also**
+> 📄 **Ver también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/web-performance-measurement-overview">Web Performance Measurement - Overview</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/web-performance-measurement-overview">Medición del rendimiento web: descripción general</Anchor>
 
-<div data-zendesk-anchors="h_01KNM00RR7V9BAA2BSPDECHC9F=overview h_01KNM00RR7H7A9CE06APEZSXKR=prerequisites h_01KNM00RR77P8VD2YJ2R7DZBVX=how-to-set-up-a-google-ads-web-campaign h_01KNM00RR7E8MFSTGYKFEJDS1C=set-up-the-google-ads-integration-in-appsflyer h_01KNM00RR71ZXB72H8X1YXWKED=step-1-activate-the-integration h_01KNM00RR84CCGBR3T5WG7C5VW=note h_01KNM00RR86C5VKBVTA9X6QRAS=note-1 h_01KNM00RR8BCJTMPZ29C841BY1=step-2-set-inapp-event-postbacks h_01KNM00RR8PSJ7FEAP7MMEJ1XG=note-2 h_01KNM00RR89XJ0BZKFDXVC4860=note-3 h_01M520ZTQ1QT2F03TMY9TZBPSY=note-4 h_01KNM00RR8SAS3TM1NG5DC58TF=set-up-a-web-conversion-campaign-in-google-ads h_01KNM00RR8S24AG7FMN6067PZ2=step-1-set-the-campaign-type-objective-and-goals h_01KNM00RR8H1ZFSHFT0DVB11GN=step-2-create-conversion-actions h_01KNM00RR8EV8XY02YJFV5XSX8=important h_01KNM00RR8N96SNP1YK0CTN6YZ=note-5 h_01KNM00RR82NZSKB7K06HCP1VE=step-3-set-the-campaigns-final-url h_01KNM00RR8EP6J43G29Q8VVA5B=important-1 h_01KNM00RR8A704MKGVVC6MQ2KN=note-6 view-web-attribution-data=view-web-performance-measurement-data h_01KNM00RR8EYJAX2KRGCM65E9M=view-web-performance-measurement-data h_01KNM00RR86Q2GTHVNC505KCXZ=note-7 measure-web-attribution-data-with-web-cost=measure-web-performance-data-with-web-cost h_01KNM00RR9TF8JRTJXWN23MF1S=measure-web-performance-data-with-web-cost h_01KNM00RR9Z0BM5EE62M17EE0F=troubleshooting-in-app-event-postbacks h_01KNM00RR9CJJQAP4GAXZ9KK8N=set-token-permissions h_01KNM00RR9215H3KB024BBFZX2=mcc-customer-id h_01KNM00RR9DBR5979GA0FVD5AK=conversion-action-id h_01KQAE3JKMQ6ZEATDAEXBC4PT6=traits-and-limitations h_01KQC2B644Y44631ZQKC1HPEF4=see-also" />
+<div data-zendesk-anchors="overview=descripci%C3%B3n-general h_01KNM00RR7V9BAA2BSPDECHC9F=descripci%C3%B3n-general prerequisites=requisitos-previos h_01KNM00RR7H7A9CE06APEZSXKR=requisitos-previos how-to-set-up-a-google-ads-web-campaign=c%C3%B3mo-configurar-una-campa%C3%B1a-web-de-google-ads h_01KNM00RR77P8VD2YJ2R7DZBVX=c%C3%B3mo-configurar-una-campa%C3%B1a-web-de-google-ads set-up-the-google-ads-integration-in-appsflyer=configura-la-integraci%C3%B3n-de-google-ads-en-appsflyer h_01KNM00RR7E8MFSTGYKFEJDS1C=configura-la-integraci%C3%B3n-de-google-ads-en-appsflyer h_01KNM00RR71ZXB72H8X1YXWKED=step-1-activate-the-integration h_01KNM00RR84CCGBR3T5WG7C5VW=nota h_01KNM00RR86C5VKBVTA9X6QRAS=nota-1 h_01KNM00RR8BCJTMPZ29C841BY1=step-2-set-inapp-event-postbacks h_01KNM00RR8PSJ7FEAP7MMEJ1XG=nota-2 h_01KNM00RR89XJ0BZKFDXVC4860=nota-3 h_01M520ZTQ1QT2F03TMY9TZBPSY=nota-4 set-up-a-web-conversion-campaign-in-google-ads=configura-una-campa%C3%B1a-de-conversi%C3%B3n-web-en-google-ads h_01KNM00RR8SAS3TM1NG5DC58TF=configura-una-campa%C3%B1a-de-conversi%C3%B3n-web-en-google-ads h_01KNM00RR8S24AG7FMN6067PZ2=step-1-set-the-campaign-type-objective-and-goals h_01KNM00RR8H1ZFSHFT0DVB11GN=step-2-create-conversion-actions h_01KNM00RR8EV8XY02YJFV5XSX8=importante h_01KNM00RR8N96SNP1YK0CTN6YZ=nota-5 h_01KNM00RR82NZSKB7K06HCP1VE=step-3-set-the-campaigns-final-url h_01KNM00RR8EP6J43G29Q8VVA5B=importante-1 h_01KNM00RR8A704MKGVVC6MQ2KN=nota-6 view-web-attribution-data=ver-datos-de-medici%C3%B3n-del-performance-web h_01KNM00RR8EYJAX2KRGCM65E9M=ver-datos-de-medici%C3%B3n-del-performance-web h_01KNM00RR86Q2GTHVNC505KCXZ=nota-7 measure-web-attribution-data-with-web-cost=mide-los-datos-de-rendimiento-web-con-el-costo-web h_01KNM00RR9TF8JRTJXWN23MF1S=mide-los-datos-de-rendimiento-web-con-el-costo-web troubleshooting-in-app-event-postbacks=soluci%C3%B3n-de-problemas-de-postbacks-de-eventos-in-app h_01KNM00RR9Z0BM5EE62M17EE0F=soluci%C3%B3n-de-problemas-de-postbacks-de-eventos-in-app h_01KNM00RR9CJJQAP4GAXZ9KK8N=set-token-permissions h_01KNM00RR9215H3KB024BBFZX2=mcc-customer-id h_01KNM00RR9DBR5979GA0FVD5AK=conversion-action-id traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01KQAE3JKMQ6ZEATDAEXBC4PT6=caracter%C3%ADsticas-y-limitaciones h_01KQC2B644Y44631ZQKC1HPEF4=ver-tambi%C3%A9n" />

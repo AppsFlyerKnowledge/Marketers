@@ -1,5 +1,5 @@
 ---
-title: Kuaishou Ads (China Domestic) campaign configuration
+title: Configuración de la campaña de Kuaishou Ads (China doméstica)
 metadata:
   keywords:
     - Marketers
@@ -12,109 +12,108 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2019-06-05T06:07:11Z'
-  edited_at: '2026-09-15T10:22:46Z'
+  edited_at: '2026-09-17T00:26:06Z'
   id: 360001748437
-  locale: en-us
+  locale: es
   section: China domestic market ad network configuration
   section_id: 6552066355601
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001748437-Kuaishou-Ads-China-Domestic-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360001748437
 ---
-> **At a glance:** Kuaishou is an AppsFlyer ad network integrated partner.
+> **Información general:** Kuaishou es un partner integrado de ad network de AppsFlyer.
 
-## Setting Up Kuaishou
+## Configurar Kuaishou
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de partner > Marketplace** .  
+   (**Para editar una integración existente:** ve a la pestaña **Colaborar > Integraciones de partner > Integraciones activas** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota importante:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-Kuaishou's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
+La ventana de configuración de Kuaishou incluye 3 pestañas activas: Integración, enlace de atribución y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate Partner
+### Activación de socios
 
-On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### Default postbacks
+### Postbacks predeterminados
 
 ![mceclip2.png](https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png)
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with Kuaishou via postbacks.
+En esta sección puedes asignar tus eventos de AppsFlyer a Kuaishou vía postbacks.
 
 ![mceclip0.png](https://files.readme.io/74a4c9e81ac69f65079f5e214de90dc8725f8aedaf59c7ee4d9a3d947a853a0b-50899821661713.png)
 
-1. Toggle In-App Event Postbacks to ON
-2. Click **Add Event** to add an SDK Event to the list
-3. Complete the following parameters:
+1. Activa los postbacks de eventos in-app.
+2. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+3. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on iQIYI Ads side.  <br />Obtain the corresponding Event ID from iQIYI Ads and set in the text field. |
-| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según lo define iQIYI Ads.  <br />Obtén el ID de evento correspondiente de iQIYI Ads y configúralo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: AppsFlyer envía al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Obtén más información sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Kuaishou, whether the partner acts as an ad network, an agency, or even both. Note that even if attribution is disabled for Kuaishou, the permissions tab is active and you can grant control to Kuaishou.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Kuaishou, tanto si el partner actúa como ad network, como agencia o incluso ambas cosas. Ten en cuenta que, incluso si la atribución estuviera deshabilitada para Kuaishou, la pestaña Permisos se encontraría activa y podrías otorgarle el control a Kuaishou.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
 
-### Ad Network Permissions
+### Permisos para Redes de Publicidad
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
 
-* ***Allow to configure integration*** - permit the partner to setup the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app)
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW6VK4HFZYAY2XC7Y6QGXD4=setting-up-kuaishou h_01HKW6VK4HMKVSRH9PXH6ASDGJ=integration-tab h_01HKW6VK4HWBBP9W3BMTC8KQBJ=activate-partner h_01HKW6VK4H4SQP4Q5QXC683R38=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6VK4HW50X9Z2WJ5X9RP90=in-app-events-settings h_01HKW6VK4HKFCXKQNN0RY16B10=attribution-link-tab h_01HKW6VK4JSK4JFC0XD2JM7JJ6=cost-tab h_01HKW6VK4JSCS6M01R6SF1V9YB=ad-revenue-tab h_01HKW6VK4JEEBKB2G0H3WFRB8W=permissions-tab h_01HKW6VK4JY5YG805PZQ7EG1VM=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-kuaishou=configurar-kuaishou h_01HKW6VK4HFZYAY2XC7Y6QGXD4=configurar-kuaishou h_01HKW6VK4HMKVSRH9PXH6ASDGJ=integration-tab activate-partner=activaci%C3%B3n-de-socios h_01HKW6VK4HWBBP9W3BMTC8KQBJ=activaci%C3%B3n-de-socios default-postbacks=postbacks-predeterminados h_01HKW6VK4H4SQP4Q5QXC683R38=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HKW6VK4HW50X9Z2WJ5X9RP90=configuraci%C3%B3n-de-eventos-in-app h_01HKW6VK4HKFCXKQNN0RY16B10=attribution-link-tab h_01HKW6VK4JSK4JFC0XD2JM7JJ6=cost-tab h_01HKW6VK4JSCS6M01R6SF1V9YB=ad-revenue-tab h_01HKW6VK4JEEBKB2G0H3WFRB8W=permissions-tab ad-network-permissions=permisos-para-redes-de-publicidad h_01HKW6VK4JY5YG805PZQ7EG1VM=permisos-para-redes-de-publicidad" />

@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: First install attribution for post-reinstall in-app events'
+title: >-
+  Boletín: atribución de primera instalación para eventos in-app posteriores a
+  la reinstalación
 metadata:
   keywords:
     - Marketers
@@ -13,18 +15,17 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2024-06-05T15:04:01Z'
-  edited_at: '2025-04-30T14:37:51Z'
+  edited_at: '2026-10-20T03:55:32Z'
   id: 25676426941457
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/25676426941457-Bulletin-First-install-attribution-for-post-reinstall-in-app-events
+  url: https://support.appsflyer.com/hc/es/articles/25676426941457
 ---
-| **What's new** | This enhancement attributes all <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#post-reinstall-in-app-events">in-app events</Anchor> and sessions following a re-engagements or a <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#reattribution">re-attribution</Anchor> to the original media source that drove it (’first install’) rather than labeling them ‘organic unattributed.’<br /><br />![Screenshot 2024-06-11 at 8.44.30.png](https://files.readme.io/42a96ec533d217ee4dadad71592023d1fd0c977557308638f3553660a95fc7b5-25827620446353.png) |
+| **¿Qué hay de nuevo?** | Esta mejora atribuye todos los <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#eventos-in-app">eventos in-app</Anchor> y las sesiones posteriores a un re-engagements o una <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#reattribution">re-attribution</Anchor> a la fuente de medios original que lo impulsó («primera instalación») en lugar de etiquetarlos como «orgánicos sin atribuir».<br /><br />![Screenshot 2024-06-11 at 8.44.30.png](https://files.readme.io/42a96ec533d217ee4dadad71592023d1fd0c977557308638f3553660a95fc7b5-25827620446353.png) |
 | --- | --- |
-| **Effective date** | July 31, 2024. The first-install mode automatically applies only to apps added to AppsFlyer on or after the effective date. For apps added before July 31, 2024, we recommend contacting AppsFlyer to migrate your existing apps to the first-install mode. |
-| **Prerequisites** | None |
-| **Required actions** | None |
-| **What must I know?** | Only users who have consented to share their device identifier (such as IDFA or GAID) with the app for both the install and reinstall will have their in-app events attributed to the original install. Otherwise, they will be labeled as ‘organic unattributed.’ |
-| **What's the impact?** | <ul><li>For apps added to AppsFlyer **after July 31, 2024**: No impact</li><li>For apps added **before July 31, 2024**, we recommend contacting AppsFlyer to migrate your existing apps to first-install mode. After the migration, the following may occur:<ul><li>A potential increase in the number of in-app events and sessions attributed to the first install following a reinstall, along with a corresponding decrease in the attributions classified as 'organic' for such events.</li><li>A potential increase in the MAU (Monthly Active Users) count for media sources attributed originally and a decrease in the MAU count for organic sources.</li><li>On the day when the app switches to first-install mode, the session count doubles. As a result, the day 1 retention rate for the cohort is unusually high.</li></ul></li></ul> |
+| **Fecha de entrada en vigor** | 31 de julio de 2024. El modo de primera instalación se aplica automáticamente solo a las aplicaciones añadidas a AppsFlyer en/o después de la fecha de vigencia. Para las aplicaciones añadidas antes del 31 de julio de 2024, recomendamos contactar a AppsFlyer para migrar sus aplicaciones existentes al modo de primera instalación. |
+| **Prerrequisitos** | None |
+| **Acciones requeridas** | None |
+| **¿Qué debo saber?** | Solo los usuarios que hayan dado su consentimiento para compartir su identificador de dispositivo (como el IDFA o GAID) con la aplicación, tanto para la instalación como para la reinstalación, tendrán sus eventos in-app atribuidos a la instalación original. De lo contrario, serán etiquetados como "orgánicos sin atribuir". |
+| **¿Cuál es el impacto?** | <ul><li>Para las aplicaciones añadidas a AppsFlyer **después del 31 de julio de 2024**: sin impacto</li><li>Para las aplicaciones añadidas **antes del 31 de julio de 2024**, te recomendamos ponerte en contacto con AppsFlyer para migrar tus aplicaciones existentes al modo de primera instalación. Después de la migración, puede ocurrir lo siguiente:<ul><li>Un aumento potencial en la cantidad de eventos in-app y sesiones que se atribuyen a la primera instalación después de una reinstalación, junto con una disminución correspondiente en las atribuciones clasificadas como "orgánicas" para dichos eventos.</li><li>Un posible aumento en el recuento de MAU (usuarios activos mensuales) para las fuentes de medios atribuidas originalmente y una disminución en el recuento de MAU para las fuentes orgánicas.</li><li>El día en que la aplicación cambie al modo de primera instalación, el conteo de sesiones se duplica. Como resultado, la tasa de retención del día 1 para la cohorte es inusualmente alta.</li></ul></li></ul> |

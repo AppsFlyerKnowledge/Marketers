@@ -1,5 +1,7 @@
 ---
-title: Data collaboration platform (DCP) - Collaboration measurement - Overview
+title: >-
+  Plataforma de colaboración de datos (PCD) - Medición de la colaboración -
+  General
 metadata:
   keywords:
     - Marketers
@@ -12,39 +14,38 @@ x-zendesk:
     - Marketers
     - Retail Media Measurement
   created_at: '2025-01-27T08:21:27Z'
-  edited_at: '2026-10-15T11:44:26Z'
+  edited_at: '2026-10-20T03:37:17Z'
   id: 32143318560017
-  locale: en-us
+  locale: es
   section: Collaboration measurement
   section_id: 38034865098641
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/32143318560017-Data-collaboration-platform-DCP-Collaboration-measurement-Overview
+  url: https://support.appsflyer.com/hc/es/articles/32143318560017
 ---
-> **At a glance:** Learn about collaboration measurement, its basic concepts, and data flow.
+> **En resumen:**  Comienza en la medición colaborativa aprendiendo sus conceptos fundamentales y el procedimiento de configuración.
 
-## The three data sources of measurement
+## Las tres fuentes de datos de medición
 
-The DCP measurement model attributes conversion events to engagement events occurring in a collaboration context. This process requires data from three key data sources: conversions, engagements, and campaign mapping. Each source plays a critical role in the attribution flow.
+El modelo de medición DCP atribuye los eventos de conversión a los eventos de engagement que se producen en un contexto de colaboración. Este proceso requiere datos de tres fuentes de datos clave: conversiones, engagements y mapeo de campañas. Cada fuente desempeña un papel fundamental en el flujo de atribución.
 
 <div id="conversions" />
 
-<Accordion title="Conversions">
+<Accordion title="Conversiones">
 
-Conversion data contains details about user actions such as purchases and their associated Stock Keeping Units (SKUs) or Consumer Packaged Goods (CPGs). Each conversion instance represents a single conversion event, capturing details such as the SKU, user ID, and event time.
+Los datos de conversión contienen detalles sobre las acciones de los usuarios, como las compras y sus Stock Keeping Units (SKU) o Consumer Packaged Goods (CPG) asociados. Cada instancia de conversión representa un único evento de conversión, capturando detalles como el SKU, el ID de usuario y la hora del evento.
 
-**Conversion parameters example**
+**Ejemplo de parámetros de conversión**
 
-| **Field** | **Value** |
+| **Campo** | **Valor** |
 | --- | --- |
-| `app_id` | FoodDelivery |
+| `id_aplicación` | FoodDelivery |
 | `user_id` | 5abe2ddccca43000af58f0b |
 | `event_time` | 2024-08-21T16:06:32.393Z |
-| `event_name` | purchase |
+| `nombre_del_evento` | compra |
 | `sku` | 8711327623057 |
 | `sku_revenue` | 6.94 |
 | `sku_quantity` | 1 |
 
-AppsFlyer provides access to app conversions through integration with your app using the AppsFlyer SDK or via custom data sources provided by the collaborators. Web and in-store conversion events can also be provided using custom data sources.
+AppsFlyer proporciona acceso a las conversiones de aplicaciones a través de la integración con tu aplicación utilizando el SDK de AppsFlyer o a través de fuentes de datos personalizadas proporcionadas por los colaboradores. También se pueden proporcionar eventos de conversión web y en tienda utilizando fuentes de datos personalizadas.
 
 </Accordion>
 
@@ -52,293 +53,293 @@ AppsFlyer provides access to app conversions through integration with your app u
 
 <Accordion title="Engagements">
 
-The engagement source contains details about user interactions with ads, such as clicks or impressions. Each instance represents an engagement event and includes attributes such as the campaign ID, media source, and touch type (e.g., click or impression).
+La fuente de engagement contiene detalles sobre las interacciones de los usuarios con los anuncios, como clics o impresiones. Cada instancia representa un evento de interacción e incluye atributos como el ID de la campaña, la fuente del medio y el tipo de contacto (por ejemplo, clic o impresión).
 
-**Engagement parameters example**
+**Ejemplo de parámetros de engagement**
 
-| **Field** | **Value** |
+| **Campo** | **Valor** |
 | --- | --- |
 | `appsflyer_id` | 1727548724223 |
-| `media_source` | google |
-| `campaign` | grc\_web\_ftu\_seq |
-| `attributed_touch_time` | 2024-09-28T17:05:34 |
-| `attributed_touch_type` | impression |
-| `event_name` | start\_game |
+| `fuente_de_medios` | Google |
+| `campaña única` | grc\_web\_ftu\_seq |
+| `Se establece como TRUE o FALSE.` | 2024-09-28T17:05:34 |
+| `tipo_táctil_atribuido` | impresión |
+| `nombre_del_evento` | start\_game |
 
-To access engagement data, in [on-site campaigns](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#onsite-and-offsite-campaign-measurement), you can either set up new in-app events with attribution data in the `event_value` parameter using the AppsFlyer SDK or share the data through a custom source.
+Para acceder a los datos de engagement, en las [campañas on-site](#onsite-and-offsite-campaign-measurement), puedes configurar nuevos eventos in-app con datos de atribución en el parámetro `event_value` mediante el SDK de AppsFlyer o compartir los datos a través de una fuente personalizada.
 
-In [off-site campaigns, engagement data is received from a third party](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#onsite-and-offsite-campaign-measurement) and not via in-app events or a custom source.
+En las [campañas off-site](#onsite-and-offsite-campaign-measurement), los datos de engagement se reciben de terceros y no a través de eventos in-app o de una fuente personalizada.
 
 </Accordion>
 
 <div id="campaign-mapping" />
 
-<Accordion title="Campaign mapping">
+<Accordion title="Mapa de la campaña">
 
-The campaign mapping source enables us to determine the engagement that triggered each conversion. A campaign mapping record links conversion events to engagement events by pairing SKUs or CPGs with campaign IDs. Using this mapping, DCP links a conversion event that includes a given SKU to an engagement event containing the corresponding campaign ID.
+La fuente de asignación de campañas nos permite determinar el engagement que activó cada conversión. DCP mapea la fuente de datos de mapeo de campaña con las SKUs en la fuente de datos de conversión para identificar las conversiones desencadenadas por una campaña. El flujo de atribución DCP asigna eventos de conversión a eventos de engagement haciendo coincidir los SKU de conversión con los engagements que los anuncian. El proceso tiene acceso a las fuentes de datos de colaboración, engagements y mapeo de campañas.
 
-**Campaign mapping parameters example**
+**Ejemplo de parámetros de asignación de campañas**
 
-| **Field** | **Value** |
+| **Campo** | **Valor** |
 | --- | --- |
-| `collaborator_name` | fashion\_site |
+| `collaborator_name` | fasion\_site |
 | `collaborator_id` | 10079 |
-| `campaign_id` | 49fd77a2-8b64-4c9d... |
+| `id_campaña` | 49fd77a2-8b64-4c9d... |
 | `campaign_name` | off\_season\_25\_1 |
 | `conversion_targets` | 8711327621978, 8711327622289, 8711327623057 |
 
-The campaign mapping information is provided to AppsFlyer as a custom data source.
+La información de mapeo anterior se proporciona a AppsFlyer como una fuente de datos personalizada.
 
 </Accordion>
 
-## On-site vs. Off-site campaigns
+## Medición de campañas on-site y off-site
 
-DCP measures campaigns differently based on where they run — either on a collaborator’s owned site (on-site) or on the media partner platform (off-site). These differences affect how audiences are reached, how data is collected, and how attribution is performed.
+DCP mide las campañas on-site de forma diferente a las campañas off-site. Mientras que las campañas on-site se ejecutan en una de las plataformas del colaborador, las campañas off-site se ejecutan en plataformas de terceros, como Facebook, Google Ads y otras SRNs. Estas diferencias afectan a cómo se llega a las audiencias, cómo se recopilan los datos y cómo se realiza la atribución.
 
 <div id="offsite-campaigns" />
 
-<Accordion title="Off-site campaigns">
+<Accordion title="Campos de mapeo de campaña">
 
-Off-site campaigns involve user engagements on third-party platforms (such as Meta or Google), with conversions occurring within the collaborator’s owned properties and attributed to those off-site engagements.
+Las campañas off-site implican engagements de usuarios en plataformas de terceros (como Meta o Google), con conversiones que se producen en las propiedades propias del colaborador y que se atribuyen a esos engagements off-site.
 
-* **Example:** A brand runs a Facebook ad targeted at the CMN’s segmented customer data. When users see the ad in Facebook and click it, they are taken to the CMN’s product page.
-* **Attribution:** DCP shares conversion events with the third party, which performs its own attribution; DCP then retrieves aggregated results via the third party’s reporting API.
+* **Ejemplo:** Una marca ejecuta un anuncio de Facebook dirigido a los datos de clientes segmentados de la CMN. Cuando los usuarios ven el anuncio en Facebook y hacen clic en él, se les dirige a la página del producto de la CMN.
+* **Atribución:** DCP comparte eventos de conversión con el party, que realiza su propia atribución; después, DCP recupera resultados agregados a través de la API de reportar del party.
 
 </Accordion>
 
 <div id="onsite-campaigns" />
 
-<Accordion title="On-site campaigns">
+<Accordion title="Cuando un único evento de engagement es responsable de varios eventos de conversión, sólo la primera conversión se atribuye al engagement, mientras que las demás permanecen sin atribuir.">
 
-On-site campaigns involve user engagements and conversions that occur within a collaborator’s owned properties (such as their app or website), with conversions attributed to on-site engagements.
+Las campañas on-site implican engagements de usuarios y conversiones que se producen dentro de las propiedades propias de un colaborador (como su aplicación o sitio web), y las conversiones se atribuyen a engagements on-site.
 
-* **Example:** A brand promotes a product on a Commerce Media Network website. The audience includes past shoppers of the CMN platform, segmented by parameters like category interest or purchase history. When users see and click the campaign banner, they are taken to the product detail page on the same site.
-* **Attribution:** DCP directly attributes conversions to on-site campaigns using first-party engagement data from the collaborator’s website or app.
+* **Ejemplo:** Una marca promociona un producto en un sitio web de Commerce Media Network. La audiencia incluye compradores anteriores de la plataforma de la CMN, segmentados por parámetros como el interés por categoría o el historial de compras. Cuando los usuarios ven el banner de la campaña y hacen clic en él, se les dirige a la página de detalle del producto en el mismo sitio.
+* **Atribución:** DCP atribuye directamente las conversiones a las campañas on-site mediante datos de engagement del sitio web o la aplicación del colaborador.
 
 <div id="combined-onsite-and-offsite-campaigns" />
 
-<Accordion title="Combined on-site and off-site campaigns">
+<Accordion title="Considera qué caso de uso de la colaboración se ajusta a tu organización.">
 
-Combined campaigns involve user engagements that occur both on-site and off-site, with conversions occurring within the collaborator’s owned properties and attributed to engagements from either source using unified measurement and deduplication.
+Las campañas combinadas implican engagements de usuarios que se producen tanto on-site como off-site, con conversiones que tienen lugar en las propiedades propias del colaborador y se atribuyen a engagements de cualquiera de las dos fuentes mediante una medición unificada y la deduplicación.
 
-* **Example:** A brand promotes a product on the CMN’s website and also runs Facebook ads targeting the CMN’s customers. Engagements and conversions from both the on-site campaign and the Facebook campaign are captured, deduplicated, and measured together.
-* **Attribution:** DCP consolidates conversion data from both on-site and off-site channels into a shared attribution table, applying deduplication logic and presenting unified metrics per campaign and SKU.
-
-</Accordion>
+* **Ejemplo:** Una marca promociona un producto en el sitio web de la CMN y también publica anuncios de Facebook dirigidos a los clientes de la CMN. Los engagements y las conversiones tanto de la campaña on-site como de la campaña de Facebook se capturan, se deduplican y se miden conjuntamente.
+* **Atribución:** DCP consolida los datos de conversión de los canales on-site y off-site en una tabla de atribución compartida, aplica lógica de deduplicación y presenta métricas unificadas por campaña y SKU.
 
 </Accordion>
 
-## The DCP measurement process
+</Accordion>
 
-The DCP measurement process defines how conversion records from SDK in-app events and custom source files are validated, normalized, and matched to campaign engagements across [on-site and off-site campaigns](https://www.notion.so/Collaboration-measurement-Overview-255b7b13af5f80fa83d2dc77e337c960?pvs=21).
+## El proceso de medición DCP
+
+El proceso de medición de DCP define cómo se validan, normalizan y relacionan los registros de conversión procedentes de eventos in-app del SDK y archivos de fuente personalizados con los engagements de campaña en las [campañas on-site y off-site](https://www.notion.so/Collaboration-measurement-Overview-255b7b13af5f80fa83d2dc77e337c960?pvs=21).
 
 <div id="onsite-measurement-flow" />
 
-<Accordion title="On-site measurement flow">
+<Accordion title="Flujo de medición on-site">
 
-The DCP On-site measurement flow process in-app events and custom source records collected from the CMN or advertiser’s mobile app or website. DCP attributes these conversions internally using AppsFlyer’s attribution logic.
+El flujo de medición on-site de DCP procesa eventos in-app y registros de fuente personalizados recopilados desde la aplicación móvil o el sitio web de la CMN o del anunciante. DCP atribuye estas conversiones internamente mediante la lógica de atribución de AppsFlyer.
 
-The on-site measurement flow processes conversion and engagement data originating from two primary sources:
+El flujo de medición on-site procesa datos de conversión y de engagement procedentes de dos fuentes principales:
 
-* **In-app events (IAEs)** are collected through the AppsFlyer SDK embedded in the collaborator mobile app.
-* **Custom source event files** are sent by the collaborators to AppsFlyer.
+* **Eventos in-app (IAEs)** se recopilan a través del SDK de AppsFlyer integrado en la aplicación móvil del colaborador.
+* Los **archivos de eventos de fuente personalizados** son enviados a AppsFlyer por los colaboradores.
 
-Both event types are normalized into a unified structure and processed through the same attribution engine.
+Ambos tipos de eventos se normalizan en una estructura unificada y se procesan mediante el mismo motor de atribución.
 
-### 1. Configure measurement sources
+### 1. Configurar fuentes de medición
 
-Collaborators configure the DCP online measurement process:
+A continuación se describen las etapas de este proceso.
 
-* **In-app events:** Collaborators identify which in-app events (e.g., purchase, signup) should be measured as conversions or engagements. These events must already be collected via the AppsFlyer SDK, and the app and event names must be explicitly selected in the DCP configuration.
-* **Custom source event files:** Collaborators configure access to external data files (e.g., from BigQuery, S3, or Snowflake) and map key fields like user\_id, campaign\_id, and SKU to the DCP schema to support attribution.
+* **Eventos in-app:** Los colaboradores identifican qué eventos in-app (p. ej., compra o registro) deben medirse como conversiones o engagement. Estos eventos ya deben recopilarse mediante el SDK de AppsFlyer, y los nombres de la aplicación y del evento deben seleccionarse explícitamente en la configuración de DCP.
+* **Archivos de eventos de fuente personalizados:** Los colaboradores configuran el acceso a archivos de datos externos (por ejemplo, de BigQuery, S3 o Snowflake) y asignan campos clave como user\_id, campaign\_id y SKU al esquema de DCP para dar soporte a la atribución.
 
-### 2. Prepare and map conversion data
+### 2. Preparar y asignar datos de conversión
 
-Conversion events include SKUs and user identifiers that DCP uses to determine campaign-triggered activity.
+Los eventos de conversión incluyen SKU e identificadores de usuario que DCP usa para determinar la actividad desencadenada por la campaña.
 
-* DCP maps the campaign mapping data source with the SKUs found in the conversion events to identify conversions triggered by the measured campaign.
-* Conversions that cannot be matched to any campaign are marked as **organic**.
+* La fuente de mapeo de campaña vincula las conversiones con los engagements mediante el mapeo del SKU del evento de conversión con el ID de campaña del evento de engagement.
+* Las conversiones que no se pueden asociar a ninguna campaña se marcan como **orgánico**.
 
-### 3. Link conversions to engagements
+### 3. Vincular conversiones a engagements
 
-DCP links matched conversions to engagements using the following criteria:
+DCP vincula las conversiones coincidentes con engagements mediante los siguientes criterios:
 
-* A shared **user ID**
-* The same **campaign ID**
+* Un **ID de usuario** compartido
+* El mismo **ID de campaña**
 
-This results in attributed conversion records enriched with both campaign and engagement metadata.
+Esto da como resultado registros de conversión atribuidos enriquecidos con metadatos tanto de campaña como de engagement.
 
-### 4. Split multi-SKU conversions
+### 4. Dividir conversiones con varios SKU
 
-If a conversion event includes multiple SKUs:
+Si un evento de conversión incluye varios SKU:
 
-* DCP splits the record into multiple **single-SKU** records.
-* Each record reflects attribution for a single **conversion target**.
+* DCP divide los registros de conversión atribuidos con varias SKUs en registros individuales, cada uno de los cuales representa una única SKU.
+* Cada registro refleja la atribución de un único **objetivo de conversión**.
 
-### 5. Filter non-target SKUs
+### 5. Filtrar SKU que no son objetivo
 
-To ensure only relevant conversions are retained:
+Para garantizar que solo se conserven las conversiones relevantes:
 
-* DCP filters out records whose SKUs are not defined as conversion targets for the associated campaign.
+* DCP filtra los registros de SKU que no son objetivos de conversión para la campaña.
 
-### 6. Deduplicate conversion events
+### 6. Eliminar eventos de conversión duplicados
 
-Before attribution, DCP removes duplicates:
+Antes de la atribución, DCP elimina los duplicados:
 
-* Duplicate records from the same custom source (e.g., repeated uploads) are discarded.
-* If a matching in-app event (IAE) exists, it overrides the custom source record.
+* Los registros duplicados de la misma fuente personalizada (por ejemplo, cargas repetidas) se descartan.
+* Si existe un evento in-app (IAE) coincidente, sustituye al registro de la fuente personalizada.
 
-### 7. Apply attribution logic
+### 7. Aplicar la lógica de atribución
 
-DCP applies AppsFlyer’s last-touch attribution model with the following rules:
+DCP aplica el modelo de atribución de último toque de AppsFlyer con las siguientes reglas:
 
-* **Multiple engagements per conversion**: The **last touch** is selected based on the AppsFlyer priority scale.
-* **One engagement linked to multiple conversions**: Only the **first** conversion is attributed to the engagement; additional conversions remain unattributed.
+* **Múltiples engagements por conversión**: se selecciona el **último toque** según la escala de prioridad de AppsFlyer.
+* **Un engagement vinculado a varias conversiones**: solo la **primera** conversión se atribuye al engagement; las conversiones adicionales permanecen sin atribuir.
 
-> For more details, see Attribution method priorities (Attribution waterfall).
+> Para más información, consulta Prioridades del método de atribución (Cascada de atribución).
 
-### 8. Output: Attributed conversion dataset
+### 8. Resultado: conjunto de datos de conversiones atribuidas
 
-The final output includes:
+El resultado final incluye:
 
-* Attribution to a single campaign engagement per conversion
-* Cleaned and validated SKU-level conversion records
-* DCP aggregates attributed conversions to create insights, including total conversions.
-* Conversion records ready for analytics dashboards and exports
+* Atribución a un único engagement de campaña por conversión
+* Registros de conversiones a nivel de SKU depurados y validados
+* DCP agrega las conversiones atribuidas para generar insights, incluidas las conversiones totales.
+* Registros de conversiones listos para dashboards de analítica y exportaciones
 
 </Accordion>
 
 <div id="offsite-measurement-flow" />
 
-<Accordion title="Off-site measurement flow">
+<Accordion title="Flujo de medición off-site">
 
-**Off-site conversion events** are supplied by collaborators through **custom source files** and must include the necessary identifiers for attribution, such as Google click ID (`gclid`) or Facebook click ID (`fbclid`). These events are shared with the external platforms like Google and Meta, which match the data against their campaign records and return **enriched metadata**, including campaign, adset, and creative identifiers.
+Los **eventos de conversión off-site** los proporcionan los colaboradores mediante **archivos fuente personalizados** y deben incluir los identificadores necesarios para la atribución, como el ID de clic de Google (`gclid`) o el ID de clic de Facebook (`fbclid`). Estos eventos se comparten con plataformas externas como Google y Meta, que cotejan los datos con sus registros de campaña y devuelven **metadatos enriquecidos**, incluidos identificadores de campaña, conjunto de anuncios y material creativo.
 
-### 1. Prepare Conversion Data
+### 1. Preparar datos de conversión
 
-Conversion records are standardized based on the collaboration setup:
+Los registros de conversiones se estandarizan en función de la configuración de la colaboración:
 
-* Collaborators map custom fields to a unified conversion DCP schema.
-* Google Ads and Meta Ads require specific fields; validation rules ensure mappings meet each partner’s standards before continuing.
+* Los colaboradores asignan campos personalizados a un esquema DCP unificado de conversión.
+* Google Ads y Meta Ads requieren campos específicos; las reglas de validación garantizan que las asignaciones cumplan los estándares de cada partner antes de continuar.
 
-### 2. Deduplicate Conversion Events
+### 2. Eliminar duplicados de eventos de conversión
 
-Before attribution, DCP removes duplicate records from the same custom source (e.g., repeated uploads) are discarded.
+Antes de la atribución, DCP elimina los registros duplicados de la misma fuente personalizada (por ejemplo, cargas repetidas) y los descarta.
 
-### 3. Filter for Sharing Eligibility
+### 3. Filtrar por elegibilidad para compartir
 
-DCP checks if off-site conversions meet the criteria for sharing:
+DCP comprueba si las conversiones offsite cumplen los criterios para compartirse:
 
-* A valid channel-specific identifier is present (e.g., GCLID, FBCLID).
-* The conversion matches a defined campaign action or SKU.
-* The conversion falls within the lookback window:
-  * Meta: 1, 7, or 28 days for both click and view-through.
-  * Google: Defined in-platform; API override not supported.
+* Hay un identificador válido específico del canal (por ejemplo, GCLID, FBCLID).
+* La conversión coincide con una acción de campaña o un SKU definidos.
+* La conversión entra dentro de la ventana de lookback:
+  * Meta: 1, 7 o 28 días tanto para clic como para view-through.
+  * Google: se define en la plataforma; no se admite la sustitución mediante API.
 
-Conversions failing any criteria are excluded from partner sharing.
+Las conversiones que no cumplan alguno de los criterios se excluyen de la compartición con Partners.
 
-### 4. Filter according to Last-Touch Attribution
+### 4. Filtra según la atribución de último toque
 
-Attribution is assigned based on the most recent touchpoint:
+La atribución se asigna en función del punto de contacto más reciente:
 
-* If a valid Google or Meta click ID is more recent, attribution goes to that partner and is shared with that partner only.
-* If both click IDs exist on the conversion, the most recent wins.
+* Si un ID de clic válido de Google o Meta es más reciente, la atribución se asigna a ese partner y se comparte solo con ese partner.
+* Si ambos ID de clic existen en la conversión, prevalece el más reciente.
 
-### 5. Share with Google and Meta
+### 5. Compartir con Google y Meta
 
-Eligible conversions are shared securely via partner APIs:
+Las conversiones aptas se comparten de forma segura mediante las API de Partners:
 
 * **Meta:** Conversions API (CAPI)
 * **Google:** Offline Conversion API (OCI)
 
-Each conversion is sent to only one partner. Collaborators must configure the destination account (Meta Dataset ID or Google Conversion Action ID).
+Cada conversión se envía a un solo partner. Los colaboradores deben configurar la cuenta de destino (ID del conjunto de datos de Meta o ID de la acción de conversión de Google).
 
-### 6. Google and Meta response enrichment
+### 6. Enriquecimiento de respuestas de Google y Meta
 
-Google and Meta return enriched attribution data via their Insights APIs, including:
+Google y Meta devuelven datos de atribución enriquecidos a través de sus API de Insights, incluidos:
 
-* Campaign ID
-* Ad Set ID
-* Ad ID
+* Cadena
+* ID de conjunto de anuncios
+* Retargeting: Primer inicio después del re-engagement o la reatribución.
 * Creative ID
 
-AppsFlyer performs attribution based on the enriched records.
+AppsFlyer realiza la atribución en función de los registros enriquecidos.
 
-### 7. Output: Attributed conversion dataset
+### 7. Resultado: conjunto de datos de conversiones atribuidas
 
-The final output includes:
+El resultado final incluye:
 
-* Cleaned and validated SKU-level conversion records
-* DCP aggregates attributed conversions to create insights, including total conversions.
-* Conversion records are ready for analytics dashboards and exports
+* Registros de conversión a nivel de SKU depurados y validados
+* DCP une cada evento de conversión que se asignó a una campaña a un evento de engagement con el mismo ID de usuario e ID de campaña, creando un registro de conversión atribuido que contiene detalles de campaña y conversión.
+* Los registros de conversión están listos para dashboards de analítica y exportaciones
 
 </Accordion>
 
 <div id="combined-onsite-and-offsite-measurement-flow" />
 
-<Accordion title="Combined on-site and off-site measurement flow">
+<Accordion title="Flujo combinado de medición on-site y off-site">
 
-This flow outlines how AppsFlyer’s Data Collaboration Platform (DCP) processes conversion data from multiple sources, including:
+Este flujo describe cómo la Data Collaboration Platform (DCP) de AppsFlyer procesa datos de conversión de varias fuentes, entre ellas:
 
-* **On-site conversions**, which include in-app events and custom source records collected from the CMN or advertiser’s mobile app or website. DCP attributes these conversions internally using AppsFlyer’s attribution logic.
-* **Off-site conversions**, where conversion data originates from a custom source and is shared with external platforms such as Google and Meta. These platforms match the data to their own campaign records and return enriched metadata, including campaign, ad set, and creative identifiers.
+* **Conversiones on-site**, que incluyen eventos in-app y registros de fuentes personalizadas recopilados desde la CMN o desde la aplicación móvil o el sitio web del anunciante. DCP atribuye estas conversiones internamente mediante la lógica de atribución de AppsFlyer.
+* **Conversiones off-site**, en las que los datos de conversión proceden de una fuente personalizada y se comparten con plataformas externas como Google y Meta. Estas plataformas relacionan los datos con sus propios registros de campañas y devuelven metadatos enriquecidos, incluidos identificadores de campaña, de conjunto de anuncios y de creativo.
 
-The DCP off-site and on-site attribution flow deduplicates, attributes, enriches, and joins all conversion data to produce a single, unified performance dataset.
+El flujo de atribución off-site y on-site de DCP deduplica, atribuye, enriquece y combina todos los datos de conversión para generar un único conjunto de datos de rendimiento unificado.
 
 [<Image alt="Notion 2025-08-25 16.10.35.png" src="https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png" width="1622px" />](https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png)
 
-### 1. On-site and off-site record processing is performed
+### 1. Se realiza el procesamiento de registros on-site y off-site
 
-Conversion records are standardized based on the collaboration setup:
+Los registros de conversión se estandarizan según la configuración de la colaboración:
 
-* On-site processing up to and including step 6 in on-site attribution.
-* Off-site processing up to and including step 4 in off-site attribution.
+* Procesamiento on-site hasta e incluido el paso 6 en la atribución on-site.
+* Procesamiento off-site hasta e incluido el paso 4 en la atribución off-site.
 
-### 2. Apply Last-Touch Attribution
+### 2. Aplicar la atribución de último toque
 
-Attribution is assigned based on the most recent touchpoint:
+La atribución se asigna en función del punto de contacto más reciente:
 
-* If a CMN (on-site) event is most recent, the conversion is attributed to CMN and not shared with Meta or Google.
-* If a valid Google or Meta click ID is more recent, attribution goes to that partner and is shared with that partner only.
-* If both click IDs exist on the conversion, the most recent wins.
+* Si un evento de CMN (on-site) es el más reciente, la conversión se atribuye a CMN y no se comparte con Meta ni con Google.
+* Si un ID de clic válido de Google o Meta es más reciente, la atribución se asigna a ese partner y se comparte solo con ese partner.
+* Si ambos ID de clic existen en la conversión, prevalece el más reciente.
 
-### 3. Share with Google and Meta
+### 3. Compartir con Google y Meta
 
-Eligible conversions are shared securely via partner APIs:
+Las conversiones aptas se comparten de forma segura a través de las API de partners:
 
-* **Meta:** Conversions API (CAPI)
-* **Google:** Offline Conversion API (OCI)
+* **Meta:** API de conversiones (CAPI)
+* **Google:** API de conversiones offline (OCI)
 
-Each conversion is sent to only one partner. Advertisers must configure the destination account (Meta Dataset ID or Google Conversion Action ID).
+Cada conversión se envía solo a un partner. Los anunciantes deben configurar la cuenta de destino (ID del conjunto de datos de Meta o ID de la acción de conversión de Google).
 
-### 4. Off-site response enrichment
+### 4. Enriquecimiento de respuestas off-site
 
-Google and Meta return enriched attribution data via their Insights APIs, including:
+Google y Meta devuelven datos de atribución enriquecidos a través de sus API de Insights, incluidos:
 
-* Campaign ID
-* Ad Set ID
-* Ad ID
+* Cadena
+* ID de conjunto de anuncios
+* Retargeting: Primer inicio después del re-engagement o la reatribución.
 * Creative ID
 
-### 5. On-site and off-site conversion merge
+### 5. Combinación de conversiones on-site y off-site
 
-DCP merges these Off-site conversions with On-site conversions into a final dataset where each conversion is:
+DCP combina estas conversiones off-site con las conversiones on-site en un conjunto de datos final en el que cada conversión está:
 
-* Attributed to a single source: Google, Meta, or CMN
-* Enriched with campaign metadata
-* Ready for dashboards, exports, and performance analytics
+* Atribuida a una única fuente: Google, Meta o CMN
+* Enriquecida con metadatos de campaña
+* Lista para dashboards, exportaciones y análisis de rendimiento
 
 </Accordion>
 
-## Set up collaboration measurement
+## Configura la medición de colaboración
 
-The measurement setup process can be described in six steps, each of which has a dedicated article:
+El proceso de configuración de la medición puede describirse en seis pasos, cada uno de los cuales tiene un artículo dedicado:
 
-1. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-determine-your-collaboration-measurement-use-cas">Determine your collaboration measurement use case</Anchor>
-2. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement">Prepare the data sources that feed the attribution process</Anchor>
-3. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-configure-collaboration-measurement">Configure DCP to access the data sources and perform attribution</Anchor>
-4. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-view-measurement-dashboard">Consume the attributed measurement data in dashboards</Anchor>
-5. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-view-measurement-reports">Consume the attributed measurement data in reports</Anchor>
-6. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-run-a-dynamic-query-in-dcp">Run a dynamic query</Anchor>
+1. <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-determine-your-collaboration-measurement-use-cas">Determina tu caso de uso de medición de la colaboración</Anchor>
+2. [Preparar las fuentes de datos que alimentan el proceso de atribución](https://www.notion.so/Prepare-measurement-data-sources-175b7b13af5f8073918df666dc8c0aa9?pvs=21).
+3. [Configurar DCP para](https://www.notion.so/Configure-collaboration-measurement-176b7b13af5f805a904acccbbb371a45?pvs=21) acceder a las fuentes de datos y realizar la atribución.
+4. <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-view-measurement-dashboard">Consumir los datos de medición atribuidos en dashboards y reportes</Anchor>
+5. <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-view-measurement-reports">El proceso de atribución aplica la siguiente lógica:</Anchor>
+6. <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-run-a-dynamic-query-in-dcp">Ejecuta una consulta dinámica</Anchor>
 
-<div data-zendesk-anchors="h_01K3GNC7NFJV6W4NPEXJ4SKSKA=the-three-data-sources-of-measurement h_01K3GNC7NF2ZASWHYZJCPYHF2D=conversions h_01K3GNC7NFMAQ8S8A0YN79YRM8=engagements h_01K3GNC7NG2QYKV3ZTGYEHMDYT=campaign-mapping onsite-vs-offsite-campaigns=on-site-vs-off-site-campaigns h_01K3GNC7NGP2FXZXQRAS5H8DE1=on-site-vs-off-site-campaigns h_01K3GNC7NGDDSBGTPD7WVH1H2N=offsite-campaigns h_01K3GNC7NGKHSC7W6B5GG3M10Y=onsite-campaigns h_01K3GNC7NGMG4CCSWVJAVEN24E=combined-onsite-and-offsite-campaigns h_01K3GNC7NG1S37JPMH31A6RRSR=the-dcp-measurement-process h_01K3GNC7NGKJNH3BX53PJ9HQ90=onsite-measurement-flow h_01K3GPJQJC29ZJJTMM9BHA97H1=1-configure-measurement-sources h_01K3GNC7NGMSPQTGNNCRYVWWW4=2-prepare-and-map-conversion-data h_01K3GNC7NGJPNZ3EEMHQP5E04V=3-link-conversions-to-engagements 4-split-multisku-conversions=4-split-multi-sku-conversions h_01K3GNC7NG6DX2B825C5B6TVS0=4-split-multi-sku-conversions 5-filter-nontarget-skus=5-filter-non-target-skus h_01K3GNC7NGSED134G0PGDZGPDB=5-filter-non-target-skus h_01K3GNC7NGBDJ2JCY0HQ61412X=6-deduplicate-conversion-events h_01K3GNC7NG7Y8XZ9VH3SK47DAR=7-apply-attribution-logic h_01K3GNC7NGFY21QVJY8QRNHGVK=8-output-attributed-conversion-dataset h_01K3GNC7NHG5GBRC0X4M5DZ6PP=offsite-measurement-flow h_01K3GNC7NH3CP2HMZTFDK050FA=1-prepare-conversion-data h_01K3GNC7NHD0REAV4Q4EMEXPPX=2-deduplicate-conversion-events h_01K3GNC7NHX6VN5XV5ADTH92CT=3-filter-for-sharing-eligibility 4-filter-according-to-lasttouch-attribution=4-filter-according-to-last-touch-attribution h_01K3GNC7NH598P4G6VVSBQNVTF=4-filter-according-to-last-touch-attribution h_01K3GNC7NHAQMGXH6JJKEWHGV5=5-share-with-google-and-meta h_01K3GNC7NHVWVZ10A1Y4DW5M6G=6-google-and-meta-response-enrichment h_01K3GNC7NHFTD0CKQ2GSNNCE25=7-output-attributed-conversion-dataset h_01K3GNC7NHM6HAYCJ9Q1CX359B=combined-onsite-and-offsite-measurement-flow 1-onsite-and-offsite-record-processing-is-performed=1-on-site-and-off-site-record-processing-is-performed h_01K3GNC7NHW2M399S909QZE9H9=1-on-site-and-off-site-record-processing-is-performed 2-apply-lasttouch-attribution=2-apply-last-touch-attribution h_01K3GNC7NH3XJRK6N0PC8BWPXT=2-apply-last-touch-attribution h_01K3GNC7NHXMDC2CQQN8Q95DNH=3-share-with-google-and-meta 4-offsite-response-enrichment=4-off-site-response-enrichment h_01K3GNC7NHVGQNNVWMKZTAQ03D=4-off-site-response-enrichment 5-onsite-and-offsite-conversion-merge=5-on-site-and-off-site-conversion-merge h_01K3GNC7NH2PZ2KFBJHTG1ZZTE=5-on-site-and-off-site-conversion-merge set-up-collaboration-measurement-in-four-steps=set-up-collaboration-measurement h_01K3GNC7NHSCW4C2845N0MVQZM=set-up-collaboration-measurement" />
+<div data-zendesk-anchors="the-three-data-sources-of-measurement=las-tres-fuentes-de-datos-de-medici%C3%B3n h_01K3GNC7NFJV6W4NPEXJ4SKSKA=las-tres-fuentes-de-datos-de-medici%C3%B3n h_01K3GNC7NF2ZASWHYZJCPYHF2D=conversions h_01K3GNC7NFMAQ8S8A0YN79YRM8=engagements h_01K3GNC7NG2QYKV3ZTGYEHMDYT=campaign-mapping onsite-vs-offsite-campaigns=medici%C3%B3n-de-campa%C3%B1as-on-site-y-off-site h_01K3GNC7NGP2FXZXQRAS5H8DE1=medici%C3%B3n-de-campa%C3%B1as-on-site-y-off-site h_01K3GNC7NGDDSBGTPD7WVH1H2N=offsite-campaigns h_01K3GNC7NGKHSC7W6B5GG3M10Y=onsite-campaigns h_01K3GNC7NGMG4CCSWVJAVEN24E=combined-onsite-and-offsite-campaigns the-dcp-measurement-process=el-proceso-de-medici%C3%B3n-dcp h_01K3GNC7NG1S37JPMH31A6RRSR=el-proceso-de-medici%C3%B3n-dcp h_01K3GNC7NGKJNH3BX53PJ9HQ90=onsite-measurement-flow 1-configure-measurement-sources=1-configurar-fuentes-de-medici%C3%B3n h_01K3GPJQJC29ZJJTMM9BHA97H1=1-configurar-fuentes-de-medici%C3%B3n 2-prepare-and-map-conversion-data=2-preparar-y-asignar-datos-de-conversi%C3%B3n h_01K3GNC7NGMSPQTGNNCRYVWWW4=2-preparar-y-asignar-datos-de-conversi%C3%B3n 3-link-conversions-to-engagements=3-vincular-conversiones-a-engagements h_01K3GNC7NGJPNZ3EEMHQP5E04V=3-vincular-conversiones-a-engagements 4-split-multisku-conversions=4-dividir-conversiones-con-varios-sku h_01K3GNC7NG6DX2B825C5B6TVS0=4-dividir-conversiones-con-varios-sku 5-filter-nontarget-skus=5-filtrar-sku-que-no-son-objetivo h_01K3GNC7NGSED134G0PGDZGPDB=5-filtrar-sku-que-no-son-objetivo 6-deduplicate-conversion-events=6-eliminar-eventos-de-conversi%C3%B3n-duplicados h_01K3GNC7NGBDJ2JCY0HQ61412X=6-eliminar-eventos-de-conversi%C3%B3n-duplicados 7-apply-attribution-logic=7-aplicar-la-l%C3%B3gica-de-atribuci%C3%B3n h_01K3GNC7NG7Y8XZ9VH3SK47DAR=7-aplicar-la-l%C3%B3gica-de-atribuci%C3%B3n 8-output-attributed-conversion-dataset=8-resultado-conjunto-de-datos-de-conversiones-atribuidas h_01K3GNC7NGFY21QVJY8QRNHGVK=8-resultado-conjunto-de-datos-de-conversiones-atribuidas h_01K3GNC7NHG5GBRC0X4M5DZ6PP=offsite-measurement-flow 1-prepare-conversion-data=1-preparar-datos-de-conversi%C3%B3n h_01K3GNC7NH3CP2HMZTFDK050FA=1-preparar-datos-de-conversi%C3%B3n 2-deduplicate-conversion-events=2-eliminar-duplicados-de-eventos-de-conversi%C3%B3n h_01K3GNC7NHD0REAV4Q4EMEXPPX=2-eliminar-duplicados-de-eventos-de-conversi%C3%B3n 3-filter-for-sharing-eligibility=3-filtrar-por-elegibilidad-para-compartir h_01K3GNC7NHX6VN5XV5ADTH92CT=3-filtrar-por-elegibilidad-para-compartir 4-filter-according-to-lasttouch-attribution=4-filtra-seg%C3%BAn-la-atribuci%C3%B3n-de-%C3%BAltimo-toque h_01K3GNC7NH598P4G6VVSBQNVTF=4-filtra-seg%C3%BAn-la-atribuci%C3%B3n-de-%C3%BAltimo-toque 5-share-with-google-and-meta=5-compartir-con-google-y-meta h_01K3GNC7NHAQMGXH6JJKEWHGV5=5-compartir-con-google-y-meta 6-google-and-meta-response-enrichment=6-enriquecimiento-de-respuestas-de-google-y-meta h_01K3GNC7NHVWVZ10A1Y4DW5M6G=6-enriquecimiento-de-respuestas-de-google-y-meta 7-output-attributed-conversion-dataset=7-resultado-conjunto-de-datos-de-conversiones-atribuidas h_01K3GNC7NHFTD0CKQ2GSNNCE25=7-resultado-conjunto-de-datos-de-conversiones-atribuidas h_01K3GNC7NHM6HAYCJ9Q1CX359B=combined-onsite-and-offsite-measurement-flow 1-onsite-and-offsite-record-processing-is-performed=1-se-realiza-el-procesamiento-de-registros-on-site-y-off-site h_01K3GNC7NHW2M399S909QZE9H9=1-se-realiza-el-procesamiento-de-registros-on-site-y-off-site 2-apply-lasttouch-attribution=2-aplicar-la-atribuci%C3%B3n-de-%C3%BAltimo-toque h_01K3GNC7NH3XJRK6N0PC8BWPXT=2-aplicar-la-atribuci%C3%B3n-de-%C3%BAltimo-toque 3-share-with-google-and-meta=3-compartir-con-google-y-meta h_01K3GNC7NHXMDC2CQQN8Q95DNH=3-compartir-con-google-y-meta 4-offsite-response-enrichment=4-enriquecimiento-de-respuestas-off-site h_01K3GNC7NHVGQNNVWMKZTAQ03D=4-enriquecimiento-de-respuestas-off-site 5-onsite-and-offsite-conversion-merge=5-combinaci%C3%B3n-de-conversiones-on-site-y-off-site h_01K3GNC7NH2PZ2KFBJHTG1ZZTE=5-combinaci%C3%B3n-de-conversiones-on-site-y-off-site set-up-collaboration-measurement-in-four-steps=configura-la-medici%C3%B3n-de-colaboraci%C3%B3n h_01K3GNC7NHSCW4C2845N0MVQZM=configura-la-medici%C3%B3n-de-colaboraci%C3%B3n" />

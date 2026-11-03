@@ -1,5 +1,5 @@
 ---
-title: Flutter plugin
+title: Plugin Flutter
 metadata:
   keywords:
     - SDK
@@ -16,15 +16,15 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2019-10-06T10:45:50Z'
-  edited_at: '2026-08-18T09:10:51Z'
+  edited_at: '2024-02-13T12:45:02Z'
   id: 360002691537
-  locale: en-us
+  locale: es
   section: Other platforms
   section_id: 6551244207121
-  url: https://support.appsflyer.com/hc/en-us/articles/360002691537-Flutter-plugin
+  url: https://support.appsflyer.com/hc/es/articles/360002691537
 ---
 ![flutter_icon.png](https://files.readme.io/3d4c1fc64dc794621c37afc677a88175748b8993204dba5693cdcce58559fa4a-360004154837.png)
 
-> **At a glance:** Integrate AppsFlyer to apps developed using Flutter to measure installs, in-app events, media sources, and more.
+> **En resumen:** Integra AppsFlyer a las aplicaciones desarrolladas con Flutter para medir las instalaciones, los eventos in-app, las fuentes de medios y mucho más.
 
-To integrate the AppsFlyer Flutter plugin, see <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/flutter_appsflyer_sdk">here</Anchor>.
+Para integrar el plugin Flutter de AppsFlyer, haz clic <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/flutter_appsflyer_sdk">aquí</Anchor>.

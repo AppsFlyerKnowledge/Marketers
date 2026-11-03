@@ -1,5 +1,5 @@
 ---
-title: Adquant by Kenshoo - Google Ads—Campaign configuration
+title: Adquant by Kenshoo - Google Ads—Configuración de campañas
 metadata:
   keywords:
     - Advertisers
@@ -17,55 +17,55 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2018-12-09T07:43:55Z'
-  edited_at: '2026-06-16T09:36:53Z'
+  edited_at: '2026-08-12T12:18:45Z'
   id: 360000654357
-  locale: en-us
+  locale: es
   section: Google Ads
   section_id: 6551205645457
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000654357-Adquant-by-Kenshoo-Google-Ads-Campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360000654357
 ---
-> **At a glance:** Optimize Google AdWords campaigns by using Adquant by Kenshoo. When configured, AppsFlyer sends postbacks to Adquant.
+> **En resumen:** Optimiza las campañas de Google Adwords usando Adquant by Kenshoo. Una vez configurado, AppsFlyer envía postbacks a Adquant.
 
-## Setting up Adquant by Kenshoo
+## Configuración de Adquant by Kenshoo
 
-**Prerequisite:** Before setting up the integration, make sure you contact the partner and open an account with them.
+**Requisito previo:** Antes de configurar la integración, asegúrate de ponerte en contacto con el partner y abrir una cuenta con ellos.
 
-**New integration:**
+**Nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-2. Select the relevant app.
-3. Search for Adquant by Kenshoo and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle. Keep it on as long as you work with Adquant by Kenshoo.
-5. Configure remaining tabs as needed below.
+1. En la pestaña de **Integración** selecciona la aplicación para la integración y haz clic en **Activar partner**  
+   **Nota:** El selector debe estar encendido <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado) mientras</Anchor> trabajes con el partner.
+2. Selecciona la aplicación correspondiente.
+3. Busca Adquant by Kenshoo y selecciona **Integrar**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. Mantenlo activado mientras trabajes con Adquant by Kenshoo.
+5. Configura las pestañas restantes según sea necesario a continuación.
 
-**Edit existing integration:**
+**Editar integración existente:**
 
-In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
+Busca al partner y selecciónalo.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The Google Ads Customer ID must be entered **without** hyphens.
+> El ID de cliente de Google Ads debe introducirse **sin** guiones.
 
-6. From your **Google Ads** account, copy the Customer ID (without hyphens) from the top left-hand corner and paste it to the AppsFlyer **Ads Customer ID** parameter as shown in the screenshots below.
+6. Desde tu cuenta de **Google Ads**, copia el ID de cliente (sin guiones) de la esquina superior izquierda y pégalo en el parámetro **Ads Customer ID** de AppsFlyer, como se muestra en las capturas de pantalla a continuación.
 
 [![](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)
 
-7. Enter the **Action Identifier**, **Disable\_Country\_Sending** (provided by Adquant) and the **Google Ads Customer ID** number in the appropriate fields.
+7. Introduce el **Action Identifier**, **Disable\_Country\_Sending** (proporcionado por Adquant) y el número de **Google Ads Customer ID** en los campos correspondientes.
 
-### In-app events
+### Eventos dentro de la aplicación
 
-1. To send in-app event postbacks to Adquant by Kenshoo, toggle the In-App Events Postback to **ON**.
+1. Para enviar postbacks de eventos in-app a Adquant by Kenshoo, activa In-App Events Postback en **ON**.
 
-2. Individually add the in-app events you want to send to Adquant by Kenshoo and map them to the **Partner Event Identifier** field.
+2. Añade individualmente los eventos in-app que quieras enviar a Adquant by Kenshoo y asígnalos al campo **Partner Event Identifier**.
 
-3. Select **Send Revenue** to send all the parameters including the revenue value (if it exists in the event).
+3. Selecciona **Send Revenue** para enviar todos los parámetros, incluido el valor de ingresos (si existe en el evento).
 
-4. Click **Save**
+4. Haz clic en **Save**
 
-> 📘 **Important Note**
+> 📘 **Nota Importante**
 >
-> * Disabling attribution for Google Ads prevents sending postbacks to Google Ads Partners.
-> * You can configure multiple Google Ads accounts (CID) to send postbacks (step 5) by separating each CID with a comma.
+> * Desactivar la atribución para Google Ads evita enviar postbacks a Google Ads Partners.
+> * Puedes configurar varias cuentas de Google Ads (CID) para enviar postbacks (paso 5) separando cada CID con una coma.
 
-<div data-zendesk-anchors="h_01HKA1JQRK5BVGW13P72YEXZT7=setting-up-adquant-by-kenshoo h_01HKA1JQRKGDMZHTVSPVDSV463=note inapp-events=in-app-events h_01HKA1JQRK4YNEXKAHVBYP3EC1=in-app-events h_01HKA1JQRKZJJ4RXCCVSS1BG7Z=important-note" />
+<div data-zendesk-anchors="setting-up-adquant-by-kenshoo=configuraci%C3%B3n-de-adquant-by-kenshoo h_01HKA1JQRK5BVGW13P72YEXZT7=configuraci%C3%B3n-de-adquant-by-kenshoo h_01HKA1JQRKGDMZHTVSPVDSV463=nota inapp-events=eventos-dentro-de-la-aplicaci%C3%B3n h_01HKA1JQRK4YNEXKAHVBYP3EC1=eventos-dentro-de-la-aplicaci%C3%B3n h_01HKA1JQRKZJJ4RXCCVSS1BG7Z=nota-importante" />

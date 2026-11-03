@@ -1,5 +1,5 @@
 ---
-title: Audiences - Create better audiences with user attribute data
+title: 'Audiencias: atributos de los usuarios'
 metadata:
   keywords:
     - Advertisers
@@ -14,228 +14,227 @@ x-zendesk:
     - Marketers
     - Audience Segmentation
   created_at: '2020-06-11T06:13:55Z'
-  edited_at: '2026-10-05T06:49:12Z'
+  edited_at: '2026-10-07T00:17:44Z'
   id: 360009775517
-  locale: en-us
+  locale: es
   section: Audiences
   section_id: 6551336428945
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360009775517-Audiences-Create-better-audiences-with-user-attribute-data
+  url: https://support.appsflyer.com/hc/es/articles/360009775517
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Enrich your ability to segment users into relevant groups by adding your data about their characteristics into Audiences.
+> **Resumen general:** Mejora tu capacidad para segmentar a los usuarios en grupos relevantes añadiendo tus datos sobre sus características en Audiencias.
 
 [![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
 
-## About user attributes
+## Acerca de los atributos de usuario
 
-User attributes, unlike event-based data, are general characteristics that your users share with you. They can be static, like gender, age, birthday, and country; or dynamic, like the user score in a game.
+Los atributos de usuario, a diferencia de los datos basados en eventos, son características generales que tus usuarios comparten contigo. Pueden ser estáticos, como género, edad, fecha de nacimiento y país; o dinámicos, como la puntuación del usuario en un juego.
 
-User attribute data is:
+Los datos de atributos de usuario se:
 
-* Updated using CSV file import or JSON via API.
-* Stored in a hashed form.
-* Available for use in any audience ruleset
+* Actualizan mediante la importación de archivos CSV o JSON a través de API.
+* Almacenan en formato cifrado.
+* Encuentran disponibles para su uso en cualquier conjunto de reglas de audiencia.
 
-User attribute data is **not shared with advertising partners.**
+Los datos de atributos de usuario **no se comparten con socios publicitarios.**
 
-User attributes are housed at either the app-level or account-level as described in this article. If using app-level attributes, the account user requires <Anchor target="_blank" href="/marketers/docs/user-management#overview">app permission</Anchor> to manage and use the attributes.
+Los atributos de usuario se alojan a nivel de aplicación o de cuenta, como se describe en este artículo. Si utilizas atributos a nivel de aplicación, el usuario de la cuenta necesita <Anchor target="_blank" href="/marketers/es/docs/user-management#descripción-general">permiso de aplicación</Anchor> para gestionar y usar los atributos.
 
-The following scenario provides a detailed explanation of user attributes.
+El siguiente escenario ofrece una explicación detallada de los atributos de usuario.
 
 <div id="scenario-app-marketer-requirements" />
 
-<Accordion title="Scenario—app marketer requirements">
+<Accordion title="Escenario: requisitos del marketer de aplicaciones">
 
-You, the app marketer, are busy with the following:
+Tú, como marketer de aplicaciones, estás ocupado con lo siguiente:
 
-* Maintaining 2 gaming apps: game\_a and game\_b.
-* Launching game\_c
-* Targeting current app users with these user attributes:
-  * Favorite sport: Cricket
-  * Current game score: 15 or more in one of the current games
+* Mantener 2 aplicaciones de juegos: game\_a y game\_b.
+* Lanzar game\_c
+* Dirigirte a los usuarios actuales de la aplicación con estos atributos de usuario:
+  * Deporte favorito: Cricket
+  * Puntuación actual del juego: 15 o más en uno de los juegos actuales
 
-The table contains user-attribute data from your CRM. Audience rulesets need access to this data.   
+La tabla contiene datos de atributos de usuario de tu CRM. Los conjuntos de reglas de audiencia necesitan acceso a estos datos.   
 ![UserAttributuesExample_us-en.png](https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png)
 
-**Use CRM data in rulesets**
+**Usa datos de CRM en conjuntos de reglas**
 
-In Audiences, create user attributes (favorite sport and game score). This gives ruleset access to CRM data.
+En Audiencias, crea atributos de usuario (deporte favorito y puntuación del juego). Esto permite que el conjunto de reglas acceda a los datos de CRM.
 
-#### Scenario user attributes
+#### Atributos de usuario del escenario
 
-| Name | Format | Level |
+| Name | Formato | Nivel |
 | --- | --- | --- |
-| <span id="game-score"></span>Game score | **Number**: Lets you set rules like '*ScoreGameB is greater than 29'*. | **App-level**: User's score is recorded for each game played.<br /><br />Meaning: ScoreGameA, ScoreGameB. |
-| <span id="favorite-sport"></span>Favorite sport | **String:** Lets you set rules like '*whose favorite sport is tennis'.*<br /><br />Note! Values are case-sensitive. | **Account-level**: User's favorite sport is the same regardless of the app.<br /><br />Note! A user can have only 1 value associated with account-level attributes. |
+| <span id="game-score"></span>Puntuación del juego | **Número**: Te permite establecer reglas como '*ScoreGameB es mayor que 29'*. | **A nivel de aplicación**: La puntuación del usuario se registra para cada juego jugado.<br /><br />Significado: ScoreGameA, ScoreGameB. |
+| <span id="favorite-sport"></span>Deporte favorito | **String:** Te permite establecer reglas como '*cuyo deporte favorito es el tenis*'.<br /><br />¡Atención! Los valores distinguen entre mayúsculas y minúsculas. | **A nivel de cuenta**: El deporte favorito del usuario es siempre el mismo independientemente de la aplicación.<br /><br />¡Atención! Un usuario puede tener solo un valor asociado con los atributos a nivel de cuenta. |
 
-**User attributes in rulesets**
+**Atributos de usuario en conjuntos de reglas**
 
-User attributes act as filters in Audiences rulesets. This example uses criteria (favorite sport and game score) set by the marketer.
+Los atributos de usuario funcionan como filtros en los conjuntos de reglas de Audiencias. Este ejemplo utiliza criterios (deporte favorito y puntuación en el juego) que establece el comercializador.
 
-[<Image alt="UserAttributedExample.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)
+[<Image alt="Ejemplo de atributo de usuario.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)
 
 </Accordion>
 
-## Implement user attributes
+## Implementar atributos de usuario
 
-Set up, add, manage, and delete user attributes.
+Configurar, añadir, gestionar y eliminar atributos de usuario.
 
 <div id="set-up" />
 
-<Accordion title="Set up">
+<Accordion title="Configurar">
 
-**Prerequisite**:
+**Requisito previo**:
 
-To manage app-level attributes, an account user must have app permission.
+Para gestionar atributos a nivel de aplicación, el usuario de la cuenta debe tener permiso para la aplicación.
 
-**To set up user attributes follow these procedures:**
+**Para configurar los atributos de usuario siga estos pasos:**
 
-1. [Add user attributes.](/docs/audiences-create-better-audiences-with-user-attribute-data#add)
-2. [Do one of the following](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)
-   * [Import user-attribute data by CSV.](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)
-   * [Import user-attribute data by API.](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)
-3. <Anchor target="_blank" href="/marketers/docs/audiences-guide#user-attributes">Implement user attributes in rulesets.</Anchor>
+1. [Añadir atributos de usuario.](/docs/audiences-create-better-audiences-with-user-attribute-data#add)
+2. [Puede realizar una de las siguientes acciones:](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)
+   * [Importar datos de atributos de usuario mediante CSV.](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)
+   * [Importar datos de atributos de usuario mediante API.](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)
+3. <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#user-attributes">Implementar atributos de usuario en conjuntos de reglas.</Anchor>
 
 </Accordion>
 
 <div id="add" />
 
-<Accordion title="Add">
+<Accordion title="Añadir">
 
-**To add user attributes:**
+**Para añadir atributos de usuario:**
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Audiences**.
-2. Click the User Attributes tab.
-3. Click **Add user attribute**.
+1. En AppsFlyer, desde el menú lateral, elija **Interactuar** > **Audiencias**.
+2. Haga clic en la pestaña Atributos de usuario.
+3. Haga clic en **Agregar atributo de usuario**.
 
-   ![UserAttributeAdd.png](https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png)
-4. Complete the fields. Field characteristics are listed in the table that follows.
-   * **Attribute name**
-   * **Format**
-   * **Level**
-5. Click **Save**.
+   ![Agregar atributo de usuario.png](https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png)
+4. Rellene los campos. Las características de los campos se enumeran en la tabla que sigue.
+   * **Nombre del atributo**
+   * **Formato**
+   * **Nivel**
+5. Haga clic en **Guardar**.
 
-| Field | Characteristics |
+| Campo | Características |
 | --- | --- |
-| <span id="attribute-name"></span>Attribute name | <ul><li>English characters only</li><li>No punctuation or special characters</li><li>Same name cannot be used at both the app- and account-level</li><li>Same name **can** be used at the app-level; for example, above scenario use of ScoreGameA and ScoreGameB</li></ul> |
-| <span id="format"></span>Format | <ul><li>Text: Test if the attribute value **is** or **is not equal** to a specified rule value. Example: Is cricket or is not cricket.</li><li>Number: Test if the attribute value is greater than, less than, or equal to a specified rule value. Example: Score greater than 15</li></ul> |
-| <span id="level"></span>Level | <ul><li>Account-level: An attribute has no connection to the app.<br />Example: gender, favorite sport</li><li>App-level: An attribute is app-related. Select the apps associated with the attribute.</li></ul> |
+| <span id="attribute-name"></span>Nombre del atributo | <ul><li>Solo caracteres en inglés</li><li>Sin puntuación ni caracteres especiales</li><li>El mismo nombre no puede usarse a nivel de aplicación y de cuenta</li><li>El mismo nombre **puede** emplearse a nivel de aplicación; por ejemplo, en el escenario anterior se utilizan ScoreGameA y ScoreGameB</li></ul> |
+| <span id="format"></span>Formato | <ul><li>Texto: Compruebe si el valor del atributo **es** o **no es igual** a un valor de regla especificado. Ejemplo: Es cricket o no es cricket.</li><li>Número: Compruebe si el valor del atributo es mayor, menor o igual a un valor de regla especificado. Ejemplo: Puntuación superior a 15</li></ul> |
+| <span id="level"></span>Nivel | <ul><li>Nivel de cuenta: Un atributo no tiene conexión con la aplicación.<br />Ejemplo: género, deporte favorito</li><li>Nivel de aplicación: Un atributo está relacionado con la aplicación. Seleccione las aplicaciones asociadas al atributo.</li></ul> |
 
-**User attribute fields**
+**Campos de atributos de usuario**
 
 </Accordion>
 
 <div id="manage" />
 
-<Accordion title="Manage">
+<Accordion title="Gestionar">
 
-To manage user attributes, go to **Audiences** > **User attributes** tab.
+Para gestionar los atributos de usuario, ve a la pestaña **audiencias** > **Atributos de usuario**.
 
-[![AudiencesUserAttributes_us-en.png](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)
+[![AudienciasUserAttributes_us-en.png](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)
 
-| Function | Description |
+| Función | Descripción |
 | --- | --- |
-| <span id="search-and-filter"></span>Search and filter | By attribute name, app name, and attribute level. |
-| <span id="sort-by"></span>Sort by | Click a column header to sort table rows. |
-| <span id="zd-import-data"></span>Import data | <ul><li>[Import data by CSV](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[Import data by API](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
-| <span id="change-api-import-key"></span>Change API import key | **To change the API import key:**<ol><li>Click **Import data**.</li><li>Select **API**.</li><li>Click **Refresh import key**.</li></ol>**Note!** If scripts have embedded keys, make sure to update them with the new key. |
+| <span id="search-and-filter"></span>Buscar y filtrar | Por nombre de atributo, nombre de la aplicación y nivel de atributo. |
+| <span id="sort-by"></span>Ordenar por | Haga clic en el encabezado de una columna para ordenar las filas de la tabla. |
+| <span id="import-data"></span>Importar datos | <ul><li>[Importar datos mediante CSV](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[Importar datos a través de API](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
+| <span id="change-api-import-key"></span>Cambiar la clave de importación de API | **Para cambiar la clave de importación de API:**<ol><li>Haga clic en **Importar datos**.</li><li>Seleccione **API**.</li><li>Haz clic en **Actualizar clave de importación**.</li></ol>**¡Atención!** ¡Nota! **Si los scripts tienen claves integradas, asegúrese de actualizarlos con la nueva clave.** |
 
-Manage user attributes
+Gestionar atributos de usuario
 
 </Accordion>
 
 <div id="delete" />
 
-<Accordion title="Delete">
+<Accordion title="Eliminar">
 
-![AppsFlyerAdmin_us-en.png](https://files.readme.io/167bf558ccdf30670d9dc4b6ea824318a886cba7ac2fdf928010e8a0c9d35d4f-33375683048849.png) Only an admin user can delete an attribute.
+![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Solo un usuario administrador puede suprimir un atributo.
 
-**To delete an attribute that is part of a ruleset:**
+**Para suprimir un atributo que forma parte de un conjunto de reglas:**
 
-1. Remove the attribute from the ruleset.
-2. Delete the attribute.
+1. Quite el atributo del conjunto de reglas.
+2. Elimine el atributo.
 
 </Accordion>
 
-## Import data
+## Importar datos
 
 <div id="import-field-specifications" />
 
-<Accordion title="Import field specifications">
+<Accordion title="Especificaciones del campo de importación">
 
-| Field | Content | Format | Add data  <br />by CSV | Remove data by CSV |
+| Campo | Contenido | Formato | Agregar datos  <br />a través de CSV | Eliminar datos mediante CSV |
 | --- | --- | --- | --- | --- |
-| <span id="device_id"></span>device\_id | Includes 1 of these user IDs:<ul><li>IDFA</li><li>GAID</li></ul> | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br /><br />To remove existing data, don't send |
-| <span id="customer_id"></span>customer\_id | <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer user ID</Anchor> | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br /><br />To remove existing data, don't send |
-| <span id="app_id"></span>app\_id | **App-level attribute:** App ID as it displays in the dashboard.<br /><br />For iOS apps, include the prefix *ID*.<br /><br />**Account-level attribute**: Always populate with * | Text | Mandatory | Mandatory |
-| <span id="attribute_key"></span>attribute\_key | User-attribute name, exactly as it displays on the user-attributes tab. | Text | Mandatory | Mandatory |
-| <span id="attribute_value"></span>attribute\_value | Assigned value<br /><br />[*See limitations](/docs/audiences-create-better-audiences-with-user-attribute-data#limitations) | Text or number | Mandatory | Don't send |
+| <span id="device_id"></span>id\_del\_dispositivo | Incluye uno de estos ID de usuario:<ul><li>Identificador de anunciante (IDFA)</li><li>GNA Company</li></ul> | Texto | Es obligatorio **device\_id** o **customer\_id** | Es obligatorio indicar **device\_id** o **customer\_id**<br /><br />Para eliminar los datos existentes, no envíe |
+| <span id="customer_id"></span>id\_cliente | <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">ID de usuario del cliente</Anchor> | Texto | Es obligatorio indicar **device\_id** o **customer\_id** | Es obligatorio indicar **device\_id** o **customer\_id**<br /><br />Para eliminar los datos existentes, no envíe |
+| <span id="app_id"></span>id\_aplicación | **Atributo a nivel de aplicación:** App ID tal como aparece en el dashboard.<br /><br />Para las aplicaciones iOS, incluye el prefijo *ID*.<br /><br />**Atributo a nivel de cuenta**: Rellénalo siempre con * | Texto | Obligatorio | Obligatorio |
+| <span id="attribute_key"></span>clave de atributo | Nombre del atributo de usuario, exactamente como se muestra en la pestaña de atributos de usuario. | Texto | Obligatorio | Obligatorio |
+| <span id="attribute_value"></span>valor\_del\_atributo | Valor asignado<br /><br />[*Ver limitaciones](/docs/audiences-create-better-audiences-with-user-attribute-data#limitations) | Texto o número | Obligatorio | No enviar |
 
-User-attribute field list
+Listado de campos de atributos de usuario
 
 </Accordion>
 
 <div id="import-data-by-csv" />
 
-<Accordion title="Import data by CSV">
+<Accordion title="Importar datos mediante CSV">
 
-User-attribute data is added or removed via a CSV file. The figure and example CSV file that follows, match the scenario describing the feature in this article.
+Los datos de atributos de usuario se agregan o eliminan mediante un archivo CSV. La figura y el archivo CSV de ejemplo que sigue coinciden con el escenario descrito en este artículo.
 
-<Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/360012423857">User-attribute-example.csv</Anchor>
+<Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/360012423857">Ejemplo de atributo de usuario.csv</Anchor>
 
-![FileForAttributes.png](https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png)
+![ArchivoParaAtributos.png](https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png)
 
-**CSV file requirements**
+**Requisitos del archivo CSV**
 
-* No header row
-* Contains all the columns listed in the preceding table.
+* Sin fila de encabezado
+* Contiene todas las columnas enumeradas en la tabla anterior.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> This CSV format is for importing user attribute data. If you're importing audience segments instead, see <Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems">Import audience segments from internal systems</Anchor>, which uses a different CSV format that requires a header row.
+> Este formato CSV sirve para importar datos de atributos de usuario. Si en su lugar vas a importar segmentos de audiencias, consulta <Anchor target="_blank" href="/marketers/es/docs/audiences-import-audience-segments-from-internal-systems">Importar segmentos de audiencia desde sistemas internos</Anchor>, que utiliza un formato CSV distinto y requiere una fila de encabezado.
 
-**To import a CSV file:**
+**Para importar un archivo CSV:**
 
-1. Go to **Audiences** > **User attributes** tab.
-2. Click **Import data**.
-3. Select **CSV**.
-4. Select either:
-   * **Add data**
-   * **Remove data**
-5. Choose a CSV file to import.
-6. Click **Upload**; an upload status message will appear.
+1. Vaya a la pestaña **Audiencias** > **Atributos de usuario** .
+2. Haga clic en **Importar datos**.
+3. Seleccione **CSV**.
+4. Seleccione una de las siguientes opciones:
+   * **Añadir datos**
+   * **Eliminar datos**
+5. Elija un archivo CSV para importar.
+6. Haga clic en **Cargar**; aparecerá un mensaje de estado de carga.
 
-**Note:** When importing user attributes, all known devices associated with a customer ID are also assigned the attribute. For example, if a user imported 10 devices (by customer\_id) to attribute “Game score”, and one of the customer\_ids is associated with 2 devices (i.e. 2 GAIDs with the same CUID), then this import will contain 11 user attribute records.
+**Nota:** Al importar atributos de usuario, todos los dispositivos asociados conocidos con un ID de cliente también reciben el atributo. Por ejemplo, si un usuario importa 10 dispositivos (por customer\_id) al atributo “Puntaje del juego”, y uno de los customer\_id está asociado a 2 dispositivos (es decir, 2 GAID con el mismo CUID), esta importación incluirá 11 registros de atributos de usuario.
 
 </Accordion>
 
 <div id="import-data-by-api" />
 
-<Accordion title="Import data by API">
+<Accordion title="Importar datos a través de API">
 
-This import method requires a request URL and JSON with user-attribute data.
+Este método de importación requiere una URL de solicitud y un JSON con datos de atributos de usuario.
 
-1. In the dashboard, get the prepared API request calls and JSON template.
-2. Populate the JSON template with your data according to the [field specifications](/docs/audiences-create-better-audiences-with-user-attribute-data#import-field-specifications).
+1. En el panel de control, obtén las llamadas de solicitud de API preparadas y la plantilla JSON.
+2. Rellena la plantilla JSON con tus datos de acuerdo con las [especificaciones de campo](/docs/audiences-create-better-audiences-with-user-attribute-data#import-field-specifications).
 
-**To generate the API request URL and JSON template:**
+**Para generar la URL de solicitud de API y la plantilla JSON:**
 
-1. Click **Import data.**
-2. Select **API.**
-3. Select an action:  
-   * Update user-attributes: Overwrite or add.
-   * Remove user-attributes.
-   * Remove user data: Removes all data relating to a specific user. User is identified by their AppsFlyer ID.
-   * Remove app data: Removes all data at the app level.
-4. Copy the generated API request URL.
-5. Copy the generated API request body.
-6. Prepare the JSON (with its user-attribute data) using the specified JSON format. For account-level attributes set "app\_ids": ["*"]
-7. Prepare the API call based on the URL and request body.
-8. Send the request programmatically.
+1. Haz clic en **Importar datos.**
+2. Selecciona **API.**
+3. Elige una acción:  
+   * Actualizar atributos de usuario: Sobrescribir o agregar.
+   * Eliminar atributos de usuario.
+   * Eliminar datos del usuario: Elimina todos los datos relacionados con un usuario específico. El usuario se identifica mediante su ID de AppsFlyer.
+   * Eliminar datos de la aplicación: Elimina todos los datos a nivel de la aplicación.
+4. Copia la URL de solicitud de API generada.
+5. Copia el cuerpo de la solicitud de API generada.
+6. Prepara el JSON (con sus datos de atributos de usuario) utilizando el formato JSON especificado. Para los atributos a nivel de cuenta, configura "app\_ids": ["*"]
+7. Prepara la llamada API basándote en la URL y el cuerpo de la solicitud.
+8. Envía la solicitud de manera programática.
 
-**Example request and JSON**
+**Ejemplo de solicitud y JSON**
 
 ```json
 https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
@@ -257,11 +256,11 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 }
 ```
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> You must authenticate the request using an Authorization Bearer Header with an <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#advertiser">API token V2.0</Anchor>
+> Debes autenticar la solicitud mediante un encabezado Authorization Bearer con un <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens#appsflyer">token API V2.0</Anchor>
 
-**Example with multiple device IDs, attribute keys, and attribute values**
+**Ejemplo con múltiples IDs de dispositivos, claves de atributos y valores de atributos**
 
 ```json
 {
@@ -303,7 +302,7 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 }
 ```
 
-**Example with a single device ID and multiple attribute keys and values**
+**Ejemplo con un único ID de dispositivo y múltiples claves y valores de atributos**
 
 ```json
 {
@@ -339,28 +338,28 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 }
 ```
 
-**Note:** When importing user attributes, all known devices associated with a customer ID are also assigned the attribute. For example, if a user imported 10 devices (by customer\_id) to attribute “Game score”, and one of the customer\_ids is associated with 2 devices (i.e. 2 GAIDs with the same CUID), then this import will contain 11 user attribute records. CSV import limitations
+**Nota:** Al importar atributos de usuario, todos los dispositivos asociados conocidos con un ID de cliente también reciben el atributo. Por ejemplo, si un usuario importa 10 dispositivos (por customer\_id) al atributo “Puntaje del juego”, y uno de los customer\_id está asociado a 2 dispositivos (es decir, 2 GAID con el mismo CUID), esta importación incluirá 11 registros de atributos de usuario. Limitaciones de importación CSV
 
 </Accordion>
 
 <div id="limitations" />
 
-<Accordion title="Limitations">
+<Accordion title="Limitaciones">
 
-#### General limitations
+#### Limitaciones generales
 
-* Only integer (whole) numbers are supported in CSV/API import data. Float type (decimal) numbers are not supported. **Example:** A "score" attribute value can be 90, but not 90.5.
-* User-attribute data can't be printed or downloaded.
-* #### Attribute value limitations:
+* Solo se admiten números enteros en los datos de importación CSV/API. No se admiten números de tipo flotante (decimales). **Ejemplo:** Un valor de atributo "puntuación" puede ser 90, pero no 90,5.
+* No se pueden imprimir ni descargar los datos de atributos de usuario.
+* #### Limitaciones de los valores de los atributos:
 
-  * No commas, dots, or other special characters inside attribute values.
-  * There is a length limitation of 40 characters for a string attribute value.
-  * Attribute values can't start with 0.
+  * No se permiten comas, puntos ni otros caracteres especiales en los valores de los atributos.
+  * Existe una limitación de 40 caracteres para un valor de atributo de tipo cadena.
+  * Los valores de los atributos no pueden comenzar con 0.
 
-#### API import limitations
+#### Limitaciones de importación a través de la API
 
-* Maximum 350 API requests per minute, 10K devices for flat payload (10K devices with one attribute, 5K devices with 2 attributes, etc.)
-* Both `device_id` and `customer_id`keys are mandatory for every import call. If you want to import attributes with only one of these identifiers, the call has to include the “header” of the other identifier with an empty string. For example, if you want to import attributes per `device_id` and no `customer_id`, the call should look like this:
+* Un máximo de 350 solicitudes API por minuto, 10.000 dispositivos para una carga útil simple (10.000 dispositivos con un atributo, 5.000 con dos atributos, etc.)
+* Las claves `device_id` y `customer_id` son necesarias para cada llamada de importación. Si desea importar atributos con solo uno de estos identificadores, la llamada debe incluir el "encabezado" del otro identificador con una cadena vacía. Por ejemplo, si desea importar atributos por `device_id` y no por `customer_id`, la llamada debería ser así:
 
 ```json
 "attributes_values": [
@@ -369,10 +368,10 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 "customer_id": "",
 ```
 
-#### CSV import limitations
+#### Limitaciones de importación CSV
 
-* When adding user attribute values, there is a maximum of 10 million rows per CSV file.
+* Al agregar valores de atributos de usuario, se permite un máximo de 10 millones de filas por archivo CSV.
 
 </Accordion>
 
-<div data-zendesk-anchors="user-attributes=about-user-attributes h_01HDNZH1XVX5BYQBPG848M8QZM=about-user-attributes scenario%E2%80%94app-marketer-requirements=scenario-app-marketer-requirements h_01HDNZH1XV8AWVVGNYVA9G4PAG=scenario-app-marketer-requirements h_01HDNZH1XW32ZJJRSANBQCTBV0=scenario-user-attributes h_01HDNZH1XWPBVDHJ7AGPT5ZM9W=implement-user-attributes h_01HDNZH1XWYA9TQZ1B342A661R=set-up h_01HDNZH1XW0PPJF78EVFQTW3R7=add h_01HDNZH1XWGZ04TQXD5D50771A=manage import-data=zd-import-data h_01HDNZH1XWP8P1ZVJX11AXCS2P=delete import-data::b50dc884=import-data h_01HDNZH1XWCXV89YJV7EBJXNK5=import-data h_01HDNZH1XW87W1PV4C3PMY9QD6=import-field-specifications h_01HDNZH1XW3XC893Q8BQZQW2AG=import-data-by-csv h_01M45D4VCXXKXV25MQNAKW53ZW=note h_01HDNZH1XX7PMGNTD683DD2B49=import-data-by-api h_01HDNZH1XXF6DSNKG19ZRZ01AZ=note-1 h_01HDNZH1XX61DVGK96C2TDSYW9=limitations h_01HDNZH1XXZZFA3WHZEE5N24AB=general-limitations h_01GZTGPK2FTHTV4NQ2HKV1HK00=attribute-value-limitations h_01HDNZH1XX4JWSMSF4672ENWNS=api-import-limitations h_01J3APYQ8MXG1SGREVN638R75N=csv-import-limitations" />
+<div data-zendesk-anchors="user-attributes=acerca-de-los-atributos-de-usuario h_01HDNZH1XVX5BYQBPG848M8QZM=acerca-de-los-atributos-de-usuario scenario%E2%80%94app-marketer-requirements=scenario-app-marketer-requirements h_01HDNZH1XV8AWVVGNYVA9G4PAG=scenario-app-marketer-requirements scenario-user-attributes=atributos-de-usuario-del-escenario h_01HDNZH1XW32ZJJRSANBQCTBV0=atributos-de-usuario-del-escenario implement-user-attributes=implementar-atributos-de-usuario h_01HDNZH1XWPBVDHJ7AGPT5ZM9W=implementar-atributos-de-usuario h_01HDNZH1XWYA9TQZ1B342A661R=set-up h_01HDNZH1XW0PPJF78EVFQTW3R7=add h_01HDNZH1XWGZ04TQXD5D50771A=manage h_01HDNZH1XWP8P1ZVJX11AXCS2P=delete import-data::b50dc884=importar-datos h_01HDNZH1XWCXV89YJV7EBJXNK5=importar-datos h_01HDNZH1XW87W1PV4C3PMY9QD6=import-field-specifications h_01HDNZH1XW3XC893Q8BQZQW2AG=import-data-by-csv h_01M45D4VCXXKXV25MQNAKW53ZW=nota h_01HDNZH1XX7PMGNTD683DD2B49=import-data-by-api h_01HDNZH1XXF6DSNKG19ZRZ01AZ=nota-1 h_01HDNZH1XX61DVGK96C2TDSYW9=limitations general-limitations=limitaciones-generales h_01HDNZH1XXZZFA3WHZEE5N24AB=limitaciones-generales attribute-value-limitations=limitaciones-de-los-valores-de-los-atributos h_01GZTGPK2FTHTV4NQ2HKV1HK00=limitaciones-de-los-valores-de-los-atributos api-import-limitations=limitaciones-de-importaci%C3%B3n-a-trav%C3%A9s-de-la-api h_01HDNZH1XX4JWSMSF4672ENWNS=limitaciones-de-importaci%C3%B3n-a-trav%C3%A9s-de-la-api csv-import-limitations=limitaciones-de-importaci%C3%B3n-csv h_01J3APYQ8MXG1SGREVN638R75N=limitaciones-de-importaci%C3%B3n-csv" />

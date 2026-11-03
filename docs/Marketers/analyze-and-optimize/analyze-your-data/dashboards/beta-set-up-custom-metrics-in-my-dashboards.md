@@ -1,5 +1,5 @@
 ---
-title: '[Beta] Set up custom metrics in My Dashboards'
+title: '[Beta] Configurar métricas personalizadas en My Dashboards'
 metadata:
   keywords:
     - Marketers
@@ -13,119 +13,120 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2025-01-01T09:21:05Z'
-  edited_at: '2026-08-19T10:32:26Z'
+  edited_at: '2026-08-22T00:03:32Z'
   id: 31400289569169
-  locale: en-us
+  locale: es
   section: Dashboards
   section_id: 6550925337873
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/31400289569169--Beta-Set-up-custom-metrics-in-My-Dashboards
+  url: https://support.appsflyer.com/hc/es/articles/31400289569169
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-> **At a glance:** Define your own metrics and use them to view data in My Dashboards.
+> **En resumen:** Define tus propias métricas y úsalas para ver datos en My Dashboards.
 
-## About custom metrics
+## Acerca de métricas personalizadas
 
-Custom metrics let you tailor data analysis to your unique business needs by defining calculations based on existing data. They provide more control and flexibility than standard metrics, enabling you to combine multiple metrics, create projections, and customize KPIs.
+Las métricas personalizadas te permiten adaptar el análisis de datos a las necesidades únicas de tu negocio al definir cálculos basados en datos existentes. Proporcionan más control y flexibilidad que las métricas estándar, lo que te permite combinar múltiples métricas, crear proyecciones y personalizar KPIs.
 
-For example, instead of generic metrics like "Revenue" or "Clicks," you can create formulas for your unique uses cases, such as:
+Por ejemplo, en lugar de métricas genéricas como "Ingresos" o "Clics", puedes crear fórmulas para tus casos de uso únicos, como:
 
-* Revenue D60 Prediction = Revenue D1 * 3
-* Click-to-purchase rate = Clicks / af\_purchase [unique users]
+* Predicción de ingresos D60 = Ingresos D1 * 3
+* Tasa de clics para comprar = Clics / af\_purchase [usuarios únicos]
 
-Custom metrics are compatible with all widget types in My Dashboards, including tables, charts, and KPIs. Whether you're a marketer tracking campaign ROI, a product manager monitoring engagement, or an analyst forecasting performance, custom metrics enhance your ability to analyze trends, identify opportunities, and make data-driven decisions for your unique business needs—all directly from your dashboard.
+Las métricas personalizadas son compatibles con todos los tipos de widgets en My Dashboards, incluidos tablas, gráficos y KPIs. Ya sea que seas un marketer que rastrea el ROI de la campaña, un gerente de producto que monitorea el compromiso o un analista que pronostica el rendimiento, las métricas personalizadas mejoran tu capacidad para analizar tendencias, identificar oportunidades y tomar decisiones basadas en datos para las necesidades únicas de tu negocio, todo directamente desde tu dashboard.
 
-**Note**: The custom metrics you create are at the account level, meaning different apps in the same AppsFlyer account can use the same custom metrics.
+**Nota**: Las dimensiones personalizadas que creas están a nivel de cuenta, lo que significa que diferentes aplicaciones en la misma cuenta de AppsFlyer pueden usar las mismas dimensiones personalizadas.
 
-## Procedures
+## Procedimientos
 
 <div id="create-a-custom-metric" />
 
-<Accordion title="Create a custom metric">
+<Accordion title="Crear una métrica personalizada">
 
-**To create a custom metric**:
+**Para crear una métrica personalizada**:
 
-1. In your dashboard, either:
-   * Click **+ Create new** > **Custom metrics**.
-   * In any chart or table, in the **Metrics** dropdown menu, click **+ Create custom metric**.
-2. Name your metric. At the top of the custom metric editor, input a descriptive name for your metric (for example, "IPM").
-3. Choose a **Metric type**. Select whether the metric is numeric, a percentage, or monetary (currency).
-4. Define your metric formula. Either:
-   * Get started quickly: Use suggested formulas (displayed in the left-side menu of the custom metric editor). Then use the editor to edit the template to fit your specific needs, such as selecting different in-app events or modifying multipliers or other parameters. For example, for the template `Retention rate D2 / Retention rate D7`, you can replace D2 and D7 with different events or time periods.
-   * Use the interactive editor: Add metrics and operators (using the buttons), and numbers (using your keyboard) to define your formula.
-5. Preview the formula in the fx formula field.
-6. [Optional] If you created the custom metric from within the general dashboard, click **Save and add to chart**.  
-   A new chart is created that includes your custom metric.
-7. Click **Save**.
-   * If you created the custom metric from within a widget, it's automatically added to the chart or table.
-   * If you created the custom metric in the general dashboard, you can now add it to any widgets you want.
+1. En tu dashboard:
+   * Haz clic en **+ Crear nuevo** > **Métricas personalizadas**.
+   * En cualquier gráfico o tabla, en el menú desplegable **Métricas**, haz clic en **+ Crear métrica personalizada**.
+2. Nombra tu métrica. En la parte superior del editor de métricas personalizadas, ingresa un nombre descriptivo para tu métrica (por ejemplo, "IPM").
+3. Elige un **Tipo de métrica**. Selecciona si la métrica es numérica, un porcentaje o monetaria (moneda).
+4. Define tu fórmula de métrica. Elige entre:
+   * Comenzar rápidamente: Utiliza las fórmulas sugeridas (mostradas en el menú de la izquierda del editor de métricas personalizadas). Luego, utiliza el editor para modificar la plantilla según tus necesidades específicas, como seleccionar diferentes eventos in-app o modificar multiplicadores u otros parámetros. Por ejemplo, para la plantilla `Retention rate D2 / Retention rate D7`, puedes reemplazar D2 y D7 con diferentes eventos o períodos de tiempo.
+   * Usa el editor interactivo: Agrega métricas y operadores (usando los botones), y números (usando tu teclado) para definir tu fórmula.
+5. Previsualiza la fórmula en el campo de fórmula fx.
+6. [Opcional] Si creaste la métrica personalizada desde el dashboard general, haz clic en **Guardar y agregar al gráfico**.  
+   Se crea un nuevo gráfico que incluye tu métrica personalizada.
+7. Haz clic en **Guardar**.
+   * Si creaste la métrica personalizada desde un widget, se agrega automáticamente al gráfico o tabla.
+   * Si creaste la métrica personalizada en el dashboard general, ahora puedes agregarla a cualquier widget que desees.
 
 </Accordion>
 
 <div id="edit-a-custom-metric" />
 
-<Accordion title="Edit a custom metric">
+<Accordion title="Editar una métrica personalizada">
 
-You can edit a custom metric either from the dashboard or from within a specific widget. **Note**! Any changes you make to a custom metric are account-level, meaning the changes affect the metric for all users and dashboards.
+Puedes editar una métrica personalizada ya sea desde el dashboard o desde dentro de un widget específico.   
+[Práctica recomendada]: ¡**Importante**! Cualquier cambio que realices en una métrica personalizada es a nivel de cuenta, lo que significa que los cambios afectan la métrica para todos los usuarios y dashboards.
 
-**To edit a custom metric from the dashboard**:
+**Para editar una dimensión personalizada desde el dashboard**:
 
-1. In your dashboard, click **+ Create new** > **Custom metrics**.
-2. In the custom metric editor's left-side menu, under My custom metrics, find the metric you want to edit and click the **Edit** icon.
-3. Make any changes you want to the custom metric formula.
-4. Click **Save**.
+1. En tu dashboard, haz clic en **+ Crear nuevo** > **Métricas personalizadas**.
+2. En el menú del lado izquierdo del editor de métricas personalizadas, bajo Mis métricas personalizadas, encuentra la métrica que deseas editar y haz clic en el icono **Editar**.
+3. Haz los cambios que desees en la fórmula de la métrica personalizada.
+4. Haz clic en **Guardar**.
 
-**To edit a custom metric from a widget**:
+**Para editar una dimensión personalizada de un widget**:
 
-1. In any chart or table, in the **Metrics** dropdown menu, find the metric you want to edit and click the **Edit** icon.
-2. In the custom metric editor's left-side menu, under My custom metrics, find the metric you want to edit and click the **Edit** icon.
-3. Make any changes you want to the custom metric formula.
-4. Click **Save**.
+1. En cualquier gráfico o tabla, en el menú desplegable **Métricas**, encuentra la métrica que deseas editar y haz clic en el ícono **Editar**.
+2. En el menú del lado izquierdo del editor de métricas personalizadas, bajo Mis métricas personalizadas, encuentra la métrica que deseas editar y haz clic en el icono **Editar**.
+3. Haz los cambios que desees en la fórmula de la métrica personalizada.
+4. Haz clic en **Guardar**.
 
 </Accordion>
 
 <div id="delete-a-custom-metric" />
 
-<Accordion title="Delete a custom metric">
+<Accordion title="Eliminar una métrica personalizada">
 
-You can delete a custom metric either from the dashboard or from within a specific widget. **Note**! Any deletions to a custom metric are account-level, meaning the metric is removed for all users and dashboards.
+Puedes eliminar una métrica personalizada ya sea desde el dashboard o desde dentro de un widget específico.   
+[Práctica recomendada]: ¡**Importante**! Cualquier eliminación de una métrica personalizada es a nivel de cuenta, lo que significa que la métrica se elimina para todos los usuarios y dashboards.
 
-**To delete a custom metric from the dashboard**:
+**Para eliminar una dimensión personalizada desde el dashboard**:
 
-1. In your dashboard, click **+ Create new** > **Custom metrics**.
-2. In the custom metric editor's left-side menu, under My custom metrics, find the metric you want to delete and click the **Delete** icon.
+1. En tu dashboard, haz clic en **+ Crear nuevo** > **Métricas personalizadas**.
+2. En el menú del lado izquierdo del editor de métricas personalizadas, bajo Mis métricas personalizadas, encuentra la métrica que deseas eliminar y haz clic en el icono **Eliminar**.
 
-**To delete a custom metric from a widget**:
+**Para eliminar una dimensión personalizada de un widget**:
 
-* In any chart or table, in the **Metrics** dropdown menu, find the metric you want to delete and click the **Delete** icon.
+* En cualquier gráfico o tabla, en el menú desplegable **Métricas**, encuentra la métrica que deseas eliminar y haz clic en el ícono **Eliminar**.
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="best-practices" />
 
-<Accordion title="Best practices">
+<Accordion title="Mejores prácticas">
 
-* **Start simple**: Begin with basic metrics and progressively add complexity as needed and as you become more familiar with formula development.
-* **Align with goals**: Ensure each metric ties back to a specific business objective or question.
-* **Document your formulas**: Keep a reference of your custom formulas for easy updates or debugging.
-* **Review periodically**: Regularly assess your metrics to ensure they remain relevant.
+* **Comienza simple**: Comienza con métricas básicas y agrega complejidad progresivamente según sea necesario y a medida que te familiarices más con el desarrollo de fórmulas.
+* **Alinéalo con los objetivos**: Asegúrate de que cada métrica esté relacionada con un objetivo o pregunta empresarial específica.
+* **Documenta tus fórmulas**: Mantén una referencia de tus fórmulas personalizadas para facilitar las actualizaciones o la depuración.
+* **Revisar periódicamente**: Evalúa regularmente tus métricas para asegurarte de que sigan siendo relevantes.
 
 </Accordion>
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Rasgos y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Account-level accessibility | All account members can create, view, edit, and delete any custom metric. This includes metrics created by other users. |
-| Custom metrics | <ul><li>Custom metrics have a cap of 100 custom metrics per account.</li><li>Custom metrics are currently supported only with daily time breakdown. Weekly and monthly breakdowns are not supported.</li></ul> |
-| Formula complexity | Maximum 5 metrics per custom metric formula. |
-| Nesting restriction | Custom metrics can't be used as components in other custom metric formulas. |
+| Accesibilidad a nivel de cuenta | Todos los miembros de la cuenta pueden crear, ver, editar y eliminar cualquier métrica personalizada. Esto incluye métricas creadas por otros usuarios. |
+| Límite de métricas personalizadas | <ul><li>Las métricas personalizadas tienen un límite de 100 métricas personalizadas por cuenta.</li><li>Actualmente, las métricas personalizadas solo se admiten con el desglose diario. No se admiten los desgloses semanales y mensuales.</li></ul> |
+| Complejidad de la fórmula | Máximo 5 métricas por fórmula de métrica personalizada. |
+| Restricción de anidamiento | Las métricas personalizadas no se pueden usar como componentes en otras fórmulas de métricas personalizadas. |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H8XWQHPERAEDQVD275TFVC5B=about-custom-metrics h_01H8XWQHPESY4DDDJSTR0JDHNB=procedures h_01H8XWQHPEDYVDQQV3P8EDARAY=create-a-custom-metric h_01H8XWQHPE22WZ46RTNCYKX96F=edit-a-custom-metric h_01H8XWQHPED4PFPJP2044FT1H8=delete-a-custom-metric 01JGGT56V05BJRCV9Q572JJR3W=additional-information 01JGK1XAVB3M5KDA59A9ZASM2K=best-practices h_01H8XWQHPF7WZ7B5Q7T9CHADRK=traits-and-limitations" />
+<div data-zendesk-anchors="about-custom-metrics=acerca-de-m%C3%A9tricas-personalizadas h_01H8XWQHPERAEDQVD275TFVC5B=acerca-de-m%C3%A9tricas-personalizadas procedures=procedimientos h_01H8XWQHPESY4DDDJSTR0JDHNB=procedimientos h_01H8XWQHPEDYVDQQV3P8EDARAY=create-a-custom-metric h_01H8XWQHPE22WZ46RTNCYKX96F=edit-a-custom-metric h_01H8XWQHPED4PFPJP2044FT1H8=delete-a-custom-metric additional-information=informaci%C3%B3n-adicional 01JGGT56V05BJRCV9Q572JJR3W=informaci%C3%B3n-adicional 01JGK1XAVB3M5KDA59A9ZASM2K=best-practices h_01H8XWQHPF7WZ7B5Q7T9CHADRK=traits-and-limitations" />

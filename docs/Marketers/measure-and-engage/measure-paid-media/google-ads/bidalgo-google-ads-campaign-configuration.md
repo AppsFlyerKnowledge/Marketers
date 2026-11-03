@@ -1,5 +1,5 @@
 ---
-title: Bidalgo - Google Ads—Campaign configuration
+title: Bidalgo - Google Ads—Configuración de la campaña
 metadata:
   keywords:
     - Advertisers
@@ -14,55 +14,55 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-07-19T11:46:44Z'
-  edited_at: '2026-06-16T09:36:22Z'
+  edited_at: '2026-08-12T12:18:47Z'
   id: 360001325405
-  locale: en-us
+  locale: es
   section: Google Ads
   section_id: 6551205645457
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001325405-Bidalgo-Google-Ads-Campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360001325405
 ---
-> **At a glance:** Bidalgo, an AppsFlyer integrated partner, is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.
+> **En pocas palabras:** Bidalgo, un partner integrado de AppsFlyer, es un proveedor líder de soluciones de inteligencia artificial para ayudar a los app marketers a escalar su crecimiento.
 
-## Set up Bidalgo integration
+## Configurar la integración de Bidalgo
 
-**Prerequisite:** Before setting up the integration, make sure you contact the partner and open an account with them.
+**Requisito previo:** Antes de configurar la integración, asegúrate de ponerte en contacto con el partner y abrir una cuenta con ellos.
 
-**New integration:**
+**Nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-2. Select the relevant app.
-3. Search for Bidalgo and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle. Keep it on as long as you work with Bidalgo.
-5. Configure remaining tabs as needed below.
+1. En la pestaña de **Integración** selecciona la aplicación para la integración y haz clic en **Activar partner**  
+   **Nota:** El selector debe estar encendido <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado) mientras</Anchor> trabajes con el partner.
+2. Selecciona la aplicación correspondiente.
+3. Busca Bidalgo y selecciona **Integrate**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. Déjalo activado mientras trabajes con Bidalgo.
+5. Configura las pestañas restantes según sea necesario a continuación.
 
-**Edit existing integration:**
+**Editar integración existente:**
 
-In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
+Busca al partner y selecciónalo.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The Google Ads Customer ID must be entered **without** hyphens.
+> El ID de cliente de Google Ads debe introducirse **sin** guiones.
 
-6. From your **Google Ads** account, copy the Customer ID (without hyphens) from the top left-hand corner and paste it into the AppsFlyer **Ads Customer ID** parameter as shown in the following screenshots.
+6. Desde tu cuenta de **Google Ads**, copia el ID de cliente (sin guiones) de la esquina superior izquierda y pégalo en el parámetro **ID de cliente de AppsFlyer Ads**, como se muestra en las siguientes capturas de pantalla.
 
-[![](https://files.readme.io/50acdf0bc73854fd8c599cd89ffa168816cd9a0fc3b38bc794bd6f3d20807968-360002379489.png)](https://files.readme.io/50acdf0bc73854fd8c599cd89ffa168816cd9a0fc3b38bc794bd6f3d20807968-360002379489.png)
+[![](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)
 
-7. Enter the number in the **Google Ads Customer ID** field.
+7. Introduce el número en el campo **ID de cliente de Google Ads**.
 
-### In-app events
+### Eventos dentro de la aplicación
 
-1. To send in-app event postbacks to Bidalgo, toggle the In-App Events Postback to **ON**.
+1. Para enviar postbacks de eventos in-app a Bidalgo, cambia el interruptor de In-App Events Postback a **ON**.
 
-2. Individually add the in-app events you want to send to Bidalgo and map them to the **Partner Event Identifier** field.
+2. Añade individualmente los eventos in-app que quieras enviar a Bidalgo y asígnalos al campo **Partner Event Identifier**.
 
-3. Select **Send Revenue** to send all the parameters including the revenue value (if it exists in the event).
+3. Selecciona **Send Revenue** para enviar todos los parámetros, incluido el valor de ingresos (si existe en el evento).
 
-4. Click **Save**.
+4. Haga clic en **Guardar**.
 
-> 📘 **Important Note**
+> 📘 **Nota Importante**
 >
-> * Disabling attribution for Google Ads prevents sending postbacks to Google Ads Partners.
-> * You can configure multiple Google Ads accounts (CID) to send postbacks (step 5) by separating each CID with a comma.
+> * Desactivar la atribución para Google Ads impide enviar postbacks a los partners de Google Ads.
+> * Puedes configurar varias cuentas de Google Ads (CID) para enviar postbacks (paso 5) separando cada CID con una coma.
 
-<div data-zendesk-anchors="h_01HKA1JNXMRJ8059FAJAEQ6RK5=set-up-bidalgo-integration h_01HKA1JNXM5R15CBVQ2WHT99Z9=note inapp-events=in-app-events h_01HKA1JNXM59W74725961FZA27=in-app-events h_01HKA1JNXMASTQ9X2144JCKKNQ=important-note" />
+<div data-zendesk-anchors="set-up-bidalgo-integration=configurar-la-integraci%C3%B3n-de-bidalgo h_01HKA1JNXMRJ8059FAJAEQ6RK5=configurar-la-integraci%C3%B3n-de-bidalgo h_01HKA1JNXM5R15CBVQ2WHT99Z9=nota inapp-events=eventos-dentro-de-la-aplicaci%C3%B3n h_01HKA1JNXM59W74725961FZA27=eventos-dentro-de-la-aplicaci%C3%B3n h_01HKA1JNXMASTQ9X2144JCKKNQ=nota-importante" />

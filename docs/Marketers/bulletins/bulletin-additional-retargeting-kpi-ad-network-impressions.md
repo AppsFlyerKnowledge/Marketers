@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Additional retargeting KPI—ad network impressions'
+title: 'Boletín: KPI adicional de retargeting: impresiones de ad network'
 metadata:
   keywords:
     - Agency
@@ -19,39 +19,38 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2020-01-06T11:46:25Z'
-  edited_at: '2024-11-11T13:24:45Z'
+  edited_at: '2026-10-20T03:57:11Z'
   id: 360004587258
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360004587258-Bulletin-Additional-retargeting-KPI-ad-network-impressions
+  url: https://support.appsflyer.com/hc/es/articles/360004587258
 ---
-* **What's changing**: Additional KPI - Ad network retargeting **impressions** (not SRNs.)
-* **Where is it changing**: Retargeting dashboard  (including ad network and agency dashboards)
-* **Publication date**: January 15, 2020
+* **Qué está cambiando**: KPI adicional: retargeting de ad network **impresiones** (no SRNs.)
+* **Dónde está cambiando**: Dashboard de retargeting  (incluidos los dashboards de ad network y de agencia)
+* **Fecha de publicación**: 15 de enero de 2020
 
-#### Before the change
+#### Antes del cambio
 
-N/A
+No aplica
 
-#### After the change
+#### Después del cambio
 
-* An additional KPI is available in the Retargeting dashboard: **Impressions** from ad networks (not SRNs.)
-* The remaining KPIs are unchanged.
+* Hay un KPI adicional disponible en el Dashboard de Retargeting: **Impresiones** de ad networks (no SRNs.)
+* Los KPI restantes no cambian.
 
-Summary of KPIs available in the Retargeting dashboard after the change:
+Resumen de los KPI disponibles en el dashboard de Retargeting después del cambio:
 
-* Ad networks (not SRNs):
-  * Impressions
-  * Clicks
-* Ad networks and SRNs:
-  * Conversions
-  * Re-engagements vs. re-attributions
-  * Revenue
+* Redes de publicidad (no SRN):
+  * Impresiones
+  * Clics
+* Redes de publicidad y SRN:
+  * Conversiones
+  * Recaptaciones vs. reatribuciones
+  * Ingresos
 
-#### What you need to do to prepare for the change
+#### Qué debes hacer para prepararte para el cambio
 
-No action needed
+No es necesario realizar ninguna acción
 
-<div data-zendesk-anchors="h_01HG5VG63WEYMG831AATZ0754V=before-the-change h_01HG5VG63WHTD3RMGMEFARGW3A=after-the-change h_01HG5VG63WXFZNH43FTJ1GS6CS=what-you-need-to-do-to-prepare-for-the-change" />
+<div data-zendesk-anchors="before-the-change=antes-del-cambio h_01HG5VG63WEYMG831AATZ0754V=antes-del-cambio after-the-change=despu%C3%A9s-del-cambio h_01HG5VG63WHTD3RMGMEFARGW3A=despu%C3%A9s-del-cambio what-you-need-to-do-to-prepare-for-the-change=qu%C3%A9-debes-hacer-para-prepararte-para-el-cambio h_01HG5VG63WXFZNH43FTJ1GS6CS=qu%C3%A9-debes-hacer-para-prepararte-para-el-cambio" />

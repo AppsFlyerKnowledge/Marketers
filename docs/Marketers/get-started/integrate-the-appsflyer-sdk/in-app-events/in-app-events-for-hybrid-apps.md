@@ -1,5 +1,5 @@
 ---
-title: In-app events for hybrid apps
+title: Eventos in-app para aplicaciones híbridas
 metadata:
   keywords:
     - Event
@@ -20,85 +20,84 @@ x-zendesk:
     - Marketers
     - Web Attribution
   created_at: '2014-08-07T12:45:23Z'
-  edited_at: '2025-11-29T11:08:05Z'
+  edited_at: '2026-08-12T12:00:59Z'
   id: 207031976
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207031976-In-app-events-for-hybrid-apps
+  url: https://support.appsflyer.com/hc/es/articles/207031976
 ---
-> **At a glance:** Record in-app events from web-views embedded in your mobile app, allowing full event measurement even when the interaction occurs in the app’s web-based content.
+> **En resumen:** Registra eventos in-app a partir de vistas web integradas en tu aplicación móvil, lo que permite la medición completa de eventos incluso cuando la interacción ocurre dentro del contenido web de la aplicación.
 
-## Introduction
+## Introducción
 
-<Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events</Anchor> that occur within the app are reported using the SDK. What about events that occur outside the app?
+Los <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">eventos in-app</Anchor> que ocurren dentro de la aplicación se reportan mediante el SDK. ¿Qué pasa con los eventos que ocurren fuera de la aplicación?
 
-There are a few scenarios in which events occur outside the app context:
+Hay algunos escenarios en los que ocurren eventos fuera del contexto de la aplicación:
 
-* Events that take place on your website: Implement <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">People-Based Attribution (PBA)</Anchor> to get a unified view of customer journeys across channels, platforms including the website, and devices. This provides you with Web-to-App, Conversion paths analysis, and raw-data.
-* <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">Backend servers</Anchor>: Events occur independently of user action on either the website or app. For example, automatic subscription renewal
-* Hybrid:  The event takes place on your mobile website on a device having the app as described in this article. In-app events are recorded by calling the AppsFlyer SDK API using JavaScript.
+* Eventos que tienen lugar en tu sitio web: Implementa la <Anchor target="_blank" href="/marketers/es/docs/people-based-attribution-pba-overview">Atribución people-based (PBA)</Anchor> para obtener una vista unificada de los viajes de los clientes a través de canales, plataformas, incluido el sitio web y dispositivos. Esto te ofrece web-to-app, análisis de rutas de conversión y raw data.
+* <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile">Servidores backend</Anchor>: Los eventos ocurren independientemente de la acción del usuario en el sitio web o la aplicación. Por ejemplo, renovación automática de suscripción
+* Híbrido:  El evento se lleva a cabo en tu sitio web móvil en un dispositivo que tiene la aplicación como se describe en este artículo. Los eventos in-app se atribuyen llamando a la API del SDK de AppsFlyer usando JavaScript.
 
-This guide regards the hybrid scenario. Learn how to bridge the gap between the HTML view and native views, enabling you to record events in the HTML view and send them to the app.
+Esta guía se refiere al escenario híbrido. Aprende a cerrar la brecha entre la vista HTML y las vistas nativas, lo que te permite atribuir eventos en la vista HTML y enviarlos a la aplicación.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> If your app integrates AppsFlyer **using a hybrid plugin** (for example, Cordova, Ionic, React Native, or Flutter), the bridging method described in this guide doesn’t apply.
+> Si tu aplicación integra AppsFlyer **mediante un complemento híbrido** (por ejemplo, Cordova, Ionic, React Native o Flutter), el método de puente descrito en esta guía no es aplicable.
 >
-> We recommend sending WebView-based events using the <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">AppsFlyer server-to-server (S2S) API</Anchor>.
+> Te recomendamos enviar eventos basados en WebView mediante la <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile">API server-to-server (S2S) de AppsFlyer</Anchor>.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> You have a hybrid app that offers subscriptions. You implement the subscription form in a web view which actually loads from your website.
+> Tienes una aplicación híbrida que ofrece suscripciones. Implementa el formulario de suscripción en una vista web que realmente se carga desde tu sitio web.
 >
-> You can record the subscription in-app event in the web view and send data related to it, like subscription type or price, to the native code.
+> Puedes atribuir el evento in-app de suscripción en la vista web y enviar datos relacionados con él, como el tipo de suscripción o el precio, al código nativo.
 >
-> The native code collects the data and uses the AppsFlyer SDK to send the subscription in-app event.
+> El código nativo recopila los datos y utiliza el SDK de AppsFlyer para enviar el evento in-app de suscripción.
 >
 > [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
 
-### Recording in-app events in hybrid apps
+### Registro de eventos in-app en aplicaciones híbridas
 
-In this guide we provide two methods for recording in-app events in hybrid apps:
+En esta guía proporcionamos dos métodos para registrar eventos in-app en aplicaciones híbridas:
 
-* **[Recommended]** [**JavaScript interface**](/docs/in-app-events-for-hybrid-apps#javascript-interface): Uses the native JavaScript interface in order to establish communication between the HTML or Web View and the native code. This way you can send in-app event-related data from the web view to the native code. Once the native code obtains the data, it sends it to AppsFlyer using the SDK.
-* [**URL loading**](/docs/in-app-events-for-hybrid-apps#url-loading): In this method, the native code listens to URL loading events. You can set the native code to listen to loading events of specific URLs and extract data from the URL parameters. The data is then passed to the SDK.
+* **[Recomendado]** [**Interfaz de JavaScript**](/docs/in-app-events-for-hybrid-apps#interfaz-de-javascript): Utiliza la interfaz nativa de JavaScript para establecer la comunicación entre la vista HTML o web y el código nativo. De esta manera, puedes enviar datos relacionados con eventos in-app desde la vista web al código nativo. Una vez que el código nativo obtiene los datos, los envía a AppsFlyer usando el SDK.
+* [**Carga de URL**](/docs/in-app-events-for-hybrid-apps#carga-de-url): En este método, el código nativo escucha los eventos de carga de URL. Puedes establecer el código nativo para escuchar los eventos de carga de URL específicas y extraer datos de los parámetros de URL. Los datos se transfieren al SDK.
 
-## JavaScript interface
+## Interfaz de JavaScript
 
-Both Android and iOS have native JavaScript interfaces that allow web views to call native code.
+Tanto Android como iOS tienen interfaces nativas de Javascript que permiten que las vistas web llamen al código nativo.
 
 * Android: <Anchor target="_blank" href="https://developer.android.com/guide/webapps/webview">JavaScriptInterface</Anchor>
 * iOS: <Anchor target="_blank" href="https://developer.apple.com/documentation/JavaScriptcore">JavaScriptCore</Anchor>
 
-Advantages of using the native JavaScript interface over URL loading:
+Ventajas de usar la interfaz nativa de JavaScript vs la carga de URL:
 
-* It doesn't require implementing logic that listens to URL loading.
-* Native interfaces are preferable to other implementations.
-* There is no need to parse parameters from the URL.
-* There is less code and therefore less maintenance required.
+* No requiere la implementación de lógica que detecte la carga de URL.
+* Las interfaces nativas son preferibles a otras implementaciones.
+* No es necesario analizar los parámetros de la URL.
+* Hay menos código y, por lo tanto, se requiere menos mantenimiento.
 
-The implementation consists of the following steps:
+La implementación consta de los siguientes pasos:
 
-1. HTML code for webview or web page
-2. Native code implementation for webview
+1. Código HTML para vista web o página web
+2. Implementación de código nativo para vista web
 
 <div id="android" />
 
 <Accordion title="Android">
 
-#### HTML code for Android
+#### Código HTML para Android
 
-Add the following HTML code to the web view or web page:
+Agrega el siguiente código HTML a la vista web o página web:
 
 ```html Markup
-<h1>Recording Event From Web View</h1>
+<h1>Registrar evento desde WebView</h1>
 <div id="main">
- <button id="recordEvent" onclick="recordEvent()"> Record Event </button>
+ <button id="recordEvent" onclick="recordEvent()"> Registrar evento </button>
 </div>
 <script type="text/JavaScript">
-<!-- Set Customer User ID -->
+<!-- Establecer ID de usuario del cliente -->
 function setCustomerUserId(){
    app.setCustomerUserId(customerUserId)
 }
@@ -110,18 +109,18 @@ function recordEvent(){
 </script>
 ```
 
-When passing event value, keep the following in mind:
+Cuando pases el valor del evento, ten presente lo siguiente:
 
-* Make sure to pass the event value as a stringified JSON.
+* Asegúrate de pasar el valor del evento como un JSON en formato de secuencia.
 
   ```html Markup
   "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}"
   ```
-* To avoid any possible problems AppsFlyer recommends using only lower-case alpha-numeric characters (a-z and 0-9) for your in-app event names.
+* Para evitar cualquier posible problema, AppsFlyer recomienda usar sólo caracteres alfanuméricos en minúscula (a-z y 0-9) dentro de la aplicación para los nombres de los eventos.
 
-#### WebActivity class
+#### Clase WebActivity
 
-Create a web activity class with the following code:
+Crea una clase de actividad web con el siguiente código:
 
 ```java
 public class WebActivity extends AppCompatActivity {
@@ -139,11 +138,11 @@ public class WebActivity extends AppCompatActivity {
 }
 ```
 
-The code above creates an object called **app** that acts as the bridge between the web view and the native code.
+El código anterior crea un objeto llamado **app** que actúa como puente entre la vista web y el código nativo.
 
-#### JavaScript interface class
+#### Clase de la interfaz de JavaScript
 
-Create a MainJsInterface class to implement `recordEvent()` as `JavaScriptInterface`
+Crea una clase MainJsInterface para implementar `recordEvent()` como `JavaScriptInterface`
 
 ```java
 public class MainJsInterface {
@@ -153,7 +152,7 @@ public class MainJsInterface {
   mContext = c;
  }
 
- //Set Customer User ID
+ //Establecer ID de usuario del cliente
  @JavaScriptInterface
  public void setCustomerUserId(String customerUserId){
    AppsFlyerLib.getInstance().setCustomerUserId(customerUserId);
@@ -181,28 +180,28 @@ public class MainJsInterface {
 }
 ```
 
-The code above declares a `recordEvent` method that can be called in the web view using JavaScript.
+El código anterior declara un método de `recordEvent` que puede llamarse en la vista web mediante JavaScript.
 
-In the HTML code, you can see that the method is called using `app.recordEvent(eventName, eventParams)`. Recall that we set **app** to act as the bridge between the web view and native code. This is why **app** can call the `recordEvent` method that we define in MainJsInterface class.
+En el código HTML, puedes ver que se llama al método usando `app.recordEvent(eventName, eventParams)`. Recuerda que configuramos la **aplicación** para que actúe como puente entre la vista de la web y el código nativo. Es por eso que la **aplicación** puede llamar al método `recordEvent` que definamos en la clase MainJsInterface.
 
 </Accordion>
 
 <div id="ios" />
 
-<Accordion title="iOS">
+<Accordion title="apps de iOS,">
 
-#### HTML code for iOS
+#### Código HTML para iOS
 
-Add the following HTML code to the web view or web page:
+Agrega el siguiente código HTML a la vista web o página web:
 
 ```html Markup
 <body>
- <h1>Recroding Event From Web View</h1>
+ <h1>Registro de evento desde WebView</h1>
  <div id="main">
-  <button id="recordEvent" onclick="recordEvent()"> Record Event </button>
+  <button id="recordEvent" onclick="recordEvent()"> Registrar evento </button>
  </div>
  <script type="text/JavaScript">
-   <!-- Set Customer User ID --> 
+   <!-- Establecer ID de usuario del cliente --> 
    function setCustomerUserId(){  
     customerUserIdwebkit.messageHandlers.cuid.postMessage(customerUserId); 
    }
@@ -215,26 +214,26 @@ Add the following HTML code to the web view or web page:
 </body>
 ```
 
-The code above sets a function to be triggered when a button is clicked. The function sets the `eventName` and `eventParams` variables and passes them to the native code using `webkit.messageHandlers`.
+El código anterior establece una función que se activará cuando se haga clic en un botón. La función establece las variables `eventName` y `eventParams` y las pasa al archivo de código nativo usando `webkit.messageHandlers`.
 
-When passing event value, keep the following in mind:
+Cuando pases el valor del evento, ten presente lo siguiente:
 
-* Make sure to pass the event value as a stringified JSON.
+* Asegúrate de pasar el valor del evento como un JSON en formato de secuencia.
 
   ```html Markup
   "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}"
   ```
-* To avoid any possible problems AppsFlyer recommends using only lower-case alpha-numeric characters (a-z and 0-9) for your in-app event names.
+* Para evitar cualquier posible problema, AppsFlyer recomienda usar sólo caracteres alfanuméricos en minúscula (a-z y 0-9) dentro de la aplicación para los nombres de los eventos.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> The HTML code is for both Objective C and Swift.
+> El código HTML es tanto para Objective C como para Swift.
 
-#### Objective c
+#### Objective C
 
-#### Web view controller
+#### Controlador de vista web
 
-In your web view controller, add the following code in the view controller.
+En tu controlador de vista web, agrega el siguiente código en el controlador de vista.
 
 ```objectivec
 -(void)loadView{
@@ -264,7 +263,7 @@ In your web view controller, add the following code in the view controller.
  }
 
 - (void)userContentController:(WKUserContentController *)userContentController
-  didReceiveScriptMessage:(WKScriptMessage *)message {
+  didReceiveScriptMessage: (WKScriptMessage *)message {
 
  NSString* messageBody = message.body;
  NSString* eventName = [messageBody componentsSeparatedByString:@"+"][0];
@@ -272,22 +271,22 @@ In your web view controller, add the following code in the view controller.
  [self recordEvent:eventName eventValue:eventValue];
 }
 
-- (void)recordEvent:(NSString*)eventName eventValue:(NSString*)eventValue{
+- (void)recordEvent:(NSString*)eventName eventValue: (NSString*)eventValue{
 
- NSData *eventValuedata = [eventValue dataUsingEncoding:(NSUTF8StringEncoding)];
+ NSData *eventValuedata = [eventValue dataUsingEncoding: (NSUTF8StringEncoding)];
 
- NSDictionary *eventValueDict = [NSJSONSerialization JSONObjectWithData:eventValuedata options:NSJSONReadingMutableContainers error:nil];
+ NSDictionary *eventValueDict = [NSJSONSerialization JSONObjectWithData:eventValuedata options: NSJSONReadingMutableContainers error:nil];
 
  [[AppsFlyerLib shared] logEvent:eventName withValues:eventValueDict];
 
 }
 ```
 
-The code above receives the message from the web view. The message contains the event name and event value. When the code detects the incoming message, it passes it on to the `recordEvent` method which parses the values and calls the native SDK `logEvent` method.
+El código anterior recibe el mensaje de la vista web. El mensaje contiene el nombre y el valor del evento. Cuando el código detecta al mensaje entrante, lo pasa al método `recordEvent` que analiza los valores y llama al método nativo `logEvent` del SDK.
 
-#### Swift WebView controller
+#### Controlador Swift WebView
 
-In your web view controller, add the following code:
+En el controlador de vista web, agrega el siguiente código:
 
 ```swift
 import WebKit
@@ -307,7 +306,14 @@ import JavaScriptCore
     }
  }
 
+ var webView: 
+    } else if message.name == "cuid" {
+      AppsFlyerLib.shared().customerUserID = message.body as? String
+    }
+ }
+
  var webView: WKWebView!
+ WKWebView!
  override func loadView(){
   webView = WKWebView()
   webView.navigationDelegate = self
@@ -317,6 +323,11 @@ import JavaScriptCore
  override func viewDidLoad() {
   super.viewDidLoad()
   let url = URL(string: "https://yourwebsite.com")!
+  webView.load(URLRequest(url: url))
+
+ }
+
+ func webView(_ view:
   webView.load(URLRequest(url: url))
   webView.configuration.userContentController.add(self, name:"event")
  }
@@ -328,6 +339,7 @@ import JavaScriptCore
   let eventValuesData = eventValue.data(using: String.Encoding.utf8)
   do {
    eventValueDict = try (JSONSerialization.jsonObject(with: eventValuesData!, options:[]) as? [String: String])!
+  [String: String])!
   } catch let error as NSError{
    print(error)
   }
@@ -338,35 +350,35 @@ import JavaScriptCore
 }
 ```
 
-The code above receives the message from the web view. The message contains the event name and event value. When the code detects the incoming message, it passes it on to the `recordEvent` method which parses the values and calls the AppsFlyer SDK `logEvent` method.
+El código anterior recibe el mensaje de la vista web. El mensaje contiene el nombre y el valor del evento. Cuando el código detecta al mensaje entrante, lo pasa al método `recordEvent` que analiza los valores y llama al método `logEvent` del SDK de AppsFlyer.
 
 </Accordion>
 
-## URL loading
+## Carga de URL
 
-Both Android and iOS implement a native method that listens to url loading events. This method enables you to do the following:
+Tanto Android como iOS implementan un método nativo que escucha los eventos de carga de URL. Este método te permite hacer lo siguiente:
 
-* Listen to a loading event of a specific URL
-* Extract parameters that are appended to the URL
-* Use these parameters in native code
+* Escuchar un evento de carga de una URL específica
+* Extraer parámetros que se anexan a la URL
+* Usar estos parámetros en el código nativo
 
-The implementation below consists of two steps:
+La implementación a continuación consta de dos pasos:
 
-1. HTML code for webview or web page
-2. Native code implementation for URL loading
+1. Código HTML para vista web o página web
+2. Implementación de código nativo para la carga de URL
 
-### WebView implementation
+### Implementación de WebView
 
-#### HTML code (for both Android WebView and iOS WKWebView)
+#### Código HTML (tanto para Android WebView como para iOS WKWebView)
 
 ```html Markup
 <html>
 <head>
 </head>
  <body>
-  <h1>Recording From Web View</h1>
+  <h1>Registro desde WebView</h1>
   <div id="main">
-   <input id="button" type="button" value="Record Event" />
+   <input id="button" type="button" value="Registrar evento" />
   </div>
   <script type="text/JavaScript">
   function recordEvent(eventName,eventValue){
@@ -387,29 +399,29 @@ The implementation below consists of two steps:
 </html>
 ```
 
-The code above can be part of an actual web page or loaded natively into the webview.
+El código anterior puede ser parte de una página web real o cargada de forma nativa en la vista web.
 
-The code sets a function to be triggered when a button is clicked. The function itself creates an iframe element that loads a custom URL. It is this URL loading that triggers the native Android or iOS method that then calls the AppsFlyer SDK `logEvent` method.
+El código anterior establece una función que se activará cuando se haga clic en un botón. La función en sí crea un elemento iframe que carga una URL personalizada. Es esta carga de URL la que activa el método nativo de Android o iOS que luego llama al método `logEvent`.
 
-All the required parameters (event name and event values) are appended to the URL. The Android and iOS code examples below demonstrate how to extract these parameters and pass them to AppsFlyer's SDK `logEvent` method.
+Todos los parámetros requeridos (nombre del evento y valores del evento) se agregan a la URL. Los ejemplos de código de Android e iOS a continuación demuestran cómo extraer estos parámetros y pasarlos al método `logEvent` del SDK de AppsFlyer.
 
-When passing event value, keep the following in mind:
+Cuando pases el valor del evento, ten presente lo siguiente:
 
-* Make sure to pass the event value as a stringified JSON.
+* Asegúrate de pasar el valor del evento como un JSON en formato de secuencia.
 
   ```
   "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}"
   ```
-* To avoid any possible problems AppsFlyer recommends using only lower-case alpha-numeric characters (a-z and 0-9) for your in-app event names.
+* Para evitar posibles problemas, AppsFlyer recomienda usar únicamente caracteres alfanuméricos en minúsculas (a-z y 0-9) para tus nombres de eventos in-app.
 
-### Native implementation
+### Implementación nativa
 
 <Tabs>
 <Tab title="Android">
 
-#### Android implementation
+#### Implementación de Android
 
-Android WebView uses a WebViewClient that receives notifications from the web view. In the `shouldOverrideUrlLoading`, you can handle URL loading events that come from the web view:
+Android WebView utiliza un WebViewClient que recibe notificaciones de la vista web. En el `shouldOverrideUrlLoading`, puedes manejar los eventos de carga de URL que provienen de la vista web:
 
 ```java
 @Override
@@ -458,12 +470,12 @@ public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
 <div id="ios-implementation" />
 
-#### iOS implementation
+#### Implementación de iOS
 
 <Tabs>
 <Tab title="Objective C">
 
-In your web view controller, add the following code in the `shouldStartLoadWithRequest` method.
+En el controlador de vista web, agrega el siguiente código en el método `shouldStartLoadWithRequest`.
 
 ```objectivec
 - (void)viewDidLoad {
@@ -480,7 +492,7 @@ In your web view controller, add the following code in the `shouldStartLoadWithR
  [self.view addSubview:_webView];
 }
 
--(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction* )navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+-(void)webView:(WKWebView *)webView decidePolicyForNavigationAction: (WKNavigationAction* )navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
  decisionHandler(WKNavigationActionPolicyAllow);
  NSString *url = navigationAction.request.URL.absoluteString;
  if([url containsString:(@"af-event")]){
@@ -498,8 +510,8 @@ In your web view controller, add the following code in the `shouldStartLoadWithR
 
  NSString *eventValueParams = [eventNameAndEventValueArray[1] componentsSeparatedByString: @"="][1];
  NSString *decodedValueParams = [eventValueParams stringByRemovingPercentEncoding];
- NSData *eventValuedata = [decodedValueParams dataUsingEncoding:(NSUTF8StringEncoding)];
- NSDictionary *eventValue = [NSJSONSerialization JSONObjectWithData:eventValuedata options:NSJSONReadingMutableContainers error:nil];
+ NSData *eventValuedata = [decodedValueParams dataUsingEncoding: (NSUTF8StringEncoding)];
+ NSDictionary *eventValue = [NSJSONSerialization JSONObjectWithData:eventValuedata options: NSJSONReadingMutableContainers error:nil];
 
  if (eventName != nil){
   [[AppsFlyerLib shared] logEvent:eventName withValues:eventValue];
@@ -509,20 +521,21 @@ In your web view controller, add the following code in the `shouldStartLoadWithR
 }
 ```
 
-The code above listens to any URL loading. If a URL with "af-event" in it loads, it triggers the native `recordEvent` method. The native `recordEvent` method extracts the necessary parameters (eventName and eventValue) and passes them on to the native SDK `logEvent` method.
+El código anterior detecta cualquier carga de URL. Si se carga una URL con "af-event", activa el método nativo `recordEvent`. El método nativo `recordEvent` extrae los parámetros necesarios (eventName y eventValue) y los pasa al método nativo `logEvent` de SDK.
 
 </Tab>
 
 <Tab title="Swift">
 
-In your web view controller, add the following code in the `webView(_:decidePolicyFor:decisionHandler:)` method.
+En el controlador de vista web, agrega el siguiente código en el método `webView(_:decidePolicyFor:decisionHandler:)`.
 
 ```swift
 import WebKit
 import UIKit
 import AppsFlyerLib
 class WebViewController: UIViewController, WKNavigationDelegate {
- var webView: WKWebView!
+ var webView:
+ WKWebView!
  override func loadView(){
   webView = WKWebView()
   webView.navigationDelegate = self
@@ -532,6 +545,11 @@ class WebViewController: UIViewController, WKNavigationDelegate {
  override func viewDidLoad() {
   super.viewDidLoad()
   let url = URL(string: "https://yourwebsite.com")!
+  webView.load(URLRequest(url: url))
+
+ }
+
+ func webView(_ view:
   webView.load(URLRequest(url: url))
 
  }
@@ -546,7 +564,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
    scanner.charactersToBeSkipped = CharacterSet(charactersIn: "&?")
    scanner.scanUpTo("?", into: nil)
    var tempString, eventName : NSString?
-   var eventValue: [String: String] = Dictionary()
+   [String: String] = Dictionary()
 
    while(scanner.scanUpTo("&", into: &tempString)){
 
@@ -556,9 +574,10 @@ class WebViewController: UIViewController, WKNavigationDelegate {
      }
      if(tempString.hasPrefix("eventValue=") && tempString.length > 11){
       let eventValues = tempString.components(separatedBy: "=")[1].removingPercentEncoding
-      let eventValuesData = eventValues?.data(using: String.Encoding.utf8)
+      let eventValuesData = eventValues?.data(using: String. Encoding.utf8)
       do {
        eventValue = try (JSONSerialization.jsonObject(with: eventValuesData!, options:[]) as? [String: String])!
+      [String: String])!
       } catch let error as NSError{
        print(error)
       }
@@ -581,7 +600,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 }
 ```
 
-The code above listens to any URL loading. If a URL with "af-event" in it loads, it extracts the necessary parameters (eventName and eventValue) and passes them on to the native SDK `logEvent` method.
+El código anterior detecta cualquier carga de URL. Si se carga una URL con "af-event", extrae los parámetros necesarios (eventName y eventValue) y los pasa al método nativo `logEvent` del SDK.
 
 </Tab>
 </Tabs>
@@ -589,4 +608,4 @@ The code above listens to any URL loading. If a URL with "af-event" in it loads,
 </Tab>
 </Tabs>
 
-<div data-zendesk-anchors="h_01HGWH2AEJ0DHTGD41YN7R5A1V=introduction h_01KB7M7ZSM5AZACJNB32F65A62=note h_01HGWH2AEJZHV3KZR0ZPPFK71T=example recording-inapp-events-in-hybrid-apps=recording-in-app-events-in-hybrid-apps h_01HGWH2AEJFEZY7WBJTFP9N3AN=recording-in-app-events-in-hybrid-apps JavaScript-interface=javascript-interface h_01HGWH2AEJFVDZBPRS8DP64TRY=javascript-interface h_01HGWH2AEKB47CJ386AN7NNX4Y=android h_01HGWH2AEKZG98VWPECP6FBHN3=html-code-for-android h_01HGWH2AEKA5X1DPWS51WRCMD4=webactivity-class JavaScript-interface-class=javascript-interface-class h_01HGWH2AEK07MGR1FPFSWXYRKP=javascript-interface-class h_01HGWH2AEN4WHKBSM69S200F5H=ios h_01HGWH2AENKC2EEYJPW9KZDVJS=html-code-for-ios h_01HGWH2AENTMA7A71K2Y7XQF9T=note-1 h_01HGWH2AENGAWEGD5TRTR2P6PR=objective-c h_01HGWH2AENJVMVHSDPMKBP6HNT=web-view-controller h_01HGWH2AENV1J1M0KH36K1YSCJ=swift-webview-controller h_01HGWH2AENV0Q83A0GF8NK7S4B=url-loading h_01HGWH2AENFH6M2ZQSGH4EGEGB=webview-implementation h_01HGWH2AENEDT95283SQZDHPCD=html-code-for-both-android-webview-and-ios-wkwebview h_01HGWH2AENS43N93D65RN80VXN=native-implementation h_01HGWH2AEN0QYYJJGV90A27VAM=android-implementation h_01HGWH2AEN38VWNXE90BHGQQ9A=ios-implementation" />
+<div data-zendesk-anchors="introduction=introducci%C3%B3n h_01HGWH2AEJ0DHTGD41YN7R5A1V=introducci%C3%B3n h_01KB7M7ZSM5AZACJNB32F65A62=nota h_01HGWH2AEJZHV3KZR0ZPPFK71T=ejemplo recording-inapp-events-in-hybrid-apps=registro-de-eventos-in-app-en-aplicaciones-h%C3%ADbridas h_01HGWH2AEJFEZY7WBJTFP9N3AN=registro-de-eventos-in-app-en-aplicaciones-h%C3%ADbridas JavaScript-interface=interfaz-de-javascript h_01HGWH2AEJFVDZBPRS8DP64TRY=interfaz-de-javascript h_01HGWH2AEKB47CJ386AN7NNX4Y=android html-code-for-android=c%C3%B3digo-html-para-android h_01HGWH2AEKZG98VWPECP6FBHN3=c%C3%B3digo-html-para-android webactivity-class=clase-webactivity h_01HGWH2AEKA5X1DPWS51WRCMD4=clase-webactivity JavaScript-interface-class=clase-de-la-interfaz-de-javascript h_01HGWH2AEK07MGR1FPFSWXYRKP=clase-de-la-interfaz-de-javascript h_01HGWH2AEN4WHKBSM69S200F5H=ios html-code-for-ios=c%C3%B3digo-html-para-ios h_01HGWH2AENKC2EEYJPW9KZDVJS=c%C3%B3digo-html-para-ios h_01HGWH2AENTMA7A71K2Y7XQF9T=nota-1 h_01HGWH2AENGAWEGD5TRTR2P6PR=objective-c web-view-controller=controlador-de-vista-web h_01HGWH2AENJVMVHSDPMKBP6HNT=controlador-de-vista-web swift-webview-controller=controlador-swift-webview h_01HGWH2AENV1J1M0KH36K1YSCJ=controlador-swift-webview url-loading=carga-de-url h_01HGWH2AENV0Q83A0GF8NK7S4B=carga-de-url webview-implementation=implementaci%C3%B3n-de-webview h_01HGWH2AENFH6M2ZQSGH4EGEGB=implementaci%C3%B3n-de-webview html-code-for-both-android-webview-and-ios-wkwebview=c%C3%B3digo-html-tanto-para-android-webview-como-para-ios-wkwebview h_01HGWH2AENEDT95283SQZDHPCD=c%C3%B3digo-html-tanto-para-android-webview-como-para-ios-wkwebview native-implementation=implementaci%C3%B3n-nativa h_01HGWH2AENS43N93D65RN80VXN=implementaci%C3%B3n-nativa android-implementation=implementaci%C3%B3n-de-android h_01HGWH2AEN0QYYJJGV90A27VAM=implementaci%C3%B3n-de-android h_01HGWH2AEN38VWNXE90BHGQQ9A=ios-implementation" />

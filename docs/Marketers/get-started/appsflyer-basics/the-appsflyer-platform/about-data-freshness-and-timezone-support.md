@@ -1,5 +1,5 @@
 ---
-title: About data freshness and timezone support
+title: Actualización de los datos y soporte de zona horaria
 metadata:
   keywords:
     - Reports
@@ -23,118 +23,126 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2018-02-19T15:57:01Z'
-  edited_at: '2026-09-16T08:20:40Z'
+  edited_at: '2026-10-29T01:13:03Z'
   id: 360000310629
-  locale: en-us
+  locale: es
   section: The AppsFlyer platform
   section_id: 6551361489297
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000310629-About-data-freshness-and-timezone-support
+  url: https://support.appsflyer.com/hc/es/articles/360000310629
 ---
-> **At a glance:** Data freshness is the period of time between event occurrence and data availability in the platform.
+> **At a glance:** La actualización de los datos es el período entre la ocurrencia de los eventos y la disponibilidad de los datos en la plataforma.
 
-**Time zones**
+**Zonas horarias**
 
 ![TimeZoneMap.jpg](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)
 
-## Data freshness and support for app-specific time zones
+## Actualización de los datos y soporte para zonas horarias específicas de la aplicación
 
-### Data freshness
+### Actualización de los datos
 
-The AppsFlyer platform utilizes different [types of data freshness,](/docs/about-data-freshness-and-timezone-support#data-freshness-types) such as daily and real-time. They are used to present and make data available. Each has its own [data freshness rate](/docs/about-data-freshness-and-timezone-support#data-freshness-rates-and-timezone-support).
+La plataforma AppsFlyer utiliza diferentes [tipos de actualización de los datos,](/docs/about-data-freshness-and-timezone-support#data-freshness-types) como diaria y en tiempo real. Se utilizan para presentar y hacer que los datos estén disponibles. Cada uno tiene su propia [tasa de actualización de datos](/docs/about-data-freshness-and-timezone-support#data-freshness-rates-and-timezone-support).
 
-Example: Data freshness rates on the Events dashboard:
+Ejemplo: Índices de actualización de datos en el panel de control de Eventos:
 
-* Metric KPI: real-time
-* Average KPI: daily
+* Métrica KPI: en tiempo real
+* KPI promedio: diario
 
-### Time zones
+### Zonas horarias
 
-In the AppsFlyer platform, a day starts at 00:01 and ends at 24:00. The default time zone is UTC (GMT). You can modify the default by setting an <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">app-specific time zone.</Anchor>
+En la plataforma AppsFlyer, un día comienza a las 00:01 y termina a las 24:00. La zona horaria predeterminada es UTC (GMT). Puedes modificar el valor predeterminado estableciendo una <Anchor target="_blank" href="/marketers/es/docs/changing-app-time-zone-settings">zona horaria específica de la app.</Anchor>
 
-<Accordion title="Date and time-zone principles">
+<Accordion title="Principios de fecha y zona horaria">
 
-UTC time is constant and doesn't have summer/winter times.
+La hora UTC es constante y no tiene horarios de verano/invierno.
 
-Hemispheres
+Hemisferios
 
-* Eastern: Time zones designated as UTC+ are those located to the east of UTC.
-* Western: Time zones designated as UTC - are those located to the west of UTC.
+* Este: Las zonas horarias designadas como UTC+ son aquellas ubicadas al este de UTC.
+* Occidental: las zonas horarias designadas como UTC son aquellas ubicadas al oeste de UTC.
 
-#### App-specific time zone
+#### Zona horaria específica de la aplicación
 
-You can set an app-specific time zone. This means that the data is grouped into days using local time instead of UTC.
+Puedes establecer una zona horaria específica de la aplicación. Esto significa que los datos se agrupan en días utilizando la hora local en lugar de UTC.
 
-Example:
+Ejemplo:
 
-**Beijing:** If the app-specific time zone is set to Beijing (UTC +8), then the day starts at 16:01 UTC and ends at 16:00 UTC the following day.
+**Pekín:** si la zona horaria específica de la aplicación se establece en Pekín (UTC +8), el día comienza a las 16:01 UTC y finaliza a las 16:00 UTC del día siguiente.
 
-**Los Angeles**: If the app-specific time zone is set to Los Angeles (UTC -8), then the day starts at 08:01 UTC and ends at 08:00 UTC the following day.
+**Los Ángeles**: si la zona horaria específica de la aplicación se establece en Los Ángeles (UTC -8), entonces el día comienza a las 08:01 UTC y finaliza a las 08:00 UTC del día siguiente.
 
-#### Time-zone guidelines
+#### Lineamientos de zona horaria
 
-* Align your app-specific time zone with the time zone you set for other attribution service providers such as Google and Meta ads.
-* If you have more than one app, the best practice is to set all apps to the same time zone. To view an app's time zone setting, go to **Settings** > **App Settings.**
-* Most reports and data extraction tools support app-specific time zones. This includes multi-app reports if all apps are set to the same app-specific time zone.
+* Alinea tu zona horaria específica de la aplicación con la zona horaria que establezcas para otros proveedores de servicios de atribución, como Google y Anuncios de Meta.
+* Si tienes más de una aplicación, la mejor práctica es configurar todas las aplicaciones en la misma zona horaria. Para ver la configuración de la zona horaria de una aplicación, ve a **Configuración** > **Configuración de la aplicación.**
+* La mayoría de los reportes y las herramientas de extracción de datos admiten zonas horarias específicas de la aplicación. Esto incluye reportes de varias aplicaciones si todas las aplicaciones están configuradas en la misma zona horaria específica de la aplicación.
 
-#### Daily processing
+#### Procesamiento diario
 
-Some reports and pull-down lists are processed once a day, this is referred to as daily freshness or daily processing. These are the principles of daily processing:
+Algunos reportes y listas desplegables se procesan una vez al día, esto se conoce como actualización diaria o procesamiento diario. Estos son los principios del procesamiento diario:
 
-* Data belonging to a specific day, for example, Monday, is collected in a *bucket*. The day begins at 00:01 and ends at 24:00 using the app-specific time.
-* Data received up to two hours after midnight is included in the day's bucket. Data received up to 02:00 on Tuesday is included in Monday's bucket.
-* At 02:00 local time, the bucket is closed, and no more data can be added to it.
-* Data received after 02:00 is placed in the next available bucket, irrespective of the event date.
-* Daily processing of the closed bucket begins two hours after midnight UTC irrespective of the app-specific time zone. For the sake of simplicity, we state that processing starts at midnight UTC. This means that, depending on the local time zone, the bucket needs to wait until midnight UTC before processing begins.
+* Los datos que pertenecen a un día específico, por ejemplo, el lunes, se recopilan en un *bucket*. El día comienza a las 00:01 y termina a las 24:00 usando la hora específica de la aplicación.
+* Los datos recibidos hasta dos horas después de la medianoche se incluyen en el bucket del día. Los datos recibidos hasta las 02:00 del martes se incluyen en el bucket del lunes.
+* A las 02:00 hora local, el bucket se cierra y no se pueden agregar más datos a él.
+* Los datos recibidos después de las 02:00 se colocan en el siguiente bucket disponible, independientemente de la fecha del evento.
+* El procesamiento diario del bucket cerrado comienza dos horas después de la medianoche UTC, independientemente de la zona horaria específica de la aplicación. En aras de la simplicidad, afirmamos que el procesamiento comienza a la medianoche UTC. Esto significa que, dependiendo de la zona horaria local, el bucket debe esperar hasta la medianoche UTC antes de que comience el procesamiento.
 
-**Eastern hemisphere and UTC time zone**:
+**Hemisferio oriental y zona horaria UTC**:
 
-![[NEEDS DESCRIPTIVE ALT TEXT — CONFIRM]: diagram of daily-processing wait times for Eastern hemisphere time zones](https://files.readme.io/cbea9d910695b39f59b342da6f56fa51df76afc910c4eea60f6dd49fbee2a0d6-8272818122769.png)
+![[SE NECESITA TEXTO ALT DESCRIPTIVO — CONFIRMAR]: diagrama de los tiempos de espera del procesamiento diario para las zonas horarias del hemisferio este](https://files.readme.io/cbea9d910695b39f59b342da6f56fa51df76afc910c4eea60f6dd49fbee2a0d6-8272818122769.png)
 
-* Up to 11 hours can pass from the time the day ends (local time) until processing begins. For example:
-  * Beijing (UTC+8): Need to wait eight hours before processing begins
-  * Berlin (UTC +1): Need to wait one hour before processing begins
-  * UTC: No waiting time.
-* Depending on the report type, the data is available 8-20 hours after the start of the processing. For example, Beijing data is available from 16:00 local time. Berlin data is available from 09:00.
+* Pueden pasar hasta 11 horas desde que termina el día (hora local) hasta que comienza el procesamiento. Por ejemplo:
+  * Pekín (UTC+8): se debe esperar ocho horas antes de que comience el procesamiento
+  * Berlín (UTC +1): se debe esperar una hora antes de que comience el procesamiento
+  * UTC: sin tiempo de espera.
+* Según el tipo de reporte, los datos están disponibles entre 8 y 20 horas después del inicio del procesamiento. Por ejemplo, los datos de Beijing están disponibles a partir de las 16:00 hora local. Los datos de Berlín están disponibles a partir de las 09:00.
 
-**Western hemisphere:**
+**Hemisferio occidental:**
 
-![[NEEDS DESCRIPTIVE ALT TEXT — CONFIRM]: diagram of daily-processing wait times for Western hemisphere time zones](https://files.readme.io/ac5e3046b3f55916bb73732801c7e0bdef714cc45b89b6c4d70bbc2009cd64c8-8272698121489.png)
+![[SE NECESITA TEXTO ALT DESCRIPTIVO — CONFIRMAR]: diagrama de los tiempos de espera del procesamiento diario para las zonas horarias del hemisferio oeste](https://files.readme.io/ac5e3046b3f55916bb73732801c7e0bdef714cc45b89b6c4d70bbc2009cd64c8-8272698121489.png)
 
-* Up to 23 hours can pass from the time the day ends until processing begins. For example:
-  * Los Angeles (UTC -8): Need to wait 16 hours before processing begins
-  * New York (UTC -5): Need to wait 19 hours before processing begins
-* Depending on the report type the processed data is available 8-20 hours after the start of the processing begins. For example, Los Angeles data is available from 00:01 local time two days after the event. New York data is available from 03:01 local time two days after the event.
-* Example:
-  * Events take place on Monday Los Angeles time (UTC -8), the daily processing begins at midnight UTC Tuesday. This is Los Angeles Tuesday 16:01.
-  * Eight hours later, on Wednesday 00:01 Los Angeles time, the data processing is complete. In practical terms, data from Monday is available to advertisers in Los Angeles when they begin work on Wednesday morning.
+* Pueden pasar hasta 23 horas desde el momento en que finaliza el día hasta que comienza el procesamiento. Por ejemplo:
+  * Los Ángeles (UTC -8): se debe esperar 16 horas antes de que comience el procesamiento
+  * Nueva York (UTC -5): se debe esperar 19 horas antes de que comience el procesamiento
+* Según el tipo de reporte, los datos procesados están disponibles 8-20 horas después del inicio del procesamiento. Por ejemplo, los datos de Los Ángeles están disponibles a partir de las 00:01 hora local dos días después del evento. Los datos de Nueva York están disponibles a partir de las 03:01 hora local dos días después del evento.
+* Ejemplo:
+  * Los eventos tienen lugar el lunes, hora de Los Ángeles (UTC -8), el procesamiento diario comienza a la medianoche UTC del martes. Esto es Los Ángeles, martes 16:01.
+  * Ocho horas después, el miércoles a las 00:01, hora de Los Ángeles, el procesamiento de datos está completo. En términos prácticos, los datos del lunes están disponibles para los anunciantes de Los Ángeles cuando comienzan a trabajar el miércoles por la mañana.
 
 </Accordion>
 
-<Accordion title="Data freshness types">
+<Accordion title="Tipos de actualización de datos">
 
-| Rate | Availability | Description |
+| Calificación | Disponibilidad | Descripción |
 | --- | --- | --- |
-| Continuous (AKA real-time) | 15–60 minutes after event occurrence | Data processing is continuous. This term distinguishes it from batch processing which takes place, for example, daily. Continuous data is updated with a lag of 15–60 minutes after an event occurs as follows:<ul><li>Attributions (installs, re-attributions, and re-engagements): 15–30 minutes.</li><li>In-app events: 30–60 minutes.</li></ul> |
-| Real-time report | Few minutes after requesting a report | Data is updated within minutes of the event occurring. |
-| Daily | **UTC zone**: 8 hours after midnight UTC on the day of the event<br /><br />**Eastern hemisphere**: 9-20 hours after midnight UTC on the day of the event<br /><br />**Western hemisphere**: 21-32 hours after midnight UTC on the day of the event | <ul><li>Data is processed daily</li><li>The availability of this data differs depending on the app-specific time zone</li><li>Data types that don't support app-specific time zones use UTC time</li><li>Data availability times can vary from day-to-day or as indicated in specific articles</li></ul> |
-| EOD | Daily at the end of the day app-specific timezone | At the end of the calendar day. Meaning 00:01 of the following day. Example: Data recorded on Monday is available starting from Tuesday at 00:01 irrespective of the app-specific timezone. |
-| Intraday (during the day) | Every 4 hours on average | <ul><li>Data is collected six times a day, on average every four hours.</li><li>SRN click and impression data for customers without ROI360 is collected 3 times a day.</li><li>Cost ETL data is sent 4 times per day, on average every 6 hours.</li></ul> |
-| Ad revenue | Depends on integration type and report | <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#data-freshness">See ad revenue article for details</Anchor>. |
-| PBA Daily | Data is available 11-12 hours after the end of the day UTC. | <ul><li>PBA dashboard and reports update [Daily](/docs/about-data-freshness-and-timezone-support#date-and-timezone-principles) using the UTC timezone.</li><li>Daily processing includes events received during the previous day.</li><li>During the first seven days after conversion, PBA may identify additional events relating to a conversion. This can change KPIs and media source attribution retroactively.</li><li>After seven days, the paths are frozen, and no more changes take place.</li><li>Raw data reports include the field *final\_data.* When true data is final.</li><li><Anchor target="_blank" href="/marketers/docs/using-pba-dashboards#traits-and-limitations">Detailed example</Anchor></li></ul> |
-| SKAN | <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">See about timing</Anchor> from postback arrival time until data availability in dashboards and reports. | Postbacks received on a given day are processed at the end of the day UTC. Data is available by 10:00 UTC of the following day. Meaning iOS postbacks received Monday are available in reports and dashboards on Tuesday morning. Similarly, postbacks to partners are sent on Tuesday morning.<br /><br />The install date in reports and dashboards is derived from the postback arrival time as detailed in the <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#activity-window">SKAN conversion studio article</Anchor>. |
-| Data Locker Daily | Data is available 8–10 hours after the end of the day UTC | <ul><li>Data is processed daily.</li><li>Data is contained in the h=23 folder on the event date. For example, Monday's data is available in Monday's h=23 folder on Tuesday 08:00–10:00 UTC.</li><li>SKAN data may arrive a bit later (see SKAN info above).</li></ul> |
+| Continua (es decir, en tiempo real) | 15–60 minutos después de que ocurra el evento | El procesamiento de datos es continuo. Este término lo distingue del procesamiento por lotes que tiene lugar, por ejemplo, a diario. Los datos continuos se actualizan con un retraso de 15 a 60 minutos después de que se produzca un evento de la siguiente manera:<ul><li>Atribuciones (instalaciones, reatribuciones y reengagements): de 15 a 30 minutos.</li><li>Eventos in-app: de 30 a 60 minutos.</li></ul> |
+| Reporte en tiempo real | Pocos minutos después de solicitar un reporte | Los datos se actualizan en minutos a partir del momento en que ocurre el evento. |
+| Diaria | **Zona UTC**: 8 horas después de la medianoche UTC del día del evento<br /><br />**Hemisferio oriental**: 9-20 horas después de la medianoche UTC del día del evento<br /><br />**Hemisferio occidental**: 21-32 horas después de la medianoche UTC del día del evento | <ul><li>Los datos se procesan diariamente.</li><li>La disponibilidad de estos datos difiere según la zona horaria específica de la aplicación.</li><li>Los tipos de datos que no admiten zonas horarias específicas de la aplicación usan la hora UTC.</li><li>Los tiempos de disponibilidad de los datos pueden variar de un día a otro o según se indique en artículos específicos.</li></ul> |
+| Final del día | Diariamente al final del día, zona horaria específica de la aplicación | Al final del día calendario. Es decir, a las 00:01 del día siguiente. Ejemplo: los datos registrados el lunes están disponibles a partir del martes a las 00:01, independientemente de la zona horaria específica de la aplicación. |
+| Intradía (durante el día) | Cada 4 horas en promedio | <ul><li>Los datos se recopilan seis veces al día, en promedio cada cuatro horas.</li><li>Los datos de clics e impresiones de SRN para clientes sin ROI360 se recopilan 3 veces al día.</li><li>Los datos de ETL de costos se envían 4 veces al día, de media cada 6 horas.</li></ul> |
+| Ingresos por publicidad | Depende del tipo de integración y del reporte | <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#data-freshness">Consulta el artículo sobre los ingresos por publicidad para obtener más información</Anchor>. |
+| PBA diaria | Los datos están disponibles 11-12 horas después del final del día UTC. | <ul><li>El dashboard y los reportes de PBA se actualizan [a diario](/docs/about-data-freshness-and-timezone-support#date-and-timezone-principles) usando la zona horaria UTC.</li><li>El procesamiento diario incluye los eventos recibidos durante el día anterior.</li><li>Durante los primeros siete días posteriores a la conversión, la PBA puede identificar eventos adicionales relacionados con una conversión. Esto puede cambiar los KPI y la atribución de fuentes de medios de forma retroactiva.</li><li>Después de siete días, las rutas se congelan y no se producen más cambios.</li><li>Los reportes de raw data incluyen el campo *final\_data.* Cuando los datos verdaderos son definitivos.</li><li><Anchor target="_blank" href="/marketers/es/docs/using-pba-dashboards#traits-and-limitations">Ejemplo detallado</Anchor></li></ul> |
+| SKÁN | <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">Consulta sobre el tiempo</Anchor> desde la hora de llegada del postback hasta la disponibilidad de los datos en los paneles de control y reportes. | Los postbacks recibidos en un día determinado se procesan al final del día UTC. Los datos están disponibles antes de las 11:00 UTC del día siguiente. Lo que significa que los postbacks de iOS recibidos el lunes están disponibles en los reportes y paneles de control el martes por la mañana. Del mismo modo, los postbacks a los partners se envían el martes por la mañana.<br /><br />La fecha de instalación en los reportes y paneles de control se deriva de la hora de llegada del postback como se detalla en el <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#activity-window">artículo de SKAN Conversion Studio</Anchor>. |
+| Data Locker diario | Los datos están disponibles entre 8 y 10 horas después del final del día UTC | <ul><li>Los datos se procesan diariamente.</li><li>Los datos están contenidos en la carpeta h=23 en la fecha del evento. Por ejemplo, los datos de los lunes están disponibles en la carpeta h=23 los martes a las 08:00–10:00 UTC.</li><li>Los datos de SKAN pueden llegar un poco más tarde (ver información de SKAN arriba).</li></ul> |
 
 </Accordion>
 
-<Accordion title="Data freshness rates and time-zone support">
+<Accordion title="Tasas de actualización de datos y soporte de zona horaria">
 
-<table><thead><tr><th>Related data</th><th>How presented</th><th>Data freshness rate<br/>(See the preceding section for the key to the rates)</th><th>Data displays using app-specific time zone</th></tr></thead><tbody><tr><td>Installs</td><td>KPI</td><td><p>Continuous</p><p>Exceptions to note:</p><ul><li>Protect360<ul><li>Updated daily at 16:00 UTC</li></ul></li></ul></td><td><span>✓</span></td></tr><tr><td>Sessions, clicks, impressions, loyal users</td><td>KPI</td><td><ul><li>Attribution links: Continuous</li><li>SRNs: Intraday</li></ul></td><td><span>✓</span></td></tr><tr><td>Revenue in-app events</td><td>KPI</td><td>Continuous</td><td><span>✓</span></td></tr><tr><td>Ad revenue</td><td>KPI</td><td>Ad revenue</td><td><span>✓</span></td></tr><tr><td>Ad spend (cost)</td><td>KPI</td><td><ul><li>Attribution link: Continuous (maximum up to 2 hours after click)</li><li>API: Intraday</li><li>Ad Spend Ingestion: Up to 4 hours after ingestion</li></ul></td><td><span>✓</span></td></tr><tr><td>Uninstalls</td><td>KPI</td><td>Daily. AppsFlyer pings app stores every 24 hours. The event time of the uninstall represents the time AppsFlyer pinged the silent push notification and discovered the app was uninstalled. This is not the actual time of the uninstall.</td><td><span><strong>x</strong></span></td></tr><tr><td>In-app events in the interface</td><td>Pull-down list</td><td><p>In-app event names that display in pull-down lists update Daily.</p><p>This does not impact the data freshness rate of the data itself.</p><p><strong>Examples:</strong> Pull-down in-app event lists in Push API, dashboards, and audiences.</p></td><td><span>✓</span></td></tr><tr><td>Overview dashboard</td><td>Page</td><td>Continuous</td><td><span>✓</span></td></tr><tr><td>Protect360 dashboard</td><td>Page</td><td>Daily</td><td><span>✓ </span>(1)</td></tr><tr><td>SKAN dashboard</td><td>Page</td><td>Daily</td><td><span><strong>x</strong></span></td></tr><tr><td>Activity page</td><td>Page</td><td><ul><li>KPIs: Continuous</li><li>Averages: At midnight app-specific time zone</li></ul></td><td><p><span>✓</span></p><p>Exception: MAU data is UTC</p></td></tr><tr><td>Events page</td><td>Page</td><td>Continuous</td><td><span>✓</span></td></tr><tr><td> </td><td> </td><td>(This row has been left blank intentionally)</td><td> </td></tr><tr><td>Retention</td><td>Page</td><td><p>Retention KPIs are available having daily and weekly granularity. The data freshness for each is different.</p><ul><li>Daily retention KPIs: Daily</li><li>Weekly retention KPIs: The week begins on Monday and ends on Sunday. Retention is calculated on Monday 12:00 UTC. The lack of app-specific timezone support for the weekly KPI results in a negligible difference.</li></ul></td><td><p>Daily: <span>✓</span></p><p>Weekly: <span><strong>x</strong></span></p></td></tr><tr><td>Cohort</td><td>Page</td><td>Continuous</td><td><span>✓ </span>(2)</td></tr><tr><td>Custom dashboard</td><td>Page</td><td>Continuous</td><td><span>✓ </span>(3)</td></tr><tr><td>Audiences</td><td>Page</td><td><ul><li>Updates are pushed to partners every 24 hours.</li><li>User-base is updated daily and holds up to 90 days of device data</li></ul></td><td><span>✓</span></td></tr><tr><td>SDK information page</td><td>Page</td><td>Daily</td><td><span><strong>x</strong></span></td></tr><tr><td>Export data</td><td>Page</td><td><p>Continuous</p><p>Exceptions to note:</p><ul><li>Ad revenue raw data: Daily</li><li>Protect360:<ul><li>Aggregate reports: Daily</li><li>Blocked raw data: Continuous</li><li>Post-attribution raw data: Daily</li></ul></li><li>Organic in-app events: Update with a lag of several hours.</li></ul></td><td><span>✓</span></td></tr><tr><td>Pull API</td><td>API</td><td>Pull API data freshness is the same as the Export data.</td><td><p><span>✓</span></p><p><span>Default UTC</span></p></td></tr><tr><td>Pivot</td><td>Page</td><td>Daily</td><td><p><span>✓</span></p><p>Weekly retention KPIs: <strong>x</strong></p></td></tr><tr><td>Master API</td><td>API</td><td>Daily</td><td><span>✓ </span>(3)</td></tr><tr><td>Data Locker</td><td>API</td><td>See the <a href="./data-locker-advertiser-reports#data-freshness-explanations" target="_blank">Data Locker article</a>.</td><td><p><span><strong>x</strong></span></p><p><span><strong>UTC</strong></span></p></td></tr><tr><td>Postbacks</td><td>API</td><td>Continuous</td><td>N/A</td></tr><tr><td>Push API</td><td>API</td><td>Continuous (4)</td><td><p><span>✓</span></p><p><span><strong>Both</strong></span></p></td></tr><tr><td>Server-to-server in-app events</td><td>API</td><td>Continuous</td><td>N/A</td></tr><tr><td colspan="4"><p>Notes:</p><p>(1) All apps the user has permission to must use the same app-specific time zone. If not, the time zone reverts to UTC.</p><p>(2) See <a href="./cohort-and-retention-dashboard#traits-and-limitations" target="_blank">Cohort traits and limitations</a> when the time zone will revert to UTC.</p><p>(3) All selected apps must use the same app-specific time zone. If not, the time zone reverts to UTC.</p><p>(4) SKAN report data will be available daily between 08:00 -10:00 UTC.</p></td></tr></tbody></table>
+<table><thead><tr><th>Datos relacionados</th><th>Cómo se presenta</th><th>Tasa de actualización de los datos<br/>(Consulta la sección anterior para conocer la clave de las tasas)</th><th>Visualizaciones de datos usando la zona horaria específica de la aplicación</th></tr></thead><tbody><tr><td>Instalaciones</td><td>KPI</td><td><p>Continua</p><p>Live Alerts</p><ul><li>Las alertas de Protect360 se actualizan a la hora UTC diaria.<ul><li>Se actualiza diariamente a las 16:00 UTC</li></ul></li></ul></td><td><span>✓</span></td></tr><tr><td>Sesiones, clics, impresiones, usuarios fieles</td><td>KPI</td><td><ul><li>Enlaces de atribución: Continua</li><li>SRN: Intradía</li></ul></td><td><span>✓</span></td></tr><tr><td>Eventos in-app de ingresos</td><td>KPI</td><td>Continua</td><td><span>✓</span></td></tr><tr><td>Ingresos por publicidad</td><td>KPI</td><td>Ingresos por publicidad</td><td><span>✓</span></td></tr><tr><td>Gasto publicitario (costo)</td><td>KPI</td><td><ul><li>Enlace de atribución: Continua (máximo hasta 2 horas después del clic)</li><li>API: Intradía</li><li>Procesamiento de gastos publicitarios Hasta 4 horas después de la ingestión</li></ul></td><td><span>✓</span></td></tr><tr><td>Desinstalar</td><td>KPI</td><td>Diaria. AppsFlyer hace ping a las tiendas de aplicaciones cada 24 horas. La hora del evento de la desinstalación representa el momento en que AppsFlyer lanzó la notificación push que no se ve y descubrió que la aplicación se desinstaló. Esta no es la hora real de la desinstalación.</td><td><span>.</span></td></tr><tr><td>Eventos in-app en la interfaz</td><td>Lista desplegable</td><td><p>Los nombres de eventos in-app que se muestran en las listas desplegables se actualizan diariamente.</p><p>Esto no afecta la tasa de actualización de los datos en sí.</p><p><strong>Ejemplos:</strong> Listas desplegables de eventos in-app en Push API, dashboards y audiencias.</p></td><td><span>✓</span></td></tr><tr><td>Panel de vista general</td><td>Página</td><td>Continua</td><td><span>✓</span></td></tr><tr><td>Panel de control de Protect360</td><td>Página</td><td>Diaria</td><td> <span>✓ </span>(1)</td></tr><tr><td>Panel de control de SKAN</td><td>Página</td><td>Diaria</td><td><span>.</span></td></tr><tr><td>Página de actividad</td><td>Página</td><td><ul><li>KPIs Continua</li><li>Promedios: A medianoche de la zona horaria específica de la aplicación</li></ul></td><td><p><span>✓</span></p><p>Excepción: Los datos MAU son UTC</p></td></tr><tr><td>Página de eventos</td><td>Página</td><td>Continua</td><td><span>✓</span></td></tr><tr><td> </td><td> </td><td>(Esta fila se ha dejado en blanco intencionalmente)</td><td> </td></tr><tr><td>Retención</td><td>Página</td><td><p>Los KPI de retención están disponibles con granularidad diaria y semanal. La actualización de los datos para cada uno es diferente.</p><ul><li>KPI regulares:</li><li>KPI semanales de retención: La semana comienza el lunes y termina el domingo. La retención se calcula el lunes a las 12:00 UTC. La falta de soporte para la zona horaria específica de la aplicación para el KPI semanal resulta en una diferencia insignificante.</li></ul></td><td><p>Diario: <span>✓</span></p><p>Semanal: <span><strong>x</strong></span></p></td></tr><tr><td>Cohorte</td><td>Página</td><td>Continua</td><td> <span>✓ </span>(2)</td></tr><tr><td>Panel de control personalizado</td><td>Página</td><td>Continuo</td><td> <span>✓ </span>(3)</td></tr><tr><td>Audiencias</td><td>Página</td><td><ul><li>Las actualizaciones se envían a los partners cada 24 horas.</li><li>La base de usuarios se actualiza diariamente y almacena hasta 90 días de datos del dispositivo</li></ul></td><td><span>✓</span></td></tr><tr><td>Página de información del SDK</td><td>Página</td><td>Diaria</td><td><span>.</span></td></tr><tr><td>Exportar datos</td><td>Página</td><td><p>Continua</p><p>Excepciones a tener en cuenta:</p><ul><li>Raw data de ingresos por publicidad: Diaria</li><li>Protect360:<ul><li>Reportes agregados:</li><li>Raw data bloqueado: Continua</li><li>Final del día</li></ul></li><li>Eventos in-app orgánicos: Actualización con un desfase de varias horas.</li></ul></td><td><span>✓</span></td></tr><tr><td>API Pull</td><td>API</td><td>La actualización de los datos de API Pull es la misma que la de Datos exportados.</td><td><p><span>✓</span></p><p><span>Predeterminado: UTC</span></p></td></tr><tr><td>Pivot</td><td>Página</td><td>Diaria</td><td><p><span>✓</span></p><p>KPI semanales de retención: <strong><span>x</span></strong></p></td></tr><tr><td>API maestra</td><td>API</td><td>Diaria</td><td> <span>✓ </span>(3)</td></tr><tr><td>Casillero de datos</td><td>API</td><td>Como se especifica en el artículo de Data Locker.</td><td><p><span>.</span></p><p><span><strong>UTC</strong></span></p></td></tr><tr><td>Devoluciones de mensajes</td><td>API</td><td>Continua</td><td>N/D</td></tr><tr><td>API Push</td><td>API</td><td>Continuo (4)</td><td><p><span>✓</span></p><p><span><strong>Ambos</strong></span></p></td></tr><tr><td>Eventos in-app de servidor a servidor</td><td>API</td><td>Continua</td><td>N/D</td></tr><tr><td colspan="4"><p>Notas:</p><p>(1) Todas las aplicaciones para las que el usuario tenga permiso deben usar la misma zona horaria específica de la aplicación. De lo contrario, la zona horaria vuelve a ser UTC.</p><p>(2) Consulta en <a href="./cohort-and-retention-dashboard#traits-and-limitations" target="_blank">Rasgos y limitaciones de la cohorte</a> cuándo la zona horaria volverá a ser UTC.</p><p>(3) Todas las aplicaciones seleccionadas deben utilizar la misma zona horaria específica de la aplicación. De lo contrario, la zona horaria vuelve a ser UTC.</p><p>(4) Los datos del reporte SKAN estarán disponibles todos los días entre las 08:00 y las 10:00 UTC.</p></td></tr></tbody></table>
 
-> 📘 **Exception: My Dashboards Cohort and Activity metrics for Web, CTV, and PC and console apps**
+> 📘 **Excepción: métricas de cohorte y actividad de My Dashboards**
 >
-> These don't follow the continuous/real-time rate shown above. Same-day data becomes available the following day, after daily processing completes. See <Anchor target="_blank" href="/marketers/docs/my-dashboards#traits-and-limitations">My Dashboards traits and limitations</Anchor> for details.
+> Estas métricas tienen su propia frecuencia de actualización de datos:
+>
+> * **Métricas de cohorte (apps web, CTV, PC y de consola):** Los datos del mismo día están disponibles al día siguiente, una vez finaliza el procesamiento diario.
+> * **Métricas de actividad (atribución clásica):** La actualización de datos depende del tipo de app:
+>   * **Aplicaciones web:** hasta 3,5 horas
+>   * **Apps de CTV, PC y de consola:** hasta 50 minutos
+>   * **Aplicaciones móviles:** hasta 70 minutos
+> * **Atribución multiplataforma:** La actualización solo se aplica a la atribución clásica. La actualización de datos multiplataforma en My Dashboards sigue siendo diaria.
+>
+> Consulta <Anchor target="_blank" href="/marketers/es/docs/my-dashboards#traits-and-limitations">las características y limitaciones de My Dashboards</Anchor> para obtener más información.
 
 </Accordion>
 
-<div data-zendesk-anchors="data-freshness-and-support-for-appspecific-time-zones=data-freshness-and-support-for-app-specific-time-zones 01EDBBPAH96ADJ56FRNB34K3VB=data-freshness-and-support-for-app-specific-time-zones 01EDBBPAH9M5KQRXJ1TNN3RJAX=data-freshness 01EDBBPAH92JJVVGXN61N4SV89=time-zones appspecific-time-zone=app-specific-time-zone 01EDBBPAH9WHDY875Y913PV00Z=app-specific-time-zone timezone-guidelines=time-zone-guidelines 01EDBBPAH9TRH8HBB0JAX2369H=time-zone-guidelines 01EDBBPAH98F0641D934W9NJD8=daily-processing h_01M2MJESA4EG1BEVM5T6N9FH0D=exception-my-dashboards-cohort-and-activity-metrics-for-web-ctv-and-pc-and-console-apps" />
+<div data-zendesk-anchors="data-freshness-and-support-for-appspecific-time-zones=actualizaci%C3%B3n-de-los-datos-y-soporte-para-zonas-horarias-espec%C3%ADficas-de-la-aplicaci%C3%B3n 01EDBBPAH96ADJ56FRNB34K3VB=actualizaci%C3%B3n-de-los-datos-y-soporte-para-zonas-horarias-espec%C3%ADficas-de-la-aplicaci%C3%B3n data-freshness=actualizaci%C3%B3n-de-los-datos 01EDBBPAH9M5KQRXJ1TNN3RJAX=actualizaci%C3%B3n-de-los-datos time-zones=zonas-horarias 01EDBBPAH92JJVVGXN61N4SV89=zonas-horarias appspecific-time-zone=zona-horaria-espec%C3%ADfica-de-la-aplicaci%C3%B3n 01EDBBPAH9WHDY875Y913PV00Z=zona-horaria-espec%C3%ADfica-de-la-aplicaci%C3%B3n timezone-guidelines=lineamientos-de-zona-horaria 01EDBBPAH9TRH8HBB0JAX2369H=lineamientos-de-zona-horaria daily-processing=procesamiento-diario 01EDBBPAH98F0641D934W9NJD8=procesamiento-diario h_01M2MJESA4EG1BEVM5T6N9FH0D=excepci%C3%B3n-m%C3%A9tricas-de-cohorte-y-actividad-de-my-dashboards" />

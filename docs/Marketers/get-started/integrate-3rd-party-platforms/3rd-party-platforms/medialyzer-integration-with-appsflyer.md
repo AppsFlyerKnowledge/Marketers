@@ -1,5 +1,5 @@
 ---
-title: Medialyzer integration with AppsFlyer
+title: Integración de Medialyzer con AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -12,108 +12,106 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-05-01T11:43:34Z'
-  edited_at: '2026-06-16T09:51:58Z'
+  edited_at: '2026-08-12T11:59:15Z'
   id: 14963611180689
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/14963611180689-Medialyzer-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/14963611180689
 ---
-> **At a glance:** Medialyzer, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online businesses based on immediately generated visits and conversions per TV ad airing.
+> **De un vistazo:** Medialyzer, un partner integrado de AppsFlyer, desarrolla y comercializa el software como una solución de servicio. La solución permite a los planificadores de medios optimizar sus campañas de TV para negocios en línea, en función de las visitas y conversiones generadas inmediatamente por la emisión del anuncio de televisión.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up Medialyzer
+## Configuración de Medialyzer
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. En la pestaña **Integración**, selecciona la aplicación para la integración y activa **Activar partner**.  
+   **Nota:** El selector debe permanecer <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor> mientras trabajes con el partner.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la primera visita, tendrás que activar el selector **Activar partner** para configurar la integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del Encabezado de la Ventana de Configuración de Partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña Integración">
 
-#### Activate partner
+#### Activar el partner
 
-On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Medialyzer. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
+La configuración se realiza desde la página **Integraciones activas**, pero para encontrar al partner primero debes ir al <Anchor target="_blank" href="/marketers/es/docs/partner-integrations">marketplace</Anchor>. El selector debe estar activado mientras trabajes con Medialyzer. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación del partner</Anchor>.
 
-#### Advanced Privacy
+#### Privacidad avanzada
 
-For iOS apps, the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Advance Privacy</Anchor> toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
+Para las aplicaciones de iOS, aparece el selector de <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada</Anchor>. Cuando se activa, limita el intercambio de identificadores de usuario con el partner. Ten en cuenta que cuando el selector <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada agregada</Anchor> está activado en la Configuración de la aplicación, la **Privacidad avanzada (para iOS 14.5+ y versiones posteriores)** está activada y bloqueada de forma predeterminada.
 
-#### Default postbacks
+#### Postbacks predeterminados
 
-AppsFlyer sends default postbacks to Medialyzer following user installs. Use this section to <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">define these postbacks</Anchor>.
+AppsFlyer envía postbacks predeterminados a Medialyzer después de las instalaciones de los usuarios. Usa esta sección para <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#f">definir estos postbacks</Anchor>.
 
-* **Off**: Install postbacks aren't sent to Medialyzer.
-* **All media sources, including organic**: Install postbacks are sent for events attributed to any partner and for organic events.
+* **Off**: los postbacks de instalaciones no se envían a Medialyzer.
+* **Todas las fuentes de medios, incluidas las orgánicas**: los postbacks de instalaciones se envían para los eventos atribuidos a cualquier partner y para los eventos orgánicos.
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
 
-#### In-app event postbacks
+#### Postbacks de eventos in-app
 
-In this section, you can map your AppsFlyer events with your partners via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer con tus partners a través de postbacks.
 
 [![app_event_postbacks.JPG](https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png)](https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png)
 
-1. Turn on **In-app event postbacks**.
-2. Click **Add event** to add an SDK or server-to-server event to the list.
-3. Complete the following parameters:
+1. Activa **Postbacks de eventos in-app.**
+2. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista.
+3. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Descripción |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
-| **mapped to partner event** | Enter the corresponding event name or ID of each event, as defined in BPM, or send the events as they are without name mapping. |
-| **for users from** | Select **All media sources, including organic** to send postbacks for events attributed to any partner and for organic events. |
-| **including** | <ul><li>**No values & no revenue**: Send just the event itself without any parameters (values or revenue).</li><li>**Values & no revenue**: Send all the parameters **excluding** the revenue value.</li><li>**Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos de servidor a servidor.<br />**Consejo**: ¿No ves el evento que estás buscando?<ul><li>Asegúrese de activar el evento en un dispositivo con una instalación no orgánica y vuelva a verificar.</li><li>Escríbelo en **Evento de AppsFlyer**, y luego haz clic en **Crear personalizado**. Leer más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizados.</Anchor></li></ul> |
+| **asignado al evento de partner** | Introduce el nombre o ID de evento correspondiente de cada evento, como se define en BPM, o envía los eventos tal como están, sin asignación de nombres. |
+| **para usuarios de** | Selecciona **Todas las fuentes de medios, incluidas las orgánicas** para enviar postbacks de los eventos atribuidos a cualquier partner y los eventos orgánicos. |
+| **Incluyendo** | <ul><li>**Sin valores y sin ingresos**: envía solo el evento en sí sin parámetros (valores o ingresos).</li><li>**Valores y sin ingresos**: envía todos los parámetros **excluyendo** el valor de los ingresos.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento).</li></ul> |
 
-4. Click **Save Integration**.
+4. Haz clic en **Guardar integración**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution links aren't available for Medialyzer.
+Los enlaces de atribución no están disponibles para Medialyzer.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña Costo">
 
-Cost data isn't supported in the integration with Medialyzer.
+Los datos de costos no se admiten en la integración con Medialyzer.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña Ingresos por publicidad">
 
-Ad revenue data isn't supported in the integration with Medialyzer.
+Los datos de ingresos por publicidad no se admiten en la integración con Medialyzer.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions aren't available for Medialyzer.
+Los permisos no están disponibles para Medialyzer.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H9FKEAV2225HM5CQAGWS2K99=important setting-up-spoteffects=setting-up-medialyzer h_01H9FKEAV37AT3VTZ5WV1YMWC2=setting-up-medialyzer h_01H9FKEAV3YQY124TSZ5Q7VHAY=integration-tab h_01H9FKEAV3DW2A6RQ1NS44FT5F=activate-partner h_01H9FKEAV3T3YCPBYW70QVF540=advanced-privacy h_01H9FKEAV3Z1Y09P6E18J8AVX2=default-postbacks inapp-event-postbacks=in-app-event-postbacks h_01H9FKEAV3GG6X17X3NCCSWJAS=in-app-event-postbacks h_01H9FKEAV3ZEF1AHRTQGEGYFSJ=attribution-link-tab h_01H9FKEAV3ERXQ98BJGKBQRGP2=cost-tab h_01H9FKEAV32MB7M2Q1ASDAE6RM=ad-revenue-tab h_01H9FKEAV3ZNKMZSG76B61H2AS=permissions-tab" />
+<div data-zendesk-anchors="h_01H9FKEAV2225HM5CQAGWS2K99=importante setting-up-spoteffects=configuraci%C3%B3n-de-medialyzer h_01H9FKEAV37AT3VTZ5WV1YMWC2=configuraci%C3%B3n-de-medialyzer h_01H9FKEAV3YQY124TSZ5Q7VHAY=integration-tab activate-partner=activar-el-partner h_01H9FKEAV3DW2A6RQ1NS44FT5F=activar-el-partner advanced-privacy=privacidad-avanzada h_01H9FKEAV3T3YCPBYW70QVF540=privacidad-avanzada default-postbacks=postbacks-predeterminados h_01H9FKEAV3Z1Y09P6E18J8AVX2=postbacks-predeterminados inapp-event-postbacks=postbacks-de-eventos-in-app h_01H9FKEAV3GG6X17X3NCCSWJAS=postbacks-de-eventos-in-app h_01H9FKEAV3ZEF1AHRTQGEGYFSJ=attribution-link-tab h_01H9FKEAV3ERXQ98BJGKBQRGP2=cost-tab h_01H9FKEAV32MB7M2Q1ASDAE6RM=ad-revenue-tab h_01H9FKEAV3ZNKMZSG76B61H2AS=permissions-tab" />

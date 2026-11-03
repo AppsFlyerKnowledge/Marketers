@@ -1,5 +1,5 @@
 ---
-title: Google Analytics integration—Discrepancies
+title: Integración de Google Analytics—Discrepancias
 metadata:
   keywords:
     - Analytics
@@ -14,105 +14,104 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-12-07T13:38:17Z'
-  edited_at: '2026-08-09T14:24:20Z'
+  edited_at: '2026-08-12T12:00:09Z'
   id: 4413026674833
-  locale: en-us
+  locale: es
   section: Google Analytics
   section_id: 6551226043793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4413026674833-Google-Analytics-integration-Discrepancies
+  url: https://support.appsflyer.com/hc/es/articles/4413026674833
 ---
-> **At a glance:** Understand the discrepancies that might occur between AppsFlyer and Google Analytics.
+> **De un vistazo:** Comprende las discrepancias que pueden producirse entre AppsFlyer y Google Analytics.
 
-## Discrepancies in data between AppsFlyer and Google Analytics
+## Discrepancias en los datos entre AppsFlyer y Google Analytics
 
-Listed below are reasons for discrepancies between AppsFlyer and Google Analytics.
+A continuación se indican los motivos de las discrepancias entre AppsFlyer y Google Analytics.
 
 <div id="high-volume-of-nonconsenting-ios-145-users" />
 
-<Accordion title="High volume of non-consenting iOS 14.5+ users">
+<Accordion title="Alto volumen de usuarios de iOS 14.5+ que no dan su consentimiento">
 
-When <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">AAP is enabled for your app</Anchor>, AppsFlyer doesn't send postbacks to Google Analytics for non-consenting iOS 14.5+ users. In case your app has a large number of such users, there will be a discrepancy between AppsFlyer and Google Analytics dashboards.
+Cuando <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">AAP está habilitado para tu aplicación</Anchor>, AppsFlyer no envía postbacks a Google Analytics de usuarios de iOS 14.5+ que no dan su consentimiento. Si tu aplicación tiene un gran número de estos usuarios, habrá una discrepancia entre los dashboards de AppsFlyer y Google Analytics.
 
 </Accordion>
 
 <div id="customer-user-id" />
 
-<Accordion title="Customer user ID">
+<Accordion title="ID de usuario del cliente">
 
-Google Analytics associates events by Customer User ID. The Customer User ID that AppsFlyer sends by default is GAID or IDFA.
+Google Analytics asocia los eventos por ID de usuario del cliente. El ID de usuario del cliente que AppsFlyer envía de forma predeterminada es el GAID o el IDFA.
 
-Therefore, Google Analytics sees re-installing users (users who install, uninstall and then reinstall) as the same users.
+Por lo tanto, Google Analytics considera que los usuarios que vuelven a instalar la aplicación (usuarios que la instalan, la desinstalan y luego la vuelven a instalar) son los mismos usuarios.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> A user installs your app and then uninstalls it. The user then re-installs the app through a retargeting campaign within the re-attribution window.
+> Un usuario instala tu aplicación y luego la desinstala. A continuación, el usuario vuelve a instalar la aplicación a través de una campaña de retargeting dentro de la ventana de reatribución.
 >
-> Google Analytics sees this user as the same user. In User Explorer in Google Analytics, this user has listed under them all of the following:
+> Google Analytics considera a este usuario como el mismo usuario. En User Explorer de Google Analytics, este usuario tiene todo lo siguiente listado:
 >
-> * regular-install
-> * regular-in-app-event
-> * reattribution-install
-> * reattribution-in-app-event
+> * instalación normal
+> * evento in-app normal
+> * instalación reatribuida
+> * evento in-app reatribuido
 >
-> AppsFlyer, on the other hand, sees this user as two different users:
+> AppsFlyer, por otro lado, considera a este usuario como dos usuarios diferentes:
 >
-> * A user that comes from a UA campaign
-> * A user that comes from a retargeting campaign
+> * Un usuario que proviene de una campaña de UA
+> * Un usuario que proviene de una campaña de retargeting
 
-In addition, discrepancies might arise if you implement both GA and AppsFlyer SDK.
+Además, pueden surgir discrepancias si implementas tanto el SDK de GA como el SDK de AppsFlyer.
 
 </Accordion>
 
 <div id="time-zone-differences" />
 
-<Accordion title="Time zone differences">
+<Accordion title="Diferencias en la zona horaria">
 
-If the time zone of your GA dashboard differs from that of your app's timezone in AppsFlyer, data might not align.
+Si la zona horaria de tu dashboard de GA es distinta de la zona horaria de tu aplicación en AppsFlyer, es posible que los datos no coincidan.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Your app's dashboard is configured to GMT +13 and your GA dashboard is configured to GMT. This means that your app's dashboard is ahead of your GA's dashboard by one day.
+> El dashboard de tu aplicación está configurado en GMT +13 y tu dashboard de GA está configurado en GMT. Esto significa que el dashboard de tu aplicación va un día por delante del dashboard de GA.
 >
-> Therefore, data that appears in GA dashboard for March 2nd only appears in your app's dashboard if you choose March 3rd in the date range filter.
+> Por lo tanto, los datos que aparecen en el dashboard de GA para el 2 de marzo solo aparecen en el dashboard de tu aplicación si eliges el 3 de marzo en el filtro de intervalo de fechas.
 
 </Accordion>
 
 <div id="duplicate-events" />
 
-<Accordion title="Duplicate events">
+<Accordion title="Eventos duplicados">
 
-If events occur in proximity to each other, both AppsFlyer and Google Analytics might drop them as duplicate events. AppsFlyer's <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#how-does-appsflyer-handle-event-deduplication">event deduplication mechanism</Anchor> is different than the one that Google Analytics uses.
+Si los eventos se producen con poca diferencia entre sí, tanto AppsFlyer como Google Analytics podrían descartarlos como eventos duplicados. El <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#how-does-appsflyer-handle-event-deduplication">mecanismo de deduplicación de eventos</Anchor> de AppsFlyer es diferente del que utiliza Google Analytics.
 
-Because AppsFlyer and Google Analytics deduplicate events differently, discrepancies in events data might occur.
+Como AppsFlyer y Google Analytics deduplican los eventos de forma distinta, pueden producirse discrepancias en los datos de eventos.
 
 </Accordion>
 
 <div id="session-count" />
 
-<Accordion title="Session count">
+<Accordion title="Recuento de sesiones">
 
-AppsFlyer counts sessions each time the app is launched or comes back to the foreground. Google Analytics counts sessions according to CID (customer user id) and activity.
+AppsFlyer contabiliza una sesión cada vez que se inicia la app o vuelve al primer plano. Google Analytics contabiliza las sesiones según el CID (ID de usuario del cliente) y la actividad.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> A user launches your app, performs some actions and then sends the app to the background. The user then repeats the process 4 times, each time in an interval of about 5 minutes.
+> Un usuario inicia tu app, realiza algunas acciones y luego envía la app a segundo plano. Después, el usuario repite el proceso 4 veces, cada vez con un intervalo de unos 5 minutos.
 >
-> To AppsFlyer, this counts as 5 different sessions. However, to Google Analytics this counts as a single session.
+> Para AppsFlyer, esto cuenta como 5 sesiones diferentes. Sin embargo, para Google Analytics esto cuenta como una sola sesión.
 
-To learn more about how AppsFlyer and Google Analytics calculate sessions, check the resources below.
+Para saber más sobre cómo AppsFlyer y Google Analytics calculan las sesiones, consulta los recursos que aparecen a continuación.
 
-1. <Anchor target="_blank" href="/marketers/docs/measure-sessions">How AppsFlyer counts sessions</Anchor>
-2. <Anchor target="_blank" href="https://support.google.com/analytics/answer/2731565?hl=en">Google Analytics sessions</Anchor>
+1. <Anchor target="_blank" href="/marketers/es/docs/measure-sessions">Cómo contabiliza AppsFlyer las sesiones</Anchor>
+2. <Anchor target="_blank" href="https://support.google.com/analytics/answer/2731565?hl=en">Sesiones de Google Analytics</Anchor>
 
 </Accordion>
 
 <div id="google-analytics-views-and-filters" />
 
-<Accordion title="Google Analytics views and filters">
+<Accordion title="Vistas y filtros de Google Analytics">
 
-Google Analytics allows you to create different views and apply different filters to them. When you compare data from AppsFlyer and Google Analytics, make sure you view data in the ***All Web Site Data*** view in Google Analytics.
+Google Analytics te permite crear distintas vistas y aplicarles diferentes filtros. Cuando compares datos de AppsFlyer y Google Analytics, asegúrate de verlos en la vista ***All Web Site Data*** de Google Analytics.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HDP3G48R2XXEQDEAAJYGR9V9=discrepancies-in-data-between-appsflyer-and-google-analytics h_01HDP3G48RQD3EW0DTRE2252JF=high-volume-of-nonconsenting-ios-145-users h_01HDP3G48RPWDY7ZRG9HM1F5AR=customer-user-id h_01HDP3G48RMGSJSWQDSKW5DXD9=example h_01HDP3G48R2JWF3Y23011NDCAN=time-zone-differences h_01HDP3G48RXFWZX4FQ0V2ZE44D=example-1 h_01HDP3G48RHT7PWSWZZAG27CP0=duplicate-events h_01HDP3G48R1044364MF96QX41E=session-count h_01HDP3G48RHQ3VG6N4HTT1KJFS=example-2 h_01HDP3G48R9571AS0WH7TWQWJP=google-analytics-views-and-filters" />
+<div data-zendesk-anchors="discrepancies-in-data-between-appsflyer-and-google-analytics=discrepancias-en-los-datos-entre-appsflyer-y-google-analytics h_01HDP3G48R2XXEQDEAAJYGR9V9=discrepancias-en-los-datos-entre-appsflyer-y-google-analytics h_01HDP3G48RQD3EW0DTRE2252JF=high-volume-of-nonconsenting-ios-145-users h_01HDP3G48RPWDY7ZRG9HM1F5AR=customer-user-id h_01HDP3G48RMGSJSWQDSKW5DXD9=ejemplo h_01HDP3G48R2JWF3Y23011NDCAN=time-zone-differences h_01HDP3G48RXFWZX4FQ0V2ZE44D=ejemplo-1 h_01HDP3G48RHT7PWSWZZAG27CP0=duplicate-events h_01HDP3G48R1044364MF96QX41E=session-count h_01HDP3G48RHQ3VG6N4HTT1KJFS=ejemplo-2 h_01HDP3G48R9571AS0WH7TWQWJP=google-analytics-views-and-filters" />

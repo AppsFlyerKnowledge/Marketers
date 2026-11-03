@@ -1,5 +1,5 @@
 ---
-title: Additional SDK integration guide
+title: Guía adicional de integración del SDK
 metadata:
   keywords:
     - iOS
@@ -21,252 +21,251 @@ x-zendesk:
     - Marketers
     - Web Attribution
   created_at: '2021-10-10T11:54:14Z'
-  edited_at: '2026-08-13T12:40:39Z'
+  edited_at: '2026-08-22T00:14:57Z'
   id: 4408735106193
-  locale: en-us
+  locale: es
   section: SDK integration planning
   section_id: 6551182964369
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4408735106193-Additional-SDK-integration-guide
+  url: https://support.appsflyer.com/hc/es/articles/4408735106193
 ---
-> **At a glance:** Consider the additional SDK functionalities that are available and work with your developer to implement APIs such as uninstall measurement, user invite attribution, push notifications, and privacy settings.
+> **At a glance:** Considera las funcionalidades adicionales del SDK que están disponibles y trabaja con tu desarrollador para implementar la API como la medición de desinstalaciones, la atribución de invitaciones de usuarios, las push notifications y la configuración de la privacidad.
 
-## Additional attribution methods
+## Métodos de atribución adicionales
 
-Consider these additional attribution methods if you plan to measure TV, uninstalls, or pre-installed apps.
+Considera estos métodos de atribución adicionales si planeas medir TV, desinstalaciones o aplicaciones preinstaladas.
 
-**All platforms**
+**Todas las plataformas**
 
-<Accordion title="CTV attribution">
+<Accordion title="Atribución CTV">
 
-Attribute <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">mobile users to CTV ads</Anchor> aired in specific locations and at specific times.
-
-</Accordion>
-
-<Accordion title="Measure uninstalls">
-
-Measure the uninstall rate of users coming from different sources. Uninstall measurement can help you to analyze and optimize your campaigns according to this significant KPI.
-
-<Anchor target="_blank" href="/marketers/docs/measure-uninstalls">Learn how to set up uninstall measurement</Anchor>.
+Atribuye <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">usuarios móviles a anuncios de TV</Anchor> emitidos en ubicaciones específicas y en momentos específicos.
 
 </Accordion>
 
-**Android only**
+<Accordion title="Mide desinstalaciones">
 
-<Accordion title="Pre-installed apps">
+Mide la tasa de desinstalaciones de usuarios provenientes de distintas fuentes. La medición de desinstalaciones puede ayudarte a analizar y optimizar tus campañas según este importante KPI.
 
-In <Anchor target="_blank" href="/marketers/docs/appsflyer-factory-preinstall-using-manifest-android">pre-install campaigns</Anchor>, app owners contract with device manufacturers (OEMs) to pre-install their apps.
-
-With AppsFlyer, you can easily attribute installs of pre-installed apps. When users launch your app for the first time, AppsFlyer attributes the install to the preload partner as a media source.
+<Anchor target="_blank" href="/marketers/es/docs/measure-uninstalls">Aprende a configurar la medición de desinstalación</Anchor>.
 
 </Accordion>
 
-## Sessions
+**Solo para Android**
 
-Measure user engagement with your app by counting the number of user sessions during a given period.
+<Accordion title="Aplicaciones preinstaladas">
 
-**All platforms**
+En las <Anchor target="_blank" href="/marketers/es/docs/appsflyer-factory-preinstall-using-manifest-android">campañas de preinstalación</Anchor>, los propietarios de aplicaciones contratan a fabricantes de dispositivos (OEM) para preinstalar sus aplicaciones.
 
-<Accordion title="Custom time between sessions">
-
-By default, at least 5 seconds must pass between two app launches to count as two separate sessions. Learn more about <Anchor target="_blank" href="/marketers/docs/measure-sessions#session-reporting-by-the-app-sdk">counting sessions</Anchor>.
-
-Setting a **high value to the custom time between launches can impair APIs** that rely on session data, such as deep linking.
+Con AppsFlyer, puedes atribuir instalaciones de aplicaciones preinstaladas con facilidad. Cuando los usuarios inician tu aplicación por primera vez, AppsFlyer atribuye la instalación al partner de precarga como fuente de medios.
 
 </Accordion>
 
-**Android only**
+## Sesiones
 
-<Accordion title="Background sessions for utility apps">
+Mide el engagement de los usuarios con tu aplicación contando la cantidad de sesiones de usuario durante un período determinado.
 
-You can <Anchor target="_blank" href="/marketers/docs/measure-sessions#session-reporting-by-the-app-sdk">manually report user sessions</Anchor>. This can be useful for utility apps that run in the background.
+**Todas las plataformas**
+
+<Accordion title="Tiempo personalizado entre sesiones">
+
+De manera predeterminada, deben pasar por lo menos 5 segundos entre dos inicios de la aplicación para que cuenten como dos sesiones separadas. Saber más sobre el <Anchor target="_blank" href="/marketers/es/docs/measure-sessions#session-reporting-by-the-app-sdk">recuento de sesiones</Anchor>.
+
+Establecer un **valor alto para el tiempo personalizado entre lanzamientos puede afectar a las API** que dependen de los datos de la Sesión, como el Deep Linking.
 
 </Accordion>
 
-## Owned media
+**Solo para Android**
 
-Use OneLink to attribute your owned media sources such as websites, social media, and user invites.
+<Accordion title="Sesiones de segundo plano para aplicaciones de utilidad">
 
-**All platforms**
+Puedes <Anchor target="_blank" href="/marketers/es/docs/measure-sessions#session-reporting-by-the-app-sdk">informar manualmente de las sesiones de usuario</Anchor>. Esto puede resultar útil para aplicaciones utilitarias que se ejecutan en segundo plano.
 
-<Accordion title="Resolve wrapped deep link URLs">
+</Accordion>
 
-Some 3rd party services, such as <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">email service providers</Anchor>, wrap links in emails with their own click recording domains. Some even allow you to set your own click recording domains. If OneLink is wrapped in such domains, it might limit its functionality.
+## Medios propios
 
-To overcome this issue, your developer needs to configure the app using these APIs:
+Utiliza OneLink para atribuir las fuentes de medios de tu propiedad, como sitios web, redes sociales e invitaciones de usuarios.
+
+**Todas las plataformas**
+
+<Accordion title="Resolución de URL encapsuladas de enlaces profundos">
+
+Algunos servicios de 3rd party, como los <Anchor target="_blank" href="/marketers/es/docs/email-service-provider-esp-integration-guide">proveedores de servicios de correo electrónico</Anchor>, encapsulan enlaces en los correos electrónicos con sus propios dominios de registro de clics. Algunos incluso te permiten configurar tus propios dominios de registro de clics. Si OneLink está encapsulado en tales dominios, su funcionalidad podría verse limitada.
+
+Para solucionar este problema, tu desarrollador debe configurar la aplicación con estas API:
 
 <Tabs>
 <Tab title="Android Native">
 
-See [`setResolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setresolvedeeplinkurls) in the Android SDK reference
+Consulta [`setResolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setresolvedeeplinkurls) en la referencia del SDK de Android
 
 </Tab>
 
 <Tab title="iOS Native">
 
-See [`resolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#resolvedeeplinkurls) in the iOS SDK reference
+Consulta [`resolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#resolvedeeplinkurls) en la referencia del SDK de iOS
 
 </Tab>
 
 <Tab title="Unity">
 
-See [`setResolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/api#setresolvedeeplinkurls) in the Unity SDK reference
+Consulta [`setResolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/api#setresolvedeeplinkurls) en la referencia del SDK de Unity
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-<Accordion title="Record push notifications">
+<Accordion title="Atribución de push notifications">
 
-AppsFlyer supports the measurement of push notification campaigns from all vendors, including Google Cloud Messaging and Apple push notification services.
+AppsFlyer admite la medición de las campañas de push notifications de todos los proveedores, incluidos los mensajes en la nube de Google y los servicios de push notification de Apple.
 
-<Anchor target="_blank" href="/marketers/docs/measuring-push-notification-re-engagement-campaigns">Learn more about push notification measurement</Anchor>.
-
-</Accordion>
-
-<Accordion title="User invite attribution">
-
-Allowing your existing users to invite their friends and contacts as new users to your app can be a key growth factor for your app. With AppsFlyer, you can attribute and record installs that originate from user invites within your app.
-
-<Anchor target="_blank" href="/marketers/docs/user-invite-attribution">Learn more about user invite attribution</Anchor>.
+<Anchor target="_blank" href="/marketers/es/docs/measuring-push-notification-re-engagement-campaigns">Saber más sobre la medición de push notifications</Anchor>.
 
 </Accordion>
 
-<Accordion title="Cross-promotion attribution">
+<Accordion title="Atribución de invitaciones de usuarios">
 
-Cross-promoting apps can be a major growth factor in driving additional installs for your apps. AppsFlyer enables you to attribute and record installs originating from a cross-promotion from the app the user currently has, to another one of your apps.
+Permitir que tus usuarios existentes inviten a sus amigos y contactos como nuevos usuarios a tu aplicación puede ser un factor de crecimiento clave para tu aplicación. Con AppsFlyer, puedes atribuir y registrar instalaciones que se originen a partir de invitaciones de usuarios dentro de tu aplicación.
 
-<Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-marketers">Learn more about cross-promotion attribution</Anchor>.
-
-</Accordion>
-
-<Accordion title="Attribute app sessions initiated from owned websites (domains)">
-
-App owners that use App Links or Universal Links for deep linking (without OneLink), can configure the SDK to attribute sessions initiated via the domain associated with their app (<Anchor target="_blank" href="https://developer.android.com/studio/write/app-link-indexing#associatesite">Android</Anchor>/<Anchor target="_blank" href="https://developer.apple.com/documentation/xcode/supporting-associated-domains?preferredLanguage=occ">iOS</Anchor>).
-
-For example:
-
-* A user searches Google and clicks on your domain, **[www.example.com](https://www.example.com)**.
-* If the user doesn’t have the app installed, they are directed to the website ([www.example.com](https://www.example.com)).
-* If the user has the app installed on their device, they are deep linked into the app associated with [www.example.com](https://www.example.com). The session is attributed to the media source (`pid` parameter) configured in the SDK.
-
-Developer documentation is available as follows:
-
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#appendparameterstodeeplinkingurl">Android SDK reference</Anchor>
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#appendparameterstodeeplinkingurl">iOS SDK reference</Anchor>
-
-**Tip!** <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users#attribution-solutions">OneLink Smart Script</Anchor> can help app owners convert website visitors to app users.
+<Anchor target="_blank" href="/marketers/es/docs/user-invite-attribution">Saber más sobre la atribución de invitaciones de usuarios</Anchor>.
 
 </Accordion>
 
-## User privacy
+<Accordion title="Atribución de promociones cruzadas">
 
-Review regulations like GDPR and CCPA and your business requirements, and consider which opt-in and opt-out policies to implement.
+Las aplicaciones de promoción cruzada pueden ser un importante factor de crecimiento para generar instalaciones adicionales para tus aplicaciones. AppsFlyer te permite atribuir y registrar las instalaciones que se originan en una promoción cruzada de la aplicación que el usuario tiene actualmente, a otra de tus aplicaciones.
 
-**All platforms**
-
-<Accordion title="Opt-out policy">
-
-In some instances, you might need to instruct your developer to set the AppsFlyer SDK to stop or limit data collection, (for example, to comply with GDPR and CCPA regulations). There are different methods to preserve the privacy of users on the SDK. For more information about the various methods, see <Anchor target="_blank" href="/marketers/docs/apply-privacy-preserving-sdk-methods">Privacy preserving methods in the SDK</Anchor> article.
+<Anchor target="_blank" href="/marketers/es/docs/cross-promotion-attribution-for-marketers">Saber más sobre la atribución de promoción cruzada</Anchor>.
 
 </Accordion>
 
-<Accordion title="Exclude partners from getting data">
+<Accordion title="Atribuir sesiones de aplicaciones iniciadas desde sitios web propios (dominios)">
 
-In some cases, advertisers may want to stop sharing user-level data with ad networks/partners for specific users. Reasons for this include:
+Los propietarios de apps que utilizan App Links o Universal Links para Deep Linking (sin OneLink) pueden configurar el SDK para atribuir sesiones iniciadas a través del dominio asociado con su app (<Anchor target="_blank" href="https://developer.android.com/studio/write/app-link-indexing#associatesite">Android</Anchor>/<Anchor target="_blank" href="https://developer.apple.com/documentation/xcode/supporting-associated-domains?preferredLanguage=occ">iOS</Anchor>).
 
-* Privacy policies such as CCPA or GDPR
-* User opt-out mechanisms
-* Competition with some partners (ad networks, third parties)
+Por ejemplo:
 
-Data sharing with partners is controlled via the `setSharingFilterForPartners` method:
+* Un usuario busca en Google y hace clic en tu dominio, **[www.example.com](https://www.example.com)**.
+* Si el usuario no tiene la aplicación instalada, se le dirige al sitio web ([www.example.com](https://www.example.com)).
+* Si el usuario tiene la aplicación instalada en su dispositivo, se le redirige mediante Deep Linking a la aplicación asociada con [www.example.com](https://www.example.com). La sesión se atribuye a la fuente de medios (parámetro `pid`) configurada en el SDK.
+
+La documentación para desarrolladores puede encontrarse en:
+
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#appendparameterstodeeplinkingurl">Referencia del SDK de Android</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#appendparameterstodeeplinkingurl">Referencia del SDK de iOS</Anchor>
+
+**Consejo!** <Anchor target="_blank" href="/marketers/es/docs/convert-your-mobile-web-visitors-to-app-users#soluciones-de-atribución">OneLink Smart Script</Anchor> puede ayudar a los propietarios de aplicaciones a convertir a los visitantes del sitio web en usuarios de la aplicación.
+
+</Accordion>
+
+## Privacidad del usuario
+
+Revisa las regulaciones como el GDPR y CCPA y los requisitos de tu negocio, y considera qué políticas de aceptación y exclusión opcionales implementar.
+
+**Todas las plataformas**
+
+<Accordion title="Política de exclusión opcional">
+
+En algunos casos, es posible que debas indicar a tu desarrollador que configure el SDK de AppsFlyer para que detenga o limite la recopilación de datos (por ejemplo, para cumplir con las regulaciones del GDPR y CCPA). Existen diferentes métodos para preservar la privacidad de los usuarios en el SDK. Para más información sobre los distintos métodos, consulta el artículo <Anchor target="_blank" href="/marketers/es/docs/apply-privacy-preserving-sdk-methods">Métodos de preservación de la privacidad en el SDK</Anchor>.
+
+</Accordion>
+
+<Accordion title="Excluir a los partners de la obtención de datos">
+
+En algunos casos, es posible que los anunciantes deseen dejar de compartir datos a nivel de usuario con las ad networks/partners para usuarios específicos. Las razones para esto incluyen:
+
+* Políticas de privacidad como la CCPA o el GDPR
+* Mecanismos de exclusión opcional de los usuarios
+* Competencia con algunos partners (ad networks, third-party)
+
+El intercambio de datos con los partners se controla mediante el método `setSharingFilterForPartners`:
 
 <Tabs>
-<Tab title="Android native">
+<Tab title="Android nativo">
 
-See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> in the Android SDK reference
-
-</Tab>
-
-<Tab title="iOS native">
-
-See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#setsharingfilterforpartners">`resolveDeepLinkURLs`</Anchor> in the iOS SDK reference
+Consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> en la referencia del SDK de Android
 
 </Tab>
 
-<Tab title="UnityReact Native">
+<Tab title="iOS nativo">
 
-See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> in the Unity SDK reference
+Consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#setsharingfilterforpartners">`resolveDeepLinkURLs`</Anchor> en la referencia del SDK de iOS
 
-See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> in the React Native SDK reference
+</Tab>
+
+<Tab title="Unity/React Native">
+
+Consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> en la referencia del SDK de Unity
+
+Consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> en la referencia del SDK de React Native
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-<Accordion title="Send consent for DMA compliance">
+<Accordion title="Enviar consentimiento para el cumplimiento de la DMA">
 
-As part of the EU [Digital Marketer Act](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en) (DMA) legislation, big tech companies must get consent from European end users before using personal data from third-party services for advertising.
+Como parte de la legislación de la [Ley de Marketing Digital (DMA)](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en) de la UE, las grandes empresas de tecnología deben obtener el consentimiento de los usuarios finales europeos antes de utilizar datos personales de servicios de terceros para la publicidad.
 
-To comply with the legislation, Google requires AppsFlyer customers to include specific consent fields when sending events originating from EU end-users to Google. The AppsFlyer SDK (Android - v6.13.0+, iOS - v6.13.1+) can send the necessary consent data with each event to meet this requirement.
+Para cumplir con la legislación, Google exige que los clientes de AppsFlyer incluyan campos de consentimiento específicos al enviar eventos originados en usuarios finales de la UE a Google. El SDK de AppsFlyer (Android - v6.13.0+, iOS - v6.13.1+) puede enviar los datos de consentimiento necesarios con cada evento para cumplir los requisitos de Google.
 
-The SDK offers two alternative methods for gathering consent data:
+El SDK ofrece dos métodos alternativos para recopilar datos de consentimiento:
 
-* **Through a Consent Management Platform (CMP):** If the app uses a CMP that complies with the [Transparency and Consent Framework (TCF) v2.2 protocol](https://iabeurope.eu/tcf-supporting-resources/), the SDK can automatically retrieve the consent details.
+* **A través de una Consent Management Platform (CMP):** Si la aplicación utiliza un CMP que cumpla con el [protocolo Transparency and Consent Framework (TCF)](https://iabeurope.eu/tcf-supporting-resources/) v2.2, el SDK puede recuperar automáticamente los detalles del consentimiento.
 
-  OR
-* **Through a dedicated SDK API**: Developers can pass Google's required consent data directly to the SDK using a specific API designed for this purpose.
+  O
+* **A través de una API de SDK dedicada**: Los desarrolladores pueden pasar los datos de consentimiento necesarios de Google directamente al SDK utilizando una API específica diseñada para este fin.
 
-To implement user consent data collection for DMA compliance see our Dev Hub guides:
+Para implementar la recopilación de datos de consentimiento de los usuarios para el cumplimiento de la DMA, consulta nuestras guías del centro de desarrollo:
 
 <Tabs>
-<Tab title="Android Native">
+<Tab title="Android nativo">
 
-<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-send-consent-for-dma-compliance">Send consent for DMA compliance</Anchor>
+<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-send-consent-for-dma-compliance">Enviar consentimiento para el cumplimiento de la DMA</Anchor>
 
 </Tab>
 
-<Tab title="iOS Native">
+<Tab title="iOS nativo">
 
-[Send consent for DMA compliance](https://dev.appsflyer.com/hc/docs/ios-send-consent-for-dma-compliance)
+[Enviar consentimiento para el cumplimiento de la DMA](https://dev.appsflyer.com/hc/docs/ios-send-consent-for-dma-compliance)
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-**iOS only**
+**Solo para iOS**
 
-<Accordion title="Strict-mode SDK">
+<Accordion title="SDK de modo estricto">
 
-Use the strict-mode SDK to completely remove IDFA collection functionality and AdSupport framework dependencies (for example, when developing <Anchor target="_blank" href="https://developer.apple.com/app-store/review/guidelines/#kids-category">apps for children</Anchor>).
+Usa el SDK de modo estricto para eliminar completamente la funcionalidad de recopilación del IDFA y las dependencias del framework de AdSupport (por ejemplo, al desarrollar <Anchor target="_blank" href="https://developer.apple.com/app-store/review/guidelines/#kids-category">aplicaciones dirigidas a un público infantil</Anchor>).
 
-If you market apps for children, your developer needs to install the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-ios-sdk#strict-mode-sdk">strict-mode SDK</Anchor> instead of the regular SDK. **Note:** IDFV remains available.
+Si comercializas aplicaciones dirigidas a un público infantil, tu desarrollador debe instalar el <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-ios-sdk#strict-mode-sdk">SDK de modo estricto</Anchor> en lugar del SDK normal. **Nota:** El IDFV sigue estando disponible.
 
 </Accordion>
 
-<Accordion title="Disable ad frameworks">
+<Accordion title="Deshabilitar frameworks de anuncios">
 
-To disable the AdSupport and iAd frameworks, the SDK provides the following setters:
+Para deshabilitar los frameworks AdSupport e iAd, el SDK proporciona los siguientes setters:
 
 <Tabs>
-<Tab title="iOS native">
+<Tab title="iOS nativo">
 
-* [`disableCollectASA`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disablecollectasa) to opt out of Apple Search Ads attributions.
-* [`disableAdvertisingIdentifier`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier) to not collect Apple `advertisingIdentifier`
+* [`disableCollectASA`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disablecollectasa) para optar por la exclusión de las atribuciones de Apple Search Ads.
+* [`disableAdvertisingIdentifier`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier) para no recopilar `advertisingIdentifier` de Apple
 
 </Tab>
 
 <Tab title="Unity">
 
-* [`setDisableCollectIAd`](https://dev.appsflyer.com/hc/docs/api#setdisablecollectiad) to opt out of Apple Search Ads attributions.
-* [`setDisableCollectAppleAdSupport`](https://dev.appsflyer.com/hc/docs/api#setdisablecollectappleadsupport) to not collect Apple `advertisingIdentifier`
+* [`setDisableCollectIAd`](https://dev.appsflyer.com/hc/docs/api#setdisablecollectiad) para optar por la exclusión de las atribuciones de Apple Search Ads.
+* [`setDisableCollectAppleAdSupport`](https://dev.appsflyer.com/hc/docs/api#setdisablecollectappleadsupport) para no recopilar `advertisingIdentifier` de Apple
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-<div data-zendesk-anchors="01H8W01DRHQHJKNMJA24PR5S2T=additional-attribution-methods 01H8W01DRHD3EZBQT0ZKDMM1QB=sessions 01H8W01DRHV8H3QFJX5QKABK5E=owned-media 01H8W01DRHJFB71DVJ64QWJME4=user-privacy" />
+<div data-zendesk-anchors="additional-attribution-methods=m%C3%A9todos-de-atribuci%C3%B3n-adicionales 01H8W01DRHQHJKNMJA24PR5S2T=m%C3%A9todos-de-atribuci%C3%B3n-adicionales sessions=sesiones 01H8W01DRHD3EZBQT0ZKDMM1QB=sesiones owned-media=medios-propios 01H8W01DRHV8H3QFJX5QKABK5E=medios-propios user-privacy=privacidad-del-usuario 01H8W01DRHJFB71DVJ64QWJME4=privacidad-del-usuario" />

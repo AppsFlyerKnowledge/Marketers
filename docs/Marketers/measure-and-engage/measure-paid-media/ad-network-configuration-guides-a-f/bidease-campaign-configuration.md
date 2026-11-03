@@ -1,5 +1,5 @@
 ---
-title: Bidease campaign configuration
+title: Configuración de la campaña de Bidease
 metadata:
   keywords:
     - Marketers
@@ -12,143 +12,142 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-11-13T13:17:18Z'
-  edited_at: '2026-09-09T12:48:03Z'
+  edited_at: '2026-09-11T00:23:12Z'
   id: 20106343354129
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (A-F)
   section_id: 6551990971793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/20106343354129-Bidease-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/20106343354129
 ---
-> **At a glance:** Bidease (bidease\_int), an AppsFlyer integrated partner, is a fully transparent DSP for mobile marketers. Using proprietary programmatic advertising technology, machine learning, and first-party data, Bidease optimizes campaigns across all major mobile formats for desired post-install behaviors at no risk to their clients.
+> **En resumen:** Bidease (bidease\_int), un socio integrado de AppsFlyer, es un DSP totalmente transparente para los mobile marketers. Utilizando tecnología propia de publicidad programática, aprendizaje automático y datos de first-party, Bidease optimiza las campañas en todos los principales formatos móviles para lograr los comportamientos deseados después de la instalación sin riesgo para sus clientes.
 
 <Image alt="bidease.png" src="https://files.readme.io/4a3373c0fdb73190017601c374ca7634cc0feb1954b6e23fc1bd9693c60605f9-20106376017041.png" width="100px" />
 
-## Setting up Bidease
+## Configuración de Bidease
 
-The integration with Bidease supports click-through and view-through attribution.
+La integración con Bidease soporta la atribución click-through y view-through.
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de partners > Marketplace**.  
+   (**Para editar una integración existente:** ve a la pestaña **Colaborar > Integraciones de partners > Integraciones activas**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** el selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners</Anchor>
 
-The general configuration window includes the following tabs: Integration, Attribution link, Cost, Ad revenue, and Permissions. For Bidease, the available tabs are Integration, Attribution link, and Permissions.
+La ventana de configuración incluye las siguientes pestañas: Integración, Enlace de atribución, Costo, Ingreso publicitario y Permisos. Para Bidease, las pestañas disponibles son Integración, Enlace de atribución y Permisos.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * Some settings differ for iOS and Android devices
-> * Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">setting up partner integrations</Anchor>
+> * Algunas configuraciones difieren para dispositivos iOS y Android
+> * Aprende más sobre cómo <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">configurar integraciones de partners</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The **Integration** tab includes a number of sections, as described below.
+La pestaña **Integración** incluye una serie de secciones, como se describe a continuación.
 
-#### Activate partner
+#### Activar partner
 
-Turn on the **Activate partner** toggle.  
-**Note:** The toggle **must stay on (active) as long as you work with the partner.**
+Activa el selector **Activar partner** .  
+**Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner.**
 
-#### Advanced Privacy
+#### Privacidad avanzada
 
-**For iOS apps only:** Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Privacy (for iOS 14.5+ and later)** toggle state:
+**Solo para aplicaciones de iOS:** Tu control sobre los datos compartidos con el partner a través de postbacks y <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">reportes</Anchor> depende del estado del selector de **Privacidad avanzada (para iOS 14.5+ y posteriores)**:
 
-| Advanced Privacy: On | Advanced Privacy: Off |
+| Privacidad avanzada: activada | Privacidad avanzada: desactivada |
 | --- | --- |
-| Postbacks are sent only for events attributed to the partner | Postbacks are sent according to your configuration:<ul><li>**All media sources, including organic**</li><li>**This partner only**</li></ul> |
-| Postbacks are sent according to the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy template</Anchor> |  |
-| <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated and anonymous data</Anchor> is shared with the partner, meaning no user-level data (device ID) is shared. |  |
+| Los postbacks se envían solo para eventos atribuidos al partner | Los postbacks se envían según tu configuración:<ul><li>**Todas las fuentes de medios, incluidas las orgánicas**</li><li>**Solo este partner**</li></ul> |
+| Los postbacks se envían de acuerdo con la <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">plantilla de Privacidad avanzada</Anchor> |  |
+| <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Los datos agregados y anónimos</Anchor> se comparten con el partner, lo que significa que no se comparten datos a nivel de usuario (ID de dispositivo). |  |
 
-#### Transaction ID
+#### ID de transacción
 
-**For iOS apps only:** When **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">share the transaction ID of SKAdNetwork postbacks</Anchor> with Bidease. By doing so, Bidease could decode your SKAdNetwork Conversion Values.
+**Solo para aplicaciones iOS:** Cuando **Compartir ID de transacción SKAN** está activado, estás permitiendo que AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">comparta el ID de transacción de los postbacks de SKadNetwork</Anchor> con Reddit. Al hacerlo, Reddit podría decodificar tus valores de conversión de SkadNetwork .
 
-#### Install attribution
+#### Atribución de instalación.
 
-To attribute view-through installs from Bidease, turn on **Install view-through attribution**. The view-through lookback slider is available on the [Attribution link tab](#attribution-link-tab).
+Para atribuir instalaciones de visualización a través de Bidease, activa **Instalar atribución view-through**. El control deslizante de view-through está disponible en la [pestaña Enlace de atribución](#attribution-link-tab).
 
-#### Default postbacks
+#### Postbacks predeterminados
 
-Define the source of users for sending automatic postbacks to partners relating to user actions occurring before the app launch:
+Define el origen de los usuarios para enviar postbacks automáticos a los partners en relación con las acciones de los usuarios que se producen antes del lanzamiento de la aplicación:
 
-* For **Installs**, select either of the following:
-  * **This partner only:** Send postbacks only when the install is attributed to this partner—meaning, the user who installed the app came from Bidease.
-  * **All media sources, including organic:** Send postbacks for installs attributed to any partner and for organic events—meaning, the user who installed the app came from any media source.
-* For **Rejected installs** and **Re-engagements:** Postbacks are sent to Bidease only.
+* Para **Instalaciones**, selecciona una de las siguientes opciones:
+  * **Solo este partner:** Envía postbacks solo cuando la instalación se atribuya a este partner, es decir, el usuario que instaló la aplicación provenía de Bidease.
+  * **Todas las fuentes de medios, incluidas las orgánicas:** Envía postbacks para las instalaciones atribuidas a cualquier partner y para eventos orgánicos, es decir, el usuario que instaló la aplicación provenía de cualquier fuente de medios.
+* Para **instalaciones rechazadas** y **Re-engagements:** Los postbacks se envían únicamente a Bidease.
 
-#### In-app event postbacks
+#### Postbacks de eventos in-app
 
-Set the **In-app event postback window**, as required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
+Establece la **ventana de postback de eventos in-app**, según sea necesario (lee más sobre la configuración de la ventana de postback de eventos in-app).
 
-Configure mapping of in-app events with Bidease events, sent via postbacks:
+Configura el mapeo de eventos en la aplicación con eventos de Bidease, enviados a través de postbacks:
 
-1. Turn on **In-app event postbacks**.
-2. Click **Add event** to add an SDK or server-to-server event to the list. The following table describes the fields to complete:
+1. Activa **Postbacks de eventos in-app**.
+2. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista. En la siguiente tabla se describen los campos que debes completar:
 
-| Parameter name | Description |
+| Nombre de parámetro | Descripción |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
-| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: Send postbacks only when this event is attributed to this partner.</li><li>**All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
-| **including** | <ul><li>**No data (default)**: Send only the event itself without any event values.</li><li>**Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: Send all the parameters **excluding** the revenue value.</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos de servidor a servidor.<br />**Consejo**: ¿No ves el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.</li><li>Escríbelo en **Evento de AppsFlyer**, y luego haz clic en **Crear personalizado**. Leer más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación personalizada de eventos</Anchor>.</li></ul> |
+| **para usuarios de** | Selecciona la opción de envío para el evento:<ul><li>**Solo este partner**: envía postbacks solo cuando este evento se atribuya a este partner.</li><li>**Todas las fuentes de medios, incluidas las orgánicas**: envía postbacks para eventos atribuidos a cualquier partner, así como para eventos orgánicos.</li></ul> |
+| **incluyendo** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí sin los valores del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento).</li><li>**Valores sin ingresos**: envía todos los parámetros **excluyendo** el valor de ingresos.</li></ul> |
 
-3. [Optional] Click the **Add condition**<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/f5a35c6e26ceef82e2850f5ff40c5985a48de5de57baed289e8cd05aac5427c1-20106422231953.png" width="30px" />icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
-4. Click **Save integration**.
-5. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
-   1. From the top-left corner, under the partner name, click the app name to open the list of apps.
-   2. Select a different app from the drop-down list.
-   3. Repeat the <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#integration-tab">integration steps</Anchor> for the selected app.
+3. [Opcional] Haz clic en el icono **Agregar condición** <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png" width="30px" /> para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer las condiciones</Anchor> de un evento.
+4. Haz clic en **Guardar integración**.
+5. [Opcional] Después de guardar la integración, desde la página de configuración, puedes integrar más de tus aplicaciones con el partner:
+   1. En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
+   2. Selecciona una aplicación diferente en la lista desplegable.
+   3. Repite los pasos de integración para la aplicación seleccionada.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> **For iOS apps only:** Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Privacy (for iOS 14.5+ and later)** <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy">toggle state</Anchor>.
+> **Solo para aplicaciones de iOS:** Tu control sobre los datos compartidos con el partner a través de postbacks y <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">reportes</Anchor> depende del <Anchor target="_blank" href="/marketers/es/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy">estado del selector</Anchor> **Privacidad avanzada (para iOS 14.5+ y posteriores)**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda los enlaces de atribución y envíalos al partner para atribuir campañas específicas, conjuntos de anuncios o anuncios individuales, tanto para UA como para campañas de retargeting. Puedes usar un enlace de plataforma única o  <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Aprende más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>. 
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de Costo">
 
-<Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data">Cost data</Anchor> isn't available for Bidease.
+<Anchor target="_blank" href="/marketers/es/docs/roi360-guide-cost-and-revenue-data">Los datos de costos</Anchor> no están disponibles para Bidease.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-<Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">Ad revenue</Anchor> isn't available for Bidease.
+<Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution">Los ingresos por publicidad</Anchor> no están disponibles para Bidease.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Select which <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions you're granting</Anchor> Bidease to access your data and perform various actions.
+Selecciona qué <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos otorgar</Anchor> a Bidease para acceder a tus datos y realizar diversas acciones.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> When the integration is <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">deactivated</Anchor> while the Permissions toggle is still turned on, permissions remain granted.
+> Cuando la integración se <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">desactiva</Anchor> mientras el selector Permisos aún está activado, se siguen otorgando permisos.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HF4ED4B5QHY92B03426260QY=setting-up-bidease h_01HF4DWFAP55JRXTR8Z65YAR68=note h_01HF4DWFAP4S45241VR1PJ3RFC=integration-tab activate-partner::b746d215=activate-partner h_01HF4DWFAP9BS1G612WS5HNQ6S=activate-partner h_01HF4DWFAQHEJATJG6DRVMKA34=advanced-privacy h_01HF4DWFAQ1Y1AVQ0EV63H5YJ1=transaction-id h_01HF4DWFAQQRR8XH5S7NW2NCB6=install-attribution h_01HF4DWFAQG4YEEH3HMD61GEWE=default-postbacks inapp-event-postbacks=in-app-event-postbacks h_01HF4DWFAQQCM4TK3JJNMSM6RD=in-app-event-postbacks h_01HF4DWFAQQ3C7GBA4Q4SA6G0Y=note-1 h_01HF4DWFAQ9D9BV6PG4BEYX788=attribution-link-tab h_01HF4DWFAQT2PD4863N6EB7HHH=cost-tab h_01HF4DWFAQXMNDHWT0Y4C0M6EN=ad-revenue-tab h_01HF4DWFAQJWNFMFDEZ8XT0DM5=permissions-tab h_01HF4DWFAQJ9HRMD1FE717F1WK=note-2" />
+<div data-zendesk-anchors="setting-up-bidease=configuraci%C3%B3n-de-bidease h_01HF4ED4B5QHY92B03426260QY=configuraci%C3%B3n-de-bidease h_01HF4DWFAP55JRXTR8Z65YAR68=nota h_01HF4DWFAP4S45241VR1PJ3RFC=integration-tab activate-partner::b746d215=activar-partner h_01HF4DWFAP9BS1G612WS5HNQ6S=activar-partner advanced-privacy=privacidad-avanzada h_01HF4DWFAQHEJATJG6DRVMKA34=privacidad-avanzada transaction-id=id-de-transacci%C3%B3n h_01HF4DWFAQ1Y1AVQ0EV63H5YJ1=id-de-transacci%C3%B3n install-attribution=atribuci%C3%B3n-de-instalaci%C3%B3n h_01HF4DWFAQQRR8XH5S7NW2NCB6=atribuci%C3%B3n-de-instalaci%C3%B3n default-postbacks=postbacks-predeterminados h_01HF4DWFAQG4YEEH3HMD61GEWE=postbacks-predeterminados inapp-event-postbacks=postbacks-de-eventos-in-app h_01HF4DWFAQQCM4TK3JJNMSM6RD=postbacks-de-eventos-in-app h_01HF4DWFAQQ3C7GBA4Q4SA6G0Y=nota-1 h_01HF4DWFAQ9D9BV6PG4BEYX788=attribution-link-tab h_01HF4DWFAQT2PD4863N6EB7HHH=cost-tab h_01HF4DWFAQXMNDHWT0Y4C0M6EN=ad-revenue-tab h_01HF4DWFAQJWNFMFDEZ8XT0DM5=permissions-tab h_01HF4DWFAQJ9HRMD1FE717F1WK=nota-2" />

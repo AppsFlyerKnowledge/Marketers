@@ -1,5 +1,5 @@
 ---
-title: Attribution discrepancies between Amazon Ads and AppsFlyer
+title: Discrepancias de atribución entre Amazon Ads y AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -12,27 +12,26 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2024-09-18T04:28:03Z'
-  edited_at: '2026-08-27T06:51:52Z'
+  edited_at: '2026-08-29T00:26:55Z'
   id: 28461159218449
-  locale: en-us
+  locale: es
   section: Amazon Ads
   section_id: 28703975923729
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/28461159218449-Attribution-discrepancies-between-Amazon-Ads-and-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/28461159218449
 ---
-> **At a glance:** Learn about the differences in attribution models between Amazon Ads and AppsFlyer.
+> **At a glance:** Infórmate sobre las diferencias en los modelos de atribución entre Amazon Ads y AppsFlyer.
 
-## Overview
+## Visión general
 
-As two major players in the mobile user acquisition ecosystem, Amazon Ads and AppsFlyer use distinct attribution models. This may cause discrepancies between Amazon Ads and AppsFlyer dashboards. While we work closely with Amazon Ads to minimize these discrepancies, advertisers need to be aware of potential causes.
+Como líderes en el ecosistema de adquisición de usuarios móviles, Amazon Ads y AppsFlyer utilizan modelos de atribución distintos. Esto puede causar discrepancias entre los paneles de Amazon Ads y AppsFlyer. Aunque trabajamos estrechamente con Amazon Ads para minimizar estas discrepancias, los anunciantes deben conocer las posibles causas.
 
-## Differences in attribution models
+## Diferencias en los Modelos de Atribución
 
-The table below describes possible reasons for discrepancies between the Amazon Ads and the AppsFlyer dashboards:
+La siguiente tabla describe las posibles razones de las discrepancias entre los paneles de Amazon Ads y AppsFlyer:
 
-| Cause | Amazon Ads Manager | AppsFlyer |
+| Causa | Gestor de Anuncios de Amazon | fuentes de medios |
 | --- | --- | --- |
-| <span id="multichannel-source-attribution"></span>Multi-channel source attribution | Amazon Ads self-attributes installs regardless of other media sources. | AppsFlyer uses last-click attribution.  <br />Learn more about the <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">AppsFlyer attribution model</Anchor>. |
-| <span id="different-timezones"></span>Different timezones | Amazon Ads timezone (displayed next to the date range) can't be adjusted. It was configured while creating the ad account. | The AppsFlyer default app timezone is UTC+0. To match the timezone defined in the Amazon Ads, change the timezone set for the app on the <Anchor target="_blank" href="/marketers/docs/app-settings#localization-time-zone">app settings page</Anchor>. |
+| <span id="multichannel-source-attribution"></span>Atribución de Fuentes Multicanal | Amazon Ads se atribuye las instalaciones sin considerar otras fuentes de medios. | AppsFlyer utiliza atribución de último clic.  <br />Saber más sobre el <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">modelo de atribución de AppsFlyer</Anchor>. |
+| <span id="different-timezones"></span>Diferentes Zonas Horarias | La zona horaria de Amazon Ads (mostrada junto al rango de fechas) no se puede modificar. Se configuró al crear la cuenta publicitaria. | La zona horaria predeterminada de la app de AppsFlyer es UTC+0. Para coincidir con la zona horaria de Amazon Ads, ajústala en la <Anchor target="_blank" href="/marketers/es/docs/app-settings#localization-time-zone">página de configuración de la app</Anchor>. |
 
-<div data-zendesk-anchors="h_01J81NN4J4A1KWBXJQD9SM2AWH=overview h_01J81NN4J4WSJBFHBARKTQ9JG5=differences-in-attribution-models reducing-discrepancies=differences-in-attribution-models h_01J81NN4J4EJQH47YJF0H5M97G=differences-in-attribution-models" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01J81NN4J4A1KWBXJQD9SM2AWH=visi%C3%B3n-general differences-in-attribution-models=diferencias-en-los-modelos-de-atribuci%C3%B3n h_01J81NN4J4WSJBFHBARKTQ9JG5=diferencias-en-los-modelos-de-atribuci%C3%B3n reducing-discrepancies=diferencias-en-los-modelos-de-atribuci%C3%B3n h_01J81NN4J4EJQH47YJF0H5M97G=diferencias-en-los-modelos-de-atribuci%C3%B3n" />

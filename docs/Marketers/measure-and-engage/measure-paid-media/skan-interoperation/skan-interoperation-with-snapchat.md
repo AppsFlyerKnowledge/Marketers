@@ -1,5 +1,5 @@
 ---
-title: SKAN interoperation with Snapchat
+title: Interoperabilidad de SKAN con Snapchat
 metadata:
   keywords:
     - Advertisers
@@ -13,61 +13,159 @@ x-zendesk:
     - Marketers
     - SKAdNetwork (SKAN)
   created_at: '2021-02-10T20:20:51Z'
-  edited_at: '2024-01-04T10:56:54Z'
+  edited_at: '2026-08-12T12:21:03Z'
   id: 360017604077
-  locale: en-us
+  locale: es
   section: SKAN interoperation
   section_id: 6552115163153
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360017604077-SKAN-interoperation-with-Snapchat
+  url: https://support.appsflyer.com/hc/es/articles/360017604077
 ---
-> **At a glance:** SKAN interoperability enables Snapchat to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with Snapchat.
+> **En resumen:** La interoperabilidad de SKAN permite a TikTok compartir postbacks de SKAN con AppsFlyer y permite a AppsFlyer compartir tu asignación de medición de valor de conversión con TikTok.
 
-## SKAN interoperability: AppsFlyer &lt;-> Snapchat
+## Interoperabilidad de SKAN: AppsFlyer &lt;-> Snapchat
 
-If you work with multiple ad network partners, the best practice is to configure your SKAN integration in AppsFlyer. By doing so, SKAN performance metrics, enriched with other metrics like cost, are available in the AppsFlyer platform. 
+Si trabajas con varios partners de redes de publicidad, la mejor práctica es configurar tu integración de SKAN en AppsFlyer. Al hacerlo, las métricas de rendimiento de SKAN, enriquecidas con otras métricas como el costo, están disponibles a través de la plataforma AppsFlyer. 
 
-**Scope of SKAN interoperability with Snapchat**
+**Alcance de la interoperabilidad de SKAN con Snapchat**
 
-The interoperation allows AppsFlyer and Snapchat to share the SKAN conversion value map, enabling both to provide you with performance metrics. If you enable the Snapchat partner integration in AppsFlyer, then AppsFlyer provides Snapchat with events for optimization purposes.
+La interoperabilidad permite que AppsFlyer y Snapchat compartan el asignación de valores de conversión de SKAN, lo que permite que ambos le proporcionen métricas de rendimiento. Si habilitas la integración de partners de Snapchat en AppsFlyer, entonces AppsFlyer proporciona a Snapchat eventos para fines de optimización.
 
-**Snapchat app install ads guidance**
+**Guía de anuncios de instalación de la aplicación Snapchat**
 
-In configuring your Snapchat iOS 14 app install campaigns, consider the following Snapchat guidance:
+Al configurar la campaña de instalación de la aplicación Snapchat iOS 14, tenga en cuenta la siguiente guía de Snapchat:
 
-*Effective February 18, 2021, SKAdNetwork will be available in Snapchat Ads Manager for all advertisers. We recommend that apps configure and begin to test, to ensure no disruption to measurement or scale for app acquisition iOS 14 campaigns on Snapchat. In the future, SKAdNetwork will be a requirement to access App Goal-Based Bidding for iOS Campaigns on Snapchat.*
+*A partir del 18 de febrero de 2021, SKAdNetwork estará disponible en Snapchat Ads Manager para todos los anunciantes. Recomendamos que las aplicaciones se configuren y comiencen a probar, para garantizar que no haya interrupciones en la medición o la escala de las campañas de adquisición de aplicaciones de iOS 14 en Snapchat. En el futuro, SKAdNetwork será un requisito para acceder a las ofertas basadas en objetivos de aplicaciones para campañas iOS en Snapchat.*
 
-*Please complete your SKAdNetwork integration in your AppsFlyer MMP dashboard, and complete the configuration of your Conversion Value mapping prior to launching SKAdNetwork ad sets within Snapchat Ads Manager. Snapchat’s setup guide for SKAdNetwork can be found [here](https://businesshelp.snapchat.com/s/article/skadnetwork).*
+*Completa la integración de SKAdNetwork en tu panel de control de AppsFlyer MMP y completa la configuración de tu asignación de valor de conversión antes de lanzar los conjuntos de anuncios de SKAdNetwork dentro de Snapchat Ads Manager. La guía de configuración de Snapchat para SKAdNetwork se puede encontrar [aquí](https://businesshelp.snapchat.com/s/article/skadnetwork).*
 
-**Implementation requirements**
+**Requisitos de implementación**
 
-Consider the following in Snapchat:
+Considera lo siguiente en Snapchat:
 
-* Configure a [Snap App ID](https://businesshelp.snapchat.com/en-US/a/snap-app-id) for each app you advertise on Snapchat.
-* Opt-in the Snapchat Ad Sets for SKAN measurement.
-* For a given app, you are limited to a maximum of 10 Ad Sets at a time opted into SKAN attribution.
+* Configura un [ID de aplicación Snap](https://businesshelp.snapchat.com/en-US/a/snap-app-id) para cada aplicación que anuncies en Snapchat.
+* Opta por los conjuntos de anuncios de Snapchat para la medición de SKAN.
+* Para una aplicación determinada, está limitado a un máximo de 10 conjuntos de anuncios a la vez habilitados para la atribución de SKAN.
 
-### Enabling AppsFlyer SKAN interoperation with Snapchat
+### Habilitación de la interoperabilidad de SKAN de AppsFlyer con Snapchat
 
-Interoperation is achieved via settings in the AppsFlyer and Snapchat dashboards. No interoperation is required in the app itself. However, you need to adopt the most recent AppsFlyer SDK.
+La interoperabilidad se logra a través de configuraciones en los paneles de control de AppsFlyer y Snapchat. No se requiere ninguna interoperabilidad en la propia aplicación. Sin embargo, es necesario adoptar el SDK de AppsFlyer más reciente.
 
-<table><thead><tr><th>Step</th><th>Action</th><th>Details </th></tr></thead><tbody><tr><td><p>1</p></td><td>App prerequisites</td><td><ul><li>Adopt the most recent AppsFlyer <a href="./sdk-integration-overview" target="_blank">SDK</a> into your app.</li></ul></td></tr><tr><td><p>2</p></td><td>SKAN settings review </td><td><p>Set up and turn on AppsFlyer <a href="./skadnetwork-skan-solution-guide" target="_blank">SKAN solution.</a></p><p><strong>To view SKAN settings</strong>:</p><ol><li>In AppsFlyer, go to <strong>Settings</strong> &gt; <strong>SKAN Conversion Studio</strong>.</li><li><span>Click options (</span><span>⋮</span><span>), and verify</span> that <span><span><strong>SKAN measurement</strong> is on.<br/></span></span><p><img alt="skan-settings.png" src="https://files.readme.io/e4c36e8f5b10a7a4593a8dc776c4c8c43df88577dae8a812303b2d7b3ee37797-4406452401425.png"/></p></li><li>Select your preferred measurement mode.<br/>Learn more about <a href="./skan-conversion-studio" target="_blank">SKAN Conversion Studio</a>.</li><li>Make a note of the exact event names set. You need them in the next step.</li></ol></td></tr><tr><td><p>3</p></td><td>In-app event mapping</td><td><p>Review, and if necessary, make changes to your Snapchat in-app event mappings. </p><p><strong>To view and set in-app event mappings</strong>:</p><ol><li>In AppsFlyer, Go to <strong>Settings</strong> &gt; <strong>Active Integrations</strong>.</li><li>Search for and select <strong>Snapchat</strong>.</li><li>From the <strong>Integration</strong> tab, if <strong>Activate partner</strong> isn't turned on, turn it on. </li><li>Verify, and if necessary update, the Snap app ID that displays in AppsFlyer with the app ID that displays in the <a href="https://businesshelp.snapchat.com/s/article/snap-app-id?language=en_US" target="_blank">Snapchat dashboard</a>.</li><li>If not on, turn on <strong>In-app events postback</strong>.<br/><p><a href="https://files.readme.io/7dd29ac3be914e9c1b29761d9be525c8945e3ae298274f95f82ede1f548617f6-360017154137.png"><img alt="mceclip0.png" src="https://files.readme.io/7dd29ac3be914e9c1b29761d9be525c8945e3ae298274f95f82ede1f548617f6-360017154137.png"/></a></p>Verify that the in-app events <strong>SDK event names</strong> you set in SKAN measurement are mapped to <strong>Partner event identifiers,</strong> meaning Snapchat event names. You must map the currently-selected SKAN measurement type events or the events in your <a href="./skan-cv-decode-map-your-cv-to-events" target="_blank">Custom conversion map</a>. <strong>Note</strong>! The default measurement type is revenue. <h4><span id="inapp-event-mapping-guide"></span>In-app event mapping guide</h4><table><tbody><tr><th>Measurement type</th><th>Mapping requirement</th></tr><tr><td>Custom</td><td><p>Map the in-app events you set in Custom to the corresponding Snap events.</p><p>To report revenue by postback you must set <span></span><strong>Send revenue</strong> <span></span>to <span></span><strong>Values &amp; revenue</strong>.</p><p><img alt="SendValueandRevenue.png" src="https://files.readme.io/412c60db2b09d80a989b7546a6819aa1b030732e0ce004b323dc09db1015c238-11331054047377.png"/></p><p><em>af_skad_revenue <span></span></em>is used for overall revenue and mapped to the Snap revenue event.</p><p><strong>Note</strong>! It's OK to map more than one event to <span></span>the Snap revenue event.</p></td></tr><tr><td>Revenue</td><td><p>Map af_skad_revenue to PURCHASE</p></td></tr><tr><td>Conversion</td><td>Map 1–6 conversion events to the corresponding Snapchat events.</td></tr><tr><td>Engagement</td><td>Map the engagement event you set to the corresponding Snapchat event.</td></tr></tbody></table></li><li>Click <strong>Save integration</strong>.</li></ol></td></tr><tr><td><p>4</p></td><td>Allow Snapchat to share postbacks with AppsFlyer</td><td><ol><li><span>Go to your Snapchat dashboard.</span></li><li><span>In the <strong>Please share postbacks with this MMP</strong>, select AppsFlyer.</span><p><a href="https://files.readme.io/e142c4bf54019e8587722af4c5cf5aa95ca49a76948f66e3fb584b003aaacdd6-360017154717.png"><img alt="SnapchatSelectAppsFlyer.png" src="https://files.readme.io/e142c4bf54019e8587722af4c5cf5aa95ca49a76948f66e3fb584b003aaacdd6-360017154717.png"/></a></p></li><li>Click <strong>Update</strong>.</li></ol></td></tr></tbody></table>
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Paso
+      </th>
+      <th>
+        Acción
+      </th>
+      <th>
+        Detalles
+      </th>
+    </tr>
+  </thead>
 
-## Additional information
+  <tbody>
+    <tr>
+      <td>
+        1
+      </td>
+      <td>
+        Requisitos previos de la aplicación
+      </td>
+      <td>
+        * Adopta el <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">SDK</Anchor> de AppsFlyer más reciente en tu aplicación.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        2
+      </td>
+      <td>
+        Revisión de la configuración de SKAN
+      </td>
+      <td>
+        Configura y activa la <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">Solución SKAN</Anchor> de AppsFlyer
+
+        **Para ver la configuración de SKAN**:
+
+        1. En AppsFlyer, ve a **Ajustes** > **SKAN Conversion Studio**.
+        2. Haz clic en las opciones (⋮), y verifica que la **medición de SKAN** esté activada.  
+
+           ![skan-settings.png](https://files.readme.io/e4c36e8f5b10a7a4593a8dc776c4c8c43df88577dae8a812303b2d7b3ee37797-4406452401425.png)
+        3. Selecciona el modo de medición que prefieras.  
+           Aprender más sobre <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>.
+        4. Toma nota del conjunto exacto de nombres de eventos. Los necesitas en el siguiente paso.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        3
+      </td>
+      <td>
+        Asignación de eventos in-app
+      </td>
+      <td>
+        Revisa y, si es necesario, realiza cambios en las asignaciones de eventos en la aplicación de Snapchat.
+
+        **Para ver y establecer las asignaciones de eventos in-app**:
+
+        1. En AppsFlyer, ve a **Configuración** > **Integraciones activas**.
+        2. Busca y selecciona **Snapchat**.
+        3. Desde la pestaña **Integración**, si la opción **Activar partner** no está activada, actívala.
+        4. Verifica y, si es necesario, actualiza el ID de la aplicación Snap que se muestra en AppsFlyer con el ID de la aplicación que se muestra en el <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/snap-app-id?language=en_US">panel de control de Snapchat</Anchor>.
+        5. Si no está activo, activa **Postbacks de eventos in-app**.  
+
+           [<Image alt="mceclip0.png" src="https://files.readme.io/7dd29ac3be914e9c1b29761d9be525c8945e3ae298274f95f82ede1f548617f6-360017154137.png" width="432px" />](https://files.readme.io/7dd29ac3be914e9c1b29761d9be525c8945e3ae298274f95f82ede1f548617f6-360017154137.png)
+
+           Verifica que los **nombres de eventos del SDK** de los eventos in-app que configuraste en la medición de SKAN estén asignados a **identificadores de eventos de Partners,** es decir, a los nombres de eventos de Snapchat. Debes asignar los eventos de tipo de medición SKAN seleccionados actualmente o los eventos en tu <Anchor target="_blank" href="/marketers/es/docs/skan-cv-decode-map-your-cv-to-events">asignación de conversión personalizado</Anchor>.   
+           [Práctica recomendada]: El tipo de medición predeterminado es “ingresos”.
+
+           #### Guía de mapeo de eventos in-app
+
+        | Tipo de medición | Requisito de mapeo |
+        | --- | --- |
+        | Personalizado | Asigna los eventos in-app que configuras en Personalizado a los eventos Snap correspondientes.<br /><br />Para reportar los ingresos por postback, debes establecer Enviar ingresos a **Valores e ingresos**.<br /><br />![SendValueandRevenue.png](https://files.readme.io/412c60db2b09d80a989b7546a6819aa1b030732e0ce004b323dc09db1015c238-11331054047377.png)<br /><br />*af\_skad\_revenue* se utiliza para los ingresos generales y se asigna al evento de ingresos de Snap.<br /><br />[Práctica recomendada]: Está bien asignar más de un evento a el evento de ingresos de Snap. |
+        | Ingresos totales | Asigna af\_skad\_revenue a COMPRA |
+        | Conversión | Asigna los eventos de conversión del 1 al 6 a los eventos de Snapchat correspondientes. |
+        | Participación | Asigna el evento de participación que configuraste al evento de Snapchat correspondiente. |
+
+        6. Haz clic en **Guardar integración**.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        4
+      </td>
+      <td>
+        Permitir que Snapchat comparta postbacks con AppsFlyer
+      </td>
+      <td>
+        1. Ve a tu panel de control de Snapchat.
+        2. En **Comparte postbacks con este MMP**, selecciona AppsFlyer.
+
+           [<Image alt="SnapchatSelectAppsFlyer.png" src="https://files.readme.io/e142c4bf54019e8587722af4c5cf5aa95ca49a76948f66e3fb584b003aaacdd6-360017154717.png" width="268px" />](https://files.readme.io/e142c4bf54019e8587722af4c5cf5aa95ca49a76948f66e3fb584b003aaacdd6-360017154717.png)
+        3. Haz clic en **Actualizar**.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+## Información adicional
 
 <div id="discrepancies-guide" />
 
-<Accordion title="Discrepancies guide">
+<Accordion title="Guía de discrepancias">
 
-| Discrepancy | Details |
+| Discrepancia | Detalles |
 | --- | --- |
-| Dashboard filters | **Discrepancy cause**<ul><li>AppsFlyer: The SKAN dashboard contains installs relating to iOS postbacks received.</li><li>Snapchat: By default, the Snapchat dashboard and report includes both SKAN and installs attributed traditionally (IDFA). Filter the Snapchat report to get only SKAN installs.</li></ul>**Solution**<br /><br />Align the Snapchat dashboard filters to display SKAN installs only as indicated in the screenshot that follows.<br /><br />[![SnapchatFilter.png](https://files.readme.io/6e067557aabe899df48454aaf4b7be7f466da55e41b7cd3c68db802e48df7d07-360019782137.png)](https://files.readme.io/6e067557aabe899df48454aaf4b7be7f466da55e41b7cd3c68db802e48df7d07-360019782137.png) |
-| Install date differences | **Discrepancy cause**<br /><br />There can be differences between the AppsFlyer and Snapchat install dates as follows:<ul><li>AppsFlyer: Derives the install date using the following formula: Postback arrival time - 24 hours - measurement window (default 24 hours.) So the default adjustment is 48 hours. All times UTC. <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#skan">SKAN data freshness</Anchor></li><li>Snapchat: Typically uses the iOS postback arrival time as the install date without adjustment.</li></ul>**Solution**<br /><br />Take the above into consideration when comparing results. |
+| Filtros del panel de control | **Causa de discrepancia**<ul><li>AppsFlyer: El panel de SKAN contiene instalaciones relacionadas con los postbacks de iOS recibidos.</li><li>Snapchat: De forma predeterminada, el panel de control y el reporte de Snapchat incluyen tanto SKAN como instalaciones atribuidas tradicionalmente (IDFA). Filtra el reporte de Snapchat para obtener solo instalaciones de SKAN.</li></ul>**Solución**<br /><br />Alinea los filtros del panel de control de Snapchat para mostrar solo las instalaciones de SKAN como se indica en la captura de pantalla que sigue.<br /><br />[![SnapchatFilter.png](https://files.readme.io/6e067557aabe899df48454aaf4b7be7f466da55e41b7cd3c68db802e48df7d07-360019782137.png)](https://files.readme.io/6e067557aabe899df48454aaf4b7be7f466da55e41b7cd3c68db802e48df7d07-360019782137.png) |
+| Diferencias en la fecha de instalación | **Causa de discrepancia**<br /><br />Puede haber diferencias entre las fechas de instalación de AppsFlyer y Snapchat como se indica a continuación:<ul><li>AppsFlyer: Deriva la fecha de instalación utilizando la siguiente fórmula: Hora de llegada del postback: 24 horas Ventana de medición (predeterminado: 24 horas). Entonces el ajuste predeterminado es 48 horas. Todas las horas UTC. <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#skan">Actualización de los datos de SKAN.</Anchor></li><li>Snapchat: Generalmente, utiliza la hora de llegada del postback de iOS como fecha de instalación sin ajustes.</li></ul>**Solución**<br /><br />Tenga en cuenta lo anterior al comparar resultados. |
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Ver también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">AppsFlyer SKAN solution guide</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">Guía de la solución SKAN de AppsFlyer</Anchor>
 
-<div data-zendesk-anchors="skan-interoperability-appsflyer-snapchat=skan-interoperability-appsflyer---snapchat h_01HDNZ3SP97C331D45AP1F8CM7=skan-interoperability-appsflyer---snapchat h_01HDNZ3SP9FZ3AXCNG185DJQY1=enabling-appsflyer-skan-interoperation-with-snapchat h_01HDNZ3SPA742313RAJPYSEHWV=inapp-event-mapping-guide h_01HDNZ3SPASN8P9G5YYQGRFC8F=additional-information h_01HDNZ3SPA99XHVBPXVWB5MN86=discrepancies-guide h_01HDNZ1BW5EBP0JCX84MTYPQ6K=see-also" />
+<div data-zendesk-anchors="skan-interoperability-appsflyer-snapchat=interoperabilidad-de-skan-appsflyer---snapchat h_01HDNZ3SP97C331D45AP1F8CM7=interoperabilidad-de-skan-appsflyer---snapchat enabling-appsflyer-skan-interoperation-with-snapchat=habilitaci%C3%B3n-de-la-interoperabilidad-de-skan-de-appsflyer-con-snapchat h_01HDNZ3SP9FZ3AXCNG185DJQY1=habilitaci%C3%B3n-de-la-interoperabilidad-de-skan-de-appsflyer-con-snapchat inapp-event-mapping-guide=gu%C3%ADa-de-mapeo-de-eventos-in-app h_01HDNZ3SPA742313RAJPYSEHWV=gu%C3%ADa-de-mapeo-de-eventos-in-app additional-information=informaci%C3%B3n-adicional h_01HDNZ3SPASN8P9G5YYQGRFC8F=informaci%C3%B3n-adicional h_01HDNZ3SPA99XHVBPXVWB5MN86=discrepancies-guide h_01HDNZ1BW5EBP0JCX84MTYPQ6K=ver-tambi%C3%A9n" />

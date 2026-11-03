@@ -1,5 +1,5 @@
 ---
-title: GameAnalytics integration with AppsFlyer
+title: Integración de GameAnalytics con AppsFlyer
 metadata:
   keywords:
     - GameAnalytics
@@ -19,127 +19,125 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2015-12-24T11:42:56Z'
-  edited_at: '2026-06-16T11:24:01Z'
+  edited_at: '2026-08-12T11:58:51Z'
   id: 207447143
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207447143-GameAnalytics-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/207447143
 ---
-> **At a glance:** Game Analytics, an AppsFlyer integrated partner, is a powerful free tool that helps developers understand player behavior so they can improve engagement, reduce churn, and perfect monetization. It helps to visualize core gaming KPIs in one convenient view and offers in-game benchmarking to see how your metrics stack up against more than 14,000 similar titles.
+> **Resumen:** Game Analytics, un partner integrado de AppsFlyer, es una herramienta gratuita y potente que ayuda a los desarrolladores a entender el comportamiento de los jugadores para mejorar el engagement, reducir el abandono y perfeccionar la monetización. Ayuda a visualizar los KPI principales de juegos en una sola vista práctica y ofrece benchmarking in-game para ver cómo se comparan tus métricas con las de más de 14.000 títulos similares.
 
-It takes just a few minutes to set up and it’s totally free of charge – no usage caps or hidden premium features! If you’d rather see the platform in action before integrating it with your title, just sign up to see a demo game with pre-populated data.
+Solo se tarda unos minutos en configurarlo y es totalmente gratuito: ¡sin límites de uso ni funciones premium ocultas! Si prefieres ver la plataforma en acción antes de integrarla con tu título, solo tienes que registrarte para ver un juego de demo con datos precargados.
 
-The platform is trusted by more than 40,000 game developers worldwide, from indies to world-renowned studios, and handles over five billion unique events every day across 2+ billion devices. GameAnalytics is widely integrated, with SDKs for every major game engine and platform. You can sign up for free today at https://gameanalytics.com/
+La plataforma cuenta con la confianza de más de 40.000 desarrolladores de juegos de todo el mundo, desde indies hasta estudios de renombre mundial, y procesa más de cinco mil millones de eventos únicos cada día en más de 2+ mil millones de dispositivos. GameAnalytics está ampliamente integrado, con SDK para los principales motores de juego y plataformas. Puedes registrarte gratis hoy mismo en https://gameanalytics.com/
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up GameAnalytics
+## Configuración de GameAnalytics
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de [ponerte en contacto con el partner](#) y abrir una cuenta con ellos. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below:
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación:
 
-The Game Analytics configuration window uses only the ***Integration*** tab.
+La ventana de configuración de Game Analytics solo utiliza la pestaña ***integración***.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### General settings
+### Configuración general
 
-**Game Key**
+**Clave de juego**
 
-Game Analytics connects with AppsFlyer via a unique Game Key. If you don't already have it, you must obtain it from Game Analytics to continue with the integration.
+Game Analytics se conecta con AppsFlyer mediante una clave de juego única. Si aún no la tienes, debes obtenerla de Game Analytics para continuar con la integración.
 
 ![Game_Analytics_msc_new_2.png](https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png)
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Game Analytics user installs. Use this section to define sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a las instalaciones de usuarios de Game Analytics. Usa esta sección para definir el envío de estos postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/6dc59212bec2f68ca6b4c26d77324f204c67fedb1329fea8dda41fcefc832a92-18274501554449.png)
+![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
 
-Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Game Analytics or select **Off**.
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para enviar postbacks de cualquier usuario que descargue la app a Game Analytics, o selecciona **Off**.
 
-### In-app event settings
+### Configuración de eventos in-app
 
 [![](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)
 
-In this section you can map your AppsFlyer events with Game Analytics via postbacks.
+En esta sección puedes asignar tus eventos de AppsFlyer a Game Analytics mediante postbacks.
 
-1. Enter the Game Key again.
-2. Toggle In-App Event Postbacks to ON
-3. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-4. Click **Add Event** to add an SDK Event to the list
-5. Complete the following parameters:
+1. Vuelve a introducir la Game Key.
+2. Activa los postbacks de eventos in-app.
+3. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+4. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+5. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Game Analytics's side.  <br />Obtain the corresponding Event ID from Game Analytics and set it in the text field. |
-| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK integrado con tu aplicación o desde eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento tal como se define del lado de Game Analytics.  <br />Obtén el ID de evento correspondiente de Game Analytics e introdúcelo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: AppsFlyer envía al partner todos los parámetros del evento in-app enriquecido, excepto el parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el valor de ingresos (si existe en el evento). |
 
-Click **Save**.
+Haga clic en **Guardar**.
 
-Once this configuration is saved, AppsFlyer begins sending the following data to Game Analytics for every non-organic install:
+Una vez guardada esta configuración, AppsFlyer empieza a enviar los siguientes datos a Game Analytics para cada instalación no orgánica:
 
 * game\_key
-* Media Source
-* Campaign name
+* Fuente de medios
+* Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for Game Analytics.
+Los enlaces de atribución no están disponibles para Game Analytics.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for Game Analytics.
+Los permisos no están disponibles para Game Analytics.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H9FK7ZH27GNEHRZ5KKVH5CHY=important h_01H9FK7ZH24E9AD7Z0J94NS0JJ=setting-up-gameanalytics h_01H9FK7ZH3VPBE965Z8MCVXSMQ=integration-tab h_01H9FK7ZH3D2H5AWW0DMBQP9R3=activate-partner h_01H9FK7ZH3E32TT8EGAYWPRWBE=general-settings h_01H9FK7ZH3P0HSQGR2409BFA2F=default-postbacks inapp-event-settings=in-app-event-settings h_01H9FK7ZH366RDSY36QVVWJMJN=in-app-event-settings h_01H9FK7ZH39J4Q7W5XSFZAEZWH=attribution-link-tab h_01H9FK7ZH37FQ6RN80E90TH4K9=cost-tab h_01H9FK7ZH3GE3G69AA03KJK499=ad-revenue-tab h_01H9FK7ZH3RQJQPAYSZBR208H7=permissions-tab" />
+<div data-zendesk-anchors="h_01H9FK7ZH27GNEHRZ5KKVH5CHY=importante setting-up-gameanalytics=configuraci%C3%B3n-de-gameanalytics h_01H9FK7ZH24E9AD7Z0J94NS0JJ=configuraci%C3%B3n-de-gameanalytics h_01H9FK7ZH3VPBE965Z8MCVXSMQ=integration-tab activate-partner=activar-socio h_01H9FK7ZH3D2H5AWW0DMBQP9R3=activar-socio general-settings=configuraci%C3%B3n-general h_01H9FK7ZH3E32TT8EGAYWPRWBE=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01H9FK7ZH3P0HSQGR2409BFA2F=postbacks-predeterminados inapp-event-settings=configuraci%C3%B3n-de-eventos-in-app h_01H9FK7ZH366RDSY36QVVWJMJN=configuraci%C3%B3n-de-eventos-in-app h_01H9FK7ZH39J4Q7W5XSFZAEZWH=attribution-link-tab h_01H9FK7ZH37FQ6RN80E90TH4K9=cost-tab h_01H9FK7ZH3GE3G69AA03KJK499=ad-revenue-tab h_01H9FK7ZH3RQJQPAYSZBR208H7=permissions-tab" />

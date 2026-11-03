@@ -1,5 +1,5 @@
 ---
-title: InMobi integration with AppsFlyer
+title: Integración de inMobi con AppsFlyer
 metadata:
   keywords:
     - Campaign
@@ -17,221 +17,220 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2014-11-20T10:29:22Z'
-  edited_at: '2026-06-16T12:04:51Z'
+  edited_at: '2026-08-12T12:13:55Z'
   id: 207033896
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207033896-InMobi-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/207033896
 ---
-> **At a glance:** InMobi, an AppsFlyer integrated ad network partner, enables consumers to discover new products and services through contextual and curated recommendations on mobile devices. In addition to click-based mobile attribution, Inmobi also offers cost, retargeting and view-through attribution, which you can record with AppsFlyer.
+> **De un vistazo:** inMobi, un partner de ad network integrado con AppsFlyer, permite a los consumidores descubrir nuevos productos y servicios a través de recomendaciones contextuales y seleccionadas en dispositivos móviles. Además de la atribución móvil basada en clics, inMobi también ofrece atribución de costo, retargeting y view-through, que puedes registrar con AppsFlyer.
 
 <Image alt="inmobi_icon.png" src="https://files.readme.io/cbe0e88492041fc8e1781b397b67a3c8c3a09591974f2cf4fa145a18ca9e6a8d-10602685724817.png" width="128px" />
 
-## Setting up Inmobi
+## Configuración de inMobi
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con el partner.  
+    Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación. Para ver una descripción detallada del Encabezado de la ventana de configuración de partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-Inmobi's configuration window includes 4 active tabs: **Integration, Attribution link, Cost**, and **Permissions**. Click on the following items to read about the tab setup.
+La ventana de configuración de inMobi incluye 4 pestañas activas: **Integración, Enlace de atribución, Costo** y **Permisos**. Haz clic en los siguientes elementos para leer sobre la configuración de las pestañas.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
+> * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio para todos los partners**.
+> * Todos los demás pasos son descriptivos u **opcionales**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partners
+### Activar los partners
 
-On the **first visit** here, you will need to toggle ON the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita**, tendrás que activar el botón **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> As an ALL-Installs network, Inmobi prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to InMobi.
+> Como red de TODAS las instalaciones, inMobi prefiere recibir postbacks de todas las nuevas instalaciones de tu app desde CUALQUIER fuente, incluida la orgánica. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a inMobi.
 
-### General settings
+### Configuración general
 
 **gpm\_ID**
 
-Inmobi connects with AppsFlyer via a unique network ID. If you don't already have the Network ID, you must obtain it from Inmobi to continue with the integration.
+InMobi se conecta con AppsFlyer a través de un ID de red único. Si aún no tienes el ID de red, debes obtenerlo de inMobi para continuar con la integración.
 
 ![Inmobi_msc_new_3.png](https://files.readme.io/9c2efaed833211582a33b3a2bbd7d07336bc78d6e2d4e3a7645b5ca14be2fd73-360001865845.png)
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Toggle this to ON if you want to attribute view-through installs from Inmobi. The view-through lookback slider is available on the attribution link tab (described below).
+Activa esta opción si quieres atribuir las instalaciones view-through de inMobi. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to Inmobi following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a inMobi tras las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to InMobi.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to InMobi.
+Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a inMobi.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para tener toda tu base de usuarios disponible para ser reportada a inMobi.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section you can map your AppsFlyer events with InMobi via postbacks.
+En esta sección puedes asignar tus eventos de AppsFlyer a inMobi mediante postbacks.
 
-1. Set the Inmobi gpm\_id again here.
-2. Toggle In-App Event Postbacks to ON.
-3. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner.  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner.
-4. Click **Add Event** to add an SDK Event to the list.
-5. Fill in the following parameters:
+1. Vuelve a configurar aquí el gpm\_id de inMobi.
+2. Activa los Postbacks de eventos in-app con el selector.
+3. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **solo** de usuarios atribuidos a este partner.  
+   **- Eventos atribuidos a cualquier partner u orgánico** para tener toda tu base de usuarios disponible para ser reportada al partner.
+4. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+5. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event, as defined on InMobi's side.  <br />Obtain the corresponding Event ID from InMobi and set in the text field. |
-| **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos server-to-server.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento, según lo define inMobi.  <br />Obtén el ID de evento correspondiente de inMobi e introdúcelo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Cuando está marcada**: se envían todos los parámetros incluyendo el valor de ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to Inmobi for attributing Inmobi's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links. [![](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)
+En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a inMobi para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de inMobi. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner. [![](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)
 
 [![](https://files.readme.io/03371cdc64826e77cee3bd0adb90280aa59ebddd34ec85d8946ae9646ce86ce8-360001866409.png)](https://files.readme.io/03371cdc64826e77cee3bd0adb90280aa59ebddd34ec85d8946ae9646ce86ce8-360001866409.png)
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with InMobi.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific InMobi campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Inmobi.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña** - añádela para comparar distintas campañas en funcionamiento con inMobi.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios** - define nombres de conjuntos de anuncios para comparar distintos conjuntos de anuncios dentro de campañas específicas de inMobi.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio** - define nombres de anuncios para comparar distintos creativos dentro de conjuntos de anuncios específicos de campañas específicas de inMobi.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** e **ID de subsitio** - configura el parámetro de ID de sitio para atribuir instalaciones a publishers específicos. Si existen muchos publishers, te recomendamos limitar la cantidad de IDs de sitio usados y utilizar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">superar las limitaciones de ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor** - utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+  **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 [![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
-### Retargeting settings
+### Configuraciones de retargeting
 
-When enabled, AppsFlyer recognizes a link as a <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting</Anchor> attribution link, rather than a user acquisition link, by adding the `&is_retargeting=true` to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution.  
-**Attribution link parameter:** is\_retargeting.
+Cuando esta opción está habilitada, AppsFlyer reconoce un enlace como un enlace de atribución de <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">retargeting</Anchor>, en lugar de un enlace de adquisición de usuarios, al añadir `&is_retargeting=true` al enlace de registro de clics. Ten en cuenta que actualmente el retargeting solo es compatible con la atribución por clics y no con la atribución view-through.  
+**Parámetro del enlace de atribución:** is\_retargeting.
 
-The following setup below is displayed when retargeting is enabled.
+Cuando la opción de retargeting está habilitada, se muestra la siguiente configuración.
 
 ![msc_new_7.png](https://files.readme.io/b90bbd6e3bea9dd862808343896b005071b7d9e564d31039c188c3ebf8e81077-360002254489.png)
 
-1. Standard Link vs. OneLink
+1. Enlace estándar vs. OneLink
 
-Select **standard attribution link** option if:
+Selecciona la opción **enlace de atribución estándar** si:
 
-* You don't need to deep link with the URL or
-* Plan to use only <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">URI schemes</Anchor> for deep linking
+* No necesitas un enlace profundo con la URL o
+* Planeas utilizar solo <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">esquemas de URI</Anchor> para deep linking
 
-select **Use OneLink** for:
+selecciona **Use OneLink** for:
 
-* Using a single link for both Android and iOS apps or
-* Deep linking using Universal or app links
+* Utilizar un solo enlace para aplicaciones de Android y iOS, o
+* Establecer enlaces profundos empleando enlaces universales o de aplicaciones.
 
-Note that selecting OneLink changes the click recording link from app specific to a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink URL</Anchor>.
+Ten en cuenta que seleccionar OneLink cambia el enlace de registro de clics de un enlace específico de la aplicación a una <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">URL de OneLink</Anchor>.
 
-2. Deep Link URL
+2. URL de deep link
 
-Use this field if the link is meant to deep link users to any specific activity within your app.  
-**Attribution link parameter:** af\_dp  
-You can find more information about AppsFlyer's <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking solution in this guide.</Anchor>
+Utiliza este campo si el enlace está pensado para hacer Deep Linking de los usuarios a cualquier actividad específica dentro de tu aplicación.  
+**Parámetro de enlace de atribución:** af\_dp  
+Puedes encontrar más información sobre la <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">solución de Deep Linking de AppsFlyer en esta guía.</Anchor>
 
-3. Re-engagement Window
+3. Ventana de recaptación
 
-Set the time period following the re-engagement, where the user's in-app events are attributed to the retargeting media source. You can set the value in days (1-90), hours (up to 23), or even lifetime.
+Defina el plazo posterior al re-engagement, durante el cual los eventos in-app del usuario se atribuyen a la fuente de medios de redireccionamiento. Puede establecer el valor en días (1-90), horas (hasta 23) o incluso durante toda la vida.
 
-**Attribution link parameter:** af\_reengagement\_window
+**Parámetro de enlace de atribución:** af\_reengagement\_window
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Inmobi.
+Este control deslizante te permite establecer el **tiempo máximo entre el clic y la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a inMobi.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
 
 [![](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to Inmobi to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a inMobi para que se active cuando los clientes potenciales hagan clic en el anuncio correspondiente.
 
-### View-through attribution lookback window
+### Ventana de lookback de atribución view-through
 
-This slider allows you to set the **maximum time from impression to install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to Inmobi, providing there was no other relevant ad click.
+Este control deslizante te permite establecer el **tiempo máximo desde la impresión hasta la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de esta ventana de lookback, tras la impresión de un anuncio, se atribuyen a inMobi, siempre que no haya habido ningún otro clic relevante en un anuncio.
 
-You can customize this value to 1-23 hours or 1-7 days.
+Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 
-**Attribution link parameter:** af\_viewthrough\_lookback
+**Parámetro del enlace de atribución:** af\_viewthrough\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
+Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución view-through aquí</Anchor>.
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
 
-### Impressions attribution link
+### Enlace de atribución de impresiones
 
-The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to InMobi to be activated when a corresponding ad is watched, usually for 1 second or more.
+El enlace de atribución de impresiones contiene datos similares a los del enlace de registro de clics, además de una ventana de lookback diferente. Envíalo a inMobi para que se active cuando se vea el anuncio correspondiente, normalmente durante 1 segundo o más.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de redes de publicidad</Anchor> para obtener detalles completos sobre las dimensiones, métricas y funciones admitidas. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el panel de control de estado de la integración de costos (e ingresos por publicidad) o en el panel de control de la red de publicidad individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue data is not supported by this partner.
+Este partner no admite ingresos por publicidad.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Select which <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions to grant</Anchor> InMobi to access your data and perform various actions.
+Selecciona qué <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos otorgar</Anchor> a inMobi para acceder a tus datos y realizar diversas acciones.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> When the integration is <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">deactivated</Anchor> while the Permissions toggle is still turned on, permissions remain granted.
+> Cuando la integración esté <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">desactivada</Anchor> mientras el interruptor de Permisos aún está activado, los permisos permanecen concedidos.
 
 </Accordion>
 
-<div data-zendesk-anchors="setting-up-glispa=setting-up-inmobi h_01HKA0TGE08PJDBQHFER5ZZ785=setting-up-inmobi h_01HHVXZ7FSGDRCECE93ZF69VMS=tip h_01HHVXZ7FSZ7W855TSN5TSPD0G=integration-tab h_01HHVXZ7FSJ0PS5KQ0YZHVSFKF=activate-partners h_01HHVXZ7FSM5PT4VJRGVWDBRDK=note h_01HHVXZ7FSDF06G1848W0YH8W6=general-settings h_01HHVXZ7FS0DEZPEEH7D68SH0B=default-postbacks inapp-events-settings=in-app-events-settings h_01HHVXZ7FS47Y4T3KDR732WCE6=in-app-events-settings h_01HHVXZ7FSX2TJC13GT3TGR7ZK=attribution-link-tab h_01HHVXZ7FSCE4NP1XC0ZJ81858=attribution-link-parameters h_01HHVXZ7FSAVKE25TSS98RMK8V=retargeting-settings clickthrough-attribution=click-through-attribution h_01HHVXZ7FTE8EZYBA4HS45MFAR=click-through-attribution h_01HHVXZ7FTP962PWNMEEDB31H5=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HHVXZ7FT8HVSEXB5YWABPXNA=view-through-attribution-lookback-window h_01HHVXZ7FT7V6M8VC69EYRK700=impressions-attribution-link h_01HHVXZ7FT9W1RN6P06JE53S7X=cost-tab h_01HHVXZ7FTGSKZCB57RT9GPYC9=ad-revenue-tab h_01HHVY4WHSM3B33KYACR9DJ5ZW=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=note-1" />
+<div data-zendesk-anchors="setting-up-glispa=configuraci%C3%B3n-de-inmobi h_01HKA0TGE08PJDBQHFER5ZZ785=configuraci%C3%B3n-de-inmobi h_01HHVXZ7FSGDRCECE93ZF69VMS=consejo h_01HHVXZ7FSZ7W855TSN5TSPD0G=integration-tab activate-partners=activar-los-partners h_01HHVXZ7FSJ0PS5KQ0YZHVSFKF=activar-los-partners h_01HHVXZ7FSM5PT4VJRGVWDBRDK=advertencia general-settings=configuraci%C3%B3n-general h_01HHVXZ7FSDF06G1848W0YH8W6=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HHVXZ7FS0DEZPEEH7D68SH0B=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HHVXZ7FS47Y4T3KDR732WCE6=configuraci%C3%B3n-de-eventos-in-app h_01HHVXZ7FSX2TJC13GT3TGR7ZK=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HHVXZ7FSCE4NP1XC0ZJ81858=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n retargeting-settings=configuraciones-de-retargeting h_01HHVXZ7FSAVKE25TSS98RMK8V=configuraciones-de-retargeting clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HHVXZ7FTE8EZYBA4HS45MFAR=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HHVXZ7FTP962PWNMEEDB31H5=haz-clic-en-el-enlace-de-atribuci%C3%B3n viewthrough-attribution-lookback-window=ventana-de-lookback-de-atribuci%C3%B3n-view-through h_01HHVXZ7FT8HVSEXB5YWABPXNA=ventana-de-lookback-de-atribuci%C3%B3n-view-through impressions-attribution-link=enlace-de-atribuci%C3%B3n-de-impresiones h_01HHVXZ7FT7V6M8VC69EYRK700=enlace-de-atribuci%C3%B3n-de-impresiones h_01HHVXZ7FT9W1RN6P06JE53S7X=cost-tab h_01HHVXZ7FTGSKZCB57RT9GPYC9=ad-revenue-tab h_01HHVY4WHSM3B33KYACR9DJ5ZW=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=nota" />

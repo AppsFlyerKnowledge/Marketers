@@ -1,5 +1,5 @@
 ---
-title: Measure preload campaigns with Google Play Install
+title: Mide las campañas de precarga con Google Play Install
 metadata:
   keywords:
     - Advertisers
@@ -13,101 +13,100 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-07-25T11:31:06Z'
-  edited_at: '2025-10-31T14:48:44Z'
+  edited_at: '2026-08-12T11:57:37Z'
   id: 4404557237649
-  locale: en-us
+  locale: es
   section: Attribution scenarios
   section_id: 6551328497041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4404557237649-Measure-preload-campaigns-with-Google-Play-Install
+  url: https://support.appsflyer.com/hc/es/articles/4404557237649
 ---
-> **At a glance:** AppsFlyer uses Google Play Auto Install (PAI) to attribute installs to preload campaigns, where marketers contract with mobile carriers, and app discovery partners to preload their app at the time the device is first turned on by the user. **Note**: This attribution method differs from <Anchor target="_blank" href="/marketers/docs/appsflyer-factory-preinstall-using-manifest-android">APK preinstall attribution</Anchor>.
+> **De un vistazo:** AppsFlyer usa la instalación automática (PAI) de Google Play para atribuir las instalaciones a las campañas de precarga, en las que los marketers contratan a los operadores de telefonía móvil y a los partners de detección de aplicaciones para que precarguen su aplicación en el momento en que el usuario enciende el dispositivo por primera vez. **Nota**: Este método de atribución difiere de la atribución <Anchor target="_blank" href="/marketers/es/docs/appsflyer-factory-preinstall-using-manifest-android">previa a la instalación de APK</Anchor>.
 
-## PAI preload attribution
+## Atribución de precarga de PAI
 
-In preload campaigns, Original Device Manufacturers (OEMs), mobile carriers, and app discovery partners preload apps on devices that get downloaded upon first device activation.
+En las campañas de precarga, los fabricantes de dispositivos originales (OEM), los operadores de telefonía móvil y los partners de detección de aplicaciones precargan las aplicaciones en los dispositivos que se descargan al activarse por primera vez.
 
-Preload campaigns allow advertisers to reach a potentially large audience without running online campaigns.
+Las campañas de precarga permiten a los anunciantes llegar a una audiencia potencialmente grande sin ejecutar campañas en línea.
 
-Google Play Auto Install (PAI) (one of three preload attribution methods) provides marketers with an accurate and privacy-preserving mechanism to measuring the performance of preload campaigns. This method provides marketers with deterministic attribution results and simultaneously ensures that user privacy is preserved since attribution is performed via referrer matching with a Google Play referrer generated independently of the device and user identifiers.
+La instalación automática (PAI) de Google Play (1 de los 3 métodos de atribución de precarga) ofrece a los marketers un mecanismo preciso y que preserva la privacidad para medir el rendimiento de las campañas de precarga. Este método proporciona a los marketers resultados de atribución deterministas, garantizando al mismo tiempo que se mantenga la privacidad del usuario, ya que la atribución se realiza a través de la coincidencia del referente con un referente generado independientemente del dispositivo y los identificadores de usuario.
 
-AppsFlyer gives the highest priority to preload attribution. This means that if a user engages with other campaigns before opening the app for the first time, the preload campaign is still awarded the attribution. Other engagements are regarded as assisted installs.
+AppsFlyer da la mayor prioridad a la atribución de precarga. Esto significa que si un usuario participa en otras campañas antes de abrir la aplicación por primera vez, la campaña de precarga recibe la atribución. Otros engagements se consideran instalaciones asistidas.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The Preload Equal Attribution Priority setting does not apply to Google PAI.
+> La configuración de prioridad de atribución igual para precarga no se aplica a Google PAI.
 
-### Flow
+### Flujo
 
-1. A new device is activated for the first time, and predefined apps are automatically installed on it from Google Play according to rules set by the preload partner.
-2. The user launches a preloaded app for the first time.
-3. The AppsFlyer SDK queries the Google Play referrer API.
-4. AppsFlyer attributes are based on the data retrieved.
+1. Un dispositivo nuevo se activa por primera vez y las aplicaciones predefinidas se instalan automáticamente en él desde Google Play de acuerdo con las reglas establecidas por el partner de precarga.
+2. El usuario lanza una aplicación precargada por primera vez.
+3. El SDK de AppsFlyer consulta la API de referencia de Google Play.
+4. Los atributos de AppsFlyer se basan en los datos recuperados.
 
 ![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
 
-### Data availability
+### Disponibilidad de datos
 
-Google Play Auto Install (PAI) preload performance data is available in:
+Los datos de rendimiento de precarga de la instalación automática de Google Play (PAI) están disponibles en:
 
-* The Overview dashboard and in aggregate reports, aggregated at the preload partner (media source) and campaign levels.
-* Raw data reports.
+* El panel de resumen general y los reportes agregados a nivel de partner de precarga (fuente de medios) y de campaña.
+* Reportes de raw data
 
-Raw data includes the following fields:
+Los raw data incluyen los siguientes campos:
 
-* Media\_source = Partner ID
+* media\_source = ID de partner
 * Match\_type = preload\_pai
-* Campaign\_name = preload campaign by `<preloadpartner ID>`
+* Campaign\_name = precargar la campaña por `<preloadpartner ID>`
 
-### Set up Google Play Auto Install (PAI) preload attribution
+### Configurar la atribución de precarga por instalación automática (PAI) de Google Play
 
-**To set up PAI preload attribution:**
+**Para configurar la atribución de precarga de PAI:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.
-2. Select the preload partner.
-3. Turn on **Preload attribution**.
-4. Set the **Preload lookback window** duration. 
+1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones activas**.
+2. Selecciona el partner de precarga.
+3. Activa la **Atribución de precarga**.
+4. **Establece la duración de la ventana retrospectiva de precarga**.
 
-   > 📘 **Note**
+   > 📘 **Nota:**
    >
-   > Google stores referrer data for up to 90 days. Set the PAI lookback window to 90 days or less. Although the UI allows up to 180 days, data beyond 90 days isn’t available from Google.
+   > Google almacena los datos del referente durante un máximo de 90 días. Configura la ventana de lookback de PAI en 90 días o menos. Aunque la interfaz de usuario permite hasta 180 días, Google no ofrece datos de más de 90 días.
 
-5. Click **Save Integration**.
-6. Let the preload partner know that you are ready to attribute their campaigns.
+5. Haz clic en **Guardar integración**.
+6. Informa al partner de precarga de que estás listo para atribuir sus campañas.
 
-### Partners supporting Google Play Auto Install (PAI) preload campaigns
+### Partners que apoyan las campañas de precarga de instalación automática (PAI) de Google Play
 
-<table><thead><tr><th rowspan="2">Partner</th><th rowspan="2">PID</th></tr></thead><tbody><tr><td><p>Xiaomi</p></td><td><span>xiaomipai_int</span></td></tr><tr><td><p>Transsion</p></td><td><span>shalltrypai_int</span></td></tr><tr><td><p>Oppo</p></td><td><span>oppopaipreinstall_int</span></td></tr><tr><td><p>Vivo</p></td><td><span>vivootapreload_int</span></td></tr><tr><td><p>TCL</p></td><td><span>tclpai_int</span></td></tr><tr><td><p>Motorola</p></td><td><span>motorola_int</span></td></tr><tr><td><p>MITV</p></td><td><span>mitvpai_int</span></td></tr><tr><td><p>ZTE</p></td><td><span>ztepai_int</span></td></tr><tr><td><p>Lenovotab</p></td><td><span>lenovotabpai4p_int</span></td></tr><tr><td><p>KDDI Pre-Install</p></td><td><span>kddipai_int</span></td></tr></tbody></table>
+<table><thead><tr><th rowspan="2">Fuente de medios</th><th rowspan="2">PID no integrados.</th></tr></thead><tbody><tr><td><p>Xiaomi</p></td><td><span>xiaomipai_int</span></td></tr><tr><td><p>Transsion</p></td><td><span>shalltrypai_int</span></td></tr><tr><td><p>Oppo</p></td><td><span>oppopaipreinstall_int</span></td></tr><tr><td><p>Vivo</p></td><td><span>vivootapreload_int</span></td></tr><tr><td><p>TCL</p></td><td><span>tclpai_int</span></td></tr><tr><td><p>Motorola</p></td><td><span>motorola_int</span></td></tr><tr><td><p>MITV</p></td><td><span>mitvpai_int</span></td></tr><tr><td><p>ZTE</p></td><td><span>ztepai_int</span></td></tr><tr><td><p>Lenovotab</p></td><td><span>lenovotabpai4p_int</span></td></tr><tr><td><p>Preinstalación de KDDI</p></td><td><span>kddipai_int</span></td></tr></tbody></table>
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Note: Agencies can't enable preload campaigns for their clients.
+> Las agencias no pueden habilitar campañas de precarga para sus clientes.
 
-## Postbacks for preload partners
+## Postbacks para partners de precarga
 
-As part of their integration with AppsFlyer, preload partners define the content and endpoints of postbacks sent to them by AppsFlyer.
+Como parte de su integración con AppsFlyer, los partners de precarga definen el contenido y los puntos finales de los postbacks que AppsFlyer les envía.
 
-When included in a postback, macros contain user-relevant data. Supported macros are listed in the following table:
+Cuando se incluyen en un postback, las macros contienen datos relevantes para el usuario. Las macros admitidas se enumeran en la siguiente tabla:
 
-* **Source**: Indicates where the data originates from:
-  * **SDK**: AppsFlyer SDK embedded in the app or server-to-server API.
-  * **AppsFlyer**: After processing by AppsFlyer.
+* **Fuente**: indica de dónde provienen los datos:
+  * **SDK**: el SDK de AppsFlyer incorporado en la aplicación o la API de servidor a servidor
+  * **AppsFlyer**: tras el procesamiento por parte de AppsFlyer.
 
-| Postback macro for preload partners (parameter name) | Source | Description |
+| Macro postbacks para partners de precarga (nombre del parámetro) | Fuente | Descripción |
 | --- | --- | --- |
-| app\_name | SDK | App name set by the advertiser |
-| country\_code | AppsFlyer | Country Code using ISO 3166 (alpha-2) Example: US, CN. |
-| install\_time | SDK | Install timestamp |
-| language | SDK | Language (locale) reported by the device and set by the device OS. |
-| app\_id | SDK | Unique app identifier in Appsflyer |
-| app\_version | SDK | App version set by the app developer in the app code |
-| device\_type | SDK | The commercial model name of the device. Example: SM-GM284 or iPhone7 |
-| os\_version | SDK | Device operating system version |
+| nombre\_aplicación | SDK | Nombre de la aplicación configurado por el anunciante |
+| código\_de\_país | AppsFlyer | Código de país con ISO 3166 (alfa-2) Ejemplo: US, CN |
+| hora\_de\_instalación | SDK | Marca de tiempo de instalación |
+| Indicador de atribución AF | SDK | Idioma (configuración regional) reportado por el dispositivo y establecido por el sistema operativo del dispositivo. |
+| id\_aplicación | SDK | Identificador único de aplicación en Appsflyer. |
+| version\_app | SDK | Versión de la aplicación establecida por el desarrollador de la aplicación en el código de la aplicación |
+| tipo\_de\_dispositivo | SDK | Nombre del modelo comercial del dispositivo. Ejemplo: SM-GM284 o iPhone7 |
+| versión\_sistema\_operativo | SDK | Versión del sistema operativo del dispositivo |
 
-#### Postback example
+#### Ejemplo de postback
 
 ```http
 http://YourCompanyDomain.com?pid=(preinstall_partner)&app_name=(app-name)&app_id=(app-id)&install_time=(install-unix-ts)
 ```
 
-<div data-zendesk-anchors="h_01HEJG4FHSGJDZ77Y281F7SG4R=pai-preload-attribution h_01K8XBQ3YKJ8KBMPMAAMBZP25E=note pai-preload-attribution-flow=flow h_01HEJG4FHSF8X1TEMMNJBYP71Z=flow campaign-performance-data-availability=data-availability h_01HEJG4FHSCMPJM5TRNSPNDHVN=data-availability run-preload-referrer-campaigns=set-up-google-play-auto-install-pai-preload-attribution h_01HEJG4FHS7E5JZT2BBYG2BNEK=set-up-google-play-auto-install-pai-preload-attribution h_01K8XBJ9EJ38ST3KAFF879ZQ1H=note-1 partners-supporting-preload-referrer-campaigns=partners-supporting-google-play-auto-install-pai-preload-campaigns h_01HEJG4FHSNEGR7R9VCSDT9TSZ=partners-supporting-google-play-auto-install-pai-preload-campaigns h_01K8XBVZJGG59K3XJ8R346X9FH=note-2 h_01HEJG4FHSKD7DY6W7W65YBMGN=postbacks-for-preload-partners preload-postback-example=postback-example h_01HEJG4FHSBFB456Z752HFC8KN=postback-example" />
+<div data-zendesk-anchors="pai-preload-attribution=atribuci%C3%B3n-de-precarga-de-pai h_01HEJG4FHSGJDZ77Y281F7SG4R=atribuci%C3%B3n-de-precarga-de-pai h_01K8XBQ3YKJ8KBMPMAAMBZP25E=nota pai-preload-attribution-flow=flujo h_01HEJG4FHSF8X1TEMMNJBYP71Z=flujo campaign-performance-data-availability=disponibilidad-de-datos h_01HEJG4FHSCMPJM5TRNSPNDHVN=disponibilidad-de-datos run-preload-referrer-campaigns=configurar-la-atribuci%C3%B3n-de-precarga-por-instalaci%C3%B3n-autom%C3%A1tica-pai-de-google-play h_01HEJG4FHS7E5JZT2BBYG2BNEK=configurar-la-atribuci%C3%B3n-de-precarga-por-instalaci%C3%B3n-autom%C3%A1tica-pai-de-google-play h_01K8XBJ9EJ38ST3KAFF879ZQ1H=nota-1 partners-supporting-preload-referrer-campaigns=partners-que-apoyan-las-campa%C3%B1as-de-precarga-de-instalaci%C3%B3n-autom%C3%A1tica-pai-de-google-play h_01HEJG4FHSNEGR7R9VCSDT9TSZ=partners-que-apoyan-las-campa%C3%B1as-de-precarga-de-instalaci%C3%B3n-autom%C3%A1tica-pai-de-google-play h_01K8XBVZJGG59K3XJ8R346X9FH=nota-2 postbacks-for-preload-partners=postbacks-para-partners-de-precarga h_01HEJG4FHSKD7DY6W7W65YBMGN=postbacks-para-partners-de-precarga preload-postback-example=ejemplo-de-postback h_01HEJG4FHSBFB456Z752HFC8KN=ejemplo-de-postback" />

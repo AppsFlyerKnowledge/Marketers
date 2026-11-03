@@ -1,5 +1,5 @@
 ---
-title: Data Clean Room—Creating Attribution data reports
+title: 'Data Clean Room: creación de reportes de datos de atribución'
 metadata:
   keywords:
     - Premium Feature
@@ -13,361 +13,361 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2022-09-11T10:42:43Z'
-  edited_at: '2025-02-23T15:42:47Z'
+  edited_at: '2026-08-12T11:52:32Z'
   id: 9035047905297
-  locale: en-us
+  locale: es
   section: Data Clean Room
   section_id: 4591191779217
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/9035047905297-Data-Clean-Room-Creating-Attribution-data-reports
+  url: https://support.appsflyer.com/hc/es/articles/9035047905297
 ---
-> **At a glance:** Create Attribution data reports to match user-level data from installs/retargeting events with data from your systems.
+> **En resumen:** crea reportes de datos de atribución para hacer coincidir los datos a nivel de usuario de los eventos de instalación o retargeting con los datos de tus sistemas.
 
-## Creating an Attribution data report
+## Creación de un reporte de datos de atribución
 
-**To create an Attribution data report, follow the steps detailed in the tabs below.**
+**Para crear un reporte de datos de atribución, sigue los pasos que se detallan en las pestañas siguientes.**
 
-**Note:** These steps are divided into tabs for ease of reading. All steps must be completed in order to create the report.
+**Nota:** Estos pasos se dividen en pestañas para facilitar la lectura. Se deben completar todos los pasos para crear el reporte.
 
 <div id="perform-preliminary-steps" />
 
-<Accordion title="Perform preliminary steps">
+<Accordion title="Realizar los pasos preliminares">
 
-1. Go to the **Reports** tab of the **DCR.**
-2. Click the **+ New report** button.
-3. Select **Attribution data** as the type of source data, then click **Next** in the bottom right corner of the screen.
-4. Enter a name for the report.
-   * This can be any name that will help you identify the report in the DCR platform.
-   * **Important!** Ensure that the report name is different from all other reports in your account or you will not be able to [save the report](/docs/data-clean-room-creating-attribution-data-reports#set-the-report-destination-and-save-the-report).
-   * Report name requirements:
-     * Length: 2-80 characters
-     * Valid characters:
-       * letters **(A-Z, a-z)**
-       * numbers **(0-9)**, *cannot be the first character of a name*
-       * a hyphen (-), *cannot be the first character of a name*
-     * Invalid characters:
-       * spaces
-       * all other symbols or special characters
+1. Ve a la pestaña **Reportes** de **DCR**.
+2. Haz clic en el botón **+ Nuevo reporte**.
+3. Selecciona **Datos de atribución** como tipo de datos de origen y, a continuación, haz clic en **Siguiente** en la esquina inferior derecha de la pantalla.
+4. Introduce un nombre para el reporte.
+   * Puede ser cualquier nombre que te ayude a identificar el reporte en la plataforma DCR.
+   * **Nota:** **Importante:** Asegúrate de que el nombre del reporte sea diferente de todos los demás reportes de tu cuenta, de lo contrario no podrás [guardar el reporte](/docs/data-clean-room-creating-attribution-data-reports#set-the-report-destination-and-save-the-report).
+   * Requisitos del nombre del reporte:
+     * Longitud: de 2 a 80 caracteres
+     * Caracteres válidos:
+       * letras **(A-Z, a-z)**
+       * números **(0-9)**, *no pueden ser el primer carácter de un nombre*
+       * un guión (-), *no puede ser el primer carácter de un nombre*
+     * Caracteres inválidos:
+       * espacios
+       * todos los demás símbolos o caracteres especiales
 
 </Accordion>
 
 <div id="select-sources" />
 
-<Accordion title="Select sources">
+<Accordion title="Seleccionar las fuentes">
 
-Specify the data to be used for the report:
+Especifica los datos que se van a utilizar para el reporte:
 
-#### **Attribution data sources**
+#### **Datos de atribución:**
 
-* **Apps:** Select one or more of the apps in your AppsFlyer account.
-* **Attribution types:** Select one or more types of attribution data to be used for the report:
+* **Aplicaciones:** selecciona una o más de las aplicaciones en tu cuenta de AppsFlyer.
+* **Tipos de atribución:** Selecciona uno o más tipos de datos de atribución para usarlos en el reporte:
 
-| Installs | An install is recorded when a user downloads, installs, and launches a mobile app. |
+| Instalaciones | Una instalación se registra cuando un usuario descarga, instala e inicia una aplicación móvil. |
 | --- | --- |
-| Re-installs | A re-install is recorded when a user installs an app, then uninstalls and re-installs it during the re-attribution window.<ul><li>**Note:** The length of the re-attribution window is set in Settings > App Settings.</li></ul> |
-| Re-engagements | A re-engagement is recorded when an inactive user of a specific app engages with a retargeting campaign for the app and subsequently launches it. |
-| Re-attributions | A re-attribution is recorded when a former user of a specific app (who had uninstalled it) engages with a retargeting campaign for the app and subsequently reinstalls it. |
-| Organic installs | Organic installs are those not attributed to a specific media source.<ul><li>**Note:** Including organic installs in your report can significantly increase the number of scanned rows.</li></ul> |
+| Reinstalaciones | Una reinstalación se registra cuando un usuario instala una aplicación, luego la desinstala y la vuelve a instalar durante la ventana de reatribución.<ul><li>**Nota:** La duración de la ventana de reatribución se establece en Configuración > Configuración de la aplicación.</li></ul> |
+| Reengagements | Un reengagement se registra cuando un usuario inactivo de una aplicación específica interactúa con una campaña de retargeting para la aplicación y posteriormente la abre. |
+| Reatribuciones | Una reatribución se registra cuando un antiguo usuario de una aplicación específica (que la había desinstalado) participa en una campaña de retargeting para la aplicación y, posteriormente, la reinstala. |
+| Instalaciones orgánicas | Las instalaciones orgánicas son aquellas que no se atribuyen a una fuente multimedia específica.<ul><li>**Nota:** Incluir las instalaciones orgánicas en tu reporte puede aumentar considerablemente el número de filas escaneadas.</li></ul> |
 
-* **Timeframe:** Select the number of days of historical data you want the DCR to search for attribution events matching your custom source events (from 1 to 180 days).
+* **Periodo de tiempo:** Selecciona el número de días de datos históricos en los que deseas que el DCR busque eventos de atribución que coincidan con tus eventos de origen personalizados (de 1 a 180 días).
 
-#### **Custom sources**
+#### **Fuentes personalizadas**
 
-When defining report structure, you can choose to use data from any of the <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources">custom sources you have set up</Anchor>.
+Al definir la estructura del reporte, puede elegir usar datos de cualquiera de las <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources">fuentes personalizadas que hayas configurado</Anchor>.
 
 </Accordion>
 
 <div id="join-sources" />
 
-<Accordion title="Join sources">
+<Accordion title="Unirse a fuentes">
 
-To match data among sources, each of the **custom** sources used in the report must include an <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services">identifier</Anchor> mapped to a **key identifier** in the attribution data.
+Para hacer coincidir los datos entre las fuentes, cada una de las fuentes **personalizadas** utilizadas en el reporte debe incluir un <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services">identificador</Anchor> asignado a un **identificador clave** en los datos de atribución.
 
-#### **What is a key identifier?**
+#### **¿Qué es un identificador clave?**
 
-You can map to either of these attribution data identifiers as **key identifiers:**
+Puedes asignarlos a cualquiera de estos identificadores de datos de atribución como identificadores **clave**:
 
-* **AppsFlyer ID (af\_id):** A unique app identifier generated by AppsFlyer at installation –
-  * This ID appears in all events recorded by AppsFlyer.
-  * A new AppsFlyer ID is generated if an app is deleted and then reinstalled.
-* **Customer User ID (CUID):** A unique user identifier usually generated and set by the app owner at the time of user registration.
-  * Using CUID to map data requires that your app is configured to <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">send the CUID to AppsFlyer</Anchor> via the SDK or the server-to-server API (S2S).
+* un identificador único de la aplicación generado por AppsFlyer en la instalación:
+  * Este ID aparece en todos los eventos registrados por AppsFlyer.
+  * Se genera un nuevo ID de AppsFlyer si se elimina una aplicación y luego se vuelve a instalar.
+* **ID de usuario de cliente (CUID):** un identificador de usuario único, generalmente generado y establecido por el propietario de la aplicación en el momento del registro del usuario.
+  * El uso de CUID para asignar datos requiere que la aplicación esté configurada para <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">enviar el CUID a AppsFlyer</Anchor> a través del SDK o de la API de servidor a servidor (S2S).
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> Not all media sources permit matching using CUID. It is highly recommended to use AppsFlyer ID.
+> No todas las fuentes de medios permiten la coincidencia mediante el CUID. Se recomienda encarecidamente utilizar el ID de AppsFlyer.
 
-#### **Mapping schemes (direct/indirect)**
+#### **Esquemas de asignación (directa/indirecta)**
 
-If the report uses more than one custom source, only one of them needs to be mapped **directly** to an attribution data key identifier. Other custom sources can be mapped either **directly or indirectly,** as illustrated in the following example:
+Si el reporte usa más de una fuente personalizada, solo es necesario asignar una de ellas **directamente** a un identificador de clave de datos de atribución. Se pueden asignar otras fuentes personalizadas **directa o indirectamente**, como se ilustra en el siguiente ejemplo:
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
 > ![dcr_mapping_identifiers_attribution_data.png](https://files.readme.io/18d1ddd8305f790dc621f871695b8cfb30f5e5a5d758c219e76ec7822ec18f2f-9969690360849.png)
 >
-> In the scenario shown above:
+> En el escenario que se muestra arriba:
 >
-> * Custom source #1 identifier **AF** is mapped directly to the attribution data key identifier **af\_id.**
-> * Custom source #2 is mapped indirectly: **user\_code** --> **AF** --> **af\_id.**
-> * Custom source #3 is mapped indirectly (through a longer chain): **user\_id** --> **user\_code** --> **AF** --> **af\_id.**
-> * Custom source #4 identifier **ID** is mapped directly to the attribution data key identifier **af\_id.**
->   * Note that it could have been mapped indirectly instead (through custom source #3 identifier **user\_id**), but either option works fine.
+> * El identificador de fuente personalizada n.º 1, **AF**, se asigna directamente al identificador clave de datos de atribución **af\_id**.
+> * La fuente personalizada n.º 2 se asigna indirectamente: **user\_code** --> **AF** --> **af\_id**.
+> * La fuente personalizada n.º 3 se asigna indirectamente (a través de una cadena más larga):
+>   **user\_id** --> **user\_code** --> **AF** --> **af\_id.**
+> * El identificador de fuente personalizada n.º 4, **AF**, se asigna directamente al identificador clave de datos de atribución **af\_id**.
+>   * Ten en cuenta que podría haberse asignado indirectamente en su lugar (a través del identificador de fuente personalizada n.º 3 **user\_id**), pero cualquiera de las dos opciones funciona bien.
 >
-> ✓ This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the attribution data key identifier **af\_id.**
+> ✓ Este esquema de mapeo funciona para hacer coincidir los datos entre todas las fuentes, ya que cada fuente personalizada se asigna directa o indirectamente al identificador de clave de datos de atribución **af\_id.**
 
 </Accordion>
 
 <div id="determine-treatment-of-multiple-matching-events" />
 
-<Accordion title="Determine treatment of multiple matching events">
+<Accordion title="Determinar el tratamiento de varios eventos coincidentes">
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> If the attribution types selected for this report **include only installs and/or organic installs,** this section is irrelevant. Skip to [**Select dimensions**](/docs/data-clean-room-creating-attribution-data-reports#select-dimensions).
+> Si los tipos de atribución seleccionados para este reporte **incluyen solo instalaciones u instalaciones orgánicas, esta sección es** irrelevante. Ve a **[Seleccionar dimensiones](/docs/data-clean-room-creating-attribution-data-reports#select-dimensions).**
 
-If the attribution types you select for your report include **re-installs,** **re-engagements, or re-attributions,** it's possible that the attribution data will include more than one event during the selected timeframe with the same key identifier. When this is the case, you must instruct the DCR which matching events it should include in the report.
+**reengagements o reatribuciones,** es posible que los datos de atribución incluyan más de un evento durante el período seleccionado con el mismo identificador clave. Cuando este sea el caso, debes indicar al DCR qué eventos coincidentes debe incluir en el reporte.
 
-#### **Matching all events**
+#### **Coincidir con todos los eventos**
 
-The most comprehensive matching method allows your report to include all matching events. In order to achieve this result, you must map an identifier in one of the report's custom sources to the attribution data identifier **install\_time.**
+El método de coincidencia más completo permite que tu reporte incluya todos los eventos coincidentes. Para lograr este resultado, debes asignar un identificador de una de las fuentes personalizadas del reporte al identificador de datos de atribución **install\_time**.
 
-* The identifier in your source that is mapped to install\_time must be in the following format: **yyyy-MM-dd HH:mm:ss.**
-* **Note:** Though the attribution data identifier's name is `install_time`, it actually means **event time** when referring to re-install, re-engagement, or re-attribution events.
+* El identificador del código fuente que está asignado a install\_time debe tener el siguiente formato: **aaaa-mm-dd hh:mm:ss.**
+* **Nota:** Aunque el nombre del identificador de datos de atribución es install\_time, en realidad significa **hora del evento** cuando se hace referencia a los eventos de reinstalación, reengagement o reatribución.
 
-#### **Matching a single event**
+#### **Emparejar un solo evento**
 
-If the attribution types selected for your report include re-installs, re-engagements, or re-attributions, but no identifier is mapped to the `install_time`, only a single event can be selected from the eligible candidates.
+Si los tipos de atribución que seleccionas para tu reporte incluyen reinstalaciones, reengagements o reatribuciones, pero no asignas un identificador a **install\_time,** debes elegir usar el **último** o el **primer** evento coincidente de tu reporte.
 
-Single-event matching behavior differs when the AppsFlyer attribution data source is used alone versus when it is joined with custom sources.
+El comportamiento de coincidencia de un solo evento difiere cuando la fuente de datos de atribución de AppsFlyer se usa sola frente a cuando se combina con fuentes personalizadas.
 
-* When the attribution data source is used alone, AppsFlyer selects the matching event with the latest `event_time` in the timeframe that matches a specific key identifier.
-* When the attribution data source is joined with custom sources, you must elect to use either the **last** or **first** matching event in your report.
-  * **Last event:** The attribution event included in the report is the event with the latest `event_time` in the timeframe that matches a specific key identifier.
-  * **First event:** The attribution event included in the report is the event with the earliest `event_time` in the timeframe that matches a specific key identifier.
+* Cuando la fuente de datos de atribución se usa sola, AppsFlyer selecciona el evento coincidente con el `event_time` más reciente dentro del período de tiempo que coincide con un identificador clave específico.
+* Cuando la fuente de datos de atribución se combina con fuentes personalizadas, debes elegir si quieres usar el evento coincidente **último** o **primero** en tu reporte.
+  * **Último evento:** el evento de atribución incluido en el reporte es el último evento (cronológicamente) del período que coincide con un identificador clave específico.
+  * **Primer evento:** El evento de atribución incluido en el reporte es el primer evento (cronológicamente) del período que coincide con un identificador clave específico.
 
-Make this selection based on the event you consider to be most relevant to the insights you want to obtain from the report.
+Haz esta selección en función del evento que consideres más relevante para la información que deseas obtener del reporte.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> In case of record duplicates, DCR deduplicates records with the same `appsflyer_id`, selecting the latest event based on `event_time`.
+> En caso de registros duplicados, DCR elimina los duplicados de los registros con el mismo `appsflyer_id` y selecciona el evento más reciente en función de `event_time`.
 
 </Accordion>
 
 <div id="select-dimensions" />
 
-<Accordion title="Select dimensions">
+<Accordion title="Seleccionar las dimensiones">
 
-Recall that user-level data cannot be reported by the DCR. Instead, it provides you with the decision-making insights you need by aggregating (or grouping) the data by the dimensions you choose.
+Recuerda que los datos a nivel de usuario no pueden ser reportados por DCR. En su lugar, te proporciona la información necesaria para la toma de decisiones agregando (o agrupando) los datos por las dimensiones que elijas.
 
-A dimension is generally an attribute by which you categorize app users (for example, geo, install date, campaign, etc.).
+Por lo general, una dimensión es un atributo por el que se clasifican los usuarios de la aplicación (por ejemplo, geolocalización, fecha de instalación, campaña, etc.).
 
-#### **Selecting report dimensions**
+#### **Selección de las dimensiones del reporte**
 
-Attribution data report dimensions can include:
+Las dimensiones del reporte de datos de atribución pueden incluir:
 
-* Any [available attribution data dimension](/docs/data-clean-room-creating-attribution-data-reports#available-attribution-data-dimensions)
-* Any field in the report's custom sources that has been <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#3-define-the-source-structure">categorized as a dimension</Anchor>
+* Cualquier [dimensión de datos de atribución disponible](/docs/data-clean-room-creating-attribution-data-reports#available-attribution-data-dimensions)
+* Cualquier campo de las fuentes personalizadas del reporte que se haya <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#3-define-the-source-structure">clasificado como dimensión</Anchor>
 
-**To select the dimensions to include in your report:**
+**Para seleccionar las dimensiones que se incluirán en el reporte:**
 
-1. Select one or more dimensions in the **Dimensions from sources** list on the left and use the **Add** button in the middle of the screen to add them to the list of **Report dimensions.**  
-   * You can use the search bar to search for dimensions in the lists.
-2. To remove a dimension, select it from the **Report dimensions** list and use the **Remove** button to return it to the **Dimensions from sources** list.
-3. Repeat this process until you have added each dimension you want to include in the report.
+1. Selecciona una o más dimensiones en la lista **Dimensiones de las fuentes** de la izquierda y usa el botón **Agregar** en el centro de la pantalla para agregarlas a la lista de **Dimensiones del reporte**.  
+   * Puedes usar la barra de búsqueda para buscar dimensiones en las listas.
+2. Para quitar una dimensión, selecciónala en la lista **Dimensiones del reporte** y usa la función **Quitar** para devolverla a la lista **Dimensiones de las fuentes**.
+3. Repite este proceso hasta que hayas agregado cada dimensión que desees incluir en el reporte.
 
-**Note:** By default, all reports are grouped by the attribution data dimension **media\_source.** If you do not wish to use this dimension in your report, you can remove it from the **Report dimensions** list.
+**Nota:** De forma predeterminada, todos los reportes se agrupan según la dimensión de datos de atribución **media\_source.** Si no deseas utilizar esta dimensión en tu reporte, puedes eliminarla de la lista de **dimensiones del reporte**.
 
-#### **[Optional] Customizing dimension display names**
+#### **[Opcional] Personalización de nombres para mostrar de las dimensiones**
 
-By default, dimension names are displayed in your report exactly as they are named in the attribution data or your custom sources. If you wish, you can customize dimension names for your report.
+De forma predeterminada, los nombres de las dimensiones se muestran en el reporte exactamente como aparecen en los datos de atribución o en las fuentes personalizadas. Si lo deseas, puedes personalizar los nombres de las dimensiones para el reporte.
 
-**To customize dimension display names:**
+**Para personalizar los nombres de visualización de las dimensiones:**
 
-1. In the **Report dimensions** list, hover over the name of the dimension whose display name you want to edit.
-2. Click the edit button ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) that displays to the right of the dimension.
-3. Change the name to the dimension display name to be used in your report (up to 50 characters).
-4. Click **OK** to save the display name, or **X** to cancel it.
+1. En la lista **Dimensiones del reporte**, coloca el cursor sobre el nombre de la dimensión cuyo nombre para mostrar deseas editar.
+2. Haz clic en el botón Editar ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) que se muestra a la derecha de la dimensión.
+3. Cambia el nombre por el nombre para mostrar de la dimensión que se utilizará en el reporte (hasta 50 caracteres).
+4. Haz clic en **Aceptar** para guardar el nombre para mostrar, o en **X** para cancelar.
 
-#### Preserving privacy while grouping by dimension (regrouping)
+#### Preservación de la privacidad mientras se agrupa por dimensión (reagrupación)
 
-Depending on the size of your data set, the number of dimensions you choose, and other factors, it's possible that a report would include one or more groups containing too few users to allow reporting. If the data were reported this way, it would violate restrictions against providing user-level data.
+En función del tamaño del conjunto de datos, el número de dimensiones que elijas y otros factores, es posible que un reporte incluya uno o varios grupos que contengan muy pocos usuarios para permitir la generación de reportes. Si los datos se reportaran de esta manera, se infringirían las restricciones contra el suministro de datos a nivel de usuario.
 
-* **Important!** The minimum number of users required in order to permit reporting varies by media source.
+* **Nota:** **Importante:** La cantidad mínima de usuarios requerida para permitir la presentación de reportes varía según la fuente de medios.
 
-However, instead of removing or hiding the data from the report completely, the DCR uses a **regrouping mechanism** to provide as much detail as possible while maintaining user privacy.
+Sin embargo, en lugar de eliminar u ocultar los datos del reporte por completo, DCR utiliza un **Mecanismo de reagrupamiento** para proporcionar tantos detalles como sea posible mientras se mantiene la privacidad del usuario.
 
-> 📄 **Regrouping example**
+> 📄 **Ejemplo de reagrupamiento**
 >
-> Assume you have set up a report according to the following dimensions (in order):
+> Supongamos que has configurado un reporte de acuerdo con las siguientes dimensiones (en orden):
 >
-> * **Attribution data dimensions:**
->   * media source
->   * campaign
+> * **Dimensiones de los datos de atribución:**
+>   * fuente de medios
+>   * campaña
 >   * adset\_name
->   * ad\_id
-> * **Custom source dimensions:**
+>   * id\_adset
+> * **Dimensiones de fuentes personalizadas:**
 >   * user\_type
 >
-> **Before regrouping**
+> **Antes de reagrupar**
 >
-> After initial analysis of the data, the DCR determines that the data would break down as follows:
+> Después del análisis inicial de los datos, DCR determina que los datos se desglosarían de la siguiente manera:
 >
 >
 >
-> | media  <br />source | campaign | adset  <br />name | ad  <br />id | user  <br />type | rev  <br />D0 | rev  <br />D7 | count | reportable? |
+> | medios  <br />fuente | campaña | conjunto de anuncios  <br />conjunto de anuncios | anuncio  <br />ID | usuario  <br />tipo | rev  <br />D0 | ingresos  <br />D7 | cuenta | ¿Reportable? |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | ✓ |
-> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | ✓ |
-> | media\_source | UA\_200 | green | lkh123 | beg | 6 | 7 | x | **X** |
-> | media\_source | UA\_200 | green | ilk945 | beg | 3 | 21 | x | **X** |
-> | media\_source | UA\_200 | green | plm654 | beg | 8 | 17 | x | **X** |
+> | fuente\_de\_medios | UA\_100 | verde | kjh867 | comprador | 1 | 4 | 120 | ✓ |
+> | fuente\_de\_medios | UA\_101 | verde | jkj987 | ultra | 2 | 23 | 220 | ✓ |
+> | fuente\_de\_medios | UA\_200 | verde | lkh123 | beg | 6 | 7 | . | **X** |
+> | fuente\_de\_medios | UA\_200 | verde | ilk945 | beg | 3 | 21 | . | **X** |
+> | fuente\_de\_medios | UA\_200 | verde | PLM654 | beg | 8 | 17 | . | **X** |
 >
 >
 >
-> As it stands, the final 3 rows are not reportable because there are too few users in each. (This media source requires a minimum of **y** users in order to be reportable. Here, we have only **x**.)
+> En la actualidad, las últimas 3 filas no se pueden notificar porque hay muy pocos usuarios en cada una. (Esta fuente de medios requiere un mínimo de **y** usuarios con el fin de ser reportables. Aquí, solo tenemos **x**).
 >
-> According to the regrouping logic, the DCR first "eliminates" the last-listed attribution data dimension (in this case, **ad\_id**). It then analyzes the data again to see which rows are reportable.
+> Según la lógica de reagrupamiento, el DCR primero «elimina» la última dimensión de datos de atribución de la lista (en este caso, **ad\_id).** A continuación, vuelve a analizar los datos para ver qué filas se pueden reportar.
 >
-> **After regrouping**
+> **Después de reagrupar**
 >
-> After applying the regrouping logic, the report appears as follows:
+> Después de aplicar la lógica de reagrupamiento, el reporte aparece de la siguiente manera:
 >
 >
 >
-> | media  <br />source | campaign | adset  <br />name | ad  <br />id | user  <br />type | rev  <br />D0 | rev  <br />D7 | count | reportable? |
+> | medios  <br />fuente | campaña | conjunto de anuncios  <br />conjunto de anuncios | anuncio  <br />ID | usuario  <br />tipo | rev  <br />D0 | ingresos  <br />D7 | cuenta | ¿Reportable? |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | ✓ |
-> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | ✓ |
-> | media\_source | UA\_200 | green | RESTRICTED | beg | 17 | 45 | y (x+x+x) | ✓ |
+> | fuente\_de\_medios | UA\_100 | verde | kjh867 | comprador | 1 | 4 | 120 | ✓ |
+> | fuente\_de\_medios | UA\_101 | verde | jkj987 | ultra | 2 | 23 | 220 | ✓ |
+> | fuente\_de\_medios | UA\_200 | verde | RESTRINGIDO | beg | 17 | 45 | y (x+x+x) | ✓ |
 >
 >
 >
-> **Results:**
+> **Resultados:**
 >
-> * The last row now combines the data that had previously been on 3 rows. Now, the combined row has a user count equal to **y** and can be reported.
-> * The dimension that was eliminated is now reported as RESTRICTED.
-> * Had there still been unreportable rows (fewer than **y** users), the DCR would continue to analyze the data on an iterative basis, eliminating one dimension after another until it either:
->   * can report all rows; or
->   * runs out of attribution data dimensions to eliminate
+> * La última fila ahora combina los datos que anteriormente habían estado en 3 filas. Ahora, la fila combinada tiene un recuento de usuarios igual a **y**, y se puede reportar.
+> * La dimensión que se eliminó ahora se reporta como RESTRINGIDO.
+> * Si todavía hubiera habido filas no reportables (menos de **y** usuarios), DCR continuaría analizando los datos de forma iterativa, eliminando una dimensión tras otra hasta que:
+>   * puedas reportar todas las filas; o
+>   * se queda sin dimensiones de datos de atribución para eliminar
 >
-> **Note:** By default, the DCR applies regrouping only to [**attribution data dimensions**](/docs/data-clean-room-creating-attribution-data-reports#available-attribution-data-dimensions) (not to custom source dimensions). If data grouped by an attribution data dimension would result in a row containing fewer than **y** users, the data in that row will be reported as RESTRICTED.
+> **Nota:** De forma predeterminada, el DCR aplica la reagrupación solo a las dimensiones de los [**datos de atribución (no a las dimensiones**](/docs/data-clean-room-creating-attribution-data-reports#available-attribution-data-dimensions) de origen personalizadas). Si los datos agrupados por una dimensión de datos de atribución dan como resultado una fila con menos de **y** usuarios, los datos de esa fila se indicarán como RESTRINGIDOS.
 >
-> * *See below for an advanced option you can use to apply regrouping to custom source dimensions as well.*
+> * *Consulta a continuación una opción avanzada que puedes usar para aplicar también el reagrupamiento a las dimensiones de fuentes personalizadas.*
 
-#### **[Optional] Managing dimension priority**
+#### **[Opcional] Administración de la prioridad de las dimensiones**
 
-By default, attribution data dimensions are eliminated in reverse order from the order in which they appear in the **Report dimensions** list. However, you can modify the default sequence and/or apply regrouping to selected custom source dimensions in order to preserve the dimensions most important to you.
+De forma predeterminada, las dimensiones de los datos de atribución se eliminan en orden inverso al orden en que aparecen en la lista de **dimensiones del reporte**. Sin embargo, puedes modificar la secuencia predeterminada o aplicar la reagrupación a las dimensiones de origen personalizadas seleccionadas para conservar las dimensiones más importantes para usted.
 
-**To change the order in which dimensions are eliminated:**
+**Para cambiar el orden en el que se eliminan las dimensiones:**
 
-1. Click the **Manage dimension priority** button.
-2. Select a dimension and drag it to the desired position in the list (or use the arrow buttons on the right to move it).
-   * The dimension labeled as **Highest priority** (at the top of the list) means it's the last to be eliminated if regrouping is required.
-3. [Optional] To apply regrouping to custom source dimensions:
-   1. Click **Use advanced options to refine regrouping**
-   2. Select custom source dimensions to which you'd like to apply regrouping.
-   3. The selected dimensions are added to the **Manage dimension priority** list.
-      * By default, these dimensions are added to the bottom of the list, as **Lowest priority** for regrouping. However, you can reorder them just like attribution data dimensions as described above.
-4. Click **OK** to save your changes.
-   * The **Report dimensions** list on the main screen remains in its original order, but the revised order has been saved. (Click again on the **Manage dimension priority** button if you wish to review or edit your selection.)
+1. Haz clic en el botón **Administrar la prioridad de las dimensiones**.
+2. Selecciona una dimensión y arrástrala a la posición deseada en la lista (o usa los botones de flecha de la derecha para moverla).
+   * La dimensión etiquetada como **Máxima prioridad** (en la parte superior de la lista) significa que es la última en ser eliminada si se requiere reagrupamiento.
+3. [Opcional] Para aplicar la reagrupación a las dimensiones de origen personalizadas:
+   1. Haz clic en **Usar opciones avanzadas para refinar el reagrupamiento**
+   2. Selecciona las dimensiones de fuentes personalizadas a las que deseas aplicar el reagrupamiento.
+   3. Las dimensiones seleccionadas se añaden a la lista **Administrar la prioridad de las dimensiones**.
+      * De forma predeterminada, estas dimensiones se agregan al final de la lista, como **Prioridad más baja** para el reagrupamiento. Sin embargo, puedes reordenarlos igual que las dimensiones de los datos de atribución, tal y como se describe anteriormente.
+4. Haz clic en **Aceptar** para guardar los cambios.
+   * La lista **Dimensiones del reporte** en la pantalla principal permanece en su orden original, pero el orden revisado se ha guardado. (Haz clic de nuevo en el icono **Administrar la prioridad de las dimensiones** si deseas revisar o editar tu selección).
 
 </Accordion>
 
 <div id="select-metrics" />
 
-<Accordion title="Select metrics">
+<Accordion title="Seleccionar métricas">
 
-Metrics are the numeric data you have collected with respect to an app user (examples might include revenue, number of app opens, LTV, etc.) and can be any **numeric** data field from your sources that you have categorized as a metric.
+Las métricas son los datos numéricos que has recopilado con respecto a un usuario de la aplicación (por ejemplo, pueden incluir ingresos, número de aperturas de la aplicación, LTV, etc.) y pueden ser cualquier campo de datos **numéricos** de tus fuentes que hayas categorizado como métrica.
 
-**To select the metrics to include in your report:**
+**Para seleccionar las métricas que se incluirán en el reporte, sigue estos pasos:**
 
-1. Select one or more metrics in the **Metrics from sources** list on the left and use the **Add** button in the middle of the screen to add them to the list of **Report metrics.**
-   * You can use the search bar to search for metrics in the lists.
-2. For each metric in the **Report metrics** list, select whether you want the data reported as either:
-   * a sum of numeric values; or
-   * a count of distinct values
-3. To remove a metric, select it from the **Report metrics** list and use the **Remove** button to return it to the **Metrics from sources** list.
-4. Repeat this process until you've added each metric you want to include in the report.
+1. Selecciona una o más métricas en la lista **Métricas de las fuentes** de la izquierda y usa el botón **Agregar** en el centro de la pantalla para agregarlas a la lista de **Métricas del reporte**.
+   * Puedes utilizar la barra de búsqueda para buscar métricas en las listas.
+2. Para cada métrica de la lista **Métricas del reporte**, selecciona si deseas que los datos se reporten como:
+   * una suma de valores numéricos; o
+   * un recuento de valores distintos
+3. Para quitar una métrica, selecciónala en la lista **Métricas del reporte** y usa la función **Quitar** para devolverla a la lista **Métricas de las fuentes**.
+4. Repite este proceso hasta que hayas agregado cada métrica que quieras incluir en el reporte.
 
-#### **[Optional] Customizing metric display names**
+#### **[Opcional] Personalización de nombres para mostrar de las métricas**
 
-By default, metric names are displayed in your report exactly as they are named in the attribution data or your custom sources. If you wish, you can customize metric names for your report.
+De forma predeterminada, los nombres de las métricas se muestran en tu reporte exactamente como aparecen en los datos de atribución o en tus fuentes personalizadas. Si lo deseas, puedes personalizar los nombres de las métricas para el reporte.
 
-**To customize metric display names:**
+**Para personalizar los nombres para mostrar de las métricas:**
 
-1. In the **Report metrics** list, hover over the name of the metric whose display name you want to edit.
-2. Click the edit button ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) that displays to the right of the metric.
-3. Change the name to the metric display name to be used in your report (up to 50 characters).
-4. Click **OK** to save the display name, or **X** to cancel it.
+1. En la lista **Métricas del reporte**, coloca el cursor sobre el nombre de la métrica cuyo nombre para mostrar deseas editar.
+2. Haz clic en el botón Editar ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) que se muestra a la derecha de la métrica.
+3. Cambia el nombre por el nombre para mostrar de la métrica que se utilizará en el reporte (hasta 50 caracteres).
+4. Haz clic en **Aceptar** para guardar el nombre para mostrar, o en **X** para cancelar.
 
-#### **[Optional] Select identifiers to count**
+#### **[Opcional] Seleccionar los identificadores que se van a contar**
 
-By default, each row of the report ends with a column containing a count of the distinct AppsFlyer IDs grouped in that row's data.
+De forma predeterminada, cada fila del reporte termina con una columna que contiene un recuento de los distintos ID de AppsFlyer agrupados en los datos de esa fila.
 
-**If you wish to add columns for the distinct counts of other identifiers from your sources, do so as follows:**
+**Si deseas agregar columnas para los recuentos distintos de otros identificadores de tus fuentes, hazlo de la siguiente manera:**
 
-1. Select one or more identifiers in the **Identifiers from sources** list on the left and use the **Add** button in the middle of the screen to add them to the list of **Distinct count identifiers**.
-   * You can use the search bar to search for identifiers in the lists.
-2. To remove an identifier, select it from the **Distinct count identifiers** list and use the **Remove** button to return it to the **Identifiers from sources** list.
-3. Repeat this process until you have added each identifier you want counted in the report.
+1. Selecciona uno o más identificadores en la lista **Identificadores de fuentes** de la izquierda y usa el botón **Agregar** en el centro de la pantalla para agregarlos a la lista de **Identificadores de recuento distintos**.
+   * Puedes utilizar la barra de búsqueda para buscar identificadores en las listas.
+2. Para quitar un identificador, selecciónalo en la lista **Identificadores de recuento distintos** y usa la función **Quitar** para devolverlo a la lista **Identificadores de fuentes**.
+3. Repite este proceso hasta que hayas agregado cada identificador que desees contar en el reporte.
 
 </Accordion>
 
 <div id="set-the-report-destination-and-save-the-report" />
 
-<Accordion title="Set the report destination and save the report">
+<Accordion title="Para establecer el destino del reporte y guardarlo:">
 
-The DCR delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
+DCR entrega reportes a tus servicios en la nube seleccionados utilizando <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Por lo tanto, especificar el destino del reporte implica seleccionar o crear una conexión de Data Locker.
 
-* **Note:** Receiving DCR reports does not require a premium subscription to Data Locker. If you are interested in receiving other AppsFlyer reports via Data Locker, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
+* **Nota:** Recibir reportes de DCR no requiere una suscripción Premium a Data Locker. Si estás interesado en recibir otros reportes de AppsFlyer a través de Data Locker, comunícate con tu CSM o envía un correo electrónico a [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
-**To set the report destination and save the report:**
+**Para establecer el destino del reporte y guardarlo:**
 
-1. Select from the list of Data Locker connections available in your AppsFlyer account.
-   * If there are no connections defined in your account:
-     * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
-   * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://files.readme.io/9850a4b8ea4f40f6320903c545c51add7b90207538a27c83a3b02a41197ba567-14995870859281.png) button:
-     * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
-   * After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.
-2. Click **Save** to save the report.
-3. The new report is now displayed in the **Reports** tab of the **Data Clean Room.**
+1. Selecciona de la lista de conexiones de Data Locker disponibles en tu cuenta de AppsFlyer.
+   * Si no hay conexiones definidas en tu cuenta:
+     * Se abrirá una nueva pestaña en tu navegador (que muestra la página de AppsFlyer Data Locker)
+     * Se abrirá el cuadro de diálogo **Nueva conexión**. Sigue <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#completa-la-conexión-1">estas instrucciones</Anchor> para crear la conexión.
+   * Si tienes conexiones existentes pero quieres usar una nueva, haz clic en ![dcr_new_connection_data_locker_button.png](https://files.readme.io/9850a4b8ea4f40f6320903c545c51add7b90207538a27c83a3b02a41197ba567-14995870859281.png) botón:
+     * Se abrirá una nueva pestaña en tu navegador (que muestra la página de AppsFlyer Data Locker)
+     * Se abrirá el cuadro de diálogo **Nueva conexión**. Sigue <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#completa-la-conexión-1">estas instrucciones</Anchor> para crear la conexión.
+   * Después de crear la conexión, vuelve a la pestaña DCR de tu navegador y selecciona la conexión recién creada de la lista de conexiones de Data Locker.
+2. Haz clic en **Guardar** para guardar el reporte.
+3. El nuevo reporte ahora se muestra en la pestaña **Reportes** de **Data Clean Room**.
 
 </Accordion>
 
-## When does the report run?
+## ¿Cuándo se publica el reporte?
 
-Once you have created and saved a report, the report runs whenever new versions of all of the [custom sources it uses](/docs/data-clean-room-creating-attribution-data-reports#custom-sources) are detected:
+Una vez que hayas creado y guardado un reporte, se ejecuta cada vez que se detectan nuevas versiones de todas [las fuentes personalizadas que utiliza](/docs/data-clean-room-creating-attribution-data-reports#fuentes-personalizadas):
 
-* For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#table-columns">the `v` column of the source table</Anchor>.
-  * **Important!** Whenever the column value changes, be sure to populate the source table with a complete set of data to ensure the completeness of your report.
-* The DCR recognizes that a new version of a source has been created when it detects that a <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing">new version of a source file has been uploaded</Anchor> to a connected cloud account, along with its accompanying \_SUCCESS file.
+* Para las fuentes ubicadas en **almacenes de datos** (BigQuery y Snowflake), DCR reconoce que se ha creado una nueva versión de una fuente cuando detecta un nuevo valor en <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#table-columns">la columna `v` de la tabla de fuentes</Anchor>.
+  * **Nota:** **Importante:** Para garantizar la integridad de tu reporte, asegúrate de rellenar la tabla de la fuente con un conjunto completo de datos cada vez que se cambie el valor de la columna.
+* Para las fuentes ubicadas en **buckets de almacenamiento en la nube** (Amazon S3 y GCS), DCR reconoce que se ha creado una nueva versión de una fuente cuando detecta que <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#actualización-de-las-fuentes-para-activar-el-procesamiento-de-reportes">se ha cargado una nueva versión de un archivo de fuente</Anchor> junto con el archivo \_SUCCESS que lo acompaña.
 
-AppsFlyer continually scans for new versions of sources for the **current date and 2 days prior.**
+AppsFlyer busca continuamente nuevas versiones de fuentes para la **fecha actual y 2 días antes**.
 
-## Reference
+## Referencia
 
 <div id="available-attribution-data-dimensions" />
 
-<Accordion title="Available attribution data dimensions">
+<Accordion title="Dimensiones de datos de atribución disponibles">
 
-In addition to dimensions from your custom sources, the following attribution data dimensions can be used to group reports:
+Además de las dimensiones de tus fuentes personalizadas, puedes usar las siguientes dimensiones de datos de atribución para agrupar reportes:
 
-* media\_source ([*included as a report dimension by default*](#selecting-report-dimensions))
-* ad
-* ad\_id
+* media\_source *([incluido como una dimensión del reporte de forma predeterminada](#selección-de-las-dimensiones-del-reporte))*
+* anuncio
+* id\_adset
 * ad\_type
-* adset\_id
+* id\_anuncio
 * adset\_name
-* app\_id
-* app\_version
-* attributed\_touch\_type
-* brand
-* campaign
-* campaign\_id
-* channel
-* city
+* id\_aplicación
+* version\_app
+* tipo\_táctil\_atribuido
+* marca
+* campaña
+* id\_campaña
+* canal
+* ciudad
 * contributor\_1\_campaign¹
 * contributor\_1\_engagement\_type¹
 * contributor\_1\_match\_type¹
@@ -386,24 +386,24 @@ In addition to dimensions from your custom sources, the following attribution da
 * contributor\_3\_media\_source¹
 * contributor\_3\_partner¹
 * contributor\_3\_touch\_type¹
-* conversion\_type
-* country
-* customer\_id
-* device\_type
+* tipo\_de\_conversión
+* país
+* id\_cliente
+* tipo\_de\_dispositivo
 * dma
-* engagement\_type
+* tipo\_de\_engagement
 * geo\_region
-* keywords
+* palabras clave
 * match\_type
-* media\_source
-* model
+* fuente\_de\_medios
+* modelo
 * original\_url
-* partner
-* platform
-* site\_id
+* Socio
+* plataforma
+* id\_sitio
 
-¹ *For re-engagements and re-attributions, reports will show these fields as empty.*
+¹ *En el caso de reengagements y reatribuciones, los reportes mostrarán estos campos vacíos*.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HA9W4BCJSS2803JHV9K5KVP8=creating-an-attribution-data-report h_01HA9W4BCJX9PJ2E4ADDC58GJ1=perform-preliminary-steps h_01HA9W4BCJNB64K3GZAKM7G0SS=select-sources h_01HA9W4BCJD51WM7504F94009R=attribution-data-sources h_01HA9W4BCJNRBD1NSWAH92B85V=custom-sources h_01HA9W4BCJW56NG637AZNP0DW0=join-sources h_01HA9W4BCJ6A5EVFVR6G2SHEQD=what-is-a-key-identifier h_01HA9W4BCJ2GAZ96FHNN3HP6BY=important h_01HA9W4BCJ6ZT4DSE3J5364D2C=mapping-schemes-directindirect h_01HA9W4BCJKA8AWQGEHGQ5JT4P=example h_01HA9W4BCJ6ZM47HQMARQ50ZQ1=determine-treatment-of-multiple-matching-events h_01HA9W4BCJE9ABACTWWTNJXVVQ=note h_01HA9W4BCJ6FPCNP8K8D2CR1ST=matching-all-events h_01HA9W4BCJ99Z4A16N05799VZS=matching-a-single-event 01JFZ2GJTJ566AWS3Z3KTWNMVE=note-1 h_01HA9W4BCKDVYTG08M2CWBWYC3=select-dimensions h_01HA9W4BCKWCDWB4W0HZM4Z6E7=selecting-report-dimensions %5Boptional%5D-customizing-dimension-display-names=optional-customizing-dimension-display-names h_01HA9W4BCKEW1Z25ZXS9EXZYSA=optional-customizing-dimension-display-names h_01HA9W4BCKA4248PEYNWZS87EW=preserving-privacy-while-grouping-by-dimension-regrouping h_01HA9W4BCK41W87486KG4RAAX8=regrouping-example %5Boptional%5D-managing-dimension-priority=optional-managing-dimension-priority h_01HA9W4BCKHABH7K80DKAQDDTR=optional-managing-dimension-priority h_01HA9W4BCK1G0A2HTYRDQTMF5B=select-metrics %5Boptional%5D-customizing-metric-display-names=optional-customizing-metric-display-names h_01HA9W4BCKZTAP4AWMNJKEKX2E=optional-customizing-metric-display-names %5Boptional%5D-select-identifiers-to-count=optional-select-identifiers-to-count h_01HA9W4BCK5Y97RFYEMT24BABV=optional-select-identifiers-to-count h_01HA9W4BCKE1P7TBJANN0PD03D=set-the-report-destination-and-save-the-report h_01HA9W4BCK3GX1KMVAXN5ZKA3A=when-does-the-report-run h_01HA9W4BCK0VHS90ZXX00BF80N=reference h_01HA9W4BCMAYC661HFNRY3HWY2=available-attribution-data-dimensions" />
+<div data-zendesk-anchors="creating-an-attribution-data-report=creaci%C3%B3n-de-un-reporte-de-datos-de-atribuci%C3%B3n h_01HA9W4BCJSS2803JHV9K5KVP8=creaci%C3%B3n-de-un-reporte-de-datos-de-atribuci%C3%B3n h_01HA9W4BCJX9PJ2E4ADDC58GJ1=perform-preliminary-steps h_01HA9W4BCJNB64K3GZAKM7G0SS=select-sources attribution-data-sources=datos-de-atribuci%C3%B3n h_01HA9W4BCJD51WM7504F94009R=datos-de-atribuci%C3%B3n custom-sources=fuentes-personalizadas h_01HA9W4BCJNRBD1NSWAH92B85V=fuentes-personalizadas h_01HA9W4BCJW56NG637AZNP0DW0=join-sources what-is-a-key-identifier=qu%C3%A9-es-un-identificador-clave h_01HA9W4BCJ6A5EVFVR6G2SHEQD=qu%C3%A9-es-un-identificador-clave h_01HA9W4BCJ2GAZ96FHNN3HP6BY=importante mapping-schemes-directindirect=esquemas-de-asignaci%C3%B3n-directaindirecta h_01HA9W4BCJ6ZT4DSE3J5364D2C=esquemas-de-asignaci%C3%B3n-directaindirecta h_01HA9W4BCJKA8AWQGEHGQ5JT4P=ejemplo h_01HA9W4BCJ6ZM47HQMARQ50ZQ1=determine-treatment-of-multiple-matching-events h_01HA9W4BCJE9ABACTWWTNJXVVQ=nota matching-all-events=coincidir-con-todos-los-eventos h_01HA9W4BCJ6FPCNP8K8D2CR1ST=coincidir-con-todos-los-eventos matching-a-single-event=emparejar-un-solo-evento h_01HA9W4BCJ99Z4A16N05799VZS=emparejar-un-solo-evento 01JFZ2GJTJ566AWS3Z3KTWNMVE=nota-1 h_01HA9W4BCKDVYTG08M2CWBWYC3=select-dimensions selecting-report-dimensions=selecci%C3%B3n-de-las-dimensiones-del-reporte h_01HA9W4BCKWCDWB4W0HZM4Z6E7=selecci%C3%B3n-de-las-dimensiones-del-reporte %5Boptional%5D-customizing-dimension-display-names=opcional-personalizaci%C3%B3n-de-nombres-para-mostrar-de-las-dimensiones h_01HA9W4BCKEW1Z25ZXS9EXZYSA=opcional-personalizaci%C3%B3n-de-nombres-para-mostrar-de-las-dimensiones preserving-privacy-while-grouping-by-dimension-regrouping=preservaci%C3%B3n-de-la-privacidad-mientras-se-agrupa-por-dimensi%C3%B3n-reagrupaci%C3%B3n h_01HA9W4BCKA4248PEYNWZS87EW=preservaci%C3%B3n-de-la-privacidad-mientras-se-agrupa-por-dimensi%C3%B3n-reagrupaci%C3%B3n regrouping-example=ejemplo-de-reagrupamiento h_01HA9W4BCK41W87486KG4RAAX8=ejemplo-de-reagrupamiento %5Boptional%5D-managing-dimension-priority=opcional-administraci%C3%B3n-de-la-prioridad-de-las-dimensiones h_01HA9W4BCKHABH7K80DKAQDDTR=opcional-administraci%C3%B3n-de-la-prioridad-de-las-dimensiones h_01HA9W4BCK1G0A2HTYRDQTMF5B=select-metrics %5Boptional%5D-customizing-metric-display-names=opcional-personalizaci%C3%B3n-de-nombres-para-mostrar-de-las-m%C3%A9tricas h_01HA9W4BCKZTAP4AWMNJKEKX2E=opcional-personalizaci%C3%B3n-de-nombres-para-mostrar-de-las-m%C3%A9tricas %5Boptional%5D-select-identifiers-to-count=opcional-seleccionar-los-identificadores-que-se-van-a-contar h_01HA9W4BCK5Y97RFYEMT24BABV=opcional-seleccionar-los-identificadores-que-se-van-a-contar h_01HA9W4BCKE1P7TBJANN0PD03D=set-the-report-destination-and-save-the-report when-does-the-report-run=cu%C3%A1ndo-se-publica-el-reporte h_01HA9W4BCK3GX1KMVAXN5ZKA3A=cu%C3%A1ndo-se-publica-el-reporte reference=referencia h_01HA9W4BCK0VHS90ZXX00BF80N=referencia h_01HA9W4BCMAYC661HFNRY3HWY2=available-attribution-data-dimensions" />

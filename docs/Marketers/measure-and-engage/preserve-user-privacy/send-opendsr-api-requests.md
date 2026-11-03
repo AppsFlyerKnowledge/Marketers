@@ -1,5 +1,5 @@
 ---
-title: Send OpenDSR API requests
+title: Enviar solicitudes a la API de OpenDSR
 metadata:
   keywords:
     - Advertisers
@@ -15,115 +15,114 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2022-12-12T09:14:00Z'
-  edited_at: '2026-10-01T15:42:01Z'
+  edited_at: '2026-10-03T00:16:55Z'
   id: 11332840660625
-  locale: en-us
+  locale: es
   section: Preserve user privacy
   section_id: 6551440878097
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/11332840660625-Send-OpenDSR-API-requests
+  url: https://support.appsflyer.com/hc/es/articles/11332840660625
 ---
-> **At a glance:** This article is for the use of AppsFlyer clients, often referred to as Advertisers or App Owners, using the Platform to record app use and attribution. App Owners implement OpenDSR (Data Subject Request) API to comply with applicable data protection laws like GDPR (Europe), CCPA (California), LGPD (Brazil), PDPA (Thailand), and PIPA (Korea).
+> **At a glance:** Este artículo es para los clientes de AppsFlyer, a menudo denominados anunciantes o propietarios de aplicaciones, que usan la plataforma para registrar la atribución y el uso de aplicaciones. Los propietarios de aplicaciones implementan la API OpenDSR (Data Subject Request) para cumplir con las leyes de protección de datos aplicables como el GDPR (Europa), CCPA (California), LGPD (Brasil), PDPA (Tailandia) y PIPA (Corea).
 
-**A word from our lawyers:** *Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how GDPR, CCPA, or any other laws may or may not apply to you.* The privacy relationship between you and AppsFlyer is governed by the <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">AppsFlyer Services Privacy Policy</Anchor>. For any questions relating to this Services Privacy Policy or to contact our data protection officer please send us a mail to [privacy@appsflyer.com](mailto:privacy@appsflyer.com). For the purposes of Article 27 of the General Data Protection Regulation, the representative within the EU of AppsFlyer is AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Germany (contact [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).
+**Una nota de nuestros abogados:** *Nada de lo indicado aquí constituye asesoramiento jurídico. Se proporciona para tu información y comodidad. Deberías trabajar en estrecha colaboración con asesores legales y otros profesionales para determinar exactamente cómo el GDPR, CCPA o cualquier otra ley puede o no aplicarse a ti. La relación de privacidad entre tú y AppsFlyer se rige por la <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">Política de privacidad de servicios de AppsFlyer</Anchor>. Para preguntas relacionadas con esta Política de Privacidad de Servicios o para contactar con nuestro responsable de protección de datos, envía un correo a [privacy@appsflyer.com](mailto:privacy@appsflyer.com). Para efectos del Artículo 27 del Reglamento General de Protección de Datos, el representante dentro de la UE de AppsFlyer es **AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlín, Alemania (contacto [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).***
 
-## Privacy regulations
+## Regulaciones de privacidad
 
-In this article, references to privacy regulations include the regulations listed in the table that follows.
+En este artículo, las referencias a las normas de privacidad incluyen las normas enumeradas en la tabla que figura a continuación.
 
-| Regulation | Logo | Description |
+| Norma | Logotipo | Descripción |
 | --- | --- | --- |
-| GDPR | ![GDPR.png](https://files.readme.io/c3eb63a14b95bda24478f1d8fec75bcc59789157c4e53ffb44ab77ccd6dfe091-12830387561233.png) | The General Data Protection Regulation is the EU regulation relating to data protection and privacy for European Union citizens |
-| CCPA | ![CCPA.png](https://files.readme.io/57988a70f4e8395b9562fce9e424348cd7d61401ec7ca0ff32de518a093eb4dc-12830389364241.png) | California Consumer Privacy Act |
+| RGPD | ![GDPR.png](https://files.readme.io/c3eb63a14b95bda24478f1d8fec75bcc59789157c4e53ffb44ab77ccd6dfe091-12830387561233.png) | El Reglamento General de Protección de Datos es el conjunto de normas de la UE en materia de protección de datos y privacidad de los ciudadanos de la Unión Europea. |
+| CCPA | ![CCPA.png](https://files.readme.io/57988a70f4e8395b9562fce9e424348cd7d61401ec7ca0ff32de518a093eb4dc-12830389364241.png) | Ley de Privacidad del Consumidor de California |
 | LGPD | ![LGPD.png](https://files.readme.io/4e50bdc8e83db49b4eb0d84f757816ebc1d0e461ae8792af9ab48d7e51d20af3-12830406815633.png) | Lei Geral de Proteção de Dados |
-| PDPA | ![6137_Privacy_Shield_Thailand-01.png](https://files.readme.io/90833957690e7a52eb43b330d34a85c67af7a6c071b8ac79dec0733ec9aafcfc-12830408352657.png) | Personal Data Protection Act |
+| PDPA | ![6137_Privacy_Shield_Thailand-01.png](https://files.readme.io/90833957690e7a52eb43b330d34a85c67af7a6c071b8ac79dec0733ec9aafcfc-12830408352657.png) | Ley de Protección de Datos Personales |
 
-The terms privacy regulations, GDPR, CCPA, LGPD, and PDPA are used interchangeably in this article.
+Los términos "normativas de privacidad", "GDPR", "CCPA", "LGPD" y "PDPA" se usan indistintamente en este artículo.
 
-### The OpenDSR initiative
+### La iniciativa OpenDSR
 
-To address and manage requests by Data Subjects submitted in accordance with privacy regulations, AppsFlyer, together with mParticle, Amplitude, and Braze, initiated the OpenDSR protocol (formerly known as OpenGDPR).
+Para atender y administrar las solicitudes de los sujetos de datos de acuerdo con las regulaciones de privacidad, AppsFlyer, junto con mParticle, Amplitude y Braze, iniciaron el protocolo OpenDSR (anteriormente conocido como OpenGDPR).
 
-OpenDSR is an open-source framework, that facilitates cooperation between technology companies for the fair and transparent use of consumer data. It enables vendors to take data privacy actions across multiple systems that process and store customer data.
+OpenDSR es un framework de código abierto y unificado que facilita la cooperación entre empresas de tecnología para el uso justo y transparente de los datos de consumidores. Permite a los proveedores tomar acciones de privacidad de datos en múltiples sistemas que procesan y almacenan datos de clientes.
 
-<Anchor target="_blank" href="https://www.appsflyer.com/company/newsroom/pr/opengdpr-initiative/">Learn more about the OpenDSR initiative</Anchor>.
+<Anchor target="_blank" href="https://www.appsflyer.com/company/newsroom/pr/opengdpr-initiative/">Saber más sobre la iniciativa OpenDSR</Anchor>.
 
-### Definitions
+### Definiciones
 
-| DSR Term | AppsFlyer Term | Description |
+| Término DSR | Término de AppsFlyer | Descripción |
 | --- | --- | --- |
-| Data Subject | App User or End-user | The App User about whom data is collected |
-| Data Controller | App Owner or Advertiser | The App Owner determines the purpose and means by which the personal data is processed. |
-| Data Processor | AppsFlyer and its partners | AppsFlyer and its partners process personal data on behalf of the data controller |
+| Sujeto de datos | Usuario de la aplicación o usuario final | El usuario de la aplicación sobre el que se recopilan los datos |
+| Controlador de datos | Propietario de la aplicación o anunciante | El propietario de la aplicación determina el propósito y los medios por los cuales se procesan los datos personales. |
+| Procesador de datos | AppsFlyer y sus partners | AppsFlyer y sus partners procesan datos personales en nombre del controlador de datos. |
 
-### DSR requirements
+### Requisitos de DSR
 
-DSR details the mandatory rights of the Data Subject, with which the Data Controller must comply. For API purposes these rights are translated into request types. The following details how AppsFlyer processes the different request types.
+En el DSR se detallan los derechos obligatorios del sujeto de datos, que el controlador de datos debe cumplir. Para fines de API, estos derechos se traducen en tipos de solicitud. A continuación se detalla cómo AppsFlyer procesa los diferentes tipos de solicitud.
 
-| **Request type**<br /><br />**(Right)** | **GDPR definition** | Processing of the request by AppsFlyer |
+| **Tipo de solicitud**<br /><br />**(Derecho)** | **Definición según el GDPR** | Procesamiento de la solicitud por parte de AppsFlyer |
 | --- | --- | --- |
-| **Access** | <ul><li>If requested, App Users have the right to know if, why, and for how long the App Owner will process their data.</li><li>If data is shared with third parties, like AppsFlyer, App Users have the right to know who those third parties are.</li><li>The right to know what categories of data are being processed.</li><li>If there is automated processing, that has a significant effect on them.</li></ul> | The App Owners receive a copy of the App Users' processed personal data. |
-| **Portability** | The App User needs to receive all of their personal data in a structured, commonly used, and machine-readable format, such as a CSV file. | The App Owner receives a copy of the App User's processed personal data. |
-| **Rectification** | Allows App Users to correct their data if they see it is inaccurate or untruthful. App Owners are required to erase or correct inaccurate or incomplete data. | <ul><li>AppsFlyer deletes the App User's data recorded prior to the date of the *rectification* request.</li><li>Data received thereafter is recorded by AppsFlyer.</li></ul> |
-| **Erasure** | The right of erasure requires App Owners to remove personal data within 10 days of receiving the request. | The data is deleted |
+| **Acceso** | <ul><li>Si lo solicitan, los usuarios de la aplicación tienen derecho a saber si, por qué y durante cuánto tiempo el propietario de la aplicación procesará sus datos.</li><li>Si los datos se comparten con terceros, como AppsFlyer, los usuarios de la aplicación tienen derecho a saber quiénes son esos terceros.</li><li>También tienen derecho a saber qué categorías de datos se procesan.</li><li>Si hay procesamiento automatizado que pudiera afectarlos significativamente.</li></ul> | Los propietarios de la aplicación reciben una copia de los datos personales procesados de los usuarios de la aplicación. |
+| **Portabilidad** | El usuario de la aplicación debe recibir todos sus datos personales en un formato estructurado, comúnmente utilizado y legible por máquina, como un archivo CSV. | El propietario de la aplicación recibe una copia de los datos personales procesados del usuario de la aplicación. |
+| **Rectificación** | Permite a los usuarios de la aplicación corregir sus datos si ven que son inexactos o falsos. Los propietarios de aplicaciones están obligados a eliminar o corregir los datos inexactos o incompletos. | <ul><li>AppsFlyer elimina los datos del usuario de la aplicación registrados antes de la fecha de la *solicitud de rectificación*.</li><li>Los datos recibidos a partir de entonces son registrados por AppsFlyer.</li></ul> |
+| **Eliminación** | El derecho de eliminación obliga a los propietarios de aplicaciones a eliminar los datos personales dentro de un plazo de 10 días después de la recepción de la solicitud. | Los datos se eliminan |
 
-## AppsFlyer GDPR Requests API
+## API de solicitudes GDPR de AppsFlyer
 
-Use the GDPR Requests API as described in this section to implement DSR compliance.
+Usa la API de solicitudes de GDPR tal como se describe en esta sección para implementar el cumplimiento normativo del DSR.
 
-* **GDPR Request:** Perform one of the above request types: access, portability, erasure, rectification.
-* **Status Request**: Query the current status of a GDPR request.
-* **Discovery Request**: Inquire as to the supported API version and Data Format.
-* **Cancellation**: Cancel a GDPR request during its ***pending*** phase.
+* **Solicitud de RGPD:** Realiza uno de los tipos de solicitud anteriores: acceso, portabilidad, supresión, rectificación.
+* **Solicitud de estado**: Consulta el estado actual de una solicitud GDPR.
+* **Solicitud de descubrimiento**: Consulta la versión de la API compatible y el formato de datos.
+* **Cancelación**: Cancela una solicitud de RGPD durante su fase ***pendiente***.
 
-App Owners must implement UI changes to their app so that App Users can submit requests. Note that GDPR requests are per single user at one time.
+Los propietarios de aplicaciones deben implementar cambios en la interfaz de usuario de su aplicación, de modo que los usuarios de la aplicación puedan enviar solicitudes. Debes tener en cuenta que las solicitudes GDPR se envían de a un usuario por vez.
 
-<Accordion title="1. GDPR request">
+<Accordion title="1. Solicitud de RGPD">
 
-#### GDPR request flow
+#### Flujo de solicitudes GDPR
 
-The GDPR request types, Access, Portability, Erasure, and Rectification, have the following flow:
+Los tipos de solicitud GDPR, Acceso, Portabilidad, Eliminación y Rectificación, tienen el mismo flujo:
 
-1. **App User** submits a request.
-2. **The App Owner** constructs the GDPR request (see below) and sends it to AppsFlyer.
-3. **AppsFlyer** receives the request and responds with a "201 OK" for valid requests.
-4. **For Access and Portability:** Requests are fulfilled within 8 days.  
-   **Note:** This 8-day period begins when the App Owner submits their request. The request status changes to In Progress from pending and will be completed within an additional 6 days, totaling 8 days.  
-   **For Erasure and Rectification:**
-   * During the following 48 hours, the request is queued and has a ***pending*** status. The App User may cancel the request.
-   * After 48 hours, the request status changes to ***in\_progress.*** AppsFlyer sends a ***status change*** postback. At this point, the request can't be canceled.
-   * Within 10 days (see note below), AppsFlyer fulfills the request, and the request status changes to ***completed***. AppsFlyer sends a status change postback.
+1. **Usuario de la aplicación** envía una solicitud.
+2. **El propietario de la aplicación** genera la solicitud de GDPR (ver más abajo) y la envía a AppsFlyer.
+3. **AppsFlyer** recibe la solicitud y responde con un "201 OK" para las solicitudes válidas.
+4. **Para acceso y portabilidad:** Las solicitudes se completan en un plazo de 8 días.  
+   **Nota:** Este período de 8 días comienza cuando el propietario de la aplicación envía su solicitud. El estado de la solicitud cambia a “En Progreso” de pendiente y se completará dentro de 6 días adicionales, totalizando 8 días.  
+   **Para la eliminación y rectificación:**
+   * Durante las siguientes 48 horas, la solicitud se pone en cola y queda en estado ***pendiente***. El usuario de la aplicación puede cancelar la solicitud.
+   * Después de 48 horas, el estado de la solicitud cambia a ***in\_progress.*** AppsFlyer envía un postback de ***cambio de estado***. En este punto,no se puede cancelar la solicitud.
+   * En un plazo de 10 días (ver la nota más abajo), AppsFlyer tramita la solicitud y el estado de la solicitud cambia a ***completed***. AppsFlyer envía un postback de cambio de estado.
 
-     * In the case of *erasure* or *rectification*, the App User's data is deleted.
-     * In the case of *portability* or *access,* the App User's data can be accessed in the AppsFlyer dashboard under **GDPR** or via the Request API (see below).
+     * En el caso de *eliminación* o *rectificación*, se eliminan los datos del usuario de la aplicación.
+     * En el caso de *portabilidad* o *acceso,* se puede acceder a los datos del usuario de la aplicación en el dashboard de AppsFlyer, en **GDPR** o a través de la API de solicitudes (ver más abajo).
 
-     **Note:** This 10-day period begins when the App Owner submits their request. After 48 hours, the request status changes to **In Progress** and will be completed within an additional 8 days, totaling 10 days.
+     **Nota:** Este período de 10 días comienza cuando el propietario de la aplicación envía su solicitud. Después de 48 horas, el estado de la solicitud cambia a **En progreso** y se completará en 8 días adicionales, hasta un total de 10 días.
 
-#### GDPR request format
+#### Formato de solicitudes GDPR
 
-A GDPR Request API can be submitted via HTTP POST to the following endpoint:
+Se puede presentar una API de solicitudes GDPR por medio de HTTP POST al punto de conexión:
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 ```
 
-For the API authorization, use the same V2 API token as for Pull API. An admin user can <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#retrieve-tokens">retrieve the token</Anchor> from the API token page in the dashboard. Add the token into the request header as follows: `'Authorization': 'Bearer %AuthTokenV2%'`
+Para la autorización de la API, usa el mismo token de API V2 que para Pull API. Un usuario administrador puede <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens#recuperar-tokens">recuperar el token</Anchor> desde la página del token de la API en el dashboard. Agrega el token en el encabezado de la solicitud de la siguiente manera: `'Authorization': 'Bearer %AuthTokenV2%'`
 
-#### Parameters
+#### Parámetros
 
-<table><thead><tr><th><strong>Property Name</strong></th><th><strong>Mandatory</strong></th><th><strong>Description</strong></th></tr></thead><tbody><tr><td><strong>subject_request_id</strong></td><td>Yes</td><td>UUID v4 string. Generated by the controller at the time of request submission to a Processor. It can then be used in order to check the status of the request, update or cancel it.</td></tr><tr><td><strong>subject_request_type</strong></td><td>Yes</td><td><p>String value representing the type of GDPR Request. Supported values:</p><ul><li>erasure</li><li>portability</li><li>access</li><li>rectification</li></ul></td></tr><tr><td><strong>subject_identities</strong></td><td>Yes</td><td><ul><li>An array of identity objects defining the requester's identity (see below).</li><li>Each request can contain only one subject identity.</li></ul></td></tr><tr><td><strong>submitted_time</strong></td><td>Yes</td><td><ul><li>RFC 3339 date string of the time of the original request by the data subject</li><li>Timestamps in UTC</li></ul></td></tr><tr><td><strong>property_id</strong></td><td>Yes</td><td><p>String representing the mobile app to which this request is scoped:</p><p><strong>Examples</strong>:</p><ul><li><strong>iOS</strong>: id123456789</li><li><strong>Android</strong>: com.example, com.publishers.name</li><li><strong>Android out-of-store</strong>: com.publisher.name-channel<br/><strong>Note</strong> In some cases, App Owners record out-of-store attribution using the Android Google Play name. In these cases use the regular app name as it displays in the Dashboard.</li></ul></td></tr><tr><td><strong>api_version</strong></td><td>No</td><td>Version string representing the desired version of the GDPR Requests API</td></tr><tr><td><strong>status_callback_urls</strong></td><td>No, but recommended</td><td><ul><li>An array of up to 3 endpoints for status callbacks to be sent to the following request status changes.</li><li>Only HTTPS endpoints are supported.</li><li>Invalid URLs are rejected.</li></ul></td></tr><tr><td rowspan="2"><strong>platform</strong><br/><br/> </td><td>No</td><td>Value is one of the supported DSR platforms:<br/><code>android</code>, <code>ios</code>, <code>web</code>, <code>windowsphone</code></td></tr><tr><td>Yes</td><td><p>For a CTV, PC, or Console platform request, include any of the following platforms:</p><p><code>nativepc</code>, <code>playstation</code>, <code>roku</code>, <code>steam</code>, <code>webos</code>, <br/><code>vidaa</code>,<code>tizen</code>, <code>smartcast</code>, <code>chatgpt</code>, <code>battlenet</code>, <br/><code>quest</code>, <code>switch</code>, <code>xbox</code>, <code>epic</code></p></td></tr></tbody></table>
+<table><thead><tr><th><strong>Nombre de propiedad</strong></th><th><strong>Obligatorio</strong></th><th><strong>Description</strong></th></tr></thead><tbody><tr><td><strong>subject_request_id</strong></td><td>Sí</td><td>Secuencia UUID v4. Generada por el controlador al momento del envío de la solicitud al procesador. Luego puede utilizarse para controlar el estado de la solicitud, actualizarla o cancelarla.</td></tr><tr><td><strong>subject_request_type</strong></td><td>Sí</td><td><p>Valor de la secuencia que representa el tipo de solicitud GDPR. Valores admitidos:</p><ul><li>erasure</li><li>portability</li><li>access</li><li>rectification</li></ul></td></tr><tr><td><strong>subject_identities</strong></td><td>Sí</td><td><ul><li>Una matriz de objetos de identidad que definen la identidad del solicitante (ver más abajo).</li><li>Cada solicitud puede contener solo una identidad de sujeto.</li></ul></td></tr><tr><td><strong>submitted_time</strong></td><td>Sí</td><td><ul><li>Secuencia de fecha RFC 3339 del momento de la solicitud original enviada por el sujeto de datos</li><li>Marcas de tiempo en UTC</li></ul></td></tr><tr><td><strong>property_id</strong></td><td>Sí</td><td><p>Cadena que representa la aplicación móvil con la cual está relacionada esta solicitud.</p><p><strong>Ejemplos</strong>:</p><ul><li> <strong>iOS</strong>: id123456789</li><li> <strong>Android</strong>: com.example, com.publishers.name</li><li> <strong>Android fuera de la tienda</strong>: com.publisher.name-channel<br/><strong>Nota</strong> En algunos casos, los propietarios de aplicaciones registran la atribución fuera de la tienda con el nombre de Google Play de Android. En estos casos, usa el nombre normal de la aplicación tal como se muestra en el panel de control.</li></ul></td></tr><tr><td><strong>api_version</strong></td><td>No</td><td>Cadena de versión que representa la versión deseada de la API de Solicitudes GDPR.</td></tr><tr><td><strong>status_callback_urls</strong></td><td>No, pero recomendado</td><td><ul><li>Matriz de hasta 3 puntos de conexión para que las devoluciones de llamadas de estado se envíen a los siguientes cambios de estado de solicitud.</li><li>Solo se admiten puntos de conexión HTTPS.</li><li>Se rechazan las URL no válidas.</li></ul></td></tr><tr><td rowspan="2"> <strong>plataforma</strong><br/><br/> </td><td>No</td><td>El valor es una de las plataformas DSR admitidas:<br/><code>android</code>, <code>ios</code>, <code>web</code>, <code>windowsphone</code> </td></tr><tr><td>Sí</td><td><p>Para una solicitud de plataforma de CTV, PC o Consola, incluye cualquiera de las siguientes plataformas: </p><p><code>nativepc</code>, <code>playstation</code>, <code>roku</code>, <code>steam</code>, <code>webos</code>, <br/><code>vidaa</code>,<code>tizen</code>, <code>smartcast</code>, <code>chatgpt</code>, <code>battlenet</code>, <br/><code>quest</code>, <code>switch</code>, <code>xbox</code>, <code>epic</code></p></td></tr></tbody></table>
 
-#### Subject\_identities objects
+#### Objetos subject\_identities
 
-| Object type | **Mandatory** | **Description** |
+| Tipo de objeto | **Obligatorio** | **Description** |
 | --- | --- | --- |
-| identity\_type | Yes | <ul><li>The identity type in string format for `android`, `ios`, `web`, `windowsphone` platforms are any of the following:<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>For `CTV`, `PC`, and `Console`platforms only the following:<ul><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Example: `android_advertising_id`</li></ul>**Important**<br />**Important!**<br /><br />To use CUID through the OpenDSR API, you must send the CUID with `idfa` / `appsflyer_id` inside in-app events using `event_name`: `Login - Complete` or `Registration - Account created` |
-| identity\_value | Yes | <ul><li>Format: String</li><li>Example: "a7551968-d5d6-44b2-9831-815ac9017798"</li></ul> |
-| identity\_format | Yes | <ul><li>The method used to encode the identity\_value: `raw` is the only supported:</li><li>Example: "raw"</li></ul> |
+| identity\_type | Sí | <ul><li>Los tipos de identidad en formato string para las plataformas `android`, `ios`, `web` y `windowsphone` son los siguientes:<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Solo para las plataformas `CTV`, `PC` y `Console`: únicamente los siguientes:<ul><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Ejemplo: `android_advertising_id`</li></ul>**Important**<br />**Importante:**<br /><br />Para usar CUID a través de la API de OpenDSR, debes enviar el CUID con `idfa` / `appsflyer_id` dentro de los eventos in-app mediante `event_name`: `Login - Complete` o `Registration - Account created` |
+| identity\_value | Sí | <ul><li>Formato: Secuencia</li><li>Ejemplo: "a7551968-d5d6-44b2-9831-815ac9017798"</li></ul> |
+| identity\_format | Sí | <ul><li>El método utilizado para codificar el identity\_value: `raw` es el único compatible:</li><li>Ejemplo: "raw"</li></ul> |
 
-#### Example: GDPR erasure request
+#### Ejemplo: Solicitud de eliminación de GDPR
 
-**Example of an erasure request for** `android`, `ios`, `web`, `windowsphone` **platforms:**
+**Ejemplo de una solicitud de eliminación para las plataformas** `android`, `ios`, `web` **y** `windowsphone`:
 
 ```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests' \
@@ -150,13 +149,13 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
 }'
 ```
 
-**Example of an erasure request for**`CTV`, `PC`**, and** `Console` **platforms:**
+**Ejemplo de una solicitud de eliminación para las plataformas** `CTV`, `PC` **y** `Console`:
 
 ```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer %AuthTokenv2% \
+--header 'Authorization: Bearer %AuthTokenv2%' \
 --data-raw '
 {"requester": "test@email.com",
 "subject_request_id":"valid-uuid4-string",
@@ -178,16 +177,16 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
 }'
 ```
 
-<div id="zd-gdpr-erasure-request-code-example" />
+<div id="gdpr-erasure-request-code-example" />
 
-#### GDPR erasure request code example
+#### Ejemplo de código de solicitud de borrado GDPR
 
 <Tabs>
 <Tab title="Java">
 
 ```java
 /*
-using the okhttp package install from maven
+usando el paquete okhttp instalado desde maven
 https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
  */
 
@@ -233,11 +232,11 @@ public class GdprSendRequest {
 
 </Tab>
 
-<Tab title="PythonNode.jsC#">
+<Tab title="Python Node.js C#">
 
 ```python
-""" using the requests python package,
-install using pip install requests """
+""" usando el paquete requests de Python,
+instálalo con pip install requests """
 
 import requests
 import json
@@ -267,8 +266,8 @@ print(res.text)
 ```
 
 ```javascript
-/* using the request npm package,
-install using npm install request */
+/* usando el paquete request de npm,
+instálalo con npm install request */
 
 var request = require("request");
 var options = { method: 'POST',
@@ -324,7 +323,7 @@ using System;
 
     request.AddParameter("undefined", body,ParameterType.RequestBody);
     IRestResponse response = client.Execute(request);
-    // handle response by reading response.StatusCode
+    // gestiona la respuesta leyendo response.StatusCode
     Console.WriteLine(response.Content);
    }
   }
@@ -335,24 +334,24 @@ using System;
 
 </Accordion>
 
-<Accordion title="2. Status request">
+<Accordion title="2. Solicitud del estado">
 
-Every submitted GDPR request can be later queried for its status, by specifying the `subject_request_id`. There are four supported status types:
+Cada solicitud de GDPR enviada puede consultarse más adelante para conocer su estado, especificando el `subject_request_id`. Existen cuatro tipos de estado admitidos:
 
-1. ***pending*** - A correct request has been received and is currently in the queue
-2. ***in\_progress*** - A request is currently being acted on
-3. ***completed*** - A request has been fulfilled
-4. ***canceled*** - A request has been canceled
+1. ***pending*** - Se ha recibido una solicitud correcta y actualmente está en la cola
+2. ***in\_progress*** - Actualmente se está procesando una solicitud
+3. ***completed*** - Se ha completado una solicitud
+4. ***canceled*** - Se ha cancelado una solicitud
 
-#### Status request format
+#### Formato de solicitud de estado
 
-A status request can be submitted via HTTP GET to the following endpoint:
+Se puede presentar una solicitud de estado por medio de HTTP GET al punto de conexión
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
 
-#### Status response example
+#### Ejemplo de respuesta de estado
 
 ```http
 HTTP/1.1 200 OK
@@ -368,11 +367,11 @@ kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j083461xLZ+mUloo3tpsmyI
 }
 ```
 
-#### Status postbacks
+#### Postbacks de estado
 
-As described in the GDPR Request Flow above, when the status of a GDPR request changes, from ***pending*** to ***in\_progress*** to ***completed***, AppsFlyer sends a GDPR postback to the requesting endpoints, specified with the **status\_callback\_urls** property.
+Como se describe arriba en el GDPR Request Flow, cuando cambia el estado de una solicitud de GDPR, de ***pending*** a ***in\_progress*** y luego a ***completed***, AppsFlyer envía un postback de GDPR a los endpoints solicitantes especificados con la propiedad **status\_callback\_urls**.
 
-Status postback example:
+Ejemplo de postback de estado:
 
 ```http
 POST /opengdpr_callbacks HTTP/1.1
@@ -390,46 +389,46 @@ X-OpenGDPR-Signature: kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j
 }
 ```
 
-#### Validate postback
+#### Validar postback
 
-**To validate the authenticity of incoming postbacks**:
+**Para validar la autenticidad de los postbacks entrantes**:
 
-1. Create an allowlist of all the processor domains that you allow to make callbacks.
-2. If the header value for `X-OpenGDPR-Processor-Domain` is in your allowlist, fetch the certificate.
-   * The certificate URL is the value of `processor_certificate` in the `/discovery` response body.
-   * You can also fetch the certificate directly from the AppsFlyer endpoint using the V2 API token as a bearer token in the authorization header: `GET https://hq1.appsflyer.com/api/gdpr/v1/certificate`
-3. Validate the certificate using a library to confirm that the certificate:
-   1. Is issued by a trusted authority.
-   2. Is issued to the same string provided in the `X-OpenGDPR-Processor-Domain` header value.
-   3. Isn’t expired.
-4. Once you confirm the certificate is valid, use it to validate the `X-OpenGDPR-Signature` header against the raw request body. AppsFlyer uses SHA256 RSA as a signing algorithm.
-5. Get a response in the status header:
-   1. `202 Accepted` if validation is successful.
-   2. `401 Unauthorized` if the signature fails to validate or the processor domain isn’t in your allowlist.
+1. Crea una lista de permitidos de todos los dominios de procesador a los que permitas realizar devoluciones de llamada.
+2. Si el valor del encabezado `X-OpenGDPR-Processor-Domain` está en tu allowlist, obtén el certificado.
+   * La URL del certificado es el valor de `processor_certificate` en el cuerpo de la respuesta de `/discovery`.
+   * También puedes obtener el certificado directamente desde el endpoint de AppsFlyer usando el token de API V2 como bearer token en el encabezado de autorización: `GET https://hq1.appsflyer.com/api/gdpr/v1/certificate`
+3. Valida el certificado usando una biblioteca para confirmar que el certificado:
+   1. ha sido emitido por una autoridad de confianza.
+   2. Se emite para el mismo string proporcionado en el valor del encabezado `X-OpenGDPR-Processor-Domain`.
+   3. no ha expirado.
+4. Una vez que confirmes que el certificado es válido, utilízalo para validar el encabezado `X-OpenGDPR-Signature` contra el cuerpo sin procesar de la solicitud. AppsFlyer utiliza SHA256 RSA como algoritmo de firma.
+5. Obtén una respuesta en el encabezado de estado:
+   1. `202 Accepted` si la validación se realiza correctamente.
+   2. `401 Unauthorized` si no se puede validar la firma o el dominio del procesador no está en tu allowlist.
 
 </Accordion>
 
-<Accordion title="3. Report request">
+<Accordion title="3. Solicitud de reporte">
 
-Once an **Access Request** or **Portability Request** has been completed, you can download the report via HTTP GET to the following endpoint:
+Una vez que se haya completado una **Solicitud de acceso** o una **Solicitud de portabilidad**, puedes descargar el reporte mediante HTTP GET en el siguiente endpoint:
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/download/[REQUEST_ID]
 ```
 
-The generated report is available for fourteen days from the time of completion.
+El reporte generado estará disponible durante 14 días a partir de la finalización.
 
 </Accordion>
 
-<Accordion title="4. Discovery request-in process">
+<Accordion title="4. Proceso de solicitud de descubrimiento">
 
-To learn about the formats supported by AppsFlyer, a discovery request can be submitted via HTTP GET to the following endpoint:
+Para conocer los formatos admitidos por AppsFlyer, se puede enviar una solicitud de descubrimiento mediante HTTP GET al siguiente punto de conexión:
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/discovery
 ```
 
-#### Discovery response example
+#### Ejemplo de respuesta de descubrimiento
 
 ```http
 HTTP/1.1 200 OK
@@ -451,67 +450,67 @@ Content-Type: application/json
 
 </Accordion>
 
-<Accordion title="5. Cancellation request">
+<Accordion title="5. Solicitud de cancelación">
 
-It is possible to cancel a GDPR request, based on its `subject_request_id`, but only during the ***pending*** phase.
+Es posible cancelar una solicitud GDPR en función de su `subject_request_id`, pero solo durante la fase ***pending***.
 
-To submit an HTTP DELETE with `subject_request_id` :
+Para enviar una solicitud HTTP DELETE con `subject_request_id`:
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
 
-#### Cancellation response
+#### Respuesta de cancelación
 
-When a GDPR cancellation request is received, AppsFlyer returns an HTTP response with status code 202 and several other parameters.
+Cuando se recibe una solicitud de cancelación GDPR, AppsFlyer devuelve una respuesta HTTP con el código de estado 202 y varios parámetros más.
 
-Once the cancellation of the request takes place AppsFlyer sends a postback with the ***canceled*** status.
+Una vez que se produce la cancelación de la solicitud, AppsFlyer envía un postback con el estado ***canceled*** .
 
 </Accordion>
 
-<Accordion title="6. GDPR requests test API">
+<Accordion title="6. API de prueba de solicitudes GDPR">
 
-This AppsFlyer API is a test API for the AppsFlyer's GDPR Requests API.
+Esta API de AppsFlyer es una API de prueba para la API de solicitudes GDPR de AppsFlyer.
 
-#### How does it work?
+#### ¿Cómo funciona?
 
-The test API works as follows:
+La API de prueba funciona de la siguiente manera:
 
-1. Once a GDPR request has been made, the request is immediately placed in ‘Pending’ status. For testing purposes, the status changes every 30 seconds.
+1. Una vez presentada una solicitud GDPR, inmediatamente se le asigna el estado "Pendiente". A los fines de la prueba, el estado cambia cada 30 segundos.
 
-2. If an endpoint for a status postback has been inserted in the GDPR request, a first postback is sent right after the request and two more status postbacks are sent in 30-second intervals.
+2. Si se insertó un punto de conexión para un postback de estado en la solicitud GDPR, se envía un primer postback inmediatamente después de la solicitud, y dos postbacks de estado más con intervalos de 30 segundos.
 
-**GDPR Request Test Endpoint**: POST
+**Punto de conexión de prueba de solicitud GDPR**: POST
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/stub
 ```
 
-**Status Request Test Endpoint**: GET
+**Punto de conexión de prueba de solicitud de estado**: GET
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/stub/:requestId
 ```
 
-**Discovery Request Test Endpoint**: GET
+**Punto de conexión de prueba de solicitud de descubrimiento**: GET
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/stub/discovery
 ```
 
-**Cancellation Request Test Endpoint**: DELETE
+**Punto de conexión de prueba de solicitud de cancelación**: DELETE
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/stub/:requestId
 ```
 
-**Certificate Test Endpoint**: GET
+**Punto de conexión de prueba del certificado**: GET
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/stubcertificate
 ```
 
-**Access/Portability Reports Test Endpoint**: GET
+**Punto de conexión de prueba de reportes de acceso/portabilidad**: GET
 
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
@@ -519,80 +518,80 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 
 > 📘 **Note**
 >
-> **Notes**
+> **Notas**
 >
-> * A valid V2 API token must be inserted into the request header as follows: `'Authorization': 'Bearer %AuthTokenV2%'`
-> * In the ‘property\_id’ property, the App ID must belong to the account owner (according to the API token).
+> * Se debe insertar un token de API V2 válido en el encabezado de la solicitud de la siguiente manera: `'Authorization': 'Bearer %AuthTokenV2%'`
+> * En la propiedad "property\_id", el ID de la aplicación debe corresponder al propietario de la cuenta (de acuerdo con el token de la API).
 
 </Accordion>
 
-<Accordion title="7. Request logs">
+<Accordion title="7. Registros de solicitudes">
 
-An admin user can access the GDPR requests submitted in the Logs Dashboard.
+Un usuario administrador puede acceder a las solicitudes de RGPD enviadas en el Panel de control de registros.
 
-For completed access and portability requests, it is also possible to download the report from within this dashboard.
+En el caso de las solicitudes de acceso y portabilidad finalizadas, también es posible descargar el reporte desde este panel de control.
 
-To access the Logs Dashboard:
+Para acceder al panel de control de registros:
 
-1. From the top bar, open the account menu (email address dropdown) > **E-GDPR log**.
-2. The following window opens:
+1. En la barra superior, abre el menú de la cuenta (menú desplegable de la dirección de correo electrónico) > **E-GDPR log**.
+2. Se abrirá la siguiente ventana:
 
 ![GDPR_Table.png](https://files.readme.io/5c2b2695b5c273e16a0396f0df2d227a0a0f61af6ad0626c0a911b77edc6a0d2-13949567038481.png)
 
 </Accordion>
 
-<Accordion title="8. GDPR API return codes and error messages">
+<Accordion title="8. Mensajes de error y códigos de retorno de la API de GDPR">
 
-The GDPR API HTTP return codes and error messages are detailed in this section.
+Los mensajes de error y códigos de retorno HTTP de la API de GDPR se detallan en esta sección.
 
-#### GDPR API return codes
+#### Códigos de retorno de la API de GDPR
 
-| Return code | Description |
+| Código de respuesta | Descripción |
 | --- | --- |
-| 201 | Created |
-| 202 | Cancelation request received |
-| 400 | Bad request. The body contains the error code and message as listed in the table that follows. |
+| 201 | Creada |
+| 202 | Solicitud de cancelación recibida |
+| 400 | Solicitud incorrecta. El cuerpo contiene el mensaje y código de error tal como se enumeran en la tabla a continuación. |
 
-#### HTTP return code 400 - bad request
+#### Código de retorno HTTP 400: solicitud incorrecta
 
-Messages having return code 400 contain a JSON with the error code and message.
+Los mensajes que tienen el código de retorno 400 contienen un JSON con el mensaje y código de error.
 
 `{ "error": { "code":400, "af_gdpr_code": "%AF error code%", "message":"%error message text%" } }`
 
-#### Return code 400 bad request messages
+#### Mensajes de solicitud incorrectos, código de retorno 400
 
-| Error code | Error description (message) |
+| Código del error | Descripción del error (mensaje) |
 | --- | --- |
-| e211 | Unable to cancel request with invalid status |
-| e212 | Request not permitted. Erasure is in progress for the identifier. |
-| e213 | Request already exists |
-| e214 | Request not found |
-| e215 | One or more subject-identities already exist in an open request. if another request for the same identity\_value is currently open in ‘pending’ or ‘in\_progress’ state. |
-| e311 | Invalid request content-type |
-| e312 | Invalid API version |
-| e313 | Invalid subject\_request\_id |
-| e314 | Invalid submitted\_time format |
-| e315 | Invalid status\_callback\_url length |
-| e316 | Invalid status\_callback\_url format |
-| e317 | Invalid app\_id format |
-| e318 | Invalid identity\_type |
-| e319 | Application platform does not match identity types |
-| e321 | LAT users are not supported via api |
-| e322 | Invalid subject\_request\_type |
-| e323 | Invalid subject\_identities format |
-| e324 | Invalid subject\_identities length |
-| e325 | Invalid subject\_identities value |
-| e326 | Invalid JSON format in request body |
-| e411 | AppID is incorrect or does not belong to your account |
-| e412 | No permissions to cancel erasure request |
-| e413 | No permissions to view request |
-| e511 | Internal problem, wait 60 minutes and try again. If the problem persists contact AppsFlyer support. support@AppsFlyer.com |
+| e211 | No se puede cancelar la solicitud con un estado inválido |
+| e212 | Solicitud no permitida. La eliminación está en curso para el identificador. |
+| e213 | La solicitud ya existe |
+| e214 | No se encontró la solicitud |
+| e215 | Una o varias identidades del interesado ya existen en una solicitud abierta. si actualmente hay otra solicitud abierta para el mismo identity\_value en estado «pending» o «in\_progress». |
+| e311 | Tipo de contenido de solicitud inválido |
+| e312 | Versión de API inválida |
+| e313 | subject\_request\_id inválido |
+| e314 | Formato de submitted\_time inválido |
+| e315 | Longitud de status\_callback\_url inválida |
+| e316 | Formato de status\_callback\_url inválido |
+| e317 | Formato de app\_id inválido |
+| e318 | identity\_type inválido |
+| e319 | La plataforma de aplicación no coincide con los tipos de identidad |
+| e321 | Los usuarios de LAT no son compatibles a través de la API |
+| e322 | subject\_request\_type inválido |
+| e323 | Formato de subject\_identities inválido |
+| e324 | Longitud de subject\_identities inválida |
+| e325 | Valor subject\_identities inválido |
+| e326 | Formato JSON no válido en el cuerpo de la solicitud |
+| e411 | AppID es incorrecto o no pertenece a tu cuenta |
+| e412 | No hay permisos para cancelar la solicitud de eliminación |
+| e413 | No hay permisos para ver la solicitud |
+| e511 | Problema interno, espera 60 minutos e intenta nuevamente. Si el problema persiste, contacta con el soporte de AppsFlyer: support@AppsFlyer.com support@AppsFlyer.com |
 
 </Accordion>
 
-## Traits and limitations
+## Rasgos y limitaciones
 
-* **OpenDSR API rate limit: 350 requests per minute**. Exceeding this limit will result in an error, requiring the request to be resent. Staying within this rate limit allows for up to 504,000 requests per day.
-* Checking the status of a request from more than 60 days ago returns "request not found".
+* **Límite de tasa de la API de OpenDSR: 350 solicitudes por minuto**. Superar este límite resultará en un error, lo que requerirá que la solicitud sea reenviada. Mantenerse dentro de este límite de tasa permite hasta 504.000 solicitudes por día.
+* Al verificar el estado de una solicitud de hace más de 60 días, se devuelve "solicitud no encontrada".
 
-<div data-zendesk-anchors="h_01HB866TQ0AWHQ9659Q8Q4XMQM=privacy-regulations h_01HB866TQ0R18S4GCH3KPGNJHD=the-opendsr-initiative h_01HB866TQ06XV2AJDMA3M5Q5KK=definitions h_01HB866TQ0JNEZTHQ7BR1TMD5M=dsr-requirements h_01HB866TQ0HNFGF9QTJNT792N7=appsflyer-gdpr-requests-api h_01HB866TQ0FCZGQ1DWENVSWHSG=gdpr-request-flow h_01HB866TQ0GC7V1081GT53TWEZ=gdpr-request-format h_01HB866TQ0CFAC0X2Y98B4EE5Q=parameters h_01HB866TQ02HMKJMKKPHHR4CMN=subject_identities-objects h_01HB866TQ1CT316PTFBJC59C79=example-gdpr-erasure-request gdpr-erasure-request-code-example=zd-gdpr-erasure-request-code-example h_01HB866TQ1D7290A6G29Q4HDE7=gdpr-erasure-request-code-example h_01HB866TQ1YEZZ4M6QMHTKCEGX=status-request-format h_01HB866TQ1M7G7JNH0V7TEVFYY=status-response-example h_01HB866TQ1109WJ2J13D8FM8KX=status-postbacks h_01HB866TQ1YG0B6JDEQ2KMFEN0=validate-postback h_01HB866TQ1AJCSS2442EEWA19X=discovery-response-example h_01HB866TQ1F72KP3S55ZJYC8Y7=cancellation-response h_01HB866TQ1KFRGX7NZCSJWVW0T=how-does-it-work h_01HB866TQ128R2TSHS4JTCQK70=gdpr-api-return-codes http-return-code-400-bad-request=http-return-code-400---bad-request h_01HB866TQ1A51STZQCJC5TV65X=http-return-code-400---bad-request h_01HB866TQ10MAMTS9WB0CKN55V=return-code-400-bad-request-messages limitations=traits-and-limitations h_01HB866TQ1PXGRX5JRHRSCT0EN=traits-and-limitations" />
+<div data-zendesk-anchors="privacy-regulations=regulaciones-de-privacidad h_01HB866TQ0AWHQ9659Q8Q4XMQM=regulaciones-de-privacidad the-opendsr-initiative=la-iniciativa-opendsr h_01HB866TQ0R18S4GCH3KPGNJHD=la-iniciativa-opendsr definitions=definiciones h_01HB866TQ06XV2AJDMA3M5Q5KK=definiciones dsr-requirements=requisitos-de-dsr h_01HB866TQ0JNEZTHQ7BR1TMD5M=requisitos-de-dsr appsflyer-gdpr-requests-api=api-de-solicitudes-gdpr-de-appsflyer h_01HB866TQ0HNFGF9QTJNT792N7=api-de-solicitudes-gdpr-de-appsflyer gdpr-request-flow=flujo-de-solicitudes-gdpr h_01HB866TQ0FCZGQ1DWENVSWHSG=flujo-de-solicitudes-gdpr gdpr-request-format=formato-de-solicitudes-gdpr h_01HB866TQ0GC7V1081GT53TWEZ=formato-de-solicitudes-gdpr parameters=par%C3%A1metros h_01HB866TQ0CFAC0X2Y98B4EE5Q=par%C3%A1metros subject_identities-objects=objetos-subject_identities h_01HB866TQ02HMKJMKKPHHR4CMN=objetos-subject_identities example-gdpr-erasure-request=ejemplo-solicitud-de-eliminaci%C3%B3n-de-gdpr h_01HB866TQ1CT316PTFBJC59C79=ejemplo-solicitud-de-eliminaci%C3%B3n-de-gdpr h_01HB866TQ1D7290A6G29Q4HDE7=ejemplo-de-c%C3%B3digo-de-solicitud-de-borrado-gdpr status-request-format=formato-de-solicitud-de-estado h_01HB866TQ1YEZZ4M6QMHTKCEGX=formato-de-solicitud-de-estado status-response-example=ejemplo-de-respuesta-de-estado h_01HB866TQ1M7G7JNH0V7TEVFYY=ejemplo-de-respuesta-de-estado status-postbacks=postbacks-de-estado h_01HB866TQ1109WJ2J13D8FM8KX=postbacks-de-estado validate-postback=validar-postback h_01HB866TQ1YG0B6JDEQ2KMFEN0=validar-postback discovery-response-example=ejemplo-de-respuesta-de-descubrimiento h_01HB866TQ1AJCSS2442EEWA19X=ejemplo-de-respuesta-de-descubrimiento cancellation-response=respuesta-de-cancelaci%C3%B3n h_01HB866TQ1F72KP3S55ZJYC8Y7=respuesta-de-cancelaci%C3%B3n how-does-it-work=c%C3%B3mo-funciona h_01HB866TQ1KFRGX7NZCSJWVW0T=c%C3%B3mo-funciona gdpr-api-return-codes=c%C3%B3digos-de-retorno-de-la-api-de-gdpr h_01HB866TQ128R2TSHS4JTCQK70=c%C3%B3digos-de-retorno-de-la-api-de-gdpr http-return-code-400-bad-request=c%C3%B3digo-de-retorno-http-400-solicitud-incorrecta h_01HB866TQ1A51STZQCJC5TV65X=c%C3%B3digo-de-retorno-http-400-solicitud-incorrecta return-code-400-bad-request-messages=mensajes-de-solicitud-incorrectos-c%C3%B3digo-de-retorno-400 h_01HB866TQ10MAMTS9WB0CKN55V=mensajes-de-solicitud-incorrectos-c%C3%B3digo-de-retorno-400 limitations=rasgos-y-limitaciones h_01HB866TQ1PXGRX5JRHRSCT0EN=rasgos-y-limitaciones" />

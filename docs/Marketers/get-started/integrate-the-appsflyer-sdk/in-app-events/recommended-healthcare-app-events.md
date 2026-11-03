@@ -1,5 +1,5 @@
 ---
-title: Recommended healthcare app events
+title: Eventos de aplicación recomendados para el cuidado de la salud
 metadata:
   keywords:
     - Advertisers
@@ -14,150 +14,149 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-05-01T10:41:05Z'
-  edited_at: '2023-12-04T11:47:58Z'
+  edited_at: '2026-08-12T12:01:29Z'
   id: 360019888518
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019888518-Recommended-healthcare-app-events
+  url: https://support.appsflyer.com/hc/es/articles/360019888518
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these sample in-app events for your healthcare app.
+> **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app de muestra para tu aplicación del cuidado de la salud.
 
-## <Image alt="5669_Healthcare_icon_3.png" src="https://files.readme.io/bb4bb46d842d1f2d08da548724e7d69910b0a050302fcdbd1500a8ebef325516-20659200427281.png" width="100px" /> Healthcare
+## <Image alt="5669_Icono_de_salud_3.png" src="https://files.readme.io/bb4bb46d842d1f2d08da548724e7d69910b0a050302fcdbd1500a8ebef325516-20659200427281.png" width="100px" /> Cuidado de la salud
 
-Healthcare apps enable users to perform tasks such as purchasing health insurance, making appointments, and receiving medical advice. The typical events that are recorded include logins, registrations, and other general events with no personal or health information.
+Las aplicaciones para el cuidado de la salud permiten a los usuarios realizar tareas, como adquirir seguros de salud, reservar citas y recibir consejo médico. Los eventos típicos que sugerimos registrar incluyen inicios de sesión, registros y otros eventos generales sin información personal o de salud.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * **A note from our lawyers**: Health data is considered "Restricted Data" and is considered a special category of data in many jurisdictions. As such, customers are prohibited from sending AppsFlyer any such data.
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="https://evgen.appsflyer.com/?vertical=healthcare">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="https://evgen.appsflyer.com/?vertical=healthcare&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.
+> * **Una nota de nuestros abogados**: los datos sanitarios se consideran "Datos restringidos" y se consideran una categoría especial de datos en muchas jurisdicciones. Como tales, a los clientes se les prohíbe enviar a AppsFlyer dichos datos.
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="https://evgen.appsflyer.com/?vertical=healthcare">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="https://evgen.appsflyer.com/?vertical=healthcare&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Encontrarás instrucciones detalladas para tu desarrollador en el <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
 ![In_appEvents_UserJourneys_-_Copy_of_Healthcare__1_.png](https://files.readme.io/54174e697c8dfe2d0d388c19fdd5fa0fbf9703c0155b9c250b40b5d0bcf19698-8232949117073.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the healthcare vertical. Each structure includes a predefined event name and the sample event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que son típicas de la vertical del cuidado de la salud. Cada estructura incluye un nombre de evento predefinido y los parámetros del evento de muestra para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Acceso (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Activador**
 
-Whenever the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Learn how many users installed the app and completed the signup process, and what signup methods your users prefer.
+Descubrir cuántos usuarios instalaron la aplicación y completaron el proceso de registro, y qué métodos de registro prefieren tus usuarios.
 
-**Trigger**
+**Disparador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | email, Facebook |
+| af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
 
 <div id="add-to-cart-af_add_to_cart" />
 
-<Accordion title="Add to cart (af_add_to_cart)">
+<Accordion title="Agregar al carrito (af_add_to_cart)">
 
-**Purpose**
+**Finalidad**
 
-Record when a user adds a product to their cart. This event can help you determine:
+Registra cuando un usuario agrega un producto a su carrito. Este evento puede ayudarte a determinar:
 
-* How many products on average buyers add in one purchase
-* How much time passes between adding two different products
-* How many buyers abandon their cart
+* Cuántos productos en promedio agregan los compradores en una sola compra.
+* Cuánto tiempo transcurre desde que se agrega un producto hasta que se agrega otro.
+* Cuántos compradores abandonan su carrito.
 
-**Trigger**
+**Disparador**
 
-When the user adds a product to the cart
+Cuando el usuario agrega un producto al carrito.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_quantity | Amount ordered | 1 |
-| af\_price | Price of the product | 10 |
+| af\_quantity | Cantidad solicitada | 1 |
+| af\_price | Precio del producto | 10 |
 
 </Accordion>
 
 <div id="purchase-af_purchase" />
 
-<Accordion title="Purchase (af_purchase)">
+<Accordion title="Compra (af_purchase)">
 
-**Purpose**
+**Finalidad**
 
-Record in-app purchases made by users. This event can help you:
+Registrar las compras in-app realizadas por los usuarios. Este evento puede ayudarte a:
 
-* Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
-* Determine what offers are most popular with your users
-* Cross-reference campaigns with purchased items in order to optimize campaign targeting
+* Determinar el valor de vida útil (LTV) de tus usuarios y el ROI de tus campañas en todas las agencias y redes de publicidad.
+* Determinar qué ofertas son las más populares entre tus usuarios.
+* Establecer referencias cruzadas entre las campañas y los artículos comprados a fin de optimizar el targeting de las campañas.
 
-**Trigger**
+**Disparador**
 
-When the user lands on the thank you page after a successful purchase
+Cuando el usuario llega a la página de agradecimiento después de una compra exitosa.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Revenue from the purchase | 50.55 |
-| af\_currency | Currency code | USD |
-| af\_order\_id | Order ID | 9277 |
-| payment\_method\_type | Payment method used | credit card, local |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Ingresos de la compra | 50.55 |
+| af\_currency | Código de moneda | USD (Dólar estadounidense) |
+| af\_order\_id | ID del pedido | 9277 |
+| payment\_method\_type | Método de pago utilizado | tarjeta de crédito, local |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides the event structure including the custom event name and sample event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona la estructura del evento, incluidos el nombre del evento personalizado y los parámetros del evento de muestra para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="topup-success-top_up_success" />
 
-<Accordion title="Top-up success (top_up_success)">
+<Accordion title="Recarga exitosa (top_up_success)">
 
-**Purpose**
+**Finalidad**
 
-Top-up funds can be used to buy any package or service offered inside the app. You can record this event and compare it with other data to learn more about your users. For example, you can learn what amounts people are willing to deposit into their accounts and use the top-up amounts to target users with customized campaigns within their top-up budgets.
+Los fondos de recarga se pueden usar para comprar cualquier paquete o servicio que se ofrezca dentro de la aplicación. Puedes registrar este evento y compararlo con otros datos para aprender más acerca de tus usuarios. Por ejemplo, puedes saber qué cantidades están dispuestas a depositar en sus cuentas y usar los montos de recarga para dirigirte a los usuarios con campañas personalizadas dentro de sus presupuestos de recarga.
 
-**Trigger**
+**Disparador**
 
-When the user completes the top-up
+Cuando el usuario completa la recarga.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Amount of the top-up | 2000.55 |
-| top\_up\_id | ID of the top-up | 397 |
-| payment\_method\_type | Payment method used | credit card, local payment |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Cantidad de la recarga | 2000.55 |
+| top\_up\_id | El ID de la recarga | 397 |
+| payment\_method\_type | Método de pago utilizado | credit card, local payment |
 
 </Accordion>
 
-<div data-zendesk-anchors="healthcare=-healthcare h_01HGTAFRKKJ22SHB4JHMTGW2TV=-healthcare h_01HGTAFRKKPWC1PQTKF227WWBD=important h_01HGTAFRKKRB8EY8KJ9NXM4Z2T=recommended-structures-for-predefined-events h_01HGTAFRKK35Q5W5ADQC2KYHR9=login-af_login h_01HGTAFRKK8E52FRVWQXP4Y3VV=complete-registration-af_complete_registration h_01HGTAFRKN6NJPDB053YYYH202=add-to-cart-af_add_to_cart h_01HGTAFRKNJVFECSFGSWG8B7GN=purchase-af_purchase h_01HGTAFRKN29RJRW2V2WCH2AXT=recommended-structures-for-custom-events h_01HGTAFRKNDWHDDR9KDRKJ4H8E=topup-success-top_up_success" />
+<div data-zendesk-anchors="healthcare=-cuidado-de-la-salud h_01HGTAFRKKJ22SHB4JHMTGW2TV=-cuidado-de-la-salud h_01HGTAFRKKPWC1PQTKF227WWBD=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAFRKKRB8EY8KJ9NXM4Z2T=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAFRKK35Q5W5ADQC2KYHR9=login-af_login h_01HGTAFRKK8E52FRVWQXP4Y3VV=complete-registration-af_complete_registration h_01HGTAFRKN6NJPDB053YYYH202=add-to-cart-af_add_to_cart h_01HGTAFRKNJVFECSFGSWG8B7GN=purchase-af_purchase recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAFRKN29RJRW2V2WCH2AXT=estructuras-recomendadas-para-eventos-personalizados h_01HGTAFRKNDWHDDR9KDRKJ4H8E=topup-success-top_up_success" />

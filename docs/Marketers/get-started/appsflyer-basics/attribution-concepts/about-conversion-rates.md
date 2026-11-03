@@ -1,5 +1,5 @@
 ---
-title: About conversion rates
+title: Explicación de las métricas de tasa de conversión
 metadata:
   keywords:
     - Advertisers
@@ -17,52 +17,51 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2017-02-01T09:59:23Z'
-  edited_at: '2025-04-05T12:53:30Z'
+  edited_at: '2026-08-12T11:56:28Z'
   id: 115000610363
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115000610363-About-conversion-rates
+  url: https://support.appsflyer.com/hc/es/articles/115000610363
 ---
-> **At a glance:** Find conversion rate KPIs in AppsFlyer to understand the strengths and weaknesses found at different stages in your marketing funnel.
+> **De un vistazo:** Encuentra KPI de tasa de conversión en AppsFlyer para comprender las fortalezas y debilidades que se encuentran en diferentes etapas de tu embudo de marketing.
 
-## Marketing funnel stages
+## Etapas del embudo de marketing
 
-New users go through a marketing funnel, from the first ad view until revenue is generated. Each of the funnel stages has its own level of success. The more progress a user makes, the better the results for the mobile advertiser. The following image sets out marketing funnel stages.
+Los nuevos usuarios pasan por un embudo de marketing, desde la primera visualización del anuncio hasta que se generan los ingresos. Cada una de las etapas del embudo tiene su propio nivel de éxito. Cuanto más avance un usuario, mejores serán los resultados para el anunciante móvil. La siguiente imagen muestra las etapas del embudo de marketing.
 
 ![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
 
-## Marketing funnel stages and conversion rates
+## Etapas del embudo de marketing y tasas de conversión
 
-Conversion rates help advertisers understand the strengths and weaknesses found at different stages in their marketing funnel. Then, according to the conversion rates, they can **improve the weak parts to help advance more users down the funnel.**
+Las tasas de conversión ayudan a los anunciantes a comprender las fortalezas y debilidades que se encuentran en diferentes etapas de su embudo de marketing. Luego, según las tasas de conversión, pueden **mejorar las partes débiles para ayudar a que más usuarios avancen por el embudo.**
 
-See the table that follows for:
+Consulta la siguiente tabla para ver:
 
-* Descriptions of the marketing funnel stages and conversion rates
-* Where the metrics are available, marked as:
-  * **AppsFlyer**: Overview dashboard and <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">aggregate reports and analytics</Anchor>
-  * **App store**: The data is available only from the app store
-* How advertisers can use the metrics to improve their marketing results
+* Descripciones de las etapas del embudo de marketing y las tasas de conversión
+* Dónde están disponibles las métricas, marcadas como:
+  * **AppsFlyer**: panel de control general y <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview">reportes de estadísticas agregadas y análisis</Anchor>
+  * **App Store**: los datos solo están disponibles en la App Store
+* Cómo los anunciantes pueden usar las métricas para mejorar sus resultados de marketing
 
-#### Marketing funnel stages and conversion rates
+#### Etapas del embudo de marketing y tasas de conversión
 
-| Stage | Name | Description | Where available | How to optimize conversion rates |
+| Etapa | Nombre | Descripción | Dónde está disponible | Cómo optimizar las tasas de conversión |
 | --- | --- | --- | --- | --- |
-| 1 | Impression | User views a web or mobile ad. | AppsFlyer |  |
-| 2 | Click | <ul><li>User clicks on an ad and is redirected to an advertised page or app activity.</li><li>Or, user visits the app's store page without clicking.</li></ul> | AppsFlyer |  |
-| Conversion rate | **Click-through rate (clicks/impressions)\*100** | <ul><li>Measures users who click after seeing an ad.</li><li>To calculate, use impression and click metrics in AppsFlyer.</li></ul> |  | <ul><li>Improve the affinity of your creatives and your targeted audiences: visuals, copy, localization, and targeting.</li><li>Experiment with fresh audiences and media sources.</li></ul> |
-| 3 | App store | User reaches the app's page in the app store. | App store |  |
-| Conversion rate | **Click-to-app store rate (app store visits/clicks)\*100** | Measures how many users clicked the ad and allowed the app's page in the app store to fully load. | App store | Improve app store page load time. Remove large elements that slow the page down. |
-| 4 | Download | User downloads the app from the app store. | App store |  |
-| Conversion rate | **App store-to-download rate (downloads/app store visits)\*100** | Measures how many users download the app after visiting the app's page in the app store. | App store | <ul><li>Improve app store page messaging.</li><li>Try different calls to action.</li></ul> |
-| 5 | Install | User installs and opens the app on their device.<ul><li>~10% fewer installs compared to downloads.</li><li>Example: If AppsFlyer shows 200 campaign installs, then approx. 220 users downloaded the app.</li></ul> | AppsFlyer |  |
-| Conversion rate | **Click-to-install rate (installs/clicks)\*100** | Measures how many users installed the app after clicking the ad. | AppsFlyer | <ul><li>Improve audience targeting.</li><li>Reduce app install time.</li></ul> |
-| 6 | In-app event | User performs an in-app action such as a purchase. | AppsFlyer |  |
-| Conversion rate | **Event conversion rate (Event CVR)**<br /><br />**(in-app events/installs)\*100** | <ul><li>Measures how many users perform an in-app event after install. <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#event-cvr">[Article]</Anchor></li><li>Examples: Register, make a purchase, complete a level, etc.</li><li>Enables Cost per Action (CPA) calculations.</li></ul> | AppsFlyer | <ul><li>Provide timely messaging and calls to action.</li><li>Improve the user interface.</li><li>Organize retargeting campaigns using deep links. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">[Article]</Anchor></li></ul> |
+| 1 | Impresión | El usuario ve un anuncio web o móvil. | AppsFlyer |  |
+| 2 | Clic | <ul><li>El usuario hace clic en un anuncio y es redirigido a una página anunciada o a una actividad de la aplicación.</li><li>O bien, el usuario visita la página de la tienda de la aplicación sin hacer clic.</li></ul> | AppsFlyer |  |
+| tasa de conversión | **Tasa de clics (clics/impresiones)\*100** | <ul><li>Mide los usuarios que hacen clic después de ver un anuncio.</li><li>Para calcular, utiliza las métricas de impresiones y clics en AppsFlyer.</li></ul> |  | <ul><li>Mejora la afinidad de tus creatividades y tus audiencias objetivo: imágenes, copia, localización y targeting.</li><li>Experimenta con nuevas audiencias y fuentes de medios.</li></ul> |
+| 3 | App Store | El usuario llega a la página de la aplicación en la tienda de aplicaciones. | App Store |  |
+| tasa de conversión | **Tasa de clics a la tienda de aplicaciones (visitas/clics en la tienda de aplicaciones)\*100** | Mide cuántos usuarios hicieron clic en el anuncio y permitieron que la página de la aplicación en la tienda de aplicaciones se cargara por completo. | App Store | Mejora el tiempo de carga de la página de la tienda de aplicaciones. Elimina los elementos grandes que ralentizan la página. |
+| 4 | Descargar | El usuario descarga la aplicación desde la tienda de aplicaciones. | App Store |  |
+| tasa de conversión | **Tasa de la tienda de aplicaciones a la descarga (descargas/visitas a la tienda de aplicaciones)\*100** | Mide cuántos usuarios descargan la aplicación después de visitar la página en la tienda de aplicaciones. | App Store | <ul><li>Mejora la mensajería de la página de la tienda de aplicaciones.</li><li>Prueba diferentes llamadas a la acción.</li></ul> |
+| 5 | Instalación | El usuario instala y abre la aplicación en su dispositivo.<ul><li>~10 % menos de instalaciones en comparación con las descargas.</li><li>Ejemplo: si AppsFlyer muestra 200 instalaciones de campaña, aproximadamente 220 usuarios descargaron la aplicación.</li></ul> | AppsFlyer |  |
+| tasa de conversión | **Tasa de clics a instalación (instalaciones/clics)\*100** | Mide cuántos usuarios instalaron la aplicación después de hacer clic en el anuncio. | AppsFlyer | <ul><li>Mejora la segmentación de la audiencia.</li><li>Reduce el tiempo de instalación de la aplicación.</li></ul> |
+| 6 | Evento in-app | El usuario realiza una acción en la aplicación, como una compra. | AppsFlyer |  |
+| tasa de conversión | **Tasa de conversión de eventos (Event CVR)**<br /><br />**(eventos in-app/instalaciones)\*100** | <ul><li>Mide cuántos usuarios realizan un evento in-app después de la instalación. <Anchor target="_blank" href="/marketers/es/docs/appsflyer-knowledge-base-glossary#cvr-de-eventos">[Artículo]</Anchor></li><li>Ejemplos: registra, realiza una compra, completa un nivel, etc.</li><li>Habilita los cálculos de costo por acción (CPA).</li></ul> | AppsFlyer | <ul><li>Proporciona mensajería oportuna y llamadas a la acción.</li><li>Mejora la interfaz de usuario.</li><li>Organiza las campañas de retargeting mediante enlaces profundos. <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">[Artículo]</Anchor></li></ul> |
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="https://www.appsflyer.com/blog/measurement-analytics/mobile-app-metrics/">Everything you need to know about app marketing KPIs</Anchor>
+> * <Anchor target="_blank" href="https://www.appsflyer.com/blog/measurement-analytics/mobile-app-metrics/">Todo lo que necesitas saber sobre los KPI de marketing de aplicaciones</Anchor>
 
-<div data-zendesk-anchors="h_01HE0CXZY2STAERN0SYZJ2QY4K=marketing-funnel-stages h_01HE0CXZY2PZH6WAEEZFNFVT45=marketing-funnel-stages-and-conversion-rates marketing-funnel-stages-and-conversion-rates::74b1530a=marketing-funnel-stages-and-conversion-rates-1 h_01HE0CXZY24CB2YHT4ZQEKQAXX=marketing-funnel-stages-and-conversion-rates-1 h_01HE0CYPNSBRP4JYZV4NDV2HX8=see-also" />
+<div data-zendesk-anchors="marketing-funnel-stages=etapas-del-embudo-de-marketing h_01HE0CXZY2STAERN0SYZJ2QY4K=etapas-del-embudo-de-marketing marketing-funnel-stages-and-conversion-rates=etapas-del-embudo-de-marketing-y-tasas-de-conversi%C3%B3n h_01HE0CXZY2PZH6WAEEZFNFVT45=etapas-del-embudo-de-marketing-y-tasas-de-conversi%C3%B3n marketing-funnel-stages-and-conversion-rates::74b1530a=etapas-del-embudo-de-marketing-y-tasas-de-conversi%C3%B3n-1 h_01HE0CXZY24CB2YHT4ZQEKQAXX=etapas-del-embudo-de-marketing-y-tasas-de-conversi%C3%B3n-1 h_01HE0CYPNSBRP4JYZV4NDV2HX8=consulta-tambi%C3%A9n" />

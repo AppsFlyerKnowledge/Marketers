@@ -1,5 +1,5 @@
 ---
-title: Test PBA web SDK integration
+title: Prueba la integración del SDK web de PBA
 metadata:
   keywords:
     - Developers
@@ -14,120 +14,153 @@ x-zendesk:
     - Marketers
     - Cross-Platform Measurement
   created_at: '2020-09-01T19:09:41Z'
-  edited_at: '2024-01-11T11:04:05Z'
+  edited_at: '2026-08-12T12:11:48Z'
   id: 360012729178
-  locale: en-us
+  locale: es
   section: People Based Attribution (PBA)
   section_id: 43560588808721
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360012729178-Test-PBA-web-SDK-integration
+  url: https://support.appsflyer.com/hc/es/articles/360012729178
 ---
-> **At a glance:** Test the Web SDK PBA plugin integration.
+> **De un vistazo:** prueba la integración del complemento Web SDK PBA.
 
-## Test PBA web events
+## Prueba los eventos web de la PBA
 
-**Principles of using the test page**
+**Principios de uso de la página de prueba.**
 
-Web SDK sends web events to PBA, which are made available via PBA dashboards and raw data reports, after daily processing. To enable an efficient testing process, you send test events without waiting for daily processing. Test events are:
+Web SDK envía eventos web a PBA, que están disponibles a través de paneles de control de PBA e reportes de raw data, después del procesamiento diario. Para permitir un proceso de prueba eficiente, envía eventos de prueba sin esperar el procesamiento diario. Los eventos de prueba son:
 
-* Parsed and validated on receipt.
-* Made available to you in the user interface. This includes processing errors. If they exist, send corrected events again to make sure they are processed correctly.
-* Are processed like any other event during daily processing. This means they are added to the dashboards and raw data.
+* Analizado y validado al recibirlo.
+* Disponible para ti en la interfaz de usuario. Esto incluye errores de procesamiento. Si existen, envía los eventos corregidos nuevamente para asegurarse de que se procesen correctamente.
+* Se procesan como cualquier otro evento durante el procesamiento diario. Esto significa que se agregan a los paneles de control y a la raw data.
 
-#### Web SDK integration test page
+#### Página de prueba de integración del SDK web
 
-<div id="page-main-view" />
+<Table>
+  <tbody>
+    <tr>
+      <td>
+        <span id="page-main-view"></span>**Vista principal de la página**
 
-<table><tbody><tr><td><p><strong>Page main view</strong></p><p><a href="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg"><img alt="TestScreen_us-en.jpg" src="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg"/></a></p><ul><li>The most recent events appear first.</li><li><strong>Event cache</strong>:<ul><li>Contains up to 100 events</li><li>Older events are deleted to make way for newer events</li><li>Cached events are deleted after 24 hours</li></ul></li><li><strong>Page controls</strong>:<ul><li><strong>Refresh rate indicator</strong>: The page refreshes automatically every 5 seconds.</li><li><strong>Clear all</strong>: Clears events from the cache permanently. <strong>Note!</strong> The cache is common to websites sharing the same web dev key. Thus, if another developer is using the test page, it will clear for them as well. </li><li><strong>Pause/start</strong>: Pauses automatic refresh. New events don't display until you click start. </li></ul></li></ul><p><strong>Event table columns</strong></p><table><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody><tr><td>Time (UTC)</td><td>Event time</td></tr><tr><td>Event type</td><td><p>Event types are as follows:</p><ul><li>Events sent by you:<ul><li><code>EVENT</code></li><li><code>setCustomerUserId</code></li><li><code>pageLoad</code>: Sent by the web SDK each time a page is loaded/refreshed on your website</li></ul></li></ul></td></tr><tr><td>Event content</td><td><p>The event payload, as recorded by PBA.</p></td></tr><tr><td>Comments</td><td><ul><li><strong><span>Valid</span></strong>: PBA received and recorded the event. No further action is required.</li><li><strong>Invalid</strong>: List of errors requiring corrective action. The error message format is:<br/>event field name: error description </li><li>Hover over error messages to see details:<br/><p><img alt="PBAWebSDKTestingErrorMessagesPopup_en-us.png" src="https://files.readme.io/0e050e60dbf9f1289880b5d58c4885d4be66392265986eaf4b2f76876697e429-360011317358.png"/></p></li></ul></td></tr></tbody></table></td></tr><tr><td><p><strong>Drill-down view<br/><br/></strong><a href="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png"><img alt="mceclip0.png" src="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png"/></a></p><p>Click an event row to display its contents after processing. See <a href="./pba-web-sdk-integration-guide#web-sdk-event-parameters" target="_blank">Web SDK event parameters</a> for additional information</p></td></tr></tbody></table>
+        [<Image alt="TestScreen_us-en.jpg" src="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg" width="338px" />](https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg)
 
-## Procedures
+        * Los eventos más recientes aparecen primero.
+        * **Caché de eventos**:
+          * Contiene hasta 100 eventos.
+          * Los eventos más antiguos se eliminan para dar paso a eventos más nuevos.
+          * Los eventos almacenados en caché se eliminan después de 24 horas
+        * **Controles de página**:
+          * **Indicador de frecuencia de actualización**: La página se actualiza automáticamente cada 5 segundos.
+          * **Borrar todo**: Borra eventos del caché de forma permanente. **¡Atención!** **Nota:** El caché es común a los sitios web que comparten la misma clave de desarrollo web. Por lo tanto, si otro desarrollador está utilizando la página de prueba, también se borrará para él.
+          * **Pausa/inicio**: Pausa la actualización automática. Los nuevos eventos no se muestran hasta que haces clic en iniciar.
 
-Complete the procedures that follow.
+        **Columnas de la tabla de eventos**
+
+        | Campo | Descripción |
+        | --- | --- |
+        | Hora (UTC) | Hora del evento |
+        | Tipo de evento | Los tipos de eventos son los siguientes:<br /><br />* Eventos enviados por ti:<br />  * `EVENT`<br />  * `setCustomerUserId`<br />  * `pageLoad`: Enviado por el SDK web cada vez que se carga/actualiza una página en tu sitio web |
+        | Contenido del evento | La carga útil del evento, según lo registrado por PBA. |
+        | Comentarios | * **Válido**: la PBA recibió y registró el evento. No se requiere ninguna acción adicional.<br />* **Inválido**: lista de errores que requieren acción correctiva. El formato del mensaje de error es:  <br />  nombre del campo del evento: descripción del error<br />* Pasa el cursor sobre los mensajes de error para ver los detalles:  <br /><br />  ![PBAWebSDKTestingErrorMessagesPopup_en-us.png](https://files.readme.io/0e050e60dbf9f1289880b5d58c4885d4be66392265986eaf4b2f76876697e429-360011317358.png) |
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Vista detallada**[<Image alt="mceclip0.png" src="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png" width="573px" />](https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png)
+
+        Haz clic en una fila de evento para mostrar su contenido después del procesamiento. Consulta <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">los parámetros de eventos del SDK web</Anchor> para obtener información adicional.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+## Procedimientos
+
+Completa los procedimientos que siguen.
 
 <div id="enable-test-mode" />
 
-<Accordion title="Enable test mode">
+<Accordion title="Habilitar modo de prueba">
 
-**Prerequisites**
+**Requisitos previos**
 
-Before testing, <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#installation-and-integration">the web SDK must be implemented on your website</Anchor> or on a test website.
+Antes de realizar la prueba, <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#installation-and-integration">el SDK web debe implementarse en tu sitio web</Anchor> o en un sitio web de prueba.
 
-**Browser limitation**
+**Limitación del navegador**
 
-If test mode is enabled on a given browser, irrespective of the tab; the browser can only be used to connect to the website specified and not to any other website. Use a different browser, for example, Safari instead of Chrome, to connect from the same machine to a different website.
+Si el modo de prueba está habilitado en un navegador determinado, independientemente de la pestaña; el navegador sólo se puede utilizar para conectarse al sitio web especificado y no a ningún otro sitio web. Utiliza un navegador diferente, por ejemplo, Safari en lugar de Chrome, para conectarse desde la misma máquina a un sitio web diferente.
 
-**To enable test mode:**
+**Para habilitar el modo de prueba:**
 
-1. **Verify that the SDK is loaded:**
-   1. In AppsFlyer, from the top menu, select **My Apps** > **View brand** **bundles**.
-   2. Select the required **Web SDK integration test.** The integration page opens. The web dev key is displayed.  
+1. **Verifica que el SDK esté cargado:**
+   1. En AppsFlyer, en el menú superior, selecciona **Mis aplicaciones** > **Ver paquetes de marcas.**
+   2. Selecciona la prueba requerida **de integración del SDK web.** Se abre la página de integración. Se muestra la clave de desarrollo web.  
 
       [![pba_web_sdk_integration_test_web_dev_key_en-us.png](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)
-   3. In a new browser tab, go to your website (that has the Web SDK installed).
-   4. Right-click and select inspect to open the browser developer tools.
-   5. Go to the **Console** tab.
-   6. In the console, enter:  
+   3. En una nueva pestaña del navegador, ve a tu sitio web (que tiene instalado el SDK web).
+   4. Haz clic derecho y selecciona inspeccionar para abrir las herramientas de desarrollo del navegador.
+   5. Vaya a la pestaña **Consola**.
+   6. En la consola, ingresa:  
 
       ```javascript
-      window.AF_SDK.initPluginsConfig.pba.webAppId
+      ventana.AF_SDK.initPluginsConfig.pba.webAppId
       ```
 
-      The webAppID displays.
+      Se muestra el ID de la aplicación web.
 
       [![testing_pba_integration_webappid_check_en-us.png](https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png)](https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png)
-   7. Verify that the webAppID is identical to the web dev key in the **Web SDK integration test** page.
-2. **Enable test mode**:
-   1. In the website browser tab, go to the **Console** tab.
-   2. Enter:
+   7. Verifica que webAppID sea idéntica a la clave de desarrollo web en la página **de prueba de integración del SDK web** .
+2. **Habilita el modo de prueba**:
+   1. En la pestaña del navegador del sitio web, ve a la pestaña **Consola** .
+   2. introduce:
 
       ```javascript
-      window.AF_SDK.PLUGINS.PBA.turnOnDevMode()
+      ventana.AF_SDK.PLUGINS.PBA.turnOnDevMode()
       ```
 
-      The function returns `undefined`.
+      La función regresa`undefined`.
 
       [![testing_pba_integration_turnondevmode.png](https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png)](https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png)
-3. **Verify that test mode is enabled:**
-   * In **Console** tab, Enter:  
+3. **Verifica que el modo de prueba esté habilitado:**
+   * En la pestaña **Consola** , ingresa:  
 
      ```javascript
-     window.AF_SDK.PLUGINS.PBA.isDevModeOn()
+     ventana.AF_SDK.PLUGINS.PBA.isDevModeOn()
      ```
 
-     The return value is `true`. This indicates that test mode is active.   
+     El valor de retorno es `true`. Esto indica que el modo de prueba está activo.   
      [![PBATestingWebSDKIntegrationIsDevModeOn_en-us.png](https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png)](https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png)
 
 </Accordion>
 
 <div id="send-test-events" />
 
-<Accordion title="Send test events">
+<Accordion title="Enviar eventos de prueba">
 
-* In test mode, events that you send are displayed in the test integration page
-* Note! Test events are processed and subsequently will be included in PBA reports. To avoid distorting reports, populate `eventRevenue` with low (small) values. If no value is sent, PBA populates it with 0.
+* En el modo de prueba, los eventos que envías se muestran en la página de integración de prueba.
+* ¡Atención! Nota: Los eventos de prueba se procesan y posteriormente se incluirán en los reportes de la PBA. Para evitar distorsionar los reportes, completa `eventRevenue` con valores bajos (pequeños). Si no se envía ningún valor, PBA lo completa con 0.
 
-Send example events of each of the types described.
+Enviar eventos de ejemplo de cada uno de los tipos descritos.
 
-| Step | Action<br /><br />(Enter commands) | Web SDK test integration page<br /><br />(Expected result) |
+| Paso | Acción<br /><br />(Ingrese comandos) | Página de integración de prueba del SDK web<br /><br />(Resultado esperado) |
 | --- | --- | --- |
-| 1 | Open a new tab in the browser and browse to any page on your website. | PBA registers a `'pageLoad'` event whenever your website opens/refreshes:<br /><br />[<Image alt="PBATestingWebSDKPageLoadEvent_en-us.png" src="https://files.readme.io/25ae1b2efbfea897caeb5da94d683b3465c9068245acbedb976959cb8fd3cc77-360011369638.png" width="226px" />](https://files.readme.io/25ae1b2efbfea897caeb5da94d683b3465c9068245acbedb976959cb8fd3cc77-360011369638.png) |
-| 2 | Login/register to your website as a user <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#setting-customer-user-id-after-signup">to trigger a setCustomerUserId event</Anchor>. | [<Image alt="mceclip3.png" src="https://files.readme.io/7fb5276c5d24b1c6128aaee60684e9f2941e1686eeef4dcf4df4a91c86c9ebb6-360011199558.png" width="226px" />](https://files.readme.io/7fb5276c5d24b1c6128aaee60684e9f2941e1686eeef4dcf4df4a91c86c9ebb6-360011199558.png) |
-| 3 | <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#recording-event-scenarios">Start sending web events</Anchor> to verify PBA processes them correctly.<br /><br />**Note:**<br /><br />If not specified, `eventRevenue` and `eventRevenueCurrency` are populated with default values:<ul><li>`eventRevenueCurrency: "USD"`</li><li>`eventRevenue: 0`</li></ul>[<Image alt="PBAWebSDKTestEventEVENT_en-us.png" src="https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png" width="233px" />](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)<br /><br />See <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">Web SDK event parameters for additional details.</Anchor> | [<Image alt="mceclip5.png" src="https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png" width="226px" />](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png) |
+| 1 | Abre una nueva pestaña en el navegador y navega hasta cualquier página de tu sitio web. | PBA registra un `'pageLoad'` evento cada vez que tu sitio web se abre/actualiza:<br /><br />[<Image alt="PBATestingWebSDKPageLoadEvent_en-us.png" src="https://files.readme.io/25ae1b2efbfea897caeb5da94d683b3465c9068245acbedb976959cb8fd3cc77-360011369638.png" width="226px" />](https://files.readme.io/25ae1b2efbfea897caeb5da94d683b3465c9068245acbedb976959cb8fd3cc77-360011369638.png) |
+| 2 | Inicia sesión o regístrate en tu sitio web como usuario <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#setting-customer-user-id-after-signup">para activar un evento setCustomerUserId</Anchor>. | [<Image alt="mceclip3.png" src="https://files.readme.io/7fb5276c5d24b1c6128aaee60684e9f2941e1686eeef4dcf4df4a91c86c9ebb6-360011199558.png" width="226px" />](https://files.readme.io/7fb5276c5d24b1c6128aaee60684e9f2941e1686eeef4dcf4df4a91c86c9ebb6-360011199558.png) |
+| 3 | <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#recording-event-scenarios">Comienza a enviar eventos web</Anchor> para verificar que PBA los procese correctamente.<br /><br />**Nota:**<br /><br />Si no se especifica, `eventRevenue` y `eventRevenueCurrency` se rellenan con valores predeterminados:<ul><li>`eventRevenueCurrency: "USD"`</li><li>`eventRevenue: 0`</li></ul>[<Image alt="PBAWebSDKTestEventEVENT_en-us.png" src="https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png" width="233px" />](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)<br /><br />Consulta <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">Parámetros de eventos del SDK web para obtener detalles adicionales.</Anchor> | [<Image alt="mceclip5.png" src="https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png" width="226px" />](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png) |
 
 </Accordion>
 
-## Troubleshooting
+## Resolución de problemas
 
 <div id="events-do-not-display-in-the-test-page" />
 
-<Accordion title="Events do not display on the test page">
+<Accordion title="Los eventos no se muestran en la página de prueba.">
 
-1. In the browser developer tools, go to **Network** tab.
-2. In the filter field, enter "websdk."
-3. Based on the HTTP response code, proceed as follows:
-   * 200: Reach out to AppsFlyer technical support.
-   * 400: Check that all parameters are enclosed in " ".
+1. En las herramientas de desarrollo del navegador, ve a **la**pestaña**Red** .
+2. En el campo de filtro, ingresa "websdk".
+3. Según el código de respuesta HTTP, procede de la siguiente manera:
+   * 200: Comunícate con el soporte técnico de AppsFlyer.
+   * 400: Comprueba que todos los parámetros estén encerrados en " ".
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW32BE04AKHFMY853211C1A=test-pba-web-events h_01HKW32BE0Z2ZKTBHSCSWVT04N=web-sdk-integration-test-page h_01HKW32BE0VA0X9ZX4Z26EY6CZ=procedures h_01HKW32BE08Z9CCMBPK4Z0854C=enable-test-mode h_01HKW32BE0E4A1W221FKY97EZB=send-test-events h_01HKW32BE1HFV0NM64QMASBCCT=troubleshooting h_01HKW32BE1QHV0W6ZDYHG94RQA=events-do-not-display-in-the-test-page" />
+<div data-zendesk-anchors="test-pba-web-events=prueba-los-eventos-web-de-la-pba h_01HKW32BE04AKHFMY853211C1A=prueba-los-eventos-web-de-la-pba web-sdk-integration-test-page=p%C3%A1gina-de-prueba-de-integraci%C3%B3n-del-sdk-web h_01HKW32BE0Z2ZKTBHSCSWVT04N=p%C3%A1gina-de-prueba-de-integraci%C3%B3n-del-sdk-web procedures=procedimientos h_01HKW32BE0VA0X9ZX4Z26EY6CZ=procedimientos h_01HKW32BE08Z9CCMBPK4Z0854C=enable-test-mode h_01HKW32BE0E4A1W221FKY97EZB=send-test-events troubleshooting=resoluci%C3%B3n-de-problemas h_01HKW32BE1HFV0NM64QMASBCCT=resoluci%C3%B3n-de-problemas h_01HKW32BE1QHV0W6ZDYHG94RQA=events-do-not-display-in-the-test-page" />

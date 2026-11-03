@@ -1,5 +1,5 @@
 ---
-title: Pivot table—user metrics
+title: Tabla dinámica—métricas de usuario
 metadata:
   keywords:
     - Pivot
@@ -16,107 +16,108 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2017-03-16T13:11:23Z'
-  edited_at: '2026-03-19T11:52:08Z'
+  edited_at: '2026-08-12T11:49:54Z'
   id: 115001421846
-  locale: en-us
+  locale: es
   section: Analytics and aggregate reporting/APIs
   section_id: 6550976670225
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115001421846-Pivot-table-user-metrics
+  url: https://support.appsflyer.com/hc/es/articles/115001421846
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance**: View different user metrics—LTV, activity, Protect360, and retention. Download results to CSV files for ingestion by your BI systems. Pivot supports multiple apps in a single query. Use to generate Master API calls.
+> **De un vistazo**: Ver diferentes métricas de usuario—LTV, actividad, Protect360 y retención. Descarga los resultados en archivos CSV para que los procesen tus sistemas de Business Intelligence. Pivote admite varias aplicaciones en una sola consulta. Úsalo para generar llamadas a la API maestra.
 
-## About pivot reports page
+## Acerca de la página de informes de pivote
 
-Using Pivot, you generate customized reports containing user acquisition metrics. Pivot comes with a number of pre-defined reports to use as a base from which you create your customized reports. Reports created by a given account user are available to all users.
+Con Pivote, genera reportes personalizados que contienen métricas de adquisición de usuarios. Pivote viene con una serie de reportes predefinidos que puedes utilizar como base a partir de la cual creas tus reportes personalizados. Los reportes creados por un usuario de la cuenta determinado están disponibles para todos los usuarios.
 
-The pre-defined pivot reports available are:
+Los reportes de pivote predefinidos disponibles son:
 
-* Media source by date
-* Full hierarchy
-* Cost analysis
+* Fuente de medios por fecha
+* Jerarquía completa
+* Análisis de costos
 
-**Note**: For campaign data to be visible in pivots, the campaigns must have installs.
+**Nota**: Para que los datos de la campaña sean visibles en los pivotes, las campañas deben tener instalaciones.
 
-## Pivot procedures
+## Procedimientos de pivote
 
-Create and modify existing pivots in the user interface. To do so, use the procedures in the sections that follow.
+Crea y modifica pivotes existentes en la interfaz de usuario. Para hacerlo, utiliza los procedimientos de las secciones siguientes.
 
-**To use Pivot**:
+**Para usar Pivote**:
 
-* In AppsFlyer, from the side menu, select **Analyze** > **Pivot**.  
-  The list of currently defined reports displays.
+* En AppsFlyer, desde el menú lateral, seleccione **Analizar** > **Eventos**.  
+  Se muestra la lista de reportes definidos actualmente.
 
 <div id="pivot-page-controls-and-options" />
 
-<Accordion title="Pivot page—controls and options">
+<Accordion title="Página de pivote: controles y opciones">
 
 <Table>
   <thead>
     <tr>
       <th>
-        Column/option
+        Columna/opción
       </th>
       <th>
-        Description
+        Descripción
       </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>
-        Name
+        Nombre
       </td>
       <td>
-        Select a report name to view the associated pivot.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Column click
-      </td>
-      <td>
-        Some columns, as indicated in the interface, are sorted by clicking on the column name.
+        Selecciona un nombre de reporte para ver el pivote asociado.
       </td>
     </tr>
     <tr>
       <td>
-        Last modified
+        Clic en columna
       </td>
       <td>
-        Last time the report structure was modified.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Modified by
-      </td>
-      <td>
-        Name of the user who modified the pivot.
+        Algunas columnas, como se indica en la interfaz, se ordenan haciendo clic en el nombre de la columna.
       </td>
     </tr>
     <tr>
       <td>
-        App name
+        Última modificación
       </td>
       <td>
-        <ul><li>If one app included: the app name</li><li>If multiple apps are included: the number of apps</li></ul>
+        Última vez que se modificó la estructura del reporte.
       </td>
     </tr>
     <tr>
       <td>
-        Actions
+        Modificado por
       </td>
       <td>
-        | Action | Remarks |
+        Nombre del usuario que modificó el pivote.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Nombre de la aplicación
+      </td>
+      <td>
+        * Si se incluyó una aplicación: el nombre de la aplicación
+        * Si se incluyen varias aplicaciones: la cantidad de aplicaciones
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Acciones
+      </td>
+      <td>
+        | Acción | Observaciones |
         | --- | --- |
-        | Duplicate | Copy an existing pivot report. |
-        | Rename | Change the name of the report. |
-        | View history log | See who handled the report structure, what was done, and when. |
-        | Copy Master API link | Generate a URL to pull the data via <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>. To use Master API, your need to get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor> (admin permissions required) to use in the authentication header. |
-        | Delete | Delete the selected pivot. |
+        | Duplicar | Copia un reporte de pivote existente. |
+        | Cambiar nombre | Cambia el nombre del reporte. |
+        | Ver registro de historial | Mira quién manipuló la estructura del reporte, qué se hizo y cuándo. |
+        | Copiar enlace de la API maestra | Genera una URL para extraer los datos a través de la <Anchor target="_blank" href="/marketers/es/docs/master-api-user-acquisition-metrics-via-api">API maestra</Anchor>. Para usar la API maestra, es necesario obtener el <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">token de API</Anchor> (se requieren permisos de administrador) que se utilizará en el encabezado de autenticación. |
+        | Eliminar | Elimina el pivote seleccionado. |
       </td>
     </tr>
   </tbody>
@@ -126,74 +127,74 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 
 <div id="add-a-pivot-report" />
 
-<Accordion title="Add a pivot report">
+<Accordion title="Agregar un reporte de pivote">
 
-**To add a pivot report**:
+**Para agregar un reporte de pivote**:
 
-1. Click **Add pivot.**  
-   The New pivot window opens.
-2. Enter the pivot name.
-3. Click **Submit.**  
-   The Add pivot table window opens.
-4. Select apps, dimensions, and metrics. Set filters and value display settings.
+1. Haz clic en **Agregar pivote.**  
+   Se abre la ventana Nuevo pivote.
+2. Ingresa el nombre del pivote.
+3. Haga clic en **Enviar**.  
+   Se abre la ventana Agregar tabla de pivote.
+4. Selecciona aplicaciones, dimensiones y métricas. Establece filtros y ajustes de visualización de valores.
 
-| Section | Description |
+| Sección | Descripción |
 | --- | --- |
-| Apps | Select 1 or more apps to include in the pivot. |
-| Dimensions | [<Image alt="" src="https://files.readme.io/9b0fda106b5de3401a71ceaeb45bac5cc4215b164e263a1422bf6097a9320553-360002246845.png" width="221px" />](https://files.readme.io/9b0fda106b5de3401a71ceaeb45bac5cc4215b164e263a1422bf6097a9320553-360002246845.png)<br /><br />Use dimensions to group, structure, and sort your pivot reports.<br /><br />**To select dimensions**:<ol><li>Click **Dimensions.**</li><li>Select a dimension, then drag it to a section. Dimensions have the following impact on the Pivot:<ul><li>**Rows**: Dimensions placed in rows determine the group-by hierarchy.</li><li>**Columns**: Dimensions placed in columns multiply the entire table result according to the dimension values.</li></ul></li></ol> |
-| KPIs | [<Image alt="" src="https://files.readme.io/6b210b1bdc38ee96ef8b73dcacbac3389b914aaef76a680604e41d4becbad807-360000640109.png" width="294px" />](https://files.readme.io/6b210b1bdc38ee96ef8b73dcacbac3389b914aaef76a680604e41d4becbad807-360000640109.png)<br /><br />KPIs are grouped according to type as follows:<ul><li>LTV</li><li><Anchor target="_blank" href="/marketers/docs/activity-dashboard#specifications-and-limitations">Activity</Anchor></li><li>Retention: Retention day, Retention rate. **Note**: Scroll-down in the retention section to select Retention rates and Protect360 (for accounts that have Protect360 enabled.)</li><li><Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api#kpis">About the metrics.</Anchor></li></ul>Most times, place KPIs in the value section. If needed, KPIs can be used as a dimension.<br /><br />Drag and drop the KPI to the relevant section. |
-| Values | For each KPI, set the calculation method by selecting an operator:<ul><li>Sum</li><li>Count</li><li>Max</li><li>Min</li><li>Rate</li><li>Average</li></ul> |
-| Filters | Place the required filters in the filters section. Configure how filters are set:<ul><li>Text</li><li>Multi-select</li></ul> |
+| Apps | Selecciona 1 o más aplicaciones para incluir en el pivote. |
+| Dimensiones | [<Image alt="" src="https://files.readme.io/9b0fda106b5de3401a71ceaeb45bac5cc4215b164e263a1422bf6097a9320553-360002246845.png" width="221px" />](https://files.readme.io/9b0fda106b5de3401a71ceaeb45bac5cc4215b164e263a1422bf6097a9320553-360002246845.png)<br /><br />Utiliza las dimensiones para agrupar, estructurar y ordenar tus reportes de pivote.<br /><br />**Para seleccionar dimensiones**:<ol><li>Haz clic en **Dimensiones.**</li><li>Selecciona una dimensión, luego arrástrala a una sección. Las dimensiones tienen el siguiente impacto en el pivote:<ul><li>**Filas**: las dimensiones colocadas en las filas determinan la jerarquía de agrupación.</li><li>Columnas Columnas: las dimensiones colocadas en columnas multiplican el resultado de toda la tabla de acuerdo con los valores de dimensión.</li></ul></li></ol> |
+| KPIs | [<Image alt="" src="https://files.readme.io/6b210b1bdc38ee96ef8b73dcacbac3389b914aaef76a680604e41d4becbad807-360000640109.png" width="294px" />](https://files.readme.io/6b210b1bdc38ee96ef8b73dcacbac3389b914aaef76a680604e41d4becbad807-360000640109.png)<br /><br />Los KPI se agrupan por tipo de la siguiente manera:<ul><li>Característica</li><li><Anchor target="_blank" href="/marketers/es/docs/activity-dashboard#especificaciones-y-limitaciones">ACTIVIDAD</Anchor></li><li>Retención Día de retención, tasa de retención. **Nota**: Nota: Desplázate hacia abajo en la sección de retención para seleccionar Tasas de retención y Protect360 (para cuentas que tienen Protect360 habilitado).</li><li><Anchor target="_blank" href="/marketers/es/docs/master-api-user-acquisition-metrics-via-api#kpis">Sobre las métricas.</Anchor></li></ul>La mayoría de las veces, coloca los KPI en la sección de valor. Si es necesario, los KPI se pueden utilizar como dimensión.<br /><br />Arrastra y suelta el KPI en la sección correspondiente. |
+| Los valores | Para cada KPI, establece el método de cálculo seleccionando un operador:<ul><li>Suma</li><li>Recuento</li><li>Máx.</li><li>Mín.</li><li>Calificación</li><li>Promedio</li></ul> |
+| Filtros | Coloca los filtros necesarios en la sección de filtros. Configura cómo se establecen los filtros:<ul><li>Texto</li><li>Selección múltiple</li></ul> |
 
 </Accordion>
 
 <div id="view-a-pivot-report" />
 
-<Accordion title="View a pivot report">
+<Accordion title="Ver un reporte de pivote">
 
 [![](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)
 
-**To view a pivot report**:
+**Para ver un reporte de pivote**:
 
-* Select a report in the Pivot page to display it.
-* Report display options:
+* Selecciona un reporte en la página Pivote para mostrarlo.
+* Opciones de visualización de reportes:
 
-| Section | Description |
+| Sección | Descripción |
 | --- | --- |
-| (1) Selected dimensions | The first column holds the dimensions selected for the groupings of the report. The dimensions are grouped according to the order in the pivot edit page. In the example above, the primary dimension is the app name, followed by the media source, and ending with the install date. |
-| (2) Metrics | The rest of the columns are the KPIs selected as **Values** in the pivot edit page. In the example above, the first KPI is impressions, followed by clicks, installs, etc. |
-| (3) Filters | The filters set for the report in the pivot edit page appear here. You can type your filtering string or select multiple items with the drop-down boxes.<br /><br />[**![](https://files.readme.io/e7f16a6e848b8e9f6942615dd14257b3c0e358cefabbdcfe86c498612fcaae26-115004149786.png)**](https://files.readme.io/e7f16a6e848b8e9f6942615dd14257b3c0e358cefabbdcfe86c498612fcaae26-115004149786.png) |
-| (4) Date selected | Use the Date Selector to refine your search to specific dates. Select your own custom date range or use one of the preset date range buttons. |
-| (5) Actions | You can access the same actions per pivot report as available in the [pivot reports list](/docs/pivot-table-user-metrics#view-a-pivot-report). |
+| (1) Dimensiones seleccionadas | La primera columna contiene las dimensiones seleccionadas para los grupos del reporte. Las dimensiones se agrupan según el orden en la página de edición de pivote. En el ejemplo anterior, la dimensión principal es el nombre de la aplicación, seguido de la fuente de medios y terminando con la fecha de instalación. |
+| (2) Métricas | El resto de las columnas son KPI seleccionados como **Valores** en la página de edición de pivote. En el ejemplo anterior, el primer KPI son las impresiones, seguidas de los clics, las instalaciones, etc. |
+| (3) Filtros | Los filtros establecidos para el reporte en la página de edición de pivote aparecen aquí. Puedes escribir tu cadena de filtrado o seleccionar varios elementos con los cuadros desplegables.<br /><br />[**![](https://files.readme.io/e7f16a6e848b8e9f6942615dd14257b3c0e358cefabbdcfe86c498612fcaae26-115004149786.png)**](https://files.readme.io/e7f16a6e848b8e9f6942615dd14257b3c0e358cefabbdcfe86c498612fcaae26-115004149786.png) |
+| (4) Fecha seleccionada | Usa el selector de fechas para refinar tu búsqueda en fechas específicas. Selecciona tu propio intervalo de fechas personalizado o usa uno de los botones de intervalo de fechas preestablecidos. |
+| (5) Acciones | Puedes acceder a las mismas acciones por reporte de pivote que están disponibles en la [lista de reportes de pivote](/docs/pivot-table-user-metrics#view-a-pivot-report). |
 
 </Accordion>
 
-## Traits and limitations
+## Rasgos y limitaciones
 
 <div id="traits-and-limitations::e6883df" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Rasgos y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Ad network access to report | No |
-| Agency access | No |
-| Agency transparency | Yes |
-| App-specific time zone | Yes<br /><br />Exception: In all of the following cases, AppsFlyer ignores the app-specific time zone and uses the default time zone UTC +0:<ul><li>The report contains data from multiple apps, and the apps have different time zones.</li><li>The apps all have the same time zone, and the time zone for at least one of the apps changed during the cohort report period. To determine the report period:<ul><li>Start date: The first date in the conversion date range.</li><li>End date: Calculated by adding the number of days in the display duration to the last date in the conversion date range. Example: Last date: Jan 1, 2019. Report duration: 30 days. End date: Jan 31, 2019.</li></ul></li></ul> |
-| App-specific currency | Results always return in USD. |
-| Organic data | Included |
-| Non-organic data | Included |
-| Data freshness | Data freshness: Daily. The data freshness is equivalent to that of <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>. |
-| Account user access | Yes |
-| Retargeting revenue | Included |
-| Campaign name changes | Pivot doesn't align the campaign name cost to the most recent campaign name reported. This means that each campaign name used will have a cost associated with it. |
-| Retargeting data | <ul><li>In general, use <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort</Anchor> to view retargeting data.</li><li>Activity KPIs for traffic from after February 1, 2025 include unified data (UA and retargeting together).</li></ul> |
-| Cost data | AppsFlyer gets cost data primarily via cost API. Data is provided by the integrated partners. <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">List of dimensions per integrated partner.</Anchor> |
-| Retention rate | To get retention rate, include installs in the report. |
-| Maximum rows per report | 200K |
-| Historical data | <ul><li>LTV data: 25 months (2 years + 1 month)</li><li>Activity data: 3 years</li></ul> |
-| Average DAU and Average MAU | When using Average DAU or Average MAU with the Sum aggregation across any grouping (e.g., Media Source or Campaign), the totals may include duplicate user counts. This occurs when a user performs both an install and a re-engagement within the selected period, causing them to appear under multiple groupings. |
+| Acceso a la red de publicidad para reportar | No |
+| Acceso a la agencia | No |
+| Transparencia de agencia | Sí |
+| Zona horaria específica de la aplicación | Sí<br /><br />Excepción: Excepción: en todos los casos siguientes, AppsFlyer ignora la zona horaria específica de la aplicación y utiliza la zona horaria por defecto UTC +0:<ul><li>El reporte contiene datos de múltiples aplicaciones, y las aplicaciones tienen diferentes zonas horarias.</li><li>Todas las aplicaciones tienen la misma zona horaria, y la zona horaria de por lo menos una de las aplicaciones cambió durante el periodo del reporte de cohortes. Para determinar el periodo del reporte:<ul><li>fecha de inicio La primera fecha en el rango de fechas de conversión.</li><li>Fecha de finalización: se calcula sumando el número de días de la duración que se muestra hasta la última fecha del intervalo de fechas de conversión. Ejemplo: Última fecha: ENE 1, 2019 Duración del informe: 30 días Fecha de finalización. Duración del reporte: 30 días. Fecha de finalización.</li></ul></li></ul> |
+| Moneda específica de la aplicación | Los resultados siempre se devuelven en USD. |
+| Datos orgánicos | Incluidos |
+| Datos no orgánicos | Incluidos |
+| Actualización de los datos | Actualización de datos: Diariamente. La actualización de los datos es equivalente a la de la <Anchor target="_blank" href="/marketers/es/docs/master-api-user-acquisition-metrics-via-api">API maestra</Anchor>. |
+| Acceso de usuario a la cuenta | Sí |
+| Ingresos de retargeting | Incluidos |
+| Cambios de nombre de la campaña | Pivot no alinea el costo del nombre de la campaña con el nombre de la campaña recientemente reportado. Esto significa que cada nombre de campaña utilizado tendrá un costo asociado. |
+| Datos de retargeting | <ul><li>En general, usa <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard">Cohorte</Anchor> para ver datos de retargeting.</li><li>Los KPI de actividad para el tráfico posterior al 1 de febrero de 2025 incluyen datos unificados (UA y retargeting juntos).</li></ul> |
+| Datos de costes | AppsFlyer obtiene los datos de costos principalmente a través de la API de costos. Los datos los proporcionan los partners integrados. <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">Lista de dimensiones por partner integrado.</Anchor> |
+| Tasa de retención | Para obtener la tasa de retención, incluye las instalaciones en el reporte. |
+| Máximo de filas por reporte | 200 000 |
+| Datos históricos | <ul><li>Datos de LTV: 5 años</li><li>Datos de actividad: 3 años</li></ul> |
+| DAU medio y MAU medio | Cuando se usa DAU promedio o MAU promedio con la agregación Suma en cualquier agrupación (por ejemplo, fuente de medios o campaña), los totales pueden incluir recuentos de usuarios duplicados. Esto ocurre cuando un usuario realiza tanto una instalación como un re-engagement dentro del periodo seleccionado, lo que hace que aparezca en varias agrupaciones. |
 
 </Accordion>
 
-<div data-zendesk-anchors="pivot-reports-page=about-pivot-reports-page h_01HJR8389QPFKR9X6V52N7PHMM=about-pivot-reports-page h_01HJR8389QPNRX8Y26VQWN0ZXP=pivot-procedures pivot-page%E2%80%94controls-and-options=pivot-page-controls-and-options h_01HJR8389QDDWR8ZKCSDZGVAGP=pivot-page-controls-and-options h_01HJR8389R2C1E42JN9NFMS4CJ=add-a-pivot-report h_01HJR8389SQ40HZ8EXQME4807S=view-a-pivot-report h_01HJR8389SPJZG6AYGABB17V1N=traits-and-limitations h_01HJR8389S19TVMVR60ZYAJMAA=traits-and-limitations::e6883df" />
+<div data-zendesk-anchors="pivot-reports-page=acerca-de-la-p%C3%A1gina-de-informes-de-pivote h_01HJR8389QPFKR9X6V52N7PHMM=acerca-de-la-p%C3%A1gina-de-informes-de-pivote pivot-procedures=procedimientos-de-pivote h_01HJR8389QPNRX8Y26VQWN0ZXP=procedimientos-de-pivote pivot-page%E2%80%94controls-and-options=pivot-page-controls-and-options h_01HJR8389QDDWR8ZKCSDZGVAGP=pivot-page-controls-and-options h_01HJR8389R2C1E42JN9NFMS4CJ=add-a-pivot-report h_01HJR8389SQ40HZ8EXQME4807S=view-a-pivot-report traits-and-limitations=rasgos-y-limitaciones h_01HJR8389SPJZG6AYGABB17V1N=rasgos-y-limitaciones h_01HJR8389S19TVMVR60ZYAJMAA=traits-and-limitations::e6883df" />

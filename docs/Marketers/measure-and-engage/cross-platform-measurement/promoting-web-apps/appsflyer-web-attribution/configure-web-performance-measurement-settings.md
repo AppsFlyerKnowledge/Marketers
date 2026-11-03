@@ -1,5 +1,5 @@
 ---
-title: Configure Web Performance Measurement settings
+title: Configurar los ajustes de atribución web de AppsFlyer
 metadata:
   keywords:
     - Web Attribution
@@ -13,465 +13,464 @@ x-zendesk:
     - Marketers
     - Web Attribution
   created_at: '2026-02-05T08:47:53Z'
-  edited_at: '2026-08-03T08:33:38Z'
+  edited_at: '2026-08-12T12:10:54Z'
   id: 43541863890961
-  locale: en-us
+  locale: es
   section: AppsFlyer Web Attribution
   section_id: 43560690387729
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/43541863890961-Configure-Web-Performance-Measurement-settings
+  url: https://support.appsflyer.com/hc/es/articles/43541863890961
 ---
-> **At a glance:** Configure your web attribution settings to control how AppsFlyer attributes website visits, conversions, and user activity to marketing campaigns. Settings include attribution windows, user acquisition events, re-engagement rules, and domain exclusions.
+> **De un vistazo:** Configura los ajustes de atribución web para controlar cómo AppsFlyer atribuye las visitas al sitio web, las conversiones y la actividad de los usuarios a las campañas de marketing. Los ajustes incluyen ventanas de atribución, eventos de adquisición de usuarios, reglas de re-engagement y exclusiones de dominio.
 
-## Overview
+## Visión general
 
-Web attribution settings define how AppsFlyer measures and attributes user activity on your website. These settings determine:
+Los ajustes de atribución web definen cómo AppsFlyer mide y atribuye la actividad de los usuarios en tu sitio web. Estos ajustes determinan:
 
-* Which events qualify as user acquisition.
-* How long to attribute subsequent events to marketing sources.
-* When to consider users as returning (re-engagement) or reacquired.
-* Which domains to exclude from attribution.
+* Qué eventos califican como adquisición de usuarios.
+* Durante cuánto tiempo se atribuyen los eventos posteriores a las fuentes de marketing.
+* Cuándo considerar que los usuarios vuelven (re-engagement) o se reacquieren.
+* Qué dominios excluir de la atribución.
 
-### Who should configure these settings
+### Quién debe configurar estos ajustes
 
-Marketing teams and growth managers typically configure these settings based on business objectives. Technical teams may be involved for SDK integration and domain configuration.
+Normalmente, los equipos de marketing y los responsables de crecimiento configuran estos ajustes en función de los objetivos de negocio. Los equipos técnicos pueden participar en la integración del SDK y en la configuración del dominio.
 
-### Accessing web attribution settings
+### Acceder a los ajustes de atribución web
 
-To access your web app's attribution settings:
+Para acceder a los ajustes de atribución de tu aplicación web:
 
-1. In AppsFlyer, go to **My Apps**
-2. Select your web app from the list
-3. Navigate to **App Settings** > **Attribution**
+1. En AppsFlyer, ve a **My Apps**
+2. Selecciona tu aplicación web de la lista
+3. Ve a **App Settings** > **Attribution**
 
-## Quick reference
+## Referencia rápida
 
-| Setting | Default | Options | Editable | What it controls |
+| Ajustes | Predeterminado | Opciones | Editable | Qué controla |
 | --- | --- | --- | --- | --- |
-| App name | User input | 1–100 chars | Yes | Display name in AppsFlyer |
-| Full URL (primary domain) | User input | 1–500 chars | No | App identifier and primary excluded domain |
-| Web SDK ID | Auto-generated | 1–550 chars | No | SDK identifier for event collection |
-| Currency | User-selected | ISO codes | Yes | Revenue and ROI reporting |
-| Time zone | User-selected | IANA zones | Limited | Reporting timestamps |
-| User acquisition event | First visit | Event name | Yes | When a user is considered acquired |
-| Lookback window (UA) | 30 days | 1 hour–90 days | Yes | How far back to find a UA touchpoint |
-| Re-engagement window | 30 days | 1 hour–90 days | Yes | How long retargeting gets credit |
-| Inactivity window (re-engagement) | Disabled | 0–30 days | Yes | Minimum inactivity for retargeting |
-| Attribution window | Lifetime | Preset options | Yes | How long events are attributed to UA |
-| Inactivity window (re-acquisition) | 90 days | 1–180 days | Yes | When users are considered churned |
-| Re-acquisition event | Visit | Event name | Yes | What brings churned users back |
-| Excluded domains | Primary only | Up to 100 | Yes | Domains ignored for attribution |
+| Nombre de aplicación | Entrada del usuario | 1–100 caracteres | Sí | Nombre visible en AppsFlyer |
+| URL completa (dominio principal) | Entrada del usuario | 1–500 caracteres | No | Identificador de la App y dominio principal excluido |
+| ID de SDK web | Generado automáticamente | 1–550 caracteres | No | Identificador del SDK para la recopilación de eventos |
+| Truemoney | Seleccionado por el usuario | Códigos ISO | Sí | Reportes de ingresos y ROI |
+| Zona horaria | Seleccionado por el usuario | Zonas IANA | Limitado | Marcas temporales de los informes |
+| Evento de adquisición de usuarios | Primera visita | Tasa del impuesto sobre los ingresos netos | Sí | Cuándo se considera que se ha adquirido un usuario |
+| Ventana de lookback (UA) | 30 días. | 1 hora–90 días | Sí | Hasta dónde retroceder para encontrar un punto de contacto de UA |
+| Ventana de reengagement | 30 días. | 1 hora–90 días | Sí | Durante cuánto tiempo el retargeting recibe la atribución |
+| Ventana de inactividad (re-engagement) | Desactivado | 0–30 días | Sí | Inactividad mínima para retargeting |
+| Ventana de atribuciones | Duración | Opciones predefinidas | Sí | Durante cuánto tiempo los eventos se atribuyen a UA |
+| Ventana de inactividad (re-acquisition) | 90 días | 1–180 días | Sí | Cuándo se considera que los usuarios han hecho churn |
+| Evento de readquisición | Visita | Tasa del impuesto sobre los ingresos netos | Sí | Qué hace que los usuarios que se han dado de baja vuelvan |
+| Dominios excluidos | Solo primario | Hasta 100 | Sí | Dominios ignorados para la atribución |
 
-**Constraint:**  
-The re-engagement inactivity window must be **shorter than or equal to** the re-acquisition inactivity window. Otherwise, users could be reacquired before qualifying for retargeting.
+**Restricción:**  
+La ventana de inactividad de re-engagement debe ser **menor o igual que** la ventana de inactividad de readquisición. De lo contrario, los usuarios podrían volver a adquirirse antes de cumplir los requisitos para el retargeting.
 
-## **Basic settings**
+## **Configuración básica**
 
-The basic settings for the web app are:
+La configuración básica de la aplicación web es la siguiente:
 
-* App name
-* Full URL
-* Web SDK ID
-* Currency
-* Time zone
+* Nombre de aplicación
+* URL completa
+* ID de SDK web
+* Truemoney
+* Zona horaria
 
-For more information see <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#web">Adding an app to AppsFlyer</Anchor>.
+Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer#web">Añadir una aplicación a AppsFlyer</Anchor>.
 
-## User acquisition settings
+## Configuración de adquisición de usuarios
 
-User acquisition (UA) settings determine how AppsFlyer identifies when a user is first acquired and how to attribute that acquisition to marketing sources.
+La configuración de adquisición de usuarios (UA) determina cómo AppsFlyer identifica cuándo se adquiere por primera vez un usuario y cómo atribuir esa adquisición a las fuentes de marketing.
 
 <div id="user-acquisition-event" />
 
-<Accordion title="User acquisition event">
+<Accordion title="Evento de adquisición de usuario">
 
-The event that triggers user acquisition. This is an important business action that defines when you consider a user truly "acquired."
+El evento que desencadena la adquisición de usuarios. Esta es una acción empresarial importante que define cuándo consideras que un usuario está realmente "adquirido".
 
-#### Why customize
+#### Por qué personalizarlo
 
-The default **first visit** often represents a weak signal of user value. A user might click an ad accidentally or bounce immediately. By customizing this setting, you ensure that long-term value (LTV) is attributed to the marketing source that drove a meaningful action, not just a curiosity click.
+De forma predeterminada, la **primera visita** suele representar una señal débil del valor del usuario. Un usuario puede hacer clic en un anuncio por accidente o abandonar de inmediato. Al personalizar esta configuración, te aseguras de que el valor a largo plazo (LTV) se atribuya a la fuente de marketing que impulsó una acción significativa, y no solo un clic por curiosidad.
 
-**Default:** first visit (user is acquired on their first website visit)
+**Predeterminado:** primera visita (el usuario se adquiere en su primera visita al sitio web)
 
-#### Common alternatives by industry
+#### Alternativas habituales por industria
 
-| **Industry** | **Recommended UA Event** |
+| **industria** | **Evento de UA recomendado** |
 | --- | --- |
-| Banking/Finance | registration or first\_time\_deposit |
-| E-commerce | sign\_up or first\_purchase |
-| Food Delivery | first\_order |
-| SaaS/Subscription | subscription\_start |
-| Gaming | sign\_up ortutorial\_complete or first\_purchase |
+| Banca/Finanzas | registration o first\_time\_deposit |
+| Comercio electrónico | sign\_up o first\_purchase |
+| Delivery | first\_order |
+| SaaS/Suscripción | inicio\_de\_la\_suscripción |
+| Gaming | sign\_up o tutorial\_complete o first\_purchase |
 
-#### How it works
+#### Cómo funciona
 
-If set to **first visit**:
+Si se establece en **primera visita**:
 
-* Users are acquired immediately on their first website visit.
-* Attribution begins from the first visit.
+* Los usuarios se adquieren inmediatamente en su primera visita al sitio web.
+* La atribución comienza desde la primera visita.
 
-If set to **a custom event** (e.g., sign\_up):
+Si se establece en **un evento personalizado** (p. ej., sign\_up):
 
-* Users enter a **"pre-acquisition period"** from first visit until they perform the event.
-* During pre-acquisition, events are attributed to the last non-organic touchpoint within the lookback window (last-touch attribution).
-* Once the custom UA event occurs, a **User Acquisition conversion** is created and long-term attribution begins.
+* Los usuarios entran en un **«período previo a la adquisición»** desde la primera visita hasta que realizan el evento.
+* Durante el período previo a la adquisición, los eventos se atribuyen al último punto de contacto no orgánico dentro de la ventana de lookback (atribución de último toque).
+* Una vez que se produce el evento de UA personalizado, se crea una **conversión de Adquisición de usuarios** y comienza la atribución a largo plazo.
 
-#### Example scenario (UA event = sign\_up):
+#### Ejemplo de escenario (evento de UA = sign\_up):
 
-* **Day 0:** User visits from Facebook ad → Pre-acquisition period begins
-* **Day 2:** User visits from Google ad → Credit switches to Google (last touch)
-* **Day 3:** User signs up → User acquisition attributed to Google ad
+* **Día 0:** El usuario llega desde un anuncio de Facebook → comienza el periodo previo a la adquisición
+* **Día 2:** El usuario llega desde un anuncio de Google → el crédito pasa a Google (último toque)
+* **Día 3:** El usuario se registra → la adquisición de usuarios se atribuye al anuncio de Google
 
-**Day 10:** User makes purchase → Purchase attributed to Google for LTV measurement
+**Día 10:** El usuario realiza una compra → la compra se atribuye a Google para la medición del LTV
 
 </Accordion>
 
 <div id="lookback-window-user-acquisition" />
 
-<Accordion title="Lookback window (user acquisition)">
+<Accordion title="Ventana de lookback (adquisición de usuarios)">
 
-How far back in time AppsFlyer looks to find the marketing touchpoint that drove user acquisition.
+Hasta cuánto tiempo atrás busca AppsFlyer para encontrar el punto de contacto de marketing que impulsó la adquisición de usuarios.
 
-This window controls how long AppsFlyer "remembers" a marketing touchpoint. If a user visits from an ad but doesn't complete the UA event until later, this setting determines whether the ad still gets credit.
+Esta ventana controla durante cuánto tiempo AppsFlyer «recuerda» un punto de contacto de marketing. Si un usuario llega desde un anuncio pero no completa el evento de UA hasta más tarde, esta configuración determina si el anuncio sigue recibiendo el crédito.
 
-**Default:** 30 days
+**Por defecto:** 30 días
 
-**Range:** 1 hour to 90 days
+**Rango:** de 1 hora a 90 días
 
-#### How it works
+#### Cómo funciona
 
-When a user performs the UA event (e.g., sign\_up), AppsFlyer looks back within this window to find the most recent non-organic touchpoint and attributes the acquisition to that marketing source.
+Cuando un usuario realiza el evento de UA (p. ej., sign\_up), AppsFlyer busca dentro de esta ventana el punto de contacto no orgánico más reciente y atribuye la adquisición a esa fuente de marketing.
 
-#### Example 1 (30-day lookback):
+#### Ejemplo 1 (lookback de 30 días):
 
-* **Day 0:** User clicks Facebook ad and visits website
-* **Day 25:** User returns directly and completes sign\_up event
-* **Result:** User acquisition attributed to Facebook (within 30-day lookback window)
+* **Día 0:** El usuario hace clic en un anuncio de Facebook y visita el sitio web
+* **Día 25:** El usuario vuelve directamente y completa el evento sign\_up
+* **Resultado:** La adquisición de usuarios se atribuye a Facebook (dentro de la ventana de lookback de 30 días)
 
-#### Example 2 (window expired):
+#### Ejemplo 2 (ventana expirada):
 
-* **Day 0:** User clicks Facebook ad and visits website
-* **Day 40:** User returns directly and completes sign\_up event
+* **Día 0:** El usuario hace clic en un anuncio de Facebook y visita el sitio web
+* **Día 40:** El usuario vuelve directamente y completa el evento sign\_up
 
-**Result:** User acquisition marked as organic (outside 30-day lookback window)
+**Resultado:** La adquisición de usuarios se marca como orgánica (fuera de la ventana de lookback de 30 días)
 
 </Accordion>
 
-## Re-engagement settings
+## Configuración de re-engagement
 
-Re-engagement settings control how AppsFlyer attributes activity when acquired users return to your website through retargeting campaigns.
+La configuración de re-engagement controla cómo AppsFlyer atribuye la actividad cuando los usuarios adquiridos regresan a tu sitio web a través de campañas de retargeting.
 
 <div id="reengagement-window-item" />
 
-<Accordion title="Re-engagement window">
+<Accordion title="Ventana de reengagement">
 
-How long after a re-engagement conversion AppsFlyer continues to attribute events to that marketing touchpoint.
+Cuánto tiempo sigue AppsFlyer atribuyendo eventos a ese punto de contacto de marketing después de una conversión de re-engagement.
 
-This setting determines how long retargeting campaigns get credit for user activity. It balances giving credit to retargeting efforts while still attributing long-term LTV back to the original acquisition source.
+Esta configuración determina durante cuánto tiempo las campañas de retargeting reciben crédito por la actividad del usuario. Equilibra el crédito de las acciones de retargeting sin dejar de atribuir el LTV a largo plazo a la fuente de adquisición original.
 
-**Default:** 30 days
+**Por defecto:** 30 días
 
-**Range:** 1 hour to 90 days
+**Rango:** de 1 hora a 90 días
 
-#### How it works
+#### Cómo funciona
 
-When an acquired user returns via a non-organic source (e.g., retargeting ad) and meets re-engagement criteria, a **retargeting conversion** is created. Events within this window receive **dual attribution**:
+Cuando un usuario adquirido vuelve a través de una fuente no orgánica (por ejemplo, un anuncio de retargeting) y cumple los criterios de re-engagement, se crea una **conversión de retargeting**. Los eventos dentro de esta ventana reciben **atribución dual**:
 
-1. **Primary attribution** → Retargeting campaign
-   * Purpose: Credit the retargeting campaign
-2. **Secondary attribution** → Original UA source
-   * Purpose: Support UA view that measures full user lifetime value (LTV) back to original acquisition
+1. **Atribución principal** → Campaña de retargeting
+   * Objetivo: dar crédito a la campaña de retargeting
+2. **Atribución secundaria** → Fuente de UA original
+   * Objetivo: dar soporte a la vista de UA, que mide el valor del ciclo de vida completo del usuario (LTV) desde la adquisición original
 
-#### Example (within window):
+#### Ejemplo (dentro de la ventana):
 
-* **Day 0:** User acquired via Facebook ad
-* **Day 50:** User clicks email retargeting campaign and returns (retargeting conversion created)
-* **Day 60:** User makes $100 purchase (10 days after retargeting)
-* **Result - Dual attribution:**
-  * **Primary (Retargeting view):** Email campaign gets credit for $100 purchase
-  * **Secondary (UA view):** Facebook ad also tracked for $100 in user's LTV
-* **Reports:**
-  * Unified view: Shows purchase attributed to Email
-  * Retargeting view: Shows purchase attributed to Email
-  * UA view: Shows purchase attributed to Facebook
+* **Día 0:** Usuario adquirido a través de un anuncio de Facebook
+* **Día 50:** El usuario hace clic en una campaña de retargeting por correo electrónico y vuelve (se crea una conversión de retargeting)
+* **Día 60:** El usuario realiza una compra de 100 $ (10 días después del retargeting)
+* **Resultado - Atribución dual:**
+  * **Principal (vista de retargeting):** La campaña de correo electrónico recibe crédito por la compra de 100 $
+  * **Secundaria (vista de UA):** El anuncio de Facebook también se registra para 100 $ en el LTV del usuario
+* **Reportes:**
+  * Vista unificada: muestra la compra atribuida al correo electrónico
+  * Vista de retargeting: muestra la compra atribuida al correo electrónico
+  * Vista de UA: muestra la compra atribuida a Facebook
 
 </Accordion>
 
 <div id="inactivity-window-for-reengagement" />
 
-<Accordion title="Inactivity window for re-engagement">
+<Accordion title="Ventana de inactividad para re-engagement">
 
-The minimum period of user inactivity required before a non-organic touchpoint can create a re-engagement (retargeting) conversion.
+El período mínimo de inactividad del Usuario requerido antes de que un punto de contacto no orgánico pueda generar una conversión de Re-engagement (retargeting).
 
-Prevent crediting retargeting campaigns when users are already actively engaged with your website. This optimizes retargeting budget by ensuring campaigns target truly inactive users.
+Evita atribuir conversiones a campañas de retargeting cuando los usuarios ya están comprometidos activamente con tu sitio web. Esto optimiza el presupuesto de retargeting al garantizar que las campañas se dirijan a usuarios realmente inactivos.
 
-**Default:** Disabled
+**Predeterminado:** Desactivado
 
-**Range:** 0 (disabled) to 30 days
+**Rango:** de 0 (desactivado) a 30 días
 
-#### How it works
+#### Cómo funciona
 
-**When disabled:**
+**Cuando está desactivado:**
 
-* Every non-organic touchpoint from an acquired user creates a retargeting conversion
+* Cada punto de contacto no orgánico de un usuario adquirido genera una conversión de retargeting
 
-**When enabled (e.g., 7 days):**
+**Cuando está activado (por ejemplo, 7 días):**
 
-* Only creates retargeting conversion if user has been inactive for at least 7 days
-* If user was active recently, visit attributed to original UA source instead
+* Solo crea una conversión de retargeting si el usuario ha estado inactivo durante al menos 7 días
+* Si el usuario ha estado activo recientemente, la visita se atribuye en su lugar a la fuente de UA original
 
-**Constraint:**
+**Restricción:**
 
-* Cannot exceed Inactivity Window (Re-acquisition)
+* No puede superar la ventana de inactividad (readquisición)
 
-#### Example (7-day inactivity window):
+#### Ejemplo (ventana de inactividad de 7 días):
 
-* **Day 0:** User acquired via Facebook ad
-* **Day 3:** User visits organically
-* **Day 5:** User clicks retargeting ad → **No retargeting conversion** (only 2 days inactive)
-* **Day 15:** User clicks retargeting ad → **Retargeting conversion created** (12 days inactive)
+* **Día 0:** Usuario adquirido a través de un anuncio de Facebook
+* **Día 3:** El usuario visita de forma orgánica
+* **Día 5:** El usuario hace clic en un anuncio de retargeting → **no se crea ninguna conversión de retargeting** (solo 2 días de inactividad)
+* **Día 15:** El usuario hace clic en un anuncio de retargeting → **se crea una conversión de retargeting** (12 días de inactividad)
 
 </Accordion>
 
-## Re-acquisition settings
+## Configuración de re-adquisición
 
-Re-acquisition settings determine when inactive users are considered "churned" and how to bring them back as reacquired users.
+La configuración de re-adquisición determina cuándo se considera que los usuarios inactivos han «abandonado» y cómo hacer que vuelvan como usuarios re-adquiridos.
 
 <div id="inactivity-window-reacquisition" />
 
-<Accordion title="Inactivity window (re-acquisition)">
+<Accordion title="Ventana de inactividad (re-adquisición)">
 
-The period of complete inactivity after which a user is marked as "churned." Churned users can be reacquired, generating a new user acquisition conversion.
+El período de inactividad total tras el cual un usuario se marca como «abandonado». Los usuarios que han abandonado pueden readquirirse, lo que genera una nueva conversión de adquisición de usuarios.
 
-This setting defines your business's churn threshold. It determines when a user is considered "lost" and eligible to be reacquired, allowing win-back campaigns to get credit for bringing back churned users.
+Este ajuste define el umbral de abandono de tu empresa. Determina cuándo se considera que un Usuario está «perdido» y puede ser readquirido, lo que permite que las campañas de recuperación reciban el mérito por recuperar a los usuarios que han abandonado.
 
-**Default:** 90 days
+**Predeterminado:** 90 días
 
-**Range:** 1 to 180 days
+**Rango:** de 1 a 180 días
 
-#### How it works
+#### Cómo funciona
 
-**When user is marked as churned:**
+**Cuando el usuario se marca como abandonado:**
 
-* User no longer attributed to original UA source for new events
-* User enters a "pre-acquisition" state (waiting to be reacquired)
-* Attribution windows from original acquisition no longer apply
+* El usuario deja de atribuirse a la fuente de UA original para eventos nuevos
+* El usuario entra en un estado de "pre-adquisición" (a la espera de ser readquirido)
+* Las ventanas de atribución de la adquisición original dejan de aplicarse
 
-**When churned user returns:**
+**Cuando vuelve un usuario abandonado:**
 
-* If user performs the re-acquisition event → New UA conversion created
-* Win-back campaign gets credit as the new acquisition source
-* User is treated as a completely new acquisition from a reporting perspective
+* Si el usuario realiza el evento de readquisición → se crea una nueva conversión de UA
+* La campaña de recuperación recibe el crédito como nueva fuente de adquisición
+* Desde la perspectiva de los informes, el usuario se trata como una adquisición completamente nueva
 
-#### Example (90-day window):
+#### Ejemplo (ventana de 90 días):
 
-* **Day 0:** User acquired via Google ad
-* **Day 50:** Last activity
-* **Day 140:** User churned (90 days inactive)
-* **Day 145:** User clicks email win-back campaign
+* **Día 0:** Usuario adquirido mediante un anuncio de Google
+* **Día 50:** Última actividad
+* **Día 140:** Usuario abandonado (90 días inactivo)
+* **Día 145:** El usuario hace clic en una campaña de recuperación por correo electrónico
 
-**Day 146:** User performs re-acquisition event → **New UA conversion** attributed to email campaign
+**Día 146:** El usuario realiza el evento de readquisición → **Nueva conversión de UA** atribuida a la campaña de correo electrónico
 
 </Accordion>
 
 <div id="reacquisition-event" />
 
-<Accordion title="Re-acquisition event">
+<Accordion title="Evento de readquisición">
 
-The event that triggers re-acquisition for churned users. Only churned users can be reacquired.
+El evento que activa la readquisición de los usuarios perdidos. Solo se puede readquirir a los usuarios perdidos.
 
-Many user acquisition events are one-time actions (e.g., sign\_up, first\_purchase) that cannot happen twice. This setting allows you to define a repeatable event that signals a churned user has returned.
+Muchos eventos de adquisición de usuarios son acciones que solo pueden realizarse una vez (por ejemplo, sign\_up, first\_purchase) y no pueden producirse dos veces. Esta configuración te permite definir un evento repetible que indica que un usuario perdido ha regresado.
 
-**Default:** visit (Churned users are **immediately reacquired** on their first return visit)
+**Predeterminado:** visit (los usuarios abandonados se **readquieren inmediatamente** en su primera visita de regreso)
 
-**Common alternatives:** sign\_in or purchase
+**Alternativas habituales:** sign\_in o purchase
 
-#### How it works
+#### Cómo funciona
 
-**If set to a custom event (e.g.,** **sign\_in**):
+**Si se establece como un evento personalizado (por ejemplo,** **sign\_in**):
 
-* Churned users must perform the specific event to be reacquired
-* User can visit multiple times before reacquisition occurs
-* More stringent definition of "true" reacquisition.
+* Los usuarios perdidos deben realizar el evento específico para ser readquiridos
+* El usuario puede visitar varias veces antes de que se produzca la readquisición
+* Definición más estricta de la readquisición «verdadera».
 
-#### Example (re-acquisition event = sign\_in):
+#### Ejemplo (evento de readquisición = sign\_in):
 
-* User churned after 90 days inactivity
-* User clicks email win-back campaign and visits → Not yet reacquired
-* A day later, the user signs in → Reacquisition conversion created, attributed to email campaign
+* El usuario abandonó después de 90 días de inactividad
+* El usuario hace clic en la campaña de recuperación por correo electrónico y visita → Aún no se ha readquirido
+* Un día después, el usuario inicia sesión → Se crea una conversión de readquisición, atribuida a la campaña de correo electrónico
 
 </Accordion>
 
-## Attribution window
+## Ventana de atribuciones
 
 <div id="time-period" />
 
-<Accordion title="Time period">
+<Accordion title="Período de tiempo">
 
-The maximum time period after the user acquisition during which AppsFlyer attributes events to that conversion.
+El período máximo tras la adquisición de usuarios durante el que AppsFlyer atribuye eventos a esa conversión.
 
-**Default:** Forever
+**Predeterminado:** Para siempre
 
-**Available options:** None, 1 day, 7 days, 30 days, 60 days, 90 days, 180 days, 365 days, Forever (limited by data retention)
+**Opciones disponibles:** Ninguno, 1 día, 7 días, 30 días, 60 días, 90 días, 180 días, 365 días, Para siempre (limitado por la retención de datos)
 
 </Accordion>
 
-## Excluded domains
+## Dominios excluidos
 
-Domains to exclude from attribution. This prevents AppsFlyer from attributing visits or events when users navigate between specified domains and your website.
+Dominios que se excluirán de la atribución. Esto evita que AppsFlyer atribuya visitas o eventos cuando los usuarios navegan entre los dominios especificados y tu sitio web.
 
-**Purpose:**
+**Propósito:**
 
-1. **Prevents self-attribution:** Exclude your own domains
-2. **Excludes third-party flows:** Exclude payment gateways, authentication providers
+1. **Evita la autoatribución:** Excluye tus propios dominios
+2. **Excluye flujos de terceros:** Excluye pasarelas de pago y proveedores de autenticación
 
 <div id="domain-types" />
 
-<Accordion title="Domain types">
+<Accordion title="Tipos de dominio">
 
-#### PRIMARY (required, automatic)
+#### PRIMARIO (obligatorio, automático)
 
-* Your main website domain (set during app creation)
-* Automatically added and cannot be removed
-* Exactly one primary domain per web app
-* **Automatic subdomain exclusion:** Primary domain automatically excludes all its subdomains
-  * Example: example.com automatically excludes shop.example.com, blog.example.com, etc.
-* **Impact of exclusion:** No self-attribution
+* El dominio principal de tu sitio web (configurado durante la creación de la aplicación)
+* Se añade automáticamente y no se puede eliminar
+* Exactamente un dominio principal por aplicación web
+* **Exclusión automática de subdominios:** El dominio principal excluye automáticamente todos sus subdominios
+  * Ejemplo: example.com excluye automáticamente shop.example.com, blog.example.com, etc.
+* **Impacto de la exclusión:** Sin autoatribución
 
-#### INTERNAL (optional)
+#### INTERNO (opcional)
 
-* Your brand's other domains not covered by primary domain
-* Add up to 99 additional domains
-* Example: Different top-level domains like example.co.uk, example.in
-* **Impact of exclusion:** No self-attribution
+* Los otros dominios de tu marca no cubiertos por el dominio principal
+* Añade hasta 99 dominios adicionales
+* Ejemplo: dominios de nivel superior diferentes, como example.co.uk, example.in
+* **Impacto de la exclusión:** Sin autoatribución
 
-#### EXTERNAL (optional)
+#### EXTERNA (opcional)
 
-There are two types of external domain exclusions:
+Hay dos tipos de exclusiones de dominios externos:
 
-#### External (listed by you)
+#### Externo (listado por ti)
 
-* Domains used by your website directly, but not part of your brand
-* These include payment gateways, payment processing sites, authentication providers
-* Add up to 99 additional domains
-* Examples: auth0.com, okta.com, facebook.com, google.com
-* **Impact of exclusion:** Visits are disregarded
+* Dominios utilizados directamente por tu sitio web, pero que no forman parte de tu marca
+* Entre ellos se incluyen pasarelas de pago, sitios de procesamiento de pagos y proveedores de autenticación
+* Añade hasta 99 dominios adicionales
+* Ejemplos: auth0.com, okta.com, facebook.com, google.com
+* **Impacto de la exclusión:** Se ignoran las visitas
 
-#### External (listed by AppsFlyer)
+#### Externo (listado por AppsFlyer)
 
-* Domains automatically excluded by AppsFlyer:
+* Dominios excluidos automáticamente por AppsFlyer:
 
-  **Payment providers**
+  **Proveedores de pago**
 
-  * PayPal (payment checkout)
-  * Stripe (payment checkout)
-  * Adyen (payment checkout)
-  * Klarna (payment checkout)
-  * Braintree (payment gateway)
-  * Square (payment checkout)
-  * Paddle (payment checkout)
-  * Mollie (payment checkout)
-  * Alipay (payment checkout)
-  * Razorpay (payment checkout)
-  * Paytm (payment checkout)
-  * PayU (payment checkout)
-  * Mercado Pago (payment checkout)
-  * Yandex Pay (payment checkout)
-  * Naver Pay (payment checkout)
+  * PayPal (checkout de pago)
+  * Stripe (checkout de pago)
+  * Adyen (checkout de pago)
+  * Klarna (checkout de pago)
+  * Braintree (pasarela de pago)
+  * Square (checkout de pago)
+  * Paddle (checkout de pago)
+  * Mollie (checkout de pago)
+  * Alipay (checkout de pago)
+  * Razorpay (checkout de pago)
+  * Paytm (checkout de pago)
+  * PayU (checkout de pago)
+  * Mercado Pago (checkout de pago)
+  * Yandex Pay (checkout de pago)
+  * Naver Pay (checkout de pago)
 
-  **OAuth and SSO sign-in**
+  **Inicio de sesión con OAuth y SSO**
 
-  * Google Sign-In (Google account login)
-  * Apple ID (Apple account login)
-  * Microsoft (Microsoft 365 / Entra account login)
-  * Microsoft Live (Outlook/Live account login)
-  * Facebook Login (Facebook's sign-in domain only)
-  * Yandex Login (Yandex account login)
-  * Kakao Login (Kakao account login)
-  * Naver Login (Naver account login)
-  * LINE Login (LINE account login)
-  * Weixin Login (WeChat's OAuth sign-in)
-  * VK Login (VK account login)
-  * Daum Login (Daum account login)
-* The list of automatic domains cannot be edited
-* **Impact of exclusion:** Visits are disregarded
+  * Inicio de sesión con Google (login de la cuenta de Google)
+  * Apple ID (login de la cuenta de Apple)
+  * Microsoft (login de la cuenta de Microsoft 365 / Entra)
+  * Microsoft Live (login de la cuenta de Outlook/Live)
+  * Login de Facebook (solo el dominio de inicio de sesión de Facebook)
+  * Login de Yandex (login de la cuenta de Yandex)
+  * Login de Kakao (login de la cuenta de Kakao)
+  * Login de Naver (login de la cuenta de Naver)
+  * Login de LINE (login de la cuenta de LINE)
+  * Login de Weixin (inicio de sesión OAuth de WeChat)
+  * Login de VK (login de la cuenta de VK)
+  * Login de Daum (login de la cuenta de Daum)
+* La lista de dominios automáticos no se puede editar
+* **Impacto de la exclusión:** Se ignoran las visitas
 
 </Accordion>
 
 <div id="adding-excluded-domains" />
 
-<Accordion title="Adding excluded domains">
+<Accordion title="Añadir dominios excluidos">
 
-**To add domains:**
+**Para añadir dominios:**
 
-1. Go to your web app settings → Attribution
-2. Navigate to the Excluded Domains section
-3. Click **Add domain**
-4. Enter the domain name (e.g., custom-gateway.com)
-5. Select domain type: Internal or External
-6. Click **Save**
+1. Ve a la configuración de tu aplicación web → Atribución
+2. Ve a la sección de Dominios excluidos
+3. Haz clic en **Agregar dominio**
+4. Introduce el nombre de dominio (por ejemplo, custom-gateway.com)
+5. Selecciona el tipo de dominio: Interno o Externo
+6. Haz clic en **Save**
 
-**Important notes:**
+**Notas importantes:**
 
-* Exclusions take effect within **1 hour**
-* Changes apply **prospectively only** (do not affect historical data)
-* Common payment providers and OAuth/SSO sign-in domains are automatically excluded. See the full list under [External (listed by AppsFlyer)](#external-listed-by-appsflyer) (no need to add these manually)
+* Las exclusiones entran en vigor en **1 hora**
+* Los cambios se aplican **solo de forma prospectiva** (no afectan a los datos históricos)
+* Los proveedores de pago habituales y los dominios de inicio de sesión OAuth/SSO se excluyen automáticamente. Consulta la lista completa en [Externo (listado por AppsFlyer)](#externo-listado-por-appsflyer) (no hace falta que los añadas manualmente)
 
 </Accordion>
 
 <div id="requirements-and-validation" />
 
-<Accordion title="Requirements and validation">
+<Accordion title="Requisitos y validación">
 
-#### Domain format:
+#### Formato del dominio:
 
-* Domain name only (no protocols, paths, or ports)
-* Maximum 500 characters per domain
-* Protocols (https://) automatically stripped, converted to lowercase
+* Solo nombre de dominio (sin protocolos, rutas ni puertos)
+* Máximo 500 caracteres por dominio
+* Los protocolos (https://) se eliminan automáticamente y se convierten a minúsculas
 
-#### Examples:
+#### Ejemplos:
 
 * example.com ✅
-* shop.example.com ✅ (but unnecessary if example.com is primary domain)
-* https://example.com → example.com ✅ (protocol stripped)
-* example.com/path ❌ (paths not allowed)
-* example.com:8080 ❌ (ports not allowed)
+* shop.example.com ✅ (pero no es necesario si example.com es el dominio principal)
+* https://example.com → example.com ✅ (protocolo eliminado)
+* example.com/path ❌ (no se permiten rutas)
+* example.com:8080 ❌ (no se permiten puertos)
 
-#### Limits:
+#### Límites:
 
-* Maximum 100 domains total (including 1 PRIMARY)
+* Máximo 100 dominios en total (incluido 1 PRINCIPAL)
 
 </Accordion>
 
-## Migrating from People-Based Attribution (PBA)
+## Migración desde la atribución basada en personas (PBA)
 
 <div id="key-differences" />
 
-<Accordion title="Key differences">
+<Accordion title="Diferencias clave">
 
-| **Aspect** | **PBA (Legacy)** | **New Web Performance Measurement** |
+| **Aspecto** | **PBA (heredado)** | **Nueva medición del rendimiento web** |
 | --- | --- | --- |
-| **Configuration level** | Brand bundle level | Web app level |
-| **Custom UA event** | Not available | Fully customizable |
-| **Time windows** | Limited control | Full control (1h - lifetime) |
+| **Nivel de configuración** | Nivel de paquete de marca | Nivel de aplicación web |
+| **Evento de UA personalizado** | No disponible | Completamente personalizable |
+| **Ventanas de tiempo** | Control limitado | Control total (1 h - de por vida) |
 
 </Accordion>
 
 <div id="migration-steps" />
 
-<Accordion title="Migration steps">
+<Accordion title="Pasos de migración">
 
-1. Create new web app
-   1. Go to My Apps → Add App → Select Website
-2. Choose Web SDK ID   
-   Reuse existing PBA dev key (recommended) to avoid code changes in your website.
-3. Configure settings   
-   Map PBA settings to new web attribution settings
-4. Add excluded domains   
-   Map PBA (Brand Bundle) excluded domains to new web attribution settings
+1. Crear una aplicación web nueva
+   1. Ve a Mis aplicaciones → Añadir aplicación → Selecciona Sitio web
+2. Elige el ID del SDK web   
+   Reutiliza la clave de desarrollo de PBA existente (recomendado) para evitar cambios de código en tu sitio web.
+3. Configura los ajustes   
+   Asigna los ajustes de PBA a los nuevos ajustes de atribución web
+4. Añade dominios excluidos   
+   Asigna los dominios excluidos de PBA (Brand Bundle) a los nuevos ajustes de atribución web
 
-**Note:** Each PBA dev key can only be assigned to ONE new web app.
+**Nota:** Cada clave de desarrollo de PBA solo se puede asignar a una nueva aplicación web.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01KGPFHN8MKTPX5VYDEV30M9A7=overview h_01KGPFK1RNA7ZTJRACJ6M97EAB=who-should-configure-these-settings h_01KGPFM0DJDMVDXZC2B6G6DVX5=accessing-web-attribution-settings h_01KGPFT1W65R724WCNDPBHY3F6=quick-reference h_01KGPGJG092S1TEDB1T9JNBASE=basic-settings h_01KGPGE592EK59XXVKTTFDGX16=user-acquisition-settings h_01KGPGRTEFA0PJ3DB7MR4W85EB=user-acquisition-event h_01KGPHMJWF6Z1VV0KH301TYAS5=why-customize h_01KGPHMSEDGJ2E6NSB1ZCR5CCW=common-alternatives-by-industry h_01KGPHN5M5GBBMPBYRMYHB9F0E=how-it-works example-scenario-ua-event-sign_up=example-scenario-ua-event--sign_up h_01KGPHQES3SF5AKBNYD8CY3RG8=example-scenario-ua-event--sign_up h_01KGPGRTEFYRAZD7Z9NYDKV907=lookback-window-user-acquisition how-it-works::69b3417c=how-it-works-1 h_01KGPHX2JNAWZ8VJZ25CRWP1ER=how-it-works-1 example-1-30day-lookback=example-1-30-day-lookback h_01KGPHX8JMG7FMRS1MYFYS6JRV=example-1-30-day-lookback h_01KGPHXT83JHJ6J0APVN7NRJ3E=example-2-window-expired reengagement-settings=re-engagement-settings h_01KGPJ1ZMXXJJNCBB52CHY95Z2=re-engagement-settings reengagement-window%C2%A0item=reengagement-window-item h_01KGPJ58N3712E1NZ4E6JVGAY2=reengagement-window-item how-it-works::dafb60ec=how-it-works-2 h_01KGPJFG3X578XCP5X353RRVR1=how-it-works-2 h_01KGPJG6WSYX2R0VVQYXXWZSMA=example-within-window h_01KGPJ58N3QH9RKXTVZXCZ1WGW=inactivity-window-for-reengagement how-it-works::4a4cf0f=how-it-works-3 h_01KGPJK3H2JF7PV1ATQB3TE9AX=how-it-works-3 example-7day-inactivity-window=example-7-day-inactivity-window h_01KGPJKDMY4FRAJSMHE19GGJCA=example-7-day-inactivity-window reacquisition-settings=re-acquisition-settings h_01KGPJMJDX83SBA77A7BSRZ87V=re-acquisition-settings h_01KGPJPC0QXYFD6Q09XF7T3XA9=inactivity-window-reacquisition how-it-works::9c91010b=how-it-works-4 h_01KGPJV8EJR94H1P7GZXMP8HSR=how-it-works-4 example-90day-window=example-90-day-window h_01KGPJVHCNBZHD9ZXW288CGG9H=example-90-day-window h_01KGPJPC0QY2726Z583AQ7G5W2=reacquisition-event how-it-works::587eebec=how-it-works-5 h_01KGPJY5PA9907PXBRC2QHNJ6T=how-it-works-5 example-reacquisition-event-sign_in=example-re-acquisition-event--sign_in h_01KGPJYWG31QJ1G5A09QC00AMY=example-re-acquisition-event--sign_in h_01KGPK8H7P5AT59S0GQ9ZK0F01=attribution-window h_01KGPK1CSV5XGKHX3XVS37QFKS=time-period h_01KGPKA56KQRJKRS54HBR50NJN=excluded-domains h_01KGPKCY1EBCMYDDYS6SZEK1ZR=domain-types h_01KGPKJQ7M82KW5VE9ESYNNFEQ=primary-required-automatic h_01KGPKJV9B2BHDR64JD24VHH1X=internal-optional h_01KGPKJZQYZESHHH3D0NA2WC9F=external-optional h_01KGPKK4THXQ88AXT58GZ2MHHE=external-listed-by-you h_01KGPKK96ZAZSKVPBX60FC888X=external-listed-by-appsflyer h_01KGPKCY1ETKF1NQ2BP6Z3JH4T=adding-excluded-domains h_01KGPKCY1EE01631ZEYGC6FEJH=requirements-and-validation h_01KGPKKXRA59A4RDY4QE1M0Q66=domain-format h_01KGPKM213203KA8CEBHZ9KJP3=examples h_01KGPKM8AMQ5BA88ZCSTRJ2JV7=limits migrating-from-peoplebased-attribution-pba=migrating-from-people-based-attribution-pba h_01KGPKPGSF3VSBTQJR6JN80BF4=migrating-from-people-based-attribution-pba h_01KGPKQPWC1GYYGYYD6PCDWX29=key-differences h_01KGPKQPWD00B08Z76ZYGRP4AT=migration-steps" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01KGPFHN8MKTPX5VYDEV30M9A7=visi%C3%B3n-general who-should-configure-these-settings=qui%C3%A9n-debe-configurar-estos-ajustes h_01KGPFK1RNA7ZTJRACJ6M97EAB=qui%C3%A9n-debe-configurar-estos-ajustes accessing-web-attribution-settings=acceder-a-los-ajustes-de-atribuci%C3%B3n-web h_01KGPFM0DJDMVDXZC2B6G6DVX5=acceder-a-los-ajustes-de-atribuci%C3%B3n-web quick-reference=referencia-r%C3%A1pida h_01KGPFT1W65R724WCNDPBHY3F6=referencia-r%C3%A1pida basic-settings=configuraci%C3%B3n-b%C3%A1sica h_01KGPGJG092S1TEDB1T9JNBASE=configuraci%C3%B3n-b%C3%A1sica user-acquisition-settings=configuraci%C3%B3n-de-adquisici%C3%B3n-de-usuarios h_01KGPGE592EK59XXVKTTFDGX16=configuraci%C3%B3n-de-adquisici%C3%B3n-de-usuarios h_01KGPGRTEFA0PJ3DB7MR4W85EB=user-acquisition-event why-customize=por-qu%C3%A9-personalizarlo h_01KGPHMJWF6Z1VV0KH301TYAS5=por-qu%C3%A9-personalizarlo common-alternatives-by-industry=alternativas-habituales-por-industria h_01KGPHMSEDGJ2E6NSB1ZCR5CCW=alternativas-habituales-por-industria how-it-works=c%C3%B3mo-funciona h_01KGPHN5M5GBBMPBYRMYHB9F0E=c%C3%B3mo-funciona example-scenario-ua-event-sign_up=ejemplo-de-escenario-evento-de-ua--sign_up h_01KGPHQES3SF5AKBNYD8CY3RG8=ejemplo-de-escenario-evento-de-ua--sign_up h_01KGPGRTEFYRAZD7Z9NYDKV907=lookback-window-user-acquisition how-it-works::69b3417c=c%C3%B3mo-funciona-1 h_01KGPHX2JNAWZ8VJZ25CRWP1ER=c%C3%B3mo-funciona-1 example-1-30day-lookback=ejemplo-1-lookback-de-30-d%C3%ADas h_01KGPHX8JMG7FMRS1MYFYS6JRV=ejemplo-1-lookback-de-30-d%C3%ADas example-2-window-expired=ejemplo-2-ventana-expirada h_01KGPHXT83JHJ6J0APVN7NRJ3E=ejemplo-2-ventana-expirada reengagement-settings=configuraci%C3%B3n-de-re-engagement h_01KGPJ1ZMXXJJNCBB52CHY95Z2=configuraci%C3%B3n-de-re-engagement reengagement-window%C2%A0item=reengagement-window-item h_01KGPJ58N3712E1NZ4E6JVGAY2=reengagement-window-item how-it-works::dafb60ec=c%C3%B3mo-funciona-2 h_01KGPJFG3X578XCP5X353RRVR1=c%C3%B3mo-funciona-2 example-within-window=ejemplo-dentro-de-la-ventana h_01KGPJG6WSYX2R0VVQYXXWZSMA=ejemplo-dentro-de-la-ventana h_01KGPJ58N3QH9RKXTVZXCZ1WGW=inactivity-window-for-reengagement how-it-works::4a4cf0f=c%C3%B3mo-funciona-3 h_01KGPJK3H2JF7PV1ATQB3TE9AX=c%C3%B3mo-funciona-3 example-7day-inactivity-window=ejemplo-ventana-de-inactividad-de-7-d%C3%ADas h_01KGPJKDMY4FRAJSMHE19GGJCA=ejemplo-ventana-de-inactividad-de-7-d%C3%ADas reacquisition-settings=configuraci%C3%B3n-de-re-adquisici%C3%B3n h_01KGPJMJDX83SBA77A7BSRZ87V=configuraci%C3%B3n-de-re-adquisici%C3%B3n h_01KGPJPC0QXYFD6Q09XF7T3XA9=inactivity-window-reacquisition how-it-works::9c91010b=c%C3%B3mo-funciona-4 h_01KGPJV8EJR94H1P7GZXMP8HSR=c%C3%B3mo-funciona-4 example-90day-window=ejemplo-ventana-de-90-d%C3%ADas h_01KGPJVHCNBZHD9ZXW288CGG9H=ejemplo-ventana-de-90-d%C3%ADas h_01KGPJPC0QY2726Z583AQ7G5W2=reacquisition-event how-it-works::587eebec=c%C3%B3mo-funciona-5 h_01KGPJY5PA9907PXBRC2QHNJ6T=c%C3%B3mo-funciona-5 example-reacquisition-event-sign_in=ejemplo-evento-de-readquisici%C3%B3n--sign_in h_01KGPJYWG31QJ1G5A09QC00AMY=ejemplo-evento-de-readquisici%C3%B3n--sign_in attribution-window=ventana-de-atribuciones h_01KGPK8H7P5AT59S0GQ9ZK0F01=ventana-de-atribuciones h_01KGPK1CSV5XGKHX3XVS37QFKS=time-period excluded-domains=dominios-excluidos h_01KGPKA56KQRJKRS54HBR50NJN=dominios-excluidos h_01KGPKCY1EBCMYDDYS6SZEK1ZR=domain-types primary-required-automatic=primario-obligatorio-autom%C3%A1tico h_01KGPKJQ7M82KW5VE9ESYNNFEQ=primario-obligatorio-autom%C3%A1tico internal-optional=interno-opcional h_01KGPKJV9B2BHDR64JD24VHH1X=interno-opcional external-optional=externa-opcional h_01KGPKJZQYZESHHH3D0NA2WC9F=externa-opcional external-listed-by-you=externo-listado-por-ti h_01KGPKK4THXQ88AXT58GZ2MHHE=externo-listado-por-ti external-listed-by-appsflyer=externo-listado-por-appsflyer h_01KGPKK96ZAZSKVPBX60FC888X=externo-listado-por-appsflyer h_01KGPKCY1ETKF1NQ2BP6Z3JH4T=adding-excluded-domains h_01KGPKCY1EE01631ZEYGC6FEJH=requirements-and-validation domain-format=formato-del-dominio h_01KGPKKXRA59A4RDY4QE1M0Q66=formato-del-dominio examples=ejemplos h_01KGPKM213203KA8CEBHZ9KJP3=ejemplos limits=l%C3%ADmites h_01KGPKM8AMQ5BA88ZCSTRJ2JV7=l%C3%ADmites migrating-from-peoplebased-attribution-pba=migraci%C3%B3n-desde-la-atribuci%C3%B3n-basada-en-personas-pba h_01KGPKPGSF3VSBTQJR6JN80BF4=migraci%C3%B3n-desde-la-atribuci%C3%B3n-basada-en-personas-pba h_01KGPKQPWC1GYYGYYD6PCDWX29=key-differences h_01KGPKQPWD00B08Z76ZYGRP4AT=migration-steps" />

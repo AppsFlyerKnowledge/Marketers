@@ -1,5 +1,5 @@
 ---
-title: Adquant (Meta campaign management partner) configuration
+title: Configuración de Adquant (partner de gestión de campañas de Meta)
 metadata:
   keywords:
     - Facebook
@@ -17,44 +17,45 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-08-21T08:20:24Z'
-  edited_at: '2026-06-16T09:27:56Z'
+  edited_at: '2026-08-12T12:20:29Z'
   id: 360001425369
-  locale: en-us
+  locale: es
   section: Meta campaign management partners
   section_id: 6551188365457
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001425369-Adquant-Meta-campaign-management-partner-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360001425369
 ---
-> **At a glance:** Adquant, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.
+> **En resumen:** Adquant, un partner integrado de AppsFlyer (anteriormente conocido como Facebook Marketing Partner), es un proveedor líder de soluciones de inteligencia artificial para ayudar a los app marketers a escalar su crecimiento.
 
-## Setting up Adquant
+## Configuración de Adquant
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**New integration:**
+**Nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-2. Select the relevant app.
-3. Search for Adquant and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle. Keep it on as long as you work with Adquant.
-5. Configure remaining tabs as needed.
+1. En la pestaña de **Integración** selecciona la aplicación para la integración y haz clic en **Activar partner**  
+   **Nota:** El selector debe estar encendido <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado) mientras</Anchor> trabajes con el partner.
+2. Selecciona la aplicación correspondiente.
+3. Busca Adquant y selecciona **Integrar**.
+4. En la pestaña de **Integración** selecciona la aplicación para la integración y haz clic en **Activar partner**  
+   **Nota:** El selector debe estar encendido<Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado) mientras</Anchor> trabajes con el partner. Déjalo activado mientras trabajes con Adquant.
+5. Configura las pestañas restantes según sea necesario.
 
-**Edit existing integration:**
+**Editar integración existente:**
 
-In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
+Busca al partner y selecciónalo.
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations</Anchor>.
+Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners</Anchor>.
 
-### In-app events
+### Eventos dentro de la aplicación
 
-1. To send in-app event postbacks to Bidalgo, turn on **In-app event postbacks**.
-2. Set the configuration according to the guidelines <Anchor target="_blank" href="/marketers/docs/meta-ads-in-app-event-mapping#predefined-event-mapping">here</Anchor>.
-3. Click **Save**.
+1. Para enviar postbacks de eventos in-app a Bidalgo, activa **Postbacks de eventos in-app**.
+2. Configura los ajustes según las directrices indicadas <Anchor target="_blank" href="/marketers/es/docs/meta-ads-in-app-event-mapping#asignación-de-eventos-predefinidos">aquí</Anchor>.
+3. Haga clic en **Guardar**.
 
-[![meta_campaign_management_partner_settings.png](https://files.readme.io/b1f38694b090db5e48ed27956684faee39004deae8b86aa532a206aacbd21c38-14238400542353.png)](https://files.readme.io/0c2f25de2211ff01c5d3a7086c1865edd902afbf648388fa636979032e75ad16-360002515305.png)
+[![meta_campaign_management_partner_settings.png](https://files.readme.io/b1f38694b090db5e48ed27956684faee39004deae8b86aa532a206aacbd21c38-14238400542353.png)](https://support.appsflyer.com/hc/article_attachments/49754373129361)
 
-## Configuring on Adquant
+## Configuración en Adquant
 
-When you configure your campaigns on Kenshoo the campaign name must begin with "**adquant\_**".
+Cuando configures tus campañas en Kenshoo, el nombre de la campaña debe empezar por "**adquant\_**".
 
-<div data-zendesk-anchors="h_01HKA16FBVZFPFYAYCEP9Z5EGS=setting-up-adquant inapp-events=in-app-events h_01HKA16FBVM6Z921JKWR7Y0RJG=in-app-events h_01HKA16FBVZFMZ5CGGQW49E7R4=configuring-on-adquant" />
+<div data-zendesk-anchors="setting-up-adquant=configuraci%C3%B3n-de-adquant h_01HKA16FBVZFPFYAYCEP9Z5EGS=configuraci%C3%B3n-de-adquant inapp-events=eventos-dentro-de-la-aplicaci%C3%B3n h_01HKA16FBVM6Z921JKWR7Y0RJG=eventos-dentro-de-la-aplicaci%C3%B3n configuring-on-adquant=configuraci%C3%B3n-en-adquant h_01HKA16FBVZFMZ5CGGQW49E7R4=configuraci%C3%B3n-en-adquant" />

@@ -1,5 +1,5 @@
 ---
-title: Batch integration with AppsFlyer
+title: Integración de Batch con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -15,36 +15,37 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2019-01-28T10:06:24Z'
-  edited_at: '2026-08-14T16:22:48Z'
+  edited_at: '2026-08-22T00:10:49Z'
   id: 360000833437
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000833437-Batch-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/360000833437
 ---
-> **At a glance:** Batch, an AppsFlyer integrated partner, is an app analytics, marketing automation and mobile CRM platform.
+> **At a glance:** Batch, un partner integrado de AppsFlyer, es una plataforma de análisis de aplicaciones, automatización de marketing y CRM móvil.
 
-Batch allows advertisers to maximize user engagement while offering a personalized user experience. The Batch advanced user engagement platform lets you communicate with your smartphone users in a more personalized way, reduce your churn and boost your app ROI. AppsFlyer and Batch combined can help the advertiser to further customize user experience and engagement based on user journey. This means that the advertiser can send specific in-app messages and push notifications based on attribution data such as media source and campaign. Integrating Batch and AppsFlyer is simple and straightforward.
+Batch permite a los anunciantes maximizar el engagement de los usuarios y, al mismo tiempo, ofrecer una experiencia de usuario personalizada. La plataforma avanzada de engagement de usuarios de Batch te permite comunicarte de una forma más personalizada con los usuarios de tu smartphone, reducir la pérdida de usuarios y aumentar el ROI de tu aplicación. AppsFlyer y Batch juntos pueden ayudar al anunciante a personalizar aún más la experiencia y el engagement de los usuarios en función del viaje del usuario. Esto significa que el anunciante puede enviar mensajes in-app específicos y notificaciones push en función de datos de atribución, como la fuente de medios y la campaña. Integrar Batch y AppsFlyer es sencillo y fácil.
 
 > 🚧 **Important**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> **Importante:**
+>
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Integrating Batch and AppsFlyer
+## Integración de Batch con AppsFlyer
 
-### Setting Customer User ID
+### Configuración del ID de usuario de cliente
 
-In order for Batch to be able to match data from AppsFlyer with its own data, the advertiser must provide the same <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer User ID</Anchor> to both. The Customer User ID is set in the SDK.
+Para que Batch pueda hacer coincidir los datos de AppsFlyer con sus propios datos, el anunciante debe proporcionar el mismo <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">ID de usuario de cliente</Anchor> en ambos. El ID de usuario de cliente se configura en el SDK.
 
-It's important that you put a real Customer User ID, and not a placeholder value. A real Customer User ID is a user ID that you use to identify your customers in your own systems.
+Es importante que introduzcas un ID de usuario de cliente real y no un valor de marcador de posición. Un ID de usuario de cliente real es un ID de usuario que utilizas para identificar a tus clientes en tus propios sistemas.
 
 <Tabs>
 <Tab title="Android">
 
 #### Batch
 
-Set Customer User ID in Batch SDK.
+Establece el ID de usuario del cliente en el SDK de Batch.
 
 ```java
 Batch.User.editor()
@@ -54,7 +55,7 @@ Batch.User.editor()
 
 #### AppsFlyer
 
-Set Customer User ID in AppsFlyer SDK.
+Establece el ID de usuario del cliente en el SDK de AppsFlyer.
 
 ```java
 AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
@@ -62,14 +63,14 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
 <Tabs>
 <Tab title="Objective C">
 
 #### Batch
 
-Set Customer User ID in Batch SDK.
+Configura el ID de usuario de cliente en el SDK de Batch.
 
 ```objectivec
 BatchUserDataEditor *editor = [BatchUser editor];
@@ -79,7 +80,7 @@ BatchUserDataEditor *editor = [BatchUser editor];
 
 #### AppsFlyer
 
-Set Customer User ID in AppsFlyer SDK.
+Configura el ID de usuario de cliente en el SDK de AppsFlyer.
 
 ```objectivec
 [AppsFlyerTracker sharedTracker].customerUserID = @"user@example.com";
@@ -91,7 +92,7 @@ Set Customer User ID in AppsFlyer SDK.
 
 #### Batch
 
-Set Customer User ID in Batch SDK.
+Configura el ID de usuario de cliente en el SDK de Batch.
 
 ```swift
 let editor = BatchUser.editor()
@@ -101,7 +102,7 @@ editor.save()
 
 #### AppsFlyer
 
-Set Customer User ID in AppsFlyer SDK.
+Define el ID de usuario del cliente en el SDK de AppsFlyer.
 
 ```swift
 AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
@@ -113,87 +114,86 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 </Tab>
 </Tabs>
 
-### Setting Up Batch
+### Configuración de Batch
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Configurar la integración de ASA**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-The Batch configuration only requires the **Integration** tab. The other four tabs are inactive as they are not required in this integration.
+La configuración de Batch solo requiere la pestaña **Integración**. Las otras cuatro pestañas están inactivas, ya que no son necesarias en esta integración.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate Partner
+### Activación de socios
 
-On the **first visit** here, you will need to toggle ON the **Activate Partner** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, tendrás que activar el botón **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### General Settings
+### Configuración general
 
-Before you can set up the integration with Batch, make sure to obtain your **Batch Rest API Key** and **Batch API Key**. If not sure, [contact Batch](mailto:hello@batch.com) for more information.  
+Antes de configurar la integración con Batch, asegúrate de obtener tu **Batch Rest API Key** y tu **Batch API Key**. Si no estás seguro, [ponte en contacto con Batch](mailto:hello@batch.com) para obtener más información.  
 
-Once you obtain the two keys, enter each in the relevant field. Under **General Settings**, put your **Batch Rest API Key** in the **BATCH\_REST\_API\_KEY** field and your **Batch API Key** in the **BATCH\_API\_KEY** field.
+Una vez que obtengas las dos claves, introduce cada una en el campo correspondiente. En **General Settings**, introduce tu **Batch Rest API Key** en el campo **BATCH\_REST\_API\_KEY** y tu **Batch API Key** en el campo **BATCH\_API\_KEY**.
 
 ![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
 
-### Default Postbacks
+### Postbacks predeterminados
 
-Under **Default Postbacks**, in the **Sending Option** drop-down list, select **Events attributed to any partner or organic**.
+En **Default Postbacks**, en la lista desplegable **Sending Option**, selecciona **Events attributed to any partner or organic**.
 
 ![batch-default-postbacks.png](https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png)
 
-Click **Save** in the bottom right-hand corner of the screen.
+Haz clic en **Guardar** en la esquina inferior derecha de la pantalla.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for Batch.
+Los enlaces de atribución no están disponibles para Batch.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for Batch.
+Los permisos no están disponibles para Batch.
 
 </Accordion>
 
-## Viewing AppsFlyer data in the Batch dashboard
+## Ver los datos de AppsFlyer en el dashboard de Batch
 
-Once AppsFlyer starts sending install postbacks to Batch, you can view the data in the Batch dashboard and start customizing user engagement according to attribution data.
+Una vez que AppsFlyer empiece a enviar postbacks de instalación a Batch, podrás ver los datos en el dashboard de Batch y empezar a personalizar el engagement de los usuarios según los datos de atribución.
 
-You can see the data in the **Userbase** tab of your Batch dashboard.
+Puedes ver los datos en la pestaña **Userbase** de tu dashboard de Batch.
 
 ![Userbase.png](https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png)
 
-<div data-zendesk-anchors="h_01H9FK389GXG3CDFPNM5ASKJ3N=integrating-batch-and-appsflyer h_01H9FK389MPKFN8J74BX1E3MGG=setting-customer-user-id h_01H9FK389MK1HM1460VAT6X82Y=batch h_01H9FK389MPGNEX8B3923KYDB3=appsflyer batch::28a946d0=batch h_01H9FK389MC4K8PNVPAGC00TBW=batch appsflyer::3f0aa95b=appsflyer h_01H9FK389M7V83A66M6T9EV8QT=appsflyer batch::24c5c955=batch h_01H9FK389MRV4ARHMHXPAXVXQ9=batch appsflyer::deb78dd1=appsflyer h_01H9FK389MT6PD8FW21SYHBPCV=appsflyer setting-up-batch-in-appsflyer-dashboard=setting-up-batch h_01H9FK389MCSR5YDSF4RKFDSDZ=setting-up-batch h_01H9FK389MG9459909JZBDN77E=integration-tab h_01H9FK389M19AVM63DEX5JTTQK=activate-partner h_01H9FK389MN82EKHVGMM9Z6H58=general-settings h_01H9FK389MXA3DS403VXRRK5NX=default-postbacks h_01H9FK389MERP4XBF19T28E6DN=attribution-link-tab h_01H9FK389M3E05PVMNA83TBFJZ=cost-tab h_01H9FK389M06FEQ4RZJ04HTH33=ad-revenue-tab h_01H9FK389MB31S8BR8WX178GHX=permissions-tab h_01H9FK389M8BNRFECN0WG23BCD=viewing-appsflyer-data-in-the-batch-dashboard" />
+<div data-zendesk-anchors="integrating-batch-and-appsflyer=integraci%C3%B3n-de-batch-con-appsflyer h_01H9FK389GXG3CDFPNM5ASKJ3N=integraci%C3%B3n-de-batch-con-appsflyer setting-customer-user-id=configuraci%C3%B3n-del-id-de-usuario-de-cliente h_01H9FK389MPKFN8J74BX1E3MGG=configuraci%C3%B3n-del-id-de-usuario-de-cliente h_01H9FK389MK1HM1460VAT6X82Y=batch h_01H9FK389MPGNEX8B3923KYDB3=appsflyer batch::28a946d0=batch h_01H9FK389MC4K8PNVPAGC00TBW=batch appsflyer::3f0aa95b=appsflyer h_01H9FK389M7V83A66M6T9EV8QT=appsflyer batch::24c5c955=batch h_01H9FK389MRV4ARHMHXPAXVXQ9=batch appsflyer::deb78dd1=appsflyer h_01H9FK389MT6PD8FW21SYHBPCV=appsflyer setting-up-batch-in-appsflyer-dashboard=configuraci%C3%B3n-de-batch h_01H9FK389MCSR5YDSF4RKFDSDZ=configuraci%C3%B3n-de-batch h_01H9FK389MG9459909JZBDN77E=integration-tab activate-partner=activaci%C3%B3n-de-socios h_01H9FK389M19AVM63DEX5JTTQK=activaci%C3%B3n-de-socios general-settings=configuraci%C3%B3n-general h_01H9FK389MN82EKHVGMM9Z6H58=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01H9FK389MXA3DS403VXRRK5NX=postbacks-predeterminados h_01H9FK389MERP4XBF19T28E6DN=attribution-link-tab h_01H9FK389M3E05PVMNA83TBFJZ=cost-tab h_01H9FK389M06FEQ4RZJ04HTH33=ad-revenue-tab h_01H9FK389MB31S8BR8WX178GHX=permissions-tab viewing-appsflyer-data-in-the-batch-dashboard=ver-los-datos-de-appsflyer-en-el-dashboard-de-batch h_01H9FK389M8BNRFECN0WG23BCD=ver-los-datos-de-appsflyer-en-el-dashboard-de-batch" />

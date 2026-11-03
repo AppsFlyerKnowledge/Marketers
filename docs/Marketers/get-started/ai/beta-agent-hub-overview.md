@@ -1,5 +1,5 @@
 ---
-title: '[Beta] Agent Hub overview'
+title: '[Beta] Descripción general del Agent Hub'
 metadata:
   keywords:
     - Advertisers
@@ -14,336 +14,335 @@ x-zendesk:
     - Marketers
     - Agent Hub
   created_at: '2025-11-16T10:18:23Z'
-  edited_at: '2026-10-26T09:09:52Z'
+  edited_at: '2026-10-27T03:37:20Z'
   id: 40967933109649
-  locale: en-us
+  locale: es
   section: AI
   section_id: 36348470056081
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/40967933109649--Beta-Agent-Hub-overview
+  url: https://support.appsflyer.com/hc/es/articles/40967933109649
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-> **At a glance:** Agent Hub is AppsFlyer's centralized platform for managing AI-driven agents that proactively deliver actionable marketing insights directly into your workflow. These agents constantly analyze your data to deliver valuable outputs and recommend actionable steps, all within your team's collaborative environment.
+> **At a glance:** Agent Hub es la plataforma centralizada de AppsFlyer para gestionar agentes impulsados por IA que ofrecen insights de marketing procesables de forma proactiva directamente en tu flujo de trabajo. Estos agentes analizan constantemente tus datos para ofrecer resultados valiosos y recomendar pasos procesables, todo ello dentro del entorno colaborativo de tu equipo.
 
-<Embed title="[Beta] Agent Hub overview" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LEuqdVEXBD0" providerUrl="https://www.youtube.com" />
+<Embed title="[Beta] Descripción general del Agent Hub" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LEuqdVEXBD0" providerUrl="https://www.youtube.com" />
 
-## About Agent Hub
+## Sobre el Agent Hub
 
-Each agent takes on a marketing job end to end: it works through your data, reaches its findings, and delivers them where your team works. Agent Hub gives you access to a variety of AppsFlyer-built agents designed to help you optimize marketing activity and uncover growth opportunities, plus Custom Agent, which takes on a job you define yourself. Every agent operates with integrity to support your team's decision-making.
+Cada agente se encarga de un trabajo de marketing de principio a fin: analiza tus datos, extrae sus conclusiones y las entrega allí donde trabaja tu equipo. Agent Hub te da acceso a una variedad de agentes creados por AppsFlyer, diseñados para ayudarte a optimizar la actividad de marketing y descubrir oportunidades de crecimiento, además de Custom Agent, que se encarga de un trabajo que tú mismo defines. Todos los agentes operan con integridad para respaldar la toma de decisiones de tu equipo.
 
-## Agent Hub page
+## Página de Agent Hub
 
-Agent Hub page is made up of two tabs: **My Agents** and **Activity**. Use these tabs to manage agents and review completed agent runs.
+La página de Agent Hub se compone de dos pestañas: **Mis agentes** y **Actividad**. Use estas pestañas para administrar agentes y revisar las ejecuciones de agentes completadas.
 
-Use **My Agents** to set up, deploy, and manage agents. Use **Activity** to review completed outputs, see previous runs, provide feedback, and analyze run reasoning with AI Assistant.
+Usa **Mis agentes** para configurar, implementar y gestionar agentes. Usa **Actividad** para revisar los resultados finalizados, ver ejecuciones anteriores, enviar comentarios y analizar el razonamiento de la ejecución con el Asistente de IA.
 
-<Accordion title="My Agents">
+<Accordion title="Mis agentes">
 
-The **My Agents** tab shows the agents available to your account.
+La pestaña **Mis agentes** muestra los agentes disponibles para tu cuenta.
 
-Use this tab to:
+Utiliza esta pestaña para:
 
-* View available agents.
-* Set up and deploy agents.
-* Manage deployed agents.
-* Monitor the latest run status from the agent card.
+* Ver agentes disponibles.
+* Configurar y desplegar agentes.
+* Gestionar agentes desplegados.
+* Supervisar el estado de ejecución más reciente desde la tarjeta de agente.
 
-#### Prerequisites and permissions
+#### Requisitos previos y permisos
 
-Some Agent Hub capabilities require additional setup, depending on the notification channels you use.
+Algunas capacidades de Agent Hub requieren configuración adicional, dependiendo de los canales de notificación que utilice.
 
-##### Slack (optional)
+##### Slack (opcional)
 
-Slack setup is required only if you want to receive agent output in Slack.
+La configuración de Slack solo es necesaria si deseas recibir los resultados de los agentes en Slack.
 
-* Approval of the AppsFlyer Slack app by your organization. To do this:
-  * Go to the Agent hub and select the agent you want to use.
-  * Click **Connect to Slack** within the agent configuration card.
+* Aprobación de la aplicación de Slack de AppsFlyer por parte de tu organización. Para hacerlo:
+  * Ve a Agent Hub y selecciona el agente que deseas utilizar.
+  * Haz clic en **Conectar con Slack** dentro de la tarjeta de configuración del agente.
 
-For agents that send output to Slack, you must first create a dedicated Slack channel within your organization and invite the AppsFlyer Agent Hub Slack app to that channel before the agent setup. The name of the channel is required as part of the agent setup.
+Para los agentes que envían resultados a Slack, primero debes crear un canal de Slack exclusivo dentro de tu organización e invitar a la aplicación AppsFlyer Agent Hub Slack a ese canal antes de configurar el agente. El nombre del canal es necesario como parte de la configuración del agente.
 
-To invite an app to a channel:
+Para invitar una aplicación a un canal:
 
-1. In the Slack channel you want to receive the notifications to, write: **/invite**
-2. Choose **Add Apps to this channel.**
+1. En el canal de Slack en el que quieras recibir las notificaciones, escribe: **/invite**
+2. Elige **Agregar aplicaciones a este canal.**
 
-<Image alt="Add Apps to this channel option in the Slack channel details menu" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
+<Image alt="Opción 'Agregar aplicaciones a este canal' en el menú de detalles del canal de Slack" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
 
-Select **AppsFlyer Agent Hub** -> **Add.**
+Selecciona **AppsFlyer Agent Hub** -> **Agregar.**
 
-<Image alt="AppsFlyer Agent Hub app selected in the Slack app directory with the Add button" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
+<Image alt="Aplicación AppsFlyer Agent Hub seleccionada en el directorio de aplicaciones de Slack con el botón Agregar" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
 
-* The following roles have automatic full access:
-  * Admin
-  * Marketing manager
-  * Team manager
-  * Marketing lead
+* Los siguientes roles tienen acceso completo automático:
+  * Administrador
+  * Gerente de marketing
+  * Administrador de equipo
+  * Responsable de marketing
 
-* **Other roles:** Require the AI Tools capability enabled through <Anchor target="_blank" href="/marketers/docs/user-management">User Management</Anchor>.
+* **Otros roles:** Requieren que la funcionalidad de herramientas de IA esté habilitada a través de <Anchor target="_blank" href="/marketers/es/docs/user-management">Gestión de usuarios</Anchor>.
 
-##### Email (optional)
+##### Correo electrónico (opcional)
 
-* Emails can only be sent to email addresses that are connected to an AppsFlyer account.
-* Users must be subscribed to the AppsFlyer mailing list. <Anchor target="_blank" href="/marketers/docs/notifications#what-notifications-can-i-receive">See here for more information</Anchor>.
+* Los correos electrónicos solo pueden enviarse a direcciones asociadas a una cuenta de AppsFlyer.
+* Los usuarios deben estar suscritos a la lista de correo de AppsFlyer. <Anchor target="_blank" href="/marketers/es/docs/notifications#qué-notificaciones-puedo-recibir">Consulta aquí para más información</Anchor>.
 
-Note: In each agent, you can configure up to 5 email addresses.
+Nota: En cada agente, puedes configurar hasta 5 direcciones de correo electrónico.
 
-#### Set up an agent
+#### Configurar un agente
 
-Agents can be set up and deployed to run on a schedule or manually. You can also configure where agent output is delivered, such as Slack or Email.
+Los agentes pueden configurarse e implementarse para ejecutarse según una programación o de forma manual. También puedes configurar dónde se entregan los resultados del agente, como Slack o correo electrónico.
 
-You can monitor the status of the latest run directly from the agent card in the **My Agents** tab. To view completed outputs and historical runs, click the **Activity** tab.
+Puedes supervisar el estado de la última ejecución directamente desde la tarjeta del agente en la pestaña **Mis agentes**. Para ver resultados completados y ejecuciones históricas, haz clic en la pestaña **Actividad**.
 
-Follow the steps below to set up and deploy an agent.
+Sigue los pasos a continuación para configurar e implementar un agente.
 
-1. Log in to AppsFlyer.
-2. From the left-hand menu, go to **Agent Hub.**
-3. On the agent you want to set up and deploy, click **Deploy**.
-4. On the following page, configure the required agent settings.
-5. Add your email address or connect your Slack workspace if relevant.
-   1. Make sure that the Slack channel has been set up. [See prerequisites](#prerequisites-and-permissions).
-6. Select a run schedule (currently based on UTC; additional time zones will be added soon).
-7. Click **Deploy Agent**.
+1. Inicia sesión en AppsFlyer.
+2. En el menú de la izquierda, ve a **Agent Hub.**
+3. En el agente que deseas configurar e implementar, haz clic en **Implementar**.
+4. En la siguiente página, realiza la configuración requerida del agente.
+5. Agrega tu dirección de correo electrónico o conecta tu espacio de trabajo de Slack si corresponde.
+   1. Asegúrate de que el canal de Slack haya sido configurado. [Ver requisitos previos](#requisitos-previos-y-permisos).
+6. Selecciona un horario de ejecución (actualmente basado en UTC; pronto se agregarán zonas horarias adicionales).
+7. Haz clic en **Desplegar agente**.
 
-The agent appears under **My Agents**. See **Prebuilt agents** and **Custom Agent** below for the full list of available agents, and what each one does.
-
-</Accordion>
-
-<Accordion title="Activity tab">
-
-**Activity** tab shows completed agent run outputs. It appears when your account has at least one agent with completed outputs.
-
-Use this tab to review recent agent activity, view previous outputs, provide feedback, and ask AI Assistant questions about a specific run.
-
-The Activity tab includes two sections:
-
-| Section | Description |
-| --- | --- |
-| Latest activity | Shows the latest completed run for each agent instance. |
-| Previous runs | Shows completed runs from the last 30 days. |
-
-You can filter activity by:
-
-* App
-* Agent instance
-
-Note: The agent filter is based on the specific agent instance, not the agent type.
-
-#### View activity output
-
-To view activity output:
-
-1. Go to **Agent Hub**.
-2. Click the **Activity** tab.
-3. Select the relevant app or agent instance filters.
-4. Click a run to expand it.
-
-The expanded run shows the same output sent by Slack or email.
-
-From the expanded run, you can:
-
-* Copy the output.
-* Provide positive or negative feedback.
-* Add written feedback.
-* Click **Analyze activity** to ask AI Assistant questions about the run.
-
-#### Analyze activity with AI Assistant
-
-Use **Analyze activity** to ask AI Assistant questions about a specific completed agent run.
-
-**Analyze activity** is available for all agents. AI Assistant opens in the context of the selected run. It can help you understand how the agent reached its output, what data it used, and which factors it considered or ruled out.
-
-This isn't a general chat with the agent. AI Assistant answers questions about the selected run only. It doesn't perform new agent work, access data outside the run, or make predictions.
-
-To ask AI Assistant questions about a run:
-
-1. Go to **Agent Hub**.
-2. Click the **Activity** tab.
-3. Click a run to expand it.
-4. Click **Analyze activity**.
-5. Select a suggested question or enter your own question.
-
-For example, you can ask:
-
-* Walk me through your reasoning.
-* What data was this based on?
-* Why was this finding prioritized?
-* What factors did the agent consider?
-* What factors did the agent rule out?
-
-##### Supported and unsupported questions
-
-| You can ask about | You can't ask about |
-| --- | --- |
-| How the agent reached its output | Data that wasn't included in the run |
-| What data the agent used for the run | New analysis that wasn't part of the run |
-| Why findings were prioritized or ruled out | Forward-looking predictions |
-| The context and reasoning of the selected run | General optimization recommendations outside the run context |
-
-#### Notes
-
-Keep the following in mind when using the **Activity** tab and **Analyze activity**:
-
-* AI Assistant must be enabled for the account. If AI Assistant is disabled, **Analyze activity** isn't available. See <Anchor target="_blank" href="/marketers/docs/account-settings#agent-hub">Account Settings</Anchor>.
-* Activity history includes completed runs from the last 30 days only.
-* Deleting an agent also deletes its previous activity, including outputs, findings, and reasoning data. This action can't be undone.
-* AI Assistant answers questions about the selected run only. It doesn't perform new analysis, access data outside the run, or make predictions.
+El agente aparece en **Mis agentes**. Consulta **Agentes predefinidos** y **agente personalizado** más abajo para ver la lista completa de agentes disponibles y qué hace cada uno.
 
 </Accordion>
 
-## Agent types
+<Accordion title="Pestaña de actividad">
 
-Agent Hub includes two kinds of agents: Custom Agent, which you configure yourself for a job you define, and ready-to-use agents you deploy as they are.
+La pestaña **Actividad** muestra los resultados de las ejecuciones completadas de los agentes. Aparece cuando tu cuenta tiene al menos un agente con resultados completados.
+
+Utiliza esta pestaña para revisar la actividad reciente de los agentes, ver resultados anteriores, proporcionar feedback y hacer preguntas al asistente de IA sobre una ejecución específica.
+
+La pestaña actividad incluye dos secciones:
+
+| Sección | Descripción |
+| --- | --- |
+| Actividad reciente | Muestra la ejecución completada más reciente de cada instancia de agente. |
+| Ejecuciones anteriores | Muestra las ejecuciones completadas de los últimos 30 días. |
+
+Puedes filtrar la actividad por:
+
+* Aplicación
+* Instancia de agente
+
+Nota: El filtro de agentes se basa en la instancia específica del agente, no en el tipo de agente.
+
+#### Ver resultados de actividad
+
+Para ver los resultados de actividad:
+
+1. Ve a **Agent Hub**.
+2. Haz clic en la pestaña **Actividad**.
+3. Selecciona los filtros de app o instancia de agente correspondientes.
+4. Haz clic en una ejecución para expandirla.
+
+La ejecución expandida muestra el mismo resultado enviado por Slack o correo electrónico.
+
+Desde la ejecución expandida, puedes:
+
+* Copiar el resultado.
+* Proporcionar feedback positivo o negativo.
+* Añadir comentarios por escrito.
+* Haz clic en **Analizar actividad** para hacer preguntas al Asistente de IA sobre la ejecución.
+
+#### Analizar la actividad con el asistente de IA
+
+Utiliza **Analizar actividad** para hacer preguntas al Asistente de IA sobre una ejecución del agente completada específica.
+
+**Analizar actividad** está disponible para todos los agentes. El asistente de IA se abre dentro del contexto de la ejecución seleccionada. Puede ayudarte a comprender cómo el agente llegó a sus resultados, qué datos utilizó y qué factores consideró o descartó.
+
+Esto no es un chat general con el agente. Asistente de IA responde únicamente preguntas sobre la ejecución seleccionada. No realiza nuevos trabajos del agente, no accede a datos fuera de la ejecución ni hace predicciones.
+
+Para hacer preguntas al asistente de IA sobre una ejecución:
+
+1. Ve a **Agent Hub**.
+2. Haz clic en la pestaña **Actividad**.
+3. Haz clic en una ejecución para expandirla.
+4. Haz clic en **Analizar actividad**.
+5. Selecciona una pregunta sugerida o ingresa tu propia pregunta.
+
+Por ejemplo, puedes preguntar:
+
+* Explícame tu razonamiento paso a paso.
+* ¿En qué datos se basó esto?
+* ¿Por qué se priorizó este hallazgo?
+* ¿Qué factores consideró el agente?
+* ¿Qué factores descartó el agente?
+
+##### Preguntas compatibles y no compatibles
+
+| Puedes preguntar sobre | No puedes preguntar sobre |
+| --- | --- |
+| Cómo llegó el agente a sus resultados | Datos que no se incluyeron en la ejecución |
+| Qué datos utilizó el agente para la ejecución | Nuevos análisis que no formaron parte de la ejecución |
+| Por qué ciertos hallazgos fueron priorizados o descartados | Predicciones futuras |
+| El contexto y razonamiento de la ejecución seleccionada | Recomendaciones generales de optimización fuera del contexto de la ejecución |
+
+#### Notas
+
+Ten en cuenta lo siguiente al utilizar la pestaña **Actividad** y **Analizar actividad**:
+
+* El asistente de IA debe estar habilitado para la cuenta. Si el asistente de IA está deshabilitado, **Analizar actividad** no estará disponible. Consulta <Anchor target="_blank" href="/marketers/es/docs/account-settings#hub-de-agentes">Configuración de la cuenta</Anchor>.
+* El historial de actividad incluye únicamente ejecuciones completadas de los últimos 30 días.
+* Eliminar un agente también elimina su actividad anterior, incluidos resultados, hallazgos y datos de razonamiento. Esta acción no se puede deshacer.
+* Asistente de IA responde únicamente preguntas sobre la ejecución seleccionada. No realiza nuevos análisis, no accede a datos fuera de la ejecución ni realiza predicciones.
+
+</Accordion>
+
+## Tipos de agentes
+
+Agent Hub incluye dos tipos de agentes: Custom Agent, que configuras tú mismo para un trabajo que defines, y agentes listos para usar, que implementas tal como están.
 
 <div id="h_01M3PDTFQDFQNMHTWKP23JV1A8" />
 
-<Accordion title="[Closed beta] Custom Agent">
+<Accordion title="[Beta cerrada] Agente personalizado">
 
-While ready-to-use agents in Agent Hub carry out specific, predefined tasks, Custom Agent executes a job you tailor to your specific requirements. Write the task in plain language, pick the app, review the plan the agent drafts, and choose how and when you want results delivered. The agent then does the work end to end, on demand or on a schedule, and sends you the output.
+Mientras que los agentes listos para usar de Agent Hub realizan tareas específicas y predefinidas, Custom Agent ejecuta un trabajo que adaptas a tus necesidades concretas. Describe la tarea en lenguaje sencillo, elige la aplicación, revisa el plan que redacta el agente y decide cómo y cuándo quieres recibir los resultados. Después, el agente hace el trabajo de principio a fin, bajo demanda o según una programación, y te envía el resultado.
 
-It analyzes the data, executes the specified task, and delivers the requested results. That could be a ranked list, a weekly performance summary, a root-cause investigation, a recommendation with the evidence behind it, or a complex ad hoc analysis. The output takes whatever shape the job needs.
+Analiza los datos, ejecuta la tarea especificada y entrega los resultados solicitados. Puede ser una lista clasificada, un resumen semanal de performance, una investigación de la causa raíz, una recomendación con las pruebas que la respaldan o un análisis ad hoc complejo. El resultado adopta la forma que necesite el trabajo.
 
-You brief it the way you'd brief an analyst on your team, and it works the same way: it confirms what it understood, shows you how it plans to approach the job and how it defines each term, and only runs once you've agreed.
+Le das instrucciones igual que se las darías a un analista de tu equipo, y funciona del mismo modo: confirma lo que ha entendido, te muestra cómo piensa abordar el trabajo y cómo define cada término, y solo se ejecuta cuando das tu visto bueno.
 
-#### Create a Custom Agent
+#### Crear un agente personalizado
 
-Three steps: define the agent, review the plan, then configure and deploy.
+Tres pasos: define el agente, revisa el plan y luego configura e implementa.
 
-##### Step 1: Define the agent
+##### Paso 1: Define el agente
 
-1. In AppsFlyer, go to **Agent Hub** in the left-hand menu.
-2. On the Custom Agent card, click **Create**.
-3. Under **Select your app**, select the app. One app per agent.
-4. (Optional) Set **Geo** and **Media source** filters. Leave them empty to include everything.
-5. In **Task**, describe the job, or click a ready-to-use prompt and edit it to suit your needs.
-6. Click **Generate plan**.
+1. En AppsFlyer, ve a **Agent Hub** en el menú de la izquierda.
+2. En la tarjeta Agente personalizado, haz clic en **Crear**.
+3. En **Selecciona tu aplicación**, selecciona la aplicación. Una aplicación por agente.
+4. (Opcional) Configura los filtros de **Geolocalización** y **Fuente de medios**. Déjalos vacíos para incluirlo todo.
+5. En **Tarea**, describe el trabajo o haz clic en un prompt listo para usar y edítalo según tus necesidades.
+6. Haz clic en **Generar plan**.
 
-##### Step 2: Review the agent plan
+##### Paso 2: Revisa el plan del agente
 
-The agent turns your task into a plan and shows it to you before running anything. This is where you catch a misread task or a definition that doesn't match how your team measures.
+El agente convierte tu tarea en un plan y te lo muestra antes de ejecutar nada. Aquí es donde detectas si la tarea se ha interpretado mal o si hay una definición que no encaja con cómo mide tu equipo.
 
-| Plan section | What to check |
+| Sección del plan | Qué comprobar |
 | --- | --- |
-| Goal | One-line restatement of the job. |
-| Agent plan | How the agent will carry out the job. |
-| Definitions | Every metric, window, and threshold from your task, spelled out: what "Day-7 retention" means, what "significant decline" means, which media sources are in scope. Edit anything that differs from your own definitions. |
-| Filters | The app, geo, and media source the agent will apply. |
+| Meta | Reformulación en una sola línea del trabajo. |
+| Plan del agente | Cómo llevará a cabo el agente la tarea. |
+| Definiciones | Todas las métricas, ventanas y umbrales de tu tarea, detallados: qué significa «retención del día 7», qué significa «descenso significativo» y qué fuentes de medios están dentro del alcance. Edita cualquier cosa que difiera de tus propias definiciones. |
+| Filtros | La aplicación, la geolocalización y la fuente de medios a la que se aplicará el agente. |
 
-From here:
+Desde aquí:
 
-* **Edit** changes any field, then **Save changes**.
-* **Start over** returns you to the task.
-* **Accept plan** moves you on.
+* **Editar**: modifica cualquier campo y, después, **Guardar cambios**.
+* **Empezar de nuevo** te devuelve a la tarea.
+* **Aceptar plan** te permite continuar.
 
-##### Step 3: Configure and deploy
+##### Paso 3: Configura y despliega
 
-1. Enter an **Agent name**.
-2. Under **Select how you want to receive the results**, select **Slack**, **Email**, or both.
-   * Slack: click **Connect to Slack** if the workspace isn't connected yet, then select the channel.
-   * Email: up to five addresses of AppsFlyer users.
-3. Under **Run schedule**, select one of the options.
-4. Click **Deploy agent**.
+1. Introduce un **nombre de agente**.
+2. En **Selecciona cómo quieres recibir los resultados**, selecciona **Slack**, **correo electrónico** o ambas opciones.
+   * Slack: haz clic en **Conectar con Slack** si el espacio de trabajo aún no está conectado y, después, selecciona el canal.
+   * Correo electrónico: hasta cinco direcciones de usuarios de AppsFlyer.
+3. En **Programación de ejecución**, selecciona una de las opciones.
+4. Haz clic en **Desplegar agente**.
 
-Schedules run in UTC.
+Las programaciones se ejecutan en UTC.
 
-The agent appears under **My Agents**. The card shows the latest run status. Completed runs are in **Activity**, filterable by app and agent name.
+El agente aparece en **Mis agentes**. La tarjeta muestra el estado de la última ejecución. Las ejecuciones completadas están en **actividad** y se pueden filtrar por aplicación y nombre del agente.
 
 <div id="h_01M3PDTFQESQY349XK0SNH5NB8" />
 
-<Accordion title="What data Custom Agent works on">
+<Accordion title="Con qué datos trabaja el agente personalizado">
 
-Custom Agent has two data sources, event-level and aggregated data, and picks between them based on the task; you don't need to specify. For some tasks, the agent uses both sources in a single run. In those rare cases, the same metric can show slightly different values across the two parts of a run. To understand which source the agent used during a run, explore the agent's reasoning using the **Analyze activity** feature.
+El agente personalizado tiene dos fuentes de datos, datos a nivel de evento y datos agregados, y elige entre ellas según la tarea; no necesitas especificarlo. Para algunas tareas, el agente usa ambas fuentes en una sola ejecución. En esos casos poco frecuentes, la misma métrica puede mostrar valores ligeramente diferentes entre las dos partes de una ejecución. Para entender qué fuente usó el agente durante una ejecución, explora el razonamiento del agente con la función **Analyze activity**.
 
-**Event-level data.** Raw events across the funnel, from engagement to in-app activity. This is what makes Custom Agent different from a dashboard: you can define your own metrics and ratios, work at the individual-user level, and trace event sequences.
+**Datos a nivel de evento.** Eventos sin procesar en todo el funnel, desde el engagement hasta la actividad in-app. Esto es lo que hace que el agente personalizado sea diferente de un dashboard: puedes definir tus propias métricas y ratios, trabajar a nivel de usuario individual y rastrear secuencias de eventos.
 
-| Included | Details |
+| Incluidos | Detalles |
 | --- | --- |
-| Engagements | Clicks and impressions |
-| Installs and re-engagements | Conversions |
-| Sessions | App open events |
-| In-app events | Including in-app purchase revenue |
-| Dimensions | Media source, campaign, geo down to city, device, OS version, app version, ad, site ID, and other raw-event fields |
-| Data timeframe | Last 30 days |
+| Engagements | Clics e impresiones |
+| Instalaciones y re-engagement | Conversiones |
+| Sesiones | Eventos de apertura de la aplicación |
+| Eventos dentro de la app | Incluidos los ingresos por compras in-app |
+| Dimensiones | Fuente de medios, campaña, geolocalización hasta el nivel de ciudad, dispositivo, versión del sistema operativo, versión de la aplicación, anuncio, ID del sitio y otros campos de eventos sin procesar |
+| Periodo de tiempo de los datos | Últimos 30 días |
 
-**Activity and Cohort data (aggregated).** All data points available in My Dashboards, including cost.
+**Datos de actividad y cohorte (agregados).** Todos los puntos de datos disponibles en My Dashboards, incluidos los costos.
 
-| Included | Details |
+| Incluidos | Detalles |
 | --- | --- |
-| Metrics | Installs, conversions, first visits, sessions, event count, unique users, active users, revenue, net revenue, average revenue per user (ARPU), revenue per unique user, count per unique user, retention rate |
-| In-app events, conversions, uninstalls, sessions | Count, unique users, revenue, net revenue, first event count |
-| Cost metrics | Spend (cost), eCPI, ROAS, ROI |
-| Dimensions | Media source, channel, campaign ID and name, ad set ID and name, ad ID and name, site ID, agency, keywords, sub\_param\_1, engagement category and type and destination, unified app ID, platform, install app store, app version and OS version and country code (conversion), aggregated event type (conversion, session, in-app, uninstall), event name, conversion name and type, monetization type, is-attributed, is-organic, is-primary-attribution, event date (Cohort only), event date (conversion), days post conversion, customer currency |
-| Data timeframe | Three years for Activity, two years for Cohort |
+| Métricas | Instalaciones, conversiones, primeras visitas, sesiones, recuento de eventos, usuarios únicos, usuarios activos, ingresos, ingresos netos, ingresos medios por usuario (ARPU), ingresos por usuario único, recuento por usuario único, tasa de retención |
+| Eventos in-app, conversiones, desinstalaciones, sesiones | Recuento, usuarios únicos, ingresos, ingresos netos, recuento del primer evento |
+| Métricas de costos | Gasto (costo), eCPI, ROAS, ROI |
+| Dimensiones | Fuente de medios, canal, ID y nombre de la campaña, ID y nombre del conjunto de anuncios, ID y nombre del anuncio, ID del sitio, agencia, palabras clave, sub\_param\_1, categoría y tipo de engagement y destino, App ID unificado, plataforma, tienda de aplicaciones de instalación, versión de la aplicación y versión del sistema operativo y código de país (conversión), tipo de evento agregado (conversión, sesión, in-app, desinstalación), nombre y tipo de conversión, tipo de monetización, is-attributed, is-organic, is-primary-attribution, fecha del evento (solo cohorte), fecha del evento (conversión), días posteriores a la conversión, moneda del cliente |
+| Periodo de tiempo de los datos | Tres años para la actividad y dos años para la cohorte |
 
-Aggregated data is in USD and your account currency. Cohorted aggregated data has daily granularity.
+Los datos agregados están en USD y en la moneda de tu cuenta. Los datos agregados por cohorte tienen granularidad diaria.
 
-**Current limitations.** These limitations are temporary and will evolve as Custom Agent moves out of beta.
+**Limitaciones actuales.** Estas limitaciones son temporales y evolucionarán a medida que el agente personalizado deje la beta.
 
-* Engagement and cost live in different sources. Clicks and impressions exist only in event-level data; cost exists only in aggregated data. The agent can't join the two, so metrics that combine them, such as CPC, CPM, CTR, IPM, and CPA, return no results. Cost-based metrics that don't need engagement data (spend, eCPI, ROAS, ROI) work as expected.
-* Missing data: data generated by Audiences, SKAdNetwork, SSOT, Protect360, Creative, and Incrementality; ad revenue and subscription revenue (revenue covers in-app purchases only).
-* Custom metrics or dimensions you've defined in your dashboards aren't included.
-* Aggregated dimensions include data only from June 2025 onward for platform, sub\_param\_1, engagement destination, engagement type, and source (organic vs. non-organic).
-* When there's no data, the agent shows 0, not N/A.
-* "First visits" and "re-visits" are available only for web apps.
+* El engagement y el costo están en fuentes distintas. Los clics y las impresiones solo existen en los datos a nivel de evento; el costo solo existe en los datos agregados. El agente no puede unir ambos, así que las métricas que los combinan, como CPC, CPM, CTR, IPM y CPA, no devuelven resultados. Las métricas basadas en costo que no necesitan datos de engagement (gasto, eCPI, ROAS, ROI) funcionan según lo esperado.
+* Datos faltantes: datos generados por audiencias, SKAdNetwork, SSOT, Protect360, creatividades e incrementalidad; ingresos por anuncios e ingresos por suscripciones (los ingresos cubren solo las compras in-app).
+* Las métricas o dimensiones personalizadas que has definido en tus dashboards no se incluyen.
+* Las dimensiones agregadas incluyen datos solo a partir de junio de 2025 para plataforma, sub\_param\_1, destino de engagement, tipo de engagement y fuente (orgánico frente a no orgánico).
+* Cuando no hay datos, el agente muestra 0, no N/A.
+* "Primeras visitas" y "re-visitas" están disponibles solo para aplicaciones web.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Discrepancies can occur between raw event figures and dashboard data. Event-level figures (raw data) and aggregated (dashboard) figures won't always match; small gaps between the two are expected. Aggregated figures should match My Dashboards for the same app and dates.
+> Puede haber discrepancias entre las cifras de eventos sin procesar y los datos del dashboard. Las cifras a nivel de evento (raw data) y las cifras agregadas (dashboard) no siempre coincidirán; es normal que haya pequeñas diferencias entre ambas. Las cifras agregadas deberían coincidir con My Dashboards para la misma app y las mismas fechas.
 
 </Accordion>
 
 <div id="h_01M3PDTFQEF8ZPV4PP04YGNGBK" />
 
-<Accordion title="Write a good task">
+<Accordion title="Escribe una buena tarea">
 
-The plan the agent drafts is only as good as the brief. Include as much of this as applies:
+La calidad del plan que redacta el agente depende de la calidad del briefing. Incluye todo lo que corresponda de esto:
 
-1. **The job.** What you want done, in plain language. Verbs help: compare, rank, flag, find, recommend, summarize.
-2. **Timeframe.** A defined window, for example "the last full week" or "last 14 days versus the prior 14." Leave out today; its data is still partial.
-3. **Scope.** The geo, media source, campaign, or platform that matters. You can also set geo and media source as filters above the task box.
-4. **Metrics and thresholds.** Name your KPIs and how you define them. "A drop of more than 10% versus the prior week counts as significant" gives the agent a rule it can apply.
-5. **Output you want.** If it matters, say so: "a table sorted by spend," "a short summary with the top three findings," or "flag only, no narrative."
-6. **Why.** One line of context helps the agent decide what to prioritize.
+1. **La tarea.** Qué quieres que se haga, en lenguaje claro. Los verbos ayudan: comparar, clasificar, señalar, encontrar, recomendar, resumir.
+2. **Periodo de tiempo.** Una ventana definida, por ejemplo, "la última semana completa" o "los últimos 14 días frente a los 14 anteriores". Deja fuera el día de hoy; sus datos aún son parciales.
+3. **Alcance.** La geolocalización, la fuente de medios, la campaña o la plataforma que importa. También puedes establecer la geolocalización y la fuente de medios como filtros encima del cuadro de tarea.
+4. **Métricas y umbrales.** Indica tus KPI y cómo los defines. «Una caída de más del 10% frente a la semana anterior se considera significativa» le da al agente una regla que puede aplicar.
+5. **Salida que quieres.** Si importa, indícalo: «una tabla ordenada por gasto», «un resumen breve con los tres hallazgos principales» o «solo marcar, sin explicación».
+6. **Por qué.** Una línea de contexto ayuda al agente a decidir qué priorizar.
 
-See **Prerequisites and permissions** above for setup details.
+Consulta **Requisitos previos y permisos** más arriba para ver los detalles de configuración.
 
 </Accordion>
 
 <div id="h_01M3PDTFQE6GP95M541FYHG15N" />
 
-<Accordion title="Review and refine a run">
+<Accordion title="Revisar y perfeccionar una ejecución">
 
-Completed runs appear in **Activity** with the same content sent to Slack or email. From a run, you can copy the output, give a thumbs up or down, add written feedback, and open [Analyze activity](#analyze-activity-with-ai-assistant) to ask AI Assistant how the agent got to its result.
+Las ejecuciones completadas aparecen en **actividad** con el mismo contenido enviado a Slack o por correo electrónico. Desde una ejecución, puedes copiar la salida, dar un pulgar arriba o abajo, añadir comentarios por escrito y abrir [Analizar actividad](#analizar-la-actividad-con-el-asistente-de-ia) para preguntar al Asistente de IA cómo llegó el agente a su resultado.
 
-If a run comes back empty or off-target, read the reasoning before changing the task. In [Analyze activity](#analyze-activity-with-ai-assistant), ask what data the agent used, why it reached that result, and what to change in the plan. Rewriting the task blind usually produces a different wrong answer. Then edit the plan or task and run the agent again.
+Si una ejecución vuelve vacía o no cumple el objetivo, lee el razonamiento antes de cambiar la tarea. En [Analizar actividad](#analizar-la-actividad-con-el-asistente-de-ia), pregunta qué datos ha usado el agente, por qué ha llegado a ese resultado y qué debes cambiar en el plan. Reescribir la tarea a ciegas suele dar una respuesta distinta, pero igual de incorrecta. Después, edita el plan o la tarea y vuelve a ejecutar el agente.
 
-If the reasoning also comes back empty, you might have requested data that doesn't yet exist. See **Limitations** above, revise the prompt, and try again.
+Si el razonamiento también vuelve vacío, es posible que hayas solicitado datos que todavía no existen. Consulta **Limitaciones** más arriba, revisa el prompt y vuelve a intentarlo.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> You can't return to your original prompt once you save and deploy an agent. You can only edit the approved agent plan.
+> No puedes volver a tu prompt original una vez que guardas y despliegas un agente. Solo puedes editar el plan del agente aprobado.
 
-See [Agent Hub page](#agent-hub-page) and [Analyze activity with AI Assistant](#analyze-activity-with-ai-assistant) above for more detail.
+Consulta la [página de Agent Hub](#página-de-agent-hub) y [Analizar actividad con Asistente de IA](#analizar-la-actividad-con-el-asistente-de-ia) más arriba para obtener más información.
 
 </Accordion>
 
 <div id="h_01M3PDTFQE2XA949N4GPBSHVKY" />
 
-<Accordion title="Manage a Custom Agent">
+<Accordion title="Gestionar un agente personalizado">
 
-From the agent card under **My Agents**, you can run the agent now, edit its configuration (name, delivery, schedule), or delete it.
+Desde la tarjeta del agente, en **Mis agentes**, puedes ejecutar el agente ahora, editar su configuración (nombre, entrega, programación) o eliminarlo.
 
-Deleting an agent also deletes its history, including outputs and reasoning. This action can't be undone.
+Eliminar un agente también elimina su historial, incluidas las salidas y el razonamiento. Esta acción no se puede deshacer.
 
 </Accordion>
 
 <div id="h_01M3PDTFQEENY4TB2QY7M1MPN9" />
 
-<Accordion title="Good to know">
+<Accordion title="Información útil">
 
-* One app per agent. Create a separate agent for each app.
-* Activity keeps runs from the last 30 days.
+* Una aplicación por agente. Crea un agente distinto para cada aplicación.
+* Actividad conserva las ejecuciones de los últimos 30 días.
 
 </Accordion>
 
@@ -351,194 +350,254 @@ Deleting an agent also deletes its history, including outputs and reasoning. Thi
 
 <div id="h_01M3PDTFQEDCZ7AJFC1FCTHERZ" />
 
-<Accordion title="Ready-to-use agents">
+<Accordion title="Agentes listos para usar">
 
-Ready-to-use agents are ready to deploy as they are: pick one, configure it, and let it run on your data. The table below lists what each agent does at a glance. Expand a section for the full detail before you deploy.
+Los agentes listos para usar están preparados para implementarse tal cual: elige uno, configúralo y deja que se ejecute con tus datos. La siguiente tabla muestra de un vistazo lo que hace cada agente. Despliega una sección para ver todos los detalles antes de implementar el agente.
 
 <div id="h_01M3PDTFQET68PRA9CN49CQ8Q7" />
 
-<Accordion title="Spot Creative Opportunities">
+<Accordion title="Descubre oportunidades creativas">
 
-**Job.** Finds the creatives that are performing best for you and tells you where they aren't running yet. The agent evaluates creative performance across all your partners over the past 30 days, ranks the winners, and then checks each partner to see which of those winners are missing. You get a list of concrete placements to add, with the numbers behind each.
+**Función.** Encuentra los creativos que mejor rinden para ti y te dice dónde todavía no están en funcionamiento. El agente evalúa el rendimiento de los creativos en todos tus partners durante los últimos 30 días, clasifica a los ganadores y luego revisa cada partner para ver cuáles de esos ganadores faltan. Recibes una lista de placements concretos para añadir, con las cifras de cada uno.
 
-**What it works on.** Creative-level spend and ROAS across partners, over the past 30 days. Requires Creative optimization.
+**En qué funciona.** Gasto y ROAS a nivel de creativo en todos los partners durante los últimos 30 días. Requiere Optimización creativa.
 
-**What a run delivers.** Top-performing creatives with their spend and ROAS, plus, for each partner, which of these creatives aren't currently running and the case for adding them. Delivered to Slack or email.
+**Qué ofrece una ejecución.** Los creativos con mejor rendimiento, con su gasto y ROAS, además de, para cada partner, cuáles de estos creativos no están actualmente en funcionamiento y el caso para añadirlos. Se envía por Slack o correo electrónico.
 
-**Cadence.** Configurable via the standard schedule options or on demand.
+**Frecuencia.** Configurable mediante las opciones de programación estándar o bajo demanda.
 
 </Accordion>
 
 <div id="h_01M3PDTFQE2WB2SNWBCS81C2DE" />
 
-<Accordion title="Custom Executive Summaries">
+<Accordion title="Resúmenes ejecutivos personalizados">
 
-**Job.** Writes the performance update you'd otherwise assemble by hand for managers and stakeholders. The agent reads your aggregated analytics, identifies the trends, top performers, and changes that matter for the period, and turns them into a summary with recommendations, ready to forward.
+**Función.** Redacta la actualización de rendimiento que, de otro modo, tendrías que preparar a mano para managers y stakeholders. El agente lee tus datos de análisis agregados, identifica las tendencias, a los que mejor rinden y los cambios que importan para el periodo, y los convierte en un resumen con recomendaciones, listo para reenviar.
 
-**What it works on.** Aggregated analytics data across your apps and media sources. No premium subscription required.
+**En qué funciona.** Datos de análisis agregados de todas tus aplicaciones y fuentes de medios. No se requiere suscripción premium.
 
-**What a run delivers.** A written summary: headline trends, top and bottom performers, notable shifts, and recommended next steps. Delivered to Slack or email.
+**Qué ofrece una ejecución.** Un resumen por escrito: tendencias principales, los que mejor y peor rinden, cambios destacados y próximos pasos recomendados. Se envía por Slack o correo electrónico.
 
-**Cadence.** Configurable via the standard schedule options or on demand.
+**Frecuencia.** Configurable mediante las opciones de programación estándar o bajo demanda.
 
 </Accordion>
 
 <div id="h_01M3PDTFQEB9MKH44X5XX4AGDT" />
 
-<Accordion title="Deep Research Analysis">
+<Accordion title="Análisis de investigación profunda">
 
-**Job.** Runs a weekly investigation into what changed and why. Every Monday, the agent compares the two most recent complete weeks (Monday to Sunday) and digs through raw event-level data, across partners, geos, OS versions, and SDK versions, to find shifts that aggregated dashboards can't show, including setup problems that look like performance changes.
+**Función.** Ejecuta una investigación semanal sobre qué cambió y por qué. Cada lunes, el agente compara las dos semanas completas más recientes (de lunes a domingo) y analiza los datos sin procesar a nivel de evento, en todos los partners, geolocalizaciones, versiones de SO y versiones de SDK, para detectar cambios que los dashboard agregados no pueden mostrar, incluidos problemas de configuración que parecen cambios de rendimiento.
 
-**What it works on.** Raw, mature event-level data. The agent deliberately excludes the current week to avoid partial or immature data. For example, on Monday, January 26, it compares January 12–18 against January 5–11. No premium subscription required.
+**En qué funciona.** Datos sin procesar, consolidados, a nivel de evento. El agente excluye deliberadamente la semana actual para evitar datos parciales o aún no consolidados. Por ejemplo, el lunes 26 de enero compara del 12 al 18 de enero con del 5 al 11 de enero. No se requiere suscripción premium.
 
-**What a run delivers.** A written report of meaningful week-over-week shifts, what's driving them, and setup issues uncovered along the way. Delivered to Slack or email.
+**Qué ofrece cada ejecución.** Un reporte escrito de los cambios relevantes de una semana a otra, qué los impulsa y qué problemas de configuración se detectan por el camino. Se entrega por Slack o correo electrónico.
 
-**Cadence.** Weekly, on Mondays or on demand.
+**Frecuencia.** Semanalmente, los lunes o bajo demanda.
 
 </Accordion>
 
 <div id="h_01M3PDTFQEPFMS38RWXT923VX7" />
 
-<Accordion title="Detect Performance Anomalies">
+<Accordion title="Detectar anomalías de rendimiento">
 
-**Job.** Watches your key KPIs every day and tells you when something moves that shouldn't have. The agent compares each metric to its expected range, flags significant positive or negative anomalies, and explains what changed and where: a CPI spike on one partner, an IPM drop in a geo, or a campaign that fell off a cliff.
+**Función.** Supervisa tus KPI clave cada día y te avisa cuando algo cambia y no debería hacerlo. El agente compara cada métrica con su rango esperado, marca anomalías positivas o negativas significativas y explica qué ha cambiado y dónde: un pico de CPI en un partner, una caída del IPM en una geolocalización o una campaña que se ha desplomado.
 
-**What it works on.** Daily KPI data across partners, campaigns, and geos. No premium subscription required.
+**En qué funciona.** Datos diarios de KPI en partners, campañas y geolocalizaciones. No se requiere suscripción premium.
 
-**What a run delivers.** Story-style alerts: which metric moved, by how much, on which partner, campaign, or geo, and the likely reason. Delivered to Slack or email. No alert on quiet days. [CONFIRM]
+**Qué ofrece cada ejecución.** Alertas con formato narrativo: qué métrica se movió, cuánto, en qué partner, campaña o geolocalización, y cuál es el motivo más probable. Se entrega a través de Slack o por correo electrónico.
 
-**Cadence.** Configurable via the standard schedule options or on demand.
+**Frecuencia.** Configurable mediante las opciones de programación estándar o bajo demanda.
 
 </Accordion>
 
 <div id="h_01M3PDTFQEFHYR29GN1XMRM16N" />
 
-<Accordion title="Detect Configuration Issues">
+<Accordion title="Detectar problemas de configuración">
 
-**Job.** Audits your measurement setup and alerts you to gaps that quietly degrade data quality. The agent checks for inactive integrations in SKAdNetwork and Cost, disabled view-through attribution via probabilistic modeling, and other configuration problems, so you catch them before they distort a campaign read.
+**Función.** Audita tu configuración de medición y te avisa de las carencias que deterioran silenciosamente la calidad de los datos. El agente comprueba si hay integraciones inactivas en SKAdNetwork y Costo, si la atribución view-through mediante modelado probabilístico está desactivada y otros problemas de configuración, para que los detectes antes de que distorsionen la lectura de una campaña.
 
-**What it works on.** Integration and configuration status across your apps and partners. No premium subscription required.
+**En qué funciona.** Estado de integración y configuración en tus aplicaciones y partners. No se requiere suscripción premium.
 
-**What a run delivers.** Alerts listing each issue found, where it is, and how to remediate it. Delivered to Slack or email.
+**Qué ofrece cada ejecución.** Alertas con cada incidencia detectada, dónde está y cómo solucionarla. Se entrega a través de Slack o por correo electrónico.
 
-**Cadence.** Configurable via the standard schedule options or on demand.
+**Frecuencia.** Configurable mediante las opciones de programación estándar o bajo demanda.
 
 </Accordion>
 
 <div id="h_01M3PDTFQEP6E7D4TF5G4PX1KV" />
 
-<Accordion title="Monitor App Releases">
+<Accordion title="Supervisar lanzamientos de aplicaciones">
 
-**Job.** Keeps you informed about your own app's releases without waiting on the dev team. The agent watches iOS and Android app store releases, alerts you when a version goes live, tracks rollout progress, and calls out the marketing-relevant changes: new features, changed in-app behavior, and events added or removed. That lets you align UA campaigns with what's actually in the app.
+**Tarea.** Te mantiene al día sobre los lanzamientos de tu propia aplicación sin esperar al equipo de desarrollo. El agente supervisa los lanzamientos en las tiendas de aplicaciones de iOS y Android, te avisa cuando una versión se publica, hace seguimiento del progreso del despliegue y destaca los cambios relevantes para marketing: nuevas funcionalidades, cambios en el comportamiento in-app y eventos añadidos o eliminados. Así puedes alinear las campañas de UA con lo que realmente hay en la aplicación.
 
-**What it works on.** App store release data and in-app event definitions for your apps. No premium subscription required.
+**En qué funciona.** Datos de lanzamientos de tiendas de aplicaciones y definiciones de eventos in-app para tus aplicaciones. No se requiere suscripción premium.
 
-**What a run delivers.** Release alerts with version, rollout status, and a summary of marketing-relevant changes. Delivered to Slack or email.
+**Qué ofrece cada ejecución.** Alertas de lanzamiento con la versión, el estado del despliegue y un resumen de los cambios relevantes para marketing. Se entrega por Slack o por correo electrónico.
 
-**Cadence.** Configurable via the standard schedule options or on demand.
+**Frecuencia.** Configurable mediante las opciones de programación estándar o bajo demanda.
 
 </Accordion>
 
 <div id="h_01M3PDTFQEEKJQTRKEC9GK4TE6" />
 
-<Accordion title="Optimize Anti-Fraud Strategy (Protect360)">
+<Accordion title="Optimiza la estrategia antifraude (Protect360)">
 
-**Job.** Looks for early signs of fraud in your traffic and tells you what to do about it. The agent scans your Protect360 data for emerging patterns, reports key findings, and recommends actions that cut fraud exposure without sacrificing performance.
+**Tarea.** Busca señales tempranas de fraude en tu tráfico y te indica qué hacer al respecto. El agente analiza tus datos de Protect360 en busca de patrones emergentes, reporta los hallazgos clave y recomienda acciones que reducen la exposición al fraude sin sacrificar el rendimiento.
 
-**What it works on.** Protect360 data. Requires Protect360 and Protect360 closed beta features.
+**En qué funciona.** Datos de Protect 360. Requiere Protect360 y las funcionalidades de la beta cerrada de Protect360.
 
-**What a run delivers.** Findings and recommendations inside the Protect360 dashboard.
+**Qué ofrece cada ejecución.** Hallazgos y recomendaciones en el dashboard de Protect360.
 
-**Cadence.** Weekly, on Mondays, or on demand.
+**Frecuencia.** Semanalmente, los lunes o bajo demanda.
 
 </Accordion>
 
 <div id="h_01M57AQ8G83P5H1JDJ4FM9ETCV" />
 
-<Accordion title="Measure UA Incrementality">
+<Accordion title="Mide la incrementalidad de UA">
 
-**Job.** The **Measure UA Incrementality** agent guides you through the full incrementality-testing lifecycle so you don't have to be an expert to run it. It defines what to test, explains what your experiment results mean, and recommends concrete marketing actions — turning a steep, specialist learning curve into a guided workflow aimed to measure the causal impact of your paid UA spend: which installs or events happened because of your ads, versus growth you'd have captured anyway.
+**Tarea.** El agente **Measure UA Incrementality** te guía a lo largo de todo el ciclo de vida de las pruebas de incrementalidad para que no tengas que ser un experto para ejecutarlas. Define qué probar, explica qué significan los resultados de tus experimentos y recomienda acciones de marketing concretas, convirtiendo una curva de aprendizaje pronunciada y especializada en un flujo de trabajo guiado orientado a medir el impacto causal de tu gasto en UA pagada: qué instalaciones o eventos se produjeron gracias a tus anuncios, frente al crecimiento que habrías capturado de todos modos.
 
-**What it works on.** Installs, in-app events, revenue and cost data from the last 90 days; All Incrementality for UA experiment data.
+**En qué se centra.** Instalaciones, eventos in-app, ingresos y datos de costo de los últimos 90 días; y todos los datos de experimentos de Incrementality for UA.
 
-**What a run delivers.** A structured report in three parts: (1) your current UA state and analysis of any active or completed experiments, (2) a sequenced testing plan that defines what to test next and why it matters for your budget, and (3) recommended marketing actions — grow, hold, cut, or re-test.
+**Qué ofrece cada ejecución.** Un reporte estructurado en tres partes: (1) tu estado actual de UA y el análisis de cualquier experimento activo o completado, (2) un plan secuenciado de pruebas que define qué probar a continuación y por qué es importante para tu presupuesto, y (3) acciones de marketing recomendadas: crecer, mantener, recortar o volver a probar.
 
-**Cadence.** Runs on a schedule, weekly by default. You can increase it to as often as daily, or trigger it ad-hoc for a fresh read whenever you need one.
+**Frecuencia.** Se ejecuta según una programación, semanal de forma predeterminada. Puedes aumentar la frecuencia hasta una vez al día o ejecutarlo ad hoc para obtener una lectura actualizada siempre que la necesites.
 
-**Set up.** Requires an Incrementality for UA premium product subscription. Launch the agent from the Agent Hub and select an app, country, and success metric, then set your cadence (or run it ad-hoc); The agent inherits any existing Incrementality for UA geo design policy.
+**Configuración.** Requiere una suscripción premium al producto Incrementalidad for UA. Inicia el agente desde Agent Hub y selecciona una aplicación, un país y una métrica de éxito; después, establece la frecuencia (o ejecútalo ad hoc). El agente hereda cualquier política de diseño de geolocalización existente de Incrementalidad for UA.
 
-**Good to know.** The agent recommends — it never moves budget or launches an experiment on its own, you approve and act. Agents are app, country and event specific. For example, your Android and iOS apps would require two separate agents. As with any AI output, always validate before acting.
+**Información útil.** El agente recomienda: nunca mueve presupuesto ni lanza un experimento por su cuenta; tú apruebas y actúas. Los agentes son específicos por aplicación, país y evento. Por ejemplo, tus aplicaciones de Android y iOS requerirían dos agentes distintos. Como con cualquier salida de IA, valida siempre antes de actuar.
 
 </Accordion>
 
 <div id="h_01M3PDTFQEP2RQW39AD8127J19" />
 
-<Accordion title="Web health check">
+<Accordion title="Comprobación del estado de la web">
 
-**Job.** Audits how your web app collects events and attributes conversions to marketing sources. The report shows what's working, flags issues that could make attribution inaccurate, and recommends improvements to your implementation.
+**Función.** Audita cómo tu aplicación web recopila eventos y atribuye conversiones a fuentes de marketing. El reporte muestra qué funciona, señala problemas que podrían hacer que la atribución sea inexacta y recomienda mejoras para tu implementación.
 
-**What it works on.** Your selected web app's attribution settings and recent SDK or server-to-server data. Checks cover data collection, events and revenue, campaign links, referrers, identity, and cross-platform setup. The default analysis window is seven days.
+**En qué se centra.** La configuración de atribución de la aplicación web que hayas seleccionado y los datos recientes del SDK o de servidor a servidor. Las comprobaciones abarcan la recopilación de datos, los eventos y los ingresos, los enlaces de campaña, los referentes, la identidad y la configuración multiplataforma. La ventana de análisis predeterminada es de siete días.
 
-**What a run delivers.** One report with two sections: what was checked and looks good, and recommended improvements. Findings include supporting numbers, a recommended fix, and a green, yellow, or red status based on impact.
+**Qué ofrece cada ejecución.** Un reporte con dos secciones: qué se comprobó y está bien, y mejoras recomendadas. Los hallazgos incluyen cifras de soporte, una corrección recomendada y un estado verde, amarillo o rojo en función del impacto.
 
-**Cadence.** Configurable via the standard schedule options or on demand.
+**Cadencia.** Configurable mediante las opciones de programación estándar o bajo demanda.
+
+</Accordion>
+
+<div id="h_01M5VP47MCYYQVP89CJN9KZ4BP" />
+
+<Accordion title="[Beta cerrada] Optimiza la cuota de voz en Apple Ads">
+
+**Trabajo.** Mantiene tu cuota de voz (SoV) en Apple Ads para tus palabras clave principales dentro del rango que defines, sin pagar de más. La SoV, también llamada cuota de impresiones, es el porcentaje de búsquedas aptas para una palabra clave en las que apareció tu anuncio. Cuando una palabra clave se sale del objetivo, el agente recomienda un cambio de puja: subir la puja máxima de coste por toque (CPT máx.) para recuperar cuota, o bajarla para dejar de pagar de más.
+
+**Cómo comprueba el agente tu SoV.** Apple informa de la SoV con un día de retraso, pero la subasta cambia durante el día. Para cerrar esa brecha, el agente estima tu SoV cada hora a partir de los datos de entrega de hoy. Calibra la estimación con la SoV oficial de Apple del día anterior. Te enteras de los cambios en cuestión de horas.
+
+**Con qué funciona.** Datos horarios de Apple Ads a nivel de palabra clave (impresiones, toques, gasto y puja CPT máx. actual) y el reporte diario de cuota de impresiones de Apple. El agente obtiene ambos a través de tu conexión de Apple Ads en **Configuración de costos** y usa los últimos 30 días como histórico. Requiere ROI360.
+
+**Qué ofrece una ejecución.** Para cada palabra clave y geolocalización que quede fuera del rango objetivo, una ejecución ofrece:
+
+* El rango de SoV más reciente de Apple y si la palabra clave está por encima o por debajo del objetivo.
+* El cambio de puja recomendado en %.
+* La puja CPT máx. exacta, actual y recomendada para cada campaña y grupo de anuncios en los que se ejecuta la palabra clave.
+
+Las palabras clave que están dentro del objetivo o que aún no tienen recomendación se muestran al final. Se envía a Slack o por correo electrónico, y a la pestaña **Actividad**.
+
+**Aplicar una recomendación.** En la pestaña **Actividad**, cada cambio de puja aparece como una tarjeta. Haz clic en **Aplicar** para enviar la puja recomendada a Apple Ads, edita la puja y luego haz clic en **Aplicar**, o haz clic en **Rechazar**. No cambia nada en Apple Ads hasta que aplicas una recomendación.
+
+**Frecuencia.** Las opciones de programación de ejecución son:
+
+* **Al activarse:** El agente envía un mensaje solo cuando hay una recomendación nueva o modificada. La frecuencia de comprobación depende de cómo el agente comprueba tu SoV. Consulta **Cómo comprueba el agente tu SoV** en esta sección.
+* **Sin programación:** El agente se ejecuta solo cuando lo ejecutas manualmente.
+
+**Configuración. Para desplegar el agente:**
+
+1. En **Configuración de costos**, conecta Apple Ads con la cuenta que ejecuta tus palabras clave.
+
+   > 📘 **Nota:**
+   >
+   > Conecta Apple Ads con permisos de **Read & Write** y con una cuenta que no sea de agencia. Read & Write te permite aplicar cambios de puja directamente desde Agent Hub. Con acceso de solo lectura, recibes recomendaciones, pero no puedes aplicarlas. Tienes que cambiar las pujas manualmente en Apple Ads.
+
+2. En **Agent Hub**, en la tarjeta **Optimizar Share of Voice de Apple Ads**, haz clic en **Desplegar agente**.
+3. Introduce un **nombre del agente** o conserva el nombre rellenado automáticamente.
+4. En **Selecciona tu app de iOS**, selecciona la app. Una app por agente.
+5. En **Palabras clave**, introduce al menos una y hasta tres palabras clave, tal como están configuradas en tus campañas de Apple Ads.
+6. En **Geolocalización de Apple Ads**, selecciona hasta cinco geolocalizaciones.
+7. En **Rango objetivo de Share of Voice**, selecciona el rango, por ejemplo, 81-90%.
+8. En **Selecciona cómo quieres recibir los resultados**, elige **Slack**, **correo electrónico** o ambos.
+9. En **Programación de ejecución**, selecciona **Al activarse** o **Sin programación**.
+10. Haz clic en **Desplegar agente**.
+
+**Aún no hay recomendaciones.** Una palabra clave y una geolocalización pueden mostrar este estado en dos casos:
+
+* No hay suficientes datos. Por ejemplo, la palabra clave tiene un volumen de búsqueda bajo y Apple no genera un reporte de SoV para ella, o la palabra clave no está en funcionamiento en esta geolocalización.
+* La puja ha cambiado hace poco. El agente espera a ver el efecto del cambio antes de volver a recomendar.
+
+**Limitaciones.** Ten en cuenta estas limitaciones:
+
+* **La primera ejecución es al día siguiente.** Después de implementar un agente nuevo, completa 30 días de historial a la mañana siguiente (UTC). El agente empieza a estar en funcionamiento solo después de que se complete el relleno de historial.
+* **Conexión de Apple Ads.** La conexión de Apple Ads en **Configuración de costos** debe ser de una cuenta que no sea de agencia. Para aplicar cambios en las pujas, necesitas permisos de lectura & escritura.
+* **No se admiten las pujas automáticas.** Si una campaña usa pujas automáticas en Apple Ads, sus palabras clave no tienen una puja CPT máxima manual. El agente no puede recomendar ni aplicar un cambio de puja para ellas.
+* **Usa campañas de una sola geolocalización.** Apple Ads establece una puja por palabra clave y grupo de anuncios para todos los países a los que se dirige la campaña. Si una campaña se dirige a varios países, un cambio de puja para una geolocalización también lo cambia para las demás. Puede que la recomendación no sea precisa.
+* **Alcance por agente.** Una aplicación, hasta tres palabras clave y hasta cinco geolocalizaciones. Crea más agentes si necesitas más palabras clave o geolocalizaciones.
+
+**Conviene saberlo.** El agente nunca cambia una puja por sí solo. Apruebas cada cambio. Como con cualquier resultado de salida de la IA, valida las recomendaciones antes de aplicarlas.
 
 </Accordion>
 
 </Accordion>
 
-<Accordion title="Can I create my own agents?">
+<Accordion title="¿Puedo crear mis propios agentes?">
 
-Yes. Custom Agent lets you define the job you want done. See **Custom Agent** above.
-
-</Accordion>
-
-<Accordion title="Is Agent Hub available to all account types?">
-
-No. Agent Hub is currently available only to advertisers.
+Sí. El agente personalizado te permite definir la tarea que quieres que se realice. Consulta **Agente personalizado** más arriba.
 
 </Accordion>
 
-<Accordion title="Are all agents available to everyone?">
+<Accordion title="¿Agent Hub está disponible para todos los tipos de cuenta?">
 
-Agent availability varies based on your AppsFlyer subscription and access to premium products. Contact your CSM for specific details.
-
-</Accordion>
-
-<Accordion title="Can admins disable Agent Hub for the account?">
-
-Yes. Admins can manage Agent Hub availability in **Account settings > AI capabilities**.
-
-By default, Agent Hub is available for the account.
-
-If an admin disables Agent Hub:
-
-* All users lose access to Agent Hub.
-* All existing agents are permanently deleted and can't be restored.
-* Any active agent runs stop.
-
-If an admin enables Agent Hub again later, users can access it again, but they must create and deploy agents from scratch.
-
-See <Anchor target="_blank" href="/marketers/docs/account-settings#agent-hub">Account settings</Anchor> for more information.
+N.º Actualmente, Agent Hub solo está disponible para anunciantes.
 
 </Accordion>
 
-<Accordion title="Where can I get notifications sent to?">
+<Accordion title="¿Todos los agentes están disponibles para todos?">
 
-You can receive notifications via email or Slack. Email notifications require you to subscribe to AI capabilities notifications in the Notification Center.
-
-</Accordion>
-
-<Accordion title="Why am I not receiving Agent Hub email notifications?">
-
-If you completed the email notification prerequisites but still don't receive Agent Hub emails, you might have previously unsubscribed from AppsFlyer emails. Contact AppsFlyer Support for assistance.
+La disponibilidad de los agentes varía según la suscripción a AppsFlyer y el acceso a productos premium. Contacta con tu CSM para obtener detalles específicos.
 
 </Accordion>
 
-<Accordion title="Does AppsFlyer train AI models on my data?">
+<Accordion title="¿Los administradores pueden deshabilitar Agent Hub para la cuenta?">
 
-No. AppsFlyer doesn't use your data to train any AI models. AI can produce inaccurate or incomplete results, so review outputs before acting on them.
+Sí. Los administradores pueden gestionar la disponibilidad de Agent Hub en **Configuración de la cuenta > Funciones de IA**.
+
+De forma predeterminada, Agent Hub está disponible para la cuenta.
+
+Si un administrador deshabilita Agent Hub:
+
+* Todos los usuarios perderán acceso a Agent Hub.
+* Todos los agentes existentes se eliminarán de forma permanente y no podrán restaurarse.
+* Todas las ejecuciones activas de agentes se detendrán.
+
+Si un administrador vuelve a habilitar Agent Hub más adelante, los usuarios podrán acceder nuevamente, pero deberán crear e implementar los agentes desde cero.
+
+Consulta <Anchor target="_blank" href="/marketers/es/docs/account-settings#hub-de-agentes">Configuración de la cuenta</Anchor> para más información.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01KA62R2NX6YEFMVG0SN0Y7NQ9=about-agent-hub h_01KQF6P3ED1KB47THJP8J3KAE5=agent-hub-page h_01KQF8YAEDQW52YMK3W4FE2KE1=prerequisites-and-permissions h_01KQF8H9A6FPB3VVBWAAXM257W=slack-optional h_01KQF8HEEMRBFK1K54VH2YDPSC=email-optional h_01KQF8T91KTZ01YKJD8JT6G0ZJ=set-up-an-agent h_01KQF6P3EJMJDMF0BWWXQA091K=view-activity-output h_01KQF6P3EMCX0HQKPVQ89S9VGF=analyze-activity-with-ai-assistant h_01KQF6P3EPWHV7J742F3S4Q0GY=supported-and-unsupported-questions h_01KQF7NTQYDGA17KCCMTNYY72H=notes h_01M3PDTFQDAEVRHJYK4ZJXQ3DH=agent-types h_01M3PDTFQEJA8GAE579P1AZG0E=create-a-custom-agent h_01M3PDTFQECPBKDEXMQMPZJTCS=step-1-define-the-agent h_01M3PDTFQEF9QCN15FKMRST3GW=step-2-review-the-agent-plan h_01M3PDTFQE7FN9GPTJ5GEKSNVG=step-3-configure-and-deploy h_01M3PDTFQEZJGPZ0AY4ZWRDR8D=note h_01M3PDTFQENS64JZYT2Y56QMXQ=note-1" />
+<Accordion title="¿Dónde puedo recibir notificaciones?">
+
+Puedes recibir notificaciones por correo electrónico o Slack. Las notificaciones por correo electrónico requieren que te registres en las notificaciones de capacidades de IA en el Centro de notificaciones.
+
+</Accordion>
+
+<Accordion title="¿Por qué no estoy recibiendo las notificaciones por correo electrónico de Agent Hub?">
+
+Si completaste los requisitos previos para las notificaciones por correo electrónico pero aún no recibes correos de Agent Hub, es posible que anteriormente te hayas dado de baja de los correos electrónicos de AppsFlyer. Contacta al equipo de Soporte de AppsFlyer para obtener ayuda.
+
+</Accordion>
+
+<Accordion title="¿Usa AppsFlyer mis datos para entrenar modelos de IA?">
+
+N.º AppsFlyer no usa tus datos para entrenar ningún modelo de IA. La IA puede producir resultados inexactos o incompletos, así que revisa las salidas antes de actuar en función de ellas.
+
+</Accordion>
+
+<div data-zendesk-anchors="about-agent-hub=sobre-el-agent-hub h_01KA62R2NX6YEFMVG0SN0Y7NQ9=sobre-el-agent-hub agent-hub-page=p%C3%A1gina-de-agent-hub h_01KQF6P3ED1KB47THJP8J3KAE5=p%C3%A1gina-de-agent-hub prerequisites-and-permissions=requisitos-previos-y-permisos h_01KQF8YAEDQW52YMK3W4FE2KE1=requisitos-previos-y-permisos h_01KQF8H9A6FPB3VVBWAAXM257W=slack-opcional h_01KQF8HEEMRBFK1K54VH2YDPSC=correo-electr%C3%B3nico-opcional set-up-an-agent=configurar-un-agente h_01KQF8T91KTZ01YKJD8JT6G0ZJ=configurar-un-agente view-activity-output=ver-resultados-de-actividad h_01KQF6P3EJMJDMF0BWWXQA091K=ver-resultados-de-actividad analyze-activity-with-ai-assistant=analizar-la-actividad-con-el-asistente-de-ia h_01KQF6P3EMCX0HQKPVQ89S9VGF=analizar-la-actividad-con-el-asistente-de-ia h_01KQF6P3EPWHV7J742F3S4Q0GY=preguntas-compatibles-y-no-compatibles notes=notas h_01KQF7NTQYDGA17KCCMTNYY72H=notas agent-types=tipos-de-agentes h_01M3PDTFQDAEVRHJYK4ZJXQ3DH=tipos-de-agentes create-a-custom-agent=crear-un-agente-personalizado h_01M3PDTFQEJA8GAE579P1AZG0E=crear-un-agente-personalizado step-1-define-the-agent=paso-1-define-el-agente h_01M3PDTFQECPBKDEXMQMPZJTCS=paso-1-define-el-agente step-2-review-the-agent-plan=paso-2-revisa-el-plan-del-agente h_01M3PDTFQEF9QCN15FKMRST3GW=paso-2-revisa-el-plan-del-agente step-3-configure-and-deploy=paso-3-configura-y-despliega h_01M3PDTFQE7FN9GPTJ5GEKSNVG=paso-3-configura-y-despliega h_01M3PDTFQEZJGPZ0AY4ZWRDR8D=nota h_01M3PDTFQENS64JZYT2Y56QMXQ=nota-1 h_01M5VP47MCS7HM339EW9AT6NGG=nota-2" />

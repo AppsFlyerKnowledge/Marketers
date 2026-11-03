@@ -1,5 +1,5 @@
 ---
-title: Movable Ink integration with AppsFlyer
+title: Integración de Movable Ink con AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -12,76 +12,75 @@ x-zendesk:
     - Marketers
     - OneLink
   created_at: '2024-09-05T11:55:13Z'
-  edited_at: '2025-11-12T14:40:50Z'
+  edited_at: '2026-08-12T12:24:40Z'
   id: 28109258392977
-  locale: en-us
+  locale: es
   section: Email service providers
   section_id: 6551247620881
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/28109258392977-Movable-Ink-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/28109258392977
 ---
-> **At a glance:** Set up an integration with Movable Ink to create unique AI-powered user journeys in your marketing campaigns and in-app content.
+> **De un vistazo:** Configura una integración con Movable Ink para crear recorridos de usuario únicos impulsados por IA en tus campañas de marketing y en tu contenido in-app.
 
-## ![53374 Movable Ink KB image.png](https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png)
+## ![53374 Imagen de la base de conocimientos de Movable Ink.png](https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png)
 
-## About the integration
+## Sobre la integración
 
-Movable Ink is a dynamic content optimization partner that provides personalized customer experiences in various channels, such as emails, push notifications and SMS. The integration between AppsFlyer and Movable Ink enables you to create uniquely personalized AI-powered journeys in your marketing campaigns and in-app content.
+Movable Ink es un partner de optimización de contenido dinámico que ofrece experiencias personalizadas al cliente en varios canales, como correo electrónico, notificaciones push y SMS. La integración entre AppsFlyer y Movable Ink te permite crear recorridos únicos y personalizados impulsados por IA en tus campañas de marketing y en tu contenido in-app.
 
-## Set up the integration
+## Configura la integración
 
-**Prerequisites**
+**Prerrequisitos**
 
-* For email campaigns, you'll need to have your email service provider (ESP) integration in place.  
-  A list of AppsFlyer-supported ESPs can be found <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">here.</Anchor>
-* Integration of the AppsFlyer <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-urlresolver-client">URL Resolver code</Anchor> snippet into your mobile apps (it is responsible for resolving the Movable Ink wrapped link).
-* OneLink is set up and supports Universal Links/App Links. <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">Learn more</Anchor>
+* Para las campañas de correo electrónico, tendrás que tener implementada la integración con tu proveedor de servicios de correo electrónico (ESP).  
+  Puedes consultar <Anchor target="_blank" href="/marketers/es/docs/email-service-provider-esp-integration-guide">aquí</Anchor> una lista de los ESP compatibles con AppsFlyer
+* Integración del fragmento de código del <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-urlresolver-client">resolver de URL</Anchor> de AppsFlyer en tus aplicaciones móviles (se encarga de resolver el enlace encapsulado de Movable Ink).
+* OneLink está configurado y es compatible con Universal Links/App Links. <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#crear-una-plantilla-de-onelink">Más información</Anchor>
 
-**To set up the integration:**
+**Configura la integración:**
 
-1. **In Movable Ink:** Sign in to your Movable Ink account (for help, contact your Movable Ink representative or their client experience team).
-2. Create your content in **Studio** and finalize your campaign set up.
-3. Get the Movable Ink link for email campaign usage:
-   * * Navigate to the **Finish & Export** page.
-     * Click on the three dots (“…”) under the section **Copy Creative Tag** and choose **Copy Link URL**.   
-       **Note:** Finalize your campaign setup before copying the link URL.
-     * Copy the HREF URL from the copied link (highlighted) and set it aside. It will be used as the deep link value in the final link.   
-       <Image alt="Movableink image highlighted.png" src="https://files.readme.io/a2ccca4d6053e1448094dd83478610693b13a7f04a77aaaff7d12305533e8fbe-28405439389201.png" width="1130px" />
-4. **In AppsFlyer:** Navigate to the specific <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink template</Anchor> that you'll use for the campaign and retrieve the following data points for the integration:
-   * * **OneLink Domain:** The subdomain for OneLink generation within AppsFlyer.
-     * **Template ID:** ID of the referenced template or the one created for the campaign.
-     * **PID**: The unique identification of the media source.  
-       The recommended value is the ESP name.
-5. Put together your link using the link structure below. 
+1. **En Movable Ink:** Inicia sesión en tu cuenta de Movable Ink (si necesitas ayuda, ponte en contacto con tu representante de Movable Ink o con su equipo de experiencia del cliente).
+2. Crea tu contenido en **Studio** y finaliza la configuración de tu campaña.
+3. Obtén el enlace de Movable Ink para usarlo en campañas de correo electrónico:
+   * * Ve a la página **Finish & Export** page.
+     * Haz clic en los tres puntos («…») debajo de la sección **Copy Creative Tag** y elige **Copy Link URL**.   
+       **Nota:** Finaliza la configuración de tu campaña antes de copiar la URL del enlace.
+     * Copia la URL HREF del enlace copiado (resaltada) y guárdala para más tarde. Se utilizará como valor de enlace en el enlace final.   
+       <Image alt="Imagen resaltada de Movable Ink.png" src="https://files.readme.io/a2ccca4d6053e1448094dd83478610693b13a7f04a77aaaff7d12305533e8fbe-28405439389201.png" width="1130px" />
+4. **En AppsFlyer:** Ve a la <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">plantilla de OneLink</Anchor> específica que usarás para la campaña y recupera los siguientes puntos de datos para la integración:
+   * * **Dominio de OneLink:** El subdominio para la generación de OneLink en AppsFlyer.
+     * **ID de plantilla:** ID de la plantilla a la que se hace referencia o de la creada para la campaña.
+     * **PID**: La identificación única de la fuente de medios.  
+       El valor recomendado es el nombre del ESP.
+5. Monta tu enlace con la estructura de enlace que aparece a continuación. 
 
-   **Link structure:**
+   **Estructura del enlace:**
 
    `https://{{onelink.domain}}/{{template_id}}?pid={{pid_value}}&c={{link_name}}deep_link_value={{mi_link_from_creative_tag}}`
 
-   **Example:**
+   **Fecha y hora del toque del contributor[n]**
 
-   Here's an example of what a link looks like after adding the required parameters from the table below.
+   Aquí tienes un ejemplo de cómo queda un enlace después de añadir los parámetros obligatorios de la tabla siguiente.
 
    https://link.movableink.com/oskuw854?pid=BRAZE&deep_link_value=https://www.movable-ink-2563.com/p/cp/ee0e28529389f573/c?url=https%3A%2F%2Fwww.movable-ink-2563.com%2Fp%2Frp%2F9011ea048ec4bf03%2Furl&url_sig=D4QtmtC8vqJhU7
 
    
 
-| Parameter | Description | Example value | Note | Get from |
+| Parámetro | Nota | Valor de ejemplo | Advertencia | Obtener de |
 | --- | --- | --- | --- | --- |
-| `{{onelink.domain}}` | Your AppsFlyer domain | mink.onelink.com |  | AppsFlyer UI |
-| `{{template_id}}` | ID of the link template set up in AppsFlyer | 1a6f |  | AppsFlyer UI |
-| `{{pid_value}}` | ID of the ESP / media source | ESP Name |  | AppsFlyer UI |
-| `{{mi_link_from_creative<br /><br />_tag}}` | The HREF clickthrough link from Movable Ink’s creative tag. Available on the Finish & Export page (see image in step 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | The link should be encoded. | Movable Ink |
+| `{{onelink.domain}}` | Tu dominio de AppsFlyer | mink.onelink.com |  | UI de AppsFlyer |
+| `{{template_id}}` | ID de la plantilla de enlace configurada en AppsFlyer | 1a6f |  | UI de AppsFlyer |
+| `{{pid_value}}` | ID del ESP o de la fuente de medios | Nombre del ESP |  | UI de AppsFlyer |
+| `{{mi_link_from_creative<br /><br />\n<br /><br />_tag}}` | El enlace HREF de clic de la etiqueta creativa de Movable Ink. Disponible en la página Finish & Export (consulta la imagen en el paso 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | El enlace debe estar codificado. | Movable Ink |
 
-   > 📘 **Note**
+   > 📘 **Advertencia**
    >
-   > If the values for `af_android_url`, `af_ios_url`, and `af_web_dp` are identical, you can shorten the link by using `af_r instead`. If there is another parameter with the same value, ask your AppsFlyer customer success manager to activate the parameter duplication feature.
+   > Si los valores de `af_android_url`, `af_ios_url` y `af_web_dp` son idénticos, puedes acortar el enlace usando `af_r` en su lugar. Si hay otro parámetro con el mismo valor, pide a tu gerente de éxito del cliente de AppsFlyer que active la función de duplicación de parámetros.
 
-6. Use the new link in your campaign.  
-   **Note:** The Movable Ink HREF link that you copy/pasted into your link should be encoded. However, **if using the link in an email campaign via your ESP, the ESP parameters should not be encoded**.
+6. Utiliza el nuevo enlace en tu campaña.  
+   **Nota:** El enlace HREF de Movable Ink que has copiado y pegado debería estar codificado. Sin embargo, **si utilizas el enlace en una campaña de correo electrónico a través de tu ESP, los parámetros del ESP no deben codificarse**.
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-See additional <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#traits-and-limitations">attribution link traits and limitations</Anchor>.
+Consulta más <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#características-y-limitaciones">características y limitaciones de los enlaces de atribución</Anchor>.
 
-<div data-zendesk-anchors="h_01J8HQFV2ZYYN7G1FDA1DH1GV3=about-the-integration h_01J8HX53FVT1N4MG2HPE743RTS=about-the-integration h_01J710N8QBFHSX9BS6H0NFY918=set-up-the-integration 01J9GSWGHBA01N227MCEV91YMV=note h_01J9GAS3T6STFKHD4C6Z6GYFMF=traits-and-limitations" />
+<div data-zendesk-anchors="about-the-integration=sobre-la-integraci%C3%B3n h_01J8HQFV2ZYYN7G1FDA1DH1GV3=sobre-la-integraci%C3%B3n h_01J8HX53FVT1N4MG2HPE743RTS=sobre-la-integraci%C3%B3n set-up-the-integration=configura-la-integraci%C3%B3n h_01J710N8QBFHSX9BS6H0NFY918=configura-la-integraci%C3%B3n 01J9GSWGHBA01N227MCEV91YMV=advertencia traits-and-limitations=especificaciones-y-limitaciones h_01J9GAS3T6STFKHD4C6Z6GYFMF=especificaciones-y-limitaciones" />

@@ -1,19 +1,21 @@
 ---
-title: AppsFlyer basics
-excerpt: Review attribution concepts, learn the AppsFlyer platform, work with agencies
+title: Aspectos básicos de AppsFlyer
+excerpt: >-
+  Revisa conceptos de atribución, de la plataforma AppsFlyer, trabaja con
+  agencias
 table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2022-06-02T11:28:19Z'
   id: 6551113099153
-  locale: en-us
+  locale: es
   parent_section_id: 6550753145745
   type: section
   url: >-
-    https://support.appsflyer.com/hc/en-us/sections/6551113099153-AppsFlyer-basics
+    https://support.appsflyer.com/hc/es/sections/6551113099153-Aspectos-b%C3%A1sicos-de-AppsFlyer
 ---
-- [Attribution concepts](/docs/attribution-concepts)
-- [Attribution scenarios](/docs/attribution-scenarios)
-- [The AppsFlyer platform](/docs/the-appsflyer-platform)
-- [Working with agencies](/docs/working-with-agencies)
+- [Conceptos de atribución](/docs/attribution-concepts)
+- [Escenarios de atribución](/docs/attribution-scenarios)
+- [La plataforma AppsFlyer](/docs/the-appsflyer-platform)
+- [Trabajar con agencias](/docs/working-with-agencies)

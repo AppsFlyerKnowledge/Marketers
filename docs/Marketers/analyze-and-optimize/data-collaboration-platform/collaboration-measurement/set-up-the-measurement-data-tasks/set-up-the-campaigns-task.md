@@ -1,5 +1,5 @@
 ---
-title: Set up the Campaigns task
+title: Configurar la tarea de campañas
 metadata:
   keywords:
     - Marketers
@@ -12,140 +12,139 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2025-08-18T11:31:27Z'
-  edited_at: '2026-05-27T09:25:33Z'
+  edited_at: '2026-08-12T11:53:00Z'
   id: 38190881693969
-  locale: en-us
+  locale: es
   section: Set up the measurement data tasks
   section_id: 38035061674769
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/38190881693969-Set-up-the-Campaigns-task
+  url: https://support.appsflyer.com/hc/es/articles/38190881693969
 ---
-> **At a glance:** Learn how to configure the campaign source for on-site, off-site and combined campaigns (on-site and off-site campaigns).
+> **De un vistazo:** descubre cómo configurar la fuente de la campaña para campañas on-site, off-site y combinadas (campañas on-site y off-site).
 
-<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#campaign-mapping">The campaign source</Anchor> connects on-site conversion events to their respective off-site, on-site, and combined campaigns, enabling accurate attribution and performance reporting. Unlike other tasks in DCP (such as conversions or engagements), the **Campaigns task is identical for both on-site and off-site campaigns**. This means you follow the same configuration process regardless of the campaign type.
+<Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#campaign-mapping">La fuente de la campaña</Anchor> conecta los eventos de conversión on-site con sus respectivas campañas off-site, on-site y combinadas, lo que permite una atribución precisa y la elaboración de informes de rendimiento. A diferencia de otras tareas en DCP (como conversiones o engagement), la **tarea de campañas es idéntica tanto para las campañas on-site como para las campañas off-site**. Esto significa que sigues el mismo proceso de configuración independientemente del tipo de campaña.
 
-## Prerequisites
+## Prerrequisitos
 
-Before the Campaigns task can be set up, the collaboration owner needs to assign it to the collaborator who owns the platform where the conversion events are generated. For more information, see Assign configuration tasks
+Antes de poder configurar la tarea de campañas, el propietario de la colaboración debe asignársela al colaborador que sea propietario de la plataforma donde se generan los eventos de conversión. Para obtener más información, consulta Asignar tareas de configuración
 
-## Set up the Campaigns task
+## Configurar la tarea de campañas
 
-The campaigns source links internal conversion events to campaign-level identifiers (for example, campaign ID) in the context of on-site, off-site, or combined campaigns. The campaign information you set in this task is submitted via a custom data source to DCP.
+La fuente de campañas enlaza los eventos de conversión internos con identificadores a nivel de campaña (por ejemplo, ID de campaña) en el contexto de campañas on-site, off-site o combinadas. La información de campaña que configures en esta tarea se envía a DCP a través de una fuente de datos personalizada.
 
 <div id="1-prepare-campaign-data" />
 
-<Accordion title="1. Prepare campaign data">
+<Accordion title="1. Preparar los datos de campaña">
 
-Before you set up the campaign source in DCP, prepare the campaign’s custom source and upload it to your cloud service. For details about the mapping schema and how to load the campaign source to your cloud environment, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Prepare campaign source</Anchor>.
+Antes de configurar la fuente de campaña en DCP, prepara la fuente personalizada de la campaña y súbela a tu servicio en la nube. Para obtener más información sobre el esquema de mapeo y cómo cargar la fuente de campaña en tu entorno en la nube, consulta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#preparar-la-fuente-de-mapeo-de-la-campaña">Preparar la fuente de campaña</Anchor>.
 
-To set up the campaign source in DCP:
+Para configurar la fuente de campaña en DCP:
 
-1. Go to the **collaboration measurement** page.
-2. Click **Campaigns**.
-3. On the **Campaigns** dialog, click **+ New campaign source**.
-4. In the **New campaign source** dialog, enter a name in the **Source name** field according to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines">requirements and guidelines</Anchor>.
-5. Click **Next**.
+1. Ve a la página de **medición de la colaboración**.
+2. Haz clic en **Campañas**.
+3. En el cuadro de diálogo **Campañas**, haz clic en **+ Nueva fuente de campaña**.
+4. En el cuadro de diálogo **Nueva fuente de campaña**, introduce un nombre en el campo **Nombre de la fuente** de acuerdo con los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#requisitos-y-directrices">requisitos y directrices</Anchor>.
+5. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
 
 </Accordion>
 
 <div id="2-open-campaigns-settings" />
 
-<Accordion title="2. Open campaigns settings">
+<Accordion title="2. Abrir la configuración de campañas">
 
-The **Measurement settings** page is where you configure how campaigns are collected, attributed, and connected to media partner data as part of your collaboration setup.
+En la página **Configuración de la medición** configuras cómo se recopilan y atribuyen las campañas, y cómo se conectan con los datos de partners de medios como parte de la configuración de tu colaboración.
 
-To open the **Measurement settings** page, follow these steps:
+Para abrir la página **Configuración de la medición**, sigue estos pasos:
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
-2. On the **Data Collaboration Platform** page, select the collaboration you want to set.
-3. At the bottom of the collaboration page, click **Set up measurement.**
-   * If the link is disabled, set up the collaboration's <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">data sources</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiences</Anchor>.
-4. On the **Measurement Setting** page, click the **Campaigns** pane to open the **Campaigns** dialog.
+1. En AppsFlyer, en el menú lateral, ve a **Colaborar** > **Data Clean Room**.
+2. En la página **Data Collaboration Platform**, selecciona la colaboración que deseas configurar.
+3. En la parte inferior de la página de colaboración, haz clic en **Configurar medición.**
+   * Si el enlace está desactivado, configura las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">fuentes de datos</Anchor> y las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiencias</Anchor> de la colaboración.
+4. En la página **Configuración de la medición**, haz clic en el panel **Campañas** para abrir el cuadro de diálogo **Campañas**.
 
-   > 📘 **Note**
+   > 📘 **Nota:**
    >
-   > * If the **Campaigns** dialog is locked, it means that the **Campaigns** task is assigned to your collaborator, and you cannot view its content. If you are the collaboration owner, you can unlock by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
-   > * If the **Campaigns** pane is grayed out, ask the collaboration owner to assign you the Campaigns task.
+   > * Si el cuadro de diálogo **Campañas** está bloqueado, significa que la tarea de **Campañas** está asignada a tu colaborador y no puedes ver su contenido. Si eres el propietario de la colaboración, puedes desbloquearlo reasignándote la tarea. Sin embargo, se eliminará cualquier configuración anterior y la tarea se restablecerá.
+   > * Si el panel **Campañas** aparece atenuado, pide al propietario de la colaboración que te asigne la tarea de Campañas.
 
 
 </Accordion>
 
 <div id="3-set-campaign-data-provision-method" />
 
-<Accordion title="3. Set campaign data provision method">
+<Accordion title="3. Configurar el método de suministro de datos de campaña">
 
-Campaign data is provided to DCP in a custom source file stored in your cloud.
+Los datos de campaña se proporcionan a DCP en un archivo de origen personalizado almacenado en tu nube.
 
-To set up the conversion provision method in DCP, follow these steps:
+Para configurar el método de suministro de conversiones en DCP, sigue estos pasos:
 
-1. In the **Campaigns** dialog, click + **New campaign source**.
-2. In the **New conversion source** dialog, in the **Source name** step, set the campaign source's name in the **Source name** field according to the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines">requirements and guidelines</Anchor>.
-3. Click **Next**.
+1. En el cuadro de diálogo **Campañas** , haz clic en + **Nueva fuente de campaña**.
+2. En el cuadro de diálogo **Nueva fuente de conversión** , en el paso **Nombre de la fuente**, establece el nombre de la fuente de campaña en el **Nombre de la fuente** según los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#requisitos-y-directrices">requisitos y directrices</Anchor>.
+3. Haz clic **Siguiente**.
 
 </Accordion>
 
 <div id="4-set-source-location" />
 
-<Accordion title="4. Set source location">
+<Accordion title="4. Establecer ubicación de la fuente">
 
-Set the location of the campaign's source in your cloud service.
+Define la ubicación de la fuente de la campaña en tu servicio en la nube.
 
-1. In the **Set source location step**, select the connection from which the source is accessed.
-   * If your account does not have connections defined, the **New connection** dialog will open, prompting you to create one.
-   * If you have existing connections but want to use a new one, open the **Select connection** list and select **+ New connection**.
-2. Set the access details according to your cloud service:
-   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-bigquery">BigQuery</Anchor>
-   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-snowflake">Snowflake</Anchor>
-   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-cloud-storage-buckets">Amazon S3 and GCS</Anchor>
-   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files">Local file system</Anchor>
-3. Select how new data should be handled. For more information, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Set source sync method</Anchor>.
-4. Click **Next**.
+1. En el paso **Establecer ubicación de la fuente**, selecciona la conexión desde la que se accede a la fuente.
+   * Si tu cuenta no tiene conexiones definidas, se abrirá el cuadro de diálogo **Nueva conexión** para que crees una.
+   * Si ya tienes conexiones existentes pero quieres usar una nueva, abre la lista **Seleccionar conexión** y selecciona **+ Nueva conexión**.
+2. Configura los datos de acceso según tu servicio en la nube:
+   * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#fuentes-ubicadas-en-bigquery">BigQuery</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#fuentes-ubicadas-en-snowflake">Snowflake</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#fuentes-ubicadas-en-buckets-de-almacenamiento-en-la-nube">Amazon S3 y GCS</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#ubicación-de-la-fuente-como-archivos-locales">Sistema de archivos local</Anchor>
+3. Selecciona cómo deben gestionarse los datos nuevos. Para más información, consulta: <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Configurar el método de sincronización de la fuente</Anchor>.
+4. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
 
 </Accordion>
 
 <div id="5-map-campaign-fields" />
 
-<Accordion title="5. Map campaign fields">
+<Accordion title="5. Asignar campos de campaña">
 
-If a custom source is used to provide conversion events to DCP, map your on-site custom conversion source fields to their corresponding DCP fields.
+Si se utiliza una fuente personalizada para proporcionar eventos de conversión a DCP, asigna los campos de tu fuente de conversión personalizada en el sitio a los campos correspondientes de DCP.
 
-**Load campaign source fields**
+**Cargar campos de la fuente de campaña**
 
-If the campaign source fields are not already loaded, you might have to load them manually to have them mapped to DCP fields.
+Si los campos de la fuente de campaña todavía no están cargados, puede que tengas que cargarlos manualmente para asignarlos a los campos de DCP.
 
-To load conversion source fields, follow these steps:
+Para cargar los campos de la fuente de conversión, sigue estos pasos:
 
-1. In the **Map source fields** step, click **Load fields from source**.
-2. For information about how to manually load fields, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields">Load your source fields</Anchor>.
+1. En el paso **Asignar campos de la fuente**, haz clic **Cargar campos desde la fuente**.
+2. Para obtener información sobre cómo cargar campos manualmente, consulta: <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-carga-tus-campos-de-la-fuente">Cargar los campos de tu fuente</Anchor>.
 
-**Auto-map campaign fields**
+**Asignar automáticamente campos de campaña**
 
-When campaign source fields are loaded, DCP automatically maps them to their corresponding DCP fields. Auto mapping can take up to 10 seconds. A banner displays the mapping result, showing how many fields were mapped and listing any source columns that could not be matched.
+Cuando se cargan los campos de fuente de campaña, DCP los asigna automáticamente a sus campos de DCP correspondientes. La asignación automática puede tardar hasta 10 segundos. Se muestra un banner con el resultado de la asignación, que indica cuántos campos se han asignado y enumera las columnas de fuente para las que no se ha encontrado ninguna coincidencia.
 
-To re-trigger auto mapping, click **Update mapping**.
+Para volver a activar la asignación automática, haz clic en **Actualizar asignación**.
 
-**Map campaign fields**
+**Asignar campos de campaña**
 
-If the conversion source fields are loaded, you can map them to the DCP fields.
+Si se cargan los campos de fuente de conversión, puedes asignarlos a los campos de DCP.
 
-To map the campaigns' custom source fields, follow these steps:
+Para asignar los campos de fuente personalizados de las campañas, sigue estos pasos:
 
-1. Map the fields under **Source fields** to their corresponding fields under **DCP fields**.
-   * For a list of fields and descriptions, see The campaigns scheme.
-2. Click **Save**. The **campaign\_mapping source created** message is displayed.
+1. Asigna los campos de **Campos de fuente** a sus campos correspondientes de **Campos de DCP**.
+   * Para ver una lista de campos y descripciones, consulta El esquema de campañas.
+2. Haga clic en **Guardar**. Se muestra el mensaje **campaign\_mapping source created**.
 
 </Accordion>
 
 <div id="5-align-collaborator-name" />
 
-<Accordion title="6. Align collaborator name">
+<Accordion title="6. Alinear nombre del colaborador">
 
-The final step after completing the Campaigns task is to align the collaborator’s name. This is required because each DCP account has only one campaign source. Since the account owner can maintain multiple collaborations with different collaborators, DCP needs to know which collaborator is active in the current collaboration.
+El paso final después de completar la tarea de Campañas es alinear el nombre del colaborador. Esto es necesario porque cada cuenta de DCP solo tiene una fuente de campaña. Como el propietario de la cuenta puede mantener varias colaboraciones con distintos colaboradores, DCP necesita saber qué colaborador está activo en la colaboración actual.
 
-To align the collaborator name:
+Para alinear el nombre del colaborador:
 
-* In the **Campaigns** dialog, under **Align collaborator names**, select the collaborator of the current collaboration.
+* En el cuadro de diálogo **Campañas**, en **Alinear nombres de colaboradores**, selecciona el colaborador de la colaboración actual.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01K3BEVMGMPENVYY18EB0ANQCP=prerequisites h_01K3BEVMGM6EEP6DY54HDDVKTR=set-up-the-campaigns-task h_01K3BEVMGMC9C09FJTRVMS2J32=1-prepare-campaign-data h_01K3BEVMGMT28RXKBN31EBAFYJ=2-open-campaigns-settings h_01K3BEVMGMGV8GVGKZFDCSC0DF=note h_01K3BEVMGM2D9TA52F9F36Z31W=3-set-campaign-data-provision-method h_01K3BEVMGM67JV6VT6TBXTYACC=4-set-source-location h_01K3BEVMGNNFYFF939RHB8Z8E1=5-map-campaign-fields h_01K3BEVMGN4MAV9B0HP2TK5XCC=5-align-collaborator-name" />
+<div data-zendesk-anchors="prerequisites=prerrequisitos h_01K3BEVMGMPENVYY18EB0ANQCP=prerrequisitos set-up-the-campaigns-task=configurar-la-tarea-de-campa%C3%B1as h_01K3BEVMGM6EEP6DY54HDDVKTR=configurar-la-tarea-de-campa%C3%B1as h_01K3BEVMGMC9C09FJTRVMS2J32=1-prepare-campaign-data h_01K3BEVMGMT28RXKBN31EBAFYJ=2-open-campaigns-settings h_01K3BEVMGMGV8GVGKZFDCSC0DF=nota h_01K3BEVMGM2D9TA52F9F36Z31W=3-set-campaign-data-provision-method h_01K3BEVMGM67JV6VT6TBXTYACC=4-set-source-location h_01K3BEVMGNNFYFF939RHB8Z8E1=5-map-campaign-fields h_01K3BEVMGN4MAV9B0HP2TK5XCC=5-align-collaborator-name" />

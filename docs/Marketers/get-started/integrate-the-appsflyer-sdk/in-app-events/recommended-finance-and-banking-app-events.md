@@ -1,5 +1,5 @@
 ---
-title: Recommended finance and banking app events
+title: Eventos de aplicación recomendados para finanzas y banca
 metadata:
   keywords:
     - Advertisers
@@ -14,166 +14,165 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-04-27T12:58:44Z'
-  edited_at: '2024-09-23T12:46:21Z'
+  edited_at: '2026-08-12T12:01:22Z'
   id: 360019598337
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019598337-Recommended-finance-and-banking-app-events
+  url: https://support.appsflyer.com/hc/es/articles/360019598337
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your finance and banking app.
+> **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de finanzas y banca.
 
-## <Image alt="banking.png" src="https://files.readme.io/260638f807a43f42c6ff99bb72b8d4113b2df09436b9322a820888ad3f8a01ae-20659476893969.png" width="100px" /> Finance and banking
+## <Image alt="bancos.png" src="https://files.readme.io/260638f807a43f42c6ff99bb72b8d4113b2df09436b9322a820888ad3f8a01ae-20659476893969.png" width="100px" /> Finanzas y banca
 
-Finance and banking apps provide users with the ability to perform a wide range of financial-related objectives, such as signing up for new credit cards or applying for loans. The typical events that we suggest recording include account openings, credit card applications, and loan applications.
+Las aplicaciones de finanzas y banca ofrecen a los usuarios la posibilidad de llevar a cabo una amplia gama de objetivos relacionados con las finanzas, entre ellos, la suscripción de tarjetas de crédito nuevas o la solicitud de préstamos. Los típicos eventos que recomendamos registrar incluyen aperturas de cuentas, solicitudes de tarjetas de crédito y solicitudes de préstamos.
 
-Recording these events can help you determine:
+Registrar estos eventos puede ayudarte a determinar:
 
-* What type of account users want the most, and provide you with ideas for retargeting
-* What benefits users look for in a credit card
-* What users need financial assistance for, and how much assistance they want
+* Qué tipo de cuenta prefieren los usuarios y brindarte ideas para el retargeting.
+* Qué beneficios buscan los usuarios en una tarjeta de crédito.
+* Para qué necesitan los usuarios asistencia financiera y cuánta asistencia quieren.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * **A note from our lawyers**: Health data is considered "Restricted Data" and is considered a special category of data in many jurisdictions. As such, customers are prohibited from sending AppsFlyer any such data.
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=finance_banking">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=finance_banking&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
+> * **Una nota de nuestros abogados**: los datos sanitarios se consideran "Datos restringidos" y se consideran una categoría especial de datos en muchas jurisdicciones. Como tales, a los clientes se les prohíbe enviar a AppsFlyer dichos datos.
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=finance_banking">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=finance_banking&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Puedes encontrar instrucciones detalladas para tu desarrollador en el **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.**
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Flowchart_for_recommended_events finance_banking_app_user_journey](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)
+[![Diagrama_de_flujo_para_eventos_recomendados recorrido_del_usuario_de_la_aplicación_de_finanzas_y_banca](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the finance and banking vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que son típicas de la vertical de finanzas y bancos. Cada estructura incluye un tipo de evento predefinido y los parámetros del evento predefinidos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Acceso (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Activador**
 
-When the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Learn how many users installed the app and completed the signup process, and what signup methods your users prefer
+Descubrir cuántos usuarios instalaron la aplicación y completaron el proceso de registro, y qué métodos de registro prefieren tus usuarios.
 
-**Trigger**
+**Activador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | Email, Facebook |
+| af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que incluye nombres de eventos personalizados y los parámetros de eventos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="registration-verified-registration_verified" />
 
-<Accordion title="Registration verified (registration_verified)">
+<Accordion title="Registro verificado (registration_verified)">
 
-**Purpose**
+**Finalidad**
 
-Record this event and compare it with other data to learn more about your users. For example, you can learn how many users sign up but aren't accepted. 
+Puedes registrar este evento y compararlo con otros datos para aprender más acerca de tus usuarios. Por ejemplo, puedes saber cuántos usuarios se registran pero no son aceptados. 
 
-**Trigger**
+**Disparador**
 
-When the registration is verified
+Cuando se verifique el registro.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| submit\_registration | Type of signup method verified. Do not enter personal identifiable information (PII). | Email, Facebook |
+| submit\_registration | Tipo de método de registro verificado. No completes la información de identificación personal (PII). | correo electrónico, facebook |
 
 </Accordion>
 
 <div id="submit-account-application-submit_account_application" />
 
-<Accordion title="Submit account application (submit_account_application)">
+<Accordion title="Enviar solicitud de cuenta (submit_account_application)">
 
-**Purpose**
+**Finalidad**
 
-Record this event and compare it with other data to learn more about your users. For example, you can learn how many users sign up but do not apply to open an account.
+Puedes registrar este evento y compararlo con otros datos para aprender más acerca de tus usuarios. Por ejemplo, puedes saber cuántos usuarios se registran pero no solicitan abrir una cuenta.
 
-**Trigger**
+**Disparador**
 
-When the user completes the account application process
+Cuando el usuario completa el proceso de solicitud de cuenta.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| account\_type | Type of account applied for | savings |
-| application\_method | Where the application was made | app |
-| PII\_type | Type of ID used during application | passport |
+| account\_type | Tipo de cuenta solicitada | savings |
+| application\_method | Donde se hizo la solicitud | aplicación |
+| PII\_type | Tipo de ID utilizado durante la solicitud | passport |
 
 </Accordion>
 
 <div id="open-account-success-open_account_success" />
 
-<Accordion title="Open account success (open_account_success)">
+<Accordion title="Cuenta abierta satisfactoriamente (open_account_success)">
 
-**Purpose**
+**Finalidad**
 
-Record this event and compare it with other data to learn more about your users. For example, you can learn how many users apply for accounts and are accepted; and then try to improve the funnel or retarget those users later.
+Puedes registrar este evento y compararlo con otros datos para aprender más acerca de tus usuarios. Por ejemplo, puedes saber cuántos usuarios solicitan cuentas y son aceptados, y tratar de mejorar el embudo o volver a captar a esos usuarios más tarde.
 
-**Trigger**
+**Disparador**
 
-When the user application is accepted and the account is opened
+Cuando se acepta la solicitud de usuario y se abre la cuenta.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| account\_type | Type of account opened | savings |
-| application\_method | Where the application was made | app |
-| PII\_type | Type of ID used during application | identification card |
+| account\_type | Tipo de cuenta abierta | savings |
+| application\_method | Donde se hizo la solicitud | aplicación |
+| PII\_type | Tipo de ID utilizado durante la solicitud | identification card |
 
 </Accordion>
 
 <div id="open-account-rejected-open_account_rejected" />
 
-<Accordion title="Open account rejected (open_account_rejected)">
+<Accordion title="Cuenta abierta rechazada (open_account_rejected)">
 
-**Purpose**
+**Finalidad**
 
-Record this event and compare it with other data to learn more about your users. For example, you can learn how many users apply for accounts but aren't accepted; and then try to improve the funnel or retarget those users later.
+Puedes registrar este evento y compararlo con otros datos para aprender más acerca de tus usuarios. Por ejemplo, puedes saber cuántos usuarios solicitan cuentas pero no son aceptados, y tratar de mejorar el embudo o volver a captar a esos usuarios más tarde.
 
-**Trigger**
+**Activador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| account\_type | Type of account applied for | savings |
+| account\_type | Tipo de cuenta solicitada | savings |
 
 </Accordion>
 
-<div data-zendesk-anchors="finance-and-banking=-finance-and-banking h_01HGTAXN8PV7TPNRBWD593BR4K=-finance-and-banking h_01HGTAXN8Q652HG7412X583KWX=important h_01HGTAXN8QWEWD86FMF6GEZNZD=recommended-structures-for-predefined-events h_01HGTAXN8Q3K0EFGXZ41XZH438=login-af_login h_01HGTAXN8Q6KFDPB8XSVT3F9E8=complete-registration-af_complete_registration h_01HGTAXN8Q47F6CXXBEVCDPSBA=recommended-structures-for-custom-events h_01HGTAXN8QB911JMER3EV7RGTM=registration-verified-registration_verified h_01HGTAXN8QCYR0BQ3Q3VN0EQ9X=submit-account-application-submit_account_application h_01HGTAXN8QJ4DKQS2FY9KY0AX4=open-account-success-open_account_success h_01HGTAXN8QK1P5QYEN5SNBQ5ED=open-account-rejected-open_account_rejected" />
+<div data-zendesk-anchors="finance-and-banking=-finanzas-y-banca h_01HGTAXN8PV7TPNRBWD593BR4K=-finanzas-y-banca h_01HGTAXN8Q652HG7412X583KWX=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAXN8QWEWD86FMF6GEZNZD=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAXN8Q3K0EFGXZ41XZH438=login-af_login h_01HGTAXN8Q6KFDPB8XSVT3F9E8=complete-registration-af_complete_registration recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAXN8Q47F6CXXBEVCDPSBA=estructuras-recomendadas-para-eventos-personalizados h_01HGTAXN8QB911JMER3EV7RGTM=registration-verified-registration_verified h_01HGTAXN8QCYR0BQ3Q3VN0EQ9X=submit-account-application-submit_account_application h_01HGTAXN8QJ4DKQS2FY9KY0AX4=open-account-success-open_account_success h_01HGTAXN8QK1P5QYEN5SNBQ5ED=open-account-rejected-open_account_rejected" />

@@ -1,5 +1,5 @@
 ---
-title: End-user events cross-platform report in Data Locker
+title: Reporte de eventos de usuarios finales multiplataforma en Data Locker
 metadata:
   keywords:
     - Marketers
@@ -12,87 +12,86 @@ x-zendesk:
     - Marketers
     - Cross-Platform Measurement
   created_at: '2025-10-07T10:37:56Z'
-  edited_at: '2026-09-03T09:06:58Z'
+  edited_at: '2026-10-20T03:54:55Z'
   id: 39748676204817
-  locale: en-us
+  locale: es
   section: Cross platform reports
   section_id: 50467263168657
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/39748676204817-End-user-events-cross-platform-report-in-Data-Locker
+  url: https://support.appsflyer.com/hc/es/articles/39748676204817
 ---
-> **At a glance:** The Cross-platform end-user events report measures complete user journeys, conversions, and LTV across platforms and devices
+> **Resumen:** El reporte de eventos de usuarios finales multiplataforma mide los recorridos completos de los usuarios, las conversiones y el LTV en todas las plataformas y dispositivos
 
-The Cross-platform end-user events report is a raw data report that provides event-level logs of sessions and in-app events for each user, linked across platforms using your Customer User ID (CUID). Each event includes the cross-platform attribution result, enabling you to analyze complete user journeys.
+El reporte de eventos de usuario final multiplataforma es un reporte de raw data que proporciona registros de sesiones y eventos in-app a nivel de evento para cada usuario, vinculados entre plataformas mediante tu Customer User ID (CUID). Cada evento incluye el resultado de la atribución multiplataforma, lo que te permite analizar viajes completos de los usuarios.
 
-For more information about the user-based attribution flow and configuration, see <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">User-based cross-platform attribution</Anchor>.
+Para obtener más información sobre el flujo y la configuración de atribución basada en el usuario, consulta <Anchor target="_blank" href="/marketers/es/docs/beta-user-based-cross-platform-attribution">Atribución multiplataforma basada en el usuario</Anchor>.
 
-## Report fields
+## Campos de reporte
 
-To learn which fields are contained in the report, [download a report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRhOl-tyaJvgPd9rxGkGMNrgzHPpr7ZsMMnONOHkzdObor158gJPt7XwCBkreM4ka4OkGIyDmqCp_hh/pub?output=csv).
+Para saber qué campos contiene el reporte, [descarga una muestra del reporte](https://docs.google.com/spreadsheets/d/e/2PACX-1vRhOl-tyaJvgPd9rxGkGMNrgzHPpr7ZsMMnONOHkzdObor158gJPt7XwCBkreM4ka4OkGIyDmqCp_hh/pub?output=csv).
 
-The report sample includes all the report fields and their values. For the definitions of the fields, see <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">the field dictionary</Anchor>.
+El reporte de ejemplo incluye todos los campos del reporte y sus valores. Para las definiciones de los campos, consulta el <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">diccionario de campos</Anchor>.
 
-## Report data freshness
+## Actualización de los datos del reporte
 
-* The report runs a batch every 4 hours.
-* Each batch run processes events that entered the database during the previous 4-hour window.
-  * Example: The 8:00 AM batch run processes events that were entered into the database between 3:00 AM and 7:00 AM.
+* El reporte ejecuta un proceso por lotes cada 4 horas.
+* Cada ejecución del proceso por lotes procesa los eventos que ingresaron en la base de datos durante las 4 horas anteriores.
+  * Ejemplo: La ejecución del proceso por lotes de las 8:00 procesa los eventos que ingresaron en la base de datos entre las 3:00 y las 7:00.
 
-* Events are allocated to their corresponding hourly buckets.
-  * Example: Events that entered the database between 3:00 and 4:00 AM will appear in the 3:00 AM bucket.
+* Los eventos se asignan al intervalo horario correspondiente.
+  * Ejemplo: Los eventos que ingresaron en la base de datos entre las 3:00 y las 4:00 aparecerán en el bucket de las 3:00 a. m.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> There is typically a short delay between an event's actual happening and its entry into the database. The report uses the database entry time to ensure accurate and consistent hourly grouping.
+> Normalmente hay un breve retraso entre el momento real de un evento y su entrada en la base de datos. El reporte utiliza la hora de entrada en la base de datos para garantizar una agrupación por horas precisa y coherente.
 
-### Example of the 8:00 AM batch run
+### Ejemplo de la ejecución del proceso por lotes de las 8:00
 
-| Date | Report version | Report available at | The report includes events happening between | The report include events that entered the database between |
+| Fecha | Versión del reporte | Reporte disponible en | El reporte incluye eventos que ocurren entre | El reporte incluye eventos que ingresaron a la base de datos entre |
 | --- | --- | --- | --- | --- |
 | 2025-10-01 | 3:00 | 9:00 | 2:00-4:00 | 3:00-4:00 |
 | 2025-10-01 | 4:00 | 9:00 | 3:00-5:00 | 4:00-5:00 |
 | 2025-10-01 | 5:00 | 9:00 | 4:00-6:00 | 5:00-6:00 |
 | 2025-10-01 | 6:00 | 9:00 | 5:00-7:00 | 6:00-7:00 |
 
-Notes for the above example:
+Notas sobre el ejemplo anterior:
 
-* Events of the last hour before the run are not processed to allow enough time to enrich events with their related CUID. In the above example, the 8:00 AM batch process events that entered the database between 3:00 and 7:00. Events that entered the database between 7:00 and 8:00 are not processed.
-* The report is only available an hour after the batch run because an internal process updates the batch during that hour. In the above example, the 8:00 AM batch is available at 9:00 AM.
+* Los eventos de la última hora antes de la ejecución no se procesan para disponer del tiempo suficiente para enriquecerlos con su CUID correspondiente. En el ejemplo anterior, el proceso por lotes de las 8:00 procesa los eventos que ingresaron en la base de datos entre las 3:00 y las 7:00. Los eventos que ingresaron en la base de datos entre las 7:00 y las 8:00 no se procesan.
+* El reporte solo está disponible una hora después de la ejecución del proceso por lotes, ya que durante esa hora un proceso interno actualiza el lote. En el ejemplo anterior, el proceso por lotes de las 8:00 está disponible a las 9:00.
 
-## How to subscribe to the report?
+## ¿Cómo me suscribo al reporte?
 
-1. In AppsFlyer, from the side menu, select **Export** > **Data Locker**.
-2. In the **Data Locker content** pane, scroll down to the **Advanced reports** section.
-3. Select **End-user events cross-platform.**
+1. En AppsFlyer, desde el menú lateral, selecciona **Exportar** > **Data Locker**.
+2. En el **panel de contenido de Data Locker** , desplázate hacia abajo hasta la **sección de reportes avanzados**.
+3. Selecciona **Eventos de usuarios finales multiplataforma.**
 
-## How to access the report data in your cloud bucket?
+## ¿Cómo accedo a los datos del reporte en tu bucket de la nube?
 
-The path to the report consists of the following folder hierarchy:
+La ruta del reporte consta de la siguiente jerarquía de carpetas:
 
 ```
 <bucket-name>/<DataLocker connection name>/t=end_user_events_user_level_cross_platform/dt=<dt=yyyy-mm-dd>/h=<hour>/
 ```
 
-### DL Report folder hierarchy
+### Jerarquía de carpetas del reporte de Data Locker
 
 [![](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)
 
-## BI Developer considerations
+## Consideraciones para desarrolladores de BI
 
-* Each report hourly bucket contains unique end-user events. Make sure you pull all reports on an hourly or daily basis.
-* Ad revenue events are not included yet.
-* All app data is provided in a single file. Use the App ID field to segregate data per app, or set Data Locker to segregate by app. It is recommended to use the unified segregation type.
-* Pre-attribution data such as cost, clicks, and impressions, should be extracted from the cost ETL report.
+* Cada intervalo horario del reporte contiene eventos únicos de usuarios finales. Asegúrate de extraer todos los reportes cada hora o diariamente.
+* Los eventos de ingresos por publicidad aún no están incluidos.
+* Todos los datos de la aplicación se proporcionan en un único archivo. Usa el campo ID de aplicación para segregar datos por aplicación o configura Data Locker para que segregue por aplicación. Se recomienda utilizar el tipo de segregación unificada.
+* Los datos previos a la atribución, como los costos, los clics y las impresiones, deben extraerse del reporte ETL de costos.
 
-### Query examples
+### Ejemplos de consultas
 
-The following are examples of some popular, practical applications of the data that BI developers can extract via Data Locker. Each example is illustrated by an SQL statement
+A continuación se muestran algunos ejemplos de aplicaciones prácticas y habituales de los datos que los desarrolladores de BI pueden extraer mediante Data Locker. Cada ejemplo se ilustra mediante una instrucción SQL.
 
 <div id="calculating-total-user-acquisitions" />
 
-<Accordion title="Calculating total User Acquisitions">
+<Accordion title="Cálculo del total de adquisiciones de usuarios">
 
-Count the number of new unique users per media source and campaign.
+Cuenta el número de nuevos usuarios únicos por fuente de medios y campaña.
 
 ```sql
 SELECT DATE (event_time__conversion) AS install_date
@@ -117,9 +116,9 @@ GROUP BY install_date
 
 <div id="calculating-total-platform-activations" />
 
-<Accordion title="Calculating total platform activations">
+<Accordion title="Cálculo del total de activaciones de plataformas">
 
-Sum the number of total new platforms, groups, media sources, and campaigns brought per user.
+Suma el número total de nuevas plataformas, grupos, fuentes de medios y campañas atribuidas por usuario.
 
 ```sql
 SELECT DATE (event_time__conversion) AS install_date
@@ -167,9 +166,9 @@ GROUP BY install_date
 
 <div id="calculating-total-revenue" />
 
-<Accordion title="Calculating total revenue">
+<Accordion title="Cálculo de los ingresos totales">
 
-Sum the total revenue per media source and campaign.
+Suma los ingresos totales por fuente de medios y campaña.
 
 ```sql
 SELECT DATE (event_time__conversion) AS install_date
@@ -191,4 +190,4 @@ GROUP BY install_date
 
 </Accordion>
 
-<div data-zendesk-anchors="the-report-fields=report-fields h_01K6Z40KG9H1AC81H77XXEGK1B=report-fields h_01K6Z40KG9PTRAFGXB3XJH5TJ7=report-data-freshness h_01K6Z40KG9QPSMXT13N50TE7KE=important h_01K6Z40KG9JTHGJG7YJNH9TTDT=example-of-the-800-am-batch-run h_01K6Z40KG9J1XWV99Z9M7AG0BY=how-to-subscribe-to-the-report how-to-access-the-report-in-your-bucket=how-to-access-the-report-data-in-your-cloud-bucket h_01K6Z40KG9CDQ43ASM5T80AK65=how-to-access-the-report-data-in-your-cloud-bucket h_01K6Z40KG9NSVWTRSHR71Q7PM6=dl-report-folder-hierarchy h_01K6Z7QHDT4Q2D4JFGC28W8MND=bi-developer-considerations h_01K6Z40KG9E2F30Q9P5GFA9TWT=query-examples h_01K6Z40KG9Y4MWKY6HX8A5NPXA=calculating-total-user-acquisitions h_01K6Z40KG9J9VKC3JH6XNNDA52=calculating-total-platform-activations h_01K6Z40KG9SE8068HG75H59E8Q=calculating-total-revenue" />
+<div data-zendesk-anchors="the-report-fields=campos-de-reporte h_01K6Z40KG9H1AC81H77XXEGK1B=campos-de-reporte report-data-freshness=actualizaci%C3%B3n-de-los-datos-del-reporte h_01K6Z40KG9PTRAFGXB3XJH5TJ7=actualizaci%C3%B3n-de-los-datos-del-reporte h_01K6Z40KG9QPSMXT13N50TE7KE=importante example-of-the-800-am-batch-run=ejemplo-de-la-ejecuci%C3%B3n-del-proceso-por-lotes-de-las-800 h_01K6Z40KG9JTHGJG7YJNH9TTDT=ejemplo-de-la-ejecuci%C3%B3n-del-proceso-por-lotes-de-las-800 how-to-subscribe-to-the-report=c%C3%B3mo-me-suscribo-al-reporte h_01K6Z40KG9J1XWV99Z9M7AG0BY=c%C3%B3mo-me-suscribo-al-reporte how-to-access-the-report-in-your-bucket=c%C3%B3mo-accedo-a-los-datos-del-reporte-en-tu-bucket-de-la-nube h_01K6Z40KG9CDQ43ASM5T80AK65=c%C3%B3mo-accedo-a-los-datos-del-reporte-en-tu-bucket-de-la-nube dl-report-folder-hierarchy=jerarqu%C3%ADa-de-carpetas-del-reporte-de-data-locker h_01K6Z40KG9NSVWTRSHR71Q7PM6=jerarqu%C3%ADa-de-carpetas-del-reporte-de-data-locker bi-developer-considerations=consideraciones-para-desarrolladores-de-bi h_01K6Z7QHDT4Q2D4JFGC28W8MND=consideraciones-para-desarrolladores-de-bi query-examples=ejemplos-de-consultas h_01K6Z40KG9E2F30Q9P5GFA9TWT=ejemplos-de-consultas h_01K6Z40KG9Y4MWKY6HX8A5NPXA=calculating-total-user-acquisitions h_01K6Z40KG9J9VKC3JH6XNNDA52=calculating-total-platform-activations h_01K6Z40KG9SE8068HG75H59E8Q=calculating-total-revenue" />

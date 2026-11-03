@@ -1,5 +1,5 @@
 ---
-title: Audiences guide
+title: Guía de Audiences
 metadata:
   keywords:
     - Audiences
@@ -16,207 +16,207 @@ x-zendesk:
     - Marketers
     - Audience Segmentation
   created_at: '2017-05-30T07:21:22Z'
-  edited_at: '2026-05-31T10:25:39Z'
+  edited_at: '2026-08-12T12:26:08Z'
   id: 115002689186
-  locale: en-us
+  locale: es
   section: Audiences
   section_id: 6551336428945
-  url: https://support.appsflyer.com/hc/en-us/articles/115002689186-Audiences-guide
+  url: https://support.appsflyer.com/hc/es/articles/115002689186
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Increase the efficiency of your user acquisition and remarketing campaigns by using AppsFlyer Audiences to build and connect audience segments to your partner networks.
+> **En resumen:** Aumenta la eficacia de tus campañas de adquisición de usuarios y de remarketing utilizando Audiences de AppsFlyer para crear y conectar segmentos de audiencia con tus redes de partners.
 
 ![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
 
-## Audiences basics
+## Conceptos básicos de Audiences
 
-AppsFlyer Audiences lets you easily build audience segments and connect them to your owned and paid channels—so you can deliver tailored campaigns for better engagement and performance. And once your campaign’s been sent, you can view performance metrics in Audiences as well.
+Audiences de AppsFlyer te permite crear fácilmente segmentos de audiencia y conectarlos con tus canales propios y pagos, para que puedas ofrecer campañas personalizadas para lograr un mejor engagement y rendimiento. Y una vez enviada tu campaña, también podrás ver las métricas de rendimiento en Audiences.
 
-An audience is a segment of current or past users of your app that meet the specific criteria that you define. Audiences can be based on personal characteristics, behavior, in-app activity, attribution source, revenue generated, geographic location, device type, and more.
+Una audiencia es un segmento de usuarios actuales o anteriores de tu aplicación que cumplen con los criterios específicos que definas. Las audiencias se pueden basar en características personales, comportamiento, actividad in-app, fuente de atribución, ingresos generados, ubicación geográfica, tipo de dispositivo y más.
 
-**Step 1 - Build your audience in AppsFlyer:** You can build a custom audience from scratch, import one, or select from our ready-made, fully customizable list of “Suggested Audiences”, which save you time and are based on industry best practices.
+**Paso 1: Crea tu audiencia en AppsFlyer:** puedes crear una audiencia personalizada desde cero, importar una o seleccionar de nuestra lista prediseñada y totalmente personalizable de "Audiencias sugeridas", que te ahorran tiempo y se basan en las mejores prácticas de la industria.
 
-**Step 2 - Connect the audience:** Once you’ve built your audience, the next step is connecting it to your media partners from within AppsFlyer, which sends identifiers for the members of that audience to the partners and creates the audience on the partners’ systems. This enables them to serve specific ads only to these users. Audiences are automatically refreshed and pushed to partners once daily. Additionally, you can upload an audience to 3rd-party services such as Amazon S3 buckets, or download it as a CSV file right from the dashboard.
+**Paso 2: Conecta la audiencia:** una vez que hayas creado tu audiencia, el siguiente paso es conectarla a tus partners de medios desde AppsFlyer, que envía identificadores para los miembros de esa audiencia a los partners y crea la audiencia en los sistemas de los partners. Esto les permite ofrecer anuncios específicos solo a estos usuarios. Las audiencias se actualizan y envían automáticamente a los partners una vez al día. Además, puedes cargar una audiencia en servicios de terceros, como los buckets de Amazon S3, o descargarla como archivo CSV directamente desde el dashboard.
 
-All the information needed to upload audience data to a media partner is specified in a partner connection. You can have multiple connections for a single media partner (using different accounts, login information, etc.). In order to enable compliance with the privacy requirements of iOS 14.5 and other user privacy considerations, **Audiences allows you full control to determine which identifiers are shared with partners**, both at the account level and for each partner connection.
+Toda la información necesaria para cargar datos de audiencia a un partner anunciante se especifica en una conexión de partner. Puedes tener varias conexiones para un solo partner anunciante (utilizando diferentes cuentas, información de inicio de sesión, etc.) Puedes tener varias conexiones para un solo partner anunciante (utilizando diferentes cuentas, información de inicio de sesión, etc.) Con el fin de permitir el cumplimiento de los requisitos de privacidad de iOS 14.5 y otras consideraciones de privacidad de los usuarios, **Audiences te permite tener un control total para determinar qué identificadores se comparten con los partners**, tanto a nivel cuenta como para cada conexión de partner.
 
-### Audience split and Incrementality testing
+### Pruebas de incrementalidad y división de audiencia
 
-<Anchor target="_blank" href="/marketers/docs/incrementality-for-remarketing-overview">Incrementality</Anchor> testing measures the real impact of your campaigns with A/B testing that accurately measures “incremental lift”—the difference between conversions that happened as a result of your marketing campaigns and those that would have happened anyway. AppsFlyer Audiences sets the stage for testing with an optional feature that splits the audience among selected media partners and a control group, so you can use the Incrementality dashboard to understand the true value of your campaigns.
+Las pruebas de <Anchor target="_blank" href="/marketers/es/docs/incrementality-for-remarketing-overview">incrementalidad</Anchor> miden el impacto real de tus campañas con pruebas A/B que miden con precisión el “aumento incremental”, es decir la diferencia entre las conversiones que ocurrieron como resultado de tus campañas de marketing y las que habrían sucedido de todos modos. AppsFlyer Audiences establece el escenario para las pruebas con una función opcional que divide la audiencia entre los partners de medios seleccionados y un grupo de control, para que puedas usar el dashboard de incrementalidad para comprender el verdadero valor de tus campañas.
 
-## Get started
+## Empezar
 
-Follow these steps to get started with Audiences:
+Sigue estos pasos para comenzar con Audiencias:
 
-|  | Steps |
+|  | Pasos |
 | --- | --- |
-| 1 | In AppsFlyer, from the side menu, select **Engage** > **Audiences**<br /><br />**Note:** Audiences is a premium feature. If you need help getting started, reach out to your customer success manager, or write to [hello@appsflyer.com](mailto:hello@appsflyer.com) |
-| 2 | Set account-level <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">policy</Anchor> for sharing user identifiers with partners |
-| 3 | Create a new audience:<ul><li>[Custom Audience](/docs/audiences-guide#create-a-custom-audience) - Build your audience from scratch</li><li>[Suggested Audience](/docs/audiences-guide#create-a-suggested-audience) - Ready-made, customizable audiences that are based on industry best practices</li><li><Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems">Import audience</Anchor> - Import audience segments from your internal systems (such as BI or CRM)</li></ul> |
-| 4 | Connect the audience to one or more media partners |
-| Optional | [Split the audience among partners and a control group](/docs/audiences-guide#audience-split-and-control-groups) |
-| Optional | <Anchor target="_blank" href="/marketers/docs/audiences-create-better-audiences-with-user-attribute-data">Import user attributes</Anchor> |
+| 1 | En AppsFlyer, desde el menú lateral, selecciona **Engage** > **Audiences**.<br /><br />**Nota:** Audiences es una función premium. Si necesitas ayuda para empezar, contacta con tu Customer Success Manager o envíanos un correo a [hello@appsflyer.com](mailto:hello@appsflyer.com) |
+| 2 | Establece la <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política</Anchor> del nivel de cuenta para compartir identificadores de usuario con los partners. |
+| 3 | Crea una nueva audiencia:<ul><li>[Audiencia personalizada](/docs/audiences-guide#create-a-custom-audience): crea tu audiencia desde cero.</li><li>[Audiencia sugerida](/docs/audiences-guide#create-a-suggested-audience): audiencias prediseñadas y personalizables basadas en las mejores prácticas de la industria.</li><li><Anchor target="_blank" href="/marketers/es/docs/audiences-import-audience-segments-from-internal-systems">Importar audiencia</Anchor>: importa segmentos de audiencia desde tus sistemas internos (como BI o CRM).</li></ul> |
+| 4 | Conecta la audiencia con uno o varios partners de medios. |
+| Opcional | [Dividir la audiencia entre partners y un grupo de control](/docs/audiences-guide#audience-split-and-control-groups) |
+| Opcional | <Anchor target="_blank" href="/marketers/es/docs/audiences-create-better-audiences-with-user-attribute-data">Importar atributos de usuario</Anchor> |
 
-## Create and manage audiences
+## Crear y gestionar las audiencias
 
-This section describes how to create and manage audiences and set up Incrementality testing.
+Esta sección describe cómo crear y gestionar audiencias y configurar pruebas de incrementalidad.
 
 <div id="create-a-custom-audience" />
 
-<Accordion title="Create a Custom Audience">
+<Accordion title="Crear una audiencia personalizada">
 
-A Custom Audience is built from scratch using any rulesets and filters you wish.
+Una audiencia personalizada se construye desde cero utilizando cualquier conjunto de reglas y filtros que desees.
 
-**To create a Custom Audience:**
+**Para crear una audiencia personalizada:**
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Audiences**.
-2. Click **New audience**.
-3. Select **Custom audience**.  
-   The **Build** tab displays.
-4. Enter a unique **Audience name**.  
-   **Note:** Audience names can't include special characters (" ’ # % & * + / : ; `< = >` ? ( ) [ ] `{ }` \ | ~)
-5. Select the platform: **Android** or **iOS**.
-6. Select the [user identifier](/docs/audiences-guide#user-identifier-device-id-vs-customer-id):
-7. [Default] **Device ID**: Evaluates rules by device ID only.
-8. **Customer ID**: Evaluates rules by grouping devices using the CUID (use this method only after you verify that your data has valid CUIDs.)
-9. Select **New ruleset**, or if you wish to add the users of an existing audience, click **Existing audience** then select the specific audience from the list.
-10. Build the audience guided by the user interface. For specific information about rule options, see [All about rulesets](/docs/audiences-guide#all-about-rulesets).
-11. Combine rulesets using the operators and, or, exclude.
-12. As you build your audience, the panes on the right side automatically update the estimated audience and per-partner upload sizes.
-13. Complete defining the audience, then click **Next.**  
-    The **Audience connection** window appears. This is where you [connect the audience to your media partners](/docs/audiences-guide#connect-an-audience-to-media-partners).
+1. En AppsFlyer, desde el menú lateral, elige **Engage** > **Audiences**.
+2. Haz clic en **Nueva audiencia**.
+3. Selecciona **Audiencia personalizada**.  
+   Aparecerá la pestaña **Crear**.
+4. Ingresa un **nombre de audiencia** único.  
+   **Nota:** Los nombres de la audiencia no pueden incluir caracteres especiales (" ’ # % & * + / : ; `< = >` ? ( ) [ ] `{ } \ | ~) ( ) [ ] { }` \ | ~)
+5. Selecciona la plataforma: **Android** o **iOS**.
+6. Selecciona el [identificador de usuario](/docs/audiences-guide#user-identifier-device-id-vs-customer-id):
+7. [Predeterminado] **ID del dispositivo**: Evalúa las reglas únicamente por ID del dispositivo.
+8. **ID de cliente**: evalúa las reglas agrupando dispositivos utilizando el CUID. (Usa este método después de verificar que tus datos tienen CUID válidos.)
+9. Selecciona **Nuevo conjunto de reglas** o, si deseas agregar los usuarios de una audiencia existente, haz clic en **Audiencia existente** y, a continuación, selecciona la audiencia específica de la lista.
+10. Crea la audiencia con la interfaz de usuario como guía. Para obtener información específica sobre las opciones de reglas, consulta [Todo sobre los conjuntos de reglas](/docs/audiences-guide#todo-sobre-los-conjuntos-de-reglas).
+11. Combina conjuntos de reglas utilizando los operadores y, o, excluir.
+12. A medida que desarrollas tu audiencia, los paneles de la derecha actualizan automáticamente la audiencia estimada y los tamaños de subida por partner.
+13. Completa la definición de la audiencia y haz clic en **Siguiente**.  
+    Aparece la ventana **Conexión de audiencia**. Aquí es donde [conectas la audiencia a tus partners de medios](/docs/audiences-guide#connect-an-audience-to-media-partners).
 
-> 📘 **Notes**
+> 📘 **Características**
 >
-> * You can have up to 100 active Custom/Suggested audiences at a time.
-> * Audience names may be visible on your connected media partner sites. Do not include sensitive information in names.
+> * Puedes tener hasta 100 audiencias personalizadas/sugeridas activas a la vez.
+> * Los nombres de audiencia pueden ser visibles en tus sitios de partners de medios conectados. Tenlo en cuenta para no incluir información confidencial.
 
 </Accordion>
 
 <div id="create-a-suggested-audience" />
 
-<Accordion title="Create a Suggested Audience">
+<Accordion title="Crear una audiencia sugerida">
 
-Suggested Audiences enable you to explore and discover **ready-made audience segments, that are based on industry best practices.** You can select an audience, customize it, and connect it with your partner networks for optimally targeted marketing campaigns.
+Las audiencias sugeridas te permiten explorar y descubrir **segmentos de audiencia listos para usar, basados en las mejores prácticas de la industria.** Puedes seleccionar una audiencia, personalizarla y conectarla con tus redes de partners para realizar campañas de marketing dirigidas de forma óptima.
 
-Choose from over 30+ audiences within the **categories of Acquire, Activate, Engage, Monetize, and industry-specific audiences.** The audiences are 100% customizable, so you can create the exact audience you need. Audiences include:
+Elige entre más de 30 audiencias dentro de las **categorías de Adquirir, Activar, Captar, Monetizar y audiencias específicas de la industria.** Las audiencias son 100 % personalizables, por lo que puedes crear la audiencia exacta que necesitas. Las audiencias incluyen:
 
-* Convert ad clicks into installs
-* Get lookalikes
-* Suppression lists
-* Encourage registration
-* Encourage purchase
-* Monetize purchasers
-* And a lot more…
+* Convertir clics en anuncios en instalaciones
+* Obtener similares
+* Listas de supresión
+* Fomentar el registro
+* Fomentar la compra
+* Monetizar a los compradores
+* Y mucho más...
 
-> 📄 **Example use case**
+> 📄 **Ejemplo de caso de uso**
 >
-> This example illustrates one typical use case. Let’s say you want to urge active users of your app, who haven’t purchased yet, to make their first purchase. You can select the “Encourage purchase” audience and customize it to specify which event defines an in-app purchase. Then you can connect the audience to your partners and run a promotional campaign that nudges them towards making a purchase and leads them to the app's purchase page.
+> Este ejemplo ilustra un caso de uso típico. Supongamos que quieres instar a los usuarios activos de tu aplicación, que aún no han comprado, a realizar su primera compra. Puedes seleccionar a la audiencia "Fomentar la compra" y personalizarla para especificar qué evento define una compra in-app. A continuación, puedes conectar a la audiencia con tus partners y realizar una campaña promocional que les incite a realizar una compra y les lleve a la página de compra de la aplicación.
 >
 > ![Encourage_purchase_image_this_one.jpeg](https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg)
 
-**To create a Suggested Audience:**
+**Para crear una audiencia sugerida:**
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Audiences**.
-2. Click **New audience**.
-3. Select **Suggested audience**.
-4. Select the app.
-5. Browse through the various categories and select an audience that matches your goals.   
-   **Note:** Some audiences require you to add the specific <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">in-app events</Anchor> to define the audience criteria. If the AppsFlyer <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#predefined-event-names">predefined event</Anchor> has already been configured in your app, it will be pre-selected. If not, you'll need to select the appropriate custom event from the dropdown menu. <Image alt="Select_an_event__1_.jpeg" src="https://files.readme.io/b5055ca61791f15efc3a91f3f2d749e1df9e3f5e8b956b9167e186474de57ac4-30258966520721.jpg" width="419px" />
-6. Click **Select & customize**.
-7. Enter a unique **Audience name**.  
-   **Note:** Audience names can't include special characters (" ’ # % & * + / : ; `< = >` ? ( ) [ ] `{ }` \ | ~)
-8. Select the platform: Android or iOS.
-9. Select the [user identifier](/docs/audiences-guide#user-identifier-device-id-vs-customer-id):
-   * [Default] **Device ID**: Evaluates rules by device ID only.
-   * **Customer ID**: Evaluates rules by grouping devices using the CUID (use this method only after you verify that your data has valid CUIDs.)
-10. If you wish to further customize the audience by adding additional [rulesets](/docs/audiences-guide#all-about-rulesets), you can do so if you wish by clicking **+ Filter**. When done, click **Next**.   
-    The **Audience connection** window appears. This is where you [connect the audience to your media partners](/docs/audiences-guide#connect-an-audience-to-media-partners).
+1. En AppsFlyer, desde el menú lateral, elige **Engage** > **Audiences**.
+2. Haz clic en **Nueva audiencia**.
+3. Selecciona **Audiencia sugerida**.
+4. Selecciona la aplicación.
+5. Explora las distintas categorías y selecciona una audiencia que coincida con tus objetivos.   
+   **Nota:** Algunas audiencias requieren que agregues <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">eventos in-app específicos</Anchor> para definir los criterios de la audiencia. Si el <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#nombres-de-eventos-predefinidos">evento predefinido</Anchor> de AppsFlyer ya se ha configurado en tu aplicación, quedará preseleccionado. Si no, necesitarás seleccionar el evento personalizado apropiado del menú desplegable. <Image alt="Seleccionar_un_evento__1_.jpeg" src="https://files.readme.io/b5055ca61791f15efc3a91f3f2d749e1df9e3f5e8b956b9167e186474de57ac4-30258966520721.jpg" width="419px" />
+6. Haz clic en **Seleccionar y personalizar**.
+7. Ingresa un **nombre de audiencia** único.  
+   **Nota:** Los nombres de la audiencia no pueden incluir caracteres especiales (" ’ # % & * + / : ; `< = >` ? ( ) [ ] `{ } \ | ~) ( ) [ ] { }` \ | ~)
+8. Selecciona la plataforma: Android o iOS.
+9. Selecciona el [identificador de usuario](/docs/audiences-guide#user-identifier-device-id-vs-customer-id):
+   * [Predeterminado] **ID del dispositivo**: Evalúa las reglas únicamente por ID del dispositivo.
+   * **ID de cliente**: evalúa las reglas agrupando dispositivos utilizando el CUID. (Usa este método después de verificar que tus datos tienen CUID válidos.)
+10. Si deseas personalizar aún más la audiencia añadiendo [conjuntos de reglas](/docs/audiences-guide#todo-sobre-los-conjuntos-de-reglas) adicionales, puedes hacerlo haciendo clic en **+ Filtro**. Cuando hayas terminado, haz clic en **Siguiente**.   
+    Aparece la ventana **Conexión de audiencia**. Aquí es donde [conectas la audiencia a tus partners de medios](/docs/audiences-guide#connect-an-audience-to-media-partners).
 
-> 📘 **Notes**
+> 📘 **Característica**
 >
-> * You can have up to 100 active Custom/Suggested audiences at a time.
-> * Audience names may be visible on your connected media partner sites. Do not include sensitive information in names.
+> * Acciones en lote
+> * Los nombres de audiencia pueden ser visibles en tus sitios de partners de medios conectados. Tenlo en cuenta para no incluir información confidencial.
 
 </Accordion>
 
 <div id="import-an-audience" />
 
-<Accordion title="Import an audience">
+<Accordion title="Importar una audiencia">
 
-You can <Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems">import predefined audience segments</Anchor> from your internal systems (such as BI and CRM) to AppsFlyer Audiences, and use it as your central point for connecting and maintaining all of your audience segments with your advertising partners. Additionally, it allows you to enjoy Audiences features, such as identifier matching/data enrichment and connected campaign metrics.
+Puedes <Anchor target="_blank" href="/marketers/es/docs/audiences-import-audience-segments-from-internal-systems">importar segmentos de audiencia predefinidos</Anchor> desde tus sistemas internos (como BI y CRM) a Audiencias de AppsFlyer, y utilizarlo como punto central para conectar y mantener todos tus segmentos de audiencia con tus partners de publicidad. Además, te permite disfrutar de las funciones de Audiencias, como la coincidencia de identificadores/enriquecimiento de datos y las métricas de campaña conectadas.
 
 </Accordion>
 
 <div id="connect-an-audience-to-media-partners" />
 
-<Accordion title="Connect an audience to media partners">
+<Accordion title="Conectar una audiencia con partners de medios">
 
-Once you've defined your audience, the next step is connecting it to your media partners.
+Una vez definida tu audiencia, el siguiente paso es conectarla con tus partners de medios.
 
-**To connect your audience to media partners:**
+**Para conectar a tu audiencia con los partners de medios:**
 
-1. After defining your new audience on the audience **Build** page, click **Next**. The **Audience connection** window appears.
-2. Click **+ Partner connection**, then do one of the following:
-   * **To add a new connection**, click **+ Add partner connection** (see the [Create a new connection](/docs/audiences-guide#create-a-new-connection) section below for detailed instructions).
-   * **To select from existing connections:**
-     1. Search for the partner connection.
-     2. Select one or more existing connections.
-     3. Click **Save**.  
-        The Audience connection window opens.
-     4. [Optional] [Split an audience between partners and a control group](/docs/audiences-guide#audience-split-and-control-groups)
-     5. [Optional] [Copy split groups to S3](/docs/audiences-guide#audience-split-and-control-groups).
-3. Click **Save**.  
-   Once connected, the audience is updated and pushed to partners daily.
+1. Después de definir tu nueva audiencia en la página **Crear** de la audiencia, haz clic en **Siguiente**. Aparece la ventana **Conexión de audiencia**.
+2. Haz clic en **+ Conexión de partner**, y luego realiza una de las siguientes acciones:
+   * **Para agregar una nueva conexión**, haz clic en **+ Agregar conexión de partner** (consulta la sección [Crear una nueva conexión](/docs/audiences-guide#create-a-new-connection) para obtener instrucciones detalladas).
+   * **Para seleccionar entre conexiones existentes:**
+     1. Busca la conexión de partner.
+     2. Selecciona una o más conexiones existentes.
+     3. Haz clic en **Guardar**.  
+        Se abre la ventana de conexión de audiencias.
+     4. [Opcional] [Dividir una audiencia entre partners y un grupo de control](/docs/audiences-guide#audience-split-and-control-groups)
+     5. [Opcional] [Copiar los grupos divididos a S3](/docs/audiences-guide#audience-split-and-control-groups).
+3. Haz clic en **Guardar**.  
+   Una vez conectada, la audiencia se actualiza y se envía diariamente a los partners.
 
 </Accordion>
 
 <div id="user-identifier-device-id-vs-customer-id" />
 
-<Accordion title="User identifier—Device ID vs. Customer ID">
+<Accordion title="Ejemplo: ID del dispositivo vs CUID">
 
-Audience rule evaluation is performed using an app user identifier. Select from:
+La evaluación de reglas de audiencia se realiza utilizando un identificador de usuario de la aplicación. Selecciona una opción de:
 
-* [Default] **Device ID:** Ruleset compliance is assessed using the device ID (GAID or IDFA/IDFV). When compliant with the ruleset, the device ID is added to the audience list. **Note:** The device ID will be shared with partners only when permitted by your user identifier policy.
-* <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">**Customer ID (CUID)**</Anchor>:
-  * Ruleset compliance is assessed by grouping all device IDs associated with the same CUID. If the group complies with the ruleset, then the device IDs comprising the group are added to the audience. **Note**: The CUID itself is not part of the audience list and is not sent to media partners.
-  * CUID implementation considerations:
-    * Ensure that your data is populated with valid CUIDs.
-    * App users (devices) without a CUID are ignored.
-    * When a device ID is matched to a CUID, historical audience data for the user is updated retroactively and included in audience builds going forward. **Note**: No change is made to raw data.
-    * If a device ID is associated with two different CUIDs, the most recently associated CUID is used.
-    * When building an audience with CUID as the identifier, the CUID association must have been received by AppsFlyer on the install (not just on post-install events) for complete association with the relevant devices and successful enrichment with device identifiers (i.e., GAID, IDFA). <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">Learn more</Anchor>
+* [Por defecto] **ID de dispositivo:** El cumplimiento del conjunto de reglas se evalúa utilizando el ID de dispositivo (GAID o IDFA/IDFV). Cuando cumple con el conjunto de reglas, el ID de dispositivo se agrega a la lista de audiencias. **Nota:** El ID de dispositivo se compartirá con los partners solo cuando lo permita tu política de identificadores de usuarios.
+* <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">**ID de cliente (CUID)**</Anchor>:
+  * El cumplimiento normativo del conjunto de reglas se evalúa agrupando todos los ID de dispositivos asociados con el mismo CUID. Si el grupo cumple con el conjunto de reglas, los ID de dispositivo que componen el grupo se agregan a la audiencia. **Nota**: El CUID en sí no forma parte de la lista de audiencias y no se envía a los partners de medios.
+  * Consideraciones de la implementación del CUID
+    * Asegúrate de que tus datos están completados con CUID válidos.
+    * Los usuarios de aplicaciones (dispositivos) sin CUID se ignoran.
+    * Cuando un ID de dispositivo se relaciona con un CUID, los datos históricos de audiencia para el usuario se actualizan de forma retroactiva y se incluyen en las construcciones de audiencia en el futuro. **Nota**: No se realiza ningún cambio en el raw data.
+    * Si un ID de dispositivo está asociado a dos CUIDs diferentes, se utiliza el CUID asociado más recientemente.
+    * Al construir una audiencia con CUID como identificador, la asociación CUID debe haber sido recibida por AppsFlyer en la instalación (no solo en eventos posteriores a la instalación) para una asociación completa con los dispositivos relevantes y un enriquecimiento exitoso con identificadores de dispositivos (es decir, GAID, IDFA). <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">Saber más</Anchor>
 
 <Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
 
-> 📄 **Example: Device ID vs. CUID**
+> 📄 **Notas relacionadas con eventos in-app :**
 >
-> An audience of users who spent more than $5
+> Una audiencia de usuarios que gastaron más de 5 $.
 >
 >
 >
-> | Advertising  <br />ID | CUID | Purchase $ |
+> | ID de  <br />publicidad | CUID | Compra $ |
 > | --- | --- | --- |
 > | A | 99 | 1 |
 > | A | 99 | 2 |
 > | B | 77 | 1 |
 > | B | 77 | 5 |
 > | C | 99 | 3 |
-> | D | None | 50 |
+> | D | Ninguno | 50 |
 >
 >
 >
-> | Rule evaluated by | Device IDs included in the audience | Explanation |
+> | Regla evaluada por | ID de dispositivo incluidos en la audiencia | Explicación |
 > | --- | --- | --- |
-> | Device ID | B, D | A and C are not included - the spend was less than $5 |
-> | CUID | A, B, C | * A and C have the same CUID (99) - the combined spend is $6.<br />* D is ignored - there is no CUID |
+> | ID de dispositivos | B, D | A y C no están incluidos: el gasto fue inferior a 5 $ |
+> | CUID | A, B, C | * A y C tienen el mismo CUID (99): el gasto combinado es de 6 $.<br />* D se ignora: no hay CUID |
 >
 >
 >
-> **<span id="h_01K0PAQ4SFXBK0TZ3MH07PWN4A"></span>Note**
+> **<span id="h_01K0PAQ4SFXBK0TZ3MH07PWN4A"></span>Notas:**
 >
-> The same method of summing spend across device IDs grouped by CUID, shown in the example above, also applies to other numerical attributes (for example, scoring).
+> El mismo método para sumar el gasto entre los ID de dispositivo agrupados por CUID, que se muestra en el ejemplo anterior, también se aplica a otros atributos numéricos (por ejemplo, la puntuación).
 
 
 
@@ -224,36 +224,36 @@ Audience rule evaluation is performed using an app user identifier. Select from:
 
 <div id="audience-split-and-control-groups" />
 
-<Accordion title="Audience split and control groups">
+<Accordion title="División de audiencia y grupos de control">
 
-Use the toggle that splits the audience among partners and a control group to effortlessly set the stage for A/B testing and <Anchor target="_blank" href="/marketers/docs/incrementality-for-remarketing-overview">Incrementality measurement</Anchor> so you can get the crucial insights you need about campaign impact. When enabled, the feature randomly splits the audience among your selected partners and a control group. The control group is the portion of the audience that is held back from partners and is a necessary requirement for Incrementality measurement. You can adjust any of the split percentages you wish and disable or re-enable the split per audience.
+Usa el botón de alternancia que divide la audiencia entre los partners y un grupo de control para establecer sin esfuerzo el escenario para las pruebas A/B y la <Anchor target="_blank" href="/marketers/es/docs/incrementality-for-remarketing-overview">medición de la incrementalidad</Anchor> para obtener los insights cruciales que necesitas sobre el impacto de la campaña. Cuando está habilitada, la función divide aleatoriamente la audiencia entre tus partners seleccionados y un grupo de control. El grupo de control es la parte de la audiencia que se retiene de los partners y es un requisito necesario para la medición de la incrementalidad. Puedes ajustar cualquiera de los porcentajes de división que desees y deshabilitar o volver a habilitar la división por audiencia.
 
-| Feature | Description |
+| Característica | Descripción |
 | --- | --- |
-| Split audience | <ul><li>This feature randomly splits the audience among your selected partners and a control group. **It is enabled by default for Incrementality subscribers**, and can easily be disabled or re-enabled at any time.</li><li>Split audiences for a variety of reasons, such as A/B testing and Incrementality measurement.</li><li>**Note:** Modifying an existing split allocation between partners causes redistribution of the entire audience. This may negatively impact the validity of A/B testing and will cause active Incrementality experiments to end and restart as new experiments.</li></ul> |
-| Control group | A portion of the audience is held back in a control group, which is not sent to any partner:<ul><li>Control groups are used in A/B testing and to measure the incremental lift of your marketing campaigns.</li><li>15% of the audience (or higher) is recommended for an effective control group.</li><li>The minimum control group % needed to run an Incrementality experiment is 1%.</li></ul> |
-| Send a copy of split lists to an S3 bucket | CSV files containing the split audience lists and control group can be sent to an Amazon S3 bucket.<ul><li>**Note**: This is not the same as defining Amazon S3 as a connected partner.</li><li>The audience lists can be downloaded to a CSV file. Use the CSV file, for example, to send to partners who are not integrated with AppsFlyer.</li></ul> |
+| Audiencia dividida | <ul><li>Esta función divide aleatoriamente la audiencia entre tus partners seleccionados y un grupo de control. **Está habilitada de forma predeterminada para los suscriptores de incrementalidad** y se puede desactivar o volver a activar fácilmente en cualquier momento.</li><li>Divide las audiencias por una variedad de razones, como pruebas A/B y medición de la incrementalidad.</li><li>**Nota:** Modificar una asignación dividida existente entre partners causa la redistribución de toda la audiencia. Esto puede afectar negativamente la validez de las pruebas A/B y hará que los experimentos de incrementalidad activos terminen y se reinicien como nuevos experimentos.</li></ul> |
+| Grupo de control | Una parte de la audiencia se retiene en un grupo de control, que no se envía a ningún partner:<ul><li>Los grupos de control se utilizan en pruebas A/B y para medir el aumento incremental de tus campañas de marketing.</li><li>El 15 % de la audiencia (o superior) se recomienda para un grupo de control efectivo.</li><li>El porcentaje mínimo del grupo control necesario para ejecutar un experimento de incrementalidad es del 1 %.</li></ul> |
+| Enviar una copia de las listas divididas a un bucket S3 | Los archivos CSV que contienen las listas de audiencias divididas y grupos de control se pueden enviar a un bucket S3 de Amazon.<ul><li>**Nota**: Esto no es lo mismo que definir Amazon S3 como un partner conectado.</li><li>Las listas de audiencias se pueden descargar en un archivo CSV. Usa el archivo CSV, por ejemplo, para enviarlo a partners que no están integrados con AppsFlyer.</li></ul> |
 
-**To split the audience and perform other partner actions:**
+**Para dividir a la audiencia y realizar otras acciones de los partners:**
 
-1. In the AppsFlyer left-side panel, go to **Engage** > **Audiences**.
-2. In the **Audiences** tab, select the audience.
-3. Go to the **Connect** tab.  
-   [![audience_split_1200px.png](https://files.readme.io/1a9decaea5f77ec36c111a132c12733cfa44bb1e87c6515e71843e6c7fcabfee-46335667595281.png)](https://files.readme.io/1a9decaea5f77ec36c111a132c12733cfa44bb1e87c6515e71843e6c7fcabfee-46335667595281.png) The current settings display:
-   * The top, right-side pane displays estimated total audience and upload sizes (for all partners)
-   * The bottom, right-side presents a visualization of:
-     * Estimated upload size for each partner
-     * Partner overlap (for audiences that aren't split)
-4. Take any of the following actions:
+1. En el panel izquierdo de AppsFlyer, ve a **Engage** > **Audiences**.
+2. En la pestaña **Audiences**, selecciona la audiencia.
+3. Ve a la pestaña **Conectar**.  
+   [![audience_split_1200px.png](https://files.readme.io/1a9decaea5f77ec36c111a132c12733cfa44bb1e87c6515e71843e6c7fcabfee-46335667595281.png)](https://files.readme.io/1a9decaea5f77ec36c111a132c12733cfa44bb1e87c6515e71843e6c7fcabfee-46335667595281.png) La configuración actual muestra:
+   * El panel superior derecho muestra la audiencia total estimada y los tamaños de carga (para todos los partners).
+   * La parte inferior derecha presenta una visualización de:
+     * Tamaño de carga estimado para cada partner
+     * Superposición de partners (para audiencias que no están divididas)
+4. Realiza cualquiera de las siguientes acciones:
 
 <Table>
   <thead>
     <tr>
       <th>
-        Action
+        Acción
       </th>
       <th>
-        Procedure
+        Procedimiento
       </th>
     </tr>
   </thead>
@@ -261,68 +261,68 @@ Use the toggle that splits the audience among partners and a control group to ef
   <tbody>
     <tr>
       <td><span id="split-an-audience-between-partners-and-control-group"></span>
-        Split an audience between partners and control group
+        Dividir una audiencia entre partners y grupos de control
       </td>
       <td>
-        1. Make sure the **Split audience/Measure incremental impact** toggle is enabled.
-           * The total of the control group and split to partners combined must be 100%.
-           * If you don't want to include the control group in the split: allocate 0%.
-           * All connected partners must be allocated a portion of the split (Don't allocate a partner 0%)
-           * To view the total allocated: scroll down; the total percent split displays.
-        2. Enter the percentage allocated to:
-           * **Control group -** 15% or higher is recommended.
-           * Enter a split percentage per connection.
-           * Scroll down to display the total allocation in percent, and make sure that the total allocation is 100%.
-           * Click **Save split**.
-           * Click **Save**.
+        1. Asegúrate de que el botón **Dividir audiencia/Medir impacto incremental** esté habilitado.
+           * El total del grupo de control y la división entre partners combinados debe ser del 100 %.
+           * Si no deseas incluir el grupo de control en la división: asigna 0 %.
+           * A todos los partners conectados se les debe asignar una parte de la división (no asignar a un partner el 0 %).
+           * Para ver el total asignado: desplázate hacia abajo; se muestra el porcentaje total dividido.
+        2. Ingresa el porcentaje asignado a:
+           * **Grupo de control:** se recomienda un 15 % o más.
+           * Ingresa un porcentaje dividido por conexión.
+           * Desplázate hacia abajo para mostrar la asignación total en porcentaje, y asegúrate de que la asignación total sea del 100 %.
+           * Haz clic en **Guardar división**.
+           * Haz clic en **Guardar**.
       </td>
     </tr>
     <tr>
       <td><span id="copy-split-groups-to-s3"></span>
-        Copy split groups to S3
+        Copiar grupos divididos a S3
       </td>
       <td>
-        **To send a copy of the audience split list to an S3 bucket:**
+        **Para enviar una copia de la lista de audiencias divididas a un bucket S3:**
 
-        1. Click **Copy split groups to S3.**
-        2. Select a connection.
-        3. Click **Save**.
+        1. Haz clic en **Copiar los grupos divididos en S3**.
+        2. Selecciona una conexión.
+        3. Haz clic en **Guardar**.
 
-        Files are sent using the following directory and filename structure:
+        Los archivos se envían utilizando la siguiente estructura de directorio y nombre de archivo:
 
-        * **Directory**:
+        * **Directorio**:
 
           ```
            \YYYY-MM-DD\audienceID_audienceName_timestamp\
           ```
-        * **Filename**: the name of the partner or control group  
-          Note: If the connection to the partner fails, and the file is not uploaded, the word **failed** will be appended to the partner name (for example, *partner\_name\_failed.csv*)
+        * **Nombre de archivo**: el nombre del partner o grupo de control.  
+           Nota: Si falla la conexión con el partner y no se carga el archivo, se agregará la palabra **"failed"** al nombre del partner (por ejemplo, *partner\_name\_failed.csv*).
       </td>
     </tr>
     <tr>
       <td><span id="create-and-add-a-new-connection"></span>
-        Create and add a new connection
+        Crear y agregar una conexión nueva
       </td>
       <td>
-        **To create a new connection:**
+        **Para agregar una conexión nueva:**
 
-        1. Click **Add** **partner** **connection.**
-        2. Type a connection name.
-        3. Select a partner.
-        4. Complete the process according to the instructions in the user interface.
-        5. Click **Add partner connection.**
+        1. Haz clic en **Agregar** **conexión** **de partner.**
+        2. Escribe el nombre de la conexión.
+        3. Selecciona un partner.
+        4. Completa este procedimiento siguiendo las instrucciones en la interfaz de usuario.
+        5. Haz clic en **Agregar conexión de partner**.
       </td>
     </tr>
     <tr>
       <td><span id="add-or-remove-an-existing-connection"></span>
-        Add or remove an existing connection
+        Agregar o eliminar una conexión existente
       </td>
       <td>
-        **To remove or add an existing connection:**
+        **Para eliminar o agregar una conexión existente:**
 
-        1. Hover over the partner connection.
-        2. Click the "Remove" icon.
-        3. Click **Save**.
+        1. Pasa el cursor sobre la conexión del partner.
+        2. Haz clic en el icono "Quitar".
+        3. Haz clic en **Guardar**.
       </td>
     </tr>
   </tbody>
@@ -332,347 +332,347 @@ Use the toggle that splits the audience among partners and a control group to ef
 
 <div id="manage-audiences" />
 
-<Accordion title="Manage audiences">
+<Accordion title="Gestionar las audiencias">
 
-**To manage audiences from the Audiences dashboard:**
+**Administra las audiencias desde el dashboard de Audiences:**
 
-1. In the AppsFlyer left-side panel, go to **Engage** > **Audiences**.
-2. The following options are available:
+1. En el panel izquierdo de AppsFlyer, ve a **Engage** > **Audiences**.
+2. Las siguientes opciones están disponibles:
 
-| Option | Description |
+| Opción | Descripción |
 | --- | --- |
-| <span id="create-a-new-audience"></span>Create a new audience | Create a new audience |
-| <span id="change-audience-settings"></span>Change audience settings | Click an **Audience name,** do one of the following:<ul><li>In the **Build** tab: View and change rulesets.</li><li>In the **Connect** tab: Set audience split and control group options.</li></ul> |
-| <span id="actions"></span>Actions | In the  <Image alt="3_dots_icon.png" src="https://files.readme.io/e1b296a694e4803662b2d3776ce001f981e44ada6d3f7552974417b3d6fc7169-46335625061649.png" width="7px" />  icon that appears on the right when hovering over an audience on the main Audiences page:<ul><li>**View history**: Displays the audience upload history including audience size, and split between partners.</li><li>**Upload now**: Sends the audience to connected partners.</li><li>**Download as CSV**:<ul><li>Generates and downloads the audience list as CSV files(s) that include the identifiers you select. Only data that complies with your <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">user identifier policy</Anchor> will be downloaded.</li><li>One file is generated for each partner.</li><li>The file(s) are downloaded after calculation of the audience, which can take some time after you create or modify an audience.</li><li>Downloaded files are limited to 5 million records. For larger files, send the file to an <Anchor target="_blank" href="/marketers/docs/audiences-partner-connections#amazon-s3">S3 bucket</Anchor>.</li><li>Only an audience that is connected to partner networks will be updated daily and kept current. If the audience is not connected to partner networks, it will not be kept current beyond the audience creation date. If you want to download the most current info, you can duplicate the audience to recreate it (see below), then download the CSV from the duplicated audience.</li></ul></li><li>**Duplicate**:<ul><li>Copies the audience definition.</li><li>When you duplicate an audience, give it a unique name.</li><li>[Option] Remove one or more of the connected partners during duplication.</li></ul></li><li>**Calculate now**: [For imported audiences] Recalculates the number of users in an audience. Use as needed to refresh the audience size if it does not look correct.</li><li>**<span id="pause"></span>Pause:**</li></ul><ul><li>Pausing the audience inactivates it so that it no longer gets calculated and uploaded to connected partners (existing audience data from the past 3 years is retained).</li><li>You can pause audiences you don't use to keep within the allowed maximum number of active audiences. You can have up to 100 active Custom/Suggested audiences and up to 500 active imported audiences at a time.</li></ul>**To pause an audience:**<ol><li>Hover over the audience on the main Audiences page so that the  <Image alt="3 dots icon.png" src="https://files.readme.io/e1b296a694e4803662b2d3776ce001f981e44ada6d3f7552974417b3d6fc7169-46335625061649.png" width="7px" /> (Actions menu) icon appears on the right.</li></ol>![Actions menu.jpg](https://files.readme.io/d7ad8445c7e886ef4669155391419c9bb5538552f9a0bc1dabaa85a4ad819a1e-46335625065873.jpg)<ol><li>Click the icon and select **Pause**.</li></ol>The audience is now paused.<br /><br />You can also pause multiple audiences at once by checking the box next to the audiences and then clicking **Pause** which will appear on the upper right.<ul><li>**Delete:** Permanently deletes the audience.</li></ul> |
-| <span id="bulk-actions"></span>Bulk actions | Carry out the same action on multiple audiences. To use bulk actions, select two or more audiences, then select one of the following bulk actions:<ul><li>**Upload now**</li><li>**Show audience overlap**: displays the audience overlap between the selected audiences</li><li>**Delete**</li></ul> |
+| <span id="create-a-new-audience"></span>Crear una nueva audiencia | Crear una nueva audiencia |
+| <span id="change-audience-settings"></span>Cambiar la configuración de una audiencia | Haz clic en un **nombre de audiencia** y realiza una de las siguientes acciones:<ul><li>En la pestaña **Crear**: ve y cambia conjuntos de reglas.</li><li>En la pestaña **Conectar**: configura la audiencia dividida y las opciones del grupo de control.</li></ul> |
+| <span id="actions"></span>Acciones | En el icono <Image alt="3_dots_icon.png" src="https://files.readme.io/a43c9bec16ef919203a2535aee8aa1f284fb3db7851d5e61245163fe2d8b08cb-22469580700177.png" width="7px" /> que aparece a la derecha al pasar el cursor sobre una audiencia en la página principal de Audiences:<ul><li>**Ver historial**: muestra el historial de carga de la audiencia, incluido el tamaño de la audiencia, y la división entre partners.</li><li>**Cargar ahora**: envía la audiencia a los partners conectados.</li><li>**Descargar como CSV**:<ul><li>Genera y descarga la lista de audiencias como archivos CSV que incluyen los identificadores que selecciones. Solo se descargarán los datos que cumplan con tu <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política de identificadores de usuarios</Anchor>.</li><li>Se genera un archivo para cada partner.</li><li>Los archivos se descargan después del cálculo de la audiencia, que puede tardar un poco después de crear o modificar una audiencia.</li><li>Los archivos descargados tienen un límite de 5 millones de registros. Para archivos más grandes, envía el archivo a un <Anchor target="_blank" href="/marketers/es/docs/audiences-partner-connections#amazon-s3">S3 bucket</Anchor>.</li><li>Solo se actualizará diariamente y se mantendrá actualizada una audiencia que esté conectada a redes de partners. Si la audiencia no está conectada a redes de partners, no se mantendrá actualizada más allá de la fecha de creación de la misma. Si deseas descargar la información más reciente, puedes duplicar la audiencia para volver a crearla (véase más abajo) y, a continuación, descargar el CSV de la audiencia duplicada.</li></ul></li><li>**Duplicar**:<ul><li>Copia la definición de la audiencia.</li><li>Cuando dupliques una audiencia, asígnale un nombre único.</li><li>[Opción] Elimina uno o más de los partners conectados durante la duplicación.</li></ul></li><li>**Calcular ahora**: [Para audiencias importadas] recalcula la cantidad de usuarios de una audiencia. Úsala según sea necesario para actualizar el tamaño de la audiencia si no parece correcto.</li><li>**<span id="pause"></span>Pausar:**</li></ul><ul><li>Al pausar la audiencia, se inactiva para que ya no se calcule ni se cargue a los partners conectados (se conservan los datos de audiencia existentes de los últimos 3 años).</li><li>Puedes pausar las audiencias que no utilizas para mantenerte dentro del número máximo permitido de audiencias activas. Puedes tener hasta 100 audiencias personalizadas/sugeridas activas y hasta 500 audiencias importadas activas a la vez.</li></ul>**Para pausar una audiencia:**<ol><li>Coloca el cursor sobre la audiencia en la página principal de Audiences para que el icono <Image alt="3 dots icon.png" src="https://files.readme.io/a43c9bec16ef919203a2535aee8aa1f284fb3db7851d5e61245163fe2d8b08cb-22469580700177.png" width="7px" /> (menú acciones) aparezca a la derecha.</li></ol>![Actions menu.jpg](https://files.readme.io/d7ad8445c7e886ef4669155391419c9bb5538552f9a0bc1dabaa85a4ad819a1e-46335625065873.jpg)<ol><li>Haz clic en el icono y selecciona **Pausar**.</li></ol>Ahora la audiencia está en pausa.<br /><br />También puedes pausar varias audiencias a la vez marcando la casilla junto a las audiencias y luego haciendo clic en **Pausar** que aparecerá en la parte superior derecha.<ul><li>**Eliminar:** elimina permanentemente la audiencia.</li></ul> |
+| <span id="bulk-actions"></span>Acciones en lote | Realiza la misma acción en varias audiencias. Para usar acciones en lote, selecciona dos o más audiencias y después selecciona una de las siguientes acciones en lote:<ul><li>**Cargar ahora**</li><li>**Mostrar superposición de audiencias**: muestra la superposición de audiencias entre las audiencias seleccionadas.</li><li>**Eliminar**</li></ul> |
 
 </Accordion>
 
-## All about rulesets
+## Todo sobre los conjuntos de reglas
 
-Learn how to use rulesets to define your audiences.
+Aprende a utilizar los conjuntos de reglas para definir tus audiencias.
 
 <div id="audience-segmentation-rulesets" />
 
-<Accordion title="Audience segmentation rulesets">
+<Accordion title="Conjuntos de reglas de segmentación de audiencia">
 
 ![audience_segmentation_rulesets.jpg](https://files.readme.io/4407da232d372a98afcd30df3a832f6ef38bb55a6b02640587f44c7501b014f2-46335625066897.jpg)
 
-* An audience segment ruleset consists of one or multiple rules to enable precision filtering.
-* Combine rulesets using operators: and, or, exclude.
-* As rules are defined and layered, the estimated audience size displays in real-time.
-* Rulesets can be duplicated by clicking the <Image alt="duplicate_icon.png" src="https://files.readme.io/c4e2321280c4141e70c499adc92837d663fd29942b1c88532c6f2f3327efc400-46335667603729.png" width="17px" /> icon.
-* Where an audience consists of multiple rulesets, use the overlap visualization display to better understand your audience segments.
-* The [user identifier](/docs/audiences-guide#user-identifier-device-id-vs-customer-id) used to evaluate rules is either the device ID [default] or the customer user ID (CUID).
+* Un conjunto de reglas de segmentos de audiencia consiste en una o varias reglas que permiten un filtrado preciso.
+* Combina conjuntos de reglas utilizando los operadores y, o, excluir.
+* A medida que las reglas se definen y se superponen, el tamaño estimado de la audiencia se muestra en tiempo real.
+* Los conjuntos de reglas se pueden duplicar haciendo clic en el icono <Image alt="duplicate_icon.png" src="https://files.readme.io/c4e2321280c4141e70c499adc92837d663fd29942b1c88532c6f2f3327efc400-46335667603729.png" width="17px" />.
+* Cuando una audiencia se compone de varios conjuntos de reglas, usa la visualización superpuesta para comprender mejor los segmentos de la audiencia.
+* El [identificador de usuario](/docs/audiences-guide#user-identifier-device-id-vs-customer-id) utilizado para evaluar las reglas es el ID de dispositivo [predeterminado] o el ID de usuario de cliente (CUID).
 
-The examples that follow illustrate ruleset implementation in various scenarios.
+Los ejemplos que siguen ilustran la implementación del conjunto de reglas en varios escenarios.
 
 </Accordion>
 
 <div id="ruleset-examples" />
 
-<Accordion title="Ruleset examples">
+<Accordion title="Ejemplos de conjuntos de reglas">
 
-> 📄 **Example: Location-based rule**
+> 📄 **Ejemplo: Regla basada en la ubicación**
 >
-> Users from New York who uninstalled the app in the last month
+> Usuarios de Nueva York que desinstalaron la aplicación en el último mes
 >
 > ![example_location_based_rule.jpg](https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg)
 
-> 📄 **Example: User attributes-based rule**
+> 📄 **Ejemplo: Regla basada en atributos de usuario**
 >
-> Users who launched the app in the last 7 days at least once and whose favorite weapon is a sword.
+> Usuarios que iniciaron la aplicación en los últimos 7 días al menos una vez y cuya arma favorita es una espada.
 >
 > ![example_user_attributes_based_rule.jpg](https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg)
 
-> 📄 **Example: Revenue**
+> 📄 **Ejemplo: Ingresos**
 >
-> Users who installed the app during the last seven days, and spent $1
+> Usuarios que instalaron la aplicación durante los últimos siete días y gastaron 1 $
 >
 > ![example_revenue.jpg](https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg)
 
-> 📄 **Example: Owned media filter**
+> 📄 **Ejemplo: Filtro de medios propios**
 >
-> Build targeted audiences consisting of users who were attributed to specific owned media sources such as social media (excluding paid advertising), SMS, email, referrals, web, or QR codes. You can also choose your level of granularity and target users who came from a specific media source, campaign, ad set, or individual ad.
+> Crea audiencias objetivo que consistan en usuarios que fueron atribuidos a fuentes de medios propias específicas, como redes sociales (excluyendo publicidad pagada), SMS, correo electrónico, recomendaciones, web o códigos QR. También puedes elegir su nivel de granularidad y dirigirte a los usuarios que proceden de una fuente de medios, una campaña, un conjunto de anuncios o un anuncio individual específicos.
 >
-> Here's an example with users who launched the app at least once in the last 7 days and whose install was attributed to a specific email campaign as well as specific ad sets and ads.
+> Aquí tienes un ejemplo con los usuarios que abrieron la aplicación al menos una vez en los últimos 7 días y cuya instalación se atribuyó a una campaña de correo electrónico específica, así como a conjuntos de anuncios y anuncios específicos.
 >
 > ![Owned_media_example.jpg](https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg)
 >
-> The audience can be used to re-engage these users with personalized messaging on either owned or paid media, or as an exclusion list to prevent them from seeing irrelevant or unnecessary ads when running campaigns.
+> La audiencia se puede utilizar para volver a captar a estos usuarios con mensajes personalizados en medios propios o de pago, o como una lista de exclusión para evitar que vean anuncios irrelevantes o innecesarios al ejecutar campañas.
 
-> 📄 **Example: Remarketing**
+> 📄 **Ejemplo: Remarketing**
 >
-> Using clicks and views for effective remarketing. To convert these users, a little extra convincing or a gentle reminder is needed. These users have a high probability of converting so remarketing to them can produce significantly better results than advertising to new segments. Create precise audiences for remarketing based on clicks and impressions data collected.
+> Uso de clics y visualizaciones para un remarketing eficaz. Para convertir a estos usuarios, debes convencerlos un poco o enviarles un recordatorio amable. Estos usuarios tienen una alta probabilidad de conversión, por lo que el remarketing con ellos puede producir resultados significativamente mejores que la publicidad en segmentos nuevos. Crea audiencias precisas para el remarketing basadas en los datos de clics e impresiones recopilados.
 >
-> Build an audience of potential users that clicked on an ad but did not install in the last two days.
+> Crea una audiencia de usuarios potenciales que hicieron clic en un anuncio, pero que no instalaron en los últimos dos días.
 >
 > ![example_remarketing.jpg](https://files.readme.io/715c42d56c0deffdb4d28acd213f4a5da62de75bbcd6834a927b9226d2fea43e-46335667613329.jpg)
 >
-> These are users who, in the recent past, were sufficiently interested in your mobile app to click on your ad, but for some reason did not install the app, or installed the app but did not launch it. Some users just need a reminder (push) to install it. Others may need to see more screens or features of your app to finally convert. Therefore, if you have a primary creative you use on new audiences, it might be better to use a different creative for audiences that clicked but did not install.
+> Estos son usuarios que, en el pasado reciente, estaban lo suficientemente interesados en tu aplicación móvil como para hacer clic en tu anuncio, pero por algún motivo no instalaron la aplicación o la instalaron, pero no la iniciaron. Algunos usuarios solo necesitan un recordatorio (push) para instalarla. Es posible que otras personas necesiten ver más pantallas o funciones en tu aplicación para finalmente convertirse. Por lo tanto, si tienes una creatividad principal que usas en audiencias nuevas, podría ser mejor usar una creatividad diferente para las audiencias que hicieron clic, pero no instalaron.
 
 </Accordion>
 
 <div id="ruleset-filters" />
 
-<Accordion title="Ruleset filters">
+<Accordion title="Filtros de conjuntos de reglas">
 
-* A ruleset consists of one or multiple rules.
-* There are various ruleset filter categories such as Events, Revenue, Geo, Attribution, User attributes, Devices, and Owned media.
-* Rules have different parameters and settings, as listed in the table below.
+* Un conjunto de reglas consiste en una o varias reglas.
+* Hay varias categorías de filtros de conjuntos de reglas como Eventos, Ingresos, Geolocalización, Atribución, Atributos de usuario, Dispositivos y Medios propios.
+* Las reglas tienen diferentes parámetros y configuraciones, tal como se indica en la tabla a continuación.
 
-<table><tbody><tr><td colspan="3"><h4><span id="events"></span>Events</h4><p><img alt="engagement_filter_with_A___B.jpg" src="https://files.readme.io/ea3063532ff666f6d8a0f90d55c86007d8a54b25017d93ed7bc19e0d727d9193-46335625077777.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Viewed an ad</li><li>Clicked an ad</li><li>Installed the app</li><li>Did not install the app</li><li>Launched the app</li><li>Did not launch the app</li><li>Uninstalled the app </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Time frame and Frequency </p></td></tr><tr><td colspan="3"><h4><span id="inapp-events"></span>In-app events</h4><p><img alt="in-app_event_filter.jpg" src="https://files.readme.io/1bb8a78b3c64ab8e0d01c1e2be63e9bdd00b2be2396335b3a01289b0b0837593-46335625078929.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Did event [<em>event name</em>]</li><li>Did not do event: [<em>event name]</em></li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Time frame and Frequency </p></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Event attribute + value:</p><ul><li>Is</li><li>Is not</li><li>Greater than</li><li>Less than</li><li><a href="./audiences-guide#contains-does-not-contain-logic">Contains</a></li><li><a href="./audiences-guide#contains-does-not-contain-logic">Does not contain</a></li></ul></td></tr><tr><td colspan="3"><p><br /><br /><strong><span id="h_01K5EHGKDPWS16HP9Q7KX9JXFY"></span>In-app event notes</strong><br /></p><ul><li>The in-app event list updates <a href="./about-data-freshness-and-timezone-support#daily-processing" target="_blank">daily.</a></li><li>If <strong>Did event</strong> is selected, and the in-app event has attributes associated with it, you can filter by the in-app-event attribute value. </li><li><p>In-app events, by default, are limited to 100 unique values per attribute. For example, if the event is "purchase" and the attribute is "content-type" there can only be 100 (or fewer) possible content types. However, numeric values are unlimited.<br/>If there are in-app event attributes (parameters) and values that don't appear in the list, you can add them manually by clicking on <strong>Add event attribute</strong> &gt; <strong>Add item</strong><br/> </p><p><strong><img alt="Add_item.jpg" src="https://files.readme.io/00d62c7edfa556c3ecb50842003fb64ecde848413f1b81fd100f3da7257bc38e-46335625079825.jpg"/></strong></p></li><li>All manually added event items must be entered as string type (text) only. Numeric values should not be added, and will not work correctly.</li><li>When a manually added event item is added, the "Estimated audience size" may not reflect accurately. <br/>If you require more than 100 attributes/values to appear in the list, you can also contact your CSM or send an email to hello@appsflyer.com.</li></ul><h4><strong><span id="contains-does-not-contain-logic"></span>Contains / Does not contain logic:</strong></h4><p><strong>Contains:</strong> Matches users whose event attribute values contain a specific word(s). Matching is partial and case-insensitive. For example, the keyword "bag" matches attributes such as "handbag" or "Bag".</p><p><strong>Does not contain:</strong> Matches users whose event attribute values do not contain the specified word(s). The matching logic is also partial and case-insensitive.</p><p><br /><br /><strong><span id="h_01K5EH9WVTEX56980MCR81ZAHH"></span>Contains logic notes</strong><br /></p><ul><li>Minimum keyword length: 2 characters.</li><li>Maximum allowed inputs per rule: 1 keyword per AND condition.</li><li>Numeric and special-character-only attributes are not supported.</li><li>Multilingual support includes accented and non-Latin characters (e.g., é, ü, Korean characters).</li><li>When using the "Contains" or "Does not contain" operators, estimated audience size and estimated upload size are unavailable. </li></ul></td></tr><tr><td colspan="3"><h4><span id="revenue::3358edf4"></span>Revenue</h4><p><img alt="revenue_filter.jpg" src="https://files.readme.io/e896abde88511e5675074d5e4d995ed810637be8327c7c157ddf65668839fd4a-46335625080209.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Total in-app purchases revenue</li><li>Total ad revenue</li><li>Total revenue </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Greater than</li><li>Less than </li></ul><p><strong>Definitions:</strong></p><ul><li><strong>Total in-app purchases revenue:</strong> total value of all events reported using the <code>af_revenue</code> parameter for a specific device/CUID</li><li><strong>Total ad revenue:</strong> total ad revenue generated by a specific device/CUID</li><li><strong>Total revenue:</strong> Total in-app purchases revenue + Total ad revenue</li></ul><p><strong>Notes:</strong></p><ul><li>To use the <strong>Total ad revenue</strong> and <strong>Total revenue</strong> filters, <a href="./roi360-guide-ad-revenue-attribution" target="_blank">Ad revenue attribution</a> must be implemented in your AppsFlyer account.</li><li>All revenue filter options are measured in USD.</li></ul></td></tr><tr><td colspan="3"><h4><span id="geo"></span>Geo</h4><p><img alt="location_filter.jpg" src="https://files.readme.io/62f6144d23ef23070e2d6d8891a420691633a466d1b8d76365b4d82f40c725c6-46335625081361.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Location </li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Is not</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p><strong>Location options</strong></p><ul><li>Country</li><li>State</li><li>City</li></ul></td></tr><tr><td colspan="3"><p><strong>Notes relating to location:</strong></p><ul><li>If you select multiple countries, you can't select states.</li><li>If you select multiple states, you can select cities.</li></ul></td></tr><tr><td colspan="3"><h4><span id="owned-media"></span>Owned media</h4><p><img alt="doctored_owned_media_image_with_app_specified__final_version_.jpg" src="https://files.readme.io/0d15fa734e11164e6e525e26c66291c52144586c8c35dad77a71e471cbf3326d-46335667621649.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Owned media source</li><li>Owned media campaign</li><li>Owned media ad set</li><li>Owned media ad</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Is not</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Values such as:</p><ul><li>Email</li><li>SMS</li><li>Web</li><li>Social media (excluding paid advertising)</li><li>QR codes</li><li>Referrals</li><li>Specific media campaigns, ad sets, and ads</li></ul></td></tr><tr><td colspan="3"><p>You can build targeted audiences consisting of users who were attributed to specific owned media sources. Additionally, you can choose the level of granularity and target users who came from a specific owned media source, campaign, ad set, and/or individual ad.</p><p>Use the audiences you create to re-engage users with personalized messaging on either owned or paid media, or as exclusion lists to prevent them from seeing irrelevant or unnecessary ads when running user acquisition or re-engagement campaigns.</p></td></tr><tr><td colspan="3"><h4><span id="device"></span>Device</h4><p><img alt="device_filter.jpg" src="https://files.readme.io/184cd84f83b94c38f53ca5a9ef67a4f2c6ad8f8a78d832f6c7979a2c88f61cb5-46335667623441.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Device brand</li><li>Device model</li><li>App version</li><li>OS version</li><li>Carrier</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Is not </li></ul></td><td><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/> Selected value</td></tr><tr><td colspan="3"><h4><span id="attribution"></span>Attribution</h4><p><img alt="Attribution_filter.jpg" src="https://files.readme.io/c7aee01564562bc7d468d6b2bd59ff3d26a028d19382dfdbc35c3fe700f214e7-46335625087249.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Organic</li><li>Retargeting</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>False</li><li>True</li></ul></td><td> </td></tr><tr><td colspan="3"><h4><a href="./audiences-create-better-audiences-with-user-attribute-data" target="_blank"><span id="user-attributes"></span>User attributes</a></h4><p><img alt="user_attribute_filter.jpg" src="https://files.readme.io/add34f52509bf733f10364691e32ab88331a1caee4bbc4627fb665ec3826422d-46335625088145.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><p>User attribute name</p></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>String type<ul><li>Is</li><li>Is not</li></ul></li><li>Number type<ul><li>Is</li><li>Is greater than</li><li>Is lower than</li></ul></li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/><br/>For string: Select a value</p><p>For number: Enter a value</p></td></tr></tbody></table>
+<table><tbody><tr><td colspan="3"><h4><span id="events"></span>Eventos</h4><p><img alt="engagement_filter_with_A___B.jpg" src="https://files.readme.io/ea3063532ff666f6d8a0f90d55c86007d8a54b25017d93ed7bc19e0d727d9193-46335625077777.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Visualizó un anuncio</li><li>Hizo clic en un anuncio</li><li>Instaló la aplicación</li><li>No instaló la aplicación</li><li>Inició la aplicación</li><li>No inició la aplicación</li><li>Desinstaló la aplicación </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Período y frecuencia </p></td></tr><tr><td colspan="3"><h4><span id="inapp-events"></span>Eventos in-app</h4><p><img alt="in-app_event_filter.jpg" src="https://files.readme.io/1bb8a78b3c64ab8e0d01c1e2be63e9bdd00b2be2396335b3a01289b0b0837593-46335625078929.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Realizó el evento [<em>nombre del evento</em>]</li><li>No realizó el evento [<em>nombre del evento]</em> </li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Período y frecuencia </p></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Atributo del evento + valor:</p><ul><li>Es</li><li>No es</li><li>Mayor que</li><li>Menor que</li><li><a href="./audiences-guide#contains-does-not-contain-logic">Obtener similares</a></li><li><a href="./audiences-guide#contains-does-not-contain-logic">Ten en cuenta:</a></li></ul></td></tr><tr><td colspan="3"><p><br /><br /><strong><span id="h_01K5EHGKDPWS16HP9Q7KX9JXFY"></span>Notas sobre eventos in-app</strong><br /></p><ul><li>La lista de eventos in-app se actualiza <a href="./about-data-freshness-and-timezone-support#procesamiento-diario" target="_blank">diariamente.</a> </li><li>Si se selecciona <strong>Realizó el evento</strong> y el evento in-app tiene atributos asociados a este, puedes filtrar por valor de atributo de evento in-app. </li><li><p>Los eventos in-app, de forma predeterminada, están limitados a 100 valores únicos por atributo. Por ejemplo, si el evento es "purchase" y el atributo es "content-type", solo puede haber 100 (o menos) tipos de contenido posibles. Sin embargo, los valores numéricos son ilimitados.<br/>Si hay atributos (parámetros) de eventos in-app y valores que no aparecen en la lista, puedes añadirlos manualmente haciendo clic en <strong>Agregar atributo de evento</strong> &gt; <strong>Agregar elemento</strong>.<br/> </p><p><strong><img alt="Add_item.jpg" src="https://files.readme.io/00d62c7edfa556c3ecb50842003fb64ecde848413f1b81fd100f3da7257bc38e-46335625079825.jpg"/></strong></p></li><li>- Todos los elementos de eventos agregados manualmente deben introducirse solo como tipo de cadena (texto). No deben agregarse valores numéricos y no funcionarán correctamente.</li><li>- Cuando se agrega un elemento de evento manualmente, el "Tamaño estimado de la audiencia" puede no reflejarse con precisión. <br/>Si necesitas que aparezcan más de 100 atributos/valores en la lista, también puedes ponerte en contacto con tu CSM o enviar un correo electrónico a hello@appsflyer.com.</li></ul><h4><strong><span id="contains-does-not-contain-logic"></span>Lógica de contiene / no contiene:</strong></h4><p><strong>Contiene:</strong> Hace coincidir a los usuarios cuyos valores de atributos del evento contienen una palabra o varias palabra(s) específicas. La coincidencia es parcial y no distingue entre mayúsculas y minúsculas. Por ejemplo, la palabra clave "bag" coincide con atributos como "handbag" o "Bag".</p><p><strong>No contiene:</strong> Hace coincidir a los usuarios cuyos valores de atributos del evento no contienen las palabras especificadas. La lógica de coincidencia también es parcial y no distingue entre mayúsculas y minúsculas.</p><p><br /><br /><strong><span id="h_01K5EH9WVTEX56980MCR81ZAHH"></span>Notas sobre la lógica de Contiene</strong><br /></p><ul><li>Longitud mínima de la palabra clave: 2 caracteres.</li><li>Número máximo de entradas permitidas por regla: 1 palabra clave por condición AND.</li><li>No se admiten atributos formados solo por números y caracteres especiales.</li><li>La compatibilidad multilingüe incluye caracteres acentuados y no latinos (p. ej., é, ü o caracteres coreanos).</li><li>Cuando se utilizan los operadores "Contiene" o "No contiene", el tamaño estimado de la audiencia y el tamaño estimado de la carga no están disponibles. </li></ul></td></tr><tr><td colspan="3"><h4><span id="revenue::3358edf4"></span>Ingresos</h4><p><img alt="revenue_filter.jpg" src="https://files.readme.io/e896abde88511e5675074d5e4d995ed810637be8327c7c157ddf65668839fd4a-46335625080209.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Ingresos totales por compras in-app</li><li>Ingresos totales por publicidad</li><li>Ingresos totales </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>Mayor que</li><li>Menor que </li></ul><p><strong>Definiciones:</strong></p><ul><li> <strong>Ingresos totales por compras in-app:</strong> valor total de todos los eventos reportados usando el parámetro <code>af_revenue</code> para un dispositivo/CUID específico</li><li> <strong>Ingresos totales por publicidad:</strong> ingresos totales por publicidad generados por un dispositivo/CUID específico</li><li> <strong>Ingresos totales:</strong> Ingresos totales por compras in-app + Ingresos totales por publicidad</li></ul><p><strong>Notas:</strong></p><ul><li>Para usar los filtros de <strong>Ingresos totales por publicidad</strong> e <strong>Ingresos totales</strong>, la <a href="./roi360-guide-ad-revenue-attribution" target="_blank">Atribución de ingresos por publicidad</a> debe estar implementada en tu cuenta de AppsFlyer.</li><li>Todas las opciones de filtrado de los ingresos se miden en USD.</li></ul></td></tr><tr><td colspan="3"><h4><span id="geo"></span>Geografía</h4><p><img alt="location_filter.jpg" src="https://files.readme.io/62f6144d23ef23070e2d6d8891a420691633a466d1b8d76365b4d82f40c725c6-46335625081361.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Ubicación </li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>No es</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p><strong>Opciones de ubicación</strong></p><ul><li>País</li><li>Estado</li><li>Ciudad</li></ul></td></tr><tr><td colspan="3"><p><strong>Notas relativas a la ubicación:</strong></p><ul><li>Si seleccionas varios países, no podrás seleccionar estados.</li><li>Si seleccionas varios estados, puedes seleccionar ciudades.</li></ul></td></tr><tr><td colspan="3"><h4><span id="owned-media"></span>Medios propios</h4><p><img alt="doctored_owned_media_image_with_app_specified__final_version_.jpg" src="https://files.readme.io/0d15fa734e11164e6e525e26c66291c52144586c8c35dad77a71e471cbf3326d-46335667621649.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Fuente de medios propia</li><li>Campaña en medios propios</li><li>Conjunto de anuncios en medios propios</li><li>Anuncio en medios propios</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>No es</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Valores como:</p><ul><li>Correo electrónico</li><li>SMS</li><li>Web</li><li>Redes sociales (excluyendo la publicidad pagada)</li><li>Códigos QR</li><li>Referencias</li><li>Campañas de medios, conjuntos de anuncios y anuncios específicos</li></ul></td></tr><tr><td colspan="3"><p>Puedes crear audiencias objetivo que consistan en usuarios que fueron atribuidos a fuentes de medios propias específicas. Además, puedes elegir el nivel de granularidad y dirigirte a los usuarios que proceden de una fuente de medios propia, campaña, conjunto de anuncios y/o anuncio individual específicos.</p><p>Utiliza las audiencias que crees para volver a captar a los usuarios con mensajes personalizados en medios propios o de pago, o como listas de exclusión para evitar que vean anuncios irrelevantes o innecesarios al ejecutar campañas de adquisición de usuarios o reengagement.</p></td></tr><tr><td colspan="3"><h4><span id="device"></span>Dispositivo</h4><p><img alt="device_filter.jpg" src="https://files.readme.io/184cd84f83b94c38f53ca5a9ef67a4f2c6ad8f8a78d832f6c7979a2c88f61cb5-46335667623441.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Marca del dispositivo</li><li>Modelo de dispositivo</li><li>Versión de la aplicación</li><li>Versión de SO</li><li>Operador</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>No es </li></ul></td><td> <img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/> Valor seleccionado</td></tr><tr><td colspan="3"><h4><span id="attribution"></span>Atribución</h4><p><img alt="Attribution_filter.jpg" src="https://files.readme.io/c7aee01564562bc7d468d6b2bd59ff3d26a028d19382dfdbc35c3fe700f214e7-46335625087249.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Orgánico</li><li>Reorientación</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Falso</li><li>Verdadero</li></ul></td><td> </td></tr><tr><td colspan="3"><h4><a href="./audiences-create-better-audiences-with-user-attribute-data" target="_blank"><span id="user-attributes"></span>Atributos de usuario</a></h4><p><img alt="user_attribute_filter.jpg" src="https://files.readme.io/add34f52509bf733f10364691e32ab88331a1caee4bbc4627fb665ec3826422d-46335625088145.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><p>Nombre de atributo de usuario</p></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Tipo de cadena<ul><li>Es</li><li>No es</li></ul></li><li>Tipo de número<ul><li>Es</li><li>Es mayor a</li><li>Es inferior a</li></ul></li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/><br/>Para cadena: Selecciona un valor</p><p>Para el número: Introduce un valor</p></td></tr></tbody></table>
 
 </Accordion>
 
 <div id="combine-rulesets" />
 
-<Accordion title="Combine rulesets">
+<Accordion title="Combinar conjuntos de reglas">
 
-**To combine a ruleset with an existing audience:**
+**Para combinar un conjunto de reglas con una audiencia existente:**
 
-1. Go to **Engage** > **Audiences**.
-2. Click **Add Audience**.  
-   The **Build** tab displays.
-3. Enter a unique **Audience name**.
-4. Select the platform: **Android** or **iOS**.
-5. [Optional] Select **Advanced settings** to select the [user identifier:](/docs/audiences-guide#user-identifier-device-id-vs-customer-id)
-   * [Default] **Device ID**: evaluates rules by device ID only.
-   * **Customer user ID**: evaluates rules by grouping devices using the CUID. Use this method after you verify that your data has valid CUIDs.
-6. Click **Existing audience**, then select the specific audience.
-7. Select an operator: and, or, exclude.
+1. Ve a **Engage** > **Audiences.**
+2. Haz clic en **Agregar audiencia**.  
+   Aparecerá la pestaña **Crear**.
+3. Ingresa un **nombre de audiencia** único.
+4. Selecciona la plataforma: **Android** o **iOS**.
+5. [Opcional] Selecciona **Configuración avanzada** para seleccionar el [identificador de usuario](/docs/audiences-guide#user-identifier-device-id-vs-customer-id):
+   * [Predeterminado] **ID de dispositivo**: evalúa las reglas solo por ID de dispositivo.
+   * **ID de usuario de cliente**: evalúa las reglas agrupando dispositivos utilizando el CUID. Usa este método después de verificar que tus datos tienen CUID válidos.
+6. Haz clic en **Audiencia existente**, y luego selecciona la audiencia específica.
+7. Selecciona un operador: y, o, excluir.
 
-**Limitations:**
+**Limitaciones:**
 
-* The existing audience must be on the same platform (such as iOS or Android) as the new audience.
-* An audience that is based on an existing audience can’t be used.
-* An imported audience can’t be used.
+* La audiencia existente debe estar en la misma plataforma (como iOS o Android) que la audiencia nueva.
+* No se puede utilizar una audiencia basada en una audiencia existente.
+* No se puede utilizar una audiencia importada.
 
 </Accordion>
 
-## Create and manage partner connections
+## Crear y administrar conexiones de partners
 
-This section describes how to create and manage media partner connections.
+Esta sección describe cómo crear y gestionar conexiones de partners de medios.
 
 <div id="create-a-new-connection" />
 
-<Accordion title="Create a new connection">
+<Accordion title="Crear una nueva conexión">
 
-The **Connections** tab displays all your partner connections and the status of each. All the information needed to upload audience data to a media partner is specified in a partner connection. You can have multiple connections for a single media partner (using different accounts, login information, etc.).
+La pestaña **Conexiones** muestra todas las conexiones de tus partners y el estado de cada una. Toda la información necesaria para cargar datos de audiencia a un partner anunciante se especifica en una conexión de partner. Puedes tener varias conexiones para un solo partner anunciante (utilizando diferentes cuentas, información de inicio de sesión, etc.)
 
-**To create a new connection:**
+**Para agregar una conexión nueva:**
 
-1. Go to **Engage** > **Audiences > Connections**.
-2. Click **+ New connection**.  
+1. Ir a **Engage** > **Audiences > Conexiones**.
+2. Haz clic en **+ Nueva conexión**.  
 
-   **Note:** If you are creating a new partner connection from within the audience builder, click on **+ Add partner connection** within the **Manage audience connections** window.
-3. Select a **Partner name**.
-4. Enter a **Connection name**.  
+   **Nota:** Si estás creando una nueva conexión de partner desde dentro del creador de audiencias, haz clic en **+ Agregar conexión de partner** en la ventana **Administrar conexiones de audiencias**.
+3. Selecciona un **Nombre de partner**.
+4. Ingresa un **Nombre de conexión**.  
 
-   **Note:** It must be a new name that was never used when creating other connections.
-5. Complete the required fields/login information for the partner. Some partners have <Anchor target="_blank" href="/marketers/docs/audiences-partner-connections">detailed instructions about how to connect.</Anchor>   
+   **Nota:** Debe ser un nombre nuevo que nunca se utilizó al crear otras conexiones.
+5. Completa los campos/datos de inicio de sesión obligatorios para el partner. Algunos partners tienen <Anchor target="_blank" href="/marketers/es/docs/audiences-partner-connections">instrucciones detalladas sobre cómo conectarse.</Anchor>   
 
-   **Note:** Credentials must be unique. To prevent duplicate connection creation, you'll be blocked from creating the new connection if the credentials have already been used for another partner connection.
-6. Select the user identifiers that you authorize for sharing with this partner.
-   * Supported identifiers vary by partner. Only those identifiers supported by the selected partner will appear in the list.
-   * Only identifiers that comply with your <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">account-level user identifier policy</Anchor> will be uploaded. You will see a caution message if you select an identifier that is disallowed by your account policy.  
+   **Nota:** Las credenciales deben ser únicas. Para evitar la creación de conexiones duplicadas, se te bloqueará de crear la nueva conexión si las credenciales ya han sido utilizadas para otra conexión de socio.
+6. Selecciona los identificadores de usuarios que autorizas para compartir con este partner.
+   * Los identificadores compatibles varían según el partner. Solo aparecerán en la lista los identificadores compatibles con el partner seleccionado.
+   * Solo se cargarán los identificadores que cumplan con tu <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política de identificadores de usuario a nivel cuenta.</Anchor> Verás un mensaje de advertencia si seleccionas un identificador que no está permitido por la política de tu cuenta.  
      ![doctored_connection_image.jpg](https://files.readme.io/5de138c4a2c2a3f26bebc6bd14d9703408a986dc4f8c53235d4be337784603af-46335625091345.jpg)
-7. Click **Save.**
+7. Haz clic en **Guardar**. Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
 
 </Accordion>
 
 <div id="manage-connections" />
 
-<Accordion title="Manage connections">
+<Accordion title="Gestionar conexiones">
 
-**To manage an existing connection:**
+**Para gestionar una conexión existente:**
 
-1. Select a partner.
-2. Select a connection. ![Edit_connection_screen.jpg](https://files.readme.io/8c13e9dc04e98ca959b9ca250ff4954079d71e4ccd4cb2047f9037f31def0aeb-46335625091729.jpg)
-3. Take any of the following actions:
+1. Selecciona un partner.
+2. Selecciona una conexión. ![Edit_connection_screen.jpg](https://files.readme.io/8c13e9dc04e98ca959b9ca250ff4954079d71e4ccd4cb2047f9037f31def0aeb-46335625091729.jpg)
+3. Realiza cualquiera de las siguientes acciones:
 
-| Option | Procedure |
+| Opción | Procedimiento |
 | --- | --- |
-| <span id="change-the-connection-name"></span>Change the connection name | **To change the connection name,** edit it directly in the **Connection name** field. |
-| <span id="reconnect"></span>Reconnect | **To reconnect:**<ol><li>If the connection status is not active, click **Reconnect**.</li><li>Update the connection credentials or login to the partner to re-authenticate according to the instruction in the user interface.</li></ol> |
-| <span id="modify-user-identifiers"></span>Modify user identifiers | **To modify user identifiers,** select/deselect the user identifiers that you authorize for sharing with this partner. Only identifiers that comply with your <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">account-level user identifier policy</Anchor> will be uploaded. |
-| <span id="delete-connection"></span>Delete connection | **To delete a connection:**<ol><li>If there are any audiences connected, remove them as follows:<ol><li>Select the audience.</li><li>The audience connects tab opens in a new tab.</li><li>Remove the connection.</li><li>Close the tab.</li></ol></li><li>Repeat this procedure until no audiences are connected to the connection.</li><li>Click **Delete connection**.</li></ol> |
+| <span id="change-the-connection-name"></span>Cambiar el nombre de la conexión | **Para cambiar el nombre de la conexión,** edítalo directamente en el campo **Nombre de conexión**. |
+| <span id="reconnect"></span>Reconectar | **Para volver a conectar:**<ol><li>Si el estado muestra que la conexión está inactiva, haz clic en **Reconectar**.</li><li>Actualiza las credenciales de conexión o inicia sesión en el partner para volver a autenticar de acuerdo con las instrucciones de la interfaz de usuario.</li></ol> |
+| <span id="modify-user-identifiers"></span>Modificar identificadores de usuarios | **Para modificar los identificadores de usuario,** selecciona/deselecciona los identificadores de usuario que autorizas para compartir con este partner. Solo se cargarán los identificadores que cumplan con tu <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política de identificadores de usuario a nivel cuenta</Anchor>. |
+| <span id="delete-connection"></span>Eliminar conexión | **Para eliminar una conexión:**<ol><li>Si hay alguna audiencia conectada, elimínala de la siguiente manera:<ol><li>Selecciona la audiencia.</li><li>La pestaña Conexiones de audiencias se abre en una pestaña nueva.</li><li>Elimina la conexión.</li><li>Cierra la pestaña.</li></ol></li><li>Repite este procedimiento hasta que no haya audiencias conectadas a la conexión.</li><li>Haz clic en **Eliminar conexión**.</li></ol> |
 
 </Accordion>
 
-## Dashboard and metrics
+## Dashboard y métricas
 
-This section describes the features and campaign metrics that appear on the dashboard.
+Esta sección describe las características y las métricas de la campaña que aparecen en el dashboard.
 
 <div id="audiences-dashboard" />
 
-<Accordion title="Audiences dashboard">
+<Accordion title="Dashboard de Audiences">
 
 [![new_dashboard_image_doctored.jpg](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)
 
-| Column | Description |
+| Columna | Descripción |
 | --- | --- |
-| <span id="audience-name"></span>Audience name | Audience name |
-| <span id="size"></span>Size | All users that match the audience criteria |
-| <span id="upload-size"></span>Upload size | The audience size available for upload after the application of your account-level <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">user identifier policy</Anchor> and selected identifiers for the linked partner connections.<br /><br />**Note:** The actual size on the partner side may be different for various reasons including:<ul><li>The partner matching process.</li><li>The upload size for iOS reflects the number of enriched segments based on IDFVs which may include duplicated IDFAs. Deduplication is done when uploaded to the partner side, potentially causing size discrepancies.</li></ul> |
-| <span id="app-name"></span>App name | The app(s) referenced in the audience definition. These are not necessarily the apps targeted by the campaigns that utilize the audience. |
-| <span id="upload-to"></span>Upload to | <ul><li>Icons of partners to whom the audience is sent</li><li><Image alt="SplitAudiences.png" src="https://files.readme.io/85891dd56649980b8324ee9680e8e0d73898dc3f18a66428c147bc689ba08201-46335667629457.png" width="36px" /> indicates that the audience is split between partners</li></ul> |
-| <span id="incrementality"></span>Incrementality | This column displays if you subscribe to <Anchor target="_blank" href="/marketers/docs/incrementality-for-remarketing-overview">Incrementality.</Anchor> Statuses include:<ul><li>**Pending** - Initial data-gathering period (48 hours) starting from the campaign start date</li><li>**Link campaign** - Select the relevant campaign(s) to link to the experiment. If we have a campaign suggestion for you, it will be pre-selected (with any additional suggestions ordered by relevance in the dropdown list).</li><li>**Active** - The experiment is in progress</li><li>**Completed** - The experiment has ended</li></ul>Clicking on a status takes you to the Incrementality dashboard. |
-| <span id="upload-status"></span>Upload status | <ul><li>The current audience upload status</li><li>The tooltip displays the date and time of the most recent upload</li><li>In case of failure, click **View details** and take corrective action in accordance with the detailed error message that displays</li></ul> |
+| <span id="audience-name"></span>Nombre de audiencia | Nombre de audiencia |
+| <span id="size"></span>Tamaño | Todos los usuarios que coinciden con los criterios de audiencia |
+| <span id="upload-size"></span>Tamaño de la carga | Tamaño estimado de audiencia disponible para cargar después de aplicar tu <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política de identificador de usuario</Anchor> a nivel de cuenta y los identificadores seleccionados para las conexiones de partners enlazados.<br /><br />**Nota:** El tamaño real en el lado del partner puede ser diferente por varias razones, incluyendo:<ul><li>El proceso de asignación de partners.</li><li>El tamaño de la carga para iOS refleja el número de segmentos enriquecidos basados en IDFVs que pueden incluir IDFAs duplicados. La deduplicación se realiza al subirlo al lado del partner, lo que puede causar discrepancias en el tamaño.</li></ul> |
+| <span id="app-name"></span>Nombre de la aplicación | Las aplicaciones a las que se hace referencia en la definición de la audiencia. Estas no son necesariamente las aplicaciones dirigidas por las campañas que utilizan la audiencia. |
+| <span id="upload-to"></span>Cargar en | <ul><li>Íconos de partners a los que se envía la audiencia.</li><li><Image alt="SplitAudiences.png" src="https://files.readme.io/85891dd56649980b8324ee9680e8e0d73898dc3f18a66428c147bc689ba08201-46335667629457.png" width="36px" /> indica que la audiencia está dividida entre partners.</li></ul> |
+| <span id="incrementality"></span>Incrementalidad | Esta columna se muestra si te suscribes a <Anchor target="_blank" href="/marketers/es/docs/incrementality-for-remarketing-overview">Incrementalidad.</Anchor> Los estados incluyen:<ul><li>**Pendiente**: período inicial de recopilación de datos (48 horas) a partir de la fecha de inicio de la campaña.</li><li>**Enlazar campaña**: selecciona la(s) campaña(s) relevante(s) para vincular al experimento. Si tenemos una sugerencia de campaña para ti, será preseleccionada (con cualquier sugerencia adicional ordenada por relevancia en la lista desplegable).</li><li>**Activo**: el experimento está en curso.</li><li>**Completado**: el experimento ha finalizado.</li></ul>Al hacer clic en un estado, accederás al dashboard de Incrementalidad. |
+| <span id="upload-status"></span>Estado de carga | <ul><li>El estado actual de la carga de la audiencia.</li><li>La sugerencia muestra la fecha y hora de la carga más reciente.</li><li>En caso de falla, haz clic en **Ver detalles** y realiza la acción correctiva de acuerdo con el mensaje de error detallado que se muestra.</li></ul> |
 
 </Accordion>
 
 <div id="campaign-metrics" />
 
-<Accordion title="Campaign metrics">
+<Accordion title="Métricas de campaña">
 
-#### metrics hash
+#### hash de métricas
 
-#### Campaign metrics basics
+#### Conceptos básicos de métricas de campaña
 
-The **Campaign metrics** section of the Audiences dashboard displays data for campaigns that used an audience for targeting (whether for inclusion, exclusion, or as the basis of a lookalike audience).
+La sección **Métricas de campaña** del dashboard de Audiences muestra datos de las campañas que utilizaron una audiencia para el targeting (ya sea para la inclusión, exclusión o como base de una audiencia similar).
 
-* Using an audience for targeting (and deciding how it is used) is part of setting up campaigns with media partners. Media partners vary in their support for how audiences can be used.
+* Usar una audiencia para el targeting (y decidir cómo se usa) es parte de la configuración de las campañas con partners de medios. Los partners de medios varían en cuanto a cómo se pueden utilizar las audiencias.
 
-**Supported partners:** Currently, data is available for Meta ads, Google Ads, and Snapchat. The **Campaign metrics** section of the dashboard is visible only if you have audiences connected to supported partners.
+**Partners compatibles:** actualmente, los datos están disponibles para Anuncios de Meta, Google Ads y Snapchat. La sección **Métricas de campaña** del dashboard solo es visible si tienes audiencias conectadas a partners admitidos.
 
-**To view Campaign metrics:**
+**Para ver las métricas de la campaña:**
 
-1. Scroll to the far right of the Audiences dashboard to make the **Campaign metrics** section fully visible.
-2. Use the date picker to select the timeframe for which you want to display data. (By default, the dashboard displays data for the past 7 days.)
+1. Desplázate hasta el extremo derecho del dashboard de Audiences para que la sección **Métricas de campaña** sea completamente visible.
+2. Utiliza el selector de fechas para seleccionar el plazo para el que deseas mostrar los datos. (De forma predeterminada, el dashboard muestra los datos de los últimos 7 días).
 
-**To download Campaign metrics** **for the selected timeframe:**
+**Para descargar métricas de campaña** **para el período de tiempo seleccionado:**
 
-1. Click the **Export** button at the top of the Audiences dashboard.
-2. Once the file has been generated, it downloads automatically.
+1. Haz clic en el botón **Exportar** en la parte superior del dashboard de Audiences.
+2. Una vez que se ha generado el archivo, se descarga automáticamente.
 
 
-#### Summary view
+#### Resumen
 
-The initial **Campaign metrics** view displays summary campaign data for each audience:
+La vista de **métricas de campaña** inicial muestra datos de campaña resumidos para cada audiencia:
 
-[<Image alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://files.readme.io/3b3c1878471a1b77cb7e4296b966302873caa6313f8779b99f4f3687c36bfa5d-46335625093009.png)
+[<Image alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30621031359377)
 
-| Column | Description |
+| Columna | Descripción |
 | --- | --- |
-| <span id="campaigns"></span>Campaigns | Total number of campaigns that used the audience for targeting during the selected timeframe (campaigns run with supported partners only) |
-| <span id="campaign-cost"></span>Campaign cost | Total cost of these campaigns during the selected timeframe |
-| <span id="campaign-revenue"></span>Campaign revenue | Total revenue attributed to these campaigns during the selected timeframe |
+| <span id="campaigns"></span>Campañas | Número total de campañas que utilizaron la audiencia para el targeting durante el período de tiempo seleccionado (las campañas se ejecutan solo con partners admitidos) |
+| <span id="campaign-cost"></span>Costo de la campaña | Costo total de estas campañas durante el plazo seleccionado |
+| <span id="campaign-revenue"></span>Ingresos de la campaña | Ingresos totales atribuidos a estas campañas durante el plazo seleccionado |
 
-#### Detailed view
+#### Vista detallada
 
-From the summary view, click on the <Image alt="show_detailed_view_icon.png" src="https://files.readme.io/597b5a91c35cab2df040fbf12be1b4bf41fa82471e4f533e8da48a7aa93bb174-46335667631761.png" width="24px" /> icon to enter the detailed view for the selected audience. (The  <Image alt="show_detailed_view_icon.png" src="https://files.readme.io/597b5a91c35cab2df040fbf12be1b4bf41fa82471e4f533e8da48a7aa93bb174-46335667631761.png" width="24px" /> icon appears at the far right of a row when you place your mouse anywhere on that row.)
+Desde la vista de resumen, haz clic en el icono <Image alt="show_detailed_view_icon.png" src="https://files.readme.io/597b5a91c35cab2df040fbf12be1b4bf41fa82471e4f533e8da48a7aa93bb174-46335667631761.png" width="24px" /> para ingresar a la vista detallada para la audiencia seleccionada. (El icono <Image alt="show_detailed_view_icon.png" src="https://files.readme.io/597b5a91c35cab2df040fbf12be1b4bf41fa82471e4f533e8da48a7aa93bb174-46335667631761.png" width="24px" /> aparece en el extremo derecho de una fila cuando coloca el mouse en cualquier lugar de esa fila).
 
-The detailed view displays data broken down by supported partner and campaign:
+La vista detallada muestra los datos desglosados por partners y campañas compatibles:
 
-[![campaign_metrics_detailed_view.jpg](https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg)](https://files.readme.io/44b5b71c5832a27785a3f8919a05ed9456e02e3f59ee822b021cd3f08089609f-46335625094417.png)
+[![campaign_metrics_detailed_view.jpg](https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg)](https://support.appsflyer.com/hc/article_attachments/30621015096593)
 
-If the selected audience was used to target more than one app, use the drop-down list ![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png) to filter the data by app.
+Si la audiencia seleccionada se utilizó para el objetivo de más de una aplicación, utiliza la lista desplegable ![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png) para filtrar los datos por aplicación.
 
-Click the **Overview dashboard** link ![pin_B.png](https://files.readme.io/b8c902aab2ca2f748dfe647dab3f52e66f6c161d173cb3cf53dbf4ecdc1edef1-46335667637009.png) to view the campaigns on the Overview dashboard:
+Haz clic en el enlace **dashboard general** ![pin_B.png](https://files.readme.io/b8c902aab2ca2f748dfe647dab3f52e66f6c161d173cb3cf53dbf4ecdc1edef1-46335667637009.png) para ver las campañas en dicho dashboard:
 
-* The dashboard will open in a new browser tab, automatically filtered by the relevant campaigns.
-* If the **Overview dashboard** link is disabled, you can enable it by selecting a single app from the drop-down list ![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png). Once the link is enabled, clicking it will take you to the Overview dashboard for the selected app.
+* El dashboard se abrirá en una nueva pestaña del navegador, filtrado automáticamente por las campañas relevantes.
+* Si el **enlace del dashboard general** está deshabilitado, puedes habilitarlo seleccionando una sola aplicación de la lista desplegable![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png). Una vez habilitado el enlace, al hacer clic en él, se accederá al dashboard general de la aplicación seleccionada.
 
-| Column | Description |
+| Columna | Descripción |
 | --- | --- |
-| <span id="cost"></span>Cost | Campaign cost during the selected timeframe (in total, then broken down by supported partner and campaign) |
-| <span id="revenue"></span>Revenue | Revenue attributed to the campaigns during the selected timeframe (in total, then broken down by supported partner and campaign) |
-| <span id="daily-reach"></span>Daily reach | The average number of unique users per day who saw ads from the campaign during the selected timeframe (as reported by the partner) |
+| <span id="cost"></span>Costo | Costo de la campaña durante el plazo seleccionado (en total, luego desglosado por partners y campaña compatibles) |
+| <span id="revenue"></span>Ingresos | Ingresos atribuidos a las campañas durante el período de tiempo seleccionado (en total, luego desglosados por partners y campañas compatibles) |
+| <span id="daily-reach"></span>Alcance diario | El número promedio de usuarios únicos por día que vieron anuncios de la campaña durante el período de tiempo seleccionado (según lo informado por el partner) |
 
-#### Data sources and availability
+#### Fuentes de datos y disponibilidad
 
-It's easier to understand the availability of **Campaign metrics** data when we take a look at where the data comes from:
+Es más fácil comprender la disponibilidad de los datos de **métricas de campaña** cuando observamos de dónde provienen los datos:
 
-* **Partner data:** Since you select the audience(s) to be targeted by specific campaigns through your media partners, only these partners are able to provide certain information:
-  * The connection of an audience to a campaign (in other words, the fact that a particular audience was used for targeting by that campaign)
-  * The number of unique users per day who saw ads from the campaign ("daily reach")
-* **AppsFlyer data:** Cost and revenue data is provided by AppsFlyer.
+* **Datos del partner:** si seleccionas la(s) audiencia(s) a las que se dirigirán campañas específicas a través de tus partners de medios, solo estos pueden proporcionar cierta información:
+  * La conexión de una audiencia con una campaña (en otras palabras, el hecho de que esa campaña utilizó una audiencia en particular para el targeting)
+  * La cantidad de usuarios únicos por día que vieron anuncios de la campaña ("alcance diario")
+* **Datos de AppsFlyer:** Los datos de costos e ingresos son proporcionados por AppsFlyer.
 
 <div id="partner-data-availability" />
 
-<Accordion title="Partner data availability">
+<Accordion title="Disponibilidad de datos de partners">
 
-Data is reported only for campaigns run with [supported partners](/docs/audiences-guide#campaign-metrics-basics).
+Los datos se reportan solo para las campañas que se ejecutan con [partners admitidos](/docs/audiences-guide#conceptos-básicos-de-métricas-de-campaña).
 
-* **Note:** Google Ads doesn't support the reporting of daily reach.
+* **Nota:** Google Ads no admite la generación de reportes de alcance diario.
 
 </Accordion>
 
 <div id="appsflyer-data-availability" />
 
-<Accordion title="AppsFlyer data availability">
+<Accordion title="Disponibilidad de datos de AppsFlyer">
 
-Cost and revenue data is available within the context of **Campaign metrics** if it is reported for your apps in other areas of AppsFlyer (for example, the Overview and Event dashboards).
+Los datos de costos e ingresos están disponibles en el contexto de las **métricas** de la campaña si se reportan para tus aplicaciones en otras áreas de AppsFlyer (por ejemplo, los paneles de control de información general y eventos).
 
-* Cost data requires a subscription to <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview">ROI360</Anchor>.
-* Revenue data requires that you have configured <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">ad revenue attribution</Anchor> and/or <Anchor target="_blank" href="/marketers/docs/roi360-revenue-attribution-overview">in-app event revenue attribution</Anchor>.
+* Los datos de costos requieren una suscripción a <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview">ROI360</Anchor>.
+* Los datos de ingresos requieren que hayas configurado la <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution">atribución de ingresos por publicidad</Anchor> y/o la <Anchor target="_blank" href="/marketers/es/docs/roi360-revenue-attribution-overview">atribución de ingresos de eventos in-app</Anchor>.
 
 </Accordion>
 
 <div id="why-dont-i-see-campaign-metrics-data-for-campaigns-run-with-supported-partners" />
 
-<Accordion title="Why don't I see Campaign metrics data for campaigns run with supported partners?">
+<Accordion title="¿Por qué no veo los datos de las métricas de campaña para las campañas que se ejecutan con partners compatibles?">
 
-Campaign metrics data is available only for:
+Los datos de métricas de campaña solo están disponibles para:
 
-* Campaigns that are connected to an audience.
-* Campaigns that are running on supported media partner sites.
-* Active campaigns within the main date range selected.
-* Campaigns that we receive install traffic from, within the date range selected on the Campaign Metrics filter.
-* Users configured for the partner connection that have permissions to receive campaign-level data. To view this data, change the user's permissions with the partner or use different credentials in the partner connection settings.
-
-</Accordion>
+* Campañas que están conectadas a una audiencia.
+* Campañas que se ejecutan en sitios de partners de medios compatibles.
+* Campañas activas dentro del rango de fechas principal seleccionado.
+* Campañas desde las que recibimos el tráfico de instalación, dentro del rango de fechas seleccionado en el filtro de métricas de campaña.
+* Usuarios configurados para la conexión de partners que tienen permisos para recibir datos a nivel de campaña. Para ver estos datos, cambia los permisos del usuario con el partner o utiliza diferentes credenciales en la configuración de conexión del partner.
 
 </Accordion>
 
-## Traits and limitations
+</Accordion>
 
-Please note the following traits and limitations.
+## Características y limitaciones
+
+Ten en cuenta las siguientes características y limitaciones.
 
 <div id="traits" />
 
-<Accordion title="Traits">
+<Accordion title="Características">
 
-| Trait | Supported | Remarks |
+| Caducado | Compatible | Observaciones |
 | --- | --- | --- |
-| Ad networks | **x** |  |
-| Agencies | **x** |  |
-| Agency transparency | **x** |  |
-| App-specific time zone | N/A |  |
-| App-specific currency | N/A |  |
-| Data protection | ✓ | Your audience data may be processed to support AI-powered Audiences capabilities. Your account data is never shared and is used only to improve internal models and predictions. |
-| Size limitations | N/A |  |
-| Organic data | ✓ | Included |
-| Non-organic data | ✓ | Included |
-| Data freshness | Daily UTC | <ul><li>Updates are pushed to partners on a daily basis.</li><li>The in-app event lists in the rule-builder update Daily.</li></ul> |
-| Historical data | ✓ | Audiences has access to app event data from 90 days prior to your Audiences subscription date (for clicks and impressions, it’s 31 days prior). The data is fully available once the backfill process is complete (which takes between 5 - 14 days). |
-| Account user access | ✓ | <ul><li>Some functions, like CSV download, setting S3, and Slack partner connections require <Anchor target="_blank" href="/marketers/docs/user-management">user account permission to access raw data</Anchor>.</li><li>As a security measure, if the account of a user who created an audience has been deleted, AppsFlyer stops uploading that audience's data to the media partner(s). To check the upload status of your audiences, go to **Engage** > **Audiences**. To reactivate the audience, duplicate it and configure the [split audience](/docs/audiences-guide#audience-split-and-control-groups) settings.</li></ul> |
+| Redes de publicidad | . |  |
+| Agencias | . |  |
+| Transparencia de agencias | . |  |
+| Zona horaria específica de la aplicación | N/D |  |
+| Moneda específica de la aplicación | N/D |  |
+| Protección de datos | ✓ | Los datos de tu audiencia pueden procesarse para respaldar las capacidades de Audiences impulsadas por IA. Los datos de tu cuenta nunca se comparten y se utilizan únicamente para mejorar los modelos internos y las predicciones. |
+| Limitaciones de tamaño | N/D |  |
+| Datos no orgánicos | ✓ | Incluidos |
+| Datos orgánicos | ✓ | Incluidos |
+| Actualización de datos | Diaria UTC | <ul><li>Las actualizaciones se envían a los partners diariamente</li><li>Las listas de eventos in-app en el creador de reglas se actualizan diariamente.</li></ul> |
+| Datos históricos | ✓ | Audiences tiene acceso a los datos de eventos in-app de 90 días antes de la fecha de suscripción de Audiences (para clics e impresiones, es 31 días antes). Los datos están completamente disponibles una vez que se completa el proceso de rellenado (que puede tardar hasta 2 semanas). |
+| Acceso de usuario a la cuenta | ✓ | <ul><li>Algunas funciones, como la descarga de CSV, la configuración de S3 y las conexiones de partners de Slack requieren permiso de cuenta de usuario para acceder al raw data.</li><li>Como medida de seguridad, si se ha eliminado la cuenta de un usuario que creó una audiencia, AppsFlyer deja de cargar los datos de esa audiencia a los partners de medios. Para verificar el estado de carga de tus audiencias, ve a **Engage** > **Audiences**. Para reactivar la audiencia, duplícala y configura los ajustes de [audiencia dividida](/docs/audiences-guide#audience-split-and-control-groups).</li></ul> |
 
 </Accordion>
 
 <div id="limitations" />
 
-<Accordion title="Limitations">
+<Accordion title="Limitaciones">
 
-| Limitations | Remarks |
+| Limitaciones | Observaciones |
 | --- | --- |
-| Attribution data | Clicks and impressions data only contains devices that have an advertising\_id/idfa on their original click URL. The devices of users from SRNs, which don't use external attribution links, are not included in the click data for audiences. |
-| Audience creation | <ul><li>Audience names can't be changed on the connected partners’ side.</li><li>When creating an audience, only the top 100 events display. However, when you begin entering an event name, all events display.</li><li>When using the Total Revenue filter within the query builder, the estimated audience size is not available. This doesn't affect the audience creation process.</li></ul> |
-| Connections | Creating duplicate partner connections (connections with the same account / login / property ID / etc.) is not supported and will result in errors. |
-| Download audience CSV file | Download file size is limited to 5 million records. |
-| Imported audiences | You can't combine imported audiences with other audiences or rulesets. |
-| Inactive audiences | Audiences that are inactive will be paused. This means that they will no longer be calculated or uploaded to connected partners. The audience can always be "unpaused" by clicking Upload now. This will resume audience calculations and automatic uploads to partners as before. |
-| Not supported | The following are not supported by AppsFlyer Audiences:<ul><li><Anchor target="_blank" href="/marketers/docs/audiences-partner-connections#google-ads">Google Ads</Anchor>: UAC campaigns aren't supported. Other campaign types are supported.</li><li>Windows phone OS</li><li>Nested event values</li></ul> |
-| Number of audiences | <ul><li>You can create up to 100 audiences per day.</li><li>You can have up to 100 active Custom/Suggested audiences at a time.</li><li>You can have up to 500 active imported audiences at a time.</li></ul> |
-| Rulesets | <ul><li>Within rulesets, in-app events are limited to 100 unique values per attribute. For example, if the event is "purchase" and the attribute is "content-type" there can only be 100 (or fewer) possible content types. However, numeric values are unlimited. If more values per attribute are required, contact your CSM or send an email to hello@appsflyer.com.</li><li>Only integer (whole) numbers are supported in numeric ruleset filters. Float type (decimal) numbers are not supported. Example: In-app revenue is equal to $1 USD is supported but $1.5 USD is not.</li></ul> |
-| S2S reporting | Ensure that user identifiers (IDFV or IDFA) are sent in the S2S in-app events payload and that the IDFV or IDFA is consistent with AppsFlyer SDK collection. This will ensure that data isn’t missed and that audience calculations are accurate. |
+| Datos de atribución | Los datos de clics e impresiones solo contienen dispositivos que tienen un advertising\_id/idfa en su URL de clic original. Los dispositivos de los usuarios de las SRN, que no utilizan enlaces de atribución externos, no se incluyen en los datos de clics para las audiencias. |
+| Creación de audiencia | <ul><li>Los nombres de la audiencia no se pueden cambiar en el lado de los partners conectados.</li><li>Al crear una audiencia, solo se muestran los 100 eventos principales. Sin embargo, cuando comienzas a ingresar un nombre de evento, se muestran todos los eventos.</li><li>Cuando se utiliza el filtro Ingresos totales dentro del creador de query, el tamaño estimado de la audiencia no está disponible. Esto no afecta el proceso de creación de una audiencia.</li></ul> |
+| Conexiones | No se admite la creación de conexiones de partners duplicadas (conexiones con la misma cuenta / inicio de sesión / ID de propiedad / etc.) y resultará en errores. |
+| Descargar archivo CSV de audiencia | El archivo de descarga tiene un límite de 5 millones de registros. |
+| Audiencias importadas | No puedes combinar audiencias importadas con otras audiencias o conjuntos de reglas. |
+| Audiencias activas | Las audiencias que estén inactivas se pausarán. Esto significa que ya no se calcularán ni se cargarán a partners conectados. La audiencia siempre se puede “reanudar” haciendo clic en Cargar ahora. Esto reanudará los cálculos y las cargas automáticas de la audiencia a los partners como antes. |
+| No compatible | Lo siguiente no es compatible con AppsFlyer Audiences:<ul><li><Anchor target="_blank" href="/marketers/es/docs/audiences-partner-connections#google-ads">Google Ads</Anchor>: Las campañas UAC no son compatibles. Se admiten otros tipos de campaña.</li><li>Windows phone OS</li><li>Valores de eventos anidados</li></ul> |
+| Número de audiencias | <ul><li>Puedes crear hasta 100 audiencias por día.</li><li>Puedes tener hasta 100 audiencias personalizadas/sugeridas activas a la vez.</li><li>Puedes tener hasta 500 audiencias importadas activas a la vez.</li></ul> |
+| Conjuntos de reglas | <ul><li>Dentro de los conjuntos de reglas, los eventos in-app se limitan a 100 valores únicos por atributo. Por ejemplo, si el evento es "purchase" y el atributo es "content-type", solo puede haber 100 (o menos) tipos de contenido posibles. Sin embargo, los valores numéricos son ilimitados. Si se requieren más valores por atributo, contacta con tu CSM o envía un correo electrónico a hello@appsflyer.com.</li><li>Solo se admiten números enteros (completos) en los filtros de conjuntos de reglas numéricos. No se admiten números de tipo flotante (decimales). Ejemplo: Los ingresos in-app de $1 USD se admiten, pero los de $1,5 USD no.</li></ul> |
+| Reporte S2S | Asegúrate de que los identificadores de usuario (IDFV o IDFA) se envíen en la carga útil de eventos in-app S2S y que el IDFV o IDFA sea consistente con la recopilación del SDK de AppsFlyer. Esto asegurará que no se pierda ningún dato y que los cálculos de la audiencia sean precisos. |
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/incrementality-for-remarketing-overview">Incrementality guide</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/run-an-incrementality-for-remarketing-experiment">Running an Incrementality experiment</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/incrementality-for-remarketing-overview">Guía de incrementalidad</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/run-an-incrementality-for-remarketing-experiment">Ejecución de un experimento de incrementalidad</Anchor>
 
-<div data-zendesk-anchors="h_01HBQMA619CKEESZD3ADSP3PSB=audiences-basics h_01HBQMA619KMJFVX7Y8MXMMQ6N=audience-split-and-incrementality-testing h_01HBQMA619118PWF4TA98C4X0B=get-started h_01HBQMA619DBX2C7DRY7MSV3P9=create-and-manage-audiences h_01HBQMA6195AT0YD7783V6BQR6=create-a-custom-audience h_01JXA0GDBMBX541W6P63XXDVKQ=notes h_01HBQMA619F2P2CVPCSMX9RTKB=create-a-suggested-audience h_01HBQMA619RBRYNMVMNQ839196=example-use-case h_01JXA0WJFMSHA710CTNF84BPQ5=notes-1 h_01HBQMA619ATHVJARHYXQNY955=import-an-audience h_01HBQMA6193FFM66XDTB6WYX06=connect-an-audience-to-media-partners user-identifier%E2%80%94device-id-vs-customer-id=user-identifier-device-id-vs-customer-id h_01HBQMA61A192YFES8TK1347FJ=user-identifier-device-id-vs-customer-id 01ECF4ZD0NWN5QQPP88ZKW0578=example-device-id-vs-cuid 01ECF4ZD0WNEF6FRPF1NJHZ9WR=audience-split-and-control-groups h_01HBQMA61ANM52HBDAFA5QZPFN=manage-audiences h_01HT04HW2VBB9ZY28V5KQ5K2AJ=pause h_01HBQMA61ANB4K0TCJ4WBHMV8D=all-about-rulesets h_01HBQMA61A30YGERD8Z6DXV3KA=audience-segmentation-rulesets h_01HBQMA61AF7V3M0Y8ZN1R0HZC=ruleset-examples h_01HBQMA61ATV5MHN35XMTJ8MEH=example-location-based-rule h_01HBQMA61ATB7NYKBP7CD6SZZH=example-user-attributes-based-rule h_01HBQMA61APWHKS4EP2NKABSQD=example-revenue 01ECF4ZD0MJ8HVQCC54YHFE6DX=example-owned-media-filter h_01JRAGFYEQ28R6RQNPEK6WZV2F=example-remarketing h_01HBQMA61AEKT6N97SJBW4B01C=ruleset-filters h_01HBQMA61A17Y4928D2ZDGAEXV=events h_01HBQMA61BK8NZF79KDPK0JBX6=inapp-events h_01K5EHBY8ESJFS3GKJW1RCB99X=contains-does-not-contain-logic h_01HBQMA61B4FGBE11W6BW2Z9AH=revenue::3358edf4 h_01HBQMA61BX9XQKBX3MAGYXC2Y=geo h_01HBQMA61B9DRMSNKJM3B0WBE1=owned-media h_01HBQMA61BC1G2VZSJEJF90T7Q=device h_01HBQMA61BF2N8FN6TJ3JD6YXC=attribution h_01HBQMA61CKVMYYS8GG6CP72WD=user-attributes h_01HBQMA61C7K8R4AR13D4WHTHX=combine-rulesets h_01HBQMA61C6WS72DQ8FXVR0KVW=create-and-manage-partner-connections h_01HBQMA61CRDF41WBYCDQ91M3R=create-a-new-connection h_01HBQMA61CXZYEW2R12KS99X2N=manage-connections h_01HBQMA61C6WPFFR1F8P0HE4KA=dashboard-and-metrics h_01HBQMA61CMPNC9TYAW82ED18Q=audiences-dashboard h_01HBQMA61CWHR9GDANKT7P6Z27=campaign-metrics h_01HBQMA61CMF3WZFPXKY89076K=metrics-hash h_01HBQMA61C4D5HFCDY83HNF5K7=campaign-metrics-basics h_01HBQMA61DW9Z84G8CH1RNY2RF=summary-view h_01K3R8C7GK77FNVZ3N0C3XZGYG=summary-view h_01HBQMA61D3VHDKD103EMN61YH=detailed-view h_01HBQMA61DB595QKRTPE97F94E=data-sources-and-availability h_01HBQMA61DCV0M97GMXRA1A30F=partner-data-availability h_01HBQMA61DXNR275AT9SK0G32S=appsflyer-data-availability h_01HBQMA61DH9P5B1H5GYXQ9CCN=why-dont-i-see-campaign-metrics-data-for-campaigns-run-with-supported-partners h_01HBQMA61DT46P43FNSRC1KGAX=traits-and-limitations h_01HBQMA61DYHF0REXYKDQBDXP5=traits h_01HBQMA61D28F5RG2WXT801XXZ=limitations h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=see-also" />
+<div data-zendesk-anchors="audiences-basics=conceptos-b%C3%A1sicos-de-audiences h_01HBQMA619CKEESZD3ADSP3PSB=conceptos-b%C3%A1sicos-de-audiences audience-split-and-incrementality-testing=pruebas-de-incrementalidad-y-divisi%C3%B3n-de-audiencia h_01HBQMA619KMJFVX7Y8MXMMQ6N=pruebas-de-incrementalidad-y-divisi%C3%B3n-de-audiencia get-started=empezar h_01HBQMA619118PWF4TA98C4X0B=empezar create-and-manage-audiences=crear-y-gestionar-las-audiencias h_01HBQMA619DBX2C7DRY7MSV3P9=crear-y-gestionar-las-audiencias h_01HBQMA6195AT0YD7783V6BQR6=create-a-custom-audience h_01JXA0GDBMBX541W6P63XXDVKQ=caracter%C3%ADsticas h_01HBQMA619F2P2CVPCSMX9RTKB=create-a-suggested-audience h_01HBQMA619RBRYNMVMNQ839196=ejemplo-de-caso-de-uso h_01JXA0WJFMSHA710CTNF84BPQ5=caracter%C3%ADstica h_01HBQMA619ATHVJARHYXQNY955=import-an-audience h_01HBQMA6193FFM66XDTB6WYX06=connect-an-audience-to-media-partners user-identifier%E2%80%94device-id-vs-customer-id=user-identifier-device-id-vs-customer-id h_01HBQMA61A192YFES8TK1347FJ=user-identifier-device-id-vs-customer-id 01ECF4ZD0NWN5QQPP88ZKW0578=notas-relacionadas-con-eventos-in-app- 01ECF4ZD0WNEF6FRPF1NJHZ9WR=audience-split-and-control-groups h_01HBQMA61ANM52HBDAFA5QZPFN=manage-audiences h_01HT04HW2VBB9ZY28V5KQ5K2AJ=pause all-about-rulesets=todo-sobre-los-conjuntos-de-reglas h_01HBQMA61ANB4K0TCJ4WBHMV8D=todo-sobre-los-conjuntos-de-reglas h_01HBQMA61A30YGERD8Z6DXV3KA=audience-segmentation-rulesets h_01HBQMA61AF7V3M0Y8ZN1R0HZC=ruleset-examples h_01HBQMA61ATV5MHN35XMTJ8MEH=ejemplo-regla-basada-en-la-ubicaci%C3%B3n h_01HBQMA61ATB7NYKBP7CD6SZZH=ejemplo-regla-basada-en-atributos-de-usuario h_01HBQMA61APWHKS4EP2NKABSQD=ejemplo-ingresos 01ECF4ZD0MJ8HVQCC54YHFE6DX=ejemplo-filtro-de-medios-propios h_01JRAGFYEQ28R6RQNPEK6WZV2F=ejemplo-remarketing h_01HBQMA61AEKT6N97SJBW4B01C=ruleset-filters h_01HBQMA61A17Y4928D2ZDGAEXV=events h_01HBQMA61BK8NZF79KDPK0JBX6=inapp-events h_01K5EHBY8ESJFS3GKJW1RCB99X=contains-does-not-contain-logic h_01HBQMA61B4FGBE11W6BW2Z9AH=revenue::3358edf4 h_01HBQMA61BX9XQKBX3MAGYXC2Y=geo h_01HBQMA61B9DRMSNKJM3B0WBE1=owned-media h_01HBQMA61BC1G2VZSJEJF90T7Q=device h_01HBQMA61BF2N8FN6TJ3JD6YXC=attribution h_01HBQMA61CKVMYYS8GG6CP72WD=user-attributes h_01HBQMA61C7K8R4AR13D4WHTHX=combine-rulesets create-and-manage-partner-connections=crear-y-administrar-conexiones-de-partners h_01HBQMA61C6WS72DQ8FXVR0KVW=crear-y-administrar-conexiones-de-partners h_01HBQMA61CRDF41WBYCDQ91M3R=create-a-new-connection h_01HBQMA61CXZYEW2R12KS99X2N=manage-connections dashboard-and-metrics=dashboard-y-m%C3%A9tricas h_01HBQMA61C6WPFFR1F8P0HE4KA=dashboard-y-m%C3%A9tricas h_01HBQMA61CMPNC9TYAW82ED18Q=audiences-dashboard h_01HBQMA61CWHR9GDANKT7P6Z27=campaign-metrics metrics-hash=hash-de-m%C3%A9tricas h_01HBQMA61CMF3WZFPXKY89076K=hash-de-m%C3%A9tricas campaign-metrics-basics=conceptos-b%C3%A1sicos-de-m%C3%A9tricas-de-campa%C3%B1a h_01HBQMA61C4D5HFCDY83HNF5K7=conceptos-b%C3%A1sicos-de-m%C3%A9tricas-de-campa%C3%B1a summary-view=resumen h_01HBQMA61DW9Z84G8CH1RNY2RF=resumen h_01K3R8C7GK77FNVZ3N0C3XZGYG=resumen detailed-view=vista-detallada h_01HBQMA61D3VHDKD103EMN61YH=vista-detallada data-sources-and-availability=fuentes-de-datos-y-disponibilidad h_01HBQMA61DB595QKRTPE97F94E=fuentes-de-datos-y-disponibilidad h_01HBQMA61DCV0M97GMXRA1A30F=partner-data-availability h_01HBQMA61DXNR275AT9SK0G32S=appsflyer-data-availability h_01HBQMA61DH9P5B1H5GYXQ9CCN=why-dont-i-see-campaign-metrics-data-for-campaigns-run-with-supported-partners traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01HBQMA61DT46P43FNSRC1KGAX=caracter%C3%ADsticas-y-limitaciones h_01HBQMA61DYHF0REXYKDQBDXP5=traits h_01HBQMA61D28F5RG2WXT801XXZ=limitations h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=consulta-tambi%C3%A9n" />

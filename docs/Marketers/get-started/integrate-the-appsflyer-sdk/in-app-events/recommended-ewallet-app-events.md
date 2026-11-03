@@ -1,5 +1,5 @@
 ---
-title: Recommended eWallet app events
+title: Eventos de aplicación recomendados para eWallet
 metadata:
   keywords:
     - Advertisers
@@ -14,267 +14,266 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-06-10T11:36:07Z'
-  edited_at: '2023-12-04T11:47:33Z'
+  edited_at: '2026-08-12T12:01:18Z'
   id: 4402425586065
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4402425586065-Recommended-eWallet-app-events
+  url: https://support.appsflyer.com/hc/es/articles/4402425586065
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eWallet app.
+> **En resumen:** mida la calidad de tus usuarios a lo largo de su recorrido registrando estos eventos in-app sugeridos para tu aplicación eWallet.
 
 ## <Image alt="InApp_Events_eWallet.png" src="https://files.readme.io/4d2ed4994bbe8e8eca7009b8ec8f5dbf22a626421a7a1efb213ddb4a12c7b487-4402543191825.png" width="67px" /> eWallet
 
-eWallet apps enable users to make digital payments or purchases from their devices. The typical events that we suggest recording include adding funds, viewing content, selecting merchants, viewing promotions, and completing transactions.
+Las aplicaciones de monedero electrónico permiten a los usuarios realizar pagos o compras digitales desde sus dispositivos. Los eventos típicos que sugerimos registrar incluyen agregar fondos, ver contenido, seleccionar comerciantes, ver promociones y completar transacciones.
 
-Recording these events can help you determine:
+Registrar estos eventos puede ayudarte a determinar:
 
-* What type of content and promotions are popular with users, and then offer them similar or related products
-* What are the most popular types of services users use eWallet for when making bill payments
-* Which merchants are the most popular
+* Qué tipo de contenido y promociones son populares entre los usuarios y luego les ofrecen productos similares o relacionados
+* ¿Cuáles son los tipos de servicios más populares para los que los usuarios utilizan eWallet cuando pagan sus facturas?
+* Qué comerciantes son los más populares
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ewallet">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ewallet&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ewallet">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ewallet&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Puedes encontrar instrucciones detalladas para tu desarrollador en el **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.**
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para obtener más información sobre la grabación de eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía de eventos in-app</Anchor>.
 
 [![Flowchart_for_recommended_events e-Wallet_app_user_journey](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the eWallet vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de las estructuras de eventos que son típicas de la vertical de eWallet. Cada estructura incluye un nombre de evento predefinido y los parámetros del evento sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Learn how many users installed the app and completed the signup process and what signup methods your users prefer.
+Descubrir cuántos usuarios instalaron la aplicación y completaron el proceso de registro, y qué métodos de registro prefieren tus usuarios.
 
-**Trigger**
+**Disparador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | Email, Facebook, Google |
+| af\_registration\_method | El tipo de método de registro | Correo electrónico, Facebook, Google |
 
 </Accordion>
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Acceso (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Disparador**
 
-When the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="content-view-af_content_view" />
 
-<Accordion title="Content view (af_content_view)">
+<Accordion title="Vista de contenido (af_content_view)">
 
-**Purpose**
+**Finalidad**
 
-Determine the view rate of specific content. This event can help you:
+Determina la tasa de visualización de un contenido específico. Este evento puede ayudarte a:
 
-* Understand what type of content is most popular with your users, and then try to optimize your marketing campaigns
-* Correlate item views with merchants
+* Comprender qué tipo de contenido es el más popular entre tus usuarios y, a continuación, intenta optimizar tus campañas de marketing
+* Correlacionar las visualizaciones de artículos con las de los comerciantes
 
-**Trigger**
+**Disparador**
 
-When the user views a specific item or category content
+Cuando el usuario ve el contenido de un artículo o categoría específico
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| item | Type of item | cinema ticket |
-| merchant\_name | Name of merchant | cineplex |
+| Producto | Tipo de producto | entrada de cine |
+| merchant\_name | Nombre del vendedor | cineplex |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que incluye nombres de eventos personalizados y los parámetros de eventos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="wallet-complete-topup-wallet_complete_topup" />
 
-<Accordion title="Wallet complete top-up (wallet_complete_topup)">
+<Accordion title="Recarga completa de monedero digital (wallet_complete_topup)">
 
-**Purpose**
+**Finalidad**
 
-Top-up funds can be used to buy any package or any other service offered inside the app. Record this event and compare it with other data to learn more about your users. For example, you can learn what amounts users are willing to deposit into their accounts and then use the top-up amounts to target them with customized campaigns within their budgets.
+La recarga de fondos se puede usar para comprar cualquier paquete o cualquier otro servicio que se ofrezca dentro de la aplicación. Registra este evento y compáralo con otros datos para obtener más información sobre tus usuarios. Por ejemplo, puedes saber qué cantidades están dispuestas a depositar en sus cuentas y usar los montos de recarga para dirigirte a los usuarios con campañas personalizadas dentro de sus presupuestos de recarga.
 
-**Trigger**
+**Disparador**
 
-When the user completes the top-up from their bank or credit card to the eWallet app
+Cuando el usuario complete la recarga desde su banco o tarjeta de crédito a la aplicación eWallet
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| top\_up\_amount | Amount of payment | 100 |
-| top\_up\_method | Type of payment method | bank transfer |
+| top\_up\_amount | Total del pago | 100 |
+| top\_up\_method | Tipo de método de pago | transferencia bancaria |
 
 </Accordion>
 
 <div id="payment-transaction-completed-payment_transaction_completed" />
 
-<Accordion title="Payment transaction completed ( payment_transaction_completed )">
+<Accordion title="Transacción de pago completada ( payment_transaction_completed )">
 
-**Purpose**
+**Finalidad**
 
-This event can help you:
+Este evento puede ayudarte a:
 
-* Highlight users who completed payment on a transaction.
-* Identify large transactions, and then retarget users who top-up with a large sum of money.
+* Resaltar los usuarios que completaron el pago de una transacción.
+* Identificar las transacciones grandes y, luego, volver a segmentar a los usuarios que hagan una recarga con una gran suma de dinero.
 
-**Trigger**
+**Disparador**
 
-When the transaction of a specific purchase is completed
+Cuando se completa la transacción de una compra específica
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| item | Item paid for | prepaid card reload |
-| quantity | Amount paid | 1 |
-| transaction\_amount | Amount of the transaction | 50 |
+| Producto | Artículo pagado | recarga de tarjeta prepaga |
+| cantidad | Total pagado | 1 |
+| transaction\_amount | Importe de la transacción | 50 |
 
 </Accordion>
 
 <div id="bill-payment-success-bill_payment_success" />
 
-<Accordion title="Bill payment success (bill_payment_success)">
+<Accordion title="Pago de facturas exitoso (bill_payment_success)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you determine the most popular type of service users use eWallet for when paying bills (for example, water bills, electricity bills, or credit card balances).
+Este evento puede ayudarte a determinar el tipo de servicio más popular para el que los usuarios utilizan eWallet para pagar sus facturas (por ejemplo, facturas de agua, facturas de electricidad o saldos de tarjetas de crédito).
 
-**Trigger**
+**Disparador**
 
-When the user is using eWallet to make payments, such as bills, or credit card statements, or cinema tickets
+Cuando el usuario utiliza la billetera electrónica para realizar pagos, como facturas, extractos de tarjetas de crédito o entradas de cine
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| merchant\_name | Name of merchant | Electricity provider |
-| payment\_amount | Amount paid | 100 |
-| category | Type of service | Electricity |
+| merchant\_name | Nombre del comerciante | Proveedor de electricidad |
+| payment\_amount | Total pagado | 100 |
+| categoría | Tipo de servicio | Electricidad |
 
 </Accordion>
 
 <div id="promo-promo" />
 
-<Accordion title="Promo (promo)">
+<Accordion title="Promoción (promoción)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you determine:
+Este evento puede ayudarte a determinar:
 
-* Whether the promotion being offered is popular with users
-* Whether the promotion helps with cross-selling additional products to users
+* Si la promoción que se ofrece es popular entre los usuarios
+* Si la promoción ayuda a la venta cruzada de productos adicionales a los usuarios
 
-**Trigger**
+**Disparador**
 
-When the user selects the promotion available within the app
+Cuando el usuario selecciona la promoción disponible en la aplicación
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| promo\_type | Type of promotion being offered | 30% off |
+| promo\_type | Tipo de promoción que se ofrece | 30% DE DESCUENTO |
 
 </Accordion>
 
 <div id="voucher-redeem-voucher_redeem" />
 
-<Accordion title="Voucher redeem (voucher_redeem)">
+<Accordion title="Canjeo de cupones (voucher_redeem)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you determine:
+Este evento puede ayudarte a determinar:
 
-* How many users redeem promotional codes
-* What sort of vouchers and discounts users prefer
+* Cuántos usuarios canjean códigos promocionales
+* Qué tipo de cupones y descuentos prefieren los usuarios
 
-**Trigger**
+**Disparador**
 
-When a user promotion code is redeemed
+Cuando se canjea un código de promoción de usuario
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| voucher\_ID | ID of the voucher | 1735103 |
-| merchant\_name | Name of merchant | cineplex |
+| voucher\_ID | ID del bono | 1735103 |
+| merchant\_name | Nombre del comerciante | cineplex |
 
 </Accordion>
 
 <div id="select-merchant-select_merchant" />
 
-<Accordion title="Select merchant ( select_merchant )">
+<Accordion title="Selecciona un comerciante ( select_merchant )">
 
-**Purpose**
+**Finalidad**
 
-This event can help you determine which merchant is the most popular and then use this data to try and get similar merchants to join the eWallet service.
+Este evento puede ayudarte a determinar qué comerciante es el más popular y luego usar estos datos para intentar que comerciantes similares se unan al servicio eWallet.
 
-**Trigger**
+**Disparador**
 
-When the user selects a merchant from the list of available merchants
+Cuando el usuario selecciona un comerciante de la lista de comerciantes disponibles
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| merchant\_name | Name of merchant | cineplex |
-| type | Type of business | cinema |
-| amount | Currency used by the advertiser | USD |
-| merchant\_ID | Specific ID attached to a business that tells the payment processing systems involved in a transaction where to send which funds | 123456 |
+| merchant\_name | Nombre del comerciante | cineplex |
+| tipo | Tipo de negocio | cine |
+| cantidad | Moneda utilizada por el anunciante | USD (Dólar estadounidense) |
+| merchant\_ID | ID específico adjunto a una empresa que indica a los sistemas de procesamiento de pagos involucrados en una transacción a dónde enviar qué fondos | 123456 |
 
 </Accordion>
 
 <div id="scan-barcode-success-scan_barcode_success" />
 
-<Accordion title="Scan barcode success ( scan_barcode_success )">
+<Accordion title="El escaneo del código de barras se realizó correctamente ( scan_barcode_success )">
 
-**Purpose**
+**Finalidad**
 
-This event can help you:
+Este evento puede ayudarte a:
 
-* Understand when a user completes a specific transaction with a merchant
-* Determine which merchants are the most popular
+* Comprende cuándo un usuario completa una transacción específica con un comerciante
+* Determina qué comerciantes son los más populares
 
-**Trigger**
+**Disparador**
 
-When the user scans the QR code from each merchant that they visited using the eWallet app
+Cuando el usuario escanea el código QR de cada comerciante que visitó mediante la aplicación eWallet
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| merchant\_name | Name of merchant | cineplex |
-| merchant\_ID | Specific ID attached to a business that tells the payment processing systems involved in a transaction where to send which funds | 123456 |
+| merchant\_name | Nombre del comerciante | cineplex |
+| merchant\_ID | ID específico adjunto a una empresa que indica a los sistemas de procesamiento de pagos involucrados en una transacción a dónde enviar qué fondos | 123456 |
 
 </Accordion>
 
-<div data-zendesk-anchors="ewallet=-ewallet h_01HGTAEVWFZXCA7AV0P35W992F=-ewallet h_01HGTAEVWFR4QS6XAT1T28N1R5=important h_01HGTAEVWF8SVYTQMQ12219HX0=recommended-structures-for-predefined-events h_01HGTAEVWFBA3CD7ZA40VCER95=complete-registration-af_complete_registration h_01HGTAEVWGDBN8B3P2YHQJ5RYF=login-af_login h_01HGTAEVWGYFYEZBD3ZED7GGFG=content-view-af_content_view h_01HGTAEVWG39P9A84P926BG3VE=recommended-structures-for-custom-events h_01HGTAEVWGNYC5Z0ACHV8CFVNQ=wallet-complete-topup-wallet_complete_topup h_01HGTAEVWG36K4V4Z0NN8QYDNV=payment-transaction-completed-payment_transaction_completed h_01HGTAEVWG136M86GM1JPV74RH=bill-payment-success-bill_payment_success h_01HGTAEVWG34EXM28GW2ZN0NRC=promo-promo h_01HGTAEVWG0EHESWPQHCX4P3SH=voucher-redeem-voucher_redeem h_01HGTAEVWGKGC7N8ZB0MMQJ4YE=select-merchant-select_merchant h_01HGTAEVWG20101JC5VVK29Y0E=scan-barcode-success-scan_barcode_success" />
+<div data-zendesk-anchors="ewallet=-ewallet h_01HGTAEVWFZXCA7AV0P35W992F=-ewallet h_01HGTAEVWFR4QS6XAT1T28N1R5=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAEVWF8SVYTQMQ12219HX0=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAEVWFBA3CD7ZA40VCER95=complete-registration-af_complete_registration h_01HGTAEVWGDBN8B3P2YHQJ5RYF=login-af_login h_01HGTAEVWGYFYEZBD3ZED7GGFG=content-view-af_content_view recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAEVWG39P9A84P926BG3VE=estructuras-recomendadas-para-eventos-personalizados h_01HGTAEVWGNYC5Z0ACHV8CFVNQ=wallet-complete-topup-wallet_complete_topup h_01HGTAEVWG36K4V4Z0NN8QYDNV=payment-transaction-completed-payment_transaction_completed h_01HGTAEVWG136M86GM1JPV74RH=bill-payment-success-bill_payment_success h_01HGTAEVWG34EXM28GW2ZN0NRC=promo-promo h_01HGTAEVWG0EHESWPQHCX4P3SH=voucher-redeem-voucher_redeem h_01HGTAEVWGKGC7N8ZB0MMQJ4YE=select-merchant-select_merchant h_01HGTAEVWG20101JC5VVK29Y0E=scan-barcode-success-scan_barcode_success" />

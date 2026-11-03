@@ -1,5 +1,5 @@
 ---
-title: Revenue ETL reports
+title: Reportes de ROI360 Revenue ETL en Data Locker
 metadata:
   keywords:
     - Marketers
@@ -16,90 +16,91 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2023-06-25T16:57:02Z'
-  edited_at: '2026-05-14T15:39:31Z'
+  edited_at: '2026-08-12T11:49:01Z'
   id: 16464765619985
-  locale: en-us
+  locale: es
   section: Revenue analysis
   section_id: 6551069075089
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/16464765619985-Revenue-ETL-reports
+  url: https://support.appsflyer.com/hc/es/articles/16464765619985
 ---
-> **At a glance:** Learn about ROI360 revenue reports, their sources, how they are generated, when they are available, and how you can access them. Learn more about the fields and structure of the reports by downloading the data sample.
+> **En resumen:** Obtén información sobre los reportes de ingresos de ROI360, sus fuentes, cómo se generan, cuándo están disponibles y cómo puedes acceder a ellos. Para obtener más información sobre los campos y la estructura de los reportes, descarga la muestra de datos.
 
 ## Revenue ETL
 
-With ROI360 Revenue ETL, your revenue data is sent via Data Locker to cloud storage for loading into your BI systems.
+Con ROI360 Revenue ETL, tus datos de ingresos se envían a través de Data Locker al almacenamiento en la nube para cargarlos en tus sistemas de BI.
 
-The following table shows the available revenue reports. **Note**: With the exception of the Legacy ad revenue [single version] reports, all reports require an ROI360 Advanced package subscription.
+La siguiente tabla muestra los reportes de ingresos disponibles. **Nota**: Con la excepción de los reportes de ingresos por publicidad heredados [versión única], todos los reportes requieren una suscripción al paquete ROI360 Advanced.
 
-| Report | Integration type | Description | Data freshness |
+| Reporte | Tipo de integración | Descripción | Actualización de datos |
 | --- | --- | --- | --- |
-| [Legacy ad revenue [single version]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<ul><li>Attributed ad revenue [single version x+1]</li><li>Organic ad revenue [single version x+1]</li><li>Retargeting ad revenue [single version x+1]</li></ul> | <ul><li>Impression-level (via SDK)</li><li>Device-level (via S2S API)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains ad revenue data.</li><li>Single version (no further data updates).</li><li>If there are both API and SDK integrations, reports contain only API data.</li></ul> | <ul><li>Daily (Available on Day x+1) <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#data-freshness">Learn more</Anchor></li></ul> |
-| [Ad revenue [versioned]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<ul><li>Attributed ad revenue [versioned]</li><li>Organic ad revenue [versioned]</li><li>Retargeting ad revenue [versioned]</li></ul> | <ul><li>Impression-level (via SDK)</li><li>Device-level (via S2S API)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains the most up-to-date ad revenue data.</li><li><Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#version-folders">Versioned</Anchor></li></ul> | <ul><li>Intraday. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#data-freshness">Learn more</Anchor></li><li>Data updates from 4 hours to 14 days after the ad impression.</li></ul> |
-| [Ad revenue [SDK impression level]](/docs/revenue-etl-reports#impression-level-report) | <ul><li>Impression-level (via SDK)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains ad revenue SDK data.</li><li>Provides maximum data freshness and granularity.</li></ul> | Hourly. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#data-freshness">Learn more</Anchor> |
-| [Transaction-level stores revenue](/docs/revenue-etl-reports#transactionlevel-stores-revenue-report) | ROI360 IAP and subscription revenue integration | <ul><li>Contains ROI360 validated in-app purchase and subscription raw data at the transaction level.</li><li>Provides maximum data freshness and data granularity.</li><li>Includes unique ROI360 monetization-related data and net revenue.</li></ul> | Hourly |
-| [Device-level stores revenue [versioned]](/docs/revenue-etl-reports#devicelevel-stores-revenue-report) | ROI360 IAP and subscription revenue integration | <ul><li>Contains ROI360 validated in-app purchase and subscription raw data at the device level.</li><li>Includes unique ROI360 net revenue data.</li></ul> | Every 8 hours |
+| [Ingresos por publicidad [versionados]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<ul><li>Ingresos por publicidad atribuidos [versión única x+1]</li><li>Ingresos por publicidad orgánicos [versión única x+1]</li><li>Ingresos por publicidad de retargeting [versión única x+1]</li></ul> | <ul><li>Nivel de impresión (por SDK)</li><li>Nivel de dispositivo (por API S2S)</li><li>Nivel de impresión (por SDK) con nivel de dispositivo (por API S2S)</li></ul> | <ul><li>Contiene datos de ingresos por publicidad.</li><li>Versión única (sin más actualizaciones de datos).</li><li>Si hay integraciones de API y SDK, los reportes solo contienen datos de API.</li></ul> | <ul><li>Diariamente (disponible el día x+1) <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#data-freshness">Aprender más</Anchor></li></ul> |
+| [Ingresos por publicidad antigua [versión única]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<ul><li>Ingresos por publicidad atribuidos [versionado]</li><li>Ingresos orgánicos por publicidad [versionado]</li><li>Ingresos por publicidad de retargeting [versionado]</li></ul> | <ul><li>Nivel de impresión (por SDK)</li><li>Nivel de dispositivo (por API S2S)</li><li>Nivel de impresión (por SDK) con nivel de dispositivo (por API S2S)</li></ul> | <ul><li>Contiene los datos de ingresos por publicidad más actualizados.</li><li><Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers#version-folders">Versionado</Anchor></li></ul> | <ul><li>Intradía. <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#data-freshness">Aprender más</Anchor></li><li>Los datos se actualizan entre 4 horas y 14 días después de la impresión del anuncio.</li></ul> |
+| [Ingresos por publicidad atribuidos [nivel de impresión del SDK]](/docs/revenue-etl-reports#impression-level-report) | <ul><li>Nivel de impresión (por SDK)</li><li>Nivel de impresión (por SDK) con nivel de dispositivo (por API S2S)</li></ul> | <ul><li>Contiene datos del SDK de ingresos por publicidad.</li><li>Proporciona la máxima actualización y granularidad de los datos.</li></ul> | Cada hora. <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#data-freshness">Aprender más</Anchor> |
+| [Ingresos de tiendas a nivel de transacción](/docs/revenue-etl-reports#transactionlevel-stores-revenue-report) | Integración de ingresos por suscripción e IAP de ROI360 | <ul><li>Contiene raw data de compras in-app y suscripciones validados por ROI360 a nivel de transacción.</li><li>Proporciona la máxima frescura y granularidad de los datos.</li><li>Incluye datos e ingresos netos únicos relacionados con la monetización del ROI360.</li></ul> | Por hora |
+| [Ingresos de tiendas a nivel de dispositivo [versionados]](/docs/revenue-etl-reports#devicelevel-stores-revenue-report) | Integración de ingresos por suscripción e IAP de ROI360 | <ul><li>Contiene raw data de compras in-app y raw data de suscripciones validados por ROI360 a nivel de dispositivo.</li><li>Incluye datos únicos de ingresos netos de ROI360.</li></ul> | Cada 8 horas |
 
-## Reports
+## Reportes
 
-Details about the different reports—how they work, how to subscribe to them, and how to access them—can be found in the sections that follow.
+Los detalles sobre los diferentes reportes (cómo funcionan, cómo suscribirse a ellos y cómo acceder a ellos) se encuentran en las secciones siguientes.
 
 <div id="ad-revenue-single-version-report-device-level" />
 
-<Accordion title="[Legacy] Ad revenue (single version)">
+<Accordion title="[Heredado] Ingresos por publicidad (versión única)">
 
-The report shows a single version of ad revenue data of one day aggregated to the device level. The report is available on day X+1 (X is the day of the revenue event occurrence).
+El reporte muestra una versión única de los datos de ingresos por publicidad de un día agregados al nivel del dispositivo. El reporte está disponible el día X+1 (X es el día en que se produjo el evento de ingresos).
 
-**Note:** Separate reports provide the organic and retargeting revenue data. These reports are identical in structure and availability.
+**Nota:** Los reportes separados proporcionan los datos de ingresos orgánicos y de retargeting. Estos reportes son idénticos en estructura y disponibilidad.
 
-<span id="download-the-report-data-sample"></span>[Download the Ad revenue single version report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vSuZYSPuAWIG-MappxQDIT3sl8UmN6MLKP2SKsbREekVAvKSHuUAUAtUE6JapanANJbKsTzCOID8z7G/pub?output=xlsx).
+<span id="download-the-report-data-sample"></span>Descarga el ejemplo de datos del reporte de la versión única de ingresos por publicidad.
 
-#### Data sources
+#### Fuentes de datos
 
-Depending on your ad revenue partner integration type, the report data can originate from either:
+Según el tipo de integración de partners que genere ingresos por publicidad, los datos del reporte pueden proceder de una de las siguientes maneras:
 
-* **SDK**: Impression-level data payloads sent by the ROI360 Ad Revenue SDK connector.
-* **S2S:** Device-level reports pulled by an API request from partners (mediation or monetization networks).
+* **SDK**: Cargas útiles de datos a nivel de impresión enviadas por el conector SDK de ingresos por publicidad de ROI360 Ad.
+* **S2S:** Reportes a nivel de dispositivo obtenidos mediante una solicitud de API de los partners (redes de mediación o monetización).
 
-To learn how to set the integration type, see: Connect to ad revenue integrated partners.
+Para obtener información sobre cómo configurar el tipo de integración, consulta: Conéctate a partners integrados en los ingresos por publicidad.
 
-#### Data flow
+#### Flujo de datos
 
-1. **Data ingestion:** The report can originate from the ad revenue SDK connector or S2S API request (see the section above).
-2. **Data processing**: AppsFlyer ROI360 Ad Revenue performs the following:
+1. **Ingestión de datos:** El reporte puede provenir del conector del SDK de ingresos por publicidad o de la solicitud de API S2S (consulta la sección anterior).
+2. **Procesamiento de datos**: Los ingresos por publicidad de ROI360 de AppsFlyer realizan lo siguiente:
 
-   1. Data normalization,
-   2. Attribution to the install source and data enrichment,
-   3. Ad revenue events generation,
-   4. Events are aggregated to the device level.
+   1. Normalización de datos
+   2. Atribución a la fuente de instalación y enriquecimiento de datos,
+   3. Generación de eventos de ingresos por publicidad
+   4. Los eventos se agregan a nivel de dispositivo
 
-   **Note:** A report can have more than one device-level aggregation for the same device. This may happen because device-level aggregation is based on monetization-related dimensions such as monetization network, placement, and ad type. For example, if the app display ads in two different placements, revenue events from each placement are aggregated separately on the device level.
-3. **Data delivery**: The device-level data is written to the single report version.
+   **Nota:** Un reporte puede tener más de una agregación a nivel de dispositivo para el mismo dispositivo. Esto puede deberse a que la agregación a nivel de dispositivo se basa en dimensiones relacionadas con la monetización, como la red de monetización, la ubicación y el tipo de anuncio. Por ejemplo, si la aplicación muestra anuncios en dos ubicaciones diferentes, los eventos de ingresos de cada ubicación se agregan por separado en el nivel del dispositivo.
+3. **Entrega de datos**: Los datos a nivel de dispositivo se escriben en la versión única del reporte.
 
-#### When is the report data available?
+#### ¿Cuándo están disponibles los datos del reporte?
 
-| Integration type | Version Day (X = revenue event occurrence day) | Version available at | The version includes revenue events occurring between |
+| Tipo de integración | Día de la versión (X = día de aparición del evento de ingresos) | Versión disponible en | La versión incluye los eventos de ingresos que se producen entre |
 | --- | --- | --- | --- |
-| SDK | Day X+1 | 20:00 | 00:00 — 24:00 |
-| SDK + S2S | Day X+1 | 17:00 | 00:00 — 24:00 |
+| SDK | Día X+1 | 20:00 | 00:00 — 24:00 |
+| SDK + S2S | Día X+1 | 17:00 | 00:00 — 24:00 |
 
-#### How to subscribe to the report?
+#### ¿Cómo suscribirse al reporte?
 
-1. In AppsFlyer, from the side menu, select **Report** > **Data Locker**.
-2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
-3. Select **Attributed revenue [single version].**
+1. En AppsFlyer, en el menú lateral, selecciona **Reporte >** Data Locker.
+2. En el panel de **contenido de Data Locker**, desplázate hacia abajo hasta el mosaico **ROI360 RevenueETL**.
+3. Selecciona **Ingresos atribuidos [versión única].**
 
-**Note:** You can also select the same report for retargeting and organic  (Retargeting/Organic ad revenue [single version]).
+**Nota:** También puedes seleccionar el mismo reporte para el retargeting y el orgánico (retargeting o ingresos por publicidad orgánica [versión única]).
 
-#### How to access the report in your bucket?
+#### ¿Cómo acceder al reporte de tu bucket?
 
-The path to the report consists of the following folder hierarchy:
+La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
-With the following format: `<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
+Con el siguiente formato: \`/t=attributed_ad_revenue/dt=
 
-#### Report folder hierarchy
+/h=23/\`
 
-An example of the attributed ad revenue single version report folder hierarchy in the advertiser bucket:
+#### Jerarquía de carpetas de reportes
+
+Un ejemplo de la jerarquía de carpetas del reporte de una sola versión de ingresos por publicidad atribuidos en el grupo de anunciantes:
 
 ```
 bucket
@@ -132,91 +133,92 @@ bucket
     .   .
 ```
 
-**Legend:**
+**Leyenda:**
 
-* **dt**: Date when the revenue events included in the report occurred.
-* **t:** report type
-* **h:** single version creation hour
+* **dt**: Fecha en la que se produjeron los eventos de ingresos incluidos en el reporte.
+* **t:** tipo de reporte.
+* **h:** hora de creación de una sola versión
 
 </Accordion>
 
 <div id="ad-revenue-versioned-report-device-level" />
 
-<Accordion title="Ad revenue (versioned)">
+<Accordion title="Ingresos por publicidad (versionado)">
 
-The report shows multiple versions of revenue data of a single date. For example, the revenue occurring on June 21 is reported on June 21, June 22, June 23, June 24, June 28, and July 5.
+El reporte muestra varias versiones de los datos de ingresos de una sola fecha. Por ejemplo, los ingresos del 21 de junio se reportan el 21 de junio, el 22 de junio, el 23 de junio, el 24 de junio, el 28 de junio y el 5 de julio.
 
-The purpose of collecting multiple versions of the same day is to capture revenue calculation variations that arise from time-dependent conditions. For example impressions that had revenue value in real-time, may have a different value a day later.
+El propósito de recopilar varias versiones del mismo día es capturar las variaciones en el cálculo de los ingresos que surgen de condiciones que dependen del tiempo. Por ejemplo, las impresiones que generaron ingresos en tiempo real pueden tener un valor diferente un día después.
 
-**Note:** Separate reports provide the organic and retargeting revenue data. These reports are identical in structure and availability.
+**Nota:** Los reportes separados proporcionan los datos de ingresos orgánicos y de retargeting. Estos reportes son idénticos en estructura y disponibilidad.
 
-[Download the Ad revenue versioned report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vQek1x3rYnYQq3jctSz5hnWG_Nk_LQk2ixMTQFVMb8K6w-UmeNKvKOif3-nudAyIqp9tyuoq9R-FhVz/pub?output=csv).
+[Descarga el ejemplo de datos del reporte versionado de ingresos por anuncios](https://docs.google.com/spreadsheets/d/e/2PACX-1vQek1x3rYnYQq3jctSz5hnWG_Nk_LQk2ixMTQFVMb8K6w-UmeNKvKOif3-nudAyIqp9tyuoq9R-FhVz/pub?output=csv).
 
-#### Data sources
+#### Fuentes de datos
 
-Depending on your partner integration type, the report data can originate from either:
+Según el tipo de integración de partners que genere ingresos por publicidad, los datos del reporte pueden proceder de una de las siguientes maneras:
 
-* **SDK**: Impression-level data payloads sent by the ROI360 Ad Revenue SDK connector.
-* **S2S:** Device-level reports pulled by an API request from partners (mediation or monetization networks).
-* **S2S + SDK:** Payloads originating from both SDK and S2S.
+* **SDK**: Cargas útiles de datos a nivel de impresión enviadas por el conector SDK de ingresos por publicidad de ROI360 Ad.
+* **S2S:** Reportes a nivel de dispositivo obtenidos mediante una solicitud de API de los partners (redes de mediación o monetización).
+* **S2S + SDK:** Cargas útiles que se originan tanto en SDK como en S2S.
 
-To learn how to set the integration type, see: Connect to ad revenue integrated partners.
+Para obtener información sobre cómo configurar el tipo de integración, consulta: Conéctate a partners integrados en los ingresos por publicidad.
 
-#### Data flow
+#### Flujo de datos
 
-1. **Data ingestion:** The report can either originate from the SDK or S2S API request (see the section above).
-2. **Data processing:** AppsFlyer ROI360 Ad Revenue performs the following:
+1. **Ingestión de datos:** El reporte puede provenir de la solicitud de API de S2S o del SDK (consulta la sección anterior).
+2. **Procesamiento de datos:** Los ingresos por publicidad de ROI360 de AppsFlyer realizan lo siguiente:
 
-   1. Data normalization,
-   2. Attribution to the install source and data enrichment,
-   3. Ad revenue events generation,
-   4. Events are aggregated to the device level.
+   1. Normalización de datos
+   2. Atribución a la fuente de instalación y enriquecimiento de datos,
+   3. Generación de eventos de ingresos por publicidad
+   4. Los eventos se agregan a nivel de dispositivo
 
-   **Note:** A report can have more than one device-level aggregation for the same device. This may happen because device-level aggregation is based on monetization-related dimensions such as monetization network, placement, and ad type. For example, if the app display ads in two different placements, revenue events from each placement are aggregated separately on the device level.
-3. **Data delivery**: Device-level data is written to multiple report versions according to a predetermined schedule (specified below).
+   **Nota:** Un reporte puede tener más de una agregación a nivel de dispositivo para el mismo dispositivo. Esto puede deberse a que la agregación a nivel de dispositivo se basa en dimensiones relacionadas con la monetización, como la red de monetización, la ubicación y el tipo de anuncio. Por ejemplo, si la aplicación muestra anuncios en dos ubicaciones diferentes, los eventos de ingresos de cada ubicación se agregan por separado en el nivel del dispositivo.
+3. **Entrega de datos**: Los datos a nivel de dispositivo se escriben en varias versiones de reportes de acuerdo con un cronograma predeterminado (que se especifica a continuación).
 
-#### When are the report versions available?
+#### ¿Cuándo están disponibles las versiones del reporte?
 
-The table provided below outlines the generation schedules for both the S2S and SDK versions. Customers who benefit from ROI360 Ad Revenue Freshness to Accuracy will receive both versions, ensuring optimal accuracy and up-to-date information.
+La tabla que se proporciona a continuación describe los programas de generación para las versiones S2S y SDK. Los clientes que se beneficien de ROI360 Ad Revenue Freshness to Accuracy recibirán ambas versiones, lo que garantiza una precisión óptima y una información actualizada.
 
-**Note:** Some S2S-originated versions may not be created. If the data from the partner(s) did not change since the last pull, a new version will NOT be generated.
+**Nota:** Es posible que no se creen algunas versiones originadas en S2S. Si los datos de los partners no cambiaron desde la última versión, NO se generará una nueva versión.
 
-| Integration type | Version Day (X = revenue event occurrence day) | Version available at | The version includes revenue events occurring between |
+| Tipo de integración | Día de la versión (X = día de aparición del evento de ingresos) | Versión disponible en | La versión incluye los eventos de ingresos que se producen entre |
 | --- | --- | --- | --- |
-| SDK | Day X | 03:00-04:00 | 00:00 — 24:00 |
-| SDK | Day X | 07:00-08:00 | 00:00 — 07:00 |
-| SDK | Day X | 11:00-12:00 | 00:00 — 11:00 |
-| SDK | Day X | 15:00-16:00 | 00:00 — 15:00 |
-| SDK | Day X | 19:00-20:00 | 00:00 — 19:00 |
-| SDK | Day X | 23:00-24:00 | 00:00 — 23:00 |
-| SDK | Day X+1 | 04:00-05:00 | 00:00 — 24:00 |
-| S2S | Day X+1 | 10:00-11:00 | 00:00 — 24:00 |
-| S2S | Day X+1 | 16:00-17:00 | 00:00 — 24:00 |
-| S2S | Day X+2 | 00:00-01:00 | 00:00 — 24:00 |
-| S2S | Day X+2 | 13:00-14:00 | 00:00 — 24:00 |
-| S2S | Day X+3 | 06:00-07:00 | 00:00 — 24:00 |
-| S2S | Day X+7 | 08:00-09:00 | 00:00 — 24:00 |
-| S2S | Day X+14 | 11:00-12:00 | 00:00 — 24:00 |
-| SDK + S2S | All SDK and S2S versions above |  |  |
+| SDK | Día X | 03:00-04:00 | 00:00 — 24:00 |
+| SDK | Día X | 07:00-08:00 | 00:00 — 07:00 |
+| SDK | Día X | 11:00-12:00 | 00:00 — 11:00 |
+| SDK | Día X | 15:00-16:00 | 00:00 — 15:00 |
+| SDK | Día X | 19:00-20:00 | 00:00 — 19:00 |
+| SDK | Día X | 23:00-24:00 | 00:00 — 23:00 |
+| SDK | Día X+1 | 04:00-05:00 | 00:00 — 24:00 |
+| S2S | Día X+1 | 10:00-11:00 | 00:00 — 24:00 |
+| S2S | Día X+1 | 12:00-13:00 | 00:00 — 24:00 |
+| S2S | Día X+2 | 00:00-01:00 | 00:00 — 24:00 |
+| S2S | Día X+2 | 13:00-14:00 | 00:00 — 24:00 |
+| S2S | Día X+3 | 06:00-07:00 | 00:00 — 24:00 |
+| S2S | Día X+7 | 08:00-09:00 | 00:00 — 24:00 |
+| S2S | Día X+14 | 11:00-12:00 | 00:00 — 24:00 |
+| SDK + S2S | Todas las versiones de SDK y S2S anteriores |  |  |
 
-#### How to subscribe to the report?
+#### ¿Cómo suscribirse al reporte?
 
-1. In AppsFlyer, from the side menu, select **Report**
-   > **Data Locker**.
-2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
-3. Select **Attributed Ad revenue [versioned].**
+1. En AppsFlyer, en el menú lateral, selecciona **Reporte >** Data Locker.
+2. En el panel de **contenido de Data Locker**, desplázate hacia abajo hasta el mosaico **ROI360 RevenueETL**.
+3. Selecciona **Ingresos por publicidad atribuidos [versionados]**.
 
-**Note:** You can also select the same report for retargeting and organic  (Retargeting/Organic ad revenue [versioned]).
+**Nota:** También puedes seleccionar el mismo reporte para el retargeting y el orgánico (retargeting o ingresos por publicidad orgánica [versionados]).
 
-#### How to access the report in your bucket?
+#### ¿Cómo acceder al reporte de tu bucket?
 
-The path to the report consists of the following folder hierarchy:
+La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
-`<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
+\`/t=attributed_ad_revenue_v2/dt=
 
-#### Report folder hierarchy
+/version=&lt;9999999>/\`
 
-An example of a report tree in the advertiser bucket:
+#### Jerarquía de carpetas de reportes
+
+Un ejemplo de un árbol de reportes en el bucket de anunciantes:
 
 ```
 bucket
@@ -247,75 +249,77 @@ bucket
                 .
 ```
 
-* **Legend:**
-  * **t:** Report type
-  * **dt**: Date when the revenue events included in the report occurred.
-  * **version:** The version’s name is the epoch timestamp of the version creation date and time, e.g., **version=1685588879**.
-* The origin of the version, whether S2S or SDK, can be learned from the version creation time. The first SDK versions originate from the SDK. The others are S2S.
+* **Leyenda:**
+  * **t:** Tipo de reporte
+  * **dt**: Fecha en la que se produjeron los eventos de ingresos incluidos en el reporte.
+  * **versión:** El nombre de la versión es la marca temporal de la fecha y hora de creación de la versión, por ejemplo, **version=1685588879**.
+* El origen de la versión, ya sea S2S o SDK, se puede conocer en el momento de la creación de la versión. Las primeras versiones del SDK se originan en el SDK. Los demás son S2S.
 
-| Integration type | Version Day (X = revenue event occurrence day) | Version available at | The version includes revenue events occurring between |
+| Tipo de integración | Día de la versión (X = día de aparición del evento de ingresos) | Versión disponible en | La versión incluye los eventos de ingresos que se producen entre |
 | --- | --- | --- | --- |
-| SDK | Day X | 03:00-04:00 | 00:00 — 24:00 |
-| SDK | Day X | 07:00-08:00 | 00:00 — 07:00 |
-| SDK | Day X | 11:00-12:00 | 00:00 — 11:00 |
-| SDK | Day X | 15:00-16:00 | 00:00 — 15:00 |
-| SDK | Day X | 19:00-20:00 | 00:00 — 19:00 |
-| SDK | Day X | 23:00-24:00 | 00:00 — 23:00 |
-| SDK | Day X+1 | 04:00-05:00 | 00:00 — 24:00 |
-| S2S | Day X+1 | 10:00-11:00 | 00:00 — 24:00 |
-| S2S | Day X+1 | 16:00-17:00 | 00:00 — 24:00 |
-| S2S | Day X+2 | 00:00-01:00 | 00:00 — 24:00 |
-| S2S | Day X+2 | 13:00-14:00 | 00:00 — 24:00 |
-| S2S | Day X+3 | 06:00-07:00 | 00:00 — 24:00 |
-| S2S | Day X+7 | 08:00-09:00 | 00:00 — 24:00 |
-| S2S | Day X+14 | 11:00-12:00 | 00:00 — 24:00 |
+| SDK | Día X | 03:00-04:00 | 00:00 — 24:00 |
+| SDK | Día X | 07:00-08:00 | 00:00 — 07:00 |
+| SDK | Día X | 11:00-12:00 | 00:00 — 11:00 |
+| SDK | Día X | 15:00-16:00 | 00:00 — 15:00 |
+| SDK | Día X | 19:00-20:00 | 00:00 — 19:00 |
+| SDK | Día X | 23:00-24:00 | 00:00 — 23:00 |
+| SDK | Día X+1 | 04:00-05:00 | 00:00 — 24:00 |
+| S2S | Día X+1 | 10:00-11:00 | 00:00 — 24:00 |
+| S2S | Día X+1 | 18:00-19:00 | 00:00 — 24:00 |
+| S2S | Día X+2 | 00:00-01:00 | 00:00 — 24:00 |
+| S2S | Día X+2 | 13:00-14:00 | 00:00 — 24:00 |
+| S2S | Día X+3 | 06:00-07:00 | 00:00 — 24:00 |
+| S2S | Día X+7 | 08:00-09:00 | 00:00 — 24:00 |
+| S2S | Día X+14 | 11:00-12:00 | 00:00 — 24:00 |
 
 </Accordion>
 
 <div id="impression-level-report" />
 
-<Accordion title="Ad revenue (SDK impression level)">
+<Accordion title="Ingresos por publicidad [nivel de impresión del SDK]">
 
-The report shows impression-level data divided into folders by occurrence hour. Each folder **only contains impressions that occurred during that hour**.
+El reporte muestra los datos a nivel de impresión divididos en carpetas por hora de aparición. Cada carpeta **solo contiene las impresiones que se produjeron durante esa hora**.
 
-[Download the Ad revenue impression level report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vR5zVxFGaCMNZMbCCYPae6f7MmbtelxrqXb-A5DBENuyTFCN4deRfICvbL0_dNeYVipojmAeUdrGbKI/pub?output=csv)
+[Descarga el ejemplo de datos del reporte sobre el nivel de impresión de ingresos por publicidad](https://docs.google.com/spreadsheets/d/e/2PACX-1vR5zVxFGaCMNZMbCCYPae6f7MmbtelxrqXb-A5DBENuyTFCN4deRfICvbL0_dNeYVipojmAeUdrGbKI/pub?output=csv)
 
-#### Data source
+#### Fuente de datos
 
-The report data originates from impression-level data sent by the ROI360 Ad Revenue SDK connector and requires an SDK-type integration.
+Los datos del reporte provienen de datos a nivel de impresión enviados por el conector SDK de ingresos por publicidad de ROI360 y requieren una integración tipo SDK.
 
-To learn how to set the integration type, see: Connect to ad revenue integrated partners.
+Para obtener información sobre cómo configurar el tipo de integración, consulta: Conéctate a partners integrados en los ingresos por publicidad.
 
-#### Data flow
+#### Flujo de datos
 
-1. **Data ingestion:** The report data originates from impression-level data sent by the ROI360 Ad Revenue SDK connector and requires an SDK-type integration.
-2. **Data processing**: AppsFlyer ROI360 Ad Revenue performs the following:
-   1. Data normalization,
-   2. Attribution to the install source and data enrichment,
-   3. Impression-level ad revenue event generation.
-3. **Data delivery**: Impression events are written to files divided by folders according to occurrence hour. Each folder only contains impressions that occurred during that hour.
+1. **Ingestión de datos:** Los datos del reporte provienen de datos a nivel de impresión enviados por el conector SDK de ingresos por publicidad de ROI360 y requieren una integración tipo SDK.
+2. **Procesamiento de datos**: Los ingresos por publicidad de ROI360 de AppsFlyer realizan lo siguiente:
+   1. Normalización de datos
+   2. Atribución a la fuente de instalación y enriquecimiento de datos,
+   3. Generación de eventos de ingresos por publicidad a nivel de impresión.
+3. **Entrega de datos**: Los eventos de impresión se escriben en archivos divididos por carpetas según la hora de aparición. Cada carpeta solo contiene las impresiones que se produjeron durante esa hora.
 
-#### When is the report data available?
+#### ¿Cuándo están disponibles los datos del reporte?
 
-| Integration type | Version Day (X = revenue event occurrence day) | Version available at |
+| Tipo de integración | Día de la versión (X = día de aparición del evento de ingresos) | Versión disponible en |
 | --- | --- | --- |
-| SDK | Day X | At the end of every reported hour |
+| SDK | Día X | Al final de cada hora reportada |
 
-#### How to subscribe to the report?
+#### ¿Cómo suscribirse al reporte?
 
-1. In AppsFlyer, from the side menu, select **Report** > **Data Locker**.
-2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
-3. Select **Ad revenue [SDK impression level].**
+1. En AppsFlyer, en el menú lateral, selecciona **Reporte >** Data Locker.
+2. En el panel de **contenido de Data Locker**, desplázate hacia abajo hasta el mosaico **ROI360 RevenueETL**.
+3. Selecciona **Ingresos por publicidad [nivel de impresión del SDK]**.
 
-#### How to access the report in your bucket?
+#### ¿Cómo acceder al reporte de tu bucket?
 
-The path to the report consists of the following folder hierarchy:
+La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
-`<bucket-name>/t=attributed_adrevenue_sdk_impression_level/dt=<dt=yyyy-mm-dd>/h=<hh>`
+\`/t=attributed_adrevenue_sdk_impression_level/dt=
 
-#### Report folder hierarchy
+/h=\`
 
-An example of a report tree in the advertiser bucket:
+#### Jerarquía de carpetas de reportes
+
+Un ejemplo de un árbol de reportes en el bucket de anunciantes:
 
 ```
 bucket
@@ -348,53 +352,55 @@ bucket
         .   .
 ```
 
-**Legend:**
+**Leyenda:**
 
-* **t:** Report type
-* **dt**: Date when the revenue events included in the report occurred.
-* **h**: Hourly folder containing the CSV file with impressions that occurred during that specific hour.
+* **t:** Tipo de reporte
+* **dt**: Fecha en la que se produjeron los eventos de ingresos incluidos en el reporte.
+* **h**: Carpeta horaria que contiene el archivo CSV con las impresiones que se produjeron durante esa hora específica.
 
 </Accordion>
 
 <div id="transactionlevel-stores-revenue-report" />
 
-<Accordion title="Transaction-level stores revenue">
+<Accordion title="Ingresos de tiendas a nivel de transacción">
 
-This report presents raw in-day data at the transaction level, divided into hourly folders containing only the transactions relevant for that hour.
+Este reporte presenta raw data diarios a nivel de transacción, divididos en carpetas por horas que contienen solo las transacciones relevantes para esa hora.
 
-[Download the transaction-level stores report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGlRSg_Xrp2EsqK2uaisjhlqeSuZsypqKqSSRGX3AQBwBLlNdG_5LOOKCM9f9gCcLguMQgQwT--Dz7/pub?output=csv)
+[Descarga el ejemplo de datos del reporte de tiendas a nivel de transacciones](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGlRSg_Xrp2EsqK2uaisjhlqeSuZsypqKqSSRGX3AQBwBLlNdG_5LOOKCM9f9gCcLguMQgQwT--Dz7/pub?output=csv)
 
-#### Data sources
+#### Fuentes de datos
 
-The report data originates from transactions collected via the ROI360 SDK Purchase connector and server-to-server stores notifications.
+Los datos del reporte provienen de las transacciones recopiladas a través del conector de compra del SDK ROI360 y de las notificaciones de almacenamiento de servidor a servidor.
 
-#### Data flow
+#### Flujo de datos
 
-1. The report data originates from transactions collected via the ROI360 SDK Purchase connector payloads or from S2S stores notifications.
-2. AppsFlyer ROI360 VIAP/Subscriptions processes the data, attributes it, and creates transaction-level events and values.
-3. The transaction-level events are written to the report divided into hourly folders.
+1. Los datos del reporte provienen de las transacciones recopiladas a través de las cargas útiles del conector de compras del SDK ROI360 o de las notificaciones de las tiendas S2S.
+2. El ROI360 de AppsFlyer mediante VIAP/subscripciones procesa los datos, los atribuye y crea eventos y valores a nivel de transacción.
+3. Los eventos a nivel de transacción se escriben en el reporte y se dividen en carpetas por hora.
 
-#### When is the report data available?
+#### ¿Cuándo están disponibles los datos del reporte?
 
-| Version Day (X = revenue event occurrence day) | Version available at |
+| Día de la versión (X = día de aparición del evento de ingresos) | Versión disponible en |
 | --- | --- |
-| Day X | At the end of every reported hour |
+| Día X | Al final de cada hora reportada |
 
-#### How to subscribe to the report?
+#### ¿Cómo suscribirse al reporte?
 
-1. In AppsFlyer, from the side menu, select **Report** > **Data Locker**.
-2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
-3. Select **Transaction-Level Stores Revenue report.**
+1. En AppsFlyer, en el menú lateral, selecciona **Reporte >** Data Locker.
+2. En el panel de **contenido de Data Locker**, desplázate hacia abajo hasta el mosaico **ROI360 RevenueETL**.
+3. Selecciona el **reporte de ingresos de tiendas a nivel de transacción**.
 
-#### How to access the report in your bucket?
+#### ¿Cómo acceder al reporte de tu bucket?
 
-The path to the report consists of the following folder hierarchy:
+La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
-`<bucket-name>/t=stores_rawdata/dt=<dt=yyyy-mm-dd>/h=<hh>`
+\`/t=stores_rawdata/dt=
 
-#### Report folder hierarchy
+/h=\`
 
-An example of a report tree in the advertiser bucket:
+#### Jerarquía de carpetas de reportes
+
+Un ejemplo de un árbol de reportes en el bucket de anunciantes:
 
 ```
 bucket
@@ -427,59 +433,61 @@ bucket
         .   .
 ```
 
-**Legend:**
+**Leyenda:**
 
-* **t:** report type
-* **dt**: Date when the revenue events included in the report occurred.
-* **h**: Hourly folder containing the CSV file with transactions that occurred during that specific hour.
+* **t:** tipo de reporte.
+* **dt**: Fecha en la que se produjeron los eventos de ingresos incluidos en el reporte.
+* **h**: Carpeta horaria que contiene el archivo CSV con las transacciones que se realizaron durante esa hora específica.
 
 </Accordion>
 
 <div id="devicelevel-stores-revenue-report" />
 
-<Accordion title="Device-level stores revenue (versioned)">
+<Accordion title="Ingresos de tiendas a nivel de dispositivo (versionados)">
 
-The device-level store revenue report specifies in-app purchase and auto-renewable subscription events captured by ROI360 products. These events include unique ROI360 monetization-related dimensions. Customer-issued in-app events are not included in this report.
+El reporte de ingresos de las tiendas a nivel de dispositivo especifica los eventos de compra in-app y de suscripción auto-renovables capturados por los productos ROI360. Estos eventos incluyen dimensiones únicas relacionadas con la monetización del ROI360. Los eventos in-app emitidos por los clientes no se incluyen en este reporte.
 
-<span id="download-the-report-data-sample::8cbba4e3"></span>[Download the device-level stores revenue report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vSpomvcf2axYeSFcCh0kEx3ShYYRGVfF9WYZXG1UYBkeymeVfh8mcypAOpq2drqE3zhdmbcmrMtahsl/pub?output=csv)
+<span id="download-the-report-data-sample::8cbba4e3"></span>[Descargar el ejemplo de datos del reporte de ingresos de tiendas a nivel de dispositivo](https://docs.google.com/spreadsheets/d/e/2PACX-1vSpomvcf2axYeSFcCh0kEx3ShYYRGVfF9WYZXG1UYBkeymeVfh8mcypAOpq2drqE3zhdmbcmrMtahsl/pub?output=csv)
 
-#### Data sources
+#### Fuentes de datos
 
-The report data originates from transactions collected via:
+Los datos del reporte provienen de transacciones recopiladas a través de:
 
-1. The ROI360 SDK Purchase connector.
-2. The stores (for example, The App Store and Google Play store) via server-to-server notifications.
+1. El conector de compra SDK de ROI360.
+2. Las tiendas (por ejemplo, la App Store y la tienda Google Play) mediante notificaciones de servidor a servidor.
 
-#### Data flow
+#### Flujo de datos
 
-1. The report data originates from transactions collected via the ROI360 SDK Purchase connector payloads or from S2S stores notifications.
-2. AppsFlyer ROI360 VIAP/Subscriptions processes the data, attributes it, and creates in-app events.
-3. The in-app events are aggregated to the device level and written to a report version every four hours.
+1. Los datos del reporte provienen de las transacciones recopiladas a través de las cargas útiles del conector de compras del SDK ROI360 o de las notificaciones de las tiendas S2S.
+2. El ROI360 de AppsFlyer mediante VIAP/subscripciones procesa los datos, los atribuye y crea eventos in-app.
+3. Los eventos in-app se agregan al nivel del dispositivo y se escriben en una versión de reporte cada cuatro horas.
 
-#### When are the report versions available?
+#### ¿Cuándo están disponibles las versiones del reporte?
 
-| Version Day (X = revenue event occurrence day) | Version available at | The version includes revenue events occurring between |
+| Día de la versión (X = día de aparición del evento de ingresos) | Versión disponible en | La versión incluye los eventos de ingresos que se producen entre |
 | --- | --- | --- |
-| Day X | 04:00 - 05:00 | 00:00 — 04:00 |
-| Day X | 12:00 - 13:00 | 00:00 — 12:00 |
-| Day X | 20:00 - 21:00 | 00:00 — 20:00 |
-| Day X+1 | 05:00 - 06:00 | 00:00 — 24:00 |
+| Día X | 04:00 — 05:00 | 00:00 — 04:00 |
+| Día X | 12:00 — 13:00 | 00:00 — 12:00 |
+| Día X | 20:00 — 21:00 | 00:00 — 20:00 |
+| Día X+1 | 05:00 — 06:00 | 00:00 — 24:00 |
 
-#### How to subscribe to the report?
+#### ¿Cómo suscribirse al reporte?
 
-1. In AppsFlyer, from the side menu, select **Report** > **Data Locker**.
-2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
-3. Select **Device-Level Stores Revenue report [versioned]**.
+1. En AppsFlyer, en el menú lateral, selecciona **Reporte >** Data Locker.
+2. En el panel de **contenido de Data Locker**, desplázate hacia abajo hasta el mosaico **ROI360 RevenueETL**.
+3. Selecciona el **reporte de ingresos de tiendas a nivel de dispositivo [versionado]**.
 
-#### How to access the report in your bucket?
+#### ¿Cómo acceder al reporte de tu bucket?
 
-The path to the report consists of the following folder hierarchy:
+La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
-`<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
+\`/t=stores_devicedata/dt=
 
-#### Report folder hierarchy
+/version=&lt;999999999>\`
 
-An example of a report tree in the advertiser bucket:
+#### Jerarquía de carpetas de reportes
+
+Un ejemplo de un árbol de reportes en el bucket de anunciantes:
 
 ```
 bucket
@@ -510,12 +518,12 @@ bucket
                 .
 ```
 
-**Legend:**
+**Leyenda:**
 
-* **t:** report type
-* **dt**: Date when the revenue events included in the report occurred.
-* **version**: The version’s name is the epoch timestamp of the version creation date and time, e.g., **version=1685588879**.
+* **t:** tipo de reporte.
+* **dt**: Fecha en la que se produjeron los eventos de ingresos incluidos en el reporte.
+* **versión**: El nombre de la versión es la marca temporal de la fecha y hora de creación de la versión, por ejemplo, **version=1685588879**.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HMBTDD8TASZ2NEBXP7CZ3Q81=revenue-etl h_01HME0BBF2M47M2AV437RYQ070=reports h_01HETBAQVVYW14END06HBPBQSN=ad-revenue-single-version-report-device-level h_01HETBAQVVZB87JNT0JVYSP80D=download-the-report-data-sample the-report-data-sources=data-sources h_01HETBAQVVSKVDM4J90A0WGFJW=data-sources the-report-data-flow=data-flow h_01HETBAQVV97R7G6F67RM6K62K=data-flow h_01HETBAQVVKDAWW2S98TG6682S=when-is-the-report-data-available h_01HETBAQVVFSDRW778VQSSE107=how-to-subscribe-to-the-report how-to-access-the-report-in-dl=how-to-access-the-report-in-your-bucket h_01HETBAQVV15T92VXRHG2CP2KJ=how-to-access-the-report-in-your-bucket the-report-folder-hierarchy-in-aws=report-folder-hierarchy h_01HETBAQVVA750VTE1ABSM2M47=report-folder-hierarchy h_01HETBAQVVCB2SYMW9876HPE7N=ad-revenue-versioned-report-device-level data-sources=data-sources-1 h_01HMTZ9VQ5WE6D7E5NEBYH71SZ=data-sources-1 data-flow=data-flow-1 h_01HMTZ9VQ5PS8G9JTQ2YXF1G7X=data-flow-1 h_01HETBAQVVP1M40KHB66AW545S=when-are-the-report-versions-available how-to-subscribe-to-the-report::cae4aa15=how-to-subscribe-to-the-report-1 h_01HMTZ9VQ5BBFNNE7Z8EP084CF=how-to-subscribe-to-the-report-1 how-to-access-the-report-in-your-bucket=how-to-access-the-report-in-your-bucket-2 h_01HMTZ9VQ5FGBC56AP4R49P4BX=how-to-access-the-report-in-your-bucket-2 report-folder-hierarchy=report-folder-hierarchy-2 h_01HMTZ9VQ5HCKP7T3JQ2RHZV50=report-folder-hierarchy-2 h_01HETBAQVVR90NJC522WNAG190=impression-level-report the-source-of-the-report-data=data-source h_01HETBAQVV3KBEW4VV4RY9VRA2=data-source data-flow::c7ffb834=data-flow-2 h_01HMTZ9VQ5J837PGG99S8ARAGV=data-flow-2 when-is-the-report-data-available::272621c9=when-is-the-report-data-available-1 h_01HMTZ9VQ5YQKBQ779YWBWESDZ=when-is-the-report-data-available-1 how-to-subscribe-to-the-report::67646c99=how-to-subscribe-to-the-report-2 h_01HMTZ9VQ5ZST1M7JYKFC3DA62=how-to-subscribe-to-the-report-2 how-to-access-the-report-in-aws-the-bucket=how-to-access-the-report-in-your-bucket-3 h_01HETBAQVVHE80MH3SM3GX21V1=how-to-access-the-report-in-your-bucket-3 report-folder-hierarchy::26ec73c6=report-folder-hierarchy-2 h_01HMTZ9VQ5FFSA1XF7YSATM6WH=report-folder-hierarchy-2 h_01HETBAQVWZKYBAG5E71KVB9PM=transactionlevel-stores-revenue-report data-sources::68e71455=data-sources-3 h_01HMTZ9VQ5SWTWTSNW5M9KJ1XN=data-sources-3 data-flow::bde19643=data-flow-4 h_01HMTZ9VQ6XVHDHBKV86F3Q9DJ=data-flow-4 when-is-the-report-data-available::87d17fc2=when-is-the-report-data-available-2 h_01HMTZ9VQ64AJQM861M6ENHVWC=when-is-the-report-data-available-2 how-to-subscribe-to-the-report::6569d202=how-to-subscribe-to-the-report-3 h_01HMTZ9VQ60HMM6TXAPYSZG5CT=how-to-subscribe-to-the-report-3 how-to-access-the-report-in-your-bucket::b136ba80=how-to-access-the-report-in-your-bucket-4 h_01HMTZ9VQ67ZEX3KM6CV32SNBD=how-to-access-the-report-in-your-bucket-4 report-folder-hierarchy::805d4d8=report-folder-hierarchy-3 h_01HMTZ9VQ68VRJRHXSNAE38A0E=report-folder-hierarchy-3 h_01HETBAQVVWAFEMK8ENWN7DYEY=devicelevel-stores-revenue-report h_01HETBAQVV9PSDJNS76SNX522C=download-the-report-data-sample::8cbba4e3 the-report-data-sources::af31e5d1=data-sources-3 h_01HETBAQVWE2R75D034VCYMTR1=data-sources-3 the-report-data-processing-flow=data-flow-4 h_01HETBAQVWZRBE84NV403BCZ9F=data-flow-4 when-are-the-report-versions-available::2f1bc55f=when-are-the-report-versions-available-1 h_01HETBAQVWQFCKHMT6PJNPXX7D=when-are-the-report-versions-available-1 how-to-subscribe-to-the-report::a624afde=how-to-subscribe-to-the-report-4 h_01HETBAQVW54MD9Q09RNC673PE=how-to-subscribe-to-the-report-4 how-to-access-the-report-in-the-aws-bucket=how-to-access-the-report-in-your-bucket-4 h_01HETBAQVWYDR81WS9Q9G20ZND=how-to-access-the-report-in-your-bucket-4 the-report-folder-hierarchy-in-aws::45c0d598=report-folder-hierarchy-4 h_01HETBAQVWXHK6DXFA90GJQWPV=report-folder-hierarchy-4" />
+<div data-zendesk-anchors="h_01HMBTDD8TASZ2NEBXP7CZ3Q81=revenue-etl reports=reportes h_01HME0BBF2M47M2AV437RYQ070=reportes h_01HETBAQVVYW14END06HBPBQSN=ad-revenue-single-version-report-device-level h_01HETBAQVVZB87JNT0JVYSP80D=download-the-report-data-sample the-report-data-sources=fuentes-de-datos h_01HETBAQVVSKVDM4J90A0WGFJW=fuentes-de-datos the-report-data-flow=flujo-de-datos h_01HETBAQVV97R7G6F67RM6K62K=flujo-de-datos when-is-the-report-data-available=cu%C3%A1ndo-est%C3%A1n-disponibles-los-datos-del-reporte h_01HETBAQVVKDAWW2S98TG6682S=cu%C3%A1ndo-est%C3%A1n-disponibles-los-datos-del-reporte how-to-subscribe-to-the-report=c%C3%B3mo-suscribirse-al-reporte h_01HETBAQVVFSDRW778VQSSE107=c%C3%B3mo-suscribirse-al-reporte how-to-access-the-report-in-dl=c%C3%B3mo-acceder-al-reporte-de-tu-bucket h_01HETBAQVV15T92VXRHG2CP2KJ=c%C3%B3mo-acceder-al-reporte-de-tu-bucket the-report-folder-hierarchy-in-aws=jerarqu%C3%ADa-de-carpetas-de-reportes h_01HETBAQVVA750VTE1ABSM2M47=jerarqu%C3%ADa-de-carpetas-de-reportes h_01HETBAQVVCB2SYMW9876HPE7N=ad-revenue-versioned-report-device-level data-sources=fuentes-de-datos-1 h_01HMTZ9VQ5WE6D7E5NEBYH71SZ=fuentes-de-datos-1 data-flow=flujo-de-datos-1 h_01HMTZ9VQ5PS8G9JTQ2YXF1G7X=flujo-de-datos-1 when-are-the-report-versions-available=cu%C3%A1ndo-est%C3%A1n-disponibles-las-versiones-del-reporte h_01HETBAQVVP1M40KHB66AW545S=cu%C3%A1ndo-est%C3%A1n-disponibles-las-versiones-del-reporte how-to-subscribe-to-the-report::cae4aa15=c%C3%B3mo-suscribirse-al-reporte-1 h_01HMTZ9VQ5BBFNNE7Z8EP084CF=c%C3%B3mo-suscribirse-al-reporte-1 how-to-access-the-report-in-your-bucket=c%C3%B3mo-acceder-al-reporte-de-tu-bucket-2 h_01HMTZ9VQ5FGBC56AP4R49P4BX=c%C3%B3mo-acceder-al-reporte-de-tu-bucket-2 report-folder-hierarchy=jerarqu%C3%ADa-de-carpetas-de-reportes-2 h_01HMTZ9VQ5HCKP7T3JQ2RHZV50=jerarqu%C3%ADa-de-carpetas-de-reportes-2 h_01HETBAQVVR90NJC522WNAG190=impression-level-report the-source-of-the-report-data=fuente-de-datos h_01HETBAQVV3KBEW4VV4RY9VRA2=fuente-de-datos data-flow::c7ffb834=flujo-de-datos-2 h_01HMTZ9VQ5J837PGG99S8ARAGV=flujo-de-datos-2 when-is-the-report-data-available::272621c9=cu%C3%A1ndo-est%C3%A1n-disponibles-los-datos-del-reporte-1 h_01HMTZ9VQ5YQKBQ779YWBWESDZ=cu%C3%A1ndo-est%C3%A1n-disponibles-los-datos-del-reporte-1 how-to-subscribe-to-the-report::67646c99=c%C3%B3mo-suscribirse-al-reporte-2 h_01HMTZ9VQ5ZST1M7JYKFC3DA62=c%C3%B3mo-suscribirse-al-reporte-2 how-to-access-the-report-in-aws-the-bucket=c%C3%B3mo-acceder-al-reporte-de-tu-bucket-2 h_01HETBAQVVHE80MH3SM3GX21V1=c%C3%B3mo-acceder-al-reporte-de-tu-bucket-2 report-folder-hierarchy::26ec73c6=jerarqu%C3%ADa-de-carpetas-de-reportes-2 h_01HMTZ9VQ5FFSA1XF7YSATM6WH=jerarqu%C3%ADa-de-carpetas-de-reportes-2 h_01HETBAQVWZKYBAG5E71KVB9PM=transactionlevel-stores-revenue-report data-sources::68e71455=fuentes-de-datos-2 h_01HMTZ9VQ5SWTWTSNW5M9KJ1XN=fuentes-de-datos-2 data-flow::bde19643=flujo-de-datos-4 h_01HMTZ9VQ6XVHDHBKV86F3Q9DJ=flujo-de-datos-4 when-is-the-report-data-available::87d17fc2=cu%C3%A1ndo-est%C3%A1n-disponibles-los-datos-del-reporte-2 h_01HMTZ9VQ64AJQM861M6ENHVWC=cu%C3%A1ndo-est%C3%A1n-disponibles-los-datos-del-reporte-2 how-to-subscribe-to-the-report::6569d202=c%C3%B3mo-suscribirse-al-reporte-3 h_01HMTZ9VQ60HMM6TXAPYSZG5CT=c%C3%B3mo-suscribirse-al-reporte-3 how-to-access-the-report-in-your-bucket::b136ba80=c%C3%B3mo-acceder-al-reporte-de-tu-bucket-4 h_01HMTZ9VQ67ZEX3KM6CV32SNBD=c%C3%B3mo-acceder-al-reporte-de-tu-bucket-4 report-folder-hierarchy::805d4d8=jerarqu%C3%ADa-de-carpetas-de-reportes-4 h_01HMTZ9VQ68VRJRHXSNAE38A0E=jerarqu%C3%ADa-de-carpetas-de-reportes-4 h_01HETBAQVVWAFEMK8ENWN7DYEY=devicelevel-stores-revenue-report h_01HETBAQVV9PSDJNS76SNX522C=download-the-report-data-sample::8cbba4e3 the-report-data-sources::af31e5d1=fuentes-de-datos-3 h_01HETBAQVWE2R75D034VCYMTR1=fuentes-de-datos-3 the-report-data-processing-flow=flujo-de-datos-4 h_01HETBAQVWZRBE84NV403BCZ9F=flujo-de-datos-4 when-are-the-report-versions-available::2f1bc55f=cu%C3%A1ndo-est%C3%A1n-disponibles-las-versiones-del-reporte-1 h_01HETBAQVWQFCKHMT6PJNPXX7D=cu%C3%A1ndo-est%C3%A1n-disponibles-las-versiones-del-reporte-1 how-to-subscribe-to-the-report::a624afde=c%C3%B3mo-suscribirse-al-reporte-4 h_01HETBAQVW54MD9Q09RNC673PE=c%C3%B3mo-suscribirse-al-reporte-4 how-to-access-the-report-in-the-aws-bucket=c%C3%B3mo-acceder-al-reporte-de-tu-bucket-4 h_01HETBAQVWYDR81WS9Q9G20ZND=c%C3%B3mo-acceder-al-reporte-de-tu-bucket-4 the-report-folder-hierarchy-in-aws::45c0d598=jerarqu%C3%ADa-de-carpetas-de-reportes-4 h_01HETBAQVWXHK6DXFA90GJQWPV=jerarqu%C3%ADa-de-carpetas-de-reportes-4" />

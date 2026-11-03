@@ -1,5 +1,5 @@
 ---
-title: Xamarin Android/iOS plugin
+title: Plugin de Xamarin para Android/iOS
 metadata:
   keywords:
     - xamarin
@@ -18,20 +18,19 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-07-17T08:20:33Z'
-  edited_at: '2026-08-18T09:11:39Z'
+  edited_at: '2026-08-12T12:02:39Z'
   id: 210485006
-  locale: en-us
+  locale: es
   section: Other platforms
   section_id: 6551244207121
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/210485006-Xamarin-Android-iOS-plugin
+  url: https://support.appsflyer.com/hc/es/articles/210485006
 ---
-> **At a glance:** Integrate AppsFlyer into apps developed using Xamarin to measure installs, in-app events, media sources, and more.
+> **En resumen:** Integra AppsFlyer en aplicaciones desarrolladas con Xamarin para medir instalaciones, eventos in-app, fuentes de medios y mucho más.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> On March 1st, 2020, AppsFlyer deprecated old SDK versions. To learn about which versions have been deprecated, how it affects you, and how to update to the latest SDK version, click here.
+> El 1 de marzo de 2020, AppsFlyer dejó de usar versiones antiguas del SDK. Para saber qué versiones se han dejado de usar, cómo te afecta y cómo actualizar a la última versión del SDK, haz clic aquí.
 
-**Android:** Follow these instructions for the AppsFlyer Xamarin Android binding: <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/XamarinAndroidBinding">https://github.com/AppsFlyerSDK/XamarinAndroidBinding</Anchor>
+**Android:** Sigue estas instrucciones para el binding de AppsFlyer para Xamarin Android: <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/XamarinAndroidBinding">https://github.com/AppsFlyerSDK/XamarinAndroidBinding</Anchor>
 
-**iOS:** Follow these instructions for the AppsFlyer Xamarin iOS binding: <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/XamariniOSBinding">https://github.com/AppsFlyerSDK/XamariniOSBinding</Anchor>
+**iOS:** Sigue estas instrucciones para el binding de AppsFlyer para Xamarin iOS: <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/XamariniOSBinding">https://github.com/AppsFlyerSDK/XamariniOSBinding</Anchor>

@@ -1,5 +1,5 @@
 ---
-title: Recommended eCommerce app events
+title: Eventos recomendados para apps de eCommerce
 metadata:
   keywords:
     - Advertisers
@@ -14,323 +14,322 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-04-19T06:32:18Z'
-  edited_at: '2025-12-02T11:55:23Z'
+  edited_at: '2026-08-12T12:01:12Z'
   id: 360019347957
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019347957-Recommended-eCommerce-app-events
+  url: https://support.appsflyer.com/hc/es/articles/360019347957
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eCommerce app.
+> **En resumen:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de eCommerce.
 
 ## <Image alt="InApp_Events_ecommerce.png" src="https://files.readme.io/c6497d250c22c7de5c13f01278ac72d8b3117bc60712ba3fe40ad24efcdc4947-360019350097.png" width="67px" /> eCommerce
 
-eCommerce apps allow buyers to easily search for and buy goods online. The typical events that we suggest recording are search, purchase, adding to cart, and adding to wishlist.
+Las aplicaciones de eCommerce permiten que los compradores busquen y compren productos online con facilidad. Los eventos típicos que te recomendamos registrar son: buscar, comprar, agregar al carrito y agregar a la lista de deseos.
 
-Recording events can help you determine:
+Registrar estos eventos puede ayudarte a determinar:
 
-* The most popular categories
-* What buyers are searching for
-* How many buyers completed a checkout
-* How many buyers are recurring buyers and how many are just one-time buyers
+* Las categorías más populares.
+* Qué buscan los compradores.
+* Cuántos compradores finalizaron el checkout.
+* Cuántos de los compradores son recurrentes y cuántos son compradores de una sola vez.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="https://evgen.appsflyer.com/?vertical=ecommerce">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="https://evgen.appsflyer.com/?vertical=ecommerce&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">**AppsFlyer developer hub**</Anchor>.
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="https://evgen.appsflyer.com/?vertical=ecommerce">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="https://evgen.appsflyer.com/?vertical=ecommerce&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Encontrarás instrucciones detalladas para tu desarrollador en el <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">**centro para desarrolladores de AppsFlyer**</Anchor>.
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para más información sobre la grabación de eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía de eventos in-app</Anchor>.
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the eCommerce vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que son típicas de la vertical de eCommerce. Cada estructura incluye un nombre de evento predefinido y los parámetros del evento sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Learn how many users installed the app and completed the signup process, and what signup methods your users prefer.
+Descubrir cuántos usuarios instalaron la aplicación y completaron el proceso de registro, y qué métodos de registro prefieren tus usuarios.
 
-**Trigger**
+**Disparador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | Email, Meta ads |
+| af\_registration\_method | Tipo de método de registro | Correo electrónico, Meta Ads |
 
 </Accordion>
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Iniciar sesión (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Disparador**
 
-When the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="search-af_search" />
 
-<Accordion title="Search (af_search)">
+<Accordion title="Búsqueda (af_search)">
 
-**Purpose**
+**Finalidad**
 
-Learn what users are looking for, and which search results are the most relevant and lead to a purchase.
+Descubrir qué buscan los usuarios y qué resultados de búsqueda son los más relevantes y conducen a una compra.
 
-**Trigger**
+**Disparador**
 
-One of the following:
+Una de los siguientes:
 
-* When the user clicks on the search button
-* When the user lands on the search results page
+* Cuando el usuario hace clic en el botón de búsqueda.
+* Cuando el usuario llega a la página de resultados de búsqueda.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_search\_string | Search term | Red dress, running shoes |
-| af\_content\_list | List of content IDs | 001, 092 |
+| af\_search\_string | Término de búsqueda | Vestido rojo, zapatillas para correr |
+| af\_content\_list | Lista de IDs de contenido | 001, 092 |
 
 </Accordion>
 
 <div id="content-view-af_content_view" />
 
-<Accordion title="Content view (af_content_view)">
+<Accordion title="Vista de contenido (af_content_view)">
 
-**Purpose**
+**Finalidad**
 
-Determine the view rate of specific products. This event can help you:
+Determinar la tasa de visualizaciones de productos específicos. Este evento puede ayudarte a:
 
-* Correlate product views with product sales
-* Understand what categories are the most popular according to product views
-* See the correlation between buyers' currency and the products they view
+* Correlacionar visualizaciones de productos con ventas de productos.
+* Determinar cuáles categorías son las más populares según las visualizaciones de productos.
+* Ver la correlación entre la divisa de los compradores y los productos que visualizan.
 
-**Trigger**
+**Disparador**
 
-When the user views a specific product details page
+Cuando el usuario ve la página de detalles de un producto específico.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Product price | 2000 |
-| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br /><br />**Required parameter for Meta ads dynamic ads** | ABC123 |
-| af\_content\_id | Product ID<br /><br />**Required parameter for Meta ads dynamic ads** | 102 |
-| af\_content\_type | Item category<br /><br />**Required parameter for Meta ads dynamic ads**  <br />  <br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes |
-| af\_currency | Currency on the product details page | THB, USD |
+| af\_price | Precio del producto | 2000 |
+| af\_content | International Article Number (EAN) cuando corresponda, u otro identificador de producto o contenido<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads** | ABC123 |
+| af\_content\_id | ID del producto<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads** | 102 |
+| af\_content\_type | Categoría del artículo<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads**  <br />  <br />**Nota:** Al mapear `af_content_type` a `fb_content_type` de Meta, los únicos valores admitidos son `product` o `product_group`. | Zapatos |
+| af\_currency | La divisa que figura en la página de detalles del producto | THB, USD |
 
 </Accordion>
 
 <div id="list-view-af_list_view" />
 
-<Accordion title="List view (af_list_view)">
+<Accordion title="Vista de lista (af_list_view)">
 
-**Purpose**
+**Finalidad**
 
-Record which lists (for example, newly added products, related products, or recommended products) buyers view the most.
+Registra qué listas (por ejemplo, productos recién agregados, productos relacionados o productos recomendados) ven más los compradores.
 
-**Trigger**
+**Disparador**
 
-When the user views a specific list
+Cuando el usuario ve una lista específica.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_content\_type | Item category<br /><br />**Required parameter for Meta ads dynamic ads**  <br />  <br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Related, recommended, new arrivals |
-| af\_content\_list | List of content IDs from the category | 001, 092 |
+| af\_content\_type | Categoría del artículo<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads**  <br />  <br />**Nota:** Al mapear `af_content_type` a `fb_content_type` de Meta, los únicos valores admitidos son `product` o `product_group`. | Productos relacionados, recomendados, novedades |
+| af\_content\_list | Lista de ID de contenido de la categoría | 001, 092 |
 
 </Accordion>
 
 <div id="add-to-wishlist-af_add_to_wishlist" />
 
-<Accordion title="Add to wishlist (af_add_to_wishlist)">
+<Accordion title="Añadir a la lista de deseos (af_add_to_wishlist)">
 
-**Purpose**
+**Finalidad**
 
-Record what products and categories buyers add to their wishlists. When you know what products are often added to wishlists, you can then offer these products in sales or discounts and encourage buyers to purchase them. You can also retarget users according to the products that they added to their wishlist.
+Registrar qué productos y categorías agregan los compradores a sus listas de deseos. Cuando sepas cuáles productos se agregan con frecuencia a las listas de deseos, podrás ofrecerlos en ofertas especiales o con descuentos y así alentar a los compradores a comprarlos. También podrás usar la función de retargeting de usuarios según los productos que agregan a su lista de deseos.
 
-**Trigger**
+**Disparador**
 
-When the user adds items to their wishlist
+Cuando el usuario agrega artículos a su lista de deseos
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Price of the product | 600 |
-| af\_content\_id | Product ID | 300 |
-| af\_content\_type | Item category<br /><br />**Required parameter for Meta ads dynamic ads**  <br />  <br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes, electronics |
-| af\_currency | Currency displayed on the product details page | GBP |
+| af\_price | Precio del producto | 600 |
+| af\_content\_id | ID del producto | 300 |
+| af\_content\_type | Categoría del artículo<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads**  <br />  <br />**Nota:** Al mapear `af_content_type` a `fb_content_type` de Meta, los únicos valores admitidos son `product` o `product_group`. | Zapatos, electrónica |
+| af\_currency | La divisa que se muestra en la página de detalles del producto | GBP |
 
 </Accordion>
 
 <div id="add-to-cart-af_add_to_cart" />
 
-<Accordion title="Add to cart (af_add_to_cart)">
+<Accordion title="Añadir al carrito (af_add_to_cart)">
 
-**Purpose**
+**Finalidad**
 
-Record when a user adds products to their cart. This event can help you determine:
+Registrar cuando un usuario agrega productos a su carrito. Este evento puede ayudarte a determinar:
 
-* How many products on average buyers add in one purchase
-* How much time passes between adding two different products
-* How many buyers abandon their cart
+* Cuántos productos en promedio agregan los compradores en una sola compra.
+* Cuánto tiempo transcurre desde que se agrega un producto hasta que se agrega otro.
+* Cuántos compradores abandonan su carrito.
 
-**Trigger**
+**Disparador**
 
-When the user adds a product to the cart
+Cuando el usuario agrega un producto al carrito.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Field name | Description | Example value |
+| Nombre del campo | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Product price | 350, 1000 |
-| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br /><br />**Required parameter for Meta ads dynamic ads** | ABC123 |
-| af\_content\_id | Product ID<br /><br />**Required parameter for Meta ads dynamic ads** | 001, 092 |
-| af\_content\_type | Item category<br /><br />**Required parameter for Meta ads dynamic ads**  <br />  <br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shirt, shoes |
-| af\_currency | Product currency | THB, USD |
-| af\_quantity | How many items of the same product were added to the cart | 2, 5 |
+| af\_price | Precio del producto | 350, 1000 |
+| af\_content | International Article Number (EAN) cuando corresponda, u otro identificador de producto o contenido<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads** | ABC123 |
+| af\_content\_id | ID del producto<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads** | 001, 092 |
+| af\_content\_type | Categoría del artículo<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads**  <br />  <br />**Nota:** Al mapear `af_content_type` a `fb_content_type` de Meta, los únicos valores admitidos son `product` o `product_group`. | Camisa, zapatos |
+| af\_currency | Moneda del producto | THB, USD |
+| af\_quantity | Cuántos artículos del mismo producto se agregaron al carrito | 2, 5 |
 
 </Accordion>
 
 <div id="initiated-checkout-af_initiated_checkout" />
 
-<Accordion title="Initiated checkout (af_initiated_checkout)">
+<Accordion title="Inicio de pago (af_initiated_checkout)">
 
-**Purpose**
+**Finalidad**
 
-Understand how buyers behave when they proceed to checkout. This event can help you determine:
+Entender cómo se comportan los compradores cuando realizan el checkout. Este evento puede ayudarte a determinar:
 
-* The average price when buyers check out compared with the average price in the purchase event
-* Whether users add or remove products after proceeding to checkout
+* El precio promedio cuando los compradores realizan el checkout con el precio promedio del evento de compra.
+* Si los usuarios agregan o eliminan productos una vez iniciado el checkout.
 
-**Trigger**
+**Disparador**
 
-When the user initiates the checkout but didn't yet complete the checkout
+Cuando el usuario inicie el checkout, pero no lo haya finalizado aún.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Field name | Description | Example value |
+| Nombre del campo | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Total price in the cart | 4000 |
-| af\_content\_id | ID of products in the cart | 221, 124 |
-| af\_content\_type | Item category<br /><br />**Required parameter for Meta ads dynamic ads**  <br />  <br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shirt, pants |
-| af\_currency | Currency during time of checkout | THB |
-| af\_quantity | Total number of items in the cart | 2, 5 |
+| af\_price | Precio total del carrito | 4000 |
+| af\_content\_id | ID de los productos en el carrito | 221, 124 |
+| af\_content\_type | Categoría del artículo<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads**  <br />  <br />**Nota:** Al mapear `af_content_type` a `fb_content_type` de Meta, los únicos valores admitidos son `product` o `product_group`. | Camisa, pantalones |
+| af\_currency | Divisa al momento del checkout | THB |
+| af\_quantity | Cantidad total de artículos en el carrito | 2, 5 |
 
 </Accordion>
 
 <div id="purchase-af_purchase" />
 
-<Accordion title="Purchase (af_purchase)">
+<Accordion title="Compra (af_purchase)">
 
-**Purpose**
+**Finalidad**
 
-Learn about purchase trends in your app. This event can help you:
+Conocer las tendencias de compra en tu aplicación. Este evento puede ayudarte a:
 
-* Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
-* Determine which offers are most popular with your users
-* Cross-reference campaigns with purchased items in order to optimize campaign targeting
+* Determinar el LTV de tus usuarios y el ROI de tus campañas en todas las agencias y ad networks.
+* Determinar qué ofertas son las más populares entre tus usuarios.
+* Establecer referencias cruzadas entre las campañas y los artículos comprados a fin de optimizar el targeting de las campañas.
 
-**Trigger**
+**Disparador**
 
-When the user lands on the thank you page after a successful purchase
+Cuando el usuario llega a la página de agradecimiento después de una compra exitosa.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Estimated revenue from the purchase | 1205.99 |
-| af\_price | Overall purchase sum | 4000 |
-| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br /><br />**Required parameter for Meta ads** **dynamic ads** | ABC123 |
-| af\_content\_id | Item ID<br /><br />**Required parameter for Meta ads dynamic ads** | 121, 262 |
-| af\_content\_type | Item category<br /><br />**Required parameter for Meta ads dynamic ads**  <br />  <br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | product\_group |
-| af\_currency | Currency code | AUD |
-| af\_quantity | Number of items in the cart | 2, 5 |
-| af\_order\_id | ID of the order that is generated after the purchase | X123ABC |
-| af\_receipt\_id | Order ID<br /><br />**Required parameter for CRITEO and Google Ad Words for purchase validation** | X123ABC |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Los ingresos estimados de la compra | 1205.99 |
+| af\_price | Importe total de la compra | 4000 |
+| af\_content | International Article Number (EAN) cuando corresponda, u otro identificador de producto o contenido<br /><br />Parámetro requerido para **anuncios dinámicos** de Meta Ads | ABC123 |
+| af\_content\_id | ID del artículo<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads** | 121, 262 |
+| af\_content\_type | Categoría del artículo<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads**  <br />  <br />**Nota:** Al mapear `af_content_type` a `fb_content_type` de Meta, los únicos valores admitidos son `product` o `product_group`. | grupo\_de\_productos |
+| af\_currency | Código de la moneda | AUD |
+| af\_quantity | Cantidad de artículos en el carrito | 2, 5 |
+| af\_order\_id | El ID del pedido que se genera después de la compra | X123ABC |
+| af\_receipt\_id | ID de pedido<br /><br />**Parámetro obligatorio para CRITEO y Google Ad Words para la validación de compra** | X123ABC |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que incluye nombres de eventos personalizados y los parámetros de eventos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="first-purchase-first_purchase" />
 
-<Accordion title="First purchase (first_purchase)">
+<Accordion title="Primera compra (first_purchase)">
 
-**Purpose**
+**Finalidad**
 
-Same as the [Purchase](/docs/recommended-ecommerce-app-events#purchase-af_purchase) event. In addition, this event can help you determine:
+Igual que el evento [Compra](/docs/recommended-ecommerce-app-events#purchase-af_purchase). Además, este evento puede ayudarte a determinar:
 
-* How long it takes a new buyer to purchase
-* What products first-time buyers prefer to purchase
-* The average price and revenue of first-time purchases
+* Cuánto tiempo tarda un comprador nuevo en hacer una compra.
+* Cuáles son los productos que prefieren los compradores por primera vez.
+* Los ingresos y precios promedios de las compras por primera vez.
 
-**Trigger**
+**Disparador**
 
-When the user completes their first purchase
+Cuando el usuario completa su primera compra.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Revenue from purchase | 1205.99 |
-| af\_price | Overall purchase sum | 4000 |
-| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br /><br />**Required parameter for Meta ads dynamic ads** | ABC123 |
-| af\_content\_id | Item ID<br /><br />**Required parameter for Meta ads dynamic ads** | 121, 262 |
-| af\_content\_type | Item category<br /><br />**Required parameter for Meta ads dynamic ads**  <br />  <br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes, pants |
-| af\_currency | Currency | AUD |
-| af\_quantity | Quantity of items in the cart | 2, 5 |
-| af\_order\_id | ID of the order that is generated after the purchase | X123ABC |
-| af\_receipt\_id | Order ID<br /><br />**Required parameter for CRITEO and Google AdWords retargeting integration** | X123ABC |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Ingresos de la compra | 1205.99 |
+| af\_price | Importe total de la compra | 4000 |
+| af\_content | International Article Number (EAN) cuando corresponda, u otro identificador de producto o contenido<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads** | ABC123 |
+| af\_content\_id | ID del artículo<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads** | 121, 262 |
+| af\_content\_type | Categoría del artículo<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads**  <br />  <br />**Nota:** Al mapear `af_content_type` a `fb_content_type` de Meta, los únicos valores admitidos son `product` o `product_group`. | Zapatos, pantalones |
+| af\_currency | Truemoney | AUD |
+| af\_quantity | Cantidad de artículos en el carrito | 2, 5 |
+| af\_order\_id | El ID del pedido que se genera después de la compra | X123ABC |
+| af\_receipt\_id | ID de pedido<br /><br />**Parámetro obligatorio para la integración de retargeting de CRITEO y Google AdWords** | X123ABC |
 
 </Accordion>
 
 <div id="remove-from-cart-remove_from_cart" />
 
-<Accordion title="Remove from cart (remove_from_cart)">
+<Accordion title="Eliminar del carrito (remove_from_cart)">
 
-**Purpose**
+**Finalidad**
 
-Recording this event can help you:
+La atribución de este evento puede ayudarte a:
 
-* Determine what items buyers remove from their cart
-* Determine the product categories of items that buyers remove from their cart
-* Compare the data from the [Add to cart](/docs/recommended-ecommerce-app-events#add-to-cart-af_add_to_cart) event to gain insights into products that don't make it to checkout
+* Determinar qué artículos los compradores eliminan del carrito.
+* Determinar las categorías de productos de los artículos que los compradores eliminan del carrito.
+* Comparar los datos del evento [Agregar al carrito](/docs/recommended-ecommerce-app-events#add-to-cart-af_add_to_cart) para saber qué productos no llegan al checkout.
 
-**Trigger**
+**Disparador**
 
-When the user removes an item from the cart
+Cuando el usuario elimina un artículo del carrito.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_content\_id | Item or product ID | 521 |
-| af\_content\_type | Item category<br /><br />**Required parameter for Meta ads dynamic ads**  <br />  <br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes |
+| af\_content\_id | ID del artículo o producto | 521 |
+| af\_content\_type | Categoría del artículo<br /><br />**Parámetro requerido para anuncios dinámicos de Meta Ads**  <br />  <br />**Nota:** Al mapear `af_content_type` a `fb_content_type` de Meta, los únicos valores admitidos son `product` o `product_group`. | Zapatos |
 
 </Accordion>
 
-<div data-zendesk-anchors="ecommerce=-ecommerce h_01HGTAWG2166CZYKJE9166G12J=-ecommerce h_01HGTAWG21Z0C9SR2G54W68G8Q=important h_01HGTAWG2115VB3A8J2WG3DJKK=recommended-structures-for-predefined-events h_01HGTAWG21EQ0FE40WGFJRDJY5=complete-registration-af_complete_registration h_01HGTAWG22HFZ24V2BDCH3RFN8=login-af_login h_01HGTAWG22B5Z9AXENDATKR67T=search-af_search h_01HGTAWG22PSKS80ZQNAC0K24M=content-view-af_content_view h_01HGTAWG2219SVQ86PT1K3TVV9=list-view-af_list_view h_01HGTAWG22EQMVWXJCXC2KQDX8=add-to-wishlist-af_add_to_wishlist h_01HGTAWG23T81SPFJEA6BY5F2W=add-to-cart-af_add_to_cart h_01HGTAWG23FPKQ6RHJ9VYET63Y=initiated-checkout-af_initiated_checkout h_01HGTAWG2385E9Q0FXZXEW38YK=purchase-af_purchase h_01HGTAWG235EXE17EJ5DWQYERM=recommended-structures-for-custom-events h_01HGTAWG23NTG0Q70B9A3685AD=first-purchase-first_purchase h_01HGTAWG239TQ51Z7FQW4FC1TZ=remove-from-cart-remove_from_cart" />
+<div data-zendesk-anchors="ecommerce=-ecommerce h_01HGTAWG2166CZYKJE9166G12J=-ecommerce h_01HGTAWG21Z0C9SR2G54W68G8Q=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAWG2115VB3A8J2WG3DJKK=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAWG21EQ0FE40WGFJRDJY5=complete-registration-af_complete_registration h_01HGTAWG22HFZ24V2BDCH3RFN8=login-af_login h_01HGTAWG22B5Z9AXENDATKR67T=search-af_search h_01HGTAWG22PSKS80ZQNAC0K24M=content-view-af_content_view h_01HGTAWG2219SVQ86PT1K3TVV9=list-view-af_list_view h_01HGTAWG22EQMVWXJCXC2KQDX8=add-to-wishlist-af_add_to_wishlist h_01HGTAWG23T81SPFJEA6BY5F2W=add-to-cart-af_add_to_cart h_01HGTAWG23FPKQ6RHJ9VYET63Y=initiated-checkout-af_initiated_checkout h_01HGTAWG2385E9Q0FXZXEW38YK=purchase-af_purchase recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAWG235EXE17EJ5DWQYERM=estructuras-recomendadas-para-eventos-personalizados h_01HGTAWG23NTG0Q70B9A3685AD=first-purchase-first_purchase h_01HGTAWG239TQ51Z7FQW4FC1TZ=remove-from-cart-remove_from_cart" />

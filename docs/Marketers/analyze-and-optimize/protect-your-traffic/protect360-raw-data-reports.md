@@ -1,5 +1,5 @@
 ---
-title: Protect360 raw data reports
+title: Informes de datos sin procesar de Protect360
 metadata:
   keywords:
     - Advertisers
@@ -18,305 +18,304 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2020-11-09T13:03:45Z'
-  edited_at: '2026-03-28T14:03:09Z'
+  edited_at: '2026-08-12T11:55:33Z'
   id: 360015179337
-  locale: en-us
+  locale: es
   section: Protect your traffic
   section_id: 6551015912465
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360015179337-Protect360-raw-data-reports
+  url: https://support.appsflyer.com/hc/es/articles/360015179337
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Raw data reports describe installs and in-app events blocked by the Protect360 engine, as well as from manually added Validation Rules.
+> **De un vistazo:** Los informes de datos sin procesar describen las instalaciones y los eventos in-app bloqueados por el motor Protect360, así como por las Reglas de Validación añadidas manualmente.
 
-## About Protect360 raw data reports
+## Sobre los informes de datos sin procesar de Protect360
 
-Raw data reports:
+Informes de datos sin procesar:
 
-* Display data about:
-  * Clicks, installs, and in-app events identified as fraudulent by the Protect360 engine.
-  * Installs and in-app events identified via Validation Rules.
-* Include the block reason for each click, install, or in-app event.
-* Are used by advertisers to reconcile ad network accounts, for optimization, and to adjust attribution dashboards for post-attribution fraud.
-* May have <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">some fields are restricted or not available</Anchor> if <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">AppsFlyer Aggregated Advanced Privacy (AAP)</Anchor>.
-* Report types and their availability by download, API, and Data Locker (S3 bucket) are described in the sections that follow.
-* Historical raw data report retention is up to 90 days, depending on the reporting tool and origin of the raw data.
+* Muestran datos sobre:
+  * Clics, instalaciones y eventos in-app identificados como fraudulentos por el motor Protect360.
+  * Instalaciones y eventos in-app identificados mediante Reglas de Validación.
+* Incluyen el motivo del bloqueo para cada clic, instalación o evento in-app.
+* Son utilizados por los anunciantes para conciliar cuentas de redes publicitarias, para la optimización y para ajustar los cuadros de atribución por fraudes posteriores a la atribución.
+* Puede que <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">algunos campos estén restringidos o no disponibles</Anchor> si <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">se utiliza AppsFlyer Aggregated Advanced Privacy (AAP)</Anchor>.
+* Los tipos de informes y su disponibilidad para descarga, API y Data Locker (depósito S3) se describen en las secciones siguientes.
+* La retención de los informes históricos de datos sin procesar es de hasta 90 días, dependiendo de la herramienta de informes y la fuente de los datos sin procesar.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Due to raw data restrictions related to privacy, the raw reports may show fields with empty values. An example of this is the contributor fields.
+> Debido a las restricciones de datos sin procesar relacionadas con la privacidad, los informes sin procesar pueden mostrar campos con valores vacíos. Un ejemplo de esto son los campos de colaboradores.
 
 <div id="report-types" />
 
-<Accordion title="Report types">
+<Accordion title="Tipos de informes">
 
-#### Protect360 raw-data report types
+#### Tipos de informes de datos sin procesar de Protect360
 
-| Report | Description |
+| Informe | Descripción |
 | --- | --- |
-| <span id="installs"></span>Installs | Reports include:<ul><li>**Fake installs**: Installs identified as fraudulent by the Protect360 engine. These do not appear in any AppsFlyer dashboard or raw data, except for the Protect360 dashboard and raw data.</li><li>**Hijacked installs**: Real user installs where attribution is stolen, but Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction).</li><li>**Validation Rules**: That either blocked the install or blocked the attribution (Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction)).</li></ul> |
-| <span id="postattribution-installs"></span>Post-attribution installs | Reports include installs attributed to a media source, but later found to be fraudulent. Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction). |
-| <span id="blocked-inapp-events"></span>Blocked in-app events | Reports include in-app events from:<ul><li>**Fake installs**: IAEs are blocked.</li><li>**In-app events**: Identified as fraudulent independent of the original installs.</li><li>**Validation Rules**:<ul><li>IAEs from a rule that blocked the install or blocked attribution.</li><li>IAEs from a rule that blocked the in-app event.</li></ul></li></ul> |
-| <span id="postattribution-inapp-events"></span>Post-attribution in-app events | Reports include in-app events:<ul><li>Identified post-attribution.</li><li>Of installs attributed to a media source, but later found to be fraudulent.</li></ul> |
-| <span id="clicks"></span>Clicks | Reports include blocked clicks with the block reasons. |
-| <span id="blocked-install-postbacks"></span>Blocked install postbacks | Reports include copies of the rejection postbacks sent to media sources bringing blocked installs. |
+| <span id="installs"></span>Instalaciones | Los informes incluyen:<ul><li>**Instalaciones falsas**: Instalaciones detectadas como fraudulentas por el motor Protect360. Estas no aparecen en ningún panel de AppsFlyer ni en datos sin procesar, excepto en el panel y los datos sin procesar de Protect360.</li><li>**Instalaciones secuestradas**: Instalaciones de usuarios reales donde se roba la atribución, pero Protect360 [corrige la atribución](/docs/protect360-raw-data-reports#corrección-de-atribución-de-instalaciones-secuestradas).</li><li>**Reglas de Validación**: Que bloquearon la instalación o bloquearon la atribución (Protect360 [corrige la atribución](/docs/protect360-raw-data-reports#corrección-de-atribución-de-instalaciones-secuestradas)).</li></ul> |
+| <span id="postattribution-installs"></span>Instalaciones posteriores a la atribución | Los informes incluyen instalaciones atribuidas a una fuente de medios, pero posteriormente identificadas como fraudulentas. [Protect360](/docs/protect360-raw-data-reports#corrección-de-atribución-de-instalaciones-secuestradas) [corrige la atribución](/docs/protect360-raw-data-reports#corrección-de-atribución-de-instalaciones-secuestradas). |
+| <span id="blocked-inapp-events"></span>Eventos in-app bloqueados | Los informes incluyen eventos in-app provenientes de:<ul><li>**Instalaciones falsas**: Los eventos IAE están bloqueados.</li><li>**Eventos in-app**: Identificados como fraudulentos independientemente de las instalaciones originales.</li><li>**Reglas de Validación**:<ul><li>IAE procedentes de una regla que bloqueó la instalación o la atribución.</li><li>IAE procedentes de una regla que bloqueó el evento in-app.</li></ul></li></ul> |
+| <span id="postattribution-inapp-events"></span>Eventos in-app posteriores a la atribución | Los informes incluyen eventos in-app:<ul><li>Identificados tras la atribución.</li><li>De instalaciones atribuidas a una fuente de medios, pero que luego resultaron ser fraudulentas.</li></ul> |
+| <span id="clicks"></span>Clics | Los informes incluyen clics bloqueados con sus motivos. |
+| <span id="blocked-install-postbacks"></span>Postbacks de instalación bloqueados | Los informes incluyen copias de los postbacks de rechazo enviados a las fuentes de medios que trajeron instalaciones bloqueadas. |
 
 </Accordion>
 
 <div id="postattribution-reports" />
 
-<Accordion title="Post-attribution reports">
+<Accordion title="Informes posteriores a la atribución">
 
-* Post-attribution raw data fraud reports have the same structure as the blocked fraud reports.
-* The current month (by install date) post-attribution report continues to be updated until the seventh day of the following month (detection date).
-* Post attribution raw data reports are limited to advertisers. Agencies need <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners">permissions</Anchor> enabled to access.
-* Reports contain post-attribution fraud events identified by Protect360 and include all media sources in a single report. **Note**: If no post attribution fraud events are identified for the selected date range, the report returns empty,
-* Post-attribution raw data fraud reports are available as follows:
-  * Dashboard user interface: limited to one media source during one calendar month.
-  * Pull API: contains all media sources. (Limitation: Available to app owners only.)
+* Los informes de fraude de datos sin procesar posteriores a la atribución tienen la misma estructura que los informes de fraude bloqueados.
+* El informe posterior a la atribución del mes actual (según la fecha de instalación) se sigue actualizando hasta el séptimo día del mes siguiente (fecha de detección).
+* Los informes de datos en bruto de atribución posterior están limitados a los anunciantes. Las agencias necesitan tener los <Anchor target="_blank" href="/partners/es/docs/protect360-for-integrated-partners">permisos</Anchor> habilitados para acceder.
+* Los informes contienen eventos de fraude posteriores a la atribución identificados por Protect360 e incluyen todas las fuentes de medios en un solo informe. **Nota**: Si no se identifican eventos de fraude de atribución post-activos para el rango de fechas seleccionado, el informe aparece vacío,
+* Los informes de fraude de datos en bruto post-activos están disponibles de la siguiente manera:
+  * Interfaz de usuario del panel: limitada a una fuente de medios durante un mes calendario.
+  * API de extracción: contiene todas las fuentes de medios. (Limitación: Disponible solo para propietarios de aplicaciones.)
 
-#### **Using post-attribution reports**
+#### **Uso de informes post-activos**
 
-* Select any combination of install/IAE and detect date ranges as needed.
-* Take into consideration that Protect360 performs post-attribution detection during the calendar month of the install and up to the seventh day of the following month. This means, for example, that for installs in November, Protect360 checks for fraud up to December 7.
-* The best practice for using this Pull API is as follows:
-  * Assume you pull the report on a daily basis.
-  * Set the install date range to 60 days looking back from the current day.
-  * Set the detect-from/detect-to range to the day before the current day.  
-    This means you will get the list of post-attribution frauds detected yesterday. If you didn't pull the report for a few days, adjust the detect date range, and pull the report.
+* Seleccione cualquier combinación de rangos de fechas de instalación/IAE y de detección según sea necesario.
+* Tenga en cuenta que Protect360 realiza la detección post-atribución durante el mes calendario de la instalación y hasta el séptimo día del mes siguiente. Esto significa, por ejemplo, que para las instalaciones de noviembre, Protect360 verifica el fraude hasta el 7 de diciembre.
+* La mejor práctica para utilizar esta API de extracción es la siguiente:
+  * Supongamos que genera el informe diariamente.
+  * Establezca el rango de fechas de instalación a 60 días antes del día actual.
+  * Configure el rango de detección desde/hasta el día anterior al actual.  
+    Esto significa que obtendrás la lista de fraudes detectados después de la atribución, ayer. Si no generaste el informe durante algunos días, ajusta el rango de fechas de detección y crea el informe.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> **Example A**: During December (install date) 15 installs are attributed to example\_media. On January 3 (detection date), Protect360 identifies example\_media as a fraudster. As a result, the 15 installs attributed to example\_media are listed as fraudulent in the post-attribution fraud report for further action by the app owner.
+> **Ejemplo A**: Durante diciembre, se atribuyen 15 instalaciones a example\_media. El 3 de enero, Protect360 identifica a example\_media como un fraude. Como consecuencia, las 15 instalaciones atribuidas a example\_media se enumeran como fraudulentas en el informe de fraude post-atribución para que el propietario de la aplicación tome medidas adicionales.
 >
-> **Example B**: During December, 15 installs are attributed to example\_media. On January 9, Protect360 identifies example\_media as a fraudster. In this case, no action is taken by Protect360 because the fraudster was identified after the month close on January 7.
+> **Ejemplo B**: Durante diciembre, se atribuyen 15 instalaciones a example\_media. El 9 de enero, Protect360 identifica a example\_media como un fraude. En este caso, Protect360 no toma medidas porque el fraude fue identificado después del cierre del mes, el 7 de enero.
 
 </Accordion>
 
 <div id="raw-data-availability-by-tool-type" />
 
-<Accordion title="Raw data availability by tool type">
+<Accordion title="Disponibilidad de datos sin procesar por tipo de herramienta">
 
-#### Protect360 raw-data availability by tool type
+#### Disponibilidad de datos sin procesar de Protect360 por tipo de herramienta
 
-<table><thead><tr><th>Report</th><th>Data freshness</th><th>Pull API</th><th>Export Data page</th><th>Data Locker</th></tr></thead><tbody><tr><td>Installs</td><td>Real-time</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Blocked in-app events</td><td>Real-time</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Clicks</td><td>Real-time</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Blocked install postbacks</td><td>Real-time</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>Post-attribution installs</td><td>Daily 15:00 UTC</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Post-attribution in-app events</td><td>Daily 20:00 UTC</td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr><tr><td colspan="5"><p>\* Limitations to report via Data Locker:</p><ul><li>Agency transparency not supported. Meaning that agency-driven traffic does not contain the name of the media source sending the install.</li><li>The report has a unique set of fields relative to other Data Locker reports. This list can't be changed.</li><li>Retargeting data is not available in the Installs report; only in the Post-attribution installs report. </li></ul></td></tr></tbody></table>
+<table><thead><tr><th>Informe</th><th>Actualización de datos</th><th>API de extracción</th><th>Página de exportación de datos</th><th>Casillero de datos</th></tr></thead><tbody><tr><td>Instalaciones</td><td>En tiempo real</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Eventos in-app bloqueados</td><td>En tiempo real</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Clics</td><td>En tiempo real</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Postbacks de instalación bloqueados</td><td>En tiempo real</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>Instalaciones posteriores a la atribución</td><td>Diariamente a las 10:00 UTC</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Eventos in-app posteriores a la atribución</td><td>Diariamente a las 10:00 UTC</td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr><tr><td colspan="5"><p>\* Limitaciones para los informes a través de Data Locker:</p><ul><li>No se admite la transparencia de la agencia. Esto significa que el tráfico gestionado por la agencia no contiene el nombre de la fuente de medios que envía la instalación.</li><li>El informe tiene un conjunto único de campos en comparación con otros informes de Data Locker. Esta lista no se puede modificar.</li><li>Los datos de retargeting no están disponibles en el informe de Instalaciones; solo en el informe de Instalaciones post-atribución. </li></ul></td></tr></tbody></table>
 
 </Accordion>
 
-## Getting raw data reports
+## Obteniendo informes de datos sin procesar
 
-Raw data reports are available by download, Pull API, and Data Locker (S3 bucket). You can also <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners">give partners access to reports</Anchor>.
+Los informes de datos sin procesar están disponibles para descargar, API de extracción y Data Locker (cubeta S3). También puedes <Anchor target="_blank" href="/partners/es/docs/protect360-for-integrated-partners">dar acceso a socios a los informes</Anchor>.
 
 <div id="download" />
 
-<Accordion title="Download">
+<Accordion title="Descargar">
 
-**To download:**
+**Para descargar:**
 
-1. In the Protect360 dashboard, go to **Raw data reports** > **Blocked** or **Post-attribution.**
-   * For post-attribution reports, select the media source and month.
-2. Select the **Protect360 & Validation Rules** report to download.
+1. En el panel de Protect360, ve a **Informes de datos sin procesar** > **Bloqueados** o **Post-atribución.**
+   * Para los informes posteriores a la atribución, seleccione la fuente del medio y el mes.
+2. Seleccione el informe **Protect360 & Validation Rules** para descargar.
 
-**OR**
+**O**
 
-1. In the AppsFlyer dashboard, go to **Export Data**.
-2. Select the **Protect360 & Validation Rules** report to download.
+1. En el panel de AppsFlyer, vaya a **Exportar datos**.
+2. Seleccione el informe **Protect360 & Validation Rules** para descargar.
 
-**Note**: Reports downloaded from the Export Data page contain all media sources.
+**Nota**: Los informes descargados de la página Exportar datos contienen todas las fuentes de medios.
 
 </Accordion>
 
 <div id="pull-api" />
 
-<Accordion title="Pull API">
+<Accordion title="API de extracción">
 
-**To download raw data reports available by Pull API:**
+**Para descargar informes de datos sin procesar disponibles mediante Pull API:**
 
-**Before you begin:**
+**Antes de comenzar:**
 
-You need a Pull API token. Get the token from an <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">admin user</Anchor>.
+Necesita un token Pull API. Obtenga el token de un <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">usuario administrador</Anchor>.
 
-1. Go to **Report > API Access.** The <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data">Pull API</Anchor> page opens.
-2. In the Protect360 fraud reports section, select the necessary Pull API call.
-3. Populate the parameters as required. The table that follows lists the parameters.
-4. Pull the report.
+1. Vaya a **Informe > Acceso API.** Se abre la página<Anchor target="_blank" href="/marketers/es/docs/pull-api-raw-data">API de extracción</Anchor>.
+2. En la sección de informes de fraude de Protect360, seleccione la llamada Pull API necesaria.
+3. Complete los parámetros según sea necesario. La siguiente tabla enumera los parámetros.
+4. Extraiga el informe.
 
-#### Pull API raw data report parameters
+#### Parámetros del informe de datos sin procesar de la API de extracción
 
-| Parameter | Description | Format | Mandatory |
+| Parámetro | Descripción | Formato | Obligatorio |
 | --- | --- | --- | --- |
-| app\_id | App ID as it appears in AppsFlyer | String | Yes |
-| api\_token | Retrieve the key from the Dashboard. Go to **Report** > **API Access.** Only an admin user can retrieve the API token. | String | Yes |
-| from | Start of the date range:<ul><li>For installs, this is the install date.</li><li>For in-app events, this is the date of the event.</li></ul> | YYYY-MM-DD | Yes |
-| to | End of the date range:<ul><li>For installs, this is the install date.</li><li>For in-app events, this is the date of the event.</li></ul> | YYYY-MM-DD | Yes |
-| event\_name | [Optional for Post-attribution in-app events fraud]<br /><br />Filter events by in-app event. Limit the report to specific events.  One or more events can be included.<br /><br />Example usage: `&event_name=af_purchase,af_login` | String | No |
-| additional\_fields=rejected\_reason\_value | [Optional for Post-attribution in-app events fraud]<br /><br />**<Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#protect360">rejected\_reason\_value</Anchor>** displays the valid contributor (media source) for hijacked installs/in-app events. Populated with either <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::2a6fd501">**contributor[1-3]**</Anchor> or **organic**. | String | No |
-| detect-from | [Optional for Post-attribution installs]<br /><br />Start of the fraud detect date range. (Default is from.) (Used in Post-attribution install fraud.) (Used in Post-attribution install fraud.) | YYYY-MM-DD | No |
-| detect-to | [Optional for Post-attribution installs]<br /><br />End of the fraud detection date range. (Default is to.) | YYYY-MM-DD | No |
+| id de la aplicación | ID de la aplicación tal como aparece en AppsFlyer | Cadena | Sí |
+| token\_api | Recupere la clave del Dashboard. Vaya a **Informe** > **Acceso a la API.** Solo un usuario administrador puede recuperar el token de API. | Cadena | Sí |
+| de | Inicio del rango de fechas:<ul><li>Para las instalaciones, esta es la fecha de instalación.</li><li>Para los eventos dentro de la aplicación, esta es la fecha del evento.</li></ul> | AAAA-MM-DD | Sí |
+| a | Fin del rango de fechas:<ul><li>Para las instalaciones, esta es la fecha de instalación.</li><li>Para los eventos dentro de la aplicación, esta es la fecha del evento.</li></ul> | AAAA-MM-DD | Sí |
+| nombre\_del\_evento | [Opcional para fraudes en eventos dentro de la aplicación posteriores a la atribución]<br /><br />Filtre eventos por evento en la aplicación. Limite el informe a eventos específicos.  Se pueden incluir uno o más eventos.<br /><br />Ejemplo de uso: `&event_name=af_purchase,af_login` | Cadena | No |
+| campos\_adicionales=valor\_de\_motivo\_rechazado | [Opcional para fraudes en eventos dentro de la aplicación posteriores a la atribución]<br /><br />**<Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#protect360">rejected\_reason\_value</Anchor>** muestra el <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#protect360">contribuidor válido (fuente de medios) para instalaciones/eventos dentro de la aplicación secuestrados. Rellenado con [**contribuidor[1-3]**](/docs/raw-data-field-dictionary#attribution::2a6fd501) o **orgánico**.</Anchor> | Cadena | No |
+| detectar desde | [Opcional para instalaciones posteriores a la atribución]<br /><br />Inicio del rango de fechas de detección de fraude. (El valor predeterminado es de). (Se utiliza en fraudes de instalación posteriores a la atribución). (Se utiliza en fraudes de instalación posteriores a la atribución). | AAAA-MM-DD | No |
+| detectar-a | [Opcional para instalaciones posteriores a la atribución]<br /><br />Fin del rango de fechas de detección de fraude. (El valor predeterminado es.) | AAAA-MM-DD | No |
 
 </Accordion>
 
 <div id="data-locker" />
 
-<Accordion title="Data Locker">
+<Accordion title="Casillero de datos">
 
-Data Locker writes raw-data to an AWS S3 bucket.
+Data Locker escribe datos sin procesar  en un depósito AWS S3.
 
-<Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports#protect360">See list of available Protect360 reports</Anchor>. 
+<Anchor target="_blank" href="/marketers/es/docs/data-locker-advertiser-reports#protect360">Consulte la lista de informes de Protect360 disponibles</Anchor>. 
 
-<Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#aws-cli">See Data Locker configuration instructions</Anchor>.
+<Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers#aws-cli">Consulte las instrucciones de configuración de Data Locker</Anchor>.
 
 </Accordion>
 
-## Protect360 report structure
+## Estructura del informe de Protect360
 
-Protect360 reports have the same general structure as user acquisition reports fields.
+Los informes de Protect360 mantienen la misma estructura general que los campos de los informes de adquisición de usuarios.
 
-In addition to the regular <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data report fields</Anchor>, Protect360 reports also have retargeting and blocked reason fields, as follows:
+Además de los <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">campos habituales de informe de datos sin procesar</Anchor>, los informes de Protect360 también incorporan campos para motivos de redireccionamiento y bloqueo, de la siguiente manera:
 
-### Blocked reasons
+### Motivos de bloqueo
 
 <div id="click-level-blocked-reasons" />
 
-<Accordion title="Click level blocked reasons">
+<Accordion title="Motivos por los que se bloquea el nivel de clic">
 
-At the click level, clicks are blocked, and the attribution process ignores them.
+A nivel de clic, se bloquean los clics y el proceso de atribución los ignora.
 
-| Blocked reason | Description |
+| Motivo del bloqueo | Descripción |
 | --- | --- |
-| ip\_blacklist | Based on a dynamically created list (<Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#ip-denylists">details</Anchor>) |
-| click\_capping | Extremely high rates of click fraud are detected from that ad network. <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners#impression-capping">Learn more</Anchor> |
-| click\_signing | Signature on the click is not validated. <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">Learn more</Anchor> |
-| input\_validation | Invalid media source name |
+| lista negra de IP | Basado en una lista creada dinámicamente (<Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide#ip-denylists">detalles</Anchor>) |
+| limitación de clics | Se detectan tasas extremadamente altas de fraude de clics en esa red publicitaria. <Anchor target="_blank" href="/partners/es/docs/protect360-for-integrated-partners#umbral-de-impresiones">Más información</Anchor> |
+| firma del clic | La firma en el clic no está validada. <Anchor target="_blank" href="/partners/es/docs/click-signing-for-ad-networks">Más información</Anchor> |
+| validación de entrada | Nombre de la fuente de medios no válido |
 
 </Accordion>
 
 <div id="install-level-blocked-reasons" />
 
-<Accordion title="Install level blocked reasons">
+<Accordion title="Motivos por los que se bloquea el nivel de instalación">
 
-At the install level, we identify enough info at the time of install to determine either:
+A nivel de instalación, identificamos suficiente información durante el momento de la instalación para determinar:
 
-* A fake install, meaning the user installing the app is not a real person. In this case, the attribution is completely blocked.
-* Attribution hijacking, where the user is real but the engagement is falsified. In this case, the fraudulent engagement is blocked and attribution is re-assigned to the first valid contributing ad network.
+* Una instalación falsa, lo que significa que el usuario que instala la aplicación no es una persona real. En este caso, la atribución está completamente bloqueada.
+* Secuestro de atribución, donde el usuario es real pero el compromiso es falsificado. En este caso, se bloquea la actividad fraudulenta y la atribución se reasigna a la primera red publicitaria válida y contribuyente.
 
-The following tables list possible install level blocked reasons:
+Las siguientes tablas enumeran los posibles motivos de bloqueo a nivel de instalación:
 
-#### Install level: Fake install block sub reasons
+#### Nivel de instalación: Motivos para el bloqueo de instalaciones falsas
 
-| Blocked reason | Blocked sub reason | Description |
+| Motivo del bloqueo | Submotivo de bloqueo | Descripción |
 | --- | --- | --- |
-| bots | fake\_device\_parameters | Non-human behavior detected in device-related parameters during the app installation process |
-| bots | fake\_install\_parameters | Non-human behavior detected in install-related parameters during the app installation process |
-| bots | bayesian\_network | Bayesian network identification of fraudulent patterns |
-| bots | user activity anomalies | Identifies abnormal or suspicious user behavior within the app using behavioral anomaly detection models. These models:<ul><li>Analyze user activity on an individual level</li><li>Surface deviations from expected patterns</li><li>Detect behavior clustering that diverges from legitimate user profiles</li><li>This detection helps flag bot activity that mimics real users but performs in-app actions in atypical ways.</li></ul> |
-| bots | store validation | Validates that each install originates from an authentic and expected source. This mechanism:<ul><li>Verifies the integrity of the acquisition channel</li><li>Detects spoofed or manipulated install signals</li><li>Rejects installs that don’t align with genuine distribution pathways</li><li>By ensuring legitimacy at the install level, this method helps block bots attempting to fake organic or paid installs.</li></ul> |
-| bots | App-interaction anomalies | Flags non-in-app-based events on post-install app interactions. Helps identify suspicious behavior in the transition from install to launches. |
-| validation\_bots | invalid\_device\_parameters | Specific device fields expectation mismatch - defined by the customer |
-| validation\_bots | validation\_rules | Rules where the outcome is blocked installs based on manually defined validation rule |
-| bots | ai\_layer | AI models are utilized to analyze vast amounts of data points, enhancing detection capabilities for identifying fraudulent device and installation activities. |
+| Bots | parámetros de dispositivo falso | Comportamiento no humano detectado en los parámetros relacionados con el dispositivo durante el proceso de instalación de la aplicación |
+| Bots | parámetros de instalación falsos | Se detectó comportamiento no humano en los parámetros relacionados con la instalación durante el proceso de instalación de la aplicación |
+| Bots | bayesian\_network | Identificación de patrones fraudulentos mediante redes bayesianas |
+| Bots | anomalías en la actividad del usuario | Identifica el comportamiento anómalo o sospechoso de los usuarios dentro de la aplicación mediante modelos de detección de anomalías de comportamiento. Estos modelos:<ul><li>Analizan la actividad del usuario a nivel individual</li><li>Sacan a la luz desviaciones respecto a los patrones esperados</li><li>Detectan agrupaciones de comportamiento que se desvían de los perfiles de usuarios legítimos</li><li>Esta detección ayuda a señalar la actividad de bots que imita a usuarios reales, pero realiza acciones in-app de forma atípica.</li></ul> |
+| Bots | validación de la tienda de instalación | Valida que cada instalación procede de una fuente auténtica y esperada. Este mecanismo:<ul><li>Verifica la integridad del canal de adquisición</li><li>Detecta señales de instalación falsificadas o manipuladas</li><li>Rechaza instalaciones que no se ajustan a vías de distribución legítimas</li><li>Al garantizar la legitimidad a nivel de instalación, este método ayuda a bloquear bots que intentan simular instalaciones orgánicas o de pago.</li></ul> |
+| Bots | Anomalías de interacción con la app | Marca eventos que no se basan en in-app en las interacciones con la app posteriores a la instalación. Ayuda a identificar comportamientos sospechosos en la transición de la instalación a las aperturas. |
+| bots de validación | parámetros del dispositivo no válidos | Desajuste en las expectativas de campos específicos del dispositivo (definido por el cliente) |
+| bots de validación | reglas de validación | Reglas en las que el resultado son instalaciones bloqueadas basadas en una regla de validación definida manualmente |
+| Bots | capa\_ai | Los modelos de inteligencia artificial se emplean para analizar grandes volúmenes de datos, mejorando las capacidades de detección para identificar actividades fraudulentas en dispositivos e instalaciones. |
 
-#### Install level: Attribution hijacking block sub reasons
+#### anomalías en ctit, secuestro de instalación
 
-| Blocked reason | Blocked sub reason | Description |
+| Motivo del bloqueo | Submotivo de bloqueo | Descripción |
 | --- | --- | --- |
-| ctit\_anomalies | short\_ctit | Install blocked due to short CTIT: Protect360 defined |
-| install\_hijacking | referrer\_hijack | Blocked hijacking attempt based on GooglePlay API and AppsFlyer SDK parameters |
-| install\_hijacking | integration\_temporarily\_blocked | Install blocked because the partner (pid) has extremely high fraud rates and significant anomalies in all their traffic |
-| validation\_hijacking | short\_ctit | Install blocked due to short CTIT: Customer defined |
-| validation\_hijacking | empty\_site\_id | Install blocked due to unpopulated site ID. Rule implementation is phased |
-| validation\_hijacking | validation\_rules | Rules where the outcome is blocked attribution based on manually defined validation rule |
+| anomalías en ctit | ctit corto | Instalación bloqueada debido a CTIT reducido: Definido por Protect360 |
+| secuestro de instalación | referrer\_hijack | Intento de secuestro bloqueado basándose en parámetros de la API de GooglePlay y el SDK de AppsFlyer |
+| secuestro de instalación | integración temporalmente bloqueada | Instalación bloqueada porque el socio (pid) tiene tasas de fraude extremadamente altas y anomalías significativas en todo su tráfico |
+| secuestro durante la validación | ctit corto | Instalación bloqueada debido a CTIT reducido: Definido por el cliente |
+| secuestro durante la validación | ID del sitio vacío | Instalación bloqueada debido a que el ID del sitio no está completado. La implementación de la regla se realiza por etapas |
+| secuestro durante la validación | reglas de validación | Reglas donde el resultado es una atribución bloqueada basada en una regla de validación definida manualmente |
 
 </Accordion>
 
 <div id="cluster-level-blocked-reasons" />
 
-<Accordion title="Cluster level blocked reasons">
+<Accordion title="Motivos de bloqueo a nivel de clúster">
 
-When a pattern of fraud is detected, the fraud source is denylisted. Installs from this denylisted source are blocked either because of:
+Cuando se detecta un patrón de fraude, la fuente se coloca en una lista de exclusión. Las instalaciones procedentes de esta fuente excluida están bloqueadas por:
 
-* A fake install, meaning the user installing the app is not a real person. In this case, the attribution is completely blocked.
-* Attribution hijacking, where the user is real but the engagement is falsified. In this case, the fraudulent engagement is blocked and attribution is re-assigned to the first valid contributing ad-network.
+* Una instalación falsa, lo que significa que el usuario que instala la aplicación no es una persona real. En este caso, la atribución está completamente bloqueada.
+* Secuestro de atribución, donde el usuario es real pero el compromiso es falsificado. En este caso, se bloquea la participación fraudulenta y se reasigna la atribución a la primera red publicitaria contribuyente válida.
 
-The following tables list possible cluster level blocked reasons:
+Las siguientes tablas enumeran posibles motivos de bloqueo a nivel de clúster:
 
-#### Cluster level: Fake install block reasons
+#### Nivel de clúster: Motivos para el bloqueo de instalaciones falsas
 
-| Blocked reason | Blocked sub reason | Description |
+| Motivo del bloqueo | Submotivo de bloqueo | Descripción |
 | --- | --- | --- |
-| bots | timestamp\_anomalies | Anomalies related to attribution flow click times and other timestamps collected from the device |
-| bots, site\_blacklist | device\_emulators | Installs generated on a large scale by automatic scripts working in virtual environments |
-| site\_blacklist | device\_farms | High rates of unknown (new) devices |
-| behavioral\_anomalies | behavioral\_anomalies | Suspicious in-app behavior compared to common app user behavior pattern |
+| Bots | timestamp\_anomalies | Anomalías relacionadas con tiempos de clic en el flujo de atribución y otras marcas de tiempo recogidas del dispositivo |
+| bots, lista negra de sitios | emuladores de dispositivos | Instalaciones generadas a gran escala por scripts automáticos funcionando en entornos virtuales |
+| lista negra de sitios | granjas de dispositivos | Altas tasas de dispositivos desconocidos (nuevos) |
+| anomalías en el comportamiento | anomalías en el comportamiento | Comportamiento sospechoso en la aplicación comparado con el patrón habitual de los usuarios |
 
-#### Cluster level: Attribution hijacking block reasons
+#### Nivel de clúster: Motivos por los que se bloquea el secuestro de atribución
 
-| Blocked reason | Blocked sub reason | Description |
+| Motivo del bloqueo | Submotivo de bloqueo | Descripción |
 | --- | --- | --- |
-| ctit\_anomalies, install\_hijacking | ctit\_anomalies | Abnormal CTIT pattern per app standards |
-| click\_flood | click\_flood | Abnormally high click volume across long CTIT distribution |
-| install\_hijacking | click\_clusters | Clicks generated by a device-level malware |
-| Re-engagement Hijacking | Re-engagement Click Clusters | Detects fraudulent attempts to hijack re-engagement attribution. These manipulations aim to steal credit from legitimate retargeting networks or even from users who didn’t see any retargeting ad at all.<br />Once detected, attribution is corrected and reassigned to:<ul><li>The valid retargeting network</li><li>The original user acquisition (UA) provider</li><li>Organic, if the user installed the app without being exposed to any valid retargeting ad</li></ul> |
+| ctit\_anomalies, install\_hijacking | anomalías en ctit | Patrón CTIT anómalo según los estándares de la aplicación |
+| inundación de clics | inundación de clics | Volumen de clics anormalmente alto en una distribución extensa de CTIT |
+| secuestro de instalación | Comentario | Clics generados por malware a nivel de dispositivo |
+| Secuestro de re-engagement | agrupaciones de clics | Detecta intentos fraudulentos de secuestrar la atribución de re-engagement. Estas manipulaciones tienen como objetivo robar el mérito a redes de retargeting legítimas o incluso a usuarios que no vieron ningún anuncio de retargeting.<br />Una vez detectado, la atribución se corrige y se reasigna a:<ul><li>La red de retargeting válida</li><li>El proveedor original de adquisición de usuarios (UA)</li><li>Orgánico, si el usuario instaló la app sin haber estado expuesto a ningún anuncio de retargeting válido</li></ul> |
 
 </Accordion>
 
 <div id="inapp-level-blocked-reasons" />
 
-<Accordion title="In-app level blocked reasons">
+<Accordion title="Motivos de bloqueo a nivel de aplicación">
 
-In-app events can be blocked for the following reasons:
+Los eventos dentro de la aplicación pueden bloquearse por las siguientes razones:
 
-* The initial install was identified as fake.
-* Because of a defined validation rule.
-* Because our algorithm detects fraud.
+* La instalación inicial se ha identificado como falsa.
+* Debido a una regla de validación establecida.
+* Porque nuestro algoritmo detecta fraude.
 
-The following table lists possible in-app level blocked reasons.
+La siguiente tabla enumera las posibles razones de bloqueo a nivel de aplicación.
 
-#### In-app level block reasons
+#### Razones de bloqueo a nivel de aplicación
 
-| Blocked reason | Blocked sub reason | Description |
+| Motivo del bloqueo | Submotivo de bloqueo | Descripción |
 | --- | --- | --- |
-| Inherits from install | Inherits from install | Initial install identified as fake based on [install](/docs/protect360-raw-data-reports#install-level-blocked-reasons) or [denylisted](/docs/protect360-raw-data-reports#cluster-level-blocked-reasons) level reason |
-| inapps\_bots | fake\_device\_parameters | AppsFlyer algorithm detects fraud |
-| in\_app\_store\_validation | - | <Anchor target="_blank" href="/marketers/docs/legacy-receipt-validation-for-in-app-purchases">Receipt validation</Anchor> for in-app purchase fails. |
-| validation\_inapps | validation\_rules | Based on manually defined validation rule |
+| Hereda de la instalación | Hereda de la instalación | Instalación inicial identificada como falsa según el motivo a nivel de [instalación](/docs/protect360-raw-data-reports#install-level-blocked-reasons) o [lista de denegados](/docs/protect360-raw-data-reports#cluster-level-blocked-reasons) |
+| inapps\_bots | parámetros de dispositivo falso | El algoritmo de AppsFlyer detecta el fraude |
+| Validación en la tienda de aplicaciones | - | <Anchor target="_blank" href="/marketers/es/docs/legacy-receipt-validation-for-in-app-purchases">Falla la validación del recibo</Anchor> para la compra dentro de la aplicación. |
+| validación\_inapps | reglas de validación | Basado en una regla de validación definida manualmente |
 
 </Accordion>
 
-### Retargeting
+### Redireccionamiento
 
-Protect360 raw data includes fraudulent installs and sessions from retargeting campaigns (known as re-attributions and re-engagements, respectively). Data displays using the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#event">event name</Anchor> and <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::e9c68f6c">retargeting conversion type</Anchor> fields. They are marked as either an:
+Los datos sin procesar de Protect360 incluyen instalaciones y sesiones fraudulentas de campañas de retargeting (conocidas como re-atribuciones y reenganches, respectivamente). Los datos se muestran utilizando los campos de <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#event">nombre de evento</Anchor>  y <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#attribution::e9c68f6c">tipo de conversión de retargeting</Anchor> . Se marcan como:
 
-* Install (applies to event name, but not retargeting conversion type)
-* Re-attribution
-* Re-engagement
-* Reinstall
+* Instalación (aplica al nombre del evento, pero no al tipo de conversión de redireccionamiento)
+* Re-atribución
+* Reengagement
+* Reinstalar
 
-Protect360 retargeting raw data is available for real-time blocks and fraud identified post attribution as follows:
+Los datos sin procesar de retargeting de Protect360 están disponibles para bloqueos en tiempo real y fraudes identificados después de la atribución de la siguiente manera:
 
-<table><thead><tr><th>Report </th><th>Export data</th><th>Pull API</th><th>Data Locker</th></tr></thead><tbody><tr><td>Installs</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Post-attribution installs</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"><span>\* Re-engagement data not available</span><br/> </td></tr></tbody></table>
+<table><thead><tr><th>Informe </th><th>Exportar datos</th><th>API de extracción</th><th>Casillero de datos</th></tr></thead><tbody><tr><td>Instalaciones</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Instalaciones posteriores a la atribución</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Datos de reenganche no disponibles</span><br/> </td></tr></tbody></table>
 
-### Hijacked installs attribution correction
+### Corrección de atribución de instalaciones secuestradas
 
-For hijacked installs, AppsFlyer blocks attribution to the fraudulent network and instead attributes the last legitimate contributor source.
+Para instalaciones secuestradas, AppsFlyer bloquea la atribución a la red fraudulenta, atribuyendo la última fuente legítima de contribución.
 
-For hijacked installs use the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#protect360">rejected\_reason\_value</Anchor> field to identify the valid contributor (media source), meaning the contributor that should have originally received attribution.
+Para las instalaciones secuestradas usa el <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#protect360">rejected\_reason\_value</Anchor> campo para identificar al contribuyente válido (fuente de medios), es decir, el contribuyente que debería haber recibido originalmente la atribución.
 
-* The **rejected\_reason\_value** is populated with either <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::2a6fd501">**contributor[1-3]**</Anchor> or **organic**. Check the **contributor[1-3]** **media source/partner** fields to view the contributor details and reconcile.
-* If the contributor fields are not displayed in your report, they are available to be added from the **Export data** page.
+* El **rejected\_reason\_value** se completa con <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#attribution::2a6fd501">**contributor[1-3]**</Anchor> o **orgánico. Consulta los campos de** contribuidor[1-3] fuente de medios/compañero  **para ver detalles del contribuyente y conciliar.**
+* Si los campos de contribuyente no se muestran en tu informe, se pueden añadir desde la página de **Exportar datos**.
 
-**Note**: When hijacked installs are blocked in real-time, the correct attributions display in AppsFlyer dashboards and reports (not just Protect360). When hijacked installs are identified post-attribution, the correct attributions are displayed only in Protect360 raw data.
+**Nota**: Cuando las instalaciones secuestradas se bloquean en tiempo real, las atribuciones correctas se muestran en los paneles e informes de AppsFlyer (no solo en Protect360). Cuando se identifican instalaciones secuestradas después de la atribución, las atribuciones correctas se muestran únicamente en los datos sin procesar de Protect360.
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Características y limitaciones">
 
-| Trait | Remark |
+| Caducado | Nota |
 | --- | --- |
-| Inapps reports | The inapps reports don't include the contributor field. The contributor fields are available in the installs report only. |
-| Empty values | Due to raw data restrictions related to privacy, the raw reports may show fields with empty values. An example of this is the contributor fields. |
+| Informes de inapps | Los informes de inapps no incluyen el campo de contribuidor. El campo de contribuidor solo está disponible en el informe de instalaciones. |
+| Valores vacíos | Debido a las restricciones de datos sin procesar relacionadas con la privacidad, los informes sin procesar pueden mostrar campos con valores vacíos. Un ejemplo de esto son los campos de colaboradores. |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HE7S55TCE60A34T6RCNTCQK8=about-protect360-raw-data-reports h_01J91EP40Q69KXXF2SR66AM2FQ=note h_01HE7S55TC4G31R9EANMKCZ7V5=report-types protect360-rawdata-report-types=protect360-raw-data-report-types h_01HE7S55TCKQYTXPV6J54SHM0D=protect360-raw-data-report-types h_01HE7S55TC4F5S243BSGN74RDK=postattribution-reports using-postattribution-reports=using-post-attribution-reports h_01HE7S55TC7KCF75KFXHCE3K2K=using-post-attribution-reports h_01HE7S55TCR8BKZ0PQ5B14X3X4=example h_01HE7S55TC95YC1BJJ0ZERCQ14=raw-data-availability-by-tool-type protect360-rawdata-availability-by-tool-type=protect360-raw-data-availability-by-tool-type h_01HE7S55TCH4CES29C5J3QXQK4=protect360-raw-data-availability-by-tool-type h_01HE7S55TC3MRT6E9QV0J0X6FC=getting-raw-data-reports h_01HE7S55TCBVFQ1DH06G53BNEN=download h_01HE7S55TCMT81J4SWBFQFYV2C=pull-api h_01HE7S55TCRRD95D0QPCXBRF8T=pull-api-raw-data-report-parameters h_01HE7S55TCMAY86J1HKYB0APZ6=data-locker h_01HE7S55TCS91ZC9V3K0VDSVXK=protect360-report-structure h_01HE7S55TC1ZEDD5ABD21FCPY2=blocked-reasons h_01HE7S55TDMDSVQCVSV5YS3CZN=click-level-blocked-reasons h_01HE7S55TD754T07FWHFK5P71K=install-level-blocked-reasons install-level-fake-install-block-reasons=install-level-fake-install-block-sub-reasons h_01HE7S55TDHTE5P47N1CCREGZX=install-level-fake-install-block-sub-reasons install-level-attribution-hijacking-block-reasons=install-level-attribution-hijacking-block-sub-reasons h_01HE7S55TDFA6WGAHE80ECV8CA=install-level-attribution-hijacking-block-sub-reasons h_01HE7S55TDCHG0CVJA3JRSAW3G=cluster-level-blocked-reasons h_01HE7S55TDBES0BY0FF3WKSSVG=cluster-level-fake-install-block-reasons h_01HE7S55TD3M45TH4PY2W805W7=cluster-level-attribution-hijacking-block-reasons h_01HE7S55TDGB05PEZX8KS3J3QJ=inapp-level-blocked-reasons inapp-level-block-reasons=in-app-level-block-reasons h_01HE7S55TD661EHCV50S9BW5MS=in-app-level-block-reasons h_01HE7S55TDSYDC8BWZ8D8DF9JE=retargeting h_01HE7S55TD8SDCQJCCYQC0MNES=hijacked-installs-attribution-correction h_01J91E55BXQ4E01A9R3EB33WYF=traits-and-limitations" />
+<div data-zendesk-anchors="about-protect360-raw-data-reports=sobre-los-informes-de-datos-sin-procesar-de-protect360 h_01HE7S55TCE60A34T6RCNTCQK8=sobre-los-informes-de-datos-sin-procesar-de-protect360 h_01J91EP40Q69KXXF2SR66AM2FQ=nota h_01HE7S55TC4G31R9EANMKCZ7V5=report-types protect360-rawdata-report-types=tipos-de-informes-de-datos-sin-procesar-de-protect360 h_01HE7S55TCKQYTXPV6J54SHM0D=tipos-de-informes-de-datos-sin-procesar-de-protect360 h_01HE7S55TC4F5S243BSGN74RDK=postattribution-reports using-postattribution-reports=uso-de-informes-post-activos h_01HE7S55TC7KCF75KFXHCE3K2K=uso-de-informes-post-activos h_01HE7S55TCR8BKZ0PQ5B14X3X4=ejemplo h_01HE7S55TC95YC1BJJ0ZERCQ14=raw-data-availability-by-tool-type protect360-rawdata-availability-by-tool-type=disponibilidad-de-datos-sin-procesar-de-protect360-por-tipo-de-herramienta h_01HE7S55TCH4CES29C5J3QXQK4=disponibilidad-de-datos-sin-procesar-de-protect360-por-tipo-de-herramienta getting-raw-data-reports=obteniendo-informes-de-datos-sin-procesar h_01HE7S55TC3MRT6E9QV0J0X6FC=obteniendo-informes-de-datos-sin-procesar h_01HE7S55TCBVFQ1DH06G53BNEN=download h_01HE7S55TCMT81J4SWBFQFYV2C=pull-api pull-api-raw-data-report-parameters=par%C3%A1metros-del-informe-de-datos-sin-procesar-de-la-api-de-extracci%C3%B3n h_01HE7S55TCRRD95D0QPCXBRF8T=par%C3%A1metros-del-informe-de-datos-sin-procesar-de-la-api-de-extracci%C3%B3n h_01HE7S55TCMAY86J1HKYB0APZ6=data-locker protect360-report-structure=estructura-del-informe-de-protect360 h_01HE7S55TCS91ZC9V3K0VDSVXK=estructura-del-informe-de-protect360 blocked-reasons=motivos-de-bloqueo h_01HE7S55TC1ZEDD5ABD21FCPY2=motivos-de-bloqueo h_01HE7S55TDMDSVQCVSV5YS3CZN=click-level-blocked-reasons h_01HE7S55TD754T07FWHFK5P71K=install-level-blocked-reasons install-level-fake-install-block-reasons=nivel-de-instalaci%C3%B3n-motivos-para-el-bloqueo-de-instalaciones-falsas h_01HE7S55TDHTE5P47N1CCREGZX=nivel-de-instalaci%C3%B3n-motivos-para-el-bloqueo-de-instalaciones-falsas install-level-attribution-hijacking-block-reasons=anomal%C3%ADas-en-ctit-secuestro-de-instalaci%C3%B3n h_01HE7S55TDFA6WGAHE80ECV8CA=anomal%C3%ADas-en-ctit-secuestro-de-instalaci%C3%B3n h_01HE7S55TDCHG0CVJA3JRSAW3G=cluster-level-blocked-reasons cluster-level-fake-install-block-reasons=nivel-de-cl%C3%BAster-motivos-para-el-bloqueo-de-instalaciones-falsas h_01HE7S55TDBES0BY0FF3WKSSVG=nivel-de-cl%C3%BAster-motivos-para-el-bloqueo-de-instalaciones-falsas cluster-level-attribution-hijacking-block-reasons=nivel-de-cl%C3%BAster-motivos-por-los-que-se-bloquea-el-secuestro-de-atribuci%C3%B3n h_01HE7S55TD3M45TH4PY2W805W7=nivel-de-cl%C3%BAster-motivos-por-los-que-se-bloquea-el-secuestro-de-atribuci%C3%B3n h_01HE7S55TDGB05PEZX8KS3J3QJ=inapp-level-blocked-reasons inapp-level-block-reasons=razones-de-bloqueo-a-nivel-de-aplicaci%C3%B3n h_01HE7S55TD661EHCV50S9BW5MS=razones-de-bloqueo-a-nivel-de-aplicaci%C3%B3n retargeting=redireccionamiento h_01HE7S55TDSYDC8BWZ8D8DF9JE=redireccionamiento hijacked-installs-attribution-correction=correcci%C3%B3n-de-atribuci%C3%B3n-de-instalaciones-secuestradas h_01HE7S55TD8SDCQJCCYQC0MNES=correcci%C3%B3n-de-atribuci%C3%B3n-de-instalaciones-secuestradas h_01J91E55BXQ4E01A9R3EB33WYF=traits-and-limitations" />

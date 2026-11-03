@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: New ad revenue SDK API for AppsFlyer SDK version 6.15+'
+title: >-
+  Boletín: nueva API del SDK de ingresos por anuncios para AppsFlyer SDK versión
+  6.15+
 metadata:
   keywords:
     - Premium Feature
@@ -14,16 +16,15 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2024-07-24T08:59:01Z'
-  edited_at: '2024-08-02T14:32:42Z'
+  edited_at: '2026-10-20T03:55:27Z'
   id: 26956998859153
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/26956998859153-Bulletin-New-ad-revenue-SDK-API-for-AppsFlyer-SDK-version-6-15
+  url: https://support.appsflyer.com/hc/es/articles/26956998859153
 ---
-| **What's new** | Impression-level ad revenue is now available using the AdRevenue SDK API instead of via the ad revenue SDK connector. |
+| **¿Qué hay de nuevo?** | Los ingresos publicitarios a nivel de impresión ahora están disponibles usando la API AdRevenue SDK en lugar del conector del SDK de ingresos publicitarios. |
 | --- | --- |
-| **Starting** | AppsFlyer SDK version 6.15 |
-| **What you need to know** | <ul><li>Until now, impression-level ad revenue has been available via the AppsFlyer ad revenue SDK **connector**. From the effective date, the integration will be via the AppsFlyer **SDK** itself (not a connector), using the ad revenue SDK API.</li><li>The ad revenue SDK connector will continue to work with:<ul><li>AppsFlyer Android SDK version 6.14.2 and below.</li><li>AppsFlyer iOS SDK version 6.14.6 and below.</li></ul></li></ul> |
-| **What you need to do** | <ul><li>If you want to upgrade to AppsFlyer SDK version 6.15+ and you currently have the ad revenue SDK connector implemented, you need to remove the ad revenue SDK connector and integrate the ad revenue SDK API.</li><li>Developer required. See developer <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue">ad revenue SDK API instructions</Anchor>.</li><li>Learn more about <Anchor target="_blank" href="/marketers/docs/integrate-the-roi360-ad-revenue-sdk-api">impression-level ad revenue SDK API integration</Anchor>.</li></ul> |
+| **A partir de** | AppsFlyer SDK versión 6.15 |
+| **Lo que debes saber:** | <ul><li>Hasta ahora, los ingresos por anuncios a nivel de impresión estaban disponibles a través del **conector** del SDK de ingresos publicitarios de AppsFlyer. A partir de la fecha efectiva, la integración se realizará mediante el **SDK** de AppsFlyer en sí (no un conector), utilizando la API del SDK de ingresos publicitarios.</li><li>El conector del SDK de ingresos publicitarios seguirá funcionando con:<ul><li>AppsFlyer Android SDK versión 6.14.2 y anteriores.</li><li>AppsFlyer iOS SDK versión 6.14.6 y anteriores.</li></ul></li></ul> |
+| **Lo que debes hacer** | <ul><li>Si deseas actualizar a AppsFlyer SDK versión 6.15+ y actualmente tienes implementado el conector del SDK de ingresos publicitarios, debes eliminar el conector e integrar la API AdRevenue SDK.</li><li>Se requiere un desarrollador. Consulta las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue">instrucciones para desarrolladores de la API del SDK de ingresos publicitarios</Anchor>.</li><li>Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/integrate-the-roi360-ad-revenue-sdk-api">integración de la API del SDK de ingresos publicitarios a nivel de impresión</Anchor>.</li></ul> |

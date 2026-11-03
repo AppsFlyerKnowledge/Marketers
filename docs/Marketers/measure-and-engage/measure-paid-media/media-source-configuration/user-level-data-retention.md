@@ -1,5 +1,5 @@
 ---
-title: User-level data retention
+title: Retención de datos a nivel de usuario
 metadata:
   keywords:
     - Advertisers
@@ -18,72 +18,72 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2020-02-23T15:35:57Z'
-  edited_at: '2026-09-01T11:14:24Z'
+  edited_at: '2026-11-03T01:57:47Z'
   id: 360006091197
-  locale: en-us
+  locale: es
   section: Media source configuration
   section_id: 6551067072785
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360006091197-User-level-data-retention
+  url: https://support.appsflyer.com/hc/es/articles/360006091197
 ---
-> **At a glance:** Retention and user-level (raw data) use policies are determined by AppsFlyer, relevant laws, and SRNs ("**Partners**") terms of use.
+> **En resumen:** Las políticas de retención y uso a nivel de usuario (raw data) están determinadas por AppsFlyer, las leyes pertinentes y las condiciones de uno de SRN ("**Partners**").
 
-> ❗️ **Caution**
+> ❗️ **Importante**
 >
-> AppsFlyer provides the data restriction explanations, in this article, for information purposes only.  *Nothing stated here is legal advice. It is provided for your information and convenience.*
+> AppsFlyer proporciona las explicaciones de restricción de datos, en este artículo, solo con fines informativos.  *Nada de lo que se indica aquí es asesoramiento legal. Se proporciona para tu información y comodidad.*
 
-## Data retention and deletion obligations
+## Obligaciones de conservación y eliminación de datos
 
-AppsFlyer receives user-level data from apps, partners, and other sources.
+AppsFlyer recibe datos a nivel de usuario de aplicaciones, partners y otras fuentes.
 
-### Availability of user-level data to advertisers
+### Disponibilidad de datos a nivel de usuario para los anunciantes
 
-Typically, user-level data is made available to advertisers via raw data reporting tools if their subscription package includes raw data during a 90-day access window (See <Anchor target="_blank" href="/marketers/docs/data-availability-windows">data availability windows</Anchor>). In some cases, there are also <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">raw data restrictions</Anchor>.
+Por lo general, los datos a nivel de usuario se ponen a disposición de los anunciantes a través de herramientas de generación de reportes de raw data si su paquete de suscripción incluye datos de raw data durante un período de acceso de 90 días (consultar <Anchor target="_blank" href="/marketers/es/docs/data-availability-windows">ventanas de disponibilidad de datos</Anchor>). En algunos casos, hay <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">Restricciones de raw data</Anchor>.
 
-### Data retention
+### Retención de datos
 
-AppsFlyer retains user-level data for a limited period. Raw data retention periods vary depending on the delivery method and partner requirements. In general:
+AppsFlyer conserva los datos a nivel de usuario durante un período de retención limitado. Los períodos de retención de raw data varían según el método de entrega y los requisitos del partner. En general:
 
-* **User-level raw data** retention period is based on integration type and partner requirements.
-* **Aggregated data** is retained for up to 25 months.
+* El período de retención de **raw data a nivel usuario** se basa en el tipo de integración y los requisitos del partner.
+* Los **datos agregados** se conservan durante un máximo de 25 meses.
 
-Before the end of the retention period, user events are attributed to the media source that brought the user. After the end of the retention period, user events are attributed to organic.
+Antes de que finalice el período de retención, los eventos de usuario se atribuyen a la fuente de medios que trae al usuario. Una vez finalizado el período de retención, los eventos del usuario se atribuyen a orgánico.
 
-The retention period is determined according to the following:
+El período de retención se determina de acuerdo con lo siguiente:
 
-* <Anchor target="_blank" href="https://www.appsflyer.com/legal/processing-customer-data/">AppsFlyer Services Privacy Policy</Anchor>
-* As directed, required, or allowed by law
-* Partner terms of use and retention period as listed in the table that follows.
+* <Anchor target="_blank" href="https://www.appsflyer.com/legal/processing-customer-data/">Política de privacidad de los servicios de AppsFlyer</Anchor>
+* Según lo indique, exija o permita la ley
+* Términos de uso y período de retención de los partners, como se indica en la tabla siguiente.
 
-Consider the following:
+Ten en cuenta lo siguiente:
 
-* The access window and retention period may differ
-* AppsFlyer, in some cases, may extend the access window
-* The retention period can vary per partner, bringing the user
-* Some user-level data is attributed to the <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">restricted media source</Anchor>, which means that raw data doesn't contain the attribution data. This can occur in the following instances:
-  * Partner data sharing policy
-  * <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> is on
+* La ventana de acceso y el período de retención pueden diferir.
+* AppsFlyer, en algunos casos, puede ampliar la ventana de acceso.
+* El período de retención puede variar según el partner que trae el usuario
+* Algunos datos a nivel de usuario se atribuyen a la función <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">fuente de medios restringida</Anchor>, lo que significa que los raw data no contienen los datos de atribución. Esto puede ocurrir en los siguientes casos:
+  * Política de uso compartido de datos de partner
+  * La <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">privacidad avanzada agregada</Anchor> está activada.
 
-#### Partner data retention periods
+#### Periodos de conservación de los datos de partners
 
-| SRN/partner | Partner ID (PID) | After install, delete data after [x] months |
+| SRN/partner | ID de partner (PID) | Después de la instalación, elimina los datos después de [x] meses |
 | --- | --- | --- |
-| Amazon Ads | amazondsp\_int | 12 |
-| Apple Search Ads | Apple Search Ads | No limit |
+| Anuncios de Amazon | amazondsp\_int | 12 |
+| Anuncios en la búsqueda de Apple | Anuncios en la búsqueda de Apple | Sin límite |
 | Discord | discord\_int | 6 |
 | DV360 | dv360\_int, doubleclick\_int | 6 |
-| Google Ads* | googleadwords\_int (all channels) | 6 |
+| Anuncios de Google* | googleadwords\_int (todos los canales) | 6 |
 | Hotstar | hotstar\_int | 6 |
-| Meta ads* | facebook\_int (all channels) | 6 |
-| Microsoft | microsoftdisplay\_int and bingsearch\_int | 13 |
+| Anuncios de Meta* | facebook\_int (todos los canales) | 6 |
+| Microsoft | microsoftdisplay\_int y bingsearch\_int | 13 |
 | Pinterest | pinterest\_int | 6 |
 | Samsung DSP | samsungdsp\_int | 3 |
-| Snapchat* (<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/article/attribution-terms">TOS</Anchor>) | snapchat\_int | 6 |
-| TikTok for Business* | tiktokglobal\_int | 13 |
-| X Ads (formerly Twitter) | twitter\_int | 3 |
+| Snapchat* (<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/article/attribution-terms">TOS</Anchor>) | "snapchat\_int" | 6 |
+| TikTok para empresas* | tiktokglobal\_int | 13 |
+| X Ads (anteriormente Twitter) | twitter\_int | 3 |
+| Walmart | walmart\_int | 6 |
 
-> 📘 **Note***
+> 📘 **Nota***
 >
-> For SRNs, the retention periods in this table apply only to data provided by the SRN directly. They do not apply to attribution made via AppsFlyer W2A attribution links (`googleads_int`, `metaweb_int`, `tiktokweb_int`, `snapweb_int`).
+> En el caso de los SRN, los períodos de retención de esta tabla solo se aplican a los datos proporcionados directamente por el SRN. No se aplican a la atribución realizada mediante los enlaces de atribución W2A de AppsFlyer (`googleads_int`, `metaweb_int`, `tiktokweb_int`, `snapweb_int`).
 
-<div data-zendesk-anchors="h_01H95FY07TRAAD3K0A0TSG3RB6=caution h_01H95FY07TABPC769R7TYGY5DD=data-retention-and-deletion-obligations availability-of-userlevel-data-to-advertisers=availability-of-user-level-data-to-advertisers h_01H95FY07T2Q9QAGW5A5S6KP6J=availability-of-user-level-data-to-advertisers h_01H95FY07TXS63FVDJC2NEFXYC=data-retention h_01H95FY07TZ4N0RRJRGJ6FN2EK=partner-data-retention-periods h_01KRKAWSHH2WFZT9Q5M0FSBBAB=note" />
+<div data-zendesk-anchors="h_01H95FY07TRAAD3K0A0TSG3RB6=importante data-retention-and-deletion-obligations=obligaciones-de-conservaci%C3%B3n-y-eliminaci%C3%B3n-de-datos h_01H95FY07TABPC769R7TYGY5DD=obligaciones-de-conservaci%C3%B3n-y-eliminaci%C3%B3n-de-datos availability-of-userlevel-data-to-advertisers=disponibilidad-de-datos-a-nivel-de-usuario-para-los-anunciantes h_01H95FY07T2Q9QAGW5A5S6KP6J=disponibilidad-de-datos-a-nivel-de-usuario-para-los-anunciantes data-retention=retenci%C3%B3n-de-datos h_01H95FY07TXS63FVDJC2NEFXYC=retenci%C3%B3n-de-datos partner-data-retention-periods=periodos-de-conservaci%C3%B3n-de-los-datos-de-partners h_01H95FY07TZ4N0RRJRGJ6FN2EK=periodos-de-conservaci%C3%B3n-de-los-datos-de-partners h_01KRKAWSHH2WFZT9Q5M0FSBBAB=nota" />

@@ -1,5 +1,7 @@
 ---
-title: '[Legacy] X Ads (formerly Twitter Ads) integration setup'
+title: >-
+  [Legacy] Configuración de la integración de X Ads (anteriormente Twitter Ads)
+  anuncios
 deprecated: true
 metadata:
   keywords:
@@ -13,227 +15,226 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2025-06-22T11:41:06Z'
-  edited_at: '2026-09-15T09:20:35Z'
+  edited_at: '2026-09-17T00:30:13Z'
   id: 36433415114769
-  locale: en-us
+  locale: es
   section: X Ads (formerly Twitter Ads)
   section_id: 6551370375569
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/36433415114769--Legacy-X-Ads-formerly-Twitter-Ads-integration-setup
+  url: https://support.appsflyer.com/hc/es/articles/36433415114769
 ---
-> **At a glance:** Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns.
+> **En resumen:** Integra tu cuenta de X Ads con AppsFlyer para mostrar los datos de atribución de las campañas de X Ads.
 
-## Connecting your X Ads account to AppsFlyer
+## Conexión de tu cuenta de X Ads a AppsFlyer
 
-<Accordion title="Watch">
+<Accordion title="Ver">
 
-<Embed title="[Legacy] X Ads (formerly Twitter Ads) integration setup" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/a65pnqoyxw" providerUrl="https://fast.wistia.com" />
+<Embed title="[Legacy] Configuración de la integración de X Ads (anteriormente Twitter Ads) anuncios" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/a65pnqoyxw" providerUrl="https://fast.wistia.com" />
 
 </Accordion>
 
-<Accordion title="Read">
+<Accordion title="Leer texto">
 
-> 📘 **Before you begin**
+> 📘 **Antes de comenzar**
 >
-> Make sure you've <Anchor target="_blank" href="https://business.twitter.com/en/help/account-setup/billing-basics.html">added a payment method</Anchor> to your X Ads account. Otherwise, you won't be able to activate the partner integration in AppsFlyer.
+> Asegúrate de haber <Anchor target="_blank" href="https://business.twitter.com/en/help/account-setup/billing-basics.html">agregado un método de pago</Anchor> a tu cuenta de X Ads. De lo contrario, no podrás activar la integración del partner en AppsFlyer.
 
-1. Log in to your X Ads Account at <Anchor target="_blank" href="https://ads.twitter.com">ads.twitter.com</Anchor>  
-   If you're not automatically directed to the Ads page, click the Ads button at the top-left corner.
-2. When prompted to select either a **Simple (NEW)** or **Advanced** campaign, select **Advanced**.
-3. Under **Campaign objective**, select **App Installs** or **App re-engagements**, then click **Next**.
+1. Inicia sesión en tu cuenta de X Ads en <Anchor target="_blank" href="https://ads.twitter.com">ads.twitter.com</Anchor>  
+   Si no se te dirige automáticamente a la página de anuncios, haz clic en el botón Anuncios en la esquina superior izquierda.
+2. Cuando se te pida que selecciones una campaña **Simple (NUEVA)** o **Avanzada**, selecciona **Avanzada**.
+3. En **Objetivo de la campaña**, selecciona **Instalaciones de la app** o **Re-engagements de la app** y, a continuación, haz clic en **Siguiente**.
 
    ![twitter-campaign-objective.png](https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png)
-4. Choose your app, then click the **mobile measurement partner** link.
-5. On the **Conversion tracking** page, click **Go to AppsFlyer**. 
+4. Elige tu aplicación y, a continuación, haz clic en el **enlace del partner de medición móvil**.
+5. En la página **Seguimiento de conversiones** , haz clic en **Ir a AppsFlyer**. 
 
    ![twitter-mmp-selection.png](https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png)
-6. A notification displays informing you that you're about to leave X Ads to go to the AppsFlyer website. Click **Go to AppsFlyer** and log in to your Dashboard.
+6. Aparece una notificación que te informa de que estás a punto de salir de X Ads para ir al sitio web de AppsFlyer. Haz clic en **Ir a AppsFlyer** e inicia sesión en tu dashboard.
 
    <Image alt="twitter-go-to-appsflyer.png" src="https://files.readme.io/bca10eea5032a495fd38c996d0aa4a9f2db8a285211e6cf0860dd6f21bcfa670-36433422307601.png" width="576px" />
-7. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab.
-8. Search for **X Ads** and select it.
-9. In the **Integration** tab, accept the X Ads Terms and Conditions for Mobile App Conversion Recording (MACT), then click **Save integration**.
-10. Turn on **Activate partner**, and click **Log in with X Ads**.
-11. Authorize AppsFlyer to use your X Ads account by clicking **Authorize app**.
+7. En AppsFlyer, en el menú lateral, selecciona **Collaborate** > **Partner Integrations > Marketplace** tab.
+8. Busca **X Ads** y selecciónalo.
+9. En la pestaña **Integración** , acepta los Términos y Condiciones de X Ads para el registro de conversiones en aplicaciones móviles (MACT) y luego haz clic en **Guardar integración**.
+10. Activa **Activar partner** y haz clic en **Iniciar sesión con X Ads**.
+11. Autoriza a AppsFlyer a usar tu cuenta de X Ads haciendo clic en **Autorizar aplicación**.
 
-    [![](https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png)](https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png)
-12. Turn on **Activate Partner** again to display the **Integration** tab settings and enable attribution.  
-    **Note:** The toggle must stay on (activated) for as long as you work with the partner. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation.</Anchor>
-13. Select your X Ads accounts to activate them, then click **Save & Close**.
+    [<Image alt="" src="https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png" width="476px" />](https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png)
+12. Activa de nuevo **Activar partner** para mostrar la configuración de la pestaña **Integración** y habilitar la atribución.  
+    **Nota:** El selector debe permanecer activado (activado) mientras trabajes con el partner. Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners.</Anchor>
+13. Selecciona tus cuentas de X Ads para activarlas y, a continuación, haz clic en **Guardar & cerrar**.
 
     ![twitter_account_name.png](https://files.readme.io/d74e9b3edd08c4ca3396b95ae20e20db99bcbe1a220318403bd6c9d6f9600282-36433415108497.png)
 
 </Accordion>
 
-## X Ads attribution setup
+## Configuración de la atribución de X Ads
 
-For a detailed description of the partner configuration page Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">here</Anchor>.
+Para ver una descripción detallada del encabezado de la página de configuración del partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">aquí</Anchor>.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de integración">
 
-The **Integration Tab** is divided into different sections, as described below. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Partner must be activated</Anchor> on the first visit to enable its setup.
+La pestaña **Integración** está dividida en diferentes secciones, tal como se describe a continuación. El <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">partner debe estar activado</Anchor> al momento de la primera visita para permitir su configuración.
 
-### Ad account connected
+### Cuenta de anuncios conectada
 
-Select the accounts to enable attribution.
+Selecciona las cuentas para habilitar la atribución.
 
 ![Twitter_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
 
-### Click-through attribution
+### Atribución por clic
 
-Use the slider to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to X Ads.
+Utiliza el control deslizante para establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a X Ads.
 
-You can customize this value to 1-23 hours or 1-30 days. We recommend setting the click-through lookback window to 14 days, to align with X Ads.
+Puedes personalizar este valor para que sea de 1-23 horas o de 1-30 días. Te recomendamos configurar la ventana de lookback por clics en 14 días para que coincida con X Ads.
 
 ![Twitter_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
 
-### View-through attribution lookback window
+### Ventana de lookback de atribución view-through
 
-This slider allows you to set the **maximum time from impression to the install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to X Ads, providing there was no other relevant ad click.
+Este control deslizante te permite establecer el **tiempo máximo de la impresión a la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de esta ventana de lookback, tras la impresión de un anuncio, se atribuyen a X Ads, siempre que no haya habido ningún otro clic en el anuncio correspondiente.
 
-You can customize this value to 1-23 hours or 1-7 days. We recommend setting the View-through lookback window to 1 day, to align with X Ads.
+Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días. Te recomendamos configurar la ventana de lookback por impresiones en 1 día para que coincida con X Ads.
 
 ![Twitter_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
 
-### Re-engagement settings
+### Configuración de re-engagement
 
-For retargeting campaigns on X Ads, AppsFlyer supports **Re-engagement** measurement only. That is an engagement with a retargeting campaign by a user who already has the app installed at the time of engagement. **Currently, re-attribution measurement is not supported by X Ads.**
+Para campañas de retargeting en X Ads, AppsFlyer solo admite **Re-engagement** medición. Eso es un engagement con una campaña de retargeting por parte de un usuario que ya tiene la aplicación instalada en el momento del engagement. **Actualmente, X Ads no admite la medición de re-engagement.**
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Ensure Retargeting is enabled for the app on the App Settings page. For details, click <Anchor target="_blank" href="/marketers/docs/app-settings#reengagement-attribution">here</Anchor>.
+> Asegúrate de que el retargeting esté habilitado para la aplicación en la página de ajustes de la aplicación. Para más detalles, haz clic <Anchor target="_blank" href="/marketers/es/docs/app-settings#reengagement-attribution">aquí</Anchor>.
 
-#### Re-engagement click-through lookback window
+#### Ventana de lookback por click-through de re-engagement
 
-Set the duration of the **Re-engagement click-through lookback window** (the maximum period of time after an ad is clicked, within which a retargeted user can be attributed to the ad). You can set the value in hours (up to 23) or days (1-30).
+Define la duración de la **ventana de lookback por click-through de re-engagement** (el período de tiempo máximo después de hacer clic en un anuncio, dentro del cual un usuario reorientado puede atribuirse al anuncio). Puedes definir el valor en horas (hasta 23) o en días (1-30).
 
 ![twitter-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
 
-#### Re-engagement view-through lookback window
+#### Ventana de lookback por view-through de re-engagement
 
-To start attributing impressions of retargeting ads, activate **Re-engagement view-through attribution**.
+Para comenzar a atribuir impresiones de anuncios de retargeting, activa la **Atribución por view-through de re-engagement**.
 
-Then, set the duration of the **Re-engagement view-through lookback window** (the maximum period of time after an ad is viewed, within which a retargeted user can be attributed to the ad). You can set the value in hours (up to 23) or days (1-7):
+Luego, define la duración de la **ventana de lookback por view-through de re-engagement** (el período de tiempo máximo después de que se visualiza un anuncio, dentro del cual un usuario reorientado puede atribuirse al anuncio). Puedes definir el valor en horas (hasta 23) o en días (1-7):
 
 ![twitter-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
 
-#### Re-engagement window
+#### Ventana de re-engagement
 
-Set the duration of the **Re-engagement window** (the period when the user's in-app events are attributed to the retargeting media source). You can set the value in days (1-90), hours (up to 23), or even lifetime:
+Define la duración de la **Ventana de re-engagement** (el período dentro del cual los eventos in-app del usuario se atribuyen a la fuente de medios de retargeting). Puede configurar el valor en días (1-90), horas (hasta 23) o incluso de por vida:
 
 ![Twitter-reengagement-window.png](https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png)
 
-### In-app event postback settings
+### Configuración de postbacks de eventos in-app
 
-In this section, you can map your AppsFlyer events with your partners via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer con tus partners a través de postbacks.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)
+[![In-app_event_postbacks_es-us.png](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)
 
-**To configure in-app event postbacks:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Set the **Partner ID** (if required).
-2. Enable **In-app event postback.**
-3. Click **Add event** to add an SDK or server-to-server event to the list.
-4. Complete the parameters required according to the table below.
+1. Configura el **ID de partner** (si es necesario).
+2. Habilita los **postbacks de eventos in-app.**
+3. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista.
+4. Completa los parámetros requeridos de acuerdo a la tabla a continuación.
 
-| Parameter | Description |
+| Parámetro | Nota |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#event-mapping">mapping configurations</Anchor>:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
-| **for users from** | Select the sending option for the event:<br /><br /><br /><br />**Note**<br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks.<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner and organic events.</li></ul> |
-| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos servidor a servidor.<br />**Consejo**: ¿No encuentras el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.</li><li>Escríbelo en **Evento de AppsFlyer**, y luego haz clic en **Crear personalizado**. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizados</Anchor>.</li></ul> |
+| **Asignado al evento de partner** | El nombre o ID único de cada evento, tal como lo define el partner. Posibles <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#mapeo-de-eventos">configuraciones de asignación</Anchor>:<ul><li>**Campo de texto:** Obtén el ID del evento correspondiente del partner.</li><li>**Cuadro desplegable:** Selecciona el evento de AppsFlyer predefinido más adecuado.</li><li>**Como está**: Envía los eventos tal como están, sin asignación de nombres.</li></ul> |
+| **para usuarios de** | Selecciona la opción de envío para el evento:<br /><br /><br /><br />**<span id="h_01HDJVBAEZATGM580CNC7BCVTN"></span>Nota:**<br />Para que X Ads reciba los postbacks atribuidos a la agencia, debes seleccionar **Todas las fuentes de medios, incluidas las orgánicas**. De lo contrario, X Ads no recibirá tales postbacks.<ul><li>**Solo este partner**: envía postbacks solo cuando este evento se atribuye a este partner.</li><li>**Todas las fuentes de medios, incluidas las orgánicas**: envían postbacks de eventos atribuidos a cualquier partner y eventos orgánicos.</li></ul> |
+| **incluyendo** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí sin el valor del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento).</li><li>**Valores sin ingresos**: envía todos los parámetros **excluyendo** el valor de ingresos.</li></ul> |
 
-5. [Optional] Click <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/9649c58fb3f46bbb89605e274623e80fbae8d31417694961f0035b7b50276aa9-36433422313105.png" width="30px" /> to set conditions for sending certain in-app events to the partner.  
-   Learn more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">conditional in-app event postbacks</Anchor>.
+5. [Opcional] Haz clic en <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png" width="30px" /> para establecer condiciones para enviar determinados eventos in-app al partner.  
+   Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">postbacks de eventos in-app condicionales</Anchor>.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlace de atribución">
 
-X Ads does not use attribution links for attribution.
+X Ads no utiliza enlaces de atribución para la atribución.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> For all <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">self-reporting networks (SRNs)</Anchor>, such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
+> Para todas las <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns">redes de autorreporte (SRN)</Anchor>, como Meta Ads, Apple Search Ads, Google Ads, X Ads, etc., esta pestaña no es funcional ya que no utilizan enlaces de atribución externos.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costo">
 
-The cost integration provides the following aggregated data:
+La integración de costos proporciona los siguientes datos agregados:
 
-* Cost data for your campaigns, adsets, ads, channel, and geo/countries. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.  
-  **Note:** Cost data requires an <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> subscription.
-* Data on clicks, impressions, and enriched data (keywords, campaign names, and adset).
+* Datos de costos para tus campañas, conjuntos de anuncios, anuncios, canal y geo/países. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de redes de publicidad</Anchor> para obtener más información sobre las dimensiones, métricas y funciones admitidas.  
+  **Nota:** Los datos de costos requieren una suscripción a <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> .
+* Datos sobre clics, impresiones y datos enriquecidos (palabras clave, nombres de campañas y conjunto de anuncios).
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el dashboard de estado de la integración de costos (e ingresos por publicidad) o en el dashboard de la red de publicidad individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue is not currently available for X-Ads.
+Los ingresos por anuncios no están disponibles actualmente para X Ads.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant X Ads, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for X Ads, the permissions tab is active and you can grant control to X Ads.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a X Ads, sea que el partner actúe como ad network, agencia o ambas. Ten en cuenta que, incluso si la atribución estuviera deshabilitada para X Ads, la pestaña permisos se encontraría activa y podrías otorgarle el control a X Ads.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-### Ad network permissions
+### Permisos de ad network
 
-* **Allow to configure integration** - permit the partner to set up the integration tab (except in-app event postbacks)
-* **Allow to configure in-app event postbacks** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* **Allow access to your retention report** - only to the partner's own retention data
-* **Allow access to your aggregate loyal user data** - only to the partner's own loyal user data
-* **Allow access to your aggregate in-app event data** - only to the partner's own in-app event data
-* **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
-* **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* **Permitir la configuración de la integración**: permite que el partner configure la pestaña integración (con excepción de postbacks de eventos in-app).
+* **Permitir la configuración de postbacks de eventos in-app**: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña integración.
+* **Permitir el acceso a tu reporte de retención**: solo para los datos propios de retención del partner.
+* **Permitir acceso a tus datos agregados de usuarios legales**: solo para los datos propios de usuarios leales del partner.
+* **Permitir acceso a tus datos agregados de eventos in-app**: solo a los datos de eventos in-app propios del partner
+* **Permitir acceso a tus datos agregados de ingresos**: solo para los datos de ingresos atribuidos al partner.
+* **Permitir el acceso a tu dashboard de Protect360**: solo para los datos propios de Protect360 del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions.</Anchor>
+Saber más sobre cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos de ad network.</Anchor>
 
-### Agency permissions
+### Permisos de la agencia
 
-Learn about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">granting agency permissions</Anchor>.
+Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">concesión de permisos de agencia</Anchor>.
 
 </Accordion>
 
-## Advanced X Ads setup video
+## Video de configuración avanzada de X Ads
 
-<Accordion title="Watch">
+<Accordion title="Ver">
 
-<Embed title="[Legacy] X Ads (formerly Twitter Ads) integration setup" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/3ypfld8enr" providerUrl="https://fast.wistia.com" />
+<Embed title="[Legacy] Configuración de la integración de X Ads (anteriormente Twitter Ads) anuncios" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/3ypfld8enr" providerUrl="https://fast.wistia.com" />
 
 </Accordion>
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Especificaciones y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Pre-roll attribution unsupported | X Ads doesn’t support MMP attribution for Pre-roll campaigns. |
-| Names | The dashboard shows IDs instead of names for **line item names** (ad set names) and **post names** (ad names). This is because AppsFlyer receives from X Ads only the IDs for these elements and not their names. |
-| Cost | For X Ads, cost data for SKAN-only campaigns (campaigns that only have SKAN installs and no "regular" installs) isn't available to agencies. The cost integration must be set up by the advertiser. And the data can only be viewed by the advertiser. |
+| Atribución de pre-roll no soportada | X Ads no admite la atribución MMP para campañas de pre-roll. |
+| Nombres | El dashboard muestra IDs en lugar de nombres para los **nombres de elementos de línea** (nombres de conjuntos de anuncios) y los **nombres de publicaciones** (nombres de anuncios). Esto se debe a que AppsFlyer recibe de X Ads solo los IDs para estos elementos y no sus nombres. |
+| Coste | Para X Ads, los datos de costo de las campañas exclusivas de SKAN (campañas que solo tienen instalaciones de SKAN y ninguna instalación "normal") no están disponibles para las agencias. La integración de costo debe ser configurada por el anunciante. Y solo el anunciante puede ver los datos. |
 
-Traits and limitations
+Especificaciones y limitaciones
 
 </Accordion>
 
-<div data-zendesk-anchors="connecting-your-twitter-ads-account-to-appsflyer=connecting-your-x-ads-account-to-appsflyer h_01HDJVCRYQESA17XZ83GS81YZ3=connecting-your-x-ads-account-to-appsflyer h_01HDJVBAEZXA0WJ94JYMK84MAX=before-you-begin twitter-ads-attribution-setup=x-ads-attribution-setup h_01HDJVBAEZ5W3JH1BN7WXJ08P6=x-ads-attribution-setup h_01HDJVBAEZSFKRXAKQJP58N550=integration-tab h_01HDJVBAEZD89BSGHQTPR84HSC=ad-account-connected clickthrough-attribution=click-through-attribution h_01HDJVBAEZFJWQ6FD4Q4GSPD76=click-through-attribution viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HDJVBAEZ2H91WBHNSMRQYQ7H=view-through-attribution-lookback-window reengagement-settings=re-engagement-settings h_01HDJVBAEZZR1W06YH4XJSBKHV=re-engagement-settings h_01JV9YQ7ZHRDD2NA5ENQXJQ31V=important reengagement-clickthrough-lookback-window=re-engagement-click-through-lookback-window h_01HDJVBAEZ59ERYD2WQQYK6T37=re-engagement-click-through-lookback-window reengagement-viewthrough-lookback-window=re-engagement-view-through-lookback-window h_01HDJVBAEZSCK7430NJ8AMQYVY=re-engagement-view-through-lookback-window reengagement-window=re-engagement-window h_01HDJVBAEZCMWY5X47FEEFXTBX=re-engagement-window inapp-event-postback-settings=in-app-event-postback-settings h_01HDJVBAEZ5ZM9RDXPWTJPPYVA=in-app-event-postback-settings h_01HDJVBAEZATGM580CNC7BCVTN=note h_01HDJVBAEZR1Q2SVE9MEQ9EXKP=attribution-link-tab h_01HDJVBAEZ7R7BKFAZYXXBGS5Y=note h_01HDJVBAEZYSWN59VNXTDEWX93=cost-tab h_01HDJVBAF0VPBBAEHJPG40HJP8=ad-revenue-tab h_01HDJVBAF0KEVSWJ0EW54AEAWV=permissions-tab h_01HDJVBAF0BMSCKF6J9NJ019YJ=ad-network-permissions h_01HDJVBAF0W3ZE7J93CRE8EBRP=agency-permissions advanced-twitter-ads-setup-video=advanced-x-ads-setup-video h_01HDJVBAF0SJ93TNQ8WSFVE91P=advanced-x-ads-setup-video h_01HGWGG2422VR9PFV88AMEHNT8=traits-and-limitations" />
+<div data-zendesk-anchors="connecting-your-twitter-ads-account-to-appsflyer=conexi%C3%B3n-de-tu-cuenta-de-x-ads-a-appsflyer h_01HDJVCRYQESA17XZ83GS81YZ3=conexi%C3%B3n-de-tu-cuenta-de-x-ads-a-appsflyer h_01HDJVBAEZXA0WJ94JYMK84MAX=antes-de-comenzar twitter-ads-attribution-setup=configuraci%C3%B3n-de-la-atribuci%C3%B3n-de-x-ads h_01HDJVBAEZ5W3JH1BN7WXJ08P6=configuraci%C3%B3n-de-la-atribuci%C3%B3n-de-x-ads h_01HDJVBAEZSFKRXAKQJP58N550=integration-tab ad-account-connected=cuenta-de-anuncios-conectada h_01HDJVBAEZD89BSGHQTPR84HSC=cuenta-de-anuncios-conectada clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HDJVBAEZFJWQ6FD4Q4GSPD76=atribuci%C3%B3n-por-clic viewthrough-attribution-lookback-window=ventana-de-lookback-de-atribuci%C3%B3n-view-through h_01HDJVBAEZ2H91WBHNSMRQYQ7H=ventana-de-lookback-de-atribuci%C3%B3n-view-through reengagement-settings=configuraci%C3%B3n-de-re-engagement h_01HDJVBAEZZR1W06YH4XJSBKHV=configuraci%C3%B3n-de-re-engagement h_01JV9YQ7ZHRDD2NA5ENQXJQ31V=importante reengagement-clickthrough-lookback-window=ventana-de-lookback-por-click-through-de-re-engagement h_01HDJVBAEZ59ERYD2WQQYK6T37=ventana-de-lookback-por-click-through-de-re-engagement reengagement-viewthrough-lookback-window=ventana-de-lookback-por-view-through-de-re-engagement h_01HDJVBAEZSCK7430NJ8AMQYVY=ventana-de-lookback-por-view-through-de-re-engagement reengagement-window=ventana-de-re-engagement h_01HDJVBAEZCMWY5X47FEEFXTBX=ventana-de-re-engagement inapp-event-postback-settings=configuraci%C3%B3n-de-postbacks-de-eventos-in-app h_01HDJVBAEZ5ZM9RDXPWTJPPYVA=configuraci%C3%B3n-de-postbacks-de-eventos-in-app h_01HDJVBAEZR1Q2SVE9MEQ9EXKP=attribution-link-tab h_01HDJVBAEZ7R7BKFAZYXXBGS5Y=advertencia h_01HDJVBAEZYSWN59VNXTDEWX93=cost-tab h_01HDJVBAF0VPBBAEHJPG40HJP8=ad-revenue-tab h_01HDJVBAF0KEVSWJ0EW54AEAWV=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HDJVBAF0BMSCKF6J9NJ019YJ=permisos-de-ad-network agency-permissions=permisos-de-la-agencia h_01HDJVBAF0W3ZE7J93CRE8EBRP=permisos-de-la-agencia advanced-twitter-ads-setup-video=video-de-configuraci%C3%B3n-avanzada-de-x-ads h_01HDJVBAF0SJ93TNQ8WSFVE91P=video-de-configuraci%C3%B3n-avanzada-de-x-ads h_01HGWGG2422VR9PFV88AMEHNT8=traits-and-limitations" />

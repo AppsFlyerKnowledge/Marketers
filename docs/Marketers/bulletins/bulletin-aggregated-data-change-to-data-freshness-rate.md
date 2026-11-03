@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Aggregated data change to data freshness rate'
+title: 'Boletín: cambio en la tasa de actualización de los Datos agregados'
 metadata:
   keywords:
     - Advertisers
@@ -16,19 +16,95 @@ x-zendesk:
     - Marketing Analytics
     - Ad Networks
   created_at: '2021-07-20T11:47:58Z'
-  edited_at: '2023-10-26T16:50:27Z'
+  edited_at: '2026-10-20T03:56:49Z'
   id: 4404329828497
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4404329828497-Bulletin-Aggregated-data-change-to-data-freshness-rate
+  url: https://support.appsflyer.com/hc/es/articles/4404329828497
 ---
-<table><tbody><tr><td>Headline</td><td>Data freshness rate of installs and in-app events in analytics reports and dashboards</td></tr><tr><td><span>Bulletin date</span></td><td>August 24, 2021</td></tr><tr><td><p>What's changing</p></td><td><p>The data freshness rates of installs and in-app event data is changing. The table details the freshness before and after the change. </p><h4><span id="data-freshness-rate-per-event-type"></span>Data freshness rate per event type</h4><table><tbody><tr><th>Event type</th><th>Before the change (minutes)</th><th><p>After the change</p><p>(minutes)</p></th></tr><tr><td>Install, re-attribution, re-engagement</td><td>3-5 </td><td>15-30 </td></tr><tr><td>In-app event</td><td>90 </td><td>30-60</td></tr></tbody></table></td></tr><tr><td>Where is it changing</td><td><p>The data freshness change affects the dashboards and reporting tools listed. The change takes place in phases as follows:</p><p><strong>Phase 1—s<span>tarting September 12, 2021 (subject to change)</span></strong><span></span></p><ul><li>Dashboards:<ul><li>Overview</li><li>Overview V2</li><li>Retargeting </li><li>Events</li><li>Custom </li></ul></li><li>Aggregated reports via Pull API</li></ul><p><strong>Phase 2—starting <span>October 6, 2021 (planned) </span></strong></p><ul><li>Dashboards:<ul><li>Activity</li><li>Cohort </li></ul></li><li>API: Cohort</li></ul></td></tr><tr><td>What's not changing</td><td>Master API and raw data </td></tr><tr><td>Action required</td><td><ul><li>When viewing or downloading data, consider the changed data freshness.</li><li>If you use the Overview dashboard to test SDK integration or integration with an ad network partner, install events will take longer to display. Consider using raw data reports to verify your integration tests. </li></ul></td></tr></tbody></table>
 
-> 📄 **See also**
+<Table>
+  <tbody>
+    <tr>
+      <td>
+        Título
+      </td>
+      <td>
+        Tasa de actualización de los datos de instalaciones y eventos in-app en reportes de analítica y dashboards
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Fecha del boletín
+      </td>
+      <td>
+        Agosto 24, 2021
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Qué ha cambiado
+      </td>
+      <td>
+        La tasa de actualización de los datos de instalaciones y de eventos in-app está cambiando. La tabla detalla la tasa de actualización de los datos antes y después del cambio.
+
+        #### Tasa de actualización de los datos por tipo de evento
+
+        | Tipo de evento | Antes del cambio (minutos) | Después del cambio<br /><br />(minutos) |
+        | --- | --- | --- |
+        | Instalación, reatribución, re-engagement | 3-5 | 15-30 |
+        | Evento en la aplicación | 90 | 30-60 |
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ¿Dónde está cambiando?
+      </td>
+      <td>
+        El cambio en la tasa de actualización de los datos afecta a los dashboards y a las herramientas de reportes indicados. El cambio se implementa por fases, de la siguiente manera:
+
+        **Fase 1—starting 12 de septiembre de 2021 (sujeto a cambios)**
+
+        * Dashboards:
+          * Resumen
+          * Vista general V2
+          * Reorientación
+          * Eventos
+          * Personalizar
+        * Informes de estadísticas agregadas a través de Pull API
+
+        **Fase 2—starting 6 de octubre de 2021 (previsto)**
+
+        * Dashboards:
+          * La actividad del partner
+          * Reporte Cohorte
+        * API: Cohorte
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Qué no cambia
+      </td>
+      <td>
+        Master API y raw data
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Acción requerida
+      </td>
+      <td>
+        * Cuando visualices o descargues datos, ten en cuenta el cambio en la actualización de los datos.
+        * Si usas el Dashboard general para probar la integración del SDK o la integración con un partner de ad network, los eventos de instalación tardarán más en mostrarse. Considera usar los Reportes de raw data para verificar tus pruebas de integración.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+> 📄 **Consulte también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support">AppsFlyer data freshness</Anchor>
-> * What's new in AppsFlyer
+> * <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support">Actualización de datos de AppsFlyer</Anchor>
+> * Novedades en AppsFlyer
 
-<div data-zendesk-anchors="h_01HDP21Y0H5S3R4GR5411R6D4Y=data-freshness-rate-per-event-type h_01HDPE9QAQ41ADC9DQGSK80288=see-also" />
+<div data-zendesk-anchors="data-freshness-rate-per-event-type=tasa-de-actualizaci%C3%B3n-de-los-datos-por-tipo-de-evento h_01HDP21Y0H5S3R4GR5411R6D4Y=tasa-de-actualizaci%C3%B3n-de-los-datos-por-tipo-de-evento h_01HDPE9QAQ41ADC9DQGSK80288=consulte-tambi%C3%A9n" />

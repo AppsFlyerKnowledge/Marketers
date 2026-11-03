@@ -1,5 +1,5 @@
 ---
-title: Measuring attribution with multiple MMPs
+title: Medición de la atribución con múltiples MMPs
 metadata:
   keywords:
     - Marketers
@@ -12,65 +12,64 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2023-07-27T08:29:19Z'
-  edited_at: '2024-03-04T15:00:00Z'
+  edited_at: '2026-08-12T12:05:24Z'
   id: 17316973509393
-  locale: en-us
+  locale: es
   section: Marketer onboarding
   section_id: 6550866490129
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/17316973509393-Measuring-attribution-with-multiple-MMPs
+  url: https://support.appsflyer.com/hc/es/articles/17316973509393
 ---
-> **At a glance:** See which media sources are able to measure attribution when working with multiple MMPs simultaneously so you can compare attribution results between AppsFlyer and your other MMP.
+> **En resumen:** Descubre qué fuentes de medios son capaces de medir la atribución cuando se trabaja con múltiples MMPs simultáneamente para que puedas comparar los resultados de atribución entre AppsFlyer y tu otro MMP.
 
-## Overview
+## Visión general
 
-When looking into migrating from another MMP to AppsFlyer, advertisers may wish to simultaneously compare both MMP measurements over the same media sources and campaigns. To do this, the following requirements must be met:
+Al buscar migrar de otro MMP a AppsFlyer, los anunciantes pueden querer comparar simultáneamente ambas mediciones de MMP con las mismas fuentes de medios y campañas. Para ello, se deben cumplir los siguientes requisitos:
 
-* The tested app must have **both MMP SDKs integrated**
-* The media sources must be **configured to support attribution with two MMPs**
+* La aplicación probada debe tener **ambos SDK MMP integrados**
+* Las fuentes de medios deben **configurarse para soportar la atribución con dos MMPs**
 
-However, not all media sources support measurement with more than one MMP.  
+Sin embargo, no todas las fuentes de medios soportan la medición con más de un MMP.  
 
-## Details and limitations of media source measurement
+## Detalles y limitaciones de la medición de fuentes de medios
 
-Following are details and limitations of media source measurement when working with multiple MMPs simultaneously.
+A continuación se muestran los detalles y las limitaciones de la medición de fuentes de medios cuando se trabaja con múltiples MMPs simultáneamente.
 
-### Self-reporting networks
+### Redes de autorreporte
 
-| SRN | Details and limitations | Supports measurement |
+| nombres de SRN reservados | Detalles y limitaciones | Soporta medición |
 | --- | --- | --- |
-| Apple Search Ads | ASA supports multiple MMP measurements without limitation. When there is an API call request from multiple MMPs, data is sent to the corresponding MMPs. | ✓ |
-| DV360 (GMP) | Multiple MMPs are possible, but the campaign setup must have separate line items for each floodlight tracking (Link ID). | ✓ |
-| Google Ads | Google Ads supports multiple MMP measurements:<ul><li>Advertisers can link multiple MMP Link IDs to a single Google Ads account and receive postbacks from each MMP</li><li>Google Ads can receive postbacks from multiple MMPs</li><li>Multiple MMP performances can be measured</li></ul>**Note:** Once data flows in the new MMP, Google Ads recommends stopping the existing integration. | ✓ |
-| Meta ads | Meta ads receives data requests from multiple MMPs. However, they strongly recommend **not** having more than one MMP for the following reasons:<ul><li>Meta ads can only handle deduplication on installs, not for events. Therefore, events should be sent only from one MMP</li><li>When inserting multiple SDKs from MMPs there's a very high probability of issues and secondary errors during the process of deduplication</li><li>When a large amount of data is sent to Meta ads, doubled data may be fed into their optimization and measurement systems.</li></ul>Therefore, multiple MMP attribution may be supported for a short term only. | With limitation |
-| Snapchat | Transferring data between Snapchat and multiple MMPs is possible. However, it’s recommended to minimize the overlapping migration period. When receiving multiple MMP data, there is no option to optimize by selecting a specific MMP. This means optimization is performed for both MMPs and overlapping data is highly likely. | With limitation |
-| TikTok for Business | Sending postbacks to TikTok for Business is supported for one MMP only. When migrating from another MMP, to enable AppsFlyer to attribute conversions to TikTok for Business, you’ll first need to turn off postbacks from the other MMP and then configure AppsFlyer. | x |
-| X Ads | X Ads doesn't support multiple MMP integration | x |
+| Anuncios en la búsqueda de Apple | ASA soporta múltiples mediciones de MMPs sin limitación. Cuando hay una solicitud de llamada a la API de múltiples MMPs, los datos se envían a los MMPs correspondientes. | ✓ |
+| DV360 (GMP) | Son posibles múltiples MMPs, pero la configuración de la campaña debe tener elementos de línea separados para cada seguimiento de foco (Link ID). | ✓ |
+| Anuncios de Google | Google Ads admite múltiples mediciones de MMP:<ul><li>Los anunciantes pueden vincular varios Link IDs de MMP a una sola cuenta de Google Ads y recibir postbacks de cada MMP</li><li>Google Ads puede recibir postbacks de múltiples MMPs</li><li>Se pueden medir rendimientos de múltiples MMP</li></ul>**Nota:** Una vez que los datos fluyen en el nuevo MMP, Google Ads recomienda detener la integración existente. | ✓ |
+| Anuncios de Meta | Los Meta Ads reciben solicitudes de datos de múltiples MMPs. Sin embargo, recomiendan **no** tener más de un MMP por las siguientes razones:<ul><li>Los Meta Ads solo pueden manejar la deduplicación en instalaciones, no para eventos. Por lo tanto, los eventos deben enviarse solo desde un MMP</li><li>Al insertar varios SDKs desde MMPs, existe una probabilidad muy alta de problemas y errores secundarios durante el proceso de deduplicación.</li><li>Cuando se envía una gran cantidad de datos a los Meta Ads, se pueden introducir datos duplicados en sus sistemas de optimización y medición.</li></ul>Por lo tanto, la atribución múltiple de MMP puede ser soportada sólo por un corto plazo. | Con limitación |
+| Snapchat | Es posible transferir datos entre Snapchat y múltiples MMPs. Sin embargo, se recomienda minimizar el período de migración superpuesto. Al recibir múltiples datos de MMP, no hay opción para optimizar seleccionando un MMP específico. Esto significa que la optimización se realiza para ambos MMPs y que es muy probable que los datos se dupliquen. | Con limitación |
+| TikTok para empresas | El envío de postbacks a TikTok for Business solo es compatible con un MMP. Al migrar desde otro MMP, para permitir que AppsFlyer atribuya conversiones a TikTok for Business, primero tendrás que desactivar los postbacks del otro MMP y luego configurar AppsFlyer. | X |
+| Anuncios X | X Ads no admite la integración múltiple de MMP | X |
 
-### SKAN
+### SKÁN
 
-Sending <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#skan-conversion-studio-basics">SKAN conversion postbacks</Anchor> **isn't supported for multiple MMPs**. Only one SDK can trigger sending SKAN postbacks to partners. This means that when more than one SDK is integrated into your app, SKAN postbacks are only sent to one SDK.
+El envío de <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#aspectos-básicos-del-skan-conversion-studio">postbacks de conversión SKAN</Anchor> **no es compatible con múltiples MMPs**. Sólo un SDK puede activar el envío de postbacks SKAN a los partners. Esto significa que cuando se integra más de un SDK en tu aplicación, los postbacks de SKAN solo se envían a un SDK.
 
-### Non-SRN ad networks
+### Redes de publicidad no SRN
 
-MMP attribution links record the engagements of users on non-SRN ad networks and are subsequently used to attribute the engagements that become actual installs. To enable attribution for multiple MMPs simultaneously, the ad network must make sure the following requirements are met:
+Los enlaces de atribución MMP registran las contrataciones de los usuarios en redes publicitarias que no son SRN y, posteriormente, se utilizan para atribuir las contrataciones que se convierten en instalaciones reales. Para habilitar la atribución de múltiples MMPs simultáneamente, la red de anuncios debe asegurarse de que se cumplan los siguientes requisitos:
 
-| Ad network requirement | Details |
+| Requerimiento de red de anuncios | Detalles |
 | --- | --- |
-| Data for a single engagement must be sent to both MMPs | <ul><li>**Clicks:** As attribution links redirect users to the app store, only one attribution link can be used. We recommend continuing to use the attribution link from the existing MMP while <Anchor target="_blank" href="/partners/docs/redirecting-users-to-the-app-store#overview">sending click-attribution data to AppsFlyer</Anchor>.</li><li>**Impressions:** As impressions don't redirect users to the app store, the ad network should send impression data to both MMPs.</li></ul> |
-| Received install postbacks should be deduped | Ad networks receive install postbacks from both MMPs. To avoid double charges, the ad network should dedupe one of these postbacks. |
-| Received in-app event postbacks should be deduped | When each of the MMPs is configured to send in-app event postbacks, ad networks receive in-app event postbacks from both MMPs. To avoid double attribution resulting in double charges, the ad network should dedupe one of these postbacks. If the ad network can't dedupe double in-app event postbacks, make sure in-app event postbacks are configured in only one MMP. |
+| Los datos para una única contratación deben enviarse a ambos MMPs | <ul><li>**Clics:** Como los enlaces de atribución redirigen a los usuarios a la tienda de aplicaciones, solo se puede usar un enlace de atribución. Recomendamos continuar usando el enlace de atribución del MMP existente mientras <Anchor target="_blank" href="/partners/es/docs/redirecting-users-to-the-app-store#descripción-general">envía datos de atribución de clics a AppsFlyer</Anchor>.</li><li>**Impresiones:** Como las impresiones no redireccionan a los usuarios a la tienda de aplicaciones, la red de anuncios debe enviar datos de impresión a ambos MMPs.</li></ul> |
+| Los postbacks de instalación recibidos deben ser deduplicados | Las redes publicitarias reciben postbacks de instalación de ambos MMPs. Para evitar cargos dobles, la red de anuncios debe deduplicar uno de estos postbacks. |
+| Los postbacks de eventos in-app recibidos deben deduplirse | Cuando cada uno de los MMPs está configurado para enviar postbacks de eventos in-app, las redes publicitarias reciben postbacks de eventos in-app de ambos MMPs. Para evitar una doble atribución que resulte en cargos dobles, la red de anuncios debe deduplicar uno de estos postbacks. Si la red de anuncios no puede deduplicar las postbacks dobles de eventos in-app, asegúrate de que los postbacks de eventos in-app estén configurados en un solo MMP. |
 
-### Owned media
+### Medios propios
 
-As with non-SRN ad networks, attributing installs from owned media requires using MMP attribution links. However, for some types of owned media, such as email lists, SMSs, or QR codes, MMPs can send data on a single engagement only once. AppsFlyer's <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users">mobile web-to-app attribution</Anchor> solution enables measuring **installs coming from a website or a landing page**. The advantage of using owned media for comparing MMP attribution is the fact that no install or event deduping is needed.
+Al igual que con las redes publicitarias no SRN, la atribución de instalaciones desde medios propios requiere el uso de enlaces de atribución MMP. Sin embargo, para algunos tipos de medios propios, como listas de correo electrónico, SMS o códigos QR, los MMPs pueden enviar datos en una sola contratación una sola vez. La solución de <Anchor target="_blank" href="/marketers/es/docs/convert-your-mobile-web-visitors-to-app-users">atribución móvil web-to-app</Anchor> de AppsFlyer permite medir las **instalaciones provenientes de un sitio web o una landing page**. La ventaja de utilizar medios propios para comparar la atribución de MMP es el hecho de que no se necesita ninguna instalación o deduplicación de eventos.
 
-## Avoiding attribution discrepancies
+## Evita discrepancias de atribución
 
-When MMPs use different attribution models to measure traffic, it may lead to discrepancies. You can minimize discrepancies with these steps:
+Cuando los MMPs utilizan diferentes modelos de atribución para medir el tráfico, puede dar lugar a discrepancias. Puedes minimizarlas con estos pasos:
 
-* Make sure both MMPs use the same timezone for the app. Here's how to <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">set the app timezone in AppsFlyer</Anchor>.
-* For non-SRNs and owned media: Make sure to configure the attribution link using the same parameter values. For example, set the same lookback window in both MMPs.
-* When comparing the data on the MMPs dashboards or reports, make sure to compare the same criteria, such as traffic from the same date range, and geo.
+* Asegúrate de que ambos MMPs utilicen la misma zona horaria para la aplicación. Aquí te mostramos cómo <Anchor target="_blank" href="/marketers/es/docs/changing-app-time-zone-settings">configurar la zona horaria de la aplicación en AppsFlyer</Anchor>.
+* Para no SRN y medios propios: Asegúrate de configurar el enlace de atribución utilizando los mismos valores de parámetro. Por ejemplo, establece la misma ventana lookback en ambos MMPs.
+* Al comparar los datos en los dashboards o reportes de MMPs, asegúrate de comparar los mismos criterios, como el tráfico del mismo rango de fechas y la posición geográfica.
 
-<div data-zendesk-anchors="ability-to-measure-with-multiple-mmps=overview 01H7TP9P86DE0J04VHXJYKE3PA=overview 01H81ANMGMEKCZCS2FNBY67321=details-and-limitations-of-media-source-measurement selfreporting-networks=self-reporting-networks 01H81APGNBGCMREZVFXJW9KN6H=self-reporting-networks 01H7TP9P86YQ75N0XFY7EW2JHQ=skan nonsrn-ad-networks=non-srn-ad-networks 01H7TP9P86TEWC47MZZVQ1965K=non-srn-ad-networks 01H7W2YTXYMAEN403WCHYH8G7W=owned-media 01H7YVHVW3YY8XY8GHQX1B0WZN=avoiding-attribution-discrepancies" />
+<div data-zendesk-anchors="ability-to-measure-with-multiple-mmps=visi%C3%B3n-general 01H7TP9P86DE0J04VHXJYKE3PA=visi%C3%B3n-general details-and-limitations-of-media-source-measurement=detalles-y-limitaciones-de-la-medici%C3%B3n-de-fuentes-de-medios 01H81ANMGMEKCZCS2FNBY67321=detalles-y-limitaciones-de-la-medici%C3%B3n-de-fuentes-de-medios selfreporting-networks=redes-de-autorreporte 01H81APGNBGCMREZVFXJW9KN6H=redes-de-autorreporte skan=sk%C3%A1n 01H7TP9P86YQ75N0XFY7EW2JHQ=sk%C3%A1n nonsrn-ad-networks=redes-de-publicidad-no-srn 01H7TP9P86TEWC47MZZVQ1965K=redes-de-publicidad-no-srn owned-media=medios-propios 01H7W2YTXYMAEN403WCHYH8G7W=medios-propios avoiding-attribution-discrepancies=evita-discrepancias-de-atribuci%C3%B3n 01H7YVHVW3YY8XY8GHQX1B0WZN=evita-discrepancias-de-atribuci%C3%B3n" />

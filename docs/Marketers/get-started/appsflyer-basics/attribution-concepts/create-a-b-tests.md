@@ -1,5 +1,5 @@
 ---
-title: Create A/B tests
+title: Guía de pruebas A/B de AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -13,152 +13,151 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2019-05-07T09:17:43Z'
-  edited_at: '2026-07-27T15:46:37Z'
+  edited_at: '2026-08-12T11:56:55Z'
   id: 360001523657
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001523657-Create-A-B-tests
+  url: https://support.appsflyer.com/hc/es/articles/360001523657
 ---
-> **At a glance:** Use AppsFlyer to A/B test media sources, campaigns, creatives, targeting, and ad placement.
+> **En resumen:** Utiliza AppsFlyer para realizar pruebas A/B de fuentes de medios, campañas, creatividades, targeting y ubicación de anuncios.
 
 ![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
 
-## What is A/B testing?
+## ¿Qué son las pruebas A/B?
 
-A/B testing is a method used by marketers to test different elements of their ads and campaigns. Each ad contains elements (targeting, visual, texts), which may affect the conversion rates of potential users. Finding the best performing variations of your ad elements may have a significant impact on the bottom line of your mobile marketing efforts.
+Las pruebas A/B son un método utilizado por los marketers para probar diferentes elementos de sus anuncios y campañas. Cada anuncio contiene elementos (targeting, visuales, textos) que pueden afectar las tasas de conversión de los usuarios potenciales. Encontrar las variantes de mejor rendimiento de tus elementos publicitarios puede tener un impacto significativo en el resultado final de tus esfuerzos de marketing móvil.
 
-This article explains **how advertisers can perform A/B tests using AppsFlyer, to find the best performing ad elements**.
+Este artículo explica **cómo los anunciantes pueden realizar pruebas A/B utilizando AppsFlyer para encontrar los elementos publicitarios con mejor rendimiento**.
 
-## How to A/B test mobile campaigns
+## Cómo realizar pruebas A/B en campañas móviles
 
-To A/B test an element, split your mobile traffic 50/50 between two sources showing the identical offer. Next, create two variations of the element that you want to test. After sufficient traffic has flowed through, you can compare the results of your existing version (control) to the new version (variation).
+Para realizar una prueba A/B de un elemento, divide tu tráfico móvil 50/50 entre dos fuentes que muestren la oferta idéntica. A continuación, crea dos variantes del elemento que quieres probar. Una vez que haya transcurrido suficiente tráfico, puedes comparar los resultados de tu versión existente (control) con la nueva versión (variante).
 
-The following steps apply to an A/B test you run using AppsFlyer.
+Los siguientes pasos se aplican a una prueba A/B que ejecutes utilizando AppsFlyer.
 
-**Setup**:
+**Configuración**:
 
-1. Select the element to test.  
-   In this article, we explain about A/B testing [creatives](/docs/create-a-b-tests#ab-testing-creatives-and-targeting), ad placements, media sources, and campaigns.
-2. Create two identical campaigns (or ads), and then vary a single element within the ad. For example,  call-to-action button copy.
-   * To test the impact of the variation on **install conversion rates**, split the traffic equally between the two campaigns.   
-     If full impression data is available for both sources, divide installations by impressions to calculate the install conversion rates.
-   * To test the impact of the variation on the quality of users, **post-installation**, you can send different amounts of traffic to the two campaigns.
-3. Drive sufficient traffic to each campaign to reach statistical significance, that means at least 50 installs per campaign. Use the <Anchor target="_blank" href="https://neilpatel.com/ab-testing-calculator/">A/B testing significance calculator</Anchor>.
+1. Selecciona el elemento a probar.  
+   En este artículo, explicamos cómo realizar pruebas A/B de [creatividades](/docs/create-a-b-tests#pruebas-ab-de-creatividades-y-targeting), ubicaciones de anuncios, fuentes de medios y campañas.
+2. Crea dos campañas (o anuncios) idénticas y luego varía un solo elemento dentro del anuncio. Por ejemplo, el texto del botón de llamada a la acción.
+   * Para probar el impacto de la variante en las **tasas de conversión de instalaciones**, divide el tráfico equitativamente entre las dos campañas.   
+     Si hay datos de impresiones completos disponibles para ambas fuentes, divide las instalaciones por las impresiones para calcular las tasas de conversión de instalaciones.
+   * Para probar el impacto de la variante en la calidad de los usuarios, **después de la instalación**, puedes enviar diferentes cantidades de tráfico a las dos campañas.
+3. Dirige suficiente tráfico a cada campaña para alcanzar significancia estadística, es decir, al menos 50 instalaciones por campaña. Utiliza la <Anchor target="_blank" href="https://neilpatel.com/ab-testing-calculator/">calculadora de significancia de pruebas A/B</Anchor>.
 
-**Analysis:**
+**Análisis:**
 
-1. Use AppsFlyer's dashboard and data to compare the performance of the key KPIs between the two campaigns.
-2. Select the winning variation and use it in your live campaigns.
+1. Utiliza el panel de control y los datos de AppsFlyer para comparar el rendimiento de los KPI clave entre las dos campañas.
+2. Selecciona la variante ganadora y úsala en tus campañas online.
 
-## A/B testing creatives and targeting
+## Pruebas A/B de creatividades y targeting
 
-Creatives contain many elements with varying impact on user conversion rates, including copy, images, colors, fonts, buttons, etc. Targeting parameters, like country, age, or gender, may also have a major impact on conversion rates. And for iOS 15+, you can also have up to 35 custom product pages. **A/B testing these elements can help you find which factors have the biggest impact on improving user conversion rates**.
+Las creatividades contienen muchos elementos con un impacto variable en las tasas de conversión de los usuarios, incluidos el texto, las imágenes, los colores, las fuentes, los botones, etc. Los parámetros de targeting, como el país, la edad o el género, también pueden tener un impacto importante en las tasas de conversión. Y para iOS 15+, también puedes tener hasta 35 páginas de productos personalizadas. **Realizar pruebas A/B de estos elementos puede ayudarte a encontrar qué factores tienen el mayor impacto en la mejora de las tasas de conversión de los usuarios**.
 
-Below we explain two methods of A/B testing using:
+A continuación explicamos dos métodos de pruebas A/B utilizando:
 
-* A single media source
-* Multiple media sources
+* Una única fuente de medios
+* Varias fuentes de medios
 
-| Method | Pros | Cons |
+| Método | Ventajas | Contras |
 | --- | --- | --- |
-| A/B testing with a single media source | <ul><li>Quick setup</li><li>Easy to test install conversion rate</li></ul> | <ul><li>Results may only apply to users of the specific media source</li><li>May take longer to test</li></ul> |
-| A/B testing across multiple media sources | <ul><li>Fast results</li><li>Results apply to users from all media sources</li></ul> | <ul><li>Need to update attribution links in multiple places</li></ul> |
+| Pruebas A/B con una única fuente de medios | <ul><li>Configuración rápida</li><li>La tasa de conversión de instalaciones es fácil de probar</li></ul> | <ul><li>Los resultados solo pueden aplicarse a los usuarios de la fuente de medios específica</li><li>La prueba puede tardar más tiempo</li></ul> |
+| Pruebas A/B en varias fuentes de medios | <ul><li>Resultados rápidos</li><li>Los resultados se aplican a los usuarios de todas las fuentes de medios</li></ul> | <ul><li>Es necesario actualizar los enlaces de atribución en varios lugares</li></ul> |
 
 <div id="method-1-ab-testing-with-a-single-media-source" />
 
-<Accordion title="Method 1: A/B testing with a single media source">
+<Accordion title="Método 1: Pruebas A/B con una única fuente de medios">
 
-**Setup**:
+**Configuración**:
 
-1. Select a trusted media source with sufficient traffic.
-2. Create two campaigns or <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#3-banner-setup">Smart Banners</Anchor> in AppsFlyer by using one of the following methods:
-   * Vary the campaign that is the name that is "**c**" parameter in the attribution link.
-   * Alternately you can create two ad sets ("**af\_adset**=") within a campaign or single ads ("**af\_ad=**") within an ad set. **Note**: In Smart Banners, you can also <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#ab-testing-banner-performance">A/B test by putting different parameters for each banner</Anchor> within the same banner group.
-   * For iOS 15+, you can also test the efficacy of different custom product pages, by sending different OneLink URLs to different product pages. <Anchor target="_blank" href="/marketers/docs/redirect-users-to-custom-app-store-product-pages">Learn more</Anchor>
-3. Use the same creative in both campaigns, except for the tested variation.
-4. Send the same amount of traffic to both campaigns.
+1. Selecciona una fuente de medios confiable con suficiente tráfico.
+2. Crea dos campañas o <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers#3-banner-setup">banners inteligentes</Anchor> en AppsFlyer utilizando uno de los siguientes métodos:
+   * Varía la campaña que tiene como nombre el parámetro "**c**" en el enlace de atribución.
+   * Alternativamente, puedes crear dos conjuntos de anuncios ("**af\_adset**=") dentro de una campaña o anuncios individuales ("**af\_ad=**") dentro de un conjunto de anuncios. **Nota**: En los banners inteligentes, también puedes <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers#ab-testing-banner-performance">realizar pruebas A/B colocando diferentes parámetros para cada banner</Anchor> dentro del mismo grupo de banners.
+   * Para iOS 15+, también puedes probar la eficacia de diferentes páginas de productos personalizadas enviando diferentes URL de OneLink a diferentes páginas de productos. <Anchor target="_blank" href="/marketers/es/docs/redirect-users-to-custom-app-store-product-pages">Saber más</Anchor>
+3. Utiliza la misma creatividad en ambas campañas, excepto la variante probada.
+4. Envía la misma cantidad de tráfico a ambas campañas.
 
-**Analysis:**
+**Análisis:**
 
-* Compare KPIs (for example, install conversion rate, ROI, ARPU, loyal user rate) of the campaigns in the Overview dashboard page.
+* Compara los KPI (por ejemplo, tasa de conversión de instalaciones, ROI, ARPU, tasa de usuarios leales) de las campañas en la página del panel de control general.
 
 </Accordion>
 
 <div id="method-2-ab-testing-across-multiple-media-sources" />
 
-<Accordion title="Method 2: A/B testing across multiple media sources">
+<Accordion title="Método 2: Pruebas A/B en varias fuentes de medios">
 
-**Setup**:
+**Configuración**:
 
-1. Select a subscriber parameter to hold the variation value.  
-   For example, to test 2 CTA text variations you can use af\_sub1="install now" or af\_sub1="please install". More about subscriber parameters and a creative test example <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#what-are-subscriber-parameters-good-for">here</Anchor>.
-2. Add the subscriber parameter with the matching value to every live attribution link.
-3. It's recommended to use the same creatives in all campaigns, except for the tested variation.
+1. Selecciona un parámetro de suscriptor para guardar el valor de variante.  
+   Por ejemplo, para probar 2 variantes del texto de CTA, puedes utilizar af\_sub1="instalar ahora" o af\_sub1="instalar por favor". Puedes leer más sobre los parámetros de suscriptores y ver un ejemplo de prueba de creatividad <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#what-are-subscriber-parameters-good-for">aquí</Anchor>.
+2. Agrega el parámetro de suscriptor con el valor correspondiente a cada enlace de atribución online.
+3. Se recomienda utilizar las mismas creatividades en todas las campañas, excepto la variante probada.
 
-**Analysis:**
+**Análisis:**
 
-1. Download the installation or in-app events raw data reports. Use your selected subscriber parameter column to filter and sort your data.
-2. Compare the performance of creatives with either of the 2 stored values.
+1. Descarga los reportes de raw data de instalaciones o eventos in-app. Utiliza la columna de parámetros de suscriptor seleccionada para filtrar y ordenar tus datos.
+2. Compara el rendimiento de las creatividades con cualquiera de los 2 valores almacenados.
 
 </Accordion>
 
-## A/B testing ad placement on mobile web
+## Pruebas A/B de la ubicación de anuncios en la web móvil
 
 ![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
 
-The location of banners for your apps on mobile websites may significantly impact user conversion rates. In most cases, advertisers use their own mobile websites to convert visitors into mobile users.
+La ubicación de los banners de tus aplicaciones en sitios web móviles puede afectar significativamente las tasas de conversión de usuarios. En la mayoría de los casos, los anunciantes utilizan sus propios sitios web móviles para convertir a los visitantes en usuarios móviles.
 
-With the AppsFlyer <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners feature</Anchor>, you can set up mobile web banners quickly and easily. In addition, the feature also enables you to easily run A/B tests to **determine the best placement for converting website visitors into mobile users**.
+Con la <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">función Banners inteligentes</Anchor> de AppsFlyer, puedes configurar banners web móviles de forma rápida y sencilla. Además, esta función también te permite ejecutar fácilmente pruebas A/B para **determinar la mejor ubicación para convertir a los visitantes del sitio web en usuarios móviles**.
 
-**Setup**:
+**Configuración**:
 
-1. Implement <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners</Anchor> in your mobile website.
-2. For each new visitor, determine whether to show the banner at the top or bottom of the page. Make sure to split the traffic 50/50 between the two.  
-   Developer Tip - A simple method for splitting your website traffic is to use a visitor counter, and then check whether the counter value is odd (option A) or even (option B) for each new visitor.
-3. Set the banner location and attribution link according to the determined location using the Smart Banners' <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner">SDK API ShowBanner</Anchor>.  
-   Example:
+1. Implementa <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">Banners Inteligentes</Anchor> en tu sitio web móvil.
+2. Para cada nuevo visitante, determina si deseas mostrar el banner en la parte superior o inferior de la página. Asegúrate de dividir el tráfico 50/50 entre los dos.  
+   Consejo para desarrolladores: un método simple para dividir el tráfico de tu sitio web es utilizar un contador de visitantes y luego verificar si el valor del contador es impar (opción A) o par (opción B) para cada visitante nuevo.
+3. Establece la ubicación del banner y el enlace de atribución de acuerdo con la ubicación determinada utilizando la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner">API ShowBanner del SDK</Anchor> de Banners inteligentes.  
+   Ejemplo:
 
    ```javascript
    showBanner({ bannerContainerQuery: "#document.body", additionalParams:{ af_sub5: "top"}})
    ```
 
-**Analysis:**
+**Análisis:**
 
-1. Download the raw data reports for installs or in-app events. Use your selected subscriber parameter (e.g. af\_sub5) column to filter and sort your data.
-2. Compare the performance of the two ad placements, i.e. which placement got more installs or post-install events.
+1. Descarga los reportes de raw data de instalaciones o eventos in-app. Utiliza la columna del parámetro de suscriptor seleccionado (por ejemplo, af\_sub5) para filtrar y ordenar tus datos.
+2. Compara el rendimiento de las dos ubicaciones de anuncios, es decir, qué ubicación obtuvo más instalaciones o eventos post-instalación.
 
-## A/B testing media sources
+## Pruebas A/B de fuentes de medios
 
-Helping advertisers identify the best (and worst) performing media sources for their apps is what AppsFlyer was built for. However, **if advertisers fail to compare media sources correctly, they risk reaching the wrong conclusions about traffic quality**.
+Ayudar a los anunciantes a identificar las fuentes de medios con mejor (y peor) rendimiento para sus aplicaciones es el propósito de AppsFlyer. Sin embargo, **si los anunciantes no comparan correctamente las fuentes de medios, corren el riesgo de llegar a conclusiones erróneas sobre la calidad del tráfico**.
 
-**Setup:**
+**Configuración:**
 
-1. Create a single ad creative for BOTH media sources.
-2. Define an ad for each media source, with the same exact audience targeting parameters.
-3. You can send different amounts of traffic to the 2 media sources.
+1. Crea una única creatividad de anuncio para AMBAS fuentes de medios.
+2. Define un anuncio para cada fuente de medios, con exactamente los mismos parámetros de targeting.
+3. Puedes enviar diferentes cantidades de tráfico a las 2 fuentes de medios.
 
-**Analysis:**
+**Análisis:**
 
-1. If the ads being tested are the only ones running on both media sources, use AppsFlyer's dashboard and data to easily compare your key KPI between the two sources.  
+1. Si los anuncios que se están probando son los únicos que se ejecutan en ambas fuentes de medios, usa el panel de control y los datos de AppsFlyer para comparar fácilmente tu KPI clave entre las dos fuentes.  
      
-   Otherwise:
-2. Go to AppsFlyer's Retention Report, <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort Report</Anchor>, <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor> or <Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot Table</Anchor>.
-3. Group by Media Source -> Campaign -> Ad set -> Ad.
-4. Compare KPIs to identify the top-performing media source.
+   De lo contrario:
+2. Ve al Reporte de retención, <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard">Reporte de cohortes</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/master-api-user-acquisition-metrics-via-api">API maestra</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/pivot-table-user-metrics">Tabla dinámica</Anchor> de AppsFlyer.
+3. Agrupa por Fuente de medios -> Campaña -> Conjunto de anuncios -> Anuncio.
+4. Compara los KPI para identificar la fuente de medios con mejor rendimiento.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
 > [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
 >
-> * 1 and 2 are different ads on the same media source. Compare a single KPI for them, for example, retention day 4 rate, to A/B test creatives, targeting, or ad placement.
-> * 2 and 3 are ads on different media sources. If the creatives and targeting of the ads are identical, comparing a single KPI enables A/B testing the media source.
+> * 1 y 2 son anuncios diferentes en la misma fuente de medios. Compara un único KPI para ellos, por ejemplo, la tasa de retención del día 4, con las creatividades de prueba A/B, el targeting o la ubicación de los anuncios.
+> * 2 y 3 son anuncios en diferentes fuentes de medios. Si las creatividades y el targeting de los anuncios son idénticos, comparar un único KPI permite realizar pruebas A/B de la fuente de medios.
 
-### Using audiences split for easy A/B testing of media sources
+### Uso de la división de audiencias para facilitar las pruebas A/B de fuentes de medios
 
-If you set the same targeting parameters for each media source, the test includes the targeting abilities of the networks. When A/B testing, it’s best to test a single variation each time. As a result, it's advisable to eliminate the differences in targeting abilities, when A/B testing other factors in the performance of networks.
+Si estableces los mismos parámetros de targeting para cada fuente de medios, la prueba incluye las capacidades de targeting de las redes. Al realizar pruebas A/B, es mejor probar una sola variante cada vez. Por lo tanto, es aconsejable eliminar las diferencias en las capacidades de targeting cuando se realizan pruebas A/B de otros factores del rendimiento de las redes.
 
-To achieve this, we recommend splitting an audience randomly and targeting both audiences with the same creative, on each tested network. AppsFlyer offers an **easy method for defining, splitting, and automatically distributing audiences between different media sources**. Read about it <Anchor target="_blank" href="/marketers/docs/audiences-guide#audience-split-and-incrementality-testing">here</Anchor>.
+Para lograr esto, recomendamos dividir una audiencia aleatoriamente y apuntar a ambas audiencias con la misma creatividad, en cada red probada. AppsFlyer ofrece un **método sencillo para definir, dividir y distribuir automáticamente audiencias entre diferentes fuentes de medios**. Puedes leer más <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#pruebas-de-incrementalidad-y-división-de-audiencia">aquí</Anchor>.
 
-<div data-zendesk-anchors="h_01HN5CNKKBHV52ENXJXCBV2CES=what-is-ab-testing h_01HN5CNKKC02NKW4330QB6E01T=how-to-ab-test-mobile-campaigns h_01HN5CNKKCJPZSEEF1RAHC0HXD=ab-testing-creatives-and-targeting h_01HN5CNKKCMVE9YH379RP1S19W=method-1-ab-testing-with-a-single-media-source h_01HN5CNKKC53RTV61K08T9AVRA=method-2-ab-testing-across-multiple-media-sources h_01HN5CNKKCVPSSZZTJ8QGJHY1B=ab-testing-ad-placement-on-mobile-web h_01HN5CNKKC03ZAFCQZ0KJ0RHCE=ab-testing-media-sources h_01HN5CNKKC4M6YMPHTQCFHFDMD=example h_01HN5CNKKC551X3HQFNKHW1JBY=using-audiences-split-for-easy-ab-testing-of-media-sources" />
+<div data-zendesk-anchors="what-is-ab-testing=qu%C3%A9-son-las-pruebas-ab h_01HN5CNKKBHV52ENXJXCBV2CES=qu%C3%A9-son-las-pruebas-ab how-to-ab-test-mobile-campaigns=c%C3%B3mo-realizar-pruebas-ab-en-campa%C3%B1as-m%C3%B3viles h_01HN5CNKKC02NKW4330QB6E01T=c%C3%B3mo-realizar-pruebas-ab-en-campa%C3%B1as-m%C3%B3viles ab-testing-creatives-and-targeting=pruebas-ab-de-creatividades-y-targeting h_01HN5CNKKCJPZSEEF1RAHC0HXD=pruebas-ab-de-creatividades-y-targeting h_01HN5CNKKCMVE9YH379RP1S19W=method-1-ab-testing-with-a-single-media-source h_01HN5CNKKC53RTV61K08T9AVRA=method-2-ab-testing-across-multiple-media-sources ab-testing-ad-placement-on-mobile-web=pruebas-ab-de-la-ubicaci%C3%B3n-de-anuncios-en-la-web-m%C3%B3vil h_01HN5CNKKCVPSSZZTJ8QGJHY1B=pruebas-ab-de-la-ubicaci%C3%B3n-de-anuncios-en-la-web-m%C3%B3vil ab-testing-media-sources=pruebas-ab-de-fuentes-de-medios h_01HN5CNKKC03ZAFCQZ0KJ0RHCE=pruebas-ab-de-fuentes-de-medios h_01HN5CNKKC4M6YMPHTQCFHFDMD=ejemplo using-audiences-split-for-easy-ab-testing-of-media-sources=uso-de-la-divisi%C3%B3n-de-audiencias-para-facilitar-las-pruebas-ab-de-fuentes-de-medios h_01HN5CNKKC551X3HQFNKHW1JBY=uso-de-la-divisi%C3%B3n-de-audiencias-para-facilitar-las-pruebas-ab-de-fuentes-de-medios" />

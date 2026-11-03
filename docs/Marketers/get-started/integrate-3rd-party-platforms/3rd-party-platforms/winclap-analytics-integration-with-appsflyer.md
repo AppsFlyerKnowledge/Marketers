@@ -1,5 +1,5 @@
 ---
-title: Winclap Analytics integration with AppsFlyer
+title: Integración de Winclap Analytics con AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -12,155 +12,156 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2019-09-04T11:07:12Z'
-  edited_at: '2026-09-15T09:17:18Z'
+  edited_at: '2026-09-17T00:11:32Z'
   id: 360002403537
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360002403537-Winclap-Analytics-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/360002403537
 ---
-> **At a glance:** Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution data for BI and post-attribution analytics.
+> **De un vistazo:** Winclap Analytics, partner integrado de AppsFlyer, utiliza los datos de atribución de AppsFlyer para BI y análisis posteriores a la atribución.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up Winclap
+## Configuración de Winclap
 
-The setup is done from the **Active Integrations** page, but to find the partner you must first go to the <Anchor target="_blank" href="/marketers/docs/partner-integrations">marketplace</Anchor>.
+La configuración se realiza desde la página **Integraciones activas**, pero para encontrar al partner primero debes ir al <Anchor target="_blank" href="/marketers/es/docs/partner-integrations">Marketplace</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+> **Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 >
-> **To set up a new integration:**
+> **Para configurar una nueva integración:**
 >
-> 1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab. (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-> 2. Select the relevant app.
-> 3. Search for the partner and select **Integrate**.
-> 4. In the **Integration** tab, turn on the **Activate partner** toggle. **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-> 5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+> 1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de partners > Marketplace** .
+>    (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de partners > Integraciones activas**.)
+> 2. Selecciona la aplicación correspondiente.
+> 3. Busca el partner y selecciona **Integrar**.
+> 4. En la pestaña **Integración**, activa el conmutador **Activar partner**.
+>    **Nota:** El conmutador **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+> 5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners</Anchor>.
 
-Winclap Analytics configuration makes use of the ***Integration*** tab only.
+La configuración de Winclap Analytics utiliza solo la pestaña ***Integración***.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you must toggle ON the ***Activate Partner*** toggle to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">here</Anchor>.
+En la **primera visita** aquí, debes activar el selector ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention">aquí</Anchor>.
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Winclap Analytics user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a Winclap Analytics tras las instalaciones de usuarios y los re-engagements. Utiliza esta sección para definir la **fuente de los usuarios** que permite enviar estos postbacks.
 
-![winclap analytics integration - default postbacks](https://files.readme.io/a45d8d7ab4687876d8dea4b026580d80f4b34c151b00c3c47a701771d16582aa-50896714399761.png)
+![integración de Winclap Analytics: postbacks predeterminados](https://files.readme.io/a45d8d7ab4687876d8dea4b026580d80f4b34c151b00c3c47a701771d16582aa-50896714399761.png)
 
-For **installs**, select:
+Para las **instalaciones**, selecciona:
 
-* (Default) ***This partner only*** for events coming only from users attributed to Winclap.
-* ***All media sources, including organic*** to send postbacks for any user that downloads the app to Winclap.
+* (Predeterminado) ***Solo este partner*** para eventos que provienen únicamente de usuarios atribuidos a Winclap.
+* ***Todas las fuentes de medios, incluidas las orgánicas*** para enviar postbacks de cualquier Usuario que descargue la Aplicación a Winclap.
 
-For **reengagements**, the postbacks can be sent for ***This partner only***.
+Para los **re-engagements**, los postbacks se pueden enviar para ***Solo este partner***.
 
-Once this configuration is saved, AppsFlyer sends the following data to Winclap Analytics for each install, both organic and non-organic:
+Una vez guardada esta configuración, AppsFlyer envía los siguientes datos a Winclap Analytics para cada instalación, tanto orgánica como no orgánica:
 
-* Click ID
-* Campaign name
-* User-agent
-* Click time
+* ID de clic
+* Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>.
+* Agente de usuario
+* Horario del clic
 * IP
-* Country
-* City
-* Sub publisher
-* Device ID for Android & iOS
-* Carrier
-* Language
-* App ID
-* App version
-* App name
-* Install time
+* País
+* Ciudad en la conversión
+* Subanunciante
+* ID de dispositivo para Android & iOS
+* Operador
+* API de ingresos reales
+* Identificación de la aplicación
+* Versión de la aplicación
+* Nombre de aplicación
+* Tiempo de instalación
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map which in-app events to send to Winclap Analytics using postbacks:
+En esta sección, puedes asignar qué eventos in-app enviar a Winclap Analytics mediante postbacks:
 
-[![winclap analytics - in-app event postback configuration](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)
+[![winclap analytics - configuración del postback de eventos in-app](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)
 
-1. Switch the ***In-App Event Postbacks*** toggle to ON.
-2. Set the ***In-app event postback window***, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
-3. Click ***Add Event*** to add an SDK Event to the list.
-4. Complete the following parameters:
+1. Cambia el interruptor ***Postbacks de eventos in-app*** a ON.
+2. Establece la ***ventana de postback de eventos in-app***, si es necesario (Leer más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">la configuración de la ventana de postback de eventos in-app</Anchor>).
+3. Haz clic en ***Agregar evento*** para añadir un evento del SDK a la lista.
+4. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip**: Don't see the event you are looking for? Type in its SDK Event Name, click **Create custom**, and map normally. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping</Anchor>. |
-| **Partner event identifier** | The unique name or ID of each event as defined by Winclap.  <br />Get from Winclap the corresponding ID for each of the events you want to report to them, and enter in this field. |
-| **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to this partner  <br />**All media sources, including organic** to have your entire user base available to be reported to the partner |
-| **Send event data** | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
+| **Nombre de evento SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: ¿No encuentras el evento que buscas? Escribe su nombre de evento del SDK, haz clic en **Crear personalizado** y asigna normalmente. Leer más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizados</Anchor>. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento, tal como lo define Winclap.  <br />Obtén de Winclap el ID correspondiente de cada uno de los eventos que quieras reportarles e introdúcelo en este campo. |
+| **Opción de envío** | Selecciona la opción de envío para el evento:  <br />**Solo este partner** para eventos que provienen **solo** de usuarios atribuidos a este partner  <br />**Todas las fuentes de medios, incluidas las orgánicas** para que toda tu base de usuarios esté disponible para reportarla al partner |
+| **Enviar datos de eventos** | <ul><li>**Sin valores ni ingresos:** envía solo el evento en sí sin el valor del evento.</li><li>**Con valores y sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.</li><li>**Con valores e ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento).</li></ul> |
 
-5. Click ***Save***.
+5. Haz clic en ***Guardar***.
 
-Once this configuration is saved, AppsFlyer sends the following data to Winclap Analytics for each non-organic event:
+Una vez guardada esta configuración, AppsFlyer envía los siguientes datos a Winclap Analytics para cada evento no orgánico:
 
-* Click ID
-* Event name
-* Event value
-* Event revenue
-* Event currency
-* Event revenue in USD
-* Campaign name
-* User-agent
-* Click time
+* ID de clic
+* Tasa del impuesto sobre los ingresos netos
+* Valor del evento
+* Modelo de dispositivo: iPhone7
+* Evento in-app
+* Ingresos del evento en USD
+* Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>.
+* Agente de usuario
+* Horario del clic
 * IP
-* Country
-* City
+* País
+* Ciudad en la conversión
 * Sub publisher
-* Device ID for Android & iOS
-* Carrier
-* Language
-* App ID
-* App version
-* App name
-* Install time
+* ID de dispositivo para Android & iOS
+* Operador
+* API de ingresos reales
+* Identificación de la aplicación
+* Versión de la aplicación
+* Nombre de aplicación
+* Tiempo de instalación
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for Winclap Analytics.
+Los enlaces de atribución no están disponibles para Winclap Analytics.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for Winclap Analytics.
+Los permisos no están disponibles para Winclap Analytics.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H9HWQK6JA2194MPE8PVQJ346=important h_01H9HWQK6JAQ2GCHHGQ57PJ570=setting-up-winclap h_01H9HWQK6JRZ1KVDJK00PZR7T9=note h_01H9HWQK6JX9MAD64MQ1HPK4T0=integration-tab h_01H9HWQK6JKRB5MDE43RKV3SEH=activate-partner h_01H9HWQK6JP4HQHRFC011KW6XQ=default-postbacks inapp-events-settings=in-app-events-settings h_01H9HWQK6J1MEK67XDMAMKAQKW=in-app-events-settings h_01H9HWQK6JBH1M2MZQM12R0SAR=attribution-link-tab h_01H9HWQK6JG46BGNRMR8ZM9W2J=cost-tab h_01H9HWQK6J7HHJWKVB55WE1VW9=ad-revenue-tab h_01H9HWQK6J6BD0ER2M9Z7GYGSM=permissions-tab" />
+<div data-zendesk-anchors="h_01H9HWQK6JA2194MPE8PVQJ346=importante setting-up-winclap=configuraci%C3%B3n-de-winclap h_01H9HWQK6JAQ2GCHHGQ57PJ570=configuraci%C3%B3n-de-winclap h_01H9HWQK6JRZ1KVDJK00PZR7T9=nota h_01H9HWQK6JX9MAD64MQ1HPK4T0=integration-tab activate-partner=activar-socio h_01H9HWQK6JKRB5MDE43RKV3SEH=activar-socio default-postbacks=postbacks-predeterminados h_01H9HWQK6JP4HQHRFC011KW6XQ=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01H9HWQK6J1MEK67XDMAMKAQKW=configuraci%C3%B3n-de-eventos-in-app h_01H9HWQK6JBH1M2MZQM12R0SAR=attribution-link-tab h_01H9HWQK6JG46BGNRMR8ZM9W2J=cost-tab h_01H9HWQK6J7HHJWKVB55WE1VW9=ad-revenue-tab h_01H9HWQK6J6BD0ER2M9Z7GYGSM=permissions-tab" />

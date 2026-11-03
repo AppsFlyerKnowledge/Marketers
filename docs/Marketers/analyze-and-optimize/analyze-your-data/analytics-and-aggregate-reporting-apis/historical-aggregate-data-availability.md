@@ -1,5 +1,5 @@
 ---
-title: Historical aggregate data availability
+title: Disponibilidad de datos históricos agregados
 metadata:
   keywords:
     - Aggregated Data
@@ -14,22 +14,21 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2023-05-24T08:38:43Z'
-  edited_at: '2026-10-14T09:43:06Z'
+  edited_at: '2026-08-26T00:02:43Z'
   id: 15557418667537
-  locale: en-us
+  locale: es
   section: Analytics and aggregate reporting/APIs
   section_id: 6550976670225
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/15557418667537-Historical-aggregate-data-availability
+  url: https://support.appsflyer.com/hc/es/articles/15557418667537
 ---
-> **At a glance:** See what historical data is available via different AppsFlyer aggregate dashboards and reports.
+> **De un vistazo:** Consulta qué datos históricos están disponibles en distintos dashboards y reportes agregados de AppsFlyer.
 
-## Historical aggregate data availability
+## Disponibilidad de datos históricos agregados
 
-The following table displays how far back historical data is available via different AppsFlyer aggregate dashboards and reports.
+La siguiente tabla muestra hasta dónde se remontan los datos históricos disponibles en distintos dashboards y reportes agregados de AppsFlyer.
 
-As of April 1, 2026, aggregated LTV data (including clicks, impressions, and installs) is retained for 25 months (2 years + 1 month) instead of 5 years. See <Anchor target="_blank" href="/marketers/docs/bulletin-aggregated-ltv-data-availability">Bulletin: Aggregated LTV data availability</Anchor> for details.
+A partir del 1 de abril de 2026, los datos agregados de LTV (incluidos clics, impresiones e instalaciones) se retendrán durante 25 meses (2 años + 1 mes) en lugar de 5 años. Consulta el <Anchor target="_blank" href="/marketers/es/docs/bulletin-aggregated-ltv-data-availability">Boletín: Disponibilidad de datos LTV agregados</Anchor> para obtener más información.
 
-<table><thead><tr><th>Reporting method</th><th>Historical data availability</th></tr></thead><tbody><tr><td>Overview dashboard</td><td>25 months (2 years + 1 month)</td></tr><tr><td>Master API</td><td><ul><li>LTV data: 25 months (2 years + 1 month)</li><li>Cohort data (daily cohort): 2 years</li><li>Activity data: 3 years</li></ul></td></tr><tr><td><p>Pull API</p><p>(aggregate reports)</p></td><td>25 months (2 years + 1 month)</td></tr><tr><td><p>Export data page</p><p>(aggregate reports)</p></td><td>25 months (2 years + 1 month)</td></tr><tr><td>SKAN overview</td><td>Earliest conversion data supported: November 1, 2020</td></tr><tr><td>SKAN aggregate data APIs</td><td>Earliest conversion data supported: November 1, 2020</td></tr><tr><td>Protect360 dashboard</td><td>Data is available from the start of the Protect360 subscription</td></tr><tr><td>Activity dashboard</td><td><ul><li>3 years</li><li>High-level tab: 1 year</li></ul></td></tr><tr><td>Events</td><td>25 months (2 years + 1 month)</td></tr><tr><td>Retention</td><td>2 years</td></tr><tr><td>Cohort dashboard</td><td><ul><li>Daily cohort: 2 years</li><li>Weekly/monthly cohorts: 3 years</li></ul></td></tr><tr><td>Cohort API</td><td>Daily cohort: 2 years</td></tr><tr><td>Cohort Data Locker</td><td>Not relevant\*</td></tr><tr><td>Custom dashboard</td><td>25 months (2 years + 1 month)</td></tr><tr><td>Pivot reports</td><td><ul><li>LTV data: 25 months (2 years + 1 month)</li><li>Activity data: 3 years</li></ul></td></tr><tr><td>Cost ETL</td><td>Not relevant\*\*</td></tr><tr><td colspan="2"><p>\* Data Locker reports are sent daily with conversions, sessions, and events generated from users converted over the past year (3 years in beta).</p><p>\*\* Cost ETL reports are sent multiple times per day. They provide cost data for the current day and the previous 6 days (referred to as 7 days in this article), as well as days 14, 29, and 88. The retroactive data allows for updates and corrections in the cost data reporting.</p></td></tr></tbody></table>
+<table><thead><tr><th>Método de reporte</th><th>Disponibilidad de datos históricos</th></tr></thead><tbody><tr><td>Dashboard general</td><td>25 meses (2 años + 1 mes)</td></tr><tr><td>API maestra</td><td><ul><li>Datos de LTV: 5 años</li><li>Datos de cohortes (cohorte diaria): 2 años</li><li>Datos de actividad: 3 años</li></ul></td></tr><tr><td><p>API Pull</p><p>(reportes agregados)</p></td><td>25 meses (2 años + 1 mes)</td></tr><tr><td><p>Página de exportación de datos</p><p>(reportes agregados)</p></td><td>25 meses (2 años + 1 mes)</td></tr><tr><td>Resumen de SKAN</td><td>Datos de conversión más antiguos admitidos: 1 de noviembre de 2020</td></tr><tr><td>APIs de datos agregados de SKAN</td><td>Datos de conversión más antiguos admitidos: 1 de noviembre de 2020</td></tr><tr><td>Panel de control de Protect360</td><td>Los datos están disponibles desde el inicio de la suscripción a Protect360</td></tr><tr><td>Panel de actividades</td><td><ul><li>3 años</li><li>Pestaña de alto nivel: 1 año</li></ul></td></tr><tr><td>Eventos</td><td>25 meses (2 años + 1 mes)</td></tr><tr><td>Retención</td><td>2 años</td></tr><tr><td>Panel de control de la cohorte</td><td><ul><li>Cohorte diaria: 2 años</li><li>Cohortes semanales/mensuales: 3 años</li></ul></td></tr><tr><td>API de cohorte</td><td>Cohorte diaria: 2 años</td></tr><tr><td>Data Locker de cohortes</td><td>No relevante\*</td></tr><tr><td>Panel personalizado</td><td>25 meses (2 años + 1 mes)</td></tr><tr><td>Reportes de pivote</td><td><ul><li>Datos de LTV: 5 años</li><li>Datos de actividad: 3 años</li></ul></td></tr><tr><td>ETL de costos</td><td>No relevante\*\*</td></tr><tr><td colspan="2"><p>\* Los reportes de Data Locker se envían a diario con conversiones, sesiones y eventos generados por usuarios que convirtieron durante el último año (3 años en beta).</p><p>\*\* Los reportes ETL de costo se envían varias veces al día. Proporcionan datos de costo del día actual y de los 6 días anteriores (denominados 7 días en este artículo), así como de los días 14, 29 y 88. Los datos retroactivos permiten actualizaciones y correcciones en los reportes de datos de costos.</p></td></tr></tbody></table>
 
-<div data-zendesk-anchors="h_01KYPDRP64DHB3RN8E51NTGPFE=historical-aggregate-data-availability" />
+<div data-zendesk-anchors="historical-aggregate-data-availability=disponibilidad-de-datos-hist%C3%B3ricos-agregados h_01KYPDRP64DHB3RN8E51NTGPFE=disponibilidad-de-datos-hist%C3%B3ricos-agregados" />

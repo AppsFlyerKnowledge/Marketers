@@ -1,5 +1,5 @@
 ---
-title: Bing campaign configuration
+title: Configuración de la campaña de Bing
 metadata:
   keywords:
     - Advertisers
@@ -14,88 +14,87 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2019-02-17T11:13:20Z'
-  edited_at: '2026-06-16T09:37:37Z'
+  edited_at: '2026-08-12T12:13:18Z'
   id: 360000985718
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (A-F)
   section_id: 6551990971793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000985718-Bing-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360000985718
 ---
-> **At a glance:** Bing, an AppsFlyer ad network integrated partner, is one of the world's leading search engines. You can manage user acquisition campaigns through Bing and attribute them with AppsFlyer.
+> **De un vistazo:** Bing, un partner integrado de ad network de AppsFlyer, es uno de los principales motores de búsqueda del mundo. Puedes gestionar campañas de adquisición de usuarios a través de Bing y atribuirlas con AppsFlyer.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Microsoft requires attribution providers to delete its user-level data 13 months after the install. This means that the events performed by these users 13 months after they install the app are counted as organic. Past aggregate data remains the same.
+> Microsoft exige que los proveedores de atribución eliminen sus datos de nivel de usuario 13 meses después de la instalación. Esto significa que los eventos efectuados por estos usuarios 13 meses después de que hayan instalado la aplicación se cuentan como orgánicos. Los datos agregados anteriores permanecen iguales.
 
-## Set up Bing
+## Configurar Bing
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración.   
+   **Nota importante:** El selector **debe permanecer activado (activo) mientras trabajas con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Más información</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-See <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">partner configuration window.</Anchor>
+Consulta la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">ventana de configuración del partner.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-#### Activate partner
+#### Activar socio
 
-On the **first visit**, you must toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita**, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-#### Default postbacks
+#### Postbacks predeterminados
 
-Send automatic postbacks to Bing following user installs.
+Envía postbacks automáticos a Bing después de las instalaciones de los usuarios.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The option **Only events attributed to this partner** is the only option with Bing and is selected by default.
+> La opción **Solo los eventos atribuidos a este partner** es la única disponible con Bing y está seleccionada de forma predeterminada.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost integration is not available for this partner.
+La integración de costos no está disponible para este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue is not available for this partner.
+Los ingresos por anuncios no están disponibles para este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-See <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions tab</Anchor>.
+Consulta la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">pestaña de permisos</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKWAVZG5GZD6DRZBCDF8KWG5=note h_01HKWAVZG51TVD1Y2M4R46CN9H=set-up-bing h_01HKWAVZG5QRGYT2996ARR93M6=integration-tab h_01HKWAVZG5N42ETTX9K01YGN56=activate-partner h_01HKWAVZG5CAMFVGQBDFDZKWMT=default-postbacks h_01HKWAVZG5DTQJ9HCP5N0BQP5F=note-1 h_01HKWAVZG6KK6V3ARGTFQBBGCX=attribution-link-tab h_01HKWAVZG67HCXB8QCMS4F3SZC=cost-tab h_01HKWAVZG60ECM8Q41Y3HTGXZ5=ad-revenue-tab h_01HKWAVZG6N8WC79DBW2N09A70=permissions-tab" />
+<div data-zendesk-anchors="h_01HKWAVZG5GZD6DRZBCDF8KWG5=nota set-up-bing=configurar-bing h_01HKWAVZG51TVD1Y2M4R46CN9H=configurar-bing h_01HKWAVZG5QRGYT2996ARR93M6=integration-tab activate-partner=activar-socio h_01HKWAVZG5N42ETTX9K01YGN56=activar-socio default-postbacks=postbacks-predeterminados h_01HKWAVZG5CAMFVGQBDFDZKWMT=postbacks-predeterminados h_01HKWAVZG5DTQJ9HCP5N0BQP5F=nota-1 h_01HKWAVZG6KK6V3ARGTFQBBGCX=attribution-link-tab h_01HKWAVZG67HCXB8QCMS4F3SZC=cost-tab h_01HKWAVZG60ECM8Q41Y3HTGXZ5=ad-revenue-tab h_01HKWAVZG6N8WC79DBW2N09A70=permissions-tab" />

@@ -1,5 +1,5 @@
 ---
-title: Raw data export page
+title: Página de exportación de datos en bruto
 metadata:
   keywords:
     - ad networks
@@ -17,184 +17,272 @@ x-zendesk:
     - Raw Reports
     - Ad Networks
   created_at: '2020-05-11T22:25:33Z'
-  edited_at: '2026-08-13T16:49:58Z'
+  edited_at: '2026-08-22T00:04:36Z'
   id: 360008613838
-  locale: en-us
+  locale: es
   section: Data delivery tools
   section_id: 6550995484561
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360008613838-Raw-data-export-page
+  url: https://support.appsflyer.com/hc/es/articles/360008613838
 ---
-> **At a glance:** Download raw data reports in CSV files. Up to 1M rows per download. Limit reports to the data you need by using filters.
+> **De un vistazo:** Descarga informes de datos en bruto en archivos CSV. Hasta 1 millón de filas por cada descarga. Limita los informes a los datos que necesitas utilizando filtros.
 
-The following visual displays the first time you go to the **Raw data export** page; the **My reports** page displays if you have reports ready for download or duplication.
+La imagen siguiente se muestra la primera vez que accedes a la página **Exportación de datos en bruto**; la página **Mis informes** se muestra si tienes informes listos para descargar o duplicar.
 
 [![RawDataSplash.png](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)
 
-**My reports**
+**Mis informes**
 
-The **My reports** page lists reports previously generated and ready download, duplication, or both. The reports listed were generated during the previous 90 days; their download period is 7 days. After 7 days, if you still need the report, you must generate it again.
+La página **Mis informes** lista los informes generados previamente y listos para descargar, duplicar o ambas cosas. Los informes listados se generaron en los 90 días anteriores; tienen un período de descarga de 7 días. Después de 7 días, si todavía necesitas el informe, deberás generarlo de nuevo.
 
-For a description of the raw data reports, see <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Raw data reporting overview</Anchor>
+Para una descripción de los informes de datos crudos, consulte <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">Descripción general de la generación de informes de datos crudos</Anchor>
 
-To generate or download reports, see the procedures section of this article.
+Para generar o descargar informes, consulta la sección de procedimientos de este artículo.
 
-[![MyReportsRawDataExport.png](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)
+[![MisInformesExportaciónDatosEnBruto.png](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)
 
 <div id="raw-data-export-page-features-and-filter-options" />
 
-<Accordion title="Raw data export page features and filter options">
+<Accordion title="Características y opciones de filtro de la página de exportación de datos en bruto">
 
-The raw data export page provides reports having the features listed in the following table.
+La página de exportación de datos en bruto proporciona informes con las características enumeradas en la siguiente tabla.
 
-<table><thead><tr><th>Feature</th><th>Remarks</th></tr></thead><tbody><tr><td><span id="report-categories"></span>Report categories </td><td>Differ according to your subscription plan</td></tr><tr><td><span id="date-range"></span>Date range</td><td>Raw data reports are filtered by activity dates (event occurrence). You can also add a filter for install dates. See list of filter options in the table that follows.</td></tr><tr><td><span id="maximum-number-of-rows"></span>Maximum number of rows</td><td>1M rows</td></tr><tr><td><span id="rate-limitation"></span>Rate limitation</td><td>A <a href="./report-generation-quotas-rate-limitations" target="_blank">quota mechanism</a> limits the number of reports that can be generated per day.</td></tr><tr><td><span id="retentionreport-window"></span>Retention/report window</td><td><p>Install-related reports (installs, install postbacks) <strong>60</strong> out of the previous 90 days in a single download. </p><p>In-app event-related reports: 31 out of the previous 90 days in a single download.</p></td></tr><tr><td><span id="filter-options"></span>Filter options</td><td>The filters listed are available for use. In some cases, depending on the filter, filter options are populated. For example, when filtering by Geo the list of available countries is listed.</td></tr><tr><td><span id="field-selection"></span>Field selection</td><td><p>The most important fields are pre-selected. You can add/clear select fields in the <strong>Report fields</strong> tab. Some fields may not have relevance to a given report. Nevertheless, you can select the field. We do this so that you can have consistent report formats (columns) </p><p>For example, selecting fraud (Protect360) related fields in the user acquisition in-app events report returns blank columns. These fields are populated only in the context of explicit Protect360 reports. </p></td></tr><tr><td><span id="report-csv-field-order"></span>Report (CSV) field order</td><td><p>Columns in reports are arranged according to the field order setting. The column sequence <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx">listed in a spreadsheet</a> contains separate tabs for the legacy and default options. </p><figure><table><thead><tr><th>Setting</th><th>Field selection allowed</th><th>Remarks</th></tr></thead><tbody><tr><td><span id="default"></span>Default</td><td>Yes</td><td><ul><li>Selected fields are ordered according to an AppsFlyer template.</li><li>Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields.</li></ul></td></tr><tr><td><span id="alphabetical-az"></span>Alphabetical (A-Z)</td><td>Yes</td><td>Selected fields are ordered alphabetically (ascending).</td></tr><tr><td><span id="alphabetical-za"></span>Alphabetical (Z-A)</td><td>Yes</td><td>Selected fields are ordered in reverse order alphabetically (descending).</td></tr><tr><td><span id="legacy"></span>Legacy</td><td>No</td><td><ul><li>Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.</li><li>Field selection is fixed and can't be changed.</li><li>There is some variation of the reports per field depending on the actual report</li></ul></td></tr></tbody></table></figure></td></tr></tbody></table>
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Función
+      </th>
+      <th>
+        Comentarios
+      </th>
+    </tr>
+  </thead>
 
-| Filter | Advertiser | Ad network | Agency |
+  <tbody>
+    <tr>
+      <td><span id="report-categories"></span>
+        Categorías de informes
+      </td>
+      <td>
+        Difieren según tu plan de suscripción
+      </td>
+    </tr>
+    <tr>
+      <td><span id="date-range"></span>
+        El rango de datos sEleccionado
+      </td>
+      <td>
+        Los informes de datos en bruto se filtran por fechas de actividad (ocurrencia del evento). También puedes añadir un filtro para las fechas de instalación. Consulta la lista de opciones de filtro en la tabla a seguir.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="maximum-number-of-rows"></span>
+        Número máximo de filas
+      </td>
+      <td>
+        1 millón de filas
+      </td>
+    </tr>
+    <tr>
+      <td><span id="rate-limitation"></span>
+        Límite de velocidad
+      </td>
+      <td>
+        Un <Anchor target="_blank" href="/marketers/es/docs/report-generation-quotas-rate-limitations">mecanismo de cuotas</Anchor> limita el número de reportes que se pueden generar al día.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="retentionreport-window"></span>
+        Ventana de retención/reporte
+      </td>
+      <td>
+        Reportes relacionados con la instalación (instalaciones, postbacks de instalación) **60** de los 90 días anteriores en una sola descarga.
+
+        Reportes relacionados con eventos in-app: 31 de los 90 días anteriores en una sola descarga.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="filter-options"></span>
+        Opciones de filtro
+      </td>
+      <td>
+        Los filtros listados están disponibles para uso. En algunos casos, dependiendo del filtro, las opciones de filtro se completan automáticamente. Por ejemplo, al filtrar por geolocalización, se enumera la lista de países disponibles.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="field-selection"></span>
+        Selección de campos
+      </td>
+      <td>
+        Los campos más relevantes están preseleccionados. Puedes añadir o quitar campos seleccionados en la pestaña **Campos del reporte**. Es posible que algunos campos no sean relevantes para un informe determinado. No obstante, puedes seleccionar el campo. Hacemos esto para que pueda disponer de formatos de informes coherentes (columnas).
+
+        Por ejemplo, al seleccionar campos relacionados con fraude (Protect360) en el informe de eventos en la aplicación de adquisición de usuarios, aparecen columnas vacías. Estos campos se completan únicamente en el contexto específico de los informes de Protect360.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="report-csv-field-order"></span>
+        Orden de campos en el informe (CSV)
+      </td>
+      <td>
+        Las columnas en los informes se ordenan conforme a la configuración del orden de los campos. La secuencia de columnas [que se muestra en una hoja de cálculo](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx) contiene pestañas separadas para las opciones heredadas y predeterminadas.
+
+        | Configuración | Selección de campos permitida | Comentarios |
+        | --- | --- | --- |
+        | <span id="default"></span>Por defecto | Sí | * Los campos seleccionados se ordenan según una plantilla de AppsFlyer.<br />* A partir de ahora, la secuencia se mantendrá. Los campos futuros se anexarán a la derecha de los campos existentes. |
+        | <span id="alphabetical-az"></span>Alfabético (A-Z) | Sí | Los campos seleccionados se ordenan alfabéticamente (orden ascendente). |
+        | <span id="alphabetical-za"></span>Alfabético (Z-A) | Sí | Los campos seleccionados se ordenan en orden inverso alfabéticamente (orden descendente). |
+        | <span id="legacy"></span>Heredado | No | * Los campos se ordenan según la secuencia de las columnas en los reportes elaborados utilizando la versión anterior de la página de datos exportados.<br />* La selección de campos es fija y no se puede cambiar.<br />* La variación de los informes por campo depende del informe específico. |
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+| Filtro | Anunciante | Red publicitaria (Ad network) | Agency |
 | --- | --- | --- | --- |
-| Media source | Yes | No | Yes |
-| Activity date range | Yes | Yes | Yes |
-| Install date range | Yes | Yes | Yes |
-| Agency | Yes | No | No |
-| Geo (territory/country) | Yes | Yes | Yes |
-| In-app events (available for in-app event reports) | Yes | No | Yes |
+| Fuente de medios | Sí | No | Sí |
+| Intervalo de fechas de actividad | Sí | Sí | Sí |
+| Rango de fechas de instalación | Sí | Sí | Sí |
+| Agency | Sí | No | No |
+| Geolocalización (territorio/país) | Sí | Sí | Sí |
+| Eventos en la aplicación (disponibles en informes de eventos en la aplicación) | Sí | No | Sí |
 
 </Accordion>
 
-## Procedures
+## Procedimientos
 
 <div id="create-a-default-report" />
 
-<Accordion title="Create a default report">
+<Accordion title="Crear un informe por defecto">
 
-You can create a report with the default settings without customizing its fields or filters.
+Puede crear un informe con la configuración estándar sin personalizar sus campos o filtros.
 
-**To create a default report:**
+**Para crear un informe por defecto:**
 
-1. In AppsFlyer, from the side menu, select **Export** > **Raw Data Export**
-2. Click + **New report**
-3. Hover on the type of report you want to generate and click **Create.**
-4. Select **Generate now** from the drop-down menu.
-5. On the popup window click **Generate now.** Generation can take up to 10 minutes.
-   * During report generation, you can continue working, create additional reports, or navigate to other pages.
+1. En AppsFlyer, desde el menú lateral, seleccione **Exportar** > **Exportación de datos sin procesar**.
+2. Haga clic en + **Nuevo informe**.
+3. Desplace el cursor sobre el tipo de informe que desea generar y haga clic en **Crear**.
+4. Seleccione **Generar ahora** en el menú desplegable.
+5. En la ventana emergente, haga clic en **Generar ahora.** La generación puede tardar hasta 10 minutos.
+   * Durante la generación del informe, puede seguir trabajando, crear informes adicionales o navegar a otras páginas.
 
-**The default report filter settings:**
+**Configuración predeterminada del filtro del informe:**
 
-| Filter | Default setting |
+| Filtro | Configuración por defecto |
 | --- | --- |
-| Activity dates | The past 7 days |
-| Maximum rows per file | 200,000 |
-| Media source | All media sources |
-| Agency | All Agencies |
-| Geo | All geographical areas |
+| Fechas de actividad | Los últimos 7 días |
+| Máximo de filas por archivo | 200.000 |
+| Fuente de medios | Todas las fuentes de medios |
+| Agencia | Todas las agencias |
+| Geografía | Todas las áreas geográficas |
 
 </Accordion>
 
 <div id="create-a-custom-report" />
 
-<Accordion title="Create a custom report">
+<Accordion title="Crear un informe personalizado">
 
-You can create a custom report by setting its filters and fields.
+Puede crear un informe personalizado configurando sus filtros y campos.
 
-**To create a custom report:**
+**Para crear un informe personalizado:**
 
-1. In AppsFlyer, from the side menu, select **Export** > **Raw Data Export**
-2. Click + **New report**
-3. Hover on the type of report you want to generate and click **Create.**
-4. Select **Customize** from the drop-down menu.
-5. Set the report filters
-   * **Activity dates:** Select the Activity date range. You can set the specific date or select from the options such as custom, yesterday, last 7 days, and so on.
-   * **Maximum rows per file:** [Optional] Set the maximum number of rows a file can include. Select from 100, 200K, 500K, or 1M rows.
-   * **Media source:** [Optional] Only the events that were attributed to the selected media sources will be included in the report. You can add a media source to the list by clicking **Add item**.
+1. En AppsFlyer, desde el menú lateral, seleccione **Exportar** > **Exportación de datos sin procesar**.
+2. Haga clic en + **Nuevo informe**.
+3. Desplace el cursor sobre el tipo de informe que desea generar y haga clic en **Crear**.
+4. Seleccione **Personalizar** del menú desplegable.
+5. Configure los filtros del informe
+   * **Fechas de actividad:** Seleccione el intervalo de fechas de la actividad. Puede establecer una fecha específica o elegir entre las opciones como personalizadas, ayer, últimos 7 días, etc.
+   * **Máximo de filas por archivo:** [Opcional] Establezca la cantidad máxima de filas que puede incluir un archivo. Elija entre 100, 200K, 500K o 1 millón de filas.
+   * **Fuente de medios:** [Opcional] Solo se incluirán los eventos atribuidos a las fuentes de medios seleccionadas en el informe. Puede añadir una fuente de medios a la lista haciendo clic en **Agregar elemento**.
 
-     > 📘 **Note**
+     > 📘 **Nota**
      >
-     > Self-reporting network (SRN) web PIDs, such as `metaweb_int`, `googleds_int`, or `tiktokweb_int`, do not appear automatically in the Media source drop-down list. To filter for web SRN postbacks, click **Add item** and enter the web media source PID manually.
+     > Los PID web de las redes de autorreporte (SRN), como `metaweb_int`, `googleds_int` o `tiktokweb_int`, no aparecen automáticamente en la lista desplegable de fuente de medios. Para filtrar los postbacks web de SRN, haz clic en **Add item** e introduce manualmente el PID de la fuente de medios web.
 
-   * **Agency:** [Optional] Only the events that were attributed to the selected agencies will be included in the report. You can add an agency to the list by clicking **Add item**.
-   * **Geo:** [Optional] Only the events that were attributed to the selected geographical areas will be included in the report.
-   * **Report-type specific filter**: Each report type may have its own filter from which you can select a filtering criteria.
-6. [Optional]: Reports are populated automatically with the necessary fields. You can add or remove fields as follows:
-   1. Go to the **Report fields** tab.The list of selected fields displays. You can't change the selection of mandatory fields.
-   2. Select or clear select fields as required.
-   3. [Optional] Set **Report (CSV) field Order** to set the sequence of columns.
-   4. [Option] Click **Restore defaults** if needed.
-7. Click **Create.**
-   * The **My reports** page displays. Initially, the status indicates that the report is generating.
-   * Generation can take up to 10 minutes.
-   * During report generation, you can continue working, create additional reports, or navigate to other pages.
+   * **Agencia:** [Opcional] Solo se incluirán los eventos atribuidos a las agencias seleccionadas en el informe. Puede añadir una agencia a la lista haciendo clic en **Agregar elemento**.
+   * **Geografía:** [Opcional] Solo se incluirán los eventos de las áreas geográficas seleccionadas en el informe.
+   * **Filtro específico del tipo de informe**: Cada tipo de informe puede tener su propio filtro, desde el cual puede seleccionar un criterio de filtrado.
+6. [Opcional]: Los informes se completan automáticamente con los campos necesarios. Puede añadir o eliminar campos de la siguiente manera:
+   1. Acceda a la pestaña **Campos del informe**. Se mostrará la lista de campos seleccionados. No puede cambiar la selección de los campos obligatorios.
+   2. Seleccione o deseleccione los campos según sea necesario.
+   3. [Opcional] Establezca **Orden de los campos del informe (CSV)** para definir la secuencia de columnas.
+   4. [Opción] Haga clic en **Restaurar valores predeterminados** si es necesario.
+7. Haga clic en **Crear**.
+   * La página **Mis informes** se muestra. Inicialmente, el estado indica que el informe se está generando.
+   * La generación puede tardar hasta 10 minutos.
+   * Durante la generación del informe, puede seguir trabajando, crear informes adicionales o navegar a otras páginas.
 
 </Accordion>
 
 <div id="download-report" />
 
-<Accordion title="Download report">
+<Accordion title="Descargar informe">
 
-**To download a report**:
+**Para descargar un informe**:
 
-1. In AppsFlyer, from the sidebar, open **Export** > **Raw Data Export.**
-2. Click ![DownloadIcon.png](https://files.readme.io/6c00f4922fc3a835a856d7fdf527aa32d2f50570710c1527b039f43a7acbba79-41225791763217.png) (download), to download the report. Generated reports are available for download for 7 days.
+1. En AppsFlyer, desde la barra lateral, abra **Exportar** > **Exportación de datos sin procesar**.
+2. Haga clic en ![DownloadIcon.png](https://files.readme.io/6c00f4922fc3a835a856d7fdf527aa32d2f50570710c1527b039f43a7acbba79-41225791763217.png) (descargar) para obtener el informe. Los informes generados están disponibles para descargar durante 7 días.
 
 </Accordion>
 
 <div id="duplicate-and-edit-report-settings" />
 
-<Accordion title="Duplicate and edit report settings">
+<Accordion title="Duplicar y editar las configuraciones de informes">
 
-**To duplicate and edit report settings:**
+**Para duplicar y editar la configuración del informe:**
 
-1. In AppsFlyer, from the sidebar, open **Export** > **Raw Data Export.**
-2. Click ![Duplicate.png](https://files.readme.io/f745081f1bf0c4f5861e275a29048fe84e8020f8b3bf4ebe4ad6a8d9254ab4b5-41225784681233.png), to duplicate report settings and then edit the settings.
-3. Click **Create.** Generated reports are available for 7 days.   
-   * The **My reports** page displays. Initially, the status indicates that the report is generating.
-   * Generation can take up to 10 minutes.
-   * During report generation, you can continue working, create additional reports, or navigate to other pages.
+1. En AppsFlyer, desde la barra lateral, abra **Exportar** > **Exportación de datos sin procesar**.
+2. Haga clic en ![Duplicar.png](https://files.readme.io/f745081f1bf0c4f5861e275a29048fe84e8020f8b3bf4ebe4ad6a8d9254ab4b5-41225784681233.png) para duplicar la configuración del informe y luego edite la configuración.
+3. Haga clic en **Crear**. Los informes generados están disponibles durante 7 días.   
+   * Se muestra la página **Mis informes**. Inicialmente, el estado indica que el informe se está generando.
+   * La generación puede tardar hasta 10 minutos.
+   * Durante la generación del informe, puede seguir trabajando, crear informes adicionales o navegar a otras páginas.
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Características y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Ad network access | Yes |
-| Agency access | Yes |
-| App-specific time zone | Yes |
-| App-specific currency | Yes |
-| Limitations | Up to 1M records per download |
-| Organic data | Available |
-| Non-organic data | Available |
-| Data freshness | Report dependent |
-| Historical data | Previous 90 days |
-| Account user access | Users in <Anchor target="_blank" href="/marketers/docs/user-management">roles with required permissions</Anchor> |
-| Email delivery | Not supported |
-| Install date range | The install date range must be earlier than the activity date range. |
-| Raw data postback reports | Postbacks sent to partners due to events attributed to agencies are not included in the Advertiser's Raw Data Postback reports. |
+| Acceso a la red de anuncios | Sí |
+| Acceso a la agencia | Sí |
+| Zona horaria específica de la aplicación | Sí |
+| Moneda específica de la aplicación | Sí |
+| Limitaciones | Hasta un millón de registros por descarga |
+| Datos no orgánicos | Disponible |
+| Datos orgánicos | Disponible |
+| Actualización de datos | Dependiente del informe |
+| Datos históricos | Últimos 90 días |
+| Acceso del usuario a la cuenta | Usuarios en <Anchor target="_blank" href="/marketers/es/docs/user-management">roles con los permisos requeridos</Anchor> |
+| Envio por correo electrónico | No compatible |
+| Rango de fechas de instalación | El intervalo de fechas de instalación debe ser anterior al intervalo de fechas de actividad. |
+| Informes de devolución de datos brutos | Los postbacks enviados a socios debido a eventos atribuidos a agencias no transparentes no se incluyen en los informes de postbacks de datos brutos del anunciante. |
 
 </Accordion>
 
 <div id="field-sequence-templates" />
 
-<Accordion title="Field sequence templates">
+<Accordion title="Plantillas de secuencia de campos">
 
-The Report field order setting allows you to specify the sequence of columns in reports and in some cases the fields themselves.
+La configuración del orden de los campos del informe le permite especificar la secuencia de columnas en los informes y, en algunos casos, los propios campos.
 
-| Setting | Field selection allowed | Remarks |
+| Ajustes | Selección de campo permitida | Observaciones |
 | --- | --- | --- |
-| <span id="default::b7bb6355"></span>Default | Yes | <ul><li>Selected fields are ordered according to an AppsFlyer template.</li><li>Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields.</li></ul> |
-| <span id="alphabetical-az::b08af6b3"></span>Alphabetical (A-Z) | Yes | Selected fields are ordered alphabetically. |
-| <span id="alphabetical-za::f0b3beb8"></span>Alphabetical (Z-A) | Yes | Selected fields are ordered in reverse order alphabetically |
-| <span id="legacy::fb5fd8ec"></span>Legacy | No | <ul><li>Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.</li><li>Field selection is fixed and can't be changed.</li><li>There is some variation of the reports per field depending on the actual report.</li></ul> |
+| <span id="default::b7bb6355"></span>Predeterminado | Sí | <ul><li>Los campos seleccionados se ordenan conforme a una plantilla de AppsFlyer.</li><li>A partir de ahora, la secuencia se mantendrá. Los futuros campos se añadirán a la derecha de los existentes.</li></ul> |
+| <span id="alphabetical-az::b08af6b3"></span>Alfabético (A-Z) | Sí | Los campos seleccionados se ordenan alfabéticamente. |
+| <span id="alphabetical-za::f0b3beb8"></span>Alfabético (Z-A) | Sí | Los campos seleccionados se ordenan en orden alfabético inverso. |
+| <span id="legacy::fb5fd8ec"></span>Heredado | No | <ul><li>Los campos se ordenan según la secuencia de columnas en los informes creados con la versión anterior de la página de exportación de datos.</li><li>La selección de campos es fija y no se puede modificar.</li><li>Existen variaciones en los informes por campo según el informe específico.</li></ul> |
 
-This [spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx) contains both a Default and Legacy sheet. Each contains the relevant field order list.
+Esta [hoja de cálculo](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx) contiene tanto una hoja predeterminada como una heredada. Cada una contiene la lista del orden de los campos correspondiente.
 
-**To change the field order:**
+**Para cambiar el orden de los campos:**
 
-1. In the Report fields tab, select a **Report field order** option.
-2. If necessary change the selected fields by selecting or clear selecting the necessary fields.
+1. En la pestaña de Campos del informe, seleccione una opción de **Orden de campos del informe**.
+2. Si es necesario, modifique los campos seleccionados seleccionando o desmarcando los campos necesarios.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HA28AT6QRSG68NBFYHH5SQY8=raw-data-export-page-features-and-filter-options h_01HA28AT6Q9PV3M55C1YM3XN2E=procedures h_01HZY1HQ9AVH6Q9QAQB4SM1VPX=create-a-default-report h_01HZY1HQ9ACEMZ4N8WPYNHZQP7=create-a-custom-report h_01_web_srn_media_source_filter=note h_01HA28AT6QV1XP4N952PAEGSSG=download-report h_01HA28AT6QFT88RHJ3M05MV3B3=duplicate-and-edit-report-settings h_01HA28AT6Q4DXKCZ22R9XEN2RR=additional-information h_01HA28AT6Q6SE8CB3EEXFMAN0H=traits-and-limitations h_01HA28AT6RW8C99ZGEBTN5E44R=field-sequence-templates" />
+<div data-zendesk-anchors="h_01HA28AT6QRSG68NBFYHH5SQY8=raw-data-export-page-features-and-filter-options procedures=procedimientos h_01HA28AT6Q9PV3M55C1YM3XN2E=procedimientos h_01HZY1HQ9AVH6Q9QAQB4SM1VPX=create-a-default-report h_01HZY1HQ9ACEMZ4N8WPYNHZQP7=create-a-custom-report h_01_web_srn_media_source_filter=nota h_01HA28AT6QV1XP4N952PAEGSSG=download-report h_01HA28AT6QFT88RHJ3M05MV3B3=duplicate-and-edit-report-settings additional-information=informaci%C3%B3n-adicional h_01HA28AT6Q4DXKCZ22R9XEN2RR=informaci%C3%B3n-adicional h_01HA28AT6Q6SE8CB3EEXFMAN0H=traits-and-limitations h_01HA28AT6RW8C99ZGEBTN5E44R=field-sequence-templates" />

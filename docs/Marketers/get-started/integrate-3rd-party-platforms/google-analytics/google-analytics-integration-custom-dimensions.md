@@ -1,5 +1,5 @@
 ---
-title: Google Analytics integration—Custom dimensions
+title: Integración de Google Analytics—dimensiones personalizadas
 metadata:
   keywords:
     - Analytics
@@ -14,65 +14,67 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-12-07T13:34:54Z'
-  edited_at: '2026-08-14T16:22:39Z'
+  edited_at: '2026-08-22T00:12:24Z'
   id: 4413033740817
-  locale: en-us
+  locale: es
   section: Google Analytics
   section_id: 6551226043793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4413033740817-Google-Analytics-integration-Custom-dimensions
+  url: https://support.appsflyer.com/hc/es/articles/4413033740817
 ---
-> **At a glance:** Set up the integration with Google Analytics using custom dimensions.
+> **At a glance:** Configura la integración con Google Analytics mediante dimensiones personalizadas.
 
-## Custom dimensions on Google Analytics
+## Dimensiones personalizadas en Google Analytics
 
-There is another method for sending AppsFlyer's attribution data to Google analytics, that is set up on GA and not on AppsFlyer's dashboard.
+Hay otro método para enviar los datos de atribución de AppsFlyer a Google Analytics, que se configura en GA y no en el dashboard de AppsFlyer.
 
 > 🚧 **Important**
 >
-> The Custom Dimensions method **IS NOT RECOMMENDED** due to the following:
+> **Importante:**
 >
-> * Integrating Google Analytics through AppsFlyer dashboard is simple, quick and easy
-> * Integrating Google Analytics using Custom Dimensions is complicated and error-prone
-> * Using Custom Dimensions requires you to use both AppsFlyer SDK and Google Analytics SDK
-> * Using Custom Dimensions has a greater potential of causing discrepancies
+> El método de dimensiones personalizadas **NO SE RECOMIENDA** por lo siguiente:
+>
+> * Integrar Google Analytics a través del Dashboard de AppsFlyer es simple, rápido y fácil
+> * Integrar Google Analytics mediante dimensiones personalizadas es complicado y propenso a errores
+> * Usar dimensiones personalizadas requiere que uses tanto el SDK de AppsFlyer como el SDK de Google Analytics
+> * Usar dimensiones personalizadas tiene más posibilidades de causar discrepancias
 
-Advertisers that use the new <Anchor target="_blank" href="/marketers/docs/google-analytics-ga4-integration">integration with Google Analytics</Anchor> don't need to use the custom dimensions method.
+Los anunciantes que usan la nueva <Anchor target="_blank" href="/marketers/es/docs/google-analytics-ga4-integration">integración con Google Analytics</Anchor> no necesitan usar el método de dimensiones personalizadas.
 
 > 📘 **Note**
 >
-> This method requires you to integrate GA SDK into your app.
+> **Nota:**
 >
-> * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/android/v4/">GA SDK for Android</Anchor>
-> * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/ios/v3/">GA SDK for iOS</Anchor>
+> Este método requiere que integres el SDK de GA en tu App.
+>
+> * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/android/v4/">SDK de GA para Android</Anchor>
+> * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/ios/v3/">SDK de GA para iOS</Anchor>
 
-### Setting media source as a custom dimension on Google Analytics
+### Configurar la fuente de medios como una dimensión personalizada en Google Analytics
 
-Google Analytics has a powerful tool to create user-level segmentation called custom dimensions. The custom dimension values are sent from mobile devices and your reports are generated, based on these dimensions from your Google Analytics dashboard.
+Google Analytics tiene una herramienta potente para crear segmentación a nivel de usuario llamada dimensiones personalizadas. Los valores de las dimensiones personalizadas se envían desde dispositivos móviles y los reportes se generan en función de estas dimensiones, desde tu dashboard de Google Analytics.
 
-### Step 1: Define it on Google Analytics
+### Paso 1: Defínelo en Google Analytics
 
-1. Select your app from the GA menu
-2. Select ***Admin*** at the top bar on GA dashboard
-3. On the ***PROPERTY*** column select ***Custom Definition***
-4. Select ***Custom Dimensions***
-   ![Custom Dimensions option in the Google Analytics Admin panel](https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png)
-5. Create a new dimension. Call it **AppsFlyer Media Source** and make sure you select ***User*** scope. This ensures the data is saved over multiple sessions.
-   ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
+1. Selecciona tu aplicación en el menú de GA
+2. Selecciona ***Admin*** en la barra superior del dashboard de GA
+3. En la columna ***PROPERTY***, selecciona ***Custom Definition***
+4. Selecciona ***Dimensiones personalizadas***
+   ![Opción de dimensiones personalizadas en el panel de administración de Google Analytics](https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png)
+5. Crea una nueva dimensión. Llámala **AppsFlyer Media Source** y asegúrate de seleccionar el alcance ***Usuario***. Esto garantiza que los datos se guarden durante varias sesiones. ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
 
-   Each dimension is created with an index that you must remember so you can later use it in the GA API from your app. In this example, the index of the new dimension is 10.
+   Cada dimensión se crea con un índice que debes recordar para poder usarlo más adelante en la API de GA desde tu aplicación. En este ejemplo, el índice de la nueva dimensión es 10.
 
    ![ga3](https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png)
 
-   Repeat this step and create another dimension and call it **AppsFlyer Campaign**
+   Repite este paso y crea otra dimensión y llámala **Campaña de AppsFlyer**
 
-### Step 2: Setting and sending the data from the app
+### Paso 2: Configurar y enviar los datos desde la aplicación
 
-First, you need to get the media source value from AppsFlyer SDK. You can do this using the method `onConversionDataSuccess`.
+Primero, debes obtener el valor de la fuente de medios desde el SDK de AppsFlyer. Puedes hacerlo con el método `onConversionDataSuccess`.
 
-**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onInstallConversionDataLoaded` in Android and `onConversionDataReceived` in iOS. We recommend that you upgrade to SDK 5.0.0. To learn more, click <Anchor target="_blank" href="/marketers/docs/links-to-appsflyer-sdk-release-notes">here</Anchor>.
+**Nota:** A partir del SDK V5, `onConversionDataSuccess` es el nombre del método para obtener datos de conversión. Si estás utilizando una versión del SDK inferior a 5.0.0, el nombre del método es `onInstallConversionDataLoaded` en Android y `onConversionDataReceived` en iOS. Recomendamos que actualices al SDK 5.0.0. Para aprender más, haz clic <Anchor target="_blank" href="/marketers/es/docs/links-to-appsflyer-sdk-release-notes">aquí</Anchor>.
 
-Then, you can set the media source as custom dimension using Google Analytics SDK. See the following code samples to learn how to do it:
+A continuación, puedes establecer la fuente de medios como dimensión personalizada mediante el SDK de Google Analytics. Consulta los siguientes ejemplos de código para ver cómo hacerlo:
 
 <Tabs>
 <Tab title="Android">
@@ -98,7 +100,7 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
 ```objectivec
 -(void)onConversionDataSuccess:(NSDictionary*) installData {
@@ -126,10 +128,10 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 </Tab>
 </Tabs>
 
-### Step 3: See the results in Google Analytics
+### Paso 3: Ver los resultados en Google Analytics
 
-Most GA reports have a drill-down option called ***Custom Dimensions***. You can select the dimensions ***AppsFlyer Media Source*** or ***AppsFlyer Campaign*** ([set in step 1](/docs/google-analytics-integration-custom-dimensions#step-1-define-it-on-google-analytics)) to see which media sources and campaigns bring users that install your app.
+La mayoría de los reportes de GA tienen una opción para profundizar llamada ***Dimensiones personalizadas***. Puedes seleccionar las dimensiones ***Fuente de medios de AppsFlyer*** o ***Campaña de AppsFlyer*** ([configuradas en el paso 1](/docs/google-analytics-integration-custom-dimensions#paso-1-defínelo-en-google-analytics)) para ver qué fuentes de medios y campañas atraen a los usuarios que instalan tu app.
 
 ![G_analytics1.png](https://files.readme.io/dde9219a7a8eec5c861b5031ad741ff7377d85ba9c3693bcbc455fd735f8af2d-4413121449617.png)
 
-<div data-zendesk-anchors="h_01HDP3FHGNR06EV1KS8F1PFQ09=custom-dimensions-on-google-analytics h_01HDP3FHGP9H18VJKNSR27HXEZ=setting-media-source-as-a-custom-dimension-on-google-analytics h_01HDP3FHGPTJ4EVYPDA7RWPJF9=step-1-define-it-on-google-analytics h_01HDP3FHGPF3BJZSG6G0QP5T1R=step-2-setting-and-sending-the-data-from-the-app h_01HDP3FHGP9G9BP956KM4ACDRC=step-3-see-the-results-in-google-analytics" />
+<div data-zendesk-anchors="custom-dimensions-on-google-analytics=dimensiones-personalizadas-en-google-analytics h_01HDP3FHGNR06EV1KS8F1PFQ09=dimensiones-personalizadas-en-google-analytics setting-media-source-as-a-custom-dimension-on-google-analytics=configurar-la-fuente-de-medios-como-una-dimensi%C3%B3n-personalizada-en-google-analytics h_01HDP3FHGP9H18VJKNSR27HXEZ=configurar-la-fuente-de-medios-como-una-dimensi%C3%B3n-personalizada-en-google-analytics step-1-define-it-on-google-analytics=paso-1-def%C3%ADnelo-en-google-analytics h_01HDP3FHGPTJ4EVYPDA7RWPJF9=paso-1-def%C3%ADnelo-en-google-analytics step-2-setting-and-sending-the-data-from-the-app=paso-2-configurar-y-enviar-los-datos-desde-la-aplicaci%C3%B3n h_01HDP3FHGPF3BJZSG6G0QP5T1R=paso-2-configurar-y-enviar-los-datos-desde-la-aplicaci%C3%B3n step-3-see-the-results-in-google-analytics=paso-3-ver-los-resultados-en-google-analytics h_01HDP3FHGP9G9BP956KM4ACDRC=paso-3-ver-los-resultados-en-google-analytics" />

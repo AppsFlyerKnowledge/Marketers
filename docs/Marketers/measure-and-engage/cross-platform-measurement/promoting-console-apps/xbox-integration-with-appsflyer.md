@@ -1,5 +1,5 @@
 ---
-title: Xbox integration with AppsFlyer
+title: Integración de Xbox con AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -12,50 +12,49 @@ x-zendesk:
     - Marketers
     - PC & Console Attribution
   created_at: '2023-04-13T08:28:00Z'
-  edited_at: '2024-05-07T09:10:17Z'
+  edited_at: '2026-08-12T12:10:09Z'
   id: 14504812967057
-  locale: en-us
+  locale: es
   section: Promoting Console apps
   section_id: 15329052471057
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/14504812967057-Xbox-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/14504812967057
 ---
-> **At a glance:** Integrate your Xbox app with AppsFlyer to receive attribution and event data for your campaigns on Xbox.
+> **En resumen:** Integra tu aplicación Xbox con AppsFlyer para recibir datos de eventos y atribuciones para tus campañas en Xbox.
 
-## About Xbox attribution
+## Acerca de la atribución de Xbox
 
-The Xbox OS for console and CTV apps runs across all Xboxes.
+El sistema operativo Xbox para consolas y aplicaciones CTV se ejecuta en todas las Xbox.
 
-Apps running on Xbox can integrate with AppsFlyer via S2S API to receive attribution data and performance measurements about which sources (organic) and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+Las aplicaciones que se ejecutan en Xbox pueden integrarse con AppsFlyer a través de la API S2S para recibir datos de atribución y mediciones de rendimiento sobre qué fuentes (orgánicas) y campañas impulsan la apertura de la aplicación y eventos in-app. Los marketers confían en estos insights para medir y optimizar las actividades de marketing.
 
-The Xbox API integration supports:
+La integración de la API de Xbox admite:
 
-* Xboxes.
-* Attribution and event recording for Xbox apps. Meaning, attribution and recording on a user's Xbox device.
+* Xbox.
+* Atribución y grabación de eventos para aplicaciones de Xbox. Significado, atribución y grabación en el dispositivo Xbox de un usuario.
 
-## Integration procedures
+## Procedimientos de integración
 
-The following table lists the tasks required to integrate your Xbox app with AppsFlyer.
+La siguiente tabla enumera las tareas necesarias para integrar tu aplicación Xbox con AppsFlyer.
 
-| Task | Actions | Who's involved |
+| Tarea | Acciones | ¿Quién está involucrado? |
 | --- | --- | --- |
-| App setup | <ul><li><Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Create an AppsFlyer account</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/user-management">Add account users with appropriate permissions</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">Add your Xbox app in AppsFlyer</Anchor></li></ul> | Marketer |
-| API integration with your app (via S2S) | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-4">Integrate the AppsFlyer API</Anchor> into your app with commands to report the following events to AppsFlyer.<ul><li>First opens</li><li>In-app events</li><li>Sessions</li></ul>**Note**:<ul><li>First app opens must be reported before in-app events and sessions.</li><li>For the `device_ids` parameter, select the type `custom`.</li><li>Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer.</li></ul>To report owned media engagements, integrate the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">impression engagement API.</Anchor> | App developer |
-| Reports setup | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor> | Marketer/Data engineer |
+| Configuración de la aplicación | <ul><li><Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Crea una cuenta de AppsFlyer</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/user-management">Agrega usuarios a la cuenta con los permisos adecuados</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">Agrega tu aplicación Xbox en AppsFlyer</Anchor></li></ul> | Comercializador |
+| Integración de la API con tu aplicación (a través de S2S) | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-4">Integra la API de AppsFlyer</Anchor> en tu aplicación con comandos para reportar los siguientes eventos a AppsFlyer.<ul><li>Primera apertura</li><li>Eventos in-app</li><li>Sesiones</li></ul>**Nota**:<ul><li>Las primeras aperturas de aplicaciones deben informarse antes de las sesiones y eventos in-app.</li><li>Para el `device_ids` parámetro, selecciona el tipo `custom`.</li><li>Envía eventos usando la API. Díle a tu desarrollador qué eventos enviar. Verifica que cuando configuras la API, configuras y asignas los eventos para enviar a AppsFlyer.</li></ul>Para reportar sobre interacciones con medios propios, integra la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">API de interacción con impresiones.</Anchor> | Desarrolladores de aplicaciones |
+| Configuración de reportes | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Obtén más insights sobre la disponibilidad de datos en dashboards y reportes</Anchor> | Marketer/Ingeniero de datos |
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Rasgos y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Retargeting | Not currently supported |
-| Cost data | Cost data must be sent via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file by email method. |
+| Reorientación | Actualmente no es compatible |
+| Datos de costos | Los datos de costos deben enviarse a través de <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Importación de costos</Anchor> utilizando el método de upload del archivo por correo electrónico. |
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">CTV, PC, and console platform overview</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Resumen general de la plataforma de CTV, PC y consola</Anchor>
 
-<div data-zendesk-anchors="about-playstation-attribution=about-xbox-attribution 01H7Z1NEAJMRWKHS4K168V0753=about-xbox-attribution 01H7Z1NEAJJY4ZRVKY74ACXAAR=integration-procedures 01H7Z1NEAJRA11P7NG05KRKR8Q=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />
+<div data-zendesk-anchors="about-playstation-attribution=acerca-de-la-atribuci%C3%B3n-de-xbox 01H7Z1NEAJMRWKHS4K168V0753=acerca-de-la-atribuci%C3%B3n-de-xbox integration-procedures=procedimientos-de-integraci%C3%B3n 01H7Z1NEAJJY4ZRVKY74ACXAAR=procedimientos-de-integraci%C3%B3n 01H7Z1NEAJRA11P7NG05KRKR8Q=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=consulta-tambi%C3%A9n" />

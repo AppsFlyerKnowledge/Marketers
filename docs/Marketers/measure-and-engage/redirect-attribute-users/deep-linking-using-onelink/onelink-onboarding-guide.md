@@ -1,5 +1,5 @@
 ---
-title: OneLink onboarding guide
+title: 'Integración con OneLink: Guía para principiantes'
 metadata:
   keywords:
     - Marketers
@@ -13,60 +13,59 @@ x-zendesk:
     - Marketers
     - Smart Banners and Scripts
   created_at: '2024-08-21T11:48:39Z'
-  edited_at: '2026-05-13T07:07:16Z'
+  edited_at: '2026-08-12T12:24:12Z'
   id: 27699299657617
-  locale: en-us
+  locale: es
   section: Deep linking using OneLink
   section_id: 6551203111057
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/27699299657617-OneLink-onboarding-guide
+  url: https://support.appsflyer.com/hc/es/articles/27699299657617
 ---
-> **At a glance**: Use OneLink for powerful, customized user redirection, deep linking, and attribution from your campaigns, regardless of user device, operating system, channel, or platform, for maximum conversion.
+> **De un vistazo**: Utiliza OneLink para redirección personalizada y efectiva de usuarios, enlaces profundos y atribución desde tus campañas, sin importar el dispositivo, sistema operativo, canal o plataforma del usuario, para maximizar la conversión y los ingresos.
 
 ## ![53010_Onelink.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
 
-## About OneLink
+## Sobre OneLink
 
-AppsFlyer <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor> enables you to create links for your campaigns with attribution, redirection, and deep linking capabilities that convert owned media users into app users and engage existing users with smooth contextual journeys regardless of device, operating system, channel, or platform. Use OneLink to create personalized, contextual user journeys that drive users to your app to achieve the highest possible conversion rates and revenue. The personalized experiences you can create include:
+AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor> te permite crear enlaces para tus campañas con capacidades de atribución, redirección y enlaces profundos que convierten a usuarios de medios propios en usuarios de aplicaciones y mantienen a los usuarios existentes comprometidos con experiencias contextuales fluidas, sin importar el dispositivo, sistema operativo, canal o plataforma. Usa OneLink para crear recorridos de usuario personalizados y contextuales que lleven a los usuarios a tu aplicación, logrando las tasas de conversión e ingresos más altas posibles. Las experiencias personalizadas que puedes crear incluyen:
 
-* **Social-to-app**: Engage your users on social media and send them from social media feeds to your app.
-* **App-to-app**: Lead users to your app from within other apps.
-* <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users">**Web-to-app**</Anchor>: Convert your mobile website visitors into new mobile app users using Smart Banners and Smart Script. **Includes paid features**
-* **QR-to-app**: Use QR codes to drive app installs by having users scan a QR code at key points during their offline customer experience. You can also put QR codes on your desktop site, or on TV and CTV ads to route users to your app.
-* **Email-to-app**: Use email service providers (ESPs) to engage users via email and send them from their inbox to your app. **Includes paid features**
-* **Text-to-app**: Create links for your SMS and messaging campaigns and engage users via text messages.
-* **Referral-to-app**: Create user invite links that allow users and influencers to invite others to your app or share specific in-app content, for example, an article. **Includes paid features**
-* **Custom**: Create a custom experience with a myriad of options for maximum customization. No matter where your users come from, whether via desktop or mobile, online or offline, owned or paid media, use OneLink to easily direct them to the right place.
+* **De redes sociales a aplicación**: Interactúa con tus usuarios en redes sociales y envíalos desde los feeds de redes sociales a tu aplicación.
+* **De aplicación a aplicación**: Lleva a los usuarios a tu aplicación desde otras aplicaciones.
+* <Anchor target="_blank" href="/marketers/es/docs/convert-your-mobile-web-visitors-to-app-users">**De la web a la aplicación**</Anchor>: Convierte a los visitantes de tu sitio web móvil en nuevos usuarios de la aplicación móvil utilizando Smart Banners y Smart Script. **Incluye funciones pagadas**
+* **De QR a aplicación**: Utiliza códigos QR para impulsar las instalaciones de aplicaciones haciendo que los usuarios escanéen un código QR en puntos clave durante su experiencia de cliente fuera de línea. También puedes colocar códigos QR en tu sitio de escritorio o en anuncios de TV y CTV para dirigir a los usuarios a tu aplicación.
+* **De correo electrónico a aplicación**: Utiliza proveedores de servicios de correo electrónico (ESP) para interactuar con los usuarios mediante correo electrónico y envíalos desde su bandeja de entrada a tu aplicación. **Incluye funciones pagadas**
+* **De texto a aplicación**: Crea enlaces para tus campañas de SMS y mensajería e interactúa con los usuarios a través de mensajes de texto.
+* **De referencia a aplicación**: Crea enlaces de invitación que permiten a usuarios e influencers invitar a otros a tu aplicación o compartir contenido específico dentro de la aplicación, como un artículo. **Incluye funciones pagadas**
+* **Personalizado**: Crea una experiencia personalizada con una amplia variedad de opciones para lograr la máxima personalización. No importa de dónde provengan tus usuarios, ya sea a través de ordenadores de escritorio o dispositivos móviles, en línea o fuera de línea, medios propios o pagados, utiliza OneLink para dirigirlos fácilmente al lugar adecuado.
 
-**Note:** While basic OneLink setup is available on the free plans, most features require a paid AppsFlyer <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">subscription plan</Anchor>. 
+**De texto a aplicación**: Crea enlaces para tus campañas de SMS y mensajería e interactúa con los usuarios a través de mensajes de texto. 
 
-## OneLink onboarding
+## Incorporación a OneLink
 
-**To get started using OneLink, follow the steps below:**
+**Para empezar a usar OneLink, siga los pasos a continuación:**
 
-<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Prerequisites**
+<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Requisitos previos**
 
-* An AppsFlyer <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">account</Anchor> with at least one of your apps added.
-* Most features require a paid AppsFlyer <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">subscription plan</Anchor>. For help, contact [hello@appsflyer.com](mailto:hello@appslfyer.com)
-* To set up OneLink, you must be an AppsFlyer Admin user or have <Anchor target="_blank" href="/marketers/docs/user-management">permissions</Anchor> to add/edit OneLink templates.
-* The <Anchor target="_blank" href="/marketers/docs/integrate-the-appsflyer-sdk">AppsFlyer SDK</Anchor> should be installed in your mobile apps for attribution of installs, in-app events, and deep linking.
-  * If the SDK is not yet installed in your apps, it's still possible to create a working redirection link, but without attribution.
+* Una <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">cuenta</Anchor> de AppsFlyer con al menos una de sus aplicaciones añadidas.
+* La mayoría de las funciones requieren un <Anchor target="_blank" href="/marketers/es/docs/account-management-plans-payments-and-billing#appsflyer-plans">plan de suscripción</Anchor> de pago de AppsFlyer. Si necesitas ayuda, contacta con [hello@appsflyer.com](mailto:hello@appslfyer.com)
+* Para configurar OneLink, debe ser un usuario administrador de AppsFlyer o contar con <Anchor target="_blank" href="/marketers/es/docs/user-management">permisos</Anchor> para añadir/editar plantillas de OneLink.
+* <Anchor target="_blank" href="/marketers/es/docs/integrate-the-appsflyer-sdk">SDK de AppsFlyer</Anchor> debe estar instalado en sus aplicaciones móviles para la atribución de instalaciones, eventos dentro de la aplicación y enlaces profundos.
+  * Si el SDK aún no está instalado en sus aplicaciones, todavía es posible crear un enlace de redirección funcional, pero sin atribución.
 
-| Task | Purpose | Actions required | Who's involved |
+| Tarea | Propósito | Acciones necesarias | ¿Quién participa? |
 | --- | --- | --- | --- |
-| 1. Create a OneLink template | A OneLink template is the required base of redirection logic for the links you'll create. | <ul><li>Marketer/product manager: Set up a <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink template</Anchor> in AppsFlyer.</li><li>Android developer: Configure app-opening methods for existing users (Android App Links and URI scheme).</li><li>iOS developer: Configure app-opening methods for existing users (iOS Universal Links and URI scheme).</li></ul><Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">Developer instructions</Anchor> | Marketer and developer |
-| 2. Create a OneLink link | Create a OneLink link from your newly created template, for use in your campaign. | <ul><li>Marketer/product manager: Set up a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">OneLink link</Anchor> in AppsFlyer, including selecting the customer experience and adding any attribution and deep linking parameters.</li><li>Android and iOS developers: Set up <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">deep linking</Anchor> (if deep linking is required).</li></ul> | Marketer and developer |
-| 3. Set up your domain redirect allowlist | For security, links you create in AppsFlyer will only redirect users to web URLs whose domains are in your allowlist. | Update the <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">domain redirect allowlist</Anchor> with all domains you want to redirect users to. | Marketer |
-| 4. Test your new link | Test that your link successfully redirects:<ul><li>New users without your app installed</li><li>Existing users with your app installed</li></ul> | You can <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">test</Anchor> your newly created link. | Marketer |
-| 5. Use the link confidently in your campaign, then measure the results |  | <ol><li>Add the new link to your campaign and serve it to your audience.</li><li>See the results of your campaign in the AppsFlyer Overview dashboard (filter by your campaign).</li></ol>Congratulations! You're all done onboarding to OneLink. | Marketer, data analyst |
-| **Optional features** |  | Now that you're all set up, you can explore and discover additional OneLink features such as:<ul><li>Web-to-app: Transform web users into app users and measure web-to-app funnels.</li><li><Anchor target="_blank" href="/marketers/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">OneLink API</Anchor> and <Anchor target="_blank" href="/marketers/docs/perform-onelink-bulk-actions-via-csv">bulk link creation</Anchor>: Scale and run multiple campaigns at once and create thousands of OneLink links quickly and easily.<br />*OneLink API requires an Enterprise subscription.</li><li><Anchor target="_blank" href="/marketers/docs/export-onelink-urls">Export OneLink URLs</Anchor>: Download your OneLink URLs created in AppsFlyer.</li><li><Anchor target="_blank" href="/marketers/docs/user-invite-attribution">User invite attribution</Anchor> - Create engagement by integrating user invite links created directly from the app.</li><li><Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-marketers">Cross-promotion attribution</Anchor>: Your existing app users are excellent candidates for installing your other new apps. Learn how to use SDK methods to create and measure cross-promotion campaigns.</li><li><Anchor target="_blank" href="/marketers/docs/understand-onelink-short-vs-long-urls">Long URLs</Anchor>: Add parameters to your OneLink custom links or generate a large number of OneLink custom links by applying your own simple formulas in a spreadsheet.</li></ul>**Note:** Most features require a paid AppsFlyer <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">subscription plan</Anchor>. | Marketer and developer |
+| 1. Crear una plantilla OneLink | Una plantilla OneLink es la base requerida de la lógica de redirección para todos los enlaces creados a partir de ella. | <ul><li>Responsable de marketing/gerente de producto: Configurar una <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">plantilla OneLink</Anchor> en AppsFlyer.</li><li>Desarrollador de Android: Configurar métodos de apertura de aplicaciones para usuarios existentes (enlaces de aplicaciones de Android y esquema URI).</li><li>Desarrollador de iOS: Configurar métodos de apertura de aplicaciones para usuarios existentes (enlaces universales de iOS y esquema URI).</li></ul><Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">Instrucciones para desarrolladores</Anchor> | Responsable de marketing y desarrollador |
+| 2. Crear un enlace OneLink | Cree un enlace OneLink a partir de su nueva plantilla para utilizar en su campaña. | <ul><li>Responsable de marketing/gerente de producto: Configurar un enlace <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#crear-un-enlace-de-onelink">OneLink</Anchor> en AppsFlyer, incluyendo la selección de la experiencia del cliente y la adición de parámetros de atribución y enlaces profundos.</li><li><Anchor target="_blank" href="/marketers/es/docs/convert-your-mobile-web-visitors-to-app-users">**De la web a la aplicación**</Anchor>: Convierte a los visitantes de tu sitio web móvil en nuevos usuarios de la aplicación móvil utilizando Smart Banners y Smart Script.</li></ul> | Responsable de marketing y desarrollador |
+| 3. Configurar la lista de permitidos de redireccionamiento de dominio | Por seguridad, los enlaces que cree en AppsFlyer solo redirigirán a los usuarios a URLs web cuyos dominios estén en su lista de permitidos. | Actualice la <Anchor target="_blank" href="/marketers/es/docs/set-up-your-domain-redirect-allowlist">lista de permitidos de redireccionamiento de dominios</Anchor> con todos los dominios a los que desea redirigir a los usuarios. | Comercializador |
+| 4. Probar su nuevo enlace | Verifique que su enlace redirige con éxito:<ul><li>Nuevos usuarios sin su aplicación instalada</li><li>Usuarios existentes con su aplicación instalada</li></ul> | Puede <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">probar</Anchor> el enlace recién creado. | Comercializador |
+| 5. Utilice el enlace con confianza en su campaña y luego mida los resultados |  | <ol><li>Añada el nuevo enlace a su campaña y preséntelo a su audiencia.</li><li>Vea los resultados de su campaña en el panel general de AppsFlyer (filtre por su campaña).</li></ol>¡Felicitaciones! ¡Felicidades! Ha completado la incorporación a OneLink. | Responsable de marketing, analista de datos |
+| **Características opcionales** |  | Ahora que todo está configurado, puede explorar y descubrir funciones adicionales de OneLink, como:<ul><li>De la web a la aplicación: Convierta a los usuarios web en usuarios de aplicaciones y mida los flujos de conversión de web a aplicación.</li><li><Anchor target="_blank" href="/marketers/es/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">API de OneLink</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/perform-onelink-bulk-actions-via-csv">creación masiva de enlaces</Anchor>: Escale y ejecute múltiples campañas simultáneamente y cree miles de enlaces OneLink de forma rápida y sencilla.<br />*La API de OneLink requiere una suscripción Enterprise.</li><li><Anchor target="_blank" href="/marketers/es/docs/export-onelink-urls">Exportar URLs de OneLink</Anchor>: Descargue las URLs de OneLink que ha creado en AppsFlyer.</li><li><Anchor target="_blank" href="/marketers/es/docs/user-invite-attribution">Atribución de invitación de usuario</Anchor> - Crea engagement integrando enlaces de invitación de usuario creados directamente desde la app.</li><li><Anchor target="_blank" href="/marketers/es/docs/cross-promotion-attribution-for-marketers">Atribución de promoción cruzada</Anchor>: Los usuarios existentes de su aplicación son excelentes candidatos para instalar sus nuevas aplicaciones. Aprenda a utilizar los métodos SDK para crear y evaluar campañas de promoción cruzada.</li><li><Anchor target="_blank" href="/marketers/es/docs/understand-onelink-short-vs-long-urls">URLs extensas</Anchor>: Añada parámetros a sus enlaces personalizados de OneLink o genere numerosos enlaces personalizados de OneLink aplicando sus propias fórmulas simples en una hoja de cálculo.</li></ul>**Nota:** La mayoría de las funciones requieren un <Anchor target="_blank" href="/marketers/es/docs/account-management-plans-payments-and-billing#appsflyer-plans">plan de suscripción</Anchor> de pago de AppsFlyer. | Responsable de marketing y desarrollador |
 
-If you need any help getting started with OneLink, reach out to your salesperson, or write to [hello@appsflyer.com](mailto:hello@appsflyer.com)
+Si necesita ayuda para iniciar con OneLink, póngase en contacto con su representante de ventas o escriba a [hello@appsflyer.com](mailto:hello@appsflyer.com)
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-| Trait | Remarks |
+| El | Nota |
 | --- | --- |
-| Owned media attribution in iPad Safari | When users click owned media links on an iPad using the Safari browser, the browser may report a **Macintosh-like user agent** instead of an iPad device model. As a result, AppsFlyer identifies the click as originating from a Mac device, while the app install is identified as originating from an iPad. Because probabilistic attribution relies on matching device characteristics between the click and the install, this mismatch prevents attribution and can result in unattributed installs or deferred deep linking failures. This limitation applies only to owned media traffic on iPad devices using Safari. |
+| Atribución de medios propios en Safari para iPad | Cuando los usuarios hacen clic en enlaces de medios propios en un iPad con el navegador Safari, es posible que el navegador reporte un **user agent similar al de Macintosh** en lugar del modelo de dispositivo de un iPad. Como resultado, AppsFlyer identifica el clic como procedente de un dispositivo Mac, mientras que la instalación de la app se identifica como procedente de un iPad. Dado que la atribución probabilística se basa en hacer coincidir las características del dispositivo entre el clic y la instalación, esta discrepancia impide la atribución y puede provocar instalaciones no atribuidas o fallos de Deferred deep linking. Esta limitación solo se aplica al tráfico de medios propios en dispositivos iPad que usan Safari. |
 
-<div data-zendesk-anchors="overview=about-onelink h_01J2G7RMHSPPXCWJ60W9HZASXX=about-onelink h_01HKHGX9JJQQCKF9SDZRSCM1XJ=about-onelink xyz-onboarding=onelink-onboarding h_01J2RJFH0B4R815CWDQNEB2C1P=onelink-onboarding h_01KFAG3N0X0W0RCJXK00KX038E=traits-and-limitations" />
+<div data-zendesk-anchors="overview=sobre-onelink h_01J2G7RMHSPPXCWJ60W9HZASXX=sobre-onelink h_01HKHGX9JJQQCKF9SDZRSCM1XJ=sobre-onelink xyz-onboarding=incorporaci%C3%B3n-a-onelink h_01J2RJFH0B4R815CWDQNEB2C1P=incorporaci%C3%B3n-a-onelink traits-and-limitations=especificaciones-y-limitaciones h_01KFAG3N0X0W0RCJXK00KX038E=especificaciones-y-limitaciones" />

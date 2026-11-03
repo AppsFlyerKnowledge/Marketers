@@ -1,5 +1,5 @@
 ---
-title: Measure assisted installs
+title: Medir las instalaciones asistidas
 metadata:
   keywords:
     - Attribution
@@ -21,88 +21,88 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2015-12-24T10:21:25Z'
-  edited_at: '2026-05-25T14:01:59Z'
+  edited_at: '2026-08-12T11:57:05Z'
   id: 207040506
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207040506-Measure-assisted-installs
+  url: https://support.appsflyer.com/hc/es/articles/207040506
 ---
-> **At a glance:** Measure the broader impact of media sources that engaged your users and assisted before the last touch.
+> **De un vistazo:** Mide el impacto más amplio de las fuentes de medios que involucraron a tus usuarios y ayudaron antes del último toque.
 
-## Assisted installs
+## Instalaciones asistidas
 
-<Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/">Assisted installs</Anchor> (AKA multi-touch attribution) are installs where the media source/campaign didn't have the last touch but did touch the user before the install and during the attribution window. One install can have up to 3 assisted installs.
+Las <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/">instalaciones asistidas</Anchor> (también conocida como atribución multi-touch) son instalaciones en las que la fuente de medios/campaña no tuvo el último toque, pero sí llegó al usuario antes de la instalación y durante la ventana de atribución. Una instalación puede tener hasta 3 instalaciones asistidas.
 
-Analytical data of assisted installs are available at both the media source and campaign levels to measure the broader impact of each media source and campaign.
+Los datos analíticos de las instalaciones asistidas están disponibles tanto a nivel de fuente de medios como de campaña para medir el impacto más amplio de cada fuente de medios y campaña.
 
-### View assisted installs metrics in the Overview dashboard
+### Ver métricas de instalaciones asistidas en el panel de control general
 
-**To view assisted installs in the Overview dashboard**:
+**Para ver las instalaciones asistidas en el panel de control general**:
 
-1. In AppsFlyer, from the side menu, select **Analyze** > **Overview**.
-2. Select the Extended Overview report.
-3. Scroll down to the trend over time charts.
-4. Select the **Media source** or **Campaign** dimension.
-5. Select the **Assisted installs** metric.  
-   The assisted installs chart displays. The blue indicates non-organic installs and the orange indicates assisted installs. ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
+1. En AppsFlyer, en el menú lateral, selecciona **Análisis** > **General**.
+2. Selecciona el reporte de Vista General Ampliada.
+3. Desplázate hacia abajo hasta los gráficos de tendencias en el tiempo.
+4. Selecciona la dimensión **Fuente de medios** o **Campaña**.
+5. Selecciona la métrica **Instalaciones asistidas**.  
+   Se muestra el gráfico de instalaciones asistidas. El azul indica las instalaciones no orgánicas y el naranja indica las instalaciones asistidas. ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
 
-### Why are assists important
+### ¿Por qué son importantes las asistencias?
 
-In many cases, potential users get familiar with an app via the assisting source but fail to install it for some reason. Thus measuring and recognizing assists is important in campaign optimization and measurement.
+En muchos casos, los usuarios potenciales se familiarizan con una aplicación a través de la fuente de asistencia, pero no la instalan por algún motivo. Por lo tanto, medir y reconocer las asistencias es importante en la optimización y medición de las campañas.
 
-### Assisted installs reporting
+### Reportes de instalaciones asistidas
 
-AppsFlyer attributes up to 3 contributing networks in addition to the attributed install source.
+AppsFlyer atribuye hasta 3 redes contribuyentes además del origen de instalación atribuido.
 
-In aggregate dashboards and raw data reports, the (up to 3) contributor networks are consolidated into one metric called "assisted installs". Meaning, 1 install can have up to 3 assisted installs counted.
+En los dashboards agregados y reportes, las (hasta 3) redes de colaboradores se consolidan en una métrica llamada "Assisted Installs (Instalaciones Asistidas)". Es decir, 1 instalación puede tener hasta 3 instalaciones asistidas contadas.
 
-In raw data reports, data on the contributing networks is broken down into separate fields for Contributors 1-3.
+En los reporte de raw data, los datos de las redes contribuyentes se desglosan en campos separados para los Colaboradores 1-3.
 
 [![](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)
 
-For each of the contributing networks, the raw data report includes the following:
+Para cada una de las redes contribuyentes, el reporte de raw data incluye lo siguiente:
 
-* Network name (Media source)
-* Campaign name
-* Engagement time (touch time)
-* Engagement type (click or impression)
-* Name of the involved agency (partner), if there was one
-* Match type (<Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::cecc12c5">The same as install match types.</Anchor>)
+* Nombre de la red (fuente de medios)
+* Nombre de la campaña
+* Tiempo de engagement (tiempo de toque)
+* Tipo de engagement (clic o impresión)
+* Nombre de la agencia involucrada (partner), si hubiera una
+* Tipo de coincidencia (<Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#attribution::cecc12c5">Igual que los tipos de coincidencia de instalación.</Anchor>)
 
-See <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#user-journey-reports">user journey raw data.</Anchor>
+Consulta el <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview#reportes-del-viaje-del-usuario">raw data de la trayectoria del usuario.</Anchor>
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> **Media sources with user-level data restrictions** If a <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">media source restricts user-level data</Anchor>, it cannot be attributed as a contributor or an assist to a winning attribution. This means that certain sources, do not appear as contributors even if they engaged the user before the install.
+> **Fuentes de medios con restricciones de datos a nivel de usuario**
+>  Si una <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">fuente de medios restringe los datos a nivel de usuario</Anchor>, no se le puede atribuir como colaboradora ni como asistencia en una atribución ganadora. Esto significa que determinadas fuentes no aparecen como colaboradoras aunque hayan interactuado con el usuario antes de la instalación.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> **Agency considerations** Several major ad networks <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">restrict sharing their data with 3rd party platforms</Anchor>, including agencies. Therefore, assisted installs do not appear in the agency dashboard for these networks.
+> Varias de las principales redes de publicidad <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention">restringen el intercambio de datos con plataformas de terceros</Anchor>, incluidas las agencias. Por lo tanto, las instalaciones asistidas no aparecen en el panel de control de la agencia para estas redes.
 
-In raw data reports, data on the contributing networks is broken down into separate fields for **Contributors 1–3**.
+En los reportes de raw data, los datos de las redes contribuyentes se desglosan en campos separados para **Colaboradores 1–3**.
 
-### Total candidates field
+### Campo de candidatos totales
 
-In addition to the **Contributors 1–3** fields, the `total_candidates` field shows the number of engagements (such as clicks or impressions) associated with the same device at the time of the install or re-engagement.
+Además de los campos **Colaboradores 1–3**, el campo `total_candidates` muestra el número de engagement (como clics o impresiones) asociados al mismo dispositivo en el momento de la instalación o del re-engagement.
 
-However, not every engagement counted in `total_candidates` is eligible for attribution. For example, some engagements may have been:
+Sin embargo, no todos los engagement contabilizados en `total_candidates` pueden optar a la atribución. Por ejemplo, algunos engagement pueden haber sido:
 
-* Outside of the lookback window
-* Blocked by fraud protection
-* Affected by app or partner integration settings
-* Otherwise not meeting AppsFlyer’s attribution conditions
+* Fuera de la ventana de lookback
+* Bloqueados por la protección contra el fraude
+* Afectados por la configuración de integración de la app o de partners
+* No cumplir de otro modo las condiciones de atribución de AppsFlyer
 
-In practice, this means:
+En la práctica, esto significa:
 
-* If the install was attributed to organic, it is because none of the engagements in `total_candidates` met all the conditions required for attribution.
-* If there are no contributors, it is for the same reason: the engagements recorded under `total_candidates` were not eligible to serve as contributors.
+* Si la instalación se atribuyó a orgánico, es porque ninguno de los engagements de `total_candidates` cumplía todas las condiciones necesarias para la atribución.
+* Si no hay colaboradores, es por la misma razón: los engagement registrados en `total_candidates` no podían servir como colaboradores.
 
-To summarize, `total_candidates` indicates engagements received, which are not necessarily valid candidates for attribution. It is possible to see value in this field while still having the install attributed to organic or without contributors.
+En resumen, `total_candidates` indica los engagement recibidos, que no son necesariamente candidatos válidos para la atribución. Es posible ver un valor en este campo y que la instalación siga atribuida a orgánico o sin colaboradores.
 
-> 📘 **Note**
+> 📘 **Consideraciones para agencias**
 >
-> AppsFlyer Support will not provide engagement-level explanations or breakdowns of `total_candidates` due to the complexity of the attribution logic.
+> El soporte de AppsFlyer no proporcionará explicaciones ni desgloses a nivel de engagement de `total_candidates` debido a la complejidad de la lógica de atribución.
 
-<div data-zendesk-anchors="h_01HCBC922K9PCDXGDCCVEARADH=assisted-installs h_01HCBC922KRHB043FK1CQRKXDA=view-assisted-installs-metrics-in-the-overview-dashboard h_01HCBC922KDAG8T27KK2JGRE7C=why-are-assists-important h_01HCBC922KJV54QW6G85SN2JM7=assisted-installs-reporting h_01KSFPXWNAX8FZ6H2ZKN1Z2TJQ=note h_01HCBC922K5HKF94JCY7C88R88=note-1 h_01K453B1K1X7QVJHPQ505P745N=note-2" />
+<div data-zendesk-anchors="assisted-installs=instalaciones-asistidas h_01HCBC922K9PCDXGDCCVEARADH=instalaciones-asistidas view-assisted-installs-metrics-in-the-overview-dashboard=ver-m%C3%A9tricas-de-instalaciones-asistidas-en-el-panel-de-control-general h_01HCBC922KRHB043FK1CQRKXDA=ver-m%C3%A9tricas-de-instalaciones-asistidas-en-el-panel-de-control-general why-are-assists-important=por-qu%C3%A9-son-importantes-las-asistencias h_01HCBC922KDAG8T27KK2JGRE7C=por-qu%C3%A9-son-importantes-las-asistencias assisted-installs-reporting=reportes-de-instalaciones-asistidas h_01HCBC922KJV54QW6G85SN2JM7=reportes-de-instalaciones-asistidas h_01KSFPXWNAX8FZ6H2ZKN1Z2TJQ=advertencia h_01HCBC922K5HKF94JCY7C88R88=advertencia-1 total-candidates-field=campo-de-candidatos-totales h_01K453B1K1X7QVJHPQ505P745N=consideraciones-para-agencias" />

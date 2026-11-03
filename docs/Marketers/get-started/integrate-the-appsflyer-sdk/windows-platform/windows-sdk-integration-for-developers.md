@@ -1,5 +1,5 @@
 ---
-title: Windows SDK integration for developers
+title: Integración del SDK de Windows para desarrolladores
 metadata:
   keywords:
     - SDK
@@ -20,65 +20,64 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2015-05-07T12:17:52Z'
-  edited_at: '2026-05-25T10:09:27Z'
+  edited_at: '2026-08-12T12:03:14Z'
   id: 207032026
-  locale: en-us
+  locale: es
   section: Windows platform
   section_id: 6551223206417
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207032026-Windows-SDK-integration-for-developers
+  url: https://support.appsflyer.com/hc/es/articles/207032026
 ---
-> **At a glance:** Add AppsFlyer to Windows apps and games to measure app installs, in-app events, media sources, and more.
+> **De un vistazo:** Añade AppsFlyer a aplicaciones y juegos de Windows para medir instalaciones de la app, eventos in-app, fuentes de medios y mucho más.
 
-**Current Version: 3.1.0 (17/12/2023)**
+**Versión actual: 3.1.0 (17/12/2023)**
 
-The AppsFlyer SDK provides app installation and event recording functionality.
+El SDK de AppsFlyer proporciona la funcionalidad de registro de eventos e instalación de aplicaciones.
 
 ![SDK_Integration.jpg](https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg)
 
-You can record installs, updates, and sessions (by following the mandatory steps below), and also record additional in-app events beyond app installs (including in-app purchases, game levels, etc.) to evaluate ROI and user engagement levels.
+Puedes registrar instalaciones, actualizaciones y sesiones (siguiendo los pasos obligatorios que se indican a continuación), y también registrar eventos in-app adicionales además de las instalaciones de la app (incluidas las compras in-app, los niveles de juego, etc.) para evaluar el ROI y los niveles de engagement de los usuarios.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> The AppsFlyer Windows SDK is compatible with all <Anchor target="_blank" href="https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide">Universal Windows Platform</Anchor> (UWP) devices, including Windows mobile phones, PC, HoloLens, and Surface hub.
+> El SDK de AppsFlyer para Windows es compatible con todos los dispositivos de <Anchor target="_blank" href="https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide">Universal Windows Platform</Anchor> (UWP), incluidos teléfonos móviles con Windows, PC, HoloLens y Surface Hub.
 
-## 1. Integration steps
+## 1. Pasos de integración
 
-The Windows Universal SDK is installed via the NuGet Package Manager. To install the AppsFlyer Windows SDK via Nuget:
+El SDK Universal de Windows se instala mediante el administrador de paquetes NuGet. Para instalar el SDK de AppsFlyer para Windows mediante NuGet:
 
 [![](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)
 
-1. Right-click the project file.
-2. Click ***Manage NuGet Packages***.
-3. Click ***Browse*** and search for *AppsFlyerLib*.
-4. Click the ***AppsFlyerLib***.
-5. Click ***Install***.
+1. Haz clic con el botón derecho en el archivo del proyecto.
+2. Haz clic en ***Manage NuGet Packages***.
+3. Haz clic en ***Browse*** y busca *AppsFlyerLib*.
+4. Haz clic en ***AppsFlyerLib***.
+5. Haz clic en ***Install***.
 
-If you choose to not use the NuGet package you can embed the AppsFlyer SDK into your app manually:
+Si decides no usar el paquete NuGet, puedes integrar manualmente el SDK de AppsFlyer en tu aplicación:
 
-1. Download the Universal Windows Platform App SDK <Anchor target="_blank" href="https://s3-eu-west-1.amazonaws.com/download.appsflyer.com/windows-phone-sdk/AF-Windows-SDK-v3.1.0.zip">from here</Anchor>.
-2. Copy the AppsFlyerLib.winmd into your project.
-3. In Visual Studio, click ***Add Reference*** on the Universal Windows Platform project.
+1. Descarga el SDK de la aplicación para la Universal Windows Platform <Anchor target="_blank" href="https://s3-eu-west-1.amazonaws.com/download.appsflyer.com/windows-phone-sdk/AF-Windows-SDK-v3.1.0.zip">desde aquí</Anchor>.
+2. Copia AppsFlyerLib.winmd en tu proyecto.
+3. En Visual Studio, haz clic en ***Add Reference*** en el proyecto de Universal Windows Platform.
 
 [![](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)
 
-* Locate AppsFlyerLib.winmd and add it.
+* Busca AppsFlyerLib.winmd y añádelo.
 
 [![](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> AppsFlyer uses a Newtonsoft.json package. This is a standard library for parsing Json in Windows. You can add this package using NuGet in Visual Studio. This solves the File Not Found exception in the DLL.
+> AppsFlyer usa un paquete de Newtonsoft.json. Esta es una biblioteca estándar para analizar Json en Windows. Puedes añadir este paquete con NuGet en Visual Studio. Esto resuelve la excepción «File Not Found» en la DLL.
 >
-> * In Visual Studio, right-click References and select NuGet Package Newtonsoft.json and add it.
-> * Allow Internet access in the app manifest, or use Visual Studio in the Capabilities tab.
+> * En Visual Studio, haz clic con el botón derecho en References, selecciona el paquete NuGet Newtonsoft.json y añádelo.
+> * Permite el acceso a Internet en el manifiesto de la aplicación o usa Visual Studio en la pestaña Capabilities.
 
-## 2. SDK initialization & installation event (minimum requirement for attributing)
+## 2. Inicialización del SDK & evento de instalación (requisito mínimo para la atribución)
 
-* Add the following code into your App Launch method.
-* Set your appId and DevKey:
-  * Populate tracker.appId and tracker.devKey with your values.
-  * You can get your AppsFlyer DevKey on our dashboard under SDK Integration.
+* Agrega el siguiente código al método App Launch.
+* Configura tu appId y tu DevKey:
+  * Rellena tracker.appId y tracker.devKey con tus valores.
+  * Puedes obtener tu DevKey de AppsFlyer en nuestro Dashboard, en SDK Integration.
 
 ```csharp
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -93,9 +92,9 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 }
 ```
 
-### Recording App Launch Asynchronously
+### Registro del inicio de la app de forma asíncrona
 
-You can record app launch asynchronously. This is useful in cases when the network is down or unresponsive. You can handle such cases in the Callback function that you pass to the `TrackAppLaunchAsync` method.
+Puedes registrar el inicio de la app de forma asíncrona. Esto es útil cuando la red no está disponible o no responde. Puedes gestionar estos casos en la función de callback que pasas al método `TrackAppLaunchAsync`.
 
 ```csharp
 tracker.TrackAppLaunchAsync(Callback);
@@ -109,19 +108,19 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 }
 ```
 
-## 3. In-app event recording API (optional)
+## 3. API de registro de eventos in-app (opcional)
 
-This API enables AppsFlyer to record post-install events. These events are defined by the advertiser and include an event name in addition to optional event values. Add the following code to record post-install events:
+Esta API permite a AppsFlyer registrar eventos posteriores a la instalación. Estos eventos los define el anunciante e incluyen un nombre de evento, además de valores de evento opcionales. Agrega el siguiente código para registrar eventos posteriores a la instalación:
 
 ```csharp
 public void TrackEvent(string eventName, IDictionary<string, Object> eventValues)
 ```
 
-* *eventName* is any string that defines the event name. You can find a list of recommended event names <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">here</Anchor>.
-* *eventValues* is a dictionary of event parameters that comprise an event. You can find a list of recommended parameters <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">here</Anchor>.
-* When counting revenue as part of in-app events, use InAppEventParameterName.REVENUE (“af\_revenue”) constant parameter name to count revenue as part of an in-app event. You can populate it with any numeric value, positive or negative.
+* *eventName* puede ser cualquier cadena que defina el nombre del evento. Puedes consultar una lista de nombres de evento recomendados <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">aquí</Anchor>.
+* *eventValues* es un diccionario de parámetros de evento que componen un evento. Puedes consultar una lista de parámetros recomendados <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">aquí</Anchor>.
+* Al contabilizar ingresos como parte de eventos in-app, utiliza el nombre de parámetro constante InAppEventParameterName.REVENUE («af\_revenue») para contabilizar los ingresos como parte de un evento in-app. Puede completarlo con cualquier valor numérico, positivo o negativo.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
 > ```csharp
 > AppsFlyerLib.AppsFlyerTracker tracker = AppsFlyerLib.AppsFlyerTracker.GetAppsFlyerTracker();
@@ -132,9 +131,9 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 >       tracker.TrackEvent(AppsFlyerLib.AFInAppEventType.ADD_TO_CART, eventValues);
 > ```
 
-### Recording events asynchronously
+### Registrar eventos de forma asíncrona
 
-You can record events asynchronously. This is useful in cases when the network is down or unresponsive. You can handle such cases in the Callback function that you pass to the `TrackEventAsync` method.
+Puedes registrar eventos de forma asíncrona. Esto es útil cuando la red no funciona o no responde. Puedes gestionar esos casos en la función de callback que pasas al método `TrackEventAsync`.
 
 ```csharp
 tracker.TrackEventAsync(AppsFlyerLib.AFInAppEventType.PURCHASE, events, Callback);
@@ -148,47 +147,47 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 }
 ```
 
-For a complete list of AppsFlyer rich in-app events, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">here</Anchor>.
+Para ver una lista completa de los eventos in-app enriquecidos de AppsFlyer, haz clic <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">aquí</Anchor>.
 
-## 4. Advanced integration
+## 4. Integración avanzada
 
-The following APIs are optional and are part of the advanced integration with AppsFlyer SDK.
+Las siguientes API son opcionales y forman parte de la integración avanzada con el SDK de AppsFlyer.
 
-### 4.1 set currency code (optional)
+### 4.1 Establecer código de moneda (opcional)
 
-You can set a global currency code using the API below, in addition to specific currency codes that can be used as part of each in-app event sent to AppsFlyer.
+Puedes usar la siguiente API para establecer un código de moneda global, además de códigos de moneda específicos que se pueden usar como parte de cada evento in-app enviado a AppsFlyer.
 
-USD is the default value. Acceptable ISO currency codes can be found <Anchor target="_blank" href="http://www.xe.com/iso4217.php">here</Anchor>.
+USD es el valor predeterminado. Puedes consultar los códigos ISO de moneda aceptados <Anchor target="_blank" href="http://www.xe.com/iso4217.php">aquí</Anchor>.
 
-Use the following API to set the currency code:
+Usa la siguiente API para configurar el código de moneda:
 
 ```csharp
 tracker.currencyCode = "GBP";
 ```
 
-### 4.2 getAppsFlyeruid (optional)
+### 4.2 getAppsFlyeruid (opcional)
 
-An AppsFlyer Unique ID is created for every new install of an app.
+Se crea un ID único de AppsFlyer para cada nueva instalación de una app.
 
-Use the following API In order to get this ID:
+Usa la siguiente API para obtener este ID:
 
 ```csharp
 public string getAppsFlyerUID()
 ```
 
-### 4.3 Customer User ID (optional)
+### 4.3 ID de usuario del cliente (opcional)
 
-Setting your own customer ID enables you to cross-reference your own unique ID with the AppsFlyer user ID and all other device IDs. This ID is available in the AppsFlyer CSV reports along with postbacks APIs for cross-referencing with your internal IDs.
+Configurar tu propio ID de cliente te permite establecer referencias cruzadas entre tu propio ID único, el ID de usuario de AppsFlyer y todos los demás ID de dispositivo. Este ID está disponible en los reportes CSV de AppsFlyer, junto con las API de postback, para establecer referencias cruzadas con tus ID internos.
 
-To set your Customer User ID:
+Para configurar tu ID de usuario de cliente:
 
 ```csharp
 tracker.customerUserId = "YOUR_CUSTOMER_USER_ID";
 ```
 
-### 4.4 GetConversionDataAsync (optional)
+### 4.4 GetConversionDataAsync (opcional)
 
-You can receive the conversion data for every install through the SDK using this API. Add the following code to record post-install events:
+Puedes recibir los datos de conversión de cada instalación a través del SDK mediante esta API. Agrega el siguiente código para registrar eventos posteriores a la instalación:
 
 ```csharp
 Task.Run(async () =>
@@ -198,7 +197,7 @@ Task.Run(async () =>
 });
 ```
 
-### 4.5 C++ / CX integration example
+### 4.5 Ejemplo de integración de C++ / CX
 
 ```csharp
 AppsFlyerLib::AppsFlyerTracker^ tracker = AppsFlyerLib::AppsFlyerTracker::GetAppsFlyerTracker();
@@ -219,4 +218,4 @@ tracker->TrackEvent(AppsFlyerLib::AFInAppEventType::PURCHASE, eventValues);
  });
 ```
 
-<div data-zendesk-anchors="h_01H9G0X6VRCJCGHXWNJ2XFAQN9=important 2-initial-steps=1-integration-steps h_01H9G0X6VRQJ860K5QS7DE9DT4=1-integration-steps h_01H9G0X6VRJ3KKZD6XM202NEX2=important-1 3-sdk-initialization-installation-event-minimum-requirement-for-attributing=2-sdk-initialization--installation-event-minimum-requirement-for-attributing h_01H9G0X6VR9FW15TYS06M3JBYM=2-sdk-initialization--installation-event-minimum-requirement-for-attributing recording-app-launch%C2%A0asynchronously=recording-app-launchasynchronously h_01H9G0X6VR6JHKGPTWERQGZNMW=recording-app-launchasynchronously 4-inapp-event-recording-api-optional=3-in-app-event-recording-api-optional h_01H9G0X6VRSBKYX4AJK5ZQ14EK=3-in-app-event-recording-api-optional h_01H9G0X6VS1RA8K4EW4K1Q8B6P=example h_01H9G0X6VS5PYNZEZG86QJTSPJ=recording-events-asynchronously 5-advanced-integration=4-advanced-integration h_01H9G0X6VSW4A5B044HF1704XH=4-advanced-integration 51-set-currency-code-optional=41-set-currency-code-optional h_01H9G0X6VSY3975EZNGD2NDSMR=41-set-currency-code-optional 52-getappsflyeruid-optional=42-getappsflyeruid-optional h_01H9G0X6VS4MF8S85049HFJD8K=42-getappsflyeruid-optional 53-customer-user-id-optional=43-customer-user-id-optional h_01H9G0X6VSM167RKESECBQCPZD=43-customer-user-id-optional 54-getconversiondataasync-optional=44-getconversiondataasync-optional h_01H9G0X6VSJWZ3BFWP4AFMZXXY=44-getconversiondataasync-optional 55-c-cx-integration-example=45-c--cx-integration-example h_01H9G0X6VSRNZXN8A22Q8KYYJR=45-c--cx-integration-example" />
+<div data-zendesk-anchors="h_01H9G0X6VRCJCGHXWNJ2XFAQN9=importante 2-initial-steps=1-pasos-de-integraci%C3%B3n h_01H9G0X6VRQJ860K5QS7DE9DT4=1-pasos-de-integraci%C3%B3n h_01H9G0X6VRJ3KKZD6XM202NEX2=importante-1 3-sdk-initialization-installation-event-minimum-requirement-for-attributing=2-inicializaci%C3%B3n-del-sdk--evento-de-instalaci%C3%B3n-requisito-m%C3%ADnimo-para-la-atribuci%C3%B3n h_01H9G0X6VR9FW15TYS06M3JBYM=2-inicializaci%C3%B3n-del-sdk--evento-de-instalaci%C3%B3n-requisito-m%C3%ADnimo-para-la-atribuci%C3%B3n recording-app-launch%C2%A0asynchronously=registro-del-inicio-de-la-appde-forma-as%C3%ADncrona h_01H9G0X6VR6JHKGPTWERQGZNMW=registro-del-inicio-de-la-appde-forma-as%C3%ADncrona 4-inapp-event-recording-api-optional=3-api-de-registro-de-eventos-in-app-opcional h_01H9G0X6VRSBKYX4AJK5ZQ14EK=3-api-de-registro-de-eventos-in-app-opcional h_01H9G0X6VS1RA8K4EW4K1Q8B6P=ejemplo recording-events-asynchronously=registrar-eventos-de-forma-as%C3%ADncrona h_01H9G0X6VS5PYNZEZG86QJTSPJ=registrar-eventos-de-forma-as%C3%ADncrona 5-advanced-integration=4-integraci%C3%B3n-avanzada h_01H9G0X6VSW4A5B044HF1704XH=4-integraci%C3%B3n-avanzada 51-set-currency-code-optional=41-establecer-c%C3%B3digo-de-moneda-opcional h_01H9G0X6VSY3975EZNGD2NDSMR=41-establecer-c%C3%B3digo-de-moneda-opcional 52-getappsflyeruid-optional=42-getappsflyeruid-opcional h_01H9G0X6VS4MF8S85049HFJD8K=42-getappsflyeruid-opcional 53-customer-user-id-optional=43-id-de-usuario-del-cliente-opcional h_01H9G0X6VSM167RKESECBQCPZD=43-id-de-usuario-del-cliente-opcional 54-getconversiondataasync-optional=44-getconversiondataasync-opcional h_01H9G0X6VSJWZ3BFWP4AFMZXXY=44-getconversiondataasync-opcional 55-c-cx-integration-example=45-ejemplo-de-integraci%C3%B3n-de-c--cx h_01H9G0X6VSRNZXN8A22Q8KYYJR=45-ejemplo-de-integraci%C3%B3n-de-c--cx" />

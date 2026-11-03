@@ -1,42 +1,42 @@
 ---
-title: Ad network configuration guides (R-Z)
-excerpt: Set up selected ad networks for AppsFlyer attribution
+title: Guías de configuración de redes de publicidad (R-Z)
+excerpt: Configura redes de publicidad seleccionadas para la atribución de AppsFlyer
 table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2022-06-02T12:06:14Z'
   id: 6552025468305
-  locale: en-us
+  locale: es
   parent_section_id: 6550990672401
   type: section
   url: >-
-    https://support.appsflyer.com/hc/en-us/sections/6552025468305-Ad-network-configuration-guides-R-Z
+    https://support.appsflyer.com/hc/es/sections/6552025468305-Gu%C3%ADas-de-configuraci%C3%B3n-de-redes-de-publicidad-R-Z
 ---
-- [RationalHeads campaign configuration](/docs/rationalheads-campaign-configuration)
-- [Reddit campaign configuration](/docs/reddit-campaign-configuration)
-- [Remerge campaign configuration](/docs/remerge-campaign-configuration)
-- [RTB House campaign configuration](/docs/rtb-house-campaign-configuration)
-- [StartApp campaign configuration](/docs/startapp-campaign-configuration)
-- [Sizmek campaign configuration](/docs/sizmek-campaign-configuration)
-- [Sojern for Advertisers campaign configuration](/docs/sojern-for-advertisers-campaign-configuration)
-- [Spotify campaign configuration](/docs/spotify-campaign-configuration)
-- [Ströer Mobile Performance campaign configuration](/docs/str-er-mobile-performance-campaign-configuration)
-- [Taptica campaign configuration](/docs/taptica-campaign-configuration)
-- [Tapjoy campaign configuration](/docs/tapjoy-campaign-configuration)
-- [The Trade Desk campaign configuration](/docs/the-trade-desk-campaign-configuration)
-- [TUNE integration with AppsFlyer](/docs/tune-integration-with-appsflyer)
-- [TVSquared (formerly Wywy) campaign configuration](/docs/tvsquared-formerly-wywy-campaign-configuration)
-- [Tyroo campaign configuration](/docs/tyroo-campaign-configuration)
-- [Unity Ads campaign configuration](/docs/unity-ads-campaign-configuration)
-- [VK Ads (myTarget, Mail.ru) campaign configuration](/docs/vk-ads-mytarget-mail-ru-campaign-configuration)
-- [Vserv campaign configuration](/docs/vserv-campaign-configuration)
-- [Vungle campaign configuration](/docs/vungle-campaign-configuration)
-- [WakeApp campaign configuration](/docs/wakeapp-campaign-configuration)
-- [Webpals Mobile campaign configuration](/docs/webpals-mobile-campaign-configuration)
-- [Yandex Direct campaign configuration](/docs/yandex-direct-campaign-configuration)
-- [Yahoo integration setup](/docs/yahoo-integration-setup)
-- [Yahoo Japan Search Ads campaign configuration](/docs/yahoo-japan-search-ads-campaign-configuration)
-- [Yeahmobi campaign configuration](/docs/yeahmobi-campaign-configuration)
-- [YouAppi campaign configuration](/docs/youappi-campaign-configuration)
-- [Zenna campaign configuration](/docs/zenna-campaign-configuration)
+- [Configuración de la campaña de RationalHeads](/docs/rationalheads-campaign-configuration)
+- [Configuración de la campaña de Reddit](/docs/reddit-campaign-configuration)
+- [Configuración de la campaña de Remerge](/docs/remerge-campaign-configuration)
+- [Configuración de campañas de RTB House](/docs/rtb-house-campaign-configuration)
+- [Configuración de la campaña de StartApp](/docs/startapp-campaign-configuration)
+- [Configuración de la campaña de Sizmek](/docs/sizmek-campaign-configuration)
+- [Configuración de campañas de Sojern para anunciantes](/docs/sojern-for-advertisers-campaign-configuration)
+- [Configuración de la campaña de Spotify](/docs/spotify-campaign-configuration)
+- [Configuración de la campaña Ströer Mobile Performance](/docs/str-er-mobile-performance-campaign-configuration)
+- [Configuración de la campaña de Taptica](/docs/taptica-campaign-configuration)
+- [Configuración de la campaña de Tapjoy](/docs/tapjoy-campaign-configuration)
+- [Configuración de la campaña de The Trade Desk](/docs/the-trade-desk-campaign-configuration)
+- [Integración de TUNE con AppsFlyer](/docs/tune-integration-with-appsflyer)
+- [Configuración de la campaña de TVSquared (anteriormente WyWy)](/docs/tvsquared-formerly-wywy-campaign-configuration)
+- [Configuración de la campaña de Tyroo](/docs/tyroo-campaign-configuration)
+- [Configuración de campañas de Unity Ads](/docs/unity-ads-campaign-configuration)
+- [Configuración de campaña de VK Ads (myTarget, Mail.ru)](/docs/vk-ads-mytarget-mail-ru-campaign-configuration)
+- [Configuración de la campaña de Vserv](/docs/vserv-campaign-configuration)
+- [Configuración de la campaña de Vungle](/docs/vungle-campaign-configuration)
+- [Configuración de la campaña de WakeApp](/docs/wakeapp-campaign-configuration)
+- [Configuración de campañas de Webpals Móvil](/docs/webpals-mobile-campaign-configuration)
+- [Configuración de la campaña de Yandex Direct](/docs/yandex-direct-campaign-configuration)
+- [Configuración de la integración de Yahoo](/docs/yahoo-integration-setup)
+- [Configuración de la campaña de Yahoo Japan Search Ads](/docs/yahoo-japan-search-ads-campaign-configuration)
+- [Configuración de la campaña de Yeahmobi](/docs/yeahmobi-campaign-configuration)
+- [Configuración de la campaña de YouAppi](/docs/youappi-campaign-configuration)
+- [Configuración de la campaña de Zenna](/docs/zenna-campaign-configuration)

@@ -1,5 +1,7 @@
 ---
-title: Advanced filter and group by options in events and activity dashboards
+title: >-
+  Filtro avanzado y opciones de agrupación en los paneles de control de eventos
+  y actividades
 metadata:
   keywords:
     - advance filters
@@ -17,125 +19,126 @@ x-zendesk:
     - Marketing Analytics
     - Agencies
   created_at: '2016-08-08T14:04:48Z'
-  edited_at: '2023-03-29T10:35:48Z'
+  edited_at: '2023-04-01T23:21:33Z'
   id: 211490886
-  locale: en-us
+  locale: es
   section: Dashboards
   section_id: 6550925337873
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/211490886-Advanced-filter-and-group-by-options-in-events-and-activity-dashboards
+  url: https://support.appsflyer.com/hc/es/articles/211490886
 ---
-> **At a glance**: Use advanced filter and group by options in events and activity dashboards.
+> **De un vistazo**: Usa filtros avanzados y opciones de agrupación en los paneles de control de eventos y actividades.
 
-## Advanced filter by and group by options in dashboards
+## Filtro avanzado y opciones de agrupación en los paneles de control
 
-* **Filter by**: Media Source, Geo
-* **Group by**: Media Source/Campaign, Site ID, Geo
-* **Drill-down**: ad set and ad level data
+* **Filtrar por**: Fuente de medios, Geolocalización
+* **Agrupar por**: Fuente de medios/Campaña, ID de sitio, Geolocalización
+* **Bajar de nivel**: datos a nivel de conjunto de anuncios y anuncio
 
-By filtering and grouping the information in the dashboard using the advanced options, you can view the most precise and relevant data for your apps.
+Al filtrar y agrupar la información en el panel de control mediante las opciones avanzadas, puedes ver los datos más precisos y relevantes para tus aplicaciones.
 
-## Filter by options
+## Opciones de filtrado
 
-AppsFlyer offers you a number of filtering options to let you refine your search and view the information most relevant to you.
+AppsFlyer te ofrece varias opciones de filtrado para que puedas refinar tu búsqueda y ver la información más relevante para ti.
 
-For each filter (Media Source, Geo, and Campaign) you can select several options to be filtered at the same time. An X appears next to each selection.
+Para cada filtro (Fuentes de medios, Geolocalización y Campaña) puedes seleccionar varias opciones para que se filtren al mismo tiempo. Aparece una X junto a cada selección.
 
 ![](https://files.readme.io/ec865c2e963879815dd25e4c3f3870c4539d22a470c099c256d7e33ea9a0df59-208034063.png)
 
-In the field, you are prompted as to how many filters you have selected.
+En el campo, se te indicará cuántos filtros has seleccionado.
 
 ![](https://files.readme.io/aabcbc881f0f18ae64a4b29af903dafaa27abd31dcaf17d97a0f8e89de30f416-208032403.png)
 
-Use the date selector to refine your search to specific dates. You can select your own custom date range or use one of the preset date range buttons.
+Usa el selector de fechas para refinar tu búsqueda en fechas específicas. Puedes seleccionar tu propio intervalo de fechas personalizado o usar uno de los botones de intervalo de fechas preestablecidos.
 
 ![](https://files.readme.io/a80d29a742e80686701669de77e63392239d4694e8c8646e7aae0fd22e11e5de-206060926.png)
 
-Select the Media Source for which you want to view the data.
+Selecciona la fuente de medios cuyos datos deseas ver.
 
 ![](https://files.readme.io/362d109b0b6f1d54b6393b577b34137df3d3b45017aa6dac488caed898468b85-206119563.png)
 
-Use the **Geo** dropdown to select a specific geo region and view app activities for that region.
+Utiliza el menú desplegable **Geolocalización** para seleccionar una región de geolocalización específica y ver las actividades de la aplicación para esa región.
 
-![](https://support.appsflyer.com/hc/en-us/article_attachments/203515273/DB4.png)
+![](https://support.appsflyer.com/hc/article_attachments/49753041990033)
 
-## Group by options
+## Opciones de agrupación
 
-The grouping options allow you to further categorize the results of your filters. Under the **Group By** filter, click the dropdown to view your grouping options:
+Las opciones de agrupación te permiten clasificar aún más los resultados de tus filtros. En el filtro **Agrupar por**, haz clic en el menú desplegable para ver tus opciones de agrupación:
 
-* **Media Source / Campaign**
+* **Fuentes de medios / campañas**
 
-* Used for comparison of acquisition sources. For example, if the same targeting is used for Google and Meta ads so you can view which source is more successful when a campaign is directed towards the same target audience. In addition, by clicking on the name of the campaign, you can drill-down to ad set and then to ad level to view in-depth campaign data. This is only available to those media sources providing the information.
+* Se utiliza para comparar fuentes de adquisición. Por ejemplo, si se utiliza el mismo targeting para Google y Anuncios de Meta para que puedas ver qué fuente tiene más éxito cuando una campaña se dirige al mismo público objetivo. Además, al hacer clic en el nombre de la campaña, puedes profundizar al nivel de conjunto de anuncios y luego al nivel de anuncio para ver los datos detallados de la campaña. Esto solo está disponible para aquellas fuentes de medios que brinden la información.
 
 ![](https://files.readme.io/d9437c102866d0966682477e15c1ba61e95898fc40e96f7f5bea1db36c5eb863-207209326.png)
 
-* **Site ID**
+* **ID de sitio**
 
-* Based on AppsFlyer **af\_siteid** parameter which represents the publisher that drove the install. You can see which publisher brings you the highest quality users. You can then easily identify which Site IDs have a low conversion rate. This indicates the quality and legitimacy of the traffic.
+* Basado en el parámetro de AppsFlyer **af\_siteid** que representa al publisher que impulsó la instalación. Puedes ver qué publisher te trae usuarios de la más alta calidad. Luego podrás identificar fácilmente qué ID de sitio tienen una tasa de conversión baja. Esto indica la calidad y legitimidad del tráfico.
 
-* **Geo**
+* **Geolocalización**
 
-* Allows you to see the best traffic by country. This has a direct impact on how much you are willing to invest per country.
+* Te permite ver el mejor tráfico por país. Esto tiene un impacto directo en cuánto estás dispuesto a invertir por país.
 
-* **Channel**
+* **Canal**
 
-* Allows you to view the data per channel. For example, viewing Meta channels (Meta ads, Instagram, Audience Network or Messenger) and Google channels (Search, UAC, mGDN, etc...).
+* Te permite ver los datos por canal. Por ejemplo, puedes ver canales de Meta (Anuncios de Meta, Instagram, Audience Network o Messenger) y canales de Google (Búsqueda, UAC, mGDN, etc...).
 
-* **Agency**  
-  * Allows you to view data per agency. If there is no agency data, the Agency column in the table shows ***Unknown***.
+* **Agencia**  
+  * Te permite ver los datos por agencia. Si no hay datos de agencia, la columna Agencia de la tabla muestra ***Desconocido***.
 
-By default, **Media Source / Campaign** is displayed.
+Por defecto se muestra **Fuente de medios/Campaña**.
 
 ![](https://files.readme.io/07b4a1ef6dbfe48d5011157e0799a117d383da0eaea409417a70b715dd5eb09a-115001055266.png)
 
-When you select **Site ID**, the data displayed is based on your filter selections for Site ID.
+Si seleccionas **ID de sitio**, los datos que se muestran se basan en tus selecciones de filtro para ID de sitio.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Site\_id data is available as of 16 May 2016 and onwards.
+> Los datos de Site\_id están disponibles a partir del 16 de mayo de 2016.
 
 ![](https://files.readme.io/7f1dcfa333e63c16a44be5ce04a7ecbe7bf1f656a2edb6bb719cb55ea4dd50b1-206156066.png)
 
-You are further presented with a breakdown of the data based on Site ID.
+Además, se muestra un desglose de los datos en función del ID del sitio.
 
 ![](https://files.readme.io/bc331dd1c8a611741a75a5a176a7b1a4b72edf08219dfe2a611d14bea3440231-206122143.png)
 
-When you select the **Geo** option you are presented with a breakdown of the data by country.
+Al seleccionar la opción **Geolocalización**, se muestra un desglose de los datos por países.
 
 ![](https://files.readme.io/5eb0847fddd0592b2d130df2b97349da7afd0a5f2e03cc7bfdbf2da6becde67d-206064206.png)
 
-## Advanced filtering
+## Filtrado avanzado
 
-For the advanced filtering options click ![](https://files.readme.io/278e2ad18a60859c446a7a5a6cbc708c012b2200d01c1886c17a662816d1ff27-206127343.png).
+Para ver las opciones avanzadas de filtrado haz clic en![](https://files.readme.io/278e2ad18a60859c446a7a5a6cbc708c012b2200d01c1886c17a662816d1ff27-206127343.png).
 
-The filter options expand:
+Las opciones de filtrado se amplían:
 
 ![](https://files.readme.io/3f10672f949e1fc18347632912ff04977d1733ccd25d0fa8a7d4b57ee9bb53ae-211309586.png)
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Once you select a Campaign/Channel but no Media Source, a warning notification is displayed indicating that you must select a media source first.
+> Si seleccionas una Campaña/Canal, pero no una Fuente de medios, se mostrará una notificación de advertencia indicando que debes seleccionar primero una fuente de medios.
 
 ![](https://files.readme.io/d082084e0be1ec0e47525d55b07518249a5ff6d3ded9bf13dbd7ff7f56d6cc5c-206066866.png)
 
-When the results are shown, the Advance Filter icon changes color from blue to green ![](https://files.readme.io/5d9e7c2aa155bd2ffeed093f13afab52fd7ce3c4de1a5387ec7be7b692066cb1-206128223.png)
+Cuando se muestran los resultados, el icono de Filtro avanzado cambia de color azul a verde ![](https://files.readme.io/5d9e7c2aa155bd2ffeed093f13afab52fd7ce3c4de1a5387ec7be7b692066cb1-206128223.png)
 
-## Example user story
+## Ejemplo de caso de usuario
 
-Mr. A. Flyer wants to examine the campaigns he is running for his app for a particular date range, in this story - the last 7 days.
+El Sr. A. Flyer quiere examinar las campañas que está ejecutando para su aplicación para un rango de fechas en particular, en este caso: los últimos 7 días.
 
-At the top level, they can view all campaigns grouped by Media Source.
+En el nivel superior, puede ver todas las campañas agrupadas por Fuente de medios.
 
 ![](https://files.readme.io/e46dec817d252776dcc6ab29a72ce4cdfdfeaed48e2f7c2783908a932494418e-206163486.png)
 
-He then wants to refine his search to view the data for the different countries that his campaigns are active in.
+Luego quiere refinar su búsqueda para ver los datos de los diferentes países en los que están activas sus campañas.
 
-To do so, grouping the information by Geo allows him to view the statistics for all the countries.
+Para ello, agrupar la información por Geolocalización le permite visualizar las estadísticas de todos los países.
 
-From viewing this information he wants to focus on a particular country. Having grouped his campaigns by geo and media source, he can then filter the data by Geo.
+Al ver esta información quiere enfocarse en un país en particular. Después de agrupar sus campañas por geolocalización y fuente de medios, podrá filtrar los datos por Geolocalización.
 
 ![](https://files.readme.io/36af4e06c37648c7777df302e26b9d350f572132abbd367394cda39c944bf9ce-206114886.png)
 
-Mr. A. Flyer can then filter by Site ID allowing him to hone his search to view how a specific Site ID is performing and the quality of the traffic driven from that site.
+El Sr. A. Flyer puede filtrar entonces por ID de sitio, lo que le permitirá perfeccionar su búsqueda para ver el rendimiento de un ID de sitio específico y la calidad del tráfico impulsado desde ese sitio.
 
 ![](https://files.readme.io/6b1f87913bd8e873d28c6ce681a5de9d462a44638c7a6adea5b5988d4ec2908e-211309606.png)
+
+<div data-zendesk-anchors="advanced-filter-by-and-group-by-options-in-dashboards=filtro-avanzado-y-opciones-de-agrupaci%C3%B3n-en-los-paneles-de-control filter-by-options=opciones-de-filtrado group-by-options=opciones-de-agrupaci%C3%B3n advanced-filtering=filtrado-avanzado example-user-story=ejemplo-de-caso-de-usuario" />

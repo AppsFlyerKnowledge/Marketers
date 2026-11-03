@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Change in Preload referrer attribution parameter'
+title: 'Boletín: Cambio en el parámetro de atribución de referencia de precarga'
 metadata:
   keywords:
     - Marketers
@@ -13,15 +13,14 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-11-15T10:47:47Z'
-  edited_at: '2023-12-11T10:31:24Z'
+  edited_at: '2026-10-20T03:55:56Z'
   id: 20161765461009
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/20161765461009-Bulletin-Change-in-Preload-referrer-attribution-parameter
+  url: https://support.appsflyer.com/hc/es/articles/20161765461009
 ---
-| **What's new** | The preload referrer attribution parameter of new installs and in-app events and sessions attributed to new installs recorded after the effective date will be reported differently.<br /><br />Below are the changes to the preload referrer attribution parameter:<ul><li>**attributed\_touch\_type** will be **download** (instead of preload or click\_to\_download)<ul><li>e**ngagement\_type** will be **preload** (for preload\_rfr match type) or **click\_to\_download** (for af\_referrer match type)</li></ul></li></ul>In-app events and sessions attributed to installs before the effective date will keep the existing behavior:<ul><li>**attributed\_touch\_type** will be **preload** or **click\_to\_download**<ul><li>**engagement\_type** will be **empty**</li></ul></li></ul> |
+| **¿Qué hay de nuevo?** | El parámetro de atribución de referencia de precarga de las nuevas instalaciones y los eventos y las sesiones in-app atribuidas a nuevas instalaciones registradas después de la fecha de entrada en vigor se notificarán de forma diferente.<br /><br />A continuación se muestran los cambios en el parámetro de atribución de referencia de precarga:<ul><li>**attributed\_touch\_type** será **download** (en lugar de preload o click\_to\_download)<ul><li>e**ngagement\_type** será **preload** (para el tipo de coincidencia preload\_rfr) o **click\_to\_download** (para el tipo de coincidencia af\_referrer)</li></ul></li></ul>Los eventos y las sesiones in-app atribuidas a instalaciones anteriores a la fecha de entrada en vigor mantendrán el comportamiento existente:<ul><li>**attributed\_touch\_type** será **preload** o **click\_to\_download**<ul><li>**engagement\_type** estará **vacío**</li></ul></li></ul> |
 | --- | --- |
-| **Effective date** | January 17, 2024 |
-| **What this impacts** | <ul><li>Advertisers and agencies, using <Anchor target="_blank" href="/marketers/docs/set-up-appsflyer-preload-referrer-attribution">AppsFlyer preload referrer attribution</Anchor></li><li>Where is it changing: raw data reports and dashboards</li></ul> |
+| **Fecha de entrada en vigor** | 17 de enero de 2024 |
+| **Esto afecta a** | <ul><li>Anunciantes y agencias que utilizan <Anchor target="_blank" href="/marketers/es/docs/set-up-appsflyer-preload-referrer-attribution">la atribución de referrer de precarga de AppsFlyer</Anchor></li><li>Dónde está cambiando: reportes de raw data y dashboards</li></ul> |

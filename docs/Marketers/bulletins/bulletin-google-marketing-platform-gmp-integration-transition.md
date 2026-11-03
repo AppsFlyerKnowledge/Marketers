@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Google Marketing Platform (GMP) integration transition'
+title: 'Boletín: transición de la integración de Google Marketing Platform (GMP)'
 metadata:
   keywords:
     - Agencies
@@ -15,14 +15,90 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2023-12-18T11:43:04Z'
-  edited_at: '2025-09-08T11:18:10Z'
+  edited_at: '2026-10-20T03:55:48Z'
   id: 21035061438737
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/21035061438737-Bulletin-Google-Marketing-Platform-GMP-integration-transition
+  url: https://support.appsflyer.com/hc/es/articles/21035061438737
 ---
-<table><tbody><tr><td><strong>What's new?</strong></td><td><p>As part of preparations for enforcing the <a href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en" target="_blank">Digital Marketing Act</a> (DMA), Google is updating its <a href="https://www.google.com/about/company/user-consent-policy/?sjid=15416941068016224808-NA" target="_blank">EU user consent policy</a>. AppsFlyer is making the necessary changes to support Google’s policy requirements.</p><p>The following Google Marketing Platform (GMP) integrations are currently available:</p><ul><li>[Legacy] CM360 (DoubleClick) <kbd>doubleclick_int</kbd></li><li><a href="./google-marketing-platform-display-video-360-dv360-integration" target="_blank">DV360 (new integration)</a> <kbd>dv360_int</kbd></li></ul><p>As of September 9th 2025, the legacy <code>doubleclick_int</code> integration will be deprecated If you're using this integration, you'll need to transition to the new DV360 integration to continue running campaigns and measuring them using GMP.</p></td></tr><tr><td><strong>Action required</strong></td><td>Transition to the new DV360 <code>dv360_int</code> integration as soon as possible, and no later than June 30, 2025.</td></tr><tr><td><strong>Steps to take</strong></td><td><p>Make sure to configure both platforms, GMP and AppsFlyer:</p><p><strong>Configure in GMP</strong></p><ol><li>Log in to your CM360 or DV360 account. <br/><strong>Note:</strong> Completing the steps in CM360 negates the need for completing them in DV360.</li><li>Create or reuse your partner attribution link (Link ID) using <a href="https://support.google.com/displayvideo/answer/10956727" target="_blank">these instructions</a>. </li></ol><p><strong>Configure in AppsFlyer</strong></p><ol><li>Complete your DV360 integration in AppsFlyer using <a href="./google-marketing-platform-display-video-360-dv360-integration#integration-procedures" target="_blank">these instructions</a>. <br/><strong>Note:</strong> To maintain data consistency, make sure the configuration is similar to the legacy integration (lookback windows, in-app event postbacks, etc).</li><li><strong>Test the new integration:</strong> <br/>Wait for about a day to confirm the new integration data. You can then disable the legacy integration.</li></ol></td></tr><tr><td><strong>What you must know</strong></td><td> </td></tr><tr><td> </td><td><figure><table><thead><tr><th><strong>Considerations</strong></th><th>Available options</th></tr></thead><tbody><tr><td colspan="2"><span id="media-source-pid"></span><strong>Media source PID</strong></td></tr><tr><td><span id="after-completing-the-migration-the-dv360-media-source-pid-changes-from-doubleclick_int-to-dv360_int"></span>After completing the migration, the DV360 media source PID changes from <kbd>doubleclick_int</kbd> to <kbd>dv360_int</kbd>.</td><td>If you're pulling raw data from AppsFlyer into your BI or any 3rd party analytics tool, consider the change in the media source name.</td></tr><tr><td colspan="2"><span id="outofstore-apps"></span><strong>Out-of-store apps</strong></td></tr><tr><td><span id="apps-from-unofficial-app-stores-arent-supported-in-the-dv360-integration-the-integration-relies-on-a-link-id-which-is-generated-for-apps-obtained-through-official-app-stores"></span>Apps from unofficial app stores aren't supported in the DV360 integration. The integration relies on a link ID, which is generated for apps obtained through official app stores.</td><td>If your app is downloaded from sources outside official app stores, contact your CSM or <a href="mailto:hello@appsflyer.com">hello@appsflyer.com</a>.</td></tr><tr><td colspan="2"><span id="attribution-data-duplication"></span><strong>Attribution data distribution</strong></td></tr><tr><td colspan="2"><span id="while-both-integrations-are-active-in-appsflyer-data-duplication-is-expected-inapp-events-for-installsreengagements-attributed-to-the-legacy-integration-remain-credited-accordingly"></span>When both integrations are active and claim attribution for installs, <strong>attribution is randomly split between them</strong>, with one being the primary source and the other acting as a contributor. This ensures data isn't duplicated. For example, if DV360 is responsible for 100 installs, you might see 70 installs from the legacy integration and 30 from DV360, or 80 installs from DV360 and 20 installs from the legacy integration.</td></tr><tr><td colspan="2"><span id="inapp-events-for-installsreengagements-attributed-to-the-legacy-integration-remain-credited-accordingly"></span>In-app events for installs/re-engagements attributed to the legacy integration remain credited accordingly.</td></tr><tr><td colspan="2"><span id="reengagement-reengagement-attribution-is-supported-in-the-dv360-integration"></span><p><strong>Re-engagement</strong></p><p>Re-engagement attribution is supported in the DV360 integration.</p></td></tr></tbody></table></figure><p><strong>Field discrepancies</strong></p><p>Due to differences between available data fields in the legacy and updated APIs, you may see differences in some AppsFlyer fields, as seen below:</p><figure><table><thead><tr><th><strong>AppsFlyer field</strong></th><th><strong>Legacy field (doubleclick_int)</strong></th><th><strong>DV360 field (dv360_int)</strong></th></tr></thead><tbody><tr><td>Campaign name</td><td>placement_id</td><td>line_item_name</td></tr><tr><td>Campaign ID</td><td>placement_id</td><td>line_item_id</td></tr><tr><td>Adset name</td><td>ad_id</td><td>NA (not supported)</td></tr><tr><td>Adset ID</td><td>ad_id</td><td>NA (not supported)</td></tr><tr><td>Ad name</td><td>creative_id</td><td>NA (not supported)</td></tr><tr><td>Ad ID</td><td>creative_id</td><td>creative_id</td></tr></tbody></table></figure></td></tr></tbody></table>
+
+<Table>
+  <tbody>
+    <tr>
+      <td>
+        **Novedades**
+      </td>
+      <td>
+        Como parte de los preparativos para hacer cumplir la <Anchor target="_blank" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en">Ley de Marketing Digital</Anchor> (DMA), Google está actualizando su <Anchor target="_blank" href="https://www.google.com/about/company/user-consent-policy/?sjid=15416941068016224808-NA">política de consentimiento de usuarios de la UE</Anchor>. AppsFlyer está haciendo los cambios necesarios para respaldar los requisitos de la política de Google.
+
+        Las siguientes integraciones de Google Marketing Platform (GMP) están disponibles actualmente:
+
+        * [Heredado] CM360 (DoubleClick) `doubleclick_int`
+        * <Anchor target="_blank" href="/marketers/es/docs/google-marketing-platform-display-video-360-dv360-integration">DV360 (nueva integración)</Anchor> `dv360_int`
+
+        A partir del 9 de septiembre de 2025, la integración heredada `doubleclick_int` quedará obsoleta. Si estás usando esta integración, tendrás que hacer la transición a la nueva integración de DV360 para seguir ejecutando campañas y medirlas usando GMP.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Acción requerida**
+      </td>
+      <td>
+        Pasa a la nueva integración de DV360 `dv360_int` lo antes posible y, como muy tarde, no más tarde del 30 de junio de 2025.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Pasos a seguir**
+      </td>
+      <td>
+        Asegúrate de configurar ambas plataformas, GMP y AppsFlyer:
+
+        **Configuración en GMP**
+
+        1. Inicia sesión en tu cuenta de CM360 o DV360.   
+           **Nota:** Si completas los pasos en CM360, no es necesario completarlos en DV360.
+        2. Crea o reutiliza tu enlace de atribución de partner (Link ID) siguiendo <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/10956727">estas instrucciones</Anchor>.
+
+        **Configuración en AppsFlyer**
+
+        1. Completa tu integración de DV360 en AppsFlyer siguiendo <Anchor target="_blank" href="/marketers/es/docs/google-marketing-platform-display-video-360-dv360-integration#integration-procedures">estas instrucciones</Anchor>.   
+           **Nota:** Para mantener la consistencia de los datos, asegúrate de que la configuración sea similar a la de la integración heredada (ventanas de lookback, postbacks de eventos in-app, etc.).
+        2. **Prueba la nueva integración:**   
+           Espera aproximadamente un día para confirmar los datos de la nueva integración. Después podrás desactivar la integración heredada.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Lo que debes saber**
+      </td>
+      <td>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+      </td>
+      <td>
+        <table><thead><tr><th><strong>Consideraciones</strong></th><th>Opciones disponibles</th></tr></thead><tbody><tr><td colspan="2"><span id="media-source-pid"></span><strong>PID de fuente de medios</strong></td></tr><tr><td><span id="after-completing-the-migration-the-dv360-media-source-pid-changes-from-doubleclick_int-to-dv360_int"></span>Después de completar la migración, el PID de la fuente de medios de DV360 cambia de <kbd>doubleclick_int</kbd> a <kbd>dv360_int</kbd>.</td><td>Si estás extrayendo raw data de AppsFlyer para llevarlos a tu BI o a cualquier herramienta de análisis de terceros, considera cambiar el nombre de la fuente de medios.</td></tr><tr><td colspan="2"><span id="outofstore-apps"></span><strong>Aplicaciones out-of-store</strong></td></tr><tr><td><span id="apps-from-unofficial-app-stores-arent-supported-in-the-dv360-integration-the-integration-relies-on-a-link-id-which-is-generated-for-apps-obtained-through-official-app-stores"></span>Las apps de tiendas de aplicaciones no oficiales no son compatibles con la integración de DV360. La integración se basa en un ID de enlace, que se genera para las apps obtenidas a través de tiendas de aplicaciones oficiales.</td><td>Si tu app se descarga desde fuentes ajenas a las tiendas de aplicaciones oficiales, ponte en contacto con tu CSM o con <a href="mailto:hello@appsflyer.com">hello@appsflyer.com</a>.</td></tr><tr><td colspan="2"><span id="attribution-data-duplication"></span><strong>Distribución de los datos de atribución</strong></td></tr><tr><td colspan="2"><span id="while-both-integrations-are-active-in-appsflyer-data-duplication-is-expected-inapp-events-for-installsreengagements-attributed-to-the-legacy-integration-remain-credited-accordingly"></span>Cuando ambas integraciones están activas y reclaman la atribución de instalaciones, <strong>la atribución se reparte aleatoriamente entre ellas</strong>: una actúa como fuente principal y la otra como colaboradora. Esto garantiza que los datos no se dupliquen. Por ejemplo, si DV360 es responsable de 100 instalaciones, puede que veas 70 instalaciones de la integración heredada y 30 de DV360, o 80 instalaciones de DV360 y 20 instalaciones de la integración heredada.</td></tr><tr><td colspan="2"><span id="inapp-events-for-installsreengagements-attributed-to-the-legacy-integration-remain-credited-accordingly"></span>Los eventos in-app para instalaciones/re-engagements atribuidos a la integración heredada permanecen acreditados en consecuencia.</td></tr><tr><td colspan="2"><span id="reengagement-reengagement-attribution-is-supported-in-the-dv360-integration"></span><p><strong>Reengagement</strong></p><p>La atribución de re-engagement es compatible con la integración de DV360.</p></td></tr></tbody></table>
+
+        **Discrepancias entre campos**
+
+        Debido a las diferencias entre los campos de datos disponibles en las API heredadas y actualizadas, puede que veas diferencias en algunos campos de AppsFlyer, como se muestra a continuación:
+
+        | **Campo AppsFlyer** | **Campo heredado (doubleclick\_int)** | **Campo de DV360 (dv360\_int)** |
+        | --- | --- | --- |
+        | Nombre de la campaña | placement\_id | nombre del elemento de pedido |
+        | Campaign ID | placement\_id | line\_item\_id |
+        | Nombre del conjunto de anuncios | ad\_id | N/D (no compatible) |
+        | ID de adset | ad\_id | N/D (no compatible) |
+        | Nombre de anuncio | creative\_id | N/D (no compatible) |
+        | Ad ID | creative\_id | creative\_id |
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 <div data-zendesk-anchors="while-both-integrations-are-active-in-appsflyer-data-duplication-is-expected%0Ainapp-events-for-installsreengagements-attributed-to-the-legacy-integration-remain-credited-accordingly=while-both-integrations-are-active-in-appsflyer-data-duplication-is-expected-inapp-events-for-installsreengagements-attributed-to-the-legacy-integration-remain-credited-accordingly reengagement%0Areengagement-attribution-is-supported-in-the-dv360-integration=reengagement-reengagement-attribution-is-supported-in-the-dv360-integration" />

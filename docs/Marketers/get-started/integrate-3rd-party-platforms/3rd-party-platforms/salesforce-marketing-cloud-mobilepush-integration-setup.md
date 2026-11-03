@@ -1,5 +1,5 @@
 ---
-title: Salesforce Marketing Cloud MobilePush integration setup
+title: Salesforce Marketing Cloud Configuración de la integración de MobilePush
 metadata:
   keywords:
     - Marketers
@@ -12,59 +12,58 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-11-14T06:37:05Z'
-  edited_at: '2023-09-10T07:54:37Z'
+  edited_at: '2026-08-12T11:59:30Z'
   id: 10590769196817
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/10590769196817-Salesforce-Marketing-Cloud-MobilePush-integration-setup
+  url: https://support.appsflyer.com/hc/es/articles/10590769196817
 ---
-> **At a glance:** Salesforce Marketing Cloud MobilePush, an AppsFlyer integrated partner, is a user engagement platform for marketing, growth, and engagement teams.
+> **De un vistazo:** Salesforce Marketing Cloud MobilePush, un partner integrado de AppsFlyer, es una plataforma de engagement de usuario para equipos de marketing, crecimiento y engagement.
 
-## Overview
+## Visión general
 
-Salesforce Marketing Cloud MobilePush allows you to create and send targeted push messages based on cross-channel consumer data. This helps encourage app usage and deliver increased ROI. With MobilePush, you can view how users navigate through your app, from the products they view to the time spent on each page. Integrating MobilePush allows you to:
+Salesforce Marketing Cloud MobilePush te permite crear y enviar mensajes push dirigidos basados en datos de consumidores multicanal. Esto ayuda a fomentar el uso de las aplicaciones y a ofrecer un mayor retorno de la inversión. Con MobilePush, puedes ver cómo los usuarios navegan a través de tu aplicación, desde los productos que ven hasta el tiempo que pasan en cada página. La integración de MobilePush te permite:
 
-* Drive engagement and mCommerce
-* Gain valuable user insight
-* Easily build cross-channel campaigns
-* Segment and schedule messages
+* Impulsar el engagement y el mCommerce
+* Obtener insights valiosos del usuario
+* Crear campañas multicanal fácilmente
+* Segmentar y programar mensajes
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up Salesforce Marketing Cloud MobilePush
+## Configuración de Salesforce Marketing Cloud MobilePush
 
-Most of the setup is done in Salesforce (steps 1-4). Step 5 is done in AppsFlyer.
+La mayor parte de la configuración se realiza en Salesforce (pasos 1-4). El paso 5 se realiza en AppsFlyer.
 
-### Step 1: Set up MobilePush SDK
+### Paso 1: Configurar el SDK de MobilePush
 
-* <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_get_started.htm&type=5">Implement the MobilePush SDK setup</Anchor>
+* <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_get_started.htm&type=5">Implementa la configuración del SDK de MobilePush.</Anchor>
 
-### Step 2: Provision for push notifications
+### Paso 2: Aprovisionamiento para notificaciones push
 
-* <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-provision.html">Create a `.p12` certificate</Anchor>
+* <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-provision.html">Crea un certificado `.p12` .</Anchor>
 
-### Step 3: Enable app push notifications
+### Paso 3: Habilitar las notificaciones push de la aplicación
 
-* <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-configureforpush.html">Implement push notifications</Anchor>
+* <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-configureforpush.html">Implementa las notificaciones push.</Anchor>
 
-### Step 4: Set up app push notifications
+### Paso 4: Configurar las notificaciones push de la aplicación
 
-* <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_outbound_message.htm&type=5">Create and send push messages to mobile devices</Anchor>
+* <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_outbound_message.htm&type=5">Crea y envía mensajes push a dispositivos móviles.</Anchor>
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> When creating a push notification on Salesforce marketing cloud, a <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_custom_keys.htm&type=5">custom key</Anchor> needs to be added so that AppsFlyer can properly attribute with the correct PID and campaign attributes. Use `AF_xxxxxxxxx` as the custom key.
+> Al crear una notificación push en Salesforce Marketing Cloud, se debe agregar una <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_custom_keys.htm&type=5">clave personalizada</Anchor> para que AppsFlyer pueda atribuir correctamente los atributos PID y de campaña correctos. Utiliza `AF_xxxxxxxxx` como clave personalizada.
 
-### Step 5: Set up push notifications in AppsFlyer
+### Paso 5: Configurar las notificaciones push en AppsFlyer
 
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications-ios#addpushnotificationdeeplinkpath-recommended">Configure the iOS SDK using OneLink (step 3 in this link)</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications-ios#addpushnotificationdeeplinkpath-recommended">Configura el SDK de iOS usando OneLink (paso 3 en este enlace).</Anchor>
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Make sure the `AF_xxxxxxxxx` custom key you entered in [step 4](/docs/salesforce-marketing-cloud-mobilepush-integration-setup#step-4-set-up-app-push-notifications) has the same value as the one entered in the `addPushNotificationDeepLinkPath` function.
+> Asegúrate de que la clave personalizada `AF_xxxxxxxxx` que introdujiste en el [paso 4](/docs/salesforce-marketing-cloud-mobilepush-integration-setup#paso-4-configurar-las-notificaciones-push-de-la-aplicación) tenga el mismo valor que la introducida en la función `ddPushNotificationDeepLinkPath`.
 
-<div data-zendesk-anchors="h_01H9HWK3F5TQZ8YQZBHGBZACPG=overview h_01H9HWK5DM87JTDVFND0KB965G=important h_01H9HWK3F52YGQPX4B82N40PPD=setting-up-salesforce-marketing-cloud-mobilepush h_01H9HWK3F5HCVZ0225MFRYRW5Q=step-1-set-up-mobilepush-sdk h_01H9HWK3F5RNCZG340E0CT5XJC=step-2-provision-for-push-notifications h_01H9HWK3F5E4W8FG35V4JTFN7F=step-3-enable-app-push-notifications h_01H9HWK3F5K8V8AVADXNNG25GY=step-4-set-up-app-push-notifications h_01H9HWK3F5VG2GBCE93B69AADH=note h_01H9HWK3F5YJ71YCWHV4B02VYP=step-5-set-up-push-notifications-in-appsflyer h_01H9HWK3F5T67NSPE9CVPS1KTA=note-1" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01H9HWK3F5TQZ8YQZBHGBZACPG=visi%C3%B3n-general h_01H9HWK5DM87JTDVFND0KB965G=importante setting-up-salesforce-marketing-cloud-mobilepush=configuraci%C3%B3n-de-salesforce-marketing-cloud-mobilepush h_01H9HWK3F52YGQPX4B82N40PPD=configuraci%C3%B3n-de-salesforce-marketing-cloud-mobilepush step-1-set-up-mobilepush-sdk=paso-1-configurar-el-sdk-de-mobilepush h_01H9HWK3F5HCVZ0225MFRYRW5Q=paso-1-configurar-el-sdk-de-mobilepush step-2-provision-for-push-notifications=paso-2-aprovisionamiento-para-notificaciones-push h_01H9HWK3F5RNCZG340E0CT5XJC=paso-2-aprovisionamiento-para-notificaciones-push step-3-enable-app-push-notifications=paso-3-habilitar-las-notificaciones-push-de-la-aplicaci%C3%B3n h_01H9HWK3F5E4W8FG35V4JTFN7F=paso-3-habilitar-las-notificaciones-push-de-la-aplicaci%C3%B3n step-4-set-up-app-push-notifications=paso-4-configurar-las-notificaciones-push-de-la-aplicaci%C3%B3n h_01H9HWK3F5K8V8AVADXNNG25GY=paso-4-configurar-las-notificaciones-push-de-la-aplicaci%C3%B3n h_01H9HWK3F5VG2GBCE93B69AADH=nota step-5-set-up-push-notifications-in-appsflyer=paso-5-configurar-las-notificaciones-push-en-appsflyer h_01H9HWK3F5YJ71YCWHV4B02VYP=paso-5-configurar-las-notificaciones-push-en-appsflyer h_01H9HWK3F5T67NSPE9CVPS1KTA=nota-1" />

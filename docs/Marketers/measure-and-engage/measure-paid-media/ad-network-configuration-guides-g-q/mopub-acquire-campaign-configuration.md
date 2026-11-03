@@ -1,5 +1,5 @@
 ---
-title: MoPub Acquire campaign configuration
+title: Configuración de la campaña de MoPub Acquire
 metadata:
   keywords:
     - CrossInstall
@@ -14,155 +14,154 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-06-20T11:27:42Z'
-  edited_at: '2026-09-09T12:38:54Z'
+  edited_at: '2026-09-11T00:24:18Z'
   id: 211187263
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/211187263-MoPub-Acquire-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/211187263
 ---
-> **At a glance:** MoPub Acquire (formerly Crossinstall, an X Ads company), is an AppsFlyer integrated partner. MoPub Acquire is a mobile-only demand-side platform specializing in playable ads at scale. In addition to click-based mobile attribution, MoPub Acquire also offers cost and view-through attribution, which you can record with AppsFlyer.
+> **En resumen:** MoPub Acquire (anteriormente Crossinstall, una empresa de X Ads) es un partner integrado de AppsFlyer. MoPub Acquire es una plataforma de demanda solo para móvil especializada en anuncios jugables a escala. Además de la atribución móvil basada en clics, MoPub Acquire también ofrece atribución de costo y view-through, que puedes registrar con AppsFlyer.
 
-<Image alt="MoPub Acquire, a Twitter Company" src="https://cdn.appsflyer.com/marketplace/static/logo/crossinstall.png" width="104px" />
+<Image alt="MoPub Acquire, una empresa de Twitter" src="https://cdn.appsflyer.com/marketplace/static/logo/crossinstall.png" width="104px" />
 
-## Setting up MoPub Acquire
+## Configuración de MoPub Acquire
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el Partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace**.  
+   (**Para editar una integración existente:** ve a la pestaña **Collaborate > Partner Integrations > Active integrations**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el Partner y selecciona **Integrate**.
+4. En la pestaña **Integration**, activa el selector **Activate partner**.   
+   **Nota:** el selector **debe permanecer activado (activo) mientras trabajes con el Partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-**To enable the integration of this partner**, turn on **Activate partner**.  
-The toggle must be on for as long as you work with the partner. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
+**Para habilitar la integración de este partner**, activa **Activar partner**.  
+El conmutador debe estar activado mientras trabajes con el partner. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activación del partner</Anchor>.
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Turn this on if you want to attribute view-through installs from MoPub Acquire. The view-through lookback slider is available on the attribution link tab (described below).
+Actívala si quieres atribuir las instalaciones view-through de MoPub Acquire. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to MoPub Acquire following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a MoPub Acquire después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to MoPub Acquire.
+Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a MoPub Acquire.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with MoPub Acquire via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer a MoPub Acquire mediante postbacks.
 
-**To configure in-app events postback:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Turn **In-app event postback** on.
-2. Set the **In-app event postback window** (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
-3. Click **Add event** to add an SDK event to the list.
-4. Complete the parameters required:
+1. Activa **Postback de evento in-app**.
+2. Establece la **ventana de postback de eventos in-app** (lee más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">la configuración de la ventana de postback de eventos in-app</Anchor>).
+3. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista.
+4. Completa los parámetros según sea necesario:
 
-| Parameter name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| SDK event name | The name of the event, as received by AppsFlyer either from the SDK integrated with your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for? Type in its SDK Event Name, click **Create custom**, and map normally. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping</Anchor>. |
-| Sending option | Select the sending option for the event:<ul><li>**Only events attributed to this partner** for events coming **only** from users attributed to this partner.</li><li>**Events attributed to any partner or organic** to have your entire user base available to be reported to the partner.</li></ul> |
-| Send revenue | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
+| Nombre de evento SDK | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK integrado con tu aplicación o desde eventos de servidor a servidor.  <br />**Consejo**: ¿No encuentras el evento que buscas? Escribe su nombre de evento del SDK, haz clic en **Crear personalizado** y asígnalo normalmente. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizados</Anchor>. |
+| Opción de envío | Selecciona la opción de envío para el evento:<ul><li>**Solo eventos atribuidos a este partner** para eventos procedentes **solo** de usuarios atribuidos a este partner.</li><li>**Eventos atribuidos a cualquier partner u orgánicos** para que toda tu base de usuarios esté disponible para ser reportada al partner.</li></ul> |
+| Enviar ingresos | <ul><li>**Sin valores ni ingresos:** envía solo el evento en sí sin el valor del evento.</li><li>**Con valores y sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.</li><li>**Con valores e ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento).</li></ul> |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to MoPub Acquire for attributing MoPub Acquire's campaigns, ad sets, or even single ads.
+En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a MoPub Acquire para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de MoPub Acquire.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with MoPub Acquire.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific MoPub Acquire campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns MoPub Acquire.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the sub site ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña** - añádela para comparar diferentes campañas en ejecución con MoPub Acquire.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios** - define nombres de conjuntos de anuncios para comparar diferentes conjuntos de anuncios dentro de campañas específicas de MoPub Acquire.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio** - define nombres de anuncios para comparar diferentes creatividades dentro de conjuntos de anuncios específicos, en campañas específicas de MoPub Acquire.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** e **ID de subsitio**: configura el parámetro de ID de sitio para atribuir las instalaciones a publishers específicos. Si existen muchos publishers, te recomendamos limitar el número de IDs de sitio utilizados y usar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">superar las limitaciones del ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor**: utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar agregación o filtrado de datos  
+  **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to MoPub Acquire.
+Este control deslizante te permite establecer el **tiempo máximo del clic a la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a MoPub Acquire.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to MoPub Acquire to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a MoPub Acquire para que se active cuando los leads hagan clic en el anuncio correspondiente.
 
-### View-through attribution lookback window
+### Ventana de lookback de atribución view-through
 
-This slider allows you to set the **maximum time from impression to install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to MoPub Acquire, providing there was no other relevant ad click.
+Este control deslizante te permite establecer el **tiempo máximo de la impresión a la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de esta ventana de lookback, tras la impresión de un anuncio, se atribuyen a MoPub Acquire, siempre que no haya habido ningún otro clic relevante en un anuncio.
 
-You can customize this value to 1-23 hours or 1-7 days.
+Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 
-**Attribution link parameter:** af\_viewthrough\_lookback
+**Parámetro del enlace de atribución:** af\_viewthrough\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución por impresiones</Anchor>.
 
-### Impressions attribution link
+### Enlace de atribución de impresiones
 
-The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to MoPub Acquire to be activated when a corresponding ad is watched.
+El enlace de atribución de impresiones contiene datos similares a los del enlace de registro de clics, además de una ventana de lookback diferente. Envíalo a MoPub Acquire para que se active cuando se vea un anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de los costos por API. Consulta <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">la tabla de integración de costos de redes de publicidad</Anchor> para obtener más información sobre las dimensiones, métricas y funciones admitidas. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el panel de control de estado de la integración de costos (e ingresos por publicidad) o en el panel de control de la red de publicidad individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant MoPub Acquire. Note that even if attribution is disabled for MoPub Acquire, the permissions tab is active and you can grant control to MoPub Acquire. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Learn what permission can you give to MoPub Acquire</Anchor>.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a MoPub Acquire. Ten en cuenta que, aunque la atribución esté desactivada para MoPub Acquire, la pestaña de permisos está activa y puedes conceder el control a MoPub Acquire. <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">Descubre qué permisos puedes conceder a MoPub Acquire</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HFP4C4JDPYDGM3RBSQCNHC3T=setting-up-mopub-acquire h_01HFP4C4JDRMK87B48F4MV5B91=integration-tab h_01HFP4C4JD5A9RZP6HBBM2WFHZ=activate-partner h_01HFP4C4JDAK0N210GAH978CM0=default-postbacks inapp-events-settings=in-app-events-settings h_01HFP4C4JDEW2YBFCFR0MN6G91=in-app-events-settings h_01HFP4C4JDWBC03HBEZ13HP3NS=attribution-link-tab h_01HFP4C4JDWAWKMT1CSPQSCNMZ=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HFP4C4JDW2DRVVHXJ8ZAT9W5=click-through-attribution h_01HFP4C4JDTXJYH4S1EZ4HYJWG=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HFP4C4JDDWH23CVQMJNH2V70=view-through-attribution-lookback-window h_01HFP4C4JDYXBYAP5AYBN54A4B=impressions-attribution-link h_01HFP4C4JDP8NDDRHGXM0Y7XM7=cost-tab h_01HFP4C4JDBWCER854NDKTYRW8=ad-revenue-tab h_01HFP4C4JDRYYPW6W2PNA8J8P3=permissions-tab" />
+<div data-zendesk-anchors="setting-up-mopub-acquire=configuraci%C3%B3n-de-mopub-acquire h_01HFP4C4JDPYDGM3RBSQCNHC3T=configuraci%C3%B3n-de-mopub-acquire h_01HFP4C4JDRMK87B48F4MV5B91=integration-tab activate-partner=activar-socio h_01HFP4C4JD5A9RZP6HBBM2WFHZ=activar-socio default-postbacks=postbacks-predeterminados h_01HFP4C4JDAK0N210GAH978CM0=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HFP4C4JDEW2YBFCFR0MN6G91=configuraci%C3%B3n-de-eventos-in-app h_01HFP4C4JDWBC03HBEZ13HP3NS=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HFP4C4JDWAWKMT1CSPQSCNMZ=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HFP4C4JDW2DRVVHXJ8ZAT9W5=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HFP4C4JDTXJYH4S1EZ4HYJWG=haz-clic-en-el-enlace-de-atribuci%C3%B3n viewthrough-attribution-lookback-window=ventana-de-lookback-de-atribuci%C3%B3n-view-through h_01HFP4C4JDDWH23CVQMJNH2V70=ventana-de-lookback-de-atribuci%C3%B3n-view-through impressions-attribution-link=enlace-de-atribuci%C3%B3n-de-impresiones h_01HFP4C4JDYXBYAP5AYBN54A4B=enlace-de-atribuci%C3%B3n-de-impresiones h_01HFP4C4JDP8NDDRHGXM0Y7XM7=cost-tab h_01HFP4C4JDBWCER854NDKTYRW8=ad-revenue-tab h_01HFP4C4JDRYYPW6W2PNA8J8P3=permissions-tab" />

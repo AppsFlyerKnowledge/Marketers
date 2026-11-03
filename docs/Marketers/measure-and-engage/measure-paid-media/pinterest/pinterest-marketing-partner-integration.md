@@ -1,5 +1,5 @@
 ---
-title: Pinterest Marketing Partner Integration
+title: Integración de partners de marketing de Pinterest
 metadata:
   keywords:
     - Pinterest
@@ -16,23 +16,22 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-12-08T16:05:33Z'
-  edited_at: '2026-08-14T16:22:39Z'
+  edited_at: '2026-08-22T00:30:00Z'
   id: 217408966
-  locale: en-us
+  locale: es
   section: Pinterest
   section_id: 6551388216337
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/217408966-Pinterest-Marketing-Partner-Integration
+  url: https://support.appsflyer.com/hc/es/articles/217408966
 ---
-> **At a glance:** Enable Pinterest Marketing Partners (PMPs) to receive install data for users attributed to Pinterest.
+> **At a glance:** Permite que los partners de marketing de Pinterest (PMP) reciban datos de las instalaciones de los usuarios atribuidas a Pinterest.
 
-Every PMP must be an official PMP and must also be approved by AppsFlyer on the back-end.
+Cada PMP debe ser un PMP oficial y también debe ser aprobado por AppsFlyer en el backend.
 
-For AppsFlyer to send a postback to the PMP the af\_mp= parameter with the AppsFlyer account name as a value must be added to the attribution link.
+Para que AppsFlyer envíe un postback al PMP, se debe agregar al enlace de atribución el parámetro af\_mp= con el nombre de la cuenta de AppsFlyer como valor.
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
 >
 > <Tabs>
@@ -48,10 +47,10 @@ For AppsFlyer to send a postback to the PMP the af\_mp= parameter with the AppsF
 >
 > </Tab>
 >
-> <Tab title="iOS">
+> <Tab title="apps de iOS,">
 >
 > ```http
-> https://app.appsflyer.com/id340954503?pid=pinterest_int&clickid={click_id}
+> http://app.appsflyer.com/id340954503?pid=pinterest_int&clickid={click_id}
 > &af_adset={ad_group_name}&af_adset_id={ad_group_id}&af_ad={creative_name}&af_ad_id=
 > {creative_id}&af_siteid={publisher}&c={campaign_name}&af_c_id={campaign_id}&af_ad=
 > {ad_group_id}&af_ad_id={creative_id}&sha1_advertising_id={sha1_advertising_id}&tracking=
@@ -62,7 +61,7 @@ For AppsFlyer to send a postback to the PMP the af\_mp= parameter with the AppsF
 > </Tabs>
 >
 
-Supported PMP partners include:
+Entre los partners de PMP admitidos se encuentran:
 
 * Bidalgo
 * Bidsaas (Bidalgo)

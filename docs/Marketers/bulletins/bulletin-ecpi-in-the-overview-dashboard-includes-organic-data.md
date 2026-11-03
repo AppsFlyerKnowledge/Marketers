@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: eCPI in the Overview dashboard includes organic data'
+title: 'Boletín: el eCPI del Dashboard general incluye datos orgánicos'
 metadata:
   keywords:
     - Marketers
@@ -13,16 +13,15 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2024-03-10T10:06:52Z'
-  edited_at: '2024-03-21T12:32:14Z'
+  edited_at: '2026-10-20T03:55:36Z'
   id: 23224342615825
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/23224342615825-Bulletin-eCPI-in-the-Overview-dashboard-includes-organic-data
+  url: https://support.appsflyer.com/hc/es/articles/23224342615825
 ---
-| **What's new** | eCPI in the Overview dashboard now includes organic data. |
+| **¿Qué hay de nuevo?** | eCPI en el Dashboard general ahora incluye datos orgánicos. |
 | --- | --- |
-| **Effective date** | March 20, 2024 |
-| **Where** | Overview dashboard |
-| **What you should know** | <ul><li>Until the effective date, organic data wasn't included in the eCPI metric; only non-organic data.</li><li>From the effective date, organic data is included in eCPI.</li><li>This may cause a drop in the eCPI reported in the Overview dashboard.</li></ul> |
+| **Fecha de entrada en vigor** | 20 de marzo de 2024 |
+| **Donde** | Panel de descripción general |
+| **Lo que debes saber** | <ul><li>Hasta la fecha de entrada en vigor, los datos orgánicos no se incluían en la métrica de eCPI; solo los datos no orgánicos.</li><li>A partir de la fecha de entrada en vigor, los datos orgánicos se incluyen en el eCPI.</li><li>Esto puede provocar una bajada del eCPI reportado en el Dashboard general.</li></ul> |

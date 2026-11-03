@@ -1,5 +1,5 @@
 ---
-title: About ATT and SKAN
+title: Información sobre ATT y SKAN
 metadata:
   keywords:
     - Advertisers
@@ -17,179 +17,178 @@ x-zendesk:
     - SKAdNetwork (SKAN)
     - Ad Networks
   created_at: '2020-08-11T09:19:23Z'
-  edited_at: '2026-06-11T08:40:04Z'
+  edited_at: '2026-08-12T11:57:30Z'
   id: 360011890298
-  locale: en-us
+  locale: es
   section: Attribution scenarios
   section_id: 6551328497041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360011890298-About-ATT-and-SKAN
+  url: https://support.appsflyer.com/hc/es/articles/360011890298
 ---
-> **At a glance**: Starting iOS 14.5, Apple requires that you implement and comply with the terms of <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">AppTrackingTransparency</Anchor> (ATT). ATT means that *if your app collects data about end-users and shares it with other companies for purposes of tracking across apps and websites,* you must use the ATT consent prompt and get user consent in both the publisher and advertiser app. If you don't track, there is no need to display the prompt.
+> **En resumen**: A partir de iOS 14.5, Apple requiere que implementes y cumplas con los términos de <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">AppTrackingTransparency</Anchor> (ATT). La ATT significa que *si tu aplicación recopila datos sobre los usuarios finales y los comparte con otras empresas con el fin de realizar un seguimiento a través de aplicaciones y sitios web,* debes usar el aviso de consentimiento de la ATT y obtener el consentimiento del usuario tanto en la aplicación del editor como en la del anunciante. Si no realizas un seguimiento, no es necesario mostrar el aviso.
 
 ![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
 
-## Attribution measurement in an ATT environment
+## Medición de la atribución en un entorno ATT
 
-AppsFlyer provides you with multiple attribution methods giving you a complete range of attribution solutions. The [ATT](/docs/about-att-and-skan#att-principles) consent requirement impacts attribution in the context of paid app-to-app campaigns. As such, advertisers need to use a mix of attribution and reporting solutions.
+AppsFlyer te proporciona múltiples métodos de atribución que te brindan una gama completa de soluciones de atribución. El requisito de consentimiento de [ATT](/docs/about-att-and-skan#att-principles) afecta la atribución en el contexto de las campañas pagadas de aplicación a aplicación. Como tal, los anunciantes necesitan usar una combinación de soluciones de atribución y reportes. 
 
-In the case of paid app-to-app campaigns, [SKAN](/docs/about-att-and-skan#skan-solution-principles) provides deterministic attribution results. Other campaign types like owned media, web-to-app and Apple Ads use AppsFlyer traditional attribution tools. The traditional tools provide long-term LTV measurement, whereas SKAN measures user performance during a short post-install post.
+En el caso de las campañas pagadas de aplicación a aplicación, [SKAN](/docs/about-att-and-skan#skan-solution-principles) proporciona resultados de atribución deterministas. Otros tipos de campañas como medios propios, web a aplicación y Apple Search Ads utilizan las herramientas de atribución tradicionales de AppsFlyer. Las herramientas tradicionales proporcionan medición del valor de vida útil (LTV) a largo plazo, mientras que SKAN mide el rendimiento del usuario durante un breve período posterior a la instalación.
 
-In summary, to obtain a complete picture, use both SKAN and AppsFlyer traditional solutions because they complement one another.
+En resumen, para obtener una imagen completa, utiliza las soluciones tradicionales tanto de SKAN como de AppsFlyer, porque se complementan entre sí.
 
-This article provides advertisers with an introduction to SKAN and ATT. It is intended for advertisers familiar with the AppsFlyer platform.
+Este artículo proporciona a los anunciantes una introducción a SKAN y ATT. Está dirigido a anunciantes que estén familiarizados con la plataforma AppsFlyer.
 
 <div id="skan-solution-principles" />
 
-<Accordion title="SKAN Solution principles">
+<Accordion title="Principios de la solución SKAN">
 
-AppsFlyer provides aggregated iOS attribution results using SKAN postbacks from iOS. These postbacks are sent by iOS to ad networks who then forward them to AppsFlyer. The postbacks contain anonymized attribution records enriched with a conversion value (CV) set by the advertiser. The CV is a measure of user quality during an initial post-install window.
+AppsFlyer proporciona resultados de atribución de iOS agregados usando postbacks SKAN de iOS. Estos postbacks son enviados por iOS a redes de publicidad que luego los reenvían a AppsFlyer. Los postbacks contienen registros de atribución anonimizados enriquecidos con un valor de conversión (CV) establecido por el anunciante. El CV es una medida de la calidad del usuario durante una ventana inicial post-instalación.
 
-The AppsFlyer <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAN Solution</Anchor> provides advertisers with:
+La <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">solución SKAN</Anchor> de AppsFlyer proporciona a los anunciantes:
 
-* SKAN data in dashboards and reports derived by aggregating postbacks from all ad networks enriched with other data points like cost.
-* The ability to control, via the AppsFlyer Conversion Studio, what the CV measures without the need to make changes to the app code. The CV can be used to measure revenue, engagements, or conversion events.
+* Datos de SKAN en paneles de control y reportes derivados de la agregación de postbacks de todas las redes de publicidad enriquecidas con otros puntos de datos como el costo.
+* La capacidad de controlar, a través de AppsFlyer Conversion Studio, lo que mide el CV sin necesidad de realizar cambios en el código de la aplicación. El CV se puede utilizar para medir los ingresos, engagements o eventos de conversión.
 
-**SKAN limitations**
+**Limitaciones de SKAN**
 
-* **Campaigns:** Doesn't support cross-promotion campaigns and mobile web-assisted installs.
-* **Measurement period:** The effective measurement period is limited to a few days.
+* **Campañas:** no es compatible con Apple Search Ads, campañas de promoción cruzada ni instalaciones móviles asistidas por web.
+* **Periodo de medición:** el periodo de medición efectivo está limitado a unos pocos días.
 
-**SKAN flow**
+**Flujo de SKAN**
 
-![SKAN_flow_-_Affinity_diagram_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+![SKAN_flow_-_Diagrama_de_afinidad_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
 
-1. Advertiser sets SKAN measurement settings in the AppsFlyer Conversion Studio.
-2. The user opens the app for the first time.
-3. During each window, AppsFlyer sets the CV based on user actions and the defined CV schema.
-4. After the window closes, iOS sends the postback to the ad network and a postback copy to AppsFlyer. The postback arrives with some delay:
-   * For SKAN 4 measurement window 1: 24-48 hours
-   * For SKAN 4 measurement windows 2-3: 24-144 hours
-   * For SKAN 3: 24-48 hours after the most recent increase in the CV value.
-5. Postback copies sent directly from the iOS device to AppsFlyer are forwarded to the advertiser's defined endpoint. See <Anchor target="_blank" href="/marketers/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15">send SKAN postback copies to AppsFlyer.</Anchor>
-6. Ad network forwards enriched postback to AppsFlyer or SRN communicates postback data by API.
-7. AppsFlyer validates and decodes the CV. Decoded data is recorded and attributed before being made available in AppsFlyer via dashboards, reports, and APIs.
+1. El anunciante establece los ajustes de medición de SKAN en AppsFlyer Conversion Studio.
+2. El usuario abre la aplicación por primera vez.
+3. Durante cada ventana, AppsFlyer establece el CV en función de las acciones del usuario y el esquema de CV definido.
+4. Después de que se cierra la ventana, iOS envía el postback a la red de publicidad y una copia del postback a AppsFlyer. El postback llega con cierto retraso:
+   * Para la ventana de medición 1 de SKAN 4: 24-48 horas
+   * Para las ventanas de medición 2-3 de SKAN 4: 24-144 horas
+   * Para SKAN 3: 24-48 horas después del incremento más reciente en el valor CV.
+5. Las copias de postbacks enviadas directamente desde el dispositivo iOS a AppsFlyer se reenvían al punto de conexión definido por el anunciante. Consulta <Anchor target="_blank" href="/marketers/es/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15">Enviar copias de postbacks de SKAN a AppsFlyer.</Anchor>
+6. La red de publicidad reenvía el postback enriquecido a AppsFlyer o la SRN comunica los datos del postback por API.
+7. AppsFlyer valida y decodifica el CV. Los datos decodificados se registran y atribuyen antes de que estén disponibles en AppsFlyer a través de los paneles de control, reportes y API.
 
 </Accordion>
 
 <div id="att-principles" />
 
-<Accordion title="ATT principles">
+<Accordion title="Principios de la ATT">
 
-The ATT prompt provides advertisers with a way to get explicit user consent allowing the advertisers to collect and share their data. Starting iOS 14.5 IDFA is available only if the user consent via the prompt.
+El aviso de ATT proporciona a los anunciantes una forma de obtener el consentimiento explícito del usuario, que permite a los anunciantes recopilar y compartir sus datos. A partir de iOS 14.5, el identificador de anunciante (IDFA) solo está disponible si el usuario da su consentimiento a través de este aviso.
 
-Both publisher and advertiser apps display the prompt. If the user provides consent in both apps, it means that the user agrees to be *tracked,* and advertisers are permitted by Apple to track the user between apps owned by different companies.
+Tanto las aplicaciones del publisher como del anunciante muestran el aviso. Si el usuario brinda su consentimiento en ambas aplicaciones, significa que el usuario acepta ser *rastreado,* y Apple permite a los anunciantes rastrear al usuario entre las aplicaciones propiedad de diferentes empresas.
 
-**Setting ATT**
+**Configuración de la ATT**
 
-ATT is set to one of the values listed in the table that follows. Initially, iOS sets ATT to not determined or restricted.
+La ATT se establece en uno de los valores enumerados en la tabla que sigue. Inicialmente, iOS establece la ATT como no determinada o restringida.
 
-Consider that use of the consent prompt to convert a user from *not determined* to *authorized* is optional. But, if you don't display the prompt, you can't get *authorization.*
+Ten en cuenta que el uso del aviso de consentimiento para convertir a un usuario de *no determinado* a *autorizado* es opcional. Pero, si no muestras el aviso, no puedes obtener la *autorización.* Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
 
-| ATT value | Consent  <br />(IDFA available) | Remarks |
+| Valor ATT | Consentimiento  <br />(IDFA disponible) | Observaciones |
 | --- | --- | --- |
-| Restricted | No | <ul><li>Determined by Apple based on user age and other criteria. Can't be changed by the device user.</li><li>The prompt can't be displayed to these users.</li></ul> |
-| Not determined (until iOS 14.4) | Yes | Default value |
-| Not determined<br /><br />(starting iOS 14.5) | No | Default value |
-| Denied | No | Occurs if any of the following are true:<ul><li>Set after displaying the prompt</li><li>The user turned off *Allow Apps to Request to Track* (master switch at the device level)</li><li>Before installing iOS 14 on the device, LAT was on</li></ul> |
-| Authorized | Yes | Set after displaying the prompt |
+| Restringido | No | <ul><li>Determinado por Apple en función de la edad del usuario y otros criterios. El usuario del dispositivo no puede cambiarlo.</li><li>El aviso no se puede mostrar a estos usuarios.</li></ul> |
+| No determinado (hasta iOS 14.4) | Sí | Valor predeterminado |
+| No determinado<br /><br />(a partir de iOS 14.5) | No | Valor por defecto |
+| Denegado | No | Ocurre si se cumple alguna de las siguientes situaciones:<ul><li>Se estableció después de mostrar el aviso.</li><li>El usuario desactivó *Permitir que las aplicaciones soliciten el seguimiento* (interruptor maestro a nivel de dispositivo).</li><li>Antes de instalar iOS 14 en el dispositivo, LAT estaba activado.</li></ul> |
+| Autorizado | Sí | Se estableció después de mostrar el aviso. |
 
-**ATT implications**
+**Implicaciones de la ATT**
 
-With ATT in place, IDFA is available only when users grant consent. As a result, advertisers benefit from using both aggregated attribution methods and user-level reporting where consent is given. <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">AppsFlyer attribution models</Anchor>.
+Debido a la ATT, muchos usuarios no darán su consentimiento, el IDFA no estará disponible y no se permitirá el seguimiento. Como resultado, los anunciantes que hasta iOS 14.5 dependían de los reportes de atribución a nivel de usuario deben cambiar algunos análisis a métodos de atribución agregados y reportes. <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">Modelos de atribución de AppsFlyer</Anchor>.
 
-Attribution-related data for an app comes from a number of sources. The identifier available and used by each differ. Most data displays using the traditional attribution tools. However, for installs attributed using SKAN, reporting is via the SKAN dashboard.
+Los datos relacionados con la atribución para una aplicación provienen de varias fuentes. Los identificadores disponibles y utilizados por cada uno difieren. La mayoría de datos se muestran mediante las herramientas de atribución tradicionales. Sin embargo, para las instalaciones atribuidas mediante SKAN, el reporte se realiza a través del panel de control de SKAN.
 
 </Accordion>
 
 <div id="which-dashboard-has-the-install" />
 
-<Accordion title="Which dashboard has the install?">
+<Accordion title="¿Qué panel de control tiene la instalación?">
 
-In iOS 14 an install can be attributed to both the traditional and SKAN dashboards. In addition, depending on the media source context it can be attributed as organic in one dashboard and as non-organic in the other.
+En iOS 14 se puede atribuir una instalación tanto a los paneles de control tradicionales como a los de SKAN. Además, dependiendo del contexto de la fuente de medios, puede atribuirse como orgánica en un panel de control y como no orgánica en el otro.
 
 </Accordion>
 
-## iOS attribution and privacy: important knowledge
+## Conocimientos importantes de iOS 14
 
-#### iOS attribution, SKAN, and privacy articles and links
+#### Artículos y enlaces de iOS 14 y SKAN
 
-| Area | Article | Special interest: FAQ, discrepancies, comparisons |
+| Área | Artículo | Interés especial: preguntas frecuentes, discrepancias, comparaciones |
 | --- | --- | --- |
-| SKAN | <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">SKAN raw data fields</Anchor> | Additional raw data SKAN fields supporting did\_win and SKAN 3.0 |
-| SKAN | <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAN solution</Anchor> | <ul><li><Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">Timing from app install to dashboard update</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#organic-metrics-in-the-context-of-skadnetwork">Organic metrics in the context of SKAN</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#appsflyer-attribution-vs-skan-attribution">AppsFlyer attribution versus SKAN attribution</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#faq-skan-discrepancies">FAQ SKAN discrepancies</Anchor></li></ul> |
-| SKAN | <Anchor target="_blank" href="/marketers/docs/skan-interoperation">SKAN partner interoperability</Anchor> (article section) | <Anchor target="_blank" href="/marketers/docs/skan-integrated-partners-list">SKAN integrated partners list</Anchor> |
-| SKAN | <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-interoperation-with-meta-ads">Meta ads and AppsFlyer SKAN integration</Anchor> | <ul><li><Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-interoperation-with-meta-ads#troubleshooting-discrepancies-and-faq">Troubleshooting and discrepancies</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-interoperation-with-meta-ads#measurement-and-timing-differences-between-appsflyer-and-facebook">Measurement and timing differences</Anchor></li></ul> |
-| SKAN | <Anchor target="_blank" href="/marketers/docs/skan-interoperation-with-snapchat">Snapchat and AppsFlyer SKAN interoperation</Anchor> | <Anchor target="_blank" href="/marketers/docs/skan-interoperation-with-snapchat#discrepancies-guide">Discrepancies guide</Anchor> |
-| Privacy | <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy (AAP)</Anchor> | <ul><li><Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework#aap-impacted-features">AAP impacted features</Anchor></li></ul> |
-| Privacy | <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">Restricted media sources</Anchor> | <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields">Restricted raw data fields</Anchor> |
-| iOS 14 | <Anchor target="_blank" href="/marketers/docs/preparing-for-the-app-store-review-nutrition-labels">Nutrition labels—prepare for the App Store review</Anchor> |  |
-| iOS 14 | <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support">Configuring ATT in the app</Anchor> (SDK guidance developers) |  |
-| iOS 14 | <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">About self-reporting networks (SRNs) like Google, Meta ads, and so on</Anchor> | <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#ios-145-srn-attribution">Where are SRN installs reported?</Anchor> |
-| Billing | <Anchor target="_blank" href="https://content.appsflyer.com/ios-14-hub/billing/">Billing for iOS apps</Anchor> |  |
+| SKÁN | <Anchor target="_blank" href="/marketers/es/docs/skan-raw-data-reports">Campos de raw data de SKAN</Anchor> | Campos de raw data de SKAN adicionales que admiten did\_win y SKAN 3.0 |
+| SKÁN | <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">Solución SKAN</Anchor> | <ul><li><Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">Tiempo desde la instalación de la aplicación hasta la actualización del panel de control</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#organic-metrics-in-the-context-of-skadnetwork">Métricas orgánicas en el contexto de SKAN</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#appsflyer-attribution-vs-skan-attribution">Atribución de AppsFlyer frente a atribución de SKAN</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#faq-skan-discrepancies">Preguntas frecuentes sobre las discrepancias de SKAN</Anchor></li></ul> |
+| SKÁN | <Anchor target="_blank" href="/marketers/es/docs/skan-interoperation">Interoperabilidad de partners de SKAN</Anchor> (sección del artículo) | <Anchor target="_blank" href="/marketers/es/docs/skan-integrated-partners-list">Lista de partners integrados de SKAN</Anchor> |
+| SKÁN | <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-interoperation-with-meta-ads">Integración de Anuncios de Meta y AppsFlyer SKAN</Anchor> | <ul><li><Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-interoperation-with-meta-ads#troubleshooting-discrepancies-and-faq">Resolución de problemas y discrepancias</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-interoperation-with-meta-ads#measurement-and-timing-differences-between-appsflyer-and-facebook">Diferencias de medición y sincronización</Anchor></li></ul> |
+| SKÁN | <Anchor target="_blank" href="/marketers/es/docs/skan-interoperation-with-snapchat">Interoperabilidad de Snapchat y AppsFlyer SKAN</Anchor> | <Anchor target="_blank" href="/marketers/es/docs/skan-interoperation-with-snapchat#discrepancies-guide">Guía de discrepancias</Anchor> |
+| Privacidad | <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada agregada (AAP)</Anchor> | <ul><li><Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework#funciones-afectadas-por-la-aap">Funciones afectadas por la AAP</Anchor></li></ul> |
+| Privacidad | <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">Fuentes de medios restringidas</Anchor> | <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields">Campos de raw data restringidos</Anchor> |
+| iOS 14 | <Anchor target="_blank" href="/marketers/es/docs/preparing-for-the-app-store-review-nutrition-labels">Etiquetas nutricionales: preparación para la revisión del App Store</Anchor> |  |
+| iOS 14 | <Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support">Configuración de la ATT en la aplicación</Anchor> (Guía del SDK para desarrolladores) |  |
+| iOS 14 | <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns">Acerca de las redes de autorreporte (SRN) como Google, Anuncios de Meta, etc.</Anchor> | <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#ios-145-srn-attribution">¿Dónde se reportan las instalaciones de SRN?</Anchor> |
+| Facturación | <Anchor target="_blank" href="https://content.appsflyer.com/ios-14-hub/billing/">Facturación para aplicaciones iOS</Anchor> |  |
 
 <div id="ios-14-impact-on-attribution-and-measurement" />
 
-<Accordion title="IDFA availability impact on attribution and measurement">
+<Accordion title="Impacto de la disponibilidad del IDFA en la atribución y la medición">
 
-#### **Metrics**
+#### **Métricas**
 
-Consider that where an IDFA is not available, the following metrics may be affected:
+Ten en cuenta que, cuando un IDFA no está disponible, las siguientes métricas pueden verse afectadas:
 
-| Metrics | Increase | Decrease | Remarks |
+| Métricas | Aumenta | Disminuye | Observaciones |
 | --- | --- | --- | --- |
-| Non-organic vs. organic | Organic | Non-organic |  |
-| Reinstalls vs. installs | Installs | Reinstalls |  |
-| Retargeting | Organic installs and in-app events | Re-engagements, Re-attributions |  |
-| Apple Ads | -- | -- | Unchanged. Attribution works correctly regardless of IDFA availability. |
+| /docs/apply-aggregated-advanced-privacy-framework#aap-central-switch | Orgánico | No orgánico |  |
+| Cómo activar y desactivar la AAP | Instalaciones | Reinstalaciones |  |
+| Reorientación | Instalaciones orgánicas y eventos in-app | Re-engagements, reatribuciones |  |
+| Apple Search Ads | -- | -- | Sin cambios. Tanto los usuarios que dan su consentimiento, como los que no, se atribuyen correctamente. |
 
-#### **Deep linking**
+#### **Enlaces profundos**
 
-Deferred deep linking using the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">legacy method of onConversionDataSuccess</Anchor> may not work when an IDFA is not available, since it requires attribution data that may be restricted by privacy settings.
+Los enlaces profundos diferidos que utilizan el <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-legacy-apis#deferred-deep-linking">método heredado de onConversionDataSuccess</Anchor> pueden no funcionar para iOS 14.5+, ya que requieren datos de atribución que pueden no estar disponibles debido a la protección de la privacidad.
 
-We recommend using <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_overview">unified deep linking (UDL)</Anchor>. UDL conforms to the iOS 14.5+ privacy standards and only returns parameters relevant to deep linking and deferred deep linking: `deep_link_value` and `deep_link_sub1`. Attribution parameters such as `media_source`, `campaign`, and `af_sub1-5` return null and can’t be used for deep linking purposes.
+Recomendamos el uso de <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl-1">enlaces profundos unificados (UDL)</Anchor>. Los UDL cumplen con los estándares de privacidad de iOS 14.5+ y solo devuelven los parámetros relevantes para los enlaces profundos y enlaces profundos diferidos: `deep_link_value` y `deep_link_sub1.` Los parámetros de atribución como `media_source`, `campaign` y `af_sub1-5` devuelven null y no se pueden usar para propósitos de enlaces profundos.
 
 </Accordion>
 
-## FAQ—iOS attribution and ATT
+## Preguntas frecuentes: iOS 14+
 
 <div id="what-happens-to-an-app-using-an-sdk-version-before-v6" />
 
-<Accordion title="What happens to an app using an SDK version before V6+?">
+<Accordion title="¿Qué sucede con una aplicación que usa una versión del SDK anterior a V6+?">
 
-For apps using an SDK version earlier than V6.0:
+Para las aplicaciones que utilizan una versión del SDK anterior a V6.0:
 
-* SKAdNetwork and Apple Ads won't work.
-* If you submit the app to the App Store, expect it to be rejected.
+* SKAdNetwork y Apple Search Ads no funcionarán.
+* Si envías la aplicación al App Store, probablemente será rechazada.
 
-For apps using an SDK earlier than V6.10: SKAN 4 won't work.
+Para aplicaciones que usan un SDK anterior a V6.10: SKAN 4 no funcionará.
 
 </Accordion>
 
 <div id="is-it-mandatory-to-display-the-att-prompt" />
 
-<Accordion title="Is it mandatory to display the ATT prompt?">
+<Accordion title="¿Es obligatorio mostrar el aviso de ATT?">
 
-No. You only need to ask for ATT consent if you want to *track* a user, collect IDFA, or both.
+N.º Solo necesitas pedir el consentimiento de ATT si quieres hacer un *seguimiento* de un usuario, recopilar el IDFA, o ambos.
 
 </Accordion>
 
-## FAQ—SKAN
+## Preguntas frecuentes:
 
 <div id="how-do-i-know-when-i-ll-receive-postbacks-and-if-they-ll-be-skan-3-or-skan-4" />
 
-<Accordion title="How do I know when I’ll receive postbacks and if they’ll be SKAN 3 or SKAN 4?">
+<Accordion title="¿Cómo sé cuándo recibiré los postbacks y si serán de SKAN 3 o SKAN 4?">
 
-The type of SKAN postback you receive is determined by a variety of factors, including what mode you use in Conversion Studio, what ad network you use, and what iOS version your users have.
+El tipo de postback de SKAN que recibes está determinado por una variedad de factores, incluyendo qué modo usas en Conversion Studio, qué red de publicidad usas y qué versión de iOS tienen tus usuarios.
 
-These factors impact:
+Estos factores afectan a lo siguiente:
 
-* Postback version: Either SKAN 3 or SKAN 4. <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#principles-and-flow">Learn more</Anchor>
-* Window 1 (AW): For SKAN 4, this is 48 hours. For SKAN 3, this is based on the activity window. Note: If Conversion Studio isn’t SKAN 4, but the ad network signature is, the window is either based on the activity window or 48 hours, whichever is lower.
-* Postback delay: Hours after install when the SKAN postback arrives. This is dependent on when the window closes. <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide?query=skan%20faq#timing-from-app-install-until-dashboard-and-reports-update">Learn more</Anchor>
-* Rolling timer: For SKAN 3, the activity window can be extended up to 63 days; the postback only arrives after the window closes.
+* Versión del postback: SKAN 3 o SKAN 4. <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#principles-and-flow">Aprender más</Anchor>
+* Ventana 1 (AW): para SKAN 4, es de 48 horas. Para SKAN 3, se basa en la ventana de actividad. Nota: Si Conversion Studio no es SKAN 4, pero la firma de la red de publicidad sí lo es, la ventana se basa en la ventana de actividad o 48 horas, lo que sea menor.
+* Retraso del postback: horas después de la instalación cuando llega el postback de SKAN. Esto depende de cuándo se cierra la ventana. <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide?query=skan%20faq#timing-from-app-install-until-dashboard-and-reports-update">Aprender más</Anchor>
+* Temporizador continuo: para SKAN 3, la ventana de actividad se puede extender hasta 63 días; el postback solo llega después de que se cierre la ventana.
 
-The following flowchart explains this in further detail.
+El siguiente diagrama de flujo explica esto con mayor detalle.
 
 ![SKAN_4_matrix_-_Page_8__1_.png](https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png)
 
@@ -197,43 +196,43 @@ The following flowchart explains this in further detail.
 
 <div id="in-skan-am-i-limited-to-100-campaign-ids-per-ad-network" />
 
-<Accordion title="In SKAN, am I limited to a certain number of source identifiers/campaign IDs per ad network?">
+<Accordion title="En SKAN, ¿estoy limitado a un cierto número de identificadores de fuentes/ID de campaña por red de publicidad?">
 
-Yes. Previously the limit was 100 campaign IDs. However, from SKAN 4, campaign IDs are called hierarchical source identifiers, and the limit is 10,000. The source identifier is a 4-digit integer.
+Sí. Anteriormente el límite era de 100 ID de campaña. Sin embargo, desde SKAN 4, los ID de campaña se denominan identificadores de fuente jerárquicos, y el límite es de 10 000. El identificador de fuente es un número entero de 4 dígitos.
 
-Ad networks map the SKAN source identifier to their campaign ID.
+Las redes de publicidad asignan el identificador de fuente SKAN a su ID de campaña.
 
 </Accordion>
 
 <div id="what-is-the-use-case-for-skan-raw-data" />
 
-<Accordion title="What is the use case for SKAN raw data?">
+<Accordion title="¿Cuál es el caso de uso del raw data de SKAN?">
 
-* Use raw data to aggregate dimensions that aren't available via aggregated APIs.
-* Easily adjust existing raw data import processes to consume SKAN raw data.
+* Usa el raw data para agregar dimensiones que no están disponibles a través de las API agregadas.
+* Ajusta fácilmente los procesos de importación de raw data existentes para consumir raw data de SKAN.
 
 </Accordion>
 
 <div id="why-dont-the-conversion-values-i-receive-match-my-configuration-in-appsflyer-conversion-studio" />
 
-<Accordion title="Why don't the conversion values I receive match my configuration in AppsFlyer Conversion Studio?">
+<Accordion title="¿Por qué los valores de conversión que recibo no coinciden con mi configuración en AppsFlyer Conversion Studio?">
 
-Usually, this is because of another SDK in your app that has the ability to set conversion values, and that conflicts with your AppsFlyer SDK and the conversion values you have configured in AppsFlyer. Make sure you don't have another SDK that sets conversion values integrated into your app.
+Normalmente, esto sucede por que hay otro SDK en tu aplicación con la capacidad de establecer valores de conversión, el cual entra en conflicto con tu SDK de AppsFlyer y los valores de conversión que has configurado en AppsFlyer. Asegúrate de no tener otro SDK que establezca valores de conversión integrado en tu aplicación.
 
 </Accordion>
 
 <div id="why-doesn-t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports" />
 
-<Accordion title="Why doesn’t the aggregate data in my SKAN dashboard match the raw data numbers in my SKAN Data Locker reports?">
+<Accordion title="¿Por qué los datos agregados en mi panel de control de SKAN no coinciden con las cifras del raw data en mis reportes de SKAN Data Locker?">
 
-Often, this discrepancy is due to looking at Data Locker reports in the wrong place. Data from Google can take up to 13 days to be received. And in raw data reports, data is written on the day it’s received, not cumulatively. Therefore, to get correct metrics for installs relating to a specific date, you need to look at all reports 13 days after that date, as well.
+A menudo, esta discrepancia se debe a que se miran los reportes de Data Locker en el lugar equivocado. Los datos de Google pueden tardar hasta 13 días en recibirse. Y en los reportes de raw data, los datos se escriben el día en que se reciben, no acumulativamente. Por lo tanto, para obtener unas métricas correctas para las instalaciones relacionadas con una fecha específica, también es necesario mirar todos los reportes 13 días después de esa fecha.
 
-Example: In the June 12 report, it displays 100 installs from Google that occurred on June 11. In the June 24 report, it says 100 MORE installs occurred on June 11. You’ll need to look at all reports for the past 13 days (from June 12-June 24) and aggregate based on the install time or ad network timestamp to get an accurate reading of the 200 total installs that occurred on June 11.
+Ejemplo: En el reporte del 12 de junio, se muestran 100 instalaciones de Google ocurridas el 11 de junio. En el reporte del 24 de junio, se indica que ocurrieron 100 instalaciones MÁS el pasado 11 de junio. Deberás consultar todos los reportes de los últimos 13 días (del 12 al 24 de junio) y agregarlos en función del momento de la instalación o de la marca de tiempo de la red de publicidad, para obtener una lectura precisa de las 200 instalaciones totales ocurridas el 11 de junio.
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/getting-started-onboarding-for-marketers#step-3-attribution-setup">AppsFlyer getting started step-by-step</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/getting-started-onboarding-for-marketers#paso-3-configuración-de-atribución">Introducción a AppsFlyer paso a paso</Anchor>
 
-<div data-zendesk-anchors="h_01HE0C8YXSXSX003X0671Z97KZ=attribution-measurement-in-an-att-environment h_01HE0C8YXSCA8M57F1RG4CJ7HK=skan-solution-principles h_01HE0C8YXSSCTQJAPDE27FB1H8=att-principles h_01HE0C8YXS0BFA2M16D1Q2PQYW=which-dashboard-has-the-install ios-14-important-knowledge=ios-attribution-and-privacy-important-knowledge h_01HE0C8YXS3BH109DF1Y1KNK5P=ios-attribution-and-privacy-important-knowledge ios-14-and-skan-articles-and-links=ios-attribution-skan-and-privacy-articles-and-links h_01HE0C8YXSPZKBWXC51Z2636R0=ios-attribution-skan-and-privacy-articles-and-links h_01HE0C8YXSTCVA8YYR4BQVHVXS=ios-14-impact-on-attribution-and-measurement h_01HE0C8YXSJMYN81FKPCA8ATK7=metrics h_01HE0C8YXS6ADG1SQCMVP0W69B=deep-linking faq%E2%80%94ios-14=faqios-attribution-and-att h_01HE0C8YXSV9VSK1NPG9RCTQW1=faqios-attribution-and-att h_01HE0C8YXS1FFYQJ8YZXP9W9ZV=what-happens-to-an-app-using-an-sdk-version-before-v6 h_01HE0C8YXSKA0325YJSXV81ZB9=is-it-mandatory-to-display-the-att-prompt faq%E2%80%94skan=faqskan h_01HE0C8YXSQKH8ER1Q5VS6Z0NM=faqskan how-do-i-know-when-i%E2%80%99ll-receive-postbacks-and-if-they%E2%80%99ll-be-skan-3-or-skan-4=how-do-i-know-when-i-ll-receive-postbacks-and-if-they-ll-be-skan-3-or-skan-4 h_01HE0C8YXS44YXAN2DV2ZR03GE=how-do-i-know-when-i-ll-receive-postbacks-and-if-they-ll-be-skan-3-or-skan-4 h_01HE0C8YXSCWM892QH0N7YQ8HP=in-skan-am-i-limited-to-100-campaign-ids-per-ad-network h_01HE0C8YXSSWHV45M6P7SQGCRD=what-is-the-use-case-for-skan-raw-data h_01HE0C8YXS8GJKFC23S1R9TWW0=why-dont-the-conversion-values-i-receive-match-my-configuration-in-appsflyer-conversion-studio why-doesn%E2%80%99t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports=why-doesn-t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports h_01HE0C8YXS1VW1T50ARJE0MP62=why-doesn-t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports h_01HE7SNR02VQDKG55QP06ECNAR=see-also" />
+<div data-zendesk-anchors="attribution-measurement-in-an-att-environment=medici%C3%B3n-de-la-atribuci%C3%B3n-en-un-entorno-att h_01HE0C8YXSXSX003X0671Z97KZ=medici%C3%B3n-de-la-atribuci%C3%B3n-en-un-entorno-att h_01HE0C8YXSCA8M57F1RG4CJ7HK=skan-solution-principles h_01HE0C8YXSSCTQJAPDE27FB1H8=att-principles h_01HE0C8YXS0BFA2M16D1Q2PQYW=which-dashboard-has-the-install ios-14-important-knowledge=conocimientos-importantes-de-ios-14 h_01HE0C8YXS3BH109DF1Y1KNK5P=conocimientos-importantes-de-ios-14 ios-14-and-skan-articles-and-links=art%C3%ADculos-y-enlaces-de-ios-14-y-skan h_01HE0C8YXSPZKBWXC51Z2636R0=art%C3%ADculos-y-enlaces-de-ios-14-y-skan h_01HE0C8YXSTCVA8YYR4BQVHVXS=ios-14-impact-on-attribution-and-measurement metrics=m%C3%A9tricas h_01HE0C8YXSJMYN81FKPCA8ATK7=m%C3%A9tricas deep-linking=enlaces-profundos h_01HE0C8YXS6ADG1SQCMVP0W69B=enlaces-profundos faq%E2%80%94ios-14=preguntas-frecuentes-ios-14 h_01HE0C8YXSV9VSK1NPG9RCTQW1=preguntas-frecuentes-ios-14 h_01HE0C8YXS1FFYQJ8YZXP9W9ZV=what-happens-to-an-app-using-an-sdk-version-before-v6 h_01HE0C8YXSKA0325YJSXV81ZB9=is-it-mandatory-to-display-the-att-prompt faq%E2%80%94skan=preguntas-frecuentes h_01HE0C8YXSQKH8ER1Q5VS6Z0NM=preguntas-frecuentes how-do-i-know-when-i%E2%80%99ll-receive-postbacks-and-if-they%E2%80%99ll-be-skan-3-or-skan-4=how-do-i-know-when-i-ll-receive-postbacks-and-if-they-ll-be-skan-3-or-skan-4 h_01HE0C8YXS44YXAN2DV2ZR03GE=how-do-i-know-when-i-ll-receive-postbacks-and-if-they-ll-be-skan-3-or-skan-4 h_01HE0C8YXSCWM892QH0N7YQ8HP=in-skan-am-i-limited-to-100-campaign-ids-per-ad-network h_01HE0C8YXSSWHV45M6P7SQGCRD=what-is-the-use-case-for-skan-raw-data h_01HE0C8YXS8GJKFC23S1R9TWW0=why-dont-the-conversion-values-i-receive-match-my-configuration-in-appsflyer-conversion-studio why-doesn%E2%80%99t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports=why-doesn-t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports h_01HE0C8YXS1VW1T50ARJE0MP62=why-doesn-t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports h_01HE7SNR02VQDKG55QP06ECNAR=consulta-tambi%C3%A9n" />

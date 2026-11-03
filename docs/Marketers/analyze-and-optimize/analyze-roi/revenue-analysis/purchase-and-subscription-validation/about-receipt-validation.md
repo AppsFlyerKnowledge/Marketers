@@ -1,5 +1,5 @@
 ---
-title: About Receipt validation
+title: Sobre la validación de recibos
 metadata:
   keywords:
     - Marketers
@@ -12,109 +12,108 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2025-12-21T14:32:24Z'
-  edited_at: '2026-08-13T14:26:38Z'
+  edited_at: '2026-08-22T00:01:33Z'
   id: 42136725767569
-  locale: en-us
+  locale: es
   section: Purchase and subscription validation
   section_id: 42227328788241
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/42136725767569-About-Receipt-validation
+  url: https://support.appsflyer.com/hc/es/articles/42136725767569
 ---
-> **At a glance:** Understand how Receipt validation measures revenue from in-app purchases and subscriptions and verifies it with the app stores, ensuring accurate revenue measurement.
+> **At a glance:** Entiende cómo la validación de recibos mide los ingresos de las compras in-app y las suscripciones y los verifica con las tiendas de aplicaciones, asegurando una medición precisa de los ingresos.
 
-Advertisers can use Receipt validation to validate and measure in-app purchases and subscriptions from the Play Store and the App Store.
+Los anunciantes pueden usar la validación de recibos para validar y medir las compras in-app de Google Play y la App Store.
 
-Receipt validation is free of charge to all account plans.
+La validación básica de recibos es gratuita para todos los planes de cuenta.
 
 > 📘 **Note**
 >
-> Consider using our premium ROI360 store revenue solution to benefit from net revenue calculation, full subscription funnel coverage, refund handling, and automated purchase detection & deduplication. For more information and a comparison between the two solutions, see The two solutions for purchase and subscription validation.
+> Considera usar nuestra solución de ingresos de tienda premium ROI360 para beneficiarte del cálculo de ingresos netos, cobertura completa del funnel de suscripción, manejo de reembolsos y detección y deduplicación de compras automatizadas. Para más información y una comparación entre las dos soluciones, consulta Las dos soluciones para la validación de compras y suscripciones.
 
-## How does Receipt validation work?
+## ¿Cómo funciona la validación de recibos?
 
-The receipt validation flow is as follows:
+El flujo de validación de recibos es el siguiente:
 
-1. The user performs an in-app purchase.
-2. The app store notifies the app of the successful purchase.
-3. The app developer calls the SDK's receipt validation method: `validateAndLogInAppPurchase`
-4. The SDK calls the AppsFlyer validation service.
-5. AppsFlyer validates the purchase to make sure it is not fraudulent.
-6. Upon successful validation, AppsFlyer logs the purchase or subscription event.
-7. If receipt validation fails, the event is displayed in the <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-inapp-events">Blocked in-app events raw data report</Anchor> (available to Protect360 subscribers) and on the <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers#view-live-events">Live events viewer page</Anchor> with the parameter `af_validated` set to `false`.
-8. The AppsFlyer validation service transfers the response to the SDK.
-9. The SDK transfers the receipt validation response to the app (either success or failure).
+1. El usuario realiza una compra in-app.
+2. La tienda de aplicaciones notifica a la aplicación de la compra exitosa.
+3. El desarrollador de la aplicación llama al método de validación de recibos del SDK: `validateAndLogInAppPurchase`
+4. El SDK llama al servicio de validación de AppsFlyer.
+5. AppsFlyer valida la compra para asegurarse de que no sea fraudulenta.
+6. Tras la validación exitosa, AppsFlyer registra la compra o suscripción.
+7. Si la validación de recibos falla, el evento se muestra en el <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#blocked-inapp-events">Reporte de raw data de eventos in-app bloqueados</Anchor> (disponible para suscriptores de Protect360) y en la <Anchor target="_blank" href="/marketers/es/docs/testing-the-sdk-integration-for-marketers#view-live-events">Página de visualización de eventos en vivo</Anchor> con el parámetro `af_validated` establecido en `false`.
+8. El servicio de validación de AppsFlyer transfiere la respuesta al SDK.
+9. El SDK transfiere la respuesta de validación de recibos a la aplicación (ya sea éxito o fallo).
 
-## Activate Receipt validation
+## Activar la validación de recibos
 
-To activate Receipt validation, follow these steps:
+Para activar la validación de recibos, sigue estos pasos:
 
 1. In AppsFlyer, from the side menu, open **Settings** and under **ROI360** select **Revenue Settings**.
-2. Open the **Purchases & subscriptions** tab.
-3. Under **1 Choose Product type**, select **Receipt validation**.
-4. Click **Save and next** to proceed to set up Receipt validation.
+2. Abre la pestaña **Compras y suscripciones**.
+3. En el paso 1, **elegir tipo de producto**, selecciona **Validación de recibos**.
+4. Haz clic en **Guardar y siguiente** para proceder a configurar la validación de recibos.
 
-## Set up Receipt validation
+## Configurar la validación de recibos
 
-For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-receipt-validation">Set up receipt validation</Anchor><Anchor target="_blank" href="/marketers/docs/set-up-receipt-validation#step-3-verify-sdk-implementation">.</Anchor>
+Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-receipt-validation">Configurar la validación de recibos</Anchor><Anchor target="_blank" href="/marketers/es/docs/set-up-receipt-validation#3-verificar-la-implementación-del-sdk">.</Anchor>
 
-## In-app purchase events and parameters for Receipt validation
+## Eventos y parámetros de compra in-app para la validación de recibos
 
-All predefined events share the following properties:
+Todos los eventos predefinidos comparten las siguientes propiedades:
 
-* They are processed as S2S events.
-* They are available in the dashboards and raw data reports as organic or non-organic in-app events.
-* They can be sent via postbacks to partners.
-* They can be used in SKAN Conversion Studio.
+* Se procesan como eventos S2S.
+* Están disponibles en los dashboards y en los reportes de raw data como eventos in-app orgánicos o no orgánicos.
+* Se pueden enviar a los partners mediante postbacks.
+* Se pueden utilizar en SKAN Conversion Studio.
 
-**The events recorded for in-app purchases are:**
+**Los eventos registrados para las compras in-app son:**
 
-* `af_purchase` - Production
-* `af_purchase_sandbox_sdk` - Sandbox
+* `af_purchase` - Producción
+* `af_purchase_sandbox_sdk` - Entorno de pruebas
 
-**Subscription events:**
+**Eventos de suscripción:**
 
-* `af_ars_trial_started` - Subscription with the trial period started.
-* `af_ars_subscriptions_started` - Paid subscription (without trial period) started, production
-* `af_ars_sandbox_sdk` - Trial or paid subscription started, sandbox
+* `af_ars_trial_started` - Suscripción con el período de prueba iniciado.
+* `af_ars_subscriptions_started` - Suscripción de pago (sin período de prueba) iniciada, producción
+* `af_ars_sandbox_sdk` - Suscripción de prueba o de pago iniciada, sandbox
 
-**The event includes the following predefined parameters:**
+**El evento incluye los siguientes parámetros predefinidos:**
 
 * `af_product_id`
-* `af_transaction_id` (iOS only)
-* `af_purchase_token` (Android only)
-* `af_revenue` (for sandbox events - `af_sandbox_revenue`)
+* `af_transaction_id` (Solo para iOS)
+* `af_purchase_token` (Solo para Android)
+* `af_revenue` (para eventos de sandbox - `af_sandbox_revenue`)
 * `af_currency`
 * `af_store` (app\_store / play\_store)
-* `af_environment` (sandbox/production)
+* `af_environment` (sandbox/producción)
 * `af_validation_type` (receipt\_validation)
 
-**Additional custom parameters:**
+**Parámetros personalizados adicionales:**
 
-* Any additional custom parameters sent in the SDK call will appear in the`custom_data` field in raw data reports
+* Cualquier parámetro personalizado adicional enviado en la llamada del SDK aparecerá en el campo `custom_data` en los reportes de raw data
 
-## Switch from ROI360 store revenue to Receipt validation
+## Cambiar de ingresos de tienda de ROI360 a validación de recibos
 
-If you currently use ROI360 store revenue and want to switch to Receipt validation, follow these steps:
+Si actualmente usas ingresos de tienda de ROI360 y deseas cambiar a validación de recibos, sigue estos pasos:
 
-1. In AppsFlyer, from the side menu, open <Image alt="settings-roi.png" src="https://files.readme.io/23e5d6ac29cfd14f1c34247e6a19cdb86a364c3dbe1122e5fde43bb27902b864-42137277590289.png" width="2.02%" /> **Settings** and under **ROI360** select **Revenue Settings**.
-2. In the **Purchases & subscriptions** tab, confirm that the **Product type** is currently set to **ROI360**.
-3. Click <Image alt="Untitled 3.png" src="https://files.readme.io/5f58109e6a7f7d2d3958a05e3da1aaa99d5d104c09346240ae7d20f48047afc6-42137388748177.png" width="2.07%" />.
-4. A message appears outlining the impact of switching to Receipt validation:
-   * ROI360 features such as refund attribution, subscription renewal measurement, and net revenue calculations will be disabled.
-   * Data accuracy may decrease.
-   * The Purchase Connector is not supported in Receipt Validation.
-   * Only the `validateAndLogInAppPurchase` SDK method is supported.
-5. Review the comparison table, if needed, by clicking '**View product comparison'**.
-6. If you still want to proceed, click **Switch** to confirm the change.
-7. After switching, the **Product type** updates to **Receipt validation,** and the screen reflects the simplified configuration.
-8. You’ll need to revalidate the following:
-   * **SDK implementation** for the validateAndLog method
+1. En AppsFlyer, en el menú lateral, abre <Image alt="" src="https://files.readme.io/23e5d6ac29cfd14f1c34247e6a19cdb86a364c3dbe1122e5fde43bb27902b864-42137277590289.png" width="2.02%" />**Configuración**altsettings-roi.pngalt y, en **ROI360**, selecciona **Configuración de ingresos**.
+2. En la pestaña **Compras y suscripciones**, confirma que el **Tipo de producto** esté actualmente configurado en **ROI360**.
+3. Haz clic en <Image alt="Untitled 3.png" src="https://files.readme.io/c27f864253e6749f883047b4529ad292153500db5aebd452568a6aa04407472e-34623601366033.png" width="2.07%" />.
+4. Aparece un mensaje que describe el impacto de cambiar a la validación de recibos:
+   * Las características de ROI360, como la atribución de reembolsos, la medición de renovación de suscripciones y los cálculos de ingresos netos, estarán deshabilitadas.
+   * La precisión de los datos puede disminuir.
+   * El conector de compras no es compatible con la validación de recibos.
+   * Solo se admite el método SDK `validateAndLogInAppPurchase`.
+5. Revisa la tabla de comparación, si es necesario, haciendo clic en '**Ver comparación de productos'**.
+6. Si aún deseas continuar, haz clic en **Cambiar** para confirmar el cambio.
+7. Después de cambiar, el **Tipo de producto** se actualiza a **Validación de recibos,** y la pantalla refleja la configuración simplificada.
+8. Necesitarás volver a validar lo siguiente:
+   * **Implementación del SDK** para el método validateAndLog
 
-## Traits and limitations
+## Características y limitaciones
 
-| Trait | Remark |
+| Caducado | Nota |
 | --- | --- |
-| Supported stores | • Play Store  <br />• App Store  <br />• For any other (third-party) stores, you must manually send in-app purchase events. |
-| iOS sandbox apps | For iOS sandbox apps, meaning apps that are not live in the App Store, 'Validate the Key' will always display invalid status |
+| Tiendas compatibles | • Play Store  <br />• App Store  <br />• Para cualquier otra tienda (third-party), debes enviar manualmente los eventos de compra in-app. |
+| Aplicaciones sandbox de iOS | Para aplicaciones de sandbox de iOS, es decir, aplicaciones que no están en vivo en la App Store, 'Validar la clave' siempre mostrará un estado inválido |
 
-<div data-zendesk-anchors="h_01KD0PBEK0M2NEZJ95QXBA1H3W=how-does-receipt-validation-work enable-receipt-validation=activate-receipt-validation h_01KD0PBEK0BZNW8YP02EW0DHH4=activate-receipt-validation h_01KD0PBEK1GZSJQPTP0P2TJMNJ=set-up-receipt-validation inapp-purchase-events-and-parameters-for-receipt-validation=in-app-purchase-events-and-parameters-for-receipt-validation h_01KD0PBEK1DVMRXR64EMSWT75W=in-app-purchase-events-and-parameters-for-receipt-validation h_01KD0PBEK1AKE1XM2XVTCNTJ68=switch-from-roi360-store-revenue-to-receipt-validation h_01KD0PBEK1HQKTGM7JP2KYPJAR=traits-and-limitations" />
+<div data-zendesk-anchors="how-does-receipt-validation-work=c%C3%B3mo-funciona-la-validaci%C3%B3n-de-recibos h_01KD0PBEK0M2NEZJ95QXBA1H3W=c%C3%B3mo-funciona-la-validaci%C3%B3n-de-recibos enable-receipt-validation=activar-la-validaci%C3%B3n-de-recibos h_01KD0PBEK0BZNW8YP02EW0DHH4=activar-la-validaci%C3%B3n-de-recibos set-up-receipt-validation=configurar-la-validaci%C3%B3n-de-recibos h_01KD0PBEK1GZSJQPTP0P2TJMNJ=configurar-la-validaci%C3%B3n-de-recibos inapp-purchase-events-and-parameters-for-receipt-validation=eventos-y-par%C3%A1metros-de-compra-in-app-para-la-validaci%C3%B3n-de-recibos h_01KD0PBEK1DVMRXR64EMSWT75W=eventos-y-par%C3%A1metros-de-compra-in-app-para-la-validaci%C3%B3n-de-recibos switch-from-roi360-store-revenue-to-receipt-validation=cambiar-de-ingresos-de-tienda-de-roi360-a-validaci%C3%B3n-de-recibos h_01KD0PBEK1AKE1XM2XVTCNTJ68=cambiar-de-ingresos-de-tienda-de-roi360-a-validaci%C3%B3n-de-recibos traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01KD0PBEK1HQKTGM7JP2KYPJAR=caracter%C3%ADsticas-y-limitaciones" />

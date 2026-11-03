@@ -1,5 +1,5 @@
 ---
-title: Steam integration with AppsFlyer
+title: Integración de Steam con AppsFlyer
 metadata:
   keywords:
     - CTV
@@ -13,50 +13,49 @@ x-zendesk:
     - Marketers
     - PC & Console Attribution
   created_at: '2022-12-08T10:02:09Z'
-  edited_at: '2026-10-05T06:59:19Z'
+  edited_at: '2026-10-07T00:11:36Z'
   id: 11241130508433
-  locale: en-us
+  locale: es
   section: Promoting Desktop apps
   section_id: 15329004312593
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/11241130508433-Steam-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/11241130508433
 ---
-> **At a glance:** Integrate your Steam game/app with AppsFlyer to receive attribution and event data for your Steam campaigns. The Steam integration supports attribution and in-app event recording for Steam apps on a user's Steam device.
+> **En resumen:** Integra tu juego o aplicación de Steam con AppsFlyer para recibir datos de atribución y eventos para tus campañas de Steam. La integración con Steam admite la atribución y la grabación de eventos in-app para las aplicaciones de Steam en el dispositivo Steam de un usuario.
 
-## About Steam attribution
+## Acerca de la atribución en Steam
 
-Steam runs across Windows and Mac devices, Steam Deck, and other Steam OS devices.
+Steam funciona en dispositivos Windows y Mac, Steam Deck y otros dispositivos Steam OS.
 
-Apps running on Steam can integrate with AppsFlyer via S2S API or SDK to receive attribution data and performance measurements about which sources and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+Las aplicaciones que se ejecutan en Steam pueden integrarse con AppsFlyer a través de la API o el SDK de S2S para recibir datos de atribución y mediciones de rendimiento sobre qué fuentes y campañas generan eventos de apertura de aplicaciones y eventos in-app. Los marketers se basan en estos insights para medir y optimizar las actividades de marketing.
 
-### Example attribution flow
+### Ejemplo de flujo de atribución
 
-The following is an example flow that highlights the most important steps in a user journey from ad engagement to attribution. It includes the AppsFlyer-recommended cross-platform landing page. **Note**: While we recommend using the cross-platform landing page, you can also use direct attribution links
+El siguiente es un flujo de ejemplo que destaca los pasos más importantes del viaje de un usuario, desde la interacción con el anuncio hasta la atribución. Incluye la landing page multiplataforma recomendada por AppsFlyer. **Nota**: Si bien recomendamos usar la landing page multiplataforma, también puedes usar enlaces de atribución directa
 
 ![Steam_user_journey.jpg](https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg)
 
-1. Marketing touchpoint: Customers interact with your brand through online or offline marketing touchpoints. These can include, email and newsletters, social media, mobile web, and more.
-2. Game landing page: A game landing page directs customers to your Steam game page. This step is important for collecting UTM and other URL parameters to attribute customers from the click/install to the original media sources or to your owned media sources.  
-   The landing page is also useful because it provides links to the various platforms your game supports. For example, you can have links to your Xbox, Microsoft store, and Steam page on your landing page.  
+1. Punto de contacto de marketing: Los clientes interactúan con tu marca a través de puntos de contacto de marketing online u offline. Estos pueden incluir el correo electrónico y los boletines informativos, las redes sociales, la web móvil y más.
+2. Landing page del juego: La landing page de un juego dirige a los clientes a tu página de juego de Steam. Este paso es importante para recopilar los parámetros UTM y otros parámetros de URL a fin de atribuir a los clientes que han hecho clic o han hecho la instalación a las fuentes multimedia originales o a las fuentes multimedia de tu propiedad.  
+   La landing page también es útil porque proporciona enlaces a las distintas plataformas compatibles con el juego. Por ejemplo, puedes incluir enlaces de Xbox, Microsoft Store y Steam.  
    ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
-3. <span id="marketing-touchpoint"></span>Steam app page: This is your Steam storefront page that hosts your Steam app for customers to download.
-4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
+3. <span id="marketing-touchpoint"></span>Página de la aplicación Steam: Esta es la página principal de tu tienda de Steam que aloja tu aplicación Steam para que los clientes la descarguen.
+4. Instalación del juego: el usuario instala el juego, lo que activa la atribución y el registro de eventos in-app y sesiones.
 
-## Integration procedures
+## Procedimientos de integración
 
-The following table lists the tasks required to integrate your Steam app with AppsFlyer.
+En la siguiente tabla se enumeran las tareas necesarias para integrar tu aplicación Steam con AppsFlyer.
 
 <Table>
   <thead>
     <tr>
       <th>
-        Task
+        Tarea
       </th>
       <th>
-        Actions
+        Acciones
       </th>
       <th>
-        Who's involved
+        ¿Quiénes están involucrados?
       </th>
     </tr>
   </thead>
@@ -64,127 +63,127 @@ The following table lists the tasks required to integrate your Steam app with Ap
   <tbody>
     <tr>
       <td>
-        App setup
+        Configuración de la aplicación
       </td>
       <td>
-        * <Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Create an AppsFlyer account</Anchor>
-        * <Anchor target="_blank" href="/marketers/docs/user-management">Add account users with appropriate permissions</Anchor>
-        * <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">Add your Steam app to AppsFlyer</Anchor>
+        * <Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Crea una cuenta de AppsFlyer.</Anchor>
+        * <Anchor target="_blank" href="/marketers/es/docs/user-management">Añadir usuarios de cuenta con los permisos adecuados</Anchor>
+        * <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">Añade tu aplicación de Steam a AppsFlyer</Anchor>
       </td>
       <td>
-        Marketer
-      </td>
-    </tr>
-    <tr>
-      <td>
-        SDK integration with your app (via S2S or SDK)
-      </td>
-      <td>
-        There are two methods of integration you can use: S2S and SDK.
-
-        For the S2S method, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview">integrate the AppsFlyer API</Anchor> into your app with commands to report the following events to AppsFlyer.
-
-        * First opens
-        * In-app events
-        * Sessions
-
-        **Note**:
-
-        * First app opens must be reported before in-app events and sessions.
-        * For the `platform` parameter, select `steam`.
-        * For the `device_ids` parameter, select the type `custom` or `steamid`.
-          * The `custom` or `steamid` for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id">first opens</Anchor> should match your <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id">in-app events</Anchor>, and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_session-app-platform-app-id">sessions</Anchor> ID.
-        * Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer.
-        * To report owned media engagements, integrate the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">impression engagement API.</Anchor>
-
-        For the SDK method, there are three versions: native <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/steam-vanilla">C++</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unreal-steam">Unreal</Anchor>, and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unity-steam">Unity</Anchor>.
-
-        **Note**:
-
-        If you have an existing user base and therefore want the first session to be considered a session and not an install, the developer can use the method `skipFirst=true`.
-      </td>
-      <td>
-        App developer
+        marketer
       </td>
     </tr>
     <tr>
       <td>
-        Cross-platform landing page setup
+        Integración de SDK con tu aplicación (a través de S2S o SDK)
       </td>
       <td>
-        **Recommended**: A cross-platform landing page running the AppsFlyer Smart Script lets you perform web-to-app attribution. It's most recommended when your campaign promotes an app that's also available on other platforms, like Epic and Native PC.
+        Hay dos métodos de integración que puedes utilizar: S2S y SDK.
 
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Learn about cross-platform landing pages</Anchor>
+        Para el método S2S, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview">integra la API de AppsFlyer</Anchor> en tu aplicación con comandos para reportar los siguientes eventos a AppsFlyer.
 
-        <Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Learn how to set up a cross-platform landing page</Anchor>
+        * Primero abre
+        * Eventos dentro de la app
+        * Sesiones
 
-        **Note**:
+        **Nota**:
 
-        For Steam, the following parameters are required:
+        * Las primeras aperturas de aplicaciones deben informarse antes de las sesiones y eventos in-app.
+        * Para el parámetro `platform`, selecciona `steam`.
+        * Para el parámetro `device_ids`, selecciona el tipo `custom` o `steamid`.
+          * El `custom` o `steamid` for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id">primeras aperturas</Anchor> debe coincidir con el ID de tus <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id">eventos in-app</Anchor>, y con el ID de tus <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_session-app-platform-app-id">sesiones</Anchor> ID.
+        * Envía eventos usando la API. Dile a tu desarollador qué eventos enviar. Verifica que cuando configuras la API, configuras y asignas los eventos para enviar a AppsFlyer.
+        * Para reportar engagements de medios propios, integra la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">API de engagement de impresiones.</Anchor>
 
-        * **platform**: steam
-        * **steam\_app\_id**: The ID of the app page.
+        Para el método SDK, hay tres versiones: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/steam-vanilla">C++</Anchor> nativo, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unreal-steam">Unreal</Anchor>, y <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unity-steam">Unity</Anchor>.
 
-          You can find your unique app ID by copying it from the URL bar or by going to <Anchor target="_blank" href="https://steamdb.info/">https://steamdb.info/</Anchor> and searching for your game. For example,
+        **Nota**:
+
+        Si tienes una base de usuarios existente y, por lo tanto, deseas que la primera sesión se considere una sesión y no una instalación, el desarrollador puede utilizar el método `skipFirst=true`.
+      </td>
+      <td>
+        Desarrolladores de aplicaciones
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Configuración de la landing page multiplataforma
+      </td>
+      <td>
+        **Recomendado**: Una landing page multiplataforma que ejecuta AppsFlyer Smart Script te permite realizar atribución web-to-app. Es más recomendable cuando tu campaña promociona una aplicación que también está disponible en otras plataformas, como Epic y Native PC.
+
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Obtén más información sobre las landing page multiplataforma</Anchor>
+
+        <Anchor target="_blank" href="/marketers/es/docs/cross-platform-landing-pages-with-smart-script">Aprende a configurar una landing page</Anchor>
+
+        **Nota**:
+
+        Para Steam, se requieren los siguientes parámetros:
+
+        * **plataforma**: steam
+        * **steam\_app\_id**: El ID de la página de la aplicación.
+
+          Puedes encontrar tu ID de aplicación único copiándolo de la barra de URL o yendo a <Anchor target="_blank" href="https://steamdb.info/">https://steamdb.info/</Anchor> y buscando tu juego. Por ejemplo,
 
           ```http
           https://store.steampowered.com/app/12345678/
           ```
 
-          where **12345678** is your unique app ID.
-        * **media\_source**
+          donde **12345678** es tu ID de aplicación único.
+        * **fuente\_de\_medios**
 
-        The following parameters are not required but recommended:
+        Los siguientes parámetros no son obligatorios pero sí recomendados:
 
-        * **campaign**
-        * **ad**
+        * **campaña única**
+        * **anuncio**
         * **ad\_set**
-        * **storefront\_redirect\_url**: The full URL of the Steam storefront for your app including your **steam\_app\_id**. For example, `https://store.steampowered.com/app/12345678/`
+        * **storefront\_redirect\_url**: la URL completa de la tienda de Steam de tu aplicación, incluido tu **steam\_app\_id**. Por ejemplo, `https://store.steampowered.com/app/12345678/`
       </td>
       <td>
-        Marketer (may require developer assistance)
+        Marketer (puede requerir la asistencia del desarrollador)
       </td>
     </tr>
     <tr>
       <td>
-        Link setup
+        Configuración de enlaces
       </td>
       <td>
-        If you don't use a cross-platform landing page, you can create direct attribution links to place behind ads.
+        Si no utilizas una página de destino multiplataforma, puedes crear enlaces de atribución directa para colocarlos detrás de los anuncios.
 
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor>
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Saber más sobre cómo crear direct attribution links</Anchor>
       </td>
       <td>
-        Marketer
+        marketer
       </td>
     </tr>
     <tr>
       <td>
-        Report setup/view data
+        Configuración de reportes/ver datos
       </td>
       <td>
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor>
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Obtén más insights sobre la disponibilidad de datos en dashboards y reportes</Anchor>
       </td>
       <td>
-        Marketer/Data engineer
+        Marketer/Ingeniero de datos
       </td>
     </tr>
   </tbody>
 </Table>
 
-### Removing AppsFlyer data when uninstalling the app
+### Eliminar los datos de AppsFlyer al desinstalar la app
 
-To remove all AppsFlyer SDK data when uninstalling the app, please ask your developer to perform the steps specified [here](https://dev.appsflyer.com/hc/docs/steam-vanilla#deleting-appsflyer-data-on-uninstall).
+Para eliminar todos los datos del SDK de AppsFlyer al desinstalar la aplicación, pide a tu desarrollador que siga los pasos especificados [aquí](https://dev.appsflyer.com/hc/docs/steam-vanilla#deleting-appsflyer-data-on-uninstall).
 
-## Traits and limitations
+## Características y limitaciones
 
-| Trait | Remarks |
+| Rasgo | Comentarios |
 | --- | --- |
-| Retargeting | Not currently supported |
-| Cost data | Import cost data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file **by email** method. You can also pull data **via API** for Google, Meta, or TikTok. |
+| Reorientación | Actualmente no es compatible |
+| Datos de costos | Importa datos de costo a través de <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Importación de costos</Anchor> utilizando el método de carga de archivos **por correo electrónico**. También puedes extraer datos **a través de la API** para Google, Meta o TikTok. |
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">CTV, PC, and console platform attribution</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Atribución de plataformas CTV, PC y consolas</Anchor>
 
-<div data-zendesk-anchors="01H7Z1DJRW1KPJQ4CZ6T85ASRK=about-steam-attribution flow=example-attribution-flow 01H7Z1DJRWHB8TQC15WW4FVSHG=example-attribution-flow 01H7Z1DJRWX54DN2SNS21GPGXB=integration-procedures h_01J3349MAA4J231B6FJ74V3PTB=removing-appsflyer-data-when-uninstalling-the-app h_01HDEHMH0HF201TH4XDW691STH=traits-and-limitations h_01HDP1K6FDDEED5P2WNESST7GE=see-also" />
+<div data-zendesk-anchors="about-steam-attribution=acerca-de-la-atribuci%C3%B3n-en-steam 01H7Z1DJRW1KPJQ4CZ6T85ASRK=acerca-de-la-atribuci%C3%B3n-en-steam flow=ejemplo-de-flujo-de-atribuci%C3%B3n 01H7Z1DJRWHB8TQC15WW4FVSHG=ejemplo-de-flujo-de-atribuci%C3%B3n integration-procedures=procedimientos-de-integraci%C3%B3n 01H7Z1DJRWX54DN2SNS21GPGXB=procedimientos-de-integraci%C3%B3n removing-appsflyer-data-when-uninstalling-the-app=eliminar-los-datos-de-appsflyer-al-desinstalar-la-app h_01J3349MAA4J231B6FJ74V3PTB=eliminar-los-datos-de-appsflyer-al-desinstalar-la-app traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01HDEHMH0HF201TH4XDW691STH=caracter%C3%ADsticas-y-limitaciones h_01HDP1K6FDDEED5P2WNESST7GE=consulta-tambi%C3%A9n" />

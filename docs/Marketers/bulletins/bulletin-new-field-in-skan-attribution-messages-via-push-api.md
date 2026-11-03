@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: New field in SKAN attribution messages via Push API'
+title: >-
+  Boletín: Nuevo campo en los mensajes de atribución de SKAN a través de Push
+  API
 metadata:
   keywords:
     - Developers
@@ -15,14 +17,13 @@ x-zendesk:
     - Marketers
     - SKAdNetwork (SKAN)
   created_at: '2022-04-03T09:15:05Z'
-  edited_at: '2023-11-26T12:49:36Z'
+  edited_at: '2026-10-20T03:56:44Z'
   id: 5203225179153
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/5203225179153-Bulletin-New-field-in-SKAN-attribution-messages-via-Push-API
+  url: https://support.appsflyer.com/hc/es/articles/5203225179153
 ---
-| **Bulletin date** | April 3, 2022 |
+| **Fecha del boletín** | 3 de abril de 2022 |
 | --- | --- |
-| **What's new**<br /><br />**![Information_icon.png](https://files.readme.io/620ca798aec80f80ef2c05e25c4eefc25ec289d29ad752534dc42a5dd7f0b6cf-20445076224657.png)** | New fields available in <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data#skan-attribution-messages">SKAN attribution messages</Anchor> via Push API:<ul><li>**af\_attribution flag:** When the Single Source of Truth (SSOT) mechanism is on: If **true**, the install was attributed by both AppsFlyer and SKAN. If **false**, the install wasn't attributed by AppsFlyer. If **null**, the Conversion Value is null.</li><li>**measurement\_window**</li><li>**interval**</li></ul>See <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports#fields-available-in-decoded-event-reports">all fields available</Anchor> in decoded event reports. |
+| **¿Qué hay de nuevo?**<br /><br />**![Information_icon.png](https://files.readme.io/620ca798aec80f80ef2c05e25c4eefc25ec289d29ad752534dc42a5dd7f0b6cf-20445076224657.png)** | Nuevos campos disponibles en los <Anchor target="_blank" href="/marketers/es/docs/push-api-streaming-raw-data#skan-attribution-messages">mensajes de atribución de SKAN</Anchor> a través de la API Push:<ul><li>**Indicador af\_attribution:** Cuando el mecanismo Single Source of Truth (SSOT) está activado: si es **true**, la instalación fue atribuida tanto por AppsFlyer como por SKAN. Si es **false**, la instalación no fue atribuida por AppsFlyer. Si es **null**, el valor de conversión es nulo.</li><li>**measurement\_window**</li><li>**interval**</li></ul>Consulta <Anchor target="_blank" href="/marketers/es/docs/skan-raw-data-reports#fields-available-in-decoded-event-reports">todos los campos disponibles</Anchor> en los reportes de eventos descodificados. |

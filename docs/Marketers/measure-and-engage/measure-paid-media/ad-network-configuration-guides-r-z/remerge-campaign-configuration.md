@@ -1,5 +1,5 @@
 ---
-title: Remerge campaign configuration
+title: Configuración de la campaña de Remerge
 metadata:
   keywords:
     - Re-Targeting
@@ -16,193 +16,192 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-01-02T16:20:43Z'
-  edited_at: '2026-09-09T13:13:23Z'
+  edited_at: '2026-09-11T00:24:41Z'
   id: 115000172003
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115000172003-Remerge-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/115000172003
 ---
-> **At a glance:** Remerge, an AppsFlyer ad network integrated partner, enables app-marketers to deliver better-placed, customized advertisements. In addition to click-based mobile attribution, Remerge offers view-through mobile attribution and click-based retargeting, which can be recorded with AppsFlyer.
+> **De un vistazo:** Remerge, un partner integrado de ad network de AppsFlyer, permite a los especialistas en marketing de aplicaciones ofrecer anuncios personalizados y mejor ubicados. Además de la atribución móvil basada en clics, Remerge ofrece atribución móvil view-through y retargeting basado en clics, que puede registrarse con AppsFlyer.
 
-## Setting up Remerge
+## Configuración de Remerge
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace** .  
+   (**Para editar una integración existente:** Ve a la pestaña **Collaborate > Partner Integrations > Active integrations** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** el selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> As an ALL-Installs network, Remerge prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to Remerge.
+> Como red de TODAS las instalaciones, Remerge prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Remerge.
 
-### Install and Re-engagement attribution
+### Atribución de instalaciones y re-engagements
 
-These two toggles enable you to attribute users, who only viewed your ad, but didn’t click on it, to Remerge.
+Estos dos interruptores te permiten atribuir a Remerge a los usuarios que solo vieron tu anuncio, pero no hicieron clic en él.
 
-* Switch on ***Install view-through attribution*** to attribute new installs following impressions only, to Remerge.
-* Switch on ***Re-engagement view-through attribution*** to attribute new re-engagements of your existing users following impressions only, to Remerge.
+* Activa ***Atribución view-through de instalaciones*** para atribuir a Remerge las nuevas instalaciones posteriores solo a impresiones.
+* Activa ***Atribución view-through de re-engagement*** para atribuir a Remerge los nuevos re-engagements de tus usuarios existentes posteriores solo a impresiones.
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to Remerge following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a Remerge después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to Remerge.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Remerge.
+Selecciona **Solo eventos atribuidos a este partner** para los eventos que proceden solo de usuarios atribuidos a Remerge.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para que toda tu base de usuarios esté disponible para reportarla a Remerge.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with Remerge via postbacks.  
-If you choose to map all events (both including and excluding their revenue values) the af\_app\_opened event will NOT be sent to Remerge.  
-If you wish to send af\_app\_opened events to Remerge you must add each event manually.
+En esta sección, puedes asignar tus eventos de AppsFlyer a Remerge mediante postbacks.  
+Si eliges asignar todos los eventos (tanto con sus valores de ingresos como sin ellos), el evento af\_app\_opened NO se enviará a Remerge.  
+Si quieres enviar eventos af\_app\_opened a Remerge, debes añadir cada evento manualmente.
 
-1. Toggle on In-App Event Postbacks
-2. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-3. Click **Add Event** to add an SDK Event to the list
-4. Fill in the following parameters:
+1. Activa Postbacks de eventos in-app.
+2. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+3. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+4. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server-to-server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to Remerge for attributing Remerge's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a Remerge para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de Remerge. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with Remerge.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific Remerge campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Remerge.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña** - añádela para comparar distintas campañas en ejecución con Remerge.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios** - define nombres de conjuntos de anuncios para comparar diferentes conjuntos de anuncios dentro de campañas específicas de Remerge.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio** - define nombres de conjuntos de anuncios para comparar distintos creativos dentro de conjuntos de anuncios específicos de campañas específicas de Remerge.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** e **ID de subsitio** - configura el parámetro ID de sitio para atribuir instalaciones a publishers específicos. Si existen muchos publishers, te recomendamos que limites el número de IDs de sitio usados y utilices el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">superar las limitaciones del ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor** - utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se procesan y aparecen en el reporte de raw data, lo que los hace muy útiles para realizar agregaciones o filtrados de datos.  
+  **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros del enlace de atribución de AppsFlyer**</Anchor>.
 
-### Retargeting settings
+### Configuraciones de retargeting
 
-When enabled, AppsFlyer recognizes a link as a <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting</Anchor> attribution link, rather than a user acquisition link, by adding the `&is_retargeting=true` to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution.  
-**Attribution link parameter:** is\_retargeting.
+Cuando está habilitado, AppsFlyer reconoce un enlace como un enlace de atribución de <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">retargeting</Anchor>, en lugar de un enlace de adquisición de usuarios, al añadir `&is_retargeting=true` al enlace de registro de clics. Ten en cuenta que actualmente el retargeting solo es compatible con la atribución click-through y no con la atribución view-through.  
+**Parámetro del enlace de atribución:** is\_retargeting.
 
-The following setup below is displayed when retargeting is enabled.
+Cuando la opción de retargeting está habilitada, se muestra la siguiente configuración.
 
-1. Standard Link vs. OneLink
+1. Enlace estándar vs. OneLink
 
-Select ***standard attribution link*** option if:
+Selecciona la opción ***enlace de atribución estándar*** si:
 
-* You don't need to deep link with the URL or
-* Plan to use only <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">URI schemes</Anchor> for deep linking
+* No necesitas un enlace profundo con la URL o
+* Planea utilizar solo <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">esquemas de URI</Anchor> para Deep Linking
 
-select ***Use OneLink*** for:
+selecciona ***Use OneLink*** for:
 
-* Using a single link for both Android and iOS apps or
-* Deep linking using Universal or app links
+* Utilizar un solo enlace para aplicaciones de Android y iOS, o
+* Establecer enlaces profundos empleando enlaces universales o de aplicaciones.
 
-Note that selecting OneLink changes the click recording link from app specific to a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink URL</Anchor>.
+Ten en cuenta que, al seleccionar OneLink, el enlace de registro de clics cambia de uno específico de la aplicación a una <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">URL de OneLink</Anchor>.
 
-2. Deep Link URL
+2. URL de deep link
 
-Use this field if the link is meant to deep link users to any specific activity within your app.  
-**Attribution link parameter:** af\_dp  
-You can find more information about AppsFlyer <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking solution in this guide.</Anchor>
+Utiliza este campo si el enlace está pensado para dirigir a los usuarios mediante Deep Linking a cualquier actividad específica dentro de tu aplicación.  
+**Parámetro del enlace de atribución:** af\_dp  
+Puedes encontrar más información sobre la solución de AppsFlyer para Deep Linking <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">en esta guía.</Anchor>
 
-3. Re-engagement Window
+3. Ventana de recaptación
 
-Set the time period following the re-engagement, where the user's in-app events are attributed to the retargeting media source. You can set the value in days (1-90), hours (up to 23), or even lifetime.
+Defina el plazo posterior al re-engagement, durante el cual los eventos in-app del usuario se atribuyen a la fuente de medios de redireccionamiento. Puede establecer el valor en días (1-90), horas (hasta 23) o incluso durante toda la vida.
 
-**Attribution link parameter:** af\_reengagement\_window
+**Parámetro del enlace de atribución:** af\_reengagement\_window
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click-to-install**. Only installs (first launches) that take place within the lookback window may be attributed to Remerge.
+Este control deslizante te permite establecer el **tiempo máximo entre el clic y la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Remerge.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to Remerge to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Remerge para que se active cuando los leads hagan clic en el anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de los costos por API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de ad network</Anchor> para obtener todos los detalles sobre las dimensiones, métricas y funciones compatibles. **Nota**: los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer datos de costos coincidentes, ya sea en el Dashboard de estado de la integración de costos (e ingresos por anuncios) o en el Dashboard de la ad network individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported by Remerge.
+Remerge no es compatible con los ingresos por anuncios.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Remerge, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for Remerge, the permissions tab is active and you can grant control to Remerge.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a Remerge, tanto si el partner actúa como ad network, como agencia o incluso como ambas. Ten en cuenta que, aunque la atribución esté deshabilitada para Remerge, la pestaña de permisos está activa y puedes concederle el control a Remerge.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-### Ad network permissions
+### Permisos de ad network
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos*a** - solo a los datos de ingresos atribuidos al partner
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJRZQ2X3A955H1T76X8GF35A=setting-up-remerge h_01HJRZQ2X45PTBDQARWHDSJS1V=integration-tab h_01HJRZQ2X4PG81M9GYBGPNANGY=activate-partner h_01HJRZQ2X4THDK9AV0MFGKD5GG=note install-and-reengagement-attribution=install-and-re-engagement-attribution h_01HJRZQ2X4KQHXXJH3F4TNABC4=install-and-re-engagement-attribution h_01HJRZQ2X4TY2DT0DTTEMJYWPG=default-postbacks inapp-events-settings=in-app-events-settings h_01HJRZQ2X549ZMW6SZGHPG6853=in-app-events-settings h_01HJRZQ2X56BEBQ0FHJYCMGE4J=attribution-link-tab h_01HJRZQ2X5EE1XDFN56VEEPWKM=attribution-link-parameters h_01HJRZQ2X60JEVJYVK5X934DP4=retargeting-settings clickthrough-attribution=click-through-attribution h_01HJRZQ2X6DGP82VBKNF86S0E0=click-through-attribution h_01HJRZQ2X61NZQB1JSMSRMNTH7=click-attribution-link h_01HJRZQ2X6M83KFXR58BS4B024=cost-tab h_01HJRZQ2X6GZ51M21S5PTD3NC4=ad-revenue-tab h_01HJRZQ2X67S37CAH31KNVRQPG=permissions-tab h_01HJRZQ2X6CEX8T2A57JHBHERR=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-remerge=configuraci%C3%B3n-de-remerge h_01HJRZQ2X3A955H1T76X8GF35A=configuraci%C3%B3n-de-remerge h_01HJRZQ2X45PTBDQARWHDSJS1V=integration-tab activate-partner=activar-socio h_01HJRZQ2X4PG81M9GYBGPNANGY=activar-socio h_01HJRZQ2X4THDK9AV0MFGKD5GG=nota install-and-reengagement-attribution=atribuci%C3%B3n-de-instalaciones-y-re-engagements h_01HJRZQ2X4KQHXXJH3F4TNABC4=atribuci%C3%B3n-de-instalaciones-y-re-engagements default-postbacks=postbacks-predeterminados h_01HJRZQ2X4TY2DT0DTTEMJYWPG=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HJRZQ2X549ZMW6SZGHPG6853=configuraci%C3%B3n-de-eventos-in-app h_01HJRZQ2X56BEBQ0FHJYCMGE4J=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HJRZQ2X5EE1XDFN56VEEPWKM=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n retargeting-settings=configuraciones-de-retargeting h_01HJRZQ2X60JEVJYVK5X934DP4=configuraciones-de-retargeting clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HJRZQ2X6DGP82VBKNF86S0E0=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HJRZQ2X61NZQB1JSMSRMNTH7=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HJRZQ2X6M83KFXR58BS4B024=cost-tab h_01HJRZQ2X6GZ51M21S5PTD3NC4=ad-revenue-tab h_01HJRZQ2X67S37CAH31KNVRQPG=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HJRZQ2X6CEX8T2A57JHBHERR=permisos-de-ad-network" />

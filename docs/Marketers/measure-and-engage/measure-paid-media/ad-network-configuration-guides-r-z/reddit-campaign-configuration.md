@@ -1,5 +1,5 @@
 ---
-title: Reddit campaign configuration
+title: Configuración de la campaña de Reddit
 metadata:
   keywords:
     - integrated partner
@@ -17,162 +17,149 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2020-07-09T09:50:46Z'
-  edited_at: '2026-09-09T13:07:27Z'
+  edited_at: '2026-11-02T13:15:05Z'
   id: 360011016138
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360011016138-Reddit-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360011016138
 ---
-> **At a glance:** Reddit, an AppsFlyer ad network integrated partner, is home to 430 million highly engaged monthly users who can’t be found anywhere else.
+> **En resumen:** Reddit, un partner integrado de la red de publicidad de AppsFlyer, es el hogar de 430 millones de usuarios mensuales altamente comprometidos que no se pueden encontrar en ningún otro lugar.
 
-## Setting up Reddit
+## Configuración de Reddit
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace**.  
+   (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el conmutador **Activar partner**.   
+   **Nota:** El conmutador **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña Integración">
 
-The ***Integration Tab*** is divided into different sections:
+La ***Pestaña Integración*** se divide en diferentes secciones:
 
-#### Activate partners
+#### Activar los partners
 
-To enable the configuration, <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activate the partner</Anchor>.
+Para habilitar la configuración, <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">Activar el partner</Anchor>.
 
-#### Advanced Privacy
+#### Privacidad avanzada
 
-For iOS apps only, when **Advanced Privacy (for iOS 14.5+ and later)** is turned on, you can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#b-advanced-privacy">control what data is shared</Anchor> with Reddit via postbacks and reports.
+**Solo para aplicaciones iOS, cuando la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#b-advanced-privacy">Privacidad avanzada (para iOS 14.5+ y posteriores)</Anchor>** está activada, puedes controlar qué datos se comparten con Reddit a través de postbacks y reportes.
 
-#### Transaction ID
+#### ID de transacción
 
-For iOS apps only, when **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">share the transaction ID of SKAdNetwork postbacks</Anchor> with Reddit. By doing so, Reddit could decode your SKAdNetwork Conversion Values.
+**Solo para aplicaciones de iOS, cuando <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">Compartir el ID de transacción de SKAN</Anchor>** está encendido, estás permitiendo que AppsFlyer comparta el ID de transacción de los postbacks de SKAdNetwork con Reddit. Al hacerlo, Reddit podría decodificar sus valores de conversión de SKAdNetwork.
 
-#### General settings
+#### Configuración general
 
-**Enable view-through attribution**
+**Habilitar la atribución view-through**
 
-Activate, if you want to attribute view-through installs from Reddit. The view-through lookback slider is available in the [***Attribution link***](/docs/reddit-campaign-configuration#attribution-link-tab) tab.
+Actívalo, si deseas atribuir las instalaciones por impresiones de Reddit. El control deslizante de la ventana retrospectiva por impresiones está disponible en la pestaña del enlace de [***atribución***](/docs/reddit-campaign-configuration#attribution-link-tab) (se describe a continuación).
 
-**Advanced Matching data sharing**
+**Uso compartido de datos de coincidencia avanzada**
 
-Turn this on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Reddit, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
+Activa esta opción para compartir con Reddit los campos de coincidencia avanzada, como el correo electrónico con hash, el número de teléfono con hash, el nombre con hash y el apellido con hash, si estos campos se incluyen en la información del evento enviada a AppsFlyer. Para más información, consulta: <Anchor target="_blank" href="/marketers/es/docs/advanced-matching-data-sharing">Uso compartido de datos de Advanced Matching</Anchor>.
 
-#### Default postbacks
+#### Postbacks predeterminados
 
-Send automatic postbacks to Reddit following user installs. Select whether to send postbacks for installs attributed to:
+Envía postbacks automáticos a Reddit después de las instalaciones de los usuarios. Selecciona si deseas enviar postbacks para las instalaciones atribuidas a:
 
-* Reddit only
-* All sources, including organic
+* Solo en Reddit
+* Todas las fuentes, incluidas las orgánicas
 
-#### In-app events settings
+#### Configuración de eventos in-app
 
-In this section, you can configure in-app event postbacks that are sent to Reddit.
+En esta sección, puedes configurar los postbacks de eventos in-app que se envían a Reddit.
 
-**To configure in-app event postbacks:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Activate ***In-app event postbacks***
-2. Click ***Add event*** to add an SDK event to the list.
-3. Fill in the following data:
+1. Activar ***Postbacks de eventos in-app***
+2. Haz clic en *Agregar evento* para agregar un evento del SDK a la lista.
+3. Rellena los siguientes datos:
 
-| Parameter name | Description |
+| Nombre del parámetro | Descripción |
 | --- | --- |
-| **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK or from server-to-server events.  <br />**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
-| **Partner event identifier** | The unique name or ID of each event as defined on Reddit's side. Select the most suitable pre-defined event for your SDK event:<ul><li>rdt\_install</li><li>rdt\_signup</li><li>rdt\_app\_launch</li><li>rdt\_search</li><li>rdt\_view\_content</li><li>rdt\_add\_payment\_info</li><li>rdt\_add\_to\_cart</li><li>rdt\_purchase</li><li>rdt\_completed\_tutorial</li><li>rdt\_level\_achieved</li><li>rdt\_spend\_credits</li><li>rdt\_ad\_click</li><li>rdt\_ad\_view</li><li>rdt\_add\_to\_wishlist</li><li>rdt\_unlock\_achievement</li><li>rdt\_login</li><li>rdt\_rate</li><li>rdt\_checkout</li><li>rdt\_start\_trial</li><li>rdt\_subscribe</li><li>rdt\_onboard\_started</li><li>rdt\_onboard\_completed</li><li>rdt\_first\_time\_purchase</li></ul> |
-| **Sending option** | Select whether to send events by:<ul><li>Reddit only</li><li>all sources, including organic</li></ul> |
-| **Send event data** | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
+| **Nombre de evento SDK** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK o desde eventos de servidor a servidor.  <br />**Consejo**: si no ves el evento que quieres en la lista, actívalo en un dispositivo con una instalación no orgánica y vuelve a comprobarlo. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento, tal como se define en el lado de Reddit. Selecciona el evento predefinido más adecuado para tu evento SDK:<ul><li>rdt\_install</li><li>rdt\_signup</li><li>rdt\_app\_launch</li><li>rdt\_search</li><li>rdt\_view\_content</li><li>rdt\_add\_payment\_info</li><li>rdt\_add\_to\_cart</li><li>rdt\_purchase</li><li>rdt\_completed\_tutorial</li><li>rdt\_level\_achieved</li><li>rdt\_spend\_credits</li><li>rdt\_ad\_click</li><li>rdt\_ad\_view</li><li>rdt\_add\_to\_wishlist</li><li>rdt\_unlock\_achievement</li><li>rdt\_login</li><li>rdt\_rate</li><li>rdt\_checkout</li><li>rdt\_start\_trial</li><li>rdt\_subscribe</li><li>rdt\_onboard\_started</li><li>rdt\_onboard\_completed</li><li>rdt\_first\_time\_purchase</li></ul> |
+| **Opción de envío** | Selecciona si deseas enviar eventos de la siguiente manera:<ul><li>Solo en Reddit</li><li>todas las fuentes, incluidas las orgánicas</li></ul> |
+| **Enviar datos de eventos** | <ul><li>**Sin valores ni ingresos:** envía solo el evento en sí sin el valor del evento.</li><li>**Con valores y sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.</li><li>**Con valores e ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento).</li></ul> |
 
-4. Click ***Save***.
+4. Haz clic en ***Save*** (Guardar).
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlace de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un OneLink.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costo">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de los costos por API. Consulta <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">la tabla de integración de costos de redes de publicidad</Anchor> para obtener más información sobre las dimensiones, métricas y funciones admitidas. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el panel de control de estado de la integración de costos (e ingresos por publicidad) o en el panel de control de la red de publicidad individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de ingresos por publicidad">
 
-Ad revenue data is not supported by Reddit.
+Los datos de ingresos por publicidad no son compatibles con Reddit.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Reddit. Note that even if attribution is disabled for Reddit, the permissions tab is active and you can grant control to Reddit.
+En esta pestaña, puedes seleccionar los permisos para otorgar a Snapchat. Ten en cuenta que incluso si la atribución está deshabilitada para Reddit, la pestaña de permisos está activa y puedes otorgar el control a Reddit.
 
-#### Ad network permissions
+#### Permisos para red de publicidad
 
-In this tab, you can select the permissions to grant Reddit. Note that even if attribution is disabled for Reddit, the permissions tab is active and you can grant control to Reddit.
+En esta pestaña, puedes seleccionar los permisos para otorgar a Snapchat. Ten en cuenta que incluso si la atribución está deshabilitada para Reddit, la pestaña de permisos está activa y puedes otorgar el control a Reddit.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
 
-* <span id="01EDKYCTJGZCQ05BQ5JXR6457Y"></span>***<span id="01EDKYCTJHNYT3SRD6Q40YJKR1"></span>Allow to configure integration:*** permit the partner to set up the integration tab (except in-app event postbacks)
-* <span id="01EDKYCTJHVW0E6TD5ARMFEQQC"></span>***Allow to configure in-app event postbacks:*** permit the partner to set up in-app event postbacks mapping to itself on the integration tab
-* <span id="01EDKYCTJH6C06V91M50CXNSZS"></span>***Allow access to your retention report:*** only to the partner's own retention data
-* <span id="01EDKYCTJHY2JXJHQRQM6S1T7H"></span>***Allow access to your aggregate loyal user data:*** only to the partner's own loyal user data
-* <span id="01EDKYCTJHF1W3FPJCSSEKJ4GZ"></span>***Allow access to your aggregate in-app events data:*** only to the partner's own in-app events data
-* <span id="01EDKYCTJHVN8E1QPY3BSMC3WD"></span>***Allow access to your aggregate revenue dat*a:** only to the revenue data attributed to the partner
-* <span id="01EDKYCTJHX0T89JNPJKY71WVW"></span>***Allow spend ingestion:*** permit the partner to send ad spend data in files for this app only.
-* <span id="01EDKYCTJHWKWYJS7ZFCJ8558V"></span>***Allow access to your Protect360 dashboard:*** only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* <span id="01EDKYCTJGZCQ05BQ5JXR6457Y"></span>***<span id="01EDKYCTJHNYT3SRD6Q40YJKR1"></span>Permitir la configuración de la integración***: Permite que el partner configure la pestaña Integración (con excepción de postbacks de eventos in-app).
+* <span id="01EDKYCTJHVW0E6TD5ARMFEQQC"></span>***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* <span id="01EDKYCTJH6C06V91M50CXNSZS"></span>***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* <span id="01EDKYCTJHY2JXJHQRQM6S1T7H"></span>***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* <span id="01EDKYCTJHF1W3FPJCSSEKJ4GZ"></span>***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* <span id="01EDKYCTJHVN8E1QPY3BSMC3WD"></span>***Permitir acceso a tus datos agregados de ingreso*a:** : solo a los datos de ingresos atribuidos al partner.
+* <span id="01EDKYCTJHX0T89JNPJKY71WVW"></span>***Permitir la ingesta de gastos:*** Permitir que el partner envíe datos de inversión publicitaria en archivos solo para esta aplicación.
+* <span id="01EDKYCTJHWKWYJS7ZFCJ8558V"></span>***Permitir el acceso a tu panel de control de Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-## Raw data restrictions
+## Restricciones de raw data
 
-Starting August 30, 2025:
+A partir del 8 de septiembre de 2026: se eliminaron las restricciones anteriores y se admiten completamente todos los campos de atribución.
 
-The following restrictions apply to view-through attribution:
+Los clics e impresiones de Reddit no se incluyen en los informes de datos sin procesar.
 
-* Media source (reddit\_int) — available
-* Attributed touch time Reported as date only (dd/mm/yyyy)
-* Campaign details: Reported as restricted
-* Clicks and impressions: Not included in raw data reports
+**Recordatorio:** Los datos recibidos sobre una campaña de Reddit están sujetos a los <Anchor target="_blank" href="https://protect.checkpoint.com/v2/___https:/business.reddithelp.com/s/article/Reddit-Business-Tool-Terms___.YzJ1OnJlZGRpdDpjOmc6OGFlZGI3Y2U5MDg3ZTgxNzYxYzdjMzEzYzgwZjI3ZDI6NjowMDg5Ojg1MmViZDg4YWY2ZTg4NThjMDE2NjhkYTk2ZjZkYmZlYWI1NGY3MGEwNDk0MmE0ODQ0NTI3ZDM0ZWYwOWVlMmI6cDpUOk4#:%7E:text=These%20Reddit%20Business%20Tool%20Terms,advertising%20purposes%20or%20to%20otherwise">Términos de las herramientas para empresas de Reddit</Anchor> y, entre otras restricciones, incluyen la prohibición de usar datos de Reddit para crear perfiles de cualquier usuario.
 
-The following restrictions apply to click-through attribution:
-
-* Media source (reddit\_int) — available
-* Attributed touch time Reported as date only (dd/mm/yyyy)
-* Campaign details — available
-* Clicks and impressions: Not included in raw data reports
-
-**Reminder:** Data received about a Reddit campaign is subject to <Anchor target="_blank" href="https://protect.checkpoint.com/v2/___https:/business.reddithelp.com/s/article/Reddit-Business-Tool-Terms___.YzJ1OnJlZGRpdDpjOmc6OGFlZGI3Y2U5MDg3ZTgxNzYxYzdjMzEzYzgwZjI3ZDI6NjowMDg5Ojg1MmViZDg4YWY2ZTg4NThjMDE2NjhkYTk2ZjZkYmZlYWI1NGY3MGEwNDk0MmE0ODQ0NTI3ZDM0ZWYwOWVlMmI6cDpUOk4#:%7E:text=These%20Reddit%20Business%20Tool%20Terms,advertising%20purposes%20or%20to%20otherwise">Reddit Business Tool Terms</Anchor>, and includes, among other restrictions, a prohibition on using Reddit data to create profiles of any users.
-
-<div data-zendesk-anchors="01EDKYCH117BTY81G0Z2NF181F=setting-up-reddit 01EDKYCH11YM04HDJTAWP4XHWH=integration-tab 01EDKYCH11E2X1VSSG2HKKP6VS=activate-partners h_01HJRZF42CYME3EZ37470339CF=advanced-privacy h_01HJRZF42CN7VT8SKNX5E638R0=transaction-id 01EDKYCH11WFJ09XBND6RQT0XA=general-settings 01EDKYCH11KZT2BN64AGETTMD6=default-postbacks inapp-events-settings=in-app-events-settings 01EDKYCH11QAYSV2GMYD4R6DJJ=in-app-events-settings h_01HJRZF42DHDDHPCE4NYA7QKV2=attribution-link-tab h_01HJRZF42DYG18DTKSV4G8NHV4=cost-tab 01EDKYCH124QTAFK6VQ3ARHCTM=ad-revenue-tab 01EDKYCH12RY4P6DY3QSWG1A18=permissions-tab 01EDKYCH12FXE1WASY5YQF80CV=ad-network-permissions 01JAQ0TCR54Q03RQWPNT5PJGPN=raw-data-restrictions" />
+<div data-zendesk-anchors="setting-up-reddit=configuraci%C3%B3n-de-reddit 01EDKYCH117BTY81G0Z2NF181F=configuraci%C3%B3n-de-reddit 01EDKYCH11YM04HDJTAWP4XHWH=integration-tab activate-partners=activar-los-partners 01EDKYCH11E2X1VSSG2HKKP6VS=activar-los-partners advanced-privacy=privacidad-avanzada h_01HJRZF42CYME3EZ37470339CF=privacidad-avanzada transaction-id=id-de-transacci%C3%B3n h_01HJRZF42CN7VT8SKNX5E638R0=id-de-transacci%C3%B3n general-settings=configuraci%C3%B3n-general 01EDKYCH11WFJ09XBND6RQT0XA=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados 01EDKYCH11KZT2BN64AGETTMD6=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app 01EDKYCH11QAYSV2GMYD4R6DJJ=configuraci%C3%B3n-de-eventos-in-app h_01HJRZF42DHDDHPCE4NYA7QKV2=attribution-link-tab h_01HJRZF42DYG18DTKSV4G8NHV4=cost-tab 01EDKYCH124QTAFK6VQ3ARHCTM=ad-revenue-tab 01EDKYCH12RY4P6DY3QSWG1A18=permissions-tab ad-network-permissions=permisos-para-red-de-publicidad 01EDKYCH12FXE1WASY5YQF80CV=permisos-para-red-de-publicidad raw-data-restrictions=restricciones-de-raw-data 01JAQ0TCR54Q03RQWPNT5PJGPN=restricciones-de-raw-data" />

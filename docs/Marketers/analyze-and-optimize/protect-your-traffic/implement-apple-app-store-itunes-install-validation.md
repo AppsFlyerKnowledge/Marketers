@@ -1,5 +1,5 @@
 ---
-title: Implement Apple App Store (itunes) install validation
+title: Implementar la validación de la instalación de Apple App Store (iTunes)
 metadata:
   keywords:
     - Validation
@@ -19,31 +19,30 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2017-07-02T08:36:31Z'
-  edited_at: '2025-06-03T07:57:06Z'
+  edited_at: '2026-08-12T11:54:50Z'
   id: 115003285626
-  locale: en-us
+  locale: es
   section: Protect your traffic
   section_id: 6551015912465
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115003285626-Implement-Apple-App-Store-itunes-install-validation
+  url: https://support.appsflyer.com/hc/es/articles/115003285626
 ---
-> **At a glance:** Prevent attribution of fraudulent activities by using the Apple install validation service for any iOS install (both organic and non-organic).
+> **De un vistazo:** Evita la atribución de actividades fraudulentas usando el servicio de validación de instalación de Apple para cualquier instalación de iOS (tanto orgánica como no orgánica).
 
-## Receipt validation flow
+## Flujo de validación de recibos
 
-The receipt validation flow is as follows:
+El flujo de validación de recibos es el siguiente:
 
-1. The AppsFlyer SDK gathers the Apple install receipt data and sends it with the launch message to the AppsFlyer servers.
-2. The AppsFlyer servers validate this receipt data via the Apple install validation service.
-3. If the Apple install validation service responds with error codes indicating that the install is invalid:
-   * The install is rejected and does not appear in our dashboard
-   * The ad network does not receive a postback or API call for the invalidated install
-   * The install and all the corresponding in-app events are logged in the Protect360 Raw Data Reports: Installs and Blocked in-app events.
+1. El SDK de AppsFlyer recopila los datos del recibo de instalación de Apple y los envía con el mensaje de inicio a los servidores de AppsFlyer.
+2. Los servidores de AppsFlyer validan estos datos del recibo mediante el servicio de validación de instalación de Apple.
+3. Si el servicio de validación de instalación de Apple responde con códigos de error que indican que la instalación no es válida:
+   * La instalación se rechaza y no aparece en nuestro Dashboard
+   * La ad network no recibe ningún postback ni ninguna llamada a la API para la instalación invalidada
+   * La instalación y todos los eventos in-app correspondientes se registran en los Reportes de raw data de Protect360: Installs y Blocked in-app events.
 
-> 📘 **Notes**
+> 📘 **Notas**
 >
-> * The AppsFlyer iOS SDK version must be 6.9.2+
-> * iOS devices with iOS version 7+ are supported for Install validation.
-> * There are cases where Apple does not provide install receipt data and as such, AppsFlyer considers this a valid install in terms of app store install validation. However, Protect360 can block this install due to other fraud reasons.
+> * La versión del SDK de iOS de AppsFlyer debe ser 6.9.2+
+> * Dispositivos iOS con iOS versión 7+ son compatibles con la validación de la instalación.
+> * Hay casos en los que Apple no proporciona datos del recibo de instalación y, por tanto, AppsFlyer considera que se trata de una instalación válida en términos de la Validación de la instalación de la tienda de aplicaciones. Sin embargo, Protect360 puede bloquear esta instalación por otros motivos de fraude.
 
-<div data-zendesk-anchors="h_01JR7ST09GNZ2NTMP8D2YQ1DCH=receipt-validation-flow h_01JR7ST09G5QFHFTWK98NCJE97=notes" />
+<div data-zendesk-anchors="receipt-validation-flow=flujo-de-validaci%C3%B3n-de-recibos h_01JR7ST09GNZ2NTMP8D2YQ1DCH=flujo-de-validaci%C3%B3n-de-recibos h_01JR7ST09G5QFHFTWK98NCJE97=notas" />

@@ -1,5 +1,5 @@
 ---
-title: ROI360 cost aggregation overview
+title: 'ROI360: descripción general de la agregación de costos'
 metadata:
   keywords:
     - Advertisers
@@ -17,230 +17,229 @@ x-zendesk:
     - Agencies
     - ROI360
   created_at: '2015-12-24T10:45:16Z'
-  edited_at: '2026-10-05T06:57:44Z'
+  edited_at: '2026-10-07T00:01:34Z'
   id: 207040526
-  locale: en-us
+  locale: es
   section: Cost aggregation
   section_id: 6551029483281
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207040526-ROI360-cost-aggregation-overview
+  url: https://support.appsflyer.com/hc/es/articles/207040526
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Learn about methods for advertisers to aggregate and view marketing cost data.
+> **En resumen:** Descubre los métodos que utilizan los anunciantes para agregar y visualizar los datos de costos de marketing.
 
-## Cost aggregation
+## Agregación de costos
 
-ROI360 does the following:
+ROI360 hace lo siguiente:
 
-* Provides aggregate advertising cost data and cost-related lifetime value (LTV) performance metrics. These are available via dashboards and performance reports. The cost-related metrics available include return on investment (ROI), return on ad spend (ROAS), clicks, impressions, campaign ROI, and average effective cost per install (eCPI) over time.
-* Covers advertising costs across all platforms, including mobile apps, web browsers, connected TV (CTV), PCs, and consoles.
-* Supports different cost models used by the media source, for example, cost per install (CPI), cost per action (CPA), cost per click (CPC), and cost per mille (CPM).
-* Records advertising cost by API, Cost Import (CSV file upload), and <Anchor target="_blank" href="/marketers/docs/view-aggregated-cost-data-for-attribution-links">cost on the attribution link</Anchor>.
-* Enables agencies to access ROI360 cost data for advertisers with an ROI360 subscription.
+* Proporciona datos agregados de costo publicitario y métricas de rendimiento del valor de por vida (LTV) relacionadas con el costo. Estos datos están disponibles en los dashboards y en los reportes de rendimiento. Las métricas de costos disponibles incluyen el retorno de la inversión (ROI), el retorno del gasto publicitario (ROAS), clics, impresiones, ROI de la campaña y el costo efectivo promedio por instalación (eCPI) a lo largo del tiempo.
+* Cubre los costos publicitarios en todas las plataformas, incluidas aplicaciones móviles, navegadores web, TV conectada (CTV), PC y consolas.
+* Es compatible con diferentes modelos de costos utilizados por la fuente de medios, por ejemplo, costo por instalación (CPI), costo por acción (CPA), costo por clic (CPC) y costo por mil (CPM).
+* Registra el costo publicitario a través de API, la Importación de Costos (subida de archivos CSV) y <Anchor target="_blank" href="/marketers/es/docs/view-aggregated-cost-data-for-attribution-links">el costo en el enlace de atribución</Anchor>.
+* Permite a las agencias acceder a los datos de costo de ROI360 para anunciantes con una suscripción a ROI360.
 
-The following data is available to advertisers without an ROI360 subscription:
+Los siguientes datos están disponibles para los anunciantes sin una suscripción a ROI360:
 
-* <Anchor target="_blank" href="/marketers/docs/view-aggregated-cost-data-for-attribution-links">Cost data on the attribution link</Anchor>
-* Self-reporting network (SRN) clicks and impressions data, which you configure in the **Cost** tab of the SRN integrated partner
+* <Anchor target="_blank" href="/marketers/es/docs/view-aggregated-cost-data-for-attribution-links">Datos de costo en el enlace de atribución</Anchor>
+* Datos de clics e impresiones de redes de autorreporte (SRN), que configuras en la pestaña **Costo** del partner integrado de SRN
 
-## Principles of cost data aggregation
+## Principios de agregación de datos de costos
 
-This section describes the main principles of aggregating campaign cost data.
+Esta sección describe los conceptos clave de la agregación de datos de costos de campañas
 
 <div id="cost-aggregation-methods" />
 
-<Accordion title="Cost aggregation methods">
+<Accordion title="Métodos de agregación de costos">
 
-AppsFlyer obtains cost data from media sources using one or more methods. If a media source reports cost through more than one method, then the [cost prioritization mechanism](#cost-prioritization-mechanism) determines which data AppsFlyer uses. This prevents cost data from being inflated.
+AppsFlyer obtiene datos de costo de las fuentes de medios mediante uno o más métodos. Si una fuente de medios reporta costos mediante más de un método, el [mecanismo de priorización de costos](#cost-prioritization-mechanism) determina qué datos utiliza AppsFlyer. Esto evita que los datos de costo se inflen.
 
-After AppsFlyer processes the data, it shows in UTC time zone (default) or according to your <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">app-specific time zone</Anchor> settings.
+Después de que AppsFlyer procesa los datos, se muestran en la zona horaria UTC (por defecto) o según la configuración de tu <Anchor target="_blank" href="/marketers/es/docs/changing-app-time-zone-settings">zona horaria específica de la aplicación</Anchor>.
 
-<table><thead><tr><th>Cost aggregation method</th><th>Cost models supported</th><th>Data granularity</th><th>Data freshness</th><th>Remarks</th></tr></thead><tbody><tr><td><a href="./set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api" target="_blank">API</a>\*</td><td>All</td><td>Level depends on the integration</td><td><a href="./about-data-freshness-and-timezone-support#intraday-during-the-day" target="_blank">Intraday</a></td><td>Data might change after the cost event because AppsFlyer tries to retrieve data up to 7 days back (depending on the media source). This lets AppsFlyer account for retroactive changes made by the media source.</td></tr><tr><td><a href="./import-cost-data" target="_blank">Cost Import (file upload)</a></td><td>All</td><td>Level depends on the file uploaded</td><td>Up to 4 hours after import</td><td>You can revert the reported cost and submit corrected data for up to 90 days.</td></tr><tr><td><a href="./view-aggregated-cost-data-for-attribution-links" target="_blank">Cost on the attribution link</a></td><td>CPI</td><td>User-level</td><td><p>Minimum: real time</p><p>Maximum: Up to 4 hours after the link is clicked</p></td><td>No change possible</td></tr><tr><td colspan="5">\* API integrations between media sources and AppsFlyer are by either Cost API or InCost API (never both). The API used and the data granularity provided are media source-dependent.</td></tr></tbody></table>
+<table><thead><tr><th>Método de agregación de costos</th><th>Modelos de costos compatibles</th><th>Granularidad de datos</th><th>Actualización de datos</th><th>Observaciones</th></tr></thead><tbody><tr><td> <a href="./set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api" target="_blank">API</a>\*</td><td>Todas</td><td>El nivel depende de la integración</td><td><a href="./about-data-freshness-and-timezone-support#intraday-during-the-day" target="_blank">Intradía</a></td><td>Los datos pueden cambiar después del evento de costo porque AppsFlyer intenta recuperar datos de hasta 7 días atrás (dependiendo de la fuente de medios). Esto permite a AppsFlyer tener en cuenta los cambios retroactivos realizados por la fuente de medios.</td></tr><tr><td><a href="./import-cost-data" target="_blank">Importación de costos (subida de archivos)</a></td><td>Todas</td><td>El nivel depende del archivo subido</td><td>Hasta 4 horas después de la importación</td><td>Puedes revertir el costo reportado y enviar datos corregidos durante un máximo de 90 días.</td></tr><tr><td><a href="./view-aggregated-cost-data-for-attribution-links" target="_blank">Costo en el enlace de atribución</a></td><td>CPI</td><td>Nivel de usuario</td><td><p>Mínimo: tiempo real</p><p>Máximo: Hasta 4 horas después de que se haga clic en el enlace</p></td><td>No es posible realizar cambios</td></tr><tr><td colspan="5">\* Las integraciones de API entre fuentes de medios y AppsFlyer se realizan a través de Cost API o InCost API (nunca ambas). La API utilizada y la granularidad de los datos proporcionados dependen de la fuente de medios.</td></tr></tbody></table>
 
 </Accordion>
 
 <div id="cost-data-availability-and-reports" />
 
-<Accordion title="Cost data availability and reports">
+<Accordion title="Disponibilidad de datos de costos y reportes">
 
-The table at the end of this section indicates where cost data is available.
+La tabla al final de esta sección indica dónde están disponibles los datos de costo.
 
-For the purposes of understanding the table, the following explanations apply, unless otherwise indicated in the table remarks:
+Para entender la tabla, se aplican las siguientes explicaciones, a menos que se indique lo contrario en las observaciones de la tabla:
 
-#### Cost in the UA view
+#### Costos en la vista UA
 
-AppsFlyer classifies campaign cost data as user acquisition (UA) based on matching rules that vary by media source, as shown below.
+AppsFlyer clasifica los datos de costo de la campaña como adquisición de usuarios (UA) según reglas de correspondencia que varían según la fuente de medios, como se muestra a continuación.
 
-| Media sources | Matching rule |
+| Fuentes de medios | Regla de correspondencia |
 | --- | --- |
-| Google Ads, DV360, Facebook, TikTok, Apple Search Ads, and Aura | AppsFlyer classifies cost as UA if it records at least one install, click, or impression within ±10 days of the install date (the date the media source reports the cost). |
-| All other media sources | AppsFlyer classifies cost as UA if it records at least one install, click, or impression on the media source's own processing date. No ±10-day window applies. |
+| Google Ads, DV360, Facebook, TikTok, Apple Search Ads y Aura | AppsFlyer clasifica el costo como UA si registra al menos una instalación, un clic o una impresión dentro de un margen de ±10 días desde la fecha de instalación (la fecha en que la fuente de medios reporta el costo). |
+| Todas las demás fuentes de medios | AppsFlyer clasifica el costo como UA si registra al menos una instalación, un clic o una impresión en la propia fecha de procesamiento de la fuente de medios. No se aplica ninguna ventana de ±10 días. |
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> This applies to both rows. AppsFlyer bases matches on the media source, campaign ID, and agency.
+> Esto se aplica a ambas filas. AppsFlyer basa las correspondencias en la fuente de medios, el ID de campaña y la agencia.
 
-#### Cost in the Unified view
+#### Costos en la vista unificada
 
-The Unified view includes cost data for all campaigns of the selected app, regardless of whether installs, clicks, or impressions exist within ±10 days of the cost reporting date (install date).
+La vista unificada incluye datos de costos de todas las campañas de la app seleccionada, independientemente de si existen instalaciones, clics o impresiones dentro de ±10 días de la fecha en la que se reporta el costo (fecha de instalación).
 
-#### Example
+#### Ejemplo
 
-The following examples show how the ±10-day window affects where cost appears:
+Los siguientes ejemplos muestran cómo la ventana de ±10 días afecta a dónde aparece el costo:
 
-* If a media source that uses the ±10-day window reports the cost for campaign X on March 15, and campaign X has at least one click, install, or impression between March 5 and March 25, the cost for March 15 appears in UA and in Unified.
-  * If no activity exists in that time window, the cost for March 15 appears **only in Unified**. For media sources that match by processing date only, the same rule applies to March 15 itself, with no ±10-day window.
+* Si una fuente de medios que usa la ventana de ±10 días reporta el costo de la campaña X el 15 de marzo, y la campaña X tiene al menos un clic, una instalación o una impresión entre el 5 y el 25 de marzo, el costo del 15 de marzo aparece en UA y en Unified.
+  * Si no existe actividad dentro de esa ventana de tiempo, el costo del 15 de marzo aparece **solo en Unified**. En las fuentes de medios que solo coinciden por fecha de procesamiento, se aplica la misma regla al propio 15 de marzo, sin ventana de ±10 días.
 
-#### Cost data availability and reports table
+#### Disponibilidad de datos de costos y reportes
 
-| Reporting method | View/data type | Campaign name change support | Remarks |
+| Método de reporte | Vista/tipo de datos | Soporte para cambio de nombre de campaña | Observaciones |
 | --- | --- | --- | --- |
-| Overview dashboard | <ul><li>UA</li><li>Unified</li></ul> | Yes | Retargeting view doesn't display cost. Cost for retargeting displays in the Unified view. |
-| Activity dashboard | UA | Yes |  |
-| Cohort dashboard | <ul><li>UA</li><li>Unified</li></ul> | Yes | <ul><li>Retargeting view doesn't display cost</li><li>This Unified data is available only for campaigns with at least one install, click, or impression recorded within ±10 days of the cost reporting date (install date) for Google Ads, DV360, Facebook, TikTok, Apple Search Ads, and Aura. For all other media sources, this data is available only for campaigns with activity recorded on the same processing date as the cost.</li></ul> |
-| Cohort API | <ul><li>UA</li><li>Unified</li></ul> | Yes | This Unified data is available only for campaigns with at least one install, click, or impression recorded within ±10 days of the cost reporting date (install date) for Google Ads, DV360, Facebook, TikTok, Apple Search Ads, and Aura. For all other media sources, this data is available only for campaigns with activity recorded on the same processing date as the cost. |
-| SKAN dashboard | SKAN | No | This dashboard displays SKAdNetwork (SKAN) installs, along with cost data for **all** installs (including non-SKAN installs). |
-| SKAN Aggregated Performance API | SKAN | No | This API displays SKAN installs, along with cost data for **all** installs (including non-SKAN installs). |
-| Pivot dashboard | UA | No |  |
-| Master API | UA | No |  |
-| Custom dashboard | UA | No |  |
-| Cost ETL | Unified | Yes | All available cost data displays. |
-| Aggregated Pull API | UA | No |  |
-| Push API | Raw click data (not aggregated) | Not relevant |  |
-| Raw data Pull API | Raw click data (not aggregated) | Not relevant |  |
-| Data Locker | Raw click data (not aggregated) | Not relevant | Data Locker Cohort doesn't support cost. |
+| Dashboard general | <ul><li>Ucrania</li><li>Unificado</li></ul> | Sí | La vista de retargeting no muestra el costo. El costo de retargeting se muestra en la vista Unified. |
+| Dashboard de actividad | Ucrania | Sí |  |
+| Dashboard de cohorte | <ul><li>Ucrania</li><li>Unificado</li></ul> | Sí | <ul><li>La vista de retargeting no muestra el costo</li><li>Estos datos de Unified están disponibles solo para campañas con al menos una instalación, un clic o una impresión registrada dentro de ±10 días de la fecha en la que se reporta el costo (fecha de instalación) para Google Ads, DV360, Facebook, TikTok, Apple Search Ads y Aura. Para todas las demás fuentes de medios, estos datos están disponibles solo para campañas con actividad registrada en la misma fecha de procesamiento que el costo.</li></ul> |
+| API de cohorte | <ul><li>Ucrania</li><li>Unificado</li></ul> | Sí | Estos datos de Unified están disponibles solo para campañas con al menos una instalación, un clic o una impresión registrada dentro de ±10 días de la fecha en la que se reporta el costo (fecha de instalación) para Google Ads, DV360, Facebook, TikTok, Apple Search Ads y Aura. Para todas las demás fuentes de medios, estos datos están disponibles solo para campañas con actividad registrada en la misma fecha de procesamiento que el costo. |
+| Dashboard de SKAN | SKÁN | No | Este dashboard muestra las instalaciones de SKAdNetwork (SKAN), junto con los datos de costo de **todas** las instalaciones (incluidas las que no son de SKAN). |
+| API de rendimiento agregado de SKAN | SKÁN | No | Esta API muestra las instalaciones de SKAN, junto con los datos de costo de **todas** las instalaciones (incluidas las que no son de SKAN). |
+| Dashboard pivot | Ucrania | No |  |
+| API maestra | Ucrania | No |  |
+| Dashboard personalizado | Ucrania | No |  |
+| ETL de costos | Unificado | Sí | Se muestran todos los datos de costos disponibles. |
+| Pull API agregada | Ucrania | No |  |
+| API push | Datos de clics originales (no agregados) | No es relevante |  |
+| Pull API de raw data | Datos de clics originales (no agregados) | No es relevante |  |
+| Casillero de datos | Datos de clics originales (no agregados) | No es relevante | La cohorte de Data Locker no admite costos. |
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The following points apply to the table:
+> Los siguientes puntos se aplican a la tabla:
 >
-> * Data granularity can vary by dashboard/report type. The <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">Cost ETL</Anchor> reporting tool contains the complete dataset. This includes campaign hierarchy details (media source, campaign name, ad, adset, and the dimensions available from the media source, including geo, channel, site ID, and keywords).
-> * Cost data reported on the attribution link is available in raw data reports.
-> * If a media source doesn't support campaign name changes, both campaign names display: one with attribution data and one with cost data. Neither campaign name includes the complete data picture.
+> * La granularidad de los datos puede cambiar dependiendo del tipo de dashboard o reporte. La herramienta de reportes de <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports">ETL de costos</Anchor> contiene el conjunto completo de datos. Esto incluye detalles de la jerarquía de la campaña (fuente de medios, nombre de la campaña, anuncio, adset y las dimensiones disponibles de la fuente de medios, incluidas geolocalización, canal, ID del sitio y palabras clave).
+> * Los datos de costos informados en el enlace de atribución están disponibles en los reportes de raw data.
+> * Si una fuente de medios no admite cambios en el nombre de la campaña, se muestran ambos nombres de campaña: uno con datos de atribución y otro con datos de costo. Ninguno de los dos nombres de campaña incluye la imagen completa de los datos.
 
 </Accordion>
 
 <div id="cost-prioritization-mechanism" />
 
-<Accordion title="Cost prioritization mechanism">
+<Accordion title="Mecanismo de priorización de costos">
 
-For a given media source, cost can be provided by more than one method. To avoid cost inflation, a campaign cost prioritization mechanism decides which cost data appears in the platform. AppsFlyer gives priority according to the aggregation method. The priority from lowest to highest is: Cost on the attribution link > Cost API > Cost Import.
+Para una fuente de medios específica, el costo se puede proporcionar mediante más de un método. Para evitar la inflación de costos, un mecanismo de priorización del costo de campaña decide qué datos de costo aparecen en la plataforma. AppsFlyer asigna la prioridad según el método de agregación. La prioridad de menor a mayor es: Costo en el enlace de atribución > API de costos > Importación de costos.
 
-![Diagram showing the cost prioritization order: Cost on the attribution link, then Cost API, then Cost Import](https://files.readme.io/8dbea1b8561d67f77d27cad85ab109e5203930273f32d2a9b04900b810c46ec2-25433450962577.png)
+![Diagrama que muestra el orden de prioridad del costo: costo en el enlace de atribución, luego Cost API y luego Cost Import](https://files.readme.io/8dbea1b8561d67f77d27cad85ab109e5203930273f32d2a9b04900b810c46ec2-25433450962577.png)
 
-The cost prioritization mechanism impacts aggregate data reports and dashboards. It doesn't impact attribution link cost data in raw data reports, as noted above.
+El mecanismo de priorización de costos afecta los reportes y dashboards de datos agregados. No afecta a los datos de costo del enlace de atribución en los Reportes de raw data, como se indica arriba.
 
-**Considerations**:
+**Consideraciones**:
 
-* The priority mechanism works at the campaign level. This means that if you get two cost inputs for one campaign via different mechanisms, then they compete and the higher priority wins for the entire campaign.
-  * On any day, when there's cost data for a specific app and media source (or agency) via Cost API, AppsFlyer ignores cost data on the attribution link.
-* If you change cost aggregation methods, the change has a retroactive impact. Historical aggregate cost data can change.
-* A change to the cost aggregation method affects agency-generated traffic the same way. This includes both transparent and non-transparent agencies.
+* El mecanismo de prioridad opera a nivel de campaña. Esto significa que, si recibes dos entradas de costo para una campaña a través de mecanismos diferentes, compiten entre sí y la de mayor prioridad se aplica a toda la campaña.
+  * En cualquier día, cuando hay datos de costo para una aplicación específica y una fuente de medios (o agencia) a través de Cost API, AppsFlyer ignora los datos de costo del enlace de atribución.
+* Si cambias los métodos de agregación de costos, el cambio tiene un efecto retroactivo. Los datos históricos de costos agregados pueden modificarse.
+* Un cambio en el método de Agregación de costo afecta del mismo modo al tráfico generado por agencias. Esto incluye tanto agencias transparentes como no transparentes.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> **Scenario:** A media source reports cost on the attribution link, but you decide to enable the media source's Cost API.
+> **Escenario:** Una fuente de medios reporta costos mediante el enlace de atribución, pero decides habilitar la API de costos de esa fuente de medios.
 >
-> **Result:** AppsFlyer aggregates cost from both the attribution link and the Cost API. Because the Cost API has priority, AppsFlyer ignores the cost on the attribution link.
+> **Resultado:** AppsFlyer agrega el costo tanto del enlace de atribución como de la API de costo. Como la API de costo tiene prioridad, AppsFlyer ignora el costo del enlace de atribución.
 
 </Accordion>
 
 <div id="closed-beta--cost-split" />
 
-<Accordion title="Cost split">
+<Accordion title="División de costos">
 
-Some media sources report the campaign cost data without an associated app ID. When this happens, AppsFlyer completes the app ID(s) using engagement and attribution data.
+Algunas fuentes de medios reportan los datos de costo de la campaña sin un App ID asociado. Cuando esto sucede, AppsFlyer completa el/los ID(s) de app utilizando datos de engagement y atribución.
 
-AppsFlyer matches apps based on those associated with the campaign's clicks, impressions, and conversions within a **±10-day window** around the reported cost date.
+AppsFlyer asocia apps basándose en aquellas vinculadas a los clics, impresiones y conversiones de la campaña dentro de una ventana de ±10 días alrededor de la fecha de costo reportada.
 
-If the app completion process results in multiple matched apps, AppsFlyer distributes the campaign cost across those apps as follows:
+Si el proceso de completado de apps da como resultado varias apps coincidentes, AppsFlyer distribuye el costo de la campaña entre esas apps de la siguiente manera:
 
-#### Proportional split (by conversions)
+#### Distribución proporcional (por conversiones)
 
-If conversions (installs, reattributions, and re-engagements) exist on the reported cost date, AppsFlyer splits the cost proportionally based on each app's number of conversions.
+Si existen conversiones (instalaciones, reatribuciones y re-engagements) en la fecha de costo reportada, AppsFlyer divide el costo proporcionalmente según el número de conversiones de cada aplicación.
 
-**Example:** If the total cost on Day 1 is **$100**, and the campaign drives **60 installs on iOS** and **40 installs on Android**, then:
+**Ejemplo:** Si el costo total del Día 1 es de **$100** y la campaña genera **60 instalaciones en iOS** y **40 instalaciones en Android**, entonces:
 
 * iOS: **$60**
 * Android: **$40**
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> The proportional (conversion-based) split applies only when the conversion granularity available in attribution exactly matches the granularity the media source reports for its cost data. When the two only partially match, AppsFlyer can't map the cost to each app's conversions, so it applies the equal split across the matched apps instead.
+> La división proporcional (basada en conversiones) solo se aplica cuando la granularidad de conversión disponible en atribución coincide exactamente con la granularidad que reporta la fuente de medios para sus datos de costo. Cuando ambas solo coinciden parcialmente, AppsFlyer no puede asignar el costo a las conversiones de cada app, así que en su lugar aplica una división equitativa entre las apps coincidentes.
 
-#### Equal split (no conversions)
+#### División equitativa (sin conversiones)
 
-If no conversions exist on the reported cost date, AppsFlyer splits the cost equally across the matched apps.
+Si no existen conversiones en la fecha de costo reportada, AppsFlyer divide el costo por igual entre las aplicaciones coincidentes.
 
-**Example:** If the total cost on Day 1 is **$100** and the campaign has impressions but no conversions on that date, then:
+**Ejemplo:** Si el costo total del Día 1 es de **$100** y la campaña tiene impresiones pero ninguna conversión en esa fecha, entonces:
 
 * iOS: **$50**
 * Android: **$50**
 
-#### Limitations
+#### Limitaciones
 
-The following limitations apply to this feature:
+Esta función tiene las siguientes limitaciones:
 
-* AppsFlyer supports this feature for Google, TikTok, and DV360 cross-platform and web-to-app (W2A) campaigns (campaigns with a campaign objective that is different from mobile/app).
-* **Google Performance Max (PMAX) campaigns**: The proportional (conversion-based) split doesn't apply. Google's API doesn't report Ad ID or Geo granularity for PMAX campaigns, so AppsFlyer splits the cost equally across the matched apps, regardless of the number of conversions per app. At the campaign level, when all platforms (iOS, Android, etc.) are selected in the dashboard, the total cost still matches Google's reported cost.
+* AppsFlyer es compatible con esta función para campañas cross-platform y web-to-app (W2A) de Google, TikTok y DV360 (campañas con un objetivo de campaña distinto de móvil/aplicación).
+* **Campañas de Google Performance Max (PMAX)**: la división proporcional (basada en conversiones) no se aplica. La API de Google no reporta la granularidad de Ad ID ni de geolocalización para las campañas PMAX, por lo que AppsFlyer divide el costo por igual entre las apps coincidentes, independientemente del número de conversiones por app. A nivel de campaña, cuando se seleccionan todas las plataformas (iOS, Android, etc.) en el dashboard, el costo total sigue coincidiendo con el costo reportado por Google.
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="ad-networks-supporting-cost-api" />
 
-<Accordion title="List of media sources supporting the Cost API">
+<Accordion title="Lista de fuentes de medios compatibles con la API de costos">
 
-The downloadable table below lists all media sources supporting Cost API, with the data granularity available for each:
+La tabla descargable a continuación enumera todas las fuentes de medios compatibles con la API de costos, junto con la granularidad de datos disponible para cada una.
 
-* Dimensions
-* Supported features and their characteristics
-* Metrics (as reported by the media sources)
+* Dimensiones
+* Funciones compatibles y sus características
+* Métricas (según las reportan las fuentes de medios)
 
-Download file: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5NUuD8tJ5MA7OmL0N9a55qLp4ib5FYL_eat1H4IWNW9ZCtAEeDa1kTZK5bRD2ez-ee/pub?output=csv">CSV</Anchor>, <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5NUuD8tJ5MA7OmL0N9a55qLp4ib5FYL_eat1H4IWNW9ZCtAEeDa1kTZK5bRD2ez-ee/pub?output=xlsx">XLSX</Anchor>
+Descargar archivo: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5NUuD8tJ5MA7OmL0N9a55qLp4ib5FYL_eat1H4IWNW9ZCtAEeDa1kTZK5bRD2ez-ee/pub?output=csv">CSV</Anchor>, <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5NUuD8tJ5MA7OmL0N9a55qLp4ib5FYL_eat1H4IWNW9ZCtAEeDa1kTZK5bRD2ez-ee/pub?output=xlsx">XLSX</Anchor>
 
 </Accordion>
 
 <div id="changing-campaign-names" />
 
-<Accordion title="Changing campaign names">
+<Accordion title="Cambio de nombres de campañas">
 
-AppsFlyer displays campaigns using the campaign ID as the key.
+AppsFlyer muestra las campañas usando el ID de campaña como clave.
 
-To avoid display anomalies, make sure that:
+Para evitar anomalías en la visualización, asegúrate de lo siguiente:
 
-* Each campaign has a unique campaign ID.
-* You don't use the same campaign name with different campaign IDs.
+* Cada campaña tiene un ID de campaña único.
+* No utilices el mismo nombre para diferentes campañas con distintos IDs.
 
-<Anchor target="_blank" href="/marketers/docs/campaign-name-changes">Learn more about campaign name changes</Anchor>
+<Anchor target="_blank" href="/marketers/es/docs/campaign-name-changes">Saber más sobre los cambios de nombre de las campañas</Anchor>
 
 </Accordion>
 
 <div id="costs-without-installs" />
 
-<Accordion title="Costs without installs">
+<Accordion title="Costos sin instalaciones">
 
-**Why do I see cost data with no installs?** This occurs when a media source provides cost at a higher level in the hierarchy (for example, the campaign level) but provides performance information (clicks and installs) at a lower level in the advertising hierarchy (for example, the ad adset level).
+**¿Por qué veo datos de costos sin instalaciones?** Esto ocurre cuando el costo se proporciona a nivel superior en la jerarquía (por ejemplo, a nivel de campaña), pero la información de rendimiento (clics e instalaciones) se ofrece a un nivel inferior (por ejemplo, adset). Esto ocurre cuando una fuente de medios proporciona el costo en un nivel superior de la jerarquía (por ejemplo, el nivel de campaña), pero proporciona información de rendimiento (clics e instalaciones) en un nivel inferior de la jerarquía publicitaria (por ejemplo, el nivel de anuncio o adset).
 
-AppsFlyer completes the cost data for missing dimensions from an upper-level hierarchy. This guarantees a full view of the cost data at any level and minimizes internal discrepancies.
+AppsFlyer completa los datos de costo de las dimensiones faltantes desde un nivel más alto de la jerarquía. Esto asegura una visión completa de los datos de costos a cualquier nivel y minimiza discrepancias internas.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> An advertiser runs a campaign. The advertising hierarchy is as follows:
+> Un anunciante lleva a cabo una campaña. La jerarquía publicitaria se presenta de la siguiente manera:
 >
-> * **Media source**: media\_eg
-> * **Campaign**: campaign\_eg
+> * **Fuente de medios**: media\_eg
+> * **Campaña**: campaña\_eg
 > * **Adsets**: **adset\_1**, **adset\_2**
 >
-> The following table shows information relating to the media source.
+> La siguiente tabla muestra información relacionada con la fuente de medios.
 >
-> Hierarchy: All Media Sources > media\_eg
+> Jerarquía: Todas las fuentes de medios > media\_eg
 >
 >
 >
-> | Campaign | Cost | Installs |
+> | Campaña | Costo | Instalaciones |
 > | --- | --- | --- |
 > | campaign\_eg | $100 | 100 |
 > | campaign\_yy | $200 | 1000 |
@@ -248,58 +247,58 @@ AppsFlyer completes the cost data for missing dimensions from an upper-level hie
 >
 >
 >
-> Drilling down into campaign\_eg shows the adset level.
+> Al profundizar en campaign\_eg, se muestra el nivel de adset.
 >
-> Hierarchy: All Media Sources > media\_eg > campaign\_eg
+> Jerarquía: Todas las fuentes de medios > media\_eg > campaign\_eg
 >
 >
 >
-> | Adset | Cost | Installs |
+> | Conjunto de anuncios | Costo | Instalaciones |
 > | --- | --- | --- |
-> | None | $100 |  |
-> | adset\_1 | N/A | 30 |
-> | adset\_2 | N/A | 70 |
+> | Ninguno | $100 |  |
+> | adset\_1 | N/D | 30 |
+> | adset\_2 | N/D | 70 |
 >
 >
 >
-> In this case, AppsFlyer provides the $100 cost of campaign\_eg at the campaign level. When drilling down to the adset level, which in this case is the lowest level of the hierarchy, AppsFlyer can't break down the cost by adset.
+> En este caso, AppsFlyer proporciona el costo de $100 de campaign\_eg a nivel de campaña. Al desglosar hasta el nivel de adset, que en este caso es el nivel más bajo de la jerarquía, AppsFlyer no puede desglosar el costo por adset.
 >
-> To overcome this, AppsFlyer breaks down the cost from the campaign level and displays it in a separate row. In this case, the adset displays as None, and the installs field stays blank.
+> Para superar esto, AppsFlyer desglosa el costo desde el nivel de campaña y lo muestra en una fila separada. En este caso, el adset se muestra como None y el campo de instalaciones permanece en blanco.
 
 </Accordion>
 
 <div id="cost-currency-conversion" />
 
-<Accordion title="Cost currency conversion">
+<Accordion title="Conversión de divisa de costo">
 
-If the campaign cost currency provided by the media source differs from the app-defined currency on the platform, AppsFlyer converts the cost to the app-defined currency as follows:
+Si la moneda del costo de la campaña proporcionada por la fuente de medios difiere de la moneda definida para la app en la plataforma, AppsFlyer convierte el costo a la moneda definida para la app de la siguiente manera:
 
-* AppsFlyer gets the rates from <Anchor target="_blank" href="https://openexchangerates.org/">openexchangerates.org</Anchor>.
-* AppsFlyer updates exchange rates hourly for data up to seven days back.
-* AppsFlyer performs currency conversions using the last known rate.
+* AppsFlyer obtiene los tipos de cambio de <Anchor target="_blank" href="https://openexchangerates.org/">openexchangerates.org</Anchor>.
+* AppsFlyer actualiza los tipos de cambio cada hora para datos de hasta siete días atrás.
+* AppsFlyer realiza las conversiones de moneda utilizando el último tipo de cambio conocido.
 
 </Accordion>
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Características y limitaciones">
 
-| Trait | Description |
+| Caducado | Descripción |
 | --- | --- |
-| Agencies | <ul><li>When transparent agencies run campaigns, advertisers can see costs displayed in dashboards and reports, providing a unified view. [Learn more about cost data availability and reports](#cost-data-availability-and-reports)</li><li>If an advertiser ends their relationship with an agency and the agency has cost configured for the app, AppsFlyer continues to pull cost data even if the advertiser disables the agency permissions at the app level. To prevent this, the advertiser must ask the agency to deactivate their cost integration in AppsFlyer before disabling the agency permissions.</li><li>For some media sources, agencies must contact the advertiser to activate the integration, and the AppsFlyer UI prompts them to do so. For these media sources, agencies and advertisers must make sure that when the media source sends data, it includes the `af_prt` parameter, required for agency cost attribution.</li><li>For X Ads, cost data for SKAN-only campaigns (those with only SKAN installs and no "regular" installs) isn't available to agencies. The advertiser must set up the cost integration. Only the advertiser can view the data.</li></ul> |
-| API data freshness | <ul><li><Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">Intraday</Anchor> (except for Moloco)</li><li>Mintegral data is available via the API the following day, approximately 4 hours after the previous day ends. For example, if the event occurred on Day 1, cost data is available by Day 2, at approximately 4:00.</li></ul> |
-| Campaign name changes | Ad spend data displays the most recent reported campaign name. This applies to aggregate data only, not to the raw data itself. |
-| Time zone | If a media source supports only one time zone, and that time zone differs from the one set in your app settings, AppsFlyer uses the media source's time zone. |
-| CTV, PC, and console platforms | For apps on these platforms, import data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Ad Spend Ingestion</Anchor> using the upload-by-email method.<br /><br />You can also pull data via API for Google, Meta, or TikTok in the following platforms:<ul><li>Steam</li><li>Native PC</li><li>Smart Cast</li><li>Tizen</li><li>Quest</li></ul> |
-| Cross-platform | Cost data isn't available for cross-platform clicks and impressions, meaning the impression/click might occur on one platform and the app install on another. |
-| Out-of-store apps | Cost data from Mintegral isn't available for out-of-store apps (apps from platforms other than Google Play and App Store). |
-| Geo | Geo/country breakdown isn't available for Mistplay bundled campaigns (campaigns targeted to several countries). For such campaigns, geo displays as N/A. |
-| Smadex | Dashboards and Cost ETL reports might show cost and attribution data separately. This occurs when Smadex includes additional elements (such as an inventory ID) in the site ID value. |
-| Apple Search Ads (ASA) | For SKAN-only reporting, ASA cost data isn't available in the SKAN dashboard or the Pull API because Apple doesn't include campaign-level data in SKAN postbacks. However, cost data is available in single-source-of-truth (SSOT) reports via AppsFlyer's classic integration. |
-| Cost data dimension character limit | For the media sources listed below, the following dimensions must not exceed the specified character lengths. If you don't comply with these limits, AppsFlyer excludes the dimension values from the report.<ul><li>`app_id`: up to 100 characters</li><li>`publisher`: up to 250 characters</li><li>`partner`: up to 250 characters</li><li>`campaign`: up to 250 characters</li><li>`campaign_id`: up to 250 characters</li><li>`adset`: up to 250 characters</li><li>`adset_id`: up to 250 characters</li><li>`ad`: up to 250 characters</li><li>`ad_id`: up to 250 characters</li><li>`site_id`: up to 250 characters</li><li>`site_name`: up to 250 characters</li><li>`channel`: up to 250 characters</li><li>`ad_account`: up to 250 characters</li><li>`ad_account_name`: up to 250 characters</li></ul>The limitations apply only to the following media sources:<ul><li>`mintegral_int`</li><li>`moloco_int`</li><li>`applovin_int`</li><li>`liftoff_int`</li><li>`aura_int`</li><li>`tiktokglobal_int`</li><li>`pinterest_int`</li><li>`vungle_int`</li><li>`iossearchads_int`</li></ul> |
-| API Cost data availability | AppsFlyer displays API cost data only for customers with an active ROI360 asset. If ROI360 is deactivated, cost data from API sources becomes unavailable, and the dashboard shows only CPI-based cost data. |
-| Mintegral: ad-level granularity | To get cost reporting with ad-level granularity from Mintegral, each ad account requires the following ad network permissions: **Sub/Package × Creative dimension**. |
+| Agencias | <ul><li>Cuando las agencias transparentes gestionan campañas, los anunciantes pueden ver el costo mostrado en dashboards y reportes que permiten una vista unificada. [Saber más sobre la disponibilidad de los datos de costo y los reportes](#cost-data-availability-and-reports)</li><li>Si un anunciante pone fin a su relación con una agencia y la agencia tiene configurados los costos para la aplicación, AppsFlyer seguirá obteniendo datos de costo aunque el anunciante deshabilite los permisos de la agencia a nivel de aplicación. Para evitarlo, el anunciante debe pedir a la agencia que desactive su integración de costos en AppsFlyer antes de deshabilitar los permisos de la agencia.</li><li>Para algunas fuentes de medios, las agencias deben contactar con el anunciante para activar la integración, y la interfaz de AppsFlyer se lo indica. Para estas fuentes de medios, las agencias y los anunciantes deben asegurarse de que, cuando la fuente de medios envíe datos, incluya el parámetro `af_prt`, necesario para la atribución de costos de la agencia.</li><li>Para los anuncios de X, los datos de costo de las campañas exclusivas de SKAN (campañas que solo tienen instalaciones de SKAN y ninguna instalación "normal") no están disponibles para las agencias. El anunciante debe configurar la integración de costos. Solo el anunciante puede ver los datos.</li></ul> |
+| Actualización de datos de la API | <ul><li><Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">Intradía</Anchor> (excepto para Moloco)</li><li>Los datos de Mintegral están disponibles vía API al día siguiente, aproximadamente 4 horas después de que finalice el día anterior. Por ejemplo, si el evento ocurrió el Día 1, los datos de costo estarán disponibles el Día 2, aproximadamente a las 4:00.</li></ul> |
+| Multiplataforma | Los datos de gasto publicitario muestran el nombre de campaña informado más reciente. Esto se aplica solo a los datos agregados, no a los raw data en sí. |
+| Zona horaria | Si una fuente de medios admite solo una zona horaria y esa zona horaria es distinta de la configurada en los ajustes de tu aplicación, AppsFlyer utiliza la zona horaria de la fuente de medios. |
+| Plataformas CTV, PC y consola | Para las aplicaciones en estas plataformas, importa los datos a través de <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Ad Spend Ingestion</Anchor> mediante el método de carga por correo electrónico.<br /><br />También puedes extraer datos a través de la API para Google, Meta o TikTok en las siguientes plataformas:<ul><li>Steam</li><li>PC Nativo</li><li>Smart Cast</li><li>Tizen</li><li>Quest</li></ul> |
+| Multiplataforma | Los datos de costo no están disponibles para los clics y las impresiones multiplataforma, lo que significa que la impresión o el clic pueden producirse en una plataforma y la instalación de la app en otra. |
+| Aplicaciones out-of-store | Los datos de costo de Mintegral no están disponibles para aplicaciones out-of-store (aplicaciones de plataformas distintas de Google Play y App Store). |
+| Geografía | El desglose geográfico/por país no está disponible para las campañas agrupadas de Mistplay (campañas dirigidas a varios países). Para estas campañas, la ubicación geográfica se muestra como N/A. |
+| Smadex | Los dashboards y los reportes Cost ETL pueden mostrar los datos de costo y de atribución por separado. Esto ocurre cuando Smadex incluye otros elementos (como el ID de inventario) en el valor del ID de sitio. |
+| Apple Search Ads | Para reportes únicamente de SKAN, los datos de costos de ASA no están disponibles en el dashboard de SKAN ni en Pull API, ya que Apple no incluye datos a nivel de campaña en los postbacks de SKAN. Sin embargo, los datos de costo están disponibles en los reportes de fuente única de verdad (SSOT) mediante la integración clásica de AppsFlyer. |
+| Límite de caracteres de la dimensión de datos de costos | En las fuentes de medios que se indican a continuación, las siguientes dimensiones no deben superar la longitud de caracteres especificada. Si no cumples estos límites, AppsFlyer excluye los valores de dimensión del reporte.<ul><li>`app_id`: hasta 100 caracteres</li><li>`publisher`: hasta 250 caracteres</li><li>`partner`: hasta 250 caracteres</li><li>`campaign`: hasta 250 caracteres</li><li>`campaign_id`: hasta 250 caracteres</li><li>`adset`: hasta 250 caracteres</li><li>`adset_id`: hasta 250 caracteres</li><li>`ad`: hasta 250 caracteres</li><li>`ad_id`: hasta 250 caracteres</li><li>`site_id`: hasta 250 caracteres</li><li>`site_name`: hasta 250 caracteres</li><li>`canal`: hasta 250 caracteres</li><li>`ad_account`: hasta 250 caracteres</li><li>`ad_account_name`: hasta 250 caracteres</li></ul>Las limitaciones se aplican solo a las siguientes fuentes de medios:<ul><li>`mintegral_int`</li><li>`moloco_int`</li><li>`applovin_int`</li><li>`liftoff_int`</li><li>`aura_int`</li><li>`tiktokglobal_int`</li><li>`pinterest_int`</li><li>`vungle_int`</li><li>`iossearchads_int`</li></ul> |
+| Disponibilidad de datos de costos vía API | AppsFlyer muestra los datos de costo de la API solo para clientes con un activo de ROI360 activo. Si ROI360 se desactiva, los datos de costo de las fuentes API dejan de estar disponibles y el dashboard solo muestra datos de costo basados en CPI. |
+| Mintegral: granularidad a nivel de anuncio | Para obtener reportes de costo con granularidad a nivel de anuncio desde Mintegral, cada cuenta publicitaria requiere los siguientes permisos de ad network: **Sub/Package × Creative dimension**. |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HC7K2Y627P56F5JH9QT47GB2=cost-aggregation h_01HC7K2Y62ZC932EDX00YP7DAW=principles-of-cost-data-aggregation h_01HC7K2Y62K78M02ZN034N99T0=cost-aggregation-methods h_01HC7K2Y62YPM3A6Z0HBY58J00=cost-data-availability-and-reports h_01KGS7NM964HW175AW2CF59P5K=cost-in-the-ua-view h_01M3VZAVTP7F3TF607B49TGZQ4=note cost-in-unified-view=cost-in-the-unified-view h_01KGS7QG5GNKG1YVACWQKCQFZ4=cost-in-the-unified-view h_01KGS7R5SJ3NSVJAHG3BM922VS=example cost-data-availability-and-reports::865c5bcd=cost-data-availability-and-reports-table h_01HC7K2Y62ZY6HWG5TJDEPHZKH=cost-data-availability-and-reports-table h_01M3VZAVTPK4Q2X817ER2CW62D=note-1 h_01HC7K2Y62112X308A0Y7DDDRM=cost-prioritization-mechanism h_01HC7K2Y62SZKXD4W0EJGYF6RS=example-1 %5Bclosed-beta%5D-cost-split=closed-beta--cost-split h_01KHR3PQTNF5XP7J4HZEYVRK95=closed-beta--cost-split h_01KHR3PQTNMDX8AGM1C73N7SMK=proportional-split-by-conversions h_01KZ8TMT06KNYFZ7VBX1GY07JB=note-2 h_01KHR3PQTPG8GTHV64MFCM628H=equal-split-no-conversions h_01KHR3PQTPPJYKXRYKNHM4W95A=limitations list-of-ad-networks=additional-information h_01HC7K2Y63T9GK0WW95YM39B5C=additional-information h_01HC7K2Y63MG10M4Z66VHY5WYW=ad-networks-supporting-cost-api h_01HE0T3TGPZFB2ZBHFGGWXY6AP=changing-campaign-names h_01HE0T3TGQGK6135KM7AYJ7S1G=costs-without-installs h_01HE0T3TGQMK285N8RV48KG8N9=example-2 h_01HE0T3TGQ7MSSB09GFNPYFKR1=cost-currency-conversion h_01HJ10FMTJKH48CEXM0G40Y9J1=traits-and-limitations" />
+<div data-zendesk-anchors="cost-aggregation=agregaci%C3%B3n-de-costos h_01HC7K2Y627P56F5JH9QT47GB2=agregaci%C3%B3n-de-costos principles-of-cost-data-aggregation=principios-de-agregaci%C3%B3n-de-datos-de-costos h_01HC7K2Y62ZC932EDX00YP7DAW=principios-de-agregaci%C3%B3n-de-datos-de-costos h_01HC7K2Y62K78M02ZN034N99T0=cost-aggregation-methods h_01HC7K2Y62YPM3A6Z0HBY58J00=cost-data-availability-and-reports cost-in-the-ua-view=costos-en-la-vista-ua h_01KGS7NM964HW175AW2CF59P5K=costos-en-la-vista-ua h_01M3VZAVTP7F3TF607B49TGZQ4=nota cost-in-unified-view=costos-en-la-vista-unificada h_01KGS7QG5GNKG1YVACWQKCQFZ4=costos-en-la-vista-unificada example=ejemplo h_01KGS7R5SJ3NSVJAHG3BM922VS=ejemplo cost-data-availability-and-reports::865c5bcd=disponibilidad-de-datos-de-costos-y-reportes h_01HC7K2Y62ZY6HWG5TJDEPHZKH=disponibilidad-de-datos-de-costos-y-reportes h_01M3VZAVTPK4Q2X817ER2CW62D=nota-1 h_01HC7K2Y62112X308A0Y7DDDRM=cost-prioritization-mechanism h_01HC7K2Y62SZKXD4W0EJGYF6RS=ejemplo-1 %5Bclosed-beta%5D-cost-split=closed-beta--cost-split h_01KHR3PQTNF5XP7J4HZEYVRK95=closed-beta--cost-split proportional-split-by-conversions=distribuci%C3%B3n-proporcional-por-conversiones h_01KHR3PQTNMDX8AGM1C73N7SMK=distribuci%C3%B3n-proporcional-por-conversiones h_01KZ8TMT06KNYFZ7VBX1GY07JB=advertencia equal-split-no-conversions=divisi%C3%B3n-equitativa-sin-conversiones h_01KHR3PQTPG8GTHV64MFCM628H=divisi%C3%B3n-equitativa-sin-conversiones limitations=limitaciones h_01KHR3PQTPPJYKXRYKNHM4W95A=limitaciones list-of-ad-networks=informaci%C3%B3n-adicional h_01HC7K2Y63T9GK0WW95YM39B5C=informaci%C3%B3n-adicional h_01HC7K2Y63MG10M4Z66VHY5WYW=ad-networks-supporting-cost-api h_01HE0T3TGPZFB2ZBHFGGWXY6AP=changing-campaign-names h_01HE0T3TGQGK6135KM7AYJ7S1G=costs-without-installs h_01HE0T3TGQMK285N8RV48KG8N9=ejemplo-2 h_01HE0T3TGQ7MSSB09GFNPYFKR1=cost-currency-conversion h_01HJ10FMTJKH48CEXM0G40Y9J1=traits-and-limitations" />

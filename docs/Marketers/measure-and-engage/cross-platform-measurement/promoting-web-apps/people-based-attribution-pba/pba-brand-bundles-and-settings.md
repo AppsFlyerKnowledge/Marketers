@@ -1,5 +1,5 @@
 ---
-title: PBA brand bundles and settings
+title: Paquetes y configuraciones de marca de PBA
 metadata:
   keywords:
     - Advertisers
@@ -16,215 +16,214 @@ x-zendesk:
     - Marketers
     - Cross-Platform Measurement
   created_at: '2018-12-09T11:42:52Z'
-  edited_at: '2025-05-08T09:17:30Z'
+  edited_at: '2026-08-12T12:11:16Z'
   id: 360000646498
-  locale: en-us
+  locale: es
   section: People Based Attribution (PBA)
   section_id: 43560588808721
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000646498-PBA-brand-bundles-and-settings
+  url: https://support.appsflyer.com/hc/es/articles/360000646498
 ---
-> **At a glance:** Brand bundles consolidate the attribution, events, visits, and revenue of brand-related apps and websites. Use the brand bundle settings page to mark conversion events, integrate with Google Ads, and more.
+> **En resumen:** Los paquetes de marca consolidan la atribución, los eventos, las visitas y los ingresos de las aplicaciones y los sitios web relacionados con la marca. Utiliza la página de configuración del paquete de marca para marcar eventos de conversión, integrar con Google Ads y más.
 
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
-## About brand bundles
+## Sobre los paquetes de marca
 
-Brands operate in an ecosystem encompassing both web and mobile properties. As an advertiser, a full picture of brand performance across platforms–web and mobile–is needed. In PBA, brand bundles consolidate the data of mobile and web properties into a single entity for purposes of analytics and raw data.
+Las marcas operan en un ecosistema que abarca tanto propiedades web como móviles. Como anunciante, se necesita una imagen completa del rendimiento de la marca en todas las plataformas (web y móvil). En PBA, los paquetes de marca consolidan los datos de las propiedades web y móviles en una sola entidad para fines de análisis y raw data. Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
 
-> 📘 **What is a web app?**
+> 📘 **¿Qué es una aplicación web?**
 >
-> A web app is an <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">entity you have created in AppsFlyer</Anchor> that specifies a website for which you want to measure performance.
+> Una aplicación web es una <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">entidad que has creado en AppsFlyer</Anchor> que especifica un sitio web para el cual deseas medir el rendimiento.
 >
-> * The web app entity was added to AppsFlyer on February 9, 2022. Prior to that date, you entered the brand bundle domain as a separate setting when creating a brand bundle. Now, you first create a web app that defines the domain, then include that web app when creating a bundle.
-> * If you had existing brand bundles on February 9, 2022, you will see that you now have a web app on the **My apps** page corresponding to each of those bundles. **Rest assured!** Your web traffic is being attributed just as it was before, and there have been no other changes to PBA dashboards or raw data reports.
+> * La entidad de aplicación web se agregó a AppsFlyer el 9 de febrero de 2022. Antes de esa fecha, ingresaste el dominio del paquete de marca como una configuración separada al crear un paquete de marca. Ahora, primero creas una aplicación web que define el dominio, luego incluyes esa aplicación web al crear un paquete.
+> * Si tenías paquetes de marca existentes el 9 de febrero de 2022, verás que ahora tienes una aplicación web en la página **Mis aplicaciones** correspondiente a cada uno de esos paquetes. **¡No te preocupes!** Tu tráfico web se está atribuyendo igual que antes y no se han producido otros cambios en los dashboards de PBA ni en los reportes de raw data.
 
-**Brand bundle basics:**
+**Conceptos básicos del paquete de marca:**
 
-* A brand bundle contains exactly 1 web app *(required)* and 1 or more mobile apps *(optional).*
-* An app (web or mobile) can belong only to 1 bundle.
-* Apps can't be deleted from a bundle or moved from one bundle to another without [deleting the original bundle](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle).
-  * On bundle deletion, AppsFlyer stops attributing PBA data for the bundle, and access to its historical data is no longer available.
+* Un paquete de marca contiene exactamente 1 aplicación web *(obligatorio)* y 1 o más aplicaciones móviles *(opcional).*
+* Una aplicación (web o móvil) solo puede pertenecer a 1 paquete.
+* Las aplicaciones no se pueden eliminar de un paquete ni mover de un paquete a otro sin [eliminar el paquete original](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle).
+  * Al eliminar el paquete, AppsFlyer deja de atribuir datos de PBA para el paquete y el acceso a sus datos históricos ya no está disponible.
 
-## Accessing brand bundles
+## Acceso a paquetes de marca
 
-Access the **Brand Bundles** page to manage brand bundles and their settings:
+Accede a la página **Paquetes de marca** para administrar los paquetes de marca y su configuración:
 
-* In AppsFlyer, from the top menu, select **My Apps** > **View brand bundles.**  
-                           - or -
-* In AppsFlyer, from the side menu, go to **Settings** > **Brand Bundles.**
+* En AppsFlyer, en el menú superior, selecciona **Mis aplicaciones** > **Ver paquetes de marcas**.  
+  - o -
+* En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Paquetes de marca**.
 
-## Managing brand bundles
+## Gestión de paquetes de marca
 
-To add, delete, or manage brand bundles, select one of these options from the **Brand Bundles** page:
+Para agregar, eliminar o administrar paquetes de marca, selecciona una de estas opciones en la página **Paquetes de marca**:
 
-| Option | Details |
+| Opción | Detalles |
 | --- | --- |
-| Add a brand bundle | Opens the **Create bundle** page  <br />Follow the [instructions below](/docs/pba-brand-bundles-and-settings#add-brand-bundle) to create a new bundle. |
-| PBA dashboard | Opens the brand dashboard |
-| Brand bundle ID | Copies brand bundle ID to the clipboard |
-| Web dev key | Copies the web dev key to the clipboard |
-| Select an existing bundle to update brand bundle settings and options | Options available:<ul><li>Mark events as conversion events:<ul><li>[Web event settings](/docs/pba-brand-bundles-and-settings#web-event-settings)</li><li>[In-app event settings](/docs/pba-brand-bundles-and-settings#inapp-event-settings)</li></ul></li><li>[Domain exclusion](/docs/pba-brand-bundles-and-settings#domain-exclusion)</li><li><Anchor target="_blank" href="/marketers/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Google Ads integration</Anchor></li></ul> |
-| Delete icon | [Deletes the selected brand bundle](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) (after you confirm your decision to do so) |
+| Agregar un paquete de marca | Abre la página **Crear paquete**  <br />Sigue las [instrucciones a continuación](/docs/pba-brand-bundles-and-settings#add-brand-bundle) para crear un paquete nuevo. |
+| Dashboard de PBA | Abre el dashboard de marca. |
+| ID de paquete de marca | Copia el ID del paquete de marca en el portapapeles |
+| Clave de desarrollador web | Copia la clave de desarrollador web en el portapapeles |
+| Selecciona un paquete existente para actualizar la configuración y las opciones del paquete de marca | Opciones disponibles:<ul><li>Marcar eventos como eventos de conversión:<ul><li>[Configuración de eventos web](/docs/pba-brand-bundles-and-settings#web-event-settings)</li><li>[Configuración de eventos in-app](/docs/pba-brand-bundles-and-settings#inapp-event-settings)</li></ul></li><li>[Exclusión de dominios](/docs/pba-brand-bundles-and-settings#domain-exclusion)</li><li><Anchor target="_blank" href="/marketers/es/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Integración de Google Ads</Anchor></li></ul> |
+| Icono “Eliminar” | [Elimina el paquete de marca seleccionado](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) (después de confirmar tu decisión de hacerlo). |
 
 <div id="add-brand-bundle" />
 
-<Accordion title="Add brand bundle">
+<Accordion title="Agregar paquete de marca">
 
-Before proceeding, make sure that all the apps you want to include in the bundle have been added to your account. Once a brand bundle has been created, the apps it includes can not be changed without [deleting the bundle](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) and recreating it.
+Antes de continuar, asegúrate de que todas las aplicaciones que deseas incluir en el paquete se hayan añadido a tu cuenta. Una vez que se ha creado un paquete de marca, las aplicaciones que incluye no se pueden cambiar sin [eliminar el paquete](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) y volver a crearlo.
 
-**To add a brand bundle:**
+**Para agregar un paquete de marca:**
 
-1. From the [Brand Bundles](/docs/pba-brand-bundles-and-settings#accessing-brand-bundles) page, click **Add brand bundle.**
-2. Enter the **Brand bundle name** (any name you want to use to identify the bundle).
-3. Select the apps to include in the bundle.
+1. En la página [Paquetes de marca](/docs/pba-brand-bundles-and-settings#acceso-a-paquetes-de-marca), haz clic en **Agregar paquete de marca.**
+2. Ingresa el nombre del **paquete de marca** (cualquier nombre que desees usar para identificar el paquete).
+3. Selecciona las aplicaciones para incluir en el paquete.
 
-   **Note:** Apps that are included in other bundles are not available for selection.
+   **Nota:** Las aplicaciones que están incluidas en otros paquetes no están disponibles para su selección.
 
-   * Web app *[required]*: Select 1 available web app.
-   * Mobile apps *[optional]:* Select the available mobile apps you want to include in the bundle.
-     * Mobile apps are not required to create a bundle.
-     * There is no limit to the number of mobile apps you can include in a bundle.
-4. Click Create bundle.
+   * *[Requerido]* Aplicación web: Selecciona 1 aplicación web disponible.
+   * [Opcional]: *Aplicaciones móviles* Selecciona las aplicaciones móviles disponibles que deseas incluir en el paquete.
+     * No se requieren aplicaciones móviles para crear un paquete.
+     * No hay límite para la cantidad de aplicaciones móviles que puedes incluir en un paquete.
+4. Haz clic en Crear paquete.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> Brand bundles cannot be created in the following circumstances:
+> Los paquetes de marca no se pueden crear en las siguientes circunstancias:
 >
-> * The web app selected for inclusion in the bundle does not point to a valid URL.
-> * The web app and an Android mobile app selected for inclusion in the bundle have the same app ID.
+> * La aplicación web seleccionada para su inclusión en el paquete no apunta a una URL válida.
+> * La aplicación web y una aplicación móvil Android seleccionadas para su inclusión en el paquete tienen el mismo ID de aplicación.
 
 </Accordion>
 
 <div id="web-event-settings" />
 
-<Accordion title="Web event settings">
+<Accordion title="Configuración de eventos web">
 
-There are two types of web events: **standard** and **conversion**. To focus and prioritize your optimization efforts, set some events as conversion events.
+Hay dos tipos de eventos web: **estándar** y de **conversión**. Para enfocar y priorizar tus esfuerzos de optimización, configura algunos eventos como eventos de conversión.
 
-* PBA attributes standard and conversion events in the same way.
-* <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Raw data</Anchor> reports include both standard and conversion events.
-* PBA dashboards include conversion events only.
-* An event type can be changed at any time; however, the change isn't retroactive.
+* La PBA atribuye eventos estándar y de conversión de la misma manera.
+* Los <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">reportes raw data</Anchor> incluyen eventos estándar y de conversión.
+* Los dashboards de PBA incluyen solo eventos de conversión.
+* Un tipo de evento se puede cambiar en cualquier momento; sin embargo, el cambio no es retroactivo.
 
-**To set conversion events:**
+**Para configurar eventos de conversión:**
 
-1. From the [Brand Bundles](/docs/pba-brand-bundles-and-settings#accessing-brand-bundles) page, select the brand bundle.  
-   The **Update Brand bundles** page opens.
-2. Go to the **Web event settings** tab.
-3. Turn on **Mark as conversion event** as required.
-4. Click **Update bundle.**
+1. En la página [Paquetes de marca](/docs/pba-brand-bundles-and-settings#acceso-a-paquetes-de-marca), selecciona el paquete de marca.  
+   Se abre la página **Actualizar paquetes de marca**.
+2. Ve a la pestaña de **Configuración del evento web**.
+3. Activa **Marcar como evento de conversión** según sea necesario.
+4. Haz clic en **Actualizar paquete**.
 
 </Accordion>
 
 <div id="inapp-event-settings" />
 
-<Accordion title="In-app event settings">
+<Accordion title="Configuración de eventos in-app">
 
-In-app events having revenue are marked as conversion events [Default]. **Note!** If you change the default events, you must explicitly mark in-app revenue events yourself.
+[Predeterminado] Los eventos in-app que tienen ingresos se marcan como eventos de conversión. **¡Nota!** Si cambias los eventos predeterminados, debes marcar explícitamente los eventos in-app de ingresos tú mismo.
 
-**To mark in-app events as conversion events:**
+**Para marcar eventos in-app como eventos de conversión:**
 
-1. From the [Brand Bundles](/docs/pba-brand-bundles-and-settings#accessing-brand-bundles) page, select the brand bundle.  
-   The **Update Brand bundles** page opens.
-2. Go to the **In-app event settings** tab.
-3. Turn on **Mark as conversion event** as required.
-4. Click **Update bundle.**
+1. En la página [Paquetes de marca](/docs/pba-brand-bundles-and-settings#acceso-a-paquetes-de-marca), selecciona el paquete de marca.  
+   Se abre la página **Actualizar paquetes de marca**.
+2. Ve a la pestaña de **Configuración de eventos in-app.**
+3. Activa **Marcar como evento de conversión** según sea necesario.
+4. Haz clic en **Actualizar paquete**.
 
 </Accordion>
 
 <div id="domain-exclusion" />
 
-<Accordion title="Domain exclusion">
+<Accordion title="Exclusión de dominios">
 
-A domain exclusion mechanism, part of <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules">PBA media source rules,</Anchor> is implemented to prevent:
+Se implementa un mecanismo de exclusión de dominios, que forma parte de las <Anchor target="_blank" href="/marketers/es/docs/pba-media-source-attribution-rules">reglas de fuentes de medios de PBA</Anchor>, para evitar:
 
-* Self-attribution: In other words, AppsFlyer will not attribute events to the website defined in the web app itself and to domains you specify are associated with that website.
-* Attributing or recording events associated with domains that aren't part of your brand but participate in the user flow (for example, payment gateways).
+* Autoatribución: En otras palabras, AppsFlyer no atribuirá eventos al sitio web definido en la propia aplicación web ni a los dominios que especifiques que están asociados con ese sitio web.
+* Atribuir o registrar eventos asociados con dominios que no son parte de tu marca, pero participan en el flujo de usuarios (Por ejemplo, payment gateways).
 
-| Domain type | Description | Impact of exclusion |
+| Tipo de dominio | Descripción | Impacto de la exclusión |
 | --- | --- | --- |
-| Primary | The domain of the **web app** included in the brand bundle. This includes sub-domains.<br /><br />For example, if your domain is mydomain.co.za then subdomains like a.mydomain.co.za, b.mydomain.co.za are excluded automatically. <br /><br />The domain of a web app cannot be changed without [deleting](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) and recreating the web app. (This also means deleting the bundle in which the web app is included). | No self-attribution |
-| Internal | List other domains forming part of your brand, for example, mydomain.com, mydomain.in, mydomain.co.ng, abc.com | No self-attribution |
-| External (listed by you) | Domains used by your website directly, but not part of the brand. These include payment gateways, payment processing sites, etc. | <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules#visit-recognition-rules">Visits are disregarded</Anchor> |
-| External (listed by AppsFlyer) | Domains listed by AppsFlyer and always excluded.<ul><li>PayPal</li><li>Stripe</li><li>Adyen</li></ul>The list of automatic domains cannot be edited. | <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules#visit-recognition-rules">Visits are disregarded</Anchor> |
+| Principal | El dominio de la **aplicación web** incluida en el paquete de marca. Esto incluye los subdominios.<br /><br />Por ejemplo: si tu dominio es mydomain.co.za, los subdominios como a.mydomain.co.za, b.mydomain.co.za se excluyen automáticamente. <br /><br />El dominio de una aplicación web no se puede cambiar sin [eliminar](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) y volver a crear la aplicación web. (Esto también significa eliminar el paquete en el que se incluye la aplicación web). | Sin autoatribución |
+| Interno | Enumera otros dominios que forman parte de tu marca, por ejemplo, mydomain.com, mydomain.in, mydomain.co.ng, abc.com | Sin autoatribución |
+| Externo (listado por ti) | Dominios utilizados directamente por tu sitio web, pero que no son parte de la marca. Estos incluyen payment gateways, sitios de procesamiento de pagos, etc. | <Anchor target="_blank" href="/marketers/es/docs/pba-media-source-attribution-rules#visit-recognition-rules">Las visitas no se tienen en cuenta</Anchor> |
+| Externo (listado por AppsFlyer) | Dominios listados por AppsFlyer y siempre excluidos.<ul><li>PayPal</li><li>Stripe</li><li>Adyen</li></ul>La lista de dominios automáticos no se puede editar. | <Anchor target="_blank" href="/marketers/es/docs/pba-media-source-attribution-rules#visit-recognition-rules">Las visitas no se tienen en cuenta</Anchor> |
 
-**To exclude internal or external domains:**
+**Para excluir dominios internos o externos:**
 
-1. From the [Brand Bundles](/docs/pba-brand-bundles-and-settings#accessing-brand-bundles) page, select the brand bundle.  
-   The **Update Brand bundles** page opens.
-2. Go to the **Domain exclusion** tab.
-3. Click **Add domain.**
-4. Enter a domain name.
-5. Select a domain type: **Internal** or **External.**
-6. Click **Add domain.**  
-   It takes one hour for the exclusion to take effect.
+1. En la página [Paquetes de marca](/docs/pba-brand-bundles-and-settings#acceso-a-paquetes-de-marca), selecciona el paquete de marca.  
+   Se abre la página **Actualizar paquetes de marca**.
+2. Ve a la pestaña **Exclusión de dominios**.
+3. Haz clic en **Agregar dominio**.
+4. Ingresa un nombre de dominio.
+5. Selecciona un tipo de dominio: **Interno** o **Externo**.
+6. Haz clic en **Agregar dominio**.  
+   La exclusión tarda una hora en surtir efecto.
 
 </Accordion>
 
-## FAQ
+## Preguntas frecuentes
 
 <div id="can-i-include-the-same-app-in-more-than-one-bundle" />
 
-<Accordion title="Can I include the same app in more than one bundle?">
+<Accordion title="¿Puedo incluir la misma aplicación en más de un paquete?">
 
-**No.** Once an app is added to a bundle, it can't be added to another bundle.
+**No.** Una vez que se agrega una aplicación a un paquete, no se puede agregar a otro paquete.
 
 </Accordion>
 
 <div id="can-i-add-or-remove-apps-after-creating-a-bundle" />
 
-<Accordion title="Can I add or remove apps after creating a bundle?">
+<Accordion title="¿Puedo agregar o eliminar aplicaciones después de crear un paquete?">
 
-**No.** Once a bundle has been created, the apps included in it cannot change.
+**No.** Una vez que se ha creado un paquete, las aplicaciones incluidas en él no se pueden cambiar.
 
-**Why?** Each app has its own data, and AppsFlyer uses this data to analyze the user journey across platforms (web and app). If an app changed, this would involve a different set of data that is not compatible with the previous data.
+**¿Por qué?** ¿Por qué? **Debido a que cada aplicación tiene sus propios datos y AppsFlyer utiliza estos datos para analizar la trayectoria del usuario en todas las plataformas (web y aplicación). Si una aplicación cambia, esto implicaría un conjunto de datos diferente que no es compatible con los datos anteriores.**
 
 </Accordion>
 
 <div id="how-do-i-add-or-remove-delete-apps-from-a-bundle" />
 
-<Accordion title="How do I add or remove (delete) apps from a bundle?">
+<Accordion title="¿Cómo agrego o elimino aplicaciones de un paquete?">
 
-To change the bundle in which an app is included, delete the original bundle and create a new one that includes the app.
+Para cambiar el paquete en el que se incluye una aplicación, elimina el paquete original y crea uno nuevo que incluya la aplicación.
 
 </Accordion>
 
 <div id="what-happens-if-i-delete-a-bundle" />
 
-<Accordion title="What happens if I delete a bundle?">
+<Accordion title="¿Qué sucede si elimino un paquete?">
 
-#### faqs what happens if i delete a bundle
+#### Preguntas frecuentes ¿Qué sucede si elimino un paquete?
 
-If you delete a bundle:
+Si eliminas un paquete:
 
-* AppsFlyer stops attributing the bundle.
-* The bundle data is retained (in other words, it's not permanently deleted), but the bundle itself can't be restored in order to view the data.
+* AppsFlyer deja de atribuir el paquete.
+* Los datos del paquete se conservan (en otras palabras, no se eliminan de forma permanente), pero el paquete en sí no se puede restaurar para ver los datos.
 
-  **Why?** A new bundle uses a different web dev key so, even if it includes the same apps, the original bundle is not restored.
+  **¿Por qué?** Un nuevo paquete utiliza una clave de desarrollo web diferente, por lo que, aunque incluya las mismas aplicaciones, el paquete original no se restaura.
 
 </Accordion>
 
 <div id="why-are-certain-apps-not-available-for-me-to-add-to-a-bundle" />
 
-<Accordion title="Why are certain apps not available for me to add to a bundle?">
+<Accordion title="¿Por qué ciertas aplicaciones no están disponibles para agregarlas a un paquete?">
 
-* **Admins:** If you can't select an app when creating a bundle, be sure the app has been added to your AppsFlyer account and is not included in another bundle.
-* **Other account users:** Check with an account admin to ensure you have the required role and permissions to access to the apps you are trying to add.
+* **Administradores:** Si no puedes seleccionar una aplicación al crear un paquete, asegúrate de que la aplicación se haya agregado a tu cuenta de AppsFlyer y no esté incluida en otro paquete.
+* **Otros usuarios de la cuenta:** Consulta con un administrador de la cuenta para asegurarte de que tienes el rol y los permisos necesarios para acceder a las aplicaciones que intentas agregar.
 
 </Accordion>
 
 <div id="page-404" />
 
-<Accordion title="Why do I get the 'We couldn't find that Page' error when I try to view or create a brand bundle?">
+<Accordion title="¿Por qué recibo el error 'No pudimos encontrar esa página' cuando intento ver o crear un paquete de marca?">
 
-You probably didn’t subscribe to PBA. Please contact your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com) to upgrade your package.
+Probablemente no te suscrito a PBA. Contacta con tu CSM o con [hello@appsflyer.com](mailto:hello@appsflyer.com) para actualizar tu paquete.
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/onboarding-guide-to-people-based-attribution">Onboarding guide to PBA</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">PBA getting started</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/onboarding-guide-to-people-based-attribution">Guía de onboarding de PBA</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/people-based-attribution-pba-overview">Introducción a PBA</Anchor>
 
-<div data-zendesk-anchors="h_01HE0Y2A3A5W86YY44RWCTKM1Y=about-brand-bundles h_01HE0Y2A3AYAFFSPRSH2BQ00Z3=what-is-a-web-app h_01HE0Y2A3A7265NYM7GVBZVXEN=accessing-brand-bundles h_01HE0Y2A3A272QJ4ZQH7VXJWCC=managing-brand-bundles h_01HE0Y2A3ATX4ZDYZSRQGSJ4G7=add-brand-bundle h_01HE0Y2A3AQC5MMNQA0AV34MZ3=important h_01HE0Y2A3ATN6DEQ2KHCGT6VPQ=web-event-settings h_01HE0Y2A3A76VBZ17W4P1D0K2A=inapp-event-settings h_01HE0Y2A3A7F2YEW2SK0PSXXE4=domain-exclusion h_01HE0Y2A3AB24NCNPAYFC0J4YH=faq h_01HE0Y2A3A5E816CYG2TMZ37DA=can-i-include-the-same-app-in-more-than-one-bundle h_01HE0Y2A3BENKY1AM51VM76TVS=can-i-add-or-remove-apps-after-creating-a-bundle h_01HE0Y2A3BK4JKMTND0JFCB179=how-do-i-add-or-remove-delete-apps-from-a-bundle h_01HE0Y2A3BKJTQZJXV49X32N1E=what-happens-if-i-delete-a-bundle h_01HE0Y2A3B276FV92EYBCZRA6C=faqs-what-happens-if-i-delete-a-bundle h_01HE0Y2A3BEB2JG8CPSX3DA1V9=why-are-certain-apps-not-available-for-me-to-add-to-a-bundle h_01JTQF9DZZZ5JFN43Y5KJJV943=page-404 h_01HE0Y2KTXS06WHN57MQ91AD09=see-also" />
+<div data-zendesk-anchors="about-brand-bundles=sobre-los-paquetes-de-marca h_01HE0Y2A3A5W86YY44RWCTKM1Y=sobre-los-paquetes-de-marca h_01HE0Y2A3AYAFFSPRSH2BQ00Z3=qu%C3%A9-es-una-aplicaci%C3%B3n-web accessing-brand-bundles=acceso-a-paquetes-de-marca h_01HE0Y2A3A7265NYM7GVBZVXEN=acceso-a-paquetes-de-marca managing-brand-bundles=gesti%C3%B3n-de-paquetes-de-marca h_01HE0Y2A3A272QJ4ZQH7VXJWCC=gesti%C3%B3n-de-paquetes-de-marca h_01HE0Y2A3ATX4ZDYZSRQGSJ4G7=add-brand-bundle h_01HE0Y2A3AQC5MMNQA0AV34MZ3=importante h_01HE0Y2A3ATN6DEQ2KHCGT6VPQ=web-event-settings h_01HE0Y2A3A76VBZ17W4P1D0K2A=inapp-event-settings h_01HE0Y2A3A7F2YEW2SK0PSXXE4=domain-exclusion faq=preguntas-frecuentes h_01HE0Y2A3AB24NCNPAYFC0J4YH=preguntas-frecuentes h_01HE0Y2A3A5E816CYG2TMZ37DA=can-i-include-the-same-app-in-more-than-one-bundle h_01HE0Y2A3BENKY1AM51VM76TVS=can-i-add-or-remove-apps-after-creating-a-bundle h_01HE0Y2A3BK4JKMTND0JFCB179=how-do-i-add-or-remove-delete-apps-from-a-bundle h_01HE0Y2A3BKJTQZJXV49X32N1E=what-happens-if-i-delete-a-bundle faqs-what-happens-if-i-delete-a-bundle=preguntas-frecuentes-qu%C3%A9-sucede-si-elimino-un-paquete h_01HE0Y2A3B276FV92EYBCZRA6C=preguntas-frecuentes-qu%C3%A9-sucede-si-elimino-un-paquete h_01HE0Y2A3BEB2JG8CPSX3DA1V9=why-are-certain-apps-not-available-for-me-to-add-to-a-bundle h_01JTQF9DZZZ5JFN43Y5KJJV943=page-404 h_01HE0Y2KTXS06WHN57MQ91AD09=consulta-tambi%C3%A9n" />

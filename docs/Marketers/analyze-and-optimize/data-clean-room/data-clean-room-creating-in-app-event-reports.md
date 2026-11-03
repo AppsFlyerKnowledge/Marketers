@@ -1,5 +1,5 @@
 ---
-title: Data Clean Room—Creating In-app event reports
+title: 'Data Clean Room: creación de reportes de eventos in-app'
 metadata:
   keywords:
     - Premium
@@ -13,450 +13,450 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2022-09-22T12:03:40Z'
-  edited_at: '2024-07-22T12:05:41Z'
+  edited_at: '2026-08-12T11:52:35Z'
   id: 9312610473233
-  locale: en-us
+  locale: es
   section: Data Clean Room
   section_id: 4591191779217
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/9312610473233-Data-Clean-Room-Creating-In-app-event-reports
+  url: https://support.appsflyer.com/hc/es/articles/9312610473233
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Create In-app event reports to focus on user activity occurring after an app has been installed. Extract specific event parameters from your in-app event raw data, optionally match the data with custom sources, then process and present it in aggregated form.
+> **En resumen:** Crea reportes de eventos in-app para centrarte en la actividad del usuario que se produce después de instalar una aplicación. Extrae parámetros de eventos específicos del raw data de tus eventos in-app, haz coincidir los datos con fuentes personalizadas y, luego, procésalos y preséntalos en forma agregada.
 
-## Creating an In-app event report
+## Creación de un reporte de eventos in-app
 
-**To create an In-app event report, follow the steps detailed in the tabs below.**
+**Para crear un reporte de eventos in-app, sigue los pasos que se detallan en las pestañas a continuación.**
 
-**Note:** These steps are divided into tabs for ease of reading. All steps must be completed in order to create the report. *(Certain steps, as indicated, are not relevant for reports that don't use custom sources.)*
+**Nota:** Estos pasos se dividen en pestañas para facilitar la lectura. Se deben completar todos los pasos para crear el reporte. *(Algunos pasos, como se indica, no son relevantes para los reportes que no usan fuentes personalizadas).*
 
 <div id="perform-preliminary-steps" />
 
-<Accordion title="Perform preliminary steps">
+<Accordion title="Realizar los pasos preliminares">
 
-1. Go to the **Reports** tab of the **DCR.**
-2. Click the **+ New report** button.
-3. Select **In-app events** as the type of source data, then click **Next** in the bottom right corner of the screen.
-4. Enter a name for the report.
-   * This can be any name that will help you identify the report in the DCR platform.
-   * **Important!** Ensure that the report name is different from all other reports in your account or you will not be able to [save the report](/docs/data-clean-room-creating-in-app-event-reports#configure-report-settings-and-save-the-report).
-   * Report name requirements:
-     * Length: 2-80 characters
-     * Valid characters:
-       * letters **(A-Z, a-z)**
-       * numbers **(0-9)**, *cannot be the first character of a name*
-       * a hyphen (-), *cannot be the first character of a name*
-     * Invalid characters:
-       * spaces
-       * all other symbols or special characters
+1. Ve a la pestaña **Reportes** de **DCR**.
+2. Haz clic en el botón **+ Nuevo reporte**.
+3. Selecciona **Eventos in-app** como el tipo de datos de origen y, a continuación, haz clic en **Siguiente** en la esquina inferior derecha de la pantalla.
+4. Introduce un nombre para el reporte.
+   * Puede ser cualquier nombre que te ayude a identificar el reporte en la plataforma DCR.
+   * **Nota:** **Importante:** Asegúrate de que el nombre del reporte sea diferente de todos los demás reportes de tu cuenta, de lo contrario no podrás [guardar el reporte](/docs/data-clean-room-creating-in-app-event-reports#configure-report-settings-and-save-the-report).
+   * Requisitos del nombre del reporte:
+     * Longitud: 2-80 caracteres
+     * Caracteres válidos:
+       * letras **(A-Z, a-z)**
+       * números **(0-9)**, *no pueden ser el primer carácter de un nombre*
+       * un guión (-), *no puede ser el primer carácter de un nombre*
+     * Caracteres inválidos:
+       * espacios
+       * todos los demás símbolos o caracteres especiales
 
 </Accordion>
 
 <div id="select-sources" />
 
-<Accordion title="Select sources">
+<Accordion title="Seleccionar las fuentes">
 
-Specify the source data to be used for the report:
+Especifica los datos de origen que se utilizarán para el reporte:
 
-#### **In-app event sources**
+#### **Fuentes de eventos in-app**
 
-* **Apps:** Select one or more of the apps in your AppsFlyer account.
-* **Timeframe:** Select the number of days of historical data you want the DCR to search for in-app events (from 1 to 30 days).
-* **Events:** Select one or more in-app events to include in the report.
-  * The available events include all in-app events **from the selected apps** that have been configured to report data to AppsFlyer via the SDK or the server-to-server API (S2S).
-* **Source types:** Select one or more types of in-app event data:
+* **Aplicaciones:** selecciona una o más de las aplicaciones en tu cuenta de AppsFlyer.
+* **Periodo de tiempo:** selecciona la cantidad de días de datos históricos que deseas que DCR busque para eventos in-app (de 1 a 30 días).
+* **Eventos:** selecciona uno o más eventos in-app para incluirlos en el reporte.
+  * Los eventos disponibles incluyen todos los eventos in-app **de las aplicaciones seleccionadas** que se configuraron para reportar datos a AppsFlyer a través del SDK o de la API de servidor a servidor (S2S).
+* **Tipos de fuentes:** selecciona uno o más tipos de datos de eventos in-app: 
 
-| Installs | In-app events related to install attributions<ul><li>An install is recorded when a user downloads, installs, and launches a mobile app.</li></ul> |
+| Instalaciones | Eventos in-app relacionados con las atribuciones de instalaciones<ul><li>Una instalación se registra cuando un usuario descarga, instala e inicia una aplicación móvil.</li></ul> |
 | --- | --- |
-| Re-engagements | In-app events related to re-engagements<ul><li>A re-engagement is recorded when an inactive user of a specific app engages with a retargeting campaign for the app and subsequently launches it.</li></ul> |
-| Reattributions | In-app events related to re-attributions<ul><li>A re-attribution is recorded when a former user of a specific app (who had uninstalled it) engages with a retargeting campaign for the app and subsequently reinstalls it.</li></ul> |
+| Reengagements | Eventos in-app relacionados con reengagements<ul><li>Un reengagement se registra cuando un usuario inactivo de una aplicación específica interactúa con una campaña de retargeting para la aplicación y posteriormente la abre.</li></ul> |
+| Reatribuciones | Eventos in-app relacionados con las reatribuciones<ul><li>Una reatribución se registra cuando un antiguo usuario de una aplicación específica (que la había desinstalado) participa en una campaña de retargeting para la aplicación y, posteriormente, la reinstala.</li></ul> |
 
-#### **Data sources**
+#### **Fuentes de datos**
 
-1. [Optional] Add more sources to use in the report. When choosing whether to more sources, note the significant difference between reports that **do** and **do not** use custom sources.
-   * A report that **doesn't** use custom sources extracts specific event parameters and values from the in-app event raw data.
-   * A report that **does** use custom sources extracts specific event parameters and values from the in-app event raw data, then matches this data with user-level data from your custom sources (such as data from your BI or CRM systems).
-2. Complete the next steps based on whether or not your report uses custom sources:
-   * If your report **doesn't** use custom sources, skip to **[Select dimensions](/docs/data-clean-room-creating-in-app-event-reports#select-dimensions),** then continue with the steps in all remaining tabs.
-   * If your report **does** use custom sources, continue with the steps in the [**Join sources**](#join-sources-only-for-reports-containing-custom-sources) tab (immediately following) and all remaining tabs.
+1. [Opcional] Agrega más fuentes para usar en el reporte. A la hora de elegir si deseas más fuentes, ten en cuenta la diferencia significativa entre los reportes que **sí** y los que **no** usan fuentes personalizadas.
+   * Un reporte que **no** usa fuentes personalizadas extrae parámetros y valores de eventos específicos del raw data de los eventos in-app.
+   * Un reporte que **sí** usa fuentes personalizadas extrae parámetros y valores de eventos específicos del raw data de los eventos in-app y, luego, compara estos datos con datos de nivel de usuario de sus fuentes personalizadas (como datos de sus sistemas de BI o CRM).
+2. Completa los siguientes pasos en función de si el reporte usa o no fuentes personalizadas:
+   * Si tu reporte **no** usa fuentes personalizadas, salta a **[Seleccionar dimensiones](/docs/data-clean-room-creating-in-app-event-reports#select-dimensions),** y luego continúa con los pasos de todas las pestañas restantes.
+   * Si tu reporte **sí** usa fuentes personalizadas, continúa con los pasos de la sección [**Unir fuentes**](#join-sources-only-for-reports-containing-custom-sources) (a continuación) y todas las pestañas restantes.
 
 </Accordion>
 
-The following step is relevant **only for reports that use custom sources.**
+El siguiente paso es relevante **solo para reportes que usan fuentes personalizadas.**
 
 <div id="join-sources-only-for-reports-containing-custom-sources" />
 
-<Accordion title="Join sources (only for reports containing custom sources)">
+<Accordion title="Unir fuentes (solo para reportes que contienen fuentes personalizadas)">
 
-In order to match data among sources, each of the **custom** sources used in the report must include an <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services">identifier</Anchor> mapped to a **key identifier** in the in-app event data.
+Con el fin de hacer coincidir los datos entre las fuentes, cada una de las fuentes **personalizadas** usadas en el reporte debe incluir un <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services">identificador</Anchor> asignado a un **identificador clave** en los datos del evento in-app.
 
-* In-app event reports include **all** selected events matching the key identifier during the selected timeframe.
+* Los reportes de eventos in-app incluyen **todos** los eventos seleccionados que coincidan con el identificador clave durante el período de tiempo seleccionado.
 
-#### **What is a key identifier?**
+#### **¿Qué es un identificador clave?**
 
-You can map to either of these in-app event data identifiers as **key identifiers:**
+Puedes asignar a cualquiera de estos identificadores de datos de eventos in-app como **identificadores clave:**
 
-* **AppsFlyer ID (af\_id):** A unique app identifier generated by AppsFlyer at installation –
-  * This ID appears in all events recorded by AppsFlyer.
-  * A new AppsFlyer ID is generated if an app is deleted and then reinstalled.
-* **Customer User ID (CUID):** A unique user identifier usually generated and set by the app owner at the time of user registration.
-  * Using CUID to map data requires that your app is configured to <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">send the CUID to AppsFlyer</Anchor> via the SDK or the server-to-server API (S2S).
+* **ID de AppsFlyer (af\_id):** un identificador único de la aplicación generado por AppsFlyer en la instalación:
+  * Este ID aparece en todos los eventos registrados por AppsFlyer.
+  * Se genera un nuevo ID de AppsFlyer si se elimina una aplicación y luego se vuelve a instalar.
+* **ID de usuario de cliente (CUID):** un identificador de usuario único, generalmente generado y establecido por el propietario de la aplicación en el momento del registro del usuario.
+  * El uso de CUID para asignar datos requiere que la aplicación esté configurada para <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">enviar el CUID a AppsFlyer</Anchor> a través del SDK o de la API de servidor a servidor (S2S).
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Not all media sources permit matching using CUID. It is highly recommended to use AppsFlyer ID.
+> No todas las fuentes de medios permiten la coincidencia mediante el CUID. Se recomienda encarecidamente utilizar el ID de AppsFlyer.
 
-#### **Mapping schemes (direct/indirect)**
+#### **Esquemas de asignación (directa/indirecta)**
 
-If the report includes more than one custom source, only one of them needs to be mapped **directly** to an in-app event key identifier. Other custom sources can be mapped either **directly or indirectly,** as illustrated in the following example:
+Si el reporte incluye más de una fuente personalizada, solo es necesario asignar una de ellas **directamente** a un identificador clave de evento in-app. Se pueden asignar otras fuentes personalizadas **directa o indirectamente**, como se ilustra en el siguiente ejemplo:
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
 > ![dcr_mapping_identifiers_in-app events.png](https://files.readme.io/73d0e929663bda4e6f142c64d0228fdf1eeec3b02ef1560f6f03f2a089d00664-9969546429713.png)
 >
-> In the scenario shown above:
+> En el escenario que se muestra arriba:
 >
-> * Custom source #1 identifier **AF** is mapped directly to the in-app event key identifier **af\_id.**
-> * Custom source #2 is mapped indirectly: **user\_code** --> **AF** --> **af\_id.**
-> * Custom source #3 is mapped indirectly (through a longer chain): **user\_id** --> **user\_code** --> **AF** --> **af\_id.**
-> * Custom source #4 identifier **ID** is mapped directly to the in-app event key identifier **af\_id.**
->   * Note that it could have been mapped indirectly instead (through custom source #3 identifier **user\_id**), but either option works fine.
+> * El identificador de fuente personalizada n.º 1, **AF**, se asigna directamente al identificador clave del evento in-app **af\_id**.
+> * La fuente personalizada n.º 2 se asigna indirectamente: **user\_code** --> **AF** --> **af\_id**.
+> * La fuente personalizada n.º 3 se asigna indirectamente (a través de una cadena más larga):
+>   **user\_id** --> **user\_code** --> **AF** --> **af\_id**.
+> * El identificador de fuente personalizada n.º 4 **ID** se asigna directamente al identificador clave del evento in-app **af\_id**.
+>   * Ten en cuenta que podría haberse asignado indirectamente en su lugar (a través del identificador de fuente personalizada n.º 3 **user\_id**), pero cualquiera de las dos opciones funciona bien.
 >
-> ✓ This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the in-app event key identifier **af\_id.**
+> ✓ Este esquema de asignación funciona para hacer coincidir los datos entre todas las fuentes, ya que cada fuente personalizada se asigna directa o indirectamente al identificador clave de evento in-app **af\_id**.
 
 </Accordion>
 
-The remaining tabs are relevant for **all in-app event reports,** whether or not they include custom sources.
+Las pestañas restantes son relevantes para **todos los reportes de eventos in-app,** ya sea que incluyan o no fuentes personalizadas.
 
 <div id="select-dimensions" />
 
-<Accordion title="Select dimensions">
+<Accordion title="Seleccionar las dimensiones">
 
-Recall that user-level data cannot be reported by the DCR. Instead, it provides you with the decision-making insights you need by aggregating (or grouping) the data by the dimensions you choose.
+Recuerda que los datos a nivel de usuario no pueden ser reportados por DCR. En su lugar, te proporciona la información necesaria para la toma de decisiones agregando (o agrupando) los datos por las dimensiones que elijas.
 
-A dimension is generally an attribute by which you categorize app users (for example, geo, install date, campaign, etc.)
+Por lo general, una dimensión es un atributo por el que se clasifican los usuarios de la aplicación (por ejemplo, geolocalización, fecha de instalación, campaña, etc.).
 
-#### **Extracting dimensions from event\_value**
+#### **Extracción de dimensiones de event\_value**
 
-When in-app events are reported to AppsFlyer via the SDK or the S2S API, much of the raw data is contained in a single field called **event\_value.** This structured data field includes all of the specific in-app event parameters that have been configured for the events that your apps send to AppsFlyer.
+Cuando los eventos in-app se reportan a AppsFlyer a través del SDK o la API de S2S, gran parte del raw data están contenido en un solo campo llamado **event\_value.** Este campo de datos estructurados incluye todos los parámetros específicos de los eventos in-app que se han configurado para los eventos que tus aplicaciones envían a AppsFlyer.
 
-One of the major advantages of In-app event reports is that they allow you to extract specific parameters and their values from the **event\_value** field for the events you choose.
+Una de las principales ventajas de los reportes de eventos in-app es que te permiten extraer parámetros específicos y sus valores del **event\_value** para los eventos que elijas.
 
-**To extract dimensions from the event\_value field for use in DCR reports:**
+**Para extraer dimensiones del campo event\_value para utilizarlas en reportes de DCR:**
 
-1. In the **Dimensions from sources** list, click the <Image alt="extract_dimension_button.png" src="https://files.readme.io/c238da4a1d2a15fe2249070747fa6247db63ab4129b1c72804b84550675214f3-10754426767761.png" width="123px" /> button.
+1. En la lista **Dimensiones de las fuentes**, haz clic en el botón <Image alt="extract_dimension_button.png" src="https://files.readme.io/c238da4a1d2a15fe2249070747fa6247db63ab4129b1c72804b84550675214f3-10754426767761.png" width="123px" /> .
 
-   The **Extract field from event\_value** window opens.
-2. In the **Report field** box, enter the name of the extracted dimension as you would like it to appear in your report.
-3. From the **Event\_value parameter** list, select the in-app event parameter that should be mapped by default to the report field (dimension) you defined in step 2.
-   * The available parameters include those that have been configured in the **selected in-app events** **in the selected apps**.
-4. It may be that the default mapping differs by app and/or event. If this is the case:
-   1. Click the **Add exception** button
-   2. Select the app and event for which the report field should be mapped differently.
-   3. Select the in-app event parameter that should be mapped to the report field for this combination of app/event.
-   4. Follow these steps for as many exceptions as you want to set up.
-5. When you are finished setting up the mapping for the extracted dimension, click **Save and add another** to extract another dimension from the event\_value field or **Save** to return to the main screen.
+   Se abre la ventana **Extraer campo de event\_value**.
+2. En el cuadro **Campo de reporte**, introduce el nombre de la dimensión extraída tal y como deseas que aparezca en el reporte.
+3. Del **parámetro event\_value**, selecciona el parámetro de evento in-app que se debe asignar de forma predeterminada al campo de reporte (dimensión) que definiste en el paso 2.
+   * Los parámetros disponibles incluyen aquellos que se han configurado en los **eventos in-app seleccionados** **de las aplicaciones seleccionadas**.
+4. Es posible que la asignación predeterminada difiera según la aplicación o el evento. Si este es el caso:
+   1. Haz clic en el botón **Agregar excepción**
+   2. Selecciona la aplicación y el evento para los que se debe asignar el campo de reporte de forma diferente.
+   3. Selecciona el parámetro de evento in-app que se debe asignar al campo de reporte para esta combinación de aplicación y evento.
+   4. Sigue estos pasos para tantas excepciones como desees configurar.
+5. Cuando hayas terminado de configurar la asignación para la dimensión extraída, haz clic en **Guardar y agregar otra** para extraer otra dimensión del campo event\_value o en **Guardar** para volver a la pantalla principal.
 
-**To edit extracted dimensions:**
+**Para editar las dimensiones extraídas:**
 
-1. In either the **Dimensions from sources** or the **Report dimensions** list, hover over the name of the dimension you want to edit.
-2. Click the <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> button that displays to the right of the dimension.
-3. Select **Edit extracted field.**
-4. Make changes to the **Report field** name and/or parameter mapping as necessary.
-5. Click **Save** to save your changes.
+1. En la lista **Dimensiones de las fuentes** o **Dimensiones del reporte**, coloca el cursor sobre el nombre de la dimensión que deseas editar.
+2. Haz clic en el botón <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> que se muestra a la derecha de la dimensión.
+3. Selecciona **Editar campo extraído**.
+4. Realiza los cambios necesarios en la asignación de nombre y/o parámetros del **Campo de reporte**.
+5. Haz clic en **Guardar** para guardar tus cambios.
 
-**To delete extracted dimensions:**
+**Para eliminar las dimensiones extraídas:**
 
-1. In either the **Dimensions from sources** or the **Report dimensions** list, hover over the name of the dimension you want to delete.
-2. Click the <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> button that displays to the right of the dimension.
-3. Select **Delete field.**
-   * **Caution!** If you delete an extracted field from the **Report dimensions** list, it will delete the definition of the extracted field. If you wish to remove the field from the report while preserving its definition, select the field and use the **Remove** button instead.
+1. En la lista **Dimensiones de las fuentes** o **Dimensiones del reporte**, coloca el cursor sobre el nombre de la dimensión que deseas eliminar.
+2. Haz clic en el botón <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> que se muestra a la derecha de la dimensión.
+3. Selecciona **Eliminar campo**.
+   * **¡Importante!** Si eliminas un campo extraído de la lista **Dimensiones del reporte**, se eliminará la definición del campo extraído. Si deseas quitar el campo del reporte conservando su definición, selecciona el campo y usa el comando **Quitar** en su lugar.
 
-#### **Selecting report dimensions**
+#### **Selección de las dimensiones del reporte**
 
-In-app event report dimensions can include:
+Las dimensiones del reporte de eventos in-app pueden incluir:
 
-* Dimensions you've extracted from event\_value
-* [Default in-app event dimensions](/docs/data-clean-room-creating-in-app-event-reports#default-inapp-event-dimensions)
-* Any field in the report's custom sources that has been <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#3-define-the-source-structure">categorized as a dimension</Anchor> (if applicable)
+* Dimensiones que has extraído de event\_value
+* [Dimensiones predeterminadas de eventos in-app](/docs/data-clean-room-creating-in-app-event-reports#default-inapp-event-dimensions)
+* Cualquier campo de las fuentes personalizadas del reporte que se haya <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#3-define-the-source-structure">categorizado como una dimensión</Anchor> (si corresponde)
 
-**To select the dimensions to include in your report:**
+**Para seleccionar las dimensiones que se incluirán en el reporte:**
 
-1. Select one or more dimensions in the **Dimensions from sources** list on the left and use the **Add** button in the middle of the screen to add them to the list of **Report dimensions.**
-   * You can use the search bar to search for dimensions in the lists.
-2. To remove a dimension, select it from the **Report dimensions** list and use the **Remove** button to return it to the **Dimensions from sources** list.
-3. Repeat this process until you have added each dimension you want to include in the report.
+1. Selecciona una o más dimensiones en la lista **Dimensiones de las fuentes** de la izquierda y usa el botón **Agregar** en el centro de la pantalla para agregarlas a la lista de **Dimensiones del reporte**.
+   * Puedes usar la barra de búsqueda para buscar dimensiones en las listas.
+2. Para quitar una dimensión, selecciónala en la lista **Dimensiones del reporte** y usa la función **Quitar** para devolverla a la lista **Dimensiones de las fuentes**.
+3. Repite este proceso hasta que hayas agregado cada dimensión que desees incluir en el reporte.
 
-**Note:** By default, all reports are grouped by the in-app event dimension **media\_source.** If you do not wish to use this dimension in your report, you can remove it from the **Report dimensions** list.
+**Nota:** De forma predeterminada, todos los reportes se agrupan por la dimensión de evento in-app **media\_source**. Si no deseas utilizar esta dimensión en el reporte, puedes quitarla de la lista **Dimensiones del reporte**.
 
-#### **[Optional] Customizing dimension display names**
+#### **[Opcional] Personalización de nombres para mostrar de las dimensiones**
 
-By default, dimension names are displayed in your report exactly as they are named in the in-app event data or your custom sources. If you wish, you can customize dimension names for your report.
+De forma predeterminada, los nombres de las dimensiones se muestran en el reporte exactamente como se nombran en los datos de eventos in-app o en las fuentes personalizadas. Si lo deseas, puede personalizar los nombres de las dimensiones para el reporte.
 
-**To customize dimension display names:**
+**Para personalizar los nombres para mostrar de las dimensiones:**
 
-1. In the **Report dimensions** list, hover over the name of the dimension whose display name you want to edit.
-2. Click the edit button ![edit_button.png](https://files.readme.io/f4ef4722724c776ce4034ab07492a4ac80825f6f15350911c1cbb51ac4843092-10754262613649.png) that displays to the right of the dimension.
-3. Change the name to the dimension display name to be used in your report (up to 50 characters).
-4. Click **OK** to save the display name, or **X** to cancel it.
+1. En la lista **Dimensiones del reporte**, coloca el cursor sobre el nombre de la dimensión cuyo nombre para mostrar deseas editar.
+2. Haz clic en el botón Editar ![edit_button.png](https://files.readme.io/f4ef4722724c776ce4034ab07492a4ac80825f6f15350911c1cbb51ac4843092-10754262613649.png) que se muestra a la derecha de la dimensión.
+3. Cambia el nombre por el nombre para mostrar de la dimensión que se utilizará en el reporte (hasta 50 caracteres).
+4. Haz clic en **Aceptar** para guardar el nombre para mostrar, o en **X** para cancelar.
 
-**Note:** If you want to change the name of an **extracted dimension**, use the steps for editing extracted dimensions (above).
+**Nota:** Si deseas cambiar el nombre de una **dimensión extraída**, sigue los pasos para editar las dimensiones extraídas (arriba).
 
-#### **Preserving privacy while grouping by dimension (regrouping)**
+#### **Preservación de la privacidad mientras se agrupa por dimensión (reagrupación)**
 
-Depending on the size of your data set, the number of dimensions you choose, and other factors, it's possible that a report would include one or more groups containing too few users to allow reporting. If the data were reported this way, it would violate restrictions against providing user-level data.
+En función del tamaño del conjunto de datos, el número de dimensiones que elijas y otros factores, es posible que un reporte incluya uno o varios grupos que contengan muy pocos usuarios para permitir la generación de reportes. Si los datos se reportaran de esta manera, se infringirían las restricciones contra el suministro de datos a nivel de usuario.
 
-However, instead of removing or hiding the data from the report completely, the DCR uses a **regrouping mechanism** to provide as much detail as possible while maintaining user privacy.
+Sin embargo, en lugar de eliminar u ocultar los datos del reporte por completo, DCR utiliza un **Mecanismo de reagrupamiento** para proporcionar tantos detalles como sea posible mientras se mantiene la privacidad del usuario.
 
-> 📄 **Regrouping example**
+> 📄 **Ejemplo de reagrupamiento**
 >
-> Assume you have set up a report according to the following dimensions (in order):
+> Supongamos que has configurado un reporte de acuerdo con las siguientes dimensiones (en orden):
 >
-> * **In-app event dimensions:**
+> * **Dimensiones de eventos in-app:**
 >   * media source
->   * campaign
+>   * campaña única
 >   * adset\_name
->   * ad\_id
-> * **Custom source dimensions:**
+>   * id\_adset
+> * **Dimensiones de fuentes personalizadas:**
 >   * user\_type
 >
-> **Before regrouping**
+> **Antes de reagrupar**
 >
-> After initial analysis of the data, the DCR determines that the data would break down as follows:
+> Después del análisis inicial de los datos, DCR determina que los datos se desglosarían de la siguiente manera:
 >
 >
 >
-> | media  <br />source | campaign | adset  <br />name | ad  <br />id | user  <br />type | rev  <br />D0 | rev  <br />D7 | count | reportable? |
+> | Fuente de  <br />medios | campaña única | Nombre del  <br />conjunto de anuncios | ID de  <br />anuncio | Tipo de  <br />usuario | rev  <br />D0 | Ingresos  <br />D7 | cuenta | ¿Reportable? |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | ✓ |
-> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | ✓ |
-> | media\_source | UA\_200 | green | lkh123 | beg | 6 | 7 | x | **X** |
-> | media\_source | UA\_200 | green | ilk945 | beg | 3 | 21 | x | **X** |
-> | media\_source | UA\_200 | green | plm654 | beg | 8 | 17 | x | **X** |
+> | fuente\_de\_medios | UA\_100 | verde | kjh867 | comprador | 1 | 4 | 120 | ✓ |
+> | fuente\_de\_medios | UA\_101 | verde | jkj987 | ultra | 2 | 23 | 220 | ✓ |
+> | fuente\_de\_medios | UA\_200 | verde | lkh123 | beg | 6 | 7 | . | **X** |
+> | fuente\_de\_medios | UA\_200 | verde | ilk945 | beg | 3 | 21 | . | **X** |
+> | fuente\_de\_medios | UA\_200 | verde | PLM654 | beg | 8 | 17 | . | **X** |
 >
 >
 >
-> As it stands, the final 3 rows are not reportable because there are too few users in each. (This media source requires a minimum of **y** users in order to be reportable. Here, we have only **x**.)
+> En la actualidad, las últimas 3 filas no se pueden notificar porque hay muy pocos usuarios en cada una. (Esta fuente de medios requiere un mínimo de **y** usuarios con el fin de ser reportables. Aquí, solo tenemos **x**).
 >
-> According to the regrouping logic, the DCR first "eliminates" the last-listed in-app event dimension (in this case, **ad\_id**). It then analyzes the data again to see which rows are reportable.
+> De acuerdo con la lógica de reagrupamiento, DCR primero "elimina" la última dimensión de evento in-app enumerada (en este caso, **ad\_id**). A continuación, vuelve a analizar los datos para ver qué filas se pueden reportar.
 >
-> **After regrouping**
+> **Después de reagrupar**
 >
-> After applying the regrouping logic, the report appears as follows:
+> Después de aplicar la lógica de reagrupamiento, el reporte aparece de la siguiente manera:
 >
 >
 >
-> | media  <br />source | campaign | adset  <br />name | ad  <br />id | user  <br />type | rev  <br />D0 | rev  <br />D7 | count | reportable? |
+> | Fuente de  <br />medios | campaña única | Nombre del  <br />conjunto de anuncios | ID de  <br />anuncio | Tipo de  <br />usuario | rev  <br />D0 | Ingresos  <br />D7 | cuenta | ¿Reportable? |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | ✓ |
-> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | ✓ |
-> | media\_source | UA\_200 | green | RESTRICTED | beg | 17 | 45 | y (x+x+x) | ✓ |
+> | fuente\_de\_medios | UA\_100 | verde | kjh867 | comprador | 1 | 4 | 120 | ✓ |
+> | fuente\_de\_medios | UA\_101 | verde | jkj987 | ultra | 2 | 23 | 220 | ✓ |
+> | fuente\_de\_medios | UA\_200 | verde | RESTRINGIDO | beg | 17 | 45 | y (x+x+x) | ✓ |
 >
 >
 >
-> **Results:**
+> **Resultados:**
 >
-> * The last row now combines the data that had previously been on 3 rows. Now, the combined row has a user count equal to **y** and can be reported.
-> * The dimension that was eliminated is now reported as RESTRICTED.
-> * Had there still been unreportable rows (fewer than **y** users), the DCR would continue to analyze the data on an iterative basis, eliminating one dimension after another until it either:
->   * can report all rows; or
->   * runs out of in-app event dimensions to eliminate
+> * La última fila ahora combina los datos que anteriormente habían estado en 3 filas. Ahora, la fila combinada tiene un recuento de usuarios igual a **y**, y se puede reportar.
+> * La dimensión que se eliminó ahora se reporta como RESTRICTED.
+> * Si todavía hubiera habido filas no reportables (menos de **y** usuarios), DCR continuaría analizando los datos de forma iterativa, eliminando una dimensión tras otra hasta que:
+>   * pueda reportar todas las filas; o
+>   * se quede sin dimensiones de eventos in-app para eliminar
 >
-> **Note:** By default, the DCR applies regrouping only to **[default in-app event dimensions](/docs/data-clean-room-creating-in-app-event-reports#default-inapp-event-dimensions)** (not to extracted in-app event dimensions or custom source dimensions). If data grouped by a default in-app event dimension would result in a row containing fewer than **y** users, the data in that row will be reported as RESTRICTED.
+> **Nota:** De forma predeterminada, DCR aplica el reagrupamiento solo a **[dimensiones predeterminadas de eventos in-app](/docs/data-clean-room-creating-in-app-event-reports#default-inapp-event-dimensions)** (no a las dimensiones de eventos in-app extraídas ni a las dimensiones de fuentes personalizadas). Si los datos se agrupan por una dimensión de evento in-app predeterminada, el resultado sería una fila que contiene menos de **y** usuarios, y los datos de esa fila se notificarían como RESTRICTED.
 >
-> * *See below for an advanced option you can use to apply regrouping to custom source dimensions as well.*
+> * *Consulta a continuación una opción avanzada que puedes usar para aplicar también el reagrupamiento a las dimensiones de fuentes personalizadas.*
 
-#### **[Optional] Managing dimension priority**
+#### **[Opcional] Administración de la prioridad de las dimensiones**
 
-By default, in-app event dimensions are eliminated in reverse order from the order in which they appear in the **Report dimensions** list. However, you can modify the default sequence and/or apply regrouping to selected custom source dimensions (if applicable) in order to preserve the dimensions most important to you.
+De forma predeterminada, las dimensiones de eventos in-app se eliminan en orden inverso al orden en el que aparecen en la lista **Dimensiones del reporte**. Sin embargo, puedes modificar la secuencia predeterminada y/o aplicar el reagrupamiento a las dimensiones de fuentes personalizadas seleccionadas (si corresponde) para conservar las dimensiones más importantes para ti.
 
-**To change the order in which dimensions are eliminated:**
+**Para cambiar el orden en el que se eliminan las dimensiones:**
 
-1. Click the **Manage dimension priority** button.
-2. Select a dimension and drag it to the desired position in the list (or use the arrow buttons on the right to move it).
-   * The dimension labeled as **Highest priority** (at the top of the list) means it's the last to be eliminated if regrouping is required.
-3. [Optional] To apply regrouping to custom source dimensions (for reports using custom sources):
-   1. Click **Use advanced options to refine regrouping**
-   2. Select custom source dimensions to which you'd like to apply regrouping.
-   3. The selected dimensions are added to the **Manage dimension priority** list.
-      * By default, these dimensions are added to the bottom of the list, as **Lowest priority** for regrouping. However, you can reorder them just like in-app event dimensions as described above.
-4. Click **OK** to save your changes.
-   * The **Report dimensions** list on the main screen remains in its original order, but the revised order has been saved. (Click again on the **Manage dimension priority** button if you wish to review or edit your selection.)
+1. Haz clic en el botón **Administrar la prioridad de las dimensiones**.
+2. Selecciona una dimensión y arrástrala a la posición deseada en la lista (o usa los botones de flecha de la derecha para moverla).
+   * La dimensión etiquetada como **Máxima prioridad** (en la parte superior de la lista) significa que es la última en ser eliminada si se requiere reagrupamiento.
+3. [Opcional] Para aplicar el reagrupamiento a dimensiones de fuentes personalizadas (para reportes que utilizan fuentes personalizadas):
+   1. Haz clic en **Usar opciones avanzadas para refinar el reagrupamiento**
+   2. Selecciona las dimensiones de fuentes personalizadas a las que deseas aplicar el reagrupamiento.
+   3. Las dimensiones seleccionadas se añaden a la lista **Administrar la prioridad de las dimensiones**.
+      * De forma predeterminada, estas dimensiones se agregan al final de la lista, como **Prioridad más baja** para el reagrupamiento. Sin embargo, puedes reordenarlas al igual que las dimensiones de los eventos in-app, como se ha descrito anteriormente.
+4. Haz clic en **Aceptar** para guardar los cambios.
+   * La lista **Dimensiones del reporte** en la pantalla principal permanece en su orden original, pero el orden revisado se ha guardado. (Haz clic de nuevo en el icono **Administrar la prioridad de las dimensiones** si deseas revisar o editar tu selección).
 
 </Accordion>
 
 <div id="select-metrics" />
 
-<Accordion title="Select metrics">
+<Accordion title="Seleccionar métricas">
 
-Metrics are the numeric data you have collected with respect to an app user (examples might include revenue, number of app opens, LTV, etc.) and can be any numeric data field from your sources that you have categorized as a metric.
+Las métricas son los datos numéricos que has recopilado con respecto a un usuario de la aplicación (por ejemplo, pueden incluir ingresos, número de aperturas de la aplicación, LTV, etc.) y pueden ser cualquier campo de datos numéricos de tus fuentes que hayas categorizado como métrica.
 
-#### **Extracting metrics from event\_value**
+#### **Extracción de métricas de event\_value**
 
-Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-event-reports#select-dimensions), you can extract in-app event parameters from the **event\_value** field for use as metrics in your reports.
+Al igual que para las [dimensiones del reporte](/docs/data-clean-room-creating-in-app-event-reports#select-dimensions), puedes extraer parámetros de eventos in-app del campo **event\_value** para usarlos como métricas en tus reportes.
 
-**To extract dimensions from the event\_value field for use in DCR reports:**
+**Para extraer dimensiones del campo event\_value para utilizarlas en reportes de DCR:**
 
-1. In the **Metrics from sources** list, click the <Image alt="extract_metric_button.png" src="https://files.readme.io/93ca5970968816d452331df4ce5ff4cfb678cbb24f65eb99fe01bd3bb3016959-10755235273233.png" width="102px" /> button.
+1. En la lista **Métricas de fuentes**, haz clic en el botón <Image alt="extract_metric_button.png" src="https://files.readme.io/93ca5970968816d452331df4ce5ff4cfb678cbb24f65eb99fe01bd3bb3016959-10755235273233.png" width="102px" /> .
 
-   The **Extract field from event\_value** window opens.
-2. In the **Report field** box, enter the name of the extracted metric as you would like it to appear in your report.
-3. From the **Event\_value parameter** list, select the in-app event parameter that should be mapped by default to the report field (metric) you defined in step 2.
-   * The available parameters include those that have been configured in the **selected in-app events** **in the selected apps**.
-4. It may be that the default mapping differs by app and/or event. If this is the case:
-   1. Click the **Add exception** button
-   2. Select the app and event for which the report field should be mapped differently.
-   3. Select the in-app event parameter that should be mapped to the report field for this combination of app/event.
-   4. Follow these steps for as many exceptions as you want to set up.
-5. When you are finished setting up the mapping for the extracted metric, click **Save and add another** to extract another metric from the event\_value field or **Save** to return to the main screen.
+   Se abre la ventana **Extraer campo de event\_value**.
+2. En el cuadro **Campo de reporte**, introduce el nombre de la métrica extraída tal y como deseas que aparezca en el reporte.
+3. En la lista **Parámetro de event\_value**, selecciona el parámetro de evento in-app que se debe asignar de forma predeterminada al campo de reporte (métrica) que definiste en el paso 2.
+   * Los parámetros disponibles incluyen aquellos que se han configurado en los **eventos in-app seleccionados** **de las aplicaciones seleccionadas**.
+4. Es posible que la asignación predeterminada difiera según la aplicación o el evento. Si este es el caso:
+   1. Haz clic en el botón **Agregar excepción**
+   2. Selecciona la aplicación y el evento para los que se debe asignar el campo de reporte de forma diferente.
+   3. Selecciona el parámetro de evento in-app que se debe asignar al campo de reporte para esta combinación de aplicación y evento.
+   4. Sigue estos pasos para tantas excepciones como desees configurar.
+5. Cuando hayas terminado de configurar la asignación para la métrica extraída, haz clic en **Guardar y agregar otra** para extraer otra métrica del campo event\_value o en **Guardar** para volver a la pantalla principal.
 
-**To edit extracted metrics:**
+**Para editar las métricas extraídas:**
 
-1. In either the **Metrics from sources** or the **Report metrics** list, hover over the name of the metric you want to edit.
-2. Click the <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> button that displays to the right of the metric.
-3. Select **Edit extracted field.**
-4. Make changes to the **Report field** name and/or parameter mapping as necessary.
-5. Click **Save** to save your changes.
+1. En la lista **Métricas de las fuentes** o **Métricas del reporte**, coloca el cursor sobre el nombre de la métrica que deseas editar.
+2. Haz clic en el botón <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> que se muestra a la derecha de la métrica.
+3. Selecciona **Editar campo extraído**.
+4. Realiza los cambios necesarios en la asignación de nombre y/o parámetros del **Campo de reporte**.
+5. Haz clic en **Guardar** para guardar tus cambios.
 
-**To delete extracted metrics:**
+**Para eliminar las métricas extraídas:**
 
-1. In either the **Metrics from sources** or the **Report metrics** list, hover over the name of the metric you want to delete.
-2. Click the <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> button that displays to the right of the metric.
-3. Select **Delete field.**
-   * **Caution!** If you delete an extracted field from the **Report metrics** list, it will delete the definition of the extracted field. If you wish to remove the field from the report while preserving its definition, select the field and use the **Remove** button instead.
+1. En la lista **Métricas de las fuentes** o **Métricas del reporte**, coloca el cursor sobre el nombre de la métrica que deseas eliminar.
+2. Haz clic en el botón <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> que se muestra a la derecha de la métrica.
+3. Selecciona **Eliminar campo**.
+   * **¡Importante!** **Precaución:** Si eliminas un campo extraído de la lista **Métricas del reporte**, se eliminará la definición del campo extraído. Si deseas quitar el campo del reporte conservando su definición, selecciona el campo y usa el comando **Quitar** en su lugar.
 
-#### **Select report metrics**
+#### **Seleccionar métricas del reporte**
 
-**To select the metrics to include in your report:**
+**Para seleccionar las métricas que se incluirán en el reporte, sigue estos pasos:**
 
-1. Select one or more metrics in the **Metrics from sources** list on the left and use the **Add** button in the middle of the screen to add them to the list of **Report metrics.**
-   * You can use the search bar to search for metrics in the lists.
-2. For each metric in the **Report metrics** list, select whether you want the data reported as either:
-   * a sum of numeric values; or
-   * a count of distinct values
-3. To remove a metric, select it from the **Report metrics** list and use the **Remove** button to return it to the **Metrics from sources** list.
-4. Repeat this process until you have added each metric you want to include in the report.
+1. Selecciona una o más métricas en la lista **Métricas de las fuentes** de la izquierda y usa el botón **Agregar** en el centro de la pantalla para agregarlas a la lista de **Métricas del reporte**.
+   * Puedes utilizar la barra de búsqueda para buscar métricas en las listas.
+2. Para cada métrica de la lista **Métricas del reporte**, selecciona si deseas que los datos se reporten como:
+   * una suma de valores numéricos; o
+   * un recuento de valores distintos
+3. Para quitar una métrica, selecciónala en la lista **Métricas del reporte** y usa la función **Quitar** para devolverla a la lista **Métricas de las fuentes**.
+4. Repite este proceso hasta que hayas agregado cada métrica que desees incluir en el reporte.
 
-#### **[Optional] Customizing metric display names**
+#### **[Opcional] Personalización de nombres para mostrar de las métricas**
 
-By default, metric names are displayed in your report exactly as they are named in the in-app event data or your custom sources. If you wish, you can customize metric names for your report.
+De forma predeterminada, los nombres de las métricas se muestran en el reporte exactamente como se nombran en los datos de eventos in-app o en las fuentes personalizadas. Si lo deseas, puede personalizar los nombres de las métricas para el reporte.
 
-**To customize metric display names:**
+**Para personalizar los nombres para mostrar de las métricas:**
 
-1. In the **Report metrics** list, hover over the name of the metric whose display name you want to edit.
-2. Click the edit button ![edit_button.png](https://files.readme.io/f4ef4722724c776ce4034ab07492a4ac80825f6f15350911c1cbb51ac4843092-10754262613649.png) that displays to the right of the metric.
-3. Change the name to the metric display name to be used in your report (up to 50 characters).
-4. Click **OK** to save the display name, or **X** to cancel it.
+1. En la lista **Métricas del reporte**, coloca el cursor sobre el nombre de la métrica cuyo nombre para mostrar deseas editar.
+2. Haz clic en el botón Editar ![edit_button.png](https://files.readme.io/f4ef4722724c776ce4034ab07492a4ac80825f6f15350911c1cbb51ac4843092-10754262613649.png) que se muestra a la derecha de la métrica.
+3. Cambia el nombre por el nombre para mostrar de la métrica que se utilizará en el reporte (hasta 50 caracteres).
+4. Haz clic en **Aceptar** para guardar el nombre para mostrar, o en **X** para cancelar.
 
-**Note:** If you want to change the name of an **extracted metric**, use the steps for editing extracted metrics (above).
+**Nota:** Si deseas cambiar el nombre de una **métrica extraída**, sigue los pasos para editar las métricas extraídas (arriba).
 
-#### **[Optional] Select identifiers to count**
+#### **[Opcional] Seleccionar los identificadores que se van a contar**
 
-By default, each row of the report ends with a column containing a count of the distinct AppsFlyer IDs grouped in that row's data.
+De forma predeterminada, cada fila del reporte termina con una columna que contiene un recuento de los distintos ID de AppsFlyer agrupados en los datos de esa fila.
 
-**If you wish to add columns for the distinct counts of other identifiers from your sources, do so as follows:**
+**Si deseas agregar columnas para los recuentos distintos de otros identificadores de tus fuentes, hazlo de la siguiente manera:**
 
-1. Select one or more identifiers in the **Identifiers from sources** list on the left and use the **Add** button in the middle of the screen to add them to the list of **Distinct count identifiers**.
-   * You can use the search bar to search for identifiers in the lists.
-2. To remove an identifier, select it from the **Distinct count identifiers** list and use the **Remove** button to return it to the **Identifiers from sources** list.
-3. Repeat this process until you have added each identifier you want counted in the report.
+1. Selecciona uno o más identificadores en la lista **Identificadores de fuentes** de la izquierda y usa el botón **Agregar** en el centro de la pantalla para agregarlos a la lista de **Identificadores de recuento distintos**.
+   * Puedes utilizar la barra de búsqueda para buscar identificadores en las listas.
+2. Para quitar un identificador, selecciónalo en la lista **Identificadores de recuento distintos** y usa la función **Quitar** para devolverlo a la lista **Identificadores de fuentes**.
+3. Repite este proceso hasta que hayas agregado cada identificador que desees contar en el reporte.
 
 </Accordion>
 
 <div id="configure-report-settings-and-save-the-report" />
 
-<Accordion title="Configure report settings and save the report">
+<Accordion title="Configurar los ajustes del reporte y guardarlo">
 
-#### **Schedule (only for reports without custom sources)**
+#### **Programación (solo para reportes sin fuentes personalizadas)**
 
-Reports without custom sources are run according to the schedule you define.
+Los reportes sin fuentes personalizadas se ejecutan de acuerdo con la programación que definas.
 
-**To define the report schedule:**
+**Para definir la programación del reporte:**
 
-1. Select whether to run the report daily or on one or more days each week.
-2. Select the time at which to run the report (timezone is UTC).
+1. Selecciona si desea ejecutar el reporte diariamente o uno o más días a la semana.
+2. Selecciona la hora a la que deseas ejecutar el reporte (la zona horaria es UTC).
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Scheduling options are disabled for reports that use custom sources. This type of report runs whenever new versions of all of the <Anchor target="_blank" href="/marketers/docs/data-clean-room-creating-attribution-data-reports#custom-sources">custom sources it uses</Anchor> are detected:
+> Las opciones de programación están deshabilitadas para los reportes que utilizan fuentes personalizadas. Este tipo de reporte se ejecuta cada vez que se detectan nuevas versiones de todas las <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-creating-attribution-data-reports#fuentes-personalizadas">fuentes personalizadas que utilizas</Anchor>:
 >
-> * For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#table-columns">the `v` column of the source table</Anchor>.
->   * **Important!** To ensure the completeness of your report, be sure to populate the source table with a complete set of data whenever the column value is changed.
-> * For sources located in **cloud storage buckets** (Amazon S3 and GCS), the DCR recognizes that a new version of a source has been created when it detects that a <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing">new version of a source file has been uploaded</Anchor> along with its accompanying \_SUCCESS file.
+> * Para las fuentes ubicadas en **almacenes de datos** (BigQuery y Snowflake), DCR reconoce que se ha creado una nueva versión de una fuente cuando detecta un nuevo valor en <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#table-columns">la columna `v` de la tabla de fuentes</Anchor>.
+>   * **Nota:** **Importante:** Para garantizar la integridad de tu reporte, asegúrate de rellenar la tabla de la fuente con un conjunto completo de datos cada vez que se cambie el valor de la columna.
+> * Para las fuentes ubicadas en **buckets de almacenamiento en la nube** (Amazon S3 y GCS), DCR reconoce que se ha creado una nueva versión de una fuente cuando detecta que <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#actualización-de-las-fuentes-para-activar-el-procesamiento-de-reportes">se ha cargado una nueva versión de un archivo de fuente</Anchor> junto con el archivo \_SUCCESS que lo acompaña.
 >
-> AppsFlyer continually scans for new versions of sources for the **current date and 2 days prior.**
+> AppsFlyer busca continuamente nuevas versiones de fuentes para la **fecha actual y 2 días antes**.
 
-#### **Report destination**
+#### **Destino del reporte**
 
-The DCR delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
+DCR entrega reportes a tus servicios en la nube seleccionados utilizando <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Por lo tanto, especificar el destino del reporte implica seleccionar o crear una conexión de Data Locker.
 
-* **Note:** Receiving DCR reports does not require a premium subscription to Data Locker. If you are interested in receiving other AppsFlyer reports via Data Locker, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
+* **Nota:** Recibir reportes de DCR no requiere una suscripción Premium a Data Locker. Si estás interesado en recibir otros reportes de AppsFlyer a través de Data Locker, comunícate con tu CSM o envía un correo electrónico a [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
-**To set the report destination and save the report:**
+**Para establecer el destino del reporte y guardarlo:**
 
-1. Select from the list of Data Locker connections available in your AppsFlyer account.
-   * If there are no connections defined in your account:
-     * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
-   * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://files.readme.io/21fda59ab30e85ab4ba8b4b5920c901e8bcdedadad393a2205bb34e839f9c8db-16684568466961.png) button:
-     * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
-   * After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.
-2. Click **Save** to save the report.
-3. The new report is now displayed in the **Reports** tab of the **Data Clean Room.**
+1. Selecciona de la lista de conexiones de Data Locker disponibles en tu cuenta de AppsFlyer.
+   * Si no hay conexiones definidas en tu cuenta:
+     * Se abrirá una nueva pestaña en tu navegador (que muestra la página de AppsFlyer Data Locker)
+     * Se abrirá el cuadro de diálogo **Nueva conexión**. Sigue <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#completa-la-conexión-1">estas instrucciones</Anchor> para crear la conexión.
+   * Si tienes conexiones existentes pero deseas usar una nueva, haz clic en el botón ![dcr_new_connection_data_locker_button.png](https://files.readme.io/21fda59ab30e85ab4ba8b4b5920c901e8bcdedadad393a2205bb34e839f9c8db-16684568466961.png):
+     * Se abrirá una nueva pestaña en tu navegador (que muestra la página de AppsFlyer Data Locker)
+     * Se abrirá el cuadro de diálogo **Nueva conexión**. Sigue <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#completa-la-conexión-1">estas instrucciones</Anchor> para crear la conexión.
+   * Después de crear la conexión, vuelve a la pestaña DCR de tu navegador y selecciona la conexión recién creada de la lista de conexiones de Data Locker.
+2. Haz clic en **Guardar** para guardar el reporte.
+3. El nuevo reporte ahora se muestra en la pestaña **Reportes** de **Data Clean Room**.
 
 </Accordion>
 
-## Reference
+## Referencia
 
 <div id="default-inapp-event-dimensions" />
 
-<Accordion title="Default in-app event dimensions">
+<Accordion title="Dimensiones predeterminadas de eventos in-app">
 
-In addition to dimensions extracted from **event\_value** and dimensions from your custom sources (if applicable), the following in-app event dimensions can be used to group reports:
+Además de las dimensiones extraídas de **event\_value** y las dimensiones de tus fuentes personalizadas (si corresponde), se pueden usar las siguientes dimensiones de eventos in-app para agrupar reportes:
 
-* media\_source *([included as a report dimension by default](#selecting-report-dimensions))*
-* ad
-* ad\_id
+* media\_source *([incluido como una dimensión del reporte de forma predeterminada](#selección-de-las-dimensiones-del-reporte))*
+* anuncio
+* id\_adset
 * ad\_type
-* adset\_id
+* id\_anuncio
 * adset\_name
-* app\_id
-* app\_version
-* attributed\_touch\_type
-* brand
-* campaign
-* campaign\_id
+* id\_aplicación
+* version\_app
+* tipo\_táctil\_atribuido
+* marca
+* campaña única
+* id\_campaña
 * channel
-* city
-* conversion\_type
-* country
-* device\_type
+* Ingresos por eventos en USD
+* tipo\_de\_conversión
+* País
+* tipo\_de\_dispositivo
 * dma
-* engagement\_type
-* event\_name
-* event\_revenue\_currency
+* tipo\_de\_engagement
+* nombre\_del\_evento
+* moneda\_ingresos\_evento
 * geo\_region
 * is\_attributed
-* keywords
+* palabras clave
 * match\_type
-* model
-* partner
-* platform
-* site\_id
+* modelo
+* Socio
+* Identificador de origen
+* id\_sitio
 
 </Accordion>
 
 <div id="default-inapp-event-metrics" />
 
-<Accordion title="Default in-app event metrics">
+<Accordion title="Métricas predeterminadas de eventos in-app">
 
-In addition to metrics extracted from **event\_value** and metrics from your custom sources (if applicable), the following in-app event metrics can be included in reports:
+Además de las métricas extraídas de **event\_value** y las métricas de tus fuentes personalizadas (si corresponde), las siguientes métricas de eventos in-app se pueden incluir en los reportes:
 
-* event\_revenue
+* ingresos\_evento
 * event\_revenue\_u\_s\_d
 
 </Accordion>
 
-<div data-zendesk-anchors="creating-an-inapp-event-report=creating-an-in-app-event-report h_01HA9W7NP4CR9CVXY9CXENYSPF=creating-an-in-app-event-report h_01HA9W7NP4B55Y2SB6ADKE06JV=perform-preliminary-steps h_01HA9W7NP4A7YK5JFYNFXFY6ZJ=select-sources inapp-event-sources=in-app-event-sources h_01HA9W7NP4G0S2TQT9W2RK1QBA=in-app-event-sources custom-sources=data-sources h_01HA9W7NP46D57Q7H8611K4KBB=data-sources h_01HA9W7NP4K2055TXTE98HWTAW=join-sources-only-for-reports-containing-custom-sources h_01HA9W7NP4WTBJ83MY73JQ2ESH=what-is-a-key-identifier h_01HA9W7NP5N8W4X8H1WRN1183Z=important h_01HA9W7NP51HWA36BBP1JC3HMW=mapping-schemes-directindirect h_01HA9W7NP5V1SV5PGF277G5P6T=example h_01HA9W7NP56M09TF9CB7FCBPBR=select-dimensions h_01HA9W7NP5BV7GJXMEMS57HNJ9=extracting-dimensions-from-event_value h_01HA9W7NP5S6EWDE38Q6T42QEB=selecting-report-dimensions %5Boptional%5D-customizing-dimension-display-names=optional-customizing-dimension-display-names h_01HA9W7NP5YC8E3B05GV7J1Z5V=optional-customizing-dimension-display-names h_01HA9W7NP5XJGK4CXNHK02NYT4=preserving-privacy-while-grouping-by-dimension-regrouping h_01HA9W7NP596RGHA1BES64GSK1=regrouping-example %5Boptional%5D-managing-dimension-priority=optional-managing-dimension-priority h_01HA9W7NP5781HV31T5DAYSMMT=optional-managing-dimension-priority h_01HA9W7NP6WCSRSH157P78QEQF=select-metrics h_01HA9W7NP6JEXE67A935BJ93AQ=extracting-metrics-from-event_value h_01HA9W7NP6EF23ZDGZHDKVTS7V=select-report-metrics %5Boptional%5D-customizing-metric-display-names=optional-customizing-metric-display-names h_01HA9W7NP6X584YAXT030A6BEY=optional-customizing-metric-display-names %5Boptional%5D-select-identifiers-to-count=optional-select-identifiers-to-count h_01HA9W7NP6YETQ1ND0K8XZTZZ0=optional-select-identifiers-to-count h_01HA9W7NP6ZH3KRN7YNWCPFZC9=configure-report-settings-and-save-the-report h_01HA9W7NP62DCR2SWD8X4M61R7=schedule-only-for-reports-without-custom-sources h_01HA9W7NP6XQE1MN0J08FE89V4=important-1 h_01HA9W7NP6BQYAF3RMZSW747HH=report-destination h_01HA9W7NP6BS0TE332GNPTW9M1=reference h_01HA9W7NP606HF0MSPQ4S09YRS=default-inapp-event-dimensions h_01HA9W7NP6A1N25KQ947J3EJW3=default-inapp-event-metrics" />
+<div data-zendesk-anchors="creating-an-inapp-event-report=creaci%C3%B3n-de-un-reporte-de-eventos-in-app h_01HA9W7NP4CR9CVXY9CXENYSPF=creaci%C3%B3n-de-un-reporte-de-eventos-in-app h_01HA9W7NP4B55Y2SB6ADKE06JV=perform-preliminary-steps h_01HA9W7NP4A7YK5JFYNFXFY6ZJ=select-sources inapp-event-sources=fuentes-de-eventos-in-app h_01HA9W7NP4G0S2TQT9W2RK1QBA=fuentes-de-eventos-in-app custom-sources=fuentes-de-datos h_01HA9W7NP46D57Q7H8611K4KBB=fuentes-de-datos h_01HA9W7NP4K2055TXTE98HWTAW=join-sources-only-for-reports-containing-custom-sources what-is-a-key-identifier=qu%C3%A9-es-un-identificador-clave h_01HA9W7NP4WTBJ83MY73JQ2ESH=qu%C3%A9-es-un-identificador-clave h_01HA9W7NP5N8W4X8H1WRN1183Z=importante mapping-schemes-directindirect=esquemas-de-asignaci%C3%B3n-directaindirecta h_01HA9W7NP51HWA36BBP1JC3HMW=esquemas-de-asignaci%C3%B3n-directaindirecta h_01HA9W7NP5V1SV5PGF277G5P6T=ejemplo h_01HA9W7NP56M09TF9CB7FCBPBR=select-dimensions extracting-dimensions-from-event_value=extracci%C3%B3n-de-dimensiones-de-event_value h_01HA9W7NP5BV7GJXMEMS57HNJ9=extracci%C3%B3n-de-dimensiones-de-event_value selecting-report-dimensions=selecci%C3%B3n-de-las-dimensiones-del-reporte h_01HA9W7NP5S6EWDE38Q6T42QEB=selecci%C3%B3n-de-las-dimensiones-del-reporte %5Boptional%5D-customizing-dimension-display-names=opcional-personalizaci%C3%B3n-de-nombres-para-mostrar-de-las-dimensiones h_01HA9W7NP5YC8E3B05GV7J1Z5V=opcional-personalizaci%C3%B3n-de-nombres-para-mostrar-de-las-dimensiones preserving-privacy-while-grouping-by-dimension-regrouping=preservaci%C3%B3n-de-la-privacidad-mientras-se-agrupa-por-dimensi%C3%B3n-reagrupaci%C3%B3n h_01HA9W7NP5XJGK4CXNHK02NYT4=preservaci%C3%B3n-de-la-privacidad-mientras-se-agrupa-por-dimensi%C3%B3n-reagrupaci%C3%B3n h_01HA9W7NP596RGHA1BES64GSK1=ejemplo-de-reagrupamiento %5Boptional%5D-managing-dimension-priority=opcional-administraci%C3%B3n-de-la-prioridad-de-las-dimensiones h_01HA9W7NP5781HV31T5DAYSMMT=opcional-administraci%C3%B3n-de-la-prioridad-de-las-dimensiones h_01HA9W7NP6WCSRSH157P78QEQF=select-metrics extracting-metrics-from-event_value=extracci%C3%B3n-de-m%C3%A9tricas-de-event_value h_01HA9W7NP6JEXE67A935BJ93AQ=extracci%C3%B3n-de-m%C3%A9tricas-de-event_value select-report-metrics=seleccionar-m%C3%A9tricas-del-reporte h_01HA9W7NP6EF23ZDGZHDKVTS7V=seleccionar-m%C3%A9tricas-del-reporte %5Boptional%5D-customizing-metric-display-names=opcional-personalizaci%C3%B3n-de-nombres-para-mostrar-de-las-m%C3%A9tricas h_01HA9W7NP6X584YAXT030A6BEY=opcional-personalizaci%C3%B3n-de-nombres-para-mostrar-de-las-m%C3%A9tricas %5Boptional%5D-select-identifiers-to-count=opcional-seleccionar-los-identificadores-que-se-van-a-contar h_01HA9W7NP6YETQ1ND0K8XZTZZ0=opcional-seleccionar-los-identificadores-que-se-van-a-contar h_01HA9W7NP6ZH3KRN7YNWCPFZC9=configure-report-settings-and-save-the-report schedule-only-for-reports-without-custom-sources=programaci%C3%B3n-solo-para-reportes-sin-fuentes-personalizadas h_01HA9W7NP62DCR2SWD8X4M61R7=programaci%C3%B3n-solo-para-reportes-sin-fuentes-personalizadas h_01HA9W7NP6XQE1MN0J08FE89V4=importante-1 report-destination=destino-del-reporte h_01HA9W7NP6BQYAF3RMZSW747HH=destino-del-reporte reference=referencia h_01HA9W7NP6BS0TE332GNPTW9M1=referencia h_01HA9W7NP606HF0MSPQ4S09YRS=default-inapp-event-dimensions h_01HA9W7NP6A1N25KQ947J3EJW3=default-inapp-event-metrics" />

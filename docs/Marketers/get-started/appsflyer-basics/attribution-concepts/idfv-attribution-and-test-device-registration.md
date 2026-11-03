@@ -1,5 +1,5 @@
 ---
-title: IDFV attribution and test-device registration
+title: Atribución con IDFV y registro de dispositivos de prueba
 metadata:
   keywords:
     - Developers
@@ -13,74 +13,73 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-08-15T13:44:35Z'
-  edited_at: '2026-08-12T11:20:39Z'
+  edited_at: '2026-08-17T11:49:54Z'
   id: 17798709514001
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/17798709514001-IDFV-attribution-and-test-device-registration
+  url: https://support.appsflyer.com/hc/es/articles/17798709514001
 ---
-> **At a glance:** IDFV is a unique identifier assigned by iOS to apps of the same vendor. You can use it to attribute installs that originated in cross-promotion campaigns and register test devices.
+> **At a glance:** IDFV es un identificador único que iOS asigna a las aplicaciones del mismo proveedor. Puedes usarlo para atribuir instalaciones procedentes de campañas de promoción cruzada y registrar dispositivos de prueba.
 
-IDFV (Identifier for Vendor) is a unique identifier iOS generates while installing the first app the vendor owns. When another vendor app is installed on the same device, it is assigned the same IDFV. If all the vendor apps are deleted from the device, the IDFV is deleted, too, and a different one is generated when the vendor apps are installed again.
+IDFV (Identifier for Vendor) es un identificador único que iOS genera al instalar la primera aplicación que posee el proveedor. Cuando se instala otra aplicación del proveedor en el mismo dispositivo, se le asigna el mismo IDFV. Si se eliminan del dispositivo todas las aplicaciones del proveedor, el IDFV también se elimina y se genera otro distinto cuando las aplicaciones del proveedor se vuelven a instalar.
 
-According to Apple: "The ID for Vendors (IDFV) may be used for analytics across apps from the same content provider. In this case, the use of the [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) framework is not required. The IDFV may not be combined with other data to track a user across apps and websites owned by other companies. You remain fully responsible to ensure that your collection and use of the IDFV complies with applicable law."
+Según Apple: «El ID para proveedores (IDFV) puede usarse para realizar análisis en aplicaciones del mismo proveedor de contenido. En este caso, no es necesario utilizar el [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) framework. El IDFV no puede combinarse con otros datos para rastrear a un usuario entre aplicaciones y sitios web propiedad de otras empresas. Sigues siendo plenamente responsable de garantizar que tu recopilación y uso del IDFV cumplen la legislación aplicable.»
 
-IDFV has the following uses in AppsFlyer:
+IDFV tiene los siguientes usos en AppsFlyer:
 
-* [Cross-promotion attribution](/docs/idfv-attribution-and-test-device-registration#idfv-in-cross-promotion-attribution)
-* [Test device registration](/docs/idfv-attribution-and-test-device-registration#idfv-for-test-device-registration)
+* [Atribución de promociones cruzadas](/docs/idfv-attribution-and-test-device-registration#idfv-en-la-atribución-de-promoción-cruzada)
+* [Registro de dispositivos de prueba](/docs/idfv-attribution-and-test-device-registration#idfv-para-el-registro-de-dispositivos-de-prueba)
 
-## IDFV in cross-promotion attribution
+## IDFV en la atribución de promoción cruzada
 
-IDFV can be used for matching in a cross-promotion attribution scenario. In this scenario, the user is served an ad within an app your company owns. The ad is promoting another app also owned by your company.
+IDFV puede usarse para la coincidencia en un escenario de atribución de promoción cruzada. En este escenario, se muestra un anuncio al usuario dentro de una aplicación de tu empresa. El anuncio promociona otra aplicación que también es propiedad de tu empresa.
 
 <div id="how-does-crosspromotion-attribution-using-idfv-work" />
 
-<Accordion title="How does cross-promotion attribution using IDFV work?">
+<Accordion title="¿Cómo funciona la atribución de promoción cruzada con IDFV?">
 
-1. An ad for the promoted app is displayed within one of the vendor's apps. The same vendor also owns the promoted app.
-2. Upon clicking or viewing the advertisement, the SDK notifies AppsFlyer about the corresponding click or impression event. The SDK associates the **promoting** app's IDFV with the event (The SDK automatically collected the IDFV when the promoting app was initially launched).
-3. After the promoted app is installed and opened, the SDK notifies AppsFlyer about the installation event. This event includes the IDFV of the **promoted** app.
-4. Upon receiving the installation event, AppsFlyer attempts to match it with the corresponding click or impression engagement. If both events share the same IDFV, the install event is attributed to the cross-promotion campaign.
+1. Se muestra un anuncio de la aplicación promocionada dentro de una de las aplicaciones del proveedor. El mismo proveedor también es propietario de la aplicación promocionada.
+2. Al hacer clic en el anuncio o verlo, el SDK notifica a AppsFlyer el evento de clic o de impresión correspondiente. El SDK asocia el IDFV de la aplicación **promocionadora** con el evento (el SDK recopiló automáticamente el IDFV cuando la aplicación promocionadora se inició por primera vez).
+3. Después de instalar y abrir la aplicación promocionada, el SDK notifica a AppsFlyer el evento de instalación. Este evento incluye el IDFV de la **aplicación promocionada** .
+4. Al recibir el evento de instalación, AppsFlyer intenta hacerlo coincidir con el engagement de clic o impresión correspondiente. Si ambos eventos comparten el mismo IDFV, el evento de instalación se atribuye a la campaña de promoción cruzada.
 
 </Accordion>
 
 <div id="a-few-examples-of-idfv-attribution" />
 
-<Accordion title="A few examples of IDFV cross-promotion attribution">
+<Accordion title="Algunos ejemplos de atribución de promoción cruzada con IDFV">
 
-IDFV matching is employed for cross-promotion attribution in the following scenarios:
+La coincidencia de IDFV se utiliza para la atribución de promoción cruzada en los siguientes casos:
 
-* **Owned E-mail and SMS campaigns:** An email or SMS message is sent to users of other apps owned by the same vendor as the promoted app. This message includes an attribution link that carries the IDFV collected from the install event of the original vendor app. AppsFlyer then matches this IDFV to the IDFV assigned to the install event of the promoted app.
-* **Push notifications campaigns:** A Push notification triggered by the SDK of an app owned by the same vendor as the promoted app contains an attribution link embedded with the IDFV. AppsFlyer matches the IDFV on the push notification to the IDFV associated with the install event of the promoted app.
+* **Campañas de correo electrónico y SMS propios:** Se envía un correo electrónico o un mensaje SMS a los usuarios de otras aplicaciones del mismo proveedor que la aplicación promocionada. Este mensaje incluye un enlace de atribución que contiene el IDFV recopilado del evento de instalación de la aplicación original del proveedor. A continuación, AppsFlyer hace coincidir este IDFV con el IDFV asignado al evento de instalación de la aplicación promocionada.
+* **Campañas de notificaciones push:** Una notificación push activada por el SDK de una aplicación del mismo proveedor que la aplicación promocionada contiene un enlace de atribución con el IDFV integrado. AppsFlyer hace coincidir el IDFV de la notificación push con el IDFV asociado al evento de instalación de la aplicación promocionada.
 
 </Accordion>
 
-## IDFV for test device registration
+## IDFV para el registro de dispositivos de prueba
 
-Advertisers conduct tests during the AppsFlyer onboarding process to verify their app can successfully record and send install events. The IDFV serves as a unique identifier that allows AppsFlyer to recognize the devices used for testing.
+Los anunciantes realizan pruebas durante el proceso de onboarding de AppsFlyer para verificar que su aplicación puede registrar y enviar correctamente eventos de instalación. El IDFV actúa como identificador único que permite a AppsFlyer reconocer los dispositivos utilizados para las pruebas.
 
 <div id="why-identify-devices-as-test-devices" />
 
-<Accordion title="Why identify devices as test devices?">
+<Accordion title="¿Por qué identificar dispositivos como dispositivos de prueba?">
 
-AppsFlyer treats install events that originate from test devices differently to accommodate multiple installations of the same app. This is often necessary for integration testing purposes. To enable AppsFlyer to recognize these events as coming from test devices, the test device IDFV is registered on the **Test Device** page accessible through the **User Account** menu.
+AppsFlyer trata de forma diferente los eventos de instalación procedentes de dispositivos de prueba para permitir varias instalaciones de la misma aplicación. Esto suele ser necesario para realizar pruebas de integración. Para que AppsFlyer reconozca estos eventos como procedentes de dispositivos de prueba, el IDFV del dispositivo de prueba se registra en la **Test Device** página accesible a través del **User Account** menú.
 
 </Accordion>
 
 <div id="why-use-idfv-as-an-identifier-in-test-device-registration" />
 
-<Accordion title="Why use IDFV as an identifier in test device registration?">
+<Accordion title="¿Por qué usar IDFV como identificador en el registro de dispositivos de prueba?">
 
-Test device registration can also be done with IDFA. However, an iOS app does not have access to the IDFA when the app does not implement App Tracking Transparency (ATT) or when the user does not consent to share personal data. In these cases, we can use IDFV access to identify the test device because it is not dependent on ATT.
+El registro del dispositivo de prueba también puede hacerse con IDFA. Sin embargo, una aplicación de iOS no tiene acceso al IDFA cuando la aplicación no implementa App Tracking Transparency (ATT) o cuando el usuario no da su consentimiento para compartir datos personales. En estos casos, podemos usar el acceso al IDFV para identificar el dispositivo de prueba, porque no depende de ATT.
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Véase también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-marketers">Cross-promotion attribution for marketers</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/registering-test-devices#how-to-register-your-device-with-idfv">How to register your test device with IDFV</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/cross-promotion-attribution-for-marketers">Atribución de promociones cruzadas para marketers</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices#cómo-registrar-tu-dispositivo-con-idfv">Cómo registrar tu dispositivo de prueba con IDFV</Anchor>
 
-<div data-zendesk-anchors="idfv-in-crosspromotion-attribution=idfv-in-cross-promotion-attribution h_01H9041HQ7H18541W83A72B85B=idfv-in-cross-promotion-attribution h_01H9041HQ7JE11FTWTD0XYQWRS=how-does-crosspromotion-attribution-using-idfv-work a-few-examples-of-idfv-attribution%E2%80%A6=a-few-examples-of-idfv-attribution h_01H9041HQ7YDCTJQYBYDVJZPW0=a-few-examples-of-idfv-attribution h_01H9041HQ8ZC679PX7HWRMG1YC=idfv-for-test-device-registration h_01H9041HQ8K76JD72VR4EXCEZB=why-identify-devices-as-test-devices h_01H9041HQ8WS1GEAY6RGV10PF5=why-use-idfv-as-an-identifier-in-test-device-registration h_01HG809S72YC5W61GGN0CE6TP1=see-also" />
+<div data-zendesk-anchors="idfv-in-crosspromotion-attribution=idfv-en-la-atribuci%C3%B3n-de-promoci%C3%B3n-cruzada h_01H9041HQ7H18541W83A72B85B=idfv-en-la-atribuci%C3%B3n-de-promoci%C3%B3n-cruzada h_01H9041HQ7JE11FTWTD0XYQWRS=how-does-crosspromotion-attribution-using-idfv-work a-few-examples-of-idfv-attribution%E2%80%A6=a-few-examples-of-idfv-attribution h_01H9041HQ7YDCTJQYBYDVJZPW0=a-few-examples-of-idfv-attribution idfv-for-test-device-registration=idfv-para-el-registro-de-dispositivos-de-prueba h_01H9041HQ8ZC679PX7HWRMG1YC=idfv-para-el-registro-de-dispositivos-de-prueba h_01H9041HQ8K76JD72VR4EXCEZB=why-identify-devices-as-test-devices h_01H9041HQ8WS1GEAY6RGV10PF5=why-use-idfv-as-an-identifier-in-test-device-registration h_01HG809S72YC5W61GGN0CE6TP1=v%C3%A9ase-tambi%C3%A9n" />

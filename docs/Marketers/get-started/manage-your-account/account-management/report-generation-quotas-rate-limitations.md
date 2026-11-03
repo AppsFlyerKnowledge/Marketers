@@ -1,5 +1,5 @@
 ---
-title: Report generation quotas (rate limitations)
+title: Cuotas de generación de reportes (limitaciones de la tarifa)
 metadata:
   keywords:
     - Advertisers
@@ -14,85 +14,84 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2014-05-01T12:55:30Z'
-  edited_at: '2026-10-14T09:37:22Z'
+  edited_at: '2026-10-20T03:41:35Z'
   id: 207034366
-  locale: en-us
+  locale: es
   section: Account management
   section_id: 6551191075473
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207034366-Report-generation-quotas-rate-limitations
+  url: https://support.appsflyer.com/hc/es/articles/207034366
 ---
-> **At a glance:** A quota (rate limitation) mechanism limits the number of reports you can generate per day through both Pull API and the data export pages.
+> **At a glance:** Un mecanismo de cuota (limitación de tasa) limita el número de reportes que puedes generar al día, tanto a través de Pull API como de las páginas de exportación de datos.
 
-## Rate limits for reports
+## Límites de frecuencia para reportes
 
-The quota limits the number of reports you can generate per day per report type. The quota varies according to your subscription plan.
+La cuota limita el número de reportes que puedes generar al día por tipo de reporte. La cuota varía según tu plan de suscripción.
 
-**Principles:**
+**Principios:**
 
-* **Agencies:** Agencies and advertisers have separate Pull API quotas. The quota applies per report, per day, and per app, in the same way for both. For reports from the export data page, agencies and advertisers also have separate quotas. If you often reach the quota limit, contact your Account Executive.
-* **Ad networks:** Reports that ad networks generate don't count toward the advertiser quota.
-* **Day:** Quotas apply per calendar day, starting at 00:00 UTC.
+* **Agencias:** Las agencias y los anunciantes tienen cuotas de Pull API separadas. La cuota se aplica por reporte, por día y por aplicación, de la misma manera para ambos. Para los reportes de la página de datos exportados, las agencias y los anunciantes tienen cuotas separadas. Si a menudo alcanzas el límite de cuota, contacta con tu Ejecutivo de cuenta.
+* **Ad networks:** Los reportes que generan las ad network no cuentan para la cuota del anunciante.
+* **Día:** Las cuotas se aplican por día natural, a partir de las 00:00 UTC.
 
-### Aggregated and analytics reports
+### Reportes agregados y análisis
 
-| Data delivery tool | Quota |
+| Herramienta de entrega de datos | Cuota |
 | --- | --- |
-| Pull API aggregate | <ul><li>Up to 2 days in the date range:<ul><li>Maximum of 1 call per minute per app per report</li></ul></li><li>3+ days date range, the following limits apply:<ul><li>Maximum 120 calls per day, per account</li><li>24 calls per day, per app</li></ul></li></ul> |
-| Aggregated export data page | Unlimited |
-| Master API | Unlimited |
-| Cohort API | 60 calls per minute per account |
-| SKAN aggregate reports | 10 calls per minute per account |
+| Pull API agregada | <ul><li>Hasta 2 días en el rango de fechas:<ul><li>Máximo de 1 llamada por minuto por aplicación por reporte</li></ul></li><li>Intervalo de fechas de 3 días o más: se aplican los siguientes límites:<ul><li>Máximo de 120 llamadas por día, por cuenta</li><li>24 llamadas por día por aplicación</li></ul></li></ul> |
+| Página de datos exportados agregados | Ilimitado |
+| API maestra | Ilimitado |
+| API de cohorte | 60 llamadas por minuto por cuenta |
+| Reportes agregados de SKAN | 10 llamadas por minuto por cuenta |
 
-### Raw data
+### Datos sin procesar
 
-* A separate quota applies to each reporting tool, namely the Pull API and the raw data export page.
-* Agencies and advertisers have separate Pull API quotas. Agency-generated reports don't count against the advertiser quota. The only exception is when an agency uses the advertiser's API token instead of their own, in which case the requests are indistinguishable from advertiser requests and count against the advertiser quota. For reports from the export data page, agencies and advertisers also have separate quotas.
-* API pull quotas apply per:
-  * Report
-  * Day
-  * App-level
-  * Account-level
-* For advertisers, the quotas depend on your AppsFlyer subscription. The quotas also apply to reports that require a premium subscription.
-* The daily quotas for Pull API raw data reports and ad network postback reports are as indicated in the tables that follow.
+* Se aplica una cuota independiente a cada herramienta de reportes, es decir, Pull API y la página de exportación de raw data.
+* Las agencias y los anunciantes tienen cuotas de Pull API separadas. Es posible que los reportes generados por la agencia cuenten para la cuota del anunciante. La única excepción es cuando una agencia utiliza el token API del anunciante en lugar del suyo propio, en cuyo caso las solicitudes no se distinguen de las solicitudes del anunciante y cuentan para la cuota del anunciante. Para los reportes de la página de datos exportados, las agencias y los anunciantes tienen cuotas separadas.
+* Las cuotas de extracción de API se aplican por:
+  * Reporte
+  * Día
+  * Nivel de aplicación
+  * Nivel de cuenta
+* Para los anunciantes, las cuotas dependen de tu suscripción a AppsFlyer. Las cuotas también se aplican a los reportes que requieran una suscripción premium.
+* Las cuotas diarias de los reportes de raw data de Pull API y de los reportes de postback de ad network son las que se indican en las tablas siguientes.
 
-For examples, see the FAQ below.
+Para ver ejemplos, consulta las Preguntas frecuentes a continuación.
 
-#### Pull API raw data daily quota
+#### Cuota diaria de raw data de Pull API
 
-Pull API raw data reports have the following daily quotas:
+Los reportes de raw data de Pull API tienen las siguientes cuotas diarias:
 
-| Report type | App-level daily quota (reports) | Account-level daily quota (reports) |
+| Tipo de reporte | Cuota diaria a nivel de aplicación (reportes) | Cuota diaria a nivel de cuenta (reportes) |
 | --- | --- | --- |
-| Installs | 24 | 120 |
-| In-app events | 12 | 60 |
+| Instalaciones | 24 | 120 |
+| Eventos in-app | 12 | 60 |
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The quotas apply per report type, so each report type has a separate quota.
+> Las cuotas se aplican por tipo de reporte, por lo que cada tipo de reporte tiene una cuota independiente.
 
-#### Ad network postback reports daily quota
+#### El postback de la ad network reporta la cuota diaria
 
-Ad networks can pull the following postback report types:
+Las ad networks pueden extraer los siguientes tipos de reportes de postback:
 
-| Postback group | Report type  <br />(each report type has a separate quota) | App-level daily quota | Account-level daily quota |
+| Grupo de postback | Tipo de reporte  <br />(cada tipo de reporte tiene una cuota independiente) | Cuota diaria a nivel de aplicación | Cuota diaria a nivel de cuenta |
 | --- | --- | --- | --- |
-| Postbacks for attribution | <ul><li>Installs</li><li>Retargeting conversions</li></ul> | 24 | 120 |
-| Postbacks for in-app events | <ul><li>In-app events</li><li>In-app events retargeting</li></ul> | 12 | 60 |
+| Postbacks para atribución | <ul><li>Instalaciones</li><li>Conversiones de retargeting</li></ul> | 24 | 120 |
+| Postbacks para eventos in-app | <ul><li>Eventos dentro de la app</li><li>Retargeting de eventos in-app</li></ul> | 12 | 60 |
 
-## FAQ
+## Preguntas frecuentes
 
-* Q: For a given app, can I generate 24 organic install reports using Pull API and another 24 reports using the raw data export page?  
-  A: Yes. The quota per reporting tool is separate.
-* Q: For a given app, using the raw data export page, can I generate 24 organic install reports, 24 non-organic install reports, and 24 retargeting conversion reports?  
-  A: Yes. The quota per report type is separate.
-* Q: I have 25 apps in my account. Can I generate 10 organic install reports for each app?  
-  A: No. This results in a total of 250 reports, which exceeds the account-level quota of 120.
-* Q: Do agency-generated Pull API reports count against the advertiser's quota?  
-  A: No. Agencies and advertisers have separate Pull API quotas. Agency-generated reports don't count against the advertiser quota. The only exception is when an agency uses the advertiser's API token instead of their own, in which case those requests count as advertiser requests.
+* P: Para una aplicación determinada, ¿puedo generar 24 reportes de instalaciones orgánicas utilizando la Pull API y otros 24 reportes utilizando la página de exportación de raw data?  
+  R: Sí. La cuota por cada herramienta de reportes es independiente.
+* P: Para una aplicación determinada, al utilizar la página de exportación de raw data, ¿puedo generar 24 reportes de instalaciones orgánicas, 24 reportes de instalaciones no orgánicas y 24 reportes de conversiones de retargeting?  
+  R: Sí. La cuota por cada tipo de reporte es independiente.
+* P: Tengo 25 aplicaciones en mi cuenta. ¿Puedo generar 10 reportes de instalaciones orgánicas para cada aplicación?  
+  R: No. Esto da como resultado un total de 250 reportes, lo que supera la cuota a nivel de cuenta de 120.
+* P: ¿Los reportes de Pull API generados por la agencia cuentan para la cuota del anunciante?  
+  R: No. Las agencias y los anunciantes tienen cuotas de Pull API separadas. Es posible que los reportes generados por la agencia cuenten para la cuota del anunciante. La única excepción es cuando una agencia utiliza el token de API del anunciante en lugar del suyo propio, en cuyo caso esas solicitudes se cuentan como solicitudes del anunciante.
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/data-availability-windows">Data availability windows</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-availability-windows">Ventanas de disponibilidad de datos</Anchor>
 
-<div data-zendesk-anchors="h_01H9JNZFPSVXPKMEVR1ZR6PSYG=rate-limits-for-reports h_01H9JNZFPS62A5CFWSXVPN8XM5=aggregated-and-analytics-reports h_01H9JNZFPSPYWBB2MCZV2R2KX1=raw-data h_01M4WW4PAZ64FXVR1QPKE53DS7=pull-api-raw-data-daily-quota h_01M4WW4PAZFMX9X0DFX1E6F9M0=note h_01H9JNZFPSYXZNW81BZTRDS576=ad-network-postback-reports-daily-quota h_01H9JNZFPT76RAV8JBTY2K75V4=faq h_01HE7SW3VWRNVY1WFB4YCSAVY6=see-also" />
+<div data-zendesk-anchors="rate-limits-for-reports=l%C3%ADmites-de-frecuencia-para-reportes h_01H9JNZFPSVXPKMEVR1ZR6PSYG=l%C3%ADmites-de-frecuencia-para-reportes aggregated-and-analytics-reports=reportes-agregados-y-an%C3%A1lisis h_01H9JNZFPS62A5CFWSXVPN8XM5=reportes-agregados-y-an%C3%A1lisis raw-data=datos-sin-procesar h_01H9JNZFPSPYWBB2MCZV2R2KX1=datos-sin-procesar h_01M4WW4PAZ64FXVR1QPKE53DS7=cuota-diaria-de-raw-data-de-pull-api h_01M4WW4PAZFMX9X0DFX1E6F9M0=nota ad-network-postback-reports-daily-quota=el-postback-de-la-ad-network-reporta-la-cuota-diaria h_01H9JNZFPSYXZNW81BZTRDS576=el-postback-de-la-ad-network-reporta-la-cuota-diaria h_01H9JNZFPT76RAV8JBTY2K75V4=preguntas-frecuentes h_01HE7SW3VWRNVY1WFB4YCSAVY6=consulta-tambi%C3%A9n" />

@@ -1,5 +1,5 @@
 ---
-title: Persona.ly RTB campaign configuration
+title: Configuración de campaña Persona.ly RTB
 metadata:
   keywords:
     - Marketers
@@ -12,149 +12,148 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-09-20T07:13:43Z'
-  edited_at: '2026-07-23T13:13:23Z'
+  edited_at: '2026-08-12T12:15:08Z'
   id: 18699025653265
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/18699025653265-Persona-ly-RTB-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/18699025653265
 ---
-> **At a glance:** Persona.ly RTB (personalyrtb\_int), an AppsFlyer integrated partner, is a mobile-first DSP operating worldwide. Using proprietary bidder and machine-learning algorithms, Persona.ly offers transparent, performance-driven, highly targeted UA and retargeting solutions.
+> **En resumen:** Persona.ly RTB (personalyrtb\_int), un partner integrado de AppsFlyer, es un DSP basado en dispositivos móviles que opera en todo el mundo. Mediante el uso de algoritmos propios de oferta y aprendizaje automático, Persona.ly ofrece soluciones de UA y retargeting transparentes, impulsadas por el rendimiento y altamente específicas.
 
 <Image alt="persona.ly_logo.png" src="https://files.readme.io/b0dacbdc4c2e884610a040b5049a1410a88214f8275320163764bcf09f90305b-18699636413969.png" width="234px" />
 
-## Setting up Persona.ly RTB
+## Configuración de Persona.ly RTB
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. **Para activar:** En AppsFlyer, en el menú lateral, selecciona**Colaborar**> **Partner Marketplace**.  
+   **Para editar:** En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones Activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la pestaña **Integración**, haz clic en **Activar socio**.  
+    **Nota:** El selector debe permanecer <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor> mientras trabajes con el socio. Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación. Para ver una descripción detallada del Encabezado de la ventana de configuración de partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-The integration with Persona.ly RTB supports click-through and view-through attribution.  
-The general configuration window includes the following tabs: Integration, Attribution link, Cost, Ad revenue, and Permissions. For Persona.ly RTB, the available tabs are Integration, Attribution link, Cost, and Permissions.
+La integración con Persona.ly RTB soporta la atribución click-through y view-through.  
+La ventana de configuración incluye las siguientes pestañas: Integración, Enlace de atribución, Costo, Ingreso publicitario y Permisos. Para Persona.ly RTB, las pestañas disponibles son Integración, Enlace de atribución, Costo y Permisos.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * Some settings differ for iOS and Android devices
-> * Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">setting up partner integrations</Anchor>
+> * Algunas configuraciones difieren para dispositivos iOS y Android
+> * Aprende más sobre cómo <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">configurar integraciones de partners</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de integración">
 
-The **Integration** tab includes a number of sections, as described below.
+La pestaña **Integración** incluye una serie de secciones, como se describe a continuación.
 
-#### Activate partner
+#### Activar partner
 
-To configure the integration, you must first <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#activate-partner">turn on</Anchor> the **Activate partner** toggle. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activating and deactivating partner integrations</Anchor>.
+Para configurar la integración, primero debes <Anchor target="_blank" href="/marketers/es/docs/amazon-ads-campaign-configuration#activar-socio">activar</Anchor> el selector **Activar partner**. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activación y desactivación de integraciones de partners</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> As an all-install network, Persona.ly RTB prefers to receive postbacks for all new installs of your app from any source. To do so, select **All media sources, including organic** to send all install postbacks to Persona.ly RTB.
+> Como red de instalación completa, Persona.ly RTB prefiere recibir postbacks para todas las nuevas instalaciones de tu aplicación desde cualquier fuente. Para ello, selecciona **Todas las fuentes de medios, incluidas las orgánicas** para enviar todos los postbacks de instalación a Persona.ly RTB.
 
-#### Advanced Privacy
+#### Privacidad Avanzada
 
-For iOS apps only: Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Privacy (for iOS 14.5+ and later)** toggle state:
+Solo para aplicaciones de iOS: Tu control sobre los datos compartidos con el partner a través de postbacks y <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">reportes</Anchor> depende del estado del selector de **Privacidad avanzada (para iOS 14.5+ y posteriores)**:
 
-| Advanced Privacy: On | Advanced Privacy: Off |
+| Privacidad avanzada: activada | Privacidad avanzada: desactivada |
 | --- | --- |
-| Postbacks are sent only for events attributed to the partner | Postbacks are sent according to your configuration:<ul><li>**All media sources, including organic**</li><li>**This partner only**</li></ul> |
-| Postbacks are sent according to the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy template</Anchor> |  |
-| <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated and anonymous data</Anchor> is shared with the partner, meaning no user-level data (device ID) is shared. |  |
+| Los postbacks se envían solo para eventos atribuidos al partner | Los postbacks se envían según tu configuración:<ul><li>**Todas las fuentes de medios, incluidas las orgánicas**</li><li>**Solo este partner**</li></ul> |
+| Los postbacks se envían de acuerdo con la <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">plantilla de Privacidad avanzada</Anchor> |  |
+| <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Los datos agregados y anónimos</Anchor> se comparten con el partner, lo que significa que no se comparten datos a nivel de usuario (ID de dispositivo). |  |
 
-#### Transaction ID
+#### ID de transacción
 
-For iOS apps only, when **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">share the transaction ID of SKAdNetwork postbacks</Anchor> with Persona.ly RTB. By doing so, Persona.ly RTB could decode your SKAdNetwork Conversion Values.
+Solo para aplicaciones iOS, cuando **Compartir ID de transacción SKAN** está activado, estás permitiendo que AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">comparta el ID de transacción de los postbacks de SKadNetwork</Anchor> con Reddit. Al hacerlo, Reddit podría decodificar tus valores de conversión de SkadNetwork.
 
-#### Install attribution
+#### Atribución de instalación.
 
-To attribute view-through installs from Persona.ly RTB, turn on **Install view-through attribution**. The view-through lookback slider is available on the [Attribution link tab](#attribution-link-tab).
+Para atribuir instalaciones view-through a través de Persona.ly RTB, activa **Instalar atribución view-through**. El control deslizante de view-through está disponible en la [pestaña Enlace de atribución](#attribution-link-tab).
 
-#### Default postbacks
+#### Postbacks predeterminados
 
-Define the source of users for sending automatic postbacks to partners relating to user actions occurring before the app launch:
+Define el origen de los usuarios para enviar postbacks automáticos a los partners en relación con las acciones de los usuarios que se producen antes del lanzamiento de la aplicación:
 
-* For **Installs**, select one of the following:
-  * **This partner only:** Send postbacks only when the install is attributed to this partner—meaning, the user who installed the app came from Persona.ly RTB.
-  * **All media sources, including organic:** Send postbacks for installs attributed to any partner and for organic events—meaning, the user who installed the app came from any media source.
-* For **Rejected installs** and **Re-engagements:** Postbacks are sent to Persona.ly RTB only.
+* Para **Instalaciones**, selecciona una de las siguientes opciones:
+  * **Solo este partner:** Envía postbacks solo cuando la instalación se atribuya a este partner, es decir, el usuario que instaló la aplicación provenía de Persona.ly RTB.
+  * **Todas las fuentes de medios, incluidas las orgánicas:** Envía postbacks para las instalaciones atribuidas a cualquier partner y para eventos orgánicos, es decir, el usuario que instaló la aplicación provenía de cualquier fuente de medios.
+* Para **instalaciones rechazadas** y **Re-engagements:** Los postbacks se envían únicamente a Persona.ly RTB.
 
-#### In-app event postbacks
+#### Postbacks de eventos in-app
 
-Configure mapping of in-app events with Persona.ly RTB events, sent via postbacks:
+Configura el mapeo de eventos in-app con eventos Persona.ly RTB, enviados a través de postbacks:
 
-1. Turn on **In-app event postbacks**.
-2. Click **Add event** to add an SDK or server-to-server event to the list. The following table describes the fields to complete:
+1. Activa **Postbacks de eventos in-app**.
+2. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista. En la siguiente tabla se describen los campos que debes completar:
 
-| Parameter name | Description |
+| Nombre de parámetro | Descripción |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
-| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: Send postbacks only when this event is attributed to this partner.</li><li>**All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
-| **including** | <ul><li>**No data (default)**: Send only the event itself without any event values.</li><li>**Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: Send all the parameters **excluding** the revenue value.</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos de servidor a servidor.<br />**Consejo**: ¿No ves el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.</li><li>Escríbelo en **Evento de AppsFlyer**, y luego haz clic en **Crear personalizado**. Leer más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizados.</Anchor></li></ul> |
+| **Asignado al evento de socio** | El ID o nombre único de cada evento, tal y como lo defina el partner. Existen varias configuraciones de asignación:<ul><li>**Campo de texto:** obtén el ID del evento correspondiente del partner.</li><li>**Cuadro desplegable:** selecciona el evento de AppsFlyer predefinido más adecuado.</li><li>**Tal como está**: envía los eventos tal como están, sin asignación de nombres.</li></ul> |
+| **para usuarios de** | Selecciona la opción de envío para el evento:<ul><li>**Solo este partner**: envía postbacks solo cuando este evento se atribuya a este partner.</li><li>**Todas las fuentes de medios, incluidas las orgánicas**: envía postbacks para eventos atribuidos a cualquier partner, así como para eventos orgánicos.</li></ul> |
+| **incluyendo** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí sin los valores del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento).</li><li>**Valores sin ingresos**: envía todos los parámetros **excluyendo** el valor de ingresos.</li></ul> |
 
-3. [Optional] Click the **Add condition**<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/c3a5830693fb1f7b48c4d44964365ec0f1da36884cef914e7ab2be011bc60044-18699057822865.png" width="30px" />icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
-4. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
-5. Click **Save integration**.
-6. [Optional]After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
-   1. From the top-left corner, under the partner name, click the app name to open the list of apps.
-   2. Select a different app from the drop-down list.
-   3. Repeat the <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#integration-tab">integration steps</Anchor> for the selected app.
+3. [Opcional] Haz clic en el icono **Agregar condición** <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png" width="30px" /> para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer las condiciones</Anchor> de un evento.
+4. Establece la **ventana de postback de eventos in-app**, si es necesario (lee más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app"> configuración de la ventana de postback de eventos in-app</Anchor>).
+5. Haz clic en **Guardar integración**.
+6. [Opcional] Después de guardar la integración, desde la página de configuración, puedes integrar más de tus aplicaciones con el partner:
+   1. En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
+   2. Selecciona una aplicación diferente en la lista desplegable.
+   3. Repite los <Anchor target="_blank" href="/marketers/es/docs/amazon-ads-campaign-configuration#integration-tab">pasos de integración</Anchor> para la aplicación seleccionada.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> For iOS apps only: Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Privacy (for iOS 14.5+ and later)** <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy">toggle state</Anchor>.
+> Solo para aplicaciones de iOS: Tu control sobre los datos compartidos con el partner a través de postbacks y <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">reportes</Anchor> depende del **estado del selector <Anchor target="_blank" href="/marketers/es/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy">Privacidad avanzada (para iOS 14.5+ y posteriores)</Anchor>**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>. **To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para atribuir campañas específicas, conjuntos de anuncios o anuncios individuales, tanto para campañas de UA como de retargeting. Puedes usar un enlace de plataforma única o <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Obtén más información sobre la estructura y los parámetros del enlace de atribución</Anchor>. **Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de Costo">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de redes de publicidad</Anchor> para obtener detalles completos sobre las dimensiones, métricas y funciones admitidas. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el dashboard de estado de la integración de costos (e ingresos por publicidad) o en el dashboard de la red de publicidad individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de ingresos publicitarios">
 
-Ad revenue isn't available for Persona.ly RTB.
+Los ingresos por publicidad no están disponibles para Persona.ly RTB.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Select which <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions to grant</Anchor> Persona.ly RTB to access your data and perform various actions.
+Selecciona qué <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos otorgar a</Anchor> Persona.ly RTB para acceder a tus datos y realizar diversas acciones.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> When the integration is <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">deactivated</Anchor> while the Permissions toggle is still turned on, permissions remain granted.
+> Cuando la integración se <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">desactiva</Anchor> mientras el selector Permisos aún está activado, se siguen otorgando permisos.
 
 </Accordion>
 
-<div data-zendesk-anchors="setting-up-amazon-dsp-integration=setting-up-personaly-rtb 01H88VAJH3VENKYVRQY5RXN63P=setting-up-personaly-rtb 01H88VAJH3BYZSXQGGZZJQ9N0C=note 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::b746d215=activate-partner 01H88VAJH34GP7FK1KTJGRDPM7=activate-partner h_01HBB9EEMJ55BQDJ1ZEJT136ZF=note-1 01H88VAJH3G5FAR7RRNDEPNGME=advanced-privacy h_01HARQDVEDA206D0BBXBC6WEHH=transaction-id h_01HA6PNN6RJYTNXRAS3M9EA4M4=install-attribution 01H88VAJH3WE9Z0971WMBRBJRS=default-postbacks inapp-event-postbacks=in-app-event-postbacks 01H88VAJH3AS37MVF75GANWX4B=in-app-event-postbacks 01H88VAJH36MYZ9W1YPWA92Z1Z=note-2 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=note-3" />
+<div data-zendesk-anchors="setting-up-amazon-dsp-integration=configuraci%C3%B3n-de-personaly-rtb 01H88VAJH3VENKYVRQY5RXN63P=configuraci%C3%B3n-de-personaly-rtb 01H88VAJH3BYZSXQGGZZJQ9N0C=nota 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::b746d215=activar-partner 01H88VAJH34GP7FK1KTJGRDPM7=activar-partner h_01HBB9EEMJ55BQDJ1ZEJT136ZF=nota-1 advanced-privacy=privacidad-avanzada 01H88VAJH3G5FAR7RRNDEPNGME=privacidad-avanzada transaction-id=id-de-transacci%C3%B3n h_01HARQDVEDA206D0BBXBC6WEHH=id-de-transacci%C3%B3n install-attribution=atribuci%C3%B3n-de-instalaci%C3%B3n h_01HA6PNN6RJYTNXRAS3M9EA4M4=atribuci%C3%B3n-de-instalaci%C3%B3n default-postbacks=postbacks-predeterminados 01H88VAJH3WE9Z0971WMBRBJRS=postbacks-predeterminados inapp-event-postbacks=postbacks-de-eventos-in-app 01H88VAJH3AS37MVF75GANWX4B=postbacks-de-eventos-in-app 01H88VAJH36MYZ9W1YPWA92Z1Z=nota-2 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=nota-3" />

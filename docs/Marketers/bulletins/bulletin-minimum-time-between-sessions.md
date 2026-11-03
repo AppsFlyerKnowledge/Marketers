@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Minimum time between sessions'
+title: 'Boletín: Tiempo mínimo entre sesiones'
 metadata:
   keywords:
     - Advertisers
@@ -16,12 +16,100 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2021-01-03T11:28:55Z'
-  edited_at: '2023-11-26T12:53:54Z'
+  edited_at: '2026-10-20T03:57:01Z'
   id: 360016827858
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360016827858-Bulletin-Minimum-time-between-sessions
+  url: https://support.appsflyer.com/hc/es/articles/360016827858
 ---
-<table><tbody><tr><td><p><strong>What's new</strong></p></td><td>Change in the calculation of the sessions metric</td></tr><tr><td><strong>Effective Date</strong> </td><td><span>February 15, 2021</span></td></tr><tr><td><p><strong>What's changing</strong></p><p><strong><img alt="Information_icon.png" src="https://files.readme.io/2fc0f0d0337ac9902e20f69605e25331e17a370008c72ae52a79e09d916dba21-360015660197.png"/></strong></p></td><td><p><span>The sessions metric is calculated by counting sessions reported by the SDK in the app.</span></p><p><span>Starting on the Effective Date, after the first 5 sessions, the sessions metric is calculated taking into account a minimum time between sessions timer. This means that some sessions aren't counted as illustrated in the example that follows. </span></p><p><span>The timer has a default duration of 10 minutes and the possible values are: </span><span></span></p><ul><li><span>1-60 minutes</span></li><li><span> 1-24 hours</span></li></ul><p><span><img alt="MinimumTimeBetweenSessions_us-en.jpg" src="https://files.readme.io/12bc7191a11dda474f57055a6cf5ce6bb69b3772ad33a2a0c7bfabc51e4c07ce-360015918477.jpg"/></span></p><br/><p><strong>Example: Sessions counting with a minimum time between sessions of 10 minutes.</strong></p><p><span>In this example, the sessions reporting times are stated as minutes elapsed since 00:00</span></p><table><tbody><tr><th>Example</th><th>Session reporting times</th><th>Number of sessions counted</th><th>Sessions disregarded</th></tr><tr><td>A</td><td><span>0, 10, 20, 30</span></td><td>4</td><td>None</td></tr><tr><td>B</td><td><span>0,</span> 1, 9, <span>11</span></td><td>2</td><td>1, 9</td></tr><tr><td>C</td><td><span>0</span>, <span>10</span>, 15, <span>21</span></td><td>3</td><td>15</td></tr></tbody></table><p><strong>Impact of the change</strong></p><ul><li>Expect a reduction in the sessions metric starting from the Effective Date in the Analytics tools and sessions raw data available to clients having Data Locker. <span></span></li><li>Ad network partners, if you consume the session event via postbacks expect a reduction due to this change. </li></ul></td></tr><tr><td><strong>What's staying the same</strong></td><td><p><span>Implementation of this change (using the default setting of 10 minutes) won't affect any of the following metrics:</span><span></span></p><ul><li>Metrics:<ul><li><span>Daily active users (DAU)</span></li><li><span>Monthly active users (MAU)</span></li><li><span>Retention</span></li><li><span>Loyal users using the default setting of 3 app opens</span></li></ul></li><li><span>Re-engagement conversions</span></li><li><span>Historical data (sessions) recorded before the Effective Date</span><span></span></li></ul><p><span>However, going forward consider that if the Minimum time between sessions is increased to more than one hour, and users don't open the app many times a day, then some retention metrics can be impacted. This is especially true in the case of apps where users typically open the app once a day. </span></p></td></tr><tr><td><p><strong>[Optional] Setting change</strong></p><p><strong><img alt="Action_icon.png" src="https://files.readme.io/f6066b9dee413eea63c6a0bf04b627e3cef6a6fb21a6ca23634e615d3be1950d-360015730138.png"/></strong></p></td><td><p><span>If needed, you can change the default setting of 10 minutes, to one that suits your users’ behavior and interaction style with the app.</span></p><p><strong>To change the minimum time between sessions duration:</strong></p><ol><li>In AppsFlyer. go to <strong>Configuration</strong> &gt; <strong>App settings</strong>.</li><li>Set <strong>Minimum time between sessions.</strong> </li><li>Click <strong>Save settings.</strong> <br/>The change takes effect within an hour. </li></ol></td></tr></tbody></table>
+
+<Table>
+  <tbody>
+    <tr>
+      <td>
+        **¿Qué hay de nuevo?**
+      </td>
+      <td>
+        Cambio en el cálculo de la métrica de sesiones
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Fecha de entrada en vigor**
+      </td>
+      <td>
+        15 de febrero de 2021
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Qué ha cambiado**
+
+        **![Information_icon.png](https://files.readme.io/2fc0f0d0337ac9902e20f69605e25331e17a370008c72ae52a79e09d916dba21-360015660197.png)**
+      </td>
+      <td>
+        La métrica de sesiones se calcula contando las sesiones que reporta el SDK en la aplicación.
+
+        A partir de la Fecha de entrada en vigor, después de las primeras 5 sesiones, la métrica de sesiones se calcula teniendo en cuenta un temporizador de tiempo mínimo entre sesiones. Esto significa que algunas sesiones no se contabilizan, como se muestra en el ejemplo siguiente. 
+
+        El temporizador tiene una duración predeterminada de 10 minutos y los valores posibles son: 
+
+        * 1-60 minutos
+        * 1-24 horas
+
+        ![MinimumTimeBetweenSessions_us-en.jpg](https://files.readme.io/12bc7191a11dda474f57055a6cf5ce6bb69b3772ad33a2a0c7bfabc51e4c07ce-360015918477.jpg)
+
+        **Ejemplo: recuento de sesiones con un tiempo mínimo entre sesiones de 10 minutos.**
+
+        En este ejemplo, las horas de reporte de las sesiones se indican como minutos transcurridos desde las 00:00
+
+        | Ejemplo | Horas de reporte de las sesiones | Número de sesiones contabilizadas | Sesiones ignoradas |
+        | --- | --- | --- | --- |
+        | A | 0, 10, 20, 30 | 4 | None |
+        | B | 0, 1, 9, 11 | 2 | 1, 9 |
+        | C | 0, 10, 15, 21 | 3 | 15 |
+
+        **Impacto del cambio**
+
+        * Espera una reducción de la métrica de sesiones a partir de la Fecha de entrada en vigor en las herramientas de Analytics y en los raw data de sesiones disponibles para los clientes que tienen Data Locker.
+        * Partners de ad network: si consumes el evento de sesión a través de postback, espera una reducción debido a este cambio.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Qué sigue igual**
+      </td>
+      <td>
+        La implementación de este cambio (con la configuración predeterminada de 10 minutos) no afectará a ninguna de las siguientes métricas:
+
+        * Métricas:
+          * DAU (Daily active users)
+          * Usuarios activos mensuales (MAU)
+          * Retencion
+          * Usuarios fieles que usan la configuración predeterminada de 3 aperturas de la aplicación
+        * Conversiones de re-engagement
+        * Datos históricos (sesiones) registrados antes de la Fecha de entrada en vigor
+
+        Sin embargo, de ahora en adelante ten en cuenta que, si el tiempo mínimo entre sesiones se aumenta a más de una hora y los usuarios no abren la aplicación muchas veces al día, algunas métricas de retención pueden verse afectadas. Esto es especialmente cierto en el caso de las aplicaciones en las que los usuarios suelen abrir la aplicación una vez al día.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **[Opcional] Cambio de configuración**
+
+        **![Action_icon.png](https://files.readme.io/f6066b9dee413eea63c6a0bf04b627e3cef6a6fb21a6ca23634e615d3be1950d-360015730138.png)**
+      </td>
+      <td>
+        Si lo necesitas, puedes cambiar la configuración predeterminada de 10 minutos por otra que se adapte al comportamiento de tus usuarios y a su forma de interactuar con la aplicación.
+
+        **Para cambiar la duración del tiempo mínimo entre sesiones:**
+
+        1. En AppsFlyer. ve a **Configuración** > **Configuración de la app**.
+        2. Configura el **tiempo mínimo entre sesiones.**
+        3. Haz clic en **Guardar configuración.**   
+           El cambio entra en vigor en el transcurso de una hora.
+      </td>
+    </tr>
+  </tbody>
+</Table>

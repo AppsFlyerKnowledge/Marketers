@@ -1,5 +1,5 @@
 ---
-title: AppTweak integration with AppsFlyer
+title: Integración de AppTweak con AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -12,41 +12,40 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2024-03-27T10:56:41Z'
-  edited_at: '2026-06-16T09:17:27Z'
+  edited_at: '2026-08-12T11:58:33Z'
   id: 23661808773649
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/23661808773649-AppTweak-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/23661808773649
 ---
-> **At a glance:** AppTweak, an AppsFlyer integrated partner, is an app store acquisition partner for global mobile industry leaders. AppTweak offers solutions to help apps and games optimize their app store presence and increase downloads.
+> **Resumen:** AppTweak, un partner integrado de AppsFlyer, es un partner de adquisición en tiendas de aplicaciones para líderes mundiales del sector móvil. AppTweak ofrece soluciones para ayudar a las aplicaciones y los juegos a optimizar su presencia en la tienda de aplicaciones y aumentar las descargas.
 
-## Overview
+## Visión general
 
-This integration allows you to grant AppTweak permission to access your aggregated analytics reports and SKAN reposts (for iOS apps), using their API token. See <Anchor target="_blank" href="/partners/docs/access-to-aggregated-analytics-tools-for-api-partners">more details and limitations about these permissions</Anchor>.
+Esta integración te permite conceder a AppTweak permiso para acceder a tus reportes de analytics agregados y reportes de SKAN (para aplicaciones iOS) mediante su token de API. Consulta <Anchor target="_blank" href="/partners/es/docs/access-to-aggregated-analytics-tools-for-api-partners">más detalles y limitaciones sobre estos permisos</Anchor>.
 
-## Setting up AppTweak
+## Configuración de AppTweak
 
-**Prerequisite:** Contact the partner and open an account with them before setting up the integration.
+**Requisito previo:** contacta con el partner y abre una cuenta con él antes de configurar la integración.
 
-**To activate or edit the integration:**
+**Para activar la integración:**
 
-1. **To activate:** In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab.  
-   **To edit**: In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active integrations** tab.
-2. Search for the partner and select it.
-3. Click **Integrate**. You’re directed to the integration setup page.
-4. From the top-left, under the partner name, select the app for the integration.
-5. In the **API access** tab, turn on the relevant permissions:
-   * Aggregate analytics reporting
-   * SKAN reporting (for iOS apps)
+1. **Para activar:** En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de partners > Marketplace** pestaña.  
+   **Para editar**: En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de partners** > la pestaña **Integraciones activas**.
+2. Busca al partner y selecciónalo.
+3. Haz clic en **Integrate**. Se te dirigirá a la página de configuración de la integración.
+4. En la parte superior izquierda, debajo del nombre del partner, selecciona la aplicación para la integración.
+5. En la pestaña **Acceso a la API**, activa los permisos correspondientes:
+   * Reportes analíticos agregados
+   * Reportes de SKAN (para aplicaciones iOS)
 
      <Image alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
-6. Click **Save API access**.
-7. Notify AppTweak that you've enabled their access.
+6. Haz clic en **Save API access**.
+7. Notifica a AppTweak que has habilitado su acceso.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> AppsFlyer provides aggregate reporting via the <Anchor target="_blank" href="/partners/docs/data-locker-reports-for-api-partners">Data Locker solution for partners</Anchor>.
+> AppsFlyer proporciona reportes agregados mediante la <Anchor target="_blank" href="/partners/es/docs/data-locker-reports-for-api-partners">solución Data Locker para partners</Anchor>.
 
-<div data-zendesk-anchors="h_01HSZP6Z6Y2Y89SNPDRHNTSRG9=overview setting-up-AppTweak=setting-up-apptweak h_01HST42K52JKQ70F7Y5PHDZAZ5=setting-up-apptweak h_01HWQ2MYJWAGCNS00TCBFBVWHA=note" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01HSZP6Z6Y2Y89SNPDRHNTSRG9=visi%C3%B3n-general setting-up-AppTweak=configuraci%C3%B3n-de-apptweak h_01HST42K52JKQ70F7Y5PHDZAZ5=configuraci%C3%B3n-de-apptweak h_01HWQ2MYJWAGCNS00TCBFBVWHA=nota" />

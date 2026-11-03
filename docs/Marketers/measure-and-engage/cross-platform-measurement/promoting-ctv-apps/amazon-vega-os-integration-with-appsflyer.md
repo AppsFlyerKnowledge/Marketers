@@ -1,5 +1,5 @@
 ---
-title: Amazon Vega OS integration with AppsFlyer
+title: Integración de Amazon Vega OS con AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -12,48 +12,47 @@ x-zendesk:
     - Marketers
     - CTV Attribution
   created_at: '2026-01-19T07:36:38Z'
-  edited_at: '2026-02-23T11:15:01Z'
+  edited_at: '2026-08-12T12:10:12Z'
   id: 42971481283601
-  locale: en-us
+  locale: es
   section: Promoting CTV apps
   section_id: 15328952633489
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/42971481283601-Amazon-Vega-OS-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/42971481283601
 ---
-> **At a glance:** Integrate your Amazon Vega OS Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Amazon Vega OS.
+> **En resumen:** Integra tu aplicación Amazon Vega OS Connected TV (CTV) con AppsFlyer para recibir datos de atribución y eventos para tus campañas en Amazon Vega OS.
 
-## **About Amazon Vega OS CTV attribution**
+## **Sobre la atribución CTV de Amazon Vega OS**
 
-The Amazon Vega OS for streaming runs across all Amazon Vega OS devices.
+El sistema operativo Amazon Vega OS para streaming funciona en todos los dispositivos Amazon Vega OS.
 
-CTV apps streaming on Amazon Vega OS can integrate with AppsFlyer via API to receive attribution data and performance measurements about which sources (organic) and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+Las aplicaciones de CTV en streaming en Amazon Vega OS pueden integrarse con AppsFlyer a través de la API para recibir datos de atribución y mediciones de performance sobre qué fuentes (orgánicas) y campañas impulsan la apertura de la aplicación y los eventos in-app. Los marketers confían en estos insights para medir y optimizar las actividades de marketing.
 
-The Amazon Vega OS API integration supports:
+La integración de la API de Amazon Vega OS es compatible con:
 
-* Amazon Vega OS Smart TVs.
-* CTV-to-CTV attribution and event recording. Meaning, attribution and recording on a user's Amazon Vega OS device.
+* Smart TVs de Amazon Vega OS.
+* Atribución CTV-to-CTV y registro de eventos. Es decir, atribución y registro en el dispositivo Amazon Vega OS de un usuario.
 
-## **Integration procedures**
+## **Procedimientos de integración**
 
-The following table lists the tasks required to integrate your Amazon Vega OS CTV app with AppsFlyer. To record your progress, download this [spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vSFsuk9liZ_z34w3kHMyOFzASh5PBDtdn_HxgMqxAYY0wEt5RxCdrXeyLvteC5Cp-x-6ESwO5YbJ0n-/pub?output=xlsx).
+La siguiente tabla enumera las tareas necesarias para integrar tu aplicación Amazon Vega OS CTV con AppsFlyer. Para registrar tus progresos, descarga esta [hoja de cálculo](https://docs.google.com/spreadsheets/d/e/2PACX-1vSFsuk9liZ_z34w3kHMyOFzASh5PBDtdn_HxgMqxAYY0wEt5RxCdrXeyLvteC5Cp-x-6ESwO5YbJ0n-/pub?output=xlsx).
 
-| **Task** | **Actions** | **Who's involved** |
+| **Tarea** | **Acciones** | **¿Quién participa?** |
 | --- | --- | --- |
-| App setup | <ul><li>[Create an AppsFlyer account](https://www.appsflyer.com/get-started/)</li><li><Anchor target="_blank" href="/marketers/docs/user-management">Add account users with appropriate permissions</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">Add your Amazon Vega OS CTV app in AppsFlyer</Anchor> using the <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#amazon-vega-os">Amazon Vega app ID structure</Anchor>.</li></ul> | Marketer |
-| API integration with your app (via S2S) | [Integrate the AppsFlyer CTV API](https://dev.appsflyer.com/hc/reference/overview-4) into your CTV app with commands to report the following events to AppsFlyer.<ul><li>First opens</li><li>In-app events</li><li>Sessions</li></ul>**Note**:ƒ<ul><li>Installs must be reported before in-app events and sessions.</li><li>Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer.</li><li>For the `device_ids` parameter, select the type `vegaid`.</li><li>To report owned media engagements, integrate the [impression engagement API.](https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id)</li></ul> | App developer |
-| Link setup | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor> | Marketer |
-| Report setup/view data | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor> | Marketer/Data engineer |
+| Configuración de la aplicación | <ul><li>[Crear una cuenta AppsFlyer](https://www.appsflyer.com/get-started/)</li><li><Anchor target="_blank" href="/marketers/es/docs/user-management">Añadir usuarios de cuenta con los permisos adecuados</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">Añade tu aplicación Amazon Vega OS CTV en AppsFlyer</Anchor> usando la <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer#amazon-vega-os">estructura de ID de aplicación de Amazon Vega</Anchor>.</li></ul> | Comercializador |
+| Integración API con tu aplicación (a través de S2S) | [Integra la API de AppsFlyer CTV](https://dev.appsflyer.com/hc/reference/overview-4) en tu aplicación CTV con comandos para reportar los siguientes eventos a AppsFlyer.<ul><li>Primeras aperturas</li><li>Eventos dentro de la aplicación</li><li>Sesiones</li></ul>**Nota**<ul><li>Las instalaciones deben notificarse antes que las sesiones y los eventos in-app.</li><li>Envía eventos usando la API. Dile a tu desarrollador qué eventos debe enviar. Verifica que cuando configuras la API, configuras y asignas los eventos para enviar a AppsFlyer.</li><li>Para el parámetro `device_ids` , selecciona el tipo `vegaid`.</li><li>Para reportar engagement de medios propios, integra la [API de engagement de impresiones.](https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id)</li></ul> | Tu desarrollador de aplicaciones |
+| Configuración del enlace | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor> | Comercializador |
+| Configuración/visualización de datos de reportes | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Obtén más insights sobre la disponibilidad de datos en dashboards y reportes</Anchor> | Marketer/Ingeniero de datos |
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-| Trait | Remarks |
+| Caducado | Nota |
 | --- | --- |
-| Non-organic sources | Coming soon |
-| Retargeting | Not currently supported |
-| Cost data | Cost data must be sent via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file by email method. |
+| Fuentes no orgánicas | En breve |
+| Reorientación | Actualmente no es compatible |
+| Datos de costo | <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Los datos de costos deben enviarse a través deImportaci</Anchor>ón de costosutilizando el método de upload del archivo por correo electrónico. |
 
-### **See also**
+### **Véase también**
 
-* <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">CTV, PC, and console platform overview</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Resumen general de la plataforma de CTV, PC y consola</Anchor>
 
-<div data-zendesk-anchors="h_01KFAJYYX01B4E6CDMCH6REGY9=about-amazon-vega-os-ctv-attribution h_01KFAJYYX0WZY682B0SSWJM40V=integration-procedures h_01KFAJYYX0E95XEYQCQPCTN700=traits-and-limitations h_01KFAJYYX00K3RKMYB9QX6KXKN=see-also" />
+<div data-zendesk-anchors="about-amazon-vega-os-ctv-attribution=sobre-la-atribuci%C3%B3n-ctv-de-amazon-vega-os h_01KFAJYYX01B4E6CDMCH6REGY9=sobre-la-atribuci%C3%B3n-ctv-de-amazon-vega-os integration-procedures=procedimientos-de-integraci%C3%B3n h_01KFAJYYX0WZY682B0SSWJM40V=procedimientos-de-integraci%C3%B3n traits-and-limitations=especificaciones-y-limitaciones h_01KFAJYYX0E95XEYQCQPCTN700=especificaciones-y-limitaciones see-also=v%C3%A9ase-tambi%C3%A9n h_01KFAJYYX00K3RKMYB9QX6KXKN=v%C3%A9ase-tambi%C3%A9n" />

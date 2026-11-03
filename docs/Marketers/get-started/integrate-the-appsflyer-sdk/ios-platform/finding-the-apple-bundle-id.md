@@ -1,5 +1,5 @@
 ---
-title: Finding the Apple bundle ID
+title: Cómo encontrar el ID de paquete de Apple
 metadata:
   keywords:
     - Marketers
@@ -13,26 +13,25 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2020-09-21T09:03:32Z'
-  edited_at: '2026-08-18T09:08:36Z'
+  edited_at: '2023-02-28T23:21:32Z'
   id: 360013555718
-  locale: en-us
+  locale: es
   section: iOS platform
   section_id: 6551263106577
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360013555718-Finding-the-Apple-bundle-ID
+  url: https://support.appsflyer.com/hc/es/articles/360013555718
 ---
-> **At a glance:** Find the Apple bundle ID and use it as needed.
+> **De un vistazo:** Encuentra el ID de paquete de Apple y úsalo según sea necesario.
 
-The Apple bundle ID is a unique identifier associated with iOS apps.
+El ID de paquete de Apple es un identificador único asociado con las aplicaciones de iOS.
 
-* App owners set this ID
-* Apple recommends that app owners name the ID using a reverse domain-name notation.  
-  Example: com.domain.appname
+* Los propietarios de las aplicaciones establecen este ID.
+* Apple recomienda que los propietarios de las aplicaciones nombren el ID usando una notación inversa del nombre de dominio.  
+  Ejemplo: com.domain.appname
 
-**To locate the Apple bundle ID:**
+**Para ubicar el ID de paquete de Apple:**
 
-1. Log into your [iTunes Connect](https://itunesconnect.apple.com/) account.
-2. Click the relevant app.
-3. Go to **General** > **App Information.** The **Bundle ID** is displayed.  
+1. Inicia sesión en tu cuenta de [iTunes Connect](https://itunesconnect.apple.com/).
+2. Haz clic en la aplicación correspondiente.
+3. Ve a **General** > **App Information (Información de la aplicación).** Se muestra el **Bundle ID (ID de paquete)**.  
 
    ![iTunes-connect-app-information-en-us.png](https://files.readme.io/236967e7c254e40c3a76565a6da8cc5599e86be1c16e568c7c5b31072b570bd2-360011702958.png)

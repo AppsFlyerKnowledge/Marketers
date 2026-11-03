@@ -1,5 +1,5 @@
 ---
-title: Brand OneLink with your domain
+title: OneLink de marca con tu dominio
 metadata:
   keywords:
     - Marketers
@@ -13,168 +13,176 @@ x-zendesk:
     - Marketers
     - OneLink
   created_at: '2019-08-26T09:00:09Z'
-  edited_at: '2026-08-14T16:22:56Z'
+  edited_at: '2026-08-22T00:32:56Z'
   id: 360002329137
-  locale: en-us
+  locale: es
   section: Deep linking using OneLink
   section_id: 6551203111057
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360002329137-Brand-OneLink-with-your-domain
+  url: https://support.appsflyer.com/hc/es/articles/360002329137
 ---
-> **At a glance:** Advertisers using OneLink links can brand them with their own domain. This improves campaign performance and increases brand exposure.
+> **At a glance:** Los anunciantes que utilicen enlaces OneLink pueden marcarlos con su propio dominio. Esto mejora el rendimiento de la campaña y aumenta la exposición de la marca.
 
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 
-## Branded Domains
+## Dominios de marca
 
-* Branded Domains are used to brand attribution links with your brand and domain. For example, as illustrated in the preceding figure:
+* Los dominios de marca se utilizan para personalizar los enlaces de atribución con tu marca y dominio. Por ejemplo, como se muestra en la figura anterior:
   * OneLink: abcdef.onelink.me
-  * Brand abcdef.com
-  * Subdomain: For example, app
-  * Implement Branded Domains and use your full domain, with the attribution link being click.abcdef.com
-* Branded Domains improve campaign performance because they:
-  * Drive trust: Capitalize on your branding, ensure consistent identity, remove friction from user journeys, and improve CTR rates.
-  * Allow deep linking using your brand.
-  * Are simple to implement and behave the same as OneLinks.
-  * Promote brand awareness: Your brand marks your campaigns, instead of a generic link.
-  * Enable emails to avoid being flagged as spam due to the link not matching the sender email.
-  * Branded domains are included in paid AppsFlyer <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing">subscription plans</Anchor>.
+  * Marca abcdef.com
+  * Subdominio: Por ejemplo, app
+  * Implementa dominios de marca y usa tu dominio completo, con el enlace de atribución click.abcdef.com
+* Los dominios de marca mejoran el rendimiento de la campaña porque:
+  * Impulsa la confianza: aprovecha tu marca, garantiza una identidad coherente, elimina la fricción en los viajes de los usuarios y mejora las tasas de CTR.
+  * Permite deep linking utilizando tu marca.
+  * Son fáciles de implementar y se comportan igual que OneLinks.
+  * Promueve el reconocimiento de la marca: tu marca identifica tus campañas, en lugar de un enlace genérico.
+  * Permite que los correos electrónicos eviten ser marcados como spam debido a que el enlace no coincide con el correo electrónico del remitente.
+  * Los dominios de marca están incluidos en los <Anchor target="_blank" href="/marketers/es/docs/account-management-plans-payments-and-billing">planes de suscripción</Anchor> de pago de AppsFlyer.
 
-### Principles of implementation
+### Principios de implementación
 
-Branded Domains are implemented by associating a full domain defined in your Domain Name System (DNS) with a OneLink subdomain (the AppsFlyer CNAME destination). This is done by using standard settings in your DNS and setting up a Branded Domain in AppsFlyer. In addition, you will need to make some minor changes in your app to support Branded Domains.
+Los Dominios de Marca se implementan asociando un dominio completo definido en tu Sistema de Nombres de Dominio (DNS) con un subdominio de OneLink (el destino CNAME de AppsFlyer). Esto se logra mediante la configuración estándar en tu DNS y la de un dominio de marca en AppsFlyer. Además, tendrás que realizar algunos cambios menores en tu aplicación para que sea compatible con los dominios de marca.
 
-You will need the assistance of the DNS admin, usually a member of your IT team or your DNS hosting provider and the app developer.
+Necesitarás la ayuda del administrador de DNS, normalmente un miembro de tu equipo de TI o de tu proveedor de hosting DNS, y del desarrollador de la aplicación.
 
-Multiple full domains can be associated with a single OneLink subdomain. This means you can have multiple brands using the same OneLink subdomain.
+Se pueden asociar varios dominios completos con un solo subdominio de OneLink. Esto significa que puedes tener varias marcas utilizando el mismo subdominio OneLink.
 
-### Setting up Branded Domains
+### Configuración de dominios de marca
 
-Complete the action list to set up a Branded Domain.
+Completa la lista de acciones para configurar un dominio de marca.
 
-|  | Responsibility | Action | Remarks |
+|  | Responsabilidad | Acción | Comentarios |
 | --- | --- | --- | --- |
-| 1 | Marketer assisted by the DNS admin | [Set up a Branded Link in AppsFlyer](/docs/brand-onelink-with-your-domain#set-up-a-branded-domain-in-appsflyer) | The DNS admin, usually a member of your IT team or your DNS hosting provider, needs to define the full domain (aka host) and set a CNAME record as described in the procedure. |
-| 2 | Developer | [Set up Branded Domains in the app](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | Make minor changes to the app code. |
-| 3 | Marketer | [Using and testing Branded Domains](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
-| As needed | Marketer | [Editing and deleting Branded Domains](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
+| 1 | Marketer asistido por el administrador de DNS | [Configurar un enlace de marca en AppsFlyer](/docs/brand-onelink-with-your-domain#set-up-a-branded-domain-in-appsflyer) | El administrador de DNS, generalmente un miembro de tu equipo de TI o de tu proveedor de alojamiento de DNS, necesita definir el dominio completo (el host) y establecer un registro CNAME como se describe en el procedimiento. |
+| 2 | desarrollador | [Configurar dominios de marca en la aplicación](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | Realiza cambios menores en el código de la aplicación. |
+| 3 | marketer | [Uso y prueba de dominios de marca](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
+| Según sea necesario | marketer | [Editar y eliminar dominios de marca](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
 
-### Procedures
+### Procedimientos
 
 <div id="set-up-a-branded-domain-in-appsflyer" />
 
-<Accordion title="Set up a Branded Domain in AppsFlyer">
+<Accordion title="Configurar un dominio de marca en AppsFlyer">
 
-Setting up a Branded Domain consists of associating a full domain set in your DNS with a OneLink subdomain in AppsFlyer as depicted in the following figure.
+Configurar un Dominio de Marca consiste en asociar un dominio completo en su DNS con un subdominio OneLink en AppsFlyer como se muestra en la siguiente figura.
 
-**Branded Domain pointing to AppsFlyer servers**
+**Dominio de marca que apunta a los servidores de AppsFlyer**
 
-![Branded Domain pointing to AppsFlyer servers diagram](https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png)
+![Diagrama de dominio de marca que apunta a los servidores de AppsFlyer](https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png)
 
-**Before you begin:**
+**Antes de empezar:**
 
-* Choose a full domain name, for example, app.abcdef.com where  
-  abcdef.com is your brand. The subdomain, for example, app, can also be customized.
-* Request that the DNS admin create the full domain (aka host).
-* Request that the DNS admin set a CNAME record such that the full  
-  domain (Brand domain) points to the specified URL (aka AppsFlyer host).  
-  This is depicted in the figure Branded Domain pointing to AppsFlyer servers (above).
+* Elige un nombre de dominio completo, por ejemplo, app.abcdef.com, donde  
+  abcdef.com es tu marca. El subdominio, por ejemplo, app, también se puede personalizar.
+* Solicita el administrador de DNS que cree el dominio completo (host).
+* Solicita que el administrador de DNS configure un registro CNAME para que el dominio completo  
+  (dominio de marca) apunte a la URL especificada (es decir, al host de AppsFlyer).  
+  Esto se muestra en la figura Dominio de Marca que apunta a los servidores de AppsFlyer (arriba).
 
-**To map your full domain to a OneLink subdomain**:
+**Para asignar tu dominio completo a un subdominio de OneLink**:
 
-1. In AppsFlyer, click on **Engage** > **Branded Domains**.
-2. Click **+ New Branded Domain**.
-3. In the **Brand Domain** field, enter your full domain as set in your DNS. For example, **click.abcdef.com Note:** Do not place a period after the domain.
-4. Select the OneLink subdomain from the list that displays. If no list  
-   displays, you need to create a OneLink template, which will provide a  
-   default subdomain.
-5. Click **Next.**
-6. Set a CNAME record:
-   * If your domain is properly pointed to the AppsFlyer CNAME  
-     destination, "AppsFlyer CNAME was found" displays.
-   * If a CNAME is not found, copy the AppsFlyer CNAME destination, send it to your DNS admin, and ask them to make sure your full domain is mapped to the CNAME destination. The DNS admin must map your full domain to an AppsFlyer CNAME destination. Otherwise, the branded domain is created but doesn't work.
+1. En AppsFlyer, haz clic en **Engage** > **Branded Domains**.
+2. Haz clic en **+ Nuevo dominio de marca**.
+3. En el campo **Dominio de marca**, introduce tu dominio completo tal como está configurado en tu DNS. Por ejemplo, **click.abcdef.com Nota:** No pongas un punto después del dominio.
+4. Selecciona el subdominio de OneLink de la lista que se muestra. Si no aparece ninguna lista,  
+   debes crear una plantilla de OneLink, que proporcionará un  
+   subdominio predeterminado.
+5. Haz clic en **Siguiente.**
+6. Establece un registro CNAME:
+   * Si tu dominio apunta correctamente al destino CNAME de AppsFlyer,  
+     aparece "AppsFlyer CNAME was found".
+   * Si no se encuentra un CNAME, copia el destino CNAME de AppsFlyer, envíalo a tu administrador DNS y pídele que se asegure de que tu dominio completo está asignado al destino CNAME. El administrador de DNS debe asignar tu dominio completo a un destino CNAME de AppsFlyer. De lo contrario, el dominio de marca se crea pero no funciona.
 
      > 📘 **Note**
      >
-     > The CNAME record must be mapped within a time span of 7 days, starting from the branded domain creation date and ending on the date specified in the confirmation dialog.  
-     > If the CNAME record is not mapped by the specified date, you must  
-     > [renew the 7-day period](#renew-the-7-day-period-for-mapping-the-cname-record).
+     > **Nota:**
+     >
+     > El registro CNAME debe asignarse en un plazo de 7 días, a partir de la fecha de creación del dominio de marca y hasta la fecha especificada en el cuadro de diálogo de confirmación.  
+     > Si el registro CNAME no está asignado en la fecha especificada, debes  
+     > [renovar el periodo de 7 días](#renovar-el-plazo-de-7-días-para-asignar-el-registro-cname).
 
-7. Click **Done**. You can now create new links based on the OneLink template with your branded domain.
+7. Haz clic en **Listo**. Ahora puedes crear nuevos enlaces basados en la plantilla de OneLink con tu dominio de marca.
 
    > 📘 **Note**
    >
-   > * If you already created links based on your OneLink template without the branded domain, they still work.
-   > * It can take up to 24 hours for a new branded domain to start working.
+   > **Nota:**
+   >
+   > * Si ya creaste enlaces basados en tu plantilla de OneLink sin el dominio de marca, seguirán funcionando.
+   > * Un nuevo dominio de marca puede tardar hasta 24 horas en empezar a funcionar.
 
 
-#### Renew the 7-day period for mapping the CNAME record
+#### Renovar el plazo de 7 días para asignar el registro CNAME
 
-The new branded domain does not work if the CNAME record of your full domain isn't mapped to AppsFlyer within 7 days of your branded domain creation.
-
-> 📘 **Note**
->
-> If the record was mapped after the 7-day period expired, you still need to renew the 7-day period for the new branded domain to work.
-
-**To renew the 7-day period:**
-
-1. In AppsFlyer, from the side menu, select **Engage** > **Branded Domains.**
-2. Go to the branded domain that is not yet mapped to AppsFlyer, indicated by the warning icon (![alert.png](https://files.readme.io/7df53739ca5c629ec0bda789563f59717da9699986222705228f57e0d947c8de-30192946335761.png)).
-3. Click the refresh icon (<Image alt="refresh.png" src="https://files.readme.io/052b47c423612c1b0549f37ed6394373d37f28331e09f4c709601a7e5473bf2b-30192959741585.png" width="18px" />) to renew the 7-day period.
+El nuevo dominio de marca no funciona si el registro CNAME de tu dominio completo no se asigna a AppsFlyer en los 7 días siguientes a la creación de tu dominio de marca.
 
 > 📘 **Note**
 >
-> You can delete the branded domain by clicking the Delete icon (<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />) if you decide not to renew the 7-day period. Only branded domains that are not yet mapped to AppsFlyer can be deleted.
+> **Nota:**
+>
+> Si el registro se asignó después de que expirara el periodo de 7 días, deberás renovar el periodo de 7 días para que el nuevo dominio de marca funcione.
 
-#### Custom SSL certificate (optional)
+**Para renovar el periodo de 7 días:**
 
-AppsFlyer-managed SSL is the default and recommended option for most customers and requires no additional action because AppsFlyer automatically handles certificate issuance and renewal. If you have specific security or compliance requirements, you can choose to use your own SSL certificate authority (custom SSL certificate) instead of AppsFlyer-managed SSL. If you choose this option, you are responsible for issuing, uploading, maintaining, and renewing the certificate. If the certificate expires and is not renewed on time, service may be disrupted.
-
-**To use a custom SSL certificate:**
-
-1. [Create the branded domain](/docs/brand-onelink-with-your-domain#setting-up-branded-domains).
-2. In AppsFlyer, from **Engage** > **Branded domains**, hover on the relevant domain and select the "Custom SSL certificate" icon.
-
-   <Image alt="SSL certificate icon Newest minimal.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
-3. Fill out the certificate details form.
-
-   <Image alt="fill in form to generate CSR file.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="722px" />
-4. Click **Download CSR** to download a copy of the form you just filled out.
-   <Image alt="Download CSR file.png" src="https://files.readme.io/9a560d19e38593fbc379efc6bdb1e636e1fa34f894dca4b46a23be30019127dd-45231892701585.png" width="254px" />
-5. Provide the CSR file you just downloaded to the SSL certificate authority of your choice.
-6. Once they give you your new SSL certificate, upload it back to AppsFlyer.
-
-<Image alt="Upload new SSL certificate to AF.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
+1. En AppsFlyer, en el menú lateral, selecciona **Engage** > **Branded Domains.**
+2. Ve al dominio de marca que aún no está asignado a AppsFlyer, indicado por el icono de advertencia (![alert.png](https://files.readme.io/7df53739ca5c629ec0bda789563f59717da9699986222705228f57e0d947c8de-30192946335761.png)).
+3. Haz clic en el icono de actualización (<Image alt="refresh.png" src="https://files.readme.io/052b47c423612c1b0549f37ed6394373d37f28331e09f4c709601a7e5473bf2b-30192959741585.png" width="18px" />) para renovar el periodo de 7 días.
 
 > 📘 **Note**
 >
-> SSL certificates expire. You are responsible for renewing it and uploading the updated certificate to AppsFlyer before the current one expires.
+> **Nota:**
+>
+> Puedes eliminar el dominio de marca haciendo clic en el icono Eliminar (<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />) si decides no renovar el periodo de 7 días. Solo se pueden eliminar los dominios de marca que aún no están asignados a AppsFlyer.
+
+#### Certificado SSL personalizado (opcional)
+
+El SSL gestionado por AppsFlyer es la opción predeterminada y recomendada para la mayoría de los clientes, y no requiere ninguna acción adicional porque AppsFlyer gestiona automáticamente la emisión y la renovación del certificado. Si tienes requisitos específicos de seguridad o cumplimiento, puedes optar por usar tu propia entidad emisora de certificados SSL (certificado SSL personalizado) en lugar del SSL gestionado por AppsFlyer. Si eliges esta opción, eres responsable de emitir, cargar, mantener y renovar el certificado. Si el certificado caduca y no se renueva a tiempo, el servicio puede verse interrumpido.
+
+**Para usar un certificado SSL personalizado:**
+
+1. [Crea el dominio de marca](/docs/brand-onelink-with-your-domain#configuración-de-dominios-de-marca).
+2. En AppsFlyer, ve a **Engage** > **Branded domains**, pasa el cursor por encima del dominio correspondiente y selecciona el icono "Custom SSL certificate".
+
+   <Image alt="Icono de certificado SSL Newest minimal.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
+3. Rellena el formulario con los datos del certificado.
+
+   <Image alt="rellenar el formulario para generar el archivo CSR file.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="722px" />
+4. Haz clic en **Download CSR** para descargar una copia del formulario que acabas de rellenar. <Image alt="Descargar archivo CSR.png" src="https://files.readme.io/9a560d19e38593fbc379efc6bdb1e636e1fa34f894dca4b46a23be30019127dd-45231892701585.png" width="254px" />
+5. Proporciona el archivo CSR que acabas de descargar a la autoridad de certificación SSL que elijas.
+6. Cuando recibas tu nuevo certificado SSL, vuelve a subirlo a AppsFlyer.
+
+<Image alt="Subir nuevo certificado SSL a AppsFlyer.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
+
+> 📘 **Note**
+>
+> **Nota:**
+>
+> Los certificados SSL caducan. Eres responsable de renovarlo y subir el certificado actualizado a AppsFlyer antes de que caduque el actual.
 
 </Accordion>
 
 <div id="set-up-branded-domains-in-the-app" />
 
-<Accordion title="Set up Branded Domains in the app">
+<Accordion title="Configurar dominios de marca en la aplicación">
 
-* Use the following SDK versions:
-  * Android V4.10.1 and later
-  * iOS V4.10.1 and later
-  * User invite referral (invite a friend) requires SDK version V5.2.0 and later for both iOS and Android
+* Utiliza las siguientes versiones del SDK:
+  * Android V4.10.1 y posteriores
+  * iOS V4.10.1 y posteriores
+  * Para invitar a un amigo se requiere la versión V5.2.0 o posterior del SDK, tanto para iOS como para Android.
 
-**Branded Domains SDK implementation considerations**
+**Consideraciones de implementación del SDK de dominios de marca**
 
-* When deep linking takes place using Branded Domains, the AppsFlyer SDK can't get conversion data for installs and deep linking.
-* To overcome this, the developer uses the `setOneLinkCustomDomain` and `oneLinkCustomDomains` SDK API for Android and iOS respectively.
-* This API queries the branded domain, gets the OneLink domain to which it is mapped, and completes the OneLink.
+* Cuando se realizan deep linking mediante dominios de marca, el SDK de AppsFlyer no puede obtener los datos de conversión para instalaciones y deep linking.
+* Para superarlo, el desarrollador utiliza la API del SDK `setOneLinkCustomDomain` y `oneLinkCustomDomains` para Android e iOS, respectivamente.
+* Esta API consulta el dominio de marca, obtiene el dominio OneLink al que está asignado y completa el OneLink.
 
 <Tabs>
 <Tab title="Android">
 
-Ensure that you update the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#adding-app-link-intent-filter-to-main-activity">intent-filter</Anchor> of the manifest to include your brand domain by setting the android:host.
+Asegúrate de actualizar el <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#adding-app-link-intent-filter-to-main-activity">intent-filter</Anchor> del manifiesto para incluir el dominio de tu marca configurando android:host.
 
-Use this API before initializing the SDK in the <Anchor target="_blank" href="https://developer.android.com/reference/android/app/Application">Android global application class.</Anchor>
+Utiliza esta API antes de inicializar el SDK en la <Anchor target="_blank" href="https://developer.android.com/reference/android/app/Application">clase de aplicación global de Android</Anchor>
 
-**Example**
+**Ejemplo**
 
 ```java
 public class AFApplication extends Application {
@@ -183,7 +191,7 @@ public class AFApplication extends Application {
     public void onCreate() {
     super.onCreate();
 
-      // Set branded link domain. Don't include https:// as part of the domain. 
+      // Establece el dominio del enlace de marca. No incluyas https:// como parte del dominio. 
       AppsFlyerLib.getInstance().setOneLinkCustomDomain("promotion.greatapp.com");
       AppsFlyerLib.getInstance().init(AF_DEV_KEY, conversionListener, this);
       AppsFlyerLib.getInstance().start(this, AF_DEV_KEY);
@@ -192,9 +200,9 @@ public class AFApplication extends Application {
 }
 ```
 
-If you have several branded domains, pass them all to the API to ensure that you always get the conversion data and can deep link into the app.
+Si tienes varios dominios de marca, transfiérelos todos a la API para asegurarte de obtener siempre los datos de conversión y de que puedas crear deep link en la aplicación.
 
-**Example**
+**Ejemplo**
 
 ```java
 AppsFlyerLib.getInstance().setOneLinkCustomDomain("promotion.greatapp.com", 
@@ -204,18 +212,18 @@ AppsFlyerLib.getInstance().setOneLinkCustomDomain("promotion.greatapp.com",
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-**To associate domains for iOS Universal Links:**
+**Para asociar dominios para Universal Links de iOS:**
 
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#enabling-associated-domains">Set up</Anchor> the **OneLink domain/subdomain** as an associated domain in Xcode.
-* Set up the **branded domain** as an <Anchor target="_blank" href="https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains">associated domain</Anchor> in Xcode.
-* Set up the branded link to be able to get conversion data. For instructions, click the relevant programming language below.
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#enabling-associated-domains">Configura</Anchor> el **dominio/subdominio de OneLink** como un dominio asociado en Xcode.
+* Configura el **dominio de marca** como <Anchor target="_blank" href="https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains">dominio asociado</Anchor> en Xcode.
+* Configura el enlace de marca para poder obtener datos de conversión. Para obtener instrucciones, haz clic en el lenguaje de programación correspondiente.
 
 <Tabs>
 <Tab title="Objective C">
 
-Use the API in the AppDelegate.m, inside the didFinishLaunchingWithOptions method:
+Utiliza la API en AppDelegate.m, dentro del método didFinishLaunchingWithOptions:
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -228,9 +236,9 @@ Use the API in the AppDelegate.m, inside the didFinishLaunchingWithOptions metho
   }
 ```
 
-If you have several branded domains, pass them all to the API to ensure that you always get the conversion data and can deep link into the app.
+Si tienes varios dominios de marca, transfiérelos todos a la API para asegurarte de obtener siempre los datos de conversión y de que puedas crear deep link en la aplicación.
 
-**Example**
+**Ejemplo**
 
 ```objectivec
 [AppsFlyerLib shared].oneLinkCustomDomains = @[@"promotion.greatapp.com", @"click.greatapp.com"];
@@ -240,22 +248,22 @@ If you have several branded domains, pass them all to the API to ensure that you
 
 <Tab title="Swift">
 
-The API should be used in the AppDelegate.swift, inside the didFinishLaunchingWithOptions method:
+La API debe usarse en AppDelegate.swift, dentro del método didFinishLaunchingWithOptions:
 
 ```swift
-   func application(_ application: UIApplication, didFinishLaunchingWithOptions 
-        launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-          AppsFlyerLib.shared().appsFlyerDevKey = "6CQi4Be6Zs9oNLsCusPbUL"
-          AppsFlyerLib.shared().appleAppID = "340954504"
-          AppsFlyerLib.shared().oneLinkCustomDomains = ["example.com"]
-          //...
+   - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions: (NSDictionary *)launchOptions {
+    /** APPSFLYER INIT **/
+    [AppsFlyerLib shared].appsFlyerDevKey = @"SED_DEV_KEY";
+    [AppsFlyerLib shared].appleAppID = @"123456789";
+    [AppsFlyerLib shared].oneLinkCustomDomains = @[@"promotion.greatapp.com"];
+    //...
           //...
    }
 ```
 
-If you have several branded domains, you can pass them to the API as an array of strings. This ensures that no matter what branded link is used, you always get the conversion data and can deep link into the app.
+Si tienes varios dominios de marca, puedes pasarlos a la API como una serie de cadenas. Esto garantiza que no importa qué enlace de marca se utiliza, siempre obtendrás los datos de conversión y podrás crear deep links en la aplicación.
 
-**Example**
+**Ejemplo**
 
 ```objectivec
 AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.greatapp.com"]
@@ -271,112 +279,115 @@ AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.g
 
 <div id="using-and-testing-branded-domains" />
 
-<Accordion title="Using and testing Branded Domains">
+<Accordion title="Uso y prueba de dominios de marca">
 
-**Prerequisites**:
+**Requisitos previos**:
 
-Before using and testing, Branded Domains complete the steps in the [Branded Domains workflow](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app).
+Antes de utilizar y probar los Dominios de Marca, completa los pasos del [workflow de Dominios de Marca](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app).
 
-**To create and test branded domains:**
+**Para crear y probar dominios de marca:**
 
-1. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">Create a OneLink link</Anchor> using the OneLink template mapped to the branded domain.
-2. Copy the custom attribution link to a text editor.
-3. The custom attribution link is made up of a OneLink subdomain, OneLink ID, and custom Link ID. Replace the OneLink subdomain with the Branded Domain full domain. Example:
+1. <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#crear-un-enlace-de-onelink">Crea un enlace de OneLink</Anchor> utilizando la plantilla de OneLink asignada al dominio de la marca.
+2. Copia el enlace de atribución personalizado en un editor de texto.
+3. El enlace de atribución personalizado se compone de un subdominio de OneLink, un ID de OneLink y un ID de enlace personalizado. Reemplaza el subdominio OneLink con el dominio completo del dominio de marca. Ejemplo:
 
-| Custom attribution link | Branded Domain |
+| Enlace de atribución personalizado | Dominio de marca |
 | --- | --- |
 | **abcdef.onelink.me**/A1bc/dc1234ef | **click.abcdef.com**/A1bc/dc1234ef |
 
-4. Use the branded link to <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">test installs and deep linking</Anchor>.
-5. If you use raw data reports as part of the testing, the Original URL field is populated by the branded links.
+4. Usa el enlace de marca para <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">probar las instalaciones y deep linking</Anchor>.
+5. Si utilizas reportes de raw data como parte de las pruebas, el campo URL original se rellena con los enlaces de marca.
 
 </Accordion>
 
 <div id="editing-verifying-and-deleting-branded-domains" />
 
-<Accordion title="Editing, verifying, and deleting Branded Domains">
+<Accordion title="Editar, verificar y eliminar dominios de marca">
 
-#### **Edit a branded domain mapping**
+#### **Editar una asignación de dominio de marca**
 
-You can change the mapping of an existing full domain to a different OneLink subdomain. There is no need to set a CNAME.
+Puedes cambiar la asignación de un dominio completo existente a un subdominio OneLink diferente. No es necesario establecer un CNAME.
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Branded Domains.**
-2. Go to the branded domain you want to edit.
-3. Click the Edit icon (<Image alt="edit-subdomain.png" src="https://files.readme.io/ffe3da7d1c065a806a44c607bcf1231e06bf7e7478ca50187e57cb5ab876ae72-30192959751185.png" width="17px" />).
-4. Select the new OneLink subdomain.
-5. Click **Next.** There is no need to set a CNAME.
-6. Click **Done**.
+1. En AppsFlyer, en el menú lateral, selecciona **Engage** > **Branded Domains.**
+2. Ve al dominio de marca que deseas editar.
+3. Haz clic en el icono Editar (<Image alt="edit-subdomain.png" src="https://files.readme.io/ffe3da7d1c065a806a44c607bcf1231e06bf7e7478ca50187e57cb5ab876ae72-30192959751185.png" width="17px" />).
+4. Seleccione el nuevo subdominio OneLink.
+5. Haz clic en **Siguiente.** No es necesario establecer un CNAME.
+6. Haz clic en **Listo**.
 
 > 🚧 **Important**
 >
-> **Warning**
+> **Advertencia**
 >
-> Modifying the Branded Domain of active campaigns may alter or disable link functionality.
+> La modificación de los dominios de marca de las campañas activas puede alterar o deshabilitar la funcionalidad del enlace.
 
-#### **Verify a branded domain mapping**
+#### **Verificar la asignación de un dominio de marca**
 
-After changing the OneLink subdomain mapped to your branded domain verify that the branded domain is mapped properly:
+Después de cambiar el subdominio OneLink mapeado a tu dominio de marca verifica que el dominio de marca está mapeado correctamente:
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Branded Domains.**
-2. Go to the branded domain you want to verify.
-3. Click the Verify icon (<Image alt="verify-2.png" src="https://files.readme.io/4ac94a535e9101b3e727351f67df8917c0870d6ede8ec963de8c5528893b8e2b-30192946342929.png" width="17px" />).
+1. En AppsFlyer, en el menú lateral, selecciona **Engage** > **Branded Domains.**
+2. Ve al dominio de marca que deseas verificar.
+3. Haz clic en el icono Verificar (<Image alt="verify-2.png" src="https://files.readme.io/4ac94a535e9101b3e727351f67df8917c0870d6ede8ec963de8c5528893b8e2b-30192946342929.png" width="17px" />).
 
 > 📘 **Note**
 >
-> If the verification fails because the CNAME record isn't mapped yet, you have a time span of up to 7 days to do so ending on the date specified in the verification failure dialog. If the CNAME record is not mapped by the specified date you must renew the 7-day period.
+> **Nota:**
+>
+> Si la verificación falla porque el registro CNAME aún no se ha asignado, dispones de un plazo de hasta 7 días para hacerlo, que finalizará en la fecha especificada en el cuadro de diálogo de error de verificación.
+> Si el registro CNAME no está asignado en la fecha especificada, deberás renovar el periodo de 7 días.
 
-#### **Domain CNAME record no longer pointing to AppsFlyer**
+#### **El registro CNAME del dominio ya no apunta a AppsFlyer**
 
-Changing your CNAME record to no longer point to AppsFlyer will result in the branded domain deletion from AppsFlyer.
+Cambiar tu registro CNAME para que ya no apunte a AppsFlyer resultará en la eliminación del dominio de marca de AppsFlyer.
 
-#### **Delete a branded domain mapping**
+#### **Eliminar una asignación de dominio de marca**
 
-To delete a branded domain contact your AppsFlyer CSM or hello@appsflyer.com.
+Para eliminar un dominio de marca, ponte en contacto con tu CSM de AppsFlyer o hello@appsflyer.com.
 
 </Accordion>
 
-## Troubleshooting, traits, and limitations
+## Solución de problemas, rasgos y limitaciones
 
 <div id="troubleshooting" />
 
-<Accordion title="Troubleshooting">
+<Accordion title="Resolución de problemas">
 
-| Symptom | Cause/solution |
+| Síntoma | Causa/solución |
 | --- | --- |
-| Branded Domain cannot be mapped to a OneLink template | <ul><li>**Invalid domain name:** When mapping a Branded Domain to a OneLink template, AppsFlyer tries to verify that the branded link has a valid domain name. A valid domain name has the format click.abdef.com</li><li>**The Branded Domain is already mapped**: A full domain can only be mapped once.</li></ul> |
-| Branded Domain is not deep linking into the app | <ul><li>[Verify that the Branded Domain is operational](#verify-a-branded-domain-mapping)</li><li>**Verify CNAME**: Ensure that a CNAME record points from your Branded Domain to AppsFlyer.</li><li>**Verify deep linking setting for OneLink template**: It's possible there is an issue with the OneLink deep linking settings. Make sure to set up deep linking with OneLink.</li><li>**OneLink mapping changed**: You can edit the Branded Domain and map it to a different OneLink. If the newly mapped OneLink has different deep linking settings or no deep linking settings, deep linking might not work.</li></ul> |
-| No installs measured from Branded Domains | <ul><li>**Check OneLink template settings**: Make sure that the OneLink subdomain used to map to the branded domain is associated with the correct apps.</li><li>**OneLink subdomain changed:** If you map a branded domain to a OneLink template and the OneLink subdomain changes, it might affect attribution.</li><li>**Ensure implementation:** Of setOneLinkCustomDomain API in the app.</li></ul> |
-| No re-engagements recorded from branded domains | Ensure that the following are active and configured:<ul><li><Anchor target="_blank" href="/marketers/docs/onelink-guide#setting-up-onelink">Configure deep linking using OneLink</Anchor>.</li><li>The app makes use of the dedicated [SDK API setOneLinkCustomDomain](/docs/brand-onelink-with-your-domain#set-up-a-branded-domain-in-appsflyer).</li><li><Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#retargeting-settings">Retargeting is enabled in the app settings</Anchor>.</li></ul> |
-| During Branded Domain setup, **Domain doesn't exist** message displays | <ol><li>Contact your DNS admin and ask them to investigate.</li><li>Wait for the DNS admin to confirm that the domain is registered.</li><li>Click **Reverify**.</li></ol> |
-| During Branded Domain setup, **AppsFlyer CNAME not found** message displays | <ol><li>Request that the DNS admin set a CNAME record such that the full domain (Brand domain) points to the specified URL (aka AppsFlyer host). This is depicted in the figure Branded Link pointing to AppsFlyer servers in this section.</li><li>Wait for the DNS admin to confirm that the CNAME is active.</li></ol> |
-| **You have been blocked** message when loading a branded domain page | Branded domains do not include the template or any parameters. When using a branded domain, you must add the template or parameters to the end of the branded domain URL.<br /><br />For example, if 'click.abcdef.com' is your branded domain, using just '**click.abcdef.com'**, will lead to a **you have been blocked** message.<br /><br />You must add the parameters or templates to the end. For example, click.abcdef.com **/A1bc/dc1234ef** |
-| **err\_cert\_authority\_invalid** error when loading a branded domain page | This error indicates that your branded domain lacks a valid HTTPS certificate because the Certificate Authority is not recognized. Since AppsFlyer certifies your Branded domains with Let's Encrypt the error is likely due to Let's Encrypt not being recognized as a valid Certificate Authority (CA) according to the CAA (Certification Authority Authorization) DNS records of your domain.<br /><br />**Solution**<br />Please perform the following:<ol><li>Determine if your domain recognize Let's Encrypt as CA using services such as <Anchor target="_blank" href="https://www.entrust.com/resources/certificate-solutions/tools/caa-lookup">this one</Anchor>.</li><li>Ask your system administrators to update your domain CAA records to include Let's Encrypt as an authorized CA.</li></ol> |
+| El dominio de marca no se puede asignar a una plantilla de OneLink | <ul><li>**Nombre de dominio no válido:** Al asignar un dominio de marca a una plantilla de OneLink, AppsFlyer intenta verificar que el enlace de marca tiene un nombre de dominio válido. Un nombre de dominio válido tiene el formato click.abdef.com</li><li>**El dominio de marca ya está asignado**: Un dominio completo sólo puede asignarse una vez.</li></ul> |
+| El dominio de marca no tiene deep linking en la aplicación | <ul><li>[Verifica que el dominio de marca esté operativo](#verificar-la-asignación-de-un-dominio-de-marca)</li><li>**Verificar CNAME**: Asegúrate de que un registro CNAME apunta desde tu dominio de marca a AppsFlyer.</li><li>**Verifica la configuración de deep linking para la plantilla de OneLink**: Es posible que haya un problema con la configuración de deep linking de OneLink. Asegúrate de configurar los deep linking con OneLink.</li><li>**Se ha modificado la asignación de OneLink**: Puedes editar el dominio de marca y asignarlo a un OneLink diferente. Si el OneLink recién asignado tiene diferentes configuraciones de deep linking o no tiene ninguna, es posible que los deep links no funcionen.</li></ul> |
+| No hay instalaciones medidas de dominios de marca | <ul><li>**Comprueba la configuración de la plantilla de OneLink**: Asegúrate de que el subdominio de OneLink utilizado para asignar al dominio de marca está asociado a las aplicaciones correctas.</li><li>**Subdominio OneLink cambiado:** Si asignas un dominio de marca a una plantilla de OneLink y el subdominio de OneLink cambia, podría afectar a la atribución.</li><li>**Asegúrate de implementar:** la API setOneLinkCustomDomain en la aplicación.</li></ul> |
+| No se han registrado re-engagements de dominios de marca | Asegúrate de que lo siguiente esté activo y configurado:<ul><li><Anchor target="_blank" href="/marketers/es/docs/onelink-guide#configuración-de-onelink">Configura deep linking con OneLink</Anchor>.</li><li>La aplicación utiliza la [API específica del SDK setOneLinkCustomDomain](/docs/brand-onelink-with-your-domain#set-up-a-branded-domain-in-appsflyer).</li><li><Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide#retargeting-settings">El retargeting está habilitado en la configuración de la aplicación</Anchor>.</li></ul> |
+| Durante la configuración del dominio de marca, se muestra el mensaje **El dominio no existe** | <ol><li>Contacta con tu administrador de DNS y pídele que investigue.</li><li>Espera a que el administrador de DNS confirme que el dominio está registrado.</li><li>Haz clic en **Volver a verificar**.</li></ol> |
+| Durante la configuración del dominio de marca, se muestra el mensaje **No se encontró el CNAME de AppsFlyer**. | <ol><li>Solicita que el administrador de DNS establezca un registro CNAME de modo que el dominio completo (dominio de marca) apunta a la URL especificada (es decir al host de AppsFlyer). Esto se representa en la figura Enlace de Marca apuntando a los servidores de AppsFlyer en esta sección.</li><li>Espera a que el administrador de DNS confirme que el CNAME está activo.</li></ol> |
+| **Mensaje de bloqueo** al cargar una página de dominio de marca | Los dominios de marca no incluyen la plantilla ni ningún parámetro. Al usar un dominio de marca, debes agregar la plantilla o los parámetros al final de la URL del dominio de marca.<br /><br />Por ejemplo, si "click.abcdef.com" es tu dominio de marca, si utilizas sólo "**click.abcdef.com"**, aparecerá un mensaje de que **has sido bloqueado**.<br /><br />Debes agregar los parámetros o plantillas al final. Por ejemplo, click.abcdef.com **/A1bc/dc1234ef** |
+| Error **err\_cert\_authority\_invalid** al cargar la página de un dominio de marca | Este error indica que tu dominio de marca carece de un certificado HTTPS válido porque no se reconoce la autoridad de certificación. Dado que AppsFlyer certifica tus dominios de marca con Let's Encrypt, es probable que el error se deba a que Let's Encrypt no se reconoce como una Autoridad de certificación (CA) válida de acuerdo con los registros DNS CAA (Autorización de la autoridad de certificación) de tu dominio.<br /><br />**Solución**<br />Por favor, realiza lo siguiente:<ol><li>Determina si tu dominio reconoce Let's Encrypt como CA usando servicios como <Anchor target="_blank" href="https://www.entrust.com/resources/certificate-solutions/tools/caa-lookup">este</Anchor>.</li><li>Pide a los administradores del sistema que actualicen los registros CAA de tu dominio para incluir Let's Encrypt como una CA autorizada.</li></ol> |
 
 </Accordion>
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Características y limitaciones">
 
-| Trait | Yes ✓ / No **x** | Remarks |
+| Caducado | Sí ✓ / No **x** | Observaciones |
 | --- | --- | --- |
-| Account user access | ✓ |  |
-| Ad network access | **x** |  |
-| Agency access | **x** | Agencies cannot create Branded Domains (or OneLink links). |
-| Agency transparency | **x** |  |
-| App-specific currency | N/A |  |
-| App-specific time zone | N/A |  |
-| Branded domain availability | N/A | Branded domains are available with eligible paid plans only. If your subscription plan lapses or is canceled, access to branded domains is removed, and existing links that use your branded domains won't work. |
-| Character limitation | N/A | When entering your branded domain, the last character cannot be a period ("."). |
-| Data freshness | N/A |  |
-| Historical data | ✓ |  |
-| HTTP | **x** | The HTTP protocol is not supported by branded links. HTTPS must be used. |
-| Non-organic data | ✓ |  |
-| Organic data | ✓ |  |
-| Rate limitation | ✓ | Branded Domain SSL/HTTP certificates are arranged by AppsFlyer using <Anchor target="_blank" href="https://letsencrypt.org/">Let's Encrypt</Anchor>, with a rate limit of 50 new certificates per week per domain. |
-| Size limitations | N/A |  |
-| SSL/HTTP certificate renewal | ✓ | Your branded Domain SSL/HTTP certificates managed by AppsFlyer are automatically renewed without any action required on your part. |
+| Acceso de usuario a la cuenta | ✓ |  |
+| Acceso a ad network | **x** |  |
+| Acceso a la agencia | . | Las agencias no pueden crear dominios de marca (o enlaces OneLink). |
+| Transparencia de la agencia | . |  |
+| Moneda específica de la aplicación | No aplica |  |
+| Zona horaria específica de la aplicación | No aplica |  |
+| Disponibilidad de dominios de marca | N/D | Los dominios de marca solo están disponibles con planes de pago elegibles. Si tu plan de suscripción caduca o se cancela, se elimina el acceso a los dominios de marca y los enlaces existentes que utilizan tus dominios de marca dejarán de funcionar. |
+| Limitación de caracteres | N/D | Cuando introduzcas tu dominio de marca, el último carácter no puede ser un punto ("."). |
+| Actualización de datos | N/D |  |
+| Datos históricos | ✓ |  |
+| HTTP | . | El protocolo HTTP no es compatible con los enlaces de marca. Se debe utilizar HTTPS. |
+| Datos no orgánicos | ✓ |  |
+| Datos orgánicos | ✓ |  |
+| Limitación de la tasa | ✓ | AppsFlyer organiza los certificados SSL/HTTP de dominios de marca mediante <Anchor target="_blank" href="https://letsencrypt.org/">Let's Encrypt</Anchor>, con un límite de frecuencia de 50 nuevos certificados por semana por dominio. |
+| Limitaciones de tamaño | N/D |  |
+| Renovación de certificados SSL/HTTP | ✓ | Tus certificados SSL/HTTP de dominio de marca gestionados por AppsFlyer se renuevan automáticamente sin que se requiera ninguna acción de tu parte. |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HFM51V4PE53FQAED68V8Q834=branded-domains h_01HFM51V4PPJXMCSV5ZVDPT49M=principles-of-implementation h_01HFM51V4PH58ZA4ZXHP5J6K2W=setting-up-branded-domains h_01HFM51V4PWWX7TBCHFMPR3QVB=procedures h_01HQ5CWGQNRBXQ6QQDADV7XCQP=set-up-a-branded-domain-in-appsflyer renew-the-day=renew-the-7-day-period-for-mapping-the-cname-record h_01HQ5CWGQNQJJ1CXDKTGZ8N9ZE=renew-the-7-day-period-for-mapping-the-cname-record custom-ssl-certificate=custom-ssl-certificate-optional h_01KM0E8VHARA2JRAR2H37QM91Y=custom-ssl-certificate-optional h_01HFM51V4PP0NQHVHTKB86250R=set-up-branded-domains-in-the-app h_01HFM51V4PN0FPEDNAF0Q1QS8P=using-and-testing-branded-domains h_01HQ5CWGQPZ6MEFA6MDTHYHCSA=editing-verifying-and-deleting-branded-domains h_01HQ5FJZD6QMNFA45Z2C7CA3ST=edit-a-branded-domain-mapping h_01HQ5FK5XJNZ1EABJA66RMYBCN=verify-a-branded-domain-mapping h_01JSHFECXS00M6BXH8168ZWJE5=domain-cname-record-no-longer-pointing-to-appsflyer h_01JSHF5RMXXFJTXC246KKAQBSS=delete-a-branded-domain-mapping h_01HFM51V4PH4YM13DVXENRWF2E=troubleshooting-traits-and-limitations h_01HFM51V4PJNHZTD97X75WPN98=troubleshooting h_01HFM51V4QQ2TZQMJ2ATNDG91F=traits-and-limitations" />
+<div data-zendesk-anchors="branded-domains=dominios-de-marca h_01HFM51V4PE53FQAED68V8Q834=dominios-de-marca principles-of-implementation=principios-de-implementaci%C3%B3n h_01HFM51V4PPJXMCSV5ZVDPT49M=principios-de-implementaci%C3%B3n setting-up-branded-domains=configuraci%C3%B3n-de-dominios-de-marca h_01HFM51V4PH58ZA4ZXHP5J6K2W=configuraci%C3%B3n-de-dominios-de-marca procedures=procedimientos h_01HFM51V4PWWX7TBCHFMPR3QVB=procedimientos h_01HQ5CWGQNRBXQ6QQDADV7XCQP=set-up-a-branded-domain-in-appsflyer renew-the-day=renovar-el-plazo-de-7-d%C3%ADas-para-asignar-el-registro-cname h_01HQ5CWGQNQJJ1CXDKTGZ8N9ZE=renovar-el-plazo-de-7-d%C3%ADas-para-asignar-el-registro-cname custom-ssl-certificate=certificado-ssl-personalizado-opcional h_01KM0E8VHARA2JRAR2H37QM91Y=certificado-ssl-personalizado-opcional h_01HFM51V4PP0NQHVHTKB86250R=set-up-branded-domains-in-the-app h_01HFM51V4PN0FPEDNAF0Q1QS8P=using-and-testing-branded-domains h_01HQ5CWGQPZ6MEFA6MDTHYHCSA=editing-verifying-and-deleting-branded-domains edit-a-branded-domain-mapping=editar-una-asignaci%C3%B3n-de-dominio-de-marca h_01HQ5FJZD6QMNFA45Z2C7CA3ST=editar-una-asignaci%C3%B3n-de-dominio-de-marca verify-a-branded-domain-mapping=verificar-la-asignaci%C3%B3n-de-un-dominio-de-marca h_01HQ5FK5XJNZ1EABJA66RMYBCN=verificar-la-asignaci%C3%B3n-de-un-dominio-de-marca domain-cname-record-no-longer-pointing-to-appsflyer=el-registro-cname-del-dominio-ya-no-apunta-a-appsflyer h_01JSHFECXS00M6BXH8168ZWJE5=el-registro-cname-del-dominio-ya-no-apunta-a-appsflyer delete-a-branded-domain-mapping=eliminar-una-asignaci%C3%B3n-de-dominio-de-marca h_01JSHF5RMXXFJTXC246KKAQBSS=eliminar-una-asignaci%C3%B3n-de-dominio-de-marca troubleshooting-traits-and-limitations=soluci%C3%B3n-de-problemas-rasgos-y-limitaciones h_01HFM51V4PH4YM13DVXENRWF2E=soluci%C3%B3n-de-problemas-rasgos-y-limitaciones h_01HFM51V4PJNHZTD97X75WPN98=troubleshooting h_01HFM51V4QQ2TZQMJ2ATNDG91F=traits-and-limitations" />

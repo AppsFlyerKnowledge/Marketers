@@ -1,5 +1,5 @@
 ---
-title: Item-level order data for ad networks (af_order_info)
+title: Datos de pedidos a nivel de artículo para ad network (af_order_info)
 metadata:
   keywords:
     - Marketers
@@ -11,50 +11,49 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2026-08-25T12:25:01Z'
-  edited_at: '2026-10-22T13:20:31Z'
+  edited_at: '2026-10-23T01:28:15Z'
   id: 50185623016721
-  locale: en-us
+  locale: es
   section: Media source configuration
   section_id: 6551067072785
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/50185623016721-Item-level-order-data-for-ad-networks-af-order-info
+  url: https://support.appsflyer.com/hc/es/articles/50185623016721
 ---
-> **At a glance:** Send item-level order data to AppsFlyer with the `af_order_info` parameter. It supports two consistent formats for single or multi-item purchases. AppsFlyer automatically maps it to the structure each ad network requires.
+> **At a glance:** **Resumen:** Envía datos de pedidos a nivel de artículo a AppsFlyer con el parámetro `af_order_info`. Es compatible con dos formatos coherentes para compras de uno o varios artículos. AppsFlyer lo asigna automáticamente a la estructura que requiere cada ad network.
 
-## Why item-level data matters
+## Por qué son importantes los datos a nivel de artículo
 
-`af_order_info` is an event parameter that reports the individual items in an order, whether the order has one item or several. It replaces the older `af_content` and `af_content_list` fields with a single, more complete format for the same purpose. It supports two consistent array formats for both single-item and multi-item orders and works across six networks (Google Ads, DV360, Meta, TikTok, Snapchat, and Pinterest) rather than requiring a separate structure for each.
+`af_order_info` es un parámetro de evento que informa sobre los artículos individuales de un pedido, tanto si el pedido tiene un artículo como varios. Sustituye los campos antiguos `af_content` y `af_content_list` por un único formato más completo para el mismo fin. Admite dos formatos de array coherentes tanto para pedidos de un solo artículo como de varios artículos y funciona en seis ad network (Google Ads, DV360, Meta, TikTok, Snapchat y Pinterest), en lugar de requerir una estructura independiente para cada una.
 
-Sending this level of detail matters because these networks now optimize campaigns using more than just an order's total value. Meta, Google, TikTok, Snapchat, and Pinterest all support optimization algorithms that work at the product level, using details such as item ID, price, quantity, category, and brand to improve targeting and bidding. The more complete the item breakdown you send, the more these networks can use to fine-tune those campaigns.
+Enviar este nivel de detalle es importante porque estas redes ahora optimizan las campañas usando algo más que el valor total de un pedido. Meta, Google, TikTok, Snapchat y Pinterest admiten algoritmos de optimización que funcionan a nivel de producto y usan detalles como el ID del artículo, el precio, la cantidad, la categoría y la marca para mejorar el targeting y las pujas. Cuanto más completo sea el desglose de artículos que envías, más podrán usar estas redes para afinar esas campañas.
 
-## Parameter structure
+## Estructura de parámetros
 
-Each item in an order can be described using up to 7 fields. AppsFlyer supports two ways to structure these fields under `af_order_info`, described below.
+Cada artículo de un pedido se puede describir con hasta 7 campos. AppsFlyer admite dos formas de estructurar estos campos en `af_order_info`, que se describen a continuación.
 
-It is sent as part of your event's `event_value` (or `custom_data`), and it works the same way whether the order has one item or several, so you can standardize on it rather than maintaining multiple order data formats.
+Se envía como parte del `event_value` de tu evento (o de `custom_data`) y funciona igual tanto si el pedido tiene un artículo como varios, así que puedes estandarizarlo en lugar de mantener varios formatos de datos de pedidos.
 
-The seven fields are:
+Estos siete campos son:
 
-| Field | Description | Supported by |
+| Campo | Description | Compatible con |
 | --- | --- | --- |
-| `sku` | Item ID or stock keeping unit (SKU) | Google, DV360, Meta, Snapchat, Pinterest, TikTok |
-| `revenue` | Item price | Google, DV360, Meta, Snapchat, Pinterest, TikTok |
-| `qty` | Quantity purchased | Google, DV360, Meta, Snapchat, Pinterest, TikTok |
-| `content_name` | Item or product name | TikTok |
-| `content_type` | Item type. The only supported values are `product` (when the SKU is a specific SKU) and `product_group` (when the SKU is an `item_group_id`) | TikTok |
-| `content_category` | Item category | TikTok, Snapchat |
-| `brand` | Item brand | TikTok, Snapchat |
+| `sku` | ID del artículo o unidad de mantenimiento de existencias (SKU) | Google, DV360, Meta, Snapchat, Pinterest, TikTok |
+| `revenue` | Precio del artículo | Google, DV360, Meta, Snapchat, Pinterest, TikTok |
+| `qty` | Cantidad comprada | Google, DV360, Meta, Snapchat, Pinterest, TikTok |
+| `content_name` | Nombre del artículo o producto | TikTok |
+| `content_type` | Tipo de artículo. Los únicos valores compatibles son `product` (cuando el SKU es un SKU específico) y `product_group` (cuando el SKU es un `item_group_id`) | TikTok |
+| `content_category` | Categoría del artículo | TikTok, Snapchat |
+| `brand` | Marca del artículo | TikTok, Snapchat |
 
 > 📘 **Note**
 >
-> You do not need to populate all seven fields for every item. Send what is relevant to your business and to the networks you run campaigns on. Any fields you leave out are simply left out of the postback to networks that would otherwise receive them. The most important and common fields to send are sku, revenue, and qty.
+> No es necesario completar los siete campos para cada artículo. Envía lo que sea relevante para tu negocio y para las redes en las que ejecutas campañas. Los campos que omitas simplemente no se incluirán en el postback a las redes que, de otro modo, los recibirían. Los campos más importantes y habituales que debes enviar son sku, ingresos y qty.
 
-AppsFlyer supports two ways to structure `af_order_info`, both nested under `event_value`:
+AppsFlyer admite dos formas de estructurar `af_order_info`, ambas anidadas dentro de `event_value`:
 
-* **One field for all items** (recommended): each field, such as `sku`, `revenue`, and `qty`, is sent once, as an array that covers every item in the order. This keeps the payload shorter.
-* **One object per item**: each item in the order is sent as its own object, with all relevant fields nested inside it.
+* **Un campo para todos los artículos** (recomendado): cada campo, como `sku`, `revenue` y `qty`, se envía una sola vez, como un array que abarca todos los artículos del pedido. Así, el payload es más corto.
+* **Un objeto por artículo**: cada artículo del pedido se envía como su propio objeto, con todos los campos relevantes anidados dentro.
 
-The following example shows the recommended format, with one field for all items:
+El siguiente ejemplo muestra el formato recomendado, con un campo para todos los artículos:
 
 ```json
 {
@@ -70,7 +69,7 @@ The following example shows the recommended format, with one field for all items
 }
 ```
 
-The following example shows the alternative format, with one object per item:
+El siguiente ejemplo muestra el formato alternativo, con un objeto por elemento:
 
 ```json
 {
@@ -106,23 +105,23 @@ The following example shows the alternative format, with one object per item:
 }
 ```
 
-## Per-network mapping
+## Asignación por red
 
-AppsFlyer reads the `af_order_info` array and automatically restructures it into the format each network's API expects. Field support varies by network, so not every field you send reaches every network. The following table shows the fields each network currently supports:
+AppsFlyer lee el array `af_order_info` y lo reestructura automáticamente en el formato que espera la API de cada red. La compatibilidad de los campos varía según la red, por lo que no todos los campos que envías llegan a todas las redes. La siguiente tabla muestra los campos que admite actualmente cada red:
 
-| Network | Supported fields |
+| Red | Campos admitidos |
 | --- | --- |
-| Google Ads / DV360 | `sku`, `qty`, `revenue` |
-| Meta (Facebook) | `sku`, `qty`, `revenue` |
-| TikTok | `sku`, `qty`, `revenue`, `content_name`, `content_type`, `content_category`, `brand` (all seven fields) |
-| Snapchat | Mobile: `sku`, `revenue`, `brand`, `content_category`; quantity is sent as a total item count. Web: `sku`, `revenue`, `qty`; quantity is sent per item and as a total item count. |
-| Pinterest | `sku`, `revenue`, `qty` |
+| Google Ads / DV360 | `sku`, `qty`, `ingresos` |
+| Meta (Facebook) | `sku`, `qty`, `ingresos` |
+| TikTok | `sku`, `qty`, `ingresos`, `content_name`, `content_type`, `content_category`, `marca` (los siete campos) |
+| Snapchat | Móvil: `sku`, `ingresos`, `marca`, `content_category`; la cantidad se envía como recuento total de artículos. Web: `sku`, `ingresos`, `qty`; la cantidad se envía por artículo y como recuento total de artículos. |
+| Pinterest | `sku`, `ingresos`, `qty` |
 
-<Accordion title="Google Ads and DV360">
+<Accordion title="Google Ads y DV360">
 
-**Mobile**
+**Móvil**
 
-AppsFlyer maps the fields into the `items` array under `app_event_data`:
+AppsFlyer asigna los campos al array `items` dentro de `app_event_data`:
 
 ```json
 "app_event_data": {
@@ -134,11 +133,11 @@ AppsFlyer maps the fields into the `items` array under `app_event_data`:
 }
 ```
 
-**Google Ads web (OCI)**
+**Google Ads Web (OCI)**
 
-AppsFlyer maps `sku` to `productId`, `qty` to `quantity`, and `revenue` to `unitPrice` under `conversions[].cartData.items[]`.
+AppsFlyer asigna `sku` a `productId`, `qty` a `quantity` y `revenue` a `unitPrice` en `conversions[].cartData.items[]`.
 
-Excerpt from a conversion object:
+Fragmento de un objeto de conversión:
 
 ```json
 {
@@ -156,9 +155,9 @@ Excerpt from a conversion object:
 
 <Accordion title="Meta (Facebook)">
 
-**Mobile**
+**Móvil**
 
-AppsFlyer maps the fields into `fb_contents`:
+AppsFlyer asigna los campos a `fb_contents`:
 
 ```json
 "fb_contents": [
@@ -170,9 +169,9 @@ AppsFlyer maps the fields into `fb_contents`:
 
 **Web**
 
-AppsFlyer maps the fields into `data[].custom_data.contents`.
+AppsFlyer asigna los campos a `data[].custom_data.contents`.
 
-Excerpt from an event object:
+Fragmento de un objeto de evento:
 
 ```json
 {
@@ -190,9 +189,9 @@ Excerpt from an event object:
 
 <Accordion title="TikTok">
 
-**Mobile**
+**Móvil**
 
-AppsFlyer maps the fields into `properties.contents`. TikTok is the only network of the five that accepts all seven fields:
+AppsFlyer asigna los campos a `properties.contents`. TikTok es la única red de las cinco que acepta los siete campos:
 
 ```json
 "properties": {
@@ -214,9 +213,9 @@ AppsFlyer maps the fields into `properties.contents`. TikTok is the only network
 
 **Web**
 
-AppsFlyer maps item details into `data[].properties.contents`, with `content_type` sent once under `properties`, alongside `contents`. Include the event's total revenue and currency. AppsFlyer forwards item details when event revenue is present.
+AppsFlyer asigna los detalles del artículo a `data[].properties.contents`, con `content_type` enviado una sola vez en `properties`, junto con `contents`. Incluye los ingresos totales y la divisa del evento. AppsFlyer reenvía los detalles del artículo cuando hay ingresos del evento.
 
-Excerpt from an event object:
+Fragmento de un objeto de evento:
 
 ```json
 {
@@ -258,9 +257,9 @@ Excerpt from an event object:
 
 <Accordion title="Snapchat">
 
-**Mobile**
+**Móvil**
 
-AppsFlyer maps the fields into URL query parameters. Snapchat does not receive quantity per item. Instead, `number_items` reflects the total quantity across all items in the order:
+AppsFlyer asigna los campos a parámetros de consulta de URL. Snapchat no recibe la cantidad por artículo. En su lugar, `number_items` refleja la cantidad total de todos los artículos del pedido:
 
 ```http
 &item_ids=SKU-001,SKU-002,SKU-003&number_items=5&price=50.00,75.00,25.00&brands=Logitech,Sony,Anker&category=accessories,audio,cables
@@ -268,9 +267,9 @@ AppsFlyer maps the fields into URL query parameters. Snapchat does not receive q
 
 **Web**
 
-AppsFlyer maps item details into `data[].custom_data.contents`, including quantity per item. `num_items` contains the total quantity across the order.
+AppsFlyer asigna los detalles del artículo a `data[].custom_data.contents`, incluida la cantidad por artículo. `num_items` contiene la cantidad total del pedido.
 
-Excerpt from an event object:
+Fragmento de un objeto de evento:
 
 ```json
 {
@@ -289,9 +288,9 @@ Excerpt from an event object:
 
 <Accordion title="Pinterest">
 
-**Mobile and web**
+**Móvil y web**
 
-AppsFlyer maps the fields into `contents`:
+AppsFlyer asigna los campos a `contents`:
 
 ```json
 "contents": [
@@ -301,29 +300,29 @@ AppsFlyer maps the fields into `contents`:
 ]
 ```
 
-For web postbacks, `contents` is nested under `data[].custom_data`.
+En los postbacks web, `contents` está anidado en `data[].custom_data`.
 
 </Accordion>
 
-## Backward compatibility
+## Compatibilidad con versiones anteriores
 
-Existing formats also continue to work, including the array-based `af_content_id`, `af_quantity`, and `af_price` fields, and the `af_content` and `af_content_list` fields. You do not need to migrate existing implementations. `af_order_info` will be available in a single, more complete format going forward. It is particularly useful if you want to pass richer item details, such as name, category, and brand, than the older formats support.
+Los formatos existentes también siguen funcionando, incluidos los campos `af_content_id`, `af_quantity` y `af_price` basados en matrices, así como los campos `af_content` y `af_content_list`. No necesitas migrar las implementaciones existentes. A partir de ahora, `af_order_info` estará disponible en un único formato más completo. Resulta especialmente útil si quieres pasar detalles de artículos más enriquecidos, como el nombre, la categoría y la marca, que los formatos anteriores no soportan.
 
 > ❗️ **Warning**
 >
-> Important!
+> Importante:
 >
-> Because af\_order\_info is supported only for the networks listed in this article, continue sending this information under the existing fields, such as af\_content\_id, af\_content\_list, af\_content\_type, and af\_quantity, if you run campaigns with other networks that need it.
+> Como af\_order\_info solo es compatible con las redes que se indican en este artículo, sigue enviando esta información en los campos existentes, como af\_content\_id, af\_content\_list, af\_content\_type y af\_quantity, si ejecutas campañas con otras redes que la necesiten.
 >
-> For the Meta mobile integration, if you previously sent this information in the format Meta expects (under af\_content, which AppsFlyer mapped to fb\_contents), you can now remove that field from the payload. The new solution also supports Meta under fb\_contents out of the box.
+> Para la integración móvil de Meta, si anteriormente enviaste esta información en el formato que Meta espera (en af\_content, que AppsFlyer asignó a fb\_contents), ahora puedes eliminar ese campo del payload. La nueva solución también soporta Meta en fb\_contents de forma nativa.
 
-## Traits and limitations
+## Características y limitaciones
 
-| Trait | Description |
+| Rasgo | Descripción |
 | --- | --- |
-| Supported networks | AppsFlyer supports `af_order_info` only for the networks listed in this article. Other networks might still support the older format. |
-| Supported platforms | Supports mobile apps and websites. Website support is available for Google Ads, Meta, TikTok, Snapchat, and Pinterest. DV360 support applies to mobile apps. |
-| TikTok web | Item details are forwarded when event revenue is present. Send the event's total revenue and currency in addition to the item details. |
-| Event value length | The total length of the `event_value` field, including `af_order_info`, cannot exceed 3,000 characters. |
+| Redes compatibles | AppsFlyer solo es compatible con `af_order_info` para las redes que se indican en este artículo. Es posible que otras redes sigan siendo compatibles con el formato anterior. |
+| Plataformas admitidas | Compatible con aplicaciones móviles y sitios web. El soporte para sitios web está disponible para Google Ads, Meta, TikTok, Snapchat y Pinterest. El soporte de DV360 se aplica a las aplicaciones móviles. |
+| TikTok web | Los detalles del artículo se reenvían cuando hay ingresos del evento. Envía los ingresos totales del evento y su moneda, además de los detalles del artículo. |
+| Longitud del valor del evento | La longitud total del campo `event_value`, incluido `af_order_info`, no puede superar los 3.000 caracteres. |
 
-<div data-zendesk-anchors="h_01_why-item-level-data-matters=why-item-level-data-matters h_01_parameter-structure=parameter-structure h_01_per-network-mapping=per-network-mapping h_01_backward-compatibility=backward-compatibility h_01_traits-and-limitations=traits-and-limitations" />
+<div data-zendesk-anchors="h_01_why-item-level-data-matters=por-qu%C3%A9-son-importantes-los-datos-a-nivel-de-art%C3%ADculo why-item-level-data-matters=por-qu%C3%A9-son-importantes-los-datos-a-nivel-de-art%C3%ADculo h_01_parameter-structure=estructura-de-par%C3%A1metros parameter-structure=estructura-de-par%C3%A1metros h_01_per-network-mapping=asignaci%C3%B3n-por-red per-network-mapping=asignaci%C3%B3n-por-red h_01_backward-compatibility=compatibilidad-con-versiones-anteriores backward-compatibility=compatibilidad-con-versiones-anteriores h_01_traits-and-limitations=caracter%C3%ADsticas-y-limitaciones traits-and-limitations=caracter%C3%ADsticas-y-limitaciones" />

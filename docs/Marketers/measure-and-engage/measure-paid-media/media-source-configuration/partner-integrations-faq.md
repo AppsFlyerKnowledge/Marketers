@@ -1,5 +1,5 @@
 ---
-title: Partner Integrations—FAQ
+title: Partner Marketplace—Preguntas frecuentes
 metadata:
   keywords:
     - Marketers
@@ -13,57 +13,56 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-12-06T14:20:35Z'
-  edited_at: '2026-04-15T11:28:11Z'
+  edited_at: '2026-08-12T12:19:44Z'
   id: 11189057923601
-  locale: en-us
+  locale: es
   section: Media source configuration
   section_id: 6551067072785
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/11189057923601-Partner-Integrations-FAQ
+  url: https://support.appsflyer.com/hc/es/articles/11189057923601
 ---
-> **At a glance**: Find answers to frequently asked questions about AppsFlyer Partner Integrations.
+> **De un vistazo**: Encuentra respuestas a las preguntas frecuentes sobre el Partner Marketplace de AppsFlyer.
 
-## Use Partner Integrations
+## Uso del Partner Marketplace
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
 
-<Accordion title="What information can I see on a partner card without entering the page?">
+<Accordion title="¿Qué información puedo ver en una tarjeta de partner sin entrar en la página?">
 
-To make it easier for you to evaluate the partner without going to the partner page for more details, you can see the following information on <Anchor target="_blank" href="/marketers/docs/partner-integrations#partner-cards">partner cards</Anchor>:
+Para que sea más fácil evaluar al partner sin necesidad de ir a su página del partner para obtener más detalles, en las <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#tarjetas-de-partner">tarjetas de partners</Anchor> puedes ver la siguiente información:
 
-* Quality badges (for partners who meet quality criteria): <Anchor target="_blank" href="https://www.appsflyer.com/resources/reports/performance-index/">**Performance Index**</Anchor> and **High-quality traffic**—indicating a low-fraud rate
-* The partner’s top three supported capabilities
-* Type of media platform
-* Integration status (when <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation?query=activate">Active</Anchor>)
+* Insignias de calidad (para aquellos partners que cumplen con los criterios de calidad): <Anchor target="_blank" href="https://www.appsflyer.com/resources/reports/performance-index/">**Índice de rendimiento**</Anchor> y **Tráfico de alta calidad**, que indica una tasa baja de fraude
+* Las tres principales capacidades admitidas por el partner
+* Tipo de plataforma de medios
+* Estado de integración (si está <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation?query=activate">Activo</Anchor>)
 
 </Accordion>
 
 <div id="how-do-i-use-filters-with-a-search-query" />
 
-<Accordion title="What filters are available for searching partners?">
+<Accordion title="¿Cómo puedo usar filtros con una consulta de búsqueda?">
 
-AppsFlyer Partner Integrations allow you to use filters to refine your search results. Use filters such as Partner type, Target region and geo, High-Quality traffic, and AppsFlyer performance index. See the <Anchor target="_blank" href="/marketers/docs/partner-integrations?query=marketplace#filters">description of each filter.</Anchor>
+Las integraciones de Partners de AppsFlyer te permiten usar filtros para acotar los resultados de búsqueda. Usa filtros como Tipo de partner, Región de destino y geolocalización, Tráfico de alta calidad y Performance Index de AppsFlyer. Consulta la <Anchor target="_blank" href="/marketers/es/docs/partner-integrations?query=marketplace#filters">descripción de cada filtro</Anchor>.
 
 </Accordion>
 
 <div id="with-the-new-marketplace-how-do-i-integrate-with-new-partners" />
 
-<Accordion title="How do I integrate with new partners?">
+<Accordion title="Con el nuevo Partner Marketplace, ¿cómo me integro con nuevos partners?">
 
-The integration itself is done on the partner integration setup page, but to find new partners and connect with them, you must go through Partner Integrations. The Marketplace tab enables you to browse and search for partners available for integration with the selected app, review their capabilities, and start the integration process.
+La integración en sí se realiza desde la página de configuración de partners integrados, pero para encontrar nuevos partners y conectar con ellos, debes pasar por el **Partner Marketplace**. Para facilitar la búsqueda de los partners adecuados, se organizan por secciones según tu industria, mostrando su nivel de rendimiento y con capacidades de filtrado mejoradas para una búsqueda eficiente.
 
-Learn <Anchor target="_blank" href="/marketers/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">how to integrate with new partners in Partner Integrations</Anchor>
+Consulta <Anchor target="_blank" href="/marketers/es/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">cómo integrarte con un nuevo partner desde el Partner Marketplace</Anchor>
 
 </Accordion>
 
-## Troubleshooting
+## Resolución de Problemas
 
 <div id="if-i-see-an-interesting-partner-without-any-contact-details-what-should-i-do" />
 
-<Accordion title="If I see an interesting partner without any contact details—what should I do?">
+<Accordion title="Si veo a un partner interesante sin ningún dato de contacto, ¿qué debo hacer?">
 
-We’re doing our best to make sure all partners provide their contact details, but in case it’s still missing, reach out to your contact person in AppsFlyer.
+Estamos haciendo todo lo posible para asegurarnos de que todos los partners proporcionen sus datos de contacto, pero si todavía no están disponibles, comunícate con tu persona de contacto en AppsFlyer.
 
 </Accordion>
 
-<div data-zendesk-anchors="using-the-marketplace=use-partner-integrations h_01HDP4CWFT45A39SPKSEPBEK60=use-partner-integrations h_01HDP4CWFTCRPR87K9J6J5PG7M=what-information-can-i-see-on-a-partner-card-without-entering-the-page h_01HDP4CWFTPGJ2C71H98M6DYGN=how-do-i-use-filters-with-a-search-query h_01HDP4CWFTTPK6GRGFHPT3YXBM=with-the-new-marketplace-how-do-i-integrate-with-new-partners h_01HDP4CWFTCYYWTG09PVF044RW=troubleshooting if-i-see-an-interesting-partner-without-any-contact-details%E2%80%94what-should-i-do=if-i-see-an-interesting-partner-without-any-contact-details-what-should-i-do h_01HDP4CWFTHSY5X9FA7VAWD15M=if-i-see-an-interesting-partner-without-any-contact-details-what-should-i-do" />
+<div data-zendesk-anchors="using-the-marketplace=uso-del-partner-marketplace h_01HDP4CWFT45A39SPKSEPBEK60=uso-del-partner-marketplace h_01HDP4CWFTCRPR87K9J6J5PG7M=what-information-can-i-see-on-a-partner-card-without-entering-the-page h_01HDP4CWFTPGJ2C71H98M6DYGN=how-do-i-use-filters-with-a-search-query h_01HDP4CWFTTPK6GRGFHPT3YXBM=with-the-new-marketplace-how-do-i-integrate-with-new-partners troubleshooting=resoluci%C3%B3n-de-problemas h_01HDP4CWFTCYYWTG09PVF044RW=resoluci%C3%B3n-de-problemas if-i-see-an-interesting-partner-without-any-contact-details%E2%80%94what-should-i-do=if-i-see-an-interesting-partner-without-any-contact-details-what-should-i-do h_01HDP4CWFTHSY5X9FA7VAWD15M=if-i-see-an-interesting-partner-without-any-contact-details-what-should-i-do" />

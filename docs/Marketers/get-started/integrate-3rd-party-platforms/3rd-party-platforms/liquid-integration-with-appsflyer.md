@@ -1,5 +1,5 @@
 ---
-title: Liquid integration with AppsFlyer
+title: Integración de Liquid con AppsFlyer
 metadata:
   keywords:
     - Liquid
@@ -18,110 +18,108 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2015-12-24T11:36:06Z'
-  edited_at: '2026-06-16T09:40:28Z'
+  edited_at: '2026-08-12T11:59:07Z'
   id: 207040626
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207040626-Liquid-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/207040626
 ---
-> **At a glance:** Liquid, an AppsFlyer integrated partner, automates your campaigns and processes with no need to call your IT. Their intelligent rules engine acts based on user behavior and advanced analytics.
+> **De un vistazo:** Liquid, un partner integrado de AppsFlyer, automatiza tus campañas y procesos sin necesidad de llamar a tu equipo de TI. Su motor de reglas inteligente actúa en función del comportamiento de los usuarios y de análisis avanzados.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up Liquid
+## Configuración de Liquid
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-### General settings
+### Configuración general
 
-**API Token**
+**Token API**
 
-Liquid connects with AppsFlyer via a unique API Token. If you don't already have it, you must obtain it from Liquid to continue with the integration or follow the instructions below.
+Liquid se conecta con AppsFlyer a través de un token API único. Si aún no lo tienes, debes obtenerlo de Liquid para continuar con la integración o seguir las instrucciones que se indican a continuación.
 
 [![](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)
 
-### Obtaining the API token
+### Obtención del token de API
 
-You can find the API token by logging in to the Liquid dashboard.
+Puedes encontrar el token API iniciando sesión en el dashboard de Liquid.
 
-* Click the **Settings** icon
-* Copy the Production API token
-* Insert the APP\_TOKEN you received from Liquid
+* Haz clic en el icono **Settings**
+* Copia el token API de producción
+* Introduce el APP\_TOKEN que recibiste de Liquid
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Liquid user installs. Use this section to define sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a las instalaciones de usuarios de Liquid. Usa esta sección para definir el envío de estos postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/7a06540c1bbca9fc59e45ffdf47c6b40cb548c371654dff9216a7d1c4f87e4c3-18274574358289.png)
+![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
 
-Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Liquid or select **Off**.
+Selecciona **Events attributed to any partner or organic** para enviar postbacks a Liquid de cualquier usuario que descargue la app, o selecciona **Off**.
 
-Click **Save.**
+Haga clic en **Guardar**.
 
-Once this configuration is saved, AppsFlyer begins sending the following data to Liquid for every organic and non-organic install:
+Una vez guardada esta configuración, AppsFlyer empieza a enviar los siguientes datos a Liquid para cada instalación orgánica y no orgánica:
 
-* App Token
-* customer\_user\_id as set in the SDK
-* Media Source
-* Campaign name
+* Token de la app
+* customer\_user\_id tal como se ha establecido en el SDK
+* Fuente de medios
+* Nombre de la campaña
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for Liquid.
+Los enlaces de atribución no están disponibles para Liquid.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for Liquid.
+Los permisos no están disponibles para Liquid.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H9FKBW5QYQGZ7PNEJMHZ6H2R=important h_01H9FKBW5QMJTARZ6KZ41QT1BN=setting-up-liquid h_01H9FKBW5QM601CMQ6Y2PNJ1HQ=integration-tab h_01H9FKBW5RRYW1JTK2S9V4V6SA=activate-partner h_01H9FKBW5RB52QQKVF5TMFVKKT=general-settings h_01H9FKBW5RCGHVJRJEBQW4KNGD=obtaining-the-api-token h_01H9FKBW5RVYXPEEFDG948P1XV=default-postbacks h_01H9FKBW5RNH2BRV8S31DT8SWA=attribution-link-tab h_01H9FKBW5RRQZZC4YQNWGHQTW6=cost-tab h_01H9FKBW5R7TNN5YA5YP36EJ63=ad-revenue-tab h_01H9FKBW5RC55F56K3EMQBJGEK=permissions-tab" />
+<div data-zendesk-anchors="h_01H9FKBW5QYQGZ7PNEJMHZ6H2R=importante setting-up-liquid=configuraci%C3%B3n-de-liquid h_01H9FKBW5QMJTARZ6KZ41QT1BN=configuraci%C3%B3n-de-liquid h_01H9FKBW5QM601CMQ6Y2PNJ1HQ=integration-tab activate-partner=activar-socio h_01H9FKBW5RRYW1JTK2S9V4V6SA=activar-socio general-settings=configuraci%C3%B3n-general h_01H9FKBW5RB52QQKVF5TMFVKKT=configuraci%C3%B3n-general obtaining-the-api-token=obtenci%C3%B3n-del-token-de-api h_01H9FKBW5RCGHVJRJEBQW4KNGD=obtenci%C3%B3n-del-token-de-api default-postbacks=postbacks-predeterminados h_01H9FKBW5RVYXPEEFDG948P1XV=postbacks-predeterminados h_01H9FKBW5RNH2BRV8S31DT8SWA=attribution-link-tab h_01H9FKBW5RRQZZC4YQNWGHQTW6=cost-tab h_01H9FKBW5R7TNN5YA5YP36EJ63=ad-revenue-tab h_01H9FKBW5RC55F56K3EMQBJGEK=permissions-tab" />

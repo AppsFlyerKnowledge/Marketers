@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: New conditions for Protect360 validation rules'
+title: 'Boletín: Nuevas condiciones para las reglas de validación de Protect360'
 metadata:
   keywords:
     - Marketers
@@ -13,16 +13,15 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2024-08-06T12:43:52Z'
-  edited_at: '2026-05-25T07:55:25Z'
+  edited_at: '2026-10-20T03:55:14Z'
   id: 27310438572177
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/27310438572177-Bulletin-New-conditions-for-Protect360-validation-rules
+  url: https://support.appsflyer.com/hc/es/articles/27310438572177
 ---
-| **What's new** | Two new conditions - **currency** and **revenue** have been added to the Protect360 validation rules. |
+| **¿Qué hay de nuevo?** | Se han añadido dos condiciones nuevas (sin guion): **currency** y **revenue** a las reglas de validación de Protect360. |
 | --- | --- |
-| **Effective date** | August, 2024 |
-| **What you need to know** | <ul><li>As part of enhancing the power of validation rules, both **currency** and **revenue** conditions have been added.</li><li>When selecting **revenue**, you must also select **currency** in the same rule.</li><li>These conditions can be found <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud#install-conditions">under the in-app events</Anchor>.</li><li>These condition are available for Protect360 premium users only.</li></ul> |
-| **Example use case** | <ul><li>Some apps may have a minimum purchase amount, and users shouldn't be able to place orders below this specified amount. When such orders occur, these can be flagged as fraudulent.</li></ul> |
+| **Fecha de entrada en vigor** | Agosto de 2024 |
+| **Lo que debes saber:** | <ul><li>Como parte de la mejora de la eficacia de las reglas de validación, se han añadido las condiciones **currency** y **revenue**.</li><li>Al seleccionar **revenue**, también debes seleccionar **currency** en la misma regla.</li><li>Estas condiciones se encuentran <Anchor target="_blank" href="/marketers/es/docs/implement-validation-rules-to-prevent-fraud#install-conditions">en los eventos in-app</Anchor>.</li><li>Esta condición está disponible solo para usuarios premium de Protect360.</li></ul> |
+| **Ejemplo de caso de uso** | <ul><li>Algunas aplicaciones pueden tener un importe mínimo de compra, y los usuarios no deberían poder realizar pedidos por debajo de ese importe especificado. Cuando se producen este tipo de pedidos, se pueden marcar como fraudulentos.</li></ul> |

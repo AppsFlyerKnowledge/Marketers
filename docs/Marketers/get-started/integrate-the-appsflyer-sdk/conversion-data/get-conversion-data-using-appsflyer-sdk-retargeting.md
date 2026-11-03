@@ -1,5 +1,5 @@
 ---
-title: Get conversion data using AppsFlyer SDK–Retargeting
+title: 'Obtén datos de conversión con el SDK de AppsFlyer: Retargeting'
 metadata:
   keywords:
     - Developers
@@ -13,41 +13,40 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-11-09T10:17:47Z'
-  edited_at: '2026-09-23T12:20:18Z'
+  edited_at: '2026-09-28T00:06:07Z'
   id: 4410481260817
-  locale: en-us
+  locale: es
   section: Conversion data
   section_id: 6551287787537
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4410481260817-Get-conversion-data-using-AppsFlyer-SDK-Retargeting
+  url: https://support.appsflyer.com/hc/es/articles/4410481260817
 ---
-> **At a glance:** Learn how re-attributions and re-engagements reflect in the conversion data for SRNs and non-SRN user journeys.
+> **At a glance:** Descubre cómo las reatribuciones y los re-engagements se reflejan en los datos de conversión de los viajes de los usuarios SRN y no SRN.
 
-## Retargeting conversion
+## Conversión de retargeting
 
-Retargeting includes two types of conversions, re-attribution or re-engagement.
+El retargeting incluye dos tipos de conversiones, reatribución o re-engagement.
 
 > 👍 **Tip**
 >
-> Conversion data for retargeting doesn't always give a clear indication as to the type of conversion. See [alternative conversion data sources](#alternative-conversion-data-sources).
+> Los datos de conversión para retargeting no siempre dan una indicación clara del tipo de conversión. Ver [fuentes alternativas de datos de conversión](#fuentes-de-datos-de-conversión-alternativas).
 
-## Re-attribution with SRNs
+## Reatribución con SRNs
 
-When a user is re-attributed through an SRN, the conversion data payload doesn't indicate that this is a retargeting campaign. Since SRNs don't use attribution links, there is no way to set an `is_retargeting=true` parameter in the attribution link. For **SRNs that do support retargeting**, AppsFlyer determines whether the user should be re-attributed or not.
+Cuando un usuario es reatribuido a través de una SRN, el payload de los datos de conversión no indica que se trata de una campaña de retargeting. Dado que las SRNs no utilizan enlaces de atribución, no hay forma de establecer un parámetro `is_retargeting=true` en el enlace de atribución. Para las **SRNs que sí admiten retargeting**, AppsFlyer determina si el usuario debe ser reatribuido o no.
 
-What this means is that there is no way to determine, on the SDK level, if an install comes from a retargeting campaign.
+Lo que esto significa es que no hay forma de determinar, a nivel de SDK, si una instalación proviene de una campaña de retargeting.
 
 > 📘 **Note**
 >
-> Setting the campaign name such that it indicates retargeting **is not a foolproof method**. See [examples to learn more](#examples-of-mixed-user-acquisition-and-re-attribution).
+> Establecer el nombre de la campaña de tal manera que indique el retargeting **no es un método infalible**. Ver [ejemplos para saber más](#ejemplos-de-adquisición-y-reatribución-de-usuarios-mixtos).
 
-## Re-attribution with regular ad networks
+## Reatribución con ad networks regulares
 
-Attribution to ad networks relies on attribution links. Whether regular attribution links or OneLink, with retargeting the attribution link always has the `is_retargeting=true` parameter set in it.
+La atribución a ad networks se basa en enlaces de atribución. Ya sean enlaces de atribución regulares o de OneLink, con el retargeting, el enlace de atribución siempre tiene el parámetro `is_retargeting=true` establecido.
 
-<Accordion title="Retargeting campaign with Criteo">
+<Accordion title="Campaña de retargeting con Criteo">
 
-#### Attribution link
+#### Enlace de atribución
 
 ```http
 https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
@@ -55,7 +54,7 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   &af_reengagement_window=30d
 ```
 
-#### Conversion data payload
+#### Payload de los datos de conversión
 
 ```json
 {
@@ -89,23 +88,23 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   }
 ```
 
-* `retargeting_conversion_type` parameter - this parameter indicates the type of retargeting. Can be either re-attribution, re-engagement, or none.
-* `is_retargeting: true` parameter - this parameter indicates that the install is a re-attributed install
-* `af_reengagement_window`: The re-engagement attribution window is the number of days in which an event can be attributed to a **re-engaged user**. Since this is a re-attribution conversion, this parameter is redundant.
+* Parámetro `retargeting_conversion_type`: este parámetro indica el tipo de retargeting. Puede ser reatribución, re-engagement o ninguno.
+* Parámetro `is_retargeting: true`: este parámetro indica que la instalación es una instalación reatribuida
+* `af_reengagement_window`: la ventana de atribución de re-engagement es el número de días en los que un evento puede atribuirse a un **usuario que ha interactuado de nuevo**. Dado que se trata de una conversión de reatribución, este parámetro es redundante.
 
 </Accordion>
 
-## Re-attribution with deferred deep linking
+## Reatribución con deferred deep linking
 
-Oftentimes, you want to deep link re-attributed users who, by definition of being re-attributed, don't have the app installed. For example, You set a campaign that aims to bring back users who uninstalled the app. The campaign promotes a product or service and you want to serve the users with content related to the product or service that you advertise.
+Muchas veces, quieres realizar deep linking a los usuarios reatribuidos que, por definición, no tienen la aplicación instalada. Por ejemplo, si estableces una campaña que tiene como objetivo traer de vuelta a los usuarios que desinstalaron la aplicación. La campaña promueve un producto o servicio y quieres servir a los usuarios contenido relacionado con el producto o servicio que anuncias.
 
-This is referred to as Deferred Deep Linking. Conversion data payload for Deferred Deep Linking comes from the `onConversionDataSuccess` method.
+Esto se conoce como deferred deep linking. La carga útil de los datos de conversión para los enlaces profundos diferidos proviene del método `onConversionDataSuccess`.
 
-<Accordion title="Deferred deep linking with SRNs">
+<Accordion title="Deferred deep linking con SRNs">
 
-To implement deferred deep linking with SRNs, additional logic must be applied for SRN campaigns. Use the data in `onConversionSuccess` response, such as campaign, adset, adgroup, to programmatically redirect your users.
+Para implementar Deferred deep linking con SRN, se debe aplicar una lógica adicional a las campañas de SRN. Usa los datos de la respuesta de `onConversionSuccess`, como campaign, adset y adgroup, para redirigir programáticamente a tus usuarios.
 
-#### Conversion data for deferred deep linking with Meta ads
+#### Datos de conversión para deferred deep linking con Meta Ads
 
 <Tabs>
 <Tab title="Android">
@@ -115,7 +114,7 @@ To implement deferred deep linking with SRNs, additional logic must be applied f
      "adset":"Adidas Running Shoes Women",
        "adgroup": null,
      "campaign_id":"6**********",
-     "af_status":"Non-organic",
+     "af_status":"no orgánico",
      "retargeting_conversion_type": "none",
      "agency":null,
      "af_sub3":null,
@@ -134,7 +133,7 @@ To implement deferred deep linking with SRNs, additional logic must be applied f
      "is_mobile_data_terms_signed":true,
      "af_channel":"Facebook",
      "af_sub5":null,
-     "media_source":"Meta ads",
+     "media_source":"Meta anuncios",
      "install_time":"2017-07-19 08:06:56.189",
      "af_sub2":null
   }
@@ -142,7 +141,7 @@ To implement deferred deep linking with SRNs, additional logic must be applied f
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
 ```json
   {
@@ -157,7 +156,7 @@ To implement deferred deep linking with SRNs, additional logic must be applied f
      "af_sub3":null,
      "af_siteid":null,
      "adset_id":"6**********",
-     "is_fb":true,
+     "is_fb":true,  
    "is_first_launch":true,
      "click_time":"2017-07-17 16:23:18",
      "iscache":false,
@@ -177,23 +176,23 @@ To implement deferred deep linking with SRNs, additional logic must be applied f
 </Tab>
 </Tabs>
 
-You can use the data in getConversionData response, such as campaign, adset, etc. to programmatically redirect your users and serve them with relevant content.
+Puedes usar los datos de la respuesta de getConversionData, como campaign, adset, etc., para redirigir programáticamente a tus usuarios y mostrarles contenido relevante.
 
 > 📘 **Note**
 >
-> The app is an eCommerce app that specializes in sportswear. A user who doesn't have the app installed engages with an ad and installs the app. Once the app launches, the SDK returns the conversion data. The developer makes the app open the **summer running shoe collection** (campaign) activity in the store and serves the **running shoes for women** category (adset).
+> La aplicación es una aplicación de eCommerce que se especializa en ropa deportiva. Un usuario que no tiene la app instalada interactúa con un anuncio e instala la app. Una vez que se inicia la aplicación, el SDK devuelve los datos de conversión. El desarrollador hace que la aplicación abra la actividad de la **colección de zapatillas de running de verano** (campaign) en la tienda y muestre la categoría de **zapatillas de running para mujer** (adset).
 
 </Accordion>
 
-<Accordion title="Deferred deep linking with attribution links">
+<Accordion title="Deferred deep linking con enlaces de atribución">
 
-There are three ways to deep link users:
+Hay tres formas de enlazar a los usuarios:
 
-#### URI schemes
+#### Esquemas URI
 
-When using URI Schemes, for both attribution links and OneLink, the attribution link and payload are as follows:
+Al usar esquemas URI, tanto para los enlaces de atribución como para OneLink, el enlace de atribución y el payload son los siguientes:
 
-**Attribution Link**
+**Enlace de atribución**
 
 ```http
 http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
@@ -211,7 +210,7 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
   &is_retargeting=true&af_dp=superapp%3A%2F%2deeplink-activity
 ```
 
-**Payload**
+**Carga útil**
 
 ```json
 {
@@ -236,20 +235,20 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
       "af_sub1": null,
       "af_sub3": null,
       "af_sub2": null,
-      "af_status": "Non-organic",
+      "af_status": "no orgánico",
       "scheme": "superapp",
       "host": "deeplink_activity"
   }
 ```
 
-* `af_deeplink: true` - when this parameter appears and is set to true, look for the `scheme` and `host` fields
-* `scheme` and `host` - these fields come from the `af_dp` parameter in the attribution link and indicate the scheme and activity to which the user should be deep linked
+* `af_deeplink: true` - cuando este parámetro aparece y está establecido en true, busca los campos `scheme` y `host`
+* `scheme` y `host` - estos campos provienen del parámetro `af_dp` en el enlace de atribución e indican el esquema y la actividad a la que se debe dirigir al usuario mediante deep linking
 
-#### iOS Universal links and Android app links
+#### Universal Links de iOS y App Links de Android
 
-These are the other two out of the three ways for performing deep linking.
+Estas son las otras dos de las tres formas de realizar deep linking.
 
-When using universal links or app links, the OneLink and payload are as follows:
+Al usar Universal Links o App Links, OneLink y el payload son los siguientes:
 
 **OneLink**
 
@@ -262,7 +261,7 @@ When using universal links or app links, the OneLink and payload are as follows:
   &is_retargeting=true
 ```
 
-**Payload**
+**Carga útil**
 
 ```json
 {
@@ -274,7 +273,7 @@ When using universal links or app links, the OneLink and payload are as follows:
       "click_time": "2019-01-08 16:24:14.322",
       "af_click_lookback": "7d",
       "orig_cost": "0.0",
-      "af_status": "Non-organic",
+      "af_status": "no orgánico",
       "iscache": "true",
       "shortlink": "71ba577e",
       "media_source": "media_source_name",
@@ -282,47 +281,47 @@ When using universal links or app links, the OneLink and payload are as follows:
   }
 ```
 
-* `shortlink` field - this is the field that indicates the specific OneLink that the user comes from. It helps the developer know how to proceed in terms of launching an activity and serving content. Other fields like `campaign` can also be used for this purpose.
+* Campo `shortlink` - es el campo que indica el OneLink específico del que proviene el usuario. Ayuda al desarrollador a saber cómo proceder para iniciar una actividad y mostrar contenido. Otros campos, como `campaign`, también se pueden usar con este fin.
 
 > 🚧 **Important**
 >
-> The field `shortlink` does not appear in the payload when using the long OneLink.
+> El campo `shortlink` no aparece en el payload cuando se usa el OneLink largo.
 >
-> In both cases (short or long OneLink) we recommend adding a custom parameter that indicates the activity. For example `&deep_link_activity=shoes_cateogry`
+> En ambos casos (OneLink corto o largo), recomendamos añadir un parámetro personalizado que indique la actividad. Por ejemplo `&deep_link_activity=shoes_cateogry`
 
 > 📘 **Note**
 >
-> Using universal links and app links is only possible with OneLink.
+> Usar Universal Links y App Links solo es posible con OneLink.
 
 </Accordion>
 
-## Re-engagement with SRNs
+## Re-engagement con SRN
 
-Much like with Re-Attribution campaigns, when a user is re-engaged through an SRN, the conversion data doesn't indicate that this is a re-engagement campaign.
+Al igual que con las campañas de reatribución, cuando se vuelve a captar a un usuario a través de una SRN, los datos de conversión no indican que se trata de una campaña de re-engagement.
 
-## Re-engagement with regular ad networks
+## Re-engagement con ad networks regulares
 
-Here too, the conversion data payload doesn't indicate that the user comes from a re-engagement campaign. To overcome this limitation, you can set the campaign name to indicate a re-engagement.
+Aquí también, la carga útil de los datos de conversión no indica que el usuario proviene de una campaña de re-engagement. Para superar esta limitación, puedes establecer el nombre de la campaña para indicar un re-engagement.
 
-## Re-engagement with deep linking
+## Re-engagement con deep linking
 
-A major part of Re-Engagement is to send the user to a specific activity. For example, if you advertise some product or sale. In such cases, you want to send the users who click the ad straight to the app activity for this product or sale.
+Una parte importante del re-engagement es enviar al usuario a una actividad específica. Por ejemplo, si anuncias algún producto u oferta. En tales casos, deseas enviar a los usuarios que hacen clic en el anuncio directamente a la actividad de la aplicación para este producto u oferta.
 
-To do so, you use Deep Linking. The conversion data in Deep Linking is really important. It holds the information necessary for the developer to customize the user experience and send them to the correct activity.
+Para ello, se utiliza Deep Linking. Los datos de conversión en Deep Linking son realmente importantes. Contienen la información necesaria para que el desarrollador personalice la experiencia del usuario y lo envíe a la actividad correcta.
 
-<Accordion title="Re-engagement: deep linking with SRNs">
+<Accordion title="Re-engagement: deep linking con SRNs">
 
-Conversion data is not available when a re-engaged user comes from an SRN. The developer needs to use the SRN methods to get it upon app launch.
+Los datos de conversión no están disponibles cuando un usuario re-engaged proviene de una SRN. El desarrollador debe usar los métodos de las SRNs para obtenerlo al abrir la aplicación.
 
 </Accordion>
 
-<Accordion title="Re-engagement: deep linking with ad networks">
+<Accordion title="Re-engagement: deep linking con ad networks">
 
-When a user is re-engaged and the app launches, the following conversion data is available in the `onAppOpenAttribution` method:
+Cuando se vuelve a captar a un usuario y se inicia la aplicación, los siguientes datos de conversión están disponibles en el método `onAppOpenAttribution`:
 
-For both iOS and Android, when using the short version of OneLink, the conversion data is a structured map of all the parameters on the link:
+Tanto para iOS como para Android, cuando se usa la versión corta de OneLink, los datos de conversión constituyen un mapa estructurado de todos los parámetros incluidos en el enlace:
 
-Example:
+Ejemplo:
 
 ```json
 {
@@ -334,13 +333,13 @@ Example:
   }
 ```
 
-* The app developer can use such parameters, like `af_dp` and campaign name, to send the user to a specific activity and serve the relevant content.
+* El desarrollador de la aplicación puede utilizar dichos parámetros, como `af_dp` y el nombre de la campaña, para enviar al usuario a una actividad específica y servir el contenido relevante.
 
 > 🚧 **Important**
 >
-> We recommend using the short version of OneLink. Click <Anchor target="_blank" href="/marketers/docs/understand-onelink-short-vs-long-urls">here</Anchor> to learn more.
+> Recomendamos usar la versión corta de OneLink. Haz clic <Anchor target="_blank" href="/marketers/es/docs/understand-onelink-short-vs-long-urls">aquí</Anchor> para obtener más información.
 
-Another reason to use the short version of OneLink is the conversion data structure that the long version returns. When using the long version, the conversion data is a map with a single field called `link` that holds the entire long OneLink.
+Otra razón para utilizar la versión corta de OneLink es la estructura de los datos de conversión que devuelve la versión larga. Cuando se usa la versión larga, los datos de conversión son un mapa con un solo campo llamado `link` que contiene todo el OneLink largo.
 
 ```json
 {
@@ -350,22 +349,22 @@ Another reason to use the short version of OneLink is the conversion data struct
 
 </Accordion>
 
-## Alternative conversion data sources
+## Fuentes de datos de conversión alternativas
 
-* Push API offers a detailed conversion payload that indicates re-attribution or re-engagement. Push API payloads include a field called `re_targeting_conversion_type`. This field indicates the type of conversion, either re-attribution or re-engagement. To learn more, see our <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API guide</Anchor>.
-* Raw Data Reports also contain indicators for the type of conversion. In the raw data report for retargeting conversions, there is a column called ***Event Name***. The value in this column is either ***re-engagemen*t** or ***re-attribution*** according to the type of conversion.
+* La Push API ofrece un payload de conversión detallado que indica una reatribución o un re-engagement. Los payloads de Push API incluyen un campo llamado `re_targeting_conversion_type`. Este campo indica el tipo de conversión, ya sea reatribución o re-engagement. Para más información, consulta nuestra <Anchor target="_blank" href="/marketers/es/docs/push-api-streaming-raw-data">guía de Push API</Anchor>.
+* Los reportes de raw data también contienen indicadores del tipo de conversión. En el reporte de raw data de conversiones de retargeting, hay una columna llamada ***Nombre del evento***. El valor en esta columna es ***re-engagemen*t** o ***reatribución***, según el tipo de conversión.
 
-## Examples of mixed user acquisition and re-attribution
+## Ejemplos de adquisición y reatribución de usuarios mixtos
 
 > 📘 **Note**
 >
-> 1. A user installs your app and then uninstalls it. The act of installation puts the user in a <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">re-attribution window</Anchor>. You set a user acquisition (not retargeting) campaign with Meta ads. You also set the AppsFlyer integration with Meta ads to allow retargeting.While still in the re-attribution window, the user sees the ad, clicks on it, and reinstalls the app. As far as AppsFlyer sees it, the user is a re-attributed user. This is due to two factors:
+> 1. Un usuario instala tu aplicación y luego la desinstala. La acción de instalación pone al usuario en una <Anchor target="_blank" href="/marketers/es/docs/set-up-re-attribution-window">ventana de reatribución</Anchor>. Configuras una campaña de adquisición de usuarios (sin retargeting) con Meta anuncios. También configuras la integración de AppsFlyer con Meta Ads para permitir el retargeting. Mientras el usuario siga dentro de la ventana de reatribución, ve el anuncio, hace clic en él y vuelve a instalar la aplicación. Desde el punto de vista de AppsFlyer, el usuario es un usuario reatribuido. Esto se debe a dos factores:
 >
->    1. The configuration with Meta ads allows retargeting
->    2. The user is in the re-attribution window
+>    1. La configuración con Meta Ads permite el retargeting.
+>    2. El usuario se encuentra dentro de la ventana de reatribución.
 >
->    In this case, the campaign name doesn't indicate re-attribution.
-> 2. Let's take the same example, only this time the user is outside the re-attribution window. In this case, the install is a new non-organic install.
-> 3. Let's look at another example. You set a retargeting campaign on Meta ads. Some users come across the campaign and install the app. However, these users install the app for the first time. Such users are not considered re-attributed users. Instead, AppsFlyer considers them as users that come from a user acquisition campaign.
+>    En este caso, el nombre de la campaña no indica reatribución.
+> 2. Tomemos el mismo ejemplo, solo que esta vez el usuario se encuentra fuera de la ventana de reatribución. En este caso, la instalación es una nueva instalación no orgánica.
+> 3. Veamos otro ejemplo. Estableces una campaña de retargeting en Meta Ads. Algunos usuarios se cruzan con la campaña e instalan la aplicación. Sin embargo, estos usuarios instalan la aplicación por primera vez. Dichos usuarios no se consideran usuarios reatribuidos. En cambio, AppsFlyer los considera como usuarios que provienen de una campaña de adquisición de usuarios.
 
-<div data-zendesk-anchors="h_01EHQ74JS84509GT6M93SZA4HX=retargeting-conversion reattribution-with-srns=re-attribution-with-srns h_01JNBRN0TBCVKBP6X6GCK3ADG9=re-attribution-with-srns reattribution-with-regular-ad-networks=re-attribution-with-regular-ad-networks h_01JNBRN0TCF7YC76661XNS78AD=re-attribution-with-regular-ad-networks h_01JNBRN0TCP9CAHV3X4QD0AVRS=attribution-link h_01JNBRN0TCXAZKYVYY56Q4GVHN=conversion-data-payload reattribution-with-deferred-deep-linking=re-attribution-with-deferred-deep-linking h_01JNBRN0TCECNRZ5ZBH2WWAWHV=re-attribution-with-deferred-deep-linking conversion-data-for-deferred-deep-linking-with-facebook=conversion-data-for-deferred-deep-linking-with-meta-ads h_01JNBRN0TC3NAE862BG274DRWW=conversion-data-for-deferred-deep-linking-with-meta-ads h_01JNBRN0TC909V4TNCEK4ZP83H=uri-schemes h_01JNBRN0TCH7HYZ4BCZTNS89SS=ios-universal-links-and-android-app-links reengagement-with-srns=re-engagement-with-srns h_01JNBRN0TCT2F11CQ4H8208JCB=re-engagement-with-srns reengagement-with-regular-ad-networks=re-engagement-with-regular-ad-networks h_01JNBRN0TCNTAAD47ZTTK3NWYJ=re-engagement-with-regular-ad-networks reengagement-with-deep-linking=re-engagement-with-deep-linking h_01JNBRN0TCGN9Y8ZHSEC4HMKPM=re-engagement-with-deep-linking h_01JNBRN0TCZ8T35W3AAA4HVD9M=alternative-conversion-data-sources examples-of-mixed-user-acquisition-and-reattribution=examples-of-mixed-user-acquisition-and-re-attribution h_01JNBRN0TC13RAZ73AFV6G92VB=examples-of-mixed-user-acquisition-and-re-attribution" />
+<div data-zendesk-anchors="retargeting-conversion=conversi%C3%B3n-de-retargeting h_01EHQ74JS84509GT6M93SZA4HX=conversi%C3%B3n-de-retargeting reattribution-with-srns=reatribuci%C3%B3n-con-srns h_01JNBRN0TBCVKBP6X6GCK3ADG9=reatribuci%C3%B3n-con-srns reattribution-with-regular-ad-networks=reatribuci%C3%B3n-con-ad-networks-regulares h_01JNBRN0TCF7YC76661XNS78AD=reatribuci%C3%B3n-con-ad-networks-regulares attribution-link=enlace-de-atribuci%C3%B3n h_01JNBRN0TCP9CAHV3X4QD0AVRS=enlace-de-atribuci%C3%B3n conversion-data-payload=payload-de-los-datos-de-conversi%C3%B3n h_01JNBRN0TCXAZKYVYY56Q4GVHN=payload-de-los-datos-de-conversi%C3%B3n reattribution-with-deferred-deep-linking=reatribuci%C3%B3n-con-deferred-deep-linking h_01JNBRN0TCECNRZ5ZBH2WWAWHV=reatribuci%C3%B3n-con-deferred-deep-linking conversion-data-for-deferred-deep-linking-with-facebook=datos-de-conversi%C3%B3n-para-deferred-deep-linking-con-meta-ads h_01JNBRN0TC3NAE862BG274DRWW=datos-de-conversi%C3%B3n-para-deferred-deep-linking-con-meta-ads uri-schemes=esquemas-uri h_01JNBRN0TC909V4TNCEK4ZP83H=esquemas-uri ios-universal-links-and-android-app-links=universal-links-de-ios-y-app-links-de-android h_01JNBRN0TCH7HYZ4BCZTNS89SS=universal-links-de-ios-y-app-links-de-android reengagement-with-srns=re-engagement-con-srn h_01JNBRN0TCT2F11CQ4H8208JCB=re-engagement-con-srn reengagement-with-regular-ad-networks=re-engagement-con-ad-networks-regulares h_01JNBRN0TCNTAAD47ZTTK3NWYJ=re-engagement-con-ad-networks-regulares reengagement-with-deep-linking=re-engagement-con-deep-linking h_01JNBRN0TCGN9Y8ZHSEC4HMKPM=re-engagement-con-deep-linking alternative-conversion-data-sources=fuentes-de-datos-de-conversi%C3%B3n-alternativas h_01JNBRN0TCZ8T35W3AAA4HVD9M=fuentes-de-datos-de-conversi%C3%B3n-alternativas examples-of-mixed-user-acquisition-and-reattribution=ejemplos-de-adquisici%C3%B3n-y-reatribuci%C3%B3n-de-usuarios-mixtos h_01JNBRN0TC13RAZ73AFV6G92VB=ejemplos-de-adquisici%C3%B3n-y-reatribuci%C3%B3n-de-usuarios-mixtos" />

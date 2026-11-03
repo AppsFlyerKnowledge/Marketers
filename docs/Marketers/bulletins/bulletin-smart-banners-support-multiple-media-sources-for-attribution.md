@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Smart Banners support multiple media sources for attribution'
+title: 'Boletín: Smart Banners admite múltiples fuentes de medios para la atribución'
 metadata:
   keywords:
     - OneLink
@@ -16,17 +16,16 @@ x-zendesk:
     - Marketers
     - Smart Banners and Scripts
   created_at: '2021-08-24T07:01:05Z'
-  edited_at: '2024-01-27T12:04:03Z'
+  edited_at: '2026-10-20T03:56:46Z'
   id: 4406100924689
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4406100924689-Bulletin-Smart-Banners-support-multiple-media-sources-for-attribution
+  url: https://support.appsflyer.com/hc/es/articles/4406100924689
 ---
-| **What's new** | Smart Banner settings allow you to choose multiple media source types for attribution. They are no longer limited to one type of web-to-app URL. |
+| **¿Qué hay de nuevo?** | La configuración de Smart Banner te permite elegir varios tipos de fuentes de medios para la atribución. Ya no están limitados a un solo tipo de URL web-to-app. |
 | --- | --- |
-| **Effective date** | August 25, 2021 |
-| **Where** | Smart Banners - banner group setup |
-| **What** | **Before the change:** One media source type was supported per banner group. Users needed to choose between using incoming attribution link parameters, **OR** incoming links with UTM parameters, **OR** the default attribution parameters (which were also used as a fallback). This meant AppsFlyer looked for either "pid" or “utm\_source” in the incoming URL.<br /><br />**After the change:** Banner groups are not limited to one media source type. They can be configured to support one or more of the above media sources. Meaning, users can choose between incoming attribution link parameters **AND/OR** incoming link UTM parameters **AND/OR** the default attribution parameters. This provides greater flexibility to customize the link behind the banner and provide the best web-to-app experience for the end-user. |
-| **What you must know** | <ul><li>If you have existing Smart Banners and banner groups, your settings remain the same.</li><li>For new banner groups, the UI has changed to allow you to choose more than one media source option.</li><li>You must have the current <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#smart-banners-only">Smart Banners Web SDK</Anchor> integrated; this feature is not supported by the old (deprecated) Web SDK.</li></ul>[![](https://files.readme.io/35d3888899ee7d95cb81152ab5a72de5bfcf1df40568b7f2fea00c947658fd42-4406108511633.png)](https://files.readme.io/35d3888899ee7d95cb81152ab5a72de5bfcf1df40568b7f2fea00c947658fd42-4406108511633.png) |
+| **Fecha de entrada en vigor** | Agosto 25, 2021 |
+| **Donde** | Smart Banners - Configuración del grupo de banners |
+| **Qué** | **Antes del cambio:** Se admitía un tipo de fuente de medios por grupo de banners. Los usuarios tenían que elegir entre usar los parámetros de atribución del enlace entrante, **O** enlaces entrantes con parámetros UTM, **O** los parámetros de atribución predeterminados (que también se usaban como respaldo). Esto significaba que AppsFlyer buscaba "pid" o “utm\_source” en la URL entrante.<br /><br />**Después del cambio:** Los grupos de banners no están limitados a un solo tipo de fuente de medios. Se pueden configurar para admitir una o varias de las fuentes de medios anteriores. Esto significa que los usuarios pueden elegir entre los parámetros de atribución del enlace entrante **Y/O** los parámetros UTM del enlace entrante **Y/O** los parámetros de atribución predeterminados. Esto ofrece mayor flexibilidad para personalizar el enlace detrás del banner y ofrecer la mejor experiencia Web-to-app al usuario final. |
+| **Lo que debes saber** | <ul><li>Si ya tienes Smart Banners y grupos de banners, tu configuración seguirá siendo la misma.</li><li>En los grupos de banners nuevos, la interfaz ha cambiado para permitirte elegir más de una opción de fuente de medios.</li><li>Debes tener integrado el <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#smart-banners-only">SDK web de Smart Banners</Anchor> actual; esta función no es compatible con el SDK web antiguo (obsoleto).</li></ul>[![](https://files.readme.io/35d3888899ee7d95cb81152ab5a72de5bfcf1df40568b7f2fea00c947658fd42-4406108511633.png)](https://files.readme.io/35d3888899ee7d95cb81152ab5a72de5bfcf1df40568b7f2fea00c947658fd42-4406108511633.png) |

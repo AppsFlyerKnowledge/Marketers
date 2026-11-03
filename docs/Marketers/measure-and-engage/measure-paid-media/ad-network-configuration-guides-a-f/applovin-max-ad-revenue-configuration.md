@@ -1,5 +1,5 @@
 ---
-title: Applovin MAX ad revenue configuration
+title: Configuración de ingresos publicitarios de AppLovin MAX
 metadata:
   keywords:
     - Ad Network
@@ -16,55 +16,54 @@ x-zendesk:
     - ROI360
     - Ad Networks
   created_at: '2020-01-09T10:53:21Z'
-  edited_at: '2026-06-16T09:35:28Z'
+  edited_at: '2026-08-12T12:13:00Z'
   id: 360004707378
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (A-F)
   section_id: 6551990971793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360004707378-Applovin-MAX-ad-revenue-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360004707378
 ---
-> **At a glance:** Applovin MAX, an AppsFlyer integrated partner, provides app owners with ad revenue-generating solutions.
+> **De un vistazo:** AppLovin MAX, un partner integrado de AppsFlyer, proporciona a los propietarios de apps soluciones para generar ingresos por anuncios.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png" width="265px" />
 
-## Setting up Applovin MAX integration
+## Configuración de la integración de AppLovin MAX
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración.   
+   **Nota importante:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Más información</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-### Setting tabs
+### Pestañas de configuración
 
-Update setting tabs content as required: Ad revenue.
+Actualiza el contenido de las pestañas de configuración según sea necesario: Ingresos por anuncios.
 
 <div id="ad-revenue" />
 
-<Accordion title="Ad revenue">
+<Accordion title="Cadena">
 
-Applovin MAX provides ad revenue mediation with aggregate data at the device level.
+AppLovin MAX proporciona mediación de ingresos por anuncios con datos agregados a nivel de dispositivo.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * Ad revenue for the Fire OS platform isn't reported in AppsFlyer.
-> * Learn more about <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">ad revenue attribution</Anchor> (ad monetization).
+> * Los ingresos por anuncios de la plataforma Fire OS no se reportan en AppsFlyer.
+> * Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution">atribución de ingresos por anuncios</Anchor> (monetización de anuncios).
 
-**To enable the ad revenue API**:
+**Para habilitar la API de ingresos por publicidad**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">estas instrucciones de integración</Anchor>.
 
 </Accordion>
 
-### Best practice
+### Práctica recomendada
 
-If you monetize with Meta ads and are using Applovin Max, it's best if you don't have a direct Facebook ad revenue integration with AppsFlyer. This way, you'll receive user-level data. If you have a direct Facebook ad revenue integration, data is at aggregate-level.
+Si monetizas con anuncios de Meta y usas AppLovin Max, es mejor que no tengas una integración directa de ingresos publicitarios de Facebook con AppsFlyer. De este modo, recibirás datos a nivel de usuario. Si tienes una integración directa de ingresos por anuncios de Facebook, los datos están a nivel agregado.
 
-<div data-zendesk-anchors="01EZPC55J2HP7DPGR3HADZXRFK=setting-up-applovin-max-integration 01EV471WS4J9B4374GXA5R5WXM=setting-tabs 01EV471WS4S7KE1GHQAJNYR5FR=ad-revenue h_01HFVAPG2CEQMRFN7HZZ2H8J3M=note 01FBGVR4ZAMKSHBMFCPAZVHH6A=best-practice" />
+<div data-zendesk-anchors="setting-up-applovin-max-integration=configuraci%C3%B3n-de-la-integraci%C3%B3n-de-applovin-max 01EZPC55J2HP7DPGR3HADZXRFK=configuraci%C3%B3n-de-la-integraci%C3%B3n-de-applovin-max setting-tabs=pesta%C3%B1as-de-configuraci%C3%B3n 01EV471WS4J9B4374GXA5R5WXM=pesta%C3%B1as-de-configuraci%C3%B3n 01EV471WS4S7KE1GHQAJNYR5FR=ad-revenue h_01HFVAPG2CEQMRFN7HZZ2H8J3M=nota best-practice=pr%C3%A1ctica-recomendada 01FBGVR4ZAMKSHBMFCPAZVHH6A=pr%C3%A1ctica-recomendada" />

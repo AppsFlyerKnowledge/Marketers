@@ -1,5 +1,5 @@
 ---
-title: Calculate daily and monthly active users (DAU and MAU)
+title: Calcular usuarios activos diarios y mensuales (DAU y MAU)
 metadata:
   keywords:
     - Marketers
@@ -12,41 +12,40 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2025-09-15T15:49:21Z'
-  edited_at: '2025-10-23T07:50:52Z'
+  edited_at: '2026-08-12T11:49:34Z'
   id: 39071744864657
-  locale: en-us
+  locale: es
   section: Analytics and aggregate reporting/APIs
   section_id: 6550976670225
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/39071744864657-Calculate-daily-and-monthly-active-users-DAU-and-MAU
+  url: https://support.appsflyer.com/hc/es/articles/39071744864657
 ---
-> **At a glance:** Learn how to calculate Daily and Monthly active users to get valuable insights about your campaigns
+> **En resumen:** Aprende a calcular usuarios activos diarios y mensuales para obtener insights valiosos sobre tus campañas
 
-## Overview
+## Visión general
 
-Daily Active Users (DAU) and Monthly Active Users (MAU) are key metrics for understanding app engagement and overall user behavior. They provide valuable insights into your active user base, including user stickiness, campaign performance, and growth trends over time.
+Los usuarios activos diarios (DAU) y los usuarios activos mensuales (MAU) son métricas clave para entender el engagement de la aplicación y el comportamiento general del usuario. Proporcionan insights valiosos sobre tu base de usuarios activos, incluyendo la retención de usuarios, el rendimiento de las campañas y las tendencias de crecimiento a lo largo del tiempo.
 
-This article explains how to calculate DAU and MAU using queries on two **Premium** Data Locker raw data tables that represent user acquisition and retargeting traffic: the `sessions` and `sessions_retargeting` tables.
+Este artículo explica cómo calcular DAU y MAU utilizando consultas en dos tablas de raw data de Data Locker que representan la adquisición de usuarios y el tráfico de retargeting: las tablas `sessions` y `sessions_retargeting`.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Starting February 2025, the Activity dashboard in AppsFlyer shows Unified (UA & Retargeting) data by default. You may notice a minor delta between raw data and dashboard numbers due to <Anchor target="_blank" href="/marketers/docs/activity-metrics-in-my-dashboards#specifications-and-limitations">approved algorithmic adjustments</Anchor>.
+> A partir de febrero de 2025, el dashboard de actividad en AppsFlyer muestra datos unificados (UA y Retargeting) por defecto. Puedes notar una pequeña diferencia entre los raw data y los números del dashboard debido a <Anchor target="_blank" href="/marketers/es/docs/activity-metrics-in-my-dashboards#especificaciones-y-limitaciones">ajustes algorítmicos aprobados</Anchor>.
 
-### Querying for active unique users
+### Consultando usuarios únicos activos
 
-To calculate unique users, use the `advertising_id` as the primary identifier in your query. If the `advertising_id` is unavailable, substitute it with the `appsflyer_id`. This method applies only to apps configured in <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#attributed-to-the-first-install">first-install mode</Anchor>.
+Para calcular usuarios únicos, utiliza `advertising_id` como el identificador principal en tu consulta. Si `advertising_id` no está disponible, sustitúyelo por `appsflyer_id`. Este método se aplica solo a aplicaciones configuradas en <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#attributed-to-the-first-install">modo de primera instalación</Anchor>.
 
-For apps not using this mode, we recommend applying `count(distinct appsflyer_id)` instead.
+Para aplicaciones que no utilizan este modo, recomendamos aplicar `count(distinct appsflyer_id)`.
 
-## Calculate Daily Active Users (DAU)
+## Calcular usuarios activos diarios (DAU)
 
-Calculate the total number of unique users per day using the queries below.
+Calcular el número total de usuarios únicos por día utilizando las consultas a continuación.
 
 <div id="query-for-dau---user-acquisition-ua" />
 
-<Accordion title="Query for DAU – User Acquisition (UA)">
+<Accordion title="Consulta para DAU – Adquisición de Usuarios (UA)">
 
-Select active UA users for a specified day.
+Seleccionar usuarios activos de UA para un día específico.
 
 ```sql
 WITH sessions_cleaned AS (
@@ -66,9 +65,9 @@ FROM sessions_cleaned;
 
 <div id="query-for-dau---retargeting" />
 
-<Accordion title="Query for DAU – Retargeting">
+<Accordion title="Consulta para DAU – Retargeting">
 
-Select active retargeting users for a specified day.
+Seleccionar usuarios activos de retargeting para un día específico.
 
 ```sql
 WITH sessions_retargeting_cleaned AS (
@@ -87,11 +86,11 @@ FROM sessions_retargeting_cleaned;
 
 <div id="query-for-dau---unified-ua-retargeting" />
 
-<Accordion title="Query for DAU – Unified (UA & Retargeting)">
+<Accordion title="Consulta para DAU – Unificado (UA y Retargeting)">
 
-Select active UA and retargeting users for a specified day.
+Seleccionar usuarios activos de UA y retargeting para un día específico.
 
-To get complete active user coverage, you must **union** the `sessions` and `sessions_retargeting` tables. Make sure the fields are aligned — typically by `app_id`, `event_time`, `advertising_id` and `appsflyer_id`. If needed, normalize the schema so that both tables have consistent column names.
+Para obtener una cobertura completa de usuarios activos, debes **unir** las tablas `sessions` y `sessions_retargeting` . Asegúrate de que los campos estén alineados, generalmente por `app_id`, `event_time`, `advertising_id` y `appsflyer_id`. Si es necesario, normaliza el esquema para que ambas tablas tengan nombres de columnas consistentes.
 
 ```sql
 WITH ua_sessions AS (
@@ -125,20 +124,20 @@ FROM all_sessions;
 
 </Accordion>
 
-## **Calculate Monthly Active Users (MAU)**
+## **Calcular Usuarios Activos Mensuales (MAU)**
 
-AppsFlyer dashboards present MAU in two ways:
+Los dashboards de AppsFlyer presentan MAU de dos maneras:
 
-1. **Active users in the last 31 days** – the number of unique active users in the last 31 days.
-2. **Calendar month MAU** – the number of unique active users within a specific calendar month.
+1. **Usuarios activos en los últimos 31 días** – el número de usuarios activos únicos en los últimos 31 días.
+2. **MAU en el mes del calendario** – el número de usuarios activos únicos dentro de un mes específico del calendario.
 
-The queries below demonstrate how to calculate the first type of MAU. To calculate calendar month MAU instead, simply adjust the date range to match the desired month.
+Las consultas a continuación demuestran cómo calcular el primer tipo de MAU. Para calcular el MAU del mes del calendario en su lugar, simplemente ajusta el rango de fechas para que coincida con el mes deseado.
 
 <div id="query-for-mau---user-acquisition-ua" />
 
-<Accordion title="Query for MAU – User Acquisition (UA)">
+<Accordion title="Consultas para MAU – Adquisición de Usuarios (UA)">
 
-Select active UA users for a specified month.
+Selecciona usuarios activos de UA para un mes específico.
 
 ```sql
 WITH sessions_cleaned AS (
@@ -157,9 +156,9 @@ FROM sessions_cleaned;
 
 <div id="query-for-mau---retargeting" />
 
-<Accordion title="Query for MAU – Retargeting">
+<Accordion title="Consultas para MAU – Retargeting">
 
-Select active retargeting users for a specified month.
+Selecciona usuarios activos de retargeting para un mes específico.
 
 ```sql
 WITH sessions_cleaned AS (
@@ -179,11 +178,11 @@ FROM sessions_cleaned;
 
 <div id="query-for-mau---unified-ua-retargeting" />
 
-<Accordion title="Query for MAU – Unified (UA & Retargeting)">
+<Accordion title="Consultas para MAU – Unificado (UA y Retargeting)">
 
-Select active UA and retargeting users for a specified month.
+Selecciona usuarios activos de UA y retargeting para un mes específico.
 
-To get complete active user coverage, you must **union** the `sessions` and `sessions_retargeting` tables. Make sure the fields are aligned — typically by `app_id`, `event_time`, `advertising_id` and `appsflyer_id`. If needed, normalize the schema so that both tables have consistent column names.
+Para obtener una cobertura completa de usuarios activos, debes **unir** las tablas `sessions` y `sessions_retargeting` . Asegúrate de que los campos estén alineados, generalmente por `app_id`, `event_time`, `advertising_id` y `appsflyer_id`. Si es necesario, normaliza el esquema para que ambas tablas tengan nombres de columnas consistentes.
 
 ```sql
 WITH ua_sessions AS (
@@ -217,4 +216,4 @@ FROM all_sessions;
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01K58WFCYQJE3JVR6Q4G5P1T3V=overview h_01K58WFCYQSX0YTSGWBC02TCG1=note h_01K58WFCYQ942VY9P70GHVG6SH=querying-for-active-unique-users h_01K58WFCYQ406CW66EEYPP5GFJ=calculate-daily-active-users-dau query-for-dau-%E2%80%93-user-acquisition-ua=query-for-dau---user-acquisition-ua h_01K58WFCYQVXBZN97BWHA8FC3C=query-for-dau---user-acquisition-ua query-for-dau-%E2%80%93-retargeting=query-for-dau---retargeting h_01K58WFCYQ4XNKQ9CW4D3KV2E2=query-for-dau---retargeting query-for-dau-%E2%80%93-unified-ua-retargeting=query-for-dau---unified-ua-retargeting h_01K58WFCYQ0NM0E44531YDJBCH=query-for-dau---unified-ua-retargeting h_01K58WFCYQ251WMSNSD0EYXV69=calculate-monthly-active-users-mau query-for-mau-%E2%80%93-user-acquisition-ua=query-for-mau---user-acquisition-ua h_01K58WFCYQAV6T3S7SABSTMYKS=query-for-mau---user-acquisition-ua query-for-mau-%E2%80%93-retargeting=query-for-mau---retargeting h_01K58WFCYQ4H5CFQPPC5JQKHTJ=query-for-mau---retargeting query-for-mau-%E2%80%93-unified-ua-retargeting=query-for-mau---unified-ua-retargeting h_01K58WFCYQA1W91CHM1PN31MFG=query-for-mau---unified-ua-retargeting" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01K58WFCYQJE3JVR6Q4G5P1T3V=visi%C3%B3n-general h_01K58WFCYQSX0YTSGWBC02TCG1=nota querying-for-active-unique-users=consultando-usuarios-%C3%BAnicos-activos h_01K58WFCYQ942VY9P70GHVG6SH=consultando-usuarios-%C3%BAnicos-activos calculate-daily-active-users-dau=calcular-usuarios-activos-diarios-dau h_01K58WFCYQ406CW66EEYPP5GFJ=calcular-usuarios-activos-diarios-dau query-for-dau-%E2%80%93-user-acquisition-ua=query-for-dau---user-acquisition-ua h_01K58WFCYQVXBZN97BWHA8FC3C=query-for-dau---user-acquisition-ua query-for-dau-%E2%80%93-retargeting=query-for-dau---retargeting h_01K58WFCYQ4XNKQ9CW4D3KV2E2=query-for-dau---retargeting query-for-dau-%E2%80%93-unified-ua-retargeting=query-for-dau---unified-ua-retargeting h_01K58WFCYQ0NM0E44531YDJBCH=query-for-dau---unified-ua-retargeting calculate-monthly-active-users-mau=calcular-usuarios-activos-mensuales-mau h_01K58WFCYQ251WMSNSD0EYXV69=calcular-usuarios-activos-mensuales-mau query-for-mau-%E2%80%93-user-acquisition-ua=query-for-mau---user-acquisition-ua h_01K58WFCYQAV6T3S7SABSTMYKS=query-for-mau---user-acquisition-ua query-for-mau-%E2%80%93-retargeting=query-for-mau---retargeting h_01K58WFCYQ4H5CFQPPC5JQKHTJ=query-for-mau---retargeting query-for-mau-%E2%80%93-unified-ua-retargeting=query-for-mau---unified-ua-retargeting h_01K58WFCYQA1W91CHM1PN31MFG=query-for-mau---unified-ua-retargeting" />

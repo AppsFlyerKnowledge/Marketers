@@ -1,5 +1,5 @@
 ---
-title: Quora campaign configuration
+title: Configuración de la campaña de Quora
 metadata:
   keywords:
     - Advertisers
@@ -14,107 +14,105 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2019-02-17T12:56:30Z'
-  edited_at: '2026-06-16T09:55:40Z'
+  edited_at: '2026-08-12T12:15:21Z'
   id: 360000974737
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000974737-Quora-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360000974737
 ---
-> **At a glance:** Quora, AppsFlyer integrated partners, is one of the most popular online Q&A communities. Over 300 million unique visitors come to Quora every month to ask questions and read insightful answers. Quora's large, engaged audience is one of the key reasons why marketers have found success advertising on Quora.
+> **De un vistazo:** Quora, uno de los Partners integrados de AppsFlyer, es una de las comunidades de preguntas & respuestas en línea más populares. Más de 300 millones de visitantes únicos acuden a Quora cada mes para hacer preguntas y leer respuestas reveladoras. La amplia y comprometida audiencia de Quora es una de las principales razones por las que los profesionales del marketing han tenido éxito al anunciarse en Quora.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/quora.png?v=1" width="83px" />
 
-## Setting up Quora
+## Configuración de Quora
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-Quora's configuration window includes 3 active tabs: **Integration, Attribution link**, and **Permissions**. Click the items below to read about the tab setup.
+La ventana de configuración de Quora incluye 3 pestañas activas: **Integración, Enlace de atribución** y **Permisos**. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del Encabezado de la Ventana de Configuración de Partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
+> * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio para todos los partners**.
+> * Todos los demás pasos son descriptivos u **opcionales**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partner
+### Activar socio
 
-On the **first visit**, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita**, tendrás que activar el botón ***Activar Partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-Default Postbacks
+Postbacks predeterminados
 
-Send automatic postbacks to Quora following user installs.
+Envía postbacks automáticos a Quora después de las instalaciones de los usuarios.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The option **Only events attributed to this partner** is the only option with Quora and is selected by default.
+> La opción **Only events attributed to this partner** es la única opción con Quora y se selecciona de forma predeterminada.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost integration is not available for this partner.
+La integración de costos no está disponible para este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue integration is not available for this partner.
+La integración de ingresos por publicidad no está disponible para este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Quora, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for Quora, the permissions tab is active and you can grant control to Quora.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Quora, tanto si el partner actúa como ad network, agencia o ambas cosas. Ten en cuenta que, incluso si la atribución está deshabilitada para Quora, la pestaña de permisos está activa y puedes otorgarle el control a Quora.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-### Ad network permissions
+### Permisos de ad network
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos***: solo a los datos de ingresos atribuidos al partner.
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW851RK4MHYEW1AY2E2KH5Q=setting-up-quora h_01HKW851RK9KMV6PJ7YEN7ZMW2=tip h_01HKW851RKYQ0T9XY74EXB4GWX=integration-tab h_01HKW851RKD56502S4PSX8096T=activate-partner h_01HKW851RM09VR496Q7XFB3EMY=note h_01HKW851RM4HP8EVGKD2EJH529=attribution-link-tab h_01HKW851RM4DGBABR81ZJZHBYW=cost-tab h_01HKW851RMQ0KY4CMWP7N4F2T4=ad-revenue-tab h_01HKW851RMV5A43RS3ZFZEPW8Z=permissions-tab h_01HKW851RM2G6Y4J4KQBHAEF3A=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-quora=configuraci%C3%B3n-de-quora h_01HKW851RK4MHYEW1AY2E2KH5Q=configuraci%C3%B3n-de-quora h_01HKW851RK9KMV6PJ7YEN7ZMW2=consejo h_01HKW851RKYQ0T9XY74EXB4GWX=integration-tab activate-partner=activar-socio h_01HKW851RKD56502S4PSX8096T=activar-socio h_01HKW851RM09VR496Q7XFB3EMY=nota h_01HKW851RM4HP8EVGKD2EJH529=attribution-link-tab h_01HKW851RM4DGBABR81ZJZHBYW=cost-tab h_01HKW851RMQ0KY4CMWP7N4F2T4=ad-revenue-tab h_01HKW851RMV5A43RS3ZFZEPW8Z=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HKW851RM2G6Y4J4KQBHAEF3A=permisos-de-ad-network" />

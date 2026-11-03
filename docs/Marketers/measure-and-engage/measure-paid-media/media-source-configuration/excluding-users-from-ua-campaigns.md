@@ -1,5 +1,5 @@
 ---
-title: Excluding users from UA campaigns
+title: Excluir usuarios de las campañas de UA
 metadata:
   keywords:
     - Advertisers
@@ -17,53 +17,54 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2020-05-03T10:11:31Z'
-  edited_at: '2023-02-15T13:15:06Z'
+  edited_at: '2023-02-15T15:01:47Z'
   id: 360007949158
-  locale: en-us
+  locale: es
   section: Media source configuration
   section_id: 6551067072785
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360007949158-Excluding-users-from-UA-campaigns
+  url: https://support.appsflyer.com/hc/es/articles/360007949158
 ---
-> **At a glance:** Exclude existing users from user acquisition (UA) campaigns to obtain more installs with the same budget and improve ROAS.
+> **De un vistazo:** Excluye a los usuarios existentes de las campañas de adquisición de usuarios (UA) para obtener más instalaciones con el mismo presupuesto y mejorar el ROAS.
 
-## Issues and consequences
+## Problemas y consecuencias
 
-If your app receives traffic from multiple media sources, then these sources can target your existing users in their UA campaigns.
+Si tu aplicación recibe tráfico de varias fuentes de medios, estas fuentes pueden **apuntar a tus usuarios existentes en sus campañas de UA**.
 
-Campaign performance can suffer for the following reasons:
+El rendimiento de la campaña puede verse afectado por los siguientes motivos:
 
-* **Double payments** - Paying for user impressions/clicks that you paid for in the past.
-* **Distorted conversion rates** - UA campaigns seem less successful. There are fewer installs as impressions are wasted on existing users.
-* **Loss of alternative users** - Non-users could have seen the ads and become your mobile users.
+* **Pagos dobles**: pagar por las impresiones/clics de usuarios que ya pagaste en el pasado.
+* **Tasas de conversión distorsionadas**: las campañas de UA parecen menos exitosas. Hay menos instalaciones ya que las impresiones se desperdician en los usuarios existentes.
+* **Pérdida de usuarios alternativos**: quienes no son usuarios podrían haber visto los anuncios y convertirse en tus usuarios móviles.
 
-<Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#what-is-srn-mistargeting">SRN mistargeting</Anchor> is a similar and common performance issue. This significant issue may happen if both your UA and retargeting campaigns are with the same SRN. <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#is-mistargeting-a-problem">Learn more</Anchor> 
+El <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#what-is-srn-mistargeting">error de targeting de SRN</Anchor> es un problema de rendimiento similar y común. Este problema significativo puede ocurrir si tanto tu UA como las campañas de retargeting tienen la misma SRN. <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#la-orientación-incorrecta-es-un-problema">Aprender más</Anchor> 
 
-## Solutions
+## Soluciones
 
-These solutions outline how to update ad networks to exclude existing users from UA campaigns.
+Estas soluciones describen cómo actualizar las redes de publicidad para excluir a los usuarios existentes de las campañas de UA.
 
-### Manual update
+### Actualización manual
 
-Collect your raw user-level install data from AppsFlyer to build device ID lists. Then, send these lists to ad networks to ensure user exclusion.
+Recopila tu raw data de instalación a nivel de usuario de AppsFlyer para crear listas de ID de dispositivo. Luego, envía estas listas a las redes publicitarias para garantizar la exclusión del usuario.
 
-There are several ways to add this raw data to your BI system:
+Hay varias formas de agregar este raw data a tu sistema de Business Intelligence (BI):
 
-* Download raw-data reports
-* Use periodic raw data Pull API requests
-* Use Push API to implement real-time collection
-* Get conversion data from the SDK
+* Descargar reportes de raw data
+* Usar solicitudes periódicas de raw data de la Pull API
+* Usar la Push API para implementar la recopilación en tiempo real
+* Obtener datos de conversión del SDK
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> In the time gap between manually sending the next list to the ad networks, UA campaigns can target your newest app users.
+> En el intervalo de tiempo entre el envío manual de la siguiente lista a las redes de publicidad, las campañas de UA pueden apuntar a los usuarios más nuevos de la aplicación.
 
-### Audiences
+### Audiencias
 
-**<Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor>** is an AppsFlyer premium feature. Every day, selected segments of your user base are sent automatically to multiple ad networks, as chosen by you.
+**<Anchor target="_blank" href="/marketers/es/docs/audiences-guide">Audiences</Anchor>** es una función premium de AppsFlyer. Todos los días, los segmentos seleccionados de tu base de usuarios se envían automáticamente a varias redes de publicidad, según lo elijas.
 
-**Audiences** is very useful for maintaining exclude lists:
+**Audiences** es muy útil para mantener listas de exclusión:
 
-* **Low effort** - No development work or maintenance is required by you or the ad network.
-* **User-friendly** - After a short, initial setup you can start uploading audiences.
-* **Efficient** - Segments are sent to ad networks automatically every 24 hours.
+* **Bajo esfuerzo**: no requiere que tú o la red de publicidad realicen trabajos de desarrollo ni mantenimiento.
+* **Fácil uso**: después de una breve configuración inicial, puedes comenzar a subir audiencias.
+* **Eficiente**: los segmentos se envían automáticamente a las redes de publicidad cada 24 horas.
+
+<div data-zendesk-anchors="issues-and-consequences=problemas-y-consecuencias solutions=soluciones manual-update=actualizaci%C3%B3n-manual audiences=audiencias" />

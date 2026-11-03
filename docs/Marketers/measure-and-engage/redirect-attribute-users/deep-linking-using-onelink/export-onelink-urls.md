@@ -1,5 +1,5 @@
 ---
-title: Export OneLink URLs
+title: Exportar direcciones URL de OneLink
 metadata:
   keywords:
     - export
@@ -14,46 +14,45 @@ x-zendesk:
     - Marketers
     - Link Management
   created_at: '2022-01-09T11:58:46Z'
-  edited_at: '2026-10-01T13:43:04Z'
+  edited_at: '2026-10-03T00:17:03Z'
   id: 4416027813905
-  locale: en-us
+  locale: es
   section: Deep linking using OneLink
   section_id: 6551203111057
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4416027813905-Export-OneLink-URLs
+  url: https://support.appsflyer.com/hc/es/articles/4416027813905
 ---
-> **At a glance:** Download all OneLink URLs created in the AppsFlyer user interface.
+> **En resumen:** Descarga todas las URL de OneLink creadas en la interfaz de usuario de AppsFlyer.
 
-## Export OneLink URLs
+## Exportar direcciones URL de OneLink
 
-Download a CSV file of all the OneLink URLs created per OneLink template using the OneLink setup in the AppsFlyer user interface. (OneLink URLs created via SDK, OneLink API, or bulk upload, aren't exported).
+Descarga un archivo CSV con todas las URL de OneLink creadas por plantilla de OneLink mediante la configuración de OneLink en la interfaz de usuario de AppsFlyer. (Las URL de OneLink creadas mediante el SDK, la API de OneLink o la carga masiva no se exportan).
 
-The CSV file contains info regarding each link as follows:
+El archivo CSV contiene información sobre cada enlace de la siguiente manera:
 
-* Link name
-* Media source
-* Campaign name
-* Short URL
-* Long URL
-* Date last modified/created (MM:DD:YY HH:MM)
-* Modified by (email)
+* Nombre del enlace
+* Fuente de medios
+* Nombre de la campaña
+* URL corta
+* URL larga
+* Fecha de última modificación/creación (MM:DD:YY HH:
+* Modificado por (correo electrónico)
 
-<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR02eohAyUA2fsr9iGEb0UiZI8v45wH58KGo-45wajF4KNGuk_2S_cY1WW3UV8LwPRg-wm9bkMjvWyZ/pub?output=csv">Sample CSV</Anchor>
+<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR02eohAyUA2fsr9iGEb0UiZI8v45wH58KGo-45wajF4KNGuk_2S_cY1WW3UV8LwPRg-wm9bkMjvWyZ/pub?output=csv">CSV de muestra</Anchor>
 
-**Note**: If a link is initially created in the AppsFlyer UI, but the parameters are then updated outside the UI (using OneLink API, a spreadsheet, etc.), the updated parameters are not part of the downloaded CSV.
+**Nota**: Si inicialmente se crea un enlace en la interfaz de usuario de AppsFlyer, pero los parámetros se actualizan fuera de la interfaz de usuario (mediante la API de OneLink, una hoja de cálculo, etc.), los parámetros actualizados no forman parte del CSV descargado.
 
-**To download the CSV**:
+**Para descargar el CSV**:
 
-1. In AppsFlyer, from the side menu, select **Engage** > **OneLink Management**.
-2. Select the OneLink template you want a list of links for.
-3. Click **Export**.  
-   The CSV file is downloaded.
+1. En AppsFlyer, en el menú lateral, selecciona **Engage** > **Gestión de OneLink**.
+2. Selecciona la plantilla de OneLink para la que deseas obtener una lista de enlaces.
+3. Haz clic en **Export**.  
+   Se descarga el archivo CSV.
 
-### Traits and limitations
+### Características y limitaciones
 
-| **Trait** | **Remarks** |
+| **Rasgo** | **Comentarios** |
 | --- | --- |
-| Agencies | Can only get the links they created based on the OneLink template. |
-| Advertisers | Can only get the links they created based on the OneLink template. |
+| Agencias | Solo pueden obtener los enlaces que crearon en función de la plantilla de OneLink. |
+| Anunciantes | Solo pueden obtener los enlaces que crearon en función de la plantilla de OneLink. |
 
-<div data-zendesk-anchors="h_01HKA1YMN4J2HAXWWF00252XC3=export-onelink-urls h_01HKA1YMN4P9AR949BFCSG93VY=traits-and-limitations" />
+<div data-zendesk-anchors="export-onelink-urls=exportar-direcciones-url-de-onelink h_01HKA1YMN4J2HAXWWF00252XC3=exportar-direcciones-url-de-onelink traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01HKA1YMN4P9AR949BFCSG93VY=caracter%C3%ADsticas-y-limitaciones" />

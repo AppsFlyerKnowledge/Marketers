@@ -1,5 +1,5 @@
 ---
-title: Configure AppsFlyer SSO in Okta
+title: Configura el SSO de AppsFlyer en Okta
 metadata:
   keywords:
     - Agencies
@@ -17,111 +17,110 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2023-02-12T13:10:51Z'
-  edited_at: '2024-10-09T04:55:25Z'
+  edited_at: '2026-08-12T12:03:56Z'
   id: 12934808889745
-  locale: en-us
+  locale: es
   section: SSO authentication
   section_id: 20162151531793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/12934808889745-Configure-AppsFlyer-SSO-in-Okta
+  url: https://support.appsflyer.com/hc/es/articles/12934808889745
 ---
-> **At a glance:** Configure the SSO process using Okta as an identity provider (IdP).
+> **De un vistazo:** Configura el proceso de SSO usando Okta como proveedor de identidad (IdP).
 
-The first step in configuring the AppsFlyer SSO process is done on the Okta platform. Follow the steps below:
+El primer paso para configurar el proceso de SSO de AppsFlyer se realiza en la plataforma de Okta. Sigue los pasos que se indican a continuación:
 
 <div id="create-the-appsflyer-app-in-okta" />
 
-<Accordion title="Create the AppsFlyer app in Okta">
+<Accordion title="Crea la app de AppsFlyer en Okta">
 
-**Prerequisite:** An Okta account with administrative privileges.
+**Requisito previo:** Una cuenta de Okta con privilegios de administrador.
 
-1. In the Admin Console, go to **Applications** > **Applications**.  
+1. En la consola de administración, ve a **Applications** > **Applications**.  
    <Image alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="241px" />
-2. Click **Create App Integration**.
-3. In the **Create a new app integration** dialog box, select **SAML 2.0**, and click **Next**.
-4. Under **(1) General Settings**, in the **App name** field, enter the name that you want to show in the Okta plugin list of apps.  
+2. Haz clic en **Create App Integration**.
+3. En el cuadro de diálogo **Create a new app integration**, selecciona **SAML 2.0** y haz clic en **Next**.
+4. En **(1) General Settings**, en el campo **App name**, introduce el nombre que quieres que se muestre en la lista de apps del complemento de Okta.  
    <Image alt="Okta_app_name_and_icon__1_.png" src="https://files.readme.io/6998e7737b0aa5c4d70ad97ab41e17e471ddaf060e78c44fa2de41be1df17574-13572380565521.png" width="639px" />
-5. [Optional] **App logo**: Add a logo to appear near the app name.
-6. Click **Next**.
-7. Under **(2) Configure SAML Integration**, define the integration according to the following fields: ![okta-create-saml-integration.png](https://files.readme.io/6c276dd54afd30e828b989fc6796de5eca46282ade015e7a34e0bd1cc95d7fb8-16870970396177.png)
-   * **Single sign-on URL:** Enter the endpoint to which Okta sends the user verification. Use the link according to the <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration">callback URL configuration described here</Anchor>
-   * **Audience URI (SP Entity ID):** Enter this link: <Anchor target="_blank" href="https://hq1.appsflyer.com/">https://hq1.appsflyer.com</Anchor>
-   * **Name ID format:** Select **EmailAddress** as the format for identifying the user
-   * **Application username:** Select **Okta username**  
-     **Note:** The email of the Okta user must be the same as the user’s AppsFlyer account email
-8. Click **Show Advanced Settings** and define the integration according to each of the fields shown in the image below:
+5. [Opcional] **App logo**: añade un logotipo para que aparezca junto al nombre de la aplicación.
+6. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
+7. En **(2) Configure SAML Integration**, define la integración según los siguientes campos: ![okta-create-saml-integration.png](https://files.readme.io/6c276dd54afd30e828b989fc6796de5eca46282ade015e7a34e0bd1cc95d7fb8-16870970396177.png)
+   * **Single sign-on URL:** Introduce el endpoint al que Okta envía la verificación del usuario. Usa el enlace según la <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration">configuración de la URL de devolución de llamada descrita aquí</Anchor>
+   * **Audience URI (SP Entity ID):** Introduce este enlace: <Anchor target="_blank" href="https://hq1.appsflyer.com/">https://hq1.appsflyer.com</Anchor>
+   * **Name ID format:** Selecciona **EmailAddress** como formato para identificar al usuario
+   * **Application username:** Selecciona **Okta username**  
+     **Nota:** El correo electrónico del usuario de Okta debe ser el mismo que el correo electrónico de la cuenta de AppsFlyer del usuario
+8. Haz clic en **Show Advanced Settings** y define la integración según cada uno de los campos que se muestran en la imagen siguiente:
 
    <Image alt="Okta_advanecd_settings__1_.png" src="https://files.readme.io/9a3461f700cc50a54237578a304206ed7693e30cdd516398089954321cd44af4-13572576788241.png" width="640px" />
 
-   * **Assertion Encryption:** Select either **Encrypted** or **Unencrypted**.   
-     **Note:** As assertions are controlled by your IdP, it's recommended to select **Encrypted**.
-   * **Encryption certificate:** Upload the <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#obtaining-the-appsflyer-certificate-from-the-metadata-url">AppsFlyer encryption certificate</Anchor>. This certificate is signed by AppsFlyer and is used to both encrypt and sign the request.
-   * [Optional] **Signature certificate:** Upload the <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#the-authentication-certificate">AppsFlyer signing certificate</Anchor>.
-9. Scroll to the end of the page, and click **Next**.
-10. Select **I’m an Okta customer adding an internal app**, and click **Finish**.
+   * **Assertion Encryption:** Selecciona **Encrypted** o **Unencrypted**.   
+     **Nota:** Como las aserciones las controla tu IdP, se recomienda seleccionar **Encrypted**.
+   * **Encryption certificate:** Carga el <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#obtaining-the-appsflyer-certificate-from-the-metadata-url">certificado de cifrado de AppsFlyer</Anchor>. AppsFlyer firma este certificado y se usa tanto para cifrar como para firmar la solicitud.
+   * [Opcional] **Signature certificate:** Carga el <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#the-authentication-certificate">certificado de firma de AppsFlyer</Anchor>.
+9. Desplázate hasta el final de la página y haz clic en **Siguiente**.
+10. Selecciona **I’m an Okta customer adding an internal app** y haz clic en **Finalizar**.
 
 </Accordion>
 
 <div id="create-okta-users" />
 
-<Accordion title="Create Okta users">
+<Accordion title="Crear usuarios de Okta">
 
-Now that the Okta SAML application has been created, let’s add users.
+Ahora que se ha creado la aplicación SAML de Okta, vamos a añadir usuarios.
 
-1. From the Admin console, select **Directory** > **People**.
+1. En la consola de administración, selecciona **Directory** > **People**.
 
    <Image alt="Okta___directory___people.png" src="https://files.readme.io/d9c5da8787fdb81bf97bc0753b2f7794cdc59060e5026348428545064d138d18-13572579297169.png" width="226px" />
-2. Click **Add Person**.
+2. Haz clic en **Agregar persona**.
 
    <Image alt="Okta___People___Add_person.png" src="https://files.readme.io/6bb8b854cf000259970d63b9eacb28bf6d4079d648939814aaa0e456a96c9bbe-13572600647697.png" width="524px" />
-3. In the **Add Person** dialog box:
+3. En el cuadro de diálogo **Agregar persona**:
 
    <Image alt="Okta_Add_person__1_.png" src="https://files.readme.io/d6d7e198fab965872b5a01302a00bdbd0bfb5d561af372fc4390c9882a22a42c-13572617052689.png" width="620px" />
 
-   * For **User type**, select **User**.
-   * Enter all required fields: **First name**, **Last name**, **Username** (must be an email), and **Primary email**.
-   * For **Password**, you can choose to have it set by the user or by the admin.
-4. To continue adding users, click **Save and Add Another**, then repeat steps 1-4. When done adding all users, click **Save**.
+   * En **Tipo de usuario**, selecciona **Usuario**.
+   * Introduce todos los campos obligatorios: **Nombre**, **Apellidos**, **Nombre de usuario** (debe ser un correo electrónico) y **Correo electrónico principal**.
+   * En **Password**, puedes elegir si la establece el usuario o el administrador.
+4. Para seguir añadiendo usuarios, haz clic en **Save and Add Another** y, a continuación, repite los pasos 1-4. Cuando termines de añadir todos los usuarios, haz clic en **Save**.
 
 </Accordion>
 
 <div id="assign-users-to-your-app" />
 
-<Accordion title="Assign users to your app">
+<Accordion title="Asignar usuarios a tu aplicación">
 
-1. From the Admin console, go back to **Applications** > **Applications**.
-2. Under **Browse App Catalog**, select the application you've just created.  
+1. En la consola de administración, vuelve a **Applications** > **Applications**.
+2. En **Browse App Catalog**, selecciona la aplicación que acabas de crear.  
    <Image alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="233px" />
-3. From your selected application, under the **Assignments** tab, click **Assign** > **Assign to People**.  
+3. En la aplicación que has seleccionado, en la pestaña **Assignments**, haz clic en **Assign** > **Assign to People**.  
    ![Okta_sso_assign_to_people.png](https://files.readme.io/50930693a4a58ad8162b2ac81e476081c9b0288da4dab5b92bb41fece4aff586-14942267242769.png)
-4. Find the user to be assigned to your application, and click **Assign**.
-5. Repeat this step for all users.
-6. Click **Done** when finished adding all users. The new users now appear under **People**.
+4. Busca el usuario que quieras asignar a tu aplicación y haz clic en **Assign**.
+5. Repite este paso con todos los usuarios.
+6. Haz clic en **Done** cuando termines de añadir todos los usuarios. Los nuevos usuarios ahora aparecen en **People**.
 
 </Accordion>
 
 <div id="get-idp-sso-metadata" />
 
-<Accordion title="Get IdP SSO metadata">
+<Accordion title="Obtener metadatos de SSO del IdP">
 
-1. From the Admin console, go back to **Applications** > **Applications**.
-2. Under **Browse App Catalog**, select your application.
-3. Click the **Sign On** tab.
-4. From the **SAML Signing Certificates** section, click **Actions** > **View IdP metadata** of the active certificate. <Image alt="okta_sso_view_idp_metadata.png" src="https://files.readme.io/a6d9f6753ead962713851bcc367abba6fad226d6e0a5f908055e44b1d3e1b2be-14942369009809.png" width="601px" />
-5. Copy the URL from the tab that opened. You’ll use this URL in the next step on the AppsFlyer platform.
+1. En la consola de administración, vuelve a **Applications** > **Applications**.
+2. En **Browse App Catalog**, selecciona tu aplicación.
+3. Haz clic en la pestaña **Sign On**.
+4. En la sección **SAML Signing Certificates** , haz clic en **Actions** > **View IdP metadata** del certificado activo. <Image alt="okta_sso_view_idp_metadata.png" src="https://files.readme.io/a6d9f6753ead962713851bcc367abba6fad226d6e0a5f908055e44b1d3e1b2be-14942369009809.png" width="601px" />
+5. Copia la URL de la pestaña que se abrió. Usarás esta URL en el siguiente paso en la plataforma AppsFlyer.
 
 </Accordion>
 
 <div id="complete-the-process-in-appsflyer" />
 
-<Accordion title="Complete the process in AppsFlyer">
+<Accordion title="Completa el proceso en AppsFlyer">
 
-Now that you've configured the IdP part, go back to AppsFlyer to <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">complete the configuration</Anchor>. You can then <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process">test</Anchor> to see that it works.
+Ahora que ya has configurado la parte del IdP, vuelve a AppsFlyer para <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">completar la configuración</Anchor>. A continuación, puedes <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process">probarlo</Anchor> para comprobar que funciona.
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Véase también**
 >
-> * <Anchor target="_blank" href="https://developer.okta.com/docs/guides/build-sso-integration/openidconnect/main/">Okta SSO documentation</Anchor>
+> * <Anchor target="_blank" href="https://developer.okta.com/docs/guides/build-sso-integration/openidconnect/main/">Documentación de SSO de Okta</Anchor>
 
-<div data-zendesk-anchors="h_01HDNZYDQGGBMB9MJ97RF4BADM=create-the-appsflyer-app-in-okta h_01HDNZYDQGGFCA2KB9PDQY1ZTG=create-okta-users h_01HDNZYDQGC9MRQH92MM8W4FVE=assign-users-to-your-app h_01HDNZYDQGWRE9K6XG5EPYTYYX=get-idp-sso-metadata h_01HDNZYDQG6GNEP3TQMXVT5FTG=complete-the-process-in-appsflyer h_01HDP00WTAVP0X8FT51JC1JKKC=see-also" />
+<div data-zendesk-anchors="h_01HDNZYDQGGBMB9MJ97RF4BADM=create-the-appsflyer-app-in-okta h_01HDNZYDQGGFCA2KB9PDQY1ZTG=create-okta-users h_01HDNZYDQGC9MRQH92MM8W4FVE=assign-users-to-your-app h_01HDNZYDQGWRE9K6XG5EPYTYYX=get-idp-sso-metadata h_01HDNZYDQG6GNEP3TQMXVT5FTG=complete-the-process-in-appsflyer h_01HDP00WTAVP0X8FT51JC1JKKC=v%C3%A9ase-tambi%C3%A9n" />

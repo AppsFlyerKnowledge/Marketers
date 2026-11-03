@@ -1,5 +1,5 @@
 ---
-title: Salesforce Marketing Cloud (SFMC) integration with AppsFlyer
+title: Integración de Salesforce Marketing Cloud (SFMC) con AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -7,91 +7,90 @@ x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2026-09-01T14:53:41Z'
-  edited_at: '2026-10-22T09:41:15Z'
+  edited_at: '2026-10-23T01:27:37Z'
   id: 50431751712529
-  locale: en-us
+  locale: es
   section: Email service providers
   section_id: 6551247620881
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/50431751712529-Salesforce-Marketing-Cloud-SFMC-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/50431751712529
 ---
-> **At a glance:** Integrate AppsFlyer with Salesforce Marketing Cloud (SFMC) to deep link users from email campaigns to in-app content. Sync in-app event data into SFMC to build audiences and trigger journeys based on real app behavior.
+> **At a glance:** Integra AppsFlyer con Salesforce Marketing Cloud (SFMC) para usar Deep Linking y dirigir a los usuarios desde campañas de correo electrónico hasta contenido in-app. Sincroniza los datos de eventos in-app en SFMC para crear audiencias y activar viajes en función del comportamiento real de la aplicación.
 
-## About the integration
+## Sobre la integración
 
-SFMC lets you re-engage existing users through email campaigns by deep linking them to specific in-app content, such as a promotion or a personalized offer.
+SFMC te permite volver a interactuar con los usuarios existentes mediante campañas de correo electrónico, usando Deep Linking para dirigirlos a contenido in-app específico, como una promoción o una oferta personalizada.
 
-There are two integration options:
+Hay dos opciones de integración:
 
-* **Standard SFMC email deep linking**: create your campaign OneLink links in AppsFlyer, then add them to your emails.
-* **Advanced SFMC app exchange integration**: create campaign OneLink links directly inside Salesforce, and automatically import in-app event data so you can build re-engagement audiences. This is a premium feature.
+* **Deep Linking estándar de correo electrónico de SFMC**: crea los enlaces OneLink de tu campaña en AppsFlyer y luego añádelos a tus correos electrónicos.
+* **Integración avanzada con AppExchange de SFMC**: crea enlaces OneLink de campaña directamente en Salesforce e importa automáticamente datos de eventos in-app para poder crear audiencias de re-engagement. Esta es una función premium.
 
-## Comparison: Standard vs. Advanced
+## Comparación: Standard vs. Advanced
 
-| Capability | Standard SFMC email deep linking | Advanced SFMC app exchange integration |
+| Capacidad | Deep Linking estándar de correo electrónico de SFMC | Integración avanzada con AppExchange de SFMC |
 | --- | --- | --- |
-| Deferred deep links | Yes | Yes |
-| Direct deep links | Yes | Yes |
-| Deep link measurement | Yes | Yes |
-| Link creation | In AppsFlyer | In the dedicated Salesforce app |
-| SFMC postbacks (in-app event sync) | No | Yes |
+| Deferred deep links | Sí | Sí |
+| Enlaces directos | Sí | Sí |
+| Medición de Deep Linking | Sí | Sí |
+| Creación de enlaces | En AppsFlyer | En la aplicación de Salesforce dedicada |
+| Postbacks de SFMC (sincronización de eventos in-app) | No | Sí |
 
-## Prerequisites
+## Prerrequisitos
 
 <Tabs>
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-* AppsFlyer iOS SDK version 4.9.0+
-* For iOS Universal Links, do the following in your SFMC environment: Purchase and implement a <Anchor target="_blank" href="https://help.salesforce.com/articleView?id=mc_es_sender_authentication_package.htm&type=5">Sender Authentication Package</Anchor> (SAP), and purchase an SSL Certificate (SSL Configuration) and submit an SSL Request Form. Reach out to your Salesforce account representative or submit a deliverability support case via Salesforce Help to get both.
+* SDK de AppsFlyer para iOS, versión 4.9.0+
+* Para los enlaces universales de iOS, haz lo siguiente en tu entorno de SFMC: compra e implementa un <Anchor target="_blank" href="https://help.salesforce.com/articleView?id=mc_es_sender_authentication_package.htm&type=5">Sender Authentication Package</Anchor> (SAP) y compra un certificado SSL (configuración de SSL) y envía un formulario de solicitud de SSL. Ponte en contacto con tu representante de cuenta de Salesforce o envía un Caso de soporte de entregabilidad a través de Salesforce ayuda para obtener ambos.
 
 </Tab>
 
 <Tab title="Android">
 
-* AppsFlyer Android SDK version 4.9.0+
-* SFMC doesn't support Android App Links, so <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">URI Scheme</Anchor> deep linking is used instead. No special action is needed to support deep linking in Android apps from SFMC.
+* SDK de AppsFlyer para Android, versión 4.9.0+
+* SFMC no admite Android App Links, así que en su lugar se usa Deep Linking con <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">URI Scheme</Anchor>. No se requiere ninguna acción especial para soporte de Deep Linking en apps Android desde SFMC.
 
 </Tab>
 </Tabs>
 
-## Set up Standard SFMC email deep linking
+## Configura Deep Linking estándar de correo electrónico de SFMC
 
-**To set up the integration:**
+**Configura la integración:**
 
-<Accordion title="Step 1: Set your click-recording domain in SFMC">
+<Accordion title="Paso 1: Configura tu dominio de registro de clics en SFMC">
 
-To set a click-recording domain, follow SFMC official guides for:
+Para configurar un dominio de registro de clics, sigue las guías oficiales de SFMC para:
 
-* <Anchor target="_blank" href="https://help.salesforce.com/articleView?id=mc_es_implement_ios_universal_link.htm&type=5">Implementing iOS Universal Link</Anchor>
-* <Anchor target="_blank" href="https://help.salesforce.com/articleView?id=mc_es_dns_record_maintenance.htm&type=5">DNS Record Maintenance</Anchor>
-
-</Accordion>
-
-<Accordion title="Step 2: Upload your SSL certificate to SFMC">
-
-In order for iOS Universal Links to work properly, your click-recording domain must include your domain's SSL certificate that should be installed in your SFMC account. Instructions on setting your SSL certificates can be found in the <Anchor target="_blank" href="https://help.salesforce.com/articleView?id=mc_es_ssl_certificates.htm&type=5">SFMC official guide</Anchor>.
+* <Anchor target="_blank" href="https://help.salesforce.com/articleView?id=mc_es_implement_ios_universal_link.htm&type=5">Implementación de enlaces universales de iOS</Anchor>
+* <Anchor target="_blank" href="https://help.salesforce.com/articleView?id=mc_es_dns_record_maintenance.htm&type=5">Mantenimiento de registros DNS</Anchor>
 
 </Accordion>
 
-<Accordion title="Step 3: Set deep linking in SFMC">
+<Accordion title="Paso 2: Carga tu certificado SSL en SFMC">
 
-To enable deep linking from SFMC emails:
+Para que los enlaces universales de iOS funcionen correctamente, tu dominio de registro de clics debe incluir el certificado SSL de tu dominio, que debe estar instalado en tu cuenta de SFMC. Encontrarás instrucciones para configurar tus certificados SSL en la <Anchor target="_blank" href="https://help.salesforce.com/articleView?id=mc_es_ssl_certificates.htm&type=5">guía oficial de SFMC</Anchor>.
 
-1. Log in to your SFMC account, and go to the **Email Studio** view
-2. Click on the **Admin** tab
-3. In the side menu, click on **deep linking**. In this view, you can configure new deep link integration with your app, or modify existing ones.
+</Accordion>
 
-   <Image alt="[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen]" src="https://files.readme.io/4b7e68abb76163329ab5d487425c4dfe3ee903bb3360893c9b59f40f73486858-50431735587345.png" width="3348px" />
-4. To create a new configuration, click the **Create** button and enter your AppID. The AppID value is a combination of your Apple developer team ID and the Bundle ID. Both of these values can be retrieved from your Apple Developer account.
+<Accordion title="Paso 3: Configura el deep linking en SFMC">
 
-   > 📄 **Example**
+Para habilitar el enlace profundo desde los correos electrónicos de SFMC:
+
+1. Inicia sesión en tu cuenta de SFMC y ve a la vista **Email Studio**
+2. Haz clic en la pestaña **Administrar**
+3. En el menú lateral, haz clic en **Deep Linking**. En esta vista, puedes configurar nuevas integraciones de enlaces profundos con tu aplicación, o modificar las existentes.
+
+   <Image alt="[SE NECESITA TEXTO ALT: describe la pantalla de configuración de Deep Linking de SFMC]" src="https://files.readme.io/4b7e68abb76163329ab5d487425c4dfe3ee903bb3360893c9b59f40f73486858-50431735587345.png" width="3348px" />
+4. Para crear una nueva configuración, haz clic en el botón **Crear** e introduce tu AppID. El valor AppID es una combinación de tu ID de equipo de desarrollador de Apple y el ID de paquete. Ambos valores pueden recuperarse desde tu cuenta de desarrollador de Apple.
+
+   > 📄 **Ejemplo**
    >
-   > Given the Team ID prefix *5UABCDFGH* and the Bundle ID *com.your.app*, the following value should be entered:  
+   > Dado el prefijo de ID de equipo *5UABCDFGH* y el ID de paquete *com.your.app*, debe introducirse el siguiente valor:  
    > 5UABCDFGH.com.your.app
    >
-   > <Image alt="[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen shown here]" src="https://files.readme.io/4f5500c6f538b2b8e00db0bae1bcac240fc49b30419f4f4a8b07fb0bd3cf8f4a-50431735587985.png" width="1234px" />
+   > <Image alt="[SE NECESITA TEXTO ALT: describe la pantalla de configuración de Deep Linking de SFMC que se muestra aquí]" src="https://files.readme.io/4f5500c6f538b2b8e00db0bae1bcac240fc49b30419f4f4a8b07fb0bd3cf8f4a-50431735587985.png" width="1234px" />
 
-5. Your set up of universal links and deep linking is completed once SFMC sets up the Apple App Site Association (AASA) file. This process may take a few hours. You can see your generated file using the following URL:
+5. La configuración de enlaces universales y enlaces profundos se completa una vez que SFMC configura el archivo Apple App Site Association (AASA). Este proceso puede durar unas horas. Puedes ver el archivo generado utilizando la siguiente URL:
 
    ```
    https://<click_recording_link_domain>/apple-app-site-association
@@ -99,118 +98,118 @@ To enable deep linking from SFMC emails:
 
 </Accordion>
 
-<Accordion title="Step 4: Configure your AppsFlyer SDK">
+<Accordion title="Paso 4: Configura tu SDK de AppsFlyer">
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> If you haven't already done so, make sure to configure your app to support <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking with OneLink</Anchor>.
+> Si aún no lo has hecho, asegúrate de configurar tu aplicación para que admita <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Deep Linking con OneLink</Anchor>.
 
-After configuring your click-recording domain to support Universal Links as described previously, you need to set up your app to deep link and resolve the Universal Link.
+Después de configurar tu dominio de registro de clics para que admita enlaces universales como se ha descrito anteriormente, debes configurar su aplicación para que establezca enlaces profundos y resuelva el enlace universal.
 
-1. Associate the click-recording domain in Xcode:
+1. Asociar el dominio de registro de clics en Xcode:
 
-   <Image alt="[ALT TEXT NEEDED: describe the Xcode associated domains screen]" src="https://files.readme.io/02bee3d75c32d494d80719b2718ddf4648440bcb3ebcb2132799e44e38852629-50431735589009.png" width="1135px" />
-2. Provide the click-recording domain to the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information, see the SDK documentation on <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">resolving deep link URLs</Anchor>.
+   <Image alt="[SE NECESITA TEXTO ALT: describe la pantalla de dominios asociados de Xcode]" src="https://files.readme.io/02bee3d75c32d494d80719b2718ddf4648440bcb3ebcb2132799e44e38852629-50431735589009.png" width="1135px" />
+2. Proporciona el dominio de registro de clics a la API del SDK `setResolveDeepLinkURLs`. Esta API debe llamarse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK sobre <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">la resolución de URL de Deep Linking</Anchor>.
 
    ```swift
    AppsFlyerLib.shared().resolveDeepLinkURLs = ["example.com", "click.example.com"]
    ```
 
-   * **Important!** If you are using Movable Ink (MI) in conjunction with Salesforce, you need to get the MI CNAME and internal domains from your MI account manager and add them to `setResolveDeepLinkURLs`, in addition to the click link for Salesforce. For example:
+   * **¡Importante!** Si utilizas Movable Ink (MI) junto con Salesforce, debes obtener el CNAME de MI y los dominios internos de tu gestor de cuentas de MI y añadirlos a `setResolveDeepLinkURLs`, además del enlace de clic para Salesforce. Por ejemplo,
 
      ```swift
      AppsFlyerLib.shared().resolveDeepLinkURLs = ["salesforce-click.example.com", "mi.example.com", "example.micpn.com"]
      ```
-3. When the app is invoked due to a click on the Universal Link, the AppsFlyer SDK resolves the deep link and extracts the underlying OneLink. All deep link parameters are then propagated into the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlibdelegate#onappopenattribution">onAppOpenAttribution API</Anchor> for deep link logic execution.
+3. Cuando se invoca la aplicación debido a un clic en el enlace universal, el SDK de AppsFlyer resuelve el enlace profundo y extrae el OneLink subyacente. A continuación, todos los parámetros de deep link se propagan a la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlibdelegate#onappopenattribution">API onAppOpenAttribution</Anchor> para ejecutar la lógica de deep link.
 
 </Accordion>
 
-## Send emails with Standard SFMC email deep linking
+## Envía correos electrónicos con Deep Linking de correo electrónico estándar de SFMC
 
-**To send emails with Standard SFMC email deep linking:**
+**Para enviar correos electrónicos con Deep Linking de correo electrónico estándar de SFMC:**
 
-1. Create a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLink link</Anchor>, either manually or from the OneLink links page in the AppsFlyer dashboard.
-2. URL-encode all parameter values when you create the OneLink. These parameters are highly recommended:
+1. Crea un <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">enlace de OneLink</Anchor>, ya sea manualmente o desde la página de enlaces de OneLink en el dashboard de AppsFlyer.
+2. Codifica en URL todos los valores de los parámetros cuando crees el OneLink. Estos parámetros son muy recomendables:
 
-| Parameter | Description | Notes |
+| Parámetro | Descripción | Notas |
 | --- | --- | --- |
-| pid | Media source | Representative media source |
-| c | Campaign name | The campaign that will be attributed |
-| af\_dp | Deep-link URL | Deep-link redirect for users |
-| af\_web\_dp | Desktop redirect | Redirect for desktop users |
-| af\_ios\_url |  | Redirect for iOS users who don't have the app installed |
-| af\_android\_url |  | Redirect for Android users who don't have the app installed |
+| pid | Fuente de medios | Fuente mediática representativa |
+| C | Nombre de la campaña | La campaña que se atribuirá |
+| af\_dp | URL de enlace profundo | Redireccionamiento de enlaces profundos para los usuarios |
+| af\_web\_dp | Redireccionamiento de escritorio | Redireccionamiento para usuarios de ordenadores de mesa |
+| af\_ios\_url |  | Redireccionamiento para usuarios de iOS que no tengan instalada la aplicación |
+| af\_android\_url |  | Redireccionamiento para usuarios de Android que no tengan instalada la aplicación |
 
-3. Copy the link into the email you create in Salesforce Email Studio. Salesforce Marketing Cloud wraps the link with your click-recording domain, so any click on that domain redirects to your OneLink attribution link.
+3. Copia el enlace en el correo electrónico que crees en Salesforce Email Studio. Salesforce Marketing Cloud envuelve el enlace con tu dominio de registro de clics, por lo que cualquier clic en ese dominio redirige a tu enlace de atribución de OneLink.
 
-**Example** (URL parameters shown unencoded, for readability):
+**Ejemplo** (parámetros de URL mostrados sin codificar, para facilitar la lectura):
 
 ```
 https://example.onelink.me/ABcd?pid=Email&c=Spring_Newsletter&af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 ```
 
-## Set up the Advanced SFMC app exchange integration
+## Configura la integración avanzada de intercambio de aplicaciones de SFMC
 
-**To set up the advanced SFMC app exchange integration:**
+**Para configurar la integración avanzada de SFMC con AppExchange:**
 
-<Accordion title="Step 1: Install the OneLink app from the SFMC AppExchange">
+<Accordion title="Paso 1: Instala la app OneLink desde el SFMC AppExchange">
 
-1. Ask your CSM, or email hello@appsflyer.com, to enable the app install on the SFMC AppExchange.
-2. In Salesforce, go to the AppExchange link your CSM shares once the app is enabled.
-3. Click **Install**.
-4. Grant permissions: ask your Salesforce Marketing Cloud admin to grant access to the app for individual users or Business Units. You may need a hard refresh to see the new permissions.
-5. Give users access to the AppsFlyer OneLink app: go to **Apps > Installed Packages**, select the **ACCESS** tab, select the users who should be able to use OneLink, and click **Save**. Again, a hard refresh may be needed.
-
-</Accordion>
-
-<Accordion title="Step 2: Complete the basic setup">
-
-Complete the steps in the "[Set up Standard SFMC email deep linking](#set-up-standard-sfmc-email-deep-linking)" above.
+1. Pide a tu CSM, o escribe a hello@appsflyer.com, que habilite la instalación de la app en SFMC AppExchange.
+2. En Salesforce, ve al enlace de AppExchange que comparta tu CSM una vez que la app esté habilitada.
+3. Haz clic en **Install**.
+4. Concede permisos: pide al administrador de Salesforce Marketing Cloud que conceda acceso a la app a usuarios individuales o unidades de negocio. Puede que necesites hacer una recarga completa para ver los nuevos permisos.
+5. Da a los usuarios acceso a la app OneLink de AppsFlyer: ve a **Apps > Installed Packages**, selecciona la pestaña **ACCESS**, selecciona los usuarios que deban poder usar OneLink y haz clic en **Save**. De nuevo, puede que necesites hacer una recarga completa.
 
 </Accordion>
 
-<Accordion title="Step 3: Create OneLink links in Salesforce using the AppsFlyer OneLink app">
+<Accordion title="Paso 2: Completa la configuración básica">
 
-Create a separate attribution link for each campaign.
-
-<Image alt="[ALT TEXT NEEDED: currently the filename SFMC-AF-app1-en_us.png; describe the OneLink app screen shown]" src="https://files.readme.io/21d7961d03e822dd2a4ccb426dc7b5c85c3700f81a9530bc8950a67e3f1d6237-50431735591185.png" width="684px" />
-
-**To create a OneLink link:**
-
-1. In **Salesforce**, open the **AppsFlyer** OneLink app.
-2. Click **Add OneLink**.
-3. Enter a name in the **Link name** field. Consider:
-   * Choose an easily identifiable name.
-   * The link name will be used when applying OneLinks to email campaigns.
-4. In the **Base URL** field, enter the long-version OneLink URL copied from the **AppsFlyer OneLink custom links** page.
-   * Use a long-version URL to make sure the app analyzes and sets link parameters.
-   * Learn how to <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">copy an existing link URL</Anchor> or <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">create a new OneLink link</Anchor>.
-5. [Optional] To add more parameters, click **Add parameter**. See the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">list of recommended parameters</Anchor>.
-6. [Optional] To set an internal SalesForce marketing cloud macro, click the icon located to the right of a parameter.
-   * It is recommended to set a **Subscriber key** for each **OneLink** parameter.
-   * This lets you connect attributed email conversions back to your Salesforce data.
-7. Click **Generate link**.
+Completa los pasos de «[Configurar el Deep Linking estándar de correo electrónico de SFMC](#configura-deep-linking-estándar-de-correo-electrónico-de-sfmc)» que aparecen arriba.
 
 </Accordion>
 
-<Accordion title="Step 4: Send emails containing custom attribution links">
+<Accordion title="Paso 3: Crea enlaces OneLink en Salesforce con la app OneLink de AppsFlyer">
 
-1. In **Salesforce Email Studio**, create a new template or email.
-2. Click the **Edit** icon, the **Content** tab, then select **Blocks**.
-3. Scroll down to find **AppsFlyer Button CB** or **AppsFlyer Image CB**.
+Crea un enlace de atribución independiente para cada campaña.
 
-   <Image alt="[ALT TEXT NEEDED: currently the filename sf_email_edit_onelink_new.PNG; describe the Content Blocks panel shown]" src="https://files.readme.io/565a80933451dbdb1606b20f8d71964019a36f14ffd0b0ba295649a96b056cf0-50431751706641.png" width="396px" />
-4. Drag the image/button into the body of the email.
-5. Click the image/button to edit.
-6. In the **Title** field, name the image/button.
-7. Select a **OneLink link**.
+<Image alt="[SE NECESITA TEXTO ALT: actualmente el nombre de archivo es SFMC-AF-app1-en_us.png; describe la pantalla de la app OneLink que se muestra]" src="https://files.readme.io/21d7961d03e822dd2a4ccb426dc7b5c85c3700f81a9530bc8950a67e3f1d6237-50431735591185.png" width="684px" />
 
-   <Image alt="[ALT TEXT NEEDED: describe the OneLink link selector shown]" src="https://files.readme.io/1d22268b5ced4d753cb6812decdccd960e92d9d8156213f76fc67db98b52c9c7-50431751707665.png" width="415px" />
-8. Save the email and send it.
+**Para crear un enlace de OneLink:**
 
-> 📄 **Example**
+1. En **Salesforce**, abre la app OneLink de **AppsFlyer**.
+2. Haz clic en **Añadir OneLink**.
+3. Introduce un nombre en el campo **Nombre del enlace**. Considere:
+   * Elige un nombre fácil de identificar.
+   * El nombre del enlace se usará al aplicar OneLinks a las campañas de correo electrónico.
+4. En el campo **URL base**, introduce la URL OneLink en versión larga que copiaste de la página **Enlaces personalizados de OneLink de AppsFlyer**.
+   * Usa una URL en versión larga para asegurarte de que la app analice y establezca los parámetros del enlace.
+   * Descubre cómo <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">copiar la URL de un enlace existente</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">crear un enlace OneLink nuevo</Anchor>.
+5. [Opcional] Para añadir más parámetros, haz clic en **Añadir parámetro**. Consulta la <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-del-enlace-de-atribución">lista de parámetros recomendados</Anchor>.
+6. [Opcional] Para configurar una macro interna de Salesforce Marketing Cloud, haz clic en el icono situado a la derecha de un parámetro.
+   * Se recomienda configurar una **Subscriber key** para cada parámetro de **OneLink**.
+   * Esto te permite vincular las conversiones de correo electrónico atribuidas a tus datos de Salesforce.
+7. Haz clic en **Generar enlace**.
+
+</Accordion>
+
+<Accordion title="Paso 4: Envía correos electrónicos que contengan enlaces de atribución personalizados">
+
+1. En **Salesforce Email Studio**, crea una nueva plantilla o un nuevo correo electrónico.
+2. Haz clic en el icono **Edit**, en la pestaña **Content** y, a continuación, selecciona **Blocks**.
+3. Desplázate hacia abajo hasta encontrar **AppsFlyer Button CB** o **AppsFlyer Image CB**.
+
+   <Image alt="[SE NECESITA TEXTO ALT: describe el panel de bloques de contenido que se muestra actualmente en el archivo sf_email_edit_onelink_new.PNG]" src="https://files.readme.io/565a80933451dbdb1606b20f8d71964019a36f14ffd0b0ba295649a96b056cf0-50431751706641.png" width="396px" />
+4. Arrastra la imagen o el botón al cuerpo del correo electrónico.
+5. Haz clic en la imagen o el botón para editarlo/la.
+6. En el campo **Título**, asigna un nombre a la imagen o al botón.
+7. Selecciona un **enlace de OneLink**.
+
+   <Image alt="[SE NECESITA TEXTO ALT: describe el selector de enlaces de OneLink que se muestra]" src="https://files.readme.io/1d22268b5ced4d753cb6812decdccd960e92d9d8156213f76fc67db98b52c9c7-50431751707665.png" width="415px" />
+8. Guarda el correo electrónico y envíalo.
+
+> 📄 **Ejemplo**
 >
-> For readability purposes, the URL parameters are not URL encoded:
+> Para facilitar la lectura, los parámetros URL no están codificados:
 >
 > ```
 > https://example.onelink.me/ABcd?pid=Email&c=Spring_Newsletter&
@@ -220,145 +219,145 @@ Create a separate attribution link for each campaign.
 
 </Accordion>
 
-<Accordion title="Step 5: Test your links">
+<Accordion title="Paso 5: Prueba tus enlaces">
 
-**To test your attribution links:**
+**Para probar tus enlaces de atribución:**
 
-1. Create the appropriate OneLink URL.
-2. Place it in an email.
-3. Send the email to yourself.
-4. Click the link.
+1. Crea la URL OneLink adecuada.
+2. Colócalo en un correo electrónico.
+3. Envíate el correo electrónico a ti mismo.
+4. Haz clic en el enlace.
 
-* If you have the app installed on your device, the app should be invoked.
-* If the relevant AppsFlyer SDK deep linking APIs are implemented you are deep linked into the relevant content.
-* A click should appear in both the AppsFlyer dashboard, attributed to the provided media source and campaign.
-* A click appears in Salesforce data.
+* Si tienes la aplicación instalada en tu dispositivo, la aplicación debe ser invocada.
+* Si se implementan las API de enlaces profundos relevantes del SDK de AppsFlyer, debes tener un enlace profundo al contenido relevante.
+* Debería aparecer un clic tanto en el panel de control de AppsFlyer, atribuido a la fuente de medios proporcionada como a la campaña.
+* Aparece un clic en los datos de Salesforce.
 
 </Accordion>
 
-## Dynamic Emails
+## Correos electrónicos dinámicos
 
-If you need to generate links dynamically to represent dynamic content per user, use the OneLink API.
+Si necesitas generar enlaces dinámicamente para representar contenido dinámico por usuario, usa la API de OneLink.
 
-To do this, use an Automation Studio script activity in SFMC's Journey Builder that calls the OneLink API before the send, writes the generated deep link into a field on the send Data Extension for each contact, then have the email pull that field with a simple AMPscript lookup.
+Para hacerlo, usa una actividad de script de Automation Studio en Journey Builder de SFMC que llame a la API de OneLink antes del envío, escriba el enlace profundo generado en un campo de la Data Extension de envío para cada contacto y, después, haz que el correo electrónico extraiga ese campo con una búsqueda sencilla de AMPscript.
 
-## Advanced SFMC in-app events data sync
+## Sincronización avanzada de datos de eventos in-app de SFMC
 
-This feature lets AppsFlyer automatically send in-app event data from your app to Salesforce Marketing Cloud, where it's stored in a dedicated Data Extension. Use this data to build audiences, trigger journeys, and personalize campaigns based on real app behavior, such as purchases, registrations, or level completions.
+Esta función permite que AppsFlyer envíe automáticamente datos de eventos in-app desde tu aplicación a Salesforce Marketing Cloud, donde se almacenan en una Data Extension específica. Usa estos datos para crear audiencias, activar viajes y personalizar campañas en función del comportamiento real de la aplicación, como compras, registros o niveles completados.
 
-This is a premium feature, available as part of the Advanced SFMC app exchange integration.
+Esta es una función premium, disponible como parte de la integración avanzada de AppExchange de SFMC.
 
-### How it works
+### Cómo funciona
 
-When a user performs an in-app event (for example, completing a purchase), AppsFlyer sends a postback to the SFMC connector. The connector writes the event data into a Data Extension in your SFMC account, where each row represents one event for one contact. From there, use SFMC's Journey Builder or Automation Studio to trigger follow-up communications based on that event.
+Cuando un usuario realiza un evento in-app (por ejemplo, al completar una compra), AppsFlyer envía un postback al conector de SFMC. El conector escribe los datos del evento en una Data Extension de tu cuenta de SFMC, donde cada fila representa un evento para un contacto. A partir de ahí, usa Journey Builder o Automation Studio de SFMC para activar comunicaciones de seguimiento en función de ese evento.
 
-**To set up the advanced data sync:**
+**Para configurar la sincronización avanzada de datos:**
 
-<Accordion title="Step 1: Enable postback sending in AppsFlyer">
+<Accordion title="Paso 1: Activa el envío de postback en AppsFlyer">
 
-1. In AppsFlyer, go to **Collaborate > Active Integrations** and search for Salesforce Marketing Cloud.
-2. Select the app you want to configure and click **Set up integration**.
-3. In the **Integration** tab, make sure the **Activate partner** toggle is on.
-4. Scroll to **In-app event postbacks** and turn the toggle on.
-5. Click **Add event** and map the AppsFlyer events you want to send to SFMC. For each event, select it from your app's event list and set the sending condition: **This partner only** (sends only events attributed to SFMC traffic) or **All media sources, including organic** (recommended for audience building, since it sends every occurrence of the event regardless of attribution).
-6. Click **Save integration**.
+1. En AppsFlyer, ve a **Colaborar > Integraciones activas** y busca Salesforce Marketing Cloud.
+2. Selecciona la aplicación que quieres configurar y haz clic en **Configurar integración**.
+3. En la pestaña **Integración**, asegúrate de que el selector **Activar partner** esté activado.
+4. Desplázate hasta **Postbacks de eventos in-app** y activa el selector.
+5. Haz clic en **Añadir evento** y asigna los eventos de AppsFlyer que quieras enviar a SFMC. Para cada evento, selecciónalo en la lista de eventos de tu aplicación y establece la condición de envío: **Solo este partner** (envía solo los eventos atribuidos al tráfico de SFMC) o **Todas las fuentes de medios, incluido el orgánico** (recomendado para crear audiencias, ya que envía cada ocurrencia del evento independientemente de la atribución).
+6. Haz clic en **Guardar integración**.
 
 > 📘 **Note**
 >
-> Only events already received by AppsFlyer from your SDK or S2S integration appear in the event list. If an event is missing, check your SDK implementation first.
+> En la lista de eventos solo aparecen los eventos que AppsFlyer ya ha recibido a través de tu SDK o de la integración S2S. Si falta algún evento, primero revisa la implementación del SDK.
 
 </Accordion>
 
-<Accordion title="Step 2: Verify the Data Extension in SFMC">
+<Accordion title="Paso 2: Verifica la Data Extension en SFMC">
 
-After the first postback is sent, AppsFlyer automatically creates a Data Extension in your SFMC account, named Installs-`{mid} or Events-{mid}`. To verify:
+Después de que se envíe el primer postback, AppsFlyer crea automáticamente una Data Extension en tu cuenta de SFMC con el nombre Installs-`{mid} o Events-{mid}`. Para verificarlo:
 
-1. In SFMC, go to **Email Studio > Data Extensions**.
-2. Search for your app's Data Extension.
-3. Confirm rows are populating with event data. Each row should include the contact identifier, event name, event timestamp, and event parameters.
+1. En SFMC, ve a **Email Studio > Data Extensions**.
+2. Busca la Data Extension de tu aplicación.
+3. Confirma que las filas se estén rellenando con datos de eventos. Cada fila debe incluir el identificador del contacto, el nombre del evento, la marca de tiempo del evento y los parámetros del evento.
 
-If the Data Extension wasn't created automatically, confirm the SFMC connector app is correctly installed and that your SFMC admin has granted it the necessary data write permissions.
+Si la Data Extension no se creó automáticamente, confirma que la aplicación del conector de SFMC esté instalada correctamente y que el administrador de SFMC le haya concedido los permisos necesarios para escribir datos.
 
 </Accordion>
 
-<Accordion title="Step 3: Use event data in Journey Builder">
+<Accordion title="Paso 3: Usa los datos de eventos en Journey Builder">
 
-1. In SFMC, open Journey Builder and create or edit a journey.
-2. Set the entry source to **Data Extension** and select the AppsFlyer Data Extension for your app.
-3. Configure the entry criteria, for example, contacts whose event\_name equals af\_purchase.
-4. Build the journey steps you need (send email, wait, branch by event value, and so on).
-5. Activate the journey.
+1. En SFMC, abre Journey Builder y crea o edita un journey.
+2. Configura la fuente de entrada como **Data Extension** y selecciona la Data Extension de AppsFlyer de tu aplicación.
+3. Configura los criterios de entrada, por ejemplo, contactos cuyo event\_name sea igual a af\_purchase.
+4. Crea los pasos del viaje que necesites (enviar correo electrónico, esperar, ramificar por valor de evento, etc.).
+5. Activa el viaje.
 
 > 👍 **Tip**
 >
-> Use the af\_sub1 parameter in your OneLinks to pass the SFMC subscriber key as a user identifier. This lets postbacks match back to the correct contact record in Salesforce, enabling contact-level personalization rather than campaign-level attribution only.
+> Usa el parámetro af\_sub1 en tus OneLinks para pasar la clave de suscriptor de SFMC como identificador de usuario. Esto permite que los postbacks coincidan con el registro de contacto correcto en Salesforce, lo que habilita la personalización a nivel de contacto en lugar de solo la atribución a nivel de campaña.
 
 </Accordion>
 
-### Postback data fields
+### Campos de datos de postback
 
-The SFMC connector creates two Data Extensions in your account: one for installs, one for in-app events. All fields exist in the schema, but some aren't currently populated. Fields marked "not written" are part of the schema but will always be empty.
+El conector de SFMC crea dos Data Extensions en tu cuenta: una para instalaciones y otra para eventos in-app. Todos los campos existen en el esquema, pero algunos no se rellenan actualmente. Los campos marcados como "not written" forman parte del esquema, pero siempre estarán vacíos.
 
-<Accordion title="Data fields">
+<Accordion title="Campos de datos">
 
-**Install Data Extension fields (49 fields)**
+**Campos de la Data Extension de instalación (49 campos)**
 
-| Field | Written | Notes |
+| Campo | Escrito | Notas |
 | --- | --- | --- |
-| Touch Type | Yes |  |
-| Touch Time | Yes |  |
-| Event Name | Yes |  |
-| Event Source | Yes |  |
-| Media Source | Yes |  |
-| Channel | Yes |  |
-| Campaign | Yes |  |
-| Campaign ID | Yes |  |
-| Sub Param 1 to 5 | Yes | Map to af\_sub1 through af\_sub5 on the OneLink |
-| Region | Yes |  |
-| Country Code | Yes |  |
-| State | Yes |  |
-| City | Yes |  |
-| Postal Code | Yes |  |
-| DMA | Yes |  |
-| IP | Yes |  |
-| AF ID | Yes | AppsFlyer's unique device identifier |
-| IDFV | Yes |  |
-| Device Type | Yes |  |
-| Device Cat | Yes |  |
-| Platform | Yes |  |
-| OS Version | Yes |  |
-| App Version | Yes |  |
-| SDK Version | Yes |  |
-| App ID | Yes |  |
-| App Name | Yes |  |
-| Is Retargeting | Yes |  |
-| Match Type | Yes |  |
-| User Agent | Yes |  |
-| Install Time | Yes |  |
-| Event Time | Yes |  |
-| Deep Link Value | Yes |  |
-| deep\_link\_sub1 to sub10 | No | Exists in the schema, not written |
-| IDFA | No | Exists in the schema, not written (iOS device identifier) |
-| Advertiser ID | No | Exists in the schema, not written (Android GAID) |
+| Tipo de Toque | Sí |  |
+| Tiempo de toque | Sí |  |
+| eventName | Sí |  |
+| Fuente del evento | Sí |  |
+| Media Source | Sí |  |
+| Channel | Sí |  |
+| Campaña | Sí |  |
+| Campaign ID | Sí |  |
+| Sub Param 1 a 5 | Sí | Se asigna a af\_sub1 hasta af\_sub5 en OneLink |
+| Región | Sí |  |
+| Código del país | Sí |  |
+| State | Sí |  |
+| CITY | Sí |  |
+| Código postal | Sí |  |
+| DMA | Sí |  |
+| IP | Sí |  |
+| ID de AF | Sí | El identificador único de dispositivo de AppsFlyer |
+| IDFV | Sí |  |
+| Tipo de dispositivo | Sí |  |
+| Categoría del dispositivo | Sí |  |
+| Platform | Sí |  |
+| Versión OS de la instalación | Sí |  |
+| Versión de la aplicación | Sí |  |
+| Versión del SDK | Sí |  |
+| Identificación de la aplicación | Sí |  |
+| App Name | Sí |  |
+| Es retargeting | Sí |  |
+| Tipo de coincidencia | Sí |  |
+| User Agent | Sí |  |
+| Hora de la Instalación | Sí |  |
+| Event Time | Sí |  |
+| Valor de enlace profundo | Sí |  |
+| deep\_link\_sub1 a sub10 | No | Existe en el esquema, no se escribe |
+| Identificador de anunciante (IDFA) | No | Existe en el esquema, no se escribe (identificador de dispositivo de iOS) |
+| ID de anunciante | No | Existe en el esquema, no se escribe (GAID de Android) |
 
-**In-app event Data Extension fields**
+**Campos de la Data Extension de eventos in-app**
 
-All install fields above, plus:
+Todos los campos de instalación anteriores, además de:
 
-| Field | Written | Notes |
+| Campo | Escrito | Notas |
 | --- | --- | --- |
-| Is Primary Attribution | No | Exists in the schema, not written |
-| Reengagement Window | No | Exists in the schema, not written |
-| Event Value | No | Exists in the schema, not written |
-| Event Revenue Currency | No | Exists in the schema, not written |
-| Event Revenue USD | No | Exists in the schema, not written |
+| Es atribución primaria | No | Existe en el esquema, no está escrito |
+| Ventana de re-engagement | No | Existe en el esquema, no está escrito |
+| Valor del evento | No | Existe en el esquema, no está escrito |
+| Divisa de ingresos del evento | No | Existe en el esquema, no está escrito |
+| Ingresos del evento en USD | No | Existe en el esquema, no está escrito |
 
 </Accordion>
 
-### Troubleshooting
+### Resolución de problemas
 
-* **No data in the Data Extension**: Check that the Activate partner toggle and the in-app event postbacks toggle are both on, and that the events you need are mapped. Also confirm the SFMC app has data write permissions in your SFMC account.
-* **Events appearing but no matching contacts**: Make sure you're passing af\_sub1=%%\_subscriberkey%% in your OneLinks, so postbacks can match to SFMC contacts.
-* **Data Extension not created**: Contact your CSM or AppsFlyer support to confirm the connector is correctly provisioned for your account.
+* **No hay datos en la Data Extension**: comprueba que tanto el selector Activar partner como el selector de postbacks de eventos in-app estén activados y que los eventos que necesitas estén mapeados. Confirma también que la aplicación de SFMC tiene permisos de escritura de datos en tu cuenta de SFMC.
+* **Aparecen eventos, pero no hay contactos coincidentes**: Asegúrate de pasar af\_sub1=%%\_subscriberkey%% en tus OneLinks para que los postbacks puedan coincidir con los contactos de SFMC.
+* **La Data Extension no se ha creado**: ponte en contacto con tu CSM o con el soporte de AppsFlyer para confirmar que el conector se ha aprovisionado correctamente para tu cuenta.
 
-<div data-zendesk-anchors="h_01M1EKQ4FWJDKEECDASNHC226Z=about-the-integration h_01M1EKQ4FWVTQ3R02AE6QREKKK=comparison-standard-vs-advanced h_01M1EKQ4FW9XVMFC7FXD8551C1=prerequisites h_01M1EKQ4FW115929RS4BR442QF=set-up-standard-sfmc-email-deep-linking h_01HE7RCE5NE25563AAGBH0EPZC=example h_01HE7RCE5N1WQA3XEN9W1QY29K=note h_01M1EKQ4FW5Q23VEPA4YJK9MQF=send-emails-with-standard-sfmc-email-deep-linking h_01M1EKQ4FW91474YRH5GZ0K805=set-up-the-advanced-sfmc-app-exchange-integration h_01HA51F56HX6VQDYNAQAADKBHJ=example-1 h_01M1EKQ4FW48QWSZ9W5J80AZVZ=dynamic-emails h_01M1EKQ4FW4N9ZGBDGYZ6VAKWN=advanced-sfmc-in-app-events-data-sync h_01M1EKQ4FWVP1A3J89BGQBV8A8=how-it-works h_01M1EKQ4FWZZS3D4T5QW7HNQ9W=postback-data-fields h_01M1EKQ4FW366GDCCXJS7TDEQS=troubleshooting" />
+<div data-zendesk-anchors="h_01M1EKQ4FWJDKEECDASNHC226Z=sobre-la-integraci%C3%B3n h_01M1EKQ4FWVTQ3R02AE6QREKKK=comparaci%C3%B3n-standard-vs-advanced h_01M1EKQ4FW9XVMFC7FXD8551C1=prerrequisitos h_01M1EKQ4FW115929RS4BR442QF=configura-deep-linking-est%C3%A1ndar-de-correo-electr%C3%B3nico-de-sfmc h_01HE7RCE5NE25563AAGBH0EPZC=ejemplo h_01HE7RCE5N1WQA3XEN9W1QY29K=nota h_01M1EKQ4FW5Q23VEPA4YJK9MQF=env%C3%ADa-correos-electr%C3%B3nicos-con-deep-linking-de-correo-electr%C3%B3nico-est%C3%A1ndar-de-sfmc h_01M1EKQ4FW91474YRH5GZ0K805=configura-la-integraci%C3%B3n-avanzada-de-intercambio-de-aplicaciones-de-sfmc h_01HA51F56HX6VQDYNAQAADKBHJ=ejemplo-1 h_01M1EKQ4FW48QWSZ9W5J80AZVZ=correos-electr%C3%B3nicos-din%C3%A1micos h_01M1EKQ4FW4N9ZGBDGYZ6VAKWN=sincronizaci%C3%B3n-avanzada-de-datos-de-eventos-in-app-de-sfmc h_01M1EKQ4FWVP1A3J89BGQBV8A8=c%C3%B3mo-funciona h_01M1EKQ4FWZZS3D4T5QW7HNQ9W=campos-de-datos-de-postback h_01M1EKQ4FW366GDCCXJS7TDEQS=resoluci%C3%B3n-de-problemas" />

@@ -1,5 +1,5 @@
 ---
-title: Smart Banners—mobile web-to-app (for marketers)
+title: 'Smart Banners: mobile web-to-app (para marketers)'
 metadata:
   keywords:
     - Landing Page
@@ -20,421 +20,419 @@ x-zendesk:
     - Marketers
     - Smart Banners and Scripts
   created_at: '2019-01-14T12:33:07Z'
-  edited_at: '2026-02-23T14:37:29Z'
+  edited_at: '2026-08-12T12:25:38Z'
   id: 360000764837
-  locale: en-us
+  locale: es
   section: Web-to-app attribution
   section_id: 6551240476177
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000764837-Smart-Banners-mobile-web-to-app-for-marketers
+  url: https://support.appsflyer.com/hc/es/articles/360000764837
 ---
-> **At a glance:** Convert your website visitors into mobile app users with Smart Banners.
+> **En resumen:** Convierte a los visitantes de tu sitio web en usuarios de la aplicación móvil con smart banners.
 
 [![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. <Anchor target="_blank" href="/marketers/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">Learn more.</Anchor>
+> El SDK web de AppsFlyer para Smart Banners v1 quedó en desuso el 8 de noviembre de 2023. Para mostrar Smart Banners en tu sitio web, necesitas actualizar a la v2. <Anchor target="_blank" href="/marketers/es/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">Saber más</Anchor>
 
-## Smart Banners
+## Banners inteligentes
 
 Smart Banners:
 
-* **Display on your brand's mobile website** to increase conversion rates for high-intent users.
-* Measure the quality of app installs coming from visitors to the mobile website.
-* Enables accurate web campaign-to-app mobile attribution for ALL media sources, including SRNs.
-* Smart Banners can attribute using <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#user-engagement-attribution-types">view-through attribution, click-through attribution</Anchor> and count impressions:
-  * **Clicks:** A user clicks the Smart Banners and proceeds to install.
-  * **Impressions:** When the banner loads (user sees the banner), it sends an impression count event to AppsFlyer.
+* **Se muestran en el sitio web móvil de tu marca** para aumentar las tasas de conversión para usuarios de alta intención.
+* Miden la calidad de las aplicaciones que vienen de los visitantes del sitio web móvil.
+* Permite una atribución móvil precisa de la campaña web a la aplicación para TODAS las fuentes de medios, incluidas las SRNs.
+* Los Smart Banners pueden atribuir mediante la <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#tipos-de-atribución-por-engagement-de-usuario">atribución por clics, la atribución por impresiones</Anchor> y el recuento de impresiones:
+  * **Clics:** Un usuario hace clic en los Smart Banners y procede a la instalación.
+  * **Impresiones:** Cuando se carga el banner (el usuario ve el banner), envía un evento de recuento de impresiones a AppsFlyer.
 
-The flow works as follows:
+El flujo es el siguiente:
 
-1. A user clicks on an ad and is directed to the advertiser’s mobile website.
-2. A Smart Banner [displays](/docs/smart-banners-mobile-web-to-app-for-marketers#banner-group-display-logic) on the advertiser’s mobile website.
-3. The user clicks on the Smart Banner and:
-   * **If the app is not installed**, the user is directed to the app store to install the app.
-   * **If the app is installed**, and Universal Links, App Links, and/or URI links are configured, the app is directly launched.
-4. The user reaches in-app content, in the context of the promotion.
-5. The user is attributed to the media source that showed the original ad.
+1. Un usuario hace clic en un anuncio y se lo dirige al sitio web móvil del anunciante.
+2. [Aparece](/docs/smart-banners-mobile-web-to-app-for-marketers#banner-group-display-logic) un Smart Banner en el sitio web móvil del anunciante.
+3. El usuario hace clic en el Smart Banner y:
+   * **Si la aplicación no está instalada**, se dirige al usuario a la tienda de aplicaciones para que instale la aplicación.
+   * **Si la aplicación está instalada** y se han configurado Universal Links, App Links, y/o enlaces URI, la aplicación se inicia directamente.
+4. El usuario llega al contenido in-app, en el contexto de la promoción.
+5. El usuario se atribuye a la fuente de medios que mostró el anuncio original.
 
-**Who's involved**
+**¿Quién está involucrado?**
 
-* The website developer only needs to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#installation">enter a code snippet into the HTML of the website</Anchor>.
-* For all other actions, only the marketer is required.
-
----
-
-**Prerequisites**
-
-* An AppsFlyer account with at least one app
-* <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink template</Anchor> containing the app/s to be advertised using Smart Banners This is required by Smart Banners to direct your mobile web visitors to the correct app store pages according to the devices they use.
+* El desarrollador del sitio web solo tiene que <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#installation">introducir un fragmento de código en el HTML del sitio web</Anchor>.
+* Para el resto de acciones, solo se requiere al marketer.
 
 ---
 
-**Time required**
+**Requisitos previos**
 
-Approximately 20 minutes.
-
----
-
-**Outcome**
-
-* Website visitors clicking the CTA button are sent to the correct app store or web page based on their device.
-* Mobile app users clicking the CTA button can be deep-linked into the app.
-* Users are attributed from the click/install to the original media sources or to your owned media sources.
-* Banner performance can be viewed in the performance page and cards.
+* Una cuenta de AppsFlyer con al menos una aplicación
+* No se admite la capacidad de medir el número de usuarios que hicieron clic en el banner pero lo cerraron.
 
 ---
 
+**Tiempo requerido**
+
+Aproximadamente 20 minutos.
+
 ---
 
-> 📄 **Example**
->
-> Mark is a marketer working for the successful food delivery service "Feed Me".
->
-> Mark wants to convert Feed Me's mobile website visitors into app users.
->
-> To do this Mark utilizes Smart Banners using his own visuals and texts.
->
-> Smart Banners are powered by OneLink. When mobile website visitors click the CTA button, it **automatically directs them to the appropriate app store or landing page**, where it's easy for them to install the app. When existing mobile users click the CTA button, it launches the app.
->
-> AppsFlyer then **attributes the click/install to Mark's defined media source and campaign**.
+**Resultado**
 
-> 🚧 **Important!**
+* Los visitantes del sitio web que hagan clic en el CTA se envían a la tienda de aplicaciones o página web correcta según su dispositivo.
+* Los usuarios de aplicaciones móviles que hacen clic en el CTA pueden obtener un deep link a la aplicación.
+* Los usuarios se atribuyen desde el clic/instalación a las fuentes de medios originales o a tus propias fuentes de medios.
+* El rendimiento del banner se puede ver en la página de rendimiento y en las tarjetas.
+
+---
+
+---
+
+> 📄 **Ejemplo**
 >
-> Use either AppsFlyer Smart Banner or iOS Safari smart app banner, but not both. Using both may cause display issues on your mobile website, and result in attribution discrepancies.
+> Mark trabaja como marketer para el exitoso servicio de entrega de comida llamado "Feed Me".
+>
+> Mark quiere convertir a los visitantes del sitio web móvil de Feed Me en usuarios de la aplicación.
+>
+> Para ello, Mark utiliza Smart Banners usando sus propios elementos visuales y textos.
+>
+> Los Smart Banners funcionan con tecnología OneLink. Cuando los visitantes del sitio web móvil hacen clic en el CTA, **automáticamente los dirige a la tienda de aplicaciones o landing page correspondiente**, donde es fácil para ellos instalar la aplicación. Cuando los usuarios móviles existentes hacen clic en el CTA, se inicia la aplicación.
+>
+> AppsFlyer **atribuye el clic/instalación a la fuente de medios y la campaña definidas por Mark**.
 
-## Setup
+> 🚧 **Importante:**
+>
+> Utiliza Smart Banners de AppsFlyer o el Smart Banner de la aplicación de Safari de iOS, pero no ambos. El uso de ambos puede causar problemas de visualización en tu sitio web móvil y dar lugar a discrepancias de atribución.
 
-Complete the following procedures to set up a Smart Banner that:
+## Configuración
 
-* Directs users from your mobile site, via a Smart Banner, to the correct app store or app page based on their device.
-* Attributes the click/install to your owned media source using OneLink.
+Completa los siguientes procedimientos para configurar un Smart Banner que:
+
+* Dirija a los usuarios desde tu sitio móvil, a través de un Smart Banner, a la tienda de aplicaciones o a la página de aplicaciones en función de su dispositivo.
+* Atribuye el clic o la instalación a tu propia fuente de medios mediante OneLink.
 
 <div id="1-website-workplace-setup" />
 
-<Accordion title="1. Website workplace setup">
+<Accordion title="1. Configuración del workplace del sitio web">
 
-#### Prepare your mobile site to display Smart Banners for the first time
+#### Para preparar tu sitio móvil para mostrar Smart Banners por primera vez
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Web-to-app** > **Smart Banners** > **Go to Smart Banners**.
-2. Click **Get started**. The setup wizard will guide you through the required steps (following). To set up further Website workplaces see below.
-3. Enter a website workplace name.
-4. Click **Create**. The website workplace opens.
-5. Copy the banner **Code snippet**.
-6. Implement the code snippet on your website. This task is done only once per website.
-   * To add the code to your website via Google Tag Manager, Adobe Tag Manager, Shopify, Wix, Squarespace, or WordPress, see <Anchor target="_blank" href="/marketers/docs/smart-banners-website-code-implementation-for-marketers">Smart Banners website code implementation for marketers</Anchor>.
-   * To add the code via other platforms, or to make changes to the code based on need (including adding parameters, deep linking, hiding the banner, or integrating PBA with Smart Banners), see <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Smart Banners website code implementation for developers</Anchor>.
-7. [optional] Copy **Web key**. (This key already exists as part of the code snippet.)
-8. Click **Continue**.
+1. En AppsFlyer, en el menú lateral, selecciona **Engage** > **Web-to-app** > **Smart Banners** > **Ir a Smart Banners**.
+2. Haz clic en **Comenzar**. El asistente de configuración te guiará a través de los pasos requeridos (a continuación). Para configurar más workplaces en el sitio web, consulta más abajo.
+3. Introduce un nombre para el workplace del sitio web.
+4. Haz clic en **Crear**. Se abre el workplace del sitio web.
+5. Copia el **fragmento de código** del banner.
+6. Implementa el fragmento de código en tu sitio web. Esta tarea se realiza una sola vez por sitio web.
+   * Para agregar el código a tu sitio web a través de Google Tag Manager, Adobe Tag Manager, Shopify, Wix, Squarespace o WordPress, consulta <Anchor target="_blank" href="/marketers/es/docs/smart-banners-website-code-implementation-for-marketers">Implementación de código de sitio web de Smart Banners para marketers</Anchor>.
+   * Para agregar el código a través de otras plataformas o para realizar cambios en el código según las necesidades (incluyendo agregar parámetros, deep linking, ocultar el banner o integrar la PBA con Smart Banners), consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Implementación de código de sitio web de Smart Banners para desarrolladores.</Anchor>
+7. [opcional] Copia la **clave web**. (Esta clave ya existe como parte del fragmento de código).
+8. Haz clic en **Continuar**.
 
-#### To create Website Workplaces after the first time
+#### Para crear workplaces del sitio web después de la primera vez
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Web-to-app** > **Smart Banners** > **Studio**.
-2. Click on the options menu
-3. select **New website workplace**
-4. Enter a website workplace name.
-5. Click **Create**. The website workplace opens.
-6. Copy the banner **Code snippet**.
-7. Implement the code snippet on your website. This task is done only once per website.
-   * To add the code to your website via Google Tag Manager, Adobe Tag Manager, Shopify, Wix, Squarespace, or WordPress, see <Anchor target="_blank" href="/marketers/docs/smart-banners-website-code-implementation-for-marketers">Smart Banners website code implementation for marketers</Anchor>.
-   * To add the code via other platforms, or to make changes to the code based on need (including adding parameters, deep linking, hiding the banner, or integrating PBA with Smart Banners), see <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Smart Banners website code implementation for developers</Anchor>.
-8. [optional] Copy **Web key**. (This key already exists as part of the code snippet.)
-9. Click **Continue**.
+1. En AppsFlyer, desde el menú lateral, ve a **Engage** > **Web-to-app** > **Smart Banners** > **Studio**.
+2. Haz clic en el menú de opciones
+3. selecciona **Nuevo workplace del sitio web**
+4. Introduce un nombre para el workplace del sitio web.
+5. Haz clic en **Crear**. Se abre el workplace del sitio web.
+6. Copia el **fragmento de código** del banner.
+7. Implementa el fragmento de código en tu sitio web. Esta tarea se realiza una sola vez por sitio web.
+   * Para agregar el código a tu sitio web a través de Google Tag Manager, Adobe Tag Manager, Shopify, Wix, Squarespace o WordPress, consulta <Anchor target="_blank" href="/marketers/es/docs/smart-banners-website-code-implementation-for-marketers">Implementación de código de sitio web de Smart Banners para marketers</Anchor>.
+   * Para agregar el código a través de otras plataformas o para realizar cambios en el código según las necesidades (incluyendo agregar parámetros, deep linking, ocultar el banner o integrar la PBA con Smart Banners), consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Implementación de código de sitio web de Smart Banners para desarrolladores.</Anchor>
+8. [opcional] Copia la **clave web**. (Esta clave ya existe como parte del fragmento de código).
+9. Haz clic en **Continuar**.
 
 </Accordion>
 
 <div id="2-banner-group-setup" />
 
-<Accordion title="2. Banner group setup">
+<Accordion title="2. Configuración del grupo de banners">
 
-Banner groups contain one or more banners. Here you can:
+Los grupos de banners contienen uno o más banners. Desde aquí, podrás:
 
-* Select the OneLink template used by the banner group, which contains the mobile apps to redirect your website visitors to.
-* Set a specific deep-linking scheme
-* Define your targeting rules, scheduling, behavior, and attribution details used by all banners of the banner group.
-* Set which pages activate the banner group's banners when visited.
+* Seleccionar la plantilla de OneLink utilizada por el grupo de banners, que contiene las aplicaciones móviles a las que redirigir a los visitantes de tu sitio web.
+* Configurar un esquema específico de deep linking
+* Definir tus reglas de targeting, programación, comportamiento y detalles de atribución utilizados por todos los banners del grupo de banners.
+* Configurar qué páginas activan los banners del grupo de banners cuando se visitan.
 
-**To set up or duplicate a banner group:**
+**Para configurar o duplicar un grupo de banners:**
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Web-to-app** > **Smart Banners.**
-2. **To set up a banner group for the first time**
-   1. On the left-hand side, click **Add banner group**.
-   2. Follow steps 5 and onwards.
-3. **To set up additional banner groups**
-   1. Go to the **Studio** tab.
-   2. Click on **+ New.**
-   3. Follow steps 5 and onwards.
-4. **To duplicate a banner group**
-   1. Click on the **Duplicate** icon found next to the delete icon.
-5. Enter a unique **Banner group name**. The name should reflect a general common theme between the Banners to be defined for the banner group (e.g., the advertised app).
-6. Select the OneLink template for the banner group.
-7. [optional] Set **URI scheme** for the banner group as a fallback for Universal Links and Android App Links users. This is rarely needed as, by default, the value is taken from the OneLink template. Set this for the banner group only if you need a different value than the one in the template.
-8. <span id="attributed-sources"></span>Set the primary and fallback **Attributed sources** to be attributed with new installs coming from this banner group.   
+1. En AppsFlyer, desde el menú lateral, ve a **Engage** > **Web-to-app** > **Smart Banners**.
+2. **Para configurar un grupo de banners por primera vez**
+   1. En el lado izquierdo, haz clic en **Agregar grupo de banners**.
+   2. Sigue los pasos 5 y siguientes.
+3. **Para configurar grupos de banners adicionales**
+   1. Ve a la pestaña **Studio**.
+   2. Haz clic en **+ Nuevo**.
+   3. Sigue los pasos 5 y siguientes.
+4. **Para duplicar un grupo de banners**
+   1. Haz clic en el icono **Duplicar** que se encuentra junto al icono de eliminar.
+5. Introduce un nombre único para el **nombre del grupo de Banners**. El nombre debe reflejar un tema general común entre los banners que se definan para el grupo de banners (por ejemplo, la aplicación anunciada).
+6. Selecciona la plantilla de OneLink para el grupo de banners.
+7. [opcional] Configura el **esquema URI** para el grupo de banners como alternativa para los usuarios de Universal Links y Android App Links. Esto rara vez es necesario, ya que de forma predeterminada, el valor se toma de la plantilla de OneLink. Configura esto para el grupo de banners solo si necesitas un valor diferente al de la plantilla.
+8. <span id="attributed-sources"></span>Establece las **fuentes atribuidas** principales y alternativas para que se atribuyan con las nuevas instalaciones provenientes de este grupo de banners.   
+    **Nota sobre el reenvío de ID de clic:** FBCLID, GCLID, WBRAID y GBRAID se reenvían automáticamente a la URL saliente si están disponibles en la URL entrante. Para los ID de clic de Google, si también se encuentra el parámetro “palabra clave”, coloca el valor de la palabra clave en la URL saliente como el valor de af\_keywords.
 
-   **Note on click ID forwarding:** FBCLID, GCLID, WBRAID, GBRAID, ttclid, twclid, and ScCid are automatically forwarded to the outgoing URL if available on the incoming URL. For the Google click IDs, if the “keyword” parameter is also found, it puts the keyword value in the outgoing URL as the value of af\_keywords.
-
-   Use the following table to pick the best option for the custom link:
+   Usa la siguiente tabla para elegir la mejor opción para el enlace personalizado:
 
 <div id="param-table" />
 
-| Option | When to select | Comments |
+| Opción | Cuándo seleccionar | Comentarios |
 | --- | --- | --- |
-| **Use UTM parameters** | Select when most non-organic visitors get to the mobile website from sources with UTM parameters. | ◦ Media source name (pid) = UTM\_Source  <br />◦ Campaign (c) = UTM\_campaign  <br />◦ If the UTM\_source or UTM\_campaign are missing, the static names are used as a fallback. |
-| **Use incoming attribution link parameters** | Select when most non-organic visitors get to the mobile website from click ad networks that use AppsFlyer attribution links. | ◦ All available parameters from the incoming AppsFlyer attribution link are added to the Smart Banner link.<br /><br />◦ If a parameter exists in both the incoming AppsFlyer attribution link and the Smart Banner, the incoming parameter takes precedence in the final custom link. |
-| **Add another attribution parameter** | If you want, add additional website-related attribution data. This enables granular analysis of every install. | For example, for eCommerce sites create identical custom links for every product category type, that differ by af\_adset values (for example: "af\_adset=fruit") |
-| **Use default attribution parameters** | ◦ Select when:   ▪ Most mobile website visitors are organic.   ▪ Non-organic visitors don't get to the website from click ad networks or from sources with UTM parameters. ◦ You can customize the parameter values. | **Important:** Best practice is to select UTM or incoming attribution link parameters, since the default Smart Banner attribution parameters are anyway used on the custom link as a fallback if the media source, campaign, or channel names are not available. |
+| **Usar parámetros UTM** | Selecciona cuando la mayoría de los visitantes no orgánicos llegan al sitio web móvil desde fuentes con parámetros UTM. | ◦ Nombre de la fuente de medios (pid) = UTM\_Source   <br />◦ Campaign (c) = UTM\_campaign  <br />◦ Si UTM\_source o UTM\_campaign no están, los nombres estáticos se usan como alternativa. |
+| **Usar parámetros del enlace entrante de atribución** | Selecciona cuando la mayoría de los visitantes no orgánicos llegan al sitio web móvil desde las redes de publicidad por clics que utilizan los enlaces de atribución de AppsFlyer. | ◦ Todos los parámetros disponibles del enlace de atribución entrante de AppsFlyer se agregan al enlace del Smart Banner.<br /><br />◦ Si existe un parámetro tanto en el enlace entrante de atribución de AppsFlyer como en el Smart Banner, el parámetro entrante tiene prioridad en el enlace personalizado final. |
+| **Agregar otro parámetro de atribución** | Si lo deseas, agrega datos de atribución adicionales relacionados con el sitio web. Esto permite un análisis granular de cada instalación. | Por ejemplo, para los sitios de eCommerce, crea enlaces personalizados idénticos para cada tipo de categoría de producto, que se diferencien por los valores de af\_adset (por ejemplo: "af\_adset=fruit"). |
+| **Usar parámetros de atribución predeterminados** | ◦ Selecciona cuando:  ▪ La mayoría de los visitantes del sitio web móvil son orgánicos.   ▪ Los visitantes no orgánicos no acceden al sitio web desde ad networks de clics o desde fuentes con parámetros UTM. ◦ Puedes personalizar los valores de los parámetros. | **Importante:** La mejor práctica es seleccionar UTM o parámetros de enlace de atribución entrante, ya que los parámetros de atribución de Smart Banners predeterminados se utilizan de todos modos en el enlace personalizado como alternativa si los nombres de la fuente de medios, la campaña o el canal no están disponibles. |
 
-9. [Recommended] Set the default attribution parameter **Channel name** to attribute all installs coming from the Smart Banner to the specified channel. This enables you to aggregate information from multiple media sources under the same channel in the **Cohort report**, **Overview dashboard**, **Retention report**, and more.
-10. <span id="2-banner-group-setup-step10"></span>[Optional] Turn on **Retargeting** if you plan to use the banner group to record re-engagements performed by users clicking on the banner. To learn more on Retargeting see the <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Retargeting attribution guide</Anchor>.
+9. [Recomendado] Configura el parámetro de atribución por defecto **Nombre del canal** para atribuir todas las instalaciones procedentes del Smart Banner al canal especificado. Esto te permite agregar información de varias fuentes de medios bajo el mismo canal en el **reporte de cohortes**, el **dashboard general**, el **reporte de retención** y más.
+10. <span id="2-banner-group-setup-step10"></span>[Opcional] Activa el **Retargeting** si planeas usar el grupo de banners para registrar los re-engagements realizados por los usuarios que hacen clic en el banner. Para obtener más información sobre el Retargeting, consulta la <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">guía de atribución de retargeting</Anchor>.
 
-    > 🚧 **Important**
+    > 🚧 **Importante**
     >
-    > For retargeting to work, you also need to:
+    > Para que el retargeting funcione, también necesitas:
     >
-    > * <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#enable-retargeting-for-the-app">Enable retargeting for the app</Anchor>
+    > * <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#habilitar-el-retargeting-para-la-aplicación">Habilitar el retargeting para la aplicación</Anchor>
 
 
-    Existing users who click on OneLink-powered non-retargeting banner links (UA) also launch the app and have the same user experience. However, their re-engagements are recorded as regular sessions, which means it's impossible to measure the success of the owned media campaign.
-11. [Optional] Turn on **Ignore active users for retargeting** and select the inactivity window. This adds the parameter af\_inactivity\_window=[number of days] to your smart banner group links, and all users active during the period are ignored for retargeting.
-12. Set the re-engagement window to determine the time period following the re-engagement, where the user's in-app events are attributed to the retargeting media source.
-    * You can set the value in days (1-90), hours (up to 23), or even lifetime.
-    * The re-engagement window is added to the link in the af\_reengagement\_window parameter.
-13. <span id="dismissal-behaviour"></span>[Optional] Set the **Dismissal behavior**, that is, the minimum time allowed between a user dismissal of one banner in the group, until the same banner may be displayed again to the user. Select from one of the following:
-    * By time: 1 hour, 1 day, or 1 week.
-    * Next session: meaning the session that takes place in a different tab or window, after the user closes the banner.
-    * Never: the banner is not shown again. **Note**:
-      * If the user clears the browser cache or views the site in private browsing mode the Dismissal Behaviour setting is lost.
-      * The dismissal behavior is applied to the banner the user dismisses; other banners in the banner group can still be displayed.
-14. [Optional] Set **Frequency capping**.  Frequency capping determines the number of times each banner in a banner group is shown to a unique user. You can choose either **No limit** (where banners always display) or **Limit banner displays**.
+    Los usuarios existentes que hacen clic en los enlaces de banner sin retargeting (UA) impulsados por OneLink también inician la aplicación y tienen la misma experiencia de usuario. Sin embargo, sus re-engagements se registran como sesiones habituales, lo que significa que es imposible medir el éxito de la campaña de medios.
+11. [Opcional] Activa **Ignorar a los usuarios activos para el retargeting** y selecciona la ventana de inactividad. Esto agrega el parámetro af\_inactivity\_window=[número de días] a tus enlaces de grupos de Smart Banners, y todos los usuarios activos durante el periodo se ignoran para el retargeting.
+12. Establece la ventana de re-engagement para determinar el período de tiempo posterior al re-engagement, donde los eventos in-app del usuario se atribuyen a la fuente de medios de retargeting.
+    * Puede establecer el valor en días (1-90), horas (hasta 23) o incluso durante toda la vida.
+    * La ventana de reengagement se agrega al enlace en el parámetro af\_reengagement\_window.
+13. <span id="dismissal-behaviour"></span>[Opcional] Configura el **Comportamiento de rechazo**, es decir, el tiempo mínimo permitido entre el rechazo de un banner del grupo por parte del usuario, hasta que el mismo banner se muestre otra vez al usuario. Selecciona una de las siguientes opciones:
+    * A tiempo: 1 hora, 1 día o 1 semana.
+    * Próxima sesión: es decir, la sesión que tiene lugar en una pestaña o ventana diferente, después de que el usuario cierre el banner.
+    * Nunca: el banner no se muestra de nuevo. **Nota**:
+      * Si el usuario borra la caché del navegador o ve el sitio en modo de navegación privada, se perderá la configuración Comportamiento de rechazo.
+      * El comportamiento de rechazo se aplica al banner que el usuario desestima; aún se pueden mostrar otros banners del grupo de banners.
+14. [Opcional] Configura la **limitación de frecuencia**.  La limitación de frecuencia determina cuántas veces se muestra cada banner en el grupo de banners a un usuario único. Puedes elegir entre **Sin límite** (donde siempre se muestran los banners) o **Limitar la visualización de banners**.
 
-    For instance, if a banner group consists of three banners and the frequency capping is set to one, each banner in the group will appear once per user. In this scenario, after three visits, the user will have seen all three banners within the group. However, starting from the fourth visit onwards, the user will no longer encounter any banners from the group. When the frequency capping is set to two, each banner in the group will be displayed twice per user, requiring a total of six visits to reach the group's capping limit.
-15. [Optional] Set which **Operating system** to show the banners on:
-    * All mobile operating systems.
-    * Just Android or just iOS.
-16. [Optional] **Schedule** the banner group's activation: start immediately (default) or set a time-limited campaign.
-17. [Optional] Set **Locations** where the banner group is activated for.
-    1. Select **Worldwide** to display this banner group to all users. If needed, exclude visitors coming from different regions, countries, or states.
-    2. Select **Pick specific location** option to display this banner group to users from one or more specific locations.
-18. [Optional] Set **Show on pages**, meaning, on which pages the banner group can be displayed to visitors:
-    * [Default] **Show on all pages** of the website. **Note**: We recommend defining at least one banner group for all pages as a fallback.
-    * **Show on specific pages**: Specify what the page or URL should or should not contain in order to display banners.
-      * You can choose either:
-        * **Specific page**: Specify the host and/or path of the page on which to display the banner. Any queries entered will be disregarded. Example: http://www.example.com/path?query
-        * **URL path and query**: Enter the path and/or query that determines whether or not the banner displays. Example: path?query. **Note**: Don’t enter an entire URL, such as http://www.example.com/path?query. Only enter the path and/or query.
+    Por ejemplo, si un grupo de banners consta de tres banners y el límite de frecuencia se establece en uno, cada banner del grupo aparecerá una vez por usuario. En este escenario, después de tres visitas, el usuario habrá visto los tres banners dentro del grupo. No obstante, a partir de la cuarta visita, el usuario ya no encontrará ningún banner del grupo. Cuando el límite de frecuencia se establece en dos, cada banner del grupo se mostrará dos veces por usuario, requiriendo un total de seis visitas para alcanzar el límite máximo del grupo.
+15. [Opcional] Establece en qué **sistema operativo** mostrar los banners:
+    * Todos los sistemas operativos móviles.
+    * Solo Android o solo iOS.
+16. [Opcional] **Programa** la activación del grupo de banners: empezar inmediatamente (por defecto) o configurar una campaña de tiempo limitado.
+17. [Opcional] Configura las **Ubicaciones** para las que se activa el grupo de banners.
+    1. Selecciona **En todo el mundo** para mostrar este grupo de banners a todos los usuarios. Si es necesario, excluye a los visitantes procedentes de diferentes regiones, países o estados.
+    2. Selecciona la opción **Elegir una ubicación específica** para mostrar este grupo de banners a los usuarios de una o más ubicaciones específicas.
+18. [Opcional] Configura **Mostrar en páginas**, es decir, en qué páginas se puede mostrar el grupo de banners a los visitantes:
+    * [Predeterminado] **Mostrar en todas las páginas** del sitio web. **Nota**: Recomendamos definir al menos un grupo de banners para todas las páginas como alternativa.
+    * **Mostrar en páginas específicas**: Especifica qué debe o no contener la página o URL para mostrar banners.
+      * Puedes elegir:
+        * **Página específica**: Especifica el host y/o la ruta de la página en la que mostrar el banner. Las consultas ingresadas no se tendrán en cuenta. Ejemplo: http://www.example.com/path?query
+        * **Ruta URL y consulta**: Ingresa la ruta y/o consulta que determina si se muestra o no el banner. Ejemplo: path?query. **Nota**: No introduzcas una URL completa, como http://www.example.com/path?query. Introduce solo la ruta y/o la consulta.
 
-* Up to 15 conditions can be added using and/or.
-* If there is a conflict between conditions, the banner will not display.
+* Se pueden agregar hasta 15 condiciones usando y/o.
+* Si hay un conflicto entre las condiciones, el banner no se mostrará.
 
-1. Click **Create Banner group**.
-2. [Optional] To edit the banner group again, hover over **Targeting & behavior** and click **Edit**.
+1. Haz clic en **Crear grupo de banners**.
+2. [Opcional] Para volver a editar el grupo de banners, pasa el cursor por encima de **Targeting y comportamiento** y haz clic en **Editar**.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Mark is the marketer for a food delivery service called "Feed Me". He decides to create a campaign for the app’s plum sale. Mark decides to use an SMS blast, as well as ad networks and Google for the campaign.
+> Mark es el marketer de un servicio de entrega de comida llamado "Feed Me". Decide crear una campaña para la venta de ciruelas de la aplicación. Mark decide usar un envío masivo de SMS, así como redes de publicidad y Google para la campaña.
 >
-> In preparation for the campaign, Mark:
+> En preparación para la campaña, Mark:
 >
-> * Selects to use both incoming link attribution parameters and UTM parameters (with default parameters as the fallback for clicks that come from neither an incoming link or a UTM campaign).
-> * Gives the ad network a unique attribution link to use in the campaign to drive users to the plum sale page on the Feed Me mobile site. The link includes the Redirection URL (af\_r) parameter, with the URL to the plum sale page: `http://feedme.com/plums_link`.
-> * Prepares a Google Ads campaign for users visiting pages in the mobile web containing "plums\_utm".
-> * For SMS, adds unique attribution params to use in the campaign link to drive users to the plum sale page on the Feed Me mobile site. The link includes the pid parameter, with the URL to the plum sale page: `http://feedme.com/plums_link?pid=sms&c=plums`.
+> * Selecciona usar los parámetros de atribución de enlaces entrantes y los parámetros UTM (con parámetros predeterminados como alternativa para los clics que no provienen ni de un enlace entrante ni de una campaña UTM).
+> * Proporciona a la red de publicidad un enlace de atribución único para usarlo en la campaña para dirigir a los usuarios a la página de venta de ciruelas en el sitio móvil Feed Me. El enlace incluye el parámetro URL de redirección (af\_r), con la URL a la página de venta de ciruelas:`http://feedme.com/plums_link`.
+> * Prepara una campaña de Google Ads para los usuarios que visitan páginas en la web móvil que contienen "plums\_utm".
+> * Para los SMS, agrega parámetros de atribución únicos para usarlos en el enlace de la campaña para dirigir a los usuarios a la página de venta de ciruelas en el sitio móvil de Feed Me. El enlace incluye el parámetro pid, con la URL a la página de venta de ciruelas:`http://feedme.com/plums_link?pid=sms&c=plums`.
 >
-> The campaigns start running.
+> Las campañas empiezan a funcionar.
 >
-> The users:
+> Los usuarios:
 >
-> * See the ad for the plum sale and click through to the Feed Me mobile site.
-> * Google Ads clicks and all other clicks arrive to the incoming link landing page and the matching Smart Banner is activated per page.
-> * See the Smart Banner on the mobile site and click it.
-> * Arrive at the Feed Me app, download, and install.
-> * Get directed upon app launch to the plum sale.
-> * Are attributed to the correct media sources that led them to the Feed Me mobile site.
+> * Ven el anuncio de la venta de ciruelas y hacen clic para acceder al sitio móvil de Feed Me.
+> * Los clics de Google Ads y los demás clics llegan a la página de aterrizaje del enlace entrante, y el Smart Banner correspondiente se activa por página.
+> * Ven el Smart Banner en el sitio móvil y hacen clic en él.
+> * Llegan a la aplicación Feed Me, la descargan y la instalan.
+> * Al iniciar la aplicación, son dirigidos a la venta de ciruelas.
+> * Se atribuyen a las fuentes de medios correctas que los llevaron al sitio móvil de Feed Me.
 
-#### Targeting & behavior
+#### Targeting y comportamiento
 
-The Targeting & behavior panel shows you the settings you configured for that banner group. To edit these settings click on the edit icon.
+El panel Targeting y comportamiento te muestra la configuración que estableciste para ese grupo de banners. Para editar dicha configuración, haz clic en el icono de edición.
 
 </Accordion>
 
 <div id="3-banner-setup" />
 
-<Accordion title="3. Banner setup">
+<Accordion title="3. Configuración de banner">
 
-**To create a banner in a banner group:**
+**Para crear un banner en un grupo de banners:**
 
-1. Click **New banner** to enter the **Edit banners** page.
-2. Set the **Name** of the banner.
-3. Create a **Design creative**:
-   1. Click **Design creative** to set the creative of the banner.
+1. Haz clic en **Banner nuevo** para acceder a la página **Editar banners**.
+2. Configura el **Nombre** del banner.
+3. Crea una **creatividad de diseño**:
+   1. Haz clic en **Diseñar creatividad** para configurar la creatividad del banner.
 
-      A window to choose a banner template opens.
+      Se abre una ventana para elegir una plantilla de banner.
 
       [![](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)
-   2. Hover over a **Creative template**, and click **Create** to enter the **Build creative** setup page.
-   3. Customize all the elements in the Smart Banner creative. To do so, select elements by name or click on them on the preview image. **Note:** Not all elements are available on every template.
-      * Title
-      * Description
-      * Rating stars
-      * Close button
+   2. Pasa el cursor por encima de una **plantilla creativa** y haz clic en **Crear** para acceder a la página de configuración de **Crear creatividad**.
+   3. Personaliza todos los elementos en la creatividad del Smart Banner. Para hacerlo, selecciona los elementos por nombre o haz clic en ellos en la imagen de vista previa. **Nota:** No todos los elementos están disponibles en todas las plantillas.
+      * Título
+      * Descripción
+      * Estrellas de calificación
+      * Botón Cerrar
       * Call to action
-      * App logo
-      * Background
-      * Banner position
-      * Banner padding (to adjust banner size)
-      * Device transparency
-      * For images, use one of the following file types: jpeg, jpg, png. **Note**: webp format is not supported.  The recommendations for the images are:
+      * Logo de la aplicación
+      * Antecedentes
+      * Posición del banner
+      * Relleno del banner (para ajustar el tamaño del banner)
+      * Transparencia del dispositivo
+      * Para imágenes, utiliza uno de los siguientes tipos de archivos: jpeg, jpg, png. **Nota**: El formato webp no es compatible.  Las recomendaciones para las imágenes son:
 
-| Template type | Maximum image file size | Image ratio | Image height | Image width |
+| Tipo de plantilla | Tamaño máximo del archivo de imagen | Proporción de imagen | Altura de la imagen | Ancho de la imagen |
 | --- | --- | --- | --- | --- |
-| Minimal | 300 KB | 3:1 (width x height) | 70 px | Adjusted to fit device |
-| Standard | 300 KB | 3:1 (width x height) | 70 px | Adjusted to fit device |
-| Enhanced | 300 KB | 9:4 (width x height) | 110 px | Adjusted to fit device |
-| Multi-choice | 300 KB | 9:4 (width x height) | 110 px | Adjusted to fit device |
-| Promotional | 300 KB | 4:5 (width x height) | 300 px | Adjusted to fit device |
-| Multi-choice overlay | 300 KB | 9:4 (width x height) | 110 px | Adjusted to fit device |
-| Interstitial | 700 KB | 9:16 (width x height) | Adjusted to fit device | Adjusted to fit device |
+| Mínimo | 300 KB | 3:1 (ancho x alto) | 70 px | Ajustado para adaptarse al dispositivo |
+| Estándar | 300 KB | 3:1 (ancho x alto) | 70 px | Ajustado para adaptarse al dispositivo |
+| Mejorado | 300 KB | 9:4 (ancho x altura) | 110 px | Ajustado para adaptarse al dispositivo |
+| Opción múltiple | 300 KB | 9:4 (ancho x altura) | 110 px | Ajustado para adaptarse al dispositivo |
+| Promocional | 300 KB | 4:5 (ancho x altura) | 300 px | Ajustado para adaptarse al dispositivo |
+| Superposición de opciones múltiples | 300 KB | 9:4 (ancho x altura) | 110 px | Ajustado para adaptarse al dispositivo |
+| Intersticial | 700 KB | 9:16 (ancho x altura) | Ajustado para adaptarse al dispositivo | Ajustado para adaptarse al dispositivo |
 
-   4. Click **Review** to review the banner creative and test its appearance on different devices. **Note**: Banners may appear slightly different in active campaigns compared to preview images.
-   5. If changes are needed, click **Back to editor**.
-   6. Click **Done** to go back to the banner setup page.
-4. [Optional] Add custom attribution parameters. For example, `ad_adset` and `af_ad`. **Note**: The parameters `pid`, `c`, and `channel` cannot be added at the banner level, as they belong to the banner group level.
-5. After finishing and saving the new creative, the banner's status becomes active. Use the **Status** toggle to switch between **Active** and **Paused** statuses.
-6. Click **Save all** to save your work or **Save all and close** to save your work and close the banner setup page.
+   4. Haz clic en **Revisar** para revisar la creatividad del banner y probar su apariencia en diferentes dispositivos. **Nota**: Los banners pueden parecer ligeramente diferentes en las campañas activas en comparación con las imágenes de vista previa.
+   5. Si se necesitan cambios, haz clic en **Volver al editor**.
+   6. Haz clic en **Listo** para volver a la página de configuración del banner.
+4. [Opcional] Agrega parámetros de atribución personalizados. Por ejemplo, `ad_adset` y `af_ad`. **Nota**: Los parametros `pid`, `c`, y `channel` no se pueden agregar a nivel de banner, ya que pertenecen al nivel de grupo de banner.
+5. Tras finalizar y guardar la creatividad nueva, el estado del banner pasa a activo. Usa el conmutador de **Estado** para cambiar entre los estados **Activo** y **Pausado**.
+6. Haz clic en **Guardar todo** para guardar tu trabajo o en **Guardar todo y cerrar** para guardar tu trabajo y cerrar la página de configuración del banner.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> For tips and tricks, see our <Anchor target="_blank" href="https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing">Smart Banners cheat sheet</Anchor>.
+> Para obtener consejos y trucos, consulta nuestra <Anchor target="_blank" href="https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing">hoja de referencia sobre Smart Banners</Anchor>.
 
 </Accordion>
 
 <div id="4-testing" />
 
-<Accordion title="4. Testing">
+<Accordion title="4. Pruebas">
 
-Once the creative is ready, it's time to put it to the test **before** setting it live and activating it for your users.
+Una vez que la creatividad está lista, es el momento de probarla **antes** de ponerla en marcha y activarla para tus usuarios.
 
-**To test a Smart Banner creative:**
+**Para probar una creatividad de Smart Banner:**
 
-**Prerequisite:** Make sure that the Smart Banner code snippet is integrated into your website.
+**Requisito previo**: Requisito previo: asegúrate de que el fragmento de código del Smart Banner esté integrado en tu sitio web.
 
-1. In the **Test Creative** page, enter the link to your web page where the Smart Banner SDK is integrated (see [Smart Banners for developers](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2)).
-2. Click **Generate**.
-3. Copy the generated link and send it to your test device, or scan the QR code with the test device. **The link or QR should redirect you to the web page and display a banner with the creative.**
-4. Click **Edit Creative** to return to the creative configuration, or click **Done** to save the creative.
+1. En la página **Probar creatividad**, introduce el enlace a tu página web donde está integrado el SDK de Smart Banners (consulta [Smart Banners para desarrolladores](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2)).
+2. Haz clic en **Generar**.
+3. Copia el enlace generado y envíalo a tu dispositivo de prueba, o escanea el QR code con el dispositivo de prueba. **El enlace o QR debe redirigirte a la página web y mostrar un banner con la creatividad.**
+4. Haz clic en **Editar creatividad** para volver a la configuración de la creatividad, o haz clic en **Listo** para guardar la creatividad.
 
 </Accordion>
 
-## View banner performance
+## Para ver el rendimiento del banner:
 
-You can view and compare the performance of all your banners on the performance page.
+Puedes ver y comparar el rendimiento de todos tus banners en la página de rendimiento.
 
-You can get a quick view of the performance for specific banners on their individual performance cards.
+Puedes obtener una vista rápida del rendimiento de banners específicos en sus tarjetas de rendimiento individuales.
 
-Banner performance data includes:
+Los datos de rendimiento del banner incluyen:
 
-* Impressions
-* Banner closes
-* Clicks
-* Installs
-* Re-engagements
-* Re-attributions
-* Click-through rate (CTR). Formula: Clicks/impressions * 100
-* Conversion rate (CVR). Formula: Attributions/Clicks * 100
+* Impresiones
+* Cierre del banner
+* Clics
+* Instalaciones
+* Reengagements
+* Reatribuciones
+* Tasa de clics (CTR). Fórmula: Clics/impresiones * 100
+* Tasa de conversión (CVR). Fórmula: Atribuciones/clics * 100
 
-**Note**:
+**Nota**:
 
-* Data is based on UTC timezone.
-* Data freshness is <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">continuous</Anchor>.
-* Data displayed is per banner and OneLink template. This means that if your banner and OneLink template are configured for more than one app (for example, both an Android and iOS app), the performance data that displays is for more than one app.
-* CVR may be higher than expected, sometimes even above 100%, as both view-through attributions and click-through attributions are counted.
+* Los datos se basan en la zona horaria UTC.
+* La actualización de los datos es <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">continua</Anchor>.
+* Los datos mostrados son por banner y plantilla de OneLink. Esto significa que si tu banner y tu plantilla de OneLink están configurados para más de una aplicación (por ejemplo, una aplicación Android y una aplicación iOS), los datos de rendimiento que se muestran son para más de una aplicación.
+* El CVR puede ser mayor de lo esperado, a veces incluso superior al 100%, ya que se cuentan tanto las atribuciones de visualización como las de clic.
 
 <div id="performance-page" />
 
-<Accordion title="Performance page">
+<Accordion title="Página de rendimiento">
 
-The performance page lets you view and compare the performance data of all your Smart Banners, up to the past 90 days.
+La página de rendimiento te permite ver y comparar los datos de rendimiento de todos tus Smart Banners, hasta los últimos 90 días.
 
-**To view the performance page**:
+**Para ver la página de rendimiento**:
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Web-to-app** > **Smart Banners** > **Performance**.
-2. Select the date range for which you want to view performance. The default date range is the last 7 days.
-3. [Optional] Turn on **Show only currently active banners**. If turned on, data for banners that are paused or aren't currently active don't display, even if they were active during the selected date range. The performance data displays for the selected date range.
+1. En AppsFlyer, en el menú lateral, selecciona **Engage** > **Web-to-app** > **Smart Banners** > **Performance**.
+2. Selecciona el rango de fechas para el que deseas ver el rendimiento. El rango de fechas predeterminado es de los últimos 7 días.
+3. [Opcional] Activa **Mostrar solo los banners actualmente activos**. Si está activado, los datos de los banners que están en pausa o que no están activos actualmente no se muestran, incluso si estuvieron activos durante el rango de fechas seleccionado. Los datos de rendimiento se muestran para el rango de fechas seleccionado.
 
 </Accordion>
 
 <div id="performance-cards" />
 
-<Accordion title="Performance cards">
+<Accordion title="Tarjetas de rendimiento">
 
-You can view performance data for the past 7 days for any given banner.
+Puedes ver los datos de rendimiento de los últimos 7 días para cualquier banner.
 
-**To view banner performance**:
+**Para ver el rendimiento del banner**:
 
-1. In AppsFlyer, from the side menu, selecto **Engage** > **Web-to-app** > **Smart Banners** > **Studio**.
-2. Select the website workplace and banner group you want to view performance for.
-3. Hover over any of the banners in the banner group. The performance data displays for the past week
+1. En AppsFlyer, en el menú lateral, selecciona **Engage** > **Web-to-app** > **Smart Banners** > **Studio**.
+2. Selecciona el workplace del sitio web y el grupo de banners para el que deseas ver el rendimiento.
+3. Posiciona el cursor sobre cualquiera de los banners del grupo de banners. Se muestran los datos de rendimiento de la semana pasada.
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="banner-group-display-logic" />
 
-<Accordion title="Banner group display logic">
+<Accordion title="Lógica de visualización del grupo de banners">
 
-AppsFlyer takes the following into consideration when determining if/what Smart Banner to display:
+AppsFlyer tiene en cuenta lo siguiente al determinar qué Smart Banner mostrar o si se muestran:
 
-* Are there rules (dismissal behavior, frequency capping, locations, show on pages, etc.) set for the banner groups?
-* Does the end-user meet the rule conditions and qualify to see a banner?
+* ¿Existen reglas (comportamiento de rechazo, frecuencia máxima, ubicaciones, mostrar en las páginas, etc.) configuradas para los grupos de anuncios?
+* ¿El usuario final cumple con las condiciones de las reglas y califica para ver un banner?
 
-If the answer to both questions is yes, meaning there are rules, and the user qualifies to see a banner, AppsFlyer chooses a banner to display as explained in the table that follows.
+Si la respuesta a ambas preguntas es sí, es decir, hay reglas, y el usuario califica para ver un banner, AppsFlyer elige un banner para mostrar como se explica en la siguiente tabla.
 
-| Banner group setup | Which banners display | Example |
+| Configuración del grupo de banners | Qué banners se muestran | Ejemplo |
 | --- | --- | --- |
-| Single banner group | AppsFlyer evenly splits the display of all active banners in all your banner groups between all eligible users. | • Example 1: There is 1 active banner. It displays to all users.<br /><br />• Example 2: There are 2 banners. 50% of users see banner 1, and the other 50% see banner 2.<br /><br />• Example 3: There are 3 banners, 1/3 of eligible users see each banner.<br /><br />• Example 4: There are no active banners. Nothing displays. |
-| Multiple banner groups with identical rules | AppsFlyer evenly splits the display of all active banners in all your banner groups between all eligible users. | There are 2 banner groups (A and B), each with 3 banners (for a total of 6 banners). 1/6 of eligible users see each banner. |
-| Multiple banner groups with multiple rules | AppsFlyer evenly splits the display of all active banners *from the banner group with rules that most specifically describes and match the users*. If the banner groups are equally specific in different ways, banners from all these banner groups display. | • Example 1: There are 2 banner groups, A and B. Banner group A is set to show worldwide, and Banner group B is set to show in Japan. Banner group B is more specific, so only the banners from that group display to users in Japan. If the group has no active banners, nothing displays.<br /><br />• Example 2: There are 2 banner groups, A and B. Banner group A is set to show worldwide, and Banner group B is set to show everywhere except Ukraine. Banner group B is more specific, so only the banners from that group display to worldwide users (except users in Ukraine). If Banner group B has no active banners, nothing displays. Banner group A displays in Ukraine.<br /><br />• Example 3: There are 2 banner groups, A and B. Banner group A is set to show in Japan, and Banner group B is set to show in April. Both banner groups are equally specific, but in different ways. Therefore, in Japan, in April, banners from both banner groups display, as neither banner group has priority over the other. |
+| Grupo de banners individuales | AppsFlyer divide uniformemente la visualización de todos los banners activos en todos tus grupos de banners entre todos los usuarios elegibles. | • Ejemplo 1: Hay 1 banner activo. Se muestra a todos los usuarios.<br /><br />• Ejemplo 2: Hay 2 banners. El 50% de los usuarios ve el banner 1 y el otro 50% ve el banner 2.<br /><br />• Ejemplo 3: Hay 3 banners, 1/3 de los usuarios elegibles ven cada banner.<br /><br />• Ejemplo 4: No hay banners activos. No se muestra nada. |
+| Varios grupos de banners con reglas idénticas | AppsFlyer divide uniformemente la visualización de todos los banners activos en todos tus grupos de banners entre todos los usuarios elegibles. | Hay 2 grupos de banners (A y B), cada uno con 3 banners (con un total de 6 banners). 1/6 de los usuarios elegibles ven cada uno de los banners. |
+| Varios grupos de banners con varias reglas | AppsFlyer divide uniformemente la visualización de todos los banners activos *del grupo de banners con reglas que describen y coinciden más específicamente con los usuarios*. Si los grupos de banners son igualmente específicos de diferentes formas, se muestran los banners de todos estos grupos de banners. | • Ejemplo 1: Hay 2 grupos de banners, A y B. El grupo de banners A está configurado para mostrarse en todo el mundo, y el grupo de banners B está configurado para mostrarse en Japón. El grupo de banners B es más específico, por lo que solo los banners de ese grupo se muestran a los usuarios de todo el mundo (excepto a los usuarios de Ucrania). Si el grupo de banners B no tiene banners activos, no se muestra nada.<br /><br />• Ejemplo 1: Hay 2 grupos de banners, A y B. El grupo de banners A está configurado para mostrarse en todo el mundo y el grupo de banners B está configurado para mostrarse en Japón. El grupo de banners B es más específico, por lo que solo los banners de ese grupo se muestran a los usuarios de Japón. Si el grupo no tiene banners activos, no se muestra nada.<br /><br />• Ejemplo 3: Hay 2 grupos de banners, A y B. El grupo de banners A se mostrará en Japón y el grupo de banners B se mostrará en abril. Ambos grupos de banners son igualmente específicos, pero de diferentes maneras. Por lo tanto, en Japón, en abril, se muestran banners de ambos grupos de banners, ya que ninguno de los dos tiene prioridad sobre el otro. |
 
 </Accordion>
 
 <div id="ab-testing-banner-performance" />
 
-<Accordion title="A/B testing banner performance">
+<Accordion title="Pruebas A/B del rendimiento de banners">
 
-You can A/B test banners by comparing their performance in the performance dashboard. For additional attribution-related data, it's recommended to add the `af_adset` , `af_ad` or other attribution parameters (except `pid`, `c`, and `channel`) with a unique value for each banner creative or banner group. Use those parameters to compare each banner group's performance when viewing data in AppsFlyer dashboards and reports.
+Puedes realizar pruebas A/B de los banners comparando su rendimiento en el dashboard de rendimiento. Para obtener datos adicionales relacionados con la atribución, se recomienda agregar el `af_adset` , `af_ad` u otros parámetros de atribución (excepto`pid`,`c`, y`channel`) con un valor único para cada creatividad de banner o grupo de banners. Utiliza esos parámetros para comparar el rendimiento de cada grupo de banners cuando visualices datos en los dashboards y reportes de AppsFlyer.
 
 </Accordion>
 
-## FAQ
+## Preguntas frecuentes
 
 <div id="why-does-my-banner-not-display" />
 
-<Accordion title="Why does my banner not display?">
+<Accordion title="¿Por qué no se muestra mi banner?">
 
-This is due to the frequency cap set in your banner group. Frequency capping determines how many times the banner is shown to a unique user. For example, if frequency capping is set to three, and a user visits the site four times, the user sees the banner on the first 3 visits but not on the fourth and onward. Frequency capping can be disabled. Select a frequency capping value or disable frequency capping.
+Esto se debe a la frecuencia máxima establecida en tu grupo de banners. La limitación de frecuencia determina cuántas veces se muestra el banner a un usuario único. Por ejemplo, si la frecuencia máxima está establecida en tres y un usuario visita el sitio cuatro veces, el usuario ve el banner en las primeras 3 visitas, pero no en la cuarta ni en las posteriores. La frecuencia máxima se puede deshabilitar. Selecciona un valor de frecuencia máxima o desactiva la frecuencia máxima.
 
 </Accordion>
 
 <div id="can-i-use-my-own-font-for-my-banner" />
 
-<Accordion title="Can I use my own font for my banner?">
+<Accordion title="¿Puedo usar mi propia fuente para mi banner?">
 
-Yes. you can set your own font used on your website for your banner using the [instructions on the developer hub](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#control-smart-banner-font).
+Sí. puedes configurar tu propia fuente utilizada en tu sitio web para tu banner, siguiendo las [instrucciones disponibles en el centro de desarrollo](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#control-smart-banner-font).
 
-* Requires a website developer to implement.
-* The font will apply to all banners on the website and to all text elements inside the banner.
-* The font can not be viewed in the creative editor.
-* After implementing, [test your creative banner](/docs/smart-banners-mobile-web-to-app-for-marketers#4-testing).
-* If the font doesn't display correctly, resave your banner in the [creative editor](/docs/smart-banners-mobile-web-to-app-for-marketers#3-banner-setup).
+* Requiere un desarrollador de sitios web para su implementación.
+* La fuente se aplicará a todos los banners del sitio web y a todos los elementos de texto dentro del banner.
+* La fuente no se puede ver en el editor creativo.
+* Después de implementarlo, [prueba tu banner creativo](/docs/smart-banners-mobile-web-to-app-for-marketers#4-testing).
+* Si la fuente no se muestra correctamente, vuelve a enviar tu banner en el [editor creativo](/docs/smart-banners-mobile-web-to-app-for-marketers#3-banner-setup).
 
 </Accordion>
 
 <div id="can-i-add-parameters-to-the-url-of-my-smart-banners" />
 
-<Accordion title="Can I add parameters to the URL of my Smart Banners?">
+<Accordion title="¿Puedo agregar parámetros a la URL de mis Smart Banners?">
 
-Yes, by invoking the following two functions in your smart script:
+Sí, invocando las dos funciones siguientes en tu smart script:
 
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner">showBanner</Anchor>
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#updateparams">updateParams</Anchor>
@@ -443,74 +441,74 @@ Yes, by invoking the following two functions in your smart script:
 
 <div id="do-smart-banners-support-deep-linking" />
 
-<Accordion title="Do Smart Banners support deep linking?">
+<Accordion title="¿Los Smart Banners admiten deep linking?">
 
-Yes. To do so, add the <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">deep\_link\_value parameter</Anchor> in one of the following ways:
+Sí. Para ello, agrega el <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">parámetro deep\_link\_value</Anchor> de una de las siguientes formas:
 
-* In the AppsFlyer UI, add a static custom attribution parameter during [banner setup](/docs/smart-banners-mobile-web-to-app-for-marketers#3-banner-setup).
-* Use additionalParams in the [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner%20target=) function to add the parameter to the URL prior to displaying the banner.
-* Use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#updateparams">updateParams</Anchor> function to add the parameter to the URL after the banner displays.
+* En la IU de AppsFlyer, agrega un parámetro de atribución estático personalizado durante la [configuración del banner](/docs/smart-banners-mobile-web-to-app-for-marketers#3-banner-setup).
+* Utiliza additionalParams en la función [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner%20target=) para agregar el parámetro a la URL antes de mostrar el banner.
+* Utiliza la función <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#updateparams">updateParams</Anchor> para agregar el parámetro a la URL después de que aparezca el banner.
 
-Make sure your developer implements the desired behavior of the deep\_link\_value.
+Asegúrate de que tu desarrollador implemente el comportamiento deseado del deep\_link\_value.
 
 </Accordion>
 
 <div id="can-smart-banners-show-different-content-based-on-whether-or-not-users-have-the-app-installed" />
 
-<Accordion title="Can Smart Banners show different content based on whether or not users have the app installed?">
+<Accordion title="¿Los Smart Banners pueden mostrar contenido diferente en función de si los usuarios tienen la aplicación instalada o no?">
 
-No. If you don't know whether or not users have the app, we recommend you make your call to action applicable to both. For example: "Go to the app" or "open the app."
+N.º Si no sabes si los usuarios tienen o no la aplicación, te recomendamos que realices la llamada a la acción correspondiente a ambos. Por ejemplo: "Ir a la aplicación" o "Abrir la aplicación".
 
 </Accordion>
 
 <div id="do-original-incoming-url-parameters-remain-available-for-the-smart-banner-url-when-users-navigate-away-from-and-then-return-to-the-banners-landing-page" />
 
-<Accordion title="Do original incoming URL parameters remain available for the Smart Banner URL when users navigate away from, and then return to, the banner's landing page?">
+<Accordion title="¿Los parámetros de URL entrantes originales permanecen disponibles para la URL de Smart Banner cuando los usuarios se alejan de la landing page del banner y luego regresan a ella?">
 
-Yes. If the original incoming URL contains a utm\_source or pid parameter, the original URL is saved for the duration of the browsing session and the parameters are applied to the outgoing banner URL.
+Sí. Si la URL entrante original contiene un parámetro utm\_source o pid, la URL original se guarda durante la sesión de navegación y los parámetros se aplican a la URL del banner de salida.
 
 </Accordion>
 
 <div id="can-i-set-my-banners-to-display-on-my-mobile-site-but-not-on-my-wrapperhybrid-app" />
 
-<Accordion title="Can I set my banners to display on my mobile site but not on my wrapper/hybrid app?">
+<Accordion title="¿Puedo configurar mis banners para que se muestren en mi sitio móvil, pero no en mi aplicación wrapper/híbrida?">
 
-Yes. To do so, when you implement Smart Banners in a wrapper/hybrid app and load the banner page from the app (and not from a web browser), don't use the [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner%20target=) function, as this displays the banner in the app. Alternatively, use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#hidebanner">hideBanner</Anchor> function.
+Sí. Para hacerlo, cuando implementes Smart Banners en una aplicación wrapper/híbrida y cargues la página del banner desde la aplicación (y no desde un navegador web), no uses la función [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner%20target=), ya que esta muestra el banner en la aplicación. Alternativamente, usa la función <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#hidebanner">hideBanner</Anchor>.
 
 </Accordion>
 
 <div id="do-smart-banners-support-web-accessibility" />
 
-<Accordion title="Do Smart Banners support web accessibility?">
+<Accordion title="¿Los Smart Banners admiten la accesibilidad web?">
 
-We are committed to ensuring that all of your users, including those with disabilities, can fully access and engage with Smart Banners.
+Estamos comprometidos a garantizar que todos tus usuarios, incluidos los que tienen discapacidades, puedan acceder e interactuar plenamente con los Smart Banners.
 
-As such, we try to make our Smart Banners web accessibility compatible and follow the WCAG 2.1 standard best practices by providing the relevant HTML attributes in the Smart Banner elements.
+Como tal, tratamos de hacer que la accesibilidad web de nuestros Smart Banners sea compatible y seguimos las mejores prácticas estándar WCAG 2.1 al proporcionar los atributos HTML relevantes en los elementos de Smart Banner.
 
-However, determining the relevant accessibility requirements for your own intended uses of such Smart Banners is your sole responsibility. You are solely responsible for ensuring that Smart Banners you use remain accessible to all users in accordance with relevant web-accessibility requirements.
+Sin embargo, determinar los requisitos de accesibilidad relevantes para tus propios usos previstos de dichos Smart Banners es tu exclusiva responsabilidad. Tú eres el único responsable de garantizar que los Smart Banners que utilices sigan siendo accesibles para todos los usuarios, de acuerdo con los requisitos relevantes de accesibilidad web.
 
-Please note that various changes to the Smart Banner might impact its compatibility with the relevant accessibility requirements, including for example, by editing the colors and size of internal banner elements.
+Ten en cuenta que varios cambios en el Smart Banner pueden afectar su compatibilidad con los requisitos de accesibilidad relevantes, incluyendo, por ejemplo, al editar los colores y el tamaño de los elementos internos del banner.
 
 </Accordion>
 
 <div id="if-a-smart-banner-is-deleted-from-a-banner-group-will-the-data-associated-with-that-banner-group-also-be-removed" />
 
-<Accordion title="If a smart banner is deleted from a banner group, will the data associated with that banner group also be removed?">
+<Accordion title="Si se elimina un Smart Banner de un grupo de banners, ¿se eliminarán también los datos asociados con ese grupo de banners?">
 
-No. Attribution data is not deleted if a smart banner is deleted.
+N.º Los datos de atribución no se eliminan si se elimina un Smart Banner.
 
 </Accordion>
 
-## Troubleshooting & traits and limitations
+## Solución de problemas, características y limitaciones
 
-| Trait | Remarks |
+| Caducado | Nota |
 | --- | --- |
-| Banner display split | AppsFlyer evenly splits the display of active banners to users. It’s not possible to select which specific banners to display more or less. For example, if there are 2 banners in a group, they each display to 50% of users. It can't be changed to a 70%-30% split. |
-| Custom parameters | • The following special characters are not allowed in custom parameters: ;, *, !, @, #, ?, $, ^, :, &, ~, \`, =, +, ’, >, &lt;, / • If you define a parameter using one of these special characters, the parameter is not saved. |
-| Name change | Banner group names and banner names can be changed. Performance data isn't affected and carries over. |
-| Number of button closes | Data is available as of February 17, 2026. Data is retained for 90 days. |
-| Specific page | When you set up your banner group to display banners on a specific page, the banner rule applies only to the host/path you enter. If there is not a perfect match (for example, if your site page has additional strings not included in the rule setup), the rule doesn't apply. |
-| Tablets | • Smart Banners are designed for mobile devices and their resolutions may not be optimized for tablets with large screens. • Browsers on tablets may not be recognized as mobile devices. |
-| The banner displays alongside a vacant area | When encountering this behavior, assess its cause using the following criteria:<ul><li>Verify that the SDK code snippet has not been implemented more than once on the webpage.</li><li>Ensure that the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner">`showBanner`</Anchor> function has not been invoked multiple times.</li></ul> |
+| División de la visualización de banners | AppsFlyer divide uniformemente la visualización de banners activos para los usuarios. No es posible seleccionar qué banners específicos mostrar más o menos. Por ejemplo, si hay 2 banners en un grupo, cada uno se muestra al 50% de los usuarios. No se puede cambiar a una división de 70%-30%. |
+| Parámetros personalizados | • Los siguientes caracteres especiales no están permitidos en los parámetros personalizados: ;, *, !, @, #, ?, $, ^, :, &, ~, \`, =, +, ’, >, &lt;, / • Si defines un parámetro usando uno de estos caracteres especiales, el parámetro no se guarda. |
+| Cambio de nombre | Se pueden cambiar los nombres de los grupos de banners y los nombres de los banners. Los datos de rendimiento no se ven afectados y se mantienen. |
+| Número de clics/cierres de botones | Los datos están disponibles a partir del 17 de febrero de 2026. Los datos se conservan durante 90 días. |
+| Página específica | Cuando configuras tu grupo de banners para mostrar banners en una página específica, la regla de banners solo aplica al host/ruta que ingreses. Si no hay una coincidencia perfecta (por ejemplo, si la página de tu sitio tiene cadenas adicionales no incluidas en la configuración de la regla), la regla no aplica. |
+| Tablets | • Los Smart Banners están diseñados para dispositivos móviles y es posible que sus resoluciones no estén optimizadas para tablets con pantallas grandes. • Es posible que los navegadores de las tablets no se reconozcan como dispositivos móviles. |
+| El banner se muestra junto a un área vacía. | Cuando encuentres este comportamiento, evalúa su causa utilizando los siguientes criterios:<ul><li>Verifica que el fragmento de código del SDK no se haya implementado más de una vez en la página web.</li><li>Asegúrate de que la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner">`showBanner`</Anchor> función no se ha implementado varias veces.</li></ul> |
 
-<div data-zendesk-anchors="h_01HB5W700P3GP7JS4PFDF65EWT=note h_01HB5W700PWY5G45BYNWPKAC52=smart-banners h_01HB5W700QQMYSEFBBXVJ97M0M=example h_01HB5W700QGWTWDXBNB2GAPQ3B=important h_01HB5W700QVNYJT48VAP9Y7HQS=setup h_01HB5W700Q7G5E98V0DBN9P5VZ=1-website-workplace-setup h_01HB5W700QE7MDBSN5GH4E7ABR=prepare-your-mobile-site-to-display-smart-banners-for-the-first-time h_01HB5W700Q57WXKFSWXNF22QZ1=to-create-website-workplaces-after-the-first-time h_01HB5W700QY1FH2SYX6DM4HDEQ=2-banner-group-setup h_01HDH1BQSXCQV9QCJGZ4VNXGPQ=important-1 h_01HB5W700QYJ9NR5F4VT59NG2Q=example-1 targeting-behavior=targeting--behavior h_01HB5W700QYC48YTJY9B8JT0XM=targeting--behavior h_01HB5W700QG54YYQFHGA2J41RY=3-banner-setup h_01HB5W700QD0WKNAP5X6T9E6DQ=example-2 h_01HB5W700QX5J59BBK1AV7VFV6=4-testing h_01HB5W700Q6WHMVFNSVM2E9JXN=view-banner-performance h_01HB5W700QEP46WV78KEYD1RT1=performance-page h_01HB5W700QZ705H5EE0PFHB1KY=performance-cards h_01HB5W700Q9XD8MGEK0B3ZZJS3=additional-information h_01HB5W700QHW078W3RRCB81AWM=banner-group-display-logic h_01HB5W700QNYT482FR0FRHP2DC=ab-testing-banner-performance h_01HB5W700Q90F1KMASF94EZWEM=faq h_01HB5W700Q1ZP3RAR94T41SXK2=why-does-my-banner-not-display h_01HB5W700QKBVFQHH9D8WD36R2=can-i-use-my-own-font-for-my-banner h_01HB5W700R2AJC2C1PRT5PTH8G=can-i-add-parameters-to-the-url-of-my-smart-banners h_01HB5W700RAVG10QZDBPXWT14G=do-smart-banners-support-deep-linking h_01HB5W700R12DSA6HF4HVWGW9P=can-smart-banners-show-different-content-based-on-whether-or-not-users-have-the-app-installed h_01HB5W700RT122T2M6NXFPSXDV=do-original-incoming-url-parameters-remain-available-for-the-smart-banner-url-when-users-navigate-away-from-and-then-return-to-the-banners-landing-page h_01HB5W700RH40FGHWVJ9J31R9F=can-i-set-my-banners-to-display-on-my-mobile-site-but-not-on-my-wrapperhybrid-app h_01HB5W700R11SHAKV5W21MXCX8=do-smart-banners-support-web-accessibility h_01JSVH17EH97S8B7EBCD4QHS1Q=if-a-smart-banner-is-deleted-from-a-banner-group-will-the-data-associated-with-that-banner-group-also-be-removed traits-and-limitations=troubleshooting--traits-and-limitations h_01HB5W700RXHC22QGXDX4GG1AR=troubleshooting--traits-and-limitations" />
+<div data-zendesk-anchors="h_01HB5W700P3GP7JS4PFDF65EWT=nota smart-banners=banners-inteligentes h_01HB5W700PWY5G45BYNWPKAC52=banners-inteligentes h_01HB5W700QQMYSEFBBXVJ97M0M=ejemplo h_01HB5W700QGWTWDXBNB2GAPQ3B=importante setup=configuraci%C3%B3n h_01HB5W700QVNYJT48VAP9Y7HQS=configuraci%C3%B3n h_01HB5W700Q7G5E98V0DBN9P5VZ=1-website-workplace-setup prepare-your-mobile-site-to-display-smart-banners-for-the-first-time=para-preparar-tu-sitio-m%C3%B3vil-para-mostrar-smart-banners-por-primera-vez h_01HB5W700QE7MDBSN5GH4E7ABR=para-preparar-tu-sitio-m%C3%B3vil-para-mostrar-smart-banners-por-primera-vez to-create-website-workplaces-after-the-first-time=para-crear-workplaces-del-sitio-web-despu%C3%A9s-de-la-primera-vez h_01HB5W700Q57WXKFSWXNF22QZ1=para-crear-workplaces-del-sitio-web-despu%C3%A9s-de-la-primera-vez h_01HB5W700QY1FH2SYX6DM4HDEQ=2-banner-group-setup h_01HDH1BQSXCQV9QCJGZ4VNXGPQ=importante-1 h_01HB5W700QYJ9NR5F4VT59NG2Q=ejemplo-1 targeting-behavior=targeting-y-comportamiento h_01HB5W700QYC48YTJY9B8JT0XM=targeting-y-comportamiento h_01HB5W700QG54YYQFHGA2J41RY=3-banner-setup h_01HB5W700QD0WKNAP5X6T9E6DQ=ejemplo-2 h_01HB5W700QX5J59BBK1AV7VFV6=4-testing view-banner-performance=para-ver-el-rendimiento-del-banner h_01HB5W700Q6WHMVFNSVM2E9JXN=para-ver-el-rendimiento-del-banner h_01HB5W700QEP46WV78KEYD1RT1=performance-page h_01HB5W700QZ705H5EE0PFHB1KY=performance-cards additional-information=informaci%C3%B3n-adicional h_01HB5W700Q9XD8MGEK0B3ZZJS3=informaci%C3%B3n-adicional h_01HB5W700QHW078W3RRCB81AWM=banner-group-display-logic h_01HB5W700QNYT482FR0FRHP2DC=ab-testing-banner-performance faq=preguntas-frecuentes h_01HB5W700Q90F1KMASF94EZWEM=preguntas-frecuentes h_01HB5W700Q1ZP3RAR94T41SXK2=why-does-my-banner-not-display h_01HB5W700QKBVFQHH9D8WD36R2=can-i-use-my-own-font-for-my-banner h_01HB5W700R2AJC2C1PRT5PTH8G=can-i-add-parameters-to-the-url-of-my-smart-banners h_01HB5W700RAVG10QZDBPXWT14G=do-smart-banners-support-deep-linking h_01HB5W700R12DSA6HF4HVWGW9P=can-smart-banners-show-different-content-based-on-whether-or-not-users-have-the-app-installed h_01HB5W700RT122T2M6NXFPSXDV=do-original-incoming-url-parameters-remain-available-for-the-smart-banner-url-when-users-navigate-away-from-and-then-return-to-the-banners-landing-page h_01HB5W700RH40FGHWVJ9J31R9F=can-i-set-my-banners-to-display-on-my-mobile-site-but-not-on-my-wrapperhybrid-app h_01HB5W700R11SHAKV5W21MXCX8=do-smart-banners-support-web-accessibility h_01JSVH17EH97S8B7EBCD4QHS1Q=if-a-smart-banner-is-deleted-from-a-banner-group-will-the-data-associated-with-that-banner-group-also-be-removed traits-and-limitations=soluci%C3%B3n-de-problemas-caracter%C3%ADsticas-y-limitaciones h_01HB5W700RXHC22QGXDX4GG1AR=soluci%C3%B3n-de-problemas-caracter%C3%ADsticas-y-limitaciones" />

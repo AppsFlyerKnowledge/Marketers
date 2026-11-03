@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Unified data in the Activity dashboard'
+title: 'Boletín: Datos unificados en el dashboard de actividad'
 metadata:
   keywords:
     - Marketers
@@ -13,16 +13,15 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2024-10-31T20:33:43Z'
-  edited_at: '2025-02-02T15:10:39Z'
+  edited_at: '2026-10-20T03:54:52Z'
   id: 29683203907345
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/29683203907345-Bulletin-Unified-data-in-the-Activity-dashboard
+  url: https://support.appsflyer.com/hc/es/articles/29683203907345
 ---
-| **What's new** | Activity data is unified, meaning all data includes both UA and retargeting data. |
+| **¿Qué hay de nuevo?** | Los datos de actividad están unificados, lo que significa que todos los datos incluyen datos de UA y de retargeting. |
 | --- | --- |
-| **Update date** | February 1, 2025 |
-| **Where** | Activity and Pivot dashboards, and Master API. |
-| **What you need to know** | <ul><li>Until now, some activity metrics, for example, sessions and DAU, were based on only UA data.</li><li>Now, all activity metrics include both UA and retargeting data. **Note**: Only unified view is available; you can't split the data to view only UA or retargeting.</li><li>For some ad networks, events previously attributed to UA campaigns may now be attributed to retargeting campaigns.</li><li>Metrics such as DAU and MAU may increase due to this change, as retargeting traffic is now included in the calculations.</li><li>For data from before February 1, 2025, the following metrics include only UA traffic data:<ul><li>In Activity dashboard:<ul><li>Total sessions</li><li>DAU</li><li>MAU</li><li>DAU/MAU</li><li>ARPDAU</li><li>Cost</li><li>Clicks</li><li>Impressions</li><li>Conversion rate</li><li>eCPI</li></ul></li><li>In Pivot dashboards and Master API: Activity KPIs</li></ul></li></ul> |
+| **Fecha de actualización** | 1 de febrero de 2025 |
+| **Donde** | Dashboards de Actividad y Pivot, y Master API. |
+| **Lo que debes saber:** | <ul><li>Hasta ahora, algunas métricas de actividad, por ejemplo, sesiones y DAU, se basaban únicamente en datos de UA.</li><li>Ahora, todas las métricas de actividad incluyen datos de UA y retargeting. **Nota**: Solo está disponible la vista unificada; no puedes dividir los datos para ver solo UA o retargeting.</li><li>Para algunas ad networks, los eventos que antes se atribuían a campañas de UA ahora pueden atribuirse a campañas de retargeting.</li><li>Métricas como DAU y MAU pueden aumentar debido a este cambio, ya que el tráfico de retargeting ahora está incluido en los cálculos.</li><li>Para los datos anteriores al 1 de febrero de 2025, las siguientes métricas incluyen solo datos de tráfico de UA:<ul><li>En el dashboard de actividad:<ul><li>Sesiones totales</li><li>DAU</li><li>MAU</li><li>DAU/MAU</li><li>ARPDAU</li><li>Coste</li><li>Clics</li><li>Impresiones</li><li>Tasa de conversión</li><li>valores de eCPI</li></ul></li><li>En los dashboards de Pivot y Master API: KPI de actividad</li></ul></li></ul> |

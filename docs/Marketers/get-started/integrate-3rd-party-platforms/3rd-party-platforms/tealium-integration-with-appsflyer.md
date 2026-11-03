@@ -1,5 +1,5 @@
 ---
-title: Tealium integration with AppsFlyer
+title: Integración de Tealium con AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -13,47 +13,46 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-11-22T16:09:24Z'
-  edited_at: '2024-02-14T06:58:32Z'
+  edited_at: '2026-08-12T11:59:44Z'
   id: 10820404821393
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/10820404821393-Tealium-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/10820404821393
 ---
-> **At a glance:** Tealium, a Customer Data Platform (CDP), connects customer data across the web, mobile, IoT, and offline. Learn how to automatically share conversion data with Tealium.
+> **De un vistazo:** Tealium, una plataforma de datos del cliente (CDP), conecta los datos del cliente a través de Internet, móvil, IoT y fuera de línea. Aprende cómo compartir automáticamente los datos de conversión con Tealium.
 
 <Image alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
 
-## Overview
+## Visión general
 
-By integrating Tealium with AppsFlyer, mobile customers can leverage the AppsFlyer mobile attribution SDK and send attribution conversion data directly to their Tealium AudienceStream profile.
+Al integrar Tealium con AppsFlyer, los clientes móviles pueden aprovechar el SDK de atribución móvil de AppsFlyer y enviar datos de conversión de la atribución directamente a su perfil de Tealium AudienceStream.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up Tealium
+## Configuración de Tealium
 
-You can choose one of the following ways to integrate Tealium with AppsFlyer:
+Puedes elegir una de las siguientes formas de integrar Tealium con AppsFlyer:
 
-* Client-side integration
-* Server-side integration
+* Integración del lado del cliente
+* Integración del lado del servidor
 
-### Client-side integration
+### Integración del lado del cliente
 
-Use remote commands for iOS and Android libraries, allowing native code to be triggered in the AppsFlyer SDK.
+Usa comandos remotos para bibliotecas de iOS y Android, lo que permite activar el código nativo en el SDK de AppsFlyer.
 
-**To integrate Tealium using client-side integration:**
+**Para integrar Tealium mediante la integración del lado del cliente:**
 
-* Follow the <Anchor target="_blank" href="https://docs.tealium.com/platforms/remote-commands/integrations/appsflyer/">remote command integration guide</Anchor>
+* Sigue la <Anchor target="_blank" href="https://docs.tealium.com/platforms/remote-commands/integrations/appsflyer/">guía de integración de comandos remotos</Anchor>
 
-### Server-side integration
+### Integración del lado del servidor
 
-Set up the AppsFlyer App Events connector in your Customer Data Hub account to transmit data between Tealium and AppsFlyer in real time.
+Configura el conector de eventos de aplicación de AppsFlyer en tu cuenta de Customer Data Hub para transmitir datos entre Tealium y AppsFlyer en tiempo real.
 
-**To integrate Tealium using server-side integration:**
+**Para integrar Tealium mediante la integración del lado del servidor:**
 
-* Follow the <Anchor target="_blank" href="https://docs.tealium.com/server-side-connectors/appsflyer-app-events-connector/">AppsFlyer App Events connector guide</Anchor>
+* Sigue la <Anchor target="_blank" href="https://docs.tealium.com/server-side-connectors/appsflyer-app-events-connector/">guía del conector de eventos de aplicación de AppsFlyer</Anchor>
 
-<div data-zendesk-anchors="h_01H9HWK1ACY09ZVD7WHEQR4MR3=overview h_01H9HWK1ACA6A743PDY3Q1Y0KV=important h_01H9HWK1AC27GPZPZR13SFC3GM=setting-up-tealium clientside-integration=client-side-integration h_01H9HWK1ACH6K0FDTVCHAPSKME=client-side-integration serverside-integration=server-side-integration h_01H9HWK1ACDZQEYVRZ7QWQ4KY3=server-side-integration" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01H9HWK1ACY09ZVD7WHEQR4MR3=visi%C3%B3n-general h_01H9HWK1ACA6A743PDY3Q1Y0KV=importante setting-up-tealium=configuraci%C3%B3n-de-tealium h_01H9HWK1AC27GPZPZR13SFC3GM=configuraci%C3%B3n-de-tealium clientside-integration=integraci%C3%B3n-del-lado-del-cliente h_01H9HWK1ACH6K0FDTVCHAPSKME=integraci%C3%B3n-del-lado-del-cliente serverside-integration=integraci%C3%B3n-del-lado-del-servidor h_01H9HWK1ACDZQEYVRZ7QWQ4KY3=integraci%C3%B3n-del-lado-del-servidor" />

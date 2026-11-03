@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: Include future apps with Protect360 validation rules'
+title: >-
+  Boletín: Incluye futuras aplicaciones en las reglas de validación de
+  Protect360
 metadata:
   keywords:
     - Protect360
@@ -13,16 +15,15 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2024-08-05T17:47:04Z'
-  edited_at: '2024-09-22T08:14:49Z'
+  edited_at: '2026-10-20T03:55:17Z'
   id: 27288616008977
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/27288616008977-Bulletin-Include-future-apps-with-Protect360-validation-rules
+  url: https://support.appsflyer.com/hc/es/articles/27288616008977
 ---
-| **What's new** | You can now include future apps when creating validation rules. |
+| **¿Qué hay de nuevo?** | Ahora puedes incluir futuras aplicaciones al crear reglas de validación. |
 | --- | --- |
-| **Effective date** | August, 2024 |
-| **What you need to know** | <ul><li>When creating a validation rule, in the **App selection** section, if you choose All apps, you have the option to check **Include future apps.** This allows any future apps to be included in this rule.</li></ul> |
-| **Implications** | Selecting **include future apps** when creating your validation rule, allows any future apps to be included in the rule. This saves you from having to go back and modify every rule created when you have a new app. More information, including how to set it up, can be found <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud#rule-builder">here</Anchor>. |
+| **Fecha de entrada en vigor** | Agosto de 2024 |
+| **Lo que debes saber:** | <ul><li>Al crear una regla de validación, en la sección **Selección de aplicaciones**, si eliges todas las aplicaciones, tienes la opción de marcar **Incluir futuras aplicaciones**. Esto permite incluir en esta regla cualquier aplicación futura.</li></ul> |
+| **Implicaciones** | Si seleccionas **incluir futuras aplicaciones** al crear tu regla de validación, cualquier aplicación futura se incluirá en la regla. Así no tendrás que volver atrás y modificar todas las reglas creadas cuando tengas una aplicación nueva. Puedes encontrar más información, incluido cómo configurarlo, <Anchor target="_blank" href="/marketers/es/docs/implement-validation-rules-to-prevent-fraud#creador-de-reglas">aquí</Anchor>. |

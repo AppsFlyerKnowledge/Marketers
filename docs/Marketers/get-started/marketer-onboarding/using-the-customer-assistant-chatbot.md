@@ -1,5 +1,5 @@
 ---
-title: Using the Customer Assistant Chatbot
+title: Uso del Customer Assistant Chatbot
 metadata:
   keywords:
     - Marketers
@@ -12,33 +12,32 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2024-03-24T14:36:24Z'
-  edited_at: '2026-08-31T07:51:13Z'
+  edited_at: '2026-09-02T00:16:44Z'
   id: 23583984402193
-  locale: en-us
+  locale: es
   section: Marketer onboarding
   section_id: 6550866490129
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/23583984402193-Using-the-Customer-Assistant-Chatbot
+  url: https://support.appsflyer.com/hc/es/articles/23583984402193
 ---
-> **At a glance:** Contact AppsFlyer support through the Customer Assistant Chatbot for assistance with troubleshooting issues or product guidance. The chatbot also helps you open tickets to the correct team where necessary.
+> **De un vistazo:** Comunícate con el soporte de AppsFlyer a través del Customer Assistant Chatbot para obtener ayuda con la resolución de problemas u orientación sobre el producto. El chatbot también te ayuda a abrir tickets al equipo correcto cuando es necesario.
 
-## Overview
+## Visión general
 
-The Customer Assistant Chatbot directs your issues to the appropriate team, covering app-related concerns, account management, billing, product guidance, and technical support. The steps in the chatbot prompt you to provide the necessary details for accurate assistance, reducing the need for extra information.
+El chatbot del asistente de atención al cliente dirige tus problemas al equipo adecuado, cubriendo las inquietudes relacionadas con la aplicación, la administración de cuentas, la facturación, la orientación del producto y el soporte técnico. Los pasos del chatbot te piden que proporciones los detalles necesarios para una asistencia precisa, lo que reduce la necesidad de información adicional.
 
-**To reach the Customer Assistant Chatbot:**
+**Para comunicarte con el Customer Assistant Chatbot:**
 
-1. From the top menu bar, select **Help** > **Contact our team**. The Customer Assistant Chatbot opens.
+1. En la barra de menú superior, selecciona **Ayuda** > **Contacta con nuestro equipo**. Se abre el Customer Assistant Chatbot.
 
-   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3738e987c1710a12429cea8c9c679fa8bbc12bde1cfecbbeaf8d34f028c511b3-50372534621457.jpg" width="257px" />
-2. Select the **Ticket Type** from the list item and fill in all information.
+   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
+2. Selecciona el **tipo de ticket** en la lista y completa toda la información.
 
-   <Image alt="Bildschirmfoto 2026-08-26 um 12.17.34.png" src="https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png" width="75%" />
+   <Image alt="Captura de pantalla 2026-08-26 a las 12.17.34.png" src="https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png" width="75%" />
 
-   3. Click **Submit**
+   3. Haz clic en **Enviar**
 
-## Viewing support tickets
+## Visualización de tickets de soporte
 
-The support tickets that you open are accessible via your email correspondence with AppsFlyer support. Access it to search, view, and verify the status of your tickets.
+Se puede acceder a los tickets de soporte que abres a través de tu correspondencia por correo electrónico con el soporte de AppsFlyer. Accede a ella para buscar, ver y verificar el estado de tus tickets.
 
-<div data-zendesk-anchors="h_01HSRN1H9JRR50VA2PBQHS9MSS=overview h_01HSRN1H9KB5CFTJV67FRKC0K8=viewing-support-tickets" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01HSRN1H9JRR50VA2PBQHS9MSS=visi%C3%B3n-general viewing-support-tickets=visualizaci%C3%B3n-de-tickets-de-soporte h_01HSRN1H9KB5CFTJV67FRKC0K8=visualizaci%C3%B3n-de-tickets-de-soporte" />

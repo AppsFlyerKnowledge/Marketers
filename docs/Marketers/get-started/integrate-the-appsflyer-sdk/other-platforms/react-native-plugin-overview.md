@@ -1,5 +1,5 @@
 ---
-title: React Native plugin overview
+title: Descripción general del plugin React Native
 metadata:
   keywords:
     - React Plugin
@@ -16,19 +16,18 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-11-22T06:25:19Z'
-  edited_at: '2023-11-09T16:07:04Z'
+  edited_at: '2024-02-02T18:36:33Z'
   id: 217108646
-  locale: en-us
+  locale: es
   section: Other platforms
   section_id: 6551244207121
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/217108646-React-Native-plugin-overview
+  url: https://support.appsflyer.com/hc/es/articles/217108646
 ---
-> **At a glance:** Integrate AppsFlyer SDK into iOS/Android apps developed with React Native to measure installs, in-app events, media sources, and more.
+> **En resumen:** Integra el SDK de AppsFlyer en aplicaciones iOS/Android desarrolladas con React Native para medir las instalaciones, los eventos in-app, las fuentes de medios y más.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * The plugin is open-source and available on <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin">GitHub</Anchor>.
-> * Go to our [Dev Hub](https://dev.appsflyer.com/hc/docs/react-native-plugin) to learn how to install and integrate the React Native plugin in your app.
+> * El plugin es de código abierto y está disponible en <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin">GitHub</Anchor>.
+> * Ve a nuestro [Dev Hub](https://dev.appsflyer.com/hc/docs/react-native-plugin) para aprender a instalar e integrar el plugin React Native en tu aplicación.
 
-<div data-zendesk-anchors="h_01HE7SAKK0E1HGGRGS6PMQ4Q28=important" />
+<div data-zendesk-anchors="h_01HE7SAKK0E1HGGRGS6PMQ4Q28=importante" />

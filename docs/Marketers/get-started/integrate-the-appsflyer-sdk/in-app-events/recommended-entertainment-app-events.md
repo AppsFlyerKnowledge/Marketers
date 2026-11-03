@@ -1,5 +1,5 @@
 ---
-title: Recommended entertainment app events
+title: Eventos de aplicación recomendados para entretenimiento
 metadata:
   keywords:
     - Advertisers
@@ -14,260 +14,259 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-04-25T10:44:33Z'
-  edited_at: '2026-02-25T13:59:20Z'
+  edited_at: '2026-08-12T12:01:15Z'
   id: 360019699898
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019699898-Recommended-entertainment-app-events
+  url: https://support.appsflyer.com/hc/es/articles/360019699898
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your entertainment app.
+> **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de entretenimiento.
 
-## <Image alt="InApp_Events_streaming.png" src="https://files.readme.io/27f2f38b0ce7d242580c60edeff730079a3801f98ff0d7cb8a605380ed11071f-20659453813905.png" width="100px" /> Entertainment
+## <Image alt="InApp_Events_streaming.png" src="https://files.readme.io/27f2f38b0ce7d242580c60edeff730079a3801f98ff0d7cb8a605380ed11071f-20659453813905.png" width="100px" /> Entretenimiento
 
-With the growing requirement by users for on-demand content, the entertainment applications market has become very competitive. The typical events that we suggest recording are user subscriptions, streaming content, and downloading and saving content.
+Los usuarios cada vez quieren ver más contenido a demanda, por lo que el mercado de las aplicaciones de entretenimiento en línea se ha vuelto muy competitivo. Los eventos típicos que recomendamos atribuir son: las suscripciones de los usuarios, la transmisión de contenido y la descarga y el almacenamiento de contenido.
 
-Recording events can help you determine:
+Registrar estos eventos puede ayudarte a determinar:
 
-* What content users consume
-* Campaign performance (according to what content users demand)
-* User engagement and usage
+* Qué tipo de contenido consumen los usuarios.
+* Rendimiento de la campaña según el contenido que demandan los usuarios
+* Engagement y uso por parte de los usuarios.
 
-These events are also relevant for entertainment apps that run on the following smart TVs:
+Estos eventos también son relevantes para las aplicaciones de entretenimiento que se ejecutan en las siguientes TV inteligentes:
 
 * Android Smart TV
 * Apple TV (tvOS)
 * Amazon Fire TV
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=entertainment">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=entertainment&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">**AppsFlyer developer hub**</Anchor>.
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=entertainment">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=entertainment&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Puedes encontrar instrucciones detalladas para tu desarrollador en el **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.**
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Flowchart_for_recommended_events entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
+[![Diagrama_de_flujo_para_eventos_recomendados entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the entertainment vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que son típicas de la vertical de entretenimiento. Cada estructura incluye un nombre de evento predefinido y los parámetros del evento sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Learn how many users installed the app and completed the signup process, and what signup methods your users prefer.
+Descubrir cuántos usuarios instalaron la aplicación y completaron el proceso de registro, y qué métodos de registro prefieren tus usuarios.
 
-**Trigger**
+**Disparador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Method the user chooses to sign up with | Facebook, Google, email |
+| af\_registration\_method | Método que elige el usuario para registrarse. | Facebook, Google, correo electrónico |
 
 </Accordion>
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Acceso (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Disparador**
 
-When the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="start-trial-af_start_trial" />
 
-<Accordion title="Start trial (af_start_trial)">
+<Accordion title="Comenzar prueba (af_start_trial)">
 
-**Purpose**
+**Finalidad**
 
-Many streaming services offer users a trial period to explore premium features. This event can help you:
+Muchos servicios de reproducción en línea les ofrecen a los usuarios un período de prueba para explorar las características premium. Este evento puede ayudarte a:
 
-* See how many users opt-in for a trial period
-* Whether the trial is part of a promotion or a collaboration with a partner
-* What promotion prompted the user to activate the trial period
+* Ver cuántos usuarios optaron por un período de prueba.
+* Ya sea que la prueba sea parte de una promoción o una colaboración con un partner.
+* Qué promoción llevó al usuario a activar el período de prueba.
 
-To record and validate this event, see <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">Purchase and subscription validation</Anchor>.
+Para reportar un evento que incluye varios elementos, haz clic <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">aquí</Anchor>.
 
-**Trigger**
+**Activador**
 
-When the user opts-in and activates the trial period
+Cuando el usuario opta por activar el período de prueba.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| trial\_method | Method to activate the trial | Free with a new phone, free with a carrier, promotion, coupon code |
-| trial\_method\_identifier | Identifier of the trial method | Name of carrier, for example, **Vodafone**<br /><br />Name of the partner, for example, **Meta ads**<br /><br />Coupon code, for example, **TRA123** |
+| método\_de\_prueba | Método para activar la prueba. | Gratis con un teléfono nuevo, gratis con el proveedor, promoción, código de cupón. |
+| identificador\_del\_método\_de\_prueba | Identificador del método de prueba | Nombre del proveedor, por ejemplo, **Vodafone**<br /><br />Nombre del partner, por ejemplo, **Anuncios de Meta**<br /><br />Código del cupón, por ejemplo, **TRA123** |
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> If you are mapping this event to the Meta ads StartTrial event, and want to associate revenue, use the af\_price parameter instead of the af\_revenue parameter.
+> Si vas a asignar este evento al evento StartTrial de Anuncios de Meta y deseas asociar los ingresos, usa el parámetro af\_price en lugar del parámetro af\_revenue.
 
 </Accordion>
 
 <div id="subscription-af_subscribe" />
 
-<Accordion title="Subscription (af_subscribe)">
+<Accordion title="Suscripción (af_subscribe)">
 
-**Purpose**
+**Finalidad**
 
-Subscription is at the core of streaming services. This event can help you:
+La suscripción es uno de los aspectos fundamentales de los servicios de reproducción en línea (streaming). Este evento puede ayudarte a:
 
-* See which campaigns bring users that subscribe
-* Compare the number of users in a trial to subscribed users
-* Determine the amount of revenue generated from subscriptions and attribute it to campaigns and media sources
+* Ver qué campañas atraen a usuarios que se suscriben.
+* Comparar la cantidad de usuarios en período de prueba con los usuarios suscritos.
+* Determinar el monto de los ingresos generados a partir de las suscripciones y atribuirlos a campañas y fuentes de medios.
 
-**Trigger**
+**Activador**
 
-* When the user successfully subscribes
-* When a subscription is renewed
+* Cuando el usuario se suscribe correctamente.
+* Cuando se renueva una suscripción.
 
-See our Subscription attribution—Overview for more information.
+Consulta nuestra Guía general de atribución de suscripciones para obtener más información.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| new\_subscription | Whether the subscription is new or renewed | true / false |
-| af\_coupon\_code | Coupon code, if one is used during the subscription | 3MonthsSubscription |
-| coupon\_code\_value | How much the coupon deducts from the initial price | 10% |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Revenue associated with the subscription | 5.95 |
-| af\_currency | Currency of the payment for the subscription | USD |
-| subscription\_method | Payment method used in the subscription | credit card, e-wallet, PayPal |
-| expiration\_date | Expiration date of the subscription | 2018/07/18 |
+| new\_subscription | Si la suscripción es nueva o se renueva | Verdadero/Falso |
+| af\_coupon\_code | Código de cupón, si se usa uno durante la suscripción. | Suscripción por 3 meses |
+| coupon\_code\_value | Cuánto deduce el cupón del precio inicial | 10% |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Ingresos asociados con la suscripción. | 5.95 |
+| af\_currency | Moneda en que se paga la suscripción. | USD (Dólar estadounidense) |
+| subscription\_method | Método de pago usado para la suscripción. | Tarjeta de crédito, billetera electrónica, PayPal |
+| expiration\_date | Fecha de vencimiento de la suscripción. | 2018/07/18 |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que incluye nombres de eventos personalizados y los parámetros de eventos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="media-play-media_play" />
 
-<Accordion title="Media play (media_play)">
+<Accordion title="Reproducción de medios (media_play)">
 
-**Purpose**
+**Finalidad**
 
-Record the events in which users play media that you offer. Such media can be, for example, videos, music, tv shows, or radio shows.
+Registra los eventos en los que los usuarios reproducen los medios que ofreces. Dichos medios pueden ser, por ejemplo, videos, música, programas de televisión o programas de radio.
 
-Recording this event can help you determine:
+Registrar este evento puede ayudarte a determinar:
 
-* Media consumption by type and content
-* The languages of the most popular streamed content
-* Minimum, maximum, and average duration of the streamed content
+* Consumo de medios por tipo y contenido.
+* Los idiomas del contenido reproducido en línea más popular.
+* Duración mínima, máxima y promedio del contenido reproducido en línea.
 
-**Trigger**
+**Disparador**
 
-After a predefined number, for example, 2 minutes, of streamed content.
+Después de una cantidad predefinida, por ejemplo, 2 minutos, de contenido reproducido en línea.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_content\_type | Type of content that is streamed | tv show, music |
-| af\_content\_id | ID of the content that is streamed | 092, E34 |
-| af\_content | Title of the content, for example, the song name or the title and episode of a tv show | Title of content |
-| media\_duration | Total duration of the media, for example, the total length of a video. | 5 |
-| language | Language of the content | en-us, fr, es |
+| af\_content\_type | Tipo de contenido que se reproduce en línea. | Programa de TV, música |
+| af\_content\_id | ID del contenido que se reproduce en línea. | 092, E34 |
+| af\_content | El título del contenido, por ejemplo, el nombre de una canción o el título y el episodio de un programa de TV. | Título del contenido |
+| duración\_multimedia | Duración total del medio, por ejemplo, la longitud total de un video. | 5 |
+| Indicador de atribución AF | Idioma del contenido. | en-us, fr, es |
 
 </Accordion>
 
 <div id="media-minutes-media_minutes" />
 
-<Accordion title="Media minutes (media_minutes)">
+<Accordion title="Minutos de medios (media_minutes)">
 
-**Purpose**
+**Finalidad**
 
-Media minutes is how much of a given content item the user consumes. After the revenue metric, this is the most important metric in the streaming industry because it allows you to estimate users' usage of the service. It also allows you to understand what is the overall usage rate of the service, and what content is the most popular. This event can help you:
+Los minutos de medios indican la cantidad de un elemento de contenido determinado que consume el usuario. Después de la métrica de ingresos, esta es la métrica más importante de la industria de la reproducción en línea porque te permite estimar el uso del servicio por parte de los usuarios. Además, te permite saber cuál es la tasa de uso general del servicio y cuál es el contenido más popular. Este evento puede ayudarte a:
 
-* See which users make extensive use of your service
-* Understand what media types and content types are popular
+* Ver qué usuarios hacen un uso extensivo de tu servicio.
+* Saber qué tipos de medios y qué tipos de contenido son populares.
 
-**Trigger**
+**Disparador**
 
-One of the following:
+Una de los siguientes:
 
-* When the user finishes streaming a media item
-* When the user quits streaming a media item
+* Cuándo el usuario termina de reproducir en línea un elemento de medios.
+* Cuándo el usuario deja de reproducir en línea un elemento de medios.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example  value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| minutes\_consumed | Number of minutes the user engaged with the media. For example, the total length of a video might be 5 minutes, but a user might only watch 3 minutes. | 3 |
-| af\_content\_type | Type of content that is streamed | tv show, music |
-| af\_content\_id | ID of the content that is streamed | 092, E34 |
-| af\_content | Title of the content, for example, the song name or the title and episode of a tv show | Title of content |
-| media\_duration | Total duration of the media, for example, the total length of a video. | 5 |
-| language | Language of the content | en-us, fr, es |
+| minutes\_consumed | Número de minutos que el usuario interactuó con el medio. Por ejemplo, la duración total de un video puede ser de 5 minutos, pero un usuario puede que solo vea 3 minutos. | 3 |
+| af\_content\_type | Tipo de contenido que se reproduce en línea. | Programa de TV, música |
+| af\_content\_id | ID del contenido que se reproduce en línea. | 092, E34 |
+| af\_content | El título del contenido, por ejemplo, el nombre de una canción o el título y el episodio de un programa de TV. | Título del contenido |
+| duración\_multimedia | Duración total del medio, por ejemplo, la longitud total de un video. | 5 |
+| Indicador de atribución AF | Idioma del contenido. | en-us, fr, es |
 
 </Accordion>
 
 <div id="media-downloaded-media_downloaded" />
 
-<Accordion title="Media downloaded (media_downloaded)">
+<Accordion title="Medios descargados (media_downloaded)">
 
-**Purpose**
+**Finalidad**
 
-Highlight user preference by recording media play and media download and comparing the two. You can see what media users prefer to stream and what media they prefer to download.
+Destaca las preferencias del usuario registrando la reproducción de medios y la descarga de medios y comparando ambas. Puedes ver qué medios los usuarios prefieren reproducir y cuáles prefieren descargar.
 
-**Trigger**
+**Activador**
 
-When a user starts downloading media
+Cuándo un usuario comienza a descargar medios.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_content\_type | Type of content | tv show, music |
-| af\_content\_id | ID of the content | 092, E34 |
-| af\_content | Title of the content, for example, the song name or the title and episode of a tv show | Title of content |
-| media\_duration | Total duration of the media, for example, the total length of a video. | 5 |
-| language | Language of the content | en-us, fr, es |
+| af\_content\_type | Tipo de contenido. | Programa de TV, música |
+| af\_content\_id | ID del contenido. | 092, E34 |
+| af\_content | El título del contenido, por ejemplo, el nombre de una canción o el título y el episodio de un programa de TV. | Título del contenido |
+| duración\_multimedia | Duración total del medio, por ejemplo, la longitud total de un video. | 5 |
+| Indicador de atribución AF | Idioma del contenido. | en-us, fr, es |
 
 </Accordion>
 
 <div id="media-saved-media_saved" />
 
-<Accordion title="Media saved (media_saved)">
+<Accordion title="Medios guardados (media_saved)">
 
-**Purpose**
+**Finalidad**
 
-Helps you highlight user preferences
+Te ayuda a destacar las preferencias de los usuarios.
 
-**Trigger**
+**Disparador**
 
-Whenever media is saved on the user's device
+Cada vez que el usuario guarda medios en su dispositivo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_content\_type | Type of content | tv show, music |
-| af\_content\_id | ID of the content | 092, E34 |
-| af\_content | Title of the content, for example, the song name or the title and episode of a tv show | Title of content |
-| media\_duration | Total duration of the media, for example, the total length of a video. | 5 |
-| language | Language of the content | en-us, fr, es |
+| af\_content\_type | Tipo de contenido. | Programa de TV, música |
+| af\_content\_id | ID del contenido. | 092, E34 |
+| af\_content | El título del contenido, por ejemplo, el nombre de una canción o el título y el episodio de un programa de TV. | Título del contenido |
+| duración\_multimedia | Duración total del medio, por ejemplo, la longitud total de un video. | 5 |
+| Indicador de atribución AF | Idioma del contenido. | en-us, fr, es |
 
 </Accordion>
 
-<div data-zendesk-anchors="entertainment=-entertainment h_01HGTAX1B0KT8Q6PRE41JCPJ60=-entertainment h_01HGTAX1B0K2RKYGPFFARM0E1B=important h_01HGTAX1B05C7G67RJPSG3YF66=recommended-structures-for-predefined-events h_01HGTAX1B0CN19DY7PAR27YATD=complete-registration-af_complete_registration h_01HGTAX1B0MG1MTD7QXBCK6JHN=login-af_login h_01HGTAX1B0GTJ6ZWRNW5SEJVE9=start-trial-af_start_trial h_01HGTAX1B1XW0RAV8WPP0HF8HD=note h_01HGTAX1B1AHHGW6SMXST1KXQE=subscription-af_subscribe h_01HGTAX1B1ATFH70K2BJZ7XW13=recommended-structures-for-custom-events h_01HGTAX1B1WRQ39H27KPRFZH9W=media-play-media_play h_01HGTAX1B15Z24J8JKKAQH2Z2S=media-minutes-media_minutes h_01HGTAX1B1JPY44SYM59K0M9H2=media-downloaded-media_downloaded h_01HGTAX1B1FXF1DRC91VYRCGMP=media-saved-media_saved" />
+<div data-zendesk-anchors="entertainment=-entretenimiento h_01HGTAX1B0KT8Q6PRE41JCPJ60=-entretenimiento h_01HGTAX1B0K2RKYGPFFARM0E1B=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAX1B05C7G67RJPSG3YF66=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAX1B0CN19DY7PAR27YATD=complete-registration-af_complete_registration h_01HGTAX1B0MG1MTD7QXBCK6JHN=login-af_login h_01HGTAX1B0GTJ6ZWRNW5SEJVE9=start-trial-af_start_trial h_01HGTAX1B1XW0RAV8WPP0HF8HD=nota h_01HGTAX1B1AHHGW6SMXST1KXQE=subscription-af_subscribe recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAX1B1ATFH70K2BJZ7XW13=estructuras-recomendadas-para-eventos-personalizados h_01HGTAX1B1WRQ39H27KPRFZH9W=media-play-media_play h_01HGTAX1B15Z24J8JKKAQH2Z2S=media-minutes-media_minutes h_01HGTAX1B1JPY44SYM59K0M9H2=media-downloaded-media_downloaded h_01HGTAX1B1FXF1DRC91VYRCGMP=media-saved-media_saved" />

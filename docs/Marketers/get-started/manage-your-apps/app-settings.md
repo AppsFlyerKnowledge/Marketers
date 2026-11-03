@@ -1,5 +1,5 @@
 ---
-title: App Settings
+title: Configuración de la aplicación
 metadata:
   keywords:
     - App Settings
@@ -17,149 +17,178 @@ x-zendesk:
     - Agencies
     - pm-guy-riesenberg
   created_at: '2016-08-16T07:50:37Z'
-  edited_at: '2026-10-12T15:24:47Z'
+  edited_at: '2026-10-19T14:13:26Z'
   id: 211719806
-  locale: en-us
+  locale: es
   section: Manage your apps
   section_id: 6551015977105
-  url: https://support.appsflyer.com/hc/en-us/articles/211719806-App-Settings
+  url: https://support.appsflyer.com/hc/es/articles/211719806
 ---
-> **At a glance:** Learn about the settings that impact the attribution and analytics of your app across all media sources.
+> **At a glance:** Descubre las configuraciones que influyen en la atribución y el análisis de tu aplicación a través de todas las fuentes de medios.
 
-## App Settings
+## Configuración de la aplicación
 
-**Access:**
+**Acceso:**
 
-* An admin (or other users with appropriate permissions) can **change** app settings.
-* All account users with access to a specific app can **view** its app settings.
+* Un administrador (u otros usuarios con los permisos adecuados) puede **modificar** la configuración de la aplicación.
+* Todos los usuarios de la cuenta con acceso a una aplicación específica pueden **consultar** su configuración.
 
-**To change or view app settings:**
+**Para modificar o consultar la configuración de la aplicación:**
 
-1. In AppsFlyer, from the side menu, select **Settings** > **App Settings.**
-2. View settings and make changes as needed on the App Settings page.
-3. Click **Save settings.**
+1. En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **Configuración de la aplicación.** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
+2. Consulta las configuraciones y realiza los cambios necesarios en la página de configuración de la aplicación.
+3. Haz clic en **Guardar configuración.**
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> You can also change many of these settings for multiple apps at once, instead of one at a time. Look for the **Apply to additional apps** button next to a changed setting. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.
+> También puedes cambiar muchos de estos ajustes para varias apps a la vez, en lugar de hacerlo de una en una. Busca el botón **Aplicar a apps adicionales** junto a un ajuste modificado. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar ajustes a varias aplicaciones a la vez</Anchor>.
 
-### General app settings
+### Configuración general de la aplicación
 
 <Table>
   <thead>
     <tr>
       <th>
-        Setting
+        Configuración
       </th>
       <th>
-        Description
+        Descripción
       </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td><span id="sdk-authentication-dev-key"></span>
-        SDK authentication: Dev key
+        Autenticación del SDK: Clave de desarrollador
       </td>
       <td>
-        <ul><li>The Dev key authenticates events sent by the app or by S2S to AppsFlyer.</li><li>The key is unique per account and is used by all apps in the account.</li><li>The key is available on the App Settings page to any account user with access to that app.</li><li>[Optional] An individual app key can be allocated in certain scenarios. Reach out to your CSM to discuss this.</li></ul>
+        * La clave de desarrollador autentica los eventos enviados por la aplicación o S2S a AppsFlyer.
+        * La clave es única para cada cuenta y la utilizan todas las aplicaciones de la misma cuenta.
+        * La clave está disponible en la página de configuración de la aplicación para cualquier usuario con acceso a esa aplicación.
+        * [Opcional] Se puede asignar una clave individual para la aplicación en ciertos escenarios. Contacta con tu CSM para discutir sobre esto.
       </td>
     </tr>
     <tr>
       <td><span id="aggregated-advanced-privacy-ios-apps"></span>
-        Aggregated Advanced Privacy (iOS apps)
+        Privacidad Avanzada Agregada (aplicaciones iOS)
       </td>
       <td>
-        When turned on, user-level attribution data is unavailable to advertisers. Postbacks and event data shared with partners are aggregated and anonymous (more about the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> framework).<br /><br />When turned off, user-level attribution data is available for all partners as aggregated data and can be set for each partner individually.<br /><br />You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.
+        Cuando está activada, los datos de atribución a nivel de usuario no están disponibles para los anunciantes. Los datos de eventos y postbacks compartidos con partners son agregados y anónimos (más detalles sobre el framework de <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad Avanzada Agregada</Anchor>).
+
+        Cuando está desactivada, los datos de atribución a nivel de usuario están disponibles para todos los partners como datos agregados y pueden configurarse para cada partner individualmente.
+
+        También puedes cambiar este ajuste para varias aplicaciones a la vez. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar ajustes a varias aplicaciones a la vez</Anchor>.
       </td>
     </tr>
     <tr>
       <td><span id="analytics-define-loyal-user-trigger"></span>
-        Analytics: Define loyal user trigger
+        Análisis: Definir el trigger del usuario leal
       </td>
       <td>
-        <ul><li>The trigger to designate a user as a loyal user. The default option set when you add the app is 3 app opens.</li><li>After attributing in-app events, you can use an in-app event as the trigger event.<ul><li>[Default] 3 app opens.</li><li>The loyal user setting is indicative of user quality. Consider using <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#faq">Protect360</Anchor> to combat fraud.</li><li>Changing this setting impacts data retroactively, meaning historical loyal user data is recalculated.</li></ul></li><li>You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.</li></ul>
+        * El trigger para identificar a un usuario como leal. La opción por defecto cuando agregas la aplicación es 3 aperturas de la aplicación.
+        * Después de atribuir eventos in-app, puedes utilizar un evento interno como evento desencadenante.
+          * [Por defecto] 3 aperturas de la aplicación.
+          * La configuración de usuario leal es indicativa de la calidad del usuario. Considera utilizar <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide#faq">Protect360</Anchor> para combatir el fraude.
+          * Cambiar esta configuración afecta los datos de manera retroactiva, recalculando los datos históricos de usuarios leales.
+        * También puedes cambiar este ajuste para varias aplicaciones a la vez. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar ajustes a varias aplicaciones a la vez</Anchor>.
       </td>
     </tr>
     <tr>
       <td><span id="minimum-time-between-sessions"></span>
-        Minimum time between sessions
+        Tiempo mínimo entre sesiones
       </td>
       <td>
-        You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.
+        También puedes cambiar este ajuste para varias aplicaciones a la vez. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar ajustes a varias aplicaciones a la vez</Anchor>.
       </td>
     </tr>
     <tr>
       <td><span id="app-store-country"></span>
-        App store country
+        País de la tienda de aplicaciones
       </td>
       <td>
-        Sets the app store country where the app is available. This setting impacts the app as detailed here.<ul><li>**Changing the app status from pending to live**:<ul><li><Anchor target="_blank" href="/marketers/docs/why-is-my-app-still-pending">When the app goes live</Anchor>, AppsFlyer checks the store using the country setting to retrieve details about the app like its icon.</li><li>If the app is not found in the store country set, AppsFlyer can't change the app status from pending to live.</li></ul></li><li>Redirection behavior is impacted by the setting depending on the scenario, as detailed in the table that follows.</li></ul>
+        Configura el país de la tienda de aplicaciones donde la aplicación está disponible. Esta configuración afecta a la aplicación como se detalla aquí.
 
-        | User type | Redirection scenario |
+        * **Cambio del estado de la aplicación de pendiente a activa**:
+          * <Anchor target="_blank" href="/marketers/es/docs/why-is-my-app-still-pending">Cuando la aplicación se activa</Anchor>, AppsFlyer consulta la tienda utilizando la configuración de país para obtener detalles de la aplicación, como el icono.
+          * Si no se encuentra la aplicación en el país establecido en la tienda, AppsFlyer no podrá cambiar su estado de pendiente a activa.
+        * El comportamiento de redirección depende de la configuración según el escenario, como se detalla en la siguiente tabla.
+
+        | Tipo de usuario | Escenario de redirección |
         | --- | --- |
-        | <span id="mobile"></span>Mobile | Users usually click on attribution links within other mobile apps. On clicking, the operating system determines the app store country that users are redirected to:   \* **Android** redirects based on user IP/location. \* **iOS** redirects to the app store associated with the iTunes account active on the device. |
-        | <span id="mobile-and-web"></span>Mobile and web | When web users click on attribution links, in **websites** (mobile and desktop), the initial redirection is to the store set in-app store country.  On attempting to install, the operating system redirects them to the country store as described for mobile in the preceding row. |
-        | <span id="ipad-ios-13"></span>iPad iOS 13 | Starting from iOS 13, <Anchor target="_blank" href="https://www.apple.com/ipados/features/">iPads serve the desktop version of websites</Anchor>. This means that the user type (mobile or web) is not relevant. A click on an attribution link goes to the desktop site, and after that, redirection rules are those of web users. |
+        | <span id="mobile"></span>Móvil | Normalmente, los usuarios hacen clic en enlaces de atribución dentro de otras aplicaciones móviles. Al hacer clic, el sistema operativo determina el país de la tienda a la que se redirecciona a los usuarios:<br /><br />* **Android** redirecciona según la IP o ubicación del usuario.<br />* **iOS** redirecciona a la tienda de aplicaciones asociada con la cuenta de iTunes activa en el dispositivo. |
+        | <span id="mobile-and-web"></span>Móvil y web | Cuando los usuarios web hacen clic en enlaces de atribución en **sitios web** (tanto móviles como ordenadores), la redirección inicial es a la tienda del país establecido en la tienda de aplicaciones.<br /><br />Al intentar instalar, el sistema operativo los redirecciona a la tienda del país según lo descrito para móviles en la fila anterior. |
+        | <span id="ipad-ios-13"></span>iPad iOS 13 | Desde iOS 13, <Anchor target="_blank" href="https://www.apple.com/ipados/features/">los iPads ofrecen la versión de ordenador de los sitios web</Anchor>. Esto implica que el tipo de usuario (móvil o web) no es relevante. Un clic en un enlace de atribución lleva al sitio de escritorio y, a partir de ahí, las reglas de redirección son las aplicables a los usuarios web. |
       </td>
     </tr>
     <tr>
       <td><span id="localization-time-zone"></span>
-        Localization: Time Zone
+        Localización: Zona horaria
       </td>
       <td>
-        The default app setting is UTC. <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">About the app time-zone.</Anchor><br /><br />Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.
+        La configuración predeterminada de la aplicación es UTC. <Anchor target="_blank" href="/marketers/es/docs/changing-app-time-zone-settings">Sobre de la zona horaria de la aplicación.</Anchor>
+
+        El soporte para cambiar esta configuración en varias aplicaciones a la vez estará disponible pronto. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>.
       </td>
     </tr>
     <tr>
       <td><span id="localization-currency"></span>
-        Localization: Currency
+        Localización: Moneda
       </td>
       <td>
-        <ul><li>This defines the app-specific currency which is used for the following metrics:<ul><li>Cost</li><li>In-app events revenue</li><li>Ad revenue</li></ul></li><li>The default app setting is USD.<ul><li>Currency change is available to apps with no revenue or cost.</li><li>For new apps, the currency is set when the app is added.</li></ul></li><li>Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.</li></ul>**<span id="reporting-tools-impacted-by-app-currency"></span>Reporting tools impacted by app currency**
+        * Esto define la divisa específica de la aplicación que se utiliza para las siguientes métricas:
+          * Costo
+          * Ingresos de eventos in-app
+          * Ingresos de anuncios
+        * La configuración predeterminada de la aplicación es USD.
+          * El cambio de moneda está disponible para aplicaciones que no tienen ingresos ni costos.
+          * En el caso de nuevas aplicaciones, la moneda se establece al añadir la aplicación.
+        * El soporte para cambiar esta configuración en varias aplicaciones a la vez estará disponible pronto. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>.
 
-        | Reporting tool | Currency options available |
+        #### Herramientas de reportes afectadas por la moneda de la aplicación
+
+        | Herramienta de reportes | Opciones de moneda disponibles |
         | --- | --- |
-        | <span id="dashboards"></span>Dashboards | App-specific currency |
-        | <span id="export-data-page"></span>Export data page | App-specific currency |
-        | <span id="push-api"></span>Push API | App-specific currency and USD available simultaneously |
-        | <span id="pull-api"></span>Pull API | Aggregate data: App-specific currency  Raw data: Selectable USD or app-specific currency |
-        | <span id="master-api"></span>Master API | Selectable USD or app-specific currency |
-        | <span id="data-locker"></span>Data Locker | Only USD |
+        | <span id="dashboards"></span>Paneles de control | Moneda específica de la aplicación |
+        | <span id="export-data-page"></span>Página de exportación de datos | Moneda específica de la aplicación |
+        | <span id="push-api"></span>API Push | Moneda específica de la aplicación y USD disponibles simultáneamente |
+        | <span id="pull-api"></span>API Pull | Datos agregados: Moneda específica de la aplicación<br /><br />Raw data: USD seleccionable o moneda específica de la aplicación |
+        | <span id="master-api"></span>API maestra | USD seleccionable o moneda específica de la aplicación |
+        | <span id="data-locker"></span>Casillero de datos | Solo USD |
       </td>
     </tr>
   </tbody>
 </Table>
 
-### Attribution settings
+### Configuración de atribución
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The settings in this table apply to mobile apps (iOS and Android). Some settings may not be available, or may work differently, for Web apps.
+> Los ajustes de esta tabla se aplican a las aplicaciones móviles (iOS y Android). Es posible que algunos ajustes no estén disponibles o que funcionen de forma diferente en las aplicaciones web.
 
-| Setting | Description |
+| Configuración | Descripción |
 | --- | --- |
-| <span id="reattribution-window"></span>Re-attribution window | The <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">Re-attribution window</Anchor> is the period starting from the date of the first install, during which re-installs cannot be attributed as new installs.<ul><li>[Default] Three months</li><li>Value range: 1-24 months</li></ul>Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
-| <span id="viewthrough-attribution-via-probabilistic-modeling"></span>Enable view-through attribution via probabilistic modeling | <ul><li>If disabled, enable view-through probabilistic modeling.</li><li>After enabling view-through probabilistic modeling, you must also enable view-through attribution in the ad network integration tab.</li><li>Support for changing this setting for multiple apps at once is coming soon. This will require fingerprinting to already be enabled. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.</li></ul> |
-| <span id="reengagement-attribution"></span>Re-engagement attribution | Related reading: <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Retargeting guide</Anchor><br /><br />**To turn on re-engagement attribution:**<ul><li>In AppsFlyer, from the side menu, select **Settings** > **App settings**, turn on **Re-engagement attribution**.</li></ul>In addition to the app setting, you must also <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#retargeting-settings">make per partner settings</Anchor>.<br /><br /><Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#exclusion-windows">**Minimum time between re-engagement conversions**</Anchor> setting is used to prevent ending an existing re-engagement window before its set duration.<br /><br />You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. When applied in bulk, you'll also see a confirmation step before the change takes effect — this doesn't apply when changing an individual app. |
-| <span id="minimum-time-between-reengagement-conversions"></span>Minimum time between re-engagement conversions | Prevents an existing re-engagement window from ending before its set duration. Related reading: <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#exclusion-windows">Retargeting attribution guide</Anchor>.<br /><br />You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
-| <span id="organic-search-seo-mobile-app-attribution"></span>SEO (organic search) and AEO mobile app re-engagement attribution | Related reading: <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Organic search attribution</Anchor><br /><br />**To turn on SEO / AEO attribution:**<ul><li>In AppsFlyer, from the side menu, select **Settings** > **App settings**, turn on **SEO (organic search) and AEO mobile app re-engagement attribution.**</li></ul>You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
-| <span id="uninstall-measurement"></span>Uninstall measurement | <Anchor target="_blank" href="/marketers/docs/measure-uninstalls">Measurement of uninstalls</Anchor> relates to installs occurring when uninstall measurement is on.<br /><br />This setting is available only to iOS and Android apps.<br /><br />**To enable uninstall measurement:**<ol><li>Complete per operating system the following:<ul><li>**iOS**: Apps that implement the iOS uninstall attribution feature need to upload the P12 certificate here.</li><li>**Android**: Apps require a Firebase/GCM Server Key to be defined here for Android uninstall attribution.</li></ul></li><li>Turn on **Uninstall measurement**.</li><li>Click **Save settings**</li></ol>**To stop uninstall measurment:**<ol><li>Turn off **Uninstall measurement**.</li><li>Click **Save settings.**</li></ol>Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
+| <span id="reattribution-window"></span>Ventana de reatribución | La <Anchor target="_blank" href="/marketers/es/docs/set-up-re-attribution-window">ventana de reatribución</Anchor> es el periodo que comienza desde la fecha de la primera instalación, durante el cual las reinstalaciones no pueden atribuirse como nuevas instalaciones.<ul><li>[Predeterminado] Tres meses</li><li>Rango de valores: 1-24 meses</li></ul>El soporte para cambiar esta configuración en varias aplicaciones a la vez estará disponible pronto. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>. |
+| <span id="viewthrough-attribution-via-probabilistic-modeling"></span>Atribución por visualización mediante modelado probabilístico | <ul><li>Si está deshabilitado, habilita el modelado probabilístico por impresiones.</li><li>Después de habilitar el modelado probabilístico de visualización, también debe activar la atribución por visualización en la pestaña de integración de la ad network.</li><li>El soporte para cambiar esta configuración en varias aplicaciones a la vez estará disponible pronto. Para ello, el fingerprinting ya debe estar habilitado. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>.</li></ul> |
+| <span id="reengagement-attribution"></span>Atribución de re-engagement | Lectura relacionada: <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">Guía de retargeting</Anchor><br /><br />**Para habilitar la atribución de re-engagement:**<ul><li>En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **Configuración de la aplicación**, y activa la **Atribución de re-engagement**.</li></ul>Además de la configuración de la aplicación, también debes <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide#retargeting-settings">realizar configuraciones específicas para cada partner</Anchor>.<br /><br />La configuración del <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide#ventanas-de-exclusión">**tiempo mínimo entre conversiones de re-engagement**</Anchor> se usa para evitar que una ventana de re-engagement termine antes de su duración establecida.<br /><br />También puedes cambiar esta configuración para varias aplicaciones a la vez. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>. Cuando se aplique de forma masiva, también verás un paso de confirmación antes de que el cambio surta efecto; esto no se aplica al cambiar una aplicación individual. |
+| <span id="minimum-time-between-reengagement-conversions"></span>Tiempo mínimo entre conversiones de recaptación (re-engagement) | Impide que una ventana de re-engagement existente finalice antes de que termine la duración configurada. Lectura relacionada: <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide#ventanas-de-exclusión">Guía de atribución de retargeting</Anchor>.<br /><br />También puedes cambiar esta configuración para varias aplicaciones a la vez. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>. |
+| <span id="organic-search-seo-mobile-app-attribution"></span>Atribución de re-engagement de aplicaciones móviles para SEO (búsqueda orgánica) y AEO | Lectura relacionada: <Anchor target="_blank" href="/marketers/es/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Atribución de búsqueda orgánica</Anchor><br /><br />**Para activar la atribución de SEO/AEO:**<ul><li>En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Configuración de la aplicación** y activa la **atribución de re-engagement de aplicaciones móviles en SEO (búsqueda orgánica) y AEO.**</li></ul>También puedes cambiar esta configuración para varias aplicaciones a la vez. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>. |
+| <span id="uninstall-measurement"></span>Medición de desinstalaciones | <Anchor target="_blank" href="/marketers/es/docs/measure-uninstalls">La medición de desinstalaciones</Anchor> está relacionada con las instalaciones que ocurren cuando la medición está activa.<br /><br />Este ajuste está disponible solo para aplicaciones de iOS y Android.<br /><br />**Para habilitar la medición de desinstalaciones:**<ol><li>Completa lo siguiente según el sistema operativo:<ul><li>**iOS**: Las aplicaciones que implementan la función de atribución de desinstalación en iOS deben cargar aquí el certificado P12.</li><li>**Android**: Para la atribución de desinstalación en Android, las aplicaciones requieren definir una clave de servidor Firebase/GCM aquí.</li></ul></li><li>Activa la **Medición de desinstalaciones**.</li><li>Haz clic en **Guardar configuración**.</li></ol>**Para detener la medición de desinstalaciones:**<ol><li>Desactiva la **Medición de desinstalaciones**.</li><li>Haz clic en **Guardar configuración.**</li></ol>El soporte para cambiar esta configuración en varias aplicaciones a la vez estará disponible pronto. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>. |
 
-### Advanced settings
+### Configuraciones avanzadas
 
-| Setting | Description |
+| Configuración | Descripción |
 | --- | --- |
-| <span id="mask-ip-address-in-raw-data-reports"></span>Mask IP addresses | When turned on, end-user device <Anchor target="_blank" href="/marketers/docs/apply-ip-masking-to-user-data">IP addresses are masked</Anchor> in raw data reports and in postbacks sent to partners from the currently selected app.<br /><br />You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
-| <span id="reinstall-detection-using-ondevice-storage-ios-only"></span>Reinstall detection using on-device storage (iOS only) | Detect reinstalls without depending on advertising IDs. This is done by storing the last app install date on the secure local storage in the device (in iOS, the Keychain). Determining whether an install was a reinstall or a new install, enables you to deduplicate reinstalls from your NOIs, making attribution analytics more accurate. Note: Only the last app install date is stored in the device's local storage for this purpose - no other device identifier (e.g., IDFA, IDFV) is stored.<br /><br />Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
-| <span id="ios-103-redirect-fallback"></span>iOS 10.3 redirect fallback | [Deprecated] For iOS 10.3+. We've simplified the flow for iOS users and this parameter is no longer in use. <Anchor target="_blank" href="/marketers/docs/uri-scheme-fallback-for-ios">iOS redirections</Anchor>.<br /><br />This option is available only to iOS apps. |
-| <span id="change-app-name"></span>Change app name | <ul><li>The name of the app, which is then displayed throughout the dashboard and data reports. This is useful if you have different versions of the same app, for example, for regional distribution reasons.</li><li>This change impacts the display of the app. The app ID, used to identify the app when using various AppsFlyer APIs, **remains the same**.</li><li>Names are limited to 50 characters.</li></ul> |
-| <span id="outofstore-app-url"></span>Out-of-store app URL | <ul><li>Set the app download URL used as the default redirect destination in attribution links associated with the app.</li><li>This field is mandatory for Android apps specified as out-of-store apps.</li><li>Once set, the URL will be applied as the default redirect destination within about an hour.</li></ul> |
+| <span id="mask-ip-address-in-raw-data-reports"></span>Enmascarar direcciones IP | Cuando está activado, las <Anchor target="_blank" href="/marketers/es/docs/apply-ip-masking-to-user-data">direcciones IP de los dispositivos de los usuarios finales se ocultan</Anchor> en los reportes de raw data y en los postbacks enviados a partners desde la aplicación actualmente seleccionada.<br /><br />También puedes cambiar esta configuración para varias aplicaciones a la vez. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>. |
+| <span id="reinstall-detection-using-ondevice-storage-ios-only"></span>Detección de reinstalaciones usando almacenamiento en el dispositivo (solo iOS) | Detecta reinstalaciones sin depender de IDs de publicidad. Esto se realiza almacenando la última fecha de instalación de la aplicación en el almacenamiento local seguro del dispositivo (en iOS, el Keychain). Determinar si una instalación fue una reinstalación o una nueva instalación te permite desduplicar reinstalaciones de tus NOI, haciendo que el análisis de atribución sea más preciso. Nota: Para este fin, solo se almacena en el almacenamiento local del dispositivo la fecha de la última instalación de la app; no se almacena ningún otro identificador del dispositivo (por ejemplo, IDFA, IDFV).<br /><br />El soporte para cambiar esta configuración en varias aplicaciones a la vez estará disponible pronto. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>. |
+| <span id="ios-103-redirect-fallback"></span>Alternativa de redirección en iOS 10.3 | [Obsoleto] Para iOS 10.3+. Hemos simplificado el flujo para los usuarios de iOS y ya no se utiliza este parámetro. <Anchor target="_blank" href="/marketers/es/docs/uri-scheme-fallback-for-ios">Redirecciones en iOS</Anchor>.<br /><br />Esta opción está disponible únicamente para aplicaciones iOS. |
+| <span id="change-app-name"></span>Cambiar nombre de la aplicación | <ul><li>El nombre de la app se muestra en el dashboard y en los reportes de datos. Esto es útil si tienes distintas versiones de la misma app, por ejemplo, por motivos de distribución regional.</li><li>Este cambio afecta cómo se muestra la app. El ID de la app, que se utiliza para identificarla al usar varias APIs de AppsFlyer, **permanece igual**.</li><li>Los nombres están limitados a 50 caracteres.</li></ul> |
+| <span id="outofstore-app-url"></span>URL de la app fuera de la tienda | <ul><li>Configura la URL de descarga de la app como destino predeterminado de redirección para los enlaces de atribución asociados con la app.</li><li>Este campo es obligatorio para las aplicaciones de Android especificadas como fuera de la tienda.</li><li>Una vez configurada, la URL se aplicará como destino predeterminado de redirección en aproximadamente una hora.</li></ul> |
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Retargeting attribution guide</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Organic search attribution</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">Guía de atribución de retargeting</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Atribución de búsqueda orgánica</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplica la configuración a varias apps a la vez</Anchor>
 
-<div data-zendesk-anchors="01ECHQME56X51MDW9TMA6DBNCK=app-settings h_01M22QK1N5EMMPVZ7ZJ55Z3YFF=note h_01HAVS8CVPQKSDKCEM3YHHJ99Y=general-app-settings h_01HAVS8CVQESWAQXKDW5SNVHCJ=reporting-tools-impacted-by-app-currency h_01HAVS8CVQN1YYTT7S49VGB3J0=attribution-settings h_01M1XPKX6DECQPK4R9X6Y4KMBP=note-1 h_01HAVS8CVQTKXVXSMT5KNYZ3T4=advanced-settings h_01HDPCC9465DR4A3CCXYQC2M56=see-also" />
+<div data-zendesk-anchors="app-settings=configuraci%C3%B3n-de-la-aplicaci%C3%B3n 01ECHQME56X51MDW9TMA6DBNCK=configuraci%C3%B3n-de-la-aplicaci%C3%B3n h_01M22QK1N5EMMPVZ7ZJ55Z3YFF=nota general-app-settings=configuraci%C3%B3n-general-de-la-aplicaci%C3%B3n h_01HAVS8CVPQKSDKCEM3YHHJ99Y=configuraci%C3%B3n-general-de-la-aplicaci%C3%B3n reporting-tools-impacted-by-app-currency=herramientas-de-reportes-afectadas-por-la-moneda-de-la-aplicaci%C3%B3n h_01HAVS8CVQESWAQXKDW5SNVHCJ=herramientas-de-reportes-afectadas-por-la-moneda-de-la-aplicaci%C3%B3n attribution-settings=configuraci%C3%B3n-de-atribuci%C3%B3n h_01HAVS8CVQN1YYTT7S49VGB3J0=configuraci%C3%B3n-de-atribuci%C3%B3n h_01M1XPKX6DECQPK4R9X6Y4KMBP=nota-1 advanced-settings=configuraciones-avanzadas h_01HAVS8CVQTKXVXSMT5KNYZ3T4=configuraciones-avanzadas h_01HDPCC9465DR4A3CCXYQC2M56=consulta-tambi%C3%A9n" />

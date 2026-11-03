@@ -1,5 +1,5 @@
 ---
-title: Using AppsFlyer with TWA
+title: Uso de AppsFlyer con TWA
 metadata:
   keywords:
     - Web View
@@ -18,56 +18,55 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2019-08-26T05:08:01Z'
-  edited_at: '2023-03-26T09:39:25Z'
+  edited_at: '2026-08-12T12:00:34Z'
   id: 360002330178
-  locale: en-us
+  locale: es
   section: Android platform
   section_id: 6551190827921
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360002330178-Using-AppsFlyer-with-TWA
+  url: https://support.appsflyer.com/hc/es/articles/360002330178
 ---
-> **At a glance:** Use AppsFlyer with Trusted Web Activities (TWA) to measure installs and record in-app events.
+> **De un vistazo:** Utiliza AppsFlyer con actividades web de confianza (TWA) para medir las instalaciones y registrar eventos in-app.
 
-## Introduction
+## Introducción
 
-### What are Trusted Web Activities?
+### ¿Qué son las actividades web de confianza?
 
-Trusted web activities (TWA) are a new way to integrate web content with your Android app. The challenge with TWA is to be able to record in-app events. This challenge is addressed in this article. For more information about TWA, see <Anchor target="_blank" href="https://developers.google.com/web/updates/2019/02/using-twa">here</Anchor>.
+Las actividades web de confianza (TWA, por sus siglas en inglés) son una nueva forma de integrar contenido web con tu aplicación de Android. El desafío con las TWA es poder registrar los eventos in-app. Hablamos sobre este desafío en este artículo. Para obtener más información sobre las TWA, consulta <Anchor target="_blank" href="https://developers.google.com/web/updates/2019/02/using-twa">aquí</Anchor>.
 
-TWA can also be used with Progressive Web Apps.
+Las TWA también se pueden utilizar con aplicaciones web progresivas.
 
-### What are Progressive Web Apps?
+### ¿Qué son las aplicaciones web progresivas?
 
-Progressive Web Apps (PWA) are apps that deliver app-like experience but are actually completely web-based. One form of PWA is an Android app whose activities are TWA-based. This is the form of PWA that is discussed in this article. TWA enables you to embed your PWA inside a standalone android application, effectively allowing you to feature your existing PWA application on Play Store.
+Las aplicaciones web progresivas (PWA) son aplicaciones que ofrecen una experiencia similar a una aplicación, pero que en realidad están completamente basadas en la web. Una forma de PWA es una aplicación de Android cuyas actividades se basan en TWA. Esta es la forma de PWA que se analiza en este artículo. Las TWA te permiten integrar tu PWA dentro de una aplicación de Android independiente, lo que te permite presentar tu aplicación PWA existente en Play Store.
 
-The other form, one that is purely web-based, is not discussed in this article. For more information about PWA, see <Anchor target="_blank" href="https://developers.google.com/web/progressive-web-apps/">here</Anchor>.
+La otra forma, que se basa exclusivamente en la web, no se analiza en este artículo. Para obtener más información sobre las PWA, consulta <Anchor target="_blank" href="https://developers.google.com/web/progressive-web-apps/">aquí</Anchor>.
 
-This tab discusses PWA that is embedded in a Trusted Web Activity, an in app full screen web browser. Such apps have the <Anchor target="_blank" href="https://developer.android.com/reference/android/app/Application">Android global application class</Anchor> but whose activities are solely web-based.
+Esta pestaña analiza la PWA que está integrada en una actividad web de confianza, un navegador web de pantalla completa in-app. Estas aplicaciones tienen la <Anchor target="_blank" href="https://developer.android.com/reference/android/app/Application">clase de aplicación global de Android</Anchor> pero cuyas actividades se basan únicamente en la web.
 
-This form of PWA allows you to measure installs. The other form of PWA, those that are purely web-based, doesn't give you the option to measure installs.
+Esta forma de PWA te permite medir las instalaciones. La otra forma de PWA, aquellas que están puramente basadas en web, no te dan la opción de medir las instalaciones.
 
 ## TWA
 
 <div id="sending-inapp-events-from-twa" />
 
-<Accordion title="Sending in-app events from TWA">
+<Accordion title="Envío de eventos in-app desde TWA">
 
-In-app events are sent using the AppsFlyer SDK from native app activities. Since TWA is web-based and not a native activity, you cannot send in-app events using the AppsFlyer SDK. You can use <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">server-to-server in-app events</Anchor> as an alternative. Follow the instructions below to send server-to-server events with TWA.
+Los eventos in-app se envían mediante el SDK de AppsFlyer desde actividades de la aplicación nativa. Dado que la TWA está basada en la web y no es una actividad nativa, no puedes enviar eventos in-app utilizando el SDK de AppsFlyer. Puedes utilizar <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile">eventos in-app de servidor a servidor</Anchor> como alternativa. Sigue las instrucciones a continuación para enviar eventos de servidor a servidor con TWA.
 
-### Prerequisites
+### Requisitos previos
 
-Before you can start sending events from TWA to AppsFlyer, do the following:
+Antes de que puedas comenzar a enviar eventos desde TWA a AppsFlyer, haz lo siguiente:
 
-1. Add the following repository to the project level gradle file:  
+1. Agrega el siguiente repositorio al archivo gradle a nivel de proyecto:  
 
    ```java
    maven { url "https://jitpack.io"}
    ```
-2. Add the following libraries:
-   * For android.support libraries:
-     * Add the following in your build.gradle:  
+2. Agrega las siguientes bibliotecas:
+   * Para bibliotecas de android.support:
+     * Agrega lo siguiente en tu build.gradle:  
        implementation 'com.github.GoogleChrome.custom-tabs-client:customtabs:91b4a1270b'
-     * Import the following libraries:
+     * Importa las siguientes bibliotecas:
 
        ```java
        import android.support.customtabs.CustomTabsClient;
@@ -77,13 +76,13 @@ Before you can start sending events from TWA to AppsFlyer, do the following:
        import android.support.customtabs.trusted.TrustedWebActivityIntentBuilder;
        import static android.support.customtabs.TrustedWebUtils.EXTRA_LAUNCH_AS_TRUSTED_WEB_ACTIVITY
        ```
-   * For androidX libraries:
-     * Add the following in your build.gradle:  
+   * Para bibliotecas de androidX:
+     * Agrega lo siguiente en tu build.gradle:  
 
        ```java
        implementation 'com.github.GoogleChrome:android-browser-helper:ff8dfc4ed3'
        ```
-     * Import the following libraries:
+     * Importa las siguientes bibliotecas:
 
        ```java
        import androidx.browser.customtabs.CustomTabsClient;
@@ -93,25 +92,25 @@ Before you can start sending events from TWA to AppsFlyer, do the following:
        import androidx.browser.trusted.TrustedWebActivityIntentBuilder;
        ```
 
-### Getting the AppsFlyer ID
+### Obtención del ID de AppsFlyer
 
-To send server-to-server events, you need the AppsFlyer ID. You can get the AppsFlyer ID from AppsFlyer Android SDK.
+Para enviar eventos de servidor a servidor, necesitas el ID de AppsFlyer. Puedes obtener el ID de AppsFlyer desde el SDK de AppsFlyer para Android.
 
-First, make sure to <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">integrate the AppsFlyer Android SDK</Anchor>. You can then get the AppsFlyer ID using the following SDK API:
+Primero, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">integrar el SDK de AppsFlyer para Android</Anchor>. Luego puedes obtener el ID de AppsFlyer usando la siguiente API del SDK:
 
 ```java
 String appsflyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
 ```
 
-### Sending the AppsFlyer ID to TWA
+### Envío del ID de AppsFlyer a TWA
 
-You can send the AppsFlyer ID in one of two ways:
+Puedes enviar el ID de AppsFlyer de dos maneras:
 
 <div id="append-appsflyer-id-and-customer-user-id-to-url" />
 
-<Accordion title="Append AppsFlyer ID and customer user ID to URL">
+<Accordion title="Agregación del ID de AppsFlyer y el ID de usuario del cliente a la URL">
 
-When you build a trusted web activity intent, you can pass parameters to its URL:
+Cuando creas una intención de actividad web de confianza, puedes pasar parámetros a su URL:
 
 ```java
 private void launchTwa(String cuid, String af_id) {
@@ -122,11 +121,11 @@ private void launchTwa(String cuid, String af_id) {
         public void onCustomTabsServiceConnected(ComponentName name, CustomTabsClient client) {
             Log.d(LOG_TAG, "onCustomTabsServiceConnected");
 
-            // Setting up CustomTabsSession that is used to build an intent
+            // Configurar la CustomTabsSession que se utiliza para crear un intent
             mClient = client;
             CustomTabsSession session = mClient.newSession(null);
 
-            // Creating the intent to launch TWA using URL with query params that can be read by the Web App
+            // Crear el intent para iniciar TWA usando una URL con parámetros de consulta que la aplicación web pueda leer
             TrustedWebActivityIntentBuilder twaIntentBuilder = new TrustedWebActivityIntentBuilder(Uri.parse(defaultUri + "?cuid=" + cuid + "&appsflyer_id=" + af_id));
             Intent twaIntent = twaIntentBuilder.build(session);
 
@@ -143,9 +142,9 @@ private void launchTwa(String cuid, String af_id) {
 }
 ```
 
-#### Retrieving the AppsFlyer ID
+#### Obtención del ID de AppsFlyer
 
-Once the web activity is launched you can retrieve the AppsFlyer ID using a simple JavaScript snippet:
+Una vez que se inicia la actividad web, puedes recuperar el ID de AppsFlyer usando un simple fragmento de JavaScript:
 
 ```javascript
 let url = new URL(document.location.href);
@@ -157,15 +156,15 @@ url.searchParams.forEach((value, key) => {
 })
 ```
 
-Once you have the AppsFlyer ID, store in local storage for later use.
+Una vez que tengas el ID de AppsFlyer, guárdalo en el almacenamiento local para usarlo más adelante.
 
 </Accordion>
 
 <div id="sending-appsflyer-id-through-custom-headers" />
 
-<Accordion title="Sending AppsFlyer ID through custom headers">
+<Accordion title="Envío de ID de AppsFlyer a través de encabezados personalizados">
 
-You can pass custom headers to the trusted web activities. The server gets these headers, sets them in a cookies and sends to the browser. You can then retrieve the AppsFlyer ID using javascript:
+Puedes pasar encabezados personalizados a las actividades web de confianza. El servidor obtiene estos encabezados, los configura en cookies y los envía al navegador. Luego puedes recuperar el ID de AppsFlyer usando javascript:
 
 ```java
 private void launchTwa(String cuid, String af_id) { 
@@ -175,15 +174,15 @@ private void launchTwa(String cuid, String af_id) {
         public void onCustomTabsServiceConnected(ComponentName name, CustomTabsClient client) {
             Log.d(LOG_TAG, "onCustomTabsServiceConnected");
 
-            // Setting up CustomTabsSession that is used to build an intent
+            // Configurar la CustomTabsSession que se utiliza para crear un intent
             mClient = client;
             CustomTabsSession session = mClient.newSession(null);
 
-            // Creating the intent to launch TWA using URL with query params that can be read by the Web App
+            // Crear el intent para iniciar TWA usando una URL con parámetros de consulta que la aplicación web pueda leer
             TrustedWebActivityIntentBuilder twaIntentBuilder = new TrustedWebActivityIntentBuilder(Uri.parse(defaultUri);
             Intent twaIntent = twaIntentBuilder.build(session);
 
-            // Passing additional custom headers to the intent so they can be read by the Web App
+            // Pasar encabezados personalizados adicionales al intent para que la aplicación web pueda leerlos
             Bundle customHeaders = new Bundle();
             customHeaders.putString("twa_params", "cuid=" + cuid + "&=appsflyer_id" + af_id");
             twaIntent.putExtra(Browser.EXTRA_HEADERS, customHeaders);
@@ -200,14 +199,14 @@ private void launchTwa(String cuid, String af_id) {
 }
 ```
 
-#### Retrieving the AppsFlyer ID
+#### Obtención del ID de AppsFlyer
 
-JavaScript doesn’t provide an API to allow developers to access headers. Therefore, the server should send the conversion data back to the web activity as a cookie. The server gets the custom headers containing the AppsFlyer ID, parses the data and sends it to the web page as a cookie.
+JavaScript no proporciona una API que permita a los desarrolladores acceder a los encabezados. Por lo tanto, el servidor debe enviar los datos de conversión a la actividad web como una cookie. El servidor obtiene los encabezados personalizados que contienen el ID de AppsFlyer, analiza los datos y los envía a la página web como una cookie.
 
-When the page loads, a JavaScript snippet should be set in place to fetch the AppsFlyer ID cookie.
+Cuando se carga la página, se debe configurar un fragmento de JavaScript para recuperar la cookie de ID de AppsFlyer.
 
 ```javascript
-// get the conversion data cookie
+// get the conversion data cookie 
 // function taken from https://plainjs.com/javascript/utilities/set-cookie-get-cookie-and-delete-cookie-5/
 function getCookie(name) {
     var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
@@ -216,38 +215,44 @@ function getCookie(name) {
 
 // get the cookie
 var conversionData = JSON.parse(getCookie('appsflyer_id'));
+console.log(appsflyer_id); + name + '=([^;]*)(;|$)');
+    return v ? v[2] : null;
+}
+
+// obtener la cookie
+var conversionData = JSON.parse(getCookie('appsflyer_id'));
 console.log(appsflyer_id);
 ```
 
 </Accordion>
 
-### Sending the in-app event
+### Envío del evento in-app
 
-To send in-app events, you need to send the event data to your server and have your server send the event to AppsFlyer. There are a few other prerequisites for sending in-app events:
+Para enviar eventos in-app, debes enviar los datos del evento a tu servidor y hacer que tu servidor envíe el evento a AppsFlyer. Existen algunos otros requisitos previos para enviar eventos in-app:
 
-* <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">SDK dev key</Anchor> - **Important! The SDK dev key is a sensitive value and shouldn't be present in the TWA. If you are going to use TWA and send server-to-server in-app events, always store the SDK dev key securely server-side.**
-* App ID - the app ID as it appears in Android Manifest.xml.
+* <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">Clave de desarrollador del SDK</Anchor> - **¡Importante! <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">Clave de desarrollador del SDK</Anchor>:** ¡Importante! La clave de desarrollador del SDK es un valor confidencial y no debería estar presente en la TWA. Si vas a utilizar TWA y a enviar eventos in-app de servidor a servidor, almacena siempre la clave de desarrollador del SDK de forma segura en el lado del servidor.
+* ID de aplicación: el ID de la aplicación tal como aparece en Android Manifest.xml.
 
-Once you have these three parameters (AppsFlyer ID, SDK dev key, app ID), you can send the in-app event. Whenever an event takes place on the web activity you should send a request to your webserver to handle this event. The webserver gets the data related to the event, composes the event, and sends it to AppsFlyer.
+Una vez que tengas estos tres parámetros (ID de AppsFlyer, clave de desarrollador del SDK, ID de la aplicación), podrá enviar el evento in-app. Siempre que tenga lugar un evento en la actividad web, debes enviar una solicitud a tu servidor web para manejar este evento. El servidor web obtiene los datos relacionados con el evento, lo compone y lo envía a AppsFlyer.
 
-See <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile#server-to-server-events-api-for-mobile">here</Anchor> for examples how to send server-to-server in-app events.
+Consulta <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile#api-de-eventos-de-servidor-a-servidor-para-móviles">aquí</Anchor> para ver ejemplos de cómo enviar eventos in-app de servidor a servidor.
 
 </Accordion>
 
 <div id="customizing-web-content-with-conversion-data" />
 
-<Accordion title="Customizing web content with conversion data">
+<Accordion title="Personalización del contenido web con datos de conversión">
 
-The AppsFlyer SDK provides you with conversion data through two APIs:
+El SDK de AppsFlyer te proporciona datos de conversión a través de dos API:
 
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data">Get conversion data</Anchor> - called when the app is launched for the first time after an install and for subsequent app launches.
-* <Anchor target="_blank" href="https://dev.appsflyer.com/docs/api-reference#onappopenattribution">On app open attribution</Anchor> - called when the app is deep-linked into using OneLink.
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data">Obtener datos de conversión</Anchor>: se llama cuando la aplicación se inicia por primera vez después de una instalación y para inicios posteriores de la aplicación.
+* <Anchor target="_blank" href="https://dev.appsflyer.com/docs/api-reference#onappopenattribution">Atribución de apertura de la aplicación</Anchor>: se llama cuando la aplicación tiene un enlace profundo para usar OneLink.
 
-You can use conversion data to customize web content.
+Puedes utilizar datos de conversión para personalizar el contenido web.
 
-### Sending conversion data to TWA
+### Envío de datos de conversión a TWA
 
-Once you get the conversion data from either method listed above, you can send it to your web server. To do so, use custom headers:
+Una vez que obtengas los datos de conversión de cualquiera de los métodos enumerados anteriormente, puedes enviarlos a tu servidor web. Para hacerlo, usa encabezados personalizados:
 
 ```java
 private void launchTwa(Map<String, String> conversionData, String cuid, String af_id) { 
@@ -257,15 +262,15 @@ private void launchTwa(Map<String, String> conversionData, String cuid, String a
         public void onCustomTabsServiceConnected(ComponentName name, CustomTabsClient client) {
             Log.d(LOG_TAG, "onCustomTabsServiceConnected");
 
-            // Setting up CustomTabsSession that is used to build an intent
+            // Configurar la CustomTabsSession que se utiliza para crear un intent
             mClient = client;
             CustomTabsSession session = mClient.newSession(null);
 
-            // Creating the intent to launch TWA using URL with query params that can be read by the Web App
+            // Crear el intent para iniciar TWA usando una URL con parámetros de consulta que la aplicación web pueda leer
             TrustedWebActivityIntentBuilder twaIntentBuilder = new TrustedWebActivityIntentBuilder(Uri.parse(defaultUri);
             Intent twaIntent = twaIntentBuilder.build(session);
 
-            // Passing additional custom headers to the intent so they can be read by the Web App
+            // Pasar encabezados personalizados adicionales al intent para que la aplicación web pueda leerlos
             Bundle customHeaders = new Bundle();
             customHeaders.putString("twa_params", "cuid=" + cuid + "&=" + af_id");
             customHeaders.putString("conversion_data", conversionData);
@@ -283,14 +288,24 @@ private void launchTwa(Map<String, String> conversionData, String cuid, String a
 }
 ```
 
-### Fetching the conversion data from the client-side
+### Obtención de datos de conversión del lado del cliente
 
-JavaScript doesn’t provide an API to allow developers to access headers. Therefore, the server should send the conversion data back to the web activity as a cookie. The server gets the custom headers containing the conversion data, parses the data and sends to the web page as a cookie.
+JavaScript no proporciona una API que permita a los desarrolladores acceder a los encabezados. Por lo tanto, el servidor debe enviar los datos de conversión a la actividad web como una cookie. El servidor obtiene los encabezados personalizados que contienen los datos de conversión, analiza los datos y los envía a la página web como una cookie.
 
-When the page loads, a JavaScript snippet should be set in place to fetch the conversion data cookie and customize the content accordingly. For example, if a user installs the app from a campaign for deals on flights, you can populate the web activity with content relevant for the deals that the campaign promotes.
+Cuando se carga la página, se debe configurar un fragmento de JavaScript para recuperar la cookie de datos de conversión y personalizar el contenido en consecuencia. Por ejemplo, si un usuario instala la aplicación desde una campaña de ofertas de vuelos, puedes completar la actividad web con contenido relevante para las ofertas que promociona la campaña.
 
 ```javascript
-// get the conversion data cookie
+// get the conversion data cookie 
+// function taken from https://plainjs.com/javascript/utilities/set-cookie-get-cookie-and-delete-cookie-5/
+function getCookie(name) {
+    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+    return v ? v[2] : null;
+}
+
+// get the cookie
+var conversionData = JSON.parse(getCookie('appsflyer_id'));
+console.log(appsflyer_id); + name + '=([^;]*)(;|$)');
+    return v ? // get the conversion data cookie 
 // function taken from https://plainjs.com/javascript/utilities/set-cookie-get-cookie-and-delete-cookie-5/
 function getCookie(name) {
     var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
@@ -302,9 +317,9 @@ var conversionData = JSON.parse(getCookie('conversion_data'));
 console.log(conversionData);
 /*
 conversion data example:
-{
+{ 
         campaign: "CAMPAIGN_NAME", // "None" if not specified on the link
-        media_source: "MEDIA_SOURCE", //"None" if not specified on the link
+        media_source: "MEDIA_SOURCE", //"None" if not specified on the link     
         cost_cents_USD : "0",
         is_first_launch: true,
         install_time: "2018-12-30 23:59:39.330",
@@ -317,7 +332,7 @@ conversion data example:
 */
 ```
 
-To learn more about conversion data use cases, see <Anchor target="_blank" href="/marketers/docs/conversion-data-payloads-and-scenarios">here</Anchor>.
+Para obtener más información sobre los casos de uso de datos de conversión, consulta <Anchor target="_blank" href="/marketers/es/docs/conversion-data-payloads-and-scenarios">aquí</Anchor>.
 
 </Accordion>
 
@@ -325,32 +340,32 @@ To learn more about conversion data use cases, see <Anchor target="_blank" href=
 
 <div id="measuring-installs-for-pwa" />
 
-<Accordion title="Measuring installs for PWA">
+<Accordion title="Medición de instalaciones de PWA">
 
-As with any other Android app, you can integrate the AppsFlyer SDK with the app to measure installs and get conversion data.
+Al igual que con cualquier otra aplicación de Android, puedes integrar el SDK de AppsFlyer con la aplicación para medir las instalaciones y obtener datos de conversión.
 
-To measure installs, all you need to do is integrate the SDK following the instructions <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">here</Anchor>.
+Para medir las instalaciones, todo lo que necesitas hacer es integrar el SDK siguiendo las instrucciones <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">aquí</Anchor>.
 
 </Accordion>
 
 <div id="customizing-content-using-conversion-data" />
 
-<Accordion title="Customizing content using conversion data">
+<Accordion title="Personalización del contenido utilizando datos de conversión">
 
-You can customize web content according to the campaign that prompts a user to install your app. For example, if a user installs an app from a campaign that gives them 20% discount on products from your web store. You can get the conversion data and apply the discount as soon as the app opens the web activity.
+Puedes personalizar el contenido web según la campaña que solicita al usuario que instale tu aplicación. Por ejemplo, si un usuario instala una aplicación de una campaña que le ofrece un 20 % de descuento en productos de tu tienda web. Puedes obtener los datos de conversión y aplicar el descuento tan pronto como la aplicación abra la actividad web.
 
-To learn about using conversion data to customize web content, follow the instructions [here](/docs/using-appsflyer-with-twa#sending-conversion-data-to-twa).
+Para obtener información sobre el uso de datos de conversión para personalizar el contenido web, sigue las instrucciones [aquí](/docs/using-appsflyer-with-twa#envío-de-datos-de-conversión-a-twa).
 
 </Accordion>
 
 <div id="recording-events-in-pwa" />
 
-<Accordion title="Recording events in PWA">
+<Accordion title="Registro de eventos en PWA">
 
-PWA makes use of TWA which are essentially web activities. Since TWA is web-based and not a native activity, you cannot send in-app events using the AppsFlyer SDK. As an alternative, you can use server-to-server in-app events.
+La PWA hace uso de las TWA, que son esencialmente actividades web. Dado que la TWA está basada en la web y no es una actividad nativa, no puedes enviar eventos in-app utilizando el SDK de AppsFlyer. Como alternativa, puedes utilizar eventos in-app de servidor a servidor.
 
-Follow the instructions [here](/docs/using-appsflyer-with-twa#sending-inapp-events-from-twa) to learn how to send in-app events for PWA.
+Sigue las instrucciones [aquí](/docs/using-appsflyer-with-twa#sending-inapp-events-from-twa) para aprender cómo enviar eventos in-app para PWA.
 
 </Accordion>
 
-<div data-zendesk-anchors="retrieving-the-appsflyer-id::a3f31d46=retrieving-the-appsflyer-id-1 sending-the-inapp-event=sending-the-in-app-event fetching-the-conversion-data-from-the-clientside=fetching-the-conversion-data-from-the-client-side" />
+<div data-zendesk-anchors="introduction=introducci%C3%B3n what-are-trusted-web-activities=qu%C3%A9-son-las-actividades-web-de-confianza what-are-progressive-web-apps=qu%C3%A9-son-las-aplicaciones-web-progresivas prerequisites=requisitos-previos getting-the-appsflyer-id=obtenci%C3%B3n-del-id-de-appsflyer sending-the-appsflyer-id-to-twa=env%C3%ADo-del-id-de-appsflyer-a-twa retrieving-the-appsflyer-id=obtenci%C3%B3n-del-id-de-appsflyer-1 retrieving-the-appsflyer-id::a3f31d46=obtenci%C3%B3n-del-id-de-appsflyer-2 sending-the-inapp-event=env%C3%ADo-del-evento-in-app sending-conversion-data-to-twa=env%C3%ADo-de-datos-de-conversi%C3%B3n-a-twa fetching-the-conversion-data-from-the-clientside=obtenci%C3%B3n-de-datos-de-conversi%C3%B3n-del-lado-del-cliente" />

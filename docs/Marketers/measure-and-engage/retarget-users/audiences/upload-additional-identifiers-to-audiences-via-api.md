@@ -1,5 +1,5 @@
 ---
-title: Upload additional identifiers to Audiences via API
+title: 'Audiencias: API de identificadores adicionales'
 metadata:
   keywords:
     - Advertisers
@@ -15,62 +15,61 @@ x-zendesk:
     - Marketers
     - Audience Segmentation
   created_at: '2021-11-22T14:05:51Z'
-  edited_at: '2026-10-05T06:59:12Z'
+  edited_at: '2026-10-07T00:17:57Z'
   id: 4411552670993
-  locale: en-us
+  locale: es
   section: Audiences
   section_id: 6551336428945
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4411552670993-Upload-additional-identifiers-to-Audiences-via-API
+  url: https://support.appsflyer.com/hc/es/articles/4411552670993
 ---
-> **At a glance:** Use the Audiences Additional Identifiers API to bulk upload user identifiers from your internal systems (such as BI and CRM) to AppsFlyer Audiences, enabling broader audience communication to relevant partners based on these identifiers.
+> **De un vistazo:** Utiliza la API de identificadores adicionales de audiencias para cargar masivamente identificadores de usuarios desde tus sistemas internos (como BI y CRM) a AppsFlyer Audiences, lo que permite una comunicación más amplia con socios relevantes basándose en estos identificadores.
 
-## About the API
+## Acerca de la API
 
-The Audiences Additional Identifiers API can be used to add the following user identifiers from your internal systems to AppsFlyer Audiences:
+La API de identificadores adicionales de audiencias se puede usar para añadir los siguientes identificadores de usuario desde tus sistemas internos a AppsFlyer Audiences:
 
-* Up to 2 hashed email addresses
-* Hashed telephone number
-* Hashed E164 telephone number
+* Hasta 2 direcciones de correo electrónico cifradas
+* Número de teléfono cifrado
+* Número de teléfono E164 cifrado
 
-You can then choose to send these identifiers to your Audiences partners (subject to your <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">account-level user identifier policy</Anchor>), allowing them to more accurately identify your target audiences. Note that not all advertising partners support all identifiers.
+Luego puedes optar por enviar estos identificadores a tus socios de Audiencias (sujeto a tu <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política de identificadores de usuario a nivel de cuenta</Anchor>), lo que les permitirá identificar de manera más precisa tus audiencias objetivo. Ten en cuenta que no todos los socios publicitarios admiten todos los identificadores.
 
-### When should I use this API?
+### ¿Cuándo debo utilizar esta API?
 
-This API was designed to be used when you want to upload a large volume of identifier data. Typically, this means data collected over time (for example, hashed emails collected from all users of an app over the last 12 months). For real-time, individual updates of identifiers from specific devices, <Anchor target="_blank" href="/marketers/docs/audiences-configure-additional-identifiers-for-partner-audience-creation">configure additional identifiers</Anchor> in the AppsFlyer SDK or S2S-mobile API.
+Esta API está diseñada para usarse cuando necesitas cargar un gran volumen de datos de identificadores. Generalmente, esto se refiere a datos recopilados a lo largo del tiempo (por ejemplo, correos electrónicos en formato hash recopilados de todos los usuarios de una aplicación durante los últimos 12 meses). Para actualizaciones individuales en tiempo real de identificadores de dispositivos específicos, <Anchor target="_blank" href="/marketers/es/docs/audiences-configure-additional-identifiers-for-partner-audience-creation">configura identificadores adicionales</Anchor> en el SDK de AppsFlyer o la API S2S-mobile.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> **Encryption:** All additional identifier values **must** be encrypted with SHA256 hashing. Unencrypted identifiers will not be processed.
+> **Cifrado:** Todos los valores de identificadores adicionales **deben** estar cifrados con hash SHA256. Los identificadores no cifrados no serán procesados.
 >
-> **Timing:** To ensure accurate matching of identifiers, the Audiences Additional Identifiers API can be used as soon as **the day following** the reporting of key identifiers through the AppsFlyer SDK (UTC). For example, key identifiers reported on 3-January-2022 (UTC) can be updated through this API on 4-January-2022 (UTC) or later.
+> **Tiempo:** Para asegurar una coincidencia precisa de los identificadores, la API de identificadores adicionales de audiencias puede utilizarse tan pronto como el **día posterior** al reporte de los identificadores clave a través del SDK de AppsFlyer (UTC). Por ejemplo, los identificadores clave reportados el 3 de enero de 2022 (UTC) pueden actualizarse a través de esta API el 4 de enero de 2022 (UTC) o después.
 
-## Actions
+## Acciones
 
-* [Add/modify identifiers](/docs/upload-additional-identifiers-to-audiences-via-api#addmodify-identifiers-put)
-* [Remove identifiers](/docs/upload-additional-identifiers-to-audiences-via-api#remove-identifiers-delete)
+* [Añadir/modificar identificadores](/docs/upload-additional-identifiers-to-audiences-via-api#addmodify-identifiers-put)
+* [Eliminar identificadores](/docs/upload-additional-identifiers-to-audiences-via-api#remove-identifiers-delete)
 
-## Authentication
+## Autenticación
 
-The request must include an HTTP header containing your account's <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">AppsFlyer V2.0 API token</Anchor>. Ask your account admin to obtain this token from the AppsFlyer dashboard.
+La solicitud debe incluir un encabezado HTTP que contenga el <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">token API de AppsFlyer V2.0</Anchor> de tu cuenta. Pide al administrador de tu cuenta que obtenga este token desde el panel de AppsFlyer.
 
-## API Specifications and sample code
+## Especificaciones de la API y código de ejemplo
 
 <div id="addmodify-identifiers-put" />
 
-<Accordion title="Add/modify identifiers (PUT)">
+<Accordion title="Añadir/modificar identificadores (PUT)">
 
-<span id="01ECF4ZD0T03JBV8DDH25MM01W"></span>**API request URL**
+<span id="01ECF4ZD0T03JBV8DDH25MM01W"></span>**URL de solicitud de la API**
 
 ```json
 https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{app-id}
 ```
 
-| Parameter | Description | Mandatory |
+| Parámetro | Descripción | Obligatorio |
 | --- | --- | --- |
-| `{app-id}` | App ID of the app from which the identifiers were collected (as it appears in the AppsFlyer dashboard) | Yes |
+| `{id de la aplicación}` | ID de la aplicación desde la que se recopilaron los identificadores (tal como aparece en el panel de AppsFlyer) | Sí |
 
-<span id="01ECF4ZD0TWPH3DXV2YKN7G9B0"></span>**API request body**
+<span id="01ECF4ZD0TWPH3DXV2YKN7G9B0"></span>**Cuerpo de la solicitud de API**
 
 ```json
 {
@@ -87,7 +86,7 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
         "phone_number_sha256": "<phone_number_sha256_value>",
         "phone_number_e164_sha256": "<phone_number_e164_sha256_value>"
       }
-    },
+    },  
     {
       "key_value": "<key_value>",
       "identifiers": {
@@ -103,29 +102,29 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 }
 ```
 
-| Parameter | Description | Mandatory |
+| Parámetro | Descripción | Obligatorio |
 | --- | --- | --- |
-| `{key_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<ul><li>idfa</li><li>gaid</li><li>idfv</li><li>customer\_user\_id</li><li>imei</li><li>oaid</li></ul> | Yes |
-| `{action}` | "add" | No<br /><br />Default value: "add" |
-| `{key_value}` | Valid identifier value for the key\_type specified | Yes |
-| \{identifiers\} | Object containing the names and values of the identifiers to add:<ul><li>\{hashed\_emails\}</li><li>\{phone\_number\_sha256\}</li><li>\{phone\_number\_e164\_sha256\}</li></ul> | Yes<ul><li>Must include a value for at least 1 of these 3 identifiers</li></ul> |
-| `{hashed_emails}` | An array of up to 2 hashed email addresses<br /><br />Format:<ul><li>Lowercase</li><li>No white spaces</li><li>SHA256 hashed</li></ul>Example value before hashing: name@domain.com | No |
-| `{phone_number_sha256}` | Phone number (see note below)<br /><br />Format:<ul><li>No symbols, letters, or leading zeroes</li><li>Include country code</li><li>SHA256 hashed</li></ul>Example value before hashing:<br /><br />442070313000 | No |
-| `{phone_number_e164_sha256}` | Phone number in E164 format (see note below)<br /><br />Format<ul><li>E164 phone number</li><li>SHA256 hashed</li></ul>Example value before hashing:<br /><br />+442070313000 | No |
+| `{tipo_de_clave}` | El identificador usado como valor único para representar al usuario en cada fila de datos de la solicitud.<br /><br />El valor especificado aquí se aplica a todas las filas de la solicitud.<br /><br />Valores posibles:<ul><li>idfa</li><li>gaid</li><li>idfv</li><li>id\_usuario\_cliente</li><li>imei</li><li>oaid</li></ul> | Sí |
+| `{acción}` | agregar | No<br /><br />Valor por defecto: agregar |
+| `{valor_clave}` | Valor de identificador válido para el tipo de clave especificado | Sí |
+| \{identificadores\} | Objeto que contiene los nombres y valores de los identificadores a agregar:<ul><li>\{hashed\_emails\}</li><li>\{phone\_number\_sha256\}</li><li>\{phone\_number\_e164\_sha256\}</li></ul> | Sí<ul><li>Debe incluir un valor para al menos uno de estos tres identificadores</li></ul> |
+| `{hashed_emails}` | Un array de hasta dos direcciones de correo electrónico cifradas<br /><br />Formato:<ul><li>En minúsculas</li><li>Sin espacios en blanco</li><li>Con hash SHA256</li></ul>Valor de ejemplo antes del hash: nombre@dominio.com | No |
+| `{phone_number_sha256}` | Número de teléfono (ver nota a continuación)<br /><br />Formato:<ul><li>Sin símbolos, letras ni ceros iniciales</li><li>Incluir código de país</li><li>Con hash SHA256</li></ul>Valor de ejemplo antes del hash:<br /><br />442070313000 | No |
+| `{phone_number_e164_sha256}` | Número de teléfono en formato E164 (ver nota a continuación)<br /><br />Formato<ul><li>Número de teléfono E164</li><li>Con hash SHA256</li></ul>Valor de ejemplo antes del hash:<br /><br />+442070313000 | No |
 
-> 📘 **Notes**
+> 📘 **Notas**
 >
-> * Different advertising partners support different phone number formats. So, if you choose to add a phone number, sending both identifiers is recommended: *phone\_number\_sha256* and *phone\_number\_e164\_sha256*.
-> * `customer_user_id` is the same identifier referred to elsewhere in this section as CUID (Customer User ID). When `key_type` is `customer_user_id`, use the account's CUID value as the `key_value`. See <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">Audiences user identifier policy</Anchor> for more on this and other supported identifiers.
+> * Diferentes socios publicitarios admiten distintos formatos de números de teléfono. Por lo tanto, si decides añadir un número de teléfono, se recomienda enviar ambos identificadores: *phone\_number\_sha256* y *phone\_number\_e164\_sha256*.
+> * `customer_user_id` es el mismo identificador al que se hace referencia en otras partes de esta sección como CUID (ID de usuario de cliente). Cuando `key_type` es `customer_user_id`, usa el valor de CUID de la cuenta como `key_value`. Consulta la <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política de identificadores de usuario de audiencias</Anchor> para obtener más información sobre este tema y otros identificadores compatibles.
 
-**Restrictions**
+**Restricciones**
 
-The following restrictions apply to the **Add/modify identifiers** request:
+Las siguientes restricciones se aplican a la solicitud **Agregar/modificar identificadores**:
 
-* Previously existing values (if any) will be overwritten by values sent in the request.
-* The `{data}` object can include a maximum of 4,000 rows (key\_values) per request.
+* Los valores existentes previamente (si los hay) serán sobrescritos por los valores enviados en la solicitud.
+* El objeto `{data}` puede incluir un máximo de 4000 filas (key\_values) por solicitud.
 
-**Sample request to add identifiers**
+**Solicitud de ejemplo para agregar identificadores**
 
 ```json
 HTTP PUT
@@ -153,19 +152,19 @@ body:
 
 <div id="remove-identifiers-delete" />
 
-<Accordion title="Remove identifiers (PUT)">
+<Accordion title="Eliminar identificadores (PUT)">
 
-**API request URL**
+**URL de solicitud de la API**
 
 ```json
 https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{app-id}
 ```
 
-| Parameter | Description | Mandatory |
+| Parámetro | Descripción | Obligatorio |
 | --- | --- | --- |
-| `{app-id}` | App ID of the app from which the identifiers were collected (as it appears in the AppsFlyer dashboard) | Yes |
+| `{id de la aplicación}` | ID de la aplicación desde la que se recopilaron los identificadores (tal como aparece en el panel de AppsFlyer) | Sí |
 
-**API request body**
+**Cuerpo de la solicitud de API**
 
 ```json
 {
@@ -173,7 +172,7 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
   "action": "remove",
   "data": [
     {
-      "key_value": "<key_value>",
+      "key_value": ",<key_value>",
       "identifiers": [
         "hashed_emails",
         "phone_number_sha256",
@@ -181,7 +180,7 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
       ]
     },
     {
-      "key_value": "<key_value>",
+      "key_value": ",<key_value>",
       "identifiers": [
         "hashed_emails",
         "phone_number_sha256",
@@ -192,18 +191,18 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 }
 ```
 
-| Parameter | Description | Mandatory |
+| Parámetro | Descripción | Obligatorio |
 | --- | --- | --- |
-| `{key_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<ul><li>idfa</li><li>gaid</li><li>idfv</li><li>customer\_user\_id</li><li>imei</li><li>oaid</li></ul> | Yes |
-| `{key_value}` | Valid identifier value for the key\_type specified | Yes |
-| `{action}` | "remove" | No<br /><br />Default value: "add" |
-| \{identifiers\} | An array containing the names of the identifiers for which values should be deleted:<ul><li>\{hashed\_emails\}</li><li>\{phone\_number\_sha256\}</li><li>\{phone\_number\_e164\_sha256\}</li></ul> | Yes<ul><li>Must include at least 1 of these 3 identifiers</li></ul> |
+| `{tipo_de_clave}` | El identificador usado como valor único para representar al usuario en cada fila de datos de la solicitud.<br /><br />El valor especificado aquí se aplica a todas las filas de la solicitud.<br /><br />Valores posibles:<ul><li>idfa</li><li>gaid</li><li>idfv</li><li>id\_usuario\_cliente</li><li>imei</li><li>oaid</li></ul> | Sí |
+| `{valor_clave}` | Valor de identificador válido para el tipo de clave especificado | Sí |
+| `{acción}` | eliminar | No<br /><br />Valor por defecto: agregar |
+| \{identificadores\} | Un array que contiene los nombres de los identificadores cuyos valores deben eliminarse:<ul><li>\{hashed\_emails\}</li><li>\{phone\_number\_sha256\}</li><li>\{phone\_number\_e164\_sha256\}</li></ul> | Sí<ul><li>Debe incluir al menos uno de estos tres identificadores</li></ul> |
 
-**Restrictions**
+**Restricciones**
 
-The `{data}` object can include a maximum of 4,000 rows (key\_values) per request.
+El objeto `{data}` puede incluir un máximo de 4000 filas (key\_values) por solicitud.
 
-**Sample request to remove identifiers**
+**Solicitud de ejemplo para eliminar identificadores**
 
 ```json
 HTTP PUT
@@ -228,22 +227,22 @@ body:
 
 <div id="responses" />
 
-<Accordion title="Responses">
+<Accordion title="Respuestas">
 
-| Code | Message | Description |
+| Código | Mensaje | Descripción |
 | --- | --- | --- |
-| 202 | Accepted for processing | Request will be applied during the next processing window. |
-| 400 | Request body must have a valid key\_type | The following key\_types are supported:<ul><li>idfa</li><li>gaid</li><li>idfv</li><li>customer\_user\_id</li><li>imei</li><li>oaid</li></ul> |
-| 400 | Request must have ‘data’ with at least 1 element | Data list can not be empty. |
-| 400 | Request ‘data’ should not exceed the size of 4000 in a single request | Data list can include a maximum of 4,000 rows. |
-| 400 | Request data has too many invalid ‘data’ elements | More than 10% of the data to modify is not valid according to the specification. |
-| 404 | AppsFlyer - Page Not Found | Check that:<ul><li>The `{app-id}` as specified in the API request URL is correct.</li><li>The HTTP header contains the correct <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">AppsFlyer V2.0 API token</Anchor>. Your account admin can obtain this token from the AppsFlyer dashboard.</li></ul> |
+| 202 | Aceptado para su procesamiento | La solicitud se aplicará en la siguiente ventana de procesamiento. |
+| 400 | El cuerpo de la solicitud debe incluir un tipo de clave válido | Los siguientes tipos de clave son compatibles:<ul><li>idfa</li><li>gaid</li><li>idfv</li><li>id\_usuario\_cliente</li><li>imei</li><li>oaid</li></ul> |
+| 400 | La solicitud debe contener 'datos' con al menos un elemento | La lista de datos no puede estar vacía. |
+| 400 | La solicitud de 'datos' no debe superar los 4000 en una sola petición | La lista de datos puede contener un máximo de 4000 filas. |
+| 400 | Los datos pedidos contienen demasiados elementos 'datos' no válidos | Más del 10% de los datos a modificar no son válidos según lo especificado. |
+| 404 | AppsFlyer - Página no encontrada | Verifique que:<ul><li>El `{app-id}`, tal como se especifica en la URL de la solicitud de API, es correcto.</li><li>El encabezado HTTP contiene el <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">token API de AppsFlyer V2.0</Anchor> correcto. El administrador de su cuenta puede obtener este token en el panel de control de AppsFlyer.</li></ul> |
 
-**Response examples**
+**Ejemplos de respuestas**
 
 ```json
 {
-"message": "Accepted for processing",
+"message": "Aceptado para su procesamiento",
 "received": 1000,"invalid": 2,
 "trace-id": "698ed323-c787-45b5-b792-463c67c94064"
 }
@@ -251,28 +250,28 @@ body:
 
 ```json
 {
-"error": "Request body must have a valid key_type",
+"error": "El cuerpo de la solicitud debe tener un key_type válido",
 "trace-id": "18a5f685-ea4d-4ca9-beab-a542a3786d12"
 }
 ```
 
 ```json
 {
-"error": "Request must have 'data' with at least 1 element",
+"error": "La solicitud debe tener 'data' con al menos 1 elemento",
 "trace-id": "c155a7fa-b573-4efe-9bfb-5ae7de40e7fd"
 }
 ```
 
 ```json
 {
-"error": "Request 'data' should not exceeds the size of 4000 in a single request”,
+"error": "Los datos de la solicitud no deben superar el tamaño de 4000 en una sola solicitud",
 "trace-id": "b325a7fa-b573-4efe-9bfb-5ae7de40e72c"
 }
 ```
 
 ```json
 {
-"error": "Request data has too many invalid 'data' elements",
+"error": "Los datos de la solicitud tienen demasiados elementos 'data' no válidos",
 "valid": 2,
 "invalid": 30,
 "trace-id": "33551c1d-5682-405e-a959-c8729ca74735"
@@ -283,11 +282,11 @@ body:
 
 <div id="rate-limitations" />
 
-<Accordion title="Rate limitations">
+<Accordion title="Limitaciones de tasa">
 
-* 5 requests per second
-* 350 requests per minute
+* 5 solicitudes por segundo
+* 350 solicitudes por minuto
 
 </Accordion>
 
-<div data-zendesk-anchors="api-overview=about-the-api h_01HNZP1Y2MQ8W25SNP2XVNZ7WW=about-the-api h_01HNZP1Y2MJY56TMN6QH4BVRPA=when-should-i-use-this-api h_01HNZP1Y2MX414NJ49BCVW7KZC=important methods=actions h_01HNZP1Y2MS5V43XS008GG4S32=actions h_01HNZP1Y2MH2Y4P8ZT4SVM5GM2=authentication h_01HNZP1Y2MR0GCCA1916RMB6GJ=api-specifications-and-sample-code h_01HNZP1Y2M1N548KSMA6MQ601W=addmodify-identifiers-put h_01HNZP1Y2P2VVV4WT88D82QXJ4=notes h_01HNZP1Y2Q0FAQQE3MTZ8B3FFS=remove-identifiers-delete h_01HNZP1Y2QK2J8ERP1SQTYB20C=responses h_01HNZP1Y2Q1WZCN2TCEAS6HB2X=rate-limitations" />
+<div data-zendesk-anchors="api-overview=acerca-de-la-api h_01HNZP1Y2MQ8W25SNP2XVNZ7WW=acerca-de-la-api when-should-i-use-this-api=cu%C3%A1ndo-debo-utilizar-esta-api h_01HNZP1Y2MJY56TMN6QH4BVRPA=cu%C3%A1ndo-debo-utilizar-esta-api h_01HNZP1Y2MX414NJ49BCVW7KZC=importante methods=acciones h_01HNZP1Y2MS5V43XS008GG4S32=acciones authentication=autenticaci%C3%B3n h_01HNZP1Y2MH2Y4P8ZT4SVM5GM2=autenticaci%C3%B3n api-specifications-and-sample-code=especificaciones-de-la-api-y-c%C3%B3digo-de-ejemplo h_01HNZP1Y2MR0GCCA1916RMB6GJ=especificaciones-de-la-api-y-c%C3%B3digo-de-ejemplo h_01HNZP1Y2M1N548KSMA6MQ601W=addmodify-identifiers-put h_01HNZP1Y2P2VVV4WT88D82QXJ4=notas h_01HNZP1Y2Q0FAQQE3MTZ8B3FFS=remove-identifiers-delete h_01HNZP1Y2QK2J8ERP1SQTYB20C=responses h_01HNZP1Y2Q1WZCN2TCEAS6HB2X=rate-limitations" />

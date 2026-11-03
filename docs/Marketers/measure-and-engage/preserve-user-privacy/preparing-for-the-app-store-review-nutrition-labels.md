@@ -1,5 +1,5 @@
 ---
-title: Preparing for the App Store review—nutrition labels
+title: 'Preparación para la revisión del App Store: etiquetas nutricionales'
 metadata:
   keywords:
     - iOS
@@ -20,73 +20,72 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2014-04-12T13:28:26Z'
-  edited_at: '2023-11-02T10:49:58Z'
+  edited_at: '2026-08-12T12:23:45Z'
   id: 207032086
-  locale: en-us
+  locale: es
   section: Preserve user privacy
   section_id: 6551440878097
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207032086-Preparing-for-the-App-Store-review-nutrition-labels
+  url: https://support.appsflyer.com/hc/es/articles/207032086
 ---
-> **At a glance**: Starting iOS 14 App developers must provide the App Store information related to their Privacy Practices when they submit an app. The App Store publishes the practices in the format of a *nutrition label.*
+> **De un vistazo**: A partir de iOS 14, los desarrolladores de aplicaciones deben proporcionar la información de la App Store relacionada con sus prácticas de privacidad cuando envíen una aplicación. La App Store publica las prácticas en el formato de una *etiqueta de nutrición.*
 
-**A word from our lawyers:** *Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how Apple policies apply to you.*
+**Notas de nuestros abogados:** *Nada de lo que se indica aquí es asesoramiento legal. Se proporciona para tu información y comodidad. Debes trabajar estrechamente con asesores legales y otros asesores profesionales para exactamente determinar cómo se te aplican las políticas de Apple a ti.* Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
 
-## Nutrition labels and the App Store review
+## Etiquetas de nutrición y revisión de la App Store
 
-* In order to generate the privacy labels, app developers must answer a questionnaire when submitting their app to App Store Connect that includes the following sections:
-  * Data types collected
-  * [Purposes for which data is collected](/docs/preparing-for-the-app-store-review-nutrition-labels#data-use-purposes)
-  * [If the data type is linked to an identity](/docs/preparing-for-the-app-store-review-nutrition-labels#data-linked-to-an-identity)
-  * If data is used for tracking (including in relation to any third-party service or SDK that is included in an app).
-* App developers:
-  * Have full control over how to implement and configure the AppsFlyer software, what data to collect, and how the data is used.
-  * May have very different answers to the questionnaire based on how they configure the AppsFlyer software and the data points they choose to collect.
-* According to the AppsFlyer understanding of the Apple policy, AppsFlyer doesn't *track.* That said, App developers must respond to the questionnaire in accordance with their specific uses and partner integrations.
-* If you do use collected data for tracking purposes, you must implement the ATT prompt.
-* The following assumes AppsFlyer software default configurations. App developers are responsible for ensuring that they adapt accordingly in line with their specific configurations and uses.
+* Para generar las etiquetas de privacidad, los desarrolladores de aplicaciones deben responder a un cuestionario al enviar su aplicación a App Store Connect que incluya las siguientes secciones:
+  * Tipos de datos recopilados
+  * [Fines de la recopilación de datos](/docs/preparing-for-the-app-store-review-nutrition-labels#fines-del-uso-de-datos)
+  * [Si el tipo de datos está vinculado a una identidad](/docs/preparing-for-the-app-store-review-nutrition-labels#datos-vinculados-a-una-identidad)
+  * Si se utilizan datos para el tracking (incluido en relación con cualquier servicio de terceros o SDK que se incluya en una aplicación).
+* Desarrolladores de aplicaciones:
+  * Tienen un control total sobre cómo implementar y configurar el software de AppsFlyer, qué datos recoger y cómo se utilizan los datos.
+  * Puede haber respuestas al cuestionario muy diferentes en función de cómo configuran el software de AppsFlyer y los puntos de datos que eligen recopilar.
+* Según la comprensión de la política de Apple por parte de AppsFlyer, AppsFlyer no realiza ningún *seguimiento.* Dicho esto, los desarrolladores de aplicaciones deben responder al cuestionario de acuerdo con sus usos específicos e integraciones de partners.
+* Si utilizas los datos recopilados con fines de seguimiento, debes implementar el aviso de ATT.
+* A continuación se asumen las configuraciones predeterminadas del software de AppsFlyer. Los desarrolladores de aplicaciones son responsables de asegurarse de que se adapten en consonancia con sus configuraciones y usos específicos.
 
-#### Data types collected
+#### Tipos de datos recopilados
 
-| **Data type** | **AppsFlyer data collection** | **Remarks** |
+| **Tipo de datos** | **Recopilación de datos de AppsFlyer** | **Observaciones** |
 | --- | --- | --- |
-| **Contact information**<ul><li>Name</li><li>Email address (including hashed)</li><li>Phone number (including hashed)</li><li>Physical address</li><li>Other user contact info</li></ul> | No | Contact information should not be collected. However, if you have configured your app to transmit hashed emails or hashed phone numbers, respond accordingly in the App Store questionnaire. |
-| **Fitness** | No | Don't collect |
-| **Financial info**<ul><li>Payment info</li><li>Credit info</li><li>Other financial info</li></ul> | No | Don't collect |
-| **Location info**<ul><li>Precise location</li><li>Coarse location</li></ul> | See remarks | <ul><li>Precise location: No</li><li>Coarse location: Yes. The IP address is collected and mapped to a coarse geographic location.</li></ul> |
-| **Sensitive info** | No | Don't collect |
-| **Contacts** | No | Don't collect |
-| **User content**<ul><li>Emails or text messages</li><li>Photos or videos</li><li>Audio data</li></ul> | No | Don't collect |
-| **Browsing history** | No | Don't collect |
-| **Search history** | No | Don't collect |
-| **Identifiers**<ul><li>User ID</li><li>Device ID (IDFA)</li></ul> | Optional | <ul><li>User ID: App developers may set and transmit user ID (CUID)</li><li>Device ID: The Advertising ID (IDFA) is collected only when accessible.</li></ul> |
-| **Purchases**<ul><li>Purchase history</li></ul> | Optional | App developers can choose to configure certain in-app purchase events to measure. |
-| **Usage data**<ul><li>Product interaction</li><li>Advertising data</li><li>Other usage data</li></ul> | <ul><li>Yes</li><li>Optional</li><li>No</li></ul> | <ul><li>Product interactions: App launches are measured, as well as any other user interaction configured by the app developer.</li><li>Advertising data: is received if the app developer uses the AppsFlyer ad revenue module.</li></ul> |
-| **Diagnostics data**<ul><li>Crash data</li><li>Performance data</li><li>Other diagnostics data</li></ul> | <ul><li>No</li><li>Yes</li><li>No</li></ul> | Launch time and/or battery levels may be received for fraud detection. |
-| **Other data**<ul><li>Other data types</li><li>IDFV</li></ul> | Yes | <ul><li>Technical device information (for example, OS, device type, language, screen size, etc.) or network information (for example, IP address, HTTP user agent) is received by AppsFlyer.</li><li>AppsFlyer applies an install ID to each app install called the AF ID.</li><li>IDFV is collected</li></ul> |
+| **Información de contacto**<ul><li>Nombre</li><li>Dirección de correo electrónico (incluidas con hash)</li><li>Número de teléfono (incluidos con hash)</li><li>Dirección física</li><li>Otra información de contacto del usuario</li></ul> | No | No se debe recopilar la información de contacto. Sin embargo, si has configurado tu aplicación para transmitir correos electrónicos con hash o números de teléfono con hash, responde en consecuencia en el cuestionario de la App Store. |
+| **Fitness** | No | No recopilar |
+| **Información financiera**<ul><li>Información de pago</li><li>Información de crédito</li><li>Otra información financiera</li></ul> | No | No recopilar |
+| **Información sobre la ubicación**<ul><li>Ubicación precisa</li><li>Ubicación gruesa</li></ul> | Ver las observaciones | <ul><li>Ubicación precisa: No</li><li>Ubicación aproximada: Sí. La dirección IP se recopila y se asigna a una ubicación geográfica aproximada.</li></ul> |
+| **Información confidencial** | No | No recopilar |
+| **Contactos** | No | No recopilar |
+| **Contenido del usuario**<ul><li>Correos electrónicos o mensajes de texto</li><li>Fotos o videos</li><li>Datos de audio</li></ul> | No | No recopilar |
+| **Historial de navegación** | No | No recopilar |
+| **Historial de búsqueda** | No | No recopilar |
+| **Identificadores**<ul><li>ID de usuario</li><li>ID de dispositivo (Identificador de anunciante [IDFA])</li></ul> | Opcional | <ul><li>ID de usuario: Los desarrolladores de aplicaciones pueden configurar y transmitir el ID de usuario (CUID)</li><li>ID de dispositivo: el identificador de anunciante (IDFA) se recopila solo cuando se puede acceder a él.</li></ul> |
+| **Compras**<ul><li>Historial de compras</li></ul> | Opcional | Los desarrolladores de aplicaciones pueden elegir configurar ciertos eventos de compra in-app para medir. |
+| **Datos de uso**<ul><li>Interacción con el producto</li><li>Datos de publicidad</li><li>Otros datos de uso</li></ul> | <ul><li>Sí</li><li>Opcional</li><li>No</li></ul> | <ul><li>Interacciones con el producto: se miden los inicios de la aplicación, así como cualquier otra interacción con el usuario configurada por el desarrollador de la aplicación.</li><li>Datos de publicidad: se reciben si el desarrollador de la aplicación utiliza el módulo de ingresos por publicidad de AppsFlyer.</li></ul> |
+| **Datos de diagnóstico**<ul><li>Datos de bloqueo</li><li>Datos de rendimiento</li><li>Otros datos de diagnóstico</li></ul> | <ul><li>No</li><li>Sí</li><li>No</li></ul> | Se puede recibir la hora de inicio y/o los niveles de batería para detectar el fraude. |
+| **Otros datos**<ul><li>Otros tipos de datos</li><li>IDFV</li></ul> | Sí | <ul><li>AppsFlyer recibe información técnica del dispositivo (p. ej., SO, tipo de dispositivo, idioma, tamaño de pantalla, etc.) o la información de la red (p. ej., la dirección IP, el agente de usuario HTTP).</li><li>AppsFlyer aplica un ID de instalación a cada instalación de aplicación llamada ID de AF.</li><li>Se recopila el identificador de proveedor (IDFV).</li></ul> |
 
-### Data use purposes
+### Fines del uso de datos
 
-Apple has a list of purposes from which app developers must choose, as detailed in the table that follows. You must identify the relevant purposes for each data type related to your specific use.
+Los desarrolladores de aplicaciones deben elegir de una lista de fines que tiene Apple, tal como se detalla en la siguiente tabla. Debes identificar los fines relevantes para cada tipo de datos relacionados con tu uso específico.
 
-| Data purpose | Selection based on how data from AppsFlyer will be used |
+| Fin de los datos | Selección en función de cómo se utilizarán los datos de AppsFlyer |
 | --- | --- |
-| Third-party advertising | Select if you share the data type with a third party for the purpose of displaying third-party ads in your app. |
-| Developer’s advertising or marketing | Select if you use to display first-party ads in your app (including if sharing with a third party to display your ads) or for other marketing purposes. |
-| Analytics | Yes |
-| Product personalization | Select if you use data for any product personalization. |
-| App functionality | Yes |
-| Other purposes | Select if you use the data for any purpose not otherwise stated. |
+| Publicidad de terceros | Selecciona esta opción si compartes el tipo de datos con un tercero con el fin de mostrar anuncios de terceros en tu aplicación. |
+| Publicidad o marketing del desarrollador | Selecciona si deseas mostrar anuncios propios en tu aplicación, incluso si compartes con un tercero para mostrar tus anuncios, o para otros fines de marketing. |
+| Analíticas | Sí |
+| Personalización del producto | Selecciona si utilizas datos para cualquier personalización de producto. |
+| Funcionalidad de la aplicación | Sí |
+| Otros fines | Selecciona si utilizas los datos para cualquier fin que no esté indicado. |
 
-### Data linked to an identity
+### Datos vinculados a una identidad
 
-Data types collected through AppsFlyer are typically connected to an identifier like device ID (when available), or other identifiers like customer-issued IDs when configured.
+Los tipos de datos recopilados a través de AppsFlyer generalmente están conectados a un identificador como el ID de dispositivo (cuando está disponible) u otros identificadores, como los ID emitidos por el cliente, cuando se configuran.
 
-Therefore, app developers should select **Yes** when asked if the data is linked to an identity.
+Por lo tanto, los desarrolladores de aplicaciones deben seleccionar **Sí** cuando se les pregunte si los datos están vinculados a una identidad.
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy/">AppsFlyer Service Privacy Policy</Anchor>: How AppsFlyer handles and uses data.
-> * <Anchor target="_blank" href="https://developer.apple.com/app-store/app-privacy-details/">App privacy details on the App Store by Apple</Anchor>.
+> * <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy/">Política de privacidad del servicio AppsFlyer</Anchor>: Cómo AppsFlyer maneja y utiliza los datos.
+> * <Anchor target="_blank" href="https://developer.apple.com/app-store/app-privacy-details/">Datos de privacidad de la app en la App Store de Apple</Anchor>.
 
-<div data-zendesk-anchors="h_01HE7T7J409620K5KX5XKPEQVZ=nutrition-labels-and-the-app-store-review h_01HE7T7J4004XVJTMF6S964DVB=data-types-collected h_01HE7T7J4098NNW8D0BCD3EFBJ=data-use-purposes h_01HE7T7J41BJG9GTBWMVKG7031=data-linked-to-an-identity h_01HE7TES34MEF1XR4B6BDEMJW4=see-also" />
+<div data-zendesk-anchors="nutrition-labels-and-the-app-store-review=etiquetas-de-nutrici%C3%B3n-y-revisi%C3%B3n-de-la-app-store h_01HE7T7J409620K5KX5XKPEQVZ=etiquetas-de-nutrici%C3%B3n-y-revisi%C3%B3n-de-la-app-store data-types-collected=tipos-de-datos-recopilados h_01HE7T7J4004XVJTMF6S964DVB=tipos-de-datos-recopilados data-use-purposes=fines-del-uso-de-datos h_01HE7T7J4098NNW8D0BCD3EFBJ=fines-del-uso-de-datos data-linked-to-an-identity=datos-vinculados-a-una-identidad h_01HE7T7J41BJG9GTBWMVKG7031=datos-vinculados-a-una-identidad h_01HE7TES34MEF1XR4B6BDEMJW4=consulta-tambi%C3%A9n" />

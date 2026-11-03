@@ -1,5 +1,5 @@
 ---
-title: Snapchat—Advanced SRN integration setup
+title: 'Snapchat: configuración avanzada de la integración de SRN'
 metadata:
   keywords:
     - configuration
@@ -18,295 +18,294 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-06-13T12:28:59Z'
-  edited_at: '2026-10-07T11:44:22Z'
+  edited_at: '2026-10-09T00:15:00Z'
   id: 211011983
-  locale: en-us
+  locale: es
   section: Snap (Snapchat)
   section_id: 6551316540945
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/211011983-Snapchat-Advanced-SRN-integration-setup
+  url: https://support.appsflyer.com/hc/es/articles/211011983
 ---
-> **At a glance:** Learn how to set up the integration between AppsFlyer and Snapchat to enable attribution measurement. Snapchat is an advanced SRN (Self-Reporting Network).
+> **At a glance:** Aprende cómo configurar la integración entre AppsFlyer y Snapchat para habilitar la medición de la atribución. Snapchat es una SRN avanzada (red de autoinforme).
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
-## Overview
+## Resumen
 
-An Advanced SRN integration means that all <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">dual-consented</Anchor> traffic is attributed and reported as regular SRN traffic. For non-consented traffic, AppsFlyer is able to attribute and measure attribution based on clicks and impressions coming from Snapchat using <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#how-does-attribution-work-with-advanced-srns">other attribution methods</Anchor>, in accordance with privacy restrictions.
+Una integración avanzada de SRN significa que todo el tráfico <Anchor target="_blank" href="/marketers/es/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">con doble consentimiento</Anchor> se atribuye y se reporta como tráfico SRN regular. Para el tráfico sin consentimiento, AppsFlyer puede atribuir y medir la atribución en función de los clics y las impresiones procedentes de Snapchat mediante <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#cómo-funciona-la-atribución-con-las-srns-avanzadas">otros métodos de atribución</Anchor>, de acuerdo con las restricciones de privacidad.
 
-## Set up Snapchat integration
+## Configura la integración de Snapchat
 
-**Prerequisite:** An account with Snapchat. If you don't have an account, contact Snapchat to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de **ponerte en contacto con el partner** y abrir una cuenta con ellos. Si no tienes una cuenta, ponte en contacto con Snapchat para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   ( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for Snapchat and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.  
-   **Note:** The toggle **must stay on (active) as long as you work with Snapchat**. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation and deactivation</Anchor>.
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations</Anchor>.
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace**.  
+   (**Para editar una integración existente:** ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca Snapchat y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el conmutador **Activar partner**.  
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con Snapchat**. Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación y desactivación de Partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners</Anchor>.
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The integration supports click and impression attribution, cost, and audiences.
+La integración admite la atribución de clic e impresiones, el costo y las audiencias.
 
-#### Activate partner
+#### Activar partner
 
-On the **first visit** here, you must turn on **Activate Partner** to enable setup.  
-For more details about partner activation, see <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Partner activation and deactivation</Anchor>.
+En la **primera visita** aquí, debes activar **Activate Partner** para habilitar la configuración.  
+Para obtener más información sobre la activación del partner, consulta <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Activación y desactivación del partner</Anchor>.
 
-**Enable attribution**
+**Habilitar la atribución**
 
-Enable **Activate Partner** to allow attribution to Snapchat.
+Activa **Activar partner** para permitir la atribución a Snapchat.
 
 ![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
 
-#### General settings
+#### Configuración general
 
-**Snap App ID**
+**ID de aplicación de Snap**
 
-1. In your Snap Business Manager, go to Apps, and copy the Snap App ID (read Snapchat's guide on <Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/a/snap-app-id">how to generate a Snap App ID</Anchor>).
-2. Paste the ID in the Snap App ID field in AppsFlyer.
+1. En tu Snap Business Manager, ve a Aplicaciones y copia el ID de aplicación de Snap (consulta la guía de Snapchat sobre <Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/a/snap-app-id">cómo generar un ID de aplicación de Snap</Anchor>).
+2. Pega el ID en el campo ID de aplicación de Snap en AppsFlyer.
 
 ![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)
 
-**In case the app is promoted by an agency**:
+**En caso de que una agencia promocione la aplicación**:
 
-* Snap App ID can be added by the advertiser only.
-* If the agency is under the same organization as you on Snapchat ad platform, use only one Snap App ID.
-* If the agency is under a different organization on Snapchat ad platform, request from them to provide their Snap App ID for this app, and enter it in this field. Multiple IDs can be entered. Press Enter after each ID.
+* El ID de aplicación de Snap solo puede agregarlo el anunciante.
+* Si la agencia está bajo la misma organización que tú en la plataforma de anuncios de Snapchat, usa solo un ID de aplicación de Snap.
+* Si la agencia está bajo una organización diferente en la plataforma de anuncios de Snapchat, solicítales que proporcionen su ID de aplicación de Snap para esta aplicación e introdúcelo en este campo. Se pueden introducir varios ID. Presiona Enter después de cada ID.
 
-#### Advanced Privacy
+#### Privacidad Avanzada
 
-The **Advanced Privacy** (AP) toggle controls which events AppsFlyer sends to Snapchat. This setting is also referred to as **Advanced Conversions** on the Snapchat side.
+El interruptor **Privacidad avanzada** (AP) controla qué eventos AppsFlyer envía a Snapchat. Esta configuración también se denomina **Conversiones avanzadas** en Snapchat.
 
-* **Advanced Privacy OFF**: AppsFlyer sends all installs, re-engagements, and in-app events to Snapchat for attribution, including events for users who have not made their IDFA (identifier for advertisers) available.  
-  **Important:** To use Snapchat's <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/unified-attribution?language=en_US">unified attribution solution</Anchor>, you must turn off the Advanced Privacy toggle.
-* **Advanced Privacy ON**: AppsFlyer sends only installs, re-engagements, and in-app events for users who have made their IDFA available.
-
-> 📘 **Note**
->
-> Agencies can't turn on Advanced Privacy, even when granted permission by the advertiser. This setting is limited to the advertiser only.
-
-#### Advanced Matching data sharing
-
-When **Advanced Matching data sharing** is turned on, Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, are shared with Snapchat if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
-
-#### Install attribution
-
-Set the different attribution windows to attribute new installs (first launches) of users who viewed, clicked, or engaged with your ad. Note that only installs within the lookback window may be attributed to Snapchat.
-
-**Note:** Attribution for reinstalls (any install that isn't the initial setup on the device) isn't supported.
-
-1. Set the **Install click-through lookback window** to either 1-23 hours or 1-30 days. **Note:** Snapchat recommends aligning with them by setting the Install click-through lookback window to 7 days.
+* **Privacidad avanzada DESACTIVADA**: AppsFlyer envía todas las instalaciones, los re-engagement y los eventos in-app a Snapchat para la atribución, incluidos los eventos de los usuarios que no han puesto su IDFA (identificador para anunciantes) a disposición.  
+  **Importante:** Para usar la <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/unified-attribution?language=en_US">solución de atribución unificada</Anchor> de Snapchat, debes desactivar el interruptor de Privacidad avanzada.
+* **Privacidad avanzada ACTIVADA**: AppsFlyer envía solo instalaciones, re-engagement y eventos in-app de los usuarios que han puesto su IDFA a disposición.
 
 > 📘 **Note**
 >
-> Setting the click-through lookback window also determines the lookback windows for engaged views and engaged clicks.
+> Las agencias no pueden activar la Privacidad avanzada, incluso cuando el anunciante les concede permiso. Esta configuración está limitada únicamente al anunciante.
 
-2. [Optional] Turn on **Install view-through attribution** and set the lookback windows:
-   * **Install view-through lookback window** between 1-24 hours. **Note:** Snapchat recommends aligning with them by setting the Install view-through lookback window to 1 day.
+#### Uso compartido de datos de Advanced Matching
 
-#### Re-engagement attribution
+Cuando la opción **Uso compartido de datos de Advanced Matching** está activada, los campos de Advanced Matching, como el correo electrónico hashed, el número de teléfono hashed, el nombre hashed y el apellido hashed, se comparten con Snapchat si estos campos se incluyen en la información del evento enviada a AppsFlyer. Para obtener más información, consulta: <Anchor target="_blank" href="/marketers/es/docs/advanced-matching-data-sharing">Uso compartido de datos de Advanced Matching</Anchor>.
 
-Set the different attribution windows to attribute re-engagements of your existing users who viewed, clicked, or engaged with your ad. Note that only re-engagements within the lookback window may be attributed to Snapchat.
+#### Atribución de instalación.
 
-1. Set the **Re-engagement click-through lookback window** to either 1-23 hours or 1-30 days. **Note:** Snapchat recommends aligning with them by setting the Re-engagement click-through lookback window to 7 days.
+Configura las diferentes ventanas de atribución para atribuir nuevas instalaciones (primeros lanzamientos) de usuarios que vieron, hicieron clic o interactuaron con tu anuncio. Tenga en cuenta que solo las instalaciones dentro de la ventana de retroceso pueden atribuirse a Snapchat.
 
-> 📘 **Note**
->
-> Setting the re-engagement click-through lookback window also determines the re-engagement lookback windows for engaged views and engaged clicks.
+**Nota:** No se admite la atribución de reinstalaciones (cualquier instalación que no sea la configuración inicial en el dispositivo).
 
-2. [Optional] Turn on **Re-engagement view-through attribution** and set the lookback windows:
-   * **Re-engagement view-through lookback window** between 1-24 hours. **Note:** Snapchat recommends aligning with them by setting the Re-engagement view-through lookback window to 1 day.
-3. Set the **Re-engagement window** to either 1-23 hours, 1-90 days, or **Lifetime**.
-
-#### Ignore active users for retargeting
-
-Set a window timeframe to <Anchor target="_blank" href="/marketers/docs/set-retargeting-inactivity-window#inactivity-period">ignore re-engagements and re-attributions</Anchor> of users who launched your app. This means their activity during the window timeframe isn't recorded in AppsFlyer.
+1. Configura la **ventana de lookback de instalaciones por clic** en 1-23 horas o 1-30 días. **Nota:** Snapchat recomienda alinearte con ellos configurando la ventana de lookback de instalaciones por clic en 7 días.
 
 > 📘 **Note**
 >
-> Re-engagement and re-attribution conversions of users who were **dormant** in the set timeframe **are recorded**.
+> La configuración de la ventana retrospectiva de clic también determina las ventanas retrospectivas de clics y por impresiones de engagement.
 
-1. Turn on **Ignore active users for retargeting**.
-2. Set the Inactivity window.
+2. [Opcional] Activa **la atribución view-through de instalación** y configura las ventanas de lookback:
+   * **Ventana de lookback de instalación por view-through** entre 1-24 horas. **Nota:** Snapchat recomienda alinearte con ellos configurando la ventana de lookback de instalación por view-through en 1 día.
 
-#### In-app event postbacks
+#### Atribución de re-engagement
 
-Map AppsFlyer events with the partner via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant by target validation rules).
+Configura las diferentes ventanas de atribución para atribuir las nuevas interacciones de tus usuarios existentes que vieron, hicieron clic o interactuaron con tu anuncio. Ten en cuenta que solo los nuevos re-engagements de la ventana retrospectiva se pueden atribuir a Snapchat.
+
+1. Configura la **ventana de lookback de re-engagement por clic** en 1-23 horas o 1-30 días. **Nota:** Snapchat recomienda alinearte con ellos configurando la ventana de lookback de re-engagement por clic en 7 días.
+
+> 📘 **Note**
+>
+> La configuración de la ventana retrospectiva de clic de re-engagement también determina las ventanas retrospectivas de clics y por impresiones de engagement.
+
+2. [Opcional] Activa **la atribución view-through de re-engagement** y configura las ventanas de lookback:
+   * **Ventana de lookback de re-engagement por view-through** entre 1-24 horas. **Nota:** Snapchat recomienda alinearse con ellos configurando la ventana de lookback de view-through de Re-engagement en 1 día.
+3. Configura la **ventana de Re-engagement** en 1-23 horas, 1-90 días o **Lifetime**.
+
+#### Ignorar usuarios activos para retargeting
+
+Establece un período de ventana para <Anchor target="_blank" href="/marketers/es/docs/set-retargeting-inactivity-window#periodo-de-inactividad">ignorar los re-engagements y las reatribuciones</Anchor> de los usuarios que abrieron tu aplicación. Esto significa que su actividad durante el periodo de la ventana no se registra en AppsFlyer.
+
+> 📘 **Note**
+>
+> Las conversiones de Re-engagement y reatribución de los usuarios que estuvieron **inactivos** durante el período establecido **se registran**.
+
+1. Activa **Ignorar usuarios activos para el retargeting**.
+2. Configura la ventana de inactividad.
+
+#### Postbacks de eventos in-app
+
+Asigna eventos de AppsFlyer con el partner a través de postbacks. Si el envío de postbacks está activado, esto incluye los eventos in-app rechazados (eventos bloqueados por Protect360 o eventos que no cumplen con las reglas de validación del targeting).
 
 [![mceclip0.png](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)
 
-**To configure in-app event postbacks:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Set the **Partner ID** (if required).
-2. Enable **In-app event postback.**
-3. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
-4. If available, select whether to send events automatically or manually. Learn more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped">sending all events as they are</Anchor>.
-5. Click **Add event** to add an SDK or server-to-server event to the list.
-6. Complete the parameters required.
-7. [Optional] Click <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/6524810d15f08b4b85deab9c2cbfb8fd7880126b3c3180e3ecf4ead5f1f0a9ae-17798909160465.png" width="30px" /> to set conditions for sending certain in-app events to the partner.  
-   Learn more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">conditional in-app events postbacks</Anchor>.
+1. Establece el **ID de partner** (si es necesario).
+2. Habilita el **postback de evento in-app**.
+3. Establece la **ventana de postback de evento in-app**, si es necesario (lee más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">configuración de la ventana de postback de evento in-app</Anchor>).
+4. Si está disponible, selecciona si deseas enviar los eventos de forma automática o manual. Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped">enviar todos los eventos tal como están</Anchor>.
+5. Haz clic en **Agregar evento** para añadir un evento de SDK o de servidor a servidor a la lista.
+6. Completa los parámetros según sea necesario.
+7. [Opcional] Haz clic en <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png" width="30px" /> para establecer condiciones para enviar ciertos eventos in-app al partner.  
+   Aprende más sobre los <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">postbacks condicionales de eventos in-app</Anchor>.
 
-| Parameter name | Description |
+| Nombre del parámetro | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event** , then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping</Anchor>.</li></ul> |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
-| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources including organic**: send postbacks for events attributed to any partner and organic events.</li></ul> |
-| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos servidor a servidor.<br />**Consejo**: ¿No ves el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.</li><li>Escríbelo en **evento de AppsFlyer** , y luego haz clic en **Crear personalizado**. Lee más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizada</Anchor>.</li></ul> |
+| **Asignado al evento de socio** | El nombre o ID único de cada evento, definido por el partner. Existen varias configuraciones de asignación:<ul><li>**Campo de texto:** obtén el ID del evento correspondiente del partner.</li><li>**Cuadro desplegable:** selecciona el evento de AppsFlyer predefinido más adecuado.</li><li>**Tal como está**: envía los eventos tal como están, sin asignación de nombres.</li></ul> |
+| **Para usuarios de** | Seleccione la opción de envío para el evento:<ul><li>**Solo este partner**: envía postbacks solo cuando este evento se atribuye a este partner.</li><li>**Todas las fuentes de medios, incluidas las orgánicas**: envía postbacks de eventos atribuidos a cualquier partner y eventos orgánicos.</li></ul> |
+| **incluye** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí, sin el valor del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento).</li><li>**Valores sin ingresos**: envía todos los parámetros **excluyendo** el valor de ingresos.</li></ul> |
 
 </Accordion>
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution links are not available for Snapchat.
+Los enlaces de atribución no están disponibles para Snapchat.
 
 > 📘 **Note**
 >
-> For all SRNs, such as Facebook, Apple Ads, Google Ads, and Snapchat, this tab is not functional, as they do not use external attribution links.
+> Para todas las SRN, como Facebook, Apple Ads, Google Ads y Snapchat, esta pestaña no funciona, ya que no usan enlaces de atribución externos.
 
 </Accordion>
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costo">
 
-The cost integration provides the following aggregated data:
+La integración de costos proporciona los siguientes datos agregados:
 
-* Cost data for your campaigns, adsets, ads, and channel levels. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.  
-  **Note:** Cost data requires an <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> subscription.
-* Data on clicks and impressions.
+* Datos de costos de tus campañas, a nivel de conjuntos de anuncios, anuncios y canal. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de ad network</Anchor> para obtener todos los detalles sobre las dimensiones, métricas y funciones compatibles.  
+  **Nota:** Los datos de costo requieren una suscripción a <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor>.
+* Datos sobre clics e impresiones.
 
-**To enable the cost API**:
+**Para habilitar la API de costo**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
 <div id="cost-data-sync-status" />
 
-<Accordion title="Cost data sync status">
+<Accordion title="Estado de sincronismo de datos de costos">
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Consulta el estado de tu API de costo</Anchor> y la última vez que AppsFlyer logró extraer datos de costo coincidentes, ya sea en el dashboard de estado de integración de costo (e ingresos por anuncios) o en el dashboard de la ad network individual.
 
 </Accordion>
 
 <div id="stop-snapchat-cost-sync" />
 
-<Accordion title="Stop Snapchat cost sync">
+<Accordion title="Detener la sincronización de costos de Snapchat">
 
-**To stop getting Snapchat cost and to delete a connected Snapchat account:**
+**Para dejar de obtener los costos de Snapchat y eliminar una cuenta de Snapchat conectada:**
 
-* <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">In the actions column, hover over an account, click **Delete connection**</Anchor>.  
-  Once deleted, AppsFlyer stops getting the cost. Deleting the connection does not impact historical data.
+* <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">En la columna de acciones, coloca el cursor sobre una cuenta y haz clic en **Eliminar conexión**</Anchor>.  
+  Una vez eliminado, AppsFlyer deja de recibir el costo. Eliminar la conexión no afecta los datos anteriores.
 
 </Accordion>
 
 > 📘 **Note**
 >
-> * Make sure your campaign setup in Snapchat is for either an iOS or Android app, not both. If the campaign is for both apps, AppsFlyer can't break down the cost per app, and the cost does not display in AppsFlyer.
-> * To avoid discrepancies in cost data, set the same timezone in both app settings and your Snapchat advertising account.
-> * Once you set Snap's cost, do not change the name of any active campaign, ad set, or single ad, as it may cause serious discrepancies or missing cost data.
+> * Asegúrate de que la configuración de tu campaña en Snapchat sea para una aplicación iOS o Android, no para ambas. Si la campaña es para ambas aplicaciones, AppsFlyer no puede desglosar el costo por aplicación, y el costo no se muestra en AppsFlyer.
+> * Para evitar discrepancias en los datos de costos, establece la misma zona horaria tanto en la configuración de la aplicación como en tu cuenta de publicidad de Snapchat.
+> * Una vez que configures el costo de Snap, no cambies el nombre de ninguna campaña activa, conjunto de anuncios ni anuncio individual, ya que esto puede provocar discrepancias graves o datos de costo faltantes.
 
 </Accordion>
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de ingresos por publicidad">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Select which <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions to grant</Anchor> Snapchat to access your data and perform various actions.
+Selecciona qué <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos conceder</Anchor> a Snapchat para acceder a tus datos y realizar varias acciones.
 
 > 📘 **Note**
 >
-> When the integration is deactivated while the Permissions toggle is still turned on, permissions remain granted.
+> Cuando la integración está desactivada pero el ajuste de Permisos sigue activado, los permisos permanecen vigentes.
 
 </Accordion>
 
-## Web to app: measuring app activity for non-app campaigns
+## Web a app: medición de la actividad de la aplicación para campañas que no son de aplicaciones
 
-AppsFlyer's integration with Snapchat enables comprehensive measurement of app activity, such as installs, re-engagements, and in-app events, for non-app campaigns attributed to Snapchat.
+La integración de AppsFlyer con Snapchat permite una medición exhaustiva de la actividad de la aplicación, como instalaciones, re-engagements y eventos in-app, para campañas que no son de aplicaciones atribuidas a Snapchat.
 
-For instance, app installs can be measured even when the ad destination is a web landing page, enabling measurement of the Web-to-App (W2A) user journey. To enable this type of measurement, please enable the <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/app-id-tracking">Snap App ID Tracking Toggle</Anchor> in Snapchat Ads Manager.
+Por ejemplo, las instalaciones de aplicaciones se pueden medir incluso cuando el destino del anuncio es una landing page web, lo que permite medir la trayectoria del usuario web-to-app (W2A). Para habilitar este tipo de medición, activa el <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/app-id-tracking">Snap App ID Tracking Toggle</Anchor> en Snapchat Ads Manager.
 
-By following these instructions, you can effectively measure app activity from Snapchat non-app campaigns and gain valuable insights into user behavior.
+Si sigues estas instrucciones, podrás medir de forma eficaz la actividad de la aplicación de las campañas no relacionadas con la aplicación de Snapchat y obtener insights valiosos sobre el comportamiento de los usuarios.
 
-## Deep linking with Snapchat
+## Enlaces profundos con Snapchat
 
-Deep linking with Snapchat is based on using a native deep link in Snapchat's platform, while adding AppsFlyer parameters to it.
+Los enlaces profundos con Snapchat se basan en el uso de un enlace profundo nativo en la plataforma de Snapchat, al tiempo que se le agregan parámetros de AppsFlyer.
 
-To perform deep linking with Snapchat:
+Para realizar enlaces profundos con Snapchat:
 
-1. Verify that **deep linking** for [retargeting is enabled for Snapchat](/docs/snapchat-advanced-srn-integration-setup#set-up-deep-links-on-the-snap-platform).
-2. Verify that <Anchor target="_blank" href="/marketers/docs/app-settings#reengagement-attribution">re-engagement attribution is enabled in AppsFlyer</Anchor>.
-3. Take the app's deep link scheme URI and add **at least** the following parameters:
-   * **PID** - The media source in this case is always **snapchat\_int**. This enables all data to appear in the AppsFlyer dashboard under the **Snapchat\_int** media source.
-   * **C -** the relevant campaign name
-   * **is\_retargeting=true -** this field defines the campaign as a retargeting campaign. The engagements of existing users with the retargeting campaign are marked as re-engagements due to the existence of this field in the URI. This makes sure the user's data appears in the retargeting dashboard.
+1. Verifica que **deep linking** para [retargeting esté habilitado para Snapchat](/docs/snapchat-advanced-srn-integration-setup#configura-enlaces-profundos-en-la-plataforma-snap).
+2. Verifica que <Anchor target="_blank" href="/marketers/es/docs/app-settings#reengagement-attribution">la atribución de re-engagement esté habilitada en AppsFlyer</Anchor>.
+3. Toma el URI del esquema de enlace profundo de la aplicación y añade **al menos** los siguientes parámetros:
+   * **PID** - La fuente de medios en este caso siempre es **snapchat\_int**. Esto permite que todos los datos aparezcan en el dashboard de AppsFlyer bajo la fuente de medios **Snapchat\_int** .
+   * **C -** el nombre de la campaña correspondiente
+   * **is\_retargeting=true**: este campo define la campaña como una campaña de retargeting. Los engagements de los usuarios existentes con la campaña de retargeting se marcan como re-engagements debido a la existencia de este campo en el URI. Esto asegura que los datos del usuario aparezcan en el dashboard de retargeting.
 
 > 📘 **Note**
 >
-> **URI Example**
+> **Ejemplo de URI**
 >
 > client://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
 
-### Set up deep links on the Snap platform
+### Configura enlaces profundos en la plataforma Snap
 
-1. Go to **Drive traffic to app** opportunity type.
-2. Add the Deeplink URI:  
+1. Ve al tipo de oportunidad **Drive traffic to app** .
+2. Agrega el URI de enlace profundo:  
      
    [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
 
-### Deferred deep linking with Snapchat
+### Enlaces profundos diferidos con Snapchat
 
-AppsFlyer provides a number of solutions for deferred deep linking:
+AppsFlyer ofrece una serie de soluciones para enlaces profundos diferidos:
 
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">**UDL (Unified deep linking)**</Anchor> : Snapchat clicks include a <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#deep_link_value">deep\_link\_value</Anchor> field (when deep link is set for the ad), and are supported under the UDL solution.
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">**GCD (Get Conversions Data) API**</Anchor> : This is the recommended option to access Snapchat user conversion data in real time, directly at the SDK level. The data returned in the GCD API includes the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_dp">`af_dp`</Anchor> parameter, which holds the actual deep link destination (user destination within the app).
-* **Using conversion data parameters:** You can create custom logic to navigate the user to your content using other parameters, such as the Campaign name, Adset name, or any other field that is returned as part of the attribution data for Snapchat installs.
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">**UDL (Unified deep linking)**</Anchor> : Los clics de Snapchat incluyen un campo <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#deep_link_value">deep\_link\_value</Anchor> (cuando se establece un deep link para el anuncio) y son compatibles con la solución UDL.
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">**GCD (Get Conversions Data) API**</Anchor> : Esta es la opción recomendada para acceder a los datos de conversión de usuarios de Snapchat en tiempo real, directamente en el nivel del SDK. Los datos devueltos en la API de GCD incluyen el parámetro <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#af_dp">`af_dp`</Anchor>, que contiene el destino real del deep link (destino del usuario dentro de la aplicación).
+* **Uso de parámetros de datos de conversión:** Puedes crear una lógica personalizada para dirigir al usuario a tu contenido usando otros parámetros, como el nombre de la campaña, el nombre del conjunto de anuncios o cualquier otro campo que se devuelva como parte de los datos de atribución de las instalaciones de Snapchat.
 
-## Set up Snapchat for agencies
+## Configuración de Snapchat para agencias
 
-Agencies working on behalf of advertisers can turn on the Snapchat integration and start getting attribution for their campaigns. However, this integration has some limitations when it comes to agencies.
+Las agencias que trabajan en nombre de los anunciantes pueden activar la integración de Snapchat y comenzar a obtener atribución por sus campañas. No obstante, esta integración tiene algunas limitaciones cuando se trata de agencias.
 
-### Agency limitations
+### Limitaciones para agencias
 
-* An agency can access the Snapchat integration only after the advertiser they work with has activated it on their side.
-* Attribution parameters showing on the agency's integration page are inherited from the advertiser's integration in **view-only** mode. This means the agency can see how the advertiser configured the attribution lookback windows but can't configure them on their own.
-* For post-attribution events, if granted permission by the advertiser, an agency can configure in-app event postbacks.
-* An agency can't turn on Advanced Privacy, even when granted permission (see **Advanced Privacy** above).
+* Una agencia puede acceder a la integración de Snapchat solo después de que el anunciante con el que trabaja la haya activado en su lado.
+* Los parámetros de atribución que aparecen en la página de integración de la agencia se heredan de la integración del anunciante en modo **solo visualización** . Esto significa que la agencia puede ver cómo el anunciante configuró las ventanas retrospectivas de atribución pero no puede configurarlas por su cuenta.
+* Para los eventos posteriores a la atribución, si el anunciante le otorga permiso, una agencia puede configurar postbacks de eventos in-app.
+* Una agencia no puede activar Privacidad avanzada, incluso cuando se le concede permiso (consulta **Advanced Privacy** arriba).
 
-**To set up Snapchat for agencies:**
+**Para configurar Snapchat para agencias:**
 
-1. In AppsFlyer, under **Configuration** go to **Partner Marketplace**.
-2. Find **Snapchat** and select it.
-3. Enter your agency's **Snapchat Account ID**. This identifies agency traffic and distinguishes it from the advertiser's. You can enter up to 50 different Snapchat account IDs. All attribution data coming from the accounts you entered is visible under the agency's dashboard.
-4. Click **Save Integration**.
+1. En AppsFlyer, en **Configuración**, ve a **Partner Marketplace**.
+2. Busca **Snapchat** y selecciónalo.
+3. Introduce el **ID de cuenta de Snapchat** de tu agencia. Esto **identifica el tráfico de la agencia y lo distingue del anunciante.** Puedes ingresar hasta 50 ID de cuentas de Snapchat diferentes. Todos los datos de atribución procedentes de las cuentas que has introducido son visibles en el dashboard de la agencia.
+4. Haz clic en **Guardar integración**.
 
 ![snapchat-agency-integration.png](https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png)
 
 > 🚧 **Important**
 >
-> Snapchat account IDs mustn't be shared between the advertiser and the agency. If they are shared, all of the advertiser's installs are automatically attributed on the agency's dashboard.
+> Los ID de cuenta de Snapchat no deben compartirse entre el anunciante y la agencia. Si se comparten, todas las instalaciones del anunciante se atribuyen automáticamente en el dashboard de la agencia.
 
-## Raw data restrictions
+## Restricciones de raw data
 
-* Starting March 1, 2023, Snapchat Uninstalls aren't included in the raw data reports.
-* Starting September 12, 2023, Snapchat is providing advertisers with limited view-through attribution data at the device level. For user-level sources, such as raw data reports, Push API messages, Pull API reports, Export data page, and Data Locker, only the following fields are populated:
-  * Media source (snapchat\_int)
-  * Channel
-  * Attributed touch type (impression)
-  * Attributed touch time (reported as date only - "dd/mm/yyyy")
-  * Campaign name and ID (Starting Dec 15, 2025)
-  * Ad set name and ID (Starting Dec 15, 2025)
-* Starting October 6, 2026, `snapchat_int` view-through attribution data is limited (restricted) in raw data only in some cases. The logic of the event restrictions is managed by Snapchat.
+* Desde el 1 de marzo de 2023, las desinstalaciones de Snapchat no se incluyen en los reportes de raw data.
+* A partir del 12 de septiembre de 2023, Snapchat proporciona a los anunciantes datos de atribución por impresiones limitados a nivel de dispositivo. Para fuentes a nivel de usuario, como reportes de raw data, mensajes de Push API, reportes de Pull API, la página Datos exportados y Data Locker, se completan los siguientes campos:
+  * Fuente de medios (snapchat\_int)
+  * Canal
+  * Tipo de toque atribuido (impresión)
+  * Hora de toque atribuida (reportada solo como fecha - "dd/mm/aaaa")
+  * Nombre e ID de la campaña (a partir del 15 de diciembre de 2025)
+  * Nombre e ID del conjunto de anuncios (a partir del 15 de diciembre de 2025)
+* A partir del 6 de octubre de 2026, los datos de atribución view-through de `snapchat_int` están limitados (restringidos) en raw data solo en algunos casos. La lógica de las restricciones de evento la gestiona Snapchat.
 
-## Snapchat data retention
+## Retención de datos de Snapchat
 
-Snapchat requires attribution providers to delete its user-level data 12 months after the install. This means that the events performed by these users 12 months after they install the app are counted as organic.
+Snapchat exige que los proveedores de atribución eliminen sus datos de nivel de usuario 12 meses después de la instalación. Esto significa que los eventos efectuados por estos usuarios 12 meses después de que hayan instalado la aplicación se cuentan como orgánicos.
 
-Past aggregate data remains the same.
+Los datos agregados anteriores permanecen iguales.
 
-<div data-zendesk-anchors="01H8F1RWVPTHBDGF3830DY7G7M=overview setting-up-snapchat-integration=set-up-snapchat-integration 01H7WQ47ECTZHPKMG5Z5ZPAND5=set-up-snapchat-integration 01H7WQ47ECZB5GNCQ0XH68N1DK=activate-partner 01H7WQ47ECQSQPP63H398NTQ6M=general-settings h_01_advanced-privacy=advanced-privacy h_01_advanced-matching-data-sharing=advanced-matching-data-sharing 01H8VVCC8GK8VFPBEPAMVHCAWM=install-attribution reengagement-attribution=re-engagement-attribution 01H8VVCC8HHG5290PYF0BT29QA=re-engagement-attribution h_01HNWSTJZPFQVQ5C8M0JA1J0T5=ignore-active-users-for-retargeting inapp-event-postback-settings=in-app-event-postbacks 01H8VVCC8HHZRFQ2T1X478YZMP=in-app-event-postbacks 01H7WQ47ED1HYEBHFJDHTB6HJH=cost-data-sync-status 01H7WQ47ED3P53B269W93Z341E=stop-snapchat-cost-sync web-to-app-measuring-app-activity-for-nonapp-campaigns=web-to-app-measuring-app-activity-for-non-app-campaigns h_01JJMAS0W9WMEPJCQWD9BXAEZ2=web-to-app-measuring-app-activity-for-non-app-campaigns 01H7WQ47EDC973V7CPE38QAQE7=deep-linking-with-snapchat how-to-set-up-deep-links-on-snap-platform=set-up-deep-links-on-the-snap-platform 01H7WQ47EDJAX2DW7A2JJ4XVJN=set-up-deep-links-on-the-snap-platform 01H7WQ47EDS3MYRN9A9ZPHXG9Z=deferred-deep-linking-with-snapchat setting-up-snapchat-for-agencies=set-up-snapchat-for-agencies 01H7WQ47EDARK9SSP47V5MGX18=set-up-snapchat-for-agencies h_01HHVGS94CB9XC0T63VFDZ18JS=agency-limitations h_01HA3XZPWSKVRX7VTRXT1WQ1EZ=raw-data-restrictions keeping-snapchat-data=snapchat-data-retention 01H7WQ47ED9STKS1CVW5EXYX0Z=snapchat-data-retention" />
+<div data-zendesk-anchors="overview=resumen 01H8F1RWVPTHBDGF3830DY7G7M=resumen setting-up-snapchat-integration=configura-la-integraci%C3%B3n-de-snapchat 01H7WQ47ECTZHPKMG5Z5ZPAND5=configura-la-integraci%C3%B3n-de-snapchat activate-partner=activar-partner 01H7WQ47ECZB5GNCQ0XH68N1DK=activar-partner general-settings=configuraci%C3%B3n-general 01H7WQ47ECQSQPP63H398NTQ6M=configuraci%C3%B3n-general h_01_advanced-privacy=privacidad-avanzada advanced-privacy=privacidad-avanzada h_01_advanced-matching-data-sharing=uso-compartido-de-datos-de-advanced-matching advanced-matching-data-sharing=uso-compartido-de-datos-de-advanced-matching install-attribution=atribuci%C3%B3n-de-instalaci%C3%B3n 01H8VVCC8GK8VFPBEPAMVHCAWM=atribuci%C3%B3n-de-instalaci%C3%B3n reengagement-attribution=atribuci%C3%B3n-de-re-engagement 01H8VVCC8HHG5290PYF0BT29QA=atribuci%C3%B3n-de-re-engagement ignore-active-users-for-retargeting=ignorar-usuarios-activos-para-retargeting h_01HNWSTJZPFQVQ5C8M0JA1J0T5=ignorar-usuarios-activos-para-retargeting inapp-event-postback-settings=postbacks-de-eventos-in-app 01H8VVCC8HHZRFQ2T1X478YZMP=postbacks-de-eventos-in-app 01H7WQ47ED1HYEBHFJDHTB6HJH=cost-data-sync-status 01H7WQ47ED3P53B269W93Z341E=stop-snapchat-cost-sync web-to-app-measuring-app-activity-for-nonapp-campaigns=web-a-app-medici%C3%B3n-de-la-actividad-de-la-aplicaci%C3%B3n-para-campa%C3%B1as-que-no-son-de-aplicaciones h_01JJMAS0W9WMEPJCQWD9BXAEZ2=web-a-app-medici%C3%B3n-de-la-actividad-de-la-aplicaci%C3%B3n-para-campa%C3%B1as-que-no-son-de-aplicaciones deep-linking-with-snapchat=enlaces-profundos-con-snapchat 01H7WQ47EDC973V7CPE38QAQE7=enlaces-profundos-con-snapchat how-to-set-up-deep-links-on-snap-platform=configura-enlaces-profundos-en-la-plataforma-snap 01H7WQ47EDJAX2DW7A2JJ4XVJN=configura-enlaces-profundos-en-la-plataforma-snap deferred-deep-linking-with-snapchat=enlaces-profundos-diferidos-con-snapchat 01H7WQ47EDS3MYRN9A9ZPHXG9Z=enlaces-profundos-diferidos-con-snapchat setting-up-snapchat-for-agencies=configuraci%C3%B3n-de-snapchat-para-agencias 01H7WQ47EDARK9SSP47V5MGX18=configuraci%C3%B3n-de-snapchat-para-agencias agency-limitations=limitaciones-para-agencias h_01HHVGS94CB9XC0T63VFDZ18JS=limitaciones-para-agencias raw-data-restrictions=restricciones-de-raw-data h_01HA3XZPWSKVRX7VTRXT1WQ1EZ=restricciones-de-raw-data keeping-snapchat-data=retenci%C3%B3n-de-datos-de-snapchat 01H7WQ47ED9STKS1CVW5EXYX0Z=retenci%C3%B3n-de-datos-de-snapchat" />

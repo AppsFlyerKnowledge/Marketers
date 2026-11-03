@@ -1,5 +1,5 @@
 ---
-title: Web Server-to-server events API for PBA (Web-S2S)
+title: API de eventos web de servidor a servidor para PBA (Web-S2S)
 metadata:
   keywords:
     - SDK
@@ -15,78 +15,77 @@ x-zendesk:
     - Marketers
     - Cross-Platform Measurement
   created_at: '2020-03-23T23:59:00Z'
-  edited_at: '2025-08-20T09:36:30Z'
+  edited_at: '2026-08-12T12:11:54Z'
   id: 360006997298
-  locale: en-us
+  locale: es
   section: People Based Attribution (PBA)
   section_id: 43560588808721
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360006997298-Web-Server-to-server-events-API-for-PBA-Web-S2S
+  url: https://support.appsflyer.com/hc/es/articles/360006997298
 ---
-> **At a glance:** Use the Web Server-to-Server (Web-S2S) events API to report events and conversions to PBA that aren't reported by the Web SDK.
+> **De un vistazo:** Utilice la API web de servidor a servidor (Web-S2S) para reportar eventos y conversiones a PBA que no son notificados por el SDK Web.
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)
+[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
-## Web Server-to-server events API for PBA
+## API de eventos web de servidor a servidor para PBA
 
-The Web-S2S API for People-Based Attribution complements the <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide">Web SDK</Anchor> allowing marketers to report events occurring on their websites but outside the scope of the Web SDK. For example, a visitor to the website (a web user), triggers an online payment event, processed by backend systems. After processing, the backend, using the S2S API, reports the event to AppsFlyer.
+La API Web-S2S para la atribución basada en personas complementa el <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide">SDK</Anchor> web, lo que permite a los marketers reportar los eventos que se producen en sus sitios web pero que quedan fuera del ámbito del SDK web. Por ejemplo, un visitante del sitio web (un usuario web), dispara un evento de pago en línea, procesado por sistemas backend. Tras el procesamiento, el backend, utilizando la API S2S, reporta el evento a AppsFlyer.
 
-Events sent by the S2S API:
+Los eventos enviados por la API S2S:
 
-* are recorded similarly to events reported by the Web SDK
-* are included in PBA dashboards if set as conversion events
-* populate PBA raw data with *event\_source field* set to *web S2S*
+* se registran de forma similar a los eventos reportados por el SDK web,
+* se incluyen en los paneles de control de PBA si se establecen como eventos de conversión,
+* rellenan el raw data de PBA con el *campo event\_source* configurado como *web S2S*.
 
-## API use instructions
+## Instrucciones de uso de la API
 
-Create your API call using the sections that follow.
+Crea tu llamada a la API utilizando las secciones siguientes.
 
-| No. | Item | Remarks |
+| N.º | Elemento | Observaciones |
 | --- | --- | --- |
-| 1 | Unique user ID | <ul><li>Strive to give us the best unique user ID available. This has a significant impact on data analysis.</li><li>Best practice is to send the customerUserId. If it's not available send the afUserId being the website cookie ID set by the WebSdk.</li><li>At any time you associate your customer user ID (<Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">CUID</Anchor>) with the [afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid) send a setCuID() message with both IDs.</li></ul> |
-| 2 | Timestamp | <ul><li>AppsFlyer applies strict validation to incoming event timestamps:</li></ul><ul><li>**Late-arriving events:** Events are accepted with their original timestamp if they arrive within 24 hours of the day they belong to. **For example**, an event with a Monday timestamp (2025-08-18 23:59 UTC) will retain that timestamp if it is sent **anytime up until Tuesday** 23:59:59 UTC. If the same event is sent after Tuesday 23:59:59 UTC, the timestamp is overwritten with the server’s reception time.</li><li>**Future timestamps:** Events with a timestamp later than the actual arrival time are not permitted. Such timestamps are also overwritten with the server’s reception time.</li></ul><ul><li>Timestamps are UTC-based. If necessary, convert from local time to UTC time before populating the parameter</li></ul> |
-| 3 | Revenue and currency | You must populate *eventRevenueCurrency* and *eventRevenue* even if they are contained in the eventValue. Do so because we use them in our dashboards. |
+| 1 | ID de usuario único | <ul><li>Intenta proporcionarnos el mejor ID de usuario único disponible. Esto tiene un impacto significativo en el análisis de datos.</li><li>La práctica recomendada es enviar el customerUserId. Si no está disponible, envía el afUserId, que es el ID de cookie del sitio web establecido por WebSdk.</li><li>En el momento en que asocies tu ID de usuario de cliente<Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">(CUID</Anchor>) con el [afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid) envía un mensaje setCuID() con ambos ID.</li></ul> |
+| 2 | Marca de tiempo | <ul><li>AppsFlyer aplica una validación estricta a las marcas de tiempo de los eventos entrantes:</li></ul><ul><li>**Eventos que llegan con retraso:** Los eventos se aceptan con su marca de tiempo original si llegan en las 24 horas posteriores al día al que pertenecen. **Por ejemplo**, un evento con una marca de tiempo del lunes (2025-08-18 23:59 UTC) conservará esa marca de tiempo si se envía **en cualquier momento hasta el martes** a las 23:59:59 UTC. Si el mismo evento se envía después del martes a las 23:59:59 UTC, la marca de tiempo se sobrescribe con la hora de recepción del servidor.</li><li>**Marcas de tiempo futuras:** No se permiten eventos con una marca de tiempo posterior a la hora de llegada real. Estas marcas de tiempo también se sobrescriben con la hora de recepción del servidor.</li></ul><ul><li>Las marcas de tiempo se basan en UTC. Si es necesario, convierte la hora local en hora UTC antes de rellenar el parámetro.</li></ul> |
+| 3 | Ingresos y divisas | Debes rellenar *eventRevenueCurrency* y *eventRevenue* incluso si están incluidos en eventValue. Hazlo porque los utilizamos en nuestros paneles de control. |
 
 <div id="api-basics" />
 
-<Accordion title="API basics">
+<Accordion title="Conceptos básicos de la API">
 
-API implementation requires the following credentials available in the dashboard:
+La implementación de la API requiere las siguientes credenciales disponibles en el panel de control:
 
-* Bundle ID (aka brand bundle ID)
-* Web Dev key
+* ID de paquete (también conocido como ID del paquete de marca)
+* Clave de desarrollador web
 
-**To get the credentials:**
+**Para obtener las credenciales:**
 
-1. In AppsFlyer, from the top menu, select **My Apps** > **View brand bundles**.  
-   The list of bundles display.
-2. Copy and record the appropriate:
-   * ***Brand bundle ID***
-   * ***Web dev key***
+1. En AppsFlyer, en el menú superior, selecciona **Mis aplicaciones** > **Ver paquetes de marcas**.  
+   Aparece la lista de paquetes.
+2. Copia y registra lo que corresponda:
+   * ***ID de paquete de marca***
+   * ***Clave de desarrollador web***
 
-#### Web S2S API basics
+#### Conceptos básicos de la API Web S2S
 
-| Path | `https://webs2s.appsflyer.com/v1/bundleId/method`<ul><li>`bundleId`: Is the app bundle ID available in the dashboard.</li><li>`method` being one of the following:<ul><li>[event](/docs/web-server-to-server-events-api-for-pba-web-s2s#event-method): send for reportable backend events</li><li>[setCuId:](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method) send when associating afUserId with your CUID</li></ul></li></ul> |
+| Ruta | `https://webs2s.appsflyer.com/v1/bundleId/method`<ul><li>`bundleId`: es el ID del paquete de aplicaciones disponible en el panel de control.</li><li>`method` es uno de los siguientes:<ul><li>[event](/docs/web-server-to-server-events-api-for-pba-web-s2s#event-method): se envía para eventos de backend reportables</li><li>[setCuId:](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method) se envía al asociar afUserId con tu CUID</li></ul></li></ul> |
 | --- | --- |
-| HTTP method | `POST` |
-| Accepted content type | `application/json` |
-| JSON payload limitation | JSON payload size: maximum 1KB |
-| Rate limitation | POST limitation volume: 60,000 POSTs per minute. To increase the limit, contact your CSM. |
-| TLS | <ul><li>TLS 1.2 or later</li><li><Anchor target="_blank" href="/marketers/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client">Ciphers supported</Anchor></li></ul> |
+| Método HTTP | `POST` |
+| Tipo de contenido aceptado | `application/json` |
+| Limitación de la carga útil de JSON | Tamaño de la carga útil de JSON: máximo 1 KB |
+| Limitación de la tasa | Volumen de limitación POST: 60 000 POST por minuto. Para aumentar el límite, contacta a tu CSM. |
+| TLS | <ul><li>TLS 1.2 o posterior</li><li><Anchor target="_blank" href="/marketers/es/docs/appsflyer-https-ssl-encryption-policy-support#mensajes-salientes-appsflyer-como-cliente">cifrados compatibles</Anchor></li></ul> |
 
 </Accordion>
 
 <div id="setcuid-method" />
 
-<Accordion title="setCuId method">
+<Accordion title="Método setCuId">
 
-| Method name | setCuId |
+| Nombre del método | setCuId |
 | --- | --- |
-| Use case | On associating a CUID with a visitor to your website. For example, any time you match the web `afUserId` with your customer user ID. Doing so enables PBA to match data from various sources. This is similar to <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">setCustomerUserId</Anchor> on the website. |
-| Method path | `https://webs2s.appsflyer.com/v1/bundleId/setcuid` |
-| Payload | The JSON payload consists of the parameters listed here. All parameters are mandatory.<ul><li>[customerUserID](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method)</li><li>[afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid)</li><li>[webDevKey](/docs/web-server-to-server-events-api-for-pba-web-s2s#webdevkey)</li></ul> |
+| Caso de uso | Al asociar un CUID a un visitante de tu sitio web. Por ejemplo, cada vez que hagas coincidir el `afUserId` web con tu ID de usuario de cliente. De este modo, la PBA puede cotejar datos de diversas fuentes. Esto es similar a <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">setCustomerUserId</Anchor> en el sitio web. |
+| Ruta del método | `https://webs2s.appsflyer.com/v1/bundleId/setcuid` |
+| Carga útil | La carga útil de JSON consta de los parámetros que se enumeran a continuación. Todos los parámetros son obligatorios.<ul><li>[customerUserID](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method)</li><li>[afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid)</li><li>[webDevKey](/docs/web-server-to-server-events-api-for-pba-web-s2s#webdevkey)</li></ul> |
 
-#### Curl example setCuId
+#### Ejemplo de setCuId de Curl
 
 ```bash
 curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid' \
@@ -102,56 +101,56 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 <div id="event-method" />
 
-<Accordion title="Event method">
+<Accordion title="Método del evento">
 
-| Method name | event |
+| Nombre del método | event |
 | --- | --- |
-| Use case | Send |
-| Method Path | `https://webs2s.appsflyer.com/v1/bundleId/event` |
-| Detailed information | [Event method details](/docs/web-server-to-server-events-api-for-pba-web-s2s#event-method-details) section of this article contains payload details, Curl example, Python example and testing suggestions. |
+| Caso de uso | Envío |
+| Ruta del método | `https://webs2s.appsflyer.com/v1/bundleId/event` |
+| Información detallada | La sección [Detalles del método Event](/docs/web-server-to-server-events-api-for-pba-web-s2s#detalles-del-método-event) de este artículo contiene detalles sobre la carga útil, un ejemplo de Curl, un ejemplo de Python y sugerencias de pruebas. |
 
 </Accordion>
 
-## Event method details
+## Detalles del método Event
 
 <div id="payload-parameters" />
 
-<Accordion title="Payload parameters">
+<Accordion title="Parámetros de carga útil">
 
-Payload parameters are divided into user identifiers and event parameters.
+Los parámetros de carga útil se dividen en identificadores de usuario y parámetros de evento.
 
-* User ID: You must send at least one user ID parameter.
-* Event: Send the mandatory parameters and optional parameters as needed.
+* ID de usuario: debes enviar al menos un parámetro de ID de usuario.
+* Evento: envía los parámetros obligatorios y los parámetros opcionales según sea necesario.
 
-#### User identifier parameters (send at least one parameter)
+#### Parámetros de identificador de usuario (envía al menos un parámetro)
 
-| User ID Parameter | Description |
+| Parámetro de ID de usuario | Descripción |
 | --- | --- |
-| <span id="customeruserid"></span>customerUserId | <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer user ID (CUID)</Anchor> is a unique identifier set by you.<ul><li>Use the identical identifier for events reported by any means to AppsFlyer. Meaning the same identifier is used in the Web SDK, mobile SDK, and S2S APIs.</li><li><Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#setting-customer-user-id-after-signup">Web SDK customer user ID</Anchor></li><li>Format: String</li><li>Example: `"customerUserId" : "663274"`</li><li>Populates raw data field: `customer_user_id`</li></ul> |
-| <span id="afuserid"></span>afUserId | The unique user ID assigned by the Web SDK to every user that visits your website. You will need to pass the cookie value to your backend servers.<ul><li>Cookie details:<ul><li>Name: afUserId</li><li>Value: set *afUserId* to this value</li><li>Domain: website-domain</li></ul></li><li>Example: `"afUserId" : "unique_cookie_uuid"`</li><li>Populates raw data field: `af_web_id`</li></ul> |
+| <span id="customeruserid"></span>customerUserId | El <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">ID de usuario del cliente (CUID)</Anchor> es un identificador único establecido por ti.<ul><li>Usa el mismo identificador para los eventos reportados por cualquier medio a AppsFlyer. Esto significa que se utiliza el mismo identificador en el SDK web, el SDK móvil y las API S2S.</li><li><Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#setting-customer-user-id-after-signup">ID de usuario del cliente del SDK web</Anchor></li><li>Formato: cadena</li><li>Ejemplo: `"customerUserId" : "663274"`</li><li>Rellena el campo de raw data: `customer_user_id`</li></ul> |
+| <span id="afuserid"></span>afUserId | El ID de usuario único asignado por el SDK web a cada usuario que visita tu sitio web. Deberás transmitir el valor de la cookie a tus servidores de backend.<ul><li>Detalles de la cookie:<ul><li>Nombre: afUserId</li><li>Valor: establece *afUserId* a este valor</li><li>Dominio: website-domain</li></ul></li><li>Ejemplo: `"afUserId" : "unique_cookie_uuid"`</li><li>Rellena el campo de raw data: `af_web_id`</li></ul> |
 
-#### Event parameters
+#### Parámetros del evento
 
-| Parameter Name | Mandatory | Description |
+| Nombre de parámetro | Obligatorio | Descripción |
 | --- | --- | --- |
-| <span id="webdevkey"></span>webDevKey | Yes | Populate using the [web dev key](/docs/web-server-to-server-events-api-for-pba-web-s2s#getting-the-web-dev-key) available on the Dashboard.<ul><li>Example:`"webDevKey" : "ffffffff-ffff-ffff-ffff-ffffffffffff"`</li></ul> |
-| <span id="eventtype"></span>eventType | Yes | Event attribute identifier for internal use by AppsFlyer. Always set to *EVENT.*<ul><li>Example: `"eventType" : "EVENT"`</li></ul> |
-| <span id="eventname"></span>eventName | Yes | <ul><li>We use this parameter to differentiate conversion and non-conversion events using the <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#web-event-settings">event conversion list</Anchor> set by the marketer in PBA settings.</li><li>Ensure that you populate it with values consistent to the marketer's conversion logic.</li><li>Format: String</li><li>Example: `"eventName" : "web_purchase"`</li><li>Populates raw data field: `event_name`</li></ul> |
-| <span id="timestamp"></span>timestamp | No | Time the event occurred in milliseconds. Send as a <Anchor target="_blank" href="https://www.unixtimestamp.com/">Unix timestamp</Anchor> having 13 digits.<ul><li>If no timestamp is sent, the time is set using the server time.</li><li>**Events arriving late are timestamped using the current server time.** Late means arrival after midnight UTC on the day following the event. For example, an event occurring on Monday **must** be processed before midnight UTC Tuesday.</li><li>Events having a timestamp in the future (relative to the current server time) are timestamped with the server time.</li><li>Format: Int</li><li>Example: `"timestamp" : 1584835200123`</li><li>Populates raw data field: `event_time`</li></ul> |
-| <span id="eventvalue"></span>eventValue | No | Map of event parameters describing the event. Use this parameter to send rich in-app events like product SKU, line item price.<ul><li>**Note about revenue!** You can populate this parameter with revenue details. In addition, you must populate *eventRevenue,* and *eventRevenueCurrency.*</li></ul><ul><li>Format: JSON</li><li>Example: To send SKU ABC123, having a blue color and a unit price of $3.99 set eventValue to:<br />`{"Purchase": {"sku" : "ABC123", "color": "blue", "unit_price":3.99,"currency": "USD"}}`</li><li>Limitation: 1000 characters. Do not exceed this; it will be truncated.</li><li>Populates raw data field: `event_value`</li></ul> |
-| <span id="eventrevenuecurrency"></span>eventRevenueCurrency | No | Currency code of a revenue event, being a three-character <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> currency code.<ul><li>Default: USD</li><li>Format: String</li><li>Example:  `"eventRevenueCurrency" : "EUR"`</li><li>Populates raw data field: `event_revenue_currency`</li></ul> |
-| <span id="eventrevenue"></span>eventRevenue | No | Revenue (monetary value) assigned to an event.<br /><br />**Note!** If revenue is reported in *eventValue,* report it also in *eventRevenue* and populate eventRevenueCurrency.<ul><li>Negative values permitted. For example, a refund.</li><li>Format: Float</li><li>Example values: `1``1.2``1234.20``-1234.20`</li><li>Populates raw data field: `event_revenue`</li></ul> |
-| <span id="eventcategory"></span>eventCategory | No | This parameter is deprecated and will be removed from the system at a future date. Use eventValue instead. |
-| <span id="eventlabel"></span>eventLabel | No | This parameter is deprecated and will be removed from the system at a future date. Use eventValue instead. |
-| <span id="referrer"></span>referrer | No | HTTP referrer<ul><li>Format: String</li><li>Example:`"referrer" : "https://www.google.com/"`</li><li>Populates raw data field: `http_referrer`</li></ul> |
-| <span id="useragent"></span>userAgent | No | <Anchor target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent">User-agent request</Anchor> sent by the browser to the server.<ul><li>Where possible send this value as it assists in determining the device type.</li><li>Format: String</li><li>Example: `"userAgent" : "Chrome/80.0.3987"`</li><li>Populates raw data field: `user_agent`</li></ul> |
-| <span id="ip"></span>ip | No | User IP address<ul><li>Where possible send the value of this field. It assists in determining the <Anchor target="_blank" href="/marketers/docs/determine-user-location">geo-location</Anchor> of the user.</li></ul><ul><li>Format: String</li><li>Example: `"ip": "192.0.2.1"`</li><li>Populates raw data field: `ip`</li></ul> |
+| <span id="webdevkey"></span>webDevKey | Sí | Rellénalo utilizando la [clave de desarrollador web](/docs/web-server-to-server-events-api-for-pba-web-s2s#getting-the-web-dev-key) disponible en el panel de control.<ul><li>Ejemplo:`"webDevKey" : "ffffffff-ffff-ffff-ffff-ffffffffffff"`</li></ul> |
+| <span id="eventtype"></span>eventType | Sí | Identificador de atributo de evento para uso interno de AppsFlyer. Siempre ajustado en *EVENT.*<ul><li>Ejemplo: `"eventType" : "EVENT"`</li></ul> |
+| <span id="eventname"></span>eventName | Sí | <ul><li>Utilizamos este parámetro para diferenciar los eventos de conversión de los que no lo son utilizando la <Anchor target="_blank" href="/marketers/es/docs/pba-brand-bundles-and-settings#web-event-settings">lista de conversión de eventos</Anchor> establecida por el marketer en los ajustes de PBA.</li><li>Asegúrate de rellenarlo con valores coherentes con la lógica de conversión del marketer.</li><li>Formato: cadena</li><li>Ejemplo: `"eventName" : "web_purchase"`</li><li>Rellena el campo de raw data: `event_name`</li></ul> |
+| <span id="timestamp"></span>timestamp | No | Hora en que se produjo el evento en milisegundos. Se envía como una <Anchor target="_blank" href="https://www.unixtimestamp.com/">marca de tiempo Unix</Anchor> de 13 dígitos.<ul><li>Si no se envía ninguna marca de tiempo, la hora se establece utilizando la hora del servidor.</li><li>**Los eventos que llegan con retraso se registran con la hora actual del servidor.** Por "retraso" se entiende la llegada después de la medianoche UTC del día siguiente al evento. Por ejemplo, un evento que se produzca el lunes **debe** procesarse antes de la medianoche UTC del martes.</li><li>Los eventos que tienen una marca de tiempo en el futuro (relativa a la hora actual del servidor) se marcan con la hora del servidor.</li><li>Formato: Int</li><li>Ejemplo: `"timestamp" : 1584835200123`</li><li>Rellena el campo de raw data: `event_time`</li></ul> |
+| <span id="eventvalue"></span>valor del evento | No | Asignación de parámetros del evento que describen el evento. Utiliza este parámetro para enviar eventos in-app enriquecidos, como el SKU del producto y el precio del artículo.<ul><li>**¡Nota sobre los ingresos!** **Nota sobre los ingresos:** Puedes rellenar este parámetro con los detalles de los ingresos. Además, debes rellenar *eventRevenue* y *eventRevenueCurrency.*</li></ul><ul><li>Formato: JSON</li><li>Ejemplo: Para enviar el SKU ABC123, de color azul y con un precio unitario de $3,99, configura eventValue como:<br />`{"Purchase": {"sku" : "ABC123", "color": "blue", "unit_price":3.99,"currency": "USD"}}`</li><li>Limitación: 1000 caracteres. Si excedes el límite, se truncará.</li><li>Rellena el campo de raw data: `event_value`</li></ul> |
+| <span id="eventrevenuecurrency"></span>eventRevenueCurrency | No | Código de moneda de un evento de ingresos, como código de moneda <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> de tres caracteres.<ul><li>Valor predeterminado: USD</li><li>Formato: cadena</li><li>Ejemplo:  `"eventRevenueCurrency" : "EUR"`</li><li>Rellena el campo de raw data: `event_revenue_currency`</li></ul> |
+| <span id="eventrevenue"></span>eventRevenue | No | Ingresos (valor monetario) asignados a un evento.<br /><br />**¡Atención!** Nota: **Si los ingresos se reportan en *eventValue,* indícalo también en *eventRevenue* y rellena eventRevenueCurrency.**<ul><li>Se admiten valores negativos. Por ejemplo, un reembolso.</li><li>Formato: flotante</li><li>Valores de ejemplo: `1``1.2``1234.20``-1234.20`</li><li>Rellena el campo de raw data: `event_revenue`</li></ul> |
+| <span id="eventcategory"></span>eventCategory | No | Este parámetro está obsoleto y se eliminará del sistema en el futuro. Utiliza eventValue en su lugar. |
+| <span id="eventlabel"></span>eventLabel | No | Este parámetro está obsoleto y se eliminará del sistema en el futuro. Utiliza eventValue en su lugar. |
+| <span id="referrer"></span>referrer | No | Referente HTTP<ul><li>Formato: cadena</li><li>Ejemplo:`"referrer" : "https://www.google.com/"`</li><li>Rellena el campo de raw data: `http_referrer`</li></ul> |
+| <span id="useragent"></span>userAgent | No | <Anchor target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent">Solicitud de agente de usuario</Anchor> enviada por el navegador al servidor.<ul><li>Siempre que sea posible, envía este valor, ya que ayuda a determinar el tipo de dispositivo.</li><li>Formato: cadena</li><li>Ejemplo: `"userAgent" : "Chrome/80.0.3987"`</li><li>Rellena el campo de raw data: `user_agent`</li></ul> |
+| <span id="ip"></span>ip | No | Dirección IP del usuario<ul><li>Cuando sea posible, envía el valor de este campo. Ayuda a determinar la <Anchor target="_blank" href="/marketers/es/docs/determine-user-location">geolocalización</Anchor> del usuario.</li></ul><ul><li>Formato: cadena</li><li>Ejemplo: `"ip": "192.0.2.1"`</li><li>Rellena el campo de raw data: `ip`</li></ul> |
 
 </Accordion>
 
 <div id="curl-example" />
 
-<Accordion title="Curl example">
+<Accordion title="Ejemplo de Curl">
 
 ```bash
 curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/event' \
@@ -184,10 +183,10 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/event' 
 
 <div id="python-example" />
 
-<Accordion title="Python example">
+<Accordion title="Ejemplo de Python">
 
 ```python
-''' using the requests python package, install using pip install requests  '''
+''' usando el paquete requests de Python, instálalo con pip install requests  '''
 import requests
 url = "https://webs2s.appsflyer.com/v1/bundleId/event"
 payload = {
@@ -223,92 +222,92 @@ print(response.text.encode('utf8'))
 
 <div id="testing" />
 
-<Accordion title="Testing">
+<Accordion title="Pruebas">
 
-For testing purposes, send several events as follows:
+A modo de prueba, envía varios eventos como se indica a continuación:
 
-1. Send an event.
-2. Ensure that you get a 200 OK return code. If not, take corrective action using the return codes and error messages.
-3. Wait for several hours after midnight UTC to see the reported event in PBA raw data. You must wait because PBA data is processed once a day.
+1. Envía un evento.
+2. Asegúrate de obtener un código de retorno 200 OK. Si no es así, tome medidas correctivas utilizando los códigos de retorno y los mensajes de error.
+3. Espere varias horas después de medianoche UTC para ver el evento reportado en el raw data de PBA. Debes esperar porque los datos de PBA se procesan una vez al día.
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="getting-the-web-dev-key" />
 
-<Accordion title="Getting the Web Dev Key">
+<Accordion title="Obtener la clave de desarrollador web">
 
-**To get the Web Dev Key:**
+**Para obtener la clave de desarrollador web:**
 
-1. In AppsFlyer, go to the ***My Apps*** tab.
-2. Click View brand bundles.
+1. En AppsFlyer, ve a la sección ***Mis aplicaciones***.
+2. Haz clic en Ver paquetes de marca.
 
    [![GetWebDevKeyPba_us-en.pn](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)
-3. Copy the required ***Web Dev Key*.**
+3. Copia la ***clave de desarrollador web*** requerida.
 
 </Accordion>
 
 <div id="extracting-the-web-sdk-afuserid" />
 
-<Accordion title="Extracting the Web SDK afUserID">
+<Accordion title="Extraer el afUserID del SDK web">
 
-* The `afUserId`, is a unique identifier, set by the Web SDK when a user first visits your site.
-* If you need `afUserId`use one of the methods that follow.
+* El `afUserId` es un identificador único, establecido por el SDK web cuando un usuario visita tu sitio por primera vez.
+* Si necesitas el `afUserId`, utiliza uno de los métodos que se indican a continuación.
 
-#### **Get afUserId from the HTTP cookie header**
+#### **Obtener el afUserId del encabezado de la cookie HTTP**
 
-* The `afUserId` is sent by the visitors browser on calls to your site.
-* Extract it from the HTTP cookie header if needed.
+* El `afUserId` es enviado por el navegador del visitante cuando visita tu sitio web.
+* Extráelo del encabezado de la cookie HTTP si es necesario.
 
-#### **Viewing afUserId in the visitor's browser**
+#### **Ver el afUserId en el navegador del visitante**
 
-* View the `afUserId` in the visitor's browser, for troubleshooting and debugging purposes.
-* For it to be available, the visitor needs to have first visited a page having the Web SDK at least once.
-* The cookie containing `afUserId` is a first-party cookie in relation to your domain.
-* The procedure that follows was prepared using Chrome 81. There may be some differences between various browsers and operating systems.
+* Visualiza el `afUserId` en el navegador del visitante, con fines de solución de problemas y depuración.
+* Para que esté disponible, el visitante tiene que haber visitado primero una página que tenga el SDK web al menos una vez.
+* La cookie que contiene `afUserId` es una cookie de origen en relación con tu dominio.
+* El procedimiento que sigue se preparó utilizando Chrome 81. Puede haber algunas diferencias entre los distintos navegadores y sistemas operativos.
 
-**To get the afUserId from the visitor's browser:**
+**Para obtener el afUserId del navegador del visitante:**
 
-1. In your browser, go to your website.
-2. Right-click, select ***Inspect***The browser's inspect element window opens.
+1. En tu navegador, ve a tu sitio web.
+2. Haz clic con el botón derecho del ratón y selecciona ***Inspeccionar***Se abre la ventana de inspección de elementos del navegador.
 
    [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
-3. Go to the (A) ***Application*** tab.
-4. In the side menu, (B) expand Cookies.
-5. Select your website. If it does not display, refresh the browser.
-6. In the (C) ***filter*** field, enter `afUserId`  
-   The value of afUserID displays.
+3. Ve a la pestaña (A) ***Aplicación***.
+4. En el menú lateral, (B) expande Cookies.
+5. Selecciona tu sitio web. Si no aparece, actualiza el navegador.
+6. En el (C) ***filtro***, introduce `afUserId`  
+   Se muestra el valor de afUserID.
 
 </Accordion>
 
 <div id="response-codes" />
 
-<Accordion title="Response codes">
+<Accordion title="Códigos de respuesta">
 
-| Response code | Message | How to Handle |
+| Código de respuesta | Mensaje | Cómo manejarlo |
 | --- | --- | --- |
-| 200 | OK |  |
-| 404 | Not found | <ul><li>Check the endpoint</li><li>Check that the Bundle ID is correct</li></ul> |
-| 400 | Bad request | <ul><li>There is an error in the JSON. See the error message for details.</li></ul> |
+| 200 | Correcto |  |
+| 404 | No se encuentra | <ul><li>Comprueba el punto de conexión</li><li>Comprueba que el ID del paquete es correcto</li></ul> |
+| 400 | Solicitud incorrecta | <ul><li>Hay un error en el JSON. Consulta el mensaje de error para obtener más información.</li></ul> |
 
 </Accordion>
 
 <div id="troubleshooting" />
 
-<Accordion title="Troubleshooting">
+<Accordion title="Resolución de problemas">
 
-* Symptom: HTTP return codes do not return  
-  Solution: <Anchor target="_blank" href="/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting">Allowlist</Anchor> AppsFlyer servers.
+* Síntoma: Los códigos de retorno HTTP no se devuelven  
+  Solución: Agregar los servidores de AppsFlyer a la <Anchor target="_blank" href="/marketers/es/docs/appsflyer-server-ip-address-ranges-allowlisting">lista de permitidos</Anchor>
 
 </Accordion>
 
 <div id="release-notes" />
 
-<Accordion title="Release notes">
+<Accordion title="Notas de la versión">
 
-<table><caption>Web SDK release notes</caption><thead><tr><th>Date </th><th>Endpoint Version\*</th><th>Notes</th></tr></thead><tbody><tr><td>2020-05-12</td><td>1</td><td> Initial release</td></tr><tr><td>2020-05-24</td><td>1</td><td> </td></tr></tbody><tfoot><tr><td colspan="3">\* Version number relates to the endpoint version number. <code>https://webs2s.appsflyer.com/v1/<var>method</var></code></td></tr></tfoot></table>
+<table><caption>Notas de la versión del SDK web</caption><thead><tr><th>Fecha </th><th>Versión del punto de conexión\*</th><th>Notas</th></tr></thead><tbody><tr><td>12-05-2020</td><td>1</td><td> Lanzamiento inicial</td></tr><tr><td>24-05-2020</td><td>1</td><td> </td></tr></tbody><tfoot><tr><td colspan="3">\* El número de versión se refiere al número de versión del punto de conexión. <code>https://webs2s.appsflyer.com/v1/<var>method</var></code> </td></tr></tfoot></table>
 
 </Accordion>
 
-<div data-zendesk-anchors="web-servertoserver-events-api-for-pba=web-server-to-server-events-api-for-pba h_01HKW2YAW4HHYK27F41HC3B24Y=web-server-to-server-events-api-for-pba h_01HKW2YAW4DCESP3MNY9D4GTFK=api-use-instructions h_01HKW2YAW4Z6G8HEVJJHCVG9G3=api-basics h_01HKW2YAW4XDKZ3YGAHAP3AG2T=web-s2s-api-basics h_01HKW2YAW4YFK2WWKM0VB8AGNN=setcuid-method h_01HKW2YAW5SJFKGTNRGRKN6NCJ=curl-example-setcuid h_01HKW2YAW5A9TJGZG08K4ZW69C=event-method h_01HKW2YAW53H43SCYTDXAYBDHX=event-method-details h_01HKW2YAW5WDPMXDKA3X4HZBD2=payload-parameters h_01HKW2YAW5RR4Q2PCWC9717ACG=user-identifier-parameters-send-at-least-one-parameter h_01HKW2YAW5G46ZV4Z0CYEWB011=event-parameters h_01HKW2YAW56HZ0WYRWNBATB8WR=curl-example h_01HKW2YAW5A78VREGZEZ12XMPE=python-example h_01HKW2YAW59JSCCACGD2H153M5=testing h_01HKW2YAW5D4N3SYA625F10YFW=additional-information h_01HKW2YAW5HV506YV5328ME236=getting-the-web-dev-key h_01HKW2YAW52T0KME7P2CRQ6WBR=extracting-the-web-sdk-afuserid h_01HKW2YAW5FK04C3AWCXGP1XAW=get-afuserid-from-the-http-cookie-header h_01HKW2YAW5CT2WZ229KJD2FWYK=viewing-afuserid-in-the-visitors-browser h_01HKW2YAW5HTV9N4ZEJJ99RBN0=response-codes h_01HKW2YAW6MG7VNQJAB1Q37K6T=troubleshooting h_01HKW2YAW6RM6VJKFECT0ETGTG=release-notes" />
+<div data-zendesk-anchors="web-servertoserver-events-api-for-pba=api-de-eventos-web-de-servidor-a-servidor-para-pba h_01HKW2YAW4HHYK27F41HC3B24Y=api-de-eventos-web-de-servidor-a-servidor-para-pba api-use-instructions=instrucciones-de-uso-de-la-api h_01HKW2YAW4DCESP3MNY9D4GTFK=instrucciones-de-uso-de-la-api h_01HKW2YAW4Z6G8HEVJJHCVG9G3=api-basics web-s2s-api-basics=conceptos-b%C3%A1sicos-de-la-api-web-s2s h_01HKW2YAW4XDKZ3YGAHAP3AG2T=conceptos-b%C3%A1sicos-de-la-api-web-s2s h_01HKW2YAW4YFK2WWKM0VB8AGNN=setcuid-method curl-example-setcuid=ejemplo-de-setcuid-de-curl h_01HKW2YAW5SJFKGTNRGRKN6NCJ=ejemplo-de-setcuid-de-curl h_01HKW2YAW5A9TJGZG08K4ZW69C=event-method event-method-details=detalles-del-m%C3%A9todo-event h_01HKW2YAW53H43SCYTDXAYBDHX=detalles-del-m%C3%A9todo-event h_01HKW2YAW5WDPMXDKA3X4HZBD2=payload-parameters user-identifier-parameters-send-at-least-one-parameter=par%C3%A1metros-de-identificador-de-usuario-env%C3%ADa-al-menos-un-par%C3%A1metro h_01HKW2YAW5RR4Q2PCWC9717ACG=par%C3%A1metros-de-identificador-de-usuario-env%C3%ADa-al-menos-un-par%C3%A1metro event-parameters=par%C3%A1metros-del-evento h_01HKW2YAW5G46ZV4Z0CYEWB011=par%C3%A1metros-del-evento h_01HKW2YAW56HZ0WYRWNBATB8WR=curl-example h_01HKW2YAW5A78VREGZEZ12XMPE=python-example h_01HKW2YAW59JSCCACGD2H153M5=testing additional-information=informaci%C3%B3n-adicional h_01HKW2YAW5D4N3SYA625F10YFW=informaci%C3%B3n-adicional h_01HKW2YAW5HV506YV5328ME236=getting-the-web-dev-key h_01HKW2YAW52T0KME7P2CRQ6WBR=extracting-the-web-sdk-afuserid get-afuserid-from-the-http-cookie-header=obtener-el-afuserid-del-encabezado-de-la-cookie-http h_01HKW2YAW5FK04C3AWCXGP1XAW=obtener-el-afuserid-del-encabezado-de-la-cookie-http viewing-afuserid-in-the-visitors-browser=ver-el-afuserid-en-el-navegador-del-visitante h_01HKW2YAW5CT2WZ229KJD2FWYK=ver-el-afuserid-en-el-navegador-del-visitante h_01HKW2YAW5HTV9N4ZEJJ99RBN0=response-codes h_01HKW2YAW6MG7VNQJAB1Q37K6T=troubleshooting h_01HKW2YAW6RM6VJKFECT0ETGTG=release-notes" />

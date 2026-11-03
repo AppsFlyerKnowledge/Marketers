@@ -1,5 +1,5 @@
 ---
-title: Understand OneLink short vs. long URLs
+title: URL largas de OneLink
 metadata:
   keywords:
     - Marketers
@@ -13,63 +13,61 @@ x-zendesk:
     - Marketers
     - QR-to-App
   created_at: '2021-01-26T09:39:19Z'
-  edited_at: '2026-08-17T13:50:28Z'
+  edited_at: '2026-08-22T00:33:24Z'
   id: 360017132597
-  locale: en-us
+  locale: es
   section: Deep linking using OneLink
   section_id: 6551203111057
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360017132597-Understand-OneLink-short-vs-long-URLs
+  url: https://support.appsflyer.com/hc/es/articles/360017132597
 ---
-> **At a glance:** Understand the difference between OneLink short and long URLs, and how to create long URLs outside of AppsFlyer.
+> **En resumen:** Comprende la diferencia entre las URL cortas y largas de OneLink y cómo crear URL largas fuera de AppsFlyer.
 
-## **About OneLink links**
+## **Los enlaces personalizados de OneLink:**
 
-* Work across all media marketing channels to redirect users to either: 
-  * The correct URL/app store.
-  * Open the app, and then deep link users to a specific in-app activity.
-* Can support brand customization. Meaning the URL has your <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">brand domain</Anchor>, instead of the OneLink subdomain.
-* Can be either short or long URLs:
-  * Short URLs are created in AppsFlyer (either <Anchor target="_blank" href="/marketers/docs/onelink-guide">in the UI</Anchor>, or via <Anchor target="_blank" href="/marketers/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">API</Anchor> or <Anchor target="_blank" href="/marketers/docs/user-invite-attribution">SDK</Anchor>).
-  * Long URLs:
-    * Can be created in the AppsFlyer UI or outside of AppsFlyer.
-    * Contain any parameters you want.
-    * Can be used to generate a large number of OneLink custom links by applying your own simple formulas in a spreadsheet.   
-      **Notes**:
-      * Links created in a spreadsheet are not visible (and cannot be edited) in any AppsFlyer UI.
-      * This spreadsheet method is different from <Anchor target="_blank" href="/marketers/docs/perform-onelink-bulk-actions-via-csv">Perform OneLink bulk actions via CSV</Anchor>, which creates bulk short URLs.
-    * Don't expire, meaning there is no Time to Live (TTL) limitation.  
-      **Long URL considerations:**
-    * Long URLs are transparent, meaning all link parameters are visible to the public, and can potentially be manipulated.
-    * Long URLs may not fit into browsers, SMS, or other places with URL character limitations.
+* Funcionan en todos los canales de marketing de medios para redirigir a los usuarios a: 
+  * La URL/tienda de aplicaciones correcta.
+  * Abrir la aplicación y luego enlazar profundamente a los usuarios a una actividad in-app específica.
+* Permiten la personalización de la marca. Lo que significa que la URL tiene tu <Anchor target="_blank" href="/marketers/es/docs/brand-onelink-with-your-domain">dominio de marca</Anchor>, en lugar del subdominio de OneLink.
+* Pueden ser URL cortas o largas:
+  * Las URL cortas se crean en AppsFlyer (ya sea <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">en la interfaz de usuario</Anchor> o a través de <Anchor target="_blank" href="/marketers/es/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">API</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/user-invite-attribution">SDK</Anchor>).
+  * URL largas:
+    * Se pueden crear en la interfaz de usuario de AppsFlyer o fuera de AppsFlyer.
+    * Contienen cualquier parámetro que desees.
+    * Se pueden utilizar para generar una gran cantidad de enlaces personalizados de OneLink aplicando tus propias fórmulas simples en una hoja de cálculo.   
+      **Notas**:
+      * Los enlaces creados en una hoja de cálculo no son visibles (y no se pueden editar) en ninguna interfaz de usuario de AppsFlyer.
+      * Este método de hoja de cálculo es diferente de <Anchor target="_blank" href="/marketers/es/docs/perform-onelink-bulk-actions-via-csv">Realizar acciones masivas de OneLink mediante CSV</Anchor>, que crea URL cortas en masa.
+    * No caducan, lo que significa que no hay límite de tiempo de vida (TTL).**Consideraciones sobre URL largas:**
+    * Las URL largas son transparentes, lo que significa que todos los parámetros del enlace son visibles para el público y pueden ser potencialmente manipulados.
+    * Es posible que las URL largas no quepan en navegadores, SMS u otros lugares con limitaciones de caracteres.
 
-### Advantages of a short OneLink URL compared to a long URL
+### URL largas de OneLink
 
-* Updating parameters in the OneLink short URL within the AppsFlyer dashboard does not change the shortlink ID, so there’s no need to replace or redistribute the URL or any associated QR codes, even if already in use.
-* AppsFlyer seamlessly applies the updated parameters for attribution and reporting, ensuring the QR code remains functional and automatically reflects the changes.
+* Actualizar los parámetros de la URL corta de OneLink en el Dashboard de AppsFlyer no cambia el ID del shortlink, por lo que no es necesario sustituir ni volver a distribuir la URL ni ningún QR code asociado, incluso si ya está en uso.
+* AppsFlyer aplica sin problemas los parámetros actualizados para la atribución y el reportando, lo que garantiza que el QR code siga funcionando y refleje automáticamente los cambios.
 
-## Procedures
+## Procedimientos
 
-**To create a OneLink long URL outside the AppsFlyer UI:**
+**Para crear una URL larga de OneLink fuera de la interfaz de usuario de AppsFlyer:**
 
-1. Create a <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>.
-2. Record the OneLink base URL, meaning the OneLink template domain + template ID.  
-   Example:
-   * OneLink template domain: `yourbrand.onelink.me`
-   * Template ID: `1a6f`
-   * OneLink base URL: `yourbrand.onelink.me/1a6f`
-   * Branded domain example: `yourbrand.com/1a6f`
-3. Append a `?` to the URL, followed by any parameters you want to add.
-   * See <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">list of AppsFlyer parameters</Anchor>.
-   * To add more than one parameter, use `&`.  
-     Example: `yourbrand.onelink.me/1a6f?pid=email&c=freestuff`
+1. Crea una <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#crear-una-plantilla-de-onelink">plantilla de OneLink</Anchor>.
+2. Registra la URL base de OneLink, es decir, el dominio de la plantilla de OneLink + el ID de la plantilla.  
+   Ejemplo: 
+   * Dominio de plantilla OneLink: `yourbrand.onelink.me`
+   * ID de plantilla: `1a6f`
+   * URL base de OneLink: `yourbrand.onelink.me/1a6f`
+   * Ejemplo de dominio de marca: `yourbrand.com/1a6f`
+3. Añade un `?` a la URL, seguido de cualquier parámetro que desees agregar.
+   * Consulta la <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">lista de parámetros de AppsFlyer</Anchor>.
+   * Para agregar más de un parámetro, utiliza `&`.  
+     Ejemplo: `yourbrand.onelink.me/1a6f?pid=email&c=freestuff`
 
-**To get the long URLs for OneLink custom links you create in the AppsFlyer UI:**
+**Para obtener las URL largas de los enlaces personalizados de OneLink que crees en la interfaz de usuario de AppsFlyer:**
 
-1. In AppsFlyer, go to **OneLink custom links**.  
-   The list of OneLinks displays.  
+1. En AppsFlyer, ve a **Enlaces personalizados de OneLink**.  
+   Se muestra la lista de OneLinks.  
    [![](https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg)](https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg)
-2. Go to the link for which you want the long URL, and in the **Actions** column, click **Get URL**.  
-   The long URL displays.
+2. Ve al enlace para el que deseas la URL larga y, en la columna **Acciones** , haz clic en **Obtener URL**.  
+   Se muestra la URL larga.
 
-<div data-zendesk-anchors="onelink-long-urls=about-onelink-links 01JBXQENR6QHQ1HXQQQ5NBBMKN=about-onelink-links h_01JGXTFWS509NW0ESM1CZZ1KZM=advantages-of-a-short-onelink-url-compared-to-a-long-url h_01JBXQTQ3DXPTP9BY06QKXN3NP=procedures" />
+<div data-zendesk-anchors="onelink-long-urls=los-enlaces-personalizados-de-onelink 01JBXQENR6QHQ1HXQQQ5NBBMKN=los-enlaces-personalizados-de-onelink advantages-of-a-short-onelink-url-compared-to-a-long-url=url-largas-de-onelink h_01JGXTFWS509NW0ESM1CZZ1KZM=url-largas-de-onelink procedures=procedimientos h_01JBXQTQ3DXPTP9BY06QKXN3NP=procedimientos" />

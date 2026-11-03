@@ -1,5 +1,5 @@
 ---
-title: Rockerbox integration with AppsFlyer
+title: Integración de Rockerbox con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -13,110 +13,108 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2020-11-23T14:55:00Z'
-  edited_at: '2026-06-16T09:41:31Z'
+  edited_at: '2026-08-12T11:59:28Z'
   id: 360015760757
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360015760757-Rockerbox-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/360015760757
 ---
-> **At a glance:** Learn how to automatically share data from AppsFlyer to Rockerbox, a marketing and analytics platform for mobile and web apps.
+> **De un vistazo:** Aprende a compartir automáticamente datos de AppsFlyer con Rockerbox, una plataforma de marketing y análisis para aplicaciones móviles y web.
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up Rockerbox
+## Configuración de Rockerbox
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-This toggle must be enabled for as long as you work with the partner.  
-Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
+Este selector debe estar activado mientras trabajes con el partner.  
+Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activación del partner</Anchor>.
 
-### General settings
+### Configuración general
 
-**Rockerbox Account ID**
+**ID de cuenta de Rockerbox**
 
-**To connect your Rockerbox account with AppsFlyer,** enter your account ID in **Rockerbox account ID**.   
-Your Rockerbox account ID is available in the Rockerbox platform under **Settings** > **Account** > **General**.
+**Para conectar tu cuenta de Rockerbox con AppsFlyer,** introduce tu ID de cuenta en **ID de cuenta de Rockerbox**.   
+Tu ID de cuenta de Rockerbox está disponible en la plataforma de Rockerbox, en **Settings** > **Account** > **General**.
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Rockerbox following user installs. Use this section to define the source of the users the postbacks are sent to for each event. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
+AppsFlyer puede enviar postbacks automáticos a Rockerbox tras las instalaciones de los usuarios. Utiliza esta sección para definir la fuente de los usuarios a los que se envían los postbacks para cada evento. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks predeterminados</Anchor>.
 
-To send postbacks for any user that downloads the app to Rockerbox, select **All media sources, including organic**.
+Para enviar postbacks de cualquier usuario que descargue la aplicación a Rockerbox, selecciona **Todas las fuentes de medios, incluidas las orgánicas**.
 
-### In-app events settings
+### Configuración de eventos in-app
 
 ![rockerbox-in-app-events_en-us.png](https://files.readme.io/3fc74bb16d6a1222d1d244bbb1083ff247e3315d0fc7060e0ec3e8ad30a07233-360013891517.png)
 
-In this section, you map AppsFlyer events with the partner via postbacks. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">in-app event postbacks.</Anchor>
+En esta sección, asignas los eventos de AppsFlyer al partner mediante postbacks. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">postbacks de eventos in-app.</Anchor>
 
-**To configure in-app events postbacks:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Enter the **Rockerbox Account ID**.
-2. Enable **In-app event postback.**
-3. Click **Add Event** to add an SDK Event to the list.
-4. Select the **SDK event name** from the dropdown menu.
-5. Select the required option from the Send revenue dropdown menu:
-   * **No values & no revenue:** sends only the event itself without the event value.
-   * **Values & no revenue:** sends all the parameters excluding the revenue value.
-   * **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).
-6. To complete the integration configuration, click **Save Integration**.
+1. Introduce el **ID de cuenta de Rockerbox**.
+2. Habilita los **postbacks de eventos in-app.**
+3. Haz clic **Agregar evento** para agregar un evento del SDK a la lista.
+4. Selecciona el **nombre del evento de SDK** en el menú desplegable.
+5. Selecciona la opción requerida en el menú desplegable Enviar ingresos:
+   * **Sin valores ni ingresos:** envía solo el evento en sí sin el valor del evento.
+   * **Con valores y sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.
+   * **Con valores e ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento).
+6. Para completar la configuración de la integración, haz clic en **Guardar integración**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for this partner.
+Los enlaces de atribución no están disponibles para este partner.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not applicable in the integration with this partner.
+Los datos de costos no se aplican a la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not applicable in the integration with this partner.
+Los ingresos por anuncios no se aplican a la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for this partner.
+Los permisos no están disponibles para este partner.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H9HWJW82HZ9FR31VHHRBZ3EM=important h_01H9HWJW83BKP8DSYTV6YGPHK7=setting-up-rockerbox h_01H9HWJW83WDGQKKMM942NPA1S=integration-tab h_01H9HWJW83Z4NGT000091AHX0Z=activate-partner h_01H9HWJW832NQBPK2VS6TS1QK7=general-settings h_01H9HWJW83CGMBADDBP7EJTR9N=default-postbacks inapp-events-settings=in-app-events-settings h_01H9HWJW84H4SDVRNZAG1D6N0D=in-app-events-settings h_01H9HWJW84G6GXMBTGMHTDPM6R=attribution-link-tab h_01H9HWJW84BZNHN4DRKA33WCVK=cost-tab h_01H9HWJW848DRTKBF3AKR5KYC5=ad-revenue-tab h_01H9HWJW84NTZWKP2FP2WK4FZD=permissions-tab" />
+<div data-zendesk-anchors="h_01H9HWJW82HZ9FR31VHHRBZ3EM=importante setting-up-rockerbox=configuraci%C3%B3n-de-rockerbox h_01H9HWJW83BKP8DSYTV6YGPHK7=configuraci%C3%B3n-de-rockerbox h_01H9HWJW83WDGQKKMM942NPA1S=integration-tab activate-partner=activar-socio h_01H9HWJW83Z4NGT000091AHX0Z=activar-socio general-settings=configuraci%C3%B3n-general h_01H9HWJW832NQBPK2VS6TS1QK7=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01H9HWJW83CGMBADDBP7EJTR9N=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01H9HWJW84H4SDVRNZAG1D6N0D=configuraci%C3%B3n-de-eventos-in-app h_01H9HWJW84G6GXMBTGMHTDPM6R=attribution-link-tab h_01H9HWJW84BZNHN4DRKA33WCVK=cost-tab h_01H9HWJW848DRTKBF3AKR5KYC5=ad-revenue-tab h_01H9HWJW84NTZWKP2FP2WK4FZD=permissions-tab" />

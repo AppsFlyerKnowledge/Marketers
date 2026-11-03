@@ -1,5 +1,5 @@
 ---
-title: Why is my app still pending?
+title: ¿Por qué sigue pendiente mi aplicación?
 metadata:
   keywords:
     - Google Play
@@ -15,67 +15,66 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2018-10-14T07:22:04Z'
-  edited_at: '2024-01-11T12:45:23Z'
+  edited_at: '2026-08-12T12:05:15Z'
   id: 360001533885
-  locale: en-us
+  locale: es
   section: Manage your apps
   section_id: 6551015977105
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001533885-Why-is-my-app-still-pending
+  url: https://support.appsflyer.com/hc/es/articles/360001533885
 ---
-> **At a glance:** Follow the status of apps pending publishing to app stores from the AppsFlyer dashboard.
+> **De un vistazo:** Sigue el estado de las aplicaciones pendientes de publicación en las tiendas de aplicaciones desde el panel de control de AppsFlyer.
 
-When you <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">add your new app</Anchor> to the AppsFlyer dashboard, you first choose whether the app is pending or already in the market.
+Cuando <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">agregas tu nueva aplicación</Anchor> al panel de control de AppsFlyer, primero debes elegir si la aplicación está pendiente o ya está en el mercado.
 
-Pending apps in AppsFlyer look the same as live apps. They have accessible dashboards and all attribution measurement works for them. The only difference is the logo of the app which displays with the AppsFlyer logo instead of the actual app logo.
+Las aplicaciones pendientes en AppsFlyer tienen el mismo aspecto que las aplicaciones activas. Tienen paneles de control accesibles y todas las mediciones de atribución funcionan para ellas. La única diferencia es el logotipo de la aplicación, que se muestra con el logotipo de AppsFlyer en lugar del logotipo de la aplicación real.
 
-![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
+![App_pendiente.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
 
-## What's happening?
+## ¿Qué ocurre?
 
-AppsFlyer automatically checks the status of the apps several times a day.
+AppsFlyer comprueba automáticamente el estado de las aplicaciones varias veces al día.
 
-If the app is still not live in the store when AppsFlyer checks the status of the app, the app appears as pending in the dashboard. Once the app is finally submitted to iTunes or Google, it updates to active and the app logo changes to the app's original logo.
+Si la aplicación aún no está activa en la tienda cuando AppsFlyer comprueba el estado de la aplicación, aparece como pendiente en el dashboard. Una vez que la aplicación finalmente se envía a iTunes o Google, se actualiza a "activa" y el logotipo cambia al logotipo original de la aplicación.
 
-The status of the app in the dashboard has no effect on data collection and measurement. If the app is live on Google Play or App Store and users install the app and interact with it, install and in-app event data displays in the dashboard just the same.
+El estado de la aplicación en el panel de control no tiene ningún efecto sobre la recopilación y medición de datos. Si la aplicación está disponible en Google Play o en la App Store y los usuarios instalan la aplicación e interactúan con ella, los datos de instalación y de los eventos in-app se muestran en el panel de control de la misma manera.
 
-## Refreshing the app status
+## Actualizar el estado de la aplicación
 
-For the status of the app to change to active, AppsFlyer checks its status in the store. If you are certain that the app is published in Google Play or iTunes, but it still appears as pending in the dashboard, an admin can manually check its status.
+Para que el estado de la aplicación cambie a "activo", AppsFlyer verifica su estado en la tienda. Si estás seguro de que la aplicación está publicada en Google Play o iTunes, pero sigue apareciendo como pendiente en el panel de control, un administrador puede comprobar manualmente su estado.
 
-**Prerequisite**: Available to account admin.
+**Requisito previo**: Disponible para el administrador de la cuenta.
 
-**To manually update the app status:**
+**Para actualizar manualmente el estado de la aplicación:**
 
-1. From the top menu bar, click **My Apps**.
-2. Next to the pending app, click **Refresh Status.** If the status of the app is unchanged, the app is still displayed as Pending. If it has been updated, the status is shown as Live, and the logo is updated.  
+1. En el panel de control, haz clic en **Mis aplicaciones** en la esquina superior derecha.
+2. Junto a la aplicación pendiente, haz clic en **Actualizar estado.** Si el estado de la aplicación no se ha modificado, esta seguirá apareciendo como pendiente. Si se ha actualizado, el estado se muestra como activa y el logotipo se actualiza.  
 
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
 
-## Store country
+## País de la tienda
 
-Some apps are only available in Google Play or iTunes for certain countries. **It is important that the correct country is set for an app** in order for AppsFlyer to be able to check and update its status.
+Algunas aplicaciones solo están disponibles en Google Play o iTunes para ciertos países. **Es importante configurar el país correcto para una aplicación** para que AppsFlyer pueda verificar y actualizar su estado.
 
-### iOS
+### apps de iOS,
 
-When you <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">add an iOS app</Anchor> to your AppsFlyer dashboard, you choose the Apple Store country in which the app is published. If the wrong country is chosen, AppsFlyer is unable to update the status of the app even if it is published.
+Cuando <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">agregas una aplicación iOS</Anchor> a tu panel de control de AppsFlyer, eliges el país de Apple Store en el que se publica la aplicación. Si se elige el país incorrecto, AppsFlyer no puede actualizar el estado de la aplicación incluso si está publicada.
 
-To change the Apple Store country:
+Para cambiar el país de Apple Store:
 
-1. In AppsFlyer, from the side menu, select**Settings**> **App Settings.**
-2. Under **App Store Country** choose the correct country
-3. Scroll down and click **Save Settings**
-4. If the app still appears as pending, [click **Refresh Status**](/docs/why-is-my-app-still-pending#refreshing-the-app-status).
+1. En AppsFlyer, en el menú lateral, selecciona**Configuración**> **Configuración de la aplicación.** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
+2. En **País de App Store**, elige el país correcto.
+3. Desplázate hacia abajo y haz clic en **Guardar configuración**.
+4. Si la aplicación sigue apareciendo como pendiente, [haz clic en **Actualizar estado**](/docs/why-is-my-app-still-pending#actualizar-el-estado-de-la-aplicación).
 
 ### Android
 
-When you <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">add an Android app</Anchor> to your AppsFlyer dashboard, there is no option to choose a Google Play country and it is set to US by default. If your app is not published in the US Google Play store, it is important that the correct store is set for the app in order for AppsFlyer to be able to check and update the status of the app.
+Cuando <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">agregas una aplicación Android</Anchor> a tu panel de control de AppsFlyer, no hay opción para elegir un país de Google Play y está configurado en EE. UU. de manera predeterminada. Si tu aplicación no está publicada en la tienda Google Play de EE. UU., es importante configurar la tienda correcta para la aplicación para que AppsFlyer pueda verificar y actualizar el estado de la aplicación.
 
-To change the Google Play country:
+Para cambiar el país de Google Play:
 
-1. In AppsFlyer, from the side menu, select**Settings**> **App Settings.**
-2. Under **App Store Country** choose the correct country
-3. Scroll down and click **Save Settings**
-4. If the app still appears as pending, [click **Refresh Status**](/docs/why-is-my-app-still-pending#refreshing-the-app-status).
+1. En AppsFlyer, en el menú lateral, selecciona**Configuración**> **Configuración de la aplicación.** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
+2. En **País de App Store**, elige el país correcto.
+3. Desplázate hacia abajo y haz clic en **Guardar configuración**.
+4. Si la aplicación sigue apareciendo como pendiente, [haz clic en **Actualizar estado**](/docs/why-is-my-app-still-pending#actualizar-el-estado-de-la-aplicación).
 
-<div data-zendesk-anchors="h_01HKW8NT3DWZMYVDYR13BDZDCT=whats-happening h_01HKW8NT3DY227ASKYX1RC3V5T=refreshing-the-app-status h_01HKW8NT3DHSDAG9C9225TDNRE=store-country h_01HKW8NT3DMWVGRB0RE3H3BQ36=ios h_01HKW8NT3D2V81Z1ZBVQKTYX8T=android" />
+<div data-zendesk-anchors="whats-happening=qu%C3%A9-ocurre h_01HKW8NT3DWZMYVDYR13BDZDCT=qu%C3%A9-ocurre refreshing-the-app-status=actualizar-el-estado-de-la-aplicaci%C3%B3n h_01HKW8NT3DY227ASKYX1RC3V5T=actualizar-el-estado-de-la-aplicaci%C3%B3n store-country=pa%C3%ADs-de-la-tienda h_01HKW8NT3DHSDAG9C9225TDNRE=pa%C3%ADs-de-la-tienda ios=apps-de-ios h_01HKW8NT3DMWVGRB0RE3H3BQ36=apps-de-ios h_01HKW8NT3D2V81Z1ZBVQKTYX8T=android" />

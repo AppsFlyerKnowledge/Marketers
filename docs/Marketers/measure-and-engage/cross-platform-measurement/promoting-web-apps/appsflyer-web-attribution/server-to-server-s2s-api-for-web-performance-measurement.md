@@ -1,5 +1,5 @@
 ---
-title: Server-to-Server (S2S) API for Web Performance Measurement
+title: '[Beta] API Server-to-Server (S2S) para atribución web'
 metadata:
   keywords:
     - Web Attribution
@@ -13,92 +13,91 @@ x-zendesk:
     - Marketers
     - Web Attribution
   created_at: '2026-04-12T15:09:07Z'
-  edited_at: '2026-10-15T07:58:25Z'
+  edited_at: '2026-10-20T03:44:58Z'
   id: 45670116601617
-  locale: en-us
+  locale: es
   section: AppsFlyer Web Attribution
   section_id: 43560690387729
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/45670116601617-Server-to-Server-S2S-API-for-Web-Performance-Measurement
+  url: https://support.appsflyer.com/hc/es/articles/45670116601617
 ---
-> **At a glance:** The S2S API for Web Performance Measurement lets you send web visits and events to AppsFlyer directly from your server, bypassing browser limitations like ad blockers and cookie restrictions. Use it alongside the Web SDK or on its own to get more complete, higher-quality attribution data.
+> **At a glance:** La API S2S para la Medición del performance web te permite enviar visitas web y eventos a AppsFlyer directamente desde tu Servidor, eludiendo las limitaciones del navegador, como los bloqueadores de anuncios y las restricciones de cookies. Úsala junto con el SDK web o por sí sola para obtener Datos de atribución más completos y de mayor calidad y mejor recursos.
 
-## About the S2S API for web attribution
+## Sobre la API S2S para la atribución web
 
-AppsFlyer supports two ways to send web data for attribution: the Web SDK (client-side) and the S2S API (server-to-server, or S2S). You can use either method independently or combine them depending on your setup and needs.
+AppsFlyer admite dos formas de enviar datos web para la Atribución: el SDK web (del lado del cliente) y la API S2S (server-to-server, o S2S). Puedes usar cualquiera de los dos métodos de forma independiente o combinarlos según tu configuración y tus necesidades.
 
-The Web SDK runs in the browser. The S2S API lets you send the same data from your own backend instead. Here's why that matters: privacy-focused browsers and ad blockers, including Safari ITP, Firefox ETP, and Brave, can block or limit client-side measurement. Industry estimates put browser-level blocking at 25–40% of web users. Because S2S calls originate from your server and never pass through the browser, they're not affected by these restrictions at all.
+El SDK web se ejecuta en el navegador. La API S2S te permite enviar los mismos datos desde tu propio backend. Aquí es donde entra en juego: los navegadores centrados en la privacidad y los bloqueadores de anuncios, como Safari ITP, Firefox ETP y Brave, pueden bloquear o limitar la medición del lado del cliente. Las estimaciones del sector sitúan el bloqueo a nivel de navegador entre el 25 y el 40% de los usuarios web. Como las llamadas S2S se originan en tu servidor y nunca pasan por el navegador, no se ven afectadas en absoluto por estas restricciones.
 
-### How it works
+### Cómo funciona
 
-1. A user visits your website or triggers an event in the browser.
-2. Your server receives the event.
-3. Your server sends the event directly to the AppsFlyer server for attribution.
+1. Un usuario visita tu sitio web o activa un evento en el navegador.
+2. Tu servidor recibe el evento.
+3. Tu servidor envía el evento directamente al servidor de AppsFlyer para su atribución.
 
-### Why use S2S
+### ¿Por qué usar S2S?
 
-Here's what using the S2S API means for you, broken down by benefit:
+Esto es lo que implica para ti usar la API S2S, desglosado por ventaja:
 
-* **Measure server-side events:** Some conversions never touch the browser at all, for example, subscription renewals processed on the backend or events originating in a CRM system. S2S is the only way to get these into AppsFlyer and tie them back to the right campaign.
-* **Increased measurement coverage:** S2S calls come from your server, not the browser, so ad blockers, Safari ITP cookie limits, and other browser-level restrictions don't apply. You can capture visits and conversions that client-side measurement alone would miss.
-* **Data enrichment from the backend:** With S2S, your server can add extra data to events before sending them, including Customer User IDs, hashed email or phone numbers, CRM attributes, subscription status, or any internal identifiers. This improves identity resolution and strengthens signal quality.
-* **Security:** Dev keys, user identifiers, and any added data stay on your server and are sent over a secure connection, giving you full control over what leaves your infrastructure.
+* **Medir eventos del lado del servidor:** Algunas conversiones nunca pasan por el navegador, por ejemplo, las renovaciones de suscripciones procesadas en el backend o los eventos que se originan en un sistema CRM. S2S es la única forma de incorporarlos a AppsFlyer y vincularlos a la campaña correcta.
+* **Mayor cobertura de medición:** Las llamadas S2S provienen de tu servidor, no del navegador, por lo que los bloqueadores de anuncios, los límites de cookies de Safari ITP y otras restricciones a nivel del navegador no se aplican. Puedes registrar visitas y conversiones que la medición del lado del cliente por sí sola no detectaría.
+* **Enriquecimiento de datos desde el backend:** Con S2S, tu Servidor puede añadir datos adicionales a los eventos antes de enviarlos, incluidos los ID de Usuario del cliente, el correo electrónico hashed o los números de teléfono hashed, los atributos de CRM, el estado de suscripción o cualquier identificador interno. Esto mejora la resolución de identidades y fortalece la calidad de la señal.
+* **Seguridad:** Las claves de desarrollador, los identificadores de usuario y cualquier dato adicional permanecen en tu servidor y se envían a través de una conexión segura, lo que te brinda un control total sobre lo que sale de tu infraestructura.
 
-## API specification
+## Especificación de la API
 
-Base URL: `https://events.appsflyer.com`
+URL base: `https://events.appsflyer.com`
 
-### Authentication
+### Autenticación
 
-All requests must include a valid S2S API token and the correct content type in the request headers.
+Todas las solicitudes deben incluir un token válido de la API S2S y el tipo de contenido correcto en los encabezados de la solicitud.
 
-| Header | Type | Description |
+| Encabezado | Tipo | Description |
 | --- | --- | --- |
-| `Authorization` | API token | Your S2S API token is included in the Header in the following format:<br /><br />`Authorization: Bearer {s2s-token}` |
-| `Content-Type` | string | Must be `application/json`. Required on all requests. |
+| `Autorización` | Token de API: | Tu token de la API S2S se incluye en el encabezado con el siguiente formato:<br /><br />`Authorization: Bearer {s2s-token}` |
+| `Tipo de contenido` | string | Debe ser `application/json`. Obligatorio en todas las solicitudes. |
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> To create an S2S API token, see the instructions in <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#manage-your-tokens">Managing AppsFlyer tokens</Anchor>.
+> Para crear un token de la API S2S, consulta las instrucciones en <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens#gestiona-tus-tokens">Gestión de tokens de AppsFlyer</Anchor>.
 
-### Measure an event
+### Medir un evento
 
 `POST /v2.0/s2s/inapps/app/web/{appId}`
 
-Measures a web event (for example, a purchase, sign-up, or custom action) for a given app.
+Mide un evento web (por ejemplo, una compra, un registro o una acción personalizada) para una aplicación determinada.
 
-<Accordion title="Path parameter">
+<Accordion title="Parámetro de ruta">
 
-| Parameter | Required | Description |
+| Parámetro | Requerido | Description |
 | --- | --- | --- |
-| `appId` | Required | The `unified_app_id` as defined in AppsFlyer. For example: `website-www.example.com` |
+| `appId` | Requerido | El `unified_app_id` tal como se define en AppsFlyer. Por ejemplo: `website-www.example.com` |
 
 </Accordion>
 
-<Accordion title="Request body">
+<Accordion title="Cuerpo de la solicitud">
 
-| Field | Type | Required | Description |
+| Campo | Tipo | Requerido | Description |
 | --- | --- | --- | --- |
-| `user_id` | object | Required | User identifier. Must contain at least one of `customer_user_id` or `appsflyer_id`. |
-| `event_name` | string | Required | Event name. 1–64 characters. Cannot contain `@ = + -`. Example: `af_purchase` |
-| `event_revenue` | number (double) | Optional | Revenue amount for purchase or monetization events. |
-| `event_revenue_currency` | string (ISO-4217) | Optional | Currency code for the revenue value. For example, `USD` or `EUR`. |
-| `event_value` | object | Optional | Free-form event parameters. Supports a `custom_parameters` sub-object. |
-| `event_url` | string | Optional | Page URL where the event occurred. Valid HTTP URL, max 4,096 characters. |
-| `timestamp` | integer (int64) | Optional | Unix time in ms (UTC). If omitted, AppsFlyer uses the receive time. Late acceptance window: events must arrive no later than 00:30 on the next calendar day in the app's timezone. |
-| `ip` | string | Optional | Device IP address (IPv4 or IPv6). Max 46 characters. |
-| `user_agent` | string | Optional | Full user agent string from the browser. Max 1,024 characters. |
-| `http_referrer` | string | Optional | Referrer URL of the current page. |
-| `af_customer_event_id` | string | Optional | Your own unique ID for the event, which you use to deduplicate conversions on ad network platforms. AppsFlyer forwards it to the network as the event ID.<br /><br />Send it when either applies:<ul><li>You run a network pixel on your site, alongside AppsFlyer measurement.</li><li>You send the same event through both the Web SDK and this API.</li></ul>When you send it, also send the same value in the network's own pixel event (for example, `eventID` in `fbq()`), so the network counts the conversion once instead of twice.<br /><br />If you omit it, AppsFlyer generates its own ID, and the network can't match your pixel events.<br /><br />**Limits:** Max 256 characters. Matching is exact and case-sensitive. |
-| `email_hashed` | string | Optional | SHA256 of normalized (lowercase, trimmed) email. Must be a 64-character hex string. |
-| `phone_number_hashed` | string | Optional | SHA256 of phone number. Must be a 64-character hex string. |
-| `phone_number_e164_hashed` | string | Optional | SHA256 of E.164 phone number (for example, `+14155552671`). Must be a 64-character hex string. |
-| `first_name_hashed` | string | Optional | SHA256 of normalized first name. Must be a 64-character hex string. |
-| `last_name_hashed` | string | Optional | SHA256 of normalized last name. Must be a 64-character hex string. |
+| `user_id` | objeto | Requerido | Identificador de usuario. Debe contener al menos uno de estos campos: `customer_user_id` o `appsflyer_id`. |
+| `nombre_del_evento` | string | Requerido | Nombre del evento. 1–64 caracteres. No puede contener `@ = + -`. Ejemplo: `af_purchase` |
+| `ingresos_evento` | número (doble) | Opcional | Importe de ingresos para eventos de compra o monetización. |
+| `moneda_ingresos_evento` | string (ISO-4217) | Opcional | Código de moneda del valor de ingresos. Por ejemplo, `USD` o `EUR`. |
+| `event_value` | objeto | Opcional | Parámetros de evento de formato libre. Admite un subobjeto `custom_parameters`. |
+| `event_url` | string | Opcional | URL de la página donde se produjo el evento. URL HTTP válida, máximo 4.096 caracteres. |
+| `timestamp` | integer (int64) | Opcional | Hora Unix en ms (UTC). Si se omite, AppsFlyer usa la hora de recepción. Ventana de aceptación tardía: los eventos deben llegar como muy tarde a las 00:30 del siguiente día natural en la zona horaria de la aplicación. |
+| `ip` | string | Opcional | Dirección IP del dispositivo (IPv4 o IPv6). Máximo 46 caracteres. |
+| `agente_usuario` | string | Opcional | String completo del agente de usuario del navegador. Máximo 1,024 caracteres. |
+| `http_referrer` | string | Opcional | URL de referencia de la página actual. |
+| `af_customer_event_id` | string | Opcional | Tu propio ID único para el evento, que usas para eliminar duplicados de conversiones en plataformas de ad network. AppsFlyer lo reenvía a la red como ID del evento.<br /><br />Envíalo cuando se cumpla cualquiera de estos casos:<ul><li>Ejecutas un píxel de red en tu sitio junto con la medición de AppsFlyer.</li><li>Envías el mismo evento a través del SDK web y de esta API.</li></ul>Cuando lo envíes, envía también el mismo valor en el evento de píxel propio de la red (por ejemplo, `eventID` en `fbq()`), para que la red cuente la conversión una vez en lugar de dos.<br /><br />Si lo omites, AppsFlyer genera su propio ID y la red no puede hacer coincidir tus eventos de píxel.<br /><br />**Límites:** Máximo 256 caracteres. La coincidencia es exacta y distingue entre mayúsculas y minúsculas. |
+| `correo_electrónico_hashed` | string | Opcional | SHA256 del correo electrónico normalizado (en minúsculas y sin espacios al principio ni al final). Debe ser una string hexadecimal de 64 caracteres. |
+| `phone_number_hashed` | string | Opcional | SHA256 del número de teléfono. Debe ser una string hexadecimal de 64 caracteres. |
+| `phone_number_e164_hashed` | string | Opcional | SHA256 del número de teléfono en formato E.164 (por ejemplo, `+14155552671`). Debe ser una string hexadecimal de 64 caracteres. |
+| `first_name_hashed` | string | Opcional | SHA256 del nombre normalizado. Debe ser una string hexadecimal de 64 caracteres. |
+| `last_name_hashed` | string | Opcional | SHA256 del apellido normalizado. Debe ser una string hexadecimal de 64 caracteres. |
 
 </Accordion>
 
-<Accordion title="Example request">
+<Accordion title="Ejemplo de solicitud">
 
 ```json
 {"user_id":{"customer_user_id":"15667737-366d-4994-ac8b-653fe6b2be4a"},"event_name":"af_purchase","event_revenue":49.99,"event_revenue_currency":"USD","af_customer_event_id": "550e8400-e29b-41d4-a716-446655440000","event_value":{"af_content_id":"SKU-001","af_quantity":2,"custom_parameters":{"promo_code":"SUMMER10"}},"event_url":"https://example.com/checkout/success","timestamp":1712000000000,"ip":"35.244.183.10","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) ...","email_hashed":"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"}
@@ -106,53 +105,53 @@ Measures a web event (for example, a purchase, sign-up, or custom action) for a 
 
 </Accordion>
 
-<Accordion title="Responses">
+<Accordion title="Respuestas">
 
-| Status | Description |
+| Estado | Descripción |
 | --- | --- |
-| 202 Accepted | Request accepted. Returns status, message, and optional `messageId`. |
-| 400 Bad Request | Invalid or missing fields. |
-| 401 Unauthorized | App does not exist, or authentication failed. |
-| 403 Forbidden | App traffic is blocked. |
-| 415 Unsupported Media Type | `Content-Type` must be `application/json`. |
+| 202 Aceptado | Solicitud aceptada. Devuelve el estado, el mensaje y `messageId` opcional. |
+| 400 Solicitud incorrecta | Campos no válidos o ausentes. |
+| 401 No autorizado | La aplicación no existe o la autenticación ha fallado. |
+| 403 Prohibido | El tráfico de la app está bloqueado. |
+| 415 Tipo de medio no compatible | `Content-Type` debe ser `application/json`. |
 
 </Accordion>
 
-### Measure a visit
+### Medir una visita
 
 `POST /v2.0/s2s/visits/app/web/{appId}`
 
-Measures a page visit for a given web app. This endpoint shares all base fields with the event endpoint, with two key differences: `event_url` is required, and the event name and revenue fields do not apply.
+Mide una visita de página para una aplicación web determinada. Este endpoint comparte todos los campos base con el endpoint de evento, con dos diferencias clave: `event_url` es obligatorio y los campos de nombre del evento e ingresos no se aplican.
 
-<Accordion title="Path parameter">
+<Accordion title="Parámetro de ruta">
 
-| Parameter | Required | Description |
+| Parámetro | Requerido | Descripción |
 | --- | --- | --- |
-| `appId` | Required | The `unified_app_id` as defined in AppsFlyer. For example: `website-www.example.com` |
+| `appId` | Requerido | El `unified_app_id` tal como se define en AppsFlyer. Por ejemplo: `website-www.example.com` |
 
 </Accordion>
 
-<Accordion title="Request body">
+<Accordion title="Cuerpo de la solicitud">
 
-| Field | Type | Required | Description |
+| Campo | Tipo | Requerido | Descripción |
 | --- | --- | --- | --- |
-| `user_id` | object | Required | User identifier. Must contain at least one of `customer_user_id` or `appsflyer_id`. |
-| `event_url` | string | Required | The URL of the visited page. Valid HTTP URL, max 4,096 characters. |
-| `timestamp` | integer (int64) | Optional | Unix time in ms (UTC). If omitted, AppsFlyer uses the receive time. Late acceptance window: visits must arrive no later than 00:30 on the next calendar day in the app's timezone. |
-| `ip` | string | Optional | Device IP address (IPv4 or IPv6). Max 46 characters. |
-| `user_agent` | string | Optional | Full user agent string from the browser. Max 1,024 characters. |
-| `http_referrer` | string | Optional | Referrer URL of the current page. |
-| `event_value` | object | Optional | Free-form event parameters, including a `custom_parameters` sub-object. |
-| `af_customer_event_id` | string | Optional | Your own unique ID for the event, which you use to deduplicate conversions on ad network platforms. AppsFlyer forwards it to the network as the event ID.<br /><br />Send it when either applies:<ul><li>You run a network pixel on your site, alongside AppsFlyer measurement.</li><li>You send the same event through both the Web SDK and this API.</li></ul>When you send it, also send the same value in the network's own pixel event (for example, `eventID` in `fbq()`), so the network counts the conversion once instead of twice.<br /><br />If you omit it, AppsFlyer generates its own ID, and the network can't match your pixel events.<br /><br />**Limits:** Max 256 characters. Matching is exact and case-sensitive. |
-| `email_hashed` | string | Optional | SHA256 of normalized email. Must be a 64-character hex string. |
-| `phone_number_hashed` | string | Optional | SHA256 of phone number. Must be a 64-character hex string. |
-| `phone_number_e164_hashed` | string | Optional | SHA256 of E.164 phone number. Must be a 64-character hex string. |
-| `first_name_hashed` | string | Optional | SHA256 of normalized first name. Must be a 64-character hex string. |
-| `last_name_hashed` | string | Optional | SHA256 of normalized last name. Must be a 64-character hex string. |
+| `user_id` | objeto | Requerido | Identificador de usuario. Debe contener al menos uno de `customer_user_id` o `appsflyer_id`. |
+| `event_url` | string | Requerido | La URL de la página visitada. URL HTTP válida, máximo 4.096 caracteres. |
+| `timestamp` | integer (int64) | Opcional | Hora Unix en ms (UTC). Si se omite, AppsFlyer usa la hora de recepción. Ventana de aceptación tardía: las visitas deben llegar no más tarde de las 00:30 del siguiente día natural en la zona horaria de la aplicación. |
+| `ip` | string | Opcional | Dirección IP del dispositivo (IPv4 o IPv6). Máximo 46 caracteres. |
+| `agente_usuario` | string | Opcional | String completo del agente de usuario del navegador. Máximo 1.024 caracteres. |
+| `http_referrer` | string | Opcional | URL de referencia de la página actual. |
+| `event_value` | objeto | Opcional | Parámetros de evento de formato libre, incluidos un subobjeto `custom_parameters`. |
+| `af_customer_event_id` | string | Opcional | Tu propio ID único para el evento, que usas para deduplicar conversiones en plataformas de ad network. AppsFlyer lo reenvía a la red como ID del evento.<br /><br />Envíalo si se cumple alguno de estos casos:<ul><li>Ejecutas un píxel de red en tu sitio junto con la medición de AppsFlyer.</li><li>Envías el mismo evento a través del SDK web y de esta API.</li></ul>Cuando lo envíes, envía también el mismo valor en el propio evento de píxel de la red (por ejemplo, `eventID` en `fbq()`), para que la red contabilice la conversión una vez en lugar de dos.<br /><br />Si lo omites, AppsFlyer genera su propio ID y la red no puede asociar tus eventos de píxel.<br /><br />**Límites:** Máximo 256 caracteres. La coincidencia es exacta y distingue entre mayúsculas y minúsculas. |
+| `email_hashed` | string | Opcional | SHA256 del correo electrónico normalizado. Debe ser una string hexadecimal de 64 caracteres. |
+| `phone_number_hashed` | string | Opcional | SHA256 del número de teléfono. Debe ser una string hexadecimal de 64 caracteres. |
+| `phone_number_e164_hashed` | string | Opcional | SHA256 del número de teléfono en formato E.164. Debe ser una string hexadecimal de 64 caracteres. |
+| `first_name_hashed` | string | Opcional | SHA256 del nombre normalizado. Debe ser una string hexadecimal de 64 caracteres. |
+| `last_name_hashed` | string | Opcional | SHA256 del apellido normalizado. Debe ser una string hexadecimal de 64 caracteres. |
 
 </Accordion>
 
-<Accordion title="Example request">
+<Accordion title="Ejemplo de solicitud">
 
 ```json
 {"user_id":{"appsflyer_id":"1234567890abcdef","customer_user_id":"15667737-366d-4994-ac8b-653fe6b2be4a"},"af_customer_event_id": "550e8400-e29b-41d4-a716-446655440000","event_url":"https://example.com/products/sneakers","timestamp":1712000000000,"ip":"35.244.183.10","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) ...","http_referrer":"https://www.google.com/","email_hashed":"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"}
@@ -160,165 +159,165 @@ Measures a page visit for a given web app. This endpoint shares all base fields 
 
 </Accordion>
 
-<Accordion title="Responses">
+<Accordion title="Respuestas">
 
-| Status | Description |
+| Estado | Description |
 | --- | --- |
-| 202 Accepted | Request accepted. Returns status, message, and optional `messageId`. |
-| 400 Bad Request | Invalid or missing fields. |
-| 401 Unauthorized | App does not exist, or authentication failed. |
-| 403 Forbidden | App traffic is blocked. |
-| 415 Unsupported Media Type | `Content-Type` must be `application/json`. |
+| 202 Aceptado | Solicitud aceptada. Devuelve el estado, el mensaje y el `messageId` opcional. |
+| 400 Solicitud incorrecta | Campos no válidos o ausentes. |
+| 401 No autorizado | La app no existe o la autenticación falló. |
+| 403 Prohibido | El tráfico de la aplicación está bloqueado. |
+| 415 Tipo de medio no admitido | El `Content-Type` debe ser `application/json`. |
 
 </Accordion>
 
-## Set up a fully server-side integration
+## Configurar una integración completamente del lado del servidor.
 
-If you're running the Web SDK alongside S2S, use [Extracting the Web SDK afUserID](#extracting-the-web-sdk-afuserid) instead. This section is only for integrations without an SDK.
+Si estás ejecutando el SDK web junto con S2S, usa [Extracción del afUserID del SDK web](#extracting-the-web-sdk-afuserid) en su lugar. Esta sección es solo para integraciones sin SDK.
 
-If you're not running the Web SDK on your site at all, you're responsible for everything it would normally handle: assigning the user cookie, sending the right identifiers, and keeping every event payload complete. Done right, this setup gives you the full benefits described in [Why use S2S](#why-use-s2s), but it depends on getting these details right.
+Si no estás ejecutando el SDK web en tu sitio, eres responsable de todo lo que normalmente gestionaría: asignar la cookie de usuario, enviar los identificadores correctos y mantener completo el payload de cada evento. Si lo haces bien, esta configuración te ofrece todas las ventajas descritas en [Por qué usar S2S](#por-qué-usar-s2s), pero depende de que estos detalles estén correctos.
 
-<Accordion title="Send visits, not just events">
+<Accordion title="Envía visitas, no solo eventos">
 
-A visit carries the attribution parameters that every subsequent event relies on, and the system expects a visit before any user event. If you send an event before a visit, the system classifies it as organic.
+Una visita incluye los parámetros de atribución de los que depende cada evento posterior, y el sistema espera una visita antes de cualquier evento del usuario. Si envías un evento antes de una visita, el sistema lo clasifica como orgánico.
 
 </Accordion>
 
-<Accordion title="Assign a first-party cookie via HTTP">
+<Accordion title="Asigna una cookie propia mediante HTTP">
 
-Because there's no Web SDK to set the `afUserId` cookie for you, you need to assign and manage it yourself, as an HTTP cookie set in the `Set-Cookie` response header, not a client-side cookie written in JavaScript.
+Como no hay ningún SDK web que configure por ti la cookie `afUserId`, debes asignarla y gestionarla tú mismo como una cookie HTTP configurada en la cabecera de respuesta `Set-Cookie`, no como una cookie del lado del cliente escrita en JavaScript.
 
-Here's why that matters: a client-side cookie (set via `document.cookie`) expires quickly, as fast as 7 days on Safari, or 24 hours on domains under ITP. Once it expires, the identifier resets, and a returning visitor looks new. A cookie your server sets isn't subject to that cap and can persist up to the browser maximum (Chrome allows up to 400 days). It can also be marked `HttpOnly`, so page scripts and ad blockers can't read or strip it, and it doesn't rely on any script running on the page at all.
+Por eso es importante: una cookie del lado del cliente (configurada mediante `document.cookie`) caduca rápidamente, en tan solo 7 días en Safari o 24 horas en dominios bajo ITP. Cuando caduca, el identificador se restablece y un visitante recurrente parece nuevo. Una cookie configurada por tu servidor no está sujeta a ese límite y puede mantenerse hasta el máximo permitido por el navegador (Chrome permite hasta 400 días). También se puede marcar como `HttpOnly`, por lo que los scripts de la página y los bloqueadores de anuncios no pueden leerla ni eliminarla, y además no depende en absoluto de que se ejecute ningún script en la página.
 
-To set and read it:
+Para configurarla y leerla:
 
-1. On the first request from a visitor with no cookie, generate a stable, unique ID on your server (for example, a UUID).
-2. Return it in a first-party cookie:
+1. En la primera solicitud de un visitante sin cookie, genera en tu servidor un ID estable y único (por ejemplo, un UUID).
+2. Devuélvelo en una cookie propia:
 
    ```
    Set-Cookie: af_web_id=<generated-id>; Max-Age=34128000; Path=/; Secure; HttpOnly; SameSite=Lax
    ```
-3. On every later request, read the value from the incoming Cookie header and reuse it. Don't regenerate it.
-4. Send that value to AppsFlyer on every call as `appsflyer_id` part of the request's `user_id` object.
+3. En cada solicitud posterior, lee el valor de la cabecera Cookie entrante y reutilízalo. No lo regeneres.
+4. Envía ese valor a AppsFlyer en cada llamada como `appsflyer_id` como parte del objeto `user_id` de la solicitud.
 
-You can name the cookie whatever you like; AppsFlyer reads the value you send, not the cookie's name. Just make sure you set it from your own first-party domain.
-
-</Accordion>
-
-<Accordion title="Send the right identifiers on each call">
-
-Every call needs a `user_id` object with at least one of `appsflyer_id` (the cookie value) or `customer_user_id` (your internal user ID). Sending both, when you have them, improves identity resolution.
-
-Here's what to keep in mind: visits are mostly anonymous, so always send the cookie value. For on-site events, add the `customer_user_id` once the user is identified, and keep sending the cookie alongside it. For events that don't originate in the browser, the `customer_user_id` alone is enough, as long as AppsFlyer already knows that user from an earlier identified session.
+Puedes ponerle a la cookie el nombre que quieras; AppsFlyer lee el valor que envías, no el nombre de la cookie. Solo asegúrate de configurarla desde tu propio dominio de primera parte.
 
 </Accordion>
 
-## Things to consider
+<Accordion title="Envía los identificadores correctos en cada llamada">
 
-<Accordion title="User identification">
+Cada llamada necesita un objeto `user_id` con al menos uno de estos identificadores: `appsflyer_id` (el valor de la cookie) o `customer_user_id` (tu ID interno de usuario). Enviar ambos, cuando los tengas, mejora la resolución de identidad.
 
-The `user_id` object is required on every request. At least one of the following identifiers must be provided.
+Esto es lo que debes recordar: las visitas son mayoritariamente anónimas, así que envía siempre el valor de la cookie. En los eventos del sitio, añade `customer_user_id` una vez que se identifique al usuario y sigue enviando la cookie junto con él. En los eventos que no se originan en el navegador, `customer_user_id` por sí solo es suficiente, siempre que AppsFlyer ya conozca a ese usuario por una sesión identificada anterior.
 
-| Field | Type | Description |
+</Accordion>
+
+## Cosas a considerar
+
+<Accordion title="Identificación de usuario">
+
+El objeto `user_id` es obligatorio en todas las solicitudes. Debes proporcionar al menos uno de los siguientes identificadores.
+
+| Campo | Tipo | Description |
 | --- | --- | --- |
-| `customer_user_id` | string (1–64 characters) | Your internal user identifier, as set in your system. |
-| `appsflyer_id` | string (min 1 character) | AppsFlyer internal identifier for the web user. If you use the AppsFlyer Web SDK, the `appsflyer_id` value is retrieved from the Web SDK cookie. Extract it from `afUserId`. See [Extracting the Web SDK afUserId](#extracting-the-web-sdk-afuserid) |
+| `id_usuario_cliente` | string (1–64 caracteres) | Tu identificador interno de usuario, tal como está definido en tu sistema. |
+| `appsflyer_id` | string (mín. 1 carácter) | Identificador interno de AppsFlyer para el usuario web. Si usas el SDK web de AppsFlyer, el valor de `appsflyer_id` se obtiene de la cookie del SDK web. Extráelo de `afUserId`. Consulta [Cómo extraer el afUserId del SDK web](#extracting-the-web-sdk-afuserid) |
 
 </Accordion>
 
-<Accordion title="Late acceptance windows">
+<Accordion title="Ventanas de aceptación tardía">
 
-Events and visits must be received no later than 00:30 on the next calendar day in the app's timezone. Late events fall back to the server receive time.
-
-</Accordion>
-
-<Accordion title="Hashed PII fields">
-
-All personal data fields must be SHA256-hashed before sending. Normalize text (lowercase, trimmed) before hashing. Each hash must be exactly 64 hexadecimal characters (case-insensitive).
-
-* Pattern for all hashed fields: `^[a-fA-F0-9]{64}$`
-* Phone numbers using the `phone_number_e164_hashed` field must conform to E.164 format (for example, `+14155552671`) before hashing.
+Los eventos y las visitas deben recibirse como máximo a las 00:30 del siguiente día natural, según la zona horaria de la aplicación. Los eventos tardíos pasan a usar la hora de recepción del servidor.
 
 </Accordion>
 
-<Accordion title="Extracting the Web SDK afUserID">
+<Accordion title="Campos de PII hashed">
 
-* The `afUserId` parameter is a unique identifier set by the Web SDK when a user first visits your site.
-* If you need `afUserId`, use one of the methods that follow.
+Todos los campos de datos personales deben estar hashed con SHA256 antes de enviarse. Normaliza el texto (en minúsculas y sin espacios al principio ni al final) antes de aplicar hashing. Cada hash debe tener exactamente 64 caracteres hexadecimales (sin distinguir entre mayúsculas y minúsculas).
 
-<span id="h_01HKW2YAW5FK04C3AWCXGP1XAW"></span>**Get afUserId from the HTTP cookie header**
-
-* The `afUserId` is sent by the visitor's browser on calls to your site.
-* Extract it from the HTTP cookie header if needed.
-
-<span id="h_01HKW2YAW5CT2WZ229KJD2FWYK"></span>**Viewing afUserId in the visitor's browser**
-
-* View the `afUserId` in the visitor's browser for troubleshooting and debugging.
-* For it to be available, the visitor needs to have first visited a page having the Web SDK at least once.
-* The cookie containing `afUserId` is a first-party cookie in relation to your domain.
-* The following procedure was prepared using Chrome 81. There may be differences across browsers and operating systems.
-
-**To get the afUserId from the visitor's browser:**
-
-1. In your browser, go to your website.
-2. Right-click, select ***Inspect***. The browser's inspect element window opens.
-3. Go to the (A) ***Application*** tab.
-4. In the side menu, (B) expand Cookies.
-5. Select your website. If it does not display, refresh the browser.
-6. In the (C) ***filter*** field, enter `afUserId`. The value of afUserID displays.
+* Patrón para todos los campos hashed: `^[a-fA-F0-9]{64}$`
+* Los números de teléfono que usan el campo `phone_number_e164_hashed` deben ajustarse al formato E.164 (por ejemplo, `+14155552671`) antes del hashing.
 
 </Accordion>
 
-## Send events via Segment (CDP)
+<Accordion title="Extraer el afUserID del SDK web">
 
-**You can use Segment to route events to your S2S API.** (Segment is a Customer Data Platform, a tool used for collecting customer events and sending them to configured destinations.)
+* El parámetro `afUserId` es un identificador único que establece el SDK web cuando un usuario visita tu sitio por primera vez.
+* Si necesitas `afUserId`, utiliza uno de los métodos que se indican a continuación.
 
-The Web SDK and Segment are two separate, parallel paths into AppsFlyer, not one feeding the other: the Web SDK keeps sending visits, which carry the attribution parameters, and Segment sends events for properties that don't have the SDK. Neither path knows about the other; AppsFlyer is where they meet, joining a visit to its events using the identifier you send on both.
+<span id="h_01HKW2YAW5FK04C3AWCXGP1XAW"></span>**Obtener el afUserId del encabezado de la cookie HTTP**
 
-Web SDK - sends visits
+* El `afUserId` lo envía el navegador del visitante en las llamadas a tu sitio.
+* Extráelo del encabezado de la cookie HTTP si es necesario.
 
-Segment - sends events
+<span id="h_01HKW2YAW5CT2WZ229KJD2FWYK"></span>**Ver el afUserId en el navegador del visitante**
 
-S2S API
+* Visualiza el `afUserId` en el navegador del visitante para solucionar problemas y depurar.
+* Para que esté disponible, el visitante tiene que haber visitado primero una página que tenga el SDK web al menos una vez.
+* La cookie que contiene `afUserId` es una cookie de origen en relación con tu dominio.
+* El siguiente procedimiento se preparó con Chrome 81. Puede haber diferencias entre navegadores y sistemas operativos.
 
-Joined by `appsflyer_id` or `customer_user_id`
+**Para obtener el afUserId del navegador del visitante:**
 
-AppsFlyer - visit + event, joined
+1. En tu navegador, ve a tu sitio web.
+2. Haz clic con el botón derecho y selecciona ***Inspeccionar***. Se abre la ventana de inspección de elementos del navegador.
+3. Ve a la pestaña (A) ***Aplicación***.
+4. En el menú lateral, (B) expande Cookies.
+5. Selecciona tu sitio web. Si no aparece, actualiza el navegador.
+6. En el campo (C) ***filtro***, introduce `afUserId`. Se muestra el valor de afUserID.
 
-The Web SDK and Segment are two parallel paths into AppsFlyer, joined by a shared identifier.
+</Accordion>
 
-> 📘 **Note**
+## Envía eventos a través de Segment (CDP)
+
+**Puedes usar Segment para enrutar eventos a tu API S2S.** (Segment es una plataforma de datos de clientes, una herramienta que se usa para recopilar eventos de clientes y enviarlos a los destinos configurados)
+
+El SDK web y Segment son dos rutas independientes y paralelas hacia AppsFlyer, no una alimenta a la otra: el SDK web sigue enviando visitas, que incluyen los parámetros de atribución, y Segment envía eventos para las propiedades que no tienen el SDK. Ninguna de las dos rutas conoce la otra; AppsFlyer es donde se unen, vinculando una visita con sus eventos mediante el identificador que envías en ambas.
+
+SDK web: envía visitas
+
+Segment: envía eventos
+
+API S2S
+
+Unidos por `appsflyer_id` or `customer_user_id`
+
+AppsFlyer: visita + evento, unidos
+
+El SDK web y Segment son dos rutas paralelas hacia AppsFlyer, unidas por un identificador compartido.
+
+> 📘 **Nota:**
 >
-> This covers **web** events sent over S2S from a Segment custom destination. For Segment's mobile SDK wrapper, which connects app installs and in-app events to the AppsFlyer mobile SDK, see <Anchor target="_blank" href="/marketers/docs/segment-integration">Segment integration</Anchor> instead; that's a different integration for a different platform.
+> Esto abarca los eventos **web** enviados mediante S2S desde un destino personalizado de Segment. Para el wrapper del SDK móvil de Segment, que conecta las instalaciones de la app y los eventos in-app con el SDK móvil de AppsFlyer, consulta en su lugar la <Anchor target="_blank" href="/marketers/es/docs/segment-integration">integración con Segment</Anchor>; se trata de una integración distinta para una plataforma diferente.
 
-<Accordion title="Set up the destination in Segment">
+<Accordion title="Configura el destino en Segment">
 
-AppsFlyer doesn't have a pre-built Segment destination for the S2S API yet, so you'll need to set this up as a custom destination in Segment that sends each event to the S2S endpoint. There are two ways to do this, depending on how much control you need over the data format.
+AppsFlyer todavía no tiene un destino de Segment predefinido para la API S2S, así que tendrás que configurarlo como un destino personalizado en Segment que envíe cada evento al endpoint de S2S. Hay dos formas de hacerlo, según cuánto control necesites sobre el formato de los datos.
 
-#### Option 1: Webhooks (Actions) destination
+#### Opción 1: destino de Webhooks (acciones)
 
-This is the recommended starting point. It requires no code, and all setup happens in Segment's user interface.
+Este es el punto de partida recomendado. No requiere código y toda la configuración se hace en la interfaz de usuario de Segment.
 
-To set it up:
+Para configurarlo:
 
-1. In Segment, add the Webhooks destination from the destination catalog.
-2. Connect it to the source that collects the events you want to send.
-3. For each event type, create a mapping that defines the AppsFlyer URL, sets the method to POST, adds the required headers, and builds the JSON payload from the event's fields.
+1. En Segment, añade el destino de Webhooks desde el catálogo de destinos.
+2. Conéctalo a la fuente que recopila los eventos que quieres enviar.
+3. Para cada tipo de evento, crea una asignación que defina la URL de AppsFlyer, establezca el método en POST, añada los encabezados obligatorios y genere el payload JSON a partir de los campos del evento.
 
-#### Option 2: Destination Function
+#### Opción 2: función de destino
 
-Use this option only if the Webhooks mapping can't produce the payload format AppsFlyer needs. A Destination Function is a small JavaScript function that runs inside Segment, receives each event, and sends it to the AppsFlyer endpoint using fetch.
+Usa esta opción solo si la asignación de Webhooks no puede generar el formato de payload que necesita AppsFlyer. Una Destination Function es una pequeña función de JavaScript que se ejecuta dentro de Segment, recibe cada evento y lo envía al endpoint de AppsFlyer mediante fetch.
 
-Use this option when:
+Usa esta opción cuando:
 
-* The payload needs a nested structure, for example, wrapping `user_id` inside a `user` object, that the Webhooks mapping user interface can't build.
-* The event data needs to be transformed before sending, such as converting a timestamp to a different format.
+* El payload necesita una estructura anidada, por ejemplo, envolver `user_id` dentro de un objeto `user`, que la interfaz de usuario de asignación de Webhooks no puede generar.
+* Los datos del evento deben transformarse antes de enviarse, por ejemplo, convirtiendo una timestamp a un formato diferente.
 
 </Accordion>
 
-<Accordion title="The AppsFlyer endpoint">
+<Accordion title="El endpoint de AppsFlyer">
 
-Whichever setup you use, point it at this endpoint:
+Independientemente de la configuración que uses, apúntala a este endpoint:
 
 ```
 POST https://events.appsflyer.com/v2.0/s2s/inapps/app/web/website-{your_domain}
@@ -327,55 +326,55 @@ Authorization: Bearer {s2s-token}
 Content-Type: application/json
 ```
 
-Get your S2S API key from the AppsFlyer token management page (see [Authentication](#authentication)). In the path, use the web app ID (for example, `website-www.your_domain`), not the **Web SDK ID** UUID on the app settings page.
+Obtén tu clave de la API S2S en la página de gestión de tokens de AppsFlyer (consulta [Autenticación](#autenticación)). En la ruta, usa el ID de la app web (por ejemplo, `website-www.your_domain`), no el UUID del **Web SDK ID** en la página de configuración de la app.
 
 </Accordion>
 
-<Accordion title="Payload per event">
+<Accordion title="Payload por evento">
 
-Build the JSON body for each mapped event with these fields:
+Crea el cuerpo JSON de cada evento asignado con estos campos:
 
 ```json
 {
   "user_id": {
-    "customer_user_id": "<your internal user ID>",
-    "appsflyer_id": "<afUserId cookie value, when available>"
+    "customer_user_id": "<tu ID de usuario interno>",
+    "appsflyer_id": "<valor de la cookie afUserId, cuando esté disponible>"
   },
   "event_name": "signup",
-  "event_url": "<page URL where the event happened>",
-  "ip": "<end-user IP>",
-  "user_agent": "<end-user user agent>",
-  "af_customer_event_id": "<Segment messageId>"
+  "event_url": "<URL de la página donde se produjo el evento>",
+  "ip": "<IP del usuario final>",
+  "user_agent": "<user agent del usuario final>",
+  "af_customer_event_id": "<messageId de Segment>"
 }
 ```
 
 </Accordion>
 
-<Accordion title="Two Rules that make attribution work">
+<Accordion title="Dos reglas para que la atribución funcione">
 
-1. Keep the Web SDK running on the marketing site: it records the visits, and Segment carries the events. As explained in the introduction to this section, a user needs a visit before an event or the event gets attributed as organic. If you want a fully server-side setup instead, with no Web SDK at all, follow [Set up a fully server-side integration](#set-up-a-fully-server-side-integration).
-2. Every call also needs the right identifiers: send the same `appsflyer_id` or `customer_user_id` combination described in [Send the right identifiers on each call](#af-accordion-11).
-
-</Accordion>
-
-<Accordion title="Verify the setup">
-
-Once the destination and payload are in place, roll out in three steps:
-
-1. Map one or two events in Segment (the sign-up event is a good first candidate) and send a test event from the mapping tester.
-2. Verify they arrive correctly in the raw report and match up with the marketing-site visit.
-3. Once confirmed, expand the mapping to the remaining events.
+1. Mantén el SDK web en funcionamiento en el sitio de marketing: registra las visitas y Segment gestiona los eventos. Como se explica en la introducción de esta sección, un usuario necesita una visita antes de un evento; de lo contrario, el evento se atribuye como orgánico. Si en su lugar quieres una configuración totalmente del lado del servidor, sin ningún SDK web, sigue [Configura una integración totalmente del lado del servidor](#configurar-una-integración-completamente-del-lado-del-servidor).
+2. Cada llamada también necesita los identificadores correctos: envía la misma combinación de `appsflyer_id` o `customer_user_id` descrita en [Envía los identificadores correctos en cada llamada](#af-accordion-11).
 
 </Accordion>
 
-<Accordion title="Suggested rollout">
+<Accordion title="Verifica la configuración">
 
-Once the destination and payload are in place, roll out in three steps:
+Cuando el destino y el payload estén listos, sigue estos tres pasos:
 
-1. Map one or two events in Segment (the sign-up event is a good first candidate) and send a test event from the mapping tester.
-2. Verify they arrive correctly in the raw report and match up with the marketing-site visit.
-3. Once confirmed, expand the mapping to the remaining events.
+1. Asigna uno o dos eventos en Segment (el evento de registro es una buena primera opción) y envía un evento de prueba desde el probador de asignaciones.
+2. Verifica que lleguen correctamente al reporte sin procesar y que coincidan con la visita al sitio de marketing.
+3. Cuando lo hayas confirmado, amplía la asignación al resto de los eventos.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01KP13TF66KEZ7F1TGAA7RGQ6G=about-the-s2s-api-for-web-attribution h_01KP13TF66W8V5A40YT2XYWQ5K=how-it-works h_01KP13TF671CF85KMYXFZE6W9D=why-use-s2s h_01KP13TF67N1FVEAD1C7RV25TY=api-specification h_01KP13TF67MHPEQ5J3H69RTQH5=authentication h_01KT98N5SBW812PVXP165FCWR3=note h_01KP13TF67QQC3F1YP9RZRNMTK=measure-an-event h_01KP13TF68HMD8GSR6GSY95WYF=measure-a-visit h_01KZS2SFULLSVR01=set-up-a-fully-server-side-integration h_01KP13TF68F2T3P7P56A5EG2HW=things-to-consider h_01M2T6JS6CPED929FVJS4P4CEG=send-events-via-segment-cdp h_01M2T6JS6CJ75PG72RSRYTCV9N=note-1 h_01M2T6JS6C08V4WZCC9EP724ZG=option-1-webhooks-actions-destination h_01M2T6JS6CZVH4PVH6MK7X5VTZ=option-2-destination-function" />
+<Accordion title="Despliegue sugerido">
+
+Cuando el destino y el payload estén listos, sigue estos tres pasos:
+
+1. Asigna uno o dos eventos en Segment (el evento de registro es una buena primera opción) y envía un evento de prueba desde el probador de asignaciones.
+2. Verifica que lleguen correctamente al reporte sin procesar y que coincidan con la visita al sitio de marketing.
+3. Cuando lo hayas confirmado, amplía la asignación al resto de los eventos.
+
+</Accordion>
+
+<div data-zendesk-anchors="about-the-s2s-api-for-web-attribution=sobre-la-api-s2s-para-la-atribuci%C3%B3n-web h_01KP13TF66KEZ7F1TGAA7RGQ6G=sobre-la-api-s2s-para-la-atribuci%C3%B3n-web how-it-works=c%C3%B3mo-funciona h_01KP13TF66W8V5A40YT2XYWQ5K=c%C3%B3mo-funciona why-use-s2s=por-qu%C3%A9-usar-s2s h_01KP13TF671CF85KMYXFZE6W9D=por-qu%C3%A9-usar-s2s api-specification=especificaci%C3%B3n-de-la-api h_01KP13TF67N1FVEAD1C7RV25TY=especificaci%C3%B3n-de-la-api authentication=autenticaci%C3%B3n h_01KP13TF67MHPEQ5J3H69RTQH5=autenticaci%C3%B3n h_01KT98N5SBW812PVXP165FCWR3=nota measure-an-event=medir-un-evento h_01KP13TF67QQC3F1YP9RZRNMTK=medir-un-evento measure-a-visit=medir-una-visita h_01KP13TF68HMD8GSR6GSY95WYF=medir-una-visita h_01KZS2SFULLSVR01=configurar-una-integraci%C3%B3n-completamente-del-lado-del-servidor set-up-a-fully-server-side-integration=configurar-una-integraci%C3%B3n-completamente-del-lado-del-servidor things-to-consider=cosas-a-considerar h_01KP13TF68F2T3P7P56A5EG2HW=cosas-a-considerar h_01M2T6JS6CPED929FVJS4P4CEG=env%C3%ADa-eventos-a-trav%C3%A9s-de-segment-cdp h_01M2T6JS6CJ75PG72RSRYTCV9N=nota-1 h_01M2T6JS6C08V4WZCC9EP724ZG=opci%C3%B3n-1-destino-de-webhooks-acciones h_01M2T6JS6CZVH4PVH6MK7X5VTZ=opci%C3%B3n-2-funci%C3%B3n-de-destino" />

@@ -1,5 +1,5 @@
 ---
-title: 'For iOS and Android: The SDK integration wizard'
+title: 'Para iOS y Android: el asistente de integración de SDK'
 metadata:
   keywords:
     - Marketers
@@ -12,57 +12,56 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2024-04-10T12:17:00Z'
-  edited_at: '2026-08-13T12:48:39Z'
+  edited_at: '2026-08-22T00:15:03Z'
   id: 24073235369617
-  locale: en-us
+  locale: es
   section: SDK integration planning
   section_id: 6551182964369
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/24073235369617-For-iOS-and-Android-The-SDK-integration-wizard
+  url: https://support.appsflyer.com/hc/es/articles/24073235369617
 ---
-> **At a glance:** Create and test your SDK integration code automatically.
+> **At a glance:** Crea y prueba automáticamente tu código de integración del SDK.
 
-## About the SDK integration wizard
+## Acerca del asistente de integración de SDK
 
-Let our <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?sourceos=android&utm_source=kb&utm_medium=sdk-int-wizard-orvw">SDK integration wizard</Anchor> guide the app developer through the SDK integration process. The app developer simply provides some credentials and customization choices, and the wizard generates code snippets to be copied and pasted into the project.
+Deja que nuestro <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?sourceos=android&utm_source=kb&utm_medium=sdk-int-wizard-orvw">asistente de integración del SDK</Anchor> guíe al Desarrollador de apps a través del proceso de integración del SDK. El desarrollador de apps solo tiene que proporcionar algunas credenciales y opciones de personalización, y el asistente genera fragmentos de código para copiarlos y pegarlos en el proyecto.
 
-This article enables you to collect and send the app developer all the input and credentials required by the integration wizard flows. There are two developer journeys supported by the wizard:
+Este artículo te permite recopilar y enviar al Desarrollador de apps todos los datos de entrada y las credenciales que requieren los flujos del asistente de integración. El asistente admite dos viajes para desarrolladores:
 
-* [The installation and integration developer journey](#the-installation-and-integration-flow): The wizard takes the developer from installation to successful testing of the integration.
-* [The in-app event developer journey](#the-add-in-app-event-flow): The wizard guides the developer from defining in-app events to successfully testing their transmission to AppsFlyer.
+* [El viaje del desarrollador de instalación e integración](#el-flujo-de-instalación-e-integración): el asistente lleva al desarrollador desde la instalación hasta la prueba satisfactoria de la integración.
+* [El viaje del desarrollador de eventos in-app](#el-flujo-de-adición-de-eventos-in-app): el asistente guía al desarrollador desde la definición de eventos in-app hasta la prueba satisfactoria de su transmisión a AppsFlyer.
 
-## The installation and integration flow
+## El flujo de instalación e integración
 
-Once the app developer has successfully completed the installation and setup using the Integration Wizard, the AppsFlyer SDK will be ready to begin sending attribution data. To verify successful integration, the flow includes a test that checks whether an 'install event' is correctly reported to AppsFlyer upon your app's installation.
+Una vez que el desarrollador de apps haya completado correctamente la instalación y la configuración con el asistente de integración, el SDK de AppsFlyer estará listo para empezar a enviar datos de atribución. Para verificar que la integración se ha completado correctamente, el flujo incluye una prueba que comprueba si un "evento de instalación" se reporta correctamente a AppsFlyer cuando se instala tu app.
 
-The table below lists the questions that developers need to address during the wizard setup. Use the specified instructions in the table to collect the necessary information and provide it to the developers.
+La tabla siguiente enumera las preguntas que los desarrolladores deben responder durante la configuración del asistente. Usa las instrucciones especificadas en la tabla para recopilar la información necesaria y proporcionarla a los desarrolladores.
 
-| Questions | Learn more |
+| Preguntas | Descubre más |
 | --- | --- |
-| What is your App ID? (Required) | <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#enter-app-details">Learn how to obtain the App ID in each store.</Anchor> |
-| What is your AppsFlyer Dev Key (Required) | <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#retrieve-the-dev-key">Learn how to obtain the Dev Key.</Anchor> |
-| What SDK mode would you like to integrate? Regular or strict? | <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#strictmode-sdk">Learn about SDK modes</Anchor>. |
-| Should the SDK get conversion data? | <Anchor target="_blank" href="/marketers/docs/get-conversion-data-using-appsflyer-sdk-overview">Learn about Conversion data in the SDK</Anchor>. |
-| Should the SDK receive confirmation that it was started successfully? | Learn about the SDK start method with a completion handler ([Android](https://dev.appsflyer.com/hc/docs/integrate-android-sdk#starting-with-a-response-listener), [iOS](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#start-with-completion-handler)). |
-| Should the SDK support AppTrackingTransparency support (ATT)? | <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support">Learn about ATT</Anchor>. |
-| What is your AppsFlyer v2 authentication token? (Required only if you follow the automatic test flow.) | <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#reaching-the-tokens-page">Learn how to retrieve your v2 token</Anchor>. |
+| ¿Cuál es tu ID de app? (Requerido) | <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer#introduce-los-detalles-de-la-aplicación">Descubre cómo obtener el ID de app en cada tienda.</Anchor> |
+| ¿Cuál es tu clave de desarrollador de AppsFlyer? (Obligatoria) | <Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide#recuperar-la-clave-de-desarrollo">Descubre cómo obtener la clave de desarrollador.</Anchor> |
+| ¿Qué modo de SDK quieres integrar? ¿Normal o estricto? | <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#strictmode-sdk">Descubre los modos del SDK</Anchor>. |
+| ¿Debe el SDK obtener datos de conversión? | <Anchor target="_blank" href="/marketers/es/docs/get-conversion-data-using-appsflyer-sdk-overview">Descubre los datos de conversión en el SDK</Anchor>. |
+| ¿Debe el SDK recibir la confirmación de que se ha iniciado correctamente? | Descubre el método de inicio del SDK con un controlador de finalización ([Android](https://dev.appsflyer.com/hc/docs/integrate-android-sdk#starting-with-a-response-listener), [iOS](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#start-with-completion-handler)). |
+| ¿Debe el SDK ser compatible con AppTrackingTransparency (ATT)? | <Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support">Descubre más sobre ATT</Anchor>. |
+| ¿Cuál es tu token de autenticación v2 de AppsFlyer? (Solo es obligatorio si sigues el flujo de prueba automático.) | <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens#cómo-llegar-a-la-página-de-tokens">Descubre cómo recuperar tu token v2</Anchor>. |
 
-## The add-in-app event flow
+## El flujo de adición de eventos in-app
 
-After the app developer completes the installation and integration wizard, AppsFlyer SDK will be integrated successfully into your app. The flow includes an in-app event test confirming that the AppsFlyer when your app is installed.
+Después de que el desarrollador de apps complete el asistente de instalación e integración, el SDK de AppsFlyer se integrará correctamente en tu app. El flujo incluye una prueba de evento in-app que confirma que AppsFlyer lo recibe cuando se instala la app.
 
-The table below lists the questions that developers need to address during the wizard setup. Use the specified instructions in the table to collect the necessary information and provide it to the developers.
+La tabla siguiente enumera las preguntas que los desarrolladores deben responder durante la configuración del asistente. Usa las instrucciones especificadas en la tabla para recopilar la información necesaria y proporcionársela a los desarrolladores.
 
-| Questions | Learn more |
+| Preguntas | Descubre más |
 | --- | --- |
-| Choose the event name and its event parameters | <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#enter-app-details">Learn which predefined events are available for you.</Anchor> Each event description includes its typical event parameters.  <br />Alternatively, you can use our   <br />[In-app event generator](https://evgen.appsflyer.com/). |
-| Should the SDK receive confirmation that the in-app event was received by AppsFlyer? | Learn about the code that verifies that events were successfully received in AppsFlyer (<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-android#handling-event-submission-success-and-failure">Android</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-ios#handling-event-submission-success-and-failure">iOS</Anchor>). |
-| What is your AppsFlyer v2 authentication token? (Required only if you follow the automatic test flow.) | <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#reaching-the-tokens-page">Learn how to retrieve your v2 token</Anchor>. |
+| Elige el nombre del evento y sus parámetros | <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer#introduce-los-detalles-de-la-aplicación">Descubre qué eventos predefinidos tienes disponibles.</Anchor> La descripción de cada evento incluye sus parámetros habituales.  <br />También puedes usar nuestro   <br />[generador de eventos in-app](https://evgen.appsflyer.com/). |
+| ¿Debe el SDK recibir una confirmación de que AppsFlyer ha recibido el evento in-app? | Más información sobre el código que verifica que los eventos se han recibido correctamente en AppsFlyer (<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-android#handling-event-submission-success-and-failure">Android</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-ios#handling-event-submission-success-and-failure">iOS</Anchor>). |
+| ¿Cuál es tu token de autenticación v2 de AppsFlyer? (Solo es obligatorio si sigues el flujo de prueba automático.) | <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens#cómo-llegar-a-la-página-de-tokens">Descubre cómo recuperar tu token v2</Anchor>. |
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-| Trait | Remarks |
+| Rasgo | Comentarios |
 | --- | --- |
-| Zero plan | The SDK integration wizard is not included in the <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">Zero plan</Anchor>. |
+| Plan Zero | El asistente de integración del SDK no está incluido en el <Anchor target="_blank" href="/marketers/es/docs/account-management-plans-payments-and-billing#appsflyer-plans">plan Zero</Anchor>. |
 
-<div data-zendesk-anchors="h_01J6730Y7WE1AJXNXFZ0QX23T8=about-the-sdk-integration-wizard h_01J5K2A8BZS9CTZA45FB5VX8C0=the-installation-and-integration-flow h_01J5K2CG0H1G0BCSWHBJ8DPQWA=the-add-in-app-event-flow h_01J6S6HS0H0M6GQ81WGZ3XT0P9=traits-and-limitations" />
+<div data-zendesk-anchors="about-the-sdk-integration-wizard=acerca-del-asistente-de-integraci%C3%B3n-de-sdk h_01J6730Y7WE1AJXNXFZ0QX23T8=acerca-del-asistente-de-integraci%C3%B3n-de-sdk the-installation-and-integration-flow=el-flujo-de-instalaci%C3%B3n-e-integraci%C3%B3n h_01J5K2A8BZS9CTZA45FB5VX8C0=el-flujo-de-instalaci%C3%B3n-e-integraci%C3%B3n the-add-in-app-event-flow=el-flujo-de-adici%C3%B3n-de-eventos-in-app h_01J5K2CG0H1G0BCSWHBJ8DPQWA=el-flujo-de-adici%C3%B3n-de-eventos-in-app traits-and-limitations=especificaciones-y-limitaciones h_01J6S6HS0H0M6GQ81WGZ3XT0P9=especificaciones-y-limitaciones" />

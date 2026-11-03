@@ -1,5 +1,5 @@
 ---
-title: Vidaa integration with AppsFlyer
+title: Integración de Vidaa con AppsFlyer
 metadata:
   keywords:
     - CTV
@@ -13,52 +13,51 @@ x-zendesk:
     - Marketers
     - CTV Attribution
   created_at: '2022-11-06T08:13:09Z'
-  edited_at: '2025-10-30T13:20:27Z'
+  edited_at: '2026-08-12T12:10:25Z'
   id: 10400222972433
-  locale: en-us
+  locale: es
   section: Promoting CTV apps
   section_id: 15328952633489
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/10400222972433-Vidaa-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/10400222972433
 ---
-> **At a glance:** Integrate your Vidaa Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Vidaa.
+> **En resumen:** Integra tu aplicación Vidaa Connected TV (CTV) con AppsFlyer para recibir datos de atribución y eventos para tus campañas en Vidaa.
 
-## About Vidaa CTV attribution
+## Sobre la atribución CTV de Vidaa
 
-The Vidaa OS for streaming runs across all Vidaa TVs.
+El sistema operativo Vidaa para streaming funciona en todos los televisores Vidaa.
 
-CTV apps streaming on Vidaa can integrate with AppsFlyer via API to receive attribution data and performance measurements about which sources (organic) and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+Las aplicaciones de CTV que se transmiten en Vidaa pueden integrarse con AppsFlyer a través de la API para recibir datos de atribución y mediciones de rendimiento sobre qué fuentes (orgánicas) y campañas impulsan la apertura de la aplicación y los eventos in-app. Los marketers confían en estos insights para medir y optimizar las actividades de marketing.
 
-The Vidaa API integration supports:
+La integración con la API de Vidaa es compatible:
 
-* Vidaa Smart TVs.
-* CTV-to-CTV attribution and event recording. Meaning, attribution and recording on a user's Vidaa device.
+* Smart TV Vidaa.
+* Atribución CTV-to-CTV y grabación de eventos. Significado, atribución y grabación en el dispositivo Vidaa de un usuario.
 
-## Integration procedures
+## Procedimientos de integración
 
-The following table lists the tasks required to integrate your Vidaa CTV app with AppsFlyer. To record your progress, download this <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSFsuk9liZ_z34w3kHMyOFzASh5PBDtdn_HxgMqxAYY0wEt5RxCdrXeyLvteC5Cp-x-6ESwO5YbJ0n-/pub?output=xlsx">spreadsheet</Anchor>.
+La siguiente tabla enumera las tareas necesarias para integrar tu aplicación Vidaa CTV con AppsFlyer. Para registrar tus progresos, descarga esta <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSFsuk9liZ_z34w3kHMyOFzASh5PBDtdn_HxgMqxAYY0wEt5RxCdrXeyLvteC5Cp-x-6ESwO5YbJ0n-/pub?output=xlsx">hoja de cálculo</Anchor>.
 
-| Task | Actions | Who's involved |
+| Tarea | Acciones | Quién debe participar |
 | --- | --- | --- |
-| App setup | <ul><li><Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Create an AppsFlyer account</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/user-management">Add account users with appropriate permissions</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">Add your Vidaa CTV app in AppsFlyer</Anchor></li></ul> | Marketer |
-| API integration with your app (via S2S) | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-4">Integrate the AppsFlyer CTV API</Anchor> into your CTV app with commands to report the following events to AppsFlyer.<ul><li>First opens</li><li>In-app events</li><li>Sessions</li></ul>**Note**:<ul><li>Installs must be reported before in-app events and sessions.</li><li>Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer.</li><li>For the`device_ids` parameter, select the type `vidaaid`.</li></ul>To report owned media engagements, integrate the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">impression engagement API.</Anchor> | App developer |
-| Link setup | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor> | Marketer |
-| Report setup/view data | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor> | Marketer/Data engineer |
+| Configuración de la aplicación | <ul><li><Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Crear una cuenta AppsFlyer</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/user-management">Añadir usuarios de cuenta con los permisos adecuados</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">Añade tu aplicación Vidaa CTV en AppsFlyer</Anchor></li></ul> | Comercializador |
+| Integración API con tu aplicación (a través de S2S) | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-4">Integra la API CTV de AppsFlyer</Anchor> en tu aplicación CTV con comandos para reportar los siguientes eventos a AppsFlyer.<ul><li>Primera apertura</li><li>Eventos in-app</li><li>Sesiones</li></ul>**Nota**:<ul><li>Las instalaciones deben notificarse antes que las sesiones y los eventos in-app.</li><li>Enviar eventos utilizando la API. Indica a tu desarrollador qué eventos debe enviar. Verifica que cuando configures la API, configures y mapees los eventos a enviar a AppsFlyer.</li><li>Para el`device_ids` parámetro, selecciona el tipo `custom`.</li></ul>Para informar sobre el engagement en medios propios, integra la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">API de engagement en impresiones.</Anchor> | Desarrolladores de aplicaciones |
+| Configuración de enlaces | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor> | Comercializador |
+| Configuración de reportes/visualización de datos | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Conoce la disponibilidad de datos en dashboards y reportes</Anchor> | Marketer/Ingeniero de datos |
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Rasgos y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Non-organic sources | Coming soon |
-| Retargeting | Not currently supported |
-| Cost data | Cost data must be sent via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file by email method. |
+| Fuentes no orgánicas | En breve |
+| Reorientación | Actualmente no es compatible |
+| Datos de costos | Los datos de costos deben enviarse a través de <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Importación de costos</Anchor> utilizando el método de upload de archivos por correo electrónico. |
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <span id="overview"></span><Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">CTV, PC, and console platform overview</Anchor>
+> * <span id="overview"></span><Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Resumen general de la plataforma de CTV, PC y consola</Anchor>
 
-<div data-zendesk-anchors="01H7Z180QRR77E1GBQ0P0RHVN5=about-vidaa-ctv-attribution 01H7Z180QR6HT4R3N9DYSM8WB9=integration-procedures 01H7Z180QR0QQ0HK3N5N1G4ENZ=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />
+<div data-zendesk-anchors="about-vidaa-ctv-attribution=sobre-la-atribuci%C3%B3n-ctv-de-vidaa 01H7Z180QRR77E1GBQ0P0RHVN5=sobre-la-atribuci%C3%B3n-ctv-de-vidaa integration-procedures=procedimientos-de-integraci%C3%B3n 01H7Z180QR6HT4R3N9DYSM8WB9=procedimientos-de-integraci%C3%B3n 01H7Z180QR0QQ0HK3N5N1G4ENZ=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=consulta-tambi%C3%A9n" />

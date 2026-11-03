@@ -1,5 +1,5 @@
 ---
-title: WeChat Ads campaign configuration
+title: Configuración de la campaña de anuncios de WeChat
 metadata:
   keywords:
     - Wechat Ads
@@ -14,200 +14,199 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-06-18T06:41:29Z'
-  edited_at: '2026-09-15T10:36:12Z'
+  edited_at: '2026-09-17T00:26:31Z'
   id: 115003044106
-  locale: en-us
+  locale: es
   section: China domestic market ad network configuration
   section_id: 6552066355601
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115003044106-WeChat-Ads-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/115003044106
 ---
-> **At a glance:** Learn how to measure your campaigns with WeChat on AppsFlyer.
+> **Resumen:** Aprende a medir tus campañas con WeChat en AppsFlyer.
 
-## Introduction
+## Introducción
 
-WeChat, one of AppsFlyer's integrated partners, is a Chinese multi-purpose messaging, social media and mobile payment app developed by Tencent.
+WeChat, uno de los Partners integrados de AppsFlyer, es una app china multipropósito de mensajería, redes sociales y pagos móviles desarrollada por Tencent.
 
-To configure your campaigns with WeChat, follow the steps below.
+Para configurar tus campañas con WeChat, sigue los pasos a continuación.
 
-## Setting up your campaign on WeChat
+## Configurar tu campaña en WeChat
 
-Before you proceed with WeChat integration on AppsFlyer, configure the campaign on WeChat.
+Antes de continuar con la integración de WeChat en AppsFlyer, configura la campaña en WeChat.
 
-On WeChat, do the following:
+En WeChat, haz lo siguiente:
 
-1. Fill in and verify Tencent key
-2. Choose the conversion type from the list:
+1. Rellena y verifica la clave de Tencent
+2. Elige el tipo de conversión de la lista:
 
-   * Install
-   * Register
-   * Purchase
-   * Add to cart
+   * Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>.
+   * Registrarse.
+   * Compra
+   * Agregar al carrito
 
-   Please note that WeChat allows only one conversion target per app.
-3. Enter AppsFlyer’s [click attribution URL](#attribution-link-tab)
+   Ten en cuenta que WeChat solo permite un objetivo de conversión por aplicación.
+3. Introduce la [URL de atribución de clics](#attribution-link-tab) de AppsFlyer
 
 ![wechat-configuration.png](https://files.readme.io/228ee10ef3dc113ae8af8de0f283b144206db1857f6d1f9169355f294155b8f8-50900431174033.png)
 
-Once you have entered this info, confirm it by clicking the highlighted button. In the next step, you receive the *encrypt \_key* and the *sign\_key*:
+Cuando hayas introducido esta información, confírmala haciendo clic en el botón resaltado. En el siguiente paso, recibirás la *encrypt \_key* y la *sign\_key*:
 
 ![wechat-keys.png](https://files.readme.io/cd7a2406ae9981eaabb4089813c9a1b847f0e6f750b9c0c0a0ac5e726dfe44be-50900431177361.png)
 
-Copy the keys and use them when you configure the campaign on AppsFlyer.
+Copia las claves y úsalas al configurar la campaña en AppsFlyer.
 
-### Setting up wechat campaign as an agency
+### Configurar una campaña de WeChat como agencia
 
-Agencies have different account types on WeChat. Depending on the account type, some agencies can and some cannot create conversion targets.
+Las agencias tienen distintos tipos de cuenta en WeChat. Según el tipo de cuenta, algunas agencias pueden crear objetivos de conversión y otras no.
 
-If your account allows you to create a conversion target, you can proceed following the instructions above.
+Si tu cuenta te permite crear un objetivo de conversión, puedes continuar siguiendo las instrucciones anteriores.
 
-If you’re not allowed to create a conversion target, you can see on WeChat a target created by another account that manages the same app. In this case, ask the advertiser to provide you with the *encrypt \_key* and the *sign\_key* and use them to configure the campaign on AppsFlyer.
+Si no tienes permiso para crear un objetivo de conversión, en WeChat puedes ver un objetivo creado por otra cuenta que gestiona la misma aplicación. En este caso, pide al anunciante que te proporcione la *encrypt \_key* y la *sign\_key* y úsalas para configurar la campaña en AppsFlyer.
 
-## Setting up wechat on AppsFlyer
+## Configurar WeChat en AppsFlyer
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de partners > Marketplace** .  
+   (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de partners > Integraciones activas** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota importante:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Más información</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación.
 
-WeChat's configuration window includes 4 tabs: Integration, Attribution link, Data enrichment and Permissions. Click on the items below to read about the tabs setup.
+La ventana de configuración de WeChat incluye 4 pestañas: Integración, Enlace de atribución, Enriquecimiento de datos y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> As an ALL-Installs network, Wechat prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select **Events attributed to any partner** to send all install postbacks to WeChat.
+> Como red de TODAS las instalaciones, WeChat prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluida la orgánica. Se recomienda seleccionar **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a WeChat.
 
-### General settings
+### Configuración general
 
-**Partner ID**
+**ID de socio**
 
-Wechat connects with AppsFlyer via three unique parameters:
+WeChat se conecta con AppsFlyer mediante tres parámetros únicos:
 
-1. Sign ID
-2. WeChat App ID
-3. Encrypt Key
+1. ID de Sign
+2. ID de la App de WeChat
+3. Clave de cifrado
 
-If you don't already have the Sign ID, WeChat App ID and Encrypt Key you must obtain it from WeChat to continue with the integration.
+Si aún no tienes el ID de firma, el ID de aplicación de WeChat y la clave de cifrado, debes obtenerlos de WeChat para continuar con la integración.
 
 <Image alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to WeChat following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a WeChat después de las instalaciones y re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 ![wechat-default-postbacks.png](https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png)
 
-Select **Only events** **attributed to this partner** for events coming only from users attributed to Wechat.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to WeChat.
+Selecciona **Solo eventos** **atribuidos a este partner** para eventos que provengan únicamente de usuarios atribuidos a WeChat.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para que toda tu base de usuarios esté disponible para reportarse a WeChat.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section you can map your AppsFlyer events with WeChat via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer a WeChat mediante postbacks.
 
 ![wechat_in_app_event_postbacks.png](https://files.readme.io/cd6234df4809b27044e361ad8835d4ae92100c491e0aa7c8f003336cdf2ad49d-50900431180561.png)
 
-1. Enter the Encrypt Key again.
-2. Enter the Sign ID
-3. Enter the WeChat App ID
-4. Toggle In-App Event Postbacks to ON
-5. Select the Sending Option for all SDK defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-6. Click **Add Event** to add an SDK Event to the list
-7. Complete the following parameters:
+1. Introduce de nuevo la clave de cifrado.
+2. Introduce el ID de firma
+3. Ingresa el ID de la App de WeChat
+4. Activa los postbacks de eventos in-app.
+5. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+6. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+7. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on WeChat's side.  <br />Obtain the corresponding Event ID from Wechat and set in the text field. |
-| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento, tal como se define del lado de WeChat.  <br />Obtén el ID de evento correspondiente de WeChat e introdúcelo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: AppsFlyer envía al partner todos los parámetros del evento in-app enriquecido, excepto el parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el valor de ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to WeChat for attributing WeChat's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a WeChat para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de WeChat. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with WeChat.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific WeChat campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns WeChat.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña**: agrégala para comparar diferentes campañas en ejecución con WeChat.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios**: define nombres de conjuntos de anuncios para comparar diferentes conjuntos de anuncios dentro de campañas específicas de WeChat.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio** - define los nombres de los conjuntos de anuncios para comparar diferentes creatividades dentro de conjuntos de anuncios específicos, dentro de campañas específicas de WeChat.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** e **ID de subsitio** - configura el parámetro de ID de sitio para atribuir las instalaciones a publishers específicos. Si existen muchos publishers, te recomendamos limitar la cantidad de ID de sitio usados y utilizar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">superar las limitaciones del ID de sitio</Anchor>.  
+  **Parámetros de enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor**: utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+  **Parámetros de enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/28112ce5f9706ffc07d69b233f2b6b4756fda36cb4e8438ab6c9cd03e3a39c59-50900431181841.png)
+![parámetros-de-enlace-de-atribución.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to WeChat.
+Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a WeChat.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
 [![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to WeChat to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a WeChat para que se active cuando los leads hagan clic en el anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Enable Tencent cost integration to receive cost data for WeChat.
+Activa la integración de costos de Tencent para recibir datos de costo de WeChat.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue integration is not available for this partner.
+La integración de ingresos por publicidad no está disponible para este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-No permission configuration available for this partner.
+No hay ninguna configuración de permisos disponible para este partner.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW6Z36NGCWC0R6EQX49S34J=introduction h_01HKW6Z36NTSGCDQM553YMHHDH=setting-up-your-campaign-on-wechat h_01HKW6Z36N8S8KSBNMR8A54RRN=setting-up-wechat-campaign-as-an-agency h_01HKW6Z36N3JSYEWJZH74M5WWJ=setting-up-wechat-on-appsflyer h_01HKW6Z36PDGTT3EERY8F4VA79=integration-tab h_01HKW6Z36P0EQF829NW3GDXKEN=activate-partner h_01HKW6Z36P806MHV6N3D1N9HW3=note h_01HKW6Z36P51EG4BW7WA3JGSKN=general-settings h_01HKW6Z36P3D4EPKC6ZZK94YVF=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6Z36PA90WEJMFH7BZMD72=in-app-events-settings h_01HKW6Z36PRBT2X6F5BHYW06E1=attribution-link-tab h_01HKW6Z36P73H79MVFXQ29K2M6=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6Z36P95C7CT1J6YS5CQN8=click-through-attribution h_01HKW6Z36PEAPM8RAKB0RM9RES=click-attribution-link h_01HKW6Z36PEG0T9WQQRNY19EVG=cost-tab h_01HKW6Z36WE1SDC7KZHCMTPA0T=ad-revenue-tab h_01HKW6Z36W6QKR583X4Q4BNBZ4=permissions-tab" />
+<div data-zendesk-anchors="introduction=introducci%C3%B3n h_01HKW6Z36NGCWC0R6EQX49S34J=introducci%C3%B3n setting-up-your-campaign-on-wechat=configurar-tu-campa%C3%B1a-en-wechat h_01HKW6Z36NTSGCDQM553YMHHDH=configurar-tu-campa%C3%B1a-en-wechat setting-up-wechat-campaign-as-an-agency=configurar-una-campa%C3%B1a-de-wechat-como-agencia h_01HKW6Z36N8S8KSBNMR8A54RRN=configurar-una-campa%C3%B1a-de-wechat-como-agencia setting-up-wechat-on-appsflyer=configurar-wechat-en-appsflyer h_01HKW6Z36N3JSYEWJZH74M5WWJ=configurar-wechat-en-appsflyer h_01HKW6Z36PDGTT3EERY8F4VA79=integration-tab activate-partner=activar-socio h_01HKW6Z36P0EQF829NW3GDXKEN=activar-socio h_01HKW6Z36P806MHV6N3D1N9HW3=nota general-settings=configuraci%C3%B3n-general h_01HKW6Z36P51EG4BW7WA3JGSKN=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HKW6Z36P3D4EPKC6ZZK94YVF=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HKW6Z36PA90WEJMFH7BZMD72=configuraci%C3%B3n-de-eventos-in-app h_01HKW6Z36PRBT2X6F5BHYW06E1=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HKW6Z36P73H79MVFXQ29K2M6=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HKW6Z36P95C7CT1J6YS5CQN8=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKW6Z36PEAPM8RAKB0RM9RES=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKW6Z36PEG0T9WQQRNY19EVG=cost-tab h_01HKW6Z36WE1SDC7KZHCMTPA0T=ad-revenue-tab h_01HKW6Z36W6QKR583X4Q4BNBZ4=permissions-tab" />

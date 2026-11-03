@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Upgrading the AppsFlyer S2S API'
+title: 'Boletín: Actualización de la API S2S de AppsFlyer'
 metadata:
   keywords:
     - Marketers
@@ -13,20 +13,19 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-11-28T16:26:35Z'
-  edited_at: '2024-04-14T07:07:17Z'
+  edited_at: '2026-10-20T03:55:51Z'
   id: 20509378973457
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/20509378973457-Bulletin-Upgrading-the-AppsFlyer-S2S-API
+  url: https://support.appsflyer.com/hc/es/articles/20509378973457
 ---
-| **What's new** | To provide a more secure experience for API usage and to reduce fraud, AppsFlyer has upgraded its server-to-server (S2S) API for in-app events. The existing endpoint will be deprecated in the future and we recommend to start planning the switch.<br /><br />AppsFlyer is working on a solution for third-party tech partners that send data on your behalf. |
+| **¿Qué hay de nuevo?** | Para ofrecer una experiencia más segura en el uso de la API y reducir el fraude, AppsFlyer ha actualizado su API Server-to-Server (S2S) para eventos in-app. El endpoint actual quedará obsoleto en el futuro y recomendamos empezar a planificar el cambio.<br /><br />AppsFlyer está trabajando en una solución para partners tecnológicos externos que envían datos en tu nombre. |
 | --- | --- |
-| **Effective date** | December 12, 2023 |
-| **Prerequisites** | Only an admin can update the new S2S API. |
-| **Action required** | Update the following fields for sending S2S in-app events to AppsFlyer:<ol><li>Go to the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_s2s_inappevent">POST S2S in-app event API</Anchor>.</li><li>Replace the URL:<br />From <Anchor target="_blank" href="https://api2.appsflyer.com/inappevent">https://api2.appsflyer.com/inappevent</Anchor><br />To <Anchor target="_blank" href="https://api3.appsflyer.com/inappevent">https://api3.appsflyer.com/inappevent</Anchor></li><li>Update the Authorization Header: Replace the Dev key with the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">**new S2S key**</Anchor>.</li><li>If you are sending S2S events to AppsFlyer via an integrated partner (such as Segment, Tealium, Amplitude, mParticle, RevenueCat, or others) contact them to learn how to update the integration.</li></ol> |
-| **Recommended action** | **Before updating the new API in all your production calls:**<br /><br />We highly recommend sending a number of test in-app events to the new endpoint and **making sure no error is returned**. |
-| **What you should know** | If you have any concerns regarding fraud events being sent to the old endpoint after you've updated the new API, please turn to your CSM or AppsFlyer support. Make sure to include the relevant app IDs.<br /><br />After completing the production migration, AppsFlyer will block the old API endpoint for these apps so any fraud calls will be blocked. |
-| **Who needs to update the new API?** | Only advertisers must update the new S2S API for in-app events. |
-| **About the S2S API** | Learn more about <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">S2S and API tokens</Anchor>. |
+| **Fecha de entrada en vigor** | 12 de diciembre de 2023 |
+| **Prerrequisitos** | Solo un administrador puede actualizar la nueva API S2S. |
+| **Acción requerida** | Actualiza los siguientes campos para enviar eventos in-app por S2S a AppsFlyer:<ol><li>Ve a la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_s2s_inappevent">API POST S2S de evento in-app</Anchor>.</li><li>Sustituye la URL:<br />De <Anchor target="_blank" href="https://api2.appsflyer.com/inappevent">https://api2.appsflyer.com/inappevent</Anchor><br />Por <Anchor target="_blank" href="https://api3.appsflyer.com/inappevent">https://api3.appsflyer.com/inappevent</Anchor></li><li>Actualiza el encabezado Authorization: sustituye la Dev key por la <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">**nueva clave S2S**</Anchor>.</li><li>Si envías eventos S2S a AppsFlyer a través de un partner integrado (como Segment, Tealium, Amplitude, mParticle, RevenueCat u otros), ponte en contacto con él para saber cómo actualizar la integración.</li></ol> |
+| **Medidas recomendadas:** | **Antes de actualizar la nueva API en todas tus llamadas de producción:**<br /><br />Recomendamos encarecidamente enviar varios eventos in-app de prueba al nuevo endpoint y **asegurarte de que no se devuelve ningún error**. |
+| **Lo que debes saber** | Si te preocupa que se estén enviando eventos de fraude al endpoint antiguo después de haber actualizado la nueva API, ponte en contacto con tu CSM o con el soporte de AppsFlyer. Asegúrate de incluir los App ID correspondientes.<br /><br />Cuando completes la migración a producción, AppsFlyer bloqueará el endpoint de la API antigua para estas aplicaciones, por lo que también se bloquearán todas las llamadas de fraude. |
+| **¿Quién debe actualizar la nueva API?** | Solo los anunciantes deben actualizar la nueva API S2S para eventos in-app. |
+| **Acerca de la API S2S** | Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">S2S y tokens de API</Anchor>. |

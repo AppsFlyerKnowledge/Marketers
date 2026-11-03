@@ -1,5 +1,5 @@
 ---
-title: Aggregated and analytics reporting overview
+title: Descripción general de reportes agregados y analíticos
 metadata:
   keywords:
     - Agencies
@@ -16,181 +16,180 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2020-02-04T09:38:14Z'
-  edited_at: '2026-09-07T09:56:56Z'
+  edited_at: '2026-09-09T00:02:22Z'
   id: 360005437257
-  locale: en-us
+  locale: es
   section: Analytics and aggregate reporting/APIs
   section_id: 6550976670225
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360005437257-Aggregated-and-analytics-reporting-overview
+  url: https://support.appsflyer.com/hc/es/articles/360005437257
 ---
-> **At a glance:** Description and comparison of aggregated and analytics attribution reports, tools, and APIs available.
+> **At a glance:** Descripción y comparación de reportes de atribución agregados y analíticos, herramientas y API disponibles.
 
-## Aggregated and analytics performance reporting overview
+## Generación de reportes de rendimiento agregados y analíticos: herramientas y reportes
 
-Aggregated analytic tools in the platform provide advertisers with metrics enabling them to assess the performance of their apps, campaigns, and users.
+Las herramientas de agregado y análisis de la plataforma proporcionan a los anunciantes métricas que les permiten evaluar el rendimiento de sus aplicaciones, campañas y usuarios.
 
-The tools differ in the way data is presented. Some report lifetime value (LTV) metrics for campaigns, while others, like Cohort, are used to analyze user engagement over time.
+Las herramientas difieren en la forma en que se presentan los datos. Algunos reportan métricas de valor de vida útil (LTV) de las campañas, mientras que otros, como Cohort, se usan para analizar el engagement de los usuarios a lo largo del tiempo.
 
-The tools detailed in this article relate to data that can be exported from the platform. Use the tool comparison table that follows to understand the main function and differences between the tools.
+Las herramientas detalladas en este artículo se refieren a los datos que se pueden exportar desde la plataforma. Usa la tabla de comparación de herramientas a continuación para comprender la función principal y las diferencias entre las herramientas.
 
-<Accordion title="Reporting method comparison">
+<Accordion title="Comparación de métodos de reporte">
 
-The following table describes the different reporting methods and dashboards to get aggregate data.
+En la siguiente tabla se describen los diferentes métodos de generación de reportes y paneles de control para obtener datos agregados.
 
-[**Download the table as a CSV file**](https://docs.google.com/spreadsheets/d/e/2PACX-1vSICicxcvD0996RT59fTLDJvdGUKxqPqr47f5SMD8BmsbZtrWIoxRxJEo7tAXTBBmnIbiH097VtK6L9/pub?output=xlsx) **to see additional fields that explain various specs and limitations to help you compare and contrast the different reporting methods.**
+[**Descarga la tabla como un archivo CSV**](https://docs.google.com/spreadsheets/d/e/2PACX-1vSICicxcvD0996RT59fTLDJvdGUKxqPqr47f5SMD8BmsbZtrWIoxRxJEo7tAXTBBmnIbiH097VtK6L9/pub?output=xlsx) **para ver campos adicionales que explican diversas especificaciones y limitaciones para ayudarte a comparar y contrastar los diferentes métodos de reporte.**
 
-The additional spec fields in the downloadable CSV file include:
+Los campos de especificación adicionales en el archivo CSV descargable incluyen:
 
-* <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support">Data freshness</Anchor>: The period of time between the event occurrence and data becoming available via the reporting method.
-* <Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV/activity</Anchor>: Whether data is LTV or activity.
-* <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Retargeting</Anchor>: Whether retargeting (re-engagement and re-attribution) data is displayed.
-* <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#attributed-to-the-first-install">Re-install events attribution to first install</Anchor>: Whether events after a reinstall can be attributed to the original install.
-* <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#date-and-timezone-principles">Timezone</Anchor>: What timezone (UTC or app-selected) is used to display data.
-* <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#unattributed-organic-inapps">Unattributed events</Anchor>: Whether events that aren't attributed after a re-install are displayed.
-* <Anchor target="_blank" href="/marketers/docs/campaign-name-changes?">Campaign name changes</Anchor>: Whether you can change campaign names without creating duplicate displays.
+* <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support">Actualización de datos</Anchor>: período de tiempo entre la ocurrencia del evento y la disponibilidad de los datos a través del método de reporte.
+* <Anchor target="_blank" href="/marketers/es/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV/actividad</Anchor>: si los datos son LTV o de actividad.
+* <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">Retargeting</Anchor>: si se muestran los datos de retargeting (re-engagement y reatribución).
+* <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#attributed-to-the-first-install">Atribución de eventos de reinstalación a la primera instalación</Anchor>: si los eventos después de una reinstalación se pueden atribuir a la instalación original.
+* <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#date-and-timezone-principles">Zona horaria</Anchor>: qué zona horaria (UTC o seleccionada por la aplicación) se utiliza para mostrar los datos.
+* <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#unattributed-organic-inapps">Eventos sin atribuir</Anchor>: si se muestran los eventos que no se atribuyen después de una reinstalación.
+* <Anchor target="_blank" href="/marketers/es/docs/campaign-name-changes?">Cambios en el nombre de la campaña</Anchor>: si puedes cambiar los nombres de las campañas sin crear pantallas duplicadas.
 
-| Reporting method | Description |
+| Método de reporte | Descripción |
 | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>  <br />(Premium feature) | Selected LTV, activity, retention, cohort, and Protect360 campaign performance KPIs by API, in CSV or JSON format. |
-| <Anchor target="_blank" href="/marketers/docs/pull-api-aggregate-data">Pull API - aggregate reports</Anchor> | Lifetime value (LTV) of users who install, re-engage, or re-attribute in CSV files. UA and retargeting data is separate; there isn't a unified option. |
-| <Anchor target="_blank" href="/marketers/docs/aggregated-data-export-page">Export data page - aggregate reports</Anchor> | Lifetime value (LTV) of users who install, re-engage, or re-attribute in CSV files. UA and retargeting data is separate; there isn't a unified option. |
-| <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN overview</Anchor> | Metrics reported via iOS SKAN postbacks and additional data points during initial user measurement windows. |
-| <Anchor target="_blank" href="/marketers/docs/skan-aggregated-performance-report-api">SKAN Aggregate data APIs</Anchor> | Metrics reported via iOS SKAN postbacks and additional data points during initial user measurement windows. |
-| <Anchor target="_blank" href="/marketers/docs/protect360-dashboard">Protect360 dashboard</Anchor> | Metrics and insights relating to fraudulent traffic.  <br />LTV-based data for installs, and activity-based data for in-app events. |
-| <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort dashboard</Anchor> | Various cohorted LTV user metrics for each day post-install. |
-| <Anchor target="_blank" href="/marketers/docs/cohort-api">Cohort API</Anchor>  <br />(Premium feature) | Various cohorted LTV user metrics for each day post-install. Also includes event-level activity by event\_date for users whose conversion occurred within 365 days. |
-| <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort Data Locker</Anchor>  <br />(Premium feature) | Various cohorted LTV user metrics for each day post-install. Also includes event-level activity by event\_date for users whose conversion occurred within 1,095 days. |
-| <Anchor target="_blank" href="/marketers/docs/advanced-aggregated-reports-in-data-locker">Advanced aggregated reports</Anchor>  <br />(Premium feature) | Versioned aggregated data reports. LTV. |
-| <Anchor target="_blank" href="/marketers/docs/custom-dashboards">Custom dashboard</Anchor> | Customized dashboard with LTV user acquisition metrics. |
-| <Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot reports</Anchor>  <br />(Premium feature) | Selected LTV, activity, retention, and Protect360 campaign performance KPIs, in the dashboard or via CSV. |
-| <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">Cost ETL</Anchor> | Campaign cost data with the best granularity available per media source. |
-| Usage report | A combination of all usage-based features in AppsFlyer that impact contract obligations during billing cycles timeframes. |
-| <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide">Creative Optimization dashboard</Anchor> | LTV performance data about creatives. Meaning the metrics are for conversions that occurred from creatives during the selected date range. |
+| <Anchor target="_blank" href="/marketers/es/docs/master-api-user-acquisition-metrics-via-api">API maestra</Anchor>  <br />(función Premium) | LTV seleccionados, actividad, retención, cohorte y KPI de rendimiento de la campaña de Protect360 por API, en formato CSV o JSON. |
+| <Anchor target="_blank" href="/marketers/es/docs/pull-api-aggregate-data">Pull API: reportes agregados</Anchor> | Valor de por vida (LTV) de los usuarios que instalan, realizan re-engagement y/o se reatribuyen en archivos CSV. Los datos de UA y retargeting están separados; no hay una opción unificada. |
+| <Anchor target="_blank" href="/marketers/es/docs/aggregated-data-export-page">Página de datos exportados: informes de estadísticas agregadas</Anchor> | Valor de por vida (LTV) de los usuarios que instalan, realizan re-engagement y/o se reatribuyen en archivos CSV. Los datos de UA y retargeting están separados; no hay una opción unificada. |
+| <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">Resumen de SKAN</Anchor> | Métricas reportadas a través de postbacks SKAN de iOS y puntos de datos adicionales durante las ventanas iniciales de medición del usuario. |
+| <Anchor target="_blank" href="/marketers/es/docs/skan-aggregated-performance-report-api">API de datos agregados de SKAN</Anchor> | Métricas reportadas a través de postbacks SKAN de iOS y puntos de datos adicionales durante las ventanas iniciales de medición del usuario. |
+| <Anchor target="_blank" href="/marketers/es/docs/protect360-dashboard">Panel de control de Protect360</Anchor> | Métricas e insights relacionados con el tráfico fraudulento.  <br />Datos basados en LTV para las aplicaciones y datos basados en actividades para eventos in-app. |
+| <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard">Panel de control de cohorte</Anchor> | Varias métricas de usuario para cada día después de la instalación. |
+| <Anchor target="_blank" href="/marketers/es/docs/cohort-api">API de cohorte</Anchor>  <br />(función Premium) | Varias métricas de usuario para cada día después de la instalación. También incluye actividad a nivel de evento por event\_date para los usuarios cuya conversión se produjo en un plazo de 365 días. |
+| <Anchor target="_blank" href="/marketers/es/docs/cohort-analytics-via-data-locker">Data Locker de cohorte</Anchor>  <br />(función Premium) | Varias métricas de usuario para cada día después de la instalación. También incluye actividad a nivel de evento por event\_date para los usuarios cuya conversión se produjo en un plazo de 1.095 días. |
+| Son <Anchor target="_blank" href="/marketers/es/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">valores de vida útil (LTV)</Anchor>, de modo que el intervalo de fechas del reporte se relaciona con la fecha de atribución que se define de la siguiente manera: | Reportes de datos agregados versionados. Característica. |
+| <Anchor target="_blank" href="/marketers/es/docs/custom-dashboards">Panel de control personalizado</Anchor> | Panel de control personalizado con métricas de adquisición de usuarios de LTV. |
+| <Anchor target="_blank" href="/marketers/es/docs/pivot-table-user-metrics">Reportes de pivote</Anchor>  <br />(función Premium) | LTV seleccionados, actividad, retención y KPI de rendimiento de la campaña de Protect360, en el panel de control o a través de CSV. |
+| <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports">ETL de costos</Anchor> | Datos de costos de campaña con la mejor granularidad disponible por fuente de medios. |
+| Reportes de uso | Una combinación de todas las funciones basadas en el uso de AppsFlyer que afectan las obligaciones contractuales durante los plazos de los ciclos de facturación. |
+| <Anchor target="_blank" href="/marketers/es/docs/creative-optimization-guide">Dashboard de Optimización creativa</Anchor> | Datos de rendimiento de LTV sobre los creativos. Esto significa que las métricas corresponden a conversiones que se produjeron a partir de creatividades durante el intervalo de fechas seleccionado. |
 
 </Accordion>
 
-<Accordion title="Cohort data delivery methods">
+<Accordion title="Métodos de entrega de datos de cohortes">
 
-Cohort is available via a number of different delivery methods: <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort dashboard</Anchor>, <Anchor target="_blank" href="/marketers/docs/cohort-api">Cohort API</Anchor>, and <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort analytics via Data Locker</Anchor>. The table that follows lists the differences.
+Cohort está disponible a través de varios métodos de entrega: <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard">dashboard de Cohort</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/cohort-api">API de Cohort</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/cohort-analytics-via-data-locker">análisis de Cohort a través de Data Locker</Anchor>. La tabla que sigue enumera las diferencias.
 
-| Characteristic | Cohort analytics in Data Locker | Advanced aggregated reports in Data Locker | Cohort Dashboard | Cohort API |
+| Característica | Análisis de cohortes en Data Locker | [Beta cerrada] Reportes agregados avanzados en Data Locker | Panel de control de la cohorte | API de cohortes |
 | --- | --- | --- | --- | --- |
-| Multi or single app | Multi. Data is grouped per app in a single file or segregated into separate files per app. | Multi. Data is grouped per app in a single file or segregated into separate files per app. | Multi. Combined performance or grouped by app options. | Single |
-| Groupings | Full campaign hierarchy and event names. Approx. 20 groupings | Full campaign hierarchy and event names. Approx. 20 groupings | 4 groupings | 7 groupings |
-| Metrics available | All metrics | All metrics | 1 selectable metric and 3 fixed metrics per view | 1 selectable metric and 3 fixed metrics per call |
-| Days post-attribution available (cohort days) | 365 | 1095 | 180 | 180 |
-| Data export limitations | Entire data set is available | Entire data set is available | Manual download and settings | Rate and response size limited |
-| Customizable request | No | No | Yes | Yes |
+| Aplicación múltiple o única | Múltiple. Los datos se agrupan por aplicación en un solo archivo o se dividen en archivos separados por aplicación. | Múltiple. Rendimiento combinado o agrupado por opciones de aplicación. | Múltiple. Rendimiento combinado o agrupado por opciones de aplicación. | Única |
+| Agrupaciones | Jerarquía de campaña completa y nombres de eventos. 20 agrupaciones | Jerarquía de campaña completa y nombres de eventos. 20 agrupaciones | 4 agrupaciones | 7 agrupaciones |
+| Métricas disponibles | Todas las métricas | Varias métricas de usuario para cada día después de la instalación. | 1 métrica seleccionable y 4 métricas fijas por vista | 1 métrica seleccionable y 4 métricas fijas por llamada |
+| Días después de la atribución disponibles (días de cohorte) | 365 | 1095 | 180 | 180 |
+| Limitaciones de exportación de datos | Todo el conjunto de datos está disponible | Panel de control general | Descarga manual y configuración | Tasa y tamaño de respuesta limitado |
+| Solicitud personalizable | No | No | Sí | Sí |
 
-Differences between cohort data delivery methods
-
-</Accordion>
-
-### User journey reports
-
-The reports described are available via the Export Data page or by using Pull API aggregate.
-
-They are <Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">Lifetime value (LTV)</Anchor> reports. Therefore:
-
-* The earliest reporting date available is the first app attribution date.
-* The reporting date range relates to the attribution date:
-  * Install date for UA and Protect360 reports.
-  * Re-attribution or re-engagement date in the case of retargeting reports.
-
-<Accordion title="UA LTV aggregate data reports containing non-organic and organic users">
-
-<table><thead><tr><th>Report name</th><th>Grouped by</th></tr></thead><tbody><tr><td>Partners (media sources)</td><td>Agency, media source, campaign</td></tr><tr><td>Partners by date</td><td>Date, agency, media source, campaign</td></tr><tr><td>Daily activity</td><td>Date, agency, media source, campaign</td></tr><tr><td>Geo</td><td>Country, agency, media source, campaign</td></tr><tr><td>Geo by date</td><td>Date, country, agency, media source, campaign</td></tr><tr><td>View-through attribution (VTA) KPIs</td><td><a href="./pull-api-aggregate-data" target="_blank">VTA reports are available by Pull API</a></td></tr><tr><td colspan="2"><strong>Note</strong>: If Meta ads is the <em>media source</em> selected then additional columns are included: Adgroup ID, Adgroup name, Adset ID, Adset name</td></tr></tbody></table>
-
-Date fields in the CSV files have the format yyyy-mm-dd. When you open a CSV file in Excel, date fields are formatted using your computer's date and time settings. Be sure to select the appropriate date display in <Anchor target="_blank" href="https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows">Excel.</Anchor>
-
-#### Examples of aggregate reports
-
-[Report examples in a spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
-
-#### Fields in UA aggregate reports
-
-<table><thead><tr><th rowspan="2">Field</th><th rowspan="2">Description</th><th colspan="5">Report name</th></tr><tr><th>Partner (media source)</th><th>Partner by date</th><th>Daily</th><th>Geo</th><th>Geo by date</th></tr></thead><tbody><tr><td>Country</td><td>Install country</td><td></td><td></td><td></td><td>✓</td><td>✓</td></tr><tr><td>Date</td><td>Attribution date</td><td></td><td>✓</td><td></td><td></td><td>✓</td></tr><tr><td>Agency/PMD (af_prt)</td><td>Agency/partner name</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Media Source (pid)</td><td>Media source bringing the user (pid=media source)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Campaign</td><td>Campaign name (c= campaign name)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Campaign ID</td><td>Meta campaign ID</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td></tr><tr><td>Adgroup ID</td><td>Meta ad group ID or Ad ID</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td></tr><tr><td>Adgroup Name</td><td>Meta ad group</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td></tr><tr><td>Adset ID</td><td>Meta adset ID</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td></tr><tr><td>Adset Name</td><td>Meta adset name</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td></tr><tr><td>ARPU</td><td>Average revenue per user</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>Average eCPI</td><td>Average eCPI</td><td></td><td>✓</td><td></td><td></td><td></td></tr><tr><td>Clicks</td><td>Number of clicks</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Conversion Rate</td><td>Number of installs/number of clicks</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>CTR</td><td>Click-through rate</td><td></td><td>✓</td><td>✓</td><td></td><td></td></tr><tr><td>`{your event name}(Unique users)</td><td>Number of unique users who performed the event</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>{your event name} (Event counter)</td><td>Event counter</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>{your event name}` (Sales in XXX)</td><td>Event sales in XXX where XXX is the app-selected currency</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>Impressions</td><td>Number of impressions</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>Installs</td><td>Number of installs</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Loyal Users</td><td>[default] User who opens the app more than 3 times</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Loyal Users/Installs</td><td>Loyal users rate</td><td>✓</td><td>✓</td><td></td><td></td><td></td></tr><tr><td>ROI</td><td>Return on investment</td><td>✓</td><td>✓</td><td></td><td></td><td></td></tr><tr><td>Sessions</td><td><ul><li>Number of non-organic app opens</li><li>Organic and non-organic sessions are available in Cohort analytics</li></ul></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Total Cost</td><td>-</td><td>✓</td><td>✓</td><td></td><td></td><td></td></tr><tr><td>Total revenue</td><td>Total revenue generated from the media source and campaign</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td colspan="7"><strong>Note:</strong> Columns showing "Meta ads only" are included when selecting Meta ads as the only media source.</td></tr></tbody></table>
+Diferencias entre los tipos de cohorte
 
 </Accordion>
 
-<Accordion title="Retargeting aggregate data reports">
+### Reportes de trayectoria del usuario
 
-Retargeting reports consist of users who engaged with a <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#retargeting-reports-and-raw-data">retargeting campaign</Anchor> and performed a re-engagement or re-attribution.
+Los reportes descritos están disponibles a través de la página Datos exportados o mediante el uso de datos agregados de Pull API.
 
-In retargeting reports, there is no distinction between organic and non-organic users.
+Son reportes de <Anchor target="_blank" href="/marketers/es/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">valor de vida útil (LTV)</Anchor>. Por lo tanto:
 
-To get retargeting reports via Pull API, append the *&reattr=true* parameter to performance reports URIs.
+* La primera fecha de reporte disponible es la primera fecha de instalación de la aplicación.
+* El rango de fechas del reporte se refiere a la fecha de atribución:
+  * Fecha de instalación para reportes de UA y Protect360
+  * Fecha de reatribución o re-engagement en el caso de reportes de retargeting
 
-#### Aggregate LTV retargeting reports
+<Accordion title="Reportes de datos agregados de LTV en la UA que contienen usuarios no orgánicos y orgánicos">
 
-| Report name | Grouped by |
+<table><thead><tr><th>Nombre del reporte</th><th>Agrupado por</th></tr></thead><tbody><tr><td>Partners (fuentes de medios)</td><td>Agencia, fuente de medios, campaña</td></tr><tr><td>Partners por fecha</td><td>Fecha, agencia, fuente de medios, campaña</td></tr><tr><td>Actividad diaria</td><td>Fecha, agencia, fuente de medios, campaña</td></tr><tr><td>Geolocalización</td><td>País, agencia, fuente de medios, campaña</td></tr><tr><td>Geolocalización por fecha</td><td>Fecha, país, agencia, fuente de medios, campaña</td></tr><tr><td>KPI de atribución por impresiones (VTA)</td><td><a href="./pull-api-aggregate-data" target="_blank">Los reportes de VTA están disponibles por Pull API</a></td></tr><tr><td colspan="2"> <strong>Nota</strong>: Si la <em>fuente de medios</em> seleccionada es Meta ads, se incluyen columnas adicionales: ID de grupo de anuncios, nombre del grupo de anuncios, ID del conjunto de anuncios, nombre del conjunto de anuncios</td></tr></tbody></table>
+
+Los campos de fecha en los archivos CSV tienen el formato aaaa-mm-dd. Cuando abres un archivo CSV en Excel, los campos de fecha se formatean según la configuración de fecha y hora de tu computadora. Asegúrate de seleccionar el formato de visualización de fecha adecuado en <Anchor target="_blank" href="https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows">Excel.</Anchor>
+
+#### Ejemplos de reportes agregados
+
+[Ejemplos de reporte en una hoja de cálculo](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
+
+#### Campos en reportes agregados de UA
+
+<table><thead><tr><th rowspan="2">Campo</th><th rowspan="2">Descripción</th><th colspan="5">Nombre del reporte</th></tr><tr><th>Partner (fuente de medios)</th><th>Partner por fecha</th><th>Diario</th><th>Geolocalización</th><th>Geolocalización por fecha</th></tr></thead><tbody><tr><td>País</td><td>País de instalación</td><td></td><td></td><td></td><td>✓</td><td>✓</td></tr><tr><td>Fecha</td><td>Fecha de atribución</td><td></td><td>✓</td><td></td><td></td><td>✓</td></tr><tr><td>Agencia o PMD (af_prt)</td><td>Nombre de agencia o partner</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Fuente de medios (pid)</td><td>Fuente de medios que trae al usuario (pid=fuente de medios)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Campaña</td><td>Nombre de la campaña (c= nombre de la campaña)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>ID de campaña</td><td>ID de campaña de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td></tr><tr><td>ID de grupo de anuncios</td><td>ID de grupo de anuncios de Meta o ID de anuncio</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td></tr><tr><td>Nombre de grupo de anuncios</td><td>Grupo de anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td></tr><tr><td>ID de conjunto de anuncios</td><td>ID del conjunto de anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td></tr><tr><td>Nombre del conjunto de anuncios</td><td>Nombre del conjunto de anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td><td>Solo anuncios de Meta</td></tr><tr><td>OPCIONAL</td><td>ingresos promedio por usuario</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>eCPI promedio</td><td>eCPI promedio</td><td></td><td>✓</td><td></td><td></td><td></td></tr><tr><td>Clics</td><td>Cantidad de clics</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>tasa de conversión</td><td>Cantidad de instalaciones/cantidad de clics</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>CTR</td><td>Tasa de clics</td><td></td><td>✓</td><td>✓</td><td></td><td></td></tr><tr><td>`{your event name} (usuarios únicos)</td><td>Cantidad de usuarios únicos que realizaron el evento</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>{your event name} (contador de eventos)</td><td>Contador de eventos</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>{your event name}` (Ventas en XXX)</td><td>Evento de ventas en XXX donde XXX es la moneda seleccionada por la aplicación</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>Impresiones</td><td>Cantidad de impresiones</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>Instalaciones</td><td>Cantidad de instalaciones</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>usuarios leales</td><td>[predeterminado] Usuario que abre la aplicación más de 3 veces</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Instalaciones/usuarios leales</td><td>Tasa de usuarios leales</td><td>✓</td><td>✓</td><td></td><td></td><td></td></tr><tr><td>ROI (Retorno de la Inversión)</td><td>Retorno de la inversión</td><td>✓</td><td>✓</td><td></td><td></td><td></td></tr><tr><td>Sesiones</td><td><ul><li>Cantidad de aplicaciones no orgánicas abiertas</li><li>Las sesiones orgánicas y no orgánicas están disponibles en el análisis de cohortes</li></ul></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Costo total</td><td>-</td><td>✓</td><td>✓</td><td></td><td></td><td></td></tr><tr><td>Ingresos totales</td><td>Ingresos totales generados por la fuente de medios y la campaña</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td colspan="7"> <strong>Nota:</strong> Las columnas que muestran "Solo anuncios de Meta" se incluyen al seleccionar anuncios de Meta como la única fuente de medios.</td></tr></tbody></table>
+
+</Accordion>
+
+<Accordion title="Reportes de datos agregados de Retargeting">
+
+Los reportes de retargeting consisten en usuarios que se involucraron en una <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide#retargeting-reports-and-raw-data">campaña de retargeting</Anchor> y realizaron un re-engagement o una reatribución.
+
+En los reportes de retargeting, no existe distinción entre los usuarios orgánicos y los no orgánicos.
+
+Para obtener reportes de retargeting a través de Pull API, añade el parámetro *&reattr=true* a los URI de los reportes de rendimiento.
+
+#### Reportes agregados de retargeting de LTV
+
+| Nombre del reporte | Agrupado por |
 | --- | --- |
-| Partners (media sources) | Agency, media source, campaign |
-| Partners by date | Date, agency, media source, campaign |
-| Activity by date | Date, agency, media source, campaign |
-| Country | Country, agency, media source, campaign |
-| Country by date | Date, country, agency, media source, campaign |
+| Partners (fuentes de medios) | Agencia, fuente de medios, campaña |
+| Partners por fecha | Fecha, agencia, fuente de medios, campaña |
+| Actividad por fecha | Fecha, agencia, fuente de medios, campaña |
+| País | País, agencia, fuente de medios, campaña |
+| País por fecha | Fecha, país, agencia, fuente de medios, campaña |
 
-#### Aggregate LTV retargeting reports
+#### Reportes agregados de retargeting de LTV
 
-| Field | Description | Partners | Daily | Partners by date | Geo by date | Geo |
+| Campo | Descripción | Partners | Diario | Partners por fecha | Geolocalización por fecha | Geolocalización |
 | --- | --- | --- | --- | --- | --- | --- |
-| Date | Conversion date | - | - | ✓ | ✓ | - |
-| Country |  | - | ✓ |  | ✓ | ✓ |
-| Agency/PMD (af\_prt) | Agency/partner name | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Media Source (pid) |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Campaign (c) |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Clicks |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Conversions |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Conversion Type | Re-attribution or re-engagement | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Conversion Rate | Conversions/clicks | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Sessions |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Loyal Users |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Loyal Users/Installs |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Total Cost |  | - | - | - | - | - |
-| Average eCPI |  | - | - | - | - | - |
-| Total Revenue |  | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ROI |  | - | - | - | - | - |
-| ARPU |  | ✓ | ✓ | ✓ | - | ✓ |
+| Fecha | Fecha de conversión | - | - | ✓ | ✓ | - |
+| País |  | - | ✓ |  | ✓ | ✓ |
+| Agencia o PMD (af\_prt) | Nombre de agencia o partner | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Fuente de medios (pid) |  | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Campaña (c) |  | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Clics |  | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Conversiones |  | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Tipo de conversión | Reatribución o re-engagement | ✓ | ✓ | ✓ | ✓ | ✓ |
+| tasa de conversión | Conversiones/clics | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Sesiones |  | ✓ | ✓ | ✓ | ✓ | ✓ |
+| usuarios leales |  | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Instalaciones/usuarios leales |  | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Costo total |  | - | - | - | - | - |
+| eCPI promedio |  | - | - | - | - | - |
+| Ingresos totales |  | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ROI (Retorno de la Inversión) |  | - | - | - | - | - |
+| OPCIONAL |  | ✓ | ✓ | ✓ | - | ✓ |
 
 </Accordion>
 
-## Feature reports
+## Reportes de funciones
 
 <Accordion title="SKAdNetwork">
 
-<Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#reporting-options">SKAdNetwork aggregate reports</Anchor>
+<Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#reporting-options">Informes de estadísticas agregadas de SKAdNetwork</Anchor>
 
 </Accordion>
 
-<Accordion title="Protect360—blocked fraud">
+<Accordion title="Protect360: fraude bloqueado">
 
-![Protect360 blocked fraud report example](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
+![Ejemplo de reporte de fraude bloqueado por Protect360](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
 
-Blocked fraud aggregate reports provide details of events blocked by <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor>.
+Los reportes agregados de fraude bloqueado proporcionan detalles de los eventos que <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide">Protect360</Anchor> bloquea.
 
-The reports are available via Pull API. These reports aren't available via the Export Data page.
+Los reportes están disponibles a través de la Pull API. Estos reportes no están disponibles a través de la página de Datos exportados.
 
-The date range relates to the install date.
+El rango de fechas se refiere a la fecha de instalación.
 
-#### Aggregate Protect360 reports available via Pull API
+#### Reportes agregados de Protect360 disponibles a través de Pull API
 
-| Report name |
+| Nombre del reporte |
 | --- |
-| Partners (media sources) |
-| Partners by date |
-| Geo |
-| Geo by date |
-| Partner's campaign report |
+| Partners (fuentes de medios) |
+| Partners por fecha |
+| Geolocalización |
+| Geolocalización por fecha |
+| Reporte de campaña del partner |
 
-**Limitation:** The blocking reason **Bots** displays even in cases where the reason should be **app version** or **missing customer user id**.
+**Limitación:** El motivo de bloqueo **Bots** se muestra incluso en casos en los que el motivo debería ser **versión de la app** o **falta el ID de usuario del cliente**.
 
 </Accordion>
 
-#### See also
+#### Consulta también
 
-* <Anchor target="_blank" href="/marketers/docs/configuring-meta-campaign-management-partners">Meta campaign management partners configuration</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Raw data reporting overview</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/configuring-meta-campaign-management-partners">Configuración de partners de administración de campañas de Meta</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">Información general de los reportes de raw data</Anchor>
 
-<div data-zendesk-anchors="aggregated-and-analytics-performance-reporting%E2%80%94tools-and-reports=aggregated-and-analytics-performance-reporting-overview 01EWA9VQ2HH93525BMK6WN0P6S=aggregated-and-analytics-performance-reporting-overview 01ED4D7W8CVAQ9V2GCEX1G6KD7=user-journey-reports 01ED4D7W8C3ZNBYR3CMHJF3QSE=examples-of-aggregate-reports h_01HDNYFR9KTQ7ZF35C7E7M7AF1=fields-in-ua-aggregate-reports h_01HDNYFR9MSJWCP3JA4M1WXN1H=aggregate-ltv-retargeting-reports aggregate-ltv-retargeting-reports::b2093953=aggregate-ltv-retargeting-reports-1 h_01HDNYFR9MSK9VQQ0Q889Z55TN=aggregate-ltv-retargeting-reports-1 h_01HDNYFR9MYXVZ5BA9FDZ6D82M=feature-reports h_01HDNYFR9MSZ9K8F283J0WBHCZ=aggregate-protect360-reports-available-via-pull-api h_01HDNYYJXVY9XHX87K06NXYQNS=see-also" />
+<div data-zendesk-anchors="aggregated-and-analytics-performance-reporting%E2%80%94tools-and-reports=generaci%C3%B3n-de-reportes-de-rendimiento-agregados-y-anal%C3%ADticos-herramientas-y-reportes 01EWA9VQ2HH93525BMK6WN0P6S=generaci%C3%B3n-de-reportes-de-rendimiento-agregados-y-anal%C3%ADticos-herramientas-y-reportes user-journey-reports=reportes-de-trayectoria-del-usuario 01ED4D7W8CVAQ9V2GCEX1G6KD7=reportes-de-trayectoria-del-usuario examples-of-aggregate-reports=ejemplos-de-reportes-agregados 01ED4D7W8C3ZNBYR3CMHJF3QSE=ejemplos-de-reportes-agregados fields-in-ua-aggregate-reports=campos-en-reportes-agregados-de-ua h_01HDNYFR9KTQ7ZF35C7E7M7AF1=campos-en-reportes-agregados-de-ua aggregate-ltv-retargeting-reports=reportes-agregados-de-retargeting-de-ltv h_01HDNYFR9MSJWCP3JA4M1WXN1H=reportes-agregados-de-retargeting-de-ltv aggregate-ltv-retargeting-reports::b2093953=reportes-agregados-de-retargeting-de-ltv-1 h_01HDNYFR9MSK9VQQ0Q889Z55TN=reportes-agregados-de-retargeting-de-ltv-1 feature-reports=reportes-de-funciones h_01HDNYFR9MYXVZ5BA9FDZ6D82M=reportes-de-funciones aggregate-protect360-reports-available-via-pull-api=reportes-agregados-de-protect360-disponibles-a-trav%C3%A9s-de-pull-api h_01HDNYFR9MSZ9K8F283J0WBHCZ=reportes-agregados-de-protect360-disponibles-a-trav%C3%A9s-de-pull-api h_01HDNYYJXVY9XHX87K06NXYQNS=consulta-tambi%C3%A9n" />

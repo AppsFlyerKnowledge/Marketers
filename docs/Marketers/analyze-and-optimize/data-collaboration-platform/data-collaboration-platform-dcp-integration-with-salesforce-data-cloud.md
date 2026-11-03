@@ -1,5 +1,7 @@
 ---
-title: Data Collaboration Platform (DCP) - Integration with Salesforce Data Cloud
+title: >-
+  Plataforma de colaboración de datos (DCP): integración con Salesforce Data
+  Cloud
 metadata:
   keywords:
     - Premium
@@ -13,72 +15,71 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2024-02-29T14:30:51Z'
-  edited_at: '2025-02-03T13:14:45Z'
+  edited_at: '2026-08-12T11:53:54Z'
   id: 22977208909969
-  locale: en-us
+  locale: es
   section: Data Collaboration Platform
   section_id: 26230608274065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/22977208909969-Data-Collaboration-Platform-DCP-Integration-with-Salesforce-Data-Cloud
+  url: https://support.appsflyer.com/hc/es/articles/22977208909969
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** The Salesforce Data Cloud integration allows you to bring your first-party data to the AppsFlyer Data Collaboration Platform with a click of a button.
+> **De un vistazo:** la integración con Salesforce Data Cloud te permite llevar tus datos propios a la Plataforma de Colaboración de Datos de AppsFlyer con solo hacer clic en un botón.
 
-> 🚧 **Before you begin**
+> 🚧 **Antes de comenzar**
 >
-> Before integrating Salesforce Data Cloud, you must **install the AppsFlyer app extension** from the Salesforce AppExchange. This must be performed by a Salesforce admin user with permission to download AppExchange packages.
+> Antes de integrar Salesforce Data Cloud, debes **instalar la extensión de la app de AppsFlyer** desde Salesforce AppExchange. Esto debe hacerlo un usuario administrador de Salesforce con permiso para descargar paquetes de AppExchange.
 >
-> 1. Go to the <Anchor target="_blank" href="https://appexchange.salesforce.com/appxListingDetail?listingId=6c756ddf-777c-42fc-9eaf-d96ca36ed2e3">AppsFlyer listing</Anchor> on the Salesforce AppExchange.
-> 2. Click **Get It Now**.
-> 3. Follow the steps described in the <Anchor target="_blank" href="https://developer.salesforce.com/docs/atlas.en-us.appExchangeInstallGuide.meta/appExchangeInstallGuide/appexchange_install_installation.htm">Application Installation Guide</Anchor>.
+> 1. Ve a la <Anchor target="_blank" href="https://appexchange.salesforce.com/appxListingDetail?listingId=6c756ddf-777c-42fc-9eaf-d96ca36ed2e3">lista de AppsFlyer</Anchor> en Salesforce AppExchange.
+> 2. Haz clic en **Get It Now**.
+> 3. Sigue los pasos descritos en la <Anchor target="_blank" href="https://developer.salesforce.com/docs/atlas.en-us.appExchangeInstallGuide.meta/appExchangeInstallGuide/appexchange_install_installation.htm">guía de instalación de la aplicación</Anchor>.
 >
-> Upon successful installation, the process is complete and there's no need for any additional package configuration.
+> Cuando la instalación finalice correctamente, el proceso habrá terminado y no será necesaria ninguna configuración adicional del paquete.
 
-## Set up the integration
+## Configura la integración
 
-The integration involves creating a Salesforce Data Cloud connection and then creating sources. You only need one connection to authenticate your Salesforce account. Using this connection, you can create multiple sources based on Salesforce tables.
+La integración consiste en crear una conexión de Salesforce Data Cloud y después crear fuentes. Solo necesitas una conexión para autenticar tu cuenta de Salesforce. Con esta conexión, puedes crear varias fuentes basadas en tablas de Salesforce.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> If you've already set up a connection with Salesforce Data Cloud, you won't be able to create another one.
+> Si ya has configurado una conexión con Salesforce Data Cloud, no podrás crear otra.
 
-### Create a Salesforce Data Cloud connection
+### Crear una conexión de Salesforce Data Cloud
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
-2. From the top-right of the page, click **Manage connections** > **+ New connection**.
-3. In the **New connection** dialog, select **Data providers** > **Salesforce Data Cloud**.  
+1. En AppsFlyer, desde el menú lateral, ve a **Colaborar** > **Data Clean Room**.
+2. En la parte superior derecha de la página, haz clic en **Manage connections** > **+ New connection**.
+3. En el cuadro de diálogo **New connection**, selecciona **Data providers** > **Salesforce Data Cloud**.  
 
    <Image alt="salesforce-data-cloud-new-connection.jpg" src="https://files.readme.io/6b240e0cff3f0bc9e6b7f6eaf45520a78252e1619769a696855e8d68d322ce60-23301617982353.jpg" width="517px" />
-4. Click **Log in to Salesforce**.
-5. Proceed with the authentication process and allow Salesforce access to AppsFlyer.   
-   **Note:** If the authentication is unsuccessful, you're returned to the **New connection** dialog to try again.
-6. After successful authentication, you're returned to the **New connection** dialog with an indication that you have an active connection with Salesforce. You can now proceed and create a source.
-7. Click **Create source** and follow the [instructions below](#create-a-salesforce-data-cloud-source) to create a Salesforce Data Cloud source.
+4. Haz clic en **Log in to Salesforce**.
+5. Continúa con el proceso de autenticación y permite que Salesforce acceda a AppsFlyer.   
+   **Nota:** si la autenticación no se realiza correctamente, volverás al cuadro de diálogo **New connection** para intentarlo de nuevo.
+6. Después de autenticarte correctamente, volverás al cuadro de diálogo **New connection** con una indicación de que tienes una conexión activa con Salesforce. Ahora ya puedes continuar y crear una fuente.
+7. Haz clic en **Create source** y sigue las [instrucciones que se indican a continuación](#crear-una-fuente-de-salesforce-data-cloud) para crear una fuente de Salesforce Data Cloud.
 
-### Create a Salesforce Data Cloud source
+### Crear una fuente de Salesforce Data Cloud
 
-After authenticating your Salesforce account and setting up the connection with Salesforce Data Cloud, the next step is to create sources. These sources provide AppsFlyer with the necessary data each time you perform updates.
+Después de autenticar tu cuenta de Salesforce y configurar la conexión con Salesforce Data Cloud, el siguiente paso es crear fuentes. Estas fuentes proporcionan a AppsFlyer los datos necesarios cada vez que realizas actualizaciones.
 
-Access the **Sources** tab using the following methods:
+Accede a la pestaña **Sources** con uno de estos métodos:
 
-* After completing the previous step, click **Create source**.
-* Navigate from the AppsFlyer side menu to **Collaborate** > **Data Clean Room** > **+ New Source** showing at the top-right corner of the page.
+* Después de completar el paso anterior, haz clic en **Crear fuente**.
+* En el menú lateral de AppsFlyer, ve a **Collaborate** > **Data Clean Room** > **+ New Source**, que aparece en la esquina superior derecha de la página.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> When creating your source, make sure restricted data isn't sent to AppsFlyer.
+> Al crear tu fuente, asegúrate de que no se envíen datos restringidos a AppsFlyer.
 
-**To create a source:**
+**Para crear una fuente:**
 
-1. **Set source name:** Enter a <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#1-name-the-source">name for the source</Anchor>, and click **Next**.
-2. **Set source location:**
-   * **Select connection:** Salesforce Data Cloud is auto-populated after adding the connection. If not, choose it from the connection list.
-   * **Table or View:** After the Salesforce Data Cloud connection is selected, table names and views from your Salesforce account are auto-populated. Select the table or view, and click **Next**.  
+1. **Establecer el nombre de la fuente:** Introduce un <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#1-name-the-source">nombre para la fuente</Anchor> y haz clic en **Siguiente**.
+2. **Establecer ubicación de la fuente:**
+   * **Selecciona la conexión:** Salesforce Data Cloud se rellena automáticamente después de añadir la conexión. Si no es así, selecciónala en la lista de conexiones.
+   * **Tabla o vista:** Después de seleccionar la conexión de Salesforce Data Cloud, los nombres de las tablas y las vistas de tu cuenta de Salesforce se rellenan automáticamente. Selecciona la tabla o vista y haz clic en **Siguiente**.  
 
-     ![create-source-sf-3-steps.jpg](https://files.readme.io/44549ef1cd59b99610944c604c1cdfd4d598352cd106877fab3a301ce14650f8-23306070497169.jpg)
-3. **Configure source schema:** After a table or view is selected, the field names and types are auto-populated. You can edit the field types or remove unwanted fields by selecting the bin icon at the end of the field row.  
-   **Note:** Make sure at least one field type serves as an identifier. For example, CUID, Platform ID, AppsFlyer ID, and SHA256 hashed ID.
-4. Click **Save**. The new source is displayed in the list of all existing sources.
+     ![crear-fuente-sf-3-pasos.jpg](https://files.readme.io/44549ef1cd59b99610944c604c1cdfd4d598352cd106877fab3a301ce14650f8-23306070497169.jpg)
+3. **Configura el esquema de la fuente:** Después de seleccionar una tabla o vista, los nombres y tipos de campo se rellenan automáticamente. Puedes editar los tipos de campo o eliminar los campos no deseados seleccionando el icono de la papelera al final de la fila del campo.  
+   **Nota:** Asegúrate de que al menos un tipo de campo sirva como identificador. Por ejemplo, CUID, ID de plataforma, ID de AppsFlyer e ID con hash SHA256.
+4. Haga clic en **Guardar**. La nueva fuente se muestra en la lista de todas las fuentes existentes.
 
-<div data-zendesk-anchors="h_01HPKB2ERPGD2PS4JBSDGYW3MC=before-you-begin 01HRW9TK3YZV32CXRM6Q2HCHS4=set-up-the-integration 01HRSFKVQNJ264M16A9X9AEP53=note h_01HRSDCVMHQ6C5R6R4S5XRT5KQ=create-a-salesforce-data-cloud-connection h_01HRSG0P4Q38WHGQWBY3S3D11W=create-a-salesforce-data-cloud-source h_01HRVPJ801B0VC879APZCGKDNE=note-1" />
+<div data-zendesk-anchors="h_01HPKB2ERPGD2PS4JBSDGYW3MC=antes-de-comenzar set-up-the-integration=configura-la-integraci%C3%B3n 01HRW9TK3YZV32CXRM6Q2HCHS4=configura-la-integraci%C3%B3n 01HRSFKVQNJ264M16A9X9AEP53=nota create-a-salesforce-data-cloud-connection=crear-una-conexi%C3%B3n-de-salesforce-data-cloud h_01HRSDCVMHQ6C5R6R4S5XRT5KQ=crear-una-conexi%C3%B3n-de-salesforce-data-cloud create-a-salesforce-data-cloud-source=crear-una-fuente-de-salesforce-data-cloud h_01HRSG0P4Q38WHGQWBY3S3D11W=crear-una-fuente-de-salesforce-data-cloud h_01HRVPJ801B0VC879APZCGKDNE=nota-1" />

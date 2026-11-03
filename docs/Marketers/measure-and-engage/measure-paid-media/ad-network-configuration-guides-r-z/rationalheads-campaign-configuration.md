@@ -1,5 +1,5 @@
 ---
-title: RationalHeads campaign configuration
+title: Configuración de la campaña de RationalHeads
 metadata:
   keywords:
     - rationalheads
@@ -14,160 +14,159 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-04-04T15:30:57Z'
-  edited_at: '2026-07-27T09:43:16Z'
+  edited_at: '2026-08-12T12:15:30Z'
   id: 208277926
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/208277926-RationalHeads-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/208277926
 ---
-> **At a glance:** Remerge, an AppsFlyer ad network integrated partner, enables app-marketers to deliver better-placed, customized advertisements. In addition to click-based mobile attribution, Remerge offers view-through mobile attribution and click-based retargeting, which can be recorded with AppsFlyer.
+> **En resumen:** Remerge, un partner integrado de ad network de AppsFlyer, permite a los profesionales del marketing de aplicaciones ofrecer anuncios personalizados y mejor ubicados. Además de la atribución móvil basada en clics, Remerge ofrece atribución móvil view-through y retargeting basado en clics, que pueden registrarse con AppsFlyer.
 
-## Setting up RationalHeads
+## Configurar RationalHeads
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con el partner.  
+    Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación. Para ver una descripción detallada del Encabezado de la ventana de configuración de partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-RationalHead's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
+La ventana de configuración de RationalHeads incluye 3 pestañas activas: Integración, enlace de atribución y permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del Partner Configuration Window Header, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
+> * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio para todos los partners**.
+> * Todos los demás pasos son descriptivos u **opcionales**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### General settings
+### Configuración general
 
-**Part ID**
+**ID de pieza**
 
-RationalHeads connects with AppsFlyer via a unique Part ID. If you don't already have the Part ID and password, you must obtain it from RationalHeads to continue with the integration.
+RationalHeads se conecta con AppsFlyer a través de un ID de parte único. Si aún no tienes el ID de parte y la contraseña, debes obtenerlos de RationalHeads para continuar con la integración.
 
 <Image alt="Rationalheads_msc_new_2.png" src="https://files.readme.io/7e93003c13d4fa1e60bee4120307691b618757a7c55a271561827823005b86c3-360002076529.png" width="317px" />
 
-### Default postbacks
+### Postbacks predeterminados
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-Send automatic postbacks to RationalHeads following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a RationalHeads tras las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to RationalHeads.
+Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a RationalHeads.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with RationalHeads via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer a RationalHeads mediante postbacks.
 
-1. Toggle In-App Event Postbacks to ON.
-2. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-3. Click **Add Event** to add an SDK Event to the list.
-4. Complete the following parameters:
+1. Activa los Postbacks de eventos in-app con el selector.
+2. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+3. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+4. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on RationalHead's side.  <br />Obtain the corresponding Event ID from RationalHeads and set in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según lo definido en RationalHeads.  <br />Obtén el ID de evento correspondiente de RationalHeads y configúralo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to RationalHeads for attributing RationalHead's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a RationalHeads para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de RationalHeads. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with RationalHeads.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific RationalHeads campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns RationalHeads.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña**: añádela para comparar distintas campañas de RationalHeads.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios**: define nombres de conjuntos de anuncios para comparar diferentes conjuntos de anuncios dentro de campañas específicas de RationalHeads.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio**: establece nombres de anuncios para comparar diferentes creatividades dentro de conjuntos de anuncios específicos, dentro de campañas específicas de RationalHeads.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** e **ID de subsitio**: configura el parámetro ID de sitio para atribuir instalaciones a publishers específicos. Si existen muchos publishers, te recomendamos limitar la cantidad de ID de sitio que usas y utilizar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceder los límites del ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor**: utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+  **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to RationalHeads.
+Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeros lanzamientos) que tengan lugar dentro de la ventana de lookback pueden atribuirse a RationalHeads.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic</Anchor>.
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to RationalHeads to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a RationalHeads para que se active cuando los leads hagan clic en el anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant RationalHeads, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for RationalHeads, the permissions tab is active and you can grant control to RationalHeads.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgar a RationalHeads, tanto si el partner actúa como ad network, agencia o incluso como ambas. Ten en cuenta que, aunque la atribución esté deshabilitada para RationalHeads, la pestaña de permisos está activa y puedes conceder el control a RationalHeads.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-### Ad network permissions
+### Permisos de ad network
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos***: solo a los datos de ingresos atribuidos al partner.
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJRZB6JCPYZZJ3QWS9BRJPSX=setting-up-rationalheads h_01HJRZB6JC4GDCV3RVGJBFTPAT=tip h_01HJRZB6JCE5G700RRHGJY3M4A=integration-tab h_01HJRZB6JCXARZ29M8RCP30VBD=general-settings h_01HJRZB6JCXR6ZHH3YV05W6JY1=default-postbacks h_01HJRZB6JCW3C1AWRS4041SKJP=activate-partner inapp-events-settings=in-app-events-settings h_01HJRZB6JDH6A108JYXEST4AQY=in-app-events-settings h_01HJRZB6JDG7YQD0ANE4W8C55C=attribution-link-tab h_01HJRZB6JDM91MC9B4VXCHEW6Z=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJRZB6JDQ148X9J0XCFPVZD1=click-through-attribution h_01HJRZB6JDZ27KM6N7GVZX54CW=click-attribution-link h_01HJRZB6JDJG6HVCEXMC5S30NM=cost-tab h_01HJRZB6JDTJE0K27Y4XTJG7QX=ad-revenue-tab h_01HJRZB6JDD32KPQ13CTEEMEBB=permissions-tab h_01HJRZB6JD6412B28R5N8MRVH3=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-rationalheads=configurar-rationalheads h_01HJRZB6JCPYZZJ3QWS9BRJPSX=configurar-rationalheads h_01HJRZB6JC4GDCV3RVGJBFTPAT=consejo h_01HJRZB6JCE5G700RRHGJY3M4A=integration-tab general-settings=configuraci%C3%B3n-general h_01HJRZB6JCXARZ29M8RCP30VBD=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HJRZB6JCXR6ZHH3YV05W6JY1=postbacks-predeterminados activate-partner=activar-socio h_01HJRZB6JCW3C1AWRS4041SKJP=activar-socio inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HJRZB6JDH6A108JYXEST4AQY=configuraci%C3%B3n-de-eventos-in-app h_01HJRZB6JDG7YQD0ANE4W8C55C=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HJRZB6JDM91MC9B4VXCHEW6Z=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HJRZB6JDQ148X9J0XCFPVZD1=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HJRZB6JDZ27KM6N7GVZX54CW=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HJRZB6JDJG6HVCEXMC5S30NM=cost-tab h_01HJRZB6JDTJE0K27Y4XTJG7QX=ad-revenue-tab h_01HJRZB6JDD32KPQ13CTEEMEBB=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HJRZB6JD6412B28R5N8MRVH3=permisos-de-ad-network" />

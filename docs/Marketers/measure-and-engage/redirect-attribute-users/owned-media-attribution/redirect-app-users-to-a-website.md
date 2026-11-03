@@ -1,5 +1,5 @@
 ---
-title: Redirect app users to a website
+title: Redirigir a los usuarios de la app a un sitio web
 metadata:
   keywords:
     - OneLink
@@ -13,38 +13,37 @@ x-zendesk:
     - Marketers
     - Social-to-App
   created_at: '2022-02-22T11:45:43Z'
-  edited_at: '2024-12-09T09:17:42Z'
+  edited_at: '2026-08-12T12:25:04Z'
   id: 4460838224273
-  locale: en-us
+  locale: es
   section: Owned media attribution
   section_id: 6551214397585
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4460838224273-Redirect-app-users-to-a-website
+  url: https://support.appsflyer.com/hc/es/articles/4460838224273
 ---
-> **At a glance:** Redirect app users to a web URL or social media page by using a URL generated with OneLink.
+> **De un vistazo:** Redirige a los usuarios de la app a una URL web o a una página de redes sociales mediante una URL generada con OneLink.
 
-## Redirect app users to a web URL
+## Redirigir a los usuarios de la app a una URL web
 
-Advertisers can post OneLink URLs leading to external web pages or social media sites. AppsFlyer measures the clicks on the link inside the app, by which you can determine the efficacy of the ad.
+Los anunciantes pueden publicar URL de OneLink que dirijan a páginas web externas o a sitios de redes sociales. AppsFlyer mide los clics en el enlace dentro de la app, lo que te permite determinar la eficacia del anuncio.
 
-**Prerequisites**: An AppsFlyer account with at least one app.
+**Requisitos previos**: Una cuenta de AppsFlyer con al menos una aplicación.
 
-**To set up app-to-web redirection**:
+**Para configurar la redirección de app a web**:
 
-1. Set up a <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>.
-   * In the **When app is installed** section, make sure you don't set up an app-opening method (Universal Links, App Links, or URI scheme).
-2. Create a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">OneLink custom link</Anchor>.
-   * In the **When app isn’t installed** section, make sure the redirection settings are to the desired web URL.
-   * Don't add an `af_dp` parameter with a URI Scheme.
-3. Make sure the domain you're redirecting users to appears in your <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">redirect allowlist</Anchor>.   
-   **Note:** Setting up a domain redirect allowlist is required to ensure users are redirected to verified, trustworthy domains.
+1. Configura una <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#crear-una-plantilla-de-onelink">plantilla de OneLink</Anchor>.
+   * En la sección **When app is installed**, asegúrate de no configurar ningún método para abrir la app (Universal Links, App Links o esquema URI).
+2. Crea un <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#crear-un-enlace-de-onelink">enlace personalizado de OneLink</Anchor>.
+   * En la sección **When app isn’t installed**, asegúrate de que la configuración de redirección apunte a la URL web deseada.
+   * No añadas el parámetro `af_dp` con un esquema URI.
+3. Asegúrate de que el dominio al que rediriges a los usuarios aparezca en tu <Anchor target="_blank" href="/marketers/es/docs/set-up-your-domain-redirect-allowlist">lista de permitidos de redirección de dominios</Anchor>.   
+   **Nota:** Configurar una lista de permitidos de redirección de dominios es obligatorio para garantizar que los usuarios sean redirigidos a dominios verificados y fiables.
 
-**To test your link**:
+**Para probar tu enlace**:
 
-**Prerequisites**: A mobile device with the app installed.
+**Requisitos previos**: Un dispositivo móvil con la aplicación instalada.
 
-1. Send the short or long URL to your phone, and click it.  
-   **Note**: Email or WhatsApp yourself the link, and open it on your phone. Don't paste into iOS notes, or directly into a mobile browser.
-2. You should be redirected to the web URL.
+1. Envía la URL corta o larga a tu teléfono y haz clic en ella.  
+   **Nota**: Envíate el enlace por correo electrónico o WhatsApp y ábrelo en tu teléfono. No lo pegues en notas de iOS ni directamente en un navegador móvil.
+2. Deberías ser redirigido a la URL web.
 
-<div data-zendesk-anchors="01JENAXDEE8C81DN0JGPWPZQSY=redirect-app-users-to-a-web-url" />
+<div data-zendesk-anchors="redirect-app-users-to-a-web-url=redirigir-a-los-usuarios-de-la-app-a-una-url-web 01JENAXDEE8C81DN0JGPWPZQSY=redirigir-a-los-usuarios-de-la-app-a-una-url-web" />

@@ -1,24 +1,24 @@
 ---
-title: Cross-platform measurement
+title: Medición multiplataforma
 excerpt: >-
-  Attribute and measure user engagements and conversions across different
-  platforms and industries
+  Atribuye y mide las conversiones y engagements de usuario en diferentes
+  plataformas e industrias
 table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2022-06-02T12:03:28Z'
   id: 6551947798801
-  locale: en-us
+  locale: es
   parent_section_id: 6551006275729
   type: section
   url: >-
-    https://support.appsflyer.com/hc/en-us/sections/6551947798801-Cross-platform-measurement
+    https://support.appsflyer.com/hc/es/sections/6551947798801-Medici%C3%B3n-multiplataforma
 ---
-- [Overview](/docs/overview)
-- [Cross platform reports](/docs/cross-platform-reports)
-- [Platforms](/docs/platforms)
-- [Promoting CTV apps](/docs/promoting-ctv-apps)
-- [Promoting Console apps](/docs/promoting-console-apps)
-- [Promoting Desktop apps](/docs/promoting-desktop-apps)
-- [Promoting Web apps](/docs/promoting-web-apps)
+- [Promoción de aplicaciones de CTV](/docs/promoting-ctv-apps)
+- [Promoción de aplicaciones de consola](/docs/promoting-console-apps)
+- [Promoción de aplicaciones de escritorio](/docs/promoting-desktop-apps)
+- [Promoción de aplicaciones web](/docs/promoting-web-apps)
+- [Visión general](/docs/overview)
+- [Reportes entre plataformas](/docs/cross-platform-reports)
+- [Plataformas](/docs/platforms)

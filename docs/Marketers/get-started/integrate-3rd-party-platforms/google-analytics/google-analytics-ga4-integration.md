@@ -1,5 +1,5 @@
 ---
-title: Google Analytics (GA4) integration
+title: Integración con Google Analytics (GA4)
 metadata:
   keywords:
     - Marketers
@@ -12,159 +12,168 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2024-06-06T15:26:00Z'
-  edited_at: '2026-09-27T12:24:13Z'
+  edited_at: '2026-09-29T00:05:48Z'
   id: 25707682812561
-  locale: en-us
+  locale: es
   section: Google Analytics
   section_id: 6551226043793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/25707682812561-Google-Analytics-GA4-integration
+  url: https://support.appsflyer.com/hc/es/articles/25707682812561
 ---
-> **At a glance:** AppsFlyer integration with Google Analytics (GA4) enables advertisers to send attribution data and selected in-app events from AppsFlyer to GA4. This integration works with iOS and Android apps that already have the [Google Analytics for Firebase SDK](https://firebase.google.com/docs/analytics) implemented.
+> **At a glance:** La integración de AppsFlyer con Google Analytics (GA4) permite a los anunciantes enviar datos de atribución y eventos seleccionados in-app desde AppsFlyer a GA4. Esta integración funciona con aplicaciones de iOS y Android que ya tienen implementado el [SDK de Google Analytics para Firebase](https://firebase.google.com/docs/analytics).
 
 > 🚧 **Important**
 >
-> This integration works with iOS and Android apps that already have the [Google Analytics for Firebase SDK implemented](https://firebase.google.com/docs/analytics). For the integration to succeed, the AppsFlyer SDK has to collect the `app_instance_id` value from the Firebase SDK. See instructions on [how to retrieve the app instance ID from the Firebase SDK](#5-retrieve-app-instance-id-in-appsflyer-sdk).
+> **Importante:**
+>
+> Esta integración funciona con aplicaciones de iOS y Android que ya tienen implementado el [SDK de Google Analytics para Firebase](https://firebase.google.com/docs/analytics). Para que la integración tenga éxito, el SDK de AppsFlyer debe recopilar el valor `app_instance_id` del SDK de Firebase. Consulta las instrucciones sobre [cómo recuperar el ID de instancia de la aplicación del SDK de Firebase](#5-retrieve-app-instance-id-in-appsflyer-sdk).
 
-## How does it work?
+## ¿Cómo funciona?
 
-* When a new install occurs, AppsFlyer sends the touchpoint details— media source, campaign name, and campaign ID—to GA4. It also sends the Firebase SDK's `app_instance_id` to ensure the touchpoint is recorded in GA4 for that user.
-* When an in-app event occurs, GA4 will attribute the event to the last touchpoint.
+* Cuando ocurre una nueva instalación, AppsFlyer envía los detalles del punto de contacto: fuente de medios, nombre de la campaña e ID de la campaña a GA4. También envía el `app_instance_id` del SDK de Firebase para asegurar que el punto de contacto se registre en GA4 para ese usuario.
+* Cuando ocurre un evento in-app, GA4 atribuirá el evento al último punto de contacto.
 
-## Set up Google Analytics (GA4) integration
+## Configurar la integración de Google Analytics (GA4)
 
-Follow the instructions below to configure the integration with Google Analytics (GA4).
+Sigue las instrucciones a continuación para configurar la integración con Google Analytics (GA4).
 
-<Accordion title="1. Select Google Analytics (GA4) in the Partner Marketplace">
+<Accordion title="1. Selecciona Google Analytics (GA4) en el Partner Marketplace">
 
-**Prerequisite:** Before setting up the integration, make sure you <Anchor target="_blank" href="/marketers/docs/partner-integrations#contact-details">contact the partner</Anchor> and open an account with them.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">ponerte en contacto con el partner</Anchor> y abrir una cuenta con él.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for Google Analytics (GA4) and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with Google Analytics (GA4)**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace** .  
+   (**Para editar una integración existente:** Ve a la pestaña **Collaborate > Partner Integrations > Active integrations** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca Google Analytics (GA4) y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   Nota: El selector **debe permanecer activado (activo) mientras trabajes con Google Analytics (GA4)**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas pertinentes, como se describe a continuación.
 
-The Google Analytics configuration only includes the **Integration** tab.
+La configuración de Google Analytics solo incluye la pestaña **Integración**.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del encabezado de la ventana de configuración del partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
 </Accordion>
 
-<Accordion title="2. Set GA4 Integration in AppsFlyer">
+<Accordion title="2. Configurar la integración de GA4 en AppsFlyer">
 
-Configure the following settings:
+Configura los siguientes ajustes:
 
-1. In the **Integration** tab, select the app for the integration and turn **Activate partner** on.
+1. En la pestaña **Integración**, selecciona la aplicación para la integración y activa **Activar partner**.
 
-   **Note:** The toggle must be on <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">(activated)</Anchor> for as long as you work with the partner.
+   **Nota:** El selector debe estar <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado)</Anchor> mientras trabajes con el partner.
 
-   For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
-2. In **Firebase App ID,** enter the identifier of the Firebase app. To learn how to locate the Firebase App ID, see <Anchor target="_blank" href="https://firebase.google.com/support/faq#find-app-id">the Firebase documentation</Anchor>.
-3. In **API Secret,** enter the API Secret used to authenticate postbacks to Google Analytics. An API Secret is generated through the Google Analytics user interface. To view, edit, or create a secret, follow the instructions in the <Anchor target="_blank" href="https://support.google.com/analytics/answer/9814495?sjid=5179426966283787649-EU">Google documentation</Anchor>. **When instructed to select a web data stream, choose an Android or iOS data stream instead.**
-4. Turn on **Customer User ID** to send the customer user ID (CUID) instead of the advertising ID (IDFA).
-5. Under the **Default postbacks** section, **for users from**, select **All media sources including organic**.
+   Para obtener más detalles sobre la activación del partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+2. En **ID de la aplicación de Firebase,** introduce el identificador de la aplicación de Firebase. Para saber cómo localizar el ID de la aplicación de Firebase, consulta <Anchor target="_blank" href="https://firebase.google.com/support/faq#find-app-id">la documentación de Firebase</Anchor>.
+3. En **API Secret,** introduce la API Secret que se usa para autenticar los postbacks a Google Analytics. Una API Secret se genera a través de la interfaz de usuario de Google Analytics. Para ver, editar o crear un secreto, sigue las instrucciones de la <Anchor target="_blank" href="https://support.google.com/analytics/answer/9814495?sjid=5179426966283787649-EU">documentación de Google</Anchor>. **Cuando se te indique seleccionar un flujo de datos web, elige un flujo de datos de Android o iOS en su lugar.**
+4. Activa **Customer User ID** para enviar el ID de usuario del cliente (CUID) en lugar del ID de publicidad (IDFA).
+5. En la sección **Postbacks predeterminados**, en **para usuarios de**, selecciona **Todas las fuentes de medios, incluido orgánico**.
 
 > 📘 **Note**
 >
-> The install postback includes only the touchpoint details (media source, campaign name, and campaign ID).
+> **Nota:**
+>
+> El postback de instalación incluye solo los detalles del punto de contacto (fuente de medios, nombre de campaña e ID de campaña).
 
 </Accordion>
 
-<Accordion title="3. Set default postbacks">
+<Accordion title="3. Configurar postbacks predeterminados">
 
-AppsFlyer can send automatic postbacks to GA4 following user installs, including both installs and re-engagements (including re-attributions). Re-engagements occur when a user who already has the app installed opens it after clicking a campaign link. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
+AppsFlyer puede enviar postbacks automáticos a GA4 después de las instalaciones de usuarios, incluidas tanto las instalaciones como los re-engagements (incluidas las reatribuciones). Los re-engagements se producen cuando un usuario que ya tiene la aplicación instalada la abre después de hacer clic en un enlace de campaña. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks predeterminados</Anchor>.
 
 </Accordion>
 
-<Accordion title="4. Set in-app event postbacks">
+<Accordion title="4. Configurar postbacks de eventos in-app">
 
-In the **Integration** tab, map AppsFlyer in-app events to Google Analytics (GA4) events, sent via postbacks.
+En la pestaña **Integración**, mapea los eventos in-app de AppsFlyer a los eventos de Google Analytics (GA4), enviados a través de postbacks.
 
 > 📘 **Note**
 >
-> * Postbacks for mobile in-app events sent via S2S aren't supported.
-> * GA4 does not deduplicate events sent from both the Firebase SDK and AppsFlyer. We recommend configuring in-app event postbacks only for events that are not already sent to GA4 via the Firebase SDK.
+> **Nota:**
+>
+> * Los postbacks para eventos in-app móviles enviados a través de S2S no son compatibles.
+> * GA4 no deduplica eventos enviados desde el SDK de Firebase y AppsFlyer. Recomendamos configurar postbacks de eventos in-app solo para eventos que no se envían ya a GA4 a través del SDK de Firebase.
 
-1. Turn on **In-app event postbacks**.
-2. Click **Add event** to add an SDK event to the list. The following table describes the fields to complete:
+1. Activa los **postbacks de eventos in-app**.
+2. Haz clic en **Agregar evento** para añadir un evento del SDK a la lista. En la siguiente tabla se describen los campos que debes completar:
 
-| Parameter name | Description |
+| Nombre del parámetro | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received from the AppsFlyer SDK integrated into your app.<br /><br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**.</li></ul>Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor> |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
-| **for users from** | Select the sending option for the event:<ul><li>**All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
-| **including** | <ul><li>**No data (default)**: Send only the event itself without any event values.</li><li>**Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: Send all the parameters **excluding** the revenue value.</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como se recibe desde el SDK de AppsFlyer integrado en tu app.<br /><br />**Consejo**: ¿No ves el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.</li><li>Escríbelo en **Evento de AppsFlyer** y, a continuación, haz clic en **Crear personalizado**.</li></ul>Leer más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación personalizada de eventos.</Anchor> |
+| **Asignado al evento de socio** | El nombre o ID único de cada evento, definido por el partner. Existen varias configuraciones de asignación:<ul><li>**Campo de texto:** Obtén el ID del evento correspondiente del partner.</li><li>**Cuadro desplegable:** selecciona el evento de AppsFlyer predefinido más adecuado.</li><li>**Tal como está**: envía los eventos tal como están, sin asignación de nombres.</li></ul> |
+| **Para usuarios de** | Seleccione la opción de envío para el evento:<ul><li>**Todas las fuentes de medios, incluidas las orgánicas**: envía postbacks de eventos atribuidos a cualquier partner, así como eventos orgánicos.</li></ul> |
+| **incluye** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí, sin ningún valor del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento).</li><li>**Valores sin ingresos**: envía todos los parámetros, **excluyendo** el valor de ingresos.</li></ul> |
 
-3. [Optional] Click the **Add condition** icon (<Image alt="condition-2.png" src="https://files.readme.io/959329be2b1286507b5c87b033785e91ab135592ae37cf3200539400832490c0-25709762755857.png" width="19px" />) to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
-4. Click **Save integration**.
-5. Send the event postback mapping
+3. [Opcional] Haz clic en el icono **Agregar condición** (<Image alt="condition-2.png" src="https://files.readme.io/959329be2b1286507b5c87b033785e91ab135592ae37cf3200539400832490c0-25709762755857.png" width="19px" />) para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer condiciones</Anchor> para un evento.
+4. Haz clic en **Guardar integración**.
+5. Enviar el mapeo de postback de eventos
 
 </Accordion>
 
-<Accordion title="5. Send your developer the postback event mapping">
+<Accordion title="5. Envía a tu desarrollador el mapeo de eventos de postback">
 
-After you have set up the in-app event mapping, send your developer a table where each mapped event corresponds to a row with the following columns:
+Después de haber configurado el mapeo de eventos in-app, envía a tu desarrollador una tabla donde cada evento mapeado corresponda a una fila con las siguientes columnas:
 
-* **AF event:** Name of the AppsFlyer event.
-* **Mapped to Google event:** Name of the event in Google Analytics.
-
-> 🚧 **Important**
->
-> Don’t use any of the [Google reserved events](#reserved-google-event-names) as names for custom Google Analytics events.
-
-* **AF event parameters (MANDATORY):** Predefined AppsFlyer event parameters that must be included in the event postback sent to Google Analytics.
+* **Evento de AF:** Nombre del evento de AppsFlyer.
+* **Asignado al evento de Google:** Nombre del evento en Google Analytics.
 
 > 🚧 **Important**
 >
-> It is mandatory to include all predefined AF event parameters within the event definition exactly as they are listed in the table; failure to do so will result in Google Analytics rejecting the postback.
+> **Importante:**
+>
+> No utilices ninguno de los [eventos reservados de Google](#nombres-reservados-de-eventos-de-google) como nombres para eventos personalizados de Google Analytics.
 
-#### The event mapping table
+* **Parámetros del evento de AF (OBLIGATORIOS):** Parámetros de evento de AppsFlyer predefinidos que deben incluirse en el postback de evento enviado a Google Analytics.
 
-The following table includes all the Google Analytics events and their predefined AppsFlyer parameters. Send your developer a table containing just the events that you mapped.
+> 🚧 **Important**
+>
+> **Importante:**
+>
+> Es obligatorio incluir todos los parámetros de evento AF predefinidos dentro de la definición del evento exactamente como se enumeran en la tabla; no hacerlo resultará en que Google Analytics rechace el postback.
 
-| AF recommended name (Optional) | The Google Ads Event name | Predefined AF event parameters (MANDATORY) |
+#### La tabla de mapeo de eventos
+
+La siguiente tabla incluye todos los eventos de Google Analytics y sus parámetros predefinidos de AppsFlyer. Envía a tu desarrollador una tabla que contenga solo los eventos que has mapeado.
+
+| Nombre recomendado por AF (Opcional) | El nombre del evento de Google Ads | Parámetros de evento predefinidos de AF (OBLIGATORIO) |
 | --- | --- | --- |
-| af\_add\_payment\_info | [add\_payment\_info](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#add_payment_info) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
-|  | [add\_shipping\_info](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#add_shipping_info) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
-| af\_add\_to\_cart | [add\_to\_cart](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#add_to_cart) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
-| af\_add\_to\_wishlist | [add\_to\_wishlist](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#add_to_wishlist) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
-| af\_initiated\_checkout | [begin\_checkout](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#begin_checkout) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+| af\_add\_payment\_info | [add\_payment\_info](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#add_payment_info) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+|  | [add\_shipping\_info](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#add_shipping_info) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+| af\_add\_to\_cart | [añadir\_al\_carrito](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#add_to_cart) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+| af\_add\_to\_wishlist | [add\_to\_wishlist](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#add_to_wishlist) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+| af\_initiated\_checkout | [begin\_checkout](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#begin_checkout) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
 |  | [campaign\_details](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#campaign_details) | campaign id, campaign name |
-| af\_spent\_credits | [earn\_virtual\_currency](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#earn_virtual_currency) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
-|  | [generate\_lead](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#generate_lead) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>,<Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
+| af\_spent\_credits | [earn\_virtual\_currency](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#earn_virtual_currency) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
+|  | [generate\_lead](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#generate_lead) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
 |  | [join\_group](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#join_group) |  |
 | af\_level\_achieved | [level\_up](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#level_up) |  |
-| af\_login | [login](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#login) |  |
+| af\_login | [Iniciar sesión](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#login) |  |
 |  | [post\_score](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#post_score) | af\_user\_score |
-| af\_purchase | [purchase](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#purchase) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_receipt_id">af\_receipt\_id</Anchor> |
-|  | [refund](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#refund) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_receipt_id">af\_receipt\_id</Anchor> |
-|  | [remove\_from\_cart](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#remove_from_cart) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+| af\_compra | [purchase](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#purchase) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_receipt_id">af\_receipt\_id</Anchor> |
+|  | [refund](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#refund) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_receipt_id">af\_receipt\_id</Anchor> |
+|  | [remove\_from\_cart](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#remove_from_cart) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
 |  | [screen\_view](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#screen_view) |  |
 | af\_search | [search](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#search) |  |
 |  | [select\_content](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#select_content) |  |
-|  | [select\_item](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#select_item) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
-|  | [select\_promotion](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#select_promotion) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+|  | [select\_item](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#select_item) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+|  | [select\_promotion](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#select_promotion) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
 |  | [share](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#share) |  |
 |  | [sign\_up](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#sign_up) |  |
-|  | [spend\_virtual\_currency](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#spend_virtual_currency) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
+|  | [spend\_virtual\_currency](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#spend_virtual_currency) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
 |  | [tutorial\_begin](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#tutorial_begin) |  |
 | af\_tutorial\_completion | [tutorial\_complete](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#tutorial_complete) |  |
 | af\_achievement\_unlocked | [Unlock\_achievement](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#unlock_achievement) | af\_achievement\_id |
-|  | [view\_cart](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_cart) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
-|  | [view\_item](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_item) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
-|  | [view\_item\_list](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_item_list) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
-|  | [view\_promotion](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_promotion) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+|  | [view\_cart](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_cart) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+|  | [view\_item](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_item) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+|  | [view\_item\_list](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_item_list) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
+|  | [view\_promotion](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_promotion) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
 |  | [view\_search\_results](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_search_results) |  |
-| af\_ad\_view | [ad\_impression](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#ad_impression) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
+| af\_ad\_view | [ad\_impression](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#ad_impression) | <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
 
-#### Reserved Google event names
+#### Nombres reservados de eventos de Google
 
-The following event names are reserved and cannot be used as custom event names:
+Los siguientes nombres de eventos están reservados y no se pueden usar como nombres de eventos personalizados:
 
 * `ad_activeview`
 * `ad_click`
@@ -173,49 +182,51 @@ The following event names are reserved and cannot be used as custom event names:
 * `ad_reward`
 * `adunit_exposure`
 * `app_clear_data`
-* `app_exception`
-* `app_install`
-* `app_remove`
-* `app_store_refund`
+* `excepción_de_la_aplicación`
+* `instalación_de_la_aplicación`
+* `eliminación_de_la_aplicación`
+* `reembolso_de_la_tienda_de_aplicaciones`
 * `app_update`
-* `app_upgrade`
-* `dynamic_link_app_open`
-* `dynamic_link_app_update`
-* `dynamic_link_first_open`
+* `actualización_de_la_aplicación`
+* `apertura_de_la_aplicación_mediante_enlace_dinámico`
+* `actualización_de_la_aplicación_mediante_enlace_dinámico`
+* `primera_apertura_mediante_enlace_dinámico`
 * `error`
-* `firebase_campaign`
-* `firebase_in_app_message_action`
-* `firebase_in_app_message_dismiss`
-* `firebase_in_app_message_impression`
-* `first_open`
-* `first_visit`
+* `campaña_de_firebase`
+* `acción_del_mensaje_in-app_de_firebase`
+* `cierre_del_mensaje_in-app_de_firebase`
+* `impresión_del_mensaje_in-app_de_firebase`
+* `primera_apertura`
+* `primera_visita`
 * `in_app_purchase`
-* `notification_dismiss`
-* `notification_foreground`
+* `descarte_de_notificación`
+* `notificación_en_primer_plano`
 * `notification_open`
-* `notification_receive`
-* `notification_send`
-* `os_update`
-* `session_start`
-* `user_engagement`
+* `recepción_de_notificación`
+* `envío_de_notificación`
+* `actualización_del_sistema_operativo`
+* `inicio_de_sesión`
+* `engagement_del_usuario`
 
 </Accordion>
 
-<Accordion title="6. Retrieve app instance ID in AppsFlyer SDK">
+<Accordion title="6. Recuperar el ID de instancia de la aplicación en el SDK de AppsFlyer">
 
-The `app_instance_id` uniquely identifies a Firebase app installation, and the `ga_session_id` uniquely identifies a Firebase app session. Retrieve these values from the Firebase SDK, then send them to GA4 using the `setAdditionalData` API.
+El `app_instance_id` identifica de forma única una instalación de la app de Firebase, y el `ga_session_id` identifica de forma única una sesión de la app de Firebase. Recupera estos valores desde el SDK de Firebase y, después, envíalos a GA4 con la API `setAdditionalData`.
 
-Let your developer implement the code to:
+Deja que tu desarrollador implemente el código para:
 
-1. Collect the `app_instance_id` and the `ga_session_id` fields from Firebase.
-2. Call `setAdditionalData`, before the first launch, to include the app instance ID and `ga_session_id`, in installs, sessions, and in-app events.
+1. Recopila de Firebase los campos `app_instance_id` y `ga_session_id`.
+2. Llama a `setAdditionalData` antes del primer inicio para incluir el ID de instancia de la aplicación y `ga_session_id` en instalaciones, sesiones y eventos in-app.
 
 > 🚧 **Important**
 >
-> `setAdditionalData` (Android / Unity / React Native) and `customData` (iOS) accept a **mapping of key-value pairs**. Sends both `app_instance_id` and `ga_session_id` **together in the same mapping,** so both values are included. If you send them in **separate** `setAdditionalData` calls, the later one will overwrite the earlier one.
+> **Importante:**
+>
+> `setAdditionalData` (Android / Unity / React Native) y `customData` (iOS) aceptan un **mapeo de pares clave-valor**. Envía tanto `app_instance_id` como `ga_session_id` **juntos en el mismo mapeo**, para que se incluyan ambos valores. Si los envías en llamadas **independientes** a `setAdditionalData`, la última sobrescribirá la anterior.
 
 <Tabs>
-<Tab title="Android native">
+<Tab title="Android nativo">
 
 **Kotlin**
 
@@ -237,13 +248,13 @@ FirebaseAnalytics.getInstance(this).getAppInstanceId().addOnCompleteListener(tas
   });
 ```
 
-API reference: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setadditionaldata">setAdditionalData</Anchor>
+Referencia de API: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setadditionaldata">setAdditionalData</Anchor>
 
 </Tab>
 
-<Tab title="iOS native">
+<Tab title="iOS nativo">
 
-**iOS native**
+**iOS nativo**
 
 ```swift
 let appInstanceId = Analytics.appInstanceID()
@@ -259,7 +270,7 @@ let appInstanceId = Analytics.appInstanceID()
 }
 ```
 
-API reference: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#customdata">customData</Anchor>
+Referencia de API: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#customdata">customData</Anchor>
 
 </Tab>
 
@@ -281,35 +292,37 @@ using Firebase.Analytics;
 }
 ```
 
-API reference: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setadditionaldata">setAdditionalData</Anchor>
+Referencia de API: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setadditionaldata">setAdditionalData</Anchor>
 
 </Tab>
 
-<Tab title="React native">
+<Tab title="React Native">
 
-API reference: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#setadditionaldata">setAdditionalData</Anchor>
+Referencia de API: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#setadditionaldata">setAdditionalData</Anchor>
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-<Accordion title="7. Retrieve GA4 session ID in the AppsFlyer SDK">
+<Accordion title="7. Recuperar el ID de sesión de GA4 en el SDK de AppsFlyer">
 
-The `ga_session_id` uniquely identifies a session of a Firebase app. This value must be retrieved from the Firebase SDK and sent to GA4 using the `setAdditionalData` API.
+El `ga_session_id` identifica de forma única una sesión de una aplicación de Firebase. Este valor debe recuperarse del SDK de Firebase y enviarse a GA4 mediante la API `setAdditionalData`.
 
-Let your developer implement the code to:
+Deja que tu desarrollador implemente el código para:
 
-1. Collect the `ga_session_id` field from Firebase.
-2. Call `setAdditionalData` before the first launch to include the session ID (and `app_instance_id`, if used).
-3. Use the key `ga_session_id` when calling the API.
+1. Recoge el campo `ga_session_id` de Firebase.
+2. Llama a `setAdditionalData` antes del primer inicio para incluir el ID de sesión (y `app_instance_id`, si se usa).
+3. Usa la clave `ga_session_id` al llamar a la API.
 
 > 🚧 **Important**
 >
-> `setAdditionalData` (Android / Unity / React Native) and `customData` (iOS) accept a **mapping of key-value pairs**. If your app sends both `app_instance_id` and `ga_session_id` (see [step 5](#5-retrieve-app-instance-id-in-appsflyer-sdk)), **send them together in the same mapping** so both values are included. If you send them in **separate** `setAdditionalData` calls, the later one will overwrite the earlier one.
+> **Importante:**
+>
+> `setAdditionalData` (Android / Unity / React Native) y `customData` (iOS) aceptan un **mapeo de pares clave-valor**. Si tu aplicación envía tanto `app_instance_id` como `ga_session_id` (consulta el [paso 5](#5-retrieve-app-instance-id-in-appsflyer-sdk)), **envíalos juntos en el mismo mapeo** para que se incluyan ambos valores. Si los envías en llamadas **independientes** a `setAdditionalData`, la última sobrescribirá la anterior.
 
 <Tabs>
-<Tab title="Android native">
+<Tab title="Android nativo">
 
 **Kotlin**
 
@@ -331,11 +344,11 @@ FirebaseAnalytics.getInstance(this).getSessionId().addOnCompleteListener(task ->
 });
 ```
 
-API reference: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setadditionaldata">setAdditionalData</Anchor>
+Referencia de API: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setadditionaldata">setAdditionalData</Anchor>
 
 </Tab>
 
-<Tab title="iOS native">
+<Tab title="iOS nativo">
 
 **Swift**
 
@@ -363,7 +376,7 @@ if #available(iOS 14.0, *) {
 }
 ```
 
-API reference: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#customdata">customData</Anchor>
+Referencia de API: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#customdata">customData</Anchor>
 
 </Tab>
 
@@ -394,31 +407,31 @@ public class AnalyticsManager : MonoBehaviour
 }
 ```
 
-API reference: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setadditionaldata">setAdditionalData</Anchor>
+Referencia de API: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setadditionaldata">setAdditionalData</Anchor>
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-<Accordion title="8. Validate the GA4 integration">
+<Accordion title="8. Valida la integración de GA4">
 
-Make sure the events in the postbacks you send to GA4 are registered and read by Google Analytics. There are two methods advertisers can use to view their data:
+Asegúrate de que los eventos en los postbacks que envías a GA4 estén registrados y leídos por Google Analytics. Hay dos métodos que los anunciantes pueden usar para ver sus datos:
 
-* Using [GA4 Explorations](https://support.google.com/analytics/answer/7579450?hl=en&ref_topic=12153537,12153943,2986333,&sjid=20462331341270448-EU&visit_id=638532662145815538-1056226594&rd=1#access-analysis&zippy=%2Cin-this-article), you can explore the raw event data with all associated parameters. **Prerequisite:** [Big Query export](https://support.google.com/analytics/answer/9823238) must be set up in your property)
-* **The Events report** enables advertisers to view their postback events. The report can be found under one or more report collections.  
-  For example, the Events reports can be found in the [Life cycle](https://support.google.com/analytics/answer/12924233?hl=en) or the [Games reporting](https://support.google.com/analytics/answer/12925133?hl=en&sjid=5454549956257318969-NC) collections under **Engagement** > **Events**.   
-  For more information on the Events report see [the Google documentation](https://support.google.com/analytics/answer/12926615?sjid=5454549956257318969-NC).
+* Usando [Exploraciones de GA4](https://support.google.com/analytics/answer/7579450?hl=en&ref_topic=12153537,12153943,2986333,&sjid=20462331341270448-EU&visit_id=638532662145815538-1056226594&rd=1#access-analysis&zippy=%2Cin-this-article), puedes explorar los datos de eventos en bruto con todos los parámetros asociados. **Requisito previo:** [La exportación de BigQuery](https://support.google.com/analytics/answer/9823238) debe estar configurada en tu propiedad)
+* **El reporte de eventos** permite a los anunciantes ver sus eventos de postback. El reporte se puede encontrar en una o más colecciones de reportes.  
+  Por ejemplo, los reportes de eventos se pueden encontrar en las colecciones [Ciclo de vida](https://support.google.com/analytics/answer/12924233?hl=en) o [Reportes de juegos](https://support.google.com/analytics/answer/12925133?hl=en&sjid=5454549956257318969-NC), en **engagement** > **Eventos**.   
+  Para más información sobre el reporte de eventos, consulta [la documentación de Google](https://support.google.com/analytics/answer/12926615?sjid=5454549956257318969-NC).
 
-  ![GA4 Events report](https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png)
-* **The Traffic acquisition report** helps you understand where your website and app visitors are coming from.
+  ![Reporte de eventos de GA4](https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png)
+* **El reporte de adquisición de tráfico** te ayuda a entender de dónde provienen los visitantes de tu sitio web y aplicación.
 
-  Under the [Life cycle collection](https://support.google.com/analytics/answer/12924233?hl=en) go to **Acquisition** > **Traffic Acquisition**).
+  En la [colección Ciclo de vida](https://support.google.com/analytics/answer/12924233?hl=en), ve a **Adquisición** > **Adquisición de tráfico**).
 
-  For more information on the Traffic acquisition report, see [the Google documentation](https://support.google.com/analytics/answer/12923437?hl=en&sjid=5454549956257318969-NC#zippy=%2Chow-do-i-filter-out-traffic-sources-from-the-report).
+  Para más información sobre el reporte de adquisición de tráfico, consulta [la documentación de Google](https://support.google.com/analytics/answer/12923437?hl=en&sjid=5454549956257318969-NC#zippy=%2Chow-do-i-filter-out-traffic-sources-from-the-report).
 
-  ![GA4 Traffic acquisition report](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)
+  ![Reporte de adquisición de tráfico de GA4](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)
 
 </Accordion>
 
-<div data-zendesk-anchors="set-up-google-analytics-ga4-integration=how-does-it-work h_01HZXY8R12MQWKNHX2BXA68MR3=how-does-it-work h_01J35AP3FF599P0XA8VPWTS5R9=set-up-google-analytics-ga4-integration h_01HZQ4ABBN0YEVFJXBNS0HTSQ5=the-event-mapping-table h_01HZQ4ABBN6ZEB7RJQMFS0AB73=reserved-google-event-names" />
+<div data-zendesk-anchors="set-up-google-analytics-ga4-integration=c%C3%B3mo-funciona h_01HZXY8R12MQWKNHX2BXA68MR3=c%C3%B3mo-funciona h_01J35AP3FF599P0XA8VPWTS5R9=configurar-la-integraci%C3%B3n-de-google-analytics-ga4 the-event-mapping-table=la-tabla-de-mapeo-de-eventos h_01HZQ4ABBN0YEVFJXBNS0HTSQ5=la-tabla-de-mapeo-de-eventos reserved-google-event-names=nombres-reservados-de-eventos-de-google h_01HZQ4ABBN6ZEB7RJQMFS0AB73=nombres-reservados-de-eventos-de-google" />

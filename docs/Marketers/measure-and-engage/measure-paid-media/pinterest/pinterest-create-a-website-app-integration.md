@@ -1,5 +1,5 @@
 ---
-title: Pinterest—Create a website app integration
+title: 'Pinterest: crea una integración de la aplicación web'
 metadata:
   keywords:
     - Marketers
@@ -12,85 +12,84 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2026-06-14T13:07:07Z'
-  edited_at: '2026-08-30T15:36:14Z'
+  edited_at: '2026-09-01T00:31:03Z'
   id: 47721580892433
-  locale: en-us
+  locale: es
   section: Pinterest
   section_id: 6551388216337
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/47721580892433-Pinterest-Create-a-website-app-integration
+  url: https://support.appsflyer.com/hc/es/articles/47721580892433
 ---
-> **At a glance:** Set up a Pinterest integration for your website app to send web conversion events to Pinterest for campaign optimization and reporting.
+**Resumen:** Configura una integración de Pinterest para tu aplicación web a fin de enviar eventos de conversión web a Pinterest para la optimización de campañas y la creación de reportes.
 
-## **Set up integration**
+## **Configurar la integración**
 
-**Prerequisites:**
+**Requisitos previos:**
 
-* An account with Pinterest
-* A website app set up in AppsFlyer. <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#web">Learn more</Anchor>
-* The AppsFlyer <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">Web SDK</Anchor> or <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement">Server-to-Server (S2S) API</Anchor> for web attribution
+* Una cuenta de Pinterest
+* Una aplicación web configurada en AppsFlyer. <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer#web">Más información</Anchor>
+* El <Anchor target="_blank" href="/marketers/es/docs/integrate-appsflyer-web-sdk">SDK web</Anchor> de AppsFlyer o la <Anchor target="_blank" href="/marketers/es/docs/server-to-server-s2s-api-for-web-performance-measurement">API de servidor a servidor (S2S)</Anchor> para la atribución web
 
-**To activate or edit the integration:**
+**Para activar o editar la integración:**
 
-1. **To activate:** In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Marketplace** tab.  
-   **To edit:** In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active integrations** tab.
-2. Select your website app from the dropdown menu above.
-3. Search for Pinterest and click **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.  
-   **Note:** The toggle must remain on <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">(activated)</Anchor> for as long as you work with Pinterest.
-5. Complete the configuration in the **Integration** tab as described below.
+1. **Para activar:** En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de partners** > la pestaña **Marketplace**.  
+   **Para editar:** En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de partners** > la pestaña **Integraciones activas**.
+2. Selecciona tu aplicación web en el menú desplegable de arriba.
+3. Busca Pinterest y haz clic en **Integrate**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.  
+   **Nota:** El selector debe permanecer activado <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado)</Anchor> mientras trabajes con Pinterest.
+5. Completa la configuración en la pestaña **Integración** como se describe a continuación.
 
-## **Integration tab**
+## **Pestaña de Integración**
 
-### **Activate partner**
+### **Activar socio**
 
-On the **first visit**, turn on the **Activate Partner** toggle to enable setup of the integration tab's parameters. The toggle must remain on for as long as you work with Pinterest.
+En la **primera visita**, activa el selector **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe permanecer activado mientras trabajes con Pinterest.
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
+Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">la activación del partner</Anchor>.
 
-### **In-app event settings**
+### **Configuración de eventos in-app**
 
-To send in-app event postbacks to Pinterest, provide the following Pinterest credentials. These credentials are included in the event postbacks sent to Pinterest.
+Para enviar postbacks de eventos in-app a Pinterest, proporciona las siguientes credenciales de Pinterest. Estas credenciales se incluyen en los postbacks de eventos enviados a Pinterest.
 
-* **Ad Account ID** - The unique identifier of your Pinterest ad account.
-* **Access Token** - An access token generated in Pinterest.
+* **ID de la cuenta publicitaria**: el identificador único de tu cuenta publicitaria de Pinterest.
+* **Access Token**: un token de acceso generado en Pinterest.
 
-You can find your Ad Account ID and Access Token in the Pinterest Ads Manager UI (see the <Anchor target="_blank" href="https://developers.pinterest.com/docs/api-features/tracking-conversions/#getting-your-access-token-and-ad-account-id">Pinterest documentation</Anchor>). Contact Pinterest support if you need assistance.
+Puedes encontrar el ID de la cuenta publicitaria y el Access Token en la interfaz de usuario de Pinterest Ads Manager (consulta la <Anchor target="_blank" href="https://developers.pinterest.com/docs/api-features/tracking-conversions/#getting-your-access-token-and-ad-account-id">documentación de Pinterest</Anchor>). Contacta con el soporte de Pinterest si necesitas ayuda.
 
-**To set the Pinterest credentials:**
+**Para configurar las credenciales de Pinterest:**
 
-1. In AppsFlyer, on the Pinterest **Active integration** page > **Integration** tab, scroll to **In-app event settings**.
-2. Enter the Ad Account ID and Access Token values in their respective fields.
+1. En AppsFlyer, en la página **Integración activa** de Pinterest > pestaña **Integración**, desplázate hasta **Configuración de eventos in-app**.
+2. Introduce los valores de ID de la cuenta publicitaria y Access Token en sus respectivos campos.
 
-### **In-app event postbacks**
+### **Habilitar la atribución por impresiones**
 
-In this section, you map your AppsFlyer web events to Pinterest events via postbacks.
+En esta sección, asignas tus eventos web de AppsFlyer a eventos de Pinterest mediante postbacks.
 
-1. In the Pinterest integration settings, scroll to **In-app event postbacks**.
-2. Turn on **In-app event postbacks**.
-3. Set the in-app event postback window.
-4. Select the postback settings and mappings for events.
+1. En la configuración de integración de Pinterest, desplázate hasta **Postbacks de eventos in-app**.
+2. Activa los **postbacks de eventos in-app**.
+3. Configura la ventana de postbacks de eventos in-app.
+4. Selecciona la configuración de postback y los mapeos para los eventos.
 
-| **Parameter name** | **Description** |
+| **Nombre del parámetro** | **Nota** |
 | --- | --- |
-| **AppsFlyer event name** | The name of the web event, as received by AppsFlyer from either the Web SDK integrated on your website or from server-to-server events.<br /><br />**Note:** If you don't see the event you want in the list, make sure the event has been activated and recheck. |
-| **Partner event name** | The Pinterest event to map to, selected from Pinterest's predefined event list. For Pinterest event names, see the <Anchor target="_blank" href="https://developers.pinterest.com/docs/api-features/track-conversion-events/#understand-conversion-events">Pinterest documentation</Anchor>. |
-| **To users from** | **This partner only:** Events coming only from users attributed to Pinterest.<br /><br />**All media sources, including organic:** Your entire user base is available to be reported to the partner. |
-| **Including** | Select whether event revenue or parameter values are sent to the partner in the postback. AppsFlyer can send all parameters of the rich web event except the revenue parameter (contained in **af\_revenue**), or all parameters including the revenue value (if present). |
+| **Nombre del evento de AppsFlyer** | El nombre del evento web, tal como lo recibe AppsFlyer desde el SDK web integrado en tu sitio web o desde eventos de servidor a servidor.<br /><br />**Nota:** Si no ves en la lista el evento que quieres, asegúrate de que el evento esté activado y vuelve a comprobarlo. |
+| **Nombre del evento del partner** | El evento de Pinterest al que asignar, seleccionado de la lista predefinida de eventos de Pinterest. Para ver los nombres de eventos de Pinterest, consulta la <Anchor target="_blank" href="https://developers.pinterest.com/docs/api-features/track-conversion-events/#understand-conversion-events">documentación de Pinterest</Anchor>. |
+| **Para usuarios de** | **Solo este partner:** Eventos que provienen únicamente de usuarios atribuidos a Pinterest.<br /><br />**Todas las fuentes de medios, incluidas las orgánicas:** Toda tu base de usuarios está disponible para reportarla al partner. |
+| **Incluye** | Selecciona si los ingresos del evento o los valores de los parámetros se envían al partner en el postback. AppsFlyer puede enviar todos los parámetros del evento web enriquecido excepto el parámetro de ingresos (incluido en **af\_revenue**), o todos los parámetros, incluido el valor de ingresos (si está presente). |
 
 > 📘 **Note**
 >
-> If you also run the Pinterest Tag on your website, send the same event ID to both AppsFlyer and Pinterest so AppsFlyer can deduplicate the events:
+> Si también ejecutas la etiqueta de Pinterest en tu sitio web, envía el mismo ID de evento tanto a AppsFlyer como a Pinterest para que AppsFlyer pueda deduplicar los eventos:
 >
-> * Include af\_customer\_event\_id in the event payload you send to AppsFlyer, inside eventValue for the Web SDK or event\_value for the S2S (server-to-server) API.
-> * Send the same value in the corresponding Tag event.
+> * Incluye af\_customer\_event\_id en la carga útil del evento que envías a AppsFlyer, dentro de eventValue para el SDK web o de event\_value para la API S2S (server-to-server).
+> * Envía el mismo valor en el evento de etiqueta correspondiente.
 >
-> AppsFlyer forwards this value to Pinterest as the event ID. Pinterest then uses it to deduplicate the server-side event it receives from AppsFlyer against the Tag event, so AppsFlyer counts the conversion once.
+> AppsFlyer reenvía este valor a Pinterest como ID de evento. Pinterest lo usa entonces para deduplicar el evento del lado del servidor que recibe de AppsFlyer frente al evento de etiqueta, de modo que AppsFlyer cuente la conversión una sola vez.
 >
-> If you don't send af\_customer\_event\_id, AppsFlyer generates an event ID automatically. This ID won't match your Tag events.
+> Si no envías af\_customer\_event\_id, AppsFlyer genera un ID de evento automáticamente. Este ID no coincidirá con los eventos de tu etiqueta.
 >
-> For more information, see Integrate AppsFlyer Web SDK.
+> Para obtener más información, consulta Integrar AppsFlyer Web SDK.
 
-5. Click **Add Event** to add an event to the list.
+5. Haz clic en **Agregar evento** para añadir un evento a la lista.
 
-<div data-zendesk-anchors="set-up-pinterest=set-up-integration h_01KV339A5ZGK96JNCNR78PDMNH=set-up-integration h_01KV339A67N4436STPW1VJR585=integration-tab h_01KV339A67H0DSSJ3P84PXGQ2F=activate-partner inapp-event-settings=in-app-event-settings h_01KV339A68YZBZZ73T8XTBE6BR=in-app-event-settings inapp-event-postbacks=in-app-event-postbacks h_01KV339A6BN0CWYX7GCJ19RN0J=in-app-event-postbacks" />
+<div data-zendesk-anchors="set-up-pinterest=configurar-la-integraci%C3%B3n h_01KV339A5ZGK96JNCNR78PDMNH=configurar-la-integraci%C3%B3n integration-tab=pesta%C3%B1a-de-integraci%C3%B3n h_01KV339A67N4436STPW1VJR585=pesta%C3%B1a-de-integraci%C3%B3n activate-partner=activar-socio h_01KV339A67H0DSSJ3P84PXGQ2F=activar-socio inapp-event-settings=configuraci%C3%B3n-de-eventos-in-app h_01KV339A68YZBZZ73T8XTBE6BR=configuraci%C3%B3n-de-eventos-in-app inapp-event-postbacks=habilitar-la-atribuci%C3%B3n-por-impresiones h_01KV339A6BN0CWYX7GCJ19RN0J=habilitar-la-atribuci%C3%B3n-por-impresiones" />

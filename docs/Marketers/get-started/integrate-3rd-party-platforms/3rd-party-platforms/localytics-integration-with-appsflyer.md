@@ -1,5 +1,5 @@
 ---
-title: Localytics integration with AppsFlyer
+title: Integración de Localytics con AppsFlyer
 metadata:
   keywords:
     - Localytics
@@ -16,126 +16,124 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2016-07-27T11:09:25Z'
-  edited_at: '2026-06-16T09:50:11Z'
+  edited_at: '2026-08-12T11:59:09Z'
   id: 210748626
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/210748626-Localytics-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/210748626
 ---
-> **At a glance:** Localytics, an AppsFlyer integrated partner, is a marketing and analytics platform for mobile and web apps. Localytics app analytics provide cohort-based retention analysis, funnels, customer segmentation, and real-time analyses to uncover groups of users with the highest loyalty rates and lifetime value. Localytics app marketing brings marketing automation services to apps by measuring the long-term success of customer acquisition campaigns and delivering rich and actionable in-app and push messages to relevant customers when they can have the greatest impact.
+> **En resumen:** Localytics, un partner integrado de AppsFlyer, es una plataforma de marketing y análisis para apps móviles y web. Los análisis de aplicaciones de Localytics proporcionan análisis de retención basados en cohortes, funnels, segmentación de clientes y análisis en tiempo real para identificar grupos de usuarios con las tasas de fidelidad y el valor del ciclo de vida más altos. El marketing de aplicaciones de Localytics ofrece servicios de automatización de marketing para apps al medir el éxito a largo plazo de las campañas de adquisición de clientes y enviar mensajes in-app y push enriquecidos y procesables a los clientes pertinentes cuando pueden tener el mayor impacto.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up Localytics
+## Configuración de Localytics
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-The Localytics configuration window includes 4 tabs: **Integration, Attribution link, Data enrichment,** and **Permissions**. Click on the items below to read about the tabs setup.
+La ventana de configuración de Localytics incluye 4 pestañas: **Integración, Enlace de atribución, Enriquecimiento de datos** y **Permisos**. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del Partner Configuration Window Header, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
 [![](https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png)](https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png)
 
-### General settings
+### Configuración general
 
-**Attribution ID**
+**ID de atribución**
 
-Localytics connects with AppsFlyer via a unique Attribution ID. If you don't already have it, you must obtain it from Localytics to continue with the integration or follow the steps below.
+Localytics se conecta con AppsFlyer a través de un ID de atribución único. Si aún no lo tienes, debes obtenerlo de Localytics para continuar con la integración o seguir los pasos que se indican a continuación.
 
 ![Localytics_msc_new_3.png](https://files.readme.io/2a51018b2248a855ed5a86207c18d132addf5ab56449f4c9915df2eb754e39ca-360001902869.png)
 
-Obtaining the Localytics App Key from Localytics
+Obtención de la App Key de Localytics en Localytics
 
-* Login to your Localytics Dashboard
-* Click **Attribution** in the left panel
-* Select **Third Party Attribution**
-* Copy the Attribution key
+* Inicia sesión en tu Dashboard de Localytics
+* Haz clic en **Atribución** en el panel izquierdo
+* Selecciona **Atribución de terceros**
+* Copia la clave de atribución
 
 [![](https://files.readme.io/dbac1c9beb6d22f4cf8f2ccfbdc0f6a22fec7e6ccad5a52e77c7c32044cab55c-207223506.png)](https://files.readme.io/dbac1c9beb6d22f4cf8f2ccfbdc0f6a22fec7e6ccad5a52e77c7c32044cab55c-207223506.png)
 
-Configure Localytics in AppsFlyer’s Dashboard.
+Configura Localytics en el dashboard de AppsFlyer.
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Localytics following user installs. Use this section to define sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a Localytics tras las instalaciones de los usuarios. Usa esta sección para definir el envío de estos postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/f4856955f97fa71eaaa247b3d63eb308adf7352b4f907b389a0cb3add21281a8-18274585535761.png)
+![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
 
-Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Localytics.
+Selecciona **Events attributed to any partner or organic** para enviar postbacks a Localytics de cualquier usuario que descargue la aplicación.
 
-Once you have completed the configuration, AppsFlyer sends the following data to Localytics for every organic and non-organic install:
+Una vez que hayas completado la configuración, AppsFlyer envía los siguientes datos a Localytics por cada instalación orgánica y no orgánica:
 
-* Device ID (IDFA / Google Advertising ID)
-* Media Source
-* Campaign name
+* ID de dispositivo (IDFA / Google Advertising ID)
+* Fuente de medios
+* Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>.
 
-Click **Save.**
+Haga clic en **Guardar**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for Localytics.
+Los enlaces de atribución no están disponibles para Localytics.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for Localytics.
+Los permisos no están disponibles para Localytics.
 
 </Accordion>
 
-## Viewing the attribution data in the Localytics console
+## Visualización de los datos de atribución en la consola de Localytics
 
-Go to the Localytics Attribution Settings screen and enable Third Party Attribution in Localytics to see AppsFlyer data.
+Ve a la pantalla de Attribution Settings de Localytics y activa Third Party Attribution en Localytics para ver los datos de AppsFlyer.
 
 [![](https://files.readme.io/0c171096b9bfd8a559ba8e1a0ad4296559dc050c7b3b52b8987bd9707e44220a-205662666.png)](https://files.readme.io/0c171096b9bfd8a559ba8e1a0ad4296559dc050c7b3b52b8987bd9707e44220a-205662666.png)
 
 [![](https://files.readme.io/53524088099556d72e6e7573f3997bbb55b1a89e38a2f7a74eec1a1632125c72-205663286.png)](https://files.readme.io/53524088099556d72e6e7573f3997bbb55b1a89e38a2f7a74eec1a1632125c72-205663286.png)
 
-<div data-zendesk-anchors="h_01H9FKCBM5W16BYJQ6TH9SSBVC=important h_01H9FKCBM5Z39GPE5772799DB1=setting-up-localytics h_01H9FKCBM5JZ5V4YMB6S24JA6V=integration-tab h_01H9FKCBM5PSZZ5FP1G12M9F63=activate-partner h_01H9FKCBM5N4RB5ZSB61W02368=general-settings h_01H9FKCBM5STZ79NBP3EFYGMB9=default-postbacks h_01H9FKCBM54S067F1Z51E4FXQD=attribution-link-tab h_01H9FKCBM591RG57Q80JZ7FJWY=cost-tab h_01H9FKCBM5Q8P53V34QRQMS0BS=ad-revenue-tab h_01H9FKCBM5GGXX04JEH3DHNV78=permissions-tab h_01H9FKCBM5VBM87C2PHNZVZ4RJ=viewing-the-attribution-data-in-the-localytics-console" />
+<div data-zendesk-anchors="h_01H9FKCBM5W16BYJQ6TH9SSBVC=importante setting-up-localytics=configuraci%C3%B3n-de-localytics h_01H9FKCBM5Z39GPE5772799DB1=configuraci%C3%B3n-de-localytics h_01H9FKCBM5JZ5V4YMB6S24JA6V=integration-tab activate-partner=activar-socio h_01H9FKCBM5PSZZ5FP1G12M9F63=activar-socio general-settings=configuraci%C3%B3n-general h_01H9FKCBM5N4RB5ZSB61W02368=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01H9FKCBM5STZ79NBP3EFYGMB9=postbacks-predeterminados h_01H9FKCBM54S067F1Z51E4FXQD=attribution-link-tab h_01H9FKCBM591RG57Q80JZ7FJWY=cost-tab h_01H9FKCBM5Q8P53V34QRQMS0BS=ad-revenue-tab h_01H9FKCBM5GGXX04JEH3DHNV78=permissions-tab viewing-the-attribution-data-in-the-localytics-console=visualizaci%C3%B3n-de-los-datos-de-atribuci%C3%B3n-en-la-consola-de-localytics h_01H9FKCBM5VBM87C2PHNZVZ4RJ=visualizaci%C3%B3n-de-los-datos-de-atribuci%C3%B3n-en-la-consola-de-localytics" />

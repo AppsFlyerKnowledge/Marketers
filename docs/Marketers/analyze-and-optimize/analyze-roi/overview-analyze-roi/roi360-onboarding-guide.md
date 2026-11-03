@@ -1,5 +1,5 @@
 ---
-title: ROI360 - onboarding guide
+title: Guía de onboarding de ROI360
 metadata:
   keywords:
     - ROI
@@ -15,93 +15,92 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2024-05-23T08:36:31Z'
-  edited_at: '2026-09-09T15:54:38Z'
+  edited_at: '2026-09-11T00:01:07Z'
   id: 25301111725329
-  locale: en-us
+  locale: es
   section: Overview
   section_id: 15173289016593
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/25301111725329-ROI360-onboarding-guide
+  url: https://support.appsflyer.com/hc/es/articles/25301111725329
 ---
-> **At a glance**: Follow the onboarding instructions in this article to get ROI360 for cost and revenue data up and running.
+> **Resumen**: Sigue las instrucciones de esta guía para activar ROI360 para el manejo de datos de costos e ingresos.
 
 ![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
 
-## About ROI360
+## Sobre ROI360
 
-ROI360 is a suite of unique cost and revenue reporting tools that provide you with the most accurate and fresh data. With the combined cost and revenue insights, you get the complete picture of your return on ad spend (ROAS) and return on investment (ROI), and be able to optimize and improve accordingly.
+ROI360 es un conjunto de herramientas únicas para reportes de costos e ingresos que te ofrece datos precisos y actualizados. Gracias a la combinación de datos de costos e ingresos, podrás obtener una visión completa de tu retorno publicitario (ROAS) y de inversión (ROI), permitiéndote optimizar y mejorar.
 
-Follow the onboarding instructions below to get the ROI360 tools for cost, ad revenue, and revenue (in-app purchases and subscription revenue) reporting up and running. Onboarding requires marketers, app developers, and BI developers to complete.
+Sigue las instrucciones a continuación para activar las herramientas de ROI360 para reportes de costos, ingresos por publicidad e ingresos por compras y suscripciones in-app. El onboarding debe ser completado por marketers, desarrolladores de aplicaciones y desarrolladores de BI.
 
-**Tip**! To onboard quickly, prioritize one app and complete all steps to get ROI360 operational. You can focus on cost, ad revenue, or in-app purchase and subscription revenue, but ensure you finish onboarding for one app first.
+**¡Consejo!** Para incorporarse de manera rápida, prioriza una aplicación y completa todos los pasos para que ROI360 esté activo. Puedes enfocarte en costos, ingresos por publicidad o compras y suscripciones in-app, pero asegúrarte de completar primero el onboarding de una aplicación.
 
 <div id="cost-onboarding" />
 
-<Accordion title="Cost onboarding">
+<Accordion title="Onboarding de costos">
 
 ![](https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png)
 
-With the ROI360 cost solution, you'll get detailed cost and ROI insights, updated multiple times daily. This enables you to effectively manage campaign cost and view budget allocations across various media sources (ad networks), campaigns, and geos, whether you use ad networks, owned media, or agencies.
+Con la solución de costos de ROI360, obtendrás datos detallados sobre costos y ROI, actualizados varias veces al día. Esto te permitirá gestionar eficazmente los costos de campaña y examinar las asignaciones de presupuesto en distintas fuentes de medios, ya sean ad networks, medios propios o agencias.
 
-After completing the cost onboarding, you'll be able to:
+Después de finalizar el onboarding de costos, podrás:
 
-* Get comprehensive, updated overviews of campaign costs with automatic consolidation across all media sources.
-* Base your data analysis on the most accurate cost data, updated post-install.
-* For ROI360 Advanced users, stream detailed cost data to your BI system up to 4 times a day.
-* Manage agency fees and precisely measure overall campaign costs for financial oversight and transparency.
+* Conseguir vistas generales completas y actualizadas de los costos de campaña con consolidación automática de todas las fuentes de medios.
+* Basar tu análisis de datos en información de costos precisa, actualizada después de la instalación.
+* Los usuarios avanzados de ROI360 pueden transmitir datos de costos detallados a tu sistema de BI hasta 4 veces al día.
+* Gestionar las tarifas de la agencia y medir con precisión los costos totales de la campaña para asegurar la supervisión y transparencia financiera.
 
-| Task | Purpose | Actions required | Who's involved |
+| Tarea | Objetivo | Acciones requeridas | ¿Quiénes están involucrados? |
 | --- | --- | --- | --- |
-| Connect cost API integrations for all ad networks you work with. | Get cost data from every source tied to attribution at the most granular level. | <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">Enable Cost API</Anchor> for each ad network in the AppsFlyer UI. **Note**: Before integrating, you need to get the credentials/login info for each ad network. | Marketer |
-| Set up Cost ETL reports. (Available to ROI360 Advanced subscribers) | View campaign cost data with the best granularity available per media source, updated up to 4 times per day. | Set up Cost ETL reports for <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl-for-aws-s3">AWS S3</Anchor> or <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl-for-gcs">GCS</Anchor>. | Marketer/BI developer |
-| Upload cost data via Cost Import. | Get cost data:<ul><li>For ad networks that don’t report cost via API or click.</li><li>When you use OneLink links to advertise via influencers, etc.</li><li>When you need to correct cost data.</li></ul> | Upload or email cost data files using <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor>. | Marketer |
-| Configure agency fees. | If you use agencies, get the total campaign cost, including the percentage fees agencies charge for traffic. | Create <Anchor target="_blank" href="/marketers/docs/incorporate-agency-fees-into-campaign-costs">agency fee rules</Anchor> for each agency you work with. | Marketer |
+| Conecta las integraciones de la API de costos para todas las ad networks con las que trabajas. | Obtén datos de costos de cada fuente vinculada a la atribución al nivel más detallado. | <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">Habilita la API de costos</Anchor> para cada ad network en la interfaz de AppsFlyer. **Nota:** Antes de integrar, debes obtener las credenciales o información para iniciar sesión en cada ad network. | Comercializador |
+| Configura reportes ETL de costos. (Disponible para suscriptores de ROI360 Advanced) | Visualiza datos de costos de campaña con la mejor granularidad disponible por fuente de medios, actualizados hasta 4 veces al día. | Configura reportes ETL de costos para <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl-for-aws-s3">AWS S3</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl-for-gcs">GCS</Anchor>. | Marketer / Desarrollador de BI |
+| Sube datos de costos mediante Importación de costos. | Obtén datos de costos:<ul><li>Para ad networks que no reportan costos a través de la API o clics.</li><li>Al utilizar enlaces de OneLink para anuncios a través de influencers, etc.</li><li>Cuando necesitas corregir datos de costos.</li></ul> | Sube o envía por correo archivos de datos de costos usando <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Importar costos</Anchor>. | Comercializador |
+| Configura las tarifas de la agencia. | Si trabajas con agencias, obtén el costo total de campaña, incluyendo el porcentaje de tarifas que cobran por tráfico. | Crea <Anchor target="_blank" href="/marketers/es/docs/incorporate-agency-fees-into-campaign-costs">reglas de tarifas de agencia</Anchor> para cada agencia con la que trabajes. | Comercializador |
 
 </Accordion>
 
 <div id="ad-revenue-onboarding" />
 
-<Accordion title="Ad revenue onboarding">
+<Accordion title="Onbaording de ingresos publicitarios">
 
 ![](https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png)
 
-With the ROI360 ad revenue solution, you'll receive valuable, granular ad revenue data updated multiple times daily.
+La solución de ingresos publicitarios de ROI360 te proporcionará datos detallados sobre ingresos publicitarios, actualizados varias veces al día.
 
-After completing the ad revenue onboarding, including connecting to the mediation platforms or monetization networks you work with, implementing the ad revenue impression-level SDK API, and sharing data with UA partners, you'll be able to:
+Una vez completado el onboarding de ingresos publicitarios, incluyendo la conexión a plataformas de mediación o redes de monetización, la implementación de la API a nivel de impresión y el intercambio de datos con partners de UA, podrás:
 
-* Get accurate and fresh ad revenue data in all AppsFlyer dashboards and reports.
-* Stream data to your BI system with granularity and freshness according to your needs.
-* Enhance campaign performance by having UA networks optimize based ad revenue metrics.
+* Acceder a datos precisos y actualizados sobre ingresos publicitarios en todos los dashboards y reportes de AppsFlyer.
+* Transmitir datos a tu sistema de BI con el nivel de detalle y actualización que requiera.
+* Mejorar el rendimiento de la campaña al permitir que las redes de UA optimicen según las métricas de ingresos publicitarios.
 
-| Task | Purpose | Actions required | Who's involved |
+| Tarea | Objetivo | Acciones requeridas | ¿Quiénes están involucrados? |
 | --- | --- | --- | --- |
-| Decide your ad revenue attribution integration type. | Understand the benefits of each integration type and decide which one best suits your business requirements. | Learn about the different <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution">ad revenue integration types</Anchor> and choose 1. | Marketer |
-| Connect to all ad revenue mediation and monetization networks you work with. | Get ad revenue data from your mediation or monetization networks. | <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">Connect ad revenue integrations</Anchor> in the AppsFlyer UI. | Marketer |
-| Implement the impression-level ad revenue SDK API. | <ul><li>Relevant for SDK-level integration types.</li><li>Get ad revenue data with near-real-time data freshness.</li></ul> | <ol><li>Integrate the <Anchor target="_blank" href="/marketers/docs/integrate-the-roi360-ad-revenue-sdk-api">ROI360 AppsFlyer ad revenue SDK API</Anchor>.</li><li>To see ad revenue data in the SKAN dashboard, turn on <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#report-events-by-servertoserver-api">SKAdNetwork server-to-server support</Anchor>.</li></ol> | Developer/Marketer |
-| Share ad revenue data with UA partners. | UA ad networks can use the ad revenue data to optimize their UA campaigns. | <ol><li>Learn about the 2 <Anchor target="_blank" href="/marketers/docs/share-ad-revenue-data-with-partners#about-sharing-ad-revenue-data-with-partners">methods to share ad revenue data with UA partners</Anchor>.</li><li><Anchor target="_blank" href="/marketers/docs/share-ad-revenue-data-with-partners#procedures">Implement the method</Anchor> you choose.</li></ol> | Marketer |
-| Set up Revenue ETL reports. (Available to ROI360 Advanced subscribers) | Stream and view ad revenue data in your BI with the best granularity available updated multiple times per day. | Set up <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports">ad revenue ETL reports</Anchor>. | Marketer/BI developer |
+| Decide tu tipo de integración para la atribución de ingresos publicitarios. | Conoce los beneficios de cada tipo de integración y elige el que mejor se adapta a tus necesidades empresariales. | Infórmate sobre los distintos <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution">tipos de integración de ingresos publicitarios</Anchor> y elige uno. | Comercializador |
+| Conéctate a todas las redes de mediación y monetización de ingresos publicitarios con las que colaboras. | Obtén datos de ingresos publicitarios de tus redes de mediación o monetización. | <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">Conecta las integraciones de ingresos publicitarios</Anchor> en la interfaz de AppsFlyer. | Comercializador |
+| Implementa la API del SDK de ingresos publicitarios a nivel de impresión. | <ul><li>Relevante para tipos de integración a nivel de SDK.</li><li>Obtén datos de ingresos publicitarios con una actualización casi en tiempo real.</li></ul> | <ol><li>Integra la <Anchor target="_blank" href="/marketers/es/docs/integrate-the-roi360-ad-revenue-sdk-api">API del SDK de ingresos publicitarios de ROI360 de AppsFlyer</Anchor>.</li><li>Para visualizar los ingresos publicitarios en el dashboard de SKAN, activa la <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#report-events-by-servertoserver-api">compatibilidad de servidor a servidor de SKAdNetwork</Anchor>.</li></ol> | Desarrollador/Marketer |
+| Comparte datos de ingresos publicitarios con partners de adquisición de usuarios (UA). | Las ad networks de UA pueden utilizar estos datos de ingresos para optimizar sus campañas. | <ol><li>Aprende sobre los 2 <Anchor target="_blank" href="/marketers/es/docs/share-ad-revenue-data-with-partners#sobre-el-uso-compartido-de-datos-de-ingresos-publicitarios-con-partners">métodos para compartir datos de ingresos publicitarios con partners de UA</Anchor>.</li><li><Anchor target="_blank" href="/marketers/es/docs/share-ad-revenue-data-with-partners#procedimientos">Implementa el método</Anchor> que elijas.</li></ol> | Comercializador |
+| Configura reportes ETL de ingresos. (Disponible para suscriptores de ROI360 Advanced) | Transmite y visualiza datos de ingresos publicitarios en tu BI con la mejor granularidad posible, actualizándose varias veces al día. | Configura <Anchor target="_blank" href="/marketers/es/docs/revenue-etl-reports">reportes ETL de ingresos publicitarios</Anchor>. | Marketer / Desarrollador de BI |
 
 </Accordion>
 
 <div id="revenue-onboarding" />
 
-<Accordion title="In-app purchase and subscription revenue onboarding">
+<Accordion title="Introducción a ingresos por compras y suscripciones in-app.">
 
 ![](https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png)
 
-With the ROI360 revenue solution, you gain proactive control over your revenue streams.
+Con la solución de ingresos de ROI360, obtienes un control proactivo sobre tus flujos de ingresos.
 
-After completing the revenue onboarding, including setting up store notifications and implementing purchase SDK APIs for Android and iOS, you will:
+Al completar el onboarding de ingresos, incluyendo la configuración de notificaciones de la tienda y la implementación de las APIs del SDK para compras en Android e iOS, podrás:
 
-* Establish automatic validation and measurement for App Store and Google Play transactions.
-* Enjoy seamless, accurate revenue reporting with no further developer efforts required; ROI360 will handle recording all in-app revenue events for you.
-* Get accurate revenue measurements to effectively manage strategic growth initiatives across your portfolio.
+* Establecer validación y medición automática para transacciones en App Store y Google Play.
+* Disfrutar de reportes de ingresos precisos sin necesidad de esfuerzos adicionales del desarrollador; ROI360 se encargará de registrar todos los eventos de ingresos in-app por ti.
+* Obtener mediciones de ingresos precisas para gestionar iniciativas de crecimiento estratégico en toda tu cartera.
 
-| Task | Purpose | Actions required | Who's involved |
+| Tarea | Objetivo | Acciones requeridas | ¿Quiénes están involucrados? |
 | --- | --- | --- | --- |
-| Implement the ROI360 in-app purchase and subscription revenue solution. | Automatically validate and measure revenue from in-app purchases, auto-renewable subscriptions, and related events that come through either the App Store (iOS) or Google Play (Android). | Follow <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">these instructions</Anchor> to:<ol><li>Set up integration with Google Play.</li><li>Set up integration with iOS App Store.</li><li>Integrate the AppsFlyer purchase SDK connector.</li><li>Test in-app purchase and subscription revenue measurement.</li><li>Release the app versions with the SDK connector.</li></ol> | Developer/Marketer |
-| Set up Revenue ETL reports. (Available to ROI360 Advanced subscribers) | Stream and view revenue data in your BI with the best granularity available updated multiple times per day. | Set up <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports">revenue ETL reports</Anchor>. | Marketer/BI developer |
+| Implementa la solución de ingresos por suscripciones y compras in-app de ROI360. | Valida y mide automáticamente los ingresos de compras in-app, suscripciones auto renovables y eventos relacionados que llegan a través de App Store (iOS) o Google Play (Android). | Sigue <Anchor target="_blank" href="/marketers/es/docs/purchase-and-subscription-validation-overview">estas instrucciones</Anchor> para:<ol><li>Configurar la integración con Google Play.</li><li>Configurar la integración con iOS App Store.</li><li>Integrar el conector del SDK de compra de AppsFlyer.</li><li>Probar la medición de las compras in-app y los ingresos por suscripción.</li><li>Lanzar las versiones de la aplicación con el conector SDK.</li></ol> | Desarrollador/Marketer |
+| Configura reportes ETL de ingresos. (Disponible para suscriptores de ROI360 Advanced) | Transmite y visualiza datos de ingresos en tu BI con la mejor granularidad, actualizándose varias veces al día. | Configura <Anchor target="_blank" href="/marketers/es/docs/revenue-etl-reports">reportes ETL de ingresos</Anchor>. | Marketer / Desarrollador de BI |
 
 </Accordion>
 
-<div data-zendesk-anchors="overview=about-roi360 h_01HKHGX9JJQQCKF9SDZRSCM1XJ=about-roi360 h_01HYJ8PSPTFR6QH329TBR73AXM=cost-onboarding h_01HYJ8PSPTKBZ60TF7T0EMSCXW=ad-revenue-onboarding h_01HYJ8PSPTWK4SEGVJWG5J86E2=revenue-onboarding" />
+<div data-zendesk-anchors="overview=sobre-roi360 h_01HKHGX9JJQQCKF9SDZRSCM1XJ=sobre-roi360 h_01HYJ8PSPTFR6QH329TBR73AXM=cost-onboarding h_01HYJ8PSPTKBZ60TF7T0EMSCXW=ad-revenue-onboarding h_01HYJ8PSPTWK4SEGVJWG5J86E2=revenue-onboarding" />

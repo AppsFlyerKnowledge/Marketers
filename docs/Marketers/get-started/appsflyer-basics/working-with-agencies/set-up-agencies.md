@@ -1,5 +1,5 @@
 ---
-title: Set up agencies
+title: Colaboración con agencias y configuración inicial
 metadata:
   keywords:
     - Advertisers
@@ -16,34 +16,34 @@ x-zendesk:
     - Platform essentials
     - Agencies
   created_at: '2019-12-02T14:01:53Z'
-  edited_at: '2025-12-14T14:20:57Z'
+  edited_at: '2026-08-12T11:58:11Z'
   id: 360004013198
-  locale: en-us
+  locale: es
   section: Working with agencies
   section_id: 6551289835025
-  url: https://support.appsflyer.com/hc/en-us/articles/360004013198-Set-up-agencies
+  url: https://support.appsflyer.com/hc/es/articles/360004013198
 ---
-> **At a glance:** Get started working with agencies in AppsFlyer: all the details in this video!
+> **Resumen rápido:** Comienza a colaborar con agencias en AppsFlyer: ¡descubre todos los detalles en este vídeo!
 
-Watch the video below to learn:
+Mira el vídeo a continuación para aprender:
 
-* What is the attribution flow when working with agencies?
-* How to set up an agency integration with your app?
-* How can you get both the agency and ad network attribution data?
+* ¿Cómo funciona el flujo de atribución al trabajar con agencias?
+* ¿Cómo configurar una integración de agencia con tu app?
+* ¿Cómo puedes obtener los datos de atribución tanto de la agencia como de la red publicitaria?
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> When working with agencies, turning off an integrated partner does not automatically disable certain attribution capabilities for the agencies linked to that partner:
+> Al trabajar con agencias, desactivar un partner integrado no desactiva automáticamente ciertas capacidades de atribución para las agencias vinculadas a ese partner:
 >
-> To fully deactivate these capabilities for agencies, the advertiser must manually turn off the following settings before deactivating the partner:
+> Para desactivar completamente estas funcionalidades para las agencias, el anunciante debe desactivar manualmente las siguientes configuraciones antes de desactivar al partner:
 >
-> 1. Install view-through attribution
-> 2. Cross-platform equal attribution priority
+> 1. Atribución view-through en la instalación
+> 2. Igual prioridad de atribución multiplataforma
 >
-> Only after disabling these toggles should the advertiser proceed to deactivate the partner.
+> Solo después de desactivar estas opciones, el anunciante deberá proceder a desactivar al partner.
 >
-> **Note:** If the advertiser deactivates the partner without first turning off these settings, the agencies may continue to use these attribution capabilities.
+> **Nota:** Si el anunciante desactiva al partner sin antes desactivar estas configuraciones, las agencias podrán seguir utilizando estas capacidades de atribución.
 
-<Embed title="Set up agencies" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/3oc17c9r89" providerUrl="https://fast.wistia.com" />
+<Embed title="Colaboración con agencias y configuración inicial" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/3oc17c9r89" providerUrl="https://fast.wistia.com" />
 
-<div data-zendesk-anchors="h_01KC9MDDRPTB05PV6NCGZVFRMJ=important" />
+<div data-zendesk-anchors="h_01KC9MDDRPTB05PV6NCGZVFRMJ=importante" />

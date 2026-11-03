@@ -1,5 +1,5 @@
 ---
-title: Use OneLink API to create links in large-scale campaigns
+title: Utiliza la API de OneLink para crear enlaces en campañas a gran escala
 metadata:
   keywords:
     - api
@@ -15,112 +15,106 @@ x-zendesk:
     - Marketers
     - QR-to-App
   created_at: '2018-06-27T12:00:29Z'
-  edited_at: '2026-05-13T09:31:09Z'
+  edited_at: '2026-10-29T01:24:08Z'
   id: 360001250345
-  locale: en-us
+  locale: es
   section: Deep linking using OneLink
   section_id: 6551203111057
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001250345-Use-OneLink-API-to-create-links-in-large-scale-campaigns
+  url: https://support.appsflyer.com/hc/es/articles/360001250345
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** OneLink API lets you programmatically generate personalized short links at scale, taking users from any owned media—such as SMS, email, web, or QR—directly into your mobile app. Use it to create seamless cross-channel journeys, deepen engagement, and improve conversion.
+> **En resumen:** La API de OneLink te ayuda a captar la atención de los usuarios finales y a aprovechar los medios propios mediante la generación de enlaces personalizados en campañas a gran escala, a través de SMS y mucho más. Úsalo para crear viajes fluidos entre canales, profundizar el engagement y mejorar la conversión.
 
-## About OneLink API
+## API de OneLink
 
-OneLink API is a premium feature that lets you turn any owned channel into a direct path into your mobile app. By generating personalized short links programmatically, you can deliver customized user journeys at scale, deepen engagement, and drive higher conversions across SMS, email, websites, social posts, and more. With OneLink API, you can:
+La API de OneLink es una función premium que te permite convertir cualquier canal propio en una ruta directa a tu aplicación móvil. Al generar enlaces cortos personalizados de forma programática, puedes ofrecer viajes de usuario personalizados a escala, profundizar el engagement e impulsar más conversiones en SMS, correo electrónico, sitios web, publicaciones en redes sociales y mucho más. Con la API de OneLink, puedes:
 
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelink-v2-create-link">Create</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-v2-link">get</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/update-onelink-v2-link">update</Anchor>, and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/delete-onelink-v2-link">delete</Anchor> short links programmatically.
-* Add attribution parameters dynamically for more granular measurement (e.g., media source, campaign, asset…).  
-  **Note:** The media source (pid) parameter is mandatory.
-* Add personalized redirection and deep linking parameters that enable you to direct users to customized in-app or in-web content, such as a product page, coupon, or promotion.
-* Generate large volumes of short links and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-qr">QR codes</Anchor> automatically.
-* Customize TTL (Time To Live) and renewal behavior per use case. <Anchor target="_blank" href="/marketers/docs/bulletin-onelink-short-url-ttls-automatically-extend">Learn more</Anchor>
-* Enforce strict parameter validation to ensure predictable redirection behavior and reliable measurement.
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-quota">Retrieve quota usage</Anchor> for consumption management.
+* https://dev.appsflyer.com/hc/reference/create-onelink-attribution-link
+* Los parámetros relacionados con la atribución, usados para medir y monitorear esfuerzos de marketing, como fuentes de medios, campañas y activos.**Nota**: El parámetro de la fuente de medios (pid) es obligatorio.
+* Estos parámetros te permiten enviar a los usuarios a contenido personalizado in-app, por ejemplo, una página de producto específica, un código de cupón o una promoción.
+* Genera automáticamente grandes volúmenes de enlaces cortos y <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-qr">QR code</Anchor>.
+* Personaliza el TTL (Time To Live) y el comportamiento de renovación por caso de uso. <Anchor target="_blank" href="/marketers/es/docs/bulletin-onelink-short-url-ttls-automatically-extend">Más información</Anchor>
+* Aplica una validación estricta de parámetros para garantizar un comportamiento de redirección predecible y una medición fiable.
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-quota">Consulta el uso de la cuota</Anchor> para gestionar el consumo.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> A global travel app generates millions of contextual short links daily across CRM, email, and QR experiences. Using OneLink API v2.0, their automation platform builds per-user deep links that respect locale, loyalty tier, and specific in-app destinations — while maintaining governance and consistent measurement across all markets.
+> Una aplicación global de viaje genera millones de enlaces cortos contextuales al día en experiencias de CRM, correo electrónico y QR. Con la API de OneLink v2.0, su plataforma de automatización crea enlaces profundos por usuario que respetan la configuración regional, el nivel de fidelización y los destinos específicos in-app, al tiempo que mantiene la gobernanza y una medición coherente en todos los mercados. Prácticas recomendadas:
 
-## Get started
+## Comienza
 
-**To get started using OneLink API, follow the steps below:**
+**La API de OneLink es una función premium que se utiliza para:**
 
-**Prerequisite:** An AppsFlyer account. To access OneLink API, contact your CSM or write to hello@appsflyer.com.
+**Requisito previo:** Una cuenta de AppsFlyer. Para acceder a la API de OneLink, contacta con tu CSM o escríbenos a hello@appsflyer.com.
 
-**To set up OneLink API:**
+**Para configurar la API de OneLink:**
 
-1. Generate the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#token-types">OneLink API token</Anchor> (Admin permissions needed).
-2. <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">Create a OneLink template</Anchor>.
-3. Copy the Template ID.   
+1. Copia el <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens#tipos-de-token">token de la API de OneLink</Anchor>.
+2. <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#crear-una-plantilla-de-onelink">Crea una plantilla de OneLink</Anchor>.
+3. Copia el ID de la plantilla de OneLink.   
    [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
-4. Share the template ID and API token with the developer and have them follow these <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview">instructions</Anchor>.
+4. Comparte el ID de la plantilla y el token de API con el desarrollador y pídele que siga estas <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview">instrucciones</Anchor>.
 
-## **Dashboard**
+## **Panel de Control**
 
-The OneLink API dashboard provides a view of your daily, monthly, and three-month API usage. This helps you monitor your consumption against the monthly quota limit. 
+El dashboard de la API de OneLink muestra nuestro uso diario, mensual y trimestral de la API. Esto te ayuda a llevar el monitoreo de tu consumo frente al límite de cuota mensual. 
 
-**To view the OneLink API dashboard**: 
+**Para ver el dashboard de la API de OneLink**: 
 
-In AppsFlyer, from the side menu, select **Engage** > **OneLink API**.
+En AppsFlyer, en el menú lateral, selecciona **Engage** > **API de OneLink**.
 
-## Use cases
+## CASOS DE USO
 
-The following use cases highlight common ways to use OneLink API to create seamless, contextual journeys into your app.
+Los siguientes casos de uso destacan formas habituales de usar la API de OneLink para crear viajes fluidos y contextuales hacia tu aplicación.
 
 <div id="crossplatform-journeys-ctv-desktop-webtoapp" />
 
-<Accordion title="Cross-platform journeys (CTV, desktop, web-to-app)">
+<Accordion title="Viajes multiplataforma (CTV, desktop, Web-to-app)">
 
-Generate short-lived or per-session links that help users move seamlessly across devices. Common examples include QR codes on TV spots or “scan to continue” flows on desktop that take users directly to the correct in-app step.
+Genera enlaces de corta duración o por sesión que ayuden a los usuarios a moverse sin fricciones entre dispositivos. Algunos ejemplos habituales incluyen QR code en anuncios de TV o flujos de «escanea para continuar» en desktop que llevan a los usuarios directamente al paso in-app correcto.
 
-**Value:** Seamless continuity and improved conversion across devices.
+**Valor:** Continuidad sin fricciones y mejora de la conversión entre dispositivos.
 
 </Accordion>
 
 <div id="crmpowered-channels-sms-email-whatsapp" />
 
-<Accordion title="CRM-powered channels (SMS, email, WhatsApp)">
+<Accordion title="Canales impulsados por CRM (SMS, correo electrónico, WhatsApp)">
 
-Create per-user, personalized short links at send-time for high-intent messages such as price-drop alerts, waitlists, win-backs, bill reminders, or magic sign-in flows.
+Crea enlaces cortos personalizados por usuario en el momento del envío para mensajes de alta intención, como alertas de bajada de precio, listas de espera, campañas de recuperación, recordatorios de facturas o flujos de inicio de sesión mágico.
 
-**Value:** Personalization at scale with consistent attribution.
+**Valor:** Personalización a escala con una atribución coherente.
 
 </Accordion>
 
 <div id="offline-and-qrbased-engagement" />
 
-<Accordion title="Offline and QR-based engagement">
+<Accordion title="Engagement offline y basado en QR">
 
-Produce scannable links for in-store materials, receipts, packaging, or event signage. You can update destination settings without reprinting physical assets.
+Genera enlaces escaneables para materiales en tienda, recibos, embalajes o señalización de eventos. Puedes actualizar la configuración de destino sin tener que volver a imprimir los materiales físicos.
 
-**Value:** Dynamic routing and offline attribution without reprinting physical assets.
+**Valor:** Enrutamiento dinámico y atribución offline sin tener que reimprimir activos físicos.
 
 </Accordion>
 
 <div id="referral-and-advocate-sharing" />
 
-<Accordion title="Referral and advocate sharing">
+<Accordion title="Compartición de referidos y defensores de la marca">
 
-Enable shareable short links for influencer, creator, or customer referral programs with customizable parameters and attribution-ready routing.
+Habilita enlaces cortos compartibles para programas de referencias de influencers, creadores o clientes, con parámetros personalizables y enrutamiento preparado para la atribución.
 
-**Value:** Scalable measurement and accurate attribution for referrals.
+**Valor:** Medición escalable y atribución precisa para las referencias.
 
 </Accordion>
 
-## **Traits and limitations**
+## **Características y limitaciones**
 
-This section lists some of the key OneLink API traits and limitations. See a <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview">complete and detailed list</Anchor>.
+En esta sección se enumeran algunos de los principales atributos y limitaciones de la API de OneLink. Dile al desarrollador que siga las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelink_rest_api">instrucciones del centro de desarrollo</Anchor>.
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| API quota limit | <ul><li>The limit for using the OneLink API to create, edit, or delete OneLink links is 7.5 million requests per month (UTC timezone), per account.</li><li>POST, PUT, and DELETE requests count towards this limit. GET requests and GET QR requests do not count toward the quota.</li><li>All requests made after exceeding this quota are not served; the API call receives status code 429 with the message "Monthly quota exceeded".</li><li>You can check how much of the quota is used/remaining by either:<br />• Visiting the OneLink API page in the AppsFlyer platform to view usage history from the past 4 months, or<br />• Using the GET quota API to retrieve your current quota status.<br />You can also use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-quota">GET quota API</Anchor> to trigger internal alerts when your usage nears your defined threshold.</li></ul> |
-| Link visibility | <ul><li>Links created via the API do not appear in the list of OneLink custom links in the AppsFlyer dashboard.</li></ul>**Best practice:** Save API-created links to a local table, so you can access the links for any future purpose. |
+| Límite de cuota de la API | <ul><li>El límite para usar la API de OneLink para crear, editar o eliminar enlaces de OneLink es de 7,5 millones al mes (zona horaria UTC), por cuenta.</li><li>Las solicitudes POST, PUT y DELETE cuentan para este límite. Las solicitudes GET y las solicitudes GET de QR no cuentan para la cuota.</li><li>No se atienden todas las solicitudes que se realizan después de superar esta cuota y no se crean los enlaces; la llamada a la API recibe el código de estado de error 429 con el mensaje «Se ha superado la cuota mensual».</li><li>Puedes comprobar cuánto de la cuota se ha usado o queda disponible de una de estas formas:<br />• Visita la página de la API de OneLink en la plataforma de AppsFlyer para ver el historial de uso de los últimos 4 meses, o<br />• Usa la API GET de cuota para recuperar el estado actual de tu cuota.<br />También puedes usar la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-quota">API GET de cuota</Anchor> para activar alertas internas cuando tu uso se acerque al umbral definido.</li></ul> |
+| Visibilidad de los enlaces | <ul><li>Los enlaces creados mediante la API no aparecen en la lista de enlaces personalizados de OneLink en el dashboard de AppsFlyer.</li></ul>af\_dp |
 
-> 📘 **Note**
->
-> A new version of OneLink API (v2.0) was released in December 2025. The previous version (v1.0) is deprecated and will continue to work until June 2026, after which it won’t be maintained. New integrations should use OneLink API v2.0. For migration guidance, see the Dev Hub <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/migrate_to_onelink_api_v2">migration guide</Anchor>.
-
-<div data-zendesk-anchors="onelink-api=about-onelink-api h_01HJR5MAKKNH236MVDZ03X1B1P=about-onelink-api h_01HJR5MAKKTDRPS0WQ44VN594X=example h_01KATK4KWTGSHTW5BEY8TEE5JD=get-started h_01KATKWCPHZB1MKCJ8DVDYZ1B3=dashboard h_01KAGQNZZA0NM19KV29QZ9ZDKP=use-cases h_01KBJ92FSTKCH9KXGWKJAF1DFH=crossplatform-journeys-ctv-desktop-webtoapp h_01KBJ92FST51NKDB465N76EX3M=crmpowered-channels-sms-email-whatsapp h_01KBJ92FST5H7V5S13TZ502VJV=offline-and-qrbased-engagement h_01KBJ92FST4FP4ZES5T643DD3R=referral-and-advocate-sharing h_01KAGQP00QZ2VBE9EY3SNPHGBP=traits-and-limitations h_01KAGM8HN6FHRK73FSF0TGXSX7=note" />
+<div data-zendesk-anchors="onelink-api=api-de-onelink h_01HJR5MAKKNH236MVDZ03X1B1P=api-de-onelink h_01HJR5MAKKTDRPS0WQ44VN594X=ejemplo get-started=comienza h_01KATK4KWTGSHTW5BEY8TEE5JD=comienza dashboard=panel-de-control h_01KATKWCPHZB1MKCJ8DVDYZ1B3=panel-de-control use-cases=casos-de-uso h_01KAGQNZZA0NM19KV29QZ9ZDKP=casos-de-uso h_01KBJ92FSTKCH9KXGWKJAF1DFH=crossplatform-journeys-ctv-desktop-webtoapp h_01KBJ92FST51NKDB465N76EX3M=crmpowered-channels-sms-email-whatsapp h_01KBJ92FST5H7V5S13TZ502VJV=offline-and-qrbased-engagement h_01KBJ92FST4FP4ZES5T643DD3R=referral-and-advocate-sharing traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01KAGQP00QZ2VBE9EY3SNPHGBP=caracter%C3%ADsticas-y-limitaciones" />

@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Security enhancement for traffic managed by agencies'
+title: 'Boletín: Mejora de la seguridad para el tráfico gestionado por agencias'
 metadata:
   keywords:
     - Advertisers
@@ -18,17 +18,16 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2024-06-09T14:08:35Z'
-  edited_at: '2024-08-12T13:38:27Z'
+  edited_at: '2026-10-20T03:55:29Z'
   id: 25770412740369
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/25770412740369-Bulletin-Security-enhancement-for-traffic-managed-by-agencies
+  url: https://support.appsflyer.com/hc/es/articles/25770412740369
 ---
-| **What's new?** | To protect your data, ensure its security, and reduce fraud, we're enhancing security measures for agencies managing traffic on behalf of advertisers that are running campaigns on ad networks. As of the effective date, only traffic from agencies authorized by the ad networks will be recorded and measured in AppsFlyer. This means unauthorized agencies won't be able to configure the integration (the partner configuration window will be grayed out), and unauthorized traffic from these agencies will result in a 403 (Forbidden) response from AppsFlyer. After the agencies are added to the list, the approval applies account-wide allowing them to run campaigns with all apps on your network.<br /><br />**Note:**<ul><li>Applies also to empty af\_prt parameters on attribution links</li><li>Doesn't apply to agencies working with <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor></li></ul> |
+| **Novedades** | Para proteger tus datos, garantizar su seguridad y reducir el fraude, estamos mejorando las medidas de seguridad para las agencias que administran el tráfico en nombre de los anunciantes que ejecutan campañas en redes de publicidad. A partir de la fecha de entrada en vigor, solo se registrará y medirá en AppsFlyer el tráfico de las agencias autorizadas por las ad network. Esto significa que las agencias no autorizadas no podrán configurar la integración (la ventana de configuración del partner aparecerá atenuada) y que el tráfico no autorizado de estas agencias dará lugar a una respuesta 403 (Prohibido) de AppsFlyer. Una vez que se añadan las agencias a la lista, la aprobación se aplicará a toda la cuenta, lo que les permitirá ejecutar campañas con todas las aplicaciones de tu red.<br /><br />**Nota:**<ul><li>Se aplica también a parámetros af\_prt vacíos en enlaces de atribución</li><li>No se aplica a las agencias que trabajan con <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns">SRNs</Anchor></li></ul> |
 | --- | --- |
-| **Effective date** | July 31, 2024 |
-| **Where** | <ul><li>**Agency:** Integration page</li><li>**Ad network:** Security center</li></ul> |
-| **What you should know** | <ul><li>**Agency:** Reach out to the partner and make sure your agency ID (<Anchor target="_blank" href="/partners/docs/about-agency-accounts#af_prt-parameter">the af\_prt name</Anchor>) is added to their list of authorized agencies.</li><li>**Partner:** Make sure to add all agency IDs (af\_prt) in the <Anchor target="_blank" href="/partners/docs/set-up-your-list-of-authorized-agencies">new authorized agencies section</Anchor>.</li></ul> |
-| **Implications** | Starting from the specified date, agencies not on the ad network's approved list won't have their traffic recorded and measured, nor will they be able to access the integration page for all apps running campaigns on the ad network. |
+| **Fecha de entrada en vigor** | 31 de julio de 2024 |
+| **Donde** | <ul><li>**Agencia:** Página de integración</li><li>**Ad network:** Centro de seguridad</li></ul> |
+| **Lo que debes saber** | <ul><li>**Agencia:** Ponte en contacto con el partner y asegúrate de que el ID de tu agencia (<Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#parámetro-af_prt">el nombre af\_prt</Anchor>) esté añadido a su lista de agencias autorizadas.</li><li>**Partner:** Asegúrate de añadir todos los ID de agencia (af\_prt) en la <Anchor target="_blank" href="/partners/es/docs/set-up-your-list-of-authorized-agencies">nueva sección de agencias autorizadas</Anchor>.</li></ul> |
+| **Implicaciones** | A partir de la fecha especificada, no se registrará ni medirá el tráfico de las agencias que no estén en la lista aprobada de la red de publicidad, ni podrán acceder a la página de integración de todas las aplicaciones que ejecuten campañas en la red de publicidad. |

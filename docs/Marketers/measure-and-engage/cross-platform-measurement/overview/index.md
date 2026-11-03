@@ -1,18 +1,19 @@
 ---
-title: Overview
-excerpt: Guides for getting started with Cross-platform measurement
+title: Visión general
+excerpt: Guías para comenzar con la medición multiplataforma
 table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2023-05-15T10:31:28Z'
   id: 15323084579345
-  locale: en-us
+  locale: es
   parent_section_id: 6551947798801
   type: section
-  url: https://support.appsflyer.com/hc/en-us/sections/15323084579345-Overview
+  url: >-
+    https://support.appsflyer.com/hc/es/sections/15323084579345-Visi%C3%B3n-general
 ---
-- [CTV, PC, and console platform attribution concepts](/docs/ctv-pc-and-console-platform-attribution-concepts)
-- [Set up cross-platform links for multi-device campaigns](/docs/set-up-cross-platform-links-for-multi-device-campaigns)
-- [CTV, PC, and console platform direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links)
-- [Cross-platform landing pages with Smart Script](/docs/cross-platform-landing-pages-with-smart-script)
+- [Conceptos de atribución de plataformas CTV, PC y consola](/docs/ctv-pc-and-console-platform-attribution-concepts)
+- [Configura enlaces multiplataforma para campañas en múltiples dispositivos](/docs/set-up-cross-platform-links-for-multi-device-campaigns)
+- [Enlaces de atribución directa de plataforma CTV, PC y consola](/docs/ctv-pc-and-console-platform-direct-attribution-links)
+- [Páginas de destino multiplataforma con Smart Script](/docs/cross-platform-landing-pages-with-smart-script)

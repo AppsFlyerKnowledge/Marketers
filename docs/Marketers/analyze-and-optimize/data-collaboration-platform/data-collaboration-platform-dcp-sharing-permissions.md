@@ -1,5 +1,5 @@
 ---
-title: Data Collaboration Platform (DCP) sharing permissions
+title: Permisos de uso compartido de la plataforma de colaboración de datos (DCP)
 metadata:
   keywords:
     - Marketers
@@ -12,50 +12,49 @@ x-zendesk:
     - Marketers
     - Audience Activation
   created_at: '2025-12-17T10:36:33Z'
-  edited_at: '2026-05-19T12:27:23Z'
+  edited_at: '2026-08-12T11:54:08Z'
   id: 42009477902353
-  locale: en-us
+  locale: es
   section: Data Collaboration Platform
   section_id: 26230608274065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/42009477902353-Data-Collaboration-Platform-DCP-sharing-permissions
+  url: https://support.appsflyer.com/hc/es/articles/42009477902353
 ---
-> **At a glance:** Define the DCP collaboration permissions that determine how your collaborator can use your shared data.
+> **En resumen:** Define los permisos de colaboración de la DCP que determinan cómo tu colaborador puede usar tus datos compartidos.
 
-This article describes the permissions available when sharing data in a Data Collaboration Platform (DCP) collaboration. Sharing permissions are defined by the **Collaboration policy** you set when <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration">creating a collaboration</Anchor> and specify what collaborators can do with your data and which resources or activation partners they can use. In addition to this default policy, custom data permissions can also be set per source. The Collaboration policy defines the:
+Este artículo describe los permisos disponibles al compartir datos en una colaboración de la plataforma de colaboración de datos (DCP). Los permisos de uso compartido se definen mediante la **política de colaboración** que configuras al <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-a-collaboration">crear una colaboración</Anchor> y especifican qué pueden hacer los colaboradores con tus datos y qué recursos o Partners de activación pueden usar. Además de esta política predeterminada, también se pueden configurar permisos de datos personalizados por fuente. La política de colaboración define lo siguiente:
 
-* [Data permissions](#data-permissions)
-* [Access permissions](#access-permissions)
+* [Permisos de datos](#permisos-de-datos)
+* [Permisos de acceso](#permisos-de-acceso)
 
-## Data permissions
+## Permisos de datos
 
-The data permissions you select define how your collaborator can use your associated data and apply to all sources you associate with the collaboration. Permissions can also be modified individually per source.
+Los permisos de datos que selecciones definen cómo tu colaborador puede usar tus datos asociados y se aplican a todas las fuentes que asocies con la colaboración. Los permisos también se pueden modificar individualmente por fuente.
 
-<Image alt="Data permissions Dec 2025.png" src="https://files.readme.io/1e33caebbe4a8ff14fe84be6ba7f50b82a5fe7c268ba186db0250c7084718d54-42009477892241.png" width="704px" />
+<Image alt="Permisos de datos Dic 2025.png" src="https://files.readme.io/1e33caebbe4a8ff14fe84be6ba7f50b82a5fe7c268ba186db0250c7084718d54-42009477892241.png" width="704px" />
 
-### Data permissions include:
+### Los permisos de datos incluyen:
 
-| Permission | Description |
+| Permiso | Nota |
 | --- | --- |
-| **Make visible to collaborator** | Allows the collaborator to view and use the sources you associate with the collaboration, according to the other permissions you grant. When disabled, your sources will only be visible to you. |
-| **Query data** | Allows the collaborator to query the data and create aggregated reports. You can specify whether the collaborator:<ul><li>**Can query only intersecting data** (Overlapping dataset) - Refers to the common users of both parties.<br />**Note:** When this option is selected, the source size is not available.</li><li>**Can query all data** (Universal dataset) - Refers to all data you associate with the collaboration.</li></ul> |
-| **Build audiences** | Allows the collaborator to use the data when building their <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">audiences</Anchor>. You can specify whether the collaborator:<ul><li>**Can use only intersecting data** (Overlapping dataset) - Refers to the common users of both parties.<br />**Note:** When this option is selected, the source size is not available.</li><li>**Can use all data** (Universal dataset) - Refers to all data you associate with the collaboration.</li></ul> |
-| **Partner connections** | Allows the collaborator to send the audiences created from your sources to partner connections for activation. When enabling this option, you can grant export permission for:<ul><li>**All connected partners** - When selecting this option, you can also **Allow future partner connections**, which automatically allows audience export to all media partners that AppsFlyer DCP partners with.</li><li>**Specific partners only**<ul><li>When selecting specific partners, you can further specify whether you allow your collaborator to use only their activation connections or yours (e.g., only their Meta connection or your Meta connection).</li><li>If you select your connections, you’ll need to choose which of your connected accounts the collaborator can use (e.g., only your Meta connection A but none of your other Meta connections).</li></ul></li></ul>**Important notes:**<ul><li>When your collaborators are ready to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences#send-an-audience-for-activation">activate audiences</Anchor> based on your sources, only the partner connections that you granted permissions for will be available to them.</li><li>If you haven’t granted the collaborator permission to publish or export audiences, then when they attempt to activate an audience, the activation request is sent to you to complete.</li></ul> |
-| **File export** | Allows the collaborator to export audience files to their cloud bucket. |
+| **Hacer visible al colaborador** | Permite al colaborador ver y usar las fuentes que asocies con la colaboración, de acuerdo con los demás permisos que le concedas. Si se desactiva, tus fuentes solo serán visibles para ti. |
+| **Consultar datos** | Permite al colaborador consultar los datos y crear reportes agregados. Puedes especificar si el colaborador:<ul><li>**Solo puede consultar datos coincidentes** (conjunto de datos superpuestos): hace referencia a los usuarios comunes de ambas party.<br />**Nota:** Si se selecciona esta opción, el tamaño de la fuente no está disponible.</li><li>**Puede consultar todos los datos** (conjunto de datos Universal): hace referencia a todos los datos que asocies con la colaboración.</li></ul> |
+| **Crear audiencias** | Permite al colaborador usar los datos al crear sus <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-add-connections">audiencias</Anchor>. Puedes especificar si el colaborador:<ul><li>**Solo puede usar datos coincidentes** (conjunto de datos superpuestos): hace referencia a los usuarios comunes de ambas party.<br />**Nota:** Si se selecciona esta opción, el tamaño de la fuente no está disponible.</li><li>**Puede usar todos los datos** (conjunto de datos Universal): hace referencia a todos los datos que asocies con la colaboración.</li></ul> |
+| **Conexiones de partners** | Permite al colaborador enviar las audiencias creadas a partir de tus fuentes a conexiones de Partners para su activación. Al habilitar esta opción, puedes conceder permiso de exportación para:<ul><li>**Todos los Partners conectados** - Al seleccionar esta opción, también puedes **permitir futuras conexiones de Partners**, lo que permite automáticamente la exportación de audiencias a todos los Partners de medios con los que AppsFlyer DCP colabora.</li><li>**Solo partners específicos**<ul><li>Si seleccionas partners específicos, puedes indicar además si permites que tu colaborador use solo sus conexiones de activación o las tuyas (por ejemplo, solo su conexión de Meta o tu conexión de Meta).</li><li>Si seleccionas tus conexiones, tendrás que elegir cuáles de tus cuentas conectadas puede usar el colaborador (por ejemplo, solo tu conexión de Meta A, pero ninguna de tus otras conexiones de Meta).</li></ul></li></ul>**Notas importantes:**<ul><li>Cuando tus colaboradores estén listos para <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences#enviar-audiencia-para-activación">activar audiencias</Anchor> en función de tus fuentes, solo tendrán disponibles las conexiones de Partners para las que les hayas concedido permisos.</li><li>Si no has concedido al colaborador permiso para publicar o exportar audiencias, cuando intente activar una audiencia, la solicitud de activación se te enviará a ti para que la completes.</li></ul> |
+| **Exportación de archivos** | Permite al colaborador exportar archivos de audiencias a su cloud bucket. |
 
-## Access permissions
+## Permisos de acceso
 
-The access permissions define the resources your collaborator can access. This includes the option to grant your collaborator access to your <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections#create-data-identity-connections">Data & Identity (data resolution) connections</Anchor>, enabling them to use these connections to enrich their sources.
+Los permisos de acceso definen los recursos a los que puede acceder tu colaborador. Esto incluye la opción de conceder a tu colaborador acceso a tus <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-add-connections#create-data-identity-connections">conexiones de Data & Identity (data resolution)</Anchor>, lo que le permite usar estas conexiones para enriquecer sus fuentes.
 
-**Note:** To grant access, the relevant Data & Identity connection must be active.
+**Nota:** Para conceder acceso, la conexión de Data & Identity correspondiente debe estar activa.
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-This section outlines some key traits and limitations of DCP permissions.
+Esta sección describe algunas características y limitaciones clave de los permisos de DCP.
 
-| Trait or limitation | Details |
+| Característica o limitación | Nota |
 | --- | --- |
-| **Audience behavior** | <ul><li>If an audience is built from a single source → the source’s partner permissions determine which activation partners are available.</li><li>If an audience is built from multiple sources with different partner permissions →<br />The lowest common denominator applies.<br />**Example:** Source A allows all partners, Source B allows only Meta → Only Meta will be available for activation.</li></ul> |
-| **Changes in permissions** | **Removing activation permissions entirely:**<ul><li>Any existing audience using the affected source will expire.</li><li>New audiences using the source will behave as today (require new activation permissions).</li></ul>**Removing a specific partner:**<ul><li>If an existing audience is connected only to that removed partner → the audience will expire.</li><li>If the audience is connected to multiple partners →<br />The audience remains active, but activation with the removed partner will no longer be available.</li></ul> |
+| **Comportamiento de la audiencia** | <ul><li>Si una audiencia se crea a partir de una sola fuente → los permisos de partner de la fuente determinan qué partners de activación están disponibles.</li><li>Si una audiencia se crea a partir de varias fuentes con permisos de partner distintos →<br />se aplica el mínimo común denominador.<br />**Ejemplo:** La fuente A permite todos los partners; la fuente B permite solo Meta → solo Meta estará disponible para la activación.</li></ul> |
+| **Cambios en los permisos** | **Eliminar por completo los permisos de activación:**<ul><li>Cualquier audiencia existente que use la fuente afectada caducará.</li><li>Las nuevas audiencias que usen la fuente se comportarán como hoy (requerirán nuevos permisos de activación).</li></ul>**Eliminar un partner específico:**<ul><li>Si una audiencia existente está conectada solo a ese partner eliminado → la audiencia caducará.</li><li>Si la audiencia está conectada a varios Partners →<br />la audiencia seguirá activa, pero la activación con el Partner eliminado dejará de estar disponible.</li></ul> |
 
-<div data-zendesk-anchors="h_01KCKFQH3AVZY9V2KGZE06K3VT=data-permissions h_01KCKJHVQ9EGTGAJ9NP021P42Q=data-permissions-include h_01KCKFQH3AFBDA50FJ0ZW9Q8J1=access-permissions h_01KCKFQH3AEM9WR95S2ZZ6NNNC=traits-and-limitations" />
+<div data-zendesk-anchors="data-permissions=permisos-de-datos h_01KCKFQH3AVZY9V2KGZE06K3VT=permisos-de-datos data-permissions-include=los-permisos-de-datos-incluyen h_01KCKJHVQ9EGTGAJ9NP021P42Q=los-permisos-de-datos-incluyen access-permissions=permisos-de-acceso h_01KCKFQH3AFBDA50FJ0ZW9Q8J1=permisos-de-acceso traits-and-limitations=especificaciones-y-limitaciones h_01KCKFQH3AEM9WR95S2ZZ6NNNC=especificaciones-y-limitaciones" />

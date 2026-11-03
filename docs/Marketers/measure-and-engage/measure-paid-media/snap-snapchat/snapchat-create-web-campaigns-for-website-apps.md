@@ -1,5 +1,5 @@
 ---
-title: Snapchat—Create web campaigns for website apps
+title: 'Snapchat: crea campañas web para aplicaciones web'
 metadata:
   keywords:
     - Marketers
@@ -12,176 +12,175 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2026-04-29T09:02:24Z'
-  edited_at: '2026-10-16T09:31:21Z'
+  edited_at: '2026-10-20T03:49:18Z'
   id: 46196482479249
-  locale: en-us
+  locale: es
   section: Snap (Snapchat)
   section_id: 6551316540945
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/46196482479249-Snapchat-Create-web-campaigns-for-website-apps
+  url: https://support.appsflyer.com/hc/es/articles/46196482479249
 ---
-> **At a glance:** Set up a Snapchat Ads integration for your website app to send web conversion signals to Snapchat via the Conversions API.
+> **At a glance:** Configura una integración de anuncios de Snapchat para la aplicación de tu sitio web a fin de enviar señales de conversión web a Snapchat mediante la API de conversiones.
 
-## Overview
+## Descripción general
 
-AppsFlyer supports integration with Snapchat Ads (`snapweb_int`) for website app campaigns, letting you report attribution and conversion data directly through Snapchat's Conversions API. Snapchat can then use this data to optimize ad targeting, measure performance, and build custom audiences.
+AppsFlyer admite la integración con anuncios de Snapchat (`snapweb_int`) para campañas de aplicaciones de sitios web, lo que te permite reportar datos de atribución y datos de conversión directamente mediante la API de conversiones de Snapchat. Snapchat puede utilizar estos datos para optimizar la segmentación de anuncios, medir el performance y crear audiencias personalizadas.
 
-Here is how it works: a user clicks a Snapchat ad and lands on your website. When the user completes a website event (for example, a purchase or sign-up), AppsFlyer sends the conversion signal to Snapchat via the Conversions API. Snapchat uses this data to optimize ad targeting and measure campaign performance.
+Así funciona: un usuario hace clic en un anuncio de Snapchat y llega a tu sitio web. Cuando el usuario completa un evento del sitio web (por ejemplo, una compra o un registro), AppsFlyer envía la señal de conversión a Snapchat mediante la API de conversiones. Snapchat utiliza estos datos para optimizar la segmentación de anuncios y medir el performance de las campañas.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> At present, the integration does not support sending re-engagement postbacks via the Conversions API.
+> Actualmente, la integración no admite el envío de postbacks de re-engagement mediante la Conversions API.
 
-### Prerequisites
+### Requisitos previos
 
-Before activating the Snapchat Ads integration for your website app, make sure you have:
+Antes de activar la integración de anuncios de Snapchat para la aplicación de tu sitio web, asegúrate de tener lo siguiente:
 
-* A website app set up in AppsFlyer
-* A business account in <Anchor target="_blank" href="https://ads.snapchat.com/">Snapchat Ads Manager</Anchor>
+* Una aplicación web configurada en AppsFlyer
+* Una cuenta empresarial en <Anchor target="_blank" href="https://ads.snapchat.com/">Snapchat Ads Manager</Anchor>
 
-### How to set up Snapchat Ads for your website app
+### Cómo configurar los anuncios de Snapchat para la aplicación de tu sitio web
 
-The setup involves defining the integration between Snapchat Ads and AppsFlyer, and configuring the campaign in Snapchat Ads Manager. It includes the following steps:
+La configuración consiste en definir la integración entre los anuncios de Snapchat y AppsFlyer, y configurar la campaña en Snapchat Ads Manager. Incluye los siguientes pasos:
 
-* [Part 1: Set up Snapchat Ads integration in AppsFlyer (Required)](#part-1-set-up-snapchat-ads-integration-in-appsflyer)
-* [Part 2: Set up AppsFlyer integration in Snapchat Ads (Required)](#part-2-set-up-appsflyer-integration-in-snapchat-ads)
+* [Parte 1: Configura la integración de anuncios de Snapchat en AppsFlyer (Obligatorio)](#part-1-configura-la-integraci%C3%B3n-de-snapchat-ads-en-appsflyer)
+* [Parte 2: Configura la integración de AppsFlyer en los anuncios de Snapchat (Obligatorio)](#part-2-configura-la-integraci%C3%B3n-de-appsflyer-en-snapchat-ads)
 
-## Part 1: Set up Snapchat Ads integration in AppsFlyer
+## Parte 1: Configura la integración de anuncios de Snapchat en AppsFlyer
 
-Start by activating the Snapchat Ads integration. Then configure the postbacks that AppsFlyer sends to the Conversions API.
+Comienza activando la integración de anuncios de Snapchat. A continuación, configura los postbacks que AppsFlyer envía a la Conversions API.
 
 <div id="1-activate-the-snapchat-ads-integration" />
 
-<Accordion title="1. Activate the Snapchat Ads integration">
+<Accordion title="1. Activar la integración de anuncios de Snapchat">
 
-To activate the Snapchat Ads integration:
+Para activar la integración de anuncios de Snapchat:
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Marketplace**.
-2. Search for **Snapchat** and select it.
-3. Click **Set up integration**. You're directed to the **Active Integrations** setup page.
-4. In the **Integration** tab, turn on **Activate Partner**. The toggle must stay on for as long as you work with the partner.
-5. **Pixel ID:** Enter the Pixel ID. You can generate it or retrieve it from your Snapchat Ads Manager by following the instructions in the <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US">Snapchat Ads documentation</Anchor>.
-6. **Access token:** Enter the access token. To create or retrieve it, follow the <Anchor target="_blank" href="https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted">instructions in the official Snapchat Ads documentation</Anchor>.
+1. En AppsFlyer, desde el menú lateral, selecciona **Colaborar** > **Partner Marketplace**.
+2. Busca **Snapchat** y selecciónalo.
+3. Haz clic en **Configurar integración**. Se te redirigirá a la página de configuración de **Integraciones activas**.
+4. En la pestaña **Integración**, selecciona **Activar partner**. El interruptor debe permanecer activado mientras trabajes con el partner.
+5. **ID del píxel:** Introduce el ID del píxel. Puedes generarlo u obtenerlo desde Snapchat Ads Manager siguiendo las instrucciones de la <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US">documentación de anuncios de Snapchat</Anchor>.
+6. **Token de acceso:** Introduce el token de acceso. Para crearlo u obtenerlo, sigue las <Anchor target="_blank" href="https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted">instrucciones de la documentación oficial de anuncios de Snapchat</Anchor>.
 
 </Accordion>
 
 <div id="2-set-inapp-event-postbacks" />
 
-<Accordion title="2. Set in-app event postbacks">
+<Accordion title="2. Configurar postbacks de eventos in-app">
 
-You can define which web conversion events AppsFlyer sends to Snapchat Ads by mapping AppsFlyer events to Snapchat Ads events. These postbacks can be viewed in Snapchat Ads Manager. Snapchat uses the mapped events for campaign optimization and reporting.
+Puedes definir qué eventos de conversión web envía AppsFlyer a los anuncios de Snapchat asignando los eventos de AppsFlyer a eventos de anuncios de Snapchat. Estos postbacks pueden consultarse en Snapchat Ads Manager. Snapchat utiliza los eventos asociados para optimizar las campañas y generar reportes.
 
-To set in-app event postbacks:
+Para configurar los postbacks de eventos in-app:
 
-1. Turn on **In-app event postbacks**.
-2. If required, set the in-app event postback window. Read more in <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">In-app event postback configuration</Anchor>.
-3. Click **Add event** to add an event to the list.
-4. In the **AppsFlyer event** column, select the event name from the list. AppsFlyer receives the event name either from the Web SDK integrated on your website or from server-to-server (S2S) events you send to AppsFlyer.
-5. In the **Mapped to Partner Event** column, select the most suitable predefined partner event from the list.
-6. In the **For Users From** column, select the appropriate option:
-   * **This partner only** sends events attributed to Snapchat Ads.
-   * **All media sources, including organic** sends all events regardless of attribution source.
-7. In the **including** column, select whether to send events with their revenue values. See <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">Data to include in the postbacks</Anchor>.
-8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
+1. Activa **Postbacks de eventos in-app**.
+2. Si es necesario, configura la ventana de postback de eventos in-app. Leer más en <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">Configuración del postback de eventos in-app</Anchor>.
+3. Haz clic en **Agregar evento** para añadir un evento a la lista.
+4. En la columna **Evento de AppsFlyer**, selecciona el nombre del evento en la lista. AppsFlyer recibe el nombre del evento desde el SDK web integrado en tu sitio web o desde los eventos server-to-server (S2S) que envías a AppsFlyer.
+5. En la columna **Asignado al evento del partner**, selecciona de la lista el evento del partner predefinido más adecuado.
+6. En la columna **Para usuarios de**, selecciona la opción correspondiente:
+   * **Solo este partner** envía eventos atribuidos a los anuncios de Snapchat.
+   * **Todas las fuentes de medios, incluido el tráfico orgánico** envían todos los eventos independientemente de la fuente de atribución.
+7. En la columna **Incluir**, selecciona si quieres enviar eventos con sus valores de ingresos. Consulta <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#datos-a-incluir-en-los-postbacks">Datos a incluir en los postbacks</Anchor>.
+8. [Opcional] Haz clic en el icono **Agregar condición** para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer condiciones</Anchor> para un evento.
 
-   > 📘 **Note**
+   > 📘 **Nota**
    >
-   > * If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option causes the postback to fail.
-   > * Currently, you can set only the purchase event to include revenue.
+   > * Si estás configurando un evento de compra, establece la columna **incluyendo** en **Valores e ingresos**. Seleccionar cualquier otra opción hace que el postback falle.
+   > * Actualmente, solo puedes configurar el evento de compra para incluir ingresos.
 
-9. Click **Save integration**.
-
-> 📘 **Note**
->
-> If you also run the Snap Pixel on your website, send the same event ID to both AppsFlyer and Snapchat so AppsFlyer can deduplicate the events:
->
-> * Include `af_customer_event_id` in the event payload you send to AppsFlyer. For the Web SDK, send it inside `eventValue`. For the S2S (server-to-server) API, send it either as a top-level field or inside `event_value`.
-> * Send the same value in the corresponding Pixel event.
->
-> AppsFlyer forwards this value to Snapchat as the event ID. Snapchat then uses it to deduplicate the server-side event it receives from AppsFlyer against the Pixel event, so AppsFlyer counts the conversion once.
->
-> If you don't send `af_customer_event_id`, AppsFlyer generates an event ID automatically. This ID won't match your Pixel events.
->
-> For more information, see <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">[Beta] Integrate AppsFlyer Web SDK</Anchor>.
+9. Haz clic en **Guardar integración**.
 
 > 📘 **Note**
 >
-> If you send S2S events and want AppsFlyer to send postbacks for them to Snapchat Ads, make sure each event includes either `ip` or `user_agent`. If both are missing, AppsFlyer doesn't send the postback. For all supported event fields, see <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement#measure-an-event">Server-to-Server (S2S) API for Web Performance Measurement</Anchor>.
+> Si también usas Snap Pixel en tu sitio web, envía el mismo ID de evento a AppsFlyer y Snapchat para que AppsFlyer pueda deduplicar los eventos:
+>
+> * Incluye `af_customer_event_id` en el payload del evento que envías a AppsFlyer. En el SDK web, envíalo dentro de `eventValue`. En la API S2S (server-to-server), envíalo como un campo de nivel superior o dentro de `event_value`.
+> * Envía el mismo valor en el evento de Pixel correspondiente.
+>
+> AppsFlyer reenvía este valor a Snapchat como ID del evento. Después, Snapchat lo usa para deduplicar el evento del lado del servidor que recibe de AppsFlyer frente al evento de Pixel, para que AppsFlyer cuente la conversión una sola vez.
+>
+> Si no envías `af_customer_event_id`, AppsFlyer genera un ID de evento automáticamente. Este ID no coincidirá con tus eventos de Pixel.
+>
+> Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/integrate-appsflyer-web-sdk">[Beta] Integrar AppsFlyer Web SDK</Anchor>.
+
+> 📘 **Nota**
+>
+> Si envías eventos S2S y quieres que AppsFlyer envíe postbacks de esos eventos a los anuncios de Snapchat, asegúrate de que cada evento incluya `ip` o `user_agent`. Si faltan ambos, AppsFlyer no envía el postback. Para ver todos los campos de evento compatibles, consulta <Anchor target="_blank" href="/marketers/es/docs/server-to-server-s2s-api-for-web-performance-measurement#medir-un-evento">Server-to-Server (S2S) API for Medición del performance web</Anchor>.
 
 </Accordion>
 
-## Part 2: Set up AppsFlyer integration in Snapchat Ads
+## Parte 2: Configura la integración de AppsFlyer en Snapchat Ads
 
-Perform the following steps in Snapchat Ads Manager.
+Realiza los siguientes pasos en Snapchat Ads Manager.
 
 <div id="1-set-the-campaign-type-objective-and-goals" />
 
-<Accordion title="1. Set the campaign type, objective, and goals">
+<Accordion title="1. Configurar el tipo de campaña, objetivo y metas">
 
-You can choose any predefined in-app event sent from AppsFlyer as your campaign goal. Select a campaign objective that aligns with your website conversion goals, for example, driving traffic to your website or optimizing for on-site conversions.
+Puedes elegir cualquier evento in-app predefinido enviado desde AppsFlyer como objetivo de tu campaña. Selecciona un objetivo de campaña que se ajuste a tus objetivos de conversión web; por ejemplo, generar tráfico hacia tu sitio web u optimizar las conversiones en el sitio.
 
 </Accordion>
 
 <div id="2-set-the-destination-url" />
 
-<Accordion title="2. Set the destination URL">
+<Accordion title="2. Configura la URL de destino">
 
-1. Under **Destination**, in the **Website URL** field, enter the URL of your website, the page where users land after clicking your ad. **Website URL** is the main destination option. Users click the ad and land directly on your website to complete conversion events.
-2. **[Alternative] AF attribution link (OneLink):** If you want to redirect users to the mobile app with a fallback to the website, you can use an AF attribution link (OneLink) as the destination URL instead.
-3. Click **Build a URL parameter** to add the URL parameters to the destination URL.
-4. Under **Custom parameters**, click **Add parameter**.
-5. Map the AppsFlyer parameters to their Snapchat values:
+1. En **Destino**, en el campo **URL del sitio web**, introduce la URL de tu sitio web, es decir, la página a la que llegan los usuarios después de hacer clic en tu anuncio. **URL del sitio web** es la opción de destino principal. Los usuarios hacen clic en el anuncio y llegan directamente a tu sitio web para completar eventos de conversión.
+2. **[Alternativa] Enlace de atribución de AF (OneLink):** Si quieres redirigir a los usuarios a la app móvil con una redirección alternativa al sitio web, puedes utilizar un enlace de atribución de AF (OneLink) como URL de destino.
+3. Haz clic en **Crear un parámetro de URL** para añadir parámetros de URL a la URL de destino.
+4. En **Parámetros personalizados**, haz clic en **Agregar parámetro**.
+5. Asocia los parámetros de AppsFlyer con sus valores correspondientes en Snapchat:
 
-| AF parameter | Mapped Snapchat value |
+| Parámetro de AF | Valor asignado en Snapchat |
 | --- | --- |
-| `pid` | `snapweb_int` |
+| `PID` | `snapweb_int` |
 | `c` * | `{{campaign.name}}` |
 | `af_c_id` | `{{campaign.id}}` |
-| `af_adset` | `{{adSet.name}}` |
+| `af_conjunto de anuncios` | `{{adSet.name}}` |
 | `af_adset_id` | `{{adSet.id}}` |
-| `af_ad` | `{{creative.name}}` |
-| `af_ad_id` | `{{ad.id}}` |
-| `af_channel` | `{{site_source_name}}` |
+| `af_anuncio` | `{{creative.name}}` |
+| `id_del_anuncio_af` | `{{ad.id}}` |
+| `af_canal` | `{{site_source_name}}` |
 
-   * To simplify campaign analysis, include the campaign type (web or mobile) as a prefix or suffix in the campaign name, for example, `campaign-name_web`.
+   * Para simplificar el análisis de las campañas, incluye el tipo de campaña (web o móvil) como prefijo o sufijo en el nombre de la campaña; por ejemplo, `campaign-name_web`.
 
-   For best practices on URL parameter configuration and traffic source resolution, see <Anchor target="_blank" href="/marketers/docs/about-traffic-source-resolution">About traffic source resolution</Anchor>.
+   Para conocer las prácticas recomendadas sobre la configuración de parámetros de URL y la resolución de fuentes de tráfico, consulta <Anchor target="_blank" href="/marketers/es/docs/about-traffic-source-resolution">Información sobre la resolución de fuentes de tráfico</Anchor>.
 
-   An example of the resulting URL:
+   Ejemplo de una URL resultante:
 
    ```http
    https://www.example.com?pid=snapweb_int&c={{campaign.name}}&af_c_id={{campaign.id}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_channel={{site_source_name}}
    ```
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Snapchat adds `ScCid={{ScCid}}` to the destination URL automatically when the ad is clicked.
+> Snapchat añade automáticamente `ScCid={{ScCid}}` a la URL de destino cuando el usuario hace clic en el anuncio.
 
 </Accordion>
 
-## View web attribution data
+## Ver datos de atribución web
 
-Here's what to expect when you review your attribution data after setup:
+Esto es lo que puedes esperar al revisar los datos de atribución después de la configuración:
 
-* **Dashboard:** In <Anchor target="_blank" href="/marketers/docs/my-dashboards#crossplatform-dashboard">the cross-platform dashboard</Anchor>, web and app data are displayed side by side, giving you a unified view of campaign performance across platforms.
-* **Raw data exports and API responses** include Snap Web in the `media_source` field for Snap web activity.
+* **Dashboard:** En <Anchor target="_blank" href="/marketers/es/docs/my-dashboards#crossplatform-dashboard">el dashboard multiplataforma</Anchor>, los datos web y de la aplicación se muestran uno al lado del otro, lo que te ofrece una vista unificada del rendimiento de las campañas en todas las plataformas.
+* Las **exportaciones de raw data y las respuestas de la API** incluyen Snap Web en el campo `media_source` para la actividad web de Snap.
 
-## Measure web attribution data with web cost
+## Medir datos de atribución web con costo web
 
-You can get a complete performance view of web attribution data and web cost data from Snapchat Ads in the dashboard and in <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">Cost ETL reports</Anchor>. To do this, make sure you have <Anchor target="_blank" href="/marketers/docs/roi360-onboarding-guide#about-roi360">the ROI360 package</Anchor> and complete the following setup:
+Puedes obtener una visión completa del rendimiento de los datos de atribución web y los datos de costo web de Snapchat Ads en el dashboard y en los <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">informes de Cost ETL</Anchor>. Para hacerlo, asegúrate de tener <Anchor target="_blank" href="/marketers/es/docs/roi360-onboarding-guide#sobre-roi360">el paquete ROI360</Anchor> y completa la siguiente configuración:
 
-1. Connect the cost to your website app via  `snapchat_int` (not via `snapweb_int`)  from the **Cost** tab or the **Cost Settings** page. For more information about how to connect to cost, see <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">Set up ROI360 cost API to measure cost data</Anchor>.
-2. Include the campaign ID (`af_c_id`) in the landing page URL. Make sure the URL includes the full campaign hierarchy to view cost, clicks, and impressions matched to web attribution at the most granular level.
+1. Conecta el costo a tu aplicación web mediante `snapchat_int` (no mediante `snapweb_int`) desde la pestaña **Costo** o la página **Configuración de costos**. Para más información sobre cómo conectar el costo, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enabling-cost-api">Configurar la API de costos de ROI360 para medir los datos de costos</Anchor>.
+2. Incluye el ID de la campaña (`af_c_id`) en la URL de la landing page. Asegúrate de que la URL incluya la jerarquía completa de la campaña para ver los costos, clics e impresiones asociados a la atribución web con el mayor nivel de detalle posible.
 
-## Traits and limitations
+## Características y limitaciones
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Clicks and impressions | Clicks and impressions for web campaigns require an <Anchor target="_blank" href="/marketers/docs/roi360-onboarding-guide">ROI360 subscription</Anchor>. |
-| Re-engagement | Re-engagement postbacks via the Conversions API are not currently supported. |
+| Clics e impresiones | Los clics y las impresiones de las campañas web requieren una <Anchor target="_blank" href="/marketers/es/docs/roi360-onboarding-guide">suscripción a ROI360</Anchor>. |
+| Reengagement | Actualmente no se admite el envío de postbacks de re-engagement mediante la Conversions API. |
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/web-performance-measurement-overview">Web Performance Measurement - Overview</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/web-performance-measurement-overview">Medición del rendimiento web: descripción general</Anchor>
 
-<div data-zendesk-anchors="h_01KQC7RA5R1PS69N3015WY4QRY=overview h_01KQC7RA5RAY6R70GNHCYWAMRC=important h_01KQC7RA5R02QV60T81NX055DM=prerequisites h_01KQC7RA5RPWP0X927ENN6KJ9V=how-to-set-up-snapchat-ads-for-your-website-app h_01KQC7RA5RY1HF9VHC332FVBFR=part-1-set-up-snapchat-ads-integration-in-appsflyer h_01KQC7RA5RJXR5N13SYW3QMMDQ=1-activate-the-snapchat-ads-integration h_01KQC7RA5R3TZZ8PPHHC8EXPG1=2-set-inapp-event-postbacks h_01KQC7RA5RZVTM2X3N6WXRTAT8=note h_01M520TA4E64EARM6R1EV9QPSR=note-2 h_01KQC7RA5REPX0WDDHT7YWDHMC=part-2-set-up-appsflyer-integration-in-snapchat-ads h_01KQC7RA5R8MDFAF9R5YH1TFPX=1-set-the-campaign-type-objective-and-goals h_01KQC7RA5SB11HRSQR493PM121=2-set-the-destination-url h_01KQC7RA5S422C22YQX1VQ4R7A=note-3 h_01KQC7RA5SKRWGGCKV71MV8J56=view-web-attribution-data h_01KQC7XYSWPTHVDY5R3EG8H4K2=measure-web-attribution-data-with-web-cost h_01KQC7RA5SSZB8M8G00NTXG71K=traits-and-limitations h_01KQC80MBB1KCVVNDSFSJHG5ZT=see-also" />
+<div data-zendesk-anchors="overview=descripci%C3%B3n-general h_01KQC7RA5R1PS69N3015WY4QRY=descripci%C3%B3n-general h_01KQC7RA5RAY6R70GNHCYWAMRC=importante prerequisites=requisitos-previos h_01KQC7RA5R02QV60T81NX055DM=requisitos-previos how-to-set-up-snapchat-ads-for-your-website-app=c%C3%B3mo-configurar-los-anuncios-de-snapchat-para-la-aplicaci%C3%B3n-de-tu-sitio-web h_01KQC7RA5RPWP0X927ENN6KJ9V=c%C3%B3mo-configurar-los-anuncios-de-snapchat-para-la-aplicaci%C3%B3n-de-tu-sitio-web part-1-set-up-snapchat-ads-integration-in-appsflyer=parte-1-configura-la-integraci%C3%B3n-de-anuncios-de-snapchat-en-appsflyer h_01KQC7RA5RY1HF9VHC332FVBFR=parte-1-configura-la-integraci%C3%B3n-de-anuncios-de-snapchat-en-appsflyer h_01KQC7RA5RJXR5N13SYW3QMMDQ=1-activate-the-snapchat-ads-integration h_01KQC7RA5R3TZZ8PPHHC8EXPG1=2-set-inapp-event-postbacks h_01KQC7RA5RZVTM2X3N6WXRTAT8=nota h_01M520TA4E64EARM6R1EV9QPSR=nota-1 part-2-set-up-appsflyer-integration-in-snapchat-ads=parte-2-configura-la-integraci%C3%B3n-de-appsflyer-en-snapchat-ads h_01KQC7RA5REPX0WDDHT7YWDHMC=parte-2-configura-la-integraci%C3%B3n-de-appsflyer-en-snapchat-ads h_01KQC7RA5R8MDFAF9R5YH1TFPX=1-set-the-campaign-type-objective-and-goals h_01KQC7RA5SB11HRSQR493PM121=2-set-the-destination-url h_01KQC7RA5S422C22YQX1VQ4R7A=nota-2 view-web-attribution-data=ver-datos-de-atribuci%C3%B3n-web h_01KQC7RA5SKRWGGCKV71MV8J56=ver-datos-de-atribuci%C3%B3n-web measure-web-attribution-data-with-web-cost=medir-datos-de-atribuci%C3%B3n-web-con-costo-web h_01KQC7XYSWPTHVDY5R3EG8H4K2=medir-datos-de-atribuci%C3%B3n-web-con-costo-web traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01KQC7RA5SSZB8M8G00NTXG71K=caracter%C3%ADsticas-y-limitaciones h_01KQC80MBB1KCVVNDSFSJHG5ZT=consulta-tambi%C3%A9n" />

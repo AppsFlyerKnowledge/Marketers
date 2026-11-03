@@ -1,5 +1,5 @@
 ---
-title: Sina Weibo Ads campaign configuration
+title: Configuración de campañas de anuncios de Sina Weibo
 metadata:
   keywords:
     - Advertisers
@@ -14,230 +14,229 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-08-15T08:37:03Z'
-  edited_at: '2026-09-15T10:50:56Z'
+  edited_at: '2026-09-17T00:26:19Z'
   id: 115004134086
-  locale: en-us
+  locale: es
   section: China domestic market ad network configuration
   section_id: 6552066355601
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115004134086-Sina-Weibo-Ads-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/115004134086
 ---
-> **At a glance:** Sina Weibo Ads, an AppsFlyer ad network integrated partner, is one of the most popular social media platforms in China.
+> **De un vistazo:** Sina Weibo Ads, un partner integrado de la ad network de AppsFlyer, es una de las plataformas de redes sociales más populares en China.
 
-## Setting up Sina Weibo Ads
+## Configuración de Sina Weibo Ads
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace** .  
+   (**Para editar una integración existente:** Ve a la pestaña **Collaborate > Partner Integrations > Active integrations** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** el selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partner</Anchor>.
 
-The Sina Weibo Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
+La ventana de configuración de Sina Weibo Ads incluye 3 pestañas activas: integración, enlace de atribución y permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-This section is used for connecting the partner with AppsFlyer. Relevant messages for the advertiser regarding the specific partner also appear here.
+Esta sección se usa para conectar al socio con AppsFlyer. Aquí también aparecen los mensajes de interés para el anunciante con respecto al socio específico.
 
-### Activate partners
+### Activar los partners
 
-On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, tendrás que activar el botón ***Activar Partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-Default Postbacks
+Postbacks predeterminados
 
-If attribution/integration is enabled for the partner, AppsFlyer can send automatic postbacks to it following user installs, launches, re-engagements, and rejected installs. Use this section to define the **source of the users** that postbacks are sent for.
+Si la atribución/integración está habilitada para el partner, AppsFlyer puede enviarle postbacks automáticos tras instalaciones de usuarios, inicios, re-engagements e instalaciones rechazadas. Utiliza esta sección para definir la **fuente de los usuarios** para los que se envían los postbacks.
 
 ![Sina_Weibo_msc_new_2.png](https://files.readme.io/0f71568fd13ce9357f07282636e0b86fdbb9e9b1f6ef9db8ba673bb2066881aa-360002277585.png)
 
-The option "**Only events attributed to this partner**" for partner attributed users only, is selected by default.
+La opción "**Solo eventos atribuidos a este partner**", solo para usuarios atribuidos a este partner, está seleccionada de forma predeterminada.
 
-Click **Save**.
+Haga clic en **Guardar**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to Sina Weibo Ads for attributing the Sina Weibo Ads campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que deseas enviar a Sina Weibo Ads para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de Sina Weibo Ads. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with Sina Weibo Ads.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific Sina Weibo Ads campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Sina Weibo Ads.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña**: añádela para comparar distintas campañas en funcionamiento con Sina Weibo Ads.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios**: define nombres de conjuntos de anuncios para comparar distintos conjuntos de anuncios dentro de campañas específicas de Sina Weibo Ads.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio**: define nombres de anuncios para comparar distintos creativos dentro de conjuntos de anuncios específicos, dentro de campañas específicas de Sina Weibo Ads.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** y **ID de subsitio**: configura el parámetro ID de sitio para atribuir instalaciones a publishers específicos. Si existen muchos publishers, te recomendamos limitar el número de IDs de sitio usados y utilizar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceder las limitaciones del ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor**: utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+  **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-[![](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)
+[![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. More information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
-### Retargeting settings
+### Configuraciones de retargeting
 
-You can add any other parameter to the attribution link simply by typing it in a new parameter box. You can find all AppsFlyer available URL parameters here: <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>
+Puedes agregar cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en una casilla de parámetro nueva. Aquí puedes encontrar todos los parámetros de URL disponibles de AppsFlyer: <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**Estructura y parámetros de los enlaces de atribución de AppsFlyer**</Anchor>
 
-When enabled, AppsFlyer recognizes a link as a <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting</Anchor> attribution link, rather than a user acquisition link, by adding the `&is_retargeting=true` to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution.
+Cuando está habilitada, AppsFlyer reconoce un enlace como un enlace de atribución de <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">retargeting</Anchor>, en lugar de un enlace de adquisición de usuarios, al añadir `&is_retargeting=true` al enlace de registro de clics. Tenga en cuenta que actualmente solo se admite el redireccionamiento para la atribución por clics y no por impresiones.
 
-**Attribution link parameter**: `is_retargeting`
+**Parámetro del enlace de atribución**: `is_retargeting`
 
-The setup below is displayed when retargeting is enabled.
+Cuando el retargeting está habilitado, se muestra la siguiente configuración.
 
-![retargeting_settings.png](https://files.readme.io/b883d2601724f887b8c217668f6398041e643ca24c3eb0a032abb20536beebc1-360002299629.png)
+![retargeting_settings.png](https://files.readme.io/b90bbd6e3bea9dd862808343896b005071b7d9e564d31039c188c3ebf8e81077-360002254489.png)
 
-***Standard Link*** **vs.** ***OneLink***
+***Enlace estándar*** **vs.** ***OneLink***
 
-Select ***standard attribution link*** option if:
+Selecciona la opción ***enlace de atribución estándar*** si:
 
-* You don't need to deep link with the URL or
-* You plan to use only <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">URI schemes</Anchor> for deep linking
+* No necesitas un enlace profundo con la URL o
+* Tienes previsto usar solo <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">esquemas de URI</Anchor> para Deep Linking
 
-Select ***Use OneLink*** for:
+Selecciona ***Use OneLink*** para:
 
-* Using a single link for both Android and iOS apps or
-* Deep linking using Universal or app links
+* Utilizar un solo enlace para aplicaciones de Android y iOS, o
+* Establecer enlaces profundos empleando enlaces universales o de aplicaciones.
 
-Note that selecting OneLink changes the click recording link from app specific to a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink URL</Anchor>.
+Ten en cuenta que, si seleccionas OneLink, esto cambia el enlace de registro de clics de una URL específica de aplicación a una <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">URL de OneLink</Anchor>.
 
-***Deep Link URL***
+***URL de deep link***
 
-Use this field if the link is meant to deep link users to any specific activity within your app.  
-**Attribution link parameter**: `af_dp`  
-You can find more information about AppsFlyer's <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking solution in this guide.</Anchor>
+Utiliza este campo si el enlace está pensado para dirigir mediante Deep Linking a los usuarios a cualquier actividad específica dentro de tu aplicación.  
+**Parámetro del enlace de atribución**: `af_dp`  
+Puedes encontrar más información sobre la <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">solución de Deep Linking de AppsFlyer en esta guía.</Anchor>
 
-***Re-engagement Window***
+***Ventana de recaptación***
 
-Set the time period following the re-engagement, where the user's in-app events are attributed to the retargeting media source. You can set the value in days (1-90), hours (up to 23), or even lifetime.
+Defina el plazo posterior al re-engagement, durante el cual los eventos in-app del usuario se atribuyen a la fuente de medios de redireccionamiento. Puede establecer el valor en días (1-90), horas (hasta 23) o incluso durante toda la vida.
 
-**Attribution link parameter**: `af_reengagement_window`
+**Parámetro del enlace de atribución**: `af_reengagement_window`
 
-Read here [how to set up retargeting](/docs/sina-weibo-ads-campaign-configuration#creating-retargeting-campaigns-on-weibo-ads-dashboard) on Sina Weibo dashboard.
+Consulta aquí [cómo configurar el retargeting](/docs/sina-weibo-ads-campaign-configuration#crear-campañas-de-retargeting-en-el-panel-de-control-de-anuncios-de-weibo) en el dashboard de Sina Weibo.
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Sina Weibo Ads.
+Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Sina Weibo Ads.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
-[![sina weibo clickthrough settings](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)
+[![configuración de clics de Sina Weibo](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to Sina Weibo Ads to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Sina Weibo Ads para que se active cuando los clientes potenciales hagan clic en un anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost integration is not available for Sina Weibo Ads.
+La integración de costos no está disponible para Sina Weibo Ads.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue data is not supported by this partner.
+Este partner no admite ingresos por publicidad.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant to the partner, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for the partner, the permissions tab is active and you can grant control to the partner.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle al partner, ya sea que el partner actúe como una red de publicidad, agencia o ambas. Tenga en cuenta que, incluso si la atribución estuviera deshabilitada para el socio, la pestaña Permisos se encontraría activa y podría darle el control al socio.
 
 ![sina-weibo-permissions.png](https://files.readme.io/a22be58687921e80108fe4b2cbd2863d9277a938a751ed5c666f147d78041c05-360002799478.png)
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos***: solo a los datos de ingresos atribuidos al partner.
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-## Setting AppsFlyer attribution on Weibo ads dashboard
+## Configurar la atribución de AppsFlyer en el panel de control de anuncios de Weibo
 
-Login to Sina Weibo Ads, using this link: [https://ad.weibo.com/](https://ad.weibo.com)
+Inicia sesión en Sina Weibo Ads con este enlace: [https://ad.weibo.com/](https://ad.weibo.com)
 
-Go to the **Tools** page to upload your apps in the Apps Management section:
+Ve a la página **Tools** para subir tus aplicaciones en la sección Apps Management:
 
 [![](https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png)](https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png)
 
-Click to add new apps:
+Haz clic para añadir nuevas aplicaciones:
 
 [![](https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png)](https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png)
 
-Android: Enter the APK download page (end with .apk) or upload the APK document.
+Android: Introduce la página de descarga del APK (debe terminar en .apk) o sube el archivo APK.
 
-iOS: Enter the iTunes link.
+iOS: introduce el enlace de iTunes.
 
-### Setting the attribution link
+### Configurar el enlace de atribución
 
-Go to the **Promotions** page and Create New Ad Series
+Ve a la página **Promociones** y crea una nueva serie de anuncios
 
 [![](https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png)](https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png)
 
-If you want to acquire new users for your app, select **Increase App Installs** ad type, as shown below:
+Si quieres adquirir nuevos usuarios para tu aplicación, selecciona el tipo de anuncio **Aumentar instalaciones de la app**, como se muestra a continuación:
 
 [![](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)
 
-### Setup ad series
+### Configurar la serie de anuncios
 
-Select the app you want to promote:
+Selecciona la aplicación que deseas promocionar:
 
 [![](https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png)](https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png)
 
-Set the audience features, budget, and promotion periods:
+Establece las funciones de la audiencia, el presupuesto y los períodos de promoción:
 
 [![](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)
 
-### Uploading ad creatives and set the attribution link
+### Cargar creatividades de anuncios y configurar el enlace de atribución
 
-Weibo provides four ad formats to promote App installs:
+Weibo ofrece cuatro formatos de anuncio para promocionar instalaciones de la app:
 
-* Weibo Post
-* Big Cards
-* App Card
-* App 9 Pics
+* Publicación de Weibo
+* Tarjetas grandes
+* Tarjeta de app
+* App con 9 imágenes
 
-All of the ad formats support AppsFlyer Attribution.
+Todos los formatos de anuncio son compatibles con AppsFlyer Attribution.
 
 [![](https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png)](https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png)
 
-Enter the AppsFlyer attribution link
+Introduce el enlace de atribución de AppsFlyer
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
 > ```http
 > https://app.appsflyer.com/com.king.candycrushsaga?pid=sinaweibo_int&c=creative1
@@ -246,36 +245,36 @@ Enter the AppsFlyer attribution link
 
 [![](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)
 
-Complete any additional settings and publish the ad.
+Completa cualquier configuración adicional y publica el anuncio.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * You can preview the Ad Format in the upper right part at Ad Creative Setting Page.
-> * If you are not using deep linking in the ad campaign, leave the deep link box empty.
+> * Puedes previsualizar el formato del anuncio en la parte superior derecha de la página de configuración de la creatividad del anuncio.
+> * Si no estás usando deep linking en la campaña del anuncio, deja vacío el campo de deep link.
 
-## Creating retargeting campaigns on Weibo ads dashboard
+## Crear campañas de retargeting en el panel de control de anuncios de Weibo
 
-On ad campaign level, set up the targeting, budget, and campaign time:
+En el nivel de la campaña publicitaria, configura el targeting, el presupuesto y el tiempo de la campaña:
 
 ![sina-weibo-retargeting.png](https://files.readme.io/8225fbfd74d16bb1a3e2e816933cb22d5f581a219ee35dd7f9d5285bacd49d2d-360002715577.png)
 
-On the ad level, set up the deep link and AppsFlyer attribution link:
+En el nivel del anuncio, configura el deep link y el enlace de atribución de AppsFlyer:
 
-1. Choose ***deeplink+app***, and paste the deep link into the relevant box:
+1. Elige ***deeplink+app*** y pega el deep link en el campo correspondiente:
 
    ![sina-weibo-retargeting-deeplink.png](https://files.readme.io/dc5666893ff99dcb808a15aa2e41396b359617e2f6271f246a10893d4b05eebe-360002715557.png)
 
-   > 📄 **Example**
+   > 📄 **Ejemplo**
    >
    > ```http
    > myapp://products/page1&pid=sinaweibo_int&is_retargeting=true
    > ```
 
-2. Copy the attribution link from AppsFlyer dashboard with all the required parameters and paste it into the attribution link box:
+2. Copia el enlace de atribución del dashboard de AppsFlyer con todos los parámetros necesarios y pégalo en el campo del enlace de atribución:
 
    ![sina-weibo-retargeting-links.png](https://files.readme.io/edd0861728e19a0bc0e23641161c2365cf5c41eeccaa801bd4e8c3392215fe83-360002799598.png)
 
-   > 📄 **Example**
+   > 📄 **Ejemplo**
    >
    > ```http
    > https://app.appsflyer.com/com.mycompany.myapp?pid=sinaweibo_int&c=test&clickid={IMP}
@@ -283,19 +282,19 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
    > ```
 
 
-   > 📘 **Note**
+   > 📘 **Nota:**
    >
-   > Note that all following parameters should be included in both the deep link and the attribution link and be identical in both links:
+   > Ten en cuenta que todos los parámetros siguientes deben incluirse tanto en el deep link como en el enlace de atribución y ser idénticos en ambos enlaces:
    >
-   > * `&pid=sinaweibo_int` — partner ID parameter that identifies Sina Weibo as media source
-   > * `&c=campaign_name` — parameter that identifies a specific campaign
-   > * `&is_retargeting=true` — parameter that identifies an ad as a part of a retargeting campaign
+   > * `&pid=sinaweibo_int` — parámetro de ID de partner que identifica a Sina Weibo como fuente de medios
+   > * `&c=campaign_name` — parámetro que identifica una campaña específica
+   > * `&is_retargeting=true` — parámetro que identifica un anuncio como parte de una campaña de retargeting
    >
-   > If you use deferred deep linking, include the following parameters as well:
+   > Si usas Deferred deep linking, incluye también los siguientes parámetros:
    >
    > * `&af_adset=adset_name`
    > * `&af_ad=ad_name`
    >
-   > Read more about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer's Attribution Link Structure and Parameters</Anchor> and Sina Weibo's [attribution links](#attribution-link-tab).
+   > Leer más sobre la <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">estructura y los parámetros del enlace de atribución de AppsFlyer</Anchor> y los [enlaces de atribución](#attribution-link-tab) de Sina Weibo.
 
-<div data-zendesk-anchors="h_01HKW6X6G9WGKHT7MXM3BKYX40=setting-up-sina-weibo-ads h_01HKW6X6G9865NFC261ZCPC4AM=integration-tab h_01HKW6X6G98F7ERDGKN7K5PDVE=activate-partners h_01HKW6X6GAR48FSFX7DVEWAMX8=attribution-link-tab h_01HKW6X6GA0FPN5EMR68FH2HSR=attribution-link-parameters h_01HKW6X6GA287ZKAWG69497WRN=retargeting-settings clickthrough-attribution=click-through-attribution h_01HKW6X6GABBB9ZP8GP87JYZAE=click-through-attribution h_01HKW6X6GAY9GP9P57RFPSFTVN=click-attribution-link h_01HKW6X6GADFS59WJT2GHYQ317=cost-tab h_01HKW6X6GAG7TM4WFNJFHGY9QN=ad-revenue-tab h_01HKW6X6GAK8PN5PBFPZTGC0ES=permissions-tab h_01HKW6X6GA96QHGJY220JF5DF4=setting-appsflyer-attribution-on-weibo-ads-dashboard h_01HKW6X6GA6XJSV02NTNDSRZ19=setting-the-attribution-link h_01HKW6X6GAJBYM89RYH65BAVNH=setup-ad-series h_01HKW6X6GC2RHPJXWZAX8S758B=uploading-ad-creatives-and-set-the-attribution-link h_01HKW6X6GCNS88DFZTMM7BXMKT=example h_01HKW6X6GCBQNG4Q2RHJPCRCKS=note h_01HKW6X6GE2RVQGSN9JM63SZYA=creating-retargeting-campaigns-on-weibo-ads-dashboard h_01HKW6X6GEKZWAPZ6V2EXGY9SA=example-1 h_01HKW6X6GFQQSY19CRREVR8GRY=example-2 h_01HKW6X6GF815M1XE9HF631F1W=note-1" />
+<div data-zendesk-anchors="setting-up-sina-weibo-ads=configuraci%C3%B3n-de-sina-weibo-ads h_01HKW6X6G9WGKHT7MXM3BKYX40=configuraci%C3%B3n-de-sina-weibo-ads h_01HKW6X6G9865NFC261ZCPC4AM=integration-tab activate-partners=activar-los-partners h_01HKW6X6G98F7ERDGKN7K5PDVE=activar-los-partners h_01HKW6X6GAR48FSFX7DVEWAMX8=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HKW6X6GA0FPN5EMR68FH2HSR=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n retargeting-settings=configuraciones-de-retargeting h_01HKW6X6GA287ZKAWG69497WRN=configuraciones-de-retargeting clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HKW6X6GABBB9ZP8GP87JYZAE=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKW6X6GAY9GP9P57RFPSFTVN=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKW6X6GADFS59WJT2GHYQ317=cost-tab h_01HKW6X6GAG7TM4WFNJFHGY9QN=ad-revenue-tab h_01HKW6X6GAK8PN5PBFPZTGC0ES=permissions-tab setting-appsflyer-attribution-on-weibo-ads-dashboard=configurar-la-atribuci%C3%B3n-de-appsflyer-en-el-panel-de-control-de-anuncios-de-weibo h_01HKW6X6GA96QHGJY220JF5DF4=configurar-la-atribuci%C3%B3n-de-appsflyer-en-el-panel-de-control-de-anuncios-de-weibo setting-the-attribution-link=configurar-el-enlace-de-atribuci%C3%B3n h_01HKW6X6GA6XJSV02NTNDSRZ19=configurar-el-enlace-de-atribuci%C3%B3n setup-ad-series=configurar-la-serie-de-anuncios h_01HKW6X6GAJBYM89RYH65BAVNH=configurar-la-serie-de-anuncios uploading-ad-creatives-and-set-the-attribution-link=cargar-creatividades-de-anuncios-y-configurar-el-enlace-de-atribuci%C3%B3n h_01HKW6X6GC2RHPJXWZAX8S758B=cargar-creatividades-de-anuncios-y-configurar-el-enlace-de-atribuci%C3%B3n h_01HKW6X6GCNS88DFZTMM7BXMKT=ejemplo h_01HKW6X6GCBQNG4Q2RHJPCRCKS=nota creating-retargeting-campaigns-on-weibo-ads-dashboard=crear-campa%C3%B1as-de-retargeting-en-el-panel-de-control-de-anuncios-de-weibo h_01HKW6X6GE2RVQGSN9JM63SZYA=crear-campa%C3%B1as-de-retargeting-en-el-panel-de-control-de-anuncios-de-weibo h_01HKW6X6GEKZWAPZ6V2EXGY9SA=ejemplo-1 h_01HKW6X6GFQQSY19CRREVR8GRY=ejemplo-2 h_01HKW6X6GF815M1XE9HF631F1W=nota-1" />

@@ -1,5 +1,5 @@
 ---
-title: Netease Ads campaign configuration
+title: Configuración de campañas de Netease Ads
 metadata:
   keywords:
     - netease ads
@@ -14,44 +14,43 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-06-18T06:59:42Z'
-  edited_at: '2026-09-15T10:34:46Z'
+  edited_at: '2026-09-17T00:26:11Z'
   id: 115003044126
-  locale: en-us
+  locale: es
   section: China domestic market ad network configuration
   section_id: 6552066355601
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115003044126-Netease-Ads-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/115003044126
 ---
-> **At a glance:** Netease, an AppsFlyer integrated partner, is a leading advertisement service provider in the Chinese market.
+> **De un vistazo:** Netease, partner integrado de AppsFlyer, es un proveedor líder de servicios publicitarios en el mercado chino.
 
-## Setting up Netease
+## Configuración de Netease
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de partner > Marketplace** .  
+   (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de partner > Integraciones activas** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota importante:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-Netease's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
+La ventana de configuración de Netease incluye 3 pestañas activas: Integración, enlace de atribución y permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The integration with Netease Ads only supports the install event in the default postback.
+La integración con Netease Ads solo admite el evento de instalación en el postback predeterminado.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### Default postbacks
+### Postbacks predeterminados
 
 <Image alt="netease-default-postback.png" src="https://files.readme.io/0b1db2d0f9e772ad7459c8d28d46cf92bb26501da47b9e5f2f3dd4951a469470-50900350199825.png" width="513px" />
 
@@ -59,87 +58,87 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to Netease for attributing Netease's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a Netease para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de Netease. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with Netease.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific Netease campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Netease.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña** - añádela para comparar diferentes campañas de Netease en funcionamiento.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios** - define nombres de conjunto de anuncios para comparar diferentes conjuntos de anuncios dentro de campañas específicas de Netease.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio** - define nombres de anuncios para comparar diferentes creativos dentro de conjuntos de anuncios específicos de campañas específicas de Netease.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** e **ID de subsitio** - configura el parámetro ID de sitio para atribuir las instalaciones a publishers específicos. Si existen muchos publishers, te sugerimos que limites la cantidad de IDs de sitio usados y utilices el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceder las limitaciones de ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor** - utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+  **Parámetros de enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/b2428974592c91df3f99e5ce00d801f4c1c16f44ec0cac62a43d3f65672450d5-50900350201489.png)
+![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**Estructura y parámetros del enlace de atribución de AppsFlyer**</Anchor>.
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Netease.
+Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Netease.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/e706fcb29613f7a398a975e320c9e0eddccad29d2eb93bafbd07ca2a5e196a31-50900364069137.png)
+![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to Netease to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Netease para que se active cuando los clientes potenciales hagan clic en el anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant RTB House, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for RTB House, the permissions tab is active and you can grant control to RTB House.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a RTB House, tanto si el partner actúa como ad network, agencia o ambas cosas. Ten en cuenta que incluso si la atribución está deshabilitada para RTB House, la pestaña de permisos está activa y puedes otorgar el control a RTB House.
 
-![rtb_house-permissions-new.png](https://files.readme.io/8e34640acc2e7cff3edb63dc58e6a2dd514a3a98f153eafe9516dfccd7de8b0a-50900350205073.png)
+![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
 
-### Ad network permissions
+### Permisos de ad network
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos*a** - solo a los datos de ingresos atribuidos al partner
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW6VWQKD2K6REG5MN6274MD=setting-up-netease h_01HKW6VWQKNZ067ASNH3W5MK2H=integration-tab h_01HKW6VWQKVN9NKJ67HEJXRBZJ=activate-partner h_01HKW6VWQKJGFGER02BFXNV88C=default-postbacks h_01HKW6VWQKK3P5TE72MQRV0TPA=attribution-link-tab h_01HKW6VWQKEB8DK5YN4E976SQV=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6VWQKNNE4Y46QWR8VZHP0=click-through-attribution h_01HKW6VWQKSW8NYCK7VCQ2PRHW=click-attribution-link h_01HKW6VWQKBRWE8RHFTPF9JADE=cost-tab h_01HKW6VWQMJFES084XN3Z52GC2=ad-revenue-tab h_01HKW6VWQMJ419903HKE1C0GRD=permissions-tab h_01HKW6VWQMDR1K426AVZ25Z7VH=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-netease=configuraci%C3%B3n-de-netease h_01HKW6VWQKD2K6REG5MN6274MD=configuraci%C3%B3n-de-netease h_01HKW6VWQKNZ067ASNH3W5MK2H=integration-tab activate-partner=activar-socio h_01HKW6VWQKVN9NKJ67HEJXRBZJ=activar-socio default-postbacks=postbacks-predeterminados h_01HKW6VWQKJGFGER02BFXNV88C=postbacks-predeterminados h_01HKW6VWQKK3P5TE72MQRV0TPA=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HKW6VWQKEB8DK5YN4E976SQV=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HKW6VWQKNNE4Y46QWR8VZHP0=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKW6VWQKSW8NYCK7VCQ2PRHW=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKW6VWQKBRWE8RHFTPF9JADE=cost-tab h_01HKW6VWQMJFES084XN3Z52GC2=ad-revenue-tab h_01HKW6VWQMJ419903HKE1C0GRD=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HKW6VWQMDR1K426AVZ25Z7VH=permisos-de-ad-network" />

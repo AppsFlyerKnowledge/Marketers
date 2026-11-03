@@ -1,5 +1,5 @@
 ---
-title: Set up the Lookback windows task
+title: Configurar la tarea de ventanas de lookback
 metadata:
   keywords:
     - Marketers
@@ -12,65 +12,64 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2025-08-18T11:38:51Z'
-  edited_at: '2025-08-26T00:01:05Z'
+  edited_at: '2026-08-12T11:53:08Z'
   id: 38191154658193
-  locale: en-us
+  locale: es
   section: Set up the measurement data tasks
   section_id: 38035061674769
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/38191154658193-Set-up-the-Lookback-windows-task
+  url: https://support.appsflyer.com/hc/es/articles/38191154658193
 ---
-## Set Lookback Windows
+## Configurar ventanas de lookback
 
-> **At a glance:** Set attribution windows for on-site and off-site campaigns to determine how far back user engagements can be matched to conversions.
+> **De un vistazo:** configura las ventanas de atribución para campañas on-site y off-site a fin de determinar hasta qué punto en el tiempo se pueden asociar los engagements de los usuarios con las conversiones.
 
-Lookback windows define the maximum time between a user engagement (click or view) and the resulting conversion for attribution purposes. Each collaboration can set a custom lookback window duration. Media partners, such as Google Ads or Meta Ads, usually apply different rules for configuring these windows. This article explains how to configure lookback windows for both collaborators and Google and Meta.
+Las ventanas de lookback definen el tiempo máximo entre un engagement del usuario (clic o visualización) y la conversión resultante con fines de atribución. Cada colaboración puede establecer una duración personalizada de la ventana de lookback. Los Partners de medios, como Google Ads o Meta Ads, suelen aplicar reglas distintas para configurar estas ventanas. Este artículo explica cómo configurar ventanas de lookback tanto para colaboradores como para Google y Meta.
 
-## Prerequisites
+## Prerrequisitos
 
-Before a collaborator who is not the collaboration owner can set up the Lookback Windows task, the owner must first assign it to them. For more information, see Assign configuration tasks.
+Antes de que un colaborador que no sea el propietario de la colaboración pueda configurar la tarea de ventanas de lookback, el propietario primero debe asignársela. Para obtener más información, consulta Asignar tareas de configuración.
 
-## Open the Lookback windows task
+## Abrir la tarea de ventanas de lookback
 
-The Lookback windows task in the **Measurement settings** page is where you configure the lookback windows of <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaign-measurement">on-site and off-site campaigns</Anchor>.
+En la página **Configuración de medición**, la tarea Ventanas de lookback es donde configuras las ventanas de lookback de las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaign-measurement">campañas on-site y off-site</Anchor>.
 
-To open the Lookback windows task, follow these steps:
+Para abrir la tarea de ventanas de lookback, sigue estos pasos:
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
-2. On the **Data Collaboration Platform** page, select the collaboration you want to set.
-3. At the bottom of the collaboration page, click **Set up measurement.**
-   * If the link is grayed out, set up the collaboration's <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">data sources</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiences</Anchor>.
-4. On the **Measurement Setting** page, click the **Lookback windows** task pane to open the **Lookback windows** dialog.
+1. En AppsFlyer, en el menú lateral, ve a **Colaborar** > **Data Clean Room**.
+2. En la página **Data Collaboration Platform**, selecciona la colaboración que deseas configurar.
+3. En la parte inferior de la página de colaboración, haz clic en **Configurar medición.**
+   * Si el enlace aparece en gris, configura las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">fuentes de datos</Anchor> y las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiencias</Anchor> de la colaboración.
+4. En la página **Measurement Setting**, haz clic en el panel de tareas **Lookback windows** para abrir el cuadro de diálogo **Lookback windows**.
 
-   > 📘 **Note**
+   > 📘 **Nota**
    >
-   > If the **Lookback windows** pane is grayed out, ask the collaboration owner to assign you the Lookback windows task.
+   > Si el panel **Lookback windows** aparece en gris, pide al propietario de la colaboración que te asigne la tarea de ventanas de lookback.
 
 
-## Set the collaboration lookback window
+## Configurar la ventana de lookback de la colaboración
 
-To set the collaboration lookback window, follow these steps:
+Para configurar la ventana de lookback de la colaboración, sigue estos pasos:
 
-1. If you are setting up a <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">combined on-site and off-site campaign</Anchor> in the **Lookback Windows** dialog, expand the <Image alt="AppsFlyer.png" src="https://files.readme.io/2536fe45ebde303e110c7b90cb3b2a95fc28672a5fa095efff485cdebbd466df-38392816916369.png" width="2.61%" /> **CMN Attribution** pane. Otherwise, skip to the next step.
-2. In the **Click-through** or **View-through lookback window** sliders, drag the pointer to choose the window duration in days.
-3. Click **Save**.
+1. Si estás configurando una <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-and-off-site-campaigns">campaña combinada on-site y off-site</Anchor> en el cuadro de diálogo **Lookback Windows**, expande el panel <Image alt="AppsFlyer.png" src="https://files.readme.io/2536fe45ebde303e110c7b90cb3b2a95fc28672a5fa095efff485cdebbd466df-38392816916369.png" width="2.61%" /> **CMN Attribution**. De lo contrario, pasa al siguiente paso.
+2. En los controles deslizantes de **Click-through** o **View-through lookback window**, arrastra el puntero para elegir la duración de la ventana en días.
+3. Haz clic en **Guardar**.
 
-## Set the Meta Ads lookback window
+## Configurar la ventana de lookback de Meta Ads
 
-If you are running an off-site campaign with Meta Ads, the Lookback windows task will include settings dedicated to the Meta Ads. You can set click-through and view-through attribution windows separately, according to the Meta Ads predefined window durations.
+Si estás ejecutando una campaña off-site con Meta Ads, la tarea de Ventanas de lookback incluirá ajustes específicos para Meta Ads. Puedes establecer por separado las ventanas de atribución de click-through y view-through, según las duraciones de ventana predefinidas de Meta Ads.
 
-1. In the **Lookback windows** panel, expand the <Image alt="Meta.png" src="https://files.readme.io/4023aa4c9446f22aa46063ab349fc038d974638aeefcbb3288e04663896ec788-38392832989585.png" width="3.22%" /> **Meta Ads** panel.
-2. Select the **Click-through** and **View-through** attribution windows from the following options:
-   * **1 day**
-   * **7 days**
-   * **28 days**
+1. En el panel **Ventanas de lookback**, despliega el panel <Image alt="Meta.png" src="https://files.readme.io/4023aa4c9446f22aa46063ab349fc038d974638aeefcbb3288e04663896ec788-38392832989585.png" width="3.22%" /> **Meta Ads**.
+2. Selecciona las ventanas de atribución de **clic** y **view-through** entre las siguientes opciones:
+   * **1 día**
+   * **7 días**
+   * **28 días**
 
-## Google Ads lookback window
+## Ventana de lookback de Google Ads
 
-If you are running an off-site campaign with Google Ads, the Lookback windows task will include a link to the Google Ads platform.
+Si tienes una campaña off-site en funcionamiento con Google Ads, la tarea Ventanas de lookback incluirá un enlace a la plataforma de Google Ads.
 
-1. In the **Lookback windows** dialog, scroll to the <Image alt="Google-ads.png" src="https://files.readme.io/afa0e2cd15ea4214eba625da397dccd04118b564450c59993fd0e668c31f023b-38392832994321.png" width="2.86%" /> **Google Ads** pane.
-2. Click the **arrow icon** to open the relevant Conversion Action settings page on the Google Ads platform.
-3. Update the lookback window settings as needed within Google Ads.
+1. En el cuadro de diálogo **Ventanas de lookback**, desplázate hasta el panel <Image alt="Google-ads.png" src="https://files.readme.io/afa0e2cd15ea4214eba625da397dccd04118b564450c59993fd0e668c31f023b-38392832994321.png" width="2.86%" /> **Google Ads**.
+2. Haz clic en el **icono de flecha** para abrir la página de configuración de la acción de conversión correspondiente en la plataforma de Google Ads.
+3. Actualiza la configuración de la ventana de lookback según sea necesario en Google Ads.
 
-<div data-zendesk-anchors="h_01K3G9Q0G79BDATM6T80T6F6TX=set-lookback-windows h_01K3G9Q0G7XSM1VS4VF9VCTWD0=prerequisites h_01K3G9Q0G7FM4MMR6CVWM4ATRA=open-the-lookback-windows-task h_01K3G9Q0G7DQRCX9FH9Q3N17N3=note h_01K3G9Q0G7X7FY6C0H4DQYSP3F=set-the-collaboration-lookback-window h_01K3G9Q0G71ADFQ9QHBXJBTEAA=set-the-meta-ads-lookback-window h_01K3G9Q0G7HEFS65XA6YD0V6YD=google-ads-lookback-window" />
+<div data-zendesk-anchors="set-lookback-windows=configurar-ventanas-de-lookback h_01K3G9Q0G79BDATM6T80T6F6TX=configurar-ventanas-de-lookback prerequisites=prerrequisitos h_01K3G9Q0G7XSM1VS4VF9VCTWD0=prerrequisitos open-the-lookback-windows-task=abrir-la-tarea-de-ventanas-de-lookback h_01K3G9Q0G7FM4MMR6CVWM4ATRA=abrir-la-tarea-de-ventanas-de-lookback h_01K3G9Q0G7DQRCX9FH9Q3N17N3=nota set-the-collaboration-lookback-window=configurar-la-ventana-de-lookback-de-la-colaboraci%C3%B3n h_01K3G9Q0G7X7FY6C0H4DQYSP3F=configurar-la-ventana-de-lookback-de-la-colaboraci%C3%B3n set-the-meta-ads-lookback-window=configurar-la-ventana-de-lookback-de-meta-ads h_01K3G9Q0G71ADFQ9QHBXJBTEAA=configurar-la-ventana-de-lookback-de-meta-ads google-ads-lookback-window=ventana-de-lookback-de-google-ads h_01K3G9Q0G7HEFS65XA6YD0V6YD=ventana-de-lookback-de-google-ads" />

@@ -1,5 +1,5 @@
 ---
-title: Awin campaign configuration
+title: Configuración de la campaña de Awin
 metadata:
   keywords:
     - Marketers
@@ -12,163 +12,162 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-09-13T11:50:38Z'
-  edited_at: '2026-09-09T12:39:48Z'
+  edited_at: '2026-09-11T00:23:09Z'
   id: 18532554968849
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (A-F)
   section_id: 6551990971793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/18532554968849-Awin-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/18532554968849
 ---
-> **At a glance:** Awin (affiliatewindow\_int) is an integrated partner that allows advertisers to run UA and retargeting campaigns. Awin's marketing platform helps connect merchants (advertisers) with affiliates (publishers).
+> **En resumen:** Awin (affiliatewindow\_int) es un partner integrado que permite a los anunciantes ejecutar campañas de UA y retargeting. La plataforma de marketing de Awin ayuda a conectar comerciantes (anunciantes) con afiliados (publishers).
 
 ![awin icon.png](https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png)
 
-## Activate partner
+## Activar el socio
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace** .  
+   (**Para editar una integración existente:** ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrate**.
+4. En la pestaña **Integración**, activa el selector **Activate partner**.   
+   **Nota:** el selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
-## Setting up Awin
+## Configuración de Awin
 
-The integration with Awin supports click-through attribution.
+La integración con Awin soporta la atribución click-through.
 
-The general configuration window includes the following tabs: Integration, Attribution link, Cost, Ad revenue, and Permissions. For Awin, the available tabs are Integration, Attribution link, and Permissions.
+La ventana de configuración incluye las siguientes pestañas: Integración, Enlace de atribución, Costo, Ingreso publicitario y Permisos. Para Awin, las pestañas disponibles son Integración, Enlace de atribución y Permisos.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * Some settings differ for iOS and Android devices
-> * Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">setting up partner integrations</Anchor>
+> * Algunas configuraciones difieren para dispositivos iOS y Android
+> * Aprende más sobre cómo <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">configurar integraciones de partners</Anchor>
 
-### Prerequisite
+### Requisito previo
 
-Before setting up the integration, make sure to implement the required "commission group" parameters in the SDK, as specified in <Anchor target="_blank" href="https://help.awin.com/docs/appsflyer">Awin documentation</Anchor>.
+Antes de configurar la integración, asegúrate de implementar los parámetros requeridos "commission group" en el SDK, como se especifica en la <Anchor target="_blank" href="https://wiki.awin.com/index.php/Awin_AppsFlyer">documentación de Awin</Anchor>.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The **Integration** tab includes a number of sections, as described below.
+La pestaña **Integración** incluye una serie de secciones, como se describe a continuación.
 
-#### Activate partner
+#### Activar el socio
 
-To configure the integration, you must first <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#activate-partner">turn on</Anchor> the **Activate partner** toggle. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activating and deactivating partner integrations</Anchor>. For additional information, you can reference the <Anchor target="_blank" href="https://developer.awin.com/docs/appsflyer">Awin integration page</Anchor>.
+Para configurar la integración, primero debes <Anchor target="_blank" href="/marketers/es/docs/amazon-ads-campaign-configuration#activar-socio">activar</Anchor> el selector **Activar partner**. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activación y desactivación de integraciones de partners</Anchor>. Para obtener más información, puedes consultar la <Anchor target="_blank" href="https://developer.awin.com/docs/appsflyer">página de integración de Awin</Anchor>.
 
-#### Advanced Privacy
+#### Privacidad avanzada
 
-For iOS apps only: Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Privacy (for iOS 14.5+ and later)** toggle state:
+Solo para aplicaciones de iOS: Tu control sobre los datos compartidos con el partner a través de postbacks y <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">reportes</Anchor> depende del estado del selector de **Privacidad avanzada (para iOS 14.5+ y posteriores)**:
 
-| Advanced Privacy: On | Advanced Privacy: Off |
+| Privacidad avanzada: activada | Privacidad avanzada: desactivada |
 | --- | --- |
-| Postbacks are sent only for events attributed to the partner | Postbacks are sent according to your configuration:<ul><li>**All media sources, including organic**</li><li>**This partner only**</li></ul> |
-| Postbacks are sent according to the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy template</Anchor> |  |
-| <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated and anonymous data</Anchor> is shared with the partner, meaning no user-level data (device ID) is shared. |  |
+| Los postbacks se envían solo para eventos atribuidos al partner | Los postbacks se envían según tu configuración:<ul><li>**Todas las fuentes de medios, incluidas las orgánicas**</li><li>**Solo este partner**</li></ul> |
+| Los postbacks se envían de acuerdo con la <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">plantilla de Privacidad avanzada</Anchor> |  |
+| <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Los datos agregados y anónimos</Anchor> se comparten con el partner, lo que significa que no se comparten datos a nivel de usuario (ID de dispositivo). |  |
 
-#### General settings
+#### Configuración general
 
-**Awin advertiser ID**
+**ID de anunciante de Awin**
 
-Add your Awin advertiser (or merchant) ID.
+Agrega tu ID de comerciante de Awin.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> An advertiser ID identifies your advertiser account on the partner’s side and is necessary for AppsFlyer attribution and postbacks. The ID must appear in the attribution link.
+> Un ID de anunciante identifica tu cuenta de anunciante en el lado del partner y es necesario para la atribución y los postbacks de AppsFlyer. El ID debe aparecer en el enlace de atribución.
 
-#### Default postbacks
+#### Postbacks predeterminados
 
-Install postbacks are sent to this partner only.
+Los postbacks de instalación se envían únicamente a este partner.
 
-#### In-app event settings
+#### Configuración de eventos in-app
 
-**Awin advertiser ID**
+**ID de anunciante de Awin**
 
-Add your Awin merchant ID.
+Agrega tu ID de comerciante de Awin.
 
-#### In-app event postbacks
+#### Postbacks de eventos in-app
 
-Configure mapping of in-app events with Awin events, sent via postbacks:
+Configura el mapeo de eventos in-app con eventos de Awin, enviados a través de postbacks:
 
-1. Turn on **In-app event postbacks**.
-2. Click **Add event** to add an SDK or server-to-server event to the list. The following table describes the fields to complete:
+1. Activa **Postbacks de eventos in-app**.
+2. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista. En la siguiente tabla se describen los campos que debes completar:
 
-| Parameter name | Description |
+| Nombre de parámetro | Descripción |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
-| **for users from** | **This partner only:** You can send in-app event postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner. |
-| **including** | <ul><li>**No data (default)**: Send only the event itself without any event values.</li><li>**Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: Send all the parameters **excluding** the revenue value.</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos de servidor a servidor.<br />**Consejo**: ¿No ves el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.</li><li>Escríbelo en **Evento de AppsFlyer**, y luego haz clic en **Crear personalizado**. Leer más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizados.</Anchor></li></ul> |
+| **Asignado al evento de socio** | El ID o nombre único de cada evento, tal y como lo defina el partner. Existen varias configuraciones de asignación:<ul><li>**Campo de texto:** obtén el ID del evento correspondiente del partner.</li><li>**Cuadro desplegable:** selecciona el evento de AppsFlyer predefinido más adecuado.</li><li>**Tal como está**: envía los eventos tal como están, sin asignación de nombres.</li></ul> |
+| **Para usuarios de** | **Solo para este partner:** Puedes finalizar las postbacks de eventos in-app solo cuando el evento se atribuye a este partner, es decir, el usuario que lo realizó proviene de este partner. |
+| **Incluyendo** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí sin los valores del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento).</li><li>**Valores sin ingresos**: envía todos los parámetros **excluyendo** el valor de ingresos.</li></ul> |
 
-3. [Optional] Click the **Add condition**<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/c95f88d3e2fce153d0a04390fcbca5dabdb97f93ee700f0d69feb568169fddf0-18532570767761.png" width="30px" />icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
-4. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
-5. Click **Save integration**.
-6. [Optional]After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
-   1. From the top-left corner, under the partner name, click the app name to open the list of apps.
-   2. Select a different app from the drop-down list.
-   3. Repeat the <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#integration-tab">integration steps</Anchor> for the selected app.
+3. [Opcional] Haz clic en el icono **Agregar condición** <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png" width="30px" /> para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer las condiciones</Anchor> de un evento.
+4. Establece la **ventana de postback de eventos in-app**, si es necesario (lee más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app"> configuración de la ventana de postback de eventos in-app</Anchor>).
+5. Haz clic en **Guardar integración**.
+6. [Opcional] Después de guardar la integración, desde la página de configuración, puedes integrar más de tus aplicaciones con el partner:
+   1. En la esquina superior izquierda, debajo del nombre del socio, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
+   2. Selecciona una aplicación diferente en la lista desplegable.
+   3. Repite los <Anchor target="_blank" href="/marketers/es/docs/amazon-ads-campaign-configuration#integration-tab">pasos de integración</Anchor> para la aplicación seleccionada.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> For iOS apps only: Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Privacy (for iOS 14.5+ and later)** <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy">toggle state</Anchor>.
+> Solo para aplicaciones de iOS: Tu control sobre los datos compartidos con el partner a través de postbacks y <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">reportes</Anchor> depende del **estado del selector <Anchor target="_blank" href="/marketers/es/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy">Privacidad avanzada (para iOS 14.5+ y posteriores)</Anchor>**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>. **To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para atribuir campañas específicas, conjuntos de anuncios o anuncios individuales, tanto para campañas de UA como de retargeting. Puedes usar un enlace de plataforma única o <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Obtén más información sobre la estructura y los parámetros del enlace de atribución</Anchor>. **Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de Costo">
 
-Cost data isn't available for Awin.
+Los datos sobre costos no están disponibles para Awin.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos por publicidad">
 
-Ad revenue isn't available for Awin.
+Los ingresos por publicidad no están disponibles para Awin.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Select which permissions to grant Awin to access your data and perform various actions.
+Selecciona qué permisos otorgar a Awin para acceder a tus datos y realizar varias acciones.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * When the integration is <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">deactivated</Anchor> while the Permissions toggle is still turned on, permissions remain granted.
-> * Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">granting permissions</Anchor>.
+> * Cuando la integración se <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">desactiva</Anchor> mientras el selector Permisos aún está activado, se siguen otorgando permisos.
+> * Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">concesión de permisos</Anchor>.
 
 </Accordion>
 
-## Deep linking and deferred deep linking using OneLink
+## Deep linking y deep linking diferido mediante OneLink
 
-AWIN wraps any link used in their platform so that they can provide analytics data to their customers. This means the link will be redirected to AWIN’s site before sending users to their final destination. <Anchor target="_blank" href="https://www.appsflyer.com/blog/mobile-marketing/universal-links-app-links/#:~:text=%231%3A%20Link%20wrapping%20and%20Universal%20Links">Learn more about link wrapping</Anchor>.  
-AWIN as a platform supports a URI scheme but **doesn’t support** handling the iOS Universal links and Android app link methods of deep linking. This applies to any link used within AWIN.
+AWIN envuelve cualquier enlace utilizado en su plataforma para que puedan proporcionar datos analíticos a sus clientes. Esto significa que el enlace será redireccionado al sitio de AWIN antes de enviar a los usuarios a su destino final. <Anchor target="_blank" href="https://www.appsflyer.com/blog/mobile-marketing/universal-links-app-links/#:~:text=%231%3A%20Link%20wrapping%20and%20Universal%20Links">Saber más sobre la envoltura de enlaces</Anchor>.  
+AWIN como plataforma soporta un esquema URI pero **no soporta** el manejo de los enlaces universales de iOS y los métodos de enlace de aplicaciones de Android de deep linking. Esto se aplica a cualquier enlace utilizado dentro de AWIN.
 
-To deep link with OneLink via AWIN:
+Para realizar un deep link con OneLink a través de AWIN:
 
-* <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">Setup your OneLink URL with a URI scheme</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">Configura tu URL de OneLink con un esquema de URI</Anchor>
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> For iOS apps, use the `af_force_deeplink=true` parameter on the OneLink URL to activate the deep link <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">URI scheme</Anchor>.
+> Para las aplicaciones iOS, utiliza el parámetro `af_force_deeplink=true`en la URL de OneLink para activar el <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">esquema URI</Anchor> de deep link.
 
-<div data-zendesk-anchors="01H88VAJH3B5ESK12D3ATMMVZ8=activate-partner setting-up-amazon-dsp-integration=setting-up-awin 01H88VAJH3VENKYVRQY5RXN63P=setting-up-awin 01H88VAJH3BYZSXQGGZZJQ9N0C=note h_01HFPEEW4FXS9AFQTTEF2ZBDZW=prerequisite 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::b746d215=activate-partner-1 01H88VAJH34GP7FK1KTJGRDPM7=activate-partner-1 01H88VAJH3G5FAR7RRNDEPNGME=advanced-privacy 01H88VAJH3F2FJK5YP3M2V7RWD=general-settings h_01K4VVB00RYB0XRANWQ29M6P36=note-1 01H88VAJH3WE9Z0971WMBRBJRS=default-postbacks inapp-event-settings=in-app-event-settings h_01HA77JYAR06HA5FZGSRQJATHF=in-app-event-settings inapp-event-postbacks=in-app-event-postbacks 01H88VAJH3AS37MVF75GANWX4B=in-app-event-postbacks 01H88VAJH36MYZ9W1YPWA92Z1Z=note-2 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=note-3 h_01HA77Q9RWZ3FRE5KEN854ZZ78=deep-linking-and-deferred-deep-linking-using-onelink h_01HA78QWQVXEWHPEQE6XWBB64M=note-4" />
+<div data-zendesk-anchors="activate-partner=activar-el-socio 01H88VAJH3B5ESK12D3ATMMVZ8=activar-el-socio setting-up-amazon-dsp-integration=configuraci%C3%B3n-de-awin 01H88VAJH3VENKYVRQY5RXN63P=configuraci%C3%B3n-de-awin 01H88VAJH3BYZSXQGGZZJQ9N0C=nota prerequisite=requisito-previo h_01HFPEEW4FXS9AFQTTEF2ZBDZW=requisito-previo 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::b746d215=activar-el-socio-1 01H88VAJH34GP7FK1KTJGRDPM7=activar-el-socio-1 advanced-privacy=privacidad-avanzada 01H88VAJH3G5FAR7RRNDEPNGME=privacidad-avanzada general-settings=configuraci%C3%B3n-general 01H88VAJH3F2FJK5YP3M2V7RWD=configuraci%C3%B3n-general h_01K4VVB00RYB0XRANWQ29M6P36=advertencia default-postbacks=postbacks-predeterminados 01H88VAJH3WE9Z0971WMBRBJRS=postbacks-predeterminados inapp-event-settings=configuraci%C3%B3n-de-eventos-in-app h_01HA77JYAR06HA5FZGSRQJATHF=configuraci%C3%B3n-de-eventos-in-app inapp-event-postbacks=postbacks-de-eventos-in-app 01H88VAJH3AS37MVF75GANWX4B=postbacks-de-eventos-in-app 01H88VAJH36MYZ9W1YPWA92Z1Z=nota-1 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=nota-2 deep-linking-and-deferred-deep-linking-using-onelink=deep-linking-y-deep-linking-diferido-mediante-onelink h_01HA77Q9RWZ3FRE5KEN854ZZ78=deep-linking-y-deep-linking-diferido-mediante-onelink h_01HA78QWQVXEWHPEQE6XWBB64M=nota-3" />

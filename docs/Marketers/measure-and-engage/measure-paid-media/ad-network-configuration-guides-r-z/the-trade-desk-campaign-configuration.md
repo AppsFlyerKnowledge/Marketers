@@ -1,5 +1,5 @@
 ---
-title: The Trade Desk campaign configuration
+title: Configuración de la campaña de The Trade Desk
 metadata:
   keywords:
     - Advertisers
@@ -14,286 +14,285 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-05-13T07:34:13Z'
-  edited_at: '2026-09-14T09:46:11Z'
+  edited_at: '2026-09-16T00:25:08Z'
   id: 360000894849
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000894849-The-Trade-Desk-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360000894849
 ---
-> **At a glance:** The Trade Desk, an AppsFlyer ad network integrated partner, uses its enhanced mobile advertising solution to cultivate strategic, scalable, and smart campaigns to meet the needs of cross-device users. The Trade Desk offers click-based mobile attribution, view-through mobile attribution, and click-based retargeting, all of which can be recorded through AppsFlyer.
+> **De un vistazo:** The Trade Desk, un partner integrado de la red de publicidad de AppsFlyer, utiliza su solución mejorada de publicidad móvil para cultivar campañas estratégicas, escalables e inteligentes para satisfacer las necesidades de los usuarios de dispositivos cruzados. The Trade Desk ofrece atribución móvil basada en los clics, atribución móvil por impresiones y retargeting basado en los clics, lo cual puede registrarse a través de AppsFlyer.
 
-## Setting up The Trade Desk (TTD)
+## Configuración de The Trade Desk (TTD)
 
-Follow these steps to enable AppsFlyer campaign measurement.
+Sigue estos pasos para habilitar la medición de campañas de AppsFlyer.
 
 <div id="step-1-define-conversion-events-in-ttd" />
 
-<Accordion title="Step 1: Define conversion events in TTD">
+<Accordion title="Paso 1: Definir los eventos de conversión en TTD">
 
-1. On the left menu of your TTD advertiser page, click **DATA**.
-2. From the top menu, click **Add App Data**.
-3. Enter the following fields on the **Create App Data** page:
-   * **App Name:** Enter the name of the app.
-   * **Operating System:** Select either **Android** or **iOS**.   
-     **Note:** TTD supports CTV under both the Android and iOS options.
-   * **Tracking Vendor:** Select **AppsFlyer**.
-   * **Events:** Click **ADD EVENT** to add conversion events and enter the fields:
-     * **EVENT NAME**: Enter the event name.  
-       **Note:** Make sure the name is written precisely as in AppsFlyer, including capitalization, spaces, and symbols.
-     * [Optional] **DESCRIPTION**: Add a description.
-     * [Optional] **USAGE OF COLLECTED DATA**: Select **Attribution**. This option includes both attribution and retargeting.
-     * To add more events, click **ADD EVENT** and repeat the process.
-   * **Conversion Credit Source**: Select which source to attribute conversions, either AppsFlyer or The Trade Desk.   
-     **Note:**
-     * For measuring cross-device and TTD buy, select **The Trade Desk**.   
-       For a holistic view of measurement not just in TTD, select **AppsFlyer**.
-     * Never change this selection during a campaign.
-     * Make sure to select the correct source before clicking **CREATE APP DATA**. You can't change your conversion credit source during a campaign.
-4. Click **CREATE APP DATA**.
+1. En el menú de la izquierda de tu página de anunciante de TTD, haz clic en **DATA** (Datos).
+2. En el menú superior, haz clic en **Add App Data** (Agregar datos de aplicación).
+3. Introduce los siguientes campos en la página **Create App Data** (Crear datos de la aplicación):
+   * **App Name** (Nombre de la aplicación): introduce el nombre de la aplicación.
+   * **Operating System** (Sistema operativo): selecciona **Android** o **iOS**.   
+     **Nota:** TTD admite CTV en las opciones Android e iOS.
+   * **Tracking Vendor** (Proveedor de rastreo): selecciona **AppsFlyer**.
+   * **Events** (Eventos): haz clic en **ADD EVENT** (Agregar evento) para agregar eventos de conversión e introduce los campos:
+     * **EVENT NAME** (Nombre del evento): introduce el nombre del evento.  
+       **Nota:** Asegúrate de que el nombre esté escrito exactamente como en AppsFlyer, incluyendo mayúsculas, espacios y símbolos.
+     * [Opcional] **DESCRIPTION** (Descripción): agrega una descripción.
+     * [Opcional] **USAGE OF COLLECTED DATA** (Uso de los datos recogidos): selecciona **Attribution** (Atribución). Esta opción incluye tanto la atribución como el retargeting.
+     * Para agregar más eventos, haz clic en **ADD EVENT** (Agregar evento) y repite el proceso.
+   * **Conversion Credit Source** (Fuente de crédito para conversiones): selecciona la fuente para atribuir las conversiones, ya sea AppsFlyer o The Trade Desk.   
+     **Nota:**
+     * Para medir entre dispositivos y la compra de TTD, selecciona **The Trade Desk**.   
+       Para tener una visión global de la medición, no solo en TTD, selecciona **AppsFlyer**.
+     * Nunca cambies esta selección durante una campaña.
+     * Asegúrate de seleccionar la fuente correcta antes de hacer clic en **CREATE APP DATA**. No puedes cambiar la fuente de crédito de conversión durante una campaña.
+4. Haz clic en **CREATE APP DATA** (Crear datos de la aplicación).
 
 </Accordion>
 
 <div id="step-2-define-conversion-events-in-appsflyer" />
 
-<Accordion title="Step 2: Define conversion events in AppsFlyer">
+<Accordion title="Paso 2: Definir los eventos de conversión en AppsFlyer">
 
-For AppsFlyer to define conversion events and enable you to send event postbacks to TTD, you must first [integrate TTD with AppsFlyer](/docs/the-trade-desk-campaign-configuration#integrating-ttd-with-appsflyer) and set up the following configurations:
+Para que AppsFlyer defina eventos de conversión y te permita enviar postbacks de eventos a TTD, primero debes [integrar TTD con AppsFlyer](/docs/the-trade-desk-campaign-configuration#integración-de-ttd-con-appsflyer) y realizar las siguientes configuraciones:
 
-* Integration settings (including the configuration of event postbacks)
-* Attribution link
-* Permissions
+* Configuración de la integración (incluida la configuración de los postbacks de los eventos)
+* Enlace de atribución
+* Permisos
 
 </Accordion>
 
 <div id="step-3-map-defined-conversion-events-from-appsflyer" />
 
-<Accordion title="Step 3: Map defined conversion events from AppsFlyer">
+<Accordion title="Paso 3: Asignar los eventos de conversión definidos desde AppsFlyer">
 
-1. From the TTD left menu, click **CAMPAIGNS**.
-2. Scroll down to **Campaigns** and select a campaign from the list.
-3. Click **Edit Reporting & Attribution**.
-4. Click **ADD CONVERSION DATA SOURCE**.
-5. Under **CONVERSION DATA SOURCE**, select or type **AppsFlyer**. AppsFlyer events are now mapped to TTD events.
-6. **CROSS-DEVICE CONCEPT**:
-   * If you chose in [Step 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd) (Conversion Credit Source) to have conversions attributed by TTD, select here **Household** to see conversions in all available channels (such as mobile in-app and CTV).
-   * If you chose AppsFlyer in [Step 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd), select here **None**.
-7. Click **SAVE**.
+1. En el menú de la izquierda de TTD, haz clic en **CAMPAIGNS** (Campañas).
+2. Desplázate hasta **Campaigns** (Campañas) y selecciona una campaña de la lista.
+3. Haz clic en **Edit Reporting & Attribution** (Editar reportes y atribución).
+4. Haz clic en **ADD CONVERSION DATA SOURCE** (Agregar fuente de datos de conversión).
+5. En **CONVERSION DATA SOURCE** (Fuente de datos de conversión), selecciona o escribe **AppsFlyer**. Los eventos de AppsFlyer ahora se asignan a los eventos de TTD.
+6. **CROSS-DEVICE CONCEPT** (Concepto interdispositivo):
+   * Si en el [Paso 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd) (Fuente de crédito de conversión) elegiste que TTD atribuya las conversiones, selecciona aquí **Household** para ver las conversiones en todos los canales disponibles (como móvil in-app y CTV).
+   * Si elegiste AppsFlyer en el [Paso 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd), selecciona aquí **None** (Ninguno).
+7. Haz clic en **SAVE** (Guardar).
 
 </Accordion>
 
 <div id="step-4-add-click-and-impression-trackers-to-campaign-creatives" />
 
-<Accordion title="Step 4: Add click and impression trackers to campaign creatives">
+<Accordion title="Paso 4: Agregar rastreadores de clics e impresiones a las creatividades de la campaña">
 
-In this step, you'll add the click and impression trackers that were created in AppsFlyer to each of the creatives in TTD.
+En este paso, agregarás los rastreadores de clics e impresiones que se crearon en AppsFlyer a cada una de las creatividades en TTD.
 
-1. Under **CAMPAIGNS** in the TTD left menu, click the **CREATIVES** from the top tab.
-2. Select a creative from the list of creatives associated with the current campaign.
-3. Scroll down to **Tracking**.
-4. Copy the view-through [attribution link](/docs/the-trade-desk-campaign-configuration#attribution-link-tab) from AppsFlyer, and paste it to the 1x1 Pixel Impression Tracking URL field.
-5. Copy the click-through attribution link from AppsFlyer, and paste it to the click-Through URL field.
-6. Click **SAVE CHANGES**.
-7. Repeat this step for each of the creatives associated with the campaign.
+1. En **CAMPAIGNS** (Campañas) en el menú de la izquierda de TTD, haz clic en **CREATIVES** (Creatividades) en la pestaña superior.
+2. Selecciona una creatividad de la lista de creatividades asociadas a la campaña actual.
+3. Desplázate hasta **Tracking** (Seguimiento).
+4. Copia el enlace de Atribución view-through de [atribución](/docs/the-trade-desk-campaign-configuration#attribution-link-tab) de AppsFlyer y pégalo en el campo 1x1 Pixel Impression Tracking URL.
+5. Copia el enlace de Atribución click-through de AppsFlyer y pégalo en el campo click-Through URL.
+6. Haz clic **SAVE CHANGES** (Guardar cambios).
+7. Repite este paso para cada una de las creatividades asociadas con la campaña.
 
 </Accordion>
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> If you've chosen for conversions to be attributed by TTD (in [Step 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd)), you can edit the attribution windows:
+> Si has elegido que las conversiones sean atribuidas por TTD (en el [Paso 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd)), puedes editar las ventanas de atribución:
 >
-> 1. From the menu of icons on the right of any TTD page, click the cogwheel to open the **Advertiser Preferences**.
-> 2. Scroll down to **Attribution Windows** and click the edit button on the right.
-> 3. From the **Manage Attribution Windows** page, edit the attribution windows:
->    * **De-duplication Windows:** The number of conversions you can see in a certain period of time.
->    * **Campaign Attribution Windows:** The period of time from ad exposure to the conversion.
-> 4. Click **SAVE**.
+> 1. En el menú de iconos de la derecha de cualquier página de TTD, haz clic en la rueda dentada para abrir las **preferencias del anunciante**.
+> 2. Desplázate hasta **Attribution Windows** (Ventanas de atribución) y haz clic en el botón de edición de la derecha.
+> 3. Desde la página **Manage Attribution Windows** (Administrar ventanas de atribución), edita las ventanas de atribución:
+>    * **De-duplication Windows** (Ventanas de desduplicación): el número de conversiones que se pueden ver en un determinado periodo de tiempo.
+>    * **Campaign Attribution Windows** (Ventanas de atribución de campañas): el periodo de tiempo desde la exposición del anuncio hasta la conversión.
+> 4. Haz clic en **SAVE** (Guardar).
 
-## Integrating TTD with AppsFlyer
+## Integración de TTD con AppsFlyer
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace** .  
+   (**Para editar una integración existente:** Ve a la pestaña **Collaborate > Partner Integrations > Active integrations** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el Partners y selecciona **Integrate**.
+4. En la pestaña **Integración**, activa el selector **Activate partner**.   
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners</Anchor>
 
-TTD configuration window includes three active tabs: Integration, Attribution link, and Permissions. Click the items below to read about the tabs setup.
+La ventana de configuración de TTD incluye tres pestañas activas: Integración, Enlace de atribución y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del encabezado de la ventana de configuración de Partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña Integración">
 
-#### Activate partner
+#### Activar el partner
 
-On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with TTD.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la primera visita, tendrás que activar el conmutador **Activar partner** para configurar la integración. El conmutador debe permanecer encendido durante todo el tiempo que se trabaje con TTD.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-#### Advanced Privacy
+#### Privacidad avanzada
 
-For iOS apps, the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Enable Advance Privacy</Anchor> toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is on in the App Settings, **Enable Advanced Privacy** is turned on and locked by default. 
+En las aplicaciones de iOS, aparece el selector <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Habilitar privacidad avanzada</Anchor>. Cuando está activado, limita el uso compartido de identificadores de usuario con el partner. Ten en cuenta que cuando la opción <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada agregada</Anchor> está activada en la configuración de la aplicación, **Habilitar privacidad avanzada** se activa y se bloquea de forma predeterminada. 
 
-#### General settings
+#### Configuración general
 
-**Tracker and advertiser ID**
+**ID de rastreador y anunciante**
 
-The Trade Desk connects with AppsFlyer via a unique network ID. If you don't already have the Tracker\_ID and the advertiserid, you must obtain them from The Trade Desk to continue with the integration.
+The Trade Desk se conecta con AppsFlyer a través de un ID de red y único. Si aún no tienes el Tracker\_ID y el advertiserid, debes obtenerlos de The Trade Desk para continuar con la integración.
 
 ![TTD_General_Settings_.png](https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png)
 
-**Enable View-Trough attribution**
+**Habilitar la atribución por impresiones**
 
-Turn on **Enable View-Through attribution** to attribute view-through installs from The Trade Desk. The view-through lookback slider is available on the attribution link tab (described below).
+Activa **Habilitar atribución por impresiones** para atribuir las instalaciones por impresiones desde The Trade Desk. El control deslizante de retrospectiva por impresiones está disponible en la pestaña del enlace de atribución (descrito a continuación).
 
-#### Default postbacks
+#### Postbacks predeterminados
 
 ![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
 
-Send automatic postbacks to The Trade Desk following user installs and re-engagements. Use this section to define the source of the users that allow sending these postbacks:
+Envía postbacks automáticos a The Trade Desk después de las instalaciones y re-engagements de los usuarios. Utiliza esta sección para definir el origen de los usuarios que permiten enviar estos postbacks:
 
-* **This partner only**: for events coming only from users attributed to The Trade Desk.
-* **All media sources including organic**: to have your entire user base available to be reported to The Trade Desks.
+* **Solo este partner**: para eventos que provienen solo de usuarios atribuidos a The Trade Desk.
+* **Todas las fuentes de medios, incluidas las orgánicas**: para que toda tu base de usuarios esté disponible para reportarla a The Trade Desk.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> As an all-installs network, The Trade Desk prefers to receive postbacks for all new installs of your app from any source, and they recommend selecting **All media sources including organic** to send all install postbacks to The Trade Desk.
+> Como red de instalaciones, The Trade Desk prefiere recibir postbacks de todas las nuevas instalaciones de tu app desde cualquier fuente, y recomienda seleccionar **Todas las fuentes de medios, incluidas las orgánicas** para enviar todos los postbacks de instalación a The Trade Desk.
 
-#### In-app events settings
+#### Configuración de eventos in-app
 
-Map AppsFlyer events with TTD via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).
+Asigna eventos de AppsFlyer con TTD a través de postbacks. Si el envío de postbacks está activado, esto incluye los eventos in-app rechazados (eventos bloqueados por Protect360 o eventos que no cumplen con las reglas de validación del targeting).
 
 ![the_trade_desk_in_app_event_settings_en-us.png](https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png)
 
-**To configure in-app event postbacks:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Enter the **advertiserid** and **Tracker\_ID**.
-2. Enable **In-app event postbacks**.
-3. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
-4. If available, select whether to send events automatically or manually. Learn more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped">sending all events as they are</Anchor>.
-5. Click **Add event** to add an SDK or server-to-server event to the list.
-6. Complete the parameters required.
-7. [Optional] Click<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/8b8da8198a5180447eacaab4a3dd101d82149a8d7aa926e3b896847a18eb76f9-50612291007377.png" width="30px" />to set conditions for sending certain in-app events to TTD.  
-   Learn more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">conditional in-app event postbacks</Anchor>.
+1. Introduce el **advertiserid** y el **Tracker\_ID**.
+2. Habilita **los postbacks de eventos in-app**.
+3. Configura la **ventana de postback de eventos in-app**, si es necesario (lee más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">la configuración de la ventana de postback de eventos in-app</Anchor>).
+4. Si está disponible, selecciona si deseas enviar los eventos de forma automática o manual. Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped">enviar todos los eventos tal como están</Anchor>.
+5. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista.
+6. Completa los parámetros según sea necesario.
+7. [Opcional] Haz clic en<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png" width="30px" />para establecer condiciones para enviar ciertos eventos in-app a TTD.  
+   Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">los postbacks de eventos in-app condicionales</Anchor>.
 
-| Parameter Name | Description |
+| Nombre de Parámetro | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
-| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources including organic**: send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
-| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.<br />**Consejo**: ¿No ves el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.</li><li>Escríbelo en **evento de AppsFlyer**, luego haz clic **Crear personalizado**. Leer más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizados</Anchor></li></ul> |
+| **para usuarios de** | Selecciona la opción de envío para el evento:<ul><li>**Solo este partner**: envía postbacks solo cuando este evento se atribuye a este partner.</li><li>**Todas las fuentes de medios, incluidas las orgánicas**: envía postbacks de eventos atribuidos a cualquier partner, así como eventos orgánicos.</li></ul> |
+| **Incluyendo** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí, sin el valor del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento).</li><li>**Valores sin ingresos**: envía todos los parámetros **excluyendo** el valor de ingresos.</li></ul> |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to TTD for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.
+Genera y guarda enlaces de atribución y envíalos a TTD para atribuir campañas específicas, conjuntos de anuncios o anuncios individuales, tanto para campañas de UA como de retargeting. Puedes usar tanto un enlace de una sola plataforma como <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.
 
-#### Attribution link parameters
+#### Parámetros de enlaces de atribución
 
-Adding parameters to the attribution link enables you to perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here. When saving the attribution link, all the parameters configured in this tab are saved.
+Agregar parámetros al enlace de atribución te permitirá realizar análisis detallados. Los parámetros que ya están definidos en el enlace de atribución pueden editarse agregándolos junto con sus valores nuevos en esta sección. Al guardar el enlace de atribución, se guardan todos los parámetros configurados en esta pestaña.
 
-Select which parameters you want to add to the attribution link.
+Selecciona los parámetros que quieres agregar al enlace de atribución.
 
 ![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
 
-#### Default parameters
+#### Parámetros por defecto
 
-| Name | Description | Parameter |
+| Nombre | Descripción | Parámetro |
 | --- | --- | --- |
-| Site ID | Set your site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations. | af\_siteid |
-| Campaign Name | Add your campaign name to compare different campaigns running with TTD. | c |
-| Campaign ID | Add your campaign ID. | af\_c\_id |
-| Adset ID | Add your adset ID to compare the performance of all your ads per adset. | af\_adset |
-| Ad ID | Add your ad ID. | af\_ad\_id |
+| ID de sitio | Configura el parámetro de ID de tu sitio para atribuir instalaciones a publishers específicos. Si hay muchos publishers, te recomendamos limitar el número de ID de sitio utilizados y usar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">superar las limitaciones del ID de sitio</Anchor>. | af\_siteid |
+| Nombre de la campaña | Agrega el nombre de tu campaña para comparar las diferentes campañas que se ejecutan con TTD. | C |
+| ID de campaña | Agrega el ID de tu campaña. | af\_c\_id |
+| ID de conjunto de anuncios | Agrega el ID de tu conjunto de anuncios para comparar el rendimiento de todos tus anuncios por conjunto de anuncios. | af\_conjunto de anuncios |
+| ID de anuncio | Agrega el ID de tu anuncio. | id\_del\_anuncio\_af |
 
-You can add more parameters for the attribution link. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">setting up the attribution link</Anchor> and about attribution link <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">structure and parameters</Anchor>.
+Puede agregar más parámetros para el enlace de atribución. Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">cómo configurar el enlace de atribución</Anchor> y sobre la <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">estructura y los parámetros del enlace de atribución</Anchor>.
 
-#### Parameters for measuring CTV
+#### Parámetros para medir el CTV
 
-You can have CTV traffic measured with AppsFlyer by adding the following parameters and values:
+Puedes medir el tráfico de CTV con AppsFlyer agregando los siguientes parámetros y valores:
 
-| Parameter | Value | Comments |
+| Parámetro | value | Comentarios |
 | --- | --- | --- |
-| redirect | false |  |
-| af\_xplatform\_vt\_lookback | 1h-72h | Any value between 1-72 hours can be entered |
+| Redirigir | false |  |
+| af\_xplatform\_vt\_lookback | 1 - 72 horas | Se puede ingresar cualquier valor entre 1 y 72 horas |
 
-#### Click-through attribution
+#### Atribución por clics
 
 ![click-through_attribution_ttd_en-us.png](https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png)
 
-Use the slider to set the maximum time from click to install. Only installs (first launches) that take place within the lookback window are attributed.
+Utiliza el control deslizante para establecer el tiempo máximo desde el clic hasta la instalación. Solo se atribuyen las instalaciones (primeros inicios) que ocurran dentro de la ventana retrospectiva.
 
-Lookback window range: 1-23 hours or 1-30 days.
+Intervalo de ventana retrospectiva: 1-23 horas o 1-30 días.
 
-Attribution link parameter: af\_click\_lookback
+Parámetro de enlace de atribución: af\_click\_lookback
 
-Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window</Anchor>.
+Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
-**Click-through attribution link:** Contains all the parameters you included in the attribution link setup. You can copy the link and send it to the partner to be activated when your leads click a corresponding ad.
+**Enlace de atribución por clic:** Contiene todos los parámetros que incluiste en la configuración del enlace de atribución. Puedes copiar el enlace y enviarlo al partner para que se active cuando tus clientes potenciales hagan clic en un anuncio correspondiente.
 
-#### View-through attribution
+#### Atribución por view-through
 
 ![view-through_attribution_ttd_en-us.png](https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png)
 
-Use the slider to set the maximum time from impression to install. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to the partner, providing there was no other relevant ad click.
+Utiliza el cursor para establecer el tiempo máximo desde la impresión hasta la instalación. Solo las instalaciones (primeras aperturas) que ocurren dentro de esta ventana, después de una impresión de anuncio, se atribuyen al partner, siempre que no haya otro clic relevante en un anuncio.
 
-Lookback window range: 1-24 hours.
+Intervalo de ventana retrospectiva: 1-24 horas.
 
-Attribution link parameter: af\_viewthrough\_lookback
+Parámetro en el enlace de atribución: af\_viewthrough\_lookback
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution</Anchor>.
+Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">Atribución view-through</Anchor>.
 
-**View-through attribution link:** Contains all the parameters you included in the attribution link setup. You can copy the link and send it to the partner to be activated when your leads click a corresponding ad.
+**Enlace de atribución por impresiones:** contiene todos los parámetros que incluiste en la configuración del enlace de atribución. Puedes copiar el enlace y enviarlo al partner para que se active cuando tus clientes potenciales hagan clic en un anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña Costo">
 
-Cost integration is not available for The Trade Desk.
+La integración de costos no está disponible para The Trade Desk.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña Ingresos por publicidad">
 
-Ad revenue is not available for The Trade Desk.
+Los ingresos por publicidad no están disponibles para The Trade Desk.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant The Trade Desk, whether they act as an ad network, agency, or even both. Note that even if attribution is disabled for The Trade Desk, the permissions tab can be active and you can grant control to The Trade Desk.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a The Trade Desk, ya sea que actúe como red de publicidad, agencia o ambas. Ten en cuenta que incluso si la atribución está deshabilitada para The Trade Desk, la pestaña de permisos se puede activar y puedes otorgar control a The Trade Desk.
 
 ![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
 
-#### **Ad network permissions**
+#### **Permisos para red de anuncios**
 
-* **Allow to configure integration:** Allow TTD to set up the integration tab, except for in-app event postbacks
-* **Allow to configure in-app event postbacks:** Allow TTD to setup in-app event postback mapping to itself, on the integration tab
-* **Allow access to your retention report:** Only for TTD's own retention data
-* **Allow access to your aggregate loyal user data:** Only for TTD's own loyal user data
-* **Allow access to your aggregate in-app events data:** Only for TTD's own in-app events data
-* **Allow access to your aggregate revenue data:** Only for the revenue data attributed to TTD
-* **Allow access to your Protect360 dashboard:** Only for TTD's own Protect360 data, and providing you have this feature enabled
+* **Permitir la configuración de la integración:** permite que TTD configure la pestaña de integración, excepto los postbacks de eventos in-app.
+* **Permitir la configuración de postback de eventos in-app:** permite que TTD configure y se asigne postbacks de eventos in-app en la pestaña de integración.
+* **Permitir el acceso a tu reporte de retención:** solo para los datos propios de retención de TTD.
+* **Permitir el acceso a tus datos agregados de usuarios leales:** solo a los datos propios de usuarios leales de TTD.
+* **Permitir acceso a tus datos agregados de eventos in-app:** solo a los datos de eventos in-app propios de TTD.
+* **Permitir acceso a tus datos agregados de ingresos:** solo a los datos de ingresos atribuidos a TTD.
+* **Permitir el acceso a panel de control de Protect360:** solo para los datos de Protect360 propios de TTD, y siempre que tengas habilitada esta función.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Saber más sobre cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos de ad network</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HH2DHQWXTB9K2R07SJP1AXER=setting-up-the-trade-desk-ttd h_01HH2DHQWX9Y6R1J3HPYWTAC2Z=step-1-define-conversion-events-in-ttd h_01HH2DHQWXTZ5EMJNYRGJMY7QA=step-2-define-conversion-events-in-appsflyer h_01HH2DHQWXCWF0H1GJGJS2YYDA=step-3-map-defined-conversion-events-from-appsflyer step-4-add-click-and-impression-trackers%C2%A0to-campaign-creatives=step-4-add-click-and-impression-trackers-to-campaign-creatives h_01HH2DHQWX1Z10PTRM8S7538YX=step-4-add-click-and-impression-trackers-to-campaign-creatives h_01HH2DHQWXX1EEARNBC61W3CDK=note h_01GFNDH51M6KYE39C7DJW3BJ8W=integrating-ttd-with-appsflyer h_01GF8CKQYVDW5Z7141MJDGGW4C=integration-tab h_01HH2DHQWYME21J7JV176N71P2=activate-partner h_01HH2DHQWYFJB3ZCWVZZ048AQP=advanced-privacy h_01HH2DHQWYN3CZZCFT9X2R2N9J=general-settings h_01HH2DHQWY1GPVP5W5R4XV2H9C=default-postbacks h_01HH2DHQWY284121FR8HSFGH45=note-1 inapp-events-settings=in-app-events-settings h_01HH2DHQWY0XM70BPE7222XE78=in-app-events-settings h_01HH2DHQWY7X522JKKC4A45BHN=attribution-link-tab h_01HH2DHQWY4GXPMCV5JEBFERG6=attribution-link-parameters h_01HH2DHQWYZSECQWRQEKDB9KZH=default-parameters h_01HH2DHQWYZPKCY947MWK7GEAP=parameters-for-measuring-ctv clickthrough-attribution=click-through-attribution h_01HH2DHQWYCFGJK4ZT9CXFX3X3=click-through-attribution viewthrough-attribution=view-through-attribution h_01HH2DHQWYP6S95MRAS39Q4RTT=view-through-attribution h_01HH2DHQWYP5GYN2GH3C839P3N=cost-tab h_01HH2DHQWYG3KZTE0HH7QV4H6X=ad-revenue-tab h_01HH2DHQWYA9HAWT5PV092T6E9=permissions-tab h_01HH2DHQWYCWYQFBDA19Z9BA8W=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-the-trade-desk-ttd=configuraci%C3%B3n-de-the-trade-desk-ttd h_01HH2DHQWXTB9K2R07SJP1AXER=configuraci%C3%B3n-de-the-trade-desk-ttd h_01HH2DHQWX9Y6R1J3HPYWTAC2Z=step-1-define-conversion-events-in-ttd h_01HH2DHQWXTZ5EMJNYRGJMY7QA=step-2-define-conversion-events-in-appsflyer h_01HH2DHQWXCWF0H1GJGJS2YYDA=step-3-map-defined-conversion-events-from-appsflyer step-4-add-click-and-impression-trackers%C2%A0to-campaign-creatives=step-4-add-click-and-impression-trackers-to-campaign-creatives h_01HH2DHQWX1Z10PTRM8S7538YX=step-4-add-click-and-impression-trackers-to-campaign-creatives h_01HH2DHQWXX1EEARNBC61W3CDK=nota integrating-ttd-with-appsflyer=integraci%C3%B3n-de-ttd-con-appsflyer h_01GFNDH51M6KYE39C7DJW3BJ8W=integraci%C3%B3n-de-ttd-con-appsflyer h_01GF8CKQYVDW5Z7141MJDGGW4C=integration-tab activate-partner=activar-el-partner h_01HH2DHQWYME21J7JV176N71P2=activar-el-partner advanced-privacy=privacidad-avanzada h_01HH2DHQWYFJB3ZCWVZZ048AQP=privacidad-avanzada general-settings=configuraci%C3%B3n-general h_01HH2DHQWYN3CZZCFT9X2R2N9J=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HH2DHQWY1GPVP5W5R4XV2H9C=postbacks-predeterminados h_01HH2DHQWY284121FR8HSFGH45=nota-1 inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HH2DHQWY0XM70BPE7222XE78=configuraci%C3%B3n-de-eventos-in-app h_01HH2DHQWY7X522JKKC4A45BHN=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HH2DHQWY4GXPMCV5JEBFERG6=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n default-parameters=par%C3%A1metros-por-defecto h_01HH2DHQWYZSECQWRQEKDB9KZH=par%C3%A1metros-por-defecto parameters-for-measuring-ctv=par%C3%A1metros-para-medir-el-ctv h_01HH2DHQWYZPKCY947MWK7GEAP=par%C3%A1metros-para-medir-el-ctv clickthrough-attribution=atribuci%C3%B3n-por-clics h_01HH2DHQWYCFGJK4ZT9CXFX3X3=atribuci%C3%B3n-por-clics viewthrough-attribution=atribuci%C3%B3n-por-view-through h_01HH2DHQWYP6S95MRAS39Q4RTT=atribuci%C3%B3n-por-view-through h_01HH2DHQWYP5GYN2GH3C839P3N=cost-tab h_01HH2DHQWYG3KZTE0HH7QV4H6X=ad-revenue-tab h_01HH2DHQWYA9HAWT5PV092T6E9=permissions-tab ad-network-permissions=permisos-para-red-de-anuncios h_01HH2DHQWYCWYQFBDA19Z9BA8W=permisos-para-red-de-anuncios" />

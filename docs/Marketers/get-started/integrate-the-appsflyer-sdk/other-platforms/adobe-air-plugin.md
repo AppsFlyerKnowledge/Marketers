@@ -1,5 +1,5 @@
 ---
-title: Adobe AIR plugin
+title: Plugin de Adobe AIR
 metadata:
   keywords:
     - github
@@ -17,36 +17,36 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2013-12-09T11:32:45Z'
-  edited_at: '2023-02-15T13:15:03Z'
+  edited_at: '2026-08-12T12:02:19Z'
   id: 207032226
-  locale: en-us
+  locale: es
   section: Other platforms
   section_id: 6551244207121
-  url: https://support.appsflyer.com/hc/en-us/articles/207032226-Adobe-AIR-plugin
+  url: https://support.appsflyer.com/hc/es/articles/207032226
 ---
-> **At a glance:** Integrate AppsFlyer SDK into iOS/Android apps developed with Adobe AIR development platform to measure installs, in-app events, media sources, and more.
+> **En resumen:** Integra el SDK de AppsFlyer en aplicaciones iOS/Android desarrolladas con la plataforma de desarrollo Adobe AIR para medir las instalaciones, los eventos in-app, las fuentes de medios y más.
 
-## Plugin information
+## Información del plugin
 
-Supported platforms:
+Plataformas compatibles:
 
 * Android
 * iOS 6+
 
-Based on:
+Basado en:
 
 * iOS AppsFlyer SDK V6.0.3
-* Android AppsFlyer SDK V5.4.1
+* SDK para Android de AppsFlyer V5.4.1
 
-## Installation and implementation
+## Instalación e implementación
 
 <div id="installation" />
 
-<Accordion title="Installation">
+<Accordion title="Instalación">
 
-Download the <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/blob/master/bin/AppsFlyerAIRExtension.ane">AppsFlyerAIRExtension.ane</Anchor> file from the bin folder Add the ANE to your project and make sure the IDE is marked to package it.
+Descarga el archivo <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/blob/master/bin/AppsFlyerAIRExtension.ane">AppsFlyerAIRExtension.ane</Anchor> de la carpeta bin. Añade el ANE a tu proyecto y asegúrate de que el IDE esté marcado para empaquetarlo.
 
-If the following was not added automatically, add it to the APP\_NAME-app.xml:
+Si lo siguiente no se ha añadido automáticamente, añádelo a APP\_NAME-app.xml:
 
 ```html Markup
 <extensions>
@@ -54,102 +54,104 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 </extensions>
 ```
 
-> 📘 **Notes for Android apps**
+> 📘 **Notas para aplicaciones Android**
 >
-> * In the AppsFlyer dashboard you will need to add "air." prefix to the package name as this is added automatically by Air. For example - an app with the package name "**com.test.android**", should set the app id in the AppsFlyer Dashboard as "**air.com.test.android**".
-> * Add the following permissions to Android Manifest (in the app description `APP_NAME-app.xml`):
+> * En el Dashboard de AppsFlyer, tendrás que añadir el prefijo "air." al nombre del paquete, ya que Air lo añade automáticamente. For example - una aplicación con el nombre de paquete "**com.test.android**", debe configurar el ID de la aplicación en el Dashboard de AppsFlyer como "**air.com.test.android**".
+> * Añade los siguientes permisos al Android Manifest (en la descripción de la aplicación `APP_NAME-app.xml`):
 >
 >   ```html Markup
 >   <uses-permission android:name="android.permission.INTERNET"/>
 >   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 >   <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 >   ```
-> * Add the following metatag to Android Manifest within the application tag (in the app description `APP_NAME-app.xml`):
+> * Añade la siguiente etiqueta meta al Android Manifest dentro de la etiqueta de la aplicación (en la descripción de la aplicación `APP_NAME-app.xml`):
 >
 >
 >   ```html Markup
 >   meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 >   ```
 >
-> As a result, you should see your Manifest like this:
+> Como resultado, tu Manifest debería verse así:
 >
 > [![](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)
 >
-> **Important:** Due to some limitations in the <Anchor target="_blank" href="https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html">ADT</Anchor>, after the APK is built, it is missing some important files.
+> **Importante:** Debido a algunas limitaciones de <Anchor target="_blank" href="https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html">ADT</Anchor>, después de compilar el APK faltan algunos archivos importantes.
 >
-> To add those files (with the help of **automated** script):
+> Para añadir esos archivos (con la ayuda de **un script automatizado** ):
 >
-> 1. Place into single directory of your choice:
->    * APK file
->    * Keystore that was used to sign the APK
->    * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/blob/master/bin/af_apk_fix.sh">af\_apk\_fix.sh script</Anchor>
-> 2. Run `./af_apk_fix.sh` and enter requested info when prompted.
+> 1. Coloca en un único directorio de tu elección:
+>    * Archivo APK
+>    * Keystore que se usó para firmar el APK
+>    * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/blob/master/bin/af_apk_fix.sh">script af\_apk\_fix.sh</Anchor>
+> 2. Ejecuta `./af_apk_fix.sh` e introduce la información solicitada cuando se te pida.
 >
-> Here is what the script is doing. In case of any issues, you can perform those steps manually:
+> Esto es lo que hace el script. En caso de que haya algún problema, puedes realizar estos pasos manualmente:
 >
-> 1. Decode the APK using <Anchor target="_blank" href="https://ibotpeaches.github.io/Apktool/">apktool</Anchor>. This will create app\_name folder. `apktool d app_name.apk`
-> 2. Download the [AppsFlyer SDK jar/aar](https://repo.maven.apache.org/maven2/com/appsflyer/af-android-sdk/5.4.1/af-android-sdk-5.4.1.aar) of the same version that was used in the APK.
-> 3. Extract files `a-` and `b-` from the jar (by renaming jar into a zip) and place them into the folder with the decompiled apk to `app_name/unknown/com/appsflyer/internal`
-> 4. Edit `apktool.yml` by adding these lines under `unknownFiles:`
+> 1. Decodifica el APK con <Anchor target="_blank" href="https://ibotpeaches.github.io/Apktool/">apktool</Anchor>. Esto creará la carpeta app\_name.
+>    `apktool d app_name.apk`
+> 2. Descarga el [jar/aar del SDK de AppsFlyer](https://repo.maven.apache.org/maven2/com/appsflyer/af-android-sdk/5.4.1/af-android-sdk-5.4.1.aar) de la misma versión que se usó en el APK.
+> 3. Extrae los archivos `a-` y `b-` del jar (renombrando el jar como un zip) y colócalos en la carpeta del apk descompilado, en `app_name/unknown/com/appsflyer/internal`
+> 4. Edita `apktool.yml` añadiendo estas líneas debajo de `unknownFiles:`
 >
 >    ```
 >    com/appsflyer/internal/b-: '0'
 >    com/appsflyer/internal/a-: '0'
 >    ```
 >
->    See sample screenshot that follows.
+>    Mira la captura de pantalla de ejemplo que aparece a continuación.
 >
 >    [![](https://files.readme.io/6bacbb55e5b1a7739034db8cc03313459ad6d048313a51ef6bf1e07500165cc0-360010933018.png)](https://files.readme.io/6bacbb55e5b1a7739034db8cc03313459ad6d048313a51ef6bf1e07500165cc0-360010933018.png)
-> 5. Build the APK.back (will appear under `app_name/dist` folder). `apktool b app`
-> 6. Sign the APK.
+> 5. Compila de nuevo el APK (aparecerá en la carpeta `app_name/dist` ).
+>    `apktool b app`
+> 6. Firma el APK.
 >
 >    ```html Markup
 >    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore myKeystore.keystore app_name/dist/app_name.apk myKey
 >    ```
-> 7. Zipalign the apk (to be able to upload to Google Play)
+> 7. Zipalign el apk (para poder subirlo a Google Play)
 >
 >    ```html Markup
 >    zipalign -f -v 4 app_name/dist/app_name.apk app_name/dist/zipalign_app_name.apk
 >    ```
-> 8. Verify zipalignment
+> 8. Verifica la alineación con zipalign
 >
 >    ```html Markup
 >    zipalign -c -v 4 app_name/dist/zipalign_app_name.apk
 >    ```
-> 9. Your apk `zipalign_app_name.apk` is ready to use!
+> 9. ¡Tu apk `zipalign_app_name.apk` está lista para usar!
 
 </Accordion>
 
 <div id="implementation" />
 
-<Accordion title="Implementation">
+<Accordion title="Implementación">
 
-Import the AppsFlyer Extension into your project:
+Importa la extensión de AppsFlyer a tu proyecto:
 
 ```html Markup
 import AppsFlyerInterface;
 ```
 
-Construct the AppsFlyer interface:
+Crea la interfaz de AppsFlyer:
 
 ```html Markup
 private static var appsFlyer:AppsFlyerInterface; 
 appsFlyer = new AppsFlyerInterface();
 ```
 
-[Optional] If you want to perform deep linking or access AppsFlyer conversion data from the application, register Conversion Listener:
+[Opcional] Si quieres realizar Deep Linking o acceder a los datos de conversión de AppsFlyer desde la aplicación, registra el detector de conversiones:
 
 ```html Markup
 appsFlyer.registerConversionListener();
 ```
 
-Set the Developer key and iOS app ID (optional) and Initialise the SDK:
+Configura la clave de desarrollador y el ID de la app de iOS (opcional) e inicializa el SDK:
 
 ```html Markup
 appsFlyer.appsFlyer.init("DevKey", "iOSAppID");
 ```
 
-Initialize session logging (automatically log app launches and background-to-foreground transitions) with DevKey and iOS app ID (optional):
+Inicializa el registro de sesiones (registra automáticamente los inicios de la aplicación y las transiciones de segundo plano a primer plano) con la DevKey y el ID de la aplicación iOS (opcional):
 
 ```html Markup
 appsFlyer.start("DevKey", "iOSAppID");
@@ -159,21 +161,20 @@ appsFlyer.start("DevKey", "iOSAppID");
 
 <div id="deep-linking" />
 
-<Accordion title="Deep linking">
+<Accordion title="Enlaces profundos">
 
-In order to receive the relevant AppsFlyer information from the deep link used:
+Para recibir la información relevante de AppsFlyer del enlace profundo utilizado:
 
-1. Register the following event listeners:
+1. Registra los siguientes слушadores de eventos:
 
    ```html Markup
-   appsFlyer.addEventListener(AppsFlyerEvent.APP_OPEN_ATTRIBUTION, eventHandler); // success 
-   appsFlyer.addEventListener(AppsFlyerEvent.ATTRIBUTION_FAILURE, eventHandler); // error
+   appsFlyer.addEventListener(AppsFlyerEvent.APP_OPEN_ATTRIBUTION, eventHandler); // success \nappsFlyer.addEventListener(AppsFlyerEvent.ATTRIBUTION_FAILURE, eventHandler); // error
    ```
-2. Handle the response in a corresponding event handler:
+2. Gestiona la respuesta en un controlador de eventos correspondiente:
 
    ```html Markup
    private function eventHandler(event:AppsFlyerEvent):void {
-   	log("AppsFlyer event: " + event.type + "; \nData: " + event.data);
+   	log("Evento de AppsFlyer: " + event.type + "; \nDatos: " + event.data);
    }
    ```
 
@@ -181,21 +182,20 @@ In order to receive the relevant AppsFlyer information from the deep link used:
 
 <div id="deferred-deep-linking" />
 
-<Accordion title="Deferred deep linking">
+<Accordion title="Enlaces profundos diferidos">
 
-In order to receive the conversion data for the current install:
+Para recibir los datos de conversión de la instalación actual:
 
-1. Register the following event listeners:
+1. Registra los siguientes слушadores de eventos:
 
    ```html Markup
-   appsFlyer.addEventListener(AppsFlyerEvent.INSTALL_CONVERSATION_DATA_LOADED, eventHandler); // success
-   appsFlyer.addEventListener(AppsFlyerEvent.INSTALL_CONVERSATION_FAILED, eventHandler); //error
+   appsFlyer.addEventListener(AppsFlyerEvent.INSTALL_CONVERSATION_DATA_LOADED, eventHandler); // success\nappsFlyer.addEventListener(AppsFlyerEvent.INSTALL_CONVERSATION_FAILED, eventHandler); // error
    ```
-2. Handle the response in a corresponding event handler:
+2. Gestiona la respuesta en un controlador de eventos correspondiente:
 
    ```html Markup
    private function eventHandler(event:AppsFlyerEvent):void {
-   	log("AppsFlyer event: " + event.type + "; \nData: " + event.data);
+   	log("Evento de AppsFlyer: " + event.type + "; \nDatos: " + event.data);
    }
    ```
 
@@ -203,35 +203,35 @@ In order to receive the conversion data for the current install:
 
 <div id="imei-and-android-id-collection-android-only" />
 
-<Accordion title="IMEI and Android ID collection (Android only)">
+<Accordion title="Recopilación de IMEI e ID de Android (solo Android)">
 
-**Important**! Apps with Google play services should avoid IMEI collection as this is in violation of the Google Play policy.
+**Importante**! Las aplicaciones con servicios de Google Play deberían evitar la recopilación del IMEI, ya que esto viola la política de Google Play.
 
-By default, IMEI and Android ID are not collected by the SDK if the OS version is higher than KitKat (4.4) and the device contains Google Play Services.
+De manera predeterminada, el SDK no recopila el IMEI ni el ID de Android si la versión del sistema operativo es superior a KitKat (4.4) y el dispositivo contiene servicios de Google Play.
 
-To explicitly send these IDs to AppsFlyer, developers can use the following APIs and place them before initializing the SDK.
+Para enviar explícitamente estos ID a AppsFlyer, los desarrolladores pueden usar las siguientes API y colocarlas antes de inicializar el SDK.
 
-If the app does NOT contain Google Play Services, the IMEI and Android ID are collected by the SDK.
+Si la aplicación NO contiene Google Play Services, el SDK recopila el IMEI y el ID de Android.
 
-**Enable/disable IMEI collection (disabled by default)**
+**Activar/desactivar la recopilación de IMEI (desactivada de forma predeterminada)**
 
 ```html Markup
 appsFlyer.setCollectIMEI(bool);
 ```
 
-**Manually set IMEI Data**
+**Configurar manualmente los datos de IMEI**
 
 ```html Markup
 appsFlyer.setImeiData("imeiString");
 ```
 
-**Enable/disable Android ID collection (disabled by default)**
+**Activar/desactivar la recopilación del ID de Android (desactivada de forma predeterminada)**
 
 ```html Markup
 appsFlyer.setCollectAndroidID(bool);
 ```
 
-**Manually set Android ID data**
+**Configurar manualmente los datos del ID de Android**
 
 ```html Markup
 appsFlyer.setAndroidIdData("AndroidIDString");
@@ -239,23 +239,23 @@ appsFlyer.setAndroidIdData("AndroidIDString");
 
 </Accordion>
 
-## API reference
+## Referencia de API
 
 <div id="api-methods" />
 
-<Accordion title="API methods">
+<Accordion title="Métodos API">
 
 <Table>
   <thead>
     <tr>
       <th>
-        Name
+        Nombre
       </th>
       <th>
-        Description
+        Nota
       </th>
       <th>
-        Signature/example
+        Firma/ejemplo
       </th>
     </tr>
   </thead>
@@ -266,7 +266,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         logEvent
       </td>
       <td>
-        Log in-app events.
+        Registra eventos in-app.
       </td>
       <td>
         ```html Markup
@@ -278,10 +278,10 @@ appsFlyer.setAndroidIdData("AndroidIDString");
     </tr>
     <tr>
       <td>
-        start
+        comenzar
       </td>
       <td>
-        Send a session logging event, regardless of app state.
+        Envía un evento de registro de sesión, independientemente del estado de la app.
       </td>
       <td>
         ```html Markup
@@ -294,7 +294,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         setAppUserId
       </td>
       <td>
-        Get the user ID as used in the app.
+        Obtiene el ID del usuario tal como se usa en la aplicación.
       </td>
       <td>
         ```html Markup
@@ -307,7 +307,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         setUserEmails
       </td>
       <td>
-        Get user email.
+        Obtiene el correo electrónico del usuario.
       </td>
       <td>
         ```html Markup
@@ -320,7 +320,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         setCurrency
       </td>
       <td>
-        Set the currency for logging revenue events, for example, USD.
+        Establece la moneda para registrar eventos de ingresos, por ejemplo, USD.
       </td>
       <td>
         ```html Markup
@@ -330,10 +330,10 @@ appsFlyer.setAndroidIdData("AndroidIDString");
     </tr>
     <tr>
       <td>
-        stop
+        detener
       </td>
       <td>
-        Used when you want want to shut down all SDK logging due to legal and privacy compliance. Once this API is invoked, our SDK no longer communicates with our servers.
+        Se usa cuando quieres desactivar todo el registro del SDK por motivos de cumplimiento legal y de privacidad. Una vez que se invoca esta API, nuestro SDK deja de comunicarse con nuestros servidores.
       </td>
       <td>
         ```html Markup
@@ -346,9 +346,9 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         setDebug
       </td>
       <td>
-        Enable/disable AppsFlyer debug logs.
+        Activa o desactiva los registros de depuración de AppsFlyer.
 
-        **Important:** Do not release the app to app stores with debug logs enabled.
+        **Importante:** Do not publiques la app en tiendas de aplicaciones con los registros de depuración habilitados.
       </td>
       <td>
         ```html Markup
@@ -360,3 +360,5 @@ appsFlyer.setAndroidIdData("AndroidIDString");
 </Table>
 
 </Accordion>
+
+<div data-zendesk-anchors="plugin-information=informaci%C3%B3n-del-plugin installation-and-implementation=instalaci%C3%B3n-e-implementaci%C3%B3n api-reference=referencia-de-api" />

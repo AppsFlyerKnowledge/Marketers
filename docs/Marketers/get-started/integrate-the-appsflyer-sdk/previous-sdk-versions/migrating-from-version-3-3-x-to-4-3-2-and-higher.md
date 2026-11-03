@@ -1,5 +1,5 @@
 ---
-title: Migrating from Version 3.3.X to 4.3.2 and Higher
+title: Migración de la versión 3.3.X a la 4.3.2 y posteriores
 metadata:
   keywords:
     - Advertisers
@@ -15,47 +15,46 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-02-03T10:37:42Z'
-  edited_at: '2026-08-18T09:07:24Z'
+  edited_at: '2026-08-12T12:02:46Z'
   id: 207606796
-  locale: en-us
+  locale: es
   section: Previous SDK versions
   section_id: 6551300280977
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207606796-Migrating-from-Version-3-3-X-to-4-3-2-and-Higher
+  url: https://support.appsflyer.com/hc/es/articles/207606796
 ---
-> **At a glance:** Considerations for migrating versions of the AppsFlyer Android SDK.
+> **Resumen:** Consideraciones para migrar versiones del SDK de AppsFlyer para Android.
 
-Major changes have been made to the Android SDK integration.
+Se han realizado cambios importantes en la integración del SDK de Android.
 
-The main changes are:
+Los cambios principales son:
 
-* The SDK is now a singleton, meaning that every call to the APIs should be called as follows:
+* El SDK ahora es un singleton, lo que significa que todas las llamadas a las API deben hacerse de la siguiente manera:
 
 ```java
 AppsFlyerLib.getInstance().setCustomerUserId("myId");
 ```
 
-* **SetAppsFlyerKey()**– this method was removed; as a result, we expect to receive the dev key using the new init method: AppsFlyerLib.getInstance().startTracking (this,"YOUR\_APPSFLYER\_DEV\_KEY")
-* **sendTracking()**, **onActivityPause()**, **onActivityResume()** were removed. The SDK detects launches automatically
-* **Deep Link** - for activities that support deep linking the developer should call:
+* **SetAppsFlyerKey()**– se eliminó este método; como resultado, esperamos recibir la clave de desarrollador mediante el nuevo método init: AppsFlyerLib.getInstance().startTracking (this,"YOUR\_APPSFLYER\_DEV\_KEY")
+* Se eliminaron **sendTracking()**, **onActivityPause()** y **onActivityResume()** . El SDK detecta los lanzamientos automáticamente
+* **Deep Link** - para las actividades compatibles con Deep Linking, el desarrollador debe llamar a:
 
 ```java
-AppsFlyerLib.getInstance().sendDeepLinkData(this) from the onCreate()
+AppsFlyerLib.getInstance().sendDeepLinkData(this) desde onCreate()
 ```
 
-of the displayed activity.
+de la actividad mostrada.
 
-This is necessary only if the app is not running in the background.
+Esto solo es necesario si la aplicación no se está ejecutando en segundo plano.
 
-* **Logging** - The logging flag default value has been changed to false. In addition, if the flag is turned off, no logs are printed (bug fix). To activate the logging flag, the developer should call:
+* **Registro** - el valor predeterminado del indicador de registro se ha cambiado a false. Además, si la marca está desactivada, no se imprime ningún registro (corrección de errores). Para activar la marca de registro, el desarrollador debe llamar a:
 
 AppsFlyerLib.getInstance().setDebugLog(true);
 
-To view the AppsFlyer SDK Integration Guide for Android, click <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">here</Anchor>.
+Para ver la guía de integración del SDK de AppsFlyer para Android, haz clic <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">aquí</Anchor>.
 
-**Migrating to 4.4.0 and higher**
+**Migración a la versión 4.4.0 y posteriores**
 
-The AppsFlyer Android SDK v4.4.0 **no longer supports the following receiver** in the manifest:
+El SDK de AppsFlyer para Android v4.4.0 **ya no admite el siguiente receiver** en el manifiesto:
 
 ```html Markup
 <receiver android:name="com.appsflyer.AppsFlyerLib">
@@ -66,9 +65,9 @@ The AppsFlyer Android SDK v4.4.0 **no longer supports the following receiver** i
 </receiver>
 ```
 
-If you are using version 4.4.0+, **remove this receiver from your manifest file**.
+Si usas la versión 4.4.0+, **elimina este receptor del archivo de manifiesto**.
 
-The only **mandatory** receiver for the SDK is as follows:
+El único receptor **obligatorio** para el SDK es el siguiente:
 
 ```html Markup
 <receiver

@@ -1,5 +1,5 @@
 ---
-title: WebEngage integration with AppsFlyer
+title: Integración de WebEngage con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -13,121 +13,119 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-07-25T13:44:42Z'
-  edited_at: '2026-06-16T09:54:49Z'
+  edited_at: '2026-08-12T11:59:46Z'
   id: 7898288493841
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/7898288493841-WebEngage-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/7898288493841
 ---
-> **At a glance:** WebEngage, an AppsFlyer integrated partner, is an Intelligent Marketing Cloud built for the mobile-first world.
+> **De un vistazo:** WebEngage, un partner integrado de AppsFlyer, es una Intelligent Marketing Cloud creada para un mundo mobile-first.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up WebEngage
+## Configuración de WebEngage
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-The WebEngage configuration window uses only the **Integration** tab.
+La ventana de configuración de WebEngage solo utiliza la pestaña **Integración**.
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">setting the partner page header.</Anchor>
+Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">configurar el encabezado de la página del partner.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration tab is divided into different sections, as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On your first visit, turn **Activate Partner** on to set up the integration. The toggle must be on for as long as you work with the partner. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
+En tu primera visita, activa **Activar partner** para configurar la integración. El conmutador debe estar activado mientras trabajes con el partner. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación del partner</Anchor>.
 
-### General settings
+### Configuración general
 
-WebEngage connects with AppsFlyer via an API key and the data center region of WebEngage.
+WebEngage se conecta con AppsFlyer mediante una clave de API y la región del centro de datos de WebEngage.
 
-* **api\_key:** Enter the API key. To obtain it, log in to your WebEngage account, and follow the <Anchor target="_blank" href="https://docs.webengage.com/docs/appsflyer#step-3-add-webengage-api-key--data-center-region">instructions</Anchor>.
-* **Region:** Enter the region where your data is to be hosted: **US** (for the USA Data Center) or **IN** (for the India Data Center). By default, all data is stored in the US data center.
+* **api\_key:** Introduce la clave de API. Para obtenerla, inicia sesión en tu cuenta de WebEngage y sigue las <Anchor target="_blank" href="https://docs.webengage.com/docs/appsflyer#step-3-add-webengage-api-key--data-center-region">instrucciones</Anchor>.
+* **Región:** Introduce la región en la que se alojarán tus datos: **US** (para el centro de datos de EE. UU.) o **IN** (para el centro de datos de India). De forma predeterminada, todos los datos se almacenan en el centro de datos de EE. UU.
 
 ![web_mo_engage_general_settings_en-us.png](https://files.readme.io/1297a02a9e280b238a222b14972dc657acffe4566dc49d607178ea43fdc01a77-8089123842705.png) 
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to WebEngage following user installs and re-engagements.
+AppsFlyer puede enviar postbacks automáticos a WebEngage después de las instalaciones y re-engagements de los usuarios.
 
-* **Off**: Don't send any install postbacks.
-* **All media sources, including organic**: Send postbacks for events attributed to any partner and for organic events.
+* **Desactivado**: no envíes ningún postback de instalación.
+* **Todas las fuentes de medios, incluidas las orgánicas**: Envía postbacks para eventos atribuidos a cualquier partner y para eventos orgánicos.
 
-![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/0dc0c658f349712158c417f27ce816b7735b8901454293e996a4bc3ae94a32fe-8094249223953.png)
+![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> As an all-installs network, WebEngage prefers to receive postbacks for all new installs of your app from any source, including organic. WebEngage recommends selecting **All media sources, including organic**.
+> Como red que rastrea todas las instalaciones, WebEngage prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde cualquier fuente, incluidas las orgánicas. WebEngage recomienda seleccionar **Todas las fuentes de medios, incluidas las orgánicas**.
 
-### In-app event settings
+### Configuración de eventos in-app
 
-Map AppsFlyer events with WebEngage via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant by target validation rules).
+Asocia los eventos de AppsFlyer con WebEngage mediante postbacks. Si el envío de postbacks está activado, esto incluye los eventos in-app rechazados (eventos bloqueados por Protect360 o eventos que no cumplen con las reglas de validación del targeting).
 
-#### To configure in-app event postbacks
+#### Para configurar postbacks de eventos in-app
 
-1. Enter the **api\_key** and **Region**.
-2. Enable **In-app event postbacks**.
-3. Click **Add event** to add an SDK or server-to-server event to the list.
-4. Complete the parameters required.
-5. [Optional] Click<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/62f8f45f72137c00326b90f046b15bc36214e35626afafd2e76513b91eea31d9-17028066777873.png" width="30px" />to set conditions for sending certain in-app events to the partner.  
-   Learn more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">conditional in-app event postbacks</Anchor>.
+1. Introduce la **api\_key** y la **Región**.
+2. Habilite los **postbacks de eventos in-app**.
+3. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista.
+4. Completa los parámetros según sea necesario.
+5. [Opcional] Haz clic en <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png" width="30px" /> para establecer condiciones para enviar ciertos eventos in-app al partner.  
+   Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">postbacks de eventos in-app condicionales</Anchor>.
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **AppsFlyer event** | The event name, as received by AppsFlyer, either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
-| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner, including organic events.</li></ul> |
-| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibe AppsFlyer, ya sea desde el SDK integrado en tu aplicación o desde eventos server-to-server.<br />**Consejo**: ¿No encuentras el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.</li><li>Escríbelo en **Evento de AppsFlyer**, luego haz clic en **Crear personalizado**. Leer más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">la asignación de eventos personalizados.</Anchor></li></ul> |
+| **Para usuarios de** | Selecciona la opción de envío para el evento:<ul><li>**Solo este partner**: envía postbacks solo cuando este evento se atribuye a este partner.</li><li>**Todas las fuentes de medios, incluidas las orgánicas**: envía postbacks para eventos atribuidos a cualquier partner, incluidos los eventos orgánicos.</li></ul> |
+| **Incluye** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí sin el valor del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento).</li><li>**Valores sin ingresos**: envía todos los parámetros **excluyendo** el valor de ingresos.</li></ul> |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-**Attribution link** isn't supported in the integration with this partner.
+El **enlace de atribución** no es compatible con la integración con este partner.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-**Cost data** isn't supported in the integration with this partner.
+Los **datos de costos** no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-**Ad revenue** isn't supported in the integration with this partner.
+Los **ingresos por publicidad** no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-**Permissions** isn't supported in the integration with this partner.
+Los **permisos** no son compatibles con la integración con este partner.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H9HWK7APBFK7RWVFH79VW0ME=important h_01H9HWK7AP6Z398NP3G2BQQBTF=setting-up-webengage h_01H9HWK7AP3ERT0TM39E6S5M79=integration-tab h_01H9HWK7AP3FMR5RMANZCMQ6M0=activate-partner h_01H9HWK7APG1STZ4Q19QVX4KRY=general-settings h_01H9HWK7AP23GK6WWJTB543FEQ=default-postbacks h_01H9HWK7APMBSZ1PG8MK88HZFS=note inapp-event-settings=in-app-event-settings h_01H9HWK7APFNAFE9YM2484DDHD=in-app-event-settings to-configure-inapp-event-postbacks=to-configure-in-app-event-postbacks h_01H9HWK7APZM8328V0EV4B5QDN=to-configure-in-app-event-postbacks h_01H9HWK7AQTZXE7GPX5E9X2ZYN=attribution-link-tab h_01H9HWK7AQ8SXED5KHVD5T4DZZ=cost-tab h_01H9HWK7AQ2JG4BRS784M85Z6E=ad-revenue-tab h_01H9HWK7AQ5YJDY2M96CA05H6P=permissions-tab" />
+<div data-zendesk-anchors="h_01H9HWK7APBFK7RWVFH79VW0ME=importante setting-up-webengage=configuraci%C3%B3n-de-webengage h_01H9HWK7AP6Z398NP3G2BQQBTF=configuraci%C3%B3n-de-webengage h_01H9HWK7AP3ERT0TM39E6S5M79=integration-tab activate-partner=activar-socio h_01H9HWK7AP3FMR5RMANZCMQ6M0=activar-socio general-settings=configuraci%C3%B3n-general h_01H9HWK7APG1STZ4Q19QVX4KRY=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01H9HWK7AP23GK6WWJTB543FEQ=postbacks-predeterminados h_01H9HWK7APMBSZ1PG8MK88HZFS=nota inapp-event-settings=configuraci%C3%B3n-de-eventos-in-app h_01H9HWK7APFNAFE9YM2484DDHD=configuraci%C3%B3n-de-eventos-in-app to-configure-inapp-event-postbacks=para-configurar-postbacks-de-eventos-in-app h_01H9HWK7APZM8328V0EV4B5QDN=para-configurar-postbacks-de-eventos-in-app h_01H9HWK7AQTZXE7GPX5E9X2ZYN=attribution-link-tab h_01H9HWK7AQ8SXED5KHVD5T4DZZ=cost-tab h_01H9HWK7AQ2JG4BRS784M85Z6E=ad-revenue-tab h_01H9HWK7AQ5YJDY2M96CA05H6P=permissions-tab" />

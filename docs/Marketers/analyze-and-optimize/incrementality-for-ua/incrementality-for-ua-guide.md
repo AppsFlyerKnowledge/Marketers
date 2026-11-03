@@ -1,5 +1,5 @@
 ---
-title: Incrementality for UA Guide
+title: Guía de Incrementalidad para UA
 metadata:
   keywords:
     - Premium
@@ -13,504 +13,503 @@ x-zendesk:
     - Marketers
     - Incrementality
   created_at: '2025-11-18T06:58:45Z'
-  edited_at: '2026-07-30T09:04:57Z'
+  edited_at: '2026-08-17T11:47:54Z'
   id: 41021758795025
-  locale: en-us
+  locale: es
   section: Incrementality for UA
   section_id: 40761623209873
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/41021758795025-Incrementality-for-UA-Guide
+  url: https://support.appsflyer.com/hc/es/articles/41021758795025
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Run an Incrementality experiment to understand the true impact of your User Acquisition (UA) campaigns.
+> **Resumen:** Ejecuta un experimento de Incrementalidad para entender el impacto real de tus campañas de adquisición de usuarios (UA).
 
-<Embed title="Incrementality for UA Guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/vGrLyOvgdN0?si=91ZV8Xw25mmShB_F" providerUrl="https://www.youtube.com" />
+<Embed title="Guía de Incrementalidad para UA" typeOfEmbed="youtube" url="https://www.youtube.com/embed/vGrLyOvgdN0?si=91ZV8Xw25mmShB_F" providerUrl="https://www.youtube.com" />
 
-## About Incrementality for UA
+## Información sobre Incrementalidad para UA
 
-In today's omnichannel marketing environment, understanding true campaign effectiveness requires more than one lens. Last-touch attribution remains essential for real-time performance monitoring and granular insights, but it doesn't provide insight into whether a campaign caused true causal lift. Incrementality for UA adds a critical layer by measuring whether campaigns actually drive new user growth.
+En el entorno actual del marketing omnicanal, comprender la eficacia real de una campaña requiere algo más que una sola perspectiva. La atribución de último toque sigue siendo esencial para el monitoreo del rendimiento en tiempo real y para obtener insights granulares, pero no proporciona información sobre si una campaña generó un incremento causal real. Incrementalidad para UA añade una capa crítica al medir si las campañas realmente impulsan el crecimiento de nuevos usuarios.
 
-**Incrementality for UA** does this by complementing attribution with scientifically rigorous geo-experiments. These automated experiments measure the real causal lift of your campaigns, enabling smarter budget allocation and more confident decision-making.  
-As the trusted marketing cloud leader, AppsFlyer offers Incrementality for UA—a powerful way to measure the true impact of your campaigns. This solution delivers critical, trustworthy insights alongside attribution, enabling complete and seamless measurement in one unified platform.
+**Incrementalidad para UA** lo hace complementando la atribución con geoexperimentos científicamente rigurosos. Estos experimentos automatizados miden el incremento causal real de tus campañas, lo que permite asignar el presupuesto de forma más inteligente y tomar decisiones con más confianza.  
+Como líder de confianza en marketing cloud, AppsFlyer ofrece Incrementalidad para UA, una forma potente de medir el impacto real de tus campañas. Esta solución ofrece insights críticos y fiables junto con la atribución, lo que permite una medición completa y fluida en una única plataforma unificada.
 
-**Why use Incrementality for UA?**  
-User acquisition teams today face complex challenges, including fragmented user journeys, increasing privacy restrictions, and gaps in visibility across various channels. Incrementality for UA helps you overcome these barriers by revealing the actual business impact of your campaigns.
+**¿Por qué usar Incrementalidad para UA?**  
+Los equipos de adquisición de usuarios se enfrentan hoy a desafíos complejos, como viajes de usuario fragmentados, restricciones de privacidad cada vez mayores y brechas de visibilidad en varios canales. Incrementalidad para UA te ayuda a superar estas barreras al mostrar el impacto real en el negocio de tus campañas.
 
-**With Incrementality for UA, you can:**
+**Con Incrementalidad para UA, puedes:**
 
-* **Focus on true performance:** Get additional insights beyond ad engagement and attributed conversions. Understand which campaigns truly drive growth—extending the view provided by attribution.
-* **Perform head-to-head comparisons:** Test multiple campaigns or media sources simultaneously with automated test/control group allocation and native support from major ad platforms like Meta, Google Ads, and TikTok.
-* **Optimize budget allocation:** Shift spend away from low-impact campaigns and reinvest in those that drive real user growth.
-* **Automate experiment workflows:** Skip the manual setup and avoid BI dependencies. AppsFlyer automates experiment design, execution, and analysis.
-* **Measure with privacy in mind:** Experiments run on aggregated geo-level data, compliant with privacy regulations like GDPR and Apple's ATT.
+* **Céntrate en la performance real:** Obtén insights adicionales más allá del engagement con anuncios y las conversiones atribuidas. Entiende qué campañas impulsan realmente el crecimiento y amplía la visión que proporciona la atribución.
+* **Haz comparaciones directas:** Prueba varias campañas o fuentes de medios a la vez con asignación automatizada de grupos de prueba y control, y soporte nativo de las principales plataformas publicitarias, como Meta, Google Ads y TikTok.
+* **Optimiza la asignación del presupuesto:** Redirige el gasto de las campañas de bajo impacto y reinviértelo en las que impulsan un crecimiento real de usuarios.
+* **Automatiza los flujos de trabajo de los experimentos:** Evita la configuración manual y las dependencias de BI. AppsFlyer automatiza el diseño, la ejecución y el análisis de los experimentos.
+* **Mide pensando en la privacidad:** Los experimentos se ejecutan con datos agregados a nivel geográfico y cumplen normativas de privacidad como el RGPD y ATT de Apple.
 
-**About geo-experimentation**
+**Información sobre la geoexperimentación**
 
-Incrementality for UA uses a geo-based experimental design. Geographical regions are divided into statistically similar groups, based on the app's historical installs or event behavior. One group is exposed to your UA campaign and the other is withheld from exposure. After the experiment runs for a defined period, the difference in performance between the two groups is analyzed to reveal incremental lift. Geo-experimentation is privacy-safe, bias-resistant, and doesn't rely on user-level data.
+Incrementalidad para UA utiliza un diseño experimental basado en la geolocalización. Las regiones geográficas se dividen en grupos estadísticamente similares, según las instalaciones históricas o el comportamiento de eventos de la app. Un grupo se expone a tu campaña de UA y al otro no se le expone. Después de que el experimento se ejecute durante un periodo determinado, se analiza la diferencia de rendimiento entre los dos grupos para revelar el lift incremental. La experimentación geográfica protege la privacidad, resiste los sesgos y no depende de datos a nivel de usuario.
 
-Incrementality for UA provides the insights you need to understand the true incremental value of your marketing campaigns, unhindered by inconsistent user-level data or targeting overlaps. This will give you the true picture of your campaigns' effectiveness and help you make better, data-driven decisions.
+Incrementality for UA te proporciona los insights que necesitas para comprender el verdadero valor incremental de tus campañas de marketing, sin verse afectado por datos incoherentes a nivel de usuario ni por solapamientos de targeting. Esto te dará una imagen fiel de la eficacia de tus campañas y te ayudará a tomar mejores decisiones basadas en datos.
 
-## Experiment design and insights
+## Diseño de experimentos e insights
 
-This section explains how Incrementality for UA experiments are structured, how to work with them, and how they generate reliable, causal insights into campaign performance.
+En esta sección se explica cómo se estructuran los experimentos de Incrementality for UA, cómo trabajar con ellos y cómo generan insights causales y fiables sobre la performance de las campañas.
 
 <div id="understanding-geo-experimentation-explainer" />
 
-<Accordion title="Understanding geo experimentation">
+<Accordion title="Entender la experimentación geográfica">
 
-Incrementality for UA uses geo-based experimentation to measure true campaign impact in a scientifically rigorous way. Instead of segmenting users, we segment geographic areas into statistically similar exposed and holdout regions. These regions are selected based on size and historical app behavior. Ads run only in the exposed regions, while the holdout regions receive no exposure. By comparing the behavior of the two groups during the holdout period, we can measure the actual causal effect — not just correlation.
+Incrementality for UA utiliza experimentación basada en geolocalización para medir el impacto real de las campañas de forma científicamente rigurosa. En lugar de segmentar usuarios, segmentamos áreas geográficas en regiones expuestas y de control estadísticamente similares. Estas regiones se seleccionan en función de su tamaño y del comportamiento histórico de la aplicación. Los anuncios se publican solo en las regiones expuestas, mientras que las regiones de control no reciben ninguna exposición. Al comparar el comportamiento de los dos grupos durante el periodo de control, podemos medir el efecto causal real, no solo la correlación.
 
-**Geo-experiments follow a structured timeline:**
+**Los experimentos de geolocalización siguen una cronología estructurada:**
 
-* **Pretest:** Both groups are equally exposed to ads from the measured campaigns. During this time, we collect baseline data and build a model that captures the historical relationship between the exposed and holdout regions.
-* **Intervention (the experiment):** Campaigns are activated in the exposed regions only. Holdout regions are prevented from viewing ads from the measured campaigns.
-* **Causal effect calculation**: The difference between the observed outcomes in the holdout regions and the exposed regions during the experiment is summed over time and used to determine the cumulative impact.
+* **Prueba previa:** Ambos grupos reciben la misma exposición a los anuncios de las campañas medidas. Durante este tiempo, recopilamos datos de referencia y construimos un modelo que capta la relación histórica entre las regiones expuestas y las regiones de control.
+* **Intervención (el experimento):** Las campañas se activan solo en las regiones expuestas. Se impide que las regiones de control vean anuncios de las campañas medidas.
+* **Cálculo del efecto causal**: La diferencia entre los resultados observados en las regiones de control y en las regiones expuestas durante el experimento se suma a lo largo del tiempo y se utiliza para determinar el impacto acumulado.
 
-**Time-Based Regression (TBR)**
+**Regresión basada en el tiempo (TBR)**
 
-At the heart of our geo-experimentation is Time-Based Regression (TBR). TBR is used to calculate the marketing lift by predicting what would have happened in the absence of a marketing intervention. This involves comparing the observed outcomes in an exposed region (where the intervention is made) with the predicted outcomes based on the historical relationship between a holdout region (not exposed to the intervention) and the exposed region.
+En el núcleo de nuestra experimentación basada en geolocalización se encuentra la regresión basada en el tiempo (TBR). TBR se utiliza para calcular el lift de marketing al predecir lo que habría ocurrido en ausencia de una intervención de marketing. Esto implica comparar los resultados observados en una región expuesta (donde se realiza la intervención) con los resultados previstos a partir de la relación histórica entre una región de control (no expuesta a la intervención) y la región expuesta.
 
-**How it works:**
+**Cómo funciona:**
 
-* Creating geo-designs of holdout and exposed regions:
-  * Per app, AppsFlyer analyses historical app install or in-app event behaviour and uses TBR (explained in the next steps) on thousands of randomized sets of geographical holdout/exposed regions over multiple time periods to find the ones with the smallest difference.
-* Pretest period:
-  * During this time, before the intervention starts, data is collected for both the holdout and exposed regions.
-  * A regression model is built to capture the relationship between the time series of the exposed region and the holdout region.
-* Prediction of counterfactuals:
-  * Using the model developed in the pretest period, the expected outcomes for the holdout region (if no intervention occurred) are predicted during the test period. These are called "counterfactuals".
-* Test period:
-  * For the campaigns that are part of the Incrementality experiment, the predetermined holdout regions are automatically excluded from viewing ads for the duration of the experiment.
-* Causal effect calculation:
-  * The causal effect of the intervention at each time point is the difference between the observed outcome in the holdout region and its counterfactual prediction.
-* Cumulative effects:
-  * These differences are summed up over time to determine the cumulative impact of the intervention (e.g., total increase in installs or conversions).
-* Marketing lift:
-  * The marketing lift is the cumulative effect that quantifies the incremental results driven by marketing activity compared to what would have been expected without it.
+* Creación de diseños de geolocalización de regiones de control y expuestas:
+  * Para cada aplicación, AppsFlyer analiza el comportamiento histórico de la instalación de la app o de los eventos in-app y utiliza TBR (explicado en los siguientes pasos) en miles de conjuntos aleatorizados de regiones geográficas de control y expuestas a lo largo de varios periodos para encontrar los que presentan la menor diferencia.
+* Periodo de prueba previa:
+  * Durante este tiempo, antes de que comience la intervención, se recopilan datos tanto de las regiones de control como de las expuestas.
+  * Se crea un modelo de regresión para reflejar la relación entre las series temporales de la región expuesta y la región de control.
+* Predicción de contrafactuales:
+  * Con el modelo desarrollado en el periodo previo a la prueba, se predicen los resultados esperados para la región de control (si no se hubiera producido ninguna intervención) durante el periodo de prueba. Estos se denominan "contrafactuales".
+* Periodo de prueba:
+  * En las campañas que forman parte del experimento de incrementalidad, las regiones de control predeterminadas quedan excluidas automáticamente de la visualización de anuncios durante toda la duración del experimento.
+* Cálculo del efecto causal:
+  * El efecto causal de la intervención en cada momento temporal es la diferencia entre el resultado observado en la región de control y su predicción contrafactual.
+* Efectos acumulados:
+  * Estas diferencias se suman a lo largo del tiempo para determinar el impacto acumulado de la intervención (por ejemplo, el aumento total de instalaciones o conversiones).
+* Incremento de marketing:
+  * El incremento de marketing es el efecto acumulado que cuantifica los resultados incrementales impulsados por la actividad de marketing en comparación con lo que se habría esperado sin ella.
 
 </Accordion>
 
 <div id="use-cases" />
 
-<Accordion title="Use cases">
+<Accordion title="CASOS DE USO">
 
-Incrementality for UA helps you solve key growth challenges by revealing the true business impact of your campaigns. Below are some common use cases where geo-based incrementality testing adds critical value.
+La incrementalidad para UA te ayuda a resolver retos clave de crecimiento al revelar el verdadero impacto empresarial de tus campañas. A continuación se muestran algunos casos de uso habituales en los que las pruebas de incrementalidad basadas en geolocalización aportan un valor fundamental.
 
-1. **Optimize budget allocation across ad platforms**  
-   **Challenge:** Attribution metrics show similar performance across multiple platforms, but you're unsure which is actually driving growth. **Solution:** Run parallel incrementality tests using multiple cells across platforms. Use the results to identify which platform causes real uplift and shift budget accordingly.
-2. **Validate performance of new channels or formats**  
-   **Challenge:** You're testing a new channel or ad platform, but early metrics are inconsistent or inflated due to targeting overlap. **Solution:** Use geo-testing to isolate the impact of the new channel from others in your mix. Determine whether it contributes net new installs or just cannibalizes existing ones.
-3. **Understand impact of branded campaigns**  
-   **Challenge:** Branded campaigns perform well in attribution reports, but you're not sure if users would have converted anyway. **Solution:** Geo-experiments can reveal whether branded search or display ads are actually influencing user behavior, or if they're capturing existing demand.
-4. **Compare campaign strategies within the same platform**  
-   **Challenge:** You want to test two creative strategies (e.g., video vs. carousel) or bidding types (e.g., maximize installs vs. ROAS) within the same network. **Solution:** Run a multi-cell experiment with each strategy assigned to a different cell. Compare the incremental lift of each and choose the winner.
-5. **Reallocate spend from saturated to scalable markets**  
-   **Challenge:** Mature markets show diminishing returns and rising acquisition costs, but attribution data doesn't clarify if you're reaching new users. **Solution:** Geo-lift tests show whether campaigns in these markets are still incremental. If not, shift budget to untapped or undervalued regions with higher potential.
+1. **Optimiza la asignación del presupuesto entre plataformas de anuncios**  
+   **Desafío:** Las métricas de atribución muestran un rendimiento similar en varias plataformas, pero no tienes claro cuál está impulsando realmente el crecimiento. **Solución:** Ejecuta pruebas de incrementalidad en paralelo usando varias celdas en distintas plataformas. Usa los resultados para identificar qué plataforma genera un incremento real y redistribuir el presupuesto en consecuencia.
+2. **Valida la performance de nuevos canales o formatos**  
+   **Desafío:** Estás probando un nuevo canal o una plataforma de anuncios nueva, pero las métricas iniciales son incoherentes o están infladas debido a la superposición del targeting. **Solución:** Usa pruebas de geolocalización para aislar el impacto del nuevo canal del resto de tu mix. Determina si contribuye a instalaciones netas nuevas o si solo canibaliza las existentes.
+3. **Comprende el impacto de las campañas de marca**  
+   **Desafío:** Las campañas de marca tienen buen rendimiento en los reportes de atribución, pero no sabes si los usuarios habrían convertido igualmente. **Solución:** Los experimentos de geolocalización pueden mostrar si los anuncios de búsqueda de marca o los anuncios de display realmente están influyendo en el comportamiento de los usuarios, o si están captando una demanda ya existente.
+4. **Compara estrategias de campaña dentro de la misma plataforma**  
+   **Desafío:** Quieres probar dos estrategias creativas (por ejemplo, vídeo frente a carrusel) o tipos de puja (por ejemplo, maximizar instalaciones frente a ROAS) dentro de la misma red. **Solución:** Ejecuta un experimento multicelda con cada estrategia asignada a una celda diferente. Compara el lift incremental de cada uno y elige el ganador.
+5. **Reasigna el gasto de mercados saturados a mercados escalables**  
+   **Desafío:** Los mercados maduros muestran rendimientos decrecientes y costos de adquisición al alza, pero los Datos de atribución no aclaran si estás llegando a nuevos usuarios. **Solución:** Las pruebas de geolocalización-lift muestran si las campañas en estos mercados siguen siendo incrementales. Si no es así, traslada presupuesto a regiones no explotadas o infravaloradas con mayor potencial.
 
 </Accordion>
 
 <div id="selecting-campaigns" />
 
-<Accordion title="Selecting what to measure">
+<Accordion title="Seleccionar qué medir">
 
-This section discusses the best campaigns to select for your experiments. Here are a few things to consider:
+En esta sección se describen las mejores campañas para seleccionar en tus experimentos. Aquí tienes algunas cosas a tener en cuenta:
 
-* **Impact:** Which test could influence your overall strategy the most? Often, that means starting with your largest initiatives since having a deeper understanding of how they affect growth will lead to meaningful optimizations.
-* **Conversion volume:** Strong experiments need enough data. For each measured campaign, aim for a minimum of 5000 monthly app installs or events, according to the main KPI you would like to measure
-* **Exploration:** Incrementality is an amazing tool when testing something new, such as entering a new market or launching a new channel.
-* **Having a clear hypothesis or test question:** Like any other scientific experiment, spending some time on phrasing your main question will contribute to the effectiveness and actionability of your Incrementality experiment. For example, do you expect one channel to be more incremental than the other? How will it affect your marketing strategy if your hypothesis is proved or disproved?
+* **Impacto:** ¿Qué prueba podría influir más en tu estrategia general? A menudo, eso significa empezar por tus iniciativas más importantes, ya que comprender mejor cómo afectan al crecimiento dará lugar a optimizaciones significativas.
+* **Volumen de conversiones:** Los experimentos sólidos necesitan suficientes datos. Para cada campaña medida, intenta alcanzar un mínimo de 5000 instalaciones mensuales de la app o eventos, según el KPI principal que quieras medir
+* **Exploración:** La incrementalidad es una herramienta excelente cuando pruebas algo nuevo, como entrar en un mercado nuevo o lanzar un canal nuevo.
+* **Tener una hipótesis clara o una pregunta de prueba:** Como en cualquier otro experimento científico, dedicar algo de tiempo a formular tu pregunta principal contribuirá a la efectividad y capacidad de acción de tu experimento de incrementalidad. Por ejemplo, ¿esperas que un canal sea más incremental que el otro? ¿Cómo afectará a tu estrategia de marketing si se demuestra o se refuta tu hipótesis?
 
 </Accordion>
 
 <div id="understanding-experiment-results" />
 
-<Accordion title="Understanding experiment results and using the insights">
+<Accordion title="Comprender los resultados de los experimentos y usar los insights">
 
-**Key experiment KPI outputs include:**
+**Los principales resultados de KPI del experimento incluyen:**
 
-* **Lift (%):** The causal impact of the measured marketing activity, measured as the additional conversions (e.g., installs or in-app events) your campaign actually drove, above and beyond what would have happened without it.
-* **Incremental conversions:** The number of installs or events that are caused by the measured campaign.
-* **Cost per incremental install** / **Cost per incremental event:** The average cost of each incremental conversion, based on the campaign's ad spend.
-* **Incrementality factor:** The ratio between incremental installs or events (as measured by the experiment) to the classic attribution installs or events (as measured in AppsFlyer's classic attribution).
+* **Lift (%):** El impacto causal de la actividad de marketing medida, expresado como las conversiones adicionales (por ejemplo, instalaciones o eventos in-app) que tu campaña impulsó realmente, por encima de lo que habría ocurrido sin ella.
+* **Conversiones incrementales:** El número de instalaciones o eventos causados por la campaña medida.
+* **Costo por instalación incremental** / **Costo por evento incremental:** El costo medio de cada conversión incremental, según el gasto en anuncios de la campaña.
+* **Factor de incrementalidad:** La relación entre las instalaciones o los eventos incrementales (según los mide el experimento) y las instalaciones o los eventos de atribución clásica (según se miden en la atribución clásica de AppsFlyer).
 
-See the full list of experiment KPIs in the [dashboard section.](#a-tour-of-the-dashboard)
+Consulta la lista completa de KPI del experimento en la [sección del Dashboard.](#un-tour-por-el-dashboard)
 
-To make Incrementality insights actionable, AppsFlyer provides both the Lift % and campaign-level Incrementality KPIs for effective marketing decisions.
+Para que los insights de incrementalidad sean accionables, AppsFlyer proporciona tanto el Lift % como los KPI de incrementalidad a nivel de campaña para ayudarte a tomar decisiones de marketing eficaces.
 
-**Optimizing based on Lift %:**
+**Optimizar en función del Lift %:**
 
-**A. No lift:**  
-The ultimate goal of marketing is to generate incremental outcomes. If your campaign was measured to have no lift (holdout regions are performing at the same level as exposed regions), this means it is not adding value beyond what would have happened without it and requires further optimization in order to be meaningful for growth. If your campaign has no lift, consider the following:
+**A. Sin lift:**  
+El objetivo final del marketing es generar resultados incrementales. Si se ha medido que tu campaña no tiene lift (las regiones de control tienen el mismo nivel de rendimiento que las regiones expuestas), esto significa que no está aportando valor más allá de lo que habría ocurrido sin ella y que requiere una mayor optimización para que contribuya de forma significativa al crecimiento. Si tu campaña no tiene lift, ten en cuenta lo siguiente:
 
-* Shift budgets to more incremental campaigns or channels.
-* Optimize: As with any other low-performing campaign, you can work to improve it by adjusting bids, goals, target audience, creatives, and other relevant factors. You can then run another Incrementality experiment following the update to monitor if incrementality has improved.
-* Diagnose what factors might be causing low lift by checking tech setup, targeting, channel mix, placements, budgets, keywords, creatives, or campaign overlap. These learnings will be highly beneficial for optimizing towards incremental outcomes in the future.
+* Redistribuye los presupuestos a campañas o canales más incrementales.
+* Optimiza: Como en cualquier otra campaña de bajo rendimiento, puedes trabajar para mejorarla ajustando las pujas, los objetivos, el público objetivo, los creativos y otros factores relevantes. A continuación, puedes ejecutar otro experimento de incrementalidad después de la actualización para hacer un monitoreo de si la incrementalidad ha mejorado.
+* Diagnostica qué factores podrían estar causando un lift bajo revisando la configuración técnica, el targeting, la combinación de canales, las ubicaciones, los presupuestos, las palabras clave, los creativos o la superposición de campañas. Estos aprendizajes serán muy beneficiosos para optimizar resultados incrementales en el futuro.
 
-**B. Positive lift:**  
-Positive lift means your campaign is generating incremental outcomes beyond what is achieved without it. As an initial step, you should validate that all your marketing efforts are generating positive lift. When lift is positive, consider the following:
+**B. Lift positivo:**  
+Un lift positivo significa que tu campaña está generando resultados incrementales más allá de lo que se consigue sin ella. Como paso inicial, debes validar que todos tus esfuerzos de marketing estén generando un lift positivo. Cuando el lift es positivo, ten en cuenta lo siguiente:
 
-* Increase investment in platforms/channels/campaigns to scale what's proven to drive growth.
-* Broaden reach by expanding audiences or locations to amplify impact.
-* Identify growth factors to duplicate success and prioritize winning strategies.
-* Compare campaigns or channels based on lift: Lift is a relative measure calculated by comparing holdout and exposed regions. As such, comparing campaigns based on lift is challenging. For example, if both campaigns have the same impact but one of them is reaching a significantly higher number of users or has a significantly higher amount of spend, its lift will be higher.  
-  When comparing, try and compare campaigns that are similar in spend and reach and are generally targeting the same geographical regions.
-* If you are just starting out with Incrementality measurement for your app or business, you may not yet have a solid benchmark to determine the exact level of positive lift expected from a given campaign, channel, or investment. In this case, it is recommended to optimize using AppsFlyer's campaign-level Incrementality KPIs, as described below.
+* Aumenta la inversión en plataformas/canales/campañas para escalar lo que ha demostrado impulsar el crecimiento.
+* Amplía el alcance expandiendo las audiencias o las ubicaciones para potenciar el impacto.
+* Identifica los factores de crecimiento para replicar el éxito y priorizar las estrategias ganadoras.
+* Compara campañas o canales en función del lift: el lift es una medida relativa que se calcula comparando las regiones de control con las regiones expuestas. Por lo tanto, comparar campañas en función del lift es complicado. Por ejemplo, si ambas campañas tienen el mismo impacto, pero una de ellas llega a un número significativamente mayor de usuarios o tiene un gasto significativamente superior, su lift será mayor.  
+  Al comparar, intenta comparar campañas que sean similares en gasto y alcance y que, por lo general, hagan targeting en las mismas regiones geográficas.
+* Si acabas de empezar con la medición de Incrementality para tu aplicación o negocio, es posible que todavía no tengas una referencia sólida para determinar el nivel exacto de lift positivo esperado de una campaña, canal o inversión determinados. En este caso, se recomienda optimizar con los KPI de Incrementality a nivel de campaña de AppsFlyer, como se describe a continuación.
 
-**Optimizing based on campaign-level incrementality KPIs:**
+**Optimizar en función de los KPI de incrementalidad a nivel de campaña:**
 
-**A. Total incremental conversions and cost metrics:**  
-In the same way it is used with classic attribution, the overall volume of incremental conversions and the ad spend invested to generate these conversions provide clear and actionable metrics for optimization. You can use the campaign-level incrementality conversions count and cost per incremental conversion to determine if the campaign meets your volume and ROI goals, and how it performs against other campaigns or channels.
+**A. Métricas de conversiones incrementales totales y costo:**  
+Del mismo modo que se usa en la atribución clásica, el volumen global de conversiones incrementales y el gasto en anuncios invertido para generar estas conversiones proporcionan métricas claras y aplicables para la optimización. Puedes usar el recuento de conversiones de incrementalidad a nivel de campaña y el costo por conversión incremental para determinar si la campaña cumple tus objetivos de volumen y ROI, y cómo funciona frente a otras campañas o canales.
 
-**B. Leveraging classic attribution and incrementality data side-by-side**  
-For both the count of campaign-level conversions and cost per conversion, the Incrementality dashboard presents classic (last-touch) attribution data AND incrementality data side-by-side so you can learn the relationship between the two models and action your learnings at a larger scale.  
-When looked at separately, classic ("last-touch") attribution and incrementality are two different attribution models, each one with its own advantages and disadvantages:
+**B. Aprovecha los datos de atribución clásica y de incrementalidad en paralelo**  
+Para el recuento de conversiones a nivel de campaña y el costo por conversión, el dashboard de incrementalidad presenta los Datos de atribución clásicos («last-touch») y los datos de incrementalidad en paralelo para que puedas conocer la relación entre ambos modelos y aplicar lo aprendido a mayor escala.  
+Si se analizan por separado, la atribución clásica («last-touch») y la incrementalidad son dos modelos de atribución diferentes, cada uno con sus propias ventajas e inconvenientes:
 
-* Classic ("last-touch") attribution is real-time, standardized, highly scalable, and granular. Therefore, it enables user-level optimization both from the advertiser end and through real-time ad platform algorithms. However, it is biased towards bottom-funnel engagement and does not provide scientific causal proof.
-* Incrementality is a great tool to scientifically prove causal impact and is ideal for omnichannel measurement. However, it provides aggregated (campaign level) insights, and is periodic and harder to scale.
+* La atribución clásica («last-touch») es en tiempo real, estandarizada, muy escalable y granular. Por tanto, permite la optimización a nivel de usuario tanto del lado del anunciante como mediante algoritmos en tiempo real de la plataforma de anuncios. Sin embargo, está sesgada hacia el engagement de la parte baja del embudo y no proporciona una prueba causal con base científica.
+* La incrementalidad es una herramienta excelente para demostrar científicamente el impacto causal y es ideal para la medición omnicanal. Sin embargo, proporciona insights agregados (a nivel de campaña), es periódica y más difícil de escalar.
 
-When used together, the two models provide a holistic view of marketing performance. AppsFlyer's Incrementality Factor presents the relationship between classic attribution data that is the "baseline" used for ongoing marketing optimization, and incrementality data that is used to measure causal impact. Here is how you can use incrementality factors for optimization:
+Cuando se utilizan juntos, los dos modelos ofrecen una visión holística del rendimiento de marketing. El Factor de Incrementalidad de AppsFlyer muestra la relación entre los datos de atribución clásica, que son la «línea base» utilizada para la optimización continua del marketing, y los datos de incrementalidad, que se utilizan para medir el impacto causal. Así puedes usar los factores de incrementalidad para la optimización:
 
-* **Incrementality factor above 100%:** Incrementality has measured more conversions than the conversions measured in classic attribution for the same campaign. For example, a 110% rate means incremental conversions are 10% higher than conversions measured using classic attribution. This increase in conversions also translates to a decrease in cost per conversion, since more conversions are generated for the same amount of spend.  
-  If the incrementality factor is above 100%, consider the following:
-  * Re-evaluate budget allocation in accordance with the decrease in cost per incremental conversion.
-  * Re-evaluate bids and optimization goals in accordance with cost per incremental conversion and incremental return on ad spend.
-  * Implement the factor to similar campaigns ahead of making future marketing decisions. For example, if your video campaigns consistently show ~110% incrementality factor for app installs when measured in incrementality experiments, you can treat classic attribution app installs for similar campaigns as 10% higher when making marketing decisions (i.e., each 100 classic attribution installs are in fact closer to 110 installs).
-* **Incrementality factor below 100%:** Incrementality has measured fewer conversions than the conversions measured in classic attribution for the same campaign. For example, a 90% rate means incremental conversions are 10% lower than conversions measured using classic attribution. This decrease in conversions also translates to an increase in cost per conversion, since fewer conversions are generated for the same amount of spend. If the incrementality factor is below 100%, consider the following:
-  * Re-evaluate budget allocation in accordance with the increase in cost per incremental conversion.
+* **Factor de incrementalidad superior al 100%:** La incrementalidad ha medido más conversiones que las conversiones medidas en la atribución clásica para la misma campaña. Por ejemplo, una tasa del 110%% significa que las conversiones incrementales son un 10%% superiores a las conversiones medidas utilizando atribución clásica. Este aumento de las conversiones también se traduce en una disminución del costo por conversión, ya que se generan más conversiones con el mismo gasto.  
+  Si el factor de incrementalidad es superior al 100%, ten en cuenta lo siguiente:
+  * Vuelve a evaluar la asignación del presupuesto en función de la disminución del costo por conversión incremental.
+  * Vuelve a evaluar las pujas y los objetivos de optimización en función del costo por conversión incremental y del retorno incremental sobre el gasto publicitario.
+  * Aplica el factor a campañas similares antes de tomar futuras decisiones de marketing. Por ejemplo, si tus campañas de vídeo muestran de forma constante un factor de incrementalidad de ~110% para las instalaciones de la app cuando se miden en experimentos de incrementalidad, puedes considerar que las instalaciones de la app de la atribución clásica en campañas similares son un 10% superiores al tomar decisiones de marketing (es decir, cada 100 instalaciones de la atribución clásica en realidad se acercan más a 110 instalaciones).
+* **Factor de incrementalidad inferior al 100%:** La incrementalidad ha medido menos conversiones que las conversiones medidas en la atribución clásica para la misma campaña. Por ejemplo, una tasa del 90% significa que las conversiones incrementales son un 10% inferiores a las conversiones medidas utilizando atribución clásica. Esta disminución de las conversiones también se traduce en un aumento del costo por conversión, ya que se generan menos conversiones con el mismo gasto. Si el factor de incrementalidad es inferior al 100%, ten en cuenta lo siguiente:
+  * Vuelve a evaluar la asignación del presupuesto en función del aumento del costo por conversión incremental.
 
-* * Re-evaluate bids and optimization goals in accordance with cost per incremental conversion and incremental return on ad spend.
-  * Implement this factor in similar campaigns to inform future marketing decisions. For example, if your video campaigns consistently show a ~90% incrementality factor for app installs when measured in incrementality experiments, you can treat classic attribution app installs for similar campaigns as 10% lower when making marketing decisions (i.e., each 100 classic attribution installs are in fact closer to 90 installs).
+* * Vuelve a evaluar las pujas y los objetivos de optimización en función del costo por conversión incremental y del retorno incremental sobre el gasto publicitario.
+  * Aplica este factor en campañas similares para fundamentar futuras decisiones de marketing. Por ejemplo, si tus campañas de vídeo muestran sistemáticamente un factor de incrementalidad de ~90% para las instalaciones de la app cuando se miden en experimentos de incrementalidad, puedes considerar que las instalaciones de la app por atribución clásica en campañas similares son un 10% inferiores al tomar decisiones de marketing (es decir, cada 100 instalaciones por atribución clásica en realidad se acercan más a 90 instalaciones).
 
 </Accordion>
 
 <div id="pausing-or-extending-experiments" />
 
-<Accordion title="Pausing or extending experiments">
+<Accordion title="Pausar o ampliar experimentos">
 
-**Consider pausing experiments (before the default 30 days) if:**
+**Considera pausar los experimentos (antes de los 30 días predeterminados) si:**
 
-* Lift, Incrementality Factor, and Cost metrics have remained stable for over 7 days.
-* There's a business justification to obtain faster results at the expense of potentially less accurate or less "normalized" Incrementality metrics.
+* Las métricas de lift, factor de incrementalidad y costo se han mantenido estables durante más de 7 días.
+* Hay una justificación comercial para obtener resultados más rápidos a costa de métricas de incrementalidad potencialmente menos precisas o menos «normalizadas».
 
-**Consider extending experiments (beyond the default 30 days) if:**
+**Considera ampliar los experimentos (más allá de los 30 días predeterminados) si:**
 
-* Campaign volume was lower than expected and is anticipated to increase beyond the minimum requirement of daily incremental conversions.
-* The conversion window for the measured event is exceptionally long, requiring additional time for users to convert.
+* El volumen de la campaña fue inferior a lo esperado y se prevé que aumente por encima del requisito mínimo de conversiones incrementales diarias.
+* La ventana de conversión del evento medido es excepcionalmente larga, por lo que se necesita más tiempo para que los usuarios conviertan.
 
 </Accordion>
 
-## Get started
+## Comienza
 
-To get started with Incrementality for UA, follow the steps below:
+Para empezar con Incrementality for UA, sigue estos pasos:
 
-<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Prerequisites**
+<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Prerrequisitos**
 
-* An AppsFlyer <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">account</Anchor> with an **Incrementality for UA** subscription (ask your CSM to enable it).
-* The <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">AppsFlyer SDK</Anchor> installed in your mobile apps.
-* Your app must have at least 120 days of install data.
+* Una <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">cuenta</Anchor> de AppsFlyer con una suscripción a **Incrementality for UA** (pide a tu CSM que la habilite).
+* El <Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide">SDK de AppsFlyer</Anchor> instalado en tus aplicaciones móviles.
+* Tu app debe tener al menos 120 días de datos de instalación.
 
 <div id="create-the-experiment-" />
 
-<Accordion title="Step 1. Create the experiment">
+<Accordion title="1. Crea el experimento">
 
-The first step is creating the experiment.
+El primer paso es crear el experimento.
 
-**To create the experiment:**
+**Para crear el experimento:**
 
-1. Access Incrementality for UA by clicking **Optimize** > **Incrementality for UA**, in the AppsFlyer side menu.
+1. Accede a Incrementality for UA haciendo clic en **Optimize** > **Incrementality for UA**, en el menú lateral de AppsFlyer.
 
-   <Image alt="Click Inc for UA new.png" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
-2. Click **+ New experiment**.
-3. **Fill out the experiment form:**
-   1. **Enter experiment name** - Create a descriptive name for the experiment, then click **Next**.
-   2. **Define your geo design** — Select the app, country, and main metric you want to measure. AppsFlyer uses this to calculate the optimal allocation of exposed and holdout regions for your experiment.
+   <Image alt="Clic en Inc for UA new.png" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
+2. Haz clic en **+ Nuevo experimento**.
+3. **Rellena el formulario del experimento:**
+   1. **Introduce el nombre del experimento**: crea un nombre descriptivo para el experimento y, después, haz clic en **Siguiente**.
+   2. **Define tu diseño de geolocalización**: selecciona la app, el país y la métrica principal que quieres medir. AppsFlyer usa esta información para calcular la asignación óptima de las regiones expuestas y de control para tu experimento.
 
       <Image alt="step 2 geo design.png" src="https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png" width="335px" />
 
-      After you submit, AppsFlyer reviews your geo design — this usually takes just a few minutes. Your geo design will either be ready to use, or unavailable:
+      Después de enviarlo, AppsFlyer revisa tu diseño geográfico; esto suele tardar solo unos minutos. Tu diseño de geolocalización estará listo para usar o no disponible:
 
-      * **Ready** — Your geo design is approved and ready to use. You can proceed with the experiment.
-      * **Unavailable** — The geo design doesn't currently meet the requirements for a valid experiment, based on the data available for the selected app, country, and metric combination. You can try resubmitting after 30 days, as eligibility may change as your app collects more data.
+      * **Listo** — Tu diseño de geolocalización está aprobado y listo para usar. Puedes continuar con el experimento.
+      * **No disponible** — El diseño de geolocalización no cumple actualmente los requisitos para un experimento válido, según los datos disponibles para la combinación de aplicación, país y métrica seleccionada. Puedes volver a enviarlo al cabo de 30 días, ya que la elegibilidad puede cambiar a medida que tu aplicación recopila más datos.
 
-      > 📘 **Note**
+      > 📘 **Advertencia**
       >
-      > If geo design rules exist for the selected app and country, they're automatically applied when the geo design is calculated. See [Geo design policy](#h_01_geo-design-policy) to learn more.
+      > Si existen reglas de diseño de geolocalización para la aplicación y el país seleccionados, se aplican automáticamente cuando se calcula el diseño de geolocalización. Consulta la [política de diseño de geolocalización](#h_01_geo-design-policy) para obtener más información.
 
 
-      > 📘 **Note**
+      > 📘 **Advertencia**
       >
-      > Each country has a certain number of **cells** available for your experiment. A cell consists of an exposed and holdout group pair that are structured to be similar to each other and to the entire country. You can use multiple cells in one experiment for a head-to-head comparison of different campaigns across media sources, or use them individually in separate experiments.
+      > Cada país tiene un número determinado de **celdas** disponibles para tu experimento. Una celda consta de un par de grupos expuesto y de control estructurados para ser similares entre sí y al conjunto del país. Puedes usar varias celdas en un experimento para realizar una comparación directa de diferentes campañas en diferentes fuentes de medios, o usarlas individualmente en experimentos separados.
       >
-      > The number of available cells per country depends on the country's geographic size, population distribution, and app activity levels—factors that affect the ability to create statistically valid exposed/holdout pairs. Countries with more granular, active regions support more cells, enabling more experimentation.
+      > El número de celdas disponibles por país depende del tamaño geográfico del país, de la distribución de la población y de los niveles de actividad de la app, factores que afectan a la capacidad de crear pares expuesto/control estadísticamente válidos. Los países con regiones más granulares y activas admiten más celdas, lo que permite realizar más experimentación.
 
 
-      * **Select app** - Select the relevant app for the experiment.
-      * **Select country** - Then, select the country where you want to run the experiment. Click **Next**.
-      * Select the **Main metric** you want to measure. This can be installs or an in-app event.
-   3. **Set campaign details:**
+      * **Seleccionar app** - Selecciona la app pertinente para el experimento.
+      * **Seleccionar país** - A continuación, selecciona el país en el que quieres ejecutar el experimento. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
+      * Selecciona la **métrica principal** que quieres medir. Pueden ser instalaciones o un evento in-app.
+   3. **Ver detalles de la campaña:**
 
-* You'll need to select a **Media source** connection for each experiment cell. This is the media source where your campaign runs. If there are no connections, you can [create a new connection.](#Connections)
-* Then select the relevant campaigns to measure in the experiment.  
-  Incrementality experiments can be set to measure individual campaigns (for example, "How is the Google campaign performing vs. the Meta campaign") or the entire media source by selecting multiple campaigns within a single experiment cell (for example, "How is Google performing vs. Meta?").  
+* Tendrás que seleccionar una conexión de **fuente de medios** para cada celda del experimento. Esta es la fuente de medios en la que se ejecuta tu campaña. Si no hay conexiones, puedes [crear una nueva conexión.](#Connections)
+* A continuación, selecciona las campañas pertinentes que quieres medir en el experimento.  
+  Los experimentos de incrementalidad se pueden configurar para medir campañas individuales (por ejemplo, «¿Cómo funciona la campaña de Google vs. la campaña de Meta?») o toda la fuente de medios, seleccionando varias campañas dentro de una sola celda del experimento (por ejemplo, «¿Cómo funciona Google vs. Meta?»).  
 
-  Choose between:  
-  **Campaign level:** to measure the impact of a single campaign within a media source  
-  **Channel level:** to measure the joint impact of multiple campaigns within a media source
+  Elige entre:  
+  **Nivel de campaña:** para medir el impacto de una sola campaña dentro de una fuente de medios  
+  **Nivel de canal:** para medir el impacto conjunto de varias campañas dentro de una fuente de medios
 
-  **Note:** If multiple campaigns are selected within one cell:
+  **Nota:** si seleccionas varias campañas dentro de una celda:
 
-  * All selected campaigns will share the same holdout regions.
-  * Incrementality insights will be presented at the cell level, and not at the individual campaign level.
+  * Todas las campañas seleccionadas compartirán las mismas regiones de control.
+  * Los insights de incrementalidad se presentarán a nivel de celda, no a nivel de campaña individual.
 
-    <Image alt="Inc for UA - Set campaign details .png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
-* Once a geo design is approved, you’ll see the experiment breakdown:
-  * **Holdout regions** - The regions held out from exposure to your campaigns during the experiment
-  * **Exposed regions** - The regions exposed to your campaigns, used as the measurement baseline
-  * **Geo design rules** - Your active rules and the regions they cover. [Learn more](#h_01_geo-design-policy)
-* When selecting a campaign name, below you'll see the minimum number of incremental installs or events (based on your selected main metric) required to measure your campaign's positive impact with high statistical confidence. This is known as the "Minimum Detectable Effect" of the experiment. Make sure the selected campaign is expected to generate at least this number of conversions.
+    <Image alt="Inc for UA - Configura los detalles de la campaña .png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
+* Una vez aprobado un diseño de geolocalización, verás el desglose del experimento:
+  * **Regiones de control** - Las regiones excluidas de la exposición a tus campañas durante el experimento
+  * **Regiones expuestas** - Las regiones expuestas a tus campañas, utilizadas como referencia de medición
+  * **Reglas de diseño de geolocalización** - Tus reglas activas y las regiones que cubren. [Saber más](#h_01_geo-design-policy)
+* Al seleccionar un nombre de campaña, a continuación verás el número mínimo de instalaciones o eventos incrementales (según la métrica principal seleccionada) necesario para medir el impacto positivo de tu campaña con un alto grado de confianza estadística. Esto se conoce como el «efecto mínimo detectable» del experimento. Asegúrate de que la campaña seleccionada pueda generar al menos este número de conversiones.
 
-  **Tip:** Choose a campaign that regularly meets or exceeds this minimum to ensure reliable, statistically valid results.
-* You can add additional experiment cells if you want. To add: Click **+ Experiment cell** and select the relevant connection and campaign. A cell consists of an exposed and holdout group pair that are structured to be similar to each other and to the entire country. You can use multiple cells in one experiment for a head-to-head comparison of different campaigns across media sources.  
+  **Consejo:** Elige una campaña que alcance o supere este mínimo de forma habitual para garantizar resultados fiables y estadísticamente válidos.
+* Puedes añadir celdas de experimento adicionales si quieres. Para añadirlas: haz clic en **+ Experiment cell** y selecciona la conexión y la campaña pertinentes. Una celda consta de un par de grupos expuesto y de control, estructurados para ser similares entre sí y al conjunto del país. Puedes usar varias celdas en un experimento para realizar una comparación directa de distintas campañas entre fuentes de medios.  
 
-  After setting up the cells, click **Next**.
+  Después de configurar las celdas, haz clic en **Siguiente**.
 
-4. **Review summary** - Check that the experiment summary looks good, then click **Launch experiment**.  
-   The experiment begins. Initial results will display within 24 hours.
+4. **Revisar resumen** - Comprueba que el resumen del experimento sea correcto y, a continuación, haz clic en **Iniciar experimento**.  
+   El experimento comienza. Los resultados iniciales se mostrarán en un plazo de 24 horas.
 
-   > 📘 **Note**
+   > 📘 **Advertencia**
    >
-   > Once the experiment is over, the connected campaigns will return to their previous geo-targeting settings. This ensures campaign continuity and consistency and lets you resume UA activities without needing to reconfigure targeting manually.
+   > Una vez finalizado el experimento, las campañas conectadas volverán a su configuración anterior de geolocalización. Esto garantiza la continuidad y la coherencia de la campaña, y te permite reanudar las actividades de UA sin necesidad de volver a configurar el targeting de forma manual.
    >
-   > **Example**  
-   > Let's say you ran an experiment in the United States using three designated exposed cities. During the experiment, your campaign was restricted to only those cities. When the experiment ends, the campaign will automatically resume its original targeting—such as "United States (all locations)"—as it was configured before the experiment began.
+   > **Ejemplo**  
+   > Imagina que has ejecutado un experimento en Estados Unidos con tres ciudades expuestas designadas. Durante el experimento, tu campaña se limitó únicamente a esas ciudades. Cuando finalice el experimento, la campaña reanudará automáticamente su targeting original, como «Estados Unidos (todas las ubicaciones)», tal como estaba configurado antes de que comenzara el experimento.
 
 
 </Accordion>
 
 <div id="analyze-the-results" />
 
-<Accordion title="Step 2. Analyze the results and gain insights">
+<Accordion title="2. Analiza los resultados y obtén insights">
 
-<span id="zd-access-the-experiment-dashboard"></span>You can see the experiment results on the experiment dashboard.
+<span id="access-the-experiment-dashboard"></span>Puedes ver los resultados del experimento en el dashboard del experimento.
 
-#### Access the experiment dashboard
+#### Accede al dashboard del experimento
 
-1. Go to your Incrementality for UA experiments by clicking **Optimize** > **Incrementality for UA**, in the AppsFlyer side menu. 
+1. Ve a Incrementality for UA para tus experimentos de UA haciendo clic **Optimize** > **Incrementality for UA**, en el menú lateral de AppsFlyer. 
 
-   <Image alt="from Oprimize click Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
-2. Click the specific experiment to access the experiment dashboard.
+   <Image alt="desde Optimizar, haz clic en Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
+2. Haz clic en el experimento específico para acceder al Dashboard del experimento.
 
-   ![Experiments table (1).png](https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png)
+   ![Tabla de experimentos (1).png](https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png)
 
-#### A tour of the dashboard
+#### Un tour por el dashboard
 
 [**![New Incrementality dashboard.png](https://files.readme.io/721bab22a6a2f936b99abde0cbf37b38b9b569434bb13eb5e691628d864910ac-small-41021731859729.png)**](https://files.readme.io/721bab22a6a2f936b99abde0cbf37b38b9b569434bb13eb5e691628d864910ac-small-41021731859729.png)
 
-**The top of the dashboard displays 2 visual graphs:**
+**En la parte superior del dashboard se muestran 2 gráficos visuales:**
 
-* The **Lift: Exposed vs. holdout regions** graph - Shows the incremental lift per experiment cell.
-* The **Experiment timeline: Exposed vs. holdout regions** graph - Shows a side-by-side comparison of incremental installs per day of the experiment date range, per cell.
+* El gráfico **Lift: regiones expuestas vs. de control**: muestra el lift incremental por celda del experimento.
+* El gráfico **Cronología del experimento: regiones expuestas vs. de control** : muestra una comparación en paralelo de las instalaciones incrementales por día del intervalo de fechas del experimento, por celda.
 
-The middle section of the dashboard displays the **Experiment KPIs** by campaign cell, media source, and campaign:
+La sección central del dashboard muestra los **KPI del experimento** por celda de campaña, fuente de medios y campaña:
 
-* **Classic attribution installs -** The number of installs the campaign contributed, as measured by classic attribution.
-* **Incrementality installs -** The number of installs the campaign contributed, as measured by the experiment.
-* **Incrementality factor -** The ratio between incremental installs (measured by the experiment) to classic attribution installs. For example, a 110% rate means incremental installs are 10% higher than installs measured using classic attribution.
-* **Classic attribution cost per install -** The average cost of every attributed install, based on the campaign's ad spend.
-* **Incrementality cost per install -** The average cost of every incremental install, based on the campaign's ad spend.
-* **Lift** - How many more installs occurred because of your campaign, compared to what would have happened without it. Calculated as: Lift (%) = (actual performance in exposed group (excluded regions) - predicted performance in exposed group) / predicted performance in exposed group * 100 * -1.
-* **Confidence** - The level of statistical confidence that the lift is greater than zero.  
+* **Instalaciones de atribución clásica:** el número de instalaciones que aportó la campaña, medido mediante atribución clásica.
+* **Instalaciones incrementales:** el número de instalaciones que aportó la campaña, medido por el experimento.
+* **Factor de incrementalidad:** la relación entre las instalaciones incrementales (medidas por el experimento) y las instalaciones de atribución clásica. Por ejemplo, una tasa del 110% significa que las instalaciones incrementales son un 10% más altas que las instalaciones medidas utilizando atribución clásica.
+* **Costo por instalación de atribución clásica:** el costo promedio de cada instalación atribuida, según el gasto publicitario de la campaña.
+* **Costo por instalación incremental:** el costo promedio de cada instalación incremental, según el gasto publicitario de la campaña.
+* **Lift**: cuántas instalaciones más se produjeron gracias a tu campaña, en comparación con lo que habría sucedido sin ella. Se calcula así: Lift (%) = (rendimiento real en el grupo expuesto (regiones excluidas) - rendimiento previsto en el grupo expuesto) / rendimiento previsto en el grupo expuesto * 100 * -1.
+* **Confianza**: el nivel de confianza estadística de que el lift es mayor que cero.  
 
-  For guidance on how to read the results, see [Understanding experiment results and using the insights.](#understanding-experiment-results)
+  Para obtener orientación sobre cómo leer los resultados, consulta [Comprender los resultados del experimento y usar los insights.](#understanding-experiment-results)
 
-The bottom of the dashboard is the **Cumulative incremental installs** graph which shows the cumulative incremental installs per cell.
+En la parte inferior del dashboard se encuentra el gráfico **Instalaciones incrementales acumuladas** , que muestra las instalaciones incrementales acumuladas por celda.
 
-**Note:** If **Channel level** measurement is selected (multiple campaigns within one cell):
+**Nota:** si se selecciona la medición de **nivel de canal** (varias campañas dentro de una celda):
 
-* All selected campaigns will share the same holdout regions.
-* Incrementality insights will be presented at the cell level, and not at the individual campaign level.
+* Todas las campañas seleccionadas compartirán las mismas regiones de control.
+* Los insights de incrementalidad se presentarán a nivel de celda, y no a nivel de campaña individual.
 
-[<Image alt="Channel level experiments dashboard cropped narrower.png" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)
+[<Image alt="Dashboard de experimentos a nivel de canal recortado más estrecho.png" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)
 
 </Accordion>
 
-## Manage
+## Gestionar
 
-This section explains how to manage your connections, geo design policy, and experiments.
+En esta sección se explica cómo gestionar tus conexiones, la política de diseño de geolocalización y los experimentos.
 
 <div id="Connections" />
 
-<Accordion title="Connections">
+<Accordion title="Conexiones">
 
-Connections refer to the integration between Incrementality for UA and your media partners. They make it possible to link campaigns and run experiments with connected platforms.
+Las conexiones hacen referencia a la integración entre Incrementality for UA y tus Partners de medios. Permiten crear un enlace entre campañas y ejecutar experimentos con plataformas conectadas.
 
-**To add media source connections:**
+**Para añadir conexiones de fuentes de medios:**
 
-1. Access Incrementality for UA by clicking **Optimize** > **Incrementality for UA**, in the AppsFlyer side menu.
-2. Click the **Connections** tab, then **+ New connection**.
+1. Accede a Incrementality for UA haciendo clic en **Optimize** > **Incrementality for UA**, en el menú lateral de AppsFlyer.
+2. Haz clic en la pestaña **Connections** y, después, en **+ New connection**.
 
    <Image alt="from Connections tab click +New connection w arrow.png" src="https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png" width="465px" />
-3. Select a media source to connect to.
+3. Selecciona una fuente de medios para conectarse.
 
-   <Image alt="Add connection.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
-4. Enter your credentials to log in and create the connection.
+   <Image alt="Añadir conexión.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
+4. Introduce tus credenciales para iniciar sesión y crear la conexión.
 
 </Accordion>
 
 <div id="h_01_geo-design-policy" />
 
-<Accordion title="Geo design policy">
+<Accordion title="Política de diseño de geolocalización">
 
-The geo design policy lets you define geographic experiment design rules at the account level. Rules are set per app and country, and are automatically applied to all geo designs calculated after the rule is saved.
+La política de diseño de geolocalización te permite definir reglas de diseño de experimentos geográficos a nivel de cuenta. Las reglas se establecen por app y país, y se aplican automáticamente a todos los diseños de geolocalización calculados después de guardar la regla.
 
-Use geo design rules to accommodate legal restrictions, protect high-value markets, or isolate regions affected by parallel tests.
+Usa reglas de diseño de geolocalización para adaptarte a restricciones legales, proteger mercados de alto valor o aislar regiones afectadas por pruebas paralelas.
 
-#### Geo design rule types
+#### Tipos de reglas de diseño de geolocalización
 
-Three rule types are available:
+Hay tres tipos de reglas disponibles:
 
-| Rule type | What it does | Example use case |
+| Tipo de regla | Qué hace | Ejemplo de caso de uso |
 | --- | --- | --- |
-| **Don't holdout** | These regions are never placed in holdout groups, but can still be in exposed groups. Your campaigns in these regions are never paused or interrupted by the experiment. | A top-performing market that must stay active at all times. |
-| **Don't target** | These regions are excluded from campaign targeting entirely. They won't appear in exposed or holdout groups. | A market where advertising is legally restricted. |
-| **Exclude from analysis** | These regions will stay in the campaign targeting to maintain normal advertising activity, but won’t be included in exposed or holdout groups. | <ul><li>Regions running parallel geo-lift tests that could skew results.</li><li>Regions running parallel geo-lift tests or expected local marketing efforts that could skew results.</li></ul> |
+| **No incluir en el grupo de control** | Estas regiones nunca se incluyen en grupos de control, pero sí pueden estar en grupos expuestos. Tus campañas en estas regiones nunca se pausan ni se interrumpen por el experimento. | Un mercado de alto rendimiento que debe permanecer activo en todo momento. |
+| **No segmentar** | Estas regiones se excluyen por completo del targeting de la campaña. No aparecerán ni en los grupos expuestos ni en los grupos de control. | Un mercado donde la publicidad está legalmente restringida. |
+| **Excluir del análisis** | Estas regiones seguirán incluidas en el targeting de la campaña para mantener una actividad publicitaria normal, pero no se incluirán en grupos expuestos ni en grupos de control. | <ul><li>Regiones con pruebas paralelas de geo-lift en funcionamiento que podrían sesgar los resultados.</li><li>Regiones con pruebas de lift geolocalizadas en funcionamiento en paralelo o con iniciativas de marketing local previstas que puedan sesgar los resultados.</li></ul> |
 
-#### Set up a geo design rule
+#### Configurar una regla de diseño de geolocalización
 
-**To set up a geo design rule:**
+**Para configurar una regla de diseño de geolocalización:**
 
-1. In Incrementality for UA, click the **Advanced settings** tab.
-2. In the **Geo design policy** section, click **+ New geo design rule**.
-3. In the **New geo design rule** dialog, select the **app** and **country** this rule applies to.
-4. Under **Rules**, configure each rule:
-   1. Select the **Geo design rule** type: Don't holdout, Don't target, or Exclude from analysis.
-   2. Select the **regions** (states or sub-state regions, depending on the country). You can search by name or code.
-5. To add another rule type for the same app and country, click **+ Add rule**.
-6. Review the **Summary** panel on the right, which updates in real time as you make selections.
-7. Click **Save**.
+1. En Incrementality for UA, haz clic en la pestaña **Advanced settings**.
+2. En la sección **Geo design policy**, haz clic en **+ New geo design rule**.
+3. En el cuadro de diálogo **New geo design rule**, selecciona la **App** y el **país** a los que se aplica esta regla.
+4. En **Rules**, configura cada regla:
+   1. Selecciona el tipo de **Geo design rule**: Don't holdout, Don't target o Exclude from analysis.
+   2. Selecciona las **regiones** (estados o regiones subestatales, según el país). Puedes buscar por nombre o código.
+5. Para añadir otro tipo de regla para la misma aplicación y el mismo país, haz clic en **+ Add rule**.
+6. Revisa el panel **Summary** de la derecha, que se actualiza en tiempo real a medida que haces selecciones.
+7. Haga clic en **Guardar**.
 
-The rule is now active and will be applied to all geo designs calculated for the selected app and country going forward.
+La regla ya está activa y se aplicará a todos los diseños de geolocalización calculados para la aplicación y el país seleccionados a partir de ahora.
 
-#### Delete a geo design rule
+#### Eliminar una regla de diseño de geolocalización
 
-**To delete a geo design rule:**
+**Para eliminar una regla de diseño de geolocalización:**
 
-1. In the **Geo design policy** section, find the rule you want to remove.
-2. Open the actions menu and select **Delete**.
-3. Confirm in the **Delete rule?** dialog.
+1. En la sección **Geo design policy**, busca la regla que quieres eliminar.
+2. Abre el menú de acciones y selecciona **Delete**.
+3. Confirma en **Delete rule?** .
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> Deleting a rule doesn't affect active experiments. If there were previous rules (or no rules), that is what remains in effect for any experiment already running. Deleting a rule only removes it from future geo designs/experiments.
+> Eliminar una regla no afecta a los experimentos activos. Si había reglas anteriores (o no había ninguna regla), eso es lo que seguirá aplicándose a cualquier experimento que ya esté en funcionamiento. Eliminar una regla solo la quita de futuros diseños o experimentos de geolocalización.
 
-#### View geo design rules in an experiment
+#### Ver reglas de diseño de geolocalización en un experimento
 
-Once a geo design is approved and you're setting up your experiment, you'll see a region breakdown section (marked **Rules apply**) showing:
+Una vez aprobado un diseño de geolocalización y mientras configuras el experimento, verás una sección de desglose por regiones (marcada como **Rules apply**) que muestra lo siguiente:
 
-* **Holdout regions** - The regions held out from exposure to your campaigns during the experiment
-* **Exposed regions** - The regions exposed to your campaigns, used as the measurement baseline
-* **Exclusion rules** - The active rules (Don't holdout, Don't target, Exclude from analysis) and the specific regions they cover
+* **Holdout regions** - Las regiones excluidas de la exposición a tus campañas durante el experimento
+* **Exposed regions** - Las regiones expuestas a tus campañas, utilizadas como línea base de medición
+* **Reglas de exclusión** - Las reglas activas (No incluir en holdout, No aplicar targeting, Excluir del análisis) y las regiones específicas que abarcan
 
-In the experiment report, you can view the full geo breakdown by selecting **Geo design breakdown** from the actions menu. This shows the same breakdown as above, showing the rules that were active when the experiment was created. To manage your rules, click **Manage geo design policy** at the bottom of the panel.
+En el reporte del experimento, puedes ver el desglose geo completo seleccionando **Desglose del diseño geo** en el menú de acciones. Muestra el mismo desglose que aparece arriba e indica qué reglas estaban activas cuando se creó el experimento. Para gestionar tus reglas, haz clic en **Gestionar la política de diseño geo** al final del panel.
 
-#### Traits and limitations
+#### Especificaciones y limitaciones
 
-Keep the following in mind when working with geo design rules:
+Ten en cuenta lo siguiente al trabajar con reglas de diseño geo:
 
-| Trait | Description |
+| Caducado | Nota |
 | --- | --- |
-| Scope | Rules apply per app and country combination. |
-| Geographic granularity | Regions are defined at the state or sub-state level, depending on the country. |
-| Rule persistence | Rules remain active until deleted. |
-| Retroactivity | Rules apply only to geo designs calculated after the rule was saved. Active experiments are not affected. |
+| Alcance | Las reglas se aplican por combinación de aplicación y país. |
+| Granularidad de geolocalización | Las regiones se definen a nivel de estado o subestado, según el país. |
+| Persistencia de las reglas | Las reglas permanecen activas hasta que se eliminan. |
+| Retroactividad | Las reglas solo se aplican a los diseños de geolocalización calculados después de guardar la regla. Los experimentos activos no se ven afectados. |
 
 </Accordion>
 
 <div id="Experiments" />
 
-<Accordion title="Experiments">
+<Accordion title="Experimentos">
 
-You can view and manage all your experiments in one place.
+Puedes ver y gestionar todos tus experimentos en un solo lugar.
 
-**To view and manage your experiments:**
+**Para ver y gestionar tus experimentos:**
 
-In **Incrementality for UA**, click the **Experiments** tab.
+En **Incrementality for UA**, haz clic en la pestaña **Experiments** .
 
-[![Experiments table.png](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)
+[![Tabla de experimentos.png](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)
 
-For each experiment, you can see the:
+Para cada experimento, puedes ver lo siguiente:
 
-* **Experiment name**
-* **App** - sortable
-* **Country** - sortable
-* **Media source**
-* **Dates** - The experiment date range
-* [**Status**](#status-column) - You can see the number of days left in the experiment or when it's completed.
-* **Lift**
+* **Nombre del experimento**
+* **App** - ordenable
+* **País** - ordenable
+* **Nombre de la app**
+* **Fechas** - El intervalo de fechas del experimento
+* [**Estado**](#columna-estado) - Puedes ver cuántos días quedan del experimento o cuándo se ha completado.
+* **Elevación**
 
-#### **Status column**
+#### **Columna Estado**
 
-* **Completed** - Experiment period has ended
-* **Active** - Experiment is currently running
-* **Pending** - Experiment pending results (first 24 hours)
-* **In review** - Design in review (up to 24 hours until answer)
-* **Ready** - Design was reviewed and found eligible
-* **Unavailable** - Design was reviewed and wasn't found eligible
+* **Completado** - El periodo del experimento ha finalizado
+* **Activo** - El experimento está actualmente en funcionamiento
+* **Pendiente** - Resultados del experimento pendientes (primeras 24 horas)
+* **En revisión** - Diseño en revisión (hasta 24 horas para recibir una respuesta)
+* **Listo** - El diseño se revisó y se consideró apto
+* **No disponible** - El diseño se revisó y no se consideró apto
 
-Hover on the experiment to access the<Image alt="action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />actions icon.
+Pasa el cursor sobre el experimento para acceder al icono de acciones<Image alt="action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />.
 
-<Image alt="Experiments menu.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
+<Image alt="Menú Experimentos.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
 
-From here you can:
+Desde aquí puedes:
 
-* View experiment details
-* Extend experiment duration
-* Stop experiment
+* Ver detalles del experimento
+* Ampliar la duración del experimento
+* Detener experimento
 
 </Accordion>
 
 <div id="extend-experiment" />
 
-<Accordion title="Extend experiment">
+<Accordion title="Ampliar el experimento">
 
-**To extend an experiment:**
+**Para ampliar un experimento:**
 
-From the experiment, click the<Image alt="action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />actions icon (on the upper-right) and select **Extend experiment duration**.
+En el experimento, haz clic en el icono de acciones<Image alt="action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" /> (arriba a la derecha) y selecciona **Ampliar la duración del experimento**.
 
-<Image alt="Extend experiment.png" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
+<Image alt="Ampliar experimento.png" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
 
-This will extend the experiment by an additional 14 days.
+Esto ampliará el experimento 14 días adicionales.
 
 </Accordion>
 
 <div id="stop-experiment" />
 
-<Accordion title="Stop experiment">
+<Accordion title="Detener experimento">
 
-**To stop an experiment:**
+**Para detener un experimento:**
 
-From the experiment, click the ⠇actions icon (on the upper-right) and select **Stop experiment**.
+En el experimento, haz clic en el icono de acciones ⠇ (arriba a la derecha) y selecciona **Detener experimento**.
 
-<Image alt="Stop experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
+<Image alt="Detener experimento.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
 
 </Accordion>
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-This section outlines some key traits and limitations of Incrementality for UA.
+Esta sección describe algunas características clave y limitaciones de Incrementality for UA.
 
 <div id="key-traits-and-limitations" />
 
-<Accordion title="Key traits and limitations">
+<Accordion title="Características clave y limitaciones">
 
-| Trait | Description |
+| Caducado | Nota |
 | --- | --- |
-| Supported countries | Incrementality for UA currently supports experiments in the United States, India, Mexico, Brazil, Japan, and Germany. Additional countries will be added as they become available. |
-| Supported campaign geo-targeting | Incrementality for UA supports campaigns that target a single, entire country. Campaigns that target multiple countries or specific regions within a country (for example, states or cities) aren't supported. |
-| Historical app engagement data | The app must have at least 120 days of install and/or in-app event data available. |
-| Minimum monthly non-organic installs | Each measured app must generate at least 10,000 non-organic installs per month to run a valid experiment. |
+| Países compatibles | Incrementality for UA actualmente admite experimentos en Estados Unidos, India, México, Brasil, Japón y Alemania. Se añadirán más países a medida que estén disponibles. |
+| Geolocalización compatible de las campañas | Incrementality for UA admite campañas dirigidas a un único país completo. No se admiten campañas dirigidas a varios países ni a regiones concretas dentro de un país (por ejemplo, estados o ciudades). |
+| Datos históricos de engagement de la aplicación | La aplicación debe tener disponibles al menos 120 días de datos de instalaciones y/o eventos in-app. |
+| Instalaciones no orgánicas mínimas mensuales | Cada aplicación medida debe generar al menos 10.000 instalaciones no orgánicas al mes para ejecutar un experimento válido. |
 
 </Accordion>
 
-<div data-zendesk-anchors="overview=about-incrementality-for-ua h_01HBB6EJ8SQ3776WCVQZA4MJ6M=about-incrementality-for-ua get-started=experiment-design-and-insights h_01JZQ4N4PEKTP1TZTDQ191ZDM3=experiment-design-and-insights h_01JZQ4Q1C035S9EXVJX8YR3PEA=understanding-geo-experimentation-explainer h_01K049CDW93B3C7VZSNFQ1AD0N=use-cases h_01JZQ4Q1C0BZAH7E0J2T1SCPD0=selecting-campaigns h_01JZQ4Q1C0Z3M002TWYKB8SS3M=understanding-experiment-results h_01JZQ4Q1C0NWWVD8ENVJB50RMD=pausing-or-extending-experiments h_01HBB6EJ8S2T9JHKVWH1JK1FPD=get-started h_01HBB6EJ8SVV71R5W9Z96D7WCG=create-the-experiment- h_01K2F27SEQF8N38FMCW8PSFB36=note h_01KVA5SPC58YXP67G86Z2CHGDF=note-1 h_01K2F1FQ0NN5YPWK5026Y7935D=note-2 01JV7F4ECQAY0PJNV2A94E5GA9=analyze-the-results access-the-experiment-dashboard=zd-access-the-experiment-dashboard h_01JZJ70C1C0ZRD8WMCKZBHKCEP=access-the-experiment-dashboard h_01JZJ70K0QTGZ2V3T1TJ1VG08H=a-tour-of-the-dashboard h_01JZ88Y5TQJCYQ2057RASHCP9D=manage h_01HBB6EJ8T4RRKJY632180KZWM=Connections geo-design-policy=h_01_geo-design-policy h_01KVA5SPC5PCR7BAK971PGHMCW=geo-design-rule-types h_01KVA5SPC5X3VRK60AJ74TJFCS=set-up-a-geo-design-rule h_01KVA5SPC54N4ECEMHJW2PV9K7=delete-a-geo-design-rule h_01KVA5SPC5GY7SVPT8BAFF1BPT=note-3 h_01KVA5SPC5K7M0AEYVGVCAMY4W=view-geo-design-rules-in-an-experiment geo-design-policy-traits-and-limitations=traits-and-limitations h_01KVA5SPC61N9H7PEKYRX01M9Y=traits-and-limitations h_01K2HQ7M74PGY2BC2X1KJ1F0Z4=Experiments h_01K9VPG89HGV9BK8W94WC7WH8Q=status-column h_01K2HMD3QVJX9KYPQ7GS91KQ6Y=extend-experiment h_01JZ894VWK49JW8M97GMTC5JPX=stop-experiment traits-and-limitations=traits-and-limitations-1 h_01KAZQSWB0H9SM7W9PADRJ9B3N=traits-and-limitations-1 h_01KAZQQMBP5AHE8KQ5V71TCVAY=key-traits-and-limitations" />
+<div data-zendesk-anchors="overview=informaci%C3%B3n-sobre-incrementalidad-para-ua h_01HBB6EJ8SQ3776WCVQZA4MJ6M=informaci%C3%B3n-sobre-incrementalidad-para-ua get-started=dise%C3%B1o-de-experimentos-e-insights h_01JZQ4N4PEKTP1TZTDQ191ZDM3=dise%C3%B1o-de-experimentos-e-insights h_01JZQ4Q1C035S9EXVJX8YR3PEA=understanding-geo-experimentation-explainer h_01K049CDW93B3C7VZSNFQ1AD0N=use-cases h_01JZQ4Q1C0BZAH7E0J2T1SCPD0=selecting-campaigns h_01JZQ4Q1C0Z3M002TWYKB8SS3M=understanding-experiment-results h_01JZQ4Q1C0NWWVD8ENVJB50RMD=pausing-or-extending-experiments h_01HBB6EJ8S2T9JHKVWH1JK1FPD=comienza h_01HBB6EJ8SVV71R5W9Z96D7WCG=create-the-experiment- h_01K2F27SEQF8N38FMCW8PSFB36=advertencia h_01KVA5SPC58YXP67G86Z2CHGDF=advertencia-1 h_01K2F1FQ0NN5YPWK5026Y7935D=advertencia-2 01JV7F4ECQAY0PJNV2A94E5GA9=analyze-the-results h_01JZJ70C1C0ZRD8WMCKZBHKCEP=accede-al-dashboard-del-experimento a-tour-of-the-dashboard=un-tour-por-el-dashboard h_01JZJ70K0QTGZ2V3T1TJ1VG08H=un-tour-por-el-dashboard manage=gestionar h_01JZ88Y5TQJCYQ2057RASHCP9D=gestionar h_01HBB6EJ8T4RRKJY632180KZWM=Connections geo-design-policy=h_01_geo-design-policy geo-design-rule-types=tipos-de-reglas-de-dise%C3%B1o-de-geolocalizaci%C3%B3n h_01KVA5SPC5PCR7BAK971PGHMCW=tipos-de-reglas-de-dise%C3%B1o-de-geolocalizaci%C3%B3n set-up-a-geo-design-rule=configurar-una-regla-de-dise%C3%B1o-de-geolocalizaci%C3%B3n h_01KVA5SPC5X3VRK60AJ74TJFCS=configurar-una-regla-de-dise%C3%B1o-de-geolocalizaci%C3%B3n delete-a-geo-design-rule=eliminar-una-regla-de-dise%C3%B1o-de-geolocalizaci%C3%B3n h_01KVA5SPC54N4ECEMHJW2PV9K7=eliminar-una-regla-de-dise%C3%B1o-de-geolocalizaci%C3%B3n h_01KVA5SPC5GY7SVPT8BAFF1BPT=advertencia-3 view-geo-design-rules-in-an-experiment=ver-reglas-de-dise%C3%B1o-de-geolocalizaci%C3%B3n-en-un-experimento h_01KVA5SPC5K7M0AEYVGVCAMY4W=ver-reglas-de-dise%C3%B1o-de-geolocalizaci%C3%B3n-en-un-experimento geo-design-policy-traits-and-limitations=especificaciones-y-limitaciones h_01KVA5SPC61N9H7PEKYRX01M9Y=especificaciones-y-limitaciones h_01K2HQ7M74PGY2BC2X1KJ1F0Z4=Experiments status-column=columna-estado h_01K9VPG89HGV9BK8W94WC7WH8Q=columna-estado h_01K2HMD3QVJX9KYPQ7GS91KQ6Y=extend-experiment h_01JZ894VWK49JW8M97GMTC5JPX=stop-experiment traits-and-limitations=especificaciones-y-limitaciones-1 h_01KAZQSWB0H9SM7W9PADRJ9B3N=especificaciones-y-limitaciones-1 h_01KAZQQMBP5AHE8KQ5V71TCVAY=key-traits-and-limitations" />

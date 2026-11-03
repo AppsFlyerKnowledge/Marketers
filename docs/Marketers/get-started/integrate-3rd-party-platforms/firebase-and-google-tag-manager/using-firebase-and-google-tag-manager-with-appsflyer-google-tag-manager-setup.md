@@ -1,5 +1,7 @@
 ---
-title: Using Firebase and Google Tag Manager with AppsFlyer—Google Tag Manager setup
+title: >-
+  Uso de Firebase y Google Tag Manager con AppsFlyer: Configuración de Google
+  Tag Manager
 metadata:
   keywords:
     - Developers
@@ -13,85 +15,90 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-11-09T10:28:45Z'
-  edited_at: '2026-08-14T16:22:49Z'
+  edited_at: '2026-08-22T00:12:13Z'
   id: 4410481509393
-  locale: en-us
+  locale: es
   section: Firebase and Google Tag Manager
   section_id: 6551267006225
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4410481509393-Using-Firebase-and-Google-Tag-Manager-with-AppsFlyer-Google-Tag-Manager-setup
+  url: https://support.appsflyer.com/hc/es/articles/4410481509393
 ---
-> **At a glance:** Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in Google Tag Manager.
+> **At a glance:** Instrucciones para configurar el envío de eventos reportados a través de Firebase SDK a AppsFlyer en Google Tag Manager.
 
-## Google Tag Manager setup
+## Configuración de Google Tag Manager
 
-This section discusses the necessary setup in Google Tag Manager (GTM) UI. All the steps described in this section are required in order for GTM to send events to AppsFlyer. Follow the steps in the order they are listed.
+Esta sección describe la configuración necesaria en la interfaz de usuario de Google Tag Manager (GTM). Todos los pasos descritos en esta sección son necesarios para que GTM envíe eventos a AppsFlyer. Sigue los pasos en el orden listado.
 
-The following steps are for Google Tag Manager for mobile apps. If the UI that you see in your Google Tag Manager is different than the screenshots in the various steps, check the following:
+Los siguientes pasos son para Google Tag Manager en aplicaciones móviles. Si la interfaz de usuario que ves en tu Google Tag Manager es diferente a las capturas de pantalla en los distintos pasos, verifica lo siguiente:
 
-1. Your Google Tag Manager container is configured for mobile apps.
-2. The container is v5. For more information, click <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7003315">here</Anchor>.
+1. Tu contenedor de Google Tag Manager está configurado para aplicaciones móviles.
+2. El contenedor es la versión v5. Para más información, haz clic <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7003315">aquí</Anchor>.
 
 > 📘 **Note**
 >
-> The steps described in this section relate to a purchase event but are relevant for any event that you wish to send.
+> **Nota:**
+>
+> Los pasos descritos en esta sección se refieren a un evento de compra, pero son relevantes para cualquier evento que quieras enviar.
 
 <div id="1-creating-event-parameter-variables" />
 
-<Accordion title="1. Creating event parameter variables">
+<Accordion title="1. Crear variables de los parámetros del evento">
 
-Event parameter variables allow Google Tag Manager to obtain data from the event. When the event is sent, the AppsFlyer ID and Dev Key variables are passed along with it. Google Tag Manager then evaluates their value and this is how it obtains them. The data from the event has two functions:
+Las variables de los parámetros del evento permiten a Google Tag Manager obtener datos del evento. Cuando se envía el evento, se pasan las variables AppsFlyer ID y Dev Key junto con él. Google Tag Manager luego evalúa su valor y así las obtiene. Los datos del evento tienen dos funciones:
 
-1. Provide Google Tag Manager with the AppsFlyer ID and Dev Key
-2. Provide Google Tag Manager with the event name and event parameters
+1. Proporcionar a Google Tag Manager el AppsFlyer ID y Dev Key
+2. Proporcionar a Google Tag Manager el nombre del evento y los parámetros del evento
 
 <Tabs>
-<Tab title="AppsFlyer Device ID and Dev Key">
+<Tab title="ID de dispositivo y clave de desarrollo de AppsFlyer">
 
-Whenever Google Tag Manager sends an event to AppsFlyer, it must send it with the AppsFlyer ID and Dev Key. The Dev Key allows Google Tag Manager to communicate with AppsFlyer servers. The AppsFlyer ID lets AppsFlyer know what user to attribute the event to.
+Siempre que Google Tag Manager envía un evento a AppsFlyer, debe enviarlo con el AppsFlyer ID y Dev Key. La Dev Key permite a Google Tag Manager comunicarte con los servidores de AppsFlyer. El AppsFlyer ID le indica a AppsFlyer a qué usuario debe atribuir el evento.
 
-1. In Google Tag Manager, click ***Variables*** and then ***New***
-2. Name the variable as "AppsFlyer Dev Key" and click on ***Variable Configuration***
-3. Choose ***Event Parameter***
-4. Choose ***Custom Parameter***
-5. In the ***Event Parameter*** field, enter "dev\_key" and save
-6. Repeat the process for AppsFlyer ID as well - name the variable as "AppsFlyer Device ID" and enter "af\_id" in the ***Event Parameter*** field
+1. En Google Tag Manager, haz clic en ***Variables*** y luego haz clic en ***New***
+2. Asigna a la variable el nombre "AppsFlyer Dev Key" y haz clic en ***Configuración de la variable***
+3. Selecciona ***Parámetro del evento***
+4. Selecciona ***Parámetro personalizado***
+5. En el campo ***Parámetro del evento*** , introduce "dev\_key" y guarda
+6. Repite también el proceso para el ID de AppsFlyer: asigna a la variable el nombre "AppsFlyer Device ID" e introduce "af\_id" en el campo ***Parámetro del evento***
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> Below is a screenshot from GTM UI. It shows the event parameter's final configuration:
+> A continuación se muestra una captura de pantalla de la interfaz de usuario de GTM. Muestra la configuración final del parámetro del evento:
 >
 > ![event_parameter_variable_dev_key.png](https://files.readme.io/f5030ce110ec4459f673a4088c2c09a4e3f90a35976f4fbfccb8750cb112e69e-49839295695889.png)
 
 > 🚧 **Important**
 >
-> For iOS, an additional Event Parameter should be configured. Follow the same flow as listed above. Create a variable and name it "Apple App ID". In the Event Parameter field, enter "apple\_app\_id" and save.
+> **Importante:**
+>
+> Para iOS, debe configurarse un Parámetro del Evento adicional. Sigue el mismo flujo mencionado anteriormente. Crea una variable y nómbrala "Apple App ID". En el campo Parámetro del Evento, introduce "apple\_app\_id" y guarda.
 
-The next step is to create and set AppsFlyer ID and Dev Key variables inside the app. This step is discussed in the <Anchor target="_blank" href="/marketers/docs/using-firebase-and-google-tag-manager-with-appsflyer-sending-installs-and-events#configuring-events-in-the-app">Sending Events</Anchor> Section.
+El siguiente paso es crear y configurar las variables AppsFlyer ID y Dev Key dentro de la app. Este paso se explica en la sección <Anchor target="_blank" href="/marketers/es/docs/using-firebase-and-google-tag-manager-with-appsflyer-sending-installs-and-events#configuración-de-eventos-en-la-aplicación">Envío de eventos</Anchor>.
 
 </Tab>
 
-<Tab title="Revenue and Price">
+<Tab title="Ingresos y precio">
 
-Most in-app events require event value parameters. In this case, it is the af\_revenue and af\_price parameters but you can send any event parameters. Now that the event is configured in the app, revenue and price variables need to be created in Google Tag Manager. These variables are used later on in the Purchase event tag.
+La mayoría de los eventos dentro de la app requieren parámetros de valor de evento. En este caso, son los parámetros af\_revenue y af\_price, pero puedes enviar cualquier parámetro de evento. Ahora que el evento está configurado en la app, se necesitan crear las variables de ingresos y precio en Google Tag Manager. Estas variables se usan después en la etiqueta del evento de compra.
 
-1. In Google Tag Manager, create two Event Parameter variables for af\_revenue and af\_price
-2. For "af\_revenue", name the variable "Revenue" and set the ***Event Parameter Key*** to "af\_revenue"
-3. For "af\_price", name the variable "Price" and set the ***Event Parameter Key*** to "af\_price"
+1. En Google Tag Manager, crea dos variables de Parámetro del Evento para af\_revenue y af\_price.
+2. Para "af\_revenue", nombra la variable "Ingresos" y configura la ***Clave del Parámetro del Evento*** como "af\_revenue".
+3. Para "af\_price", nombra la variable "Precio" y configura la ***Clave del Parámetro del Evento*** como "af\_price".
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> Below is a screenshot from GTM UI. It shows the event parameter's final configuration:
+> A continuación se muestra una captura de pantalla de la interfaz de usuario de GTM. Muestra la configuración final del parámetro del evento:
 >
 > ![event_parameter_variable_revenue.png](https://files.readme.io/40e6ccd8d2df9370210847d6ff54a5a44c04f295dac9ece18dac715e5fc335a1-49839295696657.png)
 
 > 📘 **Note**
 >
-> The example here shows how to create event parameter variables for Revenue and Price event parameters. You can create event parameter variables for any kind of event parameter, according to the event that is sent.
+> **Nota:**
+>
+> El ejemplo aquí muestra cómo crear variables de parámetro del evento para los parámetros de evento de Ingresos y Precio. Puedes crear variables de parámetro del evento para cualquier tipo de parámetro del evento, de acuerdo con el evento que se envíe.
 
 </Tab>
 </Tabs>
@@ -100,22 +107,22 @@ Most in-app events require event value parameters. In this case, it is the af\_r
 
 <div id="2-creating-a-trigger-for-the-purchase-event" />
 
-<Accordion title="2. Creating a trigger for the purchase event">
+<Accordion title="2. Crear un disparador para el evento de compra">
 
-In order for Google Tag Manager to know if the event should be sent to AppsFlyer, a trigger for the event must be configured.
+Para que Google Tag Manager sepa si el evento debe enviarse a AppsFlyer, se debe configurar un activador para el evento.
 
-1. In Google Tag Manager Click on ***Triggers*** and then ***New***
-2. Name the trigger as "Purchase" and click on ***Trigger Configuration***
-3. Choose ***Custom***
-4. Choose ***Some Events***
-5. In the conditions, set the trigger to fire when the ***Event Name*** equals "af\_purchase"
-6. Click ***Save***
+1. En Google Tag Manager, haz clic en ***Triggers*** y luego en ***New***
+2. Nombra el activador como "Purchase" y haz clic en ***Trigger Configuration***
+3. Elige ***Custom***
+4. Elige ***Some Events***
+5. En las condiciones, configura el activador para que se dispare cuando ***Event Name*** sea igual a "af\_purchase"
+6. Haz clic en ***Save***
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> Below is a screenshot from GTM UI. It shows the trigger's final configuration:
+> A continuación se muestra una captura de pantalla de la interfaz de usuario de GTM. Muestra la configuración final del activador:
 >
 > ![trigger_purchase_event.png](https://files.readme.io/ef2e70fb2aa0b25f1243d6fa565e3cdb1df407fd2d4b3105dee412ccad7f2704-49839256428689.png)
 
@@ -123,35 +130,37 @@ In order for Google Tag Manager to know if the event should be sent to AppsFlyer
 
 <div id="3-creating-a-tag-for-the-purchase-event" />
 
-<Accordion title="3. Creating a tag for the purchase event">
+<Accordion title="3. Creación de una etiqueta para el evento de compra">
 
-Now that the required variables and the event trigger are set, you can create the Purchase event tag.
+Ahora que las variables necesarias y el activador del evento están configurados, puedes crear la etiqueta del evento de compra.
 
-1. In Google Tag Manager click on ***Tags*** and then ***New***
-2. Name the tag as "Purchase" and click on ***Tag Configuration***
-3. Choose ***AppsFlyer***
-4. In the ***Application ID*** field, set the built-in variable the App ID
+1. En Google Tag Manager, haz clic en ***Tags*** y luego en ***New***
+2. Nombra la etiqueta como "Purchase" y haz clic en ***Tag Configuration***
+3. Elige ***AppsFlyer***
+4. En el campo ***Application ID*** , configura la variable incorporada App ID
 
    > 🚧 **Important**
    >
-   > For iOS, set the "apple\_app\_id" custom variable in the ***Application ID*** field.
+   > **Importante:**
+   >
+   > Para iOS, configura la variable personalizada "apple\_app\_id" en el campo ***Application ID*** .
 
-5. In the ***Dev Key*** field, choose the "AppsFlyer Dev Key" variable
-6. In the ***AppsFlyer Device ID*** field, choose the "AppsFlyer Device ID" variable
-7. In the Event Name field, set the built-in variable ***Event Name***
-8. In the ***Event Currency*** field, set your currency code e.g. USD
-9. Click twice on ***Add Event Value***
-10. Set the following:  
-    ***Key***: af\_revenue, ***Value***: choose the Event Parameter Variable "Revenue"  
-    ***Key***: af\_price, ***Value***: choose the Event Parameter Variable "Price"
-11. In the ***Triggering*** section, set the ***Firing Trigger*** to the "Purchase" event trigger
-12. Click ***Save***
+5. En el campo ***Dev Key*** , elige la variable "AppsFlyer Dev Key"
+6. En el campo ***AppsFlyer Device ID*** , elige la variable "AppsFlyer Device ID"
+7. En el campo Event Name, configura la variable incorporada ***Event Name***
+8. En el campo ***Event Currency*** , establece el código de tu moneda, por ejemplo, USD
+9. Haz clic dos veces en ***Add Event Value***
+10. Configura lo siguiente:  
+    ***Key***: af\_revenue, ***Value***: elige la Variable de Parámetro del Evento "Revenue"  
+    ***Key***: af\_price, ***Value***: elige la Variable de Parámetro del Evento "Price"
+11. En la sección ***Triggering*** , configura el ***Firing Trigger*** como el activador de eventos "Purchase"
+12. Haz clic en ***Save***
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> Below is a screenshot from GTM UI. It shows the Tag's final configuration:
+> A continuación se muestra una captura de pantalla de la interfaz de usuario de GTM. Muestra la configuración final de la etiqueta:
 >
 > ![purchase_tag.png](https://files.readme.io/893bdf6ce65bf6bd0435f4e7c02ff044b35e5e14ebea131f547040f763d7512d-49839295697169.png)
 
@@ -159,15 +168,15 @@ Now that the required variables and the event trigger are set, you can create th
 
 <div id="4-publishing-the-tag-manager-container" />
 
-<Accordion title="4. Publishing the tag manager container">
+<Accordion title="4. Publicación del contenedor del administrador de etiquetas">
 
-After each change in Google Tag Manager (adding tags etc.) you must download the container and add it to your app root folder:
+Después de cada cambio en Google Tag Manager (agregar etiquetas, etc.), debes descargar el contenedor y añadirlo a la carpeta raíz de tu aplicación:
 
 * Android - app/src/main/assets/containers
-* iOS - root folder/container
+* iOS - carpeta raíz/container
 
-Build and install the application on a test device and check the debug log to see that the event is triggered and sent.
+Construye e instala la aplicación en un dispositivo de prueba y revisa el registro de depuración para ver que el evento se desencadena y se envía.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HE7SFG97FKSVAY5QHVHGF3GV=google-tag-manager-setup h_01HE7SFG97YVYNT385MNFA9ECN=1-creating-event-parameter-variables h_01HE7SFG98XGBMTA7ZF8XSNF29=2-creating-a-trigger-for-the-purchase-event h_01HE7SFG98R4DGTRWXE247MRPK=3-creating-a-tag-for-the-purchase-event h_01HE7SFG98R2KGRRDA9TQTYD3B=4-publishing-the-tag-manager-container" />
+<div data-zendesk-anchors="google-tag-manager-setup=configuraci%C3%B3n-de-google-tag-manager h_01HE7SFG97FKSVAY5QHVHGF3GV=configuraci%C3%B3n-de-google-tag-manager h_01HE7SFG97YVYNT385MNFA9ECN=1-creating-event-parameter-variables h_01HE7SFG98XGBMTA7ZF8XSNF29=2-creating-a-trigger-for-the-purchase-event h_01HE7SFG98R4DGTRWXE247MRPK=3-creating-a-tag-for-the-purchase-event h_01HE7SFG98R2KGRRDA9TQTYD3B=4-publishing-the-tag-manager-container" />

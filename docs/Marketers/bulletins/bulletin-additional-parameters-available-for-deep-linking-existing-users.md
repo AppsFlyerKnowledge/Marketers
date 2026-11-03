@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: Additional parameters available for deep linking existing users'
+title: >-
+  Boletín: parámetros adicionales disponibles para el deep linking de usuarios
+  existentes
 metadata:
   keywords:
     - SDK
@@ -17,19 +19,18 @@ x-zendesk:
     - Marketers
     - OneLink
   created_at: '2022-04-27T09:49:22Z'
-  edited_at: '2025-11-09T08:44:17Z'
+  edited_at: '2026-10-20T03:56:39Z'
   id: 5733303620113
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/5733303620113-Bulletin-Additional-parameters-available-for-deep-linking-existing-users
+  url: https://support.appsflyer.com/hc/es/articles/5733303620113
 ---
-> **At a glance:** Returning additional parameters for deep linking existing users via UDL method.
+> **Resumen:** El método UDL devuelve parámetros adicionales para el deep linking de usuarios existentes.
 
-| **What's new** | AppsFlyer SDK V6.6+ allows UDL method to return additional parameters for deep linking existing users (with the app installed). |
+| **¿Qué hay de nuevo?** | AppsFlyer SDK V6.6+ permite que el método UDL devuelva parámetros adicionales para el deep linking de usuarios existentes (con la app instalada). |
 | --- | --- |
-| **Effective date** | April 27, 2022 |
-| **Where** | UDL method for deep linking existing users with the app installed |
-| **What** | **Before the change:** UDL method only returned `deep_link_value` and `deep_link_sub1-10` parameters for deep linking existing users.<br /><br />**After the change:** UDL method returns all the parameters that figure in the link parameter, including:<ul><li>`c`</li><li>`pid`</li><li>`path`</li><li>`scheme`</li><li>`host`</li><li>`af_c_id`</li><li>`af_adset`</li><li>`af_adset_id`</li><li>`af_ad`</li><li>`af_ad_id`</li><li>`af_ad_type`</li><li>`af_channel`</li><li>`af_dp`</li><li>`esp_name`</li><li>`link`</li></ul> |
-| **What you must know** | **Best practice**: Even though these parameters are available for deep linking existing users, we recommend you create new links using only `deep_link_value` and `deep_link_sub1-10` parameters, as documented in our <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">deep linking guide</Anchor>.<ul><li>This change is only intended for customers with existing links using legacy methods for deep linking. These customers can now implement the UDL method for deep linking and use these additional parameters to deep link existing users, while continuing to use the same links. New links don't have to be created.</li><li>AppsFlyer SDK V6.6+ required</li></ul> |
+| **Fecha de entrada en vigor** | 27 de abril de 2022 |
+| **Donde** | Método UDL para el deep linking de usuarios existentes con la app instalada |
+| **Qué** | **Antes del cambio:** el método UDL solo devolvía los parámetros `deep_link_value` y `deep_link_sub1-10` para el deep linking de usuarios existentes.<br /><br />**Después del cambio:** el método UDL devuelve todos los parámetros que figuran en el parámetro de enlace, incluidos:<ul><li>`c`</li><li>`pid`</li><li>`path`</li><li>`esquema`</li><li>`host`</li><li>`af_c_id`</li><li>`af_adset`</li><li>`af_adset_id`</li><li>`af_ad`</li><li>`af_ad_id`</li><li>`af_ad_type`</li><li>`af_canal`</li><li>`af_dp`</li><li>`esp_name`</li><li>`enlace`</li></ul> |
+| **Lo que debes saber** | **Mejores prácticas**: Aunque estos parámetros están disponibles para el deep linking de usuarios existentes, te recomendamos crear enlaces nuevos usando solo los parámetros `deep_link_value` y `deep_link_sub1-10`, como se documenta en nuestra <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#crear-un-enlace-de-onelink">guía de deep linking</Anchor>.<ul><li>Este cambio solo está pensado para clientes con enlaces existentes que usan métodos heredados de deep linking. Ahora, estos clientes pueden implementar el método UDL para deep linking y usar estos parámetros adicionales para hacer deep linking de usuarios existentes, mientras siguen usando los mismos enlaces. No es necesario crear enlaces nuevos.</li><li>Se requiere el SDK de AppsFlyer v6.6 o superior</li></ul> |

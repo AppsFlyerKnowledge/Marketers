@@ -1,5 +1,5 @@
 ---
-title: Google Ads postback partners—Configuration
+title: Configuración de partners de postback de Google Ads
 metadata:
   keywords:
     - postbacks
@@ -18,147 +18,146 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2021-11-16T09:36:56Z'
-  edited_at: '2024-07-18T07:44:23Z'
+  edited_at: '2026-08-12T12:19:13Z'
   id: 4411047077905
-  locale: en-us
+  locale: es
   section: Google Ads
   section_id: 6551205645457
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4411047077905-Google-Ads-postback-partners-Configuration
+  url: https://support.appsflyer.com/hc/es/articles/4411047077905
 ---
-> **At a glance:** Enable Google Ads postback partners to help run your Google Ads campaigns.
+> **De un vistazo:** Permite que los partners de postback de Google ayuden a ejecutar tus campañas de Google Ads.
 
-Some partners (for example, Bidalgo, Adquant), referred to as **Google Ads postback partners**, are similar to agencies. They help their advertiser clients run Google Ads campaigns, but require getting postbacks for Google Ads conversions.
+Algunos partners (por ejemplo, Bidalgo, Adquant), denominados **partners de postback de Google Ads**, son similares a los de las agencias. Ayudan a sus clientes anunciantes a ejecutar campañas de Google Ads, pero requieren obtener postbacks para las conversiones de Google Ads.
 
-These Google Ads Postback Partners (GAPPs) can also collect postbacks for Google Ads installs acquired by the advertiser directly, or even by other agencies (see [Use Cases](/docs/google-ads-postback-partners-configuration#google-ads-postback-partners-use-cases)). Using the postbacks information the GAPPs are able to optimize on Google Ads campaigns for the app.
+Estos partners de postback de Google Ads (GAPP) también pueden recopilar postbacks para las instalaciones de Google Ads adquiridas directamente por el anunciante, o incluso por otras agencias (consulta los [casos de uso](/docs/google-ads-postback-partners-configuration#casos-de-uso-de-partners-de-postback-de-google-ads)). Utilizando la información de postbacks, los GAPP pueden optimizar las campañas de Google Ads para la aplicación.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Google Ads Postback Partners are **NOT** attributed with installs or events in AppsFlyer.
+> Los partners de postback de Google Ads **NO** se atribuyen con instalaciones ni eventos en AppsFlyer.
 
-The advertiser needs an active Google Ads account <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">set up</Anchor> in AppsFlyer, and also to set up the specific GAPP in AppsFlyer to enable sending postbacks to it.
+El anunciante necesita una cuenta activa de Google Ads <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-advertisers">configurada</Anchor> en AppsFlyer, y también configurar el GAPP específico en AppsFlyer para permitirle enviar postbacks.
 
-Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Miramedia, Mpbisummer, Protonads, Springrain.
+Otros GAPP integrados con AppsFlyer: Blackbox, Appreciate, Marin Software, Miramedia, Mpbisummer, Protonads, Springrain.
 
-## Google Ads postback partner setup
+## Configuración del partner de postback de Google Ads
 
-1. In AppsFlyer, from the side menu, select**Collaborate**>**Active Integrations**.
+1. En AppsFlyer, en el menú lateral, selecciona**Colaborar**>**Integraciones activas** .
 
-2. Type the name of the GAPP you would like to work with into the search box and select it from the dropdown list.
+2. Escribe el nombre del GAPP con el que te gustaría trabajar en el cuadro de búsqueda y selecciónalo de la lista desplegable.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> Enter "Google Ads" in the search box and press Enter to receive the list of GAPPs.
+> Introduce "Google Ads" en el cuadro de búsqueda y presiona Entrar para recibir la lista de GAPP.
 
-3. Click on the required GAPP to open its integration setup.
+3. Haz clic en el GAPP requerido para abrir su configuración de integración.
 
-4. In your **Google Ads** account, copy the Customer ID (without hyphens):
+4. En tu cuenta de **Google Ads**, copia el ID de cliente (sin guiones):
 
 ![](https://files.readme.io/7afd536d06b1aca68744a83925ecac86fcef4cc47225826af20120f128da004f-21414601345681.png)
 
-5. Paste the number in the **Google Ads Customer ID** field.
+5. Pega el número en el campo **ID de cliente de Google Ads**.
 
-6. Configure the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">In-App Events Postback section</Anchor>.
+6. Configura la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">sección de Postback de eventos in-app</Anchor>.
 
-7. Click **Save**.
+7. Haz clic en **Guardar**.
 
-> 📘 **Important Notes**
+> 📘 **Notas importantes**
 >
-> * Disabling attribution for Google Ads also stops sending postbacks to GAPPs.
-> * You can configure multiple Ads accounts (CID) to send postbacks (step 5) by separating each CID with a comma.
+> * Desactivar la atribución para Google Ads también deja de enviar postbacks a los GAPP.
+> * Puedes configurar varias cuentas de anuncios (CID) para enviar postbacks (paso 5) separando cada CID con una coma.
 >
 >   ![zds_Agency_multiple.png](https://files.readme.io/36112b9a08ca1e6a2150523e1ec39eda5c28a4be826e9f776f5dbd7b1d0c5378-21414553418897.png)
-> * To work with multiple GAPPs, the campaigns for each GAPP should be run from separate google accounts. If you switch from one GAPP to another, make sure to disable the first GAPPs setup in AppsFlyer.
+> * Para trabajar con múltiples GAPP, las campañas para cada GAPP deben ejecutarse desde cuentas de Google separadas. Si cambias de un GAPP a otro, asegúrate de desactivar primero la configuración de GAPP en AppsFlyer.
 
-## Google Ads postback partners use cases
+## Casos de uso de partners de postback de Google Ads
 
 <div id="use-case-1-advertiser-postbacks-only" />
 
-<Accordion title="Use case 1 - Advertiser postbacks only">
+<Accordion title="Caso de uso 1: solo postbacks de anunciante">
 
-An advertiser is running Google Ads campaigns and wants the traffic from its Google Ads accounts to be sent to GAPP X.
+Un anunciante ejecuta campañas de Google Ads y desea que el tráfico de sus cuentas de Google Ads se envíe al GAPP X.
 
-1. Advertiser <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">configures</Anchor> Google Ads
-2. Advertiser [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads
+1. El anunciante <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-advertisers">configura</Anchor> Google Ads
+2. El anunciante [configura](/docs/google-ads-postback-partners-configuration#configuración-del-partner-de-postback-de-google-ads) GAPP X: Google Ads
 
-The advertiser must enter all its CIDs (Ads Account IDs) in the GAPP X - Google Ads configuration.
+El anunciante debe ingresar todos sus CID (ID de cuenta de anuncios) en la configuración de GAPP X - Google Ads.
 
 </Accordion>
 
 <div id="use-case-2-active-agency-with-advertiser-postbacks-only" />
 
-<Accordion title="Use case 2 - Active agency, with advertiser postbacks only">
+<Accordion title="Caso de uso 2: agencia activa, solo con postbacks de anunciante">
 
-An advertiser and an agency are both running Google Ads campaigns, the advertiser wants only its traffic to be sent to GAPP X.
+Tanto un anunciante como una agencia están ejecutando campañas de Google Ads, el anunciante desea que solo se envíe su tráfico a GAPP X.
 
-1. Advertiser <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">configures</Anchor> Google Ads
-2. Agency <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">configures</Anchor> Google Ads (just for their traffic to be attributed to them as an agency)
-3. Advertiser [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads
+1. El anunciante <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-advertisers">configura</Anchor> Google Ads
+2. La agencia <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-agencies">configura</Anchor> Google Ads (solo para que su tráfico se les atribuya como agencia)
+3. El anunciante [configura](/docs/google-ads-postback-partners-configuration#configuración-del-partner-de-postback-de-google-ads) GAPP X: Google Ads
 
-The advertiser must enter ONLY its CIDs in the GAPP X - Google Ads configuration.
+El anunciante debe ingresar ÚNICAMENTE sus CID en la configuración de GAPP X: Google Ads.
 
 </Accordion>
 
 <div id="use-case-3-active-advertiser-with-agency-postbacks-only" />
 
-<Accordion title="Use case 3 - Active advertiser, with agency postbacks only">
+<Accordion title="Caso de uso 3: anunciante activo, solo con postbacks de agencia">
 
-An advertiser and agency are running Google Ads campaigns, the agency wants only its traffic to be sent to GAPP X.
+Un anunciante y una agencia están ejecutando campañas de Google Ads, la agencia desea que solo se envíe su tráfico a GAPP X.
 
-1. Advertiser <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">configures</Anchor> Google Ads
-2. Agency <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">configures</Anchor> Google Ads
-3. Agency [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads
+1. El anunciante <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-advertisers">configura</Anchor> Google Ads
+2. La agencia <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-agencies">configura</Anchor> Google Ads
+3. La agencia [configura](/docs/google-ads-postback-partners-configuration#configuración-del-partner-de-postback-de-google-ads) GAPP X: Google Ads
 
-The agency must enter ONLY their CIDs in the GAPP X - Google Ads configuration
+La agencia debe ingresar ÚNICAMENTE sus CID en la configuración de GAPP X: Google Ads
 
 </Accordion>
 
 <div id="use-case-4-advertiser-agency-postbacks" />
 
-<Accordion title="Use case 4 - Advertiser & agency postbacks">
+<Accordion title="Caso de uso 4: postbacks de anunciante y agencia">
 
-An advertiser and agency are running Google Ads campaigns, both the advertiser and agency want their traffic to be sent to GAPP X.
+Un anunciante y una agencia están ejecutando campañas de Google Ads, tanto el anunciante como la agencia quieren que su tráfico se envíe a GAPP X.
 
-1. Advertiser <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">configures</Anchor> Google Ads
-2. Agency <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">configures</Anchor> Google Ads
-3. Advertiser [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads for their CIDs
-4. Agency [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads for their CIDs
+1. El anunciante <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-advertisers">configura</Anchor> Google Ads
+2. La agencia <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-agencies">configura</Anchor> Google Ads
+3. El anunciante [configura](/docs/google-ads-postback-partners-configuration#configuración-del-partner-de-postback-de-google-ads) GAPP X: Google Ads para sus CID
+4. La agencia [configura](/docs/google-ads-postback-partners-configuration#configuración-del-partner-de-postback-de-google-ads) GAPP X: Google Ads para sus CID
 
-Notice that these must be different CIDs between the advertiser and agency.
+Ten en cuenta que estos deben ser CID diferentes entre el anunciante y la agencia.
 
 </Accordion>
 
-## Available parameters for GAPPs
+## Parámetros disponibles para GAPP
 
-**The contents of the postbacks depend on the initial integration of the GAPPs with AppsFlyer** and are unrelated to any advertiser configuration. Therefore, any two GAPPs may have differently defined postback parameters.
+**El contenido de los postbacks depende de la integración inicial de las GAPP con AppsFlyer** y no está relacionado con ninguna configuración de anunciante. Por lo tanto, dos GAPP cualesquiera pueden tener parámetros de postback definidos de manera diferente.
 
-For example, `campaign type`, `city`, `carrier` and `ad_type` are parameters, which may or may not exist in any GAPP's postback.
+Por ejemplo, `campaign type`, `city`, `carrier` y `ad_type` son parámetros que pueden existir o no en cualquier postback de GAPP.
 
-There are two sources for GAPP postback parameters:
+Hay dos fuentes para los parámetros de postback de GAPP:
 
-1. **AppsFlyer macros** - for details of all the macros available on AppsFlyer's postbacks, click <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">here</Anchor>.
-2. **Google Response** - with every install attributed to Google Ads, AppsFlyer receives relevant information from Google. The following are available parameters on GAPPs postbacks, as received by AppsFlyer from Google Ads (for detailed parameter descriptions, click <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs#sample_responses">here</Anchor>)
-   * Ad Events ID
-   * Campaign ID
-   * Campaign Name
-   * Campaign Type
-   * External Customer ID (CID)
-   * Network Type
-   * Network Sub Type
-   * Timestamp
-   * Video ID
-   * Ad Group ID
+1. **Macros de AppsFlyer**: para obtener detalles de todas las macros disponibles en los postbacks de AppsFlyer, haz clic <Anchor target="_blank" href="/partners/es/docs/postback-macros-for-ad-networks">aquí</Anchor>.
+2. **Respuesta de Google**: con cada instalación atribuida a Google Ads, AppsFlyer recibe información relevante de Google. Los siguientes son parámetros disponibles en los postbacks de datos de GAPP, tal como los recibió AppsFlyer de Google Ads (para obtener descripciones detalladas de los parámetros, haz clic <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs#sample_responses">aquí</Anchor>)
+   * ID de eventos publicitarios
+   * ID de campaña
+   * Nombre de la campaña
+   * Tipo de campaña
+   * ID de cliente externo (CID)
+   * Tipo de red
+   * Subtipo de red
+   * Cadena
+   * ID del video
+   * ID del grupo de anuncios
    * Creative ID
-   * Keyword
-   * Match Type
-   * Placement
-   * Interaction Type
-   * Ad Type
-   * Conversion Metric
-   * Location
+   * Palabra clave
+   * Tipo de coincidencia
+   * Ubicación
+   * Tipo de interacción
+   * Tipo de anuncio
+   * Métrica de conversión
+   * Ubicación
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> The information available is based solely on the information sent by Google to AppsFlyer. If, for some reason, Google does not send an install's information, AppsFlyer can't pass it on to the GAPP.
+> La información disponible se basa únicamente en la información enviada por Google a AppsFlyer. Si, por alguna razón, Google no envía la información de una instalación, AppsFlyer no puede pasarla al GAPP.
 
-<div data-zendesk-anchors="h_01HKA1HTJ4VW4YRXMSVG7WBTJM=important h_01HKA1HTJ5BE5EVQJ2T9HSHKQC=google-ads-postback-partner-setup h_01HKA1HTJ5BJTTS15QC44M63B2=tip h_01HKA1HTJ5KSD1CVJ4FKDSATJX=important-notes h_01HKA1HTJ5DX0Z2ZCGX07EX15F=google-ads-postback-partners-use-cases h_01HKA1HTJ5T2XJJ4M9YZ1S52SF=use-case-1-advertiser-postbacks-only h_01HKA1HTJ5EFADYE33NQVP1NBQ=use-case-2-active-agency-with-advertiser-postbacks-only h_01HKA1HTJ5H4KK2M94QY0VFRSA=use-case-3-active-advertiser-with-agency-postbacks-only h_01HKA1HTJ537CYXEBQRCV5FSPK=use-case-4-advertiser-agency-postbacks h_01HKA1HTJ5H0SXEMBVB6K2EZ91=available-parameters-for-gapps h_01HKA1HTJ55XWMX90KSYTGFB6C=note" />
+<div data-zendesk-anchors="h_01HKA1HTJ4VW4YRXMSVG7WBTJM=importante google-ads-postback-partner-setup=configuraci%C3%B3n-del-partner-de-postback-de-google-ads h_01HKA1HTJ5BE5EVQJ2T9HSHKQC=configuraci%C3%B3n-del-partner-de-postback-de-google-ads h_01HKA1HTJ5BJTTS15QC44M63B2=consejo h_01HKA1HTJ5KSD1CVJ4FKDSATJX=notas-importantes google-ads-postback-partners-use-cases=casos-de-uso-de-partners-de-postback-de-google-ads h_01HKA1HTJ5DX0Z2ZCGX07EX15F=casos-de-uso-de-partners-de-postback-de-google-ads h_01HKA1HTJ5T2XJJ4M9YZ1S52SF=use-case-1-advertiser-postbacks-only h_01HKA1HTJ5EFADYE33NQVP1NBQ=use-case-2-active-agency-with-advertiser-postbacks-only h_01HKA1HTJ5H4KK2M94QY0VFRSA=use-case-3-active-advertiser-with-agency-postbacks-only h_01HKA1HTJ537CYXEBQRCV5FSPK=use-case-4-advertiser-agency-postbacks available-parameters-for-gapps=par%C3%A1metros-disponibles-para-gapp h_01HKA1HTJ5H0SXEMBVB6K2EZ91=par%C3%A1metros-disponibles-para-gapp h_01HKA1HTJ55XWMX90KSYTGFB6C=nota" />

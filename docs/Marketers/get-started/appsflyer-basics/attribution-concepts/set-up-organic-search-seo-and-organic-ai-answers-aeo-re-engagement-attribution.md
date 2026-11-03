@@ -1,7 +1,7 @@
 ---
 title: >-
-  Set up organic search (SEO) and organic AI answers (AEO) re-engagement
-  attribution
+  Configura la atribución de re-engagement de búsqueda orgánica (SEO) y
+  respuestas orgánicas de IA (AEO)
 metadata:
   keywords:
     - Marketers
@@ -14,73 +14,72 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-05-07T13:34:36Z'
-  edited_at: '2026-09-14T15:30:59Z'
+  edited_at: '2026-09-16T00:09:20Z'
   id: 15123194526353
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/15123194526353-Set-up-organic-search-SEO-and-organic-AI-answers-AEO-re-engagement-attribution
+  url: https://support.appsflyer.com/hc/es/articles/15123194526353
 ---
-> **At a glance:** Get detailed attribution data about re-engagements (users who already have your app installed) from organic search engines and AI answer engines so that you can optimize your organic search and AI-driven conversions.
+> **At a glance:** Obtén datos de atribución detallados sobre los re-engagements (usuarios que ya tienen tu app instalada) procedentes de motores de búsqueda orgánicos y motores de respuestas de IA, para que puedas optimizar tus conversiones de búsqueda orgánica y las impulsadas por IA.
 
-## Overview
+## Descripción
 
-Organic search (SEO) and Organic AI answers (AEO re-engagement attribution is an attribution solution that allows AppsFlyer customers to attribute re-engagements (meaning mobile app opens of users who already have your app installed) to various organic search engines and AI answer engines.
+La atribución de re-engagement de búsqueda orgánica (SEO) y respuestas orgánicas de IA (AEO) es una solución de atribución que permite a los clientes de AppsFlyer atribuir los re-engagements (es decir, las aperturas de aplicaciones móviles por parte de usuarios que ya tienen tu app instalada) a varios motores de búsqueda orgánica y motores de respuestas de IA.
 
-Having access to this unique data is very useful to SEO (search engine optimization) and AEO (answer engine optimization) teams, and provides invaluable feedback on their SEO and AEO efforts.
+Tener acceso a estos datos únicos es muy útil para los equipos de SEO (optimización para motores de búsqueda) y AEO (optimización para motores de respuestas), y proporciona información muy valiosa sobre sus esfuerzos de SEO y AEO.
 
-### Flow
+### Flujo
 
-![Diagram showing the organic search attribution flow, from a user clicking a search result to the app opening or the user landing on a web page](https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png)
+![Diagrama que muestra el flujo de atribución de búsqueda orgánica, desde que un usuario hace clic en un resultado de búsqueda hasta que se abre la aplicación o el usuario llega a una página web](https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png)
 
-The organic search attribution flow works as follows:
+El flujo de atribución de búsqueda orgánica funciona de la siguiente manera:
 
-1. A user searches for a term on their mobile browser search engine (Google, Bing, etc.). The search engine displays several clickable results.
-2. Your web developer maps some of these search results to open your mobile app using Android App Links and iOS Universal Links. If a user has the app installed, when they click the search result, the app opens (without redirecting to an app store first).
-3. Upon app launch, AppsFlyer collects the required information and can attribute the app open to the user's search engine.
-4. If the user doesn't have the app installed, they are sent to a web landing page, where you can use any of several AppsFlyer web-to-app solutions (like Smart Banners, Smart Script, or QR codes) to redirect and attribute them.
+1. Un usuario busca un término en el motor de búsqueda de su navegador móvil (Google, Bing, etc.). El motor de búsqueda muestra varios resultados en los que se puede hacer clic.
+2. Tu desarrollador web asigna algunos de estos resultados de búsqueda para que abran tu aplicación móvil mediante Android App Links y iOS Universal Links. Si un usuario tiene la aplicación instalada, cuando hace clic en el resultado de la búsqueda, la aplicación se abre (sin redireccionar primero a una tienda de aplicaciones).
+3. Al iniciar la aplicación, AppsFlyer recopila la información requerida y puede atribuir la apertura de la aplicación al motor de búsqueda del usuario.
+4. Si el usuario no tiene la app instalada, se le envía a una página de destino web, donde puedes usar cualquiera de las soluciones Web-to-app de AppsFlyer (como Smart Banners, Smart Script o QR code) para redirigirlo y atribuirlo.
 
-## Setup
+## Configuración
 
-**Prerequisites**:
+**Requisitos previos**:
 
-* AppsFlyer Android SDK V6.12.1
-* AppsFlyer iOS SDK V6.12.1
+* SDK de AppsFlyer para Android V6.12.1
+* SDK de AppsFlyer para iOS V6.12.1
 
-**To set up organic search attribution**:
+**Para configurar la atribución de búsqueda orgánica**:
 
-1. Tell your developers to enable app opening by following the instructions for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">Android App Links</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#app-opening-methods">iOS Universal Links</Anchor> (using the app's top-level domain).
-2. In AppsFlyer, from the side menu, select **Settings** > <Anchor target="_blank" href="/marketers/docs/app-settings">App Settings</Anchor>, and turn on:
-   * **SEO (organic search) and AEO mobile app re-engagement attribution.**
-   * **Re-engagement attribution**.
+1. Pide a tus desarrolladores que habiliten la apertura de la aplicación siguiendo las instrucciones de <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">Android App Links</Anchor> y <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#app-opening-methods">iOS Universal Links</Anchor> (usando el dominio de nivel superior de la aplicación).
+2. En AppsFlyer, en el menú lateral, selecciona **Configuración** > <Anchor target="_blank" href="/marketers/es/docs/app-settings">Configuración de la aplicación</Anchor> y activa:
+   * **Atribución de re-engagement para aplicación móvil de SEO (búsqueda orgánica) y AEO.**
+   * **la atribución de re-engagement**.
 
 > 📘 **Note**
 >
-> **A note for your developer**
+> **Nota para tu desarrollador**
 >
-> performOnDeepLinking forcefully consumes and resolves the deep linking URL when invoked. This will prevent the SEO attribution feature from functioning properly and will result in attribution not being reported to the correct SEO media source.
+> performOnDeepLinking consume y resuelve de forma forzada la URL de Deep Linking cuando se invoca. Esto evitará que la función de atribución SEO funcione correctamente y hará que la atribución no se reporte a la fuente de medios SEO correcta.
 
-## Data availability
+## Disponibilidad de datos
 
-Data is available as follows:
+Los datos están disponibles de la siguiente manera:
 
-* In aggregate data in dashboards and reports, the `media_source` field indicates which search engine the user arrived from. Example: `google_organic_seo`.
-* In raw data reports:
-  * `media_source` field indicates which search engine the user arrived from. Example: `google_organic_seo`.
-  * `http_referrer` field includes the base URL of the search results page, from which the user was sent to the app or mobile landing page.
-  * `channel` field has value `seo` for organic search engine traffic, or `aeo` for AI answer engine traffic.
+* En los datos agregados de dashboards y reportes, el campo `media_source` indica desde qué motor de búsqueda llegó el usuario. Ejemplo: `google_organic_seo`.
+* En reportes de raw data.
+  * El campo `media_source` indica desde qué motor de búsqueda llegó el usuario. Ejemplo: `google_organic_seo`.
+  * El campo `http_referrer` incluye la URL completa de la página de resultados de la búsqueda, desde la cual el usuario fue enviado a la app o landing page móvil.
+  * El campo `channel` tiene el valor `seo` para el tráfico orgánico de motores de búsqueda, o `aeo` para el tráfico de motores de respuestas de IA.
 
-## Additional information
+## Información adicional
 
-<Accordion title="List of supported search engines">
+<Accordion title="Lista de motores de búsqueda compatibles">
 
-Organic search attribution supports the following search engines:
+La atribución de búsqueda orgánica admite los siguientes motores de búsqueda:
 
 * Google
 * Bing
 * Yahoo
-* Ask
+* Preguntar
 * DuckDuckGo
 * Yandex
 * Naver
@@ -89,91 +88,91 @@ Organic search attribution supports the following search engines:
 * Ecosia
 * Coccoc
 * Sogou
-* Yahoo Japan
+* Yahoo Japón
 
 > 📘 **Note**
 >
-> For other search engines, use the legacy organic search attribution solution (requires developer input).
+> Para otros motores de búsqueda, usa la solución de atribución de búsqueda orgánica heredada (requiere la entrada del desarrollador).
 >
-> In dashboards and data reports, search engines display as `<search engine>`\_organic\_seo. For example: google\_organic\_seo.
+> En los dashboards y los reportes de datos, los motores de búsqueda se muestran como `<search engine>`\_organic\_seo. Por ejemplo: google\_organic\_seo.
 
 </Accordion>
 
-<Accordion title="List of supported AI answer engines">
+<Accordion title="Lista de motores de respuestas de IA compatibles">
 
-Organic search attribution also supports the following AI answer engines:
+La atribución de búsqueda orgánica también es compatible con los siguientes motores de respuestas de IA:
 
 * ChatGPT
 * Claude
 * Perplexity
 * Manus
 * Copilot
-* Gemini
+* Géminis
 * Grok
 * Deepseek
 
 > 📘 **Note**
 >
-> In dashboards and data reports, AI answer engines display as `<AI engine>`\_organic\_aeo. For example: chatgpt\_organic\_aeo.
+> En los dashboards y los reportes de datos, los motores de respuestas de IA se muestran como `<motor de IA>`\_organic\_aeo. Por ejemplo: chatgpt\_organic\_aeo.
 
 </Accordion>
 
-<Accordion title="FAQ">
+<Accordion title="PREGUNTAS FRECUENTES">
 
-<Accordion title="Does organic SEO attribution incur an additional fee?">
+<Accordion title="¿La atribución de SEO orgánica incurre en alguna tarifa adicional?">
 
-No, this feature is included in your subscription.
-
-</Accordion>
-
-<Accordion title="Do organic SEO conversions count as part of my package?">
-
-Yes, same as non-organic conversions.
+No, esta función está incluida en tu suscripción.
 
 </Accordion>
 
-<Accordion title="Can I customize the name of the SEO media source?">
+<Accordion title="¿Las conversiones de SEO orgánicas cuentan como parte de mi paquete?">
 
-No. AppsFlyer determines the name of the organic SEO media source and can't be customized at this point.
-
-</Accordion>
-
-<Accordion title="If the search engine displays an install button next to the organic search results and the user clicks it and navigates to the app store, does AppsFlyer attribute the install to the search engine?">
-
-No. In this case, AppsFlyer can't collect the required information for attribution. Organic search attribution requires the app to be already installed.
+Sí, igual que las conversiones no orgánicas.
 
 </Accordion>
 
-<Accordion title="Is keyword data available?">
+<Accordion title="¿Puedo personalizar el nombre de la fuente de medios de SEO?">
 
-Keyword data isn't available via this organic search attribution solution. However, there are rare instances where keyword data is available for Android. See <Anchor target="_blank" href="/marketers/docs/evaluate-keyword-data#android-keywords">Android keyword data availability</Anchor>.
-
-</Accordion>
-
-<Accordion title="Is organic search attribution supported in an install flow?">
-
-Yes, you can see from which page users who installed your app arrived at your website.
-
-Smart Script does this by:
-
-* Collecting the page's URL domain, referred to as the web referrer
-* Creating a relevant `pid` (later displayed as the media source) based on the user's specific origin
-* Mapping it to a parameter key of your choosing, such as `af_sub1`, in the outgoing URL
-
-To learn how to set up Smart Script to collect the web referrer, see <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping">OneLink Smart Script V2 setup guide</Anchor>.
+N.º AppsFlyer determina el nombre de la fuente de medios SEO orgánica y no se puede personalizar por el momento.
 
 </Accordion>
 
+<Accordion title="Si el motor de búsqueda muestra un botón de instalación junto a los resultados de búsqueda orgánica y el usuario hace clic en él y navega a la tienda de aplicaciones, ¿AppsFlyer atribuye la instalación al motor de búsqueda?">
+
+N.º En este caso, AppsFlyer no puede recopilar la información requerida para la atribución. La atribución de búsqueda orgánica requiere que la aplicación ya esté instalada.
+
 </Accordion>
 
-<Accordion title="Traits and limitations">
+<Accordion title="¿Están disponibles los datos de palabras clave?">
 
-| Trait | Description |
+Los datos de palabras clave no están disponibles a través de esta solución de atribución de búsqueda orgánica. Sin embargo, hay raros casos en los que los datos de palabras clave están disponibles para Android. Consulta <Anchor target="_blank" href="/marketers/es/docs/evaluate-keyword-data#palabras-clave-de-android">la disponibilidad de los datos de palabras clave de Android</Anchor>.
+
+</Accordion>
+
+<Accordion title="¿Se admite la atribución de búsquedas orgánicas en un flujo de instalación?">
+
+Sí, puedes ver desde qué página llegaron a tu sitio web los usuarios que instalaron tu aplicación.
+
+Smart Script lo hace de la siguiente manera:
+
+* Recopila el dominio de la URL de la página, denominado referente web
+* Crea un `pid` relevante (que después se muestra como la fuente de medios) en función del origen específico del usuario
+* Lo asigna a una clave de parámetro que elijas, como `af_sub1`, en la URL saliente
+
+Para saber cómo configurar Smart Script para recopilar el referente web, consulta la <Anchor target="_blank" href="/marketers/es/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping">guía de configuración de OneLink Smart Script V2</Anchor>.
+
+</Accordion>
+
+</Accordion>
+
+<Accordion title="Características y limitaciones">
+
+| Rasgo | Description |
 | --- | --- |
-| Browsers | Organic search attribution isn't supported by:<ul><li>Firefox on Android</li><li>Any browser except for Safari on iOS.</li></ul> |
-| SwiftUI apps (iOS) | Organic search attribution is not supported for iOS apps built with SwiftUI. |
-| Reengagement window | Organic search has a fixed reengagement window of 30 days. The window size cannot be modified. For more information, see <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#inclusion-windows">Retargeting attribution guide</Anchor>. |
+| Navegadores | La atribución de búsqueda orgánica no es compatible con:<ul><li>Firefox en Android</li><li>Cualquier navegador excepto Safari en iOS.</li></ul> |
+| Aplicaciones SwiftUI (iOS) | La atribución de búsqueda orgánica no es compatible con las aplicaciones de iOS creadas con SwiftUI. |
+| Ventana de reenganche | La búsqueda orgánica tiene una ventana fija de re-engagement de 30 días. El tamaño de la ventana no se puede modificar. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide#ventanas-de-inclusión">la guía de atribución de retargeting</Anchor>. |
 
 </Accordion>
 
-<div data-zendesk-anchors="organic-search-attribution=overview h_01H9G0W21SRDC6ZSR1E8AQFZFC=overview h_01H9G0W21S4RB56PNV9DAYZPB2=flow h_01H9G0W21S6Z0A5QXC52KSYVQS=setup h_01H9G0W21S7KVJ2Z5DRPCHZF4Z=data-availability h_01H9G0W21SERW2HC44KD77FNCG=additional-information" />
+<div data-zendesk-anchors="organic-search-attribution=descripci%C3%B3n h_01H9G0W21SRDC6ZSR1E8AQFZFC=descripci%C3%B3n flow=flujo h_01H9G0W21S4RB56PNV9DAYZPB2=flujo setup=configuraci%C3%B3n h_01H9G0W21S6Z0A5QXC52KSYVQS=configuraci%C3%B3n data-availability=disponibilidad-de-datos h_01H9G0W21S7KVJ2Z5DRPCHZF4Z=disponibilidad-de-datos additional-information=informaci%C3%B3n-adicional h_01H9G0W21SERW2HC44KD77FNCG=informaci%C3%B3n-adicional" />

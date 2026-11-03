@@ -1,5 +1,5 @@
 ---
-title: Data Locker for marketers
+title: Data Locker para marketers
 metadata:
   keywords:
     - Reports
@@ -17,623 +17,622 @@ x-zendesk:
     - Marketers
     - Data Locker
   created_at: '2019-02-03T12:20:08Z'
-  edited_at: '2026-08-05T08:25:22Z'
+  edited_at: '2026-08-12T11:51:39Z'
   id: 360000877538
-  locale: en-us
+  locale: es
   section: Data Locker
   section_id: 6550945728657
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000877538-Data-Locker-for-marketers
+  url: https://support.appsflyer.com/hc/es/articles/360000877538
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Data Locker sends your report data to cloud storage for loading into your BI systems. You can select between different storage destinations: An AppsFlyer-owned bucket in AWS, or storage owned by you in AWS, GCS, Yandex, BigQuery, and Snowflake. Data Locker supports [multiple destinations](/docs/data-locker-for-marketers#multipleconnections-principles-more-than-one-destination). That means you can send all data to multiple destinations, segregate data by destination, or a combination of both.
+> **En resumen:** Data Locker envía los datos de tus reportes al almacenamiento en la nube para cargarlos en tus sistemas de BI. Puedes seleccionar entre diferentes destinos de almacenamiento: Un bucket de AppsFlyer en AWS, o almacenamiento de tu propiedad en AWS, GCS, Yandex, BigQuery y Snowflake. Data Locker admite [varios destinos](/docs/data-locker-for-marketers#multipleconnections-principles-more-than-one-destination). Esto significa que puedes enviar todos los datos a varios destinos, separar los datos por destino o una combinación de ambos.
 
-## Overview
+## Descripción general
 
 ![6133DataLockerForAdvertisers.png](https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png)
 
-In Data Locker select your apps, media sources, events, and reports to include in the data AppsFlyer delivers to your selected cloud storage options. Then, load data programmatically from the storage into your systems.
+En Data Locker, selecciona tus aplicaciones, fuentes de medios, eventos y reportes para incluirlos en los datos que AppsFlyer entrega a tus opciones de almacenamiento en la nube seleccionadas. Luego, carga los datos programáticamente desde el almacenamiento a tus sistemas.
 
 <div id="data-locker-features" />
 
-<Accordion title="Data Locker—features">
+<Accordion title="Data Locker: funciones">
 
-| Feature | Description |
+| Característica | Descripción |
 | --- | --- |
-| [Storage options (cloud)](/docs/data-locker-for-marketers#storage-options) | Data Locker can send your data to any of the following cloud service providers:<ul><li>Storage owned by AppsFlyer on AWS</li><li><Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup">Storage owned by you</Anchor> on:<ul><li>AWS</li><li>GCS</li><li>Azure Blob</li><li>[Beta] Yandex</li><li>BigQuery</li><li>Snowflake</li></ul></li></ul>You can set more than 1 destination in Data Locker. This means that you can send all or some of your data to [multiple destinations](/docs/data-locker-for-marketers#multipleconnections-principles-more-than-one-destination).<br /><br />**Examples**<ul><li>Segregate data by report type. Send raw data to GCS and aggregate data to Snowflake.</li><li>Segregate data by app and send the data per app group to different buckets.</li></ul> |
-| Multi-app | Send data of 1, more, or all apps in your account. When you add apps to the account, they can be automatically included. |
-| Availability window | 14 days |
-| [Data segregation](/docs/data-locker-for-marketers#app-segregation) | Available data segregation options (relevant for bucket cloud storage):<ul><li>[Default] **Unified:** Data of all apps combined. The row-level app ID field is used to identify the app in data files.</li><li>**Segregated by app:** Data of each app is in a separate folder. The folder name consists of the app ID.</li></ul> |
-| Data format options | <ul><li>For bucket cloud storage:<ul><li>CSV</li><li>Parquet</li><li><Anchor target="_blank" href="/marketers/docs/adobe-experience-platform-aep-integration-with-appsflyer-data-locker">Adobe</Anchor></li></ul></li><li>Data warehouse</li></ul> |
-| Data freshness | Freshness depends on the report type<ul><li>**Hourly:** Data generated continuously; for example, installs and in-app event data are written within hours of the event arriving in AppsFlyer.</li><li>**Daily:** Reports like uninstalls, are generated daily and are ready on the following day.</li><li>**Versioned:** If the same report is generated multiple times for the same time period a versioning mechanism is in place.</li></ul> |
+| [Opciones de almacenamiento (cloud)](/docs/data-locker-for-marketers#storage-options) | Data Locker puede enviar tus datos a cualquiera de los siguientes proveedores de servicios en la nube:<ul><li>Almacenamiento propiedad de AppsFlyer en AWS</li><li><Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup">Almacenamiento propio</Anchor> en:<ul><li>AWS</li><li>GCS</li><li>[Beta] Azure Blob</li><li>[Beta] Yandex</li><li>BigQuery</li><li>Snowflake</li></ul></li></ul>Puedes establecer más de un destino en Data Locker. Esto significa que puedes enviar todos o algunos de tus datos a [múltiples destinos](/docs/data-locker-for-marketers#multipleconnections-principles-more-than-one-destination).<br /><br />**Ejemplos**<ul><li>Separa los datos por tipo de reporte. Envía el raw data a GCS y los datos agregados a Snowflake.</li><li>Separa los datos por aplicación y envía los datos por grupo de aplicaciones a diferentes buckets.</li></ul> |
+| Aplicaciones múltiples | Envía datos de 1, más o todas las aplicaciones de tu cuenta. Cuando agregas aplicaciones a la cuenta, se pueden incluir automáticamente. |
+| Ventana de disponibilidad | 14 días |
+| [Segregación de datos](/docs/data-locker-for-marketers#app-segregation) | Opciones de segregación de datos disponibles (relevantes para el almacenamiento en un bucket en la nube):<ul><li>[Predeterminada] **Unificada:** Datos de todas las aplicaciones combinadas. El campo ID de aplicación a nivel fila se utiliza para identificar la aplicación en archivos de datos.</li><li>**Segregados por aplicación:** Los datos de cada aplicación están en una carpeta separada. El nombre de la carpeta es el ID de la aplicación.</li></ul> |
+| Opciones de formato de datos | <ul><li>Para el almacenamiento en un bucket en la nube:<ul><li>CSV</li><li>PARQUET</li><li><Anchor target="_blank" href="/marketers/es/docs/adobe-experience-platform-aep-integration-with-appsflyer-data-locker">Adobe</Anchor></li></ul></li><li>Almacén de datos</li></ul> |
+| Actualización de los datos | La actualización depende del tipo de reporte<ul><li>**Por hora:** Los datos se generan continuamente; por ejemplo, los datos de instalaciones y eventos in-app se escriben dentro de las horas posteriores a la llegada del evento a AppsFlyer.</li><li>**A diario:** Los reportes como los de desinstalaciones, se generan diariamente y están listos al día siguiente.</li><li>**Versionado:** Si se genera el mismo reporte varias veces durante el mismo período de tiempo, se implementa un mecanismo de versionado.</li></ul> |
 
 </Accordion>
 
 <div id="reports-available-via-data-locker" />
 
-<Accordion title="Reports available via Data Locker">
+<Accordion title="Reportes disponibles en Data Locker">
 
-<Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports">Reports available via Data Locker</Anchor>
+<Anchor target="_blank" href="/marketers/es/docs/data-locker-advertiser-reports">Reportes disponibles en Data Locker</Anchor>
 
 </Accordion>
 
-## Set Data Locker report settings
+## Configurar la configuración del reporte de Data Locker
 
-To configure Data Locker, follow these steps to connect your cloud service, define export settings, and customize report content:
+Para configurar Data Locker, sigue estos pasos para conectar tu servicio en la nube, definir la configuración de exportación y personalizar el contenido del reporte:
 
 <div id="1-set-up-your-cloud-service" />
 
-<Accordion title="1. Set up your cloud service">
+<Accordion title="1. Configura tu servicio en la nube">
 
-You can connect your Data Locker to one or more cloud service providers. See the following for instructions on how to configure them to work with Data Locker:
+Puedes conectar tu Data Locker a uno o más proveedores de servicios en la nube. Consulta lo siguiente para obtener instrucciones sobre cómo configurarlos para que funcionen con Data Locker:
 
-* <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor> bucket
-* <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor> bucket
-* <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#beta--azure-storage">Azure</Anchor> Blob
-* [Beta] <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#yandex">Yandex</Anchor> bucket
-* <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#bigquery">BigQuery</Anchor> data warehouse
-* <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#snowflake">Snowflake</Anchor> data warehouse
+* <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor> bucket
+* <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor> bucket
+* [Beta] <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#beta--azure-storage">Azure</Anchor> Blob
+* [Beta] <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#yandex">Yandex</Anchor> bucket
+* Almacén de datos de <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#bigquery">BigQuery</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#snowflake">Snowflake</Anchor> almacén de datos
 
-**Note**! If you don't have a Data Locker subscription and you access Cohorts analytics or SKAN data, you must still complete a marketer-owned cloud storage service procedure.
+[Práctica recomendada]: Si no tienes una suscripción a Data Locker y accedes al análisis de cohortes o a los datos de SKAN, debes completar igualmente un procedimiento de servicio de almacenamiento en la nube propio del marketer.
 
 </Accordion>
 
 <div id="2-add-a-connection-to-your-cloud-service" />
 
-<Accordion title="2. Add a connection to your cloud service">
+<Accordion title="2. Agrega una conexión a tu servicio en la nube">
 
-After configuring your cloud service account to work with Data Locker (see "Set up your cloud service" above), create a connection in Data Locker using the credentials from your account. You can create up to two connections.
+Después de configurar tu cuenta de servicio en la nube para trabajar con Data Locker (consulta "Configurar tu servicio en la nube" arriba), crea una conexión en Data Locker utilizando las credenciales de tu cuenta. Puedes crear hasta dos conexiones.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> By default, each account can open up to **2 Data Locker connections**. If you need additional connections, contact your Customer Success Manager (CSM).
+> Por defecto, cada cuenta puede abrir hasta **2 conexiones de Data Locker**. Si necesitas conexiones adicionales, contacta con tu Customer Success Manager (CSM).
 
-To create a connection for your cloud provider perform the following steps:
+Para crear una conexión para tu proveedor de nube, realiza los siguientes pasos:
 
-1. In AppsFlyer, from the sidebar, go to **Exports** > **Data Locker**.
-2. On the right-hand side, click **New connection.**
-3. In **Connection name** enter the name for your connection. Use only lowercase letters, digits, and hyphens.
-4. Click the icon of the cloud service to which you want to connect.
-5. Depending on the service you selected, enter the following connection information.
+1. En AppsFlyer, desde la barra lateral, ve a **Exportar** > **Data Locker**.
+2. En el lado derecho, haz clic en **Nueva conexión.**
+3. En **Nombre de la conexión** ingresa el nombre de tu conexión. Utiliza solo letras minúsculas, números y guiones.
+4. Haz clic en el ícono del servicio en la nube al que deseas conectarte.
+5. Dependiendo del servicio que has seleccionado, ingresa la siguiente información de conexión.
 
    <div id="aws-cloud-bucket-connection" />
 
-   <Accordion title="AWS cloud bucket connection">
+   <Accordion title="Conexión al bucket de la nube de AWS">
 
-   Before setting the AWS connection, create an AWS bucket. To learn, how see <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#aws-storage">here</Anchor>.
+   Antes de configurar la conexión de AWS, crea un bucket de AWS. Para aprender, consulta <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#aws-storage">aquí</Anchor>.
 
-   To set the connection:
+   Para establecer la conexión:
 
-   1. Enter your AWS S3 bucket name. `af-` prefix is mandatory, and should be entered manually.
-   2. Click **Test connection**.
-   3. Verify that an error message indicating that the bucket path is invalid isn't displayed.
-   4. Select whether to **Make this connection compatible with Adobe Experience Platform**. If selected, click **Save** and continue to [select global-level filters](#select-global-level-filters).
-   5. Click **Save**.
+   1. Introduce el nombre de tu bucket AWS S3. El prefijo `af-` es obligatorio, y debe introducirse manualmente.
+   2. Haz clic en **Probar conexión**.
+   3. Verifica que no se muestre ningún mensaje de error que indique que la ruta del bucket es inválida.
+   4. Selecciona si deseas **hacer que esta conexión sea compatible con Adobe Experience Platform**. Si está seleccionado, haz clic en **Guardar** y continúa con [seleccionar filtros a nivel global](#select-global-level-filters).
+   5. Haz clic en **Guardar**.
 
    </Accordion>
 
    <div id="gcs-cloud-bucket-connection" />
 
-   <Accordion title="GCS cloud bucket connection">
+   <Accordion title="Conexión de bucket de GCS">
 
-   Before setting the GCS connection, create a bucket on GCS. To learn how see <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#gcs-storage">here</Anchor>.
+   Antes de configurar la conexión de GCS, crea un bucket en GCS. Para aprender cómo, haz clic <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#gcs-storage">aquí</Anchor>.
 
-   To set the connection:
+   Para establecer la conexión:
 
-   1. Enter your **GCS bucket name**.
-   2. Click **Test connection**.
-   3. Verify that an error message indicating that the bucket path is invalid isn't displayed.
-   4. Select whether to **Make this connection compatible with Adobe Experience Platform**. If selected, click **Save** and continue to [select global-level filters](#select-global-level-filters).
-   5. Click **Save**.
+   1. Introduce el **nombre de tu bucket de GCS**.
+   2. Haz clic en **Probar conexión**.
+   3. Verifica que no se muestre ningún mensaje de error que indique que la ruta del bucket es inválida.
+   4. Selecciona si deseas **hacer que esta conexión sea compatible con Adobe Experience Platform**. Si está seleccionado, haz clic en **Guardar** y continúa con [seleccionar filtros a nivel global](#select-global-level-filters).
+   5. Haz clic en **Guardar**.
 
    </Accordion>
 
    <div id="azure-cloud-bucket-connection" />
 
-   <Accordion title="Azure cloud bucket connection">
+   <Accordion title="Conexión de bucket de Azure">
 
-   Before setting the Azure connection, open a storage account in Azure. To learn how, see <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#beta--azure-storage">here</Anchor>.
+   Antes de configurar la conexión de Azure, abre una cuenta de almacenamiento en Azure. Para aprender cómo, haz clic <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#beta--azure-storage">aquí</Anchor>.
 
-   To set the connection:
+   Para establecer la conexión:
 
-   1. Enter your **Connection name**, **Storage account name**, and **Key**.
-   2. Verify that an error message indicating that the bucket path is invalid isn't displayed.
-   3. Select whether to **Make this connection compatible with Adobe Experience Platform**. If selected, click **Save** and continue to [select global-level filters](#select-global-level-filters).
-   4. Click **Save**.
+   1. Ingresa tu **nombre de conexión**, **nombre de cuenta de almacenamiento** y **clave**.
+   2. Verifica que no se muestre ningún mensaje de error que indique que la ruta del bucket es inválida.
+   3. Selecciona si deseas **hacer que esta conexión sea compatible con Adobe Experience Platform**. Si está seleccionado, haz clic en **Guardar** y continúa con [seleccionar filtros a nivel global](#select-global-level-filters).
+   4. Haz clic en **Guardar**.
 
    </Accordion>
 
    <div id="yandex-cloud-bucket-connection" />
 
-   <Accordion title="Yandex Cloud bucket connection">
+   <Accordion title="Conexión del bucket de Yandex Cloud">
 
-   Before setting the AWS connection, create a service account in Yandex. To learn how, see <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#yandex">here</Anchor>.
+   Antes de configurar la conexión de AWS, crea una cuenta de servicio en Yandex. Para aprender cómo, haz clic <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#yandex">aquí</Anchor>.
 
-   To set the connection:
+   Para establecer la conexión:
 
-   1. Enter your **Bucket name**, **Access key**, and **Secret key**.
-   2. Verify that an error message indicating that the bucket path is invalid isn't displayed.
-   3. Select whether to **Make this connection compatible with Adobe Experience Platform**. If selected, click **Save** and continue to [select global-level filters](#select-global-level-filters).
-   4. Click **Save**.
+   1. Ingresa tu **Nombre de bucket**, **Clave de acceso** y **Clave secreta**.
+   2. Verifica que no se muestre ningún mensaje de error que indique que la ruta del bucket es inválida.
+   3. Selecciona si deseas **hacer que esta conexión sea compatible con Adobe Experience Platform**. Si está seleccionado, haz clic en **Guardar** y continúa con [seleccionar filtros a nivel global](#select-global-level-filters).
+   4. Haz clic en **Guardar**.
 
    </Accordion>
 
    <div id="bigquery-data-warehouse-connection" />
 
-   <Accordion title="BigQuery data warehouse connection">
+   <Accordion title="Conexión de almacén de datos de BigQuery">
 
-   Before setting the BigQuery connection, create a dataset in BigQuery. To learn how, see <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#bigquery">here</Anchor>.
+   Antes de configurar la conexión de BigQuery, crea un conjunto de datos en BigQuery. Para aprender cómo, haz clic <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#bigquery">aquí</Anchor>.
 
-   To set the connection:
+   Para establecer la conexión:
 
-   1. Enter your BigQuery project ID and dataset name.
-   2. Click **Test connection**.
-   3. Verify that an error message indicating that the bucket path is invalid isn't displayed.
-   4. Click **Save** and continue to [select global-level filters](#select-global-level-filters).
+   1. Introduce tu ID de proyecto de BigQuery y el nombre del conjunto de datos.
+   2. Haz clic en **Probar conexión**.
+   3. Verifica que no se muestre ningún mensaje de error que indique que la ruta del bucket es inválida.
+   4. Haz clic en **Guardar** y continúa a [seleccionar filtros a nivel global](#select-global-level-filters).
 
    </Accordion>
 
    <div id="snowflake-data-warehouse-connection" />
 
-   <Accordion title="Snowflake data warehouse connection">
+   <Accordion title="Conexión de almacén de datos de Snowflake">
 
-   Before setting the Snowflake connection, open an account in Snowflake. To learn how, see <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#snowflake">here</Anchor>.
+   Antes de configurar la conexión de Snowflake, abre una cuenta en Snowflake. Para aprender cómo, haz clic <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#snowflake">aquí</Anchor>.
 
-   To set the connection:
+   Para establecer la conexión:
 
-   1. Enter your Snowflake region and account ID.
-   2. Click **Test connection**.
-   3. Verify that an error message indicating that the bucket path is invalid isn't displayed.
-   4. Click **Save** and continue to [select global-level filters](#select-global-level-filters).
+   1. Introduce tu región de Snowflake y tu ID de cuenta.
+   2. Haz clic en **Probar conexión**.
+   3. Verifica que no se muestre ningún mensaje de error que indique que la ruta del bucket es inválida.
+   4. Haz clic en **Guardar** y continúa a [seleccionar filtros a nivel global](#select-global-level-filters).
 
    </Accordion>
 
-6. Click **Save.** The **Report output settings section** is displayed.
+6. Haz clic en **Guardar. Se muestra** la sección **Configuración de salida del reporte**.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> You can [use the audit log](#track-connection-changes-in-the-audit-log) to confirm whether a connection was created, updated, or deleted, and who made the change.
+> Puedes [usar el registro de auditoría](#track-connection-changes-in-the-audit-log) para confirmar si se creó, actualizó o eliminó una conexión, y quién hizo el cambio.
 
 </Accordion>
 
 <div id="3-set-the-report-output-settings" />
 
-<Accordion title="3. Set the report output settings">
+<Accordion title="3. Configura las opciones de salida del reporte">
 
-After setting the connection with the cloud service, you can continue to set the general settings of your Data Locker reporting outputs. **If your cloud service is BigQuery or Snowflake, you can skip this step**.
+Después de configurar la conexión con el servicio en la nube, puedes continuar configurando las opciones generales de salida de reportes de tu Data Locker. **Si tu servicio en la nube es BigQuery o Snowflake, puedes omitir este paso**.
 
-1. Under the **Report output settings** section, select the folder structure ([data segregation](/docs/data-locker-for-marketers#app-segregation)):
-   * **Unified** (default): The report files include records from all the apps.
-   * **Segregated by app:** Each report file is dedicated to one app.
-2. Select the reports file format: Parquet (default) or CSV.
-3. Select the report's file compression type:
-   * Snappy (only available for Parquet files)
+1. Bajo la sección **Configuración de salida del reporte**, selecciona la estructura de carpetas ([segregación de datos](/docs/data-locker-for-marketers#app-segregation)):
+   * **Unificado** (predeterminado): Los archivos de reportes incluyen registros de todas las aplicaciones.
+   * **Segregados por aplicación:** Cada archivo de reporte está dedicado a una aplicación.
+2. Selecciona el formato de archivo de reportes: Parquet (predeterminado) o CSV.
+3. Selecciona el tipo de compresión de archivo del reporte:
+   * Snappy (solo disponible para archivos Parquet)
    * GZIP
-4. Select the maximum row number you want in your file: Either 10k, 25k, 50k, 100k, 200k, or 500k. More rows in the file mean fewer files but a larger file size.
+4. Selecciona el número máximo de filas que deseas en tu archivo: Ya sea 10k, 25k, 50, 100k, 200k o 500k. Más filas en el archivo significa menos archivos pero un tamaño de archivo más grande.
 
-   > 📘 **Note**
+   > 📘 **Nota**
    >
-   > Under **Expected path**, view the path patterns for your reports. Note: The real path may be different than what is displayed.
+   > Bajo **Ruta esperada**, visualiza los patrones de ruta para tus reportes. Nota: La ruta real puede ser diferente a la que se muestra.
 
 
 </Accordion>
 
 <div id="select-global-level-filters" />
 
-<Accordion title="4. Select global-level filters">
+<Accordion title="4. Selecciona filtros a nivel global">
 
-The global-level filters allow you to **filter your reports by apps, geo, or media sources**. These filters apply to most of the reports in your Data Locker account, but you can also set them at the report level (see [7-select-the-reportlevel-filters](#select-the-report-level-filters) below). If the same filter is applied on both levels, the report-level filter takes precedence.
+Los filtros a nivel global te permiten **filtrar tus reportes por aplicaciones o fuentes de medios**. Estos filtros se aplican a la mayoría de los reportes en tu cuenta de Data Locker, pero también puedes configurarlos a nivel de reporte (mira [7-select-the-reportlevel-filters](#select-the-report-level-filters) a continuación). Si el mismo filtro se aplica en ambos niveles, el filtro a nivel de reporte tiene prioridad.
 
-To apply a filter, perform the following:
+Para aplicar un filtro, realiza lo siguiente:
 
-1. In the **Reports** section, click the filter and select the items to include in the report. For example, click <Image alt="Untitled.png" src="https://files.readme.io/817568835d9f564c139dca673bf30f570f3f4984deb466b91509404b10634ef4-34623601353745.png" width="53px" /> the **Apps** filter and select the apps to include in the reports.
-2. Then click the Enter (⏎) button.
+1. En la sección **Reportes**, haz clic en el filtro y selecciona los elementos a incluir en el reporte. Por ejemplo, haz clic en <Image alt="Untitled.png" src="https://files.readme.io/817568835d9f564c139dca673bf30f570f3f4984deb466b91509404b10634ef4-34623601353745.png" width="53px" /> el filtro **Aplicaciones** y selecciona las aplicaciones a incluir en los reportes.
+2. Luego haz clic en el botón Enter (⏎).
 
 </Accordion>
 
 <div id="5-select-the-report" />
 
-<Accordion title="5. Select the report group">
+<Accordion title="5. Selecciona el grupo de reportes">
 
-Select the reports that you want to get in your cloud service. The reports are listed in groups. Clicking on the report group name expands or collapses the groups.
+Selecciona los reportes que deseas obtener en tu servicio en la nube. Los reportes se enumeran en grupos. Hacer clic en el nombre del grupo de reportes expande o colapsa los grupos.
 
-* To select a report, click <Image alt="down.png" src="https://files.readme.io/3f59bcc54434374270c0099394a740cc650a3b4a1be0f3f34d298be1ebcad40c-34623601355409.png" width="20px" /> to expand the report group. For each report in the group, the following information is presented:
-  * **Report Name:** The title of the report.
-  * **Dataset Name:** The name of the dataset that contains the report's records.
-  * **Data Freshness:** How often the report is updated with new records (e.g., hourly, daily, or versioned).
-  * **Fields:** the number of fields (or columns) that you selected for the report compared to the total number of fields available for selection.
+* Para seleccionar un reporte, haz clic en <Image alt="down.png" src="https://files.readme.io/3f59bcc54434374270c0099394a740cc650a3b4a1be0f3f34d298be1ebcad40c-34623601355409.png" width="20px" /> para expandir el grupo de reportes. Para cada reporte en el grupo, se presenta la siguiente información:
+  * **Nombre del reporte:** El título del reporte.
+  * **Nombre del conjunto de datos:** El nombre del conjunto de datos que contiene los registros del reporte.
+  * **Actualización de los datos:** Con qué frecuencia se actualiza el reporte con nuevos registros (por ejemplo, cada hora, diariamente o por versiones).
+  * **Campos:** el número de campos (o columnas) que has seleccionado para el reporte en comparación con el número total de campos disponibles para selección.
 
 </Accordion>
 
 <div id="customize-or-duplicate" />
 
-<Accordion title="6. Customize or duplicate the report">
+<Accordion title="6. Personaliza o duplica el reporte">
 
-After selecting one or more reports from a report group, you can choose to either **customize the original report** or **create a separate customized copy** by duplicating it. This allows you to tailor the report’s fields and filters to your specific needs without affecting the original version.
+Después de seleccionar uno o más reportes de un grupo de reportes, puedes optar por **personalizar el reporte original** o **crear una copia personalizada separada** duplicándolo. Esto te permite adaptar los campos y filtros del reporte a tus necesidades específicas sin afectar la versión original.
 
-**Option A: Customize the original report**
+**Opción A: Personaliza el reporte original**
 
-1. Click the <Image alt="customize.png" src="https://files.readme.io/35f4653b944cd5dc81c6de76f8dcacd9c3413ea49915ba2b5865a244ede3c4b6-35437232722833.png" width="20px" /> **Customize** button next to the report name.
-2. The report editor will open, allowing you to select fields and apply filters.
-3. Changes will be saved to the original report configuration.
+1. Haz clic en el botón **Personalizar** <Image alt="customize.png" src="https://files.readme.io/35f4653b944cd5dc81c6de76f8dcacd9c3413ea49915ba2b5865a244ede3c4b6-35437232722833.png" width="20px" /> junto al nombre del reporte.
+2. Se abrirá el editor de reportes, lo que te permitirá seleccionar campos y aplicar filtros.
+3. Los cambios se guardarán en la configuración del reporte original.
 
-*Note: This modifies how the report is delivered to your cloud storage.*
+*Nota: Esto modifica cómo se entrega el reporte a tu almacenamiento en la nube.*
 
-**Option B: Duplicate the report**
+**Opción B: Duplica el reporte**
 
-* Click <Image alt="Untitled 2.png" src="https://files.readme.io/b3792460554dedede76f7d78346490280d3bfe00d38696a04c6d8f6f283e0f20-34623592674321.png" width="5px" /> next to the report name.
-* Select <Image alt="duplicate2.png" src="https://files.readme.io/d8fbf09b3a8e3839f80a0a4fec90e0360dc1c2a4a066bf58438364c0d8a15c65-35439088509073.png" width="17px" /> **Duplicate** from the dropdown menu.
-* A copy of the report will be created, named with the prefix `copy_of_`.
-* The duplicated report opens in edit mode for further customization.
+* Haz clic en <Image alt="Untitled 2.png" src="https://files.readme.io/b3792460554dedede76f7d78346490280d3bfe00d38696a04c6d8f6f283e0f20-34623592674321.png" width="5px" /> junto al nombre del reporte.
+* Selecciona <Image alt="duplicate2.png" src="https://files.readme.io/d8fbf09b3a8e3839f80a0a4fec90e0360dc1c2a4a066bf58438364c0d8a15c65-35439088509073.png" width="17px" /> **Duplicar** del menú desplegable.
+* Se creará una copia del reporte, nombrada con el prefijo `copy_of_`.
+* El reporte duplicado se abre en modo de edición para una mayor personalización.
 
-*Tip: Duplicating is ideal for creating variations of a report for different use cases.*
+*Consejo: Duplicar es ideal para crear variaciones de un reporte para diferentes casos de uso.*
 
-After choosing whether to customize or duplicate, proceed to configure the report fields as described in the next step.
+Después de elegir si personalizar o duplicar, procede a configurar los campos del reporte como se describe en el siguiente paso.
 
 </Accordion>
 
 <div id="6-select-the-report-fields" />
 
-<Accordion title="7. Select the report fields">
+<Accordion title="7. Selecciona los campos del reporte">
 
-Once you’ve chosen to customize or duplicate a report, the next step is to define which data fields should be included. Each report provides a complete set of available fields, and you can customize your selection to include only what’s relevant for your analysis or integration. By default, all fields are selected, but you can refine the report by manually choosing specific ones.
+Una vez que hayas elegido personalizar o duplicar un reporte, el siguiente paso es definir qué campos de datos deben incluirse. Cada reporte proporciona un conjunto completo de campos disponibles, y puedes personalizar tu selección para incluir solo lo que es relevante para tu análisis o integración. Por defecto, todos los campos están seleccionados, pero puedes refinar el reporte eligiendo manualmente campos específicos.
 
-To select the fields to include in the report:
+Selecciona los campos que deseas incluir en el reporte:
 
-1. In the selected report dialog, under the **Fields** tab, hover over any field to view its description.
+1. En el cuadro de diálogo del reporte seleccionado, en la pestaña **Campos**, pasa el cursor sobre cualquier campo para ver su descripción.
 
    [![HQ1_2024-08-26_15.44.23.png](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)
-2. Check the fields you want to include in the report, or uncheck the fields you wish to exclude from the report.
-3. Click **Apply** to save your settings.
+2. Marca los campos que deseas incluir en el reporte, o desmarca los campos que deseas excluir del reporte.
+3. Haz clic en **Aplicar** para guardar tu configuración.
 
-**Copy field selection from another report**
+**Copiar selección de campo de otro reporte**
 
-You can copy the field selection from another report as a starting point and then continue to select or deselect fields to fine-tune the report.
+Puedes copiar la selección de campo de otro reporte como punto de partida y luego continuar seleccionando o deseleccionando campos para afinar el reporte.
 
-1. In the **Fields** tab, deselect any random field.
-2. Click **Pull schema from report**.
-3. Select the report you want to copy the field selection from.
-4. Continue to select or deselect fields.
-5. To restore the report's original field selection, click <Image alt="Untitled 4.png" src="https://files.readme.io/dda26e3d18c52049cf92d7862a87ce7a46e6a00c349afd70dfe6d1809e00b89e-34623601369361.png" width="15px" /> **Refresh**.
+1. En la pestaña **Campos**, deselecciona cualquier campo aleatorio.
+2. Haz clic en **Extraer esquema del reporte**.
+3. Selecciona el reporte del que deseas copiar la selección de campo.
+4. Continúa seleccionando o deseleccionando campos.
+5. Para restaurar la selección de campo original del reporte, haz clic en <Image alt="Untitled 4.png" src="https://files.readme.io/dda26e3d18c52049cf92d7862a87ce7a46e6a00c349afd70dfe6d1809e00b89e-34623601369361.png" width="15px" /> **Actualizar**.
 
 </Accordion>
 
 <div id="7-select-the-reportlevel-filters" />
 
-<Accordion title="8. Select the report-level filters">
+<Accordion title="8. Selecciona los filtros a nivel de reporte">
 
-The report-level filters enable you to **filter a single report by apps, media sources, or other dimensions**. You can also set filters that apply to all the reports in your account; see [select global-level filters](#select-global-level-filters). By default, the report-level filters are set to the global-level filter settings, but you can update them to custom settings that apply only to the selected report.
+Los filtros a nivel de reporte te permiten **filtrar un solo reporte por aplicaciones, fuentes de medios u otras dimensiones**. También puedes establecer filtros que se apliquen a todos los reportes en tu cuenta; consulta [seleccionar filtros a nivel global](#select-global-level-filters). Por defecto, los filtros a nivel de reporte están configurados a la configuración de filtros a nivel global, pero puedes actualizarlos a configuraciones personalizadas que se apliquen solo al reporte seleccionado.
 
-To select the filters to apply to a specified report:
+Para seleccionar los filtros que se aplicarán a un reporte específico:
 
-1. Hover on the specific report that you want to customize.
-2. Click <Image alt="Untitled 2.png" src="https://files.readme.io/b3792460554dedede76f7d78346490280d3bfe00d38696a04c6d8f6f283e0f20-34623592674321.png" width="6px" />  to open the actions menu, and select <Image alt="Untitled 3.png" src="https://files.readme.io/c27f864253e6749f883047b4529ad292153500db5aebd452568a6aa04407472e-34623601366033.png" width="20px" /> **Edit report**.
-3. Open the **Filters** tab. The filters are set to the global-level filter settings.
-4. Click the filter and select the items to include in the report. For example, click <Image alt="Untitled.png" src="https://files.readme.io/817568835d9f564c139dca673bf30f570f3f4984deb466b91509404b10634ef4-34623601353745.png" width="53px" /> the **Apps** filter and select the apps to include in the reports.
-5. Click the Enter (⏎) button. Your selection overrides the global-level settings.
-6. (Optional) For the **Inapps** report, you can set the **In-app event** filter. Enter their names exactly to select them.
-7. Click **Apply** to save your settings.
+1. Pasa el cursor sobre el reporte específico que deseas personalizar.
+2. Haz clic en <Image alt="Untitled 2.png" src="https://files.readme.io/b3792460554dedede76f7d78346490280d3bfe00d38696a04c6d8f6f283e0f20-34623592674321.png" width="6px" /> para abrir el menú de acciones y selecciona <Image alt="Untitled 3.png" src="https://files.readme.io/c27f864253e6749f883047b4529ad292153500db5aebd452568a6aa04407472e-34623601366033.png" width="20px" /> **Editar reporte**.
+3. Abre la pestaña **Filtros**. Los filtros están configurados en la configuración de filtro a nivel global.
+4. Haz clic en el filtro y selecciona los elementos para incluir en el reporte. Por ejemplo, haz clic en <Image alt="Untitled.png" src="https://files.readme.io/817568835d9f564c139dca673bf30f570f3f4984deb466b91509404b10634ef4-34623601353745.png" width="53px" /> el filtro **Aplicaciones** y selecciona las aplicaciones a incluir en los reportes.
+5. Haga clic en el botón Enter (⏎). Tu selección anula la configuración a nivel global.
+6. (Opcional) Para el reporte **Inapps**, puedes establecer el filtro **Evento in-app**. Introduce sus nombres con precisión para seleccionarlos.
+7. Haz clic en **Aplicar** para guardar tu configuración.
 
 </Accordion>
 
 <div id="8-remove-legacy-fields" />
 
-<Accordion title="9. Remove legacy fields">
+<Accordion title="9. Eliminar campos antiguos">
 
-Legacy fields are those that were previously included in the report schema but are now excluded. We recommend removing these fields to ensure your report contains only relevant information. Before making any changes, make sure that your workflows and integrations do not depend on them.
+Los campos heredados son aquellos que se incluyeron anteriormente en el esquema del reporte pero que ahora están excluidos. Recomendamos eliminar estos campos para asegurarte de que tu reporte contenga solo información relevante. Antes de realizar cualquier cambio, asegúrate de que tus flujos de trabajo e integraciones no dependan de ellos.
 
-**To remove specific legacy fields**
+**Para eliminar campos heredados específicos**
 
-1. Open the **Legacy fields** tab.
-2. Turn on: **Include legacy fields in the report**.
-3. Deselect the fields you want to exclude.
-4. Click **Apply**.
-5. Save the connection settings.
+1. Abra la pestaña **Campos antiguos**.
+2. Activar: **Incluir campos antiguos en el reporte**.
+3. Deselecciona los campos que deseas excluir.
+4. Haz clic en **Aplicar**.
+5. Guarda la configuración de conexión.
 
-**To remove all legacy fields:**
+**Para eliminar todos los campos antiguos:**
 
-1. Open the legacy fields tab.
-2. Turn off: **Include legacy fields in the report**.
+1. Abre la pestaña de campos heredados.
+2. Desactivar: **Incluir campos antiguos en el reporte**.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> If you want to include legacy fields in the report but can't because the legacy fields list is grayed out and locked, contact your Customer Success Manager.
+> Si deseas incluir campos antiguos en el reporte pero no puedes porque la lista de campos antiguos está atenuada y bloqueada, contacta a tu Customer Success Manager.
 
-#### Non-empty legacy fields
+#### Campos antiguos no vacíos
 
-Most legacy fields are empty or `null`. However, a few of them contain values but are still considered legacy because either:
+La mayoría de los campos antiguos están vacíos o `null`. Sin embargo, algunos de ellos contienen valores pero aún se consideran antiguos porque:
 
-* They appear in the report under a different name (renamed).
-* They were excluded from the report schema (deprecated).
+* Aparecen en el informe bajo un nombre diferente (renombrados).
+* Fueron excluidos del esquema del reporte (obsoleto).
 
-[Download the non-empty legacy fields list (CSV).](https://docs.google.com/spreadsheets/d/e/2PACX-1vRzJr2IgKTHKq_6IFX-PFFv6_89ixtlbGZ9RNH134TniGlWa_M-85D1L2E7LhzQrDjictnSnNNnN2mm/pub?output=csv)
+[Descargar la lista de campos antiguos no vacíos (CSV).](https://docs.google.com/spreadsheets/d/e/2PACX-1vRzJr2IgKTHKq_6IFX-PFFv6_89ixtlbGZ9RNH134TniGlWa_M-85D1L2E7LhzQrDjictnSnNNnN2mm/pub?output=csv)
 
 </Accordion>
 
 <div id="9-save-the-connection" />
 
-<Accordion title="10. Save the connection">
+<Accordion title="10. Guarda la conexión">
 
-Click **Save,** and the first data dump will be written to your cloud service within 3 hours. Subsequent data update schedules are specific to each report.
+Haz clic en **Guardar,** y la primera descarga de datos se escribirá en tu servicio en la nube en un plazo de 3 horas. Los calendarios de actualización de datos posteriores son específicos para cada reporte.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Any changes to Data Locker settings take up to 3 hours to take effect.
+> Todos los cambios en la configuración de Data Locker tardan hasta 3 horas en surtir efecto.
 
 </Accordion>
 
-## Set user permissions
+## Permisos de usuario
 
-Both **admins** and **team members**, with the correct permissions, can access Data Locker.
+Tanto los administradores como los miembros del equipo, con los permisos correctos, pueden acceder a Data Locker.
 
-* **Admins** can access the Data Locker page, create and manage all connections, add editors, and assign owners to existing connections.
-* **Team members** can access the Data Locker page, edit existing connections that they own, or create new connections. They **cannot** manage ownership (set the owner and editors), even if they are the account owners.
+* Los administradores pueden acceder a la página del Data Locker, crear y gestionar todas las conexiones, añadir editores y asignar propietarios a las conexiones existentes.
+* Los miembros del equipo pueden acceder a la página del Data Locker, editar las conexiones existentes que poseen o crear nuevas conexiones. No pueden gestionar la propiedad (establecer el propietario y editores), incluso si son los propietarios de la cuenta.
 
-### Manage Data Locker access and ownership (Admins)
+### Administradores
 
-#### Give Data Locker access
+#### ¡**Importante**! Si no tienes una suscripción a Data Locker y accedes al análisis de cohortes o a los datos de SKAN, debes completar igualmente un procedimiento de servicio de almacenamiento en la nube propio del marketer.
 
-* To provide a team member permission to access Data Locker, assign them a role with Data Locker set to **Manage**.
+* Para proporcionar a un miembro del equipo permiso para acceder a Data Locker, asígnale un <Anchor target="_blank" href="/marketers/es/docs/user-management#gestionar-roles">rol</Anchor> con **Data Locker** configurado en '**Administrar**'.
 
-#### Manage ownership and editors
+#### Gestionar la propiedad y los editores
 
-To transfer ownership or add a team member as an editor on an existing connection:
+Para transferir la propiedad o añadir a un miembro del equipo como editor en una conexión existente:
 
-1. Click the three-dot options menu <Image alt="3 dots icon.png" src="https://files.readme.io/9d3faf1888da216d8fba433a95952d8f749d2abc236c0888a1c8a9d68d35273e-32966274479633.png" width="1.18%" /> within the connection.
-2. Select **Manage ownership**.
-3. Change the connection owner or add an editor.
+1. Para transferir la propiedad o añadir a un miembro del equipo como editor en una conexión existente, haz clic en el menú de opciones <Image alt="3 dots icon.png" src="https://files.readme.io/a43c9bec16ef919203a2535aee8aa1f284fb3db7851d5e61245163fe2d8b08cb-22469580700177.png" width="1.18%" /> dentro de la conexión existente, y luego en **Gestionar propiedad** para cambiar el propietario de la conexión o añadir editores.
+2. **Nota**:
+3. Cambia el propietario de la conexión o añade un editor.
 
-#### Review filters after changing ownership
+#### Revisar los filtros después de cambiar la propiedad
 
-If you change the owner of a Data Locker connection to a user with data access restrictions (for example, limited by app, media source, agency, or country), existing [global-level](#select-global-level-filters) or [report-level filters](#7-select-the-reportlevel-filters) may be reset to match the new owner’s permissions.
+Si cambias el propietario de una conexión de Data Locker a un usuario con restricciones de acceso a los datos (por ejemplo, limitadas por aplicación, fuente de medios, agencia o país), los filtros existentes de [nivel global](#select-global-level-filters) o de [nivel de reporte](#7-select-the-reportlevel-filters) pueden restablecerse para ajustarse a los permisos del nuevo propietario.
 
-After transferring ownership, review the filters and confirm the connection reflects the intended data scope.
+Después de transferir la propiedad, revisa los filtros y confirma que la conexión refleje el alcance de datos previsto.
 
-For more information about data access restrictions, see <Anchor target="_blank" href="/marketers/docs/user-management#data-access">User management > Data access</Anchor>.
+<Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor>: Configurado por ti Debe tener el prefijo af-.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> In AF AWS connections, there is no **Manage ownership** option even for Admins, since only Admins can edit, delete, or create new AF AWS connections. This precaution is taken to prevent the exposure of the bucket credentials.
+> En las conexiones de AF AWS, no hay opción de **Gestionar propiedad** incluso para Administradores, ya que solo los Administradores pueden editar, eliminar o crear nuevas conexiones de AF AWS. Esta precaución se toma para evitar la exposición de las credenciales del bucket.
 
-## Data storage architecture
+## Arquitectura de almacenamiento de datos
 
-<div id="zd-overview" />
+<div id="overview" />
 
-<Accordion title="Overview">
+<Accordion title="Descripción general">
 
-The structure of your data in storage depends on whether the data is sent to cloud storage or a data warehouse. The folder structure described here applies to storage (buckets). For data warehouse storage, consider that the reference to folders applies to views.
+La estructura de tus datos en el almacenamiento depende de si los datos se envían al almacenamiento en la nube o a un almacén de datos. La estructura de carpetas descrita aquí se aplica al almacenamiento (buckets). En el caso del almacenamiento en almacén de datos, ten en cuenta que la referencia a las carpetas se aplica a las vistas.
 
-Data is written to your selected storage option. In the case of cloud storage, the storage is owned by AppsFlyer on AWS or owned by you on AWS, GCS, or Yandex. You can switch storage options at any time or send some or all of your data to multiple storage options.
+Los datos se escriben en la opción de almacenamiento seleccionada. En el caso del almacenamiento en la nube, el almacenamiento es propiedad de AppsFlyer en AWS o de tu propiedad en AWS, GCS o Yandex. Puedes cambiar de opción de almacenamiento en cualquier momento o enviar algunos o todos tus datos a varias opciones de almacenamiento.
 
-Data in the cloud bucket storage is organized in a hierarchical folder structure, according to report type, date, and time. The following figure contains an example of this structure:
+Los datos del almacenamiento en el bucket en la nube están organizados en una estructura jerárquica de carpetas, según el tipo de reporte, la fecha y la hora. La siguiente figura contiene un ejemplo de esta estructura:
 
-![DLFolderOVerview.png](https://files.readme.io/23dc197712aaf638706edf8323fdbc539f871ee34095b8f47a5a1824fe23f9f6-32966274471697.png)
+![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
 
-Data of a given report is contained in the hour (h) folders associated with that report:
+Los datos de un reporte determinado están incluidos en las carpetas de horas (h) asociadas con ese reporte:
 
-* The number of hour folders depends on the report data freshness (hourly, daily or versioned).
-* Data is provided in Snappy or GZIP compressed files, or uncompressed files, having Parquet or CSV format.
-* Data files consist of columns (fields).
-* The schema (field) structure of the <Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports#user-journey">user journey reports</Anchor> is identical to each other and depends on the fields selected by you. Other reports each have their own explicit fields, AKA schemaless reports. See <Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports#user-journey">Data Locker marketer reports</Anchor> for the reports available and links to the report specifications.
+* La cantidad de carpetas de horas depende de la actualización de los datos del reporte (por hora, por día o versionado).
+* Los datos se proporcionan en archivos comprimidos Snappy o GZIP, o en archivos sin comprimir, que tienen formato Parquet o CSV.
+* Los archivos de datos constan de columnas (fields).
+* La estructura del esquema (field) de los <Anchor target="_blank" href="/marketers/es/docs/data-locker-advertiser-reports#user-journey">reportes de la trayectoria del usuario</Anchor> es idéntica y depende de los campos seleccionados por ti. Otros reportes tienen cada uno sus propios campos explícitos, también conocidos como reportes sin esquema. Consulta <Anchor target="_blank" href="/marketers/es/docs/data-locker-advertiser-reports#user-journey">Reportes para marketers de Data Locker</Anchor> para ver los reportes disponibles y los enlaces a las especificaciones del reporte.
 
 </Accordion>
 
 <div id="folder-structure" />
 
-<Accordion title="Folder structure">
+<Accordion title="Estructura de carpetas">
 
-| Folder | Description |
+| Carpeta | Descripción |
 | --- | --- |
-| Subscription ID | <Image alt="DataLockerFolders.png" src="https://files.readme.io/0cda5728e48dab772878cad13ed3b81168f152e1bf01604ac45b700af804dd16-32966264039185.png" width="439px" /><ul><li>The top-level folder in the bucket depends on the storage owner and provider. In general, the top-level folder is your Subscription ID but in some cases, for example, if you use Cyberduck the ID is set in the bookmark and doesn't display in the folder structure.</li><li>The *data-locker-hourly* folder contains the report topics. Folders above this level depend on bucket ownership and cloud service provider.</li></ul>**Examples of folder structure based on bucket owner and cloud provider**<ul><li>**AppsFlyer bucket**: &lt;af-ext-reports>/&lt;unique\_identifier>/&lt;data-locker-hourly></li><li>**Your AWS bucket**: *&lt;af-datalocker-your bucket prefix>/&lt;generated-home-folder>&lt;subscription-id>*</li><li>**Your GCS bucket:** &lt;your bucket name>/&lt;generated-home-folder>/&lt;subscription-id></li></ul> |
-| Topic (t) | Report type relates to the subject matter of the report. |
-| Date (dt) | This is the related data date. In the case of raw data, it means the date the event occurred. In the case of aggregated data, the reporting date itself. |
-| Time (h or version) | Date folders are divided into **hourly (h)** or **version** folders depending on the report type.<br /><br />**<span id="hourly-folders"></span>Hourly folders**<br /><br />The h folders relate to the time the data was received by AppsFlyer. For example, install events received between 14:00-15:00 UTC are written to the h=14 file. Note! There is a delay, of about 1-3 hours, between the time the data arrives in AppsFlyer until the h folder is written to Data Locker. For example, the h=14 folder is written 1 hour later at 15:00 UTC.<br /><br />**Hourly folder characteristics**:<ul><li>There are 24 h folders numbered 0–23. For example, h=0, h=1, and so on.</li><li>A late folder, h=late, contains events of the preceding day arriving after midnight. Meaning events arriving during 00:00–02:00 UTC of the following day. For example, if a user installs an app on Monday 08:00 UTC and the event arrives on Tuesday 01:00 UTC, the event is written to Monday's late folder.</li><li>Data arriving after 02:00 UTC is written to the folder of the actual arrival date and time.</li><li>Ensure that data in the h=late folder is consumed. It isn't contained in any other folder.</li><li>\_temporary folder: In some cases, we generate a temporary folder within an h folder. Disregard temporary folders and subfolders. Example: /t=impressions/dt=2021-04-11/h=18/**\_temporary**.</li></ul>**Daily reports**<ul><li>Raw data reports having a daily data freshness are stored in the h=23 folder. The uninstall report is usually in the h=2 folder but can be in any folder.</li><li>Cohort and Incrementality reports are stored directly in the dt folder.</li><li>Versioned reports adhere to a different convention described in this section.</li></ul>**Hourly report considerations for apps that don't use UTC time.**<br /><br />To make sure that you get all the data for a given calendar day you must consume the folders according to the day defined by the app timezone as detailed:<ul><li>**Eastern hemisphere timezone**: To get all the data of a given calendar date you must consume folders according to UTC time and date. Example: Your app timezone is UTC+10 (Sydney, Australia). To get all the hourly data related to Tuesday (Sydney) you must consume the following folders: Monday h=14–23 and late, Tuesday h=0–13 and 14-15 Why must you consume Tuesday h=14-15? Some data can arrive late. So the h=14–15 folders can contain late-arriving events. You must filter event\_time to align with the app calendar day relative to UTC.</li><li>**Western hemisphere timezone:** To get all the data of a given calendar date you must consume folders according to UTC time and date. Example: Your app timezone is UTC- 7 (Los Angeles). To get all the hourly data related to Tuesday (Los Angeles) you must consume the following folders: Tuesday h=7–23 and late, Wednesday h=0–6 and 7-8. Why must you consume Wednesday h=7-8? Some data can arrive late. So the h=7–8 folders can contain late-arriving events. You must filter event\_time to align with the app calendar day relative to UTC.</li></ul>**<span id="version-folders"></span>Version folders**<br /><br />Some reports have a versioned option. This means that the most updated data for a given day is provided multiple times. Because data can continue to update due to late-arriving data or more accurate data the same report has multiple versions where the most recent version is the most accurate.<br /><br />The reports for a given day are contained in the versions folder of that day. Each version is contained in a separate folder whose name is set using an Epoch timestamp that uniquely identifies the report.<br /><br />Your data import processes must consider that data can be written retroactively. For example, on January 14, data can be written to the Jan 1 folder. If the bucket is owned by you, consider using cloud service notification to trigger your import process (<Anchor target="_blank" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/NotificationHowTo.html">AWS</Anchor> \| <Anchor target="_blank" href="https://cloud.google.com/storage/docs/pubsub-notifications">GCS</Anchor>) |
+| ID de suscripción | <Image alt="DataLockerFolders.png" src="https://files.readme.io/0cda5728e48dab772878cad13ed3b81168f152e1bf01604ac45b700af804dd16-32966264039185.png" width="439px" /><ul><li>La carpeta de nivel superior del bucket depende del propietario y proveedor del almacenamiento. En general, la carpeta de nivel superior es tu ID de suscripción, pero en algunos casos, por ejemplo, si utilizas Cyberduck, el ID se establece en el marcador y no se muestra en la estructura de carpetas.</li><li>La carpeta *data-locker-hourly* contiene los temas de los reportes. Las carpetas por encima de este nivel dependen de la propiedad del bucket y del proveedor de servicios en la nube.</li></ul>**Ejemplos de estructura de carpetas en función del propietario del bucket y el proveedor de la nube**<ul><li>**Bucket de AppsFlyer**: &lt;af-ext-reports>/&lt;unique\_identifier>/&lt;data-locker-hourly></li><li>**Tu bucket de AWS**: *&lt;af-datalocker-your bucket prefix>/&lt;generated-home-folder>&lt;subscription-id>*</li><li>**Tu bucket de GCS:** &lt;your bucket name>/&lt;generated-home-folder>/&lt;subscription-id></li></ul> |
+| Tema (t) | El tipo de reporte se relaciona con el asunto del reporte. |
+| Fecha (dt) | Esta es la fecha de los datos. En el caso de raw data, significa la fecha en que ocurrió el evento. En el caso de los datos agregados, la fecha del reporte en sí. |
+| Hora (h o version) | Las carpetas de fecha se dividen en carpetas **por hora (h)** o **por versión** según el tipo de reporte.<br /><br />**<span id="hourly-folders"></span>Carpetas por hora**<br /><br />Las carpetas h se relacionan con la hora en que AppsFlyer recibió los datos. Por ejemplo, los eventos de instalación recibidos entre las 14:00 y 15:00 UTC se escriben en el archivo h=14. ¡Atención! ¡Nota! Hay una demora, de aproximadamente 1 a 3 horas, entre el momento en que los datos llegan a AppsFlyer hasta que la carpeta h se escribe en Data Locker. Por ejemplo, la carpeta h=14 se escribe 1 hora después a las 15:00 UTC.<br /><br />**Características de las carpetas por hora**:<ul><li>Hay carpetas de 24 h numeradas del 0 al 23. Por ejemplo, h=0, h=1, etc.</li><li>La carpeta late (h=late) contiene eventos del día anterior que llegaron después de la medianoche. Es decir que llegan entre las 00:00–02:00 UTC del día siguiente. Por ejemplo, si un usuario instala una aplicación el lunes a las 08:00 UTC y el evento llega el martes a la 01:00 UTC, se registra en la carpeta late del lunes.</li><li>Los datos que llegan después de las 02:00 UTC se escriben en la carpeta de la fecha y hora de llegada reales.</li><li>Asegúrate de procesar los datos de la carpeta h=late. Estos datos no se encuentran en ninguna otra carpeta.</li><li>\_temporary folder: En algunos casos, generamos una carpeta temporal dentro de una carpeta h. Desestimar carpetas y subcarpetas temporales. Ejemplo: /t=impressions/dt=2021-04-11/h=18/**\_temporary**.</li></ul>**Reportes diarios**<ul><li>Los reportes de raw data que tienen una actualización diaria de los datos se almacenan en la carpeta h=23. El reporte de desinstalación suele estar en la carpeta h=2, pero puede estar en cualquier carpeta.</li><li>Los reportes de cohorte e incrementalidad se almacenan directamente en la carpeta dt.</li><li>Los reportes versionados se adhieren a una convención diferente descrita en esta sección.</li></ul>**Consideraciones de los reportes por hora para aplicaciones que no usan la hora UTC.**<br /><br />Para asegurarte de obtener todos los datos para un día determinado del calendario, debes procesar las carpetas de acuerdo con el día definido por la zona horaria de la aplicación como se detalla:<ul><li>**Zona horaria del hemisferio oriental**: Para obtener todos los datos de una fecha dada, debes consumir carpetas de acuerdo con la hora y la fecha UTC. Ejemplo: La zona horaria de tu aplicación es UTC+10 (Sídney, Australia). Para obtener todos los datos horarios relacionados con el martes (Sídney), debes consumir las siguientes carpetas: Lunes h=14–23 y late, Martes h=0–13 y 14-15 ¿Por qué debes usar Martes h=14-15? Algunos datos pueden llegar tarde. Algunos datos pueden llegar tarde. Por lo tanto, las carpetas h=14–15 pueden contener eventos retrasados. Debes filtrar event\_time para alinearlo con el día del calendario de la aplicación en relación con UTC.</li><li>**Zona horaria del hemisferio occidental:** Para obtener todos los datos de una fecha del calendario determinada, debes consumir las carpetas según la hora y la fecha en UTC. Ejemplo: La zona horaria de tu aplicación es UTC-7 (Los Ángeles). Para obtener todos los datos horarios relacionados con el martes (Los Ángeles), debes utilizar las siguientes carpetas: Martes h=7–23 y late, Miércoles h=0–6 y 7-8. ¿Por qué debes utilizar miércoles h=7-8? Algunos datos pueden llegar tarde. Algunos datos pueden llegar tarde. Por lo tanto, las carpetas h=7–8 pueden contener eventos retrasados. Debes filtrar event\_time para alinearlo con el día del calendario de la aplicación en relación con UTC.</li></ul>**<span id="version-folders"></span>Carpetas de versión**<br /><br />Algunos reportes tienen una opción versionada. Esto significa que los datos más actualizados para un día determinado se proporcionan varias veces. Dado que los datos pueden seguir actualizándose debido a datos retrasados o a datos más precisos, el mismo reporte tiene varias versiones en las que la versión más reciente es la más precisa.<br /><br />Los reportes de un día determinado se encuentran en la carpeta de versiones de ese día. Cada versión está contenida en una carpeta separada cuyo nombre se establece mediante una marca de tiempo Epoch que identifica el reporte de forma exclusiva.<br /><br />Tus procesos de importación de datos deben considerar que los datos pueden ser escritos retroactivamente. Por ejemplo, el 14 de enero, los datos se pueden escribir en la carpeta 1 de enero. Si el bucket es de tu propiedad, considera utilizar la notificación de servicio en la nube para activar tu proceso de importación (<Anchor target="_blank" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/NotificationHowTo.html">AWS</Anchor> \| <Anchor target="_blank" href="https://cloud.google.com/storage/docs/pubsub-notifications">GCS</Anchor>) |
 
 </Accordion>
 
 <div id="app-segregation" />
 
-<Accordion title="App segregation">
+<Accordion title="Segregación de apps">
 
-For bucket cloud storage, data is provided in unified data files containing the data of all apps selected or segregated into folders by app. The segregation is within the h folder as described in the table that follows.
+Para el almacenamiento en un bucket en la nube, los datos se proporcionan en archivos de datos unificados que contienen los datos de todas las aplicaciones seleccionadas o segregadas en carpetas por aplicación. La segregación está dentro de la carpeta h como se describe en la siguiente tabla.
 
-| Segregation type | Description |
+| Tipo de segregación | Descripción |
 | --- | --- |
-| [Default] Unified | Data for all apps are provided in unified data files. When consuming the data, use the row-level app\_id field to distinguish between apps.<br /><br />**Example of data files are in the h=2 folder**<br /><br />![UnifiedByApp.png](https://files.readme.io/45200b797b4e5e38982f2f795695517cbde9bce2658114ceb6a05edba6612213-32966274476049.png)<br /><br />The data file naming convention is unique\_id.gz.<ul><li>Your data loading process must:<ul><li>Load data after the \_SUCCESS flag is set.</li><li>Load all files in the folder having a *.gz* extension. Don't build your import process using part numbering logic.</li></ul></li></ul> |
-| Segregated by app | The folder contains subfolders per app. Data files for a given app are contained within the app folder. In the figure that follows, the h=19 folder contains app folders. Each app folder contains the associated data files. Note! The data files don't contain the app\_id you must determine the app\_id using the folder.<br /><br />![DLSegregateByApp.png](https://files.readme.io/90639507da82f7dafacfa5bfb67fa96a8277747cd0eee226d74498bf5ff16869-32966264040977.png)<br /><br />In each app folder the naming convention is unique\_id.gz:<ul><li>Your data loading process must:<ul><li>Load data after the \_SUCCESS flag is set.</li><li>Load all files in the folder having a *.gz* extension. Don't build your import process using part numbering logic.</li></ul></li></ul>Limitation: This option is not available for Peopled-Based Attribution reports. |
+| [Predeterminada] Unificada | Los datos de todas las aplicaciones se proporcionan en archivos de datos unificados. Al procesar los datos, utiliza el campo app\_id a nivel de fila para distinguir entre aplicaciones.<br /><br />**Ejemplos de archivos de datos que están en la carpeta h=2**<br /><br />![UnifiedByApp.png](https://files.readme.io/dbc39c2ce99c1ff607fd553b9c9034e55728c102f31fd18a501cc00910267b28-18107874522513.png)<br /><br />La convención de nomenclatura de archivos de datos es unique\_id.gz.<ul><li>El proceso de carga de datos debe:<ul><li>Cargar datos después de que se establezca el indicador \_SUCCESS.</li><li>Carga todos los archivos de la carpeta con una extensión *.gz.* No crees tu proceso de importación utilizando la lógica de numeración de piezas.</li></ul></li></ul> |
+| Segregado por aplicación | La carpeta contiene subcarpetas por aplicación. Los archivos de datos de una aplicación determinada se encuentran dentro de la carpeta de la aplicación. En la siguiente figura, la carpeta h=19 contiene carpetas de aplicaciones. Cada carpeta de aplicación contiene los archivos de datos asociados. ¡Atención! ¡Nota! Los archivos de datos no contienen el app\_id, debes determinar el app\_id mediante la carpeta.<br /><br />![DLSegregateByApp.png](https://files.readme.io/90639507da82f7dafacfa5bfb67fa96a8277747cd0eee226d74498bf5ff16869-32966264040977.png)<br /><br />En cada carpeta de la aplicación, la convención de nomenclatura es: unique\_id.gz:<ul><li>El proceso de carga de datos debe:<ul><li>Cargar datos después de que se establezca el indicador \_SUCCESS.</li><li>Carga todos los archivos de la carpeta con una extensión *.gz.* No crees tu proceso de importación utilizando la lógica de numeración de piezas.</li></ul></li></ul>Limitación: Esta opción no está disponible para los reportes de la atribución peopled-based. |
 
 </Accordion>
 
 <div id="data-files" />
 
-<Accordion title="Data files">
+<Accordion title="Archivos de datos">
 
-Data files depend on segregation type.
+Los archivos de datos dependen del tipo de segregación.
 
-<table><thead><tr><th>Content</th><th colspan="2">Details</th></tr></thead><tbody><tr><td>Completion flag</td><td colspan="2"><p>The last file (completion) flag is set when all the data for a given h folder has been written. </p><ul><li>Don't read data in a folder before verifying that the _SUCCESS flag exists.</li><li>The _SUCCESS flag is set even in cases where there is no data to write to a given folder and the folder is empty.</li><li>Note! In the segregation by app option, the flag is set in the h folder and not the individual app folders. See the figures in the previous section. </li></ul></td></tr><tr><td>File types</td><td colspan="2"><ul><li>Data is provided in Snappy or GZIP compressed files, or uncompressed files, having Parquet or CSV format.</li><li>After unzipping, the data files are in Parquet or CSV format according to your settings.</li></ul></td></tr><tr><td>Column sequence (CSV files) </td><td colspan="2"><p>In the case of CSV files, the sequence of fields in reports is always the same. When we add new fields these are added to the right of the existing fields. </p><p>In this regard: </p><ul><li>The column structure of user journey reports is identical. This means you can have similar data-loading procedures for different report types. You select the fields contained in the reports. The field meaning is detailed in the <a href="./raw-data-field-dictionary" target="_blank">raw data dictionary</a>.</li><li>Reports having an FF notation in the report availability section don't adhere to the common column structure. </li></ul></td></tr><tr><td>Field population considerations</td><td colspan="2"><p><strong>Blank or empty fields:</strong> Some fields are populated with <em>null</em> or are empty. This means that in the context of a given report there is no data to report. Typically <em>null</em> means this field is not populated in the context of a given report and app type. Blank "" means the field is relevant in its context but no data was found to populate it with. </p><p>In the case of the restricted media source, the content of restricted fields is set to null. </p><p>Overall regard null and blank as one and the same thing; there is no data available. </p><p><strong>Time zone and currency</strong></p><p>App-specific time zone and currency settings have no effect on data written to Data Locker. The following apply: </p><ul><li><strong>Time zone</strong>: Date and hour data are in UTC.</li><li><strong>Currency</strong>: The field event_revenue_usd is in USD.</li></ul><p><strong>Values with commas</strong>: These commas are contained between double quotes `"`, for example, <code>`"iPhone6,1"`</code>.</p></td></tr></tbody></table>
+<table><thead><tr><th>Contenido</th><th colspan="2">Detalles</th></tr></thead><tbody><tr><td>Indicador de finalización</td><td colspan="2"><p>El indicador de último archivo (finalización) se establece cuando se han escrito todos los datos de una carpeta h determinada. </p><ul><li>No leas datos en una carpeta antes de verificar que tiene el indicador _SUCCESS.</li><li>El indicador _SUCCESS se configura incluso en los casos en que no hay datos para escribir en una carpeta determinada y la carpeta está vacía.</li><li>¡Atención! ¡Nota! En la opción de segregación por aplicación, el indicador se configura en la carpeta h y no en las carpetas individuales de las aplicaciones. Consulta las figuras de la sección anterior. </li></ul></td></tr><tr><td>Tipos de archivo</td><td colspan="2"><ul><li>Los datos se proporcionan en archivos comprimidos Snappy o GZIP, o en archivos sin comprimir, que tienen formato Parquet o CSV.</li><li>Después de descomprimir, los archivos de datos están en formato Parquet o CSV de acuerdo con tu configuración.</li></ul></td></tr><tr><td>Secuencia de columnas (archivos CSV) </td><td colspan="2"><p>En el caso de los archivos CSV, la secuencia de campos en los reportes es siempre la misma. Cuando agregamos campos nuevos, estos se agregan a la derecha de los campos existentes. </p><p>En este sentido: </p><ul><li>La estructura de columnas de los reportes del viaje del usuario es idéntica. Esto significa que puedes tener procedimientos de carga de datos similares para diferentes tipos de reportes. Selecciona los campos contenidos en los reportes. El significado del campo se detalla en el <a href="./raw-data-field-dictionary" target="_blank">diccionario de raw data</a>.</li><li>Los reportes que tienen una notación FF en la sección de disponibilidad del reporte no se adhieren a la estructura de columnas común. </li></ul></td></tr><tr><td>Consideraciones del relleno de campos</td><td colspan="2"><p><strong>Campos en blanco o vacíos:</strong> Algunos campos se completan con <em>null</em> o están vacíos. Esto significa que en el contexto de un reporte determinado no hay datos para reportar. Normalmente, <em>null</em> (nulo) significa que este campo no se completa en el contexto de un reporte y tipo de aplicación determinados. Blank "" (en blanco) significa que el campo es relevante en su contexto, pero no se encontraron datos para completarlo. </p><p>Si la fuente de medios está restringida, el contenido de los campos restringidos se establece en null. </p><p>En general, se considera null y blank como un único producto; no hay datos disponibles. </p><p><strong>Zona horaria y moneda</strong></p><p>La configuración de la zona horaria y divisa específicas de la aplicación no afecta los datos en Data Locker. Aplican las siguientes condiciones: </p><ul><li> <strong>Zona horaria</strong>: La fecha y la hora están en UTC.</li><li> <strong>Moneda</strong>: El campo event_revenue_usd está en USD.</li></ul><p><strong>Valores con comas</strong>: Estas comas están contenidas entre comillas dobles "", por ejemplo, <code>`"iPhone6,1"`</code>.</p></td></tr></tbody></table>
 
 </Accordion>
 
 <div id="storage-options" />
 
-<Accordion title="Storage options">
+<Accordion title="Opciones de almacenamiento">
 
-> ❗️ **Caution!**
+> ❗️ **¡Importante!**
 >
-> If you are using the marketer-owned storage option:
+> Si utilizas la opción de almacenamiento propia del marketer:
 >
-> * Verify that you comply with data privacy regulations like GDPR and ad network/SRN data retention policies.
-> * Don't use the marketer-owned storage solution to send data to third parties.
+> * Asegúrate de cumplir con las regulaciones de privacidad de datos como el GDPR y las políticas de retención de datos de ad network/SRN.
+> * No utilices la solución de almacenamiento propia del marketer para enviar datos a terceros.
 
-* Data is written to a storage owner of your choice as follows:
-  * AppsFlyer storage
-  * Customer storage—AWS, GCS, Azure, Yandex, BigQuery, and Snowflake
-* You can change the storage selection at any time.
-* If you change the storage, the following happens:
-  * We start writing to the newly selected storage within one hour.
-  * We continue writing to the existing storage during a transition period of 7 days. The transition period expiry time displays in the user interface. Use the transition period to update your data loading processes. You can restart the transition period or revert to the AppsFlyer bucket if needed.
-  * **Changing storage**: You can migrate from one storage option to another by using the multi-storage option and sending data to multiple destinations simultaneously. Once you have completed the migration and testing, delete the storage option you no longer need.
+* Los datos se escriben en un propietario de almacenamiento de tu elección de la siguiente manera:
+  * Almacenamiento de AppsFlyer
+  * Almacenamiento de clientes: AWS, GCS, Azure, Yandex, BigQuery y Snowflake
+* Puedes cambiar la selección del almacenamiento en cualquier momento.
+* Si cambias el almacenamiento, ocurre lo siguiente:
+  * Comenzamos a escribir en el almacenamiento recién seleccionado en una hora.
+  * Seguimos escribiendo en el almacenamiento existente durante un período de transición de 7 días. El tiempo de vencimiento del período de transición se muestra en la interfaz de usuario. Usa el período de transición para actualizar tus procesos de carga de datos. Puedes reiniciar el período de transición o volver al bucket de AppsFlyer si es necesario.
+  * **Cambio de almacenamiento**: Puedes migrar de una opción de almacenamiento a otra utilizando la opción de almacenamiento múltiple y enviando datos a varios destinos simultáneamente. Una vez que hayas completado la migración y las pruebas, elimina la opción de almacenamiento que ya no necesitas.
 
-|  | AppsFlyer-owned storage (AWS) | Marketer-owned storage (GCS, AWS, Azure, Yandex, BigQuery, Snowflake) |
+|  | Almacenamiento propio de AppsFlyer (AWS) | Almacenamiento propio del marketer (GCS, AWS, Azure, Yandex, BigQuery, Snowflake) |
 | --- | --- | --- |
-| Bucket name | Set by AppsFlyer | <ul><li><Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor>: No restriction</li><li><Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor>: Set by you. Must have the prefix af-.</li></ul>Example: `af-datalocker-your-bucket-name` |
-| Storage ownership | AppsFlyer | Marketer |
-| Storage platform | AWS | AWS, GCS, Azure, Yandex, BigQuery, Snowflake |
-| Credentials to access data by you | Available in the Data Locker user interface to your AppsFlyer account admins | Not known to AppsFlyer. Use credentials provided by the cloud provider. |
-| Data retention | Data is deleted after 14 days | Marketer responsibility |
-| Data deletion requests | AppsFlyer responsibility | Marketer responsibility |
-| Security | AppsFlyer controls the storage. The customer has read access. | The marketer controls the storage.<ul><li>**AWS**: AppsFlyer requires GetObject, ListBucket, DeleteObject, PutObject permission to the bucket. The bucket should be dedicated to AppsFlyer use. Don't use it for other purposes.</li><li>**GCS**: See <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup">GCS configuration article</Anchor>.</li></ul> |
-| Storage capacity | Managed by AppsFlyer | Managed by the marketer |
-| Access control using VPC endpoints with bucket policies | Not Applicable | [Optional] In AWS, if you implement VPC endpoint security at the bucket level, you must allowlist AppsFlyer servers. |
+| Nombre del bucket | Configurado por AppsFlyer | <ul><li><Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor>: Sin restricción</li><li><Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor>: configurado por ti. Debe tener el prefijo af-.</li></ul>Ejemplo: `af-datalocker-your-bucket-name` |
+| Almacenamiento propio | AppsFlyer | Comercializador |
+| Plataforma del almacenamiento | AWS | AWS, GCS, Azure, Yandex, BigQuery, Snowflake |
+| Credenciales para que accedas a los datos | Disponible en la interfaz de usuario de Data Locker para los administradores de tu cuenta de AppsFlyer | AppsFlyer no las conoce. Usa las credenciales proporcionadas por el proveedor de la nube. |
+| Retención de datos | Los datos se eliminan después de 14 días | Responsabilidad del marketer |
+| Solicitudes de eliminación de datos | Responsabilidad de AppsFlyer | Responsabilidad del marketer |
+| Seguridad | AppsFlyer controla el almacenamiento. El cliente tiene acceso de lectura. | El marketer controla el almacenamiento.<ul><li>**AWS**: AppsFlyer requiere permiso de GetObject, ListBucket, DeleteObject, PutObject para el bucket. El uso del bucket debe ser exclusivo de AppsFlyer. No lo uses para otros fines.</li><li>**GCS**: Consulta el <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup">artículo de configuración de GCS</Anchor>.</li></ul> |
+| Capacidad de almacenamiento | Gestionado por AppsFlyer | Gestionado por el marketer |
+| Control de acceso mediante puntos de conexión de VPC con políticas de bucket | No aplicable | [Opcional] En AWS, si implementas la seguridad de punto de conexión de VPC a nivel bucket, debes agregar a la lista los servidores de AppsFlyer. |
 
-#### **Notice to security officers in the case of customer-controlled storage**
+#### **Aviso a los agentes de seguridad en el caso de almacenamiento controlado por el cliente**
 
-Consider:
+Ten en cuenta lo siguiente:
 
-* The bucket or destination is for the sole use of AppsFlyer. There should be no other entity writing to a given destination.
-* You can delete data in the destination 25 hours after we write the data.
-* Data written to the destination is a copy of data already in our servers. The data continues to be in our servers in accordance with our retention policy.
-* For technical reasons, we sometimes delete and rewrite the data. For this reason, we need delete and list permissions. Neither permissions are a security risk for you. In the case of list, we are the sole entity writing to the bucket. In the case of delete, we are able to regenerate the data.
-* For additional information, you can contact our security team via [hello@appsflyer.com](mailto:hello@appsflyer.com) or your CSM.
+* El bucket o destino es para uso exclusivo de AppsFlyer. No debe haber ninguna otra entidad que escriba a un destino determinado.
+* Puedes eliminar datos en el destino 25 horas después de que escribamos los datos.
+* Los datos escritos en el destino son una copia de los datos que ya están en nuestros servidores. Los datos continúan estando en nuestros servidores de acuerdo con nuestra política de retención.
+* Por razones técnicas, a veces eliminamos y reescribimos los datos. Por esta razón, necesitamos permisos de eliminación y listado. Ningún permiso es un riesgo de seguridad para ti. En el caso de la lista, somos la única entidad que escribe en el bucket. En el caso de eliminar, podemos regenerar los datos.
+* Para más información, puedes contactar con nuestro equipo de seguridad a través de [hello@appsflyer.com](mailto:hello@appsflyer.com) o a tu CSM.
 
 </Accordion>
 
 <div id="multipleconnections-principles-more-than-one-destination" />
 
-<Accordion title="Multiple-connections principles (more than one destination)">
+<Accordion title="Principios de las conexiones múltiples (más de un destino)">
 
-In Data Locker you can send some or all of your data to 2 destinations (defined in the connection settings). For example, you can send App A data to AWS, and App B data to GCS.
+En Data Locker, puedes enviar algunos o todos tus datos a 2 destinos (definidos en la configuración de la conexión). Por ejemplo, puedes enviar los datos de la aplicación A a AWS y los de la aplicación B a GCS.
 
-Each connection consists of a complete set of Data Locker settings, including a destination. Connection settings are independent of one another.
+Cada conexión consiste en un conjunto completo de configuraciones de Data Locker, incluido un destino. Las configuraciones de las conexiones son independientes entre sí.
 
-In managing your connections, consider:
+Al administrar tus conexiones, ten en cuenta lo siguiente:
 
-* In Data Locker settings, connections are shown in tabs. Each connection has its own settings tab from which you can manage the connection. The icon of each tab represents the storage type.
-* To see connection details, duplicate a connection, or delete a connection, click ⋮ (options).
+* En la configuración de Data Locker, las conexiones se muestran en pestañas. Cada conexión tiene su propia pestaña de configuración desde la que puedes administrar la conexión. El icono de cada pestaña representa el tipo de almacenamiento.
+* Para ver los detalles de la conexión, duplicar una conexión o eliminar una conexión, haz clic en ⋮ (opciones).
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="track-connection-changes-in-the-audit-log" />
 
-<Accordion title="Track connection changes in the audit log">
+<Accordion title="Realiza un seguimiento de los cambios de conexión en el registro de auditoría">
 
-You can view Data Locker connection changes in the Audit log, available from the Security center in the AppsFlyer dashboard. Use the audit log to confirm whether a change was made, when it occurred, and who made it. This can help resolve issues like missing data or unexpected connection changes without needing to contact support.
+Puedes ver los cambios de conexión del Data Locker en el registro de auditoría, disponible desde el centro de seguridad en el dashboard de AppsFlyer. Utiliza el registro de auditoría para confirmar si se realizó un cambio, cuándo ocurrió y quién lo hizo. Esto puede ayudar a resolver problemas como datos faltantes o cambios de conexión inesperados sin necesidad de contactar al soporte.
 
-The following connection lifecycle events are tracked:
+Se rastrean los siguientes eventos del ciclo de vida de la conexión:
 
-* New connection created
-* Connection updated
-* Connection disabled
-* Connection deleted
+* Nueva conexión creada
+* Conexión actualizada
+* Conexión deshabilitada
+* Conexión eliminada
 
-**To access the audit log:**
+**Para acceder a Audit log:**
 
-1. In the top navigation bar, open <Image alt="HQ1 2025-05-05 10.48.04.png" src="https://files.readme.io/b7020f3b633fb66e0e2d4988c7903426509b1fa871693cee602a39b8eb9d69d1-34955489919889.png" width="4.24%" />  the account menu.
-2. Select **Security center**.
-3. In the **Audit log** section, click **View audit** log.
-4. Filter by Service: **Datalocker** to view related entries.
+1. En la barra de navegación superior, abre el menú de cuenta <Image alt="HQ1 2025-05-05 10.48.04.png" src="https://files.readme.io/b7020f3b633fb66e0e2d4988c7903426509b1fa871693cee602a39b8eb9d69d1-34955489919889.png" width="4.24%" />.
+2. Selecciona **Centro de seguridad**.
+3. En la sección **Audit log**, haz clic en **Ver audit log.**
+4. Filtrar por servicio: **Datalocker** para ver entradas relacionadas.
 
-For more information see: <Anchor target="_blank" href="/marketers/docs/audit-log">Audit log.</Anchor>
+Para más información, consulta: <Anchor target="_blank" href="/marketers/es/docs/audit-log">Audit log.</Anchor>
 
 </Accordion>
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and Limitations">
+<Accordion title="Características y limitaciones">
 
-| **Trait** | Remarks |
+| **Caducado** | Observaciones |
 | --- | --- |
-| Ad networks | Not for use by ad networks |
-| Agencies | Not for use by agencies |
-| App-specific time zone | Not Applicable. Data Locker folders are divided into hours using UTC. The actual events contain times in UTC. Convert the times to any other time zone as needed. Irrespective of your app time-zone the delay from event occurrence until it is recorded in Data Locker remains the same. |
-| App-specific currency | Not supported |
-| Size limitations | Not applicable |
-| Data freshness | Data is updated according to the specific report data freshness detailed in <Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports#raw-data-reports">this article</Anchor>. |
-| Historical data | Not supported. If you need historical data, some reports, but not all, are available via Pull API. |
-| Restricted data | Fields in some reports are restricted due to privacy limitations. <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">Learn more</Anchor> |
-| User access | Only <Anchor target="_blank" href="/marketers/docs/user-management">account users with required permissions</Anchor> can configure Data Locker. |
-| Single app/multiple app | Multi-app support. Data Locker is at the account level |
-| Maximum connections | By default, each account can open up to **2 Data Locker connections**. To request additional connections, **contact your CSM**. |
+| Redes publicitarias | No apto para el uso por parte de ad networks |
+| Agencias | No apto para el uso por parte de agencias. |
+| Zona horaria específica de la aplicación | No corresponde. Las carpetas de Data Locker se dividen en horas usando UTC. Los eventos reales contienen horarios en UTC. Convierte los horarios a cualquier otra zona horaria según sea necesario. Independientemente de la zona horaria de tu aplicación, el lapso desde que ocurre el evento hasta que se registra en Data Locker sigue siendo el mismo. |
+| Moneda específica de la aplicación | No compatible |
+| Limitaciones de tamaño | No corresponde |
+| Actualización de los datos | Los datos se actualizan de acuerdo con la actualización específica de los datos del reporte que se detalla en <Anchor target="_blank" href="/marketers/es/docs/data-locker-advertiser-reports#reportes-de-raw-data">este artículo</Anchor>. |
+| Datos históricos | No se admiten. Si necesitas datos históricos, algunos reportes, pero no todos, están disponibles a través de Pull API. |
+| Datos restringidos | Los campos en algunos reportes están restringidos debido a limitaciones de privacidad. <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">Saber más</Anchor> |
+| Acceso de usuario | Solo los <Anchor target="_blank" href="/marketers/es/docs/user-management">usuarios de la cuenta con los permisos necesarios</Anchor> pueden configurar Data Locker. |
+| Aplicación única/múltiples aplicaciones | Admite múltiples aplicaciones. Data Locker está a nivel de cuenta |
+| Conexiones máximas | Por defecto, cada cuenta puede abrir hasta **2 conexiones de Data Locker**. Para solicitar conexiones adicionales, **contacta con tu CSM**. |
 
 </Accordion>
 
 <div id="troubleshooting" />
 
-<Accordion title="Troubleshooting">
+<Accordion title="Resolución de problemas">
 
-* **Symptom**: Unable to retrieve data using AWS CLI
-* **Error message**: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
-* **Cause**: The AWS credentials being used are not the correct credentials for the AppsFlyer bucket. This can be caused by having multiple or invalid credentials on your machine.
-* **Solution**:
-  1. Use a different method, like [Cyberduck](/docs/data-locker-for-marketers#cyberduck) to access the bucket, meaning not the CLI. Do this to verify that the credentials you are using are working. If you are able to connect using Cyberduck, this indicates an issue with the credentials cache.
-  2. <Anchor target="_blank" href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html">Refresh the AWS credentials cache</Anchor>.  
-     **Screenshot from AWS** ![mceclip0.png](https://files.readme.io/e6608b196c39cb71e0a02e0eabe95378f24659a1578a16fd381bfd0053ca309e-32966264043537.png)
+* **Síntoma**: No se pueden recuperar datos con AWS CLI
+* **Mensaje de error**: Ocurrió un error (AccessDenied) al llamar a la operación ListObjectsV2: Acceso denegado
+* **Causa**: Las credenciales de AWS que se utilizan no son las credenciales correctas para el bucket de AppsFlyer. Esto puede ser causado por tener credenciales múltiples o inválidas en tu máquina.
+* **Solución**:
+  1. Utiliza un método diferente, como [Cyberduck](/docs/data-locker-for-marketers#cyberduck), para acceder al bucket, es decir, que no sea CLI. Haz esto para verificar que las credenciales que estás utilizando funcionen. Si puedes conectarte con Cyberduck, esto indica un problema con el caché de credenciales.
+  2. <Anchor target="_blank" href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html">Actualiza el caché de credenciales de AWS</Anchor>.  
+     **Captura de pantalla de AWS** ![mceclip0.png](https://files.readme.io/e6608b196c39cb71e0a02e0eabe95378f24659a1578a16fd381bfd0053ca309e-32966264043537.png)
 
 </Accordion>
 
-## AWS data retrieval
+## Recuperación de datos de AWS
 
-Use your preferred AWS data retrieval tool, AWS CLI, or one of the tools described in the sections that follow. Note! The exact instructions are suitable for AppsFlyer owned buckets. Adjust the instructions as needed if you are connecting to your bucket.
+Utiliza tu herramienta de recuperación de datos de AWS preferida, AWS CLI, o una de las herramientas descritas en las secciones a continuación. ¡Atención! ¡Nota! Las instrucciones exactas son adecuadas para los buckets de propiedad de AppsFlyer. Adapta las instrucciones según sea necesario si la conexión es a tu bucket.
 
 <div id="aws-cli" />
 
 <Accordion title="AWS CLI">
 
-**Before you begin**:
+Antes de comenzar:
 
-* Install the AWS CLI on your computer.
-* In AppsFlyer, go to Data Locker, and retrieve the information contained in the credentials panel.
+* Instala AWS CLI en tu computadora.
+* En AppsFlyer, accede a Data Locker y recupera la información incluida en el panel de credenciales.
 
-**To use AWS CLI**:
+**Para usar AWS CLI**:
 
-1. Open the terminal. To do so in Windows, &lt;Windows>+&lt;R>, click **OK**.  
-   The command line window opens.
-2. Enter **aws configure.**
-3. Enter the AWS Access Key as it appears in the credentials panel.
-4. Enter your AWS Secret Key as it appears in the credentials panel.
-5. Enter **eu-west-1.**
-6. Press Enter (None).
+1. Abre la terminal. Para hacerlo en Windows, &lt;Windows>+&lt;R>, haz clic en **Aceptar**.  
+   Se abre la ventana de línea de comando.
+2. Ingresa **aws configure.**
+3. Ingresa la clave de acceso de AWS tal como aparece en el panel de credenciales.
+4. Ingresa tu clave secreta de AWS tal como aparece en el panel de credenciales.
+5. Ingresa **eu-west-1.**
+6. Presiona Enter.
 
-Use the CLI commands that follow as needed.
+Usa los comandos de CLI que siguen según sea necesario.
 
-In the following commands, the value of `{home-folder}` can be found
+En los siguientes comandos, el valor de `{home-folder}` se puede encontrar
 
-**To list folders in your bucket:**
+**Para enumerar carpetas en tu bucket:**
 
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/
 ```
 
-### Listing files and folders
+### Enumeración de archivos y carpetas
 
-There are three types of folders in your Data Locker bucket:
+Hay tres tipos de carpetas en tu bucket de Data Locker:
 
-* Report Type `t=`
-* Date `dt=`
-* Hour `h=`
+* Tipo de reporte `t=`
+* Fecha `dt=`
+* Hora `h=`
 
-To list all the reports of a specific report type:
+Para enumerar todos los reportes de un tipo de reporte específico:
 
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/t=installs/
 ```
 
-To list all the reports of a specific report type for a specific day:
+Para enumerar todos los reportes de un tipo de reporte específico para un día específico:
 
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/t=installs/dt=2019-01-17
 ```
 
-To list all the reports of a specific report, in a specific hour of a specific day:
+Para enumerar todos los reportes de un tipo de reporte específico en un hora específica para un día específico:
 
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/t=installs/dt=2019-01-17/h=23
 ```
 
-To download files for a specific date:
+Para descargar archivos para una fecha específica:
 
 ```bash
 aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=2020-08-01/h=9/part-00000.gz ~/Downloads/
@@ -645,60 +644,60 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 
 <Accordion title="Cyberduck">
 
-**Before you begin**:
+Antes de comenzar:
 
-* Install the Cyberduck client.
-* In AppsFlyer, go to Data Locker and retrieve the information contained in the credentials panel.
+* Instala el cliente Cyberduck.
+* En AppsFlyer, accede a Data Locker y recupera la información incluida en el panel de credenciales.
 
-**To configure Cyberduck**:
+**Para configurar Cyberduck**:
 
-1. In Cyberduck, click Action.
-2. Select **New Bookmark**. The window opens.
-3. In the first field (marked [1] in the screenshot below) select **Amazon S3.** [![DataDuckSmall2.png](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)
-4. Complete the fields as follows:
-   * **Nickname:** Free text
-   * **Server:** s3.amazonaws.com
-   * **Access Key ID:** Copy the AWS Access Key as it appears in the credentials panel in AppsFlyer
-   * **Secret Access Key:** Copy the Bucket Secret key as it appears in the credentials panel in AppsFlyer.
-   * **Path**: `{Bucket Name}/{Home Folder}` For example: **af-ext-reports/1234-abc-ffffffff**
-5. Close the window. To do so, click the X in the upper-right corner of the window.
-6. Select the connection.  
-   The data directories are displayed.
+1. En Cyberduck, haz clic en Acción.
+2. Selecciona **Nuevo marcador**. Se abre la ventana.
+3. En el primer campo (marcado [1] en la captura de pantalla a continuación) selecciona **Amazon S3.** [![DataDuckSmall2.png](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)
+4. Completa los campos de la siguiente manera:
+   * **Apodo:** Texto libre
+   * **Servidor:** s3.amazonaws.com
+   * **ID de clave de acceso:** Copia la clave de acceso de AWS tal como aparece en el panel de credenciales en AppsFlyer.
+   * Clave de acceso secreta Copia la clave de acceso de AWS tal como aparece en el panel de credenciales en AppsFlyer.
+   * **Ruta**: `{Nombre del Bucket}/{Carpeta de Inicio}` Por ejemplo: **af-ext-reports/1234-abc-ffffffff**
+5. Cierra la ventana. Para ello, haz clic en la X de la esquina superior derecha de la ventana.
+6. Selecciona la conexión.  
+   Se muestran los directorios de datos.
 
 </Accordion>
 
 <div id="amazon-s3-browser" />
 
-<Accordion title="Amazon S3 browser">
+<Accordion title="Navegador Amazon S3">
 
-**Before you begin**:
+Antes de comenzar:
 
-* Install the Amazon S3 Browser.
-* In AppsFlyer, go to Data Locker and retrieve the information contained in the credentials panel.
+* Instala el navegador Amazon S3.
+* En AppsFlyer, accede a Data Locker y recupera la información incluida en el panel de credenciales.
 
-**To configure the Amazon S3 Browser**:
+**Para configurar el navegador Amazon S3**:
 
-1. In the S3 browser, Click **Accounts** > **Add** **New Account**.  
-   The Add New Account window opens. [![mceclip0.png](https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png)](https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png)
-2. Complete the fields as follows:
-   * **Account Name**: free text.
-   * **Access Key ID**: copy the AWS Access Key as it appears in the credentials panel.
-   * **Secret Access Key**: copy the Bucket Secret key as it appears in the credentials panel.
-   * Select **Encrypt Access Keys** with a password and enter a password. Make a note of this password.
-   * Select **Use secure transfer.**
-3. Click **Save changes**.
-4. Click **Buckets** > **Add External Bucket**.  
-   The Add External Bucket window opens.  
+1. En el navegador S3, haz clic en **Cuentas** > **Agregar** **Nueva cuenta**.  
+   Se abre la ventana Agregar nueva cuenta. [![mceclip0.png](https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png)](https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png)
+2. Completa los campos de la siguiente manera:
+   * **Nombre de la cuenta**: texto libre.
+   * **ID de clave de acceso:** copia la clave de acceso de AWS tal como aparece en el panel de credenciales.
+   * **Clave secreta de acceso**: copia la clave secreta del bucket tal como aparece en el panel de credenciales.
+   * Selecciona **Cifrar claves de acceso** con una contraseña e ingresa una contraseña. Anota esta contraseña.
+   * Selecciona **Usar transferencia segura.**
+3. Haz clic en **Guardar cambios**.
+4. Haz clic en **Buckets** > **Agregar bucket externo**.  
+   Se abre la ventana Agregar bucket externo.  
    <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
-5. Enter the **Bucket name.** The Bucket name has the following format: `{Bucket Name}/{Home Folder}`. The values needed for bucket name and home folder appear in the credentials window.
-6. Click **Add External bucket.** The bucket is created and displays in the left panel of the window.  
-   You can now access the Data Locker files.
+5. Ingresa el **Nombre del bucket.** El nombre del bucket tiene el siguiente formato: `{Nombre del Bucket}/{Carpeta de Inicio}`. Los valores necesarios para el nombre del bucket y la carpeta de inicio aparecen en la ventana de credenciales.
+6. Haz clic en **Añadir bucket externo.** El bucket se crea y se muestra en el panel izquierdo de la ventana.  
+   Ahora puedes acceder a los archivos de Data Locker.
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports">Reports available via Data Locker</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features">Selecting the right raw data delivery tool</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-locker-advertiser-reports">Reportes disponibles en Data Locker</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features">Cómo seleccionar la herramienta de entrega de raw data correcta</Anchor>
 
-<div data-zendesk-anchors="data-locker=overview h_01HE2S6FANNTNB580CMHNX34YA=overview data-locker%E2%80%94features=data-locker-features h_01HE2S6FANQH2GZ11S8S87H0YH=data-locker-features h_01HE2S6FAN6BFPJSZJBEE9P5VK=reports-available-via-data-locker h_01JS45N2DNWZBHP5PH8ZG6FBTF=set-data-locker-report-settings h_01JS45N2DNEZZJRF2RKG1RM9NK=1-set-up-your-cloud-service h_01JS45N2DNVA0SHBA49G42GNFE=2-add-a-connection-to-your-cloud-service h_01K22P5FWJ96CPFJPW0XDCHNNJ=note h_01JS4ASE6J6X1DD33PEGQAPXPA=aws-cloud-bucket-connection h_01JS4ASE6J587JPHAMCSBA2Z92=gcs-cloud-bucket-connection h_01JS4ASE6J4NC7M0TRFDT7F2X7=azure-cloud-bucket-connection h_01JS4ASE6JKFTM3FYAEKFHRW2M=yandex-cloud-bucket-connection h_01JS4ASE6JKV8WJG68RMHKVCE5=bigquery-data-warehouse-connection h_01JS4ASE6JBNE5BK04QDRM7CW4=snowflake-data-warehouse-connection h_01JTFRHNRRJB76JBXXT1TBNRBY=note-1 h_01JS45N2DN8JTMQCK76PDBBWA4=3-set-the-report-output-settings h_01JSBTCZ5569RCV6W6QWT400R7=note-2 h_01JS45N2DNMQAGFVHDDD5JGF2M=select-global-level-filters h_01JS45N2DN388YVP29DDBBBFBP=5-select-the-report h_01JVPJ9CG45JREBKP3ZQXKZWRZ=customize-or-duplicate h_01JS45N2DP4FK9EZYNTY2GX2GK=6-select-the-report-fields h_01JS45N2DPN7B73X0TRC82JW87=7-select-the-reportlevel-filters h_01JS45N2DPYYABS9NXFXP23ARA=8-remove-legacy-fields h_01JS45N2DPYNBG9VPCZJ481DFE=note-3 nonempty-legacy-fields=non-empty-legacy-fields h_01JSCC6KZNKJAVYSFCDDSE80YW=non-empty-legacy-fields h_01JS45N2DPH1QAREYGN5H20T8R=9-save-the-connection h_01JS45N2DPNPXAEZ74J0ETP7BS=important h_01KH8D60TDTNS4EWNXJ4JPGXZ2=set-user-permissions h_01KH8D60TEFX2MCW00JT94F9AQ=manage-data-locker-access-and-ownership-admins h_01KH8D60TE541XMXWCVK0HZTJA=give-data-locker-access h_01KH8D60TF69FN7KMBPMZHBW27=manage-ownership-and-editors h_01KH8D60TFYMEY8FEPR4YKJRYJ=review-filters-after-changing-ownership h_01KH8D60TGVN75TMS9QES0G6CQ=note-4 architecture=data-storage-architecture h_01HE2S6FAN4H9DQ5HBTKSNJ72B=data-storage-architecture overview=zd-overview h_01HE2S6FANY1FWEY6Y34T85GHM=zd-overview h_01HE2S6FANDJ65MZ2H2FBAZYJR=folder-structure h_01HE2S6FAN7PBZ8M86FQVSN5KQ=hourly-folders h_01HE2S6FAN366V8HNCY4PFNTFG=version-folders h_01HE2S6FANHFZMCY3WZBZB9QMP=app-segregation h_01HE2S6FANVDFH9S9JN8E9J7ES=data-files h_01HE2S6FAN8ZDF5N4ECKKN1D1H=storage-options h_01HE2S6FAN2HY7V3G9NS9XCVE1=caution notice-to-security-officers-in-the-case-of-customercontrolled-storage=notice-to-security-officers-in-the-case-of-customer-controlled-storage h_01HE2S6FANRVGYPRWWFA50JAQ4=notice-to-security-officers-in-the-case-of-customer-controlled-storage h_01HE2S6FANBRXA0NS4E8SP3618=multipleconnections-principles-more-than-one-destination h_01HE2S6FAP4SA77B0SX7R8JMTY=additional-information h_01JTFQMKN0046SNBB4YSRJMQG9=track-connection-changes-in-the-audit-log h_01HE2S6FAP6FKAJCW92JVWD828=traits-and-limitations h_01HE2S6FAPJC20G7YZSRWP5E34=troubleshooting h_01HE2S6FAPJMKX567HSAR16TCN=aws-data-retrieval h_01HE2S6FAPB5MW09Y4HKFV3RM8=aws-cli h_01HE2S6FAP31H9NK6V870FGXZF=listing-files-and-folders h_01HE2S6FAP2E2TW4F5PJ4226Q0=cyberduck h_01HE2S6FAP74NG5VNEWKWXXJX2=amazon-s3-browser h_01HE7RB5N99WJ3XP69Z69H81AD=see-also" />
+<div data-zendesk-anchors="data-locker=descripci%C3%B3n-general h_01HE2S6FANNTNB580CMHNX34YA=descripci%C3%B3n-general data-locker%E2%80%94features=data-locker-features h_01HE2S6FANQH2GZ11S8S87H0YH=data-locker-features h_01HE2S6FAN6BFPJSZJBEE9P5VK=reports-available-via-data-locker set-data-locker-report-settings=configurar-la-configuraci%C3%B3n-del-reporte-de-data-locker h_01JS45N2DNWZBHP5PH8ZG6FBTF=configurar-la-configuraci%C3%B3n-del-reporte-de-data-locker h_01JS45N2DNEZZJRF2RKG1RM9NK=1-set-up-your-cloud-service h_01JS45N2DNVA0SHBA49G42GNFE=2-add-a-connection-to-your-cloud-service h_01K22P5FWJ96CPFJPW0XDCHNNJ=nota h_01JS4ASE6J6X1DD33PEGQAPXPA=aws-cloud-bucket-connection h_01JS4ASE6J587JPHAMCSBA2Z92=gcs-cloud-bucket-connection h_01JS4ASE6J4NC7M0TRFDT7F2X7=azure-cloud-bucket-connection h_01JS4ASE6JKFTM3FYAEKFHRW2M=yandex-cloud-bucket-connection h_01JS4ASE6JKV8WJG68RMHKVCE5=bigquery-data-warehouse-connection h_01JS4ASE6JBNE5BK04QDRM7CW4=snowflake-data-warehouse-connection h_01JTFRHNRRJB76JBXXT1TBNRBY=nota-1 h_01JS45N2DN8JTMQCK76PDBBWA4=3-set-the-report-output-settings h_01JSBTCZ5569RCV6W6QWT400R7=nota-2 h_01JS45N2DNMQAGFVHDDD5JGF2M=select-global-level-filters h_01JS45N2DN388YVP29DDBBBFBP=5-select-the-report h_01JVPJ9CG45JREBKP3ZQXKZWRZ=customize-or-duplicate h_01JS45N2DP4FK9EZYNTY2GX2GK=6-select-the-report-fields h_01JS45N2DPN7B73X0TRC82JW87=7-select-the-reportlevel-filters h_01JS45N2DPYYABS9NXFXP23ARA=8-remove-legacy-fields h_01JS45N2DPYNBG9VPCZJ481DFE=nota-3 nonempty-legacy-fields=campos-antiguos-no-vac%C3%ADos h_01JSCC6KZNKJAVYSFCDDSE80YW=campos-antiguos-no-vac%C3%ADos h_01JS45N2DPH1QAREYGN5H20T8R=9-save-the-connection h_01JS45N2DPNPXAEZ74J0ETP7BS=importante set-user-permissions=permisos-de-usuario h_01KH8D60TDTNS4EWNXJ4JPGXZ2=permisos-de-usuario manage-data-locker-access-and-ownership-admins=administradores h_01KH8D60TEFX2MCW00JT94F9AQ=administradores give-data-locker-access=importante-si-no-tienes-una-suscripci%C3%B3n-a-data-locker-y-accedes-al-an%C3%A1lisis-de-cohortes-o-a-los-datos-de-skan-debes-completar-igualmente-un-procedimiento-de-servicio-de-almacenamiento-en-la-nube-propio-del-marketer h_01KH8D60TE541XMXWCVK0HZTJA=importante-si-no-tienes-una-suscripci%C3%B3n-a-data-locker-y-accedes-al-an%C3%A1lisis-de-cohortes-o-a-los-datos-de-skan-debes-completar-igualmente-un-procedimiento-de-servicio-de-almacenamiento-en-la-nube-propio-del-marketer manage-ownership-and-editors=gestionar-la-propiedad-y-los-editores h_01KH8D60TF69FN7KMBPMZHBW27=gestionar-la-propiedad-y-los-editores review-filters-after-changing-ownership=revisar-los-filtros-despu%C3%A9s-de-cambiar-la-propiedad h_01KH8D60TFYMEY8FEPR4YKJRYJ=revisar-los-filtros-despu%C3%A9s-de-cambiar-la-propiedad h_01KH8D60TGVN75TMS9QES0G6CQ=nota-4 architecture=arquitectura-de-almacenamiento-de-datos data-storage-architecture=arquitectura-de-almacenamiento-de-datos h_01HE2S6FAN4H9DQ5HBTKSNJ72B=arquitectura-de-almacenamiento-de-datos h_01HE2S6FANY1FWEY6Y34T85GHM=overview h_01HE2S6FANDJ65MZ2H2FBAZYJR=folder-structure h_01HE2S6FAN7PBZ8M86FQVSN5KQ=hourly-folders h_01HE2S6FAN366V8HNCY4PFNTFG=version-folders h_01HE2S6FANHFZMCY3WZBZB9QMP=app-segregation h_01HE2S6FANVDFH9S9JN8E9J7ES=data-files h_01HE2S6FAN8ZDF5N4ECKKN1D1H=storage-options h_01HE2S6FAN2HY7V3G9NS9XCVE1=importante-1 notice-to-security-officers-in-the-case-of-customercontrolled-storage=aviso-a-los-agentes-de-seguridad-en-el-caso-de-almacenamiento-controlado-por-el-cliente h_01HE2S6FANRVGYPRWWFA50JAQ4=aviso-a-los-agentes-de-seguridad-en-el-caso-de-almacenamiento-controlado-por-el-cliente h_01HE2S6FANBRXA0NS4E8SP3618=multipleconnections-principles-more-than-one-destination additional-information=informaci%C3%B3n-adicional h_01HE2S6FAP4SA77B0SX7R8JMTY=informaci%C3%B3n-adicional h_01JTFQMKN0046SNBB4YSRJMQG9=track-connection-changes-in-the-audit-log h_01HE2S6FAP6FKAJCW92JVWD828=traits-and-limitations h_01HE2S6FAPJC20G7YZSRWP5E34=troubleshooting aws-data-retrieval=recuperaci%C3%B3n-de-datos-de-aws h_01HE2S6FAPJMKX567HSAR16TCN=recuperaci%C3%B3n-de-datos-de-aws h_01HE2S6FAPB5MW09Y4HKFV3RM8=aws-cli listing-files-and-folders=enumeraci%C3%B3n-de-archivos-y-carpetas h_01HE2S6FAP31H9NK6V870FGXZF=enumeraci%C3%B3n-de-archivos-y-carpetas h_01HE2S6FAP2E2TW4F5PJ4226Q0=cyberduck h_01HE2S6FAP74NG5VNEWKWXXJX2=amazon-s3-browser h_01HE7RB5N99WJ3XP69Z69H81AD=consulta-tambi%C3%A9n" />

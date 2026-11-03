@@ -1,5 +1,5 @@
 ---
-title: About device identifiers
+title: Identificadores de dispositivo
 metadata:
   keywords:
     - Advertisers
@@ -17,70 +17,69 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2021-10-12T14:16:09Z'
-  edited_at: '2026-04-19T11:43:45Z'
+  edited_at: '2026-08-12T11:56:30Z'
   id: 4408847686161
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4408847686161-About-device-identifiers
+  url: https://support.appsflyer.com/hc/es/articles/4408847686161
 ---
-> **At a glance:** Understand the device identifiers supported in the AppsFlyer SDK.
+> **De un vistazo:** Comprende los identificadores de dispositivos compatibles con el SDK de AppsFlyer.
 
-## Overview
+## Visión general
 
-The AppsFlyer SDK provides a framework for customers to configure which device identifiers their app uses for <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#attribution">attribution</Anchor> and analytics.
+El SDK de AppsFlyer recopila identificadores de dispositivos con fines de <Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide#atribución">atribución</Anchor>.
 
-The customer can configure the SDK to retrieve advertising identifiers such as GAID, IDFA, and IDFV, based on their app's needs, applicable platform policies, and user consent. (for example, third-party Android app stores or apps marketed in China).
+El SDK recopila automáticamente identificadores como el ID de AppsFlyer y el ID de publicidad de Google (GAID). La recopilación de otros identificadores para tu aplicación depende de tus necesidades (por ejemplo, recopilar tiendas de aplicaciones de Android de terceros o aplicaciones comercializadas en China).
 
-## Android device identifiers
+## Identificadores de dispositivos Android
 
-The SDK supports the following device identifiers for Android platforms:
+El SDK admite los siguientes identificadores de dispositivo para todas las plataformas:
 
-#### Apps published on Google Play
+#### Apps publicadas en Google Play
 
-| Device identifier | Purpose |
+| Identificador de dispositivo | Finalidad |
 | --- | --- |
-| <span id="gaid"></span>GAID | A **user-resettable** identifier for Google Play Android users.<br /><br />Starting with SDK V4.8.0, AppsFlyer automatically collects this device identifier. |
+| <span id="gaid"></span>GNA Company | Un identificador **que el usuario puede restablecer**, para los usuarios de Android de Google Play.<br /><br />A partir del SDK V4.8.0, AppsFlyer recopila automáticamente este identificador de dispositivo. |
 
-#### Apps published in third-party app stores
+#### Aplicaciones publicadas en tiendas de aplicaciones de terceros
 
-| Device identifier | Purpose |
+| Identificador de dispositivo | Finalidad |
 | --- | --- |
-| <span id="amazon-advertising-id"></span>Amazon Advertising ID | A **user-resettable**, unique identifier used by Amazon Fire TV. <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">See CTV overview</Anchor> |
-| <span id="oaid"></span>OAID | A **user-resettable** identifier used by some out-of-store Android markets.  For more information, see the <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">Guide to implementing OAID</Anchor>. |
-| <span id="android-id"></span>Android ID | A unique, **non-resettable** mobile-device identifier used in third-party app stores. The SDK does not automatically collect the Android ID. However, if there is a need to collect these identifiers, your developer can implement collection.<br /><br />**Note:** Android ID cannot be used in conjunction with GAID. |
+| <span id="amazon-advertising-id"></span>ID de publicidad de Amazon | Un identificador único y **que el usuario puede restablecer**, utilizado por Fire TV de Amazon. <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Ver descripción general de CTV</Anchor> |
+| <span id="oaid"></span>OAID | Un identificador **que el usuario puede restablecer**, utilizado por algunos mercados de Android fuera de la tienda.  Para obtener más información, consulta la <Anchor target="_blank" href="/marketers/es/docs/android-oaid-implementation-in-the-sdk">Guía para implementar el OAID</Anchor>. |
+| <span id="android-id"></span>ID de Android | Identificador de dispositivo móvil único y **que no se puede restablecer**, que se utiliza en tiendas de aplicaciones de terceros. El SDK no recopila automáticamente el ID de Android. Sin embargo, si es necesario recopilar estos identificadores, tu desarrollador puede implementar la recopilación.<br /><br />**Nota:** El ID de Android no se puede usar junto con el GAID. |
 
-## Apple device identifiers
+## Identificadores de dispositivos Apple
 
-The SDK supports the following device identifiers for iOS platforms:
+El SDK admite los siguientes identificadores de dispositivo para plataformas Android:
 
-| Device identifier | Purpose |
+| Identificador de dispositivo | Finalidad |
 | --- | --- |
-| <span id="idfa"></span>IDFA | A unique **user-resettable** identifier for Apple iOS or tvOS (Apple TV) users. Since the release of iOS 14.5, IDFA is available only if the user consents via the <Anchor target="_blank" href="/marketers/docs/about-att-and-skan#att-principles">ATT prompt</Anchor>. |
-| <span id="idfv"></span>IDFV | A device identifier shared by all the apps from the **same vendor** on the device. Once the first app is installed, the ID is assigned to it, and other apps from the same vendor are assigned the same IDFV. Apps from other vendors are assigned a different IDFV.<br /><br />In addition, when all the apps from a specific vendor are removed, the IDFV for that vendor is deleted, and upon a new installation, a new IDFV will be assigned. |
+| <span id="idfa"></span>Identificador de anunciante (IDFA) | Un identificador único que **que el usuario puede restablecer**, para usuarios de Apple iOS o tvOS (Apple TV). Desde el lanzamiento de iOS 14.5, el IDFA está disponible solo si el usuario consiente a través del <Anchor target="_blank" href="/marketers/es/docs/about-att-and-skan#att-principles">aviso de ATT</Anchor>. |
+| <span id="idfv"></span>IDFV | Un identificador de dispositivo compartido por todas las aplicaciones del **mismo proveedor** en el dispositivo. Una vez instalada la primera aplicación, se le asigna el ID, y a otras aplicaciones del mismo proveedor se les asigna el mismo IDFV. A las aplicaciones de otros proveedores se les asigna un IDFV diferente.<br /><br />Además, cuando se eliminan todas las aplicaciones de un proveedor específico, se elimina el IDFV de ese proveedor y, tras una nueva instalación, se asignará un nuevo IDFV. |
 
-## CTV , PC, and console app device identifiers
+## Identificadores de dispositivos CTV
 
-The SDK supports the following device identifiers for CTV, PC, and console platforms:
+El SDK admite los siguientes identificadores de dispositivo para plataformas iOS:
 
-| Platform | Device ID |
+| Destino de engagement | Identificador de dispositivo |
 | --- | --- |
 | Android TV | advertising\_id |
 | tvOS (Apple TV) | idfa |
 | Amazon Fire TV | amazon\_fire\_id |
 | Chromecast | advertising\_id |
 | Roku | rida |
-| Vizio | vida |
-| Samsung | tifa |
-| LG | LG Ads=lg\_adid |
+| Vizio | VIDA |
+| Samsung | TIFA |
+| LGUDID | IMEI |
 | Xbox | custom |
-| Vidaa | vidaaid |
+| Finalidad | vidaaid |
 | Steam | steamid |
 | Meta Quest (Oculus) | custom |
 | Epic Games | epicid |
 | PlayStation | psid |
-| Native PC | custom |
-| Google Play Games on PC | See [Android identifiers](/docs/about-device-identifiers#android-device-identifiers) |
+| PC Nativo | custom |
+| Google Play Games para PC | Identificador de dispositivo |
 
-<div data-zendesk-anchors="h_01H9YXEYC3PA271B3G3Y3GM9PS=overview h_01H9YXEYC3D95A6G70EGNR8ENK=android-device-identifiers h_01H9YXEYC3RG2XCVVW8MJ5VZSC=apps-published-on-google-play apps-published-in-thirdparty-app-stores=apps-published-in-third-party-app-stores h_01H9YXEYC3JA3DPN6P43J1ZXR9=apps-published-in-third-party-app-stores h_01H9YXEYC3733B1A85TEF35EAY=apple-device-identifiers ctv-device-identifiers=ctv--pc-and-console-app-device-identifiers h_01H9YXEYC3DFPWVXA5Y3XANQ3P=ctv--pc-and-console-app-device-identifiers" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01H9YXEYC3PA271B3G3Y3GM9PS=visi%C3%B3n-general android-device-identifiers=identificadores-de-dispositivos-android h_01H9YXEYC3D95A6G70EGNR8ENK=identificadores-de-dispositivos-android apps-published-on-google-play=apps-publicadas-en-google-play h_01H9YXEYC3RG2XCVVW8MJ5VZSC=apps-publicadas-en-google-play apps-published-in-thirdparty-app-stores=aplicaciones-publicadas-en-tiendas-de-aplicaciones-de-terceros h_01H9YXEYC3JA3DPN6P43J1ZXR9=aplicaciones-publicadas-en-tiendas-de-aplicaciones-de-terceros apple-device-identifiers=identificadores-de-dispositivos-apple h_01H9YXEYC3733B1A85TEF35EAY=identificadores-de-dispositivos-apple ctv-device-identifiers=identificadores-de-dispositivos-ctv h_01H9YXEYC3DFPWVXA5Y3XANQ3P=identificadores-de-dispositivos-ctv" />

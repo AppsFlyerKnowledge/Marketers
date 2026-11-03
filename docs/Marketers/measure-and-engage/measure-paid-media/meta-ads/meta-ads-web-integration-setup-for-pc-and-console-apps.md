@@ -1,5 +1,5 @@
 ---
-title: Meta Ads—Web integration setup for PC and console apps
+title: Configuración de la integración de Meta Web para aplicaciones de PC y consola
 metadata:
   keywords:
     - Marketers
@@ -12,188 +12,187 @@ x-zendesk:
     - Marketers
     - PC & Console Attribution
   created_at: '2023-09-20T09:54:52Z'
-  edited_at: '2026-09-15T09:42:21Z'
+  edited_at: '2026-09-17T00:28:28Z'
   id: 18704273772689
-  locale: en-us
+  locale: es
   section: Meta ads
   section_id: 6551109855761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/18704273772689-Meta-Ads-Web-integration-setup-for-PC-and-console-apps
+  url: https://support.appsflyer.com/hc/es/articles/18704273772689
 ---
-> **At a glance:** Learn how to integrate Meta Web for PC and console apps with AppsFlyer and set up campaigns in Meta Web.
+> **En resumen:** Aprende a integrar Meta Web para aplicaciones de PC y consola con AppsFlyer y a configurar campañas en Meta Web.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> This integration is only available for PC and console apps, such as Steam, Epic, or Native PC. For mobile apps, see the <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup">Meta ads integration setup</Anchor> page.
+> Esta integración solo está disponible para aplicaciones de PC y consola, como Steam, Epic o Native PC. Para aplicaciones móviles, consulta la página de <Anchor target="_blank" href="/marketers/es/docs/meta-ads-integration-setup">configuración de la integración de Meta Ads</Anchor>.
 
-## Overview
+## General
 
-This article contains information and steps on how to set up and use Meta Web for PC and console apps with AppsFlyer. This includes:
+Este artículo contiene información e instrucciones sobre cómo configurar y usar Meta Web para aplicaciones de PC y consola con AppsFlyer. Esto incluye:
 
-* [Activating the partner integration in AppsFlyer](#activating-partner-in-appsflyer).
-* [Setting up Meta Web in AppsFlyer](#setting-up-meta-web-in-appsflyer).
-* [Setting up campaigns in Meta for PC and console apps](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps#setting-up-campaigns-in-meta-web-for-pc-and-console-apps).
+* [Activación de la integración del partner en AppsFlyer](#activación-del-partner-en-appsflyer).
+* [Configuración de Meta Web en AppsFlyer](#configuración-de-meta-web-en-appsflyer).
+* [Configuración de campañas en Meta para aplicaciones de PC y consola](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps#configuración-de-campañas-en-meta-web-para-aplicaciones-de-pc-y-consola).
 
-### Prerequisite
+### Requisito previo
 
-Before activating the Meta Web integration, make sure you have a [business account in Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347).
+Antes de activar la integración de Meta Web, asegúrate de tener una [cuenta comercial en Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347).
 
-## Activating partner in AppsFlyer
+## Activación del partner en AppsFlyer
 
-**To activate the partner integration:**
+**Para activar la integración de partners:**
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Partner Integrations > Marketplace** tab.
-2. Search for **Meta Web**.
-3. Click **Integrate**. You’re directed to the setup page.
-4. In the **Integration** tab, turn on **Activate partner**.  
-   **Note:** The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with the partner.
-5. Complete the configuration using the relevant tabs, as described in the next section.
+1. En AppsFlyer, en el menú lateral, ve a **Colaborar** > **Integraciones de partners > Marketplace** pestaña.
+2. Busca **Meta Web**.
+3. Haz clic en **Integrate**. Se te redirige a la página de configuración.
+4. En la pestaña **Integración**, selecciona **Activar partner**.  
+   **Nota: <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">El interruptor debe permanecer ON (</Anchor><Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor>) mientras trabajes con el partner.**
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación.
 
-## Setting up Meta Web in AppsFlyer
+## Configuración de Meta Web en AppsFlyer
 
-In this part of the setup, you can also set up postbacks to Meta Web. The Meta Web (metaweb\_int) integration uses a Conversions API tool provided by Meta ads for advertisers to send data from their **PC and console apps** directly to Meta's servers. Such data may include user actions, such as purchases, registrations, and other types of conversions performed on non-mobile platforms (websites or applications). The data is then used by Meta ads to optimize ad targeting, measure ad performance, and build custom audiences for retargeting.
+En esta parte de la configuración, también puedes configurar postbacks en Meta Web. La integración Meta Web (metaweb\_int) utiliza una herramienta API de conversiones proporcionada por Meta Ads para que los anunciantes envíen datos desde sus **aplicaciones de PC y consola** directamente a los servidores de Meta. Dichos datos pueden incluir acciones del usuario, como compras, registros y otros tipos de conversiones realizadas en plataformas no móviles (sitios web o aplicaciones). Luego, Meta Ads utiliza los datos para optimizar la segmentación de anuncios, medir el rendimiento de los anuncios y crear audiencias personalizadas para el retargeting.
 
-The integration with Meta Web only supports sending postbacks for installs and in-app events.
+La integración con Meta Web solo admite el envío de postbacks para instalaciones y eventos in-app.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de integración">
 
-The **Integration** tab includes a number of sections, as described below.
+La pestaña **Integración** incluye una serie de secciones, como se describe a continuación.
 
-#### Activate partner
+#### Activar partner
 
-To configure the integration, you must first turn on the **Activate partner** toggle.
+Para configurar la integración, primero debes activar el interruptor **Activar partner**.
 
-#### General settings
+#### Configuración general
 
-* **Pixel ID:** Enter the Pixel ID. You can retrieve it from your Meta ads Manager:
-  1. From the <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Ads manager</Anchor> side menu, go down to **All tools** > **Events Manager**.   
-     **Note:** Make sure you have the correct business selected from the drop-down on the top right.
-  2. From the **Events Manager** side menu, select **Data sources**. You'll see a list of your pixels. If you don’t have a pixel for the selected business, you can create one through the same view.
-  3. Copy the pixel ID showing under the pixel name and paste it into the Pixel ID field of the AppsFlyer integration.  
+* **ID de píxel:** Ingresa el ID de píxel. Puedes recuperarlo de tu administrador de Meta Ads:
+  1. Desde el <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Administrador de anuncios</Anchor> en el menú lateral, ve a **Todas las herramientas** > **Administrador de eventos**.   
+     **Nota:** Asegúrate de tener la empresa correcta seleccionada en el menú desplegable en la parte superior derecha.
+  2. En el menú lateral del **Administrador de eventos** selecciona **Fuentes de datos**. Verás una lista de tus píxeles. Si no tienes un píxel para el negocio seleccionado, puedes crear uno a través de la misma vista.
+  3. Copia el ID de píxel que se muestra debajo del nombre del píxel y pégalo en el campo ID de píxel de la integración de AppsFlyer.  
      <Image alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
-* **Access token:** Enter the access token. To retrieve it, follow [these instructions](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)
-* **Limit Meta ads use of users’ personal information (CCPA):** Turn on this toggle to enable compliance with <Anchor target="_blank" href="/marketers/docs/send-opendsr-api-requests">data protection laws</Anchor>.  
-  **Note:** Complying with CCPA privacy regulations limits the data coming from Meta ads users based in California.
+* **Token de acceso:** Ingresa el token de acceso. Para recuperarlo, sigue [estas instrucciones](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token).
+* **Limitar el uso de la información personal de los usuarios en Meta Ads (CCPA):** Activa esta opción para habilitar el cumplimiento de las <Anchor target="_blank" href="/marketers/es/docs/send-opendsr-api-requests">leyes de protección de datos</Anchor>.  
+  **Nota:** Cumplir con las regulaciones de privacidad de la CCPA limita los datos provenientes de los usuarios de Meta Ads que residen en California, EE.UU.
 
-#### Enable view-through attribution
+#### Habilitar la atribución view-through
 
-AppsFlyer supports view-through attribution for Meta Web campaigns using probabilistic modeling (PMOD) and <Anchor target="_blank" href="/marketers/docs/meta-ads-create-web-based-campaigns#set-up-smart-script-crossplatform-landing-page">Smart Script</Anchor> or <Anchor target="_blank" href="/marketers/docs/meta-ads-create-web-based-campaigns#set-up-smart-banners-landing-page">Smart Banner</Anchor>-enabled landing page. This allows AppsFlyer to attribute app installs that result from users viewing an ad and then later installing the app, even across platforms, without requiring a direct click.
+AppsFlyer admite la atribución view-through para campañas de Meta Web mediante modelos probabilísticos (PMOD) y landing pages con <Anchor target="_blank" href="/marketers/es/docs/meta-ads-create-web-based-campaigns#set-up-smart-script-crossplatform-landing-page">Smart Script</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/meta-ads-create-web-based-campaigns#set-up-smart-banners-landing-page">Smart Banner</Anchor>. Esto permite que AppsFlyer atribuya las instalaciones de aplicaciones que resultan de que los usuarios ven un anuncio y luego instalan la aplicación, incluso entre plataformas, sin necesidad de hacer clic directamente.
 
-When a user clicks a Meta Web ad and lands on a <Anchor target="_blank" href="/marketers/docs/meta-ads-create-web-based-campaigns#set-up-smart-script-crossplatform-landing-page">Smart Script</Anchor> or <Anchor target="_blank" href="/marketers/docs/meta-ads-create-web-based-campaigns#set-up-smart-banners-landing-page">Smart Banner</Anchor>-enabled landing page, AppsFlyer can attribute the downstream app install. If available, the `fbclid` will be included in the postback to Meta to enhance attribution fidelity.
+Cuando un usuario hace clic en un anuncio de Meta Web y llega a una landing page habilitada para <Anchor target="_blank" href="/marketers/es/docs/meta-ads-create-web-based-campaigns#set-up-smart-script-crossplatform-landing-page">Smart Script</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/meta-ads-create-web-based-campaigns#set-up-smart-banners-landing-page">Smart Banner</Anchor>, AppsFlyer puede atribuir la instalación posterior de la aplicación. Si están disponibles, los `fbclid` se incluirán en el postback de Meta para mejorar la fidelidad de la atribución.
 
-**To enable view-through attribution:**
+**Habilitar la atribución view-through:**
 
-1. In AppsFlyer, from the sidebar, open **Active Integrations** > **Meta web ads**.
-2. In the **Integration** tab, scroll to the **Install attribution** section.
-3. Turn on **Install view-through attribution**.
-4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions">Enable equal priority for cross-platform impressions</Anchor>.
-5. Open the **Attribution link** tab.
-6. Scroll to the **View-through attribution** section and set the **view-through lookback window** (up to 24 hours).
-7. Click **Save integration** to apply your settings.
+1. En AppsFlyer, desde la barra lateral, abre **Integraciones activas** > **Meta Web Ads**.
+2. En la pestaña **Integración**, desplázate a la sección **Atribución de instalaciones**.
+3. Activa **Atribución de instalaciones por view-through**.
+4. **[opcional]** Activa la opción **prioridad de atribución equitativa entre plataformas** y configura la ventana de lookback. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions">Habilitar igual prioridad para impresiones multiplataforma</Anchor>.
+5. Abre la pestaña **Enlace de atribución**.
+6. Desplázate a la sección **Atribución view-through** y configura la **ventana de lookback por view-through** (hasta 24 horas).
+7. Haz clic en **Guardar integración** para aplicar tu configuración.
 
-#### Default postbacks
+#### Postbacks predeterminados
 
-Postbacks for installs are automatically sent to Meta Web. In the **For Users From** field, select one of the following:
+Los postbacks de las instalaciones se envían automáticamente a Meta Web. En el campo **For Users From**, selecciona una de las siguientes opciones:
 
-* **This Partner Only** to ensure that in-app event postbacks are sent exclusively for events performed by users who originated from this partner.
-* **All media sources, including organic,** are to ensure that in-app event postbacks are sent for events performed by users who originated from this partner, other partners, or from organic sources.
+* **Sólo este partner:** Los postbacks de eventos in-app se envían solo para eventos atribuidos a este partner, es decir, el usuario que los realizó proviene de este partner.
+* **Todas las fuentes de medios, incluidas las orgánicas,** sirven para garantizar que los postbacks de eventos in-app se envíen para eventos realizados por usuarios que proceden de este partner, de otros partners o de fuentes orgánicas.
 
-#### In-app event postbacks
+#### Postbacks de eventos in-app
 
-Configure mapping of in-app event postbacks sent to Meta Web. These events can be viewed in the <Anchor target="_blank" href="https://www.facebook.com/business/help/1541268312717919?id=818859032317965">Meta Events Manager</Anchor>:
+Configura la asignación de postbacks de eventos in-app enviados a Meta Web. Estos eventos se pueden ver en el <Anchor target="_blank" href="https://www.facebook.com/business/help/1541268312717919?id=818859032317965">administrador de eventos de Meta</Anchor>:
 
-1. Turn on **In-app event postbacks**.
-2. Click **Add event** to add an SDK or server-to-server event to the list. The following table describes the fields to complete:
+1. Activa **Postbacks de eventos in-app**.
+2. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista. La siguiente tabla describe los campos que debes completar:
 
-| Parameter name | Description |
+| Nombre de parámetro | Descripción |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<ul><li>Click **Add item**, enter the event name, and click ![check.png](https://files.readme.io/66d595d0ac8a01489ce810bbd3865fca2556342086dc6b20f26fa3d7b7e3afc2-19124971382289.png).</li></ul> |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side.<ul><li>Select from the dropdown box the most suitable pre-defined partner event or select CUSTOM.</li></ul> |
-| **for users from** | <ul><li>**This Partner Only** to ensure that in-app event postbacks are sent exclusively for events performed by users who originated from this partner.</li><li>**All media sources, including organic,** are to ensure that in-app event postbacks are sent for events performed by users who originated from this partner, other partners, or from organic sources.</li></ul> |
-| **including** | **Values and revenue:** All event parameters, including the revenue value (if exists in the event), are sent in the postback. |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos de servidor a servidor.<ul><li>Haz clic en **Agregar elemento**, ingresa el nombre del evento y haz clic en ![check.png](https://files.readme.io/66d595d0ac8a01489ce810bbd3865fca2556342086dc6b20f26fa3d7b7e3afc2-19124971382289.png).</li></ul> |
+| **Asignado al evento de partner** | El ID o nombre único de cada evento, tal y como lo defina el partner.<ul><li>Selecciona en el cuadro desplegable el evento predefinido para partners que más te convenga o selecciona PERSONALIZADO.</li></ul> |
+| **Para usuarios de** | <ul><li>Los postbacks de las instalaciones se envían automáticamente solo a Meta Web.</li><li>**Todas las fuentes de medios, incluidas las orgánicas,** sirven para garantizar que los postbacks de eventos in-app se envíen para eventos realizados por usuarios que proceden de este partner, de otros partners o de fuentes orgánicas.</li></ul> |
+| **incluye** | **Valores e ingresos:** Todos los parámetros del evento, incluyendo el valor de los ingresos (si existe en el evento), se envían en el postback. |
 
-3. [Optional] Click the **Add condition**<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/16d37e5cdb84468be45960c7927ad721fd5ba0ca67f4bdcd0d71c4bb551db85f-18704290233873.png" width="30px" />icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
-4. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
-5. Click **Save integration**.
-6. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
-   1. From the top-left corner, under the partner name, click the app name to open the list of apps.
-   2. Select a different app from the drop-down list.
-   3. Repeat the integration steps for the selected app.
+3. [Opcional] Haz clic en el ícono **Agregar condiciónaltconditional-iae-postbacks-icon.pngalt para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer condiciones</Anchor> para un evento.**
+4. Establece la **ventana de postbacks de eventos in-app**, si es necesario (lee más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">configuración de la ventana de postbacks de eventos in-app</Anchor>).
+5. Haz clic en **Guardar integración**.
+6. [Opcional] Después de guardar la integración, desde la página de configuración, puedes integrar más de tus aplicaciones con el partner:
+   1. En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
+   2. Selecciona una aplicación diferente en la lista desplegable.
+   3. Repite los pasos de integración para la aplicación seleccionada.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlace de atribución">
 
-Generating an attribution link in the AppsFlyer UI isn't currently available. However, you can either use a cross-platform landing page with SmartScript or create a direct attribution link for your app (see table below).
+La generación de un enlace de atribución en la interfaz de usuario de AppsFlyer no está disponible actualmente. Sin embargo, puedes usar una página de aterrizaje multiplataforma con SmartScript o crear un enlace de atribución directa para tu aplicación (consulta la tabla a continuación).
 
-| Option | Actions | Who's involved |
+| Opción | Acciones | ¿Quiénes están involucrados? |
 | --- | --- | --- |
-| Cross-platform landing page | **Recommended**: For when your campaign promotes an app that's also available on multiple platforms, like Epic and Steam.<br /><br /><Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Learn about cross-platform landing pages</Anchor><br /><br /><Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Learn how to set up a cross-platform landing page</Anchor><ul><li>Make sure all relevant URL parameters (that are later captured by the Smart Script) are appended to the ad URL</li><li>Make sure the script takes FBCLID from the incoming URL and adds it to the generated link. Meaning, map the outgoing FBCLID URL param `fbclid` to the incoming URL param `fbclid`. **Note**! To display in AppsFlyer raw data reports, the incoming `fbclid` param must also mapped to one of the outgoing params  `af_sub[1-5]`.</li><li>Optional: Use Meta’s dynamic URL macros instead of hard-coding the values manually. <Anchor target="_blank" href="https://www.facebook.com/business/help/2360940870872492">Learn more</Anchor></li></ul> | Marketer (may require developer assistance) |
-| Direct attribution link | If you don't use a cross-platform landing page, because you only have 1 app on 1 platform, you can create direct attribution links to place behind ads.<br /><br /><Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor><ul><li>Make sure the mandatory parameters are included in your link:<ul><li>af\_media\_source</li><li>af\_campaign\_id</li><li>af\_r</li></ul></li></ul>Template to use for Meta Web ad link:<br /><br />`https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r={encoded landing page and URL params}`<br /><br />Sample link of a Meta Web ad link leading to Steam: `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello`<br /><br />**Note**: The template includes some dynamic URL parameters supported by Meta. If you prefer, you can replace them with real values manually. <Anchor target="_blank" href="https://www.facebook.com/business/help/2360940870872492">Learn more about Meta dynamic URL parameters</Anchor> | Marketer |
+| Landing page multiplataforma | **Recomendado**: Para cuando tu campaña promociona una aplicación que también está disponible en múltiples plataformas, como Epic y Steam.<br /><br /><Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Más información sobre las landing pages multiplataforma</Anchor><br /><br /><Anchor target="_blank" href="/marketers/es/docs/cross-platform-landing-pages-with-smart-script">Más información sobre cómo configurar una landing page multiplataforma</Anchor><ul><li>Asegúrate de que todos los parámetros de URL relevantes (que luego son capturados por Smart Script) se anexen a la URL del anuncio.</li><li>Asegúrate de que el script tome FBCLID de la URL entrante y lo agregue al enlace generado. Es decir, asignar el parámetro de URL saliente de FBCLID `fbclid` al parámetro de URL entrante `fbclid`.<br />[Práctica recomendada]: ¡**Importante**! Para mostrarlo en los reportes de raw data de AppsFlyer, el parámetro de entrada `fbclid` también debe asignarse a uno de los parámetros de salida `af_sub[1-5]`.</li><li>Opcional: Utiliza las macros de URL dinámicas de Meta en lugar de codificar manualmente los valores. <Anchor target="_blank" href="https://www.facebook.com/business/help/2360940870872492">Saber más</Anchor></li></ul> | Marketer (puede requerir la asistencia del desarrollador) |
+| Enlace de atribución directa | Si no utilizas una landing page multiplataforma porque solo tienes 1 aplicación en 1 plataforma, puedes crear enlaces de atribución directa para colocarlos detrás de los anuncios.<br /><br /><Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor><ul><li>Asegúrate de que los parámetros obligatorios estén incluidos en tu enlace:<ul><li>media\_source</li><li>af\_campaign\_id</li><li>af\_r</li></ul></li></ul>Plantilla a utilizar para el enlace del anuncio de Meta Web:<br /><br />`https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r={encoded landing page and URL params}`<br /><br />Enlace de muestra de un enlace de anuncio de Meta Web que conduce a Steam: `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello`<br /><br />**Nota**: La plantilla incluye algunos parámetros de URL dinámicos admitidos por Meta. Si lo prefieres, puedes reemplazarlos por valores reales manualmente. <Anchor target="_blank" href="https://www.facebook.com/business/help/2360940870872492">Aprender más sobre los parámetros de URL dinámicos de Meta</Anchor> | Comercializador |
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costo">
 
-Cost isn't available for Meta Web.
+El costo no está disponible para Meta Web.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de ingresos por publicidad">
 
-Ad revenue isn't available for Meta Web.
+Los ingresos por publicidad no están disponibles para Meta Web.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Currently, permissions aren't granted to Meta Web.
+Actualmente, no se otorgan permisos a Meta Web.
 
 </Accordion>
 
-## Setting up campaigns in Meta Web for PC and console apps
+## Configuración de campañas en Meta Web para aplicaciones de PC y consola
 
-**When you set up your new campaign**:
+**Cuando configures tu nueva campaña**:
 
-* Select a campaign objective. We recommend selecting one of the following:
-  * **Sales**: This lets Meta optimize towards a specific event (your main KPI).
-  * **Traffic**: This lets Meta optimize towards ad clicks. This should only be used if you don’t have other KPIs or if the volume of other KPI events is too low.
-  * **Custom**: If you want to set a custom event (as your campaign objective). **Note:** To enable the custom event to appear as a campaign objective on Meta's dashboard, first set up the custom event in AppsFlyer.
-* Select **Website** as the conversion location.
-* When you name your Facebook conversion pixel, enter the same pixel ID you entered for metaweb\_int in the AppsFlyer Partner Marketplace.
-* When you enter the website URL as the destination for your ad, the URL should be for one of the following:
-  * Web landing page (recommended when you have an app on multiple platforms)
-  * Store URL (recommended when your app is in a single app store, on a single platform)
+* Selecciona un objetivo de campaña. Recomendamos seleccionar una de las siguientes opciones:
+  * **Ventas**: esto permite que Meta se optimice hacia un evento específico (tu KPI principal).
+  * **Tráfico**: esto permite que Meta se optimice hacia los clics de anuncios. Esto solo debe usarse si no tienes otros KPI o si el volumen de otros eventos de KPI es demasiado bajo.
+  * **Personalizado**: Si deseas establecer un evento personalizado (como objetivo de tu campaña). **Nota:** Para permitir que el evento personalizado aparezca como objetivo de campaña en el dashboard de Meta, primero configura el evento personalizado en AppsFlyer.
+* Selecciona **Sitio web** como ubicación de conversión.
+* Cuando nombres tu píxel de conversión de Facebook, ingresa el mismo ID de píxel que ingresaste para metaweb\_int en AppsFlyer Partner Marketplace.
+* Cuando ingresas la URL del sitio web como destino de tu anuncio, la URL debe ser para una de las siguientes opciones:
+  * Página de aterrizaje web (recomendada cuando tienes una aplicación en múltiples plataformas)
+  * URL de la tienda (se recomienda cuando tu aplicación está en una sola tienda de aplicaciones, en una sola plataforma)
 
-## View web-to-app attribution data
+## Ver datos de atribución web-to-app
 
-Although web-based conversion events are sent to Meta under the original `metaweb_int` PID, they are reported in the AppsFlyer dashboard and raw data reports under the `Facebook Ads` PID. This applies to both primary conversion events and conversion assist events.
+Aunque los eventos de conversión basados en web se envían a Meta con el PID de `metaweb_int` original, se reportan en el dashboard de AppsFlyer y en los reportes de raw data con el PID de `Facebook Ads`. Esto se aplica tanto a los eventos de conversión primarios como a los eventos de asistencia a la conversión.
 
-This unified reporting view lets you analyze both web and app campaigns performance in one place, including full web and mobile cost reporting.
+Esta vista unificada de reportes te permite analizar el rendimiento de las campañas web y app en un solo lugar, incluidos reportes completos de costos web y móvil.
 
-### View in the dashboard
+### Ver en el dashboard
 
-All Meta web-to-app attributions appear under `Facebook Ads` in the Overview and Activity dashboards. This provides a single, consolidated view of campaign results across platforms. Use standard filters and breakdowns to compare app and web traffic within your Meta Ads data.
+Todas las atribuciones web-to-app de Meta aparecen en `Facebook Ads` en los dashboards General y Actividad. Esto proporciona una vista única y consolidada de los resultados de campañas en todas las plataformas. Utiliza filtros y desgloses estándar para comparar el tráfico web y de aplicaciones dentro de tus datos de Meta Ads.
 
-### View in raw data and API reports
+### Ver en reportes raw data y API
 
-* **Raw data exports and API responses** include the `Facebook Ads` PID in the `media_source` field for Meta web activity. To verify web campaign setup details, refer to the `original_url` field that shows `metaweb_int` as the PID used during the creation of web campaigns.
-* **Postback reports** show `metaweb_int` as the original media source to which the postback was sent.
+* **Las exportaciones de raw data y las respuestas de la API** incluyen el PID `Facebook Ads` en el campo `media_source` para la actividad web de Meta. Para verificar los detalles de configuración de la campaña web, consulta el campo `original_url` que muestra `metaweb_int` como el PID utilizado durante la creación de campañas web.
+* Los **reportes de postbacks** muestran a `metaweb_int` como la fuente de medios original a la que se envió el postback.
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-| Trait | Description |
+| Caducado | Nota |
 | --- | --- |
-| Clicks and impressions (Temporary limitation) | Clicks and impressions for campaigns targeting PC & Console apps are temporarily not available from Meta SRN (`Facebook Ads`). |
+| Clics e impresiones (limitación temporal) | Los clics y las impresiones de las campañas orientadas a apps de PC & consola no están disponibles temporalmente en Meta SRN (`Facebook Ads`). |
 
-<div data-zendesk-anchors="h_01HE2XD0FSY0QMJSKVC0FHHK5P=important h_01HK4QHRJG6WTN9P6ZG83XQ6AY=overview h_01HFXV8HPGCRGYPEW0NPJ0NR0S=prerequisite activate-partner=activating-partner-in-appsflyer h_01HFXV8HPH3N4DBKKTQE6DK7FK=activating-partner-in-appsflyer setting-up-metaweb-in-appsflyer=setting-up-meta-web-in-appsflyer 01H88VAJH3VENKYVRQY5RXN63P=setting-up-meta-web-in-appsflyer 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::1ca30957=activate-partner h_01HFXV8HPH6X92YETNAGZ910AV=activate-partner transaction-id=general-settings h_01HARQDVEDA206D0BBXBC6WEHH=general-settings enable-viewthrough-attribution=enable-view-through-attribution h_01ZXVWB1ZYKK4DP38QY1RMEY6M=enable-view-through-attribution 01H88VAJH3WE9Z0971WMBRBJRS=default-postbacks inapp-event-postbacks=in-app-event-postbacks 01H88VAJH3AS37MVF75GANWX4B=in-app-event-postbacks 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab h_01HK4S03KVAN99YKXTHAKCT420=setting-up-campaigns-in-meta-web-for-pc-and-console-apps meta%20view=view-web-to-app-attribution-data view-webtoapp-attribution-data-from-november-2-2025=view-web-to-app-attribution-data h_01K88J8JFNEYBZNR18133NMRP9=view-web-to-app-attribution-data h_01K88J8JFNMHCVZ0C34E3D7AST=view-in-the-dashboard h_01K88J8JFN8W2572N92466YFZQ=view-in-raw-data-and-api-reports h_01KB503RDVWPSFBAPAPW4CNZXM=traits-and-limitations" />
+<div data-zendesk-anchors="h_01HE2XD0FSY0QMJSKVC0FHHK5P=importante overview=general h_01HK4QHRJG6WTN9P6ZG83XQ6AY=general prerequisite=requisito-previo h_01HFXV8HPGCRGYPEW0NPJ0NR0S=requisito-previo activate-partner=activaci%C3%B3n-del-partner-en-appsflyer h_01HFXV8HPH3N4DBKKTQE6DK7FK=activaci%C3%B3n-del-partner-en-appsflyer setting-up-metaweb-in-appsflyer=configuraci%C3%B3n-de-meta-web-en-appsflyer 01H88VAJH3VENKYVRQY5RXN63P=configuraci%C3%B3n-de-meta-web-en-appsflyer 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::1ca30957=activar-partner h_01HFXV8HPH6X92YETNAGZ910AV=activar-partner transaction-id=configuraci%C3%B3n-general h_01HARQDVEDA206D0BBXBC6WEHH=configuraci%C3%B3n-general enable-viewthrough-attribution=habilitar-la-atribuci%C3%B3n-view-through h_01ZXVWB1ZYKK4DP38QY1RMEY6M=habilitar-la-atribuci%C3%B3n-view-through default-postbacks=postbacks-predeterminados 01H88VAJH3WE9Z0971WMBRBJRS=postbacks-predeterminados inapp-event-postbacks=postbacks-de-eventos-in-app 01H88VAJH3AS37MVF75GANWX4B=postbacks-de-eventos-in-app 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab setting-up-campaigns-in-meta-web-for-pc-and-console-apps=configuraci%C3%B3n-de-campa%C3%B1as-en-meta-web-para-aplicaciones-de-pc-y-consola h_01HK4S03KVAN99YKXTHAKCT420=configuraci%C3%B3n-de-campa%C3%B1as-en-meta-web-para-aplicaciones-de-pc-y-consola meta%20view=ver-datos-de-atribuci%C3%B3n-web-to-app view-webtoapp-attribution-data-from-november-2-2025=ver-datos-de-atribuci%C3%B3n-web-to-app h_01K88J8JFNEYBZNR18133NMRP9=ver-datos-de-atribuci%C3%B3n-web-to-app view-in-the-dashboard=ver-en-el-dashboard h_01K88J8JFNMHCVZ0C34E3D7AST=ver-en-el-dashboard view-in-raw-data-and-api-reports=ver-en-reportes-raw-data-y-api h_01K88J8JFN8W2572N92466YFZQ=ver-en-reportes-raw-data-y-api traits-and-limitations=especificaciones-y-limitaciones h_01KB503RDVWPSFBAPAPW4CNZXM=especificaciones-y-limitaciones" />

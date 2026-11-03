@@ -1,5 +1,5 @@
 ---
-title: Pinterest—Create a mobile app integration
+title: Pinterest—Crear una integración de aplicación móvil
 metadata:
   keywords:
     - Pinterest
@@ -14,168 +14,168 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-11-09T12:51:03Z'
-  edited_at: '2026-09-09T13:05:01Z'
+  edited_at: '2026-09-11T00:29:03Z'
   id: 216912786
-  locale: en-us
+  locale: es
   section: Pinterest
   section_id: 6551388216337
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/216912786-Pinterest-Create-a-mobile-app-integration
+  url: https://support.appsflyer.com/hc/es/articles/216912786
 ---
-> **At a glance:** Pinterest, an AppsFlyer integrated partner, is one of the top contributors of traffic for bloggers and brands. Pinterest offers both click-based and view-through mobile attribution. In addition, Pinterest also offers click-based retargeting which you can record with AppsFlyer.
+> **En resumen:** Pinterest, un partner integrado de AppsFlyer, es uno de los principales contribuyentes de tráfico para blogueros y marcas. Pinterest ofrece atribución móvil basada en clics y view-through. Además, Pinterest también ofrece un retargeting basado en clics que puedes grabar con AppsFlyer.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * After accepting Pinterest Ad Terms, accept Pinterest Mobile Measurement Terms & Conditions <Anchor target="_blank" href="https://ads.pinterest.com/terms/app_install/">here</Anchor>.
-> * Pinterest requires attribution providers to delete their user-level data <Anchor target="_blank" href="/marketers/docs/user-level-data-retention#partner-data-retention-periods">6 months after the install</Anchor>. This means that the events performed by these users 6 months after they install the app are counted as organic. Past aggregate data remains the same.
-> * Effective September 4, 2023, Pinterest requires attribution providers to <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">restrict the availability of some fields in raw data reports</Anchor> to preserve user privacy and ensure regulation compliance.
+> * Tras aceptar los términos de los anuncios de Pinterest, aceptas los términos y condiciones de medición móvil de Pinterest <Anchor target="_blank" href="https://ads.pinterest.com/terms/app_install/">aquí</Anchor>.
+> * Pinterest exige que los proveedores de atribución eliminen sus datos a nivel de usuario <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention#periodos-de-conservación-de-los-datos-de-partners">6 meses después de la instalación</Anchor>. Esto significa que los eventos efectuados por estos usuarios 6 meses después de que hayan instalado la aplicación se cuentan como orgánicos. Los datos agregados anteriores permanecen iguales.
+> * A partir del 4 de septiembre de 2023, Pinterest exige a los proveedores de atribución que <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">restrinjan la disponibilidad de algunos campos en los reportes de raw data</Anchor> para preservar la privacidad de los usuarios y garantizar el cumplimiento de la normativa.
 
-## Set up Pinterest
+## Configurar Pinterest
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el Partners. Si no tienes una cuenta, ponte en contacto con el Partners para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace** .  
+   (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el Partners y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el interruptor **Activar partner**.   
+   **Nota:** El interruptor **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña integración">
 
-### Activate partner
+### Activar partner
 
-On the **first visit**, you will need to turn on the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.  
-For more details about partner activation click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita**, tendrás que activar el botón **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para más detalles sobre la activación de partners, <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">haz</Anchor> clic aquí.
 
-### General settings
+### Configuración general
 
-The following are the general settings for the integration tab of Pinterest.
+La siguiente es la configuración general de la pestaña de integración de Pinterest.
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Turn this on if you want to attribute view-through installs from Pinterest. The view-through lookback slider is available on the attribution link tab (described below).
+Actívala si quieres atribuir las instalaciones por impresiones directas desde Pinterest. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-**Advanced Matching data sharing**
+**Uso compartido de datos de Advanced Matching**
 
-Turn this on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Pinterest, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
+Activa esta opción para compartir con Pinterest los campos de Advanced Matching, como el correo electrónico con hash, el número de teléfono con hash, el nombre con hash y el apellido con hash, si estos campos se incluyen en la información del evento enviada a AppsFlyer. Para más información, consulta: <Anchor target="_blank" href="/marketers/es/docs/advanced-matching-data-sharing">Uso compartido de datos de Advanced Matching</Anchor>.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-To be able to send in-app event postbacks to Pinterest, you must provide the following Pinterest credentials. These credentials will be included in the event postbacks sent to Pinterest.
+Para poder enviar correos electrónicos de postbacks de eventos in-app a Pinterest, debes introducir un identificador de etiqueta. Estas credenciales se incluirán en los postbacks de evento enviados a Pinterest.
 
-* **Ad account ID** - The unique identifier of your Pinterest account.
-* **Access token** - An access token generated in Pinterest.
+* **ID de la cuenta de anuncios** - El identificador único de tu cuenta de Pinterest.
+* **Token de acceso** - Un token de acceso generado en Pinterest.
 
-You can find your Ad Account ID and Access Token directly within the Pinterest Ad Manager UI (See the [Pinterest documentation](https://developers.pinterest.com/docs/api-features/tracking-conversions/#getting-your-access-token-and-ad-account-id)).  Please reach out to the Pinterest team if assistance is needed.
+Puedes encontrar el ID de tu cuenta de anuncios y el token de acceso directamente en la interfaz de usuario de Pinterest Ad Manager (consulta la [documentación de Pinterest](https://developers.pinterest.com/docs/api-features/tracking-conversions/#getting-your-access-token-and-ad-account-id)).  Ponte en contacto con el equipo de Pinterest si necesitas ayuda.
 
-**Set the Pinterest credentials:**
+**Configura las credenciales de Pinterest:**
 
-1. In AppsFlyer, in the Pinterest **Active integration** page > **Integration** tab, scroll to **In-app event settings.**
-2. Enter the Ad account ID and Access token values in their respective fields.
+1. **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">ponerte en contacto con el partner</Anchor> y abrir una cuenta con ellos.
+2. Introduce los valores del ID de la cuenta de anuncios y del token de acceso en sus respectivos campos.
 
-#### [Legacy] Set Tag ID
+#### ID de etiqueta
 
-**To get the Tag ID and set in-app event postbacks:**
+Para obtener el ID de la etiqueta y establecer los postbacks de eventos in-app:
 
-1. In your Pinterest Business Account, go to Ads > Conversions and copy the Tag ID.  
-   If you don't have a tag yet, click Create Tag and complete the creation process. Copy the new tag.
-2. In AppsFlyer, in the Pinterest **Active integration** page > **Integration** tab, scroll to **In-app event settings** and enter the Pinterest Tag ID.
+1. En tu cuenta comercial de Pinterest, ve a **Anuncios** > **Conversiones** y copia el **ID de la etiqueta**.  
+   Haz clic en **Crear etiqueta** si aún no tienes una y completa el proceso de creación. Copia la nueva etiqueta.
+2. En AppsFlyer, en la configuración de integración de Pinterest, desplázate a **Configuraciones de eventos in-app** e ingresa el ID de la etiqueta de Pinterest.
 
-### In-app event postbacks
+### Habilitar la atribución por impresiones
 
-In this section, you can map your AppsFlyer events with Pinterest via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer con Pinterest mediante postbacks.
 
-1. In AppsFlyer, in the Pinterest integration settings, scroll to **In-app event postbacks.**
-2. Turn on **In-App Event Postbacks**.
-3. Set the in-app event postback window.
-4. Select the postback settings and mappings for events.
+1. Configuración de la campaña de Pinterest
+2. Activa **Postbacks de evento in-app.**
+3. Configura la ventana de postbacks de eventos in-app.
+4. Selecciona la configuración de postback y los mapeos para los eventos.
 
-| Parameter Name | Description |
+| Nombre del parámetro | Descripción |
 | --- | --- |
-| <span id="appsflyer-event-name"></span>**AppsFlyer event name** | The name of the event, as received by AppsFlyer, either from the SDK integrated with your app or from server-to-server events.   <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| <span id="partner-event-name"></span>**Partner event name** | The unique name of the event, as defined on Pinterest's side. For the Pinterest event names, see the <Anchor target="_blank" href="https://developers.pinterest.com/docs/api-features/track-conversion-events/#understand-conversion-events">Pinterest documentation.</Anchor> |
-| <span id="to-users-from"></span>**To users from** | <ul><li>**This partner only:** For events coming **only** from users attributed to this partner.</li><li>**All media sources including organic:** To have your entire user base available to be reported to the partner.</li></ul> |
-| <span id="including"></span>**Including** | Select if event revenue or parameter values are sent to the partner in the postback, or if this data isn’t included.<br /><br />AppsFlyer can send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter. Or, AppsFlyer can send all the parameters including the revenue value (if it exists in the event). |
+| <span id="appsflyer-event-name"></span>**Nombre del evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK integrado con tu aplicación o desde eventos de servidor a servidor.  <br /> **Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| <span id="partner-event-name"></span>**Nombre del evento del partner** | El nombre o ID único de cada evento tal y como se define en Pinterest.  <br /> Obtén el ID de evento correspondiente de Pinterest y configúralo en el campo de texto. |
+| <span id="to-users-from"></span>**Para usuarios de** | <ul><li>Nota</li><li>**Solo este partner** para eventos que provienen **solo** de usuarios atribuidos a este partner<br />**Todas las fuentes de medios, incluidas las orgánicas** para que toda tu base de usuarios esté disponible para ser reportada al partner.</li></ul> |
+| <span id="including"></span>**Incluye** | Selecciona si los ingresos por eventos o los valores de parámetros se envían al partner en el postback, o si estos datos no están incluidos.<br /><br />AppsFluer puede envían todos los parámetros del evento enriquecido in-app, excepto el parámetro de ingresos, que se encuentra en el parámetro **af\_revenue**. O bien, AppsFlyer puede envían todos los parámetros, incluyendo el valor de los ingresos (si existe en el evento). |
 
-5. Click **Add Event** to add an SDK Event to the list.
+5. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlace de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
-#### Attribution link for retargeting campaign
+#### Enlace de atribución para la campaña de retargeting
 
-Pinterest advises using OS-specific attribution links for retargeting campaigns. Select the **Use a single-platform link** option and add the necessary parameters to the retargeting attribution link.
+Pinterest recomienda utilizar enlaces de atribución específicos del sistema operativo para las campañas de retargeting. Selecciona la opción **Usar un enlace de plataforma única** y agrega los parámetros necesarios al enlace de atribución de retargeting.
 
-#### Deep Link URL
+#### URL de deep link
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Deep linking from within a pin will work correctly only when your app is allowlisted by Pinterest. Contact your Pinterest representative or email [apps@pinterest.com](mailto:apps@pinterest.com) to be allowlisted for deep linking.
+> Los deep linking desde un pin solo funcionarán correctamente cuando tu aplicación esté en la lista de permitidos de Pinterest.
+> Ponte en contacto con tu representante de Pinterest o envía un correo electrónico a [apps@pinterest.com](mailto:apps@pinterest.com) para que te permitan incluirlos en la lista de deep linking.
 
-Use this field if the link is meant to deep link users to any specific activity within your app.
+Utiliza este campo si el enlace tiene por objeto establecer deep links entre los usuarios y cualquier actividad específica dentro de tu aplicación.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costo">
 
-Once you set Pinterest's cost, don't change the name of any running campaign, ad set, or single ad, nor use dynamic macros with the campaign name parameter, as they may cause serious discrepancies or missing cost data.
+Una vez que hayas establecido el coste de Pinterest, no cambies el nombre de ninguna campaña, conjunto de anuncios o anuncio único que se esté ejecutando, ni utilices macros dinámicas con el parámetro del nombre de la campaña, ya que pueden provocar discrepancias importantes o la falta de datos de costes.
 
-### Enabling and testing Pinterest integration
+### Habilitar y probar la integración de Pinterest
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de los costos por API. Consulta <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">la tabla de integración de costos de redes de publicidad</Anchor> para obtener más información sobre las dimensiones, métricas y funciones admitidas. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-### Cost data sync status
+### Estado de sincronización de datos de costos
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el dashboard de estado de la integración de costos (e ingresos por publicidad) o en el dashboard de la ad network individual. 
 
-### Stop Pinterest cost sync
+### Detener la sincronización de costos de Pinterest
 
-**To delete a connected account:**
+**Para eliminar una cuenta conectada:**
 
-* <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">In the actions column, hover over an account, click ***Delete connection***</Anchor>. Once deleted, AppsFlyer stops getting the cost. Deleting the connection doesn't impact historical data.
+* <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">En la columna “Acciones”, desplaza el cursor sobre una cuenta y haz clic en ***Eliminar conexión***</Anchor>. Una vez eliminado, AppsFlyer deja de recibir el costo. La eliminación de la conexión no afecta a los datos históricos.
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de ingresos por publicidad">
 
-Ad Revenue data is not supported by this partner.
+Este partner no admite ingresos por publicidad.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Pinterest. Note that even if attribution is disabled for Pinterest, the permissions tab is active and you can grant control to Pinterest.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a Pinterest. Ten en cuenta que, aunque la atribución esté deshabilitada en Pinterest, la pestaña de permisos está activa y puedes conceder el control a Pinterest.
 
-Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions you can grant Pinterest</Anchor>.
-
-</Accordion>
+Obtén más información sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos que puedes conceder a Pinterest</Anchor>.
 
 </Accordion>
 
-## Troubleshooting
+</Accordion>
 
-Cost tab error message: *No matching data* means that the Pinterest account that you connected to AppsFlyer is not the correct Pinterest account. No data was found that matches the app. You should log in to Pinterest with different credentials
+## Resolución de problemas
 
-<div data-zendesk-anchors="h_01H95QTA3ZZ9GJW9EN1VZ01TH2=note h_01H95QTA3Z5HXW39AHAF8FMFWH=set-up-pinterest h_01H95QTA3ZNQWBRA86E6TRQ46Y=integration-tab h_01H95QTA3ZGEM34HY1A7NC8NX7=activate-partner h_01H95QTA3Z0NW9V51D8J7MHEX0=general-settings inapp-events-settings=in-app-events-settings h_01JTDP2T0BFP5WP03X5EMXVAWA=in-app-events-settings %5Blegacy%5D-set-tag-id=legacy-set-tag-id h_01JTMX6DD0G101KC0HQ0D34S48=legacy-set-tag-id inapp-event-postbacks=in-app-event-postbacks h_01JTDP2T0BTW986GN5HSWPR3JH=in-app-event-postbacks h_01H95QTA3ZT7PVGAJW5AKPC186=attribution-link-tab attribution-link-for-retargeting-campaigns=attribution-link-for-retargeting-campaign h_01H95QTA3ZPQZ422AB2JBZAS07=attribution-link-for-retargeting-campaign h_01H95QTA3ZT23CYTCE2V3728MD=deep-link-url h_01H95QTA3ZYHQED2T5B2FA5PV8=note-1 h_01H95QTA3Z3XJDM5YRXFK7DA0E=cost-tab h_01H95QTA3ZZ56R8EZBJY1ESX5W=enabling-and-testing-pinterest-integration h_01H95QTA3ZST8WS3TAR79H06FM=cost-data-sync-status h_01H95QTA3ZFCJ82E3YDMP7S716=stop-pinterest-cost-sync h_01H95QTA3ZM2REWR2A5DHK1DSA=ad-revenue-tab h_01H95QTA3ZM4WPHV3MB00WZXSB=permissions-tab h_01H95QTA3ZP20DSJQGY4QQX0Z7=troubleshooting" />
+Mensaje de error de la pestaña de costos: *La ausencia de datos coincidentes* significa que la cuenta de Pinterest que conectaste a AppsFlyer no es la cuenta de Pinterest correcta. No se encontraron datos que coincidan con la aplicación. Debes iniciar sesión en Pinterest con credenciales diferentes
+
+<div data-zendesk-anchors="h_01H95QTA3ZZ9GJW9EN1VZ01TH2=nota set-up-pinterest=configurar-pinterest h_01H95QTA3Z5HXW39AHAF8FMFWH=configurar-pinterest h_01H95QTA3ZNQWBRA86E6TRQ46Y=integration-tab activate-partner=activar-partner h_01H95QTA3ZGEM34HY1A7NC8NX7=activar-partner general-settings=configuraci%C3%B3n-general h_01H95QTA3Z0NW9V51D8J7MHEX0=configuraci%C3%B3n-general inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01JTDP2T0BFP5WP03X5EMXVAWA=configuraci%C3%B3n-de-eventos-in-app %5Blegacy%5D-set-tag-id=id-de-etiqueta h_01JTMX6DD0G101KC0HQ0D34S48=id-de-etiqueta inapp-event-postbacks=habilitar-la-atribuci%C3%B3n-por-impresiones h_01JTDP2T0BTW986GN5HSWPR3JH=habilitar-la-atribuci%C3%B3n-por-impresiones h_01H95QTA3ZT7PVGAJW5AKPC186=attribution-link-tab attribution-link-for-retargeting-campaigns=enlace-de-atribuci%C3%B3n-para-la-campa%C3%B1a-de-retargeting h_01H95QTA3ZPQZ422AB2JBZAS07=enlace-de-atribuci%C3%B3n-para-la-campa%C3%B1a-de-retargeting deep-link-url=url-de-deep-link h_01H95QTA3ZT23CYTCE2V3728MD=url-de-deep-link h_01H95QTA3ZYHQED2T5B2FA5PV8=nota-1 h_01H95QTA3Z3XJDM5YRXFK7DA0E=cost-tab enabling-and-testing-pinterest-integration=habilitar-y-probar-la-integraci%C3%B3n-de-pinterest h_01H95QTA3ZZ56R8EZBJY1ESX5W=habilitar-y-probar-la-integraci%C3%B3n-de-pinterest cost-data-sync-status=estado-de-sincronizaci%C3%B3n-de-datos-de-costos h_01H95QTA3ZST8WS3TAR79H06FM=estado-de-sincronizaci%C3%B3n-de-datos-de-costos stop-pinterest-cost-sync=detener-la-sincronizaci%C3%B3n-de-costos-de-pinterest h_01H95QTA3ZFCJ82E3YDMP7S716=detener-la-sincronizaci%C3%B3n-de-costos-de-pinterest h_01H95QTA3ZM2REWR2A5DHK1DSA=ad-revenue-tab h_01H95QTA3ZM4WPHV3MB00WZXSB=permissions-tab troubleshooting=resoluci%C3%B3n-de-problemas h_01H95QTA3ZP20DSJQGY4QQX0Z7=resoluci%C3%B3n-de-problemas" />

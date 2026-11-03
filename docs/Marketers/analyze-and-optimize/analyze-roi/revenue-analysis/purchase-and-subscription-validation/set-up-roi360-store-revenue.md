@@ -1,5 +1,5 @@
 ---
-title: Set up ROI360 store revenue
+title: Configuración de Store Revenue de ROI360
 metadata:
   keywords:
     - Premium
@@ -14,75 +14,74 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2025-12-22T11:05:11Z'
-  edited_at: '2026-07-01T17:06:19Z'
+  edited_at: '2026-08-12T11:48:41Z'
   id: 42158608158353
-  locale: en-us
+  locale: es
   section: Purchase and subscription validation
   section_id: 42227328788241
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/42158608158353-Set-up-ROI360-store-revenue
+  url: https://support.appsflyer.com/hc/es/articles/42158608158353
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Set up the AppsFlyer ROI360 store revenue solution.
+> **De un vistazo:** Configura la solución de ingresos de tienda ROI360 de AppsFlyer.
 
-> 🚧 **Important!**
+> 🚧 **Dos puntos (:)**
 >
-> ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).
+> Los ingresos de la tienda ROI360 solo están disponibles para los clientes del plan premium de ROI360. Para verificar tu plan o realizar una actualización, ponte en contacto con tu Customer Success Manager (CSM).
 
-## Overview
+## Visión general
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> For more information about ROI360, including how it works and how to enable it in AppsFlyer, see <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue">About ROI360 Store revenue</Anchor>.
+> Para obtener más información sobre ROI360, incluido cómo funciona y cómo habilitarlo en AppsFlyer, consulta <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue">Sobre los ingresos de tienda de ROI360</Anchor>.
 
-To set up ROI360 Store Revenue, complete the following steps in order:
+Para configurar los ingresos de tienda de ROI360, completa los siguientes pasos en este orden:
 
-1. Set up store credentials (iOS and Android):
-   * [iOS:](#step-1-ios-set-up-app-store-connect-keys) Configure App Store Connect keys (In-App Purchase key, Key ID, and Issuer ID) in AppsFlyer.
-   * [Android](#step-1-android-set-up-service-account-key-and-permissions): Configure a Google Cloud service account, set the required permissions in Google Play Console, and upload the service account JSON key to AppsFlyer.
-2. Configure server notifications (iOS and Android):
-   * [iOS](#step-2-ios-set-up-app-store-server-notifications): Set up App Store Server Notifications, either by sending notifications directly to AppsFlyer (recommended) or by forwarding them from your own endpoint, and validate the integration.
-   * [Android](#step-2-android-set-up-google-play-server-notifications): Set up Google Play real-time developer notifications (RTDN), either by allowing Google Play to send notifications directly to AppsFlyer (recommended) or by forwarding them via Pub/Sub.
-3. [Implement the SDK Connector](#step-3-implement-sdk-connector): Prepare developers to integrate the AppsFlyer Purchase SDK Connector.
-4. [Verify SDK implementation](#step-4-verify-sdk-implementation): Test sandbox in-app purchases and subscriptions on both platforms to confirm that SDK events and server notifications are correctly received and processed by AppsFlyer.
-5. [Verify and update settings](#step-5-verify-and-update-settings): Review and confirm the statuses of purchase validation, refund handling, subscription measurement, and store integration to ensure accurate, ongoing revenue attribution across platforms.
-6. [Release app versions](#step-6-release-the-app-versions-with-the-sdk-connector): Release updated app versions with the SDK Connector integrated, ensuring sandbox flags are disabled and validation rules allow the required revenue events.
+1. Configura las credenciales de la tienda (iOS y Android):
+   * [iOS:](#paso-1-ios-configura-las-claves-de-app-store-connect) Configura las claves de App Store Connect (clave de compra in-app, ID de clave e ID del emisor) en AppsFlyer.
+   * [Android](#paso-1-android-configurar-la-clave-de-cuenta-de-servicio-y-los-permisos): Configura una cuenta de servicio de Google Cloud, establece los permisos necesarios en Google Play Console y sube a AppsFlyer la clave JSON de la cuenta de servicio.
+2. Configura las notificaciones de servidor (iOS y Android):
+   * [iOS](#paso-2-ios-configura-las-notificaciones-del-servidor-de-app-store): Configura las notificaciones del servidor de App Store, ya sea enviándolas directamente a AppsFlyer (recomendado) o reenviándolas desde tu propio endpoint, y valida la integración.
+   * [Android](#paso-2-android-configura-las-notificaciones-del-servidor-de-google-play): Configura las notificaciones para desarrolladores en tiempo real de Google Play (RTDN), ya sea permitiendo que Google Play envíe las notificaciones directamente a AppsFlyer (recomendado) o reenviándolas a través de Pub/Sub.
+3. [Implementa el SDK Connector](#paso-3-implementa-el-conector-sdk): Prepara a los desarrolladores para integrar el Purchase SDK Connector de AppsFlyer.
+4. [Verifica la implementación del SDK](#paso-4-verifica-la-implementación-del-sdk): Prueba las compras in-app y las suscripciones de sandbox en ambas plataformas para confirmar que AppsFlyer recibe y procesa correctamente los eventos del SDK y las notificaciones de servidor.
+5. [Verifica y actualiza la configuración](#paso-5-verifica-y-actualiza-la-configuración): Revisa y confirma los estados de la validación de compras, la gestión de reembolsos, la medición de suscripciones y la integración con la tienda para garantizar una atribución de ingresos precisa y continua en todas las plataformas.
+6. [Publica las versiones de la app](#paso-6-lanza-las-versiones-de-la-aplicación-con-el-conector-del-sdk): Publica versiones actualizadas de la app con el SDK Connector integrado, asegurándote de que los indicadores de sandbox estén desactivados y de que las reglas de validación permitan los eventos de ingresos necesarios.
 
-## Step 1 (iOS): Set up App Store Connect Keys
+## Paso 1 (iOS): Configura las claves de App Store Connect
 
-In step 1, obtain the following credentials from App Store Connect and input them in the Revenue Settings page within the AppsFlyer platform.t
+En el paso 1, obtén las siguientes credenciales de App Store Connect e introdúcelas en la página de configuración de ingresos dentro de la plataforma de AppsFlyer
 
-* In-App Purchase key
-* Key ID
-* Issuer ID
+* Clave de compra in-app
+* ID de clave
+* ID del emisor
 
-**Before you start**:
+**Antes de empezar**:
 
-Setting the credentials involves steps performed in both App Store Connect and AppsFlyer. During setup, keep both the App Store Connect and AppsFlyer tabs open.
+La configuración de las credenciales implica pasos realizados tanto en App Store Connect como en AppsFlyer. Durante la configuración, mantén abiertas las pestañas App Store Connect y AppsFlyer.
 
 <div id="11-create-the-app-store-connect-keys" />
 
-<Accordion title="1.1 Create the App Store Connect keys">
+<Accordion title="1.1 Crear las claves de App Store Connect">
 
-To set iOS credentials, follow these step:
+Para configurar las credenciales de iOS, sigue estos pasos:
 
-1. In the App Store Connect, go to **Users and Access**
+1. En App Store Connect, ve a **Usuarios y acceso**
 
-   [![](https://files.readme.io/915adbb054060c95ccdf784ecb5690e7f417e5851eda5a652727947698a03c3d-42158608027793.png)](https://files.readme.io/915adbb054060c95ccdf784ecb5690e7f417e5851eda5a652727947698a03c3d-42158608027793.png)
-2. Go to **Users and Access** > **Integrations**, and from the **Keys** list, select **In-App Purchase**.
+   [![](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)
+2. Ve a **Usuarios y acceso** > **Integraciones** y, en la lista de **Claves** , selecciona **Compra in-app**.
 
-   [![](https://files.readme.io/a24c642acd6d2470cd0b7e575e9ecb36c40eaef9d5fa9e8337a758e2b404ba14-42158637491729.png)](https://files.readme.io/a24c642acd6d2470cd0b7e575e9ecb36c40eaef9d5fa9e8337a758e2b404ba14-42158637491729.png)
-3. Click + to generate a new In-App Purchase key.
+   [![](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)
+3. Haz clic en + para generar una clave de compra in-app nueva.
 
-   [![](https://files.readme.io/2ac7ba9197d1d3f134539eba3f315f497ccd8664a25ed6144606199c125dbba6-42158608030609.png)](https://files.readme.io/2ac7ba9197d1d3f134539eba3f315f497ccd8664a25ed6144606199c125dbba6-42158608030609.png)
-4. Enter a name for your API key.
-5. Click **Generate**.
-6. Click **Download In-App Purchase Key** next to the key you just generated to download it. **Note**: You can only download the key once.
-7. Copy the **Key ID** of the key you just generated and paste it into the AppsFlyer purchases & subscriptions setting for **Key ID**.
+   [![](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)
+4. Ingresa un nombre para tu clave de API.
+5. Haz clic en **Generar**.
+6. Haz clic en **Descargar clave de compra in-app** junto a la clave que acabas de generar para descargarla. **Nota**: Solo puedes descargar la clave una vez.
+7. Copia el **ID de clave** de la clave que acabas de generar y pégalo en la configuración de compras & suscripciones de AppsFlyer para **ID de clave**.
 
-   [![](https://files.readme.io/7a7be640b7b338aba367c37f4eeb01911cba88564f72b88749c19d8e5c31d47c-42158608031633.png)](https://files.readme.io/7a7be640b7b338aba367c37f4eeb01911cba88564f72b88749c19d8e5c31d47c-42158608031633.png)
-8. Copy the **Issuer ID**. **Note**: If the **Issuer ID** is not displayed at the top of the page, create an App Store Connect API key (with any access level). After that, the Issuer ID will appear at the top of the page for the In-App Purchase key.
+   [![](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)
+8. Copia el **ID del emisor**. **Nota**: Si el **ID del emisor** no se muestra en la parte superior de la página, crea una clave de API de App Store Connect (con cualquier nivel de acceso). Después de eso, el ID del emisor aparecerá en la parte superior de la página para la clave de compra in-app.
 
    [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
 
@@ -90,204 +89,205 @@ To set iOS credentials, follow these step:
 
 <div id="12-set-the-app-store-connect-key-in-appsflyer" />
 
-<Accordion title="1.2 Set the App Store Connect key in AppsFlyer">
+<Accordion title="1.2 Configura la clave de App Store Connect en AppsFlyer">
 
-1. <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#activate-roi360-store-revenue">Enable ROI360 Store revenue</Anchor>.
-2. Under the **App Store Connect keys** step, click [<Image alt="" src="https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png" width="2%" />](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png) **Upload** in the **In-App Purchase key** field to upload the p8 file.
-3. In the section titled **App Store Connect keys**, paste the values you copied from App Store Connect.
+1. <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue#activa-los-ingresos-de-tienda-de-roi360">Activa los ingresos de tienda de ROI360</Anchor>.
+2. En el paso **Claves de App Store Connect** , haz clic en [<Image alt="" src="https://files.readme.io/33006d5242412a3e5d81196002067c119f188b28456634b898d1f10b44dad2be-27881642552593.png" width="2%" />](https://files.readme.io/33006d5242412a3e5d81196002067c119f188b28456634b898d1f10b44dad2be-27881642552593.png) **Cargar** en el campo **Clave de compra in-app** para cargar el archivo p8.
+3. En la sección titulada **Claves de App Store Connect**, pega los valores que copiaste de App Store Connect.
 
-   * **Key ID**
+   * **ID de clave**
 
-   * **Issuer ID**
-4. Click **Validate keys** to ensure the keys you entered are correct. **Note: The Validate key** may not work if your app has not yet been published in the App Store.
-5. click **Save and next**
+   * **ID del emisor**
+4. Haz clic en **Validar claves** para asegurarte de que las claves que has introducido sean correctas. **Nota: Es posible que Validar clave** no funcione si tu aplicación aún no se ha publicado en la App Store.
+5. haz clic en **Guardar y siguiente**
 
 </Accordion>
 
-## Step 1 (Android): Set up service account key and permissions
+## Paso 1 (Android): Configurar la clave de cuenta de servicio y los permisos
 
-In step 1, you can obtain the following credentials from App Store Connect and input them in the Revenue Settings page within the AppsFlyer platform.
+En el paso 1, puedes obtener las siguientes credenciales de App Store Connect e ingresarlas en la página de Configuración de ingresos dentro de la plataforma de AppsFlyer.
 
-**Before you start**:
+**Antes de empezar**:
 
-* Setting up in-app purchase and subscription revenue measurement involves steps performed in the <Anchor target="_blank" href="https://cloud.google.com/">Google Cloud Platform</Anchor>, <Anchor target="_blank" href="https://play.google.com/console/">Google Play Console</Anchor>, and the <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">AppsFlyer UI</Anchor>. We recommend keeping tabs on all three places open throughout the setup.
-* Setting up in the AppsFlyer UI requires admin permissions.
+* La configuración de la medición de las compras in-app y de los ingresos por suscripción implica pasos que se realizan en <Anchor target="_blank" href="https://cloud.google.com/">Google Cloud Platform</Anchor>, <Anchor target="_blank" href="https://play.google.com/console/">Google Play Console</Anchor>, y la <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">interfaz de usuario de AppsFlyer</Anchor>. Te recomendamos que mantengas un control de los tres lugares abiertos durante toda la configuración.
+* La configuración en la interfaz de usuario de AppsFlyer requiere permisos de administrador.
 
 <div id="11-link-your-google-play-developer-account-to-your-google-cloud-project" />
 
-<Accordion title="1.1. Link your Google Play Developer Account to your Google Cloud Project">
+<Accordion title="1.1. Vincula tu cuenta de desarrollador de Google Play a tu proyecto de Google Cloud">
 
-**Prerequisites**: Access to Google Play Console and Google Cloud Project.
+**Requisitos previos**: Acceso a Google Play Console y Google Cloud Project.
 
-**To link your Google Play Developer Account to your Google Cloud Project, follow these steps**:
+**Para vincular tu cuenta de desarrollador de Google Play a tu Google Cloud Project, sigue estos pasos**:
 
-1. In the Google Play Console, go to your Google Play Developer Account.
-2. Link the account to your Google Cloud project. For instructions, see this <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">Google help topic</Anchor>.
-3. Enable the Google Play Developer API. For instructions, see <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">this Google help topic</Anchor>.
+1. En Google Play Console, ve a tu cuenta de desarrollador de Google Play.
+2. Vincula la cuenta a tu proyecto de Google Cloud. Para obtener instrucciones, consulta este <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">tema de ayuda de Google</Anchor>.
+3. Habilita la API para desarrolladores de Google Play. Para obtener instrucciones, consulta <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">este tema de ayuda de Google</Anchor>.
 
-   [![](https://files.readme.io/f30f2ed9081b4ad0a5455e5592838cb70a47c49767b69eaaaa73011a60bc4b8d-42158637503633.png)](https://files.readme.io/f30f2ed9081b4ad0a5455e5592838cb70a47c49767b69eaaaa73011a60bc4b8d-42158637503633.png)
+   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
 
 </Accordion>
 
 <div id="12-configure-your-service-account-in-the-google-cloud-platform" />
 
-<Accordion title="1.2. Configure your Service Account in the Google Cloud Platform">
+<Accordion title="1.2. Configuración de la cuenta de servicio en Google Cloud Platform">
 
-**Prerequisites**: Access to Google Cloud Platform.
+**Requisitos previos**: Acceso a Google Cloud Platform.
 
-**To configure your service account, follow these steps**:
+**Para configurar tu cuenta de servicio, sigue estos pasos**:
 
-1. Create or locate the **Service Account**:
-   1. Go to the **Service accounts** section in the Google Cloud Platform and click **Create Service Account**.
+1. Crea o localiza la **Cuenta de Servicio**:
+   1. Ve a la **Service accounts** sección en Google Cloud Platform y haz clic en **Crear cuenta de servicio**.
 
-      [![](https://files.readme.io/639ded7c1b878913c33b350d9931620b8c1e6d3eda826a35c44141a22a562488-42158637505169.png)](https://files.readme.io/639ded7c1b878913c33b350d9931620b8c1e6d3eda826a35c44141a22a562488-42158637505169.png)
-   2. Complete the service account details.
+      [![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
+   2. Rellena los datos de la cuenta de servicio.
 
-      [![](https://files.readme.io/7f5cf6b02e8d33bab5fece9170c30be03dea5d27309d716f9017bc9ec418ca6b-42158637508113.png)](https://files.readme.io/7f5cf6b02e8d33bab5fece9170c30be03dea5d27309d716f9017bc9ec418ca6b-42158637508113.png)
-   3. Copy the email address.
+      [![](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)
+   3. Copia la dirección de correo electrónico.
 
-      [![](https://files.readme.io/6a1c5e9fe99c89418b6039cd23285e85c41211e154e5000d72347bbf9a26f963-42158608046993.png)](https://files.readme.io/6a1c5e9fe99c89418b6039cd23285e85c41211e154e5000d72347bbf9a26f963-42158608046993.png)
-   4. Click **Create and continue**.
+      [![](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)
+   4. Haz clic en **Crear y continuar**.
 
-      [![](https://files.readme.io/118bdf5197362d8df8f8c14b59b1c377fb6badc17d152c7ffb8b62037079ec07-42158608050833.png)](https://files.readme.io/118bdf5197362d8df8f8c14b59b1c377fb6badc17d152c7ffb8b62037079ec07-42158608050833.png)
-   5. In the **Grant this service account access to the project** step, select the **Pub/sub** subscriber role.
+      [![](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)
+   5. En el paso **Otorgar a esta cuenta de servicio acceso al proyecto** , selecciona el **Pub/sub** rol de suscriptor.
 
-      [![](https://files.readme.io/c015aafa83ec986d4ed9de867774ef7a277e34f6b90086580691d884aff28646-42158637513617.png)](https://files.readme.io/c015aafa83ec986d4ed9de867774ef7a277e34f6b90086580691d884aff28646-42158637513617.png)
-   6. Click **Continue** > **Done**.
+      [![](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)
+   6. Haz clic en **Continuar** > **Hecho**.
 
-      [![](https://files.readme.io/e6618c1f51dff42982380b1f7ac994c31edaa9862b7ec3343b3c8e5d0207bc71-42158637515537.png)](https://files.readme.io/e6618c1f51dff42982380b1f7ac994c31edaa9862b7ec3343b3c8e5d0207bc71-42158637515537.png)
-2. Download the **Service Account Private Key**:
-   1. In the Google Cloud Platform, go to the **Service accounts** section, find the account you want (the one you just created) from the list, and click the **More actions** icon.
-   2. Click **Manage keys**.
+      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
+2. Descarga la **Clave privada de la cuenta de servicio**:
+   1. En Google Cloud Platform, ve a la sección **Service accounts** , busca la cuenta que deseas (la que acabas de crear) en la lista y haz clic en el icono **More actions** .
+   2. Haz clic en **Gestionar claves**.
 
-      [![](https://files.readme.io/9c2e3e6e1e069325c4a47a0e1e638805cfb9235f6c3fca6a32b29e530074b6cf-42158637519889.png)](https://files.readme.io/9c2e3e6e1e069325c4a47a0e1e638805cfb9235f6c3fca6a32b29e530074b6cf-42158637519889.png)
-   3. Click **Add key** > **Create new key**.
+      [![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
+   3. Haz clic en **Agregar clave** > **Crear nueva clave**.
 
-      [![](https://files.readme.io/beb1e5a984ca5335f51ffa44d2532ddbfa1147ee2a5a88a543de640c7248f7bd-42158637522321.png)](https://files.readme.io/beb1e5a984ca5335f51ffa44d2532ddbfa1147ee2a5a88a543de640c7248f7bd-42158637522321.png)
-   4. In the **Create private key** popup, under **Key type**, select **JSON**, and click **Create**.
+      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+   4. En la ventana emergente **Create private key** , en **Key type** , selecciona **JSON** y haz clic **Create** .
 
-      [![](https://files.readme.io/a3b7c0468b9ba1984a18340519ca59a40b12ee52066a2faae6c5b21931f8828b-42158608067089.png)](https://files.readme.io/a3b7c0468b9ba1984a18340519ca59a40b12ee52066a2faae6c5b21931f8828b-42158608067089.png)
-   5. Click **Create**. The private key JSON file is downloaded.
+      [![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)
+   5. Haz clic en **Crear**. Se descarga el archivo JSON de la clave privada.
 
-      [![](https://files.readme.io/1a577ef4d159c73ff76a6a79a45a7909a3f9ee422abc5990482b3b45e308d666-42158637525649.png)](https://files.readme.io/1a577ef4d159c73ff76a6a79a45a7909a3f9ee422abc5990482b3b45e308d666-42158637525649.png)
-   6. Save the JSON key file, which will be uploaded to AppsFlyer later. **Note**! You must save the key; it can't be retrieved later. If you don't save it, you will have to create an entirely new key
+      [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
+   6. Guarda el archivo de clave JSON, que se cargará en AppsFlyer más tarde.   
+      [Práctica recomendada]: Debes guardar la clave; no podrás recuperarla más tarde. Si no la guardas, tendrás que crear una clave completamente nueva
 
 </Accordion>
 
 <div id="13-set-api-access-permissions-in-google-play-console" />
 
-<Accordion title="1.3. Set API access permissions in Google Play Console">
+<Accordion title="1.3. Establecer permisos de acceso a la API en Google Play Console">
 
-**Prerequisites**: Access to Google Play Console.
+**Requisitos previos**: acceso a la Google Play Console.
 
-**Note**: It can take time (sometimes even 24 hours) after setting service account credentials and permissions to be able to use them. This may cause you to receive errors in later steps.
+**Nota**: Puede llevar un tiempo (a veces incluso 24 horas) después de configurar las credenciales y los permisos de la cuenta de servicio hasta poder utilizarlos. Esto puede provocar errores en pasos posteriores.
 
-**To set API access permissions in Google Play Console**:
+**Para establecer permisos de acceso a la API en Google Play Console**:
 
-1. In the Google Play Console, go to **Users and permissions**, find the service account you created, and click **Invite new users**.
+1. En Google Play Console, ve a **Usuarios y permisos**, busca la cuenta de servicio que has creado y haz clic en **Invitar a nuevos usuarios**.
 
-   [![](https://files.readme.io/eab4eb0b7357f890d7c86fe4095c031d82de7ba2ab6ddb32a472a521310fdaab-42158637526929.png)](https://files.readme.io/eab4eb0b7357f890d7c86fe4095c031d82de7ba2ab6ddb32a472a521310fdaab-42158637526929.png)
-2. Enter the **Email address** that you copied when you configured your service account in step 1.2.1.3.
+   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
+2. Introduce la **dirección de correo electrónico** que copiaste cuando configuraste tu cuenta de servicio en el paso 1.2.1.3.
 
-   [![](https://files.readme.io/fbac8546bf697a6efa183217fad16a965752bc2f2c9b0b9051b178c2eac15e40-42158608078609.png)](https://files.readme.io/fbac8546bf697a6efa183217fad16a965752bc2f2c9b0b9051b178c2eac15e40-42158608078609.png)
-3. In the **Permissions** section, go to the **Account permissions** tab, and select both:
+   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
+3. En la sección **Permisos** , ve a la pestaña **Permisos de cuenta** y selecciona ambas opciones:
 
-   * View financial data, orders, and cancellation survey responses.
-   * Manage orders and subscriptions.[![](https://files.readme.io/41c44a10091b60e7ad356d864dd26bf313c8ed9ebfc91a4599be71a510c9f26b-42158637529105.png)](https://files.readme.io/41c44a10091b60e7ad356d864dd26bf313c8ed9ebfc91a4599be71a510c9f26b-42158637529105.png)
-4. On the **App permissions** tab, click **Add app,** then select your app. Add multiple apps if needed.
+   * Ver los datos financieros, los pedidos y las respuestas a la encuesta de cancelación.
+   * Gestionar los pedidos y las suscripciones.[![](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)
+4. En la pestaña **Permisos de la aplicación** , haz clic **Agregar aplicación,** y, a continuación, selecciona tu aplicación. Agrega varias aplicaciones si es necesario.
 
-   [![](https://files.readme.io/51457fad5fab7516d5e8d89867796795fbb4b938f723bcaf62b86b33ef3ce096-42158637538961.png)](https://files.readme.io/51457fad5fab7516d5e8d89867796795fbb4b938f723bcaf62b86b33ef3ce096-42158637538961.png)
-5. Click **Invite user.**
+   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
+5. Haz clic en **Invitar usuario.**
 
-   [![](https://files.readme.io/1fe2f95c7f0c06fded8cd14628e37b535d52447ef9261e1c02b8ade1139a1546-42158637541137.png)](https://files.readme.io/1fe2f95c7f0c06fded8cd14628e37b535d52447ef9261e1c02b8ade1139a1546-42158637541137.png)
-6. In the confirmation popup, click **Send invite**.
+   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
+6. En la ventana emergente de confirmación, haz clic en **Enviar invitación**.
 
-   [![](https://files.readme.io/7e643e577d3134dcf352eeeafc26cacbcb8dcee718892f2ca14132fa593c1015-42158608083729.png)](https://files.readme.io/7e643e577d3134dcf352eeeafc26cacbcb8dcee718892f2ca14132fa593c1015-42158608083729.png)
+   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
 
 </Accordion>
 
 <div id="14-upload-the-service-account-private-key-to-appsflyer" />
 
-<Accordion title="1.4. Upload the Service Account Private Key to AppsFlyer">
+<Accordion title="1.4. Cargar la clave privada de la cuenta de servicio en AppsFlyer">
 
-Upload and validate the Google JSON key you downloaded in [step 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
+Carga y valida la clave JSON de Google que descargaste en el [paso 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
 
-**Prerequisites**: Admin access to AppsFlyer.
+**Requisitos previos**: acceso de administrador a AppsFlyer.
 
-**To upload the Service Account Private Key to AppsFlyer, follow these steps**:
+**Para cargar la clave privada de la cuenta de servicio en AppsFlyer, sigue estos pasos**:
 
-1. <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#activate-roi360-store-revenue">Enable ROI360 Store revenue</Anchor>.
-2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key** field, click [<Image alt="" src="https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png" width="2.2%" />](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)  **(Upload icon).**
-3. Upload the JSON file you downloaded in [step 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
-4. Click **Validate Key.** **Note:**
-   * After setting service account credentials and permissions, it can take up to 24 hours to be able to use them. This may cause you to receive errors when trying to validate the key or perform a validation test.
-   * To work around the 24-hour wait time, in the Google Play Console, navigate to any application, then go to **Monetize** > **Products** > **Subscriptions/In-app products**, and make a change. For example, edit the description of your product and save it. This should instantly update the account credentials and permissions. You can then undo the changes.
-5. Click **Save and Next**.
+1. <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue#activa-los-ingresos-de-tienda-de-roi360">Activa Store Revenue de ROI360</Anchor>.
+2. En el paso **Clave de cuenta de servicio y permisos** , en el campo **Cargar clave JSON de Google** , haz clic [<Image alt="" src="https://files.readme.io/33006d5242412a3e5d81196002067c119f188b28456634b898d1f10b44dad2be-27881642552593.png" width="2.2%" />](https://files.readme.io/33006d5242412a3e5d81196002067c119f188b28456634b898d1f10b44dad2be-27881642552593.png)  **(icono de carga).**
+3. Carga el archivo JSON que descargaste en el [paso 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
+4. Haz clic en **Validar clave.** **Nota:**
+   * Después de configurar las credenciales y los permisos de la cuenta de servicio, puede pasar algún tiempo (a veces incluso 24 horas) hasta que se puedan utilizar. Esto puede hacer que recibas errores al intentar validar la clave o realizar una prueba de validación.
+   * Para evitar el tiempo de espera de 24 horas, en la Google Play Console, ve a cualquier aplicación; luego, ve a **Monetize** > **Products** > **Subscriptions/In-app products**, y realiza un cambio. Por ejemplo, edita la descripción de tu producto y guárdalo. Esto debería actualizar instantáneamente las credenciales y permisos de la cuenta. Luego puedes deshacer los cambios.
+5. Haz clic en **Guardar y siguiente**.
 
 </Accordion>
 
-## Step 2 (iOS): Set up App Store server notifications
+## Paso 2 (iOS): Configura las notificaciones del servidor de App Store
 
-Set how App Store notifications are received in AppsFlyer.
+Configura cómo se reciben las notificaciones de la App Store en AppsFlyer.
 
-* If you already have an App Store server notifications endpoint configured in App Store Connect (for example, your own backend or another service), choose between **Option 1 (recommended)** or **Option 2**.
-* If you have not yet configured an endpoint in App Store Connect, choose **Option 1**.
+* Si ya tienes configurado un endpoint de notificaciones del servidor de la App Store en App Store Connect (por ejemplo, tu propio backend u otro servicio), elige entre la **Opción 1 (recomendada)** o la **Opción 2**.
+* Si todavía no has configurado un endpoint en App Store Connect, elige la **Opción 1**.
 
-#### Option 1 (Recommended) - AppsFlyer as the primary endpoint
+#### Opción 1 (recomendada): AppsFlyer como endpoint principal
 
-Replace the existing App Store Connect notification URL with the AppsFlyer endpoint, and add your previous endpoint in AppsFlyer as a forwarding destination. Your current subscription logic and workflows remain unchanged and continue to function as expected.
+Sustituye la URL de notificaciones actual de App Store Connect por el endpoint de AppsFlyer y añade tu endpoint anterior en AppsFlyer como destino de reenvío. La lógica y los flujos de trabajo actuales de tu suscripción no cambian y siguen funcionando como se espera.
 
-The notification flow for this option is as follows:
+El flujo de notificaciones de esta opción es el siguiente:
 
-1. App Store Connect sends notifications to AppsFlyer
-2. AppsFlyer processes them for ROI360
-3. AppsFlyer forwards all notifications to your existing endpoint **in real time**
+1. App Store Connect envía notificaciones a AppsFlyer
+2. AppsFlyer las procesa para ROI360
+3. AppsFlyer reenvía todas las notificaciones a tu endpoint existente **en tiempo real**
 
-To use this option, complete steps [2.1](#21-copy-the-appsflyer-server-notifications-endpoint), [2.2](#22-send-notifications-directly-to-appsflyer), and [2.4](#24-test-the-server-notifications-integration).
+Para usar esta opción, completa los pasos [2.1](#21-copy-the-appsflyer-server-notifications-endpoint), [2.2](#22-send-notifications-directly-to-appsflyer) y [2.4](#24-test-the-server-notifications-integration).
 
-#### Option 2 - Your endpoint as the primary endpoint
+#### Opción 2: tu endpoint como endpoint principal
 
-If you prefer to keep your existing endpoint as the primary destination, configure your server to forward App Store server notifications to AppsFlyer.
+Si prefieres mantener tu endpoint existente como destino principal, configura tu servidor para reenviar las notificaciones del servidor de App Store a AppsFlyer.
 
-To use this option, skip steps 2.1, 2.2 and complete steps [2.3](#23--optional--forward-notifications-from-your-endpoint-to-appsflyer) and [2.4](#24-test-the-server-notifications-integration)
+Para usar esta opción, omite los pasos 2.1 y 2.2 y completa los pasos [2.3](#23--optional--forward-notifications-from-your-endpoint-to-appsflyer) y [2.4](#24-test-the-server-notifications-integration)
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> Apple supports only one App Store server notification endpoint per app, and sends all notification types to it, not only purchase and subscription notifications. AppsFlyer uses the purchase and subscription notifications to measure revenue. It acknowledges any other type back to Apple, so Apple stops retrying, but does not process or act on it.
+> Apple solo admite un endpoint de notificaciones del servidor de App Store por aplicación y envía a él todos los tipos de notificación, no solo las notificaciones de compra y suscripción. AppsFlyer usa las notificaciones de compra y suscripción para medir los ingresos. Confirma la recepción de cualquier otro tipo a Apple para que Apple deje de reintentarlo, pero no lo procesa ni actúa en consecuencia.
 >
-> If your app relies on notification types beyond purchases and subscriptions (for example, consent notifications), make sure those notifications reach your own server:
+> Si tu aplicación depende de tipos de notificación distintos de las compras y las suscripciones (por ejemplo, notificaciones de consentimiento), asegúrate de que esas notificaciones lleguen a tu propio servidor:
 >
-> * **Option 1:** Keep AppsFlyer as the primary endpoint and enable forwarding (step 2.1). AppsFlyer forwards a copy of all notifications to your endpoint in real time, unchanged from how Apple sent them, including the types AppsFlyer does not process.
-> * **Option 2:** Keep your own endpoint as the primary destination, so your server receives and handles all notification types directly, and forward purchase and subscription notifications to AppsFlyer.
+> * **Opción 1:** Mantén AppsFlyer como endpoint principal y habilita el reenvío (paso 2.1). AppsFlyer reenvía una copia de todas las notificaciones a tu endpoint en tiempo real, sin cambios respecto a cómo las envió Apple, incluidos los tipos que AppsFlyer no procesa.
+> * **Opción 2:** Mantén tu propio endpoint como destino principal para que tu servidor reciba y gestione directamente todos los tipos de notificación, y reenvía a AppsFlyer las notificaciones de compra y suscripción.
 
 <div id="21-copy-the-appsflyer-server-notifications-endpoint" />
 
-<Accordion title="2.1 Copy the AppsFlyer server notifications endpoint">
+<Accordion title="2.1 Copiar el endpoint para notificaciones del servidor de AppsFlyer">
 
-To copy the AppsFlyer server notifications endpoint, follow these steps:
+Para copiar el endpoint de notificaciones del servidor de AppsFlyer, sigue los pasos a continuación:
 
-1. **In AppsFlyer,** in the **App Store server notifications** step, copy the AppsFlyer server notifications endpoint.
-2. If you previously had another App Store server notifications endpoint and want AppsFlyer to forward notifications to it, select **Forward a copy of notifications to your server (relevant for option 1 only).**
-3. Enter your notification forwarding endpoint in the displayed text box.
+1. **En AppsFlyer,** en el paso **App Store server notifications** copia el endpoint de notificaciones del servidor de AppsFlyer.
+2. Si antes tenías otro endpoint de notificaciones del servidor de App Store y quieres que AppsFlyer le reenvíe las notificaciones, selecciona **Reenviar una copia de las notificaciones a tu servidor (solo relevante para la opción 1).**
+3. Ingresa tu endpoint de reenvío de notificaciones en el cuadro de texto que se muestra.
 
 </Accordion>
 
 <div id="22-send-notifications-directly-to-appsflyer" />
 
-<Accordion title="2.2 Send notifications directly to AppsFlyer">
+<Accordion title="2.2 Enviar notificaciones directamente a AppsFlyer">
 
-To send notifications directly to AppsFlyer, set up AppsFlyer as the primary App Store server notifications endpoint.
+Para enviar notificaciones directamente a AppsFlyer, configura AppsFlyer como endpoint principal de notificaciones del servidor de App Store.
 
-1. In **App Store Connect**, in the **App Information** section, scroll to **App Store Server Notifications**, and next to **Production Server URL**, click **Edit**.
+1. En **App Store Connect**, en la **App Information** sección, desplázate hasta **App Store Server Notifications**, y junto a **Production Server URL**, haz clic en **Edit**.
 
    [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
-2. Paste [the AppsFlyer server notifications endpoint copied from AppsFlyer](#21-copy-the-appsflyer-server-notifications-endpoint), select **Version 2 Notifications**, and click **Save**. **Note:** Version 1 notifications are no longer supported. If the notification-version selector does not appear in Apple Store Connect, it means you are already using Version 2.
+2. Pega [el endpoint de notificaciones del servidor de AppsFlyer copiado de AppsFlyer](#21-copy-the-appsflyer-server-notifications-endpoint), selecciona **Version 2 Notifications**, y haz clic en **Save**. **Nota:** Ya no se admiten las notificaciones de la versión 1. Si el selector de versión de notificaciones no aparece en App Store Connect, significa que ya estás usando la versión 2.
 
    [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
-3. In the **App Information** section, scroll to **App Store Server Notifications**, and next to **Sandbox Server URL**, click **Edit**.
+3. En la **App Information** sección, desplázate hasta **App Store Server Notifications**, y junto a **Sandbox Server URL**, haz clic en **Edit**.
 
-   [![](https://files.readme.io/fffd184969c2b29d8dfbb7acdcc53482e47ca7da506b44ab5aa65f3328ca21bb-42158608093969.png)](https://files.readme.io/fffd184969c2b29d8dfbb7acdcc53482e47ca7da506b44ab5aa65f3328ca21bb-42158608093969.png)
-4. Paste [the AppsFlyer server notifications endpoint copied from AppsFlyer](#21-copy-the-appsflyer-server-notifications-endpoint), select **Version 2 Notifications**, and click **Save**. **Note:** Version 1 notifications are no longer supported. If the notification-version selector does not appear in Apple Store Connect, it means you are already using Version 2.
+   [![](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)
+4. Pega [el endpoint de notificaciones del servidor de AppsFlyer copiado de AppsFlyer](#21-copy-the-appsflyer-server-notifications-endpoint), selecciona **Version 2 Notifications**, y haz clic en **Save**. **Nota:** Las notificaciones de la versión 1 ya no reciben soporte. Si el selector de versión de notificaciones no aparece en Apple Store Connect, significa que ya estás usando la versión 2.
 
    [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
 
@@ -295,330 +295,330 @@ To send notifications directly to AppsFlyer, set up AppsFlyer as the primary App
 
 <div id="23--optional--forward-notifications-from-your-endpoint-to-appsflyer" />
 
-<Accordion title="2.3 [Optional] Forward notifications from your endpoint to AppsFlyer">
+<Accordion title="2.3 [Opcional] Reenviar las notificaciones de tu endpoint a AppsFlyer">
 
-Use this step only if you want to keep your endpoint as the primary destination for App Store server notifications, instead of sending notifications directly to AppsFlyer.
+Usa este paso solo si quieres mantener tu endpoint como destino principal de las notificaciones del servidor de la tienda de aplicaciones, en lugar de enviar las notificaciones directamente a AppsFlyer.
 
-This option is not the recommended setup and requires backend implementation. If you already configured AppsFlyer as the primary endpoint in step **2.2** above, skip this step.
+Esta opción no es la configuración recomendada y requiere una implementación de backend. Si ya has configurado AppsFlyer como endpoint principal en el paso **2.2** anterior, omite este paso.
 
-To forward server notifications from your endpoint to AppsFlyer, follow these steps:
+Para reenviar notificaciones del servidor desde tu endpoint a AppsFlyer, sigue estos pasos:
 
-1. In **App Store Connect**, in the **App Information** section, scroll to **App Store Server Notifications**, and next to **Production Server URL**, click **Edit**.
+1. En **App Store Connect**, en la **Información de la aplicación** sección, desplázate hasta **App Store Server Notifications**, y junto a **Production Server URL**, haz clic en **Editar**.
 
    [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
-2. Paste **your server endpoint URL**.
+2. Pega **la URL de tu endpoint del servidor**.
 
    [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
-3. Select **Version 2 Notifications. Note:** Version 1 notifications are **no longer supported**. If the notification-version selector does not appear in Apple Store Connect, it means you are already using Version 2.
-4. Click **Save**.
-5. In **App Store Connect**, in the **App Information** section, scroll to **App Store Server Notifications**, and next to **Sandbox Server URL**, click **Edit**.
+3. Selecciona **Version 2 Notifications. Nota:** Las notificaciones de la versión 1 ya **no reciben soporte**. Si el selector de versión de notificaciones no aparece en Apple Store Connect, significa que ya estás usando la versión 2.
+4. Haz clic en **Guardar**.
+5. En **App Store Connect**, en la **Información de la aplicación** sección, desplázate hasta **App Store Server Notifications**, y junto a **Sandbox Server URL**, haz clic en **Editar**.
 
-   [![](https://files.readme.io/fffd184969c2b29d8dfbb7acdcc53482e47ca7da506b44ab5aa65f3328ca21bb-42158608093969.png)](https://files.readme.io/fffd184969c2b29d8dfbb7acdcc53482e47ca7da506b44ab5aa65f3328ca21bb-42158608093969.png)
-6. Paste **your server endpoint URL**.
+   [![](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)
+6. Pega **la URL de tu endpoint del servidor**.
 
    [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
-7. Select **Version 2 Notifications. Note:** Version 1 notifications are **no longer supported**.
-8. Click **Save**.
-9. Configure your backend to forward Apple server notifications to the AppsFlyer notification endpoint URL. The requests must match the App Store payload exactly as received from Apple, see <Anchor target="_blank" href="https://developer.apple.com/documentation/appstoreserverapi/signedpayload#discussion">Apple format requirements</Anchor>.
+7. Selecciona **Version 2 Notifications. Nota:** Las notificaciones de la versión 1 ya **no reciben soporte**.
+8. Haz clic en **Guardar**.
+9. Configura tu backend para reenviar las notificaciones del servidor de Apple a la URL del endpoint de notificaciones de AppsFlyer. Las solicitudes deben coincidir exactamente con la carga útil de la tienda de aplicaciones tal como se recibe de Apple; consulta <Anchor target="_blank" href="https://developer.apple.com/documentation/appstoreserverapi/signedpayload#discussion">los requisitos de formato de Apple</Anchor>.
 
 </Accordion>
 
 <div id="24-test-the-server-notifications-integration" />
 
-<Accordion title="2.4 Test the server notifications integration">
+<Accordion title="2.4 Probar la integración de las notificaciones del servidor">
 
-To confirm that AppsFlyer is receiving App Store server notifications correctly, or if you recently configured the endpoint and no server notifications have arrived yet:
+Para confirmar que AppsFlyer está recibiendo correctamente las notificaciones del servidor de App Store, o si has configurado el endpoint hace poco y aún no ha llegado ninguna notificación del servidor:
 
-1. In AppsFlyer, go to the **App Store server notifications** step.
-2. Click **Test integration**. AppsFlyer sends a test notification request to Apple and checks whether any valid notifications were received from Apple in the past 7 days, and displays one of the following:
+1. En AppsFlyer, ve al paso **Notificaciones del servidor de App Store**.
+2. Haz clic en **Prueba de integración**. AppsFlyer envía una solicitud de notificación de prueba a Apple, comprueba si se ha recibido alguna notificación válida de Apple en los últimos 7 días y muestra una de las siguientes opciones:
 
-   * A confirmation of whether valid notifications were received.
-   * A status message indicating that no notifications were found.
+   * Una confirmación de si se recibieron notificaciones válidas.
+   * Un mensaje de estado que indica que no se encontró ninguna notificación.
 
-   > 📘 **Note**
+   > 📘 **Nota:**
    >
-   > Apple may take a few seconds to send the test message.
+   > Apple puede tardar unos segundos en enviar el mensaje de prueba.
 
 
-   * If the status remains invalid, wait a few moments and try again.
-   * After the test succeeds, or when you are ready to continue, click **Save and next**.
+   * Si el estado sigue siendo no válido, espera unos momentos y vuelve a intentarlo.
+   * Cuando la prueba se complete correctamente o cuando estés listo para continuar, haz clic en **Guardar y siguiente**.
 
 </Accordion>
 
-## Step 2 (Android): Set up Google Play server notifications
+## Paso 2 (Android): Configura las notificaciones del servidor de Google Play
 
-To receive in-app purchase and subscription revenue data from Google Play, select between the following options:
+Para recibir datos de ingresos por compras in-app y suscripciones de Google Play, selecciona entre las siguientes opciones:
 
-* (Recommended) Google Play sends the notifications directly to AppsFlyer. With this option, no notification copies can be forwarded to your endpoint. If you'd like to select this option, you can see [Send Google Play notifications directly to AppsFlyer](#21-send-google-play-notifications-directly-to-appsflyer).
-* Google Play sends the notifications to you first, which are then forwarded to AppsFlyer. If you choose this option, see [Forward Google Play notifications to AppsFlyer.](#22--optional--forward-google-play-notifications-to-appsflyer)
+* (Recomendado) Google Play envía las notificaciones directamente Con esta opción, no se pueden enviar copias de las notificaciones a tu endpoint. Si deseas seleccionar esta opción, puedes ver [Enviar notificaciones de Google Play directamente a AppsFlyer](#21-send-google-play-notifications-directly-to-appsflyer).
+* Google Play te envía primero las notificaciones, que luego se envían a AppsFlyer. Si eliges esta opción, consulta [Reenviar notificaciones de Google Play a AppsFlyer.](#22--optional--forward-google-play-notifications-to-appsflyer)
 
-**Prerequisites**: Access to Google Play Console and AppsFlyer UI.
+**Requisitos previos**: Acceso a Google Play Console y AppsFlyer UI.
 
 <div id="21-send-google-play-notifications-directly-to-appsflyer" />
 
-<Accordion title="2.1 Send Google Play notifications directly to AppsFlyer">
+<Accordion title="2.1 Enviar notificaciones de Google Play directamente a AppsFlyer">
 
-1. In AppsFlyer, on step 2,**Set up Google Play server notifications**, select **Allow AppsFlyer topic to get RTDN messages directly from Google**.
-2. Copy the AppsFlyer topic to the clipboard.
-3. In **Google Play Console** > **Home**, select to view your app. The dashboard opens.
+1. En AppsFlyer, en el paso 2,**Configura las notificaciones del servidor de Google Play**, selecciona **Permitir que el tema de AppsFlyer reciba mensajes RTDN directamente de Google**.
+2. Copia el tema de AppsFlyer en el portapapeles.
+3. En **Google Play Console** > **Inicio**, selecciona tu aplicación para verla. Se abre el dashboard.
 
    [![](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)
-4. Go to **Monetize with Play** > **Monetization setup**, and in the **Google Play Billing** section, make sure **Enable real-time notification** is checked.
+4. Ve a **Monetizar con Play** > **Configuración de la monetización**, y en la **Facturación de Google Play** sección, asegúrate **Activar notificaciones en tiempo real** está marcada.
 
    [![](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)
-5. In the **Topic name** field, paste the AppsFlyer topic address you copied.
+5. En el **Nombre del tema** campo, pega la dirección del tema de AppsFlyer que has copiado.
 
    [![](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)
-6. For **Notification content**, select **Subscriptions, voided purchases, and all one-time products**.
+6. Para **Contenido de la notificación**, selecciona **Suscripciones, compras anuladas y todos los productos de un solo uso**.
 
    [![](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)
-7. Click **Save Changes**. It can take time (sometimes even 24 hours) for this to take effect. Therefore, wait before testing.
+7. Haz clic **Guardar cambios**. Puede tardar un tiempo (a veces incluso 24 horas) en hacer efecto. Por lo tanto, espera antes de realizar la prueba.
 
 </Accordion>
 
 <div id="22--optional--forward-google-play-notifications-to-appsflyer" />
 
-<Accordion title="2.2 [Optional] Forward Google Play notifications to AppsFlyer">
+<Accordion title="2.2. [Opcional] Reenviar las notificaciones de Google Play a AppsFlyer.">
 
-**Note**: This step is only for when you didn’t choose the recommended method to receive in-app purchase and subscription revenue data from Google Play by sending notifications directly to AppsFlyer. If you completed the steps for the recommended method to create a topic where AppsFlyer directly receives the RTDN notifications from Google Play, skip this step.
+**Nota**: Este paso es solo para cuando no has elegido el método recomendado para recibir los datos de compras in-app y los ingresos por suscripciones de Google Play mediante el envío de notificaciones directamente a AppsFlyer. Si has completado los pasos del método recomendado, para crear un tema en el que AppsFlyer reciba directamente las notificaciones RTDN de Google Play, salta este paso.
 
-If you want to set AppsFlyer as a subscriber to your existing PUB/SUB topic, continue with the instructions below.
+Si quieres establecer AppsFlyer como suscriptor de tu tema PUB/SUB existente, continúa con las instrucciones que aparecen a continuación.
 
-**Prerequisites**: Access to Google Cloud Platform and AppsFlyer UI.
+**Requisitos previos**: Acceso a Google Cloud Platform y AppsFlyer UI.
 
-**To forward Google Play notifications to AppsFlyer**:
+**Para reenviar las notificaciones de Google Play a AppsFlyer**:
 
-1. In AppsFlyer, from the side menu, go to **Settings** > **Revenue Settings**,
-2. Select your app,
-3. In the **Purchases & subscriptions** tab, select **Forward your RTDN topic messages to AppsFlyer**.
-4. Copy the endpoint URL to the clipboard.
-5. In Google Cloud Platform, under your project, search for **Pub/Sub**.
+1. En AppsFlyer, desde el menú lateral, ve a **Configuración** > **Configuración de ingresos**,
+2. Selecciona tu aplicación,
+3. En la pestaña **Compras & suscripciones** , selecciona **Reenviar tus mensajes del tema RTDN a AppsFlyer**.
+4. Copia la URL del endpoint en el portapapeles.
+5. En Google Cloud Platform, en tu proyecto, busca **Pub/Sub**.
 
    [![](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)
-6. In **Pub/Sub** go to the **Topics** section, and verify you have a dedicated pub/sub topic for subscriptions.
+6. En **Pub/Sub** ve a la **Temas** sección, y verifica que tienes un tema pub/sub específico para las suscripciones.
 
    [![](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)
-7. In **Pub/Sub,** go to the **Subscriptions** section, and click **Create Subscriptions**.
+7. En **Pub/Sub,** ve a la **Suscripciones** sección, y haz clic **Crear suscripciones**.
 
    [![](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)
-8. Enter the **Subscription ID**.
+8. Introduce el **ID de suscripción**.
 
    [![](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)
-9. Select the relevant subscription pub/sub topic from the dropdown.
+9. Selecciona el tema pub/sub de suscripción correspondiente en el menú desplegable.
 
    [![](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)
-10. For **Delivery type**, select **Push**.
+10. Para **Tipo de entrega**, selecciona **Push**.
 
     [![](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)
-11. Paste the **Endpoint URL** that you copied from AppsFlyer.
+11. Pega la **URL del endpoint** que has copiado de AppsFlyer.
 
     [![](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)
-12. Under **Expiration period**, select **Never expire**.
+12. En **Período de vencimiento**, selecciona **Nunca vence**.
 
     [![](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)
-13. Click **Create**.
+13. Haz clic en **Crear**.
 
     [![](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)
-14. Go to the **Subscriptions** section and click into the Topic name you want.
+14. Ve a la sección **Suscripciones** y haz clic en el nombre del tema que quieras.
 
     [![](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)
-15. Copy the topic name to the clipboard.
+15. Copia el nombre del tema en el portapapeles.
 
     [![](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)
-16. In **Google Play Console**, go to **Monetize with Play** > **Monetization setup.** and in the **Google Play Billing** section, paste the topic name that you copied in the previous step in the Topic name field.
+16. En **Google Play Console**, ve a **Monetizar con Play** > **Configuración de la monetización.** y en la **Google Play Billing** section, pega el nombre del tema que copiaste en el paso anterior en el campo Nombre del tema.
 
     [![](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)
-17. For **Notification content**, select **Subscriptions, voided purchases, and all one-time products**.
+17. Para **Contenido de la notificación**, selecciona **Suscripciones, compras anuladas y todos los productos de un solo uso**.
 
     [![](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)
-18. Click **Save changes**. It can take time (sometimes even 24 hours) for this to take effect. Therefore, wait before testing.
+18. Haz clic **Guardar cambios**. Puede tardar un tiempo (a veces incluso 24 horas) en hacer efecto. Por lo tanto, espera antes de realizar la prueba.
 
 </Accordion>
 
 <div id="23-send-a-test-notification-from-google-play-console" />
 
-<Accordion title="2.3 Send a test notification from Google Play Console">
+<Accordion title="2.3 Envía una notificación de prueba desde Google Play Console">
 
-To verify that Google Play real-time developer notifications (RTDN) are correctly received by AppsFlyer, send a test notification from Google Play Console:
+Para verificar que AppsFlyer recibe correctamente las notificaciones para desarrolladores en tiempo real (RTDN) de Google Play, envía una notificación de prueba desde Google Play Console:
 
-1. Click **Send test notification**. This sends a test RTDN message to the Pub/Sub topic configured for AppsFlyer.
+1. Haz clic en **Enviar notificación de prueba**. Esto envía un mensaje RTDN de prueba al tema de Pub/Sub configurado para AppsFlyer.
 
    <Image alt="image (33).png" src="https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png" width="1444px" />
-2. Under **Google Play Billing**, locate the Topic name section.
-3. In the left menu, navigate to **Monetise with Play** → **Monetisation setup**.
-4. Go to the Google Play Console.
+2. En **Google Play Billing**, localiza la sección Nombre del tema.
+3. En el menú izquierdo, ve a **Monetizar con Play** → **Configuración de la monetización**.
+4. Ve a Google Play Console.
 
 <div id="24-confirm-notification-delivery-in-appsflyer" />
 
-<Accordion title="2.4 Confirm notification delivery in AppsFlyer">
+<Accordion title="2.4 Confirma la entrega de notificaciones en AppsFlyer">
 
-1. When the test succeeds, or when you're ready to proceed, click **Save and next**.
-2. Result: AppsFlyer displays whether any notifications were received in the last 7 days.
-   * If successful, the interface shows the date and time of the most recent notification.
-   * If none were received, the interface indicates that no notifications were found in the last 7 days.
-   * If no status appears, review your Pub/Sub configuration and resend the test notification.
-3. In the **Google Play Server Notifications** step, click **Test integration**.
-
-</Accordion>
+1. Cuando la prueba se complete correctamente, o cuando estés listo para continuar, haz clic en **Guardar y siguiente**.
+2. Resultado: AppsFlyer muestra si se ha recibido alguna notificación en los últimos 7 días.
+   * Si se realiza correctamente, la interfaz muestra la fecha y la hora de la notificación más reciente.
+   * Si no se recibió ninguna, la interfaz indica que no se encontraron notificaciones en los últimos 7 días.
+   * Si no aparece ningún estado, revisa la configuración de Pub/Sub y vuelve a enviar la notificación de prueba.
+3. En el paso **Notificaciones del servidor de Google Play**, haz clic en **Probar integración**.
 
 </Accordion>
 
-## Step 3: Implement SDK Connector
+</Accordion>
 
-In this step, you’ll prepare your developers to integrate the AppsFlyer Purchase SDK Connector and configure the sandbox environment for testing.
+## Paso 3: Implementa el conector SDK
 
-To implement the SDK connector, follow these steps:
+En este paso, prepararás a tus desarrolladores para integrar el conector del SDK de compras de AppsFlyer y configurar el entorno de pruebas.
 
-1. In the **Implement SDK Connector** step, copy the **pre-written message** displayed in the dashboard.
-2. Send it to your developers. It includes:
-   * The app name and App ID
-   * A link to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation">the SDK integration guide</Anchor>.
-   * Instructions to configure the sandbox environment (`sandbox = true`)
-   * Testing steps (using **TestFlight**)
+Para implementar el conector del SDK, sigue estos pasos:
 
-This message provides all the information your developers need to complete the integration and begin testing.
+1. En el paso **Implement SDK Connector**, copia el **mensaje predefinido** que aparece en el dashboard.
+2. Envíalo a tus desarrolladores. Incluye:
+   * El nombre y el ID de aplicación
+   * Un enlace a <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation">la guía de integración del SDK</Anchor>.
+   * Instrucciones para configurar el entorno de sandbox (`sandbox = true`)
+   * Pasos de prueba (utilizando **TestFlight**)
 
-> 📘 **Note**
+Este mensaje proporciona toda la información que tus desarrolladores necesitan para completar la integración y comenzar las pruebas.
+
+> 📘 **Nota:**
 >
-> The connector uses automatic transaction detection. As an alternative, you can implement the `validateAndLog` SDK method to manually log each transaction. This method does not support all features available with the connector. For details on both SDK integration options, see <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation">the DevHub documentation</Anchor>.
+> El conector utiliza la detección automática de transacciones. Como alternativa, puedes implementar el método del SDK `validateAndLog` para registrar manualmente cada transacción. Este método no ofrece soporte para todas las funciones disponibles con el conector. Para obtener más información sobre ambas opciones de integración del SDK, consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation">la documentación de DevHub</Anchor>.
 
-## Step 4: Verify SDK implementation
+## Paso 4: Verifica la implementación del SDK
 
-Test the in-app purchase and subscription revenue integration in a sandbox environment to confirm that the SDK connector is correctly integrated and that server notifications are properly configured and received by AppsFlyer.
+Prueba la integración de ingresos de compras in-app y suscripciones en un entorno sandbox para confirmar que el conector SDK esté correctamente integrado y que las notificaciones del servidor estén bien configuradas y AppsFlyer las reciba correctamente.
 
 <div id="test-sdk-implementation" />
 
-<Accordion title="Test SDK implementation">
+<Accordion title="Prueba de implementación de SDK">
 
-To check whether AppsFlyer has received valid purchase and subscription event payloads from your app in the last 7 days, perform these steps:
+Para comprobar si AppsFlyer ha recibido cargas útiles válidas de eventos de compra y suscripción de tu aplicación en los últimos 7 días, sigue estos pasos:
 
-1. In the **Verify SDK implementation** step, click **Test SDK implementation**.
-2. Review the results, including the timestamp of the most recent payload received by AppsFlyer.
+1. En el paso **Verifica la implementación del SDK**, haz clic en **Probar la implementación del SDK**.
+2. Revisa los resultados, incluida la marca de tiempo de la carga útil más reciente recibida por AppsFlyer.
 
-   > 📘 **Note**
+   > 📘 **Nota:**
    >
-   > This test only confirms that requests are reaching AppsFlyer and does not verify the completeness or correctness of the data.
+   > Esta prueba solo confirma que las solicitudes llegan a AppsFlyer y no verifica que los datos estén completos ni que sean correctos.
 
-3. To fully validate the implementation, continue with the testing steps below.
+3. Para validar completamente la implementación, continúa con los pasos de prueba que aparecen a continuación.
 
 </Accordion>
 
 <div id="sandbox-events-and-parameters" />
 
-<Accordion title="Sandbox events and parameters">
+<Accordion title="Eventos y parámetros de sandbox">
 
-* The SDK connector generates events only for the initial sandbox transaction:
-  * In-app purchase: `af_purchase_sandbox_sdk`
-  * Subscription: `af_ars_sandbox_sdk`
-* AppsFlyer processes server notifications only if the SDK event for the original transaction was recorded.
-  * In-app purchase S2S: `af_purchase_sandbox_s2s`
-  * Subscription S2S: `af_ars_sandbox_s2s`
-* If the SDK never records the original transaction. no S2S event is created.
+* El conector SDK genera eventos solo para la transacción inicial de sandbox:
+  * Compra in-app: `af_purchase_sandbox_sdk`
+  * Suscripción: `af_ars_sandbox_sdk`
+* AppsFlyer procesa las notificaciones del servidor solo si se registró el evento del SDK de la transacción original.
+  * Compra in-app S2S: `af_purchase_sandbox_s2s`
+  * Suscripción S2S: `af_ars_sandbox_s2s`
+* Si el SDK nunca registra la transacción original. no se crea ningún evento S2S.
 
-**iOS considerations**
+**Consideraciones de iOS**
 
-* If `af_purchase_sandbox_sdk` includes `af_sandbox_revenue`, it maps to a production `af_purchase`.
-* If no revenue is present, it maps to a production `af_purchase_free`.
+* Si `af_purchase_sandbox_sdk` incluye `af_sandbox_revenue`, se asigna a un `af_purchase` de producción.
+* Si no hay ingresos, se asigna a un `af_purchase_free` de producción.
 
-**Android considerations**
+**Consideraciones sobre Android**
 
-* Purchases by **License Testers** always generate sandbox events. even if sandbox mode isn’t configured in the SDK.
+* Las compras realizadas por **License Testers** siempre generan eventos de sandbox. aunque el modo sandbox no esté configurado en el SDK.
 
-**Required parameters for test events**
+**Parámetros obligatorios para eventos de prueba**
 
-Ensure that every sandbox purchase event includes:
+Asegúrate de que cada evento de compra en sandbox incluya:
 
-* **Revenue = 0** (to avoid affecting real reports).
-* `af_sandbox_revenue` = actual product price (so the correct revenue is attributed).
-* `af_validated` **= true**. If `false` go back and verify the store key.
+* **Ingresos = 0** (para evitar afectar a los reportes reales).
+* `af_sandbox_revenue` = precio real del producto (para que se atribuyan los ingresos correctos).
+* `af_validated` **= true**. Si es `false`, vuelve atrás y verifica la clave de la tienda.
 * `af_validation_type` = `receipt_validation`.
 
 </Accordion>
 
 <div id="test-inapp-purchase-and-subscription-revenue" />
 
-<Accordion title="Test in-app purchase and subscription revenue">
+<Accordion title="Probar las compras in-app y los ingresos por suscripciones">
 
-**Prerequisites**:
+**Requisitos previos**:
 
-* For iOS, make sure that under App Store Server Notifications in App Store connect, the AppsFlyer endpoint is configured as your **Sandbox Server URL**.
+* Para iOS, asegúrate de que, en App Store Server Notifications en App Store Connect, el endpoint de AppsFlyer esté configurado como tu **Sandbox Server URL**.
 
-  [![](https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png)](https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png)
+  [![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
 
-**To test in-app purchase and subscription revenue**:
+**Para probar las compras in-app y los ingresos por suscripciones**:
 
-1. Tell your developers to follow their <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-android-purchase-connector#-testing-the-integration">Android</Anchor>, <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-apple-purchase-connector#-testing-the-implementation-in-sandbox">iOS</Anchor>, and <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-unity-purchase-connector/blob/master/docs/purchaseConnectorUnity.md#testing-the-implementation-in-sandbox">Unity</Anchor> instructions to configure the sandbox environment in the SDK Connector.
-2. Make test purchases or start a subscription using <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/6062777?hl=en">License Tester in Google Play</Anchor>. For iOS, use <Anchor target="_blank" href="https://developer.apple.com/testflight/">TestFlight</Anchor>. **Note**: A subscription product can be tested only once per device. In practice, a device cannot register multiple test purchases of the same subscription. Additional attempts will not be recorded.
-3. Make a test refund, subscription renewal, or subscription cancellation event using <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/6062777?hl=en">License Tester in Google Play</Anchor> and <Anchor target="_blank" href="https://developer.apple.com/testflight/">TestFlight in iOS</Anchor>. **Note**: If you're testing a subscription product, allow time for AppsFlyer to receive a server notification from the store, which typically occurs within a few minutes after the initial purchase is made.
-4. Under the **Verify SDK connector implementation** step, click **Test SDK implementation.** It indicates whether any SDK payloads were successfully received from Purchase Connector in the past 7 days.
-5. View that the test events are displayed in one of the following ways:
+1. Dile a tus desarrolladores que sigan las instrucciones de <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-android-purchase-connector#-testing-the-integration">Android</Anchor>, <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-apple-purchase-connector#-testing-the-implementation-in-sandbox">iOS</Anchor>, y <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-unity-purchase-connector/blob/master/docs/purchaseConnectorUnity.md#testing-the-implementation-in-sandbox">Unity</Anchor> para configurar el entorno sandbox en el conector SDK.
+2. Realiza compras de prueba o inicia una suscripción con <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/6062777?hl=en">License Tester en Google Play</Anchor>. Para iOS, usa <Anchor target="_blank" href="https://developer.apple.com/testflight/">TestFlight</Anchor>. **Nota**: Un producto de suscripción solo se puede probar una vez por dispositivo. En la práctica, un dispositivo no puede registrar varias compras de prueba de la misma suscripción. Los intentos adicionales no se registrarán.
+3. Realiza un evento de prueba de reembolso, renovación de suscripción o cancelación de suscripción con <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/6062777?hl=en">License Tester en Google Play</Anchor> y <Anchor target="_blank" href="https://developer.apple.com/testflight/">TestFlight en iOS</Anchor>. **Nota**: Si estás probando un producto de suscripción, deja tiempo para que AppsFlyer reciba una notificación del servidor de la tienda, lo que suele ocurrir unos minutos después de que se realice la compra inicial.
+4. En el paso **Verify SDK connector implementation**, haz clic en **Test SDK implementation** Indica si se ha recibido correctamente algún payload del SDK desde Purchase Connector en los últimos 7 días.
+5. Comprueba que los eventos de prueba se muestren de una de las siguientes formas:
 
-   * View the event in the <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers#view-live-events">Live event viewer</Anchor>.
+   * Ve el evento en el <Anchor target="_blank" href="/marketers/es/docs/testing-the-sdk-integration-for-marketers#view-live-events">Live event viewer</Anchor>.
 
-   * View the event data in <Anchor target="_blank" href="/marketers/docs/activity-metrics-in-my-dashboards">My Dashboards - Activity View</Anchor>.
-6. Verify that the event appears in the AppsFlyer Activity dashboard. In AppsFlyer, go to **Analyze > Activity**, and in the **Activity trend** chart, open the In-app events tab and select the event to test. An auto-renewable subscription purchase is called `af_ars_s2s_sandbox`. The event includes:
-   * A revenue value of 0 (so as not to skew real AppsFlyer reports).
-   * An `af_sandbox_revenue` parameter that includes the revenue value of the purchased product, ensuring the correct revenue is reported.
+   * Ve los datos del evento en <Anchor target="_blank" href="/marketers/es/docs/activity-metrics-in-my-dashboards">My Dashboards - Activity View</Anchor>.
+6. Comprueba que el evento aparezca en el dashboard de actividad de AppsFlyer. En AppsFlyer, ve a **Analyze > Activity** y, en el gráfico **Activity trend**, abre la pestaña Eventos in-app y selecciona el evento que quieras probar. La compra de una suscripción autorrenovable se llama `af_ars_s2s_sandbox`. El evento incluye:
+   * Un valor de ingresos 0 (para no distorsionar los reportes reales de AppsFlyer).
+   * Un parámetro `af_sandbox_revenue` que incluye el valor de ingresos del producto comprado, lo que garantiza que se reporten los ingresos correctos.
 
 </Accordion>
 
-## Step 5: Verify and update settings
+## Paso 5: Verifica y actualiza la configuración
 
-After you have completed configuring the settings above and saved the last step, you are redirected to the active configuration view, where you can verify or update the following settings:
+Después de completar la configuración anterior y guardar el último paso, se te redirige a la vista de configuración activa, donde puedes verificar o actualizar la siguiente configuración:
 
-1. Make sure that the **Verify purchases with the App Store** toggle is turned on.
-2. Check the following options under **Purchases**:
-   * **Prevent duplicate purchases for clean data**: Avoids recording transactions that have already been reported.
-   * **Automatically measure refunds, cancellations, and negative revenue**: Measures refund-related events and logs them as negative revenue.
-   * **Avoid double-counting revenue from Family Sharing**: Prevents duplicate revenue from Family Sharing. These events are marked with `purchase_ownership_type=FAMILY_SHARED` and report zero revenue.
-3. Make sure that the **Measure and attribute revenue for auto-renewing subscriptions** toggle is turned on:
-4. The status of the following settings:
-   * The **App Store key** setup
-   * The **Server notification endpoint** setup
-   * Implement & test SDK Connector
+1. Asegúrate de que el interruptor **Verify purchases with the App Store** esté activado.
+2. Marca las siguientes opciones bajo **Compras**:
+   * **Prevent duplicate purchases for clean data**: evita registrar transacciones que ya se han reportado.
+   * **Automatically measure refunds, cancellations, and negative revenue**: mide los eventos relacionados con reembolsos y los registra como ingresos negativos.
+   * **Avoid double-counting revenue from Family Sharing**: evita los ingresos duplicados de Family Sharing. Estos eventos se marcan con `purchase_ownership_type=FAMILY_SHARED` y reportan cero ingresos.
+3. Asegúrate de que el **Measure and attribute revenue for auto-renewing subscriptions** interruptor esté activado:
+4. El estado de las siguientes configuraciones:
+   * La **App Store key** configuración
+   * La **Server notification endpoint** configuración
+   * Implementa & prueba el conector SDK
 
-## Step 6: Release the app versions with the SDK connector
+## Paso 6: Lanza las versiones de la aplicación con el conector del SDK
 
-With everything from the previous steps configured and the AppsFlyer purchase SDK connector integrated into your app, tell your developer to release the app version with the SDK connector integrated.
+Con todos los pasos anteriores listos y el conector SDK de compra de AppsFlyer integrado en tu aplicación, dile a tu desarrollador que publique la versión de la aplicación con el conector SDK integrado.
 
-However, before the developer releases the new app version, make sure that:
+Sin embargo, antes de que el desarrollador publique la nueva versión de la aplicación, asegúrate de que:
 
-* The in-app events you want to capture as an in-app purchase or subscription aren't blocked by one of the Validation Rules you have configured in AppsFlyer.
-* Your developer should have any sandbox flags marked as false.
+* Los eventos in-app que deseas capturar como compra in-app o suscripción no están bloqueados por una de las reglas de validación que has configurado en AppsFlyer.
+* Tu desarrollador debe tener cualquier marca en el entorno de pruebas marcada como falsa.
 
-[![](https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png)](https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png)
+[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
 
-Once the app with the SDK connector is released, <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#iaprelated-events-and-parameters">in-app purchase</Anchor> and <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#subscriptionrelated-events-and-parameters">subscription events</Anchor> will be generated and made available across all AppsFlyer dashboards, as well as in aggregated and raw data reports, including <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports">Revenue ETL</Anchor>.
+Una vez lanzada la aplicación con el conector SDK, se generarán y estarán disponibles en todos los dashboards de AppsFlyer, así como en reportes de datos agregados y de raw data, incluidos <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue#iaprelated-events-and-parameters">in-app purchase</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue#subscriptionrelated-events-and-parameters">subscription events</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/revenue-etl-reports">Revenue ETL</Anchor>.
 
-**Note:** Events will only be generated for users who have updated to a version of the app that includes the SDK connector. As a result, a discrepancy is expected between the revenue data from the app and the store data until the updated app version is fully adopted.
+**Nota:** Sólo se generarán eventos para los usuarios que hayan actualizado a una versión de la aplicación que incluya el conector SDK. Como resultado, se espera una discrepancia entre los datos de ingresos de la aplicación y los datos de la tienda hasta que la versión actualizada de la aplicación se adopte por completo.
 
-## Switch to ROI360 Store revenue (from Receipt validation)
+## Cambiar a los ingresos de tienda de ROI360 (desde Validación de recibos)
 
-If you completed onboarding for Receipt Validation but want to activate the ROI360 Store revenue product, perform the following:
+Si has completado el onboarding de Validación de recibos, pero quieres activar el producto ROI360 Store revenue, haz lo siguiente:
 
-1. In AppsFlyer, from the side menu, open [<Image alt="" src="https://files.readme.io/e759a4435ce6a34eaa31454483b3c75fffc2830c8bc575d66d9fd8e7acc76a97-42158637603601.png" width="2.54%" />](https://files.readme.io/e759a4435ce6a34eaa31454483b3c75fffc2830c8bc575d66d9fd8e7acc76a97-42158637603601.png) **Settings** and under **ROI360** select **Revenue Settings**.
-2. Open the **Purchases & subscriptions** tab. A banner appears stating that ROI360 is available but not active.
-3. Click **View product comparison** to understand the benefits, including refund attribution, net revenue reporting, and full subscription lifecycle measurement.
-4. Click **Activate ROI360.**
-5. Perform the **Enable App Store Server Notification** step. For more information, see [Set up App Store server notifications](#step-2-ios-set-up-app-store-server-notifications) or [Set up Google Play server notifications](#step-2-android-set-up-google-play-server-notifications).
-6. In the **Purchases & subscriptions** section, verify that the **Product type** is now set to **ROI360**.
-7. Review your current SDK setup to ensure it can support the ROI360 Store revenue functionality you need.
+1. En AppsFlyer, desde el menú lateral, abre [<Image alt="" src="https://files.readme.io/23e5d6ac29cfd14f1c34247e6a19cdb86a364c3dbe1122e5fde43bb27902b864-42137277590289.png" width="2.54%" />](https://files.readme.io/23e5d6ac29cfd14f1c34247e6a19cdb86a364c3dbe1122e5fde43bb27902b864-42137277590289.png) **Configuración** y en **ROI360** selecciona **Configuración de ingresos**.
+2. Abre la pestaña **Compras y suscripciones**. Aparece un banner que indica que ROI360 está disponible, pero no activo.
+3. Haz clic en **View product comparison** para entender las ventajas, incluida la atribución de reembolsos, el reporte de ingresos netos y la medición completa del ciclo de vida de las suscripciones.
+4. Haz clic en **Activate ROI360.**
+5. Realiza el paso **Enable App Store Server Notification**. Para obtener más información, consulta [Configurar las notificaciones del servidor de la tienda de aplicaciones](#paso-2-ios-configura-las-notificaciones-del-servidor-de-app-store) o [Configurar las notificaciones del servidor de Google Play](#paso-2-android-configura-las-notificaciones-del-servidor-de-google-play).
+6. En la sección **Purchases & subscriptions**, verifica que el **Tipo de producto** esté ahora configurado como **ROI360**.
+7. Revisa la configuración actual de tu SDK para asegurarte de que puede dar soporte a la funcionalidad de ingresos de la tienda de ROI360 Store que necesitas.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> ROI360 Store revenue supports two integration methods: Purchase SDK connector and Validate and Log. Of the two, we recommend using the **Purchase SDK Connector** to benefit from:
+> Los ingresos de la tienda de ROI360 Store dan soporte a dos métodos de integración: Purchase SDK Connector y Validate and Log. De los dos, te recomendamos usar **Purchase SDK Connector** para beneficiarte de lo siguiente:
 >
-> * Automatic transaction detection
-> * Measurement of revenue from existing subscribers (users subscribed before integration)
-> * Support for subscription price changes, ensuring accurate revenue reporting when pricing updates occur.
+> * Detección automática de transacciones
+> * Medición de ingresos de suscriptores existentes (usuarios suscritos antes de la integración)
+> * Soporte para cambios en el precio de las suscripciones, lo que garantiza reportes de ingresos precisos cuando se producen actualizaciones de precios.
 >
-> If you don’t need these capabilities, you can continue using the **Validate and Log** integration instead.
+> Si no necesitas estas capacidades, puedes seguir usando la integración **Validate and Log**.
 >
-> **How to check your SDK integration method**
+> **Cómo comprobar tu método de integración del SDK**
 >
-> To confirm whether your app uses the Purchase SDK connector or Validate and Log:
+> Para confirmar si tu aplicación usa Purchase SDK Connector o Validate and Log:
 >
-> 1. Go to the **Integrate SDK Connector** step.
-> 2. Click **Test SDK integration**. You’ll see when the most recent SDK payload was received by AppsFlyer within the past 7 days, and whether it originated from either the **Purchase SDK Connector** or **Validate and Log**.
+> 1. Ve al PASO **Integrate SDK Connector**.
+> 2. Haz clic en **Test SDK integration**. Verás cuándo recibió AppsFlyer la carga útil del SDK más reciente en los últimos 7 días y si procedía de **Purchase SDK Connector** o de **Validate and Log**.
 
-<div data-zendesk-anchors="h_01KSAG4Y3BP0NWYNCX3AJG47JR=important h_01KD31QE0BCW0BX9BNNDK6DJRA=overview h_01KD31QE0BQAQ0CS1FJ46TV6K1=note h_01KD31QE0BE3ST0TV3KQ1M5AB0=step-1-ios-set-up-app-store-connect-keys h_01KD31QE0BBYES1C2Y1MB665EF=11-create-the-app-store-connect-keys h_01KD31QE0B4G0NGRYBTS2TRZQR=12-set-the-app-store-connect-key-in-appsflyer h_01KD31QE0BVQNJZ8PKKYKK9Q79=step-1-android-set-up-service-account-key-and-permissions h_01KD31QE0BP21EHP5RPBZ5PX2N=11-link-your-google-play-developer-account-to-your-google-cloud-project h_01KD31QE0B5G8SDGZQ8NE07QAE=12-configure-your-service-account-in-the-google-cloud-platform h_01KD31QE0CBMGHXJTXT4JPBV70=13-set-api-access-permissions-in-google-play-console h_01KD31QE0CH5M5X9M9G68N2PPZ=14-upload-the-service-account-private-key-to-appsflyer h_01KD31QE0CZAJ7SH2EECDJ11YN=step-2-ios-set-up-app-store-server-notifications option-1-recommended-appsflyer-as-the-primary-endpoint=option-1-recommended---appsflyer-as-the-primary-endpoint h_01KW7HDDAQEHGY33SQ2AHWVJAC=option-1-recommended---appsflyer-as-the-primary-endpoint option-2-your-endpoint-as-the-primary-endpoint=option-2---your-endpoint-as-the-primary-endpoint h_01KW7HDDAQK8Z279CEG7N33FKT=option-2---your-endpoint-as-the-primary-endpoint h_01_roi360_notification_types=note-1 h_01KD31QE0C9YFBM01GGE2PZDNR=21-copy-the-appsflyer-server-notifications-endpoint h_01KD31QE0C4MRYPMMQ31BRAYS7=22-send-notifications-directly-to-appsflyer 23-%5Boptional%5D-forward-notifications-from-your-endpoint-to-appsflyer=23--optional--forward-notifications-from-your-endpoint-to-appsflyer h_01KD31QE0CWXTKDND5F4Q34J7G=23--optional--forward-notifications-from-your-endpoint-to-appsflyer h_01KD31QE0C2QWHBJ8AWMEMP2SD=24-test-the-server-notifications-integration h_01KD31QE0CA26Y430AMK474NTC=note-2 h_01KD31QE0CKP0PTBQ4XCT9NDE1=step-2-android-set-up-google-play-server-notifications h_01KD31QE0C1RYXW6ADHMQJ3908=21-send-google-play-notifications-directly-to-appsflyer 22-%5Boptional%5D-forward-google-play-notifications-to-appsflyer=22--optional--forward-google-play-notifications-to-appsflyer h_01KD31QE0CFVEBJV3E93Z5RDAP=22--optional--forward-google-play-notifications-to-appsflyer h_01KD31QE0CTFNTY52F0C9D3RY2=23-send-a-test-notification-from-google-play-console h_01KD31QE0CV17JMVVB7ZPT1G8W=24-confirm-notification-delivery-in-appsflyer h_01KD31QE0CPK1EYVT0BSYTTZFM=step-3-implement-sdk-connector h_01KD31QE0C65DQ59ZKG8V886JW=note-3 h_01KD31QE0C9KGGFVQR6HYR5AYM=step-4-verify-sdk-implementation h_01KD31QE0C0VKWF5EBBR761C1J=test-sdk-implementation h_01KD31QE0C7RN657P9KPFV5725=note-4 h_01KD31QE0D0CR02260J5K8V8QX=sandbox-events-and-parameters h_01KD31QE0DNEBYXH4672363WYM=test-inapp-purchase-and-subscription-revenue h_01KD31QE0DQP78QG5HRSERR5S9=step-5-verify-and-update-settings h_01KD31QE0D3HX2DEH7FQ1JR4MS=step-6-release-the-app-versions-with-the-sdk-connector h_01KD31QE0DJNJ8T5XSZFCACMQF=switch-to-roi360-store-revenue-from-receipt-validation h_01KD31QE0DX0VDXKHDZTWTYHHX=note-5" />
+<div data-zendesk-anchors="h_01KSAG4Y3BP0NWYNCX3AJG47JR=dos-puntos- overview=visi%C3%B3n-general h_01KD31QE0BCW0BX9BNNDK6DJRA=visi%C3%B3n-general h_01KD31QE0BQAQ0CS1FJ46TV6K1=nota step-1-ios-set-up-app-store-connect-keys=paso-1-ios-configura-las-claves-de-app-store-connect h_01KD31QE0BE3ST0TV3KQ1M5AB0=paso-1-ios-configura-las-claves-de-app-store-connect h_01KD31QE0BBYES1C2Y1MB665EF=11-create-the-app-store-connect-keys h_01KD31QE0B4G0NGRYBTS2TRZQR=12-set-the-app-store-connect-key-in-appsflyer step-1-android-set-up-service-account-key-and-permissions=paso-1-android-configurar-la-clave-de-cuenta-de-servicio-y-los-permisos h_01KD31QE0BVQNJZ8PKKYKK9Q79=paso-1-android-configurar-la-clave-de-cuenta-de-servicio-y-los-permisos h_01KD31QE0BP21EHP5RPBZ5PX2N=11-link-your-google-play-developer-account-to-your-google-cloud-project h_01KD31QE0B5G8SDGZQ8NE07QAE=12-configure-your-service-account-in-the-google-cloud-platform h_01KD31QE0CBMGHXJTXT4JPBV70=13-set-api-access-permissions-in-google-play-console h_01KD31QE0CH5M5X9M9G68N2PPZ=14-upload-the-service-account-private-key-to-appsflyer step-2-ios-set-up-app-store-server-notifications=paso-2-ios-configura-las-notificaciones-del-servidor-de-app-store h_01KD31QE0CZAJ7SH2EECDJ11YN=paso-2-ios-configura-las-notificaciones-del-servidor-de-app-store option-1-recommended-appsflyer-as-the-primary-endpoint=opci%C3%B3n-1-recomendada-appsflyer-como-endpoint-principal h_01KW7HDDAQEHGY33SQ2AHWVJAC=opci%C3%B3n-1-recomendada-appsflyer-como-endpoint-principal option-2-your-endpoint-as-the-primary-endpoint=opci%C3%B3n-2-tu-endpoint-como-endpoint-principal h_01KW7HDDAQK8Z279CEG7N33FKT=opci%C3%B3n-2-tu-endpoint-como-endpoint-principal h_01_roi360_notification_types=advertencia h_01KD31QE0C9YFBM01GGE2PZDNR=21-copy-the-appsflyer-server-notifications-endpoint h_01KD31QE0C4MRYPMMQ31BRAYS7=22-send-notifications-directly-to-appsflyer 23-%5Boptional%5D-forward-notifications-from-your-endpoint-to-appsflyer=23--optional--forward-notifications-from-your-endpoint-to-appsflyer h_01KD31QE0CWXTKDND5F4Q34J7G=23--optional--forward-notifications-from-your-endpoint-to-appsflyer h_01KD31QE0C2QWHBJ8AWMEMP2SD=24-test-the-server-notifications-integration h_01KD31QE0CA26Y430AMK474NTC=nota-1 step-2-android-set-up-google-play-server-notifications=paso-2-android-configura-las-notificaciones-del-servidor-de-google-play h_01KD31QE0CKP0PTBQ4XCT9NDE1=paso-2-android-configura-las-notificaciones-del-servidor-de-google-play h_01KD31QE0C1RYXW6ADHMQJ3908=21-send-google-play-notifications-directly-to-appsflyer 22-%5Boptional%5D-forward-google-play-notifications-to-appsflyer=22--optional--forward-google-play-notifications-to-appsflyer h_01KD31QE0CFVEBJV3E93Z5RDAP=22--optional--forward-google-play-notifications-to-appsflyer h_01KD31QE0CTFNTY52F0C9D3RY2=23-send-a-test-notification-from-google-play-console h_01KD31QE0CV17JMVVB7ZPT1G8W=24-confirm-notification-delivery-in-appsflyer step-3-implement-sdk-connector=paso-3-implementa-el-conector-sdk h_01KD31QE0CPK1EYVT0BSYTTZFM=paso-3-implementa-el-conector-sdk h_01KD31QE0C65DQ59ZKG8V886JW=nota-2 step-4-verify-sdk-implementation=paso-4-verifica-la-implementaci%C3%B3n-del-sdk h_01KD31QE0C9KGGFVQR6HYR5AYM=paso-4-verifica-la-implementaci%C3%B3n-del-sdk h_01KD31QE0C0VKWF5EBBR761C1J=test-sdk-implementation h_01KD31QE0C7RN657P9KPFV5725=nota-3 h_01KD31QE0D0CR02260J5K8V8QX=sandbox-events-and-parameters h_01KD31QE0DNEBYXH4672363WYM=test-inapp-purchase-and-subscription-revenue step-5-verify-and-update-settings=paso-5-verifica-y-actualiza-la-configuraci%C3%B3n h_01KD31QE0DQP78QG5HRSERR5S9=paso-5-verifica-y-actualiza-la-configuraci%C3%B3n step-6-release-the-app-versions-with-the-sdk-connector=paso-6-lanza-las-versiones-de-la-aplicaci%C3%B3n-con-el-conector-del-sdk h_01KD31QE0D3HX2DEH7FQ1JR4MS=paso-6-lanza-las-versiones-de-la-aplicaci%C3%B3n-con-el-conector-del-sdk switch-to-roi360-store-revenue-from-receipt-validation=cambiar-a-los-ingresos-de-tienda-de-roi360-desde-validaci%C3%B3n-de-recibos h_01KD31QE0DJNJ8T5XSZFCACMQF=cambiar-a-los-ingresos-de-tienda-de-roi360-desde-validaci%C3%B3n-de-recibos h_01KD31QE0DX0VDXKHDZTWTYHHX=nota-4" />

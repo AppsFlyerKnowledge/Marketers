@@ -1,5 +1,5 @@
 ---
-title: Baidu mDSP Ads (Baiyi) campaign configuration
+title: Configuración de la campaña de Baidu mDSP Ads (Baiyi)
 metadata:
   keywords:
     - Advertisers
@@ -15,153 +15,152 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-08-24T07:22:04Z'
-  edited_at: '2026-09-15T11:04:35Z'
+  edited_at: '2026-09-17T00:25:59Z'
   id: 115004330446
-  locale: en-us
+  locale: es
   section: China domestic market ad network configuration
   section_id: 6552066355601
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115004330446-Baidu-mDSP-Ads-Baiyi-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/115004330446
 ---
-> **At a glance:** Baidu mDSP Ads (Baiyi), an AppsFlyer ad network integrated partner, is an advertising solutions provider and part of Baidu, the dominant search engine in China with over 70% market share.
+> **De un vistazo:** Baidu mDSP Ads (Baiyi), un partner integrado de ad network de AppsFlyer, es un proveedor de soluciones publicitarias y forma parte de Baidu, el motor de búsqueda dominante en China con más del 70% de cuota de mercado.
 
-## Setting up Baidu mDSO Ads (Baiyi)
+## Configurar Baidu mDSP Ads (Baiyi)
 
-1. In AppsFlyer, from the side menu, select **Collaborate** **> Partner Integrations** > **Partner Marketplace**.
-2. Search for the partner and select it. You’re directed to the integration setup page.
+1. En AppsFlyer, en el menú lateral, selecciona **Collaborate** **> Partner Integrations** > **Partner Marketplace**.
+2. Busque al socio y selecciónelo. Se te dirigirá a la página de configuración de la integración.
 
-The Baidu mDSP Ads (Baiyi) configuration window includes 2 active tabs: Integration and Attribution link. Click on the items below to read about the tabs setup.
+La ventana de configuración de Baidu mDSP Ads (Baiyi) incluye 2 pestañas activas: integración y enlace de atribución. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partner
+### Activar socio
 
-On the **first visit**, you must toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita**, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-Default Postbacks
+Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Baidu mDSP Ads (Baiyi) following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a Baidu mDSP Ads (Baiyi) tras las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 ![baidu-mdsp-default-postbacks.png](https://files.readme.io/fdde731527468b9837efa2230c5416f3393024b8c4eec8b44339086a2f31b984-360002069005.png)
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with Baidu mDSP Ads (Baiyi) via postbacks.
+En esta sección, puedes mapear tus eventos de AppsFlyer con Baidu mDSP Ads (Baiyi) a través de postbacks.
 
 ![baidu-mdsp-in-app-events.png](https://files.readme.io/fa515fac11e82be11bb55bb9b198ac63681ecdb713f0f6537f4ca7bf0c60e5b1-360002069085.png)
 
-1. Toggle In-App Event Postbacks to ON.
-2. Click **Add Event** to add an SDK Event to the list.
-3. Complete the following parameters:
+1. Activa los Postbacks de eventos in-app con el selector.
+2. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+3. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Baidu mDSP Ads (Baiyi) 's side.  <br />Obtain the corresponding Event ID from Baidu mDSP Ads (Baiyi) and set in the text field. |
-| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre único o el ID de cada evento, tal como se define del lado de Baidu mDSP Ads (Baiyi).  <br />Obtén el ID de evento correspondiente de Baidu mDSP Ads (Baiyi) e introdúcelo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: AppsFlyer envía al partner todos los parámetros del evento in-app enriquecido, excepto el parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el valor de ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to Baidu mDSP Ads (Baiyi) for attributing Baidu mDSP Ads (Baiyi)'s campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a Baidu mDSP Ads (Baiyi) para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de Baidu mDSP Ads (Baiyi). Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with Baidu mDSP Ads (Baiyi).  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific Baidu mDSP Ads (Baiyi) campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Baidu mDSP Ads (Baiyi).  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña**: añádela para comparar diferentes campañas en ejecución con Baidu mDSP Ads (Baiyi).  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios**: define nombres de conjuntos de anuncios para comparar diferentes conjuntos de anuncios dentro de campañas específicas de Baidu mDSP Ads (Baiyi).  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio**: define nombres de anuncios para comparar diferentes creativos dentro de conjuntos de anuncios específicos de campañas específicas de Baidu mDSP Ads (Baiyi).  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** y **ID de subsitio**: configura el parámetro ID de sitio para atribuir las instalaciones a publishers específicos. Si existen muchos publishers, te recomendamos limitar la cantidad de IDs de sitio usados y utilizar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceder las limitaciones de ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor**: usa cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+  **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura de enlaces de atribución de AppsFlyer y sus parámetros**</Anchor>.
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window can be attributed to Baidu mDSP Ads (Baiyi).
+Este control deslizante te permite establecer el **tiempo máximo del clic a la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Baidu mDSP Ads (Baiyi).
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
 
 ![baidu-mdsp-click-through.png](https://files.readme.io/19f6616cc1e62ec8888a72625ce936acdb6e8e63e4a4cd4273cdc99fd2297a93-360002075089.png)
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to Baidu mDSP Ads (Baiyi) to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Baidu mDSP Ads (Baiyi) para activarlo cuando los clientes potenciales hagan clic en el anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost integration is not available for Baidu mDSP Ads (Baiyi).
+La integración de costos no está disponible para Baidu mDSP Ads (Baiyi).
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue integration is not available for Baidu mDSP Ads (Baiyi).
+La integración de los ingresos por publicidad no está disponible para Baidu mDSP Ads (Baiyi).
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions configuration is not available for Baidu mDSP Ads (Baiyi).
+La configuración de permisos no está disponible para Baidu mDSP Ads (Baiyi).
 
 </Accordion>
 
-## Create conversion rule at Baidu mDSP ads
+## Crea una regla de conversión en Baidu mDSP Ads
 
-Log in to Baidu mDSP Ads at http://baiyi.baidu.com/ and go to **Tool** >> **Apps**:
+Inicia sesión en Baidu mDSP Ads en http://baiyi.baidu.com/ y ve a **Tool** >> **Apps**:
 
 ![mDSP_4.png](https://files.readme.io/90f99229f6bffe9b9edbf0469f9b4e66ca9c5c55184eb542e250ef6a9bd76aee-115014006086.png)
 
-Click **Create New App**.
+Haz clic en **Crear nueva app**.
 
 ![mDSP_5.png](https://files.readme.io/c034e3238fbd6021fefc44ff8b1cf8b4d39c3f9043b02074c3bdccce2747ac48-115014006106.png)
 
-Enter all the relevant information in the fields.
+Introduce toda la información relevante en los campos.
 
-Add the AppsFlyer **Attribution Link in the box of Feedback URL**:
+Añade el enlace de atribución de AppsFlyer **en el cuadro de Feedback URL**:
 
 ![mDSP_6.png](https://files.readme.io/6692275131ee49b62febcb558457f7f1a1fbd167f3d3f61d976e1cb248a61388-115014006906.png)
 
-***NOTE***: For iOS Apps, add the app by entering the **Appid**. For Android Apps, add the app in two ways:  
-1. Connecting with the App that you have uploaded to Baidu Developer Platform ([http://app.baidu.com/](http://app.baidu.com/)), or  
-2. Entering the APK download page, or upload the APK there.
+***NOTA***: En las aplicaciones de iOS, añade la aplicación introduciendo el **Appid**. En las aplicaciones de Android, añade la aplicación de dos formas:  
+1. Conectándola con la aplicación que has subido a la plataforma de desarrolladores de Baidu ([http://app.baidu.com/](http://app.baidu.com/)), o  
+2. Accediendo a la página de descarga del APK o subiendo allí el APK.
 
-Then click submit button at the end of the page.
+Después, haz clic en el botón de envío al final de la página.
 
-**2. Create App Promotion Ads at Baidu mDSP Ads**.
+2. Crea anuncios de promoción de apps en Baidu mDSP Ads.
 
-Click **Campaign Management** >> **Create New Campaign**:
+Haz clic en **Campaign Management** >> **Create New Campaign**:
 
 ![mDSP_7.png](https://files.readme.io/aab8866a1969e403247c97018aae1d65d456ce4e261412035ef91a1862f509b9-115014006926.png)
 
-In section **2. Set Up Ad Unit** >> Process to **Objectives**, choose App Install >> Complete other related information and submit the Ad campaign for verification:
+En la sección **2. Configura la unidad de anuncio** >> Ve a **Objetivos**, elige Instalación de la app >> Completa el resto de la información relacionada y envía la campaña de anuncios para su verificación:
 
 ![mDSP_8.png](https://files.readme.io/da064e6811b4c749a20757d711186dc705070629887cdf2e7b514cc17274af75-115014006946.png)
 
-<div data-zendesk-anchors="h_01HKW6TN4YBTMR1ZDH77D7SK7N=setting-up-baidu-mdso-ads-baiyi h_01HKW6TN4YM927W1VAKNWFQ0SJ=integration-tab h_01HKW6TN4Y4EXABZTJ2VE4QRTK=activate-partner inapp-events-settings=in-app-events-settings h_01HKW6TN4YYDKNGCSJB4MARK52=in-app-events-settings h_01HKW6TN4Y2D2K419172AZJXR6=attribution-link-tab h_01HKW6TN4YQTMGSMPGR01FR658=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6TN4Y9ZP7SXMTD0XGNPGV=click-through-attribution h_01HKW6TN4Y5A1PT6RCVCFYRG9Q=click-attribution-link h_01HKW6TN4Z02V726B7379TMBC0=cost-tab h_01HKW6TN4Z01YZWHMGF5N1KC50=ad-revenue-tab h_01HKW6TN4Z3KCEFDW9YA2A2BZV=permissions-tab h_01HKW6TN4ZWEA7683C8MFAT4AY=create-conversion-rule-at-baidu-mdsp-ads" />
+<div data-zendesk-anchors="setting-up-baidu-mdso-ads-baiyi=configurar-baidu-mdsp-ads-baiyi h_01HKW6TN4YBTMR1ZDH77D7SK7N=configurar-baidu-mdsp-ads-baiyi h_01HKW6TN4YM927W1VAKNWFQ0SJ=integration-tab activate-partner=activar-socio h_01HKW6TN4Y4EXABZTJ2VE4QRTK=activar-socio inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HKW6TN4YYDKNGCSJB4MARK52=configuraci%C3%B3n-de-eventos-in-app h_01HKW6TN4Y2D2K419172AZJXR6=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HKW6TN4YQTMGSMPGR01FR658=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HKW6TN4Y9ZP7SXMTD0XGNPGV=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKW6TN4Y5A1PT6RCVCFYRG9Q=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKW6TN4Z02V726B7379TMBC0=cost-tab h_01HKW6TN4Z01YZWHMGF5N1KC50=ad-revenue-tab h_01HKW6TN4Z3KCEFDW9YA2A2BZV=permissions-tab create-conversion-rule-at-baidu-mdsp-ads=crea-una-regla-de-conversi%C3%B3n-en-baidu-mdsp-ads h_01HKW6TN4ZWEA7683C8MFAT4AY=crea-una-regla-de-conversi%C3%B3n-en-baidu-mdsp-ads" />

@@ -1,5 +1,5 @@
 ---
-title: Understand Incrementality for remarketing experiment alerts
+title: Alertas de experimentos de incrementalidad
 metadata:
   keywords:
     - Premium Feature
@@ -13,141 +13,140 @@ x-zendesk:
     - Marketers
     - Incrementality
   created_at: '2023-03-05T12:31:35Z'
-  edited_at: '2025-07-06T10:54:14Z'
+  edited_at: '2024-11-20T16:47:31Z'
   id: 13479545385489
-  locale: en-us
+  locale: es
   section: Incrementality for remarketing
   section_id: 6551378485649
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/13479545385489-Understand-Incrementality-for-remarketing-experiment-alerts
+  url: https://support.appsflyer.com/hc/es/articles/13479545385489
 ---
-> **At a glance:** Understand alerts and get them resolved, to ensure accurate experiment results.
+> **A simple vista:** Comprende las alertas y solucionalas para asegurar resultados precisos en los experimentos.
 
-![exp_alerts_doctored.jpg](https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg)
+![exp_alerts_modificado.jpg](https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg)
 
-## About experiment alerts
+## Sobre las alertas de experimentos
 
-Once you've <Anchor target="_blank" href="/marketers/docs/run-an-incrementality-for-remarketing-experiment">set up an Incrementality experiment</Anchor>, you may come across alerts on the Incrementality dashboard. These alerts are designed to help you identify issues that can compromise the integrity and accuracy of your experiment results. They provide specific information about problems and suggest actions that can be taken to address them, to ensure accurate experiment results. This article provides a comprehensive overview of the different types of alerts, as well as the recommended actions for getting the issues resolved.
+Después de <Anchor target="_blank" href="/marketers/es/docs/run-an-incrementality-for-remarketing-experiment">configurar un experimento de Incrementalidad</Anchor>, es posible que veas alertas en el panel de Incrementalidad. Estas alertas están hechas para ayudarte a identificar problemas que pueden afectar la integridad y precisión de los resultados de tus experimentos. Brindan información específica sobre los problemas y sugieren acciones a tomar para solucionarlos, asegurando resultados precisos en los experimentos. Este artículo ofrece una visión completa de los distintos tipos de alertas, así como las acciones recomendadas para solucionarlas.
 
-## Alert types
+## Tipos de alertas
 
-Experiment alerts fall into the following categories:
+Las alertas de experimentos se clasifican en las siguientes categorías:
 
 <div id="experiment-setup" />
 
-<Accordion title="Experiment setup">
+<Accordion title="Configuración del experimento">
 
-#### Audience deletion or control group removal
+#### Eliminación de audiencias o grupos de control
 
-Experiments whose connected audiences have been deleted or whose split audience control group has been removed. In both these scenarios, a 404 error will appear when visiting the experiment page.
+Experimentos cuyos públicos conectados han sido eliminados o cuyos grupos de control de audiencia dividida han sido eliminados. En ambos casos, al visitar la página del experimento, aparecerá un error 404.
 
-**To resolve this and restore the experiment results:**  
-If the **audience was deleted** - Please contact your CSM who will have it restored manually.  
-If the **control group was removed** - Please split the audience again and set the control group to the exact same percentage as it was before removal.
+**Para resolver esto y restablecer los resultados del experimento:**  
+Si la **audiencia fue eliminada**, contacta a tu CSM, quien la restaurará manualmente.  
+Si el **grupo de control fue eliminado**, divide de nuevo la audiencia y configura el grupo de control con el mismo porcentaje de antes.
 
-#### More suitable campaign? (SRNs only)
+#### ¿Campaña más adecuada? (Solo SRN)
 
-This alert is relevant to Self Reporting Networks (SRNs) only. This alert appears when a campaign is connected to an experiment but data indicates that there's a campaign that may be better suited for targeting the audience.  
-A "more suitable campaign" is a campaign, currently active during the experiment time frame, that targets the test group in a more substantial way than the configured campaign (and doesn't target the control group).
+Esta alerta solo es relevante para las redes de autorreporte (SRN). Este aviso aparece cuando una campaña está vinculada a un experimento, pero los datos sugieren que puede haber otra campaña más adecuada para el público objetivo.  
+Una "campaña más adecuada" es aquella que, durante el período del experimento, apunta al grupo de prueba de manera más efectiva que la campaña configurada (y no apunta al grupo de control).
 
-**Actions to take:** Check if the right campaign is linked.
+**Acciones recomendadas:** Verifica si la campaña correcta está vinculada.
 
-**Note:** It's also a good idea to make sure the audience is not included as part of the targeting configuration of other campaigns.
+**Nota:** También es recomendable asegurarse de que la audiencia no esté incluida en la segmentación de otras campañas.
 
-#### No impressions (Non-SRNs only)
+#### Sin impresiones (solo para SRN no incluidos)
 
-When Incrementality experiments are done on campaigns run on non-SRN ad networks, AppsFlyer requires user impressions in order to most accurately calculate the incremental impact of those campaigns. Without impressions, the results will simply not display on the experiment page.
+Cuando se realizan experimentos de incrementalidad en campañas que se ejecutan en redes publicitarias no SRN, AppsFlyer necesita impresiones de los usuarios para calcular con precisión el impacto incremental de dichas campañas. Sin impresiones, los resultados no se mostrarán en la página del experimento.
 
-This alert describes a situation in which for some reason we're not receiving impressions data for the connected campaign.
+Esta alerta indica que, por algún motivo, no estamos recibiendo datos de impresiones de la campaña conectada.
 
-**Actions to take:** Check that you are receiving impressions from the media partner and that the tested campaign is working and delivering ads.
+**Acciones a tomar:** Compruebe que está recibiendo impresiones del socio de medios y que la campaña probada esté operativa y mostrando anuncios.
 
 </Accordion>
 
 <div id="experiment-background-environment" />
 
-<Accordion title="Experiment background environment">
+<Accordion title="Entorno de fondo del experimento">
 
-#### Background campaign (one or multiple)
+#### Campaña en segundo plano (una o varias)
 
-This alert appears when there are unrelated, very large campaigns that have a much bigger impact on the audience than the configured campaign in the experiment.
+Esta alerta aparece cuando existen campañas muy grandes y no relacionadas que impactan significativamente más a la audiencia que la campaña configurada en el experimento.
 
-How can this happen?  
-It's not unusual for unrelated campaigns to exist in the background, but if those campaigns have a bigger budget or operate more intensely, they can overshadow the configured campaign—and subsequently affect the results of the experiment.
+¿Cómo puede suceder esto?  
+No es raro que haya campañas no relacionadas en segundo plano, pero si tienen un presupuesto mayor o se ejecutan con más intensidad, pueden eclipsar la campaña configurada y afectar los resultados del experimento.
 
-**Actions to take:**
+**Acciones a tomar:**
 
-* Increase the impact of your campaign by raising the budget.
-* Check whether the tested audience overlaps with the audience targeted by the background campaign (can be checked with the Audiences partner overlap feature).
-* Check whether the tested audience overlaps with the unrelated background campaign.
-* Tighten the tested audience segmentation.
-* If actions were taken to minimize the impact of background campaigns, set the experiment start date to after these changes were made.
+* Aumente el impacto de su campaña ampliando el presupuesto.
+* Compruebe si la audiencia probada se solapa con la audiencia a la que apunta la campaña en segundo plano (puede verificarse con la función de superposición de audiencias de socios).
+* Verifique si la audiencia probada se solapa con la campaña de fondo no relacionada.
+* Refuerce la segmentación de la audiencia probada.
+* Si ha tomado medidas para minimizar el impacto de campañas en segundo plano, establezca la fecha de inicio del experimento después de realizar estos cambios.
 
-**Note:** It is best practice to minimize the targeting of the tested audience with other campaigns.
+**Nota:** **Es recomendable minimizar la segmentación de la audiencia probada con otras campañas.**
 
 </Accordion>
 
 <div id="linked-campaign-performance" />
 
-<Accordion title="Linked campaign performance">
+<Accordion title="Rendimiento de la campaña vinculada">
 
-#### Audience overlap
+#### Superposición de audiencias
 
-The connected campaign is targeting overlapping audiences. This means that the linked campaign's targeting configuration contains more than one audience.  
-Additionally, the multiple audiences in the tested campaign configuration overlap. This will result in targeting outside of the tested audience, including targeting the control group of the tested audience.
+La campaña conectada está dirigida a audiencias que se solapan. Esto significa que la configuración de segmentación de la campaña vinculada incluye más de una audiencia.  
+Además, las múltiples audiencias en la configuración de la campaña probada se solapan. Esto provocará una segmentación fuera del público evaluado, incluyendo la segmentación del grupo de control del público evaluado.
 
-**Actions to take:**  
-Update the campaign's targeting to include the tested audience only and remove any additional audiences.
+**Acciones a tomar:**  
+Actualice la segmentación de la campaña para incluir solo al público probado y elimine cualquier otro público adicional.
 
-#### Control group is targeted
+#### El grupo de control está siendo objetivo
 
-This warning indicates that the configured campaign is targeting the control group although it's only supposed to target the test group.
+Esta advertencia indica que la campaña configurada está apuntando al grupo de control aunque debería solo dirigirse al grupo de prueba.
 
-**How can this happen?**
+**¿Cómo puede ocurrir esto?**
 
-* The experiment was linked to the wrong campaign.
-* The campaign on the media partner side was configured to target users outside of the audience (learn about <Anchor target="_blank" href="/marketers/docs/run-an-incrementality-for-remarketing-experiment#check-for-audience-expansion-features">audience expansion features</Anchor> in Facebook and Google).
-* Network not enforcing the targeting configuration.
+* El experimento fue vinculado a la campaña incorrecta.
+* La campaña del lado del socio de medios se configuró para dirigirse a usuarios fuera del público (obtenga información sobre las <Anchor target="_blank" href="/marketers/es/docs/run-an-incrementality-for-remarketing-experiment#revisa-las-funciones-de-expansión-de-audiencia">funciones de expansión de audiencia</Anchor> en Facebook y Google).
+* La red no está aplicando la configuración de segmentación.
 
-**Actions to take:**  
-Please check the common scenarios listed above, and contact your CSM if unsure. In certain cases, depending on the significance of the exposure to the campaign by the control group users, there isn't a fix for this, and a new Incrementality experiment should be created.
+**Acciones a tomar:**  
+Revise los escenarios comunes listados anteriormente y contacte con su CSM si tiene dudas. En ciertos casos, dependiendo de la importancia de la exposición a la campaña por parte de los usuarios del grupo de control, no hay solución para esto y se debe crear un nuevo experimento de Incrementalidad.
 
-If the breach is relatively small, it's enough to make sure the control group targeting has stopped. Track the warning in the experiment’s UI and check to see if the alert still appears after a few days.
+Si la infracción es relativamente pequeña, basta con asegurarse de que la orientación al grupo de control se haya detenido. Haga un seguimiento de la advertencia en la interfaz de usuario del experimento y compruebe si la alerta aún aparece después de unos días.
 
-#### Detailed targeting toggle is enabled
+#### La opción de segmentación detallada está activada
 
-Detailed targeting is a feature on certain ad networks that lets you fine-tune who sees your ads. This alert will appear if the campaign’s detailed targeting toggle is enabled. When enabled it will allow the campaign to target outside of the configured audience.
+La segmentación detallada es una característica de ciertas redes publicitarias que permite afinar quién ve sus anuncios. Esta alerta aparecerá si la opción de segmentación detallada de la campaña está activada. Cuando está activada, permitirá a la campaña dirigirse fuera del público configurado.
 
-**Actions to take:** Verify that the detailed targeting toggle is off on the partner-side campaign configuration.
+**Acciones recomendadas:** Verifique que la opción de segmentación detallada esté desactivada en la configuración de la campaña del lado del socio.
 
-#### Low activity
+#### Poca actividad
 
-The campaign is not delivering ads or is delivering very few ads to the targeted audience.
+La campaña no está entregando anuncios o está entregando muy pocos anuncios al público objetivo.
 
-**Actions to take:** Investigate the problem on the media partner side to understand why the campaign isn't delivering ads.
+**Acciones a tomar:** Investigue el problema en el lado del socio de medios para entender por qué la campaña no está entregando anuncios.
 
-#### Multiple audiences connected
+#### Múltiples públicos conectados
 
-The campaign’s targeting configuration includes multiple audiences. This may lead to targeting outside the tested audience, or the control group, ultimately impacting the test results.
+La configuración de segmentación de la campaña incluye múltiples públicos. Esto puede provocar que se dirija fuera del público evaluado o del grupo de control, lo que afectará finalmente los resultados de la prueba.
 
-**Actions to take:**  
-A best practice for Incrementality testing is that the tested campaign should target only one audience.
+**Acciones a tomar:**  
+Una buena práctica para las pruebas de incrementalidad es que la campaña probada se dirija únicamente a una audiencia.
 
-#### Out-of-audience targeting
+#### Segmentación fuera de la audiencia
 
-The tested campaign is also targeting users outside of the targeted audience test group. Part of the campaign's cost is being spent delivering ads to those unrelated to the tested audience users, and who are not taken into consideration in the Incrementality test.
+La campaña evaluada también se está dirigiendo a usuarios que no forman parte del grupo de prueba de la audiencia objetivo. Parte del coste de la campaña se está destinando a mostrar anuncios a usuarios que no están relacionados con la audiencia de prueba y que no se consideran en la prueba de incrementalidad.
 
-Therefore, when spending money on unrelated users, metrics that involve the cost of the campaign such as iROAS & CPiA will be biased. They will take into account the entire campaign cost, including the cost it took to present ads to users outside of the audience, but it will not count their conversions.
+Por lo tanto, al invertir en usuarios no relacionados, las métricas que incluyen el coste de la campaña, como iROAS y CPiA, estarán distorsionadas. Tendrán en cuenta el coste total de la campaña, incluyendo el coste de mostrar anuncios a usuarios fuera de la audiencia, pero no contabilizarán sus conversiones.
 
-**How can this happen?**
+**¿Cómo puede ocurrir esto?**
 
-* The experiment was linked to the wrong campaign.
-* The campaign on the media partner side was configured to target users outside of the audience (learn about <Anchor target="_blank" href="/marketers/docs/run-an-incrementality-for-remarketing-experiment#check-for-audience-expansion-features">audience expansion features</Anchor> in Facebook and Google).
-* Network not enforcing the targeting configuration.
+* El experimento fue vinculado a la campaña incorrecta.
+* La campaña del lado del socio de medios se configuró para dirigirse a usuarios fuera del público (obtenga información sobre las <Anchor target="_blank" href="/marketers/es/docs/run-an-incrementality-for-remarketing-experiment#revisa-las-funciones-de-expansión-de-audiencia">funciones de expansión de audiencia</Anchor> en Facebook y Google).
+* La red no está aplicando la configuración de segmentación.
 
-**Actions to take:**  
-Make sure the campaign's targeting configuration contains only the tested audience and that the campaign's configuration doesn't allow the campaign to target outside of the audience.
+**Acciones a tomar:**  
+Asegúrese de que la configuración de segmentación de la campaña incluya solo la audiencia probada y que no permita dirigirse fuera de esa audiencia.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HNZPQJDA5D7Q04CDKMYCW763=about-experiment-alerts types-of-alerts=alert-types h_01HE7R6CQ5R9HAYG83B3903AY8=alert-types h_01HE7R6CQ5SNX6VYFD18501JYT=experiment-setup h_01HE7R6CQ5DM1QNN1E55TGDKKH=audience-deletion-or-control-group-removal more-suitable-campaigns-srns-only=more-suitable-campaign-srns-only h_01HE7R6CQ518RS50X87243M7BV=more-suitable-campaign-srns-only no-impressions-received-nonsrns-only=no-impressions-non-srns-only h_01HE7R6CQ57DV8D642APE01JV0=no-impressions-non-srns-only h_01HE7R6CQ5XFAE56PTX6RRZD5J=experiment-background-environment h_01HE7R6CQ5AZW1RB7XJH4GEEBT=background-campaign-one-or-multiple h_01HE7R6CQ5C6009QZK6TQS6QGC=linked-campaign-performance h_01HE7R6CQ6X5C0D4E519W535PH=audience-overlap h_01HE7R6CQ5NFH58H8ZNRG6E4MG=control-group-is-targeted h_01HKSTD08WK37RHM5DM922GGWF=detailed-targeting-toggle-is-enabled h_01HE7R6CQ6C76SZEAN0R93H9QN=low-activity h_01HKSTFSKDTD2Z8HKCCX2MWBJQ=multiple-audiences-connected outofaudience-targeting=out-of-audience-targeting h_01HE7R6CQ6TVCGW5X8GBX0AJKS=out-of-audience-targeting" />
+<div data-zendesk-anchors="about-experiment-alerts=sobre-las-alertas-de-experimentos h_01HNZPQJDA5D7Q04CDKMYCW763=sobre-las-alertas-de-experimentos types-of-alerts=tipos-de-alertas h_01HE7R6CQ5R9HAYG83B3903AY8=tipos-de-alertas h_01HE7R6CQ5SNX6VYFD18501JYT=experiment-setup audience-deletion-or-control-group-removal=eliminaci%C3%B3n-de-audiencias-o-grupos-de-control h_01HE7R6CQ5DM1QNN1E55TGDKKH=eliminaci%C3%B3n-de-audiencias-o-grupos-de-control more-suitable-campaigns-srns-only=campa%C3%B1a-m%C3%A1s-adecuada-solo-srn h_01HE7R6CQ518RS50X87243M7BV=campa%C3%B1a-m%C3%A1s-adecuada-solo-srn no-impressions-received-nonsrns-only=sin-impresiones-solo-para-srn-no-incluidos h_01HE7R6CQ57DV8D642APE01JV0=sin-impresiones-solo-para-srn-no-incluidos h_01HE7R6CQ5XFAE56PTX6RRZD5J=experiment-background-environment background-campaign-one-or-multiple=campa%C3%B1a-en-segundo-plano-una-o-varias h_01HE7R6CQ5AZW1RB7XJH4GEEBT=campa%C3%B1a-en-segundo-plano-una-o-varias h_01HE7R6CQ5C6009QZK6TQS6QGC=linked-campaign-performance audience-overlap=superposici%C3%B3n-de-audiencias h_01HE7R6CQ6X5C0D4E519W535PH=superposici%C3%B3n-de-audiencias control-group-is-targeted=el-grupo-de-control-est%C3%A1-siendo-objetivo h_01HE7R6CQ5NFH58H8ZNRG6E4MG=el-grupo-de-control-est%C3%A1-siendo-objetivo detailed-targeting-toggle-is-enabled=la-opci%C3%B3n-de-segmentaci%C3%B3n-detallada-est%C3%A1-activada h_01HKSTD08WK37RHM5DM922GGWF=la-opci%C3%B3n-de-segmentaci%C3%B3n-detallada-est%C3%A1-activada low-activity=poca-actividad h_01HE7R6CQ6C76SZEAN0R93H9QN=poca-actividad multiple-audiences-connected=m%C3%BAltiples-p%C3%BAblicos-conectados h_01HKSTFSKDTD2Z8HKCCX2MWBJQ=m%C3%BAltiples-p%C3%BAblicos-conectados outofaudience-targeting=segmentaci%C3%B3n-fuera-de-la-audiencia h_01HE7R6CQ6TVCGW5X8GBX0AJKS=segmentaci%C3%B3n-fuera-de-la-audiencia" />

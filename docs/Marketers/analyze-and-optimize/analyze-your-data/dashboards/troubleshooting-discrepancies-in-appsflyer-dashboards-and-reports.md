@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting discrepancies in AppsFlyer dashboards and reports
+title: Resolución de discrepancias en los dashboards y reportes de AppsFlyer
 metadata:
   keywords:
     - dashboard
@@ -21,190 +21,189 @@ x-zendesk:
     - Marketing Analytics
     - Agencies
   created_at: '2017-11-07T12:42:27Z'
-  edited_at: '2025-12-18T00:01:08Z'
+  edited_at: '2026-08-12T11:51:08Z'
   id: 115005600889
-  locale: en-us
+  locale: es
   section: Dashboards
   section_id: 6550925337873
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115005600889-Troubleshooting-discrepancies-in-AppsFlyer-dashboards-and-reports
+  url: https://support.appsflyer.com/hc/es/articles/115005600889
 ---
-> **At a glance:** Understand why there can be differences and discrepancies when comparing data from different dashboards and reports. Often, this may be because data in one place is lifetime value (LTV) data and in another it's activity data. LTV data is related to installs that occurred during a specified date range. Activity data is events that occurred during a specified date range.
+> **En resumen:** Comprende por qué puede haber diferencias y discrepancias al comparar datos de diferentes dashboards y reportes. A menudo, esto puede deberse a que los datos en un lugar son datos de lifetime value (LTV) y en otro son datos de actividad. Los datos de LTV están relacionados con las instalaciones que ocurrieron durante un rango de fechas específico. Los datos de actividad son eventos que ocurrieron durante un rango de fechas específico.
 
-## About data differences and discrepancies
+## Acerca de las diferencias y discrepancias de datos
 
-When comparing data from different dashboards and reports, the general reason for discrepancies is that you may not be comparing the same data to the same data. The following is a quick checklist to help you make sure you're comparing same to same:
+Al comparar datos de diferentes dashboards y reportes, la razón general de las discrepancias es que es posible que no estés comparando los mismos datos con los mismos datos. A seguir, puedes ver una lista de verificación rápida para ayudarte a asegurarte de que estás comparando lo equivalente:
 
-* Are the app platforms the same (Android, iOS, CTV, etc.)?
-* Are the app IDs the same?
-* Are the dashboard/data filters the same?
-* Are the currencies the same?
-* Are the timezones the same?
-* Is the <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support">data freshness</Anchor> the same?
-* Is the data <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison">aggregate data</Anchor> or <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data</Anchor>?
-* Is the data LTV or activity?
+* ¿Las plataformas de aplicaciones son las mismas (Android, iOS, CTV, etc.)?
+* ¿Los IDs de aplicación son los mismos?
+* ¿El dashboard/filtros de datos son los mismos?
+* ¿Las monedas son las mismas?
+* ¿Las zonas horarias son las mismas?
+* ¿La <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support">actualización de datos</Anchor> es la misma?
+* ¿Los datos son <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison">datos agregados</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">raw data</Anchor>?
+* ¿Los datos son LTV o actividad?
 
-One of the most common reasons for differences in data is due to comparing an LTV dashboard or report to an activity dashboard or report. See the following sections to learn more about LTV vs activity.
+Una de las razones más comunes de las diferencias en los datos se debe a la comparación de un dashboard o reporte de LTV con un dashboard o reporte de actividad. Consulta las siguientes secciones para obtener más información sobre el LTV vs la actividad.
 
-## LTV vs. Activity
+## LTV vs Actividad
 
-There are two methods for analyzing user event data. Event data relates to actions performed by users post-installation, such as in-app purchases, registrations, and level completions. In AppsFlyer, event data is available grouped by the user acquisition date or the event date.
+Los datos de eventos de usuarios se pueden analizar mediante dos métodos. Los datos de eventos se relacionan con cualquier acción llevada a cabo por los usuarios después de la instalación, como compras in-app, registros y niveles completados. En AppsFlyer, los datos de eventos están disponibles agrupados por la fecha de adquisición del usuario o la fecha del evento.
 
-* Post-install event data grouped by user acquisition date is referred to as lifetime value (LTV).
-* Post-install event data grouped by event date is referred to as activity.
+* Los datos de eventos posteriores a la instalación agrupados por fecha de adquisición del usuario se denominan LTV (lifetime value).
+* Los datos de eventos posteriores a la instalación agrupados por fecha del evento se denominan actividad.
 
-**Note**: Installs are neither LTV nor activity.
+**Nota**: Las instalaciones no son LTV ni actividad.
 
-Advertisers find both types of data useful but for different purposes. For this reason, both are available.
+Los anunciantes consideran que ambos tipos de datos son útiles, pero para diferentes fines. Por esta razón, ambos están disponibles.
 
-### LTV data
+### Datos de LTV
 
-* LTV data are the events performed during the lifetime of a user who converted/installed the app in a specific date range. The date range refers to users who installed during the time period and shows how valuable they are during their time as customers. If a user converted/installed the app before the specified date, then even if events occurred during the specified date range, they don't show in LTV dashboards and reports.
-* LTV data is a tool that shows the **quality of users** from different media sources. Campaign optimization depends on LTV data.
+* Los datos de LTV son los eventos que se realizan durante el ciclo de vida de un usuario que convirtió/instaló la aplicación en un intervalo específico de fechas. El rango de fechas se refiere a los usuarios que instalaron la aplicación durante el período de tiempo y muestra lo valiosos que son durante el tiempo que son como clientes. Si un usuario convirtió/instaló la aplicación antes de la fecha especificada, incluso si los eventos ocurrieron durante el intervalo de fechas especificado, no se muestran en los dashboards y reportes de LTV.
+* Los datos de LTV son la herramienta que muestra la **calidad de los usuarios** de diferentes fuentes de medios. La optimización de la campaña depende de los datos de LTV.
 
-### Activity data
+### Datos de actividad
 
-* Activity data shows what users did during a specified date range. meaning what events were performed by active app users during a specified date range. It doesn't matter if the users converted/installed the app outside of the date range.
-* Because activity data shows a breakdown of chronological events, it's useful for measuring the overall performance of media sources during specific date ranges. For example, use activity data to see how many purchase events were performed by all app users during a specific month.
-* Use activity data to compare user behavior in the current month relative to a previous month.
+* Los datos de actividad muestran lo que hicieron los usuarios durante un rango de fechas específico. Los datos de actividad muestran lo que hicieron los usuarios durante un intervalo de fechas específico, es decir, qué eventos realizaron los usuarios activos de la aplicación durante un intervalo de fechas específico. No importa si los usuarios convirtieron/instalaron la aplicación fuera del rango de fechas.
+* Debido a que los datos de actividad muestran un desglose de eventos cronológicos, resultan útiles para medir el rendimiento general de las fuentes de medios durante intervalos específicos de fechas. Por ejemplo, puedes usar los datos de actividad para ver cuántos eventos de compra realizaron todos los usuarios de la aplicación durante un mes específico.
+* Usa los datos de actividad para comparar el comportamiento del usuario en el mes actual en relación con un mes anterior.
 
-> 📄 **The train analogy**
+> 📄 **La analogía del tren**
 >
-> This analogy will help you understand the difference between activity and LTV data.
+> Esta analogía te ayudará a comprender la diferencia entre el LTV y los datos de actividad.
 >
-> **Activity:** Imagine you're watching a passing train. As the train passes, you see only the actions performed by the passengers on the train as they pass by. This is activity data.
+> **Actividad**: Imagina que ves que pasa un tren. Cuando el tren pasa, solo puedes ver las acciones que realizan los pasajeros en el tren cuando pasan. Estos son los datos de actividad.
 >
 > <Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 >
-> **LTV**: Now imagine, that you board a train as an observer. The train is divided into railroad cars.
+> **LTV**: Ahora, imagina que subes a un tren como observador. El tren está dividido en vagones.
 >
-> * You board the car with other passengers at the departure platform. This is the install.
-> * During the journey, you're able to observe all the actions performed by the passengers in the car. You observe the actions of these passengers until a passenger deboards the train, this is an uninstall.
-> * You aren't able to view the actions of passengers in other railroad cars because they boarded the train before or after you. This then is LTV.
+> * Subes al vagón con otros pasajeros en el andén de salida. Esta es la instalación.
+> * Durante el viaje, puedes observar todas las acciones que realizan los pasajeros en el vagón. Observas las acciones de estos pasajeros hasta que un pasajero se baja del tren, esto es una desinstalación.
+> * No puedes ver las acciones de los pasajeros en otros vagones del ferrocarril porque se subieron al tren antes o después de ti. Esto es el LTV.
 >
 > <Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
-### AppsFlyer dashboards and reports—LTV or activity?
+### Dashboards y reportes de AppsFlyer: ¿LTV o actividad?
 
-The dashboards enable marketers to optimize their non-organic traffic. Most of the dashboards are LTV-based, as marketers typically measure performance on an LTV basis. All aggregated data reports are LTV-based, and all raw data reports are activity-based.
+Los dashboards permiten a los marketers optimizar su tráfico no orgánico. La mayoría de los dashboards se basan en el LTV, ya que los marketers generalmente miden el rendimiento en base al LTV. Todos los reportes de datos agregados se basan en el LTV y todos los reportes de raw data se basan en actividades.
 
-The following table shows which dashboards and reports are LTV and which are activity.
+La siguiente tabla muestra qué dashboards y reportes son de LTV y cuáles son de actividad.
 
-| Data source | Data type |
+| Fuente de datos | Tipo de datos |
 | --- | --- |
-| Overview dashboard | LTV |
-| My Dashboards | LTV |
-| SKAN Overview | LTV |
-| Protect360 installs | LTV |
-| Protect360 in-app events | Activity |
-| Activity dashboard | Activity |
-| Events dashboard | LTV |
-| Custom dashboard | LTV |
-| Retention | LTV |
-| Cohort | LTV |
-| Aggregate data performance reports | LTV |
-| Raw data reports | Activity |
-| Retargeting reports | LTV |
-| Protect360 fraud prevention reports | Activity |
-| Master API—campaign performance KPIs | Both |
-| Pivot table | Both |
+| Dashboard general | Característica |
+| [Beta] My Dashboards | Característica |
+| Resumen de SKAN | Característica |
+| Instalaciones de Protect360 | Característica |
+| Eventos in-app de Protect360 | Actividad |
+| Dashboard de actividad | Actividad |
+| Dashboard de eventos | Característica |
+| Panel personalizado | Característica |
+| Retención | Característica |
+| Cohorte | Característica |
+| Reportes de raw data | Característica |
+| SKAN general | Actividad |
+| Reportes de retargeting | Característica |
+| Reportes de prevención de fraude de Protect360 | Actividad |
+| API maestra: KPIs de rendimiento de la campaña | Ambos |
+| Tabla pivot | Ambos |
 
-## Compare data between different dashboards and reports
+## Compara datos entre diferentes dashboards y reportes
 
-The following sections explain how you can compare data between different dashboards and reports while effectively mitigating and troubleshooting the reasons why you might see differences or discrepancies in the data.
+Las siguientes secciones explican cómo puedes comparar datos entre diferentes dashboards y reportes, al tiempo que mitigas y resuelves problemas de manera efectiva las razones por las que puedes ver diferencias o discrepancias en los datos.
 
 <div id="compare-ltv-and-activity-data-in-appsflyer" />
 
-<Accordion title="Compare LTV and activity data in AppsFlyer">
+<Accordion title="Comparación de LTV y datos de actividad en AppsFlyer">
 
-When comparing AppsFlyer data, consider that when comparing LTV data and activity data, there are 2 differences to consider:
+Al comparar los datos de AppsFlyer, ten en cuenta que al comparar los datos de LTV y los datos de actividad, hay 2 diferencias a considerar:
 
-1. Activity data includes events from **installs that happened before** the date range.
-2. LTV data includes **events that happened after** the date range.
+1. Los datos de actividad incluyen eventos de **instalaciones que ocurrieron antes** del intervalo de fechas.
+2. Los datos de LTV incluyen **eventos que ocurrieron después** del intervalo de fechas.
 
-To compare the two types of data correctly we need to neutralize the differences. This can be achieved by retrieving LTV data from activity data or vice versa. **Note**: Minor differences between similar sources are still possible due to differences in report generation time.
+Para comparar ambos tipos de datos correctamente, es necesario neutralizar las diferencias. Para lograrlo, podemos extraer los datos del LTV de los datos de actividad o viceversa. **Nota**: Aún es posible que haya diferencias menores entre fuentes similares debido a las diferencias a la hora de generar los reportes.
 
-#### To retrieve LTV data out of raw activity data:
+#### Para recuperar los datos del LTV a partir de los raw data de actividad:
 
-1. In AppsFlyer, from the side menu, select **Report** > **Raw Data Export.**
-2. Set the **current day as the last day** of the date range (difference 2 solved).
-3. Download the raw in-app events report.
-4. Use the **Install time** column to filter out installs prior to the first day of the date range (difference 1 solved).
+1. En AppsFlyer, en el menú lateral, selecciona **Reporte** > **Exportación de raw data**.
+2. Configura el **día actual como el último día** del intervalo de fechas (esto resuelve la segunda diferencia).
+3. Descarga el reporte de raw data de eventos in-app.
+4. Usa la columna **Hora de instalación** para filtrar y dejar afuera las instalaciones anteriores al primer día del intervalo de fechas (esto resuelve la primera diferencia).
 
-#### To retrieve activity data out of LTV data:
+#### Para recuperar los datos de actividad a partir de los datos de LTV:
 
-1. **Select media sources that started sending installs within the specified date range in AppsFlyer** (difference 1 solved).  
-   This ensures the activity data does not include events performed within the date range that belong to installs that happened prior to the date range.
-2. **Set the current day as the last day of the date range** (difference 2 solved).  
-   This ensures the LTV data does not include events performed after the date range that belong to installs that happened within the date range.
+1. **Selecciona fuentes que comenzaron a enviar instalaciones dentro del intervalo de fechas especificado en AppsFlyer** (esto resuelve la primera diferencia).  
+   Esto garantiza que los datos de actividad no incluyan eventos efectuados dentro del intervalo de fechas que pertenecen a instalaciones ocurridas con anterioridad al intervalo de fechas.
+2. Configura el **día actual como el último día** del intervalo de fechas (esto resuelve la segunda diferencia).  
+   Esto garantiza que los datos del LTV no incluyan eventos efectuados después del intervalo de fechas que pertenezcan a instalaciones ocurridas dentro del intervalo de fechas.
 
 </Accordion>
 
 <div id="compare-different-appsflyer-aggregated-data-dashboards-and-reports" />
 
-<Accordion title="Compare different AppsFlyer aggregated data dashboards and reports">
+<Accordion title="Compara diferentes reportes y dashboards de datos agregados de AppsFlyer">
 
-When comparing data between different AppsFlyer aggregated data dashboards and reports, LTV vs, activity may be the reason for discrepancies.
+Al comparar datos entre diferentes dashboards y reportes de datos agregados de AppsFlyer, el LTV vs la actividad pueden ser la razón de las discrepancias.
 
-If you're aggregating data by geo, another reason for discrepancies could be that in AppsFlyer dashboards, aggregating by geo means the geo where the install occurred, while in raw data reports, it means the geo where the event occurred.
+Si estás agregando datos por geolocalización, otra razón de discrepancia podría ser que en los dashboards de AppsFlyer, agregar por geolocalización significa la geolocalización donde ocurrió la instalación, mientras que en los reportes de raw data significa la geolocalización donde ocurrió el evento.
 
-However, consider that there may be other reasons as well. <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison">See the aggregated reporting method comparison for more information</Anchor>
+Sin embargo, ten en cuenta que también pueden haber otras razones. <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison">Consulta la comparación de métodos de reportes agregados para más información</Anchor>
 
 </Accordion>
 
 <div id="compare-appsflyer-data-with-external-data" />
 
-<Accordion title="Compare AppsFlyer data with external data">
+<Accordion title="Compara los datos de AppsFlyer con los datos externos">
 
-The vast majority of data sources, including Google and Apple, display activity data, that aren't LTV data. Therefore, to compare data from external sources with AppsFlyer data, you would usually use AppsFlyer activity data available in the raw data reports.
+La inmensa mayoría de fuentes de datos, incluidos los datos de actividad de visualización, de Google y Apple, no consiste en datos del LTV. Por lo tanto, para comparar los datos de fuentes externas con los de AppsFlyer, por lo general usarás los datos de actividad de AppsFlyer, que se encuentran disponibles en los reportes de raw data.
 
-Consider that Meta Ads offers partial LTV data, limited to 28 days following the install.
+Ten en cuenta que Meta Ads ofrece datos de LTV parciales, limitados a un período de 28 días posteriores a la instalación.
 
-There may also be other reasons for discrepancies between AppsFlyer data and external data. See also:
+También pueden haber otras razones de discrepancia entre los datos de AppsFlyer y los datos externos. Consulta también:
 
-* <Anchor target="_blank" href="/marketers/docs/google-analytics-integration-discrepancies">Google analytics discrepancies</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/meta-ads-discrepancies">Meta Ads discrepancies</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/snapchat-integration-discrepancies">Snapchat discrepancies</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-faq-and-discrepancies">Google Ads discrepancies</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies">X Ads discrepancies</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/attribution-discrepancies-between-tiktok-for-business-and-appsflyer">TikTok discrepancies</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/resolve-appsflyer-app-stores-discrepancies">App store discrepancies</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/discrepancies-between-appsflyer-and-third-party-platforms">Third-party platform discrepancies</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/google-analytics-integration-discrepancies">Discrepancias de análisis de Google</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/meta-ads-discrepancies">Discrepancias de Meta Ads</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/snapchat-integration-discrepancies">Discrepancias de Snapchat</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-faq-and-discrepancies">Discrepancias de Google Ads</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies">Discrepancias de X Ads</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/attribution-discrepancies-between-tiktok-for-business-and-appsflyer">Discrepancias de TikTok</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/resolve-appsflyer-app-stores-discrepancies">Discrepancias de la tienda de aplicaciones</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/discrepancies-between-appsflyer-and-third-party-platforms">Discrepancias de plataformas de third-party</Anchor>
 
 </Accordion>
 
 <div id="compare-inapp-event-raw-data-with-the-activity-view" />
 
-<Accordion title="Compare in-app event raw data with the Activity view">
+<Accordion title="Compara la raw data de eventos in-app con la vista de actividad">
 
-In-app events appear in both the LTV and Activity view in the dashboard. However, each employs a different counting logic.  
-When reconciling event counts with raw data, always compare them against the Activity dashboard or the Activity view in My Dashboards, as these views represent event occurrences on the day they occurred.
+Los eventos in-app aparecen tanto en LTV como en la vista de actividad del Dashboard. Sin embargo, cada uno emplea una lógica de recuento diferente.  
+Al reconciliar los recuentos de eventos con la raw data, compáralos siempre con el dashboard de actividad o con la vista de actividad de My Dashboards, ya que estas vistas representan las ocurrencias de eventos el día en que se produjeron.
 
-Differences often arise when raw data isn’t filtered correctly, especially for retargeting events.
+Las diferencias suelen surgir cuando la raw data no se filtra correctamente, especialmente en el caso de los eventos de retargeting.
 
-#### **Reconcile raw data with Activity event metrics**
+#### **Reconciliar la raw data con las métricas de eventos de actividad**
 
-To compare in-app event totals:
+Para comparar los totales de eventos in-app:
 
-1. **Extract the required raw data reports:**
+1. **Reportes de rendimiento de datos agregados**
 
-* Non-organic in-app events
-* Retargeting in-app events
-* Organic in-app events
+* Eventos no orgánicos in-app
+* Eventos de retargeting en la aplicación
+* Eventos orgánicos en la aplicación
 
-2. **Filter retargeting events to avoid double-counting.**  
-   In retargeting scenarios, double attribution occurs. An in-app event will be attributed to both:
+2. **Filtra los eventos de retargeting para evitar el recuento duplicado.**  
+   En escenarios de retargeting, se produce una doble atribución. Un evento in-app se atribuirá a ambos:
 
-* The retargeting media source (**primary attribution**)
-* The media source that drove the original install (**secondary attribution**)
+* La fuente de medios de retargeting (**atribución principal**)
+* La fuente de medios que impulsó la instalación original (**atribución secundaria**)
 
-To avoid counting the same event twice across your reports, filter the field **Is primary attribution = True** in your raw data.  
-Apply this filter before aggregating the UA reports so that only the primary attribution instance is included. This prevents duplicated retargeting events from inflating totals.
+Para evitar contar el mismo evento dos veces en tus reportes, filtra el campo **Is primary attribution = True** en tu raw data.  
+Aplica este filtro antes de agregar los reportes de UA para que solo se incluya la instancia de atribución principal. Esto evita que los eventos de retargeting duplicados inflen los totales.
 
-3. **Aggregate the event totals.**  
-   Sum the events across the filtered sets.
-4. **Compare the aggregated total** with the event count displayed in the **Activity dashboard**.
+3. **Agrega los totales de eventos.**  
+   Suma los eventos de todos los conjuntos filtrados.
+4. **Compara el total agregado** con el recuento de eventos que se muestra en el **dashboard de actividad**.
 
 </Accordion>
 
-<div data-zendesk-anchors="ltv-vs-activity=about-data-differences-and-discrepancies h_01HKA0R42YZMAM5Y20B7T2JCDZ=about-data-differences-and-discrepancies h_01J5WGZ13WPMNSB1NA0SMA77WJ=ltv-vs-activity h_01HKA0R42YQ2CJS67MDQSJHKEW=ltv-data h_01HKA0R42Y987PJRM70M7DFJ98=activity-data h_01J5WGZ13W5W8NJ1CRZQPHY939=the-train-analogy appsflyer-dashboards%E2%80%94ltv-or-activity=appsflyer-dashboards-and-reportsltv-or-activity h_01HKA0R42Y558BQ45Y9MFZHZM0=appsflyer-dashboards-and-reportsltv-or-activity h_01J5WKA06A7XYFN07V60VQ4FY5=compare-data-between-different-dashboards-and-reports h_01J5WHVQSNEA2WK83RBRDM1GT3=compare-ltv-and-activity-data-in-appsflyer retrieving-ltv-data-out-of-raw-activity-data=to-retrieve-ltv-data-out-of-raw-activity-data h_01HKA0R42Z3ZSMEM7T5F0V3VM7=to-retrieve-ltv-data-out-of-raw-activity-data retrieving-activity-data-out-of-ltv-data=to-retrieve-activity-data-out-of-ltv-data h_01HKA0R42ZHFM4RHG78GE51XK3=to-retrieve-activity-data-out-of-ltv-data h_01J5WK0AEN2N6J4P06CC3DMWPJ=compare-different-appsflyer-aggregated-data-dashboards-and-reports h_01J5WHVQSNZW66CQ4VGQGAKZB1=compare-appsflyer-data-with-external-data h_01KCNZWKFAWQ3KBJPCXP4BP8RM=compare-inapp-event-raw-data-with-the-activity-view h_01KCNZXRJKTGPH104H5Y1QNTM9=reconcile-raw-data-with-activity-event-metrics" />
+<div data-zendesk-anchors="ltv-vs-activity=acerca-de-las-diferencias-y-discrepancias-de-datos h_01HKA0R42YZMAM5Y20B7T2JCDZ=acerca-de-las-diferencias-y-discrepancias-de-datos h_01J5WGZ13WPMNSB1NA0SMA77WJ=ltv-vs-actividad ltv-data=datos-de-ltv h_01HKA0R42YQ2CJS67MDQSJHKEW=datos-de-ltv activity-data=datos-de-actividad h_01HKA0R42Y987PJRM70M7DFJ98=datos-de-actividad h_01J5WGZ13W5W8NJ1CRZQPHY939=la-analog%C3%ADa-del-tren appsflyer-dashboards%E2%80%94ltv-or-activity=dashboards-y-reportes-de-appsflyer-ltv-o-actividad h_01HKA0R42Y558BQ45Y9MFZHZM0=dashboards-y-reportes-de-appsflyer-ltv-o-actividad compare-data-between-different-dashboards-and-reports=compara-datos-entre-diferentes-dashboards-y-reportes h_01J5WKA06A7XYFN07V60VQ4FY5=compara-datos-entre-diferentes-dashboards-y-reportes h_01J5WHVQSNEA2WK83RBRDM1GT3=compare-ltv-and-activity-data-in-appsflyer retrieving-ltv-data-out-of-raw-activity-data=para-recuperar-los-datos-del-ltv-a-partir-de-los-raw-data-de-actividad h_01HKA0R42Z3ZSMEM7T5F0V3VM7=para-recuperar-los-datos-del-ltv-a-partir-de-los-raw-data-de-actividad retrieving-activity-data-out-of-ltv-data=para-recuperar-los-datos-de-actividad-a-partir-de-los-datos-de-ltv h_01HKA0R42ZHFM4RHG78GE51XK3=para-recuperar-los-datos-de-actividad-a-partir-de-los-datos-de-ltv h_01J5WK0AEN2N6J4P06CC3DMWPJ=compare-different-appsflyer-aggregated-data-dashboards-and-reports h_01J5WHVQSNZW66CQ4VGQGAKZB1=compare-appsflyer-data-with-external-data h_01KCNZWKFAWQ3KBJPCXP4BP8RM=compare-inapp-event-raw-data-with-the-activity-view reconcile-raw-data-with-activity-event-metrics=reconciliar-la-raw-data-con-las-m%C3%A9tricas-de-eventos-de-actividad h_01KCNZXRJKTGPH104H5Y1QNTM9=reconciliar-la-raw-data-con-las-m%C3%A9tricas-de-eventos-de-actividad" />

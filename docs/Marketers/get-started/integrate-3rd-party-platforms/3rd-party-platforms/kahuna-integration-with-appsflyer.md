@@ -1,5 +1,5 @@
 ---
-title: Kahuna integration with AppsFlyer
+title: Integración de Kahuna con AppsFlyer
 metadata:
   keywords:
     - kahuna
@@ -16,35 +16,34 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2016-09-14T11:26:59Z'
-  edited_at: '2026-06-16T11:44:01Z'
+  edited_at: '2026-08-12T11:59:02Z'
   id: 212561966
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/212561966-Kahuna-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/212561966
 ---
-> **At a glance:** Kahuna, an AppsFlyer integrated partner, dedicated to empowering businesses to grow and thrive in the mobile era. We enable a new level of authentic engagement between brands and their customers wherever they are — the web, email, mobile, social channels — through personalized communication at scale. Powered by big data and machine learning, we help create delightful experiences for every customer with the perfect message, delivered on the right channel, at just the right time.
+> **Descripción general:** Kahuna, partner integrado de AppsFlyer, se dedica a ayudar a las empresas a crecer y prosperar en la era móvil. Permitimos un nuevo nivel de engagement auténtico entre las marcas y sus clientes, estén donde estén —la web, el correo electrónico, el móvil y los canales sociales—, mediante una comunicación personalizada a escala. Con el respaldo de big data y aprendizaje automático, ayudamos a crear experiencias excelentes para cada cliente con el mensaje perfecto, entregado en el canal adecuado y en el momento preciso.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-Follow the instructions below to configure the integration with Kahuna:
+Siga las instrucciones a continuación para configurar la integración con Kahuna:
 
-1. Minimum requirements - AppsFlyer SDK:
+1. Requisitos mínimos - SDK de AppsFlyer:
 
-* Android – version 2.3.1.18 and above
-* iOS – version 3.3.3 and above
+* Android – versión 2.3.1.18 y posteriores
+* iOS – versión 3.3.3 y posteriores
 
-2. Integrating with Kahuna requires that the Kahuna <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/deviceid/">Device ID</Anchor> (Kahuna’s unique user identifier) is populated in AppsFlyer's SDK. This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
+2. La integración con Kahuna requiere que el <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/deviceid/">ID de dispositivo</Anchor> de Kahuna (identificador de usuario único de Kahuna) se complete en el SDK de AppsFlyer. Este parámetro se envía con cada postback y permite la identificación de cada usuario. Para realizar esto debes insertar las siguientes cadenas en el código de tu aplicación:
 
-> 📘 **Important Note**
+> 📘 **Nota Importante**
 >
-> Make sure the lines of code are inserted at the correct place – after Kahuna SDK was launched and before the appsflyer.sendtracking (Android) / trackAppLaunch (iOS) methods are called.
+> Asegúrate de que las líneas de código se inserten en el lugar correcto: después de que se inicie el SDK de Kahuna y antes de que se llamen a los métodos appsflyer.sendtracking (Android) / trackAppLaunch (iOS).
 
 <Tabs>
-<Tab title="For Android">
+<Tab title="Para Android">
 
 ```java
 HashMap<String, Object> customData = new HashMap<String,Object>();
@@ -55,7 +54,7 @@ AppsFlyerLib.setAdditionalData(customData);
 
 </Tab>
 
-<Tab title="For iOS">
+<Tab title="Para iOS">
 
 ```objectivec
 NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
@@ -65,150 +64,150 @@ NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 </Tab>
 </Tabs>
 
-## Setting up Kahuna
+## Configuración de Kahuna
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Configurar la integración de ASA**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con el partner.  
+    Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación. Para ver una descripción detallada del Encabezado de la ventana de configuración de partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-The Kahuna configuration window uses only the ***Integration*** tab.
+La ventana de configuración de Kahuna solo utiliza la pestaña ***Integration***.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### General settings
+### Configuración general
 
-**Kahuna Secret Key, Staging and Production**
+**Clave secreta de Kahuna, staging y production**
 
-Kahuna connects with AppsFlyer via a unique Secret Key. If you don't already have it, you must obtain it from Kahuna to continue with the integration or follow the steps below. [![](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)
+Kahuna se conecta con AppsFlyer mediante una clave secreta única. Si aún no la tienes, debes obtenerla de Kahuna para continuar con la integración o seguir los pasos que se indican a continuación. [![](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)
 
-### Obtaining the kahuna secret key
+### Obtener la clave secreta de Kahuna
 
-1. Login to your Kahuna account
+1. Accede a tu cuenta de Kahuna
 
-2. Click the user icon and Select **Settings** on the right-hand corner of dashboard menu
+2. Haz clic en el icono de usuario y selecciona **Settings** en la esquina superior derecha del menú del Dashboard
 
 [![](https://files.readme.io/4962454c4dd428c69e90d4ebcfa20304dc0ea57c7d58a1368c9a9369ba3e563a-207206166.png)](https://files.readme.io/4962454c4dd428c69e90d4ebcfa20304dc0ea57c7d58a1368c9a9369ba3e563a-207206166.png)
 
-3. Copy the Kahuna secret key:
+3. Copia la clave secreta de Kahuna:
 
 [![](https://files.readme.io/73d24826e6c55636dafbc22766910fea12fbe7a58c49079c800d5056be45352a-207229823.png)](https://files.readme.io/73d24826e6c55636dafbc22766910fea12fbe7a58c49079c800d5056be45352a-207229823.png)
 
-4. Select **APIs & Integrations**– on this page you can find the parameters:
+4. Selecciona **APIs & Integrations**– en esta página puedes encontrar los parámetros:
 
-* Insert the Kahuna Master Key taken from Kahuna console (see Section 3)
-* If you want to send the events to Kahuna’s Sandbox environment insert the letter S in the Staging box (see “Testing with Kahuna Sandbox”)
-* For the Production environment insert the letter P in the production
-* If you insert both, the events are sent to production
-* Click **Save**
+* Introduce la clave maestra de Kahuna obtenida de la consola de Kahuna (consulta la sección 3)
+* Si quieres enviar los eventos al entorno Sandbox de Kahuna, introduce la letra S en el campo Staging (consulta «Pruebas con el Sandbox de Kahuna»)
+* Para el entorno de producción, introduce la letra P en el campo Production
+* Si insertas ambos, los eventos se envían a producción
+* Haz clic en **Save**
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Kahuna user installs. Use this section to define sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a las instalaciones de usuarios de Kahuna. Usa esta sección para definir el envío de estos postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/658d00352fc237b1fb1a3a376f376f600f245e47fffa19b9f1f1ca5cc20c8386-18274496571537.png)
+![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
 
-Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Kahuna.
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para enviar postbacks a Kahuna de cualquier usuario que descargue la aplicación.
 
-Click **Save.**
+Haga clic en **Guardar**.
 
-Once you have saved the configuration, AppsFlyer sends the following data to Kahuna for every organic and non-organic install:
+Una vez que hayas guardado la configuración, AppsFlyer envía los siguientes datos a Kahuna para cada instalación orgánica y no orgánica:
 
 * Kahuna Dev\_ID
-* Media Source
-* Country code
-* OS Version
+* Fuente de medios
+* Código de país
+* Versión del sistema operativo
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for Kahuna.
+Los enlaces de atribución no están disponibles para Kahuna.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for Kahuna.
+Los permisos no están disponibles para Kahuna.
 
 </Accordion>
 
-## View user attribution data in Kahuna
+## Ver los datos de atribución de usuarios en Kahuna
 
-The install events can be viewed as Newbies in Kahuna's main dashboard.
+Los eventos de instalación se pueden ver como Newbies en el Dashboard principal de Kahuna.
 
 [![](https://files.readme.io/ebbb7f265e37ead80dd77a9956b9629ce07eeb2fcc9b283ad7b6cc927fe10758-207230483.png)](https://files.readme.io/ebbb7f265e37ead80dd77a9956b9629ce07eeb2fcc9b283ad7b6cc927fe10758-207230483.png)
 
-You can search for a specific user or go to “Top People” in your left side navigation.
+Puedes buscar un usuario concreto o ir a «Top People» en la navegación lateral izquierda.
 
 [![](https://files.readme.io/ea6ae8494f600bb8a9b9b0af3e36a976e65d72b64052da3e7399f9a9b0c9458c-207230503.png)](https://files.readme.io/ea6ae8494f600bb8a9b9b0af3e36a976e65d72b64052da3e7399f9a9b0c9458c-207230503.png)
 
-Selecting one of the users opens the Mini Profile where you can see the install event “af\_install” in the Top Events section:
+Al seleccionar uno de los usuarios, se abre el Mini Profile, donde puedes ver el evento de instalación «af\_install» en la sección «Top Events»:
 
 [![](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)
 
-## Testing with sandbox
+## Pruebas en sandbox
 
-If you haven’t released your app to the app store yet and want to test the integration from Kahuna’s Sandbox environment, follow these steps:
+Si todavía no has lanzado tu aplicación a la tienda de aplicaciones y quieres probar la integración desde el entorno Sandbox de Kahuna, sigue estos pasos:
 
-1. Make sure you enter “s” in the Staging Textbox when configuring Kahuna within AppsFlyer
+1. Asegúrate de introducir «s» en el cuadro de texto Staging al configurar Kahuna en AppsFlyer
 
 [![](https://files.readme.io/b69fc390ed7f1303ee8ba6dd1345d2c76b5b4c22b4b0b6ec0957a108d709247b-360002217229.png)](https://files.readme.io/b69fc390ed7f1303ee8ba6dd1345d2c76b5b4c22b4b0b6ec0957a108d709247b-360002217229.png)
 
-2. Make sure you have added the code to your App to integrate AppsFlyer and Kahuna SDKs as described in the above sections
+2. Asegúrate de haber añadido el código a tu aplicación para integrar los SDK de AppsFlyer y Kahuna, tal como se describe en las secciones anteriores
 
-3. You must obtain the Advertising ID from your test device (you can find the Advertising ID by installing the app on your device and looking at the logs)
+3. Debes obtener el Advertising ID de tu dispositivo de prueba (puedes encontrar el Advertising ID instalando la aplicación en tu dispositivo y consultando los registros)
 
-4. Ask AppsFlyer to allowlist your Advertising ID
+4. Pide a AppsFlyer que ponga tu Advertising ID en la allowlist
 
-5. Uninstall the app from your device
+5. Desinstala la App de tu dispositivo
 
-6. Configure this URL with your data (app package name, advertising ID, and campaign name...don’t include the brackets) - [https://app.appsflyer.com/[APP PACKAGE NAME]?pid=[SOMETHING]&advertising\_id=](https://app.appsflyer.com/com.dailylabs.kahunatest?pid=Testing_Installs&advertising_id=0eea1488-3037-44b2-a944-11f8bfc3e479)[DEVICE’S ADVERTISING ID]
+6. Configura esta URL con tus datos (nombre del paquete de la aplicación, Advertising ID y nombre de la campaña... no incluyas los corchetes) - [https://app.appsflyer.com/[APP PACKAGE NAME]?pid=[SOMETHING]&advertising\_id=](https://app.appsflyer.com/com.dailylabs.kahunatest?pid=Testing_Installs&advertising_id=0eea1488-3037-44b2-a944-11f8bfc3e479)[DEVICE’S ADVERTISING ID]
 
-7. Go to that URL, you may see this:
+7. Ve a esa URL; puede que veas esto:
 
 [<Image alt="" src="https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png" width="486px" />](https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png)
 
-8. Install the App on your device
+8. Instala la aplicación en tu dispositivo
 
-9. Go to Kahuna’s dashboard and search for the user (you can enable Kahuna debugging and look at the logs to get the Kahuna unique device ID for that user.. “dev\_id”... or if your app requires log-in and you pass credentials to Kahuna, then you can search by that credential also). Once you find the user, you should see an “af\_install” event for that user.
+9. Ve al Dashboard de Kahuna y busca al usuario (puedes activar la depuración de Kahuna y consultar los registros para obtener el ID de dispositivo único de Kahuna de ese usuario.. «dev\_id»... o, si tu aplicación requiere iniciar sesión y pasas las credenciales a Kahuna, también puedes buscar por esas credenciales). Una vez que encuentres al usuario, deberías ver un evento «af\_install» para ese usuario.
 
 [<Image alt="" src="https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png" width="629px" />](https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png)
 
-<div data-zendesk-anchors="h_01H9FKAF22A3FTGC7CSE5K0CY4=important h_01H9FKAF22W59PMYJRFW8HKBQ7=important-note h_01H9FKAF222ES9240V0THQQ5X0=setting-up-kahuna h_01H9FKAF227SZWFTCP9P1B7HEK=integration-tab h_01H9FKAF22EFF1F8D2QR1F38PV=activate-partner h_01H9FKAF221EXQYBJGS8GFRF4S=general-settings h_01H9FKAF22XMJW7A89MBD0J276=obtaining-the-kahuna-secret-key h_01H9FKAF2258JVR3XS6P7TT8H3=default-postbacks h_01H9FKAF22DMF1NNJRY3SJB5XX=attribution-link-tab h_01H9FKAF22KPY1ABFJN63XZ5CM=cost-tab h_01H9FKAF22KRDEFTVBR954JSJT=ad-revenue-tab h_01H9FKAF22HJPHZZM59TQ7RRFM=permissions-tab h_01H9FKAF22A5910NXRFDGC1JTG=view-user-attribution-data-in-kahuna h_01H9FKAF22KW2J6H2B6F9AMDP9=testing-with-sandbox" />
+<div data-zendesk-anchors="h_01H9FKAF22A3FTGC7CSE5K0CY4=importante h_01H9FKAF22W59PMYJRFW8HKBQ7=nota-importante setting-up-kahuna=configuraci%C3%B3n-de-kahuna h_01H9FKAF222ES9240V0THQQ5X0=configuraci%C3%B3n-de-kahuna h_01H9FKAF227SZWFTCP9P1B7HEK=integration-tab activate-partner=activar-socio h_01H9FKAF22EFF1F8D2QR1F38PV=activar-socio general-settings=configuraci%C3%B3n-general h_01H9FKAF221EXQYBJGS8GFRF4S=configuraci%C3%B3n-general obtaining-the-kahuna-secret-key=obtener-la-clave-secreta-de-kahuna h_01H9FKAF22XMJW7A89MBD0J276=obtener-la-clave-secreta-de-kahuna default-postbacks=postbacks-predeterminados h_01H9FKAF2258JVR3XS6P7TT8H3=postbacks-predeterminados h_01H9FKAF22DMF1NNJRY3SJB5XX=attribution-link-tab h_01H9FKAF22KPY1ABFJN63XZ5CM=cost-tab h_01H9FKAF22KRDEFTVBR954JSJT=ad-revenue-tab h_01H9FKAF22HJPHZZM59TQ7RRFM=permissions-tab view-user-attribution-data-in-kahuna=ver-los-datos-de-atribuci%C3%B3n-de-usuarios-en-kahuna h_01H9FKAF22A5910NXRFDGC1JTG=ver-los-datos-de-atribuci%C3%B3n-de-usuarios-en-kahuna testing-with-sandbox=pruebas-en-sandbox h_01H9FKAF22KW2J6H2B6F9AMDP9=pruebas-en-sandbox" />

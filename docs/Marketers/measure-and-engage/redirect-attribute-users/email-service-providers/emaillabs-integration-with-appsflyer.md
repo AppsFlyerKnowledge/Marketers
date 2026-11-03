@@ -1,5 +1,5 @@
 ---
-title: EmailLabs integration with AppsFlyer
+title: Integración de EmailLabs con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -13,97 +13,98 @@ x-zendesk:
     - Marketers
     - OneLink
   created_at: '2022-01-31T14:00:18Z'
-  edited_at: '2026-08-14T16:22:42Z'
+  edited_at: '2026-08-22T00:33:34Z'
   id: 4419148952721
-  locale: en-us
+  locale: es
   section: Email service providers
   section_id: 6551247620881
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4419148952721-EmailLabs-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/4419148952721
 ---
-> **At a glance:** EmailLabs, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. When email recipients click on the link, they are deep-linked into your app.
+> **At a glance:** EmailLabs, una plataforma de entrega y análisis de correo electrónico, integra AppsFlyer OneLink dentro de los correos electrónicos. Cuando los destinatarios de correo electrónico hacen clic en el enlace, se les dirige a tu aplicación mediante deep linking.
 
 ![emaillabs-af-logo.png](https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png)
 
-## Introduction
+## Introducción
 
-ESPs (Email Service Providers) can be excellent sources for segmented user traffic.
+Los ESP (proveedores de servicios de correo electrónico) pueden ser excelentes fuentes para el tráfico segmentado de usuarios.
 
-One of the challenges when using ESPs is recording clicks while persevering deep linking functionality. ESPs wrap the deep linking URL with their own click recording domain. This action often breaks iOS Universal Links.
+Uno de los retos al usar ESP es registrar los clics sin perder la funcionalidad de deep linking. Los ESP envuelven la URL de deep linking con su propio dominio de registro de clics. Esta acción suele romper los enlaces universales de iOS.
 
-However, with ESPs that support Universal Links on top of their click recording domain, deep linking and click recording can still be performed successfully.
+Sin embargo, con los ESP que admiten enlaces universales además de su dominio de registro de clics, se pueden seguir realizando correctamente el deep linking y el registro de clics.
 
-## SDK version prerequisites
+## Requisitos previos de la versión del SDK
 
 <Tabs>
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-* AppsFlyer iOS SDK version 6.0.4
+* SDK de AppsFlyer para iOS, versión 6.0.4
 
 </Tab>
 
 <Tab title="Android">
 
-* AppsFlyer Android SDK version 6.0.0
+* SDK de AppsFlyer para Android V6.6.0.0
 
 </Tab>
 </Tabs>
 
-## Step 1: Integration setup in EmailLabs
+## Paso 1: Configuración de la integración en EmailLabs
 
-**To set up the integration in EmailLabs:**
+**Para configurar la integración en EmailLabs:**
 
-1. Set up your domain according to <Anchor target="_blank" href="https://docs.emaillabs.io/get_started/getting-started/">this article</Anchor>
-2. Set up your click recording domain according to <Anchor target="_blank" href="http://docs.emaillabs.io/user-panel/smtp-applications/whitelabel-2/">this article</Anchor> and the screenshot below.  
+1. Configura tu dominio según <Anchor target="_blank" href="https://docs.emaillabs.io/get_started/getting-started/">este artículo</Anchor>
+2. Configura tu dominio de registro de clics según <Anchor target="_blank" href="http://docs.emaillabs.io/user-panel/smtp-applications/whitelabel-2/">este artículo</Anchor> y la captura de pantalla que aparece a continuación.  
    ![whitelabel-section-2.png](https://files.readme.io/a5b992868a0abd94b2f24097ead760a98e6529e4f83ecfaf713d681800de4631-49839273475217.png)
-3. Enable link tracking according to <Anchor target="_blank" href="http://docs.emaillabs.io/user-panel/smtp-applications/link-tracking/">this article</Anchor> and the screenshot below.  
+3. Activa el tracking de enlaces según <Anchor target="_blank" href="http://docs.emaillabs.io/user-panel/smtp-applications/link-tracking/">este artículo</Anchor> y la captura de pantalla que aparece a continuación.  
    ![link-tracking-section-3.png](https://files.readme.io/3c1d0f13d3fcc2b49754cf4beb653592b9fffc27ad27775cf56986f78f9ea53b-49839289275153.png)
-4. Contact EmailLabs support at [bok@emaillabs.pl](mailto:bok@emaillabs.pl) and request to enable SSL.
-5. In EmailLabs, go to **Panel** > **SMTP** **Accounts** > **Settings** > **Deep** **Links**, and check the Activated box. For iOS apps, enter the <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/AppID.html">Apple Application ID</Anchor> in the respective field.  
+4. Ponte en contacto con el soporte de EmailLabs en [bok@emaillabs.pl](mailto:bok@emaillabs.pl) y solicita que habiliten SSL.
+5. En EmailLabs, ve a **Panel** > **SMTP** **Accounts** > **Settings** > **Deep** **Links**, y marca la casilla Activated. Para las aplicaciones de iOS, introduce el <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/AppID.html">ID de aplicación de Apple</Anchor> en el campo correspondiente.  
    ![deeplinking-section-5.png](https://files.readme.io/15a5b45a58c1a130de6bfe2c3e9e3b379537b4fc549c1c3fcce41ef54b8653e9-49839289277073.png)
 
-### Step 2: Configuring your AppsFlyer SDK
+### Paso 2: Configuración de tu SDK de AppsFlyer
 
 > 📘 **Note**
 >
-> If you haven’t already done so, make sure you have configured your app to support <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking with OneLink</Anchor>.
+> **Nota:**
+>
+> Si aún no lo has hecho, asegúrate de que has configurado tu aplicación para que admita <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Deep Linking con OneLink</Anchor>.
 
-After configuring your click recording domain to support Universal Links as described previously, you need to set up your app to deep-link and resolve that Universal Link.
+Después de configurar tu dominio de registro de clics para que admita enlaces universales, como se ha descrito anteriormente, debes configurar tu aplicación para hacer deep linking y resolver ese enlace universal.
 
-1. Associate the click recording domain in Xcode:  
-   ![configure-xcode-deeplinking-domain.png](https://files.readme.io/923d9bca2fbe448d848b6596c1087bf625ec0a0d5958ff5f28c3fc818275461a-49839289277969.png)
-2. Provide the click recording domain to the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information please refer to SDK documentation <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">here</Anchor>.  
+1. Asocia el dominio de registro de clics en Xcode:  
+   ![configure-xcode-deeplinking-domain.png](https://files.readme.io/90d0dcc0eba2d7d081ab7d5d4ea697e9257b9107af463fa8c973169f8a2651db-49839256220433.png)
+2. Proporciona el dominio de registro de clics a la API del SDK `setResolveDeepLinkURLs`. Esta API debe llamarse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">aquí</Anchor>.  
 
    ```objectivec
    [[AppsFlyerLib shared] resolveDeepLinkURLs = @[@"example.com",@"click.example.com"];
    ```
-3. When the app is invoked due to a click on the Universal Link, the AppsFlyer SDK resolves the deep link and extracts the underlying OneLink. All deep link parameters are then propagated into the onAppOpenAttribution API for deep link logic execution.
+3. Cuando se invoca la aplicación debido a un clic en el enlace universal, el SDK de AppsFlyer resuelve el enlace profundo y extrae el OneLink subyacente. A continuación, todos los parámetros de enlace profundo se propagan a la API onAppOpenAttribution para la ejecución de la lógica de enlace profundo.
 
-## Step 3: Send emails with OneLink through EmailLabs
+## Paso 3: Envía correos electrónicos con OneLink a través de EmailLabs
 
-1. Create a OneLink URL on the Link Management page (or manually). You must URL-encode parameter values.
-2. [Best practice] Use the following parameters:
-   * *pid* (media source): Use a media source that signifies this usage such as EmailLabs.
-   * *c* (campaign): Campaign name
-   * *af\_dp*: The deep link URI scheme you want to deep-link your users into.
-   * *af\_web\_dp:* Where to redirect users clicking the link on desktop.
-   * *af\_ios\_url*: Where to redirect users that don’t have the app clicking the link on an iOS device.
-   * *af\_android\_url:* Where to redirect users that don’t have the app click the link on an Android device.
-3. Insert the OneLink URL in the email.  
-   Example:
+1. Crea una URL de OneLink en la página Administración de enlaces (o manualmente). Debes codificar en URL los valores de los parámetros.
+2. [Mejores prácticas] Usa los siguientes parámetros:
+   * *pid* (fuente de medios): usa una fuente de medios que identifique este uso, como EmailLabs.
+   * *c* (campaña): nombre de la campaña
+   * *af\_dp*: el esquema de URI de deep link al que quieres dirigir a tus usuarios.
+   * *af\_web\_dp:* dónde redirigir a los usuarios que hacen clic en el enlace desde un equipo de escritorio.
+   * *af\_ios\_url*: dónde redirigir a los usuarios que no tienen la aplicación y hacen clic en el enlace desde un dispositivo iOS.
+   * *af\_android\_url:* dónde redirigir a los usuarios que no tienen la aplicación y hacen clic en el enlace desde un dispositivo Android.
+3. Inserta la URL de OneLink en el correo electrónico.  
+   Fecha y hora del toque del contributor[n]
 
    ```html
-   <a href="links.example.com data-msys-sublink="appsflyer">Link to your app!</a>
+   <a href="links.example.com data-msys-sublink="appsflyer">¡Enlace a tu aplicación!</a>
    ```
-4. If the email is part of a retargeting campaign, add the parameter is\_retargeting=true.  
-   This indicates that the attribution link is from a retargeting campaign. <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Learn more about retargeting</Anchor>.
-5. EmailLabs wraps the link with the defined click domain so that a click on the click domain redirects to the OneLink attribution link.
+4. Si el correo electrónico forma parte de una campaña de retargeting, añade el parámetro is\_retargeting=true.  
+   Esto indica que el enlace de atribución procede de una campaña de retargeting. <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">Más información sobre retargeting</Anchor>.
+5. EmailLabs envuelve el enlace con el dominio de clic definido para que un clic en ese dominio redirija al enlace de atribución de OneLink.
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> The URL parameters in the example that follows aren't encoded to enable ease of reading.
+> Los parámetros de URL del siguiente ejemplo no están codificados para facilitar la lectura.
 >
 > ```http
 > https://example.onelink.me/abcd?pid=emaillabs&c=Spring_Newsletter&is_retargeting=true&
@@ -111,18 +112,20 @@ After configuring your click recording domain to support Universal Links as desc
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
 
-## Step 4: Test your links
+## Paso 4: Prueba tus enlaces
 
-**To test the integration:**
+**Para probar la integración:**
 
-1. Set up EmailLabs.
-2. Create a OneLink URL.
-3. Insert the URL in an email.
-4. Send a test email to yourself.
+1. Configura EmailLabs.
+2. Crea una URL de OneLink.
+3. Inserta la URL en un correo electrónico.
+4. Envíate un correo electrónico de prueba.
 
-**Expected result:**
+**Resultado esperado:**
 
-* If you have the app installed, it should launch and you will be deep-linked into the defined app page.
-* A click reflects in:
-  * The AppsFlyer dashboard, attributed to the media source and campaign.
-  * EmailLabs data.
+* Si tienes la aplicación instalada, debería abrirse y te redirigirá mediante enlaces profundos a la página definida de la aplicación.
+* Un clic se refleja en:
+  * El dashboard de AppsFlyer, atribuido a la fuente de medios y la campaña.
+  * Los datos de EmailLabs.
+
+<div data-zendesk-anchors="introduction=introducci%C3%B3n sdk-version-prerequisites=requisitos-previos-de-la-versi%C3%B3n-del-sdk step-1-integration-setup-in-emaillabs=paso-1-configuraci%C3%B3n-de-la-integraci%C3%B3n-en-emaillabs step-2-configuring-your-appsflyer-sdk=paso-2-configuraci%C3%B3n-de-tu-sdk-de-appsflyer step-3-send-emails-with-onelink-through-emaillabs=paso-3-env%C3%ADa-correos-electr%C3%B3nicos-con-onelink-a-trav%C3%A9s-de-emaillabs step-4-test-your-links=paso-4-prueba-tus-enlaces" />

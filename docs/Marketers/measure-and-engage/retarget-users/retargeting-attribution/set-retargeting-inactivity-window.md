@@ -1,5 +1,5 @@
 ---
-title: Set retargeting inactivity window
+title: Período de inactividad de retargeting
 metadata:
   keywords:
     - Agencies
@@ -15,93 +15,92 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2020-05-31T13:56:38Z'
-  edited_at: '2026-09-15T11:14:51Z'
+  edited_at: '2026-09-17T00:34:10Z'
   id: 360009305817
-  locale: en-us
+  locale: es
   section: Retargeting attribution
   section_id: 6551326229265
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360009305817-Set-retargeting-inactivity-window
+  url: https://support.appsflyer.com/hc/es/articles/360009305817
 ---
-> **At a glance:** Increase incremental lift by retargeting inactive users. Set inactivity windows by media source.
+> **De un vistazo:** Eleva el aumento incremental reorientando a los usuarios inactivos. Configura las ventanas de inactividad por fuente multimedia.
 
-## Inactivity period
+## Periodo de inactividad
 
-Advertisers regain inactive users by retargeting them. These campaigns usually have a good conversion rate and generate significant ROAS. However, many retargeting campaigns underperform as they don't filter out active users. To increase the incremental lift of retargeting campaigns, implement **minimum inactivity time** to filter out active users.
+Los anunciantes recuperan a los usuarios inactivos por medio de retargeting. Estas campañas suelen tener una buena tasa de conversión y generar un ROAS significativo. Sin embargo, muchas campañas de retargeting tienen un rendimiento inferior, ya que no filtran a los usuarios activos. Para elevar el aumento incremental de las campañas de retargeting, implementa **un tiempo de inactividad mínimo** para filtrar a los usuarios activos.
 
-By setting a minimum inactivity time, Advertisers don't attribute active users. For example, if the minimum inactivity limit is 3 days, then users who were active in the previous 3 days aren't attributed. Users who are inactive for 4 or more days are attributed. The inactivity period applies to both re-attribution and re-engagement scenarios. In the case of re-attribution, the last activity is the last session before performing the uninstall.
+Al establecer un tiempo de inactividad mínimo, los anunciantes no atribuyen a los usuarios activos. Por ejemplo, si el límite mínimo de inactividad es de tres días, no se atribuyen los usuarios activos en los últimos 0 a 3 días. Se atribuyen los usuarios inactivos durante cuatro o más días. El período de inactividad se aplicó tanto a los escenarios de reatribución como a los de re-engagement. En el caso de la reatribución, la última actividad es la última sesión antes de realizar la desinstalación.
 
-**Inactivity rules**
+**Reglas de inactividad**
 
-* **Attributed:** Dormant users who haven't used the app for longer than the defined inactivity period. Retargeting re-engagements and reinstalls are attributed.
-* **Not attributed**: Active users who open the app and don't exceed the minimum inactivity period are disregarded and not attributed to the retargeting campaign.
+* **Atribuidos:** Usuarios inactivos que no han usado la aplicación durante más tiempo que el período de inactividad definido. Se atribuyen los re-engagements y reinstalaciones de retargeting.
+* **No atribuido**: Los usuarios activos que abren la aplicación y no superan el período mínimo de inactividad no se tienen en cuenta y no se atribuyen a la campaña de retargeting.
 
-### Retargeting inactivity terminology
+### Terminología de inactividad de retargeting
 
-| Term | Definition |
+| Término | Definición |
 | --- | --- |
-| Maximum value | 30 days |
-| Default value | 0 (none)  <br />The **Inactivity period** feature is not active by default for media sources. |
-| User activity | Installs or sessions reported by the SDK or via S2S. |
-| Migrated devices | Migration time is the last activity time. |
+| Valor máximo | 30 días. |
+| Valor predeterminado | 0 (ninguno)  <br />La función **Período de inactividad** no está activa de forma predeterminada para las fuentes multimedia. |
+| Actividad del usuario | Instalaciones o sesiones informadas por el SDK o mediante S2S. |
+| Dispositivos migrados | La hora de migración es la hora de la última actividad. |
 
-## Scenarios
+## Escenarios
 
-In the following retargeting scenarios, the inactivity period is defined for the media source.
+En los siguientes escenarios de retargeting, el período de inactividad se define para la fuente de medios.
 
 <div id="reattribution" />
 
-<Accordion title="Re-attribution">
+<Accordion title="Reatribución">
 
-The user scenario is depicted in the figure that follows. The user:
+El escenario del usuario se muestra en la figura siguiente. El usuario:
 
-* uninstalls the app and is inactive
-* engages with a retargeting campaign run by a media source
-* reinstalls the app
+* desinstala la aplicación y está inactiva
+* participa en una campaña de retargeting dirigida por una fuente de medios
+* reinstala la aplicación
 
 [![re-attribution_1_en-us.png](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)
 
-| Scenario | Inactivity threshold | User inactivity period | Result |
+| Situación | Umbral de inactividad | Periodo de inactividad del usuario | Resultado |
 | --- | --- | --- | --- |
-| A | 7 days | 8 days.<br /><br />**The user was inactive** for a period exceeding the inactivity threshold | <ul><li>**Re-attribution** (retargeting reinstall)</li><li>Attributed to retargeting media source A</li></ul> |
-| B | 14 days | 5 days<br /><br />The user was active. | <ul><li>**Organic reinstall**</li><li>**Non-organic reinstall:** if the user engaged with a UA media source.</li><li>Retargeting media source A can't be attributed due to the user inactivity threshold.</li></ul> |
+| A | 7 días | 8 días<br /><br />**El usuario estuvo inactivo** durante un período que superó el umbral de inactividad | <ul><li>**Re-atribución** (reinstalación de retargeting)</li><li>Atribuido a la fuente de medios de retargeting A</li></ul> |
+| B | 14 días | 5 días<br /><br />El usuario estaba activo. | <ul><li>**Reinstalación orgánica**</li><li>**Reinstalación no orgánica:** si el usuario interactuó con una fuente multimedia de UA.</li><li>La fuente de medios de retargeting A no se puede atribuir debido al umbral de inactividad del usuario.</li></ul> |
 
 </Accordion>
 
 <div id="reengagement" />
 
-<Accordion title="Re-engagement">
+<Accordion title="Reengagement">
 
-The user scenario is depicted in the figure that follows. The user:
+El escenario del usuario se muestra en la figura siguiente. El usuario:
 
-* installs the app
-* is inactive for several days
-* subsequently engages with a retargeting campaign. run by a media source, and launches the app
+* instala la aplicación
+* está inactivo durante varios días
+* posteriormente, participa en una campaña de retargeting, dirigida por una fuente de medios, e inicia la aplicación gestionada por una fuente de medios, e inicia la app
 
 [![Re-engagement_scenarios_en-us.png](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)
 
-| Scenario | Media source A inactivity threshold | User inactivity period | Result |
+| Situación | Fuente multimedia Un umbral de inactividad | Periodo de inactividad del usuario | Resultado |
 | --- | --- | --- | --- |
-| A | 7 days | 8 days<br /><br />**The user was inactive** for a period exceeding the inactivity threshold | <ul><li>**Re-engagement** attributed to media source A</li></ul> |
-| B | 7 days | 4 days<br /><br />**The user used the app** within the set inactivity period. | <ul><li>**Regular session**</li><li>Retargeting media source A is not attributed</li></ul> |
+| A | 7 días | 8 días<br /><br />**El usuario estuvo inactivo** durante un período que superó el umbral de inactividad | <ul><li>**El re-engagement** se atribuye a la fuente de medios A</li></ul> |
+| B | 7 días | 4 días<br /><br />**El usuario usó la aplicación** dentro del período de inactividad establecido. | <ul><li>**Sesión ordinaria**</li><li>La fuente de medios de retargeting A no está atribuida</li></ul> |
 
 </Accordion>
 
-## Partner setup
+## Configuración de partners
 
-<div id="zd-srn" />
+<div id="srn" />
 
-<Accordion title="SRN">
+<Accordion title="nombres de SRN reservados">
 
-SRNs that support inactivity periods have this feature set up on their Integration tab.
+Los SRN que admiten períodos de inactividad tienen esta función configurada en la pestaña Integración.
 
-**To define an inactivity period for Self-Reporting Networks (SRN) that support retargeting:**
+**Para definir un período de inactividad para las redes de autorreporte (SRN) que admiten el retargeting:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations.**
-2. Select an SRN.
-3. In the **Integration** tab, scroll down. Enable **Ignore active user for retargeting**
-4. Set **Inactivity window.** (1-30 days.)
-5. Click **Save integration.**
+1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de Partners** > **Integraciones activas.**
+2. Selecciona un SRN.
+3. En la pestaña **Integración**, desplázate hacia abajo. Habilitar **Ignorar usuario activo para el retargeting**
+4. Establece **la ventana de inactividad** (de 1 a 30 días). (de 1 a 30 días).
+5. Haz clic en **Guardar integración**.
 
 [![Inactivity_window_SRN.png](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)
 
@@ -109,15 +108,15 @@ SRNs that support inactivity periods have this feature set up on their Integrati
 
 <div id="nonsrn-click-ad-networks" />
 
-<Accordion title="Non-SRN (click ad networks)">
+<Accordion title="Sin SRN (haz clic en redes de publicidad)">
 
-**To define an inactivity period for non-SRNs that support retargeting:**
+**Para definir un período de inactividad para las empresas que no son SRN y que admiten el retargeting:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations.**
-2. Select an ad network.
-3. Go to the **Attribution link** tab, scroll down, and enable **Ignore active user for retargeting**.
-4. Set **Inactivity window.** (1-30 days.)  
-   The **Inactivity period** parameter `af_inactivity_window`is added to the attribution link, for example, "&af\_inactivity\_window=7d". If the feature is disabled, it's not on the attribution link.
+1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de Partners** > **Integraciones activas.**
+2. Selecciona una red de publicidad.
+3. Ve a la pestaña **Enlace de atribución**, desplázate hacia abajo y habilita **Ignorar usuario activo para el retargeting**.
+4. Establece **la ventana de inactividad** (de 1 a 30 días).  
+    El parámetro **Periodo de inactividad** `af_inactivity_window` se añade al enlace de atribución, por ejemplo, «&af\_inactivity\_window=7d». Si la función está deshabilitada, no aparece en el enlace de atribución.
 
 [![](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)
 
@@ -125,39 +124,39 @@ SRNs that support inactivity periods have this feature set up on their Integrati
 
 <div id="agencies" />
 
-<Accordion title="Agencies">
+<Accordion title="Agencias">
 
-#### SRN
+#### nombres de SRN reservados
 
-Agency (permission granted by the advertiser)
+Agencia (permiso otorgado por el anunciante)
 
-**To access the Inactivity period setup:**
+**Para acceder a la configuración del período de inactividad:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations.**
-2. Select an SRN.
-3. In the **Integration** tab, make settings as shown in the table that follows.
+1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de Partners** > **Integraciones activas.**
+2. Selecciona un SRN.
+3. En la pestaña **Integración**, realiza los ajustes como se muestra en la tabla siguiente.
 
-| SRN | Agency |
+| nombres de SRN reservados | Agencia |
 | --- | --- |
-| DoubleClick | <ul><li>Enable/disable retargeting</li><li>Configure an inactivity period</li></ul> |
-| Google Ads | <ul><li>Cannot enable/disable retargeting</li><li>If an agency has permissions, they can configure an inactivity period</li></ul> |
-| Meta ads/X Ads/Snapchat | Can't access retargeting and **Inactivity period** setup |
+| DoubleClick | <ul><li>Activar/desactivar el retargeting</li><li>Configurar un período de inactividad</li></ul> |
+| Anuncios de Google | <ul><li>No se puede activar o desactivar el retargeting</li><li>Si una agencia tiene permisos, puede configurar un período de inactividad</li></ul> |
+| Meta ads/X Ads/Snapchat | No puedo acceder a la configuración del **Período de inactividad** y retargeting |
 
-#### Non-SRN
+#### Sin SRN
 
-Partner (supports retargeting)
+partner (admite el retargeting)
 
-**To define an inactivity period for non-SRNs that support retargeting:**
+**Para definir un período de inactividad para las empresas que no son SRN y que admiten el retargeting:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations.**
-2. Select a non-SRN Ad network > **Attribution link** tab.
+1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de Partners** > **Integraciones activas.**
+2. Selecciona una red de publicidad que no sea de SRN. Ve a la pestaña > **Enlace de atribución.**
 
 </Accordion>
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-| Trait | Remarks |
+| Caducado | Nota |
 | --- | --- |
-| Testing links | When using a registered test device, make sure to remove the `af_inactivity_window` parameter from the testing link. Otherwise, the install may be incorrectly attributed as *Organic* instead of being attributed to the test link. |
+| Enlaces de prueba | Si utilizas un dispositivo de prueba registrado, asegúrate de eliminar el parámetro `af_inactivity_window` del enlace de prueba. De lo contrario, la instalación puede atribuirse incorrectamente como *Orgánico* en lugar de atribuirse al enlace de prueba. |
 
-<div data-zendesk-anchors="h_01H9JS3QKW5S7VP9YW05CB6STR=inactivity-period h_01H9JS3QKXMBS95RG06A9JXGT0=retargeting-inactivity-terminology h_01H9JS3QKXWDX8Y58GX1G5HNYY=scenarios h_01H9JS3QKXN0E0MGD35173C9FR=reattribution h_01H9JS3QKXNS77EFYBZP94YQMT=reengagement h_01H9JS3QKXGNFM8499G52458B2=partner-setup srn=zd-srn h_01H9JS3QKXCAHG91VS6VSVJTTT=zd-srn h_01H9JS3QKX8R8AXHQWKX7FR9GZ=nonsrn-click-ad-networks h_01H9JS3QKXSDXA5Z7TWN2A7S5K=agencies srn::bd853114=srn h_01H9JS3QKX88HQYJ5881W7VXF2=srn nonsrn=non-srn h_01H9JS3QKXRJ8W9H89JBVSZ3R3=non-srn h_01J6S6HS0H0M6GQ81WGZ3XT0P9=traits-and-limitations" />
+<div data-zendesk-anchors="inactivity-period=periodo-de-inactividad h_01H9JS3QKW5S7VP9YW05CB6STR=periodo-de-inactividad retargeting-inactivity-terminology=terminolog%C3%ADa-de-inactividad-de-retargeting h_01H9JS3QKXMBS95RG06A9JXGT0=terminolog%C3%ADa-de-inactividad-de-retargeting scenarios=escenarios h_01H9JS3QKXWDX8Y58GX1G5HNYY=escenarios h_01H9JS3QKXN0E0MGD35173C9FR=reattribution h_01H9JS3QKXNS77EFYBZP94YQMT=reengagement partner-setup=configuraci%C3%B3n-de-partners h_01H9JS3QKXGNFM8499G52458B2=configuraci%C3%B3n-de-partners h_01H9JS3QKXCAHG91VS6VSVJTTT=srn h_01H9JS3QKX8R8AXHQWKX7FR9GZ=nonsrn-click-ad-networks h_01H9JS3QKXSDXA5Z7TWN2A7S5K=agencies srn::bd853114=nombres-de-srn-reservados h_01H9JS3QKX88HQYJ5881W7VXF2=nombres-de-srn-reservados nonsrn=sin-srn h_01H9JS3QKXRJ8W9H89JBVSZ3R3=sin-srn traits-and-limitations=especificaciones-y-limitaciones h_01J6S6HS0H0M6GQ81WGZ3XT0P9=especificaciones-y-limitaciones" />

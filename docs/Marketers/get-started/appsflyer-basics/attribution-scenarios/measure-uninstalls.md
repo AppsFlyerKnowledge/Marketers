@@ -1,5 +1,5 @@
 ---
-title: Measure uninstalls
+title: Medición de desinstalaciones
 metadata:
   keywords:
     - Advertisers
@@ -14,345 +14,352 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-10-14T08:03:47Z'
-  edited_at: '2026-08-14T15:06:29Z'
+  edited_at: '2026-08-22T00:09:56Z'
   id: 4408933557137
-  locale: en-us
+  locale: es
   section: Attribution scenarios
   section_id: 6551328497041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4408933557137-Measure-uninstalls
+  url: https://support.appsflyer.com/hc/es/articles/4408933557137
 ---
-> **At a glance:** Measure the uninstall rate for your app and determine which sources (media sources, campaigns, ad creatives, and geo) bring quality users.
+> **At a glance:** Mide la tasa de desinstalación de tu aplicación y determina qué fuentes (medios de comunicación, campañas, creatividades publicitarias y regiones) atraen a usuarios de calidad.
 
-## Overview
+## Visión general
 
-To understand the value of your app users, you must analyze both install and uninstall rates. The uninstall metric can help you measure your app's performance, and understand when and why users leave your app.
+Para comprender el valor de los usuarios de tu aplicación, es esencial analizar tanto las tasas de instalación como las de desinstalación. La métrica de desinstalación te permite medir el rendimiento de tu aplicación y entender cuándo y por qué los usuarios deciden abandonarla.
 
-### How does it work?
+### ¿Cómo funciona?
 
-1. AppsFlyer sends a daily API request to Firebase Cloud Messaging (FCM) and Apple Push Notification Services (APNS).
-2. FCM and APNS then send a silent push notification to verify if an app is still installed on a given device.
-3. An uninstall is recorded if the response indicates that the app was uninstalled (FCM and APNS) or no user activity was recorded for the past 270 days (FCM only).
-4. AppsFlyer attributes the uninstall to the media source that originally brought the user.
+1. AppsFlyer envía una solicitud diaria de API a Firebase Cloud Messaging (FCM) y Apple Push Notification Services (APNS).
+2. Luego, FCM y APNS envían una notificación push silenciosa para verificar si la aplicación sigue instalada en un determinado dispositivo.
+3. Se registra una desinstalación si la respuesta indica que la aplicación fue desinstalada (FCM y APNS) o si no se ha registrado actividad del usuario en los últimos 270 días (solo FCM).
+4. AppsFlyer atribuye la desinstalación a la fuente de medios que originalmente trajo al usuario.
 
 > 📘 **Note**
 >
-> Uninstall metrics are available in the Unified dashboard and the user acquisition view.
+> **Nota:**
+>
+> Las métricas de desinstalación están disponibles en el dashboard unificado y en la vista de adquisición de usuarios.
 
-## How to use uninstall data
+## Cómo utilizar los datos de desinstalación
 
-The following are some examples of what you can learn from measuring uninstalls, and how you can use the data to optimize campaigns and user engagement.
+Estos son algunos ejemplos de lo que puedes aprender al medir las desinstalaciones y cómo puedes usar los datos para optimizar campañas y mejorar la interacción con los usuarios.
 
 <div id="compare-the-quality-of-sources" />
 
-<Accordion title="Compare the quality of sources">
+<Accordion title="Comparar la calidad de las fuentes">
 
-By comparing the quality of users acquired from different sources (media sources, campaigns, ad creatives, and geo), you can determine the media sources with the lowest uninstall rates, and reallocate funds to them.
+Al comparar la calidad de los usuarios adquiridos de diferentes fuentes (medios de comunicación, campañas, creatividades publicitarias y regiones), puedes identificar las fuentes con las tasas de desinstalación más bajas y reasignar fondos a ellas.
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> You are a marketer of gaming apps for PlayIt Gaming International. You have just launched a new app and you are running campaigns on two different media sources (Media source A, and Media source B).
+> Eres un especialista en marketing de aplicaciones de juegos para PlayIt Gaming International. Acabas de lanzar una nueva aplicación y estás ejecutando campañas en dos fuentes de medios distintas (fuente de medios A y fuente de medios B).
 >
-> When you check the dashboard you see that although Media source A has the highest number of installs (10,390), it also has the highest uninstall rate (30%).
+> Cuando revisas el panel de control, ves que aunque la fuente de medios A tiene la mayor cantidad de instalaciones (10.390), también tiene la tasa de desinstalación más alta (30%).
 >
-> Media source B, on the other hand, has 5,949 installs and the lowest uninstall rate (12%).
+> Por otro lado, la fuente de medios B tiene 5.949 instalaciones y la tasa de desinstalación más baja (12%).
 >
-> ![Uninstall rates.png](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)
+>  ![adjusted.png](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)
 >
-> Based on these insights, you could reallocate more of your budget to Media source B and try to acquire more engaged users.
+> Con esta información, podrías destinar una mayor parte de tu presupuesto a la fuente de medios B y así tratar de conseguir más usuarios activos.
 
 </Accordion>
 
 <div id="share-uninstall-data-with-ad-networks-for-optimization" />
 
-<Accordion title="Share uninstall data with ad networks for optimization">
+<Accordion title="Compartir datos de desinstalación con redes publicitarias para optimizar">
 
-Sending uninstall event postbacks to the ad networks you work with is useful for optimizing user acquisition campaigns. You can send the uninstall event by [mapping af\_uninstall to your ad network](/docs/measure-uninstalls#mapping-the-uninstall-event). Once the mapping is complete, an event is sent each time a user is identified as having uninstalled the app. Ad networks can use this information to determine which users are less engaged and focus on getting more engaged users.
+Enviar postbacks de eventos de desinstalación a las redes publicitarias con las que colaboras es útil para optimizar las campañas de adquisición de usuarios. Puedes enviar el evento de desinstalación [asignando af\_uninstall a tu red publicitaria](/docs/measure-uninstalls#mapeo-del-evento-de-desinstalación). Una vez completado el mapeo, se envía un evento cada vez que se identifica que un usuario ha desinstalado la aplicación. Las redes publicitarias pueden utilizar esta información para identificar a los usuarios menos comprometidos y enfocarse en alcanzar usuarios más comprometidos.
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> You are a marketer of gaming apps for PlayIt Gaming International. Media source A is an ad network that you are working with on the launch of your new Android app. In the previous campaign you ran with Media source A, 1,000 new users installed your app, and subsequently, 300 users uninstalled the app. For the new campaign, you want Media source A to receive uninstall data. This will allow Media source A to quickly address uninstall challenges.
+> Eres un responsable de marketing de aplicaciones de juegos para PlayIt Gaming International. La fuente de medios A es una red publicitaria con la que estás colaborando para el lanzamiento de tu nueva aplicación de Android. En la campaña anterior realizada con la fuente de medios A, 1.000 usuarios nuevos instalaron tu aplicación y, posteriormente, 300 la desinstalaron. Para la nueva campaña, deseas que la fuente de medios A reciba datos de desinstalación. Esto permitirá que la fuente de medios A aborde rápidamente los retos vinculados a las desinstalaciones.
 >
-> Based on insights from the previous campaign, Media source A creates a campaign exclusion list that excludes specific types of users from ads running in your new campaign:
+> Con base en la experiencia de la campaña anterior, la fuente de medios A elabora una lista de exclusión de usuarios específicos para los anuncios de tu nueva campaña:
 >
-> * Users who have already proven that they are of lower value for your app.
-> * Users who regularly uninstall your apps.
+> * Usuarios que ya han demostrado tener un menor valor para tu aplicación.
+> * Usuarios que desinstalan tus aplicaciones con regularidad.
 >
-> This allows Media source A to optimize audience targeting to make sure that your campaign budget is not wasted on users who don't need to see certain campaign ads.
+> Esto permite que la fuente de medios A optimice la segmentación de la audiencia, asegurándose de que el presupuesto de tu campaña no se desperdicie en usuarios que no necesitan ver ciertos anuncios.
 
 </Accordion>
 
 <div id="exclude-uninstalls-from-retargeting-campaigns" />
 
-<Accordion title="Exclude uninstalls from retargeting campaigns">
+<Accordion title="Excluir desinstalaciones de campañas de retargeting">
 
-In some cases, to comply with regulations like GDPR and CCPA, you might need to exclude users that uninstalled your app from retargeting campaigns. Uninstall information allows you to create exclusion lists and apply privacy measures to protect your customers’ privacy and data.
+En algunos casos, para cumplir con normativas como el GDPR y la CCPA, puede ser necesario excluir a los usuarios que han desinstalado tu aplicación de las campañas de retargeting. La información sobre desinstalaciones te permite crear listas de exclusión y aplicar medidas de protección para salvaguardar la privacidad y los datos de tus clientes.
 
-Methods to exclude users include the following:
+Los métodos para excluir usuarios incluyen los siguientes:
 
-* <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#user-journey-report-availability">Raw-data reports:</Anchor> A manual method in which you retrieve a list of uninstalled users from the **Uninstalls** report and create an exclusion list.
-* <Anchor target="_blank" href="/marketers/docs/audiences-guide">AppsFlyer Audiences:</Anchor> An automatic method in which you define a target audience based on specific criteria (for example, users who **haven't** uninstalled your app). Users that don't meet the criteria are excluded from the audience.
+* <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview#user-journey-report-availability">Informes de datos sin procesar:</Anchor> Un método manual en el que se obtiene una lista de usuarios que han desinstalado desde el informe **Desinstalaciones** y se elabora una lista de exclusión.
+* <Anchor target="_blank" href="/marketers/es/docs/audiences-guide">Audiencias de AppsFlyer:</Anchor> Un método automático en el que se define una audiencia objetivo según criterios específicos (por ejemplo, usuarios que **no han** desinstalado tu aplicación). Los usuarios que no cumplen con los criterios son excluidos de la audiencia.
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> You are a marketer of gaming apps for PlayIt Gaming International. You are running a retargeting campaign for one of your Android apps and you decide to use AppsFlyer Audiences to define a retargeting audience. The criteria for your audience is as follows:
+> Eres un responsable de marketing de aplicaciones de juegos para PlayIt Gaming International. Estás llevando a cabo una campaña de retargeting para una de tus aplicaciones Android y decides utilizar Audiencias de AppsFlyer para definir la audiencia de retargeting. Los criterios para tu audiencia son los siguientes:
 >
-> * Users that haven't uninstalled the app.
-> * Users that haven't launched the app in the last 30 days.
+> * Usuarios que no han desinstalado la aplicación.
+> * Usuarios que no han abierto la aplicación en los últimos 30 días.
 >
-> This allows you to create a more exact retargeting audience. When your retargeting campaign runs, ads will only be served to users defined in your retargeting audience.
+> Esto te permite crear una audiencia de retargeting más precisa. Cuando tu campaña de retargeting se ejecute, los anuncios solo se mostrarán a los usuarios definidos en tu audiencia de retargeting.
 
 </Accordion>
 
-## Setting up uninstall measurement
+## Configuración de la medición de desinstalación
 
-The process of setting up the uninstall metric requires that the marketer and the developer work together. Implementation instructions depend on the operating system your app runs on.
+El proceso para configurar la métrica de desinstalación requiere la colaboración entre el especialista en marketing y el desarrollador. Las instrucciones de implementación dependen del sistema operativo en el que funcione tu aplicación.
 
-The flow for the marketer and the developer is as follows:
+El flujo para el especialista en marketing y el desarrollador es el siguiente:
 
 <Tabs>
 <Tab title="Android">
 
-| Task | Owner |
+| Tarea | Propietario |
 | --- | --- |
-| [Connect Firebase Cloud Messaging (FCM) to AppsFlyer](/docs/measure-uninstalls#connect-firebase-cloud-messaging-to-appsflyer-android) | Marketer |
-| [Configure uninstall measurement in AppsFlyer](/docs/measure-uninstalls#configure-uninstall-measurement-in-appsflyer) | Marketer |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/uninstall-measurement">Integrate with the SDK</Anchor> | Android developer |
-| [Test uninstall measurement](/docs/measure-uninstalls#testing-uninstall-measurement) | Marketer |
-| [Optional] [Map the uninstall event](/docs/measure-uninstalls#mapping-the-uninstall-event) to relevant partners in the dashboard | Marketer |
+| [Conectar Firebase Cloud Messaging (FCM) con AppsFlyer](/docs/measure-uninstalls#conectar-firebase-cloud-messaging-a-appsflyer-android) | marketer |
+| [Configurar la medición de desinstalaciones en AppsFlyer](/docs/measure-uninstalls#configura-la-medición-de-desinstalación-en-appsflyer) | marketer |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/uninstall-measurement">Integra con el SDK</Anchor> | Desarrollador Android |
+| [Probar la medición de desinstalaciones](/docs/measure-uninstalls#prueba-de-medición-de-desinstalación) | marketer |
+| [Opcional] [Asigna el evento de desinstalación](/docs/measure-uninstalls#mapeo-del-evento-de-desinstalación) a los partners relevantes en el dashboard | marketer |
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-| Task | Owner |
+| Tarea | Propietario |
 | --- | --- |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/uninstall-measurement-ios#creating-a-p12-certificate">Generate P12 certificate</Anchor> | iOS developer |
-| [Configure uninstall measurement in AppsFlyer](/docs/measure-uninstalls#configure-uninstall-measurement-in-appsflyer) | Marketer |
-| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/uninstall-measurement">Integrate with the SDK</Anchor> | iOS developer |
-| [Test uninstall measurement](/docs/measure-uninstalls#testing-uninstall-measurement) | Marketer |
-| [Optional] [Map the uninstall event](/docs/measure-uninstalls#mapping-the-uninstall-event) to relevant partners in the dashboard | Marketer |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/uninstall-measurement-ios#creating-a-p12-certificate">Generar certificado P12</Anchor> | Desarrollador de iOS |
+| [Configurar la medición de desinstalación en AppsFlyer](/docs/measure-uninstalls#configura-la-medición-de-desinstalación-en-appsflyer) | Comercializador |
+| <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/uninstall-measurement">Integrarse con el SDK</Anchor> | Desarrollador de iOS |
+| [Probar la medición de desinstalación](/docs/measure-uninstalls#prueba-de-medición-de-desinstalación) | Comercializador |
+| [Opcional] [Mapear el evento de desinstalación](/docs/measure-uninstalls#mapeo-del-evento-de-desinstalación) a los socios relevantes en el panel de control | Comercializador |
 
 </Tab>
 </Tabs>
 
-## Implementation procedures
+## Procedimientos de implementación
 
-Implementation requires your mobile developer to integrate a mechanism that responds to push notifications into your app. Implementation instructions vary according to the operating system.
+La implementación requiere que tu desarrollador móvil integre un mecanismo que responda a las notificaciones push dentro de tu aplicación. Las instrucciones de implementación varían según el sistema operativo.
 
-### Connect Firebase Cloud Messaging to AppsFlyer (Android)
+### Conectar Firebase Cloud Messaging a AppsFlyer (Android)
 
-Android uninstall measurement is available by configuring uninstall measurement in AppsFlyer and adopting Firebase Cloud Messaging (FCM) into your app.
+La medición de desinstalación en Android está disponible al configurar la medición de desinstalación en AppsFlyer e integrar Firebase Cloud Messaging (FCM) en tu aplicación.
 
 <div id="http-v1" />
 
 <Accordion title="HTTP V1">
 
-**To configure FCM HTTP V1 for uninstalls:**
+**Para configurar FCM HTTP V1 para desinstalaciones:**
 
-1. **To get the Project ID**:
-   1. Go to the <Anchor target="_blank" href="https://console.firebase.google.com/">FCM console.</Anchor>
-   2. Select a project.
-   3. Go to **Project Overview** > **Project settings.**
+1. **Para obtener el ID del proyecto**:
+   1. Accede a la <Anchor target="_blank" href="https://console.firebase.google.com/">consola FCM.</Anchor>
+   2. Selecciona un proyecto.
+   3. [altalt](https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png)
 
-      ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
-   4. Copy the Project ID. You will need it at a later stage in the process.
-2. To enable the FCM API:
-   1. Go to the **Cloud Messaging tab**.
-   2. Make sure that **Firebase Cloud Messaging API (V1)** is set to **Enabled**
-3. **To assign AppsFlyer the uninstall role:**
-   1. Go to the **Service accounts** tab.
-   2. Click **Manage service account permissions**.   
-      A new browser tab opens in Google Cloud Platform.
-   3. In the side menu, select **Roles**.
-   4. Click **+Create role.**
-   5. Complete as follows:
-      * Title: Enter **AppsFlyer uninstalls**.
-      * ID: Enter `af_uninstalls`.
-      * Role launch stage: Select **General availability**.
-   6. Click **Add permissions.**
-   7. In <Image alt="adjusted.png" src="https://files.readme.io/c9fc0c6358ff89e1004ac1ab348a4b286d58c8a5cbe024aeb5c637136f3a67ac-33839382508049.png" width="20px" /> **Filter**, Select the **cloudmessaging.messages.create** permission.
+       ![DesinstalarFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
+   4. Copia el ID del proyecto. Lo necesitarás más adelante en el proceso.
+2. Para habilitar la API de FCM:
+   1. Ve a la pestaña **Mensajería en la nube**.
+   2. Asegúrate de que **Firebase Cloud Messaging API (V1)** esté configurada como **Habilitada**
+3. **Para asignar a AppsFlyer el rol de desinstalación:**
+   1. Ve a la pestaña **Cuentas de servicio**.
+   2. Haz clic en **Administrar permisos de cuenta de servicio**.   
+      Se abrirá una nueva pestaña del navegador en Google Cloud Platform.
+   3. En el menú lateral, selecciona **Roles**.
+   4. Haz clic en **+Crear rol.**
+   5. Completa de la siguiente forma:
+      * Título: Introduce **Desinstalaciones de AppsFlyer**.
+      * ID: Introduce `af_uninstalls`.
+      * Etapa de lanzamiento del rol: Selecciona **Disponibilidad General**.
+   6. Haz clic en **Añadir permisos.**
+   7. **Filtro**, selecciona el permiso **cloudmessaging.messages.create**.
 
-      ![Cloud Messaging permission filter](https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png)
-   8. Click **Add** and then click **Create**.
-4. **To assign AppsFlyer the FCM uninstall role:**
-   1. In the side menu, select **IAM**.
-   2. Open the **PERMISSIONS** -> **VIEW BY PRINCIPALS** tab.
-   3. Click **Grant Access.**
-   4. In **Add Principals** -> **New principals**, enter **af-uninstalls-tracking@af-uninstalls-tracking.iam.gserviceaccount.com**
-   5. In **Assign roles** -> **Role** select the custom you created - **AppsFlyer Uninstalls**.
-   6. Click **Save**.   
-      The AppsFlyer service account has been assigned the role of AppsFlyer uninstalls.
+       ![Filtro de permisos de mensajes en la nube](https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png)
+   8. Haz clic en **Añadir** y luego en **Crear**.
+4. **Para asignar a AppsFlyer el rol de desinstalación de FCM:**
+   1. En el menú lateral, selecciona **IAM**.
+   2. Abre la pestaña **PERMISOS** -> **VER POR PRINCIPALES**.
+   3. Haz clic en **Otorgar acceso.**
+   4. En **Añadir principales** -> **Nuevos principales**, introduce **af-uninstalls-tracking@af-uninstalls-tracking.iam.gserviceaccount.com**
+   5. En **Asignar roles** -> **Rol** selecciona el personalizado que creaste: **Desinstalaciones de AppsFlyer**.
+   6. Haz clic en **Guardar**.   
+      Se ha asignado a la cuenta de servicio de AppsFlyer el rol correspondiente a las desinstalaciones de AppsFlyer.
 
       > 📘 **Note**
       >
-      > AppsFlyer uses silent push notifications solely to measure uninstalls or identify inactive users and does not use them for any other purposes.
+      > **Nota:**
+      >
+      > AppsFlyer utiliza notificaciones push silenciosas únicamente para medir desinstalaciones o identificar usuarios inactivos, no para ningún otro fin.
 
 
 </Accordion>
 
 <div id="legacy-http" />
 
-<Accordion title="[Deprecated] Legacy HTTP">
+<Accordion title="[Obsoleto] HTTP clásico">
 
 > 🚧 **Important**
 >
-> HTTP legacy API were deprecated by Firebase on June 20, 2023, and will be removed on June 21st, 2024. If you are using the legacy API, we strongly recommend that you [use the HTTP v1 API](/docs/measure-uninstalls#http-v1). <Anchor target="_blank" href="https://firebase.google.com/docs/cloud-messaging/http-server-ref">Learn more</Anchor>
+> **Importante:**
+>
+> La API HTTP heredada fue discontinuada por Firebase el 20 de junio de 2023 y se eliminará el 21 de junio de 2024. Si utilizas la API heredada, te recomendamos encarecidamente que [uses la API HTTP v1](/docs/measure-uninstalls#http-v1). <Anchor target="_blank" href="https://firebase.google.com/docs/cloud-messaging/http-server-ref">Más información</Anchor>
 
-Uninstall measurement using Firebase Messaging is supported by Android SDK V4.7.0+.
+La medición de desinstalación con Firebase Messaging es compatible con Android SDK V4.7.0 o superior.
 
-**To obtain the Firebase server key:**
+**Para obtener la clave del servidor de Firebase:**
 
-1. Create a Firebase Android Application project (if you have not already done so), or migrate your project from **Google Developer Console** (follow the instructions there). For more information, go to <Anchor target="_blank" href="https://firebase.google.com/docs/cloud-messaging/android/client">Firebase</Anchor>.
-2. Open the Firebase <Anchor target="_blank" href="https://console.firebase.google.com">Console</Anchor>.
-3. In the Firebase Console, navigate to the Project Settings (click on the cogwheel next to Project Overview on the left pane of the page).
+1. Crea un proyecto de aplicación Android en Firebase (si no lo has hecho ya), o migra tu proyecto desde **Google Developer Console** (sigue las instrucciones allí). Para más información, visita <Anchor target="_blank" href="https://firebase.google.com/docs/cloud-messaging/android/client">Firebase</Anchor>.
+2. Abre la <Anchor target="_blank" href="https://console.firebase.google.com">Consola</Anchor> de Firebase.
+3. En la consola de Firebase, ve a Configuración del proyecto (haz clic en el engranaje junto a Descripción general del proyecto en el panel izquierdo de la página).
 
-   ![firebase_cloud_messaging_server_key.png](https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png)
-4. In the Cloud Messaging tab, you see two Server Keys.
-5. Copy the **Server Key**.
+    ![firebase_cloud_messaging_server_key.png](https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png)
+4. En la pestaña de Mensajería en la nube, verás dos claves de servidor.
+5. Copia la **clave del servidor**.
 
 </Accordion>
 
-### Configure uninstall measurement in AppsFlyer
+### Configura la medición de desinstalación en AppsFlyer.
 
 <Tabs>
 <Tab title="Android">
 
-**Prerequisite**: Android developer must complete their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/uninstall-measurement">integration instructions</Anchor>.
+**Requisito previo**: El desarrollador de Android debe completar sus <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/uninstall-measurement">instrucciones de integración</Anchor>.
 
-**To configure uninstall measurement in AppsFlyer**:
+Para configurar la medición de desinstalación en AppsFlyer:
 
-1. In AppsFlyer, from the side menu, select **Settings** > **App Settings**.
-2. If necessary, turn on **Uninstall measurement**.
-3. Select **HTTP V1, and enter the project ID you prepared earlier.**
+1. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Configuración de la aplicación**.
+2. Si es necesario, activa **Medición de desinstalación**.
+3. Selecciona **HTTP V1 e introduce el ID del proyecto que preparaste anteriormente.**
 
-   ![UninstallHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
-4. Click **Test connection**.  
-   The success message displays.
+    ![DesinstalarHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
+4. Haz clic en **Probar conexión**.  
+   Se muestra el mensaje de éxito.
 
    > 📘 **Note**
    >
-   > If you get the **Project ID is invalid or access permissions are missing** error message, after testing your connection, review your connection settings in FCM. For more information, see [Connect Firebase Cloud Messaging to AppsFlyer (Android)](#connect-firebase-cloud-messaging-to-appsflyer-android) in this article.  
-   > and make sure that permissions/project ID are set correctly
+   > **Nota:**
+   >
+   > Si, tras probar la conexión, aparece el mensaje de error **El ID del proyecto no es válido o faltan permisos de acceso**, revisa la configuración de la conexión en FCM. Para obtener más información, consulta [Conecta Firebase Cloud Messaging con AppsFlyer (Android)](#conectar-firebase-cloud-messaging-a-appsflyer-android) en este artículo.  
+   > y asegúrate de que los permisos y el ID del proyecto estén establecidos correctamente
 
-5. Click **Save settings**.
+5. Haz clic en **Guardar configuración**.
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-**Prerequisite**: iOS developer must complete their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/uninstall-measurement">integration instructions</Anchor>.
+**Requisito previo**: el desarrollador de iOS debe completar sus <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/uninstall-measurement">instrucciones de integración</Anchor>.
 
-**To configure uninstall measurement in AppsFlyer:**
+**Para configurar la medición de desinstalación en AppsFlyer:**
 
-1. Get the P12 file from your developer.
-2. In AppsFlyer, from the side menu, select **Settings** > **App Settings**.
-3. Scroll down to the Uninstall section.
-4. Turn on **Uninstall measurement**.
+1. Obtén el archivo P12 de tu desarrollador.
+2. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Configuración de la aplicación**.
+3. Desplázate hacia abajo hasta la sección Desinstalar.
+4. Activa **Medición de desinstalación**.
 
-   ![Uninstall_iOS_p2.png](https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png)
-5. Click the upload icon, and select the P12 file.
-6. [Optional] If the P12 certificate is password-protected, enter the password.
-7. Click **Validate** to send the certificate to AppsFlyer for verification.
-8. Click **Save Settings**.
+    ![Desinstalar_iOS_p2.png](https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png)
+5. Haz clic en el icono de carga y selecciona el archivo P12.
+6. [Opcional] Si el certificado P12 está protegido con contraseña, introduce la contraseña.
+7. Haz clic en **Validar** para enviar el certificado a AppsFlyer para su verificación.
+8. Haz clic en **Guardar configuración**.
 
 </Tab>
 </Tabs>
 
-## Testing uninstall measurement
+## Prueba de medición de desinstalación
 
-Once the implementation procedures are complete, you can install and then uninstall the app to test that uninstalls are recorded correctly. Uninstalls and uninstall rates are displayed on the Overview dashboard.
+Una vez que hayas completado los procedimientos de implementación, puedes instalar y luego desinstalar la aplicación para verificar que las desinstalaciones se registran correctamente. Las desinstalaciones y las tasas de desinstalación se muestran en el panel de descripción general.
 
 <Tabs>
 <Tab title="Android">
 
-You can perform this test on apps that are:
+Puedes realizar esta prueba en aplicaciones que estén:
 
-* In the Google Play Store
-* Pending (not listed in the Google Play Store)
-* Available through direct download
-* In alternative app stores
+* En la tienda Google Play
+* Pendiente (sin aparecer en la tienda Google Play)
+* Disponible a través de descarga directa
+* En tiendas de aplicaciones alternativas
 
-Keep in mind the following when testing Android apps:
+Tenga en cuenta lo siguiente al probar aplicaciones de Android:
 
-* Uninstall measurement is processed <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#uninstalls">daily</Anchor>. An uninstall event is registered within 24 hours, but if the app is reinstalled during this time, an event isn't recorded.
-* **Uninstall events take up to 48 hours to display** in <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw-data reports</Anchor> and in the AppsFlyer dashboard (Aggregated Performance Report).
+* La medición de desinstalaciones se procesa <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#uninstalls">diariamente</Anchor>. Un evento de desinstalación se registra dentro de las 24 horas, pero si se reinstala la aplicación durante este tiempo, no se registra ningún evento.
+* **Los eventos de desinstalación pueden tardar hasta 48 horas en mostrarse** en <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">informes de datos sin procesar</Anchor> y en el panel de AppsFlyer (Informe de Rendimiento Agregado).
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-Keep in mind the following when testing iOS apps:
+Tenga presente lo siguiente al probar aplicaciones iOS:
 
-* Uninstalls do not immediately appear in the AppsFlyer dashboard. Due to the Apple Push Notification service, the time it takes uninstalls to appear on the dashboard is a minimum of 9 days. AppsFlyer updates and aggregates metrics for uninstalls every 24 hours.
+* Las desinstalaciones no aparecen inmediatamente en el panel de AppsFlyer. Debido al servicio de notificaciones push de Apple, el tiempo mínimo que tardan en aparecer las desinstalaciones en el panel es de 9 días. AppsFlyer actualiza y agrega métricas de desinstalaciones cada 24 horas.
 
   > 📘 **Note**
   >
-  > **Example**
+  > **Ejemplo**
   >
-  > * Day 1: A user installs your app.
-  > * Day 4: A user uninstalls your app.
-  > * Day 12: Apple Push Notification Service reports app removal 8 days after the uninstall.
-  > * Day 13: Uninstall data appears in the AppsFlyer dashboard and raw data.
+  > * Día 1: Un usuario instala tu aplicación.
+  > * Día 4: Un usuario desinstala tu aplicación.
+  > * Día 12: El servicio de notificaciones push de Apple reporta la eliminación de la aplicación 8 días después de la desinstalación.
+  > * Día 13: Los datos de desinstalación aparecen en el panel de AppsFlyer y en los datos sin procesar.
 
-* If you are performing tests on a test version of the app, make sure you are using the sandbox environment. See developer instructions for the [uninstall sandbox procedure](https://dev.appsflyer.com/hc/docs/uninstall-measurement-ios#testing-uninstall-measurement).
+* Si realizas pruebas en una versión de prueba de la aplicación, asegúrate de usar el entorno sandbox. Consulta las instrucciones para desarrolladores del [procedimiento de entorno de pruebas de desinstalación](https://dev.appsflyer.com/hc/docs/uninstall-measurement-ios#testing-uninstall-measurement).
 
 </Tab>
 </Tabs>
 
-## Mapping the uninstall event
+## Mapeo del evento de desinstalación
 
-![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
+ ![Desinstalación_evento_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png) 
 
-To share uninstall data with an ad network requires mapping the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">af\_uninstall event</Anchor> to a partner. Unlike postbacks for regular in-app events, the uninstall event is not sent in real-time. The event time that is reported represents the time that AppsFlyer determined the app was uninstalled, and not the actual uninstall itself.
+Para compartir datos de desinstalación con una ad network, debes mapear el <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">evento af\_uninstall</Anchor> a un partner. A diferencia de los postbacks para eventos normales dentro de la aplicación, el evento de desinstalación no se envía en tiempo real. El tiempo del evento que se informa representa el momento en que AppsFlyer determinó que la aplicación fue desinstalada, y no el momento real de la desinstalación.
 
-Keep in mind the following:
+Considere lo siguiente:
 
-* AppsFlyer can only send the postback if the event actually occurs and is recorded by AppsFlyer.
-* If you don't see uninstalls in the dashboard Overview page or in the raw-data report, this means that uninstall postbacks were not sent to the partner, even if the **af\_uninstall** event was mapped.
+* AppsFlyer solo puede enviar el postback si el evento realmente ocurre y es registrado por AppsFlyer.
+* Si no ves desinstalaciones en la página de descripción general del panel o en el informe de datos sin procesar, significa que no se enviaron postbacks de desinstalación al socio, incluso si el evento **af\_uninstall** fue asignado.
 
-#### Limitations
+#### Limitaciones
 
-* Uninstall events are not included in in-app event postback reports.
-* All partners support the **af\_uninstall** event. If you want to map it to a partner but the event is not available in the partner's Integration tab, contact the partner directly for support.
+* Los eventos de desinstalación no se incluyen en los informes de postback de eventos dentro de la aplicación.
+* El evento **af\_uninstall** es compatible con todos los socios. Si deseas asignarlo a un socio, pero el evento no está disponible en la pestaña de Integración del socio, contacta con tu CSM o escribe a [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
-## Turning off uninstall measurement
+## Desactivar medición de desinstalación
 
 <Tabs>
 <Tab title="Android">
 
-If a Firebase/GCM Server Key is provided, app uninstall measurement is enabled by default. App owners can disable this feature via the dashboard.
+Si se proporciona una clave de servidor Firebase/GCM, la medición de desinstalación de aplicaciones está habilitada por defecto. Los propietarios de aplicaciones pueden desactivar esta función desde el panel de control.
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-If a P12 certificate is provided and validated, app uninstall measurement is enabled by default. App owners can disable this feature via the dashboard.
+Si se proporciona y valida un certificado P12, la medición de desinstalación de aplicaciones está activada por defecto. Los propietarios de aplicaciones pueden desactivar esta función desde el panel de control.
 
 </Tab>
 </Tabs>
 
-**Note:** For an uninstall to be reported, **Enable uninstall measurement** must be on at the time the app is installed. Installs occurring when **Enable uninstall measurement** is off aren't reported.
+**Nota:** Para que se informe una desinstalación, la opción **Habilitar medición de desinstalación** debe estar activada al momento de instalar la aplicación. Las instalaciones que ocurren cuando **Habilitar medición de desinstalación** está desactivada no se informan.
 
-#### **To turn off uninstall measurement**:
+#### **Para desactivar la medición de desinstalaciones**:
 
-1. In AppsFlyer, from the side menu, select **Settings** > **App Settings**.
-2. Go to **Attribution** > **Uninstall measurement** and turn off **Enable uninstall measurement.**
+1. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Configuración de la aplicación**.
+2. Ve a **Atribución** > **Medición de desinstalación** y desactiva **Habilitar medición de desinstalación.**
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Características y limitaciones">
 
-| Trait | Remarks |
+| En | Nota |
 | --- | --- |
-| CUID | CUID isn't sent in uninstall postbacks. |
+| CUID | El CUID no se envía en los postbacks de desinstalación. |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HB8CXQ4824V2WEPYGK8YS4DC=overview h_01HB8CXQ48JEJECC1HR79DXCRK=how-does-it-work h_01HB8CXQ48E2SRN95MH4E2H7ZH=how-to-use-uninstall-data h_01HB8CXQ48HX9RH50G45FZMZTK=compare-the-quality-of-sources h_01HB8CXQ488E22GPCEBE69VQ3M=share-uninstall-data-with-ad-networks-for-optimization h_01HB8CXQ48JTET73GH0QQBX5HF=exclude-uninstalls-from-retargeting-campaigns h_01HB8CXQ4810HTB45FAS5ZVRHF=setting-up-uninstall-measurement h_01HB8CXQ489HRF72VRZ4G532GX=implementation-procedures h_01HB8CXQ48ZD5Y0RKTG1W51TKW=connect-firebase-cloud-messaging-to-appsflyer-android h_01HB8CXQ4865MNVG0VERSNSE3F=http-v1 h_01HB8CXQ48H079WQ6Q6G0XSQC7=legacy-http h_01HB8CXQ48CVA9B8B78W0H357C=configure-uninstall-measurement-in-appsflyer h_01HB8CXQ48SW2TT5Z85XD3XWT6=testing-uninstall-measurement h_01HB8CXQ499ABX9ZGDFB1VAE8W=mapping-the-uninstall-event h_01HB8CXQ49F2ARQTEV8Q032P9V=limitations h_01HB8CXQ49Y5NCG7GK93HXHYMD=turning-off-uninstall-measurement h_01HB8CXQ49WXZS4M6CK5XG1BCX=to-turn-off-uninstall-measurement h_01HB8CXQ4916CJ9NDZWGWQHKSA=traits-and-limitations" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01HB8CXQ4824V2WEPYGK8YS4DC=visi%C3%B3n-general how-does-it-work=c%C3%B3mo-funciona h_01HB8CXQ48JEJECC1HR79DXCRK=c%C3%B3mo-funciona how-to-use-uninstall-data=c%C3%B3mo-utilizar-los-datos-de-desinstalaci%C3%B3n h_01HB8CXQ48E2SRN95MH4E2H7ZH=c%C3%B3mo-utilizar-los-datos-de-desinstalaci%C3%B3n h_01HB8CXQ48HX9RH50G45FZMZTK=compare-the-quality-of-sources h_01HB8CXQ488E22GPCEBE69VQ3M=share-uninstall-data-with-ad-networks-for-optimization h_01HB8CXQ48JTET73GH0QQBX5HF=exclude-uninstalls-from-retargeting-campaigns setting-up-uninstall-measurement=configuraci%C3%B3n-de-la-medici%C3%B3n-de-desinstalaci%C3%B3n h_01HB8CXQ4810HTB45FAS5ZVRHF=configuraci%C3%B3n-de-la-medici%C3%B3n-de-desinstalaci%C3%B3n implementation-procedures=procedimientos-de-implementaci%C3%B3n h_01HB8CXQ489HRF72VRZ4G532GX=procedimientos-de-implementaci%C3%B3n connect-firebase-cloud-messaging-to-appsflyer-android=conectar-firebase-cloud-messaging-a-appsflyer-android h_01HB8CXQ48ZD5Y0RKTG1W51TKW=conectar-firebase-cloud-messaging-a-appsflyer-android h_01HB8CXQ4865MNVG0VERSNSE3F=http-v1 h_01HB8CXQ48H079WQ6Q6G0XSQC7=legacy-http configure-uninstall-measurement-in-appsflyer=configura-la-medici%C3%B3n-de-desinstalaci%C3%B3n-en-appsflyer h_01HB8CXQ48CVA9B8B78W0H357C=configura-la-medici%C3%B3n-de-desinstalaci%C3%B3n-en-appsflyer testing-uninstall-measurement=prueba-de-medici%C3%B3n-de-desinstalaci%C3%B3n h_01HB8CXQ48SW2TT5Z85XD3XWT6=prueba-de-medici%C3%B3n-de-desinstalaci%C3%B3n mapping-the-uninstall-event=mapeo-del-evento-de-desinstalaci%C3%B3n h_01HB8CXQ499ABX9ZGDFB1VAE8W=mapeo-del-evento-de-desinstalaci%C3%B3n limitations=limitaciones h_01HB8CXQ49F2ARQTEV8Q032P9V=limitaciones turning-off-uninstall-measurement=desactivar-medici%C3%B3n-de-desinstalaci%C3%B3n h_01HB8CXQ49Y5NCG7GK93HXHYMD=desactivar-medici%C3%B3n-de-desinstalaci%C3%B3n to-turn-off-uninstall-measurement=para-desactivar-la-medici%C3%B3n-de-desinstalaciones h_01HB8CXQ49WXZS4M6CK5XG1BCX=para-desactivar-la-medici%C3%B3n-de-desinstalaciones h_01HB8CXQ4916CJ9NDZWGWQHKSA=traits-and-limitations" />

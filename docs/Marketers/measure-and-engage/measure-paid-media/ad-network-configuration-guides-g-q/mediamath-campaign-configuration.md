@@ -1,5 +1,5 @@
 ---
-title: MediaMath campaign configuration
+title: Configuración de la campaña de MediaMath
 metadata:
   keywords:
     - Advertisers
@@ -14,144 +14,143 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-10-06T14:55:35Z'
-  edited_at: '2026-07-23T13:08:45Z'
+  edited_at: '2026-08-12T12:14:29Z'
   id: 214956583
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/214956583-MediaMath-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/214956583
 ---
-> **At a glance:** MediaMath, an AppsFlyer integrated partner, specializes in programmatic marketing technology, with data management platforms and omnichannel DSPs. In addition to click-based mobile attribution, MediaMath also offers retargeting and view-through attribution, which you can record with AppsFlyer.
+> **De un vistazo:** MediaMath, partner integrado de AppsFlyer, se especializa en tecnología de marketing programático, con plataformas de gestión de datos y DSP omnicanal. Además de la atribución móvil basada en clics, MediaMath también ofrece retargeting y atribución view-through, que puedes registrar con AppsFlyer.
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mediamath.png)
 
-## Setting up Mediamath
+## Configuración de MediaMath
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con el partner.  
+    Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación. Para ver una descripción detallada del Encabezado de la ventana de configuración de partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-Enabling **Advanced Data Sharing** will allow AppsFlyer to send MediaMath the attributed source and referrer data for install postbacks. The ‘CB\_AD’ toggle does the same thing for in-app events.
+Al habilitar **Uso compartido avanzado de datos**, AppsFlyer podrá enviar a MediaMath la fuente atribuida y los datos del referente para los postbacks de instalación. El interruptor «CB\_AD» hace lo mismo con los eventos in-app.
 
-MediaMath's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
+La ventana de configuración de MediaMath incluye 3 pestañas activas: Integración, enlace de atribución y permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del Partner Configuration Window Header, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
+> * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio para todos los partners**.
+> * Todos los demás pasos son descriptivos u **opcionales**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> As an ALL-Installs network, MediaMath prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to MediaMath.
+> Como red de TODAS las instalaciones, MediaMath prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a MediaMath.
 
-### General settings
+### Configuración general
 
-**Partner ID**
+**ID de socio**
 
-MediaMath connects with AppsFlyer via unique Advertiser ID and Pixel ID. If you don't already have the Advertiser ID and Pixel ID, you must obtain it from MediaMath to continue with the integration.
+MediaMath se conecta con AppsFlyer mediante un ID de anunciante y un ID de píxel únicos. Si aún no tienes el ID de anunciante y el ID de píxel, debes obtenerlos de MediaMath para continuar con la integración.
 
-**Advanced Data Sharing**
+**Compartición avanzada de datos**
 
-Toggle this to ON if you want AppsFlyer to send additional information to MediaMath.
+Activa esta opción si quieres que AppsFlyer envíe información adicional a MediaMath.
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Toggle this to ON if you want to attribute view-through installs from MediaMath. The view-through lookback slider is available on the attribution link tab (described below).
+Activa esta opción si quieres atribuir las instalaciones view-through de MediaMath. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to MediaMath following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a MediaMath después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to MediaMath.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to MediaMath.
+Selecciona **Solo eventos atribuidos a este partner** para los eventos procedentes únicamente de usuarios atribuidos a MediaMath.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para que toda tu base de usuarios esté disponible para ser reportada a MediaMath.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section you can map your AppsFlyer events with MediaMath via postbacks.
+En esta sección puedes asignar tus eventos de AppsFlyer a MediaMath mediante postbacks.
 
-1. Enter the Advertiser ID again.
-2. Toggle In-App Event Postbacks to ON
-3. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-4. Click **Add Event** to add an SDK Event to the list
-5. Complete the following parameters:
+1. Vuelve a introducir el ID de anunciante.
+2. Activa los postbacks de eventos in-app.
+3. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+4. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+5. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on MediaMath's side.  <br />Obtain the corresponding Event ID from MediaMath and set it in the text field. |
-| **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK integrado con tu aplicación o desde eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o el ID únicos de cada evento, según lo definido por MediaMath.  <br />Obtén el ID de evento correspondiente de MediaMath e introdúcelo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Cuando está marcada**: se envían todos los parámetros incluyendo el valor de ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported by MediaMath.
+MediaMath no admite datos de costo.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported by MediaMath.
+MediaMath no admite ingresos por anuncios.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant MediaMath, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for MediaMath, the permissions tab is active and you can grant control to MediaMath.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a MediaMath, tanto si el partner actúa como ad network, agencia o incluso ambas cosas. Ten en cuenta que, aunque la atribución esté deshabilitada para MediaMath, la pestaña de permisos está activa y puedes otorgarle el control a MediaMath.
 
-### Ad network permissions
+### Permisos de ad network
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos***: solo a los datos de ingresos atribuidos al partner.
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW2X0DS3WRS3N268E2SH2HT=setting-up-mediamath h_01HKW2X0DSW1P1RZGK26RS20QM=tip h_01HKW2X0DSSQVB3MSSEK1HB7V7=integration-tab h_01HKW2X0DS26H7GFZKBY3VJV59=activate-partner h_01HKW2X0DSBYTBEDCM4YCPHEPA=note h_01HKW2X0DSQWZY0KPS42RQKCFB=general-settings h_01HKW2X0DSAM76C6S22VMVTPGZ=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW2X0DSS1TN1B4GWP8SHY6X=in-app-events-settings h_01HKW2X0DSWT4VW9J5DMYZ2DPJ=attribution-link-tab h_01HKW2X0DS69CD1QKF8CZM3MN4=cost-tab h_01HKW2X0DS4B391FNY0W6W9YAK=ad-revenue-tab h_01HKW2X0DTC7BR20T5FPP8PW0X=permissions-tab h_01HKW2X0DTFX6A7X3F67WW0XNW=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-mediamath=configuraci%C3%B3n-de-mediamath h_01HKW2X0DS3WRS3N268E2SH2HT=configuraci%C3%B3n-de-mediamath h_01HKW2X0DSW1P1RZGK26RS20QM=consejo h_01HKW2X0DSSQVB3MSSEK1HB7V7=integration-tab activate-partner=activar-socio h_01HKW2X0DS26H7GFZKBY3VJV59=activar-socio h_01HKW2X0DSBYTBEDCM4YCPHEPA=nota general-settings=configuraci%C3%B3n-general h_01HKW2X0DSQWZY0KPS42RQKCFB=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HKW2X0DSAM76C6S22VMVTPGZ=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HKW2X0DSS1TN1B4GWP8SHY6X=configuraci%C3%B3n-de-eventos-in-app h_01HKW2X0DSWT4VW9J5DMYZ2DPJ=attribution-link-tab h_01HKW2X0DS69CD1QKF8CZM3MN4=cost-tab h_01HKW2X0DS4B391FNY0W6W9YAK=ad-revenue-tab h_01HKW2X0DTC7BR20T5FPP8PW0X=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HKW2X0DTFX6A7X3F67WW0XNW=permisos-de-ad-network" />

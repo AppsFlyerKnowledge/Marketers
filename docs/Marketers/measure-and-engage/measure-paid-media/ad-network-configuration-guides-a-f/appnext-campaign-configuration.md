@@ -1,5 +1,5 @@
 ---
-title: Appnext campaign configuration
+title: Configuración de la campaña de Appnext
 metadata:
   keywords:
     - Advertisers
@@ -14,136 +14,135 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-08-20T07:46:36Z'
-  edited_at: '2026-09-09T12:42:49Z'
+  edited_at: '2026-09-11T00:22:59Z'
   id: 360001407109
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (A-F)
   section_id: 6551990971793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001407109-Appnext-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360001407109
 ---
-> **At a glance:** Appnext, an AppsFlyer ad network integrated partner, uses technology and data solutions for premium mobile monetization, app marketing, and re-engagement. In addition to click-based mobile attribution, Appnext also offers cost, retargeting and view-through attribution, which you can record with AppsFlyer.
+> **Resumen:** Appnext, un partner integrado de ad network de AppsFlyer, utiliza soluciones tecnológicas y de datos para la monetización móvil premium, el marketing de aplicaciones y el re-engagement. Además de la atribución móvil basada en clics, Appnext también ofrece atribución de costos, retargeting y view-through, que puedes registrar con AppsFlyer.
 
-## Setting up Appnext
+## Configuración de Appnext
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace**.  
+   (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle. ON the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle must be set to ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás activar el selector. ACTIVA el botón **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### General settings
+### Configuración general
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Toggle this to ON if you want to attribute view-through installs from Appnext. The view-through lookback slider is available on the attribution link tab (described below).
+Activa esto si quieres atribuir las instalaciones view-through de Appnext. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
 ![appnext_msc_new_2.png](https://files.readme.io/f974ed2ccc5550cebb87e5070d177fb88efb0c82fe15cbc300979d54b1297a6a-50705658863249.png)
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to Appnext following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a Appnext tras las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Note: for installs, you can select either **Only events attributed to this partner** (for events coming only from users attributed to Appnext), or **Events attributed to any partner or organic** (for events coming from all partners). For rejected installs and re-engagements, **Only events attributed to this partner** can be sent via a postback.
+Nota: para las instalaciones, puedes seleccionar either **Solo eventos atribuidos a este partner** (para eventos que provienen solo de usuarios atribuidos a Appnext), o **Eventos atribuidos a cualquier partner u orgánicos** (para eventos que provienen de todos los partners). Para las instalaciones rechazadas y los re-engagements, **Solo eventos atribuidos a este partner** se pueden enviar mediante un postback.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> As an ALL-Installs network, Appnext prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select **Events attributed to any partner** to send all install postbacks to Appnext.
+> Como red de TODAS las instalaciones, Appnext prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluida la orgánica. Se recomienda seleccionar **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Appnext.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with Appnext via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer a Appnext mediante postbacks.
 
-1. Toggle In-App Event Postbacks to ON.
-2. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-3. Click **Add Event** to add an SDK Event to the list.
-4. Complete the following parameters:
+1. Activa los Postbacks de eventos in-app con el selector.
+2. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+3. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+4. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server-to-server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Appnext's side.  <br />Obtain the corresponding Event ID from Appnext and set in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según lo define Appnext.  <br />Obtén el ID de evento correspondiente de Appnext e introdúcelo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes usar un enlace de una sola plataforma o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros del enlace de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Appnext automatically sends CPI cost data on the attribution link for all installs.
+Appnext envía automáticamente datos de costos de CPI en el enlace de atribución para todas las instalaciones.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue integration is not available for this partner.
+La integración de ingresos por publicidad no está disponible para este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Appnext. Note that even if attribution is disabled for Appnext, the permissions tab is active and you can grant control to Appnext.
+En esta pestaña, puedes seleccionar los permisos para otorgar a Appnext. Ten en cuenta que, incluso si la atribución está deshabilitada para Appnext, la pestaña de permisos está activa y puedes otorgar el control a Appnext.
 
-### Ad network permissions
+### Permisos de ad network
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-* **Allow to configure integration** - permit the partner to set up the integration tab (except in-app event postbacks)
-* **Allow to configure in-app event postbacks** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* **Allow access to your retention report** - only to the partner's own retention data
-* **Allow access to your aggregate loyal user data** - only to the partner's own loyal user data
-* **Allow access to your aggregate in-app events data** - only to the partner's own in-app events data
-* **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
-* **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* **Permitir la configuración de la integración**: permite que el partner configure la pestaña integración (con excepción de postbacks de eventos in-app).
+* **Permitir la configuración de postbacks de eventos in-app**: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña integración.
+* **Permitir el acceso a tu reporte de retención**: solo para los datos propios de retención del partner.
+* **Permitir acceso a tus datos agregados de usuarios legales**: solo para los datos propios de usuarios leales del partner.
+* **Permitir acceso a tus datos agregados de eventos in-app** - solo a los datos de eventos in-app propios del partner
+* **Permitir acceso a tus datos agregados de ingresos**: solo para los datos de ingresos atribuidos al partner.
+* **Permitir el acceso a tu dashboard de Protect360**: solo para los datos propios de Protect360 del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
-### Agency permissions
+### Permisos de la agencia
 
-Use these toggles to give the agency permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgar permisos a una agencia para que gestione su propia configuración para tu aplicación:
 
-* **Main toggle** - Set to ON to reveal the agency permissions options
-* **Allow access to your retention report** - only to the agency's own retention data
-* **Allow access to aggregate organic data**
-* **Allow to configure in-app event postbacks** - permit the agency to setup in-app event postbacks mapping to itself on the integration tab
+* **Interruptor principal** - Configúralo en ON para mostrar las opciones de permisos de agencia
+* **Permitir el acceso a tu reporte de retención**: solo para los propios datos de retención de la agencia.
+* **Permitir el acceso a datos agregados orgánicos.**
+* **Permitir la configuración de postbacks de eventos in-app**: permite que la agencia configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña Integración.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">agency permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">permisos a las agencias</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW999WPN45PNK2XN3RD9NTX=setting-up-appnext h_01HKW999WPT67XT04P3GG7PTBS=integration-tab h_01HKW999WPB6KKPN9MZ8N1GM70=activate-partner h_01HKW999WQK8P62W20K1AWHBEN=general-settings h_01HKW999WQS7FM0TE95G7R56M8=default-postbacks h_01HKW999WQP04CC7YPTEJ4E6AJ=note inapp-events-settings=in-app-events-settings h_01HKW999WQFR3DMNGEJFS6ZS7N=in-app-events-settings h_01HKW999WQWFDDS13K2V3F2G3A=attribution-link-tab h_01HKW999WQKB9VNRSVV6JM15ES=cost-tab h_01HKW999WQ1C5CDN4JDYE1XMRZ=ad-revenue-tab h_01HKW999WQ9K1376YHF92GYW45=permissions-tab h_01HKW999WQG5KB588ESQ5XS4HM=ad-network-permissions h_01HKW999WQZMAX4MSM3B49H63W=agency-permissions" />
+<div data-zendesk-anchors="setting-up-appnext=configuraci%C3%B3n-de-appnext h_01HKW999WPN45PNK2XN3RD9NTX=configuraci%C3%B3n-de-appnext h_01HKW999WPT67XT04P3GG7PTBS=integration-tab activate-partner=activar-socio h_01HKW999WPB6KKPN9MZ8N1GM70=activar-socio general-settings=configuraci%C3%B3n-general h_01HKW999WQK8P62W20K1AWHBEN=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HKW999WQS7FM0TE95G7R56M8=postbacks-predeterminados h_01HKW999WQP04CC7YPTEJ4E6AJ=nota inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HKW999WQFR3DMNGEJFS6ZS7N=configuraci%C3%B3n-de-eventos-in-app h_01HKW999WQWFDDS13K2V3F2G3A=attribution-link-tab h_01HKW999WQKB9VNRSVV6JM15ES=cost-tab h_01HKW999WQ1C5CDN4JDYE1XMRZ=ad-revenue-tab h_01HKW999WQ9K1376YHF92GYW45=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HKW999WQG5KB588ESQ5XS4HM=permisos-de-ad-network agency-permissions=permisos-de-la-agencia h_01HKW999WQZMAX4MSM3B49H63W=permisos-de-la-agencia" />

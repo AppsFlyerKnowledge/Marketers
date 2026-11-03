@@ -1,5 +1,5 @@
 ---
-title: Enterprise-Grade Security Package
+title: Paquete de seguridad de nivel empresarial
 metadata:
   keywords:
     - Marketers
@@ -12,308 +12,307 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2025-04-03T11:42:43Z'
-  edited_at: '2026-10-14T07:44:39Z'
+  edited_at: '2026-10-20T03:41:52Z'
   id: 34053592094737
-  locale: en-us
+  locale: es
   section: Account security
   section_id: 6551173202065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/34053592094737-Enterprise-Grade-Security-Package
+  url: https://support.appsflyer.com/hc/es/articles/34053592094737
 ---
-> **At a glance:** Enhance your account protection with the **Enterprise-Grade Security Package,** a premium offering designed for enterprise-grade identity management, token access control, and extended audit visibility.
+> **De un vistazo:** Refuerza la protección de tu cuenta con el **Enterprise-Grade Security Package,** una oferta premium diseñada para la gestión de identidades de nivel empresarial, el control de acceso a tokens y una visibilidad ampliada de auditoría.
 
-## Intro
+## Introducción
 
-The Enterprise-Grade Security Package brings together three key features that elevate your organization’s security:
+El Enterprise-Grade Security Package reúne tres funciones clave que refuerzan la seguridad de tu organización:
 
-* **Multi-token management with service restrictions**: Scalable token creation and granular access controls across APIs, S2S, and OneLink.
-* **Audit log API with extended retention**: Gain long-term visibility into platform activity and integrate audit events into your monitoring stack.
-* **SCIM provisioning**: Automate and centralize user access control via your identity provider.
-* **IP allowlist for Login:** Prevent unauthorized access, ensuring log in to the AppsFlyer dashboard from only trusted networks and IPs
+* **Gestión de múltiples tokens con restricciones de servicio**: Creación escalable de tokens y controles de acceso granulares en API, S2S y OneLink.
+* **API de registro de auditoría con retención ampliada**: Obtén visibilidad a largo plazo de la actividad de la plataforma e integra eventos de auditoría en tu pila de monitoreo.
+* **Aprovisionamiento SCIM**: Automatiza y centraliza el control de acceso de los usuarios a través de tu proveedor de identidad.
+* **Lista de permitidos de IP para login:** Evita el acceso no autorizado y garantiza que solo se pueda iniciar sesión en el dashboard de AppsFlyer desde redes e IP de confianza
 
-### Compare the standard and Enterprise-Grade packages:
+### Compara los paquetes estándar y Enterprise-Grade:
 
-| Feature | Standard package | Enterprise-Grade Security Package |
+| Función | Paquete estándar | Paquete de seguridad de nivel empresarial |
 | --- | --- | --- |
-| [Single sign on (SSO)](/docs/enterprise-grade-security-package#accordion-item) | SSO login (existing customers only) | SSO SAML 2.0 with SCIM provisioning for automated user and role management |
-| [Token management](/docs/enterprise-grade-security-package#multitoken-management-with-restrictions) | Manage up to 2 tokens per type (API, S2S, or OneLink) | Manage multiple tokens per type (up to 30) with granular permissions |
-| [Audit log access](/docs/enterprise-grade-security-package#audit-log-api-and-extended-retention) | UI access only, 90 day retention data | UI and API access, 180-day data retention |
-| [User management based on roles (RBAC)](/docs/enterprise-grade-security-package#multitoken-management-with-restrictions) | Up to 10 custom roles | Up to 50 custom roles |
-| [IP allowlist](/docs/enterprise-grade-security-package#ip-allowlist) | IP Allow list for APIs | IP allowlist for Login and APIs for enhanced security |
-| 24/7 security monitoring | Included | Included |
-| Multi-factor authentication | Included | Included |
+| [Inicio de sesión único (SSO)](/docs/enterprise-grade-security-package#accordion-item) | Login SSO (solo para clientes existentes) | SSO SAML 2.0 con aprovisionamiento SCIM para usuario automatizado y gestión de roles |
+| [Gestión de tokens](/docs/enterprise-grade-security-package#multitoken-management-with-restrictions) | Administra hasta 2 tokens por tipo (API, S2S o OneLink) | Gestiona varios tokens por tipo (hasta 30) con permisos granulares |
+| [Acceso al registro de auditoría](/docs/enterprise-grade-security-package#audit-log-api-and-extended-retention) | Acceso solo por UI, retención de datos de 90 días | Acceso por UI y API, retención de datos de 180 días |
+| [Gestión de usuarios basada en roles (RBAC)](/docs/enterprise-grade-security-package#multitoken-management-with-restrictions) | Hasta 10 roles personalizados | Hasta 50 roles personalizados |
+| [Lista de IPs permitidas](/docs/enterprise-grade-security-package#ip-allowlist) | Lista de permitidos de IP para APIs | Lista de permitidos de IP para login y API para mejorar la seguridad |
+| monitoreo de seguridad 24/7 | Incluidos | Incluidos |
+| Autenticación multifactor | Incluidos | Incluidos |
 
 <div id="multitoken-management-with-restrictions" />
 
-<Accordion title="Multi-Token Management with Restrictions">
+<Accordion title="Gestión de múltiples tokens con restricciones">
 
-Create and manage up to **30 tokens** per type (API, S2S, OneLink) with **service-level restrictions** to enhance scalability, security, and control over tokens.
+Crea y gestiona hasta **30 tokens** por tipo (API, S2S, OneLink) con **restricciones por servicio** para mejorar la escalabilidad, la seguridad y el control sobre los tokens.
 
-#### Key features
+#### Características principales
 
-* Admins can create up to **30 tokens per type**, compared to the 2 tokens with the standard tokens, supporting larger teams and complex workflows.​
-* Assign service-specific access permissions to API tokens, restricting access to sensitive operations.​
-* Tokens can be revoked or rotated without breaking integrations or automations.
-* Restrict a token to a specific app so the token can only access data or perform actions for that app.
-* Simplifies collaboration with internal teams and external partners through token-specific permissions.
+* Los administradores pueden crear hasta **30 tokens por tipo**, frente a los 2 tokens del paquete estándar, lo que da soporte a equipos más grandes y flujos de trabajo complejos.​
+* Asigna permisos de acceso específicos por servicio a los tokens de API para restringir el acceso a operaciones sensibles.​
+* Los tokens se pueden revocar o rotar sin interrumpir integraciones ni automatizaciones.
+* Restringe un token a una aplicación concreta para que solo pueda acceder a datos o realizar acciones de esa aplicación.
+* Simplifica la colaboración con equipos internos y Partners externos mediante permisos específicos por token.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Create two tokens to help maintain least-privilege access and prevent accidental data exposure.
+> Crea dos tokens para ayudar a mantener el acceso con privilegios mínimos y evitar la exposición accidental de datos.
 >
-> **Data only access token:** Create a token that accesses aggregated data only. This token won’t be able to access raw data or perform actions like configuration changes. Use this for analytics teams or read-only agency users.
+> **Token de acceso solo a datos agregados:** Crea un token que acceda únicamente a datos agregados. Este token no podrá acceder a raw data ni realizar acciones como cambios de configuración. Usa este token para equipos de analítica o usuarios de agencia con acceso de solo lectura.
 >
-> **Settings-only access token:** Issue a token that lets internal teams manage configuration settings but doesn’t allow them to pull data. This isolates admin capabilities from data access.
+> **Token de acceso solo a configuración:** Emite un token que permita a los equipos internos gestionar la configuración, pero que no les permita extraer datos. Esto aísla las capacidades de administración del acceso a los datos.
 >
-> **App-specific access token:** Create a token that works for one app only. Use this token when an internal team, external partner, or automation must access only a specific app.
+> **Token de acceso específico de la app:** Crea un token que funcione solo para una app. Usa este token cuando un equipo interno, un partner externo o una automatización deban acceder solo a una aplicación específica.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> For general information about standard tokens, see <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">managing AppsFlyer tokens</Anchor>.
+> Para obtener información general sobre los tokens estándar, consulta <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">administrar los tokens de AppsFlyer</Anchor>.
 
-#### How to access and control tokens
+#### Cómo acceder a los tokens y controlarlos
 
-**To create a restricted token**
+**Para crear un token restringido**
 
-1. From the top bar, open the account menu (email address dropdown) -> **Security Center.**
-2. Go to the **Token Management** page.
-3. Click **Create Token**.
-4. Select the token type:
+1. Desde la barra superior, abre el menú de la cuenta (desplegable de la dirección de correo electrónico) -> **Centro de seguridad.**
+2. Ve a la página de **Administración de tokens**.
+3. Haz clic en **Crear token**.
+4. Selecciona el tipo de token:
    * API
    * S2S
    * OneLink
-5. For **API tokens**, select one or more services from the **Access restriction** dropdown.  
-   Access is binary: full access or none.
-6. Select the restriction type:
-   1. Service restriction: Select one or more services from the **Access restriction** drop-down list.
-   2. App restriction: Select the app that the token can access.
-7. Click **Save**
+5. Para los **tokens de API**, selecciona uno o varios servicios en el desplegable **Restricción de acceso**.  
+   El acceso es binario: acceso total o ninguno.
+6. Selecciona el tipo de restricción:
+   1. Restricción de servicio: selecciona uno o varios servicios en la lista desplegable **Restricción de acceso**.
+   2. Restricción de aplicación: selecciona la aplicación a la que puede acceder el token.
+7. Haz clic en **Save**
 
-**Manage tokens**
+**Gestionar tokens**
 
-To manage your tokens, from the top bar, open the account menu (email address dropdown) -> **Security center -> Token Management** page.
+Para gestionar tus tokens, desde la barra superior abre el menú de la cuenta (desplegable de la dirección de correo electrónico) -> **Centro de seguridad -> Administración de tokens**.
 
-Here you can:
+Desde aquí, podrás:
 
-* View token metadata: name, type, restrictions, creation/expiration
-* Delete tokens individually
-* Monitor token activity in audit logs
+* Ver metadatos del token: nombre, tipo, restricciones, creación/caducidad
+* Eliminar tokens individualmente
+* Monitorizar la actividad de los tokens en los registros de auditoría
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> Tokens cannot be edited. To change access, delete, and recreate a token.
+> Los tokens no se pueden editar. Para cambiar el acceso, elimina el token y vuelve a crearlo.
 
 </Accordion>
 
 <div id="audit-log-api-and-extended-retention" />
 
-<Accordion title="Audit log API and extended retention">
+<Accordion title="API de registro de auditoría y retención ampliada">
 
-Enhancing the existing audit log capabilities, this feature introduces an API for audit log consumption and extends data retention from 90 days to 180 days. Ideal for teams needing long-term access to user action logs or integrating audit events into external monitoring tools like SOC and SEIM.
+Esta función mejora las capacidades actuales del registro de auditoría, ya que incorpora una API para consumir registros de auditoría y amplía la retención de datos de 90 a 180 días. Ideal para equipos que necesitan acceso a largo plazo a los registros de acciones de los usuarios o integrar eventos de auditoría en herramientas externas de monitoreo como SOC y SEIM.
 
-#### Key features
+#### Características principales
 
-* Access audit logs programmatically using a dedicated API
-* Retain logs for up to **180 days**, compared to 90 days with the standard audit logs
-* Filter and export data for compliance, security, or operational use
-* Use service-specific tokens to isolate log access
-* Export data to SIEM tools, dashboards, or cloud storage
+* Accede a los registros de auditoría mediante programación con una API específica
+* Conserva los registros durante un máximo de **180 días**, frente a los 90 días de los registros de auditoría estándar
+* Filtra y exporta datos para cumplimiento, seguridad o uso operativo
+* Usa tokens específicos del servicio para aislar el acceso a los registros
+* Exporta datos a herramientas SIEM, dashboards o almacenamiento en la nube
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> For general information about the standard audit log, see <Anchor target="_blank" href="/marketers/docs/audit-log">Standard audit log</Anchor>.
+> Para obtener información general sobre Audit log estándar, consulta <Anchor target="_blank" href="/marketers/es/docs/audit-log">Standard audit log</Anchor>.
 
-### **How to access the audit log via API**
+### **Cómo acceder a Audit log a través de la API**
 
-To use the Audit Log API:
+Para usar la API de Audit log:
 
-1. From the top bar, open the account menu (email address dropdown): **Security Center.**
-2. In the **Audit log** section, click **View audit log.**
-3. Go to the **Token Management** page.
-4. Use an existing or create a new **API token**.
-5. Under **Access restriction**, select **Audit log** service.
-6. Use the token to authenticate requests to the audit log API endpoint.
+1. Desde la barra superior, abre el menú de la cuenta (desplegable de la dirección de correo electrónico): **Centro de seguridad.**
+2. En la **Audit log** sección, haz clic **Ver audit log.**
+3. Ve a la página **Token Management**.
+4. Usa uno existente o crea un **token de API** nuevo.
+5. En **Access restriction**, selecciona el servicio **Audit log**.
+6. Usa el token para autenticar solicitudes en el endpoint de la API de Audit log.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> Make sure to store your API token securely. It can’t be retrieved after creation.
+> Asegúrate de guardar tu token de API de forma segura. No se puede recuperar después de crearlo.
 
 </Accordion>
 
 <div id="accordion-item" />
 
-<Accordion title="SSO and SCIM provisioning">
+<Accordion title="SSO y aprovisionamiento SCIM">
 
-SCIM provisioning enhances AppsFlyer SSO capabilities by automating user lifecycle management directly from your identity provider (IdP), such as Okta, Entra ID (Azure), OneLogin, JumpCloud, or self-managed IDPs supporting attribute-based access. This allows organizations to onboard, update, or deactivate users without manual intervention.
+El aprovisionamiento SCIM mejora las capacidades de SSO de AppsFlyer al automatizar la gestión del ciclo de vida de los usuarios directamente desde tu proveedor de identidad (IdP), como Okta, Entra ID (Azure), OneLogin, JumpCloud o IdP autogestionados compatibles con acceso basado en atributos. Esto permite a las organizaciones incorporar, actualizar o desactivar usuarios sin intervención manual.
 
-By syncing users via SCIM, you maintain full control over access permissions in real-time. Combined with SAML 2.0 SSO, this forms a complete identity and access management solution for enterprise customers.
+Al sincronizar usuarios mediante SCIM, mantienes un control total sobre los permisos de acceso en tiempo real. Combinado con SAML 2.0 SSO, esto forma una solución completa de gestión de identidades y accesos para clientes enterprise.
 
-#### **Key features**
+#### **Características principales**
 
-* Automatically create users in AppsFlyer based on identity provider (IdP) records.
-* Changes in user roles or status in the IdP are instantly reflected in AppsFlyer.
-* Uses **SAML 2.0** for secure SSO and **SCIM** for provisioning—compatible with leading IdPs like Okta and Azure AD.
+* Crea automáticamente usuarios en AppsFlyer en función de los registros del proveedor de identidades (IdP).
+* Los cambios en los roles o el estado de los usuarios en el IdP se reflejan al instante en AppsFlyer.
+* Utiliza **SAML 2.0** para un SSO seguro y **SCIM** para el aprovisionamiento; es compatible con IdP líderes como Okta y Azure AD.
 
-#### **How to set up SCIM provisioning**
+#### **Cómo configurar el aprovisionamiento SCIM**
 
-To start using SCIM provisioning in AppsFlyer, you need to:
+Para empezar a usar el aprovisionamiento SCIM en AppsFlyer, debes:
 
-1. [Set up SSO](/docs/enterprise-grade-security-package#sso-set-up)
-2. [Enable SCIM](/docs/enterprise-grade-security-package#enable-scim)
+1. [Configura SSO con tu IdP](/docs/enterprise-grade-security-package#configurar-sso)
+2. [Habilitar SCIM](/docs/enterprise-grade-security-package#habilitar-scim)
 
-#### SSO set up
+#### Configurar SSO
 
-To set up SSO, you need to:
+Para configurar SSO, debes:
 
-* <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-1-set-up-the-idp-platform">Set up the IdP platform</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-set-up-appsflyer">Set up SSO in AppsFlyer</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-configuration">Test the SSO configuration</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-1-set-up-the-idp-platform">Configurar la plataforma IdP</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-set-up-appsflyer">Configurar SSO en AppsFlyer</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-configuration">Probar la configuración de SSO</Anchor>
 
-#### Enable SCIM
+#### Habilitar SCIM
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> To enable SCIM, SSO must be set up first.
+> Para habilitar SCIM, primero debes configurar SSO.
 
-To enable SCIM, there are a few steps that must be followed:
+Para habilitar SCIM, debes seguir estos pasos:
 
-* Follow the [idP configuration instructions](/docs/enterprise-grade-security-package#idp-instruction-links)
-* Configure the [SCIM connections](/docs/enterprise-grade-security-package#scim-connections)
-* Add the [SCIM Attributes](/docs/enterprise-grade-security-package#scim-attributes)
-* Add [roles](/docs/enterprise-grade-security-package#roles)
-* Add [external namespace](/docs/enterprise-grade-security-package#external-namespace)
+* Sigue las [instrucciones de configuración del IdP](/docs/enterprise-grade-security-package#enlaces-de-instrucciones-del-idp)
+* Configura las [conexiones SCIM](/docs/enterprise-grade-security-package#conexiones-scim)
+* Añade los [atributos SCIM](/docs/enterprise-grade-security-package#atributos-scim)
+* Añade [roles](/docs/enterprise-grade-security-package#roles)
+* Añade [el espacio de nombres externo](/docs/enterprise-grade-security-package#external-namespace)
 
-#### IdP instruction links
+#### Enlaces de instrucciones del IdP
 
-##### The instructions for the IdPs can be found below. <Anchor target="_blank" href="https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm">Okta</Anchor>, <Anchor target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service">Entra ID (Azure)</Anchor>, <Anchor target="_blank" href="https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010298">OneLogin</Anchor>, <Anchor target="_blank" href="https://jumpcloud.com/support/get-started-identity-management-connectors">JumpCloud</Anchor>
+##### A continuación encontrarás las instrucciones para los IdP. <Anchor target="_blank" href="https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm">Okta</Anchor>, <Anchor target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service">Entra ID (Azure)</Anchor>, <Anchor target="_blank" href="https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010298">OneLogin</Anchor> y <Anchor target="_blank" href="https://jumpcloud.com/support/get-started-identity-management-connectors">JumpCloud</Anchor>
 
-#### SCIM connections
+#### Conexiones SCIM
 
-In the SCIM connections, the following fields must be filled in:
+En las conexiones SCIM, debes completar los siguientes campos:
 
-| **Field name** | **Value** |
+| **Nombre de campo** | **Valor** |
 | --- | --- |
-| SCIM connector base URL (SCIM endpoint) | https://hq1.appsflyer.com/api/scim/v2 |
-| Unique identifier field for users | userName |
-| Authentication method: HTTP header called "Authorization" | Bearer &lt;<Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">Your AppsFlyer API token</Anchor>> |
+| URL base del conector SCIM (endpoint de SCIM) | https://hq1.appsflyer.com/api/scim/v2 |
+| Campo de identificador único para los usuarios | userName |
+| Método de autenticación: cabecera HTTP llamada "Authorization" | Bearer &lt;<Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">Tu token de API de AppsFlyer</Anchor>> |
 
-#### SCIM attributes
+#### Atributos SCIM
 
-| **Attribute** | **Type** | **Required** | **Field name** | **External namespace** | **Description** |
+| **Attribute** | **Tipo** | **Requerido** | **Nombre de campo** | **Espacio de nombres externo** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-| Role | String | ✅ | role | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | <ul><li>Assign a predefined or custom role to the user.</li><li>See below for the list of AppsFlyer roles that must be entered</li></ul> |
-| Allow access to all future apps | Boolean | ❌ | allowAccessToAllFutureApps | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | If enabled, the user will be granted access to new apps automatically. |
-| Allowed App IDs | String | ❌ | appIDs | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | Comma-separated list of app IDs. Leave empty for all apps or set to "None" for no apps. |
+| Rol | cadena | ✅ | rol | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | <ul><li>Asigna al usuario un rol predefinido o personalizado.</li><li>Consulta a continuación la lista de roles de AppsFlyer que debes introducir</li></ul> |
+| Permitir el acceso a todas las aplicaciones futuras | Booleano | ❌ | allowAccessToAllFutureApps | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | Si se habilita, al usuario se le concederá acceso automáticamente a las nuevas apps. |
+| App ID permitidos | cadena | ❌ | appIDs | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | Lista de App ID separados por comas. Déjalo vacío para todas las apps o establécelo en "None" para no permitir ninguna app. |
 
 #### Roles
 
-The roles must match the <Anchor target="_blank" href="/marketers/docs/user-management#roles-tab">AppsFlyer roles</Anchor>. The table below shows the current AppsFlyer roles and their values. Custom roles can be added. For JumpCloud, see the [limitations](/docs/enterprise-grade-security-package#limitations) below.
+Los roles deben coincidir con los <Anchor target="_blank" href="/marketers/es/docs/user-management#roles-tab">roles de AppsFlyer</Anchor>. La tabla siguiente muestra los roles actuales de AppsFlyer y sus valores. Se pueden añadir roles personalizados. Si usas JumpCloud, consulta las [limitaciones](/docs/enterprise-grade-security-package#limitaciones) que aparecen a continuación.
 
-| **Display name** | **Value** |
+| **Nombre para mostrar** | **Valor** |
 | --- | --- |
-| Admin | admin |
-| Team manager | team\_manager |
-| Marketing lead | marketing\_lead |
-| Marketing | marketing |
-| Marketing-limited | marketing\_limited |
-| Contributor | developer |
-| Accounting | accounting |
-| Security | security |
-| Quality Assurance | quality\_assurance |
-| Custom Role | [enter custom role value] |
+| Administrador | administrador |
+| Administrador de equipo | team\_manager |
+| Responsable de marketing | marketing\_lead |
+| marketing | marketing |
+| Marketing limitado | marketing\_limited |
+| Contribuyente | desarrollador |
+| Contabilidad | contabilidad |
+| de la nube | seguridad |
+| Garantía de calidad | quality\_assurance |
+| Rol personalizado | [introduce el valor del rol personalizado] |
 
-#### Limitations
+#### Limitaciones
 
-| **Limitation** | **Description** |
+| **Limitación** | **Description** |
 | --- | --- |
-| **JumpCloud - custom atttributes** | <Anchor target="_blank" href="https://jumpcloud.com/support/provision-and-manage-users-and-groups-in-apps-using-custom-scim-identity-management-integration#attribute-considerations">Custom attributes aren’t supported</Anchor>. As a workaround, map the Role field to the supported field Work Street Address. See <Anchor target="_blank" href="https://jumpcloud.com/support/provision-and-manage-users-and-groups-in-apps-using-custom-scim-identity-management-integration#custom-scim-user-attributes">JumpCloud SCIM support</Anchor>. |
+| **JumpCloud - atributos personalizados** | <Anchor target="_blank" href="https://jumpcloud.com/support/provision-and-manage-users-and-groups-in-apps-using-custom-scim-identity-management-integration#attribute-considerations">Los atributos personalizados no son compatibles</Anchor>. Como alternativa, asigna el campo Rol al campo compatible Dirección laboral. Consulta <Anchor target="_blank" href="https://jumpcloud.com/support/provision-and-manage-users-and-groups-in-apps-using-custom-scim-identity-management-integration#custom-scim-user-attributes">el soporte de SCIM de JumpCloud</Anchor>. |
 
 </Accordion>
 
 <div id="ip-allowlist" />
 
-<Accordion title="IP allowlist for Login">
+<Accordion title="Lista de IP permitidas para el login">
 
-Enhanced IP allowlisting improves security by preventing unauthorized access, ensuring only trusted networks can interact with the platform. This feature is especially valuable for enterprises enforcing strict security policies or managing remote access.
+La lista ampliada de IP permitidas mejora la seguridad al evitar accesos no autorizados y garantizar que solo las redes de confianza puedan interactuar con la plataforma. Esta función es especialmente valiosa para empresas que aplican políticas de seguridad estrictas o gestionan el acceso remoto.
 
-#### Key features
+#### Características principales
 
-* Reduces attacks by blocking login attempts from unknown IPs.
-* Enables the ability to specify IP addresses or ranges to ensure that only authorized users and networks can access the platform.
-* Ideal for organizations using VPNs or requiring stricter access controls.
+* Reduce los ataques al bloquear intentos de login desde IP desconocidas.
+* Permite especificar direcciones IP o rangos para garantizar que solo los usuarios y las redes autorizados puedan acceder a la plataforma.
+* Ideal para organizaciones que usan VPN o requieren controles de acceso más estrictos.
 
-#### Adding IPs to the list
+#### Agregar IP a la lista
 
-1. From the top bar, open the account menu (email address dropdown) > **Security center**.
-2. In the **Login IP allowlist** section, click **Manage IP allowlist**.
-3. Add IPs manually or via a CSV upload.
-   1. If adding manually, enter the IP address or CIDR range and click **Add IP to list**.
-      1. Examples: `192.168.1.1`, `185.114.120.140`
-      2. To enter a range of IP addresses, use this format: `185.114.120.1/32`  
-         (where `185.114.120.1` is the first address in the range and `185.114.120.32` is the last address in the range).
-4. Added IPs will be shown on the right side under **See your IPs in the IP allowlist**.
-5. Click **Save list**.
+1. Desde la barra superior, abre el menú de la cuenta (desplegable de dirección de correo electrónico) > **Centro de seguridad**.
+2. En la sección **Lista de IP permitidas para el login**, haz clic **Administrar la lista de IP permitidas**.
+3. Agrega IP manualmente o mediante la carga de un CSV.
+   1. Si las agregas manualmente, introduce la dirección IP o el rango CIDR y haz clic en **Agregar IP a la lista**.
+      1. Ejemplos: `192.168.1.1`, `185.114.120.140`
+      2. Para introducir un rango de direcciones IP, usa este formato: `185.114.120.1/32`  
+         (donde `185.114.120.1` es la primera dirección del rango y `185.114.120.32` es la última dirección del rango).
+4. Las IP añadidas se mostrarán en el lado derecho, en **Ver tus IP en la lista de IP permitidas**.
+5. Haz clic en **Guardar lista**.
 
-> 🚧 **Important!**
+> 🚧 **Dos puntos (:)**
 >
-> * Make sure the IP addresses or ranges you add are correct. Incorrect entries may prevent you from accessing your account.
-> * The allowlist must contain at least one IP address or range before you can save and activate it, and you can add up to 100 IP addresses or ranges to the allowlist.
-> * After you click Save list, the IP restrictions will be enforced starting with your next log in.
+> * Asegúrate de que las direcciones IP o los rangos que añadas sean correctos. Si introduces datos incorrectos, es posible que no puedas acceder a tu cuenta.
+> * La lista de permitidos debe contener al menos una dirección IP o un rango antes de que puedas guardarla y activarla, y puedes añadir hasta 100 direcciones IP o rangos a la lista de permitidos.
+> * Después de hacer clic en Guardar lista, las restricciones de IP se aplicarán a partir de tu próximo inicio de sesión.
 
-#### Removing IPs from the list
+#### Eliminar IP de la lista
 
-1. From the top bar, open the account menu (email address dropdown) > **Security center**.
-2. In the **Login IP allowlist** section, click **Manage IP allowlist**.
-3. Added IPs will be shown on the right side under **See your IPs in the IP allowlist**.
-4. Click the trash icon next to the IP address you want to delete.
-5. Be sure to save your changes by clicking the **Save list** button.
+1. Desde la barra superior, abre el menú de la cuenta (desplegable de dirección de correo electrónico) > **Centro de seguridad**.
+2. En la sección **Lista de IP permitidas para el login**, haz clic **Gestionar la lista de IP permitidas**.
+3. Las IP añadidas se mostrarán a la derecha, en **Ver tus IP en la lista de IP permitidas**.
+4. Haz clic en el icono de la papelera junto a la dirección IP que deseas eliminar.
+5. Asegúrate de guardar tus cambios haciendo clic en el **Guardar lista** botón.
 
 </Accordion>
 
 <div id="frequently-asked-questions-about-our-security-package" />
 
-<Accordion title="Frequently asked questions about our security package">
+<Accordion title="Preguntas frecuentes sobre nuestro paquete seguridad">
 
-#### What is AppsFlyer's Enterprise-Grade Security Package?
+#### ¿Qué es el paquete de seguridad de nivel empresarial de AppsFlyer?
 
-Scale securely with advanced security capabilities that go beyond standard protections. Get SSO with SCIM provisioning, granular access controls, extended audit logs, and compliance tools designed for enterprise security and IT leaders.
+Escala segura con capacidades de seguridad avanzadas que van más allá de las protecciones estándar. Obtén SSO con aprovisionamiento SCIM, controles de acceso granulares, registros de auditoría ampliados y herramientas de cumplimiento diseñadas para líderes de seguridad empresarial y TI.
 
-#### Who is the Enterprise-Grade Security Package designed for?
+#### ¿Para quién está diseñado el paquete de seguridad de nivel empresarial?
 
-Enterprise security and IT leaders preparing for audits, procurement and legal teams in regulated industries evaluating SaaS vendors, and platform admins managing complex access requirements across multiple teams and integrations.
+Responsables de seguridad empresarial y TI que se preparan para auditorías, equipos de compras y jurídicos de sectores regulados que evalúan proveedores de SaaS, y administradores de plataformas que gestionan requisitos de acceso complejos en múltiples equipos e integraciones.
 
-#### How does SCIM provisioning work?
+#### ¿Cómo trabajo el aprovisionamiento SCIM?
 
-Automate user lifecycle management by connecting directly with your identity provider. SCIM automatically syncs user access and roles, handles instant onboarding and offboarding, and eliminates manual account management and orphaned access risks.
+Automatiza la gestión del ciclo de vida del usuario conectándote directamente con tu proveedor de identidad. SCIM sincroniza automáticamente el acceso y los roles de usuarios, gestiona el onboarding y offboarding instantáneo, y elimina la administración manual de cuentas y los riesgos de acceso.
 
-#### What compliance standards does this support?
+#### ¿Qué estándares de cumplimiento tiene este soporte?
 
-Support audit readiness for SOC2, ISO 27001, and GDPR requirements with 180-day audit log retention, comprehensive access documentation, and real-time SIEM integration for continuous monitoring and compliance verification.
+Soporte para requisitos de auditoría SOC2, ISO 27001 y GDPR con retención de registro de auditoría de 180 días, documentación de acceso integral e integración SIEM en tiempo real para monitoreo continuo y verificación de cumplimiento.
 
-#### How many roles and API tokens can I create?
+#### ¿Cuántos roles y tokens API puedo crear?
 
-Create up to 50 customizable roles tailored to your organizational structure and up to 30 service-specific or app-specific restrictions. Isolate access for different integrations and job functions while maintaining least-privilege principles.
+Crea hasta 50 roles personalizables adaptados a la estructura de tu organización y hasta 30 restricciones específicas del servicio o de la aplicación. Aislar acceso para diferentes integraciones y funciones laborales manteniendo los principios de menos privilegios.
 
-#### Can I integrate with my existing security tools?
+#### ¿Puedo integrarme con mis herramientas de seguridad existentes?
 
-Yes. Stream audit data directly to your SIEM and security tools through API-based log streaming. Enable real-time monitoring, anomaly detection, and automated security responses within your existing SOC infrastructure.
+Sí. Transmite datos de auditoría directamente a tus herramientas SIEM y seguridad mediante la transmisión de registros basada en APIs. Permite el monitoreo en tiempo real, detección de anomalías y respuestas de seguridad automatizadas dentro de tu infraestructura SOC existente.
 
-#### What network restrictions can I apply?
+#### ¿Qué restricciones de red puedo aplicar?
 
-Control platform access through IP allowlists and geographic restrictions. Define trusted networks and locations to prevent unauthorized access while supporting remote work scenarios and secure partner collaboration.
+Control de acceso a la plataforma mediante listas de IP permitidas y restricciones geográficas. Define redes y ubicaciones de confianza para evitar accesos no autorizados y, al mismo tiempo, admite situaciones de trabajo remoto y asegura la colaboración de los partners.
 
-#### How long are audit logs retained?
+#### ¿Cuánto tiempo se conservan los registros de auditoría?
 
-Access comprehensive audit trails with 180-day log retention that captures every platform interaction. Get complete visibility into user actions, API calls, and access patterns for thorough compliance documentation and security investigations.
+Acceso a pistas de auditoría completas con retención de registros de 180 días que capturan la interacción de cada plataforma. Obtén una visibilidad completa de las acciones del usuario, llamadas a la API y patrones de acceso para investigaciones exhaustivas de cumplimiento e investigaciones de seguridad.
 
-#### Does this replace standard security features?
+#### ¿Esto reemplaza las funciones de seguridad estándar?
 
-No. The Enterprise-Grade Security Package adds advanced capabilities on top of standard security features. You get enhanced controls, automation, and visibility while maintaining all existing security protections.
+N.º El paquete de seguridad de nivel empresarial agrega capacidades avanzadas además de las funciones de seguridad estándar. Obtén controles, automatización y visibilidad mejorados al tiempo que mantienes todas las protecciones de seguridad existentes.
 
-#### How quickly can I implement these security controls?
+#### ¿Con qué rapidez puedo implementar estos controles de seguridad?
 
-Deploy enterprise security controls rapidly through seamless SSO integration and automated SCIM provisioning. Most organizations can implement core features within days while maintaining operational continuity and user productivity.
+Implementa controles de seguridad empresarial rápidamente mediante una perfecta integración SSO y un aprovisionamiento SCIM automatizado. La mayoría de las organizaciones pueden implementar funciones principales en cuestión de días, manteniendo la continuidad operativa y la productividad del usuario.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01JRA2GVNZCDW8C9VW6GH3G4KE=intro compare-the-standard-and-advanced-packages=compare-the-standard-and-enterprise-grade-packages h_01JVS101KETCVDMT1B2WZM89NF=compare-the-standard-and-enterprise-grade-packages h_01JQXQ178D9JKZEREHWTQ2FKBF=multitoken-management-with-restrictions h_01JQXRDEMJF2NT73FP1TFJG63Z=key-features h_01JVRZRXPD4AC1GAMJ2HKC1R9E=example h_01JVRZ0ACA19TGC9WJCZ562B70=note h_01JQXSE4TTYXTWCKXDHB20KJ1Z=how-to-access-and-control-tokens h_01JVRZ9X0D5V765FTXHVHMR807=note-1 h_01JQXQ178DHFQ2Y6JDYYBTKJ0V=audit-log-api-and-extended-retention key-features::8c048755=key-features-1 h_01JQXR4X1CT8P8M3NYEVK0WQYM=key-features-1 h_01JVRZ7WBBY3D8GJE2MJ2E4B0G=note-2 h_01JQXQM2H3VCJMWFRBJDWJ5FAZ=how-to-access-the-audit-log-via-api h_01JVRZ69C2JYY9SK12SEVG3KXF=note-3 h_01JQXQ178DSG340QG8R05B8VNX=accordion-item key-features::e7dd8b4e=key-features-2 h_01JV9W8DTENC21GS0380Q9DP8T=key-features-2 h_01JV9W8DTFCE7Z0MQP96MK7BQC=how-to-set-up-scim-provisioning h_01JV9W8DTFHJME1J1JKKJ3NA6C=sso-set-up h_01JV9W8DTG50YYPQ9RS91K2CJ4=enable-scim h_01JVRZ3MC8J0B1E66A47GM5WYZ=note-4 h_01JV9WBJCPQ0X5SKVVNK4TBYRR=idp-instruction-links h_01JV9WTJ33KMJGZGM9P5PRK917=the-instructions-for-the-idps-can-be-found-below-okta-entra-id-azure-onelogin-jumpcloud h_01JV9WBNC51WYW03RKWHBTP0AG=scim-connections h_01JV9WBS928Z7WKJ2A2CFSWNT4=scim-attributes h_01JV9WBX3JHEMAG62JCASYXB59=roles h_01JV9DMY0Y3795TAT3Q1E3PZRM=limitations h_01JVWCNK70QY6PKJRFZGEQ76SW=ip-allowlist key-features::cd0daf96=key-features-3 h_01JVWCSA3D6DJZXJKKYDFWWPC0=key-features-3 h_01K35NHF44511J17KCXTE073QB=adding-ips-to-the-list h_01K3DGBBVYY08KVYS60F2MYDCW=important h_01K35PGV6Y84JR4CZJ0KGQNWZS=removing-ips-from-the-list h_01K85MXJJ7A9ZTS3PSY2Q0ZDGZ=frequently-asked-questions-about-our-security-package what-is-appsflyers-enterprisegrade-security-package=what-is-appsflyers-enterprise-grade-security-package h_01K85MZT9TDAV684V6PBBFGPTX=what-is-appsflyers-enterprise-grade-security-package who-is-the-enterprisegrade-security-package-designed-for=who-is-the-enterprise-grade-security-package-designed-for h_01K85N0D7WVGH94HT1B7NY4KTZ=who-is-the-enterprise-grade-security-package-designed-for h_01K85N0ZV1CMH5VANHQCEGENAW=how-does-scim-provisioning-work h_01K85N1KB8VSR1Y44YJ7CJD4C2=what-compliance-standards-does-this-support h_01K85N26X17PGVN4C6108A47TB=how-many-roles-and-api-tokens-can-i-create h_01K85N2QW51KDHKE4CQE7VJQHE=can-i-integrate-with-my-existing-security-tools h_01K85N37KPK5XTFRRGW62CCN4M=what-network-restrictions-can-i-apply h_01K85N3SVXVC6TD85V1PQ4EF2D=how-long-are-audit-logs-retained h_01K85N4BCQ3NCH1G2P0EFWE3TQ=does-this-replace-standard-security-features h_01K85N4VR1FBESRN1QDRYF077A=how-quickly-can-i-implement-these-security-controls" />
+<div data-zendesk-anchors="intro=introducci%C3%B3n h_01JRA2GVNZCDW8C9VW6GH3G4KE=introducci%C3%B3n compare-the-standard-and-advanced-packages=compara-los-paquetes-est%C3%A1ndar-y-enterprise-grade h_01JVS101KETCVDMT1B2WZM89NF=compara-los-paquetes-est%C3%A1ndar-y-enterprise-grade h_01JQXQ178D9JKZEREHWTQ2FKBF=multitoken-management-with-restrictions key-features=caracter%C3%ADsticas-principales h_01JQXRDEMJF2NT73FP1TFJG63Z=caracter%C3%ADsticas-principales h_01JVRZRXPD4AC1GAMJ2HKC1R9E=ejemplo h_01JVRZ0ACA19TGC9WJCZ562B70=advertencia how-to-access-and-control-tokens=c%C3%B3mo-acceder-a-los-tokens-y-controlarlos h_01JQXSE4TTYXTWCKXDHB20KJ1Z=c%C3%B3mo-acceder-a-los-tokens-y-controlarlos h_01JVRZ9X0D5V765FTXHVHMR807=advertencia-1 h_01JQXQ178DHFQ2Y6JDYYBTKJ0V=audit-log-api-and-extended-retention key-features::8c048755=caracter%C3%ADsticas-principales-1 h_01JQXR4X1CT8P8M3NYEVK0WQYM=caracter%C3%ADsticas-principales-1 h_01JVRZ7WBBY3D8GJE2MJ2E4B0G=advertencia-2 how-to-access-the-audit-log-via-api=c%C3%B3mo-acceder-a-audit-log-a-trav%C3%A9s-de-la-api h_01JQXQM2H3VCJMWFRBJDWJ5FAZ=c%C3%B3mo-acceder-a-audit-log-a-trav%C3%A9s-de-la-api h_01JVRZ69C2JYY9SK12SEVG3KXF=advertencia-3 h_01JQXQ178DSG340QG8R05B8VNX=accordion-item key-features::e7dd8b4e=caracter%C3%ADsticas-principales-2 h_01JV9W8DTENC21GS0380Q9DP8T=caracter%C3%ADsticas-principales-2 how-to-set-up-scim-provisioning=c%C3%B3mo-configurar-el-aprovisionamiento-scim h_01JV9W8DTFCE7Z0MQP96MK7BQC=c%C3%B3mo-configurar-el-aprovisionamiento-scim sso-set-up=configurar-sso h_01JV9W8DTFHJME1J1JKKJ3NA6C=configurar-sso enable-scim=habilitar-scim h_01JV9W8DTG50YYPQ9RS91K2CJ4=habilitar-scim h_01JVRZ3MC8J0B1E66A47GM5WYZ=advertencia-4 idp-instruction-links=enlaces-de-instrucciones-del-idp h_01JV9WBJCPQ0X5SKVVNK4TBYRR=enlaces-de-instrucciones-del-idp h_01JV9WTJ33KMJGZGM9P5PRK917=a-continuaci%C3%B3n-encontrar%C3%A1s-las-instrucciones-para-los-idp-okta-entra-id-azure-onelogin-y-jumpcloud scim-connections=conexiones-scim h_01JV9WBNC51WYW03RKWHBTP0AG=conexiones-scim scim-attributes=atributos-scim h_01JV9WBS928Z7WKJ2A2CFSWNT4=atributos-scim h_01JV9WBX3JHEMAG62JCASYXB59=roles limitations=limitaciones h_01JV9DMY0Y3795TAT3Q1E3PZRM=limitaciones h_01JVWCNK70QY6PKJRFZGEQ76SW=ip-allowlist key-features::cd0daf96=caracter%C3%ADsticas-principales-3 h_01JVWCSA3D6DJZXJKKYDFWWPC0=caracter%C3%ADsticas-principales-3 adding-ips-to-the-list=agregar-ip-a-la-lista h_01K35NHF44511J17KCXTE073QB=agregar-ip-a-la-lista h_01K3DGBBVYY08KVYS60F2MYDCW=dos-puntos- removing-ips-from-the-list=eliminar-ip-de-la-lista h_01K35PGV6Y84JR4CZJ0KGQNWZS=eliminar-ip-de-la-lista h_01K85MXJJ7A9ZTS3PSY2Q0ZDGZ=frequently-asked-questions-about-our-security-package what-is-appsflyers-enterprisegrade-security-package=qu%C3%A9-es-el-paquete-de-seguridad-de-nivel-empresarial-de-appsflyer h_01K85MZT9TDAV684V6PBBFGPTX=qu%C3%A9-es-el-paquete-de-seguridad-de-nivel-empresarial-de-appsflyer who-is-the-enterprisegrade-security-package-designed-for=para-qui%C3%A9n-est%C3%A1-dise%C3%B1ado-el-paquete-de-seguridad-de-nivel-empresarial h_01K85N0D7WVGH94HT1B7NY4KTZ=para-qui%C3%A9n-est%C3%A1-dise%C3%B1ado-el-paquete-de-seguridad-de-nivel-empresarial how-does-scim-provisioning-work=c%C3%B3mo-trabajo-el-aprovisionamiento-scim h_01K85N0ZV1CMH5VANHQCEGENAW=c%C3%B3mo-trabajo-el-aprovisionamiento-scim what-compliance-standards-does-this-support=qu%C3%A9-est%C3%A1ndares-de-cumplimiento-tiene-este-soporte h_01K85N1KB8VSR1Y44YJ7CJD4C2=qu%C3%A9-est%C3%A1ndares-de-cumplimiento-tiene-este-soporte how-many-roles-and-api-tokens-can-i-create=cu%C3%A1ntos-roles-y-tokens-api-puedo-crear h_01K85N26X17PGVN4C6108A47TB=cu%C3%A1ntos-roles-y-tokens-api-puedo-crear can-i-integrate-with-my-existing-security-tools=puedo-integrarme-con-mis-herramientas-de-seguridad-existentes h_01K85N2QW51KDHKE4CQE7VJQHE=puedo-integrarme-con-mis-herramientas-de-seguridad-existentes what-network-restrictions-can-i-apply=qu%C3%A9-restricciones-de-red-puedo-aplicar h_01K85N37KPK5XTFRRGW62CCN4M=qu%C3%A9-restricciones-de-red-puedo-aplicar how-long-are-audit-logs-retained=cu%C3%A1nto-tiempo-se-conservan-los-registros-de-auditor%C3%ADa h_01K85N3SVXVC6TD85V1PQ4EF2D=cu%C3%A1nto-tiempo-se-conservan-los-registros-de-auditor%C3%ADa does-this-replace-standard-security-features=esto-reemplaza-las-funciones-de-seguridad-est%C3%A1ndar h_01K85N4BCQ3NCH1G2P0EFWE3TQ=esto-reemplaza-las-funciones-de-seguridad-est%C3%A1ndar how-quickly-can-i-implement-these-security-controls=con-qu%C3%A9-rapidez-puedo-implementar-estos-controles-de-seguridad h_01K85N4VR1FBESRN1QDRYF077A=con-qu%C3%A9-rapidez-puedo-implementar-estos-controles-de-seguridad" />

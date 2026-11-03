@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: The Android SDK adds the AD_ID permission'
+title: 'Boletín: El SDK de Android añade el permiso AD_ID'
 metadata:
   keywords:
     - Marketers
@@ -13,17 +13,16 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-07-12T08:57:45Z'
-  edited_at: '2023-08-28T09:44:20Z'
+  edited_at: '2026-10-20T03:56:32Z'
   id: 7569900844689
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/7569900844689-Bulletin-The-Android-SDK-adds-the-AD-ID-permission
+  url: https://support.appsflyer.com/hc/es/articles/7569900844689
 ---
-> **At a glance:** Starting with AppsFlyer Android SDK V6.8.0, the AD\_ID permission is declared in the SDK's AndroidManifest.xml.
+> **Resumen:** A partir de AppsFlyer Android SDK V6.8.0, el permiso AD\_ID se declara en el AndroidManifest.xml del SDK.
 
-| **Background** | In early 2022, Google announced a change to the behavior of Google Play Services and fetching of the Android Advertising ID.<br /><br />According to the <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/6048248?hl=en">announcement</Anchor>, apps targeting Android 13 (API 33) and above will have to declare a Google Play services normal permission in their manifest file in order to get access to the device’s Advertising ID.<br /><br />The permission is granted to the app at install time and does not trigger any user interaction. |
+| **Background** | A principios de 2022, Google anunció un cambio en el comportamiento de Google Play Services y la obtención del ID de publicidad de Android.<br /><br />Según el <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/6048248?hl=en">anuncio</Anchor>, las aplicaciones orientadas a Android 13 (API 33) y versiones posteriores tendrán que declarar un permiso normal de los servicios de Google Play en su archivo de manifiesto para poder acceder al ID de publicidad del dispositivo.<br /><br />El permiso se concede a la aplicación en el momento de la instalación y no requiere ninguna interacción por parte del usuario. |
 | --- | --- |
-| **What's changing** | Starting with AppsFlyer Android SDK V6.8.0, the AD\_ID permission is declared in the SDK's AndroidManifest.xml. When the app is built, the SDK’s manifest merges with your app’s manifest by default, and the permission is added even if the app doesn’t explicitly declare the permission. If the permission exists in both the app and the SDK, this works just fine–there will be no collision. |
-| **What you must know** | <ul><li>If you are using SDK V6.8.0 and have the AD\_ID permission in your app’s Manifest, you can optionally remove it from the manifest and let the SDK add it for you.</li><li>If you are using SDK version **older** than V6.8.0, and your app is targeting Android 13 (API 33) and above, you should add the AD\_ID permission to your app in order to allow the SDK to gain access to the Advertising ID.</li><li>**Child-directed apps:** According to <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/11043825?hl=en">Google’s Policy</Anchor>, apps that target children must not transmit the Advertising ID. If you're building an app for children and you are using SDK V6.8.0 and above, you must revoke the AD\_ID permission. See developer instructions <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#revoking-the-ad_id-permission">here</Anchor>.</li></ul> |
+| **Qué ha cambiado** | A partir de AppsFlyer Android SDK V6.8.0, el permiso AD\_ID se declara en el AndroidManifest.xml del SDK. Cuando se compila la aplicación, el manifiesto del SDK se fusiona por defecto con el manifiesto de tu aplicación, y el permiso se añade incluso si la aplicación no declara explícitamente el permiso. Si el permiso existe tanto en la aplicación como en el SDK, quiere decir que funciona perfectamente y no habrá colisión. |
+| **Lo que debes saber** | <ul><li>Si estás utilizando el SDK V6.8.0 y tienes el permiso AD\_ID en el manifiesto de tu aplicación, puedes eliminarlo opcionalmente del manifiesto y dejar que el SDK lo añada por ti.</li><li>Si utilizas una versión del SDK **anterior** a la V6.8.0 y tu aplicación está orientada a Android 13 (API 33) y versiones superiores, deberás añadir el permiso AD\_ID a tu aplicación para que el SDK pueda acceder al ID de publicidad.</li><li>**Aplicaciones dirigidas a niños:** Según <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/11043825?hl=en">la Política de Google</Anchor>, las aplicaciones dirigidas a niños no deben transmitir el ID de publicidad. Si estás creando una aplicación para niños y utilizas SDK V6.8.0 o superior, debes revocar el permiso AD\_ID. Consulta las instrucciones para desarrolladores <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#revoking-the-ad_id-permission">aquí</Anchor>.</li></ul> |

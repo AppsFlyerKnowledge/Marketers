@@ -1,5 +1,5 @@
 ---
-title: Security Center
+title: Centro de Seguridad
 metadata:
   keywords:
     - Ad Networks
@@ -15,34 +15,33 @@ x-zendesk:
     - Platform essentials
     - Ad Networks
   created_at: '2021-12-26T12:49:02Z'
-  edited_at: '2026-09-30T07:39:07Z'
+  edited_at: '2026-10-02T00:08:53Z'
   id: 4414816418065
-  locale: en-us
+  locale: es
   section: Account security
   section_id: 6551173202065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4414816418065-Security-Center
+  url: https://support.appsflyer.com/hc/es/articles/4414816418065
 ---
-> **At a glance:** Review and manage the status of all the security-related features of your AppsFlyer account from a single location.
+> **De un vistazo:** Revise y gestione el estado de todas las funciones de seguridad de su cuenta de AppsFlyer desde un solo lugar.
 
-## What can I do from the Security Center?
+## ¿Qué puedo hacer desde el Centro de Seguridad?
 
-The **Security Center** provides you with an at-a-glance overview of your AppsFlyer account's security status. Click the button in any section of the **Security Center** to access the following features:
+El **Centro de Seguridad** le proporciona una visión general inmediata del estado de seguridad de su cuenta de AppsFlyer. Haga clic en el botón de cualquier sección del **Centro de Seguridad** para acceder a las siguientes funciones:
 
-| Feature | Description |
+| Función | Descripción |
 | --- | --- |
-| <span id="user-management"></span><Anchor target="_blank" href="/marketers/docs/user-management">User management</Anchor> | Create and manage your AppsFlyer users. Assign them permissions to access the features, apps, and data they need. |
-| <span id="redirect-allowlist"></span><Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">Redirect allowlist</Anchor> | Define allowed domains for link redirects. |
-| <span id="list-of-authorized-agencies-for-ad-networks"></span><Anchor target="_blank" href="/partners/docs/set-up-your-list-of-authorized-agencies">List of authorized agencies</Anchor> (for ad networks) | Manage which agencies you authorize to run campaigns through your network integration. |
-| <span id="api-allowlist"></span><Anchor target="_blank" href="/marketers/docs/set-up-your-api-allowlist">API allowlist</Anchor> | Define allowed IP addresses for API requests. |
-| <span id="enhanced-login-security"></span>Enhanced login security | Configure <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp">single sign-on (SSO)</Anchor> or <Anchor target="_blank" href="/marketers/docs/implementing-and-using-2fa-login">two-factor authentication (2FA)</Anchor> to keep your account safe from unauthorized entry. |
-| <span id="appsflyer-api-and-s2s-tokens"></span><Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">AppsFlyer tokens</Anchor> | Use AppsFlyer tokens to authenticate your API and S2S calls. Manage the tokens and replace them periodically to ensure maximum security |
-| <span id="audit-log"></span><Anchor target="_blank" href="/marketers/docs/audit-log">Audit log</Anchor> | Review account activity to identify unauthorized access: logins, user management actions, and API calls. |
+| <span id="user-management"></span><Anchor target="_blank" href="/marketers/es/docs/user-management">Gestión de usuarios</Anchor> | Cree y administre los usuarios de AppsFlyer. Asígneles permisos para acceder a las funciones, aplicaciones y datos que necesiten. |
+| <span id="redirect-allowlist"></span><Anchor target="_blank" href="/marketers/es/docs/set-up-your-domain-redirect-allowlist">Lista de redireccionamiento permitido</Anchor> | Defina los dominios permitidos para redirecciones de enlaces. |
+| <span id="list-of-authorized-agencies-for-ad-networks"></span><Anchor target="_blank" href="/partners/es/docs/set-up-your-list-of-authorized-agencies">Lista de agencias autorizadas</Anchor> (para redes publicitarias) | Gestione qué agencias están autorizadas para ejecutar campañas a través de su integración de red. |
+| <span id="api-allowlist"></span><Anchor target="_blank" href="/marketers/es/docs/set-up-your-api-allowlist">Lista de API permitidas</Anchor> | Defina las direcciones IP permitidas para solicitudes de API. |
+| <span id="enhanced-login-security"></span>Seguridad de inicio de sesión mejorada | Configure el <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp">inicio de sesión único (SSO)</Anchor> o la <Anchor target="_blank" href="/marketers/es/docs/implementing-and-using-2fa-login">autenticación de dos factores (2FA)</Anchor> para mantener su cuenta segura frente a accesos no autorizados. |
+| <span id="appsflyer-api-and-s2s-tokens"></span><Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">Tokens de AppsFlyer</Anchor> | Utilice tokens de AppsFlyer para autenticar sus llamadas API y S2S. Gestione los tokens y sustitúyalos periódicamente para garantizar la máxima seguridad. |
+| <span id="audit-log"></span><Anchor target="_blank" href="/marketers/es/docs/audit-log">Registro de auditoría</Anchor> | Revise la actividad de la cuenta para identificar accesos no autorizados: inicios de sesión, acciones de gestión de usuarios y llamadas API. |
 
-[![new-security-center.jpg](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)
+[![nuevo-centro-de-seguridad.jpg](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)
 
-**To access the Security Center:**
+**Para acceder al Centro de Seguridad:**
 
-* From the top bar, open the account menu (email address dropdown) > **Security center.**
+* Desde la barra superior, abra el menú de la cuenta (desplegable de dirección de correo electrónico) > **Centro de Seguridad.**
 
-<div data-zendesk-anchors="h_01HHVZ557KE2BC3RGKST2WP68Q=what-can-i-do-from-the-security-center" />
+<div data-zendesk-anchors="what-can-i-do-from-the-security-center=qu%C3%A9-puedo-hacer-desde-el-centro-de-seguridad h_01HHVZ557KE2BC3RGKST2WP68Q=qu%C3%A9-puedo-hacer-desde-el-centro-de-seguridad" />

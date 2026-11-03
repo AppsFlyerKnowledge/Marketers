@@ -1,20 +1,20 @@
 ---
-title: Platforms
+title: Plataformas
 excerpt: >-
-  Find out how to promote and measure the attribution of your apps according to
-  the platforms they belong to
+  Descubre cómo promocionar y medir la atribución de tus aplicaciones según las
+  plataformas a las que pertenecen
 table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2023-05-15T10:32:49Z'
   id: 15323134852497
-  locale: en-us
+  locale: es
   parent_section_id: 6551947798801
   type: section
-  url: https://support.appsflyer.com/hc/en-us/sections/15323134852497-Platforms
+  url: https://support.appsflyer.com/hc/es/sections/15323134852497-Plataformas
 ---
-- [Promoting CTV apps](/docs/promoting-ctv-apps)
-- [Promoting Console apps](/docs/promoting-console-apps)
-- [Promoting Desktop apps](/docs/promoting-desktop-apps)
-- [Promoting Web apps](/docs/promoting-web-apps)
+- [Promoción de aplicaciones de CTV](/docs/promoting-ctv-apps)
+- [Promoción de aplicaciones de consola](/docs/promoting-console-apps)
+- [Promoción de aplicaciones de escritorio](/docs/promoting-desktop-apps)
+- [Promoción de aplicaciones web](/docs/promoting-web-apps)

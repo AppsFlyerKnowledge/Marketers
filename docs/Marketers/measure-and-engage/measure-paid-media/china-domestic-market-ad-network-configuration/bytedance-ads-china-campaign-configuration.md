@@ -1,5 +1,5 @@
 ---
-title: ByteDance Ads China—campaign configuration
+title: Configuración de campañas de ByteDance Ads China
 metadata:
   keywords:
     - bytedance
@@ -14,183 +14,182 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-06-18T07:05:42Z'
-  edited_at: '2026-09-07T07:24:30Z'
+  edited_at: '2026-09-08T00:26:27Z'
   id: 115003019403
-  locale: en-us
+  locale: es
   section: China domestic market ad network configuration
   section_id: 6552066355601
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115003019403-ByteDance-Ads-China-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/115003019403
 ---
-> **At a glance:** ByteDance Ads China (Ocean Engine), an AppsFlyer integrated partner, is an Internet technology company operating several machine learning-enabled content platforms.
+> **En resumen:** ByteDance Ads China (Ocean Engine), un partner integrado de AppsFlyer, es una empresa de tecnología de Internet que opera varias plataformas de contenido habilitadas para aprendizaje automático.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> If you want to promote your Android Apps with ByteDance Ads China, you are required to send your OAID to AppsFlyer SDK according to the instructions in the <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">AppsFlyer SDK Integration - Android</Anchor>. Google Play service is blocked in China, OAID is the most popular Android Device ID for ad attribution.
+> Si deseas promocionar tus aplicaciones de Android con ByteDance Ads China, debes enviar tu OAID al SDK de AppsFlyer, de acuerdo con las instrucciones de <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">Integración del SDK de AppsFlyer - Android</Anchor>. El servicio Google Play está bloqueado en China, el OAID es el ID de dispositivo Android más popular para la atribución de anuncios.
 
-In addition to click-based mobile attribution, ByteDance Ads China also offers view-through attribution, which you can record with AppsFlyer.
+Además de la atribución móvil basada en clics, ByteDance Ads China también ofrece atribución por impresiones, que puedes registrar con AppsFlyer.
 
-To configure your campaigns with ByteDance Ads China, follow the steps below.
+Para configurar tus campañas con ByteDance Ads China, sigue los pasos a continuación.
 
-## Setting up ByteDance Ads China
+## Configuración de ByteDance Ads China
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace**.  
+   (**Para editar una integración existente:** Ve a la pestaña **Collaborate > Partner Integrations > Active integrations**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners.</Anchor>
 
-Tip
+Consejo
 
 > 👍 **Tip**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners.
-> * All the rest of the steps are either descriptive or **optional**.
+> * El paso <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> de la pestaña Integración es **obligatorio** para todos los partners.
+> * Todos los demás pasos son descriptivos u **opcionales**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partners
+### Activar los partners
 
-On the **first visit** here, you must toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-General Settings
+Configuración general
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
 [![](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)
 
-Toggle this to **ON** if you want to attribute view-through installs from ByteDance Ads China. The view-through lookback slider is available on the attribution link tab (described below).
+**Activa** este selector si deseas atribuir las instalaciones por impresiones desde ByteDance Ads China. El control deslizante de la ventana retrospectiva por impresiones está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to ByteDance Ads China following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a ByteDance Ads China luego de las instalaciones y reengagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 ![bytedance-default-postbacks.png](https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png)
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with ByteDance Ads China via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer con ByteDance Ads China a través de postbacks.
 
-1. Turn In-App Event Postbacks on.
-2. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner.
-3. Click **Add Event** to add an SDK Event to the list.
-4. Complete the following parameters:
+1. Activa Postbacks de eventos in-app.
+2. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+3. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+4. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Descripción |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without mapping the event name.</li></ul> |
-| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.</li><li>**All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, the user who performed it came from any media source.</li></ul> |
-| **including** | Select which event data to share with the partner in the postback:<ul><li>**No values & no revenue**: Send just the event itself without any parameters (values or revenue).</li><li>**Values & no revenue**: Send all the parameters **excluding** the revenue value.</li><li>**Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos de servidor a servidor.<br />**Consejo**: ¿No encuentras el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificarlo.</li><li>Escríbelo en **Evento de AppsFlyer**, y luego haz clic en **Crear personalizado**. Leer más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizada.</Anchor></li></ul> |
+| **Asignado al evento de partner** | El ID o nombre único de cada evento, tal y como lo defina el partner. Existen varias configuraciones de asignación:<ul><li>**Campo de texto:** obtén el ID del evento correspondiente del partner.</li><li>**Cuadro desplegable:** selecciona el evento de AppsFlyer predefinido más adecuado.</li><li>**Como está**: envía los eventos tal como están, sin asignar el nombre del evento.</li></ul> |
+| **Para usuarios de** | Selecciona la opción de envío para el evento:<ul><li>**Solo este partner**: envía postbacks solo cuando el evento se atribuya a este partner, es decir, el usuario que lo realizó provino de este partner.</li><li>**Todas las fuentes de medios, incluidas las orgánicas**: envía postbacks para eventos atribuidos a cualquier partner y para eventos orgánicos, es decir, el usuario que lo realizó provino de cualquier fuente de medios.</li></ul> |
+| **Incluyendo** | Selecciona los datos del evento que se van a compartir con el partner en el postback:<ul><li>**Sin valores y sin ingresos**: envía solo el evento en sí sin ningún parámetro (valores o ingresos).</li><li>**Valores y sin ingresos**: envía todos los parámetros **excluyendo** el valor de los ingresos.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de los ingresos (si existe en el evento).</li></ul> |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlace de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes usar un enlace de una sola plataforma o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros del enlace de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
-### Click attribution link
+### Enlace de atribución de clics
 
-Once you have generated the attribution link, complete the campaign setup process on the ByteDance Ads China site.
+Una vez que haya generado el enlace de atribución, completa el proceso de configuración de la campaña en el sitio de ByteDance Ads China.
 
-**1. Create Conversion Tracking in Ocean Engine.**
+**1. Crear seguimiento de conversiones en Ocean Engine.**
 
-Log in to Ocean Engine ([https://ad.oceanengine.com/](https://ad.oceanengine.com/)) > **Library** > **Conversion Tracking**.
+Inicia sesión en Ocean Engine ([https://ad.oceanengine.com/](https://ad.oceanengine.com/)) > **Library (Biblioteca)** > **Conversion Tracking (Seguimiento de conversiones)**.
 
 ![OE_dashboard_1.png](https://files.readme.io/fda140ac7e3023033880b04ed500a675ae78187e4eb694ee200922b729ab119f-50612185108497.png)
 
-Click on **Tracking application** and create a **New Application Transformation**.
+Haz clic en **Tracking application (Aplicación de seguimiento)** y crea una **New Application Transformation (Nueva transformación de aplicación)**.
 
 ![OE_dashboard_2.png](https://files.readme.io/dbf0c13c23d21d08c195a4ab747e5de0986cb01f5ebde98f6c701ce731480958-50612185109009.png)
 
-Click the **API** method.
+Haz clic en el método **API**.
 
 ![OE_dashboard3.png](https://files.readme.io/70e7f6ca01c532fafb8f2ab7d31d6de51494f11749329c1c1333d1da6f28f284-50612185110417.png)
 
-In the Monitoring link part, enter AppsFlyer click attribution link and/or impression attribution link.
+En la parte del enlace de monitoreo, introduce el enlace de atribución de clics de AppsFlyer y/o el enlace de atribución de impresiones.
 
 ![dashboard4.png](https://files.readme.io/d36ec92a03062fc7ee169bb1ff3863722343577f3ee2b12779065b3e52731348-50612201124369.png)
 
-**2. Finish the Attribution Test Following the Instructions on the Website**.
+2. Finaliza la prueba de atribución siguiendo las instrucciones del sitio web.
 
-**3. Create an Ad Campaign with the Newly Created Conversion**.
+**3. Crea una campaña publicitaria con la conversión recién creada**.
 
-Go to **New Ad** >> **Set Budget and Bid** select the conversion you created for this app.
+Ve a **New Ad (Nuevo anuncio)** >> **Set Budget and Bid (Establecer presupuesto y oferta)** y selecciona la conversión que creaste para esta aplicación.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costo">
 
-AppsFlyer gets cost details by API. Note that AppsFlyer doesn't support the ad-level cost data for ByteDance, except for campaigns running on the v1.0 ByteDance system.
+AppsFlyer obtiene los detalles de los costos por API. Ten en cuenta que AppsFlyer no admite los datos de costos a nivel de anuncios para ByteDance, excepto para las campañas que se ejecutan en el sistema ByteDance v1.0.
 
-### API dimensions supported
+### Dimensiones API admitidas
 
-| Geo | Media source | Campaign | Adset | Ad | Other |
+| Geolocalización | Fuente de medios | Campaña | Conjunto de anuncios | Anuncio | Otros |
 | --- | --- | --- | --- | --- | --- |
-| Yes | - | Yes | Yes | No<br /><br />(Ads are only supported for v1.0 ByteDance campaigns) | - |
+| Sí | - | Sí | Sí | No<br /><br />(Los anuncios solo son compatibles con las campañas de ByteDance v1.0) | - |
 
-**To enable ByteDance Ads China cost API**:
+**Para habilitar la API de costos de ByteDance Ads China**:
 
-1. In the integrated partner Cost tab, enable ***Get Cost Data***.
-2. Log in to ByteDance Ads China.
-3. Click ***Save Cost***.
-   * You have successfully completed the procedure. API is active. AppsFlyer collects data from the partner 6 times a day, on average once every four hours.
-   * The cost tab shows the status of your cost integration and the last time AppsFlyer managed to pull matching cost data.
+1. En la pestaña del partner integrado Costo , habilita ***Obtener Costo Data***.
+2. Inicia sesión en ByteDance Ads China.
+3. Haz clic ***Guardar Costo***.
+   * Has completado con éxito el procedimiento. La API está activa. AppsFlyer recopila datos del partner 6 veces al día, en media, una vez cada cuatro horas.
+   * La pestaña de costos muestra el estado de integración de tus costos y la última vez que AppsFlyer logró extraer datos de costos coincidentes.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de ingresos por publicidad">
 
-This section is relevant if you are acting as a publisher, displaying ads of the partner to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources, to find the most profitable sources for you.
+Esta sección es pertinente si actúas como publisher y muestras anuncios del partner a tus usuarios. Como tal, con seguridad te gustaría medir el nivel de engagement de tus usuarios adquiridos a partir de distintas fuentes, a fin de identificar las fuentes que te resultan más rentables.
 
-**To enable the ad revenue API**:
+**Para habilitar la API de ingresos por publicidad**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">estas instrucciones de integración</Anchor>.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant ByteDance Ads China, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for ByteDance Ads China, the permissions tab is active and you can grant control to ByteDance Ads China.
+En esta pestaña, puedes seleccionar los permisos que deseas otorgar a ByteDance Ads China, independientemente de si el partner actúa como red de publicidad, agencia o ambas. Ten en cuenta que incluso si la atribución está deshabilitada para ByteDance Ads China, la pestaña de permisos está activa y puedes otorgar el control a ByteDance Ads China.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
 
-### Ad network permissions
+### Permisos de la red de publicidad
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos*a** - solo a los datos de ingresos atribuidos al partner
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJR1HREQDCQDN6JZRPD356VS=note h_01HJR1HREQ6YAW1WPX2BTZS2R7=setting-up-bytedance-ads-china h_01HJR1HRERBBZFKBHH78BK6QW2=integration-tab h_01HJR1HRER22XX94R1WEQK60GJ=activate-partners h_01HJR1HRERMXHAAGXEFJS4ZS8C=default-postbacks inapp-events-settings=in-app-events-settings h_01HJR1HRERF2Y205KP0J8HZFR3=in-app-events-settings h_01HJR1HRER391J6PD9Q0M1MW3F=attribution-link-tab h_01HJR1HRERCHNHQGX3X1E1ARDK=click-attribution-link h_01HJR1HRER1G4K3PQG1Z7M6CCX=cost-tab h_01HJR1HRES86BJM4ABQ0B414F1=api-dimensions-supported h_01HJR1HRES470MKXS1S08X202D=ad-revenue-tab h_01HJR1HRESJ7KNFZ9TDHZKESJ7=permissions-tab h_01HJR1HRESZCC6YV9D40YYSYX0=ad-network-permissions" />
+<div data-zendesk-anchors="h_01HJR1HREQDCQDN6JZRPD356VS=nota setting-up-bytedance-ads-china=configuraci%C3%B3n-de-bytedance-ads-china h_01HJR1HREQ6YAW1WPX2BTZS2R7=configuraci%C3%B3n-de-bytedance-ads-china h_01HJR1HRERBBZFKBHH78BK6QW2=integration-tab activate-partners=activar-los-partners h_01HJR1HRER22XX94R1WEQK60GJ=activar-los-partners default-postbacks=postbacks-predeterminados h_01HJR1HRERMXHAAGXEFJS4ZS8C=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HJR1HRERF2Y205KP0J8HZFR3=configuraci%C3%B3n-de-eventos-in-app h_01HJR1HRER391J6PD9Q0M1MW3F=attribution-link-tab click-attribution-link=enlace-de-atribuci%C3%B3n-de-clics h_01HJR1HRERCHNHQGX3X1E1ARDK=enlace-de-atribuci%C3%B3n-de-clics h_01HJR1HRER1G4K3PQG1Z7M6CCX=cost-tab api-dimensions-supported=dimensiones-api-admitidas h_01HJR1HRES86BJM4ABQ0B414F1=dimensiones-api-admitidas h_01HJR1HRES470MKXS1S08X202D=ad-revenue-tab h_01HJR1HRESJ7KNFZ9TDHZKESJ7=permissions-tab ad-network-permissions=permisos-de-la-red-de-publicidad h_01HJR1HRESZCC6YV9D40YYSYX0=permisos-de-la-red-de-publicidad" />

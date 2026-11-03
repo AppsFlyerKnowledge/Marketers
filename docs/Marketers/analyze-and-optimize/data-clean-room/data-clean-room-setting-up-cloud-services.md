@@ -1,5 +1,5 @@
 ---
-title: Data Clean Room—Setting up cloud services
+title: 'Data Clean Room: configuración de servicios en la nube'
 metadata:
   keywords:
     - Premium
@@ -13,89 +13,88 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2022-03-06T08:23:55Z'
-  edited_at: '2024-09-04T08:34:44Z'
+  edited_at: '2026-08-12T11:52:46Z'
   id: 4591167507217
-  locale: en-us
+  locale: es
   section: Data Clean Room
   section_id: 4591191779217
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4591167507217-Data-Clean-Room-Setting-up-cloud-services
+  url: https://support.appsflyer.com/hc/es/articles/4591167507217
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Set up one or more data warehouses (BigQuery, Snowflake) and/or cloud storage buckets (Amazon S3, GCS) to share data with the Data Clean Room and receive reports.
+> **De un vistazo:** Configura uno o más almacenes de datos (BigQuery, Snowflake) y/o buckets de almacenamiento en la nube (Amazon S3, GCS) para compartir datos con Data Clean Room y recibir reportes.
 
-## Overview
+## Visión general
 
-Preparing to use the Data Clean Room (DCR) involves setting up:
+La preparación para usar Data Clean Room (DCR) implica configurar:
 
-* The cloud services/locations from which the DCR reads first-party data from your systems (custom data sources). These locations are used to create **inbound connections.**
-* The cloud services/locations to which the DCR delivers reports after processing. These locations are used to create **outbound connections.**
+* Los servicios/ubicaciones en la nube desde los que DCR lee los datos de origen de tus sistemas (fuentes personalizadas). Estas ubicaciones se utilizan para crear **conexiones entrantes.**
+* Los servicios/ubicaciones en la nube a los que DCR entrega los reportes después del procesamiento. Estas ubicaciones se utilizan para crear **conexiones salientes.**
 
-Creating an inbound or outbound connection is a 2-step process:
+Crear una conexión entrante o saliente es un proceso de 2 pasos:
 
-* **Step #1 –** Use the interfaces of your selected cloud services to prepare them for use with the DCR (this article).
-* **Step #2 –** Use the AppsFlyer platform to connect them to the DCR. (See <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections">Data Clean Room—Working with connections</Anchor>).
+* **Paso 1:** Usa las interfaces de tus servicios en la nube seleccionados para prepararlos para su uso con DCR (este artículo).
+* **Paso 2:** Usa la plataforma AppsFlyer para conectarlos a DCR. (Consulta <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections">Data Clean Room: trabajar con conexiones</Anchor>).
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> See <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#source-requirements">Data Clean Room—Working with sources</Anchor> for complete information about data source requirements:
+> Consulta <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#requisitos-de-los-datos-de-las-fuentes">Data Clean Room: trabajar con fuentes</Anchor> para obtener información detallada sobre los requisitos de los datos de origen:
 >
-> * Data format *(for all data sources)*
-> * Table columns *(for data sources in data warehouses)*
-> * File name and format *(for data sources in cloud storage buckets)*
+> * Formato de los datos *(para todas las fuentes)*
+> * Columnas de la tabla *(para fuentes en almacenes de datos)*
+> * Nombre y formato del archivo *(para fuentes en buckets de almacenamiento en la nube)*
 
-### Supported cloud services
+### Servicios en la nube compatibles
 
-Two types of cloud services are supported for inbound and outbound connections to the DCR:
+Se admiten dos tipos de servicios en la nube para las conexiones entrantes y salientes a DCR:
 
-* **Data warehouses:** BigQuery and Snowflake
-* **Cloud storage buckets:** Amazon S3 (AWS) and GCS
+* **Almacenes de datos:** BigQuery y Snowflake
+* **Buckets de almacenamiento en la nube:** Amazon S3 (AWS) y GCS
 
-You can use one or any combination of these services for inbound and outbound connections.
+Puedes usar uno o cualquier combinación de estos servicios para conexiones entrantes y salientes.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * If you will be using multiple custom data sources for a single report, they must be located in cloud storage buckets.
-> * It's very common to use the same cloud storage bucket on Amazon S3 or GCS for both inbound and outbound connections. Be sure to follow the [special instructions for that setup](/docs/data-clean-room-setting-up-cloud-services#setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections).
+> * Si vas a utilizar varias fuentes personalizadas para un solo reporte, deben ubicarse en buckets de almacenamiento en la nube.
+> * Es muy común usar el mismo bucket de almacenamiento en la nube en Amazon S3 o GCS tanto para conexiones entrantes como salientes. Asegúrate de seguir las [instrucciones específicas para esa configuración](/docs/data-clean-room-setting-up-cloud-services#configuración-del-mismo-bucket-de-almacenamiento-en-la-nube-para-conexiones-entrantes-y-salientes).
 
-## Setting up cloud services for inbound connections
+## Configuración de servicios en la nube para conexiones entrantes
 
-Prepare your selected cloud services for use with DCR inbound connections according to the instructions in the following tabs.
+Prepara tus servicios en la nube seleccionados para su uso con conexiones entrantes de DCR, de acuerdo con las instrucciones de las siguientes pestañas.
 
-### Data warehouses – BigQuery and Snowflake
+### Almacenes de datos: BigQuery y Snowflake
 
 <div id="bigquery-inbound" />
 
 <Accordion title="BigQuery">
 
-**Note:** The following procedure must be performed by your Google Cloud admin.
+**Nota:** El siguiente procedimiento debe ser realizado por tu administrador de Google Cloud.
 
-**To create a dataset and grant the DCR permissions:**
+**Para crear un conjunto de datos y otorgar permisos a DCR:**
 
-1. Log in to your Google Cloud console.
-2. Go to the BigQuery page.
-3. In a new or existing Google Cloud project, create a dataset for the exclusive use of the DCR:
-   1. In the **left-side** panel, click the **View actions** button <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> to the right of the project ID.
-   2. Select **Create dataset.**
+1. Inicia sesión en tu consola de Google Cloud.
+2. Ve a la página de BigQuery.
+3. En un proyecto nuevo o existente de Google Cloud, crea un conjunto de datos para el uso exclusivo de DCR:
+   1. En el panel **izquierdo**, haz clic en el botón **View actions (Ver acciones)** <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> a la derecha del ID del proyecto.
+   2. Selecciona **Create dataset (Crear conjunto de datos).**
 
       <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
-   3. In the **right-side** panel that opens, enter the name of the dataset and select other options as you require.
-      * You can use any name that suits you – using letters, numbers, and underscores (\_) only.
-        * **Recommended:** Use a name that indicates the dataset is being used for an inbound connection.
-      * It is strongly recommended **NOT** to use the **Enable table expiration** option since the DCR would be unable to read the sources after the tables expire.
-   4. Click the <Image alt="BQ_create_dataset_button.png" src="https://files.readme.io/242c16aaa7e7f1f96b3392452260fa1c1987a8ebfd276c36630a028baa245b16-13879858133137.png" width="88px" /> button.
-4. Grant the DCR permissions to the dataset:
-   1. In the **left-side** panel, click the **View actions** button <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> to the right of the dataset you created.
-   2. Select **Share.**
-   3. In the **right-side** panel that opens, click the ![BQ_add_principal_button.png](https://files.readme.io/77179cb4b9c81faa7cdc13397920699186df15fd1722247ccd8cbecb0cc43bce-13879857984017.png) button.
-   4. In the **Add principals** section, enter the following account in the **New principals** field:  
+   3. En el panel que se abre en el **lado derecho**, introduce el nombre del conjunto de datos y selecciona otras opciones según tus necesidades.
+      * Puedes usar el nombre que más te convenga, usando solo letras, números y guiones bajos (\_).
+        * **Recomendado:** Utiliza un nombre que indique que el conjunto de datos se está utilizando para una conexión entrante.
+      * Se recomienda encarecidamente **NO** usar la opción **Enable table expiration (Habilitar caducidad de tabla)**, ya que DCR no sería capaz de leer las fuentes después de que caduquen las tablas.
+   4. Haz clic en el botón <Image alt="BQ_create_dataset_button.png" src="https://files.readme.io/242c16aaa7e7f1f96b3392452260fa1c1987a8ebfd276c36630a028baa245b16-13879858133137.png" width="88px" />.
+4. Otorga los permisos de DCR al conjunto de datos:
+   1. En el panel **izquierdo**, haz clic en el botón **View actions (Ver acciones)** <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> a la derecha del conjunto de datos que creaste.
+   2. Selecciona **Share (Compartir)**.
+   3. En el panel que se abre en el **lado derecho**, haz clic en el botón ![BQ_add_principal_button.png](https://files.readme.io/77179cb4b9c81faa7cdc13397920699186df15fd1722247ccd8cbecb0cc43bce-13879857984017.png).
+   4. En la sección **Add principals** (Agregar principales), introduce la siguiente cuenta en el campo **New principals** (Nuevos principales):  
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
-   5. In the **Assign roles** section, select **BigQuery > BigQuery Data Viewer.**
+   5. En la sección **Assign roles (Asignar roles)**, selecciona **BigQuery > BigQuery Data Viewer (Visualizador de datos de BigQuery).**
 
       <Image alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
-   6. Click **Save.**
-   7. Click **CLOSE** to close the right-side panel.
+   6. Haz clic en **Guardar**.
+   7. Haz clic en **CLOSE (CERRAR)** para cerrar el panel del lado derecho.
 
 </Accordion>
 
@@ -103,78 +102,78 @@ Prepare your selected cloud services for use with DCR inbound connections accord
 
 <Accordion title="Snowflake">
 
-**Note:** The following procedure must be performed by a Snowflake **Accountadmin.**
+**Nota:** El siguiente procedimiento debe ser realizado por un **administrador de cuenta** de Snowflake.
 
-**To create a private share for use by the DCR:**
+**Para crear un recurso compartido privado para su uso por parte de DCR:**
 
-1. <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface">Log in to the Snowflake account</Anchor> that contains the data you want to share with the DCR.
-2. Switch your role to **Accountadmin.**
-3. From the left-side panel, select **Private Sharing.**
-4. In the page that opens, select the **Shared By Your Account** tab.
+1. <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface">Inicia sesión en la cuenta de Snowflake</Anchor> que contiene los datos que deseas compartir con DCR.
+2. Cambia tu rol a **Accountadmin** (Administrador de cuenta).
+3. En el panel izquierdo, selecciona **Private Sharing (Compartir en privado).**
+4. En la página que se abre, selecciona la pestaña **Shared By Your Account (Compartido por tu cuenta)**.
 
    <Image alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
-5. Click the **Share** button. From the list that opens, select **Create a Direct Share.**
+5. Haz clic en el botón **Share (Compartir)**. En la lista que se abre, selecciona **Create a Direct Share (Crear una compartición directa).**
 
    <Image alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
-6. Select the tables and/or views that you want to share with the DCR, then click **Done.**
-7. According to your needs, change the **Secure Share Identifier** and add an optional description.
-8. In the field **Add accounts in your region by name**, enter one of the following AppsFlyer Snowflake accounts, according to your Snowflake account region:
+6. Selecciona las tablas y/o vistas que desees compartir con DCR y, a continuación, haz clic en **Done (Listo).**
+7. Según tus necesidades, cambia el **Secure Share Identifier (Identificador de compartición segura)** y agrega una descripción opcional.
+8. En el campo **Add accounts in your region by name (Agrega cuentas en tu región por nombre)**, introduce una de las siguientes cuentas de Snowflake de AppsFlyer, según la región de tu cuenta de Snowflake:
 
-| Region | AppsFlyer account |
+| Región | Cuenta de AppsFlyer |
 | --- | --- |
 | EU West (eu-west-1) | QL63117 |
 | US East - N. Virginia (us-east-1) | MWB70410 |
 | US East - Ohio (us-east-2) | BM15378 |
 
-9. Click the **Create Share** button.
+9. Haz clic en el botón **Create Share (Crear compartición)** .
 
 </Accordion>
 
-### Cloud storage buckets – Amazon S3 and GCS
+### Buckets de almacenamiento en la nube: Amazon S3 y GCS
 
-You can use one or more buckets for uploading data to the DCR (on Amazon S3, GCS, or both). However, in most cases, the easiest-to-manage structure includes a single bucket on a single cloud service.
+Puedes utilizar uno o más buckets para cargar datos en DCR (en Amazon S3, GCS o ambos). Sin embargo, en la mayoría de los casos, la estructura más fácil de administrar incluye un solo bucket en un solo servicio en la nube.
 
-* You can set up the same bucket for use with both inbound and outbound connections by following [these instructions](/docs/data-clean-room-setting-up-cloud-services#setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections).
+* Puedes configurar el mismo bucket para su uso con conexiones entrantes y salientes siguiendo [estas instrucciones](/docs/data-clean-room-setting-up-cloud-services#configuración-del-mismo-bucket-de-almacenamiento-en-la-nube-para-conexiones-entrantes-y-salientes).
 
-<span id="both-cloud-services"></span>The following requirements are relevant to buckets on both cloud services:
+<span id="both-cloud-services"></span>Los siguientes requisitos son relevantes para los buckets de ambos servicios en la nube:
 
-* **Use:** The bucket must be for the exclusive use of AppsFlyer Data Clean Room. In other words, no other service can write data to the bucket.
-* **Permissions:** AppsFlyer DCR service must be given bucket permissions. See instructions for granting these permissions in the tabs for each cloud service below.
-* **Name:** The bucket name must begin with `af-dcr-` or `af-datalocker-`
-  * Example: `af-dcr-example-bucket`
-* <span id="dcr-naming-requirements"></span>**DCR naming requirements:** The following naming requirements apply to all DCR data entities (buckets, folders, and files):
-  * Maximum length: 200 characters
-  * Valid characters:
-    * letters `(A-Z, a-z)`
-    * numbers `(0-9)`, *cannot be the first character of a name*
-    * hyphens `(-)`, *cannot be the first character of a name*
-    * Invalid characters:
-      * spaces
-      * all other symbols or special characters
-    * Characters used for special purposes only:
-      * * equal signs `(=)`, *only where required in* <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version">date and version folder names</Anchor>
-        * underscores `(_)`, *only where used to identify the parts of* <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#file-format">multi-part GZIP files</Anchor> *or for naming* <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#_success-files">\_SUCCESS files</Anchor>
-        * dots `(.)`, *only directly before filename extensions* `(.csv, .gzip)`
+* **Uso:** el bucket debe ser para uso exclusivo de Data Clean Room de AppsFlyer. En otras palabras, ningún otro servicio puede escribir datos en el bucket.
+* **Permisos:** el servicio DCR de AppsFlyer debe tener permisos de bucket. Consulta las instrucciones para otorgar estos permisos en las pestañas de cada servicio en la nube a continuación.
+* **Nombre:** el nombre del bucket debe comenzar por `af-dcr-` o `af-datalocker-`.
+  * Ejemplo: `af-dcr-example-bucket`
+* <span id="dcr-naming-requirements"></span>**Requisitos de nomenclatura de DCR:** los siguientes requisitos de nomenclatura se aplican a todas las entidades de datos de DCR (buckets, carpetas y archivos):
+  * Longitud máxima: 200 caracteres
+  * Caracteres válidos:
+    * letras `(A-Z, a-z)`
+    * números `(0-9)`, *no pueden ser el primer carácter de un nombre*
+    * guiones `(-)`, *no pueden ser el primer carácter de un nombre*
+    * Caracteres inválidos:
+      * espacios
+      * todos los demás símbolos o caracteres especiales
+    * Caracteres utilizados solo con fines especiales:
+      * * signos de igual `(=)`, *solo cuando se requiera en* <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version">nombres de carpetas de fechas y versiones</Anchor>
+        * guiones bajos `(_)`, *solo cuando se utilizan para identificar las partes de* <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#file-format">archivos GZIP de varias partes</Anchor> *o para nombrar* <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#_success-files">archivos \_SUCCESS</Anchor>
+        * puntos `(.)`, *solo directamente antes de las extensiones de nombre de archivo* `(.csv, .gzip)`
 
 <div id="amazon-s3-inbound" />
 
 <Accordion title="Amazon S3">
 
-**Note:** The following procedure must be performed by your AWS admin.
+**Nota:** El administrador de AWS debe llevar a cabo el siguiente procedimiento.
 
-**To create a bucket and grant AppsFlyer permissions:**
+**Para crear un bucket y otorgar permisos a AppsFlyer:**
 
-1. Log in to the AWS console.
-2. Go to the S3 service.
-3. Create the bucket:
-   1. Click **Create bucket.**
-   2. Complete the **Bucket name**, starting with `af-dcr-` or `af-datalocker-` and followed by your text (according to the [DCR naming requirements](/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements) above).
-   3. Click **Create bucket.**
-4. <span id="step-4"></span>Grant AppsFlyer bucket permissions:
-   1. Select the bucket you created.
-   2. Go to the **Permissions** tab.
-   3. In the **Bucket policy** section, click **Edit.** The **Edit bucket policy** window opens.
-   4. <span id="code-snippet"></span>Paste the following code snippet into the window.
+1. Inicia sesión en la consola de AWS.
+2. Ve al servicio S3.
+3. Crea el bucket:
+   1. Haz clic en **Crear bucket**.
+   2. Completa el **Bucket name (Nombre del bucket)**, que debe comenzar con `af-dcr-` o `af-datalocker-`, y seguido de tu texto (de acuerdo con los [requisitos de nomenclatura de DCR](/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements) anteriores).
+   3. Haz clic en **Crear bucket**.
+4. <span id="step-4"></span>Otorga permisos de bucket a AppsFlyer:
+   1. Selecciona el bucket que creaste.
+   2. Ve a la pestaña **Permisos**.
+   3. En la sección **Política del bucket**, haz clic en **Editar.** Se abre la ventana **Editar política de bucket**.
+   4. <span id="code-snippet"></span>Pega el siguiente fragmento de código en la ventana.
 
       ```json
       {
@@ -201,9 +200,9 @@ You can use one or more buckets for uploading data to the DCR (on Amazon S3, GCS
         ]
       }
       ```
-5. In the snippet, replace *`af-dcr-mybucket`* (in the 2 lines in which it appears) with the name of the bucket you created.  
-   **Caution!** *When replacing the bucket name in the snippet, be sure not to overwrite* `/*` *in the second line in which the bucket name appears.*
-6. Click **Save changes.**
+5. En el fragmento, reemplaza *`af-dcr-mybucket`* (en las 2 líneas en las que aparece) con el nombre del bucket que creaste.  
+   **¡Importante!** **Precaución**: *Cuando sustituyas el nombre del bucket en el fragmento, asegúrate de no sobrescribir* `/*` *en la segunda línea en la que aparece el nombre del bucket.*
+6. Haz clic en **Guardar cambios**.
 
 </Accordion>
 
@@ -211,72 +210,72 @@ You can use one or more buckets for uploading data to the DCR (on Amazon S3, GCS
 
 <Accordion title="GCS">
 
-**Note:** The following procedure must be performed by your Google Cloud admin.
+**Nota:** El siguiente procedimiento debe ser realizado por tu administrador de Google Cloud.
 
-**To create a bucket and grant AppsFlyer permissions:**
+**Para crear un bucket y otorgar permisos a AppsFlyer:**
 
-1. Log in to your GCS console.
-2. Go to the Cloud Storage Browser page.
-3. Create the bucket:
-   1. Click **Create bucket.**
-   2. Enter your bucket information on the **Create a bucket** page. Include the bucket name, starting with `af-dcr-` or `af-datalocker-` and followed by your text (according to the [DCR naming requirements](/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements) above).
-   3. Click **Continue.**
-   4. Click **Create.**
-4. Grant AppsFlyer bucket permissions:
-   1. Select the bucket you created.
-   2. Go to the **Permissions** tab.
-   3. In the **Permissions** section, click **+ Add.**  
-      The **Add members** window opens.
-   4. In the **New members** box, enter the following account:  
+1. Inicia sesión en tu consola de GCS.
+2. Ve a la página de Cloud Storage Browser.
+3. Crea el bucket:
+   1. Haz clic en **Create bucket** (Crear bucket).
+   2. Introduce la información de tu bucket en la página **Create a bucket** (Crear un bucket). Incluye el nombre del bucket, que debe comenzar con `af-dcr-` o `af-datalocker-`, y seguido de tu texto (de acuerdo con los [requisitos de nomenclatura de DCR](/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements) anteriores).
+   3. Haz clic en **Continue** (Continuar).
+   4. Haz clic en **Create** (Crear).
+4. Otorga permisos de bucket a AppsFlyer:
+   1. Selecciona el bucket que creaste.
+   2. Ve a la pestaña **Permisos**.
+   3. En la sección **Permissions** (Permisos), haz clic en **+ Add** (Agregar).  
+      Se abre la ventana **Add members** (Agregar miembros).
+   4. En el cuadro **New members** (Nuevos miembros), introduce la siguiente cuenta:  
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
-   5. From the **Role** list, select **Cloud storage** > **Storage Admin.**  
+   5. En la lista **Role** (Rol), selecciona **Cloud Storage** (Almacenamiento en la nube) > **Storage Admin** (Administrador de almacenamiento).  
 
       ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
-   6. Click **Save.**
+   6. Haz clic en **Guardar**.
 
 </Accordion>
 
-## Setting up cloud services for outbound connections
+## Configuración de servicios en la nube para conexiones salientes
 
-The DCR delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>.
+DCR entrega reportes a tus servicios en la nube seleccionados utilizando <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>.
 
-* **Note:** Receiving DCR reports does not require a premium subscription to Data Locker. If you are interested in receiving other AppsFlyer reports via Data Locker, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
+* **Nota:** Recibir reportes de DCR no requiere una suscripción Premium a Data Locker. Si estás interesado en recibir otros reportes de AppsFlyer a través de Data Locker, comunícate con tu CSM o envía un correo electrónico a [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
-Your DCR reports can be delivered to one or more locations on your cloud services (whether or not you use the same services for inbound connections). Prepare them for use with outbound connections according to the instructions in the following tabs.
+Tus reportes de DCR se pueden entregar a una o más ubicaciones de tus servicios en la nube (independientemente de que utilices o no los mismos servicios para las conexiones entrantes). Prepáralos para su uso con conexiones salientes de acuerdo con las instrucciones de las siguientes pestañas.
 
-### Data warehouses – BigQuery and Snowflake
+### Almacenes de datos: BigQuery y Snowflake
 
 <div id="bigquery-outbound" />
 
 <Accordion title="BigQuery">
 
-**Note:** The following procedure must be performed by your Google Cloud admin.
+**Nota:** El siguiente procedimiento debe ser realizado por tu administrador de Google Cloud.
 
-**To create a dataset and grant Data Locker permissions:**
+**Para crear un conjunto de datos y otorgar permisos a Data Locker:**
 
-1. Log in to your Google Cloud console.
-2. Go to the BigQuery page.
-3. In a new or existing Google Cloud project, create a dataset for the exclusive use of Data Locker:
-   1. In the **left-side** panel, click the **View actions** button <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> to the right of the project ID.
-   2. Select **Create dataset.**
+1. Inicia sesión en tu consola de Google Cloud.
+2. Ve a la página de BigQuery.
+3. En un proyecto nuevo o existente de Google Cloud, crea un conjunto de datos para el uso exclusivo de Data Locker:
+   1. En el panel **izquierdo**, haz clic en el botón **View actions (Ver acciones)** <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> a la derecha del ID del proyecto.
+   2. Selecciona **Create dataset (Crear conjunto de datos).**
 
       <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
-   3. In the **right-side** panel that opens, enter the name of the dataset and select other options as you require.
-      * You can use any name that suits you – using letters, numbers, and underscores (\_) only.
-        * **Recommended:** Use a name that indicates the dataset is being used for an outbound connection.
-      * It is strongly recommended **NOT** to use the **Enable table expiration** option since Data Locker would be unable to write reports to the dataset after the tables expire.
-   4. Click the <Image alt="BQ_create_dataset_button.png" src="https://files.readme.io/242c16aaa7e7f1f96b3392452260fa1c1987a8ebfd276c36630a028baa245b16-13879858133137.png" width="88px" /> button.
-4. Grant Data Locker permissions to the dataset:
-   1. In the **left-side** panel, click the **View actions** button <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> to the right of the dataset you created.
-   2. Select **Share.**
-   3. In the **right-side** panel that opens, click the ![BQ_add_principal_button.png](https://files.readme.io/77179cb4b9c81faa7cdc13397920699186df15fd1722247ccd8cbecb0cc43bce-13879857984017.png) button.
-   4. In the **Add principals** section, enter the following account in the **New principals** field:  
+   3. En el panel que se abre en el **lado derecho**, introduce el nombre del conjunto de datos y selecciona otras opciones según tus necesidades.
+      * Puedes usar el nombre que más te convenga, usando solo letras, números y guiones bajos (\_).
+        * **Recomendado:** Utiliza un nombre que indique que el conjunto de datos se está utilizando para una conexión saliente.
+      * Se recomienda encarecidamente **NO** usar la opción **Enable table expiration (Habilitar caducidad de tabla)**, ya que Data Locker no sería capaz de escribir los reportes en el conjunto de datos después de que caduquen las tablas.
+   4. Haz clic en el botón <Image alt="BQ_create_dataset_button.png" src="https://files.readme.io/242c16aaa7e7f1f96b3392452260fa1c1987a8ebfd276c36630a028baa245b16-13879858133137.png" width="88px" />.
+4. Otorgar permisos de Data Locker al conjunto de datos:
+   1. En el panel **izquierdo**, haz clic en el botón **View actions (Ver acciones)** <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> a la derecha del conjunto de datos que creaste.
+   2. Selecciona **Share (Compartir)**.
+   3. En el panel que se abre en el **lado derecho**, haz clic en el botón ![BQ_add_principal_button.png](https://files.readme.io/77179cb4b9c81faa7cdc13397920699186df15fd1722247ccd8cbecb0cc43bce-13879857984017.png).
+   4. En la sección **Add principals** (Agregar principales), introduce la siguiente cuenta en el campo **New principals** (Nuevos principales):  
       `datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com`
-   5. In the **Assign roles** section, select **BigQuery > BigQuery Data Editor.**
+   5. En la sección **Assign roles (Asignar roles)**, selecciona **BigQuery > BigQuery Data Editor (Editor de datos de BigQuery).**
 
       <Image alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
-   6. Click **Save.**
-   7. Click **CLOSE** to close the right-side panel.
+   6. Haz clic en **Guardar**.
+   7. Haz clic en **CLOSE (CERRAR)** para cerrar el panel del lado derecho.
 
 </Accordion>
 
@@ -284,23 +283,23 @@ Your DCR reports can be delivered to one or more locations on your cloud service
 
 <Accordion title="Snowflake">
 
-The procedure for preparing Snowflake for outbound connections is completed in combination with the <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#snowflake-outbound">procedure for creating the outbound connection</Anchor> itself.
+El procedimiento para preparar Snowflake para conexiones salientes se completa en combinación con el <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#snowflake-outbound">procedimiento para crear la propia conexión saliente</Anchor>.
 
 </Accordion>
 
-### Cloud storage buckets – Amazon S3 and GCS
+### Buckets de almacenamiento en la nube: Amazon S3 y GCS
 
-The procedure for preparing cloud storage buckets for outbound connections is very similar to the one preparing them for [inbound connections](/docs/data-clean-room-setting-up-cloud-services#setting-up-cloud-services-for-inbound-connections) (including the instructions relevant to both cloud storage services).
+El procedimiento para preparar buckets de almacenamiento en la nube para conexiones salientes es muy similar al de preparación para [conexiones entrantes](/docs/data-clean-room-setting-up-cloud-services#configuración-de-servicios-en-la-nube-para-conexiones-entrantes) (incluyendo las instrucciones relevantes para ambos servicios de almacenamiento en la nube).
 
-The instructions in the tabs below apply when you are using a bucket for **outbound connections only.**
+Las instrucciones de las pestañas a continuación se aplican cuando estás utilizando un bucket **solo para conexiones salientes.**
 
-* If you will be using the same bucket for both inbound and outbound connections, follow the [special instructions for that setup](/docs/data-clean-room-setting-up-cloud-services#setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections).
+* Si vas a utilizar el mismo bucket tanto para conexiones entrantes como salientes, sigue las [instrucciones específicas para dicha configuración](/docs/data-clean-room-setting-up-cloud-services#configuración-del-mismo-bucket-de-almacenamiento-en-la-nube-para-conexiones-entrantes-y-salientes).
 
 <div id="amazon-s3-outbound" />
 
 <Accordion title="Amazon S3">
 
-Follow the instructions for creating an [Amazon S3 bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (with no changes to that procedure).
+Sigue las instrucciones para crear un [bucket de Amazon S3 para conexiones entrantes](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (sin cambios en ese procedimiento).
 
 </Accordion>
 
@@ -308,42 +307,42 @@ Follow the instructions for creating an [Amazon S3 bucket for inbound connection
 
 <Accordion title="GCS">
 
-Follow the instructions for creating a [GCS bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound). In step #4 of that procedure, enter the following account in the **New members** box:  
+Sigue las instrucciones para crear un [bucket de GCS para conexiones entrantes](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound). En el paso 4 de ese procedimiento, introduce la siguiente cuenta en la casilla **New members (Nuevos miembros)**:  
 `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
 
 </Accordion>
 
-## Setting up the same cloud storage bucket for both inbound and outbound connections
+## Configuración del mismo bucket de almacenamiento en la nube para conexiones entrantes y salientes
 
-As previously mentioned, it's common to use the same bucket on Amazon S3 or GCS for both inbound and outbound connections.
+Como se mencionó anteriormente, es común usar el mismo bucket en Amazon S3 o GCS para las conexiones entrantes y salientes.
 
-The instructions for this setup vary only slightly from the [instructions for inbound connections](/docs/data-clean-room-setting-up-cloud-services#setting-up-cloud-services-for-inbound-connections). They do differ, however, depending on whether you are:
+Las instrucciones para esta configuración varían solo ligeramente de las [instrucciones para las conexiones entrantes](/docs/data-clean-room-setting-up-cloud-services#configuración-de-servicios-en-la-nube-para-conexiones-entrantes). Sin embargo, difieren en función de si vas a:
 
-* creating a new bucket for use with DCR inbound and outbound connections; ***or***
-* modifying a bucket previously used only for Data Locker to one now used for both inbound and outbound DCR connections
+* crear un nuevo bucket para su uso con conexiones entrantes y salientes de DCR; ***o***
+* modificar un bucket previamente usado solo para Data Locker a uno que ahora se usa para conexiones de DCR entrantes y salientes
 
-Instructions for both of these scenarios are included in the tabs below:
+Las instrucciones para ambos escenarios se incluyen en las pestañas a continuación:
 
 <div id="amazon-s3-inbound-outbound" />
 
 <Accordion title="Amazon S3">
 
-#### Creating a new bucket for inbound/outbound connections
+#### Creación de un nuevo bucket para conexiones entrantes/salientes
 
-Follow the instructions for creating an [Amazon S3 bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (with no changes to that procedure).
+Sigue las instrucciones para crear un [bucket de Amazon S3 para conexiones entrantes](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (sin cambios en ese procedimiento).
 
-#### Modifying an existing bucket previously used only for Data Locker
+#### Modificación de un bucket existente que se usaba anteriormente solo para Data Locker
 
-Modifying an existing bucket that you used previously only for Data Locker requires changing bucket permissions (to allow access by both DCR and Data Locker).
+Modificar un bucket existente que anteriormente usaste solo para Data Locker requiere cambiar los permisos del bucket (para permitir el acceso tanto por DCR como por Data Locker).
 
-**To modify bucket permissions:**
+**Para modificar los permisos de bucket:**
 
-1. Log in to the AWS console.
-2. Go to the S3 service.
-3. Select the bucket used previously only for Data Locker.
-4. Go to the **Permissions** tab.
-5. In the **Bucket policy** section, click **Edit.** The **Edit bucket policy** window opens.
-6. **Replace the contents** of the window with following code snippet:
+1. Inicia sesión en la consola de AWS.
+2. Ve al servicio S3.
+3. Selecciona el bucket usado anteriormente solo para Data Locker.
+4. Ve a la pestaña **Permisos**.
+5. En la sección **Política del bucket**, haz clic en **Editar.** Se abre la ventana **Editar política de bucket**.
+6. **Reemplaza el contenido** de la ventana con el siguiente fragmento de código:
 
    ```json
    {
@@ -371,9 +370,9 @@ Modifying an existing bucket that you used previously only for Data Locker requi
    }
    ```
 
-   * In the snippet, replace *`af-dcr-mybucket`* (in the 2 lines in which it appears) with the name of the bucket you created.
-   * **Caution!** *When replacing the bucket name in the snippet, be sure not to overwrite* `/*` *in the second line in which the bucket name appears.*
-7. Click **Save changes.**
+   * En el fragmento, reemplaza *`af-dcr-mybucket`* (en las 2 líneas en las que aparece) con el nombre del bucket que creaste.
+   * **¡Importante!** **Precaución**: *Cuando sustituyas el nombre del bucket en el fragmento, asegúrate de no sobrescribir* `/*` *en la segunda línea en la que aparece el nombre del bucket.*
+7. Haz clic en **Guardar cambios**.
 
 </Accordion>
 
@@ -381,31 +380,31 @@ Modifying an existing bucket that you used previously only for Data Locker requi
 
 <Accordion title="GCS">
 
-#### Creating a new bucket for inbound/outbound connections
+#### Creación de un nuevo bucket para conexiones entrantes/salientes
 
-Follow the instructions for creating a [GCS bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound). Modify step #4 of that procedure to enter the following **2 accounts** in the **New members** box:  
+Sigue las instrucciones para crear un [bucket de GCS para conexiones entrantes](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound). Modifica el paso 4 de ese procedimiento para introducir las siguientes **2 cuentas** en la casilla **New members (Nuevos miembros)**:  
 `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`  
 `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
 
-#### Modifying an existing bucket previously used only for Data Locker
+#### Modificación de un bucket existente que se usaba anteriormente solo para Data Locker
 
-Modifying an existing bucket that you used previously only for Data Locker requires changing bucket permissions (to allow access by both DCR and Data Locker).
+Modificar un bucket existente que anteriormente usaste solo para Data Locker requiere cambiar los permisos del bucket (para permitir el acceso tanto por DCR como por Data Locker).
 
-**To modify bucket permissions:**
+**Para modificar los permisos de bucket:**
 
-1. Log in to your GCS console.
-2. Go to the Cloud Storage Browser page.
-3. Select the bucket used previously only for Data Locker.
-4. Go to the **Permissions** tab.
-5. In the Permissions section, click **+ Add.**  
-   The **Add members** window opens.
-6. In the **New members** box, enter the following account:  
+1. Inicia sesión en tu consola de GCS.
+2. Ve a la página de Cloud Storage Browser.
+3. Selecciona el bucket usado anteriormente solo para Data Locker.
+4. Ve a la pestaña **Permisos**.
+5. En la sección de permisos, haz clic en **+ Add** (Agregar).  
+   Se abre la ventana **Add members** (Agregar miembros).
+6. En el cuadro **New members** (Nuevos miembros), introduce la siguiente cuenta:  
    `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
-7. From the **Role** list, select **Cloud storage** > **Storage Admin.**  
+7. En la lista **Role** (Rol), selecciona **Cloud Storage** (Almacenamiento en la nube) > **Storage Admin** (Administrador de almacenamiento).  
 
    ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
-8. Click **Save.**
+8. Haz clic en **Guardar**.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01J6Y2P4CKMZ3R8WZ4X76DZ6ZY=overview h_01J6Y2P4CMJ4CXJZ3EDDXQG4Y3=note h_01J6Y2P4CMNMTSPWDK9GGSDYMJ=supported-cloud-services h_01J6Y2P4CM8VDWCD5XH91DJPYX=important setting-up-cloud-services-inbound=setting-up-cloud-services-for-inbound-connections h_01J6Y2P4CM61DEXMWB626X25TT=setting-up-cloud-services-for-inbound-connections data-warehouses-inbound=data-warehouses--bigquery-and-snowflake h_01J6Y2P4CMDX64XXGNS7ZP3GKZ=data-warehouses--bigquery-and-snowflake h_01J6Y2P4CMY5DHFEFGHQQPAPK9=bigquery-inbound h_01J6Y2P4CMMZFYDZWK82F5J65W=snowflake-inbound cloud-storage-buckets-inbound=cloud-storage-buckets--amazon-s3-and-gcs h_01J6Y2P4CMCJDT2W6C52MF71TB=cloud-storage-buckets--amazon-s3-and-gcs h_01J6Y2P4CMS2JF9Z7F13XW485F=amazon-s3-inbound h_01J6Y2P4CM9Y9114CH1ESY0QPJ=gcs-inbound setting-up-cloud-services-outbound=setting-up-cloud-services-for-outbound-connections h_01J6Y2P4CMEEG6PNM2PMEYGQ3A=setting-up-cloud-services-for-outbound-connections data-warehouses-outbound=data-warehouses--bigquery-and-snowflake-1 h_01J6Y2P4CMNWQ0D3EZXJZZM1EY=data-warehouses--bigquery-and-snowflake-1 h_01J6Y2P4CM8MVS3SZAYE2YDV2T=bigquery-outbound h_01J6Y2P4CN97P8GCV314TQ91EE=snowflake-outbound cloud-storage-buckets-outbound=cloud-storage-buckets--amazon-s3-and-gcs-1 h_01J6Y2P4CNZ61PG9BTCVRFZ20K=cloud-storage-buckets--amazon-s3-and-gcs-1 h_01J6Y2P4CN4ZRAMQ2E3R4Q4KHS=amazon-s3-outbound h_01J6Y2P4CN39GT0QT6THFAA3ZY=gcs-outbound setting-up-cloud-services-inbound-outbound=setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections h_01J6Y2P4CN2ARMJKRSAFZNN59G=setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections h_01J6Y2P4CNKC9P1FKECHZJ6AXP=amazon-s3-inbound-outbound h_01J6Y2P4CN216K0VZSWRP699TF=creating-a-new-bucket-for-inboundoutbound-connections h_01J6Y2P4CNDW888XTMKAMZAFCS=modifying-an-existing-bucket-previously-used-only-for-data-locker h_01J6Y2P4CN0MEEKG0D2SKMDZVY=gcs-inbound-outbound creating-a-new-bucket-for-inboundoutbound-connections::e1cda9c8=creating-a-new-bucket-for-inboundoutbound-connections-1 h_01J6Y2P4CN336CRH1CWRJVCHHY=creating-a-new-bucket-for-inboundoutbound-connections-1 modifying-an-existing-bucket-previously-used-only-for-data-locker::ba0d4803=modifying-an-existing-bucket-previously-used-only-for-data-locker-1 h_01J6Y2P4CNYCTVGN6CH0748S24=modifying-an-existing-bucket-previously-used-only-for-data-locker-1" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01J6Y2P4CKMZ3R8WZ4X76DZ6ZY=visi%C3%B3n-general h_01J6Y2P4CMJ4CXJZ3EDDXQG4Y3=nota supported-cloud-services=servicios-en-la-nube-compatibles h_01J6Y2P4CMNMTSPWDK9GGSDYMJ=servicios-en-la-nube-compatibles h_01J6Y2P4CM8VDWCD5XH91DJPYX=importante setting-up-cloud-services-inbound=configuraci%C3%B3n-de-servicios-en-la-nube-para-conexiones-entrantes h_01J6Y2P4CM61DEXMWB626X25TT=configuraci%C3%B3n-de-servicios-en-la-nube-para-conexiones-entrantes data-warehouses-inbound=almacenes-de-datos-bigquery-y-snowflake h_01J6Y2P4CMDX64XXGNS7ZP3GKZ=almacenes-de-datos-bigquery-y-snowflake h_01J6Y2P4CMY5DHFEFGHQQPAPK9=bigquery-inbound h_01J6Y2P4CMMZFYDZWK82F5J65W=snowflake-inbound cloud-storage-buckets-inbound=buckets-de-almacenamiento-en-la-nube-amazon-s3-y-gcs h_01J6Y2P4CMCJDT2W6C52MF71TB=buckets-de-almacenamiento-en-la-nube-amazon-s3-y-gcs h_01J6Y2P4CMS2JF9Z7F13XW485F=amazon-s3-inbound h_01J6Y2P4CM9Y9114CH1ESY0QPJ=gcs-inbound setting-up-cloud-services-outbound=configuraci%C3%B3n-de-servicios-en-la-nube-para-conexiones-salientes h_01J6Y2P4CMEEG6PNM2PMEYGQ3A=configuraci%C3%B3n-de-servicios-en-la-nube-para-conexiones-salientes data-warehouses-outbound=almacenes-de-datos-bigquery-y-snowflake-1 h_01J6Y2P4CMNWQ0D3EZXJZZM1EY=almacenes-de-datos-bigquery-y-snowflake-1 h_01J6Y2P4CM8MVS3SZAYE2YDV2T=bigquery-outbound h_01J6Y2P4CN97P8GCV314TQ91EE=snowflake-outbound cloud-storage-buckets-outbound=buckets-de-almacenamiento-en-la-nube-amazon-s3-y-gcs-1 h_01J6Y2P4CNZ61PG9BTCVRFZ20K=buckets-de-almacenamiento-en-la-nube-amazon-s3-y-gcs-1 h_01J6Y2P4CN4ZRAMQ2E3R4Q4KHS=amazon-s3-outbound h_01J6Y2P4CN39GT0QT6THFAA3ZY=gcs-outbound setting-up-cloud-services-inbound-outbound=configuraci%C3%B3n-del-mismo-bucket-de-almacenamiento-en-la-nube-para-conexiones-entrantes-y-salientes h_01J6Y2P4CN2ARMJKRSAFZNN59G=configuraci%C3%B3n-del-mismo-bucket-de-almacenamiento-en-la-nube-para-conexiones-entrantes-y-salientes h_01J6Y2P4CNKC9P1FKECHZJ6AXP=amazon-s3-inbound-outbound creating-a-new-bucket-for-inboundoutbound-connections=creaci%C3%B3n-de-un-nuevo-bucket-para-conexiones-entrantessalientes h_01J6Y2P4CN216K0VZSWRP699TF=creaci%C3%B3n-de-un-nuevo-bucket-para-conexiones-entrantessalientes modifying-an-existing-bucket-previously-used-only-for-data-locker=modificaci%C3%B3n-de-un-bucket-existente-que-se-usaba-anteriormente-solo-para-data-locker h_01J6Y2P4CNDW888XTMKAMZAFCS=modificaci%C3%B3n-de-un-bucket-existente-que-se-usaba-anteriormente-solo-para-data-locker h_01J6Y2P4CN0MEEKG0D2SKMDZVY=gcs-inbound-outbound creating-a-new-bucket-for-inboundoutbound-connections::e1cda9c8=creaci%C3%B3n-de-un-nuevo-bucket-para-conexiones-entrantessalientes-1 h_01J6Y2P4CN336CRH1CWRJVCHHY=creaci%C3%B3n-de-un-nuevo-bucket-para-conexiones-entrantessalientes-1 modifying-an-existing-bucket-previously-used-only-for-data-locker::ba0d4803=modificaci%C3%B3n-de-un-bucket-existente-que-se-usaba-anteriormente-solo-para-data-locker-1 h_01J6Y2P4CNYCTVGN6CH0748S24=modificaci%C3%B3n-de-un-bucket-existente-que-se-usaba-anteriormente-solo-para-data-locker-1" />

@@ -1,5 +1,5 @@
 ---
-title: PBA media source attribution rules
+title: Reglas de atribución de fuentes de medios de PBA
 metadata:
   keywords:
     - media source
@@ -14,123 +14,201 @@ x-zendesk:
     - Marketers
     - Cross-Platform Measurement
   created_at: '2019-09-03T07:30:08Z'
-  edited_at: '2024-08-11T07:07:06Z'
+  edited_at: '2026-08-12T12:11:19Z'
   id: 360002386997
-  locale: en-us
+  locale: es
   section: People Based Attribution (PBA)
   section_id: 43560588808721
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360002386997-PBA-media-source-attribution-rules
+  url: https://support.appsflyer.com/hc/es/articles/360002386997
 ---
-> **At a glance:** Measure the impact of marketing efforts to drive effective website traffic. Which media sources, types, and channels are responsible for visits and conversion events. Ad level metrics available.
+> **De un vistazo:** Mide el impacto de los esfuerzos de marketing para impulsar el tráfico efectivo del sitio web. Qué fuentes de medios, tipos y canales son responsables de las visitas y los eventos de conversión. Métricas disponibles a nivel anuncio.
 
 ![Touchpoints_us-en.png](https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png)
 
-## Website visits and web events
+## Visitas al sitio web y eventos web
 
-* **Recognizing a visit:** PBA records a visit according to [visit recognition rules.](/docs/pba-media-source-attribution-rules#visit-recognition-rules)
-* **Visit attribution**
-  * To determine the media source responsible for bringing a user to the website, PBA analyzes the query parameters on the URL and the HTTP document referrers collected by the web SDK.
-  * Rules-based media source determination uses the data collected as detailed in this article. Similarly, media type and media channel are determined.
-  * The visit is recorded in <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">PBA raw data</Anchor>.
-* **Campaign** information is extracted from:
-  * Query parameters using the media source
-  * Gclid (if available) using <Anchor target="_blank" href="/marketers/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Google ads integration</Anchor>
-* **Web event**
-  * A web event occurs when a visitor performs an action on the website, for example, product search, product selection, or purchase.
-  * Events are attributed to the visit of the most recent non-direct web visit, occurring during a 30-day look-back window.
-  * Events are sub-divided into:   
-    * **Conversion events**: Significant events designated by the marketer. For example, purchase or registration.
-    * **Standard events**: Other events.
-  * Learn more about <Anchor target="_blank" href="/marketers/docs/pba-website-attribution-url-best-practices">PBA website attribution URL best practices</Anchor>.
+* **Reconocimiento de una visita:** PBA registra una visita según las [reglas de reconocimiento de visitas.](/docs/pba-media-source-attribution-rules#visit-recognition-rules)
+* **Atribución de visitas**
+  * Para determinar la fuente de medios responsable de atraer a un usuario al sitio web, PBA analiza los parámetros de consulta de la URL y los referentes de documentos HTTP recopilados por el SDK web.
+  * La determinación de la fuente de medios basada en reglas utiliza los datos recopilados, tal como se detalla en este artículo. De forma similar, también se determinan el tipo de medio y el canal de medios.
+  * La visita se registra en <Anchor target="_blank" href="/marketers/es/docs/pba-raw-data-reports">PBA raw data</Anchor>.
+* **Campaña** la información se extrae de:
+  * Parámetros de consulta que utilizan la fuente de medios
+  * Gclid (si está disponible) mediante la <Anchor target="_blank" href="/marketers/es/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">integración de anuncios de Google</Anchor>
+* **Evento web**
+  * Se produce un evento web cuando un visitante realiza una acción en el sitio web, por ejemplo, búsqueda de producto, selección de producto o compra.
+  * Los eventos se atribuyen a la visita web no directa más reciente, dentro de una ventana retrospectiva de 30 días.
+  * Los eventos se subdividen en:   
+    * **Eventos de conversión**: eventos significativos designados por el profesional del marketing. Por ejemplo, compra o registro.
+    * **Eventos estándar**: otros eventos.
+  * Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/pba-website-attribution-url-best-practices">Mejores prácticas de URL de atribución del sitio web de PBA</Anchor>.
 
-PBA dashboards and raw data reports make use of the attributed media sources, types, channels, and campaigns.
+Los Dashboard de PBA y los Reportes de raw data usan las fuentes de medios, los tipos, los canales y las campañas atribuidos.
 
 ![MediaSource_us-en.png](https://files.readme.io/bcb3e471753809b0fdf1a0e1dc9783002004b1988f4701ab30524c1eb7b9fbfc-360008629057.png)
 
-For ease of understanding, the table that follows contains examples of the determined media source with their type and channel.
+Para facilitar la comprensión, la tabla siguiente contiene ejemplos de la fuente de medios determinada con su tipo y su canal.
 
-| Media source | Media type | Media channel |
+| Nombre de la app | Media Type | Valor de ejemplo: store\_commission |
 | --- | --- | --- |
-| Direct | Earned | Direct |
-| <ul><li>Social Facebook</li><li>Social X (formerly Twitter)</li></ul> | Owned | Social media |
-| <ul><li>Meta ads</li><li>X Ads</li></ul> | Paid | Social media |
-| Google search | Earned | Organic search |
-| Email | Owned | Email |
-| googleadwords\_int | Paid | Ad |
-| usatoday.com | Earned | Referral |
+| Directo | Obtenido | Directo |
+| <ul><li>Social Facebook</li><li>Social X (anteriormente Twitter)</li></ul> | Propios | Redes sociales |
+| <ul><li>Meta Ads</li><li>Anuncios X</li></ul> | Paga | Redes sociales |
+| Búsqueda de Google | Obtenido | Búsqueda orgánica |
+| Correo electrónico | Propios | Correo electrónico |
+| googleadwords\_int | Paga | El valor puede tener hasta 4 dígitos. |
+| usatoday.com | Obtenido | Referencia |
 
-## Determining the media source
+## Determinación de la fuente de medios
 
-PBA determines the media source, media type, and media channel in a hierarchical manner. This means determining the relevant media source rule and media source. Afterward, the media type and media channel are determined.
+PBA determina la fuente de medios, el tipo de medio y el canal de medios de forma jerárquica. Esto significa determinar la regla de fuente de medios pertinente y la fuente de medios. Después, se determinan el tipo de medio y el canal.
 
 <div id="media-source-rules" />
 
-<Accordion title="Media source rules">
+<Accordion title="Reglas de fuente de medios">
 
-Media source rules as shown in the following table are ranked from high to low priority:
+Las reglas de fuente de medios que se muestran en la siguiente tabla se clasifican de mayor a menor prioridad:
 
-<table><tbody><tr><th>Media source rule </th><th>Resolving the media source </th></tr><tr><td>Prevent self-attribution</td><td><p>To prevent attributing events to the website itself (self-attribution), and other related domains, a <a href="./pba-brand-bundles-and-settings#domain-exclusion" target="_blank">domain exclusion</a> list is used. The list consists of:</p><ul><li>Primary domain: Determined by the URL of the web app included in the brand bundle</li><li>Internal domains: Domains forming part of the brand</li><li>External domains: Payment gateways and payment processing sites set by you and some domains, like PayPal and Stripe, set by AppsFlyer are automatically excluded</li></ul></td></tr><tr><td>pid</td><td><p>Resolve to the pid value in the URL. For some SRNs, resolve the pid to the SRNs commercial name for consistency and clarity. For example, pid=facebook_int resolves to Facebook Ads, twitter_int resolves to Twitter.</p></td></tr><tr><td>Click IDs</td><td><p>Major ad networks, like Google, use click IDs to auto-tag campaigns. Click IDs resolve as follows:</p><ul><li><strong><span>gclid: </span></strong><a href="https://support.google.com/searchads/answer/7342044?hl=en" target="_blank"><span>Google click ID</span></a> resolves to <em>googleadwords_int</em><span>. Note! <em>The GCLID solution is not officially supported by Google, who may deprecate it in the future.</em></span></li><li><strong><span>dclid</span></strong><span>: DoubleClick click ID resolves to <em>doubleclick_int.</em></span></li><li><strong><span>msclkid: </span></strong><a href="http://help.ads.microsoft.com/apex/index/3/en/60000" target="_blank"><span>Bing click ID </span></a>resolves to<span> <em>bingsearch_int</em>.</span></li></ul></td></tr><tr><td>UTM parameters</td><td><strong>UTM custom rules</strong><table><tbody><tr><th>utm_source</th><th>utm_medium</th><th>Media source</th></tr><tr><td>\*</td><td><ul><li>email, mail, e-mail</li><li>Note! If utm_medium contains one of these values, the utm_source is ignored.</li></ul></td><td>Email</td></tr><tr><td>google</td><td>cpc/ppc/paidsearch/search</td><td>googleadwords_int</td></tr><tr><td>google</td><td>cpm/display/banner/video/listing</td><td>doubleclick_int</td></tr><tr><td>dfa / dbm</td><td>cpm</td><td>doubleclick_int</td></tr><tr><td><p>facebook</p></td><td>cpc/ppc/cpm/cpa/paidsocial/paid-social</td><td>Facebook Ads</td></tr><tr><td>bing</td><td>cpc</td><td>bingsearch_int</td></tr><tr><td>yahoo / gemini</td><td>cpc/display/listing</td><td>yahoogemini_int</td></tr><tr><td>twitter</td><td>cpc</td><td>X Ads</td></tr><tr><td>snapchat</td><td>swipe</td><td>snapchat_int</td></tr><tr><td>pinterest</td><td>cpc</td><td>pinterest_int</td></tr></tbody></table><p><span>If there is no custom rule match, the media source resolves to the value of the utm_source parameter.</span><span></span><span></span></p><p><a href="https://en.wikipedia.org/wiki/UTM_parameters" target="_blank"><span>Information about UTM parameters</span></a></p></td></tr><tr><td>Referrer</td><td><span>The referrer is the HTTP source that sent the user to the website. The media source is the domain name of the referrer.</span></td></tr></tbody></table>
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Regla de fuente de medios
+      </th>
+      <th>
+        Resolución de la fuente de medios
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Evitar la autoatribución
+      </td>
+      <td>
+        Para evitar atribuir eventos al propio sitio web (autoatribución) y a otros dominios relacionados, se utiliza una lista de <Anchor target="_blank" href="/marketers/es/docs/pba-brand-bundles-and-settings#domain-exclusion">exclusión de dominios</Anchor>. La lista consta de:
+
+        * Dominio principal: lo determina la URL de la aplicación web incluida en el paquete de marca
+        * Dominios internos: dominios que forman parte de la marca
+        * Dominios externos: se excluyen automáticamente las pasarelas de pago y los sitios de procesamiento de pagos que configures, así como algunos dominios, como PayPal y Stripe, configurados por AppsFlyer
+      </td>
+    </tr>
+    <tr>
+      <td>
+        PID
+      </td>
+      <td>
+        Se resuelve con el valor pid de la URL. En el caso de algunas SRN, el pid se resuelve con el nombre comercial de las SRN para mantener la coherencia y la claridad. Por ejemplo, pid=facebook\_int se resuelve como Facebook Ads y twitter\_int se resuelve como Twitter.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ID de clics
+      </td>
+      <td>
+        Las principales ad networks, como Google, usan ID de clic para etiquetar automáticamente las campañas. Los ID de clic se resuelven de la siguiente manera:
+
+        * **gclid:** <Anchor target="_blank" href="https://support.google.com/searchads/answer/7342044?hl=en">ID de clic de Google</Anchor> se resuelve como *googleadwords\_int*. ¡Atención! *La solución GCLID no cuenta con soporte oficial de Google, que podría dejar de ofrecerla en el futuro.*
+        * **dclid**: el ID de clic de DoubleClick se resuelve como *doubleclick\_int.*
+        * **msclkid:** <Anchor target="_blank" href="http://help.ads.microsoft.com/apex/index/3/en/60000">ID de clic de Bing</Anchor> se resuelve como *bingsearch\_int*.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Parámetros UTM
+      </td>
+      <td>
+        **Reglas personalizadas de UTM**
+
+        | utm\_source | utm\_medium | Nombre de la app |
+        | --- | --- | --- |
+        | * | * correo electrónico, mail, e-mail<br />* ¡Atención! Si utm\_medium contiene uno de estos valores, se ignora la utm\_source. | Correo electrónico |
+        | Google | cpc/ppc/paidsearch/search | googleadwords\_int |
+        | Google | cpm/display/banner/video/listing | doubleclick\_int |
+        | dfa / dbm | Cadena | doubleclick\_int |
+        | facebook | cpc/ppc/cpm/cpa/paidsocial/paid-social | Facebook Ads |
+        | bing | cpc | bingsearch\_int |
+        | yahoo / gemini | cpc/display/listing | yahoogemini\_int |
+        | twitter | cpc | Anuncios X |
+        | snapchat | swipe | "snapchat\_int" |
+        | pinterest | cpc | pinterest\_int |
+
+        Si no hay ninguna coincidencia de regla personalizada, la fuente de medios se resuelve en el valor del parámetro utm\_source.
+
+        <Anchor target="_blank" href="https://en.wikipedia.org/wiki/UTM_parameters">Información sobre los parámetros UTM</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Referente
+      </td>
+      <td>
+        El referente es la fuente HTTP que envió al usuario al sitio web. La fuente de medios es el nombre de dominio de la fuente de referencia.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>
 
 <div id="media-source-type" />
 
-<Accordion title="Media source type">
+<Accordion title="Tipo de fuente de medios">
 
-Marketers usually segment web media sources into three types:
+Los especialistas en marketing suelen segmentar las fuentes de medios web en tres tipos:
 
-* **Paid:** ad campaigns like display banners, videos, and search ads.
-* **Owned:** marketing campaigns that come from owned media meaning, email campaigns, social posts, blogs.
-* **Earned:** direct or organic traffic from search engines, referrals, and actual direct traffic.
+* **Pagado:** campañas publicitarias, como banners de display, vídeos y anuncios de búsqueda.
+* **Medios propios:** campañas de marketing procedentes de medios propios, es decir, campañas de correo electrónico, publicaciones en redes sociales y blogs.
+* **Ganado:** tráfico directo u orgánico procedente de motores de búsqueda, referencias y tráfico directo real.
 
-The media type is determined by referencing the media source rule used in combination with the media source/other parameters.
+El tipo de medio se determina consultando la regla de fuente de medios utilizada en combinación con la fuente de medios u otros parámetros.
 
-<table><thead><tr><th>Applicable media source rule</th><th>Media source</th><th>Media type</th></tr></thead><tbody><tr><td colspan="1" rowspan="2"><div>pid</div></td><td><p>The pid rule determined if the media source is: </p><ul><li>Social Facebook</li><li>Social X (formerly Twitter)</li><li>SMS</li><li>Blog</li><li>Email</li></ul></td><td>Owned</td></tr><tr><td>Any other media source</td><td>Paid</td></tr><tr><td>Click ID</td><td><p><span>Determined using a click ID:</span></p><ul><li>gclid</li><li>dclid</li><li>msclkid</li></ul></td><td>Paid</td></tr><tr><td colspan="1" rowspan="2"><div>UTM</div></td><td>UTM custom rules determine the media source</td><td>Paid</td></tr><tr><td>Any other media source</td><td>Owned</td></tr><tr><td rowspan="2">Referrer</td><td><p><span>Referrer domain value is one of the following:</span></p><ul><li>googleads.g.doubleclick.net </li><li>tpc.googlesyndication.com</li></ul></td><td><p>Paid</p></td></tr><tr><td><span>Any other media source </span></td><td><p>Earned</p></td></tr></tbody></table>
+<table><thead><tr><th>Regla de fuente de medios aplicable</th><th>Nombre de la app</th><th>Media Type</th></tr></thead><tbody><tr><td colspan="1" rowspan="2"><div>PID</div></td><td><p>La regla pid determina si la fuente de medios es: </p><ul><li>Facebook social</li><li>X social (antiguo Twitter)</li><li>SMS</li><li>Blog</li><li>Correo electrónico</li></ul></td><td>Propios</td></tr><tr><td>Cualquier otra fuente de medios</td><td>Paga</td></tr><tr><td>ID de clic</td><td><p><span>Se determina mediante un ID de clic:</span></p><ul><li>gclid</li><li>dclid</li><li>msclkid</li></ul></td><td>Paga</td></tr><tr><td colspan="1" rowspan="2"><div>UTM</div></td><td>Las reglas UTM personalizadas determinan la fuente de medios</td><td>Paga</td></tr><tr><td>Cualquier otra fuente de medios</td><td>Propios</td></tr><tr><td rowspan="2">Referente</td><td><p><span>El valor del dominio de referencia es uno de los siguientes:</span></p><ul><li>googleads.g.doubleclick.net </li><li>tpc.googlesyndication.com</li></ul></td><td><p>Paga</p></td></tr><tr><td><span>Cualquier otra fuente de medios </span></td><td><p>Obtenido</p></td></tr></tbody></table>
 
 </Accordion>
 
 <div id="media-source-channel" />
 
-<Accordion title="Media source channel">
+<Accordion title="Canal de fuente de medios">
 
-The media channel is determined by rules as listed here.
+El canal de medios se determina según las reglas que se indican aquí.
 
-<table><thead><tr><th>Priority</th><th>Media channel rule</th><th>Values</th><th>Media channel</th></tr></thead><tbody><tr><td rowspan="4">Highest priority</td><td rowspan="4">The media source is one of the listed values</td><td>Direct</td><td>Direct</td></tr><tr><td><ul><li>Google Search</li><li>Yahoo Search</li><li>Bing Search</li></ul></td><td>Organic search</td></tr><tr><td><ul><li>facebook</li><li>twitter</li><li>snapchat</li><li>pinterest</li><li>linkedin</li><li>whatsapp</li></ul></td><td>Social media</td></tr><tr><td>Email</td><td>Email</td></tr><tr><td> </td><td>Media type is Paid</td><td> </td><td><div>Ad</div></td></tr><tr><td> </td><td>Media source determined by referrer</td><td> </td><td>Referral</td></tr><tr><td>Lowest priority</td><td>No other prior condition matched</td><td> </td><td>Other</td></tr></tbody></table>
+<table><thead><tr><th>Prioridad</th><th>Regla del canal de medios</th><th>Valores</th><th>Valor de ejemplo: store_commission</th></tr></thead><tbody><tr><td rowspan="4">Prioridad más alta</td><td rowspan="4">La fuente de medios es uno de los valores indicados</td><td>Directo</td><td>Directo</td></tr><tr><td><ul><li>Google Search</li><li>Yahoo Search</li><li>Bing Search</li></ul></td><td>Búsqueda orgánica</td></tr><tr><td><ul><li>facebook</li><li>twitter</li><li>snapchat</li><li>pinterest</li><li>linkedin</li><li>whatsapp</li></ul></td><td>Redes sociales</td></tr><tr><td>Correo electrónico</td><td>Correo electrónico</td></tr><tr><td> </td><td>El tipo de medio es pagado</td><td> </td><td><div>El valor puede tener hasta 4 dígitos.</div></td></tr><tr><td> </td><td>Fuente de medios determinada por el referente</td><td> </td><td>Referencia</td></tr><tr><td>Prioridad más baja</td><td>No coincidió ninguna otra condición anterior</td><td> </td><td>Otro</td></tr></tbody></table>
 
 </Accordion>
 
 <div id="determine-the-campaign" />
 
-<Accordion title="Determine the campaign">
+<Accordion title="Determinar la campaña">
 
-* Campaigns are determined using: 
-  * Campaign URL parameters, per media source URL parameters.
-  * Gclid click ID and using <Anchor target="_blank" href="/marketers/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Google Ads</Anchor> integration
-* If the relevant campaign parameter is not found on the URL, then the campaign is not derived.
+* Las campañas se determinan mediante: 
+  * Parámetros de URL de la campaña, según los parámetros de URL de la fuente de medios.
+  * ID de clic de Gclid y uso de <Anchor target="_blank" href="/marketers/es/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Anuncios de Google</Anchor> integración
+* Si no se encuentra en la URL el parámetro de campaña correspondiente, no se deriva la campaña.
 
-| Media source parameter used | Campaign parameter used |
+| Parámetro de fuente de medios utilizado | Parámetro de campaña utilizado |
 | --- | --- |
-| pid | AppsFlyer media source parameters available on the URL are used to populate raw data and the Website Attribution dashboard. Available parameters: af\_c\_id, af\_adset, af\_adset\_id, af\_ad\_id |
-| Click ID—gclid | Get via API from Google Ads |
+| PID | Los parámetros de fuente de medios de AppsFlyer disponibles en la URL se utilizan para completar los raw data y el dashboard de Atribución web. Parámetros disponibles: af\_c\_id, af\_adset, af\_adset\_id, af\_ad\_id |
+| ID de clic: gclid | Obtener mediante la API de Google Ads |
 | utm\_source | utm\_campaign |
 
 </Accordion>
 
-## Additional attribution rules
+## Reglas de atribución adicionales
 
 <div id="visit-recognition-rules" />
 
-<Accordion title="Visit recognition rules">
+<Accordion title="Reglas de reconocimiento de visitas">
 
-A visit to the website is recorded using the following rules and considering the current session status. An active session is a session having less than 30 minutes of inactivity.
+Una visita al sitio web se registra siguiendo las reglas que se indican a continuación y teniendo en cuenta el estado actual de la sesión. Una sesión activa es una sesión con menos de 30 minutos de inactividad.
 
-* Don't record a visit if the user came from an <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#domain-exclusion">external excluded</Anchor> domain.
-* During an active session: record a visit if the page load includes a media source.
-* If there is no active session: record a visit.
-* There is no minimum visit time.
+* No registres una visita si el usuario procede de un dominio <Anchor target="_blank" href="/marketers/es/docs/pba-brand-bundles-and-settings#domain-exclusion">externo excluido</Anchor>.
+* Durante una sesión activa: registra una visita si la carga de la página incluye una fuente de medios.
+* Si no hay ninguna sesión activa: registra una visita.
+* No hay un tiempo mínimo de visita.
 
-**PBA visit recording rules**
+**Reglas de registro de visitas de PBA**
 
 ![PBA_-_PBA-vist.png](https://files.readme.io/651c3ee4d39832297b7d6dc871aa281f1fa3219264ba264851ad0cc643b8baee-360015532817.png)
 
@@ -138,12 +216,12 @@ A visit to the website is recorded using the following rules and considering the
 
 <div id="data-finalization" />
 
-<Accordion title="Data finalization">
+<Accordion title="Finalización de datos">
 
-* Data finalization:
-  * For Web-Assisted Installs, Website Attribution, PBA identifies additional related events during the first 7 days after the conversion. This can change the media source identified as being ultimately responsible for driving the conversion.
-  * In the related raw-data reports, the *final\_data* field is false during the initial 7-day period.
+* Finalización de datos:
+  * Para las instalaciones asistidas por web y la atribución del sitio web, PBA identifica eventos relacionados adicionales durante los primeros 7 días posteriores a la conversión. Esto puede cambiar la fuente de medios identificada como la responsable final de impulsar la conversión.
+  * En los reportes de datos sin procesar relacionados, el campo *final\_data* es "false" durante el periodo inicial de 7 días.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H936NV7VP8CTE9BZP6D5E7NK=website-visits-and-web-events h_01H936NV7VZHWBDPHFJRFFCPSW=determining-the-media-source h_01H936NV7V6GMWSCHNDMJ205JS=media-source-rules h_01H936NV7W9ZFMET29GY6JTBGN=media-source-type h_01H936NV7W61DB43D3E1MNEJHN=media-source-channel h_01H936NV7WZYE3EKYZ9PX9ZJXW=determine-the-campaign h_01H936NV7WA9WZM4RTQZHD22VV=additional-attribution-rules h_01H936NV7W323HQMG5E6SQFQEN=visit-recognition-rules h_01H936NV7WSB2FMRBPDN936TWM=data-finalization" />
+<div data-zendesk-anchors="website-visits-and-web-events=visitas-al-sitio-web-y-eventos-web h_01H936NV7VP8CTE9BZP6D5E7NK=visitas-al-sitio-web-y-eventos-web determining-the-media-source=determinaci%C3%B3n-de-la-fuente-de-medios h_01H936NV7VZHWBDPHFJRFFCPSW=determinaci%C3%B3n-de-la-fuente-de-medios h_01H936NV7V6GMWSCHNDMJ205JS=media-source-rules h_01H936NV7W9ZFMET29GY6JTBGN=media-source-type h_01H936NV7W61DB43D3E1MNEJHN=media-source-channel h_01H936NV7WZYE3EKYZ9PX9ZJXW=determine-the-campaign additional-attribution-rules=reglas-de-atribuci%C3%B3n-adicionales h_01H936NV7WA9WZM4RTQZHD22VV=reglas-de-atribuci%C3%B3n-adicionales h_01H936NV7W323HQMG5E6SQFQEN=visit-recognition-rules h_01H936NV7WSB2FMRBPDN936TWM=data-finalization" />

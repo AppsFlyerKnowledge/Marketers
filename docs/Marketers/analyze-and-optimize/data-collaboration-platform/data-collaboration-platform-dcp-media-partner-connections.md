@@ -1,5 +1,5 @@
 ---
-title: Data Collaboration Platform (DCP) media partner connections
+title: Conexiones de Partners de medios de la Data Collaboration Platform (DCP)
 metadata:
   keywords:
     - Marketers
@@ -12,118 +12,117 @@ x-zendesk:
     - Marketers
     - Audience Activation
   created_at: '2026-04-12T14:19:36Z'
-  edited_at: '2026-05-24T13:27:09Z'
+  edited_at: '2026-08-12T11:54:05Z'
   id: 45669216166417
-  locale: en-us
+  locale: es
   section: Data Collaboration Platform
   section_id: 26230608274065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/45669216166417-Data-Collaboration-Platform-DCP-media-partner-connections
+  url: https://support.appsflyer.com/hc/es/articles/45669216166417
 ---
-## At a glance
+## Resumen general
 
-Connect your audiences to media partners so you can activate your tailored campaigns and achieve maximum results.
+Conecta tus audiencias con partners de medios para activar tus campañas personalizadas y obtener los máximos resultados.
 
-## About partner connections
+## Acerca de las conexiones de partners
 
-<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP)</Anchor> partner connections enable you to securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Once a partner is connected to an audience, DCP delivers the audience based on the configured refresh and activation flow, using the latest available source data and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions">permissions</Anchor>.
+Las conexiones de Partners de <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP)</Anchor> te permiten conectar de forma segura tus audiencias de DCP con Partners de medios compatibles, para que puedas activar campañas personalizadas en sus plataformas. Una vez que un Partner está conectado a una audiencia, DCP entrega la audiencia según el flujo de actualización y activación configurado, utilizando los datos de fuente disponibles más recientes y los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#permisos-de-uso-compartido">permisos</Anchor>.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> * The audience is delivered for activation as a list of user identifiers. Each delivery represents a full audience snapshot at the time of export.
-> * Audience refreshes are not continuous or in real-time. Instead, they are triggered according to the defined policy, which is cadence-based and checks whether the source data has been updated. Each refresh generates and sends the audience list to the selected destinations.
+> * La audiencia se envía para su activación como una lista de identificadores de usuario. Cada envío representa una instantánea completa de la audiencia en el momento de la exportación.
+> * Las actualizaciones de audiencia no son continuas ni en tiempo real. En su lugar, se activan según la política definida, basada en una cadencia, que comprueba si los datos de la fuente se han actualizado. Cada actualización genera y envía la lista de audiencias a los destinos seleccionados.
 
-## Supported partner connections
+## Conexiones de Partners compatibles
 
-This section lists the media partner connections supported by DCP, along with each partner’s setup requirements, permissions, supported campaign types, and any additional requirements or limitations.
+En esta sección se enumeran las conexiones con Partners de medios compatibles con DCP, junto con los requisitos de configuración de cada Partner, los permisos, los tipos de campaña compatibles y cualquier requisito o limitación adicional.
 
 <div id="google-ads" />
 
-<Accordion title="Google Ads">
+<Accordion title="Anuncios de Google">
 
-**Media partner platform:**  
+**Plataforma del Partner de medios:**  
 Google Ads
 
-**Media partner name in DCP:**  
+**Nombre del Partner de medios en DCP:**  
 Google Ads
 
-**Media partner’s connection setup and account permissions requirements:**
+**Requisitos de configuración de la conexión y de permisos de cuenta del Partner de medios:**
 
-* Active Google account.
-* User access: Standard or Admin access to the Google Ads account
-* Customer Match: Must be enabled and approved
-* Partner authorization: Account approved to work with the partner (via Google rep)
-* Partner link: Backend connection created by Google
+* Cuenta de Google activa.
+* Acceso de usuario: acceso estándar o de administrador a la cuenta de Google Ads
+* Customer Match: debe estar habilitado y aprobado
+* Autorización del Partner: cuenta aprobada para trabajar con el Partner (a través de un representante de Google)
+* Enlace del Partner: conexión de backend creada por Google
 
-**How it works:**
+**Cómo funciona:**
 
-A Standard/Admin user must enable the integration during setup.   
-After that, the DCP uploads audiences automatically via the Partner Link.
+Un usuario estándar/administrador debe habilitar la integración durante la configuración.   
+Después, DCP carga las audiencias automáticamente a través del enlace del Partner.
 
-**Official resources:**  
-<Anchor target="_blank" href="https://support.google.com/google-ads/answer/10589050">Google Ads Customer Match help</Anchor>
+**Recursos oficiales:**  
+<Anchor target="_blank" href="https://support.google.com/google-ads/answer/10589050">Ayuda de Customer Match de Google Ads</Anchor>
 
-**Supported campaign types:**
+**Tipos de campaña compatibles:**
 
-* **Search**  
-  Use Customer Match lists in Observation or Targeting mode to adjust bids or refine targeting for search queries.
+* **Búsqueda**  
+  Usa listas de Customer Match en modo Observación o Targeting para ajustar las pujas o afinar el targeting de las consultas de búsqueda.
 * **Display**  
-  Target or exclude audiences directly across the Google Display Network using Customer Match lists.
-* **Video (YouTube)**  
-  Use audiences for targeting ads on YouTube (in-stream, in-feed, Shorts).
+  Segmenta o excluye audiencias directamente en la Red de Display de Google mediante listas de Customer Match.
+* **Vídeo (YouTube)**  
+  Usa audiencias para el targeting de anuncios en YouTube (in-stream, in-feed, Shorts).
 * **Shopping**  
-  Apply audiences in Observation mode to optimize bids for users on Shopping campaigns.
+  Aplica audiencias en modo Observación para optimizar las pujas para los usuarios en campañas de Shopping.
 * **Performance Max (PMax)**  
-  Use Customer Match lists as audience signals to guide Google’s automation (not strict targeting).
+  Usa listas de Customer Match como señales de audiencia para guiar la automatización de Google (no targeting estricto).
 * **Demand Gen**  
-  Use Customer Match lists for direct audience targeting across YouTube, Discover, and Gmail.
+  Usa listas de Customer Match para el targeting directo de audiencias en YouTube, Discover y Gmail.
 * **App Campaigns**   
-  App Campaigns for installs (ACi) use uploaded audiences only as optimization signals, while re-engagement campaigns (ACe) support deterministic targeting and are the primary method for audience activation.
+  App Campaigns para instalaciones (ACi) usan las audiencias subidas solo como señales de optimización, mientras que las campañas de re-engagement (ACe) admiten targeting determinista y son el método principal de activación de audiencias.
 
-#### App campaigns (ACi & ACe) guidelines
+#### Directrices de campañas de aplicaciones (ACi & ACe)
 
-Google App campaigns (formerly known as Universal App Campaign - UAC) behave differently from other campaign types when using Customer Match audiences:
+Las campaigns de apps de Google (antes conocidas como Universal App Campaign - UAC) se comportan de forma distinta a otros tipos de campaña cuando usan audiencias de Customer Match:
 
 **App Campaigns for Installs (ACi)**
 
-Designed for acquiring new users at scale.  
-Customer Match audiences **cannot be used for direct targeting.**  
-Uploaded audiences are used **only as signals** to improve Google’s machine learning and optimization.  
-Activation is **fully automated by Google AI**, with no control over audience inclusion/exclusion.  
-Requires sufficient account history (e.g., conversion data and spend) to be eligible.
+Diseñadas para adquirir nuevos usuarios a escala.  
+Las audiencias de Customer Match **no se pueden usar para targeting directo.**  
+Las audiencias subidas se usan **solo como señales** para mejorar el aprendizaje automático y la optimización de Google.  
+La activación está **totalmente automatizada por la IA de Google**, sin control sobre la inclusión o exclusión de audiencias.  
+Requiere suficiente historial de la cuenta (por ejemplo, datos de conversión y gasto) para poder optar a esta función.
 
-**App Campaigns for Engagement (ACe)**
+**App Campaigns para engagement (ACe)**
 
-Designed for **re-engaging existing users.**  
-Customer Match audiences support **deterministic targeting.**  
-Advertisers can:
+Diseñadas para **re-engagement de usuarios existentes.**  
+Las audiencias de Customer Match ofrecen **targeting determinista.**  
+Los anunciantes pueden:
 
-* Retarget specific user segments (e.g., churned users, purchasers)
-* Run lifecycle campaigns (upsell, cross-sell, retention)
+* Hacer targeting de segmentos de usuarios específicos (p. ej., usuarios que han abandonado, compradores)
+* Ejecutar campañas del ciclo de vida (upsell, cross-sell, retención)
 
-Audience lists from DCP are used as primary targeting criteria, similar to other platforms.
+Las listas de audiencias de DCP se usan como criterio principal de targeting, igual que en otras plataformas.
 
-> 📘 **Notes**
+> 📘 **Notas**
 >
-> * Use ACi when your goal is scale and user acquisition (audiences = signals only).
-> * Use ACe when your goal is re-engagement and precise audience targeting (audiences = direct targeting).
+> * Usa ACi cuando tu objetivo sea la escala y la adquisición de usuarios (audiencias = solo señales).
+> * Usa ACe cuando tu objetivo sea el re-engagement y el targeting preciso de audiencias (audiencias = targeting directo).
 
-**Connection expiration:**
+**Caducidad de la conexión:**
 
-* Connections are generally persistent and don't expire automatically
-* Re-authentication may be required if OAuth tokens are revoked, account permissions change, password/security settings are updated, or Google partner authorization changes
+* Las conexiones suelen ser persistentes y no caducan automáticamente
+* Puede ser necesaria una nueva autenticación si se revocan los tokens de OAuth, cambian los permisos de la cuenta, se actualizan la contraseña o la configuración de seguridad, o cambia la autorización de Partners de Google
 
-**Audience freshness:**
+**Actualización de las audiencias:**
 
-* Customer Match memberships expire after 540 days unless refreshed
-* Recommended operational validation: every 60–90 days
-* Recommended audience refresh: daily for performance/lifecycle campaigns; minimum every 7 days
-* Critical audiences must not remain stale for more than 7 days
+* Las pertenencias de Customer Match caducan después de 540 días, a menos que se actualicen
+* Validación operativa recomendada: cada 60–90 días
+* Actualización de audiencias recomendada: diaria para campañas de rendimiento/ciclo de vida; como mínimo, cada 7 días
+* Las audiencias críticas no deben permanecer desactualizadas durante más de 7 días
 
-**Additional requirements/limitations:**
+**Requisitos/limitaciones adicionales:**
 
-* Customer Match lists require a minimum of 1,000 active, matched users before they can be used to serve ads.
-* EU Consent (DMA): You must add that for users in the European Economic Area (EEA), passing explicit, granted consent signals (ad\_user\_data and ad\_personalization) is strictly required to use Customer Match. If consent is denied or missing, the user will not be processed.
+* Las listas de Customer Match requieren un mínimo de 1.000 usuarios activos con coincidencia antes de poder usarse para publicar anuncios.
+* Consentimiento de la UE (DMA): Debes añadir que, para los usuarios del Espacio Económico Europeo (EEE), es estrictamente obligatorio enviar señales de consentimiento explícito concedido (ad\_user\_data y ad\_personalization) para usar Customer Match. Si se deniega el consentimiento o no está disponible, el usuario no se procesará.
 
 </Accordion>
 
@@ -131,116 +130,116 @@ Audience lists from DCP are used as primary targeting criteria, similar to other
 
 <Accordion title="DV360">
 
-**Media partner platform:**  
+**Plataforma del partner de medios:**  
 Google DV360 (Display & Video 360)
 
-**Media partner name in DCP:**  
+**Nombre del partner de medios en DCP:**  
 DV360
 
-**Media partner’s connection setup and account permissions requirements:**
+**Requisitos de configuración de la conexión y de permisos de la cuenta del partner de medios:**
 
-* Active DV360 account
-* User access: Partner-level or Advertiser-level access with sufficient permissions
-* Audience ingestion enabled: Account must allow 1st-party audience uploads
-* Partner authorization: Account approved to work with the partner (via Google rep)
-* Partner link: Backend connection created by Google
+* Cuenta de DV360 activa
+* Acceso de usuario: acceso de nivel partner o de nivel anunciante con permisos suficientes
+* Ingesta de audiencias habilitada: la cuenta debe permitir cargas de audiencias de origen 1st-party
+* Autorización del partner: cuenta aprobada para trabajar con el partner (a través de un representante de Google)
+* Enlace del partner: conexión de backend creada por Google
 
-**How it works:**
+**Cómo funciona:**
 
-The appropriate DV360 access permissions are needed to enable the integration during setup.  
-After that, the DCP uploads audiences automatically via the Partner Link.
+Se necesitan los permisos de acceso adecuados de DV360 para habilitar la integración durante la configuración.  
+Después de eso, DCP carga las audiencias automáticamente a través del enlace del partner.
 
-**Official resources:**  
-<Anchor target="_blank" href="https://support.google.com/displayvideo/answer/9134175?hl=en">Display & Video 360 audience help</Anchor>
+**Recursos oficiales:**  
+<Anchor target="_blank" href="https://support.google.com/displayvideo/answer/9134175?hl=en">Ayuda sobre audiencias de Display & Video 360</Anchor>
 
-**Supported campaign types:**
+**Tipos de campaña compatibles:**
 
-* **Display** – Used for direct audience targeting and exclusions
-* **Video (YouTube & Programmatic Video)** – Used for direct audience targeting across YouTube and video inventory
-* **Audio** – Used for targeting on digital audio inventory
-* **Native** – Used for audience targeting across native placements
-* **Connected TV (CTV)** – Used for targeting on streaming and TV inventory
-* **App campaigns:** DV360 supports app install and re-engagement strategies, but in a programmatic, line-item-based model. It does not replicate Google Ads App Campaigns, and Customer Match audiences are used directly for targeting/exclusion rather than as core optimization signals or deterministic app-user targeting.
+* **Display** – Se usa para el targeting directo de audiencias y las exclusiones
+* **Vídeo (YouTube & vídeo programático)** – Se usa para el targeting directo de audiencias en YouTube y en el inventario de vídeo
+* **Audio** – Se usa para el targeting en el inventario de audio digital
+* **Native** – Se usa para el targeting de audiencias en ubicaciones nativas
+* **Connected TV (CTV)** – Se usa para el targeting en inventario de streaming y TV
+* **Campañas de app:** DV360 ofrece soporte para estrategias de instalación de la app y re-engagement, pero en un modelo programático basado en partidas. No replica las campañas de app de Google Ads, y las audiencias de Customer Match se usan directamente para targeting/exclusión en lugar de como señales principales de optimización o para el targeting determinista de usuarios de la app.
 
-**Connection expiration:**
+**Caducidad de la conexión:**
 
-* Connection remains active unless revoked or permissions change (mirrors Google Ads behavior)
-* Audience memberships follow Google Customer Match policies, including the 540-day expiration window
+* La conexión permanece activa a menos que se revoque o cambien los permisos (refleja el comportamiento de Google Ads)
+* Las pertenencias a audiencias siguen las políticas de Google Customer Match, incluida la ventana de caducidad de 540 días
 
-**Audience freshness:**
+**Actualidad de las audiencias:**
 
-* Recommended operational validation: every 60–90 days
-* Recommended audience refresh: daily preferred; maximum 7 days between refreshes for active campaigns
+* Validación operativa recomendada: cada 60–90 días
+* Actualización recomendada de audiencias: preferiblemente diaria; máximo 7 días entre actualizaciones para las campañas activas
 
-**Additional requirements / limitations:**
+**Requisitos o limitaciones adicionales:**
 
-* Customer Match lists require a minimum of 1,000 active, matched users before they can be used to serve ads.
-* EU Consent (DMA): You must add that for users in the European Economic Area (EEA), passing explicit, granted consent signals (ad\_user\_data and ad\_personalization) is strictly required to use Customer Match. If consent is denied or missing, the user will not be processed.
+* Las listas de Customer Match requieren un mínimo de 1.000 usuarios activos con coincidencia antes de poder usarse para publicar anuncios.
+* Consentimiento de la UE (DMA): Debes añadir que, para los usuarios del Espacio Económico Europeo (EEE), es estrictamente obligatorio enviar señales de consentimiento explícito concedido (ad\_user\_data y ad\_personalization) para usar Customer Match. Si se deniega el consentimiento o falta, el usuario no se procesará.
 
 </Accordion>
 
 <div id="meta-ads" />
 
-<Accordion title="Meta Ads">
+<Accordion title="Anuncios de Meta">
 
-**Media partner platform:**  
+**Plataforma del partner de medios:**  
 Meta Ads Manager (Facebook / Instagram)
 
-**Media partner name in DCP:**  
+**Nombre del partner de medios en DCP:**  
 Meta Ads
 
-**Media partner’s connection setup and account permissions requirements:**
+**Requisitos de configuración de la conexión del partner de medios y de permisos de la cuenta:**
 
-* Valid personal Meta (Facebook) account
-* Business Manager created and linked to your personal account
-* At least one Facebook Page
-* Ad Account owned by or shared with the Business Manager
-* **User access:**
-  * Admin access to Business Manager
-  * Admin or Advertiser access to the Ad Account
+* Cuenta personal válida de Meta (Facebook)
+* Business Manager creado y vinculado a tu cuenta personal
+* Al menos una página de Facebook
+* Cuenta publicitaria que pertenezca a Business Manager o se comparta con él
+* **Acceso de usuario:**
+  * Acceso de administrador a Business Manager
+  * Acceso de administrador o anunciante a la cuenta publicitaria
 
-You must be the ad account owner or have Admin/Advertiser permissions on an ad account connected to a Business Manager. These permissions are required to manage ads and audiences and are essential for DCP integrations.
+Debes ser el propietario de la cuenta publicitaria o tener permisos de administrador/anunciante en una cuenta publicitaria conectada a Business Manager. Estos permisos son necesarios para gestionar anuncios y audiencias, y son esenciales para las integraciones de DCP.
 
-**Important requirements:**
+**Requisitos importantes:**
 
-* The Meta user used to connect the DCP must:
-  * Accept Meta Ads Terms & Conditions
-  * Accept Custom Audiences Terms of Service
+* El usuario de Meta utilizado para conectar el DCP debe:
+  * Aceptar los Términos y condiciones de los anuncios de Meta & Condiciones
+  * Aceptar las Condiciones de servicio de las audiencias personalizadas
 
-The same user authenticating the DCP connection must have accepted these terms, otherwise the connection will fail.
+El mismo usuario que autentica la conexión del DCP debe haber aceptado estos términos; de lo contrario, la conexión fallará.
 
-**How it works:**
+**Cómo funciona:**
 
-You need the required permissions during setup to connect the DCP.  
+Necesitas los permisos necesarios durante la configuración para conectar el DCP.  
 
-After setup is complete:
+Después de completar la configuración:
 
-* The DCP can upload and refresh audiences automatically.
+* El DCP puede cargar y actualizar audiencias automáticamente.
 
-**Official resources:**  
-<Anchor target="_blank" href="https://www.facebook.com/business/help/1143109949216644/">Meta Business help</Anchor>
+**Recursos oficiales:**  
+<Anchor target="_blank" href="https://www.facebook.com/business/help/1143109949216644/">Ayuda de Meta Business</Anchor>
 
-**Supported campaign types:**
+**Tipos de campaña admitidos:**
 
-Custom audiences created in the DCP can be activated across the following Meta campaign types:
+Las audiencias personalizadas creadas en el DCP se pueden activar en los siguientes tipos de campaña de Meta:
 
-* **Awareness (Brand Awareness / Reach)** – Used for broad audience targeting
-* **Traffic** – Used to drive users to a destination (e.g., website or app)
-* **Engagement** – Used for optimizing interactions (e.g., post engagement, video views)
-* **Leads** – Used for lead generation campaigns
-* **App Promotion** – Used for app installs and re-engagement
-* **Sales (Conversions)** – Used for driving purchases or other conversion events
+* **Reconocimiento (Reconocimiento de marca / Alcance)** – Se utiliza para el targeting de audiencias amplias
+* **Tráfico** – Se utiliza para impulsar a los usuarios hacia un destino (p. ej., un sitio web o una app)
+* **Engagement** – Se utiliza para optimizar las interacciones (p. ej., interacción con publicaciones, visualizaciones de vídeo)
+* **Leads** – Se utiliza para campañas de generación de leads
+* **Promoción de aplicaciones** – Se utiliza para la instalación de la app y el re-engagement
+* **Ventas (Conversiones)** – Se utiliza para impulsar compras u otros eventos de conversión
 
-DCP audiences (Custom Audiences) can be used for direct targeting across all Meta campaign types, supporting full-funnel use cases from awareness to conversion.
+Las audiencias del DCP (Custom Audiences) se pueden usar para el targeting directo en todos los tipos de campaña de Meta, con soporte para casos de uso de embudo completo, desde el reconocimiento hasta la conversión.
 
-**Connection expiration:**
+**Caducidad de la conexión:**
 
-* Connections are generally long-lived but may break due to: password resets, MFA/security changes, revoked permissions, Business Manager ownership changes, or Meta policy reviews
+* Por lo general, las conexiones son de larga duración, pero pueden interrumpirse por restablecimientos de contraseña, cambios en la MFA o la seguridad, permisos revocados, cambios de propiedad en Business Manager o revisiones de políticas de Meta
 
-**Audience freshness:**
+**Recencia de las audiencias:**
 
-* Recommended operational validation: every 60–90 days
-* Recommended audience refresh: daily for conversion/lifecycle campaigns; every 3–7 days acceptable for awareness campaigns
+* Validación operativa recomendada: cada 60–90 días
+* Actualización de audiencias recomendada: diaria para campañas de conversión/ciclo de vida; cada 3–7 días es aceptable para campañas de reconocimiento
 
 </Accordion>
 
@@ -248,64 +247,64 @@ DCP audiences (Custom Audiences) can be used for direct targeting across all Met
 
 <Accordion title="TikTok">
 
-**Media partner platform:**  
+**Plataforma del partner de medios:**  
 TikTok Ads Manager
 
-**Media partner name in DCP:**  
+**Nombre del partner de medios en el DCP:**  
 TikTok
 
-**Media partner’s connection setup and account permissions requirements:**
+**Requisitos de configuración de la conexión y permisos de la cuenta del partner de medios:**
 
-TikTok Ads Manager account.  
-Approved and active advertiser account.  
-Admin access to the advertiser.  
+Cuenta del Administrador de anuncios de TikTok.  
+Cuenta de anunciante aprobada y activa.  
+Acceso de administrador al anunciante.  
 
-Active TikTok Ads account (Ads Manager)
+Cuenta de anuncios de TikTok activa (Administrador de anuncios)
 
-* **Ad Account access:**
-  * Admin or Operator access to the TikTok Ads account
-* **Audience permissions:**
-  * Ability to create and manage Custom Audiences
-* **Partner authorization:**
-* The partner (DCP) must be granted access via TikTok Business Center or Ads Manager
+* **Acceso a la cuenta de anuncios:**
+  * Acceso de administrador u operador a la cuenta de anuncios de TikTok
+* **Permisos de audiencia:**
+  * Capacidad para crear y gestionar audiencias personalizadas
+* **Autorización de Partners:**
+* Se debe conceder acceso a Partners (DCP) a través de TikTok Business Center o Ads Manager
 
-**How it works:**
+**Cómo funciona:**
 
-An Admin or Standard user is required during setup to authorize and connect the DCP.  
+Se requiere un usuario administrador o estándar durante la configuración para autorizar y conectar el DCP.  
 
-After setup is complete:
+Después de completar la configuración:
 
-* The DCP can upload and refresh audiences automatically
-* Audience activation happens directly within TikTok Ads using those uploaded audiences
+* El DCP puede cargar y actualizar audiencias automáticamente
+* La activación de audiencias se realiza directamente en TikTok Ads usando esas audiencias cargadas
 
-**Official resources:**  
-<Anchor target="_blank" href="https://ads.tiktok.com/help/article/invite-partners-into-tiktok-business-center?lang=en">TikTok Business Center partner access help</Anchor>
+**Recursos oficiales:**  
+<Anchor target="_blank" href="https://ads.tiktok.com/help/article/invite-partners-into-tiktok-business-center?lang=en">Ayuda sobre el acceso de partners en TikTok Business Center</Anchor>
 
-**Supported campaign types:**
+**Tipos de campaña admitidos:**
 
-Custom Audiences created in the DCP can be activated across the following TikTok campaign types:
+Las audiencias personalizadas creadas en el DCP se pueden activar en los siguientes tipos de campaña de TikTok:
 
-* **Reach** – Used for maximizing audience exposure
-* **Traffic** – Used to drive users to a website or landing page
-* **Video Views** – Used to maximize video engagement
-* **Lead Generation** – Used to collect leads directly on TikTok
-* **App Promotion** – Used for app installs and re-engagement
-* **Conversions (Website Conversions)** – Used to drive actions such as purchases or sign-ups
+* **Alcance** – Se usa para maximizar la exposición de las audiencias
+* **Tráfico** – Se usa para impulsar a los usuarios a un sitio web o una landing page
+* **Visualizaciones de vídeo** – Se usa para maximizar el engagement con el vídeo
+* **Generación de leads** – Se usa para recopilar leads directamente en TikTok
+* **Promoción de apps** – Se usa para la instalación de la app y el re-engagement
+* **Conversiones (conversiones en el sitio web)** – Se usa para impulsar acciones como compras o registros
 
-DCP audiences (Custom Audiences) can be used for direct targeting across all TikTok campaign types, supporting full-funnel use cases from awareness to conversion.
+Las audiencias del DCP (audiencias personalizadas) se pueden usar para el targeting directo en todos los tipos de campaña de TikTok, con soporte para casos de uso de embudo completo, desde el reconocimiento hasta la conversión.
 
-**Connection expiration:**
+**Caducidad de la conexión:**
 
-* OAuth/business authorization may expire or be revoked due to permission or admin changes
+* La autorización OAuth o empresarial puede caducar o revocarse debido a cambios en los permisos o en la administración
 
-**Audience freshness:**
+**Actualización de audiencias:**
 
-* Recommended token and permission validation: quarterly
-* Recommended audience refresh: daily preferred; maximum 7 days for active audiences
+* Validación recomendada del token y de los permisos: trimestral
+* Actualización recomendada de audiencias: preferiblemente a diario; máximo 7 días para audiencias activas
 
-**Additional requirements / limitations:**
+**Requisitos adicionales / limitaciones:**
 
-* Minimum Audience Size: A Custom Audience requires a strict minimum of 1,000 total matched users before it can be applied to an ad group
+* Tamaño mínimo de la audiencia: una audiencia personalizada requiere un mínimo estricto de 1.000 usuarios totales coincidentes para poder aplicarse a un grupo de anuncios
 
 </Accordion>
 
@@ -313,53 +312,53 @@ DCP audiences (Custom Audiences) can be used for direct targeting across all Tik
 
 <Accordion title="Pinterest">
 
-**Media partner platform:**  
-Pinterest Ads Manager
+**Plataforma del partner de medios:**  
+Administrador de anuncios de Pinterest
 
-**Media partner name in DCP:**  
+**Nombre del partner de medios en DCP:**  
 Pinterest
 
-**Media partner’s connection setup and account permissions requirements:**
+**Requisitos de configuración de la conexión del partner de medios y de permisos de la cuenta:**
 
-* Active Pinterest Business account  
-  Ads Manager account linked to the business
-* **User access:**
-  * Admin or Analyst (with audience permissions) access to the ad account
-* **Audience permissions:**
-  * Ability to create and manage Customer Lists (audiences)
-* **Partner access:**
-  * The partner (DCP) must be granted access to the ad account via Business Manager
+* Cuenta activa de Pinterest Business  
+  Cuenta del Administrador de anuncios vinculada a la empresa
+* **Acceso de usuario:**
+  * Acceso de administrador o analista (con permisos de audiencias) a la cuenta de anuncios
+* **Permisos de audiencias:**
+  * Capacidad para crear y gestionar listas de clientes (audiencias)
+* **Acceso del partner:**
+  * Se debe conceder al partner (DCP) acceso a la cuenta de anuncios a través de Business Manager
 
-**How it works:**
+**Cómo funciona:**
 
-An Admin or (or sufficient) user is required during setup to connect the DCP and grant permissions.  
+Se requiere un administrador o un usuario (con permisos suficientes) durante la configuración para conectar el DCP y conceder permisos.  
 
-After setup is complete:
+Una vez completada la configuración:
 
-* The DCP can upload and refresh audiences automatically
+* El DCP puede cargar y actualizar audiencias automáticamente
 
-**Official resources:**  
-<Anchor target="_blank" href="https://help.pinterest.com/en/business/article/audience-targeting">Pinterest audience targeting help</Anchor>
+**Recursos oficiales:**  
+<Anchor target="_blank" href="https://help.pinterest.com/en/business/article/audience-targeting">Ayuda de Pinterest sobre targeting de audiencias</Anchor>
 
-**Supported campaign types:**
+**Tipos de campaña compatibles:**
 
-Customer List audiences created in the DCP can be activated across the following Pinterest campaign types:
+Las audiencias de listas de clientes creadas en el DCP se pueden activar en los siguientes tipos de campaña de Pinterest:
 
-* **Awareness** – Used to maximize reach and brand visibility
-* **Consideration (Traffic / Engagement / Video Views)** – Used to drive clicks, engagement, or video views
-* **Conversions** – Used to drive actions such as purchases, sign-ups, or other conversion events
-* **Catalog Sales (Shopping ads)** – Used to promote products from a catalog and drive purchases
+* **Awareness** – Se utiliza para maximizar el alcance y la visibilidad de la marca
+* **Consideration (Traffic / Engagement / Video Views)** – Se utiliza para impulsar clics, engagement o visualizaciones de vídeo
+* **Conversions** – Se utiliza para impulsar acciones como compras, registros u otros eventos de conversión
+* **Catalog Sales (Shopping ads)** – Se utiliza para promocionar productos de un catálogo e impulsar compras
 
-DCP audiences (Customer Lists) can be used for direct targeting across all Pinterest campaign types, supporting full-funnel use cases from awareness to conversion, including shopping/catalog campaigns.
+Las audiencias de DCP (listas de clientes) se pueden usar para el targeting directo en todos los tipos de campaña de Pinterest, lo que permite casos de uso de embudo completo, desde el reconocimiento hasta la conversión, incluidas las campañas de shopping/catálogo.
 
-**Connection expiration:**
+**Caducidad de la conexión:**
 
-* OAuth tokens and partner permissions may expire or be revoked depending on business/account changes
+* Los tokens de OAuth y los permisos de los Partners pueden caducar o revocarse en función de cambios en la empresa o la cuenta
 
-**Audience freshness:**
+**Actualización de las audiencias:**
 
-* Recommended operational reconnect validation: every 60–90 days
-* Recommended audience refresh: every 1–7 days, depending on campaign type
+* Validación operativa de la reconexión recomendada: cada 60–90 días
+* Actualización de audiencias recomendada: cada 1–7 días, según el tipo de campaña
 
 </Accordion>
 
@@ -367,97 +366,97 @@ DCP audiences (Customer Lists) can be used for direct targeting across all Pinte
 
 <Accordion title="The Trade Desk">
 
-**Media partner platform:**  
+**Plataforma del partner de medios:**  
 The Trade Desk (TTD)
 
-**Media partner name in DCP:**  
+**Nombre del Partner de medios en DCP:**  
 The Trade Desk
 
-**Media partner’s connection setup and account permissions requirements:**
+**Requisitos de configuración de la conexión y de permisos de la cuenta del Partner de medios:**
 
-* Active The Trade Desk (TTD) account
-* **User access:**
-  * Admin or Trader-level access to the account
-* **Audience permissions:**
-  * Ability to create and manage first-party audiences (data segments)
-* **Data sharing enabled:**
-  * Account must allow data onboarding / audience ingestion from external partners (such as DCPs)
-* **Partner authorization:**
-  * The partner (DCP) must be approved and linked as a data provider in TTD
-* **API credentials (required)** Required for API-based audience upload and activation:
-  * Generate from the “First Party Data Credentials” section in TTD (or request them from your TTD account admin):
-    * Advertiser ID
-    * Advertiser Secret Key
+* Cuenta de The Trade Desk (TTD) activa
+* **Acceso de usuario:**
+  * Acceso de nivel Admin o Trader a la cuenta
+* **Permisos de audiencias:**
+  * Capacidad para crear y gestionar audiencias first-party (segmentos de datos)
+* **Intercambio de datos habilitado:**
+  * La cuenta debe permitir el Onboarding de datos o la ingestión de audiencias desde Partners externos (como los DCP)
+* **Autorización del Partner:**
+  * El Partner (DCP) debe estar aprobado y vinculado como proveedor de datos en TTD
+* **Credenciales de API (obligatorias)** Necesarias para la carga y activación de audiencias mediante API:
+  * Genéralas en la sección «First Party Data Credentials» de TTD (o pídeselas al administrador de tu cuenta de TTD):
+    * ID de anunciante
+    * Clave secreta del anunciante
 
-**How it works:**
+**Cómo funciona:**
 
-An Admin or Trader user is required during setup to:
+Se requiere un usuario Admin o Trader durante la configuración para:
 
-* Enable the integration
-* Generate API credentials
-* Approve partner data sharing
+* Habilitar la integración
+* Generar credenciales de API
+* Aprobar el intercambio de datos del partner
 
-After setup is complete:
+Cuando la configuración se haya completado:
 
-* The DCP uploads audiences via API credentials + partner configuration
-* Audiences are available as first-party data segments in TTD
+* El DCP carga audiencias mediante credenciales de API + configuración del partner
+* Las audiencias están disponibles como segmentos de datos de first-party en TTD
 
-**Official resources:**  
-<Anchor target="_blank" href="https://www.thetradedesk.com/">The Trade Desk platform</Anchor>
+**Recursos oficiales:**  
+<Anchor target="_blank" href="https://www.thetradedesk.com/">La plataforma The Trade Desk</Anchor>
 
-**Supported campaign types:**
+**Tipos de campaña compatibles:**
 
-First-party audiences created in the DCP can be activated across the following TTD campaign types:
+Las audiencias first-party creadas en el DCP se pueden activar en los siguientes tipos de campaña de TTD:
 
-* **Display** – Used for direct audience targeting across web and in-app inventory
-* **Video (Online Video & CTV)** – Used for targeting on programmatic video and connected TV inventory
-* **Audio** – Used for targeting on digital audio/streaming platforms
-* **Native** – Used for audience targeting across native ad formats
+* **Display** – Se usa para el targeting directo de audiencias en inventario web y in-app
+* **Video (Online Video & CTV)** – Se usa para el targeting en inventario de vídeo programático y TV conectada
+* **Audio** – Se usa para el targeting en plataformas de audio digital/streaming
+* **Native** – Se usa para el targeting de audiencias en formatos de anuncios nativos
 
-DCP audiences in The Trade Desk are used for direct targeting across all campaign types, including Display, Video (CTV & OLV), Audio, and Native, enabling deterministic audience activation across channels.
+Las audiencias de DCP en The Trade Desk se usan para el targeting directo en todos los tipos de campaña, incluidos Display, Video (CTV & OLV), Audio y Native, lo que permite la activación determinista de audiencias en todos los canales.
 
-**Connection expiration:**
+**Caducidad de la conexión:**
 
-* API credentials are typically long-lived until manually rotated or revoked
-* Recommended credential rotation: every 6–12 months per security policy
+* Las credenciales de API suelen tener una larga duración hasta que se rotan o revocan manualmente
+* Rotación de credenciales recomendada: cada 6–12 meses, según la política de seguridad
 
-**Audience freshness:**
+**Actualidad de las audiencias:**
 
-* Recommended audience refresh: daily or weekly, depending on activation use case and segment volatility
+* Actualización de audiencias recomendada: diaria o semanal, según el caso de uso de activación y la volatilidad del segmento
 
 </Accordion>
 
-## Create a partner connection
+## Crear una conexión de partner
 
-You can set up partner connections as part of the audience-builder flow or separately.
+Puedes configurar conexiones con partners como parte del flujo del creador de audiencias o por separado.
 
 <div id="setup-as-part-of-the-audiencebuilder-flow" />
 
-<Accordion title="Setup as part of the audience-builder flow">
+<Accordion title="Configuración como parte del flujo del creador de audiencias">
 
-<span id="h_01HZHF5BWHBE7W8VNM3QFB7K58"></span>**To create a media partner connection as part of the audience-builder flow:**
+<span id="h_01HZHF5BWHBE7W8VNM3QFB7K58"></span>**Para crear una conexión con un partner de medios como parte del flujo del creador de audiencias:**
 
-Follow the instructions detailed <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences#step-3-connect-and-export">here</Anchor>.
+Sigue las instrucciones detalladas <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences#step-3-connect-and-export">aquí</Anchor>.
 
 </Accordion>
 
 <div id="separate-setup" />
 
-<Accordion title="Separate setup">
+<Accordion title="Configuración por separado">
 
-<span id="h_01HZHF5BWH7P8HCWS9SG1JQ2BT"></span>**To create a connection outside the audience-builder flow:**
+<span id="h_01HZHF5BWH7P8HCWS9SG1JQ2BT"></span>**Para crear una conexión fuera del flujo del creador de audiencias:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
-2. From the top-right menu, click **Manage connections**.
-3. Click **New connection**. If you already have existing cloud connections in your account, you'll see them all under **Partner**.
-4. From the **New media partner connection** dialog, select the relevant media partner.
+1. En AppsFlyer, desde el menú lateral, ve a **Colaborar** > **Data Clean Room**.
+2. Desde el menú de la parte superior derecha, haz clic en **Gestionar conexiones**.
+3. Haz clic en **Nueva conexión**. Si ya tienes conexiones en la nube en tu cuenta, las verás todas en **Partner**.
+4. En **Nueva conexión con un partner de medios**, selecciona el partner de medios correspondiente.
 
-   <Image alt="New media partner connection.png" src="https://files.readme.io/1c50a570d4eb495c3d77ee8e572b14a577e39adad65e41fe20eb3b014cce8989-46196842129425.png" width="91.09%" />
-5. Enter a connection name.
-6. Log in to the media partner account with your credentials, and follow their instructions to enable AppsFlyer access.
-7. Click **Select account ID** and select the relevant account for this connection.
-8. Click **Save**. The new connection is added to the list of partners.
+   <Image alt="Nueva conexión de partners de medios.png" src="https://files.readme.io/1c50a570d4eb495c3d77ee8e572b14a577e39adad65e41fe20eb3b014cce8989-46196842129425.png" width="91.09%" />
+5. Ingresa un nombre de conexión.
+6. Inicia sesión en la cuenta del partner de medios con tus credenciales y sigue sus instrucciones para habilitar el acceso a AppsFlyer.
+7. Haz clic en **Seleccionar ID de cuenta** y selecciona la cuenta relevante para esta conexión.
+8. Haga clic en **Guardar**. La nueva conexión se añade a la lista de partners.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01KNS1JFT1R7K6MCWJRGA2EAAY=at-a-glance h_01KNS1JFT1C788JKA9ZH657TE0=about-partner-connections h_01KP0WCJVS71MZ5XEXRHRWXX2Q=note media-partner-connections=supported-partner-connections h_01KNS1JFT1CT1AC1C6PAZAM779=supported-partner-connections h_01KNS1JFT1RE8MA525AJ99D9DS=google-ads app-campaigns-aci-ace-guidelines=app-campaigns-aci--ace-guidelines h_01KQC3Y84E1GT5VJB463N42SFT=app-campaigns-aci--ace-guidelines h_01KQC759QZPWJ7MWGPK7TJ06HW=notes h_01KNS1JFT1VESJCKHV4S11EKST=dv360 h_01KNS1JFT1P3ZR6EG6YR0M1F98=meta-ads h_01KNS1JFT1GTXJ4PMV5QKSDEX9=tiktok h_01KNS1JFT18VRXFHBYPRTS2MS6=pinterest h_01KNS1JFT2GJMKYNGR6ZRMWN25=the-trade-desk h_01KP115WC2QNT7MAS73HZSHQJT=create-a-partner-connection h_01KP11SX0VMYNRCY9C7GKQPYGB=setup-as-part-of-the-audiencebuilder-flow h_01KP11SX0VCAQM5MEGV3RKG086=separate-setup" />
+<div data-zendesk-anchors="at-a-glance=resumen-general h_01KNS1JFT1R7K6MCWJRGA2EAAY=resumen-general about-partner-connections=acerca-de-las-conexiones-de-partners h_01KNS1JFT1C788JKA9ZH657TE0=acerca-de-las-conexiones-de-partners h_01KP0WCJVS71MZ5XEXRHRWXX2Q=advertencia media-partner-connections=conexiones-de-partners-compatibles h_01KNS1JFT1CT1AC1C6PAZAM779=conexiones-de-partners-compatibles h_01KNS1JFT1RE8MA525AJ99D9DS=google-ads app-campaigns-aci-ace-guidelines=directrices-de-campa%C3%B1as-de-aplicaciones-aci--ace h_01KQC3Y84E1GT5VJB463N42SFT=directrices-de-campa%C3%B1as-de-aplicaciones-aci--ace h_01KQC759QZPWJ7MWGPK7TJ06HW=notas h_01KNS1JFT1VESJCKHV4S11EKST=dv360 h_01KNS1JFT1P3ZR6EG6YR0M1F98=meta-ads h_01KNS1JFT1GTXJ4PMV5QKSDEX9=tiktok h_01KNS1JFT18VRXFHBYPRTS2MS6=pinterest h_01KNS1JFT2GJMKYNGR6ZRMWN25=the-trade-desk create-a-partner-connection=crear-una-conexi%C3%B3n-de-partner h_01KP115WC2QNT7MAS73HZSHQJT=crear-una-conexi%C3%B3n-de-partner h_01KP11SX0VMYNRCY9C7GKQPYGB=setup-as-part-of-the-audiencebuilder-flow h_01KP11SX0VCAQM5MEGV3RKG086=separate-setup" />

@@ -1,5 +1,7 @@
 ---
-title: Basic fraud detection and insights​ with ProtectLITE dashboard and reporting
+title: >-
+  Detección básica de fraude e insights con el dashboard de ProtectLITE y
+  reportes
 metadata:
   keywords:
     - Advertisers
@@ -14,182 +16,181 @@ x-zendesk:
     - Marketers
     - Protect360 / Fraud protection
   created_at: '2021-01-25T09:47:02Z'
-  edited_at: '2025-06-03T07:54:47Z'
+  edited_at: '2026-08-12T11:54:40Z'
   id: 360017223058
-  locale: en-us
+  locale: es
   section: Protect your traffic
   section_id: 6551015912465
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360017223058-Basic-fraud-detection-and-insights-with-ProtectLITE-dashboard-and-reporting
+  url: https://support.appsflyer.com/hc/es/articles/360017223058
 ---
-> **At a glance:** ProtectLITE provides insights about fraudulent installs blocked by our basic, free protection engine, and installs blocked due to the application of validation rules.
+> **En resumen:** ProtectLITE proporciona insights sobre las instalaciones fraudulentas bloqueadas por nuestro motor de protección básico y gratuito, y las instalaciones bloqueadas debido a la aplicación de reglas de validación.
 
 ## ProtectLITE
 
-ProtectLITE provides free, basic protection against install attribution fraud. Advanced fraud protection and detection are available with <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor>.
+ProtectLITE proporciona protección básica y gratuita contra el fraude de atribución de instalaciones. La protección y detección avanzadas contra el fraude están disponibles con <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide">Protect360</Anchor>.
 
-When AppsFlyer identifies fraud, it is blocked in the traffic data (available via AppsFlyer dashboards and raw data reports), but it does not impact the end-user app experience. This means the app user can still use the app and generate revenue for the advertiser.
+Cuando AppsFlyer identifica fraude, se bloquea en los datos de tráfico (disponibles a través de los dashboards de AppsFlyer y los reportes de raw data), pero no afecta a la experiencia del usuario de la aplicación. Esto significa que el usuario de la aplicación puede seguir usando la aplicación y generar ingresos para el anunciante.
 
-The ProtectLITE dashboard:
+El Dashboard de ProtectLITE:
 
-* Displays aggregate data for all your apps for installs blocked in real-time, either due to fraudulent installs, hijacked installs, or your <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">Validation Rules</Anchor>.
-* Allows you to drill down to further examine identified installs by using the filtering and grouping options.
-* Shows you additional anti-fraud capabilities that can be accessed only with a Protect360 subscription, including: Advanced real-time fraud, post-attribution fraud, in-app events fraud, in-app events Validation Rules, and anomalies analysis tools.
+* Muestra datos agregados de todas tus aplicaciones para las instalaciones bloqueadas en tiempo real, ya sea debido a instalaciones fraudulentas, instalaciones secuestradas o tus <Anchor target="_blank" href="/marketers/es/docs/implement-validation-rules-to-prevent-fraud">Reglas de validación</Anchor>.
+* Te permite profundizar para examinar más a fondo las instalaciones identificadas utilizando las opciones de filtrado y agrupación.
+* Te muestra funcionalidades antifraude adicionales a las que solo se puede acceder con una suscripción a Protect360, incluidas: fraude avanzado en tiempo real, fraude posterior a la atribución, fraude en eventos in-app, reglas de validación de eventos in-app y herramientas de análisis de anomalías.
 
-ProtectLITE <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports">raw data</Anchor>:
+ProtectLITE <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports">raw data</Anchor>:
 
-* Is available in the Protect360 Installs report via the Export Data page and Pull API.
+* Está disponible en el reporte de instalaciones de Protect360 a través de la página Export Data y Pull API.
 
-## Dashboard
+## Panel de Control
 
-To view the ProtectLITE dashboard, in AppsFlyer, go to **Protect360**.
+Para ver el dashboard de ProtectLITE, en AppsFlyer ve a **Protect360**.
 
-Dashboard features are described in the sections that follow.
+Las funciones del panel de control se describen en las siguientes secciones.
 
 <div id="filters-and-groupings" />
 
-<Accordion title="Filters and groupings">
+<Accordion title="Filtros y agrupaciones">
 
-**Filter and groupings window**
+**Ventana de filtros y agrupaciones**
 
-The following filtering and grouping options are available:
+Las siguientes opciones de filtrado y agrupación están disponibles:
 
-* Basic filters:
-  * App name
-  * Source type: Non-organic and/or organic
-  * Media source
-  * Geo
-  * Date range (<Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#protect360-dashboard">see time zone support</Anchor>)
-* Expanded filters - click on the blue arrow, to the right of the date picker:
-  * Agencies
-  * Channels
-  * Minimum cohort size
-* Grouping options - choose different dimensions to group the fraud data by to get the specific insights you need:
-  * **Application:** compare the total amount of fraud per each of your apps.
-  * **Media Source** (default): compare the handled fraud from each of the media sources used by your apps.
-  * **Media Source + Campaign**: compare the handled fraud from all your campaigns across all media sources used by your apps.
-  * **Media Source + Site ID**: compare the handled fraud from all publishers (site IDs) across all media sources used by your apps.
-  * **Media Source + Site ID + Campaign**: compare the handled fraud from all publishers (site IDs) across all media sources used by your apps, associated with the relevant campaign names.
-  * **Geo**: compare the handled fraud from all countries.
-  * **Media source + Geo** (available in the In-app events dashboard): compare the handled fraud from each of the media sources used by your apps associated with the relevant countries.
+* Filtros básicos:
+  * Nombre de aplicación
+  * Tipo de fuente: No orgánico y/o orgánico
+  * Nombre de la app
+  * Geografía
+  * Rango de fechas (<Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#protect360-dashboard">ver soporte de zona horaria</Anchor>)
+* Filtros ampliados: haz clic en la flecha azul, a la derecha del selector de fecha:
+  * Agencias
+  * Canales
+  * Tamaño mínimo de cohorte
+* Opciones de agrupación: elige entre diferentes dimensiones para agrupar los datos sobre fraude y obtener los insights específicos que necesitas:
+  * **Aplicación:** compara la cantidad total de fraude en cada una de tus aplicaciones.
+  * **Fuente de medios** (opción predeterminada): compara los casos de fraude manejados por cada una de las fuentes de medios que usan tus aplicaciones.
+  * **Fuente de medios + Campaña**: compara los casos de fraude manejados por todas tus campañas en todas las fuentes de medios usadas por tus aplicaciones.
+  * **Fuente de medios + ID de sitio**: compara los casos de fraude manejados por todos los publishers (ID de sitio) en todas las fuentes de medios usadas por tus aplicaciones.
+  * **Fuente de medios + ID de sitio + Campaña**: compara los casos de fraude manejados por todos los publishers (ID de sitio) en todas las fuentes de medios usadas por tus aplicaciones, asociados con los nombres de campaña pertinentes.
+  * **Geolocalización**: compara los casos de fraude manejados de todos los países.
+  * **Fuente de medios + Geolocalización** (disponible en el dashboard de eventos in-app): compara los casos de fraude manejados por cada una de las fuentes de medios usadas por tus aplicaciones, asociados con los países pertinentes.
 
 </Accordion>
 
 <div id="installs-headline-metrics" />
 
-<Accordion title="Installs—headline metrics">
+<Accordion title="Instalaciones: métricas principales">
 
-The headline metrics enable you to see:
+Las métricas principales te permiten ver:
 
-* Estimated savings
-* Identified installs
-* Suspected overall fraud threat
+* Métricas de ahorro estimado:
+* Instalaciones identificadas
+* Se sospecha una amenaza de fraude general
 
-Metrics are relevant for the time period selected in the date filter.
+Las métricas son relevantes para el periodo de tiempo seleccionado en el filtro de fecha.
 
-For the Estimated savings and Identified installs KPIs, there is a percentage value. This value shows how the presented KPI is in relation to the parallel date range before it. For example, this week compared to last week, or any days selected in the date range compared to the same number of days that came before: if it shows an X% increase in estimated savings, it means the previous parallel date range had X% fewer fraudulent installs.
+Para los KPI de ahorro estimado e instalaciones identificadas, hay un valor porcentual. Este valor muestra la relación del KPI presentado con el rango de fechas paralelo anterior. Por ejemplo, esta semana comparada con la anterior, o cualquier día seleccionado en el rango de fechas comparado con la misma cantidad de días que vinieron antes: si muestra un aumento del X % en el ahorro estimado, significa que el rango de fechas paralelo anterior tuvo un X % menos de instalaciones fraudulentas.
 
-#### Estimated savings
+#### Métricas de ahorro estimado:
 
 [![](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)
 
-Estimated savings metrics:
+Métricas de ahorro estimado:
 
-* Displays the value of fraud identified and blocked in real-time by ProtectLITE and Validation Rules, to be settled by you with the ad networks.
-* Uses the formula: Estimated Savings = number of blocked installs X app average eCPI.
-* Are not relevant for organic traffic.
+* Muestra el valor del fraude identificado y bloqueado en tiempo real por ProtectLITE y las Reglas de validación, que debes liquidar con las ad network.
+* Usa la fórmula: Ahorro estimado = número de instalaciones bloqueadas X eCPI promedio de la aplicación.
+* No son relevantes para orgánico tráfico.
 
-For more details on how this amount is calculated read this <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#faq">FAQ</Anchor>.
+Para conocer más detalles sobre cómo se calcula esta cantidad, lee esta <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide#faq">FAQ</Anchor>.
 
-#### Identified installs
+#### Instalaciones identificadas
 
 [![](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)
 
-Identified installs metrics display the number of installs identified and blocked in real-time by ProtectLITE and Validation Rules.
+Las métricas de instalaciones identificadas muestran el número de instalaciones identificadas y bloqueadas en tiempo real por ProtectLITE y las Reglas de validación.
 
-#### Suspected overall fraud threat
+#### Se sospecha una amenaza de fraude general
 
 [![](https://files.readme.io/bb6a33cfea1dbff695d46a4b2f6547b756740cf35b750db25097d7ec772cc3d8-360019091058.jpg)](https://files.readme.io/bb6a33cfea1dbff695d46a4b2f6547b756740cf35b750db25097d7ec772cc3d8-360019091058.jpg)
 
-The suspected overall threat level:
+El nivel general de amenaza sospechado:
 
-* Is an estimate of the fraud that would be blocked by Protect360, if you had a subscription.
-* Gives you a good idea of whether you should upgrade to Protect360 to receive more advanced anti-fraud protection.
+* Es una estimación del fraude que Protect360 bloquearía si tuvieras una suscripción.
+* Te da una buena idea de si deberías pasarte a Protect360 para recibir una protección antifraude más avanzada.
 
 </Accordion>
 
 <div id="installs-chart" />
 
-<Accordion title="Installs—chart">
+<Accordion title="Instalaciones: gráfico">
 
-#### Fraud trend over time chart
+#### Gráfico de tendencia del fraude en el tiempo
 
-The chart displays the number of installs per day blocked by ProtectLITE and Validation Rules, for the time period selected in the date filter.
+El gráfico muestra el número de instalaciones por día bloqueadas por ProtectLITE y las Reglas de validación durante el periodo seleccionado en el filtro de fechas.
 
 </Accordion>
 
 <div id="installs-table" />
 
-<Accordion title="Installs—table">
+<Accordion title="Instalaciones: tabla">
 
-#### Identified fraud breakdown
+#### Desglose de casos de fraude identificados
 
-The table displays the number of installs blocked by ProtectLITE and Validation Rules for the time period selected in the date filter.
+La tabla muestra el número de instalaciones bloqueadas por ProtectLITE y las Reglas de validación durante el periodo seleccionado en el filtro de fechas.
 
-Click **Export CSV** to download the table to your desktop in CSV format.
+Haz clic en **Export CSV** para descargar la tabla en tu escritorio en formato CSV.
 
-The table is presented in a general overview format, as shown in the image that follows.
+La tabla se presenta en un formato de vista general, tal como se muestra en la imagen a continuación.
 
 [![plite_fraud_table.jpg](https://files.readme.io/81246675ce8f0e1243e0c0d64e1cf347246bb403894718ad9e23c56fc594eb84-360019038257.jpg)](https://files.readme.io/81246675ce8f0e1243e0c0d64e1cf347246bb403894718ad9e23c56fc594eb84-360019038257.jpg)
 
-The dynamic table structure lets you:
+La estructura dinámica de la tabla te permite:
 
-* Click the table settings button to add or remove columns to the table.  
-  If you make any changes, make sure to click the Save button afterward so your customizations are saved for your future visits.
-* Change the order of the columns by dragging the columns sections in the columns settings.
+* Haz clic en el botón de configuración de la tabla para añadir o quitar columnas de la tabla.  
+  Si haces algún cambio, asegúrate de hacer clic en el botón Guardar después para que tus personalizaciones se guarden para futuras visitas.
+* Cambia el orden de las columnas arrastrando las secciones de columnas en la configuración de columnas.
 
 [![plite_edit_columns.jpg](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)
 
-#### Content of the identified fraud breakdown table
+#### Contenido de la tabla de desglose de casos de fraude identificados
 
-| Table column | Description |
+| Columna de la tabla | Nota |
 | --- | --- |
-| Groupings | <ul><li>[Default] The table and dashboard are grouped by Media source.</li><li>When selecting a specific media source, the grouping is automatically by both Media source and Site ID.</li><li>Optional groupings include Campaign, GEO, Channel, agency, and combinations thereof.</li><li>If you select a grouping with dimensions that only apply to non-organic traffic, the table displays N/A for the organic media source.</li></ul> |
-| **Installs** | **Headline breakdown of installs blocked due to fraud and Validation Rules** |
-| Total (A) | <ul><li>Total installs = All app installs including fraudulent installs and installs identified via Validation Rules.</li><li>Regular installs are available per media source (non-organic) in the Overview dashboard.</li></ul> |
-| Identified installs (B) | <ul><li>Total number of installs identified and blocked in real-time</li><li>Organic blocked installs are not shown in the dashboard. To see organic blocked installs, use raw data reports.</li><li>[Default] The table is sorted in descending order using this KPI.</li></ul> |
-| **Identified installs %** (B/A) | Identified installs / Total installs |
-| **Identified post-attribution (C)** | Requires Protect360 |
-| **Identified post-attribution % (C/A)** | Requires Protect360 |
-| **Fake installs** | **Fraudulent installs simulating real user activity.** |
-| Real-time block | Fake installs blocked in real-time. |
-| Identified post-attribution | Requires Protect360 |
-| **Hijacked installs** | **Fraudulent last clicks stealing attribution of real user installs.** |
-| Real-time block | Hijacked installs blocked in real-time. |
-| Identified post-attribution | Requires Protect360 |
-| **Validation rules** | **Installs found invalid due to validation rules conditions.** |
-| Blocked installs | Installs blocked by validation rules. |
-| Blocked attribution | Installs with attribution corrected due to validation rules. |
-| **Clicks** | **Legit clicks from the source.**<br /><br />**Note:** All attribution types must be selected in the filter bar in order for click data to display in the table (otherwise it will display as N/A). Be sure to adjust your filter selections accordingly. |
-| Total (E) | Total number of legit clicks received from the source. |
-| Blocked | Clicks blocked due to fraud |
-| **Impressions** | **Impressions from the source.**<br /><br />**Note:** All attribution types must be selected in the filter bar in order for impressions data to display in the table (otherwise it will display as N/A). Be sure to adjust your filter selections accordingly. |
-| Total | Total number of legitimate and fraudulent impressions received from the source |
-| Blocked | Impressions blocked due to fraud |
+| Agrupaciones | <ul><li>[Predeterminado] La tabla y el panel de control están agrupados por fuente de medios.</li><li>Al seleccionar una fuente de medios específica, la agrupación se realiza automáticamente por ID del sitio y fuente de medios.</li><li>Los grupos opcionales incluyen campaña, geolocalización, canal, agencia y combinaciones de estos grupos.</li><li>Si seleccionas una agrupación con dimensiones que solo se aplican al tráfico no-orgánico , la tabla muestra N/A para la orgánica fuente de medios.</li></ul> |
+| **Instalaciones asistidas** | **Desglose principal de las instalaciones bloqueadas por fraude y reglas de validación** |
+| Total (A) | <ul><li>Total de instalaciones = Todas las instalaciones de la app, incluidas las instalaciones fraudulentas y las instalaciones identificadas mediante reglas de validación.</li><li>Las instalaciones regulares están disponibles por fuente de medios (no orgánicas) en el Panel de control de información general.</li></ul> |
+| Instalaciones identificadas (B) | <ul><li>Número total de instalaciones identificadas y bloqueadas en tiempo real</li><li>Las instalaciones orgánicas bloqueadas no se muestran en el dashboard. Para ver las instalaciones orgánicas bloqueadas, usa los reportes de raw data.</li><li>[Predeterminado] La tabla está ordenada por este KPI en forma descendente.</li></ul> |
+| **% de instalaciones identificadas** (B/A) | Instalaciones identificadas / Total de instalaciones |
+| **Identificado tras la atribución (C)** | Requiere Protect360 |
+| **Identificado tras la atribución % (C/A)** | Requiere Protect360 |
+| **Instalaciones falsas** | **Instalaciones fraudulentas que simulan la actividad real del usuario.** |
+| Bloqueo en tiempo real | Instalaciones falsas bloqueadas en tiempo real. |
+| Identificados tras la atribución | Requiere Protect360 |
+| **Instalaciones secuestradas (Hijacked installs)** | **Últimos clics fraudulentos que roban la atribución de instalaciones reales de usuario.** |
+| Bloqueo en tiempo real | Instalaciones secuestradas bloqueadas en tiempo real. |
+| Identificados tras la atribución | Requiere Protect360 |
+| **Reglas de validación** | **Instalaciones consideradas no válidas debido a las condiciones de las reglas de validación.** |
+| Instalaciones bloqueadas | Instalaciones bloqueadas por las reglas de validación. |
+| Atribución bloqueada | Instalaciones con la atribución corregida debido a las reglas de validación. |
+| **Clics** | **Clics legítimos de la fuente.**<br /><br />Nota: **Nota:** Todos los tipos de atribución deben seleccionarse en la barra de filtros para que los datos de clics se muestren en la tabla (de lo contrario se mostrará como N/A). Asegúrate de ajustar tus selecciones de filtro de igual manera. |
+| Total (E) | Número total de clics legítimos recibidos de la fuente. |
+| Bloqueos | Clics bloqueados debido a la limitación de clics |
+| **ID de transacción de reembolso** | **Impresiones de la fuente.**<br /><br />**Nota:** **Nota:** Todos los tipos de atribución deben seleccionarse en la barra de filtros para que los datos de impresiones se muestren en la tabla (de lo contrario se mostrará como N/A). Asegúrate de ajustar tus selecciones de filtro de igual manera. |
+| Total | Número total de impresiones legítimas y fraudulentas recibidas de la fuente |
+| Bloqueos | Impresiones bloqueadas debido a fraude (incluidas las limitadas) |
 
 </Accordion>
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Especificaciones y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Advertiser access | All account users. |
-| Ad network access | <ul><li>ProtectLITE dashboard and raw data access require <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#ad-network-permissions">advertiser permission.</Anchor></li><li>Advertiser must have the ad network as an integrated partner.</li></ul> |
-| Agency access | ProtectLITE dashboard and raw data access require <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#ad-network-permissions">advertiser permission.</Anchor> |
-| Agency transparency | Transparent agency: Can see specific media sources<br /><br />Non-transparent agency: Cannot see specific media sources |
+| Acceso para anunciantes | Todos los usuarios de la cuenta. |
+| Acceso a la red publicitaria | <ul><li>El dashboard de ProtectLITE y el acceso al raw data requieren <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-ad-network">permiso del anunciante</Anchor></li><li>El anunciante debe tener la ad network como partner integrado.</li></ul> |
+| Acceso a la agencia | El dashboard de ProtectLITE y el acceso al raw data requieren <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-ad-network">permiso del anunciante</Anchor> |
+| Transparencia de agencia | Agencia transparente: Puede ver fuentes de medios específicas<br /><br />Agencia no transparente: Puede ver fuentes de medios específicas |
 
 </Accordion>
 
-<div data-zendesk-anchors="01JDHEKR6W19WD6HXFFMRNXKFF=protectlite 01JDHEKR6YGEKRB23M19F5ZGQ5=dashboard 01JDHEKR6YPNDQAK3ATDRDDZTC=filters-and-groupings installs%E2%80%94headline-metrics=installs-headline-metrics 01JDHEKR75TF5RHJTFM91XPYPY=installs-headline-metrics 01JDHEKR76MMVSJSWFTZS5PRBK=estimated-savings 01JDHEKR77VGHR1BWQFPYSWW2E=identified-installs 01JDHEKR78BBFEZS98VG0VTERN=suspected-overall-fraud-threat installs%E2%80%94chart=installs-chart 01JDHEKR795RK8KP9BZ0WECQW8=installs-chart 01JDHEKR79YM7VWE6NH2FJ70NS=fraud-trend-over-time-chart installs%E2%80%94table=installs-table 01JDHEKR79ZBQVSTT4GA162J94=installs-table 01JDHEKR79H7PQFEJGWAY4RMJC=identified-fraud-breakdown 01JDHEKR7BR6ESS9DX03NMHPT0=content-of-the-identified-fraud-breakdown-table 01JDHEKR9JCAR22V33B7TFZSPV=traits-and-limitations" />
+<div data-zendesk-anchors="01JDHEKR6W19WD6HXFFMRNXKFF=protectlite dashboard=panel-de-control 01JDHEKR6YGEKRB23M19F5ZGQ5=panel-de-control 01JDHEKR6YPNDQAK3ATDRDDZTC=filters-and-groupings installs%E2%80%94headline-metrics=installs-headline-metrics 01JDHEKR75TF5RHJTFM91XPYPY=installs-headline-metrics estimated-savings=m%C3%A9tricas-de-ahorro-estimado 01JDHEKR76MMVSJSWFTZS5PRBK=m%C3%A9tricas-de-ahorro-estimado identified-installs=instalaciones-identificadas 01JDHEKR77VGHR1BWQFPYSWW2E=instalaciones-identificadas suspected-overall-fraud-threat=se-sospecha-una-amenaza-de-fraude-general 01JDHEKR78BBFEZS98VG0VTERN=se-sospecha-una-amenaza-de-fraude-general installs%E2%80%94chart=installs-chart 01JDHEKR795RK8KP9BZ0WECQW8=installs-chart fraud-trend-over-time-chart=gr%C3%A1fico-de-tendencia-del-fraude-en-el-tiempo 01JDHEKR79YM7VWE6NH2FJ70NS=gr%C3%A1fico-de-tendencia-del-fraude-en-el-tiempo installs%E2%80%94table=installs-table 01JDHEKR79ZBQVSTT4GA162J94=installs-table identified-fraud-breakdown=desglose-de-casos-de-fraude-identificados 01JDHEKR79H7PQFEJGWAY4RMJC=desglose-de-casos-de-fraude-identificados content-of-the-identified-fraud-breakdown-table=contenido-de-la-tabla-de-desglose-de-casos-de-fraude-identificados 01JDHEKR7BR6ESS9DX03NMHPT0=contenido-de-la-tabla-de-desglose-de-casos-de-fraude-identificados 01JDHEKR9JCAR22V33B7TFZSPV=traits-and-limitations" />

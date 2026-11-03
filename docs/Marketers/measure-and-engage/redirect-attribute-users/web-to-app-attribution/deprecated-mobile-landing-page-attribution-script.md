@@ -1,5 +1,5 @@
 ---
-title: '[Deprecated] Mobile landing page attribution script'
+title: '[Obsoleto] script de atribución de la página de destino móvil'
 deprecated: true
 metadata:
   keywords:
@@ -21,365 +21,369 @@ x-zendesk:
     - Agencies
     - Smart Banners and Scripts
   created_at: '2020-12-16T17:28:55Z'
-  edited_at: '2023-04-02T15:41:35Z'
+  edited_at: '2026-08-12T12:25:15Z'
   id: 360016643258
-  locale: en-us
+  locale: es
   section: Web-to-app attribution
   section_id: 6551240476177
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360016643258--Deprecated-Mobile-landing-page-attribution-script
+  url: https://support.appsflyer.com/hc/es/articles/360016643258
 ---
-> **At a glance:** This script is deprecated as of December 17, 2020, and is replaced by the <Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">OneLink Smart Script</Anchor>. This version continues to work, but will not be updated or changed. The script generates URLs that are embedded behind a button on your mobile website and redirects visitors to download your app. The URLs also support install attribution and deep linking.
+> **En resumen:** Este script dejó de estar en desuso el 17 de diciembre de 2020 y se reemplazó por el <Anchor target="_blank" href="/marketers/es/docs/onelink-smart-script-overview">Smart Script de OneLink</Anchor>. Esta versión sigue funcionando, pero no se actualizará ni cambiará. El script genera URL que se incrustan detrás de un botón en tu sitio web móvil y redirige a los visitantes para que descarguen tu aplicación. Las URL también admiten la atribución de instalaciones y los enlaces profundos.
 
 ![5648_Sunset_and_deprecation-01.png](https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png)
 
-**<Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">Migrate to OneLink Smart Script</Anchor>**
+**<Anchor target="_blank" href="/marketers/es/docs/onelink-smart-script-overview">Migrar a Smart Script de OneLink</Anchor>**
 
-Landing pages are a very common technique among digital marketers. They allow the marketers to capture their leads' details for remarketing, even if these users don’t convert at first.
+Las páginas de destino son una técnica muy común entre los marketers digital. Permiten a los marketers capturar los detalles de sus clientes potenciales para el remarketing, incluso si estos usuarios no generan conversiones al principio.
 
-However, for mobile user acquisition, the landing page strategy has upsides and downsides.
+Sin embargo, para la adquisición de usuarios móviles, la estrategia de la página de destino tiene ventajas y desventajas.
 
-#### The upsides:
+#### Ventajas:
 
-* Leads, who eventually get to install, should be more engaged with the app.
-* The more complicated services (for example, financial services) require more explanations to convert their leads, which is enabled by landing pages.
+* Los clientes potenciales, que eventualmente puedan instalarla, deberían estar más comprometidos con la aplicación.
+* Los servicios más complicados (por ejemplo, los servicios financieros) requieren más explicaciones para convertir sus clientes potenciales, lo que se habilita en las páginas de destino.
 
-#### The downsides:
+#### Desventajas:
 
-* The longer funnel reduces the final number of converted leads.
-* It is more technically challenging to attribute.
+* El embudo más largo reduce el número final de clientes potenciales convertidos.
+* Es más difícil atribuirlo desde el punto de vista técnico.
 
-## The challenges of mobile attribution on landing pages
+## Desafíos de la atribución móvil en las páginas de destino
 
-* **Different media sources require different methods** to complete the landing page scenario with the correct attribution data.
-* **Last click attribution model may cause loss of correct attribution**, if the landing page has its own attribution links.
-* **Direct website visitors are recorded as organic**, unless the landing page has its own attribution links.
-* **Desktop visitors are recorded as organic**, unless the landing page has a method of recording their conversions into mobile users.
+* **Las diferentes fuentes de medios requieren diferentes métodos** para completar el escenario de la página de destino con los datos de atribución correctos.
+* **El modelo de atribución del último clic puede provocar la pérdida de la atribución correcta** si la página de destino tiene sus propios enlaces de atribución.
+* **Los visitantes directos del sitio web se registran como orgánicos**, a menos que la página de destino tenga sus propios enlaces de atribución.
+* **Los visitantes de escritorio se registran como orgánicos**, a menos que la página de destino tenga un método para registrar sus conversiones en usuarios móviles.
 
-## The solution
+## La solución
 
-To solve the mentioned landing page attribution problems, you need to implement a javascript flow in your landing page. We offer a sample script implementation that you can use. Make sure to adjust the script to fit your requirements.
+Para resolver los problemas de atribución de la página de destino mencionados, debes implementar un flujo de JavaScript en tu página de destino. Ofrecemos una implementación de script de muestra que puedes usar. Asegúrate de ajustar el script para que se ajuste a tus necesidades.
 
-In some cases, you also need to make some adjustments to your campaigns.
+En algunos casos, también tendrás que hacer algunos ajustes en tus campañas.
 
-The scenarios below cover the requirements for all possible media source cases.
+Los siguientes escenarios cubren los requisitos para todos los casos posibles de fuentes de medios.
 
-## Landing page scenarios
+## Escenarios de páginas de destino
 
-Follow the implementation instructions below **for all the media sources** sending leads to your landing pages.
+Sigue las instrucciones de implementación que aparecen a continuación **para todas las fuentes de medios** que envían clientes potenciales a tus páginas de destino.
 
 <div id="facebook-ads-crossplatform-attribution" />
 
-<Accordion title="Meta ads: cross-platform attribution">
+<Accordion title="Anuncios de Meta: atribución multiplataforma">
 
-#### Description:
+#### Descripción:
 
-Meta ads is an SRN, which doesn't use external attribution links.
+Los Anuncios de Meta son un SRN, que no utiliza enlaces de atribución externos.
 
-Upon the first app launch, AppsFlyer queries Meta ads whether the user has previously (within the last 28 days) engaged with an advertiser ad on the Facebook app. If they have, Meta ads self-attributes.
+Cuando se lanza la primera aplicación, AppsFlyer consulta los Anuncios de Meta para ver si el usuario ha interactuado anteriormente (en los últimos 28 días) con un anuncio publicado por un anunciante en la aplicación de Facebook. Si lo han hecho, los Anuncios de Meta se autoatribuyen.
 
-Meta ads also attributes cross-platform, meaning that the user may interact with any type of campaign, mobile or not, on any platform, to be self-attributed by Meta ads.
+Los Anuncios de Meta también se atribuyen a la multiplataforma, lo que significa que el usuario puede interactuar con cualquier tipo de campaña, móvil o no, en cualquier plataforma, para que los Anuncios de Meta lo atribuyan a sí mismo.
 
-#### Conclusion:
+#### Conclusión:
 
-A lead with the available device ID, coming from the Facebook app to a landing page, gets correctly attributed to Meta ads. This happens regardless of the new click recorded on the landing page.  
-However, when users opt not to share their device ID, as is expected with iOS 14 users during 2021, Meta ads' cross-platform attribution may not work anymore.
+Un cliente potencial con el ID de dispositivo disponible, que proviene de la aplicación de Facebook y va a una página de destino, se atribuye correctamente a los Anuncios de Meta. Esto ocurre independientemente del nuevo clic registrado en la página de destino.  
+Sin embargo, cuando los usuarios optan por no compartir su ID de dispositivo, como se espera con los usuarios de iOS 14 durante 2021, es posible que la atribución multiplataforma de Anuncios de Meta deje de funcionar.
 
-**When device ID sharing becomes optional, use the [Other SRNs method](/docs/deprecated-mobile-landing-page-attribution-script#other-srns-add-parameter) for Meta ads.**
+**Cuando el uso compartido de ID de dispositivo pase a ser opcional, utiliza el [método Otros SRN](/docs/deprecated-mobile-landing-page-attribution-script#other-srns-add-parameter) para los Anuncios Meta.**
 
-* New users who share their device ID would be attributed to Meta ads correctly.
-* New users who don't share their device ID would be attributed to "Facebook\_LP".
+* Los usuarios nuevos que compartan la ID de su dispositivo se atribuirán correctamente a los Anuncios de Meta.
+* Los usuarios nuevos que no compartan su ID de dispositivo se atribuirán a «Facebook\_LP».
 
-#### Instructions:
+#### Instrucciones:
 
-1. On your Meta ads account create a **“Traffic” or "Conversions" campaign with mobile attribution enabled**, sending leads to your landing page.
-2. Landing page Android download button - direct link to Google Play.
-3. Landing page iOS download button - direct link to iTunes (OR attribution link **without the device ID**).
+1. En tu cuenta de Anuncios de Meta, crea una **campaña de «Tráfico» o «Conversiones» con la atribución móvil habilitada** para enviar clientes potenciales a tu página de destino.
+2. Botón de descarga de Android de la página de destino: enlace directo a Google Play.
+3. Botón de descarga de la página de destino para iOS: enlace directo a iTunes (O enlace de atribución **sin el ID del dispositivo**).
 
-#### What the script does
+#### ¿Qué hace el script?
 
-The landing page script makes no changes. The script is designed to detect a user coming from the  Facebook app. If it does, it doesn't do anything. It leaves the landing page direct links to the app stores as they are. This prevents another click from being recorded which could affect CTR.
+El script de la página de destino no realiza cambios. El script está diseñado para detectar a un usuario que proviene de la aplicación de Facebook. Si lo hace, no hace nada. Deja los enlaces directos de la página de destino a las tiendas de aplicaciones tal como están. Esto evita que se grabe otro clic que podría afectar al CTR.
 
-In the script, look for a method called ***isFacebook()*** to learn more about what the script does when a user comes from the Facebook app.
+En el script, busca un método llamado ***isFacebook ()*** para aprender más sobre lo que hace el script cuando un usuario proviene de la aplicación de Facebook.
 
 </Accordion>
 
 <div id="google-ads-gclid-offline-conversion-upload" />
 
-<Accordion title="Google Ads: GCLID + offline conversion upload">
+<Accordion title="Google Ads: Carga de conversiones sin conexión a GCLID +">
 
-#### Description:
+#### Descripción:
 
-The usual process for install attribution of Google Ads campaigns requires clicking leads to be redirected to the app's store page URL.
+El proceso habitual para instalar la atribución de las campañas de Google Ads requiere que los clientes potenciales que hacen clic se redirijan a la URL de la página de la tienda de la aplicación.
 
-So, when redirecting leads from Google Ads to a landing page, use a mediator to connect between the mobile install and the original click on the non-mobile Google Ads campaign.
+Por lo tanto, cuando redirijas clientes potenciales de Google Ads a una página de destino, utiliza un mediador para establecer la conexión entre la instalación móvil y el clic original en la campaña de Google Ads para dispositivos no móviles.
 
-#### Conclusion:
+#### Conclusión:
 
-The solution for Google Ads has 2 parts.
+La solución para Google Ads consta de dos partes.
 
-The first part takes care of **attributing on AppsFlyer** the mobile users that get to the landing page from Google, and install the app from there. It requires tagging the click URLs from Google, identifying them on the landing page and creating a dynamic OneLink with data from the URL.
+La primera parte se ocupa de **atribuir en AppsFlyer** a los usuarios móviles que llegan a la página de destino desde Google e instalar la aplicación desde allí. Requiere etiquetar las URL en las que se hace clic desde Google, identificarlas en la página de destino y crear un OneLink dinámico con los datos de la URL.
 
-The second part takes care of **notifying Google Ads** about these mobile installs, using Google's offline conversion upload method.
+La segunda parte se ocupa de **notificar a Google Ads** sobre estas instalaciones móviles mediante el método de subida de conversiones offline de Google.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> This GCLID solution is not officially supported or recommended by Google. In case that Google deprecates the GCLID parameter, we will change the script to support the changes. We recommend following this article, by clicking the ***Follow*** button in the article header, to get informed when there is an update to the article or attached script.
+> Esta solución GCLID no es oficialmente compatible ni recomendada por Google.
+> En caso de que Google deje de utilizar el parámetro GCLID, cambiaremos el script para admitir los cambios.
+> Recomendamos seguir este artículo haciendo clic en el botón ***Seguir*** en el encabezado del artículo para estar informado cuando haya una actualización del artículo o del script adjunto.
 
-#### Instructions:
+#### Instrucciones:
 
-Part 1 - Attributing to Google Ads on AppsFlyer
+Parte 1: Atribuir a Google Ads en AppsFlyer
 
-On Google's dashboard - **Enable Auto-tagging** (<Anchor target="_blank" href="https://support.google.com/analytics/answer/1033981?hl=en">here's how</Anchor>).
+En el panel de control de Google: **habilita el etiquetado automático** (<Anchor target="_blank" href="https://support.google.com/analytics/answer/1033981?hl=en">aquí verás cómo se hace</Anchor>).
 
-With auto-tagging enabled, **the URL to the landing page contains the *GCLID* parameter**.
+Con el etiquetado automático activado, **la URL de la página de destino contiene el parámetro *GCLID***.
 
-URL example: `http://www.yoursite.com/yourlandingpage?gclid={USER_GCLID}`
+Ejemplo de URL: `http://www.yoursite.com/yourlandingpage?gclid={USER_GCLID}`
 
-On your landing page load -
+Al cargar tu página de destino -
 
-1. Activate the ***generateUrl*** Javascript function
-2. The function (see below) looks for the ***GCLID*** parameter and builds a long OneLink URL containing its value under the af\_sub1 parameter (you can use any of the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#what-are-subscriber-parameters-good-for">subscriber parameters</Anchor> af\_sub1 - af\_sub5).
-3. Landing page download button uses the generated OneLink URL.  
-   OneLink URL example: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}`
-4. New mobile users are attributed to the **google\_lp** media source and to the CAMPAIGN\_NAME campaign (optional).
-5. No postback is sent to the media source
+1. Activar la función ***GenerateURL*** de Javascript
+2. La función (ver más abajo) busca el parámetro ***GCLID*** y crea una URL larga de OneLink que contiene su valor en el parámetro af\_sub1 (puedes usar cualquiera de los <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#what-are-subscriber-parameters-good-for">parámetros de suscriptor</Anchor> af\_sub1 - af\_sub5).
+3. El botón de descarga de la página de destino utiliza la URL de OneLink generada.  
+   Ejemplo de URL de OneLink: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}`
+4. Los nuevos usuarios de dispositivos móviles se atribuyen a la fuente de medios **google\_lp** y a la campaña CAMPAIGN\_NAME (opcional).
+5. No se envía ningún postback a la fuente de medios.
 
-At this point, the installs are reported in AppsFlyer under the ***google\_lp*** media source, with the GCLID, but not in Google Ads.
+En este momento, las instalaciones se registran en AppsFlyer en la fuente de medios ***google\_lp***, con el GCLID, pero no en Google Ads.
 
-Part 2 - Uploading Installs to Google as Offline Conversions
+Parte 2: Subir las instalaciones a Google como conversiones offline
 
-**This step is only required if you want the conversions to be recorded in the Google Ads platform.**
+**Este paso solo es necesario si quieres que las conversiones se registren en la plataforma de Google Ads.**
 
-For users attributed to google\_lp, the AppsFlyer raw data now displays the GCLID value in the **af\_sub1** column. The GCLID is needed in order to upload offline conversions to Google Ads, you can find more information on the process <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">here</Anchor>).
+Para los usuarios atribuidos a google\_lp, los raw data de AppsFlyer ahora muestran el valor de GCLID en la columna **af\_sub1.** El GCLID es necesario para subir conversiones sin conexión a Google Ads (puedes encontrar más información sobre el proceso <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">aquí</Anchor>).
 
-The conversions can be uploaded manually or via an Adwords API (more info on the API <Anchor target="_blank" href="https://developers.google.com/adwords/api/docs/guides/conversion-tracking#importing_conversions">here</Anchor>).
+Las conversiones se pueden subir manualmente o mediante una API de Adwords (más información sobre la API <Anchor target="_blank" href="https://developers.google.com/adwords/api/docs/guides/conversion-tracking#importing_conversions">aquí</Anchor>).
 
-You can export the CSVs with this information from your AppsFlyer account, or you can get this data from Push API in real-time for every install.
+Puedes exportar los CSV con esta información desde tu cuenta de AppsFlyer o puedes obtener estos datos de la Push API en tiempo real para cada instalación.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> You can also see the keywords your users searched for in AppsFlyer's raw data in a similar fashion to getting the GCLID:
+> También puedes ver las palabras clave que tus usuarios buscaron en el raw data de AppsFlyer de forma similar a como obtuviste el GCLID:
 >
-> 1. For keyword recording, you must include the keyword <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2375447">ValueTrack parameter</Anchor> in the final URL from Google Ads to the landing page URL example: `http://www.yoursite.com/yourlandingpage?gclid={USER_GCLID}&keyword={USER_KEYWORD}`
-> 2. The Javascript function (see below) looks for the ***keyword*** parameter
-> 3. The value is added to the generated OneLink URL under af\_keywords OneLink URL example: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}&af_keywords={USER_PARSED_KEYWORD}`
+> 1. Para el registro de palabras clave, debes incluir el <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2375447">parámetro ValueTrack</Anchor> de palabras clave en la URL final de Google Ads a la página de destino
+>    Ejemplo de URL: `http://www.yoursite.com/yourlandingpage?gclid={USER_GCLID}&keyword={USER_KEYWORD}`
+> 2. La función Javascript (ver más abajo) busca el parámetro de ***palabra clave***
+> 3. El valor se añade a la URL de OneLink generada en af\_keywords
+>    Ejemplo de URL de OneLink: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}&af_keywords={USER_PARSED_KEYWORD}`
 >
-> The JS function below already contains the code to parse the keyword parameter as well.
+> La siguiente función JS ya contiene el código para analizar también el parámetro de la palabra clave.
 
-#### What the script does
+#### ¿Qué hace el script?
 
-Google Ads carry with them a gclid parameter. The script looks for this parameter in the landing page URL. If it sees it, it creates the OneLink such that it reflects that the user comes from Google Ads. The script then puts the OneLink as the link behind the download buttons on the landing page.
+Google Ads lleva consigo un parámetro gclid. El script busca este parámetro en la URL de la página de destino. Si lo ve, crea el OneLink de forma que refleje que el usuario proviene de Google Ads. A continuación, el script coloca el OneLink como enlace detrás de los botones de descarga en la página de destino.
 
-In the script, look for **gclidValue** to learn how the script detects users coming from Google Ads and creates the OneLink accordingly.
+En el script, busca **gclidValue** para saber cómo el script detecta los usuarios que vienen de Google Ads y crea el OneLink en consecuencia.
 
 </Accordion>
 
 <div id="other-srns-add-parameter" />
 
-<Accordion title="Other SRNs: add parameter">
+<Accordion title="Otros SRN: agregar parámetro">
 
-#### Description:
+#### Descripción:
 
-Other <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">SRNs</Anchor>, for example, Snapchat or Twitter, are not cross-platform like Meta ads, and require a bit of work to get your mobile users attributed to them.
+Otras <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#srns-integradas-con-appsflyer">SRN</Anchor>, por ejemplo, Snapchat o Twitter, no son multiplataforma como los Anuncios de Meta y requieren un poco de trabajo para que se les atribuya a los usuarios móviles.
 
-Your campaigns with other SRNs lead your users to the landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
+Tus campañas con otras SRN llevan a tus usuarios a la página de destino y se le factura en función de los clientes potenciales que hacen clic, sin relación con ningún usuario móvil derivado.
 
-#### Conclusion:
+#### Conclusión:
 
-When defining the landing page URL for a campaign on SRNs (besides Meta ads and Google Ads), add a Partner ID parameter to the URL, which states the original SRN.  
-The landing page launches a javaScript (see below) that parses that parameter and builds a OneLink URL, which has the Partner ID value. When mobile users click on that OneLink and install, they get attributed to the stated media source.
+Al definir la URL de la página de destino de una campaña en SRN (además de los Anuncios de Meta y Google Ads), añade un parámetro de ID de partner a la URL, que indique el SRN original.  
+La página de destino lanza un código JavaScript (ver más abajo) que analiza ese parámetro y crea una URL de OneLink, que tiene el valor de ID de partner. Cuando los usuarios de dispositivos móviles hacen clic en ese OneLink y lo instalan, se les atribuye a la fuente de medios indicada.
 
-#### Instructions:
+#### Instrucciones:
 
-On your SRN account -
+En tu cuenta SRN:
 
-1. Create a non-mobile campaign
-2. When defining the landing page URL, add a Partner ID + landing page parameter to the URL (which is not an AF attribution link). The format is "***&af\_pid=srn\_lp***". (see example below)
+1. Crea una campaña que no sea móvil.
+2. Al definir la URL de la página de destino, añade un parámetro Partner ID + de página de destino a la URL (que no es un enlace de atribución de AF). El formato es "***&af\_pid=srn\_lp***». (ver el ejemplo siguiente)
 
-On your landing page load -
+Al cargar tu página de destino -
 
-1. Activate the ***generateUrl*** Javascript function
-2. The function looks for the ***af\_pid*** parameter and builds a OneLink URL containing its value under the ***pid*** parameter
-3. Landing page download button uses the generated OneLink URL
-4. New mobile users are attributed to the custom "Partner ID + landing page" media source
-5. No postback is sent to the media source
+1. Activar la función ***GenerateURL*** de Javascript
+2. La función busca el parámetro ***af\_pid*** y crea una URL de OneLink que contiene su valor en el parámetro ***pid***
+3. El botón de descarga de la página de destino utiliza la URL de OneLink generada.
+4. Los nuevos usuarios móviles se atribuyen a la fuente de medios personalizada «Partner ID + landing page»
+5. No se envía ningún postback a la fuente de medios.
 
-If you specify the real SRN name, e.g. twitter\_int, a postback might be sent to this SRN. This could result in double charges. See the note below for alternative names.
+Si especificas el nombre real del SRN, por ejemplo, twitter\_int, es posible que se envíe postback a esta SRN. Esto podría resultar en cargos dobles. Consulta la nota siguiente para ver los nombres alternativos.
 
-The script itself contains logic to prevent you from using these names. Look for `var SRNs` in the script. You should see a list of SRN names and a condition that checks if `pidValue` is any of these names. Remove this logic after you are done testing the script.
+El script en sí contiene lógica para evitar que utilices estos nombres. Búscalo `var SRNs` en el script. Deberías ver una lista de nombres de SRN y una condición que comprueba si `pidValue` es alguno de estos nombres. Elimina esta lógica cuando hayas terminado de probar el script.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> If you're sending users to your landing page, we recommend that include the following parameter on the URL of your landing page:
+> Si vas a enviar usuarios a tu página de destino, te recomendamos que incluyas el siguiente parámetro en la URL de la página de destino:
 >
-> * For Twitter: use "***&af\_pid=twitter\_lp***"
-> * For Snapchat: use "***&af\_pid=snapchat\_lp***"
-> * For Doubleclick: use "***&af\_pid=doubleclick\_lp***"
-> * For Meta ads Post (unpaid): use "***&af\_pid=fbpost\_lp***"
-> * For Oath (formerly Yahoo Gemini): use "***&af\_pid=oath\_lp***"
+> * Para Twitter: usa "***&af\_pid=twitter\_lp***"
+> * Para Snapchat: usa "***&af\_pid=snapchat\_lp***»
+> * Para Doubleclick: usa "***&af\_pid=doubleclick\_lp***"
+> * Para publicaciones de Anuncios de Meta (no pagadas): usa "***&af\_pid=fbpost\_lp***»
+> * Para Oath (anteriormente Yahoo Gemini): usa "***&af\_pid=oath\_lp***»
 
-#### What the script does
+#### ¿Qué hace el script?
 
-The script sees the af\_pid parameter on the landing page URL and concludes that the user comes from an SRN or some other custom network. The script creates a OneLink accordingly and sets it as the link behind the download button on the landing page.
+El script ve el parámetro af\_pid en la URL de la página de destino y concluye que el usuario proviene de un SRN o de alguna otra red personalizada. El script crea un OneLink en consecuencia y lo establece como el enlace detrás del botón de descarga en la página de destino.
 
-To learn more about what the script does, look for **pidValue** in the script.
+Para obtener más información sobre lo que hace el script, busca **pidValue** en el script.
 
 </Accordion>
 
 <div id="attribution-links-redirect-with-af_r" />
 
-<Accordion title="Attribution links: redirect with af_r">
+<Accordion title="Enlaces de atribución: redirigir con af_r">
 
-#### Description:
+#### Descripción:
 
-Attribution links are used for any media source, which is not an SRN. That includes thousands of integrated partners and any owned media you wish to attribute.
+Los enlaces de atribución se utilizan para cualquier fuente de medios que no sea una SRN. Esto incluye miles de partners integrados y cualquier medio propio al que desee atribuir.
 
-Luckily, the solution for landing page attribution when using AppsFlyer's attribution links is simple (and similar to the solution for Meta ads).
+Por suerte, la solución para la atribución de páginas de destino cuando se utilizan los enlaces de atribución de AppsFlyer es sencilla (y similar a la solución para los Anuncios de Meta).
 
-#### Conclusion:
+#### Conclusión:
 
-the attribution link redirects the lead to a landing page, and by that also takes care of the correct attribution (if a mobile install follows).
+el enlace de atribución redirige al cliente potencial a una página de destino y, de este modo, también se encarga de la atribución correcta (si sigue una instalación móvil).
 
-All that is left to do is NOT prevent the correct attribution with another last click.
+Todo lo que queda por hacer es NO impedir la atribución correcta con otro último clic.
 
-#### Instructions:
+#### Instrucciones:
 
-1. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">Create the attribution link</Anchor> for the media source
-2. Add the <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#redirection">landing page parameter</Anchor> leading to your landing page to the attribution link
-3. Add `&af_redirect=true` to the landing page value under **any redirection parameters** (that is, af\_r, af\_ios\_url, and af\_android\_url) in the attribution link.  
-   Example: `https://yourapp.onelink.me/abcd?pid=email&c={CAMPAIGN_NAME}&af_r=http://www.yoursite.com/yourlandingpage?af_redirect=true`
-4. **Optional** - add device ID (GAID / IDFA) to the attribution link to allow attribution by ID matching instead of Probabilistic modeling
-5. Landing page Android download button - direct link to Google Play
-6. Landing page iOS download button - direct link to iTunes  
+1. <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#crear-un-enlace-de-onelink">Crea el enlace de atribución</Anchor> para la fuente de medios.
+2. Añade el <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#redirection">parámetro de página de destino</Anchor> que lleva a tu página de destino al enlace de atribución.
+3. Añádelo `&af_redirect=true` al valor de la página de destino en **cualquier parámetro de redirección** (es decir, af\_r, af\_ios\_url y af\_android\_url) del enlace de atribución.  
+   Ejemplo: `https://yourapp.onelink.me/abcd?pid=email&c={CAMPAIGN_NAME}&af_r=http://www.yoursite.com/yourlandingpage?af_redirect=true`
+4. **Opcional**: agrega el ID del dispositivo (GAID o IDFA) al enlace de atribución para permitir la atribución mediante la coincidencia de ID en lugar del modelado probabilístico
+5. Botón de descarga de Android de la página de destino: enlace directo a Google Play.
+6. Botón de descarga de iOS de la página de destino: enlace directo a iTunes  
 
-   > 📘 **Note**
+   > 📘 **Nota:**
    >
-   > The script and HTML sample page provide the option to set one download button that serves both Android and iOS. Read the comments in the script to learn how to implement it.
+   > El script y la página de muestra HTML ofrecen la opción de configurar un botón de descarga que sirva tanto para Android como para iOS. Lea los comentarios del script para obtener información sobre cómo implementarlo.
 
 
-#### What the script does
+#### ¿Qué hace el script?
 
-The script looks for the **af\_redirect** parameter in the landing page URL. If it sees it, it makes no changes to the download buttons on the landing page. This is because the af\_redirect parameter indicates that the user reaches the landing page following a click. Therefore, there is no need for additional attribution links.
+El script busca el parámetro **af\_redirect** en la URL de la página de destino. Si lo ve, no hace ningún cambio en los botones de descarga de la página de destino. Esto se debe a que el parámetro af\_redirect indica que el usuario llega a la página de destino después de hacer clic. Por lo tanto, no hay necesidad de enlaces de atribución adicionales.
 
-To learn more about what the script does to handle cases where users reach the landing page after clicking an attribution link, see the method **isAFLink()** in the script.
+Para obtener más información sobre lo que hace el script para gestionar los casos en los que los usuarios llegan a la página de destino después de hacer clic en un enlace de atribución, consulta el método **isAFlink ()** en el script.
 
 </Accordion>
 
 <div id="links-with-utm-parameters-dynamic-onelink" />
 
-<Accordion title="Links with utm parameters: dynamic OneLink">
+<Accordion title="Enlaces con parámetros utm: OneLink dinámico">
 
-#### Description
+#### Descripción
 
-You may have traffic sources, which redirect users to your landing page using links with UTM parameters.
+Es posible que tengas fuentes de tráfico que redirijan a los usuarios a tu página de destino mediante enlaces con parámetros UTM.
 
-#### Conclusion:
+#### Conclusión:
 
-If the original URL is NOT an AppsFlyer attribution link, the script searches for the ***utm\_source*** and ***utm\_campaign*** parameters in the link. If they exist, the script prepares a OneLink URL, that has them as the media source name (pid) and campaign name (c), respectively.
+ISi la URL original NO es un enlace de atribución de AppsFlyer, el script busca los parámetros ***utm\_source*** y ***utm\_campaign*** en el enlace. Si existen, el script prepara una URL de OneLink, que los tiene como nombre de la fuente de medios (pid) y nombre de la campaña (c), respectivamente.
 
-Note that with AppsFlyer attribution links, which also contain UTM parameters, the AppsFlyer parameters are being used, rather than the UTM ones.
+Ten en cuenta que con los enlaces de atribución de AppsFlyer, que también contienen parámetros UTM, se utilizan los parámetros de AppsFlyer, en lugar de los UTM.
 
-#### Instructions:
+#### Instrucciones:
 
-On the media source -
+En la fuente de los medios:
 
-1. Make sure the ***utm\_source*** exists in the link.
-2. ***utm\_campaign*** parameter is optional but highly recommended.
+1. Asegúrate de que el código ***utm\_source*** existe en el enlace.
+2. El parámetro ***utm\_campaign*** es opcional pero muy recomendable.
 
-On your landing page load -
+Al cargar tu página de destino -
 
-1. Activate the ***generateUrl*** Javascript function
-2. The function looks for the ***utm\_source*** and ***utm\_campaign*** parameters and builds a OneLink URL containing their values
-3. Landing page download button uses the generated OneLink URL
-4. New mobile users are attributed to the value of ***utm\_source*** as the media source
-5. No postback is sent to the media source.
+1. Activar la función ***GenerateURL*** de Javascript
+2. La función busca los parámetros ***utm\_source*** y ***utm\_campaign*** y crea una URL de OneLink que contiene sus valores
+3. El botón de descarga de la página de destino utiliza la URL de OneLink generada.
+4. Los nuevos usuarios móviles se atribuyen al valor de ***utm\_source*** como fuente de medios.
+5. No se envía ningún postback a la fuente de medios.
 
-#### What the script does
+#### ¿Qué hace el script?
 
-The script looks for UTM parameters in the landing page URL. If it finds any, it converts them to OneLink parameters. This way, campaign information is carried over to the final attribution.
+El script busca los parámetros UTM en la URL de la página de destino. Si encuentra alguno, lo convierte en parámetros de OneLink. De esta forma, la información de la campaña se transfiere a la atribución final.
 
 </Accordion>
 
 <div id="mobile-organic-visitors-onelink-with-pidwebsite" />
 
-<Accordion title="Mobile organic visitors: OneLink with pid=website">
+<Accordion title="Visitantes orgánicos móviles: OneLink con pid=website">
 
-#### Description
+#### Descripción
 
-Mobile organic visitors are, by definition, direct mobile web leads from unknown sources. They rarely visit dedicated landing pages but may be the vast majority of mobile installs coming from the advertiser's website.
+Los visitantes orgánicos móviles son, por definición, clientes potenciales directos de la web móvil de fuentes desconocidas. Rara vez visitan páginas de destino dedicadas, pero es posible que la gran mayoría de las instalaciones móviles provengan del sitio web del anunciante.
 
-#### Conclusion:
+#### Conclusión:
 
-If you have a significant amount of mobile organic traffic from your website, it's highly recommended to record the attribution data of your own traffic.
+Si tienes una cantidad significativa de tráfico orgánico móvil desde tu sitio web, es muy recomendable registrar los datos de atribución de tu propio tráfico.
 
-#### Instructions:
+#### Instrucciones:
 
-To attribute mobile organic visitors, the website should have ***download*** or ***install*** buttons, with a OneLink attribution link behind them. OneLink enables diagnosing the device type and redirecting the lead to the correct app store according to it.
+Para atribuir a los visitantes orgánicos móviles, el sitio web debe tener botones de ***descarga*** o ***instalación***, con un enlace de atribución de OneLink detrás de ellos. OneLink permite diagnosticar el tipo de dispositivo y redirigir el lead a la tienda de aplicaciones correcta en función de este.
 
-To learn how to set and build OneLink URLs go <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">here</Anchor>.
+Para obtener información sobre cómo configurar y crear las URL de OneLink, haz clic <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">aquí.</Anchor>
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> Add "&pid=website" to your attribution link to attribute all these visitors to your website. In each page of your website, which has a download/install button with an attribution Link, add "&c=`{PAGE NAME}`". This can help you find the highest and lowest converting pages in your website.
+> Añade «&pid=website» a tu enlace de atribución para atribuir a todos estos visitantes a tu sitio web.
+> En cada página de tu sitio web, que tenga un botón de descarga/instalación con un enlace de atribución, añade «&c= `{PAGE NAME}`». Esto puede ayudarte a encontrar las páginas con mayor y menor conversión en tu sitio web.
 
-#### What the script does
+#### ¿Qué hace el script?
 
-Exhausting all other options, the script determines that the user is an organic user that doesn't come from any campaign. The script creates a OneLink that reflects that and puts it as the link behind the download button on the landing page.
+Al agotar todas las demás opciones, el script determina que el usuario es un usuario orgánico que no proviene de ninguna campaña. El script crea un OneLink que refleja eso y lo coloca como enlace detrás del botón de descarga en la página de destino.
 
 </Accordion>
 
 <div id="desktop-visitors-telephoneemail-form" />
 
-<Accordion title="Desktop visitors: telephone/email form">
+<Accordion title="Visitantes de escritorio: formulario de teléfono/correo electrónico">
 
-#### Description
+#### Descripción
 
-All the options covered above assume the users use mobile devices when engaging with the campaign and the landing page.
+Todas las opciones mencionadas anteriormente suponen que los usuarios utilizan dispositivos móviles cuando interactúan con la campaña y la página de destino.
 
-But what about desktop users?
+Pero, ¿qué pasa con los usuarios de escritorio?
 
-Desktop users may arrive at your landing page/website, and afterward "independently" visit the app store with their mobile devices, and install the mobile app. Without the preceding engagement with the mobile devices, it is impossible to attribute these users, and so, they are labeled as "Organic".
+Los usuarios de escritorio pueden llegar a tu página de destino o sitio web y, después, visitar «de forma independiente» la tienda de aplicaciones con sus dispositivos móviles e instalar la aplicación móvil. Sin el compromiso anterior con los dispositivos móviles, es imposible atribuir a estos usuarios y, por lo tanto, se los etiqueta como «orgánicos».
 
-#### Conclusion:
+#### Conclusión:
 
-A great solution to this attribution problem is using a **text-to-download form on your landing page**, only for desktop users. This is to be followed by sending the mobile device an SMS/Email with OneLink URL.
+Una excelente solución a este problema de atribución es usar un **formulario de texto para descargar en la página de destino**, solo para usuarios de escritorio. A continuación, se enviará al dispositivo móvil un SMS/correo electrónico con la URL de OneLink.
 
-#### Instructions:
+#### Instrucciones:
 
-1. Identify that a visitor is a desktop user
-2. When your user types in their phone number, text them a link to your app, with a OneLink short URL. You can also ask for their email address to email them app download messages.
-3. The usage of OneLink is crucial here, as the mobile device platform isn't known when sending the message to the users. OneLink's diagnosis and redirection functionalities take care of this for you.
-4. Add "&pid=desktop\_website" to the OneLink URL to identify this source.
-5. Add "&c=`{PAGE NAME}`" to help you find the highest and lowest converting pages in your website for desktop users.
+1. Identificar que un visitante es un usuario de escritorio
+2. Cuando el usuario escriba su número de teléfono, envíale un mensaje de texto con un enlace a tu aplicación, con una URL corta de OneLink. También puedes pedirles su dirección de correo electrónico para enviarles mensajes de descarga de aplicaciones.
+3. El uso de OneLink es crucial en este caso, ya que no se conoce la plataforma del dispositivo móvil cuando se envía el mensaje a los usuarios. Las funciones de diagnóstico y redirección de OneLink se encargan de ello por ti.
+4. Añade «&pid=desktop\_website» a la URL de OneLink para identificar esta fuente.
+5. Añade «&c= `{PAGE NAME}`» para ayudarte a encontrar las páginas con mayor y menor conversión en tu sitio web para usuarios de escritorio.
 
-#### What the script does
+#### ¿Qué hace el script?
 
-The script detects the device or platform the user is on. If it's desktop, the script returns a link to a web form URL and puts it behind the download buttons. When the user clicks download, they are sent to a web form where they fill in their details to get an SMS or an email with a link to download the app.
+El script detecta el dispositivo o la plataforma en la que se encuentra el usuario. Si es de escritorio, el script devuelve un enlace a la URL de un formulario web y lo coloca detrás de los botones de descarga. Cuando el usuario hace clic en descargar, se le envía a un formulario web donde rellena sus datos para recibir un SMS o un correo electrónico con un enlace para descargar la aplicación.
 
-It's up to you to create the web form and provide the URL to it in the script. To learn more, look for **isMobileDevice()** in the script.
+Eres tú quien debes crear el formulario web y proporcionar la URL del mismo en el script. Para obtener más información, busca **isMobileDevice () en el script**.
 
 </Accordion>
 
-## Landing page javascript
+## Javascript de página de destino
 
-Below you can find the code implementation of the javascript that performs the full scope of attributing media sources and campaigns in landing page scenarios. **If you want to have additional data such as ad sets and ad ids, you should make the necessary adjustments in the script**.
+A continuación, puedes encontrar la implementación de código del javascript que realiza todo el alcance de la atribución de fuentes de medios y campañas en escenarios de páginas de destino. **Si quieres disponer de datos adicionales, como conjuntos de anuncios e identificadores de anuncios, debes realizar los ajustes necesarios en el script**.
 
-For your convenience, you can also download the attached landing page example.
+Para tu comodidad, también puedes descargar el ejemplo de página de destino adjunto.
 
-Below the code, you can find the instructions for adapting it to your landing page needs.
+Debajo del código, encontrarás las instrucciones para adaptarlo a las necesidades de tu página de destino.
 
 <div id="the-script" />
 
-<Accordion title="The script">
+<Accordion title="El script">
 
-Consider the following before you implement the script:
+Ten en cuenta lo siguiente antes de implementar el script:
 
-* The script is offered as an example only. It covers the common landing page to attribution flow. Adapt the script to fit your requirements.
-* The script looks for specific parameters in the landing page URL, like media source, campaign, keywords etc. If you want to add more parameters like site id and ad sets, you need to modify the script accordingly.
+* El script se ofrece solo como ejemplo. Abarca desde la página de destino común hasta el flujo de atribución. Adapta el script para que se ajuste a tus necesidades.
+* El script busca parámetros específicos en la URL de la página de destino, como la fuente de medios, la campaña, las palabras clave, etc. Si quieres añadir más parámetros, como el identificador del sitio y los conjuntos de anuncios, para ello debes modificar el script.
 
 ```javascript
-//Returns the value of a parameter existing in the page's URL or ' ' if not exists.
+//Devuelve el valor de un parámetro existente en la URL de la página o ' ' si no existe.
 function getParameterFromURL(name, url) {
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, '\\$&');
@@ -401,7 +405,7 @@ function getMobileOperatingSystem() {
       return "Android";
     }
 
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    // Detección de iOS de: http://stackoverflow.com/a/9039885/177710
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       return "iOS";
     }
@@ -413,8 +417,7 @@ function isAFLink() {
   return getParameterFromURL('af_redirect');
 }
 
-
-// Note - when device ID sharing becomes optional stop calling this method (or always return false)
+// Nota: cuando el uso compartido del ID de dispositivo pase a ser opcional, deja de llamar a este método (o haz que siempre devuelva false)
 function isFacebook() {
   if (document.referrer && document.referrer != "") {
     return document.referrer.toLowerCase().includes('facebook');
@@ -423,14 +426,14 @@ function isFacebook() {
   }
 }
 
-// generateUrl returns the URL to use behind the iOS and Android "Download" buttons on a landing page, based on the source of the page visitor.
-// By default these buttons should direct to the apps' pages on iTunes and Google Play.
-// If these links should be kept with no change, generateUrl returns ' '.
-// Otherwise, generateUrl returns the URL to be used under BOTH buttons (a single app download button could also be used in this case).
-// Parameters: isDebug - if true, alerts are issued for each of the cases, otherwise not.
+// generateUrl devuelve la URL que se debe usar detrás de los botones de "Descarga" de iOS y Android en una página de destino, en función de la fuente del visitante de la página.
+// De forma predeterminada, estos botones deberían dirigir a las páginas de las apps en iTunes y Google Play.
+// Si estos enlaces deben mantenerse sin cambios, generateUrl devuelve ' '.
+// De lo contrario, generateUrl devuelve la URL que se debe usar en AMBOS botones (en este caso, también se podría usar un único botón de descarga de la aplicación).
+// Parámetros: isDebug; si es true, se muestran alertas en cada uno de los casos; de lo contrario, no.  	 
 function generateUrl(isDebug) {
-  var oneLinkURL = 'https://yourapp.onelink.me/abcd';   // **** Replace with your own basic OneLink URL ****
-  var webFormURL = 'https://yoursite.com/webform.html'; // **** Replace with your own web form URL for getting the user's email or SMS ****
+  var oneLinkURL = 'https://yourapp.onelink.me/abcd';   // **** Sustituye esta URL base de OneLink por la tuya ****
+  var webFormURL = 'https://yoursite.com/webform.html'; // **** Sustituye esta URL de formulario web por la tuya para obtener el correo electrónico o el SMS del usuario ****
   var finalURL = "";
   var partnerIDParam = '?pid=';
 
@@ -457,7 +460,7 @@ function generateUrl(isDebug) {
     pidValue = getParameterFromURL('utm_source');
   }
 
-  // Prevent the use of real SRN names. Remove this part after you are done testing the script.
+  // Evita el uso de nombres reales de SRN. Elimina esta parte cuando hayas terminado de probar el script.
     var SRNs = [
     'twitter_int',
     'facebook_int',
@@ -468,29 +471,29 @@ function generateUrl(isDebug) {
   ];
 
   if (SRNs.includes(pidValue)) {
-  	alert("DO NOT USE NAMES OF SRNS IN af_pid or utm_source - use the names listed in Other SRNs: Add Parameter section in the landing page article\nhttps://support.appsflyer.com/hc/en-us/articles/360000677217#other-srns-add-parameter");
+  	alert("NO USES NOMBRES DE SRN EN af_pid o utm_source: usa los nombres indicados en la sección Other SRNs: Add Parameter del artículo sobre la página de destino\nhttps://support.appsflyer.com/hc/en-us/articles/360000677217#other-srns-add-parameter");
     return;
   }
 
-  // Desktop user
+  // Usuario de escritorio
   if (!isMobileDevice()) {
     return webFormURL;
   }
 
-  // User was redirected using af_r parameter on an AppsFlyer attribution link
+  // El usuario fue redirigido mediante el parámetro af_r en un enlace de atribución de AppsFlyer
   if (isAFLink()) {
     if (isDebug) {
-      alert("This user comes from AppsFlyer by redirection and is ready to be attributed. \nKeep direct app store links.");
+      alert("Este usuario procede de AppsFlyer por redirección y está listo para atribuirse. \nMantén los enlaces directos a la tienda de aplicaciones.");
     }
-    return; // in this case, the original store links in the install buttons stay the same
+    return; // en este caso, los enlaces originales a la tienda en los botones de instalación se mantienen igual
 
     /*
-    If you want one install button in the landing page that serves both iOS and Android, uncomment the code below
-    The code identifies the operating system and returns the relevant direct link to Google Play or iTunes
+    Si quieres un botón de instalación en la página de destino que sirva tanto para iOS como para Android, descomenta el código de abajo
+    El código identifica el sistema operativo y devuelve el enlace directo correspondiente a Google Play o iTunes
 
     if (getMobileOperatingSystem() === 'Android') {
       return 'direct link to Google Play';
-    }
+    } 
 
     if (getMobileOperatingSystem() === 'iOS') {
       return 'direct link to iTunes';
@@ -506,40 +509,40 @@ function generateUrl(isDebug) {
     if (!kwValue) {
       finalURL = oneLinkURL + partnerIDParam + campaignParam + gclidParam;
       if (isDebug) {
-        alert("This user comes from Google AdWords\n " + finalURL);
+        alert("Este usuario procede de Google AdWords\n " + finalURL);
       }
       return finalURL;
 
-    } else { // Google Ads with KW
+    } else { // Google Ads con KW
       kwParam += kwValue;
       finalURL = oneLinkURL + partnerIDParam + campaignParam + gclidParam + kwParam;
       if (isDebug) {
-        alert("This user comes from Google AdWords - there is a keyword associated with the ad\n " + finalURL);
+        alert("Este usuario procede de Google AdWords: hay una palabra clave asociada al anuncio\n " + finalURL);
       }
       return finalURL;
     }
 
-  // Other SRNs and custom networks
+  // Otras SRN y redes personalizadas  
   } else if (pidValue) {
     campaignParam += campaignValue;
     partnerIDParam += pidValue;
     finalURL = oneLinkURL + partnerIDParam + campaignParam;
     if (isDebug) {
-      alert("This user comes the SRN or custom network " + pidValue + "\n" + finalURL);
+      alert("Este usuario procede de la SRN o red personalizada " + pidValue + "\n" + finalURL);
     }
     return finalURL;
   } else if (isFacebook()) {
     if (isDebug) {
-      alert("This user comes from a paid Facebook ad - don't do anything. \nKeep direct app store links.");
+      alert("Este usuario procede de un anuncio pagado de Facebook; no hagas nada. \nMantén los enlaces directos a la tienda de aplicaciones.");
     }
     return ' ';
 
-  } else { // organic mobile user
+  } else { // usuario móvil orgánico
     campaignParam += campaignValue;
-    partnerIDParam += 'website'; //**** Replace value if you wish organic users to be attributed to another media source than 'website' ****
+    partnerIDParam += 'website'; //**** Sustituye el valor si quieres que los usuarios orgánicos se atribuyan a una fuente de medios distinta de 'website' ****
     finalURL = oneLinkURL + partnerIDParam + campaignParam;
     if (isDebug) {
-      alert("This user comes from an unknown mobile source.\n The user would be attributed to media source 'website' and to the campaign " + campaignParam + "\n" + finalURL);
+      alert("Este usuario procede de una fuente móvil desconocida.\n El usuario se atribuiría a la fuente de medios 'website' y a la campaña " + campaignParam + "\n" + finalURL);
     }
     return finalURL;
   }
@@ -550,7 +553,7 @@ function generateUrl(isDebug) {
 
 <div id="html-sample-for-landing-page" />
 
-<Accordion title="HTML sample for landing page">
+<Accordion title="Ejemplo de HTML para la página de destino">
 
 ```html Markup
 <html>
@@ -559,14 +562,14 @@ function generateUrl(isDebug) {
 </head>
 <body>
   <h1>Landing Page</h1>
-  <!-- By default, the install buttons should have direct links to the stores -->
+  <!-- De forma predeterminada, los botones de instalación deben tener enlaces directos a las tiendas -->
   <div>
     <a id="andrd_link" href="https://play.google.com/store/apps/details?id=com.appsflyer.sampleapp"><img src="/images/andrd.png"alt=""></a>
   </div>
   <div>
     <a id="ios_link" href="https://itunes.apple.com/us/app/id3********"><img src="/images/ios.png" alt=""></a>
   </div>
-  <!-- If you want one button to serve both Android and iOS, use the code below instead
+  <!-- Si quieres que un único botón sirva tanto para Android como para iOS, usa en su lugar el código de abajo
   <a id="store_link" href=""><img src="download.png" alt=""></a>
   -->
   <script type="text/javascript" src="/landing-page-test.js"></script>
@@ -574,16 +577,16 @@ function generateUrl(isDebug) {
     window.onload = function () {
       var url = generateUrl(true);
 
-      // onelink is generated
+      // se genera OneLink
       if (url) {
         document.getElementById('andrd_link').setAttribute('href', url);
         document.getElementById('ios_link').setAttribute('href', url);
       }
 
-      //otherwise, if onelink is not generated it means that the user is redirected
-      // and the store links in the buttons stay the same
+      // de lo contrario, si no se genera OneLink, significa que el usuario es redirigido
+      // y los enlaces a la tienda en los botones se mantienen igual
 
-      /* for the one button solution for both Android and iOS, use the code below instead
+      /* para la solución de un botón para Android y iOS, usa en su lugar el código de abajo
 
       document.getElementById('store_link').setAttribute('href', url);
 
@@ -598,58 +601,58 @@ function generateUrl(isDebug) {
 
 </Accordion>
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> You can implement the javascript snippet using Google Tag Manager. Google Tag Manager makes it easier for you to control when and where the landing page javascript should be used.
+> Puedes implementar el fragmento de código javascript con Google Tag Manager. Google Tag Manager te facilita el control de cuándo y dónde se debe usar el javascript de la página de destino.
 
-### Instructions
+### Instrucciones
 
-1. Activate the ***generateUrl*** script on page load of any page in your web site, which visitors can land on directly, and that has ***Download*** button/s for your mobile app/s.  
+1. Activa el script ***GenerateURL*** al cargar cualquier página de su sitio web, a la que los visitantes puedan acceder directamente y que tenga botones de ***descarga*** para tus aplicaciones móviles.  
 
-   > 🚧 **Important!**
+   > 🚧 **Importante:**
    >
-   > **By default the *Download* buttons should direct to the apps pages on iTunes and Google Play**. If these links are kept with no change (i.e. visitor from AF attribution link or Meta ads), ***generateUrl*** returns ' '. Otherwise, it returns the URL to be used with BOTH Download buttons (a single ***Download*** button could also be used in this case to cover for both apps with OneLink).
+   > **De forma predeterminada, los botones de *descarga* deberían dirigir a las páginas de las aplicaciones en iTunes y Google Play**. Si estos enlaces se mantienen sin cambios (por ejemplo, el visitante proviene del enlace de atribución de AF o de los Anuncios de Meta), ***generateURL*** devuelve ' '. De lo contrario, devuelve la URL que se utilizará con AMBOS botones de descarga (en este caso también se podría usar un solo botón de ***descarga*** para cubrir ambas aplicaciones con OneLink).
 
-2. Replace the ***oneLinkURL*** parameter value with your own basic OneLink URL in the exact format as the placeholder `https://yourapp.onelink.me/abcd`.  
-   MANDATORY to attribute visitors from all SRNs (except Meta ads paid ads) and for mobile organic visitors.
-3. Replace the ***webFormURL*** parameter value with your own web form link. The web form should be able to get the user's email or SMS, and send the user's mobile device a message with a OneLink URL for downloading the app.  
-   MANDATORY to attribute desktop visitors.
-4. Replace the ***partnerIDParam*** parameter value, if you wish mobile organic users to be attributed to another media source than 'website'.
-5. By default, users are attributed to the web page they are at when clicking the ***Download*** button unless another campaign name is specified in the landing page URL (`&c={CAMPAIGN_NAME}`). To change that, replace the value of ***campaignParam*** parameter value.  
-   Optional for ALL scenarios, except Meta ads paid ads.
+2. Sustituye el valor del parámetro ***OneLinkURL*** por tu propia URL básica de OneLink en el formato exacto del marcador de posición.`https://yourapp.onelink.me/abcd`  
+   OBLIGATORIO para atribuir los visitantes de todas las SRN (excepto los anuncios de pago de Anuncios de Meta) y para los visitantes orgánicos móviles.
+3. Sustituye el valor del parámetro ***webFormURL*** por el enlace de tu propio formulario web. El formulario web debe poder recibir el correo electrónico o el SMS del usuario y enviar al dispositivo móvil del usuario un mensaje con una URL de OneLink para descargar la aplicación.  
+   OBLIGATORIO para atribuir a los visitantes de escritorio.
+4. Sustituye el valor del parámetro ***PartnerIDParam*** si deseas que los usuarios orgánicos móviles se atribuyan a una fuente de medios distinta a «sitio web».
+5. De forma predeterminada, los usuarios se atribuyen a la página web en la que se encuentran cuando hacen clic en el botón ***Descargar***, a menos que se especifique otro nombre de campaña en la URL de la página de destino (`&c={CAMPAIGN_NAME}`). Para cambiarlo, sustituye el valor del parámetro ***campaignParam.***  
+   Opcional para TODOS los escenarios, excepto los anuncios de pago de Anuncios de Meta.
 
-## Viewing the results
+## Visualización de los resultados
 
 [![dashboard_landing_page_results.png](https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png)](https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png)
 
-As with any media source, you can view your landing page results on your app's dashboard, raw data or via AppsFlyer APIs.
+Al igual que con cualquier fuente de medios, puedes ver los resultados de tu página de destino en el panel de control de tu aplicación, en los raw data o mediante las API de AppsFlyer.
 
-If your mobile marketing funnel always leads to your landing page, these media sources represent the following:
+Si tu embudo de marketing móvil siempre lleva a tu página de destino, estas fuentes de medios representan lo siguiente:
 
-| **Source** | **Description** |
+| **Fuente** | **Descripción** |
 | --- | --- |
-| **organic** | Users that didn't go through the landing page, or didn't engage with it. Alternately, users that did engage but were not attributed for various reasons, e.g. passed the attribution look back window before launching the app. |
-| **website** | Organic mobile users visiting your landing page/website and installing afterward |
-| **Meta ads** | Users from paid Meta ads |
-| **fbpost\_lp** | Users from viral non-paid Meta ads posts |
-| **google\_lp** | Users from Google ads |
-| **[SRN]\_lp** | Users from other SRNs, i.e. Twitter (twitter\_lp), Snapchat (snapchat\_lp), Doubleclick (doubleclick\_lp) or Oath (oath\_lp) |
-| **Integrated partner ID** | Users coming from an integrated partner's ad, which uses AppsFlyer's attribution link. For example, inmobi\_int, tapjoy\_int |
-| **desktop** | Desktop users filling in the web form, and completing an install after clicking on the SMS or email sent to their mobile devices afterwards |
-| **Other sources** | Users coming from owned media sources, which use AppsFlyer's attribution links. For example, email, sms, blog\_post, etc |
+| **orgánica** | Usuarios que no accedieron a la página de destino o que no interactuaron con ella. Como alternativa, los usuarios que sí interactuaron pero no fueron atribuidos por varios motivos, por ejemplo, pasaron la ventana retrospectiva de atribución antes de lanzar la aplicación. |
+| **sitio web** | Usuarios móviles orgánicos que visitan tu página de destino o sitio web e instalan después |
+| **Anuncios de Meta** | Usuarios de Anuncios de Meta de pago |
+| **fbpost\_lp** | Usuarios de publicaciones virales de Anuncios de Meta no pagas |
+| **google\_lp** | Usuarios de Google Ads |
+| **[SRN]\_lp** | Usuarios de otras SRN, es decir,. Usuarios de otras SRN, como Twitter (twitter\_lp), Snapchat (snapchat\_lp), Doubleclick (doubleclick\_lp) u Oath (oath\_lp) |
+| **ID de partner integrado** | Usuarios que provienen del anuncio de un partner integrado, que usa el enlace de atribución de AppsFlyer. Por ejemplo, inmobi\_int, tapjoy\_int |
+| **Escritorio** | Los usuarios de escritorio rellenan el formulario web y completan una instalación después de hacer clic en el SMS o correo electrónico enviado a sus dispositivos móviles |
+| **Otras fuentes** | Usuarios que provienen de fuentes de medios propios, que utilizan los enlaces de atribución de AppsFlyer. Por ejemplo, correo electrónico, sms, blog\_post, etc. |
 
-## OneLink for landing page solution
+## Solución OneLink para páginas de destino
 
-OneLink™ is a unique AppsFlyer attribution link, which is used for device detection and redirection, or for deep linking.
+OneLink™ es un enlace de atribución exclusivo de AppsFlyer, que se usa para la detección y redirección de dispositivos, o para la creación de enlaces profundos.
 
-The <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">Social apps landing page</Anchor> solution requires the advertiser to have a basic OneLink URL. Users who click ads in social media apps are then redirected to an AppsFlyer-generated landing page. From there, they can be deep linked, or continue to install the app.
+La solución de <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">página de destino de las aplicaciones sociales</Anchor> requiere que el anunciante tenga una URL básica de OneLink. Los usuarios que hacen clic en anuncios en las aplicaciones de redes sociales son redirigidos a una página de destino generada por AppsFlyer. A partir de ahí, pueden tener enlaces profundos o continuar instalando la aplicación.
 
-AppsFlyer provides a variety of social media apps landing page templates. Element positions in the templates are fixed, but the elements themselves are customizable, including background image or color, titles, texts, images, buttons, tags, and more.
+AppsFlyer ofrece una variedad de plantillas de página de destino para aplicaciones de redes sociales. Las posiciones de los elementos en las plantillas son fijas, pero los elementos en sí se pueden personalizar, incluida la imagen de fondo o el color, los títulos, textos, imágenes, botones, etiquetas y más.
 
-If you haven't implemented OneLink for your app:
+Si no has implementado OneLink para tu aplicación:
 
-1. Configure <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>.
-2. Create a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">OneLink URL</Anchor> based on the template.
-3. In the script, replace https://yourapp.onelink.me/abcd with your OneLink URL.
+1. Configura <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#crear-una-plantilla-de-onelink">la plantilla de OneLink</Anchor>.
+2. Crea una <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#crear-un-enlace-de-onelink">URL de OneLink</Anchor> basada en la plantilla.
+3. En el script, reemplaza https://yourapp.onelink.me/abcd por tu URL de OneLink.
 
-<div data-zendesk-anchors="description::7888dd9d=description-1 conclusion::11bed45=conclusion-1 instructions::5aa3290f=instructions-1 what-the-script-does::2a675257=what-the-script-does-1 description::650e3f28=description-2 conclusion::a982e4bd=conclusion-2 instructions::afffc83f=instructions-2 what-the-script-does::3fd4ce35=what-the-script-does-2 description::9c3fcdaa=description-3 conclusion::bf993a93=conclusion-3 instructions::350b4cb1=instructions-3 what-the-script-does::3dda504d=what-the-script-does-3 description::5150e1b5=description-4 conclusion::d51c1aec=conclusion-4 instructions::e083609=instructions-4 what-the-script-does::85ffec6c=what-the-script-does-4 description::f5a2038b=description-5 conclusion::4593a93c=conclusion-5 instructions::2e4dd2ee=instructions-5 what-the-script-does::d6370587=what-the-script-does-5 description::e20640cf=description-6 conclusion::c818491=conclusion-6 instructions::ba61ae3e=instructions-6 what-the-script-does::3668d917=what-the-script-does-6 instructions::10da52a9=instructions-7" />
+<div data-zendesk-anchors="the-upsides=ventajas the-downsides=desventajas the-challenges-of-mobile-attribution-on-landing-pages=desaf%C3%ADos-de-la-atribuci%C3%B3n-m%C3%B3vil-en-las-p%C3%A1ginas-de-destino the-solution=la-soluci%C3%B3n landing-page-scenarios=escenarios-de-p%C3%A1ginas-de-destino description=descripci%C3%B3n conclusion=conclusi%C3%B3n instructions=instrucciones what-the-script-does=qu%C3%A9-hace-el-script description::7888dd9d=descripci%C3%B3n-1 conclusion::11bed45=conclusi%C3%B3n-1 instructions::5aa3290f=instrucciones-1 what-the-script-does::2a675257=qu%C3%A9-hace-el-script-1 description::650e3f28=descripci%C3%B3n-2 conclusion::a982e4bd=conclusi%C3%B3n-2 instructions::afffc83f=instrucciones-2 what-the-script-does::3fd4ce35=qu%C3%A9-hace-el-script-2 description::9c3fcdaa=descripci%C3%B3n-3 conclusion::bf993a93=conclusi%C3%B3n-3 instructions::350b4cb1=instrucciones-3 what-the-script-does::3dda504d=qu%C3%A9-hace-el-script-3 description::5150e1b5=descripci%C3%B3n-4 conclusion::d51c1aec=conclusi%C3%B3n-4 instructions::e083609=instrucciones-4 what-the-script-does::85ffec6c=qu%C3%A9-hace-el-script-4 description::f5a2038b=descripci%C3%B3n-5 conclusion::4593a93c=conclusi%C3%B3n-5 instructions::2e4dd2ee=instrucciones-5 what-the-script-does::d6370587=qu%C3%A9-hace-el-script-5 description::e20640cf=descripci%C3%B3n-6 conclusion::c818491=conclusi%C3%B3n-6 instructions::ba61ae3e=instrucciones-6 what-the-script-does::3668d917=qu%C3%A9-hace-el-script-6 landing-page-javascript=javascript-de-p%C3%A1gina-de-destino instructions::10da52a9=instrucciones-7 viewing-the-results=visualizaci%C3%B3n-de-los-resultados onelink-for-landing-page-solution=soluci%C3%B3n-onelink-para-p%C3%A1ginas-de-destino" />

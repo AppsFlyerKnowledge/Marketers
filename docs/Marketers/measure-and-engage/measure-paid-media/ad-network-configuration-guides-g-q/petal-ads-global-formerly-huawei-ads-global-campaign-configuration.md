@@ -1,5 +1,7 @@
 ---
-title: Petal Ads Global (formerly HUAWEI Ads global) campaign configuration
+title: >-
+  Configuración de la campaña de Petal Ads Global (anteriormente HUAWEI Ads
+  Global)
 metadata:
   keywords:
     - integrated partner
@@ -17,166 +19,165 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2020-06-28T08:40:00Z'
-  edited_at: '2026-09-09T12:36:05Z'
+  edited_at: '2026-09-11T00:24:31Z'
   id: 360010605858
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360010605858-Petal-Ads-Global-formerly-HUAWEI-Ads-global-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360010605858
 ---
-> **At a glance:** Petal Ads Global, an AppsFlyer integrated partner, is a paid presentation service, which provided by Huawei for pan-ecosystem partners. It aims to help partners set up a communication bridge with Huawei device users so they can provide valuable information and quality services for users. Petal Ads Global provides slots for displaying mainstream ads such as native ads, rewarded video ads, banner ads, and interstitial ads to more than 570 million Huawei device users around the world.
+> **En resumen:** Petal Ads Global, un partner integrado de AppsFlyer, es un servicio de presentación de anuncios de pago proporcionado por Huawei para partners del ecosistema. Su objetivo es ayudar a los partners a establecer un puente de comunicación con los usuarios de dispositivos Huawei para que puedan proporcionar información valiosa y servicios de calidad a los usuarios. Petal Ads Global ofrece espacios para mostrar anuncios habituales, como anuncios nativos, anuncios de vídeo bonificado, anuncios de banner y anuncios intersticiales, a más de 570 millones de usuarios de dispositivos Huawei de todo el mundo.
 
 <Image alt="huaweiadsglobal.png" src="https://files.readme.io/12f1351923768c1afc1ba0f16b267388a8c9b1ae7fc2d6d36b5d1d01381f1bbc-14151449726353.png" width="18.53%" />
 
-## Petal Ads Global introduction
+## Introducción a Petal Ads Global
 
-Petal Ads Global is integrated into several third-party apps and Huawei apps such as HUAWEI Browser, HUAWEI Video, HUAWEI Assistant, HUAWEI Reader, and HUAWEI Music, which are sub publishers of Petal Ads Global display network. Besides, AppGallery standard ad placements and App Gallery Search Ads support AppsFlyer attribution too.
+Petal Ads Global está integrado en varias apps de terceros y apps de Huawei, como HUAWEI Browser, HUAWEI Video, HUAWEI Assistant, HUAWEI Reader y HUAWEI Music, que son subpublishers de la red de anuncios de display de Petal Ads Global. Además, las ubicaciones de anuncios estándar de AppGallery y App Gallery Search Ads también ofrecen soporte para la atribución de AppsFlyer.
 
-## Setting up Petal Ads Global
+## Configuración de Petal Ads Global
 
-Petal Ads Global requires to use **OAID** for attribution. Refer to <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">**our Android OAID Implementation in the SDK guide**</Anchor> for fetching OAID on HUAWEI devices. In addition, Petal Ads Global highly recommends **HUAWEI App Gallery referrer attribution** for the apps in the store, to enable the huawei referrer attribution, please upgrade the Android SDK to 6.14.0 above.
+Petal Ads Global requiere el uso de **OAID** para la atribución. Consulta <Anchor target="_blank" href="/marketers/es/docs/android-oaid-implementation-in-the-sdk">**nuestra guía de implementación de OAID de Android en el SDK**</Anchor> para obtener el OAID en dispositivos HUAWEI. Además, Petal Ads Global recomienda encarecidamente la **atribución del referente de HUAWEI App Gallery** para las apps de la tienda. Para habilitar la atribución del referente de Huawei, actualiza el SDK de Android a la versión 6.14.0 o superior.
 
-| Traffic source | Channel value | Attribution methods | Note |
+| Fuentes de tráfico | Valor del canal | Métodos de atribución | Advertencia |
 | --- | --- | --- | --- |
-| Display Ads | huaweiadsglobal | ID-Matching (OAID or GAID), Probabilistic Modeling, Huawei Referrer | Click <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">here</Anchor> to check OAID implementation guide in the Android SDK. Huawei referrer attribution requires Android SDK 6.14.0 |
-| App Gallery | huaweiappgalleryglobal | ID-Matching (OAID or GAID), Huawei Referrer | Huawei referrer attribution requires Android SDK 6.14.0 |
-| Petal Search | empty value | ID-Matching (OAID or GAID), Probabilistic Modeling | Click <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">here</Anchor> to check OAID implementation guide in the Android SDK |
+| Anuncios en pantalla | huaweiadsglobal | Coincidencia de ID (OAID o GAID), modelado probabilístico, referente de Huawei | Haz clic <Anchor target="_blank" href="/marketers/es/docs/android-oaid-implementation-in-the-sdk">aquí</Anchor> para consultar la guía de implementación de OAID en el SDK de Android. La atribución del referente de Huawei requiere Android SDK 6.14.0 |
+| App Gallery | huaweiappgalleryglobal | Coincidencia de ID (OAID o GAID), referente de Huawei | La atribución del referente de Huawei requiere Android SDK 6.14.0 |
+| Petal Search | valor vacío | Coincidencia de ID (OAID o GAID), modelado probabilístico | Haz clic <Anchor target="_blank" href="/marketers/es/docs/android-oaid-implementation-in-the-sdk">aquí</Anchor> para consultar la guía de implementación de OAID en el SDK de Android |
 
-### Setting up the Petal Ads Global integration
+### Configuración de la integración con Petal Ads Global
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el Partners. Si no tienes una cuenta, ponte en contacto con el Partners para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace**.  
+   (**Para editar una integración existente:** ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el Partners y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el conmutador **Activar partner**.   
+   **Nota:** el conmutador **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The **Integration Tab** is divided into different sections:
+La **Pestaña integración** se divide en diferentes secciones:
 
-#### Activate partner
+#### Activar socio
 
-To enable the configuration, <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activate the partner</Anchor>.
+Para habilitar la configuración, <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">Activar el partner</Anchor>.
 
-This toggle must be turned on for as long as you work with the partner.
+Este conmutador debe estar activado mientras trabajes con el partner.
 
-#### General settings
+#### Configuración general
 
-**Enable view-through attribution**
+**Habilitar la atribución view-through**
 
-To attribute view-through installs from Petal Ads Global, turn this toggle on. The view-through lookback window slider is available in the **Attribution link** tab.
+Para atribuir instalaciones view-through de Petal Ads Global, activa este conmutador. El control deslizante de la ventana de lookback view-through está disponible en la pestaña **Enlace de atribución**.
 
-#### Default postbacks
+#### Postbacks predeterminados
 
-Send automatic postbacks to Petal Ads Global following user installs from users attributed to Petal Ads Global only. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
+Envía postbacks automáticos a Petal Ads Global tras las instalaciones de usuarios atribuidos solo a Petal Ads Global. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks por defecto</Anchor>.
 
-#### In-app events settings
+#### Configuración de eventos in-app
 
-Configure in-app event postbacks that are sent to Petal Ads Global.
+Configura los postbacks de eventos in-app que se envían a Petal Ads Global.
 
-**To configure in-app event postbacks:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Turn on **In-app event postbacks**.
-2. Set the <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">**In-app events postback window**</Anchor>.
-3. To add an SDK Event to the list, click **Add event**.
-4. Select the following parameters for each event:
+1. Activa los **postbacks de eventos in-app**.
+2. Configura la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">**ventana de postbacks de eventos in-app**</Anchor>.
+3. Para agregar un evento SDK a la lista, haz clic en **Agregar evento**.
+4. Selecciona los siguientes parámetros para cada evento:
 
-| Parameter name | Description |
+| Nombre del parámetro | Nota |
 | --- | --- |
-| **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK or from server-to-server events.  <br />**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
-| **Partner event identifier** | Enter the unique name or ID of each event as defined on Petal Ads Global. Select the most suitable pre-defined event out of 68 options for your SDK event, for example:<ul><li>`browse` (browsing)</li><li>`collection` (adding to favorites)</li><li>`addToCart` (adding to shopping cart)</li><li>`preOrder` (order placement)</li><li>`register` (registration)</li><li>`retain` (next-day retention)</li><li>`paid` (payment occurred)</li><li>`custom` (custom-type event)</li></ul> |
-| **Sending option** | The postbacks can be sent only for the events performed by users attributed to Petal Ads Global. |
-| **Send event data** | <ul><li>**No values & no revenue:** Send only the event itself without the event value.</li><li>**Values & no revenue:** Send all the parameters excluding the revenue value.</li><li>**Values & revenue**: Send all the event parameters, including the revenue value (if exists in the event).</li></ul> |
+| **Nombre de evento SDK** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK o desde eventos de servidor a servidor.  <br />**Consejo**: si no ves el evento que quieres en la lista, actívalo en un dispositivo con una instalación no orgánica y vuelve a comprobarlo. |
+| **Identificador de evento de partner** | Introduce el nombre único o el ID de cada evento tal y como se define en Petal Ads Global. Selecciona el evento predefinido más adecuado entre 68 opciones para tu evento SDK, por ejemplo:<ul><li>`browse` (navegación)</li><li>`collection` (añadir a favoritos)</li><li>`addToCart` (añadir al carrito)</li><li>`preOrder` (realización de pedido)</li><li>`register` (registro)</li><li>`retain` (retención al día siguiente)</li><li>`paid` (pagado)</li><li>`custom` (evento de tipo personalizado)</li></ul> |
+| **Opción de envío** | Los postbacks solo se pueden enviar para los eventos realizados por usuarios atribuidos a Petal Ads Global. |
+| **Enviar datos de eventos** | <ul><li>**Sin valores & sin ingresos:** Envía solo el evento en sí, sin el valor del evento.</li><li>**Valores & sin ingresos:** Envía todos los parámetros, excepto el valor de ingresos.</li><li>**Valores & ingresos**: Envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento).</li></ul> |
 
-5. Click **Save Integration**.
+5. Haz clic en **Guardar integración**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">More about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un OneLink.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Aprender más sobre la estructura del enlace de atribución y los parámetros</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.  
-When generating the attribution link, select parameters from the list below and map them to the Petal Ads Global parameters name detailed in the table.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.  
+Al generar el enlace de atribución, selecciona los parámetros de la siguiente lista y asígnalos al nombre de los parámetros de Petal Ads Global detallado en la tabla.
 
-**Attribution link parameters**
+**Parámetros de enlaces de atribución**
 
-| Parameter | Parameter name | Petal Ads Global macro | Description |
+| Parámetro | Nombre del parámetro | Macro de Petal Ads Global | Nota |
 | --- | --- | --- | --- |
-| Campaign | c  <br />af\_c\_id | \_\_CID\_\_ | Add it to compare different campaigns running with Petal Ads Global. |
-| Adset | af\_adset  <br />af\_adset\_id | \_\_ADSETID\_\_ | Use to differentiate adsets. |
-| Ad | af\_ad  <br />af\_ad\_id | \_\_ADID\_\_ | Use to differentiate between creatives within the adset. |
-| Site and subsite ID | af\_siteid  <br />af\_subsiteid | \_\_SITEID\_\_ | Use to attribute installs to specific publishers.<br /><br />**Good practice!** If there are multiple publishers,<ul><li>Limit the number of site IDs in use.</li><li>Use the subsite ID parameter to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitation.</li></ul> |
-| Channel | af\_channel | \_\_CHANNEL\_\_ | Use to differentiate the ad placements.<br /><br />huaweiadsglobal<br /><br />huaweiappgalleryglobal<br /><br />If blank value, then huawei search ads. |
-| Subscriber parameters | af\_sub1, af\_sub2, af\_sub3, af\_sub4, and af\_sub5 |  | Use to insert additional useful values.<ul><li>Parameters are parsed and included in the raw data report.</li><li>Use them to perform data aggregation or filtering.</li></ul> |
-| Ad type | af\_ad\_type | \_\_APP\_STATUS\_\_ | used to distinguish whether the app activated before.<ul><li>if the campaign is used to targeting the users who installed but never open, the parameter will be</li></ul>af\_ad\_type=installed<ul><li>if the campaign is used to targeting the users who never install the App, the parameter will be</li></ul>af\_ad\_type=notinstalled |
+| Apps asociadas que pertenecen a una plantilla OneLink relacionada para atribución multiplataforma | c  <br />af\_c\_id | \_\_CID\_\_ | Añádelo para comparar diferentes campañas en funcionamiento en Petal Ads Global. |
+| Conjunto de anuncios | af\_adset  <br />af\_adset\_id | \_\_ADSETID\_\_ | Úsalo para diferenciar los conjuntos de anuncios. |
+| El valor puede tener hasta 4 dígitos. | af\_ad  <br />af\_ad\_id | \_\_ADID\_\_ | Úsalo para diferenciar entre creativos dentro del conjunto de anuncios. |
+| ID del sitio y del subsitio | af\_siteid  <br />af\_subsiteid | \_\_SITEID\_\_ | Úsalo para atribuir instalaciones a publishers específicos.<br /><br />**¡Práctica aconsejable!** Si hay varios publishers,<ul><li>Limita el número de ID de sitio en uso.</li><li>Usa el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">superar la limitación del ID de sitio</Anchor>.</li></ul> |
+| Canal | af\_canal | \_\_CHANNEL\_\_ | Úsalo para diferenciar las ubicaciones de los anuncios.<br /><br />huaweiadsglobal<br /><br />huaweiappgalleryglobal<br /><br />Si el valor está en blanco, entonces anuncios de búsqueda de Huawei. |
+| Parámetros de suscriptor | af\_sub1, af\_sub2, af\_sub3, af\_sub4 y af\_sub5 |  | Se usa para insertar valores útiles adicionales.<ul><li>Los parámetros se analizan y se incluyen en el Reporte de raw data.</li><li>Úsalos para realizar la agregación o el filtrado de datos.</li></ul> |
+| Tipo de anuncio | af\_ad\_type | \_\_APP\_STATUS\_\_ | se usa para distinguir si la aplicación se activó anteriormente.<ul><li>si la campaña se usa para hacer targeting a los usuarios que instalaron la aplicación pero nunca la abrieron, el parámetro será</li></ul>af\_ad\_type=installed<ul><li>si la campaña se usa para hacer targeting a los usuarios que nunca instalaron la aplicación, el parámetro será</li></ul>af\_ad\_type=notinstalled |
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported by this partner.
+Este partner no admite datos de costos.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue data is not supported by this partner.
+Este partner no admite ingresos por publicidad.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Petal Ads Global. Note that even if attribution is disabled for Petal Ads Global, the permissions tab is active and you can grant control to Petal Ads Global.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgar a Petal Ads Global. Ten en cuenta que, aunque la atribución esté deshabilitada para Petal Ads Global, la pestaña de permisos está activa y puedes otorgar el control a Petal Ads Global.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Learn how to give permissions to Petal Ads Global.</Anchor>
+<Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">Descubre cómo otorgar permisos a Petal Ads Global.</Anchor>
 
 </Accordion>
 
-## Configuring campaigns on Petal Ads Global
+## Configuración de campañas en Petal Ads Global
 
-**To configure AppsFlyer attribution on Petal Ads Global, please click** [**here**](https://developer.huawei.com/consumer/en/doc/distribution/promotion/appsflyer-0000001122291488) **to learn more from Huawei Support Center.**
+**Para configurar la atribución de AppsFlyer en Petal Ads Global, haz clic** [**aquí**](https://developer.huawei.com/consumer/en/doc/distribution/promotion/appsflyer-0000001122291488) **para saber más en el Centro de soporte de Huawei.**
 
-1. <span id="EN-US_TOPIC_0000001122291488__li7712141055015"></span><span id="EN-US_TOPIC_0000001122291488__en-us_topic_0000001122291488_ol75772831710"></span>Obtain the impression and click tracking URLs in AppsFlyer.
-2. Associate AppsFlyer in Petal Ads Global.
-3. Set the data postback in AppsFlyer.
-4. Create a conversion in Petal Ads Global.
-5. Test the conversion in Petal Ads Global.
-6. Create an ad task in Petal Ads Global.
-7. [View the conversion data](https://developer.huawei.com/consumer/en/doc/distribution/promotion/tracking-shu-0000001139892541) in Petal Ads Global.
+1. <span id="EN-US_TOPIC_0000001122291488__li7712141055015"></span><span id="EN-US_TOPIC_0000001122291488__en-us_topic_0000001122291488_ol75772831710"></span>Obtén las URL de tracking de impresiones y clics en AppsFlyer.
+2. Asocia AppsFlyer en Petal Ads Global.
+3. Configura el postback de datos en AppsFlyer.
+4. Crea una conversión en Petal Ads Global.
+5. Prueba la conversión en Petal Ads Global.
+6. Crea una tarea de anuncio en Petal Ads Global.
+7. [Ver los datos de conversión](https://developer.huawei.com/consumer/en/doc/distribution/promotion/tracking-shu-0000001139892541) en Petal Ads Global.
 
-## Data discrepancies
+## Discrepancias en los datos
 
-**Note：** On the Petal Ads Global dashboard, the conversion data(eg. Install/Activations) has 2 data sources, the one is AppsFlyer the other one is HMS. When you want to compare the data, such as install, between AppsFlyer and Petal Ads Global dashboard, please select the 'Activations’ instead of 'Activations(HMS)' on the Huawei dashboard.
+**Nota:** En el dashboard de Petal Ads Global, los datos de conversión (p. ej., instalaciones/activaciones) tienen 2 fuentes de datos: una es AppsFlyer y la otra es HMS. Si quieres comparar los datos, como las instalaciones, entre AppsFlyer y el dashboard de Petal Ads Global, selecciona "Activations" en lugar de "Activations(HMS)" en el dashboard de Huawei.
 
 [![](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)
 
-#### Data reporting on Petal Ads Global and FAQs of data discrepancy
+#### Reporte de datos en Petal Ads Global y preguntas frecuentes sobre discrepancias de datos
 
-| Metric | Data source | FAQ | Description |
+| Métrica | Fuente de datos | Preguntas frecuentes | Nota |
 | --- | --- | --- | --- |
-| Impressions | Huawei | Huawei impressions < AF impressions | AppsFlyer records all the impressions that Huawei sends to AF, while Petal Ads Global would do some data processing before displaying the impressions on the Petal Ads Global dashboard. |
-| Clicks | Huawei | Huawei clicks < AF clicks | AppsFlyer records all the clicks that Huawei sends to AF, while Petal Ads Global would do some data processing before displaying the clicks on Petal Ads Global. |
-| Downloads | Huawei | n/a | AF does not have this metric. |
-| Activations | Activations are from AppsFlyer; Activations HMS is from Huawei | Huawei Activations > AF installs | Huawei’s activations are AF's installs. The data discrepancy results from different data reporting logics. <br /><br />For example, a user downloaded the app from AppGallery on Dec 24th, and first-opened the app on Dec 25th. In this case, AF will record the install on Dec 25th, while Petal Ads Global will record this activation on Dec 24th. |
-| Day2 retention and other in-app events | For non-HMS ones, the data sources are AppsFlyer. | Huawei > AF | The data discrepancy results from different data reporting logics. <br /><br />Following the example above, the user registered in the app on Dec 26th, AF overview dashboard will display the registration data on Dec 25th, same as the install date. While Petal Ads Global promotion dashboard will display the registration on Dec 24th, the same as the download date. |
+| ID de transacción de reembolso | Huawei | Impresiones de Huawei < impresiones de AF | AppsFlyer registra todas las impresiones que Huawei envía a AF, mientras que Petal Ads Global realiza cierto procesamiento de datos antes de mostrar las impresiones en el dashboard de Petal Ads Global. |
+| Clics | Huawei | Clics de Huawei < clics de AF | AppsFlyer registra todos los clics que Huawei envía a AF, mientras que Petal Ads Global realiza cierto procesamiento de datos antes de mostrar los clics en el dashboard de Petal Ads Global. |
+| Descargas | Huawei | n/d | AF no tiene esta métrica. |
+| Activaciones | Las activaciones proceden de AppsFlyer; Activations HMS procede de Huawei | Activaciones de Huawei > instalaciones de AF | Las activaciones de Huawei son las instalaciones de AF. La discrepancia en los datos se debe a distintas lógicas de reporte de datos. <br /><br />Por ejemplo, un usuario descargó la aplicación desde AppGallery el 24 de diciembre y la abrió por primera vez el 25 de diciembre. En este caso, AF registrará la instalación el 25 de diciembre, mientras que Petal Ads Global registrará esta activación el 24 de diciembre. |
+| Retención de Day2 y otros eventos in-app | En los que no son HMS, las fuentes de datos son AppsFlyer. | Huawei > AF | La discrepancia en los datos se debe a distintas lógicas de reporte de datos. <br /><br />Siguiendo el ejemplo anterior, el usuario se registró en la aplicación el 26 de diciembre; el dashboard general de AF mostrará los datos de registro el 25 de diciembre, igual que la fecha de instalación. Mientras que el dashboard de promociones de Petal Ads Global mostrará el registro el 24 de diciembre, igual que la fecha de descarga. |
 
-<div data-zendesk-anchors="huawei-ads-introduction=petal-ads-global-introduction h_01HJQZWW4SH5E9C3VXYM6NNPBA=petal-ads-global-introduction setting-up-huawei-ads=setting-up-petal-ads-global h_01HJQZWW4SQ3CDC1TP9NZGQHH5=setting-up-petal-ads-global h_01HJRA1NPKF36ZV8AB3PKGWMXS=setting-up-the-petal-ads-global-integration h_01HJQZWW4SPFQAKKPJCZ38YNV4=integration-tab h_01HJQZWW4TR0XVYFYWPGAQ2FMX=activate-partner h_01HJQZWW4T9QYECWJKFN8SV5D5=general-settings h_01HJQZWW4T62ZJSH1RBGJSC8MY=default-postbacks inapp-events-settings=in-app-events-settings h_01HJQZWW4T44X5H42KAR432VN7=in-app-events-settings h_01HJQZWW4T7TEZ27VRFPFY7DKA=attribution-link-tab h_01HJQZWW4TGDKCV8Q7B80Y5ZWG=cost-tab h_01HJQZWW4T384J7GVEEJ2EQZ0N=ad-revenue-tab h_01HJQZWW4T2P0NZ51TSF8VDEBP=permissions-tab configuring-campaigns-on-huawei-ads-global=configuring-campaigns-on-petal-ads-global h_01HJQZWW4TEX7SDZSG03AK51H9=configuring-campaigns-on-petal-ads-global h_01HJQZWW4VNTKP5R4KYWX80P5P=data-discrepancies data-reporting-on-huawei-ads-and-faqs-of-data-discrepancy=data-reporting-on-petal-ads-global-and-faqs-of-data-discrepancy h_01HJQZWW4VZV1R32TMGGEVNCVA=data-reporting-on-petal-ads-global-and-faqs-of-data-discrepancy" />
+<div data-zendesk-anchors="huawei-ads-introduction=introducci%C3%B3n-a-petal-ads-global h_01HJQZWW4SH5E9C3VXYM6NNPBA=introducci%C3%B3n-a-petal-ads-global setting-up-huawei-ads=configuraci%C3%B3n-de-petal-ads-global h_01HJQZWW4SQ3CDC1TP9NZGQHH5=configuraci%C3%B3n-de-petal-ads-global setting-up-the-petal-ads-global-integration=configuraci%C3%B3n-de-la-integraci%C3%B3n-con-petal-ads-global h_01HJRA1NPKF36ZV8AB3PKGWMXS=configuraci%C3%B3n-de-la-integraci%C3%B3n-con-petal-ads-global h_01HJQZWW4SPFQAKKPJCZ38YNV4=integration-tab activate-partner=activar-socio h_01HJQZWW4TR0XVYFYWPGAQ2FMX=activar-socio general-settings=configuraci%C3%B3n-general h_01HJQZWW4T9QYECWJKFN8SV5D5=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HJQZWW4T62ZJSH1RBGJSC8MY=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HJQZWW4T44X5H42KAR432VN7=configuraci%C3%B3n-de-eventos-in-app h_01HJQZWW4T7TEZ27VRFPFY7DKA=attribution-link-tab h_01HJQZWW4TGDKCV8Q7B80Y5ZWG=cost-tab h_01HJQZWW4T384J7GVEEJ2EQZ0N=ad-revenue-tab h_01HJQZWW4T2P0NZ51TSF8VDEBP=permissions-tab configuring-campaigns-on-huawei-ads-global=configuraci%C3%B3n-de-campa%C3%B1as-en-petal-ads-global h_01HJQZWW4TEX7SDZSG03AK51H9=configuraci%C3%B3n-de-campa%C3%B1as-en-petal-ads-global data-discrepancies=discrepancias-en-los-datos h_01HJQZWW4VNTKP5R4KYWX80P5P=discrepancias-en-los-datos data-reporting-on-huawei-ads-and-faqs-of-data-discrepancy=reporte-de-datos-en-petal-ads-global-y-preguntas-frecuentes-sobre-discrepancias-de-datos h_01HJQZWW4VZV1R32TMGGEVNCVA=reporte-de-datos-en-petal-ads-global-y-preguntas-frecuentes-sobre-discrepancias-de-datos" />

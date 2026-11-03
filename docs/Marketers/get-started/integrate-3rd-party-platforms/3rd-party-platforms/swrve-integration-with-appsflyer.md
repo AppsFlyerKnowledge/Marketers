@@ -1,5 +1,5 @@
 ---
-title: Swrve integration with AppsFlyer
+title: Integración de Swrve con AppsFlyer
 metadata:
   keywords:
     - Swrve
@@ -21,36 +21,37 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2015-12-24T11:46:00Z'
-  edited_at: '2026-08-14T16:22:59Z'
+  edited_at: '2026-08-22T00:11:58Z'
   id: 207040656
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207040656-Swrve-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/207040656
 ---
-> **At a glance:** Swrve, an AppsFlyer integrated partner, is a cross-platform customer interaction engine, allowing advertisers to deliver targeted, personal and optimized interactions to end-users:
+> **At a glance:** Swrve, un partner integrado de AppsFlyer, es un motor de interacción con clientes multiplataforma que permite a los anunciantes ofrecer interacciones específicas, personales y optimizadas a los usuarios finales:
 
-* Dynamic optimization and testing of core app content
-* In-app and push notification campaigns
-* Email
+* Optimización dinámica y pruebas del contenido principal de la aplicación
+* Campañas in-app y de notificaciones push
+* Correo electrónico
 
-Alongside AppsFlyer, Swrve provides a complete lifecycle solution for maximizing the ROI on development and acquisition spend, and delivers outstanding user experiences throughout the mobile app journey. That includes customizing user experience based on acquisition source shared between the two platforms, meaning users can be served content specific to their user journey from the moment they open the app for the first time.
+Junto con AppsFlyer, Swrve ofrece una solución completa del ciclo de vida para maximizar el ROI de los gastos en desarrollo y adquisición, y proporciona experiencias de usuario excelentes a lo largo de todo el recorrido en la aplicación móvil. Esto incluye personalizar la experiencia del usuario en función de la fuente de adquisición compartida entre las dos plataformas, lo que significa que se puede mostrar a los usuarios contenido específico para su recorrido desde el momento en que abren la aplicación por primera vez.
 
-The integration works by notifying Swrve of installs to their API using their REST API. To do so, you will need to set up a server postback in your AppsFlyer account for each one of your mobile apps.
+La integración funciona notificando a Swrve las instalaciones a su API mediante su API REST. Para ello, tendrás que configurar un postback del servidor en tu cuenta de AppsFlyer para cada una de tus aplicaciones móviles.
 
 > 🚧 **Important**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> **Importante:**
+>
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Integrating Swrve and AppsFlyer
+## Integración de Swrve y AppsFlyer
 
-Setting up a postback that allows Swrve to measure LTV and user behavior for different acquisition sources:
+Configurar un postback que permita a Swrve medir el LTV y el comportamiento de los usuarios para diferentes fuentes de adquisición:
 
-**Step 1**: After initializing Swrve, set your user’s ID (before any call to the AppsFlyer SDK) with the following:
+**Paso 1**: Después de inicializar Swrve, establece el ID del usuario (antes de cualquier llamada al SDK de AppsFlyer) con lo siguiente:
 
 <Tabs>
-<Tab title="For Android">
+<Tab title="Para Android">
 
 ```java
 AppsFlyerLib.setCustomerUserId(SwrveSDK.getUserId());
@@ -58,7 +59,7 @@ AppsFlyerLib.setCustomerUserId(SwrveSDK.getUserId());
 
 </Tab>
 
-<Tab title="For iOS">
+<Tab title="Para iOS">
 
 ```objectivec
 NSString* swrve_user_id = [[Swrve sharedInstanceWithAppID:appId apiKey:apiKey] userID];
@@ -67,7 +68,7 @@ NSString* swrve_user_id = [[Swrve sharedInstanceWithAppID:appId apiKey:apiKey] u
 
 </Tab>
 
-<Tab title="For Unity">
+<Tab title="Para Unity">
 
 ```swift
 Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
@@ -76,110 +77,109 @@ Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 </Tab>
 </Tabs>
 
-**Step 2**: Set a postback in your AppsFlyer dashboard by performing the following actions:
+**Paso 2**: Configura un postback en tu dashboard de AppsFlyer realizando las siguientes acciones:
 
-## Setting up Swrve
+## Configuración de Swrve
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Configurar la integración de ASA**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-Swrve's configuration window only uses the **Integration** tab.
+La ventana de configuración de Swrve solo utiliza la pestaña **integración**.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del Partner Configuration Window Header, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the set up of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, debes activar el botón ***Activate Partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### General settings
+### Configuración general
 
-**App ID and API Key**
+**ID de la aplicación y clave API**
 
-Swrve connects with AppsFlyer via a unique App ID and API Key. If you don't already have them, you must obtain them from Swrve to continue with the integration.
+Swrve se conecta con AppsFlyer mediante un ID de aplicación único y una clave API. Si aún no los tienes, debes obtenerlos de Swrve para continuar con la integración.
 
 ![Swrve_msc_new_3.png](https://files.readme.io/feb1d5f846629d1909727b70b66e4b36138704ebbe4518e2dc03652b9fe5c57a-360001902065.png)
 
-Perform the following steps, as required:
+Realiza los siguientes pasos, según sea necesario:
 
-* Enter the **APP\_ID**
-* Enter the **api\_key**
-* Select **EU** for EU customers
-* Select **Advanced Data Sharing** to send the following additional information to Swrve: cost\_value, channel, keywords, siteID, and c (campaign)
+* Introduce el **APP\_ID**
+* Introduce la **api\_key**
+* Selecciona **UE** para los clientes de la UE
+* Selecciona **Uso compartido avanzado de datos** para enviar la siguiente información adicional a Swrve: cost\_value, canal, keywords, siteID y c (campaña)
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Swrve following user installs. Use this section to define sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a Swrve tras las instalaciones de los usuarios. Usa esta sección para definir el envío de estos postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/8d263c9367eb9668c985ffcadf5981475de9f4336b6da8c4c6cef45734a7897b-360001902245.png)
+![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
 
-Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Swrve.
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para enviar postbacks a Swrve de cualquier usuario que descargue la app.
 
-Click **Save**
+Haz clic en **Save**
 
-Once saved, AppsFlyer begins sending the following data to Swrve for every organic and non-organic install:
+Una vez guardado, AppsFlyer empieza a enviar los siguientes datos a Swrve para cada instalación orgánica y no orgánica:
 
 * api\_key
-* Swrve user ID as set in the SDK
-* Media Source
-* Campaign Name
+* ID de usuario de Swrve tal como se ha configurado en el SDK
+* Fuente de medios
+* Nombre de la campaña
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for Swrve.
+Los enlaces de atribución no están disponibles para Swrve.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for Swrve.
+Los permisos no están disponibles para Swrve.
 
 </Accordion>
 
-## Swrve reporting with AppsFlyer data
+## Reportes de Swrve con datos de AppsFlyer
 
-After you have server postbacks set up to send attribution information from AppsFlyer to Swrve, you can view acquisition data in the Swrve platform and utilize the full range of Swrve targeting and testing functionalities.
+Después de configurar los postbacks del servidor para enviar información de atribución desde AppsFlyer a Swrve, puedes ver los datos de adquisición en la plataforma de Swrve y utilizar toda la gama de funcionalidades de targeting y testing de Swrve.
 
-The main dashboard page for your app includes all of your app's vital information at a glance. From this page, you can continue to utilize the testing, targeting, and reporting features by selecting the relevant tabs in the main navigation bar.
+La página principal del dashboard de tu aplicación incluye de un vistazo toda la información vital de tu aplicación. Desde esta página, puedes seguir utilizando las funciones de testing, targeting e informes seleccionando las pestañas correspondientes en la barra de navegación principal.
 
-![Swrve dashboard acquisition graph](https://files.readme.io/6a3e4cf709f58b20f2932ab47e6fa9289653504d85a0b6eec2580718e2a4dc7c-49839257162769.png)
-![Swrve dashboard acquisition data table](https://files.readme.io/561403abefae9e98e24934c96dd25b1ee34ae24cf30695354c4930404e0a7f19-49839257163537.png)
+![Gráfico de adquisición del dashboard de Swrve](https://files.readme.io/6a3e4cf709f58b20f2932ab47e6fa9289653504d85a0b6eec2580718e2a4dc7c-49839257162769.png)
+![Tabla de datos de adquisición del dashboard de Swrve](https://files.readme.io/561403abefae9e98e24934c96dd25b1ee34ae24cf30695354c4930404e0a7f19-49839257163537.png)
 
-<div data-zendesk-anchors="h_01H9HWK5DM1K9P5XXC6S7ENAGV=integrating-swrve-and-appsflyer h_01H9HWK5DMS8HAK25BF5EXZT51=setting-up-swrve h_01H9HWK5DN9D0DS46X72EDAW54=integration-tab h_01H9HWK5DN375XJVHQCZ8Y3K13=activate-partner h_01H9HWK5DN0XK2E0HXS61GRECE=general-settings h_01H9HWK5DNH6SYY8T9NX09MRYS=default-postbacks h_01H9HWK5DNZVQDZ0Q1Z9WSKRSR=attribution-link-tab h_01H9HWK5DNPG89HSB0107TKHED=cost-tab h_01H9HWK5DNARD4K0MPHPXKBPXZ=ad-revenue-tab h_01H9HWK5DNFKAT0J98JWVRPQ1G=permissions-tab h_01H9HWK5DN3QB9V593EV566GAQ=swrve-reporting-with-appsflyer-data" />
+<div data-zendesk-anchors="integrating-swrve-and-appsflyer=integraci%C3%B3n-de-swrve-y-appsflyer h_01H9HWK5DM1K9P5XXC6S7ENAGV=integraci%C3%B3n-de-swrve-y-appsflyer setting-up-swrve=configuraci%C3%B3n-de-swrve h_01H9HWK5DMS8HAK25BF5EXZT51=configuraci%C3%B3n-de-swrve h_01H9HWK5DN9D0DS46X72EDAW54=integration-tab activate-partner=activar-socio h_01H9HWK5DN375XJVHQCZ8Y3K13=activar-socio general-settings=configuraci%C3%B3n-general h_01H9HWK5DN0XK2E0HXS61GRECE=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01H9HWK5DNH6SYY8T9NX09MRYS=postbacks-predeterminados h_01H9HWK5DNZVQDZ0Q1Z9WSKRSR=attribution-link-tab h_01H9HWK5DNPG89HSB0107TKHED=cost-tab h_01H9HWK5DNARD4K0MPHPXKBPXZ=ad-revenue-tab h_01H9HWK5DNFKAT0J98JWVRPQ1G=permissions-tab swrve-reporting-with-appsflyer-data=reportes-de-swrve-con-datos-de-appsflyer h_01H9HWK5DN3QB9V593EV566GAQ=reportes-de-swrve-con-datos-de-appsflyer" />

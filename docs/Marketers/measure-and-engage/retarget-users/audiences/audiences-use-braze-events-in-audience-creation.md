@@ -1,5 +1,5 @@
 ---
-title: Audiences - Use Braze events in audience creation
+title: 'Audiencias: usa eventos de Braze en la creación de audiencias'
 metadata:
   keywords:
     - Advertisers
@@ -14,43 +14,42 @@ x-zendesk:
     - Marketers
     - Audience Segmentation
   created_at: '2021-11-17T09:55:26Z'
-  edited_at: '2026-10-04T12:09:19Z'
+  edited_at: '2026-10-06T00:17:55Z'
   id: 4411130243217
-  locale: en-us
+  locale: es
   section: Audiences
   section_id: 6551336428945
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4411130243217-Audiences-Use-Braze-events-in-audience-creation
+  url: https://support.appsflyer.com/hc/es/articles/4411130243217
 ---
-> **At a glance:** Send Braze message engagement events to AppsFlyer Audiences and use them to add precision to your audience definitions.
+> **At a glance:** Envía eventos de interacción de mensajes de Braze a AppsFlyer Audiences y utilízalos para definir con más precisión tus audiencias.
 
-By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in <Anchor target="_blank" href="/marketers/docs/audiences-guide#all-about-rulesets">rulesets</Anchor> when defining audiences.
+Al establecer una conexión entrante entre tu cuenta de Braze y AppsFlyer Audiences, traspasas los datos de eventos de participación de mensajes de Braze a Audiences. Luego puedes utilizar estos datos en <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#todo-sobre-los-conjuntos-de-reglas">conjuntos de reglas</Anchor> al definir audiencias.
 
 > 🚧 **Important**
 >
-> **Prerequisites**
+> **Prerrequisitos**
 >
-> * Both the Braze and AppsFlyer SDKs must be integrated into your app.
-> * You must subscribe to the **Currents** feature in Braze.
+> * Es necesario que los SDK de Braze y AppsFlyer estén integrados en tu aplicación.
+> * Debes registrarte en la función **Currents** en Braze.
 
-## Set up the Braze incoming connection
+## Configurar la conexión entrante de Braze
 
-There are 3 main steps for setting up the Braze incoming connection:
+Hay 3 pasos principales para configurar la conexión entrante de Braze:
 
-1. [Set up the AppsFlyer SDK](/docs/audiences-use-braze-events-in-audience-creation#set-up-the-appsflyer-sdk)
-2. [Create an incoming connection in AppsFlyer](/docs/audiences-use-braze-events-in-audience-creation#create-an-incoming-braze-connection-in-appsflyer)
-3. [Create a Current in Braze](/docs/audiences-use-braze-events-in-audience-creation#create-a-current-in-braze)
+1. [Configurar el SDK de AppsFlyer](/docs/audiences-use-braze-events-in-audience-creation#set-up-the-appsflyer-sdk)
+2. [Crear una conexión entrante en AppsFlyer](/docs/audiences-use-braze-events-in-audience-creation#create-an-incoming-braze-connection-in-appsflyer)
+3. [Crear una Current en Braze](/docs/audiences-use-braze-events-in-audience-creation#create-a-current-in-braze)
 
-<Accordion title="Set up the AppsFlyer SDK">
+<Accordion title="Configurar el SDK de AppsFlyer">
 
-To create an incoming connection from Braze, the AppsFlyer SDK in your apps must be configured to pass each user's **Braze External ID** to AppsFlyer. You can do this using either:
+Para crear una conexión entrante desde Braze, el SDK de AppsFlyer en tus aplicaciones debe estar configurado para pasar el **ID Externo de Braze** de cada usuario a AppsFlyer. Puedes hacerlo utilizando cualquiera de las dos opciones siguientes:
 
-* Braze External ID parameter
-* CUID field
+* Parámetro ID externo de Braze
+* Campo CUID
 
-#### **Using a Braze External ID parameter**
+#### **Uso de un parámetro ID Externo de Braze**
 
-You can configure a dedicated parameter to pass the Braze External ID to AppsFlyer using the `setPartnerData` function of the AppsFlyer SDK. Usage examples follow:
+Puedes configurar un parámetro específico para pasar el ID Externo de Braze a AppsFlyer con la función `setPartnerData` del SDK de AppsFlyer. A continuación, ejemplos de uso:
 
 <Tabs>
 <Tab title="Android">
@@ -63,7 +62,7 @@ AppsFlyerLib.getInstance().setPartnerData("braze_int", brazeData);
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
 ```objectivec
 NSDictionary *brazeInfo = @{
@@ -76,87 +75,87 @@ partnerInfo:brazeInfo];
 </Tab>
 </Tabs>
 
-#### **Using the CUID field**
+#### **Uso del campo CUID**
 
-There is no need to configure a dedicated parameter for the Braze External ID if:
+No es necesario configurar un parámetro dedicado para el ID Externo de Braze si:
 
-* You have configured the SDK to send AppsFlyer a <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">CUID</Anchor> for each user
-* The CUID has the same value as the Braze External ID
+* Has configurado el SDK para enviar a AppsFlyer un <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">CUID</Anchor> para cada usuario
+* El CUID tiene el mismo valor que el ID externo de Braze External.
 
-In this case, you can simply select the **CUID option** as the SDK parameter when [creating your incoming Braze connection](/docs/audiences-use-braze-events-in-audience-creation#create-an-incoming-braze-connection-in-appsflyer).
+En este caso, simplemente puedes seleccionar la **opción CUID** como parámetro del SDK al [crear tu conexión entrante de Braze](/docs/audiences-use-braze-events-in-audience-creation#create-an-incoming-braze-connection-in-appsflyer).
 
 </Accordion>
 
-<Accordion title="Create an incoming Braze connection in AppsFlyer">
+<Accordion title="Crear una conexión entrante de Braze en AppsFlyer">
 
-**Follow these steps to create an incoming connection in AppsFlyer:**
+**Sigue estos pasos para crear una conexión entrante en AppsFlyer:**
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Audiences**
-2. In the Audiences page, go to **Connections > Incoming** **tab**.
-3. Click the **New incoming connection** button.
-4. Select Braze from the list of available partners.
-5. Click the **Save** button to create the connection.  
-   The **Connection credentials** dialog opens.
-6. Copy the connection credentials to use when setting up the connection to AppsFlyer Audiences in the Braze platform:
-   * Access key ID
-   * Secret access key
-   * Bucket name
-   * Folder path
-7. Select the SDK parameter you are using to send the Braze External ID:
-   * Braze External ID
+1. En AppsFlyer, en el menú lateral, selecciona **Engage** > **Audiencias**
+2. En la página de Audiencias, ve a la **pestaña** **Conexiones > Entrantes**.
+3. Haz clic en el botón **Nueva conexión entrante**.
+4. Selecciona Braze de la lista de socios disponibles.
+5. Haz clic en el botón **Guardar** para crear la conexión.  
+   Se abre el cuadro de diálogo **Credenciales de conexión**.
+6. Copia las credenciales de conexión para usarlas al configurar la conexión a AppsFlyer Audiences en la plataforma de Braze:
+   * ID de clave de acceso
+   * Clave de acceso secreta
+   * Nombre del bucket
+   * Ruta de la carpeta
+7. Selecciona el parámetro SDK que usas para enviar el ID externo de Braze:
+   * ID externo de Braze
    * CUID
 
 </Accordion>
 
-<Accordion title="Create a Current in Braze">
+<Accordion title="Crear una Current en Braze">
 
-**Follow these steps to create a Current in Braze:**
+**Sigue estos pasos para crear un Current en Braze:**
 
-1. Go to the **Integration** section of the left-side menu bar.
-2. Click **Currents.**
-3. Click the **Create Current** button.
-4. Select **Amazon S3 Data Export.**
-5. In the **Create Currents Integration** section:
-   1. Enter a name for the Current (for example, AppsFlyer Audiences).
-   2. Enter the email of someone on your team that Braze will notify in case of issues with the credentials for the Current.
-6. In the **Credentials** section:
-   1. Keep the option for **AWS Secret Access Key** selected (this is the default value).
-   2. Enter the credentials you copied from AppsFlyer in the appropriate fields.
-   3. Keep the **Enable Encryption** option unchecked.
-7. Under **General Settings**, keep **Include events from anonymous users** checked.
-8. In the **Message Engagement Events** section, select the events you want Braze to send to AppsFlyer. See the list of supported events [below](/docs/audiences-use-braze-events-in-audience-creation#supported-events).
-9. In the Customer Behavior and User Events section, keep the **Track Customer Behavior and User Events** option turned off.
-10. Click the **Launch Current** button to save the configuration and start sending Braze message engagement events to Audiences.
+1. Ve a la sección **Integración** en la barra de menú lateral izquierda.
+2. Haz clic en **Currents.**
+3. Haz clic en el botón **Crear Current**.
+4. Selecciona **Exportación de datos de Amazon S3.**
+5. En la sección **Crear integración de Currents**:
+   1. Introduce un nombre para el Current (por ejemplo, AppsFlyer Audiences).
+   2. Introduce el correo electrónico de un miembro de tu equipo para que Braze le notifique en caso de problemas con las credenciales del Current.
+6. En la sección de **Credenciales**:
+   1. Mantén seleccionada la opción **Clave de acceso secreta de AWS** (es el valor predeterminado).
+   2. Ingresa las credenciales que copiaste de AppsFlyer en los campos correspondientes.
+   3. Deja desmarcada la opción **Habilitar cifrado**.
+7. En **Configuración general**, mantén marcada la opción **Incluir eventos de usuarios anónimos**.
+8. En la sección **Eventos de engagement de mensajes**, selecciona los eventos que quieres que Braze envíe a AppsFlyer. Consulta la lista de eventos compatibles [a continuación](/docs/audiences-use-braze-events-in-audience-creation#eventos-admitidos).
+9. En la sección Comportamiento del cliente y eventos del usuario, mantén desactivada la opción **Track Customer Behavior and User Events**.
+10. Haz clic en el botón **Launch Current** para guardar la configuración y empezar a enviar eventos de engagement de mensajes de Braze a audiencias.
 
-#### supported events
+#### eventos admitidos
 
 > 📘 **Note**
 >
-> **Supported Braze events**
+> **Eventos de Braze compatibles**
 >
-> * Subscription Group State Change
-> * Email Click
-> * Email Open
-> * Email Send
-> * Email Delivery
-> * Email Mark as Spam
-> * Email Unsubscribe
-> * Email Bounce
-> * Email Soft Bounce
-> * Push Open
-> * Push Send
-> * Push Bounce
-> * iOS Foreground Push
-> * SMS/MMS Send
+> * Cambio de Estado del Grupo de Suscripción
+> * Clic en Email
+> * Apertura de Email
+> * Envío de Email
+> * Entrega de Email
+> * Marcar Email como Spam
+> * Cancelar Suscripción de Email
+> * Rebote de Email
+> * Rebote Suave de Email
+> * Apertura de Push
+> * Envío de Push
+> * Rebote de Push
+> * Push en Primer Plano de iOS
+> * Envío de SMS/MMS
 
 </Accordion>
 
-## Using Braze data in Audiences
+## Uso de Datos de Braze en Audiencias
 
-Once the Braze incoming connection is set up, the engagement events you've defined will appear as options in the <Anchor target="_blank" href="/marketers/docs/audiences-guide#ruleset-filters">ruleset filters</Anchor> for defining audiences.
+Una vez que se configure la conexión entrante de Braze, los eventos de engagement que hayas definido aparecerán como opciones en los <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#ruleset-filters">filtros del conjunto de reglas</Anchor> para definir audiencias.
 
 ![audiences_braze_ruleset.png](https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png)
 
-**Note:** It takes approximately 24 hours for the Braze message engagement events to be available in AppsFlyer after you launch the current in Braze.
+**Nota:** Los eventos de engagement de mensajes de Braze tardan aproximadamente 24 horas en estar disponibles en AppsFlyer después de lanzar el current en Braze.
 
-<div data-zendesk-anchors="h_01HKW0BS5H1ANWAJZTVBWDQHJH=set-up-the-braze-incoming-connection h_01HKW0BS5HGB2RYGWNXT1M163C=using-a-braze-external-id-parameter h_01HKW0BS5HQJZRR60VKBCWGHQB=using-the-cuid-field h_01HKW0BS5JM8A9XFVX22KWFE3H=supported-events h_01HKW0BS5JTZQ71HFE305ZT1CS=using-braze-data-in-audiences" />
+<div data-zendesk-anchors="set-up-the-braze-incoming-connection=configurar-la-conexi%C3%B3n-entrante-de-braze h_01HKW0BS5H1ANWAJZTVBWDQHJH=configurar-la-conexi%C3%B3n-entrante-de-braze using-a-braze-external-id-parameter=uso-de-un-par%C3%A1metro-id-externo-de-braze h_01HKW0BS5HGB2RYGWNXT1M163C=uso-de-un-par%C3%A1metro-id-externo-de-braze using-the-cuid-field=uso-del-campo-cuid h_01HKW0BS5HQJZRR60VKBCWGHQB=uso-del-campo-cuid supported-events=eventos-admitidos h_01HKW0BS5JM8A9XFVX22KWFE3H=eventos-admitidos using-braze-data-in-audiences=uso-de-datos-de-braze-en-audiencias h_01HKW0BS5JTZQ71HFE305ZT1CS=uso-de-datos-de-braze-en-audiencias" />

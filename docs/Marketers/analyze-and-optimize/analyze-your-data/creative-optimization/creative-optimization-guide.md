@@ -1,5 +1,5 @@
 ---
-title: Creative Optimization guide
+title: Guía de Optimización Creativa
 metadata:
   keywords:
     - Premium
@@ -14,136 +14,141 @@ x-zendesk:
     - Marketers
     - Creative Optimization
   created_at: '2023-09-14T13:32:13Z'
-  edited_at: '2026-09-23T08:06:40Z'
+  edited_at: '2026-09-28T00:01:46Z'
   id: 18564718580625
-  locale: en-us
+  locale: es
   section: Creative Optimization
   section_id: 4419063475217
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/18564718580625-Creative-Optimization-guide
+  url: https://support.appsflyer.com/hc/es/articles/18564718580625
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform, so you can analyze their performance, discover which creatives work best, and make better data-driven decisions. Data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range.
+> **En resumen:** La Optimización Creativa te permite extraer todos los datos de recursos creativos de todas tus campañas en una sola plataforma, para que puedas analizar su rendimiento, descubrir qué creatividades funcionan mejor y tomar mejores decisiones basadas en datos. Los datos son LTV, lo que significa que las métricas son para conversiones que ocurrieron a partir de creativos durante el rango de fechas seleccionado.
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
-## About Creative Optimization
+## Sobre la Optimización Creativa
 
-**Creative Optimization** is your one-stop shop for measuring the performance of creatives used in all of your campaigns. It enables you to effortlessly pull all your creative assets from all media channels into one platform, or your BI system, and analyze their performance by selected dimensions, across multiple campaigns, channels, and much more. Creative Optimization enables you to slice and dice by different metrics and KPIs to gain critical insights before planning, selecting, and producing your next batch of creatives.
+La **Optimización Creativa** es tu ventanilla única para medir el rendimiento de las creatividades utilizadas en todas tus campañas. Te permite extraer sin esfuerzo todos tus recursos creativos de todos los canales de medios en una sola plataforma, o en tu sistema de BI, y analizar su rendimiento por dimensiones seleccionadas, a través de múltiples campañas, canales y mucho más. La Optimización Creativa te permite dividir y segmentar por diferentes métricas y KPIs para obtener insights críticos antes de planificar, seleccionar y producir tu próximo lote de creatividades.
 
-The Creative Optimization dashboards let you measure the performance of videos, images, HTML, and text, and see how well they’re doing over time and across channels. Each creative is analyzed, aggregated, and matched using powerful AI algorithms. This means that the same creatives used for different campaigns and media sources are identified and displayed as one in the dashboards regardless of their naming convention, ad ID, or any other metadata.
+Sus dashboards te permiten medir el rendimiento de videos, imágenes, HTML y texto, y ver qué tan bien les va a lo largo del tiempo y en todos los canales. Cada creatividad es analizada, agregada y emparejada usando potentes algoritmos de IA. Esto significa que las mismas creatividades utilizadas para diferentes campañas y fuentes de medios se identifican y muestran como una sola en el dashboard, independientemente de su convención de nomenclatura, ID de anuncio o cualquier otro metadato.
 
-Use the <Anchor target="_blank" href="/marketers/docs/creative-optimization-overview-dashboard">Creative Optimization Overview dashboard</Anchor> to see your data laid out visually in a variety of information-packed graphs and a detailed table, which gives you all the information needed to optimize and select the best creatives for your campaigns.
+Utiliza el <Anchor target="_blank" href="/marketers/es/docs/creative-optimization-overview-dashboard">dashboard general de Optimización Creativa</Anchor> para ver tus datos visualmente en una variedad de gráficos llenos de información y una tabla detallada, que te brinda toda la información necesaria para optimizar y seleccionar las mejores creatividades para tus campañas.
 
-With the AI-powered <Anchor target="_blank" href="/marketers/docs/creative-optimization-discovery-ai-dashboard">Creative Optimization Discovery dashboard</Anchor>, take the guesswork out of producing winning creatives. Gain a comprehensive view of all your creatives or dive deep into the performance of individual scenes and elements for maximum data-driven insights.
+Con el <Anchor target="_blank" href="/marketers/es/docs/creative-optimization-discovery-ai-dashboard">dashboard de descubrimiento de Optimización Creativa</Anchor> impulsado por IA, no hagas suposiciones sobre la producción de creatividades ganadoras. Obtén una visión completa de todas tus creatividades o profundiza en el rendimiento de escenas y elementos individuales para obtener los máximos insights.
 
-<Anchor target="_blank" href="/marketers/docs/creative-optimization-etl-reporting">Creative Optimization ETL</Anchor> equips your data analysts with all the information needed for creative performance analysis by streaming reports automatically to cloud storage for efficient, programmatic loading into your BI systems.
+<Anchor target="_blank" href="/marketers/es/docs/creative-optimization-etl-reporting">Optimización Creativa ETL</Anchor> equipa a tus analistas de datos con toda la información necesaria para el análisis creativo del rendimiento mediante la transmisión automática de reportes al almacenamiento en la nube para una carga eficiente y programática en tus sistemas BI.
 
-With Creative Optimization, you can:
+Con la Optimización Creativa puedes:
 
-* Quickly learn which creatives, scenes, and elements work and which don't
-* Optimize your creatives based on data
-* Increase creative performance and ROI
-* Produce the most successful creatives
-* Identify declining effectiveness of creatives across time/channels/campaigns and make informed decisions for optimization
-* And more
+* Aprender rápidamente qué creatividades, escenas y elementos funcionan y cuáles no
+* Optimizar tus creatividades en función de los datos
+* Aumentar el rendimiento creativo y el ROI
+* Producir las creatividades más exitosas
+* Identificar la disminución de la eficacia de las creatividades a lo largo del tiempo/canales/campañas y tomar decisiones informadas para la optimización
+* Y más
 
-## Creative assets
+## Recursos creativos
 
-This section provides information about the creative assets we measure.
+Esta sección proporciona información sobre los recursos creativos que medimos.
 
 <div id="supported-asset-types" />
 
-<Accordion title="Supported asset types">
+<Accordion title="Tipos de recursos admitidos">
 
-Asset types supported by the Creative Optimization dashboard include:
+Los tipos de recursos compatibles con el dashboard de optimización creativa incluyen:
 
 * Videos
-* Images
-* Carousel ads (Meta only)
-* HTML (including Playable)
-* Text
+* Imágenes
+* Anuncios en carrusel (solo Meta)
+* HTML (incluido ejecutable)
+* Texto
 
-> 📘 **Notes**
+> 📘 **Notas**
 >
-> * Assets that can be previewed in the dashboard include images, videos, and text.
-> * The “Creative similarity” feature is not yet available for carousel ads.
+> * Los recursos que se pueden obtener en una vista previa en el dashboard incluyen imágenes, videos y texto.
+> * La función de "similitud creativa" aún no está disponible para
+>   anuncios de carrusel.
 
 </Accordion>
 
 <div id="matching-creatives" />
 
-<Accordion title="Matching creatives">
+<Accordion title="Creatividades coincidentes">
 
-Creative Optimization has the unique ability to identify which assets are the same, across multiple channels and campaigns, regardless of naming conventions or IDs. This is done by AI and computer vision algorithms that match properties such as visual context, sound, and pixels. Additionally:
+La optimización creativa tiene la capacidad única de identificar qué recursos son iguales, a través de múltiples canales y campañas, independientemente de las convenciones de nomenclatura o ID. Esto se realiza mediante algoritmos de IA y visión por computadora que coinciden con propiedades como el contexto visual, el sonido y los píxeles. Adicionalmente:
 
-* The matched creatives must have the same aspect ratio, such as portrait, landscape, or square.
-* Videos with different durations are considered different creatives.
+* Las creatividades coincidentes deben tener la misma relación de aspecto, como vertical, horizontal o cuadrado.
+* Los videos con diferentes duraciones se consideran diferentes creatividades.
 
 </Accordion>
 
 <div id="measuring-creatives-with-multiple-assets" />
 
-<Accordion title="Measuring creatives with multiple assets">
+<Accordion title="Medición de creatividades con múltiples recursos">
 
-**How does Creative Optimization measure an ad creative with multiple assets?**
+**¿Cómo mide la Optimización Creativa una creatividad publicitaria con múltiples recursos?**
 
-Meta Advantage+ (dynamic creatives), and Google Universal App Campaigns (UAC) can include ad creatives with multiple assets. However, AppsFlyer doesn't break down the data on the asset level. Meta ads provides data up to the **ad level** and Google provides data only up to the **ad group level**. For these types of ad creatives, AppsFlyer uses data modeling to divide performance data across the assets.
+Meta Advantage+ (creatividades dinámicas) y Google Universal App Campaigns (UAC) pueden incluir creatividades publicitarias con múltiples recursos. Sin embargo, AppsFlyer no desglosa los datos a nivel de recurso. Anuncios de Meta proporciona datos hasta el **nivel de anuncio** y Google proporciona datos solo hasta el **nivel del grupo de anuncios**. Para estos tipos de creatividades publicitarias, AppsFlyer utiliza el modelado de datos para dividir los datos de rendimiento entre los recursos.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Suppose there is an ad creative on Facebook with multiple assets. Facebook attributes it with 100 installs total, broken down to assets as follows: **asset A** has 60 installs and **asset B** has 40 installs, as measured by Facebook. In AppsFlyer, let’s say the ad is attributed with 50 installs (due to inherent attribution differences between AppsFlyer and <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor>). To enable asset-level analysis, AppsFlyer distributes the performance data (impressions, clicks, installs, and cost) based on the asset metrics ratio from the total as illustrated below.
+> Supongamos que hay un anuncio creativo en Facebook con múltiples recursos. Facebook lo atribuye con 100 instalaciones en total, desglosado en activos de la siguiente manera: el **recurso A** tiene 60 instalaciones y el **recurso B** tiene 40 instalaciones, según lo medido por Facebook. En AppsFlyer, digamos que al anuncio se le atribuyen 50 instalaciones (debido a diferencias de atribución inherentes entre AppsFlyer y SRN). Para permitir el análisis a nivel de activos, AppsFlyer distribuye los datos de performance (impresiones, clics, instalaciones y costo) en función de la relación de métricas de activos del total, como se ilustra a continuación.
 >
-> So, **for asset A there are:** 60 installs divided by 60+40 (total installs attributed by Facebook) = 0.6 Then we multiply 0.6 by 50 (number of AppsFlyer attributed installs) = 30 installs
+> Entonces, **para el recurso A hay:**
+> 60 instalaciones divididas por 60+40 (instalaciones totales atribuidas por Facebook) = 0.6
+> Luego multiplicamos 0.6 por 50 (número de instalaciones atribuidas de AppsFlyer) = 30 instalaciones
 >
-> **For asset B there are:** 40 installs divided by 60+40 (total installs attributed by Facebook) = 0.4 Then we multiply 0.4 by 50 (number of AppsFlyer attributed installs) = 20 installs.
+> **Para el recurso B hay:**
+> 40 instalaciones divididas por 60+40 (instalaciones totales atribuidas por Facebook) = 0.4
+> Luego multiplicamos 0.4 por 50 (número de instalaciones atribuidas de AppsFlyer) = 20 instalaciones
 >
-> So the ad creative is attributed with a total of 50 installs by AppsFlyer but the volume of installs per asset is kept which means that **asset A** generated more installs than **asset B**, in our example. Down funnel metrics, such as Revenue and ROAS, are calculated based on this ratio as well.
+> Por lo que a la creatividad de anuncios se le atribuye un total de 50 instalaciones por parte de AppsFlyer pero se mantiene el volumen de instalaciones por activo lo que significa que el **recurso A** generó más instalaciones que el **recurso B**, en nuestro ejemplo.
+> Las métricas del down-funnel, como Ingresos y ROAS, también se calculan en función de esta relación.
 >
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
 
-## Using the dashboard
+## Uso del dashboard
 
-This section provides a comprehensive overview of the main dashboard: How to use filters, the various metrics and dimensions available to get the creative data you're looking for, and how to save and share dashboard views.
+Esta sección proporciona una visión general completa del dashboard principal: Cómo usar filtros, las diversas métricas y dimensiones disponibles para obtener los datos creativos que estás buscando, y cómo guardar y compartir vistas del dashboard.
 
 [![Filter bar and metrics -Default view.jpg](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)
 
 <div id="filter-bar" />
 
-<Accordion title="Filter bar">
+<Accordion title="Barra de filtros">
 
-The first step in setting up your dashboards is selecting your filtering options. All filters are applied to both the Creative Optimization Overview and Discovery dashboards.
+El primer paso para configurar tu dashboard es seleccionar tus opciones de filtrado. Todos los filtros se aplican tanto al dashboard general de Optimización Creativa como al de descubrimiento.
 
 [![filter_bar.jpg](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)
 
-**To select dashboard filters**:
+Para seleccionar filtros del dashboard
 
-1. Select your:
-   * **App**
-   * **Date range:** A creative is displayed in the dashboard when there is conversion data for the creative during the selected date range. All data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range.
-   * [View type](#view-type)
-2. Click the + icon to add any of the following filtering options including:
-   * **Dimensions and metrics**
-   * **Numeric filters**, which are available for all metrics with the following options:
-     * Greater than - displays creatives with values higher than or equal to the chosen metric
-     * Less than - displays creatives with values below the chosen metric
+1. Selecciona:
+   * **Aplicación**
+   * **Rango de fechas:** Se muestra un creativo en el dashboard cuando hay datos de conversión para el creativo durante el rango de fechas seleccionado. Los datos son LTV, lo que significa que las métricas son para conversiones que ocurrieron a partir de creativos durante el rango de fechas seleccionado.
+   * [Tipo de vista](#view-type)
+2. Haz clic en el icono + para agregar cualquiera de las siguientes opciones de filtrado, incluyendo:
+   * **Dimensiones y métricas**
+   * **Filtros numéricos**, que están disponibles para todas las métricas con las siguientes opciones:
+     * Mayor que: muestra creatividades con valores superiores o iguales a la métrica elegida
+     * Menor que: muestra creatividades con valores por debajo de la métrica elegida
 
-In addition to [standard metrics and dimensions](/docs/creative-optimization-guide#standard-metrics-and-dimensions), the Creative Optimization dashboard offers various [unique metrics and dimensions.](#unique-metrics-and-dimensions)
+Además de las [métricas y dimensiones estándar](/docs/creative-optimization-guide#standard-metrics-and-dimensions), el dashboard de Optimización Creativa ofrece varias métricas y dimensiones únicas.
 
 </Accordion>
 
 <div id="view-type" />
 
-<Accordion title="View type">
+<Accordion title="Tipo de vista">
 
-Creative data in the dashboards is presented in 3 separate view types: Unified, User Acquisition (UA), and Retargeting:
+Los datos creativos en los dashboards se presentan en 3 tipos de vista separados: Unificado, Adquisición de Usuarios (UA) y Retargeting:
 
-* **Unified** - Displays all creative data from both UA and retargeting ads/adsets.
-* **User Acquisition** - Displays creative data associated with UA ads/adsets only.
-* **Retargeting** - Displays creative data associated with retargeting ads/adsets only. Cost data is available here as well.
+* **Unificada**: muestra todos los datos de creatividades de anuncios y conjuntos de anuncios de retargeting y UA.
+* **Adquisición de usuarios** : muestra los datos de las creatividades asociadas a anuncios y conjuntos de anuncios de UA únicamente.
+* **Retargeting**: muestra los datos de las creatividades asociadas a anuncios y conjuntos de anuncios de retargeting únicamente. Los datos de costos también están disponibles aquí.
 
 [![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)
 
@@ -151,202 +156,202 @@ Creative data in the dashboards is presented in 3 separate view types: Unified, 
 
 <div id="creative-optimization-roi360" />
 
-<Accordion title="Creative Optimization + ROI360">
+<Accordion title="Optimización Creativa + ROI360">
 
-With an AppsFlyer ROI360 subscription, cost data displayed in the Creative Optimization dashboards comes from ROI360, which consolidates and processes cost data from your ad network partners, and adds additional cost-based metrics. Without this subscription, cost data comes from your integrated media partners’ own reporting. We recommend an ROI360 subscription to access the most comprehensive and current cost data. The table below explains the Creative Optimization differences with and without ROI360.
+Con una suscripción a ROI360 de AppsFlyer, los datos de costos que se muestran en los dashboards de Optimización Creativa provienen de ROI360, que consolida y procesa los datos de costos de tus partners de ad networks y agregan métricas adicionales basadas en costos. Sin esta suscripción, los datos de costos provienen de los propios reportes de tus partners de medios integrados. Recomendamos una suscripción a ROI360 para acceder a los datos de costos más completos y actuales. La siguiente tabla explica las diferencias de Optimización Creativa con y sin ROI360.
 
-| With ROI360 | Without ROI360 |
+| Con ROI360 | Sin ROI360 |
 | --- | --- |
-| <ul><li><Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data#cost-tools">Has data as reported via any ROI360 method</Anchor>.</li><li><Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data#cost-tools">Has all the ROI360 cost-reporting capabilities</Anchor>.</li><li>Creative ETL includes cost data (requires an ROI360 Advanced subscription).</li></ul> | <ul><li>Cost data, as reported directly by your integrated partners, is limited to Creative Optimization dashboards, not Creative ETL.</li></ul> |
+| <ul><li><Anchor target="_blank" href="/marketers/es/docs/roi360-guide-cost-and-revenue-data#herramientas-de-costos">Los datos se informan a través de cualquier método ROI360</Anchor>.</li><li><Anchor target="_blank" href="/marketers/es/docs/roi360-guide-cost-and-revenue-data#herramientas-de-costos">Cuenta con todas las capacidades de reportes de costos de ROI360</Anchor>.</li><li>ETL creativo incluye datos de costos (requiere una suscripción avanzada de ROI360).</li></ul> | <ul><li>Los datos de costos, según lo informado directamente por tus partners integrados, se limitan a los dashboards de Optimización Creativa, no al ETL creativo.</li></ul> |
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data">ROI360</Anchor>.
+Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-cost-and-revenue-data">ROI360</Anchor>
 
 </Accordion>
 
 <div id="standard-metrics-and-dimensions" />
 
-<Accordion title="Standard metrics and dimensions">
+<Accordion title="Métricas y dimensiones estándar">
 
-Standard metrics/dimensions available in the dashboards include:
+Las métricas/dimensiones estándar disponibles en el dashboard incluyen:
 
-| Metric/dimension | Description |
+| Métrica/dimensión | Descripción |
 | --- | --- |
-| Impressions | Number of creative views |
-| Clicks | Number of clicks on ads with the creative |
-| Conversions | <ul><li>Installs - Number of unique users who install the app</li><li>Re-engagements - Number of unique users who open the app after interacting with a retargeting campaign</li><li>Re-attributions - Number of unique users who reinstall the app after interacting with a retargeting campaign</li></ul> |
-| Cost | Creative cost |
-| CTR (Click through rate) | Rate (%) of users who have clicked an ad in relation to the number of total views. Formula: Clicks/impressions *100 |
-| CVR (Conversion rate) | Rate (%) of users completing the journey from click to attribution (installs, re-engagements, and re-attributions). Formula: Conversions / Clicks *100 |
-| IPM (Installs per mille) | Installs per mille. Number of installs per every 1000 user impressions (ad views) |
-| eCPI (Effective cost per install) | eCPI excludes organic installs and calculates the cost per <Anchor target="_blank" href="/marketers/docs/about-organic-and-non-organic-installs">non-organic attributions</Anchor> (installs, re-engagements, and re-attributions). Formula: Total available cost / all non-organic attributions. |
-| CPM (Cost per mille) | Cost of 1000 ad impressions. Formula: Total creative spend / number of impressions) * 1,000 |
-| Platform | Refers to the OS (i.e. Android) |
-| Channel | Segmentation of traffic within media sources  <br />(i.e. YouTube for Google, Instagram for Meta ads etc.) |
-| Geo | Country/location |
-| IDs | <ul><li>Creative</li><li>Ad</li><li>Adset</li><li>Campaign</li></ul> |
-| Agency | Displays creative data from selected agencies |
-| Revenue (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorted revenue reported to AppsFlyer |
-| ROAS (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorted Return On Ad Spend (%). Calculates the revenue generated per unit of ad spend. Formula: Revenue / Cost * 100 |
-| Unique users (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorted unique users that engaged with your app up to, and including, the specified day from the install |
-| Retention (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorted rate (%) of users who continue to use your service or product over a predetermined period<br /><br />**Note:** The data is aligned with the AppsFlyer Cohort dashboard. |
+| Impresiones | Número de vistas creativas |
+| Clics | Número de clics en los anuncios con el creativo |
+| Conversiones | <ul><li>Instalaciones: número de usuarios únicos que instalan la aplicación</li><li>Re-engagements: número de usuarios únicos que abren la aplicación después de interactuar con una campaña de retargeting</li><li>Reatribuciones: número de usuarios únicos que reinstalan la aplicación después de interactuar con una campaña de retargeting</li></ul> |
+| Costo | Costo de la creatividad |
+| CTR (Tasa de click-through) | Tasa (%) de usuarios que han hecho clic en un anuncio en relación con el número de visitas totales. Fórmula: Clics / Impresiones * 100 |
+| CVR (tasa de conversión) | Tasa (%) de usuarios que completan la trayectoria desde el clic hasta la atribución (instalaciones, re-engagements y reatribuciones). Fórmula: Conversiones / Clics *100 |
+| IPM (instalaciones por mil) | Instalaciones por mil. Número de instalaciones por cada 1000 impresiones de usuario (vistas de anuncios) |
+| eCPI (costo efectivo por instalación) | El eCPI excluye las instalaciones orgánicas y calcula el costo por <Anchor target="_blank" href="/marketers/es/docs/about-organic-and-non-organic-installs">atribuciones no orgánicas</Anchor> (instalaciones, re-engagements y reatribuciones) Fórmula: Costo total disponible/todas las atribuciones no orgánicas. |
+| CPM (costo por mil) | Costo de 1000 impresiones de anuncios. Fórmula: Gasto creativo total / número de impresiones * 1.000 |
+| Plataforma | Se refiere al SO (p. ej.,. Android) |
+| Canal | Segmentación del tráfico dentro de fuentes de medios  <br />(por ejemplo, YouTube para Google, Instagram para Meta Ads, etc.) YouTube para Google, Instagram para Anuncios de Meta, etc.) |
+| Geografía | País/ubicación |
+| ID | <ul><li>Creativo</li><li>Anuncio</li><li>Conjunto de anuncios</li><li>Campaña</li></ul> |
+| Agencia | Muestra datos de las creatividades de agencias seleccionadas |
+| Ingresos (D0, D1, D3, D7, D14, D30, D60, D90) | Ingresos de cohortes reportados a AppsFlyer |
+| ROAS (D0, D1, D3, D7, D14, D30, D60, D90) | Retorno del gasto en publicidad de cohorte (%). Calcula los ingresos generados por unidad de gasto publicitario. Fórmula: Ingresos / Costo * 100 |
+| Usuarios únicos (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorte de usuarios únicos que se involucraron con tu aplicación hasta el día especificado (incluido) desde la instalación |
+| Retención (D0, D1, D3, D7, D14, D30, D60, D90) | Tasa de cohorte (%) de usuarios que continúan usando tu servicio o producto durante un periodo predeterminado<br /><br />**Nota:** Los datos están alineados con el dashboard de cohorte de AppsFlyer. |
 
 </Accordion>
 
 <div id="unique-metrics-and-dimensions" />
 
-<Accordion title="Unique metrics and dimensions">
+<Accordion title="Métricas y dimensiones únicas">
 
-Unique metrics/dimensions available in the dashboards include:
+Las métricas/dimensiones únicas disponibles en el dashboard incluyen:
 
-| Metric/dimension | Description |
+| Métrica/dimensión | Descripción |
 | --- | --- |
-| Appearances | Displays the number of campaigns/adsets/ads a specific creative is displayed in, across the different channels |
-| [Partner metrics](/docs/creative-optimization-guide#partner-dimensions-and-metrics) | Performance data that comes directly from integrated partners (not from AppsFlyer attribution data) |
-| Creative similarity | Groups creatives that are almost identical (but with slight differences) and lets you compare their performance so you can determine the most successful version. For example, similar images with different orientations (portrait vs. landscape) would be grouped together, as would similar videos in different languages. This dimension is only applicable to images and videos. |
-| Creative age | Displays the number of days a creative has run as part of campaigns. The age is calculated from the first impression, click, or install received by AppsFlyer (the creative "First seen" timestamp) and can vary by the dimensions selected. For example, if a creative was uploaded to a campaign one day, and then also uploaded to another campaign on a different day, and both campaigns and creative age dimensions are added to the filter, the age will be that of the first upload.<br /><br />**Note:** For creatives in campaigns that began running before being ingested into the Creative dashboard, AppsFlyer displays their data which includes up to 90 days before the ingestion. For example, if a creative was running for 90+ days before ingestion, the “creative age” that will display is 90 at first but then will continue to grow cumulatively each day. |
-| Creative first seen | Displays creatives by when performance data (usually an impression) was first received. The "Creative age" calculation is triggered from this time stamp. |
-| Duration | Length of time in seconds of a creative asset (applicable to videos) |
-| Resolution | Size of a creative asset in pixels (applicable to images and videos)<br /><br />**Note:** We display the actual resolution that was served to users by your integrated media partners. This may be a different resolution than what was originally uploaded to them. |
-| Orientation | Orientation of a creative asset such as portrait, square, or landscape |
-| Month | Breakdown of performance by month |
-| Week | Breakdown of performance by week |
-| End cards | This refers to an ad that may display at the end of video ads, and which usually contains basic information about the promoted app. The ability to group creatives by end cards gives additional insights for the optimization of creatives, such as comparing the same end card with different videos to identify the best combination. You can view creatives by the following end card data:<ul><li>End card name</li><li>End card ID</li><li>End card duration</li><li>End card resolution</li><li>End card orientation</li><li>End card type</li></ul>**Notes:**<ul><li>End card data is available for the following partners: AppLovin, IronSource, Moloco, UnityAds, Snapchat, and YouAppi.<ul><li>Currently, only ironSource, Unity Ads, and Snapchat provide the unique end card names. For all other partners, the end card names will appear identical to the creative names in the dashboards.</li></ul></li></ul> |
+| Apariciones | Muestra el número de campañas, conjuntos de anuncios y anuncios en los que se muestra una creatividad específica en los diferentes canales. |
+| [Métricas de partners](/docs/creative-optimization-guide#partner-dimensions-and-metrics) | Datos que provienen directamente de partners integrados (no de los datos de atribución de AppsFlyer). |
+| Creatividades similares | Agrupa las creatividades parecidas y podrás comparar su rendimiento para determinar la versión más exitosa. Por ejemplo, se agruparían imágenes similares con diferentes orientaciones (vertical vs horizontal), al igual que videos similares en diferentes idiomas. Esta dimensión solo es aplicable a imágenes y videos. |
+| Edad de la creatividad | Muestra el número de días que se ha ejecutado una creatividad como parte de las campañas. La edad se calcula a partir de la primera impresión, clic o instalación recibida por AppsFlyer (la "primera vista" de la creatividad) y puede variar según las dimensiones seleccionadas. Por ejemplo, si un día se subió un creativo a una campaña, y luego también se subió a otra campaña en otro día diferente, y tanto las campañas como las dimensiones de edad creativa se agregan al filtro, la edad será la de la primera subida.<br /><br />**Nota:** Para las creatividades en campañas que comenzaron a ejecutarse antes de ser ingeridas en el dashboard de Creative, AppsFlyer muestra sus datos que incluyen hasta 90 días antes de la ingestión. Por ejemplo, si una creatividad se estuvo ejecutando por más de 90 días antes de la ingestión, la “edad de la creatividad” que se mostrará es de 90 al principio pero luego seguirá creciendo acumulativamente cada día. |
+| Primera visualización de la creatividad | Muestra las creatividades cuando se recibieron por primera vez los datos de rendimiento (generalmente una impresión). El cálculo " Edad de la creatividad " se activa a partir de esta marca de tiempo. |
+| Duración | Duración en segundos de un recurso creativo (aplicable a videos) |
+| Resolución | Tamaño de un recurso creativo en píxeles (aplicable a imágenes y videos)<br /><br />**Nota:** Mostramos la resolución real que tus partners de medios integrados sirvieron a los usuarios. Esta puede ser una resolución diferente a la que se les subió originalmente. |
+| Orientación | Orientación de un recurso creativo como vertical, cuadrado u horizontal |
+| Mes | Desglose del rendimiento por mes |
+| Semana | Desglose del rendimiento por semana |
+| Tarjetas finales | Esto se refiere a los anuncios estáticos que pueden mostrarse al final de los anuncios de video, y que generalmente contienen información básica sobre la aplicación promocionada. La capacidad de agrupar creatividades por tarjetas finales brinda insights adicionales para la optimización de las creatividades, como comparar la misma tarjeta final con diferentes videos para identificar la mejor combinación. Puedes ver las creatividades por los siguientes datos de la tarjeta final:<ul><li>Nombre de la tarjeta final</li><li>ID de la tarjeta final</li><li>Duración de la tarjeta final</li><li>Resolución de la tarjeta final</li><li>Orientación de la tarjeta final</li><li>Tipo de tarjeta final</li></ul>**Notas:**<ul><li>Los datos de la tarjeta final están disponibles para los siguientes partners: AppLovin, IronSource, Moloco, UnityAds, Snapchat y YouAppi.<ul><li>Actualmente, solo IronSource, Unity Ads y Snap proporcionan los nombres únicos de las tarjetas finales. Para todos los demás partners, los nombres de las tarjetas finales aparecerán idénticos a los nombres creativos en los dashboards.</li></ul></li></ul> |
 
 </Accordion>
 
 <div id="custom-metrics" />
 
-<Accordion title="Custom metrics">
+<Accordion title="Métricas personalizadas">
 
-Create custom metrics to measure the performance of your creatives exactly how you like.
+Crea métricas personalizadas para medir el rendimiento de tus creatividades exactamente como te gusta.
 
-**To create a custom metric:**
+**Para crear una métrica personalizada:**
 
-1. Click the dropdown menu on the upper right of the dashboard, and select **Custom metrics.**  
+1. Haz clic en el menú desplegable en la parte superior derecha del dashboard y selecciona **Métricas personalizadas**.  
    **![Custom_metric_select.jpg](https://files.readme.io/99ca0ee30d09e42ef2798188e8d95fc4cf56ee31ad055209efadc47c9df8a859-18564742772625.jpg)**
-2. **Fill out the form:**
-   * **Name** - Enter a unique metric name
-   * **Type** - Select either a Numeric, Percentage, or Currency type
-   * **Description** - Enter a description (optional)
-   * **Metric formula** - Create a formula by clicking **+ Add formula**.   
-     * *Metrics* include impressions, clicks, installs, CTR, CVR, CPM, IPM, Cost, eCPI, Reattributions, Reengagements, Revenue, ROAS, Retention, Unique users, Appearances, partner metrics
-     * Combine with various *Operators, Numbers,* and/or *In-app events*
-     * Specific in-app events are selected from the dropdown menu. For each in-app event, you can add any metrics per the event separately to get highly specific insights, for example, af\_purchase revenue + af\_login count.  
+2. **Rellena el formulario:**
+   * **Nombre**: introduce un nombre de métrica único.
+   * **Tipo**: selecciona un tipo numérico, porcentaje o divisa.
+   * **Descripción**: introduce una descripción (opcional).
+   * **Fórmula métrica**: crea una fórmula haciendo clic en **+ Agregar fórmula**.   
+     * *Las métricas* incluyen impresiones, clics, instalaciones, CTR, CVR, CPM, IPM, costo, eCPI, reatribuciones, reengagements, ingresos, ROAS, retención, usuarios únicos, apariciones y métricas de partners
+     * Combina con varios *operadores, números* y/o *eventos in-app*.
+     * Los eventos in-app específicos se seleccionan en el menú desplegable. Para cada evento in-app, puedes agregar cualquier métrica para el evento por separado, para obtener insights altamente específicos, por ejemplo, af\_purchase revenue + af\_login count.  
        <Image alt="" src="https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png" width="892px" />
-3. Click **Save**.  
-   Your new custom metric is created and will display in the filter bar and table settings with "Custom" next to it.
+3. Haz clic en **Guardar**.  
+   Tu nueva métrica personalizada se crea y se mostrará en la barra de filtro y la configuración de la tabla con "Personalizado" junto a ella.
 
-**Notes:**
+**Notas:**
 
-* You can create up to 30 custom metrics per account.
-* You can hover over the "Custom" tag in the table settings to see the description.
+* Puedes crear hasta 30 métricas personalizadas por cuenta.
+* Puedes pasar el cursor sobre la pestaña "Personalizado" en la configuración de la tabla para ver la descripción.
 
-Custom metrics can also be edited or deleted.
+Las métricas personalizadas también se pueden editar o eliminar.
 
-**To edit:**
+**Para editar:**
 
-1. Click the **Edit existing custom metric** dropdown (on the **Custom metrics** form) and select the one you wish to edit.  
+1. Haz clic en el menú desplegable **Editar métrica personalizada existente** (en el formulario **Métricas personalizadas**) y selecciona la que deseas editar.  
    <Image alt="" src="https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png" width="892px" />
-2. Make any changes you wish, then click **Save**.  
-   **Note:** You can also click **Save as** to save it as a new custom metric.
+2. Haz los cambios que desees, luego haz clic en **Guardar**.  
+   **Nota:** También puedes hacer clic en **Guardar como** para guardarla como una nueva métrica personalizada.
 
-**To delete:**
+**Para eliminar:**
 
-* After selecting the custom metric you wish to delete from the dropdown, click the delete icon.  
+* Después de seleccionar la métrica personalizada que deseas eliminar en el menú desplegable, haz clic en el icono de eliminar.  
   <Image alt="" src="https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png" width="546px" />
 
 </Accordion>
 
 <div id="partner-dimensions-and-metrics" />
 
-<Accordion title="Partner dimensions and metrics">
+<Accordion title="Dimensiones y métricas de partners">
 
-Partner metrics is performance data that comes directly from integrated media partners (and not from AppsFlyer attribution data). Metrics vary by partner and can include impressions, clicks, conversions, cost, and video play % metrics. The metrics can be selected in the filters, viewed throughout the dashboard and reports, and added to the table.
+Las métricas de los partners son datos que provienen directamente de los partners de medios integrados (y no de los datos de atribución de AppsFlyer). Las métricas varían según el partner e incluyen impresiones, clics, conversiones, costo y métricas de porcentaje de reproducción de video. Las métricas se pueden seleccionar en los filtros, ver en todo el dashboard y agregarse a la tabla.
 
-The following table lists all Creative optimization partners, with the data granularity available for each:
+La siguiente tabla enumera todos los partners de optimización creativa, con la granularidad de datos disponible para cada uno:
 
-* Dimensions
-* Metrics (as reported by the ad networks)
-* Supported features and their characteristics
+* Dimensiones
+* Métricas (según lo informado por las ad networks)
+* Funciones compatibles y sus características
 
-Download file: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=csv">CSV</Anchor>, <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=xlsx">XLS</Anchor>
+Descargar archivo: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=csv">CSV</Anchor>, <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=xlsx">XLS</Anchor>
 
-#### **To set up partner metrics:**
+#### **Para configurar las métricas de partners:**
 
-Add a new <Anchor target="_blank" href="/marketers/docs/creative-optimization-partner-integrations">partner integration</Anchor> and metrics for supported partners will automatically be pulled into Creative Optimization (**Unity Ads** **is an exception and has special instructions below**). Once set up, these metrics are indicated with "Partner" alongside the metric.
+Simplemente agrega una nueva integración de partners y las métricas para los partners compatibles se incorporarán automáticamente a la Optimización Creativa (Unity Ads es una excepción y tiene **instrucciones especiales**). Una vez que se configuran, estas métricas se indican con "Partner" junto a la métrica.
 
 ![partner metrics image.jpg](https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg)
 
-**Special instructions and considerations:**
+**Instrucciones y consideraciones especiales:**
 
 <div id="applovin-metrics" />
 
-<Accordion title="AppLovin metrics">
+<Accordion title="Métricas de AppLovin">
 
-**Note:**
+**Nota:**
 
-* Due to a restriction on the AppLovin API, only up to 45 days of historical data is available. AppsFlyer is typically able to display up to 90 days of historical data, however, because of the AppLovin restriction, only 45 days of AppLovin data is available.
-* AppsFlyer Creative data is aligned with the AppLovin probabilistic report (not the billable report).
+* Debido a una restricción en la API de AppLovin, solo se dispone de datos históricos de hasta 45 días. Por lo general, AppsFlyer puede mostrar hasta 90 días de datos históricos; sin embargo, debido a la restricción de AppLovin, solo 45 días de datos de AppLovin están disponibles.
+* Los datos de Creative de AppsFlyer están alineados con el reporte probabilístico de AppsFlyer (no el reporte facturable).
 
 </Accordion>
 
 <div id="google-ads-metrics" />
 
-<Accordion title="Google Ads metrics">
+<Accordion title="Métricas de Google Ads">
 
-**Note:**
+**Nota:**
 
-* There will be differences in the number of installs reported by Google Ads and AppsFlyer due to different attribution logic.
-* There will be differences between Google and AppsFlyer for all metrics. This is due to the fact that Google partner metrics are based on the Google asset view report while AppsFlyer data is aligned to the Google ad group view. These reports are not aligned with each other in terms of performance, for example, the total number of asset impressions under a specific ad group won't be equal to the total impressions that the ad group reports.
-* There are differences between the Creative product and Google AdWords platform; when comparing the asset view between the Google platform and AppsFlyer there may be slight differences due to: 1. Time zones (Creative is UTC+0). 2. Data freshness rate (the difference between event occurrence and data availability in the platform).
+* Habrá diferencias en el número de instalaciones reportadas por Google Ads y AppsFlyer debido a la diferente lógica de atribución.
+* Habrá diferencias entre Google y AppsFlyer para todas las métricas. Esto se debe al hecho de que las métricas de los partners de Google se basan en el reporte de visualización de recursos de Google, mientras que los datos de AppsFlyer están alineados con la vista de grupo de Google Ads. Estos reportes no están alineados entre sí en términos de rendimiento, por ejemplo, el número total de impresiones de recursos bajo un grupo de anuncios específico no será igual al total de impresiones que informa el grupo de anuncios.
+* Existen diferencias entre el producto de Creative y la plataforma Google AdWords; al comparar la vista de recursos entre la plataforma Google y AppsFlyer puede haber ligeras diferencias debido a: 1. Zonas horarias (para Creative, es UTC+0). 2. Tasa de actualización de datos (la diferencia entre ocurrencia de los eventos y la disponibilidad de los datos en la plataforma).
 
 </Accordion>
 
 <div id="meta-ads" />
 
-<Accordion title="Meta Ads metrics">
+<Accordion title="Métricas de Meta Ads">
 
-**Note:**
+**Nota:**
 
-* There will be differences in the number of installs reported by Meta Ads and AppsFlyer due to different attribution logic.
-* Meta doesn't report installs on the asset level for iOS, so it's not available in Creative.
+* Habrá diferencias en el número de aplicaciones reportadas por Anuncios de Meta y AppsFlyer debido a la diferente lógica de atribución.
+* Meta no informa sobre las instalaciones en el nivel de recurso para iOS, por lo que no está disponible en Creative.
 
 </Accordion>
 
 <div id="unity-ads-metrics" />
 
-<Accordion title="Unity Ads metrics">
+<Accordion title="Métricas de Unity Ads">
 
-**To get partner metrics from Unity Ads:**
+**Para obtener métricas de partners desde Unity Ads:**
 
-1. From the Creative Optimization dashboard, click the  ⋮  icon on the upper right to get to **Creative integrations**.  
-   ![icon for creative integrations.jpg](https://files.readme.io/5af3cc395743cf305a9d19dca41dc53c7cbf82e18434d2eb335c9e58a4245456-21366803702033.jpg)
-2. Click **+ New integration**.
-3. Select **Unity Ads** in the **Partner** dropdown list.  
+1. Desde el dashboard de Optimización Creativa, haz clic en el icono ⋮  en la parte superior derecha para llegar a **Integraciones creativas**.  
+   ![icono de integraciones creativas.jpg](https://files.readme.io/5af3cc395743cf305a9d19dca41dc53c7cbf82e18434d2eb335c9e58a4245456-21366803702033.jpg)
+2. Haz clic en **+ Nueva integración**.
+3. Selecciona **Unity Ads** en la lista desplegable **Partner**.  
    ![New integration - Unity Ads.jpg](https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg)
-4. Enter the Unity **Key ID**, **Secret Key**, and **Organization Core ID** for the integration (see <Anchor target="_blank" href="/marketers/docs/creative-optimization-partner-integrations#unity-ads">Unity integration</Anchor> instructions for how to get these).
-5. In the **Partner metrics** section, enter the Unity **API Key** and the **Organization ID**. You can retrieve these credentials by following the below instructions. **Note:** If you have a ROI360 Cost integration with Unity Ads, you can take the credentials from there as well.
-   * **To get the API key:**
-     1. Log in to your Unity Gaming Services platform.
-     2. Click **Products** in the side menu, then click **Grow**.  
+4. Introduce el **ID de clave** de Unity, la **Clave secreta** y el **ID principal de la organización** para la integración (consulta las instrucciones de <Anchor target="_blank" href="/marketers/es/docs/creative-optimization-partner-integrations#unity-ads">integración de Unity</Anchor> para obtenerlos).
+5. En la sección **Métricas del partner**, ingresa la **clave de la API** de Unity y el **ID de la organización**. Puedes recuperar estas credenciales siguiendo las siguientes instrucciones. **Nota:** Si tienes una integración de costos de ROI360 con Unity Ads, también puedes tomar las credenciales desde allí.
+   * **Para obtener la clave de la API:**
+     1. Inicia sesión en tu plataforma de Unity Gaming Services.
+     2. Haz clic en **Productos** en el menú lateral, luego haz clic en **Crecimiento**.  
         ![Unity Org ID step 1.jpg](https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg)
-     3. Click **Unity Ads User Acquisition**.  
+     3. Haz clic en **Adquisición de usuarios de Unity Ads**.  
         <Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
-     4. Click **API management**.  
+     4. Haz clic en **API management** (Administración de la API).  
         ![Unity-from API mngmt, get API key w arrow.jpg](https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg)
-     5. Copy the API key.
-   * **To get the Organization ID:**
-     1. Within Unity Ads, click **Products** on the side menu, then click **Grow**.  
+     5. Copia la clave de la API:
+   * **Para obtener el ID de la organización:**
+     1. Dentro de Unity Ads, haz clic en **Productos** en el menú lateral, luego haz clic en **Crecimiento**.  
         <Image alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
-     2. Click **Unity Ads User Acquisition**.
+     2. Haz clic en **Adquisición de usuarios de Unity Ads**.
      3. <Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
-     4. Click **Settings**.  
+     4. Haz clic en **Configuración**.  
         ![Get Organization ID instructions 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
-     5. Copy the **Organization ID**.
+     5. Copia el **ID de la organización**
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> We recommend entering the partner metrics credentials when setting up a new partner integration. However, it's not mandatory. You can save the integration and add the credentials at a later time. But please note that we pull 90 days of partner data from the time the partner integration is created, so not entering the partner metric credentials may result in missing data.
+> Recomendamos ingresar las credenciales de métricas de partners al configurar una nueva integración de partners. Sin embargo, no es obligatorio. Puedes guardar la integración y agregar las credenciales en un momento posterior. Pero ten en cuenta que extraemos 90 días de datos de partners desde el momento en que se crea la integración del partner, por lo que no ingresar las credenciales de la métrica del partner puede resultar en la falta de datos.
 
 </Accordion>
 
@@ -354,90 +359,90 @@ Add a new <Anchor target="_blank" href="/marketers/docs/creative-optimization-pa
 
 <div id="save-and-share-views" />
 
-<Accordion title="Save and share views">
+<Accordion title="Guardar y compartir vistas">
 
-After selecting your filters, you can save your selections for quick and easy access to the info you want to see in the dashboards so there's no need to reselect the filters each time you log in. The saved view applies to both the Creative Optimization Overview and Discovery dashboards. You can save a dashboard view as private or shared. Shared views are visible to other account users. Additionally, you can share dashboard views with others via the share URL.
+Después de seleccionar tus filtros, puedes guardar tus selecciones para tener acceso rápido y fácil a la información que deseas ver en los dashboards, por lo que no es necesario volver a seleccionar los filtros cada vez que inicies sesión. La vista guardada se aplica tanto al dashboard general de la Optimización Creativa como al de descubrimiento. Puedes guardar una vista del dashboard como privada o compartida. Las vistas compartidas son visibles para otros usuarios de la cuenta. Además, puedes compartir vistas del dashboard con otros a través de la URL de compartir.
 
-**Note**: An orange indicator dot appears next to the current view if you've made changes to the dashboard settings without saving the view.
+**Nota**: Un indicador naranja aparece junto a la vista actual si has realizado cambios en la configuración del dashboard sin guardar la vista.
 
-#### **Save private dashboard view**
+#### **Guardar vista del dashboard privado**
 
-**To save a private dashboard view (only visible to you):**
+**Para guardar una vista del dashboard privado (solo visible para ti):**
 
-1. At the top of the dashboard that's currently showing, click the dropdown icon, make sure the menu has the private icon selected, and then click **+ Save as new private dashboard.**  
+1. En la parte superior del dashboard que se está mostrando actualmente, haz clic en el ícono de menú desplegable, asegúrate de que el menú tenga seleccionado el ícono privado y luego haz clic en **+ Guardar como nuevo dashboard privado.**  
    ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
-2. Enter a dashboard name and click **Save**.
-3. Use the menu icons to edit and delete dashboard views, change the share settings from private to shared, or star a view, marking it as the default view to display upon login.
+2. Ingresa un nombre para el dashboard y hax clic en **Guardar**.
+3. Utiliza los íconos del menú para editar y eliminar vistas del dashboard, cambiar la configuración de uso compartido de privada a compartida, o marcar una vista como favorita, estableciéndola como la vista predeterminada que se mostrará al iniciar sesión.
 
-#### **Save shared dashboard view**
+#### **Guardar vista de dashboard compartido**
 
-**To save a shared dashboard view (visible to other account users):**
+**Para guardar una vista de dashboard compartido (visible para otros usuarios de la cuenta):**
 
-1. At the top of the dashboard that's currently showing, click the dropdown icon, make sure the menu has the shared icon selected, and then click **+ Save as new shared dashboard.**  
+1. En la parte superior del dashboard que se está mostrando actualmente, haz clic en el ícono de menú desplegable, asegúrate de que el menú tenga seleccionado el ícono compartido y luego haz clic en **+ Guardar como nuevo dashboard compartido.**  
    **![](https://files.readme.io/d4a7f206d49ddea230883ee6e119caab119164fa3bee9d0c3f02d487c9cf8a36-25381406390033.png)**
-2. Enter a dashboard name and click **Save**.  
-   The view is saved and appears in the list of dashboard views for all other account users.
-3. Use the menu icons to edit and delete dashboard views, change the share settings from shared to private, or star a view, marking it as the default view to display upon login.
+2. Ingresa un nombre para el dashboard y hax clic en **Guardar**.  
+   La vista está guardada y aparece en la lista de vistas del dashboard para todos los demás usuarios de la cuenta.
+3. Utiliza los íconos del menú para editar y eliminar vistas del dashboard, cambiar la configuración de uso compartido de compartida a privada, o marcar una vista como favorita, estableciéndola como la vista predeterminada que se mostrará al iniciar sesión.
 
-#### **Share view URL**
+#### **Compartir URL de vista**
 
-**To share a view URL with another account user:**
+**Para compartir una URL de vista con otro usuario de cuenta:**
 
-* Click the icon on the upper right of the dashboard to copy the page URL, then share it.  
+* Haz clic en el icono en la parte superior derecha del dashboard para copiar la URL de la página y luego compartirla.  
   <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />  
-  **Note**: View URLs can be shared even for private dashboards. When the private dashboard URL is opened, the report name that displays is "Unsaved Report".
+  **Nota**: Las URL de vista se pueden compartir incluso para dashboards privados. Cuando se abre la URL del dashboard privado, el nombre del reporte que se muestra es "Reporte no guardado".
 
 </Accordion>
 
-## Custom tags
+## Etiquetas personalizadas
 
-Group and analyze your creatives based on tags that you upload or by the unique identifiers that are stored in file names. This section describes the different ways of creating custom tags, which appear as dimensions you can select in the filters and view throughout the dashboards.
+Agrupa y analiza tus creatividades en función de las etiquetas que subas o por los identificadores únicos que se almacenan en los nombres de archivo. En esta sección se describen las diferentes formas de crear etiquetas personalizadas, las cuales aparecen como dimensiones que puedes seleccionar en los filtros y visualizar a lo largo de los dashboards.
 
 <div id="custom-dimensions" />
 
-<Accordion title="Custom tags via CSV">
+<Accordion title="Etiquetas personalizadas a través de CSV">
 
-You can add custom dimensions to the dashboard. These custom dimensions and the associated tagged creatives are added via CSV file and aligned with the current creatives used in the various campaigns. Use this feature to view, organize, sort, and filter creatives by any custom dimensions and tags you wish.
+Puedes agregar dimensiones personalizadas al dashboard. Estas dimensiones personalizadas y las creatividades etiquetadas asociadas se agregan a través de un archivo CSV y se alinean con las creatividades actuales utilizadas en las distintas campañas. Utiliza esta función para ver, organizar, ordenar y filtrar creatividades por las dimensiones y etiquetas personalizadas que desees.
 
 <div id="create-and-manage-custom-dimensions" />
 
-<Accordion title="Create and manage custom dimensions">
+<Accordion title="Crear y administrar dimensiones personalizadas">
 
-The process of creating and managing custom dimensions includes the following 3 actions:
+El proceso de creación y gestión de dimensiones personalizadas incluye las siguientes 3 acciones:
 
-1. Downloading a CSV file from the Creative Optimization dashboard which contains the current creatives.
-2. Creating new dimensions or changing current dimensions and tags. Each column heading in the CSV file is the name of the custom dimension (For example: “Color”). All creatives in this column will be tagged with the custom dimension and will be displayed under this tag in the dashboard. You can add or change any of the custom dimensions or tags via the CSV file. **Note**: The new CSV doesn't need to include previously created custom tags and dimensions; only ones that you want to edit or add.
-3. Uploading the updated CSV file into the Creative Optimization dashboard. The data will be available after around 30 minutes.
+1. Descargar un archivo CSV desde el dashboard de Optimización Creativa que contiene las creatividades actuales.
+2. Crear nuevas dimensiones o cambiar las dimensiones y etiquetas actuales. Cada encabezado de columna en el archivo CSV es el nombre de la dimensión personalizada (Por ejemplo: “Color”). Todas las creatividades de esta columna se etiquetarán con la dimensión personalizada y se mostrarán debajo de esta etiqueta en el dashboard. Puedes agregar o cambiar cualquiera de las dimensiones o etiquetas personalizadas a través del archivo CSV. **Nota**: El nuevo CSV no necesita incluir etiquetas y dimensiones personalizadas creadas anteriormente; solo las que deseas editar o agregar.
+3. Subir el archivo CSV actualizado en el dashboard de Optimización Creativa. Los datos estarán disponibles después de unos 30 minutos.
 
-The procedures for downloading and uploading the CSV file are described below:
+A continuación se describen los procedimientos para descargar y subir el archivo CSV:
 
-**To download a CSV file with current creatives from the dashboard:**
+**Para descargar un archivo CSV con las creatividades actuales desde el dashboard:**
 
-1. Click the<Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" />menu on the top-right corner of the dashboard.  
+1. Haz clic en el <Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" /> menú en la esquina superior derecha del dashboard.  
    ![Main menu highlighted.jpg](https://files.readme.io/be14a3ab1a9aba6dc20816e53ad692b1697d15a185053cf523d2ae8451842350-21367268248465.jpg)
-2. Click **Download custom tags file**.
-3. Select which creatives you want to include in the file (all creatives or only the creatives that are currently displayed on the dashboard - excluding creatives that are filtered out).
-4. Click **Download**.
+2. Haz clic en **Descargar archivo de etiquetas personalizadas**.
+3. Selecciona qué creatividades deseas incluir en el archivo (todas las creatividades o solo las creatividades que se muestran actualmente en el dashboard, excluyendo las creatividades que están filtradas).
+4. Haz clic en **Descargar**.
 
-Make the desired additions or changes to the file, then save it, and upload it back into the dashboard.
+Haz las adiciones o cambios deseados en el archivo, luego guarda y vuelve a cargarlo en el dashboard.
 
-**To upload the CSV file to the Creative Optimization dashboard:**
+**Para subir el archivo CSV al dashboard de Optimización Creativa:**
 
-1. Click the<Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" />menu on the top-right corner of the dashboard.
-2. Click **Upload custom tags file**.
-3. Select a file to upload.  
-   Make sure you are aware of all of the different [traits and limitations](/docs/creative-optimization-guide#traits-and-limitations) when uploading a CSV file.
-4. Click **Upload to dashboard**.
+1. Haz clic en el <Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" /> menú en la esquina superior derecha del dashboard.
+2. Haz clic en **Subir archivo de etiquetas personalizadas**.
+3. Selecciona un archivo para subir.  
+   Asegúrate de estar al tanto de las diferentes [características y limitaciones](/docs/creative-optimization-guide#traits-and-limitations) al subir un archivo CSV.
+4. Haz clic en **Subir al dashboard**.
 
-The data will be available in about 30 minutes.
+Los datos estarán disponibles en aproximadamente 30 minutos.
 
 </Accordion>
 
 <div id="example-csv" />
 
-<Accordion title="Example CSV">
+<Accordion title="Ejemplo de CSV">
 
-Here's an example of a custom dimensions CSV file (that you download from the dashboard). Each column heading (in row 1) is the name of a custom dimension (for example: “Theme” or "Variant"). You can add additional dimensions or change the existing ones. You can also add or change the tags (for example: “3 Moves" or "DarkPalette").
+Aquí hay un ejemplo de un archivo CSV de dimensiones personalizadas (que se descarga desde el dashboard). Cada encabezado de columna (en la fila 1) es el nombre de una dimensión personalizada (por ejemplo: "Tema" o "Variante"). Puedes agregar dimensiones adicionales o cambiar las existentes. También puedes agregar o cambiar las etiquetas (por ejemplo: "3 Movimientos" o "Paleta Oscura".
 
 [![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)
 
@@ -445,18 +450,18 @@ Here's an example of a custom dimensions CSV file (that you download from the da
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Custom dimension traits and limitations">
+<Accordion title="Características y limitaciones de las dimensiones personalizadas">
 
-* Custom dimensions appear with a “Custom” tag in the filters and table.
+* Las dimensiones personalizadas aparecen con una etiqueta “Personalizada” en los filtros y la tabla.
 
 <Image alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
 
-* You can add up to 15 custom dimensions to the Creative Optimization dashboard.
-* The upload file size is limited to 1 MB.
-* Existing dimensions and tag names can be changed by updating the CSV file and re-uploading it. **Note**: You can update or add only one dimension per file upload.
-* Custom dimensions defined in the CSV file apply on the account level, meaning to all apps and users.
-* Each creative can have one tag per dimension. For example, if "Color" is the custom dimension, the tag can only be one color, such as red.
-* When creating or editing the custom dimensions, make sure not to change the creative\_id to avoid overwrites and discrepancies.
+* Puedes agregar hasta 15 dimensiones personalizadas al dashboard de Optimización Creativa.
+* El tamaño del archivo de subida está limitado a 1 MB.
+* Las dimensiones y los nombres de las etiquetas existentes se pueden cambiar actualizando el archivo CSV y volviendo a subirlo. **Nota**: Solo puedes actualizar o agregar una dimensión por carga de archivo.
+* Las dimensiones personalizadas definidas en el archivo CSV se aplican a nivel de cuenta, es decir, a todas las aplicaciones y usuarios.
+* Cada creatividad puede tener una etiqueta por dimensión. Por ejemplo, si "Color" es la dimensión personalizada, la etiqueta solo puede ser de un color, como el rojo.
+* Al crear o editar las dimensiones personalizadas, asegúrate de no cambiar el creative\_id para evitar discrepancias.
 
 </Accordion>
 
@@ -464,75 +469,75 @@ Here's an example of a custom dimensions CSV file (that you download from the da
 
 <div id="name-convention-tags" />
 
-<Accordion title="Name convention tags">
+<Accordion title="Etiquetas de convención de nomenclatura">
 
-You can create custom tags based on your creative asset naming conventions. These custom tags will appear as dimensions you can select in the filters and view throughout the dashboard.
+Puedes crear etiquetas personalizadas basadas en tus convenciones de nomenclatura de recursos creativos. Estas etiquetas personalizadas aparecerán como dimensiones que puedes seleccionar en los filtros y ver en todo el dashboard.
 
-This is useful for marketing and creative teams whose creatives are named intentionally, with unique identifiers built into the names. These creatives can automatically be tagged by the built-in identifiers, and grouped for analysis and optimization purposes.
+Esto es útil para equipos creativos y de marketing cuyas creatividades se nombran intencionalmente, con identificadores únicos integrados en los nombres. Estas creatividades pueden etiquetarse automáticamente por los identificadores integrados y agruparse para fines de análisis y optimización.
 
 <div id="create-and-manage-name-convention-tags" />
 
-<Accordion title="Create and edit name convention tags">
+<Accordion title="Crear y editar etiquetas de convención de nomenclatura">
 
-**To create name convention tags:**
+**Para crear etiquetas de convención de nomenclatura:**
 
-1. Click the  ⋮  icon on the upper right of the dashboard, and select **Name convention tags**.  
-   The **Manage name convention tags** window appears.  
+1. Haz clic en el ícono  ⋮  de la parte superior derecha del dashboard y selecciona **Etiquetas de convención de nomenclatura**.  
+   Aparecerá la ventana **Administrar etiquetas de convención de nomenclatura**.  
    <Image alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
-2. Under **Create new name convention type**, enter the details:
-   * **Name** - Give the new name convention type a unique name.
-   * **Separator** - The character that separates each section. For example, in a creative called “enUS\_bluegalaxy\_launch.mp4”, each section is separated by “\_”. “\_” is the separator.
-   * **Number of sections** - For example, in a creative called “enUS\_bluegalaxy\_launch.mp4”, there are 3 sections separated by a “\_”.  
-     **Note:** The file type is not included in the tags.
-   * **App** (optional) - You can include all apps, or limit tags to creatives associated with certain apps only.
-   * **Media source** (optional) - You can include all media sources, or limit tags to creatives that ran on certain media sources only.
-3. Add the custom tag details:
-   * **Section number** - Select the section number of the tag you'd like to create.
-   * **Custom tag name** - Create a name by clicking **+ Create new custom tag**, or select an existing name.
-   * **Format** - Select how the tags should appear throughout the table/dashboard: in uppercase, lowercase, or the original (how it originally appears in the creative name).  
-     You can add additional custom tags by clicking **+ Add custom tag**.
-4. Before you save, you can preview how your custom tags will be applied to your creatives by clicking **Download preview file** (optional). This will download a file with all creatives that match the name convention type you're creating, with all of them tagged according to the new tags.
-5. Click **Save**.  
-   The tags will be applied and available in the dashboard within a few hours.
+2. En **Crear nuevo tipo de convención de nomenclatura**, ingresa los detalles:
+   * **Nombre** - Asigna un nombre único al nuevo tipo de convención de nombres.
+   * **Separador**: el carácter que separa cada sección. Por ejemplo, en una creatividad llamada “enUS\_bluegalaxy\_launch.mp4”, cada sección está separada por “\_”. “\_” es el separador.
+   * **Número de secciones**: por ejemplo, en una creatividad llamada “enUS\_bluegalaxy\_launch.mp4”, hay 3 secciones separadas por un “\_”.  
+     **Nota:** El tipo de archivo no está incluido en las etiquetas.
+   * **Aplicación** (opcional): puedes incluir todas las aplicaciones o limitar las etiquetas a las creatividades asociadas solo con ciertas aplicaciones.
+   * **Fuente de medios** (opcional): puedes incluir todas las fuentes de medios, o limitar las etiquetas a creatividades que se ejecutaron solo en ciertas fuentes de medios.
+3. Añade los detalles de la etiqueta personalizada:
+   * **Número de sección**: selecciona el número de sección de la etiqueta que deseas crear.
+   * **Nombre de etiqueta personalizada**: crea un nombre haciendo clic en **+ Crear nueva etiqueta personalizada**, o selecciona un nombre existente.
+   * **Formato**: selecciona cómo deben aparecer las etiquetas en toda la tabla/dashboard: en mayúsculas, minúsculas o el formato original (tal cómo aparece originalmente en el nombre de la creatividad).  
+     Puedes agregar etiquetas personalizadas adicionales haciendo clic en **+ Agregar etiqueta personalizada**.
+4. Antes de guardar, puedes obtener una vista previa de cómo se aplicarán tus etiquetas personalizadas a tus creatividades haciendo clic en **Descargar archivo de vista previa** (opcional). Esto descargará un archivo con todas las creatividades que coincidan con el tipo de convención de nomenclatura que estás creando, con todas ellas según las nuevas etiquetas.
+5. Haz clic en **Guardar**.  
+   Las etiquetas se aplicarán y estarán disponibles en el dashboard en unas pocas horas.
 
-**To edit name convention tags:**
+**Para editar etiquetas de convención de nomenclatura:**
 
-1. Click the  ⋮  icon on the upper right of the dashboard, and select **Name convention tags**.
-2. Click the **Edit name convention type** dropdown to make your selection.
-3. Make the required changes, and click **Save**.
+1. Haz clic en el ícono  ⋮  de la parte superior derecha del dashboard y selecciona **Etiquetas de convención de nomenclatura**.
+2. Haz clic en el menú desplegable **Editar tipo de convención de nomenclatura** para hacer tu selección.
+3. Haz los cambios necesarios y haz clic en **Guardar**.
 
-**To delete a name convention type:**
+**Para eliminar un tipo de convención de nomenclatura:**
 
-1. Click the **Edit name convention type** dropdown and select the one you want to delete.
-2. Click the  <Image alt="Delete icon.jpg" src="https://files.readme.io/a4bb54fefcdd474edbb897dc334b8219c36273fd5e4f45a03e1b39091856e137-18564742905873.jpg" width="19px" />  icon which appears when you hover to the right of your selection.  
-   **Note:** The associated custom tags will no longer apply to your creatives. It may take a few hours for the change to take effect.
+1. Haz clic en el menú desplegable **Editar tipo de convención de nomenclatura** y selecciona la que deseas eliminar.
+2. Haz clic en el <Image alt="icono de eliminar.jpg" src="https://files.readme.io/a4bb54fefcdd474edbb897dc334b8219c36273fd5e4f45a03e1b39091856e137-18564742905873.jpg" width="19px" />  que aparece cuando pasas el mouse a la derecha de tu selección.  
+   **Nota:** Las etiquetas personalizadas asociadas ya no se aplicarán a tus creatividades. El cambio puede tardar algunas horas en surtir efecto.
 
 <div id="name-tag-traits-and-limitations" />
 
-<Accordion title="Name tag traits and limitations">
+<Accordion title="Rasgos y limitaciones de la etiqueta de nombre">
 
-* You can create up to 10 different name convention types (and the associated custom tags).
-* If custom tags that have been uploaded via CSV file conflict with the name convention tags you've created, the uploaded CSV tags will take precedence and only those tags will apply.
-
-</Accordion>
+* Puedes crear hasta 10 tipos de convenciones de nomenclatura diferentes (y las etiquetas personalizadas asociadas).
+* Si las etiquetas personalizadas que se han subido a través del archivo CSV entran en conflicto con las etiquetas de convención de nomenclatura que has creado, las etiquetas CSV cargadas tendrán prioridad y solo se aplicarán esas etiquetas.
 
 </Accordion>
 
 </Accordion>
 
-## Additional information
+</Accordion>
+
+## Información adicional
 
 <div id="h_01HA282W8WHHNDG75XZNSV2QQF" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Características y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Data source | The source of performance data in the Creative Optimization dashboards (aside from Partner metrics) comes from the AppsFlyer attribution model. **Note**: There are inherent differences in the attribution models used by the various advertising platforms and players in the mobile advertising ecosystem, which can explain reporting discrepancies between them. |
-| Multiple assets | For creatives that include multiple assets, only one asset is displayed (usually the video when applicable). |
-| Data freshness | The Creative Optimization Overview and Discovery dashboards update once daily at 10:00 UTC (refreshing creative data from the last 90 days).<br /><br />Depending on your time zone, the daily update occurs at:<ul><li>New York: 5:00 AM EST / 6:00 AM EDT</li><li>Berlin: 11:00 AM CET / 12:00 PM CEST</li><li>Shanghai: 6:00 PM CST</li></ul>For other locations, convert 10:00 UTC to your local time zone.<br /><br />**Note:** Data in Creative Optimization updates once a day, whereas the main AppsFlyer Overview dashboard updates in real time, which may cause temporary discrepancies. |
-| Currency | All monetary metrics in Creative Optimization are in USD. |
+| Fuente de datos | El origen de los datos de rendimiento en los dashboards de Optimización Creativa (aparte de las métricas de partners) proviene del modelo de atribución de AppsFlyer. **Nota**: Ten en cuenta que existen diferencias en los modelos de atribución utilizados por las distintas plataformas publicitarias y jugadores en el ecosistema publicitario móvil, lo que puede explicar las discrepancias de notificación entre ellos. |
+| Múltiples recursos | Para las creatividades que incluyen múltiples recursos, solo se muestra uno (generalmente el video cuando corresponda). |
+| Actualización de los datos | Los dashboards Vista general y Discovery de Optimización creativa se actualizan una vez al día a las 10:00 UTC (se actualizan los datos creativos de los últimos 90 días).<br /><br />Según tu zona horaria, la actualización diaria se realiza a:<ul><li>Nueva York: 5:00 a. m. EST / 6:00 a. m. EDT</li><li>Berlín: 11:00 a. m. CET / 12:00 p. m. CEST</li><li>Shanghái: 6:00 p. m. CST</li></ul>Para otras ubicaciones, convierte las 10:00 UTC a tu zona horaria local.<br /><br />**Nota:** Los datos de Optimización creativa se actualizan una vez al día, mientras que el dashboard general principal de AppsFlyer se actualiza en tiempo real, lo que puede provocar discrepancias temporales. |
+| Truemoney | Todas los métricas monetarias en la Optimización Creativa están en USD. |
 
 </Accordion>
 
-<div data-zendesk-anchors="overview=about-creative-optimization 01H7SZ8R9ZWZ81WHV26P00YAYP=about-creative-optimization 01H7SZ8RA14Q5D32EY5J0WMVYA=creative-assets 01H7SZ8RA1C863VRG1P10CJHTR=supported-asset-types h_01HMXES26N1X3KAFRKKCC9NFXW=notes 01H7SZ8RA1D9JVG1145CAXEZFX=matching-creatives 01H7SZ8RA191221K683N1Z9R69=measuring-creatives-with-multiple-assets 01H7SZ8RA1KRPFF9AW5P4QKQXH=example creative-dashboard=using-the-dashboard 01H7SZ8RA1JX2TCQHB5XW21EK8=using-the-dashboard 01H7SZ8RA1ATSBZPMFJC0T7HRG=filter-bar 01H7SZ8RA1RT91HKKD0R93T2TA=view-type h_01HJDKZWTQVTPSJXP2HWSMD8W6=creative-optimization-roi360 h_01H9JS005MCGMPJM7NYTW2HCAF=standard-metrics-and-dimensions 01H7SZ8RA222QS1AXDKT49DEK3=unique-metrics-and-dimensions 01H7SZ8RA23SCGJ435B4V32CP1=custom-metrics 01H7SZ8RA2R9N2NC6JXNZZ7C5Z=partner-dimensions-and-metrics partner-table=to-set-up-partner-metrics 01H7SZ8RA2VJ9466WSMN3WHR90=to-set-up-partner-metrics 01H8GHNPQKS7REZ9RPH0ZYEBHE=applovin-metrics 01H8GHNPQKCKMDS8AYETEDDZKH=google-ads-metrics 01H8H1GTRV7VNJDKFEF35HCNKY=meta-ads 01H7SZ8RA28T63K3NASWC92R0F=unity-ads-metrics 01H7W4JTRSJJ2R45JQVYHMYGX2=note 01H7SZ8RA3TPD6ED2HJZGTVRMS=save-and-share-views h_01HYT77DSHZ6FE0MSQS83FRGW0=save-private-dashboard-view 01HYT89BRYKRG44AT9MZWKZJNY=save-shared-dashboard-view h_01HYT8GXVJV8Q6GKBDHTTJ1SM2=share-view-url h_01H9J4Z9V9SJBTE63C358FME95=custom-tags h_01H9J4R9MTMGF9F1PNZRT2QZ1W=custom-dimensions 01H7SZ8RA3GW927GJBKKR4582T=create-and-manage-custom-dimensions 01H7SZ8RA3P8VQFH268G453FKM=example-csv 01H7SZ8RA307CBMA0533M3VGWK=traits-and-limitations h_01H9J67GSXXZ20W56NDVW2XDJC=name-convention-tags h_01H9J6PCQNVAB88ZCKRT3MVJEH=create-and-manage-name-convention-tags h_01H9J6PCQN6MV2KPYNFF7SB44Q=name-tag-traits-and-limitations h_01J1VPMV85CT5ZJNN3BW4FCW0D=additional-information" />
+<div data-zendesk-anchors="overview=sobre-la-optimizaci%C3%B3n-creativa 01H7SZ8R9ZWZ81WHV26P00YAYP=sobre-la-optimizaci%C3%B3n-creativa creative-assets=recursos-creativos 01H7SZ8RA14Q5D32EY5J0WMVYA=recursos-creativos 01H7SZ8RA1C863VRG1P10CJHTR=supported-asset-types h_01HMXES26N1X3KAFRKKCC9NFXW=notas 01H7SZ8RA1D9JVG1145CAXEZFX=matching-creatives 01H7SZ8RA191221K683N1Z9R69=measuring-creatives-with-multiple-assets 01H7SZ8RA1KRPFF9AW5P4QKQXH=ejemplo creative-dashboard=uso-del-dashboard 01H7SZ8RA1JX2TCQHB5XW21EK8=uso-del-dashboard 01H7SZ8RA1ATSBZPMFJC0T7HRG=filter-bar 01H7SZ8RA1RT91HKKD0R93T2TA=view-type h_01HJDKZWTQVTPSJXP2HWSMD8W6=creative-optimization-roi360 h_01H9JS005MCGMPJM7NYTW2HCAF=standard-metrics-and-dimensions 01H7SZ8RA222QS1AXDKT49DEK3=unique-metrics-and-dimensions 01H7SZ8RA23SCGJ435B4V32CP1=custom-metrics 01H7SZ8RA2R9N2NC6JXNZZ7C5Z=partner-dimensions-and-metrics partner-table=para-configurar-las-m%C3%A9tricas-de-partners 01H7SZ8RA2VJ9466WSMN3WHR90=para-configurar-las-m%C3%A9tricas-de-partners 01H8GHNPQKS7REZ9RPH0ZYEBHE=applovin-metrics 01H8GHNPQKCKMDS8AYETEDDZKH=google-ads-metrics 01H8H1GTRV7VNJDKFEF35HCNKY=meta-ads 01H7SZ8RA28T63K3NASWC92R0F=unity-ads-metrics 01H7W4JTRSJJ2R45JQVYHMYGX2=nota 01H7SZ8RA3TPD6ED2HJZGTVRMS=save-and-share-views save-private-dashboard-view=guardar-vista-del-dashboard-privado h_01HYT77DSHZ6FE0MSQS83FRGW0=guardar-vista-del-dashboard-privado save-shared-dashboard-view=guardar-vista-de-dashboard-compartido 01HYT89BRYKRG44AT9MZWKZJNY=guardar-vista-de-dashboard-compartido share-view-url=compartir-url-de-vista h_01HYT8GXVJV8Q6GKBDHTTJ1SM2=compartir-url-de-vista custom-tags=etiquetas-personalizadas h_01H9J4Z9V9SJBTE63C358FME95=etiquetas-personalizadas h_01H9J4R9MTMGF9F1PNZRT2QZ1W=custom-dimensions 01H7SZ8RA3GW927GJBKKR4582T=create-and-manage-custom-dimensions 01H7SZ8RA3P8VQFH268G453FKM=example-csv 01H7SZ8RA307CBMA0533M3VGWK=traits-and-limitations h_01H9J67GSXXZ20W56NDVW2XDJC=name-convention-tags h_01H9J6PCQNVAB88ZCKRT3MVJEH=create-and-manage-name-convention-tags h_01H9J6PCQN6MV2KPYNFF7SB44Q=name-tag-traits-and-limitations additional-information=informaci%C3%B3n-adicional h_01J1VPMV85CT5ZJNN3BW4FCW0D=informaci%C3%B3n-adicional" />

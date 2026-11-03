@@ -1,5 +1,7 @@
 ---
-title: Apply China Personal Information Protection Law (PIPL) solution
+title: >-
+  Aplicar la solución de la Ley de Protección de la Información Personal (PIPL)
+  de China
 metadata:
   keywords:
     - Developers
@@ -13,65 +15,64 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-05-10T08:59:00Z'
-  edited_at: '2025-08-11T12:06:31Z'
+  edited_at: '2026-08-12T12:18:37Z'
   id: 6031419375377
-  locale: en-us
+  locale: es
   section: China market
   section_id: 6552042145425
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/6031419375377-Apply-China-Personal-Information-Protection-Law-PIPL-solution
+  url: https://support.appsflyer.com/hc/es/articles/6031419375377
 ---
-> **At a glance:** Improve flexibility while measuring with AppsFlyer and complying with PIPL.
+> **De un vistazo:** Mejora la flexibilidad al medir con AppsFlyer y cumplir con la PIPL.
 
-## Background
+## Antecedentes
 
-In late 2021, China passed the Personal Information Protection Laws (PIPL) which regulates the collection, use, and transfer of user personal data. To provide customers with additional flexibility while using AppsFlyer and to support PIPL compliance, follow the step-by-step instructions described in this article.  
-The AppsFlyer PIPL solution is based on 3 principles:
+A finales de 2021, China aprobó la Ley de Protección de la Información Personal (PIPL), que regula la recopilación, el uso y la transferencia de los datos personales de los usuarios. Para ofrecer a los clientes más flexibilidad al usar AppsFlyer y dar soporte al cumplimiento de la PIPL, sigue las instrucciones paso a paso que se describen en este artículo.  
+La solución PIPL de AppsFlyer se basa en 3 principios:
 
-* Prevent the SDK from collecting device IDs.
-* Mask and hash IPs of SDK events, S2S events, and clicks and impressions.
-* Enable auditing all app events on a relay server in China.
+* Evita que el SDK recopile los ID de dispositivo.
+* Enmascara y aplica hash a las IP de los eventos del SDK, los eventos S2S y los clics e impresiones.
+* Permite auditar todos los eventos de la app en un servidor de retransmisión en China.
 
-## Apply PIPL solution in AppsFlyer
+## Aplicar la solución PIPL en AppsFlyer
 
-The following section describes the actions you have to take to apply the AppsFlyer PIPL solution.
+En la siguiente sección se describen las acciones que debes realizar para aplicar la solución PIPL de AppsFlyer.
 
-**To apply PIPL solution:**
+**Para aplicar la solución PIPL:**
 
-1. Stop collecting device IDs by the SDK. Make sure to not send AppsFlyer the device IDs for both engagements and events.
-   * For Android:
-     * Set `setDisableAdvertisingIdentifiers` to true
-     * Set <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectimei">`setCollectIMEI`</Anchor> to false
-     * Set <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectandroidid">`setCollectAndroidID`</Anchor> to false
-   * For iOS:
-     * Set <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier">`disableAdvertisingIdentifier`</Anchor> to true
-     * Set <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableidfvcollection">`disableIDFVCollection`</Anchor> to true
+1. Deja de recopilar ID de dispositivos mediante el SDK. Asegúrate de no enviar a AppsFlyer los ID de dispositivo ni para los engagements ni para los eventos.
+   * Para Android:
+     * Configura `setDisableAdvertisingIdentifiers` en true
+     * Configura <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectimei">`setCollectIMEI`</Anchor> en false
+     * Configura <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectandroidid">`setCollectAndroidID`</Anchor> en false
+   * Para iOS:
+     * Configura <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier">`disableAdvertisingIdentifier`</Anchor> en true
+     * Configura <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableidfvcollection">`disableIDFVCollection`</Anchor> en true
 
-   Note that configuring these methods affects identifier collection not only in China. To disable identifiers specifically for the Chinese market, you must implement custom logic.
-2. Mask and hash clicks and impressions by using dedicated Chinese domains to pass these events to AppsFlyer.
-   * Use the following Chinese domains for OneLink and attribution links:
-     * For single platform clicks - **hclicks.aflink.com**, don't use click signing. Make sure to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add">exclude the app from click signing</Anchor>.
-     * For single platform impressions - **himpressions.aflink.com**
-     * For OneLink clicks - **`{subdomain}`.onelnk.com**
-   * Send your CSM a list of relevant app IDs and OneLink subdomains.
-   * If you’re using smart banners:
-     * <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#1-website-workplace-setup">Send AppsFlyer the website key.</Anchor>
-     * Use only `{subdomain}`.onelnk.com.
-     * Note! Since PIPL requires masking and hashing of IP addresses, smart banners based on geolocation rules will not function as expected.
-3. Mask and hash SDK and S2S events and transfer them through a relay server in China
-   * **SDK Events:**  
-     Set the domain for SDK events to **hevents.appsflyer-cn.com**. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#sethost">Android instructions</Anchor>. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#sethost">iOS instructions</Anchor>.  
-     Using this domain ensures that the IP of all SDK events is masked and hashed.
-   * **S2S Events:**  
-     For S2S events, use the `api2.hevents.appsflyer-cn.com` domain to mask and hash IP events as follows:
-     * The IP should be converted to binary, then the last 2 digits should be masked.
-     * The masked binary IP should be converted to text and then hashed by the sha256 algorithm.
+   Ten en cuenta que configurar estos métodos afecta a la recopilación de identificadores no solo en China. Para desactivar los identificadores específicamente para el mercado chino, debes implementar una lógica personalizada.
+2. Enmascara y aplica hash a los clics y las impresiones usando dominios chinos específicos para pasar estos eventos a AppsFlyer.
+   * Usa los siguientes dominios chinos para OneLink y los enlaces de atribución:
+     * Para clics de una sola plataforma: **hclicks.aflink.com**; no uses la firma de clics. Asegúrate de <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add">excluir la app de la firma de clics</Anchor>.
+     * Para impresiones de una sola plataforma: **himpressions.aflink.com**
+     * Para clics de OneLink: **`{subdomain}`.onelnk.com**
+   * Envía a tu CSM una lista de los ID de aplicaciones relevantes y los subdominios de OneLink.
+   * Si usas banners inteligentes:
+     * <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers#1-website-workplace-setup">Envía a AppsFlyer la clave del sitio web.</Anchor>
+     * Usa solo `{subdomain}`.onelnk.com.
+     * ¡Atención! Como PIPL exige el enmascaramiento y el hashing de las direcciones IP, los banners inteligentes basados en reglas de geolocalización no funcionarán como se espera.
+3. Enmascara y aplica hashing a los eventos de SDK y S2S, y transfiérelos a través de un servidor de retransmisión en China
+   * **Eventos de SDK:**  
+     Configura el dominio de los eventos de SDK en **hevents.appsflyer-cn.com**. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#sethost">Instrucciones para Android</Anchor>. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#sethost">instrucciones para iOS</Anchor>.  
+     El uso de este dominio garantiza que la IP de todos los eventos de SDK se enmascare y se aplique hashing.
+   * **Eventos S2S:**  
+     Para los eventos S2S, usa el dominio `api2.hevents.appsflyer-cn.com` para enmascarar y aplicar hashing a los eventos de IP de la siguiente manera:
+     * La IP debe convertirse en binario y, a continuación, deben enmascararse los 2 últimos dígitos.
+     * La IP binaria enmascarada debe convertirse en texto y, después, aplicarse hashing con el algoritmo sha256.
 
-## Solution limitations
+## Limitaciones de la solución
 
-This section describes certain limitations the PIPL solution imposes.
+En esta sección se describen determinadas limitaciones que impone la solución PIPL.
 
-* The S2S solution for OneLink API for short links creation isn’t supported.
-* All device IDs, for all engagements, must be hashed.
+* La solución S2S para la API de OneLink para la creación de enlaces cortos no es compatible.
+* Todos los ID de dispositivo, para todos los engagement, deben someterse a hashing.
 
-<div data-zendesk-anchors="h_01HQ5Y1W7M46BBJGEZZ5VEYW3K=background h_01HQ5Y1W7MRYYGJWJNWY7ZSY9S=apply-pipl-solution-in-appsflyer h_01HQ5Y1W7M39XRY607H4G7X0X4=solution-limitations" />
+<div data-zendesk-anchors="background=antecedentes h_01HQ5Y1W7M46BBJGEZZ5VEYW3K=antecedentes apply-pipl-solution-in-appsflyer=aplicar-la-soluci%C3%B3n-pipl-en-appsflyer h_01HQ5Y1W7MRYYGJWJNWY7ZSY9S=aplicar-la-soluci%C3%B3n-pipl-en-appsflyer solution-limitations=limitaciones-de-la-soluci%C3%B3n h_01HQ5Y1W7M39XRY607H4G7X0X4=limitaciones-de-la-soluci%C3%B3n" />

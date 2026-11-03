@@ -1,5 +1,5 @@
 ---
-title: Set up an integrated partner
+title: Configurar un partner integrado
 metadata:
   keywords:
     - Advertisers
@@ -15,284 +15,368 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2021-11-08T08:02:46Z'
-  edited_at: '2026-08-31T11:29:22Z'
+  edited_at: '2026-09-02T00:28:44Z'
   id: 4410395957521
-  locale: en-us
+  locale: es
   section: Media source configuration
   section_id: 6551067072785
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4410395957521-Set-up-an-integrated-partner
+  url: https://support.appsflyer.com/hc/es/articles/4410395957521
 ---
-> **At a glance:** Enable attribution measurement, send postbacks to partners, and enable other integration features by setting up the partner connection with AppsFlyer.
+> **Resumen:** Habilita la medición de atribución, envía postbacks a partners y activa otras funciones de integración estableciendo la conexión con los partners en AppsFlyer.
 
-## Overview
+## Visión general
 
-Partners, media sources, and third-party platforms integrate with AppsFlyer by API. This article contains the generic instructions to activate and set up the integration, including generating attribution links for non-SRN ad networks.
+Los partners, fuentes de medios y plataformas de terceros se integran con AppsFlyer por API. Este artículo contiene las instrucciones genéricas para activar y configurar la integración, incluida la generación de enlaces de atribución para ad networks que no sean SRN.
 
-* This guide isn't applicable to SRNs. Use the <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRN</Anchor> explicit article.
-* Some ad networks have dedicated articles.
-* Before setting up the configuration, contact the partner and open an account with them.
+* Esta guía no se aplica a las SRNs. Utiliza el artículo específico para <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns">SRN</Anchor>.
+* Algunas ad networks cuentan con artículos específicos.
+* Antes de configurar, contacta al partner y abre una cuenta con ellos.
 
 <div id="partner-types-in-the-ecosystem" />
 
-<Accordion title="Partner types in the ecosystem">
+<Accordion title="Tipos de partners en el ecosistema">
 
-The image below contains the different partner types that form the attribution ecosystem.
+La imagen a continuación muestra los diferentes tipos de partners que componen el ecosistema de atribución.
 
 [![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)
 
-**Related reading**: <Anchor target="_blank" href="https://www.appsflyer.com/performance-index/">AppsFlyer Performance Index</Anchor> ranks mobile media sources by category and region.
+**Lectura relacionada**: El <Anchor target="_blank" href="https://www.appsflyer.com/performance-index/">Performance Index de AppsFlyer</Anchor> clasifica las fuentes de medios móviles por categoría y región.
 
-| Partner type | Description |
+| Tipo de partner | Descripción |
 | --- | --- |
-| Ad networks | Run campaigns on your behalf. |
-| Agencies | Use their expertise to get high-quality users by running campaigns on your behalf. Learn more about <Anchor target="_blank" href="/marketers/docs/view-agency-data">agency data</Anchor>. |
-| Marketing partners | Marketing partners specialize in working with specific ad networks. Examples: Meta campaign management partners, Apple Ads marketing partners, X marketing partners. |
-| Retargeting networks | Ad networks specializing in running retargeting campaigns. |
-| Third-party platforms | Provide BI-related services like analytics and marketing automation platforms. |
-| Fraud detection | External third-party anti-fraud systems which are not part of the AppsFlyer Protect360 anti-fraud solution. |
+| Redes publicitarias | Ejecutar campañas por ti. |
+| Agencias | Utilizan su experiencia para conseguir usuarios de alta calidad gestionando campañas en tu nombre. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/view-agency-data">datos de agencia</Anchor>. |
+| Partners de marketing | Estos partners se especializan en trabajar con ad networks específicas. Ejemplos: Partners de gestión de campañas en Meta, partners de marketing de Apple Search Ads, partners de marketing de X. |
+| Redes de retargeting | Ad networks centradas en ejecutar campañas de retargeting. |
+| Plataformas de terceros | Proveen servicios relacionados con BI, como plataformas de análisis y automatización de marketing. |
+| Detección del fraude | Sistemas externos de detección de fraude que no forman parte de la solución antifraude Protect360 de AppsFlyer. |
 
 </Accordion>
 
 <div id="partners-in-the-marketplace" />
 
-<Accordion title="Partners in Partner Integrations">
+<Accordion title="Partners en integraciones de partners">
 
-All partners, media sources, and other platforms integrated with AppsFlyer are found on the Partner Integrations page. You can find both your <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">active and inactive</Anchor> partners, and search for new partners to connect with.
+Todos los partners, fuentes de medios y otras plataformas integradas con AppsFlyer se encuentran en la página de integraciones de partners. Puedes localizar a tus partners <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activos e inactivos</Anchor> y buscar nuevos partners con los que conectartar.
 
-**To search and filter all partners, media sources, or other platforms in Partner Integrations:**
+**Para buscar y filtrar todos los partners, fuentes de medios u otras plataformas en integraciones de partners:**
 
-* In AppsFlyer, from the side menu, select **Collaboration** > **Partner** **Integrations**. You can use the various search filters.
+* En AppsFlyer, desde el menú lateral, selecciona **Colaboración** > **Integración de** **partner**. Puedes usar los distintos **filtros** de búsqueda.
 
-#### Invite new partners to AppsFlyer
+#### Invita a nuevos partners a AppsFlyer
 
-If the partner you're working with isn't yet integrated with AppsFlyer, you can <Anchor target="_blank" href="/marketers/docs/partner-integrations#invite-new-partners-to-appsflyer">send them an invitation link</Anchor>.
+Si el partner con el que trabajas aún no está integrado con AppsFlyer, puedes <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#invitar-nuevos-partners-a-appsflyer">enviarle un enlace de invitación</Anchor>.
 
 </Accordion>
 
 <div id="your-integrated-partners" />
 
-<Accordion title="Your active integrated partners">
+<Accordion title="Tus partners activos integrados">
 
-The Active Integrations tab in Partner Integrations shows all your <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">active</Anchor> integrated partners. From this tab, you can learn about the partner and manage the integration.
+La pestaña “Integraciones activas” en “Integraciones con partners” muestra todos tus partners integrados <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activos</Anchor> . Desde esta página, puedes obtener información del partner y gestionar la integración.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> The list of partners shown on the **Active integrations** tab varies according to the selected app. You can see which partners are connected to other apps by clicking the app from the top-left corner and selecting a different app.
+> La lista de partners que se muestra en la pestaña **Integraciones activas** varía según la aplicación seleccionada. Puedes ver qué partners están conectados a otras aplicaciones haciendo clic en la aplicación en la esquina superior izquierda y seleccionando una aplicación diferente.
 
-**To see all your active partners:**
+**Para ver todos tus partners activos:**
 
-* In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations >** **Active integrations** tab.
+* En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de partners** > la pestaña **Integraciones activas**.
 
 </Accordion>
 
 <div id="about-the-integrated-partner-page" />
 
-<Accordion title="About the partner configuration page">
+<Accordion title="Acerca de la página de configuración del partner">
 
-The page is structured as follows:
+La página está estructurada de la siguiente manera:
 
-* **Header**, containing:
-  * Partner name
-  * Link to a dedicated partner article. If no dedicated article exists, this article displays.
-  * Integration status
-  * Selected app
-* **Settings tabs**: The tabs available depend on the partner type and supported features.
-* **Footer**:
-  * **Back to list**: Return to the Active Integrations list using the filtering options selected previously.
-  * **Status message:** Current status of the tab data (for example, saving, saved, error, there are unsaved changes).
-  * **Discard Changes:** Undo the last changes without saving.
-  * **Save:** Save the settings of the current tab only.
+* **Encabezado**, que contiene:
+  * Nombre del partner
+  * Enlace a un artículo dedicado al partner. Si no existe un artículo dedicado, se muestra este artículo.
+  * Estado de la integración
+  * Aplicación seleccionada
+* **Pestañas de configuración**: Las pestañas disponibles dependen del tipo de partner y de las funciones admitidas.
+* **Pie de página**:
+  * **Volver a la lista**: Regresa a la lista de Integraciones Activas usando las opciones de filtrado seleccionadas previamente.
+  * **Mensaje de estado:** Estado actual de los datos de la pestaña (por ejemplo, guardando, guardado, error, hay cambios sin guardar).
+  * **Descartar cambios:** Deshacer los últimos cambios sin guardar.
+  * **Guardar:** Guarda solo la configuración de la pestaña actual.
 
-#### Applicable settings tabs per partner type
+#### Pestañas de configuración aplicables por tipo de partner
 
-<table><thead><tr><th> </th><th colspan="2">Settings tab</th><th> </th></tr><tr><th>Partner type</th><th>Integration </th><th>Permissions</th><th>Remarks</th></tr></thead><tbody><tr><td>Media source</td><td>Y</td><td>Y</td><td><p><strong>Additional tabs available</strong>: Cost, ad revenue, attribution link</p><p>Includes ad networks, affiliate networks, direct publishers, programmatic advertising, China domestic ad networks, and retargeting Networks.<br/>For SRNs the attribution link tab is non-applicable.</p></td></tr><tr><td>Agency </td><td>N</td><td>Y</td><td>Stand-alone agencies that don't function as ad networks</td></tr><tr><td>Third-party platform</td><td>Y</td><td>N</td><td>Analytics or marketing automation platforms</td></tr><tr><td>Marketing partner </td><td>Y</td><td>N</td><td> </td></tr></tbody></table>
+<table><thead><tr><th> </th><th colspan="2">Pestaña de configuración</th><th> </th></tr><tr><th>Tipo de partner</th><th>Integración </th><th>Permisos</th><th>Observaciones</th></tr></thead><tbody><tr><td>Fuente de medios</td><td>Sí</td><td>Sí</td><td><p><strong>Pestañas adicionales disponibles</strong>: Costo, ingresos por publicidad, enlace de atribución</p><p>Incluye ad networks, redes de afiliados, editores directos, publicidad programática, ad networks nacionales de China y redes de retargeting.<br/>Para las SRNs, la pestaña de enlace de atribución no es aplicable.</p></td></tr><tr><td>Agencia </td><td>N/A</td><td>Sí</td><td>Agencias independientes que no funcionan como ad networks</td></tr><tr><td>Plataforma de terceros</td><td>Sí</td><td>N/A</td><td>Plataformas de análisis o automatización de marketing</td></tr><tr><td>Partner de marketing </td><td>Sí</td><td>N/A</td><td> </td></tr></tbody></table>
 
 </Accordion>
 
-## Set up a partner (non-SRN)
+## Configurar un partner (no SRN)
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> When enabling a partner integration, certain data, including personal information (e.g., Advertising ID, IP address), will, by default, be shared with them by you. Please ensure you have the appropriate legal basis and rights to share this data. You can limit data sharing with a partner by following the instructions provided in the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy framework</Anchor> and <Anchor target="_blank" href="/marketers/docs/apply-privacy-preserving-sdk-methods">Privacy preserving methods in the SDK</Anchor> articles.
+> Al habilitar la integración de un partner, de forma predeterminada, compartes ciertos datos, incluida la información personal (por ejemplo, ID de publicidad, dirección IP). Asegúrate de tener la base legal y los derechos adecuados para compartir estos datos. Puedes limitar el intercambio de datos con un partner siguiendo las instrucciones proporcionadas en el <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">framework de privacidad avanzada agregada</Anchor> y los métodos de <Anchor target="_blank" href="/marketers/es/docs/apply-privacy-preserving-sdk-methods">preservación de privacidad</Anchor> de los artículos del SDK.
 
-**To access the settings and configure your campaigns with the partner:**
+**Para acceder a la configuración y configurar tus campañas con el partner:**
 
-Search for and select your partner, [from Partner Integrations.](/docs/set-up-an-integrated-partner#partners-in-the-marketplace)
+Busca y selecciona a tu partner en [Integraciones con partners.](/docs/set-up-an-integrated-partner#partners-in-the-marketplace)
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> The [General settings](#d-general-settings) step in the **Integration** tab is mandatory for all partners. You must also complete the **Attribution link** tab for non-SRN ad networks. The remaining tabs are optional.
+> El paso [Configuración general](#d-general-settings) en la pestaña **Integración** es obligatorio para todos los partners. También debes completar la pestaña **Enlace de atribución** para ad networks no SRN. Las pestañas restantes son opcionales.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de integración">
 
-Partner integrations differ in their requirements and can contain a subset of all possible options described in this section. There are some differences between iOS and Android settings.
+Las integraciones de partners varían en sus requisitos y pueden contener un subconjunto de todas las opciones posibles descritas en esta sección. Hay ciertas diferencias entre las configuraciones de iOS y Android.
 
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
-Complete the sections as required.
+Completa las secciones requeridas.
 
-#### Integration sections
+#### Secciones de integración
 
-The following table includes different sections of the integration page. Some sections are available to all, others are specific per integration.
+La tabla siguiente incluye diferentes secciones de la página de integración. Algunas secciones están disponibles para todos, mientras que otras son específicas para cada integración.
 
 <Table>
   <thead>
     <tr>
       <th>
-        Section
+        Sección
       </th>
       <th>
-        Description
+        Descripción
       </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td><span id="a-activate-partner"></span>
-        Activate partner
+        Activar partner
       </td>
       <td>
-        Before sharing attribution links with a partner, you must enable **Activate partner** and complete the remaining sections of the Integration tab.<ul><li>Don't use **Activate partner** to pause or turn off campaign attribution</li><li>Disabling partner integration **can cause irreversible damage to active campaigns**.</li><li>Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor> and the impact of deactivating a partner.</li></ul>**To activate an integrated partner**:<ol><li>In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations**.</li><li>Search for and select the partner. You're directed to the partner configuration page.</li><li>Turn on <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">**Activate partner**</Anchor>.</li><li>Click **Save Integration.**</li><li>[Optional] To allow the partner to <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">view the data attributed to them</Anchor>, make sure to turn [Ad network permissions](/docs/set-up-an-integrated-partner#ad-network-permissions) in the [Permissions](/docs/set-up-an-integrated-partner#permissions-tab) tab.</li></ol>
+        Antes de compartir enlaces de atribución con un partner, debes habilitar **Activar partner** y completar las secciones restantes de la pestaña Integración.
+
+        * No utilices **Activar partner** para pausar o desactivar la atribución de campañas
+        * Desactivar la integración de partners **puede causar daños irreversibles a las campañas activas**.
+        * Infórmate más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor> y el impacto de desactivar a un partner.
+
+        **Para activar un partner integrado**:
+
+        1. En AppsFlyer, desde el menú lateral, selecciona **Colaboración** > **Integración de partners**.
+        2. Busca y selecciona al partner. Serás dirigido a la página de configuración del partner.
+        3. Activa <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">**Activar partner**</Anchor>.
+        4. Haz clic en **Guardar integración.**
+        5. [Opcional] Para permitir que el partner <Anchor target="_blank" href="/marketers/es/docs/manage-data-access-permissions">vea los datos atribuidos a él</Anchor>, asegúrate de activar los [Permisos de ad network](/docs/set-up-an-integrated-partner#permisos-de-ad-network) en la pestaña [Permisos](/docs/set-up-an-integrated-partner#permissions-tab).
       </td>
     </tr>
     <tr>
       <td><span id="b-advanced-privacy"></span>
-        Advanced Privacy
+        Privacidad avanzada
       </td>
       <td>
-        For iOS apps only:  <br />When **Advanced Privacy (for iOS 14.5+ and later)** is turned on, you can <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">control what data to share</Anchor> with the partner via postbacks and reports. This limits the sharing of user identifiers with the partner. Note that when <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is turned on in App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked.
+        Solo para aplicaciones iOS:  
+        Cuando la **Privacidad Avanzada (para iOS 14.5+ y posteriores)** está activada, puedes <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">controlar qué datos compartir</Anchor> con el partner a través de postbacks y reportes. Esto limita el intercambio de identificadores de usuario con el partner. Ten en cuenta que cuando la opción <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad Avanzada Agregada</Anchor> está activada en la configuración de la aplicación, la **Privacidad Avanzada (para iOS 14.5+ y posteriores)** se activa y queda bloqueada.
       </td>
     </tr>
     <tr>
       <td><span id="c-transaction-id"></span>
-        Transaction ID
+        ID de la transacción
       </td>
       <td>
-        For iOS apps only:  <br />When **Share SKAN transaction ID** is turned on, you're <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">sharing the transaction ID of SKAdNetwork postbacks</Anchor> with the partner. By doing so, the partner could decode your SKAdNetwork Conversion Values.
+        Solo para aplicaciones iOS:  
+        Cuando la opción **Compartir ID de transacción de SKAN** está activada, estás <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">compartiendo el ID de transacción de los postbacks de SKAdNetwork</Anchor> con el partner. Al hacer esto, el partner podría decodificar tus valores de conversión de SKAdNetwork.
       </td>
     </tr>
     <tr>
       <td><span id="d-general-settings"></span>
-        General settings
+        Configuración general
       </td>
       <td>
-        **Partner ID—Credentials**  <br />Some partners require credentials for AppsFlyer to integrate with them. Partners refer to this ID as app ID, account ID, user ID, or network ID. If this field displays, get the ID from the partner dashboard and enter it in the field.
+        **ID de partner: credenciales**  
+        Algunos partners requieren credenciales para que AppsFlyer se integre con ellos. Los partners se refieren a este ID como ID de aplicación, ID de cuenta, ID de usuario o ID de red. Si aparece este campo, obtén el ID del dashboard del partner e introdúcelo en el campo.
       </td>
     </tr>
     <tr>
       <td><span id="non-eu-users"></span>
-        Non EU Users
+        Usuarios no pertenecientes a la UE
       </td>
       <td>
-        Decide whether or not to turn on <Anchor target="_blank" href="/marketers/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**Non EU users**</Anchor>.
+        Decide si deseas activar o no la opción <Anchor target="_blank" href="/marketers/es/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**Usuarios no pertenecientes a la UE**</Anchor>.
       </td>
     </tr>
     <tr>
       <td><span id="e-install-attribution"></span>
-        Install attribution
+        Atribución de instalación
       </td>
       <td>
-        Set attribution windows to attribute new installs (first launches) of users who viewed or clicked your ad. The attribution lookback window is the maximum time from a click or a view of your ad to the install for which installs may be attributed to the partner.<ul><li>**Install click-through lookback window:** Set the maximum time after a click-to-app that an install can be attributed to the click.</li></ul>**Install view-through attribution: Turn on to start attributing new installs by users who viewed your ad but didn't click it.**<ul><li>**Install view-through lookback window:** Set the maximum time after a view-to-app that an install can be attributed to the view.</li></ul><Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">Learn more about lookback windows</Anchor>.
+        Configura las ventanas de atribución para asignar nuevas instalaciones (primeros lanzamientos) de usuarios que vieron o hicieron clic en tu anuncio. La ventana de atribución de lookback es el tiempo máximo desde un clic o una vista de tu anuncio hasta la instalación, durante el cual las instalaciones pueden ser atribuidas al partner.
+
+        * **Ventana de lookback click-through para instalaciones:** Establece el tiempo máximo después de un clic en la aplicación durante el cual una instalación puede ser atribuida a ese clic.
+
+        **Atribución view-through para instalaciones: Actívala para comenzar a atribuir nuevas instalaciones a usuarios que vieron tu anuncio pero no hicieron clic en él.**
+
+        * **Ventana de lookback de visualización para instalación:** Establece el tiempo máximo después de una vista a la aplicación durante el cual una instalación puede ser atribuida a esa vista.
+
+        <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">Infórmate más sobre las ventanas de lookbacks</Anchor>.
       </td>
     </tr>
     <tr>
       <td><span id="e-re-engagement-attribution"></span>
-        Re-engagement attribution
+        Atribución de re-engagement
       </td>
       <td>
-        Turn on and set the lookback windows to start attributing re-engagements of your existing users. For non-SRNs, this setting is available either in the Integration tab or in the [attribution link](/docs/set-up-an-integrated-partner#retargeting-settings) tab.<ul><li>**Re-engagement click-through lookback window:** Set the maximum time after a click-to-app that the app launch can be attributed to the click as a re-engagement.</li></ul>**Re-engagement view-through attribution:** Turn on to start attributing re-engagements of your existing users who viewed your ad but didn't click it.<ul><li>**Re-engagement view-through lookback window:** Set the maximum time after a view-to-app that an app launch can be attributed to the view as a re-engagement.</li></ul><Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">Learn more about lookback windows</Anchor>.
+        Activa y configura las ventanas de lookbacks para empezar a atribuir reengagements de tus usuarios existentes. Para aquellos que no son SRNs, esta configuración está disponible en la pestaña de Integración o en la pestaña [Enlace de atribución](/docs/set-up-an-integrated-partner#configuración-de-retargeting).
+
+        * **Ventana de lookback click-through para reengagement:** Establece el tiempo máximo después de un clic en la aplicación durante el cual el lanzamiento de la aplicación puede ser atribuido al clic como un reengagement.
+
+        **Atribución de visualización para reengagement:** Actívala para comenzar a atribuir reengagements de tus usuarios existentes que vieron tu anuncio pero no hicieron clic en él.
+
+        * **Ventana de lookback view-through para reengagement:** Establece el tiempo máximo después de una vista a la aplicación durante el cual el lanzamiento de una aplicación puede ser atribuido a la vista como un reengagement.
+
+        <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">Infórmate más sobre las ventanas de lookbacks</Anchor>.
       </td>
     </tr>
     <tr>
       <td><span id="reengagement-window"></span>
-        Re-engagement window
+        Ventana de reengagement
       </td>
       <td>
-        Set the time window during which in-app events are primarily attributed to the re-engagement conversion. <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#setup-reengagement-window">Learn more</Anchor>.
+        Establece el periodo de tiempo durante el cual los eventos in-app se atribuyen principalmente a la conversión de reengagement. <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide#setup-reengagement-window">Saber más</Anchor>.
       </td>
     </tr>
     <tr>
       <td><span id="ignore-active-users"></span>
-        Ignore active users for retargeting
+        Ignorar usuarios activos para retargeting
       </td>
       <td>
-        Set an inactivity window period to prevent recording retargeting conversions for active users within the specified time frame. See more about the <Anchor target="_blank" href="/marketers/docs/set-retargeting-inactivity-window">Retargeting inactivity period</Anchor>.<br /><br />**For** <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">**SRNs**</Anchor>:<ol><li>From the Integration tab, turn on **Re-engagement attribution**.</li><li>Turn on **Ignore active users for retargeting**.</li><li>Set the **Inactivity window**.</li></ol>**For non-SRNs:**<ol><li>From the Attribution link tab, turn on **Retargeting settings**.</li><li>Turn on **Ignore active users for retargeting**.</li><li>Set the **Inactivity window**.</li></ol>
+        Configura un periodo de inactividad para evitar registrar conversiones de retargeting en usuarios activos durante el periodo especificado. Más información sobre el <Anchor target="_blank" href="/marketers/es/docs/set-retargeting-inactivity-window">Período de inactividad para retargeting</Anchor>.
+
+        **Para** <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns">**SRNs**</Anchor>:
+
+        1. En la pestaña de Integración, activa la **atribución de reengagement**.
+        2. Activa **Ignorar usuarios activos para retargeting**.
+        3. Configura la **ventana de inactividad**.
+
+        **Para los que no son SRNs:**
+
+        1. En la pestaña de enlace de atribución, activa la **configuración de retargeting**.
+        2. Activa **Ignorar usuarios activos para retargeting**.
+        3. Configura la **ventana de inactividad**.
       </td>
     </tr>
     <tr>
       <td><span id="e-cross-platform-attribution"></span>
-        Cross-platform attribution
+        Atribución multiplataforma
       </td>
       <td>
-        When **Cross-platform equal attribution priority** is turned on, cross-platform impressions during the selected time frame have equal priority for attribution.
+        Cuando la **Prioridad de atribución igual entre plataformas** está activada, las impresiones multiplataforma durante el periodo seleccionado tienen la misma prioridad para la atribución.
       </td>
     </tr>
     <tr>
       <td><span id="f-preload-attribution"></span>
-        Preload attribution
+        Atribución de precarga
       </td>
       <td>
-        When **Preload attribution** is turned on, installs are attributed to <Anchor target="_blank" href="/marketers/docs/measure-preload-campaigns-with-google-play-install">preload campaigns</Anchor>. Set the **Preload lookback window** to determine how long after device activation a preload install can be attributed to the partner.
+        Cuando la **Atribución de precarga** está activada, las <Anchor target="_blank" href="/marketers/es/docs/measure-preload-campaigns-with-google-play-install">instalaciones se atribuyen a las **campañas de precarga**</Anchor>. Establece la **ventana de lookback de precarga** para determinar cuánto tiempo <Anchor target="_blank" href="/marketers/es/docs/measure-preload-campaigns-with-google-play-install">después de la activación del dispositivo se puede atribuir una instalación de precarga al partner.</Anchor>
       </td>
     </tr>
     <tr>
       <td><span id="f-preload-equal-attribution-priority"></span>
-        Preload equal attribution priority
+        Prioridad de atribución igualitaria de precargas
       </td>
       <td>
-        When **Preload equal attribution priority** is turned on, preload engagement during the selected lookback window has equal <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#attribution-methods">attribution priority</Anchor> as deterministic clicks.
+        Cuando la **Prioridad de atribución igualitaria de precarga** está activada, la interacción de precarga durante la ventana de lookback seleccionada tiene la misma <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#métodos-de-atribución">prioridad de atribución</Anchor> que los clics deterministas.
       </td>
     </tr>
     <tr>
       <td><span id="advanced-data-sharing"></span>
-        Advanced Data Sharing
+        Compartición avanzada de datos
       </td>
       <td>
-        When **Advanced Data Sharing** is turned on, additional data is shared with the partner via the attribution link.  <br />**Note:** This sharing option is different from the <Anchor target="_blank" href="/marketers/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing">Meta ads AEM Advanced data sharing</Anchor>.
+        Cuando **Compartición Avanzada de Datos** está activado, se comparten datos adicionales con el partner a través del enlace de atribución.  
+        **Nota:** Esta opción de compartición difiere de <Anchor target="_blank" href="/marketers/es/docs/meta-ads-aggregate-event-measurement-aem-for-ios#compartición-de-datos-de-aem">Compartición Avanzada de Meta Ads AEM</Anchor>.
       </td>
     </tr>
     <tr>
       <td><span id="default-postbacks"></span>
-        Default postbacks
+        Postbacks predeterminados
       </td>
       <td>
-        When the partner integration is turned on, default postbacks are sent to partners relating to user actions occurring before the app launch, such as installs, rejected installs, and re-engagements.<br /><br /><br /><br />**<span id="01H80XGTBQ4MPGGKSZW0D9GG9H"></span>Note**<ul><li>Rejected events are in-app events blocked by <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor> or events found to be non-compliant by target validation. In the case of rejected events, confirm with the partner that they have enabled reject event integration with AppsFlyer.</li><li>Tech partners can receive Default postbacks for installs and re-engagements. In some cases, they can also receive in-app event postbacks.</li></ul>**To configure default postbacks for the partner**, define the source of users for sending postbacks:<ul><li>**This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.<br />**Note:** In the following cases, default postbacks are always defined as **This partner only**:<ul><li>Rejected installs</li><li>Agencies (with [permissions](/docs/set-up-an-integrated-partner#agency-permissions))</li></ul></li><li>**All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, the user who performed it came from any media source.</li><li>**Off**: Don't send default postbacks to this partner.</li></ul>
+        Cuando la integración del partner está activada, se envían postbacks predeterminados a los partners relacionados con acciones de usuario que ocurren antes del lanzamiento de la aplicación, como instalaciones, instalaciones rechazadas y reengagements.
+
+        > 📘 **Nota**
+        >
+        > * Los eventos rechazados son aquellos eventos in-app bloqueados por <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide">Protect360</Anchor> o que la validación de destino ha encontrado que no corresponden. En el caso de eventos rechazados, confirma con el partner que haya habilitado la integración de eventos rechazados con AppsFlyer.
+        > * Los partners tecnológicos pueden recibir postbacks predeterminados para instalaciones y reengagements. En algunos casos, también pueden recibir postbacks de eventos in-app.
+
+        **Para configurar postbacks predeterminados para el partner**, define la fuente de usuarios para enviar los postbacks:
+
+        * **Solo este partner**: Envía postbacks solo cuando el evento se atribuya a este partner, es decir, el usuario que lo realizó provino de este partner.  
+          **Nota:** En los siguientes casos, los postbacks predeterminados siempre se establecen como **Solo este partner**:
+          * Instalaciones rechazadas
+          * Agencias (con [permisos](/docs/set-up-an-integrated-partner#permisos-de-la-agencia))
+        * **Todas las fuentes de medios, incluidas las orgánicas**: Envía postbacks de eventos atribuidos a cualquier partner y eventos orgánicos, es decir, el usuario que los realizó provino de cualquier fuente de medios.
+        * **Desactivado** No enviar postbacks predeterminados a este partner.
       </td>
     </tr>
     <tr>
       <td><span id="g-in-app-event-postback-configuration"></span>
-        <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">In-app event postbacks</Anchor>
+        <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration">Postbacks de eventos in-app</Anchor>
       </td>
       <td>
-        <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#event-mapping">Map</Anchor> AppsFlyer events with the partner's events via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).<br /><br />**To configure in-app event postbacks:**<ol><li>Set the **Partner ID** (if required).</li><li>Enable **In-app event postbacks**.</li><li>Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).</li><li>Click **Add event** to add an SDK or server-to-server event to the list.</li><li>Complete the required parameters according to the <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#mapping-methods">mapping method</Anchor>.</li><li>[Optional] Click<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/e2543cb26e0cc02f4840040721376ae88a4015a24ac1fc271264e3965560c1f9-4413022777105.png" width="30px" />to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for sending certain in-app events to the partner.</li></ol>
+        <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#mapeo-de-eventos">Mapea</Anchor> los eventos de AppsFlyer con los eventos del partner mediante postbacks. Si el envío de postbacks está habilitado, esto incluye eventos in-app rechazados (eventos bloqueados por Protect360 o eventos que no cumplen con las reglas de validación de destino).
 
-        | Parameter name | Description |
+        **Para configurar postbacks de eventos in-app:**
+
+        1. Establece el **ID de partner** (si es necesario).
+        2. Habilite los **postbacks de eventos in-app**.
+        3. Establezca la **ventana de postbacks de eventos in-app**, si es necesario (lea más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">configuración de la ventana de postbacks de eventos in-app</Anchor>).
+        4. Haga clic en **Agregar evento** para añadir un evento SDK o de servidor a servidor a la lista.
+        5. Complete los parámetros necesarios de acuerdo con el <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#métodos-de-mapeo">método de mapeo</Anchor>.
+        6. [Opcional] Haz clic en <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png" width="30px" /> para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer condiciones</Anchor> para enviar ciertos eventos in-app al partner.
+
+        | Nombre del parámetro | Descripción |
         | --- | --- |
-        | <span id="appsflyer-event"></span>**AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events. **Tip**: Don't see the event you're looking for?   \* Make sure to activate the event on a device with a non-organic installation, and recheck. \* Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor> |
-        | <span id="mapped-to-partner-event"></span>**mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#mapping-methods">Possible mapping configurations</Anchor> are:   \* **Text field:** Get the corresponding event ID from the partner. \* **Drop-down box:** Select the most suitable pre-defined partner event. \* **As is**: Send the events as they are, without mapping the event name. |
-        | <span id="for-users-from"></span>**for users from** | Select the sending option for the event:   \* **This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner. \* **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, when the user who performed it came from any media source. |
-        | <span id="including"></span>**including** | Select <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">which event data</Anchor> to share with the partner in the postback:   \* **No values &amp; no revenue**: Send just the event itself without any parameters (values or revenue). \* **Values &amp; no revenue**: Send all the parameters **excluding** the revenue value. \* **Values &amp; revenue**: Send all the event parameters, **including** the revenue value (if exists in the event). |
+        | <span id="appsflyer-event"></span>**Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos servidor a servidor.  <br />**Consejo**: ¿No ves el evento que buscas?<br /><br />* Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.<br />* Escríbelo en **Evento de AppsFlyer**, y luego haz clic en **Crear personalizado**. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizados.</Anchor> |
+        | <span id="mapped-to-partner-event"></span>**Asignado al evento de partner** | El nombre o ID único de cada evento, tal como lo define el partner. <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#métodos-de-mapeo">Las posibles configuraciones de mapeo</Anchor> son:<br /><br />* **Campo de texto:** Obtén el ID del evento correspondiente del partner.<br />* **Cuadro desplegable:** Selecciona el evento de partner predefinido más adecuado.<br />* **Tal cual**: Envía los eventos tal como son, sin mapear el nombre del evento. |
+        | <span id="for-users-from"></span>**para usuarios de** | Selecciona la opción de envío para el evento:<br /><br />* **Solo este partner**: Envía postbacks solo cuando el evento se atribuya a este partner, es decir, el usuario que lo realizó provino de este partner.<br />* **Todas las fuentes de medios, incluidas las orgánicas**: Envía postbacks de eventos atribuidos a cualquier partner y de eventos orgánicos, es decir, cuando el usuario que los realizó proviene de cualquier fuente de medios. |
+        | <span id="including"></span>**incluyendo** | Selecciona <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#datos-a-incluir-en-los-postbacks">qué datos del evento</Anchor> deseas compartir con el partner en el postback:<br /><br />* **Sin valores ni ingresos**: Envía solo el evento en sí, sin ningún parámetro (valores o ingresos).<br />* **Valores y sin ingresos**: envía todos los parámetros **excluyendo** el valor de los ingresos.<br />* **Valores e ingresos**: Envía todos los parámetros del evento, **incluyendo** el valor de los ingresos (si existe en el evento). |
 
-        <br />Remarks:<ul><li>Events mapped in the Integration tab for a specific partner are applicable both for standard and <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">SKAN postbacks</Anchor>.</li><li>Postbacks are sent to partners in real-time.</li><li>The AppsFlyer event name can either be selected or typed in.<br />Typed values are permitted to have underlined spaces (low dashes) before or after the name of the event. Use underlined spaces only if the event name being sent from AppsFlyer has the same underlined spaces.</li><li>**Important:** Event names are case-sensitive. To avoid discrepancies, make sure you use the correct event name for all media sources and app versions.</li><li>If the **In-app event postbacks** section doesn't exist in the **Integration** tab, it means that the partner has not yet set up in-app event recording with AppsFlyer in its preliminary configuration. The partner can contact AppsFlyer using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> to finish the integration.</li><li>To prevent advertisers from sharing too much information with third-party platforms unintentionally, we have removed the **Send all events (excludes uninstalls, sessions, and af\_ad\_revenue)** option for third-party platforms, as of March 2019. Third-party platforms configured before this, still retain this setup option.</li></ul>Related reading:<ul><li><Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">In-app event postback</Anchor> configuration</li><li><Anchor target="_blank" href="/marketers/docs/share-ad-revenue-data-with-partners#ad-revenue-event-postbacks-for-ad-networks">Ad revenue event postback</Anchor> configuration</li></ul>
+         Observaciones:
+
+        * Los eventos asignados en la pestaña de Integración para un partner específico son aplicables tanto para postbacks estándar como para <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">SKAN</Anchor>.
+        * Los postbacks se envían a los partners en tiempo real.
+        * El nombre del evento de AppsFlyer puede seleccionarse o escribirse.  
+          Se permite que los valores escritos incluyan guiones bajos antes o después del nombre del evento. Utilice guiones bajos solo si el nombre del evento que se envía desde AppsFlyer tiene exactamente los mismos guiones bajos.
+        * **Importante:** Los nombres de los eventos son sensibles a mayúsculas y minúsculas. Para evitar discrepancias, asegúrese de usar el nombre de evento correcto para todas las fuentes de medios y versiones de la aplicación.
+        * Si la sección **Postbacks de eventos in-app** no está presente en la pestaña **Integración**, significa que el partner no ha configurado aún el registro de eventos in-app con AppsFlyer en su configuración preliminar. El partner puede ponerse en contacto con AppsFlyer mediante el <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget del asistente para partners</Anchor> para completar la integración.
+        * Para evitar que los anunciantes compartan demasiada información accidentalmente con plataformas de terceros, hemos eliminado la opción **Enviar todos los eventos (excluyendo desinstalaciones, sesiones y af\_ad\_revenue)** para plataformas de terceros, desde marzo de 2019. Las plataformas de terceros configuradas antes de esta fecha aún conservan esta opción de configuración.
+
+        Lectura relacionada:
+
+        * Configuración del <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration">postback de eventos in-app</Anchor>
+        * Configuración del <Anchor target="_blank" href="/marketers/es/docs/share-ad-revenue-data-with-partners#ad-revenue-event-postbacks-for-ad-networks">postback de eventos de ingresos publicitarios</Anchor>
       </td>
     </tr>
     <tr>
       <td><span id="h"></span>
-        Save integration
+        Guardar integración
       </td>
       <td>
-        Click **Save Integration** after making the changes.
+        Haga clic en **Guardar integración** después de realizar los cambios.
       </td>
     </tr>
     <tr>
       <td><span id="i-connect-more-apps-optional"></span>
-        Connect more apps (optional)
+        Conectar más aplicaciones (opcional)
       </td>
       <td>
-        After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner.<ol><li>From the top-left corner, under the partner name, click the app name to open the list of apps.</li><li>Select a different app from the drop-down list.</li><li>Repeat the integration steps for the selected app.</li></ol>
+        Después de guardar la integración, mientras permanece en la página de configuración, puedes integrar más de tus aplicaciones con el partner.
+
+        1. Desde la esquina superior izquierda, bajo el nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
+        2. Selecciona una aplicación diferente en la lista desplegable.
+        3. Repita los pasos de integración para la aplicación seleccionada.
       </td>
     </tr>
   </tbody>
@@ -302,322 +386,322 @@ The following table includes different sections of the integration page. Some se
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlace de atribución">
 
-Generate and save attribution links for the use of click (non-SRN) ad networks, and send the attribution link to the partner to attribute specific campaigns, ad sets, or single ads.
+Genera y guarda enlaces de atribución para el uso de ad networks de clic (no SRN), y envía el enlace de atribución al partner para atribuir campañas específicas, conjuntos de anuncios o anuncios individuales.
 
-**Note:** SRNs don't implement advertiser-generated attribution links so this tab isn't relevant to SRN campaigns.
+**Nota:** Las SRN no implementan enlaces de atribución generados por el anunciante, por lo que esta pestaña no es relevante para las campañas de SRN.
 
-**To generate an attribution link**:
+Para generar un enlace de atribución:
 
-1. Select either **Use a single-platform link** or **Use OneLink**.
+1. Seleccione **Usar un enlace de plataforma única** o **Usar OneLink**.
 
-   Select **Use a single-platform link** if any of the following apply:
+   Seleccione **Usar un enlace de plataforma única** si se aplica alguna de las siguientes condiciones:
 
-   * You plan to use only <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">URI schemes</Anchor> to open the app.
-   * You don't need to deep link with the URL.
+   * Planea utilizar solo <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">esquemas URI</Anchor> para abrir la aplicación.
+   * No necesita realizar un enlace profundo con la URL.
 
-   Select **Use OneLink** if any of the following apply:
+   Seleccione **Usar OneLink** si se aplica alguna de las siguientes condiciones:
 
-   * You want a single link for both Android and iOS apps.
-   * You want to use Android App Links or iOS Universal Links to open the app.
-   * You want deep linking capabilities.
+   * Desea un único enlace para aplicaciones tanto de Android como de iOS.
+   * Desea utilizar enlaces de aplicaciones de Android o enlaces universales de iOS para abrir la aplicación.
+   * Quiere capacidades de enlaces profundos.
 
-   **Note**: Selecting OneLink changes the click recording link from app specific to a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink URL</Anchor>.
-2. If you selected **Use OneLink**:
-   1. Select which OneLink template you want to use to open the app (and potentially deep link).
-   2. [Optional] Enter the **Deep link value**.
-   3. [Optional] Enter the **Additional deep link value**.
-3. Add parameters for <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#android-specific-parameters">Android</Anchor> and <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#ios-specific-parameters">iOS</Anchor>, as needed.
-4. [Optional] Select additional attribution parameters.
+   **Nota**: Al seleccionar OneLink, el enlace de grabación de clic se cambia de una aplicación específica a una <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">URL de OneLink</Anchor>.
+2. Si seleccionó **Usar OneLink**:
+   1. Seleccione qué plantilla de OneLink desea usar para abrir la aplicación (y potencialmente realizar el enlace profundo).
+   2. [Opcional] Ingrese el **valor del enlace profundo**.
+   3. [Opcional] Introduce el **valor adicional del enlace profundo**.
+3. Agrega parámetros para <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-específicos-de-android">Android</Anchor> e <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-específicos-de-ios">iOS</Anchor>, según sea necesario.
+4. [Opcional] Selecciona parámetros de atribución adicionales.
 
-#### Attribution link parameters
+#### Parámetros del enlace de atribución
 
 [![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
 
-Adding parameters to the attribution link enables you to perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here. When saving the attribution link, all the parameters configured in this tab are saved.
+Agregar parámetros al enlace de atribución te permitirá realizar análisis detallados. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí. Al guardar el enlace de atribución, se guardan todos los parámetros configurados en esta pestaña.
 
-Select which parameters you want to add to the attribution link.
+Selecciona qué parámetros deseas agregar al enlace de atribución.
 
-#### Attribution link parameters
+#### Parámetros del enlace de atribución
 
-| Name | Description | Attribution link parameter |
+| Nombre | Descripción | Parámetro del enlace de atribución |
 | --- | --- | --- |
-| Campaign | **Required parameter.**  <br />Compare different campaigns running with the media source. | c |
-| Adset | Compare different ad sets within specific campaigns of the media source. | af\_adset |
-| Ad Name | Compare different creatives within specific ad sets within specific campaigns of the media source. | af\_ad |
-| Site ID and Sub Site ID | **Required parameter.**<br /><br />Set Site ID to attribute installs to specific publishers.<br /><br />The site ID must be passed to AppsFlyer in the attribution link because it:<ul><li>Provides clarity and transparency about the publisher</li><li>Is used by AppsFlyer to identify and eliminate fraudulent publishers, and other traffic clusters.</li></ul>Note that a missing Site ID won't affect attribution. Learn more about the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#site-id-parameter">Site ID parameter</Anchor>.<br /><br />If there are many publishers, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations. | af\_siteid and af\_sub\_siteid |
-| Subscriber Parameters | Use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering. | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
+| Campaña | **Parámetro requerido.**  <br />Compara diferentes campañas que se ejecutan con la fuente de medios. | C |
+| Conjunto de anuncios | Compara distintos conjuntos de anuncios dentro de campañas específicas de la fuente de medios. | af\_conjunto\_de\_anuncios |
+| Nombre del anuncio | Compara diferentes creatividades dentro de conjuntos de anuncios específicos dentro de campañas específicas de la fuente de medios. | af\_anuncio |
+| ID del sitio y ID del subsitio | **Parámetro requerido.**<br /><br />Establece el ID del sitio para atribuir instalaciones a editores específicos.<br /><br />El ID del sitio debe pasarse a AppsFlyer en el enlace de atribución porque:<ul><li>Proporciona claridad y transparencia sobre el editor.</li><li>AppsFlyer lo utiliza para identificar y eliminar editores fraudulentos y otros grupos de tráfico.</li></ul>Ten en cuenta que la falta de un ID del sitio no afectará la atribución. Aprende más sobre el <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#site-id-parameter">parámetro de ID del sitio</Anchor>.<br /><br />Si hay muchos editores, aconsejamos limitar la cantidad de ID del sitio utilizadas y utilizar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">sobrepasar las limitaciones de ID del sitio</Anchor>. | af\_siteid y af\_sub\_siteid |
+| Parámetros del suscriptor | Usa cualquiera de los 5 parámetros del suscriptor para introducir valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el reporte de datos sin procesar, lo que los hace muy útiles para realizar la agregación o el filtrado de datos. | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
 
-You can add other parameters to the attribution link by typing it in a new parameter box. You can use all <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer available URL parameters.</Anchor> Note that only URI scheme and OneLink parameters are encoded on the attribution link.
+Puede añadir otros parámetros al enlace de atribución escribiéndolos en un nuevo cuadro de parámetros. Puede utilizar todos los <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">parámetros de URL disponibles de AppsFlyer.</Anchor> Tenga en cuenta que solo el esquema URI y los parámetros de OneLink están codificados en el enlace de atribución.
 
-#### Retargeting settings
+#### Configuración de retargeting
 
-**When retargeting is on**: AppsFlyer recognizes a link as a <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting</Anchor> attribution link, rather than a user acquisition link, by adding the `&is_retargeting=true` to the attribution link.  
-**Attribution link parameter:** is\_retargeting
+**Cuando el retargeting está activado**: AppsFlyer reconoce un enlace como un enlace de atribución de <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">retargeting</Anchor>, en lugar de uno de adquisición de usuarios, al añadir al enlace de atribución.  
+**Parámetro del enlace de atribución:** is\_retargeting
 
-To use your link for retargeting:
+Para utilizar su enlace para retargeting:
 
-1. Turn on **Retargeting settings**.
-2. [Optional] Enter a URI scheme if you want a URI scheme to open the app.  
-   **Note**:
-   * URI schemes are recommended as a fallback method to open the app if Universal Links or App Links fail.
-   * If you add a URI scheme here, it overrides any other URI schemes already in your OneLink template settings.
-   * URI scheme is added to the link in the af\_dp parameter.
-3. [Optional] Turn on **Ignore active users for retargeting**.
-4. Set the inactive window to determine which users are considered active and inactive.
-5. Set the re-engagement window to determine the time period following the re-engagement, where the user's in-app events are attributed to the retargeting media source.
-   * You can set the value in days (1-90), hours (up to 23), or even lifetime.
-   * The re-engagement window is added to the link in the af\_reengagement\_window parameter.
+1. Activa la **Configuración de retargeting**.
+2. [Opcional] Ingresa un esquema URI si deseas que se utilice para abrir la aplicación.  
+   **Nota**:
+   * Se recomiendan los esquemas URI como método alternativo para abrir la app si fallan los Universal Links o App Links.
+   * Si añade un esquema URI aquí, se anulará cualquier otro esquema URI que ya esté configurado en su plantilla OneLink.
+   * El esquema URI se añade al enlace en el parámetro af\_dp.
+3. [Opcional] Active **Ignorar usuarios activos para retargeting**.
+4. Configure la ventana de inactividad para determinar qué usuarios se consideran activos o inactivos.
+5. Establezca la ventana de reenganche para definir el período durante el cual los eventos en la app del usuario se atribuyen a la fuente de medios de retargeting.
+   * Puede establecer el valor en días (1-90), horas (hasta 23) o incluso durante toda la vida.
+   * La ventana de reenganche se añade al enlace en el parámetro af\_reengagement\_window.
 
-#### Click-through attribution
+#### Atribución por clic
 
-Use the setting to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window are attributed.
+Utilice la configuración para establecer el **tiempo máximo desde el clic hasta la instalación**. Solo se atribuyen las instalaciones (primeros inicios) que ocurren dentro de la ventana de lookback.
 
-Permitted range: 1-23 hours or 1-30 days.
+Rango permitido: 1-23 horas o 1-30 días.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window</Anchor>.
+Obtenga más información sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana retrospectiva de clics</Anchor>.
 
-**Click attribution link**
+**Haz clic en el enlace de atribución**
 
 [![click-through-attribution-link_en-us.png](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)
 
-This is the attribution link that contains all the set up information you have set for it. You can save the link for future reference by clicking **Save attribution link**.
+Este es el enlace de atribución que contiene toda la información de configuración que has establecido. Puedes guardar el enlace para futuras referencias haciendo clic en **Guardar enlace de atribución**.
 
-**To copy the click attribution link:**
+**Para copiar el enlace de atribución de clics:**
 
-1. Click **Save attribution link.**
-2. Copy the generated link.
+1. Haz clic en **Guardar enlace de atribución.**
+2. Copia el enlace generado.
 
-Send the link to the partner to be activated when your leads click on a corresponding ad.
+Envía el enlace al partner para que se active cuando los clientes potenciales hagan clic en el anuncio correspondiente.
 
-#### View-through attribution lookback window
+#### Ventana retrospectiva de atribución por visualización
 
-Set the **maximum time from impression to install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to the partner, providing there was no other relevant ad click.
+Configura el **tiempo máximo desde la impresión hasta la instalación**. Solo las instalaciones (primeras aperturas) que ocurren dentro de esta ventana, después de una impresión de anuncio, se atribuyen al partner, siempre que no haya otro clic relevante en un anuncio.
 
-You can customize this value to 1-24 hours.
+Puedes personalizar este valor entre 1 y 24 horas.
 
-**Attribution link parameter:** af\_viewthrough\_lookback
+**Parámetro de enlace de atribución:** af\_viewthrough\_lookback
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution</Anchor>.
+Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución por visualización</Anchor>.
 
-**Impressions attribution link**
+**Enlace de atribución de impresiones**
 
 [![impressions-attribution-link_en-us.png](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)
 
-The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). You can save the link for future reference by clicking **Save attribution link**.
+El enlace de atribución de impresiones contiene datos similares a los del enlace de registro de clics, además de una ventana de lookback diferente. Puedes guardar el enlace para futuras referencias haciendo clic en **Guardar enlace de atribución**.
 
-Click Save attribution link and then copy the generated link.
+Haz clic en Guardar enlace de atribución y luego copia el enlace generado.
 
-**To copy the impressions attribution link:**
+**Para copiar el enlace de atribución de impresiones:**
 
-1. Click **Save attribution link.**
-2. Copy the generated link.
+1. Haz clic en **Guardar enlace de atribución.**
+2. Copia el enlace generado.
 
-Send it to the partner to be activated when a corresponding ad is watched, usually for 1 second or more.
+Envíalo al partner para que se active cuando se vea un anuncio correspondiente, generalmente durante 1 segundo o más.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-* Cost data is reported by your integrated partners on the click or by Cost API.
-* The best practice is to implement Cost API (ROI360 subscription required).
-* Cost API includes clicks and impressions reports. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.
+* Los datos de costos son reportados por tus partners integrados al hacer clic o a través de la API de costos.
+* La mejor práctica es implementar la API de costos (se requiere una suscripción a ROI360)
+* La API de costos incluye reportes de clics e impresiones. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de ad networks</Anchor> para obtener más información sobre las dimensiones, métricas y funciones admitidas.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> If an advertiser uses an agency to run their campaigns, the agency, and not the advertiser, should integrate with the relevant partners. Otherwise, if both the advertiser and agency integrate with a partner using the same credentials for the same app, cost data is duplicated.
+> Si un anunciante utiliza una agencia para gestionar sus campañas, es la agencia, y no el anunciante, quien debe integrarse con los partners pertinentes. De lo contrario, si tanto el anunciante como la agencia se integran con un partner utilizando las mismas credenciales para la misma aplicación, los datos de costos se duplican.
 
-#### Enabling cost data by API
+#### Habilitación de datos de costos mediante API
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-#### Cost data sync status
+#### Estado de sincronismo de datos de costos
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el panel de control de estado de la integración de costos (e ingresos por publicidad) o en el panel de control de la red de publicidad individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de ingresos por publicidad">
 
-If you act as a publisher displaying ads in your app, the ad revenue function enables you to attribute ad revenue to the media source that brought the user. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">About ad revenue attribution.</Anchor>
+Si actúa como editor mostrando anuncios en su aplicación, la función de ingresos por publicidad le permite atribuir esos ingresos a la fuente de medios que atrajo al usuario. <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution">Acerca de la atribución de ingresos por publicidad.</Anchor>
 
-#### Enable ad revenue attribution
+#### Activar la atribución de ingresos por publicidad
 
-1. Check to see which method, <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#list-of-ad-revenue-integrated-partners">aggregate or user-level attribution</Anchor>, the partner supports.
-2. Follow the appropriate method in the <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#implementation">ad revenue integration guide.</Anchor>
+1. Comprueba qué método, <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#list-of-ad-revenue-integrated-partners">atribución agregada o a nivel de usuario</Anchor>, es compatible con el partner.
+2. Siga el método adecuado en la <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#implementación">guía de integración de ingresos por publicidad.</Anchor>
 
-#### Ad revenue API status messages
+#### Mensajes de estado de la API de ingresos por publicidad
 
-| Status | Remarks/action required |
+| Estado | Observaciones/acción requerida |
 | --- | --- |
-| Active | The connection is live and pulling data. |
-| No data to pull was found. | The connection was successful. The partner did not have any data related to this app. |
-| Partner API not responding. Contact AppsFlyer support. | The partner's server isn't responding to AppsFlyer. |
-| Invalid credentials. Enter updated credentials. |  |
-| Something went wrong. Contact AppsFlyer support. | There is a technical problem. |
-| Partner data not yet ready. If the problem persists, contact AppsFlyer support. |  |
-| Data is being processed and will be available soon. | We are currently processing the data received from the partner. The data will be available in the dashboards and reports. |
-| Data was never successfully pulled | If this status persists for a further hour contact AppsFlyer support. |
+| Activo | La conexión está activa y extrayendo datos. |
+| No se encontraron datos para extraer. | La conexión fue exitosa. El partner no tenía datos relacionados con esta aplicación. |
+| La API del partner no responde. Póngase en contacto con el soporte de AppsFlyer. | El servidor del partner no responde a AppsFlyer. |
+| Credenciales no válidas. Introduzca credenciales actualizadas. |  |
+| Algo ha ido mal. Póngase en contacto con el soporte de AppsFlyer. | Hay un problema técnico. |
+| Los datos del partner aún no están listos. Si el problema persiste, ponte en contacto con el soporte de AppsFlyer. |  |
+| Los datos se están procesando y estarán disponibles pronto. | Actualmente estamos procesando los datos recibidos del partner. Los datos estarán disponibles en los dashboards e informes. |
+| Nunca se extrajeron los datos con éxito | Si este estado persiste durante una hora más, póngase en contacto con el soporte de AppsFlyer. |
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Grant ad networks and agencies specific permissions to access your data and perform various actions.
+Otorga a las ad networks y agencias permisos específicos para acceder a tus datos y realizar diversas acciones.
 
-* You don't need the integration with a partner to be turned on to grant them permissions.
-* **Ad network set up by an agency:** When partner setup is performed by an agency, the advertiser can view neither the ad network activation status nor the permissions granted.
-* If your association with the partner is solely as an agency, use the **Agency permissions** instead of the **Ad network permissions**. By turning on the Agency permissions toggle, you allow the agency to control the Ad network permissions. For more information, see the note in <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer">What does it mean to get permission from a marketer</Anchor>.
-* Permissions are granted for the currently selected app.
+* No es necesario que la integración con un partner esté activada para otorgarle permisos.
+* **Ad network configurada por una agencia:** Cuando una agencia realiza la configuración del partner, el anunciante no puede ver el estado de activación de la ad network ni los permisos otorgados.
+* Si tu asociación con el partner es únicamente como agencia, utiliza los **permisos de agencia** en lugar de los **permisos de ad network**. Al activar la opción "Permisos de la agencia", permites que la agencia controle los permisos de la ad network. Para más información, consulta la nota en <Anchor target="_blank" href="/partners/es/docs/getting-started-agency-onboarding#qué-significa-obtener-el-permiso-de-un-marketer">¿Qué significa obtener el permiso de un marketer</Anchor>?
+* Se otorgan permisos para la aplicación actualmente seleccionada.
 
-#### Ad network permissions
+#### Permisos de ad network
 
-Turning on **Ad network permissions** allows the ad network access to your dashboard and enables granting additional permissions, as detailed in the table below.
+Al activar los **permisos de ad network**, la ad network puede acceder a tu dashboard y gestionar permisos adicionales, como se detalla en la tabla siguiente.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Any access permissions are restricted to data owned by the ad network.
+> Cualquier permiso de acceso se restringe a los datos que pertenecen a la ad network.
 
-**To grant permissions to an ad network and their team members:**
+**Para otorgar permisos a una ad network y a sus miembros de equipo:**
 
-1. Turn on **Ad network permissions**.
+1. Activa los **permisos de ad network**.
 
-   * Your app appears on the ad network's dashboard.
-   * The ad network admin has permissions to <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">see basic data about the app.</Anchor>
+   * Tu aplicación aparece en el dashboard de la ad network.
+   * El administrador de la ad network tiene permisos para <Anchor target="_blank" href="/marketers/es/docs/manage-data-access-permissions">ver datos básicos sobre la aplicación.</Anchor>
 
-   **Note:** Ad network team members are managed directly by the ad network. If you want a specific team member to have access, please contact your ad network. <Anchor target="_blank" href="/partners/docs/user-management-for-ad-networks#creating-a-user">Learn more</Anchor>
-2. Select additional permissions to grant to the ad network:
+   **Nota:** Los miembros del equipo de la ad network ahora son gestionados directamente por la ad network. Si deseas que un miembro específico del equipo tenga acceso, ponte en contacto con tu ad network. <Anchor target="_blank" href="/partners/es/docs/user-management-for-ad-networks#crear-un-usuario">Saber más</Anchor>
+2. Selecciona permisos adicionales para otorgar a la ad network:
 
-| **Permission** | **Capability granted** |
+| **Permiso** | **Capacidad otorgada** |
 | --- | --- |
-| <span id="configure-integration"></span>Configure integration | The ad network can change parameters in the integration tab, except for configuring in-app event postbacks. |
-| <span id="configure-inapp-event-postbacks"></span>Configure in-app event postbacks | The ad network can configure in-app event postbacks. This means they can create, define (map), and change postback settings.<br /><br />**Caution**! When both this permission and **Configure integration** are enabled simultaneously, the ad network has access to all events. This includes organic traffic and non-organic traffic from all media sources. |
-| <span id="access-retention-report"></span>Access retention and cohort reports | The ad network can access retention/cohort data created by the users brought by the ad network only. |
-| <span id="access-aggregate-loyal-users-data"></span>Access aggregate loyal users data | The ad network can access its own <Anchor target="_blank" href="/marketers/docs/about-a-loyal-user">loyal users</Anchor> metric. |
-| <span id="access-aggregate-conversions-data"></span>Access aggregate conversions data | The ad network can access their aggregate conversion events metric reports. This includes installs, re-engagements, re-installs, and re-attributions. Example: <Anchor target="_blank" href="/partners/docs/aggregated-campaign-performance-report-for-ad-networks">Aggregated campaign performance for ad networks report</Anchor>. |
-| <span id="access-aggregate-inapp-events-data"></span>Access aggregate in-app events data | The ad network can:<ul><li>Access in-app event data aggregate reports. The access includes all in-app events data of the selected app, including Protect360 in-app events data. This means they can access not just the events mapped in the postback configuration.</li><li>Access ad monetization data aggregate reports,  which may include ad monetization events from other media sources.</li></ul> |
-| <span id="view-validation-rules"></span>View validation rules | The ad network can view <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">validation rule</Anchor> details. |
-| <span id="access-aggregate-revenue-data"></span>Access aggregate revenue data | The ad network can access aggregate reports of in-app and ad revenue data attributed to users brought by the ad network. **Note:** This permission doesn't directly identify the ad revenue partner. However, if you've set the monetization event name to include the partner name, you may inadvertently disclose the identity of the monetization network. |
-| <span id="use-ad-spend-ingestion"></span>Use ad spend ingestion | The ad network can:<ul><li>Access the <Anchor target="_blank" href="/marketers/docs/import-cost-data">Ad Spend Ingestion</Anchor> window. This window displays only the apps they have permissions for.</li><li>Send ad spend files for ingestion.</li></ul> |
-| <span id="access-protect360-dashboard-raw-data"></span>Access Protect360 dashboard & raw data | The ad network can:<ul><li>Access their Protect360 dashboard (including <Anchor target="_blank" href="/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>).</li><li>Access Protect360, Validation Rules, and raw data if they are part of the subscription plan. ProtectLITE doesn't include access to raw data.</li></ul>**Note:** When you have a <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor> subscription, the ad network can see the full dashboard. Without a Protect360 subscription, they can see the lite dashboard. |
-| <span id="access-ad-revenue-raw-data"></span>Access ad revenue raw data | The ad network can access their <Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">ad revenue data to use for UA optimization</Anchor>.   <br />**Note:** This permission is only available for apps with an <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> subscription. |
+| <span id="configure-integration"></span>Configurar integración | La ad network puede modificar parámetros en la pestaña de integración, excepto para configurar los postbacks de eventos in-app. |
+| <span id="configure-inapp-event-postbacks"></span>Configura los postbacks de eventos in-app | La ad network puede configurar postbacks de eventos in-app. Esto implica que pueden crear, definir (mapear) y modificar configuraciones de postback.<br /><br />**¡Precaución**! **¡Importante**! Cuando este permiso y **Configurar integración** están habilitados a la vez, la ad network tiene acceso a todos los eventos. Esto incluye tráfico orgánico y tráfico no orgánico de todas las fuentes de medios. |
+| <span id="access-retention-report"></span>Acceso a reportes de retención y cohorte | La ad network solo puede acceder a los datos de retención/cohorte creados por los usuarios que haya traído la ad network. |
+| <span id="access-aggregate-loyal-users-data"></span>Acceso a datos agregados de usuarios leales | <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el dashboard de estado de la integración de costos (e ingresos por publicidad) o en el dashboard de la ad network individual. |
+| <span id="access-aggregate-conversions-data"></span>Acceso a datos de conversiones agregadas | La ad network puede acceder a sus reportes de métricas de eventos de conversión agregados. Esto incluye instalaciones, re-engagements, reinstalaciones y reatribuciones. Ejemplo: <Anchor target="_blank" href="/partners/es/docs/aggregated-campaign-performance-report-for-ad-networks">Reporte sobre el rendimiento agregado de las campañas para las ad networks</Anchor>. |
+| <span id="access-aggregate-inapp-events-data"></span>Acceso a datos agregados de eventos in-app | La ad network puede:<ul><li>Acceso a reportes agregados de datos de eventos in-app. El acceso incluye todos los datos de eventos in-app seleccionada, incluidos los datos de eventos in-app Protect360. Esto significa que pueden acceder no solo a los eventos mapeados en la configuración del postback.</li><li>Acceder a reportes agregados de datos de monetización de anuncios, que pueden incluir eventos de monetización de anuncios de otras fuentes de medios.</li></ul> |
+| <span id="view-validation-rules"></span>Ver reglas de validación | La ad network puede ver <Anchor target="_blank" href="/marketers/es/docs/implement-validation-rules-to-prevent-fraud">los detalles de las reglas de validación</Anchor>. |
+| <span id="access-aggregate-revenue-data"></span>Acceder a los datos de ingresos agregados | La ad network puede acceder a reportes agregados de datos de ingresos, tanto publicitarios como in-app, atribuidos a los usuarios traídos por la ad network. **Nota:** Este permiso no identifica directamente al partner de ingresos publicitarios. Sin embargo, si has configurado el nombre del evento de monetización para incluir el nombre del partner, podrías revelar inadvertidamente la identidad de la red de monetización. |
+| <span id="use-ad-spend-ingestion"></span>Utilizar la ingestión de gasto publicitario | La ad network puede:<ul><li>Acceder a la ventana de <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Ingestión de Gasto Publicitario</Anchor>. Esta ventana muestra únicamente las aplicaciones para las que tienen permisos.</li><li>Enviar archivos de gasto publicitario para su ingestión.</li></ul> |
+| <span id="access-protect360-dashboard-raw-data"></span>Accede a la consola Protect360 y raw data | La ad network puede:<ul><li>Acceder a su dashboard de Protect360 (incluyendo <Anchor target="_blank" href="/marketers/es/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>).</li><li>Accede a Protect360, Reglas de Validación, y raw data si forman parte del plan de suscripción. ProtectLITE no incluye acceso a raw data.</li></ul>**Nota:** Cuando tienes una suscripción a <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide">Protect360</Anchor>, la ad network puede ver el dashboard completo. Sin una suscripción a Protect360, solo pueden ver el dashboard Lite. |
+| <span id="access-ad-revenue-raw-data"></span>Acceder a los raw data de los ingresos por publicidad | La ad network puede acceder a sus <Anchor target="_blank" href="/partners/es/docs/ad-revenue-signals-for-ua-ad-networks">datos de ingresos publicitarios para utilizarlos en la optimización de UA</Anchor>.   <br />**Nota:** Este permiso solo está disponible para aplicaciones con una suscripción a <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor>. |
 
-#### Agency permissions
+#### Permisos de la agencia
 
-Read all about <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer">what agencies can do</Anchor> when granted permissions.
+Lee todo sobre <Anchor target="_blank" href="/partners/es/docs/getting-started-agency-onboarding#qué-significa-obtener-el-permiso-de-un-marketer">lo que pueden hacer las agencias</Anchor> cuando se les conceden permisos.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> When working with agencies, turning off an integrated partner does not automatically disable certain attribution capabilities for the agencies linked to that partner:
+> Al trabajar con agencias, desactivar un partner integrado no desactiva automáticamente ciertas capacidades de atribución para las agencias vinculadas a ese partner:
 >
-> To fully deactivate these capabilities for agencies, the advertiser must manually turn off the following settings before deactivating the partner:
+> Para desactivar completamente estas funcionalidades para las agencias, el anunciante debe desactivar manualmente las siguientes configuraciones antes de desactivar al partner:
 >
-> 1. Install view-through attribution
-> 2. Cross-platform equal attribution priority
+> 1. Atribución view-through en la instalación
+> 2. Igual prioridad de atribución multiplataforma
 >
-> Only after disabling these toggles should the advertiser proceed to deactivate the partner.
+> Solo después de desactivar estas opciones, el anunciante deberá proceder a desactivar al partner.
 >
-> **Note:** If the advertiser deactivates the partner without first turning off these settings, the agencies may continue to use these attribution capabilities.
+> **Nota:** Si el anunciante desactiva al partner sin antes desactivar estas configuraciones, las agencias podrán seguir utilizando estas capacidades de atribución.
 
-**Caution:** Agency installs occurring while the control is disabled are not attributed to the agency and don't show up on the agency's dashboard and data. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#agency-permissions">agency activation</Anchor>.
+**Precaución:** Las instalaciones realizadas por la agencia mientras el control está desactivado no se atribuyen a la agencia y no aparecen en el dashboard de la agencia ni en sus datos. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#permisos-de-la-agencia">activación de agencias</Anchor>.
 
-**To grant permissions to an agency:**
+**Para otorgar permisos a una agencia:**
 
-1. Turn on **Agency permissions**.
-2. Select the permissions to grant to the agency:
+1. Activa los **permisos de agencia**.
+2. Selecciona los permisos que quieres otorgar a la agencia:
 
-| **Permission** | **Capability granted** |
+| **Permiso** | **Capacidad otorgada** |
 | --- | --- |
-| <span id="change-advanced-privacy-configuration"></span>Change Advanced Privacy configuration | The agency can change an ad network's <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Advanced Privacy data sharing</Anchor> setting.   <br />**Note:** This permission isn't applicable to TikTok for Business and Snapchat. For these integrations, the Advanced Privacy setting is grayed out, reflecting the advertiser's setting. |
-| <span id="access-retention-and-cohort-reports"></span>Access retention and cohort reports | The agency can access retention/cohort data created by the users brought by the agency only. |
-| <span id="access-aggregate-organic-data"></span>Access aggregate organic data | The agency can access aggregate organic data |
-| <span id="view-validation-rules::6872643b"></span>View validation rules | The agency can view validation rule details. |
-| <span id="add-validation-rules"></span>Add validation rules | The agency can add and edit validation rules. Available when **View validation rules** is turned on.   <br />**Note**: Agencies can't edit rules created by advertisers. |
-| <span id="access-rawdata-reports"></span>Access raw-data reports | The agency can access raw data reports for traffic attributed to the agency. Advertisers can't limit events an agency can view in the reports. |
-| <span id="access-protect360-dashboard-raw-data::dd9829fd"></span>Access Protect360 dashboard & raw data | The agency can:<ul><li>Access your Protect360 aggregate dashboard</li><li>Access Protect360, Validation Rules, and raw data if they are part of the subscription plan</li></ul>**Note:** For advertisers that work with ad networks through an agency, in order for both the ad network and agency to access data, the advertiser must integrate both the agency and ad network in AppsFlyer and grant them both permission to access data. If only the agency is integrated and granted permission, the ad network does not have access to the data. |
-| <span id="configure-inapp-event-postbacks::8743ba60"></span>Configure in-app event postbacks | The agency can configure in-app event postbacks of specific events you select:<ul><li>**Add event:** From the drop-down menu, select events you approve granting the agency permission.</li></ul>The following options apply to the events you selected:<ul><li>**Send events revenue:** When turned on, the agency can configure sending events including their monetary value.</li><li>**Sending option:**<ul><li>**This partner only:** When selected, the agency can configure sending postbacks only for events attributed to their own brought traffic</li><li>**All media sources, including organic:** When selected, the agency can configure sending postbacks for events attributed to all other media sources, agencies, and organic users.</li></ul></li></ul> |
+| <span id="change-advanced-privacy-configuration"></span>Cambiar la configuración de privacidad avanzada | La agencia puede cambiar la configuración de <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">compartición de datos de privacidad avanzada de una ad network</Anchor>.   <br />**Nota:** Este permiso no es aplicable a TikTok for Business ni a Snapchat. Para estas integraciones, la configuración de Privacidad Avanzada aparece deshabilitada, reflejando la configuración del anunciante. |
+| <span id="access-retention-and-cohort-reports"></span>Acceso a reportes de retención y cohorte | La agencia puede acceder a los datos de retención y cohorte creados solo por los usuarios que lleve la agencia. |
+| <span id="access-aggregate-organic-data"></span>Accede a datos orgánicos agregados | La agencia puede acceder a datos orgánicos agregados |
+| <span id="view-validation-rules::6872643b"></span>Ver reglas de validación | La agencia puede ver los detalles de las reglas de validación. |
+| <span id="add-validation-rules"></span>Agregar reglas de validación | La agencia puede agregar y editar reglas de validación. Disponible cuando **Ver reglas de validación** está activado.   <br />**Nota**: Las agencias no pueden editar las reglas creadas por los anunciantes. |
+| <span id="access-rawdata-reports"></span>Accede a reportes de datos originales | La agencia puede acceder a los reportes de raw data para el tráfico atribuido a la agencia. Los anunciantes no pueden limitar los eventos que una agencia puede ver en los reportes. |
+| <span id="access-protect360-dashboard-raw-data::dd9829fd"></span>Accede a la consola Protect360 y raw data | La agencia puede:<ul><li>Acceder a tu dashboard agregado de Protect360</li><li>Acceder a Protect360, las reglas de validación y el raw data si forman parte del plan de suscripción.</li></ul>**Nota:** Para que los anunciantes que colaboran con ad networks a través de una agencia, para que tanto la ad network como la agencia puedan acceder a los datos, el anunciante debe integrar tanto la agencia como la ad network en AppsFlyer y concederles a ambas permiso para acceder a los datos. Si solo la agencia está integrada y se le otorga el permiso, la ad network no tiene acceso a los datos. |
+| <span id="configure-inapp-event-postbacks::8743ba60"></span>Configura los postbacks de eventos in-app | La agencia puede configurar el envío de postbacks de eventos específicos in-app que puedes seleccionar:<ul><li>**Añadir evento:** En el menú desplegable, seleccione los eventos para los que aprueba otorgar permiso a la agencia.</li></ul>Las siguientes opciones se aplican a los eventos seleccionados:<ul><li>**Enviar ingresos generados por eventos:** Cuando está activado, la agencia puede configurar el envío de eventos, incluyendo su valor monetario.</li><li>**Opción de envío:**<ul><li>**Sólo este partner:** Cuando se selecciona, la agencia puede configurar el envío de postbacks solo para eventos atribuidos a su propio tráfico traído.</li><li>**Todas las fuentes de medios, incluidas las orgánicas:** Cuando se selecciona, la agencia puede configurar el envío de postbacks para eventos atribuidos a todas las demás fuentes de medios, agencias y usuarios orgánicos.</li></ul></li></ul> |
 
-Learn more about <Anchor target="_blank" href="/partners/docs/about-agency-accounts#agency-access-to-marketer-data">working with agencies</Anchor>.
+Aprenda más sobre <Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#acceso-de-la-agencia-a-los-datos-de-los-comercializadores">cómo trabajar con agencias</Anchor>.
 
 </Accordion>
 
-## Test the integration
+## Pruebe la integración
 
-After completing the partner integration, and before you start running campaigns with the newly added partner, it's important to test the integration. Mistakes are most likely to occur during setup. Testing in advance avoids the risk of spending considerable resources, only to discover your attribution data is missing or wrong. 
+Después de completar la integración con el partner, y antes de iniciar campañas con el nuevo partner agregado, es importante probar la integración. Es más probable que se produzcan errores durante la configuración inicial. Probar con anticipación evita el riesgo de gastar recursos considerables, solo para descubrir que los datos de atribución faltan o son incorrectos. 
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Before testing the integration, make sure to first <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers">test the app for basic SDK integration,</Anchor> including organic and non-organic installs.
+> Antes de probar la integración, asegúrate de primero <Anchor target="_blank" href="/marketers/es/docs/testing-the-sdk-integration-for-marketers">probar la aplicación para la integración básica del SDK,</Anchor> incluyendo las instalaciones orgánicas y no orgánicas.
 
 <div id="test-the-attribution-link-for-nonsrns" />
 
-<Accordion title="Test the attribution link for non-SRNs">
+<Accordion title="Pruebe el enlace de atribución para redes no SRN">
 
-Non-SRN ad networks, which consist of 99.5% of integrated ad networks, use AppsFlyer attribution links. Similarly, owned media attribution is performed by using AppsFlyer <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLink links</Anchor>.
+Las ad networks no SRN, que constituyen el 99,5% de las ad networks integradas, utilizan enlaces de atribución de AppsFlyer. De manera similar, la atribución de medios propios se realiza mediante los enlaces <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLink</Anchor> de AppsFlyer.
 
-Since correct attribution depends on the parameters of the attribution links, test these links before you start to run a campaign with a non-SRN ad network or a custom attribution link.
+Dado que la atribución correcta depende de los parámetros de los enlaces, prueba estos enlaces antes de iniciar una campaña con una ad network que no sea SRN o un enlace de atribución personalizado.
 
-**To test attribution links:**
+**Para probar los enlaces de atribución:**
 
-1. Create an [attribution link](/docs/set-up-an-integrated-partner#attribution-link-tab).
-2. Send the new attribution link to your <Anchor target="_blank" href="/marketers/docs/registering-test-devices">registered</Anchor> test device (via email or QR code).
-3. Click on the link, make sure you're redirected to the app store.
-4. Install the app.
-5. Launch the app.
-6. Check if the install appears in the AppsFlyer dashboard under the partner's media source name. Allow up to 30 minutes for the install to appear in the dashboard.
-7. Drill down to the campaign level (by selecting the partner in the **Media source filter** on the top of the overview page) to check the install appears under the correct campaign name.
-8. If necessary, continue to drill down and check the ad set and single ad levels too.
+1. Cree un [enlace de atribución](/docs/set-up-an-integrated-partner#attribution-link-tab).
+2. Envíe el nuevo enlace de atribución a su dispositivo de prueba <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices">registrado</Anchor> (por correo electrónico o código QR).
+3. Haga clic en el enlace y asegúrese de ser redirigido a la tienda de aplicaciones.
+4. Instale la aplicación.
+5. Inicie la aplicación.
+6. Comprueba si la instalación aparece en el dashboard de AppsFlyer bajo el nombre de la fuente de medios del partner. Permite hasta 30 minutos para que la instalación se muestre en el dashboard.
+7. Desglosa hasta el nivel de campaña (seleccionando al partner en el **filtro de fuente de medios** en la parte superior de la página de resumen) para asegurarte de que la instalación aparece bajo el nombre correcto de la campaña.
+8. Si es necesario, continúa desglosando y revisa también los niveles de conjunto de anuncios y de anuncios individuales.
 
 </Accordion>
 
 <div id="test-the-srn-integration" />
 
-<Accordion title="Test the SRN integration">
+<Accordion title="Prueba la integración de SRN">
 
-SRNs such as Meta ads, Apple Ads, and Google Ads don't rely on external attribution links for attribution purposes. Instead, SRNs receive queries from AppsFlyer, attribute themselves, and return the answer. Therefore, it isn't feasible to test the integration separately from the network's system as with regular ad networks. You must separately test the integration with each SRN you work with.
+Las SRNs, como Meta Ads, Apple Search Ads y Google Ads, no dependen de enlaces de atribución externos para efectos de atribución. En su lugar, las SRN reciben consultas de AppsFlyer, se atribuyen a sí mismas y devuelven la respuesta. Por ello, no es viable probar la integración separadamente del sistema de la red, como se hace con las ad networks normales. Debes probar la integración con cada SRN con el que trabajes de forma independiente.
 
-**To test SRN integration**[:](/docs/set-up-an-integrated-partner)
+**Para probar la integración de SRN**[:](/docs/set-up-an-integrated-partner)
 
-1. Perform the full SRN setup on AppsFlyer in accordance with the <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">specific SRN setup guide</Anchor>.
-2. Run a new low-budget campaign with the SRN partner.
-3. When the partner dashboard displays new installs check if they appear in the AppsFlyer dashboard under the partner's media source name.
-4. In the Overview dashboard, drill down to the campaign level, by selecting the partner in the **Media source filter**, to check that the install appears under the correct campaign name. Allow up to 30 minutes for the install to appear in the dashboard.
-5. If necessary, continue to drill down to check the adset and single ad levels.
+1. Realiza la configuración completa de SRN en AppsFlyer según la <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#srns-integradas-con-appsflyer">guía específica de configuración de SRN</Anchor>.
+2. Lanza una nueva campaña de bajo presupuesto con el partner SRN.
+3. Cuando el dashboard del partner muestre nuevas instalaciones, verifica si aparecen en el dashboard de AppsFlyer bajo el nombre de la fuente de medios del partner.
+4. En el dashboard de resumen, desglosa hasta el nivel de campaña seleccionando al partner en el **filtro de fuente de medios**, para comprobar que la instalación se muestra bajo el nombre correcto de la campaña. Permite hasta 30 minutos para que la instalación se muestre en el dashboard.
+5. Si es necesario, continúa desglosando para verificar los niveles de conjunto de anuncios y de anuncios individuales.
 
-If all is well you can start running new high-budget campaigns with the partner. It is sufficient to test integration once per SRN partner. Meaning, there's no need to test on a per campaign basis.
+Si todo está en orden, puedes comenzar a ejecutar nuevas campañas de alto presupuesto con el partner. Es suficiente probar la integración una vez por cada partner SRN. Es decir, no es necesario probar en cada campaña.
 
 </Accordion>
 
 <div id="test-the-raw-data" />
 
-<Accordion title="Test the raw data">
+<Accordion title="Prueba los datos en bruto">
 
-If your subscription plan with AppsFlyer includes access to raw data, you should test raw data.
+Si tu plan de suscripción con AppsFlyer incluye acceso a datos en bruto, deberías probarlos.
 
-**To test raw data**:
+**Para probar datos en bruto**:
 
-1. After performing the test mentioned previously, go to **Reports** > <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">**Export Data**</Anchor>.
-2. Select the tested media source.
-3. Allow up to 15 minutes from the install and then download the Installs report.
-4. Check the install records from the partner exist and include parameters such as the media source, campaign name, touch time and type, device ID (if applicable), agency name (called "Partner" in the report), and so on.
+1. Después de realizar la prueba mencionada anteriormente, ve a **reportes** > <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">**Exportar datos**</Anchor>.
+2. Selecciona la fuente de medios probada.
+3. Espere hasta 15 minutos después de la instalación y luego descargue el reporte de instalaciones.
+4. Verifica que existan registros de instalación del partner y que incluyan parámetros como la fuente de medios, el nombre de la campaña, el momento y tipo de contacto, el ID del dispositivo (si aplica), el nombre de la agencia (denominada "partner" en el reporte) y otros.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Some ad networks require special actions to enable the collection of raw user-level data.
+> Algunas ad networks requieren acciones específicas para habilitar la recopilación de raw data a nivel de usuario.
 >
-> If you see a new install on the dashboard but don't see it in the raw data, consult the specific Help Center guide for the ad network, for example - <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#do-you-make-twitters-raw-data-available-to-agencies">X Ads</Anchor>.
+> Si observas una nueva instalación en el dashboard pero no la ves en los raw-data, consulta la guía específica del Centro de Ayuda para la ad network, por ejemplo: <Anchor target="_blank" href="/marketers/es/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#do-you-make-twitters-raw-data-available-to-agencies">X Ads</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="01H80XGTBQ6MAK3VG0X6QMAYMP=overview 01H80XGTBQPPZV7WR5JBHQFB0B=partner-types-in-the-ecosystem 01H80XGTBQ4CPMBRVSMM7TD4VD=partners-in-the-marketplace 01H80XGTBQRJ78XCGNZBTJVYEQ=invite-new-partners-to-appsflyer 01H80XGTBQ8VF6V9WARZRECWVR=your-integrated-partners 01H80XGTBQJQYD3R46H95WVVM0=note 01H80XGTBQ5BE24X219BVZBMDG=about-the-integrated-partner-page 01H80XGTBQPP74G38YNNYVXWP2=applicable-settings-tabs-per-partner-type set-up-a-partner-nonsrn=set-up-a-partner-non-srn 01H80XGTBQXNQ7SFXZ5PBQGS1V=set-up-a-partner-non-srn 01JDM949M75Q3BAG6M65DYMHZT=important 01H80XGTBQZXZARZCM61CMG0K3=note-1 01H80XGTBQB9T22GQ7CSHS2S1X=integration-tab integration-tab-sections=integration-sections 01H80XGTBQ0531M2RS3DH7E4Z0=integration-sections d-general%20settings=d-general-settings default%20postbacks=default-postbacks 01H80XGTBRT41FGP5107G96TWC=attribution-link-tab 01H80XGTBRPENCTCRK8PPYSCGX=attribution-link-parameters attribution-link-parameters::3874dfb8=attribution-link-parameters-1 01H80XGTBR8630SEV80K9RD6V9=attribution-link-parameters-1 01H80XGTBRT57QMPRENYSS81Z3=retargeting-settings clickthrough-attribution=click-through-attribution 01H80XGTBREZTJ6B0Y08JCKN1E=click-through-attribution viewthrough-attribution-lookback-window=view-through-attribution-lookback-window 01H80XGTBRXC1YYX4FW94NDR2Z=view-through-attribution-lookback-window 01H80XGTBRERTJ9XHGDV416T7V=cost-tab 01H80XGTBR54TQ0DNY1JR36GXN=note-2 01H80XGTBRV6BHWS76HWHK933M=enabling-cost-data-by-api 01H80XGTBRPWREFYFXA0A6VD47=cost-data-sync-status 01H80XGTBRJ1AKX2Q7WPXFVA49=ad-revenue-tab 01H80XGTBRHE9PPRA9X46M4TGZ=enable-ad-revenue-attribution 01H80XGTBRNT4K4ZNPKVV25ESJ=ad-revenue-api-status-messages 01H80XGTBRGXS97JMG45QR4BEQ=permissions-tab 01H80XGTBRS9BTT2F8F95BCE9Z=ad-network-permissions h_01HGFD78GRX9P2G58W21QZN4X7=note-3 01H80XGTBRTVP407AAA77N090E=agency-permissions h_01KC9MDDRPTB05PV6NCGZVFRMJ=important-1 01H80XGTBSEWPHCPQF29XD6Y4W=test-the-integration 01H80XGTBSTHG2FC2M31F83RGK=note-4 01H80XGTBS4P06757QXHDKYAHT=test-the-attribution-link-for-nonsrns 01H80XGTBS2K9SPQ1MTAV7GP2H=test-the-srn-integration 01H80XGTBSTBV4RC3V279WNNB1=test-the-raw-data 01H80XGTBSN0VAX76XW9Y77T04=important-2" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general 01H80XGTBQ6MAK3VG0X6QMAYMP=visi%C3%B3n-general 01H80XGTBQPPZV7WR5JBHQFB0B=partner-types-in-the-ecosystem 01H80XGTBQ4CPMBRVSMM7TD4VD=partners-in-the-marketplace invite-new-partners-to-appsflyer=invita-a-nuevos-partners-a-appsflyer 01H80XGTBQRJ78XCGNZBTJVYEQ=invita-a-nuevos-partners-a-appsflyer 01H80XGTBQ8VF6V9WARZRECWVR=your-integrated-partners 01H80XGTBQJQYD3R46H95WVVM0=nota 01H80XGTBQ5BE24X219BVZBMDG=about-the-integrated-partner-page applicable-settings-tabs-per-partner-type=pesta%C3%B1as-de-configuraci%C3%B3n-aplicables-por-tipo-de-partner 01H80XGTBQPP74G38YNNYVXWP2=pesta%C3%B1as-de-configuraci%C3%B3n-aplicables-por-tipo-de-partner set-up-a-partner-nonsrn=configurar-un-partner-no-srn 01H80XGTBQXNQ7SFXZ5PBQGS1V=configurar-un-partner-no-srn 01JDM949M75Q3BAG6M65DYMHZT=importante 01H80XGTBQZXZARZCM61CMG0K3=nota-1 01H80XGTBQB9T22GQ7CSHS2S1X=integration-tab integration-tab-sections=secciones-de-integraci%C3%B3n 01H80XGTBQ0531M2RS3DH7E4Z0=secciones-de-integraci%C3%B3n d-general%20settings=d-general-settings default%20postbacks=default-postbacks 01H80XGTBQ4MPGGKSZW0D9GG9H=nota-2 01H80XGTBRT41FGP5107G96TWC=attribution-link-tab attribution-link-parameters=par%C3%A1metros-del-enlace-de-atribuci%C3%B3n 01H80XGTBRPENCTCRK8PPYSCGX=par%C3%A1metros-del-enlace-de-atribuci%C3%B3n attribution-link-parameters::3874dfb8=par%C3%A1metros-del-enlace-de-atribuci%C3%B3n-1 01H80XGTBR8630SEV80K9RD6V9=par%C3%A1metros-del-enlace-de-atribuci%C3%B3n-1 retargeting-settings=configuraci%C3%B3n-de-retargeting 01H80XGTBRT57QMPRENYSS81Z3=configuraci%C3%B3n-de-retargeting clickthrough-attribution=atribuci%C3%B3n-por-clic 01H80XGTBREZTJ6B0Y08JCKN1E=atribuci%C3%B3n-por-clic viewthrough-attribution-lookback-window=ventana-retrospectiva-de-atribuci%C3%B3n-por-visualizaci%C3%B3n 01H80XGTBRXC1YYX4FW94NDR2Z=ventana-retrospectiva-de-atribuci%C3%B3n-por-visualizaci%C3%B3n 01H80XGTBRERTJ9XHGDV416T7V=cost-tab 01H80XGTBR54TQ0DNY1JR36GXN=nota-3 enabling-cost-data-by-api=habilitaci%C3%B3n-de-datos-de-costos-mediante-api 01H80XGTBRV6BHWS76HWHK933M=habilitaci%C3%B3n-de-datos-de-costos-mediante-api cost-data-sync-status=estado-de-sincronismo-de-datos-de-costos 01H80XGTBRPWREFYFXA0A6VD47=estado-de-sincronismo-de-datos-de-costos 01H80XGTBRJ1AKX2Q7WPXFVA49=ad-revenue-tab enable-ad-revenue-attribution=activar-la-atribuci%C3%B3n-de-ingresos-por-publicidad 01H80XGTBRHE9PPRA9X46M4TGZ=activar-la-atribuci%C3%B3n-de-ingresos-por-publicidad ad-revenue-api-status-messages=mensajes-de-estado-de-la-api-de-ingresos-por-publicidad 01H80XGTBRNT4K4ZNPKVV25ESJ=mensajes-de-estado-de-la-api-de-ingresos-por-publicidad 01H80XGTBRGXS97JMG45QR4BEQ=permissions-tab ad-network-permissions=permisos-de-ad-network 01H80XGTBRS9BTT2F8F95BCE9Z=permisos-de-ad-network h_01HGFD78GRX9P2G58W21QZN4X7=nota-4 agency-permissions=permisos-de-la-agencia 01H80XGTBRTVP407AAA77N090E=permisos-de-la-agencia h_01KC9MDDRPTB05PV6NCGZVFRMJ=importante-1 test-the-integration=pruebe-la-integraci%C3%B3n 01H80XGTBSEWPHCPQF29XD6Y4W=pruebe-la-integraci%C3%B3n 01H80XGTBSTHG2FC2M31F83RGK=nota-5 01H80XGTBS4P06757QXHDKYAHT=test-the-attribution-link-for-nonsrns 01H80XGTBS2K9SPQ1MTAV7GP2H=test-the-srn-integration 01H80XGTBSTBV4RC3V279WNNB1=test-the-raw-data 01H80XGTBSN0VAX76XW9Y77T04=importante-2" />

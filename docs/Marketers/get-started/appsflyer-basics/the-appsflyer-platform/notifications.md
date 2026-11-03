@@ -1,5 +1,5 @@
 ---
-title: Notifications
+title: Notificaciones
 metadata:
   keywords:
     - Advertisers
@@ -13,146 +13,146 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2025-03-24T10:10:37Z'
-  edited_at: '2026-01-25T14:51:04Z'
+  edited_at: '2026-08-12T11:58:08Z'
   id: 33732395637905
-  locale: en-us
+  locale: es
   section: The AppsFlyer platform
   section_id: 6551361489297
-  url: https://support.appsflyer.com/hc/en-us/articles/33732395637905-Notifications
+  url: https://support.appsflyer.com/hc/es/articles/33732395637905
 ---
-> **At a glance:** Manage critical AppsFlyer account notifications from the platform.
+> **En resumen:** Gestiona las notificaciones críticas de la cuenta de AppsFlyer desde la plataforma.
 
-You can select to receive notifications from AppsFlyer when certain events occur in your account. In your **notification preferences**, you can opt in or out of receiving these notifications.
+Puedes optar por recibir notificaciones por el correo electrónico de AppsFlyer cuando se produzcan ciertos eventos en tu cuenta. En tus **preferencias de notificación**, puedes optar por recibir o no recibir estas notificaciones.
 
-## Accessing and configuring notification preferences
+## Accediendo y configurando las preferencias de notificación
 
-### To access notifications
+### Para acceder a las notificaciones
 
-* From the top bar, open the account menu (email address dropdown) > **Notifications.**
-* From the bell icon within the platform > **Setting icon.**
+* Desde la barra superior, abre el menú de la cuenta (menú desplegable de la dirección de correo electrónico) > Notificaciones****
+* Desde el ícono de la campana dentro de la plataforma > **Ícono de configuración.**
 
-### Configuring notifications
+### Configuración de notificaciones
 
-To opt in to receive a notification, turn it on from the list of available notifications.
+Para optar por recibir una notificación, actívalas de la lista de notificaciones disponibles.
 
-To stop receiving it, turn it off.
+Para dejar de recibirlos, debes desactivarlas.
 
-Note: Some notifications are available only via email. The Email-only Notification tab contains these [notification](/docs/notifications#email-only-notifications) settings. 
+Nota: Algunas notificaciones están disponibles solo por correo electrónico. La pestaña de notificación solo por correo electrónico contiene estas configuraciones de [notificaciones](/docs/notifications#notificaciones-solo-por-correo-electrónico).
 
-## What notifications can I receive?
+## ¿Qué notificaciones puedo recibir?
 
-The following notification categories are available:
+Las siguientes categorías de notificación están disponibles:
 
-* Account and plan management
-* Billing or transactional issues
-* Privacy related alerts
-* Insights and configurations
-* Collaborative features
-* AI capabilities
+* Gestión de cuentas y planes
+* Problemas de facturación o transacciones
+* Alertas relacionadas con la privacidad
+* Insights y configuración
+* Características de colaboración
+* Capacidades de IA
 
-Note: Some notifications are available for email only. More information can be found [here](/docs/notifications#email-notification).
+Nota: Algunas notificaciones están disponibles solo por correo electrónico. Puedes encontrar más información [aquí](/docs/notifications#email-notification).
 
-To opt in to a particular notification, it must be:
+Para optar por una notificación en particular, debe:
 
-* **Available in your company's AppsFlyer account.** If a notification is not available in your company's account, the switch to turn it on is not visible.
-  * For example, if your company does not subscribe to the AppsFlyer Push API feature, the switch related to this feature is not visible.
-* **Available to you, based on your user permissions.** If a notification is related to a capability or feature to which you have not been assigned permissions, the switch to turn it on and off is disabled.
-  * For example, if you do not have permission to add or edit integrated partners, the switch to turn on or off a notification related to integrated partner configuration is disabled.
+* **Estar disponible en la cuenta de AppsFlyer de tu empresa.** Si no hay una notificación disponible en la cuenta de tu empresa, no se verá el botón para activarla.
+  * Por ejemplo, si tu empresa no se suscribe a la función de Push API de AppsFlyer, el conmutador relacionado con esta función no será visible.
+* **Disponible para ti, según tus permisos de usuario.** Si una notificación está relacionada con una capacidad o función a la que no se te han asignado permisos, el botón para activar y desactivar estará deshabilitado.
+  * * Por ejemplo, si no tienes permisos para agregar o editar partners integrados, el botón para activar o desactivar una notificación relacionada con la configuración de partners integrados está deshabilitado.
 
-## When will I receive notifications?
+## ¿Cuándo recibiré notificaciones?
 
-If you have opted in to receive a particular notification, you will receive a notification when the trigger event for that notification occurs, but **only when** that trigger event is applicable to **apps and media sources** to which you have permissions.
+Si has optado por recibir una notificación en particular, recibirás un correo electrónico cuando se produzca el evento desencadenante de esa notificación, pero **solo cuando** ese evento desencadenante sea aplicable a las **aplicaciones y fuentes de medios** para las que tengas permisos.
 
 <div id="example" />
 
-<Accordion title="Example">
+<Accordion title="Ejemplo">
 
-Consider the following scenario:
+Considera la siguiente situación:
 
-* Your company has 3 apps in AppsFlyer: App A, App B, and App C.
-* Each app has active integrations with 2 media sources (integrated partners): Google Ads and TikTok.
-* Your AppsFlyer user has permission to:
-  * Add or edit integrated partners
-  * Access data for App C
-  * Access data for Google Ads
-* You have opted in to receive a notification when there are changes to integrated partner configurations.
+* Tu empresa tiene 3 aplicaciones en AppsFlyer: Aplicación A, Aplicación B y Aplicación C.
+* Cada aplicación tiene integraciones activas con 2 fuentes de medios (partners integrados): Google Ads y TikTok.
+* Tu usuario de AppsFlyer tiene permisos para:
+  * Agregar/editar partners integrados
+  * Acceso a datos para la Aplicación C
+  * Acceso a datos para Google Ads
+* Has optado por recibir una notificación cuando haya cambios en las configuraciones de los partners integrados.
 
-Result:
+Resultado:
 
-* You **won't** receive notifications when there are integrated partner configuration changes for Apps A and B.
-* You **won't** receive notifications when there are TikTok configuration changes for App C.
-* You **will** receive notifications when there are Google Ads configuration changes for App C.
+* **No** recibirás notificaciones cuando haya cambios en la configuración del partner integrado para las Aplicaciones A y B.
+* **No** recibirás notificaciones cuando haya cambios en la configuración de TikTok para la Aplicación C.
+* **Recibirás** notificaciones cuando haya cambios en la configuración de Google Ads para la Aplicación C.
 
 </Accordion>
 
-## Where will I receive notifications?
+## ¿Cuándo recibiré notificaciones?
 
-Notifications can be received via the [bell](/docs/notifications#bell-notification) icon, [email](/docs/notifications#email-notification), or [Slack](/docs/notifications#slack-notification) integration. 
+Las notificaciones se pueden recibir a través del icono de [campana](/docs/notifications#bell-notification), [correo electrónico](/docs/notifications#email-notification) o integración de [Slack](/docs/notifications#slack-notification).
 
 <div id="bell-notification" />
 
-<Accordion title="Bell notification">
+<Accordion title="Notificación de campana">
 
-The bell icon notification can be found in the top bar to the left of your account menu (email address dropdown).
+El icono de notificación de la campana se puede encontrar en la barra superior a la izquierda de tu menú de cuenta (desplegable de dirección de correo electrónico).
 
-Clicking on the gear icon takes you to the [notification preferences](/docs/notifications#accessing-and-configuring-notification-preferences).
+Hacer clic en el ícono de engranaje te lleva a las [preferencias de notificación](/docs/notifications#accediendo-y-configurando-las-preferencias-de-notificación).
 
 </Accordion>
 
 <div id="email-notification" />
 
-<Accordion title="Email notification">
+<Accordion title="Notificaciones por correo electrónico">
 
-Email notifications are sent to the email address associated with your AppsFlyer account.
+Las notificaciones se envían por correo electrónico a la dirección de correo electrónico asociada con tu cuenta de AppsFlyer.
 
-Some notifications are available only via email. These notification settings can be found in the **Email-only Notification** tab.
+Algunas notificaciones están disponibles solo por correo electrónico. Estos ajustes de notificación se pueden encontrar en la pestaña **Notificación solo por correo electrónico**.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> All AppsFlyer notification emails are sent from [notifications@appsflyer.com](mailto:notifications@appsflyer.com)
+> Todos los correos electrónicos de notificación de AppsFlyer se envían desde [notifications@appsflyer.com](mailto:notifications@appsflyer.com)
 
-#### Email-only notifications
+#### Notificaciones solo por correo electrónico
 
-The following table lists available **email-only notifications** and the events that trigger them:
+La siguiente tabla enumera las notificaciones disponibles y los eventos que las activan:
 
-| Notification | Trigger event |
+| Notificación | Activar evento |
 | --- | --- |
-| Integrated partner configuration changes | <ul><li>A new integrated partner is activated</li><li>An existing integrated partner is deactivated</li><li>A change is made to the settings of an existing integrated partner</li></ul> |
-| Push API failures | 5% or more of an app's Push API messages fail within a 12-hour period |
-| Audiences connection failures | There are audience partner connection failures that require your attention |
-| Ad revenue suspended integrations | An ad revenue integration is suspended after having a warning status for more than 30 days |
-| Ad revenue data failure | An ad revenue integration isn't receiving data |
-| Integrated partner cost configuration changes | A team member changes cost integration settings |
-| SKAN connection failures | There is an issue with your Google Ads or Meta SKAN integration with AppsFlyer that requires your attention. You may need to delete the current integration and log in again. |
+| Cambios en la configuración de partners integrados | <ul><li>Se activa un nuevo partner integrado</li><li>Un partner integrado existente se desactiva</li><li>Se realiza un cambio en la configuración de un partner integrado existente.</li></ul> |
+| Errores de Push API | El 5% o más de los mensajes de la Push API de una aplicación fallan en un período de 12 horas |
+| Errores de conexión de audiencias | Hay errores de conexión de partners de la audiencia que requieren tu atención |
+| Integración de ingresos por publicidad suspendida | Una integración de ingresos por publicidad se suspende después de tener un estado de advertencia durante más de 30 días |
+| Error en los datos de ingresos por publicidad | Una integración de ingresos por publicidad no recibe datos |
+| Cambios en la configuración de costos de partners integrados | Un miembro del equipo cambia la configuración de integración de costos |
+| Errores de conexión de SKAN | Hay un problema con tu integración de Google Ads o Meta SKAN con AppsFlyer que requiere tu atención. Es posible que tengas que eliminar la integración actual e iniciar sesión de nuevo. |
 
 </Accordion>
 
 <div id="slack-notification" />
 
-<Accordion title="Slack notification">
+<Accordion title="Notificaciones de Slack">
 
-**Set up Slack notifications**
+**Configurar notificaciones de Slack**
 
-To set up Slack notifications, Slack first has to be connected:
+Para configurar las notificaciones de Slack, primero debes conectar Slack:
 
-1. In the notification preference page, click the **Integrations** button at the top right of the page.
-2. Click **Connect** by the Slack notification connector.
-3. Review and approve the permissions request.
-   1. **If you are the Slack admin**.
-      1. In Slack, click on the Slack Workspace.  
+1. En la página de preferencias de notificación, haz clic en el botón **integraciones** en la parte superior derecha de la página.
+2. Haz clic en **Conectar** mediante el conector de notificaciones de Slack.
+3. Revisa y aprueba la solicitud de permisos.
+   1. **Si eres el administrador de Slack**.
+      1. En Slack, haz clic en el workspace de Slack.  
          <Image alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />  
-         Note: Make sure the Slack Workspace shown is the correct one you want to connect to.
-      2. Go to **Tools & settings** -> **Manage apps**
-      3. In the **Admin panel**, select **Requests**.
-      4. In the **Needs review** tab, click the three dots next to the AppsFlyer app request.
-      5. Click **Approve** and then Approve the following pop-up.
-      6. Go back to the **AppsFlyer integration page** and click the **Allow** button.
-   2. **If you are not the Slack admin**.
-      1. Request permission from your Slack admin to connect Slack to AppsFlyer.
-      2. The Slack admin **must** perform all the steps above. In the meantime:
-      3. The Slack connector goes into a pending status.
-      4. When your Slack admin approves the connection, click **Connect** to start the integration and go from pending to connected.
+         Nota: Asegúrate de que el workspace de Slack que se muestra sea el correcto al que deseas conectarte.
+      2. Ve a **Herramientas y configuraciones** -> **Administrar aplicaciones**
+      3. En el **Panel de administración**, selecciona **Solicitudes**.
+      4. En la pestaña **Necesita revisión**, haz clic en los tres puntos junto a la solicitud de la aplicación de AppsFlyer.
+      5. Haz clic en **aprobar** y luego aprueba el siguiente pop-up.
+      6. Regresa a la **página de integración de AppsFlyer** y haz clic en el botón **Permitir**.
+   2. **Si no eres el administrador de Slack**.
+      1. Solicita permiso a tu administrador de Slack para conectar Slack a AppsFlyer.
+      2. El administrador de Slack **debe** realizar todos los pasos anteriores. Mientras tanto:
+      3. El conector de Slack pasa a un estado pendiente.
+      4. Cuando tu administrador de Slack apruebe la conexión, haz clic en **Conectar** para comenzar la integración y pasar de pendiente a conectado.
 
 </Accordion>
 
-<div data-zendesk-anchors="accessing-email-notifications=accessing-and-configuring-notification-preferences h_01HKA254W4XDVNP816N46N59ZV=accessing-and-configuring-notification-preferences h_01JQ66J4YSCSX7ZGG81XHGJ3MM=to-access-notifications h_01HKA254W497H0SKTZ33CVSA4P=configuring-notifications h_01HKA254W47XRG1D3HZ6VBZ2BH=what-notifications-can-i-receive h_01JQ66BX52MV5WQ7RXH6SY3QHK=when-will-i-receive-notifications h_01JQ6EYTZ13FHYERT48K3J25SV=example h_01HKA254W4Z95M335V7KWAJA6N=where-will-i-receive-notifications h_01JQ667RAW19658DVMZNFXNAJK=bell-notification h_01JQ667RAWCAVYBZD3J0T8XH2G=email-notification h_01JJGTDQFM1WE9G3XWSN9S7Z02=note emailonly-notifications=email-only-notifications h_01JQ6EQR8JRBZ2ECJ7SHHWDWFC=email-only-notifications h_01JQ667RAW48YQ64VXW899EW3X=slack-notification" />
+<div data-zendesk-anchors="accessing-email-notifications=accediendo-y-configurando-las-preferencias-de-notificaci%C3%B3n h_01HKA254W4XDVNP816N46N59ZV=accediendo-y-configurando-las-preferencias-de-notificaci%C3%B3n to-access-notifications=para-acceder-a-las-notificaciones h_01JQ66J4YSCSX7ZGG81XHGJ3MM=para-acceder-a-las-notificaciones configuring-notifications=configuraci%C3%B3n-de-notificaciones h_01HKA254W497H0SKTZ33CVSA4P=configuraci%C3%B3n-de-notificaciones what-notifications-can-i-receive=qu%C3%A9-notificaciones-puedo-recibir h_01HKA254W47XRG1D3HZ6VBZ2BH=qu%C3%A9-notificaciones-puedo-recibir when-will-i-receive-notifications=cu%C3%A1ndo-recibir%C3%A9-notificaciones h_01JQ66BX52MV5WQ7RXH6SY3QHK=cu%C3%A1ndo-recibir%C3%A9-notificaciones h_01JQ6EYTZ13FHYERT48K3J25SV=example where-will-i-receive-notifications=cu%C3%A1ndo-recibir%C3%A9-notificaciones-1 h_01HKA254W4Z95M335V7KWAJA6N=cu%C3%A1ndo-recibir%C3%A9-notificaciones-1 h_01JQ667RAW19658DVMZNFXNAJK=bell-notification h_01JQ667RAWCAVYBZD3J0T8XH2G=email-notification h_01JJGTDQFM1WE9G3XWSN9S7Z02=nota emailonly-notifications=notificaciones-solo-por-correo-electr%C3%B3nico h_01JQ6EQR8JRBZ2ECJ7SHHWDWFC=notificaciones-solo-por-correo-electr%C3%B3nico h_01JQ667RAW48YQ64VXW899EW3X=slack-notification" />

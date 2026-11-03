@@ -1,5 +1,5 @@
 ---
-title: Adding an app to AppsFlyer
+title: Añadir una aplicación a AppsFlyer
 metadata:
   keywords:
     - Add App
@@ -17,76 +17,75 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2016-01-20T08:57:00Z'
-  edited_at: '2026-08-03T09:05:58Z'
+  edited_at: '2026-08-12T12:04:49Z'
   id: 207377436
-  locale: en-us
+  locale: es
   section: Manage your apps
   section_id: 6551015977105
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207377436-Adding-an-app-to-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/207377436
 ---
-> **At a glance:** Learn how to add your app to AppsFlyer so you can get attribution data on installs and in-app events, and analyze the data using the different tools on AppsFlyer.
+> **Resumen breve:** Descubre cómo añadir tu aplicación a AppsFlyer para obtener datos de atribución sobre instalaciones y eventos dentro de la aplicación, y analiza los datos con las diversas herramientas de AppsFlyer.
 
-## Overview
+## Visión general
 
-If you haven't yet added an app to your dashboard, the app onboarding page will display when you log into AppsFlyer. App onboarding guides you through all the steps to add your app and also get it ready for attribution.
+Si todavía no has agregado una aplicación a tu panel, la página de incorporación de aplicaciones aparecerá al iniciar sesión en AppsFlyer. El onboarding de aplicaciones te guía a través de todos los pasos necesarios para añadir tu aplicación y prepararla para la atribución.
 
-### Entering the wizard for adding an app
+### Acceder al asistente para añadir una aplicación
 
-You can enter the wizard for adding apps from the platform or you can add your app via the app onboarding page (for Android and iOS apps only).
+Puedes acceder al asistente para añadir aplicaciones desde la plataforma o mediante la página de incorporación de aplicaciones (solo para aplicaciones Android e iOS).
 
-**To enter the wizard from the app onboarding page:**
+**Para acceder al asistente desde la página de incorporación de la aplicación:**
 
-* In the **Add your app** step, click **Add app** and follow the instructions for adding an app.
+* En el paso **Agregar tu aplicación**, haz clic en **Añadir aplicación** y sigue las instrucciones para hacerlo.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> If the onboarding page isn't already open, from the top menu bar > email address dropdown, click **App onboarding**.
+> Si la página de incorporación no está abierta, desde la barra de menú superior > menú desplegable con la dirección de correo electrónico, haz clic en **Incorporación de aplicaciones**.
 
-![onboarding page.png](https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png)
+![página de incorporación.png](https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png)
 
-**To enter the Add an app wizard from the platform:**
+**Para acceder al asistente Añadir una aplicación desde la plataforma:**
 
-* From the top menu bar > **My Apps,** click **+ Add app**
-* From the AppsFlyer Homepage, click **+ Add app**
-* From the top bar, open the account menu (email address dropdown) > **App onboarding**, click **+ Onboard another app**
+* Desde la barra de menú superior > **Mis Apps,** haz clic en **+ Añadir aplicación**
+* Desde la página de inicio de AppsFlyer, haz clic en **+ Añadir aplicación**
+* Desde la barra superior, abre el menú de cuenta (desplegable de dirección de correo electrónico) > **Incorporación de aplicaciones**, haz clic en **+ Incorporar otra aplicación**
 
-<Image alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
+<Image alt="agregar una aplicación (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
-## Adding an app
+## Agregar una aplicación
 
-After you've [entered the Add an app wizard](#entering-the-wizard-for-adding-an-app), follow these steps:
+Después de [acceder al asistente para añadir una aplicación](#acceder-al-asistente-para-añadir-una-aplicación), sigue estos pasos:
 
-1. [Enter the app details](#enter-app-details).
-2. [Enter additional information](#enter-additional-information-not-applicable-to-web-apps).
-3. Click **Add my app**.
-4. Copy the Dev key, to be used in the <Anchor target="_blank" href="/marketers/docs/getting-started-onboarding-for-marketers#step-2-sdk--api-integration">SDK integration</Anchor> (you can retrieve it later from the <Anchor target="_blank" href="/marketers/docs/app-settings#general-app-settings">App Settings</Anchor> page).
-5. Click **Done** or **+ Add another app** to add more apps. Repeat the process for adding more apps.
+1. [Introducir los detalles de la aplicación](#introduce-los-detalles-de-la-aplicación).
+2. [Proporcionar información adicional](#introduzca-información-adicional-no-aplicable-a-aplicaciones-web).
+3. Haz clic en **Añadir mi aplicación**.
+4. Copia la clave de desarrollo, que se utilizará en la <Anchor target="_blank" href="/marketers/es/docs/getting-started-onboarding-for-marketers#paso-2-integración-de-sdk--api">integración del SDK</Anchor> (puedes recuperarla más tarde desde la página <Anchor target="_blank" href="/marketers/es/docs/app-settings#configuración-general-de-la-aplicación">Configuración de la aplicación</Anchor>).
+5. Haz clic en **Finalizar** o **+ Añadir otra aplicación** para incluir más aplicaciones. Repite el proceso para añadir más aplicaciones.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * Only admins and <Anchor target="_blank" href="/marketers/docs/user-management">account users with the necessary permissions</Anchor> are able to add apps.
-> * As you follow the steps for adding an app (below), the available options will vary depending on the previous options you've selected.
+> * Solo los administradores y los <Anchor target="_blank" href="/marketers/es/docs/user-management">usuarios de cuenta con los permisos necesarios</Anchor> pueden añadir aplicaciones.
+> * A medida que sigues los pasos para añadir una aplicación (a continuación), las opciones disponibles variarán en función de las elecciones previas que hayas realizado.
 
-After registering the app, it will appear on the dashboard. To have installs and in-app events recorded and attributed to the correct media sources, you'll need to:
+Después de registrar la aplicación, esta aparecerá en el panel de control. Para que las instalaciones y los eventos dentro de la aplicación se registren y se atribuyan correctamente a las fuentes de medios, necesitas:
 
-* Integrate the SDK
-* Connect the app to partners in the Partner Marketplace
+* Integrar el SDK
+* Conectar la aplicación con socios en el Marketplace de Socios
 
-See <Anchor target="_blank" href="/marketers/docs/getting-started-onboarding-for-marketers">all the steps</Anchor> for completing the onboarding process.
+Consulta <Anchor target="_blank" href="/marketers/es/docs/getting-started-onboarding-for-marketers">todos los pasos</Anchor> para completar el proceso de incorporación.
 
-### Enter app details
+### Introduce los detalles de la aplicación
 
-Select the app platform and enter the required details, as listed below:
+Selecciona la plataforma de la aplicación y proporciona los detalles requeridos, tal como se indica a continuación:
 
 <div id="android-androidtv-fire" />
 
-<Accordion title="Android, AndroidTV, Fire">
+<Accordion title="Android, Android TV, Amazon Fire">
 
-Use this option for the following platforms:
+Utiliza esta opción para las siguientes plataformas:
 
-* Android (mobile)
-* AndroidTV
+* Android (móvil)
+* Android TV
 * Amazon Fire
 * Amazon Fire TV
 * Kindle
@@ -95,13 +94,13 @@ Use this option for the following platforms:
   <thead>
     <tr>
       <th>
-        Google Play status
+        Estado de Google Play
       </th>
       <th>
-        When to use it
+        Cuándo utilizarlo
       </th>
       <th>
-        Required details
+        Detalles requeridos
       </th>
     </tr>
   </thead>
@@ -109,74 +108,72 @@ Use this option for the following platforms:
   <tbody>
     <tr>
       <td><span id="in-store"></span>
-        In store
+        En tienda
       </td>
       <td>
-        Your app is currently available in the Google Play store
+        Tu aplicación está actualmente disponible en la tienda Google Play
       </td>
       <td>
-        **Google Play URL** (copied from Google Play)
+        **URL de Google Play** (copiada de Google Play)
 
-        * **Example:** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest&hl=en&gl=GB
-        * **Important!**
-          * If your app is **not** listed in the US Google Play store:
-            * The URL must include the country code of any store in which it is listed, as shown in the example above: **&gl=`{country_code}`.** If you do not include the country code, you will receive an error when trying to add the app.
-            * The language code is optional: **&hl=`{language_code}`**
-          * If your store **is** listed in the US Google Play store, both the country and language codes are optional.
+        * **Ejemplo:** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest&hl=es&gl=ES
+        * **¡Importante!**
+          * Si tu aplicación **no** está listada en la tienda Google Play de EE.UU., :
+            * La URL debe incluir el código de país de cualquier tienda donde esté listado, como mostrado en el ejemplo arriba: **&gl=`{código_de_país}`.** Si no incluyes el código del país, lo harás recibir un error al intentar agregar la aplicación.
+            * El código de idioma es opcional: **&hl=`{language_code}`**
+          * Si tu tienda **está** listada en la tienda Google Play de EE.UU., tanto el código de país como el código de idioma son opcionales.
       </td>
     </tr>
     <tr>
       <td><span id="pending-approval-not-published"></span>
-        Pending approval/not published
+        Pendiente de aprobación/no publicada
       </td>
       <td>
-        Your app is not yet published or is pending approval from Google Play
+        Tu aplicación aún no está publicada o está pendiente de aprobación de Google Play
       </td>
       <td>
-        **Android package name**
+        **Nombre del paquete de Android**
 
-        * **Example:** com.appsflyer.adNetworkTest
-        * **Note:** Package name is case sensitive
-        * **Format:**
-          * At least two segments (one or more dots)
-          * Each segment must start with a letter
-          * All characters must be alphanumeric or underscore (a-z, A-Z, 0-9, or \_)
-          * Maximum length of 100 characters
+        * **Ejemplo:** com.appsflyer.adNetworkTest
+        * **Nota:** Nombre del paquete es sensible
+        * **Formato:**
+          * Debe tener al menos dos segmentos (con uno o más puntos)
+          * Cada segmento debe iniciar con una letra
+          * Todos los caracteres deben ser alfanuméricos o guion bajo (a-z, A-Z, 0-9, o, \_)
+          * Longitud máxima de 100 caracteres
 
-        For more information, see <Anchor target="_blank" href="https://developer.android.com/studio/build/application-id">Android developer documentation</Anchor>
+        Para más información, consulta la <Anchor target="_blank" href="https://developer.android.com/studio/build/application-id">documentación para desarrolladores de Android</Anchor>
       </td>
     </tr>
     <tr>
       <td><span id="third-party-store-out-of-store"></span>
-        3rd-party store/out-of-store
+        Tienda de terceros/fuera de la tienda
       </td>
       <td>
-        Your app is in an Android app store other than Google Play, and/or it can be downloaded from a location other than an app store
+        Tu aplicación está en una tienda de aplicaciones Android distinta a Google Play y/o se puede descargar desde un lugar distinto a una tienda de aplicaciones
       </td>
       <td>
-        * **Android package name:** For detailed requirements, see previous row.
-        * **App URL:** (copied from the 3rd-party app store or out-of-store location)
-        * **Channel name: (optional)** a unique name you set in the AndroidManifest.xml of the individual APK prepared for that store/location, e.g. my\_apk. The name must be:
-          * case-sensitive
-          * identical to the name you entered in <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app">the **Channel name** field when you added the app</Anchor>.
+        * Para conocer los requisitos detallados, consulta la fila anterior (pendiente de aprobación/no publicado)
+        * URL de la aplicación (copiado del third-party o e de la ubicación fuera de la tienda)
+        * **Nombre del canal:** un nombre único que estableces en el AndroidManifest.xml de APK individual preparado para esa tienda/ubicación. El nombre debe ser:
+          * distingue entre mayúsculas y minúsculas
+          * El nombre debe distinguir entre mayúsculas y minúsculas y ser idéntico al nombre que ingresaste en <Anchor target="_blank" href="/marketers/es/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app">el campo **Nombre del canal** cuando añadiste la app</Anchor>.
 
         ```xml
         <application>
              ...
-             <meta-data android:name="CHANNEL" android:value="my_apk"/>
+             <meta-data android:name="CHANNEL" android:value="Amazon"/>
              ...
-        </application>
+        </application>Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
         ```
 
-        Note
-
-        > 📘 **Note**
+        > 📘 **Nota:**
         >
-        > Using the channel parameter for multi-store attribution is not recommended. For a simpler and more standardized implementation, use the af\_store parameter instead.
+        > No se recomienda usar el parámetro channel para la atribución multitienda. Para una implementación más sencilla y estandarizada, usa el parámetro af\_store en su lugar.
 
-        > 🚧 **Important!**
+        > 🚧 **¡Importante!**
         >
-        > If your app is available from more than one source (in other words, any combination of Google Play, 3rd-party stores, or out-of-store locations), it is vital to consider the options for <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">setting up multi-store Android attribution</Anchor>.
+        > Si tu aplicación está disponible en más de una fuente (es decir, cualquier combinación de Google Play, tiendas de third-party o ubicaciones fuera de la tienda), es vital considerar las opciones para la <Anchor target="_blank" href="/marketers/es/docs/set-up-multi-store-android-attribution">configuración de la atribución de Android en múltiples tiendas</Anchor>.
       </td>
     </tr>
   </tbody>
@@ -186,18 +183,18 @@ Use this option for the following platforms:
 
 <div id="ios-tvos-macos" />
 
-<Accordion title="ioS, tvOS, MacOS">
+<Accordion title="iOS, tvOS, macOS">
 
-Use this option for the following platforms:
+Utiliza esta opción para las siguientes plataformas:
 
-* iOS
+* apps de iOS,
 * tvOS
-* MacOS
+* macOS
 
-| App Store status | When to use it | Required details |
+| Estado de la App Store | Cuándo utilizarlo | Detalles requeridos |
 | --- | --- | --- |
-| <span id="in-store::f93cfa22"></span>In store | Your app is currently available in the App Store | **App Store URL** (copied from the App Store)<ul><li>**Example:** https://apps.apple.com/us/app/partner-integrations/id1543229303</li><li>**Notes:**<ul><li>Be sure that the URL includes the 2-letter country code of the store (for example, **us** in the URL above)</li><li>An app added to the App Store prior to June 14, 2019, may contain itunes.apple.com in its URL (instead of apps.apple.com).</li></ul></li></ul> |
-| <span id="pending-approvalnot-published"></span>Pending approval/not published | Your app is not yet published or is pending approval from the App Store | **Country** of the App Store to which the app has been submitted<br /><br />**App ID** assigned by the App Store, without the prefix id<ul><li>**Example:** 1543229303</li><li>**Format:** 9 or 10 numeric characters, 0-9</li></ul> |
+| <span id="in-store::f93cfa22"></span>En tienda | Tu aplicación está actualmente disponible en la App Store | **URL de la App Store** (copiado de la App Store)<ul><li>**Ejemplo:** https://apps.apple.com/us/app/partner-integrations/id1543229303</li><li>**Notas:**<ul><li>Asegúrate de que la URL incluya el código de país de dos letras de la tienda (por ejemplo, **us** en la URL anterior)</li><li>Una aplicación añadida a la App Store antes del 14 de junio de 2019, puede contener itunes.apple.com en su URL (en lugar de apps.apple.com).</li></ul></li></ul> |
+| <span id="pending-approvalnot-published"></span>Pendiente de aprobación/no publicada | Tu aplicación aún no está publicada o está pendiente de aprobación desde la App Store | **País** de la App Store a la que se ha enviado la aplicación<br /><br />**ID de aplicación** asignado por la App Store, sin el prefijo id<ul><li>**Ejemplo:** 1543229303</li><li>**Formato:** 9 o 10 caracteres numéricos , 0-9</li></ul> |
 
 </Accordion>
 
@@ -205,15 +202,15 @@ Use this option for the following platforms:
 
 <Accordion title="Windows">
 
-Use this option for the following platforms:
+Utiliza esta opción para las siguientes plataformas:
 
 * Windows Phone
-* Windows (desktop)
+* Windows (escritorio)
 
-| Microsoft Store status | When to use it | Required details |
+| Estado de la Microsoft Store | Cuándo utilizarlo | Detalles requeridos |
 | --- | --- | --- |
-| In store | Your app is currently available in the Microsoft Store | **Microsoft Store URL** (copied from the Microsoft Store)<ul><li>**Example:** https://www.microsoft.com/en-us/p/wordament/9wzdncrfhwfg</li><li>**Note:** The URL above is an example for a Windows Phone app. URL format varies for Windows desktop apps.</li></ul>**App ID:** Maximum length of 150 characters. |
-| Pending approval/not published | Your app is not yet published or is pending approval from the store | **App ID** assigned by the Microsoft Store<ul><li>**Maximum length:** 150 characters</li><li>**Example:** 9wzdncrfhwfg</li><li>**Note:** App ID is case sensitive</li></ul> |
+| En tienda | Tu aplicación está actualmente disponible en la Microsoft Store | **URL de la Microsoft Store** (copiada de la Microsoft Store)<ul><li>**Ejemplo:** https://www.microsoft.com/en-us/p/wordament/9wzdncrfhwfg</li><li>**Nota:** La URL anterior es un ejemplo para una aplicación de Windows Phone. El formato URL varía para las aplicaciones de ordenador de Windows.</li></ul>**ID de la aplicación:** Longitud máxima de 50 caracteres. |
+| Pendiente de aprobación/no publicada | Tu aplicación aún no está publicada o está pendiente de aprobación desde la tienda | **ID de aplicación** asignado por Microsoft Store<ul><li>**Longitud máxima:** 150 caracteres</li><li>**Ejemplo:** 9wzdncrfhwfg</li><li>Nota: El ID de la aplicación es sensible</li></ul> |
 
 </Accordion>
 
@@ -221,39 +218,39 @@ Use this option for the following platforms:
 
 <Accordion title="Web (PBA)">
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> A web app is where you define a website to include in a brand bundle for our People-Based Attribution (PBA) feature.
+> Una aplicación web es aquella en la que defines un sitio web para incluirlo en un paquete de marca para nuestra función de Atribución Basada en Personas (PBA).
 >
-> * This option is available only to customers who have subscribed to PBA.
-> * <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">Learn more</Anchor> about PBA and attributing web visits, web events, and website-assisted installs to obtain a unified view of customer journeys across channels, platforms, and devices.
+> * Esta opción solo está disponible para clientes suscritos a PBA.
+> * <Anchor target="_blank" href="/marketers/es/docs/people-based-attribution-pba-overview">Más información</Anchor> sobre PBA y la atribución de visitas web, eventos web e instalaciones asistidas por el sitio web para obtener una vista unificada de los recorridos del cliente en todos los canales, plataformas y dispositivos.
 
-**Full URL:** The full URL of the website for which you want to measure traffic. This is the website on which you have implemented (or will implement) the <Anchor target="_blank" href="/marketers/docs/onboarding-guide-to-people-based-attribution#2">PBA Web SDK</Anchor>.
+**URL completa:** La URL completa del sitio web para el cuál quieres medir el tráfico. Este es el sitio web en el que has implementado (o implementarás) el <Anchor target="_blank" href="/marketers/es/docs/onboarding-guide-to-people-based-attribution#2">SDK Web de PBA</Anchor>.
 
-[<Image alt="URL_diagram" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
+[<Image alt="Diagrama_URL" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
 
-Include –
+Incluir –
 
-* scheme
-* subdomain [optional]
-* domain name
-* top-level domain
-* path [optional] – the address of a specific directory or page on your website
+* esquema
+* subdominio [opcional]
+* nombre de dominio
+* dominio de nivel superior
+* ruta [opcional] – la dirección de un directorio o página específica de tu sitio web
 
-**App name:** The name you have chosen for your app
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación
 
-* Maximum length: 100 characters
-* XSS tags not permitted
+* Longitud máxima: 100 caracteres
+* No se permiten etiquetas XSS
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Once you create a web app, you are not able to edit its properties (URL and app name) without deleting it and re-creating it, **which means you also must** <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle">**delete the brand bundle**</Anchor> **of which it is a part.**
+> Una vez que creas una aplicación web, no puedes editar sus propiedades (URL y nombre de la aplicación) sin eliminarla y volver a crearla, **lo que significa que también debes <Anchor target="_blank" href="/marketers/es/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle">eliminar el paquete de marca</Anchor> del que forma parte.**
 
-**Next steps:**
+**Próximos pasos:**
 
-* Add your newly-created web app to a <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings">PBA brand bundle</Anchor> to see it on the PBA dashboard.
-  * Make sure all the mobile apps you want to include in the brand bundle have been added to your account before creating the bundle.
-* <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide">Integrate the PBA Web SDK</Anchor> to the website specified in the web app to get the measurement data flowing.
+* Añade tu aplicación web recién creada a un <Anchor target="_blank" href="/marketers/es/docs/pba-brand-bundles-and-settings">paquete de marca PBA</Anchor> para verla en el panel de control de PBA.
+  * Asegúrate de que todas las aplicaciones móviles que deseas incluir en el paquete de marca estén añadidas a tu cuenta antes de crear el paquete.
+* <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide">Integra el SDK Web de PBA</Anchor> en el sitio web especificado en la aplicación web para que comience el flujo de datos de medición.
 
 </Accordion>
 
@@ -261,98 +258,98 @@ Include –
 
 <Accordion title="Web">
 
-Use the Web platform to create a new Web app and measure website visits and conversions using Web Performance Measurement.
+Usa la plataforma web para crear una nueva aplicación web y medir las visitas al sitio web y las conversiones mediante Web Performance Measurement.
 
-#### **Before you begin**
+#### **Antes de comenzar:**
 
-* Legacy People-Based Attribution (PBA) web apps appear under “**Web (PBA)”** marked as Legacy.
-* If you are migrating from a legacy PBA Web app, you can use your existing PBA Web Dev Key.
+* Visión general
+* Si migras desde una aplicación web PBA heredada, puedes usar tu PBA Web Dev Key actual.
 
-#### **To add a Web app**
+#### **Nota**
 
-1. Go to **My Apps** > **Add app**.
-2. Select **Website**.
-3. Enter the following:
+1. Ve a **My Apps** > **Add app**.
+2. Selecciona **Website**.
+3. Introduce lo siguiente:
 
-**App name**: The name you have chosen for your Web app.
+**Nombre de la aplicación**: El nombre que has elegido para tu aplicación web.
 
-* **Length:** 1-100 characters
-* **Allowed characters:** Letters (any language), numbers, spaces (not at start or end), and special characters: . - \_ :
-* **Blocked characters:** ; \`{ }\` $ < > \` \
+* **Longitud:** 1-100 caracteres
+* **Caracteres permitidos:** Letras (de cualquier idioma), números, espacios (no al principio ni al final) y caracteres especiales: . - \_ :
+* **Caracteres bloqueados:** ; \`{ }\` $ < > \` \
 
-**Example:** My Online Store, Corporate Website 2024, E-Commerce\_Production
+**Ejemplo:** My Online Store, Corporate Website 2024, E-Commerce\_Production
 
-**Primary domain (Full URL)**: The primary domain of your website. This is set during web app creation and cannot be changed afterward.
+**Dominio principal (URL completa)**: El dominio principal de tu sitio web. Esto se configura durante la creación de la aplicación web y no se puede cambiar después.
 
-* **Format:** Valid domain name only (no protocol, path, or port)
-* **Length:** Maximum 500 characters
-* **Processing:** AppsFlyer automatically
-  * Removes http:// or https://
-  * Removes trailing slashes
-  * converts the domain to lowercase
-* **Immutability:** Cannot be edited after app creation
+* **Formato:** Solo nombre de dominio válido (sin protocolo, ruta ni puerto)
+* **Longitud:** Máximo 500 caracteres
+* **Procesamiento:** AppsFlyer automáticamente
+  * Elimina http:// o https://
+  * Elimina las barras diagonales finales
+  * convierte el dominio a minúsculas
+* **Inmutabilidad:** No se puede editar después de crear la aplicación
 
-**Important:** To change the primary domain, you must delete and recreate the web app, which results in loss of historical data continuity.
+**Importante:** Para cambiar el dominio principal, debes eliminar y volver a crear la aplicación web, lo que da como resultado la pérdida de continuidad de los datos históricos.
 
-**Examples:**
+**Ejemplos:**
 
-* https://shop.example.com/checkout → Stored as shop.example.com → App ID: website-shop.example.com
-* example.com/ → Stored as example.com → App ID: [website-example.com](http://website-example.com)
+* https://shop.example.com/checkout → Se almacena como shop.example.com → ID de la aplicación: website-shop.example.com
+* example.com/ → Se almacena como example.com → ID de la aplicación: [website-example.com](http://website-example.com)
 
-**App ID**: The unique ID AppsFlyer creates for the Web app, based on the primary domain.
+**ID de la aplicación**: El ID único que AppsFlyer crea para la aplicación web en función del dominio principal.
 
-* Generated automatically using the format: website-`<primary_domain>`
-* Example: website-shop.example.com
+* Se genera automáticamente con el formato: website-`<primary_domain>`
+* Ejemplo: website-shop.example.com.
 
-**Web SDK ID**: The identifier used by the Web SDK for attribution (previously named web\_dev\_key).
+**ID del SDK web**: El identificador que utiliza el SDK web para la atribución (anteriormente denominado web\_dev\_key).
 
-Two options during app creation:
+Dos opciones durante la creación de la aplicación:
 
-**Option 1: Generate new (default)**
+**Opción 1: Generar uno nuevo (predeterminado)**
 
-* Automatically creates a new Web SDK ID
-* Format: website-`{yourdomain.com}`
-* Example: website-shop.example.com
-* **Use case:** New web attribution implementations
+* Crea automáticamente un nuevo ID del SDK web
+* Formato: website-`{yourdomain.com}`
+* Ejemplo: website-shop.example.com.
+* **Caso de uso:** Nuevas implementaciones de atribución web
 
-**Option 2: Reuse existing PBA dev key**
+**Opción 2: Reutilizar una clave de desarrollo de PBA existente**
 
-* Select from dropdown of existing PBA (People-Based Attribution) web app dev keys
-* Enables seamless migration without changing website code
-* **Use case:** Migrating from legacy PBA to the new web attribution solution
+* Selecciona en el desplegable una de las claves de desarrollo de aplicaciones web de PBA (People-Based Attribution) existentes
+* Permite una migración fluida sin cambiar el código del sitio web
+* **Caso de uso:** Migración de PBA a la nueva solución de atribución web
 
-**Note:** Reusing the PBA Dev Key allows you to migrate from PBA to the new Web app **without making any changes to your website implementation.**
+**Nota:** Reutilizar la clave de desarrollo de PBA te permite migrar de PBA a la nueva aplicación web **sin hacer ningún cambio en la implementación de tu sitio web.** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
 
-Each PBA dev key can only be assigned to **ONE** web app. Once a PBA dev key is used for a web app, it is no longer available for other web apps.
+Cada clave de desarrollo de PBA solo se puede asignar a **UNA** aplicación web. Una vez que se usa una clave de desarrollo de PBA para una aplicación web, deja de estar disponible para otras aplicaciones web.
 
-* **Length:** 1-550 characters
-* **Immutability:** Cannot be changed after app creation
-* **PBA migration:** Only dev keys from your account's PBA web apps appear in the dropdown
+* **Longitud:** 1-550 caracteres
+* **Inmutabilidad:** No se puede cambiar después de crear la aplicación
+* **Migración de PBA:** En el desplegable solo aparecen las claves de desarrollo de las aplicaciones web de PBA de tu cuenta
 
-**Currency**: The currency used for the app’s reporting.
+**Moneda**: La moneda utilizada para los informes de la aplicación.
 
-* Standard ISO 4217 currency code (e.g., USD, EUR, GBP, ILS)
-* Selected from dropdown
-* Required field
+* Código de moneda estándar ISO 4217 (p. ej., USD, EUR, GBP, ILS)
+* Se selecciona en el desplegable
+* Campo requerido
 
-**Time zone**: The time zone used for the app’s reporting.
+**Zona horaria**: La zona horaria utilizada para los informes de la aplicación.
 
-* IANA time zone format (e.g., America/New\_York, Europe/London, Asia/Tokyo)
-* Selected from dropdown
-* Required field
+* Formato de zona horaria IANA (p. ej., America/New\_York, Europe/London, Asia/Tokyo)
+* Seleccionado en el menú desplegable
+* Campo requerido
 
-4. Click **Create app**.
+4. Haz clic en **Crear aplicación**.
 
-**Limitations**
+**Limitaciones**
 
-* The **primary domain cannot be changed** after the app is created.
-* The primary domain is automatically added to **Excluded Domains** as type **PRIMARY**.
+* El **dominio principal no se puede cambiar** después de crear la aplicación.
+* El dominio principal se añade automáticamente a **Dominios excluidos** como tipo **PRIMARY**.
 
-Each legacy **Web Dev Key can be reused for only one** new Web app.
+Cada **Web Dev Key heredada solo se puede reutilizar para una** nueva aplicación web.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> For full information on Web attribution settings <Anchor target="_blank" href="/marketers/docs/configure-web-performance-measurement-settings">see here</Anchor>.
+> Para obtener toda la información sobre la configuración de atribución web, <Anchor target="_blank" href="/marketers/es/docs/configure-web-performance-measurement-settings">consulta aquí</Anchor>.
 
 </Accordion>
 
@@ -360,21 +357,21 @@ Each legacy **Web Dev Key can be reused for only one** new Web app.
 
 <Accordion title="Roku">
 
-**App name:** Channel name copied from the <Anchor target="_blank" href="https://developer.roku.com/developer">Roku Developer Dashboard</Anchor>.
+**Nombre de la aplicación:** Nombre del canal copiado desde el <Anchor target="_blank" href="https://developer.roku.com/developer">Panel de Desarrollador de Roku</Anchor>.
 
-* **Example:** My Roku channel
-* **Format:**
-  * Maximum length of 100 characters
-  * XSS tags not permitted
+* **Ejemplo:** Mi canal de Roku
+* **Formato:**
+  * Longitud máxima de 100 caracteres
+  * No se permiten etiquetas XSS
 
-**Channel ID:** Numeric ID assigned to the channel by Roku.
+**ID del canal:** ID numérico asignado al canal por Roku.
 
-* **Format:**
-  * Numeric characters (0-9)
-  * Maximum length: 50 characters
-* **How do I find it?**
-  * From the <Anchor target="_blank" href="https://developer.roku.com/developer">Roku Developer Dashboard</Anchor>, click on the name of the channel you are adding to AppsFlyer. This opens the Roku Preview & Publish page for the channel.
-  * The number at the end of the URL page is the Channel ID:
+* **Formato:**
+  * Caracteres numéricos (0-9)
+  * Nota
+* **¿Cómo lo encuentro?**
+  * Desde el <Anchor target="_blank" href="https://developer.roku.com/developer">panel de desarrollador de Roku</Anchor>, haz clic en el nombre del canal que estás agregando a AppsFlyer. Esto abrirá la página de Vista Previa y Publicación de Roku para el canal.
+  * El número al final de la URL de la página es el ID del canal: ID del canal:
 
     ![](https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png)
 
@@ -384,14 +381,12 @@ Each legacy **Web Dev Key can be reused for only one** new Web app.
 
 <Accordion title="Amazon Vega OS">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The ID of the app. Found using reverse DNS notation:  `<tld>`.`<company_name>`.`<app_name>`  
-Must contain a minimum of 2 segments. Each segment must start with a letter followed by characters from: `A-Z` `a-z` `0-9.``-`  
+**ID de la app:** El ID de la app. Se encuentra con la notación DNS inversa:  `<tld>`.`<company_name>`.`<app_name>`  
+Debe contener un mínimo de 2 segmentos. Cada segmento debe empezar con una letra seguida de caracteres de: `A-Z` `a-z` `0-9.``_` `-`.
 
-Example: com.company.my\_app
-
-For more information, see the “id” field in the <Anchor target="_blank" href="https://developer.amazon.com/docs/vega/0.21/manifest-package.html#fields">Amazon Vega OS documentation</Anchor>.
+Para más información, consulta el campo «id» en la <Anchor target="_blank" href="https://developer.amazon.com/docs/vega/0.21/manifest-package.html#fields">documentación de Amazon Vega OS</Anchor>.
 
 </Accordion>
 
@@ -399,9 +394,9 @@ For more information, see the “id” field in the <Anchor target="_blank" href
 
 <Accordion title="Vizio SmartCast">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The ID of the app, as recognized by Vizio. Starts with `vizio.`, followed by 2-10 characters from: `A-Z` `a-z` `0-9.``-`. If you need to confirm the app ID, check with your Vizio representative.
+**ID de la aplicación:** El ID de la aplicación, tal como lo reconoce Vizio. Comienza con las letras `vz`, seguidas de 2 a 10 caracteres de: `.``-` `0-9``.` `-`. Si necesitas confirmar la ID de la aplicación, consulta con tu representante de Vizio.
 
 </Accordion>
 
@@ -409,19 +404,19 @@ For more information, see the “id” field in the <Anchor target="_blank" href
 
 <Accordion title="Samsung Tizen">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The Bundle ID assigned to your app by Samsung. Starts with the letter `G`, followed by 8-15 digits. To get the App ID:
+**ID de la aplicación:** El ID del paquete asignado a tu aplicación por Samsung. Comienza con la letra `G`, seguida de 8-15 dígitos. Puedes encontrarlo al final de la URL de la tienda de aplicaciones de tu aplicación:
 
-1. Sign in to the Samsung TV Seller Office Using [this link](https://developer.samsung.com/tv-seller-office/guides/overview.html).
+1. Inicia sesión en Samsung TV Seller Office usando [este enlace](https://developer.samsung.com/tv-seller-office/guides/overview.html).
 
-   1. Enter your developer URL
-2. Your Bundle ID is automatically generated and displayed. This can be used to access the app store URL.
-3. For any issues, open an issue board ticket in the seller office.
+   1. Introduce la URL de desarrollador
+2. Tu Bundle ID se genera y se muestra automáticamente. Se puede usar para acceder a la URL de la tienda de aplicaciones.
+3. Si tienes algún problema, abre un ticket del panel de incidencias en el Seller Office.
 
-Note: To access your unique app store web page, add the bundle ID to the URL "[https://www.samsung.com/us/appstore/app/](https://www.samsung.com/us/appstore/app/)".
+Nota: Para acceder a tu página web única de la tienda de aplicaciones, añade el bundle ID a la URL "[https://www.samsung.com/us/appstore/app/](https://www.samsung.com/us/appstore/app/)".
 
-For example, if your bundle ID is "G15147002586", the URL of your page will be "[https://www.samsung.com/us/appstore/app/G15147002586/](https://www.samsung.com/us/appstore/app/G15147002586/) ". The developer URL, bundle ID, and app store ID are then displayed in the metadata on that page.
+Por ejemplo, si tu bundle ID es "G15147002586", la URL de tu página será "[https://www.samsung.com/us/appstore/app/G15147002586/](https://www.samsung.com/us/appstore/app/G15147002586/) ". La URL del desarrollador, el bundle ID y el ID de la tienda de aplicaciones se muestran entonces en los metadatos de esa página.
 
 ![](https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png)
 
@@ -431,16 +426,16 @@ For example, if your bundle ID is "G15147002586", the URL of your page will be "
 
 <Accordion title="LG WebOS">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The LG WebOS app ID.
+**ID de la aplicación:** El ID de la aplicación LG WebOS.
 
-* **Format:**
-  * Maximum length of 50 characters
-  * Characters from `A-Z` `a-z._` in bundle-like format. Must start with letters.
-* **Example:** com.my-company.app
+* **Formato:**
+  * Longitud máxima de 50 caracteres
+  * Caracteres de `A-Z` `a-z``.` `_` tipo de paquete formato. Debe comenzar con letras.
+* **Ejemplo:** com.mi-empresa.app
 
-If you need to confirm the app ID, check with your LB WebOS representative.
+Si necesitas confirmar el ID de la aplicación, consulta con tu representante de LB WebOS.
 
 </Accordion>
 
@@ -448,9 +443,9 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 <Accordion title="PlayStation">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The PlayStation concept ID, a unique identifier assigned to a game or other content concepts. It appears as a 5-9 digit number in the PlayStation store URL. You can find it at the end of the app store URL of your app:
+**ID de la aplicación:** El ID de concepto de PlayStation, un identificador único asignado a un juego u otros conceptos de contenido. Aparece como un número de 5 a 9 dígitos en la URL de la tienda PlayStation. Puedes encontrarlo al final de la URL de la tienda de aplicaciones de tu aplicación:
 
 ![playstation_app_id_url.png](https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png)
 
@@ -458,11 +453,11 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 <div id="vidaa" />
 
-<Accordion title="Vidaa">
+<Accordion title="Finalidad">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The Vidaa app ID. Maximum length of 50 characters.
+**ID de la aplicación:** El ID de la aplicación Vidaa. Longitud máxima de 50 caracteres.
 
 </Accordion>
 
@@ -470,9 +465,9 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 <Accordion title="Steam">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The Steam app ID. This is the 5-8 digit number that appears in the Steam store URL:
+**ID de la aplicación:** El ID de la aplicación Steam. Este es el número de 5 a 8 dígitos que aparece en la URL de la tienda Steam:
 
 ![steam_store_app_url.png](https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png)
 
@@ -482,9 +477,9 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 <Accordion title="Meta Quest (Oculus)">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The Meta Quest app ID, as it appears at the end of the Meta app store URL from which the app is downloaded. Includes 3-50 characters from: `A-Z` `a-z0-9._-`.
+**ID de la aplicación:** El ID de la aplicación de Xbox, tal como aparece en la URL de la tienda de Xbox desde donde se descarga la aplicación. Incluye solo 12 letras y dígitos (`0-9` `0-9``0-9`).
 
 <Image alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
 
@@ -494,11 +489,11 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 <Accordion title="Nintendo Switch">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The Nintendo Switch app ID, as it appears at the end of the URL of the store from which the app is downloaded. Includes 14 digits.
+**ID de la aplicación:** El ID de la aplicación de Nintendo Switch, como aparece al final de la URL de la tienda desde la que se descarga la aplicación. Incluye 14 dígitos.
 
-* **Example:** 70010000012345
+* **Ejemplo:** 70010000012345
 
 </Accordion>
 
@@ -506,13 +501,13 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 <Accordion title="Xbox">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The Xbox app ID, as it appears at the end of the Xbox store URL from which the app is downloaded. Includes 12 letters and digits only (`A-Z` `a-z0-9`).
+**ID de la aplicación:** El ID de la aplicación Meta Quest, tal como aparece al final de la URL de la tienda de Meta desde donde se descarga la aplicación. Incluye solo 12 letras y dígitos (`A-Z` `a-z0-9`).
 
 ![](https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png)
 
-**Note:** App ID is case-sensitive.
+**Nota:** El ID de la aplicación distingue entre mayúsculas y minúsculas.
 
 </Accordion>
 
@@ -520,9 +515,9 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 <Accordion title="Epic Games">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The Epic Games app ID, as it appears in the store from which the app is downloaded. Includes 3-50 characters from: `A-Z` `a-z0-9._-`.
+**ID de la aplicación:** El ID de la aplicación de Epic Games, tal como aparece en la tienda desde la que se descarga la aplicación. Incluye entre 3 y 50 caracteres de: `A-Z` `a-z``0-9``.`
 
 ![](https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png)
 
@@ -530,133 +525,133 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 <div id="native-pc" />
 
-<Accordion title="Native PC">
+<Accordion title="PC Nativo">
 
-**App name:** The name you have chosen for your app.
+**Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**App ID:** The Native PC app ID. Includes 3-50 characters from: `A-Z` `a-z0-9._-`.
+**ID de la aplicación:** El ID de la aplicación nativa de PC. Incluye entre 3 y 50 caracteres de: `A-Z` `a-z``0-9``.`
 
 </Accordion>
 
-### Enter additional information (not applicable to web apps):
+### Introduzca información adicional (no aplicable a aplicaciones web):
 
 <Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
 
-#### **Select currency**
+#### **Seleccionar moneda**
 
-Select the currency in which this app's data will be displayed in the dashboard. Revenue and spend events are converted to this currency using the exchange rate in effect at the event time. <Anchor target="_blank" href="/marketers/docs/app-settings#localization-currency">Learn more</Anchor> about an app's currency setting and its impact.
+Seleccione la moneda en la que se mostrarán los datos de esta aplicación en el panel de control. Los eventos de ingresos y gastos se convertirán a esta moneda utilizando el tipo de cambio vigente en el momento del evento. <Anchor target="_blank" href="/marketers/es/docs/app-settings#localization-currency">Obtenga más información</Anchor> sobre la configuración de la moneda de la aplicación y su impacto.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Use care in selecting the currency you want to use for the app. You won't be able to change it once cost and revenue have been recorded.
+> Tenga cuidado al seleccionar la moneda que desea usar para la aplicación. No podrá cambiarla una vez que se hayan registrado los costos y los ingresos.
 
-#### **Select timezone**
+#### **Seleccionar zona horaria**
 
-Align the timezone you select here with the timezone you set with other attribution partners (such as Meta ads and Google Ads). This ensures the closest match between the data reported in the AppsFlyer dashboard and the data you receive from these partners.
+Alinee la zona horaria seleccionada aquí con la zona horaria que configure con otros socios de atribución (como anuncios de Meta y Google Ads). Esto garantiza la mayor coincidencia posible entre los datos informados en el panel de AppsFlyer y los que recibe de estos socios.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * Once the timezone is set, it remains locked and can't be changed until the following day.
-> * <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">Learn more</Anchor> about app timezone setting and its impact.
+> * Una vez establecida, la zona horaria permanecerá bloqueada y no podrá cambiarse hasta el día siguiente.
+> * <Anchor target="_blank" href="/marketers/es/docs/changing-app-time-zone-settings">Conozca más</Anchor> sobre la configuración de la zona horaria de la aplicación y su impacto.
 
-#### **Define app audience**
+#### **Definir el público objetivo de la aplicación**
 
-Select **Yes** or **No** to indicate whether or not your app is directed toward children or a mixed audience (both children and adults).  
-If you've selected **Yes:**
+Escoja **Sí** o **No** para indicar si su aplicación está dirigida a niños o a un público mixto (niños y adultos).  
+Si ha elegido **Sí:**
 
-1. Open and read the <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">guide</Anchor> about implementing compliance with child-directed apps.
-2. Select the box to confirm you've read the guide and will implement the controls it specifies.
+1. Acceda y lea la <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">guía</Anchor> sobre cómo cumplir con los requisitos para aplicaciones dirigidas a niños.
+2. Marque la casilla para confirmar que ha leído la guía y aplicará los controles que indica.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * Two weeks after adding the app, you'll get a notification asking you to confirm you've implemented privacy controls for your child-directed apps. After confirming, you'll get a confirmation message. You can always access the confirmation message from the Notification center or see the confirmation details in the <Anchor target="_blank" href="/marketers/docs/audit-log">Audit log</Anchor>.
-> * See <Anchor target="_blank" href="/marketers/docs/child-directed-apps-faq">frequently asked questions about child-directed apps</Anchor>.
+> * Dos semanas después de añadir la aplicación, recibirás una notificación solicitando que confirmes la implementación de controles de privacidad para las aplicaciones dirigidas a niños. Tras confirmar, recibirás un mensaje de confirmación. Puedes acceder al mensaje de confirmación desde el Centro de notificaciones o ver los detalles de confirmación en el <Anchor target="_blank" href="/marketers/es/docs/audit-log">Registro de auditoría</Anchor>.
+> * Consulta las <Anchor target="_blank" href="/marketers/es/docs/child-directed-apps-faq">preguntas frecuentes sobre aplicaciones dirigidas a niños</Anchor>.
 
-#### Manage your apps in bulk via API
+#### Gestiona tus aplicaciones en bloque a través de la API
 
-Account admins can <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/app-management-v2-overview">manage multiple apps in bulk</Anchor> using a dedicated API that supports the main features of the UI. This includes adding and deleting apps, and updating the app settings. The API also incorporates the same error verification mechanisms.
+Los administradores de cuentas pueden <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/app-management-v2-overview">gestionar múltiples aplicaciones en bloque</Anchor> empleando una API dedicada que admite las funciones principales de la interfaz. Esto incluye añadir y eliminar aplicaciones, así como actualizar su configuración. La API también incluye los mismos mecanismos de verificación de errores.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> At this stage, adding apps and updating the app settings via API is possible for mobile apps only. Deleting apps is possible for all platforms.
+> En esta fase, añadir aplicaciones y actualizar su configuración a través de API solo es posible para aplicaciones móviles. Eliminar aplicaciones es posible en todas las plataformas.
 
-### Add a debug or testing app
+### Añadir una aplicación de depuración o de prueba
 
-If your developer creates a **debug**, **sandbox**, or **testing app**, you must add the app to the dashboard. Once your developer starts testing with the app, data displays in the app’s dashboard.
+Si tu desarrollador crea una **aplicación de depuración**, de **sandbox** o de **prueba**, debes añadir la aplicación al dashboard. Una vez que tu desarrollador empiece a hacer pruebas con la aplicación, los datos se mostrarán en el dashboard de la aplicación.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> For iOS apps that haven’t been published to the App Store and don’t yet have a valid App Store ID, you can still proceed with SDK testing by adding the app using a **dummy iOS App Store ID**. This enables SDK integration and testing without needing a real App Store listing.
+> Para las aplicaciones de iOS que aún no se han publicado en la App Store y todavía no tienen un ID de App Store válido, puedes continuar con la prueba del SDK añadiendo la aplicación con un **ID ficticio de la App Store de iOS**. Esto permite la integración y la prueba del SDK sin necesidad de contar con una ficha real en la tienda de aplicaciones.
 
-For developer instructions on how to create a debug app and add it to the dashboard, see:
+Para obtener instrucciones para desarrolladores sobre cómo crear una aplicación de depuración y añadirla al dashboard, consulta:
 
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-android#creating-an-android-debug-app">Android instructions</Anchor>
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-ios#creating-an-ios-debug-app">iOS instructions</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-android#creating-an-android-debug-app">Nombre del paquete de Android</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-ios#creating-an-ios-debug-app">Instrucciones para iOS</Anchor>
 
-## About pending apps
+## Acerca de las aplicaciones en estado pendiente
 
-Working with an app in pending status can be useful when you are debugging it to test the AppsFlyer SDK.
+Trabajar con una aplicación en estado pendiente puede ser útil cuando la estás probando para el SDK de AppsFlyer.
 
-The status of the app as pending on the dashboard has no effect on data collection and measurement. Whether an app is pending or live on an app store, if users install and interact with it, install and in-app event data is recorded on the dashboard just the same.
+El estado pendiente de la aplicación en el panel no afecta la recopilación y medición de datos. Tanto si una aplicación está en estado pendiente como activa en una tienda, si los usuarios la instalan e interactúan con ella, esos datos se registran en el tablero.
 
-Once your pending app goes live, AppsFlyer will detect and automatically update its status, so you don't need to add it again. <Anchor target="_blank" href="/marketers/docs/why-is-my-app-still-pending">Learn more</Anchor> about pending apps and the optional procedure for manually refreshing status.
+Una vez que tu aplicación pendiente se active, AppsFlyer detectará automáticamente el cambio de estado, sin necesidad de volver a agregarla. <Anchor target="_blank" href="/marketers/es/docs/why-is-my-app-still-pending">Aprenda más</Anchor> sobre las aplicaciones pendientes y el procedimiento opcional para actualizar manualmente el estado.
 
-## Troubleshooting
+## Resolución de problemas
 
-Find solutions for some common issues:
+Encuentra soluciones para problemas comunes:
 
 <div id="app-wasnt-added" />
 
-<Accordion title="App wasn't added">
+<Accordion title="La aplicación no se añadió">
 
-If this error occurs, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
+Si este error ocurre, contacta con tu CSM o envía un correo a [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
 </Accordion>
 
 <div id="app-not-in-the-store" />
 
-<Accordion title="App not in the store">
+<Accordion title="La aplicación no está en la tienda">
 
-Confirm that you have copied the store URL correctly, using the appropriate app name/ID.
+Confirme que ha copiado correctamente la URL de la tienda, asegurándose de usar el nombre o ID apropiado de la aplicación.
 
 </Accordion>
 
 <div id="cant-access-marketplace" />
 
-<Accordion title="Can't access marketplace">
+<Accordion title="No se puede acceder al marketplace.">
 
-This error sometimes occurs when adding an Android app from a non-US store. Follow these steps to resolve it:
+Este error puede ocurrir al añadir una aplicación de Android desde una tienda que no sea la de EE. UU. Siga estos pasos para solucionarlo:
 
-1. Add the app with a status of **Pending approval/not published**, as described above.
-2. Go to the AppsFlyer **App settings** page.
-3. Change the **App store country** to the correct country (for example, Japan).
+1. Añada la aplicación con estado de **Pendiente de aprobación/no publicada**, como se indica anteriormente.
+2. Acceda a la página de **Configuración de la aplicación** de AppsFlyer.
+3. Cambie el **país de la tienda de aplicaciones** al correcto (por ejemplo, Japón).
 
 </Accordion>
 
 <div id="something-went-wrong" />
 
-<Accordion title="Something went wrong. Please try again.">
+<Accordion title="Ha ocurrido un error. Inténtelo de nuevo, por favor.">
 
-One possible reason for this error is trying to add an Android app without a country code (for apps **not** listed in the US Google Play Store). See full details for resolving this issue [above](/docs/adding-an-app-to-appsflyer#in-store).
+Una posible causa de este error es intentar añadir una aplicación de Android sin un código de país (para aplicaciones **no** listadas en Google Play Store de EE. UU.). Consulte [más arriba](/docs/adding-an-app-to-appsflyer#in-store) para ver los detalles completos sobre cómo resolver este problema.
 
 </Accordion>
 
 <div id="my-ios-app" />
 
-<Accordion title="My iOS app was removed from the App Store. Why am I still seeing installs?">
+<Accordion title="Mi aplicación de iOS fue eliminada de la App Store. ¿Por qué sigo viendo instalaciones?">
 
-This happens because users can reinstall an app via the operating system if it previously existed on their device. Even if the app is no longer available in the App Store, users can still install it, and these installs will be counted in AppsFlyer.
+Esto sucede porque los usuarios pueden reinstalar una aplicación a través del sistema operativo si anteriormente existía en su dispositivo. Incluso si la aplicación ya no está disponible en la App Store, los usuarios aún pueden instalarla, y estas instalaciones se contarán en AppsFlyer.
 
 </Accordion>
 
-## Other information
+## Otra información
 
 <div id="product-line" />
 
-<Accordion title="Product Line">
+<Accordion title="Evento ambiguo">
 
-You can add or remove apps from a Product Line. For more information on Product Lines and what they offer, <Anchor target="_blank" href="/marketers/docs/product-line-group-apps-for-cross-platform-attribution">see here</Anchor>.
+Puedes añadir o eliminar aplicaciones de una línea de productos. Para obtener más información sobre las líneas de productos y lo que ofrecen, <Anchor target="_blank" href="/marketers/es/docs/product-line-group-apps-for-cross-platform-attribution">consulta aquí</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="01H8Y09SSKZS2RHM35JT16ESKM=overview 01H8Y0K9EHWH05DB5K02ASJG11=entering-the-wizard-for-adding-an-app 01H8F2TENNWXADKVZFHY9SE8JC=note 01H8ECFB7V0DCNE0ZKPZ2GCVMP=adding-an-app 01H81661SR41SQFZZ0AW6K2EDM=note-1 01H815FE64VZZS9WGJSC8VY74D=enter-app-details 01H815FE64CXEHWTV40NVYQHGJ=android-androidtv-fire h_01KRB930DZ2NRYBZSERSG7WB3A=note-2 01H815FE641Q6N5JY5846QE59Y=important 01H815FE64X0SPA71TBQ9T4ZVB=ios-tvos-macos 01H815FE64ZZA2N1XQFBRXVF41=windows-xbox 01H815FE64XZKDJW1CX5R1JE1T=web-pba 01H815FE646GWA7KJ83KTGHH05=note-3 01H815FE65R1Z06TJR0DNC8PFY=important-1 h_01KGEPG8V7ZZ6V2EYYPES0QM77=web h_01KGPM33BA6AJSX32CTN808AXM=before-you-begin h_01KGPM3GTYJJ0ARD3R1XHVAQ8F=to-add-a-web-app h_01KGPM5TTNSECSWEAQY5VH7DTY=note-4 01H815FE65X37H40AN99EZJ940=roku h_01KDJP1G4QZHAKH13M5D3CD793=amazon-vega-os 01H815FE654W6D4FCANR1DET8A=vizio-smartcast 01H815FE65J6T610QQXWJS0CJS=samsung-tizen 01H815FE65CRW81AD1006KHGV4=lg-webos 01H815FE65ESQZ56C8B4HG9P8M=playstation 01H815FE65483DV8MD4STH3QTR=vidaa 01H815FE655PZS1H9YW95X1R53=steam 01H815FE655XP075WYRVVFKD4F=meta-quest 01H815FE65XJEVHNT45SHGWJS4=nintendo-switch 01H815FE6598PD87PNBE7MFEQ8=xbox 01H815FE658WJCB1ZCPGAD4GGS=epic-games 01H815FE652P3HCWY2PEDJJARM=native-pc 01H815FE65AWE8VKV9FYJ7N8MV=enter-additional-information-not-applicable-to-web-apps h_01HHCFD94K6PGQRED6Z6KXKRQF=select-currency 01H815FE65X7BCFKH1EEFA91GQ=important-2 h_01HHCFDE25S92GZ9TPGQW4PXHV=select-timezone h_01HMNSSBP2EFXCVW290MKW1EFV=note-5 h_01HHCFDRNFDERZZV3TT8BVXMB4=define-app-audience h_01H9MYF17VNBETQ0HS745EJ85H=note-6 h_01HR3Z81NXCAZKK26HWCN5VD9D=manage-your-apps-in-bulk-via-api h_01HR3ZJW7YD4B8WV0NW9MX6EVP=note-7 add-debug-or-testing-app=add-a-debug-or-testing-app h_01K2F8JX66F614HF8D5MWQ26P7=add-a-debug-or-testing-app ios-dummy-app-id-note=note-8 h_01K2F8JX662XEY0A47DZG6DHWQ=note-8 01H815FE65MYPABC3DTVEMA8E9=about-pending-apps 01H815FE655HS8EA4R00D0VCYD=troubleshooting 01H815FE65V2GYP0Q612512DE0=app-wasnt-added 01H815FE65A0HPTVVCT42QQA6M=app-not-in-the-store 01H815FE65EN3PBSH5BKRGNNXD=cant-access-marketplace 01H815FE65FR4ATDA4CVX2FW9N=something-went-wrong h_01JNK9HB2ZWQ78XK9B33QWHV49=my-ios-app h_01K7KSRWCB1Y89T21JFJR42VAJ=other-information h_01K7KSPDSSG8CRCQB5V545Y12Z=product-line" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general 01H8Y09SSKZS2RHM35JT16ESKM=visi%C3%B3n-general entering-the-wizard-for-adding-an-app=acceder-al-asistente-para-a%C3%B1adir-una-aplicaci%C3%B3n 01H8Y0K9EHWH05DB5K02ASJG11=acceder-al-asistente-para-a%C3%B1adir-una-aplicaci%C3%B3n 01H8F2TENNWXADKVZFHY9SE8JC=nota adding-an-app=agregar-una-aplicaci%C3%B3n 01H8ECFB7V0DCNE0ZKPZ2GCVMP=agregar-una-aplicaci%C3%B3n 01H81661SR41SQFZZ0AW6K2EDM=nota-1 enter-app-details=introduce-los-detalles-de-la-aplicaci%C3%B3n 01H815FE64VZZS9WGJSC8VY74D=introduce-los-detalles-de-la-aplicaci%C3%B3n 01H815FE64CXEHWTV40NVYQHGJ=android-androidtv-fire h_01KRB930DZ2NRYBZSERSG7WB3A=nota-2 01H815FE641Q6N5JY5846QE59Y=importante 01H815FE64X0SPA71TBQ9T4ZVB=ios-tvos-macos 01H815FE64ZZA2N1XQFBRXVF41=windows-xbox 01H815FE64XZKDJW1CX5R1JE1T=web-pba 01H815FE646GWA7KJ83KTGHH05=nota-3 01H815FE65R1Z06TJR0DNC8PFY=importante-1 h_01KGEPG8V7ZZ6V2EYYPES0QM77=web before-you-begin=antes-de-comenzar h_01KGPM33BA6AJSX32CTN808AXM=antes-de-comenzar to-add-a-web-app=nota-4 h_01KGPM3GTYJJ0ARD3R1XHVAQ8F=nota-4 h_01KGPM5TTNSECSWEAQY5VH7DTY=nota-5 01H815FE65X37H40AN99EZJ940=roku h_01KDJP1G4QZHAKH13M5D3CD793=amazon-vega-os 01H815FE654W6D4FCANR1DET8A=vizio-smartcast 01H815FE65J6T610QQXWJS0CJS=samsung-tizen 01H815FE65CRW81AD1006KHGV4=lg-webos 01H815FE65ESQZ56C8B4HG9P8M=playstation 01H815FE65483DV8MD4STH3QTR=vidaa 01H815FE655PZS1H9YW95X1R53=steam 01H815FE655XP075WYRVVFKD4F=meta-quest 01H815FE65XJEVHNT45SHGWJS4=nintendo-switch 01H815FE6598PD87PNBE7MFEQ8=xbox 01H815FE658WJCB1ZCPGAD4GGS=epic-games 01H815FE652P3HCWY2PEDJJARM=native-pc enter-additional-information-not-applicable-to-web-apps=introduzca-informaci%C3%B3n-adicional-no-aplicable-a-aplicaciones-web 01H815FE65AWE8VKV9FYJ7N8MV=introduzca-informaci%C3%B3n-adicional-no-aplicable-a-aplicaciones-web select-currency=seleccionar-moneda h_01HHCFD94K6PGQRED6Z6KXKRQF=seleccionar-moneda 01H815FE65X7BCFKH1EEFA91GQ=importante-2 select-timezone=seleccionar-zona-horaria h_01HHCFDE25S92GZ9TPGQW4PXHV=seleccionar-zona-horaria h_01HMNSSBP2EFXCVW290MKW1EFV=nota-6 define-app-audience=definir-el-p%C3%BAblico-objetivo-de-la-aplicaci%C3%B3n h_01HHCFDRNFDERZZV3TT8BVXMB4=definir-el-p%C3%BAblico-objetivo-de-la-aplicaci%C3%B3n h_01H9MYF17VNBETQ0HS745EJ85H=nota-7 manage-your-apps-in-bulk-via-api=gestiona-tus-aplicaciones-en-bloque-a-trav%C3%A9s-de-la-api h_01HR3Z81NXCAZKK26HWCN5VD9D=gestiona-tus-aplicaciones-en-bloque-a-trav%C3%A9s-de-la-api h_01HR3ZJW7YD4B8WV0NW9MX6EVP=nota-8 add-debug-or-testing-app=a%C3%B1adir-una-aplicaci%C3%B3n-de-depuraci%C3%B3n-o-de-prueba h_01K2F8JX66F614HF8D5MWQ26P7=a%C3%B1adir-una-aplicaci%C3%B3n-de-depuraci%C3%B3n-o-de-prueba ios-dummy-app-id-note=nota-9 h_01K2F8JX662XEY0A47DZG6DHWQ=nota-9 about-pending-apps=acerca-de-las-aplicaciones-en-estado-pendiente 01H815FE65MYPABC3DTVEMA8E9=acerca-de-las-aplicaciones-en-estado-pendiente troubleshooting=resoluci%C3%B3n-de-problemas 01H815FE655HS8EA4R00D0VCYD=resoluci%C3%B3n-de-problemas 01H815FE65V2GYP0Q612512DE0=app-wasnt-added 01H815FE65A0HPTVVCT42QQA6M=app-not-in-the-store 01H815FE65EN3PBSH5BKRGNNXD=cant-access-marketplace 01H815FE65FR4ATDA4CVX2FW9N=something-went-wrong h_01JNK9HB2ZWQ78XK9B33QWHV49=my-ios-app other-information=otra-informaci%C3%B3n h_01K7KSRWCB1Y89T21JFJR42VAJ=otra-informaci%C3%B3n h_01K7KSPDSSG8CRCQB5V545Y12Z=product-line" />

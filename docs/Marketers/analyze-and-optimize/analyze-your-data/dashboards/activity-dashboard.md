@@ -1,5 +1,5 @@
 ---
-title: Activity dashboard
+title: Dashboard de actividad
 metadata:
   keywords:
     - activity report
@@ -14,79 +14,203 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2016-01-12T15:50:15Z'
-  edited_at: '2025-11-24T09:07:15Z'
+  edited_at: '2026-08-12T11:50:21Z'
   id: 207602503
-  locale: en-us
+  locale: es
   section: Dashboards
   section_id: 6550925337873
-  url: https://support.appsflyer.com/hc/en-us/articles/207602503-Activity-dashboard
+  url: https://support.appsflyer.com/hc/es/articles/207602503
 ---
-> **At a glance:** See app activity, engagement, and in-app metrics during a given period. Current day metrics update in real-time.
+> **En resumen:** Consulta la actividad de la aplicación, el engagement y las métricas internas durante un periodo específico. Las métricas del día actual se actualizan en tiempo real.
 
-![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
+![ActividadDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
 
-## Activity dashboard
+## Dashboard de actividad
 
-* Contains organic and non-organic traffic
-* Date range relates to the event date and isn't <Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV-based.</Anchor>
-* Data freshness:
-  * **Current day**: <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">Continuous</Anchor>. Example: DAU, sessions, revenue
-  * **Average:** Daily. Example: MAU, Average DAU, Average MAU
-* Geo filter relates to the user location at install time
+* Contiene tráfico orgánico y no orgánico.
+* El rango de fechas se refiere a la fecha del evento y no está <Anchor target="_blank" href="/marketers/es/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">basado en LTV.</Anchor>
+* Actualización de datos:
+  * **Día actual**: <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">Continuo</Anchor>. Ejemplo: DAU, sesiones, ingresos
+  * **Promedio:** A diario. Ejemplo: MAU, DAU promedio, MAU promedio
+* El filtro Geo se refiere a la ubicación del usuario en el momento de la instalación.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> Want to know more about the Activity dashboard? Check out this short, informative <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7802/play/18621/the-activity-dashboard">course on the AppsFlyer Learning Portal</Anchor>.
+> ¿Quieres saber más sobre el dashboard de actividad? Consulta este breve <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7802/play/18621/the-activity-dashboard">curso informativo en el portal de aprendizaje de AppsFlyer</Anchor>.
 
-## Dashboard features and layout
+## Características y diseño del dashboard
 
 <div id="metric-definitions" />
 
-<Accordion title="Metric definitions">
+<Accordion title="Definición de métricas">
 
-<table><thead><tr><th>Metric</th><th>Description</th></tr></thead><tbody><tr><td><span id="dau"></span>DAU</td><td><ul><li>Daily active users: The number of unique users who opened the app at least once during the day.</li><li>DAU is based on sessions.</li><li><a href="./unique-users" target="_blank">Learn more about unique users</a></li></ul></td></tr><tr><td><span id="average-dau"></span>Average DAU</td><td><p>Average number of daily active users, per day, during the selected period.</p><p>Example: Calculating average DAU</p><figure><table><thead><tr><th> </th><th>Sunday </th><th>Monday</th><th>Tuesday</th></tr></thead><tbody><tr><td><span id="daily-active-unique-users"></span>Daily active unique users</td><td>10</td><td>12</td><td>8</td></tr></tbody></table></figure><p><strong>Average DAU</strong> = (10+12+8)/3= 10. </p></td></tr><tr><td><span id="mau"></span>MAU</td><td><p>Monthly active users: </p><ul><li><strong>Detailed:</strong> Number of unique users (counted only once) who opened the app at least once during the previous 31 days.</li><li><strong>High-level:</strong> Number of unique users (counted only once) who opened the app at least once during the calendar month.</li></ul></td></tr><tr><td><span id="daumau-rate"></span>DAU/MAU rate</td><td><ul><li>This metric presents a view of the rate of returning users. A DAU/MAU rate of 50% means that the average user opened the app on 15 out of the previous 31 days.</li><li>The DAU/MAU rate is a measure of user stickiness and provides a snapshot of user retention. </li></ul></td></tr><tr><td><span id="revenue"></span>Revenue</td><td>Revenue generated for the selected period. Revenue consists of in-app purchases (if reported) and ad revenue. </td></tr><tr><td><span id="arpdau"></span>ARPDAU</td><td><p>Average revenue per daily active user.<br/>Formula: Sum of (Revenue on day [n] / DAU on day [n])]/Number of days.</p><p><br /><br /><strong><span id="h_01HHYHP1HFZBRTWB8MJ1F6XKZS"></span>Example: Calculation of ARPDAU</strong><br /></p><figure><table><thead><tr><th>Day</th><th>Revenue ($) on day </th><th>DAU</th><th>Average daily user revenue ($)</th></tr></thead><tbody><tr><td><span id="day-1"></span>Day 1</td><td>10</td><td>5</td><td>2</td></tr><tr><td><span id="day-2"></span>Day 2</td><td>16</td><td>4</td><td>4</td></tr><tr><td><span id="day-3"></span>Day 3</td><td>30</td><td>5</td><td>6</td></tr><tr><td> </td><td> </td><td>Total:</td><td>12</td></tr><tr><td><span id="::4eb0b020"></span> </td><td> </td><td>Number of days</td><td>3</td></tr><tr><td><span id="::b35cc38c"></span> </td><td> </td><td><strong>ARPDAU</strong></td><td>4</td></tr></tbody></table></figure></td></tr><tr><td><span id="sessions"></span>Sessions</td><td>Sessions during the selected date range (if reported by the app)</td></tr><tr><td><span id="installs"></span>Installs</td><td>Number of installs during the specified date range</td></tr><tr><td><span id="average-ecpi"></span>Average eCPI</td><td>Average cost per install. Note: Installs are UA installs and cost is unified (UA and retargeting).</td></tr><tr><td><span id="conversion-rate"></span>Conversion rate</td><td>Rate of installs from clicks. <strong>Note</strong>: Installs are UA installs and clicks are unified (UA and retargeting).</td></tr></tbody></table>
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Métrica
+      </th>
+      <th>
+        Descripción
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><span id="dau"></span>
+        DAU
+      </td>
+      <td>
+        * Usuarios activos diarios: Cantidad de usuarios únicos que abrieron la aplicación al menos una vez en el día.
+        * DAU se basa en sesiones.
+        * <Anchor target="_blank" href="/marketers/es/docs/unique-users">Más información sobre usuarios únicos</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td><span id="average-dau"></span>
+        DAU promedio
+      </td>
+      <td>
+        Número promedio de usuarios activos diarios por día, durante el periodo seleccionado.
+
+        Ejemplo: Cálculo del DAU promedio
+
+        > 📄
+        >
+        > |  | Domingo | Lunes | Martes |
+        > | --- | --- | --- | --- |
+        > | <span id="daily-active-unique-users"></span>Usuarios únicos activos al día | 10 | 12 | 8 |
+        >
+        >
+        >
+        > **DAU promedio** = (10+12+8)/3 = 10.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="mau"></span>
+        MAU
+      </td>
+      <td>
+        Usuarios activos mensuales:
+
+        * **Detallado:** Número de usuarios únicos (contados solo una vez) que abrieron la aplicación al menos una vez durante los 31 días anteriores.
+        * **Alto nivel:** Número de usuarios únicos (contados solo una vez) que abrieron la aplicación al menos una vez durante el mes.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="daumau-rate"></span>
+        Tasa DAU/MAU
+      </td>
+      <td>
+        * Esta métrica muestra la proporción de usuarios que regresan. Una tasa DAU/MAU del 50% indica que el usuario medio abrió la aplicación en 15 de los últimos 31 días.
+        * La tasa DAU/MAU mide la fidelidad del usuario y ofrece una instantánea de su retención.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="revenue"></span>
+        Ingresos
+      </td>
+      <td>
+        Ingresos generados durante el periodo seleccionado. Los ingresos comprenden compras in-app (si se reportan) e ingresos por publicidad.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="arpdau"></span>
+        ARPDAU
+      </td>
+      <td>
+        Ingresos promedio por usuario activo diario.  
+        Fórmula: Suma de (Ingresos del día [n] / DAU del día [n]) / Número de días.
+
+        > 📄 **Ejemplo: Cálculo del ARPDAU**
+        >
+        > | Día | Ingresos ($) por día | DAU | Ingresos diarios promedio por usuario ($) |
+        > | --- | --- | --- | --- |
+        > | <span id="day-1"></span>Día 1 | 10 | 5 | 2 |
+        > | <span id="day-2"></span>Día 2 | 16 | 4 | 4 |
+        > | <span id="day-3"></span>Día 3 | 30 | 5 | 6 |
+        > |  |  | Total: | 12 |
+        > |  <span id="::4eb0b020"></span>|  | Número de días | 3 |
+        > |  <span id="::b35cc38c"></span>|  | **ARPDAU** | 4 |
+      </td>
+    </tr>
+    <tr>
+      <td><span id="sessions"></span>
+        Sesiones
+      </td>
+      <td>
+        Sesiones durante el rango de fechas seleccionado (si se reporta por la aplicación)
+      </td>
+    </tr>
+    <tr>
+      <td><span id="installs"></span>
+        Instalaciones
+      </td>
+      <td>
+        Número de instalaciones durante el rango de fechas especificado.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="average-ecpi"></span>
+        eCPI promedio
+      </td>
+      <td>
+        Costo promedio por instalación Costo promedio por instalación Nota: Las instalaciones son instalaciones de UA y el costo es unificado (UA y retargeting).
+      </td>
+    </tr>
+    <tr>
+      <td><span id="conversion-rate"></span>
+        Tasa de conversión
+      </td>
+      <td>
+        Tasa de instalaciones a partir de clics. **Nota**: Las instalaciones son instalaciones de UA y los clics son unificados (UA y retargeting).
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>
 
 <div id="detailed-tab" />
 
-<Accordion title="Detailed tab">
+<Accordion title="Pestaña detallada">
 
-The detailed analysis tab is divided into sections: headline metrics, activity trend, and activity summary.
+La pestaña de análisis detallado se divide en secciones: métricas principales, tendencia de actividad y resumen de actividad.
 
-<table><tbody><tr><td colspan="2"><h4><strong><span id="headline-metrics"></span>Headline metrics</strong></h4></td></tr><tr><td> </td><td><img alt="ActivityHeadLines_us-en__1_.png" src="https://files.readme.io/a4f1a5316eeacf0f635bbeadf52d490dd0276bb8a1fe9c0e32db7008d11d044b-360012584838.png"/></td></tr><tr><td> </td><td><p><strong>Average active users</strong></p><ul><li>Average DAU: the average number of daily active users in the specified time range.</li><li>Average MAU: the average number of monthly active users in the specified time range. This is calculated as a moving average of the days in the selected range where each day looks back 31 days. Note: To see a given month's MAU value, like March, set the date range to the last day of that month (for example, March 31st) and look at the Average MAU value.</li></ul></td></tr><tr><td> </td><td><strong>Total installs:</strong> Number of installs divided into organic and non-organic installs</td></tr><tr><td> </td><td><strong>Total sessions</strong>: Number of sessions divided into sessions by organic and non-organic users</td></tr><tr><td> </td><td><strong>Total revenue</strong>: Revenue, divided into revenue attributable to organic and non-organic users</td></tr><tr><td colspan="2"><h4><br/><strong><span id="activity-trends"></span>Activity trends</strong><br/> </h4></td></tr><tr><td> </td><td><p> <strong>Trend line with comparison</strong></p><p><img alt="TrendLinWithComp_us-en.png" src="https://files.readme.io/b9edb3e409dc13bc72aebdccdc499fa2dcd9abf4549fb0170bf0cdc7036eee15-360012507997.png"/></p><ul><li>Trend chart displays KPIs or in-app-event-related measurements.</li><li>An optional comparison trend line can be added by enabling the <strong>Compare with the previous</strong> time frame (day, week, month, quarter, year).</li><li>For example, if you select "month", it means that for a given day in the chart, the comparison is to the same day of the previous month. </li></ul><p>KPIs available are:</p><ul><li><span>DAU</span></li><li><span>MAU</span></li><li><span>Revenue</span></li><li><span>ARPDAU</span></li><li><span>Sessions</span></li><li><span>DAU/MAU rate</span></li></ul><p><span>In-app event measures available are: </span></p><ul><li><span>Count</span></li><li><span>Unique users</span></li><li><span>Revenue</span></li></ul></td></tr><tr><td colspan="2"><h4><br/><strong><span id="activity-summary-table"></span>Activity summary table</strong></h4></td></tr><tr><td> </td><td><p>The Activity summary table:</p><ul><li>Displays up to 50 media sources with data relating to impressions, clicks, installs, etc. (To get all data, use <a href="./master-api-user-acquisition-metrics-via-api" target="_blank">Master API</a> or <a href="./pivot-table-user-metrics" target="_blank">Pivot.)</a></li><li>Is sorted by the number of sessions.</li><li>Gives you the ability to drill down to the campaign level (it's not possible to drill down beyond this level.)</li><li>Is a good way to see how many DAUs are new and how many are existing users (DAUs minus Installs).</li></ul><p><span>To use the summary table:</span></p><ul><li><span>Refine the data displayed by using the Filter by and Group by fields.</span></li><li><span>Table columns can be sorted by clicking on a column header.</span></li><li>Filter by <strong>In-app events</strong> to limit the display to specific in-app events.</li><li>Switch between different view types:<ul><li><strong>Summary:</strong> The total for all in-app events selected</li><li><strong>In</strong>-<strong>App events:</strong> Broken down by in-app event</li></ul></li></ul></td></tr></tbody></table>
+<table><tbody><tr><td colspan="2"><h4><strong><span id="headline-metrics"></span>Métricas principales</strong></h4></td></tr><tr><td> </td><td><img alt="ActivityHeadLines_us-en__1_.png" src="https://files.readme.io/a4f1a5316eeacf0f635bbeadf52d490dd0276bb8a1fe9c0e32db7008d11d044b-360012584838.png"/></td></tr><tr><td> </td><td><p><strong>Promedio de usuarios activos</strong></p><ul><li>DAU promedio: número promedio de usuarios activos diarios en el periodo especificado.</li><li>MAU promedio: número promedio de usuarios activos mensuales en el periodo especificado. Se calcula como un promedio móvil de los días en el rango seleccionado, donde cada día observa los 31 días anteriores. Nota: Para ver el valor de MAU de un mes dado, como marzo, ajusta el rango de fechas al primer día después de ese mes (por ejemplo, el 1 de abril) y consulta el valor de MAU promedio.</li></ul></td></tr><tr><td> </td><td> <strong>Instalaciones totales:</strong> Número de instalaciones divididas en orgánicas y no orgánicas.</td></tr><tr><td> </td><td> <strong>Sesiones totales</strong>: Número de sesiones divididas entre usuarios orgánicos y no orgánicos.</td></tr><tr><td> </td><td> <strong>Ingresos totales</strong>: Ingresos, divididos entre usuarios orgánicos y no orgánicos.</td></tr><tr><td colspan="2"><h4> <br/><strong><span id="activity-trends"></span>Tendencias de actividad</strong><br/> </h4></td></tr><tr><td> </td><td><p> <strong>Línea de tendencia comparativa</strong></p><p><img alt="TrendLinWithComp_us-es.png" src="https://files.readme.io/b9edb3e409dc13bc72aebdccdc499fa2dcd9abf4549fb0170bf0cdc7036eee15-360012507997.png"/></p><ul><li>El gráfico de tendencias muestra los KPIs o las métricas relacionadas con eventos in-app.</li><li>Se puede agregar una línea de tendencia comparativa opcional habilitando la opción <strong>Comparar con el periodo</strong> previo (día, semana, mes, trimestre, año).</li><li>Por ejemplo, si seleccionas "mes", significa que para un día particular en el gráfico, la comparación es con el mismo día del mes anterior. </li></ul><p>Los KPIs disponibles son:</p><ul><li><span>DAU</span></li><li><span>MAU</span></li><li><span>Ingresos</span></li><li><span>ARPDAU</span></li><li><span>Sesiones</span></li><li><span>Tasa DAU/MAU</span></li></ul><p><span>Las métricas disponibles para eventos in-app son: </span></p><ul><li><span>Recuento</span></li><li><span>Usuarios únicos</span></li><li><span>Ingresos</span></li></ul></td></tr><tr><td colspan="2"><h4> <br/><strong><span id="activity-summary-table"></span>Tabla de resumen de actividad</strong> </h4></td></tr><tr><td> </td><td><p>La tabla de resumen de actividad:</p><ul><li>Muestra hasta 50 fuentes de medios con datos sobre impresiones, clics, instalaciones, etc. (Para obtener todos los datos, utiliza <a href="./master-api-user-acquisition-metrics-via-api" target="_blank">Master API</a> o <a href="./pivot-table-user-metrics" target="_blank">Pivot).</a> </li><li>Está ordenada por el número de sesiones.</li><li>Te permite profundizar hasta el nivel de campaña (no es posible profundizar más allá de este nivel).</li><li>Es una buena manera de ver cuántos DAUs son nuevos y cuántos son usuarios existentes (DAUs menos instalaciones).</li></ul><p><span>Para utilizar la tabla de resumen:</span></p><ul><li><span>Refina los datos mostrados usando los campos Filtrar por y Agrupar por.</span></li><li><span>Las columnas de la tabla se pueden ordenar haciendo clic en el encabezado de cada columna.</span></li><li>Filtra por <strong>Eventos in-app</strong> para limitar la visualización a eventos específicos.</li><li>Cambia entre diferentes tipos de vista:<ul><li> <strong>Resumen:</strong> El total de todos los eventos in-app seleccionados</li><li> Eventos <strong><strong>in</strong>-app:</strong> Desglosado por evento in-app</li></ul></li></ul></td></tr></tbody></table>
 
 </Accordion>
 
 <div id="highlevel-tab-previous-twelvemonths" />
 
-<Accordion title="High-level tab: previous twelve-months">
+<Accordion title="Pestaña de alto nivel: últimos doce meses">
 
 ![ActivityHiLevel.png](https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png)
 
-The tab contains a twelve-month historical overview of app activity performance and has the following charts: 
+La pestaña ofrece una visión general del rendimiento de la actividad de la aplicación a lo largo de doce meses y cuenta con los siguientes gráficos: 
 
-* Active users and revenue
-* Monthly gross profit: revenue, cost, gross profit
+* Usuarios activos e ingresos
+* Ganancias brutas mensuales: ingresos, costos, beneficios brutos
 
 </Accordion>
 
-## Specifications and limitations
+## Especificaciones y limitaciones
 
-| Spec | Remarks |
+| Especificaciones | Observaciones |
 | --- | --- |
-| Data freshness | <ul><li>**Metrics:** Real-time. See image that follows.</li><li>**Average metrics**: Daily. See image that follows. **Note**: Average metrics aren't calculated in real-time to avoid distorting the average with data from incomplete days. If the date range includes the current day, then the following occurs:<ul><li>If the date range is for the current day only: average results are not displayed.</li><li>If the date range is for a period that includes the current day: the average is calculated without including data from the current day.</li></ul></li><li>**Data processing for previous day:** Data processing initiates at midnight UTC for the preceding day's data. For applications operating in time zones behind UTC (UTC-), this means that their local day may still be in progress when processing begins, potentially leading to initially incomplete data. The remaining data is processed and incorporated the following day.</li><li>**Ad revenue:** <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#data-freshness">Recorded with a lag</Anchor> and reported under the following date:<ul><li>Aggregate-level data: under Day 1 (the day the data is pulled).</li><li>User-level data: under Day 0 (the day the ad displays).</li></ul></li></ul>[![Whats_realtime.png](https://files.readme.io/39969fe7395e1b22910aed5d6ca61f6b5603171650f0d0ce88218a2491c02cc5-4407209143953.png)](https://files.readme.io/39969fe7395e1b22910aed5d6ca61f6b5603171650f0d0ce88218a2491c02cc5-4407209143953.png) |
-| Uninstalls | Not supported |
-| Retargeting | As of February 1, 2025, all activity metrics are unified data (UA and retargeting together). However, prior to February 1, 2025, the following metrics include only UA traffic data:<ul><li>Total sessions</li><li>DAU</li><li>MAU</li><li>DAU/MAU</li><li>ARPDAU</li><li>Cost</li><li>Clicks</li><li>Impressions</li><li>Conversion rate</li><li>eCPI</li></ul>Unified is the only view available; users aren't able to switch to just UA or retargeting. |
-| ARPDAU | There may be discrepancies between ARPDAU in the Activity dashboard and Pivots. |
-| Historical data | <ul><li>3 years</li><li>High-level tab: 1 year</li></ul> |
-| Display range | <ul><li>Maximum 2 months. If a longer period is specified, the range is reduced to two months and a message is displayed.</li></ul> |
-| Group by geo | <ul><li>Aggregation by geo is based on the geo where the install occurred.</li><li>Displays up to 62 geos (ranked by top activity sessions).</li></ul> |
-| Group by campaign | This grouping is only available after selecting specific media sources. |
-| Dimension values | Values for dimensions such as media source, campaign name, and asset name are case-sensitive. For example, this means that "Facebook" and "facebook" will be treated as separate entities when filtering results. To view results without considering case sensitivity, utilize the <Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot table</Anchor>. |
-| Agencies | Agencies don't have access to the Activity dashboard. <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">Learn more</Anchor> |
-| Average DAU and Average MAU | Average DAU and Average MAU metrics may count the same user under multiple groupings. For example, if a user installs an app via Network A and later engages with it through Network B, they will appear under both networks when grouping by Media Source or Campaign. As a result, summing these values directly may lead to duplication. To obtain the accurate total Average DAU or Average MAU, refer to the KPI metric instead of aggregating the table values. |
-| Ad networks | For certain ad networks, the Activity Table may display two rows instead of one. In such cases:<ul><li>Impressions, Clicks, Cost, and Conversions should be calculated as the sum of both rows.</li><li>Activity Sessions, Activity Revenue, Average DAU, Average MAU, Average DAU/MAU Rate, and ARPDAU should be taken from only one of the rows.</li></ul> |
-| Legacy unattributed organic in-apps mode | If your app uses the legacy **Unattributed organic in-apps** mode, real-time **organic Active Users** may appear lower than expected. Values correct automatically after the current day completes. For the most accurate real-time view, we recommend switching to **first-install mode**.  <br />Learn more about <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#unattributed-organic-inapps">Unattributed organic in-apps mode</Anchor> and <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#attributed-to-the-first-install">first-install mode</Anchor>. |
+| Actualización de los datos | <ul><li>**Métricas:** En tiempo real. Ver la imagen a continuación.</li><li>**Métricas promedio**: A diario. Mira la imagen a continuación. **Nota**: Las métricas promedio no se calculan en tiempo real para evitar distorsiones debido a datos de días incompletos. Si el rango de fechas incluye el día actual, sucede lo siguiente:<ul><li>Si el rango es solo para el día actual: no se muestran resultados promedio.</li><li>Si el rango incluye el día actual: el promedio se calcula sin incluir datos de este día.</li></ul></li><li>**Procesamiento de datos del día anterior:** El procesamiento de datos comienza a medianoche UTC para los datos del día anterior. Para las aplicaciones que operan en zonas horarias por detrás de UTC (UTC-), esto significa que su día local puede seguir en curso cuando empieza el procesamiento, lo que puede hacer que los datos aparezcan inicialmente incompletos. Los datos restantes se procesan y se incorporan al día siguiente.</li><li>Ingresos publicitarios: <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#data-freshness">Registrado con retraso</Anchor> y reportado bajo la siguiente fecha:<ul><li>Datos agregados: bajo el Día 1 (el día en que se extraen los datos).</li><li>Datos agregados: bajo el Día 1 (el día en que se extraen los datos).</li><li>Datos a nivel de usuario: bajo el Día 0 (el día en que se muestra el anuncio).</li></ul></li></ul>[![Whats_realtime.png](https://files.readme.io/39969fe7395e1b22910aed5d6ca61f6b5603171650f0d0ce88218a2491c02cc5-4407209143953.png)](https://files.readme.io/39969fe7395e1b22910aed5d6ca61f6b5603171650f0d0ce88218a2491c02cc5-4407209143953.png) |
+| Desinstalaciones | No compatible |
+| Reorientación | A partir del 1 de febrero de 2025, todas las métricas de actividad son datos unificados (UA y retargeting juntos). Sin embargo, antes del 1 de febrero de 2025, las siguientes métricas incluyen solo datos de tráfico de UA:<ul><li>Sesiones totales</li><li>DAU</li><li>MAU</li><li>DAU/MAU</li><li>ARPDAU</li><li>Costo</li><li>Clics</li><li>Impresiones</li><li>Tasa de conversión</li><li>IPC electrónico</li></ul>Unificado es la única vista disponible; los usuarios no pueden cambiar a solo UA o retargeting. |
+| ARPDAU | Puede haber discrepancias entre ARPDAU en el dashboard de actividad y pivot. |
+| Datos históricos | <ul><li>3 años</li><li>Pestaña de alto nivel: 1 año</li></ul> |
+| Rango de visualización | <ul><li>Máximo 2 meses. Si se especifica un periodo más largo, el rango se reduce a dos meses y se muestra un mensaje.</li></ul> |
+| Agrupar por geo | <ul><li>La agregación por geo se basa en la geolocalización donde ocurrió la instalación.</li><li>Muestra hasta 62 localizaciones (clasificadas por las sesiones de actividad más destacadas).</li></ul> |
+| Agrupar por campaña | Este agrupamiento solo está disponible tras seleccionar fuentes de medios específicas. |
+| Valores de dimensión | Los valores de dimensiones como fuente de medios, nombre de la campaña o nombre del activo son sensibles a mayúsculas y minúsculas. Por ejemplo, esto significa que "Facebook" y "facebook" se tratarán como entidades diferentes al filtrar los resultados. Para ver los resultados sin distinción de mayúsculas y minúsculas, utiliza la <Anchor target="_blank" href="/marketers/es/docs/pivot-table-user-metrics">tabla pivot</Anchor>. |
+| Agencias | Las agencias no tienen acceso al dashboard de actividad. <Anchor target="_blank" href="/marketers/es/docs/manage-data-access-permissions">Saber más</Anchor> |
+| DAU promedio y MAU promedio | Las métricas de DAU promedio y MAU promedio pueden contabilizar al mismo usuario en varias agrupaciones. Por ejemplo, si un usuario instala una aplicación a través de la red A y, más tarde, interactúa con ella a través de la red B, aparecerá en ambas redes al agrupar por Fuente de medios o Campaña. Como resultado, sumar estos valores directamente puede dar lugar a duplicaciones. Para obtener el total preciso de DAU promedio o MAU promedio, consulta la métrica KPI en lugar de agregar los valores de la tabla. |
+| Redes publicitarias | Para algunas ad networks, la tabla de actividad puede mostrar dos filas en lugar de una. En estos casos:<ul><li>Las Impresiones, los Clics, el Costo y las Conversiones deben calcularse como la suma de ambas filas.</li><li>Las sesiones de actividad, los ingresos de actividad, el DAU promedio, el MAU promedio, la tasa promedio de DAU/MAU y el ARPDAU deben tomarse solo de una de las filas.</li></ul> |
+| Modo heredado de in-apps orgánicos sin atribuir | Si tu aplicación usa el modo heredado **Unattributed organic in-apps** modo, los tiempo real **usuarios activos** orgánicos pueden aparecer por debajo de lo esperado. Los valores se corrigen automáticamente después de que termine el día actual. Para obtener la vista en tiempo real más precisa, te recomendamos cambiar a **first-install mode**.  <br />Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#unattributed-organic-inapps">Unattributed organic in-apps mode</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#attributed-to-the-first-install">first-install mode</Anchor>. |
 
-<div data-zendesk-anchors="h_01HHYHP1HE8G5VA6GSAVTQDDDN=activity-dashboard h_01HHYHP1HEJHKQKCNC5R26ZE3J=tip h_01HHYHP1HEBTACW6Q3MJ3QJJ95=dashboard-features-and-layout h_01HHYHP1HESQBPYJWK81ZHQDVH=metric-definitions h_01HHYHP1HFF92WQMQAFKWWNDJK=detailed-tab h_01HHYHP1HFNDXC2E55Q7PDE9WY=headline-metrics h_01HHYHP1HFZR9JN2H0RNAG1QTK=activity-trends h_01HHYHP1HFV8AZ2FYKJ300488A=activity-summary-table h_01HHYHP1HF6FCXPS2SHTH0RBXC=highlevel-tab-previous-twelvemonths h_01HHYHP1HFNJF4JJZY4CSVZ3GY=specifications-and-limitations" />
+<div data-zendesk-anchors="activity-dashboard=dashboard-de-actividad h_01HHYHP1HE8G5VA6GSAVTQDDDN=dashboard-de-actividad h_01HHYHP1HEJHKQKCNC5R26ZE3J=consejo dashboard-features-and-layout=caracter%C3%ADsticas-y-dise%C3%B1o-del-dashboard h_01HHYHP1HEBTACW6Q3MJ3QJJ95=caracter%C3%ADsticas-y-dise%C3%B1o-del-dashboard h_01HHYHP1HESQBPYJWK81ZHQDVH=metric-definitions h_01HHYHP1HFZBRTWB8MJ1F6XKZS=ejemplo-c%C3%A1lculo-del-arpdau h_01HHYHP1HFF92WQMQAFKWWNDJK=detailed-tab h_01HHYHP1HFNDXC2E55Q7PDE9WY=headline-metrics h_01HHYHP1HFZR9JN2H0RNAG1QTK=activity-trends h_01HHYHP1HFV8AZ2FYKJ300488A=activity-summary-table h_01HHYHP1HF6FCXPS2SHTH0RBXC=highlevel-tab-previous-twelvemonths specifications-and-limitations=especificaciones-y-limitaciones h_01HHYHP1HFNJF4JJZY4CSVZ3GY=especificaciones-y-limitaciones" />

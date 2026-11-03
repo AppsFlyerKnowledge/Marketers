@@ -1,5 +1,5 @@
 ---
-title: Data Collaboration Platform (DCP) - View measurement reports
+title: Plataforma de colaboración de datos (DCP) - Ver reportes de medición
 metadata:
   keywords:
     - Marketers
@@ -12,273 +12,272 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2025-04-03T14:39:29Z'
-  edited_at: '2026-10-21T10:31:49Z'
+  edited_at: '2026-10-22T03:38:46Z'
   id: 34060852331153
-  locale: en-us
+  locale: es
   section: Collaboration measurement
   section_id: 38034865098641
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/34060852331153-Data-Collaboration-Platform-DCP-View-measurement-reports
+  url: https://support.appsflyer.com/hc/es/articles/34060852331153
 ---
-> **At a glance:** Customize your measurement reports by setting report fields, aggregation levels, schedules, and cloud connections.
+> **Resumen:** Personaliza tus reportes de medición configurando los campos del reporte, los niveles de agregación, las programaciones y las conexiones en la nube.
 
-Data Collaboration Platform (DCP) measurement reports provide top-level metrics such as clicks, impressions, and ROAS per campaign. They may also include additional metrics and dimensions based on granted access.
+Los reportes de medición de la plataforma de colaboración de datos (DCP) proporcionan métricas de alto nivel, como clics, impresiones y ROAS por campaña. También pueden incluir métricas y dimensiones adicionales en función del acceso concedido.
 
-Reports are sent directly to your connected cloud storage or data warehouse. You can receive reports in either a predefined format or customize them to include the specific metrics and dimensions you need.
+Los reportes se envían directamente a tu almacenamiento en la nube conectado o a tu almacén de datos. Puedes recibir reportes en un formato predefinido o personalizarlos para incluir las métricas y dimensiones específicas que necesites.
 
 <div id="what-are-dimensions-and-metrics" />
 
-<Accordion title="What are dimensions and metrics?">
+<Accordion title="¿Qué son las dimensiones y las métricas?">
 
-The collaboration measurement report is an aggregated report that summarizes data by grouping and combining individual records. It provides high-level insights rather than raw, user-level data.
+El reporte de medición de colaboración es un reporte agregado que resume los datos agrupando y combinando registros individuales. Proporciona insights de alto nivel en lugar de datos sin procesar a nivel de usuario.
 
-Report fields are divided into two types: *dimensions* and *metrics*. Each can be further divided into *basic fields* and *calculated fields*.
+Los campos del reporte se dividen en dos tipos: *dimensiones* y *métricas*. Cada uno puede dividirse además en *campos básicos* y *campos calculados*.
 
-### Dimensions
+### Dimensiones
 
-A dimension is a grouping category that aggregates event-level data into report records. For example, if the media source is selected as the report dimension, each row will contain aggregated data for all events attributed to that media source. The number of rows equals the number of media sources.
+Una dimensión es una categoría de agrupación que agrega datos a nivel de evento en registros de reporte. Por ejemplo, si se selecciona la fuente de medios como dimensión del reporte, cada fila contendrá datos agregados de todos los eventos atribuidos a esa fuente de medios. El número de filas equivale al número de fuentes de medios.
 
-Adding more dimensions increases the grouping granularity. For instance, selecting Event date, Media source, and Campaign results in one row per unique combination of those fields.
+Añadir más dimensiones aumenta la granularidad de la agrupación. Por ejemplo, seleccionar Fecha del evento, Fuente de medios y Campaña da como resultado una fila por cada combinación única de esos campos.
 
-### Metrics
+### Comenzar
 
-A metric is numerical data grouped based on the selected dimensions.
+Una métrica es un dato numérico agrupado según las dimensiones seleccionadas.
 
-For example, if Revenue is selected as the metric and Media source is the only dimension, the report displays total revenue per media source.
+Por ejemplo, si ingresos se selecciona como la métrica y fuente de medios es la única dimensión, el reporte muestra los ingresos totales por fuente de medios.
 
-When multiple dimensions are selected, such as Event date, Media source, and Campaign, the revenue is grouped by the combination of those fields.
+Cuando se seleccionan varias dimensiones, como Fecha del evento, Fuente de medios y Campaña, los ingresos se agrupan por la combinación de esos campos.
 
-When selecting a metric, choose its aggregation function. For example, for the revenue metric, you would select the **SUM** function.
+Al seleccionar una métrica, elige su función de agregación. Por ejemplo, para la métrica de ingresos, seleccionarías la función **SUM**.
 
-### What are basic and calculated fields?
+### ¿Qué son los campos básicos y los campos calculados?
 
-Dimensions and metrics can be either basic fields or calculated fields.
+Las dimensiones y las métricas pueden ser campos básicos o campos calculados.
 
-* **Basic fields:** Basic fields contain raw data from sources or in-app events.
-* **Calculated fields:** Calculated fields use basic fields to compute values using defined functions.
+* **Campos básicos:** Los campos básicos contienen raw data de fuentes o eventos in-app.
+* **Campos calculados:** Los campos calculados usan campos básicos para calcular valores mediante funciones definidas.
 
 </Accordion>
 
-## Create a predefined report
+## Crear un reporte predefinido
 
-To generate a predefined report, follow these steps:
+Para generar un reporte predefinido, sigue estos pasos:
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
-2. On the **Data Collaboration Platform** page, select the relevant collaboration.
-3. On the collaboration page, click **Create report.**
-4. In the dialog that appears, click **Approve report.** The report is sent to your connected cloud service using a predefined name and schedule.
+1. En AppsFlyer, en el menú lateral, ve a **Colaborar** > **Data Clean Room**.
+2. En la **Plataforma de Colaboración de Datos** página, selecciona la colaboración correspondiente.
+3. En la página de colaboración, haz clic en **Crear reporte.**
+4. En el cuadro de diálogo que aparece, haz clic en **Aprobar reporte.** El reporte se envía a tu servicio en la nube conectado con un nombre y una programación predefinidos.
 
-## Create a custom report
+## Crear un informe personalizado
 
-To create a custom report, follow these steps:
+Para crear un reporte personalizado, sigue estos pasos:
 
 <div id="1-open-the-new-report-page" />
 
-<Accordion title="1. Open the New report page">
+<Accordion title="1. Abre la página Nuevo reporte">
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
-2. On the **Data Collaboration Platform** page, select the relevant collaboration.
-3. On the measurement dashboard, click <Image alt="" src="https://files.readme.io/ed483d2c2b845f1274b3cf84887ea15e0b0384a5f1cf3a5148b1fb8458cd6ec9-34061156892177.png" width="25%" /> **Create report.**
-4. In the dialog that appears click <Image alt="" src="https://files.readme.io/317ded6d0dbe6b0acfee8d3b8c7898dbab1c9b7ae621802fa867f2a6069f5d79-34061156893457.png" width="25%" /> **Customize**.
-5. On the **New report** page, perform the listed steps.
+1. En AppsFlyer, en el menú lateral, ve a **Colaborar** > **Data Clean Room**.
+2. En la **Plataforma de Colaboración de Datos** página, selecciona la colaboración correspondiente.
+3. En el dashboard de medición, haz clic en <Image alt="" src="https://files.readme.io/ed483d2c2b845f1274b3cf84887ea15e0b0384a5f1cf3a5148b1fb8458cd6ec9-34061156892177.png" width="25%" /> **Crear reporte.**
+4. En el cuadro de diálogo que aparece, haz clic en <Image alt="" src="https://files.readme.io/317ded6d0dbe6b0acfee8d3b8c7898dbab1c9b7ae621802fa867f2a6069f5d79-34061156893457.png" width="25%" /> **Customize**.
+5. En la página **Nuevo reporte**, realiza los pasos indicados.
 
 </Accordion>
 
 <div id="2-set-the-report-type" />
 
-<Accordion title="2. Set the report type">
+<Accordion title="2. Configura el tipo de reporte">
 
-Under the **Report type** step, select <Image alt="" src="https://files.readme.io/c94890451d831a5a3f1f12b6f42c1c86de1453c175c40cc450e915f6f1f128ad-34061156898449.png" width="3.47%" />  **Commerce media measurement,** then, click **Next.**
+En el paso **Tipo de reporte**, selecciona <Image alt="" src="https://files.readme.io/c94890451d831a5a3f1f12b6f42c1c86de1453c175c40cc450e915f6f1f128ad-34061156898449.png" width="3.47%" />  **Medición de medios de comercio,** y luego haz clic en **Siguiente.**
 
 </Accordion>
 
 <div id="3-set-the-report-scope" />
 
-<Accordion title="3. Set the report scope">
+<Accordion title="3. Configura el alcance del reporte">
 
-Under the **Filters and data sources** step:
+En el paso **Filtros y fuentes de datos**:
 
-1. In the **Report name** box, enter a name for the report.
-   * This can be any name that will help you identify the report in the DCR platform.
-   * **Important!** Ensure that the report name is different from all other reports in your account or you will not be able to <Anchor target="_blank" href="/marketers/docs/data-clean-room-creating-attribution-data-reports#set-the-report-destination-and-save-the-report">save the report</Anchor>.
-   * Report name requirements:
-     * Length: 2-80 characters
-     * Valid characters:
-       * letters **(A-Z, a-z)**
-       * numbers **(0-9)**, *cannot be the first character of a name*
-       * a hyphen (-), *cannot be the first character of a name*
-     * Invalid characters:
-       * spaces
-       * all other symbols or special characters
-2. In the **Collaboration name** box, select the relevant collaboration.
-3. In the **Timeframe** slider, set the report’s span in days (1-180). Only attributed conversion events occurring within the selected span will appear in the report. The span is calculated backward from the report’s day.
-4. Click **Next**.
+1. En el cuadro **Nombre del reporte**, introduce un nombre para el reporte.
+   * Puede ser cualquier nombre que te ayude a identificar el reporte en la plataforma DCR.
+   * **Nota:** Asegúrate de que el nombre del reporte sea diferente de todos los demás reportes de tu cuenta o no podrás <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-creating-attribution-data-reports#set-the-report-destination-and-save-the-report">guardar el reporte</Anchor>.
+   * Requisitos del nombre del reporte:
+     * Longitud: 2-80 caracteres
+     * Caracteres válidos:
+       * letras **(A-Z, a-z)**
+       * números **(0-9)**, *no pueden ser el primer carácter de un nombre*
+       * un guion (-), *no puede ser el primer carácter de un nombre*
+     * Caracteres inválidos:
+       * espacios
+       * todos los demás símbolos o caracteres especiales
+2. En el cuadro **Nombre de la colaboración**, selecciona la colaboración correspondiente.
+3. En el control deslizante **Periodo**, establece la duración del reporte en días (1-180). En el reporte solo aparecerán los eventos de conversión atribuidos que se produzcan dentro del intervalo seleccionado. El intervalo se calcula hacia atrás desde el día del reporte.
+4. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
 
 </Accordion>
 
 <div id="4-set-the-report-dimensions-and-metrics" />
 
-<Accordion title="4. Set the report dimensions and metrics">
+<Accordion title="4. Configura las dimensiones y las métricas del reporte">
 
-If you want to customize the report you can select your report [dimensions and metrics](#what-are-dimensions-and-metrics). For a comprehensive list of the report fields see [the report scheme](#report-scheme) in this article.
+Si quieres personalizar el reporte, puedes seleccionar las [dimensiones y métricas](#what-are-dimensions-and-metrics) de tu reporte. Para consultar una lista completa de los campos del reporte, consulta [el esquema del reporte](#esquema-del-reporte) en este artículo.
 
-To set the report dimensions and metrics, follow these steps:
+Para configurar las dimensiones y las métricas del reporte, sigue estos pasos:
 
-1. Under the **Structure** step, from the **Dimension from sources** list, select the fields you want to be included in the report.
-2. If you want to create a [calculated field](#what-are-basic-and-calculated-fields) click **+ Calculated field** and see [Create calculated field](#create-calculated-field) in this article.
-3. You can include the field in the report as a dimension or as a metric.
-   * To include the field in the report as a dimension, click **Set as dimension**.
-   * To include the field in the report as a metric, click **Set as metric**.
-4. If you set the field as a metric, select its aggregation function:
-   * **Sum:** The metric value is the sum of event-level values aggregated in the report record. For example, the revenue metric is the sum of  `sku_revenue` all events grouped in the record.
-   * **Count:** The metric value is the count of event-level values aggregated in the report record. For example, the conversions metric is the count of all the conversions included in the grouped record.
-   * **Count distinct**: The metric value is the number of unique values for a given field across the events grouped in the report record. For example, If the selected metric is count-distinct of `sku` and a grouped record includes 10 events containing 4 different SKUs, the metric value will be **4**.
-5. To change the display name of the field, hover over the field and click **Edit display name.**
+1. En el paso **Structure**, en la lista **Dimension from sources**, selecciona los campos que quieres incluir en el reporte.
+2. Si quieres crear un [campo calculado](#qué-son-los-campos-básicos-y-los-campos-calculados), haz clic en **+ Calculated field** y consulta [Crear campo calculado](#crear-campo-calculado) en este artículo.
+3. Puedes incluir el campo en el reporte como dimensión o como métrica.
+   * Para incluir el campo en el reporte como dimensión, haz clic en **Set as dimension**.
+   * Para incluir el campo en el reporte como métrica, haz clic en **Set as metric**.
+4. Si configuras el campo como métrica, selecciona su función de agregación:
+   * **Suma:** El valor de la métrica es la suma de los valores a nivel de evento agregados en el registro del reporte. Por ejemplo, la métrica de ingresos es la suma de  `sku_revenue` de todos los eventos agrupados en el registro.
+   * **Recuento:** El valor de la métrica es el recuento de los valores a nivel de evento agregados en el registro del reporte. Por ejemplo, la métrica de conversiones es el recuento de todas las conversiones incluidas en el registro agrupado.
+   * **Recuento distinto**: El valor de la métrica es el número de valores únicos de un campo determinado en todos los eventos agrupados en el registro del reporte. Por ejemplo, si la métrica seleccionada es el recuento distinto de `sku` y un registro agrupado incluye 10 eventos que contienen 4 SKU diferentes, el valor de la métrica será **4**.
+5. Para cambiar el nombre para mostrar del campo, coloca el cursor sobre el campo y haz clic en **Edit display name.**
 
-#### Create calculated field
+#### Crear campo calculado
 
-Calculated fields contain values calculated from basic values using a specified function.
+Los campos calculados contienen valores calculados a partir de valores básicos mediante una función específica.
 
-To create or edit a calculated field perform the following:
+Para crear o editar un campo calculado, haz lo siguiente:
 
-1. To create or edit a calculated field perform one of the following
-   * **Create**: Click **+ Calculated field.**
-   * **Edit**: Hover over the calculated field and click the action menu → Edit calculated field.
-2. In the **Edit** or **New calculated field** dialog perform the following:
-   1. In the **Field** box enter the name of the field.
-   2. In the **Set function** list, choose the function used to calculate the new value.
-3. Set the function according to the table below:
+1. Para crear o editar un campo calculado, realiza una de las siguientes acciones
+   * **Crear**: Haz clic en **+ Calculated field.**
+   * **Editar**: Coloca el cursor sobre el campo calculado y haz clic en el menú de acciones → Edit calculated field.
+2. En el cuadro de diálogo **Editar** o **Nuevo campo calculado**, haz lo siguiente:
+   1. En el cuadro **Campo**, introduce el nombre del campo.
+   2. En la lista **Establecer función**, selecciona la función que se usa para calcular el nuevo valor.
+3. Configura la función según la tabla que se indica a continuación:
 
-| **Function** | **Description** | **Example Calculation** | **Example Description** |
+| **Función** | **Description** | **Cálculo de ejemplo** | **Descripción del ejemplo** |
 | --- | --- | --- | --- |
-| `ADD` | Sum of two numbers | `Clicks + Impressions` | Total interactions (clicks + ad impressions). |
-| `ARRAY SIZE` | Transforms JSON string array to its size | `ARRAY_SIZE(Products_Clicked)` | Number of products a user clicked in a campaign (from JSON). |
-| `CASE WHEN` | Returns a value when the first condition is met, or ELSE | `CASE WHEN Conversions > 0 THEN 'Successful' ELSE 'Failed' END` | Classifies campaign performance based on conversions. |
-| `CONCAT` | Concatenation of two strings | `CONCAT(Campaign_Name, ' - ', Region)` | Combines campaign name with the region for reporting. |
-| `CONST` | Returns its parameter | `CONST('Marketing Budget Cap: $5000')` | Returns a constant value for budget reference. |
-| `DATETIME DIFF` | Period in selected units between `start` and `end` | `DATETIME_DIFF(End_Date, Start_Date, 'day')` | Calculates the campaign duration in days. |
-| `MAX` | Maximum of two numbers | `MAX(Click_Through_Rate, Conversion_Rate)` | Finds the higher value between CTR and conversion rate. |
-| `MIN` | Minimum of two numbers | `MIN(Budget_Remaining, Daily_Spend_Limit)` | Ensures spending does not exceed daily budget. |
-| `MULTIPLY` | Multiplying two numbers | `Conversions * Avg_Order_Value` | Calculates total revenue from conversions. |
-| `REGEX EXTRACT` | Extracts the first group by regex | `REGEX_EXTRACT(Ad_Text, 'PromoCode: (\\w+)')` | Extracts promo code from ad text using regex. |
-| `SUBSTRING` | Substring of a string from index `start` to `end` | `SUBSTRING(Campaign_ID, 0, 5)` | Extracts the first 5 characters of the campaign ID. |
-| `SUBTRACT` | Subtraction of two numbers | `Budget_Allocated - Budget_Spent` | Calculates the remaining budget for the campaign. |
+| `AGREGAR` | Suma de dos números | `Clics + Impresiones` | Interacciones totales (clics + impresiones de anuncios). |
+| `ARRAY SIZE` | Transforma el array de cadenas JSON a su tamaño | `ARRAY_SIZE(Products_Clicked)` | Número de productos en los que un usuario hizo clic en una campaña (desde JSON). |
+| `CASE WHEN` | Devuelve un valor cuando se cumple la primera condición o ELSE | `CASE WHEN Conversions > 0 THEN 'Successful' ELSE 'Failed' END` | Clasifica la performance de la campaña en función de las conversiones. |
+| `CONCAT` | Concatenación de dos cadenas | `CONCAT(Campaign_Name, ' - ', Region)` | Combina el nombre de la campaña con la región para reportar. |
+| `CONST` | Devuelve su parámetro | `CONST('Límite del presupuesto de marketing: $5000')` | Devuelve un valor constante como referencia del presupuesto. |
+| `DATETIME DIFF` | Período en las unidades seleccionadas entre `start` y `end` | `DATETIME_DIFF(End_Date, Start_Date, 'day')` | Calcula la duración de la campaña en días. |
+| `MAX` | Máximo de dos números | `MAX(Click_Through_Rate, Conversion_Rate)` | Encuentra el valor más alto entre el CTR y la tasa de conversión. |
+| `MIN` | Mínimo de dos números | `MIN(Budget_Remaining, Daily_Spend_Limit)` | Garantiza que el gasto no supere el presupuesto diario. |
+| `MULTIPLY` | Multiplicar dos números | `Conversions * Avg_Order_Value` | Calcula los ingresos totales a partir de las conversiones. |
+| `REGEX EXTRACT` | Extrae el primer grupo por regex. | `REGEX_EXTRACT(Ad_Text, 'PromoCode: (\\w+)')` | Extrae el código promocional del texto del anuncio mediante regex. |
+| `SUBSTRING` | Subcadena de un string desde el índice `start` hasta `end` | `SUBSTRING(Campaign_ID, 0, 5)` | Extrae los 5 primeros caracteres del ID de la campaña. |
+| `SUBTRACT` | Resta de dos números | `Budget_Allocated - Budget_Spent` | Calcula el presupuesto restante de la campaña. |
 
 
 </Accordion>
 
 <div id="5-manage-dimension-priority" />
 
-<Accordion title="5. Manage dimension priority">
+<Accordion title="5. Gestionar la prioridad de las dimensiones">
 
-Dimension groups with very few user-level events may conflict with data privacy regulations.
+Los grupos de dimensiones con muy pocos eventos a nivel de usuario pueden entrar en conflicto con las normativas de privacidad de datos.
 
-To resolve this, **DCR merges small groups** with larger groups by eliminating the dimensions with the highest specificity.
+Para resolverlo, **DCR fusiona los grupos pequeños** con grupos más grandes eliminando las dimensiones con mayor especificidad.
 
-By default, dimensions are removed in reverse order of their position in the **Report dimensions** list. However, you can adjust the default order and apply a different regrouping priority to preserve the dimensions most important to you. To learn more see a <Anchor target="_blank" href="/marketers/docs/data-clean-room-creating-attribution-data-reports#preserving-privacy-while-grouping-by-dimension-regrouping">Regrouping example</Anchor>.
+De forma predeterminada, las dimensiones se eliminan en orden inverso a su posición en la lista **Dimensiones del reporte**. Sin embargo, puedes ajustar el orden predeterminado y aplicar una prioridad de reagrupación diferente para conservar las dimensiones más importantes para ti. Para saber más, consulta un <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-creating-attribution-data-reports#preservación-de-la-privacidad-mientras-se-agrupa-por-dimensión-reagrupación">ejemplo de reagrupación</Anchor>.
 
-**To change the dimension priority:**
+**Para cambiar la prioridad de la dimensión:**
 
-1. Under the **Manage dimension priority** step, click **Manage dimension priority.**
-2. Drag the dimension to rearrange the order.
-   * The dimension labeled as the **Highest priority** (at the top of the list) means it will be the last to be eliminated if regrouping is required.
-3. [Optional] To apply regrouping to custom source dimensions:
-   1. Click **Use advanced options to refine regrouping**
-   2. Select custom source dimensions to which you'd like to apply regrouping.
-   3. The selected dimensions are added to the **Manage dimension priority** list.
-      * By default, these dimensions are added to the bottom of the list as the **Lowest priority** for regrouping. However, you can reorder them just like attribution data dimensions, as described above.
-4. Click **Next** to save your changes.
-   * The **Report dimensions** list on the main screen remains in its original order, but the revised order has been saved. (Click again on the **Manage dimension priority** button to review or edit your selection.)
+1. En el paso **Administrar la prioridad de las dimensiones**, haz clic en **Administrar la prioridad de las dimensiones**
+2. Arrastra la dimensión para reorganizar el orden.
+   * La dimensión etiquetada como **Máxima prioridad** (en la parte superior de la lista) indica que será la última en eliminarse si se requiere reagrupamiento.
+3. [Opcional] Para aplicar la reagrupación a las dimensiones de origen personalizadas:
+   1. Haz clic **Usar opciones avanzadas para refinar el reagrupamiento**
+   2. Selecciona las dimensiones de fuentes personalizadas a las que deseas aplicar el reagrupamiento.
+   3. Las dimensiones seleccionadas se añaden a la **Administrar la prioridad de las dimensiones** lista.
+      * De forma predeterminada, estas dimensiones se agregan al final de la lista como la **Prioridad más baja** para el reagrupamiento. Sin embargo, puedes reordenarlas igual que las dimensiones de los datos de atribución, tal y como se describe anteriormente.
+4. Haz clic **Siguiente** para guardar tus cambios.
+   * La **Dimensiones del reporte** lista en la pantalla principal permanece en su orden original, pero el orden revisado se ha guardado. (Haz clic de nuevo en el **Administrar la prioridad de las dimensiones** botón para revisar o editar tu selección.)
 
 </Accordion>
 
 <div id="6-set-the-report-schedule-and-destination" />
 
-<Accordion title="6. Set the report schedule and destination">
+<Accordion title="6. Configura la programación y el destino del reporte">
 
-DCP delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
+DCP entrega reportes a tus servicios en la nube seleccionados mediante <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Por lo tanto, especificar el destino del reporte implica seleccionar o crear una conexión de Data Locker.
 
-**To set the report schedule and destination:**
+**Para configurar la programación y el destino del reporte:**
 
-1. In the **Settings** step, under the **Schedule** section, select the report schedule (daily, weekly, or monthly).
-2. Depending on the selected interval, select the hour, day in a week, or month of the report.
-3. Under the **Destination** section, select from the list of Data Locker connections available in your AppsFlyer account.
-   * If there are no connections defined in your account:
-     * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
-   * If you have existing connections but want to use a new one, click **+ New connection in Data Locker**:
-     * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
-     * After creating the connection, return to the DCP tab in your browser and select the newly created connection from the list of Data Locker connections.
-4. To receive report status notifications via API, turn on **Report status notifications,** and in the API endpoint box, enter your API URL.
-5. Click **Save** to save the report.
-6. The new report is now displayed in the **Reports** tab.
+1. En el paso **Configuración**, en la sección **Programación**, selecciona la programación del reporte (diaria, semanal o mensual).
+2. Según el intervalo seleccionado, selecciona la hora, el día de la semana o el mes del reporte.
+3. En la sección **Destino**, selecciona de la lista de conexiones de Data Locker disponibles en tu cuenta de AppsFlyer.
+   * Si no hay conexiones definidas en tu cuenta:
+     * Se abrirá una nueva pestaña en tu navegador (que muestra la página de AppsFlyer Data Locker)
+     * Se abrirá el cuadro de diálogo **Nueva conexión** . Sigue <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#completa-la-conexión-1">estas instrucciones</Anchor> para crear la conexión.
+   * Si tienes conexiones existentes pero quieres usar una nueva, haz clic en **+ New connection in Data Locker**:
+     * Se abrirá una nueva pestaña en tu navegador (que muestra la página de AppsFlyer Data Locker)
+     * Se abrirá el cuadro de diálogo **Nueva conexión** . Sigue <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#completa-la-conexión-1">estas instrucciones</Anchor> para crear la conexión.
+     * Después de crear la conexión, vuelve a la pestaña DCP de tu navegador y selecciona la conexión recién creada de la lista de conexiones de Data Locker.
+4. Para recibir notificaciones del estado del reporte a través de la API, activa **Notificaciones del estado del reporte,** y, en el cuadro del endpoint de la API, introduce la URL de tu API.
+5. Haz clic **Guardar** para guardar el reporte.
+6. El nuevo reporte ahora se muestra en la **Reportes** pestaña.
 
 </Accordion>
 
-## Report scheme
+## Esquema del reporte
 
-The report is comprised of the following dimensions and metrics categorized as calculated fields and attribution fields:
+El reporte está compuesto por las siguientes dimensiones y métricas, categorizadas como campos calculados y campos de atribución:
 
 <div id="calculated-fields" />
 
-<Accordion title="Calculated fields">
+<Accordion title="Campos calculados">
 
-| **Field** | **Description** |
+| **Campo** | **Description** |
 | --- | --- |
-| `clicks` | Total number of clicks on the ad. |
-| `ctr` | Click-through rate (clicks divided by impressions). |
-| `event_date` | Date the event occurred. |
-| `impressions` | Number of times the ad was displayed. |
-| `total_revenue` | Total revenue generated across all events. |
+| `clicks` | Número total de clics en el anuncio. |
+| `CTR` | Tasa de clics (clics divididos entre impresiones). |
+| `event_date` | Fecha en la que ocurrió el evento. |
+| `Impresiones` | Número de veces que se mostró el anuncio. |
+| `ingresos_totales` | Ingresos totales generados en todos los eventos. |
 |  |  |
 
 </Accordion>
 
 <div id="attribution-fields" />
 
-<Accordion title="Attribution fields">
+<Accordion title="Campos de atribución">
 
-| **Field** | **Description** |
+| **Campo** | **Description** |
 | --- | --- |
-| `ad_id` | Unique identifier for the ad. |
-| `ad_name` | Name of the ad. |
-| `ad_type` | Type of ad (e.g., banner, video). |
-| `adset_id` | Unique identifier for the ad set. |
-| `adset_name` | Name of the ad set. |
-| `advertising_id` | User-resettable device ID (e.g., GAID). |
-| `android_id` | Permanent Android device ID. |
-| `app_id` | Unique identifier for the app. |
-| `app_name` | Name of the app. |
-| `app_version` | Version of the app. |
-| `appsflyer_id` | Unique ID assigned by AppsFlyer. |
-| `campaign_id` | Unique identifier for the campaign. |
-| `campaign_name` | Name of the campaign. |
-| `channel` | Media source channel (e.g., YouTube). |
-| `city` | User’s city based on IP location. |
-| `country_code` | ISO 3166-1 alpha-2 country code (e.g., US, GB). |
-| `cuid` | Unique customer/user identifier. |
-| `device_category` | Device type (e.g., phone, tablet). |
-| `event_name` | Name of the event (e.g., install, purchase). |
-| `event_revenue` | Revenue generated from the event. |
-| `idfa` | User-resettable iOS advertising ID. |
-| `idfv` | Vendor ID assigned by iOS. |
-| `platform` | The platform (iOS, Android, etc.). |
-| `region` | User’s region based on IP location. |
-| `sku_revenue` | Revenue associated with a specific SKU. |
-| `state` | User’s state based on IP location. |
+| `ad_id` | Identificador único del anuncio. |
+| `ad_name` | Nombre del anuncio. |
+| `ad_type` | Tipo de anuncio (p. ej., banner, vídeo). |
+| `adset_id` | Identificador único del conjunto de anuncios. |
+| `adset_name` | Nombre del conjunto de anuncios. |
+| `advertising_id` | ID de dispositivo restablecible por el usuario (p. ej., GAID). |
+| `android_id` | ID de dispositivo Android permanente. |
+| `id_aplicación` | Identificador único de la aplicación. |
+| `app_name` | Nombre de la aplicación. |
+| `version_app` | Versión de la aplicación. |
+| `appsflyer_id` | ID único asignado por AppsFlyer. |
+| `campaign_id` | Identificador único de la campaña. |
+| `campaign_name` | Nombre de la campaña. |
+| `channel` | Canal de la fuente de medios (p. ej., YouTube). |
+| `city` | Ciudad del usuario según la ubicación de la IP. |
+| `código_de_país` | Código de país ISO 3166-1 alfa-2 (p. ej., US, GB). |
+| `cuid` | Identificador único del cliente/usuario. |
+| `categoría_del_dispositivo` | Tipo de dispositivo (p. ej., teléfono, tableta). |
+| `nombre_del_evento` | Nombre del evento (p. ej., instalación, compra). |
+| `ingresos_evento` | Ingresos generados por el evento. |
+| `idfa` | ID de publicidad de iOS restablecible por el usuario. |
+| `idfv` | ID del proveedor asignado por iOS. |
+| `plataforma` | La plataforma (iOS, Android, etc.). |
+| `region` | Región del usuario según la ubicación de la IP. |
+| `ingresos_sku` | Ingresos asociados con un SKU específico. |
+| `state` | Estado del usuario en función de la ubicación de la IP. |
 
 </Accordion>
 
 <div id="scheme-fields" />
 
-<Accordion title="Scheme fields">
+<Accordion title="Campos del esquema">
 
-| **Field** | **Description** | **Onsite Availability** | **Offsite availability** |
+| **Campo** | **Description** | **Disponibilidad en el sitio** | **Disponibilidad fuera del sitio** |
 | --- | --- | --- | --- |
-| conversions | Number or conversions | TRUE | FALSE |
-| Count\_AFID | Total number of unique users | TRUE | TRUE |
+| conversiones | Número de conversiones | Verdadero | FALSO |
+| Count\_AFID | Cantidad total de usuarios únicos | Verdadero | Verdadero |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01JQY1FA02JN6VR67HJ5118SFF=what-are-dimensions-and-metrics h_01JR5NBE6NQ22QCFZG9XRVGM45=dimensions h_01JR5NC59TQ45QPWP7JG6BQKXX=metrics h_01JQY33FZ2H59YZVVXBN9J61RE=what-are-basic-and-calculated-fields h_01JQY1FA03AXH588Z5C9HCJHMS=create-a-predefined-report h_01JQY1FA038V0V1PKBF1CC0B5J=create-a-custom-report h_01JQY1FA035K7VWX4BDC796SVT=1-open-the-new-report-page h_01JQY1FA03Z0W8N8PFVGEC3HRM=2-set-the-report-type h_01JQY1FA03CWP0GSJY46CEJRJY=3-set-the-report-scope h_01JQY1FA03WA8NNB4RT1VBK0F5=4-set-the-report-dimensions-and-metrics h_01JQY1FA03PA40NCTZXHWGQ86C=create-calculated-field h_01JQY1FA03TMN4N7V3F83EK4EY=5-manage-dimension-priority h_01JQY1FA03PRSGHSKNTKNV4NH3=6-set-the-report-schedule-and-destination h_01JQY1FA03S41J7TR5HAF6G8PW=report-scheme h_01JQY1FA0494AK29M0R7ZRJ4DT=calculated-fields h_01JQY1FA0486WK4GHV5G3TZ77V=attribution-fields h_01JQY1FA04DTN2C6A541J25RZJ=scheme-fields" />
+<div data-zendesk-anchors="h_01JQY1FA02JN6VR67HJ5118SFF=what-are-dimensions-and-metrics dimensions=dimensiones h_01JR5NBE6NQ22QCFZG9XRVGM45=dimensiones metrics=comenzar h_01JR5NC59TQ45QPWP7JG6BQKXX=comenzar what-are-basic-and-calculated-fields=qu%C3%A9-son-los-campos-b%C3%A1sicos-y-los-campos-calculados h_01JQY33FZ2H59YZVVXBN9J61RE=qu%C3%A9-son-los-campos-b%C3%A1sicos-y-los-campos-calculados create-a-predefined-report=crear-un-reporte-predefinido h_01JQY1FA03AXH588Z5C9HCJHMS=crear-un-reporte-predefinido create-a-custom-report=crear-un-informe-personalizado h_01JQY1FA038V0V1PKBF1CC0B5J=crear-un-informe-personalizado h_01JQY1FA035K7VWX4BDC796SVT=1-open-the-new-report-page h_01JQY1FA03Z0W8N8PFVGEC3HRM=2-set-the-report-type h_01JQY1FA03CWP0GSJY46CEJRJY=3-set-the-report-scope h_01JQY1FA03WA8NNB4RT1VBK0F5=4-set-the-report-dimensions-and-metrics create-calculated-field=crear-campo-calculado h_01JQY1FA03PA40NCTZXHWGQ86C=crear-campo-calculado h_01JQY1FA03TMN4N7V3F83EK4EY=5-manage-dimension-priority h_01JQY1FA03PRSGHSKNTKNV4NH3=6-set-the-report-schedule-and-destination report-scheme=esquema-del-reporte h_01JQY1FA03S41J7TR5HAF6G8PW=esquema-del-reporte h_01JQY1FA0494AK29M0R7ZRJ4DT=calculated-fields h_01JQY1FA0486WK4GHV5G3TZ77V=attribution-fields h_01JQY1FA04DTN2C6A541J25RZJ=scheme-fields" />

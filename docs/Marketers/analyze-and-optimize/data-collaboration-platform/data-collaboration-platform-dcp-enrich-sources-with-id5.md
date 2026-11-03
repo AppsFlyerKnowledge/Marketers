@@ -1,5 +1,5 @@
 ---
-title: Data Collaboration Platform (DCP) - Enrich sources with ID5
+title: Plataforma de colaboración de datos (DCP) - Enriquece fuentes con ID5
 metadata:
   keywords:
     - Marketers
@@ -12,137 +12,136 @@ x-zendesk:
     - Marketers
     - Audience Activation
   created_at: '2026-01-08T07:53:48Z'
-  edited_at: '2026-01-15T11:49:48Z'
+  edited_at: '2026-08-12T11:53:51Z'
   id: 42626850533137
-  locale: en-us
+  locale: es
   section: Data Collaboration Platform
   section_id: 26230608274065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/42626850533137-Data-Collaboration-Platform-DCP-Enrich-sources-with-ID5
+  url: https://support.appsflyer.com/hc/es/articles/42626850533137
 ---
-> **At a glance:** Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners, resulting in larger audiences.
+> **De un vistazo:** Enriquece tus datos first-party con identificadores de ID5 para unificar los datos fragmentados de los usuarios y mejorar las tasas de coincidencia con partners de activación, lo que se traduce en audiencias más amplias.
 
-## About ID5 enrichment
+## Sobre el enriquecimiento con ID5
 
-AppsFlyer’s Data Collaboration Platform integrates with ID5, a leading identity solution provider for the open web. ID5 connects disparate identifiers such as IP addresses, hashed emails (HEM), and mobile advertising IDs (MAIDs) into a unified, privacy-first ID. This increases match rates across collaborators’ datasets, enabling more users to be recognized, joined, and activated in audiences. This guide explains how ID5 enrichment works in DCP, how to set it up, and how to use it for collaborations and activation.
+La Plataforma de Colaboración de Datos de AppsFlyer se integra con ID5, un proveedor líder de soluciones de identidad para la web abierta. ID5 conecta identificadores dispares, como direcciones IP, correos electrónicos con hash (HEM) e ID de publicidad móvil (MAID), en un ID unificado, con la privacidad como prioridad. Esto aumenta las tasas de coincidencia entre los conjuntos de datos de los colaboradores, lo que permite reconocer, vincular y activar a más usuarios en las audiencias. Esta guía explica cómo funciona el enriquecimiento con ID5 en DCP, cómo configurarlo y cómo usarlo para colaboraciones y activación.
 
-**ID5 enrichment helps you:**
+**El enriquecimiento con ID5 te ayuda a:**
 
-* Increase match rates between your first-party data and media partners or collaborators
-* Maximize target audience size
-* Bridge identifiers such as HEM, MAID, and IP + timestamp into a unified identity
-* Future-proof your activation as third-party cookies phase out
+* Aumentar las tasas de coincidencia entre tus datos first-party y partners de medios o colaboradores
+* Maximizar el tamaño de la audiencia objetivo
+* Vincular identificadores como HEM, MAID e IP + marca de tiempo en una identidad unificada
+* Preparar tu activación para el futuro a medida que desaparecen las cookies de terceros
 
-**Common use cases include:**
+**Los casos de uso comunes incluyen:**
 
-* **Brand first-party data enrichment** - A brand uploads its first-party data source to DCP and enriches it with ID5 IDs using their ID5 connection.
-* **Retailer-brand collaboration** - A retailer collaborates with a brand and shares access to their ID5 subscription. Within the secure collaboration scope, the brand enriches its customer data using the retailer’s ID5 connection, improving match rates without requiring its own direct ID5 account.
-* **Partner activation** - Enriched sources can be sent to supported activation partners to increase match rates, meaning more users from your data can be matched and included in the audiences on the partner side.
+* **Enriquecimiento de datos first-party de una marca** - Una marca sube su fuente de datos first-party a DCP y la enriquece con ID de ID5 mediante su conexión de ID5.
+* **Colaboración entre retailer y marca**: un retailer colabora con una marca y comparte acceso a su suscripción de ID5. Dentro del ámbito de colaboración segura, la marca enriquece los datos de sus clientes mediante la conexión de ID5 del retailer, lo que mejora las tasas de coincidencia sin requerir su propia cuenta directa de ID5.
+* **Activación de partners** - Las fuentes enriquecidas se pueden enviar a partners de activación compatibles para aumentar las tasas de coincidencia, lo que significa que se puede encontrar coincidencia para más usuarios de tus datos e incluirlos en las audiencias del partner.
 
-## How ID5 works
+## Cómo funciona ID5
 
-DCP uses the returned ID5 IDs to enrich your source, resulting in a new enriched source available for segmentation and activation.
+DCP usa los ID de ID5 devueltos para enriquecer tu fuente, lo que da como resultado una nueva fuente enriquecida disponible para segmentación y activación.
 
-**Two supported enrichment flows:**
+**Dos flujos de enriquecimiento compatibles:**
 
-| Flow | Description | When to use |
+| Flujo | Descripción | Cuándo usar |
 | --- | --- | --- |
-| Tagged flow | The data owner already applies ID5’s site tagging on their domain, so their uploaded data already contains an ID5 ID column. | When you manage ID5 tagging directly on your site and want to use DCP without further enrichment. |
-| Server-to-server (S2S) enrichment flow | AppsFlyer sends your selected data source to ID5, ID5 enriches it with ID5 IDs, and returns it to DCP as an enriched source. | When your source does not include an ID5 column or when you want AppsFlyer to handle enrichment automatically. |
+| Flujo con etiquetado | El propietario de los datos ya aplica el etiquetado del sitio de ID5 en su dominio, por lo que los datos que sube ya contienen una columna de ID de ID5. | Cuando gestionas directamente el etiquetado de ID5 en tu sitio y quieres usar DCP sin enriquecimiento adicional. |
+| Flujo de enriquecimiento de servidor a servidor (S2S) | AppsFlyer envía a ID5 la fuente de datos que has seleccionado, ID5 la enriquece con ID de ID5 y la devuelve a DCP como una fuente enriquecida. | Cuando tu fuente no incluye una columna de ID5 o cuando quieres que AppsFlyer gestione el enriquecimiento automáticamente. |
 
-## Get started with ID5 enrichment
+## Comienza con el enriquecimiento de ID5
 
-This section describes how to create an ID5 connection in DCP and use it for enrichment.
+En esta sección se describe cómo crear una conexión de ID5 en DCP y utilizarla para el enriquecimiento.
 
-**Prerequisites:**
+**Pré-requisitos:**
 
-* An AppsFlyer account with DCP permissions
-* An ID5 token (provided by your ID5 account manager)
-* A source containing at least one of the supported identifiers: HEM, MAID, or IP + timestamp
+* Una cuenta de AppsFlyer con permisos de DCP
+* Un token de ID5 (proporcionado por tu gestor de cuentas de ID5)
+* Una fuente que contenga al menos uno de los identificadores compatibles: HEM, MAID o IP + marca de tiempo
 
 <div id="create-an-id5-connection" />
 
-<Accordion title="Create an ID5 connection">
+<Accordion title="Crear una conexión de ID5">
 
-To use ID5 enrichment, first create a **Data & Identity** connection in DCP.
+Para usar el enriquecimiento de ID5, primero crea una conexión de **Data & Identity** en DCP.
 
-1. Access the Data Collaboration Platform by clicking **Collaborate** > **Data Clean Room**, in the AppsFlyer side menu.
+1. Accede a la plataforma Data Collaboration Platform haciendo clic en **Collaborate** > **Data Clean Room** en el menú lateral de AppsFlyer.
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/85fe4d0302563dbf8f887f3b394634c8f41491f236848cf10f257f19c001cb07-42729168895121.png" width="33.49%" />
-2. Go to **Manage connections** (on the upper-right).
-3. Under the **Data & Identity** tab, select **+ New connection**.
+   <Image alt="Haz clic en Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
+2. Ve a **Gestionar conexiones** (arriba a la derecha).
+3. En la pestaña **Data & Identity**, selecciona **+ New connection**.
 
    **<Image alt="+New connection.png" src="https://files.readme.io/815ec20e84d85da413dfe9c9358b54d772461e1eeb3dff3ff7c5c31ced1088ac-42729247721873.png" width="72.63%" />**
-4. Select **ID5.**
+4. Selecciona **ID5.**
 
-   **<Image alt="Select ID5.png" src="https://files.readme.io/a0c53243318fa7eed48ac5886ff5f3272bec0e6fd83a41117d53473757ab16d7-42729260095633.png" width="66.76%" />**
-5. Enter your ID5 token (if relevant).
-6. Click **Save**.
+   **<Image alt="Selecciona ID5.png" src="https://files.readme.io/a0c53243318fa7eed48ac5886ff5f3272bec0e6fd83a41117d53473757ab16d7-42729260095633.png" width="66.76%" />**
+5. Introduce tu token de ID5 (si procede).
+6. Haga clic en **Guardar**.
 
-Once saved, the connection becomes available for your sources and collaborations (subject to permissions).
+Una vez guardada, la conexión estará disponible para tus fuentes y colaboraciones (sujeto a permisos).
 
 </Accordion>
 
 <div id="enrich-a-source-with-id5" />
 
-<Accordion title="Enrich a source with ID5">
+<Accordion title="Enriquecer una fuente con ID5">
 
-You can enrich your sources using the S2S flow.
+Puedes enriquecer tus fuentes mediante el flujo S2S.
 
-**To enrich a source:**
+**Para enriquecer una fuente:**
 
-1. Access the Data Collaboration Platform by clicking **Collaborate** > **Data Clean Room**, in the AppsFlyer side menu.
-2. Go to the **Sources** tab and hover over the relevant source.
-3. From the action menu, select **Enrich**.
+1. Accede a la plataforma Data Collaboration Platform haciendo clic en **Collaborate** > **Data Clean Room** en el menú lateral de AppsFlyer.
+2. Ve a la pestaña **Sources** y pasa el cursor sobre la fuente correspondiente.
+3. En el menú de acciones, selecciona **Enrich**.
 
    <Image alt="Enrich.png" src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" width="245px" />
-4. Click **Start enrichment**.
-5. After the enrichment flow is done, you will have a new source that is connected to the original source with the addition of ID5 IDs.  
-   **Note:** If the original source is ever deleted, the new source will also be deleted.
+4. Haz clic en **Start enrichment**.
+5. Cuando termine el flujo de enriquecimiento, tendrás una nueva fuente conectada a la fuente original con la incorporación de ID de ID5.  
+   **Nota:** Si alguna vez se elimina la fuente original, la nueva fuente también se eliminará.
 
 </Accordion>
 
 <div id="grant-id5-permissions-in-a-collaboration" />
 
-<Accordion title="Grant ID5 permissions in a collaboration">
+<Accordion title="Conceder permisos de ID5 en una colaboración">
 
-Collaboration owners can allow collaborators to use an ID5 connection in a collaboration (subject to the commercial agreement with ID5).
+Los propietarios de la colaboración pueden permitir que los colaboradores usen una conexión de ID5 en una colaboración (sujeto al acuerdo comercial con ID5).
 
-**To grant ID5 permissions to a collaborator:**
+**Para conceder permisos de ID5 a un colaborador:**
 
-1. Access the Data Collaboration Platform by clicking **Collaborate** > **Data Clean Room** in the AppsFlyer side menu.
-2. In the **Collaborations** tab, open an existing collaboration or <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration">create a new one</Anchor>.
-3. Click **Collaboration with “your collaborator”.**
+1. Accede a la plataforma de colaboración de datos haciendo clic en **Collaborate** > **Data Clean Room** en el menú lateral de AppsFlyer.
+2. En la pestaña **Collaborations**, abre una colaboración existente o <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-a-collaboration">crea una nueva</Anchor>.
+3. Haz clic en **Collaboration with «your collaborator»**
 
-   **<Image alt="Update collaboration policy.png" src="https://files.readme.io/25d707c47bed9f5f60cd1ba521c4b48f41afbb0e36949f0ffa35cecf9a932ddc-42838633495313.png" width="58.95%" />**
-4. Click **Edit collaboration policy**.
+   **<Image alt="Actualizar política de colaboración.png" src="https://files.readme.io/25d707c47bed9f5f60cd1ba521c4b48f41afbb0e36949f0ffa35cecf9a932ddc-42838633495313.png" width="58.95%" />**
+4. Haz clic en **Editar la política de colaboración**.
 
-   <Image alt="Click Edit collaboration policy.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
-5. Click **Access permissions**.
+   <Image alt="Haz clic en Editar la política de colaboración.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
+5. Haz clic en **Permisos de acceso**.
 
-   **<Image alt="Click Access permissions.png" src="https://files.readme.io/b239775d71e1fa1dcc23537e73e35b80bff0184c9ee2aa213f644d90251284f3-42838633499281.png" width="78.62%" />**
-6. Enable **ID5 connection**.
+   **<Image alt="Haz clic en Permisos de acceso.png" src="https://files.readme.io/b239775d71e1fa1dcc23537e73e35b80bff0184c9ee2aa213f644d90251284f3-42838633499281.png" width="78.62%" />**
+6. Activa la **conexión de ID5**.
 
-   <Image alt="ID5 permissions.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
-7. Click **Save**.
+   <Image alt="Permisos de ID5.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
+7. Haga clic en **Guardar**.
 
-Collaborators can then associate their own sources with the collaboration and enrich them using the partner’s ID5 connection.
+Luego, los colaboradores pueden asociar sus propias fuentes a la colaboración y enriquecerlas usando la conexión de ID5 del partner.
 
 </Accordion>
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-This section outlines some key traits and limitations.
+En esta sección se describen algunas características y limitaciones clave.
 
-| Trait / Limitation | Description |
+| Característica / limitación | Nota |
 | --- | --- |
-| First enrichment and daily updates | The first enrichment run begins immediately and typically completes within several hours.<br /><br />After the initial run, enrichment continues daily at a fixed processing time, ensuring fresh identity mappings.<br /><br />You can pause enrichment at any time to stop daily updates. |
-| Source dependency | If the original source is deleted, the enriched source is automatically deleted. |
-| Activation scope | In a collaboration, an advertiser can use enriched data for activation but cannot download or query it. |
-| Status restrictions | You can enrich only sources in **Active** status. |
-| Enrichment latency | Sources in **Waiting** or **Processing** continue enrichment but become usable only after reaching **Active** status. |
-| Retention window | ID5 stores mappings for 14–90 days, depending on activity. |
-| Identifier requirement | If the source lacks HEM, MAID, or IP + timestamp, enrichment is disabled. |
-| Connection conflicts | A collaboration can include only one ID5 connection. If both parties have their own ID5 connections, neither connection can be used within the collaboration. In this case, each party must enrich their data separately in their own environment, and only the resulting enriched sources can then be used in the collaboration. |
+| Primer enriquecimiento y actualizaciones diarias | La primera ejecución del enriquecimiento empieza de inmediato y suele completarse en unas horas.<br /><br />Después de la ejecución inicial, el enriquecimiento continúa a diario a una hora de procesamiento fija, lo que garantiza asignaciones de identidad actualizadas.<br /><br />Puedes pausar el enriquecimiento en cualquier momento para detener las actualizaciones diarias. |
+| Dependencia de la fuente | Si se elimina la fuente original, la fuente enriquecida se elimina automáticamente. |
+| Alcance de la activación | En una colaboración, un anunciante puede usar datos enriquecidos para la activación, pero no puede descargarlos ni consultarlos. |
+| Restricciones de estado | Solo puedes enriquecer fuentes con el estado **Activo**. |
+| Latencia del enriquecimiento | Las fuentes con estado **Waiting** o **Processing** siguen enriqueciéndose, pero solo pueden usarse cuando alcanzan el estado **Activo**. |
+| Ventana de retención | ID5 almacena las asignaciones durante 14–90 días, según la actividad. |
+| Requisito del identificador | Si la fuente no tiene HEM, MAID o IP + marca de tiempo, el enriquecimiento se desactiva. |
+| Conflictos de conexión | Una colaboración solo puede incluir una conexión de ID5. Si ambas partes tienen sus propias conexiones de ID5, no se podrá usar ninguna de ellas dentro de la colaboración. En este caso, cada parte debe enriquecer sus datos por separado en su propio entorno, y después solo se podrán usar en la colaboración las fuentes enriquecidas resultantes. |
 
-<div data-zendesk-anchors="h_01KD7VPW5NX5QHVPJWX5YCGXAH=about-id5-enrichment h_01KD7VPW5NW24X53QQE2ZVDA2N=how-id5-works h_01KD7VPW5P0FEEAET9RXVPSECY=get-started-with-id5-enrichment h_01KD80FBKDHB6HKTTMXFDPGH5E=create-an-id5-connection h_01KD80FBKE4Q8TMNW7WFCN4QGC=enrich-a-source-with-id5 h_01KD80FBKE6TB00E8PZCFWST6M=grant-id5-permissions-in-a-collaboration h_01KD7VPW5P5XV61Z3X2CWZ7GV9=traits-and-limitations" />
+<div data-zendesk-anchors="about-id5-enrichment=sobre-el-enriquecimiento-con-id5 h_01KD7VPW5NX5QHVPJWX5YCGXAH=sobre-el-enriquecimiento-con-id5 how-id5-works=c%C3%B3mo-funciona-id5 h_01KD7VPW5NW24X53QQE2ZVDA2N=c%C3%B3mo-funciona-id5 get-started-with-id5-enrichment=comienza-con-el-enriquecimiento-de-id5 h_01KD7VPW5P0FEEAET9RXVPSECY=comienza-con-el-enriquecimiento-de-id5 h_01KD80FBKDHB6HKTTMXFDPGH5E=create-an-id5-connection h_01KD80FBKE4Q8TMNW7WFCN4QGC=enrich-a-source-with-id5 h_01KD80FBKE6TB00E8PZCFWST6M=grant-id5-permissions-in-a-collaboration traits-and-limitations=especificaciones-y-limitaciones h_01KD7VPW5P5XV61Z3X2CWZ7GV9=especificaciones-y-limitaciones" />

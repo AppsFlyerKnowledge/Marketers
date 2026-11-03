@@ -1,5 +1,5 @@
 ---
-title: Measuring push notification re-engagement campaigns
+title: Medición de campañas de notificaciones push para el re-engagement
 metadata:
   keywords:
     - Re-Engagement
@@ -17,147 +17,142 @@ x-zendesk:
     - Marketers
     - OneLink
   created_at: '2016-01-18T10:03:11Z'
-  edited_at: '2026-08-14T16:22:53Z'
+  edited_at: '2026-11-02T01:17:04Z'
   id: 207364076
-  locale: en-us
+  locale: es
   section: Owned media attribution
   section_id: 6551214397585
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207364076-Measuring-push-notification-re-engagement-campaigns
+  url: https://support.appsflyer.com/hc/es/articles/207364076
 ---
-> **At a glance:** Measure push notification campaigns on both iOS and Android.
+> **At a glance:** Mide las campañas de notificaciones push tanto en iOS como en Android.
 
-## Overview
+## Visión general
 
-AppsFlyer supports the measurement of push notification campaigns from all push providers, as well as campaigns implemented directly on top of Firebase Cloud Messaging or Apple Push Notification Services (APNS).
+AppsFlyer admite la medición de las campañas de notificaciones push de todos los proveedores push, así como las campañas implementadas directamente sobre Firebase Cloud Messaging o Apple Push Notification Services (APNS).
 
-There are 2 possible ways to implement the integration:
+Hay dos formas posibles de realizar la integración:
 
-* By utilizing OneLink links (recommended).
-* By sending a JSON object with an `af` key in the push notification's payload (legacy).
+* Utilizando las plantillas de OneLink (recomendado).
+* Enviando un objeto JSON con una clave `af` en el payload de la notificación push.
 
-The conversions display in the Overview dashboard, in the retargeting or unified views.
+Las conversiones se muestran en el panel de control general, en las vistas de retargeting o unificadas.
 
-## How does it work?
+## ¿Cómo Funciona?
 
-Once you've completed the steps in this article, your app will work as follows:
+Una vez que hayas completado los pasos de este artículo, tu aplicación funcionará de la siguiente manera:
 
-1. You trigger a push notification that contains a OneLink link **or** an `af` key in its payload.
-2. The app user receives the push notification and clicks on it.
-3. The app loads and the AppsFlyer SDK starts.
-4. The SDK processes the payload of the push notification that opened the app.
-5. The SDK extracts and sends the attribution data to AppsFlyer.
+1. Activas una notificación push que contiene una plantilla de OneLink **o** una clave `af` en tu carga útil.
+2. El usuario de la aplicación recibe la notificación push y hace clic en ella.
+3. La aplicación se carga y el SDK de AppsFlyer se inicia.
+4. El SDK procesa la carga útil de la notificación push que abrió la aplicación.
+5. El SDK extrae y envía los datos de atribución a AppsFlyer.
 
-In the OneLink scenario, if the OneLink is configured to route the user to a specific location in the app, the deep link flow is triggered.
+En el escenario de OneLink, si el OneLink está configurado para dirigir al usuario a una ubicación específica en la aplicación, se activa el flujo de enlace profundo.
 
-## Prerequisites
+## Requisitos previos
 
-Before continuing, make sure that your app has <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">the AppsFlyer SDK integrated</Anchor> **and** can receive push notifications.
+Antes de continuar, asegúrate de que tu aplicación tenga <Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide">integrado el SDK de AppsFlyer</Anchor> **y** pueda recibir notificaciones push.
 
-## Steps
+## Pasos
 
-To set up push notification measurement, the following steps must be completed:
+Para configurar la medición de las notificaciones push, hay que completar los siguientes pasos:
 
-1. [Create a push notification](/docs/measuring-push-notification-re-engagement-campaigns#1-creating-the-push-notification) that contains a custom data key with the OneLink link **or** an `af` key with a JSON object as its value.
-2. [Configure the SDK to resolve the custom key](/docs/measuring-push-notification-re-engagement-campaigns#2-configuring-the-sdk) (done by the app developer).
-3. [Test the integration](/docs/measuring-push-notification-re-engagement-campaigns#3-testing-the-integration) by triggering a push notification.
-4. [View push notification campaigns performance](/docs/measuring-push-notification-re-engagement-campaigns#4-viewing-push-notification-campaigns-in-the-dashboard) in the dashboard.
+1. [Crea una notificación push](/docs/measuring-push-notification-re-engagement-campaigns#1-creating-the-push-notification) que contenga una clave de datos personalizada con la plantilla de OneLink **o** una clave `af` con un objeto JSON como valor.
+2. [Configura el SDK para resolver la clave personalizada](/docs/measuring-push-notification-re-engagement-campaigns#2-configuring-the-sdk) (realizado por el desarrollador de la aplicación).
+3. [Prueba la integración](/docs/measuring-push-notification-re-engagement-campaigns#3-testing-the-integration) activando una notificación push.
+4. [Consulta el rendimiento de las campañas de notificaciones push](/docs/measuring-push-notification-re-engagement-campaigns#4-viewing-push-notification-campaigns-in-the-dashboard) en el panel de control.
 
-<div id="1-creating-the-push-notification" />
+<Accordion title="1. Creación de la notificación push">
 
-<Accordion title="1. Creating the push notification">
-
-First, create a push notification that contains attribution data using one of the following methods.
+En primer lugar, crea una notificación push que contenga datos de atribución utilizando uno de los siguientes métodos.
 
 > 📘 **Note**
 >
-> In the following demonstration, we're using Firebase as the push provider. The instructions should be applicable to any push provider, with minor differences (if any). Consult the respective push provider's documentation.
+> **Nota:**
+>
+> En la siguiente demostración, estamos usando Firebase como proveedor de push. Las instrucciones deberían ser aplicables a cualquier proveedor de push, con pequeñas diferencias (si las hubiera). Consulta la documentación del respectivo proveedor de push.
 
 <Tabs>
-<Tab title="Using OneLink (recommended)">
+<Tab title="Usando OneLink (recomendado)">
 
-#### **Using OneLink (recommended)**
+#### **Usando OneLink (recomendado)**
 
-This is the recommended method of integrating AppsFlyer with push notifications.
+Este es el método recomendado para integrar AppsFlyer con notificaciones push.
 
-1. Create a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">OneLink link and set it up for retargeting.</Anchor>  
-   **Note**: OneLink short and long URLs are both supported.
-2. In the push notification custom data, add the OneLink that contains the attribution data you want to send to AppsFlyer.
+1. Crea un <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">enlace de OneLink y configúralo para el retargeting.</Anchor>  
+    **Nota**: Las URL cortas y largas de OneLink son compatibles.
+2. En los datos personalizados de la notificación push, añade el OneLink que contiene los datos de atribución que quieres enviar a AppsFlyer.
 
 > 📘 **Note**
 >
-> **Firebase example**
+> **Ejemplo de Firebase**
 >
-> In Firebase:
+> En Firebase:
 >
-> ![appsflyer-push-custom-data-firebase.png](https://files.readme.io/b2a753e8ec88ef0d0e0a71fe222a8ecc4f03786297696d150f185720b8f4e248-49839256715025.png)
+>  ![appsflyer-push-custom-data-firebase.png](https://files.readme.io/b2a753e8ec88ef0d0e0a71fe222a8ecc4f03786297696d150f185720b8f4e248-49839256715025.png)
 
 </Tab>
 
-<Tab title="Using JSON (legacy)">
+<Tab title="Uso de JSON">
 
 <div id="using-json-legacy" />
 
-#### **Using JSON (legacy)**
+#### **Uso de JSON**
 
 > 📘 **Note**
 >
-> The following documents the legacy method of integrating AppsFlyer with push notifications, and is available for backward-compatibility purposes. If you're setting up a new app, use the [recommended OneLink-based solution](/docs/measuring-push-notification-re-engagement-campaigns#using-onelink-recommended).
+> **Nota:**
+>
+> A continuación se documenta el método basado en JSON para integrar AppsFlyer con notificaciones push, disponible por motivos de compatibilidad con versiones anteriores. Si estás configurando una nueva aplicación, utiliza la [solución recomendada basada en OneLink](/docs/measuring-push-notification-re-engagement-campaigns#usando-onelink-recomendado).
 
-In the push notification's custom data, add a custom key called `af` that contains the attribution data you want to send to AppsFlyer in JSON format. The following attribution parameters are required:
+En los datos personalizados de la notificación push, añade una clave personalizada llamada `af` que contenga los datos de atribución que quieres enviar a AppsFlyer en formato JSON. Se requieren los siguientes parámetros de atribución:
 
 * `pid`
 * `is_retargeting`
-* `c`
+* `C`
 
 > 📘 **Note**
 >
-> **Firebase example**
+> **Ejemplo de Firebase**
 >
-> In Firebase:
+> En Firebase:
 >
-> ![appsflyer-push-custom-data-firebase-json.png](https://files.readme.io/138aa2abb70cdb0b8a2c1a4b4ce0a8b83b2faae58e29f3223d5653a4d575012b-49839256716049.png)
+>  ![appsflyer-push-custom-data-firebase-json.png](https://files.readme.io/138aa2abb70cdb0b8a2c1a4b4ce0a8b83b2faae58e29f3223d5653a4d575012b-49839256716049.png)
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-<div id="2-configuring-the-sdk" />
+<Accordion title="2. Configuración del SDK">
 
-<Accordion title="2. Configuring the SDK">
+Esta tarea requiere cambios en el código de la aplicación. Sigue las instrucciones para configurar el SDK:
 
-This task requires changes to the app code. Follow the instructions on how to configure the SDK:
-
-* When implementing the recommended OneLink-based solution:
-  1. let the app developer know what's the name of the custom key you added to the notification. In this example, it's `af_push_link`.
-  2. Send them <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications#integrating-appsflyer-with-push-notifications-using-onelink-recommended">these instructions</Anchor>.
-* When implementing the legacy JSON-based solution, send your developers <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications#integrating-appsflyer-with-push-notifications-legacy">these instructions</Anchor>.
+* Al implementar la solución recomendada basada en OneLink:
+  1. Permite que el desarrollador de la aplicación sepa cuál es el nombre de la clave personalizada que has agregado a la notificación. En este ejemplo, es `af_push_link`.
+  2. Envíales <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications#integrating-appsflyer-with-push-notifications-using-onelink-recommended">estas instrucciones</Anchor>.
+* Cuando implementes la solución heredada basada en JSON, envía a tus desarrolladores <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications#integrating-appsflyer-with-push-notifications-legacy">estas instrucciones</Anchor>.
 
 </Accordion>
 
-<div id="3-testing-the-integration" />
+<Accordion title="3. Prueba de la integración">
 
-<Accordion title="3. Testing the integration">
+Para probar que la medición de notificaciones push está integrada correctamente, simplemente activa una notificación push en la campaña que configuraste en el Paso 1.
 
-To test that push notification measurement is integrated correctly, simply trigger a push notification in the campaign you set up in Step 1.
+Si todo está configurado correctamente, el SDK:
 
-If everything is configured properly, the SDK will:
-
-1. Listen to push notifications.
-2. Process the attribution data embedded in the push notification and send it to AppsFlyer.
-3. Proceed with the regular deep linking flow, if push notification measurement is implemented using OneLink.
+1. Escuchará las notificaciones push.
+2. Procesará los datos de atribución incrustados en la notificación push y los enviará a AppsFlyer.
+3. Continuará con el flujo regular de enlaces profundos, si se implementa la medición de notificaciones push con OneLink.
 
 </Accordion>
 
-<div id="4-viewing-push-notification-campaigns-in-the-dashboard" />
+<Accordion title="4. Visualización de las campañas de notificaciones push en el panel de control">
 
-<Accordion title="4. Viewing push notification campaigns in the dashboard">
+Puedes ver los datos procedentes de notificaciones push en el <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide#retargeting-dashboard">Dashboard de retargeting</Anchor>.
 
-You can see data originating from push notifications in the <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#retargeting-dashboard">Retargeting dashboard</Anchor>.
-
-**Note**: AppsFlyer deduplicates push notification data. Meaning, if identical payloads are received more than once, only one is counted.
+**Nota**: AppsFlyer desduplica los datos de las notificaciones push. Es decir, si se reciben cargas útiles idénticas más de una vez, solo se cuenta una.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01J5XFSEG9DR31DP73KTAGQPFW=overview h_01J5XFSEG967HXNT3GFSC2AQYE=how-does-it-work h_01J5XFSEG91SER3JKB3RKK6B6G=prerequisites h_01J5XFSEG9W3RTP62NW7SV4D0F=steps h_01J5XFSEG9PXHTD4C9XCDC01DH=1-creating-the-push-notification h_01J5XFSEG9W73JYPHH9VRZSTZ8=using-onelink-recommended h_01J5XFSEG9V46T6XSG31J4AVET=using-json-legacy h_01J5XFSEG9GYMKAT27AWTN1WZZ=2-configuring-the-sdk h_01J5XFSEG91NH41QMV9K3S4F18=3-testing-the-integration h_01J5XFSEG904NC72K8MWX9YM06=4-viewing-push-notification-campaigns-in-the-dashboard" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01J5XFSEG9DR31DP73KTAGQPFW=visi%C3%B3n-general how-does-it-work=c%C3%B3mo-funciona h_01J5XFSEG967HXNT3GFSC2AQYE=c%C3%B3mo-funciona prerequisites=requisitos-previos h_01J5XFSEG91SER3JKB3RKK6B6G=requisitos-previos steps=pasos h_01J5XFSEG9W3RTP62NW7SV4D0F=pasos using-onelink-recommended=usando-onelink-recomendado h_01J5XFSEG9W73JYPHH9VRZSTZ8=usando-onelink-recomendado h_01J5XFSEG9V46T6XSG31J4AVET=using-json-legacy" />

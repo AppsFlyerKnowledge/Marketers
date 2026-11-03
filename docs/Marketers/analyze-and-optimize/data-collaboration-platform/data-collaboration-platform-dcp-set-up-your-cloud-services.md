@@ -1,5 +1,5 @@
 ---
-title: Data Collaboration Platform (DCP) - Set up your cloud services
+title: Plataforma de colaboración de datos (DCP) - Configura tus servicios en la nube
 metadata:
   keywords:
     - Marketers
@@ -12,31 +12,30 @@ x-zendesk:
     - Marketers
     - Audience Activation
   created_at: '2024-04-28T14:01:34Z'
-  edited_at: '2026-07-27T06:59:59Z'
+  edited_at: '2026-08-12T11:53:59Z'
   id: 24604528827921
-  locale: en-us
+  locale: es
   section: Data Collaboration Platform
   section_id: 26230608274065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/24604528827921-Data-Collaboration-Platform-DCP-Set-up-your-cloud-services
+  url: https://support.appsflyer.com/hc/es/articles/24604528827921
 ---
-> **At a glance:** Set up your cloud services so you can connect your source data to DCP and export audiences to your cloud storage buckets.
+> **Resumen:** Configura tus servicios en la nube para poder conectar tus datos de fuente a DCP y exportar audiencias a tus buckets de almacenamiento en la nube.
 
-## About cloud service setup
+## Acerca de la configuración de servicios en la nube
 
-DCP uses two types of connections to move data between your cloud services and the platform:
+DCP utiliza dos tipos de conexiones para mover datos entre tus servicios en la nube y la plataforma:
 
-* **Source connections:** Enables you to connect your first-party data to DCP for collaboration and audience creation.
-* **Cloud storage connections:** Enables you to export your audiences to your cloud storage buckets after each audience update.
+* **Conexiones de fuente:** Te permiten conectar tus datos propios a DCP para la colaboración y la creación de audiencias.
+* **Conexiones de almacenamiento en la nube:** Te permiten exportar tus audiencias a tus buckets de almacenamiento en la nube después de cada actualización de la audiencia.
 
-Setting up a connection is a two-step process:
+Configurar una conexión es un proceso de dos pasos:
 
-* **Step 1:** Use your cloud service's interface to prepare it for use with DCP.
-* **Step 2:** Connect it to DCP in the AppsFlyer platform. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">Data Collaboration Platform (DCP) - Add connections</Anchor>.
+* **Paso 1:** Usa la interfaz de tu servicio en la nube para prepararlo para usarlo con DCP.
+* **Paso 2:** Conéctalo a DCP en la plataforma de AppsFlyer. Consulta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-add-connections">Plataforma de colaboración de datos (DCP) - Añadir conexiones</Anchor>.
 
-The table below shows which services are supported for each connection type:
+La tabla siguiente muestra qué servicios son compatibles con cada tipo de conexión:
 
-| Cloud service | Source (inbound) | Cloud storage (outbound) |
+| Servicios en la nube | Fuente (de entrada) | Almacenamiento en la nube (saliente) |
 | --- | --- | --- |
 | Amazon S3 | ✓ | ✓ |
 | Google Cloud Storage (GCS) | ✓ | ✓ |
@@ -44,39 +43,39 @@ The table below shows which services are supported for each connection type:
 | Snowflake | ✓ | - |
 | Salesforce Cloud/CRM | ✓ | - |
 
-For Amazon S3 and GCS, the same bucket setup and permissions apply for both source and cloud storage connections, so no separate setup is needed for each direction. Creating a source connection automatically creates a matching cloud storage connection (and vice versa), and deleting one deletes the other, since it's really one underlying connection that's shared across both tabs.
+En Amazon S3 y GCS, se aplica la misma configuración y los mismos permisos del bucket tanto a las conexiones de fuente como a las de almacenamiento en la nube, por lo que no necesitas una configuración independiente para cada dirección. Crear una conexión de fuente crea automáticamente una conexión de almacenamiento en la nube correspondiente (y viceversa), y al eliminar una se elimina la otra, ya que en realidad se trata de una única conexión subyacente compartida entre ambas pestañas.
 
-## Set up your cloud services
+## Configura tu servicio en la nube
 
-Select your cloud service below for setup instructions.
+Selecciona a continuación tu servicio en la nube para ver las instrucciones de configuración.
 
 <div id="amazon-s3" />
 
 <Accordion title="Amazon S3">
 
-Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
+Sigue las instrucciones a continuación para preparar un bucket de Amazon S3 para usarlo con DCP.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> The following procedure must be performed by your AWS admin.
+> El administrador de AWS debe llevar a cabo el siguiente procedimiento.
 
-**To create a bucket:**
+**Para crear un bucket:**
 
-1. Log in to the AWS console.
-2. Go to the S3 service.
-3. Create the bucket:
-   1. Click **Create bucket**.
-   2. Complete the **Bucket name**, starting with `af-dcr-`
+1. Inicia sesión en la consola de AWS.
+2. Ve al servicio S3.
+3. Crea el bucket:
+   1. Haz clic en **Crear bucket**.
+   2. Completa el **nombre del bucket**, empezando por `af-dcr-`
 
-       and followed by your text, according to the [DCR naming requirements](#dcr-naming-requirements).
-   3. Click **Create bucket**.
+       y seguido del texto que quieras, de acuerdo con los [requisitos de nomenclatura de DCR](#dcr-naming-requirements).
+   3. Haz clic en **Crear bucket**.
 
-**To grant AppsFlyer bucket permissions:**
+**Para otorgar permisos de bucket a AppsFlyer:**
 
-1. Select the bucket you created.
-2. Go to the **Permissions** tab.
-3. In the **Bucket policy** section, click **Edit**. The **Edit bucket policy** window opens.
-4. Paste the following code snippet into the window:
+1. Selecciona el bucket que creaste.
+2. Ve a la pestaña **Permissions** (Permisos).
+3. En la sección **Política del bucket**, haz clic en **Editar**. Se abre la ventana **Editar la política del bucket**.
+4. Pega el siguiente fragmento de código en la ventana:
 
    ```json
    {
@@ -105,12 +104,12 @@ Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
      ]
    }
    ```
-5. In the snippet, replace `af-dcr-mybucket` (in the two lines in which it appears) with the name of the bucket you created.
-6. Click **Save changes**.
+5. En el fragmento, reemplaza `af-dcr-mybucket` (en las dos líneas en las que aparece) por el nombre del bucket que has creado.
+6. Desde la barra superior, abre el menú de cuenta (menú desplegable de dirección de correo electrónico) > **Centro de seguridad**.
 
-> 🚧 **Important!**
+> 🚧 **Dos puntos (:)**
 >
-> When replacing the bucket name in the snippet, do not overwrite `/*` in the second line in which the bucket name appears.
+> Al sustituir el nombre del bucket en el fragmento, no sobrescribas `/*` en la segunda línea en la que aparece el nombre del bucket.
 
 </Accordion>
 
@@ -118,34 +117,34 @@ Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
 
 <Accordion title="Google Cloud Storage (GCS)">
 
-Use the following instructions to prepare a GCS bucket for use with DCP.
+Usa las siguientes instrucciones para preparar un bucket de GCS para su uso con DCP.
 
-> 📘 **Note**
+> 📘 **Anunciante**
 >
-> The following procedure must be performed by your Google Cloud admin.
+> El siguiente procedimiento debe realizarlo tu administrador de Google Cloud.
 
-**To create a bucket:**
+**Para crear un bucket:**
 
-1. Log in to your GCS console.
-2. Go to the Cloud Storage Browser page.
-3. Create the bucket:
-   1. Click **Create bucket**.
-   2. Enter your bucket information on the **Create a bucket** page. Include the bucket name, starting with `af-dcr-`
+1. Inicia sesión en tu consola de GCS.
+2. Ve a la página de Cloud Storage Browser.
+3. Crea el bucket:
+   1. Haz clic en **Crear bucket**.
+   2. Introduce la información de tu bucket en la página **Create a bucket**. Incluye el nombre del bucket, empezando por `af-dcr-`
 
-       and followed by your text, according to the [DCR naming requirements](#dcr-naming-requirements).
-   3. Click **Continue**.
-   4. Click **Create**.
+       y seguido del texto que quieras, de acuerdo con los [requisitos de nomenclatura de DCR](#dcr-naming-requirements).
+   3. Haz clic en **Continuar**.
+   4. Haz clic en **Crear**.
 
-**To grant AppsFlyer bucket permissions:**
+**Para otorgar permisos de bucket a AppsFlyer:**
 
-1. Select the bucket you created.
-2. Go to the **Permissions** tab.
-3. In the **Permissions** section, click **+ Add**. The **Add members** window opens.
-4. In the **New members** box, enter the following accounts:
+1. Selecciona el bucket que creaste.
+2. Ve a la pestaña **Permissions** (Permisos).
+3. En la sección **Permissions**, haz clic en **+ Add**. Se abre la ventana **Add members**.
+4. En el cuadro **New members**, introduce las siguientes cuentas:
    * `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    * `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
-5. From the **Role** list, select **Cloud storage** > **Storage Admin**.
-6. Click **Save**.
+5. En la lista **Role**, selecciona **Cloud storage** > **Storage Admin**.
+6. Haz clic en Guardar.
 
 </Accordion>
 
@@ -153,35 +152,35 @@ Use the following instructions to prepare a GCS bucket for use with DCP.
 
 <Accordion title="BigQuery">
 
-BigQuery supports source connections only. Use the following instructions to create a dataset and grant AppsFlyer permissions.
+BigQuery solo admite conexiones de origen. Usa las siguientes instrucciones para crear un conjunto de datos y conceder permisos a AppsFlyer.
 
-> 📘 **Note**
+> 📘 **Anunciante**
 >
-> The following procedure must be performed by your Google Cloud admin.
+> El siguiente procedimiento debe realizarlo tu administrador de Google Cloud.
 
-**To create a dataset:**
+**Para crear un conjunto de datos:**
 
-1. Log in to your Google Cloud console.
-2. Go to the BigQuery page.
-3. In a new or existing Google Cloud project, create a dataset for the exclusive use of DCP:
-   1. In the left-side panel, click the three-dot menu icon (**View actions**) to the right of the project ID.
-   2. Select **Create dataset**.
-   3. In the right-side panel that opens, enter the name of the dataset and select other options as required.
-      * You can use any name: letters, numbers, and underscores only.
-        * **Recommended:** Use a name that indicates the dataset is being used for a source connection.
-      * Do not use the **Enable table expiration** option, as DCP will be unable to read your data after the tables expire.
-   4. Click **Create dataset**.
+1. Inicia sesión en tu consola de Google Cloud.
+2. Ve a la página de BigQuery.
+3. En un proyecto nuevo o existente de Google Cloud, crea un conjunto de datos para el uso exclusivo de DCP:
+   1. En el panel izquierdo, haz clic en el icono del menú de tres puntos (**View actions**) situado a la derecha del ID del proyecto.
+   2. Selecciona **Create dataset**.
+   3. En el panel que se abre en el lado derecho, introduce el nombre del conjunto de datos y selecciona otras opciones según sea necesario.
+      * Puedes usar cualquier nombre: solo letras, números y guiones bajos.
+        * **Recomendado:** Utiliza un nombre que indique que el conjunto de datos se está usando para una conexión de fuente.
+      * No uses la opción **Enable table expiration**, ya que DCP no podrá leer tus datos cuando caduquen las tablas.
+   4. Haz clic en **Crear conjunto de datos**.
 
-**To grant AppsFlyer permissions to the dataset:**
+**Para otorgar a AppsFlyer permisos para el conjunto de datos:**
 
-1. In the left-side panel, click the three-dot menu icon (**View actions**) to the right of the dataset you created.
-2. Select **Share**.
-3. In the right-side panel that opens, click **Add principal**.
-4. In the **Add principals** section, enter the following account in the **New principals** field:
+1. En el panel izquierdo, haz clic en el icono del menú de tres puntos (**View actions**) situado a la derecha del conjunto de datos que creaste.
+2. Selecciona **Share**.
+3. En el panel que se abre en el lado derecho, haz clic en **Add principal**.
+4. En la sección **Add principals**, introduce la siguiente cuenta en el campo **New principals**:
    * `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
-5. In the **Assign roles** section, select **BigQuery** > **BigQuery Data Viewer**.
-6. Click **Save**.
-7. Click **Close** to close the right-side panel.
+5. En la sección **Assign roles**, selecciona **BigQuery** > **BigQuery Data Viewer**.
+6. Haz clic en Guardar.
+7. Haz clic en **Close** para cerrar el panel del lado derecho.
 
 </Accordion>
 
@@ -189,30 +188,30 @@ BigQuery supports source connections only. Use the following instructions to cre
 
 <Accordion title="Snowflake">
 
-Snowflake supports source connections only. Use the following instructions to create a private share for use by DCP.
+Snowflake solo admite conexiones de fuente. Sigue estas instrucciones para crear un recurso compartido privado para que lo use DCP.
 
-> 📘 **Note**
+> 📘 **Anunciante**
 >
-> The following procedure must be performed by a Snowflake **Accountadmin**.
+> El siguiente procedimiento debe ser realizado por un **Accountadmin** de Snowflake.
 
-**To create a private share:**
+**Para crear un recurso compartido privado:**
 
-1. <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface">Log in to the Snowflake account</Anchor> that contains the data you want to share with DCP.
-2. Switch your role to **Account admin**.
-3. From the left-side panel, select **Private Sharing**.
-4. On the page that opens, select the **Shared By Your Account** tab.
-5. Click **Share**. From the list that opens, select **Create a Direct Share**.
-6. Select the tables and/or views you want to share with DCP, then click **Done**.
-7. Change the **Secure Share Identifier** and add an optional description as needed.
-8. In the **Add accounts in your region by name** field, enter the AppsFlyer Snowflake account for your region:
+1. <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface">Inicia sesión en la cuenta de Snowflake</Anchor> que contiene los datos que deseas compartir con DCP.
+2. Cambia tu rol a **Account admin**.
+3. En el panel izquierdo, selecciona **Private Sharing**.
+4. En la página que se abre, selecciona la pestaña **Shared By Your Account**.
+5. Haz clic en **Share**. En la lista que se abre, selecciona **Create a Direct Share**.
+6. Selecciona las tablas y/o vistas que quieras compartir con DCP y, a continuación, haz clic en **Done**.
+7. Cambia el **Secure Share Identifier** y añade una descripción opcional según sea necesario.
+8. En el campo **Add accounts in your region by name**, introduce la cuenta de Snowflake de AppsFlyer de tu región:
 
-| Region | AppsFlyer account |
+| Información del dispositivo | Cuenta de AppsFlyer |
 | --- | --- |
 | EU West (eu-west-1) | QL63117 |
 | US East - N. Virginia (us-east-1) | MWB70410 |
 | US East - Ohio (us-east-2) | BM15378 |
 
-9. Click **Create Share**.
+9. Haz clic en **Create Share**.
 
 </Accordion>
 
@@ -220,24 +219,24 @@ Snowflake supports source connections only. Use the following instructions to cr
 
 <Accordion title="Salesforce Cloud/CRM">
 
-Salesforce Cloud/CRM supports source connections only. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">DCP - Integration with Salesforce Data Cloud</Anchor> for setup instructions.
+Salesforce Cloud/CRM solo admite conexiones de fuente. Consulta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">DCP - Integración con Salesforce Data Cloud</Anchor> para ver las instrucciones de configuración.
 
 </Accordion>
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-| Trait | Description |
+| Caducado | Descripción |
 | --- | --- |
-| Supported cloud services | Amazon S3 and GCS support both source and cloud storage connections. BigQuery, Snowflake, and Salesforce Cloud/CRM support source connections only. |
-| Bucket use | S3 and GCS buckets must be for the exclusive use of DCP. No other service can write data to the bucket. |
-| <span id="dcr-naming-requirements"></span>DCR naming requirements | The following naming requirements apply to all DCR data entities, including buckets, folders, and files:<ul><li>**Maximum length:** 200 characters</li><li>**Valid characters:** letters (A-Z, a-z), numbers (0-9), hyphens (-)</li><li>**Invalid characters:** spaces, and all other symbols or special characters</li><li>Numbers and hyphens cannot be the first character of a name</li><li>**Special-purpose characters only:**<ul><li>Equal signs (=): only in <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version">date and version folder names</Anchor></li><li>Underscores {"(_):"} only in <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#file-format">multi-part GZIP file names</Anchor> or <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#_success-files">{"_SUCCESS"} files</Anchor></li><li>Dots (.): only directly before filename extensions (.csv, .gzip)</li></ul></li></ul> |
-| Bucket naming | Bucket names must begin with `af-dcr-` followed by your text. Example: `af-dcr-example-bucket`.<br /><br />[PENDING R&D: confirm whether af-datalocker- prefix should still be listed as an allowed alternative, or removed] |
+| Servicios en la nube compatibles | Amazon S3 y GCS admiten tanto conexiones de fuente como de almacenamiento en la nube. BigQuery, Snowflake y Salesforce Cloud/CRM solo admiten conexiones de fuente. |
+| Uso del bucket | Los buckets de S3 y GCS deben ser de uso exclusivo para DCP. Ningún otro servicio puede escribir datos en el bucket. |
+| <span id="dcr-naming-requirements"></span>Requisitos de denominación de DCR | Los siguientes requisitos de denominación se aplican a todas las entidades de datos de DCR, incluidos los buckets, las carpetas y los archivos:<ul><li>**Longitud máxima:** 200 caracteres</li><li>**Caracteres válidos:** letras (A-Z, a-z), números (0-9), guiones (-)</li><li>**Caracteres no válidos:** espacios y todos los demás símbolos o caracteres especiales</li><li>Los números y los guiones no pueden ser el primer carácter de un nombre</li><li>**Solo caracteres de uso específico:**<ul><li>Signos de igual (=): solo en los <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version">nombres de carpetas de fecha y versión</Anchor></li><li>Guiones bajos {"(_):"} solo en los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#file-format">nombres de archivos GZIP de varias partes</Anchor> o en los archivos <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#_success-files">{"_SUCCESS"}</Anchor></li><li>Puntos (.): solo directamente antes de las extensiones de nombre de archivo (.csv, .gzip)</li></ul></li></ul> |
+| Denominación del bucket | Los nombres de los buckets deben empezar por `af-dcr-` seguido de tu texto. Ejemplo: `af-dcr-example-bucket`. |
 
-> 📄 **See also**
+> 📄 **Véase también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">DCP - Add connections</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">DCP - Build and activate audiences</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">DCP - Create and manage sources</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP) guide</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-add-connections">DCP - Agregar conexión</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">DCP: crear y activar audiencias</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">DCP - Crear y gestionar fuentes</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-guide">Guía de la plataforma de colaboración de datos (DCP)</Anchor>
 
-<div data-zendesk-anchors="h_01KY1VRHDTX2W1YC4QX1N093GF=about-cloud-service-setup h_01KY1VRHDT63WWBPNNN3QC9N49=set-up-your-cloud-services h_01KY1VRHDT2GRP2MMYTKFNRN3P=amazon-s3 h_01KY1VRHDTYMG39CRENZC971RS=note h_01KY1VRHDVV1ZHTVV5SXGXRZ59=important h_01KY1VRHDVS3S0F22T0EQ5MCKY=google-cloud-storage-gcs h_01KY1VRHDVX4KYCT627NN92TCT=note-2 h_01KY1VRHDVR3CZAZK0PGXDBWRC=bigquery h_01KY1VRHDV8Q3TRG7TBM5TRDYM=note-2 h_01KY1VRHDVSE9WJSDFXYV7W2R3=snowflake h_01KY1VRHDVDDK9B8Y7DKA5GA75=note-3 h_01KY1VRHDV9PJQMAGBY52G9RS8=salesforce-cloudcrm h_01KY1VRHDVT3PYP5QVKNKQ803G=traits-and-limitations h_01KY1VRHDVEWNCDKZYCGWD1SRM=see-also" />
+<div data-zendesk-anchors="about-cloud-service-setup=acerca-de-la-configuraci%C3%B3n-de-servicios-en-la-nube h_01KY1VRHDTX2W1YC4QX1N093GF=acerca-de-la-configuraci%C3%B3n-de-servicios-en-la-nube set-up-your-cloud-services=configura-tu-servicio-en-la-nube h_01KY1VRHDT63WWBPNNN3QC9N49=configura-tu-servicio-en-la-nube h_01KY1VRHDT2GRP2MMYTKFNRN3P=amazon-s3 h_01KY1VRHDTYMG39CRENZC971RS=advertencia h_01KY1VRHDVV1ZHTVV5SXGXRZ59=dos-puntos- h_01KY1VRHDVS3S0F22T0EQ5MCKY=google-cloud-storage-gcs h_01KY1VRHDVX4KYCT627NN92TCT=anunciante h_01KY1VRHDVR3CZAZK0PGXDBWRC=bigquery h_01KY1VRHDV8Q3TRG7TBM5TRDYM=anunciante-1 h_01KY1VRHDVSE9WJSDFXYV7W2R3=snowflake h_01KY1VRHDVDDK9B8Y7DKA5GA75=anunciante-2 h_01KY1VRHDV9PJQMAGBY52G9RS8=salesforce-cloudcrm traits-and-limitations=especificaciones-y-limitaciones h_01KY1VRHDVT3PYP5QVKNKQ803G=especificaciones-y-limitaciones h_01KY1VRHDVEWNCDKZYCGWD1SRM=v%C3%A9ase-tambi%C3%A9n" />

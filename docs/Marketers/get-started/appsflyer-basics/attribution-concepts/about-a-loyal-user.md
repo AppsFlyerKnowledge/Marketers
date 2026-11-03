@@ -1,5 +1,5 @@
 ---
-title: About a loyal user
+title: Sobre un usuario fiel
 metadata:
   keywords:
     - In-App
@@ -19,24 +19,26 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2015-12-24T10:15:54Z'
-  edited_at: '2025-04-05T12:55:02Z'
+  edited_at: '2026-08-12T11:56:25Z'
   id: 207447003
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: https://support.appsflyer.com/hc/en-us/articles/207447003-About-a-loyal-user
+  url: https://support.appsflyer.com/hc/es/articles/207447003
 ---
-> **At a glance:** Learn what defines a loyal user in AppsFlyer, and how you can customize it.
+> **De un vistazo:** descubre qué define a un usuario fiel en AppsFlyer y cómo puedes personalizarlo.
 
-## What is a loyal user?
+## ¿Qué es un usuario fiel?
 
-* According to the AppsFlyer default setting, a loyal user is a user who after downloading and opening the app for the first time, opens it a further 3 times.
-* This is an important KPI for user engagement.
+* Según la configuración predeterminada de AppsFlyer, un usuario fiel es un usuario que, después de descargar y abrir la aplicación por primera vez, la abre 3 veces más.
+* Este es un KPI importante para el engagement del usuario.
 
-## Changing the loyal user definition
+## Cambiar la definición de usuario fiel
 
-You can define a loyal user per app by specifying an in-app event trigger. To change the loyal-user event trigger, see <Anchor target="_blank" href="/marketers/docs/app-settings">App settings</Anchor>.
+Puedes definir un usuario fiel por aplicación especificando un desencadenador de evento in-app. Para cambiar el activador del evento de usuario fiel, consulta <Anchor target="_blank" href="/marketers/es/docs/app-settings">Configuración de la app</Anchor>.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Users who perform registration or in-app purchases can be more indicative of being loyal users than the default 3 session definition.
+> Los usuarios que completan el registro o realizan compras in-app pueden ser más indicativos de que son usuarios fieles que la definición predeterminada de 3 sesiones.
+
+<div data-zendesk-anchors="what-is-a-loyal-user=qu%C3%A9-es-un-usuario-fiel changing-the-loyal-user-definition=cambiar-la-definici%C3%B3n-de-usuario-fiel" />

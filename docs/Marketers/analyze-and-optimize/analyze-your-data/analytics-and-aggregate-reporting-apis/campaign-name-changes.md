@@ -1,5 +1,5 @@
 ---
-title: Campaign name changes
+title: Cambios de nombres de campañas
 metadata:
   keywords:
     - Aggregated Data
@@ -17,68 +17,67 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2023-03-26T10:56:19Z'
-  edited_at: '2024-04-24T14:48:53Z'
+  edited_at: '2026-08-12T11:49:36Z'
   id: 14038324952465
-  locale: en-us
+  locale: es
   section: Analytics and aggregate reporting/APIs
   section_id: 6550976670225
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/14038324952465-Campaign-name-changes
+  url: https://support.appsflyer.com/hc/es/articles/14038324952465
 ---
-> **At a glance:** Change the names of campaigns without creating duplicate data displays.
+> **En resumen:** Cambia los nombres de las campañas sin crear visualizaciones de datos duplicados.
 
-## Campaign name changes
+## Cambios de nombres de campañas
 
-Changing the names of campaigns affects the display of **aggregate data** in dashboards and reports. AppsFlyer displays campaigns using the campaign ID as the key. If there is more than one name associated with the same campaign ID, the most recently reported name is used to display data.
+Cambiar los nombres de las campañas afecta la visualización de los **datos agregados** en los paneles de control y reportes. AppsFlyer muestra las campañas usando el ID de campaña como clave. Si hay más de un nombre asociado con el mismo ID de campaña, se utiliza el nombre reportado más recientemente para mostrar los datos.
 
-* Although we refer to **campaign** name changes in this article, the same rules apply to adset and ad name changes.
-* The name change affects the display of all data connected to the campaign, including installs, in-app events, cost, and revenue.
-* Most ad networks support campaign name changes, but a few don't, and for these you may see duplicate rows with the same data.
-* Raw data isn't affected by the name changes.
+* Si bien en este artículo nos referimos a cambios de nombres de **campañas**, se aplican las mismas reglas a los cambios de nombres de anuncios y conjuntos de anuncios.
+* El cambio de nombre afecta la visualización de todos los datos conectados a la campaña, incluidas las instalaciones, los eventos in-app, los costos y los ingresos.
+* La mayoría de las redes de publicidad admiten cambios de nombres de campañas, pero algunas no lo hacen y en estas es posible que veas filas duplicadas con los mismos datos.
+* El raw data no se ve afectado por los cambios de nombre.
 
-The following table shows which dashboards and reports support campaign name changes.
+La siguiente tabla muestra qué paneles de control y reportes admiten cambios de nombres de campañas.
 
-| Dashboard/report | Supports campaign name changes |
+| Panel de control/reporte | Admite cambios de nombres de campañas |
 | --- | --- |
-| Overview dashboard | Yes, except for CTV view |
-| Activity dashboard | Yes |
-| Cohort dashboard | Yes |
-| Cohort API | Yes |
-| Pull API | Not supported by Pull API V5 and lower |
-| Pivot dashboard | No |
-| Custom dashboard | No |
-| Retention dashboard | No |
-| Events dashboard | No |
-| Protect360 dashboard | No |
-| Cost ETL | Yes |
-| SKAN overview dashboard | No |
+| Panel de vista general | Sí, excepto la vista CTV |
+| Panel de control de actividades | Sí |
+| Panel de control de cohorte | Sí |
+| API de cohorte | Sí |
+| API Pull | No se admite con API Pull V5 y versiones anteriores |
+| Panel de control de Pivot | No |
+| Panel de control personalizado | No |
+| Panel de control de retención | No |
+| Panel de control de eventos | No |
+| Panel de control de Protect360 | No |
+| ETL de costos | Sí |
+| Panel de control general de SKAN | No |
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> * On January 1, campaign **example\_a1** began to run.
-> * On January 2, the campaign name was changed from **example\_a1** to **example\_a2**.
+> * El 1 de enero comenzó a ejecutarse la campaña **example\_a1**.
+> * El 2 de enero, el nombre de la campaña cambió de **example\_a1**a **example\_a2**.
 >
-> #### Example campaign data
+> #### Ejemplo de datos de campaña
 >
 >
 >
-> | Date | Campaign name | Campaign ID | Installs | Ad spend |
+> | Fecha | Nombre de la campaña | ID de campaña | Instalaciones | Gasto publicitario |
 > | --- | --- | --- | --- | --- |
-> | January 1 | example\_a1 | 123 | 100 | $100 |
-> | January 2 | example\_a2 | 123 | 200 | $200 |
+> | 1 de enero | example\_a1 | 123 | 100 | $100 |
+> | 2 de enero | example\_a2 | 123 | 200 | $200 |
 >
 >
 >
-> #### Overview dashboard display
+> #### Visualización del panel de control general
 >
 >
 >
-> <table><tbody><tr><th><p><span>Campaign</span></p></th><th><p><span>Campaign ID</span></p></th><th><p><span>Installs</span></p></th><th><p><span>Ad spend</span></p></th></tr><tr><td><p><span>example_a2</span></p></td><td><p><span>123</span></p></td><td><p><span>300</span></p></td><td><p><span>$300</span></p></td></tr><tr><td colspan="4"><p>Result: Data displays under the most recent campaign name.</p></td></tr></tbody></table>
+> <table><tbody><tr><th><p><span>Campaña</span></p></th><th><p><span>ID de campaña</span></p></th><th><p><span>Instalaciones</span></p></th><th><p><span>Gasto publicitario</span></p></th></tr><tr><td><p><span>example_a2</span></p></td><td><p><span>123</span></p></td><td><p><span>300</span></p></td><td><p><span>$300</span></p></td></tr><tr><td colspan="4"><p>Resultado: Los datos se muestran bajo el nombre de campaña más reciente.</p></td></tr></tbody></table>
 
-### Best practice
+### Práctica recomendada
 
-* Most ad networks support campaign name changes, but a few don't, and for these you may see duplicate rows with the same data. To avoid such display anomalies ensure that campaigns have a unique campaign ID assigned to them.
-* Don't use the same campaign name with different campaign IDs.
-* Don't use the same ad name with different ad IDs.
+* La mayoría de las redes de publicidad admiten cambios de nombres de campañas, pero algunas no lo hacen y en estas es posible que veas filas duplicadas con los mismos datos. Para evitar tales anomalías de visualización, asegúrate de que cadacampaña tenga un ID de campaña único asignado.
+* No uses el mismo nombre de campaña con diferentes ID de campaña.
+* No uses el mismo nombre de anuncio con diferentes ID de anuncio.
 
-<div data-zendesk-anchors="rollout-details=campaign-name-changes h_01HW896QQ2T4J0N5PDY6YFTJ49=campaign-name-changes h_01HW896QQ34YVGF6P212ZHAQHG=example h_01HW896QQ3G07XM06HR2CRXA3G=example-campaign-data overview-dashboard-display-before-the-behavior-change=overview-dashboard-display h_01HW896QQ3J9NE9GZRKKAPX46B=overview-dashboard-display h_01HW896QQ4RAQ51GPD17YYZBJF=best-practice" />
+<div data-zendesk-anchors="rollout-details=cambios-de-nombres-de-campa%C3%B1as h_01HW896QQ2T4J0N5PDY6YFTJ49=cambios-de-nombres-de-campa%C3%B1as h_01HW896QQ34YVGF6P212ZHAQHG=ejemplo example-campaign-data=ejemplo-de-datos-de-campa%C3%B1a h_01HW896QQ3G07XM06HR2CRXA3G=ejemplo-de-datos-de-campa%C3%B1a overview-dashboard-display-before-the-behavior-change=visualizaci%C3%B3n-del-panel-de-control-general h_01HW896QQ3J9NE9GZRKKAPX46B=visualizaci%C3%B3n-del-panel-de-control-general best-practice=pr%C3%A1ctica-recomendada h_01HW896QQ4RAQ51GPD17YYZBJF=pr%C3%A1ctica-recomendada" />

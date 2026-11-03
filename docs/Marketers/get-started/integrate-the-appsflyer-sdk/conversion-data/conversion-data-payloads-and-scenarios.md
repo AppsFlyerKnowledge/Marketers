@@ -1,5 +1,5 @@
 ---
-title: Conversion data payloads and scenarios
+title: Cargas útiles y escenarios de datos de conversión
 metadata:
   keywords:
     - Conversion
@@ -19,140 +19,139 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-12-31T13:05:33Z'
-  edited_at: '2026-08-14T16:22:50Z'
+  edited_at: '2026-08-22T00:13:00Z'
   id: 360000726098
-  locale: en-us
+  locale: es
   section: Conversion data
   section_id: 6551287787537
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000726098-Conversion-data-payloads-and-scenarios
+  url: https://support.appsflyer.com/hc/es/articles/360000726098
 ---
-> **At a glance:** Use conversion data to identify various conversion scenarios, customize user experience, and more.
+> **At a glance:** Usa los datos de conversión para identificar varios escenarios de conversión, personalizar la experiencia del usuario y mucho más.
 
-## Overview
+## Información general
 
-The following guide contains various user conversion scenarios and their corresponding conversion data payloads:
+La siguiente guía contiene varios escenarios de conversión de usuarios y sus correspondientes cargas útiles de datos de conversión:
 
-* [User Acquisition (UA)](#ua-conversion-data-with-srns)
-* [Retargeting](#retargeting-conversion-data)
+* [Adquisición de usuarios (UA)](#datos-de-conversión-de-ua-con-srn)
+* [Reorientación](#datos-de-conversión-de-retargeting)
 
-Conversion data is made available in the platform using any of the following:
+Los datos de conversión se ponen a disposición en la plataforma utilizando cualquiera de los siguientes:
 
-* <Anchor target="_blank" href="/marketers/docs/raw-data-export-page">Raw-data reports</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API</Anchor>
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data">The AppsFlyer SDK</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/raw-data-export-page">Reportes de raw data</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/push-api-streaming-raw-data">API push</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data">El SDK de AppsFlyer</Anchor>
 
-Due to the accuracy/latency tradeoff, conversion data for the same device IDs might differ across APIs.
+Debido a la compensación de la precisión/latencia, los datos de conversión para los mismos ID de dispositivo pueden diferir entre las API.
 
-### Non-organic conversion data payload fields
+### Campos de carga útil de datos de conversión no orgánicos
 
-#### Fields always available
+#### Campos siempre disponibles
 
-The table that follows lists fields that always exist for **non-organic** conversions, irrespective of the conversion `media_source`.
+En la tabla que sigue, se enumeran los campos que siempre existen para las conversiones **no orgánicas**, independientemente de la `media_source` de conversión.
 
-| Payload field name | Raw-data field name | Remarks |
+| Nombre del campo de carga útil | Nombre del campo de raw data | Observaciones |
 | --- | --- | --- |
-| `media_source` | Media source | Attributed publisher. Equivalent to the `pid` parameter in attribution links |
-| `install_time` | Install time |  |
-| `click_time` | Attributed touch time | The time that a click or impression occurred in UTC |
-| `is_first_launch` | N/A | `true`, `false` |
-| `af_status` | Raw data is divided into separate reports: organic, non-organic | `"Non-organic"` |
-| `af_siteid` | Site ID |  |
-| `adgroup_id` | Ad ID |  |
-| `adset` | Adset |  |
-| `adset_id` | Adset ID |  |
-| `agency` | Partner | `null`, or agency name (for campaigns run by agencies) |
-| `campaign` | Campaign |  |
-| `campaign_id` | Campaign ID |  |
-| `http_referrer` | HTTP Referrer |  |
-| `retargeting_conversion_type` | Retargeting Conversion Type | "none", or retargeting\_conversion\_type |
+| `fuente_de_medios` | Fuente de medios | Publisher atribuido. Equivalente al parámetro `pid` en los enlaces de atribución |
+| `hora_de_instalación` | Horario de instalación |  |
+| `click_time` | Tiempo de toque atribuido | La hora en que ocurrió un clic o impresión en UTC |
+| `is_first_launch` | N/D | `true`, `false` |
+| `af_status` | El raw data se divide en reportes separados: orgánicos, no orgánicos | `"No orgánicas"` |
+| `af_siteid` | ID de sitio |  |
+| `adgroup_id` | ID de anuncio |  |
+| `conjunto de anuncios` | Conjunto de anuncios |  |
+| `id_anuncio` | ID de conjunto de anuncios |  |
+| `agencia` | Fuente de medios | `null`, o nombre de agencia (para campañas dirigidas por agencias) |
+| `campaña única` | Campaña |  |
+| `id_campaña` | ID de campaña |  |
+| `http_referrer` | Referente de HTTP |  |
+| `tipo_conversion_retargeting` | Tipo de conversión de retargeting | "none", o retargeting\_conversion\_type |
 | `af_sub[n] (n=1—5)` | Sub Param [n] (n=1–5) |  |
 
-#### Fields available in some cases
+#### Campos disponibles en algunos casos
 
-The fields in the table that follows are available in some cases, depending on how the SRN populates the individual event.
+Los campos de la tabla que sigue están disponibles en algunos casos, dependiendo de cómo la SRN rellena el evento individual.
 
-<table><thead><tr><th>Payload fields name</th><th>Raw-data field name</th><th>Remarks</th><th> </th></tr></thead><tbody><tr><td><code>af_channel</code></td><td>Channel</td><td><p>SRNs populating this parameter:</p><ul><li>AppLovin</li><li>Google Ads</li><li>Meta ads</li><li>Snapchat</li><li>TikTok for Business</li><li>X Ads</li></ul><p>Example: Facebook—Instagram, Google—YouTube </p></td><td> </td></tr><tr><td><code>orig_cost</code></td><td> </td><td>Note (1)</td><td> </td></tr><tr><td><code>cost_cents_USD</code></td><td> </td><td>Note (1)</td><td> </td></tr><tr><td><code>af_cpi</code></td><td> </td><td>Note (1)</td><td> </td></tr><tr><td colspan="4"><p><strong>Note</strong></p><p>(1) Cost fields are populated with values shared by the ad network. In order for the ad network to share cost data with AppsFlyer, you must enable cost integration on the <a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank"><strong>Active integrations</strong></a> page. Some SRNs support cost-sharing in bulk. In this case, event-level cost fields return as 0. </p></td></tr></tbody></table>
+<table><thead><tr><th>Nombre de los campos de carga útil</th><th>Nombre del campo de raw data</th><th>Observaciones</th><th> </th></tr></thead><tbody><tr><td><code>af_canal</code></td><td>Canal</td><td><p>SRN que rellenan este parámetro:</p><ul><li>AppLovin</li><li>Anuncios de Google</li><li>Meta Ads</li><li>Snapchat</li><li>TikTok para empresas</li><li>Anuncios X</li></ul><p>Ejemplo: Facebook—Instagram, Google—YouTube </p></td><td> </td></tr><tr><td><code>orig_cost</code></td><td> </td><td>Nota (1)</td><td> </td></tr><tr><td><code>cost_cents_USD</code></td><td> </td><td>Nota (1)</td><td> </td></tr><tr><td><code>af_cpi</code></td><td> </td><td>Nota (1)</td><td> </td></tr><tr><td colspan="4"><p><strong>Nota</strong></p><p>(1) Los campos de costo se rellenan con valores compartidos por la red de publicidad. Para que la red de publicidad comparta el costo con AppsFlyer, debes habilitar la integración de costos en la página <a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank"><strong>Integraciones activas</strong></a>. Algunas SRN admiten costos compartidos de forma masiva. En este caso, los campos de costo a nivel de evento se devuelven como 0. </p></td></tr></tbody></table>
 
-### Additional fields
+### Campos adicionales
 
-* <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">AppsFlyer parameter list</Anchor>
-* You can add parameters to the attribution link, they are made available in the payload
+* <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-del-enlace-de-atribución">Lista de parámetros de AppsFlyer</Anchor>
+* Puedes agregar parámetros al enlace de atribución; estarán disponibles en la carga útil
 
-See <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#data-fields-dictionary">raw-data fields dictionary</Anchor> for additional information.
+Consulta el <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#data-fields-dictionary">diccionario de campos de raw data</Anchor> para obtener más información.
 
-### Limitations
+### Limitaciones
 
 <div id="custom-parameter-names" />
 
-<Accordion title="Custom parameter names">
+<Accordion title="Nombres de parámetros personalizados">
 
-Custom parameters cannot be called `name` (lower case "n". `Name` is valid).
+Los parámetros personalizados no se pueden llamar `name` ("n" en minúscula. `Name` es válido).
 
-If a parameter is called `name`, it is removed from the payload.
+Si un parámetro se llama `name`, se elimina de la carga útil.
 
 </Accordion>
 
 ---
 
-## UA conversion data with SRNs
+## Datos de conversión de UA con SRN
 
-<Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">Self-reporting networks</Anchor> (SRNs) are ad networks that implement their own attribution mechanisms, for example, Meta ads and Google.
+Las <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns">redes de autorreporte</Anchor> (SRN) son ad networks que implementan sus propios mecanismos de atribución, por ejemplo, anuncios de Meta y Google.
 
-SRNs don't use attribution links. It means that:
+Las SRN no utilizan enlaces de atribución. Es decir que:
 
-* Payload fields are predefined
-* You can't add fields to the payload by appending parameters to an attribution link.
+* Los campos de carga útil están predefinidos
+* No se pueden agregar campos a la carga útil agregando parámetros a un enlace de atribución.
 
-SRNs report conversions to AppsFlyer. The conversion data is made available in the app. The available fields vary by SRN and are detailed in the individual SRN tabs that follow.
+Las SRN reportan las conversiones a AppsFlyer. Los datos de conversión están disponibles en la aplicación. Los campos disponibles varían según la SRN y se detallan en las pestañas de las SRN individuales que siguen.
 
-#### A note about Meta ads
+#### Una nota sobre Anuncios de Meta
 
-If you run campaigns on Meta ads and don't sign the Meta terms of service, AppsFlyer attributes the install. Report availability is limited as follows:
+Si ejecutas campañas en Anuncios de Meta y no firmas los términos de servicio de Meta, AppsFlyer atribuye la instalación. La disponibilidad del reporte se limita de la siguiente manera:
 
-* **Available:** Aggregate and analytics dashboards and reports
-* **Not available:** Raw data
+* **Disponible:** paneles de control y reportes de datos agregados y analíticos:
+* **No disponible:** raw data
 
 <Tabs>
-<Tab title="Meta ads">
+<Tab title="Anuncios Meta">
 
-### Meta ads conversion data
+### Datos de conversión de Anuncios de Meta
 
-| Field name | Remarks | Data source |
+| Nombre de campo | Comentarios | Fuente de datos |
 | --- | --- | --- |
 | `match_type` | `srn`, `gp_referrer`, `probabilistic` | AF |
-| `media_source` | Always `Facebook Ads` | AF |
-| `agency` | `null` or contains the agency name when <Anchor target="_blank" href="/partners/docs/about-agency-accounts#srn-configurations">running Meta ads campaigns</Anchor> | Meta ads |
-| `http_referrer` | Always `null` | Meta ads |
+| `fuente_de_medios` | Siempre `Facebook Ads` | AF |
+| `agencia` | `null` o contiene el nombre de la agencia cuando se ejecutan <Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#configuraciones-de-srn">campañas de anuncios de Meta</Anchor> | Anuncios Meta |
+| `http_referrer` | Siempre `null` | Anuncios Meta |
 | `retargeting_conversion_type` |  | AF |
-| `af_channel` |  | Meta ads (publisher\_platform) |
-| `af_status` | Always `Non-organic` | AF |
-| `ad_id` | For Meta ads internal use only. | Meta ads (ad\_id) |
+| `af_canal` |  | Anuncios de Meta (publisher\_platform) |
+| `af_status` | Siempre `no orgánico` | AF |
+| `ad_id` | Solo para uso interno de Anuncios de Meta. | Anuncios de Meta (ad\_id) |
 | `click_time` |  | AF |
-| `install_time` |  | AF |
-| `is_first_launch` | `true`, `false` | Device |
-| `adset_id` | Available in raw-data: Adset ID | Meta ads (campaign\_id) |
-| `is_fb` | Always `true` | AF |
-| `campaign` | Available in raw-data: Campaign Name | Meta ads (campaign\_group\_name) |
-| `campaign_id` | Available in raw-data: Campaign ID | Meta ads (campaign\_group\_id) |
-| `is_paid` | Always `true` | Meta ads |
-| `adgroup` | Available in raw-data: Ad | Meta ads (adgroup\_name) |
-| `adgroup_id` | Available in raw-data: Ad ID | Meta ads (adgroup\_id) |
-| `adset` | Available in raw-data: Adset | Meta ads (campaign\_name) |
-| `af_siteid` | **af\_siteid mapping:**  <br />  <br />***publisher\_platform*** → ***af\_siteid***  <br />Facebook → ""  <br />Instagram → Instagram  <br />AudienceNetwork → AudienceNetwork  <br />Messenger → Messenger  <br />unknown → unknown  <br />"" + is\_instagram=true → Instagram  <br />"" + is\_external=true → AudienceNetwork | Meta ads |
-| `af_sub[1-5]` | Always `null` | Advertiser |
+| `hora_de_instalación` |  | AF |
+| `is_first_launch` | `true`, `false` | Dispositivo |
+| `adset_id` | Disponible en el raw data: ID de conjunto de anuncios | Anuncios de Meta (campaign\_id) |
+| `is_fb` | Siempre `true` | AF |
+| `campaña única` | Disponible en el raw data: Nombre de la campaña | Anuncios de Meta (campaign\_group\_name) |
+| `campaign_id` | Disponible en el raw data: ID de campaña | Anuncios de Meta (campaign\_group\_id) |
+| `is_paid` | Siempre `true` | Anuncios Meta |
+| `adgroup` | Disponible en el raw data: Anuncio | Anuncios de Meta (adgroup\_name) |
+| `adgroup_id` | Disponible en el raw data: ID de anuncio | Anuncios de Meta (adgroup\_id) |
+| `conjunto de anuncios` | Disponible en el raw data: Conjunto de anuncios | Anuncios de Meta (campaign\_name) |
+| `af_siteid` | **Asignación de af\_siteid:**  <br />  <br />***publisher\_platform*** → ***af\_siteid***  <br />Facebook → ""  <br />Instagram → Instagram  <br />AudienceNetwork → AudienceNetwork  <br />Messenger → Messenger  <br />unknown → unknown  <br />"" + is\_instagram=true → Instagram  <br />"" + is\_external=true → AudienceNetwork | Anuncios Meta |
+| `af_sub[1-5]` | Siempre `null` | Anunciante |
 
-**Note:** Cost-related fields are not available because Meta ads does not share cost data upon conversion. If <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup#cost-clicks-and-impressions">cost-sharing</Anchor> is enabled, Meta ads shares cost data with AppsFlyer several times a day.
+**Nota:** Los campos relacionados con los costos no están disponibles porque los anuncios de Meta no comparten datos de costos en el momento de la conversión. Si se habilita el <Anchor target="_blank" href="/marketers/es/docs/meta-ads-integration-setup#cost-clicks-and-impressions">costo compartido</Anchor>, los anuncios de Meta comparten datos de costos con AppsFlyer varias veces al día.
 
 </Tab>
 
-<Tab title="Google Ads">
+<Tab title="Anuncios de Google">
 
 <div id="google-ads-conversion-data" />
 
-### Google Ads conversion data
+### Datos de conversión de Google Ads
 
-<table><thead><tr><th>Field name</th><th>Remarks</th></tr></thead><tbody><tr><td><code>match_type</code></td><td> <code>srn</code>, <code>probabilistic</code> </td></tr><tr><td><code>media_source</code></td><td>Always <code>googleadwords_int</code></td></tr><tr><td><code>agency</code></td><td><code>none</code> or value of <code>af_prt</code></td></tr><tr><td><code>http_referrer</code></td><td> </td></tr><tr><td><code>retargeting_conversion_type</code></td><td> </td></tr><tr><td><code>af_channel</code></td><td>Note (1)</td></tr><tr><td><code>af_status</code></td><td>Always <code>Non-organic</code></td></tr><tr><td><code>click_time</code></td><td> </td></tr><tr><td><code>install_time</code></td><td> </td></tr><tr><td><code>is_first_launch</code></td><td><code>true</code>, <code>false</code></td></tr><tr><td><code>adgroup_name</code></td><td> </td></tr><tr><td><code>adset_id</code></td><td>Always <code>null</code></td></tr><tr><td><code>campaign</code></td><td>Note (3)</td></tr><tr><td><code>campaign_id</code></td><td> </td></tr><tr><td><code>adgroup</code></td><td> </td></tr><tr><td><code>adgroup_id</code></td><td> </td></tr><tr><td><code>adset</code></td><td>Note (3)</td></tr><tr><td><code>af_siteid</code></td><td> </td></tr><tr><td><code>af_sub[1-5]</code></td><td> </td></tr><tr><td><code>ad_event_id</code></td><td> </td></tr><tr><td><code>af_ad</code></td><td>Empty string</td></tr><tr><td><code>af_ad_id</code></td><td>Available in raw data when Google returns <code>creative_id</code> value.</td></tr><tr><td><code>af_ad_type</code></td><td><span>AdWords ad type</span></td></tr><tr><td><code>af_adset</code></td><td>Available in raw-data: Adset</td></tr><tr><td><code>af_adset_id</code></td><td>Available in raw-data: Adset ID</td></tr><tr><td><code>af_c_id</code></td><td>Available in raw-data: Campaign ID</td></tr><tr><td><code>af_click_lookback</code></td><td> </td></tr><tr><td><code>af_cpi</code></td><td>Note (2)</td></tr><tr><td><code>af_dp</code></td><td>Only relevant to <a href="./google-ads-adwords-integration-setup-for-advertisers#using-deferred-deep-linking-in-app-campaigns" target="_blank">Google App campaigns in Feeds</a>.</td></tr><tr><td><code>af_keywords</code></td><td>Available in raw-data: Keywords</td></tr><tr><td><code>af_prt</code></td><td><code>none</code> or value of <code>af_prt</code></td></tr><tr><td><code>af_reengagement_window</code></td><td>Available in raw-data: Re-engagement Window </td></tr><tr><td><code>af_viewthrough_lookback</code></td><td>Available in raw-data: Lookback Window for View-through Attribution</td></tr><tr><td><code>click_url</code></td><td>Available in raw-data: HTTP Referrer</td></tr><tr><td><code>click-timestamp</code></td><td>Source: AppsFlyer</td></tr><tr><td><code>cost_cents_USD</code></td><td>Note (2)</td></tr><tr><td><code>external_account_id</code></td><td>AdWords account ID</td></tr><tr><td><code>gclid</code></td><td> </td></tr><tr><td><code>lat</code></td><td> </td></tr><tr><td><code>network</code></td><td>Note (1)</td></tr><tr><td><code>orig_cost</code></td><td>Note (2)</td></tr><tr><td><code>video_id</code></td><td>Always <code>null</code></td></tr><tr><td colspan="2"><strong>Notes</strong><br/>(1) Google makes use of multiple ad networks. Use <code>af_channel</code> in conjunction with <code>network</code> to derive the install source.<br/>(2) These fields return as 0. If the advertiser enables cost-sharing, Google sends AppsFlyer cost data several times a day.<br/>(3) Use <code>campaign</code> and <code>af_adset</code> to personalize user content.</td></tr></tbody></table>
+<table><thead><tr><th>Nombre de campo</th><th>Observaciones</th></tr></thead><tbody><tr><td><code>match_type</code></td><td> Siempre <code>"srn"</code> </td></tr><tr><td><code>fuente_de_medios</code></td><td>Siempre <code>"googleadwords_int"</code> </td></tr><tr><td><code>agencia</code></td><td> <code>none</code> o el valor de <code>af_prt</code> </td></tr><tr><td><code>http_referrer</code></td><td> </td></tr><tr><td><code>tipo_conversion_retargeting</code></td><td> </td></tr><tr><td><code>af_canal</code></td><td>Nota (1)</td></tr><tr><td><code>af_status</code></td><td>Siempre <code>null</code> </td></tr><tr><td><code>click_time</code></td><td> </td></tr><tr><td><code>hora_de_instalación</code></td><td> </td></tr><tr><td><code>is_first_launch</code></td><td> <code>true</code>, <code>false</code> </td></tr><tr><td><code>adgroup_name</code></td><td> </td></tr><tr><td><code>id_anuncio</code></td><td>Siempre <code>null</code> </td></tr><tr><td><code>campaña única</code></td><td>Nota (3)</td></tr><tr><td><code>id_campaña</code></td><td> </td></tr><tr><td><code>adgroup</code></td><td> </td></tr><tr><td><code>adgroup_id</code></td><td> </td></tr><tr><td><code>conjunto de anuncios</code></td><td>Nota (3)</td></tr><tr><td><code>af_siteid</code></td><td> </td></tr><tr><td><code>af_sub[1-5]</code></td><td> </td></tr><tr><td><code>ad_event_id</code></td><td> </td></tr><tr><td><code>af_anuncio</code></td><td>Cadena vacía</td></tr><tr><td><code>id_del_anuncio_af</code></td><td>Disponible en raw data cuando Google devuelve el valor <code>creative_id</code>.</td></tr><tr><td><code>af_ad_type</code></td><td><span>Tipo de anuncio de AdWords</span></td></tr><tr><td><code>af_conjunto de anuncios</code></td><td>Disponible en el raw data: Conjunto de anuncios</td></tr><tr><td><code>af_adset_id</code></td><td>Disponible en el raw data: ID de conjunto de anuncios</td></tr><tr><td><code>af_c_id</code></td><td>Disponible en el raw data: ID de campaña</td></tr><tr><td><code>af_click_lookback</code></td><td> </td></tr><tr><td><code>af_cpi</code></td><td>Nota (2)</td></tr><tr><td><code>af_dp</code></td><td>Solo relevante para las <a href="./google-ads-adwords-integration-setup-for-advertisers#utilizar-deferred-deep-linking-en-campañas-de-aplicaciones" target="_blank">campañas de Google App en Feeds</a>.</td></tr><tr><td><code>af_palabras_clave</code></td><td>Disponible en el raw data: Palabras clave</td></tr><tr><td><code>af_prt</code></td><td> <code>none</code> o el valor de <code>af_prt</code> </td></tr><tr><td><code>af_ventana_de_reengagement</code></td><td>Disponible en el raw data: Ventana de re-engagement </td></tr><tr><td><code>af_viewthrough_lookback</code></td><td>Disponible en el raw data: Ventana retrospectiva para atribución por impresiones</td></tr><tr><td><code>click_url</code></td><td>Disponible en el raw data: Referente HTTP</td></tr><tr><td><code>click-timestamp</code></td><td>Fuente: AppsFlyer</td></tr><tr><td><code>cost_cents_USD</code></td><td>Nota (2)</td></tr><tr><td><code>external_account_id</code></td><td>ID de cuenta de AdWords</td></tr><tr><td><code>gclid</code></td><td> </td></tr><tr><td><code>lat</code></td><td> </td></tr><tr><td><code>network</code></td><td>Nota (1)</td></tr><tr><td><code>orig_cost</code></td><td>Nota (2)</td></tr><tr><td><code>video_id</code></td><td>Siempre <code>null</code> </td></tr><tr><td colspan="2"> <strong>Notas<br/></strong>(1) Google hace uso de múltiples redes de publicidad. Utiliza <code>af_channel</code> junto con <code>network</code> para determinar la fuente de instalación.<br/>(2) Estos campos se devuelven como 0. Si el anunciante permite compartir los costos, Google envía datos de costos de AppsFlyer varias veces al día.(3) Utiliza <code>campaign</code> y <code>af_adset</code> para personalizar el contenido del usuario.(3) Utiliza <code>campaign</code> y <code>af_adset</code> para personalizar el contenido del usuario.</td></tr></tbody></table>
 
 </Tab>
 
@@ -160,9 +159,9 @@ If you run campaigns on Meta ads and don't sign the Meta terms of service, AppsF
 
 <div id="apple-search-ads-conversion-data" />
 
-### Apple Search Ads conversion data
+### Datos de conversión de Apple Search Ads
 
-<table><thead><tr><th>Field name</th><th>Remarks</th></tr></thead><tbody><tr><td><code>match_type</code></td><td>Always <code>srn</code></td></tr><tr><td><code>media_source</code></td><td>Always <code>Apple Search Ads</code></td></tr><tr><td><code><del>adset</del></code></td><td>Note (2)</td></tr><tr><td><code>adset_id</code></td><td> </td></tr><tr><td><code><del>af_adset</del></code></td><td>Note (2)</td></tr><tr><td><code>af_adset_id</code></td><td> </td></tr><tr><td><code>af_c_id</code></td><td> </td></tr><tr><td><code>af_click_lookback</code></td><td> </td></tr><tr><td><code>af_cpi</code></td><td>Note (1)</td></tr><tr><td><code><del>af_keywords</del></code></td><td>Note (2)—Use keywords ID</td></tr><tr><td><code>af_siteid</code></td><td> </td></tr><tr><td><code>af_status</code></td><td>Always <code>Non-organic</code></td></tr><tr><td><code>af_sub[1-5]</code></td><td> </td></tr><tr><td><code>agency</code></td><td><code>null</code> or value of <code>af_prt</code></td></tr><tr><td><code><del>campaign</del></code></td><td>Note (2)</td></tr><tr><td><code>campaign_id</code></td><td> </td></tr><tr><td><code>click_time</code></td><td> </td></tr><tr><td><code>is_first_launch</code></td><td><code>true</code>, <code>false</code></td></tr><tr><td><code>cost_cents_USD</code></td><td>Note (1)</td></tr><tr><td><code>http_referrer</code></td><td> </td></tr><tr><td><code>install_time</code></td><td> </td></tr><tr><td><code>adgroup</code></td><td> </td></tr><tr><td><code>adgroup_id</code></td><td> </td></tr><tr><td><code>orig_cost</code></td><td>Note (1)</td></tr><tr><td><code>retargeting_conversion_type</code></td><td> </td></tr><tr><td colspan="3"><strong>Notes</strong><br/>(1) Apple Search Ads supports cost-sharing in bulk, not in conversion data.<br/>(2) Deprecated starting February 15, 2021, due to Apple Search Ads adoption of the AdServices AP.</td></tr></tbody></table>
+<table><thead><tr><th>Nombre de campo</th><th>Observaciones</th></tr></thead><tbody><tr><td><code>match_type</code></td><td>Siempre <code>"srn"</code> </td></tr><tr><td><code>fuente_de_medios</code></td><td>Siempre <code>"Apple Search Ads"</code> </td></tr><tr><td><code>{"<strike>adset</strike>"}</code></td><td>Nota (2)</td></tr><tr><td><code>id_anuncio</code></td><td> </td></tr><tr><td><code>{"<strike>af_adset</strike>"}</code></td><td>Nota (2)</td></tr><tr><td><code>af_adset_id</code></td><td> </td></tr><tr><td><code>af_c_id</code></td><td> </td></tr><tr><td><code>af_click_lookback</code></td><td> </td></tr><tr><td><code>af_cpi</code></td><td>Nota (1)</td></tr><tr><td><code>{"<strike>af_keywords</strike>"}</code></td><td>Nota (2)—Usar ID de palabras clave</td></tr><tr><td><code>af_siteid</code></td><td> </td></tr><tr><td><code>af_status</code></td><td>Siempre <code>"Non-organic"</code> </td></tr><tr><td><code>af_sub[1-5]</code></td><td> </td></tr><tr><td><code>agencia</code></td><td> <code>null</code> o valor de <code>af_prt</code> </td></tr><tr><td><code>{"<strike>campaign</strike>"}</code></td><td>Nota (2)</td></tr><tr><td><code>id_campaña</code></td><td> </td></tr><tr><td><code>click_time</code></td><td> </td></tr><tr><td><code>is_first_launch</code></td><td> <code>true</code>, <code>false</code> </td></tr><tr><td><code>cost_cents_USD</code></td><td>Nota (1)</td></tr><tr><td><code>http_referrer</code></td><td> </td></tr><tr><td><code>hora_de_instalación</code></td><td> </td></tr><tr><td><code>adgroup</code></td><td> </td></tr><tr><td><code>adgroup_id</code></td><td> </td></tr><tr><td><code>orig_cost</code></td><td>Nota (1)</td></tr><tr><td><code>tipo_conversion_retargeting</code></td><td> </td></tr><tr><td colspan="3"> <strong>Notas</strong><br/>(1) Apple Search Ads admite costo compartido de forma masiva, no en los datos de conversión.<br/>(2) En desuso a partir del 15 de febrero de 2021, debido a la adopción por parte de Apple Search Ads de la API AdServices. </td></tr></tbody></table>
 
 </Tab>
 
@@ -170,70 +169,70 @@ If you run campaigns on Meta ads and don't sign the Meta terms of service, AppsF
 
 <div id="snapchat-conversion-data" />
 
-### Snapchat conversion data
+### Datos de conversión de Snapchat
 
-| Field name | Remarks |
+| AppsFlyer | Anunciante |
 | --- | --- |
-| `match_type` | `srn`, `gp_referrer`, `id_matching`, `probabilistic`   <br />As an Advanced SRN, all match types are supported. |
-| `media_source` | `snapchat_int` |
-| `adset` |  |
-| `adset_id` |  |
-| `af_ad` |  |
-| `af_ad_id` |  |
-| `af_adset` |  |
+| `match_type` | `srn`, `gp_referrer`, `id_matching`, `probabilistic`   <br />Como SRN avanzada, admite todos los tipos de coincidencia. |
+| `fuente_de_medios` | `"snapchat_int"` |
+| `conjunto de anuncios` |  |
+| `id_anuncio` |  |
+| `af_anuncio` |  |
+| `id_del_anuncio_af` |  |
+| `af_conjunto de anuncios` |  |
 | `af_adset_id` |  |
 | `af_c_id` |  |
-| `af_channel` |  |
+| `af_canal` |  |
 | `af_cpi` |  |
 | `af_siteid` |  |
-| `af_status` | Always `Non-organic` |
+| `af_status` | Siempre `"Non-organic"` |
 | `af_sub[1-5]` |  |
 | `af_viewthrough_lookback` |  |
-| `agency` |  |
-| `campaign` |  |
-| `campaign_id` |  |
+| `agencia` |  |
+| `campaña única` |  |
+| `id_campaña` |  |
 | `click_time` |  |
 | `cost_cents_USD` |  |
 | `http_referrer` |  |
-| `install_time` |  |
+| `hora_de_instalación` |  |
 | `is_first_launch` |  |
 | `adgroup` |  |
 | `adgroup_id` |  |
 | `orig_cost` |  |
-| `retargeting_conversion_type` |  |
+| `tipo_conversion_retargeting` |  |
 
 </Tab>
 
-<Tab title="X Ads">
+<Tab title="Anuncios X">
 
 <div id="twitter-conversion-data" />
 
-### X Ads conversion data
+### Datos de conversión de Anuncios de X
 
-| Field name | Remarks |
+| Nombre de campo | Observaciones |
 | --- | --- |
-| `match_type` | Always `srn` |
-| `media_source` | Always `Twitter` |
-| `af_ad` |  |
-| `af_ad_id` |  |
-| `af_adset` |  |
+| `match_type` | Siempre `"srn"` |
+| `fuente_de_medios` | Siempre `"Twitter"` |
+| `af_anuncio` |  |
+| `id_del_anuncio_af` |  |
+| `af_conjunto de anuncios` |  |
 | `af_adset_id` |  |
-| `af_channel` |  |
+| `af_canal` |  |
 | `af_siteid` |  |
-| `af_status` | Always `Non-organic` |
+| `af_status` | Siempre `"Non-organic"` |
 | `af_sub[1-5]` |  |
-| `agency` | Always `null` |
-| `campaign` |  |
-| `campaign_id` | `null` or Campaign ID |
+| `agencia` | Siempre `null` |
+| `campaña única` |  |
+| `id_campaña` | `null` o ID de campaña |
 | `click_time` |  |
 | `http_referrer` |  |
-| `install_time` |  |
+| `hora_de_instalación` |  |
 | `is_first_launch` | `true`, `false` |
 | `adgroup` |  |
 | `adgroup_id` |  |
-| `retargeting_conversion_type` | Always `none` |
+| `tipo_conversion_retargeting` | Siempre `"none"` |
 
-**Note:** Cost fields do not appear in the payload because X Ads doesn't support cost data sharing.
+**Nota:** Los campos de costos no aparecen en la carga útil porque Twitter no admite el uso compartido de datos de costos.
 
 </Tab>
 
@@ -241,32 +240,32 @@ If you run campaigns on Meta ads and don't sign the Meta terms of service, AppsF
 
 <div id="tiktok-conversion-data" />
 
-### TikTok for Business conversion data
+### Datos de conversión de TikTok for Business
 
-| Field name | Remarks |
+| Nombre de campo | Observaciones |
 | --- | --- |
-| `match_type` | `srn`, `gp_referrer`, `id_matching`, `probabilistic`   <br />As an Advanced SRN, all match types are supported. |
-| `media_source` | `tiktokglobal_int` |
-| `af_ad` |  |
-| `af_ad_id` |  |
-| `af_adset` |  |
+| `match_type` | `srn`, `gp_referrer`, `id_matching`, `probabilistic`   <br />Como SRN avanzada, admite todos los tipos de coincidencia. |
+| `fuente_de_medios` | `tiktokglobal_int` |
+| `af_anuncio` |  |
+| `id_del_anuncio_af` |  |
+| `af_conjunto de anuncios` |  |
 | `af_adset_id` |  |
-| `af_channel` | `tiktok`, `pangle` |
+| `af_canal` | Siempre `"srn"` |
 | `af_siteid` |  |
-| `af_status` | Always `Non-organic` |
+| `af_status` | Siempre `"Non-organic"` |
 | `af_sub[1-5]` |  |
-| `agency` |  |
-| `campaign` |  |
-| `campaign_id` |  |
+| `agencia` |  |
+| `campaña única` |  |
+| `id_campaña` |  |
 | `click_time` |  |
 | `http_referrer` |  |
-| `install_time` |  |
+| `hora_de_instalación` |  |
 | `is_first_launch` |  |
 | `adgroup` |  |
 | `adgroup_id` |  |
-| `retargeting_conversion_type` |  |
+| `tipo_conversion_retargeting` |  |
 
-**Note:** Cost fields do not appear in the payload because TikTok doesn't support cost data sharing.
+**Nota:** Los campos de costo no aparecen en la carga útil porque TikTok no ofrece soporte para el uso compartido de datos de costo.
 
 </Tab>
 
@@ -274,26 +273,26 @@ If you run campaigns on Meta ads and don't sign the Meta terms of service, AppsF
 
 <div id="oath-ad-platforms-conversion-data" />
 
-### Oath Ad Platforms conversion data
+### Datos de conversión de plataformas publicitarias de Oath
 
-<table><thead><tr><th>Field name</th><th>Remarks</th></tr></thead><tbody><tr><td><code>match_type</code></td><td>Always <code>srn</code></td></tr><tr><td><code>media_source</code></td><td>Always <code>yahoogemini_int</code></td></tr><tr><td><code>adset</code></td><td> </td></tr><tr><td><code>adset_id</code></td><td> </td></tr><tr><td><code>af_ad</code></td><td> </td></tr><tr><td><code>af_ad_id</code></td><td> </td></tr><tr><td><code>af_c_id</code></td><td> </td></tr><tr><td><code>af_cpi</code></td><td>Note (1)</td></tr><tr><td><code>af_siteid</code></td><td> </td></tr><tr><td><code>af_status</code></td><td>Always <code>Non-organic</code></td></tr><tr><td><code>af_sub[1-5]</code></td><td> </td></tr><tr><td><code>agency</code></td><td> </td></tr><tr><td><code>campaign</code></td><td> </td></tr><tr><td><code>campaign_id</code></td><td> </td></tr><tr><td><code>campaign_type</code></td><td> </td></tr><tr><td><code>click_time</code></td><td> </td></tr><tr><td><code>cost_cents_USD</code></td><td>Note (1)</td></tr><tr><td><code>http_referrer</code></td><td> </td></tr><tr><td><code>install_time</code></td><td> </td></tr><tr><td><code>is_first_launch</code></td><td> </td></tr><tr><td><code>adgroup</code></td><td> </td></tr><tr><td><code>adgroup_id</code></td><td> </td></tr><tr><td><code>orig_cost</code></td><td>Note (1)</td></tr><tr><td><code>retargeting_conversion_type</code></td><td> </td></tr><tr><td colspan="2"><strong>Note</strong><br/>(1) Oath supports cost-sharing but sends cost-related data in bulk, not in conversion data.</td></tr></tbody></table>
+<table><thead><tr><th>Nombre de campo</th><th>Observaciones</th></tr></thead><tbody><tr><td><code>match_type</code></td><td>Siempre <code>"srn"</code> </td></tr><tr><td><code>fuente_de_medios</code></td><td>Siempre <code>"yahoogemini_int"</code> </td></tr><tr><td><code>conjunto de anuncios</code></td><td> </td></tr><tr><td><code>id_anuncio</code></td><td> </td></tr><tr><td><code>af_anuncio</code></td><td> </td></tr><tr><td><code>id_del_anuncio_af</code></td><td> </td></tr><tr><td><code>af_c_id</code></td><td> </td></tr><tr><td><code>af_cpi</code></td><td>Nota (1)</td></tr><tr><td><code>af_siteid</code></td><td> </td></tr><tr><td><code>af_status</code></td><td>Siempre <code>"Non-organic"</code> </td></tr><tr><td><code>af_sub[1-5]</code></td><td> </td></tr><tr><td><code>agencia</code></td><td> </td></tr><tr><td><code>campaña única</code></td><td> </td></tr><tr><td><code>id_campaña</code></td><td> </td></tr><tr><td><code>tipo_campaña</code></td><td> </td></tr><tr><td><code>click_time</code></td><td> </td></tr><tr><td><code>cost_cents_USD</code></td><td>Nota (1)</td></tr><tr><td><code>http_referrer</code></td><td> </td></tr><tr><td><code>hora_de_instalación</code></td><td> </td></tr><tr><td><code>is_first_launch</code></td><td> </td></tr><tr><td><code>adgroup</code></td><td> </td></tr><tr><td><code>adgroup_id</code></td><td> </td></tr><tr><td><code>orig_cost</code></td><td>Nota (1)</td></tr><tr><td><code>tipo_conversion_retargeting</code></td><td> </td></tr><tr><td colspan="2"> <strong>Nota</strong><br/>(1) Oath admite costos compartidos pero envía los datos relacionados con los costos en masa, no en los datos de conversión.</td></tr></tbody></table>
 
 </Tab>
 </Tabs>
 
-## UA conversion with other ad networks
+## Conversión de UA con otras redes de publicidad
 
-For other ad networks, the data in the payload is directly affected by the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">parameters in the attribution link</Anchor>.
+Para otras redes de publicidad, los datos de la carga útil se ven directamente afectados por los <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">parámetros en el enlace de atribución</Anchor>.
 
-Examine the following JSON payloads.
+Examina las siguientes cargas útiles de JSON.
 
-**Note!** Conversion data returns as a map-like data structure. The developer **does not** interact with raw JSON.
+**¡Atención!** Nota: **Los datos de conversión se devuelven como una estructura de datos similar a un mapa. El desarrollador** no **interactúa con el raw JSON.**
 
 <div id="applovin" />
 
 <Accordion title="Applovin">
 
-#### Attribution link:
+#### Enlace de atribución:
 
 ```http HTTPS
 https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
@@ -303,7 +302,7 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
   &advertising_id=50********************************&af_ip=
 ```
 
-#### Payload:
+#### Carga útil:
 
 ```json
 {
@@ -340,9 +339,9 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
   }
 ```
 
-* Parameters in the attribution link appear as fields in the payload
-* Other fields in the payload that are **not in the attribution link** appear with a value of null
-* AppLovin supports ad cost-sharing but sends cost data to AppsFlyer in bulk. Cost-related fields return as 0.
+* Los parámetros en el enlace de atribución aparecen como campos en la carga útil.
+* Los demás campos en la carga útil que **no están en el enlace de atribución** aparecen con un valor nulo.
+* AppLovin admite costos compartidos de anuncios, pero envía los datos de costos a AppsFlyer de forma masiva. Los campos relacionados con el costo se devuelven como 0.
 
 </Accordion>
 
@@ -350,7 +349,7 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
 
 <Accordion title="ironSource">
 
-#### Attribution link:
+#### Enlace de atribución:
 
 ```http HTTPS
 https://app.appsflyer.com/id123456789?
@@ -363,7 +362,7 @@ https://app.appsflyer.com/id123456789?
   af_enc_data=cN*********************************************************************
 ```
 
-#### Payload:
+#### Carga útil:
 
 ```json
 {
@@ -400,43 +399,47 @@ https://app.appsflyer.com/id123456789?
       "af_cpi": null,
       "af_click_lookback": "7d",
       "af_sub2": null,
-      "af_status": "Non-organic"
+      "af_status": "no orgánico"
   }
 ```
 
-ironSource shares cost-related data with AppsFlyer upon conversion using the `orig_cost`, `cost_cents_USD`, and `af_cost_value` fields.
+ironSource comparte con AppsFlyer los datos relacionados con el costo al producirse la conversión mediante los campos `orig_cost`, `cost_cents_USD` y `af_cost_value`.
 
-However, cost-related data **does not appear in the attribution link**. ironSource encrypts cost data and stores it in the `af_enc_data` field.
+Sin embargo, los datos relacionados con los costos **no aparecen en el enlace de atribución**. ironSource cifra los datos de costos y los almacena en el campo `af_enc_data`.
 
 </Accordion>
 
-## Retargeting conversion data
+## Datos de conversión de retargeting
 
-Retargeting includes two types of conversions, re-attribution or re-engagement.
+El retargeting incluye dos tipos de conversiones, reatribución o re-engagement.
 
 > 👍 **Tip**
 >
-> Conversion data for retargeting doesn't always give a clear indication as to the type of conversion. See [alternative conversion data sources](#alternative-conversion-data-sources).
+> **Consejo**
+>
+> Los datos de conversión para retargeting no siempre dan una indicación clara del tipo de conversión. Ver las [fuentes de datos de conversión alternativas](#fuentes-de-datos-de-conversión-alternativas).
 
-### Re-attribution with SRNs
+### Reatribución con SRN
 
-When a user is re-attributed through an SRN, the conversion data payload doesn't indicate that this is a retargeting campaign. Since SRNs don't use attribution links, there is no way to set an `is_retargeting=true` parameter in the attribution link. For **SRNs that do support retargeting**, AppsFlyer determines whether the user should be re-attributed or not.
+Cuando un usuario es reatribuido a través de una SRN, la carga útil de los datos de conversión no indica que se trata de una campaña de retargeting. Dado que las SRN no utilizan enlaces de atribución, no hay forma de establecer un parámetro `is_retargeting=true` en el enlace de atribución. Para las **SRN que sí admiten retargeting**, AppsFlyer determina si el usuario debe ser reatribuido o no.
 
-What this means is that there is no way to determine, on the SDK level, if an install comes from a retargeting campaign. The only way is to set the campaign name such that it indicates a retargeting campaign.
+Lo que esto significa es que no hay forma de determinar, a nivel de SDK, si una instalación proviene de una campaña de retargeting. La única manera es establecer el nombre de la campaña de tal manera que indique una campaña de retargeting.
 
 > 📘 **Note**
 >
-> Setting the campaign name such that it indicates retargeting **is not a foolproof method**. See [examples to learn more](#examples-of-mixed-user-acquisition-and-re-attribution).
+> **Nota**
+>
+> Establecer el nombre de la campaña de tal manera que indique el retargeting **no es un método infalible**. Ver [ejemplos para aprender más](#ejemplos-de-adquisición-y-reatribución-de-usuarios-mixtos).
 
-### Re-attribution with regular ad networks
+### Reatribución con redes de publicidad regulares
 
-Attribution to ad networks relies on attribution links. Whether regular attribution links or OneLink, with retargeting the attribution link always has the `is_retargeting=true` parameter set in it.
+La atribución a redes de publicidad se basa en enlaces de atribución. Ya sean enlaces de atribución regulares o OneLink, con el retargeting, el enlace de atribución siempre tiene el parámetro `is_retargeting=true` establecido.
 
 <div id="retargeting-campaign-with-criteo" />
 
-<Accordion title="Retargeting campaign with Criteo">
+<Accordion title="Campaña de retargeting con Criteo">
 
-#### Attribution link
+#### Enlace de atribución
 
 ```http
 https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
@@ -444,7 +447,7 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   &af_reengagement_window=30d
 ```
 
-#### Conversion data payload
+#### Carga útil de los datos de conversión
 
 ```json
 {
@@ -478,25 +481,25 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   }
 ```
 
-* `retargeting_conversion_type` parameter - this parameter indicates the type of retargeting. Can be either re-attribution, re-engagement, or none.
-* `is_retargeting: true` parameter - this parameter indicates that the install is a re-attributed install
-* `af_reengagement_window`: The re-engagement attribution window is the number of days in which an event can be attributed to a **re-engaged user**. Since this is a re-attribution conversion, this parameter is redundant.
+* Parámetro `retargeting_conversion_type`: este parámetro indica el tipo de retargeting. Puede ser reatribución, re-engagement o ninguno.
+* Parámetro `is_retargeting: true`: este parámetro indica que la instalación es una instalación reatribuida.
+* `af_reengagement_window`: la ventana de atribución de re-engagement es el número de días en los que un evento puede atribuirse a un **usuario recaptado**. Dado que se trata de una conversión de reatribución, este parámetro es redundante.
 
 </Accordion>
 
-### Re-attribution with deferred deep linking
+### Reatribución con enlaces profundos diferidos
 
-Oftentimes, you want to deep link re-attributed users who, by definition of being re-attributed, don't have the app installed. For example, You set a campaign that aims to bring back users who uninstalled the app. The campaign promotes a product or service and you want to serve the users with content related to the product or service that you advertise.
+A menudo, quieres enlazar profundamente a los usuarios reatribuidos que, por definición, no tienen la aplicación instalada. Por ejemplo, tú estableces una campaña que tiene como objetivo traer de vuelta a los usuarios que desinstalaron la aplicación. La campaña promueve un producto o servicio y quieres servir a los usuarios contenido relacionado con el producto o servicio que anuncias.
 
-This is referred to as Deferred Deep Linking. Conversion data payload for Deferred Deep Linking comes from the `onConversionDataSuccess` method.
+Esto se conoce como enlaces profundos diferidos. La carga útil de los datos de conversión para los enlaces profundos diferidos proviene del método `onConversionDataSuccess`.
 
 <div id="deferred-deep-linking-with-srns" />
 
-<Accordion title="Deferred deep linking with SRNs">
+<Accordion title="Enlaces profundos diferidos con SRN">
 
-Deep Link parameters defined in SRNs campaigns are not available outside of the SRN. This includes the `af_dp` parameter, which holds the scheme path in the app. The only exception to this is when using <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#using-deferred-deep-linking-in-app-campaigns">Google App campaigns in Feeds</Anchor>. To implement deferred deep linking, additional logic must be applied for SRN campaigns. Use the data in `onConversionSuccess` response, such as campaign, adset, adgroup, to programmatically redirect your users.
+Los parámetros de enlaces profundos definidos en las campañas de SRN no están disponibles fuera de las SRN. Esto incluye el parámetro `af_dp`, que contiene la ruta de acceso del esquema en la aplicación. La única excepción a esto es cuando se utilizan <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-advertisers#utilizar-deferred-deep-linking-en-campañas-de-aplicaciones">campañas de Google App en Feeds</Anchor>. A fin de implementar enlaces profundos diferidos, se debe aplicar una lógica adicional para las campañas de SRN. Usa los datos de la respuesta `onConversionSuccess`, como la campaña, el conjunto de anuncios, el grupo de anuncios, para redirigir programáticamente a tus usuarios.
 
-#### Conversion data for deferred deep linking with Meta ads
+#### Datos de conversión para enlace profundo diferido con Anuncios de Meta
 
 <Tabs>
 <Tab title="Android">
@@ -533,7 +536,7 @@ Deep Link parameters defined in SRNs campaigns are not available outside of the 
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
 ```json
   {
@@ -548,7 +551,7 @@ Deep Link parameters defined in SRNs campaigns are not available outside of the 
      "af_sub3":null,
      "af_siteid":null,
      "adset_id":"6**********",
-     "is_fb":true,
+     "is_fb":true,  
    "is_first_launch":true,
      "click_time":"2017-07-17 16:23:18",
      "iscache":false,
@@ -568,27 +571,27 @@ Deep Link parameters defined in SRNs campaigns are not available outside of the 
 </Tab>
 </Tabs>
 
-You can use the data in getConversionData response, such as campaign, adset, etc. to programmatically redirect your users and serve them with relevant content.
+Puedes usar los datos en la respuesta de getConversionData, como la campaña, conjunto de anuncios, etc. para redirigir programáticamente a tus usuarios y servirles contenido relevante.
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> The app is an eCommerce app that specializes in sportswear. A user who doesn't have the app installed engages with an ad and installs the app. Once the app launches, the SDK returns the conversion data. The developer makes the app open the **summer running shoe collection** (campaign) activity in the store and serves the **running shoes for women** category (adset).
+> La aplicación es una aplicación de comercio electrónico que se especializa en ropa deportiva. Un usuario que no tiene la aplicación instalada se involucra con un anuncio e instala la aplicación. Una vez que se inicia la aplicación, el SDK devuelve los datos de conversión. El desarrollador hace que la aplicación abra la actividad de la **colección de zapatillas de correr de verano** (campaña) en la tienda y sirve la categoría de **zapatillas para correr para mujer** (conjunto de anuncios).
 
 </Accordion>
 
 <div id="deferred-deep-linking-with-attribution-links" />
 
-<Accordion title="Deferred deep linking with attribution links">
+<Accordion title="Enlaces profundos diferidos con enlaces de atribución">
 
-There are three ways to deep link users:
+Hay tres formas de enlazar profundamente a los usuarios:
 
-#### URI schemes
+#### Esquemas URI
 
-When using URI Schemes, for both attribution links and OneLink, the attribution link and payload are as follows:
+Al usar esquemas URI, tanto para los enlaces de atribución como para OneLink, el enlace de atribución y la carga útil son los siguientes:
 
-**Attribution Link**
+**Enlace de atribución**
 
 ```http
 http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
@@ -598,15 +601,15 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 **OneLink**
 
 ```http
-/ short OneLink
+// OneLink corto
   https://dhba.onelink.me/2rAD/71ba577e
 
-  / /long OneLink
+  // OneLink largo
   https://dhba.onelink.me/2rAD?pid=media_source_name&c=campaign_name
   &is_retargeting=true&af_dp=superapp%3A%2F%2deeplink-activity
 ```
 
-**Payload**
+**Carga útil**
 
 ```json
 {
@@ -631,33 +634,33 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
       "af_sub1": null,
       "af_sub3": null,
       "af_sub2": null,
-      "af_status": "Non-organic",
+      "af_status": "No orgánico",
       "scheme": "superapp",
       "host": "deeplink_activity"
   }
 ```
 
-* `af_deeplink: true` - when this parameter appears and is set to true, look for the `scheme` and `host` fields
-* `scheme` and `host` - these fields come from the `af_dp` parameter in the attribution link and indicate the scheme and activity to which the user should be deep linked
+* `af_deeplink: true` - cuando este parámetro aparece y está configurado como true, busca los campos `scheme` y `host`
+* `scheme` y `host` - estos campos provienen del parámetro `af_dp` en el enlace de atribución e indican el esquema y la actividad a la que debe aplicarse el Deep Linking del usuario
 
-#### iOS Universal links and Android app links
+#### Enlaces universales de iOS y enlaces de aplicaciones de Android
 
-These are the other two out of the three ways for performing deep linking.
+Estas son las otras dos de las tres formas de realizar enlaces profundos.
 
-When using universal links or app links, the OneLink and payload are as follows:
+Cuando se utilizan enlaces universales o enlaces de aplicaciones, el OneLink y la carga útil son los siguientes:
 
 **OneLink**
 
 ```http
-/ short OneLink
+// OneLink corto
   https://dhba.onelink.me/2rAD/71ba577e
 
-  //long OneLink
+  // OneLink largo
   https://dhba.onelink.me/2rAD?pid=media_source_name&c=campaign_name
   &is_retargeting=true
 ```
 
-**Payload**
+**Carga útil**
 
 ```json
 {
@@ -669,7 +672,7 @@ When using universal links or app links, the OneLink and payload are as follows:
       "click_time": "2019-01-08 16:24:14.322",
       "af_click_lookback": "7d",
       "orig_cost": "0.0",
-      "af_status": "Non-organic",
+      "af_status": "No orgánico",
       "iscache": "true",
       "shortlink": "71ba577e",
       "media_source": "media_source_name",
@@ -677,52 +680,56 @@ When using universal links or app links, the OneLink and payload are as follows:
   }
 ```
 
-* `shortlink` field - this is the field that indicates the specific OneLink that the user comes from. It helps the developer know how to proceed in terms of launching an activity and serving content. Other fields like `campaign` can also be used for this purpose.
+* Campo `shortlink`: este campo indica el OneLink específico del que proviene el usuario. Ayuda al desarrollador a saber cómo proceder para ejecutar una actividad y servir contenido. Otros campos, como `campaign`, también pueden utilizarse para este propósito.
 
   > 🚧 **Important**
   >
-  > The field `shortlink` does not appear in the payload when using the long OneLink.
+  > **Importante:**
   >
-  > In both cases (short or long OneLink) we recommend adding a custom parameter that indicates the activity. For example `&deep_link_activity=shoes_cateogry`
+  > El campo `shortlink` no aparece en la carga útil cuando se usa el OneLink largo.
+  >
+  > En ambos casos (OneLink corto o largo) recomendamos agregar un parámetro personalizado que indique la actividad. Por ejemplo `&deep_link_activity=shoes_cateogry`
 
 
 > 📘 **Note**
 >
-> Using universal links and app links is only possible with OneLink.
+> **Nota**
+>
+> El uso de enlaces universales y enlaces de aplicaciones solo es posible con OneLink.
 
 </Accordion>
 
-### Re-engagement with SRNs
+### Re-engagement con SRN
 
-Much like with Re-Attribution campaigns, when a user is re-engaged through an SRN, the conversion data doesn't indicate that this is a re-engagement campaign. You can set the campaign name such that it indicates a re-engagement campaign.
+Al igual que con las campañas de reatribución, cuando se recapta un usuario a través de una SRN, los datos de conversión no indican que se trata de una campaña de re-engagement. Se puede establecer el nombre de la campaña de manera que indique una campaña de re-engagement.
 
-### Re-engagement with regular ad networks
+### Re-engagement con redes de publicidad regulares
 
-Here too, the conversion data payload doesn't indicate that the user comes from a re-engagement campaign. To overcome this limitation, you can set the campaign name to indicate a re-engagement.
+Aquí también, la carga útil de los datos de conversión no indica que el usuario proviene de una campaña de re-engagement. Para superar esta limitación, puedes establecer el nombre de la campaña para indicar un re-engagement.
 
-### Re-engagement with deep linking
+### Re-engagement con enlaces profundos
 
-A major part of Re-Engagement is to send the user to a specific activity. For example, if you advertise some product or sale. In such cases, you want to send the users who click the ad straight to the app activity for this product or sale.
+Una parte importante del re-engagement es enviar al usuario a una actividad específica. Por ejemplo, si anuncias algún producto u oferta. En tales casos, deseas enviar a los usuarios que hacen clic en el anuncio directamente a la actividad de la aplicación para este producto u oferta.
 
-To do so, you use Deep Linking. The conversion data in Deep Linking is really important. It holds the information necessary for the developer to customize the user experience and send them to the correct activity.
+Para ello, se utilizan enlaces profundos. Los datos de conversión en los enlaces profundos son realmente importantes. Contienen la información necesaria para que el desarrollador personalice la experiencia del usuario y lo envíe a la actividad correcta.
 
 <div id="reengagement-deep-linking-with-srns" />
 
-<Accordion title="Re-engagement: deep linking with SRNs">
+<Accordion title="Re-engagement: enlaces profundos con SRN">
 
-Conversion data is not available when a re-engaged user comes from an SRN. The developer needs to use the SRN methods to get it upon app launch.
+Los datos de conversión no están disponibles cuando un usuario recaptado proviene de una SRN. El desarrollador debe usar los métodos de las SRN para obtenerlo al lanzar la aplicación.
 
 </Accordion>
 
 <div id="reengagement-deep-linking-with-ad-networks" />
 
-<Accordion title="Re-engagement: deep linking with ad networks">
+<Accordion title="Re-engagement: enlaces profundos con redes de publicidad">
 
-When a user is re-engaged and the app launches, the following conversion data is available in the `onAppOpenAttribution` method:
+Cuando se recapta a un usuario y se inicia la aplicación, los siguientes datos de conversión están disponibles en el método `onAppPenAttribution`:
 
-For both iOS and Android, when using the short version of OneLink, the conversion data is a structured map of all the parameters on the link:
+Tanto para iOS como para Android, cuando se usa la versión corta de OneLink, los datos de conversión constituyen un mapa estructurado de todos los parámetros incluidos en el enlace:
 
-Example:
+Ejemplo:
 
 ```json
 {
@@ -734,13 +741,15 @@ Example:
   }
 ```
 
-* The app developer can use such parameters, like `af_dp` and campaign name, to send the user to a specific activity and serve the relevant content.
+* El desarrollador de la aplicación puede utilizar dichos parámetros, como `af_dp` y el nombre de la campaña, para enviar al usuario a una actividad específica y servir el contenido relevante.
 
 > 🚧 **Important**
 >
-> We recommend using the short version of OneLink. Click <Anchor target="_blank" href="/marketers/docs/understand-onelink-short-vs-long-urls">here</Anchor> to learn more.
+> **Importante:**
+>
+> Recomendamos usar la versión corta de OneLink. Haz clic <Anchor target="_blank" href="/marketers/es/docs/understand-onelink-short-vs-long-urls">aquí</Anchor> para obtener más información.
 
-Another reason to use the short version of OneLink is the conversion data structure that the long version returns. When using the long version, the conversion data is a map with a single field called `link` that holds the entire long OneLink.
+Otra razón para utilizar la versión corta de OneLink es la estructura de los datos de conversión que devuelve la versión larga. Cuando se usa la versión larga, los datos de conversión son un mapa con un solo campo llamado `link` que contiene todo el OneLink largo.
 
 ```json
 {
@@ -750,28 +759,28 @@ Another reason to use the short version of OneLink is the conversion data struct
 
 </Accordion>
 
-### Alternative conversion data sources
+### Fuentes de datos de conversión alternativas
 
-* Push API offers a detailed conversion payload that indicates re-attribution or re-engagement. Push API payloads include a field called `re_targeting_conversion_type`. This field indicates the type of conversion, either re-attribution or re-engagement. To learn more, see our <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API guide</Anchor>.
-* Raw Data Reports also contain indicators for the type of conversion. In the raw data report for retargeting conversions, there is a column called ***Event Name***. The value in this column is either ***re-engagemen*t** or ***re-attribution*** according to the type of conversion.
+* La Push API ofrece una carga útil de conversión detallada que indica una reatribución o un re-engagement. Las cargas útiles de la Push API incluyen un campo llamado `re_targeting_conversion_type`. Este campo indica el tipo de conversión, ya sea reatribución o re-engagement. Para obtener más información, consulta nuestra <Anchor target="_blank" href="/marketers/es/docs/push-api-streaming-raw-data">guía de Push API</Anchor>.
+* Los reportes de raw data también contienen indicadores del tipo de conversión. En el reporte de raw data de conversiones de retargeting, hay una columna llamada ***Nombre del evento***. El valor en esta columna es ***re-engagement*** o ***reatribución***, según el tipo de conversión.
 
-### Examples of mixed user acquisition and re-attribution
+### Ejemplos de adquisición y reatribución de usuarios mixtos
 
 > 📘 **Note**
 >
-> **Example**
+> **Ejemplo**
 >
-> 1. A user installs your app and then uninstalls it. The act of installation puts the user in a <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">re-attribution window</Anchor>. You set a user acquisition (not retargeting) campaign with Meta ads. You also set the AppsFlyer integration with Meta ads to allow retargeting.
+> 1. Un usuario instala tu aplicación y luego la desinstala. La acción de instalación pone al usuario en una <Anchor target="_blank" href="/marketers/es/docs/set-up-re-attribution-window">ventana de reatribución</Anchor>. Configuras una campaña de adquisición de usuarios (no de retargeting) con anuncios de Meta. También estableces la integración de AppsFlyer con Anuncios de Meta para permitir el retargeting.
 >
->    While still in the re-attribution window, the user sees the ad, clicks on it, and reinstalls the app. As far as AppsFlyer sees it, the user is a re-attributed user.
+>    Mientras aún está en la ventana de reatribución, el usuario ve el anuncio, hace clic en él y reinstala la aplicación. Desde el punto de vista de AppsFlyer, el usuario es un usuario reatribuido.
 >
->    This is due to two factors:
+>    Esto se debe a dos factores:
 >
->    1. The configuration with Meta ads allows retargeting
->    2. The user is in the re-attribution window
+>    1. La configuración con Anuncios de Meta permite el retargeting.
+>    2. El usuario se encuentra dentro de la ventana de reatribución.
 >
->    In this case, the campaign name doesn't indicate re-attribution.
-> 2. Let's take the same example, only this time the user is outside the re-attribution window. In this case, the install is a new non-organic install.
-> 3. Let's look at another example. You set a retargeting campaign on Meta ads. Some users come across the campaign and install the app. However, these users install the app for the first time. Such users are not considered re-attributed users. Instead, AppsFlyer considers them as users that come from a user acquisition campaign.
+>    En este caso, el nombre de la campaña no indica reatribución.
+> 2. Tomemos el mismo ejemplo, solo que esta vez el usuario se encuentra fuera de la ventana de reatribución. En este caso, la instalación es una nueva instalación no orgánica.
+> 3. Veamos otro ejemplo. Estableces una campaña de retargeting en Anuncios de Meta. Algunos usuarios se cruzan con la campaña e instalan la aplicación. Sin embargo, estos usuarios instalan la aplicación por primera vez. Dichos usuarios no se consideran usuarios reatribuidos. En cambio, AppsFlyer los considera como usuarios que provienen de una campaña de adquisición de usuarios.
 
-<div data-zendesk-anchors="h_01HCY86CKDJK9TNHPAZB0QX2ZX=overview nonorganic-conversion-data-payload-fields=non-organic-conversion-data-payload-fields h_01HCY86CKDEMB3428YHCNJQA5R=non-organic-conversion-data-payload-fields h_01HCY86CKDBQRGAY7GHNBJE4WK=fields-always-available h_01HCY86CKDYQMYB9BQ4MXWP8A5=fields-available-in-some-cases h_01HCY86CKD47M85AZVEA5C4JH7=additional-fields h_01HCY86CKEFX646H9BSKSFGZ36=limitations h_01HCY86CKEZ2483XB461M2C9EC=custom-parameter-names h_01EGKTQN6XDYHA60P2WKHBBVFT=ua-conversion-data-with-srns a-note-about-facebook=a-note-about-meta-ads h_01HCY86CKENFEGX53G9G4SGPSK=a-note-about-meta-ads facebook-conversion-data=meta-ads-conversion-data h_01HCY86CKE658H36F3VJQMATQK=meta-ads-conversion-data h_01HCY86CKF6FY96PAWB5Y7YXSQ=google-ads-conversion-data h_01HCY86CKFMNNNJZTPGK4870YN=apple-search-ads-conversion-data h_01HCY86CKF26JRT64JR9JZEAKJ=snapchat-conversion-data h_01HCY86CKFM94SQWYARCM0GEJ9=twitter-conversion-data h_01HSQRQSK8W9K6871K0EWHDF76=tiktok-conversion-data h_01HCY86CKFS5SJBECSY42VRJWP=oath-ad-platforms-conversion-data h_01HCY86CKFB0GEJRTYSXN9YZ08=ua-conversion-with-other-ad-networks h_01HCY86CKFY787RD4BHQDVEVFV=applovin h_01HCY86CKFXM5XXJZSPXPB6397=attribution-link h_01HCY86CKFDDXWT2KKFTKKBGHM=payload h_01HCY86CKFV55GYY7C51D7F72S=ironsource attribution-link::a45a1b4a=attribution-link-1 h_01HCY86CKFYGEYR2TRPSD87KDA=attribution-link-1 payload::81867f5c=payload-1 h_01HCY86CKFKKFQDG1P42R1FSDJ=payload-1 h_01EHQ74JS84509GT6M93SZA4HX=retargeting-conversion-data reattribution-with-srns=re-attribution-with-srns h_01HCY86CKFAVWP1W0ZNEN5P30A=re-attribution-with-srns reattribution-with-regular-ad-networks=re-attribution-with-regular-ad-networks h_01HCY86CKF1PV8MRR902RAHQGW=re-attribution-with-regular-ad-networks h_01HCY86CKF1RGK01VTV3EEHQVM=retargeting-campaign-with-criteo attribution-link::c16e96bb=attribution-link-2 h_01HCY86CKFSKBBMFKA8NN8XTPC=attribution-link-2 h_01HCY86CKG2YQQC629SC3RAFKE=conversion-data-payload reattribution-with-deferred-deep-linking=re-attribution-with-deferred-deep-linking h_01HCY86CKGXV50H79R0YH1GB2C=re-attribution-with-deferred-deep-linking h_01HCY86CKG12YRGFEEJ27DQART=deferred-deep-linking-with-srns conversion-data-for-deferred-deep-linking-with-facebook=conversion-data-for-deferred-deep-linking-with-meta-ads h_01HCY86CKGX9VHSV3ASKXMFM0X=conversion-data-for-deferred-deep-linking-with-meta-ads h_01HCY86CKG3XWM4X0YH7WYCEH4=deferred-deep-linking-with-attribution-links h_01HCY86CKGDM2NE1FCRC92K8R0=uri-schemes h_01HCY86CKGY1NE4214DES0Y2AV=ios-universal-links-and-android-app-links reengagement-with-srns=re-engagement-with-srns h_01HCY86CKG4TRYR6TWYYVB0FJE=re-engagement-with-srns reengagement-with-regular-ad-networks=re-engagement-with-regular-ad-networks h_01HCY86CKGM2JS7C9T71R6GPH1=re-engagement-with-regular-ad-networks reengagement-with-deep-linking=re-engagement-with-deep-linking h_01HCY86CKG0NPQAA2ZRWWNKGQD=re-engagement-with-deep-linking h_01HCY86CKGEBHQVFRGJH96KDFJ=reengagement-deep-linking-with-srns h_01HCY86CKGJ9HG7AGB5MFP33RK=reengagement-deep-linking-with-ad-networks h_01HCY86CKG3N6ZXV70G4VMZ0X5=alternative-conversion-data-sources examples-of-mixed-user-acquisition-and-reattribution=examples-of-mixed-user-acquisition-and-re-attribution h_01HCY86CKGK9DVVB7T6CVNB8ZN=examples-of-mixed-user-acquisition-and-re-attribution" />
+<div data-zendesk-anchors="overview=informaci%C3%B3n-general h_01HCY86CKDJK9TNHPAZB0QX2ZX=informaci%C3%B3n-general nonorganic-conversion-data-payload-fields=campos-de-carga-%C3%BAtil-de-datos-de-conversi%C3%B3n-no-org%C3%A1nicos h_01HCY86CKDEMB3428YHCNJQA5R=campos-de-carga-%C3%BAtil-de-datos-de-conversi%C3%B3n-no-org%C3%A1nicos fields-always-available=campos-siempre-disponibles h_01HCY86CKDBQRGAY7GHNBJE4WK=campos-siempre-disponibles fields-available-in-some-cases=campos-disponibles-en-algunos-casos h_01HCY86CKDYQMYB9BQ4MXWP8A5=campos-disponibles-en-algunos-casos additional-fields=campos-adicionales h_01HCY86CKD47M85AZVEA5C4JH7=campos-adicionales limitations=limitaciones h_01HCY86CKEFX646H9BSKSFGZ36=limitaciones h_01HCY86CKEZ2483XB461M2C9EC=custom-parameter-names ua-conversion-data-with-srns=datos-de-conversi%C3%B3n-de-ua-con-srn h_01EGKTQN6XDYHA60P2WKHBBVFT=datos-de-conversi%C3%B3n-de-ua-con-srn a-note-about-facebook=una-nota-sobre-anuncios-de-meta h_01HCY86CKENFEGX53G9G4SGPSK=una-nota-sobre-anuncios-de-meta facebook-conversion-data=datos-de-conversi%C3%B3n-de-anuncios-de-meta h_01HCY86CKE658H36F3VJQMATQK=datos-de-conversi%C3%B3n-de-anuncios-de-meta h_01HCY86CKF6FY96PAWB5Y7YXSQ=google-ads-conversion-data h_01HCY86CKFMNNNJZTPGK4870YN=apple-search-ads-conversion-data h_01HCY86CKF26JRT64JR9JZEAKJ=snapchat-conversion-data h_01HCY86CKFM94SQWYARCM0GEJ9=twitter-conversion-data h_01HSQRQSK8W9K6871K0EWHDF76=tiktok-conversion-data h_01HCY86CKFS5SJBECSY42VRJWP=oath-ad-platforms-conversion-data ua-conversion-with-other-ad-networks=conversi%C3%B3n-de-ua-con-otras-redes-de-publicidad h_01HCY86CKFB0GEJRTYSXN9YZ08=conversi%C3%B3n-de-ua-con-otras-redes-de-publicidad h_01HCY86CKFY787RD4BHQDVEVFV=applovin attribution-link=enlace-de-atribuci%C3%B3n h_01HCY86CKFXM5XXJZSPXPB6397=enlace-de-atribuci%C3%B3n payload=carga-%C3%BAtil h_01HCY86CKFDDXWT2KKFTKKBGHM=carga-%C3%BAtil h_01HCY86CKFV55GYY7C51D7F72S=ironsource attribution-link::a45a1b4a=enlace-de-atribuci%C3%B3n-1 h_01HCY86CKFYGEYR2TRPSD87KDA=enlace-de-atribuci%C3%B3n-1 payload::81867f5c=carga-%C3%BAtil-1 h_01HCY86CKFKKFQDG1P42R1FSDJ=carga-%C3%BAtil-1 retargeting-conversion-data=datos-de-conversi%C3%B3n-de-retargeting h_01EHQ74JS84509GT6M93SZA4HX=datos-de-conversi%C3%B3n-de-retargeting reattribution-with-srns=reatribuci%C3%B3n-con-srn h_01HCY86CKFAVWP1W0ZNEN5P30A=reatribuci%C3%B3n-con-srn reattribution-with-regular-ad-networks=reatribuci%C3%B3n-con-redes-de-publicidad-regulares h_01HCY86CKF1PV8MRR902RAHQGW=reatribuci%C3%B3n-con-redes-de-publicidad-regulares h_01HCY86CKF1RGK01VTV3EEHQVM=retargeting-campaign-with-criteo attribution-link::c16e96bb=enlace-de-atribuci%C3%B3n-2 h_01HCY86CKFSKBBMFKA8NN8XTPC=enlace-de-atribuci%C3%B3n-2 conversion-data-payload=carga-%C3%BAtil-de-los-datos-de-conversi%C3%B3n h_01HCY86CKG2YQQC629SC3RAFKE=carga-%C3%BAtil-de-los-datos-de-conversi%C3%B3n reattribution-with-deferred-deep-linking=reatribuci%C3%B3n-con-enlaces-profundos-diferidos h_01HCY86CKGXV50H79R0YH1GB2C=reatribuci%C3%B3n-con-enlaces-profundos-diferidos h_01HCY86CKG12YRGFEEJ27DQART=deferred-deep-linking-with-srns conversion-data-for-deferred-deep-linking-with-facebook=datos-de-conversi%C3%B3n-para-enlace-profundo-diferido-con-anuncios-de-meta h_01HCY86CKGX9VHSV3ASKXMFM0X=datos-de-conversi%C3%B3n-para-enlace-profundo-diferido-con-anuncios-de-meta h_01HCY86CKG3XWM4X0YH7WYCEH4=deferred-deep-linking-with-attribution-links uri-schemes=esquemas-uri h_01HCY86CKGDM2NE1FCRC92K8R0=esquemas-uri ios-universal-links-and-android-app-links=enlaces-universales-de-ios-y-enlaces-de-aplicaciones-de-android h_01HCY86CKGY1NE4214DES0Y2AV=enlaces-universales-de-ios-y-enlaces-de-aplicaciones-de-android reengagement-with-srns=re-engagement-con-srn h_01HCY86CKG4TRYR6TWYYVB0FJE=re-engagement-con-srn reengagement-with-regular-ad-networks=re-engagement-con-redes-de-publicidad-regulares h_01HCY86CKGM2JS7C9T71R6GPH1=re-engagement-con-redes-de-publicidad-regulares reengagement-with-deep-linking=re-engagement-con-enlaces-profundos h_01HCY86CKG0NPQAA2ZRWWNKGQD=re-engagement-con-enlaces-profundos h_01HCY86CKGEBHQVFRGJH96KDFJ=reengagement-deep-linking-with-srns h_01HCY86CKGJ9HG7AGB5MFP33RK=reengagement-deep-linking-with-ad-networks alternative-conversion-data-sources=fuentes-de-datos-de-conversi%C3%B3n-alternativas h_01HCY86CKG3N6ZXV70G4VMZ0X5=fuentes-de-datos-de-conversi%C3%B3n-alternativas examples-of-mixed-user-acquisition-and-reattribution=ejemplos-de-adquisici%C3%B3n-y-reatribuci%C3%B3n-de-usuarios-mixtos h_01HCY86CKGK9DVVB7T6CVNB8ZN=ejemplos-de-adquisici%C3%B3n-y-reatribuci%C3%B3n-de-usuarios-mixtos" />

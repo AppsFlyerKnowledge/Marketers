@@ -1,26 +1,24 @@
 ---
-title: Preserve user privacy
-excerpt: >-
-  Ensure compliance with app store requirements and privacy regulations like
-  GDPR
+title: Preserva la privacidad del usuario
+excerpt: Cumple las normas de las tiendas de aplicaciones y de privacidad como el RGPD
 table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2022-06-02T11:42:26Z'
   id: 6551440878097
-  locale: en-us
+  locale: es
   parent_section_id: 6551006275729
   type: section
   url: >-
-    https://support.appsflyer.com/hc/en-us/sections/6551440878097-Preserve-user-privacy
+    https://support.appsflyer.com/hc/es/sections/6551440878097-Preserva-la-privacidad-del-usuario
 ---
-- [Support Google EU consent policy](/docs/support-google-eu-consent-policy)
-- [Implement Privacy Manifest in your app](/docs/implement-privacy-manifest-in-your-app)
-- [Send OpenDSR API requests](/docs/send-opendsr-api-requests)
-- [Apply Aggregated Advanced Privacy framework](/docs/apply-aggregated-advanced-privacy-framework)
-- [Apply privacy-preserving SDK methods](/docs/apply-privacy-preserving-sdk-methods)
-- [Fill out Google safety section form](/docs/fill-out-google-safety-section-form)
-- [Preparing for the App Store review—nutrition labels](/docs/preparing-for-the-app-store-review-nutrition-labels)
-- [About raw data identifier restrictions](/docs/about-raw-data-identifier-restrictions)
-- [Apply IP masking to user data](/docs/apply-ip-masking-to-user-data)
+- [Soporte para la política de consentimiento de Google](/docs/support-google-eu-consent-policy)
+- [Implementa el manifiesto de privacidad en tu aplicación](/docs/implement-privacy-manifest-in-your-app)
+- [Enviar solicitudes a la API de OpenDSR](/docs/send-opendsr-api-requests)
+- [Framework de Privacidad Avanzada Agregada](/docs/apply-aggregated-advanced-privacy-framework)
+- [Métodos de preservación de la privacidad en el SDK](/docs/apply-privacy-preserving-sdk-methods)
+- [Formulario de la sección de seguridad de Google](/docs/fill-out-google-safety-section-form)
+- [Preparación para la revisión del App Store: etiquetas nutricionales](/docs/preparing-for-the-app-store-review-nutrition-labels)
+- [Información sobre las restricciones de los identificadores de raw data](/docs/about-raw-data-identifier-restrictions)
+- [Aplicar el enmascaramiento de IP a los datos del usuario](/docs/apply-ip-masking-to-user-data)

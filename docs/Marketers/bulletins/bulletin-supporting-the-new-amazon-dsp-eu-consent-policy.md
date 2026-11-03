@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: Supporting the new Amazon DSP EU consent policy'
+title: >-
+  Boletín: Soporte para la nueva política de consentimiento de Amazon DSP en la
+  UE
 metadata:
   keywords:
     - Marketers
@@ -13,16 +15,15 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2026-04-12T09:11:36Z'
-  edited_at: '2026-05-12T16:05:37Z'
+  edited_at: '2026-10-20T03:54:19Z'
   id: 45664244736529
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/45664244736529-Bulletin-Supporting-the-new-Amazon-DSP-EU-consent-policy
+  url: https://support.appsflyer.com/hc/es/articles/45664244736529
 ---
-| Section | Details |
+| Sección. | Detalles |
 | --- | --- |
-| **What's new** | As part of Amazon's enforcement of the Digital Markets Act (DMA), Amazon Ads is updating their EU consent policy. AppsFlyer is making the necessary changes to support Amazon's policy requirements while ensuring that advertisers maximize the value of their Amazon Ads marketing channels. |
-| **Effective date** | <ul><li>Effective enforcement date on Amazon - June 30, 2026</li><li>Effective support date on AppsFlyer - May 18, 2026</li></ul> |
-| **What you need to know** | **Relevant integrations and audience:** All advertisers with apps that are integrated with Amazon Ads via the `amazondsp_int` SRN integration and have advertising activity in the EU (including UK and Switzerland).<br /><br />**Required actions:** Ensure that you pass valid DMA consent signals to AppsFlyer for any event (app open or in-app event) for users in the EU, UK, or Switzerland.<br /><br />The consent signals can be one of the following:<ol><li>**Manual consent:** The only required field is `ad_user_data_enabled` as part of the manual consent array. The other fields required for Google's DMA consent are not relevant for Amazon.</li><li>**TCF consent:** Send the full TCF consent information as created by your CMP, and make sure to include the Amazon Ads vendor ID (`793`) in the list of consented vendors.</li><li>**GPP consent strings:** Amazon supports GPP consent strings, but this is not currently supported by AppsFlyer.</li></ol>**<span id="h_01KP0FAZ70YDRQ71TDRYFEG120"></span>See also**<ul><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance">How to send DMA consent via AppsFlyer's SDK</Anchor></li><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">How to send DMA consent via AppsFlyer's S2S</Anchor> (search for `consent_data`)</li></ul> |
+| **¿Qué hay de nuevo?** | Como parte de la aplicación por parte de Amazon del Digital Markets Act (DMA), Amazon Ads está actualizando su política de consentimiento en la UE. AppsFlyer está implementando los cambios necesarios para cumplir con los requisitos de la política de Amazon, asegurando al mismo tiempo que los anunciantes maximicen el valor de sus canales de marketing en Amazon Ads. |
+| **Fecha de entrada en vigor** | <ul><li>Fecha de entrada en vigor en Amazon - 30 de junio de 2026</li><li>Fecha de inicio de soporte en AppsFlyer - 18 de mayo de 2026</li></ul> |
+| **Lo que debes saber:** | **Integraciones y audiencia relevantes:** Todos los anunciantes con aplicaciones integradas con Amazon Ads mediante la integración SRN `amazondsp_int` y que tengan actividad publicitaria en la UE (incluidos Reino Unido y Suiza).<br /><br />**Acciones requeridas:** Asegúrate de enviar señales de consentimiento DMA válidas a AppsFlyer para cualquier evento (apertura de la aplicación o evento in-app) de usuarios en la UE, Reino Unido o Suiza.<br /><br />Las señales de consentimiento pueden ser una de las siguientes:<ol><li>**Consentimiento manual:** El único campo obligatorio es `ad_user_data_enabled` como parte del array de consentimiento manual. Los otros campos requeridos para el consentimiento DMA de Google no son relevantes para Amazon.</li><li>**Consentimiento TCF:** Envía la información completa de consentimiento TCF generada por tu CMP y asegúrate de incluir el ID de proveedor de Amazon Ads (`793`) en la lista de proveedores con consentimiento.</li><li>**Cadenas de consentimiento GPP:** Amazon admite cadenas de consentimiento GPP, pero actualmente AppsFlyer no es compatible con ellas.</li></ol>**<span id="h_01KP0FAZ70YDRQ71TDRYFEG120"></span>Consulte también**<ul><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance">Cómo enviar el consentimiento DMA a través del SDK de AppsFlyer</Anchor></li><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">Cómo enviar el consentimiento DMA a través de S2S de AppsFlyer</Anchor> (busca `consent_data`)</li></ul> |

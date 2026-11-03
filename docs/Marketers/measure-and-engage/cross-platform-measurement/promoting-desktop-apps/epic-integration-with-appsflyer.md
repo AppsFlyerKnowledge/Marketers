@@ -1,5 +1,5 @@
 ---
-title: Epic integration with AppsFlyer
+title: Integración de Epic con AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -12,47 +12,46 @@ x-zendesk:
     - Marketers
     - PC & Console Attribution
   created_at: '2023-04-03T07:18:07Z'
-  edited_at: '2026-05-19T08:10:01Z'
+  edited_at: '2026-08-12T12:10:33Z'
   id: 14241298075921
-  locale: en-us
+  locale: es
   section: Promoting Desktop apps
   section_id: 15329004312593
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/14241298075921-Epic-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/14241298075921
 ---
-> **At a glance:** Integrate your Epic game with AppsFlyer to receive attribution and event data for your Epic campaigns. The Epic integration supports attribution and in-app event recording for Epic games (in other words, attribution and recording on a user's device).
+> **En resumen:** Integra tu juego de Epic con AppsFlyer para recibir datos de atribución y eventos para tus campañas de Epic. La integración de Epic admite la atribución y el registro de eventos in-app para juegos de Epic (es decir, atribución y registro en el dispositivo de un usuario).
 
-## About Epic game attribution
+## Acerca de la atribución de juegos de Epic
 
-Games running on Epic can integrate with AppsFlyer via API (both S2S and client-side) to receive attribution data and performance measurements about which sources and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+Los juegos que se ejecutan en Epic pueden integrarse con AppsFlyer mediante la API (tanto S2S como del lado del cliente) para recibir datos de atribución y mediciones de rendimiento sobre qué fuentes y campañas impulsan la apertura de la app y los eventos in-app. Los marketers confían en estos conocimientos para medir y optimizar las actividades de marketing.
 
-### Example attribution flow
+### Ejemplo de flujo de atribución
 
-The following is an example flow that highlights the most important steps in a user journey from ad engagement to attribution. It includes the AppsFlyer-recommended cross-platform landing page. **Note**: While we recommend using the cross-platform landing page, you can also use direct attribution links.
+El siguiente es un flujo de ejemplo que destaca los pasos más importantes del viaje de un usuario, desde la interacción con el anuncio hasta la atribución. Incluye la landing page multiplataforma recomendada por AppsFlyer. **Nota**: Si bien recomendamos usar la landing page multiplataforma, también puedes usar enlaces de atribución directa.
 
 ![Epic_journey.jpg](https://files.readme.io/c5807442cff142ceb4aa3c4d55628e75b37627a011ca531fa390e46ccc3e23b8-small-14241275857553.jpg)
 
-1. Marketing touchpoint: Customers interact with your brand through online or offline marketing touchpoints. These can include, email and newsletters, social media, mobile web, and more.
-2. Game landing page:  A game landing page directs customers to your Epic game page. This step is important for collecting UTM and other URL parameters to attribute customers from the click/install to the original media sources or to your owned media sources.  
-   The landing page is also useful because it provides links to the various platforms your game supports. For example, you can also have links to your Xbox, Microsoft store, and Steam page on your landing page.
-3. Epic app page: This is your Epic storefront page that hosts your Epic game for customers to download.
-4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
+1. Punto de contacto de marketing: Los clientes interactúan con tu marca a través de puntos de contacto de marketing online u offline. Estos pueden incluir el correo electrónico y los boletines informativos, las redes sociales, la web móvil y más.
+2. Landing page del juego:  La landing page de un juego dirige a los clientes a tu página del juego de Epic. Este paso es importante para recopilar los parámetros UTM y otros parámetros de URL a fin de atribuir a los clientes que han hecho clic o han hecho la instalación a las fuentes multimedia originales o a las fuentes multimedia de tu propiedad.  
+   La landing page también es útil porque proporciona enlaces a las distintas plataformas compatibles con el juego. Por ejemplo, también puedes tener enlaces a tu Xbox, tienda de Microsoft y página de Steam en tu página de inicio.
+3. Página de la app de Epic: Esta es la página del escaparate de Epic que aloja tu juego de Epic para que los clientes lo descarguen.
+4. Instalación del juego: El usuario instala el juego, lo que activa la atribución y la grabación de eventos in-app y sesiones.
 
-## Integration procedures
+## Procedimientos de integración
 
-The following table lists the tasks required to integrate your Epic game with AppsFlyer.∑
+La siguiente tabla enumera las tareas necesarias para integrar tu juego de Epic con AppsFlyer.∑
 
 <Table>
   <thead>
     <tr>
       <th>
-        Task
+        Tarea
       </th>
       <th>
-        Actions
+        Acciones
       </th>
       <th>
-        Who's involved
+        ¿Quién participa?
       </th>
     </tr>
   </thead>
@@ -60,130 +59,130 @@ The following table lists the tasks required to integrate your Epic game with Ap
   <tbody>
     <tr>
       <td>
-        App setup
+        Configuración de la aplicación
       </td>
       <td>
-        * <Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Create an AppsFlyer account</Anchor>
-        * <Anchor target="_blank" href="/marketers/docs/user-management">Add account users with appropriate permissions</Anchor>
-        * <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">Add your Epic game in AppsFlyer</Anchor>
+        * <Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Crear una cuenta AppsFlyer</Anchor>
+        * <Anchor target="_blank" href="/marketers/es/docs/user-management">Añadir usuarios de cuenta con los permisos adecuados</Anchor>
+        * <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">Agrega tu juego de Epic en AppsFlyer</Anchor>
       </td>
       <td>
-        Marketer
-      </td>
-    </tr>
-    <tr>
-      <td>
-        API integration with your app (via S2S or client-side)
-      </td>
-      <td>
-        There are two methods of integration you can use: S2S and client-side.
-
-        For the S2S method:
-
-        <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-epic-sample">Integrate the AppsFlyer Epic API</Anchor> into your app with commands to report the following events to AppsFlyer.
-
-        * First opens
-        * In-app events
-        * Sessions
-
-        **Note**:
-
-        * First app opens must be reported before in-app events and sessions.
-        * For the `device_ids` parameter, select the type `custom` or `epicid`.
-          * The `custom` or `epicid` for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id">first opens</Anchor> should match your <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id">in-app events</Anchor>, and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_session-app-platform-app-id">sessions</Anchor> ID.
-        * Send events using the API. Tell your developer which events to send.
-        * To report owned media engagements, integrate the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">impression engagement API.</Anchor>
-
-        For the client-side method, there are three versions: native <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-epic-sample">C++</Anchor>, <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-unreal-epic-sample-app">Unreal</Anchor>, and <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-unity-epic-sample-app">Unity</Anchor>.
-
-        **Note**:
-
-        If you have an existing user base and therefore want the first session to be considered a session and not an install, the developer can use the method `skipFirst=true`.
-      </td>
-      <td>
-        App developer
+        Comercializador
       </td>
     </tr>
     <tr>
       <td>
-        Cross-platform landing page setup
+        Integración de API con tu aplicación (a través de S2S o del lado del cliente)
       </td>
       <td>
-        **Recommended**: A cross-platform landing page running the AppsFlyer Smart Script lets you perform web-to-app attribution. It's most recommended when your campaign promotes an app that's also available on other platforms, like Epic and Steam.
+        Hay dos métodos de integración que puedes utilizar: S2S y del lado del cliente.
 
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Learn about cross-platform landing pages</Anchor>
+        Para el método S2S:
 
-        <Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Learn how to set up a cross-platform landing page</Anchor>
+        <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-epic-sample">Integra la API de Epic de AppsFlyer</Anchor> en tu aplicación con comandos para reportar los siguientes eventos a AppsFlyer.
 
-        **Note**:
+        * Primeras aperturas
+        * Eventos dentro de la aplicación
+        * Sesiones
 
-        For Epic, the following parameters are required:
+        **Nota**:
 
-        * **platform**  
+        * Las primeras aperturas de aplicaciones deben informarse antes de las sesiones y eventos in-app.
+        * Para el parámetro `device_ids`, selecciona el tipo `personalizado` o `epicid`.
+          * El `personalizado` o `epicid` para las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id">primeras aperturas</Anchor> debe coincidir con el ID de tus <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id">eventos in-app</Anchor> y con el ID de las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_session-app-platform-app-id">sesiones</Anchor> ID.
+        * Envía eventos usando la API. Dile a tu desarrollador qué eventos debe enviar.
+        * Para informar sobre las interacciones con los medios de comunicación propias, integra la API de <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">interacción con las impresiones</Anchor>.
+
+        Para el método del lado del cliente, hay tres versiones: <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-epic-sample">C++</Anchor> nativo, <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-unreal-epic-sample-app">Unreal</Anchor> y <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-unity-epic-sample-app">Unity</Anchor>.
+
+        **Nota**:
+
+        Si tienes una base de usuarios existente y, por lo tanto, deseas que la primera sesión se considere una sesión y no una instalación, el desarrollador puede utilizar el método `skipFirst=true`.
+      </td>
+      <td>
+        Tu desarrollador de aplicaciones
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Configuración de la landing page multiplataforma
+      </td>
+      <td>
+        **Recomendado**: La landing page multiplataforma que ejecuta AppsFlyer Smart Script te permite realizar atribución web-to-app. Es más recomendable cuando tu campaña promociona una aplicación que también está disponible en otras plataformas, como Epic y Steam.
+
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Más información sobre las landing pages multiplataforma</Anchor>
+
+        <Anchor target="_blank" href="/marketers/es/docs/cross-platform-landing-pages-with-smart-script">Más información sobre cómo configurar una landing page multiplataforma</Anchor>
+
+        **Nota**:
+
+        Para Epic, se requieren los siguientes parámetros:
+
+        * **plataforma**  
           epic
         * **app\_id**  
-          The app ID of the game page on the Epic store.
+          El ID de la app de la página del juego en la tienda de Epic.
 
-          You can find your unique game ID on your Epic developer console. For example,
+          Puedes encontrar el ID único de tu juego en la consola para desarrolladores de Epic. Por ejemplo:
 
           ```http
           https://store.epicgames.com/en-us/p/YOUR-GAME-ID
           ```
-        * **media\_source**
+        * **fuente\_de\_medios**
 
-        The following parameters are not required but recommended:
+        Los siguientes parámetros no son obligatorios pero sí recomendados:
 
-        * **campaign**
-        * **ad**
+        * **campaña única**
+        * **anuncio**
         * **ad\_set**
         * **storefront\_redirect\_url**  
-          The full URL of your Epic storefront for your app including your **app\_id**.  
-          For example, `https://store.epicgames.com/en-us/p/12345678/`
+          La URL completa de tu escaparate de Epic para tu app, incluida tu **app\_id**.  
+          Por ejemplo, `https://store.epicgames.com/en-us/p/12345678/`
       </td>
       <td>
-        Marketer (may require developer assistance)
+        Marketer (puede requerir la asistencia del desarrollador)
       </td>
     </tr>
     <tr>
       <td>
-        Link setup
+        Configuración del enlace
       </td>
       <td>
-        If you don't use a cross-platform landing page, you can create direct attribution links to place behind ads.
+        Si no utilizas una landing page multiplataforma, puedes crear enlaces de atribución directos para colocarlos detrás de los anuncios.
 
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor>
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor>
       </td>
       <td>
-        Marketer
+        Comercializador
       </td>
     </tr>
     <tr>
       <td>
-        Report setup/view data
+        Configuración/visualización de datos de reportes
       </td>
       <td>
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor>
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Obtén más insights sobre la disponibilidad de datos en dashboards y reportes</Anchor>
       </td>
       <td>
-        Mareketer/Data engineer
+        Marketer/Ingeniero de datos
       </td>
     </tr>
   </tbody>
 </Table>
 
-### Removing AppsFlyer data when uninstalling the app
+### Eliminar los datos de AppsFlyer al desinstalar la app
 
-To remove all AppsFlyer SDK data when uninstalling the app, please ask your developer to perform the steps specified [here](https://dev.appsflyer.com/hc/docs/epic-vanilla#deleting-appsflyer-data-on-uninstall).
+Para eliminar todos los datos del SDK de AppsFlyer al desinstalar la aplicación, pídele a tu desarrollador que realice los pasos indicados [aquí](https://dev.appsflyer.com/hc/docs/epic-vanilla#deleting-appsflyer-data-on-uninstall).
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-| Trait | Remarks |
+| Caducado | Nota |
 | --- | --- |
-| Retargeting | Not currently supported |
-| Cost data | Cost data must be sent via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Ad Spend Ingestion</Anchor> using the upload file by email method. |
+| Reorientación | Actualmente no es compatible |
+| Datos de costo | Los datos de costo deben enviarse a través de <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Ad Spend Ingestion</Anchor> mediante el método de carga de archivos por correo electrónico. |
 
-> 📄 **See also**
+> 📄 **Véase también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">CTV, PC, and console platform overview</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Resumen general de la plataforma de CTV, PC y consola</Anchor>
 
-<div data-zendesk-anchors="about-steam-attribution=about-epic-game-attribution 01H7Z1F3SE03BXJD0WAJV8RE7Q=about-epic-game-attribution flow=example-attribution-flow 01H7Z1F3SETVXQKRQ71YAJACY3=example-attribution-flow 01H7Z1F3SF4J2WJ2Y6QG3VGGVK=integration-procedures h_01J3349MAA4J231B6FJ74V3PTB=removing-appsflyer-data-when-uninstalling-the-app h_01HF9WA5FJ6P4C357ZE231GMR0=traits-and-limitations h_01HE7T4JX3RX3SZW2VPW5ZZY7E=see-also" />
+<div data-zendesk-anchors="about-steam-attribution=acerca-de-la-atribuci%C3%B3n-de-juegos-de-epic 01H7Z1F3SE03BXJD0WAJV8RE7Q=acerca-de-la-atribuci%C3%B3n-de-juegos-de-epic flow=ejemplo-de-flujo-de-atribuci%C3%B3n 01H7Z1F3SETVXQKRQ71YAJACY3=ejemplo-de-flujo-de-atribuci%C3%B3n integration-procedures=procedimientos-de-integraci%C3%B3n 01H7Z1F3SF4J2WJ2Y6QG3VGGVK=procedimientos-de-integraci%C3%B3n removing-appsflyer-data-when-uninstalling-the-app=eliminar-los-datos-de-appsflyer-al-desinstalar-la-app h_01J3349MAA4J231B6FJ74V3PTB=eliminar-los-datos-de-appsflyer-al-desinstalar-la-app traits-and-limitations=especificaciones-y-limitaciones h_01HF9WA5FJ6P4C357ZE231GMR0=especificaciones-y-limitaciones h_01HE7T4JX3RX3SZW2VPW5ZZY7E=v%C3%A9ase-tambi%C3%A9n" />

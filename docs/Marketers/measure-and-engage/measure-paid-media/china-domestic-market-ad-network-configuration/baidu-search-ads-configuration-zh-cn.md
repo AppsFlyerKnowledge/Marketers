@@ -25,7 +25,7 @@ x-zendesk:
 
 #### 请注意:
 
-#### 1.完成百度搜索广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看<Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">安卓</Anchor>/<Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">iOS</Anchor>对应的SDK整合指南。
+#### 1.完成百度搜索广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看<Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">安卓</Anchor>/<Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide">iOS</Anchor>对应的SDK整合指南。
 
 #### 2.在百度搜索使用CPC或者OCPC出价模式，都可以按照本篇配置文档来操作。如果使用CPC出价方式，在百度后台保持OCPC处于第一阶段，不将模型自动优化功能生效即可。
 

@@ -1,5 +1,5 @@
 ---
-title: Bidalgo Apple Ads marketing partner—campaign configuration
+title: 'Partner de marketing de Apple Ads: configuración de la campaña'
 metadata:
   keywords:
     - Apple Search Ads
@@ -15,67 +15,66 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-07-26T10:33:54Z'
-  edited_at: '2026-09-15T10:41:33Z'
+  edited_at: '2026-09-17T00:25:47Z'
   id: 360001340429
-  locale: en-us
+  locale: es
   section: Apple Ads
   section_id: 6551310453393
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001340429-Bidalgo-Apple-Ads-marketing-partner-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360001340429
 ---
-> **At a glance:** Optimize Apple Ads campaigns by using Bidalgo. When configured, AppsFlyer sends postbacks to Bidalgo.
+> **En resumen:** Optimiza las campañas de Apple Ads con Bidalgo. Una vez configurado, AppsFlyer envía postbacks a Bidalgo.
 
-## Enabling sending postbacks to Bidalgo (Apple Ads marketing partner)
+## Habilitación del envío de postbacks a Bidalgo (partner de marketing de Apple Ads)
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> If the advertiser or the agency disables attribution for Apple Ads, attribution for this app, including postback sending to Apple Ads Marketing partners, stops.
+> Si el anunciante o la agencia desactiva la atribución de Apple Ads, se detiene la atribución de esta app, incluido el envío de postbacks a partners de marketing de Apple Ads.
 
-Both advertisers and agencies can enable attribution for Apple Ads.
+Tanto los anunciantes como las agencias pueden habilitar la atribución de Apple Ads.
 
-* **Advertisers:** follow the instructions below on how to enable attribution for Apple Ads.
-* **Agencies:** <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#agency-setup">follow these instructions</Anchor> to enable attribution for Apple Ads.
+* **Anunciantes:** sigan las instrucciones que aparecen a continuación para habilitar la atribución de Apple Ads.
+* **Agencias:** <Anchor target="_blank" href="/marketers/es/docs/apple-ads-integration-setup#agency-setup">sigan estas instrucciones</Anchor> para habilitar la atribución de Apple Ads.
 
-### Configuring Bidalgo
+### Configuración de Bidalgo
 
-**To set up a Bidalgo:**
+**Para configurar Bidalgo:**
 
-1. If required, activate **Apple Ads integration:**
-   1. In AppsFlyer, from the side menu, select **Collaboration** > **Partner Integrations > Partner Marketplace** tab.
-   2. Search for and select the partner. You're directed to the partner configuration page.
-   3. From the **Integration** tab, turn on **Activate partner**.
-   4. Click **Save Integration**.
-2. **In your Apple Ads dashboard**: Get the Apple Ads Campaign Group ID parameter related to Bidalgo. Use the screenshot that follows as a guide to locating the ID.
+1. Si es necesario, activa la **integración de Apple Search Ads:**
+   1. En AppsFlyer, desde el menú lateral, selecciona la pestaña **Collaboration** > **Partner Integrations > Partner Marketplace** .
+   2. Busca y selecciona al partner. Serás dirigido a la página de configuración del partner.
+   3. En la pestaña **Integración**, selecciona **Activar partner**.
+   4. Haz clic en **Guardar integración**.
+2. **En tu dashboard de Apple Ads**: obtén el parámetro Apple Ads Campaign Group ID relacionado con Bidalgo. Utiliza la captura de pantalla a seguie como guía para localizar el ID.
 
-   ![ASACGroupID.png](https://files.readme.io/4c1dd5feabd59b66c1af687b72128e2490d71670a49e106f98e103357a5a5619-21589966333713.png)
-3. **In AppsFlyer, configure Bidalgo:**
-   1. In AppsFlyer, from the side menu, select **Collaboration** > **Active Integrations.**
-   2. Search for Bidalgo - Apple Ads Marketing Partner.  
-      The list of marketing partners displays.
-   3. Select Bidalgo - Apple Ads Marketing Partner.
-   4. Turn on **Activate Partner**.
-   5. Enter Bidalgo's **Apple Ads Campaign ID** that you retrieved in the earlier step. Enter the digits (numbers) only.
-   6. Click **Save**.
+   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+3. **En AppsFlyer, configura Bidalgo:**
+   1. En AppsFlyer, desde el menú lateral, selecciona **Colaboración** > **Integración activa**.
+   2. Busca Bidalgo - Apple Ads partner de marketing.  
+      Aparece la lista de partners de marketing.
+   3. Selecciona Bidalgo - Apple Ads partner de marketing.
+   4. Activa **Activar partner.**
+   5. Introduce el **Apple Ads Campaign ID** de Bidalgo que obtuviste en el paso anterior. Ingresa solo los dígitos (números).
+   6. Haga clic en **Guardar**.
 
-### Default postbacks
+### Postbacks predeterminados
 
-Installs and re-engagements are sent automatically when the partner is activated.
+Las instalaciones y los re-engagements se envían automáticamente cuando se activa el partner.
 
-### Configuring in-app events postbacks
+### Configuración de postbacks de eventos in-app
 
-**To configure in-app events postback:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Turn on **In-app events postback**.
-2. Click **Add Event** to add an SDK Event to the list.
-3. Complete the following parameters:
+1. Activa **In-app events postback**.
+2. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+3. Completa los siguientes parámetros:
 
    
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| SDK Event Name | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server-to-server events. **Tip:** If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| Send Revenue | Select one of the following: No values and no revenue, Values and no revenue, or Values and revenue. |
+| Nombre de evento del SDK | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor. **Consejo:** Si no encuentras el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| Enviar ingresos | Selecciona una de las siguientes opciones: Sin valores y sin ingresos, Valores y sin ingresos, o Valores e ingresos. |
 
-4. Click **Save Integration**.
+4. Haz clic en **Guardar integración**.
 
-<div data-zendesk-anchors="enabling-sending-postbacks-to-bidalgo-apple-search-ads-marketing-partner=enabling-sending-postbacks-to-bidalgo-apple-ads-marketing-partner h_01HKW0AZ05126SWNF374821AAH=enabling-sending-postbacks-to-bidalgo-apple-ads-marketing-partner h_01HKW0AZ05SXCVY0M3M7R07KG6=note h_01HKW0AZ06QFMYPJF95XQRAK99=configuring-bidalgo h_01HKW0AZ06SPXE8K9JQN60B8T2=default-postbacks configuring-inapp-events-postbacks=configuring-in-app-events-postbacks h_01HKW0AZ06F0169D59AWKQJN87=configuring-in-app-events-postbacks" />
+<div data-zendesk-anchors="enabling-sending-postbacks-to-bidalgo-apple-search-ads-marketing-partner=habilitaci%C3%B3n-del-env%C3%ADo-de-postbacks-a-bidalgo-partner-de-marketing-de-apple-ads h_01HKW0AZ05126SWNF374821AAH=habilitaci%C3%B3n-del-env%C3%ADo-de-postbacks-a-bidalgo-partner-de-marketing-de-apple-ads h_01HKW0AZ05SXCVY0M3M7R07KG6=nota configuring-bidalgo=configuraci%C3%B3n-de-bidalgo h_01HKW0AZ06QFMYPJF95XQRAK99=configuraci%C3%B3n-de-bidalgo default-postbacks=postbacks-predeterminados h_01HKW0AZ06SPXE8K9JQN60B8T2=postbacks-predeterminados configuring-inapp-events-postbacks=configuraci%C3%B3n-de-postbacks-de-eventos-in-app h_01HKW0AZ06F0169D59AWKQJN87=configuraci%C3%B3n-de-postbacks-de-eventos-in-app" />

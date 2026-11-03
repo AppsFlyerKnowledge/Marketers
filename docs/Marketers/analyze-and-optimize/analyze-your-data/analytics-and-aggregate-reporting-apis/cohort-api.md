@@ -1,5 +1,5 @@
 ---
-title: Cohort API
+title: API de cohorte
 metadata:
   keywords:
     - API
@@ -18,113 +18,113 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2020-01-14T07:04:32Z'
-  edited_at: '2026-05-04T15:23:53Z'
+  edited_at: '2026-08-12T11:49:43Z'
   id: 360004799057
-  locale: en-us
+  locale: es
   section: Analytics and aggregate reporting/APIs
   section_id: 6550976670225
-  url: https://support.appsflyer.com/hc/en-us/articles/360004799057-Cohort-API
+  url: https://support.appsflyer.com/hc/es/articles/360004799057
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Cohort API provides advertisers a programmatic way to get Cohort data. Use the API to integrate Cohort data into BI and marketing automation systems.
+> **En resumen:** La API de Cohort proporciona a los anunciantes una forma programática de obtener datos de cohorte. Utiliza la API para integrar datos de cohorte en sistemas de BI y de automatización de marketing.
 
-## Cohort API
+## API de cohorte
 
-The Cohort API is used to get cohorted campaign performance data from the AppsFlyer platform. It is functionally equivalent to the <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort dashboard</Anchor>.
+La API de cohortes se utiliza para obtener datos de rendimiento de campañas de cohortes de la plataforma de AppsFlyer. Es funcionalmente equivalente al <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard">dashboard de cohorte</Anchor>.
 
-To use Cohort and retention, you define the data that you want to view. You select users from an app and segment them by conversion time. Cohort metrics like revenue, ROI, and event conversion rates are available. Break the cohort down, for comparison purposes, into dimensions like campaign or media source. The result returns as a CSV or JSON file. You can use the results to uncover patterns or changes in performance over user or campaign life cycles.
+Para usar cohorte y retención, defines los datos que deseas ver. Seleccionas usuarios de una aplicación y los segmentas por tiempo de conversión. Se encuentran disponibles métricas de la cohorte como ingresos, ROI y tasas de conversión de eventos. La cohorte se puede desglosar más, con fines comparativos, en dimensiones como campaña o fuente de medios. El resultado se devuelve como un archivo CSV o JSON. Puedes usar los resultados para descubrir patrones o cambios en el rendimiento a lo largo de los ciclos de vida del usuario o de la campaña.
 
-See <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Cohort use cases</Anchor>.
+Consulta <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Casos de uso de la cohorte</Anchor>.
 
-**To use Cohort API**:
+**Para utilizar la API de cohorte**:
 
-1. ![AppsFlyerAdmin_us-en.png](https://files.readme.io/8b676172a491d1cea655002549ae49f6d974a15e4865ea90392121d22ce95426-32131110605713.png) Get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor>. An admin needs to retrieve the token.
-2. Give your developer the API token to be used in the authentication header.
-3. Give your developers the [parameters](#filtering-and-grouping-parameters) to input when they make the API call, as described in the sections that follow. The parameters determine what the report focuses on, how it's organized, and provide a reporting timeframe.
-4. Tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_app-id">Cohort API instructions</Anchor> in the developer hub.
+1. ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Consigue el <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">token API</Anchor>. Un administrador debe recuperar el token.
+2. Proporciona a tu desarrollador el token API que se usará en el encabezado de autenticación.
+3. Otorga a tus desarrolladores los [parámetros](#filtering-and-grouping-parameters) que deben introducir cuando realicen la llamada a la API, como se describe en las secciones que siguen. Los parámetros determinan en qué se centra el reporte, cómo se organiza y proporcionan un marco temporal para el reporte.
+4. Dile a tu desarrollador que siga las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_app-id">instrucciones de la API maestra</Anchor> en el centro de desarrolladores.
 
 <div id="filtering-and-grouping-parameters" />
 
-<Accordion title="Cohort API parameters">
+<Accordion title="Parámetros de la API de cohorte">
 
-Use the following parameters to get the necessary data.
+Utiliza los siguientes parámetros de filtro para obtener los datos necesarios.
 
-| Parameter name | Description | Mandatory |
+| Nombre de parámetro | Descripción | Obligatorio |
 | --- | --- | --- |
-| <span id="bearer"></span>bearer | API token used in the API authentication header. | Yes |
-| <span id="cohort-_type"></span>cohort \_type | Cohort attribution (conversion) type is one of the following: `user_acquisition`, `retargeting`, `unified`<ul><li>Unified combines the performance of user acquisition and retargeting campaigns.</li><li>If an event is attributed to both retargeting and user acquisition campaigns, only the retargeting event is included in KPIs returned, meaning is\_primary=true.</li><li>Format: String</li><li>Example: `"cohort_type": "user_acquisition"`</li></ul> | Yes |
-| <span id="min_cohort_size"></span>min\_cohort\_size | Minimum cohort size is used to reduce the number of records returned by excluding cohorts having few users. This means that the "users" KPI has a value equal or greater to that specified.<ul><li>Format: Integer</li><li>Minimum value allowed: 1. Don't send 0 (Zero)</li><li>Default: 1</li><li>Example: `"min_cohort_size": 50`</li></ul> | No |
-| <span id="from"></span>from | Lower bound of the LTV attribution date range. The earliest date supported is 720 days before the current date.<ul><li>Format: String yyyy-mm-dd</li><li>Example: `"from": "2020-01-02"`</li></ul> | Yes |
-| <span id="to"></span>to | Higher bound of the LTV attribution date range<ul><li>Number of the days in the range: 1-31 days</li><li>For a single day: `from` and `to` values are identical.</li><li>Format: yyyy-mm-dd</li><li>Example: `"from": "2020-01-01", "to": 2020-01-31` is 31 days.</li></ul> | Yes |
-| <span id="granularity"></span>granularity | Hourly granularity for the previous 72 hours by setting  `"granularity": "hour"` and setting the `from` and `to` range to include the time of day.<ul><li>Format: yyyy-mm-dd hh:mm:ss</li><li>Example:</li></ul>`"granularity": "hour", "from": "2021-12-01 14:00:00", "to": "2021-12-03 11:00:00",` | No |
-| <span id="partial_data"></span>partial\_data | To avoid data distortion and misinterpretation Cohort returns data of complete days. However, the data of partial days can be useful.<br /><br />The number of complete cohort days for a query is calculated as the difference between today's date and the *to* date.<ul><li>[Default] If false, complete days return.</li><li>If true, up to 180 cohort days return, including days having incomplete data.</li><li>Format: Boolean</li><li>Platform UI version: false</li></ul>**Example**: On May 10, the number of complete cohort days for users converting during April 1-30, is 10.<ul><li>If false [default], cohort days 0-9, return. This is the number of days (10) between the last conversion date and today.</li><li>If true, cohort days 1-40 return. Days 11-40 contain partial data and do not return. For example, since April 20, only 20 days have elapsed, and so on.</li></ul>**Note**: Partial data is only allowed when the aggregation type is cumulative. | No |
-| <span id="filters"></span>filters | Filter the data and period days returned. Select filters from the [filter dimensions list](/docs/cohort-api#list-of-group-by-and-filter-by-dimensions).<ul><li>Format: Strings in a nested JSON. Values need to be in an array.</li><li>**Example limit to specific Geos:** `"filters": {"geo": ["US"]}` includes only users attributed to the United States.</li><li>**Example period (cohort) days**: The `period` filter sets the days for which measures are returned. The possible values are: 0-180.</li><li>Default: If no period filter is set the days 0-30, 60, 90, and 180 return. [Example filter with period](/docs/cohort-api#using-period-filters)</li></ul> | No |
-| <span id="groupings"></span>groupings | <ul><li>Use grouping parameters to include additional columns and make your reports less granular.</li><li>Select 1-7 groupings from the [grouping dimensions list](/docs/cohort-api#list-of-group-by-and-filter-by-dimensions).</li><li>Format: Strings in an array</li><li>Example: `"groupings": ["af_ad", "c", "af_c_id", "af_prt"]`</li></ul> | Yes |
-| <span id="kpis"></span>kpis | KPIs are the metrics used for gaining insights into the behavior of your app. [Learn how to select and format KPIs](/docs/cohort-api#selecting-and-formatting-kpis) | Yes |
-| <span id="preferred_currency"></span>preferred\_currency | A parameter that sets the format of the KPIs returned. [Learn how to format KPIs](/docs/cohort-api#formatting-kpi-functions) | No |
-| <span id="preferred_timezone"></span>preferred\_timezone | A parameter that sets the format of the KPIs returned. [Learn how to format KPIs](/docs/cohort-api#formatting-kpi-functions) | No |
-| <span id="aggregation_type"></span>aggregation\_type | A parameter that sets the format of the KPIs returned. [Learn how to format KPIs](/docs/cohort-api#formatting-kpi-functions) | Yes |
-| <span id="per_user"></span>per\_user | A parameter that sets the format of the KPIs returned. [Learn how to format KPIs](/docs/cohort-api#formatting-kpi-functions) | No |
+| <span id="bearer"></span>portador | Token de la API utilizado en el encabezado de autenticación de la API. | Sí |
+| <span id="cohort-_type"></span>cohort \_type | El tipo de atribución de cohorte (conversión) es uno de los siguientes: `user_acquisition`, `retargeting`, `unified`<ul><li>Unificado: combina el rendimiento de las campañas de retargeting y adquisición de usuarios.</li><li>Si un evento se atribuye tanto a campañas de retargeting como a campañas de adquisición de usuarios, solo se incluye el evento de retargeting en los KPIs devueltos, lo que significa que is\_primary=true.</li><li>Formato: cadena</li><li>Ejemplo: `"cohort_type": "user_acquisition"`</li></ul> | Sí |
+| <span id="min_cohort_size"></span>min\_cohort\_size | El tamaño mínimo de la cohorte se utiliza para reducir el número de registros devueltos al excluir cohortes que tienen pocos usuarios. Esto significa que el KPI de "usuarios" tiene un valor igual o mayor al especificado.<ul><li>Formato: Entero</li><li>Valor mínimo permitido: 1. No envíes 0 (cero)</li><li>Predeterminado: 1</li><li>Ejemplo: `"min_cohort_size": 50`</li></ul> | No |
+| <span id="from"></span>desde | Límite inferior del rango de fechas de atribución de LTV. La fecha más temprana admitida es 720 días antes de la fecha actual.<ul><li>Formato: Cadena aaaa-mm-dd</li><li>Ejemplo: `"from": "2020-01-02"`</li></ul> | Sí |
+| <span id="to"></span>a | Límite superior del rango de fechas de atribución del LTV<ul><li>Número de días en el rango: 1-31 días</li><li>Para un solo día: `from` y `to` los valores son idénticos.</li><li>Formato: aaaa-mm-dd</li><li>Ejemplo: `"from": "2020-01-01", "to": 2020-01-31` son 31 días.</li></ul> | Sí |
+| <span id="granularity"></span>granularidad | Granularidad horaria para las últimas 72 horas configurando `"granularity": "hour"` y configurando el rango `from` y `to` para incluir la hora del día.<ul><li>Formato: aaaa-mm-dd hh:mm:ss</li><li>Ejemplo:</li></ul>`"granularity": "hour", "from": "2021-12-01 14:00:00", "to": "2021-12-03 11:00:00",` | No |
+| <span id="partial_data"></span>partial\_data | Para evitar distorsiones e interpretaciones erróneas de datos, la cohorte devuelve los datos de días completos. Sin embargo, los datos de días parciales pueden ser útiles.<br /><br />El número de días completos de la cohorte para una consulta se calcula como la diferencia entre la fecha de hoy y la fecha *a*.<ul><li>[Predeterminado] Si es falso, se devuelven días completos.</li><li>Si es verdadero, se devuelven hasta 180 días de cohorte, incluidos los días que tienen datos incompletos.</li><li>Formato: Booleano</li><li>Versión de interfaz de usuario de la plataforma: false</li></ul>**Ejemplo**: El 10 de mayo, el número de días completos de la cohorte para los usuarios que se convertirían durante el 1-30 de abril, es de 10.<ul><li>Si es falso [predeterminado], se devuelven los días 0-9 de la cohorte. Este es el número de días (10) entre la última fecha de conversión y hoy.</li><li>Si es verdadero, se devuelven los días 1-40 de la cohorte. Los días 11-40 contienen datos parciales y no se devuelven. Por ejemplo, desde el 20 de abril solo han transcurrido 20 días, y así sucesivamente.</li></ul>**Nota**: Los datos parciales solo se permiten cuando el tipo de agregación es acumulativo. | No |
+| <span id="filters"></span>filtros | Permite filtrar los datos y el período de días devueltos. Selecciona los filtros de la [lista de dimensiones del filtro](/docs/cohort-api#list-of-group-by-and-filter-by-dimensions).<ul><li>Formato: Cadenas en un JSON anidado. Los valores deben estar en un array.</li><li>**Ejemplo de limitación a geolocalizaciones específicas:** `"filters": {"geo": ["US"]}` incluye solo los usuarios atribuidos a Estados Unidos.</li><li>**Ejemplo de período (cohorte) días** El filtro `period` establece los días para los cuales se devuelven las medidas. Los valores posibles son: 0-180.</li><li>Predeterminado: Si no se establece ningún filtro de período, se devuelven los días 0-30, 60, 90 y 180. [Ejemplo de filtro con período](/docs/cohort-api#using-period-filters)</li></ul> | No |
+| <span id="groupings"></span>agrupación | <ul><li>Utiliza parámetros de agrupación para incluir columnas adicionales y hacer que tus reportes sean menos granulares.</li><li>Selecciona 1-7 agrupaciones de la [lista de dimensiones de agrupación](/docs/cohort-api#list-of-group-by-and-filter-by-dimensions).</li><li>Formato: Cadenas en un array</li><li>Ejemplo: `"groupings": ["af_ad", "c", "af_c_id", "af_prt"]`</li></ul> | Sí |
+| <span id="kpis"></span>KPIs | Los KPIs son las métricas utilizadas para obtener insights sobre el comportamiento de tu aplicación. [Aprende a seleccionar y formatear KPIs](/docs/cohort-api#selecting-and-formatting-kpis) | Sí |
+| <span id="preferred_currency"></span>preferred\_currency | Un parámetro que establece el formato de los KPI devueltos. [Aprende a formatear los KPIs](/docs/cohort-api#formateando-funciones-de-kpis) | No |
+| <span id="preferred_timezone"></span>preferred\_timezone | Un parámetro que establece el formato de los KPI devueltos. [Aprende a formatear los KPIs](/docs/cohort-api#formateando-funciones-de-kpis) | No |
+| <span id="aggregation_type"></span>aggregation\_type | Un parámetro que establece el formato de los KPI devueltos. [Aprende a formatear los KPIs](/docs/cohort-api#formateando-funciones-de-kpis) | Sí |
+| <span id="per_user"></span>per\_user | Un parámetro que establece el formato de los KPI devueltos. [Aprende a formatear los KPIs](/docs/cohort-api#formateando-funciones-de-kpis) | No |
 
 </Accordion>
 
 <div id="selecting-and-formatting-kpis" />
 
-<Accordion title="Selecting and formatting KPIs">
+<Accordion title="Selección y formateo de KPIs">
 
-* The table lists the KPIs available and their associated functions. When you call a KPI, all its functions return.
-* The following KPIs always return: users, ecpi, and cost
-* Select one additional KPI per call.
-* For each KPI requested, all functions are returned.
-* Format: Strings in an array
-  * Example A: `"kpis": ["sessions"]`
-  * Example B: `"kpis": ["event_name"]`
+* La tabla enumera los KPIs disponibles y sus funciones asociadas. Cuando llamas a un KPI, se devuelven todas sus funciones.
+* Los siguientes KPIs siempre devuelven: usuarios, eCPI y costo.
+* Selecciona un KPI adicional por llamada.
+* Por cada KPI solicitado, se devuelven todas las funciones.
+* Formato: Cadenas en un array
+  * Ejemplo A: `"kpis": ["sessions"]`
+  * Ejemplo B: `"kpis": ["event_name"]`
 
-<table><thead><tr><th> </th><th> </th><th colspan="5">Functions</th></tr><tr><th rowspan="2">Default/ Optional </th><th rowspan="2">KPI (Dimensions name) </th><th>Count</th><th>cvr (conversion rate)</th><th>Rate</th><th>Sum</th><th>Unique users</th></tr><tr><th>Number</th><th>Percentage</th><th>Percentage</th><th>Number</th><th>Number</th></tr></thead><tbody><tr><td>Always</td><td>users</td><td><span>Y</span></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Always</td><td>ecpi</td><td>-</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>Always</td><td>cost</td><td>-</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>Optional</td><td><code>"event_name"</code>(4) </td><td><span>Y</span></td><td><span>Y</span></td><td>-</td><td><span>Y (3)</span></td><td><span>Y</span></td></tr><tr><td>Optional</td><td>revenue</td><td><span>Y</span></td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>Optional</td><td>roas</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td>Optional</td><td>roi</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td>Optional</td><td>sessions</td><td><span>Y</span></td><td>-</td><td><span>Y</span></td><td>-</td><td><span>Y(1)</span></td></tr><tr><td>Optional</td><td>uninstalls (2)</td><td><span>Y</span></td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td colspan="7"><p>(1) Unique sessions returns when <em>aggregation_type=on_day</em></p><p>(2) Not available when cohort_type=unified </p><p>(3) Sum means the total revenue generated by the event. In the report, this is denoted by <code>sum_event_name"</code></p><p>(4) Note! Event names are case-sensitive</p></td></tr></tbody></table>
+<table><thead><tr><th> </th><th> </th><th colspan="5">Funciones</th></tr><tr><th rowspan="2">Predeterminado/Opcional </th><th rowspan="2">KPI (nombre de dimensiones) </th><th>Recuento</th><th>cvr (tasa de conversión)</th><th>Calificación</th><th>Suma</th><th>Usuarios únicos</th></tr><tr><th>Número</th><th>Porcentaje</th><th>Porcentaje</th><th>Número</th><th>Número</th></tr></thead><tbody><tr><td>Siempre</td><td>usuarios</td><td><span>SÍ</span></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Siempre</td><td>eCPI</td><td>-</td><td>-</td><td>-</td><td><span>SÍ</span></td><td>-</td></tr><tr><td>Siempre</td><td>costo</td><td>-</td><td>-</td><td>-</td><td><span>SÍ</span></td><td>-</td></tr><tr><td>Opcional</td><td> <code>"event_name"</code>(4) </td><td><span>SÍ</span></td><td><span>SÍ</span></td><td>-</td><td><span>Sí (3)</span></td><td><span>SÍ</span></td></tr><tr><td>Opcional</td><td>ingresos</td><td><span>SÍ</span></td><td>-</td><td>-</td><td><span>SÍ</span></td><td>-</td></tr><tr><td>Opcional</td><td>roas</td><td>-</td><td>-</td><td><span>SÍ</span></td><td>-</td><td>-</td></tr><tr><td>Opcional</td><td>roi</td><td>-</td><td>-</td><td><span>SÍ</span></td><td>-</td><td>-</td></tr><tr><td>Opcional</td><td>sesiones</td><td><span>SÍ</span></td><td>-</td><td><span>SÍ</span></td><td>-</td><td><span>Sí(1)</span></td></tr><tr><td>Opcional</td><td>desinstalaciones (2)</td><td><span>SÍ</span></td><td>-</td><td><span>SÍ</span></td><td>-</td><td>-</td></tr><tr><td colspan="7"><p>(1) Las sesiones únicas regresan cuando <em>aggregation_type=on_day</em></p><p>(2) No disponible cuando cohort_type=unified </p><p>(3) La suma significa los ingresos totales generados por el evento. En el reporte, esto se denota por <code>sum_event_name"</code></p><p>Nota Nota Los nombres de los eventos diferencian mayúsculas y minúsculas.</p></td></tr></tbody></table>
 
-#### Formatting KPI functions
+#### Formateando funciones de KPIs
 
-The following parameters set the format of the KPIs returned.
+Los siguientes parámetros establecen el formato de los KPIs devueltos.
 
-| Parameter | Values | Mandatory |
+| Parámetro | Los valores | Obligatorio |
 | --- | --- | --- |
-| preferred\_currency | KPI revenue currency<ul><li>If true, revenue is returned using the <Anchor target="_blank" href="/marketers/docs/app-settings#localization-currency">app-specific currency</Anchor> set in the platform.</li><li>[Default] If false, results return in USD.</li><li>Format: Boolean</li><li>Platform UI version: true</li></ul> | No |
-| preferred\_timezone | **Time zone of data ranges**<ul><li>If true, times are expressed using the <Anchor target="_blank" href="/marketers/docs/app-settings#localization-time-zone">app-specific timezone</Anchor> set in the platform.</li><li>[Default] If false, times are expressed using UTC time zone.</li><li>Format: Boolean</li><li>Platform UI version: true</li></ul> | No |
-| aggregation\_type | <ul><li>`cumulative`</li><li>`on_day`</li></ul>`"aggregation_type": "cumulative"`<br /><br />`Format: String` | Yes |
-| per\_user | Divide the KPI function by the number of app users. Applies only to relevant KPIs.<ul><li>If true, KPI values are divided by the number of users in the cohort.</li><li>If false, KPI values are not divided by the number of users.</li><li>Format: Boolean</li><li>Example if true: total revenue is $1000, the number of app users is 500, the value returned is $2.</li></ul> | No |
+| preferred\_currency | Divisa de los ingresos de KPIs<ul><li>Si es true, los se devuelven utilizando la <Anchor target="_blank" href="/marketers/es/docs/app-settings#localization-currency">divisa específica de la aplicación</Anchor> establecida en la plataforma.</li><li>[Predeterminado] Si es falso, los resultados se devuelven en USD.</li><li>Formato: Booleano</li><li>Versión de la interfaz de usuario de la plataforma: true</li></ul> | No |
+| preferred\_timezone | **Zona horaria de rangos de datos**<ul><li>Si es true, las horas se expresan usando la <Anchor target="_blank" href="/marketers/es/docs/app-settings#localization-time-zone">zona horaria específica de la aplicación</Anchor> establecida en la plataforma.</li><li>[Predeterminado] Si es falso, las horas se expresan usando la zona horaria UTC.</li><li>Formato: Booleano</li><li>Versión de la interfaz de usuario de la plataforma: true</li></ul> | No |
+| aggregation\_type | <ul><li>`Acumulado`</li><li>`on_day`</li></ul>`"aggregation_type": "cumulative"`<br /><br />`Formato: cadena` | Sí |
+| per\_user | Divide la función de KPIs por el número de usuarios de la aplicación. Aplica únicamente a los KPIs relevantes.<ul><li>Si es true, los valores de KPIs se dividen por el número de usuarios en la cohorte.</li><li>Si es falso, los valores de KPIs no se dividen por el número de usuarios.</li><li>Formato: Booleano</li><li>Ejemplo si es verdadero: el ingreso total es de $1000 dólares, el número de usuarios de la aplicación es de $500, el valor devuelto es de $2 dólares.</li></ul> | No |
 
 </Accordion>
 
 <div id="list-of-group-by-and-filter-by-dimensions" />
 
-<Accordion title="Group by and filter dimensions">
+<Accordion title="Agrupar por y filtrar dimensiones">
 
-<table><thead><tr><th>Dimension name </th><th>Dimension API value</th><th>Groupings</th><th>Filters</th></tr></thead><tbody><tr><td>Ad</td><td>af_ad</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Ad ID</td><td>af_ad_id</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Campaign</td><td>c</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Campaign ID</td><td>af_c_id</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Channel</td><td>af_channel</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Media Source</td><td>pid</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Sub Param 1</td><td>af_sub1</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Keywords</td><td>af_keywords</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Agency</td><td>af_prt</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Conversion Type (1) </td><td>cohort_type</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Site ID</td><td>site_id</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Revenue Type (2)</td><td>revenue_type</td><td><span>x </span></td><td><span>Y</span></td></tr><tr><td>Attributed Touch Type (3)</td><td>attributed_touch_type</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Adset</td><td>af_adset</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Adset ID</td><td>af_adset_id</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Country</td><td>geo</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Date (install/re-attribution/re-engagement date in the context of the cohort_type selected) </td><td>date</td><td><span>Y</span></td><td><span>x </span></td></tr><tr><td>Period</td><td><p>period</p><p><a href="./cohort-api#using-period-filters">Detailed explanation</a></p></td><td><span>x</span></td><td><span>Y</span></td></tr><tr><td colspan="4"><p>Notes: </p><p>Dimension options:</p><p>(1) Conversion Type:  <code>user_acquisition</code>, <code>retargeting</code>(<code>re-engagement</code> and <code>re-attribution</code>), <code>unified</code></p><ul><li>When exporting:<ul><li><code>re-engagement</code> will show as <code>retargeting</code></li><li><code>re-attribution</code> will show as <code>reattr</code></li></ul></li></ul><p>(2) Revenue Type: <code>regular</code>, <code>ad_monetization</code><span></span></p><p>(3) Attributed Touch Type: <code>click</code>, <code>impression</code>, <code>TV</code>, <code>pre-installed</code></p></td></tr></tbody></table>
+<table><thead><tr><th>Nombre de la dimensión </th><th>Valor de API de la dimensión</th><th>Agrupaciones</th><th>Filtros</th></tr></thead><tbody><tr><td>Anuncio</td><td>af_anuncio</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>ID del anuncio</td><td>id_del_anuncio_af</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>Campaña</td><td>C</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>ID de campaña</td><td>af_c_id</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>Canal</td><td>af_canal</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>Fuente de medios</td><td>PID</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>Subparámetro 1</td><td>af_sub1</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>Palabras clave</td><td>af_palabras_clave</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>Agencia</td><td>af_prt</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>Tipo de conversión (1) </td><td>cohort_type</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>ID del sitio</td><td>id_sitio</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>Tipo de ingresos (2)</td><td>tipo_de_ingresos</td><td><span>. </span></td><td><span>SÍ</span></td></tr><tr><td>Tipo de toque atribuido (3)</td><td>tipo_táctil_atribuido</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>Conjunto de anuncios</td><td>af_conjunto de anuncios</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>ID del adset</td><td>af_adset_id</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>País</td><td>geolocalización</td><td><span>SÍ</span></td><td><span>SÍ</span></td></tr><tr><td>Fecha (fecha de instalación/reatribución/re-engagement en el contexto del cohort_type seleccionado) </td><td>fecha</td><td><span>SÍ</span></td><td><span>. </span></td></tr><tr><td>Periodo</td><td><p>period</p><p><a href="./cohort-api#using-period-filters">Explicación detallada</a></p></td><td><span>.</span></td><td><span>SÍ</span></td></tr><tr><td colspan="4"><p>Notas: </p><p>Opciones de dimensión:</p><p>(1) Tipo de conversión:  <code>user_acquisition</code>, <code>retargeting</code>(<code>re-engagement</code> y <code>re-attribution</code>), <code>unified</code></p><ul><li>Al exportar:<ul><li> <code>re-engagement</code> se mostrará como <code>retargeting</code> </li><li> <code>re-attribution</code> se mostrará como <code>reattr</code> </li></ul></li></ul><p>(2) Tipo de ingresos: <code>regular</code>, <code>ad_monetization</code><span></span></p><p>(3) Tipo de toque de atribución: <code>click</code>, <code>impression</code>, <code>TV</code>, <code>pre-installed</code></p></td></tr></tbody></table>
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="using-period-filters" />
 
-<Accordion title="Using period filters">
+<Accordion title="Uso de filtros de período">
 
-Period refers to the day post-attribution, where period 0 is the attribution day. For example, a user installs the app on January 1. This is the attribution day. A purchase made on period 0 means it was made on January 1. A purchase made on period 3 means it was made on January 4. Similarly, a user who installs on January 11, this is period 0. A purchase made on January 14 would be period 3.
+El período se refiere al día posterior a la atribución, donde el período 0 es el día de atribución. Por ejemplo, un usuario instala la aplicación el 1 de enero. Este es el día de la atribución. Una compra realizada en el período 0 significa que se realizó el 1 de enero. Una compra realizada en el período 3 significa que se realizó el 4 de enero. De manera similar, un usuario que instala el 11 de enero, este es el período 0. Una compra realizada el 14 de enero sería el período 3.
 
-If your report date range is January 1 to January 11 users who attributed (installed) during this period are included in the report. No other data is included.
+Si el rango de fechas de tu reporte es del 1 al 11 de enero, se incluyen en el reporte los usuarios que atribuyeron (instalaron) durante este período. No se incluyen otros datos.
 
-* The value of the period can be one or more of the following 0-180. For example, 0, 1, 2, 30, 180.
-* If no period is specified, the default values of 0, 1, 2, and so on to 30, 60, 90, and 180 return.
+* El valor del período puede ser uno o más de los siguientes 0-180. Por ejemplo: 0, 1, 2, 30, 180.
+* Si no se especifica ningún período, se devuelven los valores predeterminados 0, 1, 2 y así sucesivamente hasta 30, 60, 90 y 180.
 
-> 📄 **Example period filter**
+> 📄 **Ejemplo de filtro de período**
 >
-> * This example contains the JSON query parameters, raw data, and resulting CSV file.
-> * The query *filters period* of 0, 1, and 2 and the KPI selected is *revenue*.
-> * The query specifies the aggregation type as "cumulative". Change to "on\_day" if you want on-day data.
-> * As a result, the data returned contains:
->   * The measures of users, cost, and ecpi which always return
->   * Revenue measures consisting of sum and count for each period meaning periods 0, 1, and 2.
+> * Este ejemplo contiene los parámetros de la consulta JSON, el raw data y el archivo CSV resultante.
+> * La consulta *filtra los períodos* 0, 1 y 2 y el KPI seleccionado es *ingresos*.
+> * La consulta especifica el tipo de agregación como "cumulativa". Cambia a "on\_day" si deseas datos del mismo día.
+> * Como resultado, los datos devueltos contienen:
+>   * Las medidas de usuarios, costo y eCPI que siempre se devuelven
+>   * Medidas de ingresos consistentes en suma y recuento para cada período, es decir, los períodos 0, 1 y 2.
 >
 > **Query**
 >
@@ -148,16 +148,16 @@ If your report date range is January 1 to January 11 users who attributed (insta
 >         "pid"
 >     ],
 >     "kpis": [
->         "revenue"
+>         "ingresos"
 >     ]
 > }
 > ```
 >
-> **Raw data**
+> **Datos sin procesar**
 >
 > **![mceclip1.png](https://files.readme.io/846aade481d3b5fa72536817533bc3edad721f1ce6015edcb48bd500461342b9-32131110606865.png)**
 >
-> **Results**
+> **Resultados**
 >
 > ![mceclip0.png](https://files.readme.io/c284e5133e4e811b9416c850e399ddefb3c5bfcfcf879f469556b7a6bc0062c6-32131110607249.png)
 
@@ -165,29 +165,29 @@ If your report date range is January 1 to January 11 users who attributed (insta
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Rasgos y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Ad network access | No |
-| Agency access | No |
-| App-specific time zone | Yes |
-| App-specific currency | Yes |
-| Size limitations | None |
-| Rate limitation | <ul><li>API call-rate limit: 60 calls per minute and 50,000 calls a day per account</li><li>Queries return up to 30,000 rows</li></ul> |
-| Organic data | Available |
-| Non-organic data | Available |
-| Cost data limitation | <ul><li>Cost data is only for campaigns with at least 1 recorded install.</li><li>AppsFlyer does not report cost data for keywords that contain uppercase letters in the cohort report or cohort API</li><li>You can't combine some groupings combinations with cost. For example, Meta ads can have either geo or channel groupings but not both. The exact combination of groupings is ad network dependent.</li></ul> |
-| Data freshness | Data freshness depends on [partial\_data](/docs/cohort-api#partial_data) as follows:<ul><li>[Default] If false, <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">Daily</Anchor></li><li>If true, <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">Continuous (real-time)</Anchor></li><li>Cost and uninstall metrics update daily in all instances</li></ul> |
-| Historical data | Daily cohort: 2 years |
-| Account user access | The authorization token is available to admin users in the dashboard |
-| Ad revenue | For af\_ad\_revenue events, the unique users metric isn't available when the aggregation type is:<ul><li>Cumulative.</li><li>"On day," for dates between October 5, 2022-February 16, 2023.</li></ul> |
-| Weekly and monthly groupings | Weekly and monthly dimension groupings aren't available with the Cohort API. Use the Cohort dashboard. |
-| Cohort API period | <ul><li>The conversion period is referred to as 0 (Hour 0 or Day 0). The next period after the conversion is referred to as 1 (Hour 1 or Day 1), and so on.</li><li>In AppsFlyer a cohort period doesn't take into account the specific install timestamp. Rather, cohort hours are rounded down to the nearest hour, and cohort days, are based on the calendar day. This may cause discrepancies when comparing AppsFlyer cohort data to the cohort data of other networks, where all cohort periods are determined by the specific install timestamp (meaning an hour is 60 minutes post-install timestamp, and a day is the 24-hour post-install period after the install timestamp).</li></ul> |
-| Dates | <ul><li>Dates or date ranges refer to lifetime value (<Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV)</Anchor> dates, meaning the date the user attributed (converted) and not the date of the activity itself.</li><li>Earliest date supported: 730 days before the current date. Meaning 2 years</li><li>Maximum query range: 60 days.</li></ul> |
-| Reinstalls | <ul><li>If post-reinstall events are considered unattributed organic:<ul><li>They're included only as of May 26, 2024. <Anchor target="_blank" href="/marketers/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Learn more</Anchor></li><li>The install time is based on the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor> field.</li><li>They aren't counted toward unique user and retention measurements.</li></ul></li><li>If post-reinstall events are attributed to the first install, they're always included. <Anchor target="_blank" href="/marketers/docs/unique-users">Learn more</Anchor></li></ul> |
-| Cohort API for partners | Access to the Cohort API for marketing partners is being deprecated as of September 15th, 2024. Marketing partners are encouraged to <Anchor target="_blank" href="/partners/docs/data-locker-reports-for-api-partners">enable Data Locker</Anchor> to ensure continued access to customer data. |
+| Acceso a la ad network | No |
+| Acceso a la agencia | No |
+| Zona horaria específica de la aplicación | Sí |
+| Moneda específica de la aplicación | Sí |
+| Limitaciones de tamaño | Ninguno |
+| Limitación de tasa | <ul><li>Límite de tasa de llamadas a la API: 60 llamadas por minuto y 50.000 llamadas al día por cuenta</li><li>Las consultas devuelven hasta 30.000 filas</li></ul> |
+| Datos orgánicos | Disponible |
+| Datos no orgánicos | Disponible |
+| Limitación de datos de costos | <ul><li>Los datos de costos son solo para campañas con al menos 1 instalación registrada.</li><li>AppsFlyer no reporta los datos de costos de las palabras clave que contienen letras mayúsculas en el reporte de cohortes o la API de cohortes.</li><li>No se pueden combinar algunas combinaciones de agrupamientos con el costo. Por ejemplo, Meta Ads puede tener agrupamientos por geolocalización o canales, pero no ambos. La combinación exacta de agrupaciones depende de la ad network.</li></ul> |
+| Actualización de los datos | La actualización de los datos depende de [partial\_data](/docs/cohort-api#partial_data) de la siguiente manera:<ul><li>[Predeterminado] Si es falso, <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#daily">a diario</Anchor>.</li><li>Si es verdadero, <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">es continuo (en tiempo real)</Anchor>.</li><li>Las métricas de costos y desinstalaciones se actualizan diariamente en todas las instancias.</li></ul> |
+| Datos históricos | Cohortes diarias: 2 años |
+| Acceso de usuario a la cuenta | El token de autorización está disponible para los usuarios administradores en el dashboard. |
+| Ingresos de anuncios | Para los eventos af\_ad\_revenue, la métrica de usuarios únicos no está disponible cuando el tipo de agregación es:<ul><li>Acumulativa.</li><li>"On day" para fechas entre el 5 de octubre de 2022 y el 16 de febrero de 2023.</li></ul> |
+| Agrupaciones semanales y mensuales | Las agrupaciones de dimensiones semanales y mensuales no están disponibles con la API de cohortes. Utiliza el dashboard de cohortes. |
+| Período de API de cohorte | <ul><li>El período de conversión se denomina 0 (Hora 0 o Día 0). Al siguiente período posterior a la conversión se le denomina 1 (Hora 1 o Día 1), y así sucesivamente.</li><li>En AppsFlyer un período de cohorte no toma en cuenta la marca de tiempo de instalación específica. Más bien, las horas de cohorte se redondean a la hora más cercana y los días de cohorte se basan en el día de calendario. Esto puede causar discrepancias al comparar los datos de cohortes de AppsFlyer con los datos de cohorte de otras redes, donde todos los períodos de cohorte están determinados por la marca de tiempo de instalación específica (es decir, una hora es 60 minutos después de la instalación, un día es el período posterior a la instalación de 24 horas después de la marca de tiempo de instalación).</li></ul> |
+| Fechas | <ul><li>Las fechas o rangos de fechas se refieren a fechas de lifetime value (LTV), es decir, la fecha en que el usuario se atribuyó (convirtió) y no la fecha de la actividad en sí.</li><li>La fecha más antigua admitida: 730 días antes de la fecha actual. Es decir, 2 años.</li><li>Rango máximo de consulta: 60 días.</li></ul> |
+| Reinstalaciones | <ul><li>Si los eventos post-reinstalación son considerados orgánicos no atribuidos:<ul><li>Se incluirán solo a partir del 26 de mayo de 2024. <Anchor target="_blank" href="/marketers/es/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Más información</Anchor></li><li>El tiempo de instalación se basa en el campo <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor>.</li><li>No se cuentan para las mediciones de usuarios únicos y de retención.</li></ul></li><li>Si los eventos post-reinstalación se atribuyen a la primera instalación, siempre se incluyen. <Anchor target="_blank" href="/marketers/es/docs/unique-users">Saber más</Anchor></li></ul> |
+| API de cohorte para partners | El acceso a la API de cohorte para partners de marketing se está descontinuando a partir del 15 de septiembre de 2024. Se anima a los partners de marketing a <Anchor target="_blank" href="/partners/es/docs/data-locker-reports-for-api-partners">habilitar Data Locker</Anchor> para garantizar el acceso continuo a los datos de los clientes. |
 
 </Accordion>
 
-<div data-zendesk-anchors="cohort-reporting-api=cohort-api 01H7WFZR41YAQX4MFPBMJD1MBP=cohort-api 01H7WFZR42H3CA0CSB4E3XED3H=filtering-and-grouping-parameters 01H7WFZR42XV4JY46GY11KT3CF=selecting-and-formatting-kpis presentation-of-kpi-functions=formatting-kpi-functions 01H7WFZR43HFF65TSWG1AN0JTB=formatting-kpi-functions 01H7WFZR43BJ8E6KVHSGV4CDDP=list-of-group-by-and-filter-by-dimensions h_01HMY09W324E54VPZWPJVS2KB8=additional-information 01H7WFZR440NTXWWQ2T4P2ANWK=using-period-filters 01H7WFZR44RCXA56CXSCEZ0KXH=example-period-filter 01H7WFZR45VC96KYW1W9A8PBFT=traits-and-limitations" />
+<div data-zendesk-anchors="cohort-reporting-api=api-de-cohorte 01H7WFZR41YAQX4MFPBMJD1MBP=api-de-cohorte 01H7WFZR42H3CA0CSB4E3XED3H=filtering-and-grouping-parameters 01H7WFZR42XV4JY46GY11KT3CF=selecting-and-formatting-kpis presentation-of-kpi-functions=formateando-funciones-de-kpis 01H7WFZR43HFF65TSWG1AN0JTB=formateando-funciones-de-kpis 01H7WFZR43BJ8E6KVHSGV4CDDP=list-of-group-by-and-filter-by-dimensions additional-information=informaci%C3%B3n-adicional h_01HMY09W324E54VPZWPJVS2KB8=informaci%C3%B3n-adicional 01H7WFZR440NTXWWQ2T4P2ANWK=using-period-filters 01H7WFZR44RCXA56CXSCEZ0KXH=ejemplo-de-filtro-de-per%C3%ADodo 01H7WFZR45VC96KYW1W9A8PBFT=traits-and-limitations" />

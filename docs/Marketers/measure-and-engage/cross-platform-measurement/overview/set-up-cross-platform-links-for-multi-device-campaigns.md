@@ -1,5 +1,5 @@
 ---
-title: Set up cross-platform links for multi-device campaigns
+title: Configura enlaces multiplataforma para campañas en múltiples dispositivos
 metadata:
   keywords:
     - Attribution
@@ -15,146 +15,145 @@ x-zendesk:
     - Marketers
     - Cross-Platform Measurement
   created_at: '2022-06-19T07:02:43Z'
-  edited_at: '2026-09-15T11:16:51Z'
+  edited_at: '2026-09-17T00:20:23Z'
   id: 6966260647185
-  locale: en-us
+  locale: es
   section: Overview
   section_id: 15323084579345
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/6966260647185-Set-up-cross-platform-links-for-multi-device-campaigns
+  url: https://support.appsflyer.com/hc/es/articles/6966260647185
 ---
-> **At a glance:** How to promote, attribute, and measure app installs on platforms to ad views on other platforms. For example, mobile app installs to ads viewed on CTV devices, game console app installs to ads viewed on mobile or desktops (web), and CTV app installs to ads viewed on mobile or desktop (web).
+> **En resumen:** Cómo promover, atribuir y medir las instalaciones de aplicaciones en plataformas a vistas de anuncios en otras plataformas. Por ejemplo, las instalaciones de aplicaciones móviles a partir de anuncios vistos en dispositivos CTV, las instalaciones de aplicaciones de consolas de videojuegos a partir de anuncios vistos en dispositivos móviles o de ordenador (web) y las instalaciones de aplicaciones CTV de anuncios vistos en dispositivos móviles o de ordenador (web).
 
-## Overview
+## Descripción general
 
-With AppsFlyer cross-platform attribution links (impression URLs), you can attribute installs from one platform to ad views displayed on another platform. Multiple installs within the same household can be attributed to the same cross-platform ad impression.
+Con los enlaces multiplataforma de OneLink de AppsFlyer (URLs de impresión), puedes atribuir las aplicaciones de una plataforma a las vistas de anuncios que se muestran en otra plataforma. Varias instalaciones dentro del mismo hogar se pueden atribuir a la misma impresión de anuncios multiplataforma.
 
-### How does the attribution logic work?
+### ¿Cómo funciona la lógica de atribución?
 
-* Impressions are identified in AppsFlyer by their OneLink template ID and are assigned to each platform set in the template.
-* Installs are identified by their app and platform.
-* Matching logic: Template-level impressions are matched to the specific app launch through probabilistic attribution. Any app variant in the group can be matched.
+* Las impresiones se identifican en AppsFlyer por el ID de su plantilla OneLink y se asignan a cada plataforma configurada en la plantilla.
+* Las instalaciones se identifican por su app y plataforma.
+* Lógica de coincidencia: las impresiones a nivel de plantilla se asignan al inicio específico de la aplicación mediante atribución probabilística. Se puede asociar cualquier variante de la app del grupo.
 
-## Create a OneLink template for cross-platform attribution
+## Crea o edita una plantilla de OneLink para la atribución multiplataforma.
 
-A single template supports your app across multiple platforms (meaning one template works across all platforms). In the template, you set all platform variants of your app (mobile, CTV, desktop, console) bundled together.
+Una sola plantilla admite tu aplicación en múltiples plataformas (lo que significa que una plantilla funciona en todas las plataformas). En la plantilla, configuras juntas todas las variantes de plataforma de tu aplicación (móvil, CTV, escritorio, consola).
 
-1. Create or edit a <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template-with-redirection-logic-for-new-app-users">OneLink template</Anchor> for cross-platform attribution.
-2. In the **Cross-platform attribution** section, click the **edit button ->** **Enable cross-platform attribution**
-3. From the relevant platform drop-downs, select the relevant app. **Note**: Each app can only be added to one OneLink template with cross-platform attribution enabled. [<Image alt="Cross-platform attribution.png" src="https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png" width="476px" />](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)
+1. Crea o edita una <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#create-a-onelink-template-with-redirection-logic-for-new-app-users">plantilla de OneLink</Anchor> para la atribución multiplataforma.
+2. En la sección **atribución multiplataforma**, haz clic en el **botón de editar ->** **Habilitar atribución multiplataforma**
+3. Desde los menús desplegables de la plataforma relevante, selecciona la aplicación correspondiente. **Nota**: Cada aplicación solo puede añadirse a una plantilla de OneLink con la atribución multiplataforma habilitada. [<Image alt="Atribución multiplataforma.png" src="https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png" width="476px" />](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)
 
-## Set up cross-platform partner integration
+## Configura la integración de partners multiplataforma
 
-To set up cross-platform attribution using cross-platform impression URLs, configure the partner integration for each targeted app.
+Para configurar la atribución multiplataforma utilizando URLs de impresión multiplataforma, configura la integración de partners para cada aplicación objetivo.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Make sure to enable the partner integration by performing the steps below for all targeted apps that you selected in the OneLink template (see the [section above](#create-a-onelink-templatefor-cross-platform-attribution)). If the integration is disabled for one of the targeted apps,  cross-platform attribution will not occur.
+> Asegúrate de habilitar la integración de partners realizando los pasos a continuación para todas las aplicaciones objetivo que seleccionaste en la plantilla de OneLink (ver la [sección anterior](#crea-o-edita-una-plantilla-de-onelink-para-la-atribución-multiplataforma)). Si la integración está deshabilitada para una de las aplicaciones objetivo, la atribución multiplataforma no ocurrirá.
 
 <div id="h_01K2HBXDWSG3R1WZXT5RB0W48D" />
 
-<Accordion title="Step 1: Select the targeted app of the partner integration">
+<Accordion title="Paso 1: Selecciona la aplicación objetivo de la integración de partner">
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations**
-2. Select the integrated partner.
-3. In the **Integration** tab, from the **App** drop-down box, select the targeted app.
+1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de Partners** > **Integraciones activas**
+2. Selecciona el partner integrado.
+3. En la pestaña **Integración**, desde el cuadro desplegable **Aplicación**, selecciona la aplicación objetivo.
 
 </Accordion>
 
 <div id="step-2-enable-viewthrough-attribution" />
 
-<Accordion title="Step 2: Enable view-through attribution">
+<Accordion title="Paso 2: Habilitar la atribución view-through">
 
-For links to be used by integrated partners, enable view-through attribution.
+Para que los enlaces sean utilizados por los partners integrados, habilita la atribución view-through.
 
-1. In the **Integration** tab, turn on **Install view-through attribution**.
-2. Click **Save integration**.
+1. En la pestaña **Integración**, activa **Atribución de instalaciones view-through**.
+2. Haz clic en **Guardar integración**.
 
 </Accordion>
 
 <div id="step-4-create-an-attribution-link-crossplatform-impression-url" />
 
-<Accordion title="Step 3: Create an attribution link (cross-platform impression URL)">
+<Accordion title="Paso 3: Crea un enlace de atribución (URL de impresiones multiplataforma).">
 
-To Create an <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">attribution link</Anchor> (cross-platform impression URL) for integrated networks
+Para crear un <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">enlace de atribución</Anchor> (URL de impresión multiplataforma) para redes integradas
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations** and select the integrated partner.
-2. In the **Attribution link** tab, when creating a <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">OneLink link</Anchor>, select Use OneLink.
-3. In the **Select OneLink template** list, select the [OneLink template you created for cross-platform](#create-a-onelink-templatefor-cross-platform-attribution) attribution.
-4. Scroll down to **View-through attribution**.[![](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)
-5. Turn on **Cross-platform attribution**. This adds the `af_xplatform=true` parameter to the impression attribution link and gives the link cross-platform attribution capabilities. Without this parameter, the URL functions as a regular impression URL that can't attribute multiple installs to the same impression.
-6. Set the **Cross-platform view-through attribution lookback window**. This adds the `af_xplatform_vt_lookback` parameter to the impression attribution link and indicates the number of hours (up to 72) following the impression during which the app install can be attributed to the impression.
-7. Add any additional attribution parameters as needed. Use naming conventions that identify your cross-platform app campaign. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more</Anchor> about the parameters you can add for additional data and metrics. Sample link:
+1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de Partners** > **Integraciones activas** y elige el partner integrado.
+2. En la pestaña **Enlace de atribución**, al crear un <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">enlace de OneLink</Anchor>, selecciona Usar OneLink.
+3. Selecciona la plantilla de OneLink que has creado para la atribución multiplataformas.
+4. Desplázate hacia abajo hasta **Atribución view-through**.[![](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)
+5. Activa la **Atribución multiplataformas**. Esto añade el parámetro `af_xplatform=true` al enlace de atribución de impresión y le da al enlace capacidades de atribución multiplataforma. Sin este parámetro, la URL funciona como una URL de impresión normal que no puede atribuir varias instalaciones a la misma impresión.
+6. Configura la **ventana de lookback de atribución view-through multiplataforma**. Esto agrega el parámetro `af_xplatform_vt_lookback` al enlace de atribución de impresiones e indica la cantidad de horas (hasta 72) después de la impresión durante la cual la instalación de la aplicación se puede atribuir a la impresión.
+7. Agrega cualquier parámetro de atribución adicional según sea necesario. Utiliza convenciones de nomenclatura que identifiquen tu campaña de aplicación multiplataforma. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más</Anchor> sobre los parámetros que puedes agregar para obtener datos y métricas adicionales. Enlace de muestra:
 
    ```http
    https://impressions.onelink.me/{template_id}?pid=__media_source__&af_xplatform=true&af_xplatform_vt_lookback=24h&af_siteid=__CSITE__&c=__ctv_to_mobile__&af_channel=__PLACEMENT__&af_c_id=__CAMPAIGN_ID__&af_adset=__AID_NAME__&af_adset_id=__AID__&af_ad=__CID_NAME__&af_ad_id=__CID__&af_source_platform=__source_platform__&af_source_device_category=__device_category__&af_ad_type=__CTYPE__&redirect=false
    ```
-8. Give the link to the ad network to place behind the ad displayed on CTV, PC, or console platforms.
+8. Proporciona el enlace a la ad network para colocarlo detrás del anuncio que se muestra en plataformas CTV, PC o consola.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> For owned media and non-integrated partners add parameters as needed.  <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more</Anchor> about the parameters you can add for additional data and metrics.
+> Para medios propios y partners no integrados, añade parámetros según sea necesario.  <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más</Anchor> sobre los parámetros que puedes agregar para obtener datos y métricas adicionales.
 
 </Accordion>
 
 <div id="equal-priority-advanced-setting" />
 
-<Accordion title="Advanced: Equal priority setting (optional)">
+<Accordion title="Avanzado: Configuración de prioridad igual (opcional)">
 
-You can optionally assign **equal priority** to clicks and impressions in cross-platform attribution. This advanced setting lets AppsFlyer treat impressions (for example, in CTV or consoles) as having the same attribution priority as clicks. For more information, see <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#attribution-method-priorities-attribution-waterfall">Attribution method priorities</Anchor>.
+Opcionalmente, puedes asignar la **misma prioridad** a los clics e impresiones en la atribución multiplataforma. Esta configuración avanzada permite a AppsFlyer tratar las impresiones (por ejemplo, en CTV o consolas) como si tuvieran la misma prioridad de atribución que los clics. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#prioridades-de-los-métodos-de-atribución-cascada-de-atribución">Prioridades del método de atribución</Anchor>.
 
-**To enable equal priority:**
+**Para habilitar la prioridad igual:**
 
-1. In the Cross-platform setup section, select the **Equal priority** checkbox.
-2. Click **Save**.
+1. En la sección de configuración multiplataforma, selecciona la casilla **Misma prioridad**.
+2. Haz clic en **Guardar**.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Enabling equal priority may cause AppsFlyer to prioritize its own attribution over other sources. Use this setting with caution and only if it aligns with your overall attribution strategy.
+> Habilitar la prioridad igual puede hacer que AppsFlyer priorice su propia atribución sobre otras fuentes. Utiliza esta configuración con precaución y solo si se alinea con tu estrategia general de atribución.
 
 </Accordion>
 
-## Traits and limitations
+## Características y limitaciones
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| <span id="attribution-window"></span>Attribution window | Between 1-72 hours, depending on the lookback window parameter `af_xplatform_vt_lookback`(default is 24 hours). |
-| <span id="retargeting"></span>Retargeting | <ul><li>Re-attribution: Supported for cross-platform-to-mobile. Not for other platforms.</li><li>Re-engagement: Not supported</li></ul> |
-| <span id="attribution-method"></span>Attribution method | View-through attribution using probabilistic modeling |
-| <span id="household-attribution"></span>Household attribution | Supported. Meaning multiple installs within the same household can be attributed to the same cross-platform ad impression. |
-| <span id="reporting"></span>Reporting | <ul><li>Cross-platform installs are available in regular AppsFlyer dashboards and reports:<ul><li>Aggregate data <Anchor target="_blank" href="/marketers/docs/getting-started-with-appsflyer-dashboards">dashboards</Anchor> and <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">reports</Anchor></li><li>Raw data <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">reports</Anchor></li></ul></li><li>Cross-platform impressions don't display in app-level dashboards. However, they are available in the <Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports#user-journey">Cross-platform engagements report</Anchor> via Data Locker.</li><li>Make sure you use parameter naming conventions that easily identify your cross-platform campaign.</li></ul> |
-| <span id="ip-masking"></span>IP masking | IP masking for cross-platform engagements is not supported since it is an app-level trait. If `ip_masking` is configured, the install won't be attributed to the cross-platform engagement. |
-| <span id="ctvto-mobile"></span>CTV-to mobile | CTV-to-mobile attribution flows are available only to [integrated partners](/docs/set-up-cross-platform-links-for-multi-device-campaigns#list-of-ad-networks) who have the authorization to conduct cross-platform campaigns. |
-| <span id="cross-platform-attribution-links-in-mobile-devices"></span>Cross-platform attribution links in mobile devices | When a cross-platform attribution link is viewed on a mobile device, attribution is determined by the standard mobile probabilistic modeling logic, not by the cross-platform attribution flow designed for <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#tv-screens">CTV</Anchor>, PC, and consoles. Consequently, mobile impressions will not be eligible for the [equal priority](#step-3-enable-equal-priority-for-crossplatform-impressions), [extended lookback window](#attribution-window), or [household attribution](#household-attribution) that is available for genuine cross-platform impressions. |
-| <span id="agency-permissions"></span>Agency permissions | Agencies cannot toggle “Cross-platform equal attribution priority” on their end. This configuration is directly copied from the advertiser’s settings for the specific ad network. |
+| <span id="attribution-window"></span>Ventana de atribución | Entre 1 y 72 horas, dependiendo del parámetro de ventana de lookback `af_xplatform_vt_lookback` (el valor predeterminado es de 24 horas). |
+| <span id="retargeting"></span>Reorientación | <ul><li>Reatribución: Compatible con cross-platform-to-mobile. No para otras plataformas.</li><li>Reengagement: No compatible</li></ul> |
+| <span id="attribution-method"></span>Método de atribución | Atribución por impresiones mediante el modelado probabilístico |
+| <span id="household-attribution"></span>Atribución por hogar | Compatible. Lo que significa que varias instalaciones dentro del mismo hogar se pueden atribuir a la misma impresión de anuncios multiplataforma. |
+| <span id="reporting"></span>Reportes | <ul><li>Las instalaciones multiplataforma están disponibles en los dashboards y reportes regulares de AppsFlyer:<ul><li>Datos agregados, <Anchor target="_blank" href="/marketers/es/docs/getting-started-with-appsflyer-dashboards">dashboards</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview">reportes</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">Reportes</Anchor> de raw data</li></ul></li><li>Las impresiones multiplataforma no se muestran en los dashboards a nivel de aplicación. Sin embargo, están disponibles en el <Anchor target="_blank" href="/marketers/es/docs/data-locker-advertiser-reports#user-journey">reporte de engagements multiplataforma</Anchor> a través de Data Locker.</li><li>Asegúrate de usar convenciones de nomenclatura de parámetros que identifiquen fácilmente tu campaña multiplataforma.</li></ul> |
+| <span id="ip-masking"></span>Enmascaramiento de IP | No se admite el enmascaramiento de IP para engagements multiplataforma, ya que es una característica a nivel de aplicación. Si `ip_masking` está configurado, la instalación no se atribuirá al engagement multiplataforma. |
+| <span id="ctvto-mobile"></span>CTV-to-mobile | Los flujos de atribución de CTV-to-mobile están disponibles solo para [partners integrados](/docs/set-up-cross-platform-links-for-multi-device-campaigns#list-of-ad-networks) que tienen la autorización para realizar campañas multiplataforma. |
+| <span id="cross-platform-attribution-links-in-mobile-devices"></span>Enlaces de atribución multiplataforma en dispositivos móviles | Cuando se visualiza un enlace de atribución multiplataforma en un dispositivo móvil, la atribución se determina por la lógica estándar de modelado probabilístico móvil, no por el flujo de atribución multiplataforma diseñado para <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#tv-screens">CTV</Anchor>, PC y consolas. En consecuencia, las impresiones móviles no serán elegibles para la [misma prioridad](#step-3-enable-equal-priority-for-crossplatform-impressions), [ventana de lookback extendida](#attribution-window) o [atribución por hogar](#household-attribution) que está disponible para impresiones genuinas multiplataforma. |
+| <span id="agency-permissions"></span>Permisos de la agencia | Las agencias no pueden activar ni desactivar la "Misma prioridad de atribución multiplataforma" desde su lado. Esta configuración se copia directamente de la configuración del anunciante para la ad network específica. |
 
-## Discrepancies
+## Discrepancias
 
-AppsFlyer and tvScientific differ in their attribution models. This may cause discrepancies between the tvScientific and AppsFlyer dashboards. See the reasons for discrepancies in the table below:
+AppsFlyer y tvScientific difieren en sus modelos de atribución. Esto puede hacer que surjan discrepancias entre los dashboards de tvScientific y de AppsFlyer. Consulta las razones de las discrepancias en la siguiente tabla:
 
-| Cause | tvScientific | AppsFlyer |
+| Causa | tvScientific | AppsFlyer |
 | --- | --- | --- |
-| Baseline model | Shared-credit attribution model | Last touch attribution model |
-| Lookback window | Up to 30 days | Up to 72 hours |
-| Retargeting | Attribution of both new users (installs) and returning users (re-engagements) | Attribution of new users (installs) only |
-| Cost assignment | Cost is assigned to the impression regardless of the operating system | Cost is assigned to the impression on separate systems for iOS and Android |
+| Modelo de referencia | Modelo de atribución de crédito compartido | Modelo de atribución de último toque |
+| Ventana de lookback | Hasta 30 días | Hasta 72 horas |
+| Reorientación | Atribución tanto de nuevos usuarios (instalaciones) como de usuarios que regresan (re-engagements) | Atribución solo de nuevos usuarios (instalaciones) |
+| Asignación de costos | El costo se asigna a la impresión independientemente del sistema operativo | El costo se asigna a la impresión en sistemas separados para iOS y Android |
 
-## FAQ
+## Preguntas frecuentes
 
 <div id="does-enable-viewthrough-attribution-via-probabilistic-modeling-need-to-be-turned-on" />
 
-<Accordion title="Does Enable view-through attribution via probabilistic modeling need to be turned on?">
+<Accordion title="¿Es necesario habilitar la atribución por impresiones a través del modelado probabilístico?">
 
-No. The Enable view-through attribution via probabilistic modeling toggle in your app settings doesn't need to be turned on for cross-platform view-through attribution to work.
+N.º La opción de habilitar la atribución por impresiones a través del modelado probabilístico de la configuración de tu aplicación no necesita estar activada para que funcione la atribución por impresiones multiplataforma.
 
 </Accordion>
 
 <div id="why-don-t-i-see-impressions-for-my-crossplatform-campaigns-in-the-dashboard" />
 
-<Accordion title="Why don’t I see impressions for my cross-platform campaigns in the dashboard?">
+<Accordion title="¿Por qué no veo impresiones para mis campañas multiplataforma en el dashboard?">
 
-Cross-platform impressions don’t appear in app-level dashboards. This is because one CTV impression can lead to multiple conversions across different apps, and there’s no accurate way to allocate impressions to each app. You can access impression data in the <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-data-via-data-locker#report-types-and-availability">Cross-platform engagements report in Data Locker</Anchor>.
+Las impresiones multiplataforma no se muestran en los dashboards a nivel de aplicación. Esto se debe a que una impresión de CTV puede llevar a múltiples conversiones en diferentes aplicaciones, y no hay una forma precisa de asignar impresiones a cada aplicación. Puede acceder a los datos de impresiones en el <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-data-via-data-locker#tipos-de-reportes-y-disponibilidad">Reporte de engagements multiplataforma en Data Locker</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="01H8V0RV7X8JEVEJ36TJB1X43D=overview app-group-vs-individual-app-%E2%80%93-attribution-logic=how-does-the-attribution-logic-work h_01KANVNVCY6JFTJ1SVK3DGM54C=how-does-the-attribution-logic-work step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution=create-a-onelink-templatefor-cross-platform-attribution h_01HVECG1TZ8B5GH28CZM2186BF=create-a-onelink-templatefor-cross-platform-attribution set-up-crossplatform-attribution=set-up-cross-platform-partner-integration h_01HVECG1TZSDTP0WBG7XYM509G=set-up-cross-platform-partner-integration 01JEKG3V0C75G782RC7CE9DAV2=important h_01HVECG1TZKNG17STSN5XJAF9C=step-2-enable-viewthrough-attribution step-4-create-an%C2%A0attribution-link%C2%A0crossplatform-impression-url=step-4-create-an-attribution-link-crossplatform-impression-url h_01HVECG1TZ6WP257R9D8A105FR=step-4-create-an-attribution-link-crossplatform-impression-url h_01HVECG1TZ3K1EFA22716K2B9X=important-1 h_01K2HBZKX0EJHSVCXJJ97NMVXZ=equal-priority-advanced-setting equal-priority-impact-note=note h_01K2HBZKX0ECJPTQMPPXC3JBVC=note h_01HVED5DJPFR5XCWYDSYCHMCR6=traits-and-limitations h_01HVED5DJPMP3AQDTN3GM77T2F=discrepancies h_01HVED5DJPBPDSZ0AAY1RG8NEZ=faq h_01K4AC2J63B4MBTDGZHH7ACRCG=does-enable-viewthrough-attribution-via-probabilistic-modeling-need-to-be-turned-on why-don%E2%80%99t-i-see-impressions-for-my-crossplatform-campaigns-in-the-dashboard=why-don-t-i-see-impressions-for-my-crossplatform-campaigns-in-the-dashboard h_01K4AC2J63KBF8X20DMNPW1GTK=why-don-t-i-see-impressions-for-my-crossplatform-campaigns-in-the-dashboard" />
+<div data-zendesk-anchors="overview=descripci%C3%B3n-general 01H8V0RV7X8JEVEJ36TJB1X43D=descripci%C3%B3n-general app-group-vs-individual-app-%E2%80%93-attribution-logic=c%C3%B3mo-funciona-la-l%C3%B3gica-de-atribuci%C3%B3n h_01KANVNVCY6JFTJ1SVK3DGM54C=c%C3%B3mo-funciona-la-l%C3%B3gica-de-atribuci%C3%B3n step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution=crea-o-edita-una-plantilla-de-onelink-para-la-atribuci%C3%B3n-multiplataforma h_01HVECG1TZ8B5GH28CZM2186BF=crea-o-edita-una-plantilla-de-onelink-para-la-atribuci%C3%B3n-multiplataforma set-up-crossplatform-attribution=configura-la-integraci%C3%B3n-de-partners-multiplataforma h_01HVECG1TZSDTP0WBG7XYM509G=configura-la-integraci%C3%B3n-de-partners-multiplataforma 01JEKG3V0C75G782RC7CE9DAV2=importante h_01HVECG1TZKNG17STSN5XJAF9C=step-2-enable-viewthrough-attribution step-4-create-an%C2%A0attribution-link%C2%A0crossplatform-impression-url=step-4-create-an-attribution-link-crossplatform-impression-url h_01HVECG1TZ6WP257R9D8A105FR=step-4-create-an-attribution-link-crossplatform-impression-url h_01HVECG1TZ3K1EFA22716K2B9X=importante-1 h_01K2HBZKX0EJHSVCXJJ97NMVXZ=equal-priority-advanced-setting equal-priority-impact-note=nota h_01K2HBZKX0ECJPTQMPPXC3JBVC=nota traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01HVED5DJPFR5XCWYDSYCHMCR6=caracter%C3%ADsticas-y-limitaciones discrepancies=discrepancias h_01HVED5DJPMP3AQDTN3GM77T2F=discrepancias faq=preguntas-frecuentes h_01HVED5DJPBPDSZ0AAY1RG8NEZ=preguntas-frecuentes h_01K4AC2J63B4MBTDGZHH7ACRCG=does-enable-viewthrough-attribution-via-probabilistic-modeling-need-to-be-turned-on why-don%E2%80%99t-i-see-impressions-for-my-crossplatform-campaigns-in-the-dashboard=why-don-t-i-see-impressions-for-my-crossplatform-campaigns-in-the-dashboard h_01K4AC2J63KBF8X20DMNPW1GTK=why-don-t-i-see-impressions-for-my-crossplatform-campaigns-in-the-dashboard" />

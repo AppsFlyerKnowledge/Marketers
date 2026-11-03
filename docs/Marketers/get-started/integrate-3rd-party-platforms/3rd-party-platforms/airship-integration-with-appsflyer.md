@@ -1,5 +1,5 @@
 ---
-title: Airship integration with AppsFlyer
+title: Integración de Airship con AppsFlyer
 metadata:
   keywords:
     - Attribution
@@ -19,76 +19,74 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2015-12-16T11:31:38Z'
-  edited_at: '2026-06-16T11:22:40Z'
+  edited_at: '2026-08-12T11:58:25Z'
   id: 207033976
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207033976-Airship-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/207033976
 ---
-> **At a glance:** Airship, an AppsFlyer integrated partner, provides the world’s leading mobile engagement platform, helping thousands of businesses of all sizes form a direct and lasting connection with their customers. With Airship, companies gain total control of their mobile footprint — apps, wallets, and user-level data — to deliver experiences that get noticed and drive action across mobile or any other customer touch-point.
+> **En resumen:** Airship, partner integrado de AppsFlyer, proporciona la principal plataforma de engagement móvil del mundo y ayuda a miles de empresas de todos los tamaños a establecer una conexión directa y duradera con sus clientes. Con Airship, las empresas obtienen un control total de su presencia móvil —apps, wallets y datos a nivel de usuario— para ofrecer experiencias que llamen la atención e impulsen la acción en móvil o en cualquier otro punto de contacto con el cliente.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up Airship
+## Configuración de Airship
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below:
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación:
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to turn on **Activate partner** to enable the setup of the integration tab's parameters. **The toggle must be on for as long as you work with the partner**.  
-Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
+En la **primera visita** aquí, tendrás que activar **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. **El selector debe estar activado mientras trabajes con el partner**.  
+Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
 
-### General settings
+### Configuración general
 
-Airship connects with AppsFlyer via a unique App Key and Token. If you don't already have them, you can obtain it from Airship to continue with the integration, or see below for instructions how to obtain it.
+Airship se conecta con AppsFlyer mediante una App Key y un token únicos. Si aún no los tienes, puedes obtenerlos en Airship para continuar con la integración o consultar las instrucciones que aparecen más abajo para saber cómo obtenerlos.
 
 ![airship-integration-tab.png](https://files.readme.io/dc33feec09fe551700586b9778a037fa0f5d610224944aea5a0fe56a6d288043-360017400878.png)
 
-**To configure the integration with Airship:**
+**Para configurar la integración con Airship:**
 
-Minimum requirements - AppsFlyer SDK:
+Requisitos mínimos - SDK de AppsFlyer:
 
-* Android – version 2.3.1.18 and above
-* iOS – version 3.3.3 and above
+* Android – versión 2.3.1.18 y superior
+* iOS – versión 3.3.3 y superior
 
-Minimum requirements - Airship SDK - Version 13.1.0 and above.
+Requisitos mínimos: SDK de Airship, versión 13.1.0 y superior.
 
-1. Integrating with Airship requires that the channelid (Airship's unique user identifier) is populated in AppsFlyer's SDK.
+1. La integración con Airship requiere que el channelid (identificador de usuario único de Airship) se complete en el SDK de AppsFlyer.
 
-   * [More on Channel ID for iOS](https://docs.airship.com/platform/ios/segmentation/#airship-channel-ids).
-   * [More on Channel ID for Android](https://docs.airship.com/platform/android/segmentation/#airship-channel-ids).
+   * [Más información sobre el ID de canal para iOS](https://docs.airship.com/platform/ios/segmentation/#airship-channel-ids).
+   * [Más información sobre el ID de canal para Android](https://docs.airship.com/platform/android/segmentation/#airship-channel-ids).
 
-   This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
+   Este parámetro se envía con cada postback y permite la identificación de cada usuario. Para realizar esto debes insertar las siguientes cadenas en el código de tu aplicación:
 
-   > 📘 **Important Note**
+   > 📘 **Nota Importante**
    >
-   > Make sure the lines of code are inserted in the correct place – after Airship SDK is launched and before the start method is called on iOS or Android.
+   > Asegúrate de que las líneas de código se insertan en el lugar correcto: después de iniciar el SDK de Airship y antes de que se llame al método start en iOS o Android.
 
 
    <Tabs>
    <Tab title="Android">
 
-   For more details about the  `setAdditionalData` method, click <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setadditionaldata">here</Anchor>.
+   Para obtener más información sobre el método  `setAdditionalData` method, haz clic <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setadditionaldata">aquí</Anchor>.
 
    ```java
    HashMap<String, Object> customData = new HashMap<String,Object>();
@@ -101,7 +99,7 @@ Minimum requirements - Airship SDK - Version 13.1.0 and above.
 
    <Tab title="iOS">
 
-   For more details about the  `setAdditionalData` method, click <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#customdata">here</Anchor>.
+   Para obtener más información sobre el método  `setAdditionalData` method, haz clic <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#customdata">aquí</Anchor>.
 
    ```objectivec
    let channelID = UAirship.channel().identifier
@@ -111,77 +109,77 @@ Minimum requirements - Airship SDK - Version 13.1.0 and above.
    </Tab>
    </Tabs>
 
-2. Get the App Key from Airship:
-   1. Login to your Airship account at: [go.airship.com](http://go.urbanairship.com/)
-   2. On the left menu, go to **Settings >** **APIs &** **Integrations** and click **Airship API**.
+2. Obtén la App Key de Airship:
+   1. Accede a tu cuenta de Airship en: [go.airship.com](http://go.urbanairship.com/)
+   2. En el menú de la izquierda, ve a **Settings >** **APIs &** **Integrations** y haz clic en **Airship API**.
 
       ![airship-appkey-en_us.png](https://files.readme.io/c33611035d8dcadb73e41a3787690726608bddde55edbc38f34990c03948985d-360017666917.png)
-   3. Copy the App Key.
-   4. In AppsFlyer, paste the App Key in the App Key field.
-3. Get the Token from Airship:
-   1. Login to your Airship account at: [go.airship.com](http://go.urbanairship.com/)
-   2. On the left menu, go to **Settings >** **APIs &** **Integrations** and click **Tokens**.
+   3. Copia la App Key.
+   4. En AppsFlyer, pega la App Key en el campo App Key.
+3. Obtén el token de Airship:
+   1. Accede a tu cuenta de Airship en: [go.airship.com](http://go.urbanairship.com/)
+   2. En el menú de la izquierda, ve a **Settings >** **APIs &** **Integrations** y haz clic en **Tokens**.
 
       ![airship-token-creation-1.png](https://files.readme.io/b0c22d9844dbc93f7dd158a75916eca98404474a65be0c1528f83e6e4ac7b210-360017480697.png)
-   3. Click **Create Token**.
+   3. Haz clic en **Create Token**.
 
       ![airship-token-creation-2.png](https://files.readme.io/656f6f5a6eebe3ccd1a786f6abec62739633e4150722fec41bc1fbdea78f8275-360017549138.png)
-   4. Enter token name and select the role.
-   5. Click **Create token**.
-   6. In AppsFlyer, paste the Token in the **Token Authentication** field.
+   4. Introduce el nombre del token y selecciona el rol.
+   5. Haz clic en **Crear token**.
+   6. En AppsFlyer, pega el Token en el campo **Token Authentication**.
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Airship following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a Airship tras las instalaciones de usuarios y los re-engagements. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 ![urban_airship_msc_new_3.png](https://files.readme.io/394dd47ff26742092f3012e333f137d706f41bc85cd6875013d792ce7f36b01d-360001900305.png)
 
-Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Airship.
+Selecciona **Events attributed to any partner or organic** para enviar postbacks a Airship para cualquier usuario que descargue la app.
 
-Once you have saved the configuration, AppsFlyer sends the following data to Airship for every organic and non-organic install:
+Una vez que hayas guardado la configuración, AppsFlyer envía los siguientes datos a Airship para cada instalación orgánica y no orgánica:
 
-* Device ID (IDFA / Google Advertising ID)
-* Media Source
-* Campaign name
+* ID de dispositivo (IDFA / ID de publicidad de Google)
+* Fuente de medios
+* Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for Airship.
+Los enlaces de atribución no están disponibles para Airship.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for Airship.
+Los permisos no están disponibles para Airship.
 
 </Accordion>
 
-## Set up and manage the attribution data in Airship console
+## Configura y gestiona los datos de atribución en la consola de Airship
 
-In Airship, attributes are key-value pairs that you associate with your audience to help better target them with messages. Use attributes to target audiences with greater specificity than you would with tags.
+En Airship, los atributos son pares clave-valor que asocias con tu audiencia para ayudarte a hacer targeting con mensajes de forma más eficaz. Usa atributos para segmentar audiencias con mayor precisión que con etiquetas.
 
-Configure your AppsFlyer attribution data in Airship by [adding individual attributes to your project](https://docs.airship.com/partners/appsflyer/#setting-attributes-for-integration).
+Configura tus datos de atribución de AppsFlyer en Airship [añadiendo atributos individuales a tu proyecto](https://docs.airship.com/partners/appsflyer/#setting-attributes-for-integration).
 
-<div data-zendesk-anchors="h_01H9FJYKH3V1TZ4GYEKKG46F2S=important h_01H9FJYKH3SWMNC8CRPPDQMCGQ=setting-up-airship h_01H9FJYKH4KQMK2N5BTTFTY076=integration-tab h_01H9FJYKH4NTCNVKBW9XSENFTP=activate-partner h_01H9FJYKH4MMRE57BNEBD0P5NT=general-settings h_01H9FJYKH4H93Q5S41HK7S4RD6=important-note h_01H9FJYKH44F4YQSEPKTGN7EYK=default-postbacks h_01H9FJYKH44S8F34YJ97TE32PM=attribution-link-tab h_01H9FJYKH47DYTR8T197CEXH0Z=cost-tab h_01H9FJYKH46AC5X7F6GAD9MQJG=ad-revenue-tab h_01H9FJYKH4N4T5JTGWHQC0A18Z=permissions-tab h_01H9FJYKH4Q09JSBJ25RRE02Y3=set-up-and-manage-the-attribution-data-in-airship-console" />
+<div data-zendesk-anchors="h_01H9FJYKH3V1TZ4GYEKKG46F2S=importante setting-up-airship=configuraci%C3%B3n-de-airship h_01H9FJYKH3SWMNC8CRPPDQMCGQ=configuraci%C3%B3n-de-airship h_01H9FJYKH4KQMK2N5BTTFTY076=integration-tab activate-partner=activar-socio h_01H9FJYKH4NTCNVKBW9XSENFTP=activar-socio general-settings=configuraci%C3%B3n-general h_01H9FJYKH4MMRE57BNEBD0P5NT=configuraci%C3%B3n-general h_01H9FJYKH4H93Q5S41HK7S4RD6=nota-importante default-postbacks=postbacks-predeterminados h_01H9FJYKH44F4YQSEPKTGN7EYK=postbacks-predeterminados h_01H9FJYKH44S8F34YJ97TE32PM=attribution-link-tab h_01H9FJYKH47DYTR8T197CEXH0Z=cost-tab h_01H9FJYKH46AC5X7F6GAD9MQJG=ad-revenue-tab h_01H9FJYKH4N4T5JTGWHQC0A18Z=permissions-tab set-up-and-manage-the-attribution-data-in-airship-console=configura-y-gestiona-los-datos-de-atribuci%C3%B3n-en-la-consola-de-airship h_01H9FJYKH4Q09JSBJ25RRE02Y3=configura-y-gestiona-los-datos-de-atribuci%C3%B3n-en-la-consola-de-airship" />

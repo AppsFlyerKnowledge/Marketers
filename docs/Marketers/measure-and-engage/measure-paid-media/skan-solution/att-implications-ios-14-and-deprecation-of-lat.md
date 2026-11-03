@@ -1,5 +1,5 @@
 ---
-title: ATT implications (iOS 14+) and deprecation of LAT
+title: Implicaciones de ATT (iOS 14+) y desuso de LAT
 metadata:
   keywords:
     - Advertisers
@@ -16,56 +16,55 @@ x-zendesk:
     - SKAdNetwork (SKAN)
     - Ad Networks
   created_at: '2020-10-07T17:33:35Z'
-  edited_at: '2023-12-06T00:00:59Z'
+  edited_at: '2026-08-12T12:21:11Z'
   id: 360014090597
-  locale: en-us
+  locale: es
   section: SKAN solution
   section_id: 6552135379985
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360014090597-ATT-implications-iOS-14-and-deprecation-of-LAT
+  url: https://support.appsflyer.com/hc/es/articles/360014090597
 ---
-> **At a glance**: Starting iOS 14 iOS uses ATT to determine user privacy preferences and Limit ad tracking (LAT) is deprecated.
+> **En resumen:** A partir de iOS 14, iOS utiliza ATT para determinar las preferencias de privacidad del usuario y la función Limitar seguimiento de anuncios (LAT) queda obsoleta.
 
-### ATT values
+### Valor ATT
 
-* Starting iOS 14: Apple <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> (ATT) provides the status values for app tracking authorization.
-* AppsFlyer gets ATT from the following sources:
-  * AppsFlyer SDK V6+ embedded in the app.
-  * By API from advertisers. For example, S2S API.
-* ATT is available in raw data reports. You need to explicitly request it as follows:
-  * Pull API: Add ATT *to* the additional\_ fields parameter in your Pull API requests.
-  * Export Data page: In the report fields tab, explicitly select ATT.
-  * Data Locker: In the Data Locker configuration page, explicitly add ATT to the field list.
-  * Push API: In the API Access page, explicitly add ATT to the field list.
-* In some cases, ATT is populated by values defined by AppsFlyer. They are indicated by the prefix *af* in the table.
-* If IDFA is not available it is populated with zeros.
+* A partir de iOS 14: Apple <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> (ATT) proporciona los valores de estado para la autorización de seguimiento de aplicaciones.
+* AppsFlyer obtiene ATT de las siguientes fuentes:
+  * AppsFlyer SDK V6+ integrado en la aplicación.
+  * Por API de anunciantes. Por ejemplo, API S2S.
+* ATT está disponible en reportes de raw data. Debes solicitarlo explícitamente de la siguiente manera:
+  * API Pull Agrega ATT *al*parámetro additional\_fields en tus solicitudes de API Pull.
+  * Página de datos exportados: En la pestaña de campos del reporte, selecciona explícitamente ATT.
+  * Observación
+  * API Push En la página de acceso a la API, agrega explícitamente ATT a la lista de campos.
+* En algunos casos, ATT se completa con valores definidos por AppsFlyer. Se indican con el prefijo *af* en la tabla.
+* Si IDFA no está disponible, se completa con ceros.
 
-#### ATT values defined by Apple
+#### Valores ATT definidos por Apple
 
-| ATT status | IDFA availability | Behavior |
+| Estado de ATT | Disponibilidad de IDFA | Comportamiento |
 | --- | --- | --- |
-| not\_determined | In iOS 14-14.4: Available<br /><br />Starting iOS 14.5: Not available | ATT default value |
-| restricted | Not available | This is determined by Apple based on the iTunes account and is not related to user behavior. For example, based on user age, devices controlled by organizations. |
-| denied | Not available | Occurs if any of the following are true:<ul><li>Set after displaying the prompt</li><li>The user turned off *Allow Apps to Request to Track* (master switch at the device level)</li><li>Before installing iOS 14 on the device, LAT was on</li></ul> |
-| authorized | Available | The user explicitly gave consent. |
+| not\_determined | En iOS 14-14.4: Disponible<br /><br />A partir de iOS 14.5: No disponible | Valor predeterminado de ATT |
+| restringido | No disponible | Esto lo determina Apple en función de la cuenta de iTunes y no está relacionado con el comportamiento del usuario. Por ejemplo, en función de la edad del usuario, los dispositivos son controlados por organizaciones. |
+| Denegado | No disponible | Ocurre si se cumple alguna de las siguientes situaciones:<ul><li>Se estableció después de mostrar el aviso.</li><li>El usuario desactivó *Permitir que las aplicaciones soliciten el seguimiento* (interruptor maestro a nivel de dispositivo).</li><li>Antes de instalar iOS 14 en el dispositivo, LAT estaba activado.</li></ul> |
+| autorizado | disponible | El usuario dio su consentimiento explícito. |
 
-#### Additional ATT values defined by AppsFlyer
+#### Valores ATT adicionales definidos por AppsFlyer
 
-| ATT status | Remark | IDFA availability |
+| Estado de ATT | Nota | Disponibilidad de IDFA |
 | --- | --- | --- |
-| af\_unknown | ATT value was reported by the advertiser but is not a known value per the <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> specification | iOS version-dependent |
-| af\_authorized | IDFA use is permitted for one of the following reasons:<ul><li>Device iOS version: prior to iOS 14.</li><li>The event reported contained IDFA but not ATT. For example, an app having SDK V5.X on a device running an iOS version before iOS 14.</li></ul> | Available |
-| af\_unavailable | <ul><li>ATT was not reported in the event by the advertiser and IDFA is not available.</li><li>AppsFlyer SDK version V5.X is unable to get ATT and did not get IDFA</li></ul> | Not available |
+| af\_unknown | El anunciante reportó el valor ATT pero no es un valor conocido según la especificación <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> | Depende de la versión de iOS |
+| af\_authorized | El uso de IDFA está permitido por una de las siguientes razones:<ul><li>Versión iOS del dispositivo: anterior a iOS 14.</li><li>El evento reportado contenía IDFA pero no ATT. Por ejemplo, una aplicación que tiene SDK V5.X en un dispositivo que ejecuta una versión de iOS anterior a iOS 14.</li></ul> | disponible |
+| af\_unavailable | <ul><li>El anunciante no reportó ATT en el evento y el IDFA no está disponible.</li><li>La versión V5.X del SDK de AppsFlyer no puede obtener ATT y no obtuvo IDFA</li></ul> | No disponible |
 
-### Is LAT in iOS—considerations and how LAT translates to ATT in iOS 14
+### ¿LAT está en iOS? Consideraciones y cómo se traduce LAT a ATT en iOS 14
 
-| iOS version | Use of Is LAT |
+| Versión de iOS | Uso de Is LAT |
 | --- | --- |
-| Until iOS 13 | <Image alt="IsLatTrue_us-en.png" src="https://files.readme.io/28440075d9c3913a148228a85ede15048d76f24913b48799ec4de3952d8f33e7-360011938457.png" width="221px" /><br /><br />If true, the user-enabled Limit Ad Tracking, IDFA is not available. |
-| Starting in iOS 14 | <Anchor target="_blank" href="https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-isadvertisingtrackingenabled">Apple deprecated I*s LAT*</Anchor>. Disregard the *Is LAT* value and use ATT instead. |
+| Hasta iOS 13 | <Image alt="IsLatTrue_us-en.png" src="https://files.readme.io/28440075d9c3913a148228a85ede15048d76f24913b48799ec4de3952d8f33e7-360011938457.png" width="221px" /><br /><br />Si es verdadero, el Limit Ad Tracking (IDFA) habilitado para el usuario no está disponible. |
+| A partir de iOS 14 | <Anchor target="_blank" href="https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-isadvertisingtrackingenabled">Apple dejó obsoleto el sistema *Is LAT*</Anchor>. Ignora el valor *Is LAT* y utiliza ATT en su lugar. |
 
-**How LAT translates to ATT in iOS 14**
+**Cómo se traduce LAT a ATT en iOS 14**
 
 [<Image alt="LATtoiOS14.5.png" src="https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png" width="522px" />](https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png)
 
-<div data-zendesk-anchors="h_01HGX9468F5YF0KSHB3S49CW2Y=att-values h_01HGX9468F0TFTMKP1W2J6GEBV=att-values-defined-by-apple h_01HGX96RG9NX9QM2WTX8789DDR=additional-att-values-defined-by-appsflyer is-lat-in-ios%E2%80%94considerations-and-how-lat-translates-to-att-in-ios-14=is-lat-in-iosconsiderations-and-how-lat-translates-to-att-in-ios-14 h_01HGX9468F0VTYNXBJRSTNBCMB=is-lat-in-iosconsiderations-and-how-lat-translates-to-att-in-ios-14" />
+<div data-zendesk-anchors="att-values=valor-att h_01HGX9468F5YF0KSHB3S49CW2Y=valor-att att-values-defined-by-apple=valores-att-definidos-por-apple h_01HGX9468F0TFTMKP1W2J6GEBV=valores-att-definidos-por-apple additional-att-values-defined-by-appsflyer=valores-att-adicionales-definidos-por-appsflyer h_01HGX96RG9NX9QM2WTX8789DDR=valores-att-adicionales-definidos-por-appsflyer is-lat-in-ios%E2%80%94considerations-and-how-lat-translates-to-att-in-ios-14=lat-est%C3%A1-en-ios-consideraciones-y-c%C3%B3mo-se-traduce-lat-a-att-en-ios-14 h_01HGX9468F0VTYNXBJRSTNBCMB=lat-est%C3%A1-en-ios-consideraciones-y-c%C3%B3mo-se-traduce-lat-a-att-en-ios-14" />

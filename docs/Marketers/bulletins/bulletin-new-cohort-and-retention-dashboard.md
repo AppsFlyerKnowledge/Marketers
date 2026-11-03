@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: New Cohort and Retention dashboard'
+title: 'Boletín: nuevo dashboard de cohorte y retención'
 metadata:
   keywords:
     - Cohort
@@ -14,44 +14,43 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2024-01-01T09:21:41Z'
-  edited_at: '2024-01-02T00:01:00Z'
+  edited_at: '2026-10-20T03:55:46Z'
   id: 21334347923729
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/21334347923729-Bulletin-New-Cohort-and-Retention-dashboard
+  url: https://support.appsflyer.com/hc/es/articles/21334347923729
 ---
-| **What's new** | The <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">cohort dashboard</Anchor> has been redesigned and improved. It also now includes retention data. |
+| **¿Qué hay de nuevo?** | El <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard">dashboard de cohorte</Anchor> se ha rediseñado y mejorado. Ahora también incluye datos de retención. |
 | --- | --- |
-| **Effective date** | December 26, 2023 |
-| **Where** | <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort dashboard</Anchor> (now called Cohort and Retention dashboard) |
-| **What you must know** | <ul><li>Retention dashboard will be deprecated (date to be decided).</li><li>We recommend using the new and improved Cohort and Retention dashboard.</li><li>For those used to using the old Cohort dashboard, please be aware that as one of the improvements to the dashboard, the old requirement to select a metric and function has largely been replaced. Now, except in a few cases, you only need to select a metric. You can use the table in the mapping section that follows to help you align your previous cohort reports in the new UI.</li></ul> |
+| **Fecha de entrada en vigor** | 26 de diciembre de 2023 |
+| **Donde** | <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard">Dashboard de cohorte</Anchor> (ahora llamado dashboard de cohorte y retención) |
+| **Lo que debes saber** | <ul><li>El dashboard de retención quedará obsoleto (fecha por decidir).</li><li>Recomendamos utilizar el nuevo y mejorado dashboard de Cohorte y Retención.</li><li>Si estás acostumbrado a usar el antiguo dashboard de Cohorte, ten en cuenta que, como parte de las mejoras del dashboard, el requisito anterior de seleccionar una métrica y una función se ha sustituido en gran medida. Ahora, salvo en unos pocos casos, solo tienes que seleccionar una métrica. Puedes usar la tabla de la siguiente sección de asignación para ayudarte a alinear tus reportes de cohorte anteriores en la nueva interfaz de usuario.</li></ul> |
 
 <div id="mapping-metrics-from-the-old-cohort-dashboard-ui-to-the-new-ui" />
 
-<Accordion title="Mapping metrics from the old cohort dashboard UI to the new UI">
+<Accordion title="Asignación de métricas de la interfaz de usuario del antiguo dashboard de cohorte a la nueva interfaz">
 
-| Previous metric | Previous function | Previous "per user" | New metric | New function |
+| Métrica anterior | Función anterior | "Por usuario" anterior | Nueva métrica | Nueva función |
 | --- | --- | --- | --- | --- |
-| Revenue | Sum | no | Revenue sum ($) [or other currency] | N/A |
-| ROAS | Rate | N/A | ROAS | N/A |
-| Revenue | Sum | yes | ARPU ($) [or other currency] | N/A |
-| ROI | Rate | N/A | ROI | N/A |
-| Revenue | Count | no | Revenue count | N/A |
-| Revenue | Count | yes | Average revenue count | N/A |
-| Sessions | Count | no | Sessions count | N/A |
-| Sessions | Count | Yes | Average sessions | N/A |
-| Sessions | Unique Users | Yes | Retention | N/A |
-| Uninstalls | Count | no | Uninstalls count | N/A |
-| Uninstalls | Count | yes | Average uninstalls count | N/A |
-| InApp event name | Count | no | InApp event name | Count |
-| InApp event name | Count | yes | InApp event name | Average count |
-| InApp event name | Revenue | no | InApp event name | Revenue |
-| InApp event name | Revenue | yes | InApp event name | Average InApp revenue |
-| InApp event name | Unique Users | N/A | InApp event name | Unique users |
-| InApp event name | In App Conversions | N/A | InApp event name | Conversions |
-| InApp event name | eCPA | N/A | InApp event name | eCPA |
+| Ingresos | Suma | no | Suma de ingresos ($) [u otra moneda] | No aplica |
+| ROAS (Retorno de la Inversión Publicitaria) | Rate | No aplica | ROAS (Retorno de la Inversión Publicitaria) | No aplica |
+| Ingresos | Suma | Sí | ARPU ($) [u otra moneda] | No aplica |
+| ROI (Retorno de la Inversión) | Rate | No aplica | ROI (Retorno de la Inversión) | No aplica |
+| Ingresos | Contar | no | Recuento de ingresos | No aplica |
+| Ingresos | Contar | Sí | Recuento de ingresos promedio | No aplica |
+| Sesiones | Contar | no | Recuento de sesiones | No aplica |
+| Sesiones | Contar | Sí | Sesiones promedio | No aplica |
+| Sesiones | Usuarios únicos | Sí | Retencion | No aplica |
+| Desinstalar | Contar | no | Recuento de desinstalaciones | No aplica |
+| Desinstalar | Contar | Sí | Recuento promedio de desinstalaciones | No aplica |
+| Nombre del evento in-app | Contar | no | Nombre del evento in-app | Contar |
+| Nombre del evento in-app | Contar | Sí | Nombre del evento in-app | Recuento promedio |
+| Nombre del evento in-app | Ingresos | no | Nombre del evento in-app | Ingresos |
+| Nombre del evento in-app | Ingresos | Sí | Nombre del evento in-app | Ingresos medios in-app |
+| Nombre del evento in-app | Usuarios únicos | No aplica | Nombre del evento en la aplicación | Usuarios únicos |
+| Nombre del evento en la aplicación | Conversiones en la aplicación | No aplica | Nombre del evento en la aplicación | Conversiones |
+| Nombre del evento en la aplicación | Costo Efectivo por Adquisición (eCPA) | No aplica | Nombre del evento en la aplicación | Costo Efectivo por Adquisición (eCPA) |
 
 </Accordion>
 

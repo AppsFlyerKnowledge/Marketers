@@ -1,5 +1,5 @@
 ---
-title: Data Collaboration Platform (DCP) - Add connections
+title: Plataforma de colaboración de datos - Añadir conexiones
 metadata:
   keywords:
     - Marketers
@@ -12,28 +12,27 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2024-04-28T13:26:59Z'
-  edited_at: '2026-07-27T13:03:23Z'
+  edited_at: '2026-08-12T11:53:36Z'
   id: 24603890457617
-  locale: en-us
+  locale: es
   section: Data Collaboration Platform
   section_id: 26230608274065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/24603890457617-Data-Collaboration-Platform-DCP-Add-connections
+  url: https://support.appsflyer.com/hc/es/articles/24603890457617
 ---
-> **At a glance:** Set up DCP connections to connect your data sources, enrich your data, and export audiences to cloud storage and media partners.
+> **En resumen:** Configura las conexiones de DCP para conectar tus fuentes de datos, enriquecer tus datos y exportar audiencias al almacenamiento en la nube y a partners de medios.
 
-## About DCP connections
+## Sobre las conexiones DCP
 
-Connections determine how DCP ingests your data and exports your audiences. After <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">setting up your cloud services</Anchor>, connect them to DCP using the **Manage connections** modal. The following connection types are available:
+Las conexiones determinan cómo DCP ingiere tus datos y exporta tus audiencias. Después de <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">configurar tus servicios en la nube</Anchor>, conéctalos a DCP mediante la ventana modal **Gestionar conexiones**. Están disponibles los siguientes tipos de conexión:
 
-* [**Source connections**](#create-source-connections): for ingesting your first-party data into DCP from cloud storage or a data warehouse.
-* [**Cloud storage connections**](#create-cloud-storage-connections): for exporting your audiences to your Amazon S3 or Google Cloud Storage (GCS) buckets.
-* [**Media partner connections**](#create-media-partner-connections): for sending your audiences to advertising platforms for activation.
-* [**Data & Identity connections**](#create-data-identity-connections): for unifying fragmented user data to improve match rates and expand partner-side audiences.
+* [**Conexiones de fuentes**](#create-source-connections): para ingerir tus datos propios en DCP desde un almacenamiento en la nube o un data warehouse.
+* [**Conexiones de almacenamiento en la nube**](#create-cloud-storage-connections): para exportar tus audiencias a tus buckets de Amazon S3 o Google Cloud Storage (GCS).
+* [**Conexiones con partners de medios**](#create-media-partner-connections): para enviar tus audiencias a plataformas publicitarias para su activación.
+* [**Conexiones de datos e identidad**](#create-data-identity-connections) : para unificar datos fragmentados de usuarios, mejorar las tasas de coincidencia y ampliar las audiencias del partner.
 
-DCP supports different cloud services for different connection directions. Use the table below to see which services you can use for each connection type:
+DCP admite distintos servicios en la nube según el tipo de conexión. Consulta la siguiente tabla para ver qué servicios puedes utilizar para cada tipo de conexión:
 
-| Cloud service | Source (inbound) | Cloud storage export (outbound) |
+| Servicios en la nube | Fuente (de entrada) | Exportación de almacenamiento en la nube (salida) |
 | --- | --- | --- |
 | Amazon S3 | ✓ | ✓ |
 | Google Cloud Storage (GCS) | ✓ | ✓ |
@@ -41,57 +40,57 @@ DCP supports different cloud services for different connection directions. Use t
 | Snowflake | ✓ | - |
 | Salesforce Cloud/CRM | ✓ | - |
 
-For Amazon S3 and Google Cloud Storage, a single connection serves as both a source (inbound) and a cloud storage export (outbound) destination. Creating a source connection to S3 or GCS automatically creates a matching cloud storage (export) connection, and vice versa.
+En Amazon S3 y Google Cloud Storage, una única conexión funciona tanto como fuente (entrada) como destino de exportación al almacenamiento en la nube (salida). Al crear una conexión de fuente para S3 o GCS, también se crea automáticamente la conexión correspondiente de almacenamiento en la nube (exportación), y viceversa.
 
 <div id="create-source-connections" />
 
-<Accordion title="Create source connections">
+<Accordion title="Crear conexiones de fuentes">
 
-Create source connections to bring first-party data into DCP.
+Crea conexiones de fuentes para incorporar tus datos propios a DCP.
 
-**To create a source connection:**
+**Para crear una conexión de fuentes:**
 
-1. In AppsFlyer, go to **Collaborate** > **Data Clean Room**.
-2. Click **Manage connections** in the top-right corner.
-3. Go to the **Source** tab and click **+ New connection**.  
+1. En AppsFlyer, ve a **Colaborar** > **Data Clean Room**.
+2. Haz clic en **Gestionar conexiones**, en la esquina superior derecha.
+3. Ve a la pestaña **Fuente** y haz clic en **+ Nueva conexión**.  
    <Image alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
-4. Continue with the [Cloud service connections for source data instructions](#cloud-service-connections-for-source-data) below.
+4. Continúa con las [instrucciones para las conexiones de servicios en la nube para datos de la fuente](#conexiones-de-servicios-en-la-nube-para-datos-de-la-fuente) que aparecen a continuación.
 
-You can also create a source connection directly when setting up a source. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">Create and manage sources</Anchor> for instructions.
+También puedes crear una conexión de la fuente directamente al configurar una fuente. Consulta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">Crear y gestionar orígenes</Anchor> para obtener instrucciones.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Creating an incoming Source connection to Amazon S3 or GCS automatically creates a matching outgoing Cloud storage connection (and vice versa). Deleting Amazon S3 or GCS connection also automatically deletes the other. Since it's really one underlying connection, removing it from either tab removes it everywhere it's used.
+> Al crear una conexión de fuentes de entrada para Amazon S3 o GCS, también se crea automáticamente la conexión de salida correspondiente de almacenamiento en la nube (y viceversa). Al eliminar una conexión de Amazon S3 o GCS, también se elimina automáticamente la otra. Como en realidad se trata de una única conexión, al eliminarla desde cualquiera de las pestañas se elimina de todos los lugares donde se utiliza.
 
-#### Cloud service connections for source data
+#### Conexiones de servicios en la nube para datos de la fuente
 
-Source connections are for connecting your data sources securely to DCP. From the **New connection** dialog, select your cloud service and complete the details for your provider:
+Las conexiones de fuentes sirven para conectar de forma segura tus fuentes de datos a DCP. En **Nueva conexión**, selecciona tu servicio en la nube y completa la información correspondiente a tu proveedor.
 
-**BigQuery:** In the **New connection** dialog, enter the BigQuery **project ID** for the project that contains your source data. You can find this on the BigQuery page of your Google Cloud Console.
+**BigQuery:** En **Nueva conexión**, introduce el **ID del proyecto** de BigQuery correspondiente al proyecto que contiene tus datos de la fuente. Puedes encontrarlo en la página de BigQuery de tu Google Cloud Console.
 
-**Snowflake:** In the **New connection** dialog, enter the **Snowflake account ID** and **region** for the account that contains your source data. To find this, click the account name at the bottom-left of your Snowflake console:
+**Snowflake:** En **Nueva conexión**, introduce el **ID de la cuenta de Snowflake** y la **región** de la cuenta que contiene tus datos de la fuente. Para encontrarlo, haz clic en el nombre de la cuenta en la esquina inferior izquierda de la consola de Snowflake:
 
-**ACCOUNTADMIN** > **Account** > hover over the relevant account > **Copy account identifier**. See the <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">Snowflake documentation</Anchor> for details.
+**ADMINISTRADOR DE CUENTA** > **Cuenta** > pasa el cursor sobre la cuenta relevante > **Copiar identificador de cuenta**. Consulta la <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">documentación de Snowflake</Anchor> para obtener más información.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Look for the ID labeled **Locator**. This is **not** the same ID used to create outbound Snowflake connections.
+> Busca el ID con la etiqueta **Locator**. Este **no** es el mismo ID que se utiliza para crear conexiones de salida de Snowflake.
 
-**Amazon S3 and GCS:** In the **New connection** dialog, enter the name of the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound">bucket you created</Anchor> for the exclusive use of the AppsFlyer Data Clean Room (DCR).
+**Amazon S3 and GCS:** En **Nueva conexión**, introduce el nombre del <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound">bucket que has creado</Anchor> para uso exclusivo de AppsFlyer Data Clean Room (DCR).
 
-**Salesforce Cloud/CRM:** See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">how to set up a Salesforce connection</Anchor>.
+**Salesforce Cloud/CRM:** Consulta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">cómo configurar una conexión con Salesforce</Anchor>.
 
-#### Local file connection
+#### Conexión de archivo local
 
-Local file system connections let you upload data files directly from your computer into DCP. This option is typically used for testing only and isn't recommended for ongoing or large-scale data ingestion.
+Las conexiones de archivos locales te permiten cargar archivos de datos directamente desde tu ordenador a DCP. Esta opción suele utilizarse únicamente para realizar pruebas y no se recomienda para procesos continuos o de gran volumen de ingesta de datos.
 
 <div id="set-up-a-local-file-connection" />
 
-<Accordion title="Set up a local file connection">
+<Accordion title="Configurar una conexión de archivo local">
 
-A local file connection is used to test the platform using a sample file. It lets you get familiar with DCP functionality before starting to share data. Keep in mind that it isn't recommended for sharing data, has a data retention limit of 14 days, and doesn't support automation processes.
+Se utiliza una conexión de archivo local para probar la plataforma utilizando un archivo de muestra. Te permite familiarizarte con las funcionalidades de DCP antes de empezar a compartir datos. Ten en cuenta que no se recomienda para compartir datos, tiene un periodo de conservación de datos limitado a 14 días y no admite procesos de automatización.
 
-A local file connection can be <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files">set up during source creation</Anchor>.
+Una conexión de archivo local puede <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#ubicación-de-la-fuente-como-archivos-locales">configurarse durante la creación de la fuente</Anchor>.
 
 </Accordion>
 
@@ -99,70 +98,67 @@ A local file connection can be <Anchor target="_blank" href="/marketers/docs/dat
 
 <div id="create-cloud-storage-connections" />
 
-<Accordion title="Create cloud storage connections">
+<Accordion title="Crear conexiones de almacenamiento en la nube">
 
-Cloud storage connections let you automatically export your DCP audiences to your Amazon S3 or Google Cloud Storage (GCS) bucket after each audience update.
+Las conexiones de almacenamiento en la nube te permiten exportar automáticamente tus audiencias de DCP a tu bucket de Amazon S3 o Google Cloud Storage (GCS) después de cada actualización de la audiencia.
 
-**To create a cloud storage connection:**
+**Para crear una conexión de almacenamiento en la nube:**
 
-1. In AppsFlyer, go to **Collaborate** > **Data Clean Room**.
-2. Click **Manage connections** in the top-right corner.
-3. Go to the **Cloud storage** tab and click **+ New connection**.  
+1. En AppsFlyer, ve a **Colaborar** > **Data Clean Room**.
+2. Haz clic en **Gestionar conexiones**, en la esquina superior derecha.
+3. Ve a la pestaña **Almacenamiento en la nube** y haz clic en **+ Nueva conexión**.  
    <Image alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
-4. The **New cloud storage connection** modal opens.
-5. In the **New cloud storage connection** modal, select your cloud provider: **Google Cloud Storage** or **Amazon Simple Storage**.
-6. Enter your bucket name:
-   * **GCS:** Enter the GCS bucket name in the format `gs://my-bucket`.
-   * **S3:** Enter the S3 bucket name.
-7. Click **Test connection** to verify that DCP can connect to your bucket.
-8. Click **Save**. The new connection appears under **Your cloud storage connections** in the **Cloud storage** tab.
+4. Se abre la ventana **Nueva conexión de almacenamiento en la nube**.
+5. En la ventana **Nueva conexión de almacenamiento en la nube**, selecciona tu proveedor de servicios en la nube: **Google Cloud Storage** o **Amazon Simple Storage**.
+6. Introduce el nombre de tu bucket:
+   * **GCS:** Introduce el nombre del bucket de GCS con el formato `gs://my-bucket`.
+   * **S3:** Introduce el nombre del bucket de S3.
+7. Haz clic en **Probar conexión** para verificar que DCP puede conectarse a tu bucket.
+8. Haz clic en **Guardar**. La nueva conexión aparece en **Tus conexiones de almacenamiento en la nube**, dentro de la pestaña **Almacenamiento en la nube**.
 
-You can also create a cloud storage connection directly from the audience builder. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">Build and activate audiences</Anchor> for instructions.
+También puedes crear una conexión de almacenamiento en la nube directamente desde el creador de audiencias. Consulta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">Crear y activar audiencias</Anchor> para obtener instrucciones.
 
 <div id="understand-export-path" />
 
-<Accordion title="Understand the export path">
+<Accordion title="Comprender la ruta de exportación">
 
-Each time an audience is exported, DCP writes it to your bucket using a fixed, predictable path:
+Cada vez que se exporta una audiencia, DCP la escribe en tu bucket siguiendo una ruta fija y predecible:
 
 ```
 <bucket>/dcp-output/audiences/<collaboration-id>/t=<audience_name>_<id>/dt=<YYYY-MM-DD>/v=<version>/<file>.csv
 ```
 
-**Example folder contents for one delivery:**
+**Ejemplo del contenido de una carpeta para una entrega:**
 
 ```
-s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f5d3e/t=example_audience_6148a3/dt=2026-07-18/v=1/
-  ├── part-00000-a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c-c000.csv
-  ├── part-00001-a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c-c000.csv
-  └── _SUCCESS
+s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f5d3e/t=example_audience_6148a3/dt=2026-07-18/v=1/\n  ├── part-00000-a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c-c000.csv\n  ├── part-00001-a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c-c000.csv\n  └── _SUCCESS
 ```
 
-| Path segment | What it means |
+| Segmento de la ruta | Qué significa |
 | --- | --- |
-| &lt;bucket> | Your connected S3 or GCS bucket. |
-| dcp-output/audiences/ | Fixed folder that DCP creates automatically for all audience exports. |
-| &lt;collaboration-id> | The unique ID of the collaboration this audience belongs to. You can find it in the collaboration's URL in DCP. |
-| t=&lt;audience\_name>\_&lt;id> | The audience name (spaces and special characters replaced with underscores), plus a unique ID. This ensures a deleted-and-recreated audience with the same name never overwrites or collides with older files. |
-| dt=&lt;YYYY-MM-DD> | The delivery date. |
-| v=&lt;version> | A version number for this audience's exports. It increases with each new delivery. |
-| part-NNNNN-&lt;job-id>-c000.csv | One of the output files for this delivery — see File format and splitting below. |
-| \_SUCCESS | An empty marker file written once the export finishes writing all part files. |
+| Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla. | Tu bucket conectado de S3 o GCS. |
+| dcp-output/audiencias/ | Carpeta fija que DCP crea automáticamente para todas las exportaciones de audiencias. |
+| Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla. | El ID único de la colaboración a la que pertenece esta audiencia. Puedes encontrarlo en la URL de la colaboración en DCP. |
+| t=\_ | El nombre de la audiencia (con los espacios y caracteres especiales sustituidos por guiones bajos), además de un ID único. Esto garantiza que una audiencia eliminada y creada de nuevo con el mismo nombre nunca sobrescriba ni entre en conflicto con archivos anteriores. |
+| dt= | La fecha de entrega. |
+| v= | Un número de versión para las exportaciones de esta audiencia. Aumenta con cada nueva entrega. |
+| part-NNNNN--c000.csv | Uno de los archivos de salida de esta entrega; consulta “Formato de archivo y división” más abajo. |
+| \_SUCCESS | Un archivo marcador vacío que se genera cuando la exportación termina de escribir todos los archivos parciales. |
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> This folder structure is created and managed automatically. Don't rename or restructure it manually — any automated process reading these files should be built to follow this path pattern, and should wait for \_SUCCESS to appear before processing the part files, to avoid reading a partial delivery.
+> Esta estructura de carpetas se crea y gestiona automáticamente. Cualquier proceso automatizado que lea estos archivos debe seguir este patrón de ruta y esperar a que aparezca \_SUCCESS antes de procesar los archivos parciales para evitar leer una entrega incompleta.
 
-**File format and splitting**
+**Formato de archivo y división**
 
-* Audiences are always exported as CSV files, uncompressed, with two columns: `value` (the identifier) and `taxonomy` (the identifier type).
-* Larger audiences may be delivered as multiple files rather than a single file, numbered `part-00000`, `part-00001`, and so on. By default, each file contains up to approximately 500,000 rows.
-* A single file can contain a mix of identifier types in the same rows — filter using the `taxonomy` column for the identifiers you need. Common taxonomy values include `customer_id`, `mobile_ad_id`, `hashed_email`, and `hashed_phone_number_without_plus_sha256`.
+* Las audiencias siempre se exportan como archivos CSV sin comprimir, con dos columnas: `value` (el identificador) y `taxonomy` (el tipo de identificador).
+* Las audiencias de mayor tamaño pueden entregarse en varios archivos en lugar de uno solo, numerados como `part-00000`, `part-00001`, etc. De forma predeterminada, cada archivo contiene hasta aproximadamente 500.000 filas.
+* Un único archivo puede contener una combinación de tipos de identificadores en las mismas filas. Filtra utilizando la columna `taxonomy` para obtener los identificadores que necesitas. Entre los valores habituales de la taxonomía se incluyen `customer_id`, `mobile_ad_id`, `hashed_email` y `hashed_phone_number_without_plus_sha256`.
 
-**Example:**
+**Ejemplo:**
 
 ```
-value,taxonomy
+valor,taxonomy
 6f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c,customer_id
 1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d,mobile_ad_id
 b7e2c9a1f4d6e8b0a2c4d6e8f0a1b3c5d7e9f1a3b5c7d9e0f2a4b6c8d0e2f4a6,hashed_email
@@ -175,43 +171,43 @@ c1d3e5f7a9b1c3d5e7f9a1b3c5d7e9f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3,hashed_phone_nu
 
 <div id="create-media-partner-connections" />
 
-<Accordion title="Create media partner connections">
+<Accordion title="Crear conexiones con partners de medios">
 
-Outbound media partner connections let you securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Media partners are the main destination for audience activation. Learn how to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-media-partner-connections">set up specific media partner connections</Anchor>.
+Las conexiones de salida con partners de medios te permiten conectar de forma segura tus audiencias de DCP con partners de medios compatibles para activar campañas personalizadas en sus plataformas. Los partners de medios son el principal destino para la activación de audiencias. Descubre cómo <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-media-partner-connections">configurar conexiones específicas con partners de medios</Anchor>.
 
-**To create a media partner connection:**
+**Para crear una conexión con un partner de medios:**
 
-1. In AppsFlyer, go to **Collaborate** > **Data Clean Room**.
-2. Click **Manage connections** in the top-right corner.
-3. Go to the **Media partners** tab and click **+ New connection**. If you already have existing connections, you'll see them listed under **Media partners**.
-4. From the **New media partner connection** dialog, select the relevant media partner.
-5. Enter a connection name.
-6. Log in to the media partner account with your credentials and follow their instructions to enable AppsFlyer access.
-7. Click **Select account ID** and select the relevant account for this connection.
-8. Click **Save**. The new connection is added to the list of partners.
+1. En AppsFlyer, ve a **Colaborar** > **Data Clean Room**.
+2. Haz clic en **Gestionar conexiones**, en la esquina superior derecha.
+3. En AppsFlyer, ve a **Colaborar** > **Data Clean Room**. Si ya tienes conexiones creadas, aparecerán en la lista de **Partners de medios**.
+4. En **Nueva conexión con un partner de medios**, selecciona el partner de medios correspondiente.
+5. Ingresa un nombre de conexión.
+6. Inicia sesión en la cuenta del partner de medios con tus credenciales y sigue sus instrucciones para conceder acceso a AppsFlyer.
+7. Haz clic en **Seleccionar ID de cuenta** y selecciona la cuenta relevante para esta conexión.
+8. Haz clic en **Guardar**. La nueva conexión se añade a la lista de partners.
 
-You can also create a media partner connection directly from the audience builder. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">Build and activate audiences</Anchor> for instructions.
+También puedes crear una conexión con un partner de medios directamente desde el creador de audiencias. Consulta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">Crear y activar audiencias</Anchor> para obtener instrucciones.
 
 </Accordion>
 
 <div id="create-data-identity-connections" />
 
-<Accordion title="Create Data & Identity connections">
+<Accordion title="Crear conexiones de datos e identidad">
 
-Data & Identity connections unify fragmented user data to improve match rates with activation partners. This enables larger partner-side audiences and more impact from your campaigns.
+Las conexiones de datos e identidad unifican datos fragmentados de usuarios para mejorar las tasas de coincidencia con los partners de activación. Esto permite ampliar las audiencias del partner y aumentar el impacto de tus campañas.
 
 #### ID5
 
-<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">Enrich your first-party data with ID5 identifiers</Anchor> to unify fragmented user data, improve match rates with activation partners, and increase partner-side audience size.
+<Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">Enriquece tus datos propios con identificadores de ID5</Anchor> para unificar datos fragmentados de usuarios, mejorar las tasas de coincidencia con los partners de activación y aumentar el tamaño de las audiencias del partner.
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">DCP - Set up your cloud services</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">DCP - Build and activate audiences</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-media-partner-connections">DCP - Media partner connections</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">DCP - Enrich sources with ID5</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP) guide</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">DCP: configurar tus servicios en la nube</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">DCP: crear y activar audiencias</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-media-partner-connections">DCP: conexiones con partners de medios</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">DCP: enriquecer orígenes con ID5</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-guide">Guía de la plataforma de colaboración de datos (DCP)</Anchor>
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01KXX80P91T92MH8KEGHVG3QP1=about-dcp-connections h_01KXX80P913HRREW60M6S316PP=create-source-connections h_01KY4HCGBBCD5FZD9RYNNVDYRC=note source-cloud-service-connections=cloud-service-connections-for-source-data h_01KXX80P914VFMH1T6FQF9KC31=important h_01KXX80P91EFCGH3MYV729TGTH=local-file-connection h_01KXX80P91HG17YTWE15ZWTBZ8=set-up-a-local-file-connection h_01KXX80P91F8TG9FR1XQ7QVNCY=create-cloud-storage-connections h_01KYEP2MX3KQ3BAP7VRSGYTFBB=understand-export-path h_01KYEP2MX3SHFCECTSTHV9RMS4=note-1 h_01KXX80P91BMB45ETZQSKWJWZB=create-media-partner-connections h_01KXX80P91PS35EG5P5YJB9EHC=create-data-identity-connections h_01KXX80P92BXD3B7ZVT1FC5HCF=id5 h_01KXX80P92WMPPRGD7321TBS7Y=see-also" />
+<div data-zendesk-anchors="about-dcp-connections=sobre-las-conexiones-dcp h_01KXX80P91T92MH8KEGHVG3QP1=sobre-las-conexiones-dcp h_01KXX80P913HRREW60M6S316PP=create-source-connections h_01KY4HCGBBCD5FZD9RYNNVDYRC=nota source-cloud-service-connections=conexiones-de-servicios-en-la-nube-para-datos-de-la-fuente cloud-service-connections-for-source-data=conexiones-de-servicios-en-la-nube-para-datos-de-la-fuente h_01KXX80P914VFMH1T6FQF9KC31=importante local-file-connection=conexi%C3%B3n-de-archivo-local h_01KXX80P91EFCGH3MYV729TGTH=conexi%C3%B3n-de-archivo-local h_01KXX80P91HG17YTWE15ZWTBZ8=set-up-a-local-file-connection h_01KXX80P91F8TG9FR1XQ7QVNCY=create-cloud-storage-connections h_01KYEP2MX3KQ3BAP7VRSGYTFBB=understand-export-path h_01KYEP2MX3SHFCECTSTHV9RMS4=nota-1 h_01KXX80P91BMB45ETZQSKWJWZB=create-media-partner-connections h_01KXX80P91PS35EG5P5YJB9EHC=create-data-identity-connections h_01KXX80P92BXD3B7ZVT1FC5HCF=id5 h_01KXX80P92WMPPRGD7321TBS7Y=consulta-tambi%C3%A9n" />

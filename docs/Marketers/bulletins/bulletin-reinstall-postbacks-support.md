@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Reinstall postbacks support'
+title: 'Boletín: Soporte para postbacks en reinstalaciones'
 metadata:
   keywords:
     - Marketers
@@ -13,17 +13,16 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2025-07-20T08:37:33Z'
-  edited_at: '2026-06-28T16:13:43Z'
+  edited_at: '2026-10-20T03:54:40Z'
   id: 37325372238481
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/37325372238481-Bulletin-Reinstall-postbacks-support
+  url: https://support.appsflyer.com/hc/es/articles/37325372238481
 ---
-| Section | Details |
+| Sección. | Detalles |
 | --- | --- |
-| **What's new** | Support for **postbacks on app re-installs** is now available. These are now distinguishable from first-time installs. |
-| **Effective date** | 01/09/2025 |
-| **What you need to know** | Install postbacks now also control reinstall postbacks. Configure them in the **Active Integration** page.<ul><li>**Supported networks:** Currently available with select partners (for example, Unity Ads). Additional partners will be added soon.</li><li>**Location:** The install postback appears in the **Default Postbacks** section of the **Attribution** tab. For supported networks, it now also controls reinstall postbacks.</li><li>**Configuration:** You can change the  **For users from** dropdown from **This partner only** to **All media sources (including organic)**.</li><li>**Format:** Reinstall events use the same postback format as install events, with the macro `is_reinstall=true` appended.</li><li>**Value:** This enables improved measurement and optimization, particularly for retargeting-focused partners.</li></ul> |
-| **What you need to do** | This feature is available only to designated partners. If you are interested in accessing it, contact your PDM. |
+| **¿Qué hay de nuevo?** | Ya está disponible el soporte para **postbacks en reinstalaciones de aplicaciones**. Ahora pueden distinguirse de las instalaciones iniciales. |
+| **Fecha de entrada en vigor** | 01/09/2025 |
+| **Lo que debes saber:** | Los postbacks de instalación ahora también controlan los postbacks de reinstalación. Configúralos en la página **Integración activa**.<ul><li>**Redes compatibles:** Actualmente está disponible con determinados partners (por ejemplo, Unity Ads). Pronto se añadirán más partners.</li><li>**Ubicación:** El postback de instalación aparece en la sección **Postbacks predeterminados** de la pestaña **Atribución**. En las redes compatibles, ahora también controla los postbacks de reinstalación.</li><li>**Configuración:** Puedes cambiar el  menú desplegable **Para usuarios de** de **Solo este partner** a **Todas las fuentes de medios (incluido el orgánico)**.</li><li>**Formato:** Los eventos de reinstalación usan el mismo formato de postback que los eventos de instalación, con la macro `is_reinstall=true` añadida.</li><li>**Valor:** Esto permite mejorar la medición y la optimización, especialmente para partners centrados en retargeting.</li></ul> |
+| **Lo que debes hacer** | Esta función solo está disponible para partners designados. Si te interesa tener acceso, ponte en contacto con tu PDM. |

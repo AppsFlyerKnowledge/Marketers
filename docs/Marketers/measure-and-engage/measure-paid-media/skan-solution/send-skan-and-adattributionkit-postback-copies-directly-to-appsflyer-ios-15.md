@@ -1,5 +1,5 @@
 ---
-title: Send SKAN and AdAttributionKit postback copies directly to AppsFlyer (iOS 15+)
+title: Envía copias de postback de SKAN directamente a AppsFlyer (iOS 15+)
 metadata:
   keywords:
     - Advertisers
@@ -13,64 +13,63 @@ x-zendesk:
     - Marketers
     - SKAdNetwork (SKAN)
   created_at: '2021-06-08T12:09:25Z'
-  edited_at: '2025-12-31T09:07:08Z'
+  edited_at: '2026-08-12T12:21:14Z'
   id: 4402320969617
-  locale: en-us
+  locale: es
   section: SKAN solution
   section_id: 6552135379985
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4402320969617-Send-SKAN-and-AdAttributionKit-postback-copies-directly-to-AppsFlyer-iOS-15
+  url: https://support.appsflyer.com/hc/es/articles/4402320969617
 ---
-> **At a glance:** Starting iOS 15, configure your app to send postback copies to AppsFlyer in addition to sending them to ad networks. Doing so enables AppsFlyer to validate the conversion value (CV) and verify postback integrity. Configure AppsFlyer Push API to forward postback copies to an additional selected endpoint.
+> **Resumen:** Desde iOS 15, configura tu aplicación para enviar copias de postback a AppsFlyer además de enviarlas a las redes publicitarias. Haciéndolo, AppsFlyer puede validar el valor de conversión (CV) y verificar la integridad del postback. Configura el Push API de AppsFlyer para reenviar copias de postback a un punto final adicional que elijas.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> Throughout this article, references to **SKAN** include both **SKAdNetwork** and the latest **AdAttributionKit (AAK)** framework.
+> A lo largo de este artículo, las referencias a **SKAN** incluyen tanto **SKAdNetwork** como el framework más reciente **AdAttributionKit (AAK)**.
 
-## Why send postback copies to AppsFlyer?
+## ¿Por qué enviar copias de postback a AppsFlyer?
 
-* Get all postbacks in one place: Postbacks contain information critical to advertisers—specifically, the CV used to measure user quality. The CV, in postbacks, is neither encrypted nor part of the postback signature. As a result, the CV as reported by the ad network can't be validated and is open to manipulation. AppsFlyer will forward the postback copies using Push API to endpoints defined by you.
-  * Mandatory for Apple Ads: forwarding postbacks is required for AA SKAN reporting (iOS 15+).
-* View redownload metrics; some ad networks don't share redownload data with AppsFlyer. The postback copy helps complete the picture.
-* View publisher app data
-* View touch-type engagement
+* Obtén todos los postbacks en un solo lugar: Los postbacks contienen información crucial para los anunciantes—en particular, el CV utilizado para medir la calidad del usuario. En los postbacks, el CV no está cifrado ni forma parte de la firma del postback. Por lo tanto, el CV informado por la red publicitaria no puede ser validado y está expuesto a manipulaciones. AppsFlyer reenviará las copias de postback usando Push API a los puntos finales que definas.
+  * Obligatorio para Apple Ads: el reenvío de postbacks es necesario para el reporte de AA SKAN (iOS 15+).
+* Consulta las métricas de redescarga; algunas redes publicitarias no comparten datos de redescarga con AppsFlyer. La copia del postback ayuda a completar la imagen.
+* Ve los datos de la aplicación del editor
+* Revisa el tipo de interacción táctil
 
-**Note!** AppsFlyer must still receive ad network postbacks as they contain additional data provided by the ad network (for example, campaign name).
+**¡Nota!** AppsFlyer aún necesita recibir los postbacks de la red publicitaria, ya que contienen datos adicionales proporcionados por esta (como el nombre de la campaña).
 
-## Configure your app to send postback copies to AppsFlyer
+## Configura tu aplicación para enviar copias de postback a AppsFlyer
 
-According to Apple's documentation, you can set a single SKAN postback endpoint.
+Según la documentación de Apple, puedes establecer un único punto final de postback de SKAN.
 
-**To register the AppsFlyer endpoint:**
+**Para registrar el punto final de AppsFlyer:**
 
-1. Ask your iOS developer to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#sending-skan-postback-copies-to-appsflyer">add AppsFlyer</Anchor> as a SKAN and AdAttributionKit postback endpoint in the next app version.
-2. Submit the iOS app.
-3. Postbacks will be sent to AppsFlyer as the new version becomes published (not from TestFlight).
-4. You can see the received postbacks in the <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">postbacks copy report</Anchor>.
+1. Solicita a tu desarrollador de iOS que <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#sending-skan-postback-copies-to-appsflyer">añada AppsFlyer</Anchor> como un punto final de postback de SKAN en la próxima versión de la aplicación.
+2. Envía la aplicación iOS.
+3. Los postbacks se enviarán a AppsFlyer una vez que se publique la nueva versión (no desde TestFlight).
+4. Puedes ver los postbacks recibidos en el <Anchor target="_blank" href="/marketers/es/docs/skan-raw-data-reports">informe de copia de postbacks</Anchor>.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Apps that don't have SKAN traffic will see the following message even after completing setup: 'Your app isn’t set up to send iOS postback copies (iOS 15+) to AppsFlyer. This is required to assure the integrity of your SKAN measurement.'
+> Las aplicaciones sin tráfico SKAN verán el siguiente mensaje incluso después de completar la configuración: Tu aplicación no está configurada para enviar copias de postback de iOS (iOS 15+) a AppsFlyer. Esto es necesario para garantizar la integridad de tu medición SKAN.
 
-## Common misconceptions
+## Conceptos erróneos comunes
 
-> 📘 **Don't believe everything you hear!**
+> 📘 **¡No creas todo lo que escuches!**
 >
-> Are these statements true or false?
+> ¿Estas afirmaciones son verdaderas o falsas?
 >
-> ![TrueOrFalse.png](https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png)
+> ![VerdaderoOFalso.png](https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png)
 >
-> * Advertisers no longer depend on ad networks to get postbacks.
->   * **False.** The advertiser still depends on the ad network to decode significant pieces of data. For example, only the ad network can map the SKAN campaign ID to the campaign name.
-> * As soon as I've set an additional endpoint, copies of all postbacks are sent there.
->   * **False.** The additional endpoint feature is only available for devices running iOS 15+. Postback copies aren't sent from devices running earlier versions.
+> * Los anunciantes todavía dependen de las redes publicitarias para obtener postbacks.
+>   * Falso. El anunciante sigue dependiendo de la red publicitaria para interpretar información importante. Por ejemplo, solo la red publicitaria puede relacionar el ID de campaña SKAN con el nombre de la campaña.
+> * En cuanto configuro un punto final adicional, se envían copias de todos los postbacks allí.
+>   * Falso. La función de punto final adicional solo está disponible para dispositivos con iOS 15 o superior. No se envían copias de postbacks desde dispositivos con versiones anteriores.
 
-## Traits and limitations
+## Características y limitaciones
 
-After an app has been configured to send postback copies to AppsFlyer, it may take a couple of days for it to show on the dashboard.
+Tras configurar una aplicación para enviar copias de postbacks a AppsFlyer, podría tardar un par de días en aparecer en el panel de control.
 
-> 📄 **See also**
+> 📄 **Consulte también**
 >
-> * <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app?changes=latest_minor#see-also">Apple developer</Anchor>
+> * <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app?changes=latest_minor#see-also">Desarrollador de Apple</Anchor>
 
-<div data-zendesk-anchors="h_01KDSTGH21EG5MT0KFXZ40VMW1=note h_01HE7SV29Y7DNSKAAR91MJX986=why-send-postback-copies-to-appsflyer h_01HE7SV29YDFA5Z0X4WS87YK0Y=configure-your-app-to-send-postback-copies-to-appsflyer h_01HH9WCVH4C37ZGMRZRB7EQT6B=important h_01HE7SV29YC855TGCXTCT4KHRN=common-misconceptions h_01HE7SV29YMMTPH6EKYF3GQYEN=dont-believe-everything-you-hear h_01HHH74CC5X0T5M1F86XWMNH9V=traits-and-limitations h_01HE7SX466CMCC03K99H68ZRBN=see-also" />
+<div data-zendesk-anchors="h_01KDSTGH21EG5MT0KFXZ40VMW1=advertencia why-send-postback-copies-to-appsflyer=por-qu%C3%A9-enviar-copias-de-postback-a-appsflyer h_01HE7SV29Y7DNSKAAR91MJX986=por-qu%C3%A9-enviar-copias-de-postback-a-appsflyer configure-your-app-to-send-postback-copies-to-appsflyer=configura-tu-aplicaci%C3%B3n-para-enviar-copias-de-postback-a-appsflyer h_01HE7SV29YDFA5Z0X4WS87YK0Y=configura-tu-aplicaci%C3%B3n-para-enviar-copias-de-postback-a-appsflyer h_01HH9WCVH4C37ZGMRZRB7EQT6B=importante common-misconceptions=conceptos-err%C3%B3neos-comunes h_01HE7SV29YC855TGCXTCT4KHRN=conceptos-err%C3%B3neos-comunes h_01HE7SV29YMMTPH6EKYF3GQYEN=no-creas-todo-lo-que-escuches traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01HHH74CC5X0T5M1F86XWMNH9V=caracter%C3%ADsticas-y-limitaciones h_01HE7SX466CMCC03K99H68ZRBN=consulte-tambi%C3%A9n" />

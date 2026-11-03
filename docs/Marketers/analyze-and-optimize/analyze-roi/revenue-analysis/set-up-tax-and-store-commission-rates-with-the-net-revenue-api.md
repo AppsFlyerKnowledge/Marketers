@@ -1,5 +1,5 @@
 ---
-title: Set up tax and store commission rates with the Net Revenue API
+title: Editar mediciones de ingresos netos mediante la Tax API
 metadata:
   keywords:
     - Revenue
@@ -14,45 +14,44 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2024-11-28T13:57:14Z'
-  edited_at: '2026-08-12T09:02:34Z'
+  edited_at: '2026-08-17T11:43:09Z'
   id: 30468586765841
-  locale: en-us
+  locale: es
   section: Revenue analysis
   section_id: 6551069075089
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/30468586765841-Set-up-tax-and-store-commission-rates-with-the-Net-Revenue-API
+  url: https://support.appsflyer.com/hc/es/articles/30468586765841
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Configure how AppsFlyer calculates net revenue for in-app purchases and subscriptions by using the Net Revenue API to customize store commission rates and tax rules per app. This ensures that your reports accurately reflect actual earnings, including cases with non-standard commission fees or specific tax rules.
+> **En resumen:** Configura cómo AppsFlyer calcula los ingresos netos de las compras in-app y las suscripciones mediante la API de Net Revenue para personalizar las tasas de comisión de la tienda y las reglas fiscales por aplicación. Esto garantiza que tus reportes reflejen con precisión las ganancias reales, incluidos los casos con comisiones no estándar o reglas fiscales específicas.
 
-The ROI360 store revenue product calculates the net revenue of in-app purchases and subscriptions by automatically deducting store commission and tax from gross revenue. The default configuration reflects standard commission fees and tax rules applied by the App Store and Google Play. If your store commission differs or if you operate in a country with special tax treatment, use the Net Revenue API to override the default configuration.
+Los ingresos netos son una capa de lógica empresarial creada para servir a la solución de ingresos por suscripción y compras in-app de ROI360 de AppsFlyer. La configuración predeterminada refleja las comisiones estándar y las reglas fiscales que aplican la tienda de aplicaciones y Google Play. Si la comisión de tu tienda difiere o si operas en un país con un tratamiento fiscal especial, usa la API de Net Revenue para anular la configuración predeterminada.
 
-The Net Revenue API is implemented through two REST APIs that let you configure store commission rates and tax rules for individual apps.
+La API de Net Revenue se implementa mediante dos API REST que te permiten configurar las tasas de comisión de la tienda y las reglas fiscales para aplicaciones individuales.
 
-* [Store commission rates](https://dev.appsflyer.com/hc/reference/post_store-commission-rates): Create, update, get, or delete store commission rates for one or more apps. Each app can have a specific commission rate based on various store programs.
-* [Tax rate rules](https://dev.appsflyer.com/hc/reference/post_tax-rates-app-app-id): Create or get custom tax rate rules for a specific app.
+* [Tasas de comisión de la tienda](https://dev.appsflyer.com/hc/reference/post_store-commission-rates): crea, actualiza, obtén o elimina tasas de comisión de la tienda para una o varias aplicaciones. Cada aplicación puede tener una tasa de comisión específica en función de varios programas de la tienda.
+* [Reglas de tipos impositivos](https://dev.appsflyer.com/hc/reference/post_tax-rates-app-app-id): crea u obtén reglas de tipos impositivos personalizadas para una aplicación específica.
 
-For more information about how net revenue is calculated, see <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#true-revenue">Net revenue</Anchor>.
+Para obtener más información sobre cómo se calculan los ingresos netos, consulta <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue#true-revenue">Ingresos netos</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Net revenue is displayed in raw data reports and in My Dashboards as the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit).
+> Los ingresos netos se muestran en los reportes de raw data y en My Dashboards como las métricas netas (ingresos netos, ROI neto, ROAS neto, ARPU neto, beneficio neto).
 
-## Update tax rate rules
+## Actualizar reglas de tipos impositivos
 
-Tax is reported by default for any transaction measured by ROI360 using the default tax rate configuration. In *tax-inclusive countries*, where tax is included in the list price, net revenue is calculated after deducting tax. For example, in the UK, AppsFlyer deducts the sum of the tax and the store commission. In *tax-exclusive countries*, such as the US, where the list price does not include tax, the revenue and net revenue parameters do not include tax by default.
+El impuesto es reportado por defecto para cualquier transacción medida por ROI360 usando la configuración de tasa de impuesto por defecto. En los *países con impuestos incluidos*, donde el impuesto está incluido en el precio de lista, los ingresos netos se calculan después de deducir el impuesto. Por ejemplo, en el Reino Unido, AppsFlyer deduce la suma del impuesto y la comisión de la tienda. En los *países con impuestos excluidos*, como EE. UU., donde el precio de lista no incluye impuestos, los parámetros de ingresos e ingresos netos no incluyen impuestos de forma predeterminada.
 
-To set the tax rate rules using the Net Revenue API, follow these steps:
+Para configurar las reglas de tipos impositivos con la API de Net Revenue, sigue estos pasos:
 
-1. Complete the following steps in your ROI360 store revenue settings:
+1. Completa los siguientes pasos en la configuración de ingresos de la tienda de ROI360:
 
    <div id="ios" />
 
-   <Accordion title="iOS">
+   <Accordion title="apps de iOS,">
 
-   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-1-ios-set-up-app-store-connect-keys">Step 1. Set up App Store Connect keys</Anchor>
-   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-2-ios-set-up-app-store-server-notifications">Step 2. Set up App Store Server Notifications</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue#paso-1-ios-configura-las-claves-de-app-store-connect">1. Configurar claves de App Store Connect</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue#paso-2-ios-configura-las-notificaciones-del-servidor-de-app-store">2. Configurar las notificaciones del servidor de la App Store</Anchor>
 
    </Accordion>
 
@@ -60,59 +59,59 @@ To set the tax rate rules using the Net Revenue API, follow these steps:
 
    <Accordion title="Android">
 
-   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-1-android-set-up-service-account-key-and-permissions">Step 1. Set up service account key and permissions</Anchor>
-   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-2-android-set-up-google-play-server-notifications">Step 2. Set up Google Play Server Notifications</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue#paso-1-android-configurar-la-clave-de-cuenta-de-servicio-y-los-permisos">1. Configurar la clave de cuenta de servicio y los permisos</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue#paso-2-android-configura-las-notificaciones-del-servidor-de-google-play">2. Configurar las notificaciones del servidor de Google Play</Anchor>
 
    </Accordion>
 
-2. Give your developer the following:
-   * The <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API V2 token</Anchor> to use as the authorization key.
-   * The parameters and values that specify which taxes to calculate are outlined in the table that follows.
-3. Instruct your developer to use the [Tax rates REST API](https://dev.appsflyer.com/hc/reference/post_tax-rates-app-app-id) to create tax rate rules. The API accepts a JSON file in the body of the POST request. [This JSON file](https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub) includes all supported countries and their default tax rates. Your developer can edit the file or use it as-is in the API.
+2. Comparte con tu desarrollador:
+   * El <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">token API V2</Anchor> para usarlo como clave de autorización.
+   * Los parámetros y valores que contienen información sobre qué impuestos calcular, como se indica en la tabla a seguir.
+3. Dile a tu desarrollador que siga las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/create-tax-rate-rule">instrucciones de la Tax API</Anchor> para crear las reglas de tasas de impuestos. **Nota**: La API permite incluir un archivo JSON en el cuerpo de la solicitud de publicación. <Anchor target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub">Este archivo JSON</Anchor> incluye todos los países compatibles y sus impuestos predeterminados. El desarrollador puede editarlo o utilizarlo tal y como está en la API.
 
-### Tax Rate API parameters
+### Parámetros y valores a utilizar en la API
 
-| Parameter | Mandatory | Remarks |
+| Parámetro | Obligatorio | Observaciones |
 | --- | --- | --- |
-| `tax_name` | Yes | <ul><li>Name appearing in the customer invoice that describes the specific type of tax.</li><li>Example: Sales, VAT, GST</li></ul> |
-| `tax_rate` | Yes | <ul><li>Value must be greater than 0.</li><li>Number up to 4 decimal places representing the tax percentage to be collected.</li><li>Example: 7.25</li></ul> |
-| `tax_exclusive` | No | <ul><li>Boolean parameter, either true or false.</li><li>False means tax is included in the overall revenue.</li><li>True means tax is in addition to the overall stated revenue. For example, in the USA or Canada, where the list price doesn't include sales tax.</li><li>Default is false.</li></ul> |
-| `country` | No | <ul><li>[Two-letter ISO country code](https://www.nationsonline.org/oneworld/country_code_list.htm) for which the tax is applied.</li><li>Example: CA</li><li>**Note:** For United Kingdom, the code implemented is UK, not GB.</li></ul> |
-| `subdivision` | No | <ul><li>For some countries, there can be an additional state or subdivision.</li><li>Handled according to [ISO 3166-2 subdivision codes](https://service.unece.org/trade/locode/2022-2%20SubdivisionCodes.htm).</li><li>Must include the country code and subdivision code.</li><li>Example: US-CA</li></ul> |
-| `postal_code` | No | <ul><li>String of letters and/or numbers.</li><li>Example: L4J8E3</li></ul> |
-| `deduction_order` | No | <ul><li>Enum, either **0**, **1**, or **2**:<ul><li>**0** means store commission is deducted first from the gross revenue and tax is deducted from the remaining amount.</li><li>**1** means tax is deducted first from the gross revenue and store commission is deducted from the remaining amount.</li><li>**2** means that both tax and store commission are deducted from the total revenue.</li></ul></li></ul> |
+| `tax_name` | Sí | <ul><li>Nombre que aparece en la factura del cliente que describe el tipo específico de impuesto.</li><li>Ejemplo: Ventas, VAT, GST</li></ul> |
+| `tax_rate` | Sí | <ul><li>El valor debe ser superior a 0. Número de hasta 4 decimales que representa el porcentaje de impuesto a recaudar.</li><li>Ejemplo: 7.25</li></ul> |
+| `tax_exclusive` | No | <ul><li>Parámetro booleano, verdadero o falso.</li><li>Falso significa que el impuesto está incluido en los ingresos totales.</li><li>El impuesto sobre los medios reales se añade a los ingresos totales declarados. Por ejemplo, en EE.UU. o Canadá, donde el precio no incluye el impuesto sobre ventas.</li><li>El valor predeterminado es falso.</li></ul> |
+| `País` | No | <ul><li><Anchor target="_blank" href="https://www.nationsonline.org/oneworld/country_code_list.htm">Código ISO de dos letras del país</Anchor> al que se aplica el impuesto.</li><li>Ejemplo: CA</li><li>Nota: Para el Reino Unido, el código aplicado es UK, no GB.</li></ul> |
+| `subdivision` | No | <ul><li>Para algunos países, puede existir un estado/subdivisión adicional.</li><li>Se maneja de acuerdo con los <Anchor target="_blank" href="https://service.unece.org/trade/locode/2022-2%20SubdivisionCodes.htm">códigos de subdivisión ISO 3166-2.</Anchor></li><li>Debe incluir el código de país y el código de subdivisión.</li><li>Ejemplo: US-CA</li></ul> |
+| `postal_code` | No | <ul><li>Cadena de letras y/o números</li><li>Ejemplo: L4J8E3</li></ul> |
+| `deduction_order` | No | <ul><li>Valor enumerado: **0**, **1** o **2**:<ul><li>0 significa que la comisión de la tienda se deduce primero de los ingresos brutos y los impuestos se deducen del monto restante.</li><li>1 significa que la comisión de la tienda se deduce primero de los ingresos brutos y los impuestos se deducen del monto restante.</li><li>2 significa que tanto el impuesto como la comisión de la tienda se deducen de los ingresos totales.</li></ul></li></ul> |
 
-## Set up store commission rates
+## Configurar tasas de comisión de la tienda
 
-By default, AppsFlyer applies standard store commission logic when calculating net revenue. App Store defaults are region-specific (see <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#true-revenue">About ROI360 store revenue</Anchor> for the current rates per storefront). If your app operates under reduced or non-standard store fees, use the Net Revenue API to override the store commission rate at the app level.
+De forma predeterminada, AppsFlyer aplica la lógica estándar de comisiones de la tienda al calcular los ingresos netos. Los valores predeterminados de App Store son específicos de cada región (consulta <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue#true-revenue">About ROI360 store revenue</Anchor> para ver las tasas actuales por storefront). Si tu aplicación opera con comisiones de tienda reducidas o no estándar, usa la API de Net Revenue para sustituir la tasa de comisión de la tienda a nivel de aplicación.
 
-A few examples:
+Algunos ejemplos:
 
-* Your app qualifies for reduced store fees, such as:
-  * Apple App Store Small Business Program (15% commission; 12% in China mainland (CN))
-  * Google Play 15% service fee tier (first USD 1M in annual earnings)
-* Your store commission changes over time, and because AppsFlyer has no visibility into your store commission status, you need to update the applied rate manually using the Net Revenue API, for example:
-  * Applying a reduced commission when your app becomes eligible for a lower store fee
-  * Reverting to the default store commission logic when the reduced rate no longer applies
+* Tu aplicación reúne los requisitos para beneficiarse de tarifas reducidas de la tienda, como:
+  * Programa para pequeñas empresas de la tienda de aplicaciones de Apple (15% de comisión; 12% en China continental (CN))
+  * Nivel de tarifa de servicio del 15% de Google Play (primer 1 M USD de ingresos anuales)
+* La comisión de la tienda cambia con el tiempo y, como AppsFlyer no tiene visibilidad del estado de la comisión de tu tienda, debes actualizar manualmente la tarifa aplicada mediante la API de ingresos netos, por ejemplo:
+  * Aplicar una comisión reducida cuando tu aplicación pase a cumplir los requisitos para una tarifa más baja de la tienda
+  * Volver a la lógica predeterminada de comisión de la tienda cuando deje de aplicarse la tarifa reducida
 
-### Update store commission with the Net Revenue API
+### Actualiza la comisión de la tienda con la API de ingresos netos
 
-You can use the Net Revenue API to manage store commission configurations in the following ways:
+Puedes usar la API de ingresos netos para gestionar las configuraciones de comisión de la tienda de las siguientes formas:
 
-* Review existing configurations by sending a GET request to retrieve store commission rates for apps under the account
-* Apply a custom commission by sending a POST request with the required commission rate
-* Revert to the default logic by sending a DELETE request for the relevant app
+* Revisa las configuraciones existentes enviando una solicitud GET para recuperar las tarifas de comisión de la tienda de las aplicaciones de la cuenta
+* Aplica una comisión personalizada enviando una solicitud POST con la tarifa de comisión requerida
+* Vuelve a la lógica predeterminada enviando una solicitud DELETE para la aplicación correspondiente
 
-Before using the API:
+Antes de usar la API:
 
-1. Complete the following steps in your ROI360 store revenue settings:
+1. Completa los siguientes pasos en la configuración de ingresos de la tienda de ROI360:
 
    <div id="ios::f410adfc" />
 
-   <Accordion title="iOS">
+   <Accordion title="apps de iOS,">
 
-   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-1-ios-set-up-app-store-connect-keys">Step 1. Set up App Store Connect keys</Anchor>
-   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-2-ios-set-up-app-store-server-notifications">Step 2. Set up App Store Server Notifications</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue#paso-1-ios-configura-las-claves-de-app-store-connect">1. Configurar claves de conexión de la App Store</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue#paso-2-ios-configura-las-notificaciones-del-servidor-de-app-store">2. Configurar las notificaciones del servidor de la App Store</Anchor>
 
    </Accordion>
 
@@ -120,21 +119,21 @@ Before using the API:
 
    <Accordion title="Android">
 
-   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-1-android-set-up-service-account-key-and-permissions">Step 1. Set up service account key and permissions</Anchor>
-   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-2-android-set-up-google-play-server-notifications">Step 2. Set up Google Play Server Notifications</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue#paso-1-android-configurar-la-clave-de-cuenta-de-servicio-y-los-permisos">1. Configurar la clave de cuenta de servicio y los permisos</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue#paso-2-android-configura-las-notificaciones-del-servidor-de-google-play">2. Configurar las notificaciones del servidor de Google Play</Anchor>
 
    </Accordion>
 
-2. Prepare the following information:
-   * API V2 token to use as the authorization key
-   * Store commission rate to apply (supported values: 1%–30%)
-   * App ID(s) to which the custom commission applies
-3. Note the following configuration details:
-   * Store commission is configured **per app**
-   * Supported values are **1%–30%**
-   * The configuration applies **only to new incoming events**
-   * If no custom commission is set, AppsFlyer uses the **default store commission logic**
+2. Prepara la siguiente información:
+   * Token de API V2 para usar como clave de autorización
+   * Tarifa de comisión de la tienda que se aplicará (valores admitidos: 1%–30%)
+   * ID de la aplicación (o aplicaciones) a las que se aplica la comisión personalizada
+3. Ten en cuenta los siguientes detalles de configuración:
+   * La comisión de la tienda se configura **por aplicación**
+   * Los valores admitidos son **1%–30%**
+   * La configuración se aplica **solo a los nuevos eventos entrantes**
+   * Si no se establece ninguna comisión personalizada, AppsFlyer usa la **lógica predeterminada de comisión de la tienda**
 
-For full request structures and examples, see the [Net Revenue API documentation](https://dev.appsflyer.com/hc/reference/overview-7).
+Para ver las estructuras y los ejemplos completos de las solicitudes, consulta la [documentación de la API de ingresos netos](https://dev.appsflyer.com/hc/reference/overview-7).
 
-<div data-zendesk-anchors="h_01KEFDF4KD0DCMP5DGE7ZJDBGX=note h_01KEFDF4KDJ5PVS3AW46BS57NC=update-tax-rate-rules h_01KEFDRXY0FWKKK0DK6PS340TC=ios h_01KEFDRXY0RTBH293JQXFWYAM2=android h_01KEFDF4KD60SEVBQ8G228PEXD=tax-rate-api-parameters h_01KEFDF4KDP4PFKFQ0D9FN8P5D=set-up-store-commission-rates h_01KEFDF4KDVTHTGKJ35CQ1GQ1E=update-store-commission-with-the-net-revenue-api h_01KEFDWVDFBPP7NPSZV0PRGKPZ=ios::f410adfc h_01KEFDWVDFZPHJP6EG0CPNG5A0=android::659c7976" />
+<div data-zendesk-anchors="h_01KEFDF4KD0DCMP5DGE7ZJDBGX=nota update-tax-rate-rules=actualizar-reglas-de-tipos-impositivos h_01KEFDF4KDJ5PVS3AW46BS57NC=actualizar-reglas-de-tipos-impositivos h_01KEFDRXY0FWKKK0DK6PS340TC=ios h_01KEFDRXY0RTBH293JQXFWYAM2=android tax-rate-api-parameters=par%C3%A1metros-y-valores-a-utilizar-en-la-api h_01KEFDF4KD60SEVBQ8G228PEXD=par%C3%A1metros-y-valores-a-utilizar-en-la-api set-up-store-commission-rates=configurar-tasas-de-comisi%C3%B3n-de-la-tienda h_01KEFDF4KDP4PFKFQ0D9FN8P5D=configurar-tasas-de-comisi%C3%B3n-de-la-tienda update-store-commission-with-the-net-revenue-api=actualiza-la-comisi%C3%B3n-de-la-tienda-con-la-api-de-ingresos-netos h_01KEFDF4KDVTHTGKJ35CQ1GQ1E=actualiza-la-comisi%C3%B3n-de-la-tienda-con-la-api-de-ingresos-netos h_01KEFDWVDFBPP7NPSZV0PRGKPZ=ios::f410adfc h_01KEFDWVDFZPHJP6EG0CPNG5A0=android::659c7976" />

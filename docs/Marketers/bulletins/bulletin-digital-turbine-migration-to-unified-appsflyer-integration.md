@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Digital Turbine migration to unified AppsFlyer integration'
+title: 'Boletín: migración de Digital Turbine a la integración unificada de AppsFlyer'
 deprecated: false
 hidden: false
 metadata:
@@ -10,17 +10,16 @@ x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2026-09-01T10:27:56Z'
-  edited_at: '2026-09-30T09:03:00Z'
+  edited_at: '2026-10-20T03:53:59Z'
   id: 50419778565521
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/50419778565521-Bulletin-Digital-Turbine-migration-to-unified-AppsFlyer-integration
+  url: https://support.appsflyer.com/hc/es/articles/50419778565521
 ---
-| **Section** | **Details** |
+| **Sección.** | **Detalles** |
 | --- | --- |
-| **What's New** | Digital Turbine (DT) is migrating advertisers from the legacy PID `digitalturbine_int` to the new unified PID `onedigitalturbine_int`, as part of DT's move to its Ads platform migration.<br /><br />The unified integration gives you access to DT's machine learning capabilities and first-party device signals. |
-| **Effective Date** | October 1, 2026 |
-| **What you need to know** | **New media source**<ul><li>The new media source is `onedigitalturbine_int`.</li></ul>**Campaign reporting dimensions**<ul><li>Reporting shifts from Campaign/Campaign ID to Adset/Adset ID.</li><li>This affects cohort and LTV reporting.</li></ul>**Reporting during the transition**<ul><li>Select both media sources (`digitalturbine_int` and `onedigitalturbine_int`) when reviewing reports during the transition period.</li><li>Review any custom dashboards, BI integrations, or saved reports that reference the legacy PID, since they won't automatically pick up the new PID.</li></ul> |
-| **What you need to do** | <ol><li>Generate new attribution links using the <Anchor target="_blank" href="https://docs.digitalturbine.com/measurement/mmp-guides/appsflyer">DT&lt;>AppsFlyer Integration Guide</Anchor>, and send them to your DT Account Manager.</li><li>DT will migrate your campaigns to the new links. You don't need to recreate them manually.</li><li>Keep your legacy integration active until your lookback window expires, so in-flight conversions still attribute correctly. On the day you transition, switch cost reporting to DT's Unified Reporting API only. Do this as soon as `onedigitalturbine_int`  is live, and avoid running both at once to prevent double-counting spend.</li></ol>**Reporting API and cost data**<ul><li>Transition from the legacy Reporting API to DT's Unified Reporting API to avoid duplicate data.</li><li>InCost is configured at the account level.</li><li>The app-level Cost tab is being phased out for migrated networks.</li><li>Account-level API authentication is required under the `onedigitalturbine_int` partner setup.</li><li>No Client ID or Secret is needed for cost data. AppsFlyer receives it directly from DT. What's changed is the setup flow: Cost integration used to be enabled per app, and now it's configured once at the account level for multiple apps.</li></ul>**Migration deadline**<ul><li>The **deadline is October 1, 2026**. Generate your new links as soon as possible.</li><li>DT will monitor delivery and cost data after the migration.</li><li>If you run into issues, contact AppsFlyer Support or your CSM, or reach out to your DT account manager.</li></ul> |
+| **Novedades** | Digital Turbine (DT) está migrando a los anunciantes del PID heredado `digitalturbine_int` al nuevo PID unificado `onedigitalturbine_int`, como parte de la migración de DT a su plataforma de anuncios.<br /><br />La integración unificada te da acceso a las capacidades de aprendizaje automático de DT y a las señales de dispositivos propias. |
+| **Fecha de entrada en vigor** | 1 de octubre de 2026 |
+| **Lo que debes saber:** | **Nueva fuente de medios**<ul><li>La nueva fuente de medios es `onedigitalturbine_int`.</li></ul>**Dimensiones de informes de campaña**<ul><li>El reporte pasa de Campaña/ID de campaña a Adset/ID de Adset.</li><li>Esto afecta al reporte de cohorte y LTV.</li></ul>**Reporte durante la transición**<ul><li>Selecciona ambas fuentes de medios (`digitalturbine_int` y `onedigitalturbine_int`) al revisar los reportes durante el periodo de transición.</li><li>Revisa cualquier dashboard personalizado, integración de BI o reporte guardado que haga referencia al PID heredado, ya que no incorporarán automáticamente el nuevo PID.</li></ul> |
+| **Lo que debes hacer** | <ol><li>Genera nuevos enlaces de atribución mediante la <Anchor target="_blank" href="https://docs.digitalturbine.com/measurement/mmp-guides/appsflyer">guía de integración DT&lt;>AppsFlyer</Anchor> y envíaselos a tu Account Manager de DT.</li><li>DT migrará tus campañas a los nuevos enlaces. No necesitas volver a crearlos manualmente.</li><li>Mantén activa tu integración heredada hasta que caduque tu ventana de lookback, para que las conversiones en curso sigan atribuyéndose correctamente. El día que hagas la transición, cambia el reporte de costos para usar solo la API de reportes unificados de DT. Hazlo en cuanto `onedigitalturbine_int`  esté activo y evita ejecutar ambos a la vez para no duplicar el gasto.</li></ol>**API de reportes y datos de costo**<ul><li>Pasa de la API de reportes heredada a la API de reportes unificados de DT para evitar datos duplicados.</li><li>InCost se configura a nivel de cuenta.</li><li>La pestaña Costo a nivel de aplicación se está eliminando gradualmente para las redes migradas.</li><li>Se requiere autenticación de API a nivel de cuenta en la configuración del partner `onedigitalturbine_int`.</li><li>No se necesita Client ID ni Secret para los datos de costo. AppsFlyer los recibe directamente de DT. Lo que ha cambiado es el flujo de configuración: antes, la integración de costos se habilitaba por aplicación, y ahora se configura una sola vez a nivel de cuenta para varias aplicaciones.</li></ul>**Fecha límite de migración**<ul><li>La **fecha límite es el 1 de octubre de 2026**. Genera tus nuevos enlaces lo antes posible.</li><li>DT supervisará los datos de entrega y los datos de costo después de la migración.</li><li>Si tienes algún problema, contacta con el soporte de AppsFlyer o con tu CSM, o ponte en contacto con tu account manager de DT.</li></ul> |

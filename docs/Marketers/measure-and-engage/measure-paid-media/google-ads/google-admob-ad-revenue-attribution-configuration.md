@@ -1,5 +1,5 @@
 ---
-title: Google AdMob—Ad revenue attribution configuration
+title: Google AdMob—Configuración de atribución de ingresos por anuncios
 metadata:
   keywords:
     - ad revenue
@@ -16,20 +16,19 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2020-03-23T16:51:19Z'
-  edited_at: '2026-04-27T10:08:17Z'
+  edited_at: '2026-08-12T12:18:50Z'
   id: 360006951817
-  locale: en-us
+  locale: es
   section: Google Ads
   section_id: 6551205645457
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360006951817-Google-AdMob-Ad-revenue-attribution-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360006951817
 ---
-> **At a glance:** Google AdMob, an AppsFlyer integrated partner, allows app owners to receive ad revenue data to be used for ad revenue attribution.
+> **En resumen:** Google AdMob, un partner integrado de AppsFlyer, permite a los propietarios de aplicaciones recibir datos de ingresos por anuncios para usarlos en la atribución de ingresos por anuncios.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadmob.png?v=1" width="74px" />
 
-AdMob provides <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">ad revenue attribution</Anchor> at the aggregate and impression levels. See also: <Anchor target="_blank" href="/marketers/docs/integrate-the-roi360-ad-revenue-sdk-api">Generic impression-level ad revenue SDK connector integration guide</Anchor>
+AdMob proporciona <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution">atribución de ingresos por anuncios</Anchor> a nivel agregado y de impresión. Consulta también: <Anchor target="_blank" href="/marketers/es/docs/integrate-the-roi360-ad-revenue-sdk-api">Guía de integración del conector SDK genérico de ingresos por anuncios a nivel de impresión</Anchor>
 
-**Prerequisite:** Before you set up the integration, make sure you <Anchor target="_blank" href="/marketers/docs/partner-integrations#contact-details">contact the partner</Anchor> and open an account with them.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">ponerte en contacto con el partner</Anchor> y abrir una cuenta con ellos.
 
-**To enable the ad revenue integration,** follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
+**Para habilitar la integración de ingresos por anuncios,** sigue <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">estas instrucciones de integración</Anchor>.

@@ -1,5 +1,5 @@
 ---
-title: PBA Web SDK integration guide
+title: Guía de integración del SDK web para la PBA
 metadata:
   keywords:
     - Developers
@@ -13,908 +13,56 @@ x-zendesk:
     - Marketers
     - Cross-Platform Measurement
   created_at: '2019-05-17T09:05:30Z'
-  edited_at: '2026-08-14T16:22:54Z'
+  edited_at: '2026-08-22T00:22:54Z'
   id: 360001610038
-  locale: en-us
+  locale: es
   section: People Based Attribution (PBA)
   section_id: 43560588808721
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001610038-PBA-Web-SDK-integration-guide
+  url: https://support.appsflyer.com/hc/es/articles/360001610038
 ---
-> **At a glance:** Integrate AppsFlyer into websites using the Web SDK to record and measure visits, events, conversions, and revenue.
+> **At a glance:** Integra AppsFlyer en sitios web utilizando el SDK web para atribuir y medir visitas, eventos, conversiones e ingresos.
 
 ![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
-## Web SDK user and integration guide
+## Guía de integración y del usuario del SDK web
 
-* The Web SDK JavaScript tag:
-  * is part of the People-Based Attribution (PBA) solution for analyzing user journeys across multiple platforms.
-  * reports user visits and actions on your website to the AppsFlyer platform.
-  * is a website plug-in module that needs no programming. It is agnostic to the website visitor's operating system and browser.
-  * Size: 40-60Kb.
-* Implement the Web SDK alongside the AppsFlyer mobile SDK to record and map user activity across your mobile app and web environments.
-* Events occurring outside of the website can be recorded using <Anchor target="_blank" href="/marketers/docs/web-server-to-server-events-api-for-pba-web-s2s">Web server-to-server events API</Anchor> (Web S2S)
+* La etiqueta JavaScript del SDK web:
+  * forma parte de la solución de atribución basada en las personas (PBA) para analizar las trayectorias de los usuarios en múltiples plataformas.
+  * reporta las visitas y las acciones de los usuarios en tu sitio web a la plataforma de AppsFlyer.
+  * es un módulo de pluginpara el sitio webque no requiereprogramación. Es independiente del sistema operativo y del navegador del visitante del sitio web.
+  * Tamaño: 40-60 Kb.
+* Implementa el SDK web junto con el SDK móvil de AppsFlyer para registrar y asignar la actividad del usuario en tu aplicación móvil y tus entornos web.
+* Los eventos que ocurren fuera del sitio web se pueden registrar mediante la <Anchor target="_blank" href="/marketers/es/docs/web-server-to-server-events-api-for-pba-web-s2s">API de eventos web server-to-server</Anchor> (Web S2S).
 
-## Selecting a code snippet
+## Selección de un fragmento de código
 
-Choose the snippet that matches your integration type and security requirements. Two options are available:
+Elige el fragmento que mejor se adapte a tu tipo de integración y a los requisitos de seguridad. Las siguientes opciones están disponibles:
 
-* [Standard Web SDK](#standard-web-sdk): The standard integration.
-* [Advanced SDK Verification](#advanced-sdk-verification): An enhanced integration that adds supply-chain protection for the Web SDK. Use this to add an extra layer of security against CDN compromise, DNS hijacking, and man-in-the-middle attacks.
+* [Standard Web SDK](#standard-web-sdk): La integración estándar.
+* [Advanced SDK Verification](#advanced-sdk-verification): Una integración mejorada que agrega protección a la cadena de suministro para el SDK web. Usa esto para agregar una capa adicional de seguridad contra el compromiso de CDN, el DNS hijacking y los ataques de intermediarios.
 
 > 🚧 **Important**
 >
-> If you are transitioning from the Standard Web SDK to Advanced SDK Verification, replace your existing snippet with the new one. Do not add the new snippet on top of the existing one.
+> **¡Importante!**
+>
+> Si estás haciendo la transición del Standard Web SDK al Advanced SDK Verification, reemplaza tu fragmento existente con el nuevo. No agregues el fragmento nuevo además del existente.
 
 ### Standard Web SDK
 
-Use this snippet to deploy the standard Web SDK integration. Paste it near the top of the `<head>` tag on all pages where you want to load the SDK.
+Usa este fragmento para implementar la integración estándar del SDK web. Pégalo cerca de la parte superior de la etiqueta  en todas las páginas donde quieras cargar el SDK.
 
 <div id="standard-without-smart-banners" />
 
-<Accordion title="Without Smart Banners">
+<Accordion title="Sin Smart Banners">
 
 ```html
-<script>
-  // Queue — buffers AF() calls until the SDK is ready
-  window.AppsFlyerSdkObject = "AF";
-  window.AF = window.AF || function() {
-    (window.AF.q = window.AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)));
-  };
-  window.AF.id = window.AF.id || { pba: { webAppId: "WEB_DEV_KEY" } };
-  window.AF.plugins = {};
-
-  // Inject SDK
-  var o = document.createElement("script"),
-      p = document.getElementsByTagName("script")[0];
-  o.async = 1;
-  o.src = "https://websdk.appsflyersdk.com?" + "st=pba&af_id=WEB_DEV_KEY";
-  p.parentNode.insertBefore(o, p);
-</script>
-```
-
-</Accordion>
-
-<div id="standard-with-smart-banners" />
-
-<Accordion title="With Smart Banners">
-
-```html
-<script>
-  // Queue — buffers AF() calls until the SDK is ready
-  window.AppsFlyerSdkObject = "AF";
-  window.AF = window.AF || function() {
-    (window.AF.q = window.AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)));
-  };
-  window.AF.id = window.AF.id || { pba: { webAppId: "WEB_DEV_KEY" }, banners: { key: "YOUR_BANNER_KEY" } };
-  window.AF.plugins = {};
-
-  // Inject SDK
-  var o = document.createElement("script"),
-      p = document.getElementsByTagName("script")[0];
-  o.async = 1;
-  o.src = "https://websdk.appsflyersdk.com?" + "st=pba,banners&af_id=WEB_DEV_KEY";
-  p.parentNode.insertBefore(o, p);
-  AF('banners', 'showBanner');
-</script>
-```
-
-</Accordion>
-
-### Advanced SDK Verification
-
-Advanced SDK Verification adds supply-chain protection for the Web SDK. It ensures that the code running in your users' browsers is exactly what AppsFlyer published. The SDK source code itself is identical to the standard integration; only the delivery and verification mechanisms differ.
-
-The Advanced SDK Verification:
-
-* Adds an extra layer of security against CDN compromise, DNS hijacking, and man-in-the-middle attacks.
-* Adds approximately 250ms to the SDK loading time.
-
-Advanced SDK Verification is optional. The standard integration remains fully supported and is the market standard for third-party analytics pixels. Advanced SDK Verification provides an additional layer of protection beyond that standard.
-
-If your website enforces a Content Security Policy (CSP) using a nonce, see [Content Security Policy (CSP)](#content-security-policy-csp) in the Manage privacy section for the nonce-extended variant of this snippet.
-
-<div id="advanced-verification-without-smart-banners" />
-
-<Accordion title="Without Smart Banners">
-
-```html
-<script>
-  // Queue — buffers AF() calls until the SDK is ready
-  window.AppsFlyerSdkObject = "AF";
-  window.AF = window.AF || function() {
-    (window.AF.q = window.AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)));
-  };
-  window.AF.id = window.AF.id || { pba: { webAppId: "WEB_DEV_KEY" } };
-  window.AF.plugins = {};
-
-  // Manifest loader config
-  window.AF_LOADER_CONFIG = {
-    baseUrl: "https://websdk.appsflyersdk.com",
-    plugins: ["pba"]
-  };
-
-  // Inject manifest loader
-  var loaderScript = document.createElement("script");
-  loaderScript.src = "https://websdk.appsflyersdk.com/manifestLoader.v1.js";
-  loaderScript.integrity = "sha384-Uncl2YwvjFpFz0PwEfl3bL/0JsOQcDFEpwXHzcN0MBavn9vvFEx5pZxADTq8h+CV";
-  loaderScript.crossOrigin = "anonymous";
-  loaderScript.async = true;
-  document.head.appendChild(loaderScript);
-</script>
-```
-
-</Accordion>
-
-<div id="advanced-verification-with-smart-banners" />
-
-<Accordion title="With Smart Banners">
-
-```html
-<script>
-  // Queue — buffers AF() calls until the SDK is ready
-  window.AppsFlyerSdkObject = "AF";
-  window.AF = window.AF || function() {
-    (window.AF.q = window.AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)));
-  };
-  window.AF.id = window.AF.id || { pba: { webAppId: "WEB_DEV_KEY" }, banners: { key: "YOUR_BANNER_KEY" } };
-  window.AF.plugins = {};
-
-  // Manifest loader config
-  window.AF_LOADER_CONFIG = {
-    baseUrl: "https://websdk.appsflyersdk.com",
-    plugins: ["banners", "pba"]
-  };
-
-  // Inject manifest loader
-  var loaderScript = document.createElement("script");
-  loaderScript.src = "https://websdk.appsflyersdk.com/manifestLoader.v1.js";
-  loaderScript.integrity = "sha384-Uncl2YwvjFpFz0PwEfl3bL/0JsOQcDFEpwXHzcN0MBavn9vvFEx5pZxADTq8h+CV";
-  loaderScript.crossOrigin = "anonymous";
-  loaderScript.async = true;
-  document.head.appendChild(loaderScript);
-</script>
-```
-
-</Accordion>
-
-## Integrating the Web SDK into the website
-
-<div id="installation-and-integration" />
-
-<Accordion title="Installation and integration">
-
-#### Considerations and actions required
-
-| Integration checklist |
-| --- |
-| To ensure that visits and events are recorded, the Web SDK must be installed on all pages of the website. |
-| Place the snippet code [that you selected above](#selecting-a-code-snippet) so that it loads as early as possible in the page scope. Do so by placing the code near the top of the head tag. |
-| If you are integrating the SDK using Google Tag Manager (GTM):<ul><li>Ensure that the SDK loads once per page load.</li><li>Set the SDK to load as soon as the page loads using <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/2772421?hl=en">GTM prioritization.</Anchor></li></ul> |
-| You can implement the Web SDK **with** or **without** Smart Banners. Follow the relevant instructions in the sections that follow. |
-| Integration mandatory requirements<ul><li>Visit recording</li><li>Event recording</li><li>Setting the [Customer User ID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid) (CUID) : If you don't have a CUID, reach out to your CSM to discuss alternatives.</li></ul>Validate the integration using the <Anchor target="_blank" href="/marketers/docs/test-pba-web-sdk-integration">test tool</Anchor> |
-
-**Before you start**:
-
-* Verify with the marketer that they have created the <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings">brand bundle.</Anchor>
-* For additional guidance see the <Anchor target="_blank" href="/marketers/docs/onboarding-guide-to-people-based-attribution">PBA onboarding guide</Anchor>.
-* Consider: If you already have the standalone Smart Banners web SDK, remove it and replace it with the Web SDK for both Smart Banners and People-based Attribution; do not simply add the standalone Web SDK for PBA.
-
-**Do the following:**
-
-* Get the Web SDK Web Dev Key. **Note!** This is not the same key used by mobile apps.
-  * **To get the Web Dev Key:**
-    1. In AppsFlyer, from the top menu, select the **My Apps** tab.
-    2. Click **View brand bundles.**
-    3. Copy the required **Web Dev Key. (WEB\_DEV\_KEY)**
-* If you implement Smart Banners, get the Smart Banner key.
-  * **To get the Smart Banner Key:**
-    1. In AppsFlyer, from the side menu, go to **Engage** > **Web to App** > **Smart Banners.**
-    2. Copy the required **Smart Banner Key**.
-* Permissions to add scripts to head tags on the website.
-* If you use Google Tag Manager, it must be integrated into the website.
-
-**Proceed to integrate web SDK by using one of the following options.**
-
-<Tabs>
-<Tab title="Native">
-
-#### JavaScript code snippet
-
-Integrate the web SDK using one of the following methods.
-
-#### **To install the Web SDK without Smart Banners:**
-
-1. Repeat the procedure that follows on all pages on your website.
-2. In the code snippet, that follows, replace the `WEB_DEV_KEY` using the key specified in the prerequisites.
-3. Paste the code snippet [you selected above](#selecting-a-code-snippet) into the head tag of your website. Paste it near the top of the head tag.
-
-#### **To implement the Web SDK with Smart Banners:**
-
-1. Repeat the procedure below on all pages of your website.
-2. In the code snippet [that you selected above](#selecting-a-code-snippet), replace the `WEB_DEV_KEY` and `YOUR_BANNER_KEY`using the keys specified in the prerequisites.
-3. Paste this code snippet into the website's head tag. Paste it near the top of the head tag.
-
-</Tab>
-
-<Tab title="Google Tag Manager">
-
-**To implement the web SDK with Google Tag Manager (GTM):**
-
-1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">Go to Google Tag Manager.</Anchor>
-2. Create a new tag for AppsFlyer web SDK.
-
-   ![Create a new tag for the AppsFlyer Web SDK in Google Tag Manager](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
-3. Select **Custom HTML** tag type.
-4. Give the tag a meaningful name.
-5. Do one of the following:
-   * If you are integrating the web SDK **without** Smart Banners:
-     1. Paste the code snippet [that you selected above](#selecting-a-code-snippet) into the **Tag Configuration** window.
-     2. In the code snippet, replace `WEB_DEV_KEY` using the key mentioned in the prerequisites.
-   * If you are integrating the web SDK **with** Smart Banners:
-     1. Paste the code snippet [that you selected above](#selecting-a-code-snippet) into the **Tag Configuration** window.
-     2. In the code snippet, replace the `WEB_DEV_KEY` and `YOUR_BANNER_KEY`using the keys mentioned in the prerequisites.
-6. Click **Save**.
-7. Do one of the following:
-   * **To add the trigger to all pages:**
-     1. Click **Add Trigger**.
-
-        ![gtm-af-tag-sdk-trigger.png](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)
-     2. Select **All Pages**.
-     3. Click **Save.**
-     4. Enter a tag name and click **Save**.  
-        You have completed the procedure.
-   * **To add the trigger to specific pages:**
-     1. Click **Save Tag**.
-     2. In the GTM main window, select **Triggers.** Click **New**.
-     3. Click the pen icon.
-     4. Choose the **Page View** trigger type.  
-        ![PBAselectTrigger_us-en.jpg](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)
-     5. Select **Some Page Views.**
-     6. Set the page and trigger conditions as needed.
-     7. Click **Save.**
-     8. Associate the trigger to the AppsFlyer Web SDK tag. To do so:
-        1. In the GTM main window, select Tags.
-        2. Select the tag you created earlier.
-        3. In the triggering panel, click on the pen.
-        4. Select the page view trigger you created earlier.
-
-           ![Select the page view trigger created earlier in Google Tag Manager](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)
-        5. Click **Save**.
-
-</Tab>
-
-<Tab title="Adobe Launch Tag Manager">
-
-1. [Create a property in Adobe Experience Cloud](/docs/pba-web-sdk-integration-guide#create-a-property-in-adobe-experience-cloud)
-2. [Add the Web SDK to the Adobe Launch property](/docs/pba-web-sdk-integration-guide#add-the-web-sdk-to-the-adobe-launch-property)
-3. [Add the Adobe Launch tag to the website](/docs/pba-web-sdk-integration-guide#add-the-adobe-launch-tag-to-the-website)
-4. [Publish the Adobe Launch environment](/docs/pba-web-sdk-integration-guide#publish-the-adobe-launch-environment)
-
-<div id="create-a-property-in-adobe-experience-cloud" />
-
-<Accordion title="Create a property in Adobe Experience Cloud">
-
-![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
-
-1. Go to **Adobe Experience Cloud** > **Launch**.
-2. Under **Adobe Experience Cloud Launch**, click **Go to Launch**.
-3. Click **New Property**.
-4. Name the property.
-5. Under **Platform**, select **Web**.
-6. Enter your website domain.
-7. Click **Save**.
-
-</Accordion>
-
-<div id="add-the-web-sdk-to-the-adobe-launch-property" />
-
-<Accordion title="Add the Web SDK to the Adobe Launch property">
-
-<Image alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
-
-1. On the **My web property** page, select the **Rules** tab.
-2. Name the rule. Recommended to use, **Load web SDK**.
-3. In the **IF** section, under **EVENTS**, click **+Add**.
-   * Under **Event Type**, select **Core - DOM Ready**
-   * Click **Keep Changes**.
-4. In the **THEN** section, under **Actions**, click **+Add**.
-   * Under **Action Type** > **Custom Code**.
-   * Select **JavaScript** > **Open Editor** and paste the Web SDK snippet **without the &lt;script> tags**.
-   * Click **Keep Changes** to close the code editor.
-5. Click **Save**.
-
-</Accordion>
-
-<div id="add-the-adobe-launch-tag-to-the-website" />
-
-<Accordion title="Add the Adobe Launch tag to the website">
-
-![adobe_tag.png](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)
-
-1. On the **My web property** page, select the **Environments** tab.
-2. Find the row with the environment you want to publish (development or production).
-   * Under the **INSTALL** header, click the box icon on the relevant row; this is usually a production environment.
-   * See the section about publishing the **Adobe Launch** environment.
-3. In the **Web Install Instructions** dialog box:
-   * Copy the script code snippet.
-   * Close the dialog box.
-4. Paste the code snippet into the &lt;head> tag of the website.
-
-</Accordion>
-
-<div id="publish-the-adobe-launch-environment" />
-
-<Accordion title="Publish the Adobe Launch environment">
-
-![adobe_publishing_env.png](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)
-
-1. On the **My web property** page, go to the **Publishing** tab.
-2. Under the **Development** section, click **Add New Library.**
-   * Name the library and choose an environment.
-   * Under **RESOURCE CHANGES**, click **Add a Resource.**
-   * Click **Rules** > **Load web SDK** > **Latest** > **Select & Create a New Revision**.
-   * Click **Save**.
-3. Under the **Development** section:
-   * Next to the newly created library, click the Action menu (3 dots) > select **Build for Development**.
-   * Click the action menu again > select **Submit for Approval**.
-4. Under the **Submitted** section:
-   * Click the action menu > select **Build for Staging**.
-   * Click the action menu again > select **Approve for Publishing**.
-5. Under the **Approved** section:
-   * Click the action menu > select **Build & Publish to Production.**
-   * The process is now complete.
-
-</Accordion>
-
-When the website loads on a mobile device, the active creative displays in the banner. To display the banner on specific pages or according to user actions, see <Anchor target="_blank" href="https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html">Adobe Launch rules</Anchor>.
-
-</Tab>
-</Tabs>
-
-</Accordion>
-
-<div id="ensure-that-the-sdk-is-working" />
-
-<Accordion title="Ensure that the SDK is working">
-
-Once installed verify that the AppsFlyer web SDK is called by the visitor's browser and that messages are sending. This is done by examining the message network connection reported in the browser.
-
-**To ensure that the SDK loads and is working:**
-
-1. Go to the website.
-2. Open the browser developer tools.
-
-   ![WebSDK_us-en.jpg](https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg)
-3. Go to the (A) **Network** tab.
-4. Refresh the page.
-5. Filter by (B) **wa.appsflyer**.
-6. Select the (C) **events** message.
-7. In the headers tab, (D) ensure that:
-   * **Request URL** is wa.appsflyer.com/events.
-   * site\_id query parameter= `WEB_DEV_KEY`.
-   * (E) **status code is 200**.
-8. Verify that the value of site\_id is equal to the value of `WEB_DEV_KEY` in the brand bundle settings:
-   1. In AppsFlyer, from the side menu, select **Settings** > **Brand Bundles.**
-   2. Click **Web dev key,** doing so copies the key.
-   3. Paste the key in any location (new browser tab, notepad ) to display the key.
-   4. Verify that the site\_id and `WEB_DEV_KEY` match.
-9. Ensure that the SDK loads only once. Multiple SDK loading can cause the SDK to stop functioning.
-
-</Accordion>
-
-<div id="sending-events-optinoptout" />
-
-<Accordion title="Sending events opt-in/opt-out">
-
-![5578-VistiorPrivacyOptIn_us-en.png](https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png)
-
-The Web SDK sends visitor event data to AppsFlyer. You can control, stop, or start event sending as described in this section.
-
-Consider:
-
-* **SDK initial state setting**: Determines if the SDK sends events on initially loading the web page or if the SDK must wait until you give an explicit command to begin sending events. The setting is contained within the web snippet.
-* **Explicit control:** Use to stop or start sending events. For example, if you implement data opt-in/opt-out banners (aka cookie consent banners), integrate the explicit commands into your banner controls to start and stop sending events. The explicit control has priority over the SDK initial state setting, and uses persistent first-party cookies having the following characteristics:
-  * Set on the website domain.
-  * Expire after a period set by the Web SDK or as determined by the browser. After cookie expiration, the Web SDK reverts to the initial state setting.
-  * The Web SDK cookie doesn't interfere with and is always subject to, the browser-specific cookie settings.
-
-#### SDK initial state setting
-
-| Setting | Snippet required |
-| --- | --- |
-| [Default] Send events | Make the following change to the Web SDK snippet. If necessary, add the measurementStatus parameter:<br /><br />Set measurementStatus=true<br /><br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:true}` |
-| Don't send events | Make the following change to the Web SDK snippet. If necessary add the measurementStatus parameter:<br /><br />Set measurementStatus=false  <br />  <br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:false}` |
-
-#### Explicit control
-
-| Option | Command |
-| --- | --- |
-| Start sending events (opt-in) | `window.AF_SDK.PLUGINS.PBA.enableMeasurement()` |
-| Stop sending events (opt-out) | `window.AF_SDK.PLUGINS.PBA.disableMeasurement()` |
-
-</Accordion>
-
-<div id="implement-a-content-security-policy-csp-policy" />
-
-<Accordion title="Implement a Content Security Policy (CSP) policy">
-
-If your website requires strict security or data privacy protocols, use the following mechanisms to configure how the Web SDK interacts with your environment and your data.
-
-#### Content Security Policy (CSP)
-
-If your website requires JavaScript to be secured by a CSP, the Web SDK supports two approaches depending on your CSP configuration.
-
-* **CSP using self**: Add `https://websdk.appsflyersdk.com` to your `script-src` allowlist. This works for both the Standard Web SDK and the Advanced SDK Verification.
-* **CSP using nonce**: If your policy uses `script-src 'nonce-...'`, you can use [the nonce-extended variant of Advanced SDK Verification](#advanced-sdk-verification-with-csp-nonce-snippets). This forwards the nonce to all three script tags required by the verification process. Replace `{{CSP_NONCE}}` with your server-generated, per-request nonce value.
-
-The table below shows which CSP policies are compatible with the nonce-extended variant.
-
-| Policy | Works | Notes |
-| --- | --- | --- |
-| `script-src 'self'` | No | External CDN origin not allowed; inline script also blocked. |
-| `script-src 'self' https://websdk.appsflyersdk.com` | Partial | Allows loader and SDK, but inline setup script still blocked. |
-| `script-src 'nonce-...' https://websdk.appsflyersdk.com` | Yes | Nonce covers inline script and loader; SDK tag gets nonce forwarded by the loader. |
-| `script-src 'nonce-...' 'strict-dynamic'` | Yes (recommended) | Nonce covers inline script and loader; `strict-dynamic` propagates trust to the dynamically injected SDK tag. No CDN origin needed in the allowlist. |
-
-CSP policy compatibility
-
-#### Advanced SDK Verification with CSP nonce snippets
-
-<div id="nonce-without-smart-banners" />
-
-<Accordion title="Without Smart Banners">
-
-```html
-<script nonce="{{CSP_NONCE}}">
-  // Queue — buffers AF() calls until the SDK is ready
-  window.AppsFlyerSdkObject = "AF";
-  window.AF = window.AF || function() {
-    (window.AF.q = window.AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)));
-  };
-  window.AF.id = window.AF.id || { pba: { webAppId: "WEB_DEV_KEY" } };
-  window.AF.plugins = {};
-
-  // Manifest loader config — nonce forwarded to the injected SDK <script> tag
-  window.AF_LOADER_CONFIG = {
-    baseUrl: "https://websdk.appsflyersdk.com",
-    plugins: ["pba"],
-    nonce: "{{CSP_NONCE}}"
-  };
-
-  // Inject manifest loader
-  var loaderScript = document.createElement("script");
-  loaderScript.src = "https://websdk.appsflyersdk.com/manifestLoader.v1.js";
-  loaderScript.integrity = "sha384-Uncl2YwvjFpFz0PwEfl3bL/0JsOQcDFEpwXHzcN0MBavn9vvFEx5pZxADTq8h+CV";
-  loaderScript.crossOrigin = "anonymous";
-  loaderScript.nonce = "{{CSP_NONCE}}";
-  loaderScript.async = true;
-  document.head.appendChild(loaderScript);
-</script>
-```
-
-</Accordion>
-
-<div id="nonce-with-smart-banners" />
-
-<Accordion title="With Smart Banners">
-
-```html
-<script nonce="{{CSP_NONCE}}">
-  // Queue — buffers AF() calls until the SDK is ready
-  window.AppsFlyerSdkObject = "AF";
-  window.AF = window.AF || function() {
-    (window.AF.q = window.AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)));
-  };
-  window.AF.id = window.AF.id || { pba: { webAppId: "WEB_DEV_KEY" }, banners: { key: "YOUR_BANNER_KEY" } };
-  window.AF.plugins = {};
-
-  // Manifest loader config — nonce forwarded to the injected SDK <script> tag
-  window.AF_LOADER_CONFIG = {
-    baseUrl: "https://websdk.appsflyersdk.com",
-    plugins: ["banners", "pba"],
-    nonce: "{{CSP_NONCE}}"
-  };
-
-  // Inject manifest loader
-  var loaderScript = document.createElement("script");
-  loaderScript.src = "https://websdk.appsflyersdk.com/manifestLoader.v1.js";
-  loaderScript.integrity = "sha384-Uncl2YwvjFpFz0PwEfl3bL/0JsOQcDFEpwXHzcN0MBavn9vvFEx5pZxADTq8h+CV";
-  loaderScript.crossOrigin = "anonymous";
-  loaderScript.nonce = "{{CSP_NONCE}}";
-  loaderScript.async = true;
-  document.head.appendChild(loaderScript);
-</script>
-```
-
-</Accordion>
-
-</Accordion>
-
-<div id="discard-query-params" />
-
-<Accordion title="Discard query params">
-
-If your query params contain data that you don't want AppsFlyer to record, you can instruct the AppsFlyer platform to discard some or all query params. By doing so they aren't available in raw data or reports.
-
-You can implement the methods described in relation to urls, referrers, and header\_referer.
-
-#### Query discard options
-
-| Method | Description |
-| --- | --- |
-| Discard all query params | Append `af_url=true` to the url |
-| Discard specified query params | By setting a query param mask you specify which params are discarded.  Set the discard mask using `af_url_mask=param` where param is the parameter name.<br /><br />Example:<br /><br />**Url with mask:**<br /><br />`param1=value1&param2=value2&param3=value3&af_url_mask=param2;param3`<br /><br />**Url after discarding:**<br /><br />`param1=value1&af_url_mask=param2;param3` |
-
-</Accordion>
-
-## Principles of event recording
-
-<div id="conversion-and-standard-events" />
-
-<Accordion title="Conversion and standard events">
-
-* User events are recorded by the SDK, which sends the event to the AppsFlyer platform.
-* Using the <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#web-event-settings">conversion events</Anchor> list, set by the marketer, AppsFlyer splits the events into standard and conversion events.
-* Conversion event data is available in PBA dashboards.
-* Conversion and standard event data are available in <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">raw data reports.</Anchor>
-
-### Conversion events
-
-* Conversion events provide insights into your marketing and business efforts. Conversion events include purchases, downloads, signups, and subscriptions.
-* PBA attributes conversion events to the media source that drove the user to visit the website.
-* By identifying the attributed media source, you can measure and differentiate the quality of users brought by different media sources.
-* Conversion events are used to record revenue and calculate ROI.
-* Use them to compare the budget of ads for specific media sources against the revenue generated from the users that come from these media sources.
-
-### Standard events
-
-* Standard events are used to validate the user journey and funnels that lead to conversions.
-* Use them to measure user activity and highlight media sources that bring engaged users.
-* Record user activity to mark users for re-engagement campaigns.
-
-### Recording events
-
-Trigger the web SDK to record events when certain conditions are met, for example, when a landing page loads or when users interact with website elements. See [examples of recording events](#recording-events::f1e16eae).
-
-</Accordion>
-
-<div id="identifying-users-using-customer-user-id-cuid" />
-
-<Accordion title="Identifying users using customer user ID (CUID)">
-
-* Web users are identified in AppsFlyer by using the unique CUID you allocate them. Typically the CUID is managed by your backend servers.
-* Use the same CUID value you use in the mobile environment. Doing so enables you to have a holistic view of user activity across multiple platforms. The function in the mobile SDK is setCustomerUserId function (<Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">iOS</Anchor>, <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">Android, Unity</Anchor>).
-* To set the CUID in the web SDK:
-  * Set the CUID at the earliest point that you have access to it. Most times this means you need to wait for the user to identify via login or sign up.
-  * Fire the JavaScript call to setCustomerUserId() as shown in the example that follows.   
-    Note! Send the CUID as a string even if it is a number. Do so enclosing it in quotation marks.
-* If you implement web S2S, consider that you may need to notify PBA when you <Anchor target="_blank" href="/marketers/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method">associate</Anchor> a CUID with a web visitor id in your backend.
-* CUIDs must not contain <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#cuid-and-privacy">directly identifiable personal information</Anchor> such as a phone number or email address.
-
-**Example: set the CUID**
-
-```javascript
-// Associate all current user web events to distinct ID 663274 
-AF('pba', 'setCustomerUserId' , '663274')
-```
-
-</Accordion>
-
-<div id="web-sdk-event-parameters" />
-
-<Accordion title="Web SDK event parameters">
-
-| Parameter name | Mandatory | Description |
-| --- | --- | --- |
-| eventType | Yes | Event type<br /><br />Format: String<br /><br />Always populate this parameter with EVENT.<br /><br />Example: eventType: "EVENT" |
-| eventName | Yes | Event name<br /><br />Format: String<br /><br />Example: Purchase, Subscription |
-| ~~eventCategory~~ | No | This parameter is deprecated and will be removed from the system at a date to be announced. Use the eventValue parameter instead. |
-| ~~eventLabel~~ | No | This parameter is deprecated and will be removed from the system at a date to be announced. Use the eventValue parameter instead. |
-| eventRevenue | No | Revenue assigned to a conversion event<br /><br />Format: Float |
-| eventRevenueCurrency | No | Revenue currency<ul><li>3 character <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> currency code</li><li>Default: USD</li></ul>Format: String |
-| eventValue | No | Map of event parameters describing the event. Use this parameter to send rich in-app events like product SKU, line item price.<br /><br />Format: JSON<br /><br />**Example:** To send SKU ABC123, having blue color and a unit price of $3.99<br /><br />`{"sku": "ABC123", “color": "blue", "unit_price":3.99,"currency": "USD"}`<br /><br />**Limitation:** 1000 characters. Do not exceed this it will be truncated. |
-
-</Accordion>
-
-<div id="recording-event-scenarios" />
-
-<Accordion title="Recording event scenarios">
-
-Example event
-
-```javascript
-// purchase event of shoes with associated revenue
-AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12, eventValue: {"key1": 123, "key2": "name"}});
-```
-
-The events that you send depend on the nature of your web app. For example, an online store app requires a set of events that differ from that of a news outlet. See the scenarios that follow to get a sense of the events you should and send and when.
-
-#### Online store
-
-Suppose you are managing an online store. Some standard events that you might want to record would be:
-
-* Search: standard event
-* Add to cart: standard event
-* Remove from cart: standard event
-* Purchase: conversion event
-
-News outlet
-
-Suppose you are managing a new outlet. Some events that you might want to record would be:
-
-* Signup: conversion event
-* Purchase subscription: conversion event
-
-</Accordion>
-
-<div id="ensuring-that-events-are-sent" />
-
-<Accordion title="Ensuring that events are sent">
-
-This part is intended for web developers.
-
-<Anchor target="_blank" href="/marketers/docs/test-pba-web-sdk-integration">Test PBA web SDK integration:</Anchor> view test events in real-time.
-
-**To ensure that events are sent to AppsFlye**r:
-
-1. Open the website.
-2. Open the browser developer tools.
-   * <Anchor target="_blank" href="https://developers.google.com/web/tools/chrome-devtools/open#console">How to open the developer tools in Chrome</Anchor>
-   * <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/EnableWebInspector/EnableWebInspector.html">How to open the developer tools in Safari</Anchor>
-3. Switch to the Network tab.
-4. Trigger the event.
-5. Filter by message.
-
-   ![pba_af_event.png](https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png)
-6. Look for a network request that starts with destination wa.appsflyer.com (see screenshot below).
-7. Ensure that:
-   1. The status code is 200.
-   2. The Request Payload aligns with the parameters in the event.
-
-</Accordion>
-
-## Examples
-
-<div id="recording-events::f1e16eae" />
-
-<Accordion title="Recording events">
-
-The code provided is for illustrative purposes only. Don't use this code as-is.
-
-* Assumptions: The Web SDK is already loaded by the page by the time the event is sent.
-* The example scenarios contain the code for recording events when:
-  * a landing page loads.
-  * users interact with the website.
-
-<Tabs>
-<Tab title="Native event recording">
-
-**Recording events when a landing page loads**
-
-* You have a subscription page for newsletters and want to record subscriptions.
-* You can also set up a thank you page and redirect users to it after they subscribe.
-
-```html
-<html>
-    <head>
-        <!-- Assume that the server returns a response with details about the newly subscribed user -->
-        <!-- Alternatively, you can extract data from localStorage or cookies,
-            in case data was set in either of them during the subscription process
-        -->
-        <script>window.onload = function(){
-            AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category': 'holiday_promotion', eventValue: {'label' : 'newspaper'}, eventName: 'subscription',}); } </script> </head> <body> <h1>Thank You for Subscribing to Our Newsletter</h1> </body> </html>
-```
-
-* The preceding code contains a basic HTML page. The web page needs to load the Web SDK in order for you to send events.
-* Once the page loads, after the user is redirected to it, the window loading method calls the AF() method to send the subscription event to AppsFlyer.
-
-**Recording events when users interact with the website**
-
-* You have an eCommerce website and want to record checkout events.
-* When the user clicks on the checkout button, the Web SDK sends an event to AppsFlyer.
-
-```html
-<html>
-<head>
-    <!-- Assume that data about products in the shopping cart
-    is stored in localStorage -->
-    <script>
-        window.onload = function () {
-            document.getElementById('checkout').addEventListener('click', function () {
-                AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'});
-            });
-        }
-    </script>
-</head>
-<body>
-    <h1>Shopping Cart</h1>
-    <h2>Shirt</h2>
-    <p>
-        <ul>
-            <li>Color: Blue</li>
-            <li>Quantity: 2</li>
-            <li>Price: $20</li>
-        </ul>
-    </p>
-    <h2>Pants</h2>
-    <p>
-        <ul>
-            <li>Color: Black</li>
-            <li>Quantity: 3</li>
-            <li>Price: $15</li>
-        </ul>
-    </p>
-    <button id='checkout'>Checkout</button>
-</body>
-</html>
-```
-
-The preceding code above shows a basic HTML page. The web page needs to load the Web SDK in order for you to send events.
-
-* Once the page loads, it binds a click listener to the **Checkout** button.
-* When the user clicks the **Checkout** button the callback function:
-  * fetches data from localStorage.
-  * calls the AF() method and passes data to it.
-* The AF() method sends the event to AppsFlyer.
-
-</Tab>
-
-<Tab title="Tag Manager event recording">
-
-**Recording events when a landing page loads**
-
-* You have a subscription page for newsletters and want to record successful subscriptions.
-* You set up a thank you page to which users are redirected after successfully subscribing.
-
-1. Set up a thank you page
-
-   ```html Markup
-   <html>
-   <head>
-       <script>
-            // Google Tag Manager loads the Web SDK
-           <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-           })(window,document,'script','dataLayer','GTM-XXXX');
-       </script>
-        <script>
-           // Assume that the server returns a response with details about the newly subscribed user
-           function getResponseFromServer() {
-               return JSON.stringify({ action: 'subscribe', category: 'site actions', label: userEmail })
-           }
-           //Alternatively, you can extract data from localStorage or cookies,
-           //in case data was set in either of them during the subscription process
-           localStorage.setItem('data', JSON.stringify({ action: 'subscribe', category: 'site actions', label: 'user@email.com' }));
-       </script>
-   </head>
-   <body>
-       <h1>Thank You for Subscribing to Our Newsletter</h1>
-   </body>
-   </html>
-   ```
-
-   The preceding code loads GTM which in turn loads the Web SDK. Thereafter Two other actions take place in the script. One is a function that gets a response from the server with user details. The other sets data to local storage. GTM has access to both function and localStorage. You can call the function and access localStorage using GTM.
-2. Add a new tag for attributing subscriptions after the thank you page loads
-
-   ![Add a new tag for attributing subscriptions in Google Tag Manager](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
-3. Give the tag a distinct name and select the **Custom HTML** tag type option.
-4. Put the following code in the **Custom HTML**.
-
-   ```html
-   <script> 
-   AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
-   ```
-
-   ![gtm_tag_after_subscribe.png](https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png)
-5. Expand the **Advanced Settings** control, and then the **Tag Sequencing** control below the text area and make sure it is set up to fire the conversion after the tag was executed.
-
-   ![Tag Sequencing settings in Google Tag Manager](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
-6. To fire the conversion tag set a trigger. In the example, the trigger is fired on loading the Thank you page.
-
-   ![Trigger set to fire on the Thank You page load](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
-
-**Recording events when users interact with the website**
-
-* You have an eCommerce website and want to record checkout events.
-* After the user clicks on the checkout button, the Web SDK sends an event to AppsFlyer.
-
-1. Setup a checkout page
-
-   ```html Markup
-   <html>
-   <head>
-       <script>
-           // Google Tag Manager loads the Web SDK
-           <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-           })(window,document,'script','dataLayer','GTM-XXXX');
-       </script>
-   </head>
-   <body>
-       <h1>Shopping Cart</h1>
-       <h2>Shirt</h2>
-       <p>
-           <ul>
-               <li>Color: Blue</li>
-               <li>Quantity: 2</li>
-               <li>Price: $20</li>
-           </ul>
-       </p>
-       <h2>Pants</h2>
-       <p>
-           <ul>
-               <li>Color: Black</li>
-               <li>Quantity: 3</li>
-               <li>Price: $15</li>
-           </ul>
-       </p>
-       <button id='checkout'>Checkout</button>
-   </body>
-   </html>
-   ```
-
-   The preceding code loads the Web SDK using GTM The rest is simply HTML that mimics a shopping cart page. Notice the **Checkout** button that has the ID checkout. It is required when setting GTM to handle a click on that button.
-2. In GTM, click on **Variables**, click on **Configure** and check **Click Element** in the list of **Built-In Variables.**  
-
-   ![gtm-create-variable.png](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)
-3. Create a new variable, give it a meaningful name, and choose the type of **All Elements.**  
-
-   ![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)
-4. In the trigger configuration, choose **Some Clicks**, choose **Click Element** that **matches CSS Selector** of #checkout.  
-
-   ![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
-5. Create a new tag for the checkout action, choose type Custom HTML, and set the trigger to the checkout trigger.
-
-   ```html
-   <script>
-    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
-   ```
-
-   ![gtm-checkout-tag.png](https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png)
-
-</Tab>
-</Tabs>
-
-* Make sure the web SDK functions tag is loaded before the event is fired.
-* Don't send special characters in event values, like currency symbols in revenue value.
-* Value strings should be shorter than 50 characters.
-
-</Accordion>
-
-<div id="setting-customer-user-id-after-signup" />
-
-<Accordion title="Setting customer user ID after signup">
-
-The code provided in these examples is for reference only. Do not use this code as-is. If you are not sure how to use this code, consult your web developer. 
-
-Assumption: The Web SDK is loaded by the page before the event is sent; don't load the SDK again.
-
-User scenario:
-
-* A user signs up to your website.
-* The website code gathers the user details and sends it to your server.
-* The server generates a unique CUID for the user.
-* In the thank you page after signup, you query the server for the new CUID.
-* Using the server response, you set AppsFlyer CUID using the Web SDK setCustomerUserId() method.
-
-<Tabs>
-<Tab title="Native">
-
-Set up a signup page:
-
-```html Markup
 <html>
 <head>
     <!-- The Web SDK script loads first -->
     <script>
 !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){
 (t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},
-t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,
+t. AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,
 o.src="https://websdk.appsflyersdk.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),
 p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {webAppId: "WEB_DEV_KEY"}})
     </script>
@@ -943,17 +91,19 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 </html>
 ```
 
-The preceding code above is a simple signup form. When the form is submitted, the email is stored in localStorage. When the user reaches the thank you page, the user email address is sent to the server to generate the unique CUID for the email address.
+</Accordion>
 
-Set up a thank you page for users who sign up:
+<div id="standard-with-smart-banners" />
 
-```html Markup
+<Accordion title="Con Smart Banners">
+
+```html
 <html>
 <head>
     <script>
 !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){
 (t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},
-t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,
+t. AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,
 o.src="https://websdk.appsflyersdk.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),
 p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {webAppId: "WEB_DEV_KEY"}})
     </script>
@@ -976,57 +126,878 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 </html>
 ```
 
-The code makes use of the fetch API. It sends the server the email address entered by the user. Assuming that the server creates a user with a unique CUID upon signup, sending the email address to the server is for the purpose of receiving a unique CUID. The server responds with a unique CUID and this unique CUID is the value that is passed with the setCustomerUserId method.
+</Accordion>
+
+### Advanced SDK Verification
+
+Advanced SDK Verification agrega protección a la cadena de suministro para el SDK web. Garantiza que el código que se ejecuta en los navegadores de tus usuarios sea exactamente el que publicó AppsFlyer. El código fuente del SDK en sí es idéntico a la integración estándar; solo difieren los mecanismos de entrega y verificación.
+
+Advanced SDK Verification:
+
+* Agrega una capa adicional de seguridad contra compromisos de CDN, DNS hijacking y ataques de intermediarios.
+* Agrega aproximadamente 250 ms al tiempo de carga del SDK.
+
+Advanced SDK Verification es opcional. La integración estándar sigue siendo totalmente compatible y es el estándar del mercado para los píxeles de análisis de terceros. Advanced SDK Verification proporciona una capa adicional de protección más allá de ese estándar.
+
+Si tu sitio web aplica una Política de Seguridad de Contenido (CSP) mediante una nonce, consulta [Política de Seguridad de Contenido (CSP)](#política-de-seguridad-de-contenido-csp) en la sección “Gestionar privacidad” para ver la variante extendida de este fragmento.
+
+<Accordion title="Sin Smart Banners">
+
+```html
+<script>
+  // Queue — buffers AF() calls until the SDK is ready
+  window. AppsFlyerSdkObject = "AF";
+  window. AF = window. AF || function() {
+    (window.AF.q = window. AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)));
+  };
+  window. AF.id = window. AF.id || { pba: { webAppId: "WEB_DEV_KEY" } };
+  window. AF.plugins = {};
+
+  // Manifest loader config
+  window. AF_LOADER_CONFIG = {
+    baseUrl: "https://websdk.appsflyersdk.com",
+    plugins: ["pba"]
+  };
+
+  // Inject manifest loader
+  var loaderScript = document.createElement("script");
+  loaderScript.src = "https://websdk.appsflyersdk.com/manifestLoader.v1.js";
+  loaderScript.integrity = "sha384-Uncl2YwvjFpFz0PwEfl3bL/0JsOQcDFEpwXHzcN0MBavn9vvFEx5pZxADTq8h+CV";
+  loaderScript.crossOrigin = "anonymous";
+  loaderScript.async = true;
+  document.head.appendChild(loaderScript);
+</script>
+```
+
+</Accordion>
+
+<Accordion title="Con Smart Banners">
+
+```html
+<script>
+  // Queue — buffers AF() calls until the SDK is ready
+  window. AppsFlyerSdkObject = "AF";
+  window. AF = window. AF || function() {
+    (window.AF.q = window. AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)));
+  };
+  window. AF.id = window. AF.id || { pba: { webAppId: "WEB_DEV_KEY" }, banners: { key: "YOUR_BANNER_KEY" } };
+  window. AF.plugins = {};
+
+  // Manifest loader config
+  window. AF_LOADER_CONFIG = {
+    baseUrl: "https://websdk.appsflyersdk.com",
+    plugins: ["banners", "pba"]
+  };
+
+  // Inject manifest loader
+  var loaderScript = document.createElement("script");
+  loaderScript.src = "https://websdk.appsflyersdk.com/manifestLoader.v1.js";
+  loaderScript.integrity = "sha384-Uncl2YwvjFpFz0PwEfl3bL/0JsOQcDFEpwXHzcN0MBavn9vvFEx5pZxADTq8h+CV";
+  loaderScript.crossOrigin = "anonymous";
+  loaderScript.async = true;
+  document.head.appendChild(loaderScript);
+</script>
+```
+
+</Accordion>
+
+## Integración del SDK web en el sitio web
+
+<div id="installation-and-integration" />
+
+<Accordion title="Instalación e integración">
+
+#### Consideraciones y acciones requeridas
+
+| Lista de verificación de la integración |
+| --- |
+| Para garantizar que se registren las visitas y los eventos, el SDK web debe instalarse en todas las páginas del sitio web. |
+| Coloca el fragmento de código [que has seleccionado anteriormente](#selección-de-un-fragmento-de-código) para que se cargue lo antes posible dentro del alcance de la página. Para ello, inserta el código cerca de la parte superior de la etiqueta de encabezado. |
+| Si vas a integrar el SDK mediante Google Tag Manager (GTM):<ul><li>Asegúrate de que el SDK se cargue una vez por cada carga de la página.</li><li>Configura el SDK para que se cargue tan pronto como se cargue la página mediante la <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/2772421?hl=en">priorización GTM</Anchor>.</li></ul> |
+| Puedes implementar el SDK web **con** o **sin** Smart Banners. Sigue las instrucciones pertinentes en las secciones que se indican a continuación. |
+| Requisitos obligatorios para la integración<ul><li>Registro de visitas</li><li>Registro de eventos</li><li>Configuración del [Customer User ID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid) (CUID): Si no tienes un CUID, contacta con tu CSM para analizar las alternativas.</li></ul>Valida la integración mediante la <Anchor target="_blank" href="/marketers/es/docs/test-pba-web-sdk-integration">herramienta de prueba</Anchor>. |
+
+**Antes de empezar**:
+
+* Verifica con el marketer que haya creado el <Anchor target="_blank" href="/marketers/es/docs/pba-brand-bundles-and-settings">paquete de marca</Anchor>.
+* Para obtener orientación adicional, consulta la <Anchor target="_blank" href="/marketers/es/docs/onboarding-guide-to-people-based-attribution">Guía de onboarding de PBA</Anchor>.
+* Consideración: Si ya tienes el SDK web independiente de Smart Banners, elimínalo y reemplázalo con el SDK web tanto para los Smart Banners como para la atribución people-based; no agregues solo el SDK web independiente para PBA.
+
+**Haz lo siguiente:**
+
+* Obtén la clave de desarrollador web del SDK web. **¡Nota!** Esta no es la misma clave que utilizan las aplicaciones móviles.
+  * **Para obtener la clave de desarrollador web:**
+    1. En AppsFlyer, en el menú superior, selecciona la pestaña **Mis aplicaciones**.
+    2. Haz clic en **Ver paquetes de marca**.
+    3. Copia la **clave de desarrollador web requerida. (WEB\_DEV\_KEY)**
+* Si implementas Smart Banners, obtén la clave del Smart Banner.
+  * **Para obtener la clave del Smart Banner:**
+    1. En AppsFlyer, desde el menú lateral, ve a **Engage** > **Web-to-App** > **Smart Banners.**
+    2. Copia la **clave del Smart Banner** requerida.
+* Obtén los permisos para agregar scripts a etiquetas de encabezado en el sitio web.
+* Si utilizas Google Tag Manager, deberá estar integrado en el sitio web.
+
+**A continuación, integra el SDK web utilizando una de las siguientes opciones.**
+
+<Tabs>
+<Tab title="Nativo">
+
+#### Fragmento de código JavaScript
+
+Integra el SDK web utilizando uno de los siguientes métodos.
+
+#### **Para instalar el SDK web sin Smart Banners:**
+
+1. Repite el procedimiento que sigue en todas las páginas de tu sitio web.
+2. En el fragmento de código que se indica a continuación, reemplaza `WEB_DEV_KEY` con la clave especificada en los requisitos previos.
+3. Pega el fragmento de código [que has seleccionado anteriormente](#selección-de-un-fragmento-de-código) en la etiqueta de encabezado de tu sitio web. Pégalo cerca de la parte superior de la etiqueta de encabezado.
+
+#### **Para implementar el SDK web con Smart Banners:**
+
+1. Repite el procedimiento a continuación en todas las páginas de tu sitio web.
+2. En el fragmento de código [que has seleccionado anteriormente](#selección-de-un-fragmento-de-código), reemplaza `WEB_DEV_KEY` y `YOUR_BANNER_KEY` con las claves especificadas en los requisitos previos.
+3. Pega este fragmento de código en la etiqueta de encabezado del sitio web. Pégalo cerca de la parte superior de la etiqueta de encabezado.
 
 </Tab>
 
 <Tab title="Google Tag Manager">
 
-1. Set up a signup page:
+**Para implementar el SDK web con Google Tag Manager (GTM):**
+
+1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">Ve a Google Tag Manager.</Anchor>
+2. Crea una nueva etiqueta para el SDK web de AppsFlyer.
+
+   ![Crea una nueva etiqueta para el SDK web de AppsFlyer en Google Tag Manager](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
+3. Selecciona **HTML personalizado** el tipo de etiqueta.
+4. Asigna un nombre descriptivo a la etiqueta.
+5. Realice una de las siguientes acciones:
+   * Si vas a integrar el SDK web **sin** Smart Banners:
+     1. Pega el fragmento de código [que seleccionaste arriba](#selección-de-un-fragmento-de-código) en la ventana **Configuración de etiquetas**.
+     2. En el fragmento de código, sustituye `WEB_DEV_KEY` por la clave mencionada en los requisitos previos.
+   * Si vas a integrar el SDK web **con** Smart Banners:
+     1. Pega el fragmento de código [que seleccionaste arriba](#selección-de-un-fragmento-de-código) en la ventana **Configuración de etiquetas**.
+     2. En el fragmento de código, sustituye el `WEB_DEV_KEY` y `YOUR_BANNER_KEY` usando las claves mencionadas en los requisitos previos.
+6. Haz clic en **Guardar**.
+7. Realice una de las siguientes acciones:
+   * **Para agregar el activador a todas las páginas:**
+     1. Haz clic en **Agregar activador**.
+
+        ![gtm-af-tag-sdk-trigger.png](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)
+     2. Selecciona **Todas las páginas**.
+     3. Haz clic en **Guardar**.
+     4. Escribe un nombre de etiqueta y haz clic en **Guardar**.  
+        Has completado el procedimiento.
+   * **Para agregar el activador a páginas específicas:**
+     1. Haz clic en **Guardar etiqueta**.
+     2. En la ventana principal de GTM, selecciona **Activadores.** Haz clic en **Nuevo**.
+     3. Haz clic en el icono de lápiz.
+     4. Elige el tipo de activador **Vista de página**.  
+        ![PBAselectTrigger_us-en.jpg](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)
+     5. Selecciona **Algunas vistas de página**.
+     6. Configura la página y las condiciones de activación según sea necesario.
+     7. Haz clic en **Guardar**.
+     8. Asocia el activador a la etiqueta AppsFlyer Web SDK. Para ello:
+        1. En la ventana principal de GTM, selecciona Activadores.
+        2. Selecciona la etiqueta que creaste anteriormente.
+        3. En el panel de activación, haz clic en el lápiz.
+        4. Seleccione el activador de vista de página que creaste anteriormente.
+
+           ![Selecciona el activador de vista de página que creaste antes en Google Tag Manager](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)
+        5. Haz clic en **Guardar**.
+
+</Tab>
+
+<Tab title="Adobe Launch Tag Manager">
+
+1. [Crear una propiedad en Adobe Experience Cloud](/docs/pba-web-sdk-integration-guide#create-a-property-in-adobe-experience-cloud)
+2. [Agregar el SDK web a la propiedad de Adobe Launch](/docs/pba-web-sdk-integration-guide#add-the-web-sdk-to-the-adobe-launch-property)
+3. [Agregar la etiqueta de Adobe Launch al sitio web](/docs/pba-web-sdk-integration-guide#add-the-adobe-launch-tag-to-the-website)
+4. [Publicar el entorno de Adobe Launch](/docs/pba-web-sdk-integration-guide#publish-the-adobe-launch-environment)
+
+<div id="create-a-property-in-adobe-experience-cloud" />
+
+<Accordion title="Crear una propiedad en Adobe Experience Cloud">
+
+![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
+
+1. Ve a **Adobe Experience Cloud** > **Lanzar**.
+2. En **Adobe Experience Cloud Launch**, haz clic en **Ir al lanzamiento**.
+3. Haz clic en **Nueva propiedad**.
+4. Dale un nombre a la propiedad.
+5. En **Plataforma**, selecciona **Web**.
+6. Ingresa el dominio de tu sitio web.
+7. Haz clic en **Guardar**.
+
+</Accordion>
+
+<div id="add-the-web-sdk-to-the-adobe-launch-property" />
+
+<Accordion title="Agregar el SDK web a la propiedad de Adobe Launch">
+
+<Image alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
+
+1. En la página **Mi sitio web**, selecciona la pestaña **Reglas**.
+2. Dale un nombre a la regla. Se recomienda el uso de **Cargar SDK web**.
+3. En la sección **SÍ**, en **EVENTOS**, haz clic en **+Agregar**.
+   * En **Tipo de evento**, selecciona **Core - DOM Ready**.
+   * Haz clic en **Mantener cambios**.
+4. En la sección **ENTONCES**, en **Acciones**, haz clic en **+Agregar**.
+   * En **Tipo de activación** > **Código personalizado**.
+   * Selecciona **JavaScript** > **Abrir editor** y pega el fragmento de código del SDK web **sin las etiquetas &lt;script>**.
+   * Haz clic en **Mantener cambios** para cerrar el editor de códigos.
+5. Haz clic en **Guardar**.
+
+</Accordion>
+
+<div id="add-the-adobe-launch-tag-to-the-website" />
+
+<Accordion title="Agregar la etiqueta de Adobe Launch al sitio web">
+
+![adobe_tag.png](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)
+
+1. En la página **My sitio web**, selecciona la pestaña **Entornos**.
+2. Busca la fila con el entorno que deseas publicar (desarrollo o producción).
+   * En el encabezado **INSTALACIÓN**, haz clic en el ícono de la caja en la fila correspondiente; normalmente se trata de un entorno de producción.
+   * Consulta la sección sobre la publicación del entorno **Adobe Launch**.
+3. En el cuadro **Instrucciones de instalación web**:
+   * Copia el fragmento de código del script.
+   * Cierra el cuadro de diálogo.
+4. Pega el fragmento de código en la etiqueta &lt;head> de tu sitio web.
+
+</Accordion>
+
+<div id="publish-the-adobe-launch-environment" />
+
+<Accordion title="Publicar el entorno de Adobe Launch">
+
+![adobe_publishing_env.png](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)
+
+1. En la página **Mi sitio web**, ve a la pestaña **Publicación**.
+2. En la sección **Desarrollo**, haz clic en **Agregar biblioteca nueva**.
+   * Asigna un nombre a la biblioteca y elige un entorno.
+   * En **CAMBIOS DE RECURSOS**, haz clic en **Agregar un recurso**.
+   * Haz clic en **Reglas** > **Cargar SDK web** > **Más reciente** > **Seleccionar y crear una nueva revisión**.
+   * Haz clic en **Guardar**.
+3. En la sección **Desarrollo**:
+   * Junto a la biblioteca recién creada, haz clic en el menú de acciones (3 puntos) y selecciona **Crear para desarrollo**.
+   * Haz clic de nuevo en el menú de acciones y selecciona **Enviar para aprobación**.
+4. En la sección **Enviado**:
+   * Haz clic en el menú de acciones y selecciona **Crear para escenario**.
+   * Haz clic de nuevo en el menú de acciones y selecciona **Aprobar para publicar**.
+5. En la sección **Aprobado**:
+   * Haz clic en el menú de acciones > selecciona **Crear y publicar para producción**.
+   * El proceso ya está completo.
+
+</Accordion>
+
+Cuando el sitio web se carga en un dispositivo móvil, la creatividad activa se muestra en el banner. Para mostrar el banner en páginas específicas o según las acciones del usuario, consulta las <Anchor target="_blank" href="https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html">Reglas de Adobe Launch</Anchor>.
+
+</Tab>
+</Tabs>
+
+</Accordion>
+
+<div id="ensure-that-the-sdk-is-working" />
+
+<Accordion title="Comprobar que el SDK esté funcionando">
+
+Una vez instalado, comprueba que el navegador del visitante llame al SDK web de AppsFlyer y que se envíen mensajes. Esto se hace examinando la conexión de red de mensajes reportada en el navegador.
+
+**Para comprobar que el SDK se carga y funciona:**
+
+1. Ve al sitio web.
+2. Abre las herramientas para desarrolladores del navegador.
+
+   ![WebSDK_us-en.jpg](https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg)
+3. Ve a la pestaña (A) **Red**.
+4. Actualiza la página.
+5. Filtra por (B) **wa.appsflyer**.
+6. Selecciona el mensaje de **eventos** (C).
+7. En la pestaña Encabezados (D), asegúrate de que:
+   * La **URL de solicitud** es wa.appsflyer.com/events.
+   * site\_id query parameter= `WEB_DEV_KEY`.
+   * (E) El **estado del código es 200**.
+8. Verifica que el valor de site\_id sea igual al valor de `WEB_DEV_KEY` en la configuración del paquete de marca:
+   1. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Paquetes de marca**.
+   2. Haz clic en la **Clave de desarrollador web**; al hacerlo, se copia la clave.
+   3. Pega la clave en cualquier ubicación (nueva pestaña del navegador, bloc de notas) para mostrar la clave.
+   4. Verifica que el site\_id y `WEB_DEV_KEY` coincidan.
+9. Asegúrate de que el SDK se cargue solo una vez. La carga múltiple del SDK puede hacer que el SDK deje de funcionar.
+
+</Accordion>
+
+<div id="sending-events-optinoptout" />
+
+<Accordion title="Aceptación/exclusión voluntaria del envío de eventos">
+
+![5578-VistiorPrivacyOptIn_us-en.png](https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png)
+
+El SDK web envía datos de los eventos de los visitantes a AppsFlyer. Puedes controlar, detener o iniciar el envío de eventos como se describe en esta sección.
+
+Consideración:
+
+* **Configuración del estado inicial del SDK**: Determina si el SDK envía eventos al cargar inicialmente la página web o si el SDK debe esperar hasta que des un comando explícito para comenzar a enviar eventos. La configuración está incluida en el fragmento web.
+* **Control explícito:** úsalo para detener o iniciar el envío de eventos. Por ejemplo, si implementas banners de aceptación/exclusión voluntaria de datos (también conocidos como banners de consentimiento de cookies), integra los comandos explícitos en los controles de tu banner para iniciar y detener el envío de eventos. El control explícito tiene prioridad sobre la configuración del estado inicial del SDK y utiliza cookies propias persistentes que tienen las siguientes características:
+  * Se establecen en el dominio del sitio web.
+  * Caducan después de un período establecido por el SDK web o según lo determine el navegador. Después de que caduquen las cookies, el SDK web vuelve a la configuración del estado inicial.
+  * La cookie del SDK web no interfiere y siempre está sujeta a la configuración de cookies específica del navegador.
+
+#### Configuración del estado inicial del SDK
+
+| Configuración | Se requiere fragmento |
+| --- | --- |
+| [Predeterminado] Enviar eventos | Haz el siguiente cambio en el fragmento del SDK web. Si es necesario, agrega el parámetro measurementStatus:<br /><br />Establece measurementStatus=true<br /><br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:true}` |
+| No enviar eventos | Haz el siguiente cambio en el fragmento del SDK web. Si es necesario, agrega el parámetro measurementStatus:<br /><br />Establece measurementStatus=false  <br />  <br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:false}` |
+
+#### Control explícito
+
+| Opción | Comando |
+| --- | --- |
+| Iniciar el envío de eventos (optar por la aceptación) | `window.AF_SDK.PLUGINS.PBA.enableMeasurement()` |
+| Detener el envío de eventos (optar por la exclusión) | `window.AF_SDK.PLUGINS.PBA.disableMeasurement()` |
+
+</Accordion>
+
+<div id="implement-a-content-security-policy-csp-policy" />
+
+<Accordion title="Implementar una política de Política de Seguridad de Contenido (CSP)">
+
+Si tu sitio web requiere estrictos protocolos de seguridad o privacidad de datos, utiliza los siguientes mecanismos para configurar cómo interactúa el SDK web con tu entorno y tus datos.
+
+#### Política de Seguridad de Contenido (CSP)
+
+Si tu sitio web requiere que JavaScript esté protegido por un CSP, el SDK web admite dos enfoques según la configuración de tu CSP.
+
+* **CSP usando self**: Agrega `https://websdk.appsflyersdk.com` a tu lista `script-src` de permitidos. Esto funciona tanto para el Standard Web SDK como para Advanced SDK Verification.
+* **CSP usando nonce**: Si tu política utiliza `script-src 'nonce-...'`, puedes utilizar la [variante nonce-extended de Advanced SDK Verification](#advanced-sdk-verification-con-fragmentos-de-csp-nonce). Esto reenvía el nonce a las tres etiquetas de script requeridas por el proceso de verificación. Reemplaza `{{CSP_NONCE}}` con tu valor nonce generado por el servidor, por solicitud.
+
+La siguiente tabla muestra qué políticas de CSP son compatibles con la variante nonce-extended.
+
+| Política | Funciona | Notas |
+| --- | --- | --- |
+| `script-src 'self'` | No | No se permite el origen de CDN externo; el script en línea también se bloquea. |
+| `script-src 'self' https://websdk.appsflyersdk.com` | Parcial | Permite el loader y el SDK, pero el script de configuración en línea sigue bloqueado. |
+| `script-src 'nonce-...' https://websdk.appsflyersdk.com` | Sí | Nonce cubre el script en línea y el loader; la etiqueta del SDK es reenviada por el loader. |
+| `script-src 'nonce-...' 'strict-dynamic'` | Sí (recomendado) | Nonce cubre el script en línea y el loader; `strict-dynamic` propaga confianza a la etiqueta del SDK inyectada dinámicamente. No se necesita origen de CDN en la lista de permitidos. |
+
+Compatibilidad con políticas de CSP
+
+#### Advanced SDK Verification con fragmentos de CSP nonce
+
+<div id="advanced-verification-without-smart-banners" />
+
+<div id="nonce-without-smart-banners" />
+
+<Accordion title="Sin Smart Banners">
+
+```html
+<script nonce="{{CSP_NONCE}}">
+  // Queue — buffers AF() calls until the SDK is ready
+  window. AppsFlyerSdkObject = "AF";
+  window. AF = window. AF || function() {
+    (window.AF.q = window. AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)));
+  };
+  window. AF.id = window. AF.id || { pba: { webAppId: "WEB_DEV_KEY" } };
+  window. AF.plugins = {};
+
+  // Manifest loader config — nonce forwarded to the injected SDK <script> tag
+  window. AF_LOADER_CONFIG = {
+    baseUrl: "https://websdk.appsflyersdk.com",
+    plugins: ["pba"],
+    nonce: "{{CSP_NONCE}}"
+  };
+
+  // Inject manifest loader
+  var loaderScript = document.createElement("script");
+  loaderScript.src = "https://websdk.appsflyersdk.com/manifestLoader.v1.js";
+  loaderScript.integrity = "sha384-Uncl2YwvjFpFz0PwEfl3bL/0JsOQcDFEpwXHzcN0MBavn9vvFEx5pZxADTq8h+CV";
+  loaderScript.crossOrigin = "anonymous";
+  loaderScript.nonce = "{{CSP_NONCE}}";
+  loaderScript.async = true;
+  document.head.appendChild(loaderScript);
+</script>
+```
+
+</Accordion>
+
+<div id="advanced-verification-with-smart-banners" />
+
+<div id="nonce-with-smart-banners" />
+
+<Accordion title="Con Smart Banners">
+
+```html
+<script nonce="{{CSP_NONCE}}">
+  // Queue — buffers AF() calls until the SDK is ready
+  window. AppsFlyerSdkObject = "AF";
+  window. AF = window. AF || function() {
+    (window.AF.q = window. AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)));
+  };
+  window. AF.id = window. AF.id || { pba: { webAppId: "WEB_DEV_KEY" }, banners: { key: "YOUR_BANNER_KEY" } };
+  window. AF.plugins = {};
+
+  // Manifest loader config — nonce forwarded to the injected SDK <script> tag
+  window. AF_LOADER_CONFIG = {
+    baseUrl: "https://websdk.appsflyersdk.com",
+    plugins: ["banners", "pba"],
+    nonce: "{{CSP_NONCE}}"
+  };
+
+  // Inject manifest loader
+  var loaderScript = document.createElement("script");
+  loaderScript.src = "https://websdk.appsflyersdk.com/manifestLoader.v1.js";
+  loaderScript.integrity = "sha384-Uncl2YwvjFpFz0PwEfl3bL/0JsOQcDFEpwXHzcN0MBavn9vvFEx5pZxADTq8h+CV";
+  loaderScript.crossOrigin = "anonymous";
+  loaderScript.nonce = "{{CSP_NONCE}}";
+  loaderScript.async = true;
+  document.head.appendChild(loaderScript);
+</script>
+```
+
+</Accordion>
+
+</Accordion>
+
+<div id="discard-query-params" />
+
+<Accordion title="Descartar parámetros de consulta">
+
+Si los parámetros de consulta contienen datos que no deseas que AppsFlyer registre, puedes indicar a la plataforma de AppsFlyer que descarte algunos o todos los parámetros de consulta. Al hacerlo, no estarán disponibles en el raw data ni en los reportes.
+
+Puedes implementar los métodos descritos en relación con URL, referentes y header\_referer.
+
+#### Opciones de descarte de consultas
+
+| Método | Descripción |
+| --- | --- |
+| Descartar todos los parámetros de consulta | Adjunta `af_url=true` a la URL. |
+| Descartar parámetros de consulta especificados | Al establecer una máscara de parámetro de consulta, especifica qué parámetros se descartan.  Establece la máscara de descarte usando `af_url_mask=param`, donde param es el nombre del parámetro.<br /><br />Ejemplo:<br /><br />**URL con máscara:**<br /><br />`param1=value1&param2=value2&param3=value3&af_url_mask=param2;param3`<br /><br />**URL después del descarte:**<br /><br />`param1=value1&af_url_mask=param2;param3` |
+
+</Accordion>
+
+## Principios de registro de eventos.
+
+<div id="conversion-and-standard-events" />
+
+<Accordion title="Conversión y eventos estándar">
+
+* Los eventos de usuario son registrados por el SDK, que envía el evento a la plataforma AppsFlyer.
+* Utilizando la lista de <Anchor target="_blank" href="/marketers/es/docs/pba-brand-bundles-and-settings#web-event-settings">eventos de conversión</Anchor> establecida por el marketer, AppsFlyer divide los eventos en eventos estándar y de conversión.
+* Los datos de los eventos de conversión están disponibles en los paneles de control de la PBA.
+* Los datos de los eventos estándar y de conversión están disponibles en los <Anchor target="_blank" href="/marketers/es/docs/pba-raw-data-reports">reportes de raw data</Anchor>.
+
+### Eventos de conversión
+
+* Los eventos de conversión brindan insights sobre tus esfuerzos comerciales y de marketing. Los eventos de conversión incluyen compras, descargas, registros y suscripciones.
+* La PBA atribuye los eventos de conversión a la fuente de medios que llevó al usuario a visitar el sitio web.
+* Al identificar la fuente de medios atribuida, puedes medir y diferenciar la calidad de los usuarios aportados por diferentes fuentes de medios.
+* Los eventos de conversión se utilizan para registrar los ingresos y calcular el ROI.
+* Utilízalos para comparar el presupuesto de los anuncios de fuentes de medios específicas con los ingresos generados por los usuarios que provienen de estas fuentes de medios.
+
+### Eventos estándar
+
+* Los eventos estándar se utilizan para validar la trayectoria del usuario y los embudos que generan conversiones.
+* Utilízalos para medir la actividad de los usuarios y resaltar las fuentes de medios que atraen a los usuarios comprometidos.
+* Registra la actividad de los usuarios para marcarlos para campañas de reengagement.
+
+### Registro de eventos
+
+Activa el SDK web para registrar eventos cuando se cumplan ciertas condiciones, por ejemplo, cuando se carga una página de aterrizaje o cuando los usuarios interactúan con los elementos del sitio web. Consulta los [ejemplos de registro de eventos](#recording-events::f1e16eae).
+
+</Accordion>
+
+<div id="identifying-users-using-customer-user-id-cuid" />
+
+<Accordion title="Identificación de usuarios mediante el ID de usuario del cliente (CUID)">
+
+* Los usuarios web se identifican en AppsFlyer mediante el CUID único que les asignas. Normalmente, el CUID lo administran los servidores backend.
+* Utiliza el mismo valor CUID que utilizas en el entorno móvil. Hacerlo te permitirá tener una visión holística de la actividad de los usuarios en múltiples plataformas. La función en el SDK móvil es setCustomerUserId (<Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">iOS</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">Android, Unity</Anchor>).
+* Para establecer el CUID en el SDK web:
+  * Establece el CUID tan pronto como tengas acceso a él. La mayoría de las veces, esto significa que debes esperar a que el usuario se identifique iniciando sesión o registrándose.
+  * Activa la llamada de JavaScript a setCustomerUserId() como se muestra en el siguiente ejemplo. tiene un tamaño de 40-60 Kb.   
+    Nota: Envía el CUID como una cadena incluso si es un número. Para ello, ponlo entre comillas.
+* Si implementas S2S web, ten en cuenta que es posible que debas notificar a la PBA cuando <Anchor target="_blank" href="/marketers/es/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method">asocies</Anchor> un CUID con un ID de visitante web en tu backend.
+* Los CUID no deben contener <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#cuid-y-privacidad">información personal directamente identificable,como</Anchor> un número de teléfono o una dirección de correo electrónico.
+
+**Ejemplo: establecer el CUID**
+
+```javascript
+// Asocia todos los eventos web actuales del usuario al ID 663274 
+AF('pba', 'setCustomerUserId' , '663274')
+```
+
+</Accordion>
+
+<div id="web-sdk-event-parameters" />
+
+<Accordion title="Parámetros de eventos del SDK web">
+
+| Nombre de parámetro | Obligatorio | Descripción |
+| --- | --- | --- |
+| eventType | Sí | Tipo de evento<br /><br />Formato: String<br /><br />Completa siempre este parámetro con EVENT.<br /><br />Ejemplo: eventType: "EVENT" |
+| eventName | Sí | Nombre del evento<br /><br />Formato: String<br /><br />Ejemplo: Compra, suscripción |
+| ~~eventCategory~~ | No | Este parámetro está obsoleto y se eliminará del sistema en una fecha que se anunciará. En su lugar, utiliza el parámetro eventValue. |
+| ~~eventLabel~~ | No | Este parámetro está obsoleto y se eliminará del sistema en una fecha que se anunciará. En su lugar, utiliza el parámetro eventValue. |
+| eventRevenue | No | Ingresos asignados a un evento de conversión<br /><br />Formato: Float |
+| eventRevenueCurrency | No | Moneda de ingresos<ul><li>Código de divisa <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> de 3 caracteres.</li><li>Valor predeterminado: USD</li></ul>Formato: String |
+| valor del evento | No | Mapa de parámetros del evento que describen el evento. Utiliza este parámetro para enviar eventos in-app enriquecidos, como el SKU del producto y el precio del artículo.<br /><br />Formato: JSON<br /><br />**Ejemplo:** Para enviar SKU ABC123, de color azul y un precio unitario de $3,99<br /><br />`{"sku": "ABC123", "color": "blue", "unit_price":3.99,"currency": "USD"}`<br /><br />**Limitación:** 1000 caracteres. si excedes el límite, se truncará. |
+
+</Accordion>
+
+<div id="recording-event-scenarios" />
+
+<Accordion title="Escenarios de registro de eventos">
+
+Evento de ejemplo
+
+```javascript
+// purchase event of shoes with associated revenue
+AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12, eventValue: {"key1": 123, "key2": "name"}});
+```
+
+Los eventos que envías dependen de la naturaleza de tu aplicación web. Por ejemplo, una aplicación de tienda en línea requiere un conjunto de eventos diferentes a los de un medio de comunicación. Mira los escenarios siguientes para tener una idea de los eventos que debes enviar y cuándo.
+
+#### Tienda en línea
+
+Supongamos que administras una tienda en línea. Algunos eventos estándar que quizás quieras registrar serían:
+
+* Buscar: evento estándar
+* Agregar al carrito: evento estándar
+* Quitar del carrito: evento estándar
+* Comprar: evento de conversión
+
+Medio informativo
+
+Supongamos que estás administrando un medio informativo. Algunos eventos que quizás quieras registrar serían:
+
+* Registro: evento de conversión
+* Compra de suscripción: evento de conversión
+
+</Accordion>
+
+<div id="ensuring-that-events-are-sent" />
+
+<Accordion title="Garantizar el envío de los eventos">
+
+Esta parte está destinada a desarrolladores web.
+
+<Anchor target="_blank" href="/marketers/es/docs/test-pba-web-sdk-integration">Prueba la integración del SDK web para la PBA:</Anchor> consulta los eventos de prueba en tiempo real.
+
+**Para garantizar que los eventos se envíen a AppsFlyer**:
+
+1. Abre el sitio web.
+2. Abre las herramientas para desarrolladores del navegador.
+   * <Anchor target="_blank" href="https://developers.google.com/web/tools/chrome-devtools/open#console">Cómo abrir las herramientas para desarrolladores en Chrome</Anchor>
+   * <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/EnableWebInspector/EnableWebInspector.html">Cómo abrir las herramientas para desarrolladores en Safari</Anchor>
+3. Cambia a la pestaña Network (Red).
+4. Activa el evento.
+5. Filtro por mensaje.
+
+   ![pba_af_event.png](https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png)
+6. Busca una solicitud de red que comience con el destino wa.appsflyer.com (observa la captura de pantalla a continuación).
+7. Asegúrate de que:
+   1. El código de estado es 200.
+   2. La carga útil de solicitud se alinea con los parámetros del evento.
+
+</Accordion>
+
+## Ejemplos
+
+<div id="recording-events::f1e16eae" />
+
+<Accordion title="Registro de eventos">
+
+El código proporcionado es solo para fines ilustrativos. No utilices este código tal como está.
+
+* Supuestos: la página ya ha cargado el SDK web en el momento en que se envía el evento.
+* Los escenarios de ejemplo contienen el código para registrar eventos cuando:
+  * se carga una página de aterrizaje.
+  * los usuarios interactúan con el sitio web.
+
+<Tabs>
+<Tab title="Registro nativo de eventos">
+
+**Registro de eventos cuando se carga una página de aterrizaje**
+
+* Tienes una página de suscripción para boletines informativos y deseas registrar las suscripciones.
+* También puedes configurar una página de agradecimiento y redirigir a los usuarios a ella después de suscribirse.
+
+```html
+<html>
+    <head>
+        <!-- Supón que el servidor devuelve una respuesta con detalles sobre el usuario que se acaba de suscribir -->
+        <!-- Como alternativa, puedes extraer datos de localStorage o de las cookies,
+            en caso de que se hayan establecido en alguno de ellos durante el proceso de suscripción
+        -->
+        <script>window.onload = function(){
+            AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category': 'holiday_promotion', eventValue: {'label' : 'newspaper'}, eventName: 'subscription',}); } </script> </head> <body> <h1>Gracias por suscribirte a nuestro boletín</h1> </body> </html>
+```
+
+* El código anterior contiene una página HTML básica. La página web debe cargar el SDK web para poder enviar eventos.
+* Una vez que se carga la página, después de que el usuario es redirigido a ella, el método de carga de ventana llama al método AF() para enviar el evento de suscripción a AppsFlyer.
+
+**Registro de eventos cuando los usuarios interactúan con el sitio web**
+
+* Tienes un sitio web de eCommerce y deseas registrar los eventos de checkout.
+* Cuando el usuario hace clic en el botón de checkout, el SDK web envía un evento a AppsFlyer.
+
+```html
+<html>
+<head>
+    <!-- Supón que los datos sobre los productos del carrito de la compra
+    se almacenan en localStorage -->
+    <script>
+        window.onload = function () {
+            document.getElementById('checkout').addEventListener('click', function () {
+                AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'});
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Carrito de la compra</h1>
+    <h2>Camisa</h2>
+    <p>
+        <ul>
+            <li>Color: azul</li>
+            <li>Cantidad: 2</li>
+            <li>Precio: $20</li>
+        </ul>
+    </p>
+    <h2>Pantalones</h2>
+    <p>
+        <ul>
+            <li>Color: negro</li>
+            <li>Cantidad: 3</li>
+            <li>Precio: $15</li>
+        </ul>
+    </p>
+    <button id='checkout'>Checkout</button>
+</body>
+</html>
+```
+
+El código anterior muestra una página HTML básica. La página web debe cargar el SDK web para poder enviar eventos.
+
+* Una vez que la página se carga, vincula un listener de clics al botón **Checkout**.
+* Cuando el usuario hace clic en el botón **Checkout**, la función de callback:
+  * recupera datos de localStorage.
+  * llama al método AF() y le pasa datos.
+* El método AF() envía el evento a AppsFlyer.
+
+</Tab>
+
+<Tab title="Registro de eventos de Google Tag Manager">
+
+**Registro de eventos cuando se carga una página de aterrizaje**
+
+* Tienes una página de suscripción para boletines informativos y deseas registrar las suscripciones realizadas correctamente.
+* Configuras una página de agradecimiento a la que se redirige a los usuarios después de suscribirse correctamente.
+
+1. Configurar una página de agradecimiento
 
    ```html Markup
    <html>
    <head>
        <script>
-            // Google Tag Manager loads the Web SDK
+            // Google Tag Manager carga el SDK web
+           <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+           })(window,document,'script','dataLayer','GTM-XXXX');
+       </script>
+        <script>
+           // Supón que el servidor devuelve una respuesta con detalles sobre el usuario que se acaba de suscribir
+           function getResponseFromServer() {
+               return JSON.stringify({ action: 'subscribe', category: 'site actions', label: userEmail })
+           }
+           //También puedes extraer datos de localStorage o de las cookies,
+           //en caso de que se hayan establecido en alguno de ellos durante el proceso de suscripción
+           localStorage.setItem('data', JSON.stringify({ action: 'subscribe', category: 'site actions', label: 'user@email.com' }));
+       </script>
+   </head>
+   <body>
+       <h1>Gracias por suscribirte a nuestro boletín</h1>
+   </body>
+   </html>
+   ```
+
+   El código anterior carga GTM, que a su vez carga el SDK web. Luego, otras dos acciones tienen lugar en el script. Una es una función que obtiene una respuesta del servidor con los detalles del usuario. La otra establece los datos en el almacenamiento local. GTM tiene acceso tanto a la función como a localStorage. Puedes llamar a la función y acceder a localStorage usando GTM.
+2. Agregar una nueva etiqueta para atribuir suscripciones después de que se cargue la página de agradecimiento
+
+   ![Añade una nueva etiqueta para atribuir suscripciones en Google Tag Manager](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+3. Dale a la etiqueta un nombre distintivo y selecciona la opción de tipo de etiqueta **Custom HTML** (HTML personalizado).
+4. Pon el siguiente código en **Custom HTML** (HTML personalizado).
+
+   ```html
+   <script> 
+   AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
+   ```
+
+   ![gtm_tag_after_subscribe.png](https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png)
+5. Expande el control **Advanced Settings** (Configuración avanzada) y luego el control **Tag Sequencing** (Secuenciación de etiquetas) debajo del área de texto y asegúrate de que esté configurado para activar la conversión después de ejecutar la etiqueta.
+
+   ![Configuración de secuenciación de etiquetas en Google Tag Manager](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+6. Para activar la etiqueta de conversión, configura un activador. En el ejemplo, el activador se dispara al cargar la página de agradecimiento.
+
+   ![Activador configurado para activarse al cargar la página de agradecimiento](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+
+**Registro de eventos cuando los usuarios interactúan con el sitio web**
+
+* Tienes un sitio web de eCommerce y deseas registrar los eventos de checkout.
+* Después de que el usuario hace clic en el botón de checkout, el SDK web envía un evento a AppsFlyer.
+
+1. Configurar una página de checkout
+
+   ```html Markup
+   <html>
+   <head>
+       <script>
+           // Google Tag Manager carga el SDK web
+           <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+           })(window,document,'script','dataLayer','GTM-XXXX');
+       </script>
+   </head>
+   <body>
+       <h1>Carrito de la compra</h1>
+       <h2>Camisa</h2>
+       <p>
+           <ul>
+               <li>Color: azul</li>
+               <li>Cantidad: 2</li>
+               <li>Precio: $20</li>
+           </ul>
+       </p>
+       <h2>Pantalones</h2>
+       <p>
+           <ul>
+               <li>Color: negro</li>
+               <li>Cantidad: 3</li>
+               <li>Precio: $15</li>
+           </ul>
+       </p>
+       <button id='checkout'>Checkout</button>
+   </body>
+   </html>
+   ```
+
+   El código anterior carga el SDK web usando GTM. El resto es simplemente HTML que imita una página de carrito de compras. Observa el botón **Checkout** que tiene el ID de checkout. Es necesario al configurar GTM para manejar un clic en ese botón.
+2. En GTM, haz clic en **Variables**, haz clic en **Configure** (Configurar) y marca **Click Element** (Elemento de clic) en la lista de **Built-In Variables** (Variables incorporadas).  
+
+   ![gtm-create-variable.png](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)
+3. Crea una nueva variable, dale un nombre significativo y elige el tipo de **Todos los elementos.**  
+
+   ![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)
+4. En la configuración del activador, elige **Algunos clics**, y elige un **Elemento de clic** que **coincida con el Selector CSS** de #checkout.  
+
+   ![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
+5. Crea una nueva etiqueta para la acción de checkout, elige el tipo Custom HTML (HTML personalizado) y configura el activador en el activador de checkout.
+
+   ```html
+   <script>
+    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
+   ```
+
+   ![gtm-checkout-tag.png](https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png)
+
+</Tab>
+</Tabs>
+
+* Asegúrate de que la etiqueta de funciones del SDK web esté cargada antes de que se active el evento.
+* No envíes caracteres especiales en los valores de los eventos, como símbolos de moneda en el valor de los ingresos.
+* Las cadenas de valores deben tener menos de 50 caracteres.
+
+</Accordion>
+
+<div id="setting-customer-user-id-after-signup" />
+
+<Accordion title="Configuración del ID de usuario del cliente después del registro">
+
+El código proporcionado en estos ejemplos es solo de referencia. No utilices este código tal como está. Si no estás seguro de cómo utilizar este código, consulta a tu desarrollador web. 
+
+Supuesto: La página carga el SDK web antes de enviar el evento; no cargues el SDK nuevamente.
+
+Situación del usuario:
+
+* Un usuario se registra en tu sitio web.
+* El código del sitio web recopila los datos del usuario y los envía a tu servidor.
+* El servidor genera un CUID único para el usuario.
+* En la página de agradecimiento después del registro, consultas al servidor el nuevo CUID.
+* Mediante la respuesta del servidor, configuras el CUID de AppsFlyer mediante el método setCustomerUserId() del SDK web.
+
+<Tabs>
+<Tab title="Nativo">
+
+Configura una página de registro:
+
+```html Markup
+<html>
+<head>
+    <script>
+         // Google Tag Manager loads the Web SDK
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5VJ6C7R');
+
+    // This function stores the user email to be sent to the server after the user reaches the thank you page
+    // the response from the server is a unique CUID that should be used in the web SDK setCustomerUserId method
+        function storeUserEmail (){
+            var userEmail = document.getElementById('email').value;
+            localStorage.setItem('user_email', userEmail);
+        }
+    </script>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form onsubmit="storeUserEmail()" action="/signup" method="post">
+        <div><label>Name</label>
+            <input type="text" name="name" id="name"></div>
+        <br />
+        <div> <label>Email</label>
+            <input type="email" name="email" id="email"></div>
+        <br />
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
+```
+
+El código anterior es un formulario de registro sencillo. Cuando se envía el formulario, el correo electrónico se almacena en localStorage. Cuando el usuario llega a la página de agradecimiento, la dirección de correo electrónico del usuario se envía al servidor para generar el CUID único para la dirección de correo electrónico.
+
+Configura una página de agradecimiento para los usuarios que se registren:
+
+```
+Copia la clave de desarrollador web requerida (WEB_DEV_KEY).
+```
+
+El código utiliza la API Fetch. Envía al servidor la dirección de correo electrónico ingresada por el usuario. Suponiendo que el servidor crea un usuario con un CUID único al registrarse, enviar la dirección de correo electrónico al servidor tiene como objetivo recibir un CUID único. El servidor responde con un CUID único y este CUID único es el valor que se transmite con el método setCustomerUserId.
+
+</Tab>
+
+<Tab title="Google Tag Manager">
+
+1. Configura una página de registro:
+
+   ```html Markup
+   <html>
+   <head>
+       <script>
+            // Google Tag Manager carga el SDK web
            (function (w, d, s, l, i) {
                w[l] = w[l] || []; w[l].push({
                    'gtm.start':
                        new Date().getTime(), event: 'gtm.js'
                }); var f = d.getElementsByTagName(s)[0],
-                   j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                       'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-           })(window, document, 'script', 'dataLayer', 'GTM-5VJ6C7R');
-
-       // This function stores the user email to be sent to the server after the user reaches the thank you page
-       // the response from the server is a unique CUID that should be used in the web SDK setCustomerUserId method
-           function storeUserEmail (){
-               var userEmail = document.getElementById('email').value;
-               localStorage.setItem('user_email', userEmail);
-           }
-       </script>
-   </head>
-   <body>
-       <h1>Sign Up</h1>
-       <form onsubmit="storeUserEmail()" action="/signup" method="post">
-           <div><label>Name</label>
-               <input type="text" name="name" id="name"></div>
-           <br />
-           <div> <label>Email</label>
-               <input type="email" name="email" id="email"></div>
-           <br />
-           <input type="submit" id="submit">
-       </form>
-   </body>
-   </html>
-   ```
-
-   The code above is a simple signup form. When the form is submitted, the email address is stored in localStorage. When the user reaches the thank you page, the user email address is sent to the server to get the unique CUID for that email.
-2. Set up a thank you page for users who sign up:
-
-   ```
-   (t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},
-   t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,
+                   j = d.createElement(s), dl = l != 'dataLayer' ? AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,
    o.src="https://websdk.appsflyersdk.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),
    p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {webAppId: "WEB_DEV_KEY"}})
        </script>
@@ -1049,15 +1020,20 @@ The code makes use of the fetch API. It sends the server the email address enter
     </html>
    ```
 
-   The preceding code is a thank you page having a GTM trigger that sends the server the email address provided by the user in the signup form.  
-   Assuming that on signup, the server creates a user with a unique CUID.  
-   Sending the email to the server is for the purpose of receiving a unique CUID.  
-   The server responds with a unique CUID which is sent using the setCustomerUserId() method.  
-   Continue this procedure to create the trigger and tab.
-3. Add a new tag, for attributing subscriptions, after the thank you page loads.
-   ![Add a new tag for attributing subscriptions in Google Tag Manager](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
-4. Give the tag a distinct name and select the “Custom HTML” tag type option
-   ![GoogleTag.jpg](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)
+   El código anterior es un formulario de registro sencillo. Cuando se envía el formulario, la dirección de correo electrónico se almacena en localStorage. Cuando el usuario llega a la página de agradecimiento, la dirección de correo electrónico del usuario se envía al servidor para obtener el CUID único para ese correo electrónico.
+2. Configura una página de agradecimiento para los usuarios que se registren:
+
+   ```
+   Fecha de vencimiento
+   ```
+
+   El código anterior es una página de agradecimiento que tiene un activador GTM que envía al servidor la dirección de correo electrónico proporcionada por el usuario en el formulario de registro.  
+   Suponiendo que, al momento del registro, el servidor crea un usuario con un CUID único.  
+   El correo electrónico se envía al servidor con el propósito de recibir un CUID único.  
+   El servidor responde con un CUID único que se envía mediante el método setCustomerUserId().  
+   Continúa con este procedimiento para crear el activador y la pestaña.
+3. Agrega una nueva etiqueta para atribuir las suscripciones después de que se cargue la página de agradecimiento. ![Añade una nueva etiqueta para atribuir suscripciones en Google Tag Manager](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+4. Dale a la etiqueta un nombre distintivo y selecciona la opción de tipo de etiqueta «HTML personalizado» ![GoogleTag.jpg](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)
 
    ```html
    <script>
@@ -1070,72 +1046,72 @@ The code makes use of the fetch API. It sends the server the email address enter
             });
    </script>
    ```
-5. Expand the **Advanced Settings** control and then the **Tag Sequencing** control below the text area and make sure it is set up to fire the conversion after the tag was executed
+5. Expande el control **Advanced Settings** (Configuración avanzada) y luego el control **Tag Sequencing** (Secuenciación de etiquetas) debajo del área de texto y asegúrate de que esté configurado para activar la conversión después de ejecutar la etiqueta.
 
-   ![Tag Sequencing settings in Google Tag Manager](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
-6. Set a trigger for the conversion tag to indicate when the conversion tag should be fired (in the below example it is fired on “Thank you” page load)
+   ![Configuración de secuenciación de etiquetas en Google Tag Manager](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+6. Establece un activador para que la etiqueta de conversión indique cuándo se debe activar la etiqueta de conversión (en el siguiente ejemplo, se activa al cargar la página de agradecimiento).
 
-   ![Trigger set to fire on the Thank You page load](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   ![Activador configurado para activarse al cargar la página de agradecimiento](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
 
 </Tab>
 </Tabs>
 
-The setCustomerUserId function can be sent at any stage in the user flow, for example, after user login and signup. AppsFlyer uses the most recent CUID sent to update the current observed user for past or future touchpoints and events.
+La función setCustomerUserId se puede enviar en cualquier etapa del flujo del usuario, por ejemplo, después de iniciar sesión y registrarse. AppsFlyer utiliza el CUID más reciente enviado para actualizar al usuario observado actual para puntos de contacto y eventos pasados ​​o futuros.
 
-Use the same CUID value as you do in the setCustomerUserd function in the mobile app (see mobile setCustomerUserId for: <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">iOS</Anchor>, <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">Android,</Anchor> Unity)
+Utiliza el mismo valor CUID que utilizas en la función setCustomerUserId en la aplicación móvil (consulta el setCustomerUserId móvil para: <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">iOS</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">Android,</Anchor> Unity)
 
 </Accordion>
 
-## Addtional information
+## Información adicional
 
 <div id="web-sdk-cookies" />
 
-<Accordion title="Web SDK cookies">
+<Accordion title="Cookies del SDK web">
 
-The cookies listed in the table that follows are set or used by Web SDK on your website.
+Las cookies enumeradas en la siguiente tabla son configuradas o utilizadas por el SDK web en tu sitio web.
 
-In the table the following abbreviations are used:
+En la tabla se utilizan las siguientes abreviaturas:
 
-* AMP: Accelerated Mobile Pages
-* CDN: Content Delivery Network
-* 3PC: Third-party Cookies
+* AMP: Páginas móviles aceleradas
+* CDN: Red de entrega de contenido
+* 3PC: Cookies de terceros
 
-| Cookie name | Domain | Lifespan | When used | Details |
+| Nombre de cookie | Dominio | Vida útil | Cuando se utiliza | Detalles |
 | --- | --- | --- | --- | --- |
-| afUserid | Your website domain | 395 days | non-AMP | Identify a user in the context of web load and navigation events |
-| AF\_SYNC | Your website domain | 1 week | non-AMP | <ul><li>Flag indicating that a final user identifier is set</li><li>This is used to reduce site load times</li></ul> |
-| af\_id | appsflyer.com | 395 days | non-AMP when 3PC permitted | Identify a user in the context of app launch and navigation events |
-| af\_id | onelink.me | 395 days | non-AMP when 3PC permitted | Link banner engagements, onelink engagements, or both to app launch events. |
-| amp-afUserid | AMP CDN or your website domain | 1 year | For pages service by AMP |  |
-| AF\_DEFAULT\_MEASUREMENT\_STATUS | Your website domain | 395 days | Stores the PBA consent state. Prevents SDK operation until user consent is granted. Not set by default—used only when [consent gating](/docs/pba-web-sdk-integration-guide#sending-events-optinoptout) configured. | non-AMP |
+| afUserid | El dominio de tu sitio web | 395 días | Sin AMP | Identificar a un usuario en el contexto de los eventos de carga web y navegación |
+| AF\_SYNC | El dominio de tu sitio web | 1 semana | Sin AMP | <ul><li>Indicador que muestra que se ha establecido un identificador de usuario final</li><li>Esto se utiliza para reducir los tiempos de carga del sitio</li></ul> |
+| af\_id | appsflyer.com | 395 días | Sin AMP cuando se permite 3PC | Identificar a un usuario en el contexto de los eventos de inicio de la aplicación y de navegación |
+| af\_id | onelink.me | 395 días | Sin AMP cuando se permite 3PC | Enlazar engagements de banners, engagements de OneLink o ambos a eventos de inicio de aplicaciones. |
+| amp-afUserid | AMP CDN o el dominio de tu sitio web | 1 año | Para el servicio de páginas por AMP |  |
+| AF\_DEFAULT\_MEASUREMENT\_STATUS | El dominio de tu sitio web | 395 días | Almacena el estado de consentimiento de la PBA. Impide el funcionamiento del SDK hasta que se otorga el consentimiento del usuario. No está configurado de forma predeterminada: se usa solo cuando se configura la [puerta de consentimiento](/docs/pba-web-sdk-integration-guide#sending-events-optinoptout). | Sin AMP |
 
 </Accordion>
 
 <div id="release-notes" />
 
-<Accordion title="Web SDK release notes">
+<Accordion title="Notas de la versión del SDK web">
 
-| Date | Version | Notes |
+| Fecha | Versión | Notas |
 | --- | --- | --- |
-| 2021-07-01 | 1.0 | [Discard query params](/docs/pba-web-sdk-integration-guide#discard-query-params) |
-| 2021-06-01 | 1.0 | [Implement a Content Security Policy (CSP)](/docs/pba-web-sdk-integration-guide#implement-a-content-security-policy-csp-policy) |
-| 2020-08-31 | 1.0 | [Added opt-in and opt-out functionality](/docs/pba-web-sdk-integration-guide#sending-events-optinoptout) |
-| 2020-04-16 | 1.0 | The customerUserId() function replaces the IDENTIFY event for sending the unique CUID |
-| 2020-07-30 | 1.0 | <ul><li>Explicit start/stop control to send events</li><li>Changing the default initial state</li></ul> |
+| 01-07-2021 | 1.0 | [Descartar parámetros de consulta](/docs/pba-web-sdk-integration-guide#discard-query-params) |
+| 01-06-2021 | 1.0 | [Implementar una Política de Seguridad de Contenido (CSP)](/docs/pba-web-sdk-integration-guide#implement-a-content-security-policy-csp-policy) |
+| 31-08-2020 | 1.0 | [Se agregó la funcionalidad de aceptación y exclusión opcional](/docs/pba-web-sdk-integration-guide#sending-events-optinoptout) |
+| 16-04-2020 | 1.0 | La función CustomerUserId() reemplaza el evento IDENTIFY para enviar el CUID único |
+| 30-07-2020 | 1.0 | <ul><li>Control explícito de inicio/parada para enviar eventos</li><li>Cambio del estado inicial predeterminado</li></ul> |
 
 </Accordion>
 
 <div id="deprecations" />
 
-<Accordion title="Deprecations">
+<Accordion title="Entrada en desuso">
 
-* A deprecation notice provides a heads up of our intention to stop supporting a feature or method. The feature or method continues to work until its sunset date.
-* Regard deprecation notices as an opportunity to make changes to your code.
+* Un aviso de entrada en desuso proporciona un aviso de nuestra intención de dejar de admitir una función o método. La función o el método continúa funcionando hasta su fecha de vencimiento.
+* Considera los avisos de entrada en desuso como una oportunidad para realizar cambios en tu código.
 
-| Deprecation date | Sunset date | Details |
+| Fecha de desuso | Fecha de baja | Detalles |
 | --- | --- | --- |
-| 2020-04-16 | To be announced | **Deprecated method:** Sending the customer user ID (CUID) in the event parameter customUserId with the eventType set to "IDENTIFY"<br /><br />**Current method:** Send the CUID using the setCustomerUserId() function. |
+| 16-04-2020 | Pendiente de anuncio | **Método en desuso:** envío del ID de usuario del cliente (CUID) en el parámetro de evento customUserId con eventType establecido en "IDENTIFY"<br /><br />**Método actual:** envío del CUID utilizando la función setCustomerUserId() . |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HFKCMH8HAW5DN4K9H1A5Q2NJ=web-sdk-user-and-integration-guide step-2-select-a-code-snippet=selecting-a-code-snippet h_01KP11XJV8RDV378GMFF0DVZ8V=selecting-a-code-snippet standard=standard-web-sdk h_01KP11XJV8MN64YV17D1M0T5B9=standard-web-sdk h_01KP3CJBZWK17M58W9M2EP8VC3=standard-without-smart-banners h_01KP3CJBZWKW1K9P9V1XGYM5ED=standard-with-smart-banners h_01KP11XJV8ZGF4SDXJH6FKX18E=advanced-sdk-verification h_01KP3CJBZWP7HDJ0GE2DF3TTE3=advanced-verification-without-smart-banners h_01KP3CJBZWJWS9H0XVHQFF758B=advanced-verification-with-smart-banners h_01HFKCMH8HCDNGFJEN32BNA9F2=integrating-the-web-sdk-into-the-website h_01HFKCMH8HVTJX37PD22ZFV0AY=installation-and-integration h_01HFKCMH8H0JBGD2GWY127428R=considerations-and-actions-required h_01HFKCMH8HC064MHGH8D66QCYK=javascript-code-snippet h_01HFKCMH8HST7G880G44WXXXB6=to-install-the-web-sdk-without-smart-banners h_01HFKCMH8HX4SQP6YCBHJH4AX5=to-implement-the-web-sdk-with-smart-banners h_01HFKCMH8JMMPMHFR4399QPRJV=create-a-property-in-adobe-experience-cloud h_01HFKCMH8J8WVHP7RZ2ENHGY9V=add-the-web-sdk-to-the-adobe-launch-property h_01HFKCMH8J2MAXJ3YVHJ2AJHWQ=add-the-adobe-launch-tag-to-the-website h_01HFKCMH8JWE1Q2749N54MAYRT=publish-the-adobe-launch-environment h_01HFKCMH8JFQQG0BEQ5CATGQ2P=ensure-that-the-sdk-is-working h_01HFKCMH8JCHH5WB5XRC8029DE=sending-events-optinoptout h_01HFKCMH8JSJR95Y9KNANABBKR=sdk-initial-state-setting h_01HFKCMH8JG2C43P8QZ0SKZCBB=explicit-control h_01HFKCMH8J9XDX87ES4F5WW4GJ=implement-a-content-security-policy-csp-policy h_01KGJCGCQ0QB7NK6YNZT5XJVJY=content-security-policy-csp h_01KP11XJV88YB2NSBZJTX9K7ZQ=advanced-sdk-verification-with-csp-nonce-snippets h_01KP3CJBZXQ4D538H0T7N9FZ6Z=nonce-without-smart-banners h_01KP3CJBZX8K3WK6RHQMB029VN=nonce-with-smart-banners h_01HFKCMH8JG40DT9NHXG6TPMJ1=discard-query-params h_01HFKCMH8JYSV81BEY5XQRZ24Y=query-discard-options h_01HFKCMH8JZCKH1JPTGBVJ3QP4=principles-of-event-recording h_01HFKCMH8JEDEDC48AH5A2797D=conversion-and-standard-events h_01HFKCMH8JYYB7HG2W8XQ7RFPD=conversion-events h_01HFKCMH8JQHSJF3T8SF4ZES7W=standard-events h_01HFKCMH8J79VD5BX96ANAYAFQ=recording-events h_01HFKCMH8JPJZQ81TYZX5PDF91=identifying-users-using-customer-user-id-cuid h_01HFKCMH8JYPNHJGYVRK1SZFYB=web-sdk-event-parameters h_01HFKCMH8J35YT2448PX8ZRM5P=recording-event-scenarios h_01HFKCMH8JQS3CTE6NTZY4G8ZR=online-store h_01HFKCMH8J1EDH3XM5V4ECYCPS=ensuring-that-events-are-sent h_01HFKCMH8J4KQSZ489TMDEN426=examples h_01HFKCMH8JAK25DZ1BZDFS4THD=recording-events::f1e16eae h_01HFKCMH8J4XNY5B9MKAS81T6Z=setting-customer-user-id-after-signup h_01HFKCMH8KJDZ0A15RMQ8BDMDH=addtional-information h_01HFKCMH8KV3QD9CPBSVWM3EVE=web-sdk-cookies h_01HFKCMH8KGJTE7BMK4VSQJF33=release-notes h_01HFKCMH8KP1SHA21JZA5PTZXG=deprecations" />
+<div data-zendesk-anchors="web-sdk-user-and-integration-guide=gu%C3%ADa-de-integraci%C3%B3n-y-del-usuario-del-sdk-web h_01HFKCMH8HAW5DN4K9H1A5Q2NJ=gu%C3%ADa-de-integraci%C3%B3n-y-del-usuario-del-sdk-web step-2-select-a-code-snippet=selecci%C3%B3n-de-un-fragmento-de-c%C3%B3digo h_01KP11XJV8RDV378GMFF0DVZ8V=selecci%C3%B3n-de-un-fragmento-de-c%C3%B3digo standard=standard-web-sdk h_01KP11XJV8MN64YV17D1M0T5B9=standard-web-sdk h_01KP3CJBZWK17M58W9M2EP8VC3=standard-without-smart-banners h_01KP3CJBZWKW1K9P9V1XGYM5ED=standard-with-smart-banners h_01KP11XJV8ZGF4SDXJH6FKX18E=advanced-sdk-verification h_01KP3CJBZWP7HDJ0GE2DF3TTE3=advanced-verification-without-smart-banners h_01KP3CJBZWJWS9H0XVHQFF758B=advanced-verification-with-smart-banners integrating-the-web-sdk-into-the-website=integraci%C3%B3n-del-sdk-web-en-el-sitio-web h_01HFKCMH8HCDNGFJEN32BNA9F2=integraci%C3%B3n-del-sdk-web-en-el-sitio-web h_01HFKCMH8HVTJX37PD22ZFV0AY=installation-and-integration considerations-and-actions-required=consideraciones-y-acciones-requeridas h_01HFKCMH8H0JBGD2GWY127428R=consideraciones-y-acciones-requeridas javascript-code-snippet=fragmento-de-c%C3%B3digo-javascript h_01HFKCMH8HC064MHGH8D66QCYK=fragmento-de-c%C3%B3digo-javascript to-install-the-web-sdk-without-smart-banners=para-instalar-el-sdk-web-sin-smart-banners h_01HFKCMH8HST7G880G44WXXXB6=para-instalar-el-sdk-web-sin-smart-banners to-implement-the-web-sdk-with-smart-banners=para-implementar-el-sdk-web-con-smart-banners h_01HFKCMH8HX4SQP6YCBHJH4AX5=para-implementar-el-sdk-web-con-smart-banners h_01HFKCMH8JMMPMHFR4399QPRJV=create-a-property-in-adobe-experience-cloud h_01HFKCMH8J8WVHP7RZ2ENHGY9V=add-the-web-sdk-to-the-adobe-launch-property h_01HFKCMH8J2MAXJ3YVHJ2AJHWQ=add-the-adobe-launch-tag-to-the-website h_01HFKCMH8JWE1Q2749N54MAYRT=publish-the-adobe-launch-environment h_01HFKCMH8JFQQG0BEQ5CATGQ2P=ensure-that-the-sdk-is-working h_01HFKCMH8JCHH5WB5XRC8029DE=sending-events-optinoptout sdk-initial-state-setting=configuraci%C3%B3n-del-estado-inicial-del-sdk h_01HFKCMH8JSJR95Y9KNANABBKR=configuraci%C3%B3n-del-estado-inicial-del-sdk explicit-control=control-expl%C3%ADcito h_01HFKCMH8JG2C43P8QZ0SKZCBB=control-expl%C3%ADcito h_01HFKCMH8J9XDX87ES4F5WW4GJ=implement-a-content-security-policy-csp-policy content-security-policy-csp=pol%C3%ADtica-de-seguridad-de-contenido-csp h_01KGJCGCQ0QB7NK6YNZT5XJVJY=pol%C3%ADtica-de-seguridad-de-contenido-csp advanced-sdk-verification-with-csp-nonce-snippets=advanced-sdk-verification-con-fragmentos-de-csp-nonce h_01KP11XJV88YB2NSBZJTX9K7ZQ=advanced-sdk-verification-con-fragmentos-de-csp-nonce h_01KP3CJBZXQ4D538H0T7N9FZ6Z=nonce-without-smart-banners h_01KP3CJBZX8K3WK6RHQMB029VN=nonce-with-smart-banners h_01HFKCMH8JG40DT9NHXG6TPMJ1=discard-query-params query-discard-options=opciones-de-descarte-de-consultas h_01HFKCMH8JYSV81BEY5XQRZ24Y=opciones-de-descarte-de-consultas principles-of-event-recording=principios-de-registro-de-eventos h_01HFKCMH8JZCKH1JPTGBVJ3QP4=principios-de-registro-de-eventos h_01HFKCMH8JEDEDC48AH5A2797D=conversion-and-standard-events conversion-events=eventos-de-conversi%C3%B3n h_01HFKCMH8JYYB7HG2W8XQ7RFPD=eventos-de-conversi%C3%B3n standard-events=eventos-est%C3%A1ndar h_01HFKCMH8JQHSJF3T8SF4ZES7W=eventos-est%C3%A1ndar recording-events=registro-de-eventos h_01HFKCMH8J79VD5BX96ANAYAFQ=registro-de-eventos h_01HFKCMH8JPJZQ81TYZX5PDF91=identifying-users-using-customer-user-id-cuid h_01HFKCMH8JYPNHJGYVRK1SZFYB=web-sdk-event-parameters h_01HFKCMH8J35YT2448PX8ZRM5P=recording-event-scenarios online-store=tienda-en-l%C3%ADnea h_01HFKCMH8JQS3CTE6NTZY4G8ZR=tienda-en-l%C3%ADnea h_01HFKCMH8J1EDH3XM5V4ECYCPS=ensuring-that-events-are-sent examples=ejemplos h_01HFKCMH8J4KQSZ489TMDEN426=ejemplos h_01HFKCMH8JAK25DZ1BZDFS4THD=recording-events::f1e16eae h_01HFKCMH8J4XNY5B9MKAS81T6Z=setting-customer-user-id-after-signup addtional-information=informaci%C3%B3n-adicional h_01HFKCMH8KJDZ0A15RMQ8BDMDH=informaci%C3%B3n-adicional h_01HFKCMH8KV3QD9CPBSVWM3EVE=web-sdk-cookies h_01HFKCMH8KGJTE7BMK4VSQJF33=release-notes h_01HFKCMH8KP1SHA21JZA5PTZXG=deprecations" />

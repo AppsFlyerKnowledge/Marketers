@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Changes in agency transparency'
+title: 'Boletín: Cambios en la transparencia de las agencias'
 metadata:
   keywords:
     - Partner
@@ -18,19 +18,18 @@ x-zendesk:
     - Platform essentials
     - Agencies
   created_at: '2023-06-11T12:30:46Z'
-  edited_at: '2023-12-28T12:16:47Z'
+  edited_at: '2026-10-20T03:56:08Z'
   id: 16065571938961
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/16065571938961-Bulletin-Changes-in-agency-transparency
+  url: https://support.appsflyer.com/hc/es/articles/16065571938961
 ---
-| **What's new** | As the industry shifts towards a more transparent ecosystem, AppsFlyer supports transparency between advertisers and agencies.<br /><br />As of August 14, 2023, the app-level <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#transparency">agency transparency</Anchor> toggle is permanently turned on by default. This is relevant for new agencies joining AppsFlyer and for existing agencies with new advertiser access permissions. |
+| **¿Qué hay de nuevo?** | A medida que la industria cambia hacia un ecosistema más transparente, AppsFlyer apoya la transparencia entre anunciantes y agencias.<br /><br />A partir del 14 de agosto de 2023, el interruptor de <Anchor target="_blank" href="/partners/es/docs/getting-started-agency-onboarding#transparency">transparencia de agencia</Anchor> a nivel de aplicación está activado de forma permanente de manera predeterminada. Esto es relevante para las nuevas agencias que se unen a AppsFlyer y para las agencias existentes con nuevos permisos de acceso para anunciantes. |
 | --- | --- |
-| **Effective date** | August 14, 2023 |
-| **Before the change** | All agency accounts with advertiser access permission could choose to turn on and turn off the **Allow transparency** toggle. |
-| After the change | <ul><li>The **Allow transparency** toggle is permanently enabled (turned on) for new agencies joining AppsFlyer and existing agencies who were granted app-level permission for access from the advertiser.</li><li>Existing agencies that currently have Allow transparency turned off (legacy), have the option to either keep it off or turn it on. However, once turned on, it remains on permanently.</li></ul> |
-| Exceptions | Agency transparency is not supported in account usage reports (no change) |
-| **Where** | In agency accounts: In AppsFlyer, from the side menu, select **Settings** > **App Settings** |
-| **Action required** | No action is required. However, it's recommended for agencies applying non-transparency to transition to a transparency model. |
+| **Fecha de entrada en vigor** | Agosto 14, 2023 |
+| **Antes del cambio** | Todas las cuentas de agencia con permiso de acceso de anunciante podían optar por activar o desactivar el interruptor **Permitir transparencia**. |
+| Después del cambio | <ul><li>La opción **Permitir transparencia** queda habilitada de forma permanente (activada) para las nuevas agencias que se unen a AppsFlyer y para las agencias existentes a las que se concedió permiso de acceso a nivel de aplicación por parte del anunciante.</li><li>Las agencias existentes que actualmente tienen Permitir transparencia desactivado (heredado) tienen la opción de mantenerlo desactivado o activarlo. No obstante, una vez activado, permanece activado permanentemente.</li></ul> |
+| Excepciones | La transparencia de la agencia no se admite en los informes de uso de la cuenta (sin cambios) |
+| **Donde** | En las cuentas de agencia: en AppsFlyer, en el menú lateral, selecciona **Configuración** > **Configuración de la aplicación** |
+| **Acción requerida** | No se requiere ninguna acción. Sin embargo, se recomienda que las agencias que aplican la no transparencia transiten a un modelo de transparencia. |

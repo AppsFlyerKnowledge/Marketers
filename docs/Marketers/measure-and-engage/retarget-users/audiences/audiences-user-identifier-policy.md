@@ -1,5 +1,5 @@
 ---
-title: Audiences user identifier policy
+title: Política de identificador de usuario de Audiencias
 metadata:
   keywords:
     - IDFA
@@ -16,103 +16,102 @@ x-zendesk:
     - Marketers
     - Audience Segmentation
   created_at: '2020-12-23T15:39:55Z'
-  edited_at: '2026-04-19T12:45:31Z'
+  edited_at: '2026-08-12T12:26:18Z'
   id: 360016791118
-  locale: en-us
+  locale: es
   section: Audiences
   section_id: 6551336428945
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360016791118-Audiences-user-identifier-policy
+  url: https://support.appsflyer.com/hc/es/articles/360016791118
 ---
-> **At a glance:** Configure your user identifier policy to exercise account-level control over the identifiers you send to advertising partners via Audiences.
+> **Resumen:** Configure su política de identificador de usuario para ejercer control a **nivel de cuenta** sobre los datos que Audiences comparte con socios.
 
-## About
+## Acerca de
 
-Once you have defined an audience, Audiences enables you to send identifiers for its members to your selected <Anchor target="_blank" href="/marketers/docs/audiences-partner-connections">advertising partners</Anchor>. This enables them to serve your ads only to these users.
+Una vez que defina una audiencia, AppsFlyer Audiences envía identificadores de los miembros de esa audiencia a sus <Anchor target="_blank" href="/marketers/es/docs/audiences-partner-connections">socios publicitarios</Anchor> seleccionados. Esto les permite mostrar anuncios solo a estos usuarios.
 
-In order to enable compliance with the privacy requirements of iOS 14.5 and other user privacy considerations, Audiences gives you full control to determine which identifiers are sent to partners:
+Para cumplir con los requisitos de privacidad de iOS 14.5 y otras consideraciones sobre la privacidad del usuario, Audiences le permite controlar completamente qué identificadores se comparten con socios:
 
-* at the account level
-* at the partner-connection level
+* a nivel de cuenta
+* a nivel de conexión de socios
 
-This article explains how to manage your user identifier policy at the account level. For more information about managing the identifiers shared at the partner-connection level, see the <Anchor target="_blank" href="/marketers/docs/audiences-guide#manage-connections">Manage connections</Anchor> section of the Audiences guide.
+Este artículo explica el proceso para gestionar su política de identificador de usuario a nivel de cuenta. Para más información sobre cómo gestionar los identificadores compartidos a nivel de conexión de socios, consulte la sección <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#manage-connections">Gestionar conexiones</Anchor> de la guía de Audiencias.
 
-## User identifiers
+## Identificadores de usuario
 
-This section describes the identifiers that can be shared with partners.
+Esta sección describe los identificadores que se pueden compartir con los socios.
 
 <div id="shared-identifiers" />
 
-<Accordion title="Default identifier settings">
+<Accordion title="Configuración predeterminada de identificadores">
 
-By default, Audiences is configured for you to send the following identifiers to partners:
+Por defecto, Audiences comparte los siguientes identificadores con socios:
 
-* **iOS:** IDFA (on iOS 14.5 and above, available only if a user permits sharing this identifier)
-* **Android:** GAID
+* **iOS:** IDFA (en iOS 14.5 y posteriores, disponible solo si el usuario permite su compartición)
+* Android: GAID
 
-You can also configure Audiences to send the following identifiers to partners that support them:
+También puedes configurar audiencias para enviar los siguientes identificadores a los Partners que los admitan:
 
-* Email (hashed)
-* Phone number (hashed)
-* OAID and IMEI (both relevant only for non-Google Play Android stores)
+* Correo electrónico (encriptado)
+* Número de teléfono (encriptado)
+* OAID y IMEI (ambos relevantes solo para tiendas Android no Google Play)
 
-The following identifiers are not sent to advertising partners but can be configured for your internal processes (such as CRM or analytics):
+Algunos otros identificadores adicionales pueden ser útiles para sus procesos internos (como CRM o análisis):
 
 * CUID
-* IDFV (relevant only for iOS)
+* IDFV (solo relevante para iOS)
 
-For additional information (including requirements for using specific identifiers in AppsFlyer), please take a look at the identifiers table below.
+Para más información (incluidos los requisitos para usar identificadores específicos en AppsFlyer), consulte la tabla de identificadores más abajo.
 
 </Accordion>
 
 <div id="identifiers-table" />
 
-<Accordion title="Identifiers table">
+<Accordion title="Tabla de identificadores">
 
-<table><thead><tr><th>Identifier</th><th>OS</th><th>Shared by default?</th><th>Requirements for use/<br/>Notes<br/><br/> </th></tr></thead><tbody><tr><td>IDFA</td><td>iOS</td><td>See note<br/>(right)</td><td>By default, only shared for users with <a href="./audiences-user-identifier-policy#ios">ATT status: authorized or not determined</a></td></tr><tr><td>GAID</td><td>Android</td><td>Y</td><td>None</td></tr><tr><td>OAID</td><td>Android<br/>(non-Google Play)</td><td>N</td><td><a href="./android-oaid-implementation-in-the-sdk" target="_blank">Must be configured</a> in the AppsFlyer SDK</td></tr><tr><td>IMEI</td><td>Android<br/>(non-Google Play)</td><td>N</td><td><a href="./android-oaid-implementation-in-the-sdk" target="_blank">Must be configured</a> in the AppsFlyer SDK</td></tr><tr><td>CUID</td><td>iOS<br/>Android</td><td>N</td><td><ul><li>Generated by the advertiser and <a href="./customer-user-id-field-cuid" target="_blank">reported to AppsFlyer</a> using AppsFlyer APIs or SDKs</li><li>Not shared with advertising partners, but can be useful for your internal purposes</li><li>Subject to the <a href="https://support.appsflyer.com/hc/en-us/article_attachments/360017900558/Additional_Identifiers_Terms_of_Use.pdf">Additional Identifiers Terms of Use</a></li></ul></td></tr><tr><td>IDFV</td><td>iOS</td><td>N</td><td><ul><li>Not shared with advertising partners, but can be useful for your internal purposes</li><li>Subject to the <a href="https://support.appsflyer.com/hc/en-us/article_attachments/360017900558/Additional_Identifiers_Terms_of_Use.pdf">Additional Identifiers Terms of Use</a></li></ul></td></tr><tr><td>Email (hashed)</td><td>iOS<br/>Android</td><td>N</td><td rowspan="2"><ul><li><a href="./audiences-configure-additional-identifiers-for-partner-audience-creation" target="_blank">Must be configured</a> through the AppsFlyer SDK or S2S-mobile API</li><li>Must be encrypted with SHA256 hashing</li><li>Subject to the <a href="https://support.appsflyer.com/hc/en-us/article_attachments/360017900558/Additional_Identifiers_Terms_of_Use.pdf">Additional Identifiers Terms of Use</a></li></ul></td></tr><tr><td>Phone number (hashed)</td><td>iOS<br/>Android</td><td>N</td></tr></tbody></table>
+<table><thead><tr><th>Identificador</th><th>Sistema Operativo</th><th>¿Se comparte por defecto?</th><th>Requisitos de uso/<br/>Notas<br/><br/> </th></tr></thead><tbody><tr><td>Identificador de anunciante (IDFA)</td><td>apps de iOS,</td><td>Ver nota<br/>(derecha)</td><td>Por defecto, solo se comparte para usuarios con <a href="./audiences-user-identifier-policy#ios">estado ATT: autorizado o no determinado</a> </td></tr><tr><td>GNA Company</td><td>Android</td><td>Sí</td><td>Ninguno</td></tr><tr><td>OAID</td><td>Android<br/>(no Google Play)</td><td>N/A</td><td> <a href="./android-oaid-implementation-in-the-sdk" target="_blank">Debe configurarse</a> en el SDK de AppsFlyer</td></tr><tr><td>IMEI</td><td>Android<br/>(no Google Play)</td><td>N/A</td><td> <a href="./android-oaid-implementation-in-the-sdk" target="_blank">Debe configurarse</a> en el SDK de AppsFlyer</td></tr><tr><td>CUID</td><td>iOS<br/>Android</td><td>N/A</td><td><ul><li>Generado por el anunciante y <a href="./customer-user-id-field-cuid" target="_blank">reportado a AppsFlyer</a> usando las API o SDK de AppsFlyer</li><li>No se comparte con socios publicitarios, pero puede ser útil para tus propósitos internos</li><li>Sujeto a los <a href="https://support.appsflyer.com/hc/article_attachments/360017900558">Términos de uso de identificadores adicionales</a> </li></ul></td></tr><tr><td>IDFV</td><td>apps de iOS,</td><td>N/A</td><td><ul><li>No se comparte con socios publicitarios, pero puede ser útil para tus propósitos internos</li><li>Sujeto a los <a href="https://support.appsflyer.com/hc/article_attachments/360017900558">Términos de uso de identificadores adicionales</a> </li></ul></td></tr><tr><td>Correo electrónico (con hash)</td><td>iOS<br/>Android</td><td>N/A</td><td rowspan="2"><ul><li> <a href="./audiences-configure-additional-identifiers-for-partner-audience-creation" target="_blank">Se debe configurar</a> a través del <span>SDK de AppsFlyer o la API S2S-mobile</span> </li><li>Debe cifrarse con el algoritmo de hash SHA256</li><li>Sujeto a los <a href="https://support.appsflyer.com/hc/article_attachments/360017900558">Términos de uso de identificadores adicionales</a> </li></ul></td></tr><tr><td>Número de teléfono (con hash)</td><td>iOS<br/>Android</td><td>N/A</td></tr></tbody></table>
 
 </Accordion>
 
-## Setting account-level user identifier policy
+## Configuración de la política de identificador de usuario a nivel de cuenta
 
-User identifier policy can only be set by an admin user.
+La política de identificador de usuario solo puede ser establecida por un usuario administrador.
 
-**To set or modify your policy, follow these steps:**
+**Para establecer o modificar tu política, sigue estos pasos:**
 
-1. In AppsFlyer, from the side menu, select **Engage** > **Audiences**.
-2. Click the settings (gear) icon in the top right corner.
-3. In the **User identifier policy** window, select the settings that comply with your organization's privacy policies.
-   * If you want to enable sending of identifiers other than IDFA, GAID, OAID to partners, you first need to review and accept the [Additional Identifiers Terms of Use.](https://support.appsflyer.com/hc/en-us/article_attachments/360017900558/Additional_Identifiers_Terms_of_Use.pdf)
-   * If you elect to disallow identifier(s) that are uploaded by existing partner connections, you will be asked to confirm that you wish to stop uploading these identifiers.
-4. Click **Save.**
+1. En AppsFlyer, desde el menú lateral, selecciona **Interactuar** > **Audiencias**.
+2. Haz clic en el icono de configuración (engranaje) en la esquina superior derecha.
+3. En la ventana **Política de identificador de usuario**, selecciona las configuraciones que cumplan con las políticas de privacidad de tu organización.
+   * Si eliges permitir la compartición de identificadores distintos de IDFA, GAID, OAID e IMEI, primero debes revisar y aceptar los [Términos de uso de identificadores adicionales.](https://support.appsflyer.com/hc/article_attachments/360017900558)
+   * Si decides no permitir los identificadores que son cargados por conexiones de socios existentes, se te pedirá que confirmes que deseas dejar de cargar estos identificadores.
+4. Haz clic en **Guardar**.
 
-## Privacy regulations
+## Regulaciones de privacidad
 
-This section describes privacy regulations that affect how user identifiers can be shared.
+Esta sección describe las regulaciones de privacidad que afectan cómo se pueden compartir los identificadores de usuario.
 
 <div id="ios" />
 
-<Accordion title="iOS">
+<Accordion title="apps de iOS,">
 
-Starting with version 14.5, iOS requires that every app offer the user an option to allow/disallow the sharing of their device IDFA for advertising purposes (App Tracking Transparency). Whether or not a user has seen and responded to this option (the "ATT consent dialog") determines a user's <Anchor target="_blank" href="/marketers/docs/att-implications-ios-14-and-deprecation-of-lat">ATT status</Anchor>.
+A partir de la versión 14.5, iOS requiere que cada aplicación ofrezca al usuario la opción de permitir o no compartir su identificador de dispositivo IDFA con fines publicitarios (Transparencia de seguimiento de aplicaciones). El hecho de que un usuario haya visto y respondido a esta opción (el "diálogo de consentimiento de ATT") determina el <Anchor target="_blank" href="/marketers/es/docs/att-implications-ios-14-and-deprecation-of-lat">estado de ATT</Anchor> del usuario.
 
-Audiences policy options for sharing identifiers in iOS are based on a user's most recent ATT status. Your sharing options are as follows:
+Las opciones de política de audiencias para compartir identificadores en iOS se basan en el estado de ATT más reciente de un usuario. Sus opciones para compartir son las siguientes:
 
-| User policy option | Corresponding ATT status |
+| Opción de política de usuario | Estado ATT correspondiente |
 | --- | --- |
-| Never upload | This identifier is not uploaded to partners |
-| ATT status: authorized only | The identifier is uploaded if the most recent ATT status is **authorized** or **af\_authorized** |
-| ATT status: authorized or not determined | The identifier is uploaded if the most recent ATT status is **authorized**, **af\_authorized**, **not\_determined**, or **af\_unavailable**  <br />  <br />*Default option for IDFA, starting with Apple's release of iOS 14.5* |
-| Always upload | The identifier is uploaded independent of ATT status. Ensure compliance with your app’s terms of use.  <br />  <br />*Option unavailable for IDFA* |
+| Nunca subir | Este identificador no se envía a los socios |
+| Estado de ATT: sólo autorizado | El identificador se envía si el estado ATT más reciente es **autorizado** o **af\_authorized** |
+| Estado de ATT: autorizado o no determinado | El identificador se envía si el estado ATT más reciente es **autorizado**, **af\_autorizado**, **no\_determinado**, o **af\_no\_disponible***Opción predeterminada para IDFA, a partir del lanzamiento de iOS 14.5 de Apple* |
+| Siempre subir | El identificador se envía independientemente del estado de ATT. Asegúrese de cumplir con los términos de uso de su aplicación.  <br />  <br />*Opción no disponible para IDFA* |
 
-**Note:** Audiences treats a new user's ATT status as **not determined** until they have seen and responded to the ATT consent dialog.
+**Nota:** Audiences considera el estado ATT de un nuevo usuario como **no determinado** hasta que haya visto y respondido al cuadro de diálogo de consentimiento de ATT.
 
-For detailed ATT status definitions, see:
+Para definiciones detalladas del estado de ATT, consulte:
 
-* <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">Apple ATT status definitions</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/att-implications-ios-14-and-deprecation-of-lat#att-values">AppsFlyer ATT status definitions</Anchor> (af\_authorized, af\_unavailable)
+* <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">Definiciones del estado ATT de Apple</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/att-implications-ios-14-and-deprecation-of-lat#valor-att">Definiciones del estado ATT de AppsFlyer</Anchor> (af\_authorized, af\_unavailable)
 
-Additionally, all users from the European Economic Area (EEA) are subject to Google's enforcement of the [Digital Markets Act (DMA)](/docs/audiences-user-identifier-policy#eu-digital-markets-act).
+Además, todos los usuarios del Espacio Económico Europeo (EEE) están sujetos a la aplicación de Google de la [Ley de Mercados Digitales (DMA)](/docs/audiences-user-identifier-policy#eu-digital-markets-act).
 
 </Accordion>
 
@@ -120,46 +119,46 @@ Additionally, all users from the European Economic Area (EEA) are subject to Goo
 
 <Accordion title="Android">
 
-Android users from the European Economic Area (EEA) are subject to Google's enforcement of the [Digital Markets Act (DMA)](/docs/audiences-user-identifier-policy#eu-digital-markets-act).
+Los usuarios de Android del Espacio Económico Europeo (EEE) están sujetos a la aplicación de Google de la [Ley de Mercados Digitales (DMA)](/docs/audiences-user-identifier-policy#eu-digital-markets-act).
 
 </Accordion>
 
 <div id="eu-digital-markets-act" />
 
-<Accordion title="EU Digital Markets Act">
+<Accordion title="Ley de Mercados Digitales de la UE">
 
-As part of Google’s enforcement of the Digital Markets Act (DMA) on March 6, 2024, Google is updating its EU user consent policy. As a Google App Attribution Partner, AppsFlyer is making the necessary changes to support their policy requirements, while ensuring that advertisers maximize the value from their Google Ads marketing channels. <Anchor target="_blank" href="https://www.appsflyer.com/hubs/dma/">Learn more</Anchor>
+Como parte de la aplicación de la Ley de Mercados Digitales (DMA) por parte de Google a partir del 6 de marzo de 2024, Google actualiza su política de consentimiento de usuarios de la UE. Como socio de atribución de aplicaciones de Google, AppsFlyer está haciendo los cambios necesarios para apoyar los requisitos de sus políticas asegurándose de que los anunciantes maximicen el valor de sus canales de marketing de Google Ads. <Anchor target="_blank" href="https://www.appsflyer.com/hubs/dma/">Más información</Anchor>
 
-**This is how the changes will affect Audiences:**
+**Así es como los cambios afectarán a las audiencias:**
 
-* **New AppsFlyer SDK**  
-  The latest AppsFlyer SDK will collect user consent from app owners for the <Anchor target="_blank" href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)">European Economic Area (EEA)</Anchor> so their data can be shared with Google. For audiences created in AppsFlyer (such as Custom and Suggested audiences) consent information collected from the SDK will automatically be shared with Audiences, and then with Google. Once you’ve updated to the latest SDK, this process will happen automatically.
-* **Audiences connected to Google**
-  * **Consent granted** - AppsFlyer will send the devices of EEA users who have granted consent to share their information with Google.
-  * **Consent denied** - AppsFlyer will not send the devices of EEA users who have denied consent to share their information with Google.
-  * **Consent unknown** - AppsFlyer will send the devices of EEA users who have neither granted nor denied consent as “Unspecified”. Google will not likely accept them for inclusion in the audience on their side.  
+* **Nuevo SDK de AppsFlyer**  
+  El último SDK de AppsFlyer recopilará el consentimiento de los usuarios de los propietarios de apps para el <Anchor target="_blank" href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)">Espacio Económico Europeo (EEE)</Anchor> y así poder compartir sus datos con Google. Para las audiencias creadas en AppsFlyer (como las audiencias personalizadas y sugeridas), la información de consentimiento recogida del SDK se compartirá automáticamente con Audiences, y luego con Google. Una vez que actualices al último SDK, este proceso se realizará automáticamente.
+* **Audiencias conectadas a Google**
+  * **Consentimiento otorgado** - AppsFlyer enviará los dispositivos de los usuarios del EEE que hayan dado su consentimiento para compartir su información con Google.
+  * **Consentimiento denegado** - AppsFlyer no enviará los dispositivos de los usuarios del EEE que hayan rechazado el consentimiento para compartir su información con Google.
+  * **Consentimiento desconocido** - AppsFlyer enviará los dispositivos de los usuarios del EEE que no hayan dado ni negado su consentimiento como “No especificado”. Es poco probable que Google los acepte para incluirlos en su audiencia.  
 
-    For more details, see Google’s <Anchor target="_blank" href="https://support.google.com/google-ads/answer/14310715">FAQ</Anchor>.
-* **Existing Audiences**  
-  All devices that were already part of an audience within Google before March 6, 2024 will not be impacted and will continue to be part of the audience. Only new Audiences or new EEA devices added to an existing audience will be uploaded to Google with consent.
-* **Audience upload size**  
-  The audience estimated and actual upload sizes may be affected depending on the number of users granting or denying consent.
-* #### **Importing audiences**
+    Para más detalles, consulta las <Anchor target="_blank" href="https://support.google.com/google-ads/answer/14310715">Preguntas Frecuentes</Anchor> de Google.
+* **Audiencias existentes**  
+  Todos los dispositivos que ya formaban parte de una audiencia en Google antes del 6 de marzo de 2024 no se verán afectados y seguirán siendo parte de la audiencia. Solo las nuevas audiencias o los nuevos dispositivos del EEE añadidos a una audiencia existente se cargarán en Google con consentimiento.
+* **Tamaño de carga de la audiencia**  
+  El tamaño estimado y real de la carga de audiencia puede verse afectado dependiendo del número de usuarios que otorguen o nieguen su consentimiento.
+* #### **Importación de audiencias**
 
-  * **Import standard audience** - AppsFlyer will add the consent data it collects from the AppsFlyer SDK, and will remove unconsented or unspecified devices from the audience before sending it to Google.
-  * **Import “as is” audience** - When importing an “as is” audience via <Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems#import-a-csv-file">CSV</Anchor> or <Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems#use-the-import-audience-api">API</Anchor>, two additional consent fields will need to be added. These fields are:
+  * **Importar audiencia estándar** - AppsFlyer agregará los datos de consentimiento que recopile del SDK y eliminará los dispositivos no especificados o sin consentimiento de la audiencia antes de enviarlos a Google.
+  * **Importar audiencia “tal cual”** - Al importar una audiencia “tal cual” a través de <Anchor target="_blank" href="/marketers/es/docs/audiences-import-audience-segments-from-internal-systems#import-a-csv-file">CSV</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/audiences-import-audience-segments-from-internal-systems#use-the-import-audience-api">API</Anchor>, dos campos de consentimiento adicionales deberán ser añadidos. Estos campos son:
 
-| AppsFlyer field (1) | Google field (2) | Values | Field explained |
+| Campo de AppsFlyer (1) | Campo de Google (2) | Valores | Campo explicado |
 | --- | --- | --- | --- |
-| <span id="ad_personalization"></span>ad\_personalization\_enabled | ad\_personalization | true/false | Did the user give Google consent to use their data for personalized advertising? |
-| <span id="ad_user_data"></span>ad\_user\_data\_enabled | ad\_user\_data | true/false | Did the user give consent to send their user data to Google? |
+| <span id="ad_personalization"></span>personalización de anuncios habilitada | personalización de anuncios | verdadero/falso | ¿El usuario dio su consentimiento a Google para usar sus datos en publicidad personalizada? |
+| <span id="ad_user_data"></span>datos de usuario de anuncios habilitados | datos\_de\_usuario\_de\_anuncios | verdadero/falso | ¿El usuario dio su consentimiento para enviar sus datos a Google? |
 
-If the consent fields are not filled in with values, they will be sent to Google as “Unspecified”.
+Si los campos de consentimiento no se rellenan con valores, se enviarán a Google como “No especificado”.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Google’s enforcement of the Digital Markets Act (DMA) applies to both Android and iOS platforms.
+> La aplicación de la Ley de Mercados Digitales por parte de Google se aplica a plataformas tanto de Android como de iOS.
 
 </Accordion>
 
-<div data-zendesk-anchors="background=about h_01HKA2FS9VBCSV8FP8FH79H4R0=about h_01HKA2FS9VSVJD54R14GC7G0P4=user-identifiers h_01HNZH99Z8NA9607VHSYH5XVW0=shared-identifiers h_01HKA2FS9V1KBK9BJAJ63FP6CV=identifiers-table setting-accountlevel-user-identifier-policy=setting-account-level-user-identifier-policy h_01HKA2FS9WNGGRP3NX5NKV15SK=setting-account-level-user-identifier-policy user-identifier-policy-options=privacy-regulations h_01HKA2FS9W5NSKKRK2VCZARG15=privacy-regulations h_01HNZJ1ET6F87AHHVQK17QHZDD=ios h_01HNZJ1ET67JQQCPYSM3H6Y9VW=android h_01HNZN8MWETDCMGWKJ0MMM8JK4=eu-digital-markets-act h_01HPGV1GYT8DW0GYWTC031TNVH=importing-audiences h_01HNZEAJT00KKEBDPR7FD0TJNR=note" />
+<div data-zendesk-anchors="background=acerca-de h_01HKA2FS9VBCSV8FP8FH79H4R0=acerca-de user-identifiers=identificadores-de-usuario h_01HKA2FS9VSVJD54R14GC7G0P4=identificadores-de-usuario h_01HNZH99Z8NA9607VHSYH5XVW0=shared-identifiers h_01HKA2FS9V1KBK9BJAJ63FP6CV=identifiers-table setting-accountlevel-user-identifier-policy=configuraci%C3%B3n-de-la-pol%C3%ADtica-de-identificador-de-usuario-a-nivel-de-cuenta h_01HKA2FS9WNGGRP3NX5NKV15SK=configuraci%C3%B3n-de-la-pol%C3%ADtica-de-identificador-de-usuario-a-nivel-de-cuenta user-identifier-policy-options=regulaciones-de-privacidad h_01HKA2FS9W5NSKKRK2VCZARG15=regulaciones-de-privacidad h_01HNZJ1ET6F87AHHVQK17QHZDD=ios h_01HNZJ1ET67JQQCPYSM3H6Y9VW=android h_01HNZN8MWETDCMGWKJ0MMM8JK4=eu-digital-markets-act importing-audiences=importaci%C3%B3n-de-audiencias h_01HPGV1GYT8DW0GYWTC031TNVH=importaci%C3%B3n-de-audiencias h_01HNZEAJT00KKEBDPR7FD0TJNR=nota" />

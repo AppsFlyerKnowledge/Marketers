@@ -1,5 +1,5 @@
 ---
-title: Recreating classic reports in advanced reports
+title: Recrear reportes clásicos en reportes avanzados
 metadata:
   keywords:
     - Marketers
@@ -12,70 +12,69 @@ x-zendesk:
     - Marketers
     - Data Locker
   created_at: '2026-06-15T08:16:54Z'
-  edited_at: '2026-06-23T11:05:18Z'
+  edited_at: '2026-08-12T11:51:44Z'
   id: 47741416390161
-  locale: en-us
+  locale: es
   section: Data Locker
   section_id: 6550945728657
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/47741416390161-Recreating-classic-reports-in-advanced-reports
+  url: https://support.appsflyer.com/hc/es/articles/47741416390161
 ---
-> **At a glance:** If you're migrating from classic Data Locker raw reports, use this guide to find the exact filter selections that reproduce each classic report in <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports">Advanced Reports</Anchor>.
+> **De un vistazo:** Si estás migrando desde los reportes raw clásicos de Data Locker, usa esta guía para encontrar las selecciones de filtros exactas que reproducen cada reporte clásico en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">Reportes avanzados</Anchor>.
 
-## Overview
+## Visión general
 
-Classic Data Locker delivered the user journey as many separate report topics. Advanced Reports consolidates all of that into one report per data product, which you scope down using report-level filters.
+Data Locker clásico ofrecía el viaje del usuario como múltiples temas de reporte independientes. Reportes avanzados consolida todo eso en un reporte por producto de datos, cuyo alcance puedes acotar con filtros a nivel de reporte.
 
-The three Advanced Reports and the classic topics they replace are:
+Los tres Reportes avanzados y los temas clásicos que sustituyen son:
 
-* The **Engagements** **advanced report** replaces the classic clicks and impressions topics.
-* The **Conversions** **advanced report** replaces the classic installs, retargeting conversions, and CTV installs topics.
-* The **End-user events** **advanced report** replaces the classic in-app events, sessions, CTV in-app events, CTV sessions, and uninstalls topics.
+* El **reporte avanzado** **Engagements** sustituye los temas clásicos de clics e impresiones.
+* El **reporte avanzado** **Conversions** sustituye los temas clásicos de instalaciones, conversiones de retargeting e instalaciones de CTV.
+* El **reporte avanzado** **End-user events** sustituye los temas clásicos de eventos in-app, sesiones, eventos in-app de CTV, sesiones de CTV y desinstalaciones.
 
-To recreate a specific classic report, apply the report-level filters described in the sections below. For the full list of available filters per report, see <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports#report-level-filters">Report-level filters</Anchor>.
+Para recrear un reporte clásico específico, aplica los filtros a nivel de reporte que se describen en las secciones siguientes. Para consultar la lista completa de filtros disponibles por reporte, consulta <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports#filtros-a-nivel-de-reporte">Filtros a nivel de reporte</Anchor>.
 
-## Recreate classic reports in the Engagements advanced report
+## Recrear reportes clásicos en el reporte avanzado Engagements
 
-In the Engagements Advanced Report, set the **Campaign type** filter to match the classic report's category (for example, User acquisition or Retargeting), and the **Engagement type** filter to match its event type (for example, Clicks or Impressions).
+En el Reporte avanzado Engagements, configura el filtro **Tipo de campaña** para que coincida con la categoría del reporte clásico (por ejemplo, Adquisición de usuarios o Retargeting) y el filtro **Tipo de engagement** para que coincida con su tipo de evento (por ejemplo, Clics o Impresiones).
 
-| Classic report | Campaign type filter | Engagement type filter |
+| Reporte clásico | Filtro de tipo de campaña | Filtro de tipo de engagement |
 | --- | --- | --- |
-| User acquisition – Clicks | User acquisition | `Click` + `Engaged click` |
-| User acquisition – Impressions | User acquisition | `View` + `Engaged view` |
-| Retargeting – Clicks | Retargeting | `Click` + `Engaged click` |
-| Retargeting – Impressions | Retargeting | `View` + `Engaged view` |
+| Adquisición de usuarios – Clics | La adquisición de usuarios | `clic` + `clic con engagement` |
+| Adquisición de usuarios – Impresiones | La adquisición de usuarios | `View` + `Engaged view` |
+| Retargeting – Clics | Reorientación | `clic` + `clic con engagement` |
+| Retargeting – Impresiones | Reorientación | `View` + `Engaged view` |
 
-## Recreate classic reports in the Conversions advanced report
+## Recrear reportes clásicos en el reporte avanzado Conversions
 
-In the Conversions Advanced Report, set the **Conversion type** filter to match the classic report's category (for example, User acquisition or Retargeting), and the **Platform group** filter to match its platform (for example, Mobile or CTV).
+En el Reporte avanzado Conversions, configura el filtro **Tipo de conversión** para que coincida con la categoría del reporte clásico (por ejemplo, Adquisición de usuarios o Retargeting) y el filtro **Grupo de plataformas** para que coincida con su plataforma (por ejemplo, Móvil o CTV).
 
-| Classic report | Conversion type filter | Platform group filter | Comments |
+| Reporte clásico | Filtro de tipo de conversión | Filtro de grupo de plataformas | Comentarios |
 | --- | --- | --- | --- |
-| User acquisition – Installs | User acquisition | Mobile | <ul><li>The `conversion_name` field value is `INSTALL`.</li><li>Covers organic and non-organic installs.</li></ul> |
-| Retargeting – Conversions | Retargeting | Mobile | <ul><li>The `conversion_name` field value is `RE-ENGAGEMENT` or `RE-ATTRIBUTION`.</li><li>Covers non-organic only.</li></ul> |
-| CTV – Installs | User acquisition | CTV | <ul><li>The `conversion_name` field value is `INSTALL`.</li><li>Covers organic and non-organic installs.</li></ul> |
+| Adquisición de usuarios – Instalaciones | La adquisición de usuarios | Móvil | <ul><li>El valor del campo `conversion_name` es `INSTALL`.</li><li>Incluye instalaciones orgánicas y no orgánicas.</li></ul> |
+| Retargeting – Conversiones | Reorientación | Móvil | <ul><li>El valor del campo `conversion_name` es `RE-ENGAGEMENT` o `RE-ATTRIBUTION`.</li><li>Incluye solo tráfico no orgánico.</li></ul> |
+| CTV – Instalaciones | La adquisición de usuarios | CTV | <ul><li>El valor del campo `conversion_name` es `INSTALL`.</li><li>Incluye instalaciones orgánicas y no orgánicas.</li></ul> |
 
-## Recreate classic reports in the End-user events advanced report
+## Recrea reportes clásicos en el reporte avanzado de eventos del usuario final
 
-In the End-user events Advanced Report, set the **Conversion type** filter to match the classic report's category (for example, User acquisition or Retargeting), and the **Platform group** filter to match its platform (for example, Mobile or CTV).
+En el reporte avanzado de eventos del usuario final, configura el filtro **Tipo de conversión** para que coincida con la categoría del reporte clásico (por ejemplo, Adquisición de usuarios o Retargeting) y el filtro **Grupo de plataformas** para que coincida con su plataforma (por ejemplo, Móvil o CTV).
 
-| Classic report | End user event type filter | Conversion type filter | Platform group filter | Comments |
+| Reporte clásico | Filtro de tipo de evento del usuario final | Filtro de tipo de conversión | Filtro de grupo de plataformas | Comentarios |
 | --- | --- | --- | --- | --- |
-| User acquisition – In-app events | `In-app` | User acquisition | Mobile | <ul><li>Covers organic and non-organic in-app events.</li></ul> |
-| Retargeting – In-app events | `In-app` | Retargeting | Mobile | <ul><li>Covers non-organic only.</li><li>Set **Is primary attribution** to `True` to deduplicate retargeting events published more than once.</li></ul> |
-| User acquisition – Sessions | `Session` | User acquisition | Mobile | <ul><li>Covers organic and non-organic sessions.</li></ul> |
-| Retargeting – Sessions | `Session` | Retargeting | Mobile | <ul><li>Covers non-organic only.</li></ul> |
-| CTV – In-app events | `In-app` | any value | CTV |  |
-| CTV – Sessions | `Session` | any value | CTV |  |
+| Adquisición de usuarios – Eventos in-app | `Dentro de la aplicación` | La adquisición de usuarios | Móvil | <ul><li>Incluye eventos in-app orgánicos y no orgánicos.</li></ul> |
+| Retargeting – Eventos in-app | `Dentro de la aplicación` | Reorientación | Móvil | <ul><li>Incluye solo no orgánico.</li><li>Configura **Is primary attribution** en `True` para eliminar duplicados de eventos de retargeting publicados más de una vez.</li></ul> |
+| Adquisición de usuarios – Sesiones | `Sesión` | La adquisición de usuarios | Móvil | <ul><li>Incluye sesiones orgánicas y no orgánicas.</li></ul> |
+| Retargeting – Sesiones de retargeting | `Sesión` | Reorientación | Móvil | <ul><li>Solo incluye tráfico no orgánico.</li></ul> |
+| CTV – Eventos in-app | `Dentro de la aplicación` | cualquier valor | CTV |  |
+| CTV – Sesiones | `Sesión` | cualquier valor | CTV |  |
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-| Trait | Description |
+| Caducado | Nota |
 | --- | --- |
-| Reports not reproducible | Cross-platform engagements, reinstalls, and organic reinstalls are not reproducible using Advanced Reports. |
+| Reportes no reproducibles | Los engagements multiplataforma, las reinstalaciones y las reinstalaciones orgánicas no se pueden reproducir con Advanced Reports. |
 
-> 📄 **See also**
+> 📄 **Véase también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports">About Data Locker Advanced Reports</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">Acerca de Advanced Reports de Data Locker</Anchor>
 
-<div data-zendesk-anchors="about-recreating-classic-reports=overview h_01KV55PGFSSE3GWZ9ZW0TXSVNB=overview reproduce-classic-reports-in-the-engagements-advanced-report=recreate-classic-reports-in-the-engagements-advanced-report h_01KV55PGFSBHV59ZA7KFVQVM1S=recreate-classic-reports-in-the-engagements-advanced-report reproduce-classic-reports-in-the-conversions-advanced-report=recreate-classic-reports-in-the-conversions-advanced-report h_01KV55PGFSK35M9XC7EHVDX53X=recreate-classic-reports-in-the-conversions-advanced-report reproduce-classic-reports-in-the-end-user-events-advanced-report=recreate-classic-reports-in-the-end-user-events-advanced-report h_01KV55PGFSCD4AQQWRBY0MHJGK=recreate-classic-reports-in-the-end-user-events-advanced-report h_01KV55PGFSF8QVSBAWA3XN7A8W=traits-and-limitations h_01KV8SEHV9KVY6R5HQA6K2M2JZ=see-also" />
+<div data-zendesk-anchors="about-recreating-classic-reports=visi%C3%B3n-general h_01KV55PGFSSE3GWZ9ZW0TXSVNB=visi%C3%B3n-general reproduce-classic-reports-in-the-engagements-advanced-report=recrear-reportes-cl%C3%A1sicos-en-el-reporte-avanzado-engagements h_01KV55PGFSBHV59ZA7KFVQVM1S=recrear-reportes-cl%C3%A1sicos-en-el-reporte-avanzado-engagements reproduce-classic-reports-in-the-conversions-advanced-report=recrear-reportes-cl%C3%A1sicos-en-el-reporte-avanzado-conversions h_01KV55PGFSK35M9XC7EHVDX53X=recrear-reportes-cl%C3%A1sicos-en-el-reporte-avanzado-conversions reproduce-classic-reports-in-the-end-user-events-advanced-report=recrea-reportes-cl%C3%A1sicos-en-el-reporte-avanzado-de-eventos-del-usuario-final h_01KV55PGFSCD4AQQWRBY0MHJGK=recrea-reportes-cl%C3%A1sicos-en-el-reporte-avanzado-de-eventos-del-usuario-final traits-and-limitations=especificaciones-y-limitaciones h_01KV55PGFSF8QVSBAWA3XN7A8W=especificaciones-y-limitaciones h_01KV8SEHV9KVY6R5HQA6K2M2JZ=v%C3%A9ase-tambi%C3%A9n" />

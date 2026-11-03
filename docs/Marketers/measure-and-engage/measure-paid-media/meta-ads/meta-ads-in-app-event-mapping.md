@@ -1,5 +1,5 @@
 ---
-title: Meta ads in-app event mapping
+title: Asignación de eventos in-app de anuncios de Meta
 metadata:
   keywords:
     - Facebook
@@ -14,85 +14,84 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-11-09T09:57:19Z'
-  edited_at: '2026-09-10T11:15:42Z'
+  edited_at: '2026-09-12T00:28:07Z'
   id: 4410480904081
-  locale: en-us
+  locale: es
   section: Meta ads
   section_id: 6551109855761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4410480904081-Meta-ads-in-app-event-mapping
+  url: https://support.appsflyer.com/hc/es/articles/4410480904081
 ---
-> **At a glance:** Send your app's rich in-app events from AppsFlyer to Meta ads.
+> **De un vistazo:** Envía los eventos in-app enriquecidos de tu app desde AppsFlyer a Anuncios de Meta.
 
-## Meta in-app events mapping
+## Asignación de eventos in-app de Meta
 
-Advertisers map their in-app events, SDK or Servers-to-servers, to Meta predefined events. Advertisers can also send Meta postbacks about each <Anchor target="_blank" href="/marketers/docs/measure-sessions">app launch</Anchor> or any known <Anchor target="_blank" href="/marketers/docs/measure-uninstalls#mapping-the-uninstall-event">app uninstall</Anchor>.
+Los anunciantes asignan sus eventos in-app, SDK o Servidores a servidores, a eventos predefinidos de Meta. Los anunciantes también pueden enviar postbacks a Meta sobre cada <Anchor target="_blank" href="/marketers/es/docs/measure-sessions">inicio de la aplicación</Anchor> o cada evento conocido de <Anchor target="_blank" href="/marketers/es/docs/measure-uninstalls#mapeo-del-evento-de-desinstalación">desinstalación de la aplicación</Anchor>.
 
-This enables advertisers to utilize Meta's advanced optimization capabilities, as well as build Custom and Lookalike Audience segments.
+Esto permite a los anunciantes utilizar las capacidades de optimización avanzada de Meta, así como crear segmentos de audiencia personalizados y similares.
 
-### Predefined event mapping
+### Asignación de eventos predefinidos
 
-Meta ads offers a <Anchor target="_blank" href="https://developers.facebook.com/docs/app-events/getting-started-app-events-android#event-names">wide range of events</Anchor> that are already predefined and can be mapped.
+Anuncios de Meta ofrece una <Anchor target="_blank" href="https://developers.facebook.com/docs/app-events/getting-started-app-events-android#event-names">amplia gama de eventos</Anchor> que ya están predefinidos y se pueden asignar.
 
-Find <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure">here</Anchor> the list of **rich in-app events** that can be sent to Meta with additional parameters providing **extra information about the quality of events**.
+Encuentra <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure">aquí</Anchor> la lista de **eventos in-app enriquecidos** que se pueden enviar a Meta con parámetros adicionales que proporcionan **información adicional sobre la calidad de los eventos**.
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup#inapp-event-mapping">mapping events on Meta</Anchor>.
+Aprender más sobre la <Anchor target="_blank" href="/marketers/es/docs/meta-ads-integration-setup#inapp-event-mapping">asignación de eventos de Meta</Anchor>.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/ea80246ce8005c4150c70790aefb26aa6a73b5b5ae0eb07f90dcad8b50f2f1a8-37750374219153.png)](https://files.readme.io/ea80246ce8005c4150c70790aefb26aa6a73b5b5ae0eb07f90dcad8b50f2f1a8-37750374219153.png)
+[![In-app_event_postbacks_es-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
 
-Note that there's no predefined event for sending uninstalls to Meta ads. To send uninstalls, use a [custom event](/docs/meta-ads-in-app-event-mapping#custom-in-app-events-mapping).
+Ten en cuenta que no hay un evento predefinido para enviar desinstalaciones a Anuncios de Meta. Para enviar desinstalaciones, usa un [evento personalizado](/docs/meta-ads-in-app-event-mapping#asignación-de-eventos-in-app-personalizados).
 
-Below is the list of other predefined Meta events that don't have additional parameters:
+A continuación se muestra la lista de otros eventos predefinidos de Meta que no tienen parámetros adicionales:
 
-| Meta event identifier | Description | Recommended AppsFlyer SDK name |
+| Identificador de evento de Meta | Descripción | Nombre recomendado del SDK de AppsFlyer |
 | --- | --- | --- |
-| Donate | The donation of funds to your organization or cause. | af\_donate |
-| Schedule | The booking of an appointment to visit one of your locations. | af\_schedule |
-| SubmitApplication | The submission of an application for a product, service or program you offer, such as a credit card, educational program, or job. | af\_submit\_application |
-| FindLocation | When a person finds one of your locations via web or app, with an intention to visit. For example, searching for a product and finding it at one of your local stores. | af\_find\_location |
-| Contact | A telephone or SMS, email, chat or other type of contact between a customer and your business. | af\_contact |
-| CustomizeProduct | The customization of products through a configuration tool or other application your business owns. | af\_customize\_product |
-| `Adimpression`—for Android  <br />`Fb_mobile_purchase`—for iOS | Optimizes ad revenue on the Meta ads platform. [See details below](#mapping-ad-revenue-data-for-campaign-optimization). | af\_ad\_revenue |
+| Donate | La donación de fondos a tu organización o causa. | af\_donate |
+| Schedule | La reserva de una cita para visitar una de tus ubicaciones. | af\_schedule |
+| SubmitApplication | La presentación de una solicitud para un producto, servicio o programa que ofrezcas, como una tarjeta de crédito, programa educativo o trabajo. | af\_submit\_application |
+| FindLocation | Cuando una persona encuentra una de tus ubicaciones a través de la web o la aplicación, con la intención de visitarla. Por ejemplo, buscar un producto y encontrarlo en una de tus tiendas locales. | af\_find\_location |
+| Contacto | Un teléfono o SMS, correo electrónico, chat u otro tipo de contacto entre un cliente y tu negocio. | af\_contact |
+| CustomizeProduct | La personalización de productos a través de una herramienta de configuración u otra aplicación de tu empresa. | af\_customize\_product |
+| `Adimpression`—para Android  <br />`Fb_mobile_purchase`—para iOS | Optimiza los ingresos por anuncios en la plataforma de anuncios de Meta. [Consulta los detalles a continuación](#mapeo-de-datos-de-ingresos-por-anuncios-para-la-optimización-de-campañas). | af\_ad\_revenue |
 
-### Mapping ad revenue data for campaign optimization
+### Mapeo de datos de ingresos por anuncios para la optimización de campañas
 
-Meta ads can optimize your campaigns based on your ad revenue data. This is done by mapping the af\_ad\_revenue event to the following Meta ads event:
+Meta ads pueden optimizar tus campañas en función de tus datos de ingresos por anuncios. Esto se hace asignando el evento af\_ad\_revenue al siguiente evento de Meta ads:
 
-<table><colgroup><col/><col/><col/><col/></colgroup><thead><tr><th><strong>Event name in AppsFlyer</strong></th><th><strong>Platform</strong> </th><th><strong>Mapped to partner event</strong></th><th><strong>Meta ads optimization based on:</strong></th></tr></thead><tbody><tr><td rowspan="2"><br/>af_ad_revenue</td><td>Android</td><td>Adimpression</td><td>Specific ad revenue</td></tr><tr><td>iOS</td><td>fb_mobile_purchase</td><td>In-app purchases</td></tr></tbody></table>
+<table><colgroup><col/><col/><col/><col/></colgroup><thead><tr><th><strong>Nombre del evento en AppsFlyer</strong></th><th><strong>Destino de engagement</strong> </th><th><strong>Asignado a un evento de partner</strong></th><th><strong>Optimización de Meta ads basada en:</strong></th></tr></thead><tbody><tr><td rowspan="2"> <br/>af_ad_revenue</td><td>Android</td><td>Adimpression</td><td>Ingresos por anuncios específicos</td></tr><tr><td>apps de iOS,</td><td>fb_mobile_purchase</td><td>Compras in-app</td></tr></tbody></table>
 
-#### Availability limitations
+#### Limitaciones de disponibilidad
 
-* Currently, optimization via the **Adimpression** event is available only for:
-  * Android apps. iOS apps can continue sending ad revenue data using the *fb\_mobile\_purchase* event.
-  * Selected Meta ads accounts, as per Meta's criteria. When grayed out, [eligibility criteria may not be met](https://www.facebook.com/business/help/571188993373447?id=561906377587030).
-* The *af\_ad\_revenue* event is available for plans with an <Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data">ROI360 advanced subscription</Anchor> only. Additionally, you need the <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution">impression-level via SDK ad revenue integration type</Anchor>.
-  * Non-ROI360 plans can send ad revenue data using other event names.
+* Actualmente, la optimización mediante el evento **Adimpression** solo está disponible para:
+  * Aplicaciones de Android. Las apps de iOS pueden seguir enviando datos de ingresos por anuncios mediante el evento *fb\_mobile\_purchase*.
+  * Cuentas seleccionadas de Meta ads, según los criterios de Meta. Cuando esté en gris, [los criterios de elegibilidad pueden no cumplirse](https://www.facebook.com/business/help/571188993373447?id=561906377587030).
+* El evento *af\_ad\_revenue* solo está disponible para planes con una <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-cost-and-revenue-data">suscripción avanzada de ROI360</Anchor>. Además, necesitas el <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution">tipo de integración de ingresos por anuncios a nivel de impresión mediante SDK</Anchor>.
+  * Los planes que no son ROI360 pueden enviar datos de ingresos publicitarios utilizando otros nombres de eventos.
 
-### Custom in-app events mapping
+### Asignación de eventos in-app personalizados
 
-AppsFlyer allows you to map any custom in-app event to send to Meta, by using the CUSTOM Meta Event Identifier option.
+AppsFlyer te permite asignar cualquier evento in-app personalizado para enviarlo a Meta, utilizando la opción de Identificador de eventos PERSONALIZADO de Meta.
 
-The event name and the event value (including the event parameters) configured in the SDK are forwarded to Meta, as is, and displayed under its original AppsFlyer SDK event name - not as "custom".
+El nombre del evento y el valor del evento (incluidos los parámetros del mismo) configurados en el SDK se reenvían a Meta, tal como están, y se muestran bajo su nombre de evento original del SDK de AppsFlyer, no como "custom".
 
-Note that you are able to <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">use these events to optimize your campaigns</Anchor>.
+Ten en cuenta que puedes <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">utilizar estos eventos para optimizar tus campañas</Anchor>.
 
 [![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
 
-### Automatic parameter mapping with the custom event
+### Asignación automática de parámetros con evento PERSONALIZADO
 
-Through the AppsFlyer deep integration with Meta, many of the AppsFlyer standard SDK event parameters are automatically mapped to Meta's predefined parameters. For example, the **af\_revenue** parameter is converted to the **\_valueToSum** parameter in Meta, which allows you to send a revenue per event that can be measured and optimized in Meta.
+A través de la integración profunda de AppsFlyer con Meta, muchos de los parámetros de eventos del SDK estándar de AppsFlyer se asignan automáticamente a los parámetros predefinidos de Meta. Por ejemplo, el parámetro **af\_revenue** se convierte en el parámetro **\_valueToSum** en Meta, lo que te permite enviar un ingreso por evento que se puede medir y optimizar en Meta.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Automatic parameter mapping can differ between CUSTOM and predefined events.
+> La asignación automática de parámetros puede diferir entre eventos PERSONALIZADOS y predefinidos.
 >
-> For <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure">predefined events</Anchor>, **af\_price** is mapped to **\_valueToSum** in some cases (for example, `fb_mobile_add_to_cart`). In other cases, **af\_revenue** is mapped to **\_valueToSum** (for example, in `fb_mobile_purchase`).
+> Con respecto a los <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure">eventos predefinidos</Anchor>, **af\_price** se asigna a **\_valueToSum** en algunos casos (por ejemplo, `fb_mobile_add_to_cart`). En otros casos, **af\_revenue** se asigna a **\_valueToSum** (por ejemplo, en `fb_mobile_purchase`).
 >
-> For events mapped to CUSTOM, **af\_price** is always mapped to **fb\_price**, and **af\_revenue** to **\_valueToSum**.
+> Con respecto a los eventos asignados a PERSONALIZADOS, **af\_price** siempre se asigna a **fb\_price** y **af\_revenue**, a **\_valueToSum**.
 
-The following table details all the AppsFlyer event parameters, which when mapped through the CUSTOM event to Meta, are automatically mapped to Meta parameters.
+La siguiente tabla detalla todos los parámetros de eventos de AppsFlyer, que, cuando se asignan mediante el evento PERSONALIZADO a Meta, se asignan automáticamente a los parámetros de Meta.
 
-| AppsFlyer Parameter | Meta Parameter |
+| Parámetro de AppsFlyer | Parámetro de Meta |
 | --- | --- |
 | af\_city | fb\_city |
 | af\_class | fb\_travel\_class |
@@ -108,7 +107,7 @@ The following table details all the AppsFlyer event parameters, which when mappe
 | af\_departing\_departure\_date | fb\_departing\_departure\_date |
 | af\_description | fb\_description |
 | af\_destination\_a | fb\_origin\_airport |
-| af\_destination\_b | fb\_destination\_airport |
+| af\_destination\_b | {"fb_destination_"}  <br />airport |
 | af\_destination\_list | fb\_destination\_ids |
 | af\_hotel\_score | fb\_hotel\_score |
 | af\_level | fb\_level |
@@ -137,13 +136,13 @@ The following table details all the AppsFlyer event parameters, which when mappe
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
 
-#### Predefined events automatic mapping to the `_valueToSum` parameter
+#### Mapeo automático de eventos predefinidos al parámetro `_valueToSum`
 
-For predefined events, the Meta parameter `_valueToSum` is mapped either to the `af_price` or to the `af_revenue` parameters.
+En los eventos predefinidos, el parámetro de Meta `_valueToSum` se asigna al parámetro `af_price` o al parámetro `af_revenue`.
 
-The following table details this mapping for all predefined Meta events with the `_valueToSum` parameter:
+La siguiente tabla detalla esta asignación para todos los eventos predefinidos de Meta con el parámetro `_valueToSum`:
 
-| **Meta event** | **\_valueToSum mapped to** |
+| **Punto (.)** | **\_valueToSum asignado a** |
 | --- | --- |
 | fb\_mobile\_level\_achieved | none |
 | fb\_mobile\_add\_payment\_info | none |
@@ -158,26 +157,26 @@ The following table details this mapping for all predefined Meta events with the
 | fb\_mobile\_spent\_credits | af\_price |
 | fb\_mobile\_achievement\_unlocked | none |
 | fb\_mobile\_content\_view | af\_price |
-| StartTrial | af\_price |
-| Subscribe | af\_revenue |
+| Comenzar prueba | af\_price |
+| Suscribirse | af\_revenue |
 
-### Send complex in-app events to Meta ads
+### Envía eventos in-app complejos a Meta ads
 
-As of September 2026, we recommend using the new `af_order_info` object to send complex in-app events – events with multiple items – to Meta Ads. This object lets advertisers share complex in-app events with multiple supported networks. For more information, see <Anchor target="_blank" href="/marketers/docs/item-level-order-data-for-ad-networks-af-order-info">Item-level order data for ad networks (af\_order\_info)</Anchor>.
+A partir de septiembre de 2026, te recomendamos usar el nuevo objeto `af_order_info` para enviar eventos in-app complejos, es decir, eventos con varios artículos, a Meta Ads. Este objeto permite a los anunciantes compartir eventos in-app complejos con varias redes compatibles. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/item-level-order-data-for-ad-networks-af-order-info">Datos de pedidos a nivel de artículo para redes publicitarias (af\_order\_info)</Anchor>.
 
-When you use `af_order_info`, AppsFlyer sends the item information to Meta under the `fb_contents` event field, which supports SKU, quantity, and revenue per item.
+Cuando usas `af_order_info`, AppsFlyer envía la información de los artículos a Meta en el campo de evento `fb_contents`, que admite SKU, cantidad e ingresos por artículo.
 
-As an alternative, you can still use a structured `af_content` array. Each object in the array must include `id` and `quantity` to ensure proper postback handling.
+Como alternativa, también puedes seguir usando una matriz estructurada `af_content`. Cada objeto de la matriz debe incluir `id` y `quantity` para garantizar un procesamiento correcto del postback.
 
-`af_content_list` is optional. When it is absent, Meta falls back to the `fb_content` field (mapped from `af_content`) to identify product IDs. As long as the `af_content` JSON includes an `id` field in each object, Meta can parse and extract content IDs from it.
+`af_content_list` es opcional. Cuando no está presente, Meta recurre al campo `fb_content` (mapeado desde `af_content`) para identificar los ID de producto. Siempre que el JSON de `af_content` incluya un campo `id` en cada objeto, Meta puede analizarlo y extraer de él los ID de contenido.
 
-If you do include `af_content_list`, do not also include `af_content_id` in the same event. Both parameters map to `fb_content_id`, and only one should be populated to prevent conflicts.
+Si incluyes `af_content_list`, no incluyas también `af_content_id` en el mismo evento. Ambos parámetros se asignan a `fb_content_id`, y solo debe rellenarse uno para evitar conflictos.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> `fb_content_id` is important for product-level use cases such as matching events to catalog items for Advantage+ Catalog Ads and Dynamic Ads, product-level performance reporting, and product-based optimization signals. For general conversion optimization based on event count and value, campaigns work without it.
+> `fb_content_id` es importante para casos de uso a nivel de producto, como asociar eventos con artículos del catálogo para Advantage+ Catalog Ads y Dynamic Ads, los informes de rendimiento a nivel de producto y las señales de optimización basadas en productos. Para la optimización general de conversiones basada en el recuento y el valor de los eventos, las campañas funcionan sin él.
 
-> 📄 **Example, unified format compatible with Meta and TikTok**
+> 📄 **Ejemplo de formato unificado compatible con Meta y TikTok**
 >
 > ```json
 > {
@@ -188,37 +187,37 @@ If you do include `af_content_list`, do not also include `af_content_id` in the 
 > }
 > ```
 
-This format works for both Meta and TikTok. TikTok also reads `id` values from the `af_content` field, so a single payload is sufficient when postbacking to both networks.
+Este formato funciona tanto para Meta como para TikTok. TikTok también lee los valores de `id` del campo `af_content`, por lo que una sola carga útil es suficiente cuando envías un postback a ambas redes.
 
-> 🚧 **Important!**
+> 🚧 **Dos puntos (:)**
 >
-> If the `af_content` parameter exceeds 1,000 characters, AppsFlyer may send the event to Meta without the `fb_content` parameter. If `af_content_list` is also absent in that scenario, Meta receives no product identification data. Keep `af_content` under 1,000 characters for events that include many items.
+> Si el parámetro `af_content` supera los 1.000 caracteres, AppsFlyer puede enviar el evento a Meta sin el parámetro `fb_content`. Si `af_content_list` tampoco está presente en ese caso, Meta no recibe datos de identificación del producto. Mantén `af_content` por debajo de los 1.000 caracteres en los eventos que incluyan muchos artículos.
 
-For more details about structuring complex in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#what-are-complex-inapp-events-and-how-do-i-set-them-up">In-app events: Overview</Anchor> article.
+Para obtener más información sobre cómo estructurar eventos in-app complejos, consulta el artículo <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#what-are-complex-inapp-events-and-how-do-i-set-them-up">Eventos in-app: descripción general</Anchor>.
 
-## Event and parameter limitations
+## Limitaciones de eventos y parámetros
 
-The following limits apply to [events you send to Meta ads](https://developers.facebook.com/docs/app-events/faq#limits):
+Los siguientes límites se aplican a los [eventos que envías a Anuncios de Meta](https://developers.facebook.com/docs/app-events/faq#limits):
 
-* The following characters are not allowed:
-  * Colon (:)
-  * Period (.)
-  * Non-Latin (English) character sets: As of January 12, 2020, Meta rejects Chinese characters. AppsFlyer has not tested other character sets, and you should use them only after verifying with Meta if they support them in postbacks.
-* Event names are case-sensitive. To avoid discrepancies, make sure you use the correct case in the event names for all media sources and app versions.
-* Maximum number of parameters: 25.
-* Length of event names and parameters: 2–40.
-* Maximum parameter length: 100 characters.
-* Maximum parameter length for the af\_content parameter: 1000 characters.
-* Characters permitted: Alphanumeric characters, underscores, hyphens, or spaces. Don't use non-Latin (English) characters. Using non-Latin letters results in inconsistent results.
+* Los siguientes caracteres no están permitidos:
+  * Dos puntos (:)
+  * Punto (.)
+  * Conjuntos de caracteres no latinos (inglés): a partir del 12 de enero de 2020, Meta rechaza los caracteres chinos. AppsFlyer no ha probado otros conjuntos de caracteres y debes usarlos solo después de verificar con Meta si estos son compatibles en los postbacks.
+* Los nombres de eventos distinguen entre mayúsculas y minúsculas. Para evitar discrepancias, asegúrate de usar las mayúsculas y minúsculas correctas en los nombres de eventos para todas las fuentes de medios y versiones de aplicaciones.
+* Número máximo de parámetros: 25.
+* Longitud de los nombres de evento y parámetros: 2–40.
+* Longitud máxima de los parámetros: 100 caracteres.
+* Longitud máxima del parámetro af\_content: 1000 caracteres.
+* Caracteres permitidos: caracteres alfanuméricos, guiones bajos, guiones o espacios. No utilices caracteres no latinos (inglés). El uso de letras no latinas causa resultados incoherentes.
 
-Considerations regarding in-app event naming:
+Consideraciones sobre la nomenclatura de eventos in-app:
 
-* Event names on AppsFlyer can be named the same as Meta event names (for example, fb\_price), however, these should not be sent as CUSTOM events to Meta.  
-  **To keep on the safe side, refrain from naming events the same as Meta event names.**
-* To perform in-app events postback mapping with Meta, get events data from all sources, including organic.
+* Los nombres de eventos de AppsFlyer pueden coincidir con los nombres de eventos de Meta (por ejemplo, fb\_price). Sin embargo, no podrán enviarse como eventos PERSONALIZADOS a Meta.  
+  **Por las dudas, evita poner a los eventos el mismo nombre que el de los eventos de Meta.**
+* Para realizar una asignación de postbacks de eventos in-app con Meta, obtén los datos de los eventos de todas las fuentes, incluidas las orgánicas.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> With the exception of the above parameters, AppsFlyer sends the CUSTOM events data **as is** to Meta. It is the responsibility of the app owner to verify the event data is according to Meta requirements, using valid Meta parameters (see the table above). Otherwise, these parameters aren't sent to Meta.
+> A excepción de los parámetros anteriores, AppsFlyer envía los datos de eventos PERSONALIZADOS **tal como están** a Meta. Es responsabilidad del propietario de la aplicación verificar que los datos del evento cumplan con los requisitos de Meta, utilizando parámetros válidos de Meta (ver la tabla anterior). De lo contrario, estos parámetros no se envían a Meta.
 
-<div data-zendesk-anchors="facebook-iae-mapping=meta-in-app-events-mapping h_01J1WCP44CHN0Q73P6DN7H8FKG=meta-in-app-events-mapping h_01J1WCP44D18WMXCMHJ0FNF6Y0=predefined-event-mapping 01JAPZ6M11HSCE9QNN5NSD61FK=mapping-ad-revenue-data-for-campaign-optimization 01JAQ1ECZVR8SZ81KE6CDD08A2=availability-limitations custom-inapp-events-mapping=custom-in-app-events-mapping h_01J1WCP44DK14AC5ZG4KTFFFSC=custom-in-app-events-mapping h_01J1WCP44D645TS6JFGM2BDGM9=automatic-parameter-mapping-with-the-custom-event h_01J1WCP44DSZ7G3603W5EBWZEW=note value-to-sum=predefined-events-automatic-mapping-to-the-_valuetosum-parameter 01JATBG1SZRRZ0PCANKQ6S8CX4=predefined-events-automatic-mapping-to-the-_valuetosum-parameter h_01K1QR0NWMT1WCFWXF2GK9YZYF=send-complex-in-app-events-to-meta-ads h_01KSMX6DZHA1HNQ2WGECZPEQGJ=note-1 h_01KSMX6DZHF0P97RTJHS065KB1=example-unified-format-compatible-with-meta-and-tiktok h_01KSMX6DZHWXYRJP5QK5BB730P=important h_01J1WCP44DF2QMV10VXF8NQZ7W=event-and-parameter-limitations h_01J1WCP44D9SNEYZG59KNM822K=important-1" />
+<div data-zendesk-anchors="facebook-iae-mapping=asignaci%C3%B3n-de-eventos-in-app-de-meta h_01J1WCP44CHN0Q73P6DN7H8FKG=asignaci%C3%B3n-de-eventos-in-app-de-meta predefined-event-mapping=asignaci%C3%B3n-de-eventos-predefinidos h_01J1WCP44D18WMXCMHJ0FNF6Y0=asignaci%C3%B3n-de-eventos-predefinidos mapping-ad-revenue-data-for-campaign-optimization=mapeo-de-datos-de-ingresos-por-anuncios-para-la-optimizaci%C3%B3n-de-campa%C3%B1as 01JAPZ6M11HSCE9QNN5NSD61FK=mapeo-de-datos-de-ingresos-por-anuncios-para-la-optimizaci%C3%B3n-de-campa%C3%B1as availability-limitations=limitaciones-de-disponibilidad 01JAQ1ECZVR8SZ81KE6CDD08A2=limitaciones-de-disponibilidad custom-inapp-events-mapping=asignaci%C3%B3n-de-eventos-in-app-personalizados h_01J1WCP44DK14AC5ZG4KTFFFSC=asignaci%C3%B3n-de-eventos-in-app-personalizados automatic-parameter-mapping-with-the-custom-event=asignaci%C3%B3n-autom%C3%A1tica-de-par%C3%A1metros-con-evento-personalizado h_01J1WCP44D645TS6JFGM2BDGM9=asignaci%C3%B3n-autom%C3%A1tica-de-par%C3%A1metros-con-evento-personalizado h_01J1WCP44DSZ7G3603W5EBWZEW=nota value-to-sum=mapeo-autom%C3%A1tico-de-eventos-predefinidos-al-par%C3%A1metro-_valuetosum 01JATBG1SZRRZ0PCANKQ6S8CX4=mapeo-autom%C3%A1tico-de-eventos-predefinidos-al-par%C3%A1metro-_valuetosum send-complex-in-app-events-to-meta-ads=env%C3%ADa-eventos-in-app-complejos-a-meta-ads h_01K1QR0NWMT1WCFWXF2GK9YZYF=env%C3%ADa-eventos-in-app-complejos-a-meta-ads h_01KSMX6DZHA1HNQ2WGECZPEQGJ=advertencia h_01KSMX6DZHF0P97RTJHS065KB1=ejemplo-de-formato-unificado-compatible-con-meta-y-tiktok h_01KSMX6DZHWXYRJP5QK5BB730P=dos-puntos- event-and-parameter-limitations=limitaciones-de-eventos-y-par%C3%A1metros h_01J1WCP44DF2QMV10VXF8NQZ7W=limitaciones-de-eventos-y-par%C3%A1metros h_01J1WCP44D9SNEYZG59KNM822K=importante" />

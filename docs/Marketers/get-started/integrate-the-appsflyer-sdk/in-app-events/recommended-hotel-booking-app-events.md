@@ -1,5 +1,5 @@
 ---
-title: Recommended hotel booking app events
+title: Eventos de aplicación recomendados para reservas de hoteles
 metadata:
   keywords:
     - Advertisers
@@ -14,319 +14,318 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-04-29T14:49:54Z'
-  edited_at: '2023-12-04T11:56:58Z'
+  edited_at: '2026-08-12T12:01:32Z'
   id: 360019843558
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019843558-Recommended-hotel-booking-app-events
+  url: https://support.appsflyer.com/hc/es/articles/360019843558
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your hotel booking app.
+> **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de reserva de hoteles.
 
-## <Image alt="InApp_Events_hotel.png" src="https://files.readme.io/ffc23cc65b6b6cfe99c12e988cca3df6667058b7e3a672db3639472a17602546-20659548553745.png" width="100px" /> Hotel booking
+## <Image alt="Eventos_InApp_hotel.png" src="https://files.readme.io/ffc23cc65b6b6cfe99c12e988cca3df6667058b7e3a672db3639472a17602546-20659548553745.png" width="100px" /> Reserva de hoteles
 
-Hotel booking apps allow travelers to easily book hotels while choosing from the best offers. The typical events that we suggest recording are search, purchase, travel booking, and add to wishlist.
+Las aplicaciones de reserva de hoteles les permiten a los viajeros reservar hoteles con facilidad y, al mismo tiempo, elegir entre las mejores ofertas. Los eventos típicos que te recomendamos registrar son: busqueda, compra, reserva de viaje y agregar a la lista de deseos.
 
-Recording events can help you determine:
+Registrar estos eventos puede ayudarte a determinar:
 
-* Which campaigns and media sources bring users that actually book vacations
-* Which campaigns and media sources bring the users that book the most and generate more revenue
+* Qué campañas y fuentes de medios atraen a los usuarios que efectivamente reservan vacaciones.
+* Qué campañas y fuentes de medios atraen a los usuarios que hacen más reservas y generan la mayor cantidad de ingresos.
 
-You can attribute preferences such as hotel score, season, country, and the number of kids to users that come from certain media sources. Then, you can optimize your campaigns by targeting these user preferences.
+Podrás atribuir preferencias como la puntuación del hotel, la temporada, el país y la cantidad de niños a los usuarios provenientes de determinadas fuentes de medios. Luego, puedes optimizar tus campañas apuntando a estas preferencias de usuario.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=hotel_booking">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=hotel_booking&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=hotel_booking">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=hotel_booking&view=code">muestras de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Puedes encontrar instrucciones detalladas para tu desarrollador en el **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.**
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Flowchart_for_recommended_events_hotel_booking_app_user_journey](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
+[![Diagrama de flujo del recorrido del usuario en la aplicación de reservas de hoteles para eventos recomendados](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the hotel booking vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que son típicas de la vertical de reservas de hoteles. Cada estructura incluye un tipo de evento predefinido y los parámetros del evento predefinidos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Learn how many users installed the app and completed the signup process, what signup methods your users prefer, and which media sources bring users that actually sign up.
+Descubrir cuántos usuarios instalaron la aplicación y completaron el proceso de registro, qué métodos de registro prefieren tus usuarios y qué fuentes de medios atraen a los usuarios que efectivamente se registran.
 
-**Trigger**
+**Disparador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-Event parameters
+Parámetros del evento
 
-| Field name | Description | Example value |
+| Nombre de campo | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | email, Facebook |
+| af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Acceso (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Activador**
 
-When the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="search-af_search" />
 
-<Accordion title="Search (af_search)">
+<Accordion title="Búsqueda (af_search)">
 
-**Purpose**
+**Finalidad**
 
-Learn what users are looking for, and which search results are the most relevant and lead to a purchase. In addition, you can see what users in certain geographical locations are searching for and target them accordingly across media sources.
+Descubrir qué buscan los usuarios y qué resultados de búsqueda son los más relevantes y conducen a una compra. Además, podrás ver lo que los usuarios de determinadas ubicaciones geográficas están buscando y apuntar a ellos en las distintas fuentes de medios.
 
-**Trigger**
+**Disparador**
 
-When the user performs a search
+Cuando el usuario realiza una búsqueda.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_date\_a | Check-in date | 2018/07/26 |
-| af\_date\_b | Check-out date | 2018/08/01 |
-| af\_destination\_a | User location | London |
-| af\_destination\_b | Location of hotel | Madrid |
-| af\_num\_adults | Number of guests | 2 |
-| af\_num\_children | Number of children | 0 |
+| af\_date\_a | Fecha de entrada | 07/2018/26 |
+| af\_date\_b | Fecha de salida | 2018/08/01 |
+| af\_destination\_a | Ubicación del usuario | Londres |
+| af\_destination\_b | Ubicación del hotel | Madrid |
+| af\_num\_adults | Cantidad de huéspedes | 2 |
+| af\_num\_children | Cantidad de niños | 0 |
 
 </Accordion>
 
 <div id="content-view-af_content_view" />
 
-<Accordion title="Content view (af_content_view)">
+<Accordion title="Vista de contenido (af_content_view)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you determine:
+Este evento puede ayudarte a determinar:
 
-* Whether search results are relevant to search queries
-* What property types users are looking for
-* Seasonal trends
-* Popular locations
-* Which media sources bring users, and then retarget these users in ads and promotions
+* Si los resultados de búsqueda están relacionados con las consultas de búsqueda.
+* Qué tipos de propiedades buscan los usuarios.
+* Tendencias estacionales
+* Destinos populares.
+* Qué fuentes de medios atraen a los usuarios y luego reorientan a estos usuarios en anuncios y promociones.
 
-**Trigger**
+**Disparador**
 
-When the user is viewing a property
+Cuando el usuario está viendo una propiedad.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | List price of the hotel | 674 |
-| af\_content\_id | ID of the hotel | ODIRNH |
-| af\_date\_a | Check-in date | 2018/07/26 |
-| af\_date\_b | Check-out date | 2018/08/01 |
-| af\_destination\_a | User location | London |
-| af\_destination\_b | Location of hotel | Madrid |
-| af\_class | Room type | Deluxe |
-| af\_num\_adults | Number of guests | 2 |
-| af\_num\_children | Number of children | 0 |
-| af\_hotel\_score | Hotel score by reviews | 9.6 |
-| af\_preferred\_star\_ratings | Preferred hotel star rating | 5 |
-| af\_preferred\_neighborhoods | Area in which the hotel is located | Centro |
+| af\_price | Precio de lista del hotel | 674 |
+| af\_content\_id | ID del hotel | ODIRNH |
+| af\_date\_a | Fecha de entrada | 07/2018/26 |
+| af\_date\_b | Fecha de salida | 2018/08/01 |
+| af\_destination\_a | Ubicación del usuario | Londres |
+| af\_destination\_b | Ubicación del hotel | Madrid |
+| af\_class | Tipo de habitación | De lujo |
+| af\_num\_adults | Cantidad de huéspedes | 2 |
+| af\_num\_children | Cantidad de niños | 0 |
+| af\_hotel\_score | Puntuación del hotel según reseñas | 9.6 |
+| af\_preferred\_star\_ratings | Calificación por estrellas como hotel preferido | 5 |
+| af\_preferred\_neighborhoods | Zona en la que se encuentra el hotel | Centro |
 
 </Accordion>
 
 <div id="add-to-wishlist-af_add_to_wishlist" />
 
-<Accordion title="Add to wishlist (af_add_to_wishlist)">
+<Accordion title="Agregar a la lista de deseos (af_add_to_wishlist)">
 
-**Purpose**
+**Finalidad**
 
-Record which hotels and destinations users are interested in booking. When you know, for example, which hotels, regions, and the star rating users are looking for, you can use this data to retarget users.
+Registrar en qué hoteles y destinos los usuarios están interesados en reservar. Cuando sepas, por ejemplo, qué hoteles, regiones y las calificaciones de estrellas que buscan los usuarios, puedes utilizar estos datos para reorientar a los usuarios.
 
-**Trigger**
+**Disparador**
 
-When a user adds a listing to their wish list
+Cuando un usuario agrega un listado a su lista de deseos.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | List price of the hotel | 674 |
-| af\_content\_id | ID of the hotel | ODIRNH |
-| af\_date\_a | Check-in date | 2018/07/26 |
-| af\_date\_b | Check-out date | 2018/08/01 |
-| af\_destination\_a | User location | London |
-| af\_destination\_b | Location of hotel | Madrid |
-| af\_class | Room type | Deluxe |
-| af\_num\_adults | Number of guests | 2 |
-| af\_num\_children | Number of children | 0 |
-| af\_hotel\_score | Hotel score by reviews | 9.6 |
-| af\_preferred\_star\_ratings | Preferred hotel star rating | 5 |
-| af\_preferred\_neighborhoods | Area in which the hotel is located | Centro |
-| purchase\_method | Purchase method | Credit card |
-| af\_coupon\_code | Promo code or loyalty reward points | SUM2018 |
-| property\_type | Type of property | Hotel |
+| af\_price | Precio de lista del hotel | 674 |
+| af\_content\_id | ID del hotel | ODIRNH |
+| af\_date\_a | Fecha de entrada | 07/2018/26 |
+| af\_date\_b | Fecha de salida | 2018/08/01 |
+| af\_destination\_a | Ubicación del usuario | Londres |
+| af\_destination\_b | Ubicación del hotel | Madrid |
+| af\_class | Tipo de habitación | De lujo |
+| af\_num\_adults | Cantidad de huéspedes | 2 |
+| af\_num\_children | Cantidad de niños | 0 |
+| af\_hotel\_score | Puntuación del hotel según reseñas | 9.6 |
+| af\_preferred\_star\_ratings | Calificación por estrellas como hotel preferido | 5 |
+| af\_preferred\_neighborhoods | Zona en la que se encuentra el hotel | Centro |
+| purchase\_method | Método de compra | Tarjeta de crédito |
+| af\_coupon\_code | Código de promoción o puntos de recompensa por lealtad | SUM2018 |
+| property\_type | Tipo de propiedad | Hotel |
 
 </Accordion>
 
 <div id="initiated-checkout-af_initiated_checkout" />
 
-<Accordion title="Initiated checkout (af_initiated_checkout)">
+<Accordion title="Checkout iniciado (af_initiated_checkout)">
 
-**Purpose**
+**Finalidad**
 
-Understand how buyers behave when they proceed to checkout. This event can help you determine:
+Entiende cómo se comportan los compradores cuando realizan el checkout. Este evento puede ayudarte a determinar:
 
-* What purchase method was used, for example, credit card or eWallet
-* Whether users finish the checkout process
+* Qué método de compra se utilizó, por ejemplo, tarjeta de crédito o billetera electrónica
+* Si los usuarios terminan el checkout.
 
-**Trigger**
+**Disparador**
 
-When the user adds their credit card information or connects their eWallet
+Cuando el usuario agrega la información de su tarjeta de crédito o se conecta con su billetera electrónica
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | List price of the hotel | 674 |
-| af\_content\_id | ID of the hotel | ODIRNH |
-| af\_date\_a | Check-in date | 2018/07/26 |
-| af\_date\_b | Check-out date | 2018/08/01 |
-| af\_destination\_a | User location | London |
-| af\_destination\_b | Location of hotel | Madrid |
-| af\_class | Room type | Deluxe |
-| af\_num\_adults | Number of guests | 2 |
-| af\_num\_children | Number of children | 0 |
-| af\_hotel\_score | Hotel score by reviews | 9.6 |
-| af\_preferred\_star\_ratings | Preferred hotel star rating | 5 |
-| af\_preferred\_neighborhoods | Area in which the hotel is located | Centro |
-| purchase\_method | Purchase method | Credit card |
-| af\_coupon\_code | Promo code or loyalty reward points | SUM2018 |
-| property\_type | Type of property | Hotel |
+| af\_price | Precio de lista del hotel | 674 |
+| af\_content\_id | ID del hotel | ODIRNH |
+| af\_date\_a | Fecha de entrada | 07/2018/26 |
+| af\_date\_b | Fecha de salida | 2018/08/01 |
+| af\_destination\_a | Ubicación del usuario | Londres |
+| af\_destination\_b | Ubicación del hotel | Madrid |
+| af\_class | Tipo de habitación | De lujo |
+| af\_num\_adults | Cantidad de huéspedes | 2 |
+| af\_num\_children | Cantidad de niños | 0 |
+| af\_hotel\_score | Puntuación del hotel según reseñas | 9.6 |
+| af\_preferred\_star\_ratings | Calificación por estrellas como hotel preferido | 5 |
+| af\_preferred\_neighborhoods | Zona en la que se encuentra el hotel | Centro |
+| purchase\_method | Método de compra | Tarjeta de crédito |
+| af\_coupon\_code | Código de promoción o puntos de recompensa por lealtad | SUM2018 |
+| property\_type | Tipo de propiedad | Hotel |
 
 </Accordion>
 
 <div id="purchase-af_purchase" />
 
-<Accordion title="Purchase (af_purchase)">
+<Accordion title="Compra (af_purchase)">
 
-**Purpose**
+**Finalidad**
 
-Learn about purchase trends in your hotel booking app. This event can help you:
+Conocer las tendencias de compra en tu aplicación de reserva de hoteles. Este evento puede ayudarte a:
 
-* Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
-* Determine what offers are most popular with your users
-* Cross-reference campaigns with purchased items in order to optimize campaign targeting
+* Determinar el valor de vida útil (LTV) de tus usuarios y el ROI de tus campañas en todas las agencias y redes de publicidad.
+* Determinar qué ofertas son las más populares entre tus usuarios.
+* Establecer referencias cruzadas entre las campañas y los artículos comprados a fin de optimizar el targeting de las campañas.
 
-**Trigger**
+**Disparador**
 
-When the user lands on the thank you page after a successful purchase
+Cuando el usuario llega a la página de agradecimiento después de una compra exitosa.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Estimated revenue from the purchase | 1205.99 |
-| af\_price | Overall purchase sum | 4000 |
-| af\_content\_id | Item ID | 121 |
-| af\_content\_type | Item category | hotel |
-| af\_currency | Currency code | AUD |
-| af\_quantity | Number of items in the cart | 1 |
-| af\_order\_id | ID of the order that is generated after the purchase | X123ABC |
-| af\_receipt\_id | Order ID,  required for CRITEO and Google Ad Words retargeting integration | X123ABC |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Los ingresos estimados de la compra | 1205.99 |
+| af\_price | Importe total de la compra | 4000 |
+| af\_content\_id | ID del artículo | 121 |
+| af\_content\_type | Categoría del artículo | hotel |
+| af\_currency | Código de moneda | AUD |
+| af\_quantity | Cantidad de artículos en el carrito | 1 |
+| af\_order\_id | El ID del pedido que se genera después de la compra | X123ABC |
+| af\_receipt\_id | ID de pedido, necesario para la integración de retargeting de CRITEO y Google AdWords | X123ABC |
 
 </Accordion>
 
 <div id="travel-booking-af_travel_booking" />
 
-<Accordion title="Travel booking (af_travel_booking)">
+<Accordion title="Reserva de viaje (af_travel_booking)">
 
-**Purpose**
+**Finalidad**
 
-Determine the overall booking rate in your app. This event can help you:
+Determinar la tarifa de reserva general en tu aplicación. Este evento puede ayudarte a:
 
-* Record revenue generated from booking
-* Determine the number of users that book hotels with kids
-* Understand seasonal trends
-* Determine popular hotels
+* Registrar los ingresos generados a partir de las reservas.
+* Determinar la cantidad de usuarios que reservan hoteles con niños.
+* Comprender las tendencias estacionales.
+* Determinar qué hoteles son populares.
 
-**Trigger**
+**Disparador**
 
-When the user reaches the thank you page after booking a hotel
+Cuando el usuario llega a la página de agradecimiento después de reservar un hotel.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Revenue from booking | 647.95 |
-| af\_currency | Currency code | GBP |
-| af\_price | List price of the hotel | 674 |
-| af\_content\_id | ID of the hotel | ODIRNH |
-| af\_date\_a | 2018/07/26 | Check-in date |
-| af\_date\_b | Check-out date | 2018/08/01 |
-| af\_destination\_a | User location | London |
-| af\_destination\_b | Location of hotel | Madrid |
-| af\_class | Room type | Deluxe |
-| af\_num\_adults | Number of guests | 2 |
-| af\_num\_children | Number of children | 0 |
-| af\_hotel\_score | Hotel score by reviews | 9.6 |
-| af\_preferred\_star\_ratings | Preferred hotel star rating | 5 |
-| af\_preferred\_neighborhoods | Area in which the hotel is located | Centro |
-| purchase\_method | Purchase method | Credit card |
-| af\_coupon\_code | Promo code or loyalty reward points | SUM2018 |
-| property\_type | Type of property | Hotel |
-| new\_booking | User's first booking | true |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Ingresos de la reserva | 647.95 |
+| af\_currency | Código de moneda | GBP |
+| af\_price | Precio de lista del hotel | 674 |
+| af\_content\_id | ID del hotel | ODIRNH |
+| af\_date\_a | 07/2018/26 | Fecha de entrada |
+| af\_date\_b | Fecha de salida | 2018/08/01 |
+| af\_destination\_a | Ubicación del usuario | Londres |
+| af\_destination\_b | Ubicación del hotel | Madrid |
+| af\_class | Tipo de habitación | De lujo |
+| af\_num\_adults | Cantidad de huéspedes | 2 |
+| af\_num\_children | Cantidad de niños | 0 |
+| af\_hotel\_score | Puntuación del hotel según reseñas | 9.6 |
+| af\_preferred\_star\_ratings | Calificación por estrellas como hotel preferido | 5 |
+| af\_preferred\_neighborhoods | Zona en la que se encuentra el hotel | Centro |
+| purchase\_method | Método de compra | Tarjeta de crédito |
+| af\_coupon\_code | Código de promoción o puntos de recompensa por lealtad | SUM2018 |
+| property\_type | Tipo de propiedad | Hotel |
+| new\_booking | La primera reserva del usuario | Verdadero |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que incluye nombres de eventos personalizados y los parámetros de eventos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="first-purchase-first_purchase" />
 
-<Accordion title="First purchase (first_purchase)">
+<Accordion title="Primera compra (first_purchase)">
 
-**Purpose**
+**Finalidad**
 
-Same as the [Purchase](/docs/recommended-hotel-booking-app-events#purchase-af_purchase) event. In addition, this event can help you determine:
+Igual que el evento [Compra](/docs/recommended-hotel-booking-app-events#purchase-af_purchase). Además, este evento puede ayudarte a determinar:
 
-* How long it takes a new buyer to purchase
-* What products first-time buyers prefer to purchase
-* The average price and revenue of first-time purchases
+* Cuánto tiempo tarda un comprador nuevo en hacer una compra.
+* Cuáles son los productos que prefieren los compradores por primera vez.
+* Los ingresos y precios promedios de las compras por primera vez.
 
-**Trigger**
+**Disparador**
 
-When the user completes their first purchase
+Cuando el usuario completa su primera compra.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Revenue from purchase | 1205.95 |
-| af\_price | Overall purchase sum | 4000 |
-| af\_content\_id | Item ID | 121, 262 |
-| af\_content\_type | Item category | hotel |
-| af\_currency | Currency | AUD |
-| af\_quantity | Quantity of items in the cart | 1 |
-| af\_order\_id | ID of the order that is generated after purchase | X123ABC |
-| af\_receipt\_id | Order ID, required for CRITEO and Google AdWords retargeting integration | X123ABC |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Ingresos de la compra | 1205.95 |
+| af\_price | Importe total de la compra | 4000 |
+| af\_content\_id | ID del artículo | 121, 262 |
+| af\_content\_type | Categoría del artículo | hotel |
+| af\_currency | Truemoney | AUD |
+| af\_quantity | Cantidad de artículos en el carrito | 1 |
+| af\_order\_id | El ID del pedido que se genera después de la compra | X123ABC |
+| af\_receipt\_id | ID de pedido, necesario para la integración de retargeting de CRITEO y Google AdWords | X123ABC |
 
 </Accordion>
 
-<div data-zendesk-anchors="hotel-booking=-hotel-booking h_01HGTB0APWWTRER6GAWJ7TJ05S=-hotel-booking h_01HGTB0APWQDX7VN96GM7520ZH=important h_01HGTB0APW933179Q90HFASW1V=recommended-structures-for-predefined-events h_01HGTB0APWRKRGCJ5TFKTPHH33=complete-registration-af_complete_registration h_01HGTB0APW1XY5R69CJ8PSQV6C=login-af_login h_01HGTB0APW5YF2DASC0HYDPTA9=search-af_search h_01HGTB0APXTQWBS4EXJ8D724G0=content-view-af_content_view h_01HGTB0APXS95QGK17RE8B3Y1E=add-to-wishlist-af_add_to_wishlist h_01HGTB0APX1XX2W3YX85W75F6B=initiated-checkout-af_initiated_checkout h_01HGTB0APXGPW16FRY3C7VSMDM=purchase-af_purchase h_01HGTB0APXJFHMPGYC63ZTV4R9=travel-booking-af_travel_booking h_01HGTB0APXP6WVM1AVEMEY6KVS=recommended-structures-for-custom-events h_01HGTB0APX4ND0NGVTK9FA38QR=first-purchase-first_purchase" />
+<div data-zendesk-anchors="hotel-booking=-reserva-de-hoteles h_01HGTB0APWWTRER6GAWJ7TJ05S=-reserva-de-hoteles h_01HGTB0APWQDX7VN96GM7520ZH=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTB0APW933179Q90HFASW1V=estructuras-recomendadas-para-eventos-predefinidos h_01HGTB0APWRKRGCJ5TFKTPHH33=complete-registration-af_complete_registration h_01HGTB0APW1XY5R69CJ8PSQV6C=login-af_login h_01HGTB0APW5YF2DASC0HYDPTA9=search-af_search h_01HGTB0APXTQWBS4EXJ8D724G0=content-view-af_content_view h_01HGTB0APXS95QGK17RE8B3Y1E=add-to-wishlist-af_add_to_wishlist h_01HGTB0APX1XX2W3YX85W75F6B=initiated-checkout-af_initiated_checkout h_01HGTB0APXGPW16FRY3C7VSMDM=purchase-af_purchase h_01HGTB0APXJFHMPGYC63ZTV4R9=travel-booking-af_travel_booking recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTB0APXP6WVM1AVEMEY6KVS=estructuras-recomendadas-para-eventos-personalizados h_01HGTB0APX4ND0NGVTK9FA38QR=first-purchase-first_purchase" />

@@ -1,5 +1,5 @@
 ---
-title: Chartboost campaign configuration
+title: Configuración de la campaña de Chartboost
 metadata:
   keywords:
     - Chartboost
@@ -14,213 +14,212 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-03-28T08:01:01Z'
-  edited_at: '2026-09-09T12:35:22Z'
+  edited_at: '2026-09-11T00:23:17Z'
   id: 209731553
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (A-F)
   section_id: 6551990971793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/209731553-Chartboost-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/209731553
 ---
-> **At a glance:** Chartboost, an AppsFlyer ad network integrated partner, is one of the largest mobile games-only ad platforms to increase revenue. In addition to click-based mobile attribution, Chartboost also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer.
+> **De un vistazo:** Chartboost, un partner integrado de ad network de AppsFlyer, es una de las mayores plataformas de anuncios exclusiva para juegos móviles para aumentar los ingresos. Además de la atribución móvil basada en clics, Chartboost también ofrece atribución de costo, ingresos publicitarios y view-through, que puedes registrar con AppsFlyer.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Integrating the Chartboost SDK is only necessary if you act as a Chartboost publisher and wish to attribute ad revenue. Otherwise, the AppsFlyer SDK is all that is required. For more information, see this article's [ad revenue section](/docs/chartboost-campaign-configuration#ad-revenue-tab).
+> Solo es necesario integrar el SDK de Chartboost si actúas como publisher de Chartboost y quieres atribuir ingresos publicitarios. De lo contrario, solo necesitas el SDK de AppsFlyer. Para obtener más información, consulta la [sección de ingresos publicitarios](/docs/chartboost-campaign-configuration#ad-revenue-tab) de este artículo.
 
-## Setting up Chartboost
+## Configuración de Chartboost
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el Partners. Si no tienes una cuenta, contacta con el Partners para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace**.  
+   (**Para editar una integración existente:** ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el Partners y selecciona **Integrate**.
+4. En la pestaña **Integración**, activa el selector **Activate partner**.   
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el Partners**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The ***Integration Tab*** is divided into different sections as described below.
+La pestaña ***Integración*** está dividida en diferentes secciones, tal como se describe a continuación.
 
-### Activate partners
+### Activar los partners
 
-The <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner must be activated</Anchor> by switching on the ***Activate partner*** toggle on the first visit, to enable its setup.
+Para habilitar la configuración, en la primera visita debes <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activar el partner</Anchor> mediante el conmutador ***Activar partner***.
 
-### General settings
+### Configuración general
 
-**Chartboost App ID and Signature**
+**ID de app y firma de Chartboost**
 
-Chartboost requires connecting with AppsFlyer via a unique app ID and a signature. If you do not know yours, you can obtain it directly from Chartboost.
+Chartboost requiere conectarse con AppsFlyer mediante un ID de app único y una firma. Si no conoces el tuyo, puedes obtenerlo directamente de Chartboost.
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Toggle ON if you want to attribute view-through installs from Chartboost. The view-through lookback slider is available in the ***Attribution link*** tab.
+Actívalo si quieres atribuir las instalaciones view-through de Chartboost. El control deslizante de lookback de view-through está disponible en la pestaña ***enlace de atribución***.
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to Chartboost following installs and rejected installs. Use this section to define the **source of the users** for the postbacks.
+Envía postbacks automáticos a Chartboost después de las instalaciones y las instalaciones rechazadas. Utiliza esta sección para definir la **fuente de los usuarios** para los postbacks.
 
-Select ***This partner only*** for installs coming only from users attributed to Chartboost.  
-Select ***All sources, including organi*c** to have your entire user base available to be reported to Chartboost.
+Selecciona ***Solo este partner*** para instalaciones provenientes únicamente de usuarios atribuidos a Chartboost.  
+Selecciona ***Todas las fuentes, incluidas las orgáni*cas** para que toda tu base de usuarios esté disponible para ser reportada a Chartboost.
 
-Rejected installs can be sent for **This partner only**.
+Las instalaciones rechazadas se pueden enviar a **Este partner solo**.
 
-#### Launch postbacks
+#### Postbacks de lanzamiento
 
-As of July 1, 2020, we no longer send launch postbacks to Chartboost. If your integration was set up before this date, there may be changes to your configurations. The following table explains possible changes and your actions, where applicable:
+A partir del 1 de julio de 2020, ya no enviamos postbacks de lanzamiento a Chartboost. Si tu integración se configuró antes de esta fecha, puede haber cambios en tus configuraciones. La siguiente tabla explica los posibles cambios y las acciones que debes realizar, cuando corresponda:
 
-| Your configuration | Will be updated to | Your next actions |
+| Tu configuración | Se actualizará a | Tus próximas acciones |
 | --- | --- | --- |
-| Send to Chartboost **all launches** (from all media sources, including organic) | Send to Chartboost:<ul><li>**all installs** (from all media sources, including organic)</li><li>**all** `af_app_opened` **events** (from all media sources, including organic)</li></ul> | No further actions required. This update has no actual impact on the configuration. |
+| Enviar a Chartboost **todos los inicios** (de todas las fuentes de medios, incluidas las orgánicas) | Enviar a Chartboost:<ul><li>**todas las instalaciones** (de todas las fuentes de medios, incluidas las orgánicas)</li><li>**todos los eventos** `af_app_opened` (de todas las fuentes de medios, incluidas las orgánicas)</li></ul> | No se requieren más acciones. Esta actualización no tiene ningún impacto real en la configuración. |
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can configure in-app event postbacks that are sent to Chartboost.
+En esta sección, puedes configurar los postbacks de eventos in-app que se envían a Chartboost.
 
-**To configure in-app event postbacks:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Activate ***In-app event postback***.
-2. Choose whether to report selected events to the partner, or all of them.
-   * Note: If you choose to report all events, the *af\_app\_opened* event is not reported.
-3. If you choose to manually select events, click ***Add event*** to add an SDK Event to the list.
+1. Activa ***postback de evento in-app***.
+2. Elige si quieres reportar los eventos seleccionados al partner o todos.
+   * Nota: Si eliges reportar todos los eventos, el evento *af\_app\_opened* no se reporta.
+3. Si eliges seleccionar eventos manualmente, haz clic en ***Agregar evento*** para añadir un evento del SDK a la lista.
 
-| Parameter name | Description |
+| Nombre del parámetro | Descripción |
 | --- | --- |
-| **SDK event name** *(required for manual selection only)* | The name of the event, as received by AppsFlyer either from the SDK, or from server-to-server events.  <br />**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
-| **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to Chartboost.  <br />**All sources, including organic** to have your entire user base available to be reported to the partner |
-| **Send event data** | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
+| **Nombre del evento del SDK** *(obligatorio solo para la selección manual)* | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK o desde eventos de servidor a servidor.  <br />**Consejo**: si no ves el evento que quieres en la lista, actívalo en un dispositivo con una instalación no orgánica y vuelve a comprobarlo. |
+| **Opción de envío** | Selecciona la opción de envío del evento:  <br />**Solo este partner** para eventos que provienen **solo** de usuarios atribuidos a Chartboost.  <br />**Todas las fuentes, incluidas las orgánicas** para que toda tu base de usuarios esté disponible para ser reportada al partner |
+| **Enviar datos de eventos** | <ul><li>**Sin valores ni ingresos:** envía solo el evento en sí sin el valor del evento.</li><li>**Con valores y sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.</li><li>**Con valores e ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento).</li></ul> |
 
-4. Click ***Save***.
+4. Haz clic en ***Guardar***.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to Chartboost for attributing Chartboost campaigns, ad sets, or single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a Chartboost para atribuir campañas, conjuntos de anuncios o anuncios individuales de Chartboost. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with Chartboost.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific Chartboost campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Chartboost.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña** - añádela para comparar diferentes campañas en funcionamiento con Chartboost.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios** - define nombres de conjuntos de anuncios para comparar diferentes conjuntos de anuncios dentro de campañas específicas de Chartboost.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio** - define nombres de anuncios para comparar diferentes creatividades dentro de conjuntos de anuncios específicos, dentro de campañas específicas de Chartboost.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** y **ID de subsitio** - configura el parámetro de ID de sitio para atribuir instalaciones a publishers específicos. Si existen muchos publishers, te recomendamos limitar el número de IDs de sitio usados y utilizar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">superar las limitaciones del ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor** - usa cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el reporte de raw data, lo que los hace muy útiles para agregar o filtrar datos.  
+  **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Chartboost.
+Este control deslizante te permite establecer el **tiempo máximo del clic a la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Chartboost.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to Chartboost to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Chartboost para que se active cuando los clientes potenciales hagan clic en el anuncio correspondiente.
 
-### View-through attribution lookback window
+### Ventana de lookback de atribución view-through
 
-This slider allows you to set the **maximum time from impression to install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to Chartboost, providing there was no other relevant ad click.
+Este control deslizante te permite establecer el **tiempo máximo de la impresión a la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de esta ventana de lookback, tras la impresión de un anuncio, se atribuyen a Chartboost, siempre que no haya habido ningún otro clic relevante en un anuncio.
 
-You can customize this value to 1-23 hours or 1-7 days.
+Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 
-**Attribution link parameter:** af\_viewthrough\_lookback
+**Parámetro del enlace de atribución:** af\_viewthrough\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución por impresiones</Anchor>.
 
-### Impressions attribution link
+### Enlace de atribución de impresiones
 
-The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to Chartboost to be activated when a corresponding ad is watched.
+El enlace de atribución de impresiones contiene datos similares a los del enlace de registro de clics, además de una ventana de lookback diferente. Envíalo a Chartboost para que se active cuando se vea el anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de redes de publicidad</Anchor> para obtener detalles completos sobre las dimensiones, métricas y funciones admitidas. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el panel de control de estado de la integración de costos (e ingresos por publicidad) o en el panel de control de la red de publicidad individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-This section is relevant if you are acting as a publisher, displaying ads of the partner to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources, to find the most profitable sources for you.
+Esta sección es pertinente si actúas como publisher y muestras anuncios del partner a tus usuarios. Como tal, con seguridad te gustaría medir el nivel de engagement de tus usuarios adquiridos a partir de distintas fuentes, a fin de identificar las fuentes que te resultan más rentables.
 
-**To enable the ad revenue API**:
+**Para habilitar la API de ingresos por publicidad**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">estas instrucciones de integración</Anchor>.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> As a Chartboost publisher, there are two additional requirements besides AppsFlyer configuration:
+> Si eres publisher de Chartboost, hay dos requisitos adicionales además de la configuración de AppsFlyer:
 >
-> 1. [Integrate Chartboost SDK](https://answers.chartboost.com/en-us/child_article/ios) - this is only required if you act as a publisher. **If you only use Chartboost to advertise your app, AppsFlyer SDK is all you need to integrate**.
-> 2. [Enable Chartboost S2S](https://answers.chartboost.com/en-us/child_article/s2s-setup) - this step is required to allow AppsFlyer to query Chartboost for ad revenue data. **This should not be confused with** <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">**AppsFlyer S2S**</Anchor> **which is your way of sending in-app events to AppsFlyer using a dedicated API.**
+> 1. [Integra el SDK de Chartboost](https://answers.chartboost.com/en-us/child_article/ios): solo es necesario si actúas como publisher. **Si solo usas Chartboost para anunciar tu App, el SDK de AppsFlyer es todo lo que necesitas integrar**.
+> 2. [Activa Chartboost S2S](https://answers.chartboost.com/en-us/child_article/s2s-setup) - este paso es necesario para permitir que AppsFlyer consulte a Chartboost los datos de ingresos por anuncios. **No debes confundir esto con** <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile">**AppsFlyer S2S**</Anchor>**, que es la forma de enviar eventos in-app a AppsFlyer mediante una API específica.**
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Chartboost, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for Chartboost, the permissions tab is active and you can grant control to Chartboost.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgar a Chartboost, tanto si el partner actúa como ad network, agencia o ambas cosas. Ten en cuenta que, aunque la atribución esté deshabilitada para Chartboost, la pestaña de permisos está activa y puedes conceder el control a Chartboost.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app: Ad Network Permissions
+Usa estos selectores para otorgar permisos a la ad network para gestionar su propia configuración de tu App: Permisos de la ad network
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos***: solo a los datos de ingresos atribuidos al partner.
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-## Discrepancies between Chartboost and AppsFlyer
+## Discrepancias entre Chartboost y AppsFlyer
 
-Sometimes there are discrepancies between the Chartboost dashboard and AppsFlyer dashboard.
+A veces hay discrepancias entre el Dashboard de Chartboost y el Dashboard de AppsFlyer.
 
-Advertisers should be aware of the following reasons:
+Los anunciantes deben tener en cuenta las siguientes razones:
 
-| Cause | Chartboost | AppsFlyer |
+| Causa | Chartboost | AppsFlyer |
 | --- | --- | --- |
-| **Attribution Window** | Chartboost attribution window is 21 days | AppsFlyer lookback window is 7 days<br /><br />**\*\* This is the main cause of discrepancies between AppsFlyer and Chartboost** |
-| **Multi-Channel Source Attribution** | Chartboost attribution works as specified above regardless of other sources. | AppsFlyer uses the last click attribution (For more information about AppsFlyer attribution, click <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">here</Anchor>) |
+| **Ventana de atribución** | La ventana de atribución de Chartboost es de 21 días | La ventana de lookback de AppsFlyer es de 7 días<br /><br />**\*\* Esta es la causa principal de las discrepancias entre AppsFlyer y Chartboost** |
+| **Atribución de fuentes multicanal** | La atribución de Chartboost funciona tal como se especificó anteriormente, independientemente de otras fuentes. | AppsFlyer usa la atribución de último clic (para obtener más información sobre la atribución de AppsFlyer, haz clic <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">aquí</Anchor>) |
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> While Chartboost shows all installs of a retargeting campaign in the same place, on the AppsFlyer dashboard, installs are divided between the Overview page (new installs) and the Retargeting page (re-attribution and re-engagements).
+> Si bien Chartboost muestra todas las instalaciones de una campaña de retargeting en el mismo lugar, en el dashboard de AppsFlyer las instalaciones se dividen entre la página Overview (nuevas instalaciones) y la página Retargeting (reatribución y re-engagement).
 
-<div data-zendesk-anchors="h_01HFRFDP5V8Q9F0KTEX8X917ZX=note h_01HFRFDP5V0CTXQ0B0JXYD0TKS=setting-up-chartboost h_01HFRFDP5V7BEPGG4226CYWCS7=integration-tab h_01HFRFDP5V26M3RV5986P768A7=activate-partners h_01HFRFDP5VPBY1W81DRVVWJ54D=general-settings h_01HFRFDP5V2GAJQ81NYKDGF16K=default-postbacks h_01HFRFDP5VGFJ8K0J9GA0EX3K1=launch-postbacks inapp-events-settings=in-app-events-settings h_01HFRFDP5V3Z41EEASQD7ZPJRD=in-app-events-settings h_01HFRFDP5VKTGQFHMMXTD6KQTY=attribution-link-tab h_01HFRFDP5VA3DQSH3TRYJC47JZ=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HFRFDP5VQFQHH6ZZ6DWXSJ9C=click-through-attribution h_01HFRFDP5WAJ5Y0K27DY21NZ91=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HFRFDP5WTKE6WJ3CVS16PDF9=view-through-attribution-lookback-window h_01HFRFDP5WSM97SFDS8YC64X31=impressions-attribution-link h_01HFRFDP5W0K5A3E229PS25N9P=cost-tab h_01HFRFDP5WAB1F5YBA9BW3QYPM=ad-revenue-tab h_01HFRFDP5WMREFM3Q0DXJYTHCD=important h_01HFRFDP5WHAKN44VT9Y90P6BJ=permissions-tab h_01HFRFDP5WHWZARGXQ5ZTRC8BD=discrepancies-between-chartboost-and-appsflyer h_01HFRFDP5WN483XJN4PDV2KCR0=note-1" />
+<div data-zendesk-anchors="h_01HFRFDP5V8Q9F0KTEX8X917ZX=nota setting-up-chartboost=configuraci%C3%B3n-de-chartboost h_01HFRFDP5V0CTXQ0B0JXYD0TKS=configuraci%C3%B3n-de-chartboost h_01HFRFDP5V7BEPGG4226CYWCS7=integration-tab activate-partners=activar-los-partners h_01HFRFDP5V26M3RV5986P768A7=activar-los-partners general-settings=configuraci%C3%B3n-general h_01HFRFDP5VPBY1W81DRVVWJ54D=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HFRFDP5V2GAJQ81NYKDGF16K=postbacks-predeterminados launch-postbacks=postbacks-de-lanzamiento h_01HFRFDP5VGFJ8K0J9GA0EX3K1=postbacks-de-lanzamiento inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HFRFDP5V3Z41EEASQD7ZPJRD=configuraci%C3%B3n-de-eventos-in-app h_01HFRFDP5VKTGQFHMMXTD6KQTY=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HFRFDP5VA3DQSH3TRYJC47JZ=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HFRFDP5VQFQHH6ZZ6DWXSJ9C=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HFRFDP5WAJ5Y0K27DY21NZ91=haz-clic-en-el-enlace-de-atribuci%C3%B3n viewthrough-attribution-lookback-window=ventana-de-lookback-de-atribuci%C3%B3n-view-through h_01HFRFDP5WTKE6WJ3CVS16PDF9=ventana-de-lookback-de-atribuci%C3%B3n-view-through impressions-attribution-link=enlace-de-atribuci%C3%B3n-de-impresiones h_01HFRFDP5WSM97SFDS8YC64X31=enlace-de-atribuci%C3%B3n-de-impresiones h_01HFRFDP5W0K5A3E229PS25N9P=cost-tab h_01HFRFDP5WAB1F5YBA9BW3QYPM=ad-revenue-tab h_01HFRFDP5WMREFM3Q0DXJYTHCD=importante h_01HFRFDP5WHAKN44VT9Y90P6BJ=permissions-tab discrepancies-between-chartboost-and-appsflyer=discrepancias-entre-chartboost-y-appsflyer h_01HFRFDP5WHWZARGXQ5ZTRC8BD=discrepancias-entre-chartboost-y-appsflyer h_01HFRFDP5WN483XJN4PDV2KCR0=nota-1" />

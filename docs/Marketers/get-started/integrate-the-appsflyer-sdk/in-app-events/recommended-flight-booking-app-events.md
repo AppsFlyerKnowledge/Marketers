@@ -1,5 +1,5 @@
 ---
-title: Recommended flight booking app events
+title: Eventos de aplicación recomendados para reservas de vuelos
 metadata:
   keywords:
     - Advertisers
@@ -14,254 +14,253 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-04-29T13:07:29Z'
-  edited_at: '2023-12-04T11:56:41Z'
+  edited_at: '2026-08-12T12:00:47Z'
   id: 360019670857
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019670857--Recommended-flight-booking-app-events
+  url: https://support.appsflyer.com/hc/es/articles/360019670857
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your flight booking app.
+> **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de reserva de vuelos.
 
-## <Image alt="InApp_Events_flight.png" src="https://files.readme.io/7a09c4a641dd5e797bffc41a6e66b20efe5660721f37abac3dd12ac83688b37b-20659533911697.png" width="100px" /> Flight booking
+## <Image alt="Eventos_en_la_aplicación_vuelo.png" src="https://files.readme.io/7a09c4a641dd5e797bffc41a6e66b20efe5660721f37abac3dd12ac83688b37b-20659533911697.png" width="100px" /> Reserva de vuelo
 
-Flight booking apps allow travelers to easily book flights while choosing from the best offers. The typical events that we suggest recording are booking a flight, searching for flights, and viewing offers.
+Las aplicaciones de reserva de vuelos les permiten a los viajeros reservar vuelos con facilidad y, al mismo tiempo, elegir entre las mejores ofertas. Los eventos típicos que recomendamos atribuir son: reservar un vuelo, buscar vuelos y ver ofertas.
 
-Recording events can help you:
+La atribución de eventos puede ayudarte a:
 
-* Learn about popular destinations
-* Analyze seasonal trends
-* Learn about popular airlines that users prefer to travel with
+* Conocer los destinos populares
+* Analizar las tendencias estacionales
+* Conocer las líneas aéreas populares con las cuales prefieren viajar los usuarios
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=flight_booking">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=flight_booking&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=flight_booking">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=flight_booking&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Puedes encontrar instrucciones detalladas para tu desarrollador en el **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.**
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Flowchart_for_recommended_events flight_booking_app_user_journey](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)
+[![Diagrama de flujo para eventos recomendados recorrido del usuario de la app de reserva de vuelos](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the flight booking vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que son típicas de la vertical de reservas de vuelos. Cada estructura incluye un tipo de evento predefinido y los parámetros del evento predefinidos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Learn how many users installed the app and completed the signup process, what signup methods your users prefer.
+Descubre cuántos usuarios instalaron la aplicación y completaron el proceso de registro, qué métodos de registro prefieren tus usuarios.
 
-**Trigger**
+**Disparador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-Event parameters
+Parámetros del evento
 
-| Field name | Description | Example value |
+| Nombre de campo | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | email, Facebook |
+| af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Acceso (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Activador**
 
-When the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="travel-booking-af_travel_booking" />
 
-<Accordion title="Travel booking (af_travel_booking)">
+<Accordion title="Reserva de viaje (af_travel_booking)">
 
-**Purpose**
+**Finalidad**
 
-The ability to book flights is the core function of the app. This event can help you determine:
+La capacidad de reservar vuelos es la función principal de la aplicación. Este evento puede ayudarte a determinar:
 
-* Popular destinations
-* Popular airlines
-* Seasonal trends
+* Destinos populares
+* Líneas aéreas populares
+* Tendencias estacionales
 
-**Trigger**
+**Activador**
 
-When the user lands on the thank you page after successfully booking a flight
+Cuando el usuario llega a la página de agradecimiento después de reservar con éxito un vuelo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Revenue associated with booking | 647.99 |
-| af\_currency | Currency code | SGD |
-| af\_price | Price | 674 |
-| af\_content\_id | ID of the flight offer | ODIRNH |
-| af\_departing\_departure\_date | Departure date | 2018-06-21 |
-| af\_returning\_departure\_date | Return date | 2018-06-26 |
-| af\_destination\_a | First destination | BKK |
-| af\_destination\_b | Second destination (if applicable) | SYD |
-| airline\_code | Code of the airline company | KLM |
-| af\_class | Class the flight is booked to | economy |
-| purchase\_method | Method used for the purchase | credit card |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Ingresos asociados con la reserva | 647.99 |
+| af\_currency | Código de moneda | SGD |
+| af\_price | Precio | 674 |
+| af\_content\_id | ID de la oferta de vuelo | ODIRNH |
+| af\_departing\_departure\_date | La fecha de partida | 06-21-2018 |
+| af\_returning\_departure\_date | La fecha de regreso | 06-26-2018 |
+| af\_destination\_a | Primer destino | BKK |
+| af\_destination\_b | Segundo destino (si corresponde) | SYD |
+| airline\_code | Código de la línea aérea | KLM |
+| af\_class | Clase del vuelo reservado | Clase turista |
+| purchase\_method | Método usado para la compra | Tarjeta de crédito |
 
 </Accordion>
 
 <div id="content-view-af_content_view" />
 
-<Accordion title="Content view (af_content_view)">
+<Accordion title="Vista de contenido (af_content_view)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you determine:
+Este evento puede ayudarte a determinar:
 
-* What flight offers users find most appealing
-* Whether search results are relevant to search queries
+* Cuáles son las ofertas de vuelos que les resultan más atractivas a los usuarios.
+* Si los resultados de búsqueda están relacionados con las consultas de búsqueda.
 
-**Trigger**
+**Activador**
 
-When a user clicks a search result
+Cuando un usuario hace clic en un resultado de búsqueda.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_departing\_departure\_date | Departure date | 2018-06-21 |
-| af\_returning\_departure\_date | Return date | 2018-06-26 |
-| af\_destination\_a | First destination | BKK |
-| af\_destination\_b | Second destination (if applicable) | SYD |
+| af\_departing\_departure\_date | La fecha de partida | 06-21-2018 |
+| af\_returning\_departure\_date | La fecha de regreso | 06-26-2018 |
+| af\_destination\_a | Primer destino | BKK |
+| af\_destination\_b | Segundo destino (si corresponde) | SYD |
 
 </Accordion>
 
 <div id="search-af_search" />
 
-<Accordion title="Search (af_search)">
+<Accordion title="Búsqueda (af_search)">
 
-**Purpose**
+**Finalidad**
 
-Flight booking apps let users search for flights and deals. One way of gaining insights into user preferences is to record the search parameters. This event can help you:
+Las aplicaciones de reserva de vuelos permiten que los usuarios busquen vuelos y ofertas. Una manera de conocer las preferencias de los usuarios es registrar los parámetros de búsqueda. Este evento puede ayudarte a:
 
-* Learn what users are looking for
-* Understand which destinations are most popular
-* See how many users travel with kids
-* See what time of the year users prefer or plan to travel
+* Saber qué es lo que buscan los usuarios.
+* Saber cuáles son los destinos más populares.
+* Ver cuántos usuarios viajan con niños.
+* Ver en qué época del año los usuarios prefieren o planean viajar.
 
-**Trigger**
+**Disparador**
 
-After the user fills in the search form and clicks the search button
+Después de que el usuario complete el formulario de búsqueda y haga clic en el botón de búsqueda.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_num\_children | Number of children that are traveling | 0 |
-| af\_destination\_a | First destination | BKK |
-| af\_destination\_b | Second destination (if relevant) | SYD |
-| af\_departing\_departure\_date | Departure date | 2018-06-21 |
-| af\_returning\_departure\_date | Return date | 2018-06-26 |
-| af\_num\_infants | Number of infants that are traveling | 0 |
-| af\_num\_adults | Number of  adults that are traveling | 1 |
+| af\_num\_children | Cantidad de niños que viajan | 0 |
+| af\_destination\_a | Primer destino | BKK |
+| af\_destination\_b | Segundo destino (si corresponde) | SYD |
+| af\_departing\_departure\_date | La fecha de partida | 06-21-2018 |
+| af\_returning\_departure\_date | La fecha de regreso | 06-26-2018 |
+| af\_num\_infants | Cantidad de bebés que viajan | 0 |
+| af\_num\_adults | Cantidad de adultos que viajan | 1 |
 
 </Accordion>
 
 <div id="add-payment-info-af_add_payment_info" />
 
-<Accordion title="Add payment info (af_add_payment_info)">
+<Accordion title="Agregar información de pago (af_add_payment_info)">
 
-**Purpose**
+**Finalidad**
 
-Record successful and unsuccessful attempts at adding payment info when booking a flight.
+Registrar los intentos exitosos y no exitosos de agregar la información de pago cuando se reserva un vuelo.
 
-**Trigger**
+**Activador**
 
-When a user clicks on the book a flight button
+Cuando un usuario hace clic en el botón para reservar un vuelo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_success | Whether adding payment method is successful | true |
+| af\_success | Si se pudo agregar el método de pago correctamente | Verdadero |
 
 </Accordion>
 
 <div id="purchase-af_purchase" />
 
-<Accordion title="Purchase (af_purchase)">
+<Accordion title="Compra (af_purchase)">
 
-**Purpose**
+**Finalidad**
 
-Learn about purchase trends in your flight booking app. This event can help you:
+Conocer las tendencias de compra en tu aplicación de reserva de vuelos. Este evento puede ayudarte a:
 
-* Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
-* Determine what offers are most popular with your users
-* Cross-reference campaigns with purchased items in order to optimize campaign targeting
+* Determinar el valor de vida útil (LTV) de tus usuarios y el ROI de tus campañas en todas las agencias y redes de publicidad.
+* Determinar qué ofertas son las más populares entre tus usuarios.
+* Establecer referencias cruzadas entre las campañas y los artículos comprados a fin de optimizar el targeting de las campañas.
 
-**Trigger**
+**Disparador**
 
-When the user lands on the thank you page after a successful purchase
+Cuando el usuario llega a la página de agradecimiento después de una compra exitosa.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Estimated revenue from the purchase | 1205.99 |
-| af\_price | Overall purchase sum | 4000 |
-| af\_content\_id | Item ID | 121 |
-| af\_content\_type | Item category | flight |
-| af\_currency | Currency code | AUD |
-| af\_quantity | Number of items in the cart | 1 |
-| af\_order\_id | ID of the order that is generated after the purchase | X123ABC |
-| af\_receipt\_id | Order ID, required for CRITEO and Google Ad Words retargeting integration | X123ABC |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Los ingresos estimados de la compra | 1205.99 |
+| af\_price | Importe total de la compra | 4000 |
+| af\_content\_id | ID del artículo | 121 |
+| af\_content\_type | Categoría del artículo | vuelo |
+| af\_currency | Código de moneda | AUD |
+| af\_quantity | Cantidad de artículos en el carrito | 1 |
+| af\_order\_id | El ID del pedido que se genera después de la compra | X123ABC |
+| af\_receipt\_id | ID de pedido, necesario para la integración de retargeting de CRITEO y Google AdWords | X123ABC |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que incluye nombres de eventos personalizados y los parámetros de eventos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="first-purchase-first_purchase" />
 
-<Accordion title="First purchase (first_purchase)">
+<Accordion title="Primera compra (first_purchase)">
 
-**Purpose**
+**Finalidad**
 
-Same as the [Purchase](/docs/recommended-flight-booking-app-events#purchase-af_purchase) event. In addition, this event can help you determine:
+Igual que el evento [Compra](/docs/recommended-flight-booking-app-events#purchase-af_purchase). Además, este evento puede ayudarte a determinar:
 
-* How long it takes a new buyer to purchase
-* What flights first-time buyers prefer to purchase
-* The average price and revenue of first-time purchases
+* Cuánto tiempo tarda un comprador nuevo en hacer una compra.
+* Qué vuelos prefieren los compradores para comprar por primera vez
+* Los ingresos y precios promedios de las compras por primera vez.
 
-**Trigger**
+**Activador**
 
-When the user completes their first purchase
+Cuando el usuario completa su primera compra.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Revenue from purchase | 1205.99 |
-| af\_price | Overall purchase sum | 4000 |
-| af\_content\_id | Item ID | 121, 262 |
-| af\_content\_type | Item category | flight |
-| af\_currency | Currency | AUD |
-| af\_quantity | Quantity of items in the cart | 1 |
-| af\_order\_id | ID of the order that is generated after purchase | X123ABC |
-| af\_receipt\_id | Order ID, required for CRITEO and Google AdWords retargeting integration | X123ABC |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Ingresos de la compra | 1205.99 |
+| af\_price | Importe total de la compra | 4000 |
+| af\_content\_id | ID del artículo | 121, 262 |
+| af\_content\_type | Categoría del artículo | vuelo |
+| af\_currency | Truemoney | AUD |
+| af\_quantity | Cantidad de artículos en el carrito | 1 |
+| af\_order\_id | El ID del pedido que se genera después de la compra | X123ABC |
+| af\_receipt\_id | ID de pedido, necesario para la integración de retargeting de CRITEO y Google AdWords | X123ABC |
 
 </Accordion>
 
-<div data-zendesk-anchors="flight-booking=-flight-booking h_01HGTAZRKG0SQ66XK7VN9KVGEY=-flight-booking h_01HGTAZRKGGQBBAM4XJHR4B45P=important h_01HGTAZRKHK1427YX16HWRDRPN=recommended-structures-for-predefined-events h_01HGTAZRKHACHNSNX9DSZ3ZZ51=complete-registration-af_complete_registration h_01HGTAZRKHTC9TNWNPACRZW31Y=login-af_login h_01HGTAZRKHZGW442XTZF99VGV9=travel-booking-af_travel_booking h_01HGTAZRKHGY0Z83ETZWAFNSWP=content-view-af_content_view h_01HGTAZRKH8JYE8Q6NDPF1PQC7=search-af_search h_01HGTAZRKH78CR2GH0960MS8R0=add-payment-info-af_add_payment_info h_01HGTAZRKHXE8VF78ZE0KF9AF6=purchase-af_purchase h_01HGTAZRKH4ZZEK5JGXZ7G5QDJ=recommended-structures-for-custom-events h_01HGTAZRKHG7GE4BKFDRHZC163=first-purchase-first_purchase" />
+<div data-zendesk-anchors="flight-booking=-reserva-de-vuelo h_01HGTAZRKG0SQ66XK7VN9KVGEY=-reserva-de-vuelo h_01HGTAZRKGGQBBAM4XJHR4B45P=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAZRKHK1427YX16HWRDRPN=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAZRKHACHNSNX9DSZ3ZZ51=complete-registration-af_complete_registration h_01HGTAZRKHTC9TNWNPACRZW31Y=login-af_login h_01HGTAZRKHZGW442XTZF99VGV9=travel-booking-af_travel_booking h_01HGTAZRKHGY0Z83ETZWAFNSWP=content-view-af_content_view h_01HGTAZRKH8JYE8Q6NDPF1PQC7=search-af_search h_01HGTAZRKH78CR2GH0960MS8R0=add-payment-info-af_add_payment_info h_01HGTAZRKHXE8VF78ZE0KF9AF6=purchase-af_purchase recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAZRKH4ZZEK5JGXZ7G5QDJ=estructuras-recomendadas-para-eventos-personalizados h_01HGTAZRKHG7GE4BKFDRHZC163=first-purchase-first_purchase" />

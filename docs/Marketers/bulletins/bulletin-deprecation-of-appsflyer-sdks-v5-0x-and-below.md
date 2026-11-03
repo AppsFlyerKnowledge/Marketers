@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Deprecation of AppsFlyer SDKs V5.0x and below'
+title: 'Boletín: desuso de los SDK de AppsFlyer V5.0x y anteriores'
 metadata:
   keywords:
     - Developers
@@ -14,16 +14,15 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-10-25T10:00:14Z'
-  edited_at: '2022-10-25T11:10:49Z'
+  edited_at: '2026-10-20T03:56:20Z'
   id: 10113358959121
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/10113358959121-Bulletin-Deprecation-of-AppsFlyer-SDKs-V5-0x-and-below
+  url: https://support.appsflyer.com/hc/es/articles/10113358959121
 ---
-> **At a glance:** As of Oct. 31, 2022, AppsFlyer SDK versions 5.0x or older, for Android and iOS, are deprecated.
+> **Resumen:** A partir del 31 de oct. de 2022, las versiones 5.0x o anteriores del SDK de AppsFlyer para Android e iOS quedan en desuso.
 
-| **What's changing** | As of Oct. 31, 2022, AppsFlyer SDK versions 5.0x or below, for Android and iOS, are deprecated. Apps that have these SDKs will continue to work, but no data will be collected in AppsFlyer for these apps. |
+| **Qué ha cambiado** | A partir del 31 de oct. de 2022, las versiones 5.0x o anteriores del SDK de AppsFlyer para Android e iOS quedan en desuso. Las aplicaciones que tengan estos SDK seguirán funcionando, pero no se recopilarán datos en AppsFlyer para estas aplicaciones. |
 | --- | --- |
-| **What you must know** | <ul><li>If your apps contain SDK V5.0.x or older you MUST integrate the latest SDK versions to continue collecting measurement data, use deep linking, get fraud protection, and more.</li><li>Visit <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">here</Anchor> to see what new information and features the updated AppsFlyer SDKs can supply you.</li></ul> |
+| **Lo que debes saber** | <ul><li>Si tus aplicaciones incluyen la versión 5.0.x del SDK o una anterior, DEBES integrar las versiones más recientes del SDK para seguir recopilando datos de medición, usar deep linking, obtener protección contra el fraude y mucho más.</li><li>Visita <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">aquí</Anchor> para ver qué información y funciones nuevas pueden ofrecerte los SDK actualizados de AppsFlyer.</li></ul> |

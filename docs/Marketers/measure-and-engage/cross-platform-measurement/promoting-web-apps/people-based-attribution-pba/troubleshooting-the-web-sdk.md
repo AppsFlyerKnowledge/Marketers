@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting the web SDK
+title: Resolución de problemas del SDK web
 metadata:
   keywords:
     - People Based Attribution
@@ -15,75 +15,76 @@ x-zendesk:
     - Marketers
     - Web Attribution
   created_at: '2019-07-22T13:55:15Z'
-  edited_at: '2023-03-12T12:50:39Z'
+  edited_at: '2026-08-12T12:11:51Z'
   id: 360002075858
-  locale: en-us
+  locale: es
   section: People Based Attribution (PBA)
   section_id: 43560588808721
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360002075858-Troubleshooting-the-web-SDK
+  url: https://support.appsflyer.com/hc/es/articles/360002075858
 ---
-> **At a glance:** A troubleshooting guide for AppsFlyer Web SDK added directly to your website or implemented via Google Tag Manager.
+> **Resumen:** Guía de resolución de problemas del SDK web de AppsFlyer, añadido directamente a tu sitio web o implementado mediante Google Tag Manager.
 
-## SDK added directly
+## SDK añadido directamente
 
-You can add the SDK directly to your website.
+Puedes añadir el SDK directamente a tu sitio web.
 
-### No data or partial data in the PBA dashboard
+### No hay datos o hay datos parciales en el dashboard de PBA
 
-| Cause | Solution |
+| Causa | SOLUCIÓN |
 | --- | --- |
-| Data takes up to 24 hours to display in <Anchor target="_blank" href="/marketers/docs/pba-website-attribution-dashboard">People-Based Analysis dashboards</Anchor> after you implement the SDK. | Wait 24 hours. If data is still not available, see additional causes in this document. |
-| Incorrect web dev key | <ul><li>Web SDK uses the web dev key to identify web events sent in order to know which bundle to attribute data to.</li><li>Verify that you are using the <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#ensure-that-the-sdk-is-working">correct web dev key.</Anchor></li></ul><Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#add-brand-bundle">Brand Bundle page</Anchor> |
-| You placed the web SDK in the body of the page | <ul><li>You can put the web SDK in the body of the page, but this might affect the data that is sent to AppsFlyer.</li><li>We recommend that you put it in the head section of the page.</li></ul> |
-| The web SDK is not placed on all pages on your website | We recommend placing the web SDK on all pages of your website. |
+| Los datos pueden tardar hasta 24 horas en mostrarse en los <Anchor target="_blank" href="/marketers/es/docs/pba-website-attribution-dashboard">dashboards de People-Based Analysis</Anchor> después de implementar el SDK. | Espera 24 horas. Si los datos siguen sin estar disponibles, consulta causas adicionales en este documento. |
+| Clave de desarrollador web incorrecta | <ul><li>El SDK web utiliza la clave de desarrollador web para identificar los eventos web enviados y así saber a qué paquete atribuir los datos.</li><li>Verifica que estás utilizando la <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#ensure-that-the-sdk-is-working">clave de desarrollador web correcta.</Anchor></li></ul><Anchor target="_blank" href="/marketers/es/docs/pba-brand-bundles-and-settings#add-brand-bundle">Página del paquete de marca</Anchor> |
+| Has colocado el SDK web en el cuerpo de la página | <ul><li>Puedes colocar el SDK web en el body de la página, pero esto puede afectar a los datos que se envían a AppsFlyer.</li><li>Te recomendamos que lo pongas en la sección head de la página.</li></ul> |
+| El SDK web no está colocado en todas las páginas de tu sitio web | Te recomendamos colocar el SDK web en todas las páginas de tu sitio web. |
 
-### Events are not sent
+### No se envían eventos
 
-| Cause | Solution |
+| Causa | SOLUCIÓN |
 | --- | --- |
-| Events are being sent before the web SDK loads up. In such cases the browser developer console shows the error: `Uncaught ReferenceError: AF is not defined` | Verify that the web SDK is loaded before the code that sends events. |
-| Incorrect web dev key | <ul><li>PBA requires a web dev key in order to know which bundle to attribute data to. Make sure that the correct web dev key is used.</li><li>Verify that you are using the <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#ensure-that-the-sdk-is-working">correct web dev key.</Anchor></li></ul> |
-| Malformed events | Make sure the event is well-formed.<br /><br />See <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">available event parameters</Anchor> to learn more about well-formed events. |
-| SDK called twice |  |
+| Los eventos se envían antes de que se cargue el SDK web. En estos casos, la consola para desarrolladores del navegador muestra el error: `Uncaught ReferenceError: AF is not defined` | Verifica que el SDK web se cargue antes que el código que envía eventos. |
+| Clave de desarrollador web incorrecta | <ul><li>PBA requiere una clave de desarrollador web para saber a qué paquete atribuir los datos. Asegúrate de que se utiliza la clave de desarrollador web correcta.</li><li>Verifica que estás utilizando la <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#ensure-that-the-sdk-is-working">clave de desarrollador web correcta.</Anchor></li></ul> |
+| Eventos malformados | Asegúrate de que el evento esté bien formado.<br /><br />Consulta los <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">parámetros de evento disponibles</Anchor> para saber más sobre los eventos con el formato correcto. |
+| SDK llamado dos veces |  |
 
-### Conflicting SDKs and libraries
+### SDK y bibliotecas en conflicto
 
-Many web SDKs make use of popular JavaScript libraries. Such SDKs also occupy names in the global scope. For example, our web SDK occupies **AF** as the main object that enables the web SDK.
+Muchos SDK web hacen uso de bibliotecas JavaScript populares. Estos SDK también ocupan nombres en el ámbito global. Por ejemplo, nuestro SDK web ocupa **AF** como el objeto principal que habilita el SDK web.
 
-* If some SDK makes use of library X version 1.2 and AppsFlyer SDK makes use of library X 2.1, the two libraries might conflict.
-* If another SDK or library makes use of **AF** (in the global scope) as an object name, the two SDKs conflict, and one SDK might override the other.
+* Si algún SDK hace uso de la versión 1.2 de la biblioteca X y el SDK de AppsFlyer hace uso de la versión 2.1 de la biblioteca X, las dos bibliotecas podrían entrar en conflicto.
+* Si otro SDK o biblioteca hace uso de **AF** (en el ámbito global) como nombre de objeto, los dos SDK entran en conflicto y uno podría sobrescribir al otro.
 
-## SDK added using Google Tag Manager
+## SDK añadido mediante Google Tag Manager
 
-* Implementing the web SDK with the help of Google Tag Manager (GTM) can save you time.
-* You can implement it independently and you don't have to rely on your web developer to add it to your website.
+* Implementar el SDK web con la ayuda de Google Tag Manager (GTM) puede ahorrarte tiempo.
+* Puedes implementarlo de forma independiente y no tienes que depender de tu desarrollador web para añadirlo a tu sitio web.
 
-If you come across issues. Apart from the issues described in the [native implementation of the SDK](/docs/troubleshooting-the-web-sdk#sdk-added-directly), there are some possible issues specific to GTM.
+Si encuentras problemas. Además de los problemas descritos en la [implementación nativa del SDK](/docs/troubleshooting-the-web-sdk#sdk-añadido-directamente), hay algunos posibles problemas específicos de GTM.
 
-### Calling the SDK
+### Llamada al SDK
 
-| Cause | Solution |
+| Causa | SOLUCIÓN |
 | --- | --- |
-| <ul><li>Our Web SDK guide shows how to add the web SDK using a tag.</li></ul><ul><li>Some users, when creating tags to call events, set the tag to also call the SDK tag again. But this might cause issues.</li></ul>![mceclip0.png](https://files.readme.io/77be12759c5ec5a04a517ee1b99109e8952b97d1d4280b71c51fa36304f5adbf-360003756558.png) | The best approach is to set one tag to load the SDK and set this tag to fire on all pages. For any tags that send events, they should not call the SDK tag again. |
+| <ul><li>Nuestra guía del SDK web muestra cómo añadir el SDK web usando una etiqueta.</li></ul><ul><li>Algunos usuarios, al crear etiquetas para llamar a eventos, configuran la etiqueta para que también vuelva a llamar a la etiqueta del SDK. Pero esto puede causar problemas.</li></ul>![mceclip0.png](https://files.readme.io/77be12759c5ec5a04a517ee1b99109e8952b97d1d4280b71c51fa36304f5adbf-360003756558.png) | La mejor opción es configurar una etiqueta para cargar el SDK y hacer que se active en todas las páginas. Las etiquetas que envían eventos no deben volver a llamar a la etiqueta del SDK. |
 
-### Tag priority
+### Prioridad de la etiqueta
 
-GTM allows you to <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/2772421?hl=en">set tag priority</Anchor>. This means that you can control which tags are fired first.
+GTM te permite <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/2772421?hl=en">establecer la prioridad de las etiquetas</Anchor>. Esto significa que puedes controlar qué etiquetas se activan primero.
 
-| Cause | Solution |
+| Causa | SOLUCIÓN |
 | --- | --- |
-| A tag that loads the SDK is set to lower priority than a tag that sends an event on page load. As a result, the SDK is not initialized in time to send the event. | For the tag that loads the SDK, always set higher priority over tags that send events or identify users. |
+| Una etiqueta que carga el SDK tiene una prioridad inferior a la de una etiqueta que envía un evento al cargar la página. Como resultado, el SDK no se inicializa a tiempo para enviar el evento. | En la etiqueta que carga el SDK, establece siempre una prioridad superior a la de las etiquetas que envían eventos o identifican usuarios. |
 
-### Triggering tags
+### Activación de etiquetas
 
-In GTM, every tag has a trigger that determines when this tag should be fired.
+En GTM, cada etiqueta tiene un activador que determina cuándo debe activarse esa etiqueta.
 
-| Cause | Solution |
+| Causa | SOLUCIÓN |
 | --- | --- |
-| The trigger responsible for firing the tag that loads the SDK is not set to all pages. As a result, not all page visits are logged and some events are not sent. | The best approach is to set an <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7679319?hl=en">all-page views</Anchor> trigger for the tag that loads the SDK. |
-| The trigger responsible for firing tags that send events is not configured correctly. As a result, some events are not sent. | Determine the conditions for the trigger. For example,<ul><li>an interaction with DOM elements like a click on a button</li><li>a page visit to a page that has a certain path like **/thank-you-page** or **/confirmation-page**</li></ul> |
+| El activador encargado de activar la etiqueta que carga el SDK no está configurado para todas las páginas. Como resultado, no se registran todas las visitas a la página y algunos eventos no se envían. | Lo mejor es configurar un activador de <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7679319?hl=en">vistas de todas las páginas</Anchor> para la etiqueta que carga el SDK. |
+| El activador encargado de activar las etiquetas que envían eventos no está configurado correctamente. Como resultado, algunos eventos no se envían. | Determina las condiciones del activador. Por ejemplo:<ul><li>una interacción con elementos del DOM, como hacer clic en un botón</li><li>una visita a una página con una ruta concreta, como **/thank-you-page** o **/confirmation-page**</li></ul> |
 
-### Publishing GTM containers
+### Publicación de contenedores de GTM
 
-Every change in GTM, like adding or editing tags and triggers, requires you to publish the GTM container for changes to take effect. If you use the web SDK using GTM but the SDK doesn't load or events are not sent, make sure to [publish the GTM container](https://support.google.com/tagmanager/answer/6107163?hl=en).
+Todos los cambios en GTM, como añadir o editar etiquetas y activadores, requieren que publiques el contenedor de GTM para que los cambios surtan efecto. Si usas el SDK web con GTM, pero el SDK no se carga o no se envían eventos, asegúrate de [publicar el contenedor de GTM](https://support.google.com/tagmanager/answer/6107163?hl=en).
+
+<div data-zendesk-anchors="sdk-added-directly=sdk-a%C3%B1adido-directamente no-data-or-partial-data-in-the-pba-dashboard=no-hay-datos-o-hay-datos-parciales-en-el-dashboard-de-pba events-are-not-sent=no-se-env%C3%ADan-eventos conflicting-sdks-and-libraries=sdk-y-bibliotecas-en-conflicto sdk-added-using-google-tag-manager=sdk-a%C3%B1adido-mediante-google-tag-manager calling-the-sdk=llamada-al-sdk tag-priority=prioridad-de-la-etiqueta triggering-tags=activaci%C3%B3n-de-etiquetas publishing-gtm-containers=publicaci%C3%B3n-de-contenedores-de-gtm" />

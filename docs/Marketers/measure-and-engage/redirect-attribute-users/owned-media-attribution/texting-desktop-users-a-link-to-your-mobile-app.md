@@ -1,5 +1,7 @@
 ---
-title: Texting desktop users a link to your mobile app
+title: >-
+  Mensajes de texto a los usuarios de escritorio con un enlace a tu aplicación
+  móvil
 metadata:
   keywords:
     - Advertisers
@@ -14,47 +16,46 @@ x-zendesk:
     - Marketers
     - QR-to-App
   created_at: '2019-11-21T09:13:52Z'
-  edited_at: '2026-05-05T06:54:49Z'
+  edited_at: '2026-08-12T12:25:09Z'
   id: 360003799658
-  locale: en-us
+  locale: es
   section: Owned media attribution
   section_id: 6551214397585
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360003799658-Texting-desktop-users-a-link-to-your-mobile-app
+  url: https://support.appsflyer.com/hc/es/articles/360003799658
 ---
-> **At a glance:** Convert desktop users to mobile app users using SMS vendors and OneLink.
+> **En resumen:** Convierte usuarios de web de desktop en usuarios de aplicación móvil mediante proveedores de SMS y OneLink.
 
 ![text-me-the-app-web-form.png](https://files.readme.io/d28b843ab7528138b4d85b147b8d613efde740d354238227b0f123030fa3a1de-360004940018.png)
 
-## Introduction
+## Introducción
 
-If your brand has both a web app and a mobile app, desktop web users might decide at some point that they want to install the mobile app.
+Si tu marca tiene tanto una aplicación web como una aplicación móvil, es posible que los usuarios de la web de desktop decidan en algún momento que quieren instalar la aplicación móvil.
 
-To help them do so and for better user experience, you can text them a direct link to the app. This is the quickest way to help them install the app.
+Para ayudarles a hacerlo y ofrecer una mejor experiencia de usuario, puedes enviarles un enlace directo a la aplicación por SMS. Esta es la forma más rápida de ayudarles con la instalación de la aplicación.
 
-This way, they don't have to open the app store on their mobile, find your app, and install it. When you save users time and effort, they are more likely to convert and install your mobile app.
+Así, no tienen que abrir la tienda de aplicaciones en su móvil, buscar tu aplicación e instalarla. Cuando ahorras tiempo y esfuerzo a los usuarios, es más probable que conviertan e instalen tu aplicación móvil.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> We offer another solution for <Anchor target="_blank" href="/marketers/docs/qr-to-app-conversion">desktop-to-web conversion</Anchor> that simply requires you to post a QR code (generated from your OneLink) to your desktop site.
+> Ofrecemos otra solución para la <Anchor target="_blank" href="/marketers/es/docs/qr-to-app-conversion">conversión de desktop a web</Anchor> que solo requiere publicar un código QR (generado a partir de tu OneLink) en tu sitio de desktop.
 
-## Requirements
+## Requisitos
 
-To text desktop users a link to your mobile app, you need the following:
+Para enviar un enlace a tu aplicación móvil por SMS a usuarios de escritorio, necesitas lo siguiente:
 
-1. An SMS provider account like Twilio, AWS SNS, or bandwidth.com.
-2. A backend environment where you can handle the logic for texting links to users.
-3. A multi-platform custom link such as <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.
+1. Una cuenta con un proveedor de SMS como Twilio, AWS SNS o bandwidth.com.
+2. Un entorno de backend donde puedas gestionar la lógica para enviar enlaces a los usuarios por SMS.
+3. Un enlace personalizado multiplataforma como <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.
 
-## Setting up
+## Configuración
 
-The following section is a high-level overview of the requirements discussed earlier.
+La siguiente sección ofrece una visión general de alto nivel de los requisitos tratados anteriormente.
 
-### SMS provider account to text a link to the app
+### Cuenta con un proveedor de SMS para enviar un enlace a la aplicación
 
-Create an account with any SMS provider. Then, you can send links to your mobile app to a large number of users at any given time.
+Crea una cuenta con cualquier proveedor de SMS. Después, podrás enviar enlaces a tu aplicación móvil a un gran número de usuarios en cualquier momento.
 
-See the list that follows for some popular providers that support a variety of programming languages and have comprehensive APIs for various use cases:
+Consulta la siguiente lista para ver algunos proveedores populares que ofrecen soporte para varios lenguajes de programación y tienen API completas para distintos casos de uso:
 
 * <Anchor target="_blank" href="https://www.twilio.com/docs/sms/send-messages">Twilio</Anchor>
 * <Anchor target="_blank" href="https://dev.bandwidth.com/messaging/about.html">bandwidth</Anchor>
@@ -64,63 +65,63 @@ See the list that follows for some popular providers that support a variety of p
 * [Swrve](https://docs.swrve.com/user-documentation/campaigns/campaign-channels/intro-to-sms/)
 * <Anchor target="_blank" href="https://help.mixpanel.com/hc/en-us/articles/115004730066-Send-SMS-Messages-From-Mixpanel">Mixpanel</Anchor>
 
-### A backend environment to communicate with the SMS provider
+### Un entorno de backend para comunicarte con el proveedor de SMS
 
-SMS providers require authentication tokens to use their services. In addition, user phone numbers are sensitive data. Due to these aspects, the best thing to do is to handle everything from your backend.
+Los proveedores de SMS requieren tokens de autenticación para usar sus servicios. Además, los números de teléfono de los usuarios son datos sensibles. Por estos motivos, lo mejor es gestionar todo desde tu backend.
 
-### A multi-platform custom link
+### Un enlace personalizado multiplataforma
 
-A multi-platform custom link redirects the user to the correct app store or destination according to the device they have. This way you can send the same link to any user no matter what device they have.
+Un enlace personalizado multiplataforma redirige al usuario a la tienda de aplicaciones o al destino correctos según el dispositivo que tenga. De este modo, puedes enviar el mismo enlace a cualquier usuario, independientemente del dispositivo que tenga.
 
-## Texting the app to users
+## Enviar la aplicación a los usuarios por SMS
 
-This section describes the flow of texting users a link to the app. It also explains how to follow up on the number of users that install the app from the link.
+En esta sección se describe el flujo para enviar a los usuarios un enlace a la aplicación por SMS. También se explica cómo hacer el seguimiento del número de usuarios que instalan la aplicación desde el enlace.
 
-### Create a multi-platform OneLink
+### Crear un OneLink multiplataforma
 
-Create a multi-platform OneLink to put in the SMS. When you create the link, you have the option to define the media source and campaign. We suggest that you set the media source and campaign as follows:
+Crea un OneLink multiplataforma para incluirlo en el SMS. Al crear el enlace, tienes la opción de definir la fuente de medios y la campaña. Te sugerimos que configures la fuente de medios y la campaña de la siguiente manera:
 
-* media source: website
-* campaign: text-me-the-app
+* fuente de medios: sitio web
+* campaña: text-me-the-app
 
-When sending OneLink in SMS, it's best to use the short link version of the OneLink.
+Al enviar OneLink por SMS, lo mejor es usar la versión de enlace corto de OneLink.
 
-To learn how to create the link, see <Anchor target="_blank" href="/marketers/docs/onelink-guide">here</Anchor>.
+Para obtener información sobre cómo crear el enlace, consulta <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">aquí</Anchor>.
 
-### Set up an SMS topic in your SMS provider account
+### Configura un tema de SMS en la cuenta de tu proveedor de SMS
 
-In this step, you create an SMS topic or message that contains the OneLink to the app. This SMS is sent when users fill out and submit a form with their phone number. When users submit the form, your backend receives the request and communicates with the SMS provider API to send the link.
+En este paso, creas un tema o mensaje de SMS que contiene el OneLink a la aplicación. Este SMS se envía cuando los usuarios rellenan y envían un formulario con su número de teléfono. Cuando los usuarios envían el formulario, tu backend recibe la solicitud y se comunica con la API del proveedor de SMS para enviar el enlace.
 
-### Set up a web form to collect phone numbers
+### Configura un formulario web para recopilar números de teléfono
 
-On your website, at pages of your choice, set up a call-to-action to prompt users to install your app. The call-to-action should open a web form through which users can submit their phone numbers.
+En tu sitio web, en las páginas que elijas, configura una llamada a la acción para animar a los usuarios a instalar tu aplicación. La llamada a la acción debe abrir un formulario web a través del cual los usuarios puedan enviar sus números de teléfono.
 
-### Apply logic in your backend
+### Aplica la lógica en tu backend
 
-On submitting the form, the website should send a request to your backend. The backend receives the phone number and sends a request to the SMS provider to text a link to the app to the user's phone.
+Al enviar el formulario, el sitio web debe enviar una solicitud a tu backend. El backend recibe el número de teléfono y envía una solicitud al proveedor de SMS para enviar por SMS un enlace a la aplicación al teléfono del usuario.
 
-Refer to your SMS provider API and documentation to learn how to create the logic in your backend.
+Consulta la API y la documentación de tu proveedor de SMS para saber cómo crear la lógica en tu backend.
 
-## How Attribution works when sending a link to the app
+## Cómo funciona la atribución al enviar un enlace a la App
 
- There's no way to include the advertising ID when texting desktop users a link to the app. Therefore, AppsFlyer resorts to <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling">attribution using Probabilistic modeling</Anchor>.
+ No hay ninguna forma de incluir el ID de publicidad al enviar por mensaje de texto a los usuarios de escritorio un enlace a la aplicación. Por lo tanto, AppsFlyer recurre a la <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#probabilistic-modeling">atribución mediante modelado probabilístico</Anchor>.
 
-AppsFlyer <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows#probabilistic-modeling-lookback-window">limits the lookback window</Anchor> for Probabilistic modeling clicks to maintain accuracy. The limits are:
+AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows#ventana-de-lookback-de-modelado-probabilístico">limita la ventana de lookback</Anchor> para los clics de Modelado probabilístico, a fin de mantener la precisión. Los límites son:
 
-* iOS: up to 24 hours
-* Android (Google Play): up to one hour
-* Android (out-of-store): up to 24 hours
+* iOS: hasta 24 horas
+* Android (Google Play): hasta una hora
+* Android (fuera de la tienda): hasta 24 horas
 
-Encourage your users to install as close as possible to the click so that AppsFlyer can accurately attribute the install to the texted link. You can do so by offering coupons, discounts, or game credits.
+Anima a tus usuarios a instalar lo más cerca posible del clic para que AppsFlyer pueda atribuir con precisión la instalación al enlace enviado por mensaje de texto. Puedes hacerlo ofreciendo cupones, descuentos o créditos del juego.
 
-## People-based attribution
+## Atribución basada en las personas.
 
-There are more ways, other than texting a link to the app, in which users convert from web to app. It's not always clear where these users come from and what media sources and campaigns contribute to their conversion.
+Hay más formas, además de enviar por mensaje de texto un enlace a la aplicación, en las que los usuarios convierten de la web a la aplicación. No siempre está claro de dónde proceden estos usuarios ni qué fuentes de medios y campañas contribuyen a su conversión.
 
-To get more insights into how many web users convert to mobile apps users, and what media sources and campaigns are involved in the process, use People-based attribution.
+Para obtener más insights sobre cuántos usuarios web se convierten en usuarios de aplicaciones móviles, y qué fuentes de medios y campañas intervienen en el proceso, usa la atribución basada en personas.
 
-People-based attribution (PBA) puts together data from both web and mobile app campaigns. The consolidated data helps you analyze user journeys across platforms and user transition from web to mobile apps.
+La atribución basada en personas (PBA) reúne datos tanto de campañas web como de campañas de aplicaciones móviles. Los datos consolidados te ayudan a analizar los viajes del usuario entre plataformas y la transición del usuario de la web a las aplicaciones móviles.
 
-To learn more, see <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">here</Anchor>.
+Para saber más, haz clic <Anchor target="_blank" href="/marketers/es/docs/people-based-attribution-pba-overview">aquí</Anchor>.
 
-<div data-zendesk-anchors="h_01KQS4E94MVN7NEEDR7ESA17K9=introduction h_01KQS4E94MSP2PQ0RVAHS2JY8R=note h_01KQS4E94MVYA0EZ7Y0FCMZEBC=requirements h_01KQS4E94MF2BZZ5AXP67R7YRW=setting-up h_01KQS4E94MYPEBKN80CNHCV1DG=sms-provider-account-to-text-a-link-to-the-app h_01KQS4E94MW7DWRGPNX8D98W46=a-backend-environment-to-communicate-with-the-sms-provider a-multiplatform-custom-link=a-multi-platform-custom-link h_01KQS4E94MP2Q29S7892GGT0QM=a-multi-platform-custom-link h_01KQS4E94MGBCX0TM5AGHXPX0Z=texting-the-app-to-users create-a-multiplatform-onelink=create-a-multi-platform-onelink h_01KQS4E94MQSWQ9S0CHNJG8B77=create-a-multi-platform-onelink h_01KQS4E94MG7KGB8HQVT11717J=set-up-an-sms-topic-in-your-sms-provider-account h_01KQS4E94MNPRC5AJ9EJD4GPG3=set-up-a-web-form-to-collect-phone-numbers h_01KQS4E94MA810B0QRSMDQ0FQM=apply-logic-in-your-backend h_01KQS4E94MC8C19RCCPV52G7N1=how-attribution-works-when-sending-a-link-to-the-app peoplebased-attribution=people-based-attribution h_01KQS4E94MJ0C6Q82H67R22S2W=people-based-attribution" />
+<div data-zendesk-anchors="introduction=introducci%C3%B3n h_01KQS4E94MVN7NEEDR7ESA17K9=introducci%C3%B3n h_01KQS4E94MSP2PQ0RVAHS2JY8R=nota requirements=requisitos h_01KQS4E94MVYA0EZ7Y0FCMZEBC=requisitos setting-up=configuraci%C3%B3n h_01KQS4E94MF2BZZ5AXP67R7YRW=configuraci%C3%B3n sms-provider-account-to-text-a-link-to-the-app=cuenta-con-un-proveedor-de-sms-para-enviar-un-enlace-a-la-aplicaci%C3%B3n h_01KQS4E94MYPEBKN80CNHCV1DG=cuenta-con-un-proveedor-de-sms-para-enviar-un-enlace-a-la-aplicaci%C3%B3n a-backend-environment-to-communicate-with-the-sms-provider=un-entorno-de-backend-para-comunicarte-con-el-proveedor-de-sms h_01KQS4E94MW7DWRGPNX8D98W46=un-entorno-de-backend-para-comunicarte-con-el-proveedor-de-sms a-multiplatform-custom-link=un-enlace-personalizado-multiplataforma h_01KQS4E94MP2Q29S7892GGT0QM=un-enlace-personalizado-multiplataforma texting-the-app-to-users=enviar-la-aplicaci%C3%B3n-a-los-usuarios-por-sms h_01KQS4E94MGBCX0TM5AGHXPX0Z=enviar-la-aplicaci%C3%B3n-a-los-usuarios-por-sms create-a-multiplatform-onelink=crear-un-onelink-multiplataforma h_01KQS4E94MQSWQ9S0CHNJG8B77=crear-un-onelink-multiplataforma set-up-an-sms-topic-in-your-sms-provider-account=configura-un-tema-de-sms-en-la-cuenta-de-tu-proveedor-de-sms h_01KQS4E94MG7KGB8HQVT11717J=configura-un-tema-de-sms-en-la-cuenta-de-tu-proveedor-de-sms set-up-a-web-form-to-collect-phone-numbers=configura-un-formulario-web-para-recopilar-n%C3%BAmeros-de-tel%C3%A9fono h_01KQS4E94MNPRC5AJ9EJD4GPG3=configura-un-formulario-web-para-recopilar-n%C3%BAmeros-de-tel%C3%A9fono apply-logic-in-your-backend=aplica-la-l%C3%B3gica-en-tu-backend h_01KQS4E94MA810B0QRSMDQ0FQM=aplica-la-l%C3%B3gica-en-tu-backend how-attribution-works-when-sending-a-link-to-the-app=c%C3%B3mo-funciona-la-atribuci%C3%B3n-al-enviar-un-enlace-a-la-app h_01KQS4E94MC8C19RCCPV52G7N1=c%C3%B3mo-funciona-la-atribuci%C3%B3n-al-enviar-un-enlace-a-la-app peoplebased-attribution=atribuci%C3%B3n-basada-en-las-personas h_01KQS4E94MJ0C6Q82H67R22S2W=atribuci%C3%B3n-basada-en-las-personas" />

@@ -1,5 +1,5 @@
 ---
-title: Yandex Direct campaign configuration
+title: Configuración de la campaña de Yandex Direct
 metadata:
   keywords:
     - Advertisers
@@ -13,121 +13,120 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-03-30T10:52:06Z'
-  edited_at: '2026-06-16T11:43:21Z'
+  edited_at: '2026-08-12T12:16:52Z'
   id: 360018910138
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360018910138-Yandex-Direct-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360018910138
 ---
-> **At a glance:** Yandex Direct is an advertising platform that allows you to run user acquisition and retargeting campaigns on Yandex Search, as well as on thousands of apps and websites in the Yandex Advertising Network.
+> **En resumen:** Yandex Direct es una plataforma publicitaria que te permite ejecutar campañas de adquisición de usuarios y campañas de retargeting en la Búsqueda de Yandex, así como en miles de aplicaciones y sitios web de la red publicitaria de Yandex.
 
-## Set up Yandex Direct
+## Configurar Yandex Direct
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con el partner.  
+    Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación. Para ver una descripción detallada del Encabezado de la ventana de configuración de partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-Yandex Direct's configuration window includes 3 active tabs: **Integration, Attribution link**, and **Permissions**.
+La ventana de configuración de Yandex Direct incluye 3 pestañas activas: **Integración, Enlace de atribución** y **Permisos**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to turn on **Activate partner** to enable the setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.  
-Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation/deactivation</Anchor>.
+En tu **primera visita** aquí, tendrás que activar **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+<Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más sobre la activación/desactivación del partner</Anchor>.
 
-### Advanced privacy
+### Privacidad avanzada
 
-For iOS apps only, **Enable advanced privacy (for iOS 14.5 and above)** controls what data is shared with the partner via postbacks and reports. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#b-advanced-privacy">Learn more about advanced privacy</Anchor>.
+Solo para aplicaciones iOS, **Activar privacidad avanzada (para iOS 14.5 y versiones posteriores)** controla qué datos se comparten con el partner mediante postbacks y reportes. <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#b-advanced-privacy">Saber más sobre la privacidad avanzada</Anchor>.
 
-### Transaction ID
+### ID de la transacción
 
-For iOS apps only. When **Share SKAN transaction ID** is turned on, you're <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">sharing the transaction ID of SKAdNetwork postbacks</Anchor> with the partner. By doing so, the partner could decode your SKAdNetwork Conversion Values.
+Solo para aplicaciones iOS. Cuando **Compartir ID de transacción de SKAN** está activado, estás <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">compartiendo el ID de transacción de los postbacks de SKAdNetwork</Anchor> con el partner. Al hacer esto, el partner podría decodificar tus valores de conversión de SKAdNetwork.
 
-### General settings
+### Configuración general
 
-The following general settings are available for Yandex Direct.
+Los siguientes ajustes generales están disponibles para Yandex Direct.
 
-#### Yandex Ecom Feed Counter ID
+#### ID del contador de Yandex Ecom Feed
 
-Enter the Metrika tag number in **Yandex Ecom Feed Counter ID** if you're running Smart Banner campaigns with your product feed.
+Introduce el número de etiqueta de Metrika en **ID del contador de Yandex Ecom Feed** si estás ejecutando campañas de Smart Banner con tu feed de productos.
 
-#### Yandex app ID
+#### ID de la App de Yandex
 
-Enter the **Yandex App ID** derived from Yandex Direct.
+Introduce el **ID de la App de Yandex** obtenido de Yandex Direct.
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to Yandex Direct following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a Yandex Direct después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **This partner only** for events coming only from users attributed to Yandex Direct.  
-Select **All media sources, including organic** to have your entire user base available to be reported to Yandex Direct.
+Selecciona **Solo este partner** para los eventos que provienen solo de usuarios atribuidos a Yandex Direct.  
+Selecciona **Todas las fuentes de medios, incluidas las orgánicas** para que toda tu base de usuarios esté disponible para ser reportada a Yandex Direct.
 
-As an all-installs network, Yandex Direct prefers to receive postbacks for all new installs of your app from all sources, and they recommended selecting **All media sources, including organic**.
+Como red que registra todas las instalaciones, Yandex Direct prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde todas las fuentes, y recomienda seleccionar **Todas las fuentes de medios, incluidas las orgánicas**.
 
-### In-app events postbacks
+### Postbacks de eventos in-app
 
-In this section, you can configure in-app event postbacks that are sent to Yandex Direct.
+En esta sección, puedes configurar los postbacks de eventos in-app que se envían a Yandex Direct.
 
-1. Turn **In-app event postbacks** on.
-2. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
-3. Click **Add event** to add an SDK Event to the list.
-4. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">Complete the required parameters</Anchor>.
-5. Click **Save integration**.
+1. Activa **Postbacks de eventos in-app** .
+2. Establece la **ventana de postbacks de eventos in-app**, si es necesario (lee más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">configuración de la ventana de postbacks de eventos in-app</Anchor>).
+3. Haz clic en **Añadir evento** para agregar un evento de SDK a la lista.
+4. <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">Completa los parámetros obligatorios</Anchor>.
+5. Haz clic en **Guardar integración**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un OneLink.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de los costos por API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de la ad network</Anchor> para obtener detalles completos sobre las dimensiones, métricas y funciones admitidas. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>. **Note**: Add campaign ID (af\_c\_id=`{campaign_id}`) to your links to ensure accurate cost reporting. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more</Anchor>
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>. **Nota**: Añade el ID de campaña (af\_c\_id=`{campaign_id}`) a tus enlaces para garantizar un reporte de costo preciso. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Más información</Anchor>
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Comprueba el estado de la API de costos</Anchor> y la última vez que AppsFlyer logró obtener datos de costos coincidentes, ya sea en el dashboard de estado de la integración de costos (e ingresos publicitarios), como en el dashboard de la ad network individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue data is not available for this partner.
+Los datos de ingresos por publicidad no están disponibles para este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Yandex Direct, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for Yandex Direct, the Permissions tab is active and you can grant control to Yandex Direct. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Configure permissions to Yandex Direct</Anchor>.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgar a Yandex Direct, tanto si el partner actúa como ad network, como agencia o incluso como ambas. Ten en cuenta que, aunque la atribución esté deshabilitada para Yandex Direct, la pestaña de permisos está activa y puedes conceder el control a Yandex Direct. <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">Configura los permisos para Yandex Direct</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJZW81YDFP6ZV188XP3H4H54=set-up-yandex-direct h_01HJZW81YD3S8BEE6MNT30VYZH=integration-tab h_01HJZW81YD1JA5N01HT248PR8K=activate-partner h_01HJZW81YDNWAEKA2DP0QPPQRC=advanced-privacy h_01HJZW81YD8QEETTP4NSG2QCPQ=transaction-id h_01HJZW81YDT69PGFTJMQ8WTYN2=general-settings h_01HJZW81YD18MW2BNGTZCZM7ZW=yandex-ecom-feed-counter-id h_01HJZW81YDTQ0Q4H39GVJMHYNG=yandex-app-id h_01HJZW81YDZDYDES5ZPRQ5BEC3=default-postbacks inapp-events-postbacks=in-app-events-postbacks h_01HJZW81YDMTRZ2VG8S9B48GTD=in-app-events-postbacks h_01HJZW81YE8XP6Q9RA9XTCKX2T=attribution-link-tab h_01HJZW81YES6M13VVJMTAB6KXQ=cost-tab h_01HJZW81YE7CYXEDFZKWZYVYET=ad-revenue-tab h_01HJZW81YERG3X6RG9Z2CM3YSF=permissions-tab" />
+<div data-zendesk-anchors="set-up-yandex-direct=configurar-yandex-direct h_01HJZW81YDFP6ZV188XP3H4H54=configurar-yandex-direct h_01HJZW81YD3S8BEE6MNT30VYZH=integration-tab activate-partner=activar-socio h_01HJZW81YD1JA5N01HT248PR8K=activar-socio advanced-privacy=privacidad-avanzada h_01HJZW81YDNWAEKA2DP0QPPQRC=privacidad-avanzada transaction-id=id-de-la-transacci%C3%B3n h_01HJZW81YD8QEETTP4NSG2QCPQ=id-de-la-transacci%C3%B3n general-settings=configuraci%C3%B3n-general h_01HJZW81YDT69PGFTJMQ8WTYN2=configuraci%C3%B3n-general yandex-ecom-feed-counter-id=id-del-contador-de-yandex-ecom-feed h_01HJZW81YD18MW2BNGTZCZM7ZW=id-del-contador-de-yandex-ecom-feed yandex-app-id=id-de-la-app-de-yandex h_01HJZW81YDTQ0Q4H39GVJMHYNG=id-de-la-app-de-yandex default-postbacks=postbacks-predeterminados h_01HJZW81YDZDYDES5ZPRQ5BEC3=postbacks-predeterminados inapp-events-postbacks=postbacks-de-eventos-in-app h_01HJZW81YDMTRZ2VG8S9B48GTD=postbacks-de-eventos-in-app h_01HJZW81YE8XP6Q9RA9XTCKX2T=attribution-link-tab h_01HJZW81YES6M13VVJMTAB6KXQ=cost-tab h_01HJZW81YE7CYXEDFZKWZYVYET=ad-revenue-tab h_01HJZW81YERG3X6RG9Z2CM3YSF=permissions-tab" />

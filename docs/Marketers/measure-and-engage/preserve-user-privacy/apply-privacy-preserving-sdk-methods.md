@@ -1,5 +1,5 @@
 ---
-title: Apply privacy-preserving SDK methods
+title: Métodos de preservación de la privacidad en el SDK
 metadata:
   keywords:
     - Advertisers
@@ -18,191 +18,196 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-08-20T11:14:36Z'
-  edited_at: '2026-08-14T16:22:41Z'
+  edited_at: '2026-08-22T00:32:41Z'
   id: 360001422989
-  locale: en-us
+  locale: es
   section: Preserve user privacy
   section_id: 6551440878097
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001422989-Apply-privacy-preserving-SDK-methods
+  url: https://support.appsflyer.com/hc/es/articles/360001422989
 ---
-> **At a glance:** Preserve the privacy of your users with one or more of the methods available through the AppsFlyer SDK.
+> **At a glance:** Preserva la privacidad de tus usuarios con uno o más de los métodos disponibles a través del SDK de AppsFlyer.
 
 > 📘 **Note**
 >
-> The information presented in this article is intended solely to provide insight into the methods available to app developers for controlling the sharing of user-related data with app owners, ad networks, and social networks. **This article does not include or constitute guidance on compliance with privacy regulations such as COPPA or GDPR or any specific privacy-preserving regulations.**
+> **Nota:**
+>
+> La información presentada en este artículo está destinada únicamente a proporcionar insights sobre los métodos disponibles para los desarrolladores de aplicaciones para controlar el intercambio de datos relacionados con el usuario con propietarios de aplicaciones, redes publicitarias y redes sociales. **Este artículo no incluye ni constituye una guía sobre el cumplimiento de normativas de privacidad como la COPPA o el RGPD, ni de ninguna normativa específica de preservación de la privacidad.**
 
-The AppsFlyer SDK offers app owners several methods to protect user privacy and control data. In this article, we will explore these methods and assess how they impact user data and how to use them to preserve user privacy while still permitting attribution.
+El SDK de AppsFlyer ofrece a los propietarios de aplicaciones varios métodos para proteger la privacidad del usuario y controlar los datos. En este artículo, exploraremos estos métodos y evaluaremos cómo afectan los datos del usuario y cómo usarlos para preservar la privacidad del usuario sin dejar de permitir la atribución.
 
-After considering which options you want to use, share the implementation information in our Dev Hub with your developers.
+Después de considerar qué opciones deseas utilizar, comparte la información de implementación en nuestro Dev Hub con tus desarrolladores.
 
-Let's discuss each method.
+Analicemos cada método.
 
-## Use start and stop methods
+## Usar métodos de start y stop
 
-The SDK sends installs and in-app events to AppsFlyer only after the `start` method is called. Any event preceding the `start` call will not be reported by the SDK. In a similar manner, if the `start` call is subsequently reversed by invoking the `stop` method, no events will be sent thereafter.
+El SDK envía instalaciones y eventos in-app a AppsFlyer solo después de que se llama al método de `start`. Cualquier evento que preceda a la llamada de `start` no será reportado por el SDK. De manera similar, si la llamada de `start` se invierte posteriormente invocando el método `stop`, no se enviarán eventos a partir de entonces.
 
-### Impact on attribution
+### Impacto en la atribución
 
-Attribution does **not** occur when:
+La atribución **no** ocurre cuando:
 
-* the `start` method is not called.
-* the `stop` method is called to reverse a previous start.
+* no se llama al método de `start`.
+* se llama al método `stop` para revertir un inicio anterior.
 
-### Common use cases
+### Casos de uso comunes
 
-| Use case | Description |
+| Caso de uso | Descripción |
 | --- | --- |
-| Opt-in or opt-out on launch | Call `start` after the user consents to share data on the first launch.  <br />If the user does not consent to share data, don’t call  <br />`start` at all. |
-| Session opt-out | In every app session, ask for consent and call or do not call `start` accordingly. |
-| One-time opt-out (When a user opts-in and then decides to opt-out). | Call `stop` to stop the SDK from sending further events. |
+| Opt-in o opt-out en la apertura | El `start` de llamada después de que el usuario acepte compartir datos en la primera apertura.  <br />Si el usuario no da su consentimiento para compartir datos, no llames   <br />`start`. |
+| Opt-out de la sesión | En cada sesión de la aplicación, solicita su consentimiento y llama o no a `start` en consecuencia. |
+| Opt-out única (cuando un usuario opta por el opt-in y luego decide cambiar). | El `stop` de la llamada evita que el SDK envíe más eventos. |
 
-### Developer reference
+### Referencia del desarrollador
 
-Developer reference and documentation on how to use the start and stop methods see:
+Para referencia del desarrollador y documentación sobre cómo usar los métodos de start y stop, consulta:
 
 <Tabs>
 <Tab title="Android">
 
-[Use start to share only the install event](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-android#use-start-to-share-only-the-install-event)
+[Utiliza start para compartir solo el evento de instalación](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-android#use-start-to-share-only-the-install-event)
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-[Use start to share only the install event](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-ios#use-start-to-share-only-the-install-event)
+[Utiliza start para compartir solo el evento de instalación](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-ios#use-start-to-share-only-the-install-event)
 
 </Tab>
 </Tabs>
 
-## Prevent sharing data with networks
+## Evita el uso compartido de datos con las redes
 
-At the time of integration with an ad network or Self-Reporting Network (SRN), you can elect to share or not share user-level information with that partner. In the SDK, you can further filter data sharing with all or some partners **according to end-user preferences** by using the `setSharingFilterForPartners` method.
+En el momento de la integración con una red de anuncios o una red de autoreporte (SRN), puedes optar por compartir o no compartir información a nivel de usuario con ese partner. En el SDK, puedes filtrar aún más el uso compartido de datos con todos o algunos asociados de negocios de **acuerdo con las preferencias del usuario final** mediante el método `setSharingFilterForPartners`.
 
-When you use this method, AppsFlyer will disable the sharing of user data with the excluded partner by any means, including postbacks, APIs, raw data reports, etc.
+Cuando utilizas este método, AppsFlyer deshabilitará el intercambio de datos del usuario con el partner excluido por cualquier medio, incluidos postbacks, APIs, reportes de raw data, etc.
 
-### Impact on attribution
+### Impacto en la atribución
 
-* Installs **from excluded ad networks** **(non-SRNs)** are attributed in AppsFlyer, but the ad networks will not be notified in any form or manner.
-* Installs **from excluded SRNs** are not attributed, and their data is not shared with your integrated partners. This does not apply to **Advanced SRNs**, where attribution is still possible; however, installs, re-engagements, and in-app events will not be shared back due to the sharing filter.
+* Las instalaciones **de ad networks excluidas** **(non-SRNs)** se atribuyen en AppsFlyer, pero las ad networks no recibirán ninguna notificación de ningún tipo.
+* Las instalaciones **de SRN excluidos** no se atribuyen y sus datos no se comparten con tus Partners integrados. Esto no se aplica a los **SRN avanzados**, donde la Atribución sigue siendo posible; sin embargo, las instalaciones, los re-engagements y los eventos in-app no se compartirán debido al filtro de compartición.
 
   > 📘 **Note**
   >
-  > AppsFlyer cannot attribute engagement data for any SRNs excluded from getting your data.
+  > **Nota:**
+  >
+  > AppsFlyer no puede atribuir datos de engagement a ningún SRN excluido de la obtención de tus datos.
 
 
-### Developer reference
+### Referencia del desarrollador
 
-Developer reference and documentation on how to prevent sharing data with third parties see:
+Para referencia del desarrollador y documentación sobre cómo evitar el intercambio de datos con terceros, consulta:
 
 <Tabs>
 <Tab title="Android">
 
-[Prevent sharing data with third parties](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-android#prevent-sharing-data-with-third-parties)
+[Impide compartir datos con terceros](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-android#prevent-sharing-data-with-third-parties)
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-[Prevent sharing data with third parties](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-ios#prevent-sharing-data-with-third-parties)
+[Impide compartir datos con terceros](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-ios#prevent-sharing-data-with-third-parties)
 
 </Tab>
 </Tabs>
 
-## Anonymize user information
+## Anonimiza la información del usuario
 
-You can configure the SDK to instruct AppsFlyer to remove all user-identifying information by using the `anonymizeUser` method. In this case, the SDK sends install and in-app events to AppsFlyer, where all identifying information is then deleted or hashed:
+Puedes configurar el SDK para indicar a AppsFlyer que elimine toda la información que identifique al usuario mediante el método `anonymizeUser`. En este caso, el SDK envía instalaciones y eventos in-app a AppsFlyer, donde toda la información de identificación se elimina o se aplica hash:
 
-* **Deleted:** personal identifiers (GAID, IDFA, IDFV, and CUID)
-* **Hashed:** AppsFlyer ID and IP address
+* **Eliminados:** identificadores personales (GAID, IDFA, IDFV y CUID)
+* **Hashed:** ID de AppsFlyer y dirección IP
 
-The following image shows an example row of raw data after anonymization (deletion and hashing).
+La siguiente imagen muestra una fila de ejemplo de raw data después de la anonimización (eliminación y hash).
 
-![Example row of raw data showing deleted and hashed fields after anonymization](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)
+![Ejemplo de fila de raw data que muestra campos eliminados y con Hashing tras la anonimización](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)
 
-### Impact on attribution
+### Impacto en la atribución
 
-If you call `anonymizeUser` before calling `start`, attribution can't use device identifiers or the device IP address. As a result, standard attribution methods based on these identifiers don't take place.
+Si llamas a `anonymizeUser` antes de llamar a `start`, la atribución no puede usar identificadores de dispositivo ni la dirección IP del dispositivo. Como resultado, no se aplican los métodos de atribución estándar basados en estos identificadores.
 
-However, attribution can still occur using the following methods, which don't rely on device identifiers:
+Sin embargo, la atribución puede seguir produciéndose mediante los siguientes métodos, que no dependen de identificadores de dispositivo:
 
-* <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#attribution">Self-reporting network (SRN) attribution</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling">Probabilistic modeling (PMOD)</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#install-referrer-android-only">Referrer-based attribution</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#atribución">Atribución de red de autorreporte (SRN)</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#probabilistic-modeling">Modelado probabilístico (PMOD)</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#install-referrer-android-only">Atribución basada en el referrer</Anchor>
 
-To attribute the install event using standard identifiers, call `anonymizeUser` **only after the SDK confirms that the install event was sent to AppsFlyer**.
+Para atribuir el evento de instalación, llama a la función `anonymizeUser` solo después de confirmar que el SDK ha enviado el evento de instalación a AppsFlyer.
 
-This flow ensures that:
+Este flujo garantiza que:
 
-* The install event can be attributed normally.
-* Any in-app events that occur after `anonymizeUser` is called are sent **without identifiers**.
+* El evento de instalación se puede atribuir con normalidad.
+* Todos los eventos in-app que se produzcan después de llamar a `anonymizeUser` se envían **sin identificadores**.
 
-As a result, these in-app events are either counted as **organic** or **disregarded**, depending on the reporting method.
+Como resultado, estos eventos in-app se contabilizan como **orgánicos** o se **descartan**, según el método de generación de informes.
 
 > 📘 **Note**
 >
-> <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#attribution">SRN</Anchor>, <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling">PMOD (probabilistic)</Anchor>, and <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#install-referrer-android-only">Referrer-based attribution</Anchor> are supported in anonymized mode. This includes <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#google-play-install-referrer">Google Play Install Referrer</Anchor>, other store referrers (such as <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution#referrer-implementation-thirdparty-android-app-stores">Xiaomi, Huawei,</Anchor> <Anchor target="_blank" href="/marketers/docs/set-up-appsflyer-preload-referrer-attribution#samsung-preload-referrer">and Samsung</Anchor>), and <Anchor target="_blank" href="/marketers/docs/set-up-appsflyer-preload-referrer-attribution?utm_source=chatgpt.com">AppsFlyer preload referrer</Anchor>
+> **Nota:**
+>
+> Se admiten <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#atribución">SRN</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#probabilistic-modeling">PMOD (probabilístico)</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#install-referrer-android-only">Atribución basada en el referrer</Anchor> en modo anonimizado. Esto incluye <Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide#referencia-de-instalación-de-google-play">Google Play Install Referrer</Anchor>, otros referrers de tiendas (como <Anchor target="_blank" href="/marketers/es/docs/set-up-multi-store-android-attribution#referrer-implementation-thirdparty-android-app-stores">Xiaomi, Huawei,</Anchor> <Anchor target="_blank" href="/marketers/es/docs/set-up-appsflyer-preload-referrer-attribution#referencia-de-precarga-de-samsung">y Samsung</Anchor>) y <Anchor target="_blank" href="/marketers/es/docs/set-up-appsflyer-preload-referrer-attribution?utm_source=chatgpt.com">AppsFlyer preload referrer</Anchor>
 
-### Developer reference
+### Referencia del desarrollador
 
-Developer reference and documentation on how to anonymize user information see:
+Para referencia del desarrollador y documentación sobre cómo anonimizar la información del usuario, consulte:
 
 <Tabs>
 <Tab title="Android">
 
-[Anonymize user information](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-android#anonymize-user-information)
+[Anonimizar información del usuario](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-android#anonymize-user-information)
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-[Anonymize user information](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-ios#anonymize-user-information)
+[Anonimiza la información del usuario](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-ios#anonymize-user-information)
 
 </Tab>
 </Tabs>
 
-## Remove specific device identifiers
+## Elimina identificadores de dispositivos específicos
 
-You can prevent the SDK from collecting and sending specific device identifiers to AppsFlyer. In contrast to using the `anonymizeUser` method, disabling specific identifiers lets you decide on the identifiers you want to keep.
+Puedes evitar que el SDK recopile y envíe identificadores de dispositivo específicos a AppsFlyer. A diferencia de usar el método `anonymizeUser`, deshabilitar identificadores específicos te permite decidir los identificadores que desea conservar.
 
-The SDK API includes the following methods to disable identifiers.
+La API del SDK incluye los siguientes métodos para deshabilitar identificadores.
 
-### Android identifiers
+### Identificadores de Android
 
-| Method | Identifiers disabled |
+| Método | Identificadores desactivados |
 | --- | --- |
-| [`setdisableadvertisingIdentifiers`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers) | <ul><li>Google Advertising ID (GAID)</li><li>Open Anonymous Device Identifier (OAID)</li><li>Amazon Advertising ID (AAID)</li></ul> |
+| [`Las instalaciones de los SRNs excluidos no se atribuyen y sus datos no se comparten con tus partners integrados.`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers) | <ul><li>Google Advertising ID (GAID)</li><li>Open Anonymous Device Identifier (OAID)</li><li>Amazon Advertising ID (AAID)</li></ul> |
 | [`setcollectoaid`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid) | Open Anonymous Device Identifier (OAID) |
 
-### iOS identifiers
+### Identificadores de iOS
 
-| Method | Identifier disabled |
+| Método | Identificador deshabilitado |
 | --- | --- |
-| [`disableAdvertisingIdentifier`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier) | IDFA (iOS 13 and below) |
+| [`Si llamas a anonymizeUser antes del start de la llamada, no se producirá ninguna atribución.`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier) | IDFA (iOS 13 y anteriores) |
 | [`disableIDFVCollection`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableidfvcollection) | IDFV |
 
-### Developer reference
+### Referencia del desarrollador
 
-Developer reference and documentation on how to remove specific device identifiers see:
+Para la referencia del desarrollador y la documentación sobre cómo eliminar identificadores de dispositivos específicos, consulta:
 
 <Tabs>
 <Tab title="Android">
 
-[Disable IDs](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-android#disable-ids)
+[Deshabilitar IDs](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-android#disable-ids)
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-[Disable IDs](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-ios#disable-ids)
+[Deshabilitar IDs](https://dev.appsflyer.com/hc/docs/preserve-user-privacy-ios#disable-ids)
 
 </Tab>
 </Tabs>
 
 > 📘 **Note**
 >
-> **Questions about AppsFlyer privacy?**
+> **¿Tienes preguntas sobre la privacidad en AppsFlyer?**
 >
-> The privacy relationship between you and AppsFlyer is governed by the [AppsFlyer Statement on Data Processing](https://www.appsflyer.com/legal/processing-customer-data/). For questions relating to this statement or to contact our data protection officer, send an email to [dpo@appsflyer.com](mailto:dpo@appsflyer.com).
+> La relación de privacidad entre tú y AppsFlyer se rige por la [Declaración de AppsFlyer sobre el Tratamiento de Datos](https://www.appsflyer.com/legal/processing-customer-data/). Si tienes alguna pregunta relacionada con esta declaración o para ponerte en contacto con nuestro responsable de protección de datos, envía un correo electrónico a [dpo@appsflyer.com](mailto:dpo@appsflyer.com).
 
-<div data-zendesk-anchors="h_01HKD1N2C8V0SP1NG8W2EJPRQZ=use-start-and-stop-methods h_01HKD1N2C80QAJSNE83SD45DJA=impact-on-attribution h_01HKD1N2C8YHWYARRAGX1TD6DM=common-use-cases h_01HKM6VNJFCW77F2268XXDF65Q=developer-reference h_01HKD1N2C8ASV10XWY33R972MC=prevent-sharing-data-with-networks impact-on-attribution::aa0a9f9e=impact-on-attribution-1 h_01HKD1N2C8RA34M4TSWYCW3A9F=impact-on-attribution-1 developer-reference::f2007ab7=developer-reference-1 h_01HKM6VNJFP8C7KCFSV1046H0B=developer-reference-1 h_01HKD1N2C8CWSWK0VSXZ39MQ3D=anonymize-user-information anonymize-impact=impact-on-attribution-2 h_01KK93D18X4QYG87CFMZWNHSBA=impact-on-attribution-2 developer-reference::e4cacf1f=developer-reference-2 h_01HKM6VNJF7XPZ9ME61JG4KM9Z=developer-reference-2 h_01HKD1N2C8S3Y73AZ9J7JFDKQE=remove-specific-device-identifiers h_01HKD1N2C8HZ61XHMBC0JNTK7S=android-identifiers h_01HKD1N2C8AHK4EYANG6N6ST06=ios-identifiers developer-reference::4e0971d1=developer-reference-3 h_01HKM6VNJFV0YJWV8KT23VTKKH=developer-reference-3" />
+<div data-zendesk-anchors="use-start-and-stop-methods=usar-m%C3%A9todos-de-start-y-stop h_01HKD1N2C8V0SP1NG8W2EJPRQZ=usar-m%C3%A9todos-de-start-y-stop impact-on-attribution=impacto-en-la-atribuci%C3%B3n h_01HKD1N2C80QAJSNE83SD45DJA=impacto-en-la-atribuci%C3%B3n common-use-cases=casos-de-uso-comunes h_01HKD1N2C8YHWYARRAGX1TD6DM=casos-de-uso-comunes developer-reference=referencia-del-desarrollador h_01HKM6VNJFCW77F2268XXDF65Q=referencia-del-desarrollador prevent-sharing-data-with-networks=evita-el-uso-compartido-de-datos-con-las-redes h_01HKD1N2C8ASV10XWY33R972MC=evita-el-uso-compartido-de-datos-con-las-redes impact-on-attribution::aa0a9f9e=impacto-en-la-atribuci%C3%B3n-1 h_01HKD1N2C8RA34M4TSWYCW3A9F=impacto-en-la-atribuci%C3%B3n-1 developer-reference::f2007ab7=referencia-del-desarrollador-1 h_01HKM6VNJFP8C7KCFSV1046H0B=referencia-del-desarrollador-1 anonymize-user-information=anonimiza-la-informaci%C3%B3n-del-usuario h_01HKD1N2C8CWSWK0VSXZ39MQ3D=anonimiza-la-informaci%C3%B3n-del-usuario anonymize-impact=impacto-en-la-atribuci%C3%B3n-2 h_01KK93D18X4QYG87CFMZWNHSBA=impacto-en-la-atribuci%C3%B3n-2 developer-reference::e4cacf1f=referencia-del-desarrollador-2 h_01HKM6VNJF7XPZ9ME61JG4KM9Z=referencia-del-desarrollador-2 remove-specific-device-identifiers=elimina-identificadores-de-dispositivos-espec%C3%ADficos h_01HKD1N2C8S3Y73AZ9J7JFDKQE=elimina-identificadores-de-dispositivos-espec%C3%ADficos android-identifiers=identificadores-de-android h_01HKD1N2C8HZ61XHMBC0JNTK7S=identificadores-de-android ios-identifiers=identificadores-de-ios h_01HKD1N2C8AHK4EYANG6N6ST06=identificadores-de-ios developer-reference::4e0971d1=referencia-del-desarrollador-3 h_01HKM6VNJFV0YJWV8KT23VTKKH=referencia-del-desarrollador-3" />

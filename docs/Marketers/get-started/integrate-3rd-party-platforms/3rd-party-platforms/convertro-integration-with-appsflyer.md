@@ -1,5 +1,5 @@
 ---
-title: Convertro integration with AppsFlyer
+title: Integración de Convertro con AppsFlyer
 metadata:
   keywords:
     - Attribution
@@ -18,148 +18,146 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2015-12-24T11:37:56Z'
-  edited_at: '2026-06-16T10:00:29Z'
+  edited_at: '2026-08-12T11:58:43Z'
   id: 207040636
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207040636-Convertro-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/207040636
 ---
-> **At a glance:** Convertro, an AppsFlyer integrated partner, strives to be the leading automated tool for marketers to truly understand the performance of their advertising choices and activate upon these insights as quickly as possible. They've built a technology that not only gathers granular information about the customer path to conversion, but is also able to scientifically optimize marketing mix and automatically understand how to shift spend to maximize ROI.
+> **En resumen:** Convertro, un partner integrado de AppsFlyer, se esfuerza por ser la principal herramienta automatizada para que los profesionales del marketing comprendan realmente el rendimiento de sus decisiones publicitarias y actúen en función de estos insights lo más rápido posible. Han desarrollado una tecnología que no solo recopila información granular sobre el recorrido del cliente hasta la conversión, sino que también es capaz de optimizar científicamente la combinación de marketing y entender automáticamente cómo redistribuir el gasto para maximizar el ROI.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up Convertro
+## Configuración de Convertro
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-The Convertro configuration window uses only the **Integration** tab.
+La ventana de configuración de Convertro solo usa la pestaña **Integración**.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del Partner Configuration Window Header, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás activar la opción siguiente. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### General settings
+### Configuración general
 
-**Page URL, Site ID, and Client Name**
+**URL de página, ID del sitio y nombre del cliente**
 
-Convertro connects with AppsFlyer via a unique Page URL, Site ID, and Client Name. If you don't already have them, you must obtain them from Convertro to continue with the integration or follow the instructions below.
+Convertro se conecta con AppsFlyer mediante una URL de página, un ID del sitio y un nombre del cliente únicos. Si aún no los tienes, debes obtenerlos de Convertro para continuar con la integración o seguir las instrucciones que se indican a continuación.
 
 [![](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)
 
-### Obtaining the "Client Name, Page URL & Site ID" From the Convertro Platform
+### Obtención del «nombre del cliente, URL de la página & ID del sitio» desde la plataforma de Convertro
 
-To obtain the Client Name, Page URL, and Site ID, login to the Convertro dashboard:
+Para obtener el nombre del cliente, la URL de página y el ID del sitio, inicia sesión en el dashboard de Convertro:
 
-**Page URL:**
+**URL de página:**
 
 [![](https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png)](https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png)
 
-**Site ID:**
+**ID del sitio:**
 
 [![](https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png)](https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png)
 
-**Client Name:**
+**Nombre del cliente:**
 
 ![](https://files.readme.io/2e5342006bdfff9e3b3c1dffdaed3e9d83ec2fe4c465b7918023a359776cee91-204595606.png)
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Convertro user installs. Use this section to define sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a las instalaciones de usuarios de Convertro. Usa esta sección para definir el envío de estos postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/e0cf7b9ce9a13f572017dfc7bb4581430ddbfdd2e198fe20ef0b953c6c3188a6-18274456382865.png)
+![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
 
-Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Convertro or select **Off**.
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para enviar postbacks de cualquier usuario que descargue la App a Convertro o selecciona **Off**.
 
-Click **Save.**
+Haga clic en **Guardar**.
 
-### In-app event settings
+### Configuración de eventos in-app
 
 [![](https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png)](https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png)
 
-In this section, you can map your AppsFlyer events with Convertro via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer a Convertro mediante postbacks.
 
-1. Enter the Client Name, Site ID, and Page URL again.
-2. Toggle In-App Event Postbacks to ON.
-3. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-4. Click **Add Event** to add an SDK Event to the list.
-5. Complete the following parameters:
+1. Vuelve a introducir el nombre del cliente, el ID del sitio y la URL de página.
+2. Activa los Postbacks de eventos in-app con el selector.
+3. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+4. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+5. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Convertro's side.  <br />Obtain the corresponding Event ID from Convertro and set in the text field. |
-| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según lo define Convertro.  <br />Obtén el ID de evento correspondiente de Convertro y configúralo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: AppsFlyer envía al partner todos los parámetros del evento in-app enriquecido, excepto el parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el valor de ingresos (si existe en el evento). |
 
-Click **Save**.
+Haga clic en **Guardar**.
 
-Once this configuration is saved, AppsFlyer begins sending the following data to Convertro for every organic and non-organic install:
+Una vez guardada esta configuración, AppsFlyer empieza a enviar los siguientes datos a Convertro para cada instalación orgánica y no orgánica:
 
-* Converto Parameters
-* Device ID for Android and iOS
-* Media Source
-* Campaign name
-* Click Time
-* User IP
-* User Agent
-* Customer User ID (optional, if configured)
+* Parámetros de Convertro
+* ID de dispositivo para Android y iOS
+* Fuente de medios
+* Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>.
+* Hora del clic
+* IP del usuario
+* Agente de usuario
+* ID de usuario del cliente (opcional, si está configurado)
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for Convertro.
+Los enlaces de atribución no están disponibles para Convertro.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for Convertro.
+Los permisos no están disponibles para Convertro.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H9FK64HSFKW54BBRVB3W9ZR0=important h_01H9FK64HS75VDP07DGETASAH7=setting-up-convertro h_01H9FK64HSK1B1Y9BRWP7AN96R=integration-tab h_01H9FK64HS7VJWHF1QCWNYVBX8=activate-partner h_01H9FK64HSCAYHB82DZX0JA2ZX=general-settings obtaining-the-client-name-page-url-site-id-from-the-convertro-platform=obtaining-the-client-name-page-url--site-id-from-the-convertro-platform h_01H9FK64HSKR8N45RXQQC3VEW1=obtaining-the-client-name-page-url--site-id-from-the-convertro-platform h_01H9FK64HTPK69QQ92DJ55RNVM=default-postbacks inapp-event-settings=in-app-event-settings h_01H9FK64HTGKXWW0FMN0T445FG=in-app-event-settings h_01H9FK64HTCM3H0243FVFDY0ET=attribution-link-tab h_01H9FK64HT9JHKBN5W8H16E6CK=cost-tab h_01H9FK64HTSP070RX7ZCYM7KE3=ad-revenue-tab h_01H9FK64HTCXAMY6TR186EE0M9=permissions-tab" />
+<div data-zendesk-anchors="h_01H9FK64HSFKW54BBRVB3W9ZR0=importante setting-up-convertro=configuraci%C3%B3n-de-convertro h_01H9FK64HS75VDP07DGETASAH7=configuraci%C3%B3n-de-convertro h_01H9FK64HSK1B1Y9BRWP7AN96R=integration-tab activate-partner=activar-socio h_01H9FK64HS7VJWHF1QCWNYVBX8=activar-socio general-settings=configuraci%C3%B3n-general h_01H9FK64HSCAYHB82DZX0JA2ZX=configuraci%C3%B3n-general obtaining-the-client-name-page-url-site-id-from-the-convertro-platform=obtenci%C3%B3n-del-nombre-del-cliente-url-de-la-p%C3%A1gina--id-del-sitio-desde-la-plataforma-de-convertro h_01H9FK64HSKR8N45RXQQC3VEW1=obtenci%C3%B3n-del-nombre-del-cliente-url-de-la-p%C3%A1gina--id-del-sitio-desde-la-plataforma-de-convertro default-postbacks=postbacks-predeterminados h_01H9FK64HTPK69QQ92DJ55RNVM=postbacks-predeterminados inapp-event-settings=configuraci%C3%B3n-de-eventos-in-app h_01H9FK64HTGKXWW0FMN0T445FG=configuraci%C3%B3n-de-eventos-in-app h_01H9FK64HTCM3H0243FVFDY0ET=attribution-link-tab h_01H9FK64HT9JHKBN5W8H16E6CK=cost-tab h_01H9FK64HTSP070RX7ZCYM7KE3=ad-revenue-tab h_01H9FK64HTCXAMY6TR186EE0M9=permissions-tab" />

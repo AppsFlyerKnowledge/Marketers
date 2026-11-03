@@ -1,5 +1,5 @@
 ---
-title: AppsFlyer Android SDK release notes
+title: Notas de la versión del SDK de Android de AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -15,112 +15,112 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-03-09T20:17:19Z'
-  edited_at: '2026-10-19T10:06:58Z'
+  edited_at: '2026-11-02T01:06:42Z'
   id: 115001256006
-  locale: en-us
+  locale: es
   section: Android platform
   section_id: 6551190827921
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115001256006-AppsFlyer-Android-SDK-release-notes
+  url: https://support.appsflyer.com/hc/es/articles/115001256006
 ---
-> **At a glance:** Check out the SDK release notes for a quick overview of the latest changes to the Android SDK. Developers looking for more comprehensive details should review <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-release-notes">the Android Release Notes on the Dev Hub</Anchor>.
+> **En resumen:** Consulta las notas de la versión del SDK para obtener una vista general de los últimos cambios introducidos en el SDK de Android. Los desarrolladores que deseen información más detallada pueden consultar las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-release-notes">notas de la versión de Android en el Dev Hub</Anchor>.
 
-**Legacy SDK versions for iOS and Android will stop being supported on a fixed six-month cycle.** This cycle is designed to provide advanced notice, helping teams plan ahead and maintain full app functionality without disruption. Upgrading to the latest SDK ensures access to the newest features, improved stability, and ongoing support.
+**Las versiones antiguas del SDK para iOS y Android dejarán de ser compatibles con un ciclo fijo de seis meses.** Este ciclo está diseñado para proporcionar aviso previo, lo que ayuda a los equipos a planificar con anticipación y mantener la funcionalidad completa de la aplicación sin interrupciones. La actualización a la última versión del SDK garantiza el acceso a las funciones más recientes, una estabilidad mejorada y soporte continuo.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> To ensure a smooth transition, app developers are encouraged to update to the latest SDK version before the End-of-Support date.
+> Para garantizar una transición fluida, se anima a los desarrolladores de aplicaciones a actualizar a la última versión del SDK antes de la fecha de finalización del soporte.
 
-## End of support vs. Deprecated
+## Fin del soporte vs Obsoleto
 
-AppsFlyer distinguishes between **Deprecated** and **End-of-Support** SDK versions to clarify the level of support and impact on data measurement.
+AppsFlyer distingue entre las versiones del SDK **obsoletas** y las de **fin del soporte** para aclarar el nivel de soporte y el impacto en la medición de datos.
 
-* **Deprecated versions:** SDK versions that are no longer recommended due to known issues, such as critical bugs. These versions can still send data to AppsFlyer, but continued use is discouraged. and upgrading to a supported version is strongly advised.
-* **End-of-Support versions:** SDK versions for which measurement is fully stopped across all platforms. For both Android and iOS, installs, sessions, and in-app events will not be measured. Any traffic from these versions (unless specifically excluded by the Product team) will receive a 400 status code, meaning the SDK will attempt to send API calls as usual, but AppsFlyer servers will reject them, and the data will not be processed.
+* **Versiones obsoletas:** Versiones del SDK que ya no se recomiendan debido a problemas conocidos, como errores críticos. Estas versiones aún pueden enviar datos a AppsFlyer, pero se desaconseja su uso continuo y se recomienda encarecidamente actualizar a una versión compatible. Se recomienda encarecidamente actualizar a una versión compatible.
+* **Versiones de fin del soporte:** Versiones del SDK para las que la medición está completamente detenida en todas las plataformas. Tanto para Android como para iOS, no se medirán las instalaciones, sesiones y eventos in-app. Cualquier tráfico de estas versiones (a menos que el equipo de producto lo excluya específicamente) recibirá un código de estado 400, lo que significa que el SDK intentará enviar llamadas de API como de costumbre, pero los servidores de AppsFlyer las rechazarán y los datos no se procesarán.
 
-## Android SDK Releases
+## Lanzamientos del SDK para Android
 
-The table below provides release notes for supported Android SDK versions, including release dates and key updates for developers. For developer information, see <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk">Android SDK integration guide for developers</Anchor>.
+La siguiente tabla proporciona notas de lanzamiento para las versiones compatibles del SDK de Android, incluidas las fechas de lanzamiento y las actualizaciones clave para los desarrolladores. Para más información sobre los desarrolladores, consulta la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk">Guía de integración del SDK para desarrolladores</Anchor>.
 
-| Version | Release date | Notes |
+| Versión | Fecha de lanzamiento | Notas |
 | --- | --- | --- |
-| 7.0.2 | 2026-10-19 | <ul><li>Added ad revenue reporting support for two new ad mediation partners - Google Ad Manager and CloudX.</li><li>Added a new event parameter for reporting net revenue.</li><li>Stability and performance improvements.</li></ul> |
-| 7.0.1 | 2026-07-22 | <ul><li>Apps can now provide a hashed customer email, phone number, name, and Facebook login ID to the SDK for sharing with ad network partners. The SDK doesn't collect this information itself. The app provides it, and only hashed values are sent, never plain text.</li><li>Removed the `setUserEmails` and `setPhoneNumber` methods. Developers using these must switch to `setUserEmail` and `setUserPhone`</li></ul> |
-| 6.18.1 | 2026-05-25 | <ul><li>Fixed an issue in the Purchase Connector where purchase validations that failed due to connectivity problems were cached and not retried, which could result in missing purchase data.</li></ul> |
-| 6.18.0 | 2026-03-17 | <ul><li>Stability improvements and fixes.</li></ul> |
-| 6.17.6 | 2026-03-11 | <ul><li>Fixed an issue where the value of AF\_STORE set by the app was not being sent by the SDK.</li></ul> |
-| 6.17.5 | 2025-11-26 | <ul><li>Stability improvements and fixes.</li><li>New purchase validation API (validate and log purchase) is now generally available.</li></ul> |
-| 6.17.4 | 2025-10-15 | <ul><li>Updated the integration between the SDK and the Advanced Security Module. This version is compatible with Security Module v2.0.0 and above.</li><li>If you are using the Advanced Security Module and would like to update the SDK to v6.17.4 - you must update the Security Module to v2.0.0 as well.</li></ul> |
-| 6.17.3 | 2025-08-18 | <ul><li>Technical update: Stability and performance improvements.</li></ul> |
-| 6.17.2 | 2025-08-05 | <ul><li>Technical update: Updated to targetSDKVersion 35</li></ul> |
-| 6.17.1 | 2025-07-28 | <ul><li>Updated the `validateAndLogInAppPurchase` API for in-app purchase validation API (currently in Beta)</li><li>Added integration with Google Play Integrity API  to enable device‑integrity verification through Google Play</li></ul> |
-| 6.17.0 | 2025-04-24 | <ul><li>Added support for collecting AppSet ID. See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#collecting-appset-id">developer instructions</Anchor>.</li></ul> |
-| 6.16.2 | 2025-03-02 | <ul><li>Fixed an issue that could cause build errors when integrating the SDK.</li></ul> |
-| 6.16.1 | 2025-02-17 | <ul><li>Updated the API for manually sending DMA Consent data to AppsFlyer.</li></ul> |
-| 6.16.0 | 2024-12-17 | <ul><li>Added support for Samsung preload attribution. <Anchor target="_blank" href="/marketers/docs/set-up-appsflyer-preload-referrer-attribution#samsung-preload-referrer">Learn more</Anchor>.</li><li>Added support for revenue measurement in the Privacy Sandbox attribution API (closed beta).</li><li>Updated Dexguard to v9.8.12 to resolve stability issues and enhance security.</li></ul> |
-| 6.15.2 | 2024-10-10 | <ul><li>Stability improvements and fixes</li><li>Internal updates related to Privacy Sandbox Attribution API</li></ul> |
-| 6.15.1 | 2024-08-28 | Versions upgrade:<ul><li>targetSDKVersion: v34</li><li>Gradle: v8.7</li><li>Java: v17</li></ul> |
-| 6.15.0 | 2024-07-31 | <ul><li>Added the `logAdRevenue` method to send ad revenue data to AppsFlyer. **Note:** Starting with this version, the AdRevenue Connector should no longer be used; it must be replaced by the `logAdRevenue`method. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue-1">Learn more</Anchor></li></ul> |
-| 6.14.2 | 2024-06-10 | <ul><li>Fixed an issue with fetching Meta Install Referrer on apps built with Unity.</li></ul> |
-| 6.14.1 | 2024-05-29 | SDK maintenance |
-| 6.14.0 | 2024-04-18 | <ul><li>Added support for the updated Purchase Validation flow. This feature is currently in closed beta. Learn more.</li><li>Updated Huawei Referrer integration. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#huawei-install-referrer">Learn more</Anchor>.</li></ul> |
-| 6.13.1 | 2024-04-03 | SDK maintenance |
-| 6.13.0 | 2024-02-08 | <ul><li>Added support for Google's new EU consent policy (DMA)</li></ul> |
+| 7.0.4 | 2026-10-26 | <ul><li>Mejora en la gestión de las direcciones de correo electrónico de Gmail en la API `setUserEmail`</li></ul> |
+| 7.0.2 | 19-10-2026 | <ul><li>Se ha añadido soporte para reportar ingresos de anuncios de dos nuevos partners de mediación publicitaria: Google Ad Manager y CloudX.</li><li>Se ha añadido un nuevo parámetro de evento para reportar ingresos netos.</li><li>Mejoras de estabilidad y rendimiento</li></ul> |
+| 7.0.1 | 26-11-2025 | <ul><li>Las aplicaciones ahora pueden proporcionar al SDK un correo electrónico, un número de teléfono, un nombre y un ID de login de Facebook del cliente con hashing para compartirlos con partners de ad network. El SDK no recopila esta información por sí mismo. La aplicación la proporciona y solo se envían valores con hash, nunca texto sin formato.</li><li>Se han eliminado los métodos `setUserEmails` y `setPhoneNumber`. Los desarrolladores que los utilicen deben cambiar a `setUserEmail` y `setUserPhone`</li></ul> |
+| 6.18.1 | 15-10-2025 | <ul><li>Se ha corregido un problema en el Purchase Connector por el que las validaciones de compra que fallaban debido a problemas de conectividad se almacenaban en caché y no se volvían a intentar, lo que podía dar lugar a la falta de datos de compra.</li></ul> |
+| 6.18.0 | 18-08-2025 | <ul><li>Obsoleto</li></ul> |
+| 6.17.6 | 05-08-2025 | <ul><li>Se ha corregido un problema por el que el SDK no enviaba el valor de AF\_STORE establecido por la aplicación.</li></ul> |
+| 6.17.5 | Versión | <ul><li>Mejoras y correcciones de estabilidad</li><li>https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl</li></ul> |
+| 6.17.4 | 15-07-2025 | <ul><li>Se actualizó la integración entre el SDK y el módulo de seguridad avanzada. Esta versión es compatible con el módulo de seguridad v2.0.0 y superior.</li><li>Si estás utilizando el módulo de seguridad avanzada y deseas actualizar el SDK a la versión 6.17.4, también debes actualizar el módulo de seguridad a la versión 2.0.0.</li></ul> |
+| 6.17.3 | 02-03-2025 | <ul><li>Actualización técnica: Mejoras de estabilidad y rendimiento</li></ul> |
+| 6.17.2 | 17-02-2025 | <ul><li>Actualización técnica: Actualizado a targetSDKVersion 35</li></ul> |
+| 6.17.1 | 17-12-2024 | <ul><li>Se actualizó la API de `validateAndLogInAppPurchase` para la API de validación de compras in-app (actualmente en versión beta)</li><li>Se agregó la integración con la API de integridad de Google Play para permitir la verificación de la integridad del dispositivo a través de Google Play.</li></ul> |
+| 6.17.0 | 10-10-2024 | <ul><li>Se agregó soporte para recopilar el ID de AppSet. Ver <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#collecting-appset-id">instrucciones para desarrolladores</Anchor></li></ul> |
+| 6.16.2 | 28-07-2025 | <ul><li>Se ha corregido un problema que podía causar errores de compilación al integrar el SDK.</li></ul> |
+| 6.16.1 | Versión | <ul><li>Se actualizó la API para enviar manualmente los datos de consentimiento de la DMA a AppsFlyer.</li></ul> |
+| 6.16.0 | 10-06-2024 | <ul><li>Se agregó soporte para la atribución de precarga de Samsung. <Anchor target="_blank" href="/marketers/es/docs/set-up-appsflyer-preload-referrer-attribution#referencia-de-precarga-de-samsung">Saber más</Anchor>.</li><li>Se agregó soporte para la medición de ingresos en la API de atribución Privacy Sandbox (beta cerrada).</li><li>Se actualizó Dexguard a la versión 9.8.12 para resolver problemas de estabilidad y mejorar la seguridad.</li></ul> |
+| 6.15.2 | 29-05-2024 | <ul><li>Mejoras y correcciones de estabilidad</li><li>Actualizaciones internas relacionadas con la API de Atribución de Privacy Sandbox</li></ul> |
+| 6.15.1 | 18-04-2024 | Actualización de versiones:<ul><li>targetSDKVersion: v34</li><li>Gradle: v8.7</li><li>Java: v17</li></ul> |
+| 6.15.0 | 03-04-2024 | <ul><li>Se agregó el método `logAdRevenue` para enviar datos de ingresos publicitarios a AppsFlyer. **Nota:** A partir de esta versión, ya no se debe utilizar el conector AdRevenue; debe ser reemplazado por el método `logAdRevenue`. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue-1">Saber más</Anchor></li></ul> |
+| 6.14.2  <br />Fin del soporte:  <br />2027-03-08 | 08-02-2024 | <ul><li>Se solucionó un problema con la obtención de Meta Install Referrer en aplicaciones creadas con Unity.</li></ul> |
+| 6.14.1  <br />Fin del soporte:  <br />2027-03-08 | 29-01-2024 | Mantenimiento del SDK |
+| 6.14.0  <br />Fin del soporte:  <br />2027-03-08 | 18-12-2023 | <ul><li>Se ha agregado compatibilidad con el flujo de validación de compras actualizado. Esta función se encuentra actualmente en beta cerrada. Saber más</li><li>Se actualizó la integración de Huawei Referrer. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#huawei-install-referrer">Saber más</Anchor>.</li></ul> |
+| 6.13.1  <br />Fin del soporte:  <br />2027-03-08 | 25-10-2023 | Mantenimiento del SDK |
+| 6.13.0  <br />Fin del soporte:  <br />2027-03-08 | 31-08-2023 | <ul><li>Se agregó soporte para la nueva política de consentimiento de la UE de Google.</li></ul> |
 
-## Unsupported SDK versions
+## Versiones del SDK no compatibles
 
-The following SDK versions have reached **End-of-Support** status. These versions can no longer send data to AppsFlyer, and any traffic from them will be rejected.
+Las siguientes versiones del SDK han alcanzado el estado de **finalización del soporte**. Estas versiones ya no pueden enviar datos a AppsFlyer y se rechazará cualquier tráfico que generen.
 
-| Version | Release Date | Notes |
+| Versión | Fecha de lanzamiento | Notas |
 | --- | --- | --- |
-| 6.12.6 | 2024-01-29 | SDK maintenance |
-| 6.12.5 | 2023-12-18 | <ul><li>Added the `original_link` parameter to the deep linking callback in the ESP resolution flow.</li></ul> |
-| 6.12.4 | 2023-10-25 | <ul><li>Dexguard updated to version 9.4.16 to improve SDK stability.</li></ul> |
-| 6.12.3 | 2023-08-31 | SDK maintenance |
-| 6.12.2 | 2023-08-02 | <ul><li>Fixed a bug that could cause the app to crash on some devices in Android 8.1.0 and Android 11.</li></ul> |
-| 6.12.1 | 2023-06-29 | <ul><li>Fixed an issue where the Play Store launch was delayed in cross promotion.</li><li>Fixed a bug causing the app to crash on some devices.</li></ul> |
-| 6.12.0 | 2023-06-28 | <ul><li>Deprecated - please use version 6.12.1.</li></ul> |
-| 6.11.2 | 2023-06-29 | <ul><li>Fixed a bug causing the app to crash on some devices.</li></ul> |
-| 6.11.1 | 2023-06-6 | <ul><li>Deprecated - please use version 6.12.1.</li><li>Fixed a bug where the app sometimes crashed after initializing the SDK.</li></ul> |
-| 6.11.0 | 2023-05-16 | <ul><li>Fixed an issue that sometimes caused the app to freeze on some devices when the SDK attempted to obtain the Google Play Referrer</li></ul> |
-| 6.10.3 | 2023-04-25 | SDK maintenance |
-| 6.10.2 (Deprecated) |  | Deprecated |
-| 6.10.1 | 2023-03-01 | <ul><li>Fixed an issue that sometimes caused apps on Samsung devices to close when initializing the SDK. This issue affected apps with SDK V6.6.0 and above.</li></ul> |
-| 6.10.0 | 2023-02-13 | <ul><li>New AppsFlyer domain for communication between the SDK and AppsFlyer servers.</li><li>Changed setHost API when empty or null values are sent. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#sethost">Learn more</Anchor></li></ul> |
-| 6.9.4  <br />End of support:  <br />2025-09-08 | 2022-12-6 | <ul><li>Fixed an issue where sending an ad revenue event from the ad revenue SDK connector triggered a call to the conversion listener.</li><li>Fixed an issue that sometimes caused apps to freeze when an ad revenue event was sent from the ad revenue SDK connector.</li></ul> |
-| 6.9.3  <br />End of support:  <br />2025-09-08 | 2022-11-28 | <ul><li>Updated the internal request structure for Get Conversion Data (GCD). **Note**: Response data remains the same.</li><li>Fixed an issue where the SDK triggered a GCD request when the app had the ConversionListener set to null.</li></ul> |
-| 6.9.2  <br />End of support:  <br />2025-09-08 | 2022-10-02 | <ul><li>Fixed an issue related to a delay in requesting a purchase validation using the validateAndLogInAppPurchase API.</li></ul> |
-| 6.9.1  <br />End of support:  <br />2025-09-08 | 2022-09-19 | SDK maintenance |
-| 6.9.0  <br />End of support:  <br />2025-09-08 | 2022-09-12 | <ul><li>Added support for Xiaomi GetApps Store Referrer.</li><li>Updated the internal API for ad revenue reporting. Starting this version, only the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue-1">generic ad revenue SDK connector</Anchor> is supported.</li></ul> |
-| 6.8.2  <br />End of support:  <br />2025-09-08 | 2022-08-29 | <ul><li>Fixed a critical issue with the caching mechanism of the SDK introduced in V6.7.0, causing cached events to be sent multiple times.</li></ul> |
-| 6.8.1  <br />(Deprecated)  <br />End of support:  <br />2025-09-08 | 2022-08-24 | <ul><li>**Deprecated.** Please use V6.8.2.</li></ul> |
-| 6.8.0  <br />(Deprecated)  <br />End of support:  <br />2025-09-08 | 2022-07-18 | <ul><li>**Deprecated.** Please use V6.8.2.</li><li>Removed the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#enablelocationcollection">`enableLocationCollection`</Anchor> API from the SDK. The app can still report the user’s location data by passing it to the SDK directly via the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#loglocation">`logLocation`</Anchor> API.</li><li>Added the `com.google.android.gms.permission.AD_ID` permission to the SDK's `AndroidManifest.xml`. Read more about it <Anchor target="_blank" href="/marketers/docs/bulletin-the-android-sdk-adds-the-ad-id-permission">here</Anchor>.</li><li>Fixed an issue related to optimization and obfuscation using R8.</li></ul> |
-| 6.7.0  <br />(Deprecated)  <br />End of support:  <br />2025-09-08 | 2022-06-19 | <ul><li>**Deprecated.** Please use V6.8.2.</li><li>Changed how the SDK handles requests to the AppsFlyer servers. Following this change, the request for reporting the first app open (conversion) will be prioritized over in-app events and other types of requests. Read more about it <Anchor target="_blank" href="/marketers/docs/bulletin-adding-a-priority-queue-to-the-android-sdk">here</Anchor>.</li><li>**New API:** <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisablenetworkdata">`setDisableNetworkData`</Anchor> to opt-out from collecting the information about the cellular network (carrier name, operator name).</li></ul> |
-| 6.6.1  <br />End of support:  <br />2025-03-03 | 2022-05-16 | SDK maintenance |
-| 6.6.0  <br />End of support:  <br />2025-03-03 | 2022-05-01 | <ul><li>Added more parameters to UDL's `onDeepLinking` callback for Direct Deep Linking flow (existing users). <Anchor target="_blank" href="/marketers/docs/bulletin-additional-parameters-available-for-deep-linking-existing-users">For more information</Anchor>.</li></ul> |
-| 6.5.4  <br />End of support:  <br />2025-03-03 | 2022-03-23 | SDK maintenance |
-| 6.5.3  <br />End of support:  <br />2025-03-03 | 2022-03-09 | <ul><li>**Bugfix:** Fixed issue with the creation of user-invite links that contain non-English characters.</li></ul> |
-| 6.5.2  <br />End of support:  <br />2025-03-03 | 2022-01-26 | <ul><li>Fixed issue when resolving URL for deferred deep linking in UDL.</li><li>Updated to DexGuard 9.2</li><li>Refactoring and internal changes.</li></ul> |
-| 6.5.1  <br />End of support:  <br />2025-03-03 | 2021-12-29 | <ul><li>Deeplink resolution with UDL for apps that use the <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution#channel-name">out-of-Store with Channel option</Anchor></li></ul> |
-| 6.5.0  <br />End of support:  <br />2025-03-03 | 2021-12-07 | <ul><li>Refactoring and internal changes.</li></ul> |
-| 6.4.3  <br />End of support:  <br />2025-03-03 | 2021-11-14 | <ul><li>Fixed a bug introduced in  `V6.4.2`with `LinkGenerator` causing the creation of links with missing URL parameters.</li></ul> |
-| 6.4.2  <br />End of support:  <br />2025-03-03 | 2021-10-24 | The following were resolved:<ul><li>`pid` parameter being appended twice to custom URLs generated by `LinkGenerator`.</li><li>Extra `/` was added to the `af_dp` value when using `LinkGenerator` to create custom URI schemes.</li><li>Both IMEI and AndroidID were collected, if the app triggered the collection of only one of them.</li></ul> |
-| 6.4.1  <br />End of support:  <br />2025-03-03 | 2021-10-17 | Resolved compilation error when using Gradle version earlier than V3.5.4. |
-| 6.4.0  <br />End of support:  <br />2025-03-03 | 2021-09-12 | **New API:** <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> lets you configure which partners the SDK should exclude from data-sharing.<br /><br />As of this version, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilter">`setSharingFilter`</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforallpartners">`setSharingFilterForAllPartners`</Anchor> are deprecated. |
-| 6.3.2<br /><br />End of support: 2024-08-31 | 2021-06-06 | **New API**: [`setDisableAdvertisingIdentifiers`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers) |
-| 6.3.1  <br />End of support: 2024-08-31 | 2021-05-26 | <ul><li>**New API**: [`performOnDeepLinking`](https://dev.appsflyer.com/hc/docs/conversion-data)</li><li>Added the ability to trigger the <Anchor target="_blank" href="/marketers/docs/user-invite-attribution#procedures">User Invite API</Anchor> before calling `start`/after calling `stop`</li><li>**Bugfix**: Fixed an issue where a call to `waitForCustomerUserId` wasn't released even after calling `setCustomerUserId`</li></ul> |
-| 6.3.0  <br />End of support: 2024-08-31 | 2021-04-29 | <ul><li>**Bugfix**: Wrong invocation of `onConversionDataFail` upon in-app event send request failure</li><li>**Bugfix**: motion sensor metric collection (for fraud detection)</li><li>**Bugfix**: Obfuscation-related fix to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl">UDL</Anchor></li><li>Technical update to the OneLink API</li></ul> |
-| 6.2.3  <br />End of support: 2024-08-31 | 2021-03-04 | SDK maintenance |
-| 6.2.0  <br />End of support: 2024-08-31 | 2021-02-07 | <ul><li>**New API**: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setpartnerdata">`setPartnerData`</Anchor></li></ul> |
-| 6.1.4  <br />End of support: 2024-08-31 | 2021-01-12 | <ul><li>Added support for DexGuard V9</li></ul> |
-| 6.1.3  <br />End of support: 2024-08-31 | 2020-12-24 | <ul><li>**New API**: <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#record-push-notifications">`addPushNotificationDeepLinkPath`</Anchor> (supports Movable Ink)</li></ul> |
-| 6.1.1  <br />End of support: 2024-08-31 | 2020-12-03 | <ul><li>Added support Samsung Galaxy Store referrer</li><li>Minor bug fixes and performance improvements.</li></ul> |
-| 6.1.0  <br />End of support: 2024-08-31 | 2020-11-09 | <ul><li>Added support for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl">Unified deep linking API</Anchor></li></ul> |
-| 6.0.1  <br />End of support: 2024-08-31 | 2020-10-28 | SDK maintenance |
-| 6.0.0  <br />End of support: 2024-08-31 | 2020-10-14 | <ul><li>Major changes to SDK functionality and API including deprecation and method name changes. [Learn more](/docs/appsflyer-android-sdk-release-notes#android-v600-release-notes)</li></ul> |
+| 6.12.6 | 02-08-2023 | Mantenimiento del SDK |
+| 6.12.5 | 29-06-2023 | <ul><li>Se ha añadido el parámetro `original_link` al callback de deep linking en el flujo de resolución ESP.</li></ul> |
+| 6.12.4 | 28-06-2023 | <ul><li>Dexguard se actualizó a la versión 9.4.16 para mejorar la estabilidad del SDK.</li></ul> |
+| 6.12.3 | 29-06-2023 | Mantenimiento del SDK |
+| 6.12.2 | 28-08-2024 | <ul><li>Se ha corregido un error que podía provocar que la aplicación fallara en algunos dispositivos en Android 8.1.0 y Android 11.</li></ul> |
+| 6.12.1 | 16-05-2022 | <ul><li>Se ha corregido un problema que hacía que la apertura de la Play Store se retrasara en la promoción cruzada.</li><li>Se ha corregido un error que provocaba que la aplicación fallara en algunos dispositivos.</li></ul> |
+| 6.12.0 | 25-04-2023 | <ul><li>En desuso: utiliza la versión 6.12.1.</li></ul> |
+| 6.11.2 | 06-06-2023 | <ul><li>Se ha corregido un error que provocaba que la aplicación fallara en algunos dispositivos.</li></ul> |
+| 6.11.1 | 01-03-2023 | <ul><li>En desuso: utiliza la versión 6.12.1.</li><li>Se corrigió un error por el que la aplicación a veces fallaba después de inicializar el SDK.</li></ul> |
+| 6.11.0 | 13-02-2023 | <ul><li>Se ha corregido un problema que a veces provocaba que la aplicación se congelara en algunos dispositivos cuando el SDK intentaba obtener el Google Play Referrer.</li></ul> |
+| 6.10.3 | 24-04-2025 | Mantenimiento del SDK |
+| 6.10.2 (obsoleto) |  | Número con hasta 4 decimales que representa el porcentaje de impuesto recaudado. |
+| 6.10.1 | 01-03-2023 | <ul><li>Se corrigió un problema que a veces provocaba que las aplicaciones de los dispositivos Samsung se cerraran al inicializar el SDK. Este problema afectó a las aplicaciones con SDK V6.6.0 y superiores.</li></ul> |
+| 6.10.0 | 29-12-2021 | <ul><li>Nuevo dominio de AppsFlyer para la comunicación entre el SDK y los servidores de AppsFlyer.</li><li>Se ha cambiado la API setHost cuando se envían valores vacíos o nulos. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#sethost">Saber más</Anchor></li></ul> |
+| 6.9.4  <br />Fin del soporte:  <br />2025-09-08 | 06-12-2022 | <ul><li>Se ha corregido un problema por el cual el envío de un evento de ingresos por publicidad desde el conector del SDK de ingresos por publicidad activaba una llamada al oyente de conversión.</li><li>Se ha corregido un problema que a veces provocaba que las aplicaciones se congelaran cuando se enviaba un evento de ingresos por publicidad desde el conector del SDK de ingresos por publicidad.</li></ul> |
+| 6.9.3  <br />Fin del soporte:  <br />2025-09-08 | 28-11-2022 | <ul><li>Se actualizó la estructura interna de las solicitudes para Get Conversion Data (GCD). **Nota**: Los datos de la respuesta siguen siendo los mismos.</li><li>Se corrigió un problema por el que el SDK activaba una solicitud de GCD cuando la aplicación tenía el ConversionListener establecido en nulo.</li></ul> |
+| 6.9.2  <br />Fin del soporte:  <br />2025-09-08 | 02-10-2022 | <ul><li>Se corrigió un problema relacionado con un retraso en la solicitud de una validación de compra usando la API validateAndLogInAppPurchase.</li></ul> |
+| 6.9.1  <br />Fin del soporte:  <br />2025-09-08 | 19-09-2022 | Mantenimiento del SDK |
+| 6.9.0  <br />Fin del soporte:  <br />2025-09-08 | 12-09-2022 | <ul><li>Se agregó soporte para el referente de Xiaomi GetApps Store.</li><li>Se actualizó la API interna para la generación de reportes de ingresos por publicidad. A partir de esta versión, solo se admite el <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue-1">conector genérico del SDK de ingresos por anuncios</Anchor> .</li></ul> |
+| 6.8.2  <br />Fin del soporte:  <br />2025-09-08 | 29-08-2022 | <ul><li>Se corrigió un problema crítico con el mecanismo de almacenamiento en caché del SDK introducido en la V6.7.0, que provocaba que los eventos en caché se enviaran varias veces.</li></ul> |
+| 6.8.1  <br />(En desuso)  <br />Fin del soporte:  <br />2025-09-08 | 24-08-2022 | <ul><li>**En desuso.** Utilice V6.8.2.</li></ul> |
+| 6.8.0  <br />(En desuso)  <br />Fin del soporte:  <br />2025-09-08 | 18-07-2022 | <ul><li>**En desuso.** Utilice V6.8.2.</li><li>Se eliminó la API <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#enablelocationcollection">`enableLocationCollection`</Anchor> del SDK. La aplicación aún puede reportar los datos de ubicación del usuario pasándolos al SDK directamente a través de la API <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#loglocation">`logLocation`</Anchor>.</li><li>Se agregó el permiso `com.google.android.gms.permission.AD_ID` al `AndroidManifest.xml` del SDK. Leer más <Anchor target="_blank" href="/marketers/es/docs/bulletin-the-android-sdk-adds-the-ad-id-permission">aquí</Anchor>.</li><li>Se corrigió un problema relacionado con la optimización y ofuscación mediante el uso de R8.</li></ul> |
+| 6.7.0  <br />(En desuso)  <br />Fin del soporte:  <br />2025-09-08 | 19-06-2022 | <ul><li>**En desuso.** Utilice V6.8.2.</li><li>Se cambió el modo en que el SDK gestiona las peticiones a los servidores de AppsFlyer. Después de este cambio, la solicitud para reportar la primera apertura de la aplicación (conversión) se priorizará sobre los eventos in-app y otros tipos de solicitudes. Leer más <Anchor target="_blank" href="/marketers/es/docs/bulletin-adding-a-priority-queue-to-the-android-sdk">aquí</Anchor>.</li><li>**Nueva API:** <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisablenetworkdata">`setDisableNetworkData`</Anchor> para optar por no recopilar la información sobre la red de telefonía celular (nombre de la compañía telefónica, nombre del operador).</li></ul> |
+| 6.6.1  <br />Fin del soporte:  <br />2025-03-03 | 16-05-2022 | Mantenimiento del SDK |
+| 6.6.0  <br />Fin del soporte:  <br />2025-03-03 | 01-05-2022 | <ul><li>Se agregaron más parámetros a la devolución de llamada `onDeepLinking` de UDL para el flujo de Direct Deep Linking (usuarios existentes). <Anchor target="_blank" href="/marketers/es/docs/bulletin-additional-parameters-available-for-deep-linking-existing-users">Para obtener más información</Anchor>.</li></ul> |
+| 6.5.4  <br />Fin del soporte:  <br />2025-03-03 | 23-03-2022 | Mantenimiento del SDK |
+| 6.5.3  <br />Fin del soporte:  <br />2025-03-03 | 09-03-2022 | <ul><li>**Corrección de errores:** Se solucionó un problema en la creación de enlaces de invitación de usuario que contienen caracteres que no son del inglés.</li></ul> |
+| 6.5.2  <br />Fin del soporte:  <br />2025-03-03 | 26-01-2022 | <ul><li>Se solucionó el problema al resolver la URL para los deferred deep linking en UDL.</li><li>Actualizado a DexGuard 9.2</li><li>Refactorización y cambios internos.</li></ul> |
+| 6.5.1  <br />Fin del soporte:  <br />2025-03-03 | 29-12-2021 | <ul><li>Resolución de Deep Linking con UDL para aplicaciones que utilizan la <Anchor target="_blank" href="/marketers/es/docs/set-up-multi-store-android-attribution#channel-name">opción out-of-Store with Channel</Anchor></li></ul> |
+| 6.5.0  <br />Fin del soporte:  <br />2025-03-03 | 07-12-2021 | <ul><li>Refactorización y cambios internos.</li></ul> |
+| 6.4.3  <br />Fin del soporte:  <br />2025-03-03 | 14-11-2021 | <ul><li>Se solucionó un error introducido en  `V6.4.2` con `LinkGenerator` que causaba la creación de enlaces con parámetros de URL faltantes.</li></ul> |
+| 6.4.2  <br />Fin del soporte:  <br />2025-03-03 | 24-10-2021 | Se resolvieron los siguientes:<ul><li>El parámetro `pid` se anexa dos veces a las URL personalizadas generadas por `LinkGenerator`.</li><li>Se agregó un `/` adicional al valor `af_dp` al usar `LinkGenerator` para crear esquemas URI personalizados.</li><li>Se recopilaban tanto el IMEI como el AndroidID, si la aplicación activaba la recopilación de solo uno de ellos.</li></ul> |
+| 6.4.1  <br />Fin del soporte:  <br />2025-03-03 | 17-10-2021 | Se resolvió el error de compilación al usar una versión de Gradle anterior a V3.5.4. |
+| 6.4.0  <br />Fin del soporte:  <br />2025-03-03 | 12-09-2021 | **Nueva API:** <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> te permite configurar qué partners debe excluir el SDK del uso compartido de datos.<br /><br />A partir de esta versión, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilter">`setSharingFilter`</Anchor> y <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforallpartners">`setSharingFilterForAllPartners`</Anchor> están en desuso. |
+| 6.3.2<br /><br />Fin del soporte: 2024-08-31 | 06-06-2021 | **Nueva API**: [`setDisableAdvertisingIdentifiers`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers) |
+| 6.3.1  <br />Fin del soporte: 2024-08-31 | 26-05-2021 | <ul><li>**Nueva API**: [`performOnDeepLinking`](https://dev.appsflyer.com/hc/docs/conversion-data)</li><li>Se agregó la capacidad de activar la <Anchor target="_blank" href="/marketers/es/docs/user-invite-attribution#procedimientos">API de invitación de usuarios</Anchor> antes de llamar a `start`/después de llamar a `stop`</li><li>**Corrección de errores**: se corrigió un problema por el que una llamada a `waitForCustomerUserId` no se liberaba incluso después de llamar a `setCustomerUserId`</li></ul> |
+| 6.3.0  <br />Fin del soporte: 2024-08-31 | 29-04-2021 | <ul><li>**Corrección de errores**: invocación incorrecta de `onConversionDataFail` tras un error en la solicitud de envío de eventos in-app</li><li>**Corrección de errores**: recopilación de métricas del sensor de movimiento (para la detección de fraude)</li><li>**Corrección de errores**: corrección relacionada con la ofuscación de <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl">UDL</Anchor></li><li>Actualización técnica de la API de OneLink</li></ul> |
+| 6.2.3  <br />Fin del soporte: 2024-08-31 | 04-03-2021 | Mantenimiento del SDK |
+| 6.2.0  <br />Fin del soporte: 2024-08-31 | 07-02-2021 | <ul><li>**Nueva API**: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setpartnerdata">`setPartnerData`</Anchor></li></ul> |
+| 6.1.4  <br />Fin del soporte: 2024-08-31 | 12-01-2021 | <ul><li>Se agregó soporte para DexGuard V9</li></ul> |
+| 6.1.3  <br />Fin del soporte: 2024-08-31 | 24-12-2020 | <ul><li>**Nueva API**: <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#record-push-notifications">`addPushNotificationDeepLinkPath`</Anchor> (admite Movable Ink)</li></ul> |
+| 6.1.1  <br />Fin del soporte: 2024-08-31 | 03-12-2020 | <ul><li>Se agregó soporte para Samsung Galaxy Store referrer</li><li>Corrección de errores menores y mejoras de rendimiento.</li></ul> |
+| 6.1.0  <br />Fin del soporte: 2024-08-31 | 09-11-2020 | <ul><li>Se agregó soporte para la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl">API de deep linking unificado</Anchor></li></ul> |
+| 6.0.1  <br />Fin del soporte: 2024-08-31 | 28-10-2020 | Mantenimiento del SDK |
+| 6.0.0  <br />Fin del soporte: 2024-08-31 | 2020-10-14 | <ul><li>Cambios importantes en la funcionalidad del SDK y en la API, incluidos cambios en los nombres de los métodos y en las versiones obsoletas. [Saber más](/docs/appsflyer-android-sdk-release-notes#android-v600-release-notes)</li></ul> |
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/appsflyer-sdk-version-control-policy">AppsFlyer SDK version control policy</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/appsflyer-sdk-version-control-policy">Política de control de versiones del SDK de AppsFlyer</Anchor>
 
-<div data-zendesk-anchors="h_01JVHFG6PN34YFWNZKX2CYHJV8=important h_01JVHEKR4MTFV0FDHMTQW00BCS=end-of-support-vs-deprecated android-sdk-v6=android-sdk-releases h_01H9ZPCP8RWF24WAZ6YYMA1GS0=android-sdk-releases deprecated-versions=unsupported-sdk-versions 01JHFAXXV51DHADQ7P2Q6RHFX0=unsupported-sdk-versions h_01HDNZ774ME3SVT89JS7R4MSKE=see-also" />
+<div data-zendesk-anchors="h_01JVHFG6PN34YFWNZKX2CYHJV8=importante end-of-support-vs-deprecated=fin-del-soporte-vs-obsoleto h_01JVHEKR4MTFV0FDHMTQW00BCS=fin-del-soporte-vs-obsoleto android-sdk-v6=lanzamientos-del-sdk-para-android h_01H9ZPCP8RWF24WAZ6YYMA1GS0=lanzamientos-del-sdk-para-android deprecated-versions=versiones-del-sdk-no-compatibles 01JHFAXXV51DHADQ7P2Q6RHFX0=versiones-del-sdk-no-compatibles h_01HDNZ774ME3SVT89JS7R4MSKE=consulta-tambi%C3%A9n" />

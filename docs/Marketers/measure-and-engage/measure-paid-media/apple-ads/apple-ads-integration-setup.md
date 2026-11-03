@@ -1,5 +1,5 @@
 ---
-title: Apple Ads integration setup
+title: Configuración de integración de Apple Ads (Search Ads)
 metadata:
   keywords:
     - cost
@@ -21,364 +21,365 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-08-31T09:04:38Z'
-  edited_at: '2026-10-26T10:09:22Z'
+  edited_at: '2026-10-29T01:21:03Z'
   id: 213747963
-  locale: en-us
+  locale: es
   section: Apple Ads
   section_id: 6551310453393
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/213747963-Apple-Ads-integration-setup
+  url: https://support.appsflyer.com/hc/es/articles/213747963
 ---
-> **At a glance:** Apple Ads, an AppsFlyer SRN (Self-Reporting Network) partner, helps users find your app in the App Store using keywords.
+> **At a glance:** Apple Ads, un partner de red de autorreporte (SRN) de AppsFlyer, ayuda a los usuarios a encontrar tu aplicación en la tienda de aplicaciones mediante palabras clave.
 
 <Image alt="medium_originaljpeg_apple_ads_logo_blk_highres_720 (1) (1).jpg" src="https://files.readme.io/f89d1a5ec1a1de2ec2dfdec7465465fc2be73e0cf41ddd6be8b2e3f62de3c9e8-47598828154001.jpg" width="719px" />
 
-App relevance determines if your ad is the one displayed in response to a search query in the App Store. User response to an ad is a signal of ad relevance. Apple Ads uses user response as a signal in deciding which ads to display the most.
+La relevancia de la aplicación determina si tu anuncio es el que se muestra en respuesta a una query de búsqueda en la App Store. La respuesta del usuario a un anuncio es una señal de la relevancia del mismo. Apple Ads utiliza las respuestas de los usuarios como una señal para decidir qué anuncios mostrar con más frecuencia.
 
 > 📘 **Note**
 >
-> * AppsFlyer supports Apple Ads click-based mobile attribution, user retargeting, and cost data via API (with an ROI360 subscription).
-> * Starting March 27, 2025, AppsFlyer will also support Apple Ads impression-based mobile attribution.
-> * Starting September 1, 2026, Apple Ads adds an exact timestamp to all iOS attribution claims.
+> * AppsFlyer ofrece soporte para la atribución móvil basada en clics de Apple Ads, el retargeting de usuarios y los datos de costo a través de la API (con una suscripción a ROI360).
+> * A partir del 27 de marzo de 2025, AppsFlyer también admitirá la atribución móvil basada en impresiones de Apple Ads.
+> * A partir del 1 de septiembre de 2026, Apple Ads añade un timestamp exacto a todas las reclamaciones de atribución de iOS.
 
-## Set up Apple Ads integration
+## Configurar la integración de Apple Ads
 
-<Accordion title="Get started">
+<Accordion title="Comienza">
 
-**Prerequisite**
+**Requisito previo:**
 
-* The most recent version of the AppsFlyer iOS SDK is adopted
+* Tener adoptada la versión más reciente del SDK de AppsFlyer para iOS
 
-**Set up Apple Ads in AppsFlyer:**
+**Configura Apple Ads en AppsFlyer:**
 
-The setup is done from the **Active Integrations** page, but to find new partners you must first go to the <Anchor target="_blank" href="/marketers/docs/partner-integrations">Partner Marketplace</Anchor>. Complete the configuration using the relevant tabs, as described below.
-
-> 📘 **Note**
->
-> Before setting up an integration, make sure you contact the partner and open an account with them.
-
-</Accordion>
-
-<Accordion title="Integration tab">
-
-Apple Ads, an SRN, integrates with AppsFlyer via API. As such, there are no postback settings. Complete the following sections according to your attribution goals.
-
-<table><thead><tr><th>Section </th><th>Details</th></tr></thead><tbody><tr><td>Integration activation</td><td><p><strong>To set up a new integration:</strong></p><ol><li>In AppsFlyer, go to <strong>Collaborate &gt; Partner Integrations &gt; Marketplace</strong> tab.</li><li>Select the relevant app. </li><li>Search for the partner and select <strong>Integrate</strong>.</li><li>In the <strong>Integration</strong> tab, turn on the <strong>Activate partner</strong> toggle. Keep it on as long as you work with the partner.</li><li>Complete the configuration using the relevant tabs, as described below.</li></ol><p><strong>To edit an existing integration:</strong></p><p>In AppsFlyer, go to <strong>Collaborate &gt; Partner Integrations &gt; Active integrations</strong> tab, search for the partner, and make your changes.</p></td></tr><tr><td>Install click-through attribution</td><td><ol><li><p><strong>Set the Install click-through lookback window</strong><br/>Set the maximum time from ad click to install. Doing so enables AppsFlyer to attribute installs (first launches) taking place within the lookback window to Apple Ads.</p><ul><li> <strong>Range:</strong> 1–30 days</li><li> <strong>Default:</strong> 30 days</li></ul><p>For more information, see <a href="./set-up-lookback-windows" target="_blank">Lookback windows explained</a>.</p></li></ol><ol><li> <strong>Pre-registration (Pre-order) campaigns measurement</strong><br/>If you run pre-registration campaigns for iOS apps, set the pre-registration campaign lookback window. <br/>This slider determines the lookback window for attributing installs to pre-registration campaigns.<br/>The pre-registration lookback window allows attribution of installs that happen when pre-registered (pre-ordered) apps are released, linking them back to the original ad engagement. <ul><li> <strong>Range:</strong> 1–90 days</li><li> <strong>Default:</strong>  90 days</li></ul></li></ol></td></tr><tr><td>Install view-through attribution</td><td><ol><li><p><span><strong>Set the install view-through lookback window</strong></span><br/>Set the maximum time from ad view to install. AppsFlyer attributes installs (first launches) that occur within this window to Apple Ads. <strong>Note:</strong> The install view-through lookback window slider supports only hours (max: 24h, default: 24h). </p><ul><li> <strong>Range:</strong> 1–24 hours</li><li> <strong>Default:</strong>  24 hours</li></ul><p>For more information, see <a href="./set-up-lookback-windows" target="_blank">Lookback windows explained</a>.</p></li><li> <strong>Pre-registration (Pre-order) campaign measurement</strong><br/>If you run pre-registration campaigns for iOS apps, set the pre-registration campaign lookback window.<br/>This slider determines the lookback window for attributing installs to pre-registration campaigns.<br/>The Pre-registration lookback window allows attribution of installs that happen when pre-registered (pre-ordered) apps are released, linking them back to the original ad engagement.<ul><li> <strong>Range:</strong> 1–61 days</li><li> <strong>Default:</strong> 61 days</li></ul></li></ol></td></tr><tr><td rowspan="2">Reinstalls </td><td><p><strong>Reinstall attribution</strong></p><p>If <strong>Reinstall attribution is</strong> on, AppsFlyer can attribute reinstalls to Apple Ads.</p><p>Reinstall attribution lookback window settings are set according to the install attribution settings.</p><p>If the user is within the <a href="./set-up-re-attribution-window" target="_blank">re-attribution window</a> (set at the time of the original install), the install is attributed to Apple Ads as a reinstall.</p><p>The reinstall can be seen in the retargeting view of the Overview dashboard.</p><p>The <strong>Store reinstall</strong> raw data field is set to true. </p><p>Currently Apple Ads retargeting does not support re-engagements.</p></td></tr><tr><td><p><strong>Inactivity window</strong></p><p>Set the user <a href="./set-retargeting-inactivity-window" target="_blank">inactivity threshold</a> (in days) to control the impact of retargeting campaigns. </p></td></tr><tr><td>Postbacks</td><td>Currently Apple Ads integration doesn't support postbacks.  </td></tr></tbody></table>
-
-</Accordion>
-
-<Accordion title="Cost tab">
-
-The cost integration provides the following aggregated data:
-
-* Cost data for your campaigns, adsets, geos/countries, and keywords. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.  
-  **Note:** Cost data requires an ROI360 subscription.
-* Data on clicks, impressions, and enriched data—keywords, campaign names, and adsets.
+La configuración se realiza desde la página **Integraciones activas**, pero para encontrar nuevos partners primero debes ir a <Anchor target="_blank" href="/marketers/es/docs/partner-integrations">Marketplace de partners</Anchor>. Completa la configuración utilizando las pestañas pertinentes, como se describe a continuación.
 
 > 📘 **Note**
 >
-> * The use of multiple Apple Ads accounts is supported. In other words, if you run campaigns for the same app using different Apple Ads accounts, AppsFlyer can receive this data from all accounts.
-> * Cost data for "campaign groups" is not supported by the Apple Ads reporting API, so "campaign group" data is not available in AppsFlyer.
-> * To sign in with Apple, you need Apple Ads **Campaign Group Manage** permissions (either Account Read Only or Account Read and Write).
-> * When you sign in with Apple, authorization of Apple Ads campaign groups isn't cumulative. This means that when you integrate a new app, the authorization for campaign groups chosen for the previous apps is revoked unless chosen again.
-> * When you sign in with Apple, you can't use a federated login.
-
-**To enable cost, clicks, impressions, and enriched data:**
-
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>
-
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+> Antes de configurar una integración, asegúrate de contactar al partner y abrir una cuenta con este.
 
 </Accordion>
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de Integración">
 
-<Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Setting ad network and agency permissions.</Anchor>
+Apple Ads, una SRN, se integra con AppsFlyer a través de API. Como tal, no hay ninguna configuración de postback. Completa las siguientes secciones de acuerdo con tus metas de atribución.
+
+<table><thead><tr><th>Sección. </th><th>Detalles</th></tr></thead><tbody><tr><td>Activación de la integración</td><td><p><strong>Para configurar una nueva integración:</strong></p><ol><li>En AppsFlyer, ve a la pestaña <strong>Colaborar &gt; Integraciones de partners &gt; Marketplace</strong>.</li><li>Selecciona la aplicación correspondiente. </li><li>Busca el partner y selecciona <strong>Integrar</strong>.</li><li>En la pestaña <strong>Integración</strong>, activa el selector <strong>Activar partner</strong>. Mantenlo activado mientras trabajes con el partner.</li><li>Completa la configuración utilizando las pestañas pertinentes, como se describe a continuación.</li></ol><p><strong>Para editar una integración existente:</strong></p><p>En AppsFlyer, ve a la pestaña <strong>Colaborar &gt; Integraciones de partners &gt; Integraciones activas</strong>, busca el partner y haz los cambios que necesites.</p></td></tr><tr><td>Atribución click-through en la instalación</td><td><ol><li><p><strong>Configura la ventana de lookback de clics de instalación</strong><br/>Define el tiempo máximo entre el clic en el anuncio y la instalación. Esto permite que AppsFlyer atribuya a Apple Ads las instalaciones (primeras aperturas) que tienen lugar dentro de la ventana de lookback.</p><ul><li> <strong>Rango:</strong> 1–30 días</li><li> <strong>Valor predeterminado:</strong> 30 días</li></ul><p>Para más información, consulta <a href="./set-up-lookback-windows" target="_blank">Explicación de las ventanas de lookback</a>.</p></li></ol><ol><li> <strong>Medición de campañas de preregistro (pedido anticipado)</strong><br/>Si ejecutas campañas de preregistro para aplicaciones de iOS, configura la ventana de lookback de la campaña de preregistro. <br/>Este control deslizante determina la ventana de lookback utilizada para atribuir instalaciones a campañas de preregistro.<br/>La ventana de lookback de preregistro permite atribuir las instalaciones que se producen cuando se lanzan las aplicaciones preregistradas (pedidas por adelantado), vinculándolas a la interacción original con el anuncio. <ul><li> <strong>Rango:</strong> 1–90 días</li><li> <strong>Valor predeterminado:</strong>  90 días</li></ul></li></ol></td></tr><tr><td>Atribución view-through en la instalación</td><td><ol><li><p><span><strong>Configura la ventana de lookback view-through de instalación</strong></span><br/>Configura el tiempo máximo desde la visualización del anuncio hasta la instalación. AppsFlyer atribuye a Apple Ads las instalaciones (primeros inicios) que se producen dentro de esta ventana. <strong>Nota:</strong> El control deslizante de la ventana de lookback view-through de la instalación solo admite horas (máx.: 24 h; valor predeterminado: 24 h). </p><ul><li> <strong>Rango:</strong> 1–24 horas</li><li> <strong>Valor predeterminado:</strong>  24 horas</li></ul><p>Para obtener más información, consulta <a href="./set-up-lookback-windows" target="_blank">Ventanas de lookback: explicación</a>.</p></li><li> <strong>Medición de campañas de preregistro (pedido anticipado)</strong><br/>Si ejecutas campañas de preregistro para aplicaciones de iOS, configura la ventana de lookback de la campaña de preregistro.<br/>Este control deslizante determina la ventana de lookback utilizada para atribuir instalaciones a campañas de preregistro.<br/>La ventana de lookback de preregistro permite atribuir instalaciones que se producen cuando se lanzan aplicaciones preregistradas (pedidas por anticipado), vinculándolas con el engagement original del anuncio.<ul><li> <strong>Rango:</strong> 1–61 días</li><li> <strong>Valor predeterminado:</strong> 61 días</li></ul></li></ol></td></tr><tr><td rowspan="2">Reinstalaciones </td><td><p><strong>Atribución de reinstalaciones</strong></p><p>Si <strong>la atribución de reinstalaciones está</strong> activada, AppsFlyer puede atribuir las reinstalaciones a Apple Ads.</p><p>La configuración de la ventana de lookback de la atribución de reinstalaciones se realiza de acuerdo con la configuración de la atribución de instalaciones.</p><p>Si el usuario se encuentra dentro de la <a href="./set-up-re-attribution-window" target="_blank">ventana de reatribución</a> (establecida en el momento de la instalación original), la instalación se atribuye a Apple Ads como una reinstalación.</p><p>La reinstalación se puede ver en la vista de retargeting del panel de control general.</p><p>El campo raw data <strong>Store reinstall</strong> se establece en true. </p><p>Actualmente, el retargeting de Apple Ads no admite re-engagements.</p></td></tr><tr><td><p><strong>Ventana de inactividad</strong></p><p>Configura el <a href="./set-retargeting-inactivity-window" target="_blank">umbral de inactividad</a> del usuario (en días) para controlar el impacto de las campañas de retargeting. </p></td></tr><tr><td>Devoluciones de mensajes</td><td>Actualmente, la integración de Apple Ads no admite postbacks.  </td></tr></tbody></table>
 
 </Accordion>
 
-## Set up agencies and Apple Ads marketing partners
+<Accordion title="Pestaña de costo">
 
-<Accordion title="Principles">
+La integración de costos proporciona los siguientes datos agregados:
 
-**Apple Ads: Marketing partner vs. Agency**
+* Datos de costo de tus campañas, conjuntos de anuncios, geos/países y palabras clave. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de ad networks</Anchor> para obtener todos los detalles sobre las dimensiones, métricas y funciones compatibles.  
+  **Nota:** Los datos de costo requieren una suscripción a ROI360.
+* Datos sobre clics, impresiones y datos enriquecidos: palabras clave, nombres de campañas y conjuntos de anuncios.
 
-Advertisers and agencies can elect to work with Apple Ads Marketing Partners to report and optimize campaigns on Apple Ads.
+> 📘 **Note**
+>
+> * Se admite el uso de varias cuentas de Apple Ads. En otras palabras, si ejecutas campañas para la misma aplicación con diferentes cuentas de Apple Ads, AppsFlyer puede recibir estos datos de todas las cuentas.
+> * Varios usuarios de la misma cuenta de Apple Ads pueden conectar cada uno su propia integración de costos de Apple Ads. AppsFlyer mantiene cada integración de costos por separado. Cuando otro usuario de tu cuenta de Apple crea una nueva integración de costos con Apple, tu conexión se mantiene tal como está y no se sobrescribe. Cada integración de costos extrae datos de costo según los permisos de Apple Ads del usuario que ha iniciado sesión.
+> * Los datos de costes de los "grupos de campañas" no son compatibles con la API de reportes de Apple Ads, por lo que los datos del "grupo de campañas" no están disponibles en AppsFlyer.
+> * Para iniciar sesión con Apple, necesitas permisos de **gestión de grupos de campañas** de Apple Ads (ya sean de solo lectura o de lectura y escritura en la cuenta).
+> * Cuando inicias sesión con Apple, la autorización de los grupos de campañas de Apple Ads no es acumulativa. Esto significa que, al integrar una nueva aplicación, la autorización de los grupos de campaña seleccionados en aplicaciones anteriores se revoca, a menos que se vuelvan a seleccionar.
+> * Cuando inicias sesión con Apple, no puedes usar un inicio de sesión federado.
 
-The differences between agencies and marketing partners are enumerated in the table that follows.
+**Para habilitar los datos de costos, clics, impresiones y enriquecidos:**
 
-#### Agency vs. marketing partner
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>
 
-|  | Agency | Marketing partner |
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Consulta el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer datos de costo coincidentes, ya sea en el Dashboard de estado de la integración de costos (e ingresos por publicidad) o en el Dashboard individual de la ad network.
+
+</Accordion>
+
+<Accordion title="Pestaña de permisos">
+
+<Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">Configurar permisos de ad network y agencia.</Anchor>
+
+</Accordion>
+
+## Configurar agencias y partners de marketing de Apple Ads
+
+<Accordion title="Principios">
+
+**Apple Search Ads: Partner de marketing vs Agencia**
+
+Los anunciantes y las agencias pueden optar por trabajar con partners de marketing de Apple Ads para reportar y optimizar campañas en Apple Ads.
+
+Las diferencias entre las agencias y los partners de marketing se describen en la tabla siguiente.
+
+#### Agencia vs partner de marketing
+
+|  | Agencia | Partner de marketing |
 | --- | --- | --- |
-| AppsFlyer sends postbacks | No | Yes |
-| Technology | Run campaigns on your behalf | Have a value add technology solution to optimize campaigns |
+| AppsFlyer envía postbacks | No | Sí |
+| Tecnología | Ejecutar campañas por tu cuenta. | Disponer de una solución tecnológica de valor añadido para optimizar campañas |
 
-#### Configuring agencies and marketing partners
+#### Configuración de agencias y partners de marketing
 
-Use the checklist that follows to make sure you complete all steps in the configuration process. Detailed instructions are contained per partner type in the sections that follow.
+Usa la siguiente lista de verificación para asegurarte de completar todos los pasos del proceso de configuración. En las secciones siguientes se proporcionan instrucciones detalladas para cada tipo de partner.
 
-#### Configuration steps checklist
+#### Lista de verificación de pasos de configuración
 
-| Configured by | Integration with an agency | Integration with a marketing partner |
+| Configurado por | Integración con una agencia | Integración con un partner de marketing |
 | --- | --- | --- |
-| Advertiser | <ol><li>In AppsFlyer, in the Apple Ads integration tab, turn on **Activate partner.**</li><li>Select the agency, in the Agency permissions tab, turn on **Agency Permission.**</li></ol> | <ol><li>In the Apple Ads integration tab, turn on **Activate partner.**</li><li>In the Apple Ads dashboard get the marketing partner's **Campaign Group ID.**</li><li>In the marketing partner's integration tab:<ol><li>Turn on **Activate partner.**</li><li>Set Campaign Group.</li><li>Configure in-app events postback.</li></ol></li></ol> |
-| Agency | In the Apple Ads integration tab, set **Apple Ads Campaign Group.** | <ol><li>In the Apple Ads integration tab, turn on **Activate partner.**</li><li>In the Apple Ads dashboard get the marketing partner's **Campaign Group ID.**</li><li>In the marketing partner's integration tab:<ol><li>Turn on **Activate partner.**</li><li>Set Campaign Group.</li><li>Configure in-app events postback.</li></ol></li></ol> |
+| AppsFlyer | <ol><li>En AppsFlyer, en la pestaña de integración de Apple Ads, activa **Activar partner.**</li><li>Selecciona la agencia; en la pestaña de permisos de la agencia, activa **Agency Permission.**</li></ol> | <ol><li>En la pestaña de integración de Apple Ads, activa **Activar partner.**</li><li>En el dashboard de Apple Ads, obtén el **ID del grupo de campaña** del partner de marketing.</li><li>En la pestaña integración del partner de marketing:<ol><li>Activa **Activar partner.**</li><li>Configura el grupo de campañas.</li><li>Configura los postbacks de eventos in-app.</li></ol></li></ol> |
+| Agencia | En la pestaña de integración de Apple Ads, configura **Grupo de campaña de Apple Ads.** | <ol><li>En la pestaña de integración de Apple Ads, activa **Activar partner.**</li><li>En el dashboard de Apple Ads, obtén el **ID del grupo de campaña** del partner de marketing.</li><li>En la pestaña integración del partner de marketing:<ol><li>Activa **Activar partner.**</li><li>Configura el grupo de campañas.</li><li>Configura los postbacks de eventos in-app.</li></ol></li></ol> |
 
 </Accordion>
 
-<Accordion title="Marketing partner setup">
+<Accordion title="Configuración de partners de marketing">
 
-**To set up a marketing partner:**
+**Para configurar un partner de marketing:**
 
-1. If required, activate **Apple Ads integration:**
-   1. In AppsFlyer, go to **Configuration**> **Active integration partners** > **Apple Ads**.
-   2. Turn on **Activate Partner**.
-   3. Click **Save.**
-2. **In your Apple Ads dashboard**: Get the Apple Ads Campaign Group ID parameter related to the marketing partner. Use the screenshot that follows as a guide to locating the ID.
+1. Si es necesario, activa la **integración de Apple Search Ads:**
+   1. En AppsFlyer, ve a **Configuración** > **Partners de integración activos** > **Apple Ads**.
+   2. Activa **Activar partner.**
+   3. Haz clic en **Guardar**.
+2. **En tu dashboard de Apple Ads,** obtén el parámetro ID del grupo de campaña de Apple Ads relacionado con el partner de marketing. Utiliza la captura de pantalla a seguie como guía para localizar el ID.
 
-   ![ASACGroupID.png](https://files.readme.io/843f5e6b35470cddd6e502d50554b49b258f0d9f7952dced511aea73f471694e-31197514608145.png)
-3. **In AppsFlyer, configure the Apple Ads marketing partner:**
-   1. In AppsFlyer, from the side menu, select **Collaboration** > **Active integrations.**
-   2. Search for the **Apple Ads** ***marketing partner.***  
-      The list of marketing partners displays.
-   3. Select a marketing partner.
-   4. Turn on **Activate Partner**.
-   5. Enter the partner's **Apple Ads Campaign Group ID** that you retrieved in the earlier step. Enter the digits (numbers) only.
-   6. Click **Save**.
-4. [Optional] Configure in-app events postback:
-   1. Turn on **In-app events postback.**
-   2. Click **Add event** to add an SDK event to the list.
-   3. Complete the following parameters:
-      1. **SDK event name**: The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events. **Tip:** If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck.
-      2. **Send revenue:** Select one of the following: No values and no revenue, Values and no revenue, or Values and revenue.
-5. **Click Save integration**.
+   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+3. **En AppsFlyer, configura el partner de marketing de Apple Ads:**
+   1. En **AppsFlyer**, desde el menú lateral, selecciona **Colaboración** > **Integraciones activas.**
+   2. Busca el ***partner de marketing de*** **Apple Search Ads**.  
+
+      Se muestra la lista de partners de marketing.
+   3. Selecciona un partner de marketing.
+   4. Activa **Activar partner.**
+   5. Introduce el **pple Search Ads Campaign Group ID** del partner que has conseguido en el paso anterior. Ingresa solo los dígitos (números).
+   6. Haz clic en **Guardar**.
+4. [Opcional] Configura los postbacks de eventos in-app:
+   1. Activa **Postback de evento in-app.**
+   2. Haz clic en **Añadir evento** para agregar un evento de SDK a la lista.
+   3. Completa los siguientes parámetros:
+      1. **Nombre del evento del SDK**: el nombre del evento tal como lo recibe AppsFlyer, ya sea desde el SDK integrado en tu aplicación o desde eventos de servidor a servidor. **Consejo:** Si no encuentras el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.
+      2. **Enviar ingresos:** Selecciona uno de los siguientes: Sin valores y sin ingresos, Con valores y sin ingresos o Con valores e ingresos.
+5. **Haz clic en Guardar integración**.
 
 </Accordion>
 
-<Accordion title="Agency setup">
+<Accordion title="Configuración de agencias">
 
-Advertisers permit agencies to run campaigns on their behalf using Apple Ads. Both advertisers and agencies perform setup actions in AppsFlyer as described in this section.
+Los anunciantes permiten que las agencias realicen campañas en su nombre utilizando Apple Search Ads. Tanto los anunciantes como las agencias realizan acciones de configuración en AppsFlyer como se describe en esta sección.
 
-**Prerequisites**
+**Requisitos previos**
 
-Before configuring an agency on AppsFlyer, both the agency and the advertiser must take the following steps on the Apple Ads platform:
+Antes de configurar una agencia en AppsFlyer, tanto la agencia como el anunciante deben seguir estos pasos en la plataforma Apple Ads:
 
-* **Agency:**
-  1. Create separate campaign groups within the agency account.
-  2. Invite the advertiser as a Campaign Group Manager or through the Link Accounts role to connect their App Store Connect account.
-* **Advertiser:** After receiving the invitation to link accounts, the advertiser must link the campaign groups to its App Store Connect account.
+* **Agencia:**
+  1. Crea grupos de campaña separados dentro de la cuenta de la agencia.
+  2. Invita al anunciante como Campaign Group Manager o a través del rol de Link Accounts para conectar su cuenta de App Store Connect.
+* **Anunciante:** Después de recibir la invitación para vincular cuentas, el anunciante debe vincular los grupos de campaña a su cuenta de App Store Connect.
 
-See Apple Ads documentation on <Anchor target="_blank" href="https://searchads.apple.com/help/get-started/0012-link-app-store-connect-accounts">How to link a client’s App Store Connect account to an agency account.</Anchor>
+Consulta la documentación de Apple Ads sobre <Anchor target="_blank" href="https://searchads.apple.com/help/get-started/0012-link-app-store-connect-accounts">Cómo vincular la cuenta de App Store Connect de un cliente a una cuenta de agencia.</Anchor>
 
-**Apple Ads campaign group**
+**Grupo de campañas de Apple Search Ads**
 
-* Agency campaigns and advertiser campaigns must be separate Apple Ads ID campaign groups.
-* Don't use special characters and spaces for the group name.
-* When you sign in with Apple, authorization of Apple Ads campaign groups isn't cumulative. This means that when you integrate a new app, the authorization for campaign groups chosen for the previous apps is revoked unless chosen again. You will need to select **Limited Access** and each of the relevant campaign groups (related to the apps you want to connect for the advertiser).
+* Las campañas de agencia y las campañas de anunciantes deben ser IDs de grupos de campaña de Apple Search Ads separados.
+* No uses caracteres especiales ni espacios para el nombre del grupo.
+* Cuando inicias sesión con Apple, la autorización de los grupos de campaña de Apple Ads no es acumulativa. Esto significa que al integrar una nueva aplicación, la autorización para los grupos de campaña elegidos para las aplicaciones anteriores se revoca a menos que se vuelva a elegir. Necesitarás seleccionar **Acceso limitado** y cada uno de los grupos de campaña relevantes (relacionados con las aplicaciones que deseas conectar para el anunciante).
 
-#### **Advertiser actions**
+#### **Acciones del anunciante**
 
-**Prerequisite**:
+**Requisito previo**:
 
-<Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">Grant permission to an agency</Anchor>.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">Conceder permiso a una agencia</Anchor>
 
-**To enable attribution of Apple Ads the advertiser:**
+**Para habilitar la Atribución de Apple Ads, el anunciante:**
 
-1. In AppsFlyer, from the side menu, select **Collaboration** > **Active integrations.**
-2. Select **Apple Ads.**
-3. Go to the **Integration** tab, switch on **Activate partner**.
-4. [Optional] If you want to attribute users who reinstall the app during the re-attribution window, switch on **Reinstall attribution.**
-5. Click **Save.**
+1. En **AppsFlyer**, desde el menú lateral, selecciona **Colaboración** > **Integraciones activas.**
+2. Selecciona **Apple Search Ads.**
+3. Ve a la pestaña **Integración**, activa **Activar partner**.
+4. [Opcional] Si deseas atribuir a los usuarios que reinstalan la aplicación durante la ventana de reatribución, activa **Atribución de reinstalaciones**
+5. Haz clic en **Guardar**.
 
-#### **Agency actions**
+#### **Acciones de la agencia**
 
-1. **In your Apple Ads dashboard**: Get your Campaign Group ID. Use the screenshot that follows as a guide to locating the ID. Get only the digits.
+1. **En tu dashboard de Apple Ads,** obtén tu ID de grupo de campaña. Utiliza la captura de pantalla a seguie como guía para localizar el ID. Obtén solo los dígitos.
 
-   ![ASACGroupID.png](https://files.readme.io/843f5e6b35470cddd6e502d50554b49b258f0d9f7952dced511aea73f471694e-31197514608145.png)
-2. In AppsFlyer, select an App.
-3. From the side menu, select **Collaboration** > **Active integrations**.
-4. Select **Apple Ads.**
-5. Enter the **Apple Ads Campaign ID** parameter. Note! Enter digits (numbers only)
-6. Click **Save**.
+   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+2. En AppsFlyer, selecciona una aplicación.
+3. Desde el menú lateral, selecciona **Colaboración** > **Integraciones activas**.
+4. Selecciona **Apple Search Ads.**
+5. Ingresa el parámetro del **ID de campaña de Apple Search Ads**. ¡Atención! ¡Nota! Ingresa solo dígitos (solo números)
+6. Haz clic en **Guardar**.
 
 > 📘 **Note**
 >
-> When an agency works with an Apple Ads Marketing Partner, the agency must configure the same campaign group ID in both the Apple Ads configuration page and the Marketing Partner configuration page.
+> Cuando una agencia trabaja con un partner de marketing de Apple Ads, debe configurar el mismo ID de grupo de campaña tanto en la página de configuración de Apple Ads como en la página de configuración del partner de marketing.
 
-### Cost, clicks, and impressions data
+### Datos de impresiones, clics y costos
 
-If you enable cost API, AppsFlyer receives cost, clicks, and impression data from Apple Ads via API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription. Without ROI360, only click and impression data is received.
+Si habilitas la API de costos, AppsFlyer recibe datos de costo, clics e impresiones de Apple Ads a través de la API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de la ad network</Anchor> para obtener detalles completos sobre las dimensiones, métricas y funciones admitidas. **Nota**: Los datos de costos requieren una suscripción a ROI360. Sin ROI360, solo se reciben datos de clics e impresiones.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>. Make sure that when prompted to log into your Apple Ads account in **Select permissions**, select one of the following:
-  * **Account Read and Write**
-  * **Account Read Only**  
-    **Note**: If you choose Limited Access and a specific campaign group, you may encounter data errors.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>. Asegúrate de que, cuando se te pida iniciar sesión en tu cuenta de Apple Ads en **Select permissions**, selecciones una de las siguientes opciones:
+  * **Lectura y escritura de la cuenta**
+  * **Cuenta Solo Lectura**  
+     **Nota**: Si eliges Acceso Limitado y un grupo de campaña específico, puedes encontrar errores de datos.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Consulta el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer datos de costo coincidentes, ya sea en el Dashboard de estado de la integración de costos (e ingresos por publicidad) o en el Dashboard individual de la ad network.
 
 > 📘 **Note**
 >
-> Apple Ads cost data isn’t available in the SKAdNetwork (SKAN) dashboard or SKAN Pull API because SKAN postbacks don’t include campaign-level data. However, cost data is available in SSOT reports, which combine SKAN install data with cost information retrieved via our classic Apple Ads integration.
+> Los datos de costo de Apple Ads no están disponibles en el Dashboard de SKAdNetwork (SKAN) ni en la Pull API de SKAN porque los postbacks de SKAN no incluyen datos a nivel de campaña. Sin embargo, los datos de costos están disponibles en los reportes de SSOT, que combinan los datos de instalación de SKAN con la información de costos recuperada a través de nuestra integración clásica de Apple Search Ads.
 
 </Accordion>
 
-<Accordion title="Disable agencies and marketing partners">
+<Accordion title="Desactivación de agencias y partners de marketing">
 
-**To stop recording attribution of Apple Ads installs generated by agencies or marketing partners:**
+**Para dejar de registrar la atribución de las instalaciones de Apple Search Ads generadas por agencias o partners de marketing:**
 
-1. In AppsFlyer, from the side menu, select **Collaboration** > **Active integrations.**
-2. Select the agency or marketing partner as the case may be.
-3. Delete the content of the **Apple Ads Campaign Group ID field.**
-4. Click **Save integration.**
+1. En **AppsFlyer**, desde el menú lateral, selecciona **Colaboración** > **Integraciones activas.**
+2. Selecciona la agencia o el partner de marketing según sea el caso.
+3. Elimina el contenido del **campo Apple Search Ads Campaign Group ID.**
+4. Haz clic en **Guardar integración.** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
-<Accordion title="Apple Ads attribution">
+<Accordion title="Atribución de Apple Ads">
 
-Apple Ads functions independently of SKAdNetwork and deterministically attributes users, regardless of ATT (App Tracking Transparency) consent. This means that for users attributed to Apple Ads, you have the full range of features and measurements provided by our <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">LTV attribution model.</Anchor>
+Apple Ads funciona independientemente de SKAdNetwork y atribuye a los usuarios de forma determinística, independientemente del consentimiento de ATT (App Tracking Transparency). Esto significa que, para los usuarios atribuidos a Apple Ads, tienes toda la gama de funciones y mediciones que proporciona nuestro <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">modelo de atribución de LTV.</Anchor>
 
-Apple Ads attribution doesn't rely on IDFA, attribution is done using a token from the device (deterministic attribution).
+La atribución de Apple Ads no depende del IDFA; la atribución se realiza mediante un token del dispositivo (atribución determinista).
 
-#### After September 1, 2026
+#### Después del 1 de septiembre de 2026
 
-Click and impression time is available regardless of ATT status. The lookback window is set by the advertiser, and AppsFlyer applies its last-touch attribution rules to the engagement.
+La hora del clic y de la impresión está disponible independientemente del estado de ATT. La ventana de lookback la define el anunciante y AppsFlyer aplica sus reglas de atribución de último toque al engagement.
 
-#### Before September 1, 2026
+#### Antes del 1 de septiembre de 2026
 
-Click and impression time availability and the lookback window differ according to ATT consent:
+La disponibilidad de la hora del clic y de la impresión, así como la ventana de lookback, varían según el consentimiento de ATT:
 
-| **ATT consent** | **Click/impression time available** | **Click/Impression lookback window** | **Remarks** |
+| **Consentimiento de la ATT** | **Tiempo de clic/impresión disponible** | **Ventana de lookback de clics/impresiones** | **Observaciones** |
 | --- | --- | --- | --- |
-| Yes | Yes | Set by the advertiser | AppsFlyer last-touch attribution rules used |
-| No | No | Clicks: 30 days (set by Apple Ads), Impressions: 24h | No click or impression time is provided. Priority is given to deterministic candidates |
+| Sí | Sí | Establecido por el anunciante | Reglas de atribución de último toque de AppsFlyer utilizadas |
+| No | No | Clics: 30 días (definidos por Apple Ads), Impresiones: 24 h | No se proporciona tiempo de clic o impresión. Se da prioridad a los candidatos deterministas |
 
 </Accordion>
 
-<Accordion title="Discrepancies">
+<Accordion title="Discrepancias">
 
-AppsFlyer and Apple Ads use different attribution logic resulting in discrepancies between the platforms. <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#attribution">Apple Ads</Anchor>, an SRN, reports new installs by API.
+AppsFlyer y Apple Ads usan una lógica de atribución diferente, lo que genera discrepancias entre las plataformas. <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#atribución">Apple Search Ads</Anchor>, una SRN, reporta las instalaciones nuevas por API.
 
-**Apple Ads reporting to AppsFlyer by API**
+**Apple Ads reporta a AppsFlyer por API**
 
-* Campaigns are aggregated by Geo.
-* The following are not reported: Impressions, taps, or cost of Geos having less than 100 impressions for a given campaign.
-* When grouping by Geo in AppsFlyer, Geos with unavailable data are not shown, and the total of unavailable data appears under N/A.
+* Las campañas se agregan por geolocalización.
+* Lo siguiente no se informa: Impresiones, toques o costo de geos con menos de 100 impresiones para una campaña dada.
+* Al agrupar por geolocalización en AppsFlyer, las geolocalizaciones con datos no disponibles no se muestran y el total de datos no disponibles aparece como N/A.
 
-### Retargeting related discrepancies
+### Discrepancias relacionadas con el retargeting
 
-The AppsFlyer retargeting attribution mechanism allows advertisers to measure and analyze retargeting campaigns, in addition to user acquisition campaigns.
+El mecanismo de atribución de retargeting de AppsFlyer permite a los anunciantes medir y analizar campañas de retargeting, además de las campañas de adquisición de usuarios.
 
-The figures that follow show how discrepancies can occur in relation to retargeting campaigns (irrespective of the retargeting controls setting) running on Apple Ads.
+Las cifras que aparecen a continuación muestran cómo pueden producirse discrepancias en relación con las campañas de retargeting (independientemente de la configuración de los controles de retargeting) que se ejecutan en Apple Ads.
 
-**Retargeting on**
+**Retargeting activado**
 
  ![ASA R Enabled2.jpg](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg) 
 
-**Retargeting off**
+**Retargeting desactivado**
 
  ![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png) 
 
-### Additional reasons for discrepancies
+### Razones adicionales para discrepancias
 
-The table that follows lists the main reasons for discrepancies.
+En la siguiente tabla se enumeran las principales razones.
 
-| Discrepancy | Apple Ads | AppsFlyer |
+| Discrepancia | Apple Search Ads | AppsFlyer |
 | --- | --- | --- |
-| <span id="differences-related-to-appsflyer-sdk-versions"></span>Differences related to AppsFlyer SDK versions | Counts conversions irrespective of the AppsFlyer SDK version. | For AdsServices, SDK V6.1.3+ is required to attribute correctly. |
-| <span id="limit-ad-tracking-lat-and-att"></span>Limit ad tracking (LAT) and ATT. | Always counts the conversion.<br /><br />If your campaign is limited by age and gender LAT users are excluded from the campaign.<br /><br />Apple users younger than 18 are always LAT. | LAT conversions are attributed to organic.<br /><br />If AdServices is implemented and iOS14.3+ is installed, then non-consented users are attributed correctly. |
-| <span id="counting-users"></span>Counting users | Counts users based on downloads | Counts users based on first app open |
-| <span id="reinstall-a-user-after-installing-the-app-deletes-it-clicks-on-a-search-ad-then-installs-the-app-again"></span>Reinstall: A user, after installing the app, deletes it, clicks on an Apple Ad, then installs the app again | Counts as a conversion (install) | <ul><li>With IDFA: AppsFlyer identifies the reinstall and does not count it for UA purposes. Tip! Enable retargeting and the reinstall is recorded as a retargeting install (AKA re-attribution)</li><li>Without IDFA: AppsFlyer can rely on IDFV to determine whether this is a re-install or a new install:<ol><li>If one or more other apps of the vendor are installed on the device, AppsFlyer attributes Apple Ads with a re-attribution.</li><li>Otherwise (no other app exists), AppsFlyer attributes Apple Ads with a new install.</li></ol></li></ul> |
-| <span id="click-lookback-window"></span>Click lookback window | Fixed 30-day window | For responses from AdServices that don't have a click time, the click lookback window is fixed to a 30-day window. |
-| <span id="impression-lookback-window"></span>Impression lookback window | Fixed 24-hour window | For responses from AdServices that don't have an impression time, the impression lookback window is fixed to a 24-hour window. |
-| <span id="preregistration-click-and-impression-lookback-window-discrepancy"></span>Pre-registration click and impression lookback window discrepancy |  | For responses from AdServices that don't have a click or impression time, the click or impression lookback window is fixed.<ul><li>**Click**: 90 days</li><li>**Impression**: 61 days</li></ul> |
-| <span id="winning-click"></span>Winning click | Always attributes to itself if the user engaged and downloaded the app. | Has visibility across multiple networks, and attribute according to last-click methodology |
-| <span id="install-time"></span>Install time | App download time | First app open |
-| <span id="time-zone"></span>Timezone | App store local timezone | UTC timezone or as set in AppsFlyer settings |
-| <span id="conversion-data"></span>Conversion data | It can take more than 5 seconds for AppsFlyer to be updated that Apple Ads brought the install | Attributes within 5 seconds at which time the Conversion data API responds. If no data has been received then the response is organic. |
-| <span id="cost-data"></span>Cost data | Reports cost for all keywords | Doesn't report cost data for keywords containing uppercase letters in the cohort dashboard or cohort API. |
-| <span id="geo-locations"></span>Geo locations | Apple Ads allows advertisers to target users according to their country and region. Apple Ads supports a limited number of [**countries**](https://searchads.apple.com/storefronts/). | AppsFlyer recognizes the exact geographic location of the user based on the IP address, and so reports on Geos not available on Apple Ads.<br /><br />Tip! Users that install while being in the actual country of the app store have the same Geo data in AppsFlyer and Apple Ads |
-| <span id="missing-conversion-payload-for-gender-and-age-targeted-users"></span>Missing conversion payload for gender or age targeted users (applies as of September 1, 2026) | May count these conversions in Apple Ads reporting, even though Apple does not provide an attribution claim for this cohort. | Ad groups with age or gender targeting return an attribution payload of false, so these users are not attributed to Apple Ads in AppsFlyer. This can cause Apple Ads to report more conversions than AppsFlyer for the affected ad groups. |
+| <span id="differences-related-to-appsflyer-sdk-versions"></span>Diferencias relacionadas con las versiones del SDK de AppsFlyer. | Cuenta las conversiones independientemente de la versión del SDK de AppsFlyer. | Para AdsServices, se requiere el SDK V6.1.3+ para atribuir correctamente. |
+| <span id="limit-ad-tracking-lat-and-att"></span>Limit ad tracking (LAT) y ATT. | Siempre cuenta la conversión.<br /><br />Si tu campaña está limitada por la edad y el sexo, los usuarios de LAT quedan excluidos.<br /><br />Los usuarios de Apple menores de 18 años son siempre LAT. | Las conversiones de LAT se atribuyen a orgánico.<br /><br />Si AdServices está implementado e iOS 14.3+ está instalado, los usuarios sin consentimiento se atribuyen correctamente. |
+| <span id="counting-users"></span>Recuento de usuarios | Cuenta los usuarios en función de las descargas. | Cuenta los usuarios en función de la primera apertura de la aplicación. |
+| <span id="reinstall-a-user-after-installing-the-app-deletes-it-clicks-on-a-search-ad-then-installs-the-app-again"></span>Reinstalación: Un usuario después de instalar la aplicación, la elimina, hace clic en un anuncio de Apple Search Ads y vuelve a instalar la aplicación. | Cuenta como conversión (instalación). | <ul><li>With IDFA: AppsFlyer identifica la reinstalación y no la contabiliza a efectos de UA. Consejo: ¡Consejo! Habilita el retargeting y la reinstalación se registrará como una instalación de retargeting (es decir, una reatribución).</li><li>Sin IDFA: AppsFlyer puede confiar en el IDFV para determinar si se trata de una reinstalación o de una nueva instalación:<ol><li>Si una o varias aplicaciones de otro proveedor están instaladas en el dispositivo, AppsFlyer atribuye Apple Ads como una reatribución.</li><li>De lo contrario (si no existe ninguna otra aplicación), AppsFlyer atribuye la instalación a Apple Ads.</li></ol></li></ul> |
+| <span id="click-lookback-window"></span>Ventana de lookback de clics | Ventana fija de 30 días | Para las respuestas de AdServices que no tienen tiempo de clic, la ventana de lookback de clics se fija en una ventana de 30 días. |
+| <span id="impression-lookback-window"></span>Ventana de lookback de impresiones | Ventana fija de 24 horas | Para las respuestas de AdServices que no tienen un tiempo de impresión, la ventana de lookback de impresiones se fija a una ventana de 24 horas. |
+| <span id="preregistration-click-and-impression-lookback-window-discrepancy"></span>Discrepancia entre las ventanas de lookback de clics e impresiones de preinscripción |  | Para las respuestas de AdServices que no tienen hora de clic ni de impresión, la ventana de lookback de clics o impresiones es fija.<ul><li>**Clic**: 90 días</li><li>**Impresión**: 61 días</li></ul> |
+| <span id="winning-click"></span>Clic ganador | Siempre se atribuye a sí mismo si el usuario se involucró y descargó la aplicación. | Tiene visibilidad en varias redes y atribuye según la metodología del último clic |
+| <span id="install-time"></span>Hora de instalación | Tiempo de descarga de la aplicación | Primera apertura de la aplicación |
+| <span id="time-zone"></span>Zona horaria | Zona horaria local de la App Store | Zona horaria UTC o según lo ajustado en la configuración de AppsFlyer |
+| <span id="conversion-data"></span>Datos de conversión | Puede tomar más de 5 segundos hasta que se actualiza a AppsFlyer de que Search Ads trajo la instalación. | Se atribuye dentro de los 5 segundos después de que la API de datos de conversión responde. Si no se ha recibido ningún dato, la respuesta es orgánica. |
+| <span id="cost-data"></span>Datos de costo | Reporta el costo para todas las palabras clave | No reporta los datos de costos de las palabras clave que contienen letras mayúsculas en el dashboard de cohorte o la API de cohorte. |
+| <span id="geo-locations"></span>Geolocalizaciones | Apple Search Ads permite a los anunciantes apuntar a los usuarios según su país y región. Apple Ads admite un número limitado de [**países**](https://searchads.apple.com/storefronts/). | AppsFlyer reconoce la ubicación geográfica exacta del usuario en función de la dirección IP, por lo que reporta sobre geolocalizaciones no disponibles en Apple Search Ads.<br /><br />Consejo: ¡Consejo! Los usuarios que instalan mientras se encuentran en el país de la tienda de aplicaciones tienen los mismos datos de geolocalización en AppsFlyer y Apple Search Ads. |
+| <span id="missing-conversion-payload-for-gender-and-age-targeted-users"></span>Falta la carga útil de conversión para usuarios segmentados por sexo o edad (se aplica a partir del 1 de septiembre de 2026) | Apple Ads puede contabilizar estas conversiones en el reporte de Apple Ads, aunque Apple no proporciona una reclamación de atribución para esta cohorte. | Los grupos de anuncios con targeting por edad o sexo devuelven una carga útil de atribución con valor false, por lo que estos usuarios no se atribuyen a Apple Ads en AppsFlyer. Esto puede hacer que Apple Ads reporte más conversiones que AppsFlyer en los grupos de anuncios afectados. |
 
 </Accordion>
 
-<Accordion title="Tips">
+<Accordion title="Consejos">
 
-Working with Apple Ads enables you to collect valuable marketing data, which can impact your user acquisition efforts with all media sources for your iOS apps.
+Trabajar con Apple Search Ads te permite recopilar valiosos datos de marketing, que pueden afectar tus esfuerzos de adquisición de usuarios con todas las fuentes de medios para tus aplicaciones iOS.
 
-Tips to help you maximize the benefits of using Apple Ads:
+Consejos para ayudarte a maximizar los beneficios de usar Apple Search Ads:
 
-| Tip | Details |
+| Consejo | Detalles |
 | --- | --- |
-| <span id="get-keyword-data"></span>Get keyword data | Apple Ads shares keyword data with AppsFlyer. You can view the keyword data in raw data and analytics tools like Pivot, Retention, and Cohort.<br /><br />**Note:**<ul><li>Obtaining keyword data may be delayed for 8-12 hours, and in some cases, may only include the keyword ID without the keyword term</li><li>To obtain keyword data, the Cost toggle must be turned on. Keyword data is provided as part of the [Cost integration](/docs/apple-ads-integration-setup#cost-tab), without the need for an ROI360 subscription.</li></ul>If keyword data is missing in AppsFlyer, this can be caused by:<ul><li>**Package type:** Keyword data is shared by Apple Ads with advertisers, that have the Apple Ads [advanced](https://searchads.apple.com/advanced/) package.</li><li>**Campaign type:** You can configure different campaign keyword matching types in Apple Ads. Based on match type, Apple Ads shares the keywords as follows:<ul><li>**Exact match**: The exact keywords searched for by the user</li><li>**Broad match**: The keywords Apple used to perform the search. These are similar to the user's actual search terms.</li><li>**Search match**: Apple does **not** share these keywords with advertisers.</li></ul></li></ul>**Use only exact or broad match** search campaigns to receive complete keyword data. |
-| <span id="compare-the-quality-of-users-based-on-keyword-data"></span>Compare the quality of users based on keyword data | Not all keywords are equal meaning that while different keywords may cost the same the quality of users attracted could be different. Use the Retention or <Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot</Anchor> reports to identify the keywords that maximize your ROI. |
-| <span id="analyze-keyword-cost"></span>Analyze keyword cost | The platform contains aggregate keyword cost data when Apple Ads keyword campaigns are configured as an [exact match or broad match](/docs/apple-ads-integration-setup#get-keyword-data). Keyword cost data has the following characteristics:<ul><li>Historical data is available starting October 13, 2019.</li><li>Dimensions:<ul><li>Date</li><li>Campaign</li><li>Adset</li></ul></li><li>Analysis tools:<ul><li><Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor></li></ul></li></ul>**Limitations**<ul><li>Only use the noted dimensions to filter and group cost data queries. For example, don't filter or group using Geo.</li></ul>**<span id="h_01M0YZYCC5S0E3HA296KAA0SDZ"></span>Examples**<br /><br />**<span id="cohort-example"></span>Cohort Example**<br /><br />The following example displays how to set up Cohort to view cost and ROI information.<br /><br />**Cohort setup**<br /><br /><Image alt="CohortRequest.png" src="https://files.readme.io/73004ab25cfff029786ec4601e22a0ac4b02a146141787b51bda1a02d5412330-31197524095377.png" width="327px" /><br /><br />**Cohort result table**<br /><br />In the table that follows, the total cost and Cohort ROI is displayed<br /><br /><Image alt="CohortTable.png" src="https://files.readme.io/ebceedb82207bdbc7f58daafc0557630ac35a73a11b14d207a7283b93294073d-31197514633233.png" width="429px" /><br /><br />**<span id="pivot-example"></span>Pivot example**<br /><br />**Pivot setup**<br /><br /><Image alt="Pivot_define.png" src="https://files.readme.io/29ad177a5ef681f8358968092005d8ba871f3dd06661a8dea6d186318c08a476-31197524107153.png" width="413px" /><br /><br />**Pivot result table**<br /><br /><Image alt="Pivot.png" src="https://files.readme.io/ef9766de2059d0608e8ae6dc063053f2926ffa296e7eca2e13a1bc4171921d2c-31197524111505.png" width="439px" /> |
-| <span id="find-the-best-performing-creative-set"></span>Find the best performing creative set | ![creative_sets.png](https://files.readme.io/ef8e38d67121283742dcbd1faef11d94a8ea1c612dc258611e72cbf826d7ef8f-31197524112785.png)<br /><br />It's good practice to test how leads respond to different creative sets you use. The best-performing creative sets have the highest conversion rates. In addition, the best creative sets convert users with a higher level of engagement.<br /><br />This impacts all your iOS leads, not only Apple Ads leads, for they all reach your app page in the app store. However, with Apple Ads installs, AppsFlyer indicates the creative set ID in the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data</Anchor> **Ad ID** parameter, enabling you to compare the performance of different creative sets. |
-| <span id="target-redownloaders"></span>Target re-downloaders | Your past users are possibly the best audience for you to target using Apple Ads.<br /><br />A user, who uninstalled your app, and as a result of your Apple Ads retargeting campaign installs again, is called a Re-Downloader by Apple Ads. If the re-install is performed during the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">re-attribution window</Anchor>, AppsFlyer calls this a Re-Attribution. In all other cases, it is treated as a new install.<br /><br />![ASACGroupID.png](https://files.readme.io/ebdc380f2abc3e9a3b134cd258d90ae32f75b3ee4d9eadde39adbc728daae523-31197514645265.png) |
+| <span id="get-keyword-data"></span>Obtener datos de palabras clave | Apple Search Ads comparte datos de palabras clave con AppsFlyer. Puedes ver los datos de palabras clave en las herramientas de raw data y de análisis como las de Pivot, Retención y Cohorte.<br /><br />**Nota:**<ul><li>Obtener datos de palabras clave puede retrasarse entre 8 y 12 horas y, en algunos casos, pueden incluir solo el ID de palabra clave sin el término de la palabra clave.</li><li>Para obtener datos de palabras clave, el selector de costo debe estar activado. Los datos de palabras clave se proporcionan como parte de la [integración de costos](/docs/apple-ads-integration-setup#cost-tab), sin la necesidad de una suscripción a ROI360.</li></ul>Si faltan datos de palabras clave en AppsFlyer, esto puede deberse a lo siguiente:<ul><li>**Tipo de paquete:** Apple Ads comparte los datos de palabras clave con los anunciantes que tienen el paquete [avanzado](https://searchads.apple.com/advanced/) de Apple Ads.</li><li>**Tipo de campaña** Puedes configurar diferentes tipos de coincidencia de palabras clave de campaña en Apple Search Ads. Según el tipo de coincidencia, Apple Search Ads comparte las palabras clave de la siguiente manera:<ul><li>**Coincidencia exacta**: Las palabras clave exactas buscadas por el usuario</li><li>**Amplia coincidencia**: Las palabras clave que Apple utilizó para realizar la búsqueda. Estas son similares a los términos de búsqueda reales del usuario.</li><li>**Coincidencia de búsqueda**: Apple **no** comparte estas palabras clave con los anunciantes.</li></ul></li></ul>Usa solo campañas de búsqueda de **coincidencias exactas o amplias** para recibir datos completos de palabras clave. |
+| <span id="compare-the-quality-of-users-based-on-keyword-data"></span>Comparar la calidad de los usuarios en función de los datos de palabras clave | No todas las palabras clave son iguales, lo que significa que, aunque diferentes palabras clave puedan costar lo mismo, la calidad de los usuarios atraídos podría ser distinta. Utiliza los reportes de retención o <Anchor target="_blank" href="/marketers/es/docs/pivot-table-user-metrics">pivot</Anchor> para identificar las palabras clave que maximizan tu ROI. |
+| <span id="analyze-keyword-cost"></span>Analizar el costo de las palabra clave | La plataforma contiene datos agregados de costos de palabras clave cuando las campañas de palabras clave de Apple Ads se configuran como una [coincidencia exacta o una coincidencia amplia](/docs/apple-ads-integration-setup#get-keyword-data). Los datos de costos de palabras clave tienen las siguientes características:<ul><li>Los datos históricos están disponibles desde el 13 de octubre de 2019.</li><li>Dimensiones:<ul><li>Fecha</li><li>Campaña</li><li>Conjunto de anuncios</li></ul></li><li>Herramientas de análisis:<ul><li><Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard">Cohorte</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/pivot-table-user-metrics">Pivot</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/master-api-user-acquisition-metrics-via-api">API maestra</Anchor></li></ul></li></ul>**Limitaciones**<ul><li>Usa solo las dimensiones indicadas para filtrar y agrupar consultas de datos de costos. Por ejemplo, no filtres ni agrupes usando la geolocalización.</li></ul>**<span id="h_01M0YZYCC5S0E3HA296KAA0SDZ"></span>Ejemplos**<br /><br />**<span id="cohort-example"></span>Ejemplo de cohorte**<br /><br />El siguiente ejemplo muestra cómo configurar la Cohorte para ver los costos y la información de ROI.<br /><br />**Configuración de cohorte**<br /><br /><Image alt="CohortRequest.png" src="https://files.readme.io/73004ab25cfff029786ec4601e22a0ac4b02a146141787b51bda1a02d5412330-31197524095377.png" width="327px" /><br /><br />**Tabla de resultados de cohorte**<br /><br />En la tabla a seguir, se muestra el costo total y el ROI de la cohorte:<br /><br /><Image alt="CohortTable.png" src="https://files.readme.io/ebceedb82207bdbc7f58daafc0557630ac35a73a11b14d207a7283b93294073d-31197514633233.png" width="429px" /><br /><br />**<span id="pivot-example"></span>Ejemplo de pivot**<br /><br />**Configuración de pivot**<br /><br /><Image alt="Pivot_define.png" src="https://files.readme.io/29ad177a5ef681f8358968092005d8ba871f3dd06661a8dea6d186318c08a476-31197524107153.png" width="413px" /><br /><br />**Tabla de resultados de pivote**<br /><br /><Image alt="Pivot.png" src="https://files.readme.io/ef9766de2059d0608e8ae6dc063053f2926ffa296e7eca2e13a1bc4171921d2c-31197524111505.png" width="439px" /> |
+| <span id="find-the-best-performing-creative-set"></span>Encontrar el conjunto creativo de mejor rendimiento | ![creative_sets.png](https://files.readme.io/ef8e38d67121283742dcbd1faef11d94a8ea1c612dc258611e72cbf826d7ef8f-31197524112785.png)<br /><br />Es una buena práctica probar cómo responden los usuarios potenciales a los diferentes conjuntos creativos que usas. Los conjuntos creativos de mejor rendimiento tienen las tasas de conversión más altas. Además, los mejores conjuntos creativos convierten a los usuarios con un mayor nivel de engagement.<br /><br />Esto afecta a todos tus usuarios potenciales de iOS, no solo a los de Apple Ads, ya que todos llegan a la página de tu aplicación en la tienda de aplicaciones. Sin embargo, con las instalaciones de Apple Ads, AppsFlyer indica el ID del conjunto creativo en el <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">raw data</Anchor> parámetro **Ad ID**, lo que te permite comparar el rendimiento de diferentes conjuntos creativos. |
+| <span id="target-redownloaders"></span>Apunta a los que han vuelto a descargar la app | Tus usuarios anteriores son posiblemente la mejor audiencia a la que puedes dirigirte con Apple Ads.<br /><br />Un usuario que desinstaló tu aplicación y, como resultado de tu campaña de retargeting de Apple Ads, la instala de nuevo, se denomina «re-downloader» en Apple Ads. Si la reinstalación se realiza durante la <Anchor target="_blank" href="/marketers/es/docs/set-up-re-attribution-window">ventana de reatribución</Anchor>, AppsFlyer lo denomina una reatribución. En todos los demás casos, se trata como una instalación nueva.<br /><br />![ASACGroupID.png](https://files.readme.io/ebdc380f2abc3e9a3b134cd258d90ae32f75b3ee4d9eadde39adbc728daae523-31197514645265.png) |
 
 </Accordion>
 
-<Accordion title="Apple Ads change log">
+<Accordion title="Registro de cambios de Apple Ads">
 
-| Effective date | Update/change |
+| Fecha de vigencia | Actualización/modificación |
 | --- | --- |
-| <span id="20260901"></span>2026-09-01 | As of September 1, 2026:<ul><li>Apple's AdServices API adds an engagement timestamp to all iOS attribution claims, regardless of ATT status. AppsFlyer uses this timestamp to apply the advertiser's configured lookback window and last-touch attribution rules to these claims.</li><li>For ad groups with age or gender targeting, Apple will return an attribution payload of false, meaning no SRN measurement can be applied for that targeted cohort.</li></ul>See Apple's AdServices developer documentation for details. |
-| <span id="20230207"></span>2023-02-07 | The enriched attribution parameters `Campaign name`, `Adset name`, and `Keywords` are available only when the Cost tab is enabled, irrespective of your subscription plan.  <br />**This means that for your dashboards and raw data reports to show campaign names, adset names, or keywords, you must have the Cost tab enabled.** |
-| <span id="20220216"></span>2022-02-16 | Keywords are available via Cost API. You must enable the API in the Apple Ads integration page. Note! The API is available to all advertisers irrespective of your subscription plan. |
-| <span id="20210407"></span>2021-04-07 | Apple Ads integration: Apple Ads functions independently of SKAdNetwork and deterministically attributes users. This means that for users attributed to Apple Ads you have the full range of features and measurements provided by our <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">LTV attribution model.</Anchor> |
-| <span id="20210307"></span>2021-03-07 | Apple Ads is rolling out Campaign Management API V4.0. The API relates to cost and other campaign-related data. It has no impact on attribution. We are in the process of adopting the updated API. No action is required from you. |
-| <span id="20210215"></span>2021-02-15 | Starting this date, the campaign name and adset name fields can be populated if you enable the Apple Ads [Cost API](/docs/apple-ads-integration-setup#cost-tab). The API is available to all advertisers irrespective of the subscription plan. |
+| <span id="20260901"></span>2026-09-01 | A partir del 1 de septiembre de 2026:<ul><li>La API AdServices de Apple añade una marca de tiempo de engagement a todas las atribuciones de iOS, independientemente del estado de ATT. AppsFlyer usa esta marca de tiempo para aplicar la ventana de lookback configurada por el anunciante y las reglas de atribución de último toque a estas atribuciones.</li><li>En los grupos de anuncios con targeting por edad o sexo, Apple devolverá una carga útil de atribución con valor false, lo que significa que no se puede aplicar ninguna medición de SRN a esa cohorte segmentada.</li></ul>Consulta la documentación para desarrolladores de AdServices de Apple para conocer más detalles. |
+| <span id="20230207"></span>07-02-2023 | Los parámetros de atribución enriquecidos `Nombre de la campaña`, `Nombre del conjunto de anuncios` y `Palabras clave` están disponibles solo cuando la pestaña de Costo está habilitada, independientemente de tu plan de suscripción.  <br />**Esto significa que para que tus dashboards y reportes de raw data muestren nombres de campañas, nombres de conjuntos de anuncios o palabras clave, debes tener habilitada la pestaña de Costo.** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla. |
+| <span id="20220216"></span>16-02-2022 | Las palabras clave están disponibles a través de la API de costos. Debes habilitar la API de costos en la página de integración de Apple Search Ads. ¡Atención! ¡Nota! La API está disponible para todos los anunciantes independientemente de tu plan de suscripción. |
+| <span id="20210407"></span>07-04-2021 | Integración de Apple Ads: Apple Ads funciona independientemente de SKAdNetwork y atribuye a los usuarios de forma determinista. Esto significa que, para los usuarios atribuidos a Apple Ads, tienes la gama completa de funciones y mediciones que proporciona nuestro <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">modelo de atribución de LTV.</Anchor> |
+| <span id="20210307"></span>07-03-2021 | Apple Search Ads está implementando la API V4.0 de gestión de campañas. La API se relaciona con el costo y otros datos relacionados con las campañas. No tiene impacto en la atribución. Estamos en el proceso de adoptar la API actualizada. No se requiere ninguna acción de tu parte. |
+| <span id="20210215"></span>15-02-2021 | A partir de esta fecha, los campos de nombre de campaña y nombre de conjunto de anuncios se pueden completar si habilitas la API de [Costo](/docs/apple-ads-integration-setup#cost-tab) de Apple Ads. La API está disponible para todos los anunciantes independientemente del plan de suscripción. |
 
-Apple Ads updates and changes
+Actualizaciones y cambios de Apple Ads
 
 </Accordion>
 
-<Accordion title="Availability of Apple Ads campaign parameters">
+<Accordion title="Disponibilidad de los parámetros de las campañas de Apple Search Ads">
 
-The table below shows the availability of attribution parameters in raw data reports or on the dashboard.
+La siguiente tabla muestra la disponibilidad de los parámetros de atribución en los reportes de raw data o en el dashboard.
 
-| Raw data report parameter | Availability |
+| Parámetro del reporte de raw data | Disponibilidad |
 | --- | --- |
-| Campaign name | For this parameter to be available, you must enable the [Cost](/docs/apple-ads-integration-setup#cost-tab) API on the Apple Ads integration page. The API is available to all advertisers, irrespective of their subscription plan |
-| Campaign ID | Always available |
-| Adset name | For this parameter to be available, you must enable the [Cost](/docs/apple-ads-integration-setup#cost-tab) API on the Apple Ads integration page. The API is available to all advertisers, irrespective of their subscription plan |
-| Adset ID | Always available |
-| Ad | Currently unavailable |
-| Ad ID | This parameter is only available when both of the following conditions are met:<ul><li>Users are on iOS 15.2 and later</li><li>The ad uses</li></ul>[VERIFY: link target] the original source markup carried a data-stringify-link of https://developer.apple.com/documentation/apple_search_ads/custom_product_pages while the actual href below points elsewhere; kept the live href since that is what is currently published, please confirm which is correct<br /><br /><Anchor target="_blank" href="https://developer.apple.com/app-store/product-page/">Custom Product Pages</Anchor> for campaigns that are associated with either of the following ad placements:<ul><li>`Today tab`</li><li>`Search results`</li></ul> |
-| Keywords | For this parameter to be available, you must enable the [Cost](/docs/apple-ads-integration-setup#cost-tab) API on the Apple Ads integration page. The API is available to all advertisers, irrespective of their subscription plan |
-| Keyword ID | This parameter is available via raw data reports. However, it must be explicitly selected in Data Locker, Push API, and Export data. In the case of Pull API, add `keyword_id` to the  `&additional_fields` parameter <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data#additional-fields">of the Pull API call</Anchor>. |
-| Keyword Match Type | Currently unavailable |
+| Nombre de la campaña | Para que este parámetro esté disponible, debes habilitar la API de [Costo](/docs/apple-ads-integration-setup#cost-tab) en la página de integración de Apple Ads. La API está disponible para todos los anunciantes, independientemente de su plan de suscripción. |
+| ID de campaña | Siempre disponible |
+| Nombre del conjunto de anuncios | Para que este parámetro esté disponible, debes habilitar la API de [Costo](/docs/apple-ads-integration-setup#cost-tab) en la página de integración de Apple Ads. La API está disponible para todos los anunciantes, independientemente de su plan de suscripción. |
+| ID del conjunto de anuncios | Siempre disponible |
+| Anuncio | Actualmente no disponible |
+| ID del anuncio | Este parámetro solo está disponible cuando se cumplen las dos condiciones a seguir:<ul><li>Los usuarios tienen iOS 15.2 o versiones posteriores</li><li>El anuncio usa</li></ul><Anchor target="_blank" href="https://developer.apple.com/app-store/product-page/">Páginas de productos personalizadas</Anchor> para campañas asociadas con cualquiera de las siguientes ubicaciones de anuncios:<ul><li>`Pestaña Hoy`</li><li>`Resultados de búsqueda`</li></ul> |
+| Palabras clave | Para que este parámetro esté disponible, debes habilitar la API de [Costo](/docs/apple-ads-integration-setup#cost-tab) en la página de integración de Apple Ads. La API está disponible para todos los anunciantes, independientemente de su plan de suscripción. |
+| ID de palabra clave | Este parámetro está disponible a través de los reportes de raw data. Sin embargo, debe seleccionarse explícitamente en Data Locker, Push API y Datos exportados. En el caso de la Pull API, agrega `keyword_id` al parámetro `&additional_fields` <Anchor target="_blank" href="/marketers/es/docs/pull-api-raw-data#additional-fields">en la llamada de la Pull API</Anchor>. |
+| Tipo de coincidencia de palabras clave | Actualmente no disponible |
 
 </Accordion>
 
-<Accordion title="Impact of Aggregated Advanced Privacy">
+<Accordion title="Impacto de la privacidad avanzada agregada">
 
-Starting in iOS 14, [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) (ATT) governs the availability of IDFA, and Apple Ads controls the user-level attribution data of installs brought by Apple Ads. As such, the user-level data availability of installs brought by Apple Ads is not affected by <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor>.
+A partir de iOS 14, [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) (ATT) regula la disponibilidad del IDFA, y Apple Ads controla los datos de atribución a nivel de usuario de las instalaciones generadas por Apple Ads. Por tanto, la disponibilidad de datos a nivel de usuario de las instalaciones generadas por Apple Ads no se ve afectada por <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad Avanzada Agregada</Anchor>.
 
-#### After September 1, 2026
+#### Después del 1 de septiembre de 2026
 
-| **ATT consent** | **Click/impression time available** | **Click/Impression lookback window** | **Remarks** | **Data availability** | **IDFA available** |
+| **Consentimiento de la ATT** | **Tiempo de clic/impresión disponible** | **Ventana de lookback de clics/impresiones** | **Observaciones** | **Disponibilidad de datos** | **IDFA disponible** |
 | --- | --- | --- | --- | --- | --- |
-| Consenting and non-consenting | Yes | Set by the advertiser | AppsFlyer last-touch attribution rules used | User-level attribution data | Yes for consenting, no for non-consenting |
+| Con consentimiento y sin consentimiento | Sí | Establecido por el anunciante | Reglas de atribución de último toque de AppsFlyer utilizadas | Datos de atribución a nivel usuario | Sí para quienes dan su consentimiento, no para quienes no lo dan |
 
-#### Before September 1, 2026
+#### Antes del 1 de septiembre de 2026
 
-Click/impression time availability, the lookback window, and data availability differed according to ATT consent:
+La disponibilidad del momento del clic/impresión, la ventana de lookback y la disponibilidad de datos variaban según el consentimiento de ATT:
 
-| **ATT consent** | **Click/impression time available** | **Click/Impression lookback window** | **Remarks** | **Data availability** | **IDFA available** |
+| **Consentimiento de la ATT** | **Tiempo de clic/impresión disponible** | **Ventana de lookback de clics/impresiones** | **Comentarios** | **Disponibilidad de datos** | **IDFA disponible** |
 | --- | --- | --- | --- | --- | --- |
-| Consenting | Yes | Set by the advertiser | AppsFlyer last-touch attribution rules used | User-level attribution data | Yes |
-| Non-consenting | No | Clicks: 30 days (set by Apple Ads), Impressions: 24 hours | Priority is given to deterministic candidates. | User-level attribution data without the click/impression time. | No |
+| Anunciante | Sí | Establecido por el anunciante | Reglas de atribución de último toque de AppsFlyer utilizadas | Datos de atribución a nivel usuario | Sí |
+| Sin consentimiento | No | Clics: 30 días (establecido por Apple Ads), impresiones: 24 horas | Se da prioridad a los candidatos deterministas. | Datos de atribución a nivel de usuario sin el tiempo de clic/impresión. | No |
 
 </Accordion>
 
-#### See also
+#### Consulta también
 
-* <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy framework</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">Lookback windows explained</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Framework de Privacidad Avanzada Agregada</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">Ventanas de lookback explicadas</Anchor>
 
-<div data-zendesk-anchors="set-up-asa-integration=set-up-apple-ads-integration h_01HDPCGMP2CY4B37VM3AT2P114=set-up-apple-ads-integration set-up-agencies-and-asa-marketing-partners=set-up-agencies-and-apple-ads-marketing-partners h_01HDPCGMP3D96BG496G7H97YWP=set-up-agencies-and-apple-ads-marketing-partners h_01HDPCGMP3YGJEA942DF2YC9P1=agency-vs-marketing-partner h_01HDPCGMP3NQQ76SC32SEC8TS4=configuring-agencies-and-marketing-partners h_01HDPCGMP39HE117X4MP25M77W=configuration-steps-checklist h_01HDPCGMP3S3PHHH3F6KZE3SEV=advertiser-actions h_01HDPCGMP3MK61YRMCQA2KA5X2=agency-actions h_01HDPCGMP3AVYYK2X03RF057FN=cost-clicks-and-impressions-data h_01HDPCGMP3BXVASH2YJ9G8AS2C=additional-information h_01M0YZYCC477D5MMBC6D5BD3MG=after-september-1-2026 h_01M0YZYCC4RRSRWBDAKN6ECV7N=before-september-1-2026 h_01HDPCGMP4Z9M3QR6QGRR7A8BM=retargeting-related-discrepancies h_01HDPCGMP4QJ3HYEP7EAYMHRQQ=additional-reasons-for-discrepancies h_01HDPCGMP4MF9FBP4WDRHVZ4BR=cohort-example h_01HDPCGMP4EFMZ4FHZ8WBWW9R2=pivot-example h_01M0YZYCC5H6FBKYNEHZA91BSZ=after-september-1-2026-1 h_01M0YZYCC5QK9A6T9KV2XDSK8P=before-september-1-2026-1 h_01M0YZYCC5V5N4Z3M3327W2XFT=see-also" />
+<div data-zendesk-anchors="set-up-asa-integration=configurar-la-integraci%C3%B3n-de-apple-ads h_01HDPCGMP2CY4B37VM3AT2P114=configurar-la-integraci%C3%B3n-de-apple-ads set-up-agencies-and-asa-marketing-partners=configurar-agencias-y-partners-de-marketing-de-apple-ads h_01HDPCGMP3D96BG496G7H97YWP=configurar-agencias-y-partners-de-marketing-de-apple-ads agency-vs-marketing-partner=agencia-vs-partner-de-marketing h_01HDPCGMP3YGJEA942DF2YC9P1=agencia-vs-partner-de-marketing configuring-agencies-and-marketing-partners=configuraci%C3%B3n-de-agencias-y-partners-de-marketing h_01HDPCGMP3NQQ76SC32SEC8TS4=configuraci%C3%B3n-de-agencias-y-partners-de-marketing configuration-steps-checklist=lista-de-verificaci%C3%B3n-de-pasos-de-configuraci%C3%B3n h_01HDPCGMP39HE117X4MP25M77W=lista-de-verificaci%C3%B3n-de-pasos-de-configuraci%C3%B3n advertiser-actions=acciones-del-anunciante h_01HDPCGMP3S3PHHH3F6KZE3SEV=acciones-del-anunciante agency-actions=acciones-de-la-agencia h_01HDPCGMP3MK61YRMCQA2KA5X2=acciones-de-la-agencia cost-clicks-and-impressions-data=datos-de-impresiones-clics-y-costos h_01HDPCGMP3AVYYK2X03RF057FN=datos-de-impresiones-clics-y-costos additional-information=informaci%C3%B3n-adicional h_01HDPCGMP3BXVASH2YJ9G8AS2C=informaci%C3%B3n-adicional h_01M0YZYCC477D5MMBC6D5BD3MG=despu%C3%A9s-del-1-de-septiembre-de-2026 h_01M0YZYCC4RRSRWBDAKN6ECV7N=antes-del-1-de-septiembre-de-2026 retargeting-related-discrepancies=discrepancias-relacionadas-con-el-retargeting h_01HDPCGMP4Z9M3QR6QGRR7A8BM=discrepancias-relacionadas-con-el-retargeting additional-reasons-for-discrepancies=razones-adicionales-para-discrepancias h_01HDPCGMP4QJ3HYEP7EAYMHRQQ=razones-adicionales-para-discrepancias h_01HDPCGMP4MF9FBP4WDRHVZ4BR=cohort-example h_01HDPCGMP4EFMZ4FHZ8WBWW9R2=pivot-example h_01M0YZYCC5H6FBKYNEHZA91BSZ=despu%C3%A9s-del-1-de-septiembre-de-2026-1 h_01M0YZYCC5QK9A6T9KV2XDSK8P=antes-del-1-de-septiembre-de-2026-1 h_01M0YZYCC5V5N4Z3M3327W2XFT=consulta-tambi%C3%A9n" />

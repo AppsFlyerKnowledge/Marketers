@@ -1,5 +1,5 @@
 ---
-title: Google Ads (AdWords)—Create web-based campaigns for mobile apps
+title: Google Ads (AdWords)—crea campañas web para aplicaciones móviles
 metadata:
   keywords:
     - Marketers
@@ -12,527 +12,526 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2024-05-16T09:12:15Z'
-  edited_at: '2026-10-12T09:30:39Z'
+  edited_at: '2026-10-14T03:09:29Z'
   id: 25096718837137
-  locale: en-us
+  locale: es
   section: Google Ads
   section_id: 6551205645457
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/25096718837137-Google-Ads-AdWords-Create-web-based-campaigns-for-mobile-apps
+  url: https://support.appsflyer.com/hc/es/articles/25096718837137
 ---
-> **At a glance:** Create web campaigns to attribute web-to-app conversions from Google Ads
+> **At a glance:** Crea campañas web para atribuir las conversiones de la web a la aplicación de Google Ads
 
 > 📘 **Note**
 >
-> This article focuses on web campaigns that promote mobile apps. If you want to create campaigns that promote PC or Console apps, see Google Ads Web—Integration for PC and console apps.
+> Este artículo se centra en campañas web que promueven aplicaciones móviles. Si deseas crear campañas que promuevan aplicaciones para PC o consola, consulta Google Ads Web—Integración para aplicaciones de PC y consola.
 
-## Overview
+## Descripción general
 
-AppsFlyer supports integration with Google Ads (`googleads_int`) for web-based campaigns and reports the campaigns' attribution and conversion data through the Google Offline Conversion API (OCI).
+AppsFlyer admite la integración con Google Ads (`googleads_int`) para campañas basadas en la web e informa de los datos de atribución y de conversión de las campañas a través de la API de conversiones offline de Google (OCI).
 
-In this article, you'll learn how to set up mobile web campaigns in AppsFlyer and Google Ads, targeting Web users who interact with Google ads.
+En este artículo, aprenderás cómo configurar campañas web móviles en AppsFlyer y Google Ads, dirigidas a los usuarios web que interactúan con los anuncios de Google.
 
-The campaigns are based on a user journey that starts when a user clicks on an ad and is redirected to a landing page. This page includes AppsFlyer Smart Script or Smart Banners, which create attribution links.
+Las campañas se basan en una trayectoria del usuario que comienza cuando un usuario hace clic en un anuncio y es redirigido a una landing page. Esta página incluye Smart Script o Smart Banners de AppsFlyer, que crean enlaces de atribución.
 
-Once clicked, these links take the user to the app store to download and install the app. The install and subsequent in-app events are recorded in AppsFlyer and reported to Google Ads via OCI.
+Una vez que se hace clic, estos enlaces llevan al usuario a la tienda de aplicaciones para descargar e instalar la aplicación. La instalación y los eventos in-app posteriores se registran en AppsFlyer y se reportan a Google Ads a través de OCI.
 
-Google uses this data to optimize ad targeting, measure performance, and build custom audiences.
+Google utiliza estos datos para optimizar la segmentación de anuncios, medir el rendimiento y crear audiencias personalizadas.
 
-### Prerequisite
+### Requisito previo
 
-Before activating the Google Ads integration for web campaigns, make sure you have the following:
+Antes de activar la integración de Google Ads para campañas web, asegúrate de tener lo siguiente:
 
-* A mobile app
-* An AppsFlyer account
-* AppsFlyer <Anchor target="_blank" href="/marketers/docs/user-management">users with appropriate roles or permissions</Anchor> and access to the relevant apps
+* Una aplicación móvil
+* Una cuenta de AppsFlyer
+* Usuarios de AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/user-management">con roles o permisos adecuados</Anchor> y acceso a las aplicaciones correspondientes
 
-### Create a Google Ads web campaign
+### Cómo crear una campaña web de Google Ads
 
-This article contains information and steps to set up a web campaign in Google Ads for Mobile, PC, and console apps with AppsFlyer. The setup involves defining the integration between Google Ads and AppsFlyer and setting the campaign attribution links.
+Este artículo contiene información y pasos para configurar una campaña web en Google Ads para aplicaciones móviles, de PC y consolas con AppsFlyer. La configuración implica definir la integración entre Google Ads y AppsFlyer, y establecer los enlaces de atribución de la campaña.
 
-* [Set up Google Ads integration in AppsFlyer](#create-a-google-ads-integration-in-appsflyer) (Required)
-* [Set up Google Ads integration in Google Ads](#create-a-web-campaign-in-google-ads) (Required)
+* [Configurar la integración de Google Ads en AppsFlyer](#crear-una-integración-de-google-ads-en-appsflyer) (obligatorio)
+* [Configurar la integración de Google Ads en Google Ads](#crear-una-campaña-web-en-google-ads) (obligatorio)
 
-After setting up the attribution links in step one through the Google Ads and AppsFlyer integration, step two focuses on creating the landing page. Here, OneLink Smart Script or Smart Banners will use the attribution links to generate call-to-action buttons, directing users to the app stores.
+Después de configurar los enlaces de atribución en el paso uno a través de la integración de Google Ads y AppsFlyer, el paso dos se centra en la creación de la landing page. Aquí, los Smart Script o Smart Banners de OneLink utilizarán los enlaces de atribución para generar botones de llamada a la acción, dirigiendo a los usuarios a las tiendas de aplicaciones.
 
-* [Create a landing page with OneLink Smart Script](#create-a-landing-page-with-onelink-smart-script) (Optional)
-* [Create a landing page with OneLink Smart Banners](#create-a-landing-page-with-onelink-smart-banners) (Optional)
+* [Crear una página de destino con OneLink Smart Script](#crear-una-landing-page-con-smart-script-de-onelink) (opcional)
+* [Crear una página de destino con OneLink Smart Banners](#crea-una-landing-page-con-smart-banners-de-onelink) (opcional)
 
-## Create a Google Ads integration in AppsFlyer
+## Crear una integración de Google Ads en AppsFlyer
 
-Start by activating the integration with Google Ads for web campaigns and setting the postbacks that AppsFlyer sends to the OCI.
+Empieza por activar la integración con Google Ads para campañas web y configurar los postbacks que AppsFlyer envía a OCI.
 
-<Accordion title="1. Activate the Google Ads for web campaigns integration">
+<Accordion title="1. Activar la integración de Google Ads para campañas web">
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Partner Marketplace**.
-2. Search for **Google Ads Web** and select it.
-3. Click **Set up integration**. You’re directed to the **Active Integrations** setup page.
-4. In the **Integration** tab, turn on **Activate Partner**. **Note:** The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with your partner.
-5. Turn off **Advanced Privacy** (if you are setting an iOS app integration).
+1. En AppsFlyer, en el menú lateral, ve a **Colaborar** > **Partner Marketplace**.
+2. Busca **Google Ads Web** y selecciónalo.
+3. Haz clic en **Configurar integración**. Se te redirigirá a la página de configuración de **Integraciones activas** .
+4. En la pestaña **Integración** , activa **Activate Partner**. **Nota:** El selector debe permanecer activado (<Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activated</Anchor>) mientras trabajes con tu partner.
+5. Desactiva **Privacidad avanzada** (si estás configurando una integración de una app de iOS).
 
 > 📘 **Note**
 >
-> The **Missing token** error message will stop appearing once you sign in with Google and allow AppsFlyer to fetch the token in the step below. If the error persists after you sign in, verify that your token has the required permissions.
+> El mensaje de error **Missing token** dejará de aparecer cuando inicies sesión con Google y permitas que AppsFlyer obtenga el token en el paso siguiente. Si el error persiste después de iniciar sesión, verifica que tu token tenga los permisos requeridos.
 
-1. In **First open conversion ID**, enter the ID of the `First open` conversion action you set in Google Ads. To find the ID, go to Google Ads and open the **Details tab** of the **First open** conversion action page. Then, copy the value of the `ctid=*` query parameter from the page URL. For example, if `ctid=123456789`, insert `123456789` to the **First open conversion action ID** box.
+1. En **ID de conversión de primera apertura**, introduce el ID de la acción de conversión `First open` que configuraste en Google Ads. Para encontrar el ID, ve a Google Ads y abre la **pestaña Details** de la página de la acción de conversión **First open**. A continuación, copia el valor del parámetro de consulta `ctid=*` de la URL de la página. Por ejemplo, si `ctid=123456789`, inserta `123456789` en el campo **ID de la acción de conversión de primera apertura**.
 
-   ![](https://files.readme.io/bbd7178f688b1844b925ca6f2ec5768a00b548f3ccba5928966278918966c501-26324098042513.png)
+   ![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
 
 > 👍 **Tip**
 >
-> If you still need to set the 'First open' action in Google Ads, you can enter a placeholder value temporarily until the action is fully set up.
+> Si aún necesitas establecer la acción "Primer acceso" en Google Ads, puedes introducir un valor de marcador de posición temporalmente hasta que la acción esté completamente configurada.
 
-1. Enter your **Customer ID**. You can retrieve it from your Google Ads Manager:
-   1. Sign in to your Google Ads account.
-   2. In the top right corner, click the Google account icon and scroll down to where the Customer ID is displayed.
-2. If you have multiple Google Ads accounts running campaigns for your app, you must use the Customer ID from a manager (MCC) for cross-account conversion tracking. Paste the **MCC ID** (and not a specific account’s Customer ID) in the **Customer ID** text box and also in the **MCC Customer ID** text box (same ID in both boxes).   
-   If you only use a single Google Ads account to run ads, simply paste the account ID in the **Customer ID** text box and leave the **MCC Customer ID** text box empty. See <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">Google instructions on configuring an MCC account</Anchor>.
-3. Click **Allow**.
-
-</Accordion>
-
-<Accordion title="2. Enable view-through attribution">
-
-AppsFlyer supports view-through attribution for Google Web campaigns using a [Smart Script](#set-up-a-smart-script-crossplatform-landing-page) or [Smart Banner](#set-up-a-smart-banners-landing-page)-enabled landing page. This allows probabilistic modeling (PMOD) attribution of app installs triggered by ad impressions, even when users don’t click the ad directly.
-
-When a user sees a Google ad and lands on a [Smart Script](#set-up-a-smart-script-crossplatform-landing-page) or [Smart Banner](#set-up-a-smart-banners-landing-page)-enabled landing page, AppsFlyer can attribute the resulting app install, including cross-platform, back to the original web impression.
-
-When available, AppsFlyer includes the `gclid` in the postback to Google.
-
-**To enable view-through attribution:**
-
-1. In AppsFlyer, from the sidebar, open **Collaborate** > **Partner Integrations > Active Integrations** > **Google Ads Web**
-2. In the **Integration** tab, scroll to the **Install attribution** section.
-3. Turn on **Install view-through attribution**.
-4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions">Enable equal priority for cross-platform impressions</Anchor>.
-5. Open the **Attribution** tab.
-6. Scroll to the **View-through attribution** section and set the preferred **view-through lookback window** (up to 24 hours).
-7. Click **Save integration** to apply the changes.
+1. Introduce tu **ID de cliente**. Puedes recuperarlo desde tu Administrador de Google Ads:
+   1. Inicia sesión en tu cuenta de Google Ads.
+   2. En la esquina superior derecha, haz clic en el icono de la cuenta de Google y desplázate hacia abajo hasta donde se muestra el ID de cliente.
+2. Si tienes varias cuentas de Google Ads que ejecutan campañas para tu aplicación, debes usar el ID de cliente de un administrador (MCC) para el seguimiento de conversiones de varias cuentas. Pega el **ID de MCC** (y no el ID de cliente de una cuenta específica) en el cuadro de texto **Customer ID** y también en el cuadro de texto **MCC Customer ID** text box (el mismo ID en ambos cuadros).   
+   Si solo utilizas una cuenta de Google Ads para publicar anuncios, pega el ID de la cuenta en el cuadro de texto **Customer ID** y deja vacío el cuadro de texto **MCC Customer ID**. Consulta las <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">instrucciones de Google sobre cómo configurar una cuenta MCC</Anchor>.
+3. Haz clic en **Permitir**.
 
 </Accordion>
 
-<Accordion title="3. Turn on Advanced Matching data sharing">
+<Accordion title="2. Habilitar la atribución por impresiones">
 
-Advanced Matching data sharing is controlled per partner and per app, and must be turned on separately for Google Ads Web.
+AppsFlyer admite la atribución view-through para campañas web de Google mediante una página de destino habilitada para [Smart Script](#set-up-a-smart-script-crossplatform-landing-page) o [Smart Banner](#set-up-a-smart-banners-landing-page). Esto permite la atribución de instalaciones de aplicaciones mediante modelado probabilístico (PMOD) desencadenadas por impresiones de anuncios, incluso cuando los usuarios no hacen clic directamente en el anuncio.
 
-When turned on, hashed identifiers, such as a hashed email address or hashed phone number, are shared with Google OCI if these fields are included in the event data you send. For more information, see <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
+Cuando un usuario ve un anuncio de Google y llega a una página de destino habilitada para [Smart Script](#set-up-a-smart-script-crossplatform-landing-page) o [Smart Banner](#set-up-a-smart-banners-landing-page), AppsFlyer puede atribuir la instalación de la app resultante, incluida la multiplataforma, a la impresión web original.
 
-To turn on Advanced Matching data sharing:
+Cuando está disponible, AppsFlyer incluye el `gclid` en el postback a Google.
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Partner Integrations** > **Active Integrations**.
-2. Search for **Google Ads Web** and select it.
-3. In the **Integration** tab, turn on **Advanced Matching Data Sharing**.
-4. Click **Save integration**.
+**Habilitar la atribución view-through:**
 
-</Accordion>
-
-<Accordion title="4. Set in-app event postbacks">
-
-Installs are currently the only events that trigger automatic default postbacks to Google Ads for Web via the OCI API. For other event types, you can create custom postbacks by mapping AppsFlyer events to Google Ads conversion action IDs (“Conversion action” is the term Google Ads uses for attribution events.) Consult Google Ads Manager to learn about the Google Ads Web event you need to map to AppsFlyer events.
-
-1. Turn on **In-app event postbacks**.
-2. If required, set the In-app event postback window (read more about in-app event postback window configuration in general in <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">this article</Anchor>).
-3. Click **Add event** to add an SDK or server-to-server event to the list.
-4. In the **AppsFlyer event** column, select the event name from the drop-down box. AppsFlyer receives the event's name from the SDK integrated into your app or server-to-server events.
-5. In the **mapped to partner event** column, you must map the AppsFlyer event to a corresponding Google conversion action ID. Before you can do that, you need to set up the required Google conversion actions in Google Ads. To learn how to set conversion actions in Google Ads, see [create custom conversion actions.](#h_01J1MPPMW4KMSXAR903P534X65)
-
-   **To find the conversion action ID in Google Ads:**
-
-   1. Go to Google Ads.
-   2. Open the page of the conversion action you want to map.
-   3. Open the **Details** tab.
-   4. From the page URL, copy the value of the `ctid=*` query parameter.
-   5. Go back to AppsFlyer.
-   6. Paste it into the **mapped to partner event** column. For example, if `ctid=123456789`, paste `123456789`.
-6. In the **For Users From** column, select **This Partner Only** or **All media sources, including organic**. **Note:** unattributed events will be sent only if <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor> is turned ON and they include a hashed email or phone number.
-7. In the **including** column, select whether all event parameters, including the revenue value (if it exists in the event), are sent in the postback.
-8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
-9. Click **Save integration**.
-10. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
-    1. From the top-left corner, click the app name under the partner name to open the list of apps.
-    2. Select a different app from the drop-down list.
-    3. Repeat the integration steps for the selected app.
+1. En AppsFlyer, en la barra lateral, abre **Colaborar** > **Integraciones de partners > Integraciones activas** > **Google Ads Web**
+2. En la pestaña **Integración**, desplázate hasta la sección **Atribución de instalaciones**.
+3. Activa la **atribución view-through de instalación**.
+4. **[opcional]** Activa **Prioridad de atribución equitativa entre plataformas** y configura su ventana de lookback. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions">Habilitar igual prioridad para impresiones multiplataforma</Anchor>.
+5. Abre la pestaña **Atribución**.
+6. Desplázate hasta la sección **atribución view-through** y configura la **ventana de lookback view-through** que prefieras (hasta 24 horas).
+7. Haz clic en **Guardar integración** para aplicar los cambios.
 
 </Accordion>
 
-<Accordion title="5. Configure the OneLink template">
+<Accordion title="3. Activa el uso compartido de datos de coincidencia avanzada">
 
-Before creating a OneLink attribution link for your Google Ads campaign, you need to set its template. Then, you can create a OneLink attribution URL based on the template and use it as the Google Tracking template URL.
+El uso compartido de datos de Advanced Matching se controla por partner y por app, y debe activarse por separado para Google Ads Web.
+
+Cuando está activado, los identificadores con hash, como una dirección de correo electrónico con hash o un número de teléfono con hash, se comparten con Google OCI si estos campos se incluyen en los datos del evento que envías. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/advanced-matching-data-sharing">Uso compartido de datos de Advanced Matching</Anchor>.
+
+Para activar el uso compartido de datos de Advanced Matching:
+
+1. En AppsFlyer, en el menú lateral, ve a **Colaborar** > **Integraciones de partners** > **Integraciones activas**.
+2. Busca **Google Ads Web** y selecciónalo.
+3. En la pestaña **Integración**, activa **Uso compartido de datos de coincidencia avanzada**.
+4. Haz clic en **Guardar integración**.
+
+</Accordion>
+
+<Accordion title="4. Configurar postbacks de eventos in-app">
+
+Actualmente, las instalaciones son los únicos eventos que activan postbacks automáticos predeterminados a Google Ads para Web a través de la API OCI. Para otros tipos de eventos, puedes crear postbacks personalizados asignando los eventos de AppsFlyer a los ID de acción de conversión de Google Ads («Conversion action» es el término que Google Ads utiliza para los eventos de atribución) Consulta Google Ads Manager para obtener información sobre el evento de Google Ads Web que debes asignar a los eventos de AppsFlyer.
+
+1. Activa **Postbacks de eventos in-app**.
+2. Si es necesario, configura la ventana de postback de eventos in-app (obtén más información sobre la configuración general de la ventana de postback de eventos in-app en <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">este artículo</Anchor>).
+3. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista.
+4. En la **columna Evento de AppsFlyer** , selecciona el nombre del evento en el cuadro desplegable. AppsFlyer recibe el nombre del evento del SDK integrado en tu aplicación o de los eventos de servidor a servidor.
+5. En la **columna Asignado al evento de partner** , debes asignar el evento de AppsFlyer a un ID de acción de conversión de Google correspondiente. Antes de poder hacerlo, debes configurar las acciones de conversión de Google necesarias en Google Ads. Para obtener información sobre cómo configurar acciones de conversión en Google Ads, consulta [crear acciones de conversión personalizadas.](#h_01J1MPPMW4KMSXAR903P534X65)
+
+   **Para encontrar el ID de acción de conversión en Google Ads:**
+
+   1. Ve a Google Ads.
+   2. Abre la página de la acción de conversión que deseas mapear.
+   3. Abre la pestaña **Detalles**.
+   4. En la URL de la página, copia el valor del parámetro de consulta `ctid=*`.
+   5. Volver a AppsFlyer
+   6. Pégalo en la columna **asignado al evento de partner**. Por ejemplo, si `ctid=123456789`, pega `123456789`.
+6. En la columna **Para usuarios de**, selecciona **Solo este partner** o **Todas las fuentes de medios, incluida la orgánica**. **Nota:** los eventos sin atribuir se enviarán solo si <Anchor target="_blank" href="/marketers/es/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor> está activado e incluyen un correo electrónico o un número de teléfono con hash.
+7. En la columna **Incluido** , selecciona si todos los parámetros del evento, incluido el valor de los ingresos (si existe en el evento), se envían en el postback.
+8. [Opcional] Haz clic en el **icono Añadir condición** para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer condiciones</Anchor> para un evento.
+9. Haz clic **Guardar integración**.
+10. [Opcional] Después de guardar la integración, desde la página de configuración, puedes integrar más de tus aplicaciones con el partner:
+    1. En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
+    2. Selecciona una aplicación diferente del desplegable.
+    3. Repite los pasos de integración para la aplicación seleccionada.
+
+</Accordion>
+
+<Accordion title="5. Configurar la plantilla de OneLink">
+
+Antes de crear un enlace de atribución de OneLink para tu campaña de Google Ads, debes configurar su plantilla. A continuación, puedes crear una URL de atribución de OneLink basada en la plantilla y utilizarla como URL de la plantilla de seguimiento de Google.
 
 > 📘 **Note**
 >
-> The instructions below focus on creating a OneLink template for Google web campaigns with Smart Script. For a comprehensive guide on how to set up OneLink templates, see the How to create OneLink templates section of the OneLink templates article.
+> Las instrucciones a continuación se centran en la creación de una plantilla de OneLink para campañas web de Google con Smart Script. Para obtener una guía completa sobre cómo configurar plantillas de OneLink, consulta la sección Cómo crear plantillas de OneLink del artículo Plantillas de OneLink.
 
-1. Under the **Redirection** section of the **New template** or **Edit template** page, configure the following settings:
-   * **When app isn’t installed** > **Redirect to**: Select your preferred option. The redirection value you set here is overridden by the `{lpurl}` value of the redirection parameters ( <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_android_url">`af_android_url`</Anchor>, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ios_url">`af_ios_url`</Anchor> ) you place in the Google Tracking Template; see [Set the Tracking Template URL](#set-the-tracking-template-url).
-   * **When app is installed**: Make sure **not** to set up Universal Links, URI scheme, or All Links for launching the app because Google does not allow any redirection apart from the redirection to the Final URL.
-   * **When link is clicked on desktop web page** > **Redirect to**: Select your preferred option. The redirection value you set here is overridden by the `{lpurl}` value of the redirection parameters (<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_web_dp">`af_web_dp`</Anchor>) you place in the Google Tracking Template, see [Set the Tracking Template URL](#set-the-tracking-template-url).
-2. Click **Create template**.
+1. En la sección **Redireccionamiento** de la página **Nueva plantilla** o **Editar plantilla** página, configura los siguientes ajustes:
+   * **Cuando la aplicación no está instalada** > **Redirigir a**: Selecciona la opción que prefieras. El valor de redireccionamiento que configures aquí se reemplaza por el valor de `{lpurl}` de los parámetros de redireccionamiento (<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#af_android_url">`af_android_url`</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#af_ios_url">`af_ios_url`</Anchor>) que incluyas en la Tracking Template de Google; consulta [Configurar la URL de la Tracking Template](#establecer-la-url-de-la-plantilla-de-seguimiento).
+   * **Cuando la aplicación está instalada**: Asegúrate **de no** configurar Universal Links, el esquema de URI o All Links para abrir la aplicación, ya que Google no permite ningún redireccionamiento aparte del redireccionamiento a la URL final.
+   * **Cuando se hace clic en el enlace en una página web de desktop** > **Redirigir a**: Selecciona la opción que prefieras. El valor de redireccionamiento que establezcas aquí se reemplaza por el valor de `{lpurl}` de los parámetros de redireccionamiento (<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#af_web_dp">`af_web_dp`</Anchor>) que incluyas en la plantilla de seguimiento de Google; consulta [Configurar la URL de la plantilla de seguimiento](#establecer-la-url-de-la-plantilla-de-seguimiento).
+2. Haz clic **Crear plantilla**.
 
 </Accordion>
 
-## Create a web campaign in Google Ads
+## Crear una campaña web en Google Ads
 
-Perform the following steps in Google Ads.
+Realiza los siguientes pasos en Google Ads.
 
-<Accordion title="1. Set the campaign type, objective, and goals">
+<Accordion title="1. Establece el tipo de campaña, el objetivo y las metas">
 
-Google Ads uses the campaign type objective and goals you select here to set the right bidding strategy and optimize campaign performance.
+Google Ads utiliza el tipo de campaña, el objetivo y las metas que selecciones aquí para establecer la estrategia de oferta adecuada y optimizar el rendimiento de la campaña.
 
-1. Log in to Google Ads and create a campaign.
-2. Select the campaign objective.
+1. Inicia sesión en Google Ads y crea una campaña.
+2. Selecciona un objetivo de campaña.
 
    ![](https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png)
-   * All objectives are applicable, except "App promotion" (which can only be used for mobile app campaigns).
-   * We recommend setting the "Sales" campaign objective for optimization based on specific in-app events.
-3. Select the conversion goals.
+   * Todos los objetivos son aplicables, excepto "Promoción de aplicaciones" (que solo se puede utilizar para campañas de aplicaciones móviles).
+   * Recomendamos establecer el objetivo de la campaña "Ventas" para la optimización en función de eventos in-app específicos.
+3. Selecciona los objetivos de conversión.
 
    ![](https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png)
-   * By default, you see the predefined account-level campaign goals. You can keep those or remove ones that aren't relevant to your campaign.
-   * If you don’t see the goal you want Google to optimize for,
+   * De forma predeterminada, verás los objetivos de campaña predefinidos a nivel de cuenta. Puedes conservarlas o eliminar las que no sean relevantes para tu campaña.
+   * Si no ves el objetivo que deseas que Google optimice,
 
-     <Anchor target="_blank" href="/marketers/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals">create a custom conversion action and goal</Anchor>.
-   * You can also edit your predefined goals on the Conversions page.
-4. Select the campaign type.
+     <Anchor target="_blank" href="/marketers/es/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals">crea una acción de conversión y un objetivo personalizados</Anchor>.
+   * También puedes editar tus metas predefinidas en la página Conversiones.
+4. Selecciona el tipo de campaña.
 
    ![](https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png)
-   * All campaign types are applicable, except "Shopping," which requires a product catalog and is limited to verified domains.
+   * Todos los tipos de campaña son aplicables, excepto "Compras", que requiere un catálogo de productos y está limitada a dominios verificados.
 
 </Accordion>
 
-<Accordion title="2. Create custom conversion actions">
+<Accordion title="2. Crear acciones de conversión personalizadas">
 
-Next, for each [in-app event you set in AppsFlyer](#h_01J1MPPMW34GG0EPDWYXA7383C), you must create a corresponding conversion action in Google Ads. After you complete creating the conversion action, you will need to copy the ID of the newly created action and map it to the AppsFlyer in-app event.
+A continuación, para cada [evento in-app que configuraste en AppsFlyer](#h_01J1MPPMW34GG0EPDWYXA7383C), debes crear una acción de conversión correspondiente en Google Ads. Una vez que completes la creación de la acción de conversión, deberás copiar el ID de la acción recién creada y asignarlo al evento in-app de AppsFlyer.
 
-To create custom Google Ads conversion actions and goals:
+Para crear acciones y metas de conversión personalizadas de Google Ads, sigue estos pasos:
 
-1. In your Google Ads account overview page, from the side menu, select **Goals > Conversions > Summary**.
-2. Click **+ New conversion action**.
-3. Select **Conversions offline** as your conversion actions data source.
-4. Select **Import** from the list of conversion types, then select either:
+1. En la página de vista general de tu cuenta de Google Ads, en el menú lateral, selecciona **Objetivos > Conversiones > Resumen**.
+2. Haz clic en **+ Nueva acción de conversión**.
+3. Selecciona **Conversiones offline** como fuente de datos de las acciones de conversión.
+4. Selecciona **Import** en la lista de tipos de conversión y, a continuación, selecciona una de las siguientes opciones:
 
-   * **Manual import using API or uploads > Track conversions from clicks**.
+   * **Importación manual mediante API o subidas > Track conversiones desde clics**.
 
-   OR
+   O
 
-   * **CRM, files, or other data sources > Track conversions from clicks,** and under **Data source,** select **Skip this step and set up data source later**.
-5. Click **Continue**.
-6. In **Conversion goal**, select a conversion action category.
-7. In **Enter a conversion name**, type the name of the conversion action.
+   * **CRM, archivos u otras fuentes de datos > Track conversions from clicks,** y, en **Fuente de datos,** selecciona **Omitir este paso y configurar la fuente de datos más adelante**.
+5. Haz clic en **Continuar**.
+6. En **Objetivo de conversión**, selecciona una categoría de acción de conversión.
+7. En **Introducir un nombre de conversión**, escribe el nombre de la acción de conversión.
 
 > ❗️ **Warning**
 >
-> To use the Offline Conversions API with GBRAID/WBRAID (in addition to GCLID), make sure the **Count** field in the conversion action is set to **Every** (default) and NOT **One.**
+> Para usar la API de Conversiones offline con GBRAID/WBRAID (además de GCLID), asegúrate de que el campo **Count** de la acción de conversión esté configurado en **Every** (predeterminado) y NO en **One.**
 
-1. Enter a **Conversion name** and then click **Add**. **Note**: If you only want your campaigns to optimize to a single action, include only that action in this category. For example, if you want your campaign to optimize towards the **First open** conversion action, make sure that it is the only one in its category. You’ll then be able to select this category as the conversion goal for performance optimization when creating the campaign.
-2. Click **Save and continue,** and then **Done** without setting up data sources. Your new conversion action may initially appear as “Inactive”, but it will change to “Active” once actual data is sent.
-3. To map the new Conversion action to the AppsFlyer postback event, retrieve the new conversion action ID. In the conversion goals **Summary page,** click the conversion action you created and copy the value of the `ctid=*` query parameter from the conversion action page URL.
+1. Introduce un **Nombre de conversión** y, a continuación, haz clic en **Agregar**. **Nota**: Si solo quieres que tus campañas se optimicen para una sola acción, incluye solo esa acción en esta categoría. Por ejemplo, si quieres que tu campaña se optimice para la acción de conversión **Primer acceso**, asegúrate de que sea la única de su categoría. A continuación, podrás seleccionar esta categoría como meta de conversión para la optimización del rendimiento al crear la campaña.
+2. Haz clic en **Guardar y continuar,** y luego en **Listo** sin configurar fuentes de datos. Tu nueva acción de conversión puede aparecer inicialmente como "Inactiva", pero cambiará a "Activa" una vez que se envíen datos reales.
+3. Para asignar la nueva acción de conversión al evento de postback de AppsFlyer, recupera el ID de la nueva acción de conversión. En la página **Resumen,** de objetivos de conversión, haz clic en la acción de conversión que has creado y copia el valor del parámetro de consulta `ctid=*` de la URL de la página de la acción de conversión.
 
    ![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
-4. In AppsFlyer, paste the `ctid` value in the **mapped to partner event** column of the postback event you want Google to optimize for; see: [Set in-app event postbacks](#h_01J1MPPMW34GG0EPDWYXA7383C).
+4. En AppsFlyer, pega el valor `ctid` en la **columna Asignado al evento de partner** del evento de postback para el que quieres que Google optimice; consulta: [Configurar postbacks de eventos in-app](#h_01J1MPPMW34GG0EPDWYXA7383C).
 
 </Accordion>
 
-<Accordion title="3. Set the campaign URLs">
+<Accordion title="3. Establecer las URL de campaña">
 
-Google Web Ads campaigns use two URLs for each engagement: the Final URL and the Tracking Template URL. These URLs are activated simultaneously when the ad is clicked, a feature Google refers to as Parallel Tracking. More information on Parallel Tracking is available in <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">the Google documentation</Anchor>.
+Las campañas de Google Web Ads utilizan dos URL para cada engagement: la URL final y la URL de la plantilla de tracking. Estas URL se activan simultáneamente cuando se hace clic en el anuncio, una función a la que Google se refiere como seguimiento en paralelo. Más información sobre el seguimiento en paralelo está disponible en la <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">documentación de Google</Anchor>.
 
-#### Set the Final URL
+#### Establecer la URL final
 
-Google <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU">defines the Final URL</Anchor> as "the URL address of the webpage in your website that people reach after they click your ad. Also known as the 'landing page.'"
+Google <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU">define la URL final</Anchor> como «la dirección URL de la página web de tu sitio web a la que llegan los usuarios después de hacer clic en tu anuncio». También se conoce como la 'landing page'".
 
-**To set the Final URL**
+**Para establecer la URL final**
 
-1. In Google Ads, open the **Campaigns** > **ads** page.
-2. In the ad row, click the edit icon.
+1. En Google Ads, abre la página **Campañas** > **Anuncios**.
+2. En la fila del anuncio, haz clic en el icono de edición.
 
    ![](https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png)
-3. In **Final URL,** enter the URL of the web landing page.
+3. En **URL final,** introduce la URL de la página web de destino.
 
 > ❗️ **Warning**
 >
-> The Final URL can't be an AppsFlyer URL (OneLink or a single platform attribution URL), as this may cause your campaign to be rejected. Only use a direct web address with no redirects, such as a web page URL, the Google Play store URL, or the App Store URL.
+> La URL final no puede ser una URL de AppsFlyer (OneLink o una URL de atribución de una sola plataforma), ya que esto podría hacer que rechazaran tu campaña. Utiliza únicamente una dirección web directa sin redireccionamientos, como la URL de una página web, la URL de Google Play Store o la URL del App Store.
 
-1. This must be the final web location to which you want to redirect your users. It can be either:
-   * **A landing page URL** pointing to a page that prompts the user to click a CTA button to download the app from Google Play, App Store, or any other app store. The landing page includes Smart Script or Smart Banners, which automatically generate the CTA button URLs. To learn [how to create the landing page with Smart Script](#create-a-landing-page-with-onelink-smart-script) or [Smart Banners](#create-a-landing-page-with-onelink-smart-banners).
+1. Esta debe ser la ubicación web final a la que deseas redirigir a los usuarios. Puede ser:
+   * **Una URL de página de destino** que apunte a una página que invite al usuario a hacer clic en un botón de CTA para descargar la aplicación desde Google Play, App Store o cualquier otra tienda de aplicaciones. La landing page incluye Smart Script o Smart Banners, que generan automáticamente las URL de los botones de llamada a la acción. Para saber [cómo crear la página de destino con Smart Script](#crear-una-landing-page-con-smart-script-de-onelink) o [Smart Banners](#crea-una-landing-page-con-smart-banners-de-onelink).
 
-     You can add AF attribution parameters to the Final URL and map them to Google ValueTrack parameters, for example, `af_c_id={campaignid}`. Once the Google ad is clicked and the landing page is loaded, Smart Script or Smart Banners can copy the parameters to the landing page's outgoing URL. To learn about the available ValueTrack parameters, see the [Google documentation](https://support.google.com/google-ads/answer/6305348?sjid=9660882197247124000-EU#zippy=%2Cfinal-url-tracking-template-or-custom-parameter).
+     Puedes añadir parámetros de atribución de AF a la URL final y asignarlos a los parámetros ValueTrack de Google; por ejemplo, `af_c_id={campaignid}`. Una vez que se hace clic en el anuncio de Google y se carga la landing page, el Smart Script o los Smart Banners pueden copiar los parámetros en la URL saliente de la landing page. Para más información sobre los parámetros ValueTrack disponibles, consulta la [documentación de Google](https://support.google.com/google-ads/answer/6305348?sjid=9660882197247124000-EU#zippy=%2Cfinal-url-tracking-template-or-custom-parameter).
 
-     For example,
+     Por ejemplo:
 
      ```
      https://example.com?product=1234&af_c_id={campaignid}
      ```
-   * **A store URL** such as the App Store or Google Play.
+   * **Una URL de una tienda**, como App Store o Google Play.
 
 > ❗️ **Warning**
 >
-> Suppose you use the store URL as your Final URL. The only way to send attribution and custom parameter information to AppsFlyer is to insert and map AF parameters to the Tracking Template URL.
+> Supongamos que utilizas la URL de la tienda como URL final. La única forma de enviar información de parámetros personalizados y de atribución a AppsFlyer es insertar y asignar parámetros de AF a la URL de la plantilla de seguimiento.
 
 *
   ```
   https://play.google.com/store/apps/details?id=.com.app.id&hl=en&gl=US&referrer={gclid}&gclid={gclid}&campaignid={campaignid}
   ```
-* **A direct download link to the app APK file** if you want users to download the app directly without being redirected to a store.
+* **Un enlace de descarga directa al archivo APK de la aplicación** si quieres que los usuarios descarguen la aplicación directamente sin ser redirigidos a una tienda.
 
-#### Set the Tracking Template URL
+#### Establecer la URL de la plantilla de seguimiento
 
-Because Google Ads, by default, uses Parallel Tracking, the Tracking Template URL (an AppsFlyer attribution link in this case) is loaded in the background, and the click is registered at AppsFlyer. It is not mandatory to use tracking template URLs, especially when using Smart Banners or Smart Script, see [Using the Tracking Template URL with Smart Script or Smart Banners](#using-the-tracking-template-url-with-smart-script-or-smart-banners) in this article.
+Dado que Google Ads, de forma predeterminada, utiliza el seguimiento en paralelo, la URL de la plantilla de seguimiento (un enlace de atribución de AppsFlyer en este caso) se carga en segundo plano y el clic se registra en AppsFlyer. No es obligatorio usar URLs de plantilla de tracking, especialmente al usar Smart Banners o Smart Script. Consulta [Uso de la URL de la plantilla de tracking con Smart Script o Smart Banners](#uso-de-la-url-de-plantilla-de-seguimiento-con-smart-script-o-smart-banners) en este artículo.
 
-1. In Google Ads, open the **Campaigns** > **Campaigns** page. In the campaign row, click the settings icon
+1. En Google Ads, abre la página **Campañas** > **Campañas**. En la fila de la campaña, haz clic en el icono de configuración
 
    ![](https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png)
-2. Expand the **Settings** > **Additional Settings** > **Campaign URL options**
+2. Despliega **Configuración** > **Ajustes adicionales** > **Opciones de URL de campaña**
 
    ![](https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png)
-3. In **Tracking template,** use the following (BaseURL + Redirection parameters):
-   * **Base URL**: Set the Base URL according to the ad click destination:
-     * **Single platform attribution link** if the ad click destination is either Google Play or the App Store (see example below).
-     * **A OneLink attribution link** if the ad click destination is a Web page (see example below).
+3. En **Plantilla de seguimiento,** usa lo siguiente (BaseURL + parámetros de redirección):
+   * **URL base**: establece la URL base según el destino del clic en el anuncio:
+     * **Enlace de atribución de plataforma única** si el destino del clic en el anuncio es Google Play o la tienda de aplicaciones (consulta el ejemplo a continuación).
+     * **Un enlace de atribución de OneLink** si el destino del clic del anuncio es una página web (consulta el ejemplo a continuación).
 
 > ❗️ **Warning**
 >
-> If your Final URL points directly to the Google Play store or the App Store (the user platform is known), use a single-platform attribution link in the Tracking Template URL. Using a OneLink URL in this scenario results in a "Tracking call unsuccessful" error from Google.
+> Si tu URL final apunta directamente a la tienda de Google Play o a la tienda de aplicaciones (se conoce la plataforma del usuario), usa un enlace de atribución de plataforma única en la URL de la plantilla de tracking. Usar una URL de OneLink en este caso da como resultado un error de «Tracking call unsuccessful» de Google.
 
-* **The PID parameter:** Add the mandatory <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#pid">`pid`</Anchor>`=googleads_int` parameter.
+* **El parámetro PID:** Añade el parámetro obligatorio <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#pid">`pid`</Anchor>`=googleads_int`.
 
 > 👍 **Tip**
 >
-> To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name, for example, campaign-name\_web
+> Para simplificar el análisis de la campaña, incluye el tipo de campaña, web o móvil, como prefijo o sufijo en el nombre de la campaña, por ejemplo, campaign-name\_web
 
-* **The site ID  parameter:** Add the mandatory <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_siteid">`af_siteid`</Anchor> parameter. You can manually assign any value to it.
-* **The campaign name parameter:** Add the mandatory <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#c">c</Anchor> parameter and manually assign its value (There is no ValueTrack parameter for this parameter).
-* **The force transparent parameter**: Add the mandatory `af_force_transparent=true` parameter. This parameter is designed to enhance security in redirection behavior and make sure your setup complies with Google’s requirements. Please note that if you do not add the required parameter, Google may disapprove your ad.
-* **Redirection parameters for a OneLink attribution link:** For parallel tracking to function as intended, set the AF redirection parameters in one of the following combinations:
-  * The parameters `af_android_url`, `af_ios_url`, and `af_web_dp` must be set to the `{lpurl}` Google ValueTrack parameter. **Important:** Make sure all three are populated to guarantee the attribution link works in all scenarios.  
-    **Or**
-  * The `af_r` parameter must be set to the `{lpurl}` Google ValueTrack parameter.
-* **Redirection parameter for a single platform attribution link:** For parallel tracking to function as intended, set the `af_r` parameter to the `{lpurl}` Google ValueTrack parameter.
+* **El parámetro de ID del sitio  :** Añade el parámetro obligatorio <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#af_siteid">`af_siteid`</Anchor>. Puedes asignarle manualmente cualquier valor.
+* **El parámetro del nombre de la campaña:** Añade el parámetro obligatorio <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#c">c</Anchor> y asigna manualmente su valor (no hay ningún parámetro ValueTrack para este parámetro).
+* **El parámetro force transparent**: Añade el parámetro obligatorio `af_force_transparent=true`. Este parámetro está diseñado para mejorar la seguridad en el comportamiento de redirección y garantizar que tu configuración cumpla con los requisitos de Google. Ten en cuenta que si no agregas el parámetro requerido, Google puede desaprobar tu anuncio.
+* **Parámetros de redirección para un enlace de atribución de OneLink:** Para que el seguimiento en paralelo funcione como se espera, establece los parámetros de redirección AF en una de las siguientes combinaciones:
+  * Los parámetros `af_android_url`, `af_ios_url` y `af_web_dp` deben establecerse en el parámetro Google ValueTrack `{lpurl}`. **Importante:** Asegúrate de que los tres estén rellenos para garantizar que el enlace de atribución funcione en todos los casos.  
+    **O**
+  * El parámetro `af_r` debe establecerse en el `{lpurl}` parámetro de Google ValueTrack.
+* **Parámetro de redirección para un enlace de atribución de plataforma única:** Para que el seguimiento en paralelo funcione como se espera, establece el parámetro `af_r` en el `{lpurl}` parámetro de Google ValueTrack.
 
 > ❗️ **Warning**
 >
-> To comply with Google requirements, make sure that the \{lpurl\} value is a valid redirect URL:
+> Para cumplir con los requisitos de Google, asegúrate de que el valor `{lpurl}` sea una URL de redirección válida:
 >
-> * It uses the HTTPS protocol.
-> * It must be encoded.
-> * The URL domain is included in your redirect allowlist.
+> * Utiliza el protocolo HTTPS.
+> * Debe estar codificado.
+> * El dominio de la URL está incluido en tu lista de permitidos para redirecciones.
 
-* **AppsFlyer attribution parameters mapped to Google ValueTrack parameters**, for example, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_c_id">`af_c_id`</Anchor>`={campaignid}`. To learn about the available ValueTrack parameters, see the [Google documentation](https://support.google.com/google-ads/answer/6305348?sjid=9660882197247124000-EU#zippy=%2Cfinal-url-tracking-template-or-custom-parameter).
-* Don't include any of the following parameters. Requests that contain these parameters are not supported in the Parallel Tracking flow and will be rejected:
+* **Parámetros de atribución de AppsFlyer asignados a parámetros ValueTrack de Google**, por ejemplo, <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#af_c_id">`af_c_id`</Anchor>`={campaignid}`. Para más información sobre los parámetros ValueTrack disponibles, consulta la [documentación de Google](https://support.google.com/google-ads/answer/6305348?sjid=9660882197247124000-EU#zippy=%2Cfinal-url-tracking-template-or-custom-parameter).
+* No incluyas ninguno de los siguientes parámetros. Las solicitudes que contienen estos parámetros no son compatibles con el flujo de tracking paralelo y se rechazarán:
   * `af_dp`
   * `af_android_store_csl`
   * `af_ios_store_cpp`
   * `af_og_title`
   * `af_og_description`
   * `af_og_image`
-* Don’t include any parameters that alter the value of the redirection parameter \{lpurl\}. This includes `af_base_params_forward` and `af_param_forwarding`.
+* No incluya ningún parámetro que altere el valor del parámetro de redirección `{lpurl}`. Esto incluye `af_base_params_forward` y `af_param_forwarding`.
 
 > 📘 **Note**
 >
-> For additional limitations relating to the tracking template URL, see the Traits and limitations section in this document
+> Para limitaciones adicionales relacionadas con la URL de la plantilla de seguimiento, consulta la sección Rasgos y limitaciones en este documento.
 
-#### Google Tracking Template URL examples
+#### Ejemplos de URL de plantilla de seguimiento de Google
 
-An example of **a** **OneLink** in a Google Tracking Template URL:
+Ejemplo de **un** **OneLink** en una URL de plantilla de seguimiento de Google:
 
 ```
 https://subdomain.onelink.me/aAB1?pid=googleads_int&af_force_transparent=true&af_android_url={lpurl}&af_ios_url={lpurl}&af_web_dp={lpurl}&c=summer_sale24&af_siteid=123456&af_c_id={campaignid}&af_adset=sum24A&af_adset_id={adgroupid}&af_sub1={gclid}&af_sub2={gbraid}
 ```
 
-An example of **a single platform link** in a Google Tracking Template URL:
+Ejemplo de **un enlace de plataforma única** en una URL de plantilla de seguimiento de Google:
 
 ```
 https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=true&c=examplecamp&af_siteid=123456&af_adset=exampleadset&af_adset_id={adgroupid}&af_c_id={campaignid}&af_ad_id={creative}&af_click_lookback=7d&af_r={lpurl}
 ```
 
-#### Using the Tracking Template URL with Smart Script or Smart Banners
+#### Uso de la URL de plantilla de seguimiento con Smart Script o Smart Banners
 
-You don't need to populate the Tracking Template URL with an AppsFlyer attribution link when the ad redirects to a landing page that uses a Smart Script or Smart Banners. This is because these tools automatically create an attribution link that gets registered in AppsFlyer when the user clicks the landing page CTA button. However, there are considerations for and against leaving the Tracking Template URL field empty:
+No es necesario que rellenes la URL de la plantilla de seguimiento con un enlace de atribución de AppsFlyer cuando el anuncio redirige a una página de destino que utiliza un Smart Script o Smart Banners. Esto se debe a que estas herramientas crean automáticamente un enlace de atribución que se registra en AppsFlyer cuando el usuario hace clic en el botón de llamada a la acción de la landing page. Sin embargo, hay consideraciones a favor y en contra de dejar vacío el campo de la URL de la plantilla de seguimiento:
 
-* If you **don’t populate** the Tracking Template URL with an attribution link, you run the risk of missing installs that occur when the user clicks the ad but does not click any of the landing page CTA buttons. If the user goes directly to the app store to download the app within the lookback window, the subsequent install will not be attributable.
-* If you **populate** the Tracking Template URL with an attribution link and the user clicks the ad and subsequently clicks the landing-page CTA buttons, two clicks will be registered instead of one, which may impact conversion-rate data.
-
-</Accordion>
-
-## Create a landing page with OneLink Smart Script
-
-**User journey:** The user clicks on a Google ad and is directed to your mobile website. They land on a page with CTA buttons urging them to download your app. Clicking the button will redirect the user to the store.
-
-<Accordion title="End-to-end data flow">
-
-The W2A Smart Script use case is comprised of the following phases:
-
-![](https://files.readme.io/719733ce8f5c4f0c5e2bae8a801bd10fed7223e25ddb797f35fa37f98bd978df-26324098052113.png)
-
-1. The user clicks on a Google ad, Google automatically appends to the Final URL the following:
-   * a `gclid` parameter for Android devices and for consenting users on iOS devices.
-   * a `gbraid` and `wbraid` for iOS device non-consenting users.
-   * all the query parameters set in the ad Google Tracking Template URL, except the redirection parameters.
-2. The Final URL redirects the user to the landing page.
-3. Simultaneously, the ad Google Tracking Template URL which also contains the auto-appended `gclid`, `gbraid`, `wbraid`, and the `pid=googleads_int` parameters, is fired in the background, and the click is registered with AppsFlyer.
-4. When the landing page loads, the Smart Script fires an impression event to AppsFlyer, which includes the incoming URL parameters. This impression enables view-through attribution for the landing page. To learn about impressions and view-through attribution, see <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">Create a custom impression URL</Anchor>.
-5. Smart Script generates the outgoing URLs for the CTA buttons on the page based on the incoming URL parameters, including the `gclid`, `gbraid`, and `wbraid` parameters. The buttons can lead to:
-   * Google Play and App Store via a OneLink attribution link.
-   * Multiple platform stores (for example, CTV, Epic and Steam). In this use case, Smart Script generates an outgoing single platform attribution link for each platform, leading to the specified platform’s store.
-   * Downloading an APK file to the user’s device.
-6. When the user clicks the CTA button, the click is fired and registered in AppsFlyer.
-7. The user is redirected to the store and downloads the app.
-8. The install event is registered in AppsFlyer when the user opens the app.
-9. AppsFlyer attributes the install based on probabilistic modeling or deterministically if an [install referrer](https://www.appsflyer.com/glossary/install-referrer/) is available.
-10. A postback containing the `gclid` or the `gbraid` and `wbraid` and additional event parameters is generated and sent to Google Ads via the OCI API. Google Ads uses the `gclid` or `gbraid` and `wbraid` parameter to identify the specific click, while the other parameters help optimize the campaign.
+* Si **no rellenas** la URL de la plantilla de seguimiento con un enlace de atribución, corres el riesgo de perder instalaciones que se producen cuando el usuario hace clic en el anuncio, pero no hace clic en ninguno de los botones de llamada a la acción de la página de destino. Si el usuario va directamente a la tienda de aplicaciones para descargar la aplicación dentro de la ventana retrospectiva, la instalación posterior no será atribuible.
+* Si **rellenas** la URL de la plantilla de seguimiento con un enlace de atribución y el usuario hace clic en el anuncio y, posteriormente, hace clic en los botones de llamada a la acción de la página de destino, se registrarán dos clics en lugar de uno, lo que puede afectar a los datos de la tasa de conversión.
 
 </Accordion>
 
-<Accordion title="Set up a Smart Script landing page">
+## Crear una landing page con Smart Script de OneLink
 
-To set up your Smart Script for Google web campaigns, perform the following steps:
+**Recorrido del usuario:** El usuario hace clic en un anuncio de Google y es dirigido a tu sitio web móvil. Llegan a una página con botones de llamada a la acción que los instan a descargar tu aplicación. Al hacer clic en el botón, se redirigirá al usuario a la tienda.
 
-1. Create a smart script.
+<Accordion title="Flujo de datos end-to-end">
+
+El caso de uso de Smart Script W2A se compone de las siguientes fases:
+
+![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+
+1. El usuario hace clic en un anuncio de Google, Google automáticamente agrega a la URL final lo siguiente:
+   * un `gclid` parámetro para dispositivos Android y para usuarios que den su consentimiento en dispositivos iOS.
+   * `gbraid` y `wbraid` para usuarios de dispositivos iOS que no dan su consentimiento.
+   * todos los parámetros de consulta establecidos en la URL de plantilla de seguimiento de Google, excepto los parámetros de redirección.
+2. La URL final redirecciona al usuario a la landing page.
+3. Simultáneamente, la URL de la plantilla de seguimiento de Google del anuncio, que también contiene los parámetros añadidos automáticamente `gclid`, `gbraid`, `wbraid` y `pid=googleads_int` , se activa en segundo plano y el clic se registra en AppsFlyer.
+4. Cuando se carga la página de destino, el Smart Script activa un evento de impresión en AppsFlyer, que incluye los parámetros de URL entrante. Esta impresión habilita la atribución view-through para la landing page. Para obtener más información sobre impresiones y atribución view-through, consulta <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">Crear una URL de impresión personalizada</Anchor>.
+5. Smart Script genera las URL salientes para los botones de llamada a la acción de la página en función de los parámetros de la URL entrante, incluidos los `gclid`, `gbraid` y `wbraid` parámetros. Los botones pueden llevar a:
+   * Google Play y App Store mediante un link de atribución OneLink.
+   * Tiendas de múltiples plataformas (por ejemplo, CTV, Epic y Steam). En este caso de uso, Smart Script genera un enlace de atribución de plataforma única saliente para cada plataforma, que conduce a la tienda de la plataforma especificada.
+   * Descargar un archivo APK en el dispositivo del usuario.
+6. Cuando el usuario hace clic en el botón de llamada a la acción, el clic se activa y se registra en AppsFlyer.
+7. El usuario es redirigido a la tienda y descarga la app.
+8. El evento de instalación se registra en AppsFlyer cuando el usuario abre la aplicación.
+9. AppsFlyer atribuye la instalación en función de un modelo probabilístico o de forma determinista si hay disponible un [referente de instalación](https://www.appsflyer.com/glossary/install-referrer/) .
+10. Se genera un postback que contiene el `gclid` o el `gbraid` y `wbraid` y parámetros de evento adicionales y se envía a Google Ads a través de la API OCI. Google Ads utiliza el `gclid` o `gbraid` y `wbraid` parámetro para identificar el clic específico, mientras que los demás parámetros ayudan a optimizar la campaña.
+
+</Accordion>
+
+<Accordion title="Configurar una landing page con Smart Script">
+
+Para configurar tu Smart Script para campañas web de Google, sigue estos pasos:
+
+1. Crea un Smart Script.
 
 > 📘 **Note**
 >
-> The instructions below focus on the steps needed to set up a Google web campaign with Smart Script. For a comprehensive guide on how to set up Smart Script campaigns, you can see the How to create a OneLink Smart Script section of the OneLink Smart Script V2 setup article.
+> Las instrucciones a continuación se centran en los pasos necesarios para configurar una campaña web de Google con Smart Script. Para obtener una guía completa sobre cómo configurar campañas de Smart Script, consulta la sección Cómo crear un Smart Script de OneLink del artículo Configuración de OneLink Smart Script V2.
 
-1. Make sure all relevant URL parameters (that are later captured by the Smart Script) are appended to the incoming URL. To review the parameters appended to the incoming URL, open Google Ads and check the URL parameters set as part of creating the Final URL or Tracking Template URL; see: [Set the campaign URLs](#h_01J1MPPMW44NGXN55SFD16Z4HE).
-2. Map the incoming URL parameters required for the campaign to the outgoing URL parameters that will be sent to AppsFlyer when the user clicks the CTA button:
-   * **PID**: Make sure that Smart Script takes the `pid=googleads_int` parameter value from the incoming URL and maps it to the corresponding parameters in the outgoing URL.
-   * **GCLID**: The `gclid` parameter is essential for successfully sending in-app events postbacks to Google Ads. The outgoing  URL GCLID  parameter mapping depends on your Smart Script version:
-     * Version 2.8.1 and above: The `gclid` parameter is forwarded automatically to the outgoing URL parameter when present in the incoming URL, eliminating the need for manual mapping.
-     * Version 2.8.0 and below: The `gclid` parameter must be mapped manually in the **URL parameter mapping** section of the **Smart Script** page:
-       1. In **Mapping for**, select **Custom parameter**.
-       2. In **Outgoing URL parameter** and **Incoming URL parameters** enter **gclid**.
-   * **GBRAID** and **WBRAID**: The `gbraid` and `wbraid` parameters are essential for successfully sending in-app event postbacks to Google Ads for non-consenting iOS device users. The mapping of the `gbraid` and `wbraid` parameters in the outgoing URL depends on your Smart Script version:
-     * Version 2.9.0 and above: The `wbraid` and `gbraid` parameters are forwarded automatically to the outgoing URL parameter when present in the incoming URL, eliminating the need for manual mapping.
-     * Version 2.8.1 and below: The `wbraid` and `gbraid` parameters must be mapped manually in the **URL parameter mapping** section of the **Smart Script** page:
-       1. In **Mapping for**, select **Custom parameter**.
-       2. In **Outgoing URL parameter** and **Incoming URL parameters** enter **wbraid**.
-       3. Repeat the above steps for the `wbraid` parameter.
-
-> 📘 **Note**
->
-> To display in AppsFlyer raw data reports, the incoming gclid, gbraid, and wbraid, parameters must each be mapped to a dedicated outgoing af\_sub[1-5] parameter (in addition to the outgoing URL gclid , gbraid, and wbraidparameters).
-
-</Accordion>
-
-<Accordion title="Set up a Smart Script cross-platform landing page">
-
-For non-cross-platform landing pages, the marketer is typically responsible for auto-generating the Smart Script via the AppsFlyer Smart Script page. However, when it comes to cross-platform landing pages, the developer creates the script based on the parameters sent by the marketer.
-
-To set up your Smart Script for Google web campaigns, perform the following steps:
-
-1. Enable your OneLink template for cross-platform attribution; see <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#create-a-onelink-templatefor-cross-platform-attribution">Create or edit a OneLink template for cross-platform attribution</Anchor>.
-2. Make sure all relevant URL parameters are appended to the incoming URL. To review the parameters appended to the incoming URL, open Google Ads and check the URL parameters set as part of creating the Final URL or Tracking Template URL; see: [Set the campaign URLs](#h_01J1MPPMW44NGXN55SFD16Z4HE).
-3. Decide for each incoming parameter the outgoing parameter to which it will be mapped. For example, `af_site_id` in the incoming URL will be mapped to `af_site_id` in the outgoing URL.
-4. Decide the default value for the mandatory outgoing parameters that cannot be empty.
-5. Send your developer the following information:
-   * Your incoming - outgoing parameter mapping. The developer will create a script that generates an outgoing direct URL based on the incoming-outgoing parameter mapping.
-   * The parameters' default values. The script will populate the outgoing URL parameters with the default values whenever there are no corresponding incoming URL parameter values.
-   * If using a OneLink attribution link, send your developer the domain and template ID. The developer uses this to create the outgoing OneLink URL. For example: `your_brand.onelink.me/A1b2` or Branded domain example: `click.yourbrand.com/A1b2`
-   * Send your developer the following Dev Hub links:
-     * [Instruction and code examples](https://dev.appsflyer.com/hc/docs/create-direct-click-url) on how to create the outgoing direct URLs to the non-mobile platforms.
-     * [A demo and instructions](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/) for creating a cross-platform landing page.
-   * When present in the incoming URL, the `gclid` parameter is forwarded automatically to the outgoing URL parameter, eliminating the need for manual mapping (Starting from Smart Script version 2.8.1). Your developer still has the option to map the `gclid` to one of the `af_sub` parameters, making it available in raw data reports; see Google Ads GCLID.
-
-</Accordion>
-
-## Create a landing page with OneLink Smart Banners
-
-**User journey:** The user clicks on a Google ad and is directed to your mobile website. They land on a page, and a Smart Banner with a CTA to download the app from the app store is displayed.
-
-<Accordion title="End-to-end data flow">
-
-1. The user clicks on a Google ad, Google automatically appends to the Final URL the following:
-   * a `gclid` parameter for Android devices and for consenting users on iOS devices.
-   * a `gbraid` and `wbraid` for iOS device non-consenting users.
-   * all the query parameters set in the ad Google Tracking Template URL, except the redirection parameters.
-2. Simultaneously, the Google Tracking Template URL behind the ad, which contains the auto-appended `gclid` parameter and the `pid=googleads_int` parameter, is fired in the background, and the click is registered with AppsFlyer.
-3. When the landing page loads, the Smart Banner fires an <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">impression</Anchor> event to AppsFlyer, which includes the incoming URL parameters. This impression enables view-through attribution for the landing page. To learn about impressions and view-through attribution, see <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">Create a custom impression URL</Anchor>.
-4. The Smart Banner generates the outgoing URL for the CTA button on the banner based on the incoming parameters, including the `gclid` parameter. The Smart Banner can generate only OneLink-based links.
-5. When the user clicks the Smart Banner CTA button, the click is fired and registered in AppsFlyer.
-6. The user is redirected to the store and downloads the app.
-7. The install event is registered in AppsFlyer when the user opens the app.
-8. AppsFlyer attributes the install based on probabilistic modeling or deterministically if an [install referrer](https://www.appsflyer.com/glossary/install-referrer/) is available.
-9. A postback containing the `gclid` and other event parameters is generated and sent to Google Ads via the OCI API. Google uses the `gclid` parameter to identify the specific click, while the other parameters help optimize the campaign.
-
-</Accordion>
-
-<Accordion title="Set up a Smart Banners landing page">
+1. Asegúrate de que todos los parámetros de URL relevantes (que luego son capturados por Smart Script) se anexen a la URL entrante. Para consultar los parámetros añadidos a la URL entrante, abre Google Ads y comprueba los parámetros de URL configurados al crear la URL final o la URL de la plantilla de seguimiento; consulta: [Configurar las URL de la campaña](#h_01J1MPPMW44NGXN55SFD16Z4HE).
+2. Asigna los parámetros de URL de entrada necesarios para la campaña a los parámetros de URL de salida que se enviarán a AppsFlyer cuando el usuario haga clic en el CTA:
+   * **PID**: Asegúrate de que Smart Script tome el valor del parámetro `pid=googleads_int` de la URL entrante y lo asigne a los parámetros correspondientes en la URL de salida.
+   * **GCLID**: El parámetro `gclid` es esencial para enviar correctamente postbacks de eventos in-app a Google Ads. El mapeo del parámetro de URL GCLID de salida depende de tu versión de Smart Script:
+     * Versión 2.8.1 y posteriores: El parámetro `gclid` se reenvía automáticamente al parámetro de URL de salida cuando está presente en la URL entrante, lo que elimina la necesidad de una asignación manual.
+     * Versión 2.8.0 y anteriores: El parámetro `gclid` debe asignarse manualmente en la sección **Asignación de parámetros de URL** de la página **Smart Script**:
+       1. En **Asignación para**, selecciona **Parámetro personalizado**.
+       2. En **Parámetro URL de salida** y **Parámetros URL de entrada** introduce **gclid**.
+   * **GBRAID** y **WBRAID**: Los parámetros `gbraid` y `wbraid` son esenciales para enviar correctamente postbacks de eventos in-app a Google Ads para usuarios de dispositivos iOS que no dan su consentimiento. La asignación de los parámetros `gbraid` y `wbraid` en la URL de salida depende de la versión de tu Smart Script:
+     * Versión 2.9.0 y posteriores: Los parámetros `wbraid` y `gbraid` se reenvían automáticamente a los parámetros de la URL de salida cuando están presentes en la URL de entrada, eliminando la necesidad de asignarlos manualmente.
+     * Versión 2.8.1 y anteriores: Los parámetros `wbraid` y `gbraid` deben asignarse manualmente en la sección **Asignación de parámetros de URL** de la página **Smart Script**:
+       1. En **Asignación para**, selecciona **Parámetro personalizado**.
+       2. En **Parámetro de URL de salida** y **Parámetros de URL de entrada** introduce **wbraid**.
+       3. Repite los pasos anteriores para el parámetro `gbraid`.
 
 > 📘 **Note**
 >
-> The instructions below focus on the steps needed to set up a Google web campaign with Smart Banners. For a comprehensive guide on how to set up Smart Banners campaigns, see the setup section of the Smart Banners—mobile web-to-app (for marketers) article.
-
-To set up your Smart Banners for Google web campaigns, perform the following:
-
-1. Create a Smart Banner. For instructions, see the <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#setup">setup section</Anchor> of the <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners—mobile web-to-app (for marketers)</Anchor> article.
-2. Make sure that the incoming URL includes the following:
-   * The `pid=googleads_int` is available in the incoming URL.
-   * The `gclid` parameter is available in the incoming URL. Smart Banners automatically forwards `gclid` the parameter to the outgoing banner URL. The `gclid`parameter is necessary for the successful delivery of in-app postbacks to Google OCI.
-   * The `gbraid` and `wbraid` parameters are available in the incoming URL when sending postbacks for non-consenting iOS device users. Smart Banners automatically forwards these parameters to the outgoing banner URL. In this case, the `gbraid` and `wbraid` parameters enable Google to get aggregated event data in the absence of the `gclid` parameter.
-   * All relevant URL parameters are appended to the incoming URL. To review the parameters appended to the incoming URL, open Google Ads, and check the URL parameters set when creating the Final URL or Tracking Template URL; see: [Set the campaign URLs.](#h_01J1MPPMW44NGXN55SFD16Z4HE)
-3. (Optional) In the banner group setting page under the **Dynamic attribution parameters** section, select the first checkbox. This setting makes sure all parameters on the incoming link are added to the link on the Smart Banner.
+> Para que se muestren en los Reportes de raw data de AppsFlyer, los parámetros gclid, gbraid y wbraid de la URL de entrada deben asignarse individualmente a un parámetro af\_sub[1-5] de salida específico (además de los parámetros gclid, gbraid y wbraid de la URL de salida).
 
 </Accordion>
 
-## View web-to-app attribution data
+<Accordion title="Configurar una página de destino multiplataforma de Smart Script">
 
-Although web-based conversion events are sent to Google under the original `googleads_int` PID, they are reported in the AppsFlyer dashboard and raw data reports under the `googleadwords_int` PID. This applies both to primary conversion events and to conversion assist events.
+En el caso de las landing pages no multiplataforma, el marketer suele ser responsable de generar automáticamente el Smart Script a través de la página de Smart Script de AppsFlyer. Sin embargo, cuando se trata de landing pages multiplataforma, el desarrollador crea el script en función de los parámetros enviados por el marketer.
 
-This unified reporting view lets you analyze both web and app campaign performance in one place, including full mobile and web cost reporting.
+Para configurar tu Smart Script para campañas web de Google, sigue estos pasos:
 
-### View in the dashboard
-
-All Google web-to-app attributions appear under `googleadwords_int` in the Overview and Activity dashboards. This provides a single, consolidated view of campaign results across platforms. Use standard filters and breakdowns to compare app and web traffic within your Google Ads data.
-
-### View in raw data and API reports
-
-* **Raw data exports and API responses** include the `googleadwords_int` PID in the `media_source` field for Google web activity. To verify web campaign setup details, refer to the `original_url` field that shows `googleads_int` as the PID used during the creation of web campaigns.
-* **Postback reports** show `googleads_int` as the original media source to which the postback was sent.
-
-## Troubleshooting in-app events postbacks
-
-If in-app event data is not displayed in Google Ads or Google Analytics, or if you get the Missing token error, make sure the following settings are correct before contacting support:
-
-<Accordion title="Set token permissions">
-
-In Google Ads, make sure that your access token has the necessary permissions to upload offline conversions:
-
-1. Go to the Google Developers Console.
-2. Make sure that `uploadClickConversions` has the following OAuth scope: [`https://www.googleapis.com/auth/adwords`](https://www.googleapis.com/auth/adwords)
-3. In AppsFlyer in the integration tab, click **Sign in with Google**.
-4. Select the admin account of the MCC account.
-5. Click **Allow**.
+1. Activa tu plantilla de OneLink para la atribución multiplataforma; consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-cross-platform-links-for-multi-device-campaigns#crea-o-edita-una-plantilla-de-onelink-para-la-atribución-multiplataforma">Crear o editar una plantilla de OneLink para la atribución multiplataforma</Anchor>.
+2. Asegúrate de que todos los parámetros de URL relevantes estén anexados a la URL entrante. Para revisar los parámetros añadidos a la URL de entrada, abre Google Ads y comprueba los parámetros de URL configurados al crear la URL final o la URL de la plantilla de tracking; consulta: [Configura las URL de la campaña](#h_01J1MPPMW44NGXN55SFD16Z4HE).
+3. Decide para cada parámetro entrante el parámetro de salida al que se asignará. Por ejemplo, `af_site_id` en la URL de entrada se asignará a `af_site_id` en la URL de salida.
+4. Decide el valor predeterminado para los parámetros de salida obligatorios que no pueden estar vacíos.
+5. Envía a tu desarrollador la siguiente información:
+   * El mapeo de parámetros de entrada y salida. El desarrollador creará un script que genere una URL directa saliente basada en el mapeo de parámetros entrantes y salientes.
+   * Los valores predeterminados de los parámetros. El script rellenará los parámetros de la URL saliente con los valores predeterminados siempre que no haya valores de parámetros de URL entrantes correspondientes.
+   * Si utilizas un enlace de atribución de OneLink, envía a tu desarrollador el ID del dominio y de la plantilla. El desarrollador utiliza esto para crear la URL saliente de OneLink. Por ejemplo: `your_brand.onelink.me/A1b2` o ejemplo de dominio de marca: `click.yourbrand.com/A1b2`
+   * Envía a tu desarrollador los siguientes enlaces de Dev Hub:
+     * [Instrucciones y ejemplos de código](https://dev.appsflyer.com/hc/docs/create-direct-click-url) sobre cómo crear las URL directas salientes a plataformas no móviles.
+     * [Una demostración e instrucciones](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/) para crear una landing page multiplataforma.
+   * Cuando está presente en la URL entrante, el parámetro `gclid` se reenvía automáticamente al parámetro de la URL saliente, eliminando la necesidad de asignación manual (a partir de la versión 2.8.1 de Smart Script). Tu desarrollador todavía tiene la opción de asignar el `gclid` a uno de los parámetros `af_sub`, para que esté disponible en los Reportes de raw data; consulta Google Ads GCLID.
 
 </Accordion>
 
-<Accordion title="MCC Customer ID">
+## Crea una landing page con Smart Banners de OneLink
 
-If you have multiple Google Ads accounts running campaigns for your app, you must use the Customer ID of an MCC account. See [Google instructions on configuring an MCC account](https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC).
+**Recorrido del usuario:** El usuario hace clic en un anuncio de Google y es dirigido a tu sitio web móvil. Llega a una página y se muestra un Smart Banner con una llamada a la acción para descargar la aplicación de la tienda de aplicaciones.
+
+<Accordion title="Flujo de datos end-to-end">
+
+1. El usuario hace clic en un anuncio de Google, Google automáticamente agrega a la URL final lo siguiente:
+   * un parámetro `gclid` para dispositivos Android y para usuarios que consienten en dispositivos iOS.
+   * un `gbraid` y un `wbraid` para usuarios de dispositivos iOS que no consienten.
+   * todos los parámetros de consulta establecidos en la URL de plantilla de seguimiento de Google, excepto los parámetros de redirección.
+2. Al mismo tiempo, la URL de la plantilla de seguimiento de Google detrás del anuncio, que contiene el parámetro `gclid` agregado automáticamente y el parámetro `pid=googleads_int` , se activa en segundo plano y el clic se registra con AppsFlyer.
+3. Cuando se carga la landing page, el Smart Banner envía un evento de <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">impresión</Anchor> a AppsFlyer, que incluye los parámetros de la URL entrante. Esta impresión habilita la atribución view-through para la landing page. Para obtener más información sobre impresiones y atribución view-through, consulta <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">Crear una URL de impresión personalizada</Anchor>.
+4. El Smart Banner genera la URL de salida para el botón de llamada a la acción en el banner en función de los parámetros entrantes, incluido el parámetro `gclid`. El Smart Banner solo puede generar enlaces basados en OneLink.
+5. Cuando el usuario hace clic en el botón de llamada a la acción del Smart Banner, el clic se activa y se registra en AppsFlyer.
+6. El usuario es redirigido a la tienda y descarga la app.
+7. El evento de instalación se registra en AppsFlyer cuando el usuario abre la aplicación.
+8. AppsFlyer atribuye la instalación en función del Modelado probabilístico o de forma determinista si hay disponible una [Referencia de instalación](https://www.appsflyer.com/glossary/install-referrer/).
+9. Se genera un postback que contiene el `gclid` y los parámetros de eventos adicionales y se envía a Google Ads a través de la API OCI. Google utiliza el parámetro `gclid` para identificar el clic específico, mientras que los demás parámetros ayudan a optimizar la campaña.
 
 </Accordion>
 
-<Accordion title="Conversion Action ID">
+<Accordion title="Configurar una landing page de Smart Banners">
 
-Make sure the postback in-app events are mapped to the correct conversion action ID. To find the conversion action ID in Google Ads, see [Find the conversion action ID in Google Ads](#to-find-the-conversion-action-id-in-google-ads).
+> 📘 **Note**
+>
+> Las instrucciones a continuación se centran en los pasos necesarios para configurar una campaña web de Google con Smart Banners. Para obtener una guía completa sobre cómo configurar campañas de Smart Banners, consulta la sección de configuración en el artículo Smart Banners: de la web móvil a la aplicación (para marketers).
+
+Para configurar tus Smart Banners para campañas web de Google, haz lo siguiente:
+
+1. Crea un Smart Banner. Para obtener instrucciones, consulta la <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers#configuración">sección de configuración</Anchor> del artículo <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners: de la web móvil a la aplicación (para marketers)</Anchor>.
+2. Asegúrate de que la URL de entrada incluya lo siguiente:
+   * El `pid=googleads_int` está disponible en la URL entrante.
+   * El parámetro `gclid` está disponible en la URL entrante. Smart Banners reenvía automáticamente el parámetro `gclid` a la URL de salida del banner. El parámetro `gclid` es necesario para que los postback in-app se entreguen correctamente a Google OCI.
+   * Los parámetros `gbraid` y `wbraid` están disponibles en la URL entrante al enviar postbacks para usuarios de dispositivos iOS que no consienten. Los Smart Banners reenvían automáticamente estos parámetros a la URL del banner de salida. En este caso, los parámetros `gbraid` y `wbraid` permiten que Google obtenga datos de eventos agregados en ausencia del parámetro `gclid`.
+   * Asegúrate de que todos los parámetros de URL relevantes estén anexados a la URL entrante. Para revisar los parámetros anexados a la URL entrante, abre Google Ads y comprueba los parámetros de la URL establecidos al crear la URL final o la URL de la plantilla de tracking; consulta: [Configura las URL de la campaña.](#h_01J1MPPMW44NGXN55SFD16Z4HE)
+3. (Opcional) En la página de configuración del grupo de banners bajo la sección de **parámetros de atribución dinámica**, selecciona la primera casilla de verificación. Esta configuración garantiza que todos los parámetros del enlace entrante se añadan al enlace del Smart Banner.
 
 </Accordion>
 
-<Accordion title="GCLID, GBRAID, WBRAID parameters">
+## Ver datos de atribución web-to-app
 
-The Smart Script or Smart Banners outgoing URL must include either `gclid`, `wbraid`, or `gbraid` for the postback to Google OCI to register properly in Google Ads.
+Aunque los eventos de conversión basados en web se envían a Google con el PID original `googleads_int`, se reportan en el Dashboard de AppsFlyer y en los Reportes de raw data con el PID `googleadwords_int`. Esto aplica tanto para eventos de conversión primaria como para eventos de asistencia de conversión.
+
+Esta vista unificada de reportes te permite analizar el rendimiento de las campañas web y de apps en un solo lugar, incluidos los reportes completos de costos web y móviles.
+
+### Ver en el dashboard
+
+Todas las atribuciones Web-to-app de Google aparecen en `googleadwords_int` en los dashboards Vista general y Actividad. Esto proporciona una vista única y consolidada de los resultados de campañas en todas las plataformas. Utiliza filtros y desgloses estándar para comparar el tráfico de aplicaciones y web en tus datos de Google Ads.
+
+### Ver en reportes raw data y API
+
+* **Las exportaciones de raw data y las respuestas de la API** incluyen el PID `googleadwords_int` en el campo `media_source` para la actividad web de Google. Para verificar los detalles de configuración de la campaña web, consulta el campo `original_url`, que muestra `googleads_int` como el PID utilizado durante la creación de campañas web.
+* **Los reportes de postback** muestran `googleads_int` como la fuente de medios original a la que se envió el postback.
+
+## Solución de problemas de postbacks de eventos in-app
+
+Si los datos de eventos in-app no se muestran en Google Ads o Google Analytics, o si recibes el error de token faltante, asegúrate de que la siguiente configuración sea correcta antes de contactar al soporte:
+
+<Accordion title="Configurar los permisos del token">
+
+En Google Ads, asegúrate de que tu token de acceso tenga los permisos necesarios para subir conversiones offline:
+
+1. Ve a Google Developers Console.
+2. Asegúrate de que `uploadClickConversions` tenga el siguiente ámbito de OAuth: [`https://www.googleapis.com/auth/adwords`](https://www.googleapis.com/auth/adwords)
+3. En AppsFlyer, en la pestaña de integración, haz clic en **Iniciar sesión con Google**.
+4. Selecciona la cuenta de administrador de la cuenta MCC.
+5. Haz clic en **Permitir**.
 
 </Accordion>
 
-## Traits and limitations
+<Accordion title="Customer ID de MCC">
 
-| Trait | Remarks |
+Si tienes varias cuentas de Google Ads ejecutando campañas para tu app, debes utilizar el Customer ID de una cuenta MCC. Consulta las [instrucciones de Google sobre cómo configurar una cuenta MCC](https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC).
+
+</Accordion>
+
+<Accordion title="ID de la acción de conversión">
+
+Asegúrate de que los postbacks de eventos in-app estén asociados al ID de acción de conversión correcto. Para encontrar el ID de la acción de conversión en Google Ads, consulta [Encontrar el ID de la acción de conversión en Google Ads](#to-find-the-conversion-action-id-in-google-ads).
+
+</Accordion>
+
+<Accordion title="Parámetros GCLID, GBRAID, WBRAID">
+
+La URL de salida de Smart Script o Smart Banners debe incluir `gclid`, `wbraid` o `gbraid` para que el postback a Google OCI se registre correctamente en Google Ads.
+
+</Accordion>
+
+## Rasgos y limitaciones
+
+| Caducado | Nota |
 | --- | --- |
-| <span id="dashboard"></span>Dashboard | Attribution data for Google web-based campaigns on iOS is viewed and analyzed in the AppsFlyer Classic Dashboard. In most cases, the SKAN Dashboard is not relevant for web-to-app campaigns. |
-| <span id="reengagement-attribution"></span>Re-engagement attribution | Users may observe installs attributed to `googleads_int` and re-engagements attributed to `googleadwords_int`, even though both are driven by the same campaign. This behavior is expected and does not indicate a technical issue.   <br />  <br />It typically occurs when a`googleadwords_int` SRN integration is active alongside, allowing it to claim re-engagements from the same Google Ads web2app campaign. |
-| <span id="cost-data"></span>Cost, clicks, and impressions data | Cost, clicks, and impressions data for Google Ads Web (`googleads_int`) is supported through the Google Ads integration (`googleadwords_int`).<ul><li>To get the data make sure to connect the ad network account to the main PID (`googleadwords_int`):<ul><li>ROI360 subscribers: in the **Cost Settings** page,</li><li>ROI360 non-subscribers: in the **Active Integration** page (**Cost** tab).</li></ul></li><li>To view cost, clicks, and impressions data for Google Ads Web campaigns, make sure the campaign ID (<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_c_id">af\_c\_id</Anchor>) is included in the attribution link.</li><li>The attribution link must include the full campaign hierarchy to view cost,  clicks, and impressions data tied to attribution at the most granular level.</li></ul> |
-| <span id="tracking-template-urls"></span>Tracking template URLs | Tracking template URLs must comply with the limitations below. Failing to do so will result in a broken link.<ul><li>Links must not contain any duplicate parameters.</li><li>Links must not include invalid parameters such as:<ul><li>Parameters without values, broken parameters, or parameters that cannot be parsed. This includes parameters without values such as `key=` or `key`. For example: `pid=googleads_int&key&c=campaign` or `pid=googleads_int&key=&c=campaign`</li><li>Missing values in one of the ValueTrack parameters, for example `{placement}`. To avoid missing values make sure that Google Ads populates them by defining the tracking template correctly in Google Ads.</li></ul></li><li>If you have entered values for any parameters under the **Campaign URL option** in your Google Ads campaign setup, these must match the parameter values in the tracking template. If they do not match, please remove them from the tracking template to make sure it complies with the policy update.</li></ul> |
-| <span id="unexpected-srn-attribution"></span>Unexpected SRN attribution | In some cases, installs from Google Ads web-based campaigns may be attributed to `googleadwords_int` via SRN (self-reporting network), even in web-based campaigns. This occurs when Google claims the install. AppsFlyer attributes the install accordingly when Google makes the claim. This behavior is expected and may become more common as Google expands support for web campaign install attribution. |
-| <span id="agency-managed-campaigns"></span>Agency-managed campaigns | If the web campaign is managed solely by an agency, both the advertiser's and the agency's `googleads_int` integrations must be active for postbacks to reach Google Ads. The agency must also complete [Sign in with Google](#h_01J1MPPMW3G9B1G116B18CRYJB) to provision an OAuth token. If this step is skipped, the postback call fails and is not sent to Google. |
-| <span id="plan-availability"></span>Plan availability | The `googleads_int` integration is only available for Growth and Enterprise plans. Customers on the Zero and Welcome plans cannot use this integration. |
+| <span id="dashboard"></span>Panel de Control | Los datos de atribución para campañas basadas en la web de Google en iOS se ven y analizan en el Dashboard Clásico de AppsFlyer. En la mayoría de los casos, el Dashboard de SKAN no es relevante para campañas web-to-app. |
+| <span id="reengagement-attribution"></span>Atribución de re-engagement | Los usuarios pueden observar instalaciones atribuidas a `googleads_int` y re-engagement atribuidos a `googleadwords_int`, aunque ambos son impulsados por la misma campaña. Este comportamiento es esperado y no indica un problema técnico.   <br />  <br />Generalmente ocurre cuando una`googleadwords_int` integración SRN está activa, permitiendo que reclame el re-engagement de la misma campaña web2app de Google Ads. |
+| <span id="cost-data"></span>Datos de impresiones, clics y costos | Los datos de costo para la red web de Google Ads (`pid=googleads_int`) no se recuperan automáticamente.<ul><li>Para obtener los datos, asegúrate de conectar la cuenta de la ad network al PID principal (`googleadwords_int`):<ul><li>Suscriptores del ROI360: en la página **Configuración de costos**,</li><li>ROI360 no suscriptores: en la página **Integración activa** (pestaña **Costo**).</li></ul></li><li>Para ver los datos de costo, clics e impresiones de las campañas web de Google Ads, asegúrate de que el ID de la campaña (<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#af_c_id">af\_c\_id</Anchor>) esté incluido en el enlace de atribución.</li><li>El enlace de atribución debe incluir la jerarquía completa de la campaña para ver los datos de costo,  clics e impresiones vinculados a la atribución al nivel más granular.</li></ul> |
+| <span id="tracking-template-urls"></span>URLs de plantilla de seguimiento | Las URLs de plantilla de seguimiento deben cumplir con las limitaciones a continuación. No hacerlo resultará en un enlace roto.<ul><li>Los enlaces no deben contener parámetros duplicados.</li><li>Los enlaces no deben incluir parámetros inválidos como:<ul><li>Parámetros sin valores, parámetros rotos o parámetros que no se pueden analizar. Esto incluye parámetros sin valores como `key=` o `key`. Por ejemplo: `pid=googleads_int&key&c=campaign` o `pid=googleads_int&key=&c=campaign`</li><li>Faltan valores en uno de los parámetros de ValueTrack, por ejemplo `{placement}`. Para evitar valores faltantes, asegúrate de que Google Ads los complete definiendo correctamente la plantilla de seguimiento en Google Ads.</li></ul></li><li>Si has ingresado valores para cualquier parámetro bajo la opción **URL de campaña** en la configuración de tu campaña de Google Ads, estos deben coincidir con los valores de los parámetros en la plantilla de seguimiento. Si no coinciden, elimínalos de la plantilla de seguimiento para garantizar el cumplimiento con la actualización de la política.</li></ul> |
+| <span id="unexpected-srn-attribution"></span>Atribución SRN inesperada | En algunos casos, las instalaciones de campañas basadas en la web de Google Ads pueden atribuirse a `googleadwords_int` a través de SRN (red de autoreporte), incluso en campañas basadas en la web. Esto ocurre cuando Google reclama la instalación. AppsFlyer atribuye la instalación en consecuencia cuando Google hace la reclamación. Este comportamiento es esperado y puede volverse más común a medida que Google expande el soporte para la atribución de instalaciones de campañas web. |
+| <span id="agency-managed-campaigns"></span>Campañas gestionadas por agencias | Si la campaña web la gestiona exclusivamente una agencia, las integraciones de `googleads_int` tanto del anunciante como de la agencia deben estar activas para que los postbacks lleguen a Google Ads. La agencia también debe completar [Iniciar sesión con Google](#h_01J1MPPMW3G9B1G116B18CRYJB) para aprovisionar un token de OAuth. Si omites este paso, la llamada de postback falla y no se envía a Google. |
+| <span id="plan-availability"></span>Disponibilidad del plan | La integración `googleads_int` solo está disponible para los planes Growth y Enterprise. Los clientes en los planes Zero y Welcome no pueden usar esta integración. |
 
-<div data-zendesk-anchors="h_01J1MPPMW38A7EG2W8TJ8F6YQ3=overview h_01J1MPPMW3GWQKZVG2HAQA9H46=prerequisite how-to-create-a-google-ad-web-campaign=create-a-google-ads-web-campaign h_01J1MPPMW3ZYSPQHT4D2YAJ038=create-a-google-ads-web-campaign create-a-google-ad-for-web-integration-in-appsflyer=create-a-google-ads-integration-in-appsflyer h_01J1MPPMW3WTD63M686BHZNKDX=create-a-google-ads-integration-in-appsflyer h_01J1MPPMW4AQNQEKBN1VSPM4X7=create-a-web-campaign-in-google-ads h_01J1MPPMW48F7X2NYEA735BG51=set-the-final-url h_01J1MPPMW44596CZVKF9MGDTMP=set-the-tracking-template-url 01JCZQR9RJAZF4SJVVKYZNJNPY=google-tracking-template-url-examples 01JCZQR9RMAW9YP3T3679JAX45=using-the-tracking-template-url-with-smart-script-or-smart-banners h_01J1MPPMW4P7Q18JN7JS9ZXR23=create-a-landing-page-with-onelink-smart-script h_01J1MPPMW4CW8JMJK26PTEY74W=create-a-landing-page-with-onelink-smart-banners google-view-web-to-app=view-web-to-app-attribution-data view-webtoapp-attribution-data-from-november-2-2025=view-web-to-app-attribution-data h_01K88H6ETM23EV0PTR8GS13KRN=view-web-to-app-attribution-data h_01K88H6ETMG7007CJ0ADD8VQH4=view-in-the-dashboard h_01K88H6ETM502Z2XDC63602FGD=view-in-raw-data-and-api-reports troubleshooting-inapp-events-postbacks=troubleshooting-in-app-events-postbacks h_01J52V5G2DSF9PW9Z5GJHAD376=troubleshooting-in-app-events-postbacks 01JDW5XHD92VFJ93671YP4JMFQ=traits-and-limitations" />
+<div data-zendesk-anchors="overview=descripci%C3%B3n-general h_01J1MPPMW38A7EG2W8TJ8F6YQ3=descripci%C3%B3n-general prerequisite=requisito-previo h_01J1MPPMW3GWQKZVG2HAQA9H46=requisito-previo how-to-create-a-google-ad-web-campaign=c%C3%B3mo-crear-una-campa%C3%B1a-web-de-google-ads h_01J1MPPMW3ZYSPQHT4D2YAJ038=c%C3%B3mo-crear-una-campa%C3%B1a-web-de-google-ads create-a-google-ad-for-web-integration-in-appsflyer=crear-una-integraci%C3%B3n-de-google-ads-en-appsflyer h_01J1MPPMW3WTD63M686BHZNKDX=crear-una-integraci%C3%B3n-de-google-ads-en-appsflyer create-a-web-campaign-in-google-ads=crear-una-campa%C3%B1a-web-en-google-ads h_01J1MPPMW4AQNQEKBN1VSPM4X7=crear-una-campa%C3%B1a-web-en-google-ads set-the-final-url=establecer-la-url-final h_01J1MPPMW48F7X2NYEA735BG51=establecer-la-url-final set-the-tracking-template-url=establecer-la-url-de-la-plantilla-de-seguimiento h_01J1MPPMW44596CZVKF9MGDTMP=establecer-la-url-de-la-plantilla-de-seguimiento google-tracking-template-url-examples=ejemplos-de-url-de-plantilla-de-seguimiento-de-google 01JCZQR9RJAZF4SJVVKYZNJNPY=ejemplos-de-url-de-plantilla-de-seguimiento-de-google using-the-tracking-template-url-with-smart-script-or-smart-banners=uso-de-la-url-de-plantilla-de-seguimiento-con-smart-script-o-smart-banners 01JCZQR9RMAW9YP3T3679JAX45=uso-de-la-url-de-plantilla-de-seguimiento-con-smart-script-o-smart-banners create-a-landing-page-with-onelink-smart-script=crear-una-landing-page-con-smart-script-de-onelink h_01J1MPPMW4P7Q18JN7JS9ZXR23=crear-una-landing-page-con-smart-script-de-onelink create-a-landing-page-with-onelink-smart-banners=crea-una-landing-page-con-smart-banners-de-onelink h_01J1MPPMW4CW8JMJK26PTEY74W=crea-una-landing-page-con-smart-banners-de-onelink google-view-web-to-app=ver-datos-de-atribuci%C3%B3n-web-to-app view-webtoapp-attribution-data-from-november-2-2025=ver-datos-de-atribuci%C3%B3n-web-to-app h_01K88H6ETM23EV0PTR8GS13KRN=ver-datos-de-atribuci%C3%B3n-web-to-app view-in-the-dashboard=ver-en-el-dashboard h_01K88H6ETMG7007CJ0ADD8VQH4=ver-en-el-dashboard view-in-raw-data-and-api-reports=ver-en-reportes-raw-data-y-api h_01K88H6ETM502Z2XDC63602FGD=ver-en-reportes-raw-data-y-api troubleshooting-inapp-events-postbacks=soluci%C3%B3n-de-problemas-de-postbacks-de-eventos-in-app h_01J52V5G2DSF9PW9Z5GJHAD376=soluci%C3%B3n-de-problemas-de-postbacks-de-eventos-in-app traits-and-limitations=rasgos-y-limitaciones 01JDW5XHD92VFJ93671YP4JMFQ=rasgos-y-limitaciones" />

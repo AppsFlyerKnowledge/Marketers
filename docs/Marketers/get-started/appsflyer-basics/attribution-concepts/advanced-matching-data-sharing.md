@@ -1,5 +1,5 @@
 ---
-title: Advanced-Matching Data Sharing
+title: Compartición avanzada de datos de Advanced Matching
 metadata:
   keywords:
     - Marketers
@@ -12,85 +12,84 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2026-06-18T14:23:54Z'
-  edited_at: '2026-10-16T08:51:29Z'
+  edited_at: '2026-10-20T03:38:32Z'
   id: 47876839961489
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/47876839961489-Advanced-Matching-Data-Sharing
+  url: https://support.appsflyer.com/hc/es/articles/47876839961489
 ---
-> **At a glance:** Advanced-Matching Data Sharing enables hashed user identifiers, such as email and phone number, to be forwarded from AppsFlyer to selected ad networks, allowing partners to attribute events to ad engagements without a device ID.
+> **At a glance:** Advanced-Matching Data Sharing permite que los identificadores de usuario con Hashing, como el correo electrónico y el número de teléfono, se reenvíen de AppsFlyer a las ad network seleccionadas, lo que permite a los Partners atribuir eventos a engagement con anuncios sin un ID de dispositivo.
 
-## About Advanced-Matching Data Sharing
+## Acerca de la compartición de datos de Advanced Matching
 
-As device identifiers become less available, ad networks increasingly rely on first-party data to match ad engagements. Advanced-Matching Data Sharing addresses this gap by forwarding hashed identifiers to supported partners in a privacy-compliant format.
+A medida que los identificadores de dispositivo están menos disponibles, las ad network dependen cada vez más de datos propios para hacer coincidir el engagement con anuncios. La compartición de datos de Advanced Matching cubre esta carencia reenviando identificadores con hash a los Partners compatibles en un formato conforme con la privacidad.
 
-The feature is optional and configured per partner. When enabled on a supported network, AppsFlyer forwards hashed identifiers alongside event data for installs, re-engagements, and in-app events.
+La función es opcional y se configura por Partners. Cuando está habilitada en una red compatible, AppsFlyer reenvía identificadores con hash junto con datos de evento para instalaciones, re-engagements y eventos in-app.
 
 > 🚧 **Important**
 >
-> All identifiers must be hashed with SHA-256 before reaching AppsFlyer, either on-device via the SDK or server-side via the server-to-server (S2S) API. Plain-text data is never received, stored, or forwarded, and any value that fails validation is dropped at ingestion.
+> Todos los identificadores deben estar hashed con SHA-256 antes de llegar a AppsFlyer, ya sea en el dispositivo mediante el SDK o del lado del servidor mediante la Server-to-Server (S2S) API. Los datos en texto sin formato nunca se reciben, almacenan ni reenvían, y cualquier valor que no supere la validación se descarta en el momento de la ingesta.
 
-### Supported partners
+### Socios compatibles
 
-Advanced-Matching Data Sharing is available for the following networks:
+Advanced-Matching Data Sharing está disponible para las siguientes redes:
 
-| Partner | Partner ID (PID) | Supported fields |
+| Fuente de medios | ID de partner (PID) | Campos admitidos |
 | --- | --- | --- |
-| Bliss Point Media | blisspointmedia\_int | Hashed email |
-| Google | googleads\_int | Hashed email, hashed phone number |
-| Meta | facebook\_int | Hashed email, hashed phone number, hashed first name, hashed last name |
-| Meta | metweb\_int | Hashed email, hashed phone number, hashed first name, hashed last name, Facebook login ID |
-| Moloco | moloco\_int | Hashed email, hashed phone number, hashed first name, hashed last name |
-| ChatGPT Ads | openai\_int | Hashed email, hashed phone number, hashed first name, hashed last name |
-| Pinterest | pinterest\_int | Hashed email, hashed phone number, hashed first name, hashed last name |
-| Snapchat | snapchat\_int | Hashed email, hashed phone number |
-| Snapchat | snapweb\_int | Hashed email, hashed phone number, hashed first name, hashed last name |
-| TikTok | tiktokglobal\_int | Hashed email, hashed phone number, hashed first name, hashed last name |
-| TikTok | tiktokweb\_int | Hashed email, hashed phone number, hashed first name, hashed last name |
-| Reddit | reddit\_int | Hashed email, hashed phone number |
-| Rokt | roktv2\_int | Hashed email, hashed phone number, hashed first name, hashed last name |
-| Roku | rokuads\_int | Hashed email, hashed phone number |
-| Smadex | smadex\_int | Hashed email, hashed phone number, hashed first name, hashed last name |
+| Bliss Point Media | blisspointmedia\_int | Correo electrónico hashed |
+| Google | googleads\_int | Correo electrónico hashed, número de teléfono hashed |
+| Meta | facebook\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed |
+| Meta | metweb\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed, ID de login de Facebook |
+| Moloco | moloco\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed |
+| Anuncios de ChatGPT | openai\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed |
+| Pinterest | pinterest\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed |
+| Snapchat | snapchat\_int | Correo electrónico hashed, número de teléfono hashed |
+| Snapchat | snapweb\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed |
+| TikTok | tiktokglobal\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed |
+| TikTok | tiktokweb\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed |
+| Reddit | reddit\_int | Correo electrónico hashed, número de teléfono hashed |
+| Rokt | roktv2\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed |
+| Roku | rokuads\_int | Correo electrónico hashed, número de teléfono hashed |
+| Smadex | smadex\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed |
 
-## The end-to-end flow
+## Flujo integral
 
-Here's what happens from the moment an identifier is retrieved to the moment it reaches a partner:
+Esto es lo que ocurre desde el momento en que se recupera un identificador hasta el momento en que llega a un partner:
 
-1. The app or backend retrieves an identifier (email address, phone number, or other supported type).
-2. The AppsFlyer SDK automatically normalizes and hashes the identifier using SHA-256, or the server does so before sending it via the S2S API.
-3. The SDK or server sends the hashed identifier to AppsFlyer alongside the event (install, reinstall, re-engagement, or in-app event).
-4. If Advanced-Matching Data Sharing is enabled for the partner, AppsFlyer forwards the hash alongside the event payload.
-5. The partner uses the hash to match the event to a known user, improving attribution accuracy and match quality.
+1. La aplicación o el backend recuperan un identificador (dirección de correo electrónico, número de teléfono u otro tipo compatible).
+2. El SDK de AppsFlyer normaliza y aplica hash automáticamente al identificador con SHA-256, o el servidor lo hace antes de enviarlo mediante la API S2S.
+3. El SDK o el servidor envía el identificador con hash a AppsFlyer junto con el evento (instalación, reinstalación, re-engagement o evento in-app).
+4. Si Advanced-Matching Data Sharing está habilitado para el partner, AppsFlyer reenvía el hash junto con la carga útil del evento.
+5. El partner usa el hash para asociar el evento a un usuario conocido, lo que mejora la precisión de la atribución y la calidad de la coincidencia.
 
 > 📘 **Note**
 >
-> Hashed identifiers are only forwarded to partners where Advanced-Matching Data Sharing is enabled. When the setting is turned off for a partner, no hashed data is shared with that partner, even if identifiers are present on the event.
+> Los identificadores con hashing solo se reenvían a los partners para los que Advanced-Matching Data Sharing está habilitado. Cuando la configuración está desactivada para un partner, no se comparte ningún dato con hash con ese partner, incluso si hay identificadores en el evento.
 
-## How hashed user identifiers reach AppsFlyer
+## Cómo llegan los identificadores de usuario con hashing a AppsFlyer
 
-Hashed identifiers reach AppsFlyer via two methods: the SDK or the S2S API. In both cases, only properly hashed values are accepted. The sections below describe each method.
+Los identificadores con hash llegan a AppsFlyer de dos formas: a través del SDK o de la API S2S. En ambos casos, solo se aceptan valores correctamente sometidos a hashing. En las secciones siguientes se describe cada método.
 
 <div id="send-hashed-identifiers-with-the-sdk" />
 
-<Accordion title="Send hashed identifiers with the SDK">
+<Accordion title="Enviar identificadores con hash mediante el SDK">
 
-SDK V7.0.1 introduces methods for passing raw identifiers to the AppsFlyer Android and iOS SDKs. The SDK normalizes and hashes the input before sending it to AppsFlyer.
+El SDK V7.0.1 incorpora métodos para pasar identificadores sin procesar a los SDK de AppsFlyer para Android e iOS. El SDK normaliza y aplica hash a los datos de entrada antes de enviarlos a AppsFlyer.
 
-The SDK performs the following steps in sequence:
+El SDK realiza los siguientes pasos en orden:
 
-1. Normalizes the input according to each partner's requirements.
-2. Hashes the normalized value using SHA-256.
-3. Sends only the hashed value to AppsFlyer. The raw input never leaves the device.
+1. Normaliza la entrada según los requisitos de cada partner.
+2. Aplica hashing al valor normalizado con SHA-256.
+3. Envía solo el valor con hashing a AppsFlyer. La entrada sin procesar nunca sale del dispositivo.
 
-The SDK rejects invalid values with an error and doesn't send them to AppsFlyer.
+El SDK rechaza los valores no válidos con un error y no los envía a AppsFlyer.
 
 > 📘 **Note**
 >
-> Android and iOS support is available starting with SDK V7.0.1.
+> Hay soporte para Android e iOS a partir del SDK V7.0.1.
 
-The following methods are available in the AppsFlyer SDK for passing identifiers:
+Los siguientes métodos están disponibles en el SDK de AppsFlyer para pasar identificadores:
 
 * `setUserEmail` (<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setuseremail">Android</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#setuseremail">iOS</Anchor>)
 * `setUserFbLoginId` (<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setuserfbloginid">Android</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#setuserfbloginid">iOS</Anchor>)
@@ -98,180 +97,180 @@ The following methods are available in the AppsFlyer SDK for passing identifiers
 * `setUserLastName` (<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setuserlastname">Android</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#setuserlastname">iOS</Anchor>)
 * `setUserPhone` (<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setuserphone">Android</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#setuserphone">iOS</Anchor>)
 
-For implementation details, see the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib">Android SDK methods</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib">iOS SDK methods</Anchor>.
+Para conocer los detalles de implementación, consulta los <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib">métodos del SDK de Android</Anchor> y los <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib">métodos del SDK de iOS</Anchor>.
 
 </Accordion>
 
 <div id="send-hashed-identifiers-with-the-s2s-api" />
 
-<Accordion title="Send hashed identifiers with the S2S API">
+<Accordion title="Envía identificadores con hash con la API S2S">
 
-When sending events via the S2S in-app events API, identifiers must be normalized and hashed on the server before submission. The API accepts the following fields:
+Al enviar eventos mediante la API S2S de eventos in-app, los identificadores deben normalizarse y aplicarse con hash en el servidor antes del envío. La API acepta los siguientes campos:
 
-| Field | Description |
+| Campo | Description |
 | --- | --- |
-| `email_hashed` | Hashed email address |
-| `phone_number_hashed` | Hashed phone number, digits only |
-| `phone_number_e164_hashed` | Hashed phone number in E.164 format |
-| `first_name_hashed` | Hashed first name |
-| `last_name_hashed` | Hashed last name |
-| `fb_login_id` | Facebook login ID (not hashed; passed as-is) |
+| `email_hashed` | Dirección de correo electrónico con hash |
+| `phone_number_hashed` | Número de teléfono con hash, solo dígitos |
+| `phone_number_e164_hashed` | Número de teléfono con hash en formato E.164 |
+| `first_name_hashed` | Nombre con hash |
+| `last_name_hashed` | Apellido con hash |
+| `fb_login_id` | ID de login de Facebook (sin hash; se transmite tal cual) |
 
 > 🚧 **Important**
 >
-> Every field in this table (except `fb_login_id`) is validated against the SHA-256 format. AppsFlyer silently drops values that don't match and doesn't forward them to any partner. It processes the other fields in the event normally.
+> Todos los campos de esta tabla (excepto `fb_login_id`) se validan con el formato SHA-256. AppsFlyer descarta silenciosamente los valores que no coinciden y no los reenvía a ningún partner. Procesa con normalidad los demás campos del evento.
 
 </Accordion>
 
-### Why are there two phone number fields?
+### ¿Por qué hay dos campos de número de teléfono?
 
-Networks match events by comparing the hash that AppsFlyer forwards to their own stored hash of the user's phone number. Because the same number normalized in a different format produces a different hash, both sides must hash from the same format to get a match. Because networks normalize phone numbers differently and AppsFlyer receives already-hashed values, both versions must be sent to cover all supported partners.
+Las redes comparan eventos al cotejar el hash que AppsFlyer reenvía con el hash del número de teléfono del usuario que tienen almacenado. Como el mismo número, al normalizarse en un formato diferente, genera un hash distinto, ambas partes deben aplicar el hash a partir del mismo formato para que haya coincidencia. Como las redes normalizan los números de teléfono de forma distinta y AppsFlyer recibe valores ya hasheados, deben enviarse ambas versiones para cubrir todos los partners compatibles.
 
-* `phone_number_hashed`: for Meta and Snapchat. Normalization format before hashing: `16501234567`
-* `phone_number_e164_hashed`: for Google and TikTok. Normalization format before hashing: `+16501234567`
+* `phone_number_hashed`: para Meta y Snapchat. Formato de normalización antes de aplicar el hash: `16501234567`
+* `phone_number_e164_hashed`: para Google y TikTok. Formato de normalización antes de aplicar el hash: `+16501234567`
 
-## Normalize and hash identifiers
+## Normalizar y aplicar hashing a los identificadores
 
-Normalize the raw value exactly as described below, then hash using SHA-256 and send the lowercase hex digest.
+Normaliza el valor sin procesar exactamente como se describe a continuación; después, aplica hashing con SHA-256 y envía el resumen hexadecimal en minúsculas.
 
 <div id="email-emailhashed" />
 
-<Accordion title="Email (email_hashed)">
+<Accordion title="Correo electrónico (email_hashed)">
 
-Normalize and hash the email address as follows:
+Normaliza y aplica hash a la dirección de correo electrónico de la siguiente manera:
 
-1. Remove all whitespace.
-2. Convert to lowercase.
-3. Hash with SHA-256.
+1. Elimina todos los espacios en blanco.
+2. Convierte a minúsculas.
+3. Aplica hashing con SHA-256.
 
-**Example:**
+**Fecha y hora del toque del contributor[n]**
 
-`User@Example.COM` → `user@example.com` → SHA-256 hash
+`User@Example.COM` → `user@example.com` → hash SHA-256
 
 </Accordion>
 
 <div id="phone-number-digits-only-phonenumberhashed" />
 
-<Accordion title="Phone number, digits only (phone_number_hashed)">
+<Accordion title="Número de teléfono, solo dígitos (phone_number_hashed)">
 
-Use this for Meta, Reddit, Pinterest, and Snapchat. Normalize and hash the phone number as follows:
+Use esto para Meta, Reddit, Pinterest y Snapchat. Normaliza y aplica hash al número de teléfono de la siguiente manera:
 
-1. Prepend the country code.
-2. Remove all symbols, letters, and leading zeros.
-3. Hash with SHA-256.
+1. Añade delante el código de país.
+2. Elimina todos los símbolos, letras y ceros iniciales.
+3. Aplica hash con SHA-256.
 
-**Example:**
+**Ejemplo:**
 
-`+1 (650) 123-4567` → `16501234567` → SHA-256 hash
+`+1 (650) 123-4567` → `16501234567` → hashing con SHA-256
 
 </Accordion>
 
 <div id="phone-number-e164-phonenumbere164hashed" />
 
-<Accordion title="Phone number, E.164 (phone_number_e164_hashed)">
+<Accordion title="Número de teléfono, E.164 (phone_number_e164_hashed)">
 
-Use this for Google, TikTok, and Roku. Normalize and hash the phone number as follows:
+Use esto para Google, TikTok y Roku. Normaliza y aplica hash al número de teléfono de la siguiente manera:
 
-1. Prepend the country code.
-2. Remove all symbols, letters, and leading zeros.
-3. Prepend a `+` sign.
-4. Hash with SHA-256.
+1. Añade delante el código de país.
+2. Elimina todos los símbolos, letras y ceros iniciales.
+3. Añade el signo `+` al principio.
+4. Aplica hashing con SHA-256.
 
-**Example:**
+**Fecha y hora del toque del contributor[n]**
 
-`+1 (650) 123-4567` → `+16501234567` → SHA-256 hash
+`+1 (650) 123-4567` → `+16501234567` → Hashing SHA-256
 
 </Accordion>
 
 <div id="first-name-firstnamehashed-and-last-name-lastnamehashed" />
 
-<Accordion title="First name (first_name_hashed) and last name (last_name_hashed)">
+<Accordion title="Nombre (first_name_hashed) y apellido (last_name_hashed)">
 
-Normalize and hash the name as follows:
+Normaliza y aplica hash al nombre de la siguiente manera:
 
-1. Remove all whitespace.
-2. Convert to lowercase.
-3. Hash with SHA-256.
+1. Elimina todos los espacios en blanco.
+2. Convierte a minúsculas.
+3. Aplica hashing con SHA-256.
 
 </Accordion>
 
 <div id="facebook-login-id-fbloginid" />
 
-<Accordion title="Facebook login ID (fb_login_id)">
+<Accordion title="ID de login de Facebook (fb_login_id)">
 
-Send the raw Facebook login ID as provided by the Facebook Login SDK. This field is not hashed.
+Envía el ID de login de Facebook sin procesar tal como lo proporciona el SDK de Facebook Login. Este campo no se aplica hashing.
 
 </Accordion>
 
-## Turn on Advanced-Matching Data Sharing
+## Activa el uso compartido de datos de Advanced Matching
 
-Advanced-Matching Data Sharing is controlled per partner and per app and must be explicitly enabled for each network.
+Advanced-Matching Data Sharing se controla por partner y por aplicación, y debe habilitarse explícitamente para cada red.
 
-**To turn on Advanced-Matching Data Sharing:**
+**Para activar el intercambio de datos con coincidencia avanzada:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate > Active Integrations**.
-2. Search for the partner and select it.
-3. Turn on **Advanced-Matching Data Sharing**.
-4. Click **Save integration**.
+1. En AppsFlyer, en el menú lateral, selecciona **Collaborate > Active Integrations**.
+2. Busque al socio y selecciónelo.
+3. Activa **Uso compartido de datos de Advanced Matching**.
+4. Haz clic en **Guardar integración**.
 
-When Advanced-Matching Data Sharing is turned on, any event that includes one or more supported identifier fields will have those fields forwarded to the partner.
+Cuando el uso compartido de datos de Advanced Matching está activado, cualquier evento que incluya uno o más campos de identificador compatibles reenviará esos campos al partner.
 
 > 📘 **Note**
 >
-> Turning off Advanced-Matching Data Sharing immediately stops hashed data sharing with that partner. Other integration settings, including postbacks and event data, are not affected.
+> Desactivar el uso compartido de datos de Advanced Matching detiene inmediatamente el uso compartido de datos con Hashing con ese partner. No afecta a otros ajustes de integración, incluidos los postbacks y los datos de eventos.
 
-## Privacy and data handling
+## Privacidad y tratamiento de datos
 
-When Advanced-Matching Data Sharing is enabled for a partner, AppsFlyer begins forwarding hashed user identifiers to that network along with event data. Before turning it on, confirm the following:
+Cuando el uso compartido de datos de Advanced Matching está activado para un partner, AppsFlyer empieza a reenviar a esa red identificadores de usuario con Hashing junto con los datos de eventos. Antes de activarlo, confirma lo siguiente:
 
-* A lawful basis exists (under applicable privacy laws, such as the General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA)) to share this data with the partner.
-* You've updated your privacy policy and, where required, obtained user consent.
-* Your data-sharing practices align with the partner's terms.
+* Existe una base legal (conforme a las leyes de privacidad aplicables, como el Reglamento general de protección de datos (RGPD) o la California Consumer Privacy Act (CCPA)) para compartir estos datos con el partner.
+* Has actualizado tu política de privacidad y, cuando es necesario, has obtenido el consentimiento del usuario.
+* Tus prácticas de uso compartido de datos se ajustan a los términos del partner.
 
 > 🚧 **Important**
 >
-> AppsFlyer does not process or store plain-text Personally Identifiable Information (PII). All identifier fields are validated at ingestion: values that don't conform to the SHA-256 format are dropped and never forwarded to any partner.
+> AppsFlyer no procesa ni almacena información de identificación personal (PII) en texto sin formato. Todos los campos de ID se validan en la ingesta: los valores que no se ajustan al formato SHA-256 se descartan y nunca se reenvían a ningún Partner.
 
-## FAQ
+## Preguntas frecuentes
 
 <div id="is-advancedmatching-data-sharing-the-same-as-the-audiences-hashed-email-and-phone-feature" />
 
-<Accordion title="Is Advanced-Matching Data Sharing the same as the Audiences' hashed email and phone feature?">
+<Accordion title="¿Es Advanced-Matching Data Sharing lo mismo que la función de correo electrónico y teléfono con hash de las audiencias?">
 
-No. These are separate mechanisms. Audiences build user lists for ad targeting. Advanced-Matching Data Sharing forwards hashed identifiers with individual events to improve match rates at the partner level. AppsFlyer plans to consolidate both methods, using the new data retrieval method for both Advanced-Matching Data Sharing and Audiences.
+N.º Son mecanismos distintos. Las audiencias crean listas de Usuario para Ad Targeting. Advanced-Matching Data Sharing reenvía identificadores con hash junto con eventos individuales para mejorar las tasas de coincidencia a nivel de Partner. AppsFlyer tiene previsto consolidar ambos métodos y usar el nuevo método de recuperación de datos tanto para Advanced-Matching Data Sharing como para audiencias.
 
 </Accordion>
 
 <div id="what-happens-if-i-send-an-invalid-hash-value" />
 
-<Accordion title="What happens if I send an invalid hash value?">
+<Accordion title="¿Qué ocurre si envío un valor con hash no válido?">
 
-AppsFlyer drops the field at ingestion and doesn't forward it to any partner. It processes the other fields in the event normally.
+AppsFlyer elimina el campo durante la ingesta y no lo reenvía a ningún partner. Procesa con normalidad los demás campos del evento.
 
 </Accordion>
 
 <div id="do-i-need-to-send-all-supported-fields" />
 
-<Accordion title="Do I need to send all supported fields?">
+<Accordion title="¿Tengo que enviar todos los campos compatibles?">
 
-No. Only the identifiers available and relevant to the configured partners need to be included. Missing fields are not forwarded.
+N.º Solo es necesario incluir los identificadores disponibles y relevantes para los Partners configurados. Los campos que faltan no se reenvían.
 
 </Accordion>
 
 <div id="will-advancedmatching-data-sharing-improve-install-attribution" />
 
-<Accordion title="Will Advanced-Matching Data Sharing improve install attribution?">
+<Accordion title="¿Mejorará Advanced-Matching Data Sharing la Atribución de instalación?">
 
-Most partners don't use hashed email or hashed phone for install, re-engagement, or reinstall matching. Sending these fields mostly helps partners better match in-app events on their end. It doesn't affect AppsFlyer attribution.
+La mayoría de los partners no usan correo electrónico con hash ni teléfono con hash para la correspondencia de instalación, re-engagement o reinstalación. El envío de estos campos ayuda sobre todo a que los partners hagan una mejor correspondencia de los eventos in-app por su parte. No afecta a la atribución de AppsFlyer.
 
 </Accordion>
 
 <div id="does-appsflyer-ever-receive-plaintext-user-identifiers" />
 
-<Accordion title="Does AppsFlyer ever receive plain-text user identifiers?">
+<Accordion title="¿Recibe AppsFlyer alguna vez identificadores de usuario en texto sin formato?">
 
-No. Identifiers are always hashed before they reach AppsFlyer, whether on-device via the SDK or server-side via the S2S API. AppsFlyer only accepts hashed values.
+N.º Los identificadores siempre se someten a hashing antes de llegar a AppsFlyer, ya sea en el dispositivo a través del SDK o del lado del servidor a través de la API S2S. AppsFlyer solo acepta valores con hash.
 
 </Accordion>
 
-<div data-zendesk-anchors="about-advancedmatching-data-sharing=about-advanced-matching-data-sharing h_01KVFJHWK1TYAPPMZDYFAP0RX0=about-advanced-matching-data-sharing h_01KVFJHWK1VTJZH53FKNE8NZ59=supported-partners the-endtoend-flow=the-end-to-end-flow h_01KVFJHWK1JQ7J838YNDTYDD4A=the-end-to-end-flow h_01KVFJHWK197KW8YBQ1NBD9XT1=how-hashed-user-identifiers-reach-appsflyer h_01M4ZE5P7QWCWP3FMXPM572R3R=send-hashed-identifiers-with-the-sdk h_01M4ZE5P7Q6W3G4JPQKRSSWSX6=send-hashed-identifiers-with-the-s2s-api h_why-two-phone-fields=why-are-there-two-phone-number-fields h_01KVFJHWK16KQ1X1WFTTTFFND3=normalize-and-hash-identifiers h_01M4ZE5P7Q0NJXDVM5MP0S2SKC=email-emailhashed h_01M4ZE5P7QDR4PVS9XZ68J6KW5=phone-number-digits-only-phonenumberhashed h_01M4ZE5P7Q2Z4APXNAWVJ8FES9=phone-number-e164-phonenumbere164hashed h_01M4ZE5P7Q98VNS456PMVXQQXC=first-name-firstnamehashed-and-last-name-lastnamehashed h_01M4ZE5P7QEXVV2EPX3Q550586=facebook-login-id-fbloginid turn-on-advancedmatching-data-sharing=turn-on-advanced-matching-data-sharing h_01KVFJHWK27C5FA358M526EJED=turn-on-advanced-matching-data-sharing h_01KVFJHWK2BN2T7BTXANAWAX4B=privacy-and-data-handling h_01KVFJHWK2XB5VF8V2KPG62QYV=faq h_01M4ZE5P7Q0NE2H8D3N7AX5301=is-advancedmatching-data-sharing-the-same-as-the-audiences-hashed-email-and-phone-feature h_01M4ZE5P7QCKZYS7399QED62F5=what-happens-if-i-send-an-invalid-hash-value h_01M4ZE5P7QT2SG5DBKZ3GTTZ8S=do-i-need-to-send-all-supported-fields h_01M4ZE5P7QZQJA45VV4XV00VAD=will-advancedmatching-data-sharing-improve-install-attribution h_01M4ZE5P7QVF3HQ2Q8HKAB7W98=does-appsflyer-ever-receive-plaintext-user-identifiers" />
+<div data-zendesk-anchors="about-advancedmatching-data-sharing=acerca-de-la-compartici%C3%B3n-de-datos-de-advanced-matching h_01KVFJHWK1TYAPPMZDYFAP0RX0=acerca-de-la-compartici%C3%B3n-de-datos-de-advanced-matching supported-partners=socios-compatibles h_01KVFJHWK1VTJZH53FKNE8NZ59=socios-compatibles the-endtoend-flow=flujo-integral h_01KVFJHWK1JQ7J838YNDTYDD4A=flujo-integral how-hashed-user-identifiers-reach-appsflyer=c%C3%B3mo-llegan-los-identificadores-de-usuario-con-hashing-a-appsflyer h_01KVFJHWK197KW8YBQ1NBD9XT1=c%C3%B3mo-llegan-los-identificadores-de-usuario-con-hashing-a-appsflyer h_01M4ZE5P7QWCWP3FMXPM572R3R=send-hashed-identifiers-with-the-sdk h_01M4ZE5P7Q6W3G4JPQKRSSWSX6=send-hashed-identifiers-with-the-s2s-api h_why-two-phone-fields=por-qu%C3%A9-hay-dos-campos-de-n%C3%BAmero-de-tel%C3%A9fono why-are-there-two-phone-number-fields=por-qu%C3%A9-hay-dos-campos-de-n%C3%BAmero-de-tel%C3%A9fono normalize-and-hash-identifiers=normalizar-y-aplicar-hashing-a-los-identificadores h_01KVFJHWK16KQ1X1WFTTTFFND3=normalizar-y-aplicar-hashing-a-los-identificadores h_01M4ZE5P7Q0NJXDVM5MP0S2SKC=email-emailhashed h_01M4ZE5P7QDR4PVS9XZ68J6KW5=phone-number-digits-only-phonenumberhashed h_01M4ZE5P7Q2Z4APXNAWVJ8FES9=phone-number-e164-phonenumbere164hashed h_01M4ZE5P7Q98VNS456PMVXQQXC=first-name-firstnamehashed-and-last-name-lastnamehashed h_01M4ZE5P7QEXVV2EPX3Q550586=facebook-login-id-fbloginid turn-on-advancedmatching-data-sharing=activa-el-uso-compartido-de-datos-de-advanced-matching h_01KVFJHWK27C5FA358M526EJED=activa-el-uso-compartido-de-datos-de-advanced-matching privacy-and-data-handling=privacidad-y-tratamiento-de-datos h_01KVFJHWK2BN2T7BTXANAWAX4B=privacidad-y-tratamiento-de-datos faq=preguntas-frecuentes h_01KVFJHWK2XB5VF8V2KPG62QYV=preguntas-frecuentes h_01M4ZE5P7Q0NE2H8D3N7AX5301=is-advancedmatching-data-sharing-the-same-as-the-audiences-hashed-email-and-phone-feature h_01M4ZE5P7QCKZYS7399QED62F5=what-happens-if-i-send-an-invalid-hash-value h_01M4ZE5P7QT2SG5DBKZ3GTTZ8S=do-i-need-to-send-all-supported-fields h_01M4ZE5P7QZQJA45VV4XV00VAD=will-advancedmatching-data-sharing-improve-install-attribution h_01M4ZE5P7QVF3HQ2Q8HKAB7W98=does-appsflyer-ever-receive-plaintext-user-identifiers" />

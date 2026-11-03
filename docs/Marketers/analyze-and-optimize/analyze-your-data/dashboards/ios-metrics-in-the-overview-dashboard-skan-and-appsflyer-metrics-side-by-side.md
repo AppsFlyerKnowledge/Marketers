@@ -1,7 +1,7 @@
 ---
 title: >-
-  iOS metrics in the Overview dashboard (SKAN and AppsFlyer metrics
-  side-by-side)
+  Métricas de iOS en el panel de control de resumen general (métricas de SKAN y
+  AppsFlyer una al lado de la otra)
 metadata:
   keywords:
     - Advertisers
@@ -15,188 +15,187 @@ x-zendesk:
     - Marketers
     - SKAdNetwork (SKAN)
   created_at: '2021-08-02T07:18:18Z'
-  edited_at: '2025-05-28T09:43:16Z'
+  edited_at: '2026-08-12T11:50:45Z'
   id: 4404976682257
-  locale: en-us
+  locale: es
   section: Dashboards
   section_id: 6550925337873
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4404976682257-iOS-metrics-in-the-Overview-dashboard-SKAN-and-AppsFlyer-metrics-side-by-side
+  url: https://support.appsflyer.com/hc/es/articles/4404976682257
 ---
-> **At a glance**: View metrics of SKAdNetwork (SKAN) and AppsFlyer attribution frameworks side-by-side in the Overview dashboard. Identify the framework with the best campaign performance metric for you, then leverage it to gain insights and optimize campaigns.
+> **En resumen:** Consulta las métricas de los marcos de atribución de SKAdNetwork (SKAN) y AppsFlyer una al lado de la otra en el panel de control de resumen general. Identifica el marco con la mejor métrica de rendimiento de la campaña para ti y, a continuación, aprovéchalo para obtener información y optimizar las campañas.
 
-**Attribution metrics display side-by-side in the Overview V2.0 dashboard**
+**Las métricas de atribución se muestran una al lado de la otra en el panel de control de resumen general de la versión 2.0**
 
 ![SBSDB.png](https://files.readme.io/550c465c329eac484d2b2e5a65c8f48831c350c3c4b967315e3b2059ab95a36d-4409263804049.png)
 
-## Finding the best iOS 14+ campaign performance metrics
+## Cómo encontrar las mejores métricas de rendimiento de las campañas de iOS 14+
 
-Starting iOS 14+, both SKAN attribution and <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">AppsFlyer attribution</Anchor> frameworks generate campaign performance metrics. They attribute differently, have different traits and limitations, and discrepancies between them often occur. For example, SKAN now contains metrics of Apple Ads (Search Ads) campaigns but not that of owned media. Conversely, AppsFlyer metrics from SRNs don't include installs of non-consenting users. Furthermore, SKAN measures performance during an initial post-install window of 1-3 days, whereas AppsFlyer measures lifetime value (<Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV</Anchor>).
+A partir de iOS 14+, los marcos de atribución de SKAN y de atribución de <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">AppsFlyer</Anchor> generan métricas de rendimiento de la campaña. Se atribuyen de manera diferente, tienen rasgos y limitaciones diferentes y, a menudo, se producen discrepancias entre ellos. Por ejemplo, SKAN no contiene métricas de las campañas de Apple Search Ads ni de los medios propios. Por el contrario, las métricas de AppsFlyer de las SRN no incluyen las instalaciones de usuarios que no han dado su consentimiento. <Anchor target="_blank" href="/marketers/es/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">Además, SKAN mide el rendimiento durante un período inicial posterior a la instalación de 1 a 3 días, mientras que AppsFlyer mide el valor de vida útil (LTV).</Anchor>
 
-In side-by-side, you view campaign performance using data provided by both frameworks. Compare the metrics of each framework and decide which metric best represents the actual campaign performance.
+En paralelo, puedes ver el rendimiento de la campaña utilizando los datos proporcionados por ambos marcos. Compara las métricas de cada marco y decide qué métrica representa mejor el rendimiento real de la campaña.
 
-**Data sharing limitation**: SKAN metrics in the Overview dashboard aren't available to ad networks and agencies.
+**Limitación del intercambio de datos**: Las métricas de SKAN del panel de control de resumen general no están disponibles para las agencias y redes de publicidad.
 
-If SKAN metrics don't display in the dashboard, you must update the [table settings](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).
+Si las métricas de SKAN no aparecen en el panel de control, debes actualizar la [configuración de la tabla](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).
 
-The side-by-side view provides insights into campaign metrics. Use it to evaluate campaign performance metrics in terms of:
+La vista en paralelo proporciona información sobre las métricas de la campaña. Utilízalo para evaluar las métricas de rendimiento de la campaña en términos de:
 
-* [Precision](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#campaign-precision):
-  * How many installs did a campaign bring?
-  * Why do the SKAN and AppsFlyer metrics differ?
-* [Effectiveness:](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#campaign-effectiveness) How many users converted and what is the ROI?
-* [Efficiency](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#campaign-efficiency): What is the campaign eCPI?
+* [Precisión](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#campaign-precision):
+  * ¿Cuántas descargas generó una campaña?
+  * ¿Por qué son diferentes las métricas de SKAN y AppsFlyer?
+* [Efectividad:](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#campaign-effectiveness) ¿Cuántos usuarios se convirtieron y cuál es el ROI?
+* [Eficiencia](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#campaign-efficiency): ¿Qué es la campaña eCPI?
 
-This article contains guidance based on our market knowledge and observations on how to interpret the data and gain actionable insights from it. Consider that the marketing landscape of each app is different, and validate our guidance in the context of your app.
+Este artículo contiene una guía basada en nuestro conocimiento del mercado y en nuestras observaciones sobre cómo interpretar los datos y obtener información útil a partir de ellos. Ten en cuenta que el panorama de marketing de cada aplicación es diferente y valida nuestras directrices en el contexto de tu aplicación.
 
-**Terminology**
+**Terminología**
 
-* **Install**:
-  * AppsFlyer: New installs and re-attributions
-  * SKAN: New installs and re-downloads
-* **Actual:** Actual means the metric best representing the data, even though it may not include all data.
-* **Consenting user:** An iOS 14+ user who grants <Anchor target="_blank" href="/marketers/docs/about-att-and-skan#att-principles">ATT authorization</Anchor> in both the publisher and advertised app.
+* **Instalación**:
+  * AppsFlyer Nuevas instalaciones y reatribuciones
+  * SKAN: Nuevas instalaciones y descargas
+* **Real:** Actual significa la métrica que mejor representa los datos, aunque es posible que no incluya todos los datos.
+* **Usuarios que dan su consentimiento** Un usuario de iOS 14+ que concede la <Anchor target="_blank" href="/marketers/es/docs/about-att-and-skan#att-principles">autorización de AT&T</Anchor> tanto en el editor como en la aplicación anunciada.
 
 <div id="campaign-precision" />
 
-<Accordion title="Campaign precision">
+<Accordion title="Precisión de la campaña">
 
-| Question | How many actual installs are attributed to a campaign? |
+| Pregunta | ¿Cuántas instalaciones reales se atribuyen a una campaña? |
 | --- | --- |
-| Symptom | Install metrics differ between the frameworks. Each framework counts some of the installs, and there may be overlaps and discrepancies between the frameworks. |
-| Remedy | <ul><li>Compare the install metrics of the frameworks at the campaign level.</li><li>The framework reporting the most installs is regarded as having the most precise metric, even though this metric may not include 100% of attributions.</li></ul> |
-| Example | ![S2Sinstalls.png](https://files.readme.io/9599ef8ac37aa1bc0da46112c1a7d6b4c42f3ff82efda0d0e4b47b8bddc6b52a-4406110225425.png)<br /><br />In the table, the framework bringing the most installs is highlighted. This is the actual number of installs brought by the campaign. |
-| Tip | You can automate the process of establishing which metric is higher by importing the table into a spreadsheet. Use the @max function and conditional formatting to identify the framework reporting the most installs. |
+| Síntoma | Las métricas de instalación difieren entre los marcos. Cada marco cuenta algunas de las instalaciones y puede haber superposiciones y discrepancias entre los marcos. |
+| Remedio | <ul><li>Compara las métricas de instalación de los marcos a nivel de campaña.</li><li>Se considera que el marco que informa del mayor número de instalaciones tiene la métrica más precisa, aunque es posible que esta métrica no incluya el 100 % de las atribuciones.</li></ul> |
+| Ejemplo | ![S2Sinstalls.png](https://files.readme.io/9599ef8ac37aa1bc0da46112c1a7d6b4c42f3ff82efda0d0e4b47b8bddc6b52a-4406110225425.png)<br /><br />En la tabla, se resalta el marco que genera el mayor número de instalaciones. Este es el número real de instalaciones que ha generado la campaña. |
+| Consejo | Puedes automatizar el proceso de establecer qué métrica es más alta importando la tabla a una hoja de cálculo. Utiliza la función @max y el formato condicional para identificar el marco que informa de la mayor cantidad de instalaciones. |
 
-| Question | Why do the SKAN and AppsFlyer metrics differ? |
+| Pregunta | ¿Por qué son diferentes las métricas de SKAN y AppsFlyer? |
 | --- | --- |
-| Symptom | Install metrics differ. |
-| Explanation | <ul><li>The AppsFlyer framework determines installs according to the AppsFlyer <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">attribution model</Anchor> covering different campaign types and attribution methods, whereas SKAN measures installs in the context of paid app-to-app campaigns.</li><li>Typically, SKAN metrics of SRN campaign installs are higher than those of AppsFlyer, because AppsFlyer only records consenting users.</li><li>In the case of non-SRN networks (click networks), there is often a much closer alignment between the metrics per framework.</li></ul> |
+| Síntoma | Las métricas de instalación son diferentes. |
+| Explicación | <ul><li>El marco de AppsFlyer determina las instalaciones de acuerdo con el <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">modelo de atribución</Anchor> de AppsFlyer, que abarca diferentes tipos de campañas y métodos de atribución, mientras que SKAN mide las instalaciones en el contexto de las campañas pagas de aplicación a aplicación.</li><li>Por lo general, las métricas SKAN de las instalaciones de campañas de SRN son más altas que las de AppsFlyer, porque AppsFlyer solo registra a los usuarios que dan su consentimiento.</li><li>En el caso de redes que no son SRN (redes de clics), a menudo hay una alineación mucho más estrecha entre las métricas por marco.</li></ul> |
 
 </Accordion>
 
 <div id="campaign-effectiveness" />
 
-<Accordion title="Campaign effectiveness">
+<Accordion title="Efectividad de la campaña">
 
-| Question | How many users converted, and what is the ROI? |
+| Pregunta | ¿Cuántos usuarios se convirtieron y cuál es el ROI? |
 | --- | --- |
-| Considerations | <ul><li>Determining revenue and conversion rate metrics requires that user performance be measured over time.</li><li>SKAN limits measurement to 12-72 hours post-install, whereas AppsFlyer measurement is unlimited (LTV).</li><li>AppsFlyer attribution only contains metrics of consenting users.</li></ul> |
-| Remedy | Consider whether the AppsFlyer attribution metrics accurately represent the entire user population (including users reported via SKAN). If so, use them to extrapolate campaign effectiveness metrics like ROI and conversion rate metrics.<br /><br />**To calculate the number of users that converted:**<ol><li>Use the AppsFlyer conversion rate metric (per event).</li><li>Multiply the conversion rate by the actual number of users, derived as described in the campaign precision section.</li></ol>**To calculate campaign revenue and ROI:**<ol><li>Derive the actual number of users (a) as described in the campaign precision section.</li><li>Use the ARPU (b) metric provided by AppsFlyer attribution.</li><li>Calculate campaign revenue using the formula: a * b</li><li>Use the campaign cost as displayed in the dashboard.</li><li>ROI = (campaign revenue - campaign cost) / (campaign cost  * 100)</li></ol> |
-| Example | **Calculating ROI**<br /><br />![SBSCost.png](https://files.readme.io/052c862e0a93c4e938f84b22e04e8b088bf50acbf047b821ca6cd20f5b9eae57-4409270882577.png)<br /><br />**Example ROI calculation for campaign a:**<ol><li>Assumed number of users 2000</li><li>ARPU metric in the dashboard: $0.76</li><li>Campaign revenue = 2000 * $0.76 = $1520</li><li>Campaign cost: $905.88</li><li>ROI= ($1520 - $905.88) / ($905.88 * 100) = 68%</li></ol> |
-| Tip | Use your BI product analysis tool to compare the performance of consenting users to the entire app user population. If the results differ, you must adjust the remedy calculation to account for this. |
+| Consideraciones | <ul><li>La determinación de las métricas de ingresos y tasas de conversión requiere que el rendimiento de los usuarios se mida a lo largo del tiempo.</li><li>SKAN limita la medición a 12 a 72 horas después de la instalación, mientras que la medición de AppsFlyer es ilimitada (LTV).</li><li>La atribución de AppsFlyer solo contiene métricas de usuarios que han dado su consentimiento.</li></ul> |
+| Remedio | Considera si las métricas de atribución de AppsFlyer representan con precisión a toda la población de usuarios (incluidos los usuarios reportados a través de SKAN). Si es así, úsalas para extrapolar las métricas de eficacia de la campaña, como las métricas de ROI y tasa de conversión.<br /><br />**Para calcular el número de usuarios que han realizado la conversión:**<ol><li>Usa la métrica de tasa de conversión de AppsFlyer (por evento).</li><li>Multiplica la tasa de conversión por el número real de usuarios, obtenido tal y como se describe en la sección de precisión de la campaña.</li></ol>**Para calcular los ingresos y el ROI de la campaña:**<ol><li>Derive el número real de usuarios (a) tal y como se describe en la sección de precisión de la campaña.</li><li>Usa la métrica ARPU (b) proporcionada por la atribución de AppsFlyer.</li><li>Calcula los ingresos de la campaña con la fórmula: a * b</li><li>Usa el costo de la campaña tal y como se muestra en el panel de control.</li><li>ROI = (ingresos de la campaña - coste de la campaña)/(coste de la campaña * 100)</li></ol> |
+| Ejemplo | **Calcular el ROI**<br /><br />![SBSCost.png](https://files.readme.io/052c862e0a93c4e938f84b22e04e8b088bf50acbf047b821ca6cd20f5b9eae57-4409270882577.png)<br /><br />**Ejemplo de cálculo del ROI para la campaña a:**<ol><li>Número supuesto de usuarios 2000</li><li>Métrica de ARPU en el panel de control: 0,76 USD</li><li>Ingresos de la campaña = 0,76 USD = 1.520,00 USD</li><li>Costo de campaña : 905,88 USD</li><li>ROI= (1.520,00 USD - 905,88 USD) / (905,88 USD * 100) = 68 %</li></ol> |
+| Consejo | Utiliza tu herramienta de análisis de productos de BI para comparar el rendimiento de los usuarios que dan su consentimiento con el de toda la población de usuarios de la aplicación. Si los resultados son diferentes, debes ajustar el cálculo de la reparación para tener en cuenta este hecho. |
 
 </Accordion>
 
 <div id="campaign-efficiency" />
 
-<Accordion title="Campaign efficiency">
+<Accordion title="Eficiencia de campañas">
 
-| Question | What is the actual campaign eCPI? |
+| Pregunta | ¿Qué es el eCPI real de la campaña? |
 | --- | --- |
-| Symptom | Campaign cost-related metrics like eCPI are misleading because they rely on a precise number of users. |
-| Remedy | <ol><li>Derive the actual number of users (a) as described in the campaign precision section.</li><li>Calculate eCPI using the following formula: eCPI = cost / (a)</li></ol> |
-| Example | ![mceclip1.png](https://files.readme.io/98fc80d1e995ba8ef0cce267fa12f22d48a77d7e25db4add1108144c6de7136d-4406111715217.png)<ul><li>Actual installs is determined using the framework having the most installs.</li><li>eCPI is calculated using the formula: cost/number of installs.</li></ul> |
+| Síntoma | Las métricas relacionadas con los costos de las campañas, como el eCPI, son engañosas porque se basan en un número preciso de usuarios. |
+| Remedio | <ol><li>Derive el número real de usuarios (a) tal y como se describe en la sección de precisión de la campaña.</li><li>Calcule el eCPI mediante la siguiente fórmula: eCPi = coste/(a)</li></ol> |
+| Ejemplo | ![mceclip1.png](https://files.readme.io/98fc80d1e995ba8ef0cce267fa12f22d48a77d7e25db4add1108144c6de7136d-4406111715217.png)<ul><li>Las instalaciones reales se determinan utilizando el marco que tiene el mayor número de instalaciones.</li><li>El eCPI se calcula mediante la fórmula: costo/número de instalaciones.</li></ul> |
 
 </Accordion>
 
-## Using side-by-side
+## Uso en paralelo
 
 <div id="principles" />
 
-<Accordion title="Principles">
+<Accordion title="Principios">
 
-* Contains installs reported by both attribution frameworks
-* Use the unified view, in Overview V2.0, to ensure that all available data in the context of a campaign displays, and isn't inadvertently hidden by filtering
-* SKAN data is the same as that available via the SKAN dashboard
-* To reduce discrepancies due to timing differences between the frameworks, set a date range in the dashboard as follows:
-  * Duration: Minimum 7 days
-  * Most recent date:
-    * 3–5 days before the current date. The range depends on your activity window
-    * If you run Google Ads campaigns, the earliest date must be 8 days before the current date
+* Contiene las instalaciones informadas por ambos marcos de atribución
+* Usa la vista unificada, en Resumen general V2.0, para asegurarte de que todos los datos disponibles en el contexto de una campaña se muestren y no se oculten inadvertidamente mediante el filtrado
+* Los datos de SKAN son los mismos que los disponibles en el panel de control de SKAN
+* Para reducir las discrepancias debidas a las diferencias de tiempo entre los marcos, establece un intervalo de fechas en el panel de control de la siguiente manera:
+  * Duración: Mínimo 7 días
+  * Fecha más reciente:
+    * De 3 a 5 días antes de la fecha actual. El rango depende de tu ventana de actividad
+    * Si publicas campañas de Google Ads, la fecha más temprana debe ser 8 días antes de la fecha actual
 
 </Accordion>
 
 <div id="display-skan-metrics-in-the-table" />
 
-<Accordion title="Display SKAN metrics in the table">
+<Accordion title="Mostrar las métricas de SKAN en la tabla">
 
-**To display SKAN metrics in the table**:
+**Para mostrar las métricas de SKAN en la tabla**:
 
-1. Click ⚙ (table settings).   
-   The metrics selection window opens.
+1. Haz clic en ⚙ (configuración de la tabla).   
+   Se abre la ventana de selección de métricas.
 
    ![SelectSkan.png](https://files.readme.io/6b60fa8e2d10a1b61b1bfb4b7a968adb5ee16086d80c9cc8bc097b8e8ed77b51-4408473842833.png)
-2. Click **SKAN attribution**.
-3. Click **SKAN installs**.
-4. Click **SKAN revenue**.
-5. [Optional] To add or remove in-app event:
-   1. Select in-app events.
-   2. Add or remove the required in-app events.
-6. Click **Apply**.   
-   The selected metrics and in-app events display.
+2. Haz clic en **Atribución de SKAN**.
+3. Haz clic en **Instalaciones de SKAN**.
+4. Haz clic en **Ingresos de SKAN.**
+5. [Opcional] Para añadir o eliminar un evento in-app:
+   1. Selecciona Eventos In-App.
+   2. Agrega o elimina los eventos in-app necesarios.
+6. Haz clic en**Aplicar**.   
+   Se muestran las métricas y los eventos in-app seleccionados.
 
 </Accordion>
 
 <div id="timerelated-differences" />
 
-<Accordion title="Time-related differences">
+<Accordion title="Diferencias relacionadas con el tiempo">
 
-<table><thead><tr><th>Difference</th><th>AppsFlyer</th><th>SKAN</th></tr></thead><tbody><tr><td>Historical data</td><td><p>Available; no limitation</p></td><td><p>Available; no limitation. </p></td></tr><tr><td>Time zone</td><td><p>App-specific time zone</p></td><td>UTC </td></tr><tr><td>Data freshness </td><td>Updates continuously with a latency of up to 60 minutes</td><td><p>U<span>pdates daily by 08:00 UTC. </span></p><p><span>Latency depends on the duration of the activity window. Default: 2-5 days; in the case of campaigns run by Google Ads campaign—up to 13 days.</span></p></td></tr><tr><td>Install date</td><td>Date the install occurred </td><td>Derived from the postback arrival time. (1) </td></tr><tr><td>Measurement duration</td><td>Unlimited; LTV-based</td><td><p>Limited to the duration of the activity window of 12-72 hours. Default = 24 hours.</p></td></tr><tr><td>Attribution lookback window</td><td><ul><li>Determined by advertiser or SRN</li><li>Click-to-open: 7 days</li></ul></td><td><ul><li>Determined by Apple</li><li>Click-to-download: 30 days</li><li>Download-to-open: 60 days</li></ul></td></tr><tr><td colspan="3"><p>Notes</p><p>(1) Google Ads data updates with a delay of up to 13 days.</p></td></tr></tbody></table>
+<table><thead><tr><th>Diferencia</th><th>AppsFlyer</th><th>SKÁN</th></tr></thead><tbody><tr><td>Historial de datos</td><td><p>Disponible; sin limitación</p></td><td><p>Disponible; sin limitación. </p></td></tr><tr><td>Zona horaria</td><td><p>Zona horaria específica de la aplicación</p></td><td>UTC </td></tr><tr><td>Actualización de datos </td><td>Se actualiza de forma continua con una latencia de hasta 60 minutos</td><td><p>Las actualizaciones se hacen todos los días antes de las 08:00 UTC. </p><p><span>La latencia depende de la duración de la ventana de actividad. Valor predeterminado: De 2 a 5 días; en el caso de las campañas publicadas por la campaña de Google Ads, hasta 13 días.</span></p></td></tr><tr><td>Fecha de instalación</td><td>Fecha en que se produjo la instalación </td><td>Derivado de la hora de llegada del postback. (1) </td></tr><tr><td>Duración de la medición</td><td>Ilimitado; basado en LTV</td><td><p>Limitado a la duración de la ventana de actividad de 12 a 72 horas. Predeterminado: 24 horas</p></td></tr><tr><td>Ventana de atribución retrospectiva</td><td><ul><li>Determinado por el anunciante o el SRN</li><li>Haz clic para abrir: 7 días</li></ul></td><td><ul><li>Determinado por Apple</li><li>Clic para descargar 30 días.</li><li>Descargar para abrir: 60 días</li></ul></td></tr><tr><td colspan="3"><p>Notas</p><p>(1) Actualizaciones de datos de Google Ads con un retraso de hasta 13 días.</p></td></tr></tbody></table>
 
 </Accordion>
 
 <div id="cost-clicks-and-impressions" />
 
-<Accordion title="Cost, clicks, and impressions">
+<Accordion title="Costo, clics e impresiones">
 
-Ad networks provide cost, click, and impression metrics to AppsFlyer which are common to both frameworks. There is no segregation of these metrics by framework.
+Las redes de publicidad proporcionan métricas de costos, clics e impresiones a AppsFlyer que son comunes a ambos marcos. No hay segregación de estas métricas por marco.
 
-In the case of cost metrics, the following apply:
+En el caso de las métricas de costos, se aplica lo siguiente:
 
-* Updates 6 times a day, on average every 4 hours.
-* AppsFlyer records the first engagement (click or impression) associated with a campaign; thereafter, the campaign cost associated with the engagement displays.
-* Because SKAN installs are reported 72–120 hours after the first app open, expect to see cost metrics some days before they are associated with installs.
-* For installs from Google Ads, the delay can be up to 13 days.
+* Se actualiza 6 veces al día, en promedio cada 4 horas.
+* AppsFlyer registra la primera interacción (clic o impresión) asociada a una campaña; después, se muestra el costo de la campaña asociado a la interacción.
+* Dado que las instalaciones de SKAN se notifican entre 72 y 120 horas después de la apertura de la primera aplicación, espera ver las métricas de costos algunos días antes de que se asocien a las instalaciones.
+* En el caso de las instalaciones desde Google Ads, el retraso puede ser de hasta 13 días.
 
 </Accordion>
 
 <div id="data-scope-differences" />
 
-<Accordion title="Data scope differences">
+<Accordion title="Diferencias del alcance de los datos">
 
-| Difference | AppsFlyer | SKAN |
+| Diferencia | AppsFlyer | SKÁN |
 | --- | --- | --- |
-| Platform | All | iOS |
-| Attribution types | <ul><li>Installs</li><li>Re-engagements</li><li>Re-attributions</li></ul> | <ul><li>Installs</li><li>Re-downloads</li></ul> |
-| Ad revenue | Available | <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#recording-ad-revenue">Limited; depends on the mediation partner</Anchor>. |
-| Apple Ads (Search Ads) | Available | Supported for SKAN attribution |
-| Owned media | Available | Not applicable to SKAN attribution |
-| Web-to-app | Available | Available for SKAN 4 attribution |
-| Currency | App-specific currency | USD |
+| Plataforma | Todos | apps de iOS, |
+| Tipos de atribución | <ul><li>Instalaciones</li><li>Reenganches</li><li>Re-Atribuciones</li></ul> | <ul><li>Instalaciones</li><li>Redescargas</li></ul> |
+| Ingresos por publicidad | Disponible | <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#recording-ad-revenue">Limitado; depende del partner de mediación</Anchor>. |
+| Apple Search Ads | Disponible | No se aplica a la atribución de SKAN |
+| Medios propios | Disponible | No se aplica a la atribución de SKAN |
+| De la web a la aplicación | Disponible | Disponible para la atribución SKAN 4 |
+| Truemoney | Divisa específica de la aplicación | USD (Dólar estadounidense) |
 
 </Accordion>
 
 <div id="matching-considerations" />
 
-<Accordion title="Matching considerations">
+<Accordion title="Consideraciones sobre la correspondencia">
 
-<table><thead><tr><th>Consideration</th><th>AppsFlyer</th><th>SKAN</th></tr></thead><tbody><tr><td>Agency transparency</td><td>Supported</td><td><p>Attributed to the media source bringing the install. Agencies can instruct media sources to prefix campaign names with their <em><a href="/partners/docs/getting-started-agency-onboarding" target="_blank">prt</a>,</em> in which case you can identify agency-driven traffic.</p></td></tr><tr><td>Campaign name changes</td><td><ul><li>Supported</li><li>The most recent name reported by the ad network determines the campaign name used for all installs associated with a given campaign ID. This includes previously recorded installs. </li></ul></td><td><ul><li>Not supported</li><li>The campaign name reported when the user installs the app is used. This doesn't change over time. Consequently, multiple names can be associated with a given campaign ID. </li></ul></td></tr><tr><td>Dimensions supported</td><td>No limitation</td><td><p><strong>Available</strong>: Geo, ad, ad ID, channel, adset, site ID.</p><p><strong>Agency:</strong> Not currently.</p><p>If you select a dimension that isn't supported, SKAN data is displayed as none.</p></td></tr><tr><td>SRN install metrics</td><td>Limited to consenting users; as a result, expect the AppsFlyer-reported metrics to be lower than SKAN-reported metrics and the metrics provided by the SRN itself. </td><td>All SKAN-attributed installs. Usually higher than the AppsFlyer metric. </td></tr><tr><td>Hidden SKAN campaigns</td><td colspan="2"><p>The table in the dashboard contains a limited number of rows. The remaining rows are combined in the row designated <em>others</em>.</p><p>To view a breakdown of this row, export the entire table to a spreadsheet. </p></td></tr></tbody></table>
+<table><thead><tr><th>Consideraciones</th><th>AppsFlyer</th><th>SKÁN</th></tr></thead><tbody><tr><td>Transparencia de agencias</td><td>Compatible</td><td><p>Atribuido a la fuente multimedia que trajo la instalación. Las agencias pueden indicar a las fuentes de medios que pongan su <em><a href="/partners/es/docs/getting-started-agency-onboarding" target="_blank">prt</a>,</em> como prefijo a los nombres de las campañas, en cuyo caso puedes identificar el tráfico dirigido por las agencias.</p></td></tr><tr><td>Cambios del nombre de campaña</td><td><ul><li>Compatible</li><li>El nombre más reciente publicado por la red de publicidad determina el nombre de la campaña utilizado para todas las instalaciones asociadas a un identificador de campaña determinado. Esto incluye las instalaciones grabadas anteriormente. </li></ul></td><td><ul><li>No compatible</li><li>Se utiliza el nombre de la campaña que aparece cuando el usuario instala la aplicación. Esto no cambia con el tiempo. En consecuencia, se pueden asociar varios nombres con un ID de campaña determinado. </li></ul></td></tr><tr><td>Dimensiones admitidas</td><td>Ninguna limitación</td><td><p><strong>Disponible</strong>: Geolocalización, anuncio, ID de anuncio, canal, conjunto de anuncios, ID de sitio.</p><p><strong>Agencia:</strong> No en este momento.</p><p>Si seleccionas una dimensión que no es compatible, los datos de SKAN se muestran como ninguno.</p></td></tr><tr><td>Métricas de instalación de SRN</td><td>Limitado a los usuarios que dan su consentimiento; por lo tanto, se espera que las métricas informadas por AppsFlyer sean inferiores a las métricas informadas por SKAN y a las métricas proporcionadas por el propio SRN. </td><td>Todas las instalaciones atribuidas a SKAN. Suele ser superior a la métrica de AppsFlyer. </td></tr><tr><td>Campañas SKAN ocultas</td><td colspan="2"><p>La tabla del panel de control contiene un número limitado de filas. Las filas restantes se combinan en la fila designada como <em>otras</em>.</p><p>Para ver un desglose de esta fila, exporta toda la tabla a una hoja de cálculo. </p></td></tr></tbody></table>
 
 </Accordion>
 
 <div id="dimensions-available" />
 
-<Accordion title="Dimensions available">
+<Accordion title="Dimensiones disponibles:">
 
-The following dimensions are available in the side-by-side view:
+Las siguientes dimensiones están disponibles en la vista en paralelo:
 
-* Media source
-* Campaign name
-* Campaign ID
-* Date
-* Attribution type
+* Fuente de medios
+* Nombre de la campaña
+* ID de campaña
+* Fecha
+* Tipo de atribución
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HYAQAR84BP9MRRXP7BPPDJ4N=finding-the-best-ios-14-campaign-performance-metrics h_01HYAQAR856G6VARSH746SJB5Z=campaign-precision h_01HYAQAR856JT2JX28SE3QY7VZ=campaign-effectiveness h_01HYAQAR85GZN1RZYNV2MV7DAP=campaign-efficiency using-sidebyside=using-side-by-side h_01HYAQAR85FY6K8R574GWFQW91=using-side-by-side h_01HYAQAR85Z09SXSE8JGTG5AMF=principles h_01HYAQAR85V6CD29T9AY9XYX0Z=display-skan-metrics-in-the-table h_01HYAQAR85QSTB8QZPGMEV6MR9=timerelated-differences h_01HYAQAR85A03KNAHC5TEAZAZK=cost-clicks-and-impressions h_01HYAQAR85SPYQKDFP3CRGW5FN=data-scope-differences h_01HYAQAR85FSAXQ25X16N6XQEW=matching-considerations h_01HYAQAR85XF7CEG6F7PC44F1C=dimensions-available" />
+<div data-zendesk-anchors="finding-the-best-ios-14-campaign-performance-metrics=c%C3%B3mo-encontrar-las-mejores-m%C3%A9tricas-de-rendimiento-de-las-campa%C3%B1as-de-ios-14 h_01HYAQAR84BP9MRRXP7BPPDJ4N=c%C3%B3mo-encontrar-las-mejores-m%C3%A9tricas-de-rendimiento-de-las-campa%C3%B1as-de-ios-14 h_01HYAQAR856G6VARSH746SJB5Z=campaign-precision h_01HYAQAR856JT2JX28SE3QY7VZ=campaign-effectiveness h_01HYAQAR85GZN1RZYNV2MV7DAP=campaign-efficiency using-sidebyside=uso-en-paralelo h_01HYAQAR85FY6K8R574GWFQW91=uso-en-paralelo h_01HYAQAR85Z09SXSE8JGTG5AMF=principles h_01HYAQAR85V6CD29T9AY9XYX0Z=display-skan-metrics-in-the-table h_01HYAQAR85QSTB8QZPGMEV6MR9=timerelated-differences h_01HYAQAR85A03KNAHC5TEAZAZK=cost-clicks-and-impressions h_01HYAQAR85SPYQKDFP3CRGW5FN=data-scope-differences h_01HYAQAR85FSAXQ25X16N6XQEW=matching-considerations h_01HYAQAR85XF7CEG6F7PC44F1C=dimensions-available" />

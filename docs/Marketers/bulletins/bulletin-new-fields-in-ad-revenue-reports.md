@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: New fields in ad revenue reports'
+title: 'Boletín: nuevos campos en los reportes de ingresos por anuncios'
 metadata:
   keywords:
     - Marketers
@@ -13,54 +13,54 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2024-07-22T13:25:32Z'
-  edited_at: '2024-09-24T12:01:56Z'
+  edited_at: '2026-10-20T03:55:12Z'
   id: 26907692192273
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/26907692192273-Bulletin-New-fields-in-ad-revenue-reports
+  url: https://support.appsflyer.com/hc/es/articles/26907692192273
 ---
+
 <Table>
-  <thead>
-    <tr>
-      <th>
-        **What's new?**
-      </th>
-      <th>
-        Ad revenue reports have new fields.
-      </th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
       <td>
-        **Effective date**
+        **Novedades**
       </td>
       <td>
-        September 19, 2024
+        Los informes de ingresos por publicidad tienen nuevos campos.
       </td>
     </tr>
     <tr>
       <td>
-        **What you should know**
+        **Fecha de entrada en vigor**
       </td>
       <td>
-        The following table shows which fields are being added to which reports. See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor> for definitions and details of each field.
+        19 de septiembre de 2024
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Lo que debes saber**
+      </td>
+      <td>
+        La siguiente tabla muestra qué campos se están añadiendo a qué informes. Consulta el <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">diccionario de campos de raw data</Anchor> para ver las definiciones y los detalles de cada campo.
 
-        | Report | API field names |
+        | Informe | Nombres de campos API |
         | --- | --- |
-        | <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Legacy ad revenue [single version]</Anchor> | <ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li></ul> |
-        | <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ad revenue [versioned]</Anchor> | <ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li></ul> |
-        | <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#impression-level-report">Ad revenue [SDK impression level]</Anchor> | <ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li><li>ad_revenue_custom_parameters</li><li>app_version</li><li>sdk_version</li></ul> |
+        | <Anchor target="_blank" href="/marketers/es/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ingresos por publicidad antiguo [una versión]</Anchor> | * {"engagement_type"}<br />* {"datos_personalizados"}<br />* {"id_usuario_cliente"}<br />* {"ad_revenue_ad_type"} |
+        | <Anchor target="_blank" href="/marketers/es/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ingresos por publicidad [versionado]</Anchor> | * {"engagement_type"}<br />* {"datos_personalizados"}<br />* {"id_usuario_cliente"}<br />* {"ad_revenue_ad_type"} |
+        | <Anchor target="_blank" href="/marketers/es/docs/revenue-etl-reports#impression-level-report">Ingresos por publicidad atribuidos [nivel de impresión del SDK]</Anchor> | * {"engagement_type"}<br />* {"datos_personalizados"}<br />* {"id_usuario_cliente"}<br />* {"ad_revenue_ad_type"}<br />* {"ad_revenue_custom_parameters"}<br />* {"version_app"}<br />* versió{"n_sdk"} |
       </td>
     </tr>
     <tr>
       <td>
-        **What you need to do**
+        **Lo que debes hacer**
       </td>
       <td>
-        <ul><li>In <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#set-up-data-locker">AppsFlyer Data Locker settings</Anchor>, select the new fields to be added to your reports.<br />**Tip**! If you already receive a field like customer\_user\_id via the default Data Locker settings, in order to populate the fields in ad revenue reports you need to add another new field and save the settings. You can revert the changes after.</li><li>Configure your BI systems to ingest and use the new fields.</li></ul>
+        * En la <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers#set-up-data-locker">configuración de AppsFlyer Data Locker</Anchor>, selecciona los nuevos campos que quieres añadir a tus reportes.  
+          **Tip**¡! Si ya recibes un campo como customer\_user\_id a través de la configuración predeterminada de Data Locker, para completar los campos de los reportes de ingresos por anuncios, tienes que añadir otro campo nuevo y guardar la configuración. Después puedes revertir los cambios.
+        * Configura tus sistemas de BI para ingerir y usar los nuevos campos.
       </td>
     </tr>
   </tbody>

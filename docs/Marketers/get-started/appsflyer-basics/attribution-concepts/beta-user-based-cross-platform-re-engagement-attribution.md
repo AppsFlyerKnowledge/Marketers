@@ -1,5 +1,5 @@
 ---
-title: '[Beta] User-based cross-platform re-engagement attribution'
+title: '[Beta] Atribución de re-engagement multiplataforma basada en usuarios'
 metadata:
   keywords:
     - Marketers
@@ -12,93 +12,92 @@ x-zendesk:
     - Marketers
     - Cross-Platform Measurement
   created_at: '2026-04-05T12:40:10Z'
-  edited_at: '2026-04-27T13:56:06Z'
+  edited_at: '2026-08-12T11:56:20Z'
   id: 45444294953361
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/45444294953361--Beta-User-based-cross-platform-re-engagement-attribution
+  url: https://support.appsflyer.com/hc/es/articles/45444294953361
 ---
-> **At a glance:** Learn how cross-platform re-engagement attribution credits the media sources that bring existing users back to your product across platforms.
+> **Resumen:** Descubre cómo la atribución de re-engagement multiplataforma asigna crédito a las fuentes de medios que hacen que los usuarios existentes regresen a tu producto en distintas plataformas.
 
-## About cross-platform re-engagement attribution
+## Acerca de la atribución de re-engagement multiplataforma
 
-Cross-platform re-engagement attribution extends the <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">User-based cross-platform attribution</Anchor> model to include measuring user cohorts based on the latest ad engagement, in addition to the original acquisition source.
+La atribución de re-engagement multiplataforma amplía el modelo de <Anchor target="_blank" href="/marketers/es/docs/beta-user-based-cross-platform-attribution">Atribución multiplataforma basada en usuarios</Anchor> para incluir la medición de cohortes de usuarios basada en el engagement publicitario más reciente, además de la fuente de adquisición original.
 
-In cross-platform user-acquisition attribution, all activity for a given user is credited to the original media source that drove their first conversion, using a persistent Customer User ID (CUID) to link events across devices and platforms. This gives you a unified view of each user's journey, regardless of where it takes place.
+En la atribución de adquisición de usuarios multiplataforma, toda la actividad de un usuario se atribuye a la fuente de medios original que generó su primera conversión, utilizando un Customer User ID (CUID) persistente para vincular eventos entre dispositivos y plataformas. Esto te brinda una vista unificada del viaje de cada usuario, sin importar dónde tenga lugar.
 
-Cross-platform re-engagement attribution adds a layer to this model. Instead of always crediting the original acquisition source, it also gives credit to the media sources that bring existing users back to your product after a period of inactivity. This lets you measure the true impact of your campaigns across your entire product line, not just on the device or platform where they ran.
+La atribución de re-engagement multiplataforma añade una capa a este modelo. En lugar de atribuir siempre el crédito a la fuente de adquisición original, también asigna crédito a las fuentes de medios que hacen que los usuarios existentes regresen a tu producto después de un período de inactividad. Esto te permite medir el verdadero impacto de tus campañas en toda tu línea de productos, no solo en el dispositivo o plataforma donde se ejecutaron.
 
-Here is how the two models relate to each other:
+Así es como se relacionan ambos modelos:
 
-|  | Cross-platform user-acquisition attribution | Cross-platform re-engagement attribution |
+|  | Atribución de adquisición de usuarios multiplataforma | Atribución de re-engagement multiplataforma |
 | --- | --- | --- |
-| **What it measures** | First conversion and all subsequent activity | Re-activation of existing users after inactivity |
-| **Credit goes to** | Original acquisition source | Re-engaging media source (for example, Meta) |
-| **Scope** | All events within the inactivity restoration window | Events within the re-engagement window only |
-| **Setup** | Configured at the product line level | Opt-in, configured on top of the user acquisition setup at the product line level |
+| **Qué mide** | Primera conversión y toda la actividad posterior | Reactivación de usuarios existentes después de un período de inactividad |
+| **El crédito se asigna a** | Fuente de adquisición original | Fuente de medios de re-engagement (por ejemplo, Meta) |
+| **Alcance** | Todos los eventos dentro de la ventana de restauración de inactividad | Solo los eventos que ocurren dentro de la ventana de re-engagement |
+| **Configuración** | Configurado a nivel de línea de producto | Opcional, configurado sobre la configuración de adquisición de usuarios a nivel de línea de producto |
 
-Re-engagement attribution works alongside user acquisition, so you can see both the source that first acquired a user and the source that brought them back in the same reporting view.
+La atribución de re-engagement funciona junto con la adquisición de usuarios, por lo que puedes ver tanto la fuente que adquirió inicialmente a un usuario como la fuente que hizo que regresara, todo en la misma vista de reporte.
 
-## How does re-engagement attribution work
+## ¿Cómo funciona la atribución de re-engagement?
 
-For an in-app event to be attributed to a re-engaging media source, all of the following conditions must be met:
+Para que un evento in-app se atribuya a una fuente de medios de re-engagement, deben cumplirse todas las siguientes condiciones:
 
-* **Cross-platform re-engagement is enabled:** Re-engagement attribution must be enabled for the product line in your AppsFlyer settings.
-* **CUID is present:** The event must include a valid customer user ID (CUID) that matches a CUID previously seen in the same product line. This is how AppsFlyer identifies the user as returning, rather than new.
-* **The retargeting inactivity window has elapsed:** The CUID must not have been seen for at least the duration of the inactivity window for re-engagement since its last appearance. If the event occurs within this window, it is not counted as a re-engagement, and it is attributed to the original acquisition source.
-* **The event occurs within the re-engagement window:** Once a qualifying re-engagement attribution is detected, the re-engagement window opens. Only in-app events that occur within this window are attributed to the re-engaging media source. Events that occur after the window closes are attributed to the original acquisition source.
+* **El re-engagement multiplataforma está habilitado:** La atribución de re-engagement debe estar habilitada para la línea de producto en tu configuración de AppsFlyer.
+* **El CUID está presente:** El evento debe incluir un Customer User ID (CUID) válido que coincida con un CUID visto anteriormente en la misma línea de producto. Así es como AppsFlyer identifica a un usuario recurrente en lugar de uno nuevo.
+* **La ventana de inactividad de retargeting ha finalizado:** El CUID no debe haberse visto durante al menos el período definido por la ventana de inactividad para re-engagement desde su última aparición. Si el evento ocurre dentro de esta ventana, no se considera un re-engagement y se atribuye a la fuente de adquisición original.
+* **El evento ocurre dentro de la ventana de re-engagement:** Una vez que se detecta una atribución de re-engagement válida, se abre la ventana de re-engagement. Solo los eventos in-app que ocurren dentro de esta ventana se atribuyen a la fuente de medios de re-engagement. Los eventos que ocurren después de que se cierra la ventana se atribuyen a la fuente de adquisición original.
 
-## Cross-platform re-engagement user journey example
+## Ejemplo de viajes de usuario con re-engagement multiplataforma
 
-The following examples show the same user journey twice: first without cross-platform re-engagement, then with re-engagement opted in. Comparing the two illustrates exactly how re-engagement changes attribution.
+Los siguientes ejemplos muestran el mismo viaje de usuario dos veces: primero sin re-engagement multiplataforma y luego con re-engagement habilitado. Comparar ambos casos muestra exactamente cómo el re-engagement modifica la atribución.
 
 <div id="user-journey-without-re-engagement" />
 
-<Accordion title="User journey without re-engagement">
+<Accordion title="Viajes de usuario sin re-engagement">
 
-Consider a user journey across three platforms. A Google ad drives users to install a mobile app, where they sign up using a customer user ID. Later, a Meta ad drives the same user to visit the web platform, where they sign in with the same customer user ID. After signing in, the user makes two purchases on mobile: $100 and $50.
+Considera un viaje de usuario en tres plataformas. Un anuncio de Google impulsa a un usuario a instalar una app móvil, donde se registra utilizando un Customer User ID. Más adelante, un anuncio de Meta impulsa al mismo usuario a visitar la plataforma web, donde inicia sesión con el mismo Customer User ID. Después de iniciar sesión, el usuario realiza dos compras en móvil: $100 y $50.
 
 [![](https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png)](https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png)
 
-Because re-engagement is not enabled in this scenario, all activity is attributed to Google Ads, the original acquisition source. The $100 and $50 purchases, as well as both platform activations (mobile and web), are credited to Google. Meta receives no credit within cross-platform attribution, even though its ad drove the Web install.
+Como el re-engagement no está habilitado en este escenario, toda la actividad se atribuye a Google Ads, la fuente de adquisición original. Las compras de $100 y $50, así como ambas activaciones de plataforma (móvil y web), se atribuyen a Google. Meta no recibe crédito dentro de la atribución multiplataforma, aunque su anuncio impulsó la instalación web.
 
-| Media source | Total attributions | User acquisition | Re-engagements | Platform activations | Mobile | Web | LTV |
+| Fuente de medios | Atribuciones totales | Adquisición de usuarios | Reenganches | Activaciones de plataforma | Móvil | Web | Característica |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Google | 1 | 1 | 0 | 2 | 1 | 1 | $150 |
-| Meta | 0 | 0 | 0 | 0 | 0 | 0 | $0 |
+| Meta | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 </Accordion>
 
 <div id="user-journey-with-re-engagement" />
 
-<Accordion title="User journey with re-engagement">
+<Accordion title="Viaje de usuario con re-engagement">
 
-The user journey is identical to the one above. The difference is that the product line has opted in to re-engagement.
+El viaje de usuario es idéntico al anterior. La diferencia es que la línea de producto tiene habilitado el re-engagement.
 
 [![](https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png)](https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png)
 
-In this case, the retargeting inactivity window determines whether the Meta-driven Web sign-in qualifies as a re-engagement event. The window opens from the last time the customer's user ID was seen, which was at mobile sign-up. If enough time passes before the Web sign-in, meaning the sign-in occurs outside the inactivity window for re-engagement, Meta receives re-engagement credit.
+En este caso, la ventana de inactividad de retargeting determina si el inicio de sesión en web impulsado por Meta califica como un evento de re-engagement. La ventana comienza a contar desde la última vez que se vio el Customer User ID, que fue durante el registro en móvil. Si transcurre suficiente tiempo antes del inicio de sesión en web, es decir, si ocurre fuera de la ventana de inactividad para re-engagement, Meta recibe crédito por el re-engagement.
 
-Once Meta is credited with the re-engagement, the re-engagement window opens. Any in-app events that occur within this window are attributed to Meta. In this example, the $100 purchase falls within the re-engagement window and is attributed to Meta. The $50 purchase falls outside the re-engagement window and is attributed back to Google.
+Una vez que Meta recibe crédito por el re-engagement, se abre la ventana de re-engagement. Cualquier evento in-app que ocurra dentro de esta ventana se atribuye a Meta. En este ejemplo, la compra de $100 ocurre dentro de la ventana de re-engagement y se atribuye a Meta. La compra de $50 ocurre fuera de la ventana de re-engagement y vuelve a atribuirse a Google.
 
-| Media source | Total attributions | User acquisition | Re-engagements | Platform activations | Mobile | Web | LTV |
+| Fuente de medios | Atribuciones totales | Adquisición de usuarios | Reenganches | Activaciones de plataforma | Móvil | Web | Característica |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Google | 1 | 1 | 0 | 1 | 1 | 0 | $50 |
 | Meta | 1 | 0 | 1 | 1 | 0 | 1 | $100 |
 
 </Accordion>
 
-## Set up cross-platform re-engagement attribution
+## Configurar la atribución de re-engagement multiplataforma
 
-To set up cross-platform re-engagement attribution, you need to apply a few settings in AppsFlyer specific to re-engagement on top of your product line setup. For more information, see <Anchor target="_blank" href="/marketers/docs/product-line-group-apps-for-cross-platform-attribution#how-to-create-a-product-line">How to create a product line</Anchor>.
+Para configurar la atribución de re-engagement multiplataforma, debes aplicar algunos ajustes específicos de re-engagement en AppsFlyer además de la configuración de tu línea de producto. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/product-line-group-apps-for-cross-platform-attribution#cómo-crear-una-línea-de-producto">Cómo crear una línea de producto</Anchor>.
 
-## View cross-platform attribution results
+## Ver resultados de atribución multiplataforma
 
-> 📄 **See also**
+> 📄 **Ver también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/end-user-events-cross-platform-report-in-data-locker">Data Locker end-user events cross-platform report</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/my-dashboards#crossplatform-dashboard">The cross-platform dashboard</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/end-user-events-cross-platform-report-in-data-locker">Reporte multiplataforma de eventos de usuario final en Data Locker</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/my-dashboards#crossplatform-dashboard">El dashboard multiplataforma</Anchor>
 
-<div data-zendesk-anchors="h_01KNEVA6TAJZRZYS11Z0Q59AQJ=about-cross-platform-re-engagement-attribution h_01KNEVA6TASWZ0S6HH5QT0ZZF0=how-does-re-engagement-attribution-work a-cross-platform-re-engagement-user-journey-example=cross-platform-re-engagement-user-journey-example h_01KNEVA6TA5PVF5E8YWFE13QAQ=cross-platform-re-engagement-user-journey-example h_01KNEVA6TAPFZ48SHNN1F8Y8P5=user-journey-without-re-engagement h_01KNEVA6TA0ZRG6Z6A38JGEFAQ=user-journey-with-re-engagement h_01KNEVH8QZ2K59BJX0HZ908FXR=set-up-cross-platform-re-engagement-attribution h_01KNEVH8QZNV046JAF9PRADK4E=view-cross-platform-attribution-results h_01KNEVH8QZK4J276D8RPBH15JY=see-also" />
+<div data-zendesk-anchors="about-cross-platform-re-engagement-attribution=acerca-de-la-atribuci%C3%B3n-de-re-engagement-multiplataforma h_01KNEVA6TAJZRZYS11Z0Q59AQJ=acerca-de-la-atribuci%C3%B3n-de-re-engagement-multiplataforma how-does-re-engagement-attribution-work=c%C3%B3mo-funciona-la-atribuci%C3%B3n-de-re-engagement h_01KNEVA6TASWZ0S6HH5QT0ZZF0=c%C3%B3mo-funciona-la-atribuci%C3%B3n-de-re-engagement a-cross-platform-re-engagement-user-journey-example=ejemplo-de-viajes-de-usuario-con-re-engagement-multiplataforma h_01KNEVA6TA5PVF5E8YWFE13QAQ=ejemplo-de-viajes-de-usuario-con-re-engagement-multiplataforma h_01KNEVA6TAPFZ48SHNN1F8Y8P5=user-journey-without-re-engagement h_01KNEVA6TA0ZRG6Z6A38JGEFAQ=user-journey-with-re-engagement set-up-cross-platform-re-engagement-attribution=configurar-la-atribuci%C3%B3n-de-re-engagement-multiplataforma h_01KNEVH8QZ2K59BJX0HZ908FXR=configurar-la-atribuci%C3%B3n-de-re-engagement-multiplataforma view-cross-platform-attribution-results=ver-resultados-de-atribuci%C3%B3n-multiplataforma h_01KNEVH8QZNV046JAF9PRADK4E=ver-resultados-de-atribuci%C3%B3n-multiplataforma h_01KNEVH8QZK4J276D8RPBH15JY=ver-tambi%C3%A9n" />

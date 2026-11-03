@@ -1,5 +1,5 @@
 ---
-title: Data availability windows
+title: Períodos de disponibilidad de los datos
 metadata:
   keywords:
     - Advertisers
@@ -14,41 +14,40 @@ x-zendesk:
     - Marketers
     - Raw Reports
   created_at: '2022-01-04T03:33:13Z'
-  edited_at: '2026-07-15T08:18:16Z'
+  edited_at: '2026-08-12T11:51:58Z'
   id: 4415473374865
-  locale: en-us
+  locale: es
   section: Raw data reporting/APIs
   section_id: 6550930711057
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4415473374865-Data-availability-windows
+  url: https://support.appsflyer.com/hc/es/articles/4415473374865
 ---
-> **At a glance:** Data availability depends on the report type and the defined availability window.
+> **En resumen:** La disponibilidad de los datos depende del tipo de reporte y del período de disponibilidad definido.
 
-## Data availability windows
+## Períodos de disponibilidad de los datos
 
-* The terms **availability window** and **data retention** mean different things. <Anchor target="_blank" href="https://www.appsflyer.com/legal/services-privacy-policy/">Data retention</Anchor> relates to the period we keep raw data on our servers and is of longer duration than the availability window.
-* The window duration depends on your subscription package.
-* The article doesn't apply to <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor>.
+* Los términos **período de disponibilidad** y **retención de datos** tienen significados diferentes. La <Anchor target="_blank" href="https://www.appsflyer.com/legal/services-privacy-policy/">retención de datos</Anchor> corresponde al período durante el que conservamos los raw data en nuestros servidores y tiene una duración mayor que el período de disponibilidad.
+* La duración del período depende de tu paquete de suscripción.
+* Este artículo no se aplica a <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">Data Locker</Anchor>.
 
-### Raw data availability window
+### Período de disponibilidad de los raw data
 
-The availability window limits raw data provided by Pull API and the Raw Data export page. The window duration depends on the report type, as detailed in the following table.
+El período de disponibilidad limita los raw data proporcionados por Pull API y la página de exportación de raw data. La duración del período depende del tipo de reporte, como se detalla en la siguiente tabla.
 
-| Report event type | Example report types | Default availability window |
+| Tipo de evento del reporte | Ejemplos de tipos de reportes | Período de disponibilidad predeterminado |
 | --- | --- | --- |
-| Attributions | Organic installs, non-organic installs, retargeting conversions, uninstalls | 60 out of the last 90 days |
-| In-app events | Organic in-app events, non-organic in-app events, retargeting in-app events | 31 out of the last 90 days |
+| Atribuciones | Instalaciones orgánicas, instalaciones no orgánicas, conversiones de retargeting y desinstalaciones | 60 de los últimos 90 días |
+| Eventos in-app | Eventos orgánicos in-app, eventos no orgánicos in-app y eventos in-app de retargeting | 31 de los últimos 90 días |
 
-### Aggregated data availability window
+### Período de disponibilidad de los datos agregados
 
-An availability window limits data provided by Pull API and the Aggregated Data export page. The window duration depends on the report type, as detailed in the following table.
+Un período de disponibilidad limita los datos proporcionados por Pull API y la página de exportación de datos agregados. La duración del período depende del tipo de reporte, como se detalla en la siguiente tabla.
 
-| Report | Availability window |
+| Reporte | Ventana de disponibilidad |
 | --- | --- |
-| Aggregated reports | 25 months (2 years + 1 month), <Anchor target="_blank" href="/marketers/docs/bulletin-aggregated-ltv-data-availability">starting with the first app install</Anchor> |
+| Reportes agregados | 25 meses (2 años + 1 mes), <Anchor target="_blank" href="/marketers/es/docs/bulletin-aggregated-ltv-data-availability">a partir de la primera instalación de la app</Anchor> |
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/report-generation-quotas-rate-limitations">Report generation quotas</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/report-generation-quotas-rate-limitations">Cuotas de generación de reportes</Anchor>
 
-<div data-zendesk-anchors="h_01HE0FT9CNECNKYMVX9ZJJ9DNV=data-availability-windows h_01HE0FT9CNS4N1GD1AYRBSRWPF=raw-data-availability-window h_01HE0FT9CPW91ASDH9MEW083ZH=aggregated-data-availability-window h_01HE7S7VH4PC6FQAYKP6A0G4YY=see-also" />
+<div data-zendesk-anchors="data-availability-windows=per%C3%ADodos-de-disponibilidad-de-los-datos h_01HE0FT9CNECNKYMVX9ZJJ9DNV=per%C3%ADodos-de-disponibilidad-de-los-datos raw-data-availability-window=per%C3%ADodo-de-disponibilidad-de-los-raw-data h_01HE0FT9CNS4N1GD1AYRBSRWPF=per%C3%ADodo-de-disponibilidad-de-los-raw-data aggregated-data-availability-window=per%C3%ADodo-de-disponibilidad-de-los-datos-agregados h_01HE0FT9CPW91ASDH9MEW083ZH=per%C3%ADodo-de-disponibilidad-de-los-datos-agregados h_01HE7S7VH4PC6FQAYKP6A0G4YY=consulta-tambi%C3%A9n" />

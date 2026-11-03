@@ -1,5 +1,7 @@
 ---
-title: Snapchat—Web integration setup for PC and console apps
+title: >-
+  Configuración de la integración de Snapchat—Web para aplicaciones de PC y
+  consola
 metadata:
   keywords:
     - Marketers
@@ -12,120 +14,119 @@ x-zendesk:
     - Marketers
     - PC & Console Attribution
   created_at: '2025-11-28T12:53:35Z'
-  edited_at: '2026-09-15T10:17:44Z'
+  edited_at: '2026-09-17T00:29:57Z'
   id: 41396370612497
-  locale: en-us
+  locale: es
   section: Snap (Snapchat)
   section_id: 6551316540945
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/41396370612497-Snapchat-Web-integration-setup-for-PC-and-console-apps
+  url: https://support.appsflyer.com/hc/es/articles/41396370612497
 ---
-> **At a glance:** Learn how to integrate Snapchat Ads web for PC and console apps with AppsFlyer and set up campaigns in Snapchat Ads web.
+> **En resumen:** Aprende a integrar Snapchat Ads web para aplicaciones de PC y consola con AppsFlyer y a configurar campañas en Snapchat Ads web.
 
-> ❗️ **Warning**
+> ❗️ **Advertencia**
 >
-> This integration is only available for PC and console apps, such as Steam, Epic, or Native PC. For mobile apps, see the <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup">Snapchat Ads integration setup</Anchor> page.
+> Esta integración solo está disponible para aplicaciones de PC y consola, como Steam, Epic o Native PC. Para aplicaciones móviles, consulta la página de <Anchor target="_blank" href="/marketers/es/docs/tiktok-for-business-advanced-srn-integration-setup">configuración de la integración de Snapchat Ads</Anchor> .
 
-## Overview
+## Visión general
 
-This article contains information and steps on how to set up and use Snapchat Ads web for PC and console apps with AppsFlyer.
+Este artículo contiene información y pasos sobre cómo configurar y utilizar Snapchat Ads web para aplicaciones de PC y consola con AppsFlyer.
 
-### Prerequisite
+### Requisitos previos
 
-Before activating the Snapchat Ads web integration, make sure you have a business account in <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US">Snapchat Ads Manager.</Anchor>
+Antes de activar la integración de Snapchat Ads web, asegúrate de tener una cuenta comercial en <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US">Snapchat Ads Manager.</Anchor>
 
-## Activating partner in AppsFlyer
+## Activación del partner en AppsFlyer
 
-**To activate the partner integration:**
+**Para activar la integración de partners:**
 
-1. In AppsFlyer, from the side menu, open **Collaborate** > **Partner Integrations > Marketplace** tab.
-2. Search for **Snapchat Ads web** (`snapweb_int`).
-3. Click **Integrate**. You’re directed to the setup page.
-4. In the **Integration** tab, turn on **Activate partner**. The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with the partner.
-5. Complete the configuration using the relevant tabs, as described in the next section.
+1. En AppsFlyer, en el menú lateral, abre **Collaborate** > **Partner Integrations > Marketplace** tab.
+2. Busca **Snapchat Ads web** (`snapweb_int`).
+3. Haz clic **Integrar**. Se te redirige a la página de configuración.
+4. En la pestaña **Integración** , activa **Activar partner**. El interruptor debe permanecer (<Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor>) mientras trabajes con el partner.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación.
 
-## Setting up Snapchat Ads web in AppsFlyer
+## Configuración de Snapchat Ads web en AppsFlyer
 
-In this part of the setup, you can also set up postbacks to Snapchat Ads web via the Snapchat events API. The Snapchat Ads web (`snapweb_int`) integration uses an Events API tool provided by Snapchat Ads, allowing advertisers to send data from their **PC and console apps** directly to Snapchat's servers. Such data may include user actions, such as purchases, registrations, and other types of conversions performed on non-mobile platforms (websites or applications). The data is then used by Snapchat Ads to optimize ad targeting, measure ad performance, and build custom audiences for retargeting.
+En esta parte de la configuración, también puedes configurar postbacks para Snapchat Ads web mediante la API de eventos de Snapchat. La integración de Snapchat Ads web (`snapweb_int`) utiliza una herramienta de API de eventos proporcionada por Snapchat Ads que permite a los anunciantes enviar datos desde sus **aplicaciones de PC y consola** directamente a los servidores de Snapchat. Dichos datos pueden incluir acciones del usuario, como compras, registros y otros tipos de conversiones realizadas en plataformas no móviles (sitios web o aplicaciones). Luego, Snapchat Ads utiliza los datos para optimizar el Ad Targeting, medir el rendimiento de los anuncios y crear audiencias personalizadas para el retargeting.
 
-The integration with Snapchat Ads web only supports sending postbacks for installs and in-app events.
+La integración con Snapchat Ads web solo admite el envío de postbacks para instalaciones y eventos in-app.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The **Integration** tab comprises several sections, as described below.
+La pestaña **Integración** incluye varias secciones, como se describe a continuación.
 
-**Activate partner**
+**Activar socio**
 
-To configure the integration, you must first turn on the **Activate partner** toggle.
+Para configurar la integración, primero debes activar el **Activar partner** interruptor.
 
-**General settings**
+**Configuración general**
 
-* **Pixel ID:** Enter the Pixel ID. You can create it or retrieve it from your Snapchat Ads Manager by following the instructions detailed in the <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US">Snapchat Ads official documentation</Anchor>[.](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US)
-* **Access token:** Enter the access token. To generate it or retrieve it, follow the instructions [in](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US) the <Anchor target="_blank" href="https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted">Snapchat Ads official documentation</Anchor>[.](https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted)
+* **Pixel ID:** Ingresa el Pixel ID. Puedes crearlo u obtenerlo desde Snapchat Ads Manager siguiendo las instrucciones detalladas en la <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US">documentación oficial de Snapchat Ads</Anchor>[.](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US)
+* **Token de acceso:** Ingresa el token de acceso. Para generarlo u obtenerlo, sigue las instrucciones [in](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US) la <Anchor target="_blank" href="https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted">documentación oficial de Snapchat Ads</Anchor>[.](https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted)
 
-**Enable view-through attribution**
+**Habilitar la atribución view-through**
 
-AppsFlyer supports view-through attribution for Snapchat Ads web campaigns using probabilistic modeling (PMOD) and a [Smart Script](#create-a-landing-page-with-onelink-smart-script) or [Smart Banner](#create-a-landing-page-with-onelink-smart-banners)-enabled landing page. This allows AppsFlyer to attribute app installs that result from users viewing an ad and then later installing the app, even across platforms, without requiring a direct click.
+AppsFlyer admite la atribución view-through para campañas de Snapchat Ads web mediante modelado probabilístico (PMOD) y una landing page habilitada con [Smart Script](#create-a-landing-page-with-onelink-smart-script) o [Smart Banner](#create-a-landing-page-with-onelink-smart-banners). Esto permite que AppsFlyer atribuya las instalaciones de aplicaciones que resultan de que los usuarios ven un anuncio y luego instalan la aplicación, incluso entre plataformas, sin necesidad de hacer clic directamente.
 
-When a user clicks a Snapchat ad on the web and lands on a [Smart Script](#create-a-landing-page-with-onelink-smart-script) or [Smart Banner](#create-a-landing-page-with-onelink-smart-banners)-enabled landing page, AppsFlyer can attribute the downstream app install. If available, the `ScCid` will be included in the postback to Snapchat to enhance attribution fidelity.
+Cuando un usuario hace clic en un anuncio de Snapchat en la web y llega a una landing page habilitada para [Smart Script](#create-a-landing-page-with-onelink-smart-script) o [Smart Banner](#create-a-landing-page-with-onelink-smart-banners), AppsFlyer puede atribuir la instalación posterior de la aplicación. Si está disponible, el `ScCid` se incluirá en el postback a Snapchat para mejorar la fidelidad de la atribución.
 
-**To enable view-through attribution:**
+**Habilitar la atribución view-through:**
 
-1. In AppsFlyer, from the sidebar, open **Active Integrations** > **Snapchat Ads web ads**.
-2. In the **Integration** tab, scroll to the **Install attribution** section.
-3. Turn on **Install view-through attribution**.
-4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions">Enable equal priority for cross-platform impressions</Anchor>.
-5. Open the **Attribution link** tab.
-6. Scroll to the **View-through attribution** section and set the **view-through lookback window** (up to 24 hours).
-7. Click **Save integration** to apply your settings.
+1. En AppsFlyer, desde la barra lateral, abre **Integraciones activas** > **Snapchat Ads web ads**.
+2. En la pestaña **Integración**, desplázate hasta la sección **Atribución de instalaciones**.
+3. Activa la **Atribución view-through de instalaciones**.
+4. **[opcional]** Activa la **Prioridad de atribución igualitaria cross-platform** y configura su ventana de lookback. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions">Habilitar prioridad igualitaria para impresiones cross-platform</Anchor>.
+5. Abre la pestaña **Enlace de atribución**.
+6. Desplázate hasta la sección **Atribución view-through** y configura la **ventana de lookback view-through** (hasta 24 horas).
+7. Haz clic en **Guardar integración** para aplicar tu configuración.
 
-**Default postbacks**
+**Postbacks predeterminados**
 
-Postbacks for installs are sent automatically only to Snapchat Ads web.
+Los postbacks de instalaciones se envían automáticamente solo a Snapchat Ads web.
 
-**In-app event postbacks**
+**Habilitar la atribución por impresiones**
 
-Configure the mapping of in-app event postbacks that are sent to Snapchat Ads web. These events can be viewed in the [Snapchat Ads Manager](https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US).
+Configura la asignación de postbacks de eventos in-app que se envían a Snapchat Ads web. Estos eventos se pueden ver en el [Snapchat Ads Manager](https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US).
 
-1. Turn on **In-app event postbacks**.
-2. Click **Add event** to add an SDK or server-to-server event to the list. The following table lists and describes the fields:
+1. Activa **Postbacks de eventos in-app**.
+2. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista. La siguiente tabla enumera y describe los campos:
 
-| **Parameter name** | **Description** |
+| **Nombre del parámetro** | **Nota** |
 | --- | --- |
-| AppsFlyer event | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<ul><li>Click Add item and enter the event name.</li></ul> |
-| mapped to partner event | The unique name or ID of each event, as defined on the partner's side.<ul><li>Select from the list the most suitable pre-defined partner event.</li></ul> |
-| for users from | This partner only: In-app event postbacks are sent only for events attributed to this partner. |
-| including | Values and revenue: All event parameters, including the revenue value (if it exists in the event), are sent in the postback. |
+| Evento de AppsFlyer | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos de servidor a servidor.<ul><li>Haz clic en Agregar elemento e introduce el nombre del evento.</li></ul> |
+| Asignado al evento asociado | El ID o nombre único de cada evento, tal y como lo defina el partner.<ul><li>Selecciona de la lista el evento de socio predefinido más adecuado.</li></ul> |
+| Para usuarios de | Solo este partner: Los postbacks de eventos in-app se envían solo para los eventos atribuidos a este partner. |
+| Incluye | Valores e ingresos: Todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento), se envían en el postback. |
 
-3. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event. For more information, see <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">Conditional in-app event postbacks</Anchor>.
-4. Set the **In-app event postback window**. For more information, see i<Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">n-app event postback window</Anchor>.
-5. Click **Save integration**.
-6. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
-   1. From the top-left corner, under the partner name, click the app name to open the list of apps.
-   2. Select a different app from the drop-down list.
-   3. Repeat the integration steps for the selected app.
+3. [Opcional] Haz clic en el **Agregar condición** icono para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">configurar condiciones</Anchor> para un evento. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">postbacks de eventos in-app condicionales</Anchor>.
+4. Configura la **ventana de postback de eventos in-app**. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">Configuración de la ventana de postback de eventos in-app</Anchor>.
+5. Haz clic en **Guardar integración**.
+6. [Opcional] Después de guardar la integración, desde la página de configuración, puedes integrar más de tus aplicaciones con el partner:
+   1. En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
+   2. Selecciona una aplicación diferente en la lista desplegable.
+   3. Repite los pasos de integración para la aplicación seleccionada.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generating an attribution link in the AppsFlyer UI isn't currently available. You can use a cross-platform landing page with SmartScript, or you can create a direct attribution link for your app. See the table below.
+La generación de un enlace de atribución en la interfaz de usuario de AppsFlyer no está disponible actualmente. Puedes usar una landing page multiplataforma con SmartScript o crear un enlace de atribución directa para tu aplicación. Consulta la tabla a continuación.
 
 <Table>
   <thead>
     <tr>
       <th>
-        Option
+        Opción
       </th>
       <th>
-        Actions
+        Acciones
       </th>
       <th>
-        Who's involved
+        ¿Quién participa?
       </th>
     </tr>
   </thead>
@@ -133,53 +134,53 @@ Generating an attribution link in the AppsFlyer UI isn't currently available. Yo
   <tbody>
     <tr>
       <td>
-        Cross-platform landing page
+        Landing page multiplataforma
       </td>
       <td>
-        **Recommended.** Use this option when your campaign promotes an app that’s available on multiple platforms, such as Epic and Steam.  
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Learn about cross-platform landing pages</Anchor>  
+        **Recomendado.** Usa esta opción cuando tu campaña promocione una aplicación que esté disponible en varias plataformas, como Epic y Steam.  
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Más información sobre las landing pages multiplataforma</Anchor>  
 
-        <Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Learn how to set up a cross-platform landing page</Anchor>  
-        Make sure all relevant URL parameters (that are later captured by the Smart Script) are appended to the ad URL
+        <Anchor target="_blank" href="/marketers/es/docs/cross-platform-landing-pages-with-smart-script">Aprende a configurar una landing page multiplataforma</Anchor>  
+        Asegúrate de que todos los parámetros de URL relevantes (que luego captura el Smart Script) se añadan a la URL del anuncio
 
-        * Make sure the script takes the `ScCid` value from the incoming URL and adds it to the generated link. This means you must map the outgoing `ScCid` URL parameter to the incoming `ScCid` parameter.  
-          **Note:** To display `ScCid` in AppsFlyer raw data reports, the incoming `ScCid` parameter must also be mapped to one of the outgoing parameters `af_sub[1–5]`.
-        * Optional. You can use Snapchat’s dynamic URL macros instead of hard-coding the values manually. For more info, see the [Snapchat official documentation](https://businesshelp.snapchat.com/s/article/add-url-macros?language=en_US).
+        * Asegúrate de que el script tome el valor `ScCid` de la URL de entrada y lo añada al enlace generado. Esto significa que debes asignar el parámetro de URL saliente `ScCid` al parámetro entrante `ScCid`.  
+          **Nota:** Para mostrar `ScCid` en los reportes de raw data de AppsFlyer, el parámetro entrante `ScCid` también debe asignarse a uno de los parámetros salientes `af_sub[1–5]`.
+        * Opcional: Puedes usar las macros de URL dinámicas de Snapchat en lugar de codificar manualmente los valores. Para más información, consulta la [documentación oficial de Snapchat](https://businesshelp.snapchat.com/s/article/add-url-macros?language=en_US).
       </td>
       <td>
-        Marketer (may require developer assistance)
+        Marketer (puede requerir la asistencia del desarrollador)
       </td>
     </tr>
     <tr>
       <td>
-        Direct attribution link
+        Enlace de atribución directa
       </td>
       <td>
-        If you don't use a cross-platform landing page, because you only have one app on one platform, you can create direct attribution links to place behind ads.   
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor>
+        Si no utilizas una landing page multiplataforma porque solo tienes una aplicación en una plataforma, puedes crear enlaces de atribución directa para colocarlos detrás de los anuncios.   
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor>
 
-        Make sure the mandatory parameters are included in your link:
+        Asegúrate de que los parámetros obligatorios estén incluidos en tu enlace:
 
-        * `af_media_source`
+        * `media_source`
         * `af_campaign_id`
         * `af_r`
 
-        **Template to use for Snapchat Ads web ad link:**
+        **Plantilla que debes usar para el enlace del anuncio web de Snapchat Ads:**
 
         ```
         https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source=snapweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_channel={{site_source_name}}&af_r={encoded landing page and URL params}
         ```
 
-        **Sample link of a Snapchat ad web link leading to Steam:**
+        **Enlace de muestra de un enlace de anuncio web de Snapchat que dirige a Steam:**
 
         ```
         https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=snapweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
         ```
 
-        **Note**: The template includes some dynamic URL parameters supported by Snapchat. If you prefer, you can replace them with real values manually.
+        **Nota**: La plantilla incluye algunos parámetros de URL dinámicos admitidos por Snapchat. Si lo prefieres, puedes reemplazarlos por valores reales manualmente.
       </td>
       <td>
-        Marketer
+        Comercializador
       </td>
     </tr>
   </tbody>
@@ -189,59 +190,59 @@ Generating an attribution link in the AppsFlyer UI isn't currently available. Yo
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost isn't available for Snapchat Ads web.
+El costo no está disponible para Snapchat Ads web.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue isn't available for Snapchat Ads web.
+Los ingresos publicitarios no están disponibles para Snapchat Ads Web.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Currently, permissions aren't granted to Snapchat Ads web.
+Actualmente, no se conceden permisos para Snapchat Ads Web.
 
 </Accordion>
 
-## Setting up campaigns in Snapchat Ads web for PC and console apps
+## Configuración de campañas en Snapchat Ads Web para aplicaciones de PC y consola
 
-Set up your campaign in Snapchat Ads Manager. For more information, see <Anchor target="_blank" href="/marketers/docs/snapchat-create-web-based-campaigns#set-up-appsflyer-integration-in-snapchat-ads">Set up AppsFlyer integration in Snapchat Ads</Anchor>.
+Configura tu campaña en Snapchat Ads Manager. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/snapchat-create-web-based-campaigns#configurar-la-integración-de-appsflyer-en-snapchat-ads">Configurar la integración de AppsFlyer en Snapchat Ads</Anchor>.
 
-When you set up your new campaign:
+Cuando configuras tu nueva campaña:
 
-* Select **Website** as the conversion location.
-* When you name your Snapchat conversion pixel, enter the same pixel ID you entered for `snapweb_int` in the *AppsFlyer Partner Marketplace*.
-* When you enter the website URL as the destination for your ad, the URL should be for one of the following:
-  * Web landing page (recommended when you have an app on multiple platforms)
-  * Store URL (recommended when your app is in a single app store, on a single platform)
+* Selecciona **Sitio web** como ubicación de conversión.
+* Cuando nombres tu píxel de conversión de Snapchat, introduce el mismo ID de píxel que introdujiste para `snapweb_int` en *AppsFlyer Partner Marketplace*.
+* Cuando ingresas la URL del sitio web como destino de tu anuncio, la URL debe ser para una de las siguientes opciones:
+  * Página de aterrizaje web (recomendada cuando tienes una aplicación en múltiples plataformas)
+  * URL de la tienda (se recomienda cuando tu aplicación está en una sola tienda de aplicaciones, en una sola plataforma)
 
-## View web-to-app attribution data
+## Ver datos de atribución web-to-app
 
-Although web-based conversion events are sent to Snapchat under the original `snapweb_int` PID, they are reported in the AppsFlyer dashboard and raw data reports under the `snapchat_int` PID. This applies to both primary conversion events and conversion assist events.
+Aunque los eventos de conversión web se envían a Snapchat bajo el PID original `snapweb_int`, se reportan en el Dashboard de AppsFlyer y en los Reportes de raw data bajo el PID `snapchat_int`. Esto se aplica tanto a los eventos de conversión primarios como a los eventos de asistencia a la conversión.
 
-This unified reporting view allows you to analyze the performance of both web and app campaigns in one place, including comprehensive web and mobile cost reporting.
+Esta vista unificada de reportes te permite analizar el rendimiento de campañas web y de aplicación en un solo lugar, incluidos reportes completos de costos web y móvil.
 
-### View in the dashboard
+### Ver en el dashboard
 
-All Snapchat web-to-app attributions appear under `snapchat_int` in the Overview and Activity dashboards. This provides a single, consolidated view of campaign results across platforms. Use standard filters and breakdowns to compare app and web traffic within your Snapchat Ads data.
+Todas las atribuciones web-to-app de Snapchat aparecen bajo `snapchat_int` en los dashboards Overview y Activity. Esto proporciona una vista única y consolidada de los resultados de campañas en todas las plataformas. Utiliza filtros y desgloses estándar para comparar el tráfico de aplicaciones y web dentro de tus datos de Snapchat Ads.
 
-### View in raw data and API reports
+### Ver en reportes raw data y API
 
-* **Raw data exports and API responses** include the `snapchat_int` PID in the `media_source` field for Snapchat web activity. To verify web campaign setup details, refer to the `original_url` field that shows `snapweb_int` as the PID used during the creation of web campaigns.
-* **Postback reports** show `snapweb_int` as the original media source to which the postback was sent.
+* **Las exportaciones de raw data y las respuestas de la API** incluyen el PID `snapchat_int` en el campo `media_source` para la actividad web de Snapchat. Para verificar los detalles de configuración de la campaña web, consulta el campo `original_url`, que muestra `snapweb_int` como el PID utilizado durante la creación de campañas web.
+* **Los reportes de postbacks** muestran `snapweb_int` como la fuente de medios original a la que se envió el postback.
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-| Trait | Description |
+| Caducado | Nota |
 | --- | --- |
-| Clicks and impressions (Temporary limitation) | Clicks and impressions for campaigns targeting PC & Console apps are temporarily not available from Snapchat SRN. |
+| Clics e impresiones (limitación temporal) | Los clics e impresiones de las campañas dirigidas a aplicaciones de PC & consola no están disponibles temporalmente desde Snapchat SRN. |
 
-<div data-zendesk-anchors="h_01KB58BEK73PMXZXB8RA59YHM2=warning h_01KB58BEK78P4C35JYZXKJFPHW=overview h_01KB58BEK77YP1T2XCHZJ00V7S=prerequisite h_01KB58BEK7A3MJT4C9ZA9ZFGDA=activating-partner-in-appsflyer h_01KB58BEK7CGYB1DZJCG2WMH0Y=setting-up-snapchat-ads-web-in-appsflyer h_01KB58BEK7SE837F67MKRFY6K2=integration-tab h_01KB58BEK74Q2K3SNCPFQSCJ2B=attribution-link-tab h_01KB58BEK7WAVABV4YBR728FCF=cost-tab h_01KB58BEK7ESEZFARRQ3HB6P8H=ad-revenue-tab h_01KB58BEK7WXEFMSSB0QRE4E6B=permissions-tab h_01KB58BEK7D8760J2ZWJ9B1K3Y=setting-up-campaigns-in-snapchat-ads-web-for-pc-and-console-apps view-webtoapp-attribution-data=view-web-to-app-attribution-data h_01KB58BEK7M96WYN7YMERH7CWW=view-web-to-app-attribution-data h_01KB58BEK70FB5SYQAV938CB5W=view-in-the-dashboard h_01KB58BEK7YWM10A7RCNV7YDEM=view-in-raw-data-and-api-reports h_01KB58BEK7MDZGT7G7RQ9VK9MZ=traits-and-limitations" />
+<div data-zendesk-anchors="h_01KB58BEK73PMXZXB8RA59YHM2=advertencia overview=visi%C3%B3n-general h_01KB58BEK78P4C35JYZXKJFPHW=visi%C3%B3n-general prerequisite=requisitos-previos h_01KB58BEK77YP1T2XCHZJ00V7S=requisitos-previos activating-partner-in-appsflyer=activaci%C3%B3n-del-partner-en-appsflyer h_01KB58BEK7A3MJT4C9ZA9ZFGDA=activaci%C3%B3n-del-partner-en-appsflyer setting-up-snapchat-ads-web-in-appsflyer=configuraci%C3%B3n-de-snapchat-ads-web-en-appsflyer h_01KB58BEK7CGYB1DZJCG2WMH0Y=configuraci%C3%B3n-de-snapchat-ads-web-en-appsflyer h_01KB58BEK7SE837F67MKRFY6K2=integration-tab h_01KB58BEK74Q2K3SNCPFQSCJ2B=attribution-link-tab h_01KB58BEK7WAVABV4YBR728FCF=cost-tab h_01KB58BEK7ESEZFARRQ3HB6P8H=ad-revenue-tab h_01KB58BEK7WXEFMSSB0QRE4E6B=permissions-tab setting-up-campaigns-in-snapchat-ads-web-for-pc-and-console-apps=configuraci%C3%B3n-de-campa%C3%B1as-en-snapchat-ads-web-para-aplicaciones-de-pc-y-consola h_01KB58BEK7D8760J2ZWJ9B1K3Y=configuraci%C3%B3n-de-campa%C3%B1as-en-snapchat-ads-web-para-aplicaciones-de-pc-y-consola view-webtoapp-attribution-data=ver-datos-de-atribuci%C3%B3n-web-to-app h_01KB58BEK7M96WYN7YMERH7CWW=ver-datos-de-atribuci%C3%B3n-web-to-app view-in-the-dashboard=ver-en-el-dashboard h_01KB58BEK70FB5SYQAV938CB5W=ver-en-el-dashboard view-in-raw-data-and-api-reports=ver-en-reportes-raw-data-y-api h_01KB58BEK7YWM10A7RCNV7YDEM=ver-en-reportes-raw-data-y-api traits-and-limitations=especificaciones-y-limitaciones h_01KB58BEK7MDZGT7G7RQ9VK9MZ=especificaciones-y-limitaciones" />

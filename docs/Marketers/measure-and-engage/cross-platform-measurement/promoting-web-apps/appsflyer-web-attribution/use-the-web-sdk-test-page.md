@@ -1,5 +1,5 @@
 ---
-title: Use the Web SDK Test page
+title: Utiliza la página de prueba del SDK web
 metadata:
   keywords:
     - SDK Test
@@ -9,81 +9,80 @@ x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2026-08-23T16:04:12Z'
-  edited_at: '2026-08-24T06:28:48Z'
+  edited_at: '2026-08-26T00:40:33Z'
   id: 50118956978577
-  locale: en-us
+  locale: es
   section: AppsFlyer Web Attribution
   section_id: 43560690387729
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/50118956978577-Use-the-Web-SDK-Test-page
+  url: https://support.appsflyer.com/hc/es/articles/50118956978577
 ---
-> **At a glance:** Use the Web SDK Test page to validate the Web SDK installation and event recording in real time. Run it when you first integrate the SDK and whenever you add or change an event.
+> **At a glance:** Utiliza la página de prueba del SDK web para validar la instalación del SDK web y el registro de eventos en tiempo real. Ejecútala cuando integres el SDK por primera vez y cada vez que añadas o cambies un evento.
 
-## Overview
+## Vista general
 
-The Web SDK Test page opens your website in a new browser tab with a dedicated test session. Every Web SDK activity in that tab, including page loads, events, and identity calls, streams live into the test page, where you can inspect each event and its properties. This lets you verify your implementation in minutes, without waiting for data to appear in reports.
+La página de prueba del SDK web abre tu sitio web en una nueva pestaña del navegador con una sesión de prueba específica. Toda la actividad del SDK web en esa pestaña, incluidas las cargas de página, los eventos y las llamadas de identidad, se transmite en directo a la página de prueba, donde puedes inspeccionar cada evento y sus propiedades. Esto te permite verificar tu implementación en cuestión de minutos, sin esperar a que los datos aparezcan en los reportes.
 
-Use it to check that:
+Úsala para comprobar que:
 
-* The Web SDK loads on the intended pages.
-* Your events fire with the correct name, revenue, and properties.
-* The customer user ID (CUID) is set after login or signup.
+* El SDK web se carga en las páginas previstas.
+* Tus eventos se activan con el nombre, los ingresos y las propiedades correctos.
+* El ID de usuario del cliente (CUID) se establece después del login o del registro.
 
-Run a test whenever you first integrate the SDK or change your event setup.
+Ejecuta una prueba cada vez que integres el SDK por primera vez o cambies la configuración de eventos.
 
-## Prerequisites
+## Prerrequisitos
 
-Before you run a test, make sure you have:
+Antes de ejecutar una prueba, asegúrate de que tienes:
 
-* A web app in AppsFlyer. For more information, see <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#web">Create a web app in AppsFlyer</Anchor> in Onboard Web Performance Measurement.
-* The AppsFlyer Web SDK is deployed on the pages you want to test. For more information, see the <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">Integrate AppsFlyer Web SDK</Anchor> section.
+* Una aplicación web en AppsFlyer. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer#web">Crear una aplicación web en AppsFlyer</Anchor> en Onboard Web Performance Measurement.
+* El SDK web de AppsFlyer está implementado en las páginas que quieres probar. Para obtener más información, consulta la sección <Anchor target="_blank" href="/marketers/es/docs/integrate-appsflyer-web-sdk">Integrar el SDK web de AppsFlyer</Anchor>.
 
-## Run a test
+## Ejecutar una prueba
 
-Once your prerequisites are in place, run a test as follows:
+Una vez que se cumplan los requisitos previos, ejecuta una prueba de la siguiente manera:
 
-1. In AppsFlyer, from the side menu, go to **Settings** > **SDK Integration Tests**.
-2. Select **Web SDK Test**.
-3. In the **Test your Web SDK** dialog:
-   * Select your web app.
-   * The **URL** field is pre-filled with the app's configured website URL. The test runs on this URL by default. Change it to test a specific page.
-4. Click **Start test**. Your website opens in a new browser tab with a dedicated test session. You don't need to do anything there.
-5. Return to the Web SDK Test page. Events from the test tab appear automatically in the **Live events** table as you browse and interact with your website.
+1. En AppsFlyer, en el menú lateral, ve a **Configuración** > **Pruebas de integración de SDK**.
+2. Selecciona **Prueba del SDK web**.
+3. En el cuadro de diálogo **Prueba tu SDK web**:
+   * Selecciona tu aplicación web.
+   * El campo **URL** se rellena automáticamente con la URL del sitio web configurada para la aplicación. La prueba se ejecuta en esta URL de forma predeterminada. Cámbiala para probar una página específica.
+4. Haz clic en **Iniciar prueba**. Tu sitio web se abre en una nueva pestaña del navegador con una sesión de prueba dedicada. No tienes que hacer nada allí.
+5. Vuelve a la página de prueba de Web SDK. Los eventos de la pestaña de prueba aparecen automáticamente en la tabla **Live events** mientras navegas e interactúas con tu sitio web.
 
 > 📘 **Note**
 >
-> The test captures only activity from the browser tab it opens. Visiting your website directly without starting a test doesn't display events on this page.
+> La prueba solo captura la actividad de la pestaña del navegador que abre. Si visitas tu sitio web directamente sin iniciar una prueba, no se mostrarán eventos en esta página.
 
-## View the Live events table
+## Ver la tabla de eventos en directo
 
-Each row in the **Live events** table shows the event timestamp, type, name, and validation status.
+Cada fila de la tabla **Live events** muestra la marca de tiempo del evento, el tipo, el nombre y el estado de validación.
 
-| Event type | What it means |
+| Tipo de evento | Qué significa |
 | --- | --- |
-| `pageLoad` | The Web SDK loaded and recorded a visit on a page. |
-| `setCustomerUserId` | The SDK sets the customer user ID (CUID). |
-| `EVENT` | AppsFlyer recorded an event you defined. The **Event name** column shows the event name, for example, purchase. |
+| `pageLoad` | El Web SDK se cargó y registró una visita en una página. |
+| `setCustomerUserId` | El SDK establece el ID de usuario del cliente (CUID). |
+| `EVENT` | AppsFlyer registró un evento que definiste. La columna **Event name** muestra el nombre del evento; por ejemplo, purchase. |
 
-The **Live events** table also supports:
+La tabla **Live events** también admite lo siguiente:
 
-* **Event details:** Click a row to open the Event details panel, to view every property the event includes, for example, revenue and event values.
-* **Search:** Use the search box to find a specific event.
-* **Export:** Click **Export CSV** to download the results.
+* **Event details:** Haz clic en una fila para abrir el panel Event details y ver todas las propiedades que incluye el evento; por ejemplo, ingresos y valores del evento.
+* **Search:** Usa el cuadro de búsqueda para encontrar un evento específico.
+* **Export:** Haz clic en **Export CSV** para descargar los resultados.
 
-## Restart or clear a test
+## Reiniciar o borrar una prueba
 
-Use one of these options to restart or clear a test:
+Usa una de estas opciones para reiniciar o borrar una prueba:
 
-* **Restart test:** Clears the event list and opens a new browser tab with a new test session. You can use this to start a clean run.
-* **Restart with new app / URL:** Reopens the setup dialog to test a different web app or page.
-* **Clear logs:** Clears only the event list. The current test session and browser tab stay active, so new events keep streaming in.
+* **Restart test:** Borra la lista de eventos y abre una nueva pestaña del navegador con una nueva sesión de prueba. Puedes usar esto para iniciar una ejecución limpia.
+* **Restart with new app / URL:** Vuelve a abrir el cuadro de configuración para probar una aplicación web o una página diferente.
+* **Clear logs:** Borra solo la lista de eventos. La sesión de prueba actual y la pestaña del navegador permanecen activas, por lo que los nuevos eventos siguen transmitiéndose.
 
-## Common testing scenarios
+## Escenarios de prueba habituales
 
-You can just run a test after every change to your Web SDK setup or events. It's the fastest way to catch issues before they affect your data. Common scenarios include:
+Puedes ejecutar una prueba después de cada cambio en la configuración de tu Web SDK o en tus eventos. Es la forma más rápida de detectar problemas antes de que afecten a tus datos. Algunos escenarios habituales son:
 
-* **First Web SDK integration:** Browse the pages where you installed the SDK and verify that a `pageLoad` event appears for each one.
-* **Adding or changing an event:** Trigger the event on your website, for example, complete a purchase. Then verify that an EVENT row appears with the correct event name, revenue, and properties in the event details.
-* **Implementing customer user ID:** Sign up or log in on your website and verify that a `setCustomerUserId` event appears. Setting the CUID improves attribution accuracy and unifies user journeys across platforms.
+* **Primera integración de Web SDK:** Navega por las páginas en las que has instalado el SDK y verifica que aparece un evento `pageLoad` en cada una.
+* **Añadir o cambiar un evento:** Activa el evento en tu sitio web; por ejemplo, completa una compra. Después, verifica que aparece una fila de EVENT con el nombre del evento, los ingresos y las propiedades correctas en los detalles del evento.
+* **Implementar el ID de usuario del cliente:** Regístrate o inicia sesión en tu sitio web y verifica que aparece un evento `setCustomerUserId`. Configurar el CUID mejora la precisión de la atribución y unifica los recorridos de usuario entre plataformas.
 
-<div data-zendesk-anchors="h_01WSDKTP0000000000OVRVW=overview h_01WSDKTP0000000000PREQ1=prerequisites h_01WSDKTP0000000000RUNT1=run-a-test h_01WSDKTP0000000000REVW1=view-the-live-events-table h_01WSDKTP0000000000RSTR1=restart-or-clear-a-test h_01WSDKTP0000000000WHEN1=common-testing-scenarios" />
+<div data-zendesk-anchors="h_01WSDKTP0000000000OVRVW=vista-general overview=vista-general h_01WSDKTP0000000000PREQ1=prerrequisitos prerequisites=prerrequisitos h_01WSDKTP0000000000RUNT1=ejecutar-una-prueba run-a-test=ejecutar-una-prueba h_01WSDKTP0000000000REVW1=ver-la-tabla-de-eventos-en-directo view-the-live-events-table=ver-la-tabla-de-eventos-en-directo h_01WSDKTP0000000000RSTR1=reiniciar-o-borrar-una-prueba restart-or-clear-a-test=reiniciar-o-borrar-una-prueba h_01WSDKTP0000000000WHEN1=escenarios-de-prueba-habituales common-testing-scenarios=escenarios-de-prueba-habituales" />

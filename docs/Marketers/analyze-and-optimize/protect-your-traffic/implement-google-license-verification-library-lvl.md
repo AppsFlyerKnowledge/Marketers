@@ -1,5 +1,5 @@
 ---
-title: Implement Google License Verification Library (LVL)
+title: Configuración de la Google License Verification Library (LVL)
 metadata:
   keywords:
     - Premium
@@ -14,47 +14,46 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2023-07-27T14:45:46Z'
-  edited_at: '2025-08-06T08:14:01Z'
+  edited_at: '2026-08-12T11:54:56Z'
   id: 17329535522961
-  locale: en-us
+  locale: es
   section: Protect your traffic
   section_id: 6551015912465
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/17329535522961-Implement-Google-License-Verification-Library-LVL
+  url: https://support.appsflyer.com/hc/es/articles/17329535522961
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Protect your apps against unauthorized use by adding the Google License Verification Library (LVL) to handle all license-related communication with Google Play.
+> **En resumen:** Protege tus aplicaciones contra el uso no autorizado agregando la Google License Verification Library (LVL) para manejar todas las comunicaciones relacionadas con licencias con Google Play.
 
-## Overview
+## Visión general
 
-The License Verification Library (LVL) is a library you can add to your apps (downloadable from the Android SDK) that handles all of the licensing-related communication with the Google Play licensing service.
+LVL es una biblioteca que puedes agregar a tus aplicaciones (descargable desde el SDK de Android) que maneja toda la comunicación relacionada con las licencias con el servicio de licencias de Google Play.
 
-LVL  adds another layer of protection on top of Protect360 algorithms by verifying that installs are coming from real Google Play users. This helps reduce discrepancies between the number of installs visible on Google Play and the AppsFlyer dashboard.
+Esto agrega otra capa de protección, además de los algoritmos de Protect360, al permitir la verificación de que las instalaciones provienen de usuarios reales de Google Play. Esto ayuda a reducir las discrepancias entre la cantidad de instalaciones visibles en Google Play y el dashboard de AppsFlyer.
 
-* LVL is available only for Protect360 clients. Without the P360 package, the module does not validate licenses.
-* LVL prevents revenue loss from unauthorized app usage, ensuring compliance and protecting your investment.
+* LVL está disponible solo para clientes de Protect360. Sin el paquete P360, el módulo no valida licencias.
+* LVL evita la pérdida de ingresos derivada del uso no autorizado de la app, garantizando el cumplimiento y protegiendo tu inversión.
 
-The Google Play Licensing service determines whether the user is licensed to use an app or not. Google Play considers users to be licensed if they are recorded purchasers of the app. The license is unique per app and can be used for enhanced protection. <Anchor target="_blank" href="https://developer.android.com/google/play/licensing">Learn more</Anchor>
+El servicio Google Play Licensing determina si el usuario tiene licencia para utilizar una aplicación o no. Google Play considera que los usuarios tienen licencia si son compradores registrados de la aplicación. La licencia es única por aplicación y se puede utilizar para una protección mejorada. <Anchor target="_blank" href="https://developer.android.com/google/play/licensing">Saber más</Anchor>
 
-The AppsFlyer SDK collects the data from the customer side, and Protect360 performs the server-side license verification, blocking fraudulent installs that fail verification for both organic and non-organic installs. The “Block reason” you will see in the Protect360 dashboard and reports will be “Bots”.
+El SDK de AppsFlyer recopila los datos del lado del cliente y Protect360 realiza la verificación de la licencia del lado del servidor, bloqueando instalaciones fraudulentas que no pasan la verificación tanto para instalaciones orgánicas como no orgánicas. El "Motivo del bloqueo" que verás en el dashboard y los reportes de Protect360 serán "Bots".
 
-## Set up LVL
+## Configuración de LVL
 
 <div id="add-lvl" />
 
-<Accordion title="Set up process">
+<Accordion title="Proceso de configuración">
 
-Currently, this is a manual process where you'll need to pass the below information to your AppsFlyer CSM so they can add it manually.
+Actualmente, este es un proceso manual en el que deberás pasar la siguiente información a tu CSM de AppsFlyer para que puedan agregarla manualmente.
 
-**To add the LVL:**
+**Para agregar el LVL:**
 
-1. Define a property in the gradle.properties file called:
+1. Define una propiedad en el archivo gradle.properties llamada:
 
    ```http
-   appsflyerSdkVersion = "YOUR_SDK_VERSION" // e.g., 6.15.2
+   appsflyerSdkVersion = "YOUR_SDK_VERSION" // p. ej., 6.15.2
    ```
-2. Reference the property dynamically in your build.gradle file:
+2. Haz referencia a la propiedad de forma dinámica en tu archivo build.gradle:
 
    ```http
    dependencies {
@@ -62,58 +61,58 @@ Currently, this is a manual process where you'll need to pass the below informat
        implementation("com.appsflyer:lvl:$appsflyerSdkVersion")
    }
    ```
-3. For Kotlin DSL Users:
+3. Para usuarios de Kotlin DSL:
 
    ```http
    dependencies {
-       val appsflyerSdkVersion = "<YOUR_SDK_VERSION>" // e.g., 6.15.2
+       val appsflyerSdkVersion = "<YOUR_SDK_VERSION>" // p. ej., 6.15.2
        implementation("com.appsflyer:af-android-sdk:$appsflyerSdkVersion")
        implementation("com.appsflyer:lvl:$appsflyerSdkVersion")
    }
    ```
 
-   > 📘 **Note**
+   > 📘 **Advertencia**
    >
-   > You can define a local variable under the dependencies section. This will align the LVL and AppsFlyer SDK versions to be the same ensuring that both modules have the same versions.
+   > Puedes definir una variable local en la sección dependencies. Esto hará que las versiones de LVL y del SDK de AppsFlyer coincidan, lo que garantiza que ambos módulos tengan la misma versión.
 
-4. Get the app’s Licensing & in-app billing:  
-   From the Google Play Developer Console (Select the app -> Development Tools -> Services and APIs).
+4. Obtén la licencia de la aplicación y la facturación dentro de la aplicación:  
+   Desde la Google Play Developer Console (selecciona la aplicación -> Herramientas de desarrollo -> Servicios y APIs).
 
    ```http
-   Base64-encoded RSA public key
+   Clave pública RSA codificada en Base64
    ```
-5. Please provide your CSM with the following information:
+5. Proporciona a tu CSM la siguiente información:
 
-* Public key
+* Llave pública
 * app-id
-* Minimum app-version the LVL is integrated in
-* A screenshot of their LVL (Liveness Verification Library) implementation
+* versión mínima de la aplicación en la que LVL está integrado
+* Una captura de pantalla de su implementación de LVL (Liveness Verification Library)
 
 </Accordion>
 
 <div id="test-and-troubleshoot" />
 
-<Accordion title="Next steps">
+<Accordion title="Siguientes pasos">
 
-Once we get your request, the Protect360 team will configure LVL verification in STAGING mode. At this stage, the system will only report the results of LVL verification internally for AppsFlyer. A couple of days later, we will check our data.
+Una vez que recibamos tu solicitud, el equipo de Protect360 configurará la verificación LVL en modo STAGING. En esta etapa, el sistema solo informará los resultados de la verificación LVL internamente para AppsFlyer. Un par de días después comprobaremos nuestros datos.
 
-**If everything looks good:**
+**Si todo se ve bien:**
 
-* We will set the LVL verification to PRODUCTION mode and it will start blocking traffic.
-* The Protect360 team will notify the CSM.
+* Configuraremos la verificación LVL en modo PRODUCTION y comenzará a bloquear el tráfico.
+* El equipo de Protect360 notificará al CSM.
 
-**If something isn't right** (like if we don't see LVL information on the install events):
+**Si algo no está bien** (como si no vemos información LVL en los eventos de instalación):
 
-* We will leave the LVL verification in STAGING mode.
-* Your CSM will notify you and help you troubleshoot the implementation in the app.
+* Dejaremos la verificación LVL en modo STAGING.
+* Tu CSM recibirá una notificación y te ayudará a solucionar problemas de implementación en la aplicación.
 
 </Accordion>
 
 <div id="setup-process" />
 
-<Accordion title="Test and troubleshoot">
+<Accordion title="Probar y solucionar problemas">
 
-When debugging the app, you should be able to see LVL information on the payload that is sent to AppsFlyer, like the example below:
+Al depurar la aplicación, deberías poder ver información LVL en la carga útil que se envía a AppsFlyer, como en el siguiente ejemplo:
 
 ```json
 "lvl":{
@@ -123,42 +122,42 @@ When debugging the app, you should be able to see LVL information on the payload
    }
 ```
 
-Work with your support/SDK team in case there is no LVL information on the install message.
+Trabaja con tu equipo de soporte/SDK en caso de que no haya información LVL en el mensaje de instalación.
 
 </Accordion>
 
-## FAQ
+## Preguntas frecuentes
 
 <div id="what-if-an-app-is-installed-from-a-store-other-than-google-play" />
 
-<Accordion title="What if an app is installed from a store other than Google Play?">
+<Accordion title="¿Qué pasa si una aplicación se instala desde una tienda que no sea Google Play?">
 
-LVL validation will not verify and not block installs coming from stores other than Google Play.
+La validación LVL no verificará ni bloqueará las instalaciones provenientes de tiendas distintas a Google Play.
 
 </Accordion>
 
 <div id="how-much-time-does-it-take-to-get-lvl-set-up" />
 
-<Accordion title="How much time does it take to get LVL set up?">
+<Accordion title="¿Cuánto tiempo lleva configurar LVL?">
 
-Once we get the information, it takes a few business days to set up LVL and verify the data. See details about the [setup process](/docs/implement-google-license-verification-library-lvl#setup-process).
+Una vez que obtenemos la información, se necesitan algunos días hábiles para configurar LVL y verificar los datos. Ver detalles sobre el [proceso de configuración](/docs/implement-google-license-verification-library-lvl#setup-process).
 
 </Accordion>
 
 <div id="does-lvl-affect-app-functionality" />
 
-<Accordion title="Does LVL affect app functionality?">
+<Accordion title="¿LVL afecta la funcionalidad de la aplicación?">
 
-No, app functionality is not affected.
+No, la funcionalidad de la aplicación no se ve afectada.
 
 </Accordion>
 
 <div id="what-is-the-difference-between-lvl-and-gpreferrer" />
 
-<Accordion title="What is the difference between LVL and GP-referrer?">
+<Accordion title="¿Cuál es la diferencia entre LVL y GP-referrer?">
 
-The license verification using LVL, differs from GP-referrer verification algorithms as the LVL handles license verification for the app itself (license per app), while the GP-referrer is used to get the install's redirection source to the Google Play store with the installed package's referrer URL (the timestamps of when a referrer click happened, when the installation began, the app version, etc.). In short, while LVL is used for checking that the user is licensed to use the app, the GP-referrer is used for verifying that the install details were not forged.
+La verificación de licencia usando LVL difiere de los algoritmos de verificación de referencia de GP ya que LVL maneja la verificación de licencia para la aplicación en sí (licencia por aplicación), mientras que la referencia de GP se usa para obtener la fuente de redirección de la instalación a la tienda Google Play con el instalado URL de referencia del paquete (las marcas de tiempo de cuando ocurrió un clic en la referencia, cuando comenzó la instalación, la versión de la aplicación, etc.). En resumen, mientras que LVL se usa para verificar que el usuario tiene licencia para usar la aplicación, el GP-referrer se usa para verificar que los detalles de la instalación no fueron falsificados.
 
 </Accordion>
 
-<div data-zendesk-anchors="01H7YJ35YKDHJ2MDZSSYKMDCJ4=overview 01H7YJ35YKDW0CB9TWRBKFBCDJ=set-up-lvl 01H7YJ35YK585NA5F4HZN8C74K=add-lvl 01JGK7NK10ZDD6CM6Y4631FB4Q=note 01H7YJ35YKX1CVYMRZ1W8NRH7Y=test-and-troubleshoot 01H7YJ35YKMCN2E2BDWA5DD5M3=setup-process 01H7YJ35YMR8PBTTSHD77WZ4AE=faq 01H7YJ35YMRZ8KRSVND1JT6JGH=what-if-an-app-is-installed-from-a-store-other-than-google-play 01H7YJ35YM11J0EG0B8PBMSPAC=how-much-time-does-it-take-to-get-lvl-set-up 01H7YJ35YMH0NM73Y1R90JDMEA=does-lvl-affect-app-functionality 01H7YJ35YM6RHCA6QP3MK0Y9J0=what-is-the-difference-between-lvl-and-gpreferrer" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general 01H7YJ35YKDHJ2MDZSSYKMDCJ4=visi%C3%B3n-general set-up-lvl=configuraci%C3%B3n-de-lvl 01H7YJ35YKDW0CB9TWRBKFBCDJ=configuraci%C3%B3n-de-lvl 01H7YJ35YK585NA5F4HZN8C74K=add-lvl 01JGK7NK10ZDD6CM6Y4631FB4Q=advertencia 01H7YJ35YKX1CVYMRZ1W8NRH7Y=test-and-troubleshoot 01H7YJ35YKMCN2E2BDWA5DD5M3=setup-process faq=preguntas-frecuentes 01H7YJ35YMR8PBTTSHD77WZ4AE=preguntas-frecuentes 01H7YJ35YMRZ8KRSVND1JT6JGH=what-if-an-app-is-installed-from-a-store-other-than-google-play 01H7YJ35YM11J0EG0B8PBMSPAC=how-much-time-does-it-take-to-get-lvl-set-up 01H7YJ35YMH0NM73Y1R90JDMEA=does-lvl-affect-app-functionality 01H7YJ35YM6RHCA6QP3MK0Y9J0=what-is-the-difference-between-lvl-and-gpreferrer" />

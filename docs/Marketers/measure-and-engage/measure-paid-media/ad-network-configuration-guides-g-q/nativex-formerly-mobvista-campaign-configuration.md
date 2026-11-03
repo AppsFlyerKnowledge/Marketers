@@ -1,5 +1,5 @@
 ---
-title: Nativex (formerly Mobvista) campaign configuration
+title: Configuración de la campaña de Nativex (anteriormente Mobvista)
 metadata:
   keywords:
     - mobvista
@@ -14,186 +14,185 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-03-28T09:15:13Z'
-  edited_at: '2026-08-13T08:31:46Z'
+  edited_at: '2026-08-22T00:25:20Z'
   id: 208209476
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/208209476-Nativex-formerly-Mobvista-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/208209476
 ---
-> **At a glance:** Nativex, an AppsFlyer integrated partner, is a mobile marketing platform providing user acquisition, analytics, and monetization solutions to worldwide mobile developers and brands. In addition to click-based mobile attribution, Nativex also offers cost and view-through attribution, which you can record with AppsFlyer.
+> **De un vistazo:** Nativex, partner integrado de AppsFlyer, es una plataforma de marketing móvil que ofrece soluciones de adquisición de usuarios, analítica y monetización a desarrolladores y marcas móviles de todo el mundo. Además de la atribución móvil basada en clics, Nativex también ofrece atribución de costo y view-through, que puedes registrar con AppsFlyer.
 
 ![nativex.png](https://files.readme.io/840450215d38dc171452049ce1e9ce8c5f289e489fcb985a8d7ecb745fd11ede-49783409596049.png)
 
-## Setting up Nativex
+## Configuración de Nativex
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el Partners. Si no tienes una cuenta, ponte en contacto con el Partners para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace** .  
+   (**Para editar una integración existente:** Ve a la pestaña **Collaborate > Partner Integrations > Active integrations** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el Partners y selecciona **Integrate**.
+4. En la pestaña **Integración**, activa el conmutador **Activate partner**.   
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners</Anchor>
 
-Nativex's configuration window includes 4 active tabs: Integration, Attribution link, Cost, and Permissions. Click on the items below to read about the tabs setup.
+La ventana de configuración de Nativex incluye 4 pestañas activas: Integración, enlace de atribución, Costo y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
+> * El paso <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> de la pestaña Integración es **obligatorio** para todos los Partners
+> * Todos los demás pasos son descriptivos u **opcionales**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partners
+### Activar los partners
 
-On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the set up of the Integration tab parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation, please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### General Settings
+### Configuración general
 
 **Mobvista\_campuuid**
 
-Nativex connects with AppsFlyer via a unique network ID. If you don't already have the Network ID, you must obtain it from Nativex to continue with the integration.
+Nativex se conecta con AppsFlyer a través de un ID de red único. Si todavía no tienes el ID de red, debes obtenerlo de Nativex para continuar con la integración.
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Toggle this to ON if you want to attribute view-through installs from Nativex. The view-through lookback slider is available on the attribution link tab (described below).
+Activa esta opción si quieres atribuir instalaciones view-through de Nativex. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to Nativex following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a Nativex después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to Nativex.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Nativex.
+Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a Nativex.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para que toda tu base de usuarios esté disponible para ser reportada a Nativex.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section you can map your AppsFlyer events with Nativex via postbacks.
+En esta sección puedes asignar tus eventos de AppsFlyer a Nativex mediante postbacks.
 
-1. Set the Nativex network ID again here
-2. Toggle In-App Event Postbacks to ON
-3. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-4. Click **Add Event** to add an SDK Event to the list
-5. Fill in the following parameters:
+1. Vuelve a configurar aquí el ID de red de Nativex
+2. Activa los postbacks de eventos in-app.
+3. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+4. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+5. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Nativex's side.  <br />Obtain the corresponding Event ID from Nativex and set in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según se define en Nativex.  <br />Obtén el ID de evento correspondiente de Nativex e introdúcelo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to Nativex for attributing Nativex's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a Nativex para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de Nativex. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to perform thorough drill-down analyses later. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución aquí te permite realizar análisis detallados más adelante. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with Nativex.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific Nativex campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Nativex.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the sub site ID parameter to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña** - añádela para comparar diferentes campañas en funcionamiento con Nativex.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios**: define nombres de conjuntos de anuncios para comparar distintos conjuntos de anuncios dentro de campañas específicas de Nativex.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio** - define nombres de anuncios para comparar distintos creativos dentro de conjuntos de anuncios específicos, en campañas específicas de Nativex.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** e **ID de subsitio** - configura el parámetro de ID de sitio para atribuir instalaciones a publishers específicos. Si existen muchos publishers, te recomendamos limitar el número de IDs de sitio usados y utilizar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceder las limitaciones del ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor** - utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+  **Parámetros de enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Nativex.
+Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Nativex.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic</Anchor>.
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to Nativex to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Nativex para que se active cuando los leads hagan clic en un anuncio correspondiente.
 
-### View-through attribution lookback window
+### Ventana de lookback de atribución view-through
 
-This slider allows you to set the **maximum time from impression to install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to Nativex, providing there was no other relevant ad click.
+Este control deslizante te permite establecer el **tiempo máximo de la impresión a la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de esta ventana de lookback, tras la impresión de un anuncio, se atribuyen a Nativex, siempre que no haya habido ningún otro clic relevante en un anuncio.
 
-You can customize this value to 1-23 hours or 1-7 days.
+Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 
-**Attribution link parameter:** af\_viewthrough\_lookback
+**Parámetro de enlace de atribución:** af\_viewthrough\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución por impresiones</Anchor>.
 
-### Impressions attribution link
+### Enlace de atribución de impresiones
 
-The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to Nativex to be activated when a corresponding ad is watched, usually for 1 second or more.
+El enlace de atribución de impresiones contiene datos similares a los del enlace de registro de clics, además de una ventana de lookback diferente. Envíalo a Nativex para que se active cuando se vea un anuncio correspondiente, normalmente durante 1 segundo o más.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Nativex automatically sends encrypted CPI cost data on the attribution link for all installs.
+Nativex envía automáticamente datos de costo de CPI cifrados en el enlace de atribución para todas las instalaciones.
 
-For the full list of partners supporting cost data, click <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#additional-information">here</Anchor>.
+Para ver la lista completa de Partners que admiten datos de costos, haz clic <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#información-adicional">aquí</Anchor>.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue data is not supported by this partner.
+Este partner no admite ingresos por publicidad.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Nativex, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for Nativex, the permissions tab is active and you can grant control to Nativex.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a Nativex, tanto si el partner actúa como ad network, agencia o ambos. Ten en cuenta que, incluso si la atribución está deshabilitada para Nativex, la pestaña Permisos está activa y puedes otorgarle el control a Nativex.
 
-### Ad network permissions
+### Permisos de ad network
 
-Use these toggles to give Nativex permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgar permisos a Nativex para que gestione su propia configuración para tu app:
 
-* ***Allow to configure integration*** - permit Nativex to set up the Integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit Nativex to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to Nativex's own retention data
-* ***Allow access to your Protect360 dashboard*** - only to Nativex's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración*** - permite que Nativex configure la pestaña de integración (excepto los postbacks de eventos in-app)
+* ***Permitir la configuración de postbacks de eventos in-app*** - permite que Nativex configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración
+* ***Permitir el acceso a tu reporte de retención*** - solo para los propios datos de retención de Nativex
+* ***Permitir el acceso a tu dashboard de Protect360*** - solo a los datos de Protect360 propios de Nativex, siempre que la funcionalidad esté habilitada para el anunciante
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
-### Agency permissions
+### Permisos de la agencia
 
-Use these toggles to give the agency permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgar permisos a una agencia para que gestione su propia configuración para tu aplicación:
 
-* ***Main toggle*** - Set to On to reveal the agency permissions options
-* ***Allow access to your retention report*** - only to the agency's own retention data
-* ***Allow access to aggregate organic data***
-* ***Allow to configure in-app event postbacks*** - permit the agency to setup in-app event postbacks mapping to itself on the integration tab
+* ***Selector principal*** - configúralo en Activado para mostrar las opciones de permisos de la agencia
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención de la agencia
+* ***Permitir el acceso a datos agregados orgánicos.***
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que la agencia configure la asignación de postbacks de eventos in-app a sí misma en la pestaña de integración
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">agency permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">permisos a las agencias</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="setting-up-mobvista=setting-up-nativex h_01HKW7VFYJ6CZP5JD29YAS3AAH=setting-up-nativex h_01HKW7VFYJ02HSZ963PX5H38ZS=tip h_01HKW7VFYJXNP3AP7FZPFBRHA7=integration-tab h_01HKW7VFYJB9F9M8KGEA52ZQGD=activate-partners h_01HKW7VFYJDAT6G9VSC5H50Y9K=general-settings h_01HKW7VFYJVW66881ZHG2Q1B31=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW7VFYJA1919WZ0XPY8SP98=in-app-events-settings h_01HKW7VFYJKD1BHDDAG8VKFTYB=attribution-link-tab h_01HKW7VFYJFGKPDDBT09T3BXAN=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW7VFYJMYJ508P8E3B5WNN2=click-through-attribution h_01HKW7VFYJ6N5JMZTDBAKX02A4=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKW7VFYK0YRYZXMPFRJNQJKP=view-through-attribution-lookback-window h_01HKW7VFYKD6S2NZ280VXRQT1F=impressions-attribution-link h_01HKW7VFYKDN59CAGE3JC11G7D=cost-tab h_01HKW7VFYK3AGC81SBA00C43AD=ad-revenue-tab h_01HKW7VFYKS66EAP51QECZPFQH=permissions-tab h_01HKW7VFYKRE972AJAM499H241=ad-network-permissions h_01HKW7VFYK1T10MR5AJ436C2NS=agency-permissions" />
+<div data-zendesk-anchors="setting-up-mobvista=configuraci%C3%B3n-de-nativex h_01HKW7VFYJ6CZP5JD29YAS3AAH=configuraci%C3%B3n-de-nativex h_01HKW7VFYJ02HSZ963PX5H38ZS=consejo h_01HKW7VFYJXNP3AP7FZPFBRHA7=integration-tab activate-partners=activar-los-partners h_01HKW7VFYJB9F9M8KGEA52ZQGD=activar-los-partners general-settings=configuraci%C3%B3n-general h_01HKW7VFYJDAT6G9VSC5H50Y9K=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HKW7VFYJVW66881ZHG2Q1B31=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HKW7VFYJA1919WZ0XPY8SP98=configuraci%C3%B3n-de-eventos-in-app h_01HKW7VFYJKD1BHDDAG8VKFTYB=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HKW7VFYJFGKPDDBT09T3BXAN=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HKW7VFYJMYJ508P8E3B5WNN2=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKW7VFYJ6N5JMZTDBAKX02A4=haz-clic-en-el-enlace-de-atribuci%C3%B3n viewthrough-attribution-lookback-window=ventana-de-lookback-de-atribuci%C3%B3n-view-through h_01HKW7VFYK0YRYZXMPFRJNQJKP=ventana-de-lookback-de-atribuci%C3%B3n-view-through impressions-attribution-link=enlace-de-atribuci%C3%B3n-de-impresiones h_01HKW7VFYKD6S2NZ280VXRQT1F=enlace-de-atribuci%C3%B3n-de-impresiones h_01HKW7VFYKDN59CAGE3JC11G7D=cost-tab h_01HKW7VFYK3AGC81SBA00C43AD=ad-revenue-tab h_01HKW7VFYKS66EAP51QECZPFQH=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HKW7VFYKRE972AJAM499H241=permisos-de-ad-network agency-permissions=permisos-de-la-agencia h_01HKW7VFYK1T10MR5AJ436C2NS=permisos-de-la-agencia" />

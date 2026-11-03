@@ -1,5 +1,5 @@
 ---
-title: MoEngage campaign configuration
+title: Configuración de la campaña de MoEngage
 metadata:
   keywords:
     - MoEngage
@@ -14,101 +14,99 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-06-25T07:50:18Z'
-  edited_at: '2026-07-07T09:25:09Z'
+  edited_at: '2026-08-12T11:59:20Z'
   id: 115003139643
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115003139643-MoEngage-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/115003139643
 ---
-> **At a glance:** MoEngage, a third-party customer engagement platform integrated with AppsFlyer, is an agentic customer engagement platform built for the mobile-first world.
+> **De un vistazo:** MoEngage, una plataforma de engagement de clientes de terceros integrada con AppsFlyer, es una plataforma de engagement de clientes agéntica diseñada para un mundo mobile first.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up MoEngage
+## Configuración de MoEngage
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">setting the partner page header.</Anchor>
+Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">cómo configurar el encabezado de la página del partner.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The **Integration** tab is divided into different sections, as described below.
+La pestaña **Integración** está dividida en diferentes secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On your first visit, turn **Activate Partner** on to set up the integration. The toggle must be on for as long as you work with the partner. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
+En tu primera visita, activa **Activar partner** para configurar la integración. El conmutador debe estar activado mientras trabajes con el partner. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación del partner</Anchor>.
 
-### General settings
+### Configuración general
 
-MoEngage connects with AppsFlyer via a unique App ID, App Key, and the Data Center of MoEngage. If you don't already have the App ID and App Key, you must obtain the first to continue with the integration:
+MoEngage se conecta con AppsFlyer mediante un ID de app único, una App Key y el centro de datos de MoEngage. Si aún no tienes el ID de app y la App Key, debes obtenerlos primero para continuar con la integración:
 
-* **APP\_ID:** Enter the app ID. To obtain it, log in to your MoEngage account from the left menu, and go to **Settings** > **App Settings**.
-* **MoEngage Data Center:** Specify the MoEngage data center that you have signed up with. Learn more about <Anchor target="_blank" href="https://help.moengage.com/hc/en-us/articles/360057030512-Data-Centers-in-MoEngage">Data Centers in MoEngage</Anchor>.
-* **APP\_KEY:** Enter the app API key. To obtain it, log in to your MoEngage account, and go to **Settings** > **Analytics**.
+* **APP\_ID:** Introduce el ID de la app. Para obtenerlo, inicia sesión en tu cuenta de MoEngage desde el menú de la izquierda, y ve a **Configuración** > **Configuración de la app**.
+* **Centro de datos de MoEngage:** Especifica el centro de datos de MoEngage con el que te has registrado. Saber más sobre <Anchor target="_blank" href="https://help.moengage.com/hc/en-us/articles/360057030512-Data-Centers-in-MoEngage">los centros de datos en MoEngage</Anchor>.
+* **APP\_KEY:** Introduce la clave de API de la app. Para obtenerla, inicia sesión en tu cuenta de MoEngage y ve a **Configuración** > **Analytics**.
 
 ![moengage_general_settings_en-us.png](https://files.readme.io/0180fb4ad22857320200b1f53a01c72c87fc6cc4a3f4aabcd585b2cfb0f7596a-8179576817809.png)
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to MoEngage following user installs. Select one of the following options:
+AppsFlyer puede enviar postbacks automáticos a MoEngage tras las instalaciones de los usuarios. Selecciona una de las siguientes opciones:
 
-* **Off**: Don't send any install postbacks.
-* **All media sources, including organic**: Send postbacks for events attributed to any partner and for organic events.
+* **Desactivado**: No envíes ningún postback de instalación.
+* **Todas las fuentes de medios, incluidas las orgánicas**: Envía postbacks para eventos atribuidos a cualquier partner y para eventos orgánicos.
 
 ![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> As an all-installs network, MoEngage prefers to receive postbacks for all new installs of your app from any source, including organic. MoEngage recommends selecting **All media sources, including organic**.
+> Como red de todas las instalaciones, MoEngage prefiere recibir postbacks de todas las nuevas instalaciones de tu app desde cualquier fuente, incluidas las orgánicas. MoEngage recomienda seleccionar **Todas las fuentes de medios, incluidas las orgánicas**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-**Attribution link** isn't supported in the integration with this partner.
+El **enlace de atribución** no es compatible con la integración con este partner.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-**Cost data** isn't supported in the integration with this partner.
+Los **datos de costos** no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-**Ad revenue** isn't supported in the integration with this partner.
+Los **ingresos por anuncios** no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-**Permissions** isn't supported in the integration with this partner.
+No se admiten los **permisos** en la integración con este partner.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H9HWJPMX1TXBZY6C94HQ7J85=important h_01H9HWJPMXN58VV9SQQPY4T5HZ=setting-up-moengage h_01H9HWJPMX946NS52DTPAZWVEK=integration-tab h_01H9HWJPMX46NV79HHGRRD6D56=activate-partner h_01H9HWJPMXPZ5QV9D08CJMHMHS=general-settings h_01H9HWJPMX0TZ496PP8EY3H336=default-postbacks h_01H9HWJPMX4CHJ9MADEQBSDMGY=note h_01H9HWJPMXJVWPK67W5X88GYHZ=attribution-link-tab h_01H9HWJPMXQ07XNN8Y79P5DCAN=cost-tab h_01H9HWJPMX8MC1GSD2VD3QQ82Y=ad-revenue-tab h_01H9HWJPMXKYXVCH3HRA2FCPSQ=permissions-tab" />
+<div data-zendesk-anchors="h_01H9HWJPMX1TXBZY6C94HQ7J85=importante setting-up-moengage=configuraci%C3%B3n-de-moengage h_01H9HWJPMXN58VV9SQQPY4T5HZ=configuraci%C3%B3n-de-moengage h_01H9HWJPMX946NS52DTPAZWVEK=integration-tab activate-partner=activar-socio h_01H9HWJPMX46NV79HHGRRD6D56=activar-socio general-settings=configuraci%C3%B3n-general h_01H9HWJPMXPZ5QV9D08CJMHMHS=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01H9HWJPMX0TZ496PP8EY3H336=postbacks-predeterminados h_01H9HWJPMX4CHJ9MADEQBSDMGY=nota h_01H9HWJPMXJVWPK67W5X88GYHZ=attribution-link-tab h_01H9HWJPMXQ07XNN8Y79P5DCAN=cost-tab h_01H9HWJPMX8MC1GSD2VD3QQ82Y=ad-revenue-tab h_01H9HWJPMXKYXVCH3HRA2FCPSQ=permissions-tab" />

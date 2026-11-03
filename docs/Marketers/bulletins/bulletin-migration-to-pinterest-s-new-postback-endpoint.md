@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Migration to Pinterest’s New Postback Endpoint'
+title: 'Boletín: Migración al nuevo punto final de postback de Pinterest'
 metadata:
   keywords:
     - Marketers
@@ -13,70 +13,123 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2025-07-23T07:26:53Z'
-  edited_at: '2026-09-01T10:34:33Z'
+  edited_at: '2026-10-20T03:54:38Z'
   id: 37418019002641
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/37418019002641-Bulletin-Migration-to-Pinterest-s-New-Postback-Endpoint
+  url: https://support.appsflyer.com/hc/es/articles/37418019002641
 ---
+
 <Table>
   <thead>
     <tr>
       <th>
-        Section
+        Sección.
       </th>
       <th>
-        Details
+        Detalles
       </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>
-        **What’s New**
+        **¿Qué hay de nuevo?**
       </td>
       <td>
-        Pinterest has migrated to a new endpoint based on their Conversions API (CAPI) infrastructure. You must upgrade in order to continue to send your app events to Pinterest. We will be deprecating the old endpoint on September 30, 2025.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        **Effective Date**
-      </td>
-      <td>
-        07/23/2025
+        Pinterest ha migrado a un nuevo punto final basado en su infraestructura de API de conversiones (CAPI). Debes actualizar para continuar enviando los eventos de tu aplicación a Pinterest. Descontinuaremos el antiguo punto final el 30 de septiembre de 2025.
       </td>
     </tr>
     <tr>
       <td>
-        **What you need to know**
+        **Fecha de entrada en vigor**
       </td>
       <td>
-        This bulletin includes information relating to the migration phase to CAPI. For a general information about the Pinterest integration see <Anchor target="_blank" href="/marketers/docs/pinterest-create-a-mobile-app-integration#in-app-events-settings">the KB article</Anchor>.<br /><br />Updating to the new API In-app events settings will ensure Pinterest measurement will continue without interruption, and it also includes:<ul><li>**More “events” types**: Track additional events to better align with your goals, such as: Lead, Search, Category Viewed, Page Visit, and more.<ul><li>**Note:** event names for the new Pinterest V5 endpoint are different. Unless the dashboard is updated accordingly, events report will display “unknown”. Please review the new event names below.</li></ul></li><li>**Improved data quality:** Benefit from enhanced matching and stronger attribution accuracy.</li></ul>The new integration requires both an **Ad Account ID** and an **Access Token**. To maintain postback functionality, partners must transition to the new postback endpoint by 9/30/25.<br /><br />**How to find Pinterest AppsFlyer Ad Account ID**<br />You can find the current AppsFlyer Pinterest Conversion reporting Ad Account ID in Pinterest **Business Manager** or Pinterest **Conversions** reporting.<ol><li>Log in to your Pinterest business account (you must be in a business profile to see the Hub options).</li><li>Type or paste https://www.pinterest.com/business/hub/ into your browser and press Enter.</li><li>Look at the dark-gray navigation column on the left side of the Hub. If the column is collapsed, click the small “≡” (hamburger) icon in the upper-left corner to expand it.</li><li>Scroll a little until you see the section titled “Manage business.”</li><li>Click Conversions (it sits right under “Manage business”). This opens the Conversions dashboard, where you can review AppsFlyer conversions sent to Pinterest.</li><li>Ad Account ID will be present in the URL.</li><li>If multiple Pinterest Ad Account IDs receive cloned conversions from AppsFlyer, verify all existing Ad Account IDs with Conversions in Pinterest Business Manager. Please ensure the original parent Ad Account ID for AppsFlyer conversions is selected.</li></ol>**How to find Pinterest AppsFlyer Access Token**<br />Please follow the steps outlined on Pinterest’s Help Center <Anchor target="_blank" href="https://help.pinterest.com/en/business/article/getting-started-with-the-conversions-api">here</Anchor>. Once in Pinterest Conversions, click on **Conversions API** > **Set-up API**, and generate a new access token for the account.<br /><br />**Important Note:** If you have already set-up Conversions API for Pinterest separately outside of AppsFlyer, use the same Access Token here for AppsFlyer conversions as well.
+        23/07/2025
       </td>
     </tr>
     <tr>
       <td>
-        **What you need to do**
+        **Lo que debes saber:**
       </td>
       <td>
-        Please follow the instructions below for setting up and migrating in-app event postbacks in the AppsFlyer dashboard.<ol><li>**In-App Event Settings and Dashboard Parameter Handling**<br />We currently support the following dashboard parameters for mapping your Appsflyer events with Pinterest:</li></ol><ul><li>**Ad Account ID** (visible)</li><li>**Access Token** (visible)</li><li>**Tag ID** (not visible on the dashboard, but supported in the backend to assist with the transition to the new V5 version. Once the transition to the V5 endpoint is fully supported, the Tag ID will also be removed from the backend.)</li></ul>**Please Note:**<br />For the new postback setup, you must enter both the **Ad Account ID** and **Access Token** (these can be obtained from Pinterest if not already available). **If either of these values are missing, the postback will fail**. Kindly ensure both parameters are correctly filled in the Pinterest **Active Integration** page. For more information, see <Anchor target="_blank" href="/marketers/docs/pinterest-create-a-mobile-app-integration#in-app-events-settings">the KB article</Anchor>.<br />Your cooperation is important for a smooth transition. Thank you for your support.<ol><li>**In-App Event Mapping and Postback Settings**<ol><li>Please replace and map your current Pinterest event names with the new Pinterest Conversion API event names for the **Partner event name** section. For example, if you are currently using `pin_add_to_cart` in the Partner event section, replace that with `add_to_cart` instead. For more information see <Anchor target="_blank" href="/marketers/docs/pinterest-create-a-mobile-app-integration#in-app-event-postbacks">the KB article</Anchor>.</li></ol></li></ol>
+        Este boletín incluye información relacionada con la fase de migración a CAPI. Para obtener información general sobre la integración de Pinterest, consulta <Anchor target="_blank" href="/marketers/es/docs/pinterest-create-a-mobile-app-integration#configuración-de-eventos-in-app">el artículo de la base de conocimientos</Anchor>.
 
-        | event name (Legacy) | event name (new Conversions API) |
+        La actualización a la nueva configuración de eventos in-app de la API garantizará que la medición de Pinterest continúe sin interrupciones, e incluye también:
+
+        * **Más tipos de «eventos»**: track eventos adicionales para alinearlos mejor con tus objetivos, como: Lead, Search, Category Viewed, Page Visit y más.
+          * **Nota:** Los nombres de los eventos para el nuevo punto final de Pinterest V5 son diferentes. A menos que el dashboard se actualice en consecuencia, el reporte de eventos mostrará “desconocido”. Revisa los nuevos nombres de eventos a continuación.
+        * **Calidad de los datos mejorada:** Benefíciate de una coincidencia mejorada y una mayor precisión en la atribución.
+
+        La nueva integración requiere tanto un **ID de cuenta de anuncios** como un **Token de acceso**. Para mantener la funcionalidad de postback, los partners deben realizar la transición al nuevo punto final de postbacks antes del 30/09/25.   
+
+        **Cómo encontrar el ID de cuenta de anuncios de Pinterest en AppsFlyer**  
+        Puedes encontrar el ID de cuenta de anuncios actual para el reporte de conversiones de AppsFlyer de Pinterest en Pinterest **Business Manager** o en el reporte de Pinterest **Conversions**.
+
+        1. Inicia sesión en tu cuenta comercial de Pinterest (debes estar en un perfil comercial para ver las opciones del Hub).
+        2. Escribe o pega https://www.pinterest.com/business/hub/ en tu navegador y presiona Enter.
+        3. Mira la columna de navegación de color gris oscuro en el lado izquierdo del Hub. Si la columna está plegada, haz clic en el pequeño icono “≡” (hamburguesa) en la esquina superior izquierda para expandirla.
+        4. Desplázate un poco hasta que veas la sección titulada “Administrar negocio”.
+        5. Haz clic en Conversiones (se encuentra justo debajo de “Administrar negocio”). Esto abre el dashboard de conversiones, donde puedes revisar las conversiones de AppsFlyer enviadas a Pinterest.
+        6. El ID de la cuenta de anuncios estará presente en la URL.
+        7. Si varios ID de cuentas de anuncios de Pinterest reciben conversiones clonadas de AppsFlyer, verifica todos los ID de cuentas de anuncios existentes con conversiones en el Pinterest Business Manager. Asegúrate de seleccionar el ID de la cuenta de anuncios principal original para las conversiones de AppsFlyer.
+
+        **Cómo encontrar el Token de acceso de Pinterest en AppsFlyer**  
+        Sigue los pasos descritos en el Centro de ayuda de Pinterest <Anchor target="_blank" href="https://help.pinterest.com/en/business/article/getting-started-with-the-conversions-api">aquí</Anchor>. Una vez en Conversiones de Pinterest, haz clic en **API de conversiones** > **Configuración de la API**, y genera un nuevo token de acceso para la cuenta.  
+
+        **Nota importante:** Si ya has configurado la API de conversiones para Pinterest por separado fuera de AppsFlyer, utiliza también aquí el mismo token de acceso para las conversiones de AppsFlyer.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Lo que debes hacer**
+      </td>
+      <td>
+        Sigue las instrucciones que se indican a continuación para configurar y migrar los postbacks de eventos in-app en el dashboard de AppsFlyer.
+
+        1. **Configuración de eventos in-app y gestión de parámetros del dashboard**  
+           Actualmente, admitimos los siguientes parámetros del dashboard para asignar tus eventos de AppsFlyer con Pinterest:
+
+           * **ID de la cuenta de anuncios** (visible)
+           * **Token de acceso** (visible)
+           * **ID de etiqueta** (no visible en el dashboard, pero compatible en el backend para ayudar con la transición a la nueva versión V5. Una vez que la transición al punto final V5 esté completamente soportada, el ID de etiqueta también se eliminará del backend.)
+
+           **Nota:**  
+           Para la nueva configuración de postback, debes introducir tanto el **ID de la cuenta de anuncios** como el **Token de acceso** (estos se pueden obtener de Pinterest si aún no están disponibles). **Si falta alguno de estos valores, el postback fallará**. Asegúrate de que ambos parámetros estén correctamente completados en la página de **Integración activa** de Pinterest. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/pinterest-create-a-mobile-app-integration#configuración-de-eventos-in-app">el artículo de la base de conocimientos</Anchor>.  
+           Tu cooperación es importante para una transición fluida. Gracias por tu apoyo.
+        2. **Asignación de eventos in-app y configuración de postbacks**
+           1. Reemplaza y asigna los nombres de eventos actuales de Pinterest a los nuevos nombres de eventos de la API de conversiones de Pinterest en la sección **Nombre del evento para partner**. Por ejemplo, si actualmente estás utilizando `pin_add_to_cart` en la sección de eventos de partner, reemplázalo por `add_to_cart`. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/pinterest-create-a-mobile-app-integration#habilitar-la-atribución-por-impresiones">el artículo de la base de conocimientos</Anchor>.
+
+        | event name (anterior) | event name (nueva API de conversiones) |
         | --- | --- |
-        | pin\_add\_to\_cart | add\_to\_cart |
+        | pin\_add\_to\_cart | añadir\_al\_carrito |
         | pin\_purchase | checkout |
         | pin\_search | search |
         | pin\_registration | signup |
         | pin\_sign\_up | signup |
         | pin\_category\_view | view\_category |
-        | add\_cart | add\_to\_cart |
+        | add\_cart | añadir\_al\_carrito |
         | start\_checkout | checkout |
         | content\_view | view\_category |
 
-        **Note:** Failure to update the legacy event names with the correct event names for Conversions API will result in ‘Other’ showing up for event names in Pinterest, instead of the correct event name.<ol><li>Select **in-app event postback window** to **Lifetime** so Pinterest can receive maximum number of conversions for ads optimization</li><li>Select **All media sources including organic** for **To users from** so Pinterest can receive maximum number of conversions for ads optimization. For more information see <Anchor target="_blank" href="/marketers/docs/pinterest-create-a-mobile-app-integration#in-app-event-postbacks">the KB article</Anchor>.</li></ol><ol><li>**Roll-back process in case of issues**<br />Advertisers are advised to monitor their AppsFlyer app conversions on Pinterest to detect any issues or problems with the migration. Please give it up to 30 mins for AppsFlyer conversions data to show up in Pinterest and ensure regular monitoring for a few days to validate migration success.</li></ol>Advertisers can revert to the legacy endpoint by omitting either one or both of the `account_id` and `access_token` in the integration setup.<br /><br />**Behavior Rules:**<ul><li>Both `account_id` and `access_token` are absent → Postbacks are sent to the legacy (old) endpoint.</li><li>Only `account_id` is provided (i.e., `access_token` is empty) → Postbacks are sent to the legacy endpoint.</li><li>Only `access_token` is provided (i.e., `account_id` is empty) → Postbacks are sent to the legacy endpoint.</li><li>Both `account_id` and`access_token` are provided → Postbacks are sent to the new endpoint.</li></ul>If you are facing any issues, please reach out to AppsFlyer Support through support@appsflyer.com. For any issues on Pinterest please reach out to api-support@pinterest.com or to your Pinterest representative.
+              **Nota:** Si no actualizas los nombres de eventos heredados con los nombres de eventos correctos para la API de conversiones, en Pinterest aparecerá «Other» como nombre de evento, en lugar del nombre de evento correcto.
+           2. Selecciona **ventana de postback de eventos in-app** en **Lifetime** para que Pinterest pueda recibir el máximo número de conversiones para la optimización de los anuncios
+           3. Selecciona **Todas las fuentes de medios, incluidas las orgánicas** para **A los usuarios de**, para que Pinterest pueda recibir el máximo número de conversiones para la optimización de los anuncios. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/pinterest-create-a-mobile-app-integration#habilitar-la-atribución-por-impresiones">el artículo de la KB</Anchor>.
+        3. **Proceso de reversión en caso de problemas**  
+           Se recomienda a los anunciantes que monitoricen las conversiones de sus aplicaciones de AppsFlyer en Pinterest para detectar cualquier problema o incidencia con la migración. Por favor, espera hasta 30 minutos para que los datos de conversión de AppsFlyer aparezcan en Pinterest y asegúrate de supervisarlos regularmente durante unos días para validar el éxito de la migración.  
+
+           Los anunciantes pueden volver al punto final heredado omitiendo uno o ambos valores de `account_id` y `access_token` en la configuración de la integración. 
+
+           **Reglas de comportamiento:**
+
+           * Tanto `account_id` como `access_token` están ausentes → Los postbacks se envían al punto final heredado (antiguo).
+           * Solo se proporciona `account_id` (es decir, `access_token` está vacío) → Los postbacks se envían al punto final heredado.
+           * Solo se proporciona `access_token` (es decir, `account_id` está vacío) → Los postbacks se envían al punto final heredado.
+           * Se proporcionan tanto `account_id` como `access_token` → Los postbacks se envían al nuevo punto final.
+
+           Si tienes algún problema, ponte en contacto con el servicio de asistencia de AppsFlyer a través de support@appsflyer.com. Para cualquier problema en Pinterest, ponte en contacto con api-support@pinterest.com o con tu representante de Pinterest.
       </td>
     </tr>
   </tbody>

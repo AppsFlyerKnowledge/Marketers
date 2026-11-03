@@ -1,5 +1,5 @@
 ---
-title: Apply IP masking to user data
+title: Aplicar el enmascaramiento de IP a los datos del usuario
 metadata:
   keywords:
     - IP masking
@@ -14,77 +14,76 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2016-05-23T12:59:55Z'
-  edited_at: '2025-06-03T07:49:17Z'
+  edited_at: '2026-08-12T12:23:34Z'
   id: 208879066
-  locale: en-us
+  locale: es
   section: Preserve user privacy
   section_id: 6551440878097
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/208879066-Apply-IP-masking-to-user-data
+  url: https://support.appsflyer.com/hc/es/articles/208879066
 ---
-> **At a glance:** How to mask app user IP addresses in AppsFlyer raw data reports and in postbacks sent to partners.
+> **En resumen:** cómo enmascarar las direcciones IP de los usuarios de la app en los Reportes de raw data de AppsFlyer y en los postbacks enviados a Partners.
 
-## IP masking
+## Enmascaramiento de IP
 
-When turning on IP masking:
+Al activar el enmascaramiento de IP:
 
-* User IP addresses aren't listed in raw data reports nor are they provided via postbacks to partners
-* IP address field is populated with the value 1.1.1.1
+* Las direcciones IP de los usuarios no aparecen en los Reportes de raw data ni se proporcionan mediante postbacks a Partners
+* El campo de dirección IP se rellena con el valor 1.1.1.1
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * Installs that occurred before IP masking was turned on aren't masked
-> * <Anchor target="_blank" href="/marketers/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing">AEM data sharing</Anchor> for Meta ads isn't supported for both server-to-server and SDK events when IP masking is turned on. This means data isn't shared with Meta ads.
+> * Las instalaciones que se produjeron antes de activar el enmascaramiento de IP no se enmascaran
+> * El <Anchor target="_blank" href="/marketers/es/docs/meta-ads-aggregate-event-measurement-aem-for-ios#compartición-de-datos-de-aem">uso compartido de datos de AEM</Anchor> para anuncios de Meta no es compatible ni con eventos de servidor a servidor ni con eventos de SDK cuando el enmascaramiento de IP está activado. Esto significa que los datos no se comparten con Anuncios de Meta.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> * The IP masking setting follows this path: Turned off, turned on, and then turned off.
-> * Three users install the app on different dates as shown in the app install table
-> * The IP masking and raw data report table below shows the status of the IP masking setting and related raw data on the relevant dates.
+> * La configuración del enmascaramiento de IP sigue esta secuencia: desactivado, activado y, después, desactivado.
+> * Tres usuarios instalan la app en fechas distintas, como se muestra en la tabla de instalación de la app
+> * La siguiente tabla de enmascaramiento de IP y Reporte de raw data muestra el estado de la configuración de enmascaramiento de IP y los datos raw data relacionados en las fechas correspondientes.
 >
-> App installs:
+> Instalaciones de la app:
 >
 >
 >
-> | Install date | User ID | IP address |
+> | Submotivo de fraude | ID de usuario | Dirección IP |
 > | --- | --- | --- |
-> | January 2 | User\_A | 192.0.2.1 |
-> | January 7 | User\_B | 192.0.2.33 |
-> | January 14 | User\_C | 203.0.113.1 |
+> | 2 de enero | Usuario\_A | 192.0.2.1 |
+> | 7 de enero | Usuario\_B | 192.0.2.33 |
+> | 14 de enero | Usuario\_C | 203.0.113.1 |
 >
 >
 >
-> IP masking and raw data:
+> Enmascaramiento de IP y raw data:
 >
 >
 >
-> | Date | IP masking setting status | Raw data report |
+> | Fecha | Estado de la configuración de enmascaramiento de IP | Reporte de raw data |
 > | --- | --- | --- |
-> | January 1 | Off | User A 192.0.2.1 |
-> | January 2 | On | User\_A 192.0.2.1 |
-> | January 8 | On | User\_A 192.0.2.1  <br />User\_B 1.1.1.1 |
-> | January 9 | Off | User\_A 192.0.2.1  <br />User\_B 1.1.1.1 |
-> | January 15 | Off | User\_A 192.0.2.1  <br />User\_B 1.1.1.1  <br />User\_C 203.0.113.1 |
+> | 1 de enero | Desactivado | Usuario A 192.0.2.1 |
+> | 2 de enero | en | Usuario\_A 192.0.2.1 |
+> | 8 de enero | en | Usuario\_A 192.0.2.1  <br />Usuario\_B 1.1.1.1 |
+> | 9 de enero | Desactivado | Usuario\_A 192.0.2.1  <br />Usuario\_B 1.1.1.1 |
+> | 15 de enero | Desactivado | Usuario\_A 192.0.2.1  <br />Usuario\_B 1.1.1.1  <br />Usuario\_C 203.0.113.1 |
 
-## Turn on IP masking
+## Activar el enmascaramiento de IP
 
-IP masking is set per app and affects installs from all sources.
+El enmascaramiento de IP se configura por app y afecta a las instalaciones de todas las fuentes.
 
-**To enable IP masking:**
+**Para habilitar el enmascaramiento de IP:**
 
-1. In AppsFlyer, from the side menu, select **Settings** > **App Settings.**
-2. Scroll down to **Advanced Settings**.
-3. Turn on **Mask IP addresses**.
+1. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Configuración de la aplicación.**
+2. Desplázate hasta **Configuración avanzada**.
+3. Activa **Enmascarar direcciones IP**.
 
-## IP masking in raw data reports
+## Enmascaramiento de IP en reportes de raw data
 
-When IP masking is turned on:
+Cuando el enmascaramiento de IP está activado:
 
-* New installs and in-app events show an IP address of 1.1.1.1.
-* <Anchor target="_blank" href="/marketers/docs/determine-user-location">Location-related parameters</Anchor>, like country and city, still appear in raw data reports.
+* Las nuevas instalaciones y los eventos in-app muestran una dirección IP de 1.1.1.1.
+* Los <Anchor target="_blank" href="/marketers/es/docs/determine-user-location">parámetros relacionados con la ubicación</Anchor>, como el país y la ciudad, siguen apareciendo en los reportes de raw data.
 
-**Example raw data report**
+**Ejemplo de reporte de raw data**
 
 ![ip_masking.png](https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png)
 
-<div data-zendesk-anchors="h_01HA91HHADCTT7QS2K79TJEY2C=ip-masking h_01HA92HF3ZYR2NBTXQ1S2AHCAA=note h_01HA91HHAD7BCXRZW6AD9NRDBN=example enabling-ip-masking=turn-on-ip-masking h_01HA91HHAEM220CE8805GFQYKR=turn-on-ip-masking h_01HA91HHAE14D6ES1ERNK93VY9=ip-masking-in-raw-data-reports" />
+<div data-zendesk-anchors="ip-masking=enmascaramiento-de-ip h_01HA91HHADCTT7QS2K79TJEY2C=enmascaramiento-de-ip h_01HA92HF3ZYR2NBTXQ1S2AHCAA=nota h_01HA91HHAD7BCXRZW6AD9NRDBN=ejemplo enabling-ip-masking=activar-el-enmascaramiento-de-ip h_01HA91HHAEM220CE8805GFQYKR=activar-el-enmascaramiento-de-ip ip-masking-in-raw-data-reports=enmascaramiento-de-ip-en-reportes-de-raw-data h_01HA91HHAE14D6ES1ERNK93VY9=enmascaramiento-de-ip-en-reportes-de-raw-data" />

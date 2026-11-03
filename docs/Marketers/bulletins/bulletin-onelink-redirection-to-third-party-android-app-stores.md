@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: OneLink redirection to third-party Android app stores'
+title: >-
+  Boletín: Redireccionamiento de OneLink a tiendas de aplicaciones de terceros
+  de Android
 metadata:
   keywords:
     - Marketers
@@ -13,17 +15,16 @@ x-zendesk:
     - Marketers
     - OneLink
   created_at: '2021-04-08T08:39:22Z'
-  edited_at: '2024-03-21T08:54:40Z'
+  edited_at: '2026-10-20T03:56:58Z'
   id: 360019130678
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019130678-Bulletin-OneLink-redirection-to-third-party-Android-app-stores
+  url: https://support.appsflyer.com/hc/es/articles/360019130678
 ---
-| What's new | OneLink templates provide an option to redirect users without your app to third-party Android app stores. |
+| ¿Qué hay de nuevo? | Las plantillas de OneLink ofrecen una opción para redirigir a los usuarios sin tu aplicación a tiendas de aplicaciones de terceros de Android. |
 | --- | --- |
-| Effective date | May 19, 2021 |
-| Where | <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink template setup</Anchor> |
-| What | Before the change: OneLink templates provided options for users without your app to be redirected to Apple App Store, Google Play, or a web URL.<br /><br />After the change: OneLink templates also provide options for users without your app to be redirected to the following third-party Android app stores:<ul><li>Huawei AppGallery</li><li>Xiaomi Market</li><li>Samsung Galaxy Store</li><li>Oppo App Market</li><li>Vivo App Store</li></ul> |
-| What you must know | <ul><li>Redirecting to third-party Android app stores requires your app in the other stores to have the same package name as the Android app selected in your OneLink template.</li><li>The APK package name (for example: com.shop.app) is used for the redirection, so make sure the APK package name exists in the third-party app store before you select it.</li><li>Only the package name is extracted from the Android app to redirect users. For example, if the AppsFlyer name includes a channel as well, like com.shop.app-store, only com.shop.app is extracted. In such a case, redirection works, but attribution doesn't.</li><li>If you select an Android app that is not in Google Play, you must enter a URL to which all Android users are redirected.</li></ul>[![](https://files.readme.io/5e9df9148e5059160401391ef857ad965d1154e1ee7516bc33804de6badc5cd9-4403341605265.png)](https://files.readme.io/5e9df9148e5059160401391ef857ad965d1154e1ee7516bc33804de6badc5cd9-4403341605265.png)<ul><li>If your Android app is available exclusively through a third-party store, <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app">you must set its Google Play status to Published out of store when adding the app.</Anchor> Choosing any other status will prevent redirection to the third-party store and will result in an error message.</li></ul> |
+| Fecha de entrada en vigor | 19 de mayo de 2021 |
+| Donde | <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">OneLink template setup</Anchor> |
+| Qué | Antes del cambio: las plantillas de OneLink ofrecían opciones para que los usuarios que no tenían tu aplicación fueran redirigidos a la tienda de aplicaciones de Apple, Google Play o una URL web.<br /><br />Después del cambio: las plantillas de OneLink también brindan opciones para que los usuarios sin tu aplicación sean redirigidos a las siguientes tiendas de aplicaciones de terceros de Android:<ul><li>Huawei AppGallery</li><li>Xiaomi Market</li><li>Tienda de Samsung Galaxy</li><li>Oppo App Market</li><li>Vivo App Store</li></ul> |
+| Lo que debes saber | <ul><li>Redirigir a tiendas de aplicaciones de terceros de Android requiere que tu aplicación en las otras tiendas tenga el mismo nombre de paquete que la aplicación de Android seleccionada en tu plantilla de OneLink.</li><li>El nombre del paquete APK (por ejemplo: com.shop.app) se utiliza para el redireccionamiento, así que asegúrate de que el nombre del paquete APK exista en la tienda de aplicaciones de terceros antes de seleccionarlo.</li><li>Solo el nombre del paquete se extrae de la aplicación de Android para redirigir a los usuarios. Por ejemplo, si el nombre de AppsFlyer también incluye un canal, como com.shop.app-store, solo se extrae com.shop.app. En tal caso, la redirección funciona, pero la atribución no.</li><li>Si seleccionas una aplicación de Android que no está en Google Play, debes ingresar una URL a la que se redirige a todos los usuarios de Android.</li></ul>[![](https://files.readme.io/5e9df9148e5059160401391ef857ad965d1154e1ee7516bc33804de6badc5cd9-4403341605265.png)](https://files.readme.io/5e9df9148e5059160401391ef857ad965d1154e1ee7516bc33804de6badc5cd9-4403341605265.png)<ul><li>Si tu aplicación Android está disponible exclusivamente a través de una tienda de terceros, <Anchor target="_blank" href="/marketers/es/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app">debes establecer su estado de Google Play como Publicada fuera de la tienda al añadir la aplicación.</Anchor> Si eliges cualquier otro estado, se impedirá la redirección a la tienda de terceros y aparecerá un mensaje de error.</li></ul> |

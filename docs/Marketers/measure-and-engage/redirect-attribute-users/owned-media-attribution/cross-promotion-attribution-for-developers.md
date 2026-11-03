@@ -1,5 +1,5 @@
 ---
-title: Cross-promotion attribution for developers
+title: Atribución de promoción cruzada para desarrolladores
 metadata:
   keywords:
     - tracking
@@ -16,33 +16,34 @@ x-zendesk:
     - Marketers
     - OneLink
   created_at: '2021-11-09T09:21:34Z'
-  edited_at: '2026-10-26T13:10:48Z'
+  edited_at: '2026-10-27T03:49:32Z'
   id: 4410480466065
-  locale: en-us
+  locale: es
   section: Owned media attribution
   section_id: 6551214397585
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4410480466065-Cross-promotion-attribution-for-developers
+  url: https://support.appsflyer.com/hc/es/articles/4410480466065
 ---
-> **At a glance:** Implement additional code in the AppsFlyer SDK to enable cross-promotion attribution.
+> **At a glance:** Implementa código adicional en el SDK de AppsFlyer para habilitar la atribución de promoción cruzada.
 
-## Implementing cross-promotion attribution in the SDK
+## Implementar la atribución de promoción cruzada en el SDK
 
 > 📘 **Note**
 >
-> Regular mobile ads activate a URL when clicked. Cross-promotion mobile ads don't have a link, but instead, they activate the AppsFlyer SDK ***logAndOpenStore*** method.
+> **Nota:**
+>
+> Los anuncios móviles normales activan una URL cuando se hace clic en ellos. Los anuncios móviles de promoción cruzada no tienen un enlace; en su lugar, activan el método ***logAndOpenStore*** del SDK de AppsFlyer.
 
-Attributing cross-promotion clicks and impressions is performed by using two separate API calls as described below. Each API call can also be passed a map of key values, which can be anything that fits your cross-promotion use case.
+La atribución de clics e impresiones de promoción cruzada se realiza mediante dos llamadas independientes a la API, como se describe a continuación. En cada llamada a la API también puedes pasar un mapa de valores de clave que puede contener cualquier dato que se ajuste a tu caso de uso de promoción cruzada.
 
-For example, using the map of parameters you can set the click lookback window and other parameters such as ad IDs, ad sets. You can also mark the campaign as incentivized campaigns. See AppsFlyer attribution parameter for more information.
+Por ejemplo, con el mapa de parámetros puedes configurar la ventana de lookback de clic y otros parámetros, como los ID de anuncios y los conjuntos de anuncios. También puedes marcar la campaña como incentivada. Consulta el parámetro de atribución de AppsFlyer para obtener más información.
 
-For a list of standard parameters that you can pass to the API method, see <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer attribution parameter.</Anchor>
+Para ver una lista de parámetros estándar que puedes pasar al método de la API, consulta <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">el parámetro de atribución de AppsFlyer.</Anchor>
 
-With the first launch of the promoted app, all the original parameters can be accessed via the SDK's conversion data API, for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-android">Android</Anchor> or <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-ios">iOS</Anchor>.
+Cuando se inicia por primera vez la aplicación promocionada, puedes acceder a todos los parámetros originales a través de la API de datos de conversión del SDK para <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-android">Android</Anchor> o <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-ios">iOS</Anchor>.
 
-### Attribute cross-promotion clicks
+### Atribuir clics de promoción cruzada
 
-Use the following code to attribute the click and launch the app store's app page. The code creates an attribution link and adds the device advertising ID to it.
+Usa el siguiente código para atribuir el clic y abrir la página de la aplicación en la tienda de aplicaciones. El código crea un enlace de atribución y le añade el ID de publicidad del dispositivo.
 
 <Tabs>
 <Tab title="Android">
@@ -57,9 +58,9 @@ CrossPromotionHelper.logAndOpenStore(this, "com.mygosoftware.android.loginbox", 
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
-iOS allows you to utilize the StoreKit component to open the App Store while remaining in the context of your app. The following code snippet demonstrates how to open the StoreKit class and check that it has been properly initialized. You can read more about the StoreKit documentation <Anchor target="_blank" href="https://developer.apple.com/reference/storekit/skstoreproductviewcontroller">here</Anchor>.
+iOS te permite utilizar el componente StoreKit para abrir la App Store sin salir del contexto de tu aplicación. El siguiente fragmento de código muestra cómo abrir la clase StoreKit y comprobar que se ha inicializado correctamente. Puedes leer más sobre la documentación de StoreKit <Anchor target="_blank" href="https://developer.apple.com/reference/storekit/skstoreproductviewcontroller">aquí</Anchor>.
 
 ```objectivec
 static NSString *const kCrossPromotedAppId = @"123456789";
@@ -123,7 +124,7 @@ parameters.Add("custom_param","val2");
 AppsFlyer.attributeAndOpenStore("com.mygosoftware.android.loginbox","test campaign",parameters);
 ```
 
-In Android, the call for this method should result in opening the Play Store and redirecting to the relevant app.
+En Android, la llamada a este método debería abrir Play Store y redirigir a la aplicación correspondiente.
 
 </Tab>
 
@@ -136,18 +137,20 @@ parameters.Add("custom_param","val2")
 AppsFlyer.attributeAndOpenStore("123456789","test campaign",parameters);
 ```
 
-In iOS, an attribution Link is generated and returned to the `onOpenStoreLinkGenerated` method in the `IAppsFlyerUserInvite` interface.
+En iOS, se genera un enlace de atribución y se devuelve al método `onOpenStoreLinkGenerated` en la interfaz `IAppsFlyerUserInvite`.
 
 </Tab>
 </Tabs>
 
 > 📘 **Note**
 >
-> You can add any of these <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">attribution link parameters</Anchor> to the generated link.
+> **Nota**
+>
+> Puedes añadir cualquiera de estos <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-del-enlace-de-atribución">parámetros de enlace de atribución</Anchor> al enlace generado.
 
-### Attribute cross-promotion impressions
+### Atribuir impresiones de promoción cruzada
 
-To attribute an impression use the following API call. Make sure to use the promoted App ID as it appears within the AppsFlyer dashboard.
+Para atribuir una impresión, usa la siguiente llamada a la API. Asegúrate de usar el ID de aplicación promocionado tal y como aparece en el panel de control de AppsFlyer.
 
 <Tabs>
 <Tab title="Java">
@@ -190,7 +193,7 @@ static NSString *const kCrossPromotedCampaign = @"test campaign";
 - (void)viewDidLoad {
   [super viewDidLoad];
     NSDictionary *kCrossPromotedParameters = @{@"af_sub1": @"val", @"custom_param": @"val2" };
-    /* generate impression for cross-promotion */
+    /* generar impresión para la promoción cruzada */
      [AppsFlyerCrossPromotionHelper logCrossPromoteImpression:kCrossPromotedAppId
                        campaign:kCrossPromotedCampaign parameters:kCrossPromotedParameters];
  }
@@ -220,24 +223,24 @@ AppsFlyer.recordCrossPromoteImpression(string promotedAppID, string campaign);
 </Tab>
 </Tabs>
 
-### Attribute cross-promotion with non-native platforms
+### Atribución de promoción cruzada con plataformas no nativas
 
-Currently, the cross-promotion attribution APIs are available only for native Android and iOS SDKs and for Unity. However, **non-native platforms can perform cross-promotions attribution just as effectively.** These include platforms such as Adobe air, Cordova, Xamarin, React native, Marmalade etc.
+Actualmente, las API de atribución de promoción cruzada solo están disponibles para los SDK nativos de Android e iOS y para Unity. Sin embargo, **las plataformas no nativas pueden realizar la atribución de promoción cruzada con la misma eficacia.** Entre ellas se incluyen plataformas como Adobe air, Cordova, Xamarin, React native, Marmalade, etc.
 
-**To do this you need to build an attribution Link, which is invoked when the user clicks on the cross-promotion ad**. The link MUST contain the media source name ***af\_cross\_promotion*** and the site ID of the source app.
+**Para ello, debes crear un enlace de atribución, que se activa cuando el usuario hace clic en el anuncio de promoción cruzada**. El enlace DEBE contener el nombre de la fuente de medios ***af\_cross\_promotion*** y el ID del sitio de la aplicación de origen.
 
-Clicks cross-promotion URL format:
+Formato de URL de clics de promoción cruzada:
 
 ```http
-https://app.appsflyer.com/{PROMOTED APP ID}?pid=af_cross_promotion&
+https://{PREFIX}.app.appsflyersdk.com/{PROMOTED APP ID}?pid=af_cross_promotion&
 af_siteid={SOURCE APP NAME}
 ```
 
-Impressions cross-promotion URL format:
+Formato de URL de impresiones de promoción cruzada:
 
 ```http
 https://impression.appsflyer.com/{PROMOTED APP ID}?pid=af_cross_promotion&
 af_siteid={SOURCE APP NAME}
 ```
 
-<div data-zendesk-anchors="implementing-crosspromotion-attribution-in-the-sdk=implementing-cross-promotion-attribution-in-the-sdk h_01HBDHCWSEPQFTYPXGZG2Y770S=implementing-cross-promotion-attribution-in-the-sdk attribute-crosspromotion-clicks=attribute-cross-promotion-clicks h_01HBDHCWSEB2709HGSKDR78J36=attribute-cross-promotion-clicks attribute-crosspromotion-impressions=attribute-cross-promotion-impressions h_01HBDHCWSE5CVWP7AMJ533S7DG=attribute-cross-promotion-impressions attribute-crosspromotion-with-nonnative-platforms=attribute-cross-promotion-with-non-native-platforms h_01HBDHCWSEKH16WSW0ANYFFH7A=attribute-cross-promotion-with-non-native-platforms" />
+<div data-zendesk-anchors="implementing-crosspromotion-attribution-in-the-sdk=implementar-la-atribuci%C3%B3n-de-promoci%C3%B3n-cruzada-en-el-sdk h_01HBDHCWSEPQFTYPXGZG2Y770S=implementar-la-atribuci%C3%B3n-de-promoci%C3%B3n-cruzada-en-el-sdk attribute-crosspromotion-clicks=atribuir-clics-de-promoci%C3%B3n-cruzada h_01HBDHCWSEB2709HGSKDR78J36=atribuir-clics-de-promoci%C3%B3n-cruzada attribute-crosspromotion-impressions=atribuir-impresiones-de-promoci%C3%B3n-cruzada h_01HBDHCWSE5CVWP7AMJ533S7DG=atribuir-impresiones-de-promoci%C3%B3n-cruzada attribute-crosspromotion-with-nonnative-platforms=atribuci%C3%B3n-de-promoci%C3%B3n-cruzada-con-plataformas-no-nativas h_01HBDHCWSEKH16WSW0ANYFFH7A=atribuci%C3%B3n-de-promoci%C3%B3n-cruzada-con-plataformas-no-nativas" />

@@ -1,5 +1,5 @@
 ---
-title: Measure sessions
+title: Medir sesiones
 metadata:
   keywords:
     - Advertisers
@@ -18,66 +18,65 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2018-03-14T12:13:13Z'
-  edited_at: '2025-04-05T12:53:49Z'
+  edited_at: '2026-08-12T11:57:11Z'
   id: 360000520785
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000520785-Measure-sessions
+  url: https://support.appsflyer.com/hc/es/articles/360000520785
 ---
-> **At a glance**: The sessions metric is used by advertisers to measure app user engagement during a given period.
+> **En resumen**: Los anunciantes utilizan la métrica de sesiones para medir el engagement de los usuarios de la aplicación durante un período determinado.
 
 <Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
-## Sessions counting principles
+## Principios del recuento de sesiones
 
-The number of sessions, AKA launch, performed by users is an important metric and used as a measure of user engagement with the app. It is available via several reports and dashboards. Sessions is used to derive the following metrics:
+El número de sesiones, es decir de inicios, realizadas por los usuarios es una métrica importante y se utiliza para medir el engagement del usuario con la aplicación. Está disponible a través de varios reportes y paneles de control. Las sesiones se utilizan para derivar las siguientes métricas:
 
-* Daily active users (DAU)
-* Monthly active users (MAU)
-* Retention
-* Loyal users using the default setting of 3-app opens
+* Usuarios activos diarios (DAU)
+* Usuarios activos mensuales (MAU)
+* Retención
+* Usuarios fieles que usan la configuración predeterminada de 3 aperturas de la aplicación
 
-**Note!** In the case of organic sessions, the metric is available in the Activity and Cohort dashboards but isn't available in the Overview dashboard.
+**¡Atención!** **Nota:** En el caso de las sesiones orgánicas, la métrica está disponible en los paneles de control Actividad y Cohorte, pero no está disponible en el panel de control General.
 
-### Sessions calculation
+### Cálculo de sesiones
 
-The sessions metric is calculated using the *af\_app\_opened* event reported by the SDK. On the server side, the first 5 sessions are counted without regard for the time interval between them. However, from the sixth session onwards, a minimum time between sessions mechanism regulates which sessions are counted.
+La métrica de sesiones se calcula mediante el evento *af\_app\_opened* reportado por el SDK. En el lado del servidor, las 5 primeras sesiones se contabilizan sin tener en cuenta el intervalo de tiempo entre ellas. Un mecanismo de tiempo mínimo entre sesiones regula qué sesiones se cuentan en el lado del servidor.
 
-The *af\_app\_opened event* displays as *launch* in sessions raw data available via Data Locker. Sessions isn't available via other reporting tools. For ease of understanding, in this article, we'll use the term *af\_app\_opened*.
+El *evento af\_app\_opened* se muestra como *launch* en el raw data de las sesiones disponible a través de Data Locker. Las sesiones no están disponibles a través de otras herramientas de reportes. Para facilitar la comprensión, en este artículo usaremos el término *af\_app\_opened*.
 
-**Sessions reporting**
+**Reporte de sesiones**
 
-A session is reported by the SDK when any of the following occur:
+El SDK reporta una sesión cuando se produce alguna de las siguientes situaciones:
 
-* A user launches the app.
-* When the app is brought to the foreground from the background. The developer can alter the reporting behavior by calling [setMinTimeBetweenSessions.](/docs/measure-sessions#session-reporting-by-the-app-sdk)
-* An explicit session report by the developer in Android apps. For example, this is implemented by utility apps that are always in the background.
+* Un usuario inicia la aplicación.
+* Cuando la aplicación pasa de segundo a primer plano. El desarrollador puede modificar el comportamiento de los reportes llamando a [setMinTimeBetweenSessions.](/docs/measure-sessions#session-reporting-by-the-app-sdk)
+* Un reporte de sesiones explícito del desarrollador en aplicaciones de Android. Por ejemplo, esto lo implementan las aplicaciones de utilidades que siempre están en segundo plano.
 
-**Sessions metric**
+**Métrica de sesiones**
 
-The sessions metric is counted from the first session onwards. From the sixth session, a minimum time between sessions mechanism is activated with a default duration of 10 minutes as described in the example that follows.
+La métrica de sesiones se cuenta desde la primera sesión. La métrica de sesiones se cuenta después de considerar un mecanismo de tiempo mínimo entre sesiones con una duración predeterminada de 10 minutos, como se describe en el ejemplo siguiente.
 
-## Minimum time between sessions mechanism
+## Mecanismo de tiempo mínimo entre sesiones
 
-The mechanism impacts the sessions count. **Note!** Consider that if the Minimum time between sessions is long, more than one hour, and users don't open the app many times a day, then some session-related metrics, such as DAU and retention can be impacted. This is especially true in the case of apps where users typically open the app once a day. 
+El mecanismo afecta al recuento de sesiones. **¡Atención!** **Nota:** Ten en cuenta que si el tiempo mínimo entre sesiones es largo, más de una hora, y los usuarios no abren la aplicación muchas veces al día, algunas métricas relacionadas con la sesión, como DAU y retención, pueden verse afectadas. Esto es especialmente cierto en el caso de las aplicaciones en las que los usuarios suelen abrir la aplicación una vez al día. 
 
 <div id="description-and-example" />
 
-<Accordion title="Description and example">
+<Accordion title="Descripción y ejemplo">
 
-The mechanism is activated after the first five sessions are counted. From the sixth session onwards a session is counted if the minimum time allowed between sessions has passed.
+El mecanismo regula qué sesiones se cuentan. Una sesión se cuenta si ha pasado el tiempo mínimo permitido entre sesiones.
 
-The flow is as follows: A session is counted → A countdown timer starts → Sessions reported while the timer is counting down are disregarded.
+El flujo es el siguiente: Se cuenta una sesión → Se inicia un temporizador de cuenta regresiva → No se tienen en cuenta las sesiones reportadas mientras el temporizador está en cuenta regresiva.
 
-**Example**
+**Ejemplo**
 
-Assumption: The minimum allowed time between sessions setting is 10 minutes and the first five sessions were already counted.
+Supuesto: El tiempo mínimo permitido entre sesiones es de 10 minutos.
 
-| Example case | Session reporting times (number of minutes since 00:00) | Number of sessions counted | Sessions disregarded |
+| Caso de ejemplo | Tiempos de reporte de sesiones (número de minutos desde las 00:00) | Número de sesiones contabilizadas | Sesiones ignoradas |
 | --- | --- | --- | --- |
-| A | 0, 10, 20, 30 | 4 | None |
+| A | 0, 10, 20, 30 | 4 | Ninguno |
 | B | 0, 1, 9, 11 | 2 | 1, 9 |
 | C | 0, 10, 15, 21 | 3 | 15 |
 
@@ -85,103 +84,103 @@ Assumption: The minimum allowed time between sessions setting is 10 minutes and 
 
 <div id="timer-setting" />
 
-<Accordion title="Timer setting">
+<Accordion title="Ajuste del temporizador">
 
-* Default value: 10 minutes
-* Possible values are:
+* Valor predeterminado: 10 minutos
+* Los valores posibles son:
 
-  * 1-60 minutes
-  * 1-24 hours
+  * 1-60 minutos
+  * 1-24 horas
 
-**To set the minimum allowed time between sessions timer:**
+**Para establecer el temporizador de tiempo mínimo permitido entre sesiones:**
 
-1. In AppsFlyer, from the side menu, select **Settings**> **App settings**.
-2. Set **Minimum time between sessions.**
-3. Click **Save settings.**   
-   The change takes effect within an hour.
+1. En AppsFlyer, en el menú lateral, selecciona **Configuración**> **Configuración de la aplicación**.
+2. Configura el **Tiempo mínimo entre sesiones.**
+3. Haz clic en **Guardar configuración.**   
+   El cambio entra en vigor en el transcurso de una hora.
 
 </Accordion>
 
-## Sessions related topics
+## Temas relacionados con las sesiones
 
 <div id="retargeting-sessions" />
 
-<Accordion title="Retargeting sessions">
+<Accordion title="Sesiones de retargeting">
 
-* Retargeting sessions are available starting July 12, 2020.
-* Retargeting sessions are available in:
-  * Retargeting and unified view type in the overview dashboard.
-  * The relevant Cohort views, meaning retargeting and unified. 
-    * In the case of the unified view, if sessions were attributed to a UA and retargeting media source, the retargeting media source prevails, and the UA media source is not displayed.
-    * Data freshness: Daily 13:00 UTC.
-  * Data Locker: Retargeting sessions reports can be enabled; they include both re-engagement and re-attribution sessions. 
-    * Data freshness: 6-hour lag.
-* During re-engagement windows, sessions are attributed to both the UA and retargeting media source. Similarly, other re-engagement in-app events are <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">double-attributed</Anchor>.
-* In the case of Google Ads and X Ads, to avoid duplicate postbacks, the *af\_app\_opened* event is sent once.
+* Las sesiones de retargeting están disponibles a partir del 12 de julio de 2020.
+* Las sesiones de retargeting están disponibles en:
+  * Retargeting y tipo de vista unificada en el panel de control general.
+  * Las vistas de cohorte relevantes, es decir, retargeting y unificadas. 
+    * En el caso de la vista unificada, si las sesiones se atribuyen a una fuente de medios de retargeting y de la UA, prevalece la fuente de medios de retargeting y no se muestra la fuente de medios de la UA.
+    * Actualización de los datos: Diariamente a las 13:00 UTC.
+  * Data Locker: Se pueden habilitar los reportes de sesiones de retargeting; incluyen sesiones de reengagement y de reatribución. 
+    * Actualización de los datos: Demora de 6 horas.
+* Durante las ventanas de reengagement, las sesiones se atribuyen tanto a la UA como a la fuente de medios de retargeting. Del mismo modo, otros eventos de reengagement en la aplicación tienen <Anchor target="_blank" href="/marketers/es/docs/resolve-retargeting-double-attribution">doble atribución</Anchor>.
+* En el caso de Google Ads y X Ads, para evitar postbacks duplicados, el evento *af\_app\_opened* se envía una vez.
 
 </Accordion>
 
 <div id="sessions-postbacks-to-partners" />
 
-<Accordion title="Sessions postbacks to partners">
+<Accordion title="Postbacks de sesiones a partners">
 
-You can send partner session postbacks so that a <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#mapping-methods">postback</Anchor> is sent for each session counted.
+Puedes enviar postbacks de sesiones a partners para que se envíe un <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#métodos-de-mapeo">postback</Anchor> por cada sesión contada.
 
-* To send the postback: Explicitly map *af\_app\_opened* to a partner event. Note! In the AppsFlyer raw data report available via Data Locker this event reflects as a *launch.*
-* Consider that this is a high-volume event and that many partners don't want to receive it.
+* Para enviar el postback: Asigna explícitamente *af\_app\_opened* a un evento de partner. ¡Atención! Nota: En el reporte de raw data de AppsFlyer disponible a través de Data Locker, este evento se refleja como un *inicio.*
+* Ten en cuenta que se trata de un evento de gran volumen y que muchos partners no quieren recibirlo.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> The mapping of `af_app_opened` is only supported by partners with **Send Sessions** enabled.
+> La asignación de `af_app_opened` solo es compatible con los partners que tengan **Enviar sesiones** habilitado.
 
 </Accordion>
 
 <div id="session-reporting-by-the-app-sdk" />
 
-<Accordion title="Session reporting by the app (SDK)">
+<Accordion title="Reportes de sesiones por parte de la aplicación (SDK)">
 
-**App-side:** The SDK sends *af\_app\_opened* each time the app is opened or brought to the foreground after considering the SDK *setMinTimeBetweenSessions* setting.
+**Lado de la aplicación:** El SDK envía *af\_app\_opened* cada vez que la aplicación se abre o se pone en primer plano después de considerar la configuración *setMinTimeBetweenSessions* del SDK.
 
-**Server-side:** A session is counted **if it's not on of the first 5 sessions after the app's first launch** and after considering the minimum time between sessions mechanism. Counted sessions are attributed using the same <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">attribution rules</Anchor> as other in-app events.
+**Lado del servidor:** Las sesiones reportadas por la aplicación se cuentan y registran después de considerar el mecanismo de tiempo mínimo entre sesiones. Las sesiones contadas se atribuyen con las mismas <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">reglas de atribución</Anchor> que otros eventos in-app.
 
-#### **Explicit sessions reporting by the developer (Android apps only)**
+#### **Reportes de sesiones explícitos por parte del desarrollador (solo aplicaciones Android)**
 
-Use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#logsession">logSession</Anchor> in Android to explicitly report a session. An equivalent call is not available in iOS.
+Usa <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#logsession">logSession</Anchor> en Android para reportar explícitamente una sesión. Una llamada equivalente no está disponible en iOS.
 
-* Apps that work in the background continuously may require some logic implemented by the developer to report sessions. For example, utility apps like battery savers, launchers, screen locks, and antivirus apps. For these types of apps, consider reporting a session daily at midnight or some other interval appropriate to the app.
-* In other cases, you may want to count sessions when users perform some in-app action, such as pressing the *clear memory* button and so on.
+* Las aplicaciones que funcionan en segundo plano de forma continua pueden requerir cierta lógica implementada por el desarrollador para reportar las sesiones. Por ejemplo, aplicaciones de utilidad como ahorradores de batería, iniciadores, bloqueos de pantalla y aplicaciones antivirus. Para estos tipos de aplicaciones, considera la posibilidad de reportar una sesión diariamente a medianoche o en algún otro intervalo adecuado para la aplicación.
+* En otros casos, es posible que desees contar las sesiones cuando los usuarios realizan alguna acción in-app, como presionar el botón de *borrar memoria*, etc.
 
-#### **Setting minimum time between app launches**
+#### **Establecer el tiempo mínimo entre inicios de aplicaciones**
 
-In the SDK, set the minimum time that can lapse between two sessions for them to be reported separately.
+En el SDK, establece el tiempo mínimo que puede transcurrir entre dos sesiones para que se reporten por separado.
 
-Use ***setMinTimeBetweenSessions,*** meaning af\_app\_opened event, to control the minimum amount of time that must occur between sessions so that each of them is reported.
+Usa ***setMinTimeBetweenSessions,*** es decir el evento af\_app\_opened, para controlar la cantidad mínima de tiempo que debe transcurrir entre sesiones para que se reporte cada una de ellas.
 
-* [Default] five-seconds. Meaning at least 5 seconds must elapse before another session is reported.
-* The API allows setting the minimum required time between sessions.
+* [Predeterminado] cinco segundos. Lo que significa que deben transcurrir al menos 5 segundos antes de que se reporte otra sesión.
+* La API permite establecer el tiempo mínimo requerido entre sesiones.
 
-**The `setMinTimeBetweenSessions` SDK reference:**
+**La referencia del SDK `setMinTimeBetweenSessions`:**
 
 <Tabs>
 <Tab title="Android">
 
-See the [`setMinTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setmintimebetweensessions) in the Android SDK reference
+Consulta [`setMinTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setmintimebetweensessions) en la referencia del SDK de Android
 
 </Tab>
 
 <Tab title="iOS">
 
-See the [`minTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#mintimebetweensessions) in the iOS SDK reference
+Consulta [`minTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#mintimebetweensessions) en la referencia del SDK de iOS
 
 </Tab>
 
 <Tab title="Unity">
 
-See the [`setMinTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/api#setmintimebetweensessions) in the Unity SDK reference
+Consulta [`setMinTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/api#setmintimebetweensessions) en la referencia del SDK de Unity
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HB8NDPNKERK1RR1Y09V2R2CC=sessions-counting-principles h_01HB8NDPNKFW6S28A3TC7W5J3C=sessions-calculation h_01HB8NDPNKF32E34M3CBJ6GMP8=minimum-time-between-sessions-mechanism h_01HB8NDPNKERP5YVEXMPKP620B=description-and-example h_01HB8NDPNK6R2P682EPSPQ8MGH=timer-setting h_01HB8NDPNKPTJX56Q2SVAB6V6T=sessions-related-topics h_01HB8NDPNMX2JTFHVTN14MVCCW=retargeting-sessions h_01HB8NDPNM5Z9ZHADD32EG66BJ=sessions-postbacks-to-partners h_01HYARHNQCWEHAFQ6B3FHZ0KTK=note h_01HB8NDPNM0Z7D1ZS7G952SSKK=session-reporting-by-the-app-sdk h_01HB8NTFMR3Y9GHFP3EWMAATHY=explicit-sessions-reporting-by-the-developer-android-apps-only h_01HB8NTMC1JYPDWYG9YC8RNSEQ=setting-minimum-time-between-app-launches" />
+<div data-zendesk-anchors="sessions-counting-principles=principios-del-recuento-de-sesiones h_01HB8NDPNKERK1RR1Y09V2R2CC=principios-del-recuento-de-sesiones sessions-calculation=c%C3%A1lculo-de-sesiones h_01HB8NDPNKFW6S28A3TC7W5J3C=c%C3%A1lculo-de-sesiones minimum-time-between-sessions-mechanism=mecanismo-de-tiempo-m%C3%ADnimo-entre-sesiones h_01HB8NDPNKF32E34M3CBJ6GMP8=mecanismo-de-tiempo-m%C3%ADnimo-entre-sesiones h_01HB8NDPNKERP5YVEXMPKP620B=description-and-example h_01HB8NDPNK6R2P682EPSPQ8MGH=timer-setting sessions-related-topics=temas-relacionados-con-las-sesiones h_01HB8NDPNKPTJX56Q2SVAB6V6T=temas-relacionados-con-las-sesiones h_01HB8NDPNMX2JTFHVTN14MVCCW=retargeting-sessions h_01HB8NDPNM5Z9ZHADD32EG66BJ=sessions-postbacks-to-partners h_01HYARHNQCWEHAFQ6B3FHZ0KTK=nota h_01HB8NDPNM0Z7D1ZS7G952SSKK=session-reporting-by-the-app-sdk explicit-sessions-reporting-by-the-developer-android-apps-only=reportes-de-sesiones-expl%C3%ADcitos-por-parte-del-desarrollador-solo-aplicaciones-android h_01HB8NTFMR3Y9GHFP3EWMAATHY=reportes-de-sesiones-expl%C3%ADcitos-por-parte-del-desarrollador-solo-aplicaciones-android setting-minimum-time-between-app-launches=establecer-el-tiempo-m%C3%ADnimo-entre-inicios-de-aplicaciones h_01HB8NTMC1JYPDWYG9YC8RNSEQ=establecer-el-tiempo-m%C3%ADnimo-entre-inicios-de-aplicaciones" />

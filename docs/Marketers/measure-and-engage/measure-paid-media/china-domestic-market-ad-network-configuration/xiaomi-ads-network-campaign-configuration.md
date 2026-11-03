@@ -1,5 +1,5 @@
 ---
-title: Xiaomi Ads Network campaign configuration
+title: Configuración de la campaña de la red de anuncios de Xiaomi
 metadata:
   keywords:
     - XiaoMi
@@ -14,52 +14,51 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-03-28T11:08:46Z'
-  edited_at: '2026-09-15T10:24:13Z'
+  edited_at: '2026-09-17T00:26:36Z'
   id: 115001605286
-  locale: en-us
+  locale: es
   section: China domestic market ad network configuration
   section_id: 6552066355601
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115001605286-Xiaomi-Ads-Network-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/115001605286
 ---
-> **At a glance:** Xiaomi, an AppsFlyer ad network integrated partner, operates the Xiaomi Android App Store which ranks in the Top 5 Android App Distribution Platforms in China, with 5 billion app downloads per month. In addition to click-based mobile attribution, Xiaomi also offers view-through attribution, which you can record with AppsFlyer.
+> **Resumen:** Xiaomi, partner integrado de ad network de AppsFlyer, opera la tienda de aplicaciones Android de Xiaomi, que se encuentra entre las 5 principales plataformas de distribución de aplicaciones Android en China, con 5 billion descargas de aplicaciones al mes. Además de la atribución móvil basada en clics, Xiaomi también ofrece atribución por impresiones, que puedes registrar con AppsFlyer.
 
-## Setting up Xiaomi
+## Configuración de Xiaomi
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace** .  
+   (**Para editar una integración existente:** ve a la pestaña **Collaborate > Partner Integrations > Active integrations** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota importante:** el selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-Xiaomi's configuration window includes 3 active tabs: Integration, Attribution link and Permissions. Click on the items below to read about the tabs setup.
+La ventana de configuración de Xiaomi incluye 3 pestañas activas: Integración, Enlace de atribución y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partner
+### Activar socio
 
-On the **first visit**, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita**, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-General Settings
+Configuración general
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Toggle this to ON if you want to attribute view-through installs from Xiaomi. The view-through lookback slider is available on the attribution link tab (described below).
+Activa esta opción si quieres atribuir instalaciones view-through de Xiaomi. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
 ![](https://files.readme.io/c01732abe8d1bb3c68acdf84bab50cc46d4f4923b7220e3ca51c399074113c1e-50899866307217.png)
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Xiaomi following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a Xiaomi después de las instalaciones y re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 ![xiaomi-default-postbacks.png](https://files.readme.io/ae215140550604649e4345729a7106fa08c15713e003cec534199e3889122b5e-50899866309265.png)
 
@@ -67,53 +66,53 @@ AppsFlyer can send automatic postbacks to Xiaomi following user installs and re-
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes usar un enlace de plataforma única o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data integration is currently not supported with Xiaomi.
+La integración de datos de costo no tiene soporte actualmente con Xiaomi.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue integration is currently not supported with Xiaomi.
+La integración de ingresos publicitarios no es compatible actualmente con Xiaomi.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Xiaomi, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Xiaomi, the permissions tab is active and you can grant control to Xiaomi.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Xiaomi, tanto si el partner actúa como ad network, agencia o incluso ambos. Ten en cuenta que, incluso si la atribución estuviera deshabilitada para Xiaomi, la pestaña de permisos se encontraría activa y podrías otorgarle el control a Xiaomi.
 
-![ad_network_permissions.png](https://files.readme.io/2532b798bacccf9028a157e44a9785a285cd81dd521c0c5ec5303ae420827620-50899913924113.png)
+![ad_network_permissions.png](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
 
-### Ad network permissions
+### Permisos de ad network
 
-* ***Allow to configure integration*** - permit the partner to setup the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app)
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos*a** - solo a los datos de ingresos atribuidos al partner
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW6ZDW8D6CD60S25FVQ80FC=setting-up-xiaomi h_01HKW6ZDW8JK323YYPCSYZ1PKB=integration-tab h_01HKW6ZDW8B60R3QAZRMPHVC31=activate-partner h_01HKW6ZDW8GW51XT1XXPE7DZ02=default-postbacks h_01HKW6ZDW8ERH0MQ2W2YGC5SXB=attribution-link-tab h_01HKW6ZDW8SHGTTVC4V7R1R90K=cost-tab h_01HKW6ZDW8ENFJN342XN66TM19=ad-revenue-tab h_01HKW6ZDW89CE47NF67TJM4AX9=permissions-tab h_01HKW6ZDW8Y85VBJPQ40MZ5CV5=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-xiaomi=configuraci%C3%B3n-de-xiaomi h_01HKW6ZDW8D6CD60S25FVQ80FC=configuraci%C3%B3n-de-xiaomi h_01HKW6ZDW8JK323YYPCSYZ1PKB=integration-tab activate-partner=activar-socio h_01HKW6ZDW8B60R3QAZRMPHVC31=activar-socio default-postbacks=postbacks-predeterminados h_01HKW6ZDW8GW51XT1XXPE7DZ02=postbacks-predeterminados h_01HKW6ZDW8ERH0MQ2W2YGC5SXB=attribution-link-tab h_01HKW6ZDW8SHGTTVC4V7R1R90K=cost-tab h_01HKW6ZDW8ENFJN342XN66TM19=ad-revenue-tab h_01HKW6ZDW89CE47NF67TJM4AX9=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HKW6ZDW8Y85VBJPQ40MZ5CV5=permisos-de-ad-network" />

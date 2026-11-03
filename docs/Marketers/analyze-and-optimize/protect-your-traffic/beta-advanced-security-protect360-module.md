@@ -1,7 +1,8 @@
 ---
-title: Advanced Security Protect360 Module
+title: Beta - Módulo Protect360 de seguridad avanzada
 metadata:
   keywords:
+    - Beta feature
     - Marketers
     - Protect360
 x-zendesk:
@@ -12,142 +13,143 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2025-09-17T15:23:22Z'
-  edited_at: '2026-10-25T07:26:18Z'
+  edited_at: '2026-11-02T01:04:12Z'
   id: 39145848948625
-  locale: en-us
+  locale: es
   section: Protect your traffic
   section_id: 6551015912465
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/39145848948625-Advanced-Security-Protect360-Module
+  url: https://support.appsflyer.com/hc/es/articles/39145848948625
 ---
-> **At a glance:** Strengthen fraud protection for your Android app with the Advanced Security Module. This real-time solution detects and blocks attribution spoofing and manipulated traffic before installs are attributed. Designed for high-traffic apps and Protect360 clients, especially those working with affiliates. The module is fully configurable by you, allowing initial setup and ongoing maintenance to adapt to evolving fraud patterns and protect data integrity.
+<span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-> 🚧 **Important!**
+> **De un vistazo:** Refuerza la protección contra el fraude de tu aplicación Android con el módulo de seguridad avanzada. Esta solución en tiempo real detecta y bloquea la suplantación de atribución y el tráfico manipulado antes de que se atribuyan las instalaciones. Diseñado para aplicaciones con mucho tráfico y clientes de Protect360, especialmente para quienes trabajan con afiliados. Puedes configurar el módulo por completo, lo que te permite realizar la configuración inicial y el mantenimiento continuo para adaptarte a los patrones de fraude en evolución y proteger la integridad de los datos.
+
+> 🚧 **Dos puntos (:)**
 >
-> The Advanced Security Protect360 Module beta is available to all Protect360 customers. To join, contact your CSM.
+> La beta del módulo Advanced Security Protect360 está disponible para todos los clientes de Protect360. Para unirte, contacta a tu CSM.
 
-## What is SDK spoofing?
+## ¿Qué es la falsificación del SDK?
 
-SDK spoofing is an advanced fraud tactic where attackers send fake install and in-app event requests directly to AppsFlyer servers—without installing or running the app on a real device. The app SDK isn’t hacked or modified. Instead, fraudsters mimic the network requests a real app would send, making the activity look legitimate.
+La falsificación del SDK es una táctica avanzada de fraude en la que los atacantes envían solicitudes falsas de instalación y de eventos in-app directamente a los servidores de AppsFlyer, sin instalar ni ejecutar la aplicación en un dispositivo real. El SDK de la aplicación no se hackea ni se modifica. En su lugar, los defraudadores imitan las solicitudes de red que enviaría una aplicación real, haciendo que la actividad parezca legítima.
 
-For advertisers, SDK spoofing can lead to installs and engagement that never occurred, inflated install volumes, discrepancies between AppsFlyer and app store numbers, and wasted ad spend.
+Para los anunciantes, la falsificación del SDK puede generar instalaciones y engagement que nunca se produjeron, volúmenes de instalación inflados, discrepancias entre AppsFlyer y las cifras de la tienda de aplicaciones, y gasto publicitario desperdiciado.
 
-## About the Advanced Security Module
+## Acerca del módulo de seguridad avanzada
 
-The **Advanced Security Module** is an add-on to AppsFlyer’s Protect360 suite, designed to detect and stop advanced attribution spoofing techniques on Android. By evaluating install activity after the first app launch but before attribution occurs, the module identifies suspicious traffic and prevents fraudulent installs from impacting your performance metrics.
+El **módulo Advanced Security** es un complemento del paquete Protect360 de AppsFlyer, diseñado para detectar y detener técnicas avanzadas de suplantación de atribución en Android. Al evaluar la actividad de instalación después del primer inicio de la aplicación, pero antes de que se produzca la atribución, el módulo identifica el tráfico sospechoso y evita que las instalaciones fraudulentas afecten a tus métricas de rendimiento.
 
-This solution is especially valuable for apps facing discrepancies between app store data and AppsFlyer attribution, or those managing affiliate traffic, two common indicators of install fraud.
+Esta solución es especialmente valiosa para las aplicaciones que presentan discrepancias entre los datos de la tienda de aplicaciones y la atribución de AppsFlyer, o que gestionan tráfico de afiliados, dos indicadores habituales de fraude de instalación.
 
-**How it works**
+**Cómo funciona**
 
-The module is triggered after the first app launch (logged by the SDK) but before the install is attributed. To use the Advanced Security Module, you must be using the Android SDK v6.15.2 or later.
+El módulo se activa después del primer inicio de la aplicación (registrado por el SDK), pero antes de que se atribuya la instalación. Para usar el módulo Advanced Security, debes utilizar Android SDK v6.15.2 o una versión posterior.
 
-## Prerequisites
+## Prerrequisitos
 
-Before you begin, make sure you have the following:
+Antes de empezar, asegúrate de que tienes lo siguiente:
 
-* **Android SDK v6.15.2 or later** integrated in your app.
-* **An API V2 token** — required for Maven repository authentication when your developer integrates the Security Module dependency. See <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#applications-of-the-api-v2-token">Managing AppsFlyer tokens</Anchor> for how to retrieve or generate one.
-* **All certificate hashes (SHA-256)** for every certificate used to sign your app (debug and release). See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint">Generating a SHA256 fingerprint</Anchor>.
+* **Android SDK v6.15.2 o posterior** integrado en tu app.
+* **Un token de API V2** — necesario para la autenticación del repositorio de Maven cuando tu desarrollador integra la dependencia del módulo de seguridad. Consulta <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens#aplicaciones-del-token-api-v2">Gestión de tokens de AppsFlyer</Anchor> para saber cómo recuperar o generar uno.
+* **Todos los hashes de certificados (SHA-256)** de cada certificado utilizado para firmar tu app (debug y release). Consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint">Generar una huella digital SHA256</Anchor>.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> If your account has already reached the two-token limit for API V2 tokens, you do not need to request a new one, an existing API V2 token can be reused for this integration. Contact your CSM if you have questions about token allocation.
+> Si tu cuenta ya ha alcanzado el límite de dos tokens de API V2, no necesitas solicitar uno nuevo: puedes reutilizar un token de API V2 existente para esta integración. Ponte en contacto con tu CSM si tienes preguntas sobre la asignación de tokens.
 >
-> For the full technical integration steps, see the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin">Android security plugin developer guide</Anchor>.
+> Para ver todos los pasos de la integración técnica, consulta la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin">guía para desarrolladores del plugin de seguridad de Android</Anchor>.
 
-## Set the Advanced Security Module
+## Configura el módulo de seguridad avanzada
 
-Set up the Advanced Security Module to validate that in-app traffic is coming from your signed app builds and to detect (and optionally block) spoofed traffic.
+Configura el módulo de seguridad avanzada para validar que el tráfico in-app procede de las compilaciones firmadas de tu aplicación y para detectar (y, opcionalmente, bloquear) el tráfico falsificado.
 
-<Accordion title="Configure the Advanced Security Module">
+<Accordion title="Configura el módulo de seguridad avanzada">
 
-#### **Step 1: Open and select an app**
+#### **Paso 1: abre y selecciona una aplicación**
 
-1. In AppsFlyer, go to **Settings > Protect360 > Advanced security module**.
-2. Click **Get Started** or **Add build**.
-3. Select the app you want to implement the Advanced Security Module solution on.
-4. Click **Next**
+1. En AppsFlyer, ve a **Settings > Protect360 > Advanced security module**.
+2. Haz clic en **Get Started** o en **Add build**.
+3. Selecciona la aplicación en la que quieres implementar la solución del módulo Advanced Security.
+4. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer
 
-#### **Step 2: Add certificate**
+#### **Paso 2: Añadir certificado**
 
-1. Add the:
-   1. Certificate name
-   2. Certificate Value
-2. Click **Next**
+1. Agrega:
+   1. Nombre del certificado
+   2. Valor del certificado
+2. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer
 
-Note: Ask your developer for all the [certificate hashes](https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint) used to sign the app. The Security Module uses these certificates to validate that traffic is coming from your app, so all relevant hashes should be included.
+Nota: pide a tu desarrollador todos los [hashes de certificados](https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint) utilizados para firmar la aplicación. El módulo de seguridad usa estos certificados para validar que el tráfico procede de tu aplicación, por lo que debes incluir todos los hashes relevantes.
 
-#### **Step 3: Excluded app versions from detection**
+#### **Paso 3: Versiones de la aplicación excluidas de la detección**
 
-* Add app versions that should be excluded from Advanced Security detection. Typically, these would be:
-  * Versions released before the Advanced Security Module was integrated.
-  * Test or legacy builds that don’t include the module.
+* Añade las versiones de la aplicación que deban excluirse de la detección de Advanced Security. Normalmente, serían estas:
+  * Versiones lanzadas antes de que se integrara el módulo de Advanced Security.
+  * Builds de prueba o heredadas que no incluyen el módulo.
 
-#### **Step 4: Build activation**
+#### **Paso 4: Activación del build**
 
-1. Click **Activate build**.
-2. Your build will go into **In progress** until the build is complete. This may take 10-15 minutes.
-3. Once complete, copy the code by clicking the **Copy code** button on the build and send it to your developer for integration into the app SDK.
+1. Haz clic en **Activar build**.
+2. Tu build pasará a **En curso** hasta que se complete el build. Esto puede llevar 10-15 minutos.
+3. Cuando se complete, copia el código haciendo clic en el botón **Copiar código** del build y envíaselo a tu desarrollador para integrarlo en el SDK de la aplicación.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> After you build, the detection mode is set to **Tagged** by default. In this mode, AppsFlyer flags suspicious traffic but doesn't block it. After the secured version is live, switch to **Implemented** mode to block spoofed traffic. For more information about the Tagged and Implemented modes, see <Anchor target="_blank" href="/marketers/docs/beta-fraud-protection-studio#fps-modes">FPS Modes</Anchor>.
+> Después de realizar el build, el modo de detección se configura como **Tagged** de forma predeterminada. En este modo, AppsFlyer marca el tráfico sospechoso, pero no lo bloquea. Cuando la versión protegida esté activa, cambia al modo **Implemented** para bloquear el tráfico suplantado. Para obtener más información sobre los modos Tagged e Implemented, consulta <Anchor target="_blank" href="/marketers/es/docs/beta-fraud-protection-studio#modos-de-fps">Modos de FPS</Anchor>.
 
 </Accordion>
 
-<Accordion title="Maintaining and updating the configuration">
+<Accordion title="Mantenimiento y actualización de la configuración">
 
-Fraud techniques change over time, and malicious actors may attempt to reverse-engineer detection logic. Regular maintenance ensures continued effectiveness.
+Las técnicas de fraude cambian con el tiempo, y los actores maliciosos pueden intentar aplicar ingeniería inversa a la lógica de detección. Un mantenimiento regular garantiza su eficacia continua.
 
-#### **When to update the configuration**
+#### **Cuándo actualizar la configuración**
 
-Update your settings if you notice:
+Actualiza la configuración si detectas lo siguiente:
 
-* Suspicious installs or events passing through detection
-* Changes in traffic patterns
-* New app versions or certificate changes
-* Reduced effectiveness of existing protections
+* Instalaciones o eventos sospechosos que pasan por la detección
+* Cambios en los patrones de tráfico
+* Nuevas versiones de la app o cambios en los certificados
+* Menor eficacia de las protecciones existentes
 
-#### **What you can update**
+#### **Qué puedes actualizar**
 
-You can:
+Podrás hacer lo siguiente:
 
-* Add or update app certificates
-* Modify excluded app versions
-* Rebuild and redeploy the Security Module
-* Adjust detection mode based on rollout status
+* Añadir o actualizar certificados de la app
+* Modificar las versiones excluidas de la aplicación
+* Reconstruir y volver a implementar el módulo de seguridad
+* Ajustar el modo de detección en función del estado del despliegue
 
-#### **Best practices**
+#### **Mejores prácticas**
 
-* Review Advanced Security insights regularly
-* Coordinate with developers before app releases
-* Update certificates immediately after signing changes
-* Reassess configuration periodically to stay ahead of emerging fraud methods
+* Revisar periódicamente los insights de seguridad avanzada
+* Coordinarse con los desarrolladores antes de lanzar la app
+* Actualizar los certificados inmediatamente después de los cambios en la firma
+* Reevaluar la configuración periódicamente para adelantarte a los nuevos métodos de fraude
 
 </Accordion>
 
-## **Data visibility**
+## **Visibilidad de los datos**
 
-The advanced security module detection is reflected in two places:
+La detección del módulo de seguridad avanzado se refleja en dos lugares:
 
-* Protect360 dashboard
+* Panel de control de Protect360
 * Fraud Protection Studio
 
-<Accordion title="Protect360 dashboard">
+<Accordion title="Panel de control de Protect360">
 
-The advanced security module detection can be found under the **Attribution Spoofing** section.
+La detección del módulo de seguridad avanzado se encuentra en la sección **Atribución falsificada**.
 
-Data is broken up into two KPIs and a graph.
+Los datos se dividen en dos KPI y un gráfico.
 
 **KPIs**
 
-* **Tagged attribution spoofing**: Number of install candidates that were detected by the advanced security module in tagged mode.
-* **Implemented attribution spoofing**: Number of install candidates that were detected by the advanced security module in implemented mode, and blocked.
+* **Atribución falsificada etiquetada**: número de candidatos a instalación detectados por el módulo de seguridad avanzado en modo etiquetado.
+* **Atribución falsificada implementada**: número de candidatos a instalación detectados por el módulo de seguridad avanzado en modo implementado y bloqueados.
 
-**Graph**
+**Gráfico**
 
-* **Attribution spoofing trend**: Reflection of the advanced security module detection over time. This graph reflects the high-level status of the spoofing detection on the app/s level.
+* **Tendencia de atribución falsificada**: reflejo de la detección del módulo de seguridad avanzado a lo largo del tiempo. Este gráfico refleja el estado general de la detección de suplantación a nivel de app/s.
 
 <Image alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
 
@@ -155,81 +157,81 @@ Data is broken up into two KPIs and a graph.
 
 <Accordion title="Fraud Protection Studio (FPS)">
 
-The Advanced Security Module can be found in the Fraud Protection Studio page.
+El Advanced Security Module se encuentra en la página de Fraud Protection Studio.
 
-#### How to access
+#### Cómo acceder
 
-To access the Advanced Security Module:
+Para acceder al Advanced Security Module:
 
-1. Log in to AppsFlyer.
-2. From the left-hand menu, go to Settings > Protect360 > Fraud Protection Studio.
-3. Use the app dropdown at the top of the page to select the app you want to configure.
-4. Select the Advanced Security Module card from the left menu.
+1. Envíanos tus comentarios con el mensaje "Envía comentarios a AppsFlyer" y contacta con el equipo de soporte de AppsFlyer.
+2. En el menú de la izquierda, ve a Configuración > Protect360 > Fraud Protection Studio.
+3. Usa el menú desplegable de aplicaciones en la parte superior de la página para seleccionar la aplicación que deseas configurar.
+4. Selecciona la tarjeta Advanced Security Module en el menú de la izquierda.
 
-#### The Advanced Security Module page
+#### La página del Advanced Security Module
 
 <Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
-The Advanced Security Module page is broken into three sections.
+La página del Advanced Security Module se divide en tres secciones.
 
-##### Detection status
+##### Estado de detección
 
-* Shows the detection mode. The two options are implemented and tagged. By default, it is set to **Tagged**.
+* Muestra el modo de detección. Las dos opciones son implemented y tagged. De forma predeterminada, está configurado como **Tagged**.
 
-Note: To change the detection status, contact your CSM.
+Nota: Para cambiar el estado de detección, ponte en contacto con tu CSM.
 
-##### Top app versions by detection status
+##### Versiones principales de la aplicación por estado de detección
 
-* The chart shows the top 5 app versions in terms of installs volume
-  * Every app version is broken down by:
-    * **Untagged** - Install candidates that were not detected by the advanced security module.
-    * **Tagged** - Install candidates that are detected by the advanced security module in tagged mode.
-    * **Blocked** - Install candidates that are detected by the advanced security module in implemented mode. Every install candidate that is blocked will not proceed.
+* El gráfico muestra las 5 versiones principales de la aplicación en términos de volumen de instalaciones
+  * Cada versión de la aplicación se desglosa por:
+    * **Untagged** - Candidatos de instalación que no detectó el módulo de seguridad avanzada.
+    * **Tagged** - Candidatos de instalación que detecta el módulo de seguridad avanzada en modo etiquetado.
+    * **Blocked** - Candidatos de instalación que detecta el módulo de seguridad avanzada en modo implementado. Todos los candidatos de instalación que se bloqueen no continuarán.
 
 ##### Insights
 
-Insights help you understand the breakdown of the chart. The three types of insights are:
+Los insights te ayudan a comprender el desglose del gráfico. Los tres tipos de insights son:
 
-* **All traffic is blocked** - App versions that are 100% blocked may indicate that they were not added to the exclusion list. Please check the app version exclusion list with your CSM and consider adding the relevant app versions.
-* **All traffic is tagged** - App versions that are 100% tagged may not have been added to the exclusion list. Please check the app versions exclusion list with your CSM and consider adding the relevant app versions.
-* **High rate of tagged detections** - One or more app versions are showing more than 20% advanced security module detections in tagged mode. It is highly recommended to contact your CSM to switch to implemented detection mode for the best results.
-
-</Accordion>
-
-<Accordion title="FAQ">
-
-#### What is Advanced Security?
-
-Advanced Security is an additional protection layer for the AppsFlyer Android SDK that helps prevent attribution spoofing, a type of fraud where fake installs or events are reported even though no real user installed or used the app.
-
-#### What problem does Advanced Security solve?
-
-Advanced Security helps prevent fake installs and in-app activity caused by spoofing that appear in AppsFlyer but do not exist in the app store or backend systems. This reduces inflated install numbers, data discrepancies, and wasted ad spend.
-
-#### What is attribution spoofing?
-
-Attribution spoofing is a fraud technique where attackers generate fake install or in-app event data and send it to AppsFlyer while pretending it came from your app. No real app install or user activity actually occurs.
-
-#### How does Advanced Security prevent attribution spoofing?
-
-Advanced Security verifies that install and in-app event data truly came from your app’s SDK by adding a unique verification signature to each request. AppsFlyer checks this signature to confirm the data is genuine and has not been spoofed or manipulated.
-
-#### Does Advanced Security affect the app or user experience?
-
-No. Advanced Security runs in the background and does not change how users install or use the app. Any additional processing happens behind the scenes and is not noticeable to users.
-
-#### Who should use Advanced Security?
-
-Advanced Security is most relevant for apps that work heavily with non-SRN or affiliate networks, see unexplained gaps between app store installs and AppsFlyer data, or suspect sophisticated fraud that is difficult to detect using standard methods.
-
-#### Is Advanced Security available for all platforms?
-
-No. Advanced Security is currently available for Android apps only and is offered to Protect360 premium customers. It's also compatible with all AppsFlyer plugins.
-
-#### How do I know Advanced Security is working?
-
-Detection results are visible in the Protect360 dashboard and Fraud Protection Studio, where you can track spoofed traffic that is tagged or blocked and review trends over time.
+* **Todo el tráfico está bloqueado** - Las versiones de la aplicación que están bloqueadas al 100% pueden indicar que no se han añadido a la lista de exclusión. Por favor, verifica la lista de exclusión de versiones de la aplicación con tu CSM y considera añadir las versiones de la aplicación relevantes.
+* **Todo el tráfico está etiquetado** - Es posible que las versiones de la aplicación etiquetadas al 100% no se hayan añadido a la lista de exclusión. Por favor, verifica la lista de exclusión de versiones de la aplicación con tu CSM y considera añadir las versiones de la aplicación relevantes.
+* **Tasa alta de detecciones etiquetadas** - Una o más versiones de la aplicación muestran más del 20% de detecciones del módulo de seguridad avanzada en modo etiquetado. Se recomienda encarecidamente que te pongas en contacto con tu CSM para cambiar al modo de detección implementado y obtener los mejores resultados.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01K5EBZV8BY54H332WTWEMYVSA=important h_01KH8MPFJBSN67PSQXX25NG6ZZ=what-is-sdk-spoofing h_01K5C4BCNRE8JWQ9DA20DJ3A07=about-the-advanced-security-module h_01K9PRQNEWSECTION0001AB=prerequisites h_01K9PRQNEWSECTION0002AB=important-1 h_01KHK6M3CTY4YSCRTSMS707S5Z=set-the-advanced-security-module h_01KH8XDACWA2C46MEEGFMM6J8M=step-1-open-and-select-an-app h_01KH8XDACYBFZJWHZZCD0JSNGJ=step-2-add-certificate h_01KH8XDAD08E1JJVVSV9GY4RAB=step-3-excluded-app-versions-from-detection h_01KH8XDAD122D7PWP2367YVNP2=step-4-build-activation h_01KH8XJXN717M3GDJNPPMWDBHY=note h_01KH8XDAD3M4RARMK7DS7RA08X=when-to-update-the-configuration h_01KH8XDAD46P524Z2H8BBZRAR1=what-you-can-update h_01KH8XDAD5PVKNPW37PMG3NKHH=best-practices h_01K5C4BCNTBVDQX8DGTGEAN01T=data-visibility h_01K5C4BCNZBS424A4PMS7AR8XG=how-to-access h_01K5C4BCP14ARR3JMDPMRWZPTT=the-advanced-security-module-page h_01K5C4BVN5CQVP8HJG1MBV72AW=detection-status h_01K5C4BVN69SK4TBNWPFPWYXPN=top-app-versions-by-detection-status h_01K5C4BVN6XA4SNP4TK9SSRHS9=insights h_01KH9HERVW7QE2JXCGBBC206VW=what-is-advanced-security h_01KH9HERVX8V537KQBSMAR31T8=what-problem-does-advanced-security-solve h_01KH9HERVY5G1J5KQV9ZKTHGXX=what-is-attribution-spoofing h_01KH9HERVZAT11WNX99R2EQCPB=how-does-advanced-security-prevent-attribution-spoofing h_01KH9HERW0XFEGCKGJZA6C44HY=does-advanced-security-affect-the-app-or-user-experience h_01KH9HERW00N9M05DSF8998JE0=who-should-use-advanced-security h_01KH9HERW13WYZYBAGA9XXKW1B=is-advanced-security-available-for-all-platforms h_01KH9HERW2CQ76W33ERFTP0FS9=how-do-i-know-advanced-security-is-working" />
+<Accordion title="Preguntas frecuentes">
+
+#### ¿Qué es la seguridad avanzada?
+
+Advanced Security es una capa de protección adicional para el SDK de AppsFlyer para Android que ayuda a evitar la suplantación de la atribución, un tipo de fraude en el que se reportan instalaciones o eventos falsos aunque ningún usuario real haya instalado ni usado la aplicación.
+
+#### ¿Qué problema resuelve Advanced Security?
+
+Advanced Security ayuda a evitar instalaciones falsas y actividad in-app causadas por el spoofing que aparecen en AppsFlyer, pero no existen en la tienda de aplicaciones ni en los sistemas de backend. Esto reduce el número inflado de instalaciones, las discrepancias en los datos y el gasto publicitario desperdiciado.
+
+#### ¿Qué es la suplantación de atribución?
+
+La suplantación de atribución es una técnica de fraude en la que los atacantes generan datos falsos de instalación o de eventos in-app y los envían a AppsFlyer mientras fingen que proceden de tu app. En realidad, no se produce ninguna instalación real de la aplicación ni ninguna actividad del usuario.
+
+#### ¿Cómo evita Advanced Security la suplantación de atribución?
+
+Advanced Security verifica que los datos de instalación y de eventos in-app proceden realmente del SDK de tu aplicación añadiendo una firma de verificación única a cada solicitud. AppsFlyer comprueba esta firma para confirmar que los datos son auténticos y no han sido suplantados ni manipulados.
+
+#### ¿Advanced Security afecta a la aplicación o a la experiencia del usuario?
+
+N.º Advanced Security se ejecuta en segundo plano y no cambia la forma en que los usuarios instalan o usan la aplicación. Todo el procesamiento adicional se realiza entre bastidores y los usuarios no lo perciben.
+
+#### ¿Quién debería usar Advanced Security?
+
+Advanced Security es especialmente relevante para las apps que trabajan en gran medida con redes no SRN o de afiliados, observan discrepancias sin explicación entre las instalaciones de la tienda de aplicaciones y los datos de AppsFlyer, o sospechan de un fraude sofisticado que resulta difícil de detectar con métodos estándar.
+
+#### ¿Advanced Security está disponible para todas las plataformas?
+
+N.º Actualmente, Advanced Security solo está disponible para aplicaciones Android y se ofrece a los clientes premium de Protect360. También es compatible con todos los plugins de AppsFlyer.
+
+#### ¿Cómo sé si Advanced Security está funcionando?
+
+Los resultados de detección se muestran en el dashboard de Protect360 y en Fraud Protection Studio, donde puedes hacer track del tráfico suplantado que se etiqueta o bloquea y revisar las tendencias a lo largo del tiempo.
+
+</Accordion>
+
+<div data-zendesk-anchors="h_01K5EBZV8BY54H332WTWEMYVSA=dos-puntos- what-is-sdk-spoofing=qu%C3%A9-es-la-falsificaci%C3%B3n-del-sdk h_01KH8MPFJBSN67PSQXX25NG6ZZ=qu%C3%A9-es-la-falsificaci%C3%B3n-del-sdk about-the-advanced-security-module=acerca-del-m%C3%B3dulo-de-seguridad-avanzada h_01K5C4BCNRE8JWQ9DA20DJ3A07=acerca-del-m%C3%B3dulo-de-seguridad-avanzada h_01K9PRQNEWSECTION0001AB=prerrequisitos prerequisites=prerrequisitos h_01K9PRQNEWSECTION0002AB=importante set-the-advanced-security-module=configura-el-m%C3%B3dulo-de-seguridad-avanzada h_01KHK6M3CTY4YSCRTSMS707S5Z=configura-el-m%C3%B3dulo-de-seguridad-avanzada step-1-open-and-select-an-app=paso-1-abre-y-selecciona-una-aplicaci%C3%B3n h_01KH8XDACWA2C46MEEGFMM6J8M=paso-1-abre-y-selecciona-una-aplicaci%C3%B3n step-2-add-certificate=paso-2-a%C3%B1adir-certificado h_01KH8XDACYBFZJWHZZCD0JSNGJ=paso-2-a%C3%B1adir-certificado step-3-excluded-app-versions-from-detection=paso-3-versiones-de-la-aplicaci%C3%B3n-excluidas-de-la-detecci%C3%B3n h_01KH8XDAD08E1JJVVSV9GY4RAB=paso-3-versiones-de-la-aplicaci%C3%B3n-excluidas-de-la-detecci%C3%B3n step-4-build-activation=paso-4-activaci%C3%B3n-del-build h_01KH8XDAD122D7PWP2367YVNP2=paso-4-activaci%C3%B3n-del-build h_01KH8XJXN717M3GDJNPPMWDBHY=advertencia when-to-update-the-configuration=cu%C3%A1ndo-actualizar-la-configuraci%C3%B3n h_01KH8XDAD3M4RARMK7DS7RA08X=cu%C3%A1ndo-actualizar-la-configuraci%C3%B3n what-you-can-update=qu%C3%A9-puedes-actualizar h_01KH8XDAD46P524Z2H8BBZRAR1=qu%C3%A9-puedes-actualizar best-practices=mejores-pr%C3%A1cticas h_01KH8XDAD5PVKNPW37PMG3NKHH=mejores-pr%C3%A1cticas data-visibility=visibilidad-de-los-datos h_01K5C4BCNTBVDQX8DGTGEAN01T=visibilidad-de-los-datos how-to-access=c%C3%B3mo-acceder h_01K5C4BCNZBS424A4PMS7AR8XG=c%C3%B3mo-acceder the-advanced-security-module-page=la-p%C3%A1gina-del-advanced-security-module h_01K5C4BCP14ARR3JMDPMRWZPTT=la-p%C3%A1gina-del-advanced-security-module h_01K5C4BVN5CQVP8HJG1MBV72AW=estado-de-detecci%C3%B3n h_01K5C4BVN69SK4TBNWPFPWYXPN=versiones-principales-de-la-aplicaci%C3%B3n-por-estado-de-detecci%C3%B3n h_01K5C4BVN6XA4SNP4TK9SSRHS9=insights what-is-advanced-security=qu%C3%A9-es-la-seguridad-avanzada h_01KH9HERVW7QE2JXCGBBC206VW=qu%C3%A9-es-la-seguridad-avanzada what-problem-does-advanced-security-solve=qu%C3%A9-problema-resuelve-advanced-security h_01KH9HERVX8V537KQBSMAR31T8=qu%C3%A9-problema-resuelve-advanced-security what-is-attribution-spoofing=qu%C3%A9-es-la-suplantaci%C3%B3n-de-atribuci%C3%B3n h_01KH9HERVY5G1J5KQV9ZKTHGXX=qu%C3%A9-es-la-suplantaci%C3%B3n-de-atribuci%C3%B3n how-does-advanced-security-prevent-attribution-spoofing=c%C3%B3mo-evita-advanced-security-la-suplantaci%C3%B3n-de-atribuci%C3%B3n h_01KH9HERVZAT11WNX99R2EQCPB=c%C3%B3mo-evita-advanced-security-la-suplantaci%C3%B3n-de-atribuci%C3%B3n does-advanced-security-affect-the-app-or-user-experience=advanced-security-afecta-a-la-aplicaci%C3%B3n-o-a-la-experiencia-del-usuario h_01KH9HERW0XFEGCKGJZA6C44HY=advanced-security-afecta-a-la-aplicaci%C3%B3n-o-a-la-experiencia-del-usuario who-should-use-advanced-security=qui%C3%A9n-deber%C3%ADa-usar-advanced-security h_01KH9HERW00N9M05DSF8998JE0=qui%C3%A9n-deber%C3%ADa-usar-advanced-security is-advanced-security-available-for-all-platforms=advanced-security-est%C3%A1-disponible-para-todas-las-plataformas h_01KH9HERW13WYZYBAGA9XXKW1B=advanced-security-est%C3%A1-disponible-para-todas-las-plataformas how-do-i-know-advanced-security-is-working=c%C3%B3mo-s%C3%A9-si-advanced-security-est%C3%A1-funcionando h_01KH9HERW2CQ76W33ERFTP0FS9=c%C3%B3mo-s%C3%A9-si-advanced-security-est%C3%A1-funcionando" />

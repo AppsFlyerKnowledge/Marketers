@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: Push API Update: Changes to “Message Fields” Selection Behavior'
+title: >-
+  Boletín: actualización de la Push API: cambios en el comportamiento de
+  selección de «Campos del mensaje»
 metadata:
   keywords:
     - Marketers
@@ -13,17 +15,16 @@ x-zendesk:
     - Marketers
     - Raw Reports
   created_at: '2025-12-10T11:38:33Z'
-  edited_at: '2025-12-10T11:41:45Z'
+  edited_at: '2026-10-20T03:54:28Z'
   id: 41785747996689
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/41785747996689-Bulletin-Push-API-Update-Changes-to-Message-Fields-Selection-Behavior
+  url: https://support.appsflyer.com/hc/es/articles/41785747996689
 ---
-| Section | Details |
+| Sección. | Detalles |
 | --- | --- |
-| **What's new** | The behavior of the Push API configuration setting `selected_fields = "ALL FIELDS"`   changes. This setting will no longer act as a future-proof selector. It will only apply to the message fields that exist at the moment the configuration is saved. Any new fields added later will not be included automatically.<br /><br />This change increases schema transparency, gives customers better control of their data pipelines, and prevents unplanned field expansion. |
-| **Effective date** | December 30, 2025 |
-| **What you need to know** | <ul><li>The Push API setting can be applied in the following ways:<ul><li>[Update push API configuration REST API](https://dev.appsflyer.com/hc/reference/put_app-app-id):<ul><li>Set the `select_fields` property to ALL Fields</li></ul></li><li><Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">In AppsFlyer, under Export-> API Access -> Push API or Push API (SKAN)</Anchor>:<ul><li>Select the **Select All** field.</li></ul></li></ul></li><li>When calling the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_app-app-id">Get Push API configuration REST API</Anchor> when `selected_fields = "ALL FIELDS"` is set, the call will return the explicit list of selected fields instead of the generic “all”.</li></ul> |
-| **What you need to do** | <ul><li>Most customers do not need to take action.</li><li>No changes to field names or semantics.</li><li>Customers  must manually update their selection in AppsFlyer or via the REST API to receive newly added fields.</li><li>Customers using “ALL FIELDS” should periodically review their configuration to ensure new fields are included as needed.</li></ul> |
+| **¿Qué hay de nuevo?** | El comportamiento del ajuste de configuración de Push API `selected_fields = "ALL FIELDS"`   cambia. Esta configuración dejará de actuar como un selector preparado para futuras actualizaciones. Solo se aplicará a los campos de mensaje que existan en el momento en que se guarda la configuración. Los nuevos campos añadidos posteriormente no se incluirán automáticamente.<br /><br />Este cambio aumenta la transparencia del esquema, brinda a los clientes un mayor control sobre sus pipelines y evita la expansión no planificada de campos. |
+| **Fecha de entrada en vigor** | 30 de diciembre de 2025 |
+| **Lo que debes saber:** | <ul><li>La configuración de la API Push se puede aplicar de las siguientes maneras:<ul><li>[Actualizar la configuración de la Push API mediante la API REST](https://dev.appsflyer.com/hc/reference/put_app-app-id):<ul><li>Establece la propiedad `select_fields` en ALL Fields</li></ul></li><li><Anchor target="_blank" href="/marketers/es/docs/push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">En AppsFlyer, en Exportar -> Acceso a la API -> Push API o Push API (SKAN)</Anchor>:<ul><li>Selecciona el campo **Seleccionar todo**.</li></ul></li></ul></li><li>Al llamar a la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_app-app-id">API REST para obtener la configuración de la Push API</Anchor>, cuando `selected_fields = "ALL FIELDS"` está configurado, la llamada devolverá la lista explícita de campos seleccionados en lugar del genérico «all».</li></ul> |
+| **Lo que debes hacer** | <ul><li>La mayoría de los clientes no necesitan realizar ninguna acción.</li><li>No hay cambios en los nombres de los campos ni en la semántica.</li><li>Los clientes deben actualizar manualmente su selección en AppsFlyer o a través de la REST API para recibir los nuevos campos.</li><li>Los clientes que utilizan "TODOS LOS CAMPOS" deben revisar periódicamente su configuración para asegurarse de que se incluyan los nuevos campos según sea necesario.</li></ul> |

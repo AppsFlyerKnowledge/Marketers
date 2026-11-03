@@ -1,5 +1,5 @@
 ---
-title: Brands Directory—Overview and FAQs
+title: Directorio de marcas—resumen y preguntas frecuentes
 metadata:
   keywords:
     - Marketers
@@ -12,96 +12,95 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2024-05-07T09:27:31Z'
-  edited_at: '2024-05-12T07:07:03Z'
+  edited_at: '2026-08-12T11:52:29Z'
   id: 24853411853329
-  locale: en-us
+  locale: es
   section: Data Clean Room
   section_id: 4591191779217
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/24853411853329-Brands-Directory-Overview-and-FAQs
+  url: https://support.appsflyer.com/hc/es/articles/24853411853329
 ---
-## What is the Brands Directory?
+## ¿Qué es el Directorio de marcas?
 
-The Brand Directory is an exclusive network of AppsFlyer advertisers receiving top priority on introductions to Commerce Media Networks (CMNs).
+El Directorio de marcas es una red exclusiva de anunciantes de AppsFlyer que reciben la máxima prioridad en las presentaciones a redes de medios de comercio (CMN).
 
-### Key advantages for advertisers
+### Ventajas clave para los anunciantes
 
-* **Exposure to Commerce Media Networks:** CMNs can discover your brand and send you offers without any proactive effort on your part.
-* **Free for advertisers:** Joining the Brands Directory and using AppsFlyer's Data Collaboration Platform (DCP) are both free of charge for advertisers.
-* **No commitment:** You can express your interest in connecting with CMNs, and we'll make an introduction only after getting your approval.
+* **Exposición a redes de medios de comercio:** las CMN pueden descubrir tu marca y enviarte ofertas sin que tengas que hacer ningún esfuerzo proactivo.
+* **Gratis para los anunciantes:** unirse al Directorio de marcas y usar la Data Collaboration Platform (DCP) de AppsFlyer no tiene ningún coste para los anunciantes.
+* **Sin compromiso:** puedes expresar tu interés en conectar con las CMN, y solo haremos una presentación después de obtener tu aprobación.
 
-## FAQ
+## Preguntas frecuentes
 
 <div id="does-being-part-of-the-brands-directory-cost-me-anything" />
 
-<Accordion title="Does being part of the Brands Directory cost me anything?">
+<Accordion title="¿Formar parte del Directorio de marcas tiene algún costo?">
 
-No, it’s free.
+No, es gratis.
 
 </Accordion>
 
 <div id="am-i-committed-to-working-with-cmns-if-i-join-the-brands-directory" />
 
-<Accordion title="Am I committed to working with CMNs if I join the Brands Directory?">
+<Accordion title="¿Me comprometo a trabajar con CMN si me uno al Directorio de marcas?">
 
-No, you are not committing to anything. It's simply about indicating your interest in potentially collaborating with CMNs.
+No, no te comprometes a nada. Se trata simplemente de indicar tu interés en colaborar potencialmente con las CMN.
 
 </Accordion>
 
 <div id="will-i-need-to-purchase-appsflyer-s-data-collaboration-platform-data-clean-room-or-audiences" />
 
-<Accordion title="By joining the Brand Directory, will I need to purchase AppsFlyer’s DCP, Data Clean Room, or Audiences?">
+<Accordion title="Si me uno al Directorio de marcas, ¿tendré que comprar la DCP, Data Clean Room o Audiences de AppsFlyer?">
 
-No, joining the Brands Directory doesn’t require you to purchase any additional AppsFlyer products.
+No, unirse al Directorio de marcas no requiere que compres ningún producto adicional de AppsFlyer.
 
 </Accordion>
 
 <div id="assuming-i-want-to-start-collaborating-with-a-commerce-media-network-should-i-purchase-appsflyer-s-data-collaboration-platform-or-data-clean-room" />
 
-<Accordion title="Assuming I want to start collaborating with a CMN, should I purchase AppsFlyer’s DCP or Data Clean Room?">
+<Accordion title="Si quiero empezar a colaborar con una CMN, ¿debo comprar la DCP o Data Clean Room de AppsFlyer?">
 
-No, the DCP is free for brands that collaborate with CMNs.
+No, la DCP es gratuita para las marcas que colaboran con las CMN.
 
 </Accordion>
 
 <div id="do-i-need-to-buy-appsflyers-data-collaboration-platform-or-data-clean-room-or-audiences-to-join-the-brands-directory-or-to-collaborate-with-a-cmn" />
 
-<Accordion title="Do I need to review or consider new Terms of Service before joining the Brands Directory?">
+<Accordion title="¿Tengo que revisar o considerar nuevos Términos de servicio antes de unirme al Directorio de marcas?">
 
-No. Once you've opted in to the Brands Directory, it enables us to facilitate in connecting you with CMNs that may be a good fit for you. After opting in, you can work directly with the network as you do with other networks.
+N.º Una vez que te unas al Directorio de marcas, nos permitirá facilitar la conexión con CMN que puedan encajar bien contigo. Después de unirte, puedes trabajar directamente con la red como lo haces con otras redes.
 
 </Accordion>
 
 <div id="if-im-not-using-the-data-clean-room-how-does-this-impact-joining-the-brands-directory" />
 
-<Accordion title="If I'm not using the Data Clean Room, how does this impact joining the Brands Directory?">
+<Accordion title="Si no estoy usando Data Clean Room, ¿cómo afecta esto a unirme al Directorio de marcas?">
 
-Being part of our Brands Directory doesn’t impact any service of AppsFlyer, it simply enables targeted introductions with CMNs that may support your growth.
+Formar parte de nuestro Directorio de marcas no tiene impacto en ningún servicio de AppsFlyer; simplemente nos permite hacer presentaciones dirigidas con CMN que pueden impulsar tu crecimiento.
 
 </Accordion>
 
 <div id="would-cmns-have-access-to-our-firstparty-data-directly-or-will-piipi-data-be-hashed-to-a-certain-degree-similar-to-our-current-ua-networks" />
 
-<Accordion title="Would CMNs have access to our first-party data directly or will PII/PI data be hashed to a certain degree, similar to our current UA networks?">
+<Accordion title="¿Tendrían las CMN acceso directo a nuestros datos propios o se aplicaría hashing a los datos PII/PI hasta cierto punto, de forma similar a nuestras redes de UA actuales?">
 
-Being part of the network doesn’t require sharing your first-party data or exposing your data within AppsFlyer.
+Formar parte de la red no requiere compartir tus datos propios ni exponer tus datos dentro de AppsFlyer.
 
 </Accordion>
 
 <div id="how-will-you-introduce-me-to-relevant-cmns" />
 
-<Accordion title="How will you introduce me to relevant CMNs?">
+<Accordion title="¿Cómo me presentaréis a CMN pertinentes?">
 
-An email will be sent to you with all the details about the CMN that wants to offer you its media network or access to its first-party data for audience building and data querying.
+Se te enviará un correo electrónico con todos los detalles sobre la CMN que quiere ofrecerte su red de medios o acceso a sus datos propios para la creación de audiencias y la consulta de datos.
 
 </Accordion>
 
 <div id="can-i-opt-out-of-the-brand-directory-network" />
 
-<Accordion title="Can I opt out of the Brand Directory network?">
+<Accordion title="¿Puedo darme de baja de la red del directorio de marcas?">
 
-Yes, at any point. Let your CSM know that you wish to opt out and we will remove you from this network.
+Sí, en cualquier momento. Informa a tu CSM de que quieres darte de baja y te eliminaremos de esta red.
 
 </Accordion>
 
-<div data-zendesk-anchors="overview=what-is-the-brands-directory h_01HX93H5MWTS5MV0JVH0A6FMRE=what-is-the-brands-directory h_01HX9J1ZR3FFH3TMV8PFT9YENH=key-advantages-for-advertisers h_01HX93H5MWF5EG0FH1HXMVE4FK=faq h_01HX94HAYRDDZX524WJB7SW8AQ=does-being-part-of-the-brands-directory-cost-me-anything h_01HX94HAYRMHZSECQVCGJ4ZGXD=am-i-committed-to-working-with-cmns-if-i-join-the-brands-directory will-i-need-to-purchase-appsflyer%E2%80%99s-data-collaboration-platform-data-clean-room-or-audiences=will-i-need-to-purchase-appsflyer-s-data-collaboration-platform-data-clean-room-or-audiences h_01HX94HAYRDQMT9RD1VHCRV1CF=will-i-need-to-purchase-appsflyer-s-data-collaboration-platform-data-clean-room-or-audiences assuming-i-want-to-start-collaborating-with-a-commerce-media-network-should-i-purchase-appsflyer%E2%80%99s-data-collaboration-platform-or-data-clean-room=assuming-i-want-to-start-collaborating-with-a-commerce-media-network-should-i-purchase-appsflyer-s-data-collaboration-platform-or-data-clean-room h_01HX94HAYR64JSEA8WR4J1T931=assuming-i-want-to-start-collaborating-with-a-commerce-media-network-should-i-purchase-appsflyer-s-data-collaboration-platform-or-data-clean-room do-i-need-to-buy-appsflyers-data-collaboration-platform-or-data-clean-room%C2%A0or-audiences-to-join-the-brands-directory-or-to-collaborate-with-a-cmn=do-i-need-to-buy-appsflyers-data-collaboration-platform-or-data-clean-room-or-audiences-to-join-the-brands-directory-or-to-collaborate-with-a-cmn h_01HX9J1ZR3F2MWT21997D3FNJW=do-i-need-to-buy-appsflyers-data-collaboration-platform-or-data-clean-room-or-audiences-to-join-the-brands-directory-or-to-collaborate-with-a-cmn h_01HX962C9MW6Q1YPN0110JD14V=if-im-not-using-the-data-clean-room-how-does-this-impact-joining-the-brands-directory h_01HXFB2YQ5DDR57Y5802W2AQ21=would-cmns-have-access-to-our-firstparty-data-directly-or-will-piipi-data-be-hashed-to-a-certain-degree-similar-to-our-current-ua-networks h_01HX94HAYRM8FGM46TCER33TJP=how-will-you-introduce-me-to-relevant-cmns h_01HX94HAYREKFFVWHH04DTE1P7=can-i-opt-out-of-the-brand-directory-network" />
+<div data-zendesk-anchors="overview=qu%C3%A9-es-el-directorio-de-marcas h_01HX93H5MWTS5MV0JVH0A6FMRE=qu%C3%A9-es-el-directorio-de-marcas key-advantages-for-advertisers=ventajas-clave-para-los-anunciantes h_01HX9J1ZR3FFH3TMV8PFT9YENH=ventajas-clave-para-los-anunciantes faq=preguntas-frecuentes h_01HX93H5MWF5EG0FH1HXMVE4FK=preguntas-frecuentes h_01HX94HAYRDDZX524WJB7SW8AQ=does-being-part-of-the-brands-directory-cost-me-anything h_01HX94HAYRMHZSECQVCGJ4ZGXD=am-i-committed-to-working-with-cmns-if-i-join-the-brands-directory will-i-need-to-purchase-appsflyer%E2%80%99s-data-collaboration-platform-data-clean-room-or-audiences=will-i-need-to-purchase-appsflyer-s-data-collaboration-platform-data-clean-room-or-audiences h_01HX94HAYRDQMT9RD1VHCRV1CF=will-i-need-to-purchase-appsflyer-s-data-collaboration-platform-data-clean-room-or-audiences assuming-i-want-to-start-collaborating-with-a-commerce-media-network-should-i-purchase-appsflyer%E2%80%99s-data-collaboration-platform-or-data-clean-room=assuming-i-want-to-start-collaborating-with-a-commerce-media-network-should-i-purchase-appsflyer-s-data-collaboration-platform-or-data-clean-room h_01HX94HAYR64JSEA8WR4J1T931=assuming-i-want-to-start-collaborating-with-a-commerce-media-network-should-i-purchase-appsflyer-s-data-collaboration-platform-or-data-clean-room do-i-need-to-buy-appsflyers-data-collaboration-platform-or-data-clean-room%C2%A0or-audiences-to-join-the-brands-directory-or-to-collaborate-with-a-cmn=do-i-need-to-buy-appsflyers-data-collaboration-platform-or-data-clean-room-or-audiences-to-join-the-brands-directory-or-to-collaborate-with-a-cmn h_01HX9J1ZR3F2MWT21997D3FNJW=do-i-need-to-buy-appsflyers-data-collaboration-platform-or-data-clean-room-or-audiences-to-join-the-brands-directory-or-to-collaborate-with-a-cmn h_01HX962C9MW6Q1YPN0110JD14V=if-im-not-using-the-data-clean-room-how-does-this-impact-joining-the-brands-directory h_01HXFB2YQ5DDR57Y5802W2AQ21=would-cmns-have-access-to-our-firstparty-data-directly-or-will-piipi-data-be-hashed-to-a-certain-degree-similar-to-our-current-ua-networks h_01HX94HAYRM8FGM46TCER33TJP=how-will-you-introduce-me-to-relevant-cmns h_01HX94HAYREKFFVWHH04DTE1P7=can-i-opt-out-of-the-brand-directory-network" />

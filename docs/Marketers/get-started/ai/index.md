@@ -1,17 +1,19 @@
 ---
-title: AI
-excerpt: Use AI to unlock insights, automate workflows, and drive smarter decisions.
+title: IA
+excerpt: >-
+  Utiliza la IA para desbloquear insights, automatizar flujos de trabajo e
+  impulsar decisiones más inteligentes.
 table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2025-06-19T07:02:00Z'
   id: 36348470056081
-  locale: en-us
+  locale: es
   parent_section_id: 6550753145745
   type: section
-  url: https://support.appsflyer.com/hc/en-us/sections/36348470056081-AI
+  url: https://support.appsflyer.com/hc/es/sections/36348470056081-IA
 ---
-- [\[Beta\] Agent Hub overview](/docs/beta-agent-hub-overview)
-- [AI Assistant](/docs/ai-assistant)
-- [\[Beta\] AppsFlyer MCP](/docs/beta-appsflyer-mcp)
+- [\[Beta\] Descripción general del Agent Hub](/docs/beta-agent-hub-overview)
+- [Asistente de IA](/docs/ai-assistant)
+- [\[beta\] MCP de AppsFlyer](/docs/beta-appsflyer-mcp)

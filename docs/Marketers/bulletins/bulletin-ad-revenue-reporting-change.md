@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Ad revenue reporting change'
+title: 'Boletín: cambio en el reporte de ingresos por anuncios'
 metadata:
   keywords:
     - ad revenue
@@ -16,52 +16,53 @@ x-zendesk:
     - Agencies
     - ROI360
   created_at: '2020-05-05T15:30:21Z'
-  edited_at: '2023-02-15T13:15:06Z'
+  edited_at: '2026-10-20T03:57:08Z'
   id: 360007980057
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360007980057-Bulletin-Ad-revenue-reporting-change
+  url: https://support.appsflyer.com/hc/es/articles/360007980057
 ---
-* **What's changing**: The date of Ad revenue data (user-level and aggregate-level) in the platform is the day of the ad display event itself (the day the ad revenue occurs), instead of the day after. Meaning if an ad displays on Monday, the revenue displays under Monday. This gives advertisers a more accurate and actionable understanding of their ad revenue data.
-* **Who is impacted**: App owners, agencies
-* **Where is it changing**: Essentially, data alignment to the day of the ad display event is active in all reports and APIs, for all types of network integrations. See the following table for where and when the alignment took effect.
+* **Qué cambia**: La fecha de los datos de ingresos por anuncios (a nivel de usuario y a nivel agregado) en la plataforma pasa a ser el mismo día del evento de visualización del anuncio (el día en que se producen los ingresos por anuncios), en lugar del día siguiente. Esto significa que, si un anuncio se muestra el lunes, los ingresos se muestran el lunes. Esto ofrece a los anunciantes una visión más precisa y útil de sus datos de ingresos publicitarios.
+* **A quién afecta**: propietarios de aplicaciones, agencias
+* **Dónde cambia**: Básicamente, la alineación de los datos con el día del evento de visualización del anuncio está activa en todos los reportes y las API, para todo tipo de integraciones de red. Consulta la siguiente tabla para ver dónde y cuándo entró en vigor la alineación.
 
-#### Ad revenue reporting change
+#### Cambio en el reporte de ingresos publicitarios
 
-| Reporting method | Effective date (date change occurs) | Publication date (date of announcement) |
+| Método de reporte | Fecha de entrada en vigor (cuando se produce el cambio de fecha) | Fecha de publicación (fecha del anuncio) |
 | --- | --- | --- |
-| Cohort reports | May 13, 2020 | May 7, 2020 |
-| Raw data reports | June 17, 2020 | June 14, 2020 |
-| Pull API (for raw data) | June 17, 2020 | June 14, 2020 |
-| Activity dashboard | June 17, 2020 | June 14, 2020 |
-| Data Locker (h=23 folder) | August 3, 2020 | August 3, 2020 |
-| Pull API (for aggregate data) | September 1, 2020 | August 31, 2020 |
+| Reportes de cohortes | 13 de mayo de 2020 | 7 de mayo de 2020 |
+| Reportes de raw data | 17 de junio, 2020 | 14 de junio, 2020 |
+| Pull API (para raw data) | 17 de junio, 2020 | 14 de junio, 2020 |
+| Panel de actividades | 17 de junio, 2020 | 14 de junio, 2020 |
+| Data Locker (carpeta h=23) | Agosto 3, 2020 | Agosto 3, 2020 |
+| Pull API (para datos agregados) | 1 de septiembre de 2020 | 31 de agosto de 2020 |
 
-### Before the change
+### Antes del cambio
 
-The date of Ad revenue data in the platform is the day after the ad display event itself. Meaning if an ad displays on Monday, the revenue displays under Tuesday. The data is available in the platform on Wednesday, after processing.
+La fecha de los datos de ingresos publicitarios en la plataforma es el día posterior al propio evento de visualización del anuncio. Esto significa que, si un anuncio se muestra el lunes, los ingresos se muestran el martes. Los datos están disponibles en la plataforma el miércoles, después del procesamiento.
 
-This means that the ad revenue date is not aligned with actual user engagement. For some verticals, this lack of alignment distorts KPIs significantly.
+Esto significa que la fecha de los ingresos por anuncios no está alineada con el engagement real de los usuarios. En algunos verticales, esta falta de alineación distorsiona significativamente los KPI.
 
-### After the change
+### Después del cambio
 
-The change is dependent on the integration type between the app and the monetization network as follows:
+El cambio depende del tipo de integración entre la app y la red de monetización, de la siguiente manera:
 
-* This change affects user-level and aggregate-level ad revenue available via the reporting methods outlined in the table prior.
-* The date of ad revenue data in the platform is the day of the ad display event itself. Meaning if an ad displays on Monday, the revenue displays under Monday. The data is available in reports from Wednesday after processing.
-* There is no change to historical data recorded before the effective date.
-* The revenue on the effective date includes two days' revenue, meaning the revenue of the effective date and the previous day’s revenue. Depending on the reporting scenario, you may discern a revenue spike on this day.
+* Este cambio afecta a los ingresos por anuncios a nivel de usuario y a nivel agregado disponibles a través de los métodos de reporte descritos en la tabla anterior.
+* La fecha de los datos de ingresos publicitarios en la plataforma es el mismo día del propio evento de visualización del anuncio. Esto significa que, si un anuncio se muestra el lunes, los ingresos se muestran el lunes. Los datos están disponibles en los reportes a partir del miércoles, después del procesamiento.
+* No hay ningún cambio en los datos históricos registrados antes de la fecha de entrada en vigor.
+* Los ingresos en la fecha de entrada en vigor incluyen los ingresos de dos días: los de la fecha de entrada en vigor y los del día anterior. Según el escenario de reportes, es posible que detectes un pico de ingresos ese día.
 
-See the example that follows.
+Mira el ejemplo que sigue.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> * Ads display and ad revenue occurs on Day 0 (the day of user acquisition).
-> * Ad revenue data is pulled on Day 1.
-> * Ad revenue data is processed and available in the AppsFlyer platform on Day 2.
-> * Ad revenue data is reported under Day 0.
->   * In the Activity dashboard, Data Locker (h=23 folder), and raw data reports, the ad display time is also available.
+> * La visualización de anuncios y los ingresos por publicidad se producen el Día 0 (el día de la adquisición de usuarios).
+> * Los datos de ingresos por publicidad se extraen el Día 1.
+> * Los datos de ingresos por publicidad se procesan y están disponibles en la plataforma AppsFlyer el Día 2.
+> * Los datos de ingresos por publicidad se reportan con el Día 0.
+>   * En el Dashboard de actividad, Data Locker (carpeta h=23) y los reportes de raw data, también está disponible la hora de visualización del anuncio.
 >
 > [![](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)
+
+<div data-zendesk-anchors="ad-revenue-reporting-change=cambio-en-el-reporte-de-ingresos-publicitarios before-the-change=antes-del-cambio after-the-change=despu%C3%A9s-del-cambio" />

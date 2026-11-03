@@ -1,5 +1,5 @@
 ---
-title: MOLOCO campaign configuration
+title: Configuración de la campaña de MOLOCO
 metadata:
   keywords:
     - Advertisers
@@ -14,145 +14,144 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-12-16T07:37:12Z'
-  edited_at: '2026-07-27T09:44:04Z'
+  edited_at: '2026-08-12T12:14:42Z'
   id: 360000691978
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000691978-MOLOCO-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360000691978
 ---
-> **At a glance:** MOLOCO, an AppsFlyer integrated partner, turns user data into ad performance, enabling mobile businesses to execute marketing and advertising monetization programs.
+> **De un vistazo:** MOLOCO, un partner integrado de AppsFlyer, convierte los datos de Usuario en rendimiento de Anuncio, lo que permite a las empresas móviles ejecutar programas de marketing y monetización publicitaria.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/moloco.png?v=1" width="149px" />
 
-## Setting up MOLOCO
+## Configuración de MOLOCO
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con el partner.  
+    Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación. Para ver una descripción detallada del Encabezado de la ventana de configuración de partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-MOLOCO's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
+La ventana de configuración de MOLOCO incluye 3 pestañas activas: Integración, Enlace de atribución y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del Encabezado de la Ventana de Configuración de Partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
+> * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio para todos los partners**.
+> * Todos los demás pasos son descriptivos u **opcionales**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the Integration tab parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation, please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de Partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> As an all-install network, MOLOCO prefers to receive postbacks for all new installs of your app from any source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to MOLOCO.
+> Como red de todas las instalaciones, MOLOCO prefiere recibir postbacks de todas las nuevas instalaciones de tu Aplicación desde cualquier fuente, incluidas las orgánicas. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a MOLOCO.
 
-### General settings
+### Configuración general
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Toggle this to ON if you want to attribute view-through installs from MOLOCO. The view-through lookback slider is available on the attribution link tab (described below).
+Activa esta opción si quieres atribuir las instalaciones view-through de MOLOCO. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to MOLOCO following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a MOLOCO después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to MOLOCO.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to MOLOCO.
+Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a MOLOCO.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para tener toda tu base de usuarios disponible para reportarla a MOLOCO.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section you can map your AppsFlyer events with MOLOCO via postbacks.
+En esta sección puedes asignar tus eventos de AppsFlyer a MOLOCO mediante postbacks.
 
-1. Toggle In-App Event Postbacks to ON.
-2. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-3. Click **Add Event** to add an SDK Event to the list.
-4. Complete the following parameters:
+1. Activa los Postbacks de eventos in-app con el selector.
+2. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner  
+   **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner
+3. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+4. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
-| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner, as well as organic events. According to Unity Ads, this option is recommended.</li></ul> |
-| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event). According to Unity Ads, this option is recommended.</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos servidor a servidor.<br />**Consejo**: ¿No encuentras el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar.</li><li>Escríbelo en **Evento de AppsFlyer**, luego haz clic en **Crear personalizado**. Leer más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">la asignación de eventos personalizados.</Anchor></li></ul> |
+| **Asignado al evento de partner** | El ID o nombre único de cada evento, tal y como lo defina el partner. Existen varias configuraciones de asignación:<ul><li>**Campo de texto:** obtén el ID del evento correspondiente del partner.</li><li>**Cuadro desplegable:** selecciona el evento de AppsFlyer predefinido más adecuado.</li><li>**Como está**: Envía los eventos tal como están, sin asignación de nombres.</li></ul> |
+| **para usuarios de** | Selecciona la opción de envío para el evento:<ul><li>**Solo este partner**: envía postbacks solo cuando este evento se atribuye a este partner.</li><li>**Todas las fuentes de medios, incluidas las orgánicas**: envía postbacks para eventos atribuidos a cualquier partner, así como para eventos orgánicos. Según Unity Ads, se recomienda esta opción.</li></ul> |
+| **Incluye** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí sin el valor del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento). Según Unity Ads, se recomienda esta opción.</li><li>**Valores sin ingresos**: envía todos los parámetros **excluyendo** el valor de ingresos.</li></ul> |
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> You can send <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#ad-revenue-event-postbacks-for-ad-networks">ad revenue postbacks</Anchor> to MOLOCO using the`af_ad_revenue` event so they can optimize campaigns.
+> Puedes enviar <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#ad-revenue-event-postbacks-for-ad-networks">postbacks de ingresos publicitarios</Anchor> a MOLOCO usando el evento`af_ad_revenue` para que puedan optimizar campañas.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de redes de publicidad</Anchor> para obtener detalles completos sobre las dimensiones, métricas y funciones admitidas. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-Yesterday's data is available from Moloco at approximately 4 AM (depending on the time zone settings in your MOLOCO account). For example, If the event occurred on Monday, cost data can be pulled by AppsFlyer on Tuesday at approximately 4 AM. After pulling the MOLOCO cost data, AppsFlyer analyzes and prepares the data and once this process is complete, the data can be consumed.
+Los datos de ayer están disponibles en MOLOCO aproximadamente a las 4:00 a. m. (según la configuración de la zona horaria de tu cuenta de MOLOCO). Por ejemplo, si el evento se produjo el lunes, AppsFlyer puede extraer los datos de costo el martes aproximadamente a las 4:00 a. m. Después de extraer los datos de Costo de MOLOCO, AppsFlyer los analiza y prepara y, una vez completado este proceso, los datos pueden consumirse.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el panel de control de estado de la integración de costos (e ingresos por publicidad) o en el panel de control de la red de publicidad individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue integration is not available for this partner.
+La integración de ingresos por publicidad no está disponible para este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant MOLOCO, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for MOLOCO, the permissions tab is active and you can grant control to MOLOCO.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a MOLOCO, tanto si el partner actúa como ad network, agencia o ambas. Ten en cuenta que, aunque la Atribución esté deshabilitada para MOLOCO, la pestaña Permisos está activa y puedes otorgar el Control a MOLOCO.
 
-#### ![MOLOCO_permissions.png](https://files.readme.io/f443306f1b56197709308c0a33e436dc26adc7a0e80e6c2887edc63a5697b6d4-360002616197.png) Ad Network Permissions
+#### ![MOLOCO_permissions.png](https://files.readme.io/f443306f1b56197709308c0a33e436dc26adc7a0e80e6c2887edc63a5697b6d4-360002616197.png) Permisos para Redes de Publicidad
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-* **Allow to configure integration** - permit the partner to set up the integration tab (except in-app event postbacks)
-* **Allow to configure in-app event postbacks** - permit the partner to setup in-app event postbacks mapping to itself on the Integration tab
-* **Allow access to your retention report** - only to the partner's own retention data
-* **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* **Permitir la configuración de la integración**: permite que el partner configure la pestaña integración (con excepción de postbacks de eventos in-app).
+* **Permitir configurar postbacks de eventos in-app** - permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña Integración
+* **Permitir el acceso a tu reporte de retención** - solo a los datos de retención propios del partner
+* **Permitir el acceso a tu dashboard de Protect360** - solo para los datos propios de Protect360 del partner, siempre que la función esté habilitada para el anunciante
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Saber más sobre cómo conceder <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos de ad network</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HBB9EEMJRHWC21713D60725N=setting-up-moloco h_01HBB9EEMJQ9VAMJMYG2T5FX0S=tip h_01HBB9EEMJ7X92Y5TK4YXXGSZX=integration-tab h_01HBB9EEMJ0EW14NZE9WCKJR1M=activate-partner h_01HBB9EEMJ55BQDJ1ZEJT136ZF=note h_01HBB9EEMJ2XSWFQZZFJ7J54VY=general-settings h_01HBB9EEMJV2SS4VJW0HW8D12R=default-postbacks inapp-events-settings=in-app-events-settings h_01HBB9EEMJE2X04XZGMSJSSXAT=in-app-events-settings h_01HBB9EEMJ6WA79D7R4BG8S9HS=note-1 h_01HBB9EEMJXGFHY28K2DDHKBF8=attribution-link-tab h_01HBB9EEMJT7VSNFQJC86TS1YX=cost-tab h_01HBB9EEMJ61WDHNPKMW5A1YKM=ad-revenue-tab h_01HBB9EEMJ3Z40S2A6FZG7RJ6K=permissions-tab ad-network-permissions=-ad-network-permissions h_01HBB9EEMJ54Y8KJBK4395ENPJ=-ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-moloco=configuraci%C3%B3n-de-moloco h_01HBB9EEMJRHWC21713D60725N=configuraci%C3%B3n-de-moloco h_01HBB9EEMJQ9VAMJMYG2T5FX0S=consejo h_01HBB9EEMJ7X92Y5TK4YXXGSZX=integration-tab activate-partner=activar-socio h_01HBB9EEMJ0EW14NZE9WCKJR1M=activar-socio h_01HBB9EEMJ55BQDJ1ZEJT136ZF=nota general-settings=configuraci%C3%B3n-general h_01HBB9EEMJ2XSWFQZZFJ7J54VY=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HBB9EEMJV2SS4VJW0HW8D12R=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HBB9EEMJE2X04XZGMSJSSXAT=configuraci%C3%B3n-de-eventos-in-app h_01HBB9EEMJ6WA79D7R4BG8S9HS=nota-1 h_01HBB9EEMJXGFHY28K2DDHKBF8=attribution-link-tab h_01HBB9EEMJT7VSNFQJC86TS1YX=cost-tab h_01HBB9EEMJ61WDHNPKMW5A1YKM=ad-revenue-tab h_01HBB9EEMJ3Z40S2A6FZG7RJ6K=permissions-tab ad-network-permissions=-permisos-para-redes-de-publicidad h_01HBB9EEMJ54Y8KJBK4395ENPJ=-permisos-para-redes-de-publicidad" />

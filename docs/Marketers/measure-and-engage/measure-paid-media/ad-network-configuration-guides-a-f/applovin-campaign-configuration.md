@@ -1,5 +1,5 @@
 ---
-title: AppLovin campaign configuration
+title: Configuración de la campaña de AppLovin
 metadata:
   keywords:
     - Applovin
@@ -14,153 +14,152 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-03-06T12:20:32Z'
-  edited_at: '2026-09-09T13:01:06Z'
+  edited_at: '2026-09-11T00:22:54Z'
   id: 208335613
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (A-F)
   section_id: 6551990971793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/208335613-AppLovin-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/208335613
 ---
-> **At a glance:** AppLovin, an AppsFlyer integrated partner, is a well-known ad network for mobile app traffic. In addition to click-based mobile attribution, AppLovin also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer.
+> **De un vistazo:** AppLovin, un partner integrado de AppsFlyer, es una conocida ad network de tráfico de aplicaciones móviles. Además de la atribución móvil basada en clics, AppLovin también ofrece atribución de costos, ingresos por publicidad y por impresiones, que puedes registrar con AppsFlyer.
 
-## Setting up AppLovin
+## Configuración de AppLovin
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace** .  
+   (**Para editar una integración existente:** ve a la pestaña **Collaborate > Partner Integrations > Active integrations** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to toggle ON the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En esta **primera visita**, tendrás que activar el botón **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> As an ALL-Installs network, AppLovin prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select *Events attributed to any partner* to send all install postbacks to AppLovin.
+> Como red de TODAS las instalaciones, AppLovin prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Se recomienda seleccionar *Eventos atribuidos a cualquier partner* para enviar todos los postbacks de instalación a AppLovin.
 
-### General settings
+### Configuración general
 
-**Share organic/non-organic indication**
+**Compartir indicación de orgánico/no orgánico**
 
-When this toggle is turned on, if an install postback is sent for all media sources including organic, then AppLovin will receive an indication whether an install was organic or non-organic.
+Cuando esta opción está activada, si se envía un postback de instalación para todas las fuentes de medios, incluidas las orgánicas, AppLovin recibirá una indicación de si la instalación fue orgánica o no orgánica.
 
-**SDK Key**
+**Clave de SDK**
 
-AppLovin connects with AppsFlyer via a unique sdk\_key. If you don't already have the sdk\_key, you must obtain it from AppLovin to continue with the integration.
+AppLovin se conecta con AppsFlyer mediante una sdk\_key única. Si todavía no tienes la sdk\_key, debes obtenerla de AppLovin para continuar con la integración.
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Toggle this to ON if you want to attribute view-through installs from AppLovin. The view-through lookback slider is available on the attribution link tab (described below).
+Activa esta opción si quieres atribuir instalaciones view-through de AppLovin. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to AppLovin following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a AppLovin después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to AppLovin.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to AppLovin.
+Selecciona **Solo eventos atribuidos a este partner** para los eventos que proceden únicamente de usuarios atribuidos a AppLovin.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para que toda tu base de usuarios esté disponible para reportarla a AppLovin.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section you can map which of your AppsFlyer events to send to AppLovin via postbacks.
+En esta sección puedes asignar qué eventos de AppsFlyer enviar a AppLovin mediante postbacks.
 
-1. Set the AppLovin sdk\_key again here.
-2. Toggle In-App Event Postbacks to ON.
-3. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-4. Click **Add Event** to add an SDK Event to the list
-5. Fill in the following parameters:
+1. Vuelve a configurar aquí la sdk\_key de AppLovin.
+2. Activa los Postbacks de eventos in-app con el selector.
+3. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+4. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+5. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on AppLovin's side.  <br />Obtain the corresponding Event name from AppLovin and set in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según lo define AppLovin.  <br />Obtén el nombre de evento correspondiente de AppLovin y configúralo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de redes de publicidad</Anchor> para obtener detalles completos sobre las dimensiones, métricas y funciones admitidas. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard. 
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el panel de control de estado de la integración de costos (e ingresos por publicidad) o en el panel de control de la red de publicidad individual. 
 
-> 🚧 **Applovin billable cost**
+> 🚧 **Costo facturable de AppLovin**
 >
-> As of August 1, 2024, Applovin bills all their customers based on probabilistic installs. Prior to this date, some customers were billed based on SKAN installs. <Anchor target="_blank" href="https://support.applovin.com/hc/en-us/articles/28531589437965-iOS-Billing-Method">See Applovin for additional information</Anchor>
+> A partir del 1 de agosto de 2024, AppLovin factura a todos sus clientes en función de las instalaciones probabilísticas. Antes de esa fecha, a algunos clientes se les facturaba en función de las instalaciones de SKAN. <Anchor target="_blank" href="https://support.applovin.com/hc/en-us/articles/28531589437965-iOS-Billing-Method">Consulta Applovin para obtener información adicional</Anchor>
 >
-> The AppsFlyer cost integration with AppLovin accurately reflects this billable cost. Meaning the cost in AppsFlyer properly matches the cost on the AppLovin platform.
+> La integración de costos de AppsFlyer con AppLovin refleja con precisión este costo facturable. Esto significa que el costo en AppsFlyer coincide correctamente con el costo en la plataforma de AppLovin.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-* Applovin provides ad revenue mediation with aggregate data.
-* About <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">ad revenue attribution</Anchor> (ad monetization)
+* AppLovin proporciona mediación de ingresos por anuncios con datos agregados.
+* Información sobre la <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution">atribución de ingresos por anuncios</Anchor> (monetización de anuncios)
 
-**To enable the ad revenue API**:
+**Para habilitar la API de ingresos por publicidad**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">estas instrucciones de integración</Anchor>.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> * Applovin sends ad revenue that it generated itself.
-> * Ad revenue from mediation partners such as ironSource and Unity may be displayed on the Applovin dashboard, but is not sent to AppsFlyer. Enable other mediation partners in AppsFlyer's dashboard to send ad revenue data directly to AppsFlyer.
+> * AppLovin envía los ingresos por anuncios que genera por sí mismo.
+> * Los ingresos por anuncios de partners de mediación como ironSource y Unity pueden mostrarse en el dashboard de AppLovin, pero no se envían a AppsFlyer. Activa otros partners de mediación en el dashboard de AppsFlyer para enviar datos de ingresos por anuncios directamente a AppsFlyer.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant AppLovin. Note that even if attribution is disabled for AppLovin, the permissions tab is active and you can grant control to AppLovin.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a AppLovin. Ten en cuenta que, aunque la atribución esté deshabilitada para AppLovin, la pestaña de permisos está activa y puedes otorgar control a AppLovin.
 
-### Ad network permissions
+### Permisos de ad network
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-* **Allow to configure integration** - permit the partner to setup the integration tab (except in-app event postbacks)
-* **Allow to configure in-app event postbacks** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* **Allow access to your retention report** - only to the partner's own retention data
-* **Allow access to your aggregate loyal user data** - only to the partner's own loyal user data
-* **Allow access to your aggregate in-app events data** - only to the partner's own in-app events data
-* **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
-* **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* **Permitir configurar la integración** - permite que el partner configure la pestaña de integración (excepto los postbacks de eventos in-app)
+* **Permitir la configuración de postbacks de eventos in-app**: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña integración.
+* **Permitir el acceso a tu reporte de retención**: solo para los datos propios de retención del partner.
+* **Permitir acceso a tus datos agregados de usuarios legales**: solo para los datos propios de usuarios leales del partner.
+* **Permitir acceso a tus datos agregados de eventos in-app**: solo para los datos de eventos in-app propios del partner.
+* **Permitir acceso a tus datos agregados de ingresos**: solo para los datos de ingresos atribuidos al partner.
+* **Permitir el acceso a tu dashboard de Protect360**: solo para los datos propios de Protect360 del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW93TKBNYVC05MA5GB37JVH=setting-up-applovin h_01HKW93TKCPCFYD6HV2XH1QTHS=integration-tab h_01HKW93TKCG5JCQK52QJ65483M=activate-partner h_01HKW93TKC2XGTZ7WAQ2E2AGPD=note h_01HKW93TKCZCK6GB7M4VV5C1NB=general-settings h_01HKW93TKCCRB21JAFDA2GWH6F=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW93TKCVWKTM9C8J220Q41E=in-app-events-settings h_01HKW93TKCCXVQMBCGW02J7JK4=attribution-link-tab h_01HKW93TKCXMG7BHMEWRFSCM6N=cost-tab h_01J43V7Z67C98TG7CE2QQGVVWE=applovin-billable-cost h_01HKW93TKDDWXA2C7456E8Q8GG=ad-revenue-tab h_01HKW93TKD8Z0QQADBJWMBP962=note-1 h_01HKW93TKDBCXNA68YVMQVBVP0=permissions-tab h_01HKW93TKD21RF42KMNA9J9WXF=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-applovin=configuraci%C3%B3n-de-applovin h_01HKW93TKBNYVC05MA5GB37JVH=configuraci%C3%B3n-de-applovin h_01HKW93TKCPCFYD6HV2XH1QTHS=integration-tab activate-partner=activar-socio h_01HKW93TKCG5JCQK52QJ65483M=activar-socio h_01HKW93TKC2XGTZ7WAQ2E2AGPD=advertencia general-settings=configuraci%C3%B3n-general h_01HKW93TKCZCK6GB7M4VV5C1NB=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HKW93TKCCRB21JAFDA2GWH6F=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HKW93TKCVWKTM9C8J220Q41E=configuraci%C3%B3n-de-eventos-in-app h_01HKW93TKCCXVQMBCGW02J7JK4=attribution-link-tab h_01HKW93TKCXMG7BHMEWRFSCM6N=cost-tab h_01J43V7Z67C98TG7CE2QQGVVWE=costo-facturable-de-applovin h_01HKW93TKDDWXA2C7456E8Q8GG=ad-revenue-tab h_01HKW93TKD8Z0QQADBJWMBP962=advertencia-1 h_01HKW93TKDBCXNA68YVMQVBVP0=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HKW93TKD21RF42KMNA9J9WXF=permisos-de-ad-network" />

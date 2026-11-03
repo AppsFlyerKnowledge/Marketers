@@ -1,5 +1,5 @@
 ---
-title: Unreal Engine plugin
+title: Plugin de Unreal Engine
 metadata:
   keywords:
     - Plugin
@@ -18,27 +18,26 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2019-05-19T09:52:46Z'
-  edited_at: '2026-08-18T09:11:09Z'
+  edited_at: '2026-08-12T12:02:16Z'
   id: 360001604157
-  locale: en-us
+  locale: es
   section: Other platforms
   section_id: 6551244207121
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001604157--Unreal-Engine-plugin
+  url: https://support.appsflyer.com/hc/es/articles/360001604157
 ---
-> **At a glance:** Integrate AppsFlyer into games developed in Unreal Engine to measure app installs, in-app events, media sources, and more.
+> **En resumen:** Integra AppsFlyer en juegos desarrollados con Unreal Engine para medir instalaciones de la app, eventos in-app, fuentes de medios y mucho más.
 
 ![256px-Unreal_Engine_4_logo_and_wordmark.svg.png](https://files.readme.io/8ea048105520f976b4e3080f5c8ec44a4d955977a7731fe16114225bd34e9e5e-360002792757.png)
 
-The Unreal Engine lets you develop state-of-art mobile games that your users will never forget and will keep coming for more.
+Unreal Engine te permite desarrollar juegos para móviles de última generación que tus usuarios no olvidarán y a los que seguirán volviendo.
 
-With the help of AppsFlyer, you can now measure and analyze your marketing efforts as you work to promote your games.
+Con la ayuda de AppsFlyer, ahora puedes medir y analizar tus iniciativas de marketing mientras trabajas para promocionar tus juegos.
 
-Here are just some of the things you can do with the AppsFlyer Unreal Engine plugin:
+Estas son solo algunas de las cosas que puedes hacer con el plugin de AppsFlyer para Unreal Engine:
 
-* Measure how many users install your game
-* See which media sources bring the most users
-* See which media sources bring the best users
-* Record and measure user activity to determine which users generate the most revenue
+* Mide cuántos usuarios instalan tu juego
+* Descubre qué fuentes de medios atraen a más usuarios
+* Descubre qué fuentes de medios atraen a los mejores usuarios
+* Registra y mide la actividad de los usuarios para determinar qué usuarios generan más ingresos
 
-To learn more about the AppsFlyer Unreal Engine plugin and how to implement it, follow the instructions on our <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/unreal_appsflyer_sdk">GitHub repository</Anchor>.
+Para saber más sobre el plugin de AppsFlyer para Unreal Engine y cómo implementarlo, sigue las instrucciones de nuestro <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/unreal_appsflyer_sdk">repositorio de GitHub</Anchor>.

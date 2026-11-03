@@ -1,5 +1,5 @@
 ---
-title: Ibotta campaign configuration
+title: Configuración de la campaña de Ibotta
 metadata:
   keywords:
     - Advertisers
@@ -14,150 +14,151 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-02-18T07:55:23Z'
-  edited_at: '2026-09-08T07:19:36Z'
+  edited_at: '2026-09-10T00:24:12Z'
   id: 360000295445
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000295445-Ibotta-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360000295445
 ---
-> **At a glance:** Ibotta, an AppsFlyer integrated ad network partner, makes it easier for consumers to earn cashback on everyday purchases through a single smartphone app.
+> **De un vistazo:** Ibotta, un partner de ad network integrado con AppsFlyer, facilita a los consumidores obtener cashback en sus compras diarias a través de una única app para smartphone.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ibotta.png?v=1" width="119px" />
 
-## Setting up Ibotta
+## Configuración de Ibotta
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el socio. Si no tienes\n una cuenta, ponte en contacto con el socio para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab. (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle. **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña\n **Collaborate > Partner Integrations > Marketplace** .  
+    (**Para editar una integración existente:** Ve a la pestaña **Collaborate > Partner Integrations > Active integrations** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el socio y selecciona **Integrate**.
+4. En la pestaña **Integration**, activa el conmutador **Activate partner**.   
+    **Nota:** El conmutador **debe permanecer activado (activo) mientras trabajes con el socio**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber\n más sobre\n <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
+> * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio** para todos los partners.
+> * Todos los demás pasos son descriptivos u **opcionales**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partner
+### Activar socio
 
-On the **first visit**, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita**, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-Default Postbacks
+Postbacks predeterminados
 
-Send automatic postbacks to Ibotta following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a Ibotta tras las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to Ibotta.
+Selecciona **Solo eventos atribuidos a este partner** para eventos procedentes solo de usuarios atribuidos a Ibotta.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with Ibotta via postbacks.
+En esta sección puedes asignar tus eventos de AppsFlyer a Ibotta mediante postbacks.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> For a simple and quick integration, select **Send all events excluding their revenue value** or **Send all events including their revenue value**
+> Para una integración simple y rápida, selecciona **Enviar todos los eventos excluyendo su valor de ingresos** o **Enviar todos los eventos incluyendo su valor de ingresos**
 
-1. Toggle In-App Event Postbacks to ON
-2. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-3. Click **Add Event** to add an SDK Event to the list
-4. Complete the following parameters:
+1. Activa los postbacks de eventos in-app.
+2. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+3. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+4. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Ibotta's side.  <br />Obtain the corresponding Event ID from Ibotta and set it in the text field. |
-| **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK integrado con tu aplicación, o desde eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según lo define Ibotta.  <br />Obtén el ID de evento correspondiente de Ibotta e introdúcelo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Cuando está marcada**: se envían todos los parámetros incluyendo el valor de ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to Ibotta for attributing Ibotta's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a Ibotta para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de Ibotta. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with Ibotta.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific Ibotta campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Ibotta.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña** - añádela para comparar distintas campañas en ejecución con Ibotta.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios** - define nombres de conjuntos de anuncios para comparar distintos conjuntos de anuncios dentro de campañas específicas de Ibotta.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio** - define nombres de anuncios para comparar distintos creativos dentro de conjuntos de anuncios específicos de campañas específicas de Ibotta.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** e **ID de subsitio** - configura el parámetro ID de sitio para atribuir instalaciones a publishers específicos. Si existen muchos publishers, te recomendamos limitar el número de IDs de sitio usados y utilizar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">superar las limitaciones del ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor** - utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+  **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about **<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer's Attribution Link Structure and Parameters</Anchor>.**
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre **<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">la estructura y los parámetros de los enlaces de atribución de AppsFlyer</Anchor>.**
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Ibotta.
+Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Ibotta.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to Ibotta to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Ibotta para que se active cuando los clientes potenciales hagan clic en el anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost integration is not available for this partner.
+La integración de costos no está disponible para este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue integration is not available for this partner.
+La integración de ingresos por publicidad no está disponible para este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Ibotta, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Ibotta, the permissions tab is active and you can grant control to Ibotta.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Ibotta, tanto si el partner actúa como ad network, agencia o incluso como ambas cosas. Ten en cuenta que, aunque la atribución esté deshabilitada para Ibotta, la pestaña Permisos está activa y puedes otorgarle el control a Ibotta.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-### Ad network permissions
+### Permisos de ad network
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles*** - solo a los datos de usuarios fieles propios del socio
+* ***Permitir acceso a tus datos agregados de eventos in-app** -* solo a los datos de eventos in-app propios del socio
+* **Permitir acceso a tus datos agregados de ingresos**: solo a los datos de ingresos atribuidos al partner.
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKA2KDA0JDAF8VEXFH57Q9DP=setting-up-ibotta h_01HKA2KDA0TVNGZQ7EN899112F=tip h_01HKA2KDA05VRNN6YYTBS0AAYD=integration-tab h_01HKA2KDA0GA8GHDP2177EYV3Z=activate-partner inapp-events-settings=in-app-events-settings h_01HKA2KDA0J38WY51ZCP77J7A6=in-app-events-settings h_01HKA2KDA0HKAP9ACF2V8ZCPHX=tip-1 h_01HKA2KDA0QG78TCTKQKPZR0JV=attribution-link-tab h_01HKA2KDA0YP8SYP4YJ5NG5QSN=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKA2KDA0VPPYRMPY3S11ASX5=click-through-attribution h_01HKA2KDA0CZSSXW8DTCBTQ022=click-attribution-link h_01HKA2KDA18SHG1YAZNTE3TBZ8=cost-tab h_01HKA2KDA1JS9YF2WEEHR2K5TD=ad-revenue-tab h_01HKA2KDA1EF0F3JG3F81V3FHG=permissions-tab h_01HKA2KDA1Y2XEFHMV3XWQDDKW=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-ibotta=configuraci%C3%B3n-de-ibotta h_01HKA2KDA0JDAF8VEXFH57Q9DP=configuraci%C3%B3n-de-ibotta h_01HKA2KDA0TVNGZQ7EN899112F=consejo h_01HKA2KDA05VRNN6YYTBS0AAYD=integration-tab activate-partner=activar-socio h_01HKA2KDA0GA8GHDP2177EYV3Z=activar-socio inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HKA2KDA0J38WY51ZCP77J7A6=configuraci%C3%B3n-de-eventos-in-app h_01HKA2KDA0HKAP9ACF2V8ZCPHX=consejo-1 h_01HKA2KDA0QG78TCTKQKPZR0JV=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HKA2KDA0YP8SYP4YJ5NG5QSN=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HKA2KDA0VPPYRMPY3S11ASX5=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKA2KDA0CZSSXW8DTCBTQ022=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HKA2KDA18SHG1YAZNTE3TBZ8=cost-tab h_01HKA2KDA1JS9YF2WEEHR2K5TD=ad-revenue-tab h_01HKA2KDA1EF0F3JG3F81V3FHG=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HKA2KDA1Y2XEFHMV3XWQDDKW=permisos-de-ad-network" />

@@ -1,5 +1,5 @@
 ---
-title: Set up re-attribution window
+title: Explicación de la ventana de reatribución
 metadata:
   keywords:
     - Retargeting
@@ -20,109 +20,108 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2017-05-23T08:55:35Z'
-  edited_at: '2025-04-17T09:39:55Z'
+  edited_at: '2026-08-12T11:57:21Z'
   id: 115002587066
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115002587066-Set-up-re-attribution-window
+  url: https://support.appsflyer.com/hc/es/articles/115002587066
 ---
-> **At a glance:** Learn about re-attribution window, during which reinstalls are not attributed as new installs.
+> **En resumen:** De un vistazo: Aprende sobre la ventana de reatribución, durante la cual las reinstalaciones no se atribuyen como instalaciones nuevas.
 
-## Re-attribution window
+## Ventana de reatribución
 
-The re-attribution window is a time window that begins the first time a user installs the app and continues for a duration set by the advertiser (default 90 days.) During the re-attribution window app reinstalls aren't recorded as new installs and don't generate a new install postback unless they originate from a **retargeting** campaign.
+La ventana de reatribución es una ventana de tiempo que comienza la primera vez que un usuario instala la aplicación y continúa durante la duración establecida por el anunciante (por defecto 90 días). Durante la ventana de reatribución, las reinstalaciones de la aplicación no se registran como nuevas instalaciones y no generan un postback de nueva instalación a menos que se originen en una campaña de **retargeting**.
 
 [![ReAttributionWindow_us-en.png](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)
 
-### Setting the re-attribution window
+### Configuración de la ventana de reatribución
 
-The re-attribution window:
+La ventana de reatribución:
 
-* is set in the <Anchor target="_blank" href="/marketers/docs/app-settings">App Settings</Anchor> page
-* the default value is 90 days (3 months)
-* has a range of 1-24 months
+* se establece en la página <Anchor target="_blank" href="/marketers/es/docs/app-settings">Configuración de la aplicación</Anchor>
+* el valor predeterminado es 90 días (3 meses)
+* tiene un rango de 1 a 24 meses
 
-Installs are evaluated relative to the setting at the moment of install. As such, If you change the setting, it impacts installs (reinstalls) going forward without considering previous installs.
+Las instalaciones se evalúan en relación con la configuración en el momento de la instalación. Por lo tanto, si se cambia la configuración, afecta a las instalaciones (reinstalaciones) a partir de ese momento, sin tener en cuenta las instalaciones anteriores.
 
-* **Change the re-attribution window from 90 to 30 days**:
-  * Install on September 1.
-  * Re-attribution window changes on September 2.
-  * A reinstall until October 1, is regarded as a reinstall. Starting October 2, it is regarded as a new install.
-* **Change the re-attribution window from 30 to 90 days**:
-  * Install on September 1.
-  * Re-attribution window changes on September 2.
-  * A reinstall on October 15, is a reinstall because of the current 90-day window.
-  * A reinstall on December 15, is a new install because more than 90 days have elapsed since the install on September 1.
+* **Cambiar la ventana de reatribución de 90 a 30 días**:
+  * Se instala el 1 de septiembre.
+  * La ventana de reatribución cambia el 2 de septiembre.
+  * Una reinstalación hasta el 1 de octubre se considera una reinstalación. A partir del 2 de octubre, se considera una nueva instalación.
+* **Cambiar la ventana de reatribución de 30 a 90 días**:
+  * Se instala el 1 de septiembre.
+  * La ventana de reatribución cambia el 2 de septiembre.
+  * Una reinstalación el 15 de octubre es una reinstalación debido a la ventana actual de 90 días.
+  * Una reinstalación el 15 de diciembre es una instalación nueva porque han transcurrido más de 90 días desde la instalación el 1 de septiembre.
 
-## Re-attribution window use cases
+## Casos de uso de la ventana de reatribución
 
 <div id="first-install" />
 
-<Accordion title="First install">
+<Accordion title="Primera instalación">
 
-A lead (who never had the app installed) engages with either a user acquisition or retargeting campaign and installs the mobile app.
+Un usuario potencial (que nunca ha instalado la aplicación) interactúa con una campaña de adquisición de usuarios o retargeting e instala la aplicación móvil.
 
-The following happens:
+Sucede lo siguiente:
 
-* A new install (or organic, if no engagement is recorded), is attributed to the media source in user acquisition dashboards and data
-* A new re-attribution window commences
-* Install and in-app event postbacks are sent to the attributed media source when configured
-* Following in-app events are also attributed to the same media source
+* Se atribuye una nueva instalación (u orgánica, si no se registra ningún engagement) a la fuente de medios en los paneles de control y los datos de adquisición de usuarios.
+* Comienza una nueva ventana de reatribución.
+* Los postbacks de instalaciones y eventos in-app se envían a la fuente de medios atribuida si está configurada.
+* Los siguientes eventos in-app también se atribuyen a la misma fuente de medios.
 
 </Accordion>
 
 <div id="reinstall" />
 
-<Accordion title="Reinstall">
+<Accordion title="Reinstalar">
 
-After the first app install, the user uninstalls and reinstalls during the re-attribution window.
+Después de la primera instalación de la aplicación, el usuario la desinstala y vuelve a instalar durante la ventana de reatribución.
 
-The following happens:
+Sucede lo siguiente:
 
-* The install is NOT attributed - it doesn't appear on the dashboard, nor on the data
-* NO install postback is sent to any media source
-* Depending on the <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#overview">**Post Reinstall Events Attribution**</Anchor> state, in-app events of these reinstalling users are either attributed to organic or to the original install.
+* La instalación NO se atribuye: no aparece en el panel de control, ni en los datos.
+* NO se envía un postback de instalación a ninguna fuente de medios.
+* Dependiendo del estado de <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#overview">**Atribución de eventos posteriores a la reinstalación**</Anchor> , los eventos en la aplicación de estos usuarios que reinstalan se atribuyen a la instalación orgánica o a la original.
 
 </Accordion>
 
 <div id="reattribution" />
 
-<Accordion title="Re-attribution">
+<Accordion title="Re-atribución">
 
-After the first app install, during the re-attribution window, the user uninstalls, then engages with a retargeting campaign and reinstalls.  
-This is called a re-attribution.
+Después de la primera instalación de la aplicación, durante la ventana de reatribución, el usuario la desinstala y luego interactúa con una campaña de retargeting y la reinstala.  
+Esto se llama reatribución.
 
-The following happens:
+Sucede lo siguiente:
 
-* The install is attributed to the retargeting media source in the retargeting and unified view of the Overview dashboard. In other words, the user acquisition view doesn't contain re-attributions.
-* All following in-app events are attributed to the retargeting media source
-* An install postback is sent to the retargeting media source
+* La instalación se atribuye a la fuente de medios de retargeting en la vista de retargeting y unificada del panel de control general. En otras palabras, la vista de adquisición de usuarios no contiene reatribuciones.
+* Todos los siguientes eventos in-app se atribuyen a la fuente de medios de retargeting.
+* Se envía un postback de instalación a la fuente de medios de retargeting.
 
-For more Retargeting Attribution information, click <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">here</Anchor>.
+Para obtener más información sobre la atribución de retargeting, haz clic <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">aquí</Anchor>.
 
 </Accordion>
 
 <div id="new-install" />
 
-<Accordion title="New install">
+<Accordion title="Nueva instalación">
 
-The user uninstalls the app. Then, after the re-attribution window ends, the user reinstalls. This reinstall is considered as a first install and brings the same results:
+El usuario desinstala la aplicación. Luego, cuando termina la ventana de reatribución, el usuario vuelve a instalarla. Esta reinstalación se considera una primera instalación y aporta los mismos resultados:
 
-* A new install (or organic, if no engagement is recorded), is attributed to the media source on the user acquisition dashboards and data
-* **A new re-attribution window commences**
-* Install and in-app event postbacks are sent to the attributed media source when configured
-* Following in-app events are also attributed to the same media source
+* Se atribuye una nueva instalación (u orgánica, si no se registra ningún engagement) a la fuente de medios en los paneles de control y los datos de adquisición de usuarios.
+* **Comienza una nueva ventana de reatribución.**
+* Los postbacks de instalaciones y eventos in-app se envían a la fuente de medios atribuida si está configurada.
+* Los siguientes eventos in-app también se atribuyen a la misma fuente de medios.
 
 </Accordion>
 
 <div id="ios-app-restored-from-icloud-backup" />
 
-<Accordion title="iOS app restored from iCloud backup">
+<Accordion title="Aplicación de iOS restaurada desde la copia de seguridad de iCloud">
 
-Regardless of the re-attribution window, when an application is backed up using iCloud and later restored (on the same device or on another device), AppsFlyer doesn't count it as a new install or reinstall. A user who restores an app from iCloud maintains their AppsFlyer ID and attribution data.
+Independientemente de la ventana de reatribución, cuando se realiza una copia de seguridad de una aplicación mediante iCloud y luego se restaura (en el mismo dispositivo o en otro), AppsFlyer no la cuenta como una instalación nueva o reinstalación. Un usuario que restaura una aplicación desde iCloud conserva su ID de AppsFlyer y sus datos de atribución.
 
 </Accordion>
 
-<div data-zendesk-anchors="reattribution-window=re-attribution-window h_01H95B0F8XEX9RFXW8W6QBQJBY=re-attribution-window setting-the-reattribution-window=setting-the-re-attribution-window h_01H95B0F8X2YQWBB9H0WFXPK8C=setting-the-re-attribution-window reattribution-window-use-cases=re-attribution-window-use-cases h_01H95B0F8Y4T13VYEN2D7T5GHR=re-attribution-window-use-cases h_01H95B0F8Y58QFRSJ9TV3J34EX=first-install h_01H95B0F8YBY482KHT09CZNT9E=reinstall h_01H95B0F8YCQV3H6ZSZE0DF5VV=reattribution h_01H95B0F8Y046Q80V0S8YZ1DWG=new-install h_01H95B0F8Y6M7W02ZSNYCN66PD=ios-app-restored-from-icloud-backup" />
+<div data-zendesk-anchors="reattribution-window=ventana-de-reatribuci%C3%B3n h_01H95B0F8XEX9RFXW8W6QBQJBY=ventana-de-reatribuci%C3%B3n setting-the-reattribution-window=configuraci%C3%B3n-de-la-ventana-de-reatribuci%C3%B3n h_01H95B0F8X2YQWBB9H0WFXPK8C=configuraci%C3%B3n-de-la-ventana-de-reatribuci%C3%B3n reattribution-window-use-cases=casos-de-uso-de-la-ventana-de-reatribuci%C3%B3n h_01H95B0F8Y4T13VYEN2D7T5GHR=casos-de-uso-de-la-ventana-de-reatribuci%C3%B3n h_01H95B0F8Y58QFRSJ9TV3J34EX=first-install h_01H95B0F8YBY482KHT09CZNT9E=reinstall h_01H95B0F8YCQV3H6ZSZE0DF5VV=reattribution h_01H95B0F8Y046Q80V0S8YZ1DWG=new-install h_01H95B0F8Y6M7W02ZSNYCN66PD=ios-app-restored-from-icloud-backup" />

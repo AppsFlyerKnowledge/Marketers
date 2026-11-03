@@ -1,5 +1,5 @@
 ---
-title: User management
+title: Gestión de usuarios
 metadata:
   keywords:
     - Advertisers
@@ -13,597 +13,596 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2021-10-17T11:54:49Z'
-  edited_at: '2026-09-20T12:12:52Z'
+  edited_at: '2026-09-22T00:14:46Z'
   id: 4409128270481
-  locale: en-us
+  locale: es
   section: Account management
   section_id: 6551191075473
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4409128270481-User-management
+  url: https://support.appsflyer.com/hc/es/articles/4409128270481
 ---
-> **At a glance:** Create and manage your account's AppsFlyer users, and assign them permissions to access features, apps, and data.
+> **En resumen:** Crea y gestiona los usuarios de AppsFlyer de tu cuenta y asígnales permisos para acceder a funciones, aplicaciones y datos.
 
-## Overview
+## Descripción general
 
-AppsFlyer accounts allow for multiple users, each with individually-managed permissions. The maximum number of users per account is determined by your subscription plan.
+Las cuentas de AppsFlyer permiten múltiples usuarios, cada uno con permisos administrados de manera individual. Tu plan de suscripción determina el número máximo de usuarios por cuenta.
 
-Each user’s permissions are defined along 3 primary dimensions:
+Los permisos de cada usuario se definen a lo largo de 3 dimensiones principales:
 
-* **Role** (capabilities to access features and perform functions)
-* **App access** for current and future apps
-* **Data access** by media source and geo
-  * Important! Certain AppsFlyer dashboards and features are unavailable to users with limited data access (to media sources and geos). These dashboards and features are [listed here](#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
+* **Rol** (capacidad para acceder a funciones y realizar tareas)
+* **Acceso a aplicaciones** para aplicaciones actuales y futuras
+* **Acceso a datos** por fuente de medios y geolocalización
+  * Dos puntos (:) ¡Importante! Algunos dashboards y funciones de AppsFlyer no están disponibles para los usuarios con acceso limitado a los datos (a las fuentes de medios y a las geolocalizaciones). Estos dashboard y funciones se [enumeran aquí](#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 
-Permissions within each of these dimensions are assigned independently. In other words, you may assign a user a **role** with broad functional capabilities but allow them to exercise those capabilities only within a narrowly-defined set of **apps, media sources, and geos.** The only exception is the [Admin role](#admin), as discussed below, which has access to all capabilities, apps, media sources, and geos.
+Los permisos dentro de cada una de estas dimensiones se asignan de forma independiente. En otras palabras, puedes asignar a un usuario un **rol** con amplias capacidades funcionales, pero permitirle ejercer esas capacidades solo dentro de un conjunto estrechamente definido de aplicaciones, **fuentes de medios y ubicaciones geográficas.** La única excepción es el [rol de administrador](#administrador), como se explica a continuación, que tiene acceso a todas las funcionalidades, aplicaciones, fuentes de medios y zonas geográficas.
 
-Admins can [add users to multiple accounts](#multiple-accounts) so they can easily switch between accounts.
+Los administradores pueden [agregar usuarios a varias cuentas](#multiple-accounts) para que puedan cambiar fácilmente entre cuentas.
 
-## User management page
+## Página de administración de usuarios
 
-**To access the User management page:**
+**Para acceder a la página de administración de usuarios:**
 
-* From the top bar, open the account menu (email address dropdown) > **User management**.
+* En la barra superior, abre el menú de la cuenta (menú desplegable de direcciones de correo electrónico) > **Administración de usuarios**.
 
 [![user-management-page.jpg](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)
 
 <div id="users-tab" />
 
-<Accordion title="Users tab">
+<Accordion title="Pestaña de usuarios">
 
-The **Users** tab displays a table of all existing users in your account. This is the starting point for creating, managing, and deleting users.
+La pestaña **Usuarios** muestra una tabla de todos los usuarios existentes en tu cuenta. Este es el punto de partida para crear, administrar y eliminar usuarios.
 
-Tips for navigating the Users tab:
+Consejos para navegar por la pestaña “Usuarios”:
 
-* Click the **User** column heading to sort the table alphabetically (ascending/descending).
-* Use the search box to find and display specific users.
-* Click the filter icon <Image alt="filter_icon.png" src="https://files.readme.io/a71945008c33bf583972af260535d4681c833fc90a6919fbcd628078d6ed6840-31780969026321.png" width="25px" /> in the **Role** column heading to filter users by their role (including temp roles).
-  * To clear the filter, select **None** in the filter dropdown list.
-* Click the **Last login** column heading to sort users by the date they last logged in to AppsFlyer.
-  * **Tip:** Use this feature to easily identify and [delete](#deleting-users) inactive users, keep your account secure from unauthorized logins.
-* Use the checkboxes to select and [edit multiple users](#multi-user-editing) at the same time.
-* Admins only: Click the download icon <Image alt="download_icon.png" src="https://files.readme.io/fba5d56ceb7f6b3dc3191e5ec33c85ccbba0f7dc409ad0390de238c12b479b61-31780969029777.png" width="24px" /> in the upper-right corner of the page to download the full user table as a CSV file.
-  * The downloaded file includes the same columns as the table in the **Users** tab.
+* Haz clic en el encabezado de la columna **Usuario** para ordenar la tabla alfabéticamente (ascendente/descendente).
+* Utiliza el cuadro de búsqueda para buscar y mostrar usuarios específicos.
+* Haz clic en el icono de filtro <Image alt="filter_icon.png" src="https://files.readme.io/1ceaac3efead3a218909988be1d50a2f0af93b07360f7197cd398b11d661992b-16162502598417.png" width="25px" /> en el encabezado de la columna para filtrar los usuarios por su rol (incluidos los roles temporales).
+  * Para borrar el filtro, selecciona **Ninguno** en la lista desplegable de filtros.
+* Haz clic en el encabezado de la columna **Último inicio de sesión** para ordenar los usuarios por la fecha en que se conectaron por última vez a AppsFlyer.
+  * **Consejo:** Utiliza esta función para identificar y [eliminar](#deleting-users) fácilmente a los usuarios inactivos, mantén tu cuenta a salvo de inicios de sesión no autorizados.
+* Utiliza las casillas de verificación para seleccionar y [editar varios usuarios](#edición-multiusuario) al mismo tiempo.
+* Solo administradores: Haz clic en el icono <Image alt="download_icon.png" src="https://files.readme.io/fba5d56ceb7f6b3dc3191e5ec33c85ccbba0f7dc409ad0390de238c12b479b61-31780969029777.png" width="24px" /> en la esquina superior derecha de la página para descargar la tabla de usuario completa como un archivo CSV.
+  * El archivo descargado incluye las mismas columnas que la tabla de la pestaña **Usuario**.
 
 </Accordion>
 
 <div id="roles-tab" />
 
-<Accordion title="Roles tab">
+<Accordion title="Pestaña Roles">
 
-The **Roles** tab displays a list of all roles defined in your account, including:
+La pestaña **Roles** muestra una lista de todos los roles definidos en tu cuenta, incluidos:
 
-* [Predefined roles](#predefined-roles)
-* [Custom roles](#manage-custom-roles) you have created
-* Any [temp roles](#temp-roles) currently assigned to users
+* [Roles predefinidos](#roles-predefinidos)
+* [Roles personalizados](#gestionar-roles-personalizados) que has creado
+* Cualquier [rol temporal](#roles-temporales) asignado actualmente a los usuarios
 
-Next to each role, you can see the number of users currently assigned to that role.
+Junto a cada rol, puedes ver el número de usuarios actualmente asignados a ese rol.
 
-Click on the name of any role in the left panel to display the full details of the role’s capabilities.
+Haz clic en el nombre de cualquier rol en el panel izquierdo para mostrar los detalles completos de las capacidades del rol.
 
 </Accordion>
 
-Explore below the available actions to effectively manage your users and their roles.
+Explora a continuación las acciones disponibles para gestionar eficazmente a tus usuarios y sus roles.
 
-## Manage users
+## Administrar usuarios
 
-Admins can create new users, add them to multiple accounts, edit their details such as roles and access they have to apps and data, and delete users. Some of these actions can be done [in bulk using a dedicated API](#manage-users-in-bulk-via-api).
+Los administradores pueden crear nuevos usuarios, agregarlos a varias cuentas, editar sus detalles, como los roles y el acceso que tienen a las aplicaciones y los datos, y eliminar usuarios. Algunas de estas acciones se pueden realizar [en masa utilizando una API dedicada](#crea-usuarios-de-forma-masiva-a-través-de-la-api).
 
 <div id="creating-users" />
 
-<Accordion title="Create users">
+<Accordion title="Crear usuario">
 
-<Embed title="User management" typeOfEmbed="youtube" url="https://www.youtube.com/embed/wLCXP5dFrKg" providerUrl="https://www.youtube.com" />
+<Embed title="Gestión de usuarios" typeOfEmbed="youtube" url="https://www.youtube.com/embed/wLCXP5dFrKg" providerUrl="https://www.youtube.com" />
 
-The page for creating or editing a user includes a number of sections. Make sure to complete them, as described below. When you're finished making the necessary changes, click **Save** at the bottom-right of the page.
+La página para crear o editar un usuario incluye varias secciones. Asegúrate de completarlas, como se describe a continuación. Cuando termines de hacer los cambios necesarios, haz clic en **Guardar** en la parte inferior derecha de la página.
 
-#### User details
+#### Detalles del usuario
 
-1. On the **Users** tab, click **New user**.
-2. Enter the user’s name (required):
-   * Can include letters, numbers, spaces, periods (.), hyphens (-), underscores (\_), and single (') or double (") quotation marks.
-   * Other special characters are not allowed.
-3. Enter the user’s email address (required):
+1. En la pestaña **Usuarios**, haz clic en **Nuevo usuario**.
+2. Ingresa el nombre del usuario (obligatorio):
+   * Puedes incluir letras, números, espacios, puntos (.), guiones (-), guiones bajos (\_) y comillas simples (') o dobles (").
+   * No se permiten otros caracteres especiales.
+3. Introduce la dirección de correo electrónico del usuario (obligatorio):
 
-   * Can include letters, numbers, apostrophes ('), ampersands (&), dollar signs ($), hash symbols (#), hyphens (-), underscores (\_), and periods (.)
-   * Two consecutive periods (..) and other special characters are not allowed.
-   * Must end with a valid email domain.
+   * Puedes incluir letras, números, apóstrofes ('),ampersands (&), signos de dólar ($), símbolos hash (#), guiones (-), guiones bajos (\_) y puntos (.)
+   * No se permiten dos puntos consecutivos (..) ni otros caracteres especiales.
+   * Debe terminar con un dominio de correo electrónico válido.
 
-   > 🚧 **Important!**
+   > 🚧 **¡Importante!**
    >
-   > A user’s email address is what identifies them in the AppsFlyer platform, meaning:
+   > La dirección de correo electrónico de un usuario es la que los identifica en la plataforma de AppsFlyer, lo que significa:
    >
-   > * It can't later be changed without deleting and recreating the user.
-   > * It must be a valid email address at which the user can receive emails.
-   > * It can't be associated with another user in any AppsFlyer account, [except for users in multiple accounts](#multiple-accounts). If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management#troubleshooting-can-t-create-this-user) to resolve this issue.
+   > * No se puede cambiar más tarde sin eliminar y volver a crear el usuario.
+   > * Debe ser una dirección de correo electrónico válida en la que el usuario pueda recibir correos electrónicos.
+   > * No se puede asociar con otro usuario en ninguna cuenta de AppsFlyer, [a excepción de los usuarios en cuentas beta](#multiple-accounts). Si la dirección de correo electrónico ya está en uso (ya sea en tu cuenta o en otra), verás el mensaje *No se puede crear este usuario.* Sigue los [pasos para la resolución de problemas a continuación](/docs/user-management#troubleshooting-can-t-create-this-user) para resolver este problema.
 
-4. [Optional] Select the user’s department.
+4. [Opcional] Selecciona el departamento del usuario.
 
-#### Role
+#### Rol
 
-Select the user’s role (required)– either a predefined role or a custom role you have already created.
+Selecciona el rol del usuario (obligatorio): un rol predefinido o un rol personalizado que ya hayas creado.
 
-#### App access
+#### Acceso a la aplicación
 
-Select which apps the user can access:
+Selecciona a qué aplicaciones puede acceder el usuario:
 
-* The default setting allows access to all current and future apps in the account. To change this setting, use the checkboxes to select and deselect apps.
-* A user can be given access to all future apps only if they have access to all current apps.
+* La configuración predeterminada permite el acceso a todas las aplicaciones actuales y futuras de la cuenta. Para cambiar esta configuración, usa las casillas de verificación para seleccionar y deseleccionar aplicaciones.
+* Un usuario puede tener acceso a todas las aplicaciones futuras solo si tiene acceso a todas las aplicaciones actuales.
 
-#### Data access
+#### Acceso a datos
 
-Set user access levels for media sources and geos. Decide whether to grant access to all or select access to specific ones.
+Establece los niveles de acceso del usuario para fuentes de medios y geos. Decide si otorgar acceso a todos o acceso selectivo a específicos.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Users with limited access to media source or geos are unable to access certain [dashboards and features](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
+> Los usuarios con acceso limitado a la fuente de medios o geos no pueden acceder a ciertos [dashboards y funciones](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 
-#### Media sources
+#### Fuentes de medios
 
-By default, the setting **All** allows access to all media sources within the account. This includes those that will be added in the future. Selecting specific media sources doesn't include access to future media sources.
+Por defecto, la configuración **Todo** permite el acceso a todas las fuentes de medios dentro de la cuenta. Esto incluye aquellas que se agregarán en el futuro. Seleccionar fuentes de medios específicas no incluye acceso a futuras fuentes de medios.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * Users with limited media source access are unable to access certain [dashboards and features](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
-> * Admin and security roles have unrestricted access to all media sources. This can't be changed.
+> * Los usuarios con acceso limitado a la fuente de medios no pueden acceder a ciertos [dashboards y funciones](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
+> * Los roles de administrador y seguridad tienen acceso sin restricciones a todas las fuentes de medios. Esto no se puede cambiar.
 
-**Media source types:**
+**Tipo de fuente de medios:**
 
-There are two types of media sources shown in the list:
+Hay dos tipos de fuentes de medios mostradas en la lista:
 
-* **Paid media sources:** Ad networks, self-reporting ad networks (SRNs), and agencies
-* **<span id="custom_media_sources"></span>Custom media sources:** Predefined media sources. This can include owned media links, single source links, OneLink links, and links the advertiser created outside of AppsFlyer.
+* **Fuentes de medios pagadas:** Ad networks, ad networks de auto-reporte (SRNs) y agencias
+* **<span id="custom_media_sources"></span>Fuente de medios personalizada:** Fuentes de medios predefinidas. Esto puede incluir enlaces de medios propios, enlaces de fuente única, enlaces de OneLink y enlaces que el anunciante creó fuera de AppsFlyer.
 
-**Specifications for the list of media sources:**
+**Especificaciones para la lista de fuentes de medios:**
 
-* Presents media sources with traffic from the past 24 months, sorted by those with the most recent traffic
-* Agencies are grouped separately at the bottom of the list
-* Contains a maximum of 100,000 media sources:
-  * Up to 50,000 ad networks, SRNs, and custom media sources
-  * Up to 50,000 agencies
-* Is updated once a day. Newly added media sources are only visible in the list one day after traffic has entered the system.
-* Media sources with no traffic for over 5 years are removed from the list.
+* Presenta fuentes de medios con tráfico de los últimos 24 meses, ordenadas por aquellas con el tráfico más reciente
+* Las agencias se agrupan por separado al final de la lista
+* Contiene un máximo de 10.000 fuentes de medios:
+  * Hasta 5.000 ad networks, SRNs y fuentes de medios personalizadas
+  * Hasta 5.000 agencias
+* Se actualiza una vez al día. Las fuentes de medios recién añadidas solo son visibles en la lista un día después de que el tráfico haya ingresado al sistema.
+* Las fuentes de medios sin tráfico durante más de 5 años se eliminan de la lista.
 
-**To change the default setting:**
+**Para cambiar la configuración predeterminada:**
 
-1. Under **Media sources**, click **All**.
-2. From the dropdown list, select the specific media sources to grant access to the user.
+1. Bajo **Fuentes de medios**, haz clic en **Todo**.
+2. En la lista desplegable, selecciona las fuentes de medios específicas para otorgar acceso al usuario.
 
-After these settings are saved, the user dashboards show only data from the selected media sources.
+Después de guardar estas configuraciones, los dashboards de usuario muestran solo datos de las fuentes de medios seleccionadas.
 
-#### Geos
+#### Geolocalizaciones
 
-Select if users have access to data for **All** geos or specific geos only. The default setting allows access to all geos. Limited access means users are unable to access certain [dashboards and features](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
+Selecciona si los usuarios tienen acceso a datos para **Todas** las geos o solo para geos específicas. La configuración predeterminada permite el acceso a todas las geolocalizaciones. El acceso limitado significa que los usuarios no pueden acceder a ciertos [dashboards y funciones](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 
-**To change the default setting:**
+**Para cambiar la configuración predeterminada:**
 
-1. Under **Geos**, click **All**.
-2. From the dropdown list, select the specific geos to grant access to the user.
+1. En **Geos**, haz clic en **Todo**.
+2. En la lista desplegable, selecciona las geos específicos para otorgar acceso al usuario.
 
-#### User activation
+#### Activación del usuario
 
-Once the user is created, you can see them in the user table with an envelope icon ![pending_invitation_icon.png](https://files.readme.io/cd556e0b9137fbcfbf4bef574332622ca1e567ac76a041b7f7f3874052b037e6-31780969031825.png). This indicates an invitation has been sent and the account is awaiting activation. The user must activate their account using the link in their email. The activation link is valid for 48 hours. After the user activates their account, the envelope disappears.
+Una vez creado el usuario, puedes verlo en la tabla de usuarios con un icono de sobre ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png). Esto indica que se ha enviado una invitación y que la cuenta está en espera de activación. El usuario debe activar su cuenta mediante el enlace recibido en su correo electrónico. El enlace de activación es válido por 48 horas. Después de que el usuario active su cuenta, el sobre desaparece.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](/docs/user-management#resending-a-user-invitation).
+> Si el usuario no recibió la invitación o si el enlace ha expirado, puedes [volver a enviar la invitación](/docs/user-management#resending-a-user-invitation).
 
 </Accordion>
 
 <div id="multiple-accounts" />
 
-<Accordion title="Add users to multiple accounts">
+<Accordion title="Agregar usuarios a varias cuentas">
 
-Users can be added to multiple accounts and assigned to different roles in each account. This helps users work in different accounts without the need to re-enter credentials.
+Los usuarios pueden agregarse a varias cuentas y asignarse a diferentes roles en cada cuenta. Esto ayuda a los usuarios a trabajar en diferentes cuentas sin la necesidad de volver a introducir sus credenciales.
 
-#### Log in to multiple accounts
+#### Inicia sesión en varias cuentas
 
-Users can log in to multiple accounts using all login methods: credentials (username and password), <Anchor target="_blank" href="/marketers/docs/implementing-and-using-2fa-login">2FA</Anchor>, and <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp">SSO</Anchor>.
+Los usuarios pueden iniciar sesión en múltiples cuentas utilizando todos los métodos de inicio de sesión: credenciales (nombre de usuario y contraseña), <Anchor target="_blank" href="/marketers/es/docs/implementing-and-using-2fa-login">2FA</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp">SSO</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> When switching between accounts (not during initial login), users must also enter a 6-digit verification code sent to their email, regardless of which login method they used to sign in. <Anchor target="_blank" href="/marketers/docs/welcome-to-appsflyer#switch-between-accounts">See this article for more information on how to switch accounts</Anchor>.
+> Al cambiar de cuenta (no durante el login inicial), los usuarios también deben introducir un código de verificación de 6 dígitos enviado a su correo electrónico, independientemente del método de login que hayan usado para iniciar sesión. <Anchor target="_blank" href="/marketers/es/docs/welcome-to-appsflyer#cambiar-entre-tus-cuentas">Consulta este artículo para obtener más información sobre cómo cambiar de cuenta</Anchor>.
 
-#### Supported accounts and users
+#### Cuentas y usuarios compatibles
 
-Advertiser accounts support having the same user in multiple accounts. With the right permissions, they can add users to all their accounts. See limitations below.
+Las siguientes cuentas admiten tener el mismo usuario en múltiples cuentas: Las siguientes cuentas admiten tener el mismo usuario en múltiples cuentas: Con los permisos adecuados, pueden añadir usuarios a todas sus cuentas. Ver limitaciones a continuación.
 
-#### Limitations on adding users to multiple accounts
+#### Limitaciones para añadir usuarios a múltiples cuentas
 
-* This feature is available only to advertiser accounts, and only to users with appropriate User management permissions.
-* A user can have the role of an [account owner](#account-owner) for one account only. In other accounts, they can hold any other role.
-* Users who haven't yet [activated their account](#user-activation) can't be added to another account.
+* Esta función está disponible solo para cuentas de anunciantes y solo para usuarios con permisos de gestión de usuarios apropiados.
+* Un usuario puede tener el rol de [propietario de una cuenta](#propietario-de-la-cuenta) para una sola cuenta. En otras cuentas, pueden desempeñar cualquier otro rol.
+* Los usuarios que aún no hayan [activado su cuenta](#activación-del-usuario) no podrán ser agregados a otra cuenta.
 
-#### Add users to multiple accounts
+#### Agregar usuarios a varias cuentas
 
-**To add the same user to multiple accounts:**
+**Para agregar el mismo usuario a varias cuentas:**
 
-1. Log in to the account in which you'd like to add the user.
-2. From the menu bar, click the **email address dropdown** > **User management**.
-3. From the **Users** tab, click **New user**.
-4. Enter the required details, select the role for the user in this account, and click **Save**.
-5. Repeat steps 1-4 to add the users to other accounts.
+1. Ingresa a la cuenta en la que quieres agregar el usuario.
+2. En la barra de menú, haz clic en el **menú desplegable de dirección de correo electrónico** > **Gestión de usuarios**.
+3. En la pestaña **Usuarios**, haz clic en **Nuevo usuario**.
+4. Ingresa los detalles requeridos, selecciona el rol para el usuario en esta cuenta y haz clic en **Guardar**.
+5. Repite los pasos del 1 al 4 para agregar los usuarios a otras cuentas.
 
 </Accordion>
 
 <div id="editing-users" />
 
-<Accordion title="Edit users">
+<Accordion title="Editar usuario">
 
-Users can be edited either one at a time or in groups.
+Los usuarios se pueden editar uno a la vez o en grupos.
 
-#### Individual editing
+#### Edición individual
 
-**To edit an individual user:**
+**Para editar un usuario individual:**
 
-1. On the **Users** tab, click the **Actions** <Image alt="actions_icon.png" src="https://files.readme.io/c7dc63f2be01982234448350bf3ad77bb3ce8ec81907755d7474b667602dab68-31780971791249.png" width="25px" /> button on the far-right side of the user’s row.
-2. Select **Edit** from the menu.
-3. Edit user settings as required.
-4. All settings other than email address are editable (including role, apps, media sources, and geos).
-5. Click **Save**.
+1. En la pestaña **Usuarios**, haz clic en el botón **Acciones** <Image alt="actions_icon.png" src="https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png" width="25px" /> en el extremo derecho de la fila del usuario.
+2. Selecciona **Editar** en el menú.
+3. Edita la configuración del usuario según sea necesario.
+4. Todas las configuraciones excepto la dirección de correo electrónico son editables (incluidos el rol, las aplicaciones, las fuentes de medios y las geolocalizaciones).
+5. Haz clic en **Guardar**.
 
-#### Multi-user editing
+#### Edición multiusuario
 
-Multi-user editing is an efficient way to change the account permissions of several users at one time. Using this feature in combination with the search and filtering capabilities of the **Users** tab can make it particularly helpful for managing large numbers of users.
+La edición multiusuario es una forma eficiente de cambiar los permisos de cuenta de varios usuarios a la vez. El uso de esta función en combinación con las capacidades de búsqueda y filtrado de la pestaña **Usuarios** puede resultar particularmente útil para administrar un gran número de usuarios.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> You can't assign users to the Admin role using multi-user editing.
+> No se pueden asignar usuarios a la función de administrador mediante la edición multiusuario.
 
-**To edit multiple users:**
+**Para editar varios usuarios:**
 
-1. On the **Users** tab, select the checkboxes of the user or users you want to edit.
-   * Select the checkbox in the column heading to select all visible users.
-   * The number of currently-selected users is displayed on the right side of the search box. Note that the [account owner](#account-owner) cannot be selected and is not included in the number of selected users.
-2. A series of buttons displays at the top-right of the table: **Role, Apps, Media sources,** and **Geos.**
-   * If one or more of the selected users has access to future apps, the **Apps** button is not available. (See [Temp role limitations](/docs/user-management#temp-role-limitations), below.)
-3. Click the button for the permissions you want to change.
-4. Make the necessary changes using the dialog box or dropdown lists that are displayed.
-   * Remember that your changes apply to all selected users!
-5. The edited users are highlighted in the table, and the users appear as they will once the changes are saved. However, you still have the opportunity to review your changes and confirm or cancel them in the next step.
-6. Review your changes. Click **Save** to confirm or **Cancel** to undo them.
+1. En la pestaña **Usuarios**, selecciona las casillas de verificación del usuario o de los usuarios que deseas editar.
+   * Selecciona la casilla de verificación en el encabezado de la columna para seleccionar todos los usuarios visibles.
+   * El número de usuarios seleccionados actualmente se muestra en el lado derecho del cuadro de búsqueda. Ten en cuenta que el [propietario de la cuenta](#propietario-de-la-cuenta) no se puede seleccionar y no se incluye en la cantidad de usuarios seleccionados.
+2. En la parte superior derecha de la tabla se muestra una serie de botones: **Rol, aplicaciones, fuentes de medios** y **ubicaciones geográficas.**
+   * Si uno o más de los usuarios seleccionados tienen acceso a aplicaciones futuras, el botón **Aplicaciones** no estará disponible. (Consulta [Limitaciones del rol temporal](/docs/user-management#limitaciones-de-los-roles-temporales) a continuación).
+3. Haz clic en el botón de los permisos que deseas cambiar.
+4. Realiza los cambios necesarios utilizando el cuadro de diálogo o las listas desplegables que se muestran.
+   * ¡Recuerda que tus cambios se aplican a todos los usuarios seleccionados!
+5. Los usuarios editados se resaltan en la tabla y los usuarios aparecen como aparecerán una vez que se guarden los cambios. Sin embargo, aún tienes la oportunidad de revisar tus cambios y confirmarlos o cancelarlos en el siguiente paso.
+6. Revisa tus cambios. Haz clic en **Guardar** para confirmar o en **Cancelar** para deshacer la acción.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> **Scenario:**
+> **Escenario:**
 >
-> * There are 30 users in your account. Ten of these are in the **Marketing – limited** role.
-> * Alice, Bill, and Charlie have just received promotions, and you want to change them from the **Marketing – limited** role to the **Marketing** role.
-> * Alice will be working with the Astounding app. Bill will be working with the Beautiful app. Charlie will be working with the Charming app.
+> * Hay 30 usuarios en tu cuenta. Diez de ellos están en el rol **Marketing – limitado**.
+> * Alice, Bill y Charlie acaban de recibir promociones, y quieres cambiarles del rol **Marketing – limitado** al rol **Marketing**.
+> * Alice trabajará con la aplicación Astounding. Bill trabajará con la aplicación Beautiful. Charlie trabajará con la aplicación Charming.
 >
-> **Steps:**
+> **Pasos:**
 >
-> 1. Use the Role filter <Image alt="filter_icon.png" src="https://files.readme.io/a71945008c33bf583972af260535d4681c833fc90a6919fbcd628078d6ed6840-31780969026321.png" width="25px" /> to see only the users in the **Marketing–limited** role.
-> 2. Change Alice, Bill, and Charlie to the **Marketing** role:
->    * Select the checkboxes for Alice, Bill, and Charlie.
->    * Click the **Role** button.
->    * Select **Marketing** from the dropdown list.
->    * Click **Save** to confirm.
->    * Note that once you confirm the changes, the **Role** filter is cleared, and the table displays all users.
-> 3. Give Alice, Bill, and Charlie the appropriate app access:
->    * Use the search box to find Alice, then individually edit her user to give her access to the Astounding app.
->    * Repeat these steps for Bill and Charlie to give them access to Beautiful and Charming, respectively.
+> 1. Utiliza el filtro de rol <Image alt="filter_icon.png" src="https://files.readme.io/1ceaac3efead3a218909988be1d50a2f0af93b07360f7197cd398b11d661992b-16162502598417.png" width="25px" /> para ver solo los usuarios en el rol **Marketing – limitado**.
+> 2. Cambiar a Alice, Bill y Charlie al rol de **Marketing**:
+>    * Selecciona las casillas de verificación de Alice, Bill y Charlie.
+>    * Haz clic en el botón **Rol**.
+>    * Selecciona **Marketing** en la lista desplegable.
+>    * Haz clic en **Guardar** para confirmar.
+>    * Ten en cuenta que una vez que confirmes los cambios, el filtro **Rol** se borrará y la tabla mostrará todos los usuarios.
+> 3. Proporciona a Alice, Bill y Charlie el acceso adecuado a la aplicación:
+>    * Utiliza el cuadro de búsqueda para encontrar a Alice y, a continuación, edita individualmente su usuario para darle acceso a la aplicación Astounding.
+>    * Repite estos pasos para Bill y Charlie para darles acceso a Beautiful y Charming, respectivamente.
 
 </Accordion>
 
 <div id="deleting-users" />
 
-<Accordion title="Delete users">
+<Accordion title="Eliminar usuarios">
 
-Multiple users can be deleted from the account in bulk.
+Se pueden eliminar varios usuarios de la cuenta de forma masiva.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * The [account owner](/docs/user-management#account-owner) can't be deleted
-> * Deleting users is irreversible
+> * El [propietario de la cuenta](/docs/user-management#propietario-de-la-cuenta) no se puede eliminar
+> * La eliminación de usuarios es irreversible
 
-<span id="to-delete-users"></span>**To delete users:**
+<span id="to-delete-users"></span>**Para eliminar usuarios:**
 
-1. On the **Users** tab, select the checkboxes of the users you want to delete. You can use the search and filters to help find users.
-2. After selecting users, click the **Delete** button that now appears at the top-right of the table.
-3. The confirmation window lists users to be deleted. Click **Yes, delete** to confirm deletion.
+1. En la pestaña **Usuarios**, selecciona las casillas de verificación de los usuarios que deseas eliminar. Puedes utilizar la búsqueda y los filtros para ayudar a encontrar usuarios.
+2. Después de seleccionar usuarios, haz clic en el botón **Eliminar** que ahora aparece en la parte superior derecha de la tabla.
+3. La ventana de confirmación enumera los usuarios que se eliminarán. Haz clic en **Sí, eliminar** para confirmar la eliminación.
 
 </Accordion>
 
-### Manage users in bulk via API
+### Crea usuarios de forma masiva a través de la API
 
-Some user-management actions can be done in bulk using <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-management-overview">a dedicated API</Anchor>:
+Algunas acciones de gestión de usuarios se pueden realizar en masa utilizando <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-management-overview">una API dedicada</Anchor>:
 
-* [Create](https://dev.appsflyer.com/hc/reference/bulk-users-post) multiple users
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-delete">Delete</Anchor> multiple users
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-get">Get</Anchor> access details of multiple users
+* [Crear](https://dev.appsflyer.com/hc/reference/bulk-users-post) múltiples usuarios
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-delete">Eliminar</Anchor> múltiples usuarios
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-get">Obtener</Anchor> detalles de acceso de múltiples usuarios
 
-The API supports the main user management features on the platform and includes the same error verifications.
+La API admite las principales funciones de gestión de usuarios en la plataforma e incluye las mismas verificaciones de errores.
 
-## Manage roles
+## Gestionar roles
 
-Each user of your AppsFlyer account must be assigned a role. Each role defines the specific AppsFlyer features the user can access and the functions they can perform. A full list of capabilities per role is available on the [Roles tab](#roles-tab) of the **User management** page.
+Cada usuario de tu cuenta de AppsFlyer debe tener asignado un rol. Cada uno de estos roles define las características específicas de AppsFlyer a las que el usuario puede acceder y las funciones que puede realizar. Encontrarás una lista completa de las capacidades por rol en la pestaña [Roles](#roles-tab) de la página **Administración de usuarios**.
 
-Roles within AppsFlyer can be [predefined roles](#predefined-roles), [custom roles](#custom-roles), or (in certain circumstances) [temp roles](#temp-roles).
+Los roles dentro de AppsFlyer pueden ser [roles predefinidos](#roles-predefinidos), [roles personalizados](#roles-personalizados) o (en ciertas circunstancias) [roles temporales](#roles-temporales).
 
-### Predefined roles
+### Roles predefinidos
 
-AppsFlyer is configured with many predefined roles:
+AppsFlyer está configurado con muchos roles predefinidos:
 
-* [Admin—a special role](#admin)
-* Team manager
-* Marketing lead
-* Marketing
-* Marketing – limited
-* Contributor
-* Accounting
-* Security
-* Quality Assurance
+* [Administrador — un rol especial](#administrador)
+* Administrador de equipo
+* Responsable de marketing
+* marketing
+* Marketing limitado
+* Contribuyente
+* Contabilidad
+* Seguridad
+* Garantía de calidad
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> For each of these predefined roles, the functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by assigning them to a different predefined or custom role (except for the [account owner](#account-owner), as discussed below).
+> Para cada uno de estos roles predefinidos, las capacidades funcionales son fijas: no se permite "mezclar y combinar". Sin embargo, puedes cambiar las capacidades funcionales de un usuario en cualquier momento asignándole un rol predefinido o personalizado diferente (excepto el de [propietario de la cuenta](#propietario-de-la-cuenta), como se describe a continuación).
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> You have assigned Bill Bates the role of **Team manager.** This role gives Bill the ability to manage **OneLink templates,** but it does not allow him access to the **My plan** and **Payments** pages.
+> Has asignado a Bill Bates el rol de **Administrador del equipo.** Este rol le permite a Bill gestionar las **plantillas de OneLink**, pero no le permite acceder a las páginas **Mi plan** y **Pagos**.
 >
-> **Question:** Can I keep Bill in the Team manager role but also give him the ability to access the My plan and Payments pages? Can I take away his ability to manage OneLink templates?
+> **Pregunta:** ¿Puedo mantener a Bill en el rol de administrador de equipo pero también darle la posibilidad de acceder a las páginas Mi plan y Pagos? ¿Puedo eliminar su capacidad para administrar plantillas de OneLink?
 >
-> **Answer:** No. As long as Bill stays in the Team manager role, you cannot give him the ability to access the My Plan and Payments pages. Nor can you remove his ability to manage OneLink templates. Of course, you can assign Bill to a different predefined role, and his capabilities will change to those defined by that role. Or, you can create a custom role for Bill that changes his capabilities according to your needs.
+> **Respuesta:** No. Mientras Bill permanezca en el rol de administrador de equipo, no puedes darle la posibilidad de acceder a las páginas Mi plan y Pagos. Tampoco puedes eliminar su capacidad para administrar plantillas de OneLink. Por supuesto, puedes asignar un rol diferente a Bill, y sus capacidades cambiarán a las definidas por ese rol. O bien, puedes crear un rol personalizado para Bill que cambie sus capacidades de acuerdo a tus necesidades.
 
-### Admin
+### Administrador
 
-An AppsFlyer account can have **one or more Admins**. This role has several unique characteristics:
+Una cuenta de AppsFlyer puede tener **uno o más administradores**. Este rol tiene varias características únicas:
 
-#### Access
+#### Acceso
 
-The Admin role has access to **all account capabilities**, including:
+El rol de administrador tiene acceso a **todas las capacidades de la cuenta**, incluidas las siguientes:
 
-* All features and functions
-* All current and future apps
-* All media sources and geos
+* Todas las características y funciones
+* Todas las aplicaciones actuales y futuras
+* Todas las fuentes de medios y geolocalizaciones
 
-This "all-access" characteristic of the Admin role can't be changed or limited.
+Esta característica de "acceso completo" del rol de administrador no se puede cambiar ni limitar.
 
-#### Manage tokens
+#### Gestionar tokens
 
-Only a user with an Admin role can <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">manage tokens</Anchor>: create, rename, and remove API and server-to-server tokens.
+Solo un usuario con un rol de Administrador puede <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">gestionar tokens</Anchor>: crear, renombrar y eliminar tokens de API y de servidor a servidor.
 
-#### Role duplication
+#### Duplicación de roles
 
-The Admin role **can't be duplicated** when creating [custom roles](#manage-custom-roles).
+El rol de administrador **no se puede duplicar** al crear [roles personalizados](#gestionar-roles-personalizados).
 
-#### Invite new partners to AppsFlyer
+#### Invita a nuevos partners a AppsFlyer
 
-A user with an admin role can <Anchor target="_blank" href="/marketers/docs/partner-integrations#invite-new-partners-to-appsflyer">send an invitation link</Anchor> via the Partner Marketplace to invite a partner that isn't integrated with AppsFlyer.
+Un usuario con un rol de administrador puede <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#invitar-nuevos-partners-a-appsflyer">enviar un enlace de invitación</Anchor> a través del Partner Marketplace para invitar a un partner que no está integrado con AppsFlyer.
 
-### Account owner
+### Propietario de la cuenta
 
-The user created at the time the account was opened, the "account owner", is **assigned the Admin role by default**. The account owner is initially responsible for creating additional users, until additional users with user management capabilities are created.
+El usuario creado en el momento en que se abrió la cuenta (el **"propietario de la cuenta"**) tiene **asignado el rol de Administrador de forma predeterminada**. El propietario de la cuenta es inicialmente responsable de crear los usuarios adicionales, hasta que se creen usuarios adicionales con capacidades de gestión de usuarios.
 
-An account owner has unique characteristics beyond those of the Admin role who isn't the account owner. Unlike any Admin, the account owner **can't** be deleted, removed from the Admin role, or otherwise edited from the [**User management**](/docs/user-management#user-management-page) page. If you need to change the account owner, follow the [steps listed below](#changing-the-account-owner)
+Un propietario de cuenta tiene características únicas más allá de las del rol de Administrador que no es el propietario de la cuenta. El propietario de la cuenta **no** se puede eliminar, su rol de administrador no puede ser desactivado ni se puede editar de ninguna otra forma desde la página de [Administración de usuarios](/docs/user-management#página-de-administración-de-usuarios). Si necesitas cambiar el propietario de la cuenta, sigue los **pasos que se indican más abajo**.
 
-### Custom roles
+### Roles personalizados
 
-The predefined roles in AppsFlyer have been configured with the specific combinations of capabilities required in most situations. For this reason, many advertisers find that they don't need to further customize roles. However, when additional customization is required, predefined roles are still a great starting point for managing your users' capabilities.
+Los roles predefinidos en AppsFlyer han sido configurados con las combinaciones específicas de capacidades requeridas en la mayoría de las situaciones. Por esta razón, muchos anunciantes descubren que no necesitan personalizar más los roles. Sin embargo, cuando se requiere una personalización adicional, los roles predefinidos siguen siendo un gran punto de partida para gestionar las capacidades de tus usuarios.
 
-Learn more about [managing custom roles](#manage-custom-roles).
+Aprender más sobre [gestión de roles personalizados](#gestionar-roles-personalizados).
 
-### Temp roles
+### Roles temporales
 
-If your AppsFlyer account existed under our prior user management system (when the only available account types were Admin and Team member), all users were brought into the new system with unchanged capabilities. As a result, most of these users appear in the current system with **temp roles**.
+Si tu cuenta de AppsFlyer existía en nuestro sistema de gestión de usuarios anterior (cuando los únicos tipos de cuenta disponibles eran Administrador y Miembro del Equipo), todos los usuarios se incorporaron al nuevo sistema con sus capacidades sin cambios. Como resultado, la mayoría de estos usuarios aparecen en el sistema actual con **roles temporales**.
 
-Learn more about [managing temp roles](#managing-temp-roles).
+Saber más sobre la [administración de roles temporales](#managing-temp-roles).
 
-### Get roles data via API
+### Obtener datos de roles a través de la API
 
-Through the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_roles">Get roles API</Anchor>, you can retrieve a list of current roles and their corresponding attributes specific to your account.
+A través de la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_roles">API de obtener roles</Anchor>, puedes recuperar una lista de roles actuales y sus atributos correspondientes específicos de tu cuenta.
 
-## Manage custom roles
+## Gestionar roles personalizados
 
 <div id="creating-custom-roles" />
 
-<Accordion title="Create custom roles">
+<Accordion title="Crear roles personalizados">
 
-* **Prerequisite:** Only [account owners](#account-owner) or users with the [Admin role access](#admin) can create a custom role.
+* **Requisito previo:** Solo los [propietarios de cuentas](#propietario-de-la-cuenta) o usuarios con [acceso al rol de administrador](#administrador) pueden crear un rol personalizado.
 
-**To create a custom role:**
+**Para crear un rol personalizado:**
 
-1. On the left panel of the **Roles** tab, under the search bar, click **+ New custom role**.
-2. **Role name:** Enter a name for the new role you are creating.
-   * **Note:** Once you have saved a custom role, the name of the role cannot be edited.
-   * **Recommended:** Make the name descriptive and easily identifiable later.
-3. **Role template:** As a starting point, select a predefined role that closely matches the capabilities and permissions for the new custom role.
-4. Adjust the settings of the selected role template according to your custom role requirements. The permission levels of all editable capabilities are displayed as buttons. Click these buttons to change the permission levels for the new custom role. (Be sure to scroll down to see the full list of capabilities.)
-   * **Note:** Capabilities that don't appear as buttons are currently uneditable.
-5. After setting permissions to all the relevant capabilities, click **Save role**.  
-   The new custom role is displayed in the left panel and can be assigned when creating new users or editing existing users.
+1. En el panel izquierdo de la pestaña **Roles**, debajo de la barra de búsqueda, haz clic en **+ Nuevo rol personalizado**.
+2. **Nombre del rol:** Introduce un nombre para el nuevo rol que estás creando.
+   * **Nota:** Una vez que hayas guardado un rol personalizado, el nombre del rol no se puede editar.
+   * **Recomendación:** Haz que el nombre sea descriptivo y fácilmente identificable más adelante.
+3. **Plantilla de rol:** Como punto de partida, selecciona un rol predefinido que se asemeje más a las capacidades y permisos para el nuevo rol personalizado.
+4. Ajusta la configuración de la plantilla de rol seleccionada de acuerdo con los requisitos de tu rol personalizado. Los niveles de permiso de todas las capacidades editables se muestran como botones. Haz clic en estos botones para cambiar los niveles de permiso del nuevo rol personalizado. (Asegúrate de desplazarte hacia abajo para ver la lista completa de capacidades).
+   * **Nota:** Las capacidades que no aparecen como botones actualmente no se pueden editar.
+5. Después de establecer permisos para todas las capacidades relevantes, haz clic en **Guardar rol**.  
+   El nuevo rol personalizado se muestra en el panel izquierdo y se puede asignar cuando se crean nuevos usuarios o se editan usuarios existentes.
 
 </Accordion>
 
 <div id="editing-custom-roles" />
 
-<Accordion title="Edit custom roles">
+<Accordion title="Editar roles personalizados">
 
-**To edit a custom role:**
+**Para editar un rol personalizado:**
 
-1. On the left panel of the **Roles** tab, click on the name of the custom role you want to edit.
-2. Click the **Edit** icon <Image alt="edit-icon.jpg" src="https://files.readme.io/d32f150cb5d0271c5504fb3c107e23f73e59c9a3be1630769ad309edf4e79ea0-31780971794321.jpg" width="25px" /> from the top-right corner of the page. The display of the right panel changes, allowing you to edit the role permissions settings.
-   * **Note:** The role name can't be edited. To change it, you must delete the role and recreate a new one with a different name.
-3. The permission levels of all editable capabilities are displayed as buttons. Click these buttons to change the permission levels for the new custom role. (Be sure to scroll down to see the full list of capabilities.)
-4. When you are satisfied with all of your selections, click the **Save role** button.
-5. The role's permission levels are changed for all new and existing users.
+1. En el panel izquierdo de la pestaña **Roles**, haz clic en el nombre del rol personalizado que deseas editar.
+2. Haz clic en el ícono **Editar** <Image alt="edit-icon.jpg" src="https://files.readme.io/d32f150cb5d0271c5504fb3c107e23f73e59c9a3be1630769ad309edf4e79ea0-31780971794321.jpg" width="25px" /> en la esquina superior derecha de la página. La visualización del panel derecho cambia, lo que te permite editar la configuración de permisos del rol.
+   * **Nota:** El nombre del rol no se puede editar. Para cambiarlo, debes eliminar el rol y recrear uno nuevo con un nombre diferente.
+3. Los niveles de permiso de todas las capacidades editables se muestran como botones. Haz clic en estos botones para cambiar los niveles de permiso del nuevo rol personalizado. (Asegúrate de desplazarte hacia abajo para ver la lista completa de capacidades).
+4. Cuando estés satisfecho con todas tus selecciones, haz clic en el botón **Guardar rol**.
+5. Los niveles de permiso del rol se cambian para todos los usuarios nuevos y existentes.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Any changes you make to a custom role are automatically applied to **all existing users** in that role.
+> Cualquier cambio que realices en un rol personalizado se aplica automáticamente a **todos los usuarios existentes** en ese rol.
 
 </Accordion>
 
 <div id="deleting-custom-roles" />
 
-<Accordion title="Delete custom roles">
+<Accordion title="Eliminar roles personalizados">
 
-**To delete a custom role:**
+**Para eliminar un rol personalizado:**
 
-1. On the left panel of the **Roles** tab, click on the name of the custom role you want to delete.
-2. Click the **Delete** icon <Image alt="delete-icon.jpg" src="https://files.readme.io/87f206e21926af0836690be064a5af7cb3bce0007f0fc62301b2925701b1d9f9-31780971797265.jpg" width="24px" /> from the top-right corner of the page.
-3. Confirm that you wish to delete the role.
-   * A custom role can be deleted only when there are no users assigned to it. If there are users currently assigned to a custom role, assign these users to a different role before deleting the custom role.
+1. En el panel izquierdo de la pestaña **Roles**, haz clic en el nombre del rol personalizado que deseas eliminar.
+2. Haz clic en el ícono **Eliminar** <Image alt="delete-icon.jpg" src="https://files.readme.io/87f206e21926af0836690be064a5af7cb3bce0007f0fc62301b2925701b1d9f9-31780971797265.jpg" width="24px" /> en la esquina superior derecha de la página.
+3. Confirma que deseas eliminar el rol.
+   * Un rol personalizado solo se puede eliminar cuando no hay usuarios asignados. Si hay usuarios asignados actualmente a un rol personalizado, asigna estos usuarios a un rol diferente antes de eliminar el rol personalizado.
 
 </Accordion>
 
-## Special situations and additional procedures
+## Situaciones especiales y procedimientos adicionales
 
 <div id="managing-temp-roles" />
 
-<Accordion title="Manage temp roles">
+<Accordion title="Gestionar roles temporales">
 
-If your account previously used our prior user management system, [**temp roles**](/docs/user-management#temp-roles) were assigned to existing users to ensure that they were brought into the new system with unchanged capabilities.
+Si tu cuenta utilizaba anteriormente nuestro sistema de administración de usuarios anterior, se asignaban [**roles temporales**](/docs/user-management#roles-temporales) a los usuarios existentes para garantizar que se incorporaran al nuevo sistema sin cambios en sus capacidades.
 
-* Users with the same capabilities were assigned the same temp role.
-* Use the features of the [Roles tab](/docs/user-management#roles-tab) to review the capabilities of each temp role and a list of users currently in it.
+* A los usuarios con las mismas capacidades se les asignó el mismo rol temporal.
+* Utiliza las características de la [pestaña Roles](/docs/user-management#roles-tab) para revisar las capacidades de cada rol temporal y una lista de usuarios que se encuentran actualmente en él.
 
-#### Temp role limitations
+#### Limitaciones de los roles temporales
 
-Temp roles were designed specifically to allow seamless transition from our prior user management system. As such, they are available only in limited situations:
+Los roles temporales se diseñaron específicamente para permitir una transición fluida desde nuestro sistema de administración de usuarios anterior. Por lo tanto, solo están disponibles en situaciones limitadas:
 
-* Temp roles cannot be assigned to other users (whether new or existing).
-* A user with a temp role cannot be assigned a different temp role (though you can change the apps, media sources, and geos to which they have access).
-  * Note that a user's access to future apps **cannot** be changed while the user is in a temp role.
-* When a user with a temp role is changed to a predefined role, they cannot be returned to the previously-assigned temp role (or to any other temp role).
-* If the last user in a temp role is removed from it, the role will no longer appear in your account.
+* Los roles temporales no se pueden asignar a otros usuarios (ya sean nuevos o existentes).
+* A un usuario con un rol temporal no se le puede asignar un rol temporal diferente (aunque puedes cambiar las aplicaciones, las fuentes de medios y las geolocalizaciones a las que tiene acceso).
+  * Ten en cuenta que el acceso de un usuario a aplicaciones futuras **no se** puede cambiar mientras el usuario tiene un rol temporal.
+* Cuando un usuario con un rol temporal se cambia a un rol predefinido, no se puede devolver al rol temporal asignado anteriormente (o a cualquier otro rol temporal).
+* Si el último usuario en un rol temporal se elimina, el rol ya no aparecerá en tu cuenta.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Your account previously used our prior user management system. Diana and Edward were existing users at the time your account was moved to the new system. Diana is now in Temp role 1, and Edward is in Temp role 2.
+> Tu cuenta utilizó anteriormente nuestro sistema de administración de usuarios anterior. Diana y Edward eran usuarios existentes en el momento en que tu cuenta se movió al nuevo sistema. Diana ahora está en el rol temporal 1, y Edward está en el rol temporal 2.
 >
-> * You hire a new employee, Fiona. You can assign Fiona any one of the [predefined roles](/docs/user-management#predefined-roles). However, you cannot assign Fiona Temp role 1 or Temp role 2.
-> * Diana cannot be moved from Temp role 1 to Temp role 2. However, you can assign her any of the predefined roles. You can also change her access to apps, media sources, and geos as necessary.
-> * If you move Diana from Temp role 1 to the Accounting role, she can’t later be moved back to Temp role 1.
-> * If Diana was the last user in Temp role 1 when you moved her to the Accounting role, Temp role 1 will no longer appear in your account.
+> * Contratas a una nueva empleada, Fiona. Puedes asignar a Fiona cualquiera de los [roles predefinidos](/docs/user-management#roles-predefinidos). Sin embargo, no puedes asignar a Fiona el rol temporal 1 o el rol temporal 2.
+> * Diana no se puede mover del rol temporal 1 al rol temporal 2. Sin embargo, puedes asignarle cualquiera de los roles predefinidos. También puedes cambiar su acceso a aplicaciones, fuentes de medios y geolocalizaciones según sea necesario.
+> * Si trasladas a Diana del rol temporal 1 al rol Contabilidad, no podrá volver más tarde al rol temporal 1.
+> * Si Diana era el último usuario en el rol Temporal 1 cuando la moviste al rol de Contabilidad, el rol Temporal 1 ya no aparecerá en tu cuenta.
 
 </Accordion>
 
 <div id="dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access" />
 
-<Accordion title="Dashboard and feature availability for users with limited media source/geo access">
+<Accordion title="Dashboard y disponibilidad de funciones para usuarios con acceso limitado a la fuente de medios/geolocalización">
 
-The following AppsFlyer dashboards are **not available** to users whose access is limited to specific media sources and geos:
+Los siguientes dashboards de AppsFlyer **no están disponibles** para los usuarios cuyo acceso está limitado a fuentes de medios y geolocalizaciones específicas:
 
-* SKAN overview
-* SKAN Conversion Studio
-* Protect360
-* Retention
-* People-Based Attribution
-* Incrementality
+* Resumen de SKAN
+* Estudio de conversión SKAN
+* Las alertas de Protect360 se actualizan a la hora UTC diaria.
+* Retención
+* Atribución people-based
+* Incrementalidad
 
-Additionally, the following AppsFlyer features are **not available** to these users:
+Además, las siguientes funciones de AppsFlyer **no están disponibles** para estos usuarios:
 
 * Pivot
 * OneLink
-* Validation Rules
-* Audiences (not available for media source-restricted users; geo-restricted users can access only audiences that include a "Country" filter, and only for the countries they're authorized to access)
-* SDK information
-* Ad spend ingestion
-* Cost ETL
+* Reglas de validación
+* Audiences (no disponible para usuarios restringidos de fuentes de medios; disponible para usuarios con geolocalización restringida).
+* Información del SDK
+* Procesamiento del gasto publicitario
+* ETL de costos
 
 </Accordion>
 
 <div id="combined-media-source-and-agency-access" />
 
-<Accordion title="Combined media source and agency access">
+<Accordion title="Acceso combinado a fuente de medios y agencia">
 
-When you grant a user access to a specific agency **and** a specific media source, their data access reflects only the overlap between the two. They don't see all of that agency's data across every media source, and they don't see all of that media source's data across every agency — only the portion where both permissions intersect.
+Cuando concedes a un usuario acceso a una agencia específica **y** a una fuente de medios específica, su acceso a los datos refleja solo la intersección entre ambas. No ven todos los datos de esa agencia en todas las fuentes de medios, ni todos los datos de esa fuente de medios en todas las agencias; solo la parte en la que ambos permisos se superponen.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> You give a user access to Agency B and Media Source A. Agency B manages app installs coming from several media sources, including Media Source A. This user sees only the installs from Media Source A that Agency B manages — not Agency B's data from other media sources, and not Media Source A's data managed by other agencies.
+> Concedes a un usuario acceso a la agencia B y a la fuente de medios A. La agencia B gestiona instalaciones de la app procedentes de varias fuentes de medios, incluida la fuente de medios A. Este usuario solo ve las instalaciones de la fuente de medios A que gestiona la agencia B, no los datos de la agencia B de otras fuentes de medios ni los datos de la fuente de medios A gestionados por otras agencias.
 
 </Accordion>
 
 <div id="changing-the-account-owner" />
 
-<Accordion title="Change the account owner">
+<Accordion title="Cambiar el propietario de la cuenta">
 
-Because all Admins have essentially the same permissions as the account owner, changing the account owner is not usually necessary. But if you find that you must change the account owner, follow these steps to do so.
+Como todos los administradores tienen básicamente los mismos permisos que el propietario de la cuenta, no suele ser necesario cambiar el propietario de la cuenta. Pero si necesitas cambiar el propietario de la cuenta, sigue estos pasos para hacerlo.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Changing the account owner must be completed manually according to the steps below. It can't be done from the **User management** page.
+> El cambio del propietario de la cuenta debe completarse manualmente de acuerdo con los pasos a continuación. No se puede hacer desde la página de **Administración de usuarios**.
 
-#### #1–Assign a team member the Admin role
+#### #1–Asigna a un miembro del equipo el rol de Admin
 
-Changing the account owner can only be requested from a user with an Admin role. Therefore, it is recommended to:
+Solo un usuario con el rol de Admin puede solicitar el cambio de propietario de la cuenta. Por lo tanto, se recomienda:
 
-* Assign a team member who can complete all the steps the **Admin** role.
-* The user must activate their account (i.e., log in at least once).
+* Asigna a un miembro del equipo que pueda completar todos los pasos el **Admin** rol.
+* El usuario debe activar su cuenta (es decir, iniciar sesión al menos una vez).
 
-#### #2–Send an email request
+#### #1 – Envía una solicitud por correo electrónico
 
-A user with an Admin role must send an email request to AppsFlyer **from the email address of the current account owner.**
+Para iniciar el proceso de cambio del propietario de la cuenta, envía una solicitud por correo electrónico a AppsFlyer **desde el correo electrónico del propietario actual de la cuenta**.
 
-* Be sure that this is the current account owner's email address as it appears in your AppsFlyer account.
-* If the current account owner has left your company, ask your IT team to enable you to send an email from their address.
+* Asegúrate de que esta sea la dirección de correo electrónico del propietario actual de la cuenta tal como aparece en tu cuenta de AppsFlyer.
+* Si el propietario actual de la cuenta ha abandonado tu empresa, pídele a tu equipo de TI que te permita enviar un correo electrónico desde su dirección.
 
-Include the following information in your request:
+Incluye la siguiente información en tu solicitud:
 
-| To: | Your AppsFlyer CSM or hello@appsflyer.com |
+| Para: | Tu CSM de AppsFlyer o hello@appsflyer.com |
 | --- | --- |
-| CC: | Email of new account owner |
-| Subject: | Request to change the account owner for `{account name}` |
-| Body: | Short message including the name and title of the new account owner |
+| CC: | Correo electrónico del nuevo propietario de la cuenta |
+| Asunto: | Solicitud para cambiar el propietario de la cuenta por `{nombre de la cuenta}` |
+| Cuerpo: | Mensaje corto que incluye el nombre y el título del nuevo propietario de la cuenta |
 
-Use this sample email as a reference:
+Utiliza este correo electrónico de ejemplo como referencia:
 
 ![account_owner_change_email.png](https://files.readme.io/eb10736386a7a8cfc274979a3aa933e23288c74d1b26c0f06d72005ceebafe06-31780969048081.png)
 
-#### #3–Next steps
+#### #2 – Próximos pasos
 
-Once the change has been processed, you'll receive an email notification from AppsFlyer.
+Una vez que se haya procesado el cambio, recibirás una notificación por correo electrónico de AppsFlyer.
 
-* If you want the prior account owner to continue using your AppsFlyer account, [create a new user](/docs/user-management#creating-users) for them and assign them a new role.
-* APIs using token v2 aren't affected by changing the account owner. <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">Learn more about managing tokens</Anchor>.
+* Si deseas que el propietario anterior de la cuenta continúe usando tu cuenta de AppsFlyer, [crea un nuevo usuario](/docs/user-management#creating-users) para él y asígnale un nuevo rol.
+* Las API que usan el token v2 no se ven afectadas por cambiar el propietario de la cuenta. <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">Saber más sobre cómo administrar tokens</Anchor>.
 
 </Accordion>
 
 <div id="troubleshooting-can-t-create-this-user" />
 
-<Accordion title="Troubleshooting: 'Can’t create this user'">
+<Accordion title="Resolución de problemas: No se puede crear este usuario">
 
-If you receive the error message *Can’t create this user* when entering the email address of a new user, it generally means that the email is already associated with an AppsFlyer user (either in your account or a different one). Follow the steps relevant to your situation:
+Si recibes el mensaje de error *No se puede crear este usuario* al ingresar la dirección de correo electrónico de un nuevo usuario, generalmente significa que el correo electrónico ya está asociado con un usuario de AppsFlyer (ya sea en tu cuenta o en uno diferente). Sigue los pasos pertinentes a tu situación:
 
-If the user is in your account:
+Si el usuario está en tu cuenta:
 
-* Check to see if the user has activated their account. If not, [resend the invitation](/docs/user-management#resending-a-user-invitation) if required.
-* If the user has activated their account, ask them to try to log in again using the email address associated with their user. Advise them to follow the **Forgot password** steps if required.
+* Comprueba si el usuario ha activado su cuenta. De lo contrario, [vuelve a enviar la invitación](/docs/user-management#resending-a-user-invitation) si es necesario.
+* Si el usuario ha activado su cuenta, pídele que intente iniciar sesión nuevamente con la dirección de correo electrónico asociada con su usuario. Indícale que siga los pasos de **¿Olvidaste tu contraseña?** si es necesario.
 
-If the user’s email is used in a different account or you can’t determine the account in which the user’s email is used, select one of the following options:
+Si el correo electrónico del usuario se utiliza en una cuenta diferente o no puedes determinar la cuenta en la que se utiliza el correo electrónico del usuario, selecciona una de las siguientes opciones:
 
-* Delete them from the other account and add them to yours (requires that either you or the user has the required permissions in the other account); or
-* Add them to your account using a different email address. This must be a valid email address at which they can actually receive an email; or
-* Contact your Customer Success Manager (CSM) or send an email to our Customer Engagement team at [hello@appsflyer.com](mailto:hello@appsflyer.com).
+* Elimínalo de la otra cuenta y agrégalo a la tuya (es necesario que tengas los permisos requeridos en la otra cuenta); o
+* Agrégalo a tu cuenta con otra dirección de correo electrónico. Debe ser una dirección de correo electrónico válida en la que pueda recibir un correo electrónico; o
+* Contacta con tu Customer Success Manager (CSM) o envía un correo electrónico a nuestro equipo de Engagement con el Cliente a [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
 </Accordion>
 
 <div id="resending-a-user-invitation" />
 
-<Accordion title="Resend a user invitation">
+<Accordion title="Reenviar una invitación a un usuario">
 
-If a new user did not receive their [account activation invitation](#user-activation) or if they did not activate within 48 hours, you can resend the email as follows:
+Si un nuevo usuario no recibió su [invitación de activación de cuenta](#activación-del-usuario) o si no se activó dentro de las 48 horas, puedes volver a enviar el correo electrónico de la siguiente manera:
 
-1. On the **Users** tab, click the **Actions** button <Image alt="actions_icon.png" src="https://files.readme.io/c7dc63f2be01982234448350bf3ad77bb3ce8ec81907755d7474b667602dab68-31780971791249.png" width="25px" /> on the far-right side of the user’s row.
-   * Note that the user is still shown with an envelope icon ![pending_invitation_icon.png](https://files.readme.io/cd556e0b9137fbcfbf4bef574332622ca1e567ac76a041b7f7f3874052b037e6-31780969031825.png), indicating that they have not yet activated their account).
-2. Select **Resend email invite** from the menu.
+1. En la pestaña **Usuarios**, haz clic en el botón **Acciones** <Image alt="actions_icon.png" src="https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png" width="25px" /> en el extremo derecho de la fila del usuario.
+   * Ten en cuenta que el usuario todavía se muestra con un icono de sobre ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png), lo que indica que aún no ha activado su cuenta).
+2. Selecciona **Reenviar invitación por correo electrónico** en el menú.
 
 </Accordion>
 
 <div id="resetting-twofactor-authentication-2fa" />
 
-<Accordion title="Reset a user's two-factor authentication (2FA)">
+<Accordion title="Restablecer la autenticación de dos factores (2FA) de un usuario">
 
-If your account uses 2FA, there may be occasions on which you need to reset a user’s 2FA settings. Do so as follows:
+Si tu cuenta usa 2FA, puede haber ocasiones en las que necesites restablecer la configuración 2FA de un usuario. Hazlo de la siguiente manera:
 
-1. On the **Users** tab, click the **Actions** button <Image alt="actions_icon.png" src="https://files.readme.io/c7dc63f2be01982234448350bf3ad77bb3ce8ec81907755d7474b667602dab68-31780971791249.png" width="25px" /> on the far-right side of the user’s row.
-2. Select **Reset 2FA** from the menu.
+1. En la pestaña **Usuarios**, haz clic en el botón **Acciones** <Image alt="actions_icon.png" src="https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png" width="25px" /> en el extremo derecho de la fila del usuario.
+2. Selecciona **Restablecer 2FA** en el menú.
 
-**Note:** An admin can reset any other admin's 2FA other than their own or the [account owner's](#account-owner). To reset the account owner's 2FA, contact the AppsFlyer Support team.
+**Nota:** Un administrador puede restablecer el 2FA de cualquier otro administrador que no sea la suya o la del [propietario de la cuenta](#propietario-de-la-cuenta). Para restablecer la autenticación de dos factores del propietario de la cuenta, contacta con el equipo de soporte de AppsFlyer.
 
 </Accordion>
 
-<div data-zendesk-anchors="background=overview h_01H9Q9007QP8YMPDVZ57N4M1HD=overview h_01H9Q9007QW1RD3MTTV01Q8QRE=user-management-page h_01J6W88SQ45MA3AZ29K3WMW9PV=users-tab h_01J6W88SQ5B16Q897YMJ7ZNMQX=roles-tab managing-users=manage-users h_01H9Q9007QYSJZYZMP0C8NA98G=manage-users h_01H9Q9007QH3ME2P8PHC9DJBZV=creating-users h_01HMP4EYM562HFSP80MQQ82B47=user-details h_01H9Q9007Q6SK4391P8C3A147N=important h_01HMP4Q56XP10343YFW17VX00W=role h_01HMP4RDXVRM3Z0WDCJD3P2W8S=app-access h_01HMP4SW7RMESGDFNP1KFN7641=data-access h_01HR6VBJHTZM48493B29FCWQT8=note h_01HRPRS4BHX2AMR9W4FNGE0N1P=media-sources 01HRPRSF0F8ENJ9ZAE1ZDTMAMB=note-1 h_01HRPRVXYFX4P2ZG0H5HPNF2AG=geos h_01HFRCWNR8T5J990TV68K6B45T=user-activation h_01HFRFRQXD1RD66EBRQH0T7Q78=note-2 01HFRF6SENRY51A4ZAQJTMTDA3=multiple-accounts h_01J2GN6ZA29SFC12HR4ZVBDFDT=log-in-to-multiple-accounts h_01M2ZBMHB9P3FEAFDA637ZH4MC=note-3 h_01H9Z7XXE0CKRSE191ZN017MGE=supported-accounts-and-users 01J2GMV7ZYV5G0Q6C18RRY1TY0=limitations-on-adding-users-to-multiple-accounts h_01H9G1MP3Z7VCQQ8ZSQDGSWPC3=add-users-to-multiple-accounts h_01H9Q9007RTMXVRMR4RM6J80CW=editing-users h_01H9Q9007R3QW4AYRJBTF0X7B9=individual-editing multiuser-editing=multi-user-editing h_01H9Q9007R4JQPKQS2HVB251GH=multi-user-editing h_01H9Q9007R9M9YDMJ2YYNZDW3D=note-4 h_01H9Q9007RAFXB899YK6CADD9R=example h_01H9Q9007RF8QKS7YBZ1GRXVCF=deleting-users h_01HGTR4NEBYJZTW4BA5V9JJX5X=note-5 h_01HGTK2664A0R2RBJM37EYWNZG=to-delete-users h_01HYASD07FG0HGX22FTHEQ9APP=manage-users-in-bulk-via-api more-about-roles=manage-roles h_01H9Q9007Q8CMR2RD6E4KN26YE=manage-roles h_01H9Q9007Q28D43B6JRP71NDQM=predefined-roles h_01J6VZ7ANV3JHJZ5EVBF1BY585=note-6 h_01H9Q9007QXSGG375PR2SCS7QS=example-1 admin%E2%80%94a-special-role=admin h_01H9Q9007Q4A6KETAAGAWEPQQ9=admin h_01HF8N2Z8ZP3HV06XJPMQ19DTK=access h_01HV1F5S0FE083B73P8MEYX4FM=manage-tokens h_01HF8N6DKWYKMBE35QKKB55KEM=role-duplication h_01HVK8EB3SMC09VD8TJND9YWCD=invite-new-partners-to-appsflyer h_01HF8N69VYE3ZJVFW1ENC0XA62=account-owner h_01H9Q9007QZ7F2TX8B9D1TNYPN=custom-roles h_01H9Q9007QE8YT1DNRPNTFQWYH=temp-roles h_01J6VZ2XP6HM6NJ2TB5DJXD6SA=get-roles-data-via-api managing-custom-roles=manage-custom-roles h_01H9Q9007RQHHNHZ3M38E88YPW=manage-custom-roles h_01H9Q9007RYZD19CFNSM60EARZ=creating-custom-roles h_01H9Q9007R6E6JGD8BC2WY8G3G=editing-custom-roles h_01H9Q9007RANMZP4T6S8R6WA1B=important-1 h_01H9Q9007R16190B6RB884FY61=deleting-custom-roles h_01H9Q9007RSWFVAZQ5DNVNN7T2=special-situations-and-additional-procedures h_01H9Q9007RNZ28128XDB76ZVZC=managing-temp-roles h_01H9Q9007RJ0CQRGEYNEQJ2QR5=temp-role-limitations h_01H9Q9007RHBYD2B6PHQRD7TWV=example-2 h_01H9Q9007RRY6QERXQ0C4FSYCN=dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access h_01K7B3N5G8R2M4X9Y1D6W0T3PQ=combined-media-source-and-agency-access h_01K7B3N7H9S3N5Y0Z2E7X1U4RT=example-3 h_01H9Q9007R221KXA7DFTXJY0PE=changing-the-account-owner h_01H9Q9007RR4M8V599A19B2M0F=important-2 1%E2%80%93send-an-email-request=1assign-a-team-member-the-admin-role h_01H9Q9007RSA5406WXCB1E4JRK=1assign-a-team-member-the-admin-role h_01K5P1G80QACK6YMKX4AGJA5ZK=2send-an-email-request 2%E2%80%93next-steps=3next-steps h_01H9Q9007RZ2X9RAY8067SZETF=3next-steps troubleshooting-can%E2%80%99t-create-this-user=troubleshooting-can-t-create-this-user h_01H9Q9007RR4VYEPGT90MEHV3T=troubleshooting-can-t-create-this-user h_01H9Q9007R11BQWQZC66X5FV0N=resending-a-user-invitation h_01H9Q9007R72FAH89XW58MWCXT=resetting-twofactor-authentication-2fa" />
+<div data-zendesk-anchors="background=descripci%C3%B3n-general h_01H9Q9007QP8YMPDVZ57N4M1HD=descripci%C3%B3n-general user-management-page=p%C3%A1gina-de-administraci%C3%B3n-de-usuarios h_01H9Q9007QW1RD3MTTV01Q8QRE=p%C3%A1gina-de-administraci%C3%B3n-de-usuarios h_01J6W88SQ45MA3AZ29K3WMW9PV=users-tab h_01J6W88SQ5B16Q897YMJ7ZNMQX=roles-tab managing-users=administrar-usuarios h_01H9Q9007QYSJZYZMP0C8NA98G=administrar-usuarios h_01H9Q9007QH3ME2P8PHC9DJBZV=creating-users user-details=detalles-del-usuario h_01HMP4EYM562HFSP80MQQ82B47=detalles-del-usuario h_01H9Q9007Q6SK4391P8C3A147N=importante role=rol h_01HMP4Q56XP10343YFW17VX00W=rol app-access=acceso-a-la-aplicaci%C3%B3n h_01HMP4RDXVRM3Z0WDCJD3P2W8S=acceso-a-la-aplicaci%C3%B3n data-access=acceso-a-datos h_01HMP4SW7RMESGDFNP1KFN7641=acceso-a-datos h_01HR6VBJHTZM48493B29FCWQT8=nota media-sources=fuentes-de-medios h_01HRPRS4BHX2AMR9W4FNGE0N1P=fuentes-de-medios 01HRPRSF0F8ENJ9ZAE1ZDTMAMB=nota-1 geos=geolocalizaciones h_01HRPRVXYFX4P2ZG0H5HPNF2AG=geolocalizaciones user-activation=activaci%C3%B3n-del-usuario h_01HFRCWNR8T5J990TV68K6B45T=activaci%C3%B3n-del-usuario h_01HFRFRQXD1RD66EBRQH0T7Q78=nota-2 01HFRF6SENRY51A4ZAQJTMTDA3=multiple-accounts log-in-to-multiple-accounts=inicia-sesi%C3%B3n-en-varias-cuentas h_01J2GN6ZA29SFC12HR4ZVBDFDT=inicia-sesi%C3%B3n-en-varias-cuentas h_01M2ZBMHB9P3FEAFDA637ZH4MC=nota-3 supported-accounts-and-users=cuentas-y-usuarios-compatibles h_01H9Z7XXE0CKRSE191ZN017MGE=cuentas-y-usuarios-compatibles limitations-on-adding-users-to-multiple-accounts=limitaciones-para-a%C3%B1adir-usuarios-a-m%C3%BAltiples-cuentas 01J2GMV7ZYV5G0Q6C18RRY1TY0=limitaciones-para-a%C3%B1adir-usuarios-a-m%C3%BAltiples-cuentas add-users-to-multiple-accounts=agregar-usuarios-a-varias-cuentas h_01H9G1MP3Z7VCQQ8ZSQDGSWPC3=agregar-usuarios-a-varias-cuentas h_01H9Q9007RTMXVRMR4RM6J80CW=editing-users individual-editing=edici%C3%B3n-individual h_01H9Q9007R3QW4AYRJBTF0X7B9=edici%C3%B3n-individual multiuser-editing=edici%C3%B3n-multiusuario h_01H9Q9007R4JQPKQS2HVB251GH=edici%C3%B3n-multiusuario h_01H9Q9007R9M9YDMJ2YYNZDW3D=nota-4 h_01H9Q9007RAFXB899YK6CADD9R=ejemplo h_01H9Q9007RF8QKS7YBZ1GRXVCF=deleting-users h_01HGTR4NEBYJZTW4BA5V9JJX5X=nota-5 h_01HGTK2664A0R2RBJM37EYWNZG=to-delete-users manage-users-in-bulk-via-api=crea-usuarios-de-forma-masiva-a-trav%C3%A9s-de-la-api h_01HYASD07FG0HGX22FTHEQ9APP=crea-usuarios-de-forma-masiva-a-trav%C3%A9s-de-la-api more-about-roles=gestionar-roles h_01H9Q9007Q8CMR2RD6E4KN26YE=gestionar-roles predefined-roles=roles-predefinidos h_01H9Q9007Q28D43B6JRP71NDQM=roles-predefinidos h_01J6VZ7ANV3JHJZ5EVBF1BY585=nota-6 h_01H9Q9007QXSGG375PR2SCS7QS=ejemplo-1 admin%E2%80%94a-special-role=administrador h_01H9Q9007Q4A6KETAAGAWEPQQ9=administrador access=acceso h_01HF8N2Z8ZP3HV06XJPMQ19DTK=acceso manage-tokens=gestionar-tokens h_01HV1F5S0FE083B73P8MEYX4FM=gestionar-tokens role-duplication=duplicaci%C3%B3n-de-roles h_01HF8N6DKWYKMBE35QKKB55KEM=duplicaci%C3%B3n-de-roles invite-new-partners-to-appsflyer=invita-a-nuevos-partners-a-appsflyer h_01HVK8EB3SMC09VD8TJND9YWCD=invita-a-nuevos-partners-a-appsflyer account-owner=propietario-de-la-cuenta h_01HF8N69VYE3ZJVFW1ENC0XA62=propietario-de-la-cuenta custom-roles=roles-personalizados h_01H9Q9007QZ7F2TX8B9D1TNYPN=roles-personalizados temp-roles=roles-temporales h_01H9Q9007QE8YT1DNRPNTFQWYH=roles-temporales get-roles-data-via-api=obtener-datos-de-roles-a-trav%C3%A9s-de-la-api h_01J6VZ2XP6HM6NJ2TB5DJXD6SA=obtener-datos-de-roles-a-trav%C3%A9s-de-la-api managing-custom-roles=gestionar-roles-personalizados h_01H9Q9007RQHHNHZ3M38E88YPW=gestionar-roles-personalizados h_01H9Q9007RYZD19CFNSM60EARZ=creating-custom-roles h_01H9Q9007R6E6JGD8BC2WY8G3G=editing-custom-roles h_01H9Q9007RANMZP4T6S8R6WA1B=importante-1 h_01H9Q9007R16190B6RB884FY61=deleting-custom-roles special-situations-and-additional-procedures=situaciones-especiales-y-procedimientos-adicionales h_01H9Q9007RSWFVAZQ5DNVNN7T2=situaciones-especiales-y-procedimientos-adicionales h_01H9Q9007RNZ28128XDB76ZVZC=managing-temp-roles temp-role-limitations=limitaciones-de-los-roles-temporales h_01H9Q9007RJ0CQRGEYNEQJ2QR5=limitaciones-de-los-roles-temporales h_01H9Q9007RHBYD2B6PHQRD7TWV=ejemplo-2 h_01H9Q9007RRY6QERXQ0C4FSYCN=dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access h_01K7B3N5G8R2M4X9Y1D6W0T3PQ=combined-media-source-and-agency-access h_01K7B3N7H9S3N5Y0Z2E7X1U4RT=ejemplo-3 h_01H9Q9007R221KXA7DFTXJY0PE=changing-the-account-owner h_01H9Q9007RR4M8V599A19B2M0F=importante-2 1%E2%80%93send-an-email-request=1asigna-a-un-miembro-del-equipo-el-rol-de-admin h_01H9Q9007RSA5406WXCB1E4JRK=1asigna-a-un-miembro-del-equipo-el-rol-de-admin h_01K5P1G80QACK6YMKX4AGJA5ZK=1--env%C3%ADa-una-solicitud-por-correo-electr%C3%B3nico 2%E2%80%93next-steps=2--pr%C3%B3ximos-pasos h_01H9Q9007RZ2X9RAY8067SZETF=2--pr%C3%B3ximos-pasos troubleshooting-can%E2%80%99t-create-this-user=troubleshooting-can-t-create-this-user h_01H9Q9007RR4VYEPGT90MEHV3T=troubleshooting-can-t-create-this-user h_01H9Q9007R11BQWQZC66X5FV0N=resending-a-user-invitation h_01H9Q9007R72FAH89XW58MWCXT=resetting-twofactor-authentication-2fa" />

@@ -1,5 +1,5 @@
 ---
-title: Liftoff campaign configuration in AppsFlyer
+title: Configuración de la campaña de Liftoff en AppsFlyer
 metadata:
   keywords:
     - liftoff
@@ -14,184 +14,183 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-03-28T09:38:23Z'
-  edited_at: '2026-09-09T13:05:34Z'
+  edited_at: '2026-09-11T00:24:01Z'
   id: 209731633
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/209731633-Liftoff-campaign-configuration-in-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/209731633
 ---
-> **At a glance:** Liftoff, an AppsFlyer ad network integrated partner, is one of the top demand partners for brands and app developers. Liftoff offers click-based and view-through mobile attribution, as well as click-based and view-through retargeting which you can record with AppsFlyer.
+> **De un vistazo:** Liftoff, un partner integrado de la ad network de AppsFlyer, es uno de los principales partners de demanda para marcas y desarrolladores de apps. Liftoff ofrece atribución móvil basada en clics y por view-through, así como retargeting basado en clics y por view-through, que puedes registrar con AppsFlyer.
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> Some media sources restrict sharing data with 3rd parties. AppsFlyer can't share user-level data of users acquired through these media sources with 3rd party platforms or services. All installs from such media sources are therefore sent as organic.
+> Algunas fuentes de medios restringen el intercambio de datos con terceros. AppsFlyer no puede compartir datos de nivel de usuario de los usuarios adquiridos a través de estas fuentes de medios con plataformas o servicios de terceros. Por lo tanto, todas las instalaciones de dichas fuentes de medios se envían como orgánicas.
 >
-> For more details and a list of media sources that restrict sharing data with 3rd parties, click <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">here</Anchor>.
+> Para obtener más detalles y una lista de las fuentes de medios que restringen el intercambio de datos con terceros, haz clic <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention">aquí</Anchor>.
 
-## Setting up Liftoff
+## Configuración de Liftoff
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de partners > Marketplace**.  
+   (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de partners > Integraciones activas**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** El selector **debe permanecer activado (active) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The **Integration tab** is divided into different sections as described below.
+La pestaña **Integración** está dividida en diferentes secciones, tal como se describe a continuación.
 
-### Activate partners
+### Activar los partners
 
-The <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner must be activated</Anchor> by switching on the **Activate partner** toggle on the first visit to enable its setup.
+El <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">partner debe activarse</Anchor> al activar el selector **Activar partner** en la primera visita para permitir su configuración.
 
-### General settings
+### Configuración general
 
-**Enable view-through attribution**
+**Habilitar la atribución view-through**
 
-Activate, if you want to attribute view-through installs from Liftoff. The view-through lookback slider is available in the [**Attribution link**](/docs/liftoff-campaign-configuration-in-appsflyer#attribution-link-tab) tab.
+Actívalo si deseas atribuir las instalaciones por view-through de Liftoff. El control deslizante de la ventana retrospectiva por view-through está disponible en la pestaña [**Enlace de atribución**](/docs/liftoff-campaign-configuration-in-appsflyer#attribution-link-tab).
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to Liftoff following user installs, rejected installs, and reengagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a Liftoff después de las instalaciones de los usuarios, las instalaciones rechazadas y los reengagements. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **This partner only** for events coming only from users attributed to Liftoff.  
-Select **All sources, including organic** to have your entire user base available to be reported to Liftoff.
+Selecciona **Solo este partner** para los eventos que provienen solo de usuarios atribuidos a Liftoff.  
+Selecciona **Todas las fuentes, incluidas las orgánicas** para que toda tu base de usuarios esté disponible para ser reportada a Liftoff.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> As an ALL-Installs network, Liftoff prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **All sources, including organic** to send all install postbacks to Liftoff.
+> Como red de TODAS las instalaciones, Liftoff prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluida la orgánica. Para ello, selecciona **Todas las fuentes, incluidas las orgánicas** para enviar todos los postbacks de instalación a Liftoff.
 
-**To configure in-app event postbacks:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Activate **In-app event postbacks**
-2. Choose whether to report **selected events** to the partner or **all** of them.
-   * Note: If you choose to report all events, the af\_app\_opened event is not reported.
-3. If you choose to manually select events, click **Add event** to add an SDK Event to the list.
-4. Fill in the following data:
+1. Activa **Postbacks de eventos in-app**
+2. Elige si quieres reportar **eventos seleccionados** al partner o **todos**.
+   * Nota: Si eliges reportar todos los eventos, no se reporta el evento af\_app\_opened.
+3. Si eliges seleccionar eventos manualmente, haz clic en **Agregar evento** para añadir un evento de SDK a la lista.
+4. Rellena los siguientes datos:
 
-| Parameter name | Description |
+| Nombre del parámetro | Nota |
 | --- | --- |
-| **SDK event name** (required for manual selection only) | The name of the event, as received by AppsFlyer either from the SDK or from server-to-server events.  <br />**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
-| **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to Liftoff.  <br />**All sources, including organic** to have your entire user base available to be reported to the partner |
-| **Send event data** | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
+| **Nombre del evento de SDK** (solo obligatorio para la selección manual) | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK o desde eventos de servidor a servidor.  <br />**Consejo**: si no ves el evento que quieres en la lista, actívalo en un dispositivo con una instalación no orgánica y vuelve a comprobarlo. |
+| **Opción de envío** | Selecciona la opción de envío para el evento:  <br />**Solo este partner** para los eventos que provienen **solo** de usuarios atribuidos a Liftoff.  <br />**Todas las fuentes, incluidas las orgánicas** para que toda tu base de usuarios esté disponible para ser reportada al partner |
+| **Enviar datos de eventos** | <ul><li>**Sin valores ni ingresos:** envía solo el evento en sí sin el valor del evento.</li><li>**Con valores y sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.</li><li>**Con valores e ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento).</li></ul> |
 
-5. Click **Save**.
+5. Haz clic en **Guardar**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes usar un enlace de plataforma única o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Obtén más información sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costes de ad network</Anchor> para obtener todos los detalles sobre las dimensiones, métricas y funciones compatibles. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costes</Anchor> y la última vez que AppsFlyer logró extraer los datos de costes coincidentes en el dashboard de estado de la integración de costes (e ingresos por publicidad) o en el dashboard de la ad network individual.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue data is not supported by this partner.
+Este partner no admite ingresos por publicidad.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Liftoff. Note that even if attribution is disabled for Liftoff, the permissions tab is active and you can grant control to Liftoff.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a Liftoff. Ten en cuenta que, incluso si la atribución está deshabilitada para Liftoff, la pestaña Permisos está activa y puedes otorgarle el control a Liftoff.
 
-### Ad network permissions
+### Permisos de ad network
 
-In this tab, you can select the permissions to grant Liftoff. Note that even if attribution is disabled for Liftoff, the permissions tab is active and you can grant control to liftoff.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a Liftoff. Ten en cuenta que, incluso si la atribución está deshabilitada para Liftoff, la pestaña Permisos está activa y puedes otorgarle el control a liftoff.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-* **Allow to configure integration** - permit the partner to set up the integration tab (except in-app event postbacks)
-* **Allow to configure in-app event postbacks** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* **Allow access to your retention report** - only to the partner's own retention data
-* **Allow access to your aggregate loyal user data** - only to the partner's own loyal user data
-* **Allow access to your aggregate in-app events data** - only to the partner's own in-app events data
-* **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
-* **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* **Permitir la configuración de la integración**: permite que el partner configure la pestaña integración (con excepción de postbacks de eventos in-app).
+* **Permitir la configuración de postbacks de eventos in-app**: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña integración.
+* **Permitir el acceso a tu reporte de retención**: solo para los datos propios de retención del partner.
+* **Permitir acceso a tus datos agregados de usuarios fieles** - solo a los datos agregados de usuarios fieles propios del partner
+* **Permitir acceso a tus datos agregados de eventos in-app** - solo a los datos de eventos in-app propios del partner
+* **Permitir acceso a tus datos agregados de ingresos**: solo para los datos de ingresos atribuidos al partner.
+* **Permitir el acceso a tu dashboard de Protect360**: solo para los datos propios de Protect360 del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
-### Agency permissions
+### Permisos de la agencia
 
-If you work with Liftoff as an agency partner, in this section you can give them permissions to handle their own configuration for your app:
+Si trabajas con Liftoff como partner de agencia, en esta sección puedes otorgarle permisos para gestionar su propia configuración para tu aplicación:
 
-* **Main toggle** - Setting this to **ON**:
+* **Selector principal** - Configurarlo en **ACTIVADO**:
 
-  * Reveals the agency permissions options
-  * Enables the agency to get attributed with installs for the app
-  * Enables the agency to see Meta ads and X Ads promoted data
+  * Revela las opciones de permisos de la agencia.
+  * Permite que la agencia se atribuya las instalaciones de la aplicación.
+  * Permite que la agencia vea los datos promocionados de anuncios de Meta y X Ads
 
-  **Warning: Agency installs occurring while the toggle is OFF are not attributed to the agency** and don't show up on the agency's dashboard and data (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#agency-permissions">more details</Anchor>).
+  **Advertencia: Las instalaciones de la agencia que se produzcan cuando el selector esté DESACTIVADO no se atribuyen a la agencia** y no aparecen en el dashboard ni en los datos de la agencia (<Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#permisos-de-la-agencia">más detalles</Anchor>).
 
-* **Allow access to your Protect360 dashboard**
-* **Allow access to your retention and cohort reports** - retention/cohort data created by the users brought by the agency only.
-* **Allow access to aggregate organic data**
-* **Allow to configure in-app event postbacks** - permit the agency to setup in-app event postbacks mapping to itself on the integration tab
-  * **Event sharing permissions** - select your preferred option here:  
-    a) **This partner only** - send only events from agency's own brought traffic to the app  
-    b) **All sources, including organic** - send events from all sources of your traffic, including other media sources, agencies, and organic users
-  * **Allow to send event revenue** - permit the agency to send events including their monetary value
-  * Make sure to select specific events you want to grant the agency permission to. Click **Add event** and pick the event from the drop-down list. Do this for each event you want to add.
+* **Permitir el acceso a tu panel de control de Protect360**
+* **Permitir el acceso a tus reportes de retención y cohortes** - datos de retención/cohortes creados únicamente por los usuarios traídos por la agencia.
+* **Permitir el acceso a datos agregados orgánicos.**
+* **Permitir la configuración de postbacks de eventos in-app**: permite que la agencia configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña Integración.
+  * **Permisos para compartir eventos** - selecciona aquí la opción que prefieras:  
+    a) **Solo este partner** - envía solo eventos del tráfico que la propia agencia lleve a la aplicación  
+    b) **Todas las fuentes, incluidas las orgánicas** - envía eventos de todas las fuentes de tu tráfico, incluidas otras fuentes de medios, agencias y usuarios orgánicos
+  * **Permitir enviar ingresos de eventos** - permite que la agencia envíe eventos que incluyan su valor monetario
+  * Asegúrate de seleccionar los eventos específicos para los cuales quieres otorgarle permiso a la agencia. Haz clic en **Agregar evento** y elige el evento de la lista desplegable. Haz esto para cada evento que desees agregar.
 
-Learn more about <Anchor target="_blank" href="/partners/docs/about-agency-accounts">working with agencies</Anchor>.
+Saber más sobre <Anchor target="_blank" href="/partners/es/docs/about-agency-accounts">cómo trabajar con agencias</Anchor>.
 
 </Accordion>
 
-## Set up SKAdNetwork integration with Liftoff
+## Configura la integración de SKAdNetwork con Liftoff
 
-**To receive SKAdNetwork data from Liftoff:**
+**Para recibir datos de SKAdNetwork de Liftoff:**
 
-1. <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">To support SKAdNetwork, update your AppsFlyer SDK to the latest version</Anchor>.
-2. In AppsFlyer Conversion Studio, <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#setting-up-conversion-values-in-skan-conversion-studio">set up conversion values to measure the events you want</Anchor>.
-3. Share with Liftoff your campaign goal and the final event you want to optimize your campaigns with. It's recommended that your final event correlates with your preferred event and occurs close to install time.  
-   For example:
-   * **CPA campaigns:** Share the required event and CPA goal to be used for SKAdNetwork campaign optimization.
-   * **CPI campaigns:** Share the CPI goal to be used for SKAdNetwork campaign optimization.
-4. Reach out to your Liftoff Account Team to confirm that SKAdNetwork postbacks are being sent with conversion values.
-5. [Optional] To share SKAdNetwork transaction ID with Liftoff, turn **Share Transaction ID in SKAdNetwork mode** on.  
-   Learn more about <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">transaction ID.</Anchor>
+1. <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">Para dar soporte a SKAdNetwork, actualiza tu SDK de AppsFlyer a la versión más reciente</Anchor>.
+2. En AppsFlyer Conversion Studio, <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#configuración-de-valores-de-conversión-en-skan-conversion-studio">configura los valores de conversión para medir los eventos que quieras</Anchor>.
+3. Comparte con Liftoff el objetivo de tu campaña y el evento final con el que quieres optimizar tus campañas. Se recomienda que tu evento final se correlacione con tu evento preferido y ocurra cerca del momento de la instalación.  
+   Por ejemplo,
+   * **Campañas de CPA:** Comparte el evento requerido y el objetivo de CPA que se usarán para la optimización de campañas de SKAdNetwork.
+   * **Campañas de CPI:** Comparte el objetivo de CPI que se usará para la optimización de campañas de SKAdNetwork.
+4. Ponte en contacto con tu equipo de cuentas de Liftoff para confirmar que los postbacks de SKAdNetwork se están enviando con valores de conversión.
+5. [Opcional] Para compartir el ID de transacción de SKAdNetwork con Liftoff, activa **Compartir ID de transacción en modo SKAdNetwork**.  
+   Saber más sobre el <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">ID de transacción.</Anchor>
 
-## Product feed retargeting with Liftoff
+## Retargeting del feed de productos con Liftoff
 
-For product event attribution to work correctly, Liftoff needs to receive the product IDs associated with each of your events. For example, the IDs of specific products users purchase or add to their cart.
+Para que la atribución de eventos de producto funcione correctamente, Liftoff necesita recibir los ID de los productos asociados a cada uno de tus eventos. Por ejemplo, los ID de productos específicos que los usuarios compran o añaden al carrito.
 
-These IDs must be linked back to the unique IDs you pass to Liftoff within your product feed. Liftoff supports the <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#predefined-event-parameters">standard AppsFlyer convention of sharing this data</Anchor> via af\_content\_id attributes out of the box.
+Estos ID deben vincularse de nuevo con los ID únicos que envías a Liftoff en tu feed de productos. Liftoff es compatible con la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure#parámetros-de-evento-predefinidos">convención estándar de AppsFlyer para compartir estos datos</Anchor> mediante atributos af\_content\_id de forma predeterminada.
 
-If you have a non-standard event data implementation, please reach out to your Liftoff CSM to see if the integration is possible.
+Si tienes una implementación no estándar de datos de eventos, ponte en contacto con tu CSM de Liftoff para ver si la integración es posible.
 
-<div data-zendesk-anchors="h_01HGFR9QYBQ3BK3TM364SJDKWZ=important h_01HGFR9QYBPY2XR4KMWMJKHHMQ=setting-up-liftoff h_01HGFR9QYBJG0WD6X203X8MYFV=integration-tab h_01HGFR9QYBXAQQKPRW1KKF6989=activate-partners h_01HGFR9QYBPCYCJRY20S1TCF6R=general-settings h_01HGFR9QYB8JHTAAB591QQ1P6J=default-postbacks h_01HGFR9QYBW8DFZK63EZ3V5622=note h_01HGFR9QYB42YK8FJD308YWXC7=attribution-link-tab h_01HGFR9QYBJ20T4F0W5486B4NW=cost-tab h_01HGFR9QYBV9ZCGJ1D6BD1T9JG=ad-revenue-tab h_01HGFR9QYB9DA5XYXPEARZSCHF=permissions-tab h_01HGFR9QYB0VCPG7YCX64BBKY9=ad-network-permissions h_01HGFR9QYBR3W0JXY7MHQ8PZT7=agency-permissions h_01HGFR9QYBG4830DKGMGV716B7=set-up-skadnetwork-integration-with-liftoff h_01HGFR9QYB302DVBYXMK0XY4ED=product-feed-retargeting-with-liftoff" />
+<div data-zendesk-anchors="h_01HGFR9QYBQ3BK3TM364SJDKWZ=importante setting-up-liftoff=configuraci%C3%B3n-de-liftoff h_01HGFR9QYBPY2XR4KMWMJKHHMQ=configuraci%C3%B3n-de-liftoff h_01HGFR9QYBJG0WD6X203X8MYFV=integration-tab activate-partners=activar-los-partners h_01HGFR9QYBXAQQKPRW1KKF6989=activar-los-partners general-settings=configuraci%C3%B3n-general h_01HGFR9QYBPCYCJRY20S1TCF6R=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HGFR9QYB8JHTAAB591QQ1P6J=postbacks-predeterminados h_01HGFR9QYBW8DFZK63EZ3V5622=nota h_01HGFR9QYB42YK8FJD308YWXC7=attribution-link-tab h_01HGFR9QYBJ20T4F0W5486B4NW=cost-tab h_01HGFR9QYBV9ZCGJ1D6BD1T9JG=ad-revenue-tab h_01HGFR9QYB9DA5XYXPEARZSCHF=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HGFR9QYB0VCPG7YCX64BBKY9=permisos-de-ad-network agency-permissions=permisos-de-la-agencia h_01HGFR9QYBR3W0JXY7MHQ8PZT7=permisos-de-la-agencia set-up-skadnetwork-integration-with-liftoff=configura-la-integraci%C3%B3n-de-skadnetwork-con-liftoff h_01HGFR9QYBG4830DKGMGV716B7=configura-la-integraci%C3%B3n-de-skadnetwork-con-liftoff product-feed-retargeting-with-liftoff=retargeting-del-feed-de-productos-con-liftoff h_01HGFR9QYB302DVBYXMK0XY4ED=retargeting-del-feed-de-productos-con-liftoff" />

@@ -1,5 +1,5 @@
 ---
-title: Basic SDK integration guide
+title: Guía básica de integración del SDK
 metadata:
   keywords:
     - sdk
@@ -20,93 +20,92 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2013-08-22T16:09:08Z'
-  edited_at: '2026-08-13T12:39:14Z'
+  edited_at: '2026-08-22T00:15:00Z'
   id: 207032066
-  locale: en-us
+  locale: es
   section: SDK integration planning
   section_id: 6551182964369
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207032066-Basic-SDK-integration-guide
+  url: https://support.appsflyer.com/hc/es/articles/207032066
 ---
-> **At a glance:** Work with your mobile or CTV app developer to integrate and install the SDK into Android or iOS apps. Once basic integration tasks are complete, your app is ready for install attribution and in-app event measurement.
+> **At a glance:** Colabora con tu desarrollador de aplicaciones móviles o CTV para integrar e instalar el SDK en aplicaciones de Android o iOS. Cuando las tareas básicas de integración estén completas, tu aplicación estará lista para la atribución de instalaciones y la medición de eventos in-app.
 
-## **Implementing the dev key in your app**
+## **Implementación de la clave de desarrollo en tu aplicación**
 
-AppsFlyer uses the dev key to uniquely identify your account. The dev key is mandatory because it allows the SDK to securely send and retrieve data that belongs to your account. Your developer should install and integrate the SDK, and embed the dev key.
+AppsFlyer utiliza la clave de desarrollo para identificar de manera única tu cuenta. La clave de desarrollo es esencial porque permite que el SDK envíe y recupere datos de forma segura, pertenecientes a tu cuenta. Tu desarrollador debe instalar e integrar el SDK, e incluir la clave de desarrollo.
 
-#### Retrieve the dev key
+#### Recuperar la clave de desarrollo
 
-Before your developer can install and integrate the SDK, you must retrieve the dev key.
+Antes de que tu desarrollador pueda instalar e integrar el SDK, debes recuperar la clave de desarrollo.
 
-1. In AppsFlyer, from the side menu, select **Settings** > **App Settings** > **Dev Key Management**.
-2. Copy your dev key, and send it to your mobile developer.
+1. En AppsFlyer, desde el menú lateral, elige **Configuración** > **Configuración de la aplicación**.
+2. Copia tu clave de desarrollo y envíala a tu desarrollador móvil.
 
    ![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
 
-#### Provide the Dev key to your developer
+#### Proporciona la clave de desarrollo a tu desarrollador
 
-Provide the Dev Key, App ID, and AppsFlyer API v2 token to your mobile developer with instructions to:
+Proporciona la clave de desarrollo, el ID de la aplicación y el token de la API v2 de AppsFlyer a tu desarrollador móvil con instrucciones para:
 
-* Use the <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration">SDK integration wizard</Anchor> for automated SDK installation and integration.
-* Use the step-by-step instructions to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">install</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">integrate the SDK</Anchor>.
+* Utiliza el asistente de integración de SDK para la instalación e integración automatizada del SDK.
+* Utiliza las instrucciones paso a paso para instalar e integrar el SDK.
 
-## **Where to start the SDK?**
+## **¿Dónde iniciar el SDK?**
 
-When planning the integration of the AppsFlyer SDK, the first decision you must make is where to initialize and start the SDK within your application launch flow.
+Al planificar la integración del SDK de AppsFlyer, la primera decisión que debes tomar es dónde inicializar e iniciar el SDK dentro del flujo de inicio de tu aplicación.
 
-The basic rule of thumb is to have the SDK start sending data as soon as possible after launching the application. **This ensures that the SDK captures the install event and all other in-app events occurring in the session.**
+La regla general es que el SDK comience a enviar datos tan pronto como sea posible después de iniciar la aplicación. **Esto asegura que el SDK capture el evento de instalación y todos los demás eventos in-app que se produzcan durante la sesión.**
 
-However, to comply with privacy-preserving regulations such as GDPR and CCPA, it is often necessary to delay sending data to AppsFlyer until users consent to share their information.
+No obstante, para cumplir con las normativas de protección de la privacidad, como GDPR y CCPA, a menudo es necesario retrasar el envío de datos a AppsFlyer hasta que los usuarios consientan compartir su información.
 
 <Tabs>
-<Tab title="Android native">
+<Tab title="Android nativo">
 
-### Starting the SDK in Android native
+### Iniciando el SDK en Android nativo
 
-#### SELECT IN WHAT CLASS TO START THE SDK
+#### SELECCIONA EN QUÉ CLASE INICIAR EL SDK
 
-Select whether to start the SDK in the global `Application` class or the `Activity` class:
+Decide si quieres iniciar el SDK en la clase global `Application` o en la clase `Activity`:
 
-* **Start the SDK in the global** `Application` **class:** Generally, initializing the SDK in the global `Application` class/subclass is a good practice because the `Application` class is loaded and initialized before any app UI is displayed. This ensures that the SDK can start in any scenario, including deep linking.
-* **Start the SDK in an** `Activity` **class (deferred start)** to allow users to opt-in to data sharing. This is because obtaining user consent requires a user interface (UI) rendered in an `Activity` class.
+* **Inicia el SDK en la clase global** `Application`: Inicializar el SDK en la clase/subclase global `Application` es, generalmente, una buena práctica, ya que la clase `Application` se carga e inicializa antes de que cualquier interfaz de usuario de la aplicación se muestre. Esto asegura que el SDK pueda iniciarse en cualquier situación, incluso con enlaces profundos.
+* **Inicia el SDK en una clase** (inicio diferido)** para permitir que los usuarios opten por compartir datos. Esto se debe a que para obtener el consentimiento del usuario es necesaria una interfaz de usuario (UI) en una clase `Activity`.**
 
-#### ANDROID DEVELOPER INSTRUCTIONS
+#### INSTRUCCIONES PARA DESARROLLADORES DE ANDROID
 
-* Inform the developer of your decision on the following:
-  * In what class - `Application` or `Activity` - to start the SDK?
-  * Which opt-in/opt-out scenario to use?
-* Send your developer the following reference link:
-  * [How to perform deferred start](https://dev.appsflyer.com/hc/docs/integrate-android-sdk#starting-the-android-sdk)
+* Informa al desarrollador sobre tu decisión respecto a lo siguiente:
+  * ¿En qué clase - `Application` o `Activity` - iniciar el SDK?
+  * ¿Qué escenario de inclusión/exclusión voluntaria utilizar?
+* Envía al desarrollador el siguiente enlace de referencia:
+  * [Cómo realizar un inicio diferido](https://dev.appsflyer.com/hc/docs/integrate-android-sdk#starting-the-android-sdk)
 
 </Tab>
 
-<Tab title="iOS native">
+<Tab title="iOS nativo">
 
 <div id="starting-the-sdk-in-ios" />
 
-### Starting the SDK in iOS native
+### Cómo iniciar el SDK en iOS nativo
 
 <div id="delay-the-sdk-start-in-ios" />
 
-#### DELAY THE SDK START IN IOS
+#### RETRASAR EL INICIO DEL SDK EN IOS
 
-An important consideration when planning how to start the SDK is whether to delay `start` until user consent is granted.
+Una consideración importante al planificar cómo iniciar el SDK es si conviene retrasar `start` hasta que se otorgue el consentimiento del usuario.
 
-The SDK provides the `waitForATTUserAuthorization` method, which enables you to **configure how long the SDK should wait for user consent before sending data to the AppsFlyer servers**.
+El SDK proporciona el `waitForATTUserAuthorization` método, que te permite **configurar cuánto tiempo debe esperar el SDK para obtener el consentimiento del usuario antes de enviar datos a los servidores de AppsFlyer**.
 
-For more information on the method data flow and its interaction with the iOS ATT framework, see the [Configure App Tracking Transparency (ATT) support](/docs/basic-sdk-integration-guide#waitforattuserauthorization-overview) section.
+Para obtener más información sobre el flujo de datos del método y su interacción con el marco ATT de iOS, consulta la sección [Configurar el soporte de App Tracking Transparency (ATT)](/docs/basic-sdk-integration-guide#vista-general-de-waitforattuserauthorization) .
 
 <div id="ios-developer-instructions" />
 
-#### IOS DEVELOPER INSTRUCTIONS
+#### INSTRUCCIONES PARA DESARROLLADORES DE IOS
 
-Share with your developer the following information:
+Comparte la siguiente información con tu desarrollador:
 
-* How long in seconds is the timeout before sending data to AppsFlyer?
-* Developer Links:
-  * [Starting the iOS SDK](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#starting-the-ios-sdk) for developer guide and reference on how to start the SDK.
-  * [Configure App Tracking Transparency (ATT) support](/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support) for information on the `waitForATTUserAuthorization` method data flow and how it interacts with the iOS ATT framework
-  * [Enabling App Tracking Transparency (ATT) support](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#enabling-app-tracking-transparency-att-support) for developer guide and reference on `waitForATTUserAuthorization`
+* ¿Cuánto tiempo en segundos es el tiempo de espera antes de enviar datos a AppsFlyer?
+* Enlaces para desarrolladores:
+  * [Inicio del SDK para iOS](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#starting-the-ios-sdk) para la guía para desarrolladores y referencia sobre cómo iniciar el SDK.
+  * [Configurar el soporte de App Tracking Transparency (ATT)](/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support) para obtener información sobre el `waitForATTUserAuthorization` flujo de datos del método y cómo interactúa con el marco de ATT de iOS
+  * [Habilitación del soporte de App Tracking Transparency (ATT)](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#enabling-app-tracking-transparency-att-support) para la guía para desarrolladores y la referencia sobre `waitForATTUserAuthorization`
 
 </Tab>
 
@@ -114,9 +113,9 @@ Share with your developer the following information:
 
 <div id="starting-the-sdk-in-Unity" />
 
-### Starting the SDK in Unity
+### Cómo iniciar el SDK en Unity
 
-Send your developer <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#manual-integration">this Dev Hub article</Anchor> on how to start the SDK.
+Envía <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#manual-integration">este artículo del Dev Hub</Anchor> a tu desarrollador sobre cómo iniciar el SDK.
 
 </Tab>
 
@@ -124,76 +123,76 @@ Send your developer <Anchor target="_blank" href="https://dev.appsflyer.com/hc/d
 
 <div id="starting-the-sdk-in-react" />
 
-### Starting the SDK in React Native
+### Cómo iniciar el SDK en React Native
 
-Send your developer <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#startsdk">this Dev Hub article</Anchor> on how to start the SDK.
+Envía a tu desarrollador <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#startsdk">este artículo del Dev Hub</Anchor> sobre cómo iniciar el SDK.
 
 </Tab>
 </Tabs>
 
-## Select your privacy preserving strategy
+## Elige tu estrategia de preservación de la privacidad
 
-Select **how to preserve user privacy.** For example, select between stopping the SDK at installation, preventing data sharing with third parties, anonymizing user data or disabling specific identifiers.
+Selecciona **cómo preservar la privacidad del usuario.** Por ejemplo, elige entre detener el SDK durante la instalación, evitar el intercambio de datos con terceros, anonimizar los datos del usuario o desactivar identificadores específicos.
 
-For more information on the different privacy-preserving methods available, see <Anchor target="_blank" href="/marketers/docs/apply-privacy-preserving-sdk-methods">Privacy preserving methods in the SDK</Anchor>.
+Para más información sobre los diferentes métodos de protección de privacidad disponibles, consulta <Anchor target="_blank" href="/marketers/es/docs/apply-privacy-preserving-sdk-methods">Métodos de preservación de la privacidad en el SDK</Anchor>.
 
-## **Attribution**
+## **Atribución**
 
-The SDK collects <Anchor target="_blank" href="/marketers/docs/about-device-identifiers">identifiers</Anchor> for attribution purposes. To ensure that installs are recorded and attributed correctly, review and follow these guidelines.
+El SDK recopila <Anchor target="_blank" href="/marketers/es/docs/about-device-identifiers">identificadores</Anchor> con el propósito de atribución. Para asegurar que las instalaciones se registren y atribuyan correctamente, revisa y sigue estas pautas.
 
-**All platforms**
+**Todas las plataformas**
 
-<Accordion title="Unique identifier for installs">
+<Accordion title="Identificador único para instalaciones">
 
-An AppsFlyer ID is automatically created for every new app install. No action is required by the marketer.
+Un ID de AppsFlyer se crea automáticamente para cada nueva instalación de la aplicación. No se requiere ninguna acción por parte del responsable de marketing.
 
-You can use this identifier to perform the following actions:
+Puedes utilizar este identificador para realizar las siguientes acciones:
 
-* Send <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">server-to-server in-app events</Anchor>.
-* Match the AppsFlyer ID with user records in your backend systems.
-* Download the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data in-app event report</Anchor> and use **appsflyer\_id** to analyze user behavior and journeys.
-
-</Accordion>
-
-<Accordion title="Integrate unique identifiers from your BI system with AppsFlyer">
-
-Set your own Customer user ID (CUID) in the AppsFlyer SDK to cross-reference the unique ID from your BI system with the AppsFlyer ID and other identifiers. The CUID is available in AppsFlyer <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data</Anchor> reports. You can also use it in postback APIs for cross-referencing with your internal IDs.
-
-To learn more about CUID, see <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">this article.</Anchor>
+* Enviar <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile">eventos in-app de servidor a servidor</Anchor>.
+* Vincular el ID de AppsFlyer con los registros de usuarios en tus sistemas de backend.
+* Descargar el <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">reporte de eventos in-app con raw data</Anchor> y usar **appsflyer\_id** para analizar el comportamiento y el viaje de los usuarios.
 
 </Accordion>
 
-**Android only**
+<Accordion title="Integrar identificadores únicos de ttu sistema de BI con AppsFlyer">
 
-The following sections describe attribution considerations for Google Play Store or third-party app stores.
+Configura tu propio ID de usuario de cliente (CUID) en el SDK de AppsFlyer para cruzar el ID único de tu sistema de BI con el ID de AppsFlyer y otros identificadores. El CUID está disponible en los reportes de <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">raw data</Anchor> de AppsFlyer. También puedes usarlo en las APIs de postback para realizar referencias cruzadas con tus IDs internas.
 
-<Accordion title="Attribute apps published on Google Play">
-
-#### GOOGLE PLAY INSTALL REFERRER
-
-The [Google Play Install Referrer API](https://developer.android.com/google/play/installreferrer) improves <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#attribution-methods">attribution</Anchor> accuracy, protects from install fraud, and allows secure retrieval of referral data from Google Play (for example, the app's version at the time when the app was first installed).
-
-It is recommended that you provide your developer with [instructions to add the Google Play Install Referrer API](https://developer.android.com/google/play/installreferrer/library).
-
-#### GAID
-
-Starting with SDK V4.8.0, AppsFlyer automatically collects this device identifier.
+Para aprender más sobre CUID, consulta <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">este artículo</Anchor>.
 
 </Accordion>
 
-<Accordion title="Attribute apps in third-party app stores">
+**Solo para Android**
 
-With AppsFlyer, you can <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">attribute installs originating from third-party app stores</Anchor>, such as Amazon, Opera, GetJar, Baidu, and Huawei. This allows you to promote your apps and reach larger audiences in markets where the Google Play Store is not available.
+Las siguientes secciones describen consideraciones de atribución para Google Play Store o tiendas de aplicaciones de terceros.
 
-AppsFlyer supports attribution in the context of third-party app stores as follows:
+<Accordion title="Atribuir aplicaciones publicadas en Google Play">
 
-* **IMEI or Android ID:** The SDK doesn't automatically collect the IMEI or Android ID. However, if there is a need to collect these identifiers (for example, for <Anchor target="_blank" href="/marketers/docs/measure-attribution-in-the-chinese-domestic-market#attribution-android-apps-in-the-chinese-domestic-market">apps in the Chinese domestic market</Anchor>) your developer can implement one of the following collection types:
-  * Manual collection: The app passes the IMEI or Android ID to the SDK using the `setImeiData` or `setAndroidIdData` API (see function reference in the tabs below). The SDK sends the data to AppsFlyer servers.
+#### REFERENCIA DE INSTALACIÓN DE GOOGLE PLAY
+
+La [API de Google Play Install Referrer](https://developer.android.com/google/play/installreferrer) mejora la precisión de la <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#métodos-de-atribución">atribución</Anchor>, protege contra el fraude de instalación, y permite la recuperación segura de datos de referencia de Google Play (por ejemplo, la versión de la aplicación en el momento de su instalación inicial).
+
+Se recomienda que proporciones a tu desarrollador [instrucciones para agregar la API de Google Play Install Referrer](https://developer.android.com/google/play/installreferrer/library).
+
+#### GNA Company
+
+A partir del SDK V4.8.0, AppsFlyer recopila automáticamente este identificador de dispositivo.
+
+</Accordion>
+
+<Accordion title="Atribuir aplicaciones en tiendas de aplicaciones de terceros">
+
+Con AppsFlyer, puedes <Anchor target="_blank" href="/marketers/es/docs/set-up-multi-store-android-attribution">atribuir instalaciones que se originan en tiendas de aplicaciones de terceros</Anchor>, como Amazon, Opera, GetJar, Baidu, y Huawei. Esto te permite promocionar tus aplicaciones y alcanzar audiencias más amplias en mercados donde Google Play Store no está disponible.
+
+AppsFlyer admite la atribución en el contexto de tiendas de aplicaciones de terceros de la siguiente manera:
+
+* **IMEI o ID de Android:** El SDK no recopila automáticamente ni el IMEI ni el ID de Android. Sin embargo, si es necesario recopilar estos identificadores (por ejemplo, para <Anchor target="_blank" href="/marketers/es/docs/measure-attribution-in-the-chinese-domestic-market#atribución-de-aplicaciones-android-en-el-mercado-nacional-chino">aplicaciones en el mercado local chino</Anchor>), tu desarrollador puede implementar uno de los siguientes métodos de recopilación:
+  * Recopilación manual: La aplicación transfiere el IMEI o el ID de Android al SDK utilizando la API `setImeiData` o `setAndroidIdData` (mira la referencia de funciones en las pestañas a continuación). El SDK envía los datos a los servidores de AppsFlyer.
 
     <Tabs>
-    <Tab title="Android native">
+    <Tab title="Android nativo">
 
-    See the Android SDK reference for:
+    Consulta la referencia del SDK de Android para:
 
     * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setimeidata">`setImeiData`</Anchor>
     * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setandroididdata">`setAndroidIdData`</Anchor>
@@ -202,7 +201,7 @@ AppsFlyer supports attribution in the context of third-party app stores as follo
 
     <Tab title="Unity">
 
-    See the Unity SDK reference for:
+    Consulta la referencia del SDK de Unity para:
 
     * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setimeidata">`setImeiData`</Anchor>
     * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setandroididdata">`setAndroidIdData`</Anchor>
@@ -210,12 +209,12 @@ AppsFlyer supports attribution in the context of third-party app stores as follo
     </Tab>
     </Tabs>
 
-  * Opt-in to device ID collection: Forces the SDK to collect the IMEI or Android ID using setCollectIMEI and setCollectAndroidID (see function reference in the tabs below).
+  * Participar en la recopilación de ID de dispositivo: Obliga al SDK a recopilar el IMEI o ID de Android mediante setCollectIMEI y setCollectAndroidID (mira la referencia de funciones en las pestañas a continuación).
 
     <Tabs>
-    <Tab title="Android native">
+    <Tab title="Android nativo">
 
-    See the Android SDK reference for:
+    Consulta la referencia del SDK de Android para:
 
     * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectimei">`setCollectIMEI`</Anchor>
     * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectandroidid">`setCollectAndroidID`</Anchor>
@@ -224,7 +223,7 @@ AppsFlyer supports attribution in the context of third-party app stores as follo
 
     <Tab title="Unity">
 
-    See the Unity SDK reference for:
+    Consulta la referencia del SDK de Unity para:
 
     * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setcollectimei">`setCollectIMEI`</Anchor>
     * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setcollectandroidid">`setCollectAndroidID`</Anchor>
@@ -233,7 +232,7 @@ AppsFlyer supports attribution in the context of third-party app stores as follo
 
     <Tab title="React Native">
 
-    See the React Native reference for:
+    Consulta la referencia de React Native para:
 
     * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#setcollectimei">`setCollectIMEI`</Anchor>
     * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#setcollectandroidid">`setCollectAndroidID`</Anchor>
@@ -241,271 +240,271 @@ AppsFlyer supports attribution in the context of third-party app stores as follo
     </Tab>
     </Tabs>
 
-* **OAID:** Attributes installs from third-party Android app stores. For more information, see the <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">guide to implementing OAID</Anchor>.
-* **Install referrers:** The SDK supports retrieval of referral data from Samsung Gallery and Huawei AppGallery.
+* **OAID:** Atribuye instalaciones desde tiendas de aplicaciones Android de terceros. Para más información, lee la <Anchor target="_blank" href="/marketers/es/docs/android-oaid-implementation-in-the-sdk">guía para implementar OAID</Anchor>.
+* **Referencias de instalación:** El SDK soporta la recuperación de datos de referencia de Samsung Gallery y Huawei AppGallery.
 
 </Accordion>
 
-**iOS only**
+**Sólo iOS**
 
-The following sections include important information about support for iOS 14+ devices.
+Las siguientes secciones incluyen información esencial sobre el soporte para dispositivos iOS 14+.
 
-<Accordion title="Configure App Tracking Transparency (ATT) support">
+<Accordion title="Configurar el soporte para App Tracking Transparency (ATT)">
 
-**BACKGROUND**
+**ANTECEDENTES**
 
-Starting with iOS 14.5, IDFA collection requires user consent. Practically, it means IDFA access is governed by the [**App Tracking Transparency**](https://developer.apple.com/documentation/apptrackingtransparency) (ATT) framework. On iOS 14+ devices, the SDK uses the ATT framework to obtain access to the device IDFA. For an introduction to ATT, see <Anchor target="_blank" href="/marketers/docs/about-att-and-skan#att-principles">ATT principles</Anchor>.
+Desde iOS 14.5, la recopilación del IDFA requiere el consentimiento del usuario. En la práctica, esto significa que el acceso al IDFA está regulado por el framework de [**App Tracking Transparency**](https://developer.apple.com/documentation/apptrackingtransparency) (ATT). En dispositivos iOS 14+, el SDK utiliza el framework de la ATT para acceder al IDFA del dispositivo. Para una introducción a la ATT, lee los <Anchor target="_blank" href="/marketers/es/docs/about-att-and-skan#att-principles">principios de la ATT</Anchor>.
 
 <Tabs>
-<Tab title="iOS native">
+<Tab title="iOS nativo">
 
-See the Dev Hub for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#enabling-app-tracking-transparency-att-support">developer instructions for implementing ATT</Anchor>.
+Consulta el Centro de Desarrollo para <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#enabling-app-tracking-transparency-att-support">instrucciones sobre cómo implementar la ATT</Anchor>.
 
 </Tab>
 
 <Tab title="Unity">
 
-See the Dev Hub for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#collect-idfa-with-attrackingmanager">developer instructions for implementing ATT</Anchor>.
+Consulta el Centro de Desarrollo para <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#collect-idfa-with-attrackingmanager">instrucciones sobre cómo implementar la ATT</Anchor>.
 
 </Tab>
 </Tabs>
 
-When attribution occurs using IDFA, it's important IDFA is sent on the **first launch.** For this reason, the SDK provides the `waitForATTUserAuthorization` method.
+Cuando la atribución se realiza utilizando IDFA, es crucial que el IDFA se envíe en el **primer lanzamiento. `waitForATTUserAuthorization`Por esta razón, el SDK ofrece el método `waitForATTUserAuthorization`.**
 
-#### waitForATTUserAuthorization overview
+#### Vista general de waitForATTUserAuthorization
 
 > 🚧 **Important**
 >
-> Don't call waitForATTUserAuthorization if you don't intend to invoke the ATT prompt.
+> No llames a waitForATTUserAuthorization si no tienes la intención de invocar el aviso de la ATT.
 
-`waitForATTUserAuthorization` enables you to configure how long the SDK should defer and wait for ATT status before sending data to the AppsFlyer servers.
+`waitForATTUserAuthorization` te permite configurar el tiempo que el SDK debe posponer y esperar el estado de la ATT antes de enviar datos a los servidores de AppsFlyer.
 
 ![](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)
 
-When a user launches the app, ATT status is **notDetermined.** During the `waitForATTUserAuthorization` timeout, the SDK queues the launch event and consecutive in-app events in-memory, similar to the way in which [offline events are recorded](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#offline-in-app-events):
+Cuando un usuario abre la aplicación, el estado de la ATT es **notDetermined.** Durante el período de espera `waitForATTUserAuthorization`, el SDK almacena en memoria el evento de inicio y los eventos consecutivos in-app, de manera similar a como se registran los [eventos offline](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#offline-in-app-events):
 
-* If the user **consents** to the ATT prompt (IDFA collection):
-  * The SDK adds the IDFA to cached events.
-  * The SDK starts and sends cached events with IDFA (without waiting for the timeout to end).
-* If the user **declines** the ATT prompt: The SDK starts and sends cached events without IDFA (without waiting for the timeout to end).
-* If the timeout ends and ATT status remains **notDetermined:** The SDK starts and sends cached events without IDFA.
+* Si el usuario **acepta** la solicitud de la ATT (recopilación de IDFA):
+  * El SDK añade el IDFA a los eventos en caché.
+  * El SDK se activa y envía eventos con IDFA sin esperar a que finalice el tiempo de espera.
+* Si el usuario **rechaza** la solicitud de la ATT: El SDK se activa y envía eventos en caché sin IDFA sin esperar a que finalice el tiempo de espera.
+* Si el período de espera finaliza y el estado de la ATT sigue siendo **notDetermined:** El SDK se activa y envía eventos en caché sin IDFA.
 
-**Considerations**
+**Consideraciones**
 
-* Calling [`requestTrackingAuthorization`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorization) without setting `waitForATTUserAuthorization` will result in launches and events being sent without IDFA for iOS 14+ devices.
-* If the user moves the app to the background during the timeout:
-  * The timer pauses until the app returns to the foreground.
-  * Events are cached in-memory.
-* If the user shuts down the app, it is killed during the timeout:
-  * The timer is restarted on the next app launch.
-  * Cached events are lost.
+* Llamar a [`requestTrackingAuthorization`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorization) sin configurar `waitForATTUserAuthorization` resultará en el envío de inicios y eventos sin IDFA para dispositivos iOS 14+.
+* Si el usuario coloca la aplicación en segundo plano durante el período de espera:
+  * El temporizador se pausa hasta que la aplicación regresa al primer plano.
+  * Los eventos se almacenan en memoria.
+* Si el usuario cierra la aplicación durante el período de espera:
+  * El temporizador se reinicia en el siguiente inicio de la aplicación.
+  * Se pierden los eventos en caché.
 
 </Accordion>
 
-<Accordion title="Customize ATT consent dialog">
+<Accordion title="Personalizar el diálogo de consentimiento de ATT">
 
-You can customize the ATT prompt. A message that clearly states the purpose of the request could help increase the opt-in rates for users.
+Puedes personalizar el mensaje de la solicitud ATT. Un mensaje que explique claramente el propósito de la solicitud podría ayudar a aumentar las tasas de opt-in por parte de los usuarios.
 
-Consider the following when creating your message:
+Ten en cuenta lo siguiente al crear tu mensaje:
 
-* Use wording that best explains to your users why the app is asking for user consent.
-* Inform users about how their data will be used. [Learn more about user privacy and data use.](https://developer.apple.com/app-store/user-privacy-and-data-use/)
+* Usa una redacción que explique claramente a tus usuarios por qué la aplicación solicita su consentimiento.
+* Informa a los usuarios sobre cómo se utilizarán sus datos. [Infórmate más sobre la privacidad del usuario y el uso de datos.](https://developer.apple.com/app-store/user-privacy-and-data-use/)
 
-Once your message is complete, provide your developer with the text and implementation instructions.
+Una vez que tu mensaje esté terminado, proporciona a tu desarrollador el texto y las instrucciones de implementación.
 
 <Tabs>
-<Tab title="iOS native">
+<Tab title="iOS nativo">
 
-See the Dev Hub for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#customizing-the-att-consent-dialog">developer instructions for customizing the ATT consent dialog</Anchor>.
+Consulta el Hub de Desarrolladores para <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#customizing-the-att-consent-dialog">instrucciones sobre cómo personalizar el diálogo de consentimiento de la ATT</Anchor>.
 
 </Tab>
 
 <Tab title="Unity">
 
-See the Dev Hub for [developer instructions for customizing the ATT consent dialog](https://dev.appsflyer.com/hc/docs/basicintegration#collect-idfa-with-attrackingmanager).
+Consulta el Hub de Desarrolladores para [instrucciones sobre cómo personalizar el diálogo de consentimiento de la ATT](https://dev.appsflyer.com/hc/docs/basicintegration#collect-idfa-with-attrackingmanager).
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-<Accordion title="Support for SKAN attribution">
+<Accordion title="Soporte para la atribución SKAN">
 
 > 📘 **Note**
 >
-> To fully support SKAN attribution, upgrade to iOS SDK V6.2.3+.
+> Para admitir completamente la atribución SKAN, actualiza a iOS SDK V6.2.3+.
 
-SKAN is a class used by iOS to validate advertiser-driven app installations. The app install validation process involves the source app and the advertised app.
+SKAN es una clase utilizada por iOS para validar instalaciones de aplicaciones promovidas por anunciantes. El proceso de validación de instalación de la aplicación involucra tanto la aplicación fuente como la aplicación anunciada.
 
-A source app is an app that participates in ad campaigns by displaying ads from an ad network. Configuring your app to display ads is not within the scope of the AppsFlyer SDK. To configure, follow the [Apple instructions](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_a_source_app).
+Una aplicación fuente es aquella que participa en campañas publicitarias mostrando anuncios de una ad network. La configuración de tu aplicación para mostrar anuncios no está cubierta por el SDK de AppsFlyer. Para configurarla, sigue las [instrucciones de Apple](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_a_source_app).
 
-For the advertised app (the app with the AppsFlyer SDK), the AppsFlyer <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAN solution</Anchor> uses SKAN to provide the attribution postback while AppsFlyer collects, translates, and aggregates the data while maintaining user privacy. When the app is launched for the first time, the AppsFlyer platform uses the configuration set by the marketer to instruct the SDK on how to set the SKAN conversion value.
+Para la aplicación anunciada (la que incorpora el SDK de AppsFlyer), la <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">solución SKAN</Anchor> de AppsFlyer utiliza SKAN para proporcionar la atribución mientras AppsFlyer recopila, traduce y agrega los datos, protegiendo la privacidad del usuario. Cuando la aplicación se inicia por primera vez, la plataforma de AppsFlyer utiliza la configuración establecida por el marketer para indicar al SDK cómo establecer el valor de conversión de SKAN.
 
-To use the SKAN solution:
+Para emplear la solución SKAN:
 
-* The marketer needs to configure SKAN measurement in AppsFlyer. The developer does not have to perform any tasks.
-* The AppsFlyer SDK automatically calls the necessary SKAN APIs.
-* Make sure to disable SKAN calls in other SDKs if you rely on AppsFlyer for SKAN attribution.
-* There is no other action or registration process required by either the developer or the marketer in the App Store.
+* El marketer debe configurar la medición SKAN en AppsFlyer. El desarrollador no tiene que llevar a cabo ninguna tarea.
+* El SDK de AppsFlyer llama automáticamente a las APIs de SKAN necesarias.
+* Asegúrate de deshabilitar las llamadas al SKAN en otros SDKs si confías en AppsFlyer para la atribución SKAN.
+* Ni el desarrollador ni el marketer necesitan realizar ninguna otra acción o proceso de registro en la App Store.
 
-To disable SKAN attribution, instruct your developer to disable it in the SDK.
+Para desactivar la atribución SKAN, dile a tu desarrollador que lo desactive en el SDK.
 
 <Tabs>
-<Tab title="iOS native">
+<Tab title="iOS nativo">
 
-To disable SKAN attribution use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableskadnetwork">`disableSKAdNetwork`</Anchor>
+Para desactivar la atribución SKAN utiliza <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableskadnetwork">`disableSKAdNetwork`</Anchor>
 
 </Tab>
 
 <Tab title="Unity">
 
-To disable SKAN attribution use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#disableskadnetwork">`disableSKAdNetwork`</Anchor>
+Para desactivar la atribución SKAN utiliza <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#disableskadnetwork">`disableSKAdNetwork`</Anchor>
 
 </Tab>
 
 <Tab title="React Native">
 
-To disable SKAN attribution use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#disableskad">`disableSKAd`</Anchor>
+Para desactivar la atribución SKAN utiliza <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#disableskad">`disableSKAd`</Anchor>
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-## **Recording in-app events**
+## **Registro de eventos in-app**
 
-In-app events (IAE) provide insight into what is happening in your app. Recording in-app events helps you measure KPIs like Return on Investment (ROI) and Lifetime Value (LTV). We recommend taking the time to define the events that you want to record.
+Los eventos in-app (IAE) proporcionan insights sobre lo que ocurre en tu aplicación. Registrar eventos in-app te ayuda a medir KPIs como el Retorno de la Inversión (ROI) y el Lifetime Value (LTV). Les recomendamos que se tomen el tiempo necesario para definir los eventos que desean registrar.
 
-Once you determine the in-app events you want to measure, send the event names and parameters to your developer, and include a link to:
+Una vez que decidas qué eventos in-app quieres medir, envía los nombres de los eventos y sus parámetros a tu desarrollador, e incluye un enlace a:
 
-* The [SDK installation wizard](https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration) which has a dedicated journey for in-app events.
-* <Anchor target="_blank" href="http://dev.appsflyer.com/hc/docs/in-app-events-sdk">The step by step implementation instructions for in-app events in the SDK</Anchor>.
+* El [asistente de instalación del SDK](https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration) que tiene un viaje dedicado para eventos in-app.
+* <Anchor target="_blank" href="http://dev.appsflyer.com/hc/docs/in-app-events-sdk">Las instrucciones de implementación paso a paso para eventos in-app en el SDK</Anchor>.
 
-To learn how to define in-app events and send them to your developer, see our <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">Rich in-app events guide</Anchor>.
+Para aprender a definir eventos in-app y enviarlos a tu desarrollador, consulta nuestra <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía de eventos enriquecidos in-app</Anchor>.
 
-**All platforms**
+**Todas las plataformas**
 
-<Accordion title="Record revenue">
+<Accordion title="Registrar ingresos">
 
-You can send revenue with any in-app event. Make sure you use the **af\_revenue** parameter to include revenue. It is the only event parameter that AppsFlyer counts as real revenue on the dashboard and in raw data reports. <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">Learn more</Anchor>.
+Puedes asociar ingresos con cualquier evento in-app. Asegúrate de utilizar el parámetro **af\_revenue** para incluir los ingresos. Es el único parámetro de evento que AppsFlyer cuenta como ingreso real en el dashboard y en los reportes de raw data. <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">Saber más</Anchor>.
 
 <Tabs>
-<Tab title="Android native">
+<Tab title="Android nativo">
 
-For developer instructions on defining revenue events see [here](https://dev.appsflyer.com/hc/docs/in-app-events-android#logging-revenue).
+Para obtener instrucciones para desarrolladores sobre cómo definir eventos de ingresos, consulta [aquí](https://dev.appsflyer.com/hc/docs/in-app-events-android#logging-revenue).
 
 </Tab>
 
-<Tab title="iOS native">
+<Tab title="iOS nativo">
 
-For developer instructions on defining revenue events see [here](https://dev.appsflyer.com/hc/docs/in-app-events-ios#logging-revenue).
+Para obtener instrucciones para desarrolladores sobre cómo definir eventos de ingresos, consulta [aquí](https://dev.appsflyer.com/hc/docs/in-app-events-ios#logging-revenue).
 
 </Tab>
 
 <Tab title="Unity">
 
-* For developer instructions on in-app events in general see [here](https://dev.appsflyer.com/hc/docs/inappevents#send-event).
-* For specific instructions for revenue in iOS and Android see the Android and iOS tabs.
+* Para instrucciones generales para desarrolladores sobre eventos dentro de la aplicación, consulta [aquí](https://dev.appsflyer.com/hc/docs/inappevents#send-event).
+* Para instrucciones específicas sobre ingresos en iOS y Android, consulta las pestañas de Android e iOS.
 
 </Tab>
 </Tabs>
 
 </Accordion>
 
-<Accordion title="Validate in-app purchases">
+<Accordion title="Validar compras in-app">
 
-The AppsFlyer SDK provides server verification for in-app purchases. Validating an in-app purchase automatically sends an in-app purchase event to AppsFlyer. Sending this event yourself creates duplicate event reporting.
-
-</Accordion>
-
-<Accordion title="Industry verticals">
-
-See our <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#recommended-events-by-business-vertical">list of recommended in-app events per vertical</Anchor>, for example, travel, gaming, or eCommerce.
+El SDK de AppsFlyer ofrece verificación del servidor para compras in-app. Al validar una compra in-app, se envía automáticamente un evento de compra a AppsFlyer. Si envías este evento tú mismo, se generarán reportes de eventos duplicados.
 
 </Accordion>
 
-## **Deep linking with OneLink**
+<Accordion title="Verticales de la industria">
 
-OneLink is the AppsFlyer solution for multi-platform attribution, **redirection, and deep linking**.
-
-**All platforms**
-
-<Accordion title="Device detection and redirection">
-
-For users without your app installed, OneLink detects the device type and redirects them to the correct destination (for example, Google Play, Apple App Store, third-party app store, or web page). This is based on your OneLink template settings. <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">Learn more</Anchor>
+Consulta nuestra <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#recommended-events-by-business-vertical">lista de eventos in-app recomendados por vertical</Anchor>, por ejemplo, viajes, juegos o e-commerce.
 
 </Accordion>
 
-<Accordion title="Deep linking">
+## **Deep linking con OneLink**
 
-For users with your app installed, OneLink opens the app. In addition to opening the app, you can also deep link users to a specific activity or page within the app. This requires your developer to implement Unified Deep Linking (UDL) using:
+OneLink es la solución de AppsFlyer para la atribución multiplataforma, **redirección y deep linking**.
 
-* The [SDK installation wizard](https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration) which has a dedicated journey for deep linking implementation, or
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">The step by step SDK implementation instructions for unified deep linking</Anchor>.
+**Todas las plataformas**
 
-**Note**:
+<Accordion title="Detección y redirección de dispositivos">
 
-* UDL requires SDK V6.1+.
-* Customers already using OneLink for deep linking may be using the [legacy method](https://dev.appsflyer.com/hc/docs/dl_work_flow#legacy-use-only-gcd-api-for-deep-linking), instead of UDL.
-
-See our guide on setting <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">Deep linking and deferred deep linking</Anchor>.
+Para usuarios que no tienen instalada tu aplicación, OneLink detecta el tipo de dispositivo y los redirecciona al destino correcto (por ejemplo, Google Play, Apple App Store, una tienda de aplicaciones de terceros o una página web). Esto se basa en la configuración de tu plantilla OneLink. <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">Saber más</Anchor>
 
 </Accordion>
 
-<Accordion title="Deferred deep linking">
+<Accordion title="Enlaces profundos">
 
-For users without your app installed, OneLink detects the device type and redirects them to the correct destination: Google Play, Apple App Store, third-party app store, or web page. Once the user launches the app, you can use deferred deep linking to redirect them to a specific activity or page within the app.
+Para usuarios que tienen instalada tu aplicación, OneLink abre la aplicación. Además de abrir la aplicación, también puedes enviar a los usuarios a una actividad o página específica dentro de la misma. Esto requiere que tu desarrollador implemente Deep Linking Unificado (UDL):
 
-This requires your developer to implement deferred deep linking using:
+* El [asistente de instalación del SDK](https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration) que tiene un recorrido dedicado para la implementación de deep linking, o
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">Las instrucciones de implementación del SDK paso a paso para deep linking unificado</Anchor>.
 
-* The [SDK installation wizard](https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration) which has a dedicated journey for deep linking implementation, or
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">The step by step SDK implementation instructions for deferred deep linking</Anchor>.
+**Nota**:
 
-**Note**:
+* UDL requiere SDK V6.1+.
+* Los clientes ya usando OneLink para deep linking pueden estar utilizando el [método heredado](https://dev.appsflyer.com/hc/docs/dl_work_flow#legacy-use-only-gcd-api-for-deep-linking), en lugar de UDL.
 
-* UDL requires SDK V6.1+.
-* Customers already using OneLink for deferred deep linking might be using the [legacy method](https://dev.appsflyer.com/hc/docs/dl_work_flow#legacy-use-only-gcd-api-for-deep-linking), instead of UDL.
-
-See our guide on setting <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">Deep linking and deferred deep linking</Anchor>.
+Consulta nuestra guía sobre cómo configurar <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">deep linking y deferred deep linking</Anchor>.
 
 </Accordion>
 
-## **Accessing attribution and deep linking data**
+<Accordion title="Enlaces profundos diferidos">
 
-The following table describes the available methods for retrieving attribution and deep linking data:
+Para usuarios que no tienen instalada tu aplicación, OneLink detecta el tipo de dispositivo y los redirecciona al destino correcto: Google Play, Apple App Store, una tienda de aplicaciones de terceros o una página web. Una vez que el usuario inicia la aplicación, puedes usar deferred deep linking para redireccionarlo a una actividad o página específica dentro de la aplicación.
 
-| Method | Who is involved? | Return results | Retrieval method | Attribution data | Deep linking data | Availability |
+Esto requiere que tu desarrollador implemente deferred deep linking.
+
+* El [asistente de instalación del SDK](https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration) que tiene un recorrido dedicado para la implementación de deep linking, o
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">Las instrucciones de implementación del SDK paso a paso para deferred deep linking</Anchor>.
+
+**Nota**:
+
+* UDL requiere SDK V6.1+.
+* Clientes que ya utilizan OneLink para deferred deep linking podrían estar usando el [método heredado](https://dev.appsflyer.com/hc/docs/dl_work_flow#legacy-use-only-gcd-api-for-deep-linking), en lugar de UDL.
+
+Consulta nuestra guía sobre cómo configurar <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">deep linking y deferred deep linking</Anchor>.
+
+</Accordion>
+
+## **Acceso a datos de atribución y de deep linking**
+
+La siguiente tabla describe los métodos disponibles para obtener datos de atribución y de deep linking:
+
+| Método | ¿Quién está involucrado? | Resultados de retorno | Método de recuperación | Datos de atribución | Datos de deep linking | Disponibilidad |
 | --- | --- | --- | --- | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">**Push API**</Anchor> | • Marketer • Back-end developer | Typically within minutes | Backend | Y | N | Premium |
-| <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data">**Pull API**</Anchor> | • Marketer • Back-end developer | • Periodic (not real-time). • You can schedule raw-data report downloads. | Backend | Y | Y | Premium for raw-data reports |
-| <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">**Data Locker**</Anchor> | • Marketer • Back-end developer | Hourly reports are available within 1 - 3 hours | Cloud storage via one of the following options: • AppsFlyer-owned bucket on AWS • Storage owned by you (AWS or GCS) | Y | Y | Premium |
-| <Anchor target="_blank" href="/marketers/docs/conversion-data-payloads-and-scenarios#overview">**Get conversion data (GCD)**</Anchor> | • Marketer • Mobile  developer <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#legacy-use-only-gcd-api-for-deep-linking">See developer documentation</Anchor> | Up to 5 seconds | SDK | Y | Y | All accounts |
-| <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">**Unified Deep Linking (UDL)**</Anchor> | • Marketer • Mobile developer <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">See developer documentation</Anchor> | Up to 1 second | SDK | N | Y | All accounts |
+| <Anchor target="_blank" href="/marketers/es/docs/push-api-streaming-raw-data">**API Push**</Anchor> | • Marketer • Desarrollador back-end | Normalmente en cuestión de minutos | Back-end | Sí | N/A | Premium |
+| <Anchor target="_blank" href="/marketers/es/docs/pull-api-raw-data">**API Pull**</Anchor> | • Marketer • Desarrollador back-end | • Periódico (no en tiempo real). • Puede programar descargas de informes de datos sin procesar. | Back-end | Y | Y | Premium para reportes de raw data |
+| <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">**Casillero de datos**</Anchor> | • Marketer • Desarrollador back-end | Los reportes de horarios están disponibles en un plazo de 1 a 3 horas. | Almacenamiento en la nube mediante una de las siguientes opciones: • Espacio propiedad de AppsFlyer en AWS • Almacenamiento propio (AWS o GCS) | Y | Y | Premium |
+| <Anchor target="_blank" href="/marketers/es/docs/conversion-data-payloads-and-scenarios#información-general">**Obtener datos de conversión (GCD)**</Anchor> | • Marketer • Desarrollador de aplicaciones móviles <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#legacy-use-only-gcd-api-for-deep-linking">Ver documentación para desarrolladores</Anchor> | Hasta 5 segundos | SDK | Sí | Y | Todas las cuentas |
+| <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">**Deep Linking Unificada (UDL)**</Anchor> | • Marketer • Desarrollador de aplicaciones móviles <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">Ver documentación para desarrolladores</Anchor> | Hasta 1 segundo | SDK | N/A | Sí | Todas las cuentas |
 
-Note the following for iOS 14.5+ non-consenting users:
+Ten en cuenta lo siguiente para los usuarios que no dan su permiso en iOS 14.5+:
 
-* When using UDL for paid and owned media, deep linking data is available.
-* When using GCD for paid media, the data is limited and does not include attribution and deep linking details.
+* Al usar UDL para medios de pago y propios, los datos de deep linking están disponibles.
+* Al usar GCD para medios de pago, los datos son limitados y no incluyen detalles de atribución ni de deep linking.
 
 > 👍 **Tip**
 >
-> We recommend the following:
+> Recomendamos lo siguiente:
 >
-> * Use Push API to retrieve attribution data and send it to your servers for further processing. This method waits for the data to become available, and therefore is highly accurate and close to real-time. GCD returns data in real-time, but may be inaccurate when final attribution decisions are determined after more than 5 seconds.
-> * Use Pull API to periodically (for example, daily) supplement real-time attribution data, and to compensate for any communication errors that might occur.
+> * Utiliza la Push API para recuperar datos de atribución y enviarlos a tus servidores para procesamiento adicional. Este método espera a que los datos estén disponibles, siendo muy preciso y casi en tiempo real. GCD proporciona datos en tiempo real, pero puede ser inexacto cuando las decisiones finales de atribución se determinan después de más de 5 segundos.
+> * Utiliza la Pull API para complementar periódicamente (por ejemplo, diariamente) los datos de atribución en tiempo real, compensando cualquier error de comunicación que pueda ocurrir.
 
-## **Testing your SDK integration**
+## **Prueba de integración del SDK**
 
-Once the SDK integration is complete, you can go to the AppsFlyer dashboard, and from the SDK Integration Tests page, test organic and non-organic installs, in-app events, and deep linking (retargeting). This ensures that installs and in-app events are recorded and attributed correctly.
+Una vez terminada la integración del SDK, puedes acceder al dashboard de AppsFlyer y, desde la página de Pruebas de Integración del SDK, probar instalaciones orgánicas y no orgánicas, eventos in-app y deep linking (retargeting). Esto asegura que las instalaciones y los eventos in-app se registren y atribuyan correctamente.
 
-For testing scenarios and instructions, see <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers">SDK integration testing</Anchor>.
+Para conocer los escenarios de prueba y las instrucciones, consulta <Anchor target="_blank" href="/marketers/es/docs/testing-the-sdk-integration-for-marketers">Prueba de integración del SDK</Anchor>.
 
-**Note:** When performing attribution tests, <Anchor target="_blank" href="/marketers/docs/registering-test-devices">register a test device</Anchor> (Android or iOS) to make sure each install is recorded as a new install. A registered test device prevents installs from being recorded as reinstalls.
+**Nota:** Al realizar pruebas de atribución, <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices">registra un dispositivo de prueba</Anchor> (Android o iOS) para asegurarse de que cada instalación se registre como una nueva instalación. Un dispositivo de prueba registrado evita que las instalaciones se registren como reinstalaciones.
 
 > 📘 **Note**
 >
-> **See also**
+> **Ver también**
 >
-> * CTV, PC, and console platform overview
+> * Descripción general de las plataformas CTV, PC y consolas
 
-<div data-zendesk-anchors="retrieving-the-dev-key=implementing-the-dev-key-in-your-app h_01HAWCK9K4QBRE74JAS8Q7MEXW=implementing-the-dev-key-in-your-app h_01HHHKTARNPQTBXQ6CQGEHMJRG=retrieve-the-dev-key embed-the-dev-key=provide-the-dev-key-to-your-developer h_01HHHKXMBGV6EM0CCW842RQQZ6=provide-the-dev-key-to-your-developer h_01HAWCK9K4MBS0F0HE6QE1W1AN=where-to-start-the-sdk starting-the-sdk-in-android=starting-the-sdk-in-android-native h_01HAWCK9K45HCJEDRW761WHKES=starting-the-sdk-in-android-native h_01HAWCK9K428SDFBFCCSZ15X9J=select-in-what-class-to-start-the-sdk h_01HAWCK9K4XR1HZHP7Y15Q2Q4N=android-developer-instructions h_01HAWCK9K4693729EX1WYFR6XT=starting-the-sdk-in-ios h_01HAWCK9K4QSBP874RX2ZRA7EB=delay-the-sdk-start-in-ios h_01HAWCK9K4VHDFB9CYHC144BZN=ios-developer-instructions h_01JQ73M8DWMVQ98V1DQMPT0316=starting-the-sdk-in-Unity h_01JQ73M8DW350GBH9P52W4516V=starting-the-sdk-in-react select-the-optoutin-scenario::ae4c6e25=select-your-privacy-preserving-strategy h_01HAWCK9K4EXBA2F0BPVBXFAMG=select-your-privacy-preserving-strategy h_01HAWCK9K41T5GGWDB3ABYGRHW=attribution h_01HAWCK9K4V91MPQHXDZBD0HKR=google-play-install-referrer h_01HAWCK9K4YD8CYQDB2YRA8W1F=gaid h_01HAWCK9K5JHDWS8KTBTTGSS9G=waitforattuserauthorization-overview recording-inapp-events=recording-in-app-events h_01HAWCK9K5ZZYQR8KPCWANZEA5=recording-in-app-events h_01HAWCK9K5PK9RE7WZQVCY97KC=deep-linking-with-onelink h_01HAWCK9K5ACPZ2WKBTVR3VVTD=accessing-attribution-and-deep-linking-data h_01HAWCK9K6JQ33T32RYKYH20P1=testing-your-sdk-integration" />
+<div data-zendesk-anchors="retrieving-the-dev-key=implementaci%C3%B3n-de-la-clave-de-desarrollo-en-tu-aplicaci%C3%B3n h_01HAWCK9K4QBRE74JAS8Q7MEXW=implementaci%C3%B3n-de-la-clave-de-desarrollo-en-tu-aplicaci%C3%B3n retrieve-the-dev-key=recuperar-la-clave-de-desarrollo h_01HHHKTARNPQTBXQ6CQGEHMJRG=recuperar-la-clave-de-desarrollo embed-the-dev-key=proporciona-la-clave-de-desarrollo-a-tu-desarrollador h_01HHHKXMBGV6EM0CCW842RQQZ6=proporciona-la-clave-de-desarrollo-a-tu-desarrollador where-to-start-the-sdk=d%C3%B3nde-iniciar-el-sdk h_01HAWCK9K4MBS0F0HE6QE1W1AN=d%C3%B3nde-iniciar-el-sdk starting-the-sdk-in-android=iniciando-el-sdk-en-android-nativo h_01HAWCK9K45HCJEDRW761WHKES=iniciando-el-sdk-en-android-nativo select-in-what-class-to-start-the-sdk=selecciona-en-qu%C3%A9-clase-iniciar-el-sdk h_01HAWCK9K428SDFBFCCSZ15X9J=selecciona-en-qu%C3%A9-clase-iniciar-el-sdk android-developer-instructions=instrucciones-para-desarrolladores-de-android h_01HAWCK9K4XR1HZHP7Y15Q2Q4N=instrucciones-para-desarrolladores-de-android h_01HAWCK9K4693729EX1WYFR6XT=starting-the-sdk-in-ios h_01HAWCK9K4QSBP874RX2ZRA7EB=delay-the-sdk-start-in-ios h_01HAWCK9K4VHDFB9CYHC144BZN=ios-developer-instructions h_01JQ73M8DWMVQ98V1DQMPT0316=starting-the-sdk-in-Unity h_01JQ73M8DW350GBH9P52W4516V=starting-the-sdk-in-react select-the-optoutin-scenario::ae4c6e25=elige-tu-estrategia-de-preservaci%C3%B3n-de-la-privacidad h_01HAWCK9K4EXBA2F0BPVBXFAMG=elige-tu-estrategia-de-preservaci%C3%B3n-de-la-privacidad attribution=atribuci%C3%B3n h_01HAWCK9K41T5GGWDB3ABYGRHW=atribuci%C3%B3n google-play-install-referrer=referencia-de-instalaci%C3%B3n-de-google-play h_01HAWCK9K4V91MPQHXDZBD0HKR=referencia-de-instalaci%C3%B3n-de-google-play gaid=gna-company h_01HAWCK9K4YD8CYQDB2YRA8W1F=gna-company waitforattuserauthorization-overview=vista-general-de-waitforattuserauthorization h_01HAWCK9K5JHDWS8KTBTTGSS9G=vista-general-de-waitforattuserauthorization recording-inapp-events=registro-de-eventos-in-app h_01HAWCK9K5ZZYQR8KPCWANZEA5=registro-de-eventos-in-app deep-linking-with-onelink=deep-linking-con-onelink h_01HAWCK9K5PK9RE7WZQVCY97KC=deep-linking-con-onelink accessing-attribution-and-deep-linking-data=acceso-a-datos-de-atribuci%C3%B3n-y-de-deep-linking h_01HAWCK9K5ACPZ2WKBTVR3VVTD=acceso-a-datos-de-atribuci%C3%B3n-y-de-deep-linking testing-your-sdk-integration=prueba-de-integraci%C3%B3n-del-sdk h_01HAWCK9K6JQ33T32RYKYH20P1=prueba-de-integraci%C3%B3n-del-sdk" />

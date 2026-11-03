@@ -1,5 +1,7 @@
 ---
-title: Audiences - Configure additional identifiers for partner audience creation
+title: >-
+  Audiencias: configura identificadores adicionales para la creación de
+  audiencias de Partners
 metadata:
   keywords:
     - Audiences
@@ -16,72 +18,73 @@ x-zendesk:
     - Marketers
     - Audience Segmentation
   created_at: '2021-02-14T16:23:45Z'
-  edited_at: '2026-08-14T00:01:08Z'
+  edited_at: '2026-08-22T00:34:46Z'
   id: 360017807278
-  locale: en-us
+  locale: es
   section: Audiences
   section_id: 6551336428945
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360017807278-Audiences-Configure-additional-identifiers-for-partner-audience-creation
+  url: https://support.appsflyer.com/hc/es/articles/360017807278
 ---
-> **At a glance:** Configure additional user identifiers for sending custom audiences to advertising partners.
+> **At a glance:** Configure identificadores de usuario adicionales para enviar audiencias personalizadas a socios publicitarios.
 
-## About additional identifiers
+## Acerca de los identificadores adicionales
 
-AppsFlyer Audiences automatically supports the following device identifiers for sending custom audiences to <Anchor target="_blank" href="/marketers/docs/audiences-partner-connections">advertising partners</Anchor>:
+AppsFlyer Audiences admite automáticamente los siguientes identificadores de dispositivos al enviar audiencias personalizadas a <Anchor target="_blank" href="/marketers/es/docs/audiences-partner-connections">socios publicitarios</Anchor>:
 
-* **iOS**: IDFA
+* **iOS: IDFA**
 * **Android (Google Play):** GAID
-* **Android (3rd-party app stores):** <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor> and IMEI
+* **Android (tiendas de aplicaciones de terceros):** <Anchor target="_blank" href="/marketers/es/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor> y IMEI
 
-Some advertising partners also support custom audience matching based on additional user identifiers. Audiences offers you the option to use these identifiers if you specifically configure them through the AppsFlyer SDK or S2S-mobile API.
+Algunos socios publicitarios también admiten la coincidencia de audiencias personalizadas basándose en identificadores de usuario adicionales. Audiences le ofrece la opción de utilizar estos identificadores si los configura específicamente a través del SDK de AppsFlyer o la API S2S-mobile.
 
-Such additional identifiers can include phone numbers and emails, but can **only be used if encrypted with SHA256 hashing**.  Your use of such additional identifiers is subject to the [Additional Identifiers Terms of Use](https://support.appsflyer.com/hc/article_attachments/16567368205201).
+Estos identificadores adicionales pueden incluir números de teléfono y correos electrónicos, pero **solo se pueden utilizar si están cifrados con el hash SHA256**.  El uso de dichos identificadores adicionales está sujeto a los [Términos de uso de identificadores adicionales](https://support.appsflyer.com/hc/article_attachments/16567368205201).
 
-## Next steps
+## Próximos pasos
 
-1. Select the additional identifiers you want to use (if any) from the [table of available identifiers](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting). Note that not all advertising partners support all identifiers.
-2. Developers—Configure the selected identifiers, using:
-   * Parameters and formatting requirements as appear in the [table of available identifiers](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting)
-   * The reference and code samples for [SDK](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#sdk-reference-and-code-samples) and [S2S](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#s2s-reference-and-code-samples)
-3. In the Audiences dashboard:
-   * Set your <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">account-level user identifier policy</Anchor>
-   * Select the identifiers to be uploaded in each of your <Anchor target="_blank" href="/marketers/docs/audiences-guide#manage-connections">partner connections</Anchor>
+1. Seleccione los identificadores adicionales que desea utilizar (si hay alguno) de la [tabla de identificadores disponibles](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting). Tenga en cuenta que no todos los socios publicitarios admiten todos los identificadores.
+2. Desarrolladores—Configuren los identificadores seleccionados, utilizando:
+   * Parámetros y requisitos de formato según aparecen en la [tabla de identificadores disponibles](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting).
+   * La referencia y los ejemplos de código para [SDK](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#referencia-del-sdk-y-ejemplos-de-código) y [S2S](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#referencia-y-ejemplos-de-código-s2s).
+3. En el panel de Audiencias:
+   * Establezca su <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política de identificadores de usuario a nivel de cuenta</Anchor>.
+   * Seleccione los identificadores que se cargarán en cada una de sus <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#manage-connections">conexiones de socios</Anchor>.
 
-## Available identifiers
+## Identificadores disponibles
 
-You can elect to configure one or more identifiers, shown in the table below.
+Puede optar por configurar uno o más identificadores, que se muestran en la siguiente tabla.
 
-<Accordion title="Additional identifiers — parameters and formatting">
+<Accordion title="Identificadores adicionales — parámetros y formato">
 
-<table><tbody><tr><td>Identifier</td><td>Parameter name</td><td>Format</td><td>Example value (before hashing)</td></tr><tr><td>Email address</td><td>email_sha256</td><td><p><strong>SDK v7.0.0 and earlier:</strong></p><ul><li>Lowercase</li><li>No white spaces</li><li>Client-hashed (SHA256) before passing in</li></ul><p><strong>SDK v7.0.1 and later:</strong> Plain text. The SDK normalizes and hashes it automatically.</p></td><td>name@domain.com</td></tr><tr><td>Phone number<br/>(see note below)</td><td><p><strong>v7.0.0 and earlier (or S2S):</strong> phone_number_sha256</p><p><strong>v7.0.1 and later:</strong> phone_number_hashed</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong></p><ul><li>No symbols, letters, or leading zeroes</li><li>Include country code</li><li>SHA256 hashed</li></ul><p><strong>v7.0.1 and later:</strong> Plain text. The SDK concatenates the country code and number, normalizes, and hashes it automatically.</p></td><td>442070313000</td></tr><tr><td><p>Phone number E164</p><p>(see note below)</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong> phone_number_e164_sha256</p><p><strong>v7.0.1 and later:</strong> phone_number_e164_hashed</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong></p><ul><li>E164 phone number</li><li>SHA256 hashed</li></ul><p><strong>v7.0.1 and later:</strong> Plain text. The SDK concatenates the country code and number, normalizes, and hashes it automatically.</p></td><td>+442070313000</td></tr><tr><td colspan="4"><p><br /><br /><strong>Note</strong><br /></p><p><strong><span id="h_01HNZNWZ9XSY47T58Z5YR7Q65S"></span>Note</strong></p><p>Different advertising partners support different phone number formats. So, if you choose to use phone number, configure both identifiers: <em>Phone number</em> and <em>Phone number E164.</em></p></td></tr></tbody></table>
+<table><tbody><tr><td>Identificador</td><td>Nombre del parámetro</td><td>Formato</td><td>Valor de ejemplo (antes del hash)</td></tr><tr><td>Correo electrónico</td><td>correo electrónico_sha256</td><td><p><strong>SDK v7.0.0 y versiones anteriores:</strong></p><ul><li>Minúsculas</li><li>Sin espacios en blanco</li><li>Con hash en el cliente (SHA256) antes de enviarlo</li></ul><p><strong>SDK v7.0.1 y versiones posteriores:</strong> Texto sin formato. El SDK lo normaliza y aplica Hashing automáticamente.</p></td><td>name@domain.com</td></tr><tr><td>Número de teléfono<br/>(ver nota a continuación)</td><td><p><strong>v7.0.0 y versiones anteriores (o S2S):</strong> phone_number_sha256</p><p><strong>v7.0.1 y versiones posteriores:</strong> phone_number_hashed</p></td><td><p><strong>v7.0.0 y versiones anteriores (o S2S):</strong></p><ul><li>Sin símbolos, letras ni ceros iniciales</li><li>Incluir código de país</li><li>Hash SHA256</li></ul><p><strong>v7.0.1 y versiones posteriores:</strong> Texto sin formato. El SDK concatena el código de país y el número, lo normaliza y aplica Hashing automáticamente.</p></td><td>442070313000</td></tr><tr><td><p>Número de teléfono E164</p><p>(ver nota a continuación)</p></td><td><p><strong>v7.0.0 y versiones anteriores (o S2S):</strong> phone_number_e164_sha256</p><p><strong>v7.0.1 y versiones posteriores:</strong> phone_number_e164_hashed</p></td><td><p><strong>v7.0.0 y versiones anteriores (o S2S):</strong></p><ul><li>Número de teléfono E164</li><li>Hash SHA256</li></ul><p><strong>v7.0.1 y versiones posteriores:</strong> Texto sin formato. El SDK concatena el código de país y el número, lo normaliza y aplica Hashing automáticamente.</p></td><td>+442070313000</td></tr><tr><td colspan="4"><p><br /><br /><strong>Note</strong><br /></p><p><strong><span id="h_01HNZNWZ9XSY47T58Z5YR7Q65S"></span>Nota</strong></p><p>Diferentes socios publicitarios admiten distintos formatos de números de teléfono. Por tanto, si eliges usar el número de teléfono, configura ambos identificadores: <em>Número de teléfono</em> y <em>Número de teléfono E164</em></p></td></tr></tbody></table>
 
 </Accordion>
 
-## SDK reference and code samples
+## Referencia del SDK y ejemplos de código
 
-When sending identifiers for Audiences via the SDK:
+Al enviar identificadores para audiencias mediante el SDK:
 
-* For identifiers other than hashed *Email address* or *Phone number*, use `setAdditionalData`.
-* For hashed *Email address*:
-  * SDK v7.0.1 and later: use `setUserEmail`.
-  * SDK v7.0.0 and earlier: use `setUserEmails`.
-* For hashed *Phone number*:
-  * SDK v7.0.1 and later: use `setUserPhone` (recommended).
-  * SDK v7.0.0 and earlier: use `setAdditionalData` with custom data.
+* Para identificadores distintos de la dirección de correo electrónico codificada , use
+* Para la dirección de correo electrónico codificada , use
+  * SDK v7.0.1 y versiones posteriores: usa `setUserEmail`.
+  * SDK v7.0.0 y versiones anteriores: usa `setUserEmails`.
+* número de teléfono e164\_sha256
+  * SDK v7.0.1 y versiones posteriores: usa `setUserPhone` (recomendado).
+  * SDK v7.0.0 y versiones anteriores: usa `setAdditionalData` con datos personalizados.
 
 > 📘 **Note**
 >
-> Keep the following version-dependent changes in mind:
+> **Advertencia**
 >
-> * **Email:** As of SDK v7.0.1, setUserEmails (iOS/Android) has been fully removed and replaced by setUserEmail. This is a breaking change, not a deprecation. Apps on v7.0.0 and earlier must keep using setUserEmails. Apps on v7.0.1 and later must switch to setUserEmail. Check your integrated SDK version before choosing which sample to follow.
-> * **Phone:** As of SDK v7.0.1, a dedicated setUserPhone API is available. It's the recommended way to send phone number identifiers for Advanced Matching. This isn't a breaking change: setAdditionalData still works. For new integrations, and for customers who upgrade to v7.0.1 and later, we recommend migrating to setUserPhone. Apps on v7.0.0 and earlier must continue using setAdditionalData, because setUserPhone doesn't exist in those SDK versions.
+> Recuerda los siguientes cambios según la versión:
+>
+> * **Correo electrónico:** A partir del SDK v7.0.1, setUserEmails (iOS/Android) se ha eliminado por completo y se ha sustituido por setUserEmail. Este es un cambio incompatible, no una descontinuación. Las apps en v7.0.0 y anteriores deben seguir usando setUserEmails. Las apps en v7.0.1 y posteriores deben cambiar a setUserEmail. Comprueba qué versión del SDK tienes integrada antes de elegir qué ejemplo seguir.
+> * **Teléfono:** A partir del SDK v7.0.1, hay disponible una API específica setUserPhone. Es la forma recomendada de enviar identificadores de número de teléfono para Advanced Matching. Este no es un cambio disruptivo: setAdditionalData sigue funcionando. Para las nuevas integraciones y para los clientes que actualicen a la versión 7.0.1 y posteriores, recomendamos migrar a setUserPhone. Las aplicaciones con la versión 7.0.0 y anteriores deben seguir usando setAdditionalData, porque setUserPhone no existe en esas versiones del SDK.
 
-## iOS SDK configuration
+## Configuración del SDK para iOS
 
-To set hashed *Phone number* as an additional user identifier:
+Para establecer el *número de teléfono* con hashing como identificador adicional de usuario:
 
-### **SDK v7.0.0 and earlier — setAdditionalData**
+### **SDK v7.0.0 y anteriores — setAdditionalData**
 
 <Tabs>
 <Tab title="Objective-C">
@@ -101,13 +104,7 @@ NSDictionary *customData = @{
 <Tab title="Swift">
 
 ```swift
-let customData: Dictionary = [
-  "audiences" : [
-    "phone_number_sha256":"6C91C4C640F6EF0162833260DB4F13DEC0DF2B683092F4DBA7E874BEF1ACEA37",
-    "phone_number_e164_sha256":"F3D7E96C73FB0DE1B66ACFCE541D7AF758FBD4F3FA3AF0EA4E10110000D3625E"
-  ]
-] 
-AppsFlyerLib.shared().customData = customData
+número de teléfono_sha256
 ```
 
 </Tab>
@@ -115,18 +112,20 @@ AppsFlyerLib.shared().customData = customData
 
 > 📘 **Note**
 >
-> You must pre-hash both values (SHA-256) before passing them in.
+> **Audiencias: identificadores adicionales**
+>
+> Debes aplicar un hash previo a ambos valores (SHA-256) antes de pasarlos.
 
-### **SDK v7.0.1 and later — setUserPhone (recommended)**
+### **SDK v7.0.1 y versiones posteriores — setUserPhone (recomendado)**
 
-#### Method signature
+#### Firma del método
 
 ```objectivec
 - (void)setUserPhone:(NSString *_Nonnull)countryCode
 phoneNumber:(NSString *_Nonnull)phoneNumber;
 ```
 
-#### Usage example
+#### Ejemplo de uso
 
 <Tabs>
 <Tab title="Objective-C">
@@ -148,27 +147,29 @@ AppsFlyerLib.shared().setUserPhone(countryCode: "1", phoneNumber: "(650) 555-121
 
 > 📘 **Note**
 >
-> Pass the country dialing code and local number as plain text. Symbols and spaces are allowed in the local number. The SDK concatenates, normalizes, and hashes both values locally (SHA-256). Don't pre-hash.
+> **Hash SHA256**
+>
+> Pasa el prefijo telefónico del país y el número local como texto sin formato. Se permiten símbolos y espacios en el número local. El SDK concatena, normaliza y aplica hash a ambos valores localmente (SHA-256). No apliques hash previamente.
 
-To set hashed *Email address* as an additional user identifier:
+Para establecer una dirección de correo electrónico codificada como un identificador de usuario adicional:
 
-### **SDK v7.0.0 and earlier**
+### **SDK v7.0.0 y versiones anteriores**
 
-#### Method signature
+#### Firma del método
 
 ```objectivec
-- (void)setUserEmails:(NSArray<NSString *> *_Nullable)userEmails
-withCryptType:(EmailCryptType)type;
+- (void)setUserEmails:(NSArray<NSString *> *_Nullable)userEmails 
+withCryptType: (EmailCryptType)type;
 ```
 
-#### Usage example
+#### Ejemplo de uso
 
 <Tabs>
 <Tab title="Objective-C">
 
 ```objectivec
 NSArray *emails = @[@"name@domain.com"];    
-[[AppsFlyerLib shared] setUserEmails:emails withCryptType:EmailCryptTypeSHA256];
+[[AppsFlyerLib shared] setUserEmails:emails withCryptType: EmailCryptTypeSHA256];
 ```
 
 </Tab>
@@ -183,15 +184,15 @@ AppsFlyerLib.shared().setUserEmails(emails, with: EmailCryptTypeSHA256)
 </Tab>
 </Tabs>
 
-### **SDK v7.0.1 and later**
+### **SDK v7.0.1 y versiones posteriores**
 
-#### Method signature
+#### Firma del método
 
 ```objectivec
 - (void)setUserEmail:(NSString *_Nonnull)email;
 ```
 
-#### Usage example
+#### Ejemplo de uso
 
 <Tabs>
 <Tab title="Objective-C">
@@ -213,13 +214,15 @@ AppsFlyerLib.shared().setUserEmail("name@domain.com")
 
 > 📘 **Note**
 >
-> Pass the plain-text email. The SDK normalizes and hashes it locally (SHA-256). Don't pre-hash. Only a single email is accepted per call: calling setUserEmail again overrides the previously set value rather than adding to it.
+> **Advertencia**
+>
+> Pasa el correo electrónico en texto sin formato. El SDK lo normaliza y aplica hashing localmente (SHA-256). No apliques hashing previamente. Solo se acepta un único correo electrónico por llamada: si vuelves a llamar a setUserEmail, se sobrescribe el valor establecido anteriormente en lugar de añadirse.
 
-## Android SDK configuration
+## Configuración del SDK para Android
 
-To set hashed *Phone number* as an additional user identifier:
+Para establecer un *número de teléfono* codificado como identificador de usuario adicional:
 
-### **SDK v7.0.0 and earlier — setAdditionalData**
+### **SDK v7.0.0 y versiones anteriores — setAdditionalData**
 
 <Tabs>
 <Tab title="Java">
@@ -251,17 +254,19 @@ AppsFlyerLib.getInstance().setAdditionalData(customDataMap)
 
 > 📘 **Note**
 >
-> You must pre-hash both values (SHA-256) before passing them in.
+> **Advertencia**
+>
+> Debes aplicar hashing previamente a ambos valores (SHA-256) antes de pasarlos.
 
-### **SDK v7.0.1 and later — setUserPhone (recommended)**
+### **SDK v7.0.1 y versiones posteriores — setUserPhone (recomendado)**
 
-#### Method signature
+#### Firma del método
 
 ```java
 public abstract void setUserPhone(String countryCode, String phoneNumber);
 ```
 
-#### Usage example
+#### Ejemplo de uso
 
 <Tabs>
 <Tab title="Java">
@@ -283,22 +288,24 @@ AppsFlyerLib.getInstance().setUserPhone("1", "(650) 555-1212")
 
 > 📘 **Note**
 >
-> Pass the country dialing code and local number as plain text. The SDK concatenates, normalizes, and hashes both values locally (SHA-256). Don't pre-hash.
+> **Nota:**
+>
+> Pasa el código de marcación del país y el número local en texto sin formato. El SDK concatena, normaliza y aplica hashing a ambos valores localmente (SHA-256). No les apliques hashing previamente.
 
-To set hashed *Email address* as an additional user identifier:
+Para establecer una dirección de correo electrónico codificada como un identificador de usuario adicional:
 
-### **SDK v7.0.0 and earlier**
+### **SDK v7.0.0 y versiones anteriores**
 
-#### Method signature
+#### Firma del método
 
 ```java
 public abstract void setUserEmails(
-  AppsFlyerProperties.EmailsCryptType cryptMethod,
+  AppsFlyerProperties. EmailsCryptType cryptMethod,
   String... emails
 );
 ```
 
-#### Usage example
+#### Ejemplo de uso
 
 <Tabs>
 <Tab title="Java">
@@ -326,15 +333,15 @@ AppsFlyerLib.getInstance().setUserEmails(
 </Tab>
 </Tabs>
 
-### **SDK v7.0.1 and later**
+### **SDK v7.0.1 y versiones posteriores**
 
-#### Method signature
+#### Firma del método
 
 ```java
 public abstract void setUserEmail(String email);
 ```
 
-#### Usage example
+#### Ejemplo de uso
 
 ```java
 AppsFlyerLib.getInstance().setUserEmail("name@domain.com");
@@ -342,25 +349,27 @@ AppsFlyerLib.getInstance().setUserEmail("name@domain.com");
 
 > 📘 **Note**
 >
-> Only a single email is accepted per call in v7.0.1 and later. Multiple emails aren't supported: calling setUserEmail again overrides the previously set value rather than adding to it.
+> **Nota:**
+>
+> Solo se acepta un único correo electrónico por llamada en la versión 7.0.1 y posteriores. No se admiten varios correos electrónicos: si vuelves a llamar a setUserEmail, se sobrescribe el valor establecido anteriormente en lugar de añadirse.
 
-## S2S reference and code samples
+## Referencia y ejemplos de código S2S
 
-When sending identifiers for Audiences via <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S</Anchor>, use the `custom_data` parameter for **all identifiers (including hashed** ***Email address***). You can send one or more identifiers.
+Al enviar identificadores para audiencias mediante <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S</Anchor>, use el parámetro <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile">para **todos los identificadores (incluyendo la dirección de correo electrónico codificada ).** Puede enviar uno o más identificadores.</Anchor>
 
-<Accordion title="Sending identifiers via S2S">
+<Accordion title="Envío de identificadores vía S2S">
 
-Format:
+Formato:
 
-* Nested JSON
-* The key value must be `audiences`
-* All values must be stringified as shown in the following code example
-* Parameter names must match those listed in the [table of available identifiers](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting), above
+* JSON anidado
+* El valor de la clave debe ser `audiences`
+* Todos los valores deben estar en formato cadena, como se muestra en el siguiente ejemplo de código
+* Los nombres de los parámetros deben coincidir con los listados en la [tabla de identificadores disponibles](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting) indicada arriba
 
-Generic format:
+Formato genérico:
 
 ```json
-"custom_data" : { 
+"custom_data" : {   
       \"audiences\" : { 
           \"parameter_name_a\" : \"hashed_identifer_a\",
           \"parameter_name_a\" : \"hashed_identifer_b\",
@@ -369,10 +378,10 @@ Generic format:
  }
 ```
 
-Populated example for hashed *Phone number* and hashed *Email address*:
+Ejemplo con valores para el *número de teléfono* codificado y la *dirección de correo electrónico* codificada:
 
 ```json
-"custom_data" : {
+"custom_data" : {  
      \"audiences\" : { 
          \"phone_number_sha256\" : \"6C91C4C640F6EF0162833260DB4F13DEC0DF2B683092F4DBA7E874BEF1ACEA37\",
          \"phone_number_e164_sha256\" : \"F3D7E96C73FB0DE1B66ACFCE541D7AF758FBD4F3FA3AF0EA4E10110000D3625E\",
@@ -385,9 +394,9 @@ Populated example for hashed *Phone number* and hashed *Email address*:
 
 > 📘 **Note**
 >
-> **See also**
+> **Véase también**
 >
-> * Audiences partner connections
-> * Audiences user identifier policy
+> * Conexiones de partners de audiencias
+> * Política de identificador de usuario de Audiencias
 
-<div data-zendesk-anchors="background=about-additional-identifiers h_01HNZNWZ9WVH11NG94P5YX5CE0=about-additional-identifiers h_01HNZNWZ9WYWFE1TTS3CWEBS8N=next-steps h_01HNZNWZ9XG5P67Y8P08JGFWFD=available-identifiers h_01HNZNWZ9X0N0D3EF9HJ76EVNJ=sdk-reference-and-code-samples h_01HNZNWZ9XCZFWA7H8BN6J6485=ios-sdk-configuration sdk-v700-and-earlier-%E2%80%94-setadditionaldata=sdk-v700-and-earlier--setadditionaldata h_01KZXZHJZCZ8XNS5Z5JQFGABEJ=sdk-v700-and-earlier--setadditionaldata sdk-v701-and-later-%E2%80%94-setuserphone-recommended=sdk-v701-and-later--setuserphone-recommended h_01KZXZHSF8PCN9A4425217F4YP=sdk-v701-and-later--setuserphone-recommended h_01KZXZF3GX0HSY4BFYX4N4BTHD=method-signature h_01KZXZF3GXN55TJ078CJKMJGSY=usage-example h_01KZXZJ3MEQPEJ73798RY3S3R9=sdk-v700-and-earlier method-signature::a8fd9cf9=method-signature-1 h_01KZXZF3GX62EV1TTA689CK59F=method-signature-1 usage-example::5a156aca=usage-example-1 h_01KZXZF3GXB5VHHYT3SJ60F94V=usage-example-1 h_01KZXZJ98R1274HPDM9T4RTYDP=sdk-v701-and-later method-signature::6246e0dd=method-signature-2 h_01KZXZF3GX9R7J1VF0ZFMJKN4Q=method-signature-2 usage-example::b5bfcf61=usage-example-2 h_01KZXZF3GXQ22XRNRP1H0TX1HG=usage-example-2 h_01HNZNWZ9XAF2K6213ZMMGKQ7T=android-sdk-configuration sdk-v700-and-earlier-%E2%80%94-setadditionaldata::6dbf5d0c=sdk-v700-and-earlier--setadditionaldata-1 h_01KZXZJGMVJQAH5XC1BPJS1DGD=sdk-v700-and-earlier--setadditionaldata-1 sdk-v701-and-later-%E2%80%94-setuserphone-recommended::1b63a185=sdk-v701-and-later--setuserphone-recommended-1 h_01KZXZJX109FSKCCRPVAA1W2Y2=sdk-v701-and-later--setuserphone-recommended-1 method-signature::bf39fa28=method-signature-3 h_01KZXZF3GX3Q6MZX5KXQJSANVK=method-signature-3 usage-example::1515fa60=usage-example-3 h_01KZXZF3GXSXDP4BBFWM7WZ74M=usage-example-3 sdk-v700-and-earlier::5989d839=sdk-v700-and-earlier-1 h_01KZXZK2H50HJVZKF65H59XVXY=sdk-v700-and-earlier-1 method-signature::9b0b0248=method-signature-4 h_01KZXZF3GXZXD09H3T922TGM7N=method-signature-4 usage-example::2bb38341=usage-example-4 h_01KZXZF3GXB7V1YK1584H0NW1G=usage-example-4 sdk-v701-and-later::16b1fdb1=sdk-v701-and-later-1 h_01KZXZK8EXXVDY8P4TR2418FXH=sdk-v701-and-later-1 method-signature::852458c4=method-signature-5 h_01KZXZF3GXX4S3P8SE4SBY6WZ2=method-signature-5 usage-example::11baa27a=usage-example-5 h_01KZXZF3GXM9Q0MQNX2ASEZ2BJ=usage-example-5 h_01HNZNWZ9XKM53TJ9Z0FHWGCYC=s2s-reference-and-code-samples" />
+<div data-zendesk-anchors="background=acerca-de-los-identificadores-adicionales h_01HNZNWZ9WVH11NG94P5YX5CE0=acerca-de-los-identificadores-adicionales next-steps=pr%C3%B3ximos-pasos h_01HNZNWZ9WYWFE1TTS3CWEBS8N=pr%C3%B3ximos-pasos available-identifiers=identificadores-disponibles h_01HNZNWZ9XG5P67Y8P08JGFWFD=identificadores-disponibles sdk-reference-and-code-samples=referencia-del-sdk-y-ejemplos-de-c%C3%B3digo h_01HNZNWZ9X0N0D3EF9HJ76EVNJ=referencia-del-sdk-y-ejemplos-de-c%C3%B3digo ios-sdk-configuration=configuraci%C3%B3n-del-sdk-para-ios h_01HNZNWZ9XCZFWA7H8BN6J6485=configuraci%C3%B3n-del-sdk-para-ios sdk-v700-and-earlier-%E2%80%94-setadditionaldata=sdk-v700-y-anteriores--setadditionaldata h_01KZXZHJZCZ8XNS5Z5JQFGABEJ=sdk-v700-y-anteriores--setadditionaldata sdk-v701-and-later-%E2%80%94-setuserphone-recommended=sdk-v701-y-versiones-posteriores--setuserphone-recomendado h_01KZXZHSF8PCN9A4425217F4YP=sdk-v701-y-versiones-posteriores--setuserphone-recomendado method-signature=firma-del-m%C3%A9todo h_01KZXZF3GX0HSY4BFYX4N4BTHD=firma-del-m%C3%A9todo usage-example=ejemplo-de-uso h_01KZXZF3GXN55TJ078CJKMJGSY=ejemplo-de-uso sdk-v700-and-earlier=sdk-v700-y-versiones-anteriores h_01KZXZJ3MEQPEJ73798RY3S3R9=sdk-v700-y-versiones-anteriores method-signature::a8fd9cf9=firma-del-m%C3%A9todo-1 h_01KZXZF3GX62EV1TTA689CK59F=firma-del-m%C3%A9todo-1 usage-example::5a156aca=ejemplo-de-uso-1 h_01KZXZF3GXB5VHHYT3SJ60F94V=ejemplo-de-uso-1 sdk-v701-and-later=sdk-v701-y-versiones-posteriores h_01KZXZJ98R1274HPDM9T4RTYDP=sdk-v701-y-versiones-posteriores method-signature::6246e0dd=firma-del-m%C3%A9todo-2 h_01KZXZF3GX9R7J1VF0ZFMJKN4Q=firma-del-m%C3%A9todo-2 usage-example::b5bfcf61=ejemplo-de-uso-2 h_01KZXZF3GXQ22XRNRP1H0TX1HG=ejemplo-de-uso-2 android-sdk-configuration=configuraci%C3%B3n-del-sdk-para-android h_01HNZNWZ9XAF2K6213ZMMGKQ7T=configuraci%C3%B3n-del-sdk-para-android sdk-v700-and-earlier-%E2%80%94-setadditionaldata::6dbf5d0c=sdk-v700-y-versiones-anteriores--setadditionaldata h_01KZXZJGMVJQAH5XC1BPJS1DGD=sdk-v700-y-versiones-anteriores--setadditionaldata sdk-v701-and-later-%E2%80%94-setuserphone-recommended::1b63a185=sdk-v701-y-versiones-posteriores--setuserphone-recomendado-1 h_01KZXZJX109FSKCCRPVAA1W2Y2=sdk-v701-y-versiones-posteriores--setuserphone-recomendado-1 method-signature::bf39fa28=firma-del-m%C3%A9todo-3 h_01KZXZF3GX3Q6MZX5KXQJSANVK=firma-del-m%C3%A9todo-3 usage-example::1515fa60=ejemplo-de-uso-3 h_01KZXZF3GXSXDP4BBFWM7WZ74M=ejemplo-de-uso-3 sdk-v700-and-earlier::5989d839=sdk-v700-y-versiones-anteriores-1 h_01KZXZK2H50HJVZKF65H59XVXY=sdk-v700-y-versiones-anteriores-1 method-signature::9b0b0248=firma-del-m%C3%A9todo-4 h_01KZXZF3GXZXD09H3T922TGM7N=firma-del-m%C3%A9todo-4 usage-example::2bb38341=ejemplo-de-uso-4 h_01KZXZF3GXB7V1YK1584H0NW1G=ejemplo-de-uso-4 sdk-v701-and-later::16b1fdb1=sdk-v701-y-versiones-posteriores-1 h_01KZXZK8EXXVDY8P4TR2418FXH=sdk-v701-y-versiones-posteriores-1 method-signature::852458c4=firma-del-m%C3%A9todo-5 h_01KZXZF3GXX4S3P8SE4SBY6WZ2=firma-del-m%C3%A9todo-5 usage-example::11baa27a=ejemplo-de-uso-5 h_01KZXZF3GXM9Q0MQNX2ASEZ2BJ=ejemplo-de-uso-5 s2s-reference-and-code-samples=referencia-y-ejemplos-de-c%C3%B3digo-s2s h_01HNZNWZ9XKM53TJ9Z0FHWGCYC=referencia-y-ejemplos-de-c%C3%B3digo-s2s" />

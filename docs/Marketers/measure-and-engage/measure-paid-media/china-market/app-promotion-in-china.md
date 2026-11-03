@@ -1,5 +1,5 @@
 ---
-title: App promotion in China
+title: Promoción de aplicaciones en China
 metadata:
   keywords:
     - Advertisers
@@ -18,46 +18,45 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2017-09-12T07:49:03Z'
-  edited_at: '2022-10-31T12:56:12Z'
+  edited_at: '2026-08-12T12:18:35Z'
   id: 115004656946
-  locale: en-us
+  locale: es
   section: China market
   section_id: 6552042145425
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115004656946-App-promotion-in-China
+  url: https://support.appsflyer.com/hc/es/articles/115004656946
 ---
-> **At a glance:** Promote your app in the Chinese market.
+> **A simple vista:** Promociona tu aplicación en el mercado chino.
 
-[**China Internet Report**](https://www.scmp.com/china-internet-report) 2020 presented by SCMP with an overview of the Chinese market
+[**China Internet Report**](https://www.scmp.com/china-internet-report) 2020 presentado por SCMP con una visión general del mercado chino
 
-* China At A Glance
-* Top trends for 2020
-* Deep-dive by sector
+* China a simple vista
+* Principales tendencias para 2020
+* Análisis detallado por sector
 
-**<Anchor target="_blank" href="https://www.appsflyer.com/resources/beyond-great-app-wall-china-guide/">The China Opportunity - 2020 Edition</Anchor>**   
-Use the playbook to understand:
+**<Anchor target="_blank" href="https://www.appsflyer.com/resources/beyond-great-app-wall-china-guide/">La oportunidad en China - Edición 2020</Anchor>**   
+Utiliza este manual para entender:
 
-* Latest market insights, many based on Chinese sources
-* Strategies for seizing new opportunities and overcoming challenges
-* How China’s Internet landscape differs from other regions
-* Step-by-step instructions on how to set up an app in China
-* Success stories from Gismart, Lightricks, SKYROCKET, and Ubisoft
+* Los insights más recientes del mercado, muchos basados en fuentes chinas
+* Estrategias para aprovechar nuevas oportunidades y superar desafíos
+* En qué se diferencia el panorama de Internet de China del de otras regiones
+* Instrucciones paso a paso sobre cómo configurar una aplicación en China
+* Casos de éxito de Gismart, Lightricks, SKYROCKET y Ubisoft
 
-**<Anchor target="_blank" href="/marketers/docs/measure-attribution-in-the-chinese-domestic-market">Android attribution guide for out-of-store-markets</Anchor>:**
+**<Anchor target="_blank" href="/marketers/es/docs/measure-attribution-in-the-chinese-domestic-market">Guía de atribución de Android para mercados fuera de las tiendas</Anchor>:**
 
-* Out-of-market challenges
-* Integrating the AppsFlyer SDK
-* Displaying attribution information in AppsFlyer using the single app solution
-* Record app store traffic
-* Identify store hijacking
+* Desafíos fuera del mercado
+* Integración del SDK de AppsFlyer
+* Mostrar información de atribución en AppsFlyer con la solución de una sola aplicación
+* Tráfico récord en la tienda de aplicaciones
+* Identificar el hijacking de la tienda
 
-**<Anchor target="_blank" href="/marketers/docs/china-domestic-market-ad-network-configuration">Key media source partners configuration guide</Anchor>**: AppsFlyer is integrated and pre-configured with all the major Chinese media sources. Meaning that both AppsFlyer and the media sources are ready and able to support your user acquisition campaigns in China.
+**<Anchor target="_blank" href="/marketers/es/docs/china-domestic-market-ad-network-configuration">Guía de configuración de partners clave de fuentes de medios</Anchor>**: AppsFlyer está integrado y preconfigurado con todas las principales fuentes de medios chinas. Esto significa que tanto AppsFlyer como las fuentes de medios están preparados y pueden dar soporte a tus campañas de adquisición de usuarios en China.
 
-App promotion in China guides :
+Guías de promoción de aplicaciones en China:
 
-* EN: <Anchor target="_blank" href="/marketers/docs/ios-app-promotion-in-china">iOS</Anchor>, <Anchor target="_blank" href="/marketers/docs/android-app-promotion-in-china">Android</Anchor>
+* EN: <Anchor target="_blank" href="/marketers/es/docs/ios-app-promotion-in-china">iOS</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/android-app-promotion-in-china">Android</Anchor>
 * CN: iOS, Android
 
-**Leading media sources in China**
+**Principales fuentes de medios en China**
 
 [![mceclip0.png](https://files.readme.io/2f4e6946c1003c0a94e3bc5fbe9d4ffd9b506032c631b7ae6fc154dd260bdd84-360003554077.png)](https://files.readme.io/2f4e6946c1003c0a94e3bc5fbe9d4ffd9b506032c631b7ae6fc154dd260bdd84-360003554077.png)

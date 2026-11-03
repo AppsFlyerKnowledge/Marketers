@@ -1,5 +1,5 @@
 ---
-title: CleverTap integration with AppsFlyer
+title: Integración de CleverTap con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -16,147 +16,145 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2018-07-12T06:26:58Z'
-  edited_at: '2026-06-16T11:23:22Z'
+  edited_at: '2026-08-12T11:58:41Z'
   id: 360001299165
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001299165-CleverTap-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/360001299165
 ---
-> **At a glance:** CleverTap is a modern, integrated retention cloud that empowers digital consumer brands to increase customer retention and lifetime value.
+> **De un vistazo:** CleverTap es una nube de retención moderna e integrada que permite a las marcas digitales orientadas al consumidor aumentar la retención de clientes y el valor del ciclo de vida del cliente.
 
 <Image alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up CleverTap
+## Configuración de CleverTap
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below:
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación:
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-This toggle must be enabled for as long as you work with the partner.  
-Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
+Este selector debe estar activado mientras trabajes con el partner.  
+Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activación del partner</Anchor>.
 
-### General settings
+### Configuración general
 
-**Account Token**
+**Token de cuenta**
 
-CleverTap connects with AppsFlyer via a unique Account Token, Region, Account Passcode, and Account ID. If you don't already have them, you must obtain them from CleverTap to continue with the integration or follow the steps below.
+CleverTap se conecta con AppsFlyer mediante un token de cuenta único, una región, un código de acceso de cuenta y un ID de cuenta. Si aún no los tienes, debes obtenerlos de CleverTap para continuar con la integración o seguir los pasos que se indican a continuación.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> To allow sending postbacks to CleverTap, make sure to complete **both** of the following steps:
+> Para permitir el envío de postbacks a CleverTap, asegúrate de completar **ambos** pasos siguientes:
 >
-> * Complete at least **one** of the following fields: account\_token, account\_passcode, or account\_id
-> * In the AppsFlyer SDK, set the value of Customer User ID (<Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">iOS, Android</Anchor>). See [CleverTap documentation](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration) for guidelines on which parameter is recommended to use as your Customer User ID. Note that in case Customer User ID is empty, postbacks won't be sent to CleverTap.
+> * Completa al menos **uno** de los siguientes campos: account\_token, account\_passcode o account\_id
+> * En el SDK de AppsFlyer, configura el valor del ID de usuario del cliente (<Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">iOS, Android</Anchor>). Consulta la [documentación de CleverTap](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration) para obtener directrices sobre qué parámetro se recomienda usar como ID de usuario del cliente. Ten en cuenta que, si el ID de usuario del cliente está vacío, no se enviarán postbacks a CleverTap.
 
 ![CleverTap_msc_new_2.png](https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png)
 
-### Obtain CleverTap account token
+### Obtener el token de cuenta de CleverTap
 
-**To obtain account tokens from CleverTap:**
+**Para obtener tokens de cuenta de CleverTap:**
 
-1. In the CleverTap dashboard, go to **Settings** in the top-right corner.
+1. En el dashboard de CleverTap, ve a **Settings**, en la esquina superior derecha.
 
    ![CleverTap_msc_new_4.png](https://files.readme.io/2fd248582c3e267b2eaacfc6bf49068bdd4c6811b066c8286f0059e18d8535ae-360002541969.png)  
-   At the very top of the “Settings” view, you’ll see your CleverTap Account ID, Account token, and Passcode next to "Account ID", “Account token”, and “Passcode”, respectively:
+   En la parte superior de la vista «Settings», verás el ID de cuenta, el token de cuenta y el código de acceso de tu cuenta de CleverTap junto a «Account ID», «Account token» y «Passcode», respectivamente:
 
    ![CleverTap_msc_new_5.png](https://files.readme.io/795086dfc16cdee369b470e0b598b5089fff6469c77d0ccbf929e230d94191c8-360002537945.png)
-2. To reveal the values, click the ‘eye’ icons next to each field.
-3. Copy the values and paste them into the AppsFlyer CleverTap page.
+2. Para mostrar los valores, haz clic en los iconos de «ojo» junto a cada campo.
+3. Copia los valores y pégalos en la página de CleverTap de AppsFlyer.
 
-   > 📘 **Note**
+   > 📘 **Nota:**
    >
-   > * The region depends on the CleverTap dashboard URL for your account:
-   > * If your account URL is <Anchor target="_blank" href="https://eu1.dashboard.clevertap.com/">https://eu1.dashboard.clevertap.com</Anchor>, the region is EU1, meaning that the account data is hosted in an EU-based data center.
-   > * If your account URL is <Anchor target="_blank" href="https://in1.dashboard.clevertap.com">https://in1.dashboard.clevertap.com</Anchor>, the region is IN1, meaning that the account data is hosted in an IN-based data center.
-   > * If your account URL is [https://aps3.dashboard.clevertap.com](https://aps3.dashboard.clevertap.com), the region is ID, meaning that the account data is hosted in an Indonesia-based data center.* The region setting is case-sensitive and must be used with capital letters only. When lowercase letters are used, the postback will be sent to the default server (EU1).
+   > * La región depende de la URL del dashboard de CleverTap de tu cuenta:
+   > * Si la URL de tu cuenta es <Anchor target="_blank" href="https://eu1.dashboard.clevertap.com/">https://eu1.dashboard.clevertap.com</Anchor>, la región es EU1, lo que significa que los datos de la cuenta se alojan en un centro de datos de la UE.
+   > * Si la URL de tu cuenta es <Anchor target="_blank" href="https://in1.dashboard.clevertap.com">https://in1.dashboard.clevertap.com</Anchor>, la región es IN1, lo que significa que los datos de la cuenta se alojan en un centro de datos con sede en IN.
+   > * Si la URL de tu cuenta es [https://aps3.dashboard.clevertap.com](https://aps3.dashboard.clevertap.com), la región es ID, lo que significa que los datos de la cuenta se alojan en un centro de datos de Indonesia.* La configuración de región distingue entre mayúsculas y minúsculas y debe usarse únicamente con letras mayúsculas. Si usas letras minúsculas, el postback se enviará al servidor predeterminado (EU1).
 
-4. Finalize the integration according to <Anchor target="_blank" href="https://developer.clevertap.com/docs/appsflyer#section-step-2-integration">CleverTap's documentation</Anchor>.
+4. Finaliza la integración según la <Anchor target="_blank" href="https://developer.clevertap.com/docs/appsflyer#section-step-2-integration">documentación de CleverTap</Anchor>.
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to CleverTap following user installs. Use this section to define the source of the users that the postbacks are sent to for each event. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
+AppsFlyer puede enviar postbacks automáticos a CleverTap tras las instalaciones de los usuarios. Utiliza esta sección para definir la fuente de los usuarios a los cuales se envían los postbacks de cada evento. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks predeterminados</Anchor>.
 
 ![clevertap-default-postbacks_en-us.png](https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png)
 
-**To send postbacks for any user that downloads the app to CleverTap:** select **All media sources, including organic**.
+**Para enviar postbacks de cualquier usuario que descargue la aplicación a CleverTap:** selecciona **Todas las fuentes de medios, incluidas las orgánicas**.
 
-### In-app events settings
+### Configuración de eventos in-app
 
 ![clevertap-in-app-events_en-us.png](https://files.readme.io/2ccc8a5a62cd601c45647d72caff0d94af814f78d9e1a8ae1548f973ed4c554f-360014005017.png)
 
-In this section, you map AppsFlyer events with the partner via postbacks.  
-Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">in-app event postbacks.</Anchor>
+En esta sección, asignas los eventos de AppsFlyer al partner mediante postbacks.  
+Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">postbacks de eventos in-app.</Anchor>
 
-**To configure in-app events postbacks:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Enter all the required tokens.
-2. Enable **In-app event postback.**
-3. Click **Add Event** to add an SDK Event to the list.
-4. Select the **SDK event name** from the dropdown menu.
-5. Select the required option from the Send revenue dropdown menu:
-   * **No values & no revenue:** sends only the event itself without the event value.
-   * **Values & no revenue:** sends all the parameters excluding the revenue value.
-   * **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).
-6. To complete the integration configuration, click **Save Integration**.
+1. Introduce todos los tokens necesarios.
+2. Habilita los **postbacks de eventos in-app.**
+3. Haz clic **Agregar evento** para añadir un evento del SDK a la lista.
+4. Selecciona el **nombre del evento de SDK** en el menú desplegable.
+5. Selecciona la opción requerida en el menú desplegable Enviar ingresos:
+   * **Sin valores ni ingresos:** envía solo el evento en sí sin el valor del evento.
+   * **Con valores y sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.
+   * **Con valores e ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento).
+6. Para completar la configuración de la integración, haz clic en **Guardar integración**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for this partner.
+Los enlaces de atribución no están disponibles para este partner.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not applicable for this partner.
+Los datos de costos no se aplican a este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue data is not applicable for this partner.
+Los datos de ingresos por publicidad no se aplican a este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for CleverTap.
+Los permisos no están disponibles para CleverTap.
 
 </Accordion>
 
-## Measure CleverTap owned media
+## Medir los medios propios de CleverTap
 
-Since CleverTap is a platform that uses emails, SMS, push notifications, etc., for marketing automation purposes, you can use <Anchor target="_blank" href="/marketers/docs/onelink-guide">AppsFlyer OneLink</Anchor> as a solution for measuring owned media that originates from CleverTap.
+Como CleverTap es una plataforma que utiliza correos electrónicos, SMS, notificaciones push, etc. con fines de Automatización de marketing, puedes usar <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">AppsFlyer OneLink</Anchor> como solución para medir los medios propios que se originan en CleverTap.
 
-<div data-zendesk-anchors="h_01H9FK5JT1TM77CAH0JTDCV376=important h_01H9FK5JT1ATCHY6WAVB6E2YEW=setting-up-clevertap h_01HKW9C39FKN3QN21NKDS6N3BQ=integration-tab h_01H9FK5JT12Z1M6WW3GQQF5QVN=activate-partner h_01H9FK5JT1FMC6JANBP9KBB0V2=general-settings h_01H9FK5JT1MQKT7KWJ3EVNEA1E=important-1 h_01H9FK5JT1RVJ1V0CGXSH1XZPM=obtain-clevertap-account-token h_01H9FK5JT2QV9CKSZ1N3S4WTGE=note h_01H9FK5JT2CE0WQ9HAGVGAQA5B=default-postbacks inapp-events-settings=in-app-events-settings h_01H9FK5JT2YS7G5WDD4F5MPYVZ=in-app-events-settings h_01H9FK5JT2939VDXQCDDG7MZ0R=attribution-link-tab h_01H9FK5JT2AEDDCD11K77WJHBX=cost-tab h_01H9FK5JT2WYWRGZAS1HBYYBSJ=ad-revenue-tab h_01H9FK5JT2FD6WN3Z1RET108JZ=permissions-tab h_01H9FK5JT2AZTT5936DD88ZZV3=measure-clevertap-owned-media" />
+<div data-zendesk-anchors="h_01H9FK5JT1TM77CAH0JTDCV376=importante setting-up-clevertap=configuraci%C3%B3n-de-clevertap h_01H9FK5JT1ATCHY6WAVB6E2YEW=configuraci%C3%B3n-de-clevertap h_01HKW9C39FKN3QN21NKDS6N3BQ=integration-tab activate-partner=activar-socio h_01H9FK5JT12Z1M6WW3GQQF5QVN=activar-socio general-settings=configuraci%C3%B3n-general h_01H9FK5JT1FMC6JANBP9KBB0V2=configuraci%C3%B3n-general h_01H9FK5JT1MQKT7KWJ3EVNEA1E=importante-1 obtain-clevertap-account-token=obtener-el-token-de-cuenta-de-clevertap h_01H9FK5JT1RVJ1V0CGXSH1XZPM=obtener-el-token-de-cuenta-de-clevertap h_01H9FK5JT2QV9CKSZ1N3S4WTGE=nota default-postbacks=postbacks-predeterminados h_01H9FK5JT2CE0WQ9HAGVGAQA5B=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01H9FK5JT2YS7G5WDD4F5MPYVZ=configuraci%C3%B3n-de-eventos-in-app h_01H9FK5JT2939VDXQCDDG7MZ0R=attribution-link-tab h_01H9FK5JT2AEDDCD11K77WJHBX=cost-tab h_01H9FK5JT2WYWRGZAS1HBYYBSJ=ad-revenue-tab h_01H9FK5JT2FD6WN3Z1RET108JZ=permissions-tab measure-clevertap-owned-media=medir-los-medios-propios-de-clevertap h_01H9FK5JT2AZTT5936DD88ZZV3=medir-los-medios-propios-de-clevertap" />

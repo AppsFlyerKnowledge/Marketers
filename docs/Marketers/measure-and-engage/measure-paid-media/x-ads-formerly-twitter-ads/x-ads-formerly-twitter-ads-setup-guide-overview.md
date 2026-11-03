@@ -1,5 +1,5 @@
 ---
-title: X Ads (formerly Twitter Ads) setup guide—overview
+title: 'Guía de configuración de X Ads (anteriormente Twitter Ads):'
 metadata:
   keywords:
     - Advertisers
@@ -13,48 +13,47 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-11-09T09:31:36Z'
-  edited_at: '2023-11-23T12:16:22Z'
+  edited_at: '2026-08-12T12:22:35Z'
   id: 4410464316049
-  locale: en-us
+  locale: es
   section: X Ads (formerly Twitter Ads)
   section_id: 6551370375569
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4410464316049-X-Ads-formerly-Twitter-Ads-setup-guide-overview
+  url: https://support.appsflyer.com/hc/es/articles/4410464316049
 ---
-> **At a glance:** Learn the background of integrating your X Ads account with AppsFlyer.
+> **En resumen:** Aprende el concepto de la integración de tu cuenta de X Ads con AppsFlyer.
 
-<Image alt="X Ads logo.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
+<Image alt="Logotipo_X_Ads.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
 
-## Mobile app promotion on X Ads
+## Promoción de aplicaciones móviles en X Ads
 
-X Ads Mobile App Promotion is a method to promote apps on X Ads. It enables advertisers to promote their mobile apps with great App card design driving installs, app engagement, and deep linking. App users can easily install and engage with apps directly from the X Ads timeline.
+La promoción de aplicaciones móviles en X Ads es un método para promocionar aplicaciones en X Ads. Permite que los anunciantes promocionen sus aplicaciones móviles mediante un diseño genial de tarjeta para las aplicaciones que impulse las instalaciones, el engagement en la aplicación y los deep linking. Los usuarios pueden instalar con facilidad las aplicaciones e interactuar con ellas directamente desde su cronología de X Ads.
 
-## X Ads user privacy
+## Privacidad del usuario de X Ads
 
-X Ads users can control how they share information with advertisers:
+Los usuarios de X Ads pueden controlar cómo comparten información con los anunciantes:
 
-* If user settings are set to prevent sharing of their engagement information with advertisers, their X Ads-driven installs and in-app events are omitted from raw data but are still attributed to X Ads.
-* Aggregate attribution data reflect correctly in AppsFlyer and is not impacted by the X Ads policy.
-* As a result, X Ads aggregate and raw data reports don't correlate.
+* Si la configuración de los usuarios se establece para evitar el intercambio de la información de engagement con los anunciantes, sus instalaciones y eventos in-app de X Ads se omiten del raw data, pero aún se atribuyen a X Ads.
+* Los datos de atribución agregados se reflejan correctamente en AppsFlyer y no se ven afectados por la política de X Ads.
+* Como resultado, los reportes de datos agregados y raw data de X Ads no se correlacionan.
 
-Beginning July 31, 2021, advertisers who are not in the X Ads Advanced Mobile Measurement (AMM) program will stop receiving all X Ads MACT user-level data.
+A partir del 31 de julio de 2021, los anunciantes que no estén en el programa de medición móvil avanzada (AMM) de X Ads dejarán de recibir todos los datos a nivel de usuario de X Ads MACT.
 
-Through the AMM Program, advertisers may receive more complete user-level data after granting X Ads the right to perform an audit to ensure that X Ads data is being used exclusively for measurement purposes. This is consistent with applicable data protection law and common practices throughout the industry.  
-**To join the AMM program:** Go to ads.twitter.com/help > **Mobile App, Conversion Tracking & Audience Manager,** and select **Advanced Mobile Measurement Program Agreement Form**.
+A través del programa AMM, los anunciantes pueden recibir datos a nivel de usuario más completos después de otorgar a X Ads el derecho a realizar una auditoría para garantizar que los datos de X Ads se utilicen exclusivamente con fines de medición. Esto es consistente con la ley de protección de datos aplicable y las prácticas comunes en toda la industria.  
+**Para unirse al programa AMM:** Ve a ads.twitter.com/help > **Aplicación móvil, seguimiento de conversiones y administrador de audiencias**, y selecciona **Formulario de acuerdo del programa de Medición Móvil Avanzada**.
 
-Note that user-level data received prior to joining the AMM program, can't be exported.
+Ten en cuenta que los datos a nivel de usuario recibidos antes de unirte al programa AMM no se pueden exportar.
 
-For more detailed information, contact your X Ads Account Manager.
+Para más información, contacta con tu administrador de cuentas de X Ads.
 
-## X Ads and AppsFlyer SKAN interoperation
+## Interoperación de X Ads y AppsFlyer SKAN
 
-X Ads sends SKAdNetwork postback data via a dedicated API. SKAN data from X Ads will be displayed in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN dashboard</Anchor>.
+X Ads envía los datos de postbacks de SKAdNetwork a través de una API dedicada. Los datos de SKAN de X Ads se mostrarán en el dashboard de <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN</Anchor>.
 
-X Ads enriches SKAN postbacks with the following data fields:
+X Ads enriquece los postbacks de SKAN con los siguientes campos de datos:
 
-* Campaign name
-* Campaign ID
-* Adset name
-* Adset ID
+* Nombre de la campaña
+* ID de campaña
+* Nombre del conjunto de anuncios
+* ID del adset
 
-<div data-zendesk-anchors="mobile-app-promotion-on-twitter=mobile-app-promotion-on-x-ads h_01H9QR6TH7M0H5YMXRWVVAYRK9=mobile-app-promotion-on-x-ads twitter-user-privacy=x-ads-user-privacy h_01H9QR6TH74R50K00H7FYN61KC=x-ads-user-privacy twitter-ads-and-appsflyer-skan-interoperation=x-ads-and-appsflyer-skan-interoperation h_01H9QR6TH74PKBGM5RC4M118GE=x-ads-and-appsflyer-skan-interoperation" />
+<div data-zendesk-anchors="mobile-app-promotion-on-twitter=promoci%C3%B3n-de-aplicaciones-m%C3%B3viles-en-x-ads h_01H9QR6TH7M0H5YMXRWVVAYRK9=promoci%C3%B3n-de-aplicaciones-m%C3%B3viles-en-x-ads twitter-user-privacy=privacidad-del-usuario-de-x-ads h_01H9QR6TH74R50K00H7FYN61KC=privacidad-del-usuario-de-x-ads twitter-ads-and-appsflyer-skan-interoperation=interoperaci%C3%B3n-de-x-ads-y-appsflyer-skan h_01H9QR6TH74PKBGM5RC4M118GE=interoperaci%C3%B3n-de-x-ads-y-appsflyer-skan" />

@@ -1,5 +1,5 @@
 ---
-title: Account settings
+title: Configuración de la cuenta
 metadata:
   keywords:
     - Marketers
@@ -12,88 +12,87 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2026-03-15T11:09:02Z'
-  edited_at: '2026-04-16T19:36:10Z'
+  edited_at: '2026-08-12T12:03:42Z'
   id: 44784756352273
-  locale: en-us
+  locale: es
   section: Account management
   section_id: 6551191075473
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/44784756352273-Account-settings
+  url: https://support.appsflyer.com/hc/es/articles/44784756352273
 ---
-> **At a glance:** Use the **Account settings** page to manage your personal profile, account-level settings, and AI capabilities from one single place.
+> **En resumen:** Utiliza la página de **Configuración de la cuenta** para gestionar tu perfil personal, la configuración a nivel de cuenta y las capacidades de IA desde un solo lugar.
 
-## **About Account settings**
+## **Acerca de la configuración de la cuenta**
 
-The **Account settings** page has three tabs:
+La página de **Configuración de la cuenta** tiene tres pestañas:
 
-* [**Profile**](/docs/account-settings#profile): Your personal account details
-* [**Account**](/docs/account-settings#account): Account-level settings
-* [**AI capabilities**](/docs/account-settings#ai-capabilities): Controls for AI-powered products and access
+* [**Perfil**](/docs/account-settings#perfil): Los detalles de tu cuenta personal
+* [**Cuenta**](/docs/account-settings#cuenta): Configuraciones a nivel de cuenta
+* [**Capacidades**](/docs/account-settings#capacidades-de-ia): Controles para productos impulsados por IA y acceso
 
-## **Profile**
+## **Perfil**
 
-The **Profile** section displays your personal account details, such as account name, owner email, website, and account ID.
+La sección de **Perfil** muestra los detalles de tu cuenta personal, como el nombre de la cuenta, correo electrónico del propietario, sitio web y el ID de la cuenta.
 
-Use this section to review your account information and update supported profile fields.
+Utiliza esta sección para revisar la información de tu cuenta y actualizar los campos de perfil admitidos.
 
-## **Account**
+## **Cuenta**
 
-The **Account** section includes account-level security settings. Additional self-service account settings may be added over time
+La sección de **Cuenta** incluye la configuración de seguridad a nivel de cuenta. Se pueden agregar configuraciones adicionales de auto-servicio para la cuenta con el tiempo
 
-### <Anchor target="_blank" href="/marketers/docs/dev-key-management">**Unique Dev Key**</Anchor>
+### <Anchor target="_blank" href="/marketers/es/docs/dev-key-management">**Unique Dev Key**</Anchor>
 
-The **Unique Dev Key** setting controls whether AppsFlyer creates a unique Dev key for each new app.
+La configuración de la **Unique Dev Key** controla si AppsFlyer crea una clave de desarrollo única para cada nueva aplicación.
 
-When the **create a unique Dev key per app for future apps** is enabled, A unique Dev Key will automatically be created for each newly added app.
+Cuando se habilita la opción de **crear una Unique Dev Key por aplicación para futuras aplicaciones**, se generará automáticamente una nueva y única para cada aplicación añadida recientemente.
 
-Note: This setting applies only to apps created after the setting is turned on. It doesn’t change the Dev keys of existing apps.
+Nota: Esta configuración solo se aplica a las aplicaciones creadas después de que se active la opción. No cambia las Dev Keys de las aplicaciones existentes.
 
-## **AI capabilities**
+## **Capacidades de IA**
 
-The **AI capabilities** section lets admins manage which supported AI-powered products are available for the account.
+La sección de **capacidades de IA** permite a los administradores gestionar qué productos impulsados por IA están disponibles para la cuenta.
 
-### <Anchor target="_blank" href="/marketers/docs/ai-assistant">AI Assistant</Anchor>
+### <Anchor target="_blank" href="/marketers/es/docs/ai-assistant">Asistente de IA</Anchor>
 
-The AI Assistant is your own virtual analyst and platform knowledge helper in AppsFlyer. Use it to uncover insights, measure performance, identify top and low performers, uncover campaign trends, and explore visual insights like tables and charts, right from any page in the platform.
+El Asistente de IA es tu propio analista virtual y ayudante de conocimiento de la plataforma en AppsFlyer. Utilízalo para descubrir insights, medir el rendimiento, identificar los mejores y peores desempeños, descubrir tendencias de campañas y explorar insights visuales como tablas y gráficos, directamente desde cualquier página de la plataforma.
 
-### <Anchor target="_blank" href="/marketers/docs/beta-appsflyer-mcp">AppsFlyer MCP</Anchor>
+### <Anchor target="_blank" href="/marketers/es/docs/beta-appsflyer-mcp">AppsFlyer MCP</Anchor>
 
-The AppsFlyer MCP connects your AppsFlyer data to any large language model (LLM), like Claude or VS Code. Ask questions, get performance insights, and take action directly in your AI chat
+El MCP de AppsFlyer conecta tus datos de AppsFlyer a cualquier modelo de lenguaje grande (LLM), como Claude o VS Code. Haz preguntas, obtén insights sobre el rendimiento y toma medidas directamente en tu chat de IA.
 
-MCP is enabled by default for all accounts.
+MCP está habilitado de forma predeterminada para todas las cuentas.
 
-To disable MCP, go to **Account & Profile > AI capabilities**.
+Para deshabilitar MCP, ve a **Cuenta & perfil > Capacidades de IA**.
 
-When the MCP is disabled:
+Deshabilitando el MCP:
 
-* Users can no longer access AppsFlyer data through the MCP in external AI tools.
-* Existing connections may continue working until the current session expires.
-* Doesn’t affect regular API connections
-* Doesn’t affect other AI capabilities in AppsFlyer
+* Los usuarios ya no pueden acceder a los datos de AppsFlyer a través del MCP en herramientas de IA externas.
+* Las conexiones existentes pueden seguir funcionando hasta que expire la sesión actual.
+* No afecta las conexiones API regulares
+* No afecta otras capacidades de IA en AppsFlyer
 
-**Important:** If an MCP token is in use, you must delete it first in **Security Center > AppsFlyer Tokens**.
+**Importante:** Si se está utilizando un token MCP, primero debes eliminarlo en **Centro de Seguridad > Tokens de AppsFlyer**.
 
-### <Anchor target="_blank" href="/marketers/docs/beta-agent-hub-overview">Agent Hub</Anchor>
+### <Anchor target="_blank" href="/marketers/es/docs/beta-agent-hub-overview">Hub de agentes</Anchor>
 
-The Agent Hub is AppsFlyer’s centralized platform for managing AI-driven agents that proactively deliver actionable marketing insights directly into your workflow. These agents constantly analyze your data to deliver valuable outputs and recommend actionable steps, all within your team's collaborative environment.
+El Agent Hub es la plataforma centralizada de AppsFlyer para gestionar agentes impulsados por IA que ofrecen insights de marketing procesables de forma proactiva directamente en tu flujo de trabajo. Estos agentes analizan constantemente tus datos para ofrecer resultados valiosos y recomendar pasos procesables, todo ello dentro del entorno colaborativo de tu equipo.
 
-This setting is available to admins only and is enabled by default.
+Esta configuración solo está disponible para administradores y está habilitada de forma predeterminada.
 
-Disabling Agent Hub:
+Deshabilitar Agent Hub:
 
-* Users can no longer access Agent Hub.
-* All existing agents are permanently deleted and can’t be restored.
-* Any active agent runs stop.
-* If Agent Hub is enabled again later, users can access it again, but must create agents from scratch.
+* Los usuarios ya no tienen acceso a Agent Hub.
+* Todos los agentes existentes se eliminarán de forma permanente y no podrán restaurarse.
+* Todas las ejecuciones activas de agentes se detendrán.
+* Si Agent Hub se vuelve a habilitar más adelante, los usuarios podrán acceder a él nuevamente, pero deberán crear agentes desde cero.
 
-## **Permissions**
+## **Permisos**
 
-What you can view or edit on the **Account settings** page depends on your user permissions.
+Lo que puedes ver o editar en la página **Configuración de la cuenta** depende de tus permisos de usuario.
 
-In general:
+En general:
 
-* All users may not see the same settings
-* Some settings may be view-only
-* Admin permissions may be required to change account-level or AI-related controls
+* No todos los usuarios pueden ver la misma configuración
+* Algunas configuraciones pueden ser solo de visualización
+* Se pueden requerir permisos de administrador para cambiar controles a nivel de cuenta o relacionados con la IA
 
-<div data-zendesk-anchors="h_01KKRJZMP6CDDSJ6RK8QN4T30A=about-account-settings h_01KKRJZMP81BHTCA01W22CRQYG=profile h_01KKRJZMP9PQB0BZQ0931D23AH=account h_01KKRJZMPA9YTMGY0A3A883T0N=unique-dev-key h_01KKRJZMPCAMQFZM3MKQBTYFVD=ai-capabilities h_01KKRJZMPCQJBRRA0EM2EF4BYB=ai-assistant h_01KKRJZMPDZQKY9VV25EKCP5YE=appsflyer-mcp h_01KKRJZMPEHQHPRJEH9PSDTT00=agent-hub h_01KKRJZMPFQJK110AW1CDS23CW=permissions" />
+<div data-zendesk-anchors="about-account-settings=acerca-de-la-configuraci%C3%B3n-de-la-cuenta h_01KKRJZMP6CDDSJ6RK8QN4T30A=acerca-de-la-configuraci%C3%B3n-de-la-cuenta profile=perfil h_01KKRJZMP81BHTCA01W22CRQYG=perfil account=cuenta h_01KKRJZMP9PQB0BZQ0931D23AH=cuenta h_01KKRJZMPA9YTMGY0A3A883T0N=unique-dev-key ai-capabilities=capacidades-de-ia h_01KKRJZMPCAMQFZM3MKQBTYFVD=capacidades-de-ia ai-assistant=asistente-de-ia h_01KKRJZMPCQJBRRA0EM2EF4BYB=asistente-de-ia h_01KKRJZMPDZQKY9VV25EKCP5YE=appsflyer-mcp agent-hub=hub-de-agentes h_01KKRJZMPEHQHPRJEH9PSDTT00=hub-de-agentes permissions=permisos h_01KKRJZMPFQJK110AW1CDS23CW=permisos" />

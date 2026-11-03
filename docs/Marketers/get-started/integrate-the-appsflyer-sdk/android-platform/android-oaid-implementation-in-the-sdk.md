@@ -1,5 +1,5 @@
 ---
-title: Android OAID implementation in the SDK
+title: Implementación del OAID de Android en el SDK
 metadata:
   keywords:
     - China
@@ -13,90 +13,89 @@ x-zendesk:
     - Marketers
     - Web Attribution
   created_at: '2020-02-27T20:21:05Z'
-  edited_at: '2023-11-27T15:49:37Z'
+  edited_at: '2024-06-13T19:08:40Z'
   id: 360006278797
-  locale: en-us
+  locale: es
   section: Android platform
   section_id: 6551190827921
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360006278797-Android-OAID-implementation-in-the-SDK
+  url: https://support.appsflyer.com/hc/es/articles/360006278797
 ---
-> **At a glance:** Collect the Android OAID to attribute installs from third-party Android app stores.
+> **En resumen:** Recopila el OAID de Android para atribuir las instalaciones de tiendas de aplicaciones Android de terceros.
 
-## About OAID
+## Acerca del OAID
 
-The Open Anonymous Device Identifier (OAID) is a user-resettable unique identifier for Android devices. It was introduced by the Mobile Security Alliance (MSA), China Information and Communication Research Institute, and device manufacturers, as a privacy-preserving alternative to non-resettable device identifiers like IMEI.
+El identificador de dispositivo anónimo abierto (OAID) es un identificador único que el usuario puede restablecer para dispositivos Android. Fue presentado por la Mobile Security Alliance (MSA), el Instituto de Investigación de la Información y las Comunicaciones de China y los fabricantes de dispositivos, como una alternativa para preservar la privacidad a los identificadores de dispositivos que no se pueden restablecer, como el IMEI.
 
-The OAID is usually used for ad measurement and install attribution on devices where Google Play Services aren't available (meaning where Google Advertising ID does not exist).
+El OAID generalmente se usa para la medición de anuncios y la atribución de instalaciones en dispositivos donde los servicios de Google Play no están disponibles (es decir, donde el ID de publicidad de Google no existe).
 
-<span id="supported-devices"></span>The OAID is readable on all devices using an SDK provided by the MSA, or on Huawei devices using the Huawei Mobile Service (HMS) Core SDK.
+<span id="supported-devices"></span>El OAID se puede leer en todos los dispositivos que utilizan un SDK proporcionado por MSA, o en dispositivos Huawei que utilizan el SDK principal de Huawei Mobile Service (HMS).
 
-## Integration
+## Integración
 
-The integration of OAID consists of 3 steps:
+La integración del OAID consta de 3 pasos:
 
-1. Integrating an SDK to generate and provide the OAID (either the MSA SDK or Huawei HMS SDK).
-2. Integrating the AppsFlyer OAID plugin module.
-3. Integrating the AppsFlyer SDK.
+1. Integración de un SDK para generar y proporcionar el OAID (ya sea el SDK de MSA o el SDK de Huawei HMS).
+2. Integración del módulo de plugin de OAID de AppsFlyer.
+3. Integración del SDK de AppsFlyer.
 
-**Note**:
+**Nota**:
 
-* For apps that are intended to be used in China, the MSA SDK must be used.
-* For apps that are intended to be used globally on Huawei devices, the Huawei HMS library should be used.
+* Para aplicaciones destinadas a ser utilizadas en China, se debe utilizar el SDK de MSA.
+* Para aplicaciones destinadas a ser utilizadas a nivel global en dispositivos Huawei, se debe utilizar la biblioteca de Huawei HMS.
 
 <div id="msa-sdk" />
 
-<Accordion title="MSA SDK">
+<Accordion title="SDK de MSA">
 
-**To integrate and use the MSA SDK**:
+**Para integrar y utilizar el SDK de MSA**:
 
-1. Follow the instructions on the [MSA website](http://www.msa-alliance.cn/col.jsp?id=120) to register your app.
-   * Registering allows you to download the SDK.
-   * As part of the registration process, you receive a certificate file that needs to be added into the app.
-2. Tell your developers to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#msa-sdk-integration">integration instructions</Anchor>.
+1. Sigue las instrucciones en el [sitio web de MSA](http://www.msa-alliance.cn/col.jsp?id=120) para registrar tu aplicación.
+   * Registrarla te permite descargar el SDK.
+   * Como parte del proceso de registro, recibes un archivo de certificado que debe agregarse a la aplicación.
+2. Diles a tus desarrolladores que sigan sus <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#msa-sdk-integration">instrucciones de integración</Anchor>.
 
 </Accordion>
 
 <div id="huawei-hms-sdk" />
 
-<Accordion title="Huawei HMS SDK">
+<Accordion title="SDK de Huawei HMS">
 
-**To integrate and use the Huawei HMS SDK**:
+**Para integrar y utilizar el SDK de Huawei HMS**:
 
-* Tell your developers to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#huawei-hms-sdk-integration">integration instructions</Anchor>.
+* Diles a tus desarrolladores que sigan sus <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#huawei-hms-sdk-integration">instrucciones de integración</Anchor>.
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="opting-out-of-oaid-collection" />
 
-<Accordion title="Opting out of OAID collection">
+<Accordion title="Exclusión de la recopilación del OAID">
 
-Once the OAID integration is complete, the SDK attempts to collect OAID automatically. If you want to prevent the collection of OAID for certain users, tell the developer to use of the following:
+Una vez que se completa la integración del OAID, el SDK intenta recopilar el OAID automáticamente. Si quieres evitar la recopilación del OAID para ciertos usuarios, pide al desarrollador que utilice lo siguiente:
 
 <Tabs>
-<Tab title="Android">
+<Tab title="Unity">
 
-<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid">setCollectOAID(false) API</Anchor> or <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers">setDisableAdvertisingIdentifiers</Anchor>
+<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid">setCollectOAID(false) API</Anchor> o <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers">setDisableAdvertisingIdentifiers</Anchor>
 
 </Tab>
 
-<Tab title="Unity">
+<Tab title="Android">
 
-<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setcollectoaid">setCollectOAID(false) API</Anchor> or <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setdisableadvertisingidentifiers">setDisableAdvertisingIdentifiers</Anchor>
+<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setcollectoaid">setCollectOAID(false) API</Anchor> o <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setdisableadvertisingidentifiers">setDisableAdvertisingIdentifiers</Anchor>
 
 </Tab>
 </Tabs>
 
 <div id="setting-oaid-manually" />
 
-<Accordion title="Setting OAID manually">
+<Accordion title="Configuración manual del OAID">
 
-If your app already collects OAID, you can skip the AppsFlyer OAID plugin integration and simply set the OAID value into the AppsFlyer SDK manually, using the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#setting-oaid-manually">setOaidData API</Anchor>.
-
-</Accordion>
+Si tu aplicación ya recopila el OAID, puedes omitir la integración del plugin de OAID de AppsFlyer y simplemente configurar el valor de OAID en el SDK de AppsFlyer manualmente, utilizando la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#setting-oaid-manually">API setOaidData</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HG8PXBZS1SN3SY3AAH1EKMNP=about-oaid h_01HG8PXBZS26P9X1TQ7J4WQNF5=integration h_01HG8PXBZSM0QYQE4C9S1FBFB1=msa-sdk h_01HG8PXBZS3HP9X1AZ7HQ8C34Y=huawei-hms-sdk h_01HG8PXBZSW5HNTTDRQ7DFFF4D=additional-information h_01HG8PXBZS8Z3MTQWFN5R6FFA8=opting-out-of-oaid-collection h_01HG8PXBZSYNS8R1PCW4YXHFBA=setting-oaid-manually" />
+</Accordion>
+
+<div data-zendesk-anchors="about-oaid=acerca-del-oaid h_01HG8PXBZS1SN3SY3AAH1EKMNP=acerca-del-oaid integration=integraci%C3%B3n h_01HG8PXBZS26P9X1TQ7J4WQNF5=integraci%C3%B3n h_01HG8PXBZSM0QYQE4C9S1FBFB1=msa-sdk h_01HG8PXBZS3HP9X1AZ7HQ8C34Y=huawei-hms-sdk additional-information=informaci%C3%B3n-adicional h_01HG8PXBZSW5HNTTDRQ7DFFF4D=informaci%C3%B3n-adicional h_01HG8PXBZS8Z3MTQWFN5R6FFA8=opting-out-of-oaid-collection h_01HG8PXBZSYNS8R1PCW4YXHFBA=setting-oaid-manually" />

@@ -1,5 +1,5 @@
 ---
-title: X Ads (formerly Twitter Ads) FAQ and discrepancies
+title: 'Guía de configuración de Twitter Ads: preguntas frecuentes y discrepancias'
 metadata:
   keywords:
     - Advertisers
@@ -13,238 +13,225 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-11-09T09:34:59Z'
-  edited_at: '2026-09-15T11:41:04Z'
+  edited_at: '2026-11-03T01:58:52Z'
   id: 4410464352017
-  locale: en-us
+  locale: es
   section: X Ads (formerly Twitter Ads)
   section_id: 6551370375569
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4410464352017-X-Ads-formerly-Twitter-Ads-FAQ-and-discrepancies
+  url: https://support.appsflyer.com/hc/es/articles/4410464352017
 ---
-> **At a glance:** Resolve X Ads FAQs and understand discrepancies.
+> **De un vistazo:** Resuelve las preguntas frecuentes sobre los Twitter Ads y comprende las discrepancias.
 
-## X Ads FAQ and discrepancies
+## Preguntas frecuentes y discrepancias sobre Twitter Ads
 
 <div id="who-can-perform-the-twitter-setup-on-appsflyer" />
 
-<Accordion title="Who can perform the setup on AppsFlyer?">
+<Accordion title="¿Quién puede realizar la configuración de Twitter en AppsFlyer?">
 
-The user who is authorizing the integration between AppsFlyer and X Ads must have X Ads Account Administrator access.
+El usuario que autoriza la integración entre AppsFlyer y Twitter deberá tener acceso de Administrador a la Cuenta de Twitter.
 
 </Accordion>
 
 <div id="what-happens-if-no-twitter-accounts-are-selected-for-attributing-on-appsflyer" />
 
-<Accordion title="What happens if no X Ads account is selected for attributing on AppsFlyer?">
+<Accordion title="¿Qué ocurre si no hay ninguna cuenta de X Ads seleccionada para la atribución en AppsFlyer?">
 
-All attributions are for campaigns on the selected account. If no account is selected, no in-app events or attributions are sent to X Ads, even if the in-app event mapping is still visible on the X Ads configuration window.
+Todas las atribuciones son para campañas de la cuenta seleccionada. Si no hay ninguna cuenta seleccionada, no se enviará ningún evento in-app ni atribución a Twitter, incluso si la asignación de eventos in-app aún está visible en la ventana de Configuración de Twitter.
 
 </Accordion>
 
 <div id="do-the-account-owner-and-the-team-members-see-the-same-twitter-data" />
 
-<Accordion title="Do both the account owner and team members see the same X Ads data?">
+<Accordion title="¿El propietario de la cuenta y los integrantes del equipo ven los mismos datos de Twitter?">
 
-No. The account owner sees all of the connected X Ads accounts. Team members only see their connected X Ads accounts.
+N.º El propietario de la cuenta ve todas las cuentas de Twitter conectadas. Los miembros del equipo solo ven sus cuentas de Twitter conectadas.
 
 </Accordion>
 
 <div id="how-do-i-disconnect-twitter-from-appsflyer" />
 
-<Accordion title="How do I disconnect AppsFlyer from X Ads?">
+<Accordion title="¿Cómo desconecto AppsFlyer de X Ads?">
 
-You can disconnect AppsFlyer from your X Ads account. The following instructions assume that you are logged into your X Ads account using a desktop or laptop browser:
+Puedes desconectar AppsFlyer de tu cuenta de Twitter. Las siguientes instrucciones suponen que has iniciado sesión en tu cuenta de Twitter utilizando un navegador de computadora de escritorio o portátil:
 
-1. Sign in to X Ads.
-2. On the left menu, click **More** > **Settings and Privacy**.
-3. Go to **Security and account access** > **Apps and sessions** > **Connected apps**.
-4. Click AppsFlyer.
-5. Click **Revoke Access**.
+1. Inicia sesión en X Ads.
+2. En el menú de la izquierda, haz clic en **Más** > **Configuración y privacidad**.
+3. Ve a **Seguridad y acceso a la cuenta** > **Aplicaciones y sesiones** > **Aplicaciones conectadas**.
+4. Haz clic en AppsFlyer.
+5. Haz clic en **Revocar acceso**.
 
-You can now go back to your AppsFlyer account and <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-integration-setup">connect a different X Ads account</Anchor> if you want.
+Ahora puedes volver a tu cuenta de AppsFlyer y <Anchor target="_blank" href="/marketers/es/docs/x-ads-formerly-twitter-ads-integration-setup">conectar una cuenta de Twitter diferente</Anchor> si lo deseas.
 
 </Accordion>
 
 <div id="is-it-possible-to-attribute-installs-to-multiple-twitter-accounts" />
 
-<Accordion title="Is it possible to attribute installs to multiple X Ads accounts?">
+<Accordion title="¿Es posible atribuir instalaciones a varias cuentas de X Ads?">
 
-Yes, but it requires some actions on X Ads. But first, some background is required:
+Sí, pero requiere algunas acciones en anuncios de X. Primero, es necesario tener algunos antecedentes:
 
-You can connect **only one handle** (also known as an X user) to your AppsFlyer account. When you connect this handle, your X Ads Account appears in the X Ads configuration in AppsFlyer dashboard.
+Puede conectar **solamente un nombre de usuario** (también llamado usuario de Twitter) a su cuenta de AppsFlyer. Cuando conectes este identificador, tu cuenta de anuncios de X aparecerá en la configuración de anuncios de X en el dashboard de AppsFlyer.
 
-If one of your team members also has an X Ads Account, this means they have a different handle than yours and cannot connect their handle to AppsFlyer. This is because **your handle is the one that is already connected with the AppsFlyer account**. In order for their X Ads Account to also appear in AppsFlyer, they need to **give your handle access as account administrator to their X Ads Account**.
+Si uno de los miembros de tu equipo también tiene una cuenta de anuncios de X, significa que tiene un identificador distinto al tuyo y no puede conectar su identificador a AppsFlyer. Esto se debe a que **su nombre de usuario es el que ya está conectado a su cuenta de AppsFlyer**. Para que su cuenta de anuncios de X también aparezca en AppsFlyer, tiene que **dar acceso a tu identificador como administrador de la cuenta en su cuenta de anuncios de X**.
 
-Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and is the handle that is connected to AppsFlyer. In order for her X Ads Account to appear in the AppsFlyer account, **she needs to give your handle access as account administrator to her X Ads Account**. Jenny needs to give access to Nivi to her X Ads Account and not that other way around. When she does so, AppsFlyer looks at Nivi's handle, and sees all the ad accounts that it is associated with, Jenny's included.
+Digamos que la integrante de tu equipo es Jenny y que su identificador es @jenny. Tu identificador es @nivi y es el que está conectado a AppsFlyer. Para que su cuenta de anuncios de X aparezca en la cuenta de AppsFlyer, **tiene que dar acceso a tu identificador como administrador de la cuenta en su cuenta de anuncios de X**. Jenny tiene que dar acceso a Nivi a su cuenta de anuncios de X, y no al revés. Cuando lo hace, AppsFlyer observa el identificador de Nivi y ve todas las cuentas de anuncios con las que está asociado, incluida la de Jenny.
 
-1. Jenny signs into <Anchor target="_blank" href="http://ads.twitter.com/">ads.twitter.com</Anchor>
-2. She clicks on **Account** and then chooses **Edit access to account**
+**Para conectar la cuenta de anuncios de X de Jenny a AppsFlyer:**
 
-   ![twitter_assign_account2.PNG](https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png)
-3. Jenny then gives @nivi access to her X Ads Account as or Account administrator  
-
-   [![twitter_edit_access_to_account.png](https://files.readme.io/93cee24a4b77c48d47444c5992cffb40f082beda46bdb96e9f22eef5ae8d9269-4416810307601.png)](https://support.appsflyer.com/hc/article_attachments/360002514658/twitter_edit_access_to_account.png)
-4. Jenny logs into the AppsFlyer account and goes to Active Integrations >> X Ads option
-5. At this stage, she can see her X Ads Account also listed.
-6. She can now see her X Ads account and configure the integration. The account admin can see all connected X Ads accounts.
-
-   Jenny's view:
-
-   ![jennys_ads_account.png](https://files.readme.io/73e3ca9be6090bfd47acb675e4faa634721d9aa75f5ebb8cf736fd56dd9e336b-50903273813137.png)
-
-   Account admin view:
-
-   ![jennys_ads_account__1_.png](https://files.readme.io/d744c0e2de60011a0395a407607ec90f4fac04f76787b430cf1a74eda2342e66-50903273813649.png)
+1. Jenny inicia sesión en <Anchor target="_blank" href="https://ads.x.com/">X Ads</Anchor> con el identificador @jenny.
+2. En su cuenta de anuncios de X, Jenny abre la configuración de acceso a la cuenta y da acceso a @nivi como **administrador de la cuenta**. Consulta las <Anchor target="_blank" href="https://help.x.com/en/business-and-advertising/multi-user-login-faq">Preguntas frecuentes sobre el login multiusuario</Anchor> en el Centro de ayuda de X.
+3. Jenny inicia sesión en AppsFlyer, va a **Colaborar** > **Integraciones de partners** > **Integraciones activas**, busca **X Ads** y lo selecciona.
+4. Su cuenta de anuncios de X ahora aparece en la configuración de la integración, y ella puede configurar la integración. Jenny solo ve su cuenta de anuncios de X. El administrador de la cuenta ve todas las cuentas de anuncios de X conectadas, incluida la suya.
 
 </Accordion>
 
 <div id="any-special-instructions-for-agencies" />
 
-<Accordion title="Any special instructions for agencies?">
+<Accordion title="¿Hay alguna instrucción especial para las agencias?">
 
-Yes.  
-When an agency creates a new X Ads campaign, the campaign name must start with the agency name and an underscore (Example: "AgencyName\_Campaign1").
+Sí.  
+Cuando una agencia crea una nueva campaña de Twitter, el nombre de la campaña debe comenzar con el nombre de la agencia seguido de un guion bajo (Ejemplo: "NombredeAgencia\_Campaña1").
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> To establish the connection between AppsFlyer and X Ads, the advertiser MUST configure X Ads permissions allowing agencies to run X Ads traffic.
+> Para establecer la conexión entre AppsFlyer y Twitter, el anunciante DEBE configurar Twitter de modo que permita a las agencias procesar tráfico de Twitter.
 
-For more details go <Anchor target="_blank" href="/partners/docs/about-agency-accounts#srn-configurations">here</Anchor>.
+Para conocer más detalles, ingrese <Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#configuraciones-de-srn">aquí</Anchor>.
 
 </Accordion>
 
 <div id="do-you-make-twitters-raw-data-available-to-agencies" />
 
-<Accordion title="Is the X Ads raw data available to agencies?">
+<Accordion title="¿El raw data de X Ads está disponible para las agencias?">
 
-We don't provide X Ads raw data to agencies because X Ads' terms of service regard agencies as third parties.
+No proporcionamos raw data de X Ads a las agencias porque las condiciones del servicio de X Ads consideran a las agencias como terceros.
 
 </Accordion>
 
 <div id="im-clicking-save-close-but-twitters-configuration-is-not-saved-help" />
 
-<Accordion title="I'm clicking save & close but the X Ads configuration is not saved! help!">
+<Accordion title="Hago clic en Guardar y Cerrar, pero no se guarda la configuración de Twitter. ¡Ayuda!">
 
-If your app was subscribed to another attribution provider in the past, which was used to attribute X Ads installs, the following errors below when configuring X Ads on AppsFlyer's dashboard:
+Si tu aplicación estuvo suscrita a otro proveedor de atribución anteriormente, que se utilizó para atribuir instalaciones de Twitter, pueden aparecer los siguientes errores cuando configuras Twitter en el panel de control de AppsFlyer:
 
-**Error: The app is associated with a different attribution provider. Please associate it with AppsFlyer.**
+**Error:  La aplicación está asociada con otro proveedor de atribución. Asóciala con AppsFlyer.**
 
-Alternatively, the following error may also appear:  
+También puede aparecer el siguiente error:  
 
-[![](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)
+[![](https://files.readme.io/cdad9e9adb2eb7408af3a4ba53ff0dfdf2bbb666f460741996a9d1cda79e399d-21402353721361.png)](https://files.readme.io/cdad9e9adb2eb7408af3a4ba53ff0dfdf2bbb666f460741996a9d1cda79e399d-21402353721361.png)
 
-**Error: Error has occurred while saving X Ads configuration. Some accounts failed to update: XX Multiple provider ids to same (appid, conversionType) for event appid2872.**
+**Error:  Ocurrió un error al guardar la configuración de Twitter. No fue posible actualizar algunas cuentas:  XX Varios ID de proveedores para el mismo (appid, conversionType) del evento appid2872.**
 
-If the account selection does not save, this may be because the X Ads account in question was previously associated with a different provider at X Ads. To resolve this:
+Si la selección de cuenta no se guarda, esto puede deberse a que la cuenta de Twitter en cuestión estuvo anteriormente asociada con otro proveedor del lado de Twitter. Para resolver esto:
 
-* Contact X Ads to remove the other provider from your end
-* Select the Active Account name
-* Click **Save and Close**.
-* If this still doesn't solve the problem you will have to contact your previous measurement provider and ask to remove the past X Ads tags associated with your account.
+* Comunícate con X Ads para eliminar el otro proveedor de tu lado.
+* Selecciona el nombre de la Cuenta Activa.
+* Haz clic en **Guardar y Cerrar**.
+* Si esto sigue sin resolver el problema, tendrás que ponerte en contacto con tu anterior proveedor de medición y pedirle que elimine las etiquetas anteriores de X Ads asociadas a tu cuenta.
 
 </Accordion>
 
 <div id="how-can-i-set-up-retargeting-campaigns-with-twitter" />
 
-<Accordion title="How can I set up retargeting campaigns with X Ads?">
+<Accordion title="¿Cómo puedo configurar campañas de retargeting con Twitter?">
 
-For details on how to configure an X Ads Retargeting Campaign, click here.
+Para conocer detalles sobre cómo configurar una Campaña de Retargeting de Twitter, haz clic aquí.
 
 </Accordion>
 
 <div id="does-retargeting-affect-inapp-events-sending-to-twitter" />
 
-<Accordion title="Does retargeting affect in-app events sent to X Ads?">
+<Accordion title="¿La función de retargeting afecta los eventos in-app que se envían a Twitter?">
 
-Yes. If retargeting is turned on, AppsFlyer doesn't send the af\_app\_opened event postbacks to X Ads, as per X Ads' request.  
-Note that even if the X Ads setup window allows this selection, the af\_app\_opened postbacks are not sent with retargeting.
+Sí. Si está activada la función de retargeting, AppsFlyer no enviará lo postbacks del evento af\_app\_opened a Twitter, a pedido de Twitter.  
+Ten en cuenta que si la ventana de configuración de Twitter permite esta selección, los postbacks de af\_app\_opened no se enviarán con la función de retargeting.
 
 </Accordion>
 
 <div id="how-can-i-stop-measuring-twitter-attributions" />
 
-<Accordion title="How can I stop measuring X Ads attributions?">
+<Accordion title="¿Cómo puedo dejar de medir las atribuciones de X Ads?">
 
-To deactivate the integration with X Ads, uncheck all accounts and click **Save & Close**.
+Para desactivar la integración con Twitter, desmarca todas las cuentas y haz clic en **Guardar y Cerrar**.
 
 </Accordion>
 
 <div id="can-an-agency-measure-twitter-attributions-for-advertisers" />
 
-<Accordion title="Can an agency measure X Ads attributions for advertisers?">
+<Accordion title="¿Una agencia puede medir las atribuciones de Twitter para anunciantes?">
 
-Yes!  
-To establish the connection between AppsFlyer and X Ads, the advertiser MUST select an active account in the X Ads partner page on AppsFlyer's dashboard, so at least one X Ads account is checked.  
-Afterwards, the agency needs to connect its X Ads account directly from its own agency dashboard.
+Sí.  
+Para establecer la conexión entre AppsFlyer y Twitter, el anunciante DEBE seleccionar una cuenta activa en la página de partners de Twitter en el panel de control del AppsFlyer, para que por lo menos haya una cuenta de Twitter marcada.  
+Más adelante, la agencia necesitará conectar su cuenta de Twitter directamente desde su propio panel de control de agencia.
 
 </Accordion>
 
 <div id="can-an-agency-configure-inapp-events-for-twitter" />
 
-<Accordion title="Can an agency configure in-app events for X Ads?">
+<Accordion title="¿Una Agencia Puede Configurar Eventos In-App para Twitter?">
 
-Agencies cannot configure in-app events for X Ads. Similar to Meta ads, these must be configured by the Advertiser.
+Las agencias no pueden configurar eventos in-app para Twitter. Como ocurre con Anuncios de Meta, el anunciante debe configurar estos eventos.
 
 </Accordion>
 
 <div id="for-how-long-do-you-keep-twitter-s-userlevel-data" />
 
-<Accordion title="For how long do you keep X Ads user-level data?">
+<Accordion title="¿Cuánto tiempo conservan los datos de X Ads de nivel de usuario?">
 
-X Ads requires attribution providers to delete their user-level data 3 months after the install. This means that the events performed by these users 3 months after they install the app are counted as organic.
+Twitter exige que los proveedores de atribución eliminen sus datos a nivel de usuario 3 meses después de la instalación. Esto significa que los eventos efectuados por estos usuarios 3 meses después de que hayan instalado la aplicación se cuentan como orgánicos.
 
-Past aggregate data remains the same.
+Los datos agregados anteriores permanecen iguales.
 
 </Accordion>
 
 <div id="why-do-i-see-duplicated-cost-data" />
 
-<Accordion title="Why do I see duplicated cost data?">
+<Accordion title="¿Por qué veo datos de costos duplicados?">
 
-When you set up a campaign in X Ads, you can add multiple apps to the campaign. When X Ads reports the cost, the total campaign cost data displays under each app in AppsFlyer, and is not divided per app.
+Cuando se configura una campaña en Twitter, se pueden agregar varias aplicaciones a la campaña. Cuando Twitter reporta el costo, los datos del costo total de la campaña se muestran debajo de cada aplicación en AppsFlyer, y no se dividen por aplicación.
 
-For example, if you run one campaign that costs $1,000 for both an Android and iOS app, then a cost of $1,000 displays in the AppsFlyer dashboard under both the Android and iOS apps. The cost is not split, for example, to $500 each.
+Por ejemplo, si realizas una campaña que cuesta USD 1000 para una aplicación de Android e iOS, entonces se muestra un costo de USD 1000 en el panel de control de AppsFlyer debajo las aplicaciones de Android e iOS. El costo no se divide, por ejemplo, en USD 500 cada uno.
 
-To avoid cost duplication, it is recommended that you define only one app per line item/campaign.
+Para evitar la duplicación de costos, se recomienda definir solo una aplicación por partida/campaña.
 
 </Accordion>
 
 <div id="im-trying-to-link-my-twitter-account-with-appsflyer-but-i-get-an-error-message" />
 
-<Accordion title="I'm trying to link my X Ads account with AppsFlyer, but I get an error message">
+<Accordion title="Estoy intentando vincular mi cuenta de Twitter con AppsFlyer, pero recibo un mensaje de error">
 
-Your X Ads account needs to be an active Ad Account to receive attribution data from AppsFlyer.
+Tu cuenta de Twitter tiene que ser una cuenta de anuncios activa para recibir los datos de atribución de AppsFlyer.
 
-**To solve this issue:**
+**Para resolver este problema:**
 
-1. Log out of X Ads.
-2. In AppsFlyer, from the side menu, select **Collaborate > Partner Integrations >** **Active Integrations.**
-3. Search for X Ads and select it. The partner setup window opens.
-4. In the **Integration** tab, click on **Activate partner**.
-5. Click on **Login with X Ads**,  
-   a X Ads login window opens.
-6. Sign in with your X Ads Account.
+1. Cierra sesión en X Ads.
+2. En AppsFlyer, desde el menú lateral, selecciona **Collaborate > Partner Integrations >** **Active Integrations.**
+3. Busca X Ads y selecciónalo. Se abre la ventana de configuración del partner.
+4. En la pestaña **Integración**, haz clic en **Activar partner**.
+5. Haz clic en **Iniciar sesión con X Ads**,  
+   se abre una ventana de inicio de sesión de X Ads.
+6. Inicia sesión con tu cuenta de X Ads.
 
 </Accordion>
 
-## Discrepancies between X Ads and AppsFlyer
+## Discrepancias entre X Ads y AppsFlyer
 
-Although we work closely with X Ads, discrepancies might appear between the X Ads dashboard and the AppsFlyer dashboard/reports.
+Aunque trabajamos en estrecha colaboración con X Ads, podrían aparecer discrepancias entre el panel de control de X Ads y el panel de control y los reportes de AppsFlyer.
 
-These are the common reasons for such discrepancies that advertisers should be aware of:
+A continuación enumeraremos los motivos frecuentes de tales discrepancias que deben tener en cuenta los anunciantes:
 
-| Cause | X Ads | AppsFlyer |
+| Causa | Anuncios X | fuentes de medios |
 | --- | --- | --- |
-| **Attribution window** | X Ads allows its users to configure the attribution window and supports both click-through and view-through attributions. By default - 14 days click-through and 1 day view-through. | If you have not configured the AppsFlyer attribution lookback window for X Ads with the same values as in X Ads, discrepancies may occur. |
-| **Multi-channel source attribution** | X Ads attribution works as specified above regardless of other sources. | AppsFlyer uses last click attribution (more information about AppsFlyer attribution available <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">here</Anchor>). |
-| **Timezone differences** | X Ads timezone is defined by the advertiser's app configured timezone. | AppsFlyer's default timezone is UTC±00:00, but can be set to any timezone by the advertiser. |
-| **Install time differences** | X Ads shows installs based on the click time (referred to as "engagement time"). | AppsFlyer displays the time of the first app open. |
-| **Attribution touch type** | X Ads attribution is based on their own clicks and impressions. | AppsFlyer gives priority to click-through attribution over view-through attribution. If X Ads counts an impression and AppsFlyer is aware of an additional click within the click-through attribution window, the click from another source is attributed on AppsFlyer's dashboard. On X Ads, the impression is attributed and is presented on their dashboard. |
-| **X Ads data sharing settings** | X Ads allows its users to NOT <Anchor target="_blank" href="https://twitter.com/settings/account/personalization">share their personal data with third parties</Anchor>. This data includes ads they interact with.<br /><br />The stats on X Ads dashboard reflect all engagements, including the users who have opted out from sharing the data. | AppsFlyer shows the aggregate data of these X Ads users, but does not report their user-level raw data (more <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-setup-guide-overview#x-ads-user-privacy">details</Anchor>). |
-| **X Ads re-engagement logic** | X Ads counts unique users. If a user re-engages more than once as a result of the same campaign, X Ads shows these engagements as one conversion. | AppsFlyer counts each re-engagement instance, and therefore, in a similar case, shows these engagements as multiple conversions. |
+| **Ventana de atribuciones** | X Ads permite que sus usuarios configuren la ventana de atribución y admite atribuciones por clics y por impresiones. De manera predeterminada, 14 días para las atribuciones por clics y 1 día para las atribuciones por impresiones. | Si no configuraste la ventana retrospectiva de atribución de AppsFlyer para X Ads con los mismos valores que figuran en X Ads, pueden surgir discrepancias. |
+| **Atribución de fuentes multicanal** | La atribución en X Ads funciona tal como se especificó antes, independientemente de otras fuentes. | AppsFlyer usa la atribución de último clic (puedes encontrar más información sobre la atribución de AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">aquí</Anchor>). |
+| **Diferencias en la zona horaria** | La zona horaria de X Ads está definida por la zona horaria configurada de la aplicación del anunciante. | La zona horaria predeterminada de AppsFlyer es UTC±00:00, pero el anunciante puede configurar cualquier zona horaria. |
+| **Diferencias en la hora de instalación** | X Ads muestra las instalaciones en función de la hora del clic (lo que se conoce como "hora de engagement"). | AppsFlyer muestra la hora en que se abrió la aplicación por primera vez. |
+| **Tipo de interacción de atribución** | La atribución de X Ads se basa en sus propios clics e impresiones. | AppsFlyer prioriza la atribución por clics por sobre la atribución por impresiones. Si X Ads cuenta una impresión y AppsFlyer detecta un clic adicional dentro de la ventana de atribución por clics, el clic de otra fuente se atribuye en el panel de control de AppsFlyer. En X Ads, se atribuye la impresión y se presenta en su panel de control. |
+| **Configuración de X Ads para compartir datos** | X Ads permite que sus usuarios NO <Anchor target="_blank" href="https://twitter.com/settings/account/personalization">compartan sus datos personales con terceros</Anchor>. Estos datos incluyen los anuncios con los que interactúan.<br /><br />Las estadísticas del panel de control de X Ads reflejan todos los engagements, incluidos los usuarios que han optado por no compartir los datos. | AppsFlyer muestra los datos agregados de estos usuarios de X Ads, pero no reporta su raw data a nivel de usuario (más <Anchor target="_blank" href="/marketers/es/docs/x-ads-formerly-twitter-ads-setup-guide-overview#privacidad-del-usuario-de-x-ads">detalles</Anchor>). |
+| **Lógica de re-engagement de X Ads** | X Ads cuenta usuarios únicos. Si un usuario se vuelve a comprometer más de una vez como resultado de la misma campaña, X Ads muestra estos engagements como una conversión. | AppsFlyer cuenta cada instancia de re-engagement y, por lo tanto, en un caso similar, muestra estos engagements como varias conversiones. |
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> As a result of <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">AppsFlyer's Validation Rules</Anchor>, results may differ in the dashboards as some installs are shown in X Ads and are not shown in the AppsFlyer dashboard.
+> Como consecuencia de las <Anchor target="_blank" href="/marketers/es/docs/implement-validation-rules-to-prevent-fraud">reglas de validación de AppsFlyer</Anchor>, los resultados pueden diferir en los paneles de control ya que algunas instalaciones se muestran en Twitter, pero no se muestran en el panel de control de AppsFlyer.
 
-<div data-zendesk-anchors="twitter-ads-faq-and-discrepancies=x-ads-faq-and-discrepancies h_01HE7S15F9YR28FBA1TYCE3N0X=x-ads-faq-and-discrepancies h_01HE7S15F9NSQJSP268B0WF0JP=who-can-perform-the-twitter-setup-on-appsflyer h_01HE7S15F9PFZ8CATJC5YWC6QP=what-happens-if-no-twitter-accounts-are-selected-for-attributing-on-appsflyer h_01HE7S15F989Y94YFJ7TGK7QN5=do-the-account-owner-and-the-team-members-see-the-same-twitter-data h_01HE7S15F9GNWTK2N50GAHN52Q=how-do-i-disconnect-twitter-from-appsflyer h_01HE7S15F9CE4F29R97EVCG791=is-it-possible-to-attribute-installs-to-multiple-twitter-accounts h_01HE7S15F9G4M44CB2Q1KQMJPJ=any-special-instructions-for-agencies h_01HE7S15F9VG8XMJE7YSNN245P=note h_01HE7S15F9A7BBAW8BNN6H4AKQ=do-you-make-twitters-raw-data-available-to-agencies h_01HE7S15F9MM26SGKMAPGDH9F8=im-clicking-save-close-but-twitters-configuration-is-not-saved-help h_01HE7S15F923NKTTCS3Z1C40B5=how-can-i-set-up-retargeting-campaigns-with-twitter h_01HE7S15F931EWS48QVCQYPBCH=does-retargeting-affect-inapp-events-sending-to-twitter h_01HE7S15F98VN1TS99751S34C5=how-can-i-stop-measuring-twitter-attributions h_01HE7S15F9MEKBKAQ3NA76TFKY=can-an-agency-measure-twitter-attributions-for-advertisers h_01HE7S15F921V3T885F39VSPCQ=can-an-agency-configure-inapp-events-for-twitter for-how-long-do-you-keep-twitter%E2%80%99s-userlevel-data=for-how-long-do-you-keep-twitter-s-userlevel-data h_01HE7S15F90RXSWJ7HV3GSJB65=for-how-long-do-you-keep-twitter-s-userlevel-data h_01HE7S15F9B39KV628NSD29P6P=why-do-i-see-duplicated-cost-data h_01HE7S15F9N3CCJEMAD2QB38F9=im-trying-to-link-my-twitter-account-with-appsflyer-but-i-get-an-error-message discrepancies-between-twitter-and-appsflyer=discrepancies-between-x-ads-and-appsflyer h_01HE7S15F9YWCY883DP9TEGQXK=discrepancies-between-x-ads-and-appsflyer h_01HE7S15FAPS2696J3KQG3P3ME=note-1" />
+<div data-zendesk-anchors="twitter-ads-faq-and-discrepancies=preguntas-frecuentes-y-discrepancias-sobre-twitter-ads h_01HE7S15F9YR28FBA1TYCE3N0X=preguntas-frecuentes-y-discrepancias-sobre-twitter-ads h_01HE7S15F9NSQJSP268B0WF0JP=who-can-perform-the-twitter-setup-on-appsflyer h_01HE7S15F9PFZ8CATJC5YWC6QP=what-happens-if-no-twitter-accounts-are-selected-for-attributing-on-appsflyer h_01HE7S15F989Y94YFJ7TGK7QN5=do-the-account-owner-and-the-team-members-see-the-same-twitter-data h_01HE7S15F9GNWTK2N50GAHN52Q=how-do-i-disconnect-twitter-from-appsflyer h_01HE7S15F9CE4F29R97EVCG791=is-it-possible-to-attribute-installs-to-multiple-twitter-accounts h_01HE7S15F9G4M44CB2Q1KQMJPJ=any-special-instructions-for-agencies h_01HE7S15F9VG8XMJE7YSNN245P=nota h_01HE7S15F9A7BBAW8BNN6H4AKQ=do-you-make-twitters-raw-data-available-to-agencies h_01HE7S15F9MM26SGKMAPGDH9F8=im-clicking-save-close-but-twitters-configuration-is-not-saved-help h_01HE7S15F923NKTTCS3Z1C40B5=how-can-i-set-up-retargeting-campaigns-with-twitter h_01HE7S15F931EWS48QVCQYPBCH=does-retargeting-affect-inapp-events-sending-to-twitter h_01HE7S15F98VN1TS99751S34C5=how-can-i-stop-measuring-twitter-attributions h_01HE7S15F9MEKBKAQ3NA76TFKY=can-an-agency-measure-twitter-attributions-for-advertisers h_01HE7S15F921V3T885F39VSPCQ=can-an-agency-configure-inapp-events-for-twitter for-how-long-do-you-keep-twitter%E2%80%99s-userlevel-data=for-how-long-do-you-keep-twitter-s-userlevel-data h_01HE7S15F90RXSWJ7HV3GSJB65=for-how-long-do-you-keep-twitter-s-userlevel-data h_01HE7S15F9B39KV628NSD29P6P=why-do-i-see-duplicated-cost-data h_01HE7S15F9N3CCJEMAD2QB38F9=im-trying-to-link-my-twitter-account-with-appsflyer-but-i-get-an-error-message discrepancies-between-twitter-and-appsflyer=discrepancias-entre-x-ads-y-appsflyer h_01HE7S15F9YWCY883DP9TEGQXK=discrepancias-entre-x-ads-y-appsflyer h_01HE7S15FAPS2696J3KQG3P3ME=nota-1" />

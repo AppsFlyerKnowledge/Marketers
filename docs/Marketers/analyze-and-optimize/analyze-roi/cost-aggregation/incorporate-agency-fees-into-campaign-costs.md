@@ -1,5 +1,5 @@
 ---
-title: Incorporate agency fees into campaign costs
+title: Incorpora las tarifas de agencia a los costos de campaña
 metadata:
   keywords:
     - Advertisers
@@ -17,117 +17,116 @@ x-zendesk:
     - Agencies
     - ROI360
   created_at: '2021-06-03T13:53:23Z'
-  edited_at: '2025-08-07T17:10:38Z'
+  edited_at: '2026-08-12T11:48:07Z'
   id: 4402103019665
-  locale: en-us
+  locale: es
   section: Cost aggregation
   section_id: 6551029483281
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4402103019665-Incorporate-agency-fees-into-campaign-costs
+  url: https://support.appsflyer.com/hc/es/articles/4402103019665
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Agency fee rules are part of the AppsFlyer ROI360 premium feature that enables advertisers to add the percentage fees agencies charge for traffic so they can see the total campaign cost.
+> **Resumen:** Las reglas de tarifas de agencia forman parte de la función premium ROI360 de AppsFlyer, que permite a los anunciantes añadir los porcentajes de tarifas que las agencias cobran por el tráfico para poder ver el costo total de la campaña.
 
-## Overview
+## Visión general
 
-Agency fee rules are defined by the advertiser (with AppsFlyer account admin privileges) in the rule builder using customized conditions that add fee percentages to the cost of agency campaigns for specific apps and/or media sources.
+El anunciante (con privilegios de administrador de la cuenta de AppsFlyer) define las reglas de tarifas de agencia en el creador de reglas mediante condiciones personalizadas que añaden porcentajes de tarifa al costo de las campañas de agencia para aplicaciones y/o fuentes de medios específicas.
 
-ROI360 uses the agency fee rule to calculate the total ad cost with the fee, based on the ad network API and attribution link cost. The calculation applies at every granularity level (campaign, adset, etc.). The results are displayed in your dashboards, reports, and Cost ETL; not in the agency or ad network dashboards and reports. **Note**: Cost ETL reports have additional <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports#file-fields">fields for agency fees</Anchor>.
+ROI360 utiliza la regla de tarifa de agencia para calcular el costo total del anuncio con la tarifa, en función de la API de la ad network y del costo del enlace de atribución. El cálculo se aplica en todos los niveles de granularidad (campaña, conjunto de anuncios, etc.). Los resultados se muestran en tus dashboards, reportes y Cost ETL; no en los dashboards ni en los reportes de la agencia o de la ad network. **Nota**: Los reportes de Cost ETL tienen campos adicionales para las tarifas de agencia<Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports#file-fields">fields for agency fees</Anchor>.
 
-Agency rules help advertisers:
+Las reglas de agencia ayudan a los anunciantes a:
 
-* Understand the real cost of their ad campaigns
-* Save time and manual effort to report on cost data
-* Manage agency performance
-* Accurately analyze historical cost data
+* Comprender el costo real de sus campañas publicitarias
+* Ahorrar tiempo y esfuerzo manual al reportar datos de costo
+* Gestionar el rendimiento de la agencia
+* Analizar con precisión los datos históricos de costo
 
-## Procedures
+## Procedimientos
 
-See the sections that follow for instructions for the view, add, edit, and delete rules. All procedures require AppsFlyer admin privileges.
+Consulta las secciones siguientes para ver las instrucciones sobre cómo ver, añadir, editar y eliminar reglas. Todos los procedimientos requieren privilegios de administrador de AppsFlyer.
 
 <div id="view-rule-list" />
 
-<Accordion title="View rule list">
+<Accordion title="Ver la lista de reglas">
 
-**![AppsFlyerAdmin_us-en.png](https://files.readme.io/90ad4b15e0e27f2043e3e6dc1dfaf0581add5e5df2122f95b235728fb140fa5c-4408750662545.png) To view all the agency fee rules created in your account**:
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Para ver todas las reglas de tarifas de agencia creadas en tu cuenta**:
 
-1. In AppsFlyer, from the side menu, select **Settings** > **Cost Control.**  
-   The Cost Control screen displays the list of agency rules. Rules are categorized into the following possible statuses:
-   * **Active:** The rule start date is today or earlier, and the rules have calculated fee data at least once.
-   * **Inactive:** The rule end date is in the past (meaning before today).
-   * **Scheduled:** There is data waiting to be processed. After creating a rule or editing the date/price, the rule is scheduled until it is processed and then it moves to Active or Inactive.
-   * **Failed:** The rule is failing to calculate for technical reasons.
-2. Filter the rules in the list using the filter options: Partner, App, and Media source.
+1. En AppsFlyer, en el menú lateral, selecciona **Settings** > **Cost Control.**  
+   La pantalla Cost Control muestra la lista de reglas de agencia. Las reglas se clasifican en los siguientes estados posibles:
+   * **Activo:** La fecha de inicio de la regla es hoy o anterior, y la regla ha calculado datos de tarifas al menos una vez.
+   * **Inactivo:** La fecha de finalización de la regla está en el pasado (es decir, antes de hoy).
+   * **Programado:** Hay datos pendientes de procesarse. Después de crear una regla o editar la fecha o el precio, la regla queda programada hasta que se procesa y luego pasa a Activo o Inactivo.
+   * **Fallido:** La regla no puede calcularse por motivos técnicos.
+2. Filtra las reglas de la lista con las opciones de filtro: Partner, App y fuente de medios.
 
 </Accordion>
 
 <div id="add-rule" />
 
-<Accordion title="Add rule">
+<Accordion title="Agregar regla">
 
-The rule builder user interface is designed for interactive rule building. **Tip!** Familiarize and experiment with the rule builder before reviewing this article in detail.
+La interfaz de usuario del creador de reglas está diseñada para la creación de reglas interactivas. **Consejo!** Familiarízate y experimenta con el creador de reglas antes de revisar este artículo en detalle.
 
-**![AppsFlyerAdmin_us-en.png](https://files.readme.io/90ad4b15e0e27f2043e3e6dc1dfaf0581add5e5df2122f95b235728fb140fa5c-4408750662545.png) To add a new rule**:
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Para añadir una regla nueva**:
 
-1. In AppsFlyer, from the side menu, select **Settings** > **Cost Control.**
-2. Click + **Add Agency fees rule**.  
-   The Agency fees rule screen displays.
-3. Select a partner (agency).
-4. Choose one or more Apps or select **All apps**. If you select **All apps**, the rule applies to all your apps, including apps added to your account in the future.
-5. Select one or more media sources or check All media sources. If you check All media sources, the rule applies to all media sources, including those added in the future.
-   * If the agency you work with is non-transparent, the **All media sources** option is selected by default, and you cannot select a specific media source.
-   * If your selected app is not transparent, the media source drop-down remains disabled, unless, the app selected in the drop-down contains Meta ads or X Ads, as these are always transparent.
-6. Enter a start date.
-7. [Optional] Enter an end date.
-8. Enter the agency fee percentage fee. This can be a number between 100 and -100 (to reflect agency discounts or refunds).
-9. Click **Create rule**.
+1. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Control de costos.**
+2. Haz clic en + **Añadir regla de tarifas de agencia**.  
+   Se muestra la pantalla de la regla de tarifas de agencia.
+3. Selecciona un partner (agencia).
+4. Elige una o varias aplicaciones o selecciona **Todas las aplicaciones**. Si seleccionas **Todas las aplicaciones**, la regla se aplica a todas tus aplicaciones, incluidas las aplicaciones que se añadan a tu cuenta en el futuro.
+5. Selecciona una o varias fuentes de medios o marca Todas las fuentes de medios. Si marcas Todas las fuentes de medios, la regla se aplica a todas las fuentes de medios, incluidas las que se añadan en el futuro.
+   * Si la agencia con la que trabajas no es transparente, la opción **Todas las fuentes de medios** se selecciona de forma predeterminada y no puedes seleccionar una fuente de medios específica.
+   * Si la aplicación que has seleccionado no es transparente, el menú desplegable de la fuente de medios permanece deshabilitado, a menos que la aplicación seleccionada en el menú desplegable contenga anuncios de Meta o anuncios de X, ya que estos siempre son transparentes.
+6. Introduce una fecha de inicio.
+7. [Opcional] Introduce una fecha de finalización.
+8. Introduce el porcentaje de la tarifa de agencia. Puede ser un número entre 100 y -100 (para reflejar descuentos o reembolsos de la agencia).
+9. Haz clic en **Crear regla**.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> The following errors can prevent your rule from being created:
+> Los siguientes errores pueden impedir que se cree la regla:
 >
-> * A mandatory field is not populated. To resolve, ensure that all the mandatory fields are populated.
-> * The rule logic conflicts with an existing rule. To resolve, change the app, or media source.
+> * Un campo obligatorio no está rellenado. Para resolverlo, asegúrate de que todos los campos obligatorios estén rellenados.
+> * La lógica de la regla entra en conflicto con una regla existente. Para resolverlo, cambia la aplicación o la fuente de medios.
 
 </Accordion>
 
 <div id="edit-duplicate-or-delete-a-rule" />
 
-<Accordion title="Edit, duplicate, or delete a rule">
+<Accordion title="Editar, duplicar o eliminar una regla">
 
-**Considerations:**
+**Consideraciones:**
 
-When you edit or delete a rule, previously calculated data (up to 90 days in the past) gets overwritten:
+Cuando editas o eliminas una regla, se sobrescriben los datos calculados previamente (hasta 90 días atrás):
 
-* For an edited rule, the total cost reflects the updated agency percentage fee.
-* For a deleted rule, the agency fee is removed from the total cost.
+* En una regla editada, el costo total refleja el porcentaje actualizado de la tarifa de agencia.
+* En una regla eliminada, la tarifa de agencia se elimina del costo total.
 
-**![AppsFlyerAdmin_us-en.png](https://files.readme.io/90ad4b15e0e27f2043e3e6dc1dfaf0581add5e5df2122f95b235728fb140fa5c-4408750662545.png) To edit, duplicate, or delete a rule**:
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Para editar, duplicar o eliminar una regla**:
 
-1. In the [rule list](/docs/incorporate-agency-fees-into-campaign-costs#view-rule-list), hover over the rule you want to edit, duplicate, or delete.
-2. Click **Menu** ⋮ on the right side.
-3. Select the action you want to perform.
+1. En la [lista de reglas](/docs/incorporate-agency-fees-into-campaign-costs#view-rule-list), coloca el cursor sobre la regla que quieres editar, duplicar o eliminar.
+2. Haz clic en **Menu** ⋮ en el lado derecho.
+3. Selecciona la acción que quieres realizar.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> The agency and start date of a rule cannot be edited after the rule is created. If you need to change them, delete your old configuration, and create a new rule.
+> La agencia y la fecha de inicio de una regla no se pueden editar después de crear la regla. Si necesitas cambiarlas, elimina la configuración anterior y crea una regla nueva.
 
 </Accordion>
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Especificaciones y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Agencies and ad networks | Agencies and ad networks cannot view rules, or see the total ad cost data that results from agency fee rules in their dashboards and reports. |
-| Data freshness | <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">Intraday</Anchor>. Initial calculations can take up to 5 hours to display. |
-| Historical data | Rules can be created and impact data up to 90 days in the past. |
-| Rule processing frequency | New agency fee rules are processed every **4 hours**. This means that a rule may take up to **4 hours** to apply. |
+| Agencias y ad networks | Las Agencias y las ad networks no pueden ver las reglas ni los datos de costo total de anuncios que son resultado de las reglas de tarifas de agencia en sus dashboards y reportes. |
+| Actualización de datos | <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">A lo largo del día</Anchor>. Los cálculos iniciales pueden tardar hasta 5 horas en mostrarse. |
+| Datos históricos | Las reglas se pueden crear y afectar a los datos hasta 90 días en el pasado. |
+| Frecuencia de procesamiento de las reglas | Las nuevas reglas de tarifas de agencia se procesan cada **4 horas**. Esto significa que una regla puede tardar hasta **4 horas** en aplicarse. |
 
-Traits and limitations
+Especificaciones y limitaciones
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HFV23CD24HQVC82NNNBDKFRH=overview h_01HFV23CD38RXRT59DNGZAADV1=procedures h_01HFV23CD3F5ZPT4D3X8PHJS4T=view-rule-list h_01HFV23CD3MZSZDKTH8CZAY954=add-rule h_01HFV23CD3W6J9QSPHBV9NE19S=note h_01HFV23CD3SHHR1HRK6DX4QCET=edit-duplicate-or-delete-a-rule h_01HFV23CD3QH6X0WJEAFTMXNMD=note-1 h_01HFV23CD3E486GBA5XBSN41RA=traits-and-limitations" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01HFV23CD24HQVC82NNNBDKFRH=visi%C3%B3n-general procedures=procedimientos h_01HFV23CD38RXRT59DNGZAADV1=procedimientos h_01HFV23CD3F5ZPT4D3X8PHJS4T=view-rule-list h_01HFV23CD3MZSZDKTH8CZAY954=add-rule h_01HFV23CD3W6J9QSPHBV9NE19S=nota h_01HFV23CD3SHHR1HRK6DX4QCET=edit-duplicate-or-delete-a-rule h_01HFV23CD3QH6X0WJEAFTMXNMD=nota-1 h_01HFV23CD3E486GBA5XBSN41RA=traits-and-limitations" />

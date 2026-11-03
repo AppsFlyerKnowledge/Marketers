@@ -1,5 +1,5 @@
 ---
-title: About the Enhanced attribution model
+title: Información sobre el modelo de atribución mejorada
 metadata:
   keywords:
     - Marketers
@@ -12,64 +12,63 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2025-11-30T11:53:35Z'
-  edited_at: '2026-03-19T12:25:22Z'
+  edited_at: '2026-08-12T11:56:44Z'
   id: 41442782045073
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/41442782045073-About-the-Enhanced-attribution-model
+  url: https://support.appsflyer.com/hc/es/articles/41442782045073
 ---
-> **At a glance:** The Enhanced attribution model improves attribution accuracy by attributing only eligible clicks and impressions when click and impression flooding is detected on the device.
+> **En resumen:** El modelo de atribución mejorada mejora la precisión de la atribución al atribuir únicamente los clics y las impresiones aptos cuando se detecta flooding de clics y de impresiones en el dispositivo.
 
-## What is the Enhanced attribution model?
+## ¿Qué es el modelo de atribución mejorada?
 
-The Enhanced attribution model combats engagement flooding by only considering signals that reflect real user engagement for attribution. When AppsFlyer detects engagement patterns that indicate flooding, AppsFlyer considers eligible clicks and impressions only. As a result, attribution is based on the last eligible click, which is not necessarily the most recent click.
+El modelo de atribución mejorada combate el flooding de engagement al considerar para la atribución únicamente las señales que reflejan el engagement real del usuario. Cuando AppsFlyer detecta patrones de engagement que indican flooding, AppsFlyer solo tiene en cuenta los clics y las impresiones aptos. Como resultado, la atribución se basa en el último clic apto, que no es necesariamente el clic más reciente.
 
-The model works continuously in the background and applies to all relevant traffic without requiring any action from advertisers or partners.
+El modelo funciona continuamente en segundo plano y se aplica a todo el tráfico relevante sin requerir ninguna acción por parte de los anunciantes o Partners.
 
-## How the Enhanced attribution model helps
+## Cómo ayuda el modelo de atribución mejorada
 
-Enhanced attribution model helps advertisers, ad networks, and partners in the following ways:
+El modelo de atribución mejorada ayuda a Anunciantes, Ad network y Partners de las siguientes maneras:
 
-* Advertisers
-  * Increases attribution accuracy across both acquisition and retargeting flows.
-  * Enables confident scaling in high-growth channels without compromising attribution quality.
-  * Improves spend protection by basing decisions on more reliable attribution data.
-  * Helps identify and prioritize high-value channels and partners.
+* Anunciantes
+  * Aumenta la precisión de la atribución tanto en los flujos de adquisición como de retargeting.
+  * Permite escalar con confianza en canales de alto crecimiento sin comprometer la calidad de la atribución.
+  * Mejora la protección del gasto al basar las decisiones en datos de atribución más fiables.
+  * Ayuda a identificar y priorizar canales y partners de alto valor.
 
-* Ad networks and partners
-  * Ensure attribution is based on real user activity.
-  * Improve the accuracy of reporting and optimization decisions.
-  * Maintain consistent and fair attribution competition.
-  * Reduce the effect of artificially increased engagement volumes.
+* Ad networks y partners
+  * Garantizan que la atribución se base en la actividad real del usuario.
+  * Mejoran la precisión de los reportes y las decisiones de Optimización.
+  * Mantienen una competencia de atribución coherente y justa.
+  * Reducen el efecto de volúmenes de engagement inflados artificialmente.
 
-## How the Enhanced attribution model works
+## Cómo funciona el modelo de atribución mejorada
 
-Here’s how it works:
+Así es como funciona:
 
-1. AppsFlyer receives engagement records from multiple media sources, such as clicks or impressions.
-2. When AppsFlyer detects a flooding pattern during the attribution process, an additional model helps select eligible engagements.
+1. AppsFlyer recibe registros de engagement de múltiples fuentes de medios, como clics o impresiones.
+2. Cuando AppsFlyer detecta un patrón de flooding durante el proceso de atribución, un modelo adicional ayuda a seleccionar los engagements aptos.
 
-## Where Enhanced attribution data appears in AppsFlyer reports
+## Dónde aparecen los Datos de atribución de atribución mejorada en los reportes de AppsFlyer
 
-You can view Enhanced attribution data in the following channels:
+Puedes ver los datos de atribución mejorada en los siguientes canales:
 
-### Raw data reports
+### Reportes de raw data
 
-**Total candidates for attribution** is a metric displayed in raw data reports. It indicates the number of engagements that would have entered the attribution competition before enhanced attribution and Protect360 fraud detection logic are applied. Because contributor reporting reflects post-filtering results, the total number of candidates can be significantly higher than the number of contributors.
+**Total candidates for attribution** es una métrica que se muestra en los Reportes de raw data. Indica el número de engagements que habrían entrado en la competencia de atribución antes de que se apliquen la lógica de atribución mejorada y la lógica de detección de fraude de Protect360. Dado que la elaboración de informes de contribuyentes refleja los resultados posteriores al filtrado, el número total de candidatos puede ser significativamente mayor que el número de contribuyentes.
 
-This metric can indicate potential engagement flooding and helps advertisers understand engagement volume and source patterns. It does not represent the number of devices or users.
+Esta métrica puede indicar un posible "engagement flooding" y ayuda a los anunciantes a entender el volumen de engagement y los patrones de las fuentes. No representa el número de dispositivos ni de usuarios.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The metric can also be greater than zero for organic installs, as organic engagements may still enter the attribution competition prior to validation.
+> La métrica también puede ser mayor que cero en las instalaciones orgánicas, ya que los engagements orgánicos aún pueden entrar en la competencia de atribución antes de la validación.
 
-### Protect360 dashboards and reports
+### Dashboards y reportes de Protect360
 
-* Average engagements per compromised and non-compromised installs
-* Attribution trends segmented by compromised and non-compromised installs
+* Media de engagements por instalaciones comprometidas y no comprometidas
+* Tendencias de atribución segmentadas por instalaciones comprometidas y no comprometidas
 
-**Note:** Compromised data starts to appear in the Protect360 dashboard only after an app is added to Enhanced attribution. However, compromised and non-compromised data can still be shown for historical timeframes from before the app was added to the feature.
+**Nota:** Los datos comprometidos empiezan a aparecer en el dashboard de Protect360 solo después de que se añada una aplicación a la atribución mejorada. Sin embargo, los datos comprometidos y no comprometidos pueden seguir mostrándose para periodos históricos anteriores a que la aplicación se añadiera a la función.
 
-<div data-zendesk-anchors="h_01KEC2P5M5EPDA22XZ6XSQRZFQ=what-is-the-enhanced-attribution-model h_01KEC2P5M5NZ5F134TPRPN8K15=how-the-enhanced-attribution-model-helps h_01KEC2P5M59QCG1E5C74ERASYE=how-the-enhanced-attribution-model-works h_01KEC2P5M52MG4EWD63PE761G9=where-enhanced-attribution-data-appears-in-appsflyer-reports h_01KEC2P5M5VTJ5YF4NJ13ZY0NF=raw-data-reports h_01KEC2P5M5T43VGNWF9HW9K76Z=note h_01KEC2P5M5TAHRRC3YCSB5EQE5=protect360-dashboards-and-reports" />
+<div data-zendesk-anchors="what-is-the-enhanced-attribution-model=qu%C3%A9-es-el-modelo-de-atribuci%C3%B3n-mejorada h_01KEC2P5M5EPDA22XZ6XSQRZFQ=qu%C3%A9-es-el-modelo-de-atribuci%C3%B3n-mejorada how-the-enhanced-attribution-model-helps=c%C3%B3mo-ayuda-el-modelo-de-atribuci%C3%B3n-mejorada h_01KEC2P5M5NZ5F134TPRPN8K15=c%C3%B3mo-ayuda-el-modelo-de-atribuci%C3%B3n-mejorada how-the-enhanced-attribution-model-works=c%C3%B3mo-funciona-el-modelo-de-atribuci%C3%B3n-mejorada h_01KEC2P5M59QCG1E5C74ERASYE=c%C3%B3mo-funciona-el-modelo-de-atribuci%C3%B3n-mejorada where-enhanced-attribution-data-appears-in-appsflyer-reports=d%C3%B3nde-aparecen-los-datos-de-atribuci%C3%B3n-de-atribuci%C3%B3n-mejorada-en-los-reportes-de-appsflyer h_01KEC2P5M52MG4EWD63PE761G9=d%C3%B3nde-aparecen-los-datos-de-atribuci%C3%B3n-de-atribuci%C3%B3n-mejorada-en-los-reportes-de-appsflyer raw-data-reports=reportes-de-raw-data h_01KEC2P5M5VTJ5YF4NJ13ZY0NF=reportes-de-raw-data h_01KEC2P5M5T43VGNWF9HW9K76Z=nota protect360-dashboards-and-reports=dashboards-y-reportes-de-protect360 h_01KEC2P5M5TAHRRC3YCSB5EQE5=dashboards-y-reportes-de-protect360" />

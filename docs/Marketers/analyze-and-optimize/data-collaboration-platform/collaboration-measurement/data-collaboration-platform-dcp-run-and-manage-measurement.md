@@ -1,5 +1,5 @@
 ---
-title: Data collaboration platform (DCP) - Run and manage measurement
+title: 'Plataforma de colaboración de datos (DCP): ejecuta y administra la medición'
 metadata:
   keywords:
     - Marketers
@@ -12,185 +12,184 @@ x-zendesk:
     - Marketers
     - Data Management
   created_at: '2026-03-04T10:59:23Z'
-  edited_at: '2026-03-15T17:18:01Z'
+  edited_at: '2026-08-12T11:53:26Z'
   id: 44427723216017
-  locale: en-us
+  locale: es
   section: Collaboration measurement
   section_id: 38034865098641
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/44427723216017-Data-collaboration-platform-DCP-Run-and-manage-measurement
+  url: https://support.appsflyer.com/hc/es/articles/44427723216017
 ---
-> **At a glance:** After you configure on-site or off-site measurement, run it as either a live measurement or a historical measurement. Choose the mode that best matches your goal: measure performance continuously or validate results for a defined period.
+> **En resumen:** Después de configurar la medición on-site o off-site, ejecútala como una medición en vivo o como una medición histórica. Elige el modo que mejor se adapte a tu objetivo: mide el rendimiento continuamente o valida los resultados durante un período definido.
 
-## About the measurement run modes
+## Sobre los modos de ejecución de la medición
 
-After you’ve <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement">configured the on-site or off-site measurement</Anchor>, you’re ready to choose how to run the measurement.
+Una vez que hayas <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configurar-la-medición-de-campañas-on-site-y-off-site">configurado la medición on-site o off-site</Anchor>, estarás listo para elegir cómo ejecutar la medición.
 
-You have two run modes available:
+Tienes dos modos de ejecución disponibles:
 
-* **Live measurement**: Ongoing measurement that updates at regular intervals, so you can monitor performance continuously as new data is added on the live dashboard.
-* **Historical measurement**: A one-time measurement over a specific date range that you can view and analyze on a historical dashboard.
+* **Medición en tiempo real**: Medición continua que se actualiza a intervalos regulares, para que puedas monitorear el rendimiento continuamente a medida que se agregan nuevos datos en el dashboard en tiempo real.
+* **Medición histórica**: Medición única en un intervalo de fechas específico que puedes ver y analizar en un dashboard histórico.
 
-### Live vs. historical measurements
+### Mediciones en tiempo real vs históricas
 
-| Topic | Historical measurement | Live measurement |
+| Tema | Medición histórica | Medición en tiempo real |
 | --- | --- | --- |
-| When it runs | **On-demand** (manual) execution | **Automated** daily execution |
-| Data source | Uses **historical data uploads** | Requires **SDK/ETL setup** and runs at predefined time intervals |
-| Supported source types | <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Append</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Overwrite (snapshot)</Anchor> | <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Append-type custom sources</Anchor> |
-| Time frame selection | Select a **start and end date** (from available data) | Select a **start date only** (the platform calculates the historical time frame on activation and continues accumulating data) |
-| How many per measurement | Multiple | One |
+| Cuando se ejecuta | Ejecución **bajo demanda** (manual) | Ejecución diaria **automatizada** |
+| Fuente de datos | Utiliza **cargas de datos históricos** | Requiere **configuración de SDK/ETL** y se ejecuta a intervalos de tiempo predefinidos |
+| Tipos de fuentes compatibles | <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Agregar</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">sobrescribir (snapshot)</Anchor> | <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Fuentes personalizadas de tipo append</Anchor> |
+| Selección del marco de tiempo | Selecciona una **fecha de inicio y fin** (a partir de los datos disponibles) | Selecciona una **fecha de inicio** (la plataforma calcula el período histórico de activación y continúa acumulando datos) |
+| Cuántos por medición | Múltiples | Uno |
 
-### Choose the measurement you need
+### Elige la medición que necesitas
 
-Use the guidance below to decide which measurement fits your goal.
+Utiliza la siguiente guía para decidir qué medición se ajusta a tu objetivo.
 
-**Choose live measurement if you want**
+**Elige la medición en tiempo real si quieres**
 
-* Ongoing measurement that continues updating as new data arrives
-* A dashboard you can use to monitor performance continuously
-* A setup intended for longer-term, always-on measurement (not a one-time analysis)
+* Medición continua que se actualiza a medida que llegan nuevos datos
+* Un dashboard que puedes usar para monitorear el rendimiento continuamente
+* Una configuración destinada a una medición a largo plazo y siempre activa (no un análisis único)
 
-**Choose historical measurement if you want**
+**Elige la medición histórica si deseas**
 
-* Run a one-time measurement for a specific date range.
-* Analyze performance after a campaign ends.
-* Run a what-if analysis by changing the lookback window to see how it affects attribution.
+* Ejecutar una medición única para un intervalo de fechas específico.
+* Analizar el rendimiento una vez finalizada una campaña.
+* Ejecutar un análisis de qué pasa si cambias la ventana de lookback para ver cómo afecta la atribución.
 
-**Tip:** If you’re testing your setup or validating a specific period first, start with **historical measurement**. When you’re ready for ongoing monitoring, switch to **live measurement** for continuous updates.
+**Consejo:** Si primero estás probando tu configuración o validando un período específico, comienza con la **medición histórica**. Cuando estés listo para el monitoreo continuo, cambia a **medición en tiempo real** para actualizaciones continuas.
 
-## Run a live measurement
+## Ejecutar una medición en tiempo real
 
-**Before you begin:**  <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement">Configure the on-site or off-site measurement campaign in the Measurement settings page</Anchor>.
+**Antes de empezar:**  <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configurar-la-medición-de-campañas-on-site-y-off-site">Configura la campaña de medición on-site u off-site en la página de configuración de la medición</Anchor>.
 
-1. In the **Measurement settings** page, click **Run now**.
+1. En la página **Configuración de la medición**, haz clic en **Ejecutar ahora**.
 
-   If **Run now** is disabled, your measurement tasks are incomplete. Complete all required setup tasks to run the measurement.
-2. In the **Prepare to run** dialog, select **Live dashboard**.
+   Si **Ejecutar ahora** está deshabilitado, tus tareas de medición están incompletas. Completa todas las tareas de configuración necesarias para ejecutar la medición.
+2. En el cuadro **Preparar para ejecutar**, selecciona **Dashboard en tiempo real**.
 
-   > 📘 **Note**
+   > 📘 **Nota:**
    >
-   > * If the measurement uses <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Overwrite</Anchor> sources, only the **Historical dashboard** is available. **Live dashboard** requires **Append-type** sources (or AppsFlyer SDK in-app events) to refresh automatically.
-   > * Only **one live measurement** can run at a time in a collaboration. If you start a new live measurement while another one is already running, you’ll be prompted to pause the existing one.
+   > * Si la medición utiliza fuentes de <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">sobrescritura</Anchor>, solo está disponible el **dashboard histórico**. El **dashboard en tiempo real** requiere que las fuentes **de tipo append** (o los eventos in-app del SDK de AppsFlyer) se actualicen automáticamente.
+   > * Solo se puede ejecutar **una medición en tiempo real** a la vez en una colaboración. Si inicias una nueva medición en tiempo real mientras ya se está ejecutando otra, se te pedirá que pauses la existente.
 
-3. Rename the dashboard or keep the default name.
-4. Select the **measurement start date**. The default is today’s date, but you can select a past date from the date picker. (You can only select dates that exist in your data sources.)
-5. Click **Start** to begin the live measurement. You’ll be redirected to the collaboration measurement page.
-6. On the collaboration measurement page, after the automatic validation checks complete successfully, click **Run now**.
+3. Cambia el nombre del dashboard o mantén el nombre predeterminado.
+4. Selecciona la **fecha de inicio** de la medición. El valor predeterminado es la fecha de hoy, pero puedes seleccionar una fecha pasada del selector de fechas. (Solo puedes seleccionar las fechas que existen en tus fuentes de datos).
+5. Haz clic en **Iniciar** para comenzar la medición en tiempo real. Serás redireccionado a la página de medición de la colaboración.
+6. En la página de medición de la colaboración, después de que las comprobaciones de validación automáticas se completen correctamente, haz clic en **Ejecutar ahora**.
 
-## Run a historical measurement
+## Ejecutar una medición histórica
 
-**Before you begin:**  <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement">Configure the on-site or off-site measurement campaign in the Measurement settings page</Anchor>.
+**Antes de empezar:**  <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configurar-la-medición-de-campañas-on-site-y-off-site">Configura la campaña de medición on-site u off-site en la página de configuración de la medición</Anchor>.
 
-1. In **Measurement settings**, click **Run now**.  
-   If **Run now** is disabled, your measurement tasks are incomplete. Complete all required setup tasks to run the measurement.
-2. In the **Prepare to run** dialog, select **Historical Dashboard**.
-3. Rename the dashboard or keep the default name.
-4. Select the **measurement date range** (you can only select dates that exist in your data sources):
-   * Set the **start date**.
-   * Set the **end date**.
-5. Click **Start** to begin the historical measurement. You’ll be redirected to the collaboration measurement page.
-6. On the collaboration measurement page, after the automatic validation checks complete successfully, click **Run now**.
+1. En **Configuración de medición**, haz clic en **Ejecutar ahora**.  
+   Si **Ejecutar ahora** está deshabilitado, tus tareas de medición están incompletas. Completa todas las tareas de configuración necesarias para ejecutar la medición.
+2. En el cuadro **Preparar para ejecutar**, selecciona **Dashboard histórico**.
+3. Cambia el nombre del dashboard o mantén el nombre predeterminado.
+4. Selecciona el **rango de fechas de medición** (solo puedes seleccionar las fechas que existen en tus fuentes de datos):
+   * Establece la **fecha de inicio**.
+   * Establece la **fecha de finalización**.
+5. Haz clic en **Iniciar** para comenzar la medición histórica. Serás redireccionado a la página de medición de la colaboración.
+6. En la página de medición de la colaboración, después de que las comprobaciones de validación automáticas se completen correctamente, haz clic en **Ejecutar ahora**.
 
-## Manage measurements
+## Gestionar la medición
 
-After you set up and run your measurement, manage it from the measurement panel of the collaboration measurement page. You can pause or restart live measurement, adjust dates, re-run historical measurements, or duplicate a measurement to create a new run.
+Después de configurar y ejecutar la medición, administrala desde el panel de medición de la página de medición de la colaboración. Puedes pausarla o reiniciarla en tiempo real, ajustar las fechas, volver a ejecutar mediciones históricas o duplicar una medición para crear una nueva ejecución.
 
-### The Collaboration measurement page
+### La página de medición de la colaboración
 
 [![](https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png)](https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png)
 
 <div id="pause-or-restart-live-measurement" />
 
-<Accordion title="Pause or restart live measurement">
+<Accordion title="Pausar o reiniciar la medición en tiempo real">
 
-#### Legend
+#### Leyenda
 
-* **A** - The measurement panel
-* **B** - The selected measurement
-* **C** - The Shared toggle
-* **D** - The options menu.
+* **A** - El panel de medición
+* **B** - La medición seleccionada
+* **C** - El conmutador compartido
+* **D** - Menú de opciones.
 
-1. Open the collaboration measurement page.
-2. Select the **Live dashboard** from the measurement panel ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)).
-3. Open the options menu ([D](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)) and click **Measurement settings**.
-4. In the **Measurement settings** page, do one of the following:
-   * To **pause** live attribution, turn off **Activate measurement**, then confirm in the **Pause measurement?** dialog.
-   * To **restart** live attribution, turn on **Activate measurement**.
+1. Abre la página de medición de la colaboración.
+2. Selecciona el **dashboard en tiempo real** en el panel de medición ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#la-página-de-medición-de-la-colaboración)).
+3. Abre el menú de opciones ([D](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#la-página-de-medición-de-la-colaboración)) y haz clic en **Configuración de medición**.
+4. En la página **Configuración de la medición**, realiza una de las siguientes acciones:
+   * Para **pausar** la atribución en tiempo real, desactiva **Activar medición** y, a continuación, confirma en el cuadro **¿Pausar medición?** .
+   * Para **reiniciar** la atribución en tiempo real, activa **Activar medición**.
 
 </Accordion>
 
 <div id="change-measurement-start-and-end-dates" />
 
-<Accordion title="Change measurement start and end dates">
+<Accordion title="Cambiar las fechas de inicio y fin de la medición">
 
-You can change:
+Puedes cambiar:
 
-* The **start date** for a live measurement, or
-* The **start and end dates** for a historical measurement.
+* La **fecha de inicio** de una medición en tiempo real, o
+* Las **fechas de inicio y fin** de una medición histórica.
 
-To change the measurement start and end dates, follow these steps:
+Para cambiar las fechas de inicio y fin de la medición, sigue estos pasos:
 
-1. Open the collaboration measurement page.
-2. Select the measurement from the measurement panel ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)).
-3. Open the options menu ([D](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)) and click **Measurement settings**.
-4. In the **Measurement settings** page, click the pen icon.
-5. Click the start or end date.
-6. Select the new date from the date picker.
+1. Abre la página de medición de la colaboración.
+2. Selecciona la medición en el panel de medición ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#la-página-de-medición-de-la-colaboración)).
+3. Abre el menú de opciones ([D](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#la-página-de-medición-de-la-colaboración)) y haz clic en **Configuración de medición**.
+4. En la página **Configuración de la medición**, haz clic en el icono del lápiz.
+5. Haz clic en la fecha de inicio o fin.
+6. Selecciona la nueva fecha del selector de fechas.
 
 </Accordion>
 
 <div id="rerun-a-historical-measurement" />
 
-<Accordion title="Re-run a historical measurement">
+<Accordion title="Vuelve a ejecutar la medición histórica">
 
-Re-running a historical measurement recalculates attribution using the latest data. The current results are replaced with the new results.
+Volver a ejecutar una medición histórica recalcula la atribución utilizando los datos más recientes. Los resultados actuales se reemplazan por los nuevos.
 
-1. Open the collaboration measurement page.
-2. Select the measurement from the measurement panel ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)).
-3. Open the options menu ([D](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)) and click **Re-run**.
-4. In the prompt message, click **Re-run**.
-5. On the collaboration measurement page, after the automatic validation checks complete successfully, click **Run now**.
+1. Abre la página de medición de la colaboración.
+2. Selecciona la medición en el panel de medición ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#la-página-de-medición-de-la-colaboración)).
+3. Abre el menú de opciones ([D](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#la-página-de-medición-de-la-colaboración)) y haz clic en **Volver a ejecutar**.
+4. En el mensaje de solicitud, haz clic en **Vovler a ejecutar**.
+5. En la página de medición de la colaboración, después de que las comprobaciones de validación automáticas se completen correctamente, haz clic en **Ejecutar ahora**.
 
 </Accordion>
 
 <div id="duplicate-a-live-or-historical-measurement" />
 
-<Accordion title="Duplicate a live or historical measurement">
+<Accordion title="Duplica una medición en tiempo real o histórica">
 
-Duplicating creates a new measurement based on an existing setup. You can update the settings and run it as a new measurement.
+Duplicar crea una nueva medición basada en una configuración existente. Puedes actualizar la configuración y ejecutarla como una nueva medición.
 
-1. Open the collaboration measurement page.
-2. Select the measurement from the measurement panel ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)).
-3. Open the options menu ([D](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)) and click **Duplicate**.
-4. In the duplicated **Measurement settings** page, customize the measurement to your needs.
+1. Abre la página de medición de la colaboración.
+2. Selecciona la medición en el panel de medición ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#la-página-de-medición-de-la-colaboración)).
+3. Abre el menú de opciones ([D](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#la-página-de-medición-de-la-colaboración)) y haz clic en **Duplicar**.
+4. En la página duplicada de **configuración de medición**, personaliza la medición según tus necesidades.
 
 </Accordion>
 
 <div id="share-a-dashboard" />
 
-<Accordion title="Share a dashboard">
+<Accordion title="Compartir un dashboard">
 
-You can share a dashboard with your collaborators by turning on the **Shared** toggle. When **Shared** is ON, the dashboard (and its measurement results) is available to other users in the collaboration.
+Puedes compartir un dashboard con tus colaboradores activando el selector **Compartido**. Cuando **Compartido** está ACTIVADO, el dashboard (y sus resultados de medición) está disponible para otros usuarios de la colaboración.
 
-What collaborators can do, when **Shared** is ON, depends on whether they’re **assigned** to the dashboard.
+Lo que pueden hacer los colaboradores, cuando **Compartido** está ACTIVADO, depende de si están **asignados** al dashboard.
 
-* **Assigned users can:**
-  * Open and **view the dashboard**
-  * Open the **Measurement settings** and **edit only the tasks assigned to them.**
+* **Los usuarios asignados pueden:**
+  * Abrir y **ver el dashboard**
+  * Abre la **Configuración de medición** y **edita solo las tareas asignadas.**
 
-* **Assigned users can’t:**
-  * Turn **Shared** on/off (share or unshare)
-  * **Re-run** the measurement
+* **Los usuarios asignados no pueden:**
+  * Activa/desactiva **Compartido** (compartir o dejar de compartir)
+  * **Vuelve a ejecutar** la medición
 
-* **Users who aren’t assigned** have more limited access, even if the dashboard is shared (for example, they may not see the results summary and can’t re-run or share).
+* Los **usuarios no asignados** tienen un acceso más limitado, incluso si el dashboard es compartido (por ejemplo, es posible que no vean el resumen de resultados y no puedan volver a ejecutarse o compartirse).
 
-To share a dashboard:
+Para compartir un dashboard:
 
-1. Open the collaboration measurement page and select the **dashboard** you want to share from the measurement panel ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)).
-2. Turn on **Shared** ([C](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)). The dashboard will be available in your collaborator measurement page.
-3. Turn off **Shared** to stop sharing. When sharing is turned off, only you (and users with the right permissions) can access the dashboard.
+1. Abre la página de medición de la colaboración y selecciona el **dashboard** que deseas compartir desde el panel de medición ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#la-página-de-medición-de-la-colaboración)).
+2. Activar **Compartido** ([C](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#la-página-de-medición-de-la-colaboración)). El dashboard estará disponible en tu página de medición de colaboradores.
+3. Desactivar **Compartido** para dejar de compartir. Cuando se desactiva el uso compartido, solo tú (y los usuarios con los permisos adecuados) pueden acceder al dashboard.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01KJW81RSZPK2Y1PSAF9FSMXB6=about-the-measurement-run-modes h_01KJW81RSZBG5ZC8HE9WFXE34D=live-vs-historical-measurements h_01KJW81RSZQG21Z0MRHWPMD69F=choose-the-measurement-you-need h_01KJW81RT0Q1RWEHZP66B5141M=run-a-live-measurement h_01KJW81RT0N37ARE5570X7MYJF=note h_01KJW81RT0QECMGBTRFSETA5A8=run-a-historical-measurement h_01KJW81RT046RE5FVHPGEDMCC5=manage-measurements h_01KJWNTR04PRG54W0GZVGQY72X=the-collaboration-measurement-page h_01KJWNF8NAJ9NT5T8NAVTCMZVA=legend h_01KJW81RT0A148W49X0BR0V9YM=pause-or-restart-live-measurement h_01KJW81RT0GYDCZCXXV2G5EJD7=change-measurement-start-and-end-dates h_01KJW81RT054CCYMTKFN7TS1XV=rerun-a-historical-measurement h_01KJW81RT0RKQJRCTRVP36YBKV=duplicate-a-live-or-historical-measurement h_01KJW81RT0C3R95JQVPGSZ043B=share-a-dashboard" />
+<div data-zendesk-anchors="about-the-measurement-run-modes=sobre-los-modos-de-ejecuci%C3%B3n-de-la-medici%C3%B3n h_01KJW81RSZPK2Y1PSAF9FSMXB6=sobre-los-modos-de-ejecuci%C3%B3n-de-la-medici%C3%B3n live-vs-historical-measurements=mediciones-en-tiempo-real-vs-hist%C3%B3ricas h_01KJW81RSZBG5ZC8HE9WFXE34D=mediciones-en-tiempo-real-vs-hist%C3%B3ricas choose-the-measurement-you-need=elige-la-medici%C3%B3n-que-necesitas h_01KJW81RSZQG21Z0MRHWPMD69F=elige-la-medici%C3%B3n-que-necesitas run-a-live-measurement=ejecutar-una-medici%C3%B3n-en-tiempo-real h_01KJW81RT0Q1RWEHZP66B5141M=ejecutar-una-medici%C3%B3n-en-tiempo-real h_01KJW81RT0N37ARE5570X7MYJF=nota run-a-historical-measurement=ejecutar-una-medici%C3%B3n-hist%C3%B3rica h_01KJW81RT0QECMGBTRFSETA5A8=ejecutar-una-medici%C3%B3n-hist%C3%B3rica manage-measurements=gestionar-la-medici%C3%B3n h_01KJW81RT046RE5FVHPGEDMCC5=gestionar-la-medici%C3%B3n the-collaboration-measurement-page=la-p%C3%A1gina-de-medici%C3%B3n-de-la-colaboraci%C3%B3n h_01KJWNTR04PRG54W0GZVGQY72X=la-p%C3%A1gina-de-medici%C3%B3n-de-la-colaboraci%C3%B3n legend=leyenda h_01KJWNF8NAJ9NT5T8NAVTCMZVA=leyenda h_01KJW81RT0A148W49X0BR0V9YM=pause-or-restart-live-measurement h_01KJW81RT0GYDCZCXXV2G5EJD7=change-measurement-start-and-end-dates h_01KJW81RT054CCYMTKFN7TS1XV=rerun-a-historical-measurement h_01KJW81RT0RKQJRCTRVP36YBKV=duplicate-a-live-or-historical-measurement h_01KJW81RT0C3R95JQVPGSZ043B=share-a-dashboard" />

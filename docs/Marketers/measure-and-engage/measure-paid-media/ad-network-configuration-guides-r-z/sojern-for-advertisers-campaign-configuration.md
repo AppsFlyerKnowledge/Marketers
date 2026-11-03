@@ -1,5 +1,5 @@
 ---
-title: Sojern for Advertisers campaign configuration
+title: Configuración de campañas de Sojern para anunciantes
 metadata:
   keywords:
     - Advertisers
@@ -14,291 +14,290 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-08-07T08:59:30Z'
-  edited_at: '2026-09-09T13:01:28Z'
+  edited_at: '2026-09-11T00:24:49Z'
   id: 360001378265
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001378265-Sojern-for-Advertisers-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360001378265
 ---
-> **At a glance:** Sojern for Advertisers, an AppsFlyer ad network integrated partner, specializes in programmatic buying for the travel market.
+> **De un vistazo:** Sojern for Advertisers, un partner integrado de ad network de AppsFlyer, se especializa en la compra programática para el mercado de viajes.
 
-To configure your campaigns with Sojern for Advertisers, follow the steps below.
+Para configurar tus campañas con Sojern for Advertisers, sigue los pasos a continuación.
 
-## Setting up Sojern for Advertisers
+## Configuración de Sojern for Advertisers para anunciantes
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el Partners. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace** .  
+   (**Para editar una integración existente:** ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el Partners y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar Partners**.   
+   **Nota:** el selector **debe permanecer activado (activo) mientras trabajes con el Partners**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you'll need to turn on the ***Activate Partner*** toggle to enable setup of the Integration parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás activar el interruptor ***Activar partner*** para habilitar la configuración de los parámetros de integración. El activador debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> As an ALL-Installs network, Sojern for Advertisers prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to Sojern for Advertisers.
+> Como red de TODAS las instalaciones, Sojern for Advertisers prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Sojern for Advertisers.
 
-### General settings
+### Configuración general
 
-**Partner ID**
+**ID de socio**
 
-Sojern for Advertisers connects with AppsFlyer via a unique Partner ID. If you don't already have the Partner ID, you must obtain it from Sojern for Advertisers to continue with the integration.
+Sojern for Advertisers se conecta con AppsFlyer a través de un ID de partner único. Si todavía no tienes el ID de partner, debes obtenerlo de Sojern for Advertisers para continuar con la integración.
 
 ![Sojern_msc_new_2.png](https://files.readme.io/35d02000642f8dc768c5bd1b0ca7846b9575900b2e9b3169673840f438815ef1-360002443905.png)
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to Sojern for Advertisers following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a Sojern for Advertisers después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to Sojern for Advertisers.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Sojern for Advertisers.
+Selecciona **Solo eventos atribuidos a este partner** para eventos que provienen únicamente de usuarios atribuidos a Sojern for Advertisers.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para tener toda tu base de usuarios disponible para reportarla a Sojern for Advertisers.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with Sojern for Advertisers via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer a Sojern for Advertisers mediante postbacks.
 
-1. Enter the Sojern for Advertisers Partner ID again.
-2. Toggle In-App Event Postbacks to ON.
-3. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-4. Click **Add Event** to add an SDK Event to the list.  
-   For more details about Sojern for Advertisers In-App Events, click here.
-5. Complete the following parameters:
+1. Introduce de nuevo el ID de partner de Sojern for Advertisers.
+2. Activa los Postbacks de eventos in-app con el selector.
+3. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+4. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.  
+   Para obtener más información sobre los eventos in-app de Sojern for Advertisers, haz clic aquí.
+5. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server-to-server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Sojern for the Advertisers' side.  <br />Obtain the corresponding Event ID from Sojern for Advertisers and set it in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según se define del lado de Sojern for Advertisers.  <br />Obtén el ID de evento correspondiente de Sojern for Advertisers y configúralo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
 
-### Event types
+### Tipos de evento
 
-Sojern for Advertisers requires the implementation of the following events:
+Sojern for Advertisers requiere la implementación de los siguientes eventos:
 
 **Hotel**
 
-| Type of Event | Sojern for Advertisers Events | SDK Event | Description |
+| Tipo de evento | Eventos de Sojern for Advertisers | Evento del SDK | Nota |
 | --- | --- | --- | --- |
-| Homepage | HOME\_PAGE | af\_app\_opened | App open/brought to the foreground |
-| Search Result | HOTEL\_SEARCH | af\_list\_view | Search result page showing a list of options |
-| Product | HOTEL\_PRODUCT | af\_content\_view | View of a specific product/option from the search results |
-| Confirmation | HOTEL\_CONFIRMATION | af\_purchase | Purchase of the item(s) |
+| Página de inicio | PÁGINA\_DE\_INICIO | af\_app\_opened | La aplicación se abre o se trae al primer plano |
+| Resultado de la búsqueda | BÚSQUEDA\_DE\_HOTEL | af\_list\_view | Página de resultados de búsqueda que muestra una lista de opciones |
+| Producto | PRODUCTO\_DE\_HOTEL | af\_content\_view | Vista de un producto/opción específico de los resultados de búsqueda |
+| Confirmación | CONFIRMACIÓN\_DE\_HOTEL | af\_compra | Compra del/de los artículo(s) |
 
-**Flight**
+**Vuelo**
 
-| Type of Event | Sojern for Advertisers Events | SDK Event | Description |
+| Tipo de evento | Eventos de Sojern para anunciantes | Evento del SDK | Nota |
 | --- | --- | --- | --- |
-| Homepage | HOME\_PAGE | af\_app\_opened | App open/brought to the foreground |
-| Search Result | FLIGHT\_SEARCH | af\_list\_view | Search result page showing a list of options |
-| Product | FLIGHT\_PRODUCT | af\_content\_view | View of a specific product/option from the search results |
-| Confirmation | FLIGHT\_CONFIRMATION | af\_purchase | Purchase of the item(s) |
+| Página de inicio | PÁGINA\_DE\_INICIO | af\_app\_opened | La aplicación se abre o se trae al primer plano |
+| Resultado de la búsqueda | BÚSQUEDA\_DE\_VUELO | af\_list\_view | Página de resultados de búsqueda que muestra una lista de opciones |
+| Producto | PRODUCTO\_DE\_VUELO | af\_content\_view | Vista de un producto/opción específico de los resultados de búsqueda |
+| Confirmación | CONFIRMACIÓN\_DE\_VUELO | af\_compra | Compra del/de los artículo(s) |
 
-**Cruise**
+**Crucero**
 
-| Type of Event | Sojern for Advertisers Events | SDK Event | Description |
+| Tipo de evento | Eventos de Sojern para anunciantes | Evento del SDK | Nota |
 | --- | --- | --- | --- |
-| Homepage | HOME\_PAGE | af\_app\_opened | App open/brought to the foreground |
-| Search Result | CRUISE\_SEARCH | af\_list\_view | Search result page showing a list of options |
-| Product | CRUISE\_PRODUCT | af\_content\_view | View of a specific product/option from the search results |
-| Confirmation | CRUISE\_CONFIRMATION | af\_purchase | Purchase of the item(s) |
+| Página de inicio | HOME\_PAGE | af\_app\_opened | Apertura de la aplicación o paso a primer plano |
+| Resultado de la búsqueda | CRUISE\_SEARCH | af\_list\_view | Página de resultados de búsqueda que muestra una lista de opciones |
+| Producto | CRUISE\_PRODUCT | af\_content\_view | Vista de un producto u opción específicos de los resultados de la búsqueda |
+| Confirmación | CRUISE\_CONFIRMATION | af\_compra | Compra del/de los artículo(s) |
 
-**Car**
+**Coche**
 
-| Type of Event | Sojern for Advertisers Events | SDK Event | Description |
+| Tipo de evento | Eventos de Sojern para anunciantes | Evento del SDK | Nota |
 | --- | --- | --- | --- |
-| Homepage | HOME\_PAGE | af\_app\_opened | App open/brought to the foreground |
-| Search Result | CAR\_SEARCH | af\_list\_view | Search result page showing a list of options |
-| Product | CAR\_PRODUCT | af\_content\_view | View of a specific product/option from the search results |
-| Confirmation | CAR\_CONFIRMATION | af\_purchase | Purchase of the item(s) |
+| Página de inicio | HOME\_PAGE | af\_app\_opened | Apertura de la aplicación o paso a primer plano |
+| Resultado de la búsqueda | CAR\_SEARCH | af\_list\_view | Página de resultados de búsqueda que muestra una lista de opciones |
+| Producto | CAR\_PRODUCT | af\_content\_view | Vista de un producto u opción específicos de los resultados de la búsqueda |
+| Confirmación | CAR\_CONFIRMATION | af\_compra | Compra de los artículo(s) |
 
-**Entertainment**
+**Entretenimiento**
 
-| Type of Event | Sojern for Advertisers Events | SDK Event | Description |
+| Tipo de evento | Eventos de Sojern para anunciantes | Evento del SDK | Nota |
 | --- | --- | --- | --- |
-| Homepage | HOME\_PAGE | af\_app\_opened | App open/brought to the foreground |
-| Search Result | ENTERTAINMENT\_SEARCH | af\_list\_view | Search result page showing a list of options |
-| Product | ENTERTAINMENT\_PRODUCT | af\_content\_view | View of a specific product/option from the search results |
-| Confirmation | ENTERTAINMENT\_CONFIRMATION | af\_purchase | Purchase of the item(s) |
+| Página de inicio | HOME\_PAGE | af\_app\_opened | Apertura de la aplicación o paso al primer plano |
+| Resultado de búsqueda | ENTERTAINMENT\_SEARCH | af\_list\_view | Página de resultados de búsqueda que muestra una lista de opciones |
+| Producto | ENTERTAINMENT\_PRODUCT | af\_content\_view | Vista de un producto u opción específicos a partir de los resultados de búsqueda |
+| Confirmación | ENTERTAINMENT\_CONFIRMATION | af\_compra | Compra de los artículo(s) |
 
-**Train**
+**Tren**
 
-| Type of Event | Sojern for Advertisers Events | SDK Event | Description |
+| Tipo de evento | Eventos de Sojern para anunciantes | Evento del SDK | Nota |
 | --- | --- | --- | --- |
-| Homepage | HOME\_PAGE | af\_app\_opened | App open/brought to the foreground |
-| Search Result | RAIL\_SEARCH | af\_list\_view | Search result page showing a list of options |
-| Product | RAIL\_PRODUCT | af\_content\_view | View of a specific product/option from the search results |
-| Confirmation | RAIL\_CONFIRMATION | af\_purchase | Purchase of the item(s) |
+| Página de inicio | HOME\_PAGE | af\_app\_opened | Apertura de la aplicación o paso al primer plano |
+| Resultado de búsqueda | RAIL\_SEARCH | af\_list\_view | Página de resultados de búsqueda que muestra una lista de opciones |
+| Producto | RAIL\_PRODUCT | af\_content\_view | Vista de un producto/opción específico de los resultados de búsqueda |
+| Confirmación | RAIL\_CONFIRMATION | af\_compra | Compra del/de los artículo(s) |
 
-**Vacation**
+**Vacaciones**
 
-| Type of Event | Sojern for Advertisers Events | SDK Event | Description |
+| Tipo de evento | Eventos de Sojern for Advertisers | Evento del SDK | Nota |
 | --- | --- | --- | --- |
-| Homepage | HOME\_PAGE | af\_app\_opened | App open/brought to the foreground |
-| Search Result | VACATION\_SEARCH | af\_list\_view | Search result page showing a list of options |
-| Product | VACATION\_PRODUCT | af\_content\_view | View of a specific product/option from the search results |
-| Confirmation | VACATION\_CONFIRMATION | af\_purchase | Purchase of the item(s) |
+| Página de inicio | HOME\_PAGE | af\_app\_opened | La app se abre o pasa al primer plano |
+| Resultado de búsqueda | VACATION\_SEARCH | af\_list\_view | Página de resultados de búsqueda que muestra una lista de opciones |
+| Producto | VACATION\_PRODUCT | af\_content\_view | Vista de un producto/opción específico de los resultados de búsqueda |
+| Confirmación | VACATION\_CONFIRMATION | af\_compra | Compra del/de los artículo(s) |
 
-#### Correct configuration of in-app events
+#### Configuración correcta de los eventos in-app
 
-It's important when configuring a campaign with Sojern for Advertisers that specific in-app events are set up.
+Al configurar una campaña con Sojern for Advertisers, es importante definir eventos in-app específicos.
 
-When the AppsFlyer naming convention is not available, use the Sojern for Advertisers Param key.
+Cuando la convención de nombres de AppsFlyer no esté disponible, usa la clave Param de Sojern for Advertisers.
 
-Sojern for Advertisers has four types of in-app events:
+Sojern for Advertisers tiene cuatro tipos de eventos in-app:
 
-* Confirmation
-* Product
-* Search
-* Cart
+* Confirmación
+* Producto
+* Búsqueda
+* Carrito
 
-Set out below is an example of the Search and Confirmation for the hotel and flight sector:
+A continuación se muestra un ejemplo de la búsqueda y la confirmación para el sector de hoteles y vuelos:
 
-|  | Name | Param Key | AppsFlyer Rich In-App Event Name |
+|  | Nombre | Clave de parámetro | Nombre del evento in-app enriquecido de AppsFlyer |
 | --- | --- | --- | --- |
-| **Flight Search** | Event Type | et | value 'fs' |
-|  | Number of Travelers | t | af\_num\_adults + af\_num\_children + af\_num\_infants |
-|  | Number of adults | tad | af\_num\_adults |
-|  | Numbers of children | tch | af\_num\_children |
-|  | Service Class | fc | af\_class |
-|  | One Way | fow | N/A |
-|  | Multi-city | fmc | N/A |
-|  | Website County Domain | dctry | N/A |
-|  | Site Domain | domain | N/A |
-|  | Origin Airport | fa1 | af\_destination\_a |
-|  | Destination Airport | fa2 | af\_destination\_b |
-|  | Destination City | fc1 | af\_city |
-|  | Origination City | fc2 | N/A |
-|  | Departure Date | fd1 | af\_departing\_departure\_date |
-|  | Return Date | fd2 | af\_returning\_departure\_date |
-| **Flight Confirmation** | Name | Param key |  |
-|  | Event Type | et | value 'fc' |
-|  | Number of Travelers | t | af\_num\_adults + af\_num\_children + af\_num\_infants |
-|  | Number of adults | tad | af\_num\_adults |
-|  | Numbers of children | tch | af\_num\_children + af\_num\_infants |
-|  | Service Class | fc | af\_class |
-|  | Website County Domain | dctry | N/A |
-|  | Site Domain | domain | N/A |
-|  | Origin Airport | fa1 | af\_destination\_a |
-|  | Destination Airport | fa2 | af\_destination\_b |
-|  | Destination City | fc1 | af\_city |
-|  | Origination City | fc2 | N/A |
-|  | Departure Date | fd1 | af\_departing\_departure\_date |
-|  | Return Date | fd2 | af\_returning\_departure\_date |
-|  | Purchase Currency | fcu | af\_currency |
-|  | Purchase Price | fp | af\_revenue |
-| **Hotel Search** | Name | Param key |  |
-|  | Event Type | et | value 'hs' |
-|  | Website County Domain | dctry | af\_country |
-|  | Destination City | hc1 | af\_city |
-|  | Check-In Date | hd1 | af\_date\_a |
-|  | Check-Out Date | hd2 | af\_date\_b |
-|  | Number of Travelers | t | af\_num\_adults + af\_num\_children + af\_num\_infants |
-|  | Number of adults | tad | af\_num\_adults |
-|  | Numbers of children | tch | af\_num\_children + af\_num\_infants |
-|  | Site Domain | domain | N/A |
-| **Hotel Confirmation** | Name | Param key |  |
-|  | Event Type | et | value 'hc' |
-|  | Website County Domain | dctry | N/A |
-|  | Destination City | hc1 | af\_city |
-|  | Check-In Date | hd1 | af\_date\_a |
-|  | Check-Out Date | hd2 | af\_date\_b |
-|  | Number of Travelers | t | af\_num\_adults + af\_num\_children + af\_num\_infants |
-|  | Number of adults | tad | af\_num\_adults |
-|  | Numbers of children | tch | af\_num\_children + af\_num\_infants |
-|  | Site Domain | domain | N/A |
-|  | Destination Country | hn1 | af\_country |
-|  | Purchase Price | hp | af\_revenue |
-|  | Purchase Currency | hcu | af\_currency |
+| **Búsqueda de vuelos** | Tipo de evento | et | valor «fs» |
+|  | Número de viajeros | t | af\_num\_adults + af\_num\_children + af\_num\_infants |
+|  | Número de adultos | tad | af\_num\_adults |
+|  | Número de niños | tch | af\_num\_children |
+|  | Clase de servicio | fc | af\_class |
+|  | Solo ida | fow | N/D |
+|  | Multiciudad | fmc | N/D |
+|  | Dominio del país del sitio web | dctry | N/D |
+|  | Dominio del sitio | dominio | N/D |
+|  | Aeropuerto de origen | fa1 | af\_destination\_a |
+|  | Aeropuerto de destino | fa2 | af\_destination\_b |
+|  | Ciudad de destino | fc1 | af\_city |
+|  | Ciudad de origen | fc2 | N/D |
+|  | Fecha de salida | fd1 | af\_departing\_departure\_date |
+|  | Fecha de regreso | fd2 | af\_returning\_departure\_date |
+| **Confirmación del vuelo** | Nombre | Clave de parámetro |  |
+|  | Tipo de evento | et | valor 'fc' |
+|  | Número de viajeros | t | af\_num\_adults + af\_num\_children + af\_num\_infants |
+|  | Número de adultos | tad | af\_num\_adults |
+|  | Número de niños | tch | af\_num\_children + af\_num\_infants |
+|  | Clase de servicio | fc | af\_class |
+|  | Dominio del país del sitio web | dctry | N/D |
+|  | Dominio del sitio | dominio | N/D |
+|  | Aeropuerto de origen | fa1 | af\_destination\_a |
+|  | Aeropuerto de destino | fa2 | af\_destination\_b |
+|  | Ciudad de destino | fc1 | af\_city |
+|  | Ciudad de origen | fc2 | N/D |
+|  | Fecha de salida | fd1 | af\_departing\_departure\_date |
+|  | Fecha de regreso | fd2 | af\_returning\_departure\_date |
+|  | Moneda de compra | fcu | af\_currency |
+|  | Precio de compra | fp | af\_revenue |
+| **Búsqueda de hoteles** | Nombre | Clave de parámetro |  |
+|  | Tipo de evento | et | valor "hs" |
+|  | Dominio del país del sitio web | dctry | af\_country |
+|  | Ciudad de destino | hc1 | af\_city |
+|  | Fecha de entrada | hd1 | af\_date\_a |
+|  | Fecha de salida | hd2 | af\_date\_b |
+|  | Número de viajeros | t | af\_num\_adults + af\_num\_children + af\_num\_infants |
+|  | Número de adultos | tad | af\_num\_adults |
+|  | Número de niños | tch | af\_num\_children + af\_num\_infants |
+|  | Dominio del sitio | dominio | N/D |
+| **Confirmación del hotel** | Nombre | Clave de parámetro |  |
+|  | Tipo de evento | et | valor 'hc' |
+|  | Dominio del país del sitio web | dctry | N/D |
+|  | Ciudad de destino | hc1 | af\_city |
+|  | Fecha de entrada | hd1 | af\_date\_a |
+|  | Fecha de salida | hd2 | af\_date\_b |
+|  | Número de viajeros | t | af\_num\_adults + af\_num\_children + af\_num\_infants |
+|  | Número de adultos | tad | af\_num\_adults |
+|  | Número de niños | tch | af\_num\_children + af\_num\_infants |
+|  | Dominio del sitio | dominio | N/D |
+|  | País de destino | hn1 | af\_country |
+|  | Precio de compra | hp | af\_revenue |
+|  | Moneda de compra | hcu | af\_currency |
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Flight Search event values:
+> Valores del evento de búsqueda de vuelos:
 >
-> In-app event: af\_list\_view in-app event values: et=‘fs’&af\_num\_adults=`{number of adults}&af_num_children={number of children}&af_class={service class}&fow={one way}&fmc={multi city}&dctry={website country domain}&af_destination_a={departure airport code}&af_destination_b={arrival airport code}&af_city={destination city}&fc2={origin city}&af_departing_departure_date={YYYY-MM-DD}&af_returning_departure_date{YYYY-MM-DD}`
+> Evento in-app: af\_list\_view, valores del evento in-app: et=‘fs’&af\_num\_adults=`{number of adults}&af_num_children={number of children}&af_class={service class}&fow={one way}&fmc={multi city}&dctry={website country domain}&af_destination_a={departure airport code}&af_destination_b={arrival airport code}&af_city={destination city}&fc2={origin city}&af_departing_departure_date={YYYY-MM-DD}&af_returning_departure_date={YYYY-MM-DD}`
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to Sojern for Advertisers for attributing campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a Sojern for Advertisers para atribuir campañas, conjuntos de anuncios o incluso anuncios individuales. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with Sojern for Advertisers.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific Sojern for Advertisers campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific Sojern for Advertiser campaigns.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set the Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña**: añádela para comparar distintas campañas en funcionamiento con Sojern for Advertisers.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios**: define nombres de conjuntos de anuncios para comparar diferentes conjuntos de anuncios dentro de campañas específicas de Sojern for Advertisers.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio**: define nombres de conjuntos de anuncios para comparar distintos creativos dentro de conjuntos de anuncios específicos, dentro de campañas específicas de Sojern for Advertisers.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** y **ID de subsitio**: configura el parámetro de ID de sitio para atribuir instalaciones a publishers específicos. Si existen muchos publishers, te aconsejamos limitar el número de ID de sitio usados y utilizar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">superar las limitaciones del ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor**: usa cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+  **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros del enlace de atribución de AppsFlyer**</Anchor>.
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Sojern for Advertisers.
+Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeros inicios) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Sojern for Advertisers.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to Sojern for Advertisers to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Sojern for Advertisers para que se active cuando los leads hagan clic en el anuncio correspondiente.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost integration is not available for Sojern for Advertisers.
+La integración de costos no está disponible para Sojern for Advertisers.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue Tab integration is not available for Sojern for Advertisers.
+La integración de la pestaña de ingresos no está disponible para Sojern for Advertisers.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-No configuration of permissions is available for Sojern for Advertisers.
+No hay disponible ninguna configuración de permisos para Sojern for Advertisers.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJS0FHZ6KE2Z93F3SWGEM5B8=setting-up-sojern-for-advertisers h_01HJS0FHZ7Z9H58D8SWRCM64JH=integration-tab h_01HJS0FHZ7SZ1EPN7PDH7EYP0T=activate-partner h_01HJS0FHZ778T3QF4XNM8FCHX0=note h_01HJS0FHZ7EEAGSCDM4XXJVYC3=general-settings h_01HJS0FHZ78EV1K8DVKN50VJ0B=default-postbacks inapp-events-settings=in-app-events-settings h_01HJS0FHZ7AN3ZQYF4ZS3X4BVT=in-app-events-settings h_01HJS0FHZ7EVPMN25Y1985NFSS=event-types correct-configuration-of-inapp-events=correct-configuration-of-in-app-events h_01HJS0FHZ8807QADT9Z35NAWFT=correct-configuration-of-in-app-events h_01HJS0FHZ9J3MWRKF2YCWZ611Z=example h_01HJS0FHZ9ASEYGFWZ681EMZ47=attribution-link-tab h_01HJS0FHZ9YVAG37CQQK33RNJ2=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJS0FHZ9R2SM91Y5WBP002M1=click-through-attribution h_01HJS0FHZ9GVGWJEPJ337B1DHE=click-attribution-link h_01HJS0FHZ9BXJHQWC9CQWNVANS=cost-tab h_01HJS0FHZ9TARRTF5WZZ6P2V30=ad-revenue-tab h_01HJS0FHZ9J271QZ8SKXKY6Z67=permissions-tab" />
+<div data-zendesk-anchors="setting-up-sojern-for-advertisers=configuraci%C3%B3n-de-sojern-for-advertisers-para-anunciantes h_01HJS0FHZ6KE2Z93F3SWGEM5B8=configuraci%C3%B3n-de-sojern-for-advertisers-para-anunciantes h_01HJS0FHZ7Z9H58D8SWRCM64JH=integration-tab activate-partner=activar-socio h_01HJS0FHZ7SZ1EPN7PDH7EYP0T=activar-socio h_01HJS0FHZ778T3QF4XNM8FCHX0=nota general-settings=configuraci%C3%B3n-general h_01HJS0FHZ7EEAGSCDM4XXJVYC3=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HJS0FHZ78EV1K8DVKN50VJ0B=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HJS0FHZ7AN3ZQYF4ZS3X4BVT=configuraci%C3%B3n-de-eventos-in-app event-types=tipos-de-evento h_01HJS0FHZ7EVPMN25Y1985NFSS=tipos-de-evento correct-configuration-of-inapp-events=configuraci%C3%B3n-correcta-de-los-eventos-in-app h_01HJS0FHZ8807QADT9Z35NAWFT=configuraci%C3%B3n-correcta-de-los-eventos-in-app h_01HJS0FHZ9J3MWRKF2YCWZ611Z=ejemplo h_01HJS0FHZ9ASEYGFWZ681EMZ47=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HJS0FHZ9YVAG37CQQK33RNJ2=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HJS0FHZ9R2SM91Y5WBP002M1=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HJS0FHZ9GVGWJEPJ337B1DHE=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HJS0FHZ9BXJHQWC9CQWNVANS=cost-tab h_01HJS0FHZ9TARRTF5WZZ6P2V30=ad-revenue-tab h_01HJS0FHZ9J271QZ8SKXKY6Z67=permissions-tab" />

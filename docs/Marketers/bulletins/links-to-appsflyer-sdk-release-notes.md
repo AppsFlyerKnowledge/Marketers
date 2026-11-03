@@ -1,5 +1,5 @@
 ---
-title: Links to AppsFlyer SDK release notes
+title: Enlaces a las notas de la versión del SDK de AppsFlyer
 metadata:
   keywords:
     - SDK
@@ -15,15 +15,14 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2019-10-28T10:09:34Z'
-  edited_at: '2026-08-18T09:13:34Z'
+  edited_at: '2026-10-20T03:57:25Z'
   id: 360003090618
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360003090618-Links-to-AppsFlyer-SDK-release-notes
+  url: https://support.appsflyer.com/hc/es/articles/360003090618
 ---
-> **At a glance:** Release notes for iOS and Android SDKs.
+> **Resumen:** Notas de la versión de los SDK de iOS y Android.
 
-* <Anchor target="_blank" href="/marketers/docs/appsflyer-ios-sdk-release-notes">iOS</Anchor>
-* <Anchor target="_blank" href="/marketers/docs/appsflyer-android-sdk-release-notes">Android</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/appsflyer-ios-sdk-release-notes">apps de iOS,</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/appsflyer-android-sdk-release-notes">Android</Anchor>

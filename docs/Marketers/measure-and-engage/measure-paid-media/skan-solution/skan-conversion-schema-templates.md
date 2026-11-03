@@ -1,5 +1,5 @@
 ---
-title: SKAN conversion schema templates
+title: Plantillas de esquemas de conversión de SKAN
 metadata:
   keywords:
     - Marketers
@@ -12,63 +12,62 @@ x-zendesk:
     - Marketers
     - SKAdNetwork (SKAN)
   created_at: '2024-10-06T09:58:43Z'
-  edited_at: '2024-11-05T06:20:24Z'
+  edited_at: '2026-08-12T12:21:28Z'
   id: 28968432692241
-  locale: en-us
+  locale: es
   section: SKAN solution
   section_id: 6552135379985
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/28968432692241-SKAN-conversion-schema-templates
+  url: https://support.appsflyer.com/hc/es/articles/28968432692241
 ---
-> **At a glance:** SKAN conversion schema templates are ready-to-use templates. Simplifying the SKAN setup by offering templates based on a combination of industry and specific app data, offering industry insights and best practices. SKAN conversion schema templates can be found in the Conversion Studio.
+> **En resumen:** las plantillas de esquemas de conversión de SKAN son plantillas listas para usar. Simplifican la configuración de SKAN al ofrecer plantillas basadas en una combinación de datos de la industria y datos específicos de la aplicación, y proporcionan insights del sector y mejores prácticas. Las plantillas de esquemas de conversión de SKAN se encuentran en Conversion Studio.
 
-## Key benefits
+## Beneficios clave
 
-* These templates streamline the SKAN set up by enabling the creation of a conversion schema in just a few clicks.
-* By utilizing industry best practices and insights, marketers can refine their schema and increase confidence in its effectiveness by using templates based on industry data combined with app-specific data.
+* Estas plantillas agilizan la configuración de SKAN al permitir crear un esquema de conversión en solo unos clics.
+* Al aprovechar las mejores prácticas de la industria y los insights, los profesionales del marketing pueden perfeccionar su esquema y aumentar la confianza en su eficacia utilizando plantillas basadas en datos del sector combinados con datos específicos de la aplicación.
 
-## How to get started
+## Cómo empezar
 
-1. From the left-hand menu, Go to **Settings > SKAN Conversion Studio**
-2. Click the **Industry templates** button
-3. The template window will open
-4. Select from the list of industries and verticals on the left-hand side
-5. The right-hand side of the screen displays how the suggested conversion schema looks
-   1. Use the **SKAN 4 mode** toggle to turn on or off SKAN 4 support  
-      **Note:** With SKAN 4, three activity windows are suggested, along with coarse conversion values for the first window. With it off, only fine conversion values for the first window are suggested.
-   2. Use the ? icons next to each measurement to see an explanation of why that event or measurement was suggested, along with benchmark information
-6. Click **Select & customize**  
-   **Note:** This will not save your settings yet
-7. You will be redirected to the **Conversion Studio** edit page
-   1. Use the Conversion Studio’s <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#measurement-components">standard features and tools</Anchor> to customize the template according to your app’s needs
+1. En el menú de la izquierda, ve a **Configuración > SKAN Conversion Studio**
+2. Haz clic en el botón **Plantillas de la industria**
+3. Se abrirá la ventana de plantillas
+4. Selecciona de la lista de industrias y verticales del lado izquierdo
+5. En el lado derecho de la pantalla se muestra el aspecto del esquema de conversión sugerido
+   1. Usa el interruptor **Modo SKAN 4** para activar o desactivar el soporte de SKAN 4  
+      **Nota:** con SKAN 4, se sugieren tres ventanas de actividad, junto con valores de conversión aproximados para la primera ventana. Si está desactivado, solo se sugieren valores de conversión detallados para la primera ventana.
+   2. Utiliza el ? haz clic en los iconos junto a cada medición para ver una explicación de por qué se sugirió ese evento o esa medición, junto con información de referencia
+6. Haz clic en **Select & customize**  
+   **Nota:** Esto todavía no guardará tu configuración
+7. Se te redirigirá a la página de edición de **Conversion Studio**
+   1. Usa las <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#componentes-de-medición">funciones y herramientas estándar</Anchor> de Conversion Studio para personalizar la plantilla según las necesidades de tu aplicación
 
-## What Are SKAN conversion schema templates?
+## ¿Qué son las plantillas de esquemas de conversión de SKAN?
 
-SKAN conversion templates suggest mappings of conversion values for meaningful user post-install activities, tailored by industry and vertical. The suggestions can be customized to fit specific app needs, combining data-driven insights and industry expertise.
+Las plantillas de conversión de SKAN sugieren asignaciones de valores de conversión para actividades significativas del usuario posteriores a la instalación, adaptadas por industria y vertical. Las sugerencias se pueden personalizar para adaptarse a las necesidades específicas de la aplicación, combinando insights basados en datos y experiencia del sector.
 
-### Template structure
+### Estructura de la plantilla
 
-* **Strategy**: This defines whether to focus on in-app events, revenue measurement, or a combination of both. The strategy is pre-defined but can be customized in the Conversion Studio edit page.
-* **SKAN Version**: Indicates which version of SKAN is supported, either SKAN4 or earlier versions. By default, SKAN 4 is supported. If SKAN 4 is turned off, coarse conversion value measurements are disabled, and the Conversion Studio switches to "custom" mode.
-* **Measurements**: The template suggests specific post-install activities to measure. This includes specific events or revenue ranges, as well as the use of features like Funnel and Single Source of Truth (SSOT), which is suggested by default.
-  * The suggested measurements can be customized in the Conversion Studio edit page.
-  * Pre-selected events are tailored for each template.
-  * Revenue ranges are customized based on app-specific data using advanced revenue recommendation models  When there isn't enough historical data, industry data is used to make suggestions.
+* **Estrategia**: define si el enfoque debe ponerse en eventos in-app, en la medición de ingresos o en una combinación de ambos. La estrategia está predefinida, pero se puede personalizar en la página de edición de Conversion Studio.
+* **Versión de SKAN**: indica qué versión de SKAN tiene soporte, ya sea SKAN4 o versiones anteriores. De forma predeterminada, SKAN 4 es compatible. Si SKAN 4 está desactivado, se desactivan las mediciones del valor de conversión aproximado y Conversion Studio cambia al modo «personalizado».
+* **Mediciones**: La plantilla sugiere actividades específicas posteriores a la instalación para medir. Esto incluye eventos específicos o rangos de ingresos, así como el uso de funciones como Funnel y Single Source of Truth (SSOT), que se sugiere de forma predeterminada.
+  * Las mediciones sugeridas se pueden personalizar en la página de edición de Conversion Studio.
+  * Los eventos preseleccionados se adaptan a cada plantilla.
+  * Los rangos de ingresos se personalizan en función de los datos específicos de la aplicación mediante modelos avanzados de recomendación de ingresos  Cuando no hay suficientes datos históricos, se usan datos de la industria para hacer sugerencias.
 
-## What is SKAN conversion schema?
+## ¿Qué es el esquema de conversión de SKAN?
 
-The SKAN conversion schema defines the measurement setup for the SKAdNetwork (SKAN) framework. It specifies which user engagement metrics (e.g., in-app events or revenue) will be measured and reported. SKAdNetwork does not directly report post-install engagement with the app. Instead, it reports "Conversion Values" which are mapped by the app developer to meaningful post-install activities. This mapping is known as the SKAN conversion schema.
+El esquema de conversión de SKAN define la configuración de medición del framework SKAdNetwork (SKAN). Especifica qué métricas de engagement del usuario (por ejemplo, eventos in-app o ingresos) se medirán y se reportarán. SKAdNetwork no reporta directamente el engagement posterior a la instalación con la app. En su lugar, reporta «Valores de conversión», que el Desarrollador de apps asigna a actividades significativas posteriores a la instalación. Esta asignación se conoce como el esquema de conversión de SKAN.
 
-## What are these templates based on?
+## ¿En qué se basan estas plantillas?
 
-The templates are based on a data-driven analysis of conversion schemas by vertical, along with qualitative research and insights from industry experts. Some of the suggestions are based on app-specific data, as outlined below.  
-The key steps of the template creation process:
+Las plantillas se basan en un análisis basado en datos de los esquemas de conversión por vertical, junto con investigación cualitativa e insights de expertos de la industria. Algunas de las sugerencias se basan en datos específicos de la aplicación, como se indica a continuación.  
+Los pasos clave del proceso de creación de plantillas:
 
-1. **Sampled leading apps**: We identified sample apps for quantitative analysis. Using internal and external datasets, we classified apps into vertical hierarchies. For each sub-vertical, we analyzed dozens of leading apps and ranked them by the volume of SKAN traffic they generated.
-2. **Defined the strategy**: Based on industry benchmark data, we established a standardized strategy tailored to each vertical. After analyzing the percentage of apps in each vertical that measure events, revenue, or both, we selected a strategy for each vertical. We also considered the average event count and the volume of apps utilizing the funnel feature to determine the number of events per template and whether a funnel is appropriate.
-3. **Created collective event groups**: We mapped the various event names, as defined by apps, into pre-defined groups, with each group reflecting a collection of similar business events.
-4. **Suggested events**: We identified the most recommended business events to measure within each vertical. Using the event groups created in the previous step, we analyzed the percentage of apps measuring each event. After review by industry experts and validation against dozens of conversion schemas from leading apps, we selected the best combination of events for each sub-vertical.
-5. **Defined revenue ranges**: We suggested the best revenue ranges to maximize the accuracy of reported revenue. When a user opens the template dialog, we check in real-time whether the app is eligible for revenue recommendations based on our advanced models. If so, the model creates custom revenue ranges using the app’s data. If not, we suggest revenue ranges based on industry data derived from applying our revenue recommendation models to the data of leading apps in the vertical.
-6. **Mapped app-specific events**: After the app applies a specific template, we match the relevant in-app events to the predetermined business event names within the vertical’s template. The app should then verify that the correct events have been selected.
+1. **Aplicaciones líderes muestreadas**: Identificamos aplicaciones de muestra para el análisis cuantitativo. Con conjuntos de datos internos y externos, clasificamos las aplicaciones en jerarquías verticales. Para cada subvertical, analizamos decenas de aplicaciones líderes y las clasificamos según el volumen de tráfico de SKAN que generaban.
+2. **Definimos la estrategia**: A partir de datos de benchmark de la industria, establecimos una estrategia estandarizada adaptada a cada vertical. Después de analizar el porcentaje de aplicaciones de cada vertical que miden eventos, ingresos o ambos, seleccionamos una estrategia para cada vertical. También tuvimos en cuenta el recuento medio de eventos y el volumen de aplicaciones que utilizan la función funnel para determinar el número de eventos por plantilla y si un funnel es adecuado.
+3. **Creamos grupos de eventos colectivos**: Asignamos los distintos nombres de eventos, según los definen las aplicaciones, a grupos predefinidos, y cada grupo reflejaba una colección de eventos de negocio similares.
+4. **Eventos sugeridos**: Identificamos los eventos de negocio más recomendados para medir dentro de cada vertical. Utilizando los grupos de eventos creados en el paso anterior, analizamos el porcentaje de aplicaciones que medían cada evento. Tras la revisión por parte de expertos de la industria y la validación con decenas de esquemas de conversión de las aplicaciones líderes, seleccionamos la mejor combinación de eventos para cada subvertical.
+5. **Rangos de ingresos definidos**: Sugerimos los mejores rangos de ingresos para maximizar la precisión de los ingresos reportados. Cuando un usuario abre el cuadro de diálogo de la plantilla, comprobamos en tiempo real si la aplicación es apta para recibir recomendaciones de ingresos en función de nuestros modelos avanzados. Si es así, el modelo crea rangos de ingresos personalizados con los datos de la aplicación. Si no, sugerimos rangos de ingresos basados en datos de la industria obtenidos al aplicar nuestros modelos de recomendación de ingresos a los datos de las aplicaciones líderes del vertical.
+6. **Eventos específicos de la aplicación mapeados**: Después de que la aplicación aplique una plantilla específica, asignamos los eventos in-app relevantes a los nombres de eventos empresariales predeterminados en la plantilla del vertical. La aplicación debe verificar entonces que se han seleccionado los eventos correctos.
 
-<div data-zendesk-anchors="intro=key-benefits h_01J9GM9NV7HDA1N9WZH4Y6K1VH=key-benefits h_01J9GME5K3C0BMPVK6K1D46HT0=how-to-get-started h_01J9GMP733JQSY60AJH22FGPRS=what-are-skan-conversion-schema-templates h_01J9GMPACY2TY0MYNEEJNW39Z5=template-structure h_01J9GMQX4R8BMSQQ3XW4C97VEJ=what-is-skan-conversion-schema h_01J9GMR0FTV2Q75N9N5FQZW98F=what-are-these-templates-based-on" />
+<div data-zendesk-anchors="intro=beneficios-clave h_01J9GM9NV7HDA1N9WZH4Y6K1VH=beneficios-clave how-to-get-started=c%C3%B3mo-empezar h_01J9GME5K3C0BMPVK6K1D46HT0=c%C3%B3mo-empezar what-are-skan-conversion-schema-templates=qu%C3%A9-son-las-plantillas-de-esquemas-de-conversi%C3%B3n-de-skan h_01J9GMP733JQSY60AJH22FGPRS=qu%C3%A9-son-las-plantillas-de-esquemas-de-conversi%C3%B3n-de-skan template-structure=estructura-de-la-plantilla h_01J9GMPACY2TY0MYNEEJNW39Z5=estructura-de-la-plantilla what-is-skan-conversion-schema=qu%C3%A9-es-el-esquema-de-conversi%C3%B3n-de-skan h_01J9GMQX4R8BMSQQ3XW4C97VEJ=qu%C3%A9-es-el-esquema-de-conversi%C3%B3n-de-skan what-are-these-templates-based-on=en-qu%C3%A9-se-basan-estas-plantillas h_01J9GMR0FTV2Q75N9N5FQZW98F=en-qu%C3%A9-se-basan-estas-plantillas" />

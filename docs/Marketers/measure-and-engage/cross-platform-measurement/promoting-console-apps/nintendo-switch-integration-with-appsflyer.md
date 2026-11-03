@@ -1,5 +1,5 @@
 ---
-title: Nintendo Switch integration with AppsFlyer
+title: Integración de Nintendo Switch con AppsFlyer
 metadata:
   keywords:
     - Marketers
@@ -12,47 +12,46 @@ x-zendesk:
     - Marketers
     - PC & Console Attribution
   created_at: '2023-05-02T10:50:43Z'
-  edited_at: '2024-02-08T00:01:01Z'
+  edited_at: '2026-08-12T12:10:04Z'
   id: 14988397864593
-  locale: en-us
+  locale: es
   section: Promoting Console apps
   section_id: 15329052471057
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/14988397864593-Nintendo-Switch-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/14988397864593
 ---
-> **At a glance:** Integrate your Nintendo Switch game or app with AppsFlyer to receive attribution and event data for your Nintendo Switch campaigns.
+> **En resumen:** Integra tu juego o aplicación de Nintendo Switch con AppsFlyer para recibir datos de atribución y eventos de tus campañas de Nintendo Switch.
 
-## About Nintendo Switch attribution
+## Sobre la atribución de Nintendo Switch
 
-Apps running on Nintendo Switch can integrate with AppsFlyer via S2S API to receive attribution data and performance measurements about which sources and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+Las aplicaciones que se ejecutan en Nintendo Switch pueden integrarse con AppsFlyer a través de la API de S2S para recibir datos de atribución y mediciones de rendimiento sobre qué fuentes y campañas impulsan la apertura de la aplicación y los eventos in-app. Los marketers confían en estos insights para medir y optimizar las actividades de marketing.
 
-### Example attribution flow
+### Ejemplo de flujo de atribución
 
-The following is an example flow that highlights the most important steps in a user journey from ad engagement to attribution. It includes the AppsFlyer-recommended cross-platform landing page. **Note**: While we recommend using the cross-platform landing page, you can also use direct attribution links
+El siguiente es un flujo de ejemplo que destaca los pasos más importantes en el recorrido del usuario desde el engagement de publicidad hasta la atribución. Incluye la landing page multiplataforma recomendada por AppsFlyer. **Nota**: si bien recomendamos utilizar la página de destino multiplataforma, también puedes utilizar enlaces de atribución directa.
 
-![User_windows.jpg](https://files.readme.io/ce8489a16998ffbc4720fe2aae4496393db921cc582a331f59edb775a59b1331-small-22325350590097.jpg)
+![User_windows.jpg](https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg)
 
-1. <span id="marketing-touchpoint"></span>Marketing touchpoint: Customers interact with your brand through online or offline marketing touchpoints. These can include, email and newsletters, social media, mobile web, and more.
-2. Game landing page: A game landing page directs customers to your download app page. This step is important for collecting UTM and other URL parameters to attribute customers from the click/install to the original media sources or to your owned media sources.  
-   The landing page is also useful because it provides links to the various platforms your game supports. For example, you can also have links to your Xbox, Microsoft store, and Steam page on your landing page.
-3. App page: This is the URL to your Nintendo Switch app page that hosts your app for customers to download.
-4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
+1. <span id="marketing-touchpoint"></span>Punto de contacto de marketing: Los clientes interactúan con tu marca a través de puntos de contacto de marketing online u offline. Estos pueden incluir correo electrónico y boletines informativos, redes sociales, web móvil y más.
+2. Página de inicio del juego: La página de inicio del juego dirige a los clientes a la página de descarga de su aplicación. Este paso es importante para recopilar UTM y otros parámetros de URL para atribuir clientes desde el clic/instalación a las fuentes de medios originales o a tus propias fuentes de medios.  
+   La página de inicio también es útil porque proporciona enlaces a las distintas plataformas compatibles con tu juego. Por ejemplo, también puedes tener enlaces a tu Xbox, tienda de Microsoft y página de Steam en tu página de inicio.
+3. Página de la aplicación: Esta es la URL de la página de tu aplicación de Nintendo Switch que aloja tu aplicación para que los clientes la descarguen.
+4. Instalación del juego: El usuario instala el juego, lo que activa la atribución y la grabación de eventos y sesiones en la aplicación.
 
-## Integration procedures
+## Procedimientos de integración
 
-The following table lists the tasks required to integrate your Nintendo Switch app with AppsFlyer.
+La siguiente tabla enumera las tareas necesarias para integrar tu aplicación de Nintendo Switch con AppsFlyer.
 
 <Table>
   <thead>
     <tr>
       <th>
-        Task
+        Tarea
       </th>
       <th>
-        Actions
+        Acciones
       </th>
       <th>
-        Who's involved
+        ¿Quién está involucrado?
       </th>
     </tr>
   </thead>
@@ -60,109 +59,109 @@ The following table lists the tasks required to integrate your Nintendo Switch a
   <tbody>
     <tr>
       <td>
-        App setup
+        Configuración de la aplicación
       </td>
       <td>
-        * <Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Create an AppsFlyer account</Anchor>
-        * <Anchor target="_blank" href="/marketers/docs/user-management">Add account users with appropriate permissions</Anchor>
-        * <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">Add your Nintendo Switch app in AppsFlyer</Anchor>
+        * <Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Crea una cuenta de AppsFlyer</Anchor>
+        * <Anchor target="_blank" href="/marketers/es/docs/user-management">Agrega usuarios a la cuenta con los permisos adecuados</Anchor>
+        * <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">Agrega tu aplicación de Nintendo Switch en AppsFlyer</Anchor>
       </td>
       <td>
-        Marketer
-      </td>
-    </tr>
-    <tr>
-      <td>
-        API integration with your app (via S2S)
-      </td>
-      <td>
-        <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview">Integrate the AppsFlyer API</Anchor> into your app with commands to report the following events to AppsFlyer.
-
-        * First opens
-        * In-app events
-        * Sessions
-
-        **Note**:
-
-        * First app opens must be reported before in-app events and sessions.
-        * For the `device_ids` parameter, select the type `custom`.
-          * The `custom` generated ID for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id">first opens</Anchor> should match your <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id">in-app events</Anchor>, and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_session-app-platform-app-id">sessions</Anchor> ID.
-          * Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer.
-
-        To report owned media engagements, integrate the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">impression engagement API.</Anchor>
-      </td>
-      <td>
-        App developer
+        Comercializador
       </td>
     </tr>
     <tr>
       <td>
-        Cross-platform landing page setup
+        Integración API con tu aplicación (a través de S2S)
       </td>
       <td>
-        **Recommended**: A cross-platform landing page running the AppsFlyer Smart Script lets you perform web-to-app attribution. It's most recommended when your campaign promotes an app that's also available on other platforms, like Epic and Native PC.
+        <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview">Integra la API de AppsFlyer</Anchor> en tu aplicación con comandos para reportar los siguientes eventos a AppsFlyer.
 
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Learn about cross-platform landing pages</Anchor>
+        * Primeras aperturas
+        * Eventos dentro de la aplicación
+        * Sesiones
 
-        <Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Learn how to set up a cross-platform landing page</Anchor>
+        **Nota**:
 
-        **Note**:
+        * Las primeras aperturas de aplicaciones deben informarse antes de las sesiones y eventos in-app.
+        * Para el parámetro `device_ids`, selecciona el tipo `custom`.
+          * El `custom` ID generado para <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id">las primeras aperturas</Anchor> debe coincidir con los <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id">eventos in-app</Anchor> y el ID de las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_session-app-platform-app-id">sesiones</Anchor> .
+          * Envía eventos usando la API. Dile a tu desarollador qué eventos enviar. Verifica que cuando configuras la API, configuras y asignas los eventos para enviar a AppsFlyer.
 
-        For Nintendo Switch, the following parameters are required:
+        Para informar sobre interacciones con medios propios, integra la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">API de interacción con impresiones.</Anchor>
+      </td>
+      <td>
+        Desarrolladores de aplicaciones
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Configuración de la landing page multiplataforma
+      </td>
+      <td>
+        **Recomendado**: La landing page multiplataforma que ejecuta AppsFlyer Smart Script te permite realizar atribución web-to-app. Es más recomendable cuando tu campaña promociona una aplicación que también está disponible en otras plataformas, como Epic y Native PC.
 
-        * **platform**  
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Obtén más información sobre las landing page multiplataforma</Anchor>
+
+        <Anchor target="_blank" href="/marketers/es/docs/cross-platform-landing-pages-with-smart-script">Aprende a configurar una landing page</Anchor>
+
+        **Nota**:
+
+        Para Nintendo Switch, se requieren los siguientes parámetros:
+
+        * **plataforma**  
           switch
         * **nintendo\_app\_id**  
-          The ID of the app page.  
+          El ID de la página de la aplicación.  
 
-          You can find your unique app ID by copying it from the URL bar or by going to <Anchor target="_blank" href="https://www.nintendo.com/store/products/octopath-traveler-ii-switch/">https://www.nintendo.com/store/products/</Anchor> and searching for your game. For example,
+          Puedes encontrar tu ID de aplicación único copiándolo de la barra de URL o yendo a <Anchor target="_blank" href="https://www.nintendo.com/store/products/octopath-traveler-ii-switch/">https://www.nintendo.com/store/products/</Anchor> y buscando tu juego. Por ejemplo:
 
           ```http
           https://www.nintendo.com/store/products/app-id-switch/
           ```
 
-          where **app-id** is your unique app ID.
-        * **media\_source**
+          donde **app-id** es tu ID de aplicación único.
+        * **fuente\_de\_medios**
 
-        The following parameters are not required but recommended:
+        Los siguientes parámetros no son obligatorios pero sí recomendados:
 
-        * **campaign**
-        * **ad**
+        * **campaña única**
+        * **anuncio**
         * **ad\_set**
         * **storefront\_redirect\_url**  
-          The full URL of your Nintendo Switch storefront for your app including your **nintendo\_app\_id**.  
-          For example,
+          La URL completa de la tienda de Nintendo Switch de tu aplicación, incluido tu **nintendo\_app\_id**.  
+          Por ejemplo:
 
           ```http
           https://www.nintendo.com/store/products/app-id-switch/
           ```
       </td>
       <td>
-        Marketer (may require developer assistance)
+        Marketer (puede requerir ayuda del desarrollador)
       </td>
     </tr>
     <tr>
       <td>
-        Link setup
+        Configuración del enlace
       </td>
       <td>
-        If you don't use a cross-platform landing page, you can create direct attribution links to place behind ads.
+        Si no utilizas una landing page multiplataforma, puedes crear enlaces de atribución directos para colocarlos detrás de los anuncios.
 
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor>
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor>
       </td>
       <td>
-        Marketer
+        Comercializador
       </td>
     </tr>
     <tr>
       <td>
-        Report setup/view data
+        Configuración/visualización de datos de reportes
       </td>
       <td>
-        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor>
+        <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Obtén más información sobre la disponibilidad de datos en dashboard y reportes</Anchor>
       </td>
       <td>
-        Marketer/Data engineer
+        Marketer/Ingeniero de datos
       </td>
     </tr>
   </tbody>
@@ -170,17 +169,17 @@ The following table lists the tasks required to integrate your Nintendo Switch a
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Especificaciones y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Nota |
 | --- | --- |
-| Retargeting | Not currently supported |
-| Cost data | Cost data must be sent via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Ad Spend Ingestion</Anchor> using the upload file by email method. |
+| Reorientación | Actualmente no es compatible |
+| Datos de costos | Los datos de costos deben enviarse a través de <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Ad Spend Ingestion</Anchor> mediante el método de subir el archivo por correo electrónico. |
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">CTV, PC, and console platform overview</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Resumen general de la plataforma de CTV, PC y consola</Anchor>
 
-<div data-zendesk-anchors="01H7Z1HPD0AB0VP6REMBF2HCR8=about-nintendo-switch-attribution h_01HP1QDGDAXV0Y7MVJYHW3H4SQ=example-attribution-flow 01H7Z19FJ54WZ7XV91Y36EKYQ6=marketing-touchpoint 01H7Z1HPD0VAMPEHBPN8MAT3ST=integration-procedures 01H7Z1HPD0CS7CTX2KS2RVD3VA=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />
+<div data-zendesk-anchors="about-nintendo-switch-attribution=sobre-la-atribuci%C3%B3n-de-nintendo-switch 01H7Z1HPD0AB0VP6REMBF2HCR8=sobre-la-atribuci%C3%B3n-de-nintendo-switch example-attribution-flow=ejemplo-de-flujo-de-atribuci%C3%B3n h_01HP1QDGDAXV0Y7MVJYHW3H4SQ=ejemplo-de-flujo-de-atribuci%C3%B3n 01H7Z19FJ54WZ7XV91Y36EKYQ6=marketing-touchpoint integration-procedures=procedimientos-de-integraci%C3%B3n 01H7Z1HPD0VAMPEHBPN8MAT3ST=procedimientos-de-integraci%C3%B3n 01H7Z1HPD0CS7CTX2KS2RVD3VA=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=consulta-tambi%C3%A9n" />

@@ -1,7 +1,7 @@
 ---
 title: >-
-  Bulletin: Protect360 and ProtectLITE dashboards display fraud from organic
-  sources
+  Boletín: los dashboards de Protect360 y ProtectLITE muestran fraude de fuentes
+  orgánicas
 metadata:
   keywords:
     - Protect360
@@ -18,17 +18,16 @@ x-zendesk:
     - Protect360
     - Agencies
   created_at: '2021-12-20T07:40:11Z'
-  edited_at: '2026-08-18T09:13:19Z'
+  edited_at: '2026-10-20T03:56:25Z'
   id: 4414296864913
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4414296864913-Bulletin-Protect360-and-ProtectLITE-dashboards-display-fraud-from-organic-sources
+  url: https://support.appsflyer.com/hc/es/articles/4414296864913
 ---
-| **What's new** | Protect360 and ProtectLITE dashboards display fraud from organic sources |
+| **¿Qué hay de nuevo?** | Los dashboards de Protect360 y ProtectLITE muestran fraude procedente de fuentes orgánicas |
 | --- | --- |
-| **Effective date** | December 20, 2021 |
-| **Where** | <Anchor target="_blank" href="/marketers/docs/protect360-dashboard">Protect360</Anchor> and <Anchor target="_blank" href="/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor> dashboards |
-| **What** | **Before the change:** Fraud from organic sources was only available in raw data reports.<br /><br />**After the change:** Fraud for installs from organic sources is also displayed in the Protect360 and ProtectLITE dashboards. In-app event fraud from organic sources is not supported. |
-| **What you must know** | <ul><li>Main dashboard filter: You can now filter by organic and/or non-organic traffic.</li><li>Identified fraud trend chart: Can be filtered by source type organic.</li><li>Estimated savings chart: Is not relevant for organic traffic.</li><li>Hijacked installs attribution correction chart: Can display correction to organic, but not from organic.</li><li>Identified fraud breakdown table: Includes data for organic traffic.</li><li>Agencies and ad networks: Cannot view data for organic traffic.</li></ul>Recommended: Don't name owned media sources as organic, as they can be confused and interfere with genuine organic data. |
+| **Fecha de entrada en vigor** | 20 de diciembre de 2021 |
+| **Donde** | dashboards de <Anchor target="_blank" href="/marketers/es/docs/protect360-dashboard">Protect360</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor> |
+| **Qué** | **Antes del cambio:** El fraude de fuentes orgánicas solo estaba disponible en los Reportes de raw data.<br /><br />**Después del cambio:** El fraude en las instalaciones procedentes de fuentes orgánicas también se muestra en los dashboards de Protect360 y ProtectLITE. El fraude de eventos in-app de fuentes orgánicas no es compatible. |
+| **Lo que debes saber** | <ul><li>Filtro del dashboard principal: ahora puedes filtrar por tráfico orgánico y/o no orgánico.</li><li>Gráfico de tendencias de fraude identificado: se puede filtrar por tipo de fuente orgánica.</li><li>Gráfico de ahorro estimado: no es relevante para el tráfico orgánico.</li><li>Gráfico de corrección de atribución de instalaciones secuestradas: puede mostrar la corrección a orgánico, pero no desde orgánico.</li><li>Tabla de desglose de fraude identificado: incluye datos del tráfico orgánico.</li><li>Agencias y ad networks: no pueden ver datos del tráfico orgánico.</li></ul>Recomendado: No llames orgánicas a las fuentes de medios propios, ya que pueden confundirse e interferir con los datos orgánicos auténticos. |

@@ -1,5 +1,5 @@
 ---
-title: Yahoo Japan Search Ads campaign configuration
+title: Configuración de la campaña de Yahoo Japan Search Ads
 metadata:
   keywords:
     - Advertisers
@@ -13,149 +13,220 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-12-02T10:07:00Z'
-  edited_at: '2026-09-15T10:48:52Z'
+  edited_at: '2026-09-17T00:25:15Z'
   id: 4412602890641
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4412602890641-Yahoo-Japan-Search-Ads-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/4412602890641
 ---
-> **At a glance:** Yahoo Japan Search Ads, a self-reporting network (SRN) partner that combines advertising and analytics.
-
-* On December 15, 2021, the legacy integration with Yahoo Japan Search Ads, *yahoojapansearch\_int,* was replaced with a new integration, *yjsearch\_int*. Learn how to [start working with the new API](/docs/yahoo-japan-search-ads-campaign-configuration#integrating-with-the-new-api).
+> **De un vistazo:** Yahoo Japan Search Ads, un partner de red de autorreporte (SRN) que combina publicidad y análisis.
+>
+> * El 15 de diciembre de 2021, la integración heredada con Yahoo Japan Search Ads, *yahoojapansearch\_int,* se reemplazó por una nueva integración, *yjsearch\_int*. Descubre cómo [empezar a trabajar con la nueva API](/docs/yahoo-japan-search-ads-campaign-configuration#integrating-with-the-new-api).
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yjsearch.png" width="121px" />
 
-## Yahoo Japan Search Ads integration principles
+## Principios de la integración de Yahoo Japan Search Ads
 
-AppsFlyer integration with Yahoo Japan Search Ads is relevant only to Android apps. 
+La integración de AppsFlyer con Yahoo Japan Search Ads solo es relevante para aplicaciones Android. 
 
-The integration leverages a link ID for conversion measurement and is based on pre-defined conversion events on Yahoo Japan Search Ads. You can map in-app events like subscriptions and purchases to these events. This enables conversion measurement and reporting between AppsFlyer and Yahoo Japan Search Ads.
+La integración aprovecha un ID de enlace para la medición de conversiones y se basa en eventos de conversión predefinidos en Yahoo Japan Search Ads. Puedes asignar eventos in-app, como suscripciones y compras, a estos eventos. Esto permite la medición y el reporte de conversiones entre AppsFlyer y Yahoo Japan Search Ads.
 
 <div id="comparing-the-legacy-and-new-integration" />
 
-<Accordion title="Comparing the legacy and new integration">
+<Accordion title="Comparación entre la integración heredada y la nueva">
 
-Yahoo Japan Search Ads API feature support:
+Compatibilidad de funciones de la API de Yahoo Japan Search Ads:
 
-| Feature | Legacy (yahoojapansearch\_int) | New<br /><br />(yjsearch\_int) |
+| Función | Heredada (yahoojapansearch\_int) | Nuevo<br /><br />(yjsearch\_int) |
 | --- | --- | --- |
-| Install conversion (click-through only) | Yes | Yes |
-| In-app conversion | No | Yes |
+| Conversión de instalación (solo clic) | Sí | Sí |
+| Conversión in-app | No | Sí |
 
 </Accordion>
 
 <div id="integrating-with-the-new-api" />
 
-<Accordion title="Integrating with the new API">
+<Accordion title="Integración con la nueva API">
 
-**To enable the integration with the new API:**
+**Para habilitar la integración con la nueva API:**
 
-1. In Yahoo Japan Search Ads Ads dashboard, <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=44102">generate a link ID</Anchor>. You must select AppsFlyer as your MMP.
-2. In AppsFlyer, [configure the integration with Yahoo Japan Search Ads](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections).
-3. [Map the in-app events](/docs/yahoo-japan-search-ads-campaign-configuration#2) you want to measure, and <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=6380&o=default#:~:text=Create%20conversion%20analytics%20%5BCampaign%20Management%20Tool%5D">create new conversion analytics on the Campaign Management Tool</Anchor> in Yahoo Japan Search Ads.
+1. En el dashboard de anuncios de Yahoo Japan Search Ads, <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=44102">genera un ID de enlace</Anchor>. Debes seleccionar AppsFlyer como tu MMP.
+2. En AppsFlyer, [configura la integración con Yahoo Japan Search Ads](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections).
+3. [Asigna los eventos in-app](/docs/yahoo-japan-search-ads-campaign-configuration#2) que quieras medir y <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=6380&o=default#:~:text=Create%20conversion%20analytics%20%5BCampaign%20Management%20Tool%5D">crea nuevas analíticas de conversión en la herramienta Campaign Management Tool</Anchor> de Yahoo Japan Search Ads.
 
 </Accordion>
 
 <div id="data-sharing-between-appsflyer-and-yahoo-japan-search-ads" />
 
-<Accordion title="Data sharing between AppsFlyer and Yahoo Japan Search Ads">
+<Accordion title="Intercambio de datos entre AppsFlyer y Yahoo Japan Search Ads">
 
-Send postbacks to Yahoo Japan Search Ads relating to conversions and in-app events. In-app events are mapped to pre-defined conversion events used by Yahoo Japan Search Ads to optimize and update performance reports. You perform the mapping as part of the integration settings.
+Envía postbacks a Yahoo Japan Search Ads relacionados con conversiones y eventos in-app. Los eventos in-app se asignan a eventos de conversión predefinidos que Yahoo Japan Search Ads usa para optimizar y actualizar los reportes de rendimiento. Realizas la asignación como parte de la configuración de la integración.
 
-Consider the following mapping table in the context of AppsFlyer in-app events (your app) and Yahoo Japan Search Ads pre-defined event mapping.
+Consulta la siguiente tabla de asignación en el contexto de los eventos in-app de AppsFlyer (tu aplicación) y la asignación de eventos predefinidos de Yahoo Japan Search Ads.
 
-| AppsFlyer in-app event | Yahoo Japan Search Ads app event type |
+| Evento in-app de AppsFlyer | Tipo de evento de la aplicación de Yahoo Japan Search Ads |
 | --- | --- |
-| af\_purchase | in\_app\_purchase |
+| af\_compra | in\_app\_purchase |
 | af\_app\_opened | session\_start |
 | af\_search | view\_search\_results |
 | af\_content\_view | view\_item |
 | af\_list\_view | view\_item\_list |
-| af\_add\_to\_cart | add\_to\_cart |
+| af\_add\_to\_cart | añadir\_al\_carrito |
 | af\_travel\_booking | ecommerce\_purchase |
-| Any in-app event | If you have additional events, map them to the event custom. |
+| Cualquier evento in-app | Si tienes eventos adicionales, asígnalos al evento personalizado. |
 
-**Data provided to AppsFlyer by Yahoo Japan Search Ads**
+**Datos proporcionados a AppsFlyer por Yahoo Japan Search Ads**
 
-When Yahoo Japan Search Ads claims a conversion, they provide us with the media source parameters listed in the table. These parameters populate analytics and raw data reports. The table that follows contains the mapping between Yahoo Japan Search Ads and AppsFlyer parameters.
+Cuando Yahoo Japan Search Ads atribuye una conversión, nos proporciona los parámetros de la fuente de medios que se enumeran en la tabla. Estos parámetros completan los reportes de análisis y raw data. La tabla siguiente contiene la asignación entre los parámetros de Yahoo Japan Search Ads y AppsFlyer.
 
-#### Yahoo Japan Search Ads-AppsFlyer media source mapping
+#### Asignación de la fuente de medios de Yahoo Japan Search Ads a AppsFlyer
 
 | Yahoo Japan Search Ads | AppsFlyer |
 | --- | --- |
-| timestamp | attributed\_touch\_time |
-| campaign\_tracking\_id | campaign\_id |
-| ad\_group\_tracking\_id | adset\_id |
-| ad\_tracking\_id | ad\_id |
-| keyword | keywords |
+| timestamp | Se establece como TRUE o FALSE. |
+| campaign\_tracking\_id | id\_campaña |
+| ad\_group\_tracking\_id | id\_anuncio |
+| ad\_tracking\_id | id\_adset |
+| palabra clave | palabras clave |
 | match\_type | keyword\_match\_type |
 | account\_id | network\_account\_id |
 
 </Accordion>
 
-## Integration procedures
+## Procedimientos de integración
 
-You can integrate with Yahoo Japan Search Ads using a single entity - directly as an advertiser or via an agency.  
-Complete the sections as follows:
+Puedes integrar Yahoo Japan Search Ads mediante una única entidad: directamente como anunciante o a través de una agencia.  
+Completa las secciones de la siguiente manera:
 
-* [Complete once—mandatory] [Advertiser Yahoo Japan Search Ads integration](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections).
-* [Optional per agency] [Agency integration](/docs/yahoo-japan-search-ads-campaign-configuration#agency-integration).
+* [Completar una vez: obligatorio] [Integración del anunciante de Yahoo Japan Search Ads](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections).
+* [Opcional por agencia] [Integración de la agencia](/docs/yahoo-japan-search-ads-campaign-configuration#agency-integration).
 
 <div id="yahoo-japan-search-ads-integration-tab-sections" />
 
-<Accordion title="Yahoo Japan Search Ads—integration tab sections">
+<Accordion title="Yahoo Japan Search Ads: secciones de la pestaña de integración">
 
-<table><thead><tr><th>Step</th><th>Section</th><th>Description</th></tr></thead><tbody><tr><td><span id="1"></span>1</td><td>Activate partner</td><td><p><strong>Prerequisites:</strong></p><p>Get the Yahoo Japan Search Ads <a href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&amp;aid=44102" target="_blank">link ID</a>.</p><p><strong>To activate the Yahoo Japan Search Ads App Attribution integration:</strong> </p><ol><li>In AppsFlyer, from the side menu, select <strong>Collaborate</strong> &gt; <strong>Partner Integrations</strong> &gt; <strong>Partner Marketplace</strong>.</li><li>Search for <strong>Yahoo! Search Ads (Yahoo! JAPAN Sponsored Search) - New API</strong>, and select it.</li><li>Verify that <strong>yjsearch_int</strong> displays in the URL. If this is not the case, you have selected the wrong integrated partner. </li><li>In the <strong>Integration</strong> tab, turn on <strong>Activate partner</strong>.<br/><strong>Note:</strong><span> </span><span><span>The toggle must be on</span><span> </span></span><a href="./partner-activation-deactivation" target="_blank"><span><span>(activated)</span></span></a><span><span> </span><span>for as long as you work with the partner.</span></span></li><li>In the Link ID field, paste the link ID mentioned in the prerequisites.</li><li>[Optional] Changes to default settings for install <a href="./set-up-lookback-windows" target="_blank">click-through lookback</a> window. Yahoo Japan Search Ads default is 7 days. To minimize discrepancies [best practice], align with the Yahoo Japan Search Ads default.</li><li>Click <strong>Save integration</strong>.</li><li>In <strong>Yahoo Japan Search Ads</strong>, set the new conversion settings as "app_first_open". Learn more about the configuration in Yahoo Japan Search Ads.</li></ol></td></tr><tr><td><span id="2"></span>2</td><td>Map AppsFlyer in-app events to Yahoo Japan Search Ads events</td><td><p><strong>To map the Yahoo Japan Search Ads pre-defined events to AppsFlyer in-app events:</strong></p><ol><li>In AppsFlyer, from the side menu, select <strong>Collaborate</strong> &gt; <strong>Partner Integrations</strong> &gt; <strong>Active integrations</strong>.</li><li>Select <strong>Yahoo! Search Ads (Yahoo! JAPAN Sponsored Search) - New API</strong>.</li><li>Turn on <strong>In-app events postback.</strong></li><li>Click <strong>Add event</strong> to add an app event to the list.</li><li>Complete the parameters required. </li><li>Click <strong>Save integration.</strong></li><li>In <strong>Yahoo Japan Search Ads</strong>, set the new conversion settings to match the configured in-app events. Learn more about the configuration in Yahoo Japan Search Ads.</li></ol><figure><table><thead><tr><th>Parameter name</th><th>Description</th></tr></thead><tbody><tr><td><span id="sdk-event-name"></span>SDK event name</td><td>The name of the event, as received by AppsFlyer from either the SDK integrated in your app, or from server-to-server events.</td></tr><tr><td><span id="partner-event-identifier"></span>Partner event identifier</td><td>The Yahoo Japan Search Ads pre-defined events. Suggested default mapping configurations are listed in the table in the previous section.</td></tr><tr><td><span id="sending-option"></span>Sending option</td><td><p>Select the sending option for the event:</p><ul><li><strong>This partner only:</strong> for events coming only from users attributed to Yahoo Japan Search Ads. </li><li><strong>All media sources, including organic:</strong> Have your entire user base available to be reported to Yahoo Japan Search Ads.</li></ul></td></tr><tr><td><span id="send-revenue"></span>Send revenue</td><td><ul><li><strong>No values &amp; no revenue:</strong> Sends only the event itself without the event value.</li><li><strong>Values &amp; no revenue:</strong> Sends all the parameters excluding the revenue value.</li><li><strong>Values &amp; revenue</strong>: Sends all the event parameters, including the revenue value (if exists in the event).</li></ul></td></tr></tbody></table></figure><p>Remarks: </p><ul><li>Event names are case-sensitive. To avoid discrepancies, make sure you use the correct event name for all media sources and app versions.</li></ul></td></tr></tbody></table>
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Paso
+      </th>
+      <th>
+        Sección.
+      </th>
+      <th>
+        Descripción
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><span id="1"></span>
+        1
+      </td>
+      <td>
+        Activar socio
+      </td>
+      <td>
+        **Pré-requisitos:**
+
+        Obtén el <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=44102">ID de enlace</Anchor> de Yahoo Japan Search Ads.
+
+        **Para activar la integración de atribución de aplicaciones de Yahoo Japan Search Ads:**
+
+        1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de partners** > **Marketplace de partners**.
+        2. Busca **Yahoo! Anuncios de búsqueda (Yahoo! JAPAN Sponsored Search) - New API**, y selecciónalo.
+        3. Verifica que **yjsearch\_int** aparezca en la URL. Si no es así, has seleccionado el partner integrado equivocado.
+        4. En la pestaña **Integración**, selecciona **Activar partner**.  
+           **Nota:** El conmutador debe estar activado <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado)</Anchor> mientras trabajes con el partner.
+        5. En el campo ID de enlace, pega el ID del enlace mencionado en los requisitos previos.
+        6. [Opcional] Cambios en la configuración predeterminada de la ventana de instalación <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">lookback de clics</Anchor>. El valor predeterminado de Yahoo Japan Search Ads es de 7 días. Para minimizar las discrepancias [mejor práctica], ajústalo al valor predeterminado de Yahoo Japan Search Ads.
+        7. Haz clic en **Guardar integración**.
+        8. En **Yahoo Japan Search Ads**, configura los nuevos ajustes de conversión como "app\_first\_open". Obtén más información sobre la configuración en Yahoo Japan Search Ads.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="2"></span>
+        2
+      </td>
+      <td>
+        Asigna eventos in-app de AppsFlyer a eventos de Yahoo Japan Search Ads
+      </td>
+      <td>
+        **Para asignar los eventos predefinidos de Yahoo Japan Search Ads a eventos in-app de AppsFlyer:**
+
+        1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de partners** > **Integraciones activas**.
+        2. ¡Selecciona **Yahoo! ¡Anuncios de búsqueda (Yahoo! JAPAN Sponsored Search) - Nueva API**.
+        3. Activa **Postback de evento in-app.**
+        4. Haz clic **Añadir evento** para añadir un evento de la aplicación a la lista.
+        5. Completa los parámetros según sea necesario.
+        6. Haz clic en **Guardar integración**.
+        7. En **Yahoo Japan Search Ads**, configura los nuevos ajustes de conversión para que coincidan con los eventos in-app configurados. Obtén más información sobre la configuración en Yahoo Japan Search Ads.
+
+        | Nombre del parámetro | Nota |
+        | --- | --- |
+        | <span id="sdk-event-name"></span>Nombre de evento SDK | El nombre del evento, tal como lo recibe AppsFlyer ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor. |
+        | <span id="partner-event-identifier"></span>Identificador de evento de partner | Los eventos predefinidos de Yahoo Japan Search Ads. Las configuraciones de asignación predeterminadas sugeridas aparecen en la tabla de la sección anterior. |
+        | <span id="sending-option"></span>Opción de envío | Selecciona la opción de envío para el evento:<br /><br />* **Solo este partner:** para eventos que proceden solo de usuarios atribuidos a Yahoo Japan Search Ads.<br />* **Todas las fuentes de medios, incluidas las orgánicas:** permite que toda tu base de usuarios esté disponible para reportarla a Yahoo Japan Search Ads. |
+        | <span id="send-revenue"></span>Enviar ingresos | * **Sin valores & sin ingresos:** envía solo el evento en sí sin el valor del evento.<br />* **Valores & sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.<br />* **Valores & ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento). |
+
+        Observaciones:
+
+        * Los nombres de eventos distinguen entre mayúsculas y minúsculas. Para evitar discrepancias, asegúrese de usar el nombre de evento correcto para todas las fuentes de medios y versiones de la aplicación.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>
 
 <div id="agency-integration" />
 
-<Accordion title="Agency integration">
+<Accordion title="Integración de agencia">
 
-Agencies are able to run campaigns with Yahoo Japan Search Ads on your behalf.
+Las agencias pueden ejecutar campañas con Yahoo Japan Search Ads en tu nombre.
 
-#### Agency setup
+#### Configuración de agencias
 
-| Procedure performed by | Procedure |
+| Procedimiento realizado por | Procedimiento |
 | --- | --- |
-| Advertiser | <ol><li>Verify that you have completed [advertiser Yahoo Japan Search Ads integration](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections).</li><li>In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active integrations**.</li><li>Select an agency.</li><li>Go to the **Permissions tab**, and turn on **Agency permissions**.</li></ol> |
-| Agency | <ol><li>In AppsFlyer, go to **Collaborate** > **Partner Integrations** > **Active Integrations**.</li><li>Select **Yahoo! Search Ads (Yahoo! JAPAN Sponsored Search) - New API.**</li><li>Go to the **Integration tab**.</li><li>Verify that **Activate Partner** is **On.** If this is not the case, the advertiser must complete [Advertiser Yahoo Japan Search Ads integration.](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections)</li><li>Verify that the remaining settings, like lookback windows and in-app event mapping, are correct. If necessary, ask the advertiser to make changes.</li><li>Enter your **Yahoo Japan Search Ads customer ID**. The ID is available in the <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=36745&o=default#:~:text=How%20to%20check%20Account%20ID">Campaign Management tool</Anchor>. Note that only one customer ID can be connected.</li><li>Click **Save**.</li></ol> |
+| AppsFlyer | <ol><li>Comprueba que has completado la [integración del anunciante de Yahoo Japan Search Ads](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections).</li><li>En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de partners** > **Integraciones activas**.</li><li>Selecciona una agencia.</li><li>Ve a la pestaña **Permisos** y activa **Permisos de agencia**.</li></ol> |
+| El código de moneda de los ingresos del evento reportado al SDK. | <ol><li>En AppsFlyer, ve a **Colaborar** > **Integraciones de partners** > **Integraciones activas**.</li><li>Selecciona **Yahoo! Search Ads (Yahoo! JAPÓN Búsqueda patrocinada) - API nueva.**</li><li>Ve a la pestaña **Integración**.</li><li>Verifica que **Activar Partner** esté **encendido.** Si no es así, el anunciante debe completar la [integración de Yahoo Japan Search Ads del anunciante](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections)</li><li>Comprueba que el resto de la configuración, como las ventanas de lookback y la asignación de eventos in-app, sea correcta. Si es necesario, pídele al anunciante que haga cambios.</li><li>Introduce tu **ID de cliente de Yahoo Japan Search Ads**. El ID está disponible en la <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=36745&o=default#:~:text=How%20to%20check%20Account%20ID">herramienta de gestión de campañas</Anchor>. Ten en cuenta que solo se puede conectar un ID de cliente.</li><li>Haga clic en **Guardar**.</li></ol> |
 
 </Accordion>
 
-## Subsidiary procedures
+## Procedimientos adicionales
 
 <div id="get-the-app-link-id" />
 
-<Accordion title="Get the app link ID">
+<Accordion title="Obtén el ID del enlace de la app">
 
-**To get the Campaign Manager link ID,** <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=44102">see Yahoo Japan Search Ads documentation.</Anchor>
+**Para obtener el ID del enlace de Campaign Manager,** <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=44102">consulta la documentación de Yahoo Japan Search Ads.</Anchor>
 
 </Accordion>
 
 <div id="create-a-new-yahoo-japan-search-ads-predefined-event" />
 
-<Accordion title="Create a new Yahoo Japan Search Ads pre-defined event">
+<Accordion title="Crea un nuevo evento predefinido de Yahoo Japan Search Ads">
 
-**To create a new pre-defined event,** refer to <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=6380&o=default#:~:text=Create%20conversion%20analytics%20%5BCampaign%20Management%20Tool%5D">Yahoo Japan Search Ads instructions</Anchor>.
+**Para crear un nuevo evento predefinido,** consulta <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=6380&o=default#:~:text=Create%20conversion%20analytics%20%5BCampaign%20Management%20Tool%5D">las instrucciones de Yahoo Japan Search Ads</Anchor>.
 
 </Accordion>
 
 <div id="yahoo-japan-search-ads-discrepancies" />
 
-<Accordion title="Yahoo Japan Search Ads discrepancies">
+<Accordion title="Discrepancias de Yahoo Japan Search Ads">
 
-See the following table to learn about discrepancies and how to minimize them.
+Consulta la tabla siguiente para conocer las discrepancias y cómo minimizarlas.
 
-**Differences in attribution models**
+**Diferencias en los modelos de atribución**
 
-| Cause | Description | AppsFlyer tip |
+| Causa | Nota | Consejo de AppsFlyer |
 | --- | --- | --- |
-| Incorrect in-app event mapping | Mapping between AppsFlyer and Yahoo Japan Search Ads isn't correct. | <ul><li>Verify the link ID,</li><li>Verify AppsFlyer in-app events are correctly mapped to Yahoo Japan Search Ads events.</li></ul> |
+| Asignación incorrecta de eventos in-app | La asignación entre AppsFlyer y Yahoo Japan Search Ads no es correcta. | <ul><li>Verifica el ID del enlace,</li><li>Comprueba que los eventos in-app de AppsFlyer estén asignados correctamente a los eventos de Yahoo Japan Search Ads.</li></ul> |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HH1RS8ZJSWTCDY5QBN3E041D=yahoo-japan-search-ads-integration-principles h_01HH1RS8ZJATXC84X8C74B95C8=comparing-the-legacy-and-new-integration h_01HH1RS8ZJWESR21H0BE7S3HV5=integrating-with-the-new-api h_01HH1RS8ZJM3EHGMKJF409QPTX=data-sharing-between-appsflyer-and-yahoo-japan-search-ads yahoo-japan-search-adsappsflyer-media-source-mapping=yahoo-japan-search-ads-appsflyer-media-source-mapping h_01HH1RS8ZM0ZEPJ7ZJYY286J2F=yahoo-japan-search-ads-appsflyer-media-source-mapping h_01HH1RS8ZMAFNAGWAZDWX5PJT4=integration-procedures yahoo-japan-search-ads%E2%80%94integration-tab-sections=yahoo-japan-search-ads-integration-tab-sections h_01HH1RS8ZMS287YR3K9CW7HN37=yahoo-japan-search-ads-integration-tab-sections h_01HH1RS8ZMGTJQB3ANAJB8MY52=agency-integration h_01HH1RS8ZMCBT0NJ5Z23ZAK6TV=agency-setup h_01HH1RS8ZMKHBA000CEX6KHQJK=subsidiary-procedures h_01HH1RS8ZMWPS69ASK452QAXAK=get-the-app-link-id h_01HH1RS8ZMXVXH745DP5Q8SZ3D=create-a-new-yahoo-japan-search-ads-predefined-event h_01HH1RS8ZM5SXTQDPJ5E9YEKPS=yahoo-japan-search-ads-discrepancies" />
+<div data-zendesk-anchors="yahoo-japan-search-ads-integration-principles=principios-de-la-integraci%C3%B3n-de-yahoo-japan-search-ads h_01HH1RS8ZJSWTCDY5QBN3E041D=principios-de-la-integraci%C3%B3n-de-yahoo-japan-search-ads h_01HH1RS8ZJATXC84X8C74B95C8=comparing-the-legacy-and-new-integration h_01HH1RS8ZJWESR21H0BE7S3HV5=integrating-with-the-new-api h_01HH1RS8ZJM3EHGMKJF409QPTX=data-sharing-between-appsflyer-and-yahoo-japan-search-ads yahoo-japan-search-adsappsflyer-media-source-mapping=asignaci%C3%B3n-de-la-fuente-de-medios-de-yahoo-japan-search-ads-a-appsflyer h_01HH1RS8ZM0ZEPJ7ZJYY286J2F=asignaci%C3%B3n-de-la-fuente-de-medios-de-yahoo-japan-search-ads-a-appsflyer integration-procedures=procedimientos-de-integraci%C3%B3n h_01HH1RS8ZMAFNAGWAZDWX5PJT4=procedimientos-de-integraci%C3%B3n yahoo-japan-search-ads%E2%80%94integration-tab-sections=yahoo-japan-search-ads-integration-tab-sections h_01HH1RS8ZMS287YR3K9CW7HN37=yahoo-japan-search-ads-integration-tab-sections h_01HH1RS8ZMGTJQB3ANAJB8MY52=agency-integration agency-setup=configuraci%C3%B3n-de-agencias h_01HH1RS8ZMCBT0NJ5Z23ZAK6TV=configuraci%C3%B3n-de-agencias subsidiary-procedures=procedimientos-adicionales h_01HH1RS8ZMKHBA000CEX6KHQJK=procedimientos-adicionales h_01HH1RS8ZMWPS69ASK452QAXAK=get-the-app-link-id h_01HH1RS8ZMXVXH745DP5Q8SZ3D=create-a-new-yahoo-japan-search-ads-predefined-event h_01HH1RS8ZM5SXTQDPJ5E9YEKPS=yahoo-japan-search-ads-discrepancies" />

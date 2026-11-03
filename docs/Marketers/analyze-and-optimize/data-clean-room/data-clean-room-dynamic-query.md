@@ -1,5 +1,5 @@
 ---
-title: Data Clean Room—Dynamic Query
+title: Data Clean Room—consulta dinámica
 metadata:
   keywords:
     - Premium
@@ -13,167 +13,166 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2023-09-20T10:05:34Z'
-  edited_at: '2024-12-11T09:29:24Z'
+  edited_at: '2026-08-12T11:52:40Z'
   id: 18704719821329
-  locale: en-us
+  locale: es
   section: Data Clean Room
   section_id: 4591191779217
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/18704719821329-Data-Clean-Room-Dynamic-Query
+  url: https://support.appsflyer.com/hc/es/articles/18704719821329
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Run custom DCR queries in real time on your attribution data in the AppsFlyer system, your custom sources, or a combination. Preview the results of your queries or download the full results.
+> **De un vistazo:** Ejecuta consultas DCR personalizadas en tiempo real sobre tus datos de atribución en el sistema AppsFlyer, tus fuentes personalizadas o una combinación de ambos. Previsualiza los resultados de tus consultas o descarga los resultados completos.
 
-## Overview
+## Visión general
 
-### Why use Dynamic Query?
+### ¿Por qué usar la consulta dinámica?
 
-Dynamic Query gives you the ability to run ad hoc, custom queries on your DCR data in real time to answer your specific marketing questions quickly and efficiently.
+La consulta dinámica te permite ejecutar consultas ad hoc y personalizadas sobre tus datos de DCR en tiempo real para responder a tus preguntas específicas de marketing de forma rápida y eficiente.
 
-* Incorporating the power and flexibility of SQL, it allows you to perform advanced research and complex calculations that can't be accomplished in any other way. With Dynamic Query, you can bring your business logic to data that would otherwise be inaccessible.
-* In addition, Dynamic Query makes it possible to obtain efficient answers to one-time or occasional questions without the need to set up reports. (Of course, <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-reports">traditional DCR reports</Anchor> are still the right solution for ongoing data retrieval and ingestion.)
+* Al incorporar la potencia y la flexibilidad de SQL, te permite realizar investigaciones avanzadas y cálculos complejos que no pueden lograrse de ninguna otra forma. Con la consulta dinámica, puedes aplicar tu lógica de negocio a datos que, de otro modo, serían inaccesibles.
+* Además, la consulta dinámica permite obtener respuestas eficientes a preguntas puntuales u ocasionales sin necesidad de configurar reportes. (Por supuesto, los <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-reports">reportes DCR tradicionales</Anchor> siguen siendo la solución adecuada para la recuperación y la ingesta continuas de datos)
 
-Dynamic Query is available to **all DCR customers,** giving you the ability to run queries and preview the results without using credits from your DCR package. You'll only be charged credits if you decide to download the full results. In this way, you can be sure you've set up your queries correctly and that you'll get the answers you need before you incur any charges.
+La consulta dinámica está disponible para **todos los clientes de DCR** y te permite ejecutar consultas y previsualizar los resultados sin usar créditos de tu paquete de DCR. Solo se te cobrarán créditos si decides descargar los resultados completos. De este modo, puedes asegurarte de que has configurado tus consultas correctamente y de que obtendrás las respuestas que necesitas antes de que se te aplique ningún cargo.
 
-### Query language and dialect
+### Lenguaje y dialecto de consulta
 
-Dynamic Query utilizes SQL **(Spark SQL dialect)** and supports:
+La consulta dinámica utiliza SQL **(dialecto Spark SQL)** y admite:
 
-* <Anchor target="_blank" href="https://spark.apache.org/docs/3.2.1/sql-ref-syntax-qry-select.html">SELECT statements</Anchor>
-* <Anchor target="_blank" href="https://spark.apache.org/docs/3.2.1/api/sql/">Standard SQL functions</Anchor>
-* User-defined functions (UDFs), upon customer request
-  * If you require a non-standard SQL function, contact your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com,) and we'll make every effort to add it.
+* <Anchor target="_blank" href="https://spark.apache.org/docs/3.2.1/sql-ref-syntax-qry-select.html">Sentencias SELECT</Anchor>
+* <Anchor target="_blank" href="https://spark.apache.org/docs/3.2.1/api/sql/">Funciones SQL estándar</Anchor>
+* Funciones definidas por el usuario (UDF), a petición del cliente
+  * Si necesitas una función SQL no estándar, ponte en contacto con tu CSM o con [hello@appsflyer.com](mailto:hello@appsflyer.com,) y haremos todo lo posible por añadirla.
 
-### Available sources
+### Fuentes disponibles
 
-Dynamic Query allows you to perform custom queries on the following data sources:
+La consulta dinámica te permite realizar consultas personalizadas sobre las siguientes fuentes de datos:
 
-* Your attribution data in the AppsFlyer system
-  * [Learn more](#querying-attribution-data) about attribution data tables and how to query them
-* <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources">Custom sources</Anchor> you've set up in the DCR
+* Tus datos de atribución en el sistema AppsFlyer
+  * [Más información](#querying-attribution-data) sobre las tablas de datos de atribución y cómo consultarlas
+* <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources">Fuentes personalizadas</Anchor> que has configurado en el DCR
 
-You can query these sources individually, or [combine 2 or more](#combining-sources) using **JOIN** or **UNION** statements. This flexibility makes Dynamic Query useful in a variety of scenarios, for example:
+Puedes consultar estas fuentes por separado o [combinar 2 o más](#combining-sources) mediante sentencias **JOIN** o **UNION**. Esta flexibilidad hace que la consulta dinámica sea útil en diversos escenarios, por ejemplo:
 
-* Querying only attribution data to [obtain cross-app insights](#obtain-crossapp-insights), [explore data integrity](#explore-data-integrity), or [calculate custom attribution metrics](#calculate-custom-attribution-metrics)
-* Querying your custom sources in combination with attribution data to [enrich your data](#enrich-your-custom-data-with-attribution-insights) with attribution insights
+* Consultar solo datos de atribución para [obtener insights entre apps](#obtain-crossapp-insights), [explorar la integridad de los datos](#explore-data-integrity) o [calcular métricas de atribución personalizadas](#calculate-custom-attribution-metrics)
+* Consultar tus fuentes personalizadas en combinación con datos de atribución para [enriquecer tus datos](#enrich-your-custom-data-with-attribution-insights) con insights de atribución
 
-Based on the types of sources used in a query, [rules are applied](#preserving-privacy) to ensure the strict preservation of user privacy.
+En función de los tipos de fuentes utilizados en una consulta, [se aplican reglas](#protección-de-la-privacidad) para garantizar la estricta protección de la privacidad del usuario.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> Currently, Dynamic Query does not query attribution data or return results from Meta (Facebook, Instagram, etc.) To query this data, set up <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-reports">DCR reports</Anchor>.
+> Actualmente, Dynamic Query no consulta datos de atribución ni devuelve resultados de Meta (Facebook, Instagram, etc.) Para consultar estos datos, configura <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-reports">reportes de DCR</Anchor>.
 
-### Preserving privacy
+### Protección de la privacidad
 
-To ensure that Dynamic Query maintains strict compliance with DCR privacy standards, the following requirements apply to all queries:
+Para garantizar que Dynamic Query mantenga un cumplimiento estricto de los estándares de privacidad de DCR, los siguientes requisitos se aplican a todas las consultas:
 
-1. Any query utilizing **attribution data** must include a **GROUP BY** statement so that results are aggregated.
-2. **UNION** statements **cannot** be used to combine custom sources with attribution data.
-3. Grouping by the following fields is **not permitted:**
-   * **Attribution data fields:**
+1. Cualquier consulta que utilice **datos de atribución** debe incluir una instrucción **GROUP BY** para que los resultados se agreguen.
+2. Las instrucciones **UNION** **no pueden** usarse para combinar fuentes personalizadas con datos de atribución.
+3. No se permite agrupar por los siguientes campos **no está permitido:**
+   * **Campos de Datos de atribución:**
      * appsflyer\_id
      * idfa
      * idfv
      * advertising\_id
      * android\_id
-     * customer\_user\_id
+     * id\_usuario\_cliente
      * ip
-   * **Custom source fields** that are joined to any of the above attribution data fields.
-4. The following functions are **not permitted** when run on **non-aggregated attribution data.** They **are permitted** when run on **aggregated attribution data** or **custom source data:**
+   * **Campos de fuentes personalizadas** que se unan a cualquiera de los campos de datos de atribución anteriores.
+4. Las siguientes funciones **no están permitidas** cuando se ejecutan sobre **datos de atribución no agregados.** **Están permitidas** cuando se ejecutan sobre **datos de atribución agregados** o **datos de fuentes personalizadas:**
    * collect\_list
    * collect\_set
-   * last
+   * último
    * last\_value
    * first
    * first\_value
-   * max
-   * min
+   * máx.
+   * mín.
 
-To learn more about the *do*s and *don't*s of constructing queries, see samples and explanations of [valid](#sample-queries) and [invalid](#invalid-queries) queries.
+Para saber qué *debes* y qué *no debes* hacer al construir consultas, consulta ejemplos y explicaciones de consultas [válidas](#queries-de-muestra) y [no válidas](#consultas-no-válidas).
 
-### Accessing Dynamic Query
+### Acceso a Dynamic Query
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
-2. From the top menu, select the **Dynamic Query** tab.
+1. En AppsFlyer, desde el menú lateral, ve a **Colaborar** > **Data Clean Room**.
+2. En el menú superior, selecciona la pestaña **Dynamic Query**.
 
-## Reference
+## Referencia
 
-### Query reference
+### Referencia de consulta
 
-The following tabs provide additional information about constructing queries in the Dynamic Query environment.
+Las siguientes pestañas proporcionan información adicional sobre cómo crear consultas en el entorno de Dynamic Query.
 
 <div id="combining-sources" />
 
-<Accordion title="Combining sources: JOIN and UNION">
+<Accordion title="Combinación de fuentes: JOIN y UNION">
 
-**JOIN** statements combine sources by matching a common field:
+Las instrucciones **JOIN** combinan fuentes al hacer coincidir un campo común:
 
-* Can be used to combine any sources: attribution data tables and/or custom sources
-* Can be used to combine an unlimited number of sources
-* **Typically used to enrich custom source data with attribution data**
+* Se pueden usar para combinar cualquier tipo de fuentes: tablas de datos de atribución y/o fuentes personalizadas
+* Se puede usar para combinar un número ilimitado de fuentes
+* **Suele usarse para enriquecer datos de fuentes personalizadas con Datos de atribución**
 
-**UNION** statements append tables with matching schema (containing the same columns and datatypes):
+Las instrucciones **UNION** agregan tablas con un esquema coincidente (que contienen las mismas columnas y tipos de datos):
 
-* **Can** be used to combine attribution data tables ***or*** custom sources; **cannot** be used to combine attribution data tables ***with*** custom sources
-* Can be used to combine an unlimited number of sources
-* **Typically used to perform queries on** [**multiple attribution data tables**](#querying-attribution-data)
+* **Se puede** usar para combinar tablas de datos de atribución ***o*** fuentes personalizadas; **no se puede** usar para combinar tablas de datos de atribución ***con*** fuentes personalizadas
+* Se puede usar para combinar un número ilimitado de fuentes
+* **Suele usarse para realizar consultas en** [**varias tablas de datos de atribución**](#querying-attribution-data)
 
 </Accordion>
 
 <div id="querying-attribution-data" />
 
-<Accordion title="Querying attribution data tables">
+<Accordion title="Consulta de tablas de datos de atribución">
 
-Attribution data in the AppsFlyer system exists in 8 different tables:
+Los datos de atribución del sistema AppsFlyer existen en 8 tablas diferentes:
 
-* Each table includes different types of attribution events.
-* The timeframe for which query data is available varies by table.
-  * When constructing your query in the Dynamic Query console, hover over the name of a table in the selection panel to see the precise data availability dates for that table.
-* The tables within each of the groups below have matching schema, meaning you can use **UNION** statements to easily query multiple tables at once.
+* Cada tabla incluye distintos tipos de eventos de atribución.
+* El período durante el cual los datos de consulta están disponibles varía según la tabla.
+  * Al crear tu consulta en la consola de Dynamic Query, coloca el cursor sobre el nombre de una tabla en el panel de selección para ver las fechas exactas de disponibilidad de los datos de esa tabla.
+* Las tablas de cada uno de los grupos siguientes tienen un esquema coincidente, lo que significa que puedes usar instrucciones **UNION** para consultar fácilmente varias tablas a la vez.
 
-**Group 1: App installs and retargeting events**
+**Grupo 1: instalaciones de apps y eventos de retargeting**
 
-| Table name | Description | Data availability dates |
+| Nombre de la tabla | Nota | Fechas de disponibilidad de los datos |
 | --- | --- | --- |
-| installs | A user downloads, installs, and launches a mobile app | Prior 180 days  <br />(not including current day) |
-| re\_installs | A user installs an app, then uninstalls and re-installs it during the re-attribution window | Prior 180 days  <br />(not including current day) |
-| re\_engagements | An inactive user of a specific app engages with a retargeting campaign for the app and subsequently launches it | Prior 180 days  <br />(not including current day) |
-| re\_attribution | A former user of a specific app (who had uninstalled it) engages with a retargeting campaign for the app and subsequently reinstalls it | Prior 180 days  <br />(not including current day) |
-| organic\_installs | Install not attributed to a specific media source | Prior 180 days  <br />(not including current day) |
+| Cadena | Un usuario descarga, instala e inicia una aplicación móvil | 180 días anteriores  <br />(sin incluir el día actual) |
+| re\_installs | Un usuario instala una aplicación, luego la desinstala y la vuelve a instalar durante la ventana de reatribución | 180 días anteriores  <br />(sin incluir el día actual) |
+| re\_engagements | Un usuario inactivo de una aplicación específica participa en una campaña de retargeting de la aplicación y posteriormente la inicia | 180 días anteriores  <br />(sin incluir el día actual) |
+| re\_attribution | Un antiguo usuario de una aplicación específica (que la había desinstalado) participa en una campaña de retargeting de la aplicación y posteriormente la vuelve a instalar | 180 días anteriores  <br />(sin incluir el día actual) |
+| organic\_installs | Instalación no atribuida a una fuente de medios específica | 180 días anteriores  <br />(sin incluir el día actual) |
 
-**Group 2: In-app events**
+**Grupo 2: Eventos in-app**
 
-| Table name | Description | Data availability dates |
+| Nombre de la tabla | Descripción | Fechas de disponibilidad de los datos |
 | --- | --- | --- |
-| in\_app\_events | Post-install events set up for measurement in the app SDK | Prior day + current day |
-| in\_app\_organic\_installs | In-app events following an organic install | Prior day + current day |
+| eventos\_in\_app | Eventos posteriores a la instalación configurados para su medición en el SDK de la aplicación | Día anterior + día actual |
+| instalaciones\_orgánicas\_in\_app | Eventos in-app posteriores a una instalación orgánica | Día anterior + día actual |
 
-**Group 3: Impressions**
+**Grupo 3: Impresiones**
 
-| Table name | Description | Data availability dates |
+| Nombre de la tabla | Nota | Fechas de disponibilidad de los datos |
 | --- | --- | --- |
-| impressions | An ad is viewed by an app user or website visitor<ul><li>Data available for non-SRN ad networks only</li></ul> | Prior 5 days + current day |
+| Validación de compra de AppsFlyer | Un anuncio es visualizado por un usuario de la aplicación o un visitante del sitio web<ul><li>Datos disponibles solo para ad networks que no sean SRN</li></ul> | 5 días anteriores + día actual |
 
 </Accordion>
 
-### Sample queries
+### Queries de muestra
 
-These queries demonstrate just a few possibilities of what you can do with Dynamic Query. You can use them simply to get your ideas flowing, or you can use them as a starting point for your own queries.
+Estas consultas muestran solo algunas de las posibilidades de lo que puedes hacer con Dynamic Query. Puedes utilizarlas simplemente para inspirarte o usarlas como punto de partida para tus propias consultas.
 
-**To use the sample queries as a basis for your queries:**
+**Para usar las consultas de ejemplo como base para tus consultas:**
 
-1. Copy and paste: Copy the SQL samples of your choice and paste them into a worksheet in the **Dynamic Query** tab.
-2. Replace parameters: Modify the SQL code by replacing the parameters with the specific sources and fields you want to query.
-3. Execute: Click the **Run** button to execute a query and preview the results.  
-   * Running a query and previewing the results does not consume credits.
-   * Credits from your DCR package are consumed only if you download the full results.
+1. Copiar y pegar: copia los ejemplos de SQL que quieras y pégalos en una hoja de trabajo de la pestaña **Dynamic Query**.
+2. Sustituir parámetros: modifica el código SQL sustituyendo los parámetros por las fuentes y los campos concretos que quieras consultar.
+3. Ejecutar: haz clic en el botón **Run** para ejecutar una consulta y obtener una vista previa de los resultados.  
+   * Ejecutar una consulta y previsualizar los resultados no consume créditos.
+   * Los créditos de tu paquete DCR solo se consumen si descargas los resultados completos.
 
 <div id="obtain-crossapp-insights" />
 
-<Accordion title="Obtain cross-app insights">
+<Accordion title="Obtén insights entre aplicaciones">
 
-This query retrieves information about the 3 apps with the most re-installs from Snapchat during the past 3 days.
+Esta consulta recupera información sobre las 3 aplicaciones con más reinstalaciones de Snapchat durante los últimos 3 días.
 
 ```sql
 SELECT app_id, COUNT(*) AS reinstall_count
@@ -188,9 +187,9 @@ LIMIT 3;
 
 <div id="explore-data-integrity" />
 
-<Accordion title="Explore data integrity">
+<Accordion title="Explora la integridad de datos">
 
-To help you assess data integrity, this query calculates the rate of null IDFA values for the 10 media sources with the highest number of installs during the past 7 days.
+Para ayudarte a evaluar la integridad de los datos, esta consulta calcula la tasa de valores IDFA nulos de las 10 fuentes de medios con el mayor número de instalaciones durante los últimos 7 días.
 
 ```sql
 SELECT media_source, COUNT(*) AS total_installs, ROUND((SUM(CASE WHEN idfa IS NULL THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS null_idfa_rate
@@ -205,9 +204,9 @@ LIMIT 10;
 
 <div id="calculate-custom-attribution-metrics" />
 
-<Accordion title="Calculate custom attribution metrics">
+<Accordion title="Calcula métricas de atribución personalizadas">
 
-By calculating the geometric mean of the time difference (in seconds) between install time and attributed touch time for each media source and campaign, the resulting data provides insight into the efficiency of various media sources as regards user conversions and attribution timelines.
+Al calcular la media geométrica de la diferencia de tiempo (en segundos) entre la hora de instalación y la hora del toque atribuido para cada fuente de medios y campaña, los datos resultantes proporcionan información sobre la eficiencia de varias fuentes de medios con respecto a las conversiones de usuarios y los plazos de atribución.
 
 ```sql
 SELECT media_source,campaign,geo_mean(GREATEST(1, unix_timestamp(install_time, "yyyy-MM-dd HH:mm:ss") - unix_timestamp(attributed_touch_time, "yyyy-MM-dd HH:mm:ss.SSS")))
@@ -219,9 +218,9 @@ GROUP BY 1,2
 
 <div id="enrich-your-custom-data-with-attribution-insights" />
 
-<Accordion title="Enrich your custom data with attribution insights">
+<Accordion title="Enriquece tus datos personalizados con insights de atribución">
 
-This query utilizes attribution data to group a score from Custom Source C (c.score) by media source, allowing you to use your custom metric to evaluate the relative performance of various media sources.
+Esta consulta utiliza datos de atribución para agrupar una puntuación de la fuente personalizada C (c.score) por fuente de medios, lo que te permite usar tu métrica personalizada para evaluar el rendimiento relativo de varias fuentes de medios.
 
 ```sql
 SELECT media_source, sum(c.score)
@@ -233,9 +232,9 @@ GROUP BY media_source;
 
 <div id="complex-attribution-and-firstparty-data-join" />
 
-<Accordion title="Complex attribution and first-party data join">
+<Accordion title="Unión compleja de atribución y datos propios">
 
-This query utilizes a more intricate data-join process, allowing for advanced insight generation. First, it retrieves and unifies data from 2 distinct attribution tables ("install" and "installRetarget"). Next, it combines this data with 2 first-party custom sources to provide insights about various conversion types, including an aggregated custom performance metric (score) and maximum age for each.
+Esta consulta utiliza un proceso de unión de datos más complejo, lo que permite generar insights avanzados. Primero, recupera y unifica datos de 2 tablas de atribución distintas ("instalación" y "installRetarget"). A continuación, combina estos datos con 2 fuentes personalizadas propias para proporcionar insights sobre varios tipos de conversión, incluida una métrica personalizada de rendimiento agregada (score) y la antigüedad máxima de cada una.
 
 ```sql
 SELECT conversion_type, SUM(sum_score), MAX(max_age)
@@ -249,15 +248,15 @@ GROUP BY conversion_type
 
 </Accordion>
 
-### Invalid queries
+### Consultas no válidas
 
-These queries illustrate some of the rules that Dynamic Query uses to ensure compliance with user privacy requirements. Use them to better understand the *do*s and *don't*s of constructing queries for the DCR.
+Estas consultas ilustran algunas de las reglas que Dynamic Query utiliza para garantizar el cumplimiento de los requisitos de privacidad del usuario. Úsalas para comprender mejor lo que se *debe* y lo que *no se debe* hacer al crear consultas para el DCR.
 
 <div id="no-group-by-statement" />
 
-<Accordion title="No GROUP BY statement">
+<Accordion title="Sin instrucción GROUP BY">
 
-Each of the following queries is invalid because it utilizes attribution data but doesn't include a **GROUP BY** statement:
+Cada una de las siguientes consultas no es válida porque utiliza datos de atribución, pero no incluye una instrucción **GROUP BY**:
 
 ```sql
 SELECT *
@@ -276,9 +275,9 @@ JOIN install af on af.appsflyer_id = c.appsflyer_id;
 
 <div id="grouped-by-nonpermitted-attribution-data-field" />
 
-<Accordion title="Grouped by non-permitted attribution data field">
+<Accordion title="Agrupada por un campo no permitido de datos de atribución">
 
-The following query is invalid because it groups by a non-permitted attribution data field (appsflyer\_id):
+La siguiente consulta no es válida porque agrupa por un campo no permitido de datos de atribución (appsflyer\_id):
 
 ```sql
 SELECT appsflyer_id, count(*)
@@ -288,7 +287,7 @@ GROUP BY appsflyer_id
 
 -----------------------------------------------------
 
-The following query is invalid because it groups by a non-permitted attribution data field (appsflyer\_id). This is not permitted even when the field is within a function:
+La siguiente consulta no es válida porque agrupa por un campo no permitido de datos de atribución (appsflyer\_id). Esto no está permitido, incluso cuando el campo está dentro de una función:
 
 ```sql
 SELECT substr(appsflyer_id, 0, 5), count(*)
@@ -298,7 +297,7 @@ GROUP BY substr(appsflyer_id, 0, 5)
 
 -----------------------------------------------------
 
-The following query is invalid because it groups by a non-permitted attribution data field (appsflyer\_id). This is not permitted even when the field is within an index:
+La siguiente consulta no es válida porque agrupa por un campo no permitido de datos de atribución (appsflyer\_id). Esto no está permitido, incluso cuando el campo está dentro de un índice:
 
 ```sql
 SELECT appsflyer_id, count(*)
@@ -310,9 +309,9 @@ GROUP BY 1
 
 <div id="grouped-by-nonpermitted-custom-data-field" />
 
-<Accordion title="Grouped by custom source field joined to non-permitted attribution data field">
+<Accordion title="Agrupada por un campo de fuente personalizada unido a un campo no permitido de datos de atribución">
 
-The following query is invalid because it groups by a custom source field (my\_id) that is joined to a non-permitted attribution data field (appsflyer\_id); therefore, the same grouping restriction applies to my\_id.
+La siguiente consulta no es válida porque agrupa por un campo de fuente personalizada (my\_id) que está unido a un campo no permitido de datos de atribución (appsflyer\_id); por lo tanto, la misma restricción de agrupación también se aplica a my\_id.
 
 ```sql
 SELECT my_id, count(*)
@@ -325,9 +324,9 @@ GROUP BY my_id
 
 <div id="restricted-function" />
 
-<Accordion title="Restricted function">
+<Accordion title="Función restringida">
 
-The following query is **invalid** because it attempts to run the collect\_list function on **non-aggregated** attribution data:
+La siguiente consulta es **no válida** porque intenta ejecutar la función collect\_list en datos de atribución **no agregados**:
 
 ```sql
 SELECT App_id, collect_list(appsflyer_id)
@@ -337,7 +336,7 @@ GROUP BY app_id
 
 -----------------------------------------------------
 
-Compare with the following **valid** query, which runs the collect\_list function on **aggregated** attribution data:
+Compáralo con la siguiente consulta **válida**, que ejecuta la función collect\_list en **datos de atribución agregados**:
 
 ```sql
 SELECT app_id, collect_list(campaign)
@@ -349,7 +348,7 @@ GROUP BY app_id
 
 -----------------------------------------------------
 
-Compare with the following **valid** query, which runs the collect\_list function on **custom source data:**
+Compárala con la siguiente consulta **válida**, que ejecuta la función collect\_list en **datos de fuente personalizados:**
 
 ```sql
 SELECT app_id, collect_list(c.score)
@@ -359,4 +358,4 @@ GROUP BY app_id
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HAS0VY179VDWWV6N5YY2578E=overview h_01HF9G8TXGTAJDFZFVT8WS3QJE=why-use-dynamic-query query-language-and-syntax=query-language-and-dialect h_01HF3KZXC2VHNG92YX25K9HX7Q=query-language-and-dialect h_01HASGQZ5ATBPQ0HF28ETAGPMJ=available-sources h_01HF45KMZNF95SC0K6DE7P4K1R=note 01HF3EJEN2KSRR56F9XF0VSPQF=preserving-privacy accessing-the-dynamic-query=accessing-dynamic-query h_01J3FBVTVW2NCNESK3SYR0G9Q8=accessing-dynamic-query h_01HAS0X3NDFM136YMYSAG88JD7=reference h_01HFKFTBD7BCVP8PT0FDNGVHXS=query-reference h_01HFM169F3W9FDZZ3A4SG7WW58=combining-sources h_01HFM169F3WECT4M32H1CVCMKS=querying-attribution-data h_01HF3TDC0A8N9ZXGJHY4MZE3Y6=sample-queries h_01HF40PRZV7DBMYQRS6YJK2RM4=obtain-crossapp-insights h_01HF40PRZVFHY7B0R1G5S5PRTG=explore-data-integrity h_01HF40PRZVB5N2B14VEYW2CB3N=calculate-custom-attribution-metrics h_01HF40PRZVDXPZBDT25B9JK2EE=enrich-your-custom-data-with-attribution-insights h_01HF40PRZVM2HGQMX9TCK8WF7Y=complex-attribution-and-firstparty-data-join h_01HF3V03EFAVYR6M4WX0BHSVDK=invalid-queries h_01HF40PRZVZWTSK4BJ6BQ1D7S0=no-group-by-statement h_01HF40PRZVY13XM4RVETNK7E6K=grouped-by-nonpermitted-attribution-data-field h_01HF40PRZVJ9G4BAXKGW5VZMJX=grouped-by-nonpermitted-custom-data-field h_01HF42A4B20727TQGPPMP20629=restricted-function" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01HAS0VY179VDWWV6N5YY2578E=visi%C3%B3n-general why-use-dynamic-query=por-qu%C3%A9-usar-la-consulta-din%C3%A1mica h_01HF9G8TXGTAJDFZFVT8WS3QJE=por-qu%C3%A9-usar-la-consulta-din%C3%A1mica query-language-and-syntax=lenguaje-y-dialecto-de-consulta h_01HF3KZXC2VHNG92YX25K9HX7Q=lenguaje-y-dialecto-de-consulta h_01HASGQZ5ATBPQ0HF28ETAGPMJ=fuentes-disponibles h_01HF45KMZNF95SC0K6DE7P4K1R=advertencia preserving-privacy=protecci%C3%B3n-de-la-privacidad 01HF3EJEN2KSRR56F9XF0VSPQF=protecci%C3%B3n-de-la-privacidad accessing-the-dynamic-query=acceso-a-dynamic-query h_01J3FBVTVW2NCNESK3SYR0G9Q8=acceso-a-dynamic-query reference=referencia h_01HAS0X3NDFM136YMYSAG88JD7=referencia query-reference=referencia-de-consulta h_01HFKFTBD7BCVP8PT0FDNGVHXS=referencia-de-consulta h_01HFM169F3W9FDZZ3A4SG7WW58=combining-sources h_01HFM169F3WECT4M32H1CVCMKS=querying-attribution-data sample-queries=queries-de-muestra h_01HF3TDC0A8N9ZXGJHY4MZE3Y6=queries-de-muestra h_01HF40PRZV7DBMYQRS6YJK2RM4=obtain-crossapp-insights h_01HF40PRZVFHY7B0R1G5S5PRTG=explore-data-integrity h_01HF40PRZVB5N2B14VEYW2CB3N=calculate-custom-attribution-metrics h_01HF40PRZVDXPZBDT25B9JK2EE=enrich-your-custom-data-with-attribution-insights h_01HF40PRZVM2HGQMX9TCK8WF7Y=complex-attribution-and-firstparty-data-join invalid-queries=consultas-no-v%C3%A1lidas h_01HF3V03EFAVYR6M4WX0BHSVDK=consultas-no-v%C3%A1lidas h_01HF40PRZVZWTSK4BJ6BQ1D7S0=no-group-by-statement h_01HF40PRZVY13XM4RVETNK7E6K=grouped-by-nonpermitted-attribution-data-field h_01HF40PRZVJ9G4BAXKGW5VZMJX=grouped-by-nonpermitted-custom-data-field h_01HF42A4B20727TQGPPMP20629=restricted-function" />

@@ -1,5 +1,5 @@
 ---
-title: Self-reporting networks (SRNs)
+title: Redes de autorreporte (SRN)
 metadata:
   keywords:
     - Facebook
@@ -21,296 +21,296 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2018-10-22T05:21:45Z'
-  edited_at: '2026-06-11T08:42:59Z'
+  edited_at: '2026-08-12T12:19:50Z'
   id: 360001546905
-  locale: en-us
+  locale: es
   section: Media source configuration
   section_id: 6551067072785
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001546905-Self-reporting-networks-SRNs
+  url: https://support.appsflyer.com/hc/es/articles/360001546905
 ---
-> **At a glance:** Learn about self-reporting networks (SRNs)—attribution, deep linking, iOS implications, and FAQ.
+> **En resumen:** Descubre más sobre las redes de autorreporte (SRN): atribución, deep linking, implicaciones para iOS y preguntas frecuentes.
 
-## SRNs integrated with AppsFlyer
+## SRNs integradas con AppsFlyer
 
-| **SRN** | **Logo** |
+| **nombres de SRN reservados** | **Logotipo** |
 | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration">Amazon Ads</Anchor> | <Image alt="amazon-ads-logo.png" src="https://files.readme.io/da898ff008f7fe6f9a6f845f7c170746c36bd88293632555c2a2c3db13b47414-32259457808145.png" width="134px" /> |
-| <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup">Apple Ads</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/iossearchads.png" width="131px" /> |
-| <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">Google Ads</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png?v=1" width="47px" /> |
-| <Anchor target="_blank" href="/marketers/docs/google-marketing-platform-display-video-360-dv360-integration">Google Marketing Platform (DV360)</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png?v=1" width="45px" /> |
-| <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup">Meta ads</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/facebook.png?v=1" width="67px" /> |
-| <Anchor target="_blank" href="/marketers/docs/roku-integration-with-appsflyer">Roku</Anchor> | <Image alt="roku.png" src="https://files.readme.io/4909a45e611700e5c2a69f94710226e65e10faf620e3a7939a2c038bea1736ca-33565070184337.png" width="150px" /> |
-| <Anchor target="_blank" href="/marketers/docs/snapchat-advanced-srn-integration-setup">Snapchat—Advanced SRN</Anchor> | <Image alt="snapchat_logo.png" src="https://files.readme.io/c9b62d55d5c1497011d7411a21dca6f1668308bbe2806ab238b71742c421b182-32259457816209.png" width="41px" /> |
+| <Anchor target="_blank" href="/marketers/es/docs/amazon-ads-campaign-configuration">Anuncios de Amazon</Anchor> | <Image alt="amazon-ads-logo.png" src="https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png" width="134px" /> |
+| <Anchor target="_blank" href="/marketers/es/docs/apple-ads-integration-setup">Apple Search Ads</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/iossearchads.png" width="131px" /> |
+| <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-advertisers">Anuncios de Google</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png?v=1" width="47px" /> |
+| <Anchor target="_blank" href="/marketers/es/docs/google-marketing-platform-display-video-360-dv360-integration">Plataforma de Marketing de Google</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png?v=1" width="45px" /> |
+| <Anchor target="_blank" href="/marketers/es/docs/meta-ads-integration-setup">Meta Ads</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/facebook.png?v=1" width="67px" /> |
+| <Anchor target="_blank" href="/marketers/es/docs/roku-integration-with-appsflyer">Roku</Anchor> | <Image alt="roku.png" src="https://files.readme.io/4909a45e611700e5c2a69f94710226e65e10faf620e3a7939a2c038bea1736ca-33565070184337.png" width="150px" /> |
+| <Anchor target="_blank" href="/marketers/es/docs/snapchat-advanced-srn-integration-setup">Snapchat—SRN Avanzado</Anchor> | <Image alt="snapchat_logo.png" src="https://files.readme.io/c9b62d55d5c1497011d7411a21dca6f1668308bbe2806ab238b71742c421b182-32259457816209.png" width="41px" /> |
 | Tencent Social Ads | <Image alt="blobid0.jpg" src="https://files.readme.io/6d6e9661c9d81f80ffeedfdf4850a84f3cc183faa49a514d1d3bb116641738da-32259428896017.jpg" width="80px" /> |
-| <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup">TikTok for Business—Advanced SRN</Anchor> | <Image alt="TTFB_logo__4C_horizontal_black.png" src="https://files.readme.io/caa8c9e02b161eea10740cb79f26d04d3324e87b9cfd929281374d2d7936ef2e-32259428903953.png" width="142px" /> |
-| <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-setup-guide-overview">X Ads</Anchor> | <Image alt="X Ads logo.png" src="https://files.readme.io/be88359054dba353a15beeafc13d590f5296a721b206be3f768fa606592249e6-32259428909841.png" width="37px" /> |
-| <Anchor target="_blank" href="/marketers/docs/yahoo-integration-setup">Yahoo (Oath: Ad Platforms / Yahoo Gemini)</Anchor> | <Image alt="verizonmedia.png" src="https://files.readme.io/36291ff556d07a5dbf2ae8ff693ea33d21dae9e0518a94b251202634a24049cf-32259428916369.png" width="76px" /> |
-| <Anchor target="_blank" href="/marketers/docs/yahoo-japan-search-ads-campaign-configuration">Yahoo! Search Ads</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yahoojapansearch.png" width="139px" /> |
+| <Anchor target="_blank" href="/marketers/es/docs/tiktok-for-business-advanced-srn-integration-setup">TikTok for Business—SRN Avanzado</Anchor> | ![TTFB_logo__4C_horizontal_black.png](https://files.readme.io/caa8c9e02b161eea10740cb79f26d04d3324e87b9cfd929281374d2d7936ef2e-32259428903953.png) |
+| <Anchor target="_blank" href="/marketers/es/docs/x-ads-formerly-twitter-ads-setup-guide-overview">Anuncios X</Anchor> | <Image alt="Logotipo_X_Ads.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="37px" /> |
+| <Anchor target="_blank" href="/marketers/es/docs/yahoo-integration-setup">Yahoo (Oath: Plataformas de Anuncios / Yahoo Gemini)</Anchor> | <Image alt="verizonmedia.png" src="https://files.readme.io/36291ff556d07a5dbf2ae8ff693ea33d21dae9e0518a94b251202634a24049cf-32259428916369.png" width="76px" /> |
+| <Anchor target="_blank" href="/marketers/es/docs/yahoo-japan-search-ads-campaign-configuration">Yahoo! Japan Yahoo! Anuncios de búsqueda</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yahoojapansearch.png" width="139px" /> |
 
-**Note:** SRNs have <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">user-level data use and retention restrictions.</Anchor>
+**Nota:** Las SRNs tienen <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention">restricciones para el uso y retención de datos a nivel de usuario.</Anchor>
 
-## Attribution
+## Atribución
 
-Unlike non-SRNs (ad networks), which use attribution links to report events to AppsFlyer, SRNs self-attribute using the device ID when notified of an install by AppsFlyer. For iOS apps, <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAN</Anchor> and the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy framework</Anchor> are used for attribution.
+A diferencia de las redes no SRN (ad networks), que utilizan enlaces de atribución para reportar eventos a AppsFlyer, las SRNs se autoatribuyen utilizando el ID del dispositivo cuando AppsFlyer notifica sobre una instalación. Para las aplicaciones de iOS, se emplean <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">SKAN</Anchor> y el <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">framework de privacidad avanzada agregada</Anchor> para la atribución.
 
-AppsFlyer attribution for both SRNs and non-SRNs is based on:
+La atribución de AppsFlyer tanto para SRN como para no SRN se fundamenta en dos metodologías:
 
-* Last-touch and multi-touch methodologies.
-* AppsFlyer standard attribution logic to sequence the relevant impression and click data.
+* Metodologías de último toque y multitoque.
+* Logica estándar de atribución de AppsFlyer para secuenciar los datos relevantes de impresiones y clics.
 
-### How does attribution work with SRNs?
+### ¿Cómo funciona la atribución con las SRNs?
 
-SRNs report events, such as new installs and in-app events, to AppsFlyer in the following way:
+Las SRN reportan eventos, como nuevas instalaciones y eventos en la aplicación, a AppsFlyer de la siguiente manera:
 
-* Using APIs to communicate with attribution and measurement providers.
-* When third-party attribution providers detect an install, they query the network using the advertising ID.
-* Reporting details of any relevant ad clicks or impressions.
+* Empleando APIs para comunicarse con proveedores de atribución y medición.
+* Cuando los proveedores de atribución de terceros detectan una instalación, consultan la red a través del ID de publicidad.
+* Reporte de detalles sobre cualquier clic o impresión de anuncios relevante.
 
-After AppsFlyer performs the attribution, the customer sends in-app postbacks to the SRN for the duration of the <Anchor target="_blank" href="/marketers/docs/user-level-data-retention#partner-data-retention-periods">partner data retention period</Anchor>.
+Después de que AppsFlyer realice la atribución, se envían postbacks in-app a la SRN durante el <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention#periodos-de-conservación-de-los-datos-de-partners">período de retención de datos del partner</Anchor>.
 
-### How does attribution work with Advanced SRNs?
+### ¿Cómo funciona la atribución con las SRNs Avanzadas?
 
-Advanced SRNs support the same attribution methods as standard SRNs. In addition, advanced SRNs support measurement through the <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#aggregated-advanced-privacy">Aggregated Advanced Privacy</Anchor> framework. Depending on the network, this may include attribution based on advertising ID where dual consent has been obtained, or campaign measurement modeling based on click and impression data.
+Las SRN avanzadas efectúan la atribución de la misma manera que las SRNs. Sin embargo, las SRNs avanzadas también pueden atribuir interacciones cuando no hay un ID de dispositivo (IDFA), utilizando el framework de <Anchor target="_blank" href="/marketers/es/docs/appsflyer-knowledge-base-glossary#privacidad-avanzada-agregada">Privacidad Avanzada Agregada</Anchor>. En ocasiones, la atribución se realiza mediante <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#device-id-matching">coincidencia de ID</Anchor> con doble consentimiento y, para algunas SRNs avanzadas, mediante <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#probabilistic-modeling">modelado probabilístico</Anchor> a través de la comunicación por API sobre clics e impresiones.
 
-### Install attribution
+### Atribución de instalación.
 
-Potential app users see and interact with multiple ads before they install an app. In general, attribution providers offer last-touch attribution, which assigns an install to the last click before the actual install.
+Antes de instalar una aplicación, los usuarios potenciales ven e interactúan con varios anuncios. En general, los proveedores de atribución ofrecen a los anunciantes una atribución de último toque, lo que significa que se atribuye una instalación al último clic realizado antes de la instalación efectiva.
 
-When an app is first launched:
+Cuando se lanza una aplicación por primera vez:
 
-* AppsFlyer checks that:
-  * The app is set to receive traffic from SRNs.
-  * The user has an advertising ID.
-* If both conditions are true, AppsFlyer queries SRNs using the advertising ID.
-* AppsFlyer performs attribution after considering SRN claims.
+* AppsFlyer verifica que:
+  * La aplicación esté configurada para recibir tráfico de SRNs.
+  * El usuario tenga un ID de publicidad.
+* Si ambas condiciones se cumplen, AppsFlyer consulta a las SRNs usando el ID de publicidad.
+* AppsFlyer realiza la atribución tras considerar las afirmaciones de la SRN.
 
-#### Install attribution examples
+#### Ejemplos de atribución de instalaciones
 
 <div id="example-a-assisted-attribution" />
 
-<Accordion title="Example A: Assisted attribution">
+<Accordion title="Ejemplo A: Atribución asistida">
 
 ![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
 
-**Monday:** Network A reports a user click.
+**Lunes:** La red A informa un clic de usuario.
 
-**Tuesday:** Network B reports a video engagement.
+**Martes:** La red B informa una interacción con video.
 
-**Wednesday:** Network C reports a click on a playable ad and, 30 minutes later, there is an install.
+**Miércoles:** La red C informa un clic en un anuncio interactivo y, 30 minutos después, se produce una instalación.
 
-**AppsFlyer** attributes the install to Network C and gives Networks A and B credit for assisting with the install.
+**AppsFlyer** atribuye la instalación a la red C y reconoce a las redes A y B por su contribución en la instalación.
 
-AppsFlyer gives advertisers assist data (unattributed engagements that occur before an install). This lets advertisers customize their multi-touch or fractional attribution models. For more information, see <Anchor target="_blank" href="/marketers/docs/measure-assisted-installs">Assisted installs explained</Anchor>.
+AppsFlyer proporciona a los anunciantes datos de asistencia (interacciones sin atribuir que ocurren antes de una instalación). Esto permite a los anunciantes personalizar sus modelos de atribución multitáctil o fraccionada. Para más detalles, consulta <Anchor target="_blank" href="/marketers/es/docs/measure-assisted-installs">Explicación de las instalaciones asistidas</Anchor>.
 
 </Accordion>
 
 <div id="example-b-last-click-attribution" />
 
-<Accordion title="Example B: Last click attribution">
+<Accordion title="Ejemplo B: Atribución del último clic">
 
 ![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
 
-**Network D** (SRN) reports a click a few minutes before Network C.
+**La red D** (SRN) informa un clic unos minutos antes de la red C.
 
-**Network C** uses standard attribution integration.
+**La red C** utiliza la integración de atribución estándar.
 
-**AppsFlyer** attributes the install to Network C as they had the last click.
+**AppsFlyer** atribuye la instalación a la red C, ya que fue donde se realizó el último clic.
 
 </Accordion>
 
-### Attribution windows
+### Ventanas de atribución
 
-Attribution windows include lookback and view-through. Some SRNs charge advertisers for an install based on Cost per Impression (CPM) and Cost per Action (CPA)—these are based on clicks or impressions that occur within a 1-28 day period.
+Las ventanas de atribución incluyen la retrospectiva y la view-through. Algunas SRNs cobran a los anunciantes por una instalación basada en el costo por mil impresiones (CPM) y el costo por acción (CPA); estos se basan en clics o impresiones que ocurren durante un período de 1 a 28 días.
 
-**AppsFlyer** attributes install, activity, Effective Cost per Install (eCPI), and Effective Cost per Action (eCPA) based on an advertiser’s preferred attribution methodology and lookback windows.
+**AppsFlyer** asigna la instalación, la actividad, el costo efectivo por instalación (eCPI) y el costo efectivo por acción (eCPA) basándose en la metodología de atribución preferida por el anunciante y las ventanas retrospectivas.
 
-**Advertisers** may have to pay for installs based on SRN attribution lookback windows and view-through models.
+**Los anunciantes** pueden tener que pagar por las instalaciones basadas en ventanas retrospectivas de atribución de SRN y modelos view-through.
 
-* Advertisers expect the AppsFlyer third-party universal attribution methodology to optimize and allocate their ad spend.
-* Why? Because AppsFlyer reports actual eCPI and eCPA based on advertiser-defined terms.
-* SRNs may benefit in the short term as they often define their own payment terms. But, advertisers correct this by using third-party attribution providers.
+* Los anunciantes esperan que la metodología de atribución universal de terceros de AppsFlyer optimice y distribuya su gasto publicitaria.
+* ¿Por qué? Porque AppsFlyer informa el eCPI y eCPA reales según los términos definidos por el anunciante.
+* Las SRNs pueden beneficiarse a corto plazo, dado que generalmente definen sus propias condiciones de pago. No obstante, los anunciantes corrigen esto usando proveedores de atribución de terceros.
 
-## Deep linking with SRNs
+## Deep linking con SRNs
 
-For users to open your app when the link is clicked, you just need to set up App Links/Universal Links/URI scheme. However, to perform deep or deferred deep linking to a specific page or activity in your app, SRNs use their own methods—without involving AppsFlyer's deep linking method.
+Para que los usuarios abran tu aplicación al hacer clic en el enlace, solo necesitas configurar App Links/Universal Links/Esquemas URI. Sin embargo, para realizar deep linking o deferred deep linking a una página o actividad específica de tu app, las SRNs utilizan sus propios métodos, sin involucrar el método de deep linking de AppsFlyer.
 
-So how can you deep link your users and get the relevant data from SRNs?
+Entonces, ¿cómo puedes integrar a tus usuarios y obtener los datos relevantes de las SRNs?
 
 <div id="direct-deep-linking" />
 
 <Accordion title="Direct deep linking">
 
-When a user device performs deep linking, direct deep linking with SRNs is done without calling the AppsFlyer deep linking method. In the example below, existing users clicking an ad are redirected to the activity directly using Facebook's methods, while new users get the same experience using AppsFlyer's conversion data. Learn how <Anchor target="_blank" href="/marketers/docs/meta-ads-faq#who-needs-facebooks-sdk">Meta ads uses OneLink for deep linking</Anchor>
+Cuando un dispositivo de usuario realiza un deep linking, el direct deep linking con SRNs se efectúa sin llamar al método de deep linking de AppsFlyer. En el ejemplo a continuación, los usuarios existentes que hacen clic en un anuncio son redireccionados a la actividad directamente mediante los métodos de Facebook, mientras que los usuarios nuevos obtienen la misma experiencia a través de los datos de conversión de AppsFlyer. Descubre cómo <Anchor target="_blank" href="/marketers/es/docs/meta-ads-faq#who-needs-facebooks-sdk">Meta Ads utilizan OneLink para crear deep linking</Anchor>
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Jill, the mobile marketer of "greatapp", decides to run a deep linking campaign on Meta ads, targeted at general audiences. The campaign redirects any clicking users to a "bonus" activity. Jack, the mobile developer, adds this logic after getting the conversion data:
+> Jill, el mobile marketer de "greatapp", decide llevar a cabo una campaña de deep linking en Meta Ads, dirigida a un público general. La campaña envía a los usuarios que hacen clic a una actividad "bonus".
+> Jack, el desarrollador móvil, incorpora esta lógica tras obtener los datos de conversión:
 >
-> 1. Is it Facebook-originated ("is\_fb=true")?
-> 2. If true, get the value of the ad group parameter.
-> 3. If the value contains the word "bonus", send the user to the "bonus" activity.
+> 1. ¿Tiene su origen en Facebook ("is\_fb=true")?
+> 2. Si es así, obtén el valor del parámetro del grupo de anuncios.
+> 3. Si el valor contiene la palabra "bonus", dirige al usuario a la actividad "bonus".
 
 </Accordion>
 
 <div id="deferred-deep-linking" />
 
-<Accordion title="Deferred deep linking">
+<Accordion title="Enlaces profundos diferidos">
 
-In contrast to deep linking, deferred deep linking with SRNs is possible using the AppsFlyer GCD API.  AppsFlyer receives the conversion data and makes it available to the app on the first launch. Using the conversion data, new users who install after clicking on a deep linking/retargeting campaign on an SRN can be redirected within the app upon launch.
+A diferencia de los deep linking, los deferred deep linking con SRNs son posibles mediante la API GCD de AppsFlyer.  AppsFlyer recibe los datos de conversión y los pone a disposición de la aplicación en la primera apertura. A los usuarios nuevos que instalan la aplicación después de hacer clic en una campaña de deep linking o retargeting en una SRN se los puede redireccionar dentro de la aplicación al momento del inicio, utilizando los datos de conversión.
 
-Deferred deep linking is supported for Google Ads, Meta (provided that the FB SDK is installed on the app), Snapchat, and TikTok for Business using the actual deep link value, which can be queried via GCD using the `af_dp` field. In the case of TikTok for Business, this value can also be accessed from the `deep_link_value` field.
+Los deferred deep linking son compatibles con Google Ads, Snapchat y TikTok for Business mediante el uso del valor real del deep linking, que se puede consultar a través de GCD usando el campo `af_dp`. En el caso de TikTok for Business, este valor también es accesible desde el campo `deep_link_value`.
 
-However, with other SRNs, the regular AppsFlyer deep linking parameters aren't present as part of the deep link data. To use this data within the app, the developer needs to employ further logic based on available parameters, such as campaign, ad set, or single ad names.
+Sin embargo, con otras SRNs, los parámetros de deep linking normales de AppsFlyer no forman parte de los datos del deep link. Para utilizar esta información dentro de la aplicación, el desarrollador debe usar lógica adicional basada en los parámetros disponibles, como el nombre de la campaña, del conjunto de anuncios o de anuncios individuales.
 
 </Accordion>
 
-## iOS implications
+## Implicaciones para iOS
 
-Most SRNs support SKAdNetwork and have the necessary integration with AppsFlyer.
+La mayoría de las SRNs son compatibles con SKAdNetwork y tienen la integración necesaria con AppsFlyer.
 
 <div id="ios-145-srn-attribution" />
 
-<Accordion title="iOS 14.5 SRN attribution">
+<Accordion title="Atribución de SRN en iOS 14.5">
 
-Starting iOS 14.5, when users give ATT consent in both the advertiser and publisher apps (<Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#dual-consent">dual consent</Anchor>), SRN installs, which are recorded in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetwork dashboard</Anchor>, are also shown in the traditional dashboards.
+A partir de iOS 14.5, cuando los usuarios dan su consentimiento de la ATT en ambas aplicaciones, tanto del anunciante como del publisher (<Anchor target="_blank" href="/marketers/es/docs/appsflyer-knowledge-base-glossary#doble-consentimiento">consentimiento dual</Anchor>), las instalaciones de SRN, que se registran en el <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">dashboard de SKAdNetwork</Anchor>, también se muestran en los dashboards tradicionales.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * The traditional dashboard shows a reduction in installs attributed to SRNs. When considering SRN performance, use the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetwork dashboard</Anchor>. Overall expect a decrease in SRN attributions of installs, with a matching increase in organic installs. However, for advanced SRNs, the impact is lower, as they also support measurement via the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> framework and other privacy-preserving methods.
-> * The <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetwork dashboard</Anchor> updates with a lag of 48-72 hours after installs.
-> * Installs brought by Apple Ads (ASA) aren't attributed in the SKAdNetwork dashboard.
+> * El dashboard tradicional muestra una reducción en las instalaciones atribuidas a SRNs. Al considerar el rendimiento de SRN, utiliza el <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">dashboard de SKAdNetwork</Anchor>. En general, se anticipa una disminución en las atribuciones de instalaciones de SRN, junto con un aumento correspondiente en instalaciones orgánicas. Sin embargo, para las SRNs avanzadas, el impacto es menor ya que también acreditan interacciones cuando no hay un ID de dispositivo.
+> * El dashboard de <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetwork</Anchor> se actualiza con un retraso de 48 a 72 horas después de las instalaciones.
+> * Las instalaciones generadas por los Apple Search Ads (ASA) no se atribuyen en el dashboard de SKAdNetwork.
 
 </Accordion>
 
 <div id="sending-event-postbacks-to-srns" />
 
-<Accordion title="Sending event postbacks to SRNs">
+<Accordion title="Envío de postbacks de eventos a SRNs">
 
-SRNs receiving event postbacks rely on the device ID being included in the postback. This enables SRNs to self-attribute reported user actions. Many iOS 14 users are non-consenting, meaning they don't allow access to their device ID (IDFA). In this case, you should expect:
+Las SRNs que reciben postbacks de eventos dependen de la inclusión del ID del dispositivo en el postback. Esto permite a las SRNs autoatribuir las acciones de usuarios reportados. Muchos usuarios de iOS 14 no dan su consentimiento, lo que significa que no permiten el acceso a su ID de dispositivo (IDFA). En este caso, deberías esperar lo siguiente:
 
-* A decrease in the number of event postbacks sent to SRNs
-* Discrepancies in the number of event postbacks between SRNs and AppsFlyer, which log all events.
+* Una disminución en el número de postbacks de eventos enviados a SRNs
+* Discrepancias en el número de postbacks de eventos entre las SRNs y AppsFlyer, que registra todos los eventos.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * If an advertising ID is not available, postbacks for installs, app opens, or in-app events are not sent to SRNs. [However, in some cases, limited postbacks may still be sent to SRNs even when an advertiser ID is unavailable](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)[.](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)
-> * Click ad networks are not affected, as they use their own transaction IDs rather than device IDs to self-attribute event postback information.
+> * Si no hay IDFA, los postbacks de instalaciones, aperturas de aplicaciones o eventos internos no se envían a las SRNs. [No obstante, en algunos casos, AppsFlyer envía postbacks a SRNs incluso cuando no hay un ID de publicidad](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid).
+> * Las ad networks de clics no se ven afectadas, ya que utilizan sus propios identificadores de transacción, en lugar de identificadores de dispositivos, para autoatribuirse la información de los postbacks de eventos.
 
 </Accordion>
 
-## FAQ
+## Preguntas frecuentes
 
 <div id="how-does-retargeting-work-with-srns" />
 
-<Accordion title="How does retargeting work with SRNs?">
+<Accordion title="¿Cómo funciona el retargeting con SRNs?">
 
-Retargeting clicks from non-SRNs are easily identifiable by the existence of the `is_retargeting=true` parameter in the retargeting attribution link.  
-With SRNs, there is no similar indication. Instead, to enable attributing re-engagements from SRNs, AppsFlyer uses another logic:
+Los clics de retargeting desde redes no SRNs se identifican fácilmente por la existencia del parámetro `is_retargeting=true` en el enlace de atribución de retargeting.  
+Para las SRNs, no hay una indicación similar. En su lugar, para permitir la atribución de re-engagements desde SRNs, AppsFlyer utiliza otra lógica:
 
-* Pre-requisites:
-  * On the **App Settings** page, turn on **Enable retargeting.**
-  * In the **Active Integrations** page, select the SRN, and turn on **Retargeting**.
-* With each app launch, AppsFlyer queries the SRN about recent engagements of the device ID with campaign ads for the app.
-  * If the SRN responds back with engagement details, AppsFlyer validates the engagement is within the lookback window and beyond the minimum time between re-engagements.
-  * Validated engagements are recorded as re-engagements and attributed to the SRN.
+* Prerrequisitos:
+  * En la página de **Configuración de la Aplicación**, activa **Habilitar retargeting**.
+  * En la página de **Integraciones Activas**, selecciona la SRN y activa **Retargeting**.
+* Con cada apertura de la aplicación, AppsFlyer consulta a la SRN sobre interacciones recientes del ID de dispositivo con anuncios de campañas de la app.
+  * Si la SRN responde con detalles de la interacción, AppsFlyer verifica que esta interacción esté dentro del periodo de lookback y supere el tiempo mínimo entre re-engagements.
+  * Las interacciones validadas se registran como re-engagements y se atribuyen a la SRN.
 
 </Accordion>
 
 <div id="what-is-srn-mistargeting" />
 
-<Accordion title="What is SRN mistargeting?">
+<Accordion title="¿Qué es la mala segmentación de SRN?">
 
-SRN campaigns should target a specific audience, but this doesn't always happen: Non-users in user-acquisition campaigns and existing users in retargeting campaigns.
+Las campañas de SRN deberían dirigirse a una audiencia específica, pero esto no siempre ocurre: No usuarios en campañas de adquisición de usuarios y usuarios existentes en campañas de retargeting.
 
-If one SRN is used to run both user acquisition and retargeting campaigns, this can lead to user mistargeting. As a result, you pay for unintended traffic.
+Si se utiliza una SRN para ejecutar campañas de adquisición de usuarios y retargeting, esto puede llevar a una segmentación incorrecta de los usuarios. Como consecuencia, se paga por tráfico no deseado.
 
-**Scenario:** An SRN in the AppsFlyer platform is enabled for a user-acquisition campaign.
+**Escenario:** Una SRN en la plataforma de AppsFlyer está habilitada para una campaña de adquisición de usuarios.
 
-* After each app launch, AppsFlyer queries the SRN to check if the advertising ID (user) had a recent engagement.
-* If yes,
-  * SRN replies with the campaign name.
-  * AppsFlyer determines if it was the first launch (or not) and attributes accordingly:  
-    **First launch**: A new install is attributed to the campaign.  
-    **Second or later launch**: A retargeting event is attributed to the campaign.
+* Tras cada lanzamiento de la aplicación, AppsFlyer consulta a la SRN para verificar si el ID de publicidad (usuario) tuvo una interacción reciente.
+* Si la respuesta es sí,
+  * SRN responde con el nombre de la campaña.
+  * AppsFlyer determina si fue la primera apertura (o no) y atribuye en consecuencia:  
+    **Primera apertura**: Se atribuye una nueva instalación a la campaña.  
+    **Segunda apertura o posterior**: Un evento de retargeting se atribuye a la campaña.
 
-**Conclusion:** It is wasteful to get retargeting events from a user acquisition campaign.
+**Conclusión:** Es un desperdicio obtener eventos de retargeting a partir de una campaña destinada a adquisición de usuarios.
 
-#### Is mistargeting a problem?
+#### ¿La orientación incorrecta es un problema?
 
-AppsFlyer data analysts checked Meta ads **user acquisition** campaigns during a given month.
+Analistas de AppsFlyer revisaron campañas de **adquisición de usuarios** de Meta Ads durante un mes específico.
 
-* Retargeting was enabled.
-* In 30% of campaigns, at least 15% of targeted users were existing app users.
-* In 5% of campaigns, at least 40% were existing app users.
-* **Conclusion: In SRN user-acquisition campaigns, 1 in 10 targeted users is already an existing user.**
+* El retargeting estaba habilitado.
+* En un 30% de las campañas, al menos un 15% de los usuarios objetivo eran ya usuarios de la aplicación.
+* En un 5% de las campañas, al menos un 40% ya eran usuarios de la aplicación.
+* **Conclusión: En campañas de adquisición de usuarios SRN, 1 de cada 10 usuarios dirigidos ya es un usuario existente.**
 
 [![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
 
-#### Solving the mistargeting problem
+#### Solucionar el problema de orientación incorrecta
 
-**Basic solution:** Don't include existing app users in a user acquisition campaign.
+**Solución básica:** No incluir usuarios existentes en una campaña de adquisición de usuarios.
 
-* SRN will only target potential new users.
-* **Maximizes new user acquisition results for the same budget**.
-* Periodically (and manually) update the campaign, for example, once a month.
-* However, time gaps mean that existing users may be targeted in user-acquisition campaigns during the first month after they install an app.
+* SRN solo se enfocará en nuevos usuarios potenciales.
+* **Maximiza los resultados de adquirir nuevos usuarios con el mismo presupuesto**.
+* Actualiza la campaña de forma periódica (y manual), por ejemplo, una vez al mes.
+* Sin embargo, las brechas de tiempo pueden provocar que los usuarios existentes sean el objetivo de campañas de adquisición durante el primer mes después de instalar una app.
 
-<Anchor target="_blank" href="/marketers/docs/audiences-guide">**Audiences**</Anchor>, an AppsFlyer premium feature, lets you automatically send, on a daily basis, any segment of your user base to dozens of ad networks.
+<Anchor target="_blank" href="/marketers/es/docs/audiences-guide">**Audiences**</Anchor>, una característica premium de AppsFlyer, te permite enviar automáticamente, a diario, cualquier segmento de tu base de usuarios a docenas de ad networks.
 
-AppsFlyer research shows that solving mistargeting can have a dramatic impact on your marketing and user acquisition efforts.
+Investigaciones de AppsFlyer muestran que solucionar problemas de orientación errónea puede tener un impacto significativo en tus esfuerzos de marketing y adquisición de usuarios.
 
 </Accordion>
 
 <div id="why-is-the-original-url-field-empty-in-raw-data-reports" />
 
-<Accordion title="Why is the Original URL field empty in raw data reports?">
+<Accordion title="¿Por qué está vacío el campo de URL original en los reportes de raw data?">
 
-Click is performed in the SRN environment but without an AppsFlyer attribution link. Therefore, the click's associated Original URL data is not available to AppsFlyer.
+El clic se realiza en el entorno SRN pero sin un enlace de atribución de AppsFlyer. Por lo tanto, los datos de la URL original asociados al clic no están disponibles para AppsFlyer.
 
 </Accordion>
 
 <div id="dashboard-doesnt-show-srn-clicks-and-impressions" />
 
-<Accordion title="Dashboard doesn't show SRN clicks and impressions">
+<Accordion title="El dashboard no muestra los clics e impresiones de la SRN">
 
-Click is performed in the SRN environment but without an AppsFlyer attribution link. Therefore, some SRNs don't give click and impression data to AppsFlyer.
+El clic se realiza en el entorno SRN pero sin un enlace de atribución de AppsFlyer. Por ende, algunas SRNs no proporcionan datos de clics e impresiones a AppsFlyer.
 
-<Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup#cost-clicks-and-impressions">Meta Ads</Anchor> and <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-cost-and-ad-revenue">Google</Anchor> provide aggregated data to AppsFlyer.
+<Anchor target="_blank" href="/marketers/es/docs/meta-ads-integration-setup#cost-clicks-and-impressions">Meta Ads</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-cost-and-ad-revenue">Google</Anchor> proporcionan algunos datos agregados a AppsFlyer.
 
 </Accordion>
 
 <div id="can-agencies-configure-srn-campaigns" />
 
-<Accordion title="Can agencies configure SRN campaigns?">
+<Accordion title="¿Pueden las agencias configurar campañas SRN?">
 
-Yes, <Anchor target="_blank" href="/partners/docs/about-agency-accounts#self-reporting-ad-networks">see here about SRN configuration by Agencies</Anchor>.
+Sí, <Anchor target="_blank" href="/partners/es/docs/about-agency-accounts#redes-publicitarias-de-autoinforme">consulta aquí sobre la configuración de SRN por agencias</Anchor>.
 
 </Accordion>
 
 <div id="does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid" />
 
-<Accordion title="Can postbacks be sent when the advertising ID is not available?">
+<Accordion title="¿AppsFlyer envía postbacks por IDs de publicidad faltantes (IDFA/GAID)?">
 
-When advertising IDs contain an empty string (“”) or show the value ‘00000000-0000-0000-0000-000000000000’ (zeroed IDFAs),  postbacks for installs, app opens, or in-app events are not sent, except for the following scenarios:
+Cuando los IDs de publicidad contienen una cadena vacía (“”) o muestran el valor '00000000-0000-0000-0000-000000000000' (IDFAs vacíos), AppsFlyer no envía postbacks para instalaciones, aperturas de aplicaciones o eventos in-app, excepto en los siguientes escenarios:
 
-* Google Ads: As part of the integration for remarketing measurement with Google Ads, when double consent is not obtained, and a user performs an app open or in-app event,  `gbraid` and event info is sent to Google Ads (for the `additional_data_json` event).
-* Google Ads: On Android, when there’s no device ID, but the referrer value contains a `gclid` (for installs) or a re-engagement event contains a deep link with the `gclid` parameter, the `gclid` and event info is sent to Google Ads.
-* Meta: Facebook cookie or campaign IDs (on deep link or previous re-engagement) or AEM toggle enabled.
-* Snapchat and <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup">TikTok for Business—Advanced SRN</Anchor>: If an install is attributed to Snapchat or TikTok via probabilistic modeling and an in-app event tied to that install arrives, the postback is sent.
+* Google Ads: Como parte de la integración para la medición de remarketing con Google Ads, cuando un usuario de iOS que no ha dado consentimiento abre la aplicación o realiza un evento dentro de ella, AppsFlyer envía la información del `gbraid` y del evento a Google Ads (para el evento `additional_data_json`).
+* Google Ads: En Android, cuando no hay un ID de dispositivo pero el valor de referencia contiene un `gclid` (para instalaciones) o un evento de reactivación incluye un deep link con el parámetro `gclid`, AppsFlyer envía el `gclid` y la información del evento a Google Ads.
+* Meta: ID de cookies o de campañas de Facebook (en deep linking o en re-engagements previos) o si está habilitada la opción AEM.
+* Snapchat y TikTok (SRN avanzado): Si atribuimos a Snapchat o TikTok a través de PMOD y luego llega un evento in-app vinculado a esa instalación, enviaremos el postback.
 
-**Google Ads** `gbraid` **parameter:** An aggregated identifier generated by Google that identifies a group of devices and is referenced by the deep link.
+Parámetro **Google Ads** `gbraid`: Un identificador agregado generado por Google que identifica un grupo de dispositivos y al que se hace referencia a través del deep link.
 
-**Google Click ID (**`gclid` **parameter):** A parameter passed in the URL with ad clicks, that identifies the campaign and other click attributes that are associated with the ad. This is used for ad tracking and campaign attribution.
+**ID de clic de Google (parámetro** `gclid` ): Un parámetro incluido en la URL con los clics en el anuncio, que identifica la campaña y otros atributos relacionados con el clic asociados con el anuncio. Esto se utiliza para el seguimiento de anuncios y la atribución de campañas.
 
 </Accordion>
 
 <div id="are-clicks-and-impressions-from-srns-available-in-raw-data-reports" />
 
-<Accordion title="Are clicks and impressions from SRNs available in raw data reports?">
+<Accordion title="¿Los clics e impresiones de las SRNs están disponibles en los reportes de raw data?">
 
-No, clicks and impressions from SRNs are not shared in raw data reports. While SRN data is used for attribution, raw clicks and impressions are not included in reports. This applies to all SRNs, including TikTok, Snap, Meta, and Google.
+No, los clics e impresiones de las SRNs no se comparten en los reportes de raw data. Si bien los datos de SRNs se utilizan para la atribución, los raw data de clics e impresiones no se incluyen en los reportes. Esto se aplica a todas las SRNs, incluidas TikTok, Snap, Meta y Google.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HFM2MET40AFB84AW5N8GKWF3=srns-integrated-with-appsflyer h_01HFM2MET4ZNKEZBT3S74N8CMC=attribution h_01HFM2MET42R6C87XB5RWX9ABJ=how-does-attribution-work-with-srns how-does-attribution-work-with-advanced%E2%80%94srns=how-does-attribution-work-with-advanced-srns h_01HFM2MET4Q6WCSANH18VTGBQX=how-does-attribution-work-with-advanced-srns h_01HFM2MET4YQGN3GZKTTBRQ4HK=install-attribution h_01HFM2MET40Y9V8YGA20CCGVNN=install-attribution-examples h_01HFM2MET47BP3T07NTRVDWSJ3=example-a-assisted-attribution h_01HFM2MET4FY6SRS534NEA25WV=example-b-last-click-attribution h_01HFM2MET4ZJF290QNE3TPXQMA=attribution-windows h_01HFM2MET4ZA6WD6HX92JNFW7X=deep-linking-with-srns h_01HFM2MET4VZX943736W52V0ZJ=direct-deep-linking h_01HFM2MET4HSVHM0Q1C8D5Z279=example h_01HFM2MET4WGVMRJW7NJ7TF8GQ=deferred-deep-linking h_01HFM2MET4DGERZJ18A7CEFDS9=ios-implications h_01HFM2MET4SRX0YRZRMHBY6DKT=ios-145-srn-attribution h_01HFM2MET471M5J2XFE7G2Z6J3=note h_01HFM2MET42KNAMWE9S9BSF4PK=sending-event-postbacks-to-srns h_01HFM2MET4WJ6TMTXM03NFFCAG=note-1 h_01HFM2MET49FZ8QHDMA7H92BTE=faq h_01HFM2MET4VYGPWR98HMAWK4YP=how-does-retargeting-work-with-srns h_01HFM2MET4JGYTW6P1VGYMYGFS=what-is-srn-mistargeting h_01HFM2MET4C1HMWH715XP42ZAQ=is-mistargeting-a-problem h_01HFM2MET41CDCP8VNGR39YMCK=solving-the-mistargeting-problem h_01HFM2MET4DETEHT8PACHS6C6B=why-is-the-original-url-field-empty-in-raw-data-reports h_01HFM2MET48Y4ATGB1HNDGSFEP=dashboard-doesnt-show-srn-clicks-and-impressions h_01HFM2MET4JEA8BBGN564CQPYX=can-agencies-configure-srn-campaigns h_01HFM2MET42V7AVV2BPZGDRARV=does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid h_01JMJ79S862T4M96ECZPVRZVJJ=are-clicks-and-impressions-from-srns-available-in-raw-data-reports" />
+<div data-zendesk-anchors="srns-integrated-with-appsflyer=srns-integradas-con-appsflyer h_01HFM2MET40AFB84AW5N8GKWF3=srns-integradas-con-appsflyer attribution=atribuci%C3%B3n h_01HFM2MET4ZNKEZBT3S74N8CMC=atribuci%C3%B3n how-does-attribution-work-with-srns=c%C3%B3mo-funciona-la-atribuci%C3%B3n-con-las-srns h_01HFM2MET42R6C87XB5RWX9ABJ=c%C3%B3mo-funciona-la-atribuci%C3%B3n-con-las-srns how-does-attribution-work-with-advanced%E2%80%94srns=c%C3%B3mo-funciona-la-atribuci%C3%B3n-con-las-srns-avanzadas h_01HFM2MET4Q6WCSANH18VTGBQX=c%C3%B3mo-funciona-la-atribuci%C3%B3n-con-las-srns-avanzadas install-attribution=atribuci%C3%B3n-de-instalaci%C3%B3n h_01HFM2MET4YQGN3GZKTTBRQ4HK=atribuci%C3%B3n-de-instalaci%C3%B3n install-attribution-examples=ejemplos-de-atribuci%C3%B3n-de-instalaciones h_01HFM2MET40Y9V8YGA20CCGVNN=ejemplos-de-atribuci%C3%B3n-de-instalaciones h_01HFM2MET47BP3T07NTRVDWSJ3=example-a-assisted-attribution h_01HFM2MET4FY6SRS534NEA25WV=example-b-last-click-attribution attribution-windows=ventanas-de-atribuci%C3%B3n h_01HFM2MET4ZJF290QNE3TPXQMA=ventanas-de-atribuci%C3%B3n deep-linking-with-srns=deep-linking-con-srns h_01HFM2MET4ZA6WD6HX92JNFW7X=deep-linking-con-srns h_01HFM2MET4VZX943736W52V0ZJ=direct-deep-linking h_01HFM2MET4HSVHM0Q1C8D5Z279=ejemplo h_01HFM2MET4WGVMRJW7NJ7TF8GQ=deferred-deep-linking ios-implications=implicaciones-para-ios h_01HFM2MET4DGERZJ18A7CEFDS9=implicaciones-para-ios h_01HFM2MET4SRX0YRZRMHBY6DKT=ios-145-srn-attribution h_01HFM2MET471M5J2XFE7G2Z6J3=nota h_01HFM2MET42KNAMWE9S9BSF4PK=sending-event-postbacks-to-srns h_01HFM2MET4WJ6TMTXM03NFFCAG=nota-1 faq=preguntas-frecuentes h_01HFM2MET49FZ8QHDMA7H92BTE=preguntas-frecuentes h_01HFM2MET4VYGPWR98HMAWK4YP=how-does-retargeting-work-with-srns h_01HFM2MET4JGYTW6P1VGYMYGFS=what-is-srn-mistargeting is-mistargeting-a-problem=la-orientaci%C3%B3n-incorrecta-es-un-problema h_01HFM2MET4C1HMWH715XP42ZAQ=la-orientaci%C3%B3n-incorrecta-es-un-problema solving-the-mistargeting-problem=solucionar-el-problema-de-orientaci%C3%B3n-incorrecta h_01HFM2MET41CDCP8VNGR39YMCK=solucionar-el-problema-de-orientaci%C3%B3n-incorrecta h_01HFM2MET4DETEHT8PACHS6C6B=why-is-the-original-url-field-empty-in-raw-data-reports h_01HFM2MET48Y4ATGB1HNDGSFEP=dashboard-doesnt-show-srn-clicks-and-impressions h_01HFM2MET4JEA8BBGN564CQPYX=can-agencies-configure-srn-campaigns h_01HFM2MET42V7AVV2BPZGDRARV=does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid h_01JMJ79S862T4M96ECZPVRZVJJ=are-clicks-and-impressions-from-srns-available-in-raw-data-reports" />

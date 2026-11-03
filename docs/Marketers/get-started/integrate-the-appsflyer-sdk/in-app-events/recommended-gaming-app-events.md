@@ -1,5 +1,5 @@
 ---
-title: Recommended gaming app events
+title: Eventos de aplicación recomendados para gaming
 metadata:
   keywords:
     - Advertisers
@@ -14,233 +14,232 @@ x-zendesk:
     - Marketers
     - PC & Console Attribution
   created_at: '2021-04-06T14:46:54Z'
-  edited_at: '2026-02-25T13:58:31Z'
+  edited_at: '2026-08-12T12:01:26Z'
   id: 360018941117
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360018941117-Recommended-gaming-app-events
+  url: https://support.appsflyer.com/hc/es/articles/360018941117
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your gaming app.
+> **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de gaming.
 
-## <Image alt="InApp_Events_games.png" src="https://files.readme.io/ee2d46ddf11a6a6cacc95399ffd778d6613ecdd905d237cd971073e095cada5b-20659444711953.png" width="100px" /> Gaming
+## <Image alt="Eventos_en_la_aplicación_juegos.png" src="https://files.readme.io/ee2d46ddf11a6a6cacc95399ffd778d6613ecdd905d237cd971073e095cada5b-20659444711953.png" width="100px" /> Gaming
 
-Gaming apps include games such as arcade, strategy, educational games, and gambling. The typical events that we suggest recording are in-app purchases, sharing on social media, and inviting friends. In addition, you can include events such as leveling up and completing an in-game tutorial.
+Las aplicaciones de gaming incluyen juegos de tipo arcade, estrategia, educativos y juegos de azar. Los eventos típicos que recomendamos registrar son las compras in-app, las instancias en que los usuarios comparten en redes sociales y las invitaciones a amigos. Además, puedes incluir eventos como subir de nivel y completar un tutorial en el juego.
 
-Recording events can help you determine:
+Registrar estos eventos puede ayudarte a determinar:
 
-* What offers users purchase the most
-* How engaged users are
-* How many users post shares on social media
-* How many users invite friends to install the app
+* Qué ofertas los usuarios compran más.
+* Cuán involucrados están los usuarios.
+* Cuántos usuarios publican contenido compartido en las redes sociales.
+* Cuántos usuarios invitan a amigos a instalar la aplicación.
 
-These events are also relevant for gaming apps that run on the following platforms:
+Estos eventos también son relevantes para aplicaciones de gaming compatibles con las siguientes plataformas:
 
 * Android Smart TV
 * Apple TV (tvOS)
 * Amazon Fire TV
 * Xbox
-* Windows mobile devices
+* Dispositivos móviles con Windows
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=gaming">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=gaming&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">**AppsFlyer developer hub**</Anchor>.
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=gaming">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=gaming&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Puedes encontrar instrucciones detalladas para tu desarrollador en el **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.**
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Flowchart_for_recommended_events gaming_app_user_journey](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
+[![Flowchart_for_recommended_events recorrido del usuario de la app de gaming](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the gaming vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que son típicas de la vertical de gaming. Cada estructura incluye un nombre de evento predefinido y los parámetros del evento sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Acceso (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Disparador**
 
-Whenever the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Learn how many users installed the app and completed the signup process, and what signup methods your users prefer.
+Descubrir cuántos usuarios instalaron la aplicación y completaron el proceso de registro, y qué métodos de registro prefieren tus usuarios.
 
-**Trigger**
+**Disparador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | email, Facebook |
+| af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
 
 <div id="purchase-af_purchase" />
 
-<Accordion title="Purchase (af_purchase)">
+<Accordion title="Compra (af_purchase)">
 
-**Purpose**
+**Finalidad**
 
-Many gaming apps allow users to purchase items, for example, coins, gems, or weapons. Recording these purchases can help you:
+Muchas aplicaciones de gaming permiten a los usuarios comprar artículos, por ejemplo, monedas, gemas o armas. Registrar estas compras puede ayudarte a:
 
-* Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
-* Determine what offers are most popular with your users
-* Cross-reference campaigns with purchased items in order to optimize campaign targeting
+* Determinar el valor de vida útil (LTV) de tus usuarios y el ROI de tus campañas en todas las agencias y redes de publicidad.
+* Determinar qué ofertas son las más populares entre tus usuarios.
+* Establecer referencias cruzadas entre las campañas y los artículos comprados a fin de optimizar el targeting de las campañas.
 
-To record and validate this event, see <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">Purchase and subscription validation</Anchor>.
+Para reportar un evento que incluye varios elementos, haz clic <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">aquí</Anchor>.
 
-**Trigger**
+**Disparador**
 
-When the user lands on the thank you page after a successful purchase
+Cuando el usuario llega a la página de agradecimiento después de una compra exitosa.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Estimated revenue from the purchase | 199.99 |
-| af\_currency | Currency code | THB, USD |
-| af\_quantity | Number of items purchased | 2 |
-| af\_content\_id | Item ID | 001, 092 |
-| af\_order\_id | Order ID | 9277 |
-| af\_receipt\_id | Receipt ID | 9277 |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Los ingresos estimados de la compra | 199.99 |
+| af\_currency | Código de moneda | THB, USD |
+| af\_quantity | Cantidad de artículos comprados | 2 |
+| af\_content\_id | ID del artículo | 001, 092 |
+| af\_order\_id | ID del pedido | 9277 |
+| af\_receipt\_id | ID del recibo | 9277 |
 
 </Accordion>
 
 <div id="level-achieved-af_level_achieved" />
 
-<Accordion title="Level achieved (af_level_achieved)">
+<Accordion title="Nivel alcanzado (af_level_achived)">
 
-**Purpose**
+**Finalidad**
 
-One of the main goals of users is to level up in games. Leveling up often unlocks new features and stages in the game and this encourages users to keep playing. Recording the level of achievement can help you:
+Una de las principales metas de los usuarios es subir de nivel en los juegos. Con frecuencia, cuando se sube de nivel, se obtiene acceso a características y fases nuevas del juego, y esto alienta a los usuarios a seguir jugando. Registrar el nivel de logro puede ayudarte a:
 
-* Determine which campaigns generate the most active users
-* See what type of users are most active and engaged
-* Associate overall user activity with dimensions such as revenue
+* Determinar qué campañas generan mayor actividad por parte de los usuarios.
+* Ver qué tipos de usuarios son los más activos e involucrados.
+* Asociar la actividad general de los usuarios con dimensiones como los ingresos.
 
-**Trigger**
+**Disparador**
 
-When the user lands on the level completion page
+Cuando el usuario llega a la página de finalización de nivel.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_level | Level the user achieved | 3 |
-| af\_score | Score associated with user's achievement | 500 |
+| af\_level | Nivel alcanzado por el usuario | 3 |
+| af\_score | Puntuación asociada con el logro del usuario | 500 |
 
 </Accordion>
 
 <div id="tutorial-completion-af_tutorial_completion" />
 
-<Accordion title="Tutorial completion (af_tutorial_completion)">
+<Accordion title="Finalización del tutorial (af_tutorial_completion)">
 
-**Purpose**
+**Finalidad**
 
-Tutorials provide your users with guidance on how to use the app. Recording this event can help you determine:
+Los tutoriales brindan a tus usuarios orientación sobre cómo usar la aplicación. Registrar este evento puede ayudarte a determinar:
 
-* What topics users might have trouble with
-* What tutorials are not performing well
+* Con qué temas pueden tener problemas los usuarios.
+* Qué tutoriales no dan buenos resultados.
 
-**Trigger**
+**Disparador**
 
-* When a user completes the tutorial
-* When a user starts the tutorial but quits without completing it
+* Cuando un usuario finaliza el tutorial
+* Cuando un usuario comienza el tutorial, pero lo abandona sin finalizarlo
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_success | Whether the user completed the tutorial | true |
-| af\_tutorial\_id | Tutorial ID | 3 |
-| af\_content | Tutorial name | Getting started |
+| af\_success | Si el usuario completó el tutorial. | Verdadero |
+| af\_tutorial\_id | ID del tutorial. | 3 |
+| af\_content | Nombre del tutorial. | Primeros pasos |
 
 </Accordion>
 
 <div id="share-af_share" />
 
-<Accordion title="Share (af_share)">
+<Accordion title="Compartir (af_share)">
 
-**Purpose**
+**Finalidad**
 
-Users like to share their achievements in games on social media sites. Sharing creates brand awareness and can drive more users to download and install your app. Recording this event can help you understand when users are most likely to share the app with their friends. Learn more about <Anchor target="_blank" href="/marketers/docs/user-invite-attribution">recording shares and invites</Anchor>.
+A los usuarios les gusta compartir sus logros en juegos a través de los sitios de redes sociales. Compartir este contenido genera conocimiento de marca y puede impulsar a que más usuarios descarguen e instalen tu aplicación. Registrar este evento te ayuda a saber cuándo es más probable que los usuarios compartan la aplicación con sus amigos. Aprender más sobre <Anchor target="_blank" href="/marketers/es/docs/user-invite-attribution">cómo registrar el contenido compartido y las invitaciones</Anchor>.
 
-**Trigger**
+**Disparador**
 
-When a user successfully posts a share on social media
+Cuando un usuario publica satisfactoriamente contenido compartido en las redes sociales.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_description | Reason for sharing on social media, for example, a new high score or leveling up | New high score, Level up, Game won |
-| platform | Platform used to post shares | Facebook, WhatsApp, email |
+| af\_description | Motivo para compartir en las redes sociales, p. ej., lograr nueva puntuación alta o subir de nivel. | Logar nueva puntuación alta, Subir de nivel, Juego ganado |
+| Identificador de origen | Plataforma utilizada para publicar contenido compartido | Facebook, WhatsApp, correo electrónico |
 
 </Accordion>
 
 <div id="invite-af_invite" />
 
-<Accordion title="Invite (af_invite)">
+<Accordion title="Invitar (af_invite)">
 
-**Purpose**
+**Finalidad**
 
-Learn which social media sites users send invites to, and how many users invited their friends to download and install the app.
+Descubre en qué sitios de redes sociales envían invitaciones los usuarios y cuántos usuarios invitaron a sus amigos a descargar e instalar la aplicación.
 
-**Trigger**
+**Disparador**
 
-When the user successfully invited a friend to download and install the app
+Cuando el usuario invitó con éxito a un amigo a descargar e instalar la aplicación.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_description | Context of invitation | Try this app |
+| af\_description | Contexto de la invitación | Prueba esta aplicación |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides an event structure that includes a custom event name and the suggested event parameter to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una estructura de evento que incluye un nombre de evento personalizado y los parámetros del evento sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="bonus-claimed-bonus_claimed" />
 
-<Accordion title="Bonus claimed (bonus_claimed)">
+<Accordion title="Bonificación reclamada (bonus_claimed)">
 
-**Purpose**
+**Finalidad**
 
-See how many users claimed bonuses that are offered to them, and associate claimed bonuses with user activity and engagement.
+Mira cuántos usuarios reclamaron las bonificaciones que se les ofrecen y asocia las bonificaciones reclamadas con la actividad y el engagement del usuario.
 
-**Trigger**
+**Disparador**
 
-When the user claims a bonus and it gets updated to their account
+Cuando el usuario solicita una bonificación y se actualiza en su cuenta.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| bonus\_type | Type of bonus user claims | Coins |
+| bonus\_type | Tipo de bonificación que el usuario reclama | Monedas |
 
 </Accordion>
 
-<div data-zendesk-anchors="gaming=-gaming h_01HGTAVT1XSEY0TS9T2R1H1KXV=-gaming h_01HGTAVT1XTXYHV1MTFR20BR6J=important h_01HGTAVT1X4QQS6GREKC0N0VK6=recommended-structures-for-predefined-events h_01HGTAVT1XAAPGHBTXE6DT9927=login-af_login h_01HGTAVT1X4V41YCXBEXTV0KFR=complete-registration-af_complete_registration h_01HGTAVT1X64710WYNZHTHD7R5=purchase-af_purchase h_01HGTAVT1X24N9J3BMDHV3S54M=level-achieved-af_level_achieved h_01HGTAVT1X5RN4A1MAE0BFB3B4=tutorial-completion-af_tutorial_completion h_01HGTAVT1X952BV07KGZHK68P6=share-af_share h_01HGTAVT1X7KSTYXZGAKEPCXZM=invite-af_invite h_01HGTAVT1YXGTF0E5YQX1C3CJN=recommended-structures-for-custom-events h_01HGTAVT1YNH0YAFYX4PR7D6DH=bonus-claimed-bonus_claimed" />
+<div data-zendesk-anchors="gaming=-gaming h_01HGTAVT1XSEY0TS9T2R1H1KXV=-gaming h_01HGTAVT1XTXYHV1MTFR20BR6J=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAVT1X4QQS6GREKC0N0VK6=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAVT1XAAPGHBTXE6DT9927=login-af_login h_01HGTAVT1X4V41YCXBEXTV0KFR=complete-registration-af_complete_registration h_01HGTAVT1X64710WYNZHTHD7R5=purchase-af_purchase h_01HGTAVT1X24N9J3BMDHV3S54M=level-achieved-af_level_achieved h_01HGTAVT1X5RN4A1MAE0BFB3B4=tutorial-completion-af_tutorial_completion h_01HGTAVT1X952BV07KGZHK68P6=share-af_share h_01HGTAVT1X7KSTYXZGAKEPCXZM=invite-af_invite recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAVT1YXGTF0E5YQX1C3CJN=estructuras-recomendadas-para-eventos-personalizados h_01HGTAVT1YNH0YAFYX4PR7D6DH=bonus-claimed-bonus_claimed" />

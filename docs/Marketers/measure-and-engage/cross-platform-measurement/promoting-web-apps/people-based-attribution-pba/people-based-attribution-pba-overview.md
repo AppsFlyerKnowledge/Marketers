@@ -1,5 +1,5 @@
 ---
-title: People-Based Attribution (PBA)—Overview
+title: 'Atribución basada en las personas (PBA): Descripción general'
 metadata:
   keywords:
     - People Based Analysis
@@ -16,61 +16,60 @@ x-zendesk:
     - Marketers
     - Cross-Platform Measurement
   created_at: '2019-08-19T11:53:56Z'
-  edited_at: '2024-02-22T07:54:54Z'
+  edited_at: '2026-08-12T12:11:42Z'
   id: 360002274017
-  locale: en-us
+  locale: es
   section: People Based Attribution (PBA)
   section_id: 43560588808721
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360002274017-People-Based-Attribution-PBA-Overview
+  url: https://support.appsflyer.com/hc/es/articles/360002274017
 ---
-> **At a glance:** People-Based Attribution (PBA) provides a unified view of customer journeys across channels, platforms, and devices.
+> **De un vistazo:** La atribución basada en las personas (PBA) proporciona una visión unificada de las trayectorias de los clientes a través de canales, plataformas y dispositivos.
 
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 
-## PBA principles
+## Los principios de la PBA
 
-* PBA consolidates website and mobile app data to provide a holistic view of campaign performance across a brand’s digital properties. Advertisers use PBA to understand customer journeys in terms of people, instead of devices.
-* PBA data—on the PBA dashboards and in raw data reports—is used for marketing analyses and campaign optimization.
-* Data consisting of website visits and user events is acquired using <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide">SDKs and/or APIs.</Anchor>
-* For each visit to the website: the media source responsible for bringing the visit is determined. Any resulting event (conversion) is <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules">attributed</Anchor> to the media source causing the visit.
+* La PBA consolida los datos de los sitios web y las aplicaciones móviles para proporcionar una visión holística del rendimiento de la campaña a través de las propiedades digitales de una marca. Los anunciantes usan la PBA para entender las trayectorias de los clientes en términos de personas, en lugar de dispositivos.
+* Los datos de la PBA, en los paneles de control de la PBA y en los reportes de raw data, se utilizan para los análisis de marketing y la optimización de las campañas.
+* Los datos consisten en las visitas a sitios web y los eventos de usuarios que se adquieren usando <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide">SDK o API</Anchor>.
+* Para cada visita al sitio web: se determina la fuente de medios responsable de llevar la visita. Cualquier evento resultante (conversión) se <Anchor target="_blank" href="/marketers/es/docs/pba-media-source-attribution-rules">atribuye</Anchor> a la fuente de medios que causó la visita.
 
-### PBA analytics dashboards and raw data
+### Paneles de control analíticos y raw data de la PBA
 
-* PBA data is presented via analytics dashboards and reports:
-  * Website Attribution
-  * Web-Assisted Installs
-  * Raw data reports
-* Data in the dashboards <Anchor target="_blank" href="/marketers/docs/using-pba-dashboards">filtered and grouped</Anchor> using dimensions like mobile platform, media channel, and media type, This enables you to drill down and dissect the data.
+* Los datos de la PBA se presentan a través de reportes y paneles de control analíticos:
+  * Atribución del sitio web
+  * Instalaciones asistidas por web
+  * Reportes de raw data
+* Los datos en los paneles de control <Anchor target="_blank" href="/marketers/es/docs/using-pba-dashboards">se filtran y agrupan</Anchor> usando dimensiones como plataforma móvil, canal de medios y tipo de medios.
 
-### <Anchor target="_blank" href="/marketers/docs/pba-website-attribution-dashboard">Website Attribution</Anchor>
+### <Anchor target="_blank" href="/marketers/es/docs/pba-website-attribution-dashboard">Atribución del sitio web</Anchor>
 
-[![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
+[![WebsiteAttributionTable](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
 
-Analyze web traffic sources and marketing campaigns driving user visits and conversions on your website. Uncover performance differences down to the ad level. Supports all AppsFlyer query params in the link without the need to redirect users to AppsFlyer servers.
+Analiza las fuentes de tráfico web y las campañas de marketing que impulsan las visitas de los usuarios y las conversiones en tu sitio web. Descubre las diferencias de rendimiento hasta el nivel de anuncio. Admite todos los parámetros de consulta de AppsFlyer en el enlace sin necesidad de redirigir a los usuarios a los servidores de AppsFlyer.
 
-### <Anchor target="_blank" href="/marketers/docs/pba-web-assisted-installs">Web-Assisted Installs</Anchor>
+### <Anchor target="_blank" href="/marketers/es/docs/pba-web-assisted-installs">Instalaciones asistidas por web</Anchor>
 
 [![AppsFlyer-Web-to-App_us.en.gif](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)
 
-Use Web-Assisted Installs to examine the impact and results of your web marketing efforts on driving mobile app installs.
+Usa las instalaciones asistidas por web para examinar el impacto y los resultados de tus esfuerzos de marketing web para impulsar las instalaciones de aplicaciones móviles.
 
-* Gain insights as to how different media types (paid, owned, earned), media channels (direct, social media, organic search), and media sources interact and contribute to your overall user acquisition efforts.
-* Attribute organic installs driven by your web efforts.
-* Examine the interaction between the web efforts and non-organic installs.
+* Obtén insights sobre cómo interactúan los diferentes tipos de medios (pagados, propios, obtenidos), los canales de medios (directos, redes sociales, búsqueda orgánica) y las fuentes de medios, y cómo contribuyen a tus esfuerzos generales de adquisición de usuarios.
+* Atribuye instalaciones orgánicas impulsadas por tus esfuerzos web.
+* Examina la interacción entre los esfuerzos web y las instalaciones no orgánicas.
 
-### <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">Raw data</Anchor>
+### <Anchor target="_blank" href="/marketers/es/docs/pba-raw-data-reports">Raw Data</Anchor>
 
-Raw data reports are available via Data Locker. They offer in-depth insights and includes the media source attributed/responsible for bringing the user to the website.
+Los reportes de raw data están disponibles a través de Data Locker. El raw data ofrece insights en profundidad e incluye la fuente de medios atribuida/responsable de traer al usuario al sitio web.
 
-* **Web visits:** visits to the website
-* **Web events**: actions performed on the website like subscribe or purchase
-* **Web-Assisted Installs** journeys are provided in full.
-* BI tools are used to analyze the data for additional insights.
-* <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">Learn more about PBA raw data</Anchor>.
+* **Visitas web:** visitas al sitio web
+* **Eventos web**: acciones realizadas en el sitio web como suscribirse o comprar.
+* Las trayectorias de la **ruta de conversión** y de las **instalaciones asistidas por web** se proporcionan en su totalidad.
+* Las herramientas de Business Intelligence se utilizan para analizar los datos y así obtener insights adicionales.
+* <Anchor target="_blank" href="/marketers/es/docs/pba-raw-data-reports">Saber más sobre raw data de PBA</Anchor>.
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/onboarding-guide-to-people-based-attribution">Onboarding guide to PBA</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/onboarding-guide-to-people-based-attribution">Guía de onboarding de PBA</Anchor>
 
-<div data-zendesk-anchors="01ECF26CMJ8TB4ADT6VN277EMQ=pba-principles 01ECF26CMJDA1HBC22DGRWY2EA=pba-analytics-dashboards-and-raw-data 01ECF26CMK0T5C9JKQ0SYMXQVM=website-attribution webassisted-installs=web-assisted-installs 01ECF26CMKDS16XWRBQ1SDAX2Q=web-assisted-installs 01ECF26CMM4KHX9W94DND4BY8C=raw-data h_01HE0Y2KTXS06WHN57MQ91AD09=see-also" />
+<div data-zendesk-anchors="pba-principles=los-principios-de-la-pba 01ECF26CMJ8TB4ADT6VN277EMQ=los-principios-de-la-pba pba-analytics-dashboards-and-raw-data=paneles-de-control-anal%C3%ADticos-y-raw-data-de-la-pba 01ECF26CMJDA1HBC22DGRWY2EA=paneles-de-control-anal%C3%ADticos-y-raw-data-de-la-pba website-attribution=atribuci%C3%B3n-del-sitio-web 01ECF26CMK0T5C9JKQ0SYMXQVM=atribuci%C3%B3n-del-sitio-web webassisted-installs=instalaciones-asistidas-por-web 01ECF26CMKDS16XWRBQ1SDAX2Q=instalaciones-asistidas-por-web 01ECF26CMM4KHX9W94DND4BY8C=raw-data h_01HE0Y2KTXS06WHN57MQ91AD09=consulta-tambi%C3%A9n" />

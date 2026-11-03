@@ -1,5 +1,5 @@
 ---
-title: Set up ROI360 cost API to measure cost data
+title: Configurar la API de costos de ROI360 para medir los datos de costos
 metadata:
   keywords:
     - ROI
@@ -17,204 +17,203 @@ x-zendesk:
     - Agencies
     - ROI360
   created_at: '2020-05-19T12:50:13Z'
-  edited_at: '2026-10-22T11:50:52Z'
+  edited_at: '2026-10-23T01:09:23Z'
   id: 360008850257
-  locale: en-us
+  locale: es
   section: Cost aggregation
   section_id: 6551029483281
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360008850257-Set-up-ROI360-cost-API-to-measure-cost-data
+  url: https://support.appsflyer.com/hc/es/articles/360008850257
 ---
-> **At a glance:** Get aggregate marketing cost data, including cost-related LTV (Lifetime Value) performance metrics, using Cost API at the media source account level.
+> **At a glance:** Obtén datos de costo de marketing agregados, incluidos datos de rendimiento de LTV (Lifetime value) relacionados con el costo, mediante la API de Costo a nivel de cuenta de fuente de medios.
 
-## Overview
+## Resumen
 
-ROI360 provides aggregate marketing cost data, including cost-related LTV performance metrics, at the ad account level.
+ROI360 proporciona datos de costo de marketing agregados, incluidas las métricas de rendimiento de LTV relacionadas con el costo, a nivel de cuenta publicitaria.
 
-Cost integrations are configured in **Cost settings**, where each integration connects to one media source account and measures the cost of all the apps you select. Depending on the ad network, this can include mobile, CTV, PC and console, and web apps. Connect each media source account once to enable cost for multiple apps.
+Las integraciones de costos se configuran en **Configuración de costos**, donde cada integración se conecta a una cuenta de fuente de medios y mide el costo de todas las aplicaciones que selecciones. Según la ad network, esto puede incluir apps móviles, de CTV, para PC y consola, y web. Conecta cada cuenta de fuente de medios una vez para habilitar el costo en varias aplicaciones.
 
-Cost integrations can also be created and edited from the **Cost** tab in Partner Marketplace. Either entry point produces the same account-level integration.
+También puedes crear y editar integraciones de costos desde la pestaña **Costo** de Partner Marketplace. Ambos puntos de entrada generan la misma integración a nivel de cuenta.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Access to **Cost settings** is controlled by role permissions. If you can't open **Cost settings**, ask your administrator to update your role permissions on the **User Management** page. The relevant capability is **Cost Connections**.
+> El acceso a **Configuración de costos** está controlado por permisos de rol. Si no puedes abrir **Configuración de costos**, pídele a tu administrador que actualice los permisos de tu rol en la página **Gestión de usuarios**. La capacidad relevante es **Conexiones de costos**.
 
-## Create a new API cost integration
+## Crear una nueva integración de costos mediante API
 
-Every cost integration follows the same two steps: authenticate with the media source, then name the integration and select the apps it covers. Some media sources require one additional step so AppsFlyer can match your apps to the identifiers used in their system.
+Todas las integraciones de costos siguen los mismos dos pasos: autenticarte con la fuente de medios y, después, asignar un nombre a la integración y seleccionar las aplicaciones que cubre. Algunas fuentes de medios requieren un paso adicional para que AppsFlyer pueda asociar tus aplicaciones con los identificadores que se usan en su sistema.
 
-After initial configuration, cost data appears in the dashboard with the next data pull, scheduled every four hours, six times a day.
+Después de la configuración inicial, los datos de costo aparecen en el Dashboard con la siguiente extracción de datos, programada cada cuatro horas, seis veces al día.
 
 <div id="h_01M43Y9WQ8WCXWQ0S9ZAT59CWW" />
 
-<Accordion title="Step 1: Provide credentials">
+<Accordion title="Paso 1: Proporciona las credenciales">
 
-1. In AppsFlyer, from the side menu, select **Settings** > **ROI360** > **Cost settings**.
-2. Click **+ New integration**, select the media source, then click **Next**.
-3. Depending on the media source, you'll see one of the following:
-   * **Login:** log in with your ad network account and complete the authentication flow. AppsFlyer validates the connection and names the integration after the account you connected.
-   * **Credentials:** provide static credentials, complete the fields shown for that media source, for example a username and password, or an API key. Field names vary by media source. Static credentials aren't validated at setup.
-4. Rename the integration if you'd like something different, or keep the default name. The name has a 50-character maximum, and it's a label that helps you identify the integration later, which matters if you create more than one for the same media source.
+1. En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **ROI360** > **Configuración de costos**.
+2. Haz clic en **+ Nueva integración**, selecciona la fuente de medios y, después, haz clic en **Siguiente**.
+3. Según la fuente de medios, verás una de las siguientes opciones:
+   * **Inicio de sesión:** inicia sesión con tu cuenta de ad network y completa el flujo de autenticación. AppsFlyer valida la conexión y asigna a la integración el nombre de la cuenta que has conectado.
+   * **Credenciales:** proporciona credenciales estáticas y completa los campos que se muestran para esa fuente de medios, por ejemplo, un nombre de usuario y una contraseña, o una clave de la API. Los nombres de los campos varían según la fuente de medios. Las credenciales estáticas no se validan durante la configuración.
+4. Cambia el nombre de la integración si quieres otro distinto o conserva el nombre predeterminado. El nombre tiene un máximo de 50 caracteres y es una etiqueta que te ayuda a identificar la integración más adelante, lo cual es importante si creas más de una para la misma fuente de medios.
 
 </Accordion>
 
 <div id="h_01M43Y9WQ8HK1N0GJNW5BH4MPZ" />
 
-<Accordion title="Step 2: Select apps">
+<Accordion title="Paso 2: Selecciona apps">
 
-Click **Select apps** and choose the apps this integration covers. You can select any app you have permission to access, mobile, web, CTV, or any other platform you use to run your campaigns. Click **Apply**, then **Next**.
+Haz clic en **Seleccionar aplicaciones** y elige las aplicaciones que cubre esta integración. Puedes seleccionar cualquier app a la que tengas permiso de acceso, ya sea móvil, web, CTV o cualquier otra plataforma que uses para ejecutar tus campañas. Haz clic en **Aplicar** y, luego, en **Siguiente**.
 
-If the media source requires an additional step, continue to [Step 3](#additional-steps-specific-media-sources-only) below. Otherwise, click **Save integration**.
+Si la fuente de medios requiere un paso adicional, continúa con el [paso 3](#additional-steps-specific-media-sources-only) a continuación. De lo contrario, haz clic en **Guardar integración**.
 
 </Accordion>
 
 <div id="additional-steps-specific-media-sources-only" />
 
-<Accordion title="Step 3: Additional steps (specific media sources only)">
+<Accordion title="Paso 3: Pasos adicionales (solo para fuentes de medios específicas)">
 
-Some media sources require one additional step after you select apps. Add either mapping to package names and bundle IDs, or to site IDs.
+Algunas fuentes de medios requieren un paso adicional después de seleccionar las aplicaciones. Añade la asignación a nombres de paquete e ID de bundle, o a ID de sitio.
 
-#### Map apps to package names or bundle IDs
+#### Asigna aplicaciones a nombres de paquete o ID de paquete
 
-There are media sources that identify apps by Android package name or iOS bundle ID, for example, AppLovin.
+Hay fuentes de medios que identifican las aplicaciones por el nombre de paquete de Android o el ID de paquete de iOS, por ejemplo, AppLovin.
 
-As part of the cost configuration, after you select your apps, enter the exact package name or bundle ID for each app, as it appears in the media source's system. Every app requires a mapping value. Click **Save integration**.
+Como parte de la configuración de costos, después de seleccionar las aplicaciones, introduce el nombre de paquete o el ID de paquete exactos de cada aplicación, tal como aparecen en el sistema de la fuente de medios. Cada aplicación requiere un valor de asignación. Haz clic en **Guardar integración**.
 
-#### Map apps to site IDs
+#### Asigna aplicaciones a ID de sitio
 
-For media sources that identify apps by site ID, for example, Liftoff.
+Para las fuentes de medios que identifican las aplicaciones por ID de sitio, por ejemplo, Liftoff.
 
-After you select your apps, choose a default site ID parameter. It applies to every app in the integration. Available patterns:
+Después de seleccionar las aplicaciones, elige un parámetro predeterminado de ID de sitio. Se aplica a cada aplicación de la integración. Patrones disponibles:
 
 * `${APP_ID}`
 * `${APP_NAME}`
 * `${APP_ID}_${APP_NAME}`
 * `${APP_NAME}_${APP_ID}`
 
-To override the default for a specific app, select a different parameter from that app's **Site ID** dropdown. Use this when an app's site ID is formatted differently in the media source's system. Click **Save integration**.
+Para anular el valor predeterminado de una aplicación concreta, selecciona un parámetro distinto en el menú desplegable de **ID de sitio** de esa aplicación. Úsalo cuando el ID de sitio de una aplicación tenga un formato diferente en el sistema de la fuente de medios. Haz clic en **Guardar integración**.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Site ID mapping makes sure the AppsFlyer attribution link site ID macros match the value the media source expects. If your attribution link uses macros that differ from the mapping you select, site ID data won't populate correctly.
+> La asignación del ID de sitio garantiza que las macros de ID de sitio del enlace de atribución de AppsFlyer coincidan con el valor que espera la fuente de medios. Si tu enlace de atribución usa macros distintas de la asignación que seleccionaste, los datos del ID de sitio no se completarán correctamente.
 
-#### Select which ad account to pull cost from
+#### Selecciona de qué cuenta publicitaria extraer el costo
 
-For some media sources, like TikTok, one login can have access to several ad accounts. After you log in to the media source, you need to select the specific ad account yourself.
+En algunas fuentes de medios, como TikTok, un mismo login puede tener acceso a varias cuentas publicitarias. Después de iniciar sesión en la fuente de medios, tienes que seleccionar tú mismo la cuenta publicitaria concreta.
 
 </Accordion>
 
-## Edit and delete an integration
+## Editar y eliminar una integración
 
-This works the same way for every integration, regardless of which entry point, **Cost settings** or the **Cost** tab, you used to create it.
+Esto funciona igual en todas las integraciones, independientemente del punto de entrada que usaras para crearla: **Configuración de costos** o la pestaña **Costo**.
 
 <div id="h_01M43Y9WQ804YMN8TZ7HGYSQH7" />
 
-<Accordion title="Edit a cost integration">
+<Accordion title="Editar una integración de costos">
 
-1. In AppsFlyer, from the side menu, select **Settings** > **ROI360** > **Cost settings**.
-2. Click the media source you want to edit.
-3. In the media source page, click the specific account you want to edit.
-4. On the **Apps** tab, click **Edit** to add or remove apps, then save your changes.
+1. En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **ROI360** > **Configuración de costos**.
+2. Haz clic en la fuente de medios que quieres editar.
+3. En la página de la fuente de medios, haz clic en la cuenta concreta que quieres editar.
+4. En la pestaña **Apps**, haz clic en **Editar** para añadir o eliminar aplicaciones y, a continuación, guarda los cambios.
 
-Apps added to an integration that uses an additional step must be mapped before you can save the changes. The **Integration details** tab shows the connection settings.
+Las aplicaciones añadidas a una integración que usa un paso adicional deben asignarse antes de que puedas guardar los cambios. La pestaña **Detalles de la integración** muestra la configuración de la conexión.
 
 </Accordion>
 
 <div id="h_01M43Y9WQ89XKB2CN2EY4TG2AD" />
 
-<Accordion title="Delete a cost integration">
+<Accordion title="Eliminar una integración de costos">
 
-1. In AppsFlyer, from the side menu, select **Settings** > **ROI360** > **Cost settings**.
-2. Click the media source you want to delete from.
-3. In the media source page, in the **Action** column, click the delete icon for the specific account you want to remove.
-4. In the confirmation dialog, click **Yes, delete**.
+1. En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **ROI360** > **Configuración de costos**.
+2. Haz clic en la fuente de medios de la que quieres eliminar.
+3. En la página de la fuente de medios, en la columna **Acción**, haz clic en el icono de eliminar de la cuenta concreta que quieres eliminar.
+4. En el cuadro de diálogo de confirmación, haz clic en **Sí, eliminar**.
 
-Cost data collection stops immediately. Historical cost data isn't affected.
+La recopilación de datos de costo se detiene de inmediato. Los datos históricos de costo no se ven afectados.
 
 </Accordion>
 
 <div id="h_01M43Y9WQ8ANZY2KNHKMV67YNY" />
 
-<Accordion title="Transfer an app to another account">
+<Accordion title="Transferir una aplicación a otra cuenta">
 
-Cost integrations are disconnected automatically when an app is transferred to a different account.
+Las integraciones de costos se desconectan automáticamente cuando una aplicación se transfiere a otra cuenta.
 
 </Accordion>
 
-## View Cost API status
+## Ver el estado de la API de costos
 
-Cost integration status is reported at two levels.
+El estado de la integración de costos se informa en dos niveles.
 
-* **App level:** every app included in an integration has its own status. This is where the actual state of data collection is reported.
-* **Connection level:** each integration shows a single status, derived from the statuses of the apps within it. When all apps share the same status, the connection shows that status. When apps have different statuses, the connection shows **Mixed**. Mixed doesn't indicate a problem with the connection itself, it means the apps aren't in a uniform state. Open the integration to see which apps are affected.
+* **Nivel de aplicación:** cada aplicación incluida en una integración tiene su propio estado. Aquí es donde se informa del estado real de la recopilación de datos.
+* **Nivel de conexión:** cada integración muestra un único estado, derivado de los estados de las aplicaciones que incluye. Cuando todas las aplicaciones comparten el mismo estado, la conexión muestra ese estado. Cuando las aplicaciones tienen estados distintos, la conexión muestra **Mixto**. Mixto no indica un problema con la conexión en sí, sino que las aplicaciones no están en un estado uniforme. Abre la integración para ver qué aplicaciones están afectadas.
 
-Status is available in the following places:
+El estado está disponible en los siguientes lugares:
 
-| Where | Level shown |
+| Donde | Nivel mostrado |
 | --- | --- |
-| Cost settings | Both connection level and app level |
-| Cost (and ad revenue) integration status dashboard | App level, across all media sources with cost integration enabled in your account and the agency account you work with. Mixed status isn't shown. |
-| Cost tab | App level, for one app and one media source at a time |
+| Configuraciones de costo | Tanto a nivel de conexión como a nivel de aplicación |
+| Dashboard de estado de integración de costo (e ingresos por publicidad) | A nivel de aplicación, en todas las fuentes de medios con la integración de costos habilitada en tu cuenta y en la cuenta de la agencia con la que trabajas. No se muestra el estado mixto. |
+| Pestaña de costo | A nivel de aplicación, para una aplicación y una fuente de medios cada vez |
 
 <div id="view-status-in-cost-settings" />
 
-<Accordion title="View status in Cost settings">
+<Accordion title="Ver el estado en la configuración de costos">
 
-1. In AppsFlyer, from the side menu, select **Settings** > **ROI360** > **Cost settings**.
-2. Select the relevant media source. The **Status** column shows the connection-level status for each integration.
-3. To see app-level status, click the integration row to open the **Cost integration** page, then view the status of each app in the list.
+1. En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **ROI360** > **Configuración de costos**.
+2. Selecciona la fuente de medios relevante. La columna **Estado** muestra el estado a nivel de conexión de cada integración.
+3. Para ver el estado a nivel de aplicación, haz clic en la fila de la integración para abrir la página **Integración de costos** y, a continuación, consulta el estado de cada aplicación en la lista.
 
 </Accordion>
 
 <div id="view-status-in-cost-tab" />
 
-<Accordion title="View status in Cost tab">
+<Accordion title="Ver el estado en la pestaña Costo">
 
-Relevant for media sources that support getting cost data via API. This view shows the status for the selected app, along with the last time AppsFlyer successfully pulled matching cost data for it.
+Relevante para las fuentes de medios compatibles con la obtención de datos de costo a través de la API. Esta vista muestra el estado de la aplicación seleccionada, junto con la última vez que AppsFlyer extrajo correctamente los datos de costo correspondientes.
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Active integrations**.
-2. Select the media source.
-3. From the App list above the tab bar, select the app whose cost status you want to view.
-4. Click the **Cost** tab to see the status and last sync time.
+1. En AppsFlyer, desde el menú lateral, ve a **Colaborar** > **Integraciones activas**.
+2. Selecciona la fuente de medios.
+3. En la lista de aplicaciones situada encima de la barra de pestañas, selecciona la aplicación cuyo estado de costo quieras ver.
+4. Haz clic en la pestaña **Costo** para ver el estado y la hora de la última sincronización.
 
 </Accordion>
 
 <div id="h_01M43Y9WQ8H8ANPDEGYCH0T0MF" />
 
-<Accordion title="Status table">
+<Accordion title="Tabla de estados">
 
-The following table lists every cost integration status and what it means.
+La siguiente tabla enumera todos los estados de integración de costos y lo que significa cada uno.
 
-| Status | Remarks/action required |
+| Estado | Observaciones/acción requerida |
 | --- | --- |
-| Active | Integration is enabled and successfully connected to the media source. AppsFlyer is pulling cost data. |
-| Advertiser account not enabled | The connected ad account isn't enabled for cost data collection on the media source side. Contact the media source to enable API access for the account, then reconnect the integration. |
-| General error | An unexpected failure occurred during the pull. AppsFlyer retries on the next scheduled pull. If the status persists, contact AppsFlyer support. |
-| Invalid credentials | AppsFlyer can't get data via the API because the credentials aren't valid. Reconnect using the correct credentials. |
-| Missing credentials | You haven't configured credentials for this integration. Add the required credentials in Cost settings or in the partner's Cost tab. |
-| No active campaigns | Usually, the integration pulls the cost of only campaigns that have conversions in AppsFlyer. In this pull, no such campaigns were found during the selected period. No action is required. AppsFlyer reports this as a successful pull. |
-| No data | The partner API responded but returned no data. This usually happens because your campaigns are paused and there's no data to pull. No action is required unless you expect campaigns to be running. If they are, review the integration. |
-| Partner API is not responding | The integrated partner's server isn't responding to AppsFlyer, or the partner API rate-limited the request. AppsFlyer retries on the next scheduled pull. Wait six hours. If the status persists, contact AppsFlyer support. |
-| The partner API is not returning data for the information provided. Check the configuration | The media source didn't return data despite active campaigns (campaigns with conversions in AppsFlyer), which points to a misconfiguration at the media source level. Reconnect the account via OAuth and verify the right ad account was selected. |
-| Waiting for sync | The account or app is still syncing with the ad network. Wait for the sync to complete. |
-| Mixed | Shown in Cost settings > Media source page only, when the apps in an integration have different statuses. Open the Integration page to view the status of each app. Not displayed on the status dashboard. |
+| Activo | La integración está habilitada y conectada correctamente a la fuente de medios. AppsFlyer está extrayendo datos de costo. |
+| Cuenta de anunciante no habilitada | La cuenta de anuncios conectada no está habilitada para la recopilación de datos de costo del lado de la fuente de medios. Ponte en contacto con la fuente de medios para habilitar el acceso a la API para la cuenta y, después, vuelve a conectar la integración. |
+| Error general | Se produjo un error inesperado durante la extracción. AppsFlyer lo vuelve a intentar en la siguiente extracción programada. Si el estado persiste, comunícate con el soporte técnico de AppsFlyer. |
+| Credenciales no válidas | AppsFlyer no puede obtener datos a través de la API porque las credenciales no son válidas. Vuelve a conectarte utilizando las credenciales correctas. |
+| Faltan credenciales | No has configurado credenciales para esta integración. Añade las credenciales necesarias en la configuración de costos o en la pestaña Costo del partner. |
+| No hay campañas activas | Normalmente, la integración extrae el costo solo de las campañas que tienen conversiones en AppsFlyer. En esta extracción, no se encontró ninguna campaña de este tipo durante el periodo seleccionado. No se requiere ninguna acción. AppsFlyer lo reporta como una extracción correcta. |
+| No hay datos | La API del partner respondió, pero no devolvió ningún dato. Esto suele ocurrir porque tus campañas están en pausa y no hay datos para extraer. No hace falta hacer nada, a menos que esperes que las campañas estén en funcionamiento. Si lo están, revisa la integración. |
+| La API del socio no responde | El servidor del partner integrado no responde a AppsFlyer o la API del partner limitó la tasa de solicitudes. AppsFlyer lo vuelve a intentar en la siguiente extracción programada. Espera seis horas. Si el estado persiste, comunícate con el soporte técnico de AppsFlyer. |
+| La API del partner no devuelve datos para la información proporcionada. Verifica la configuración | La fuente de medios no devolvió datos a pesar de tener campañas activas (campañas con conversiones en AppsFlyer), lo que apunta a una mala configuración a nivel de la fuente de medios. Vuelve a conectar la cuenta mediante OAuth y verifica que se haya seleccionado la cuenta de Anuncio correcta. |
+| Esperando sincronización | La cuenta o la aplicación aún se está sincronizando con la ad network. Espera a que se complete la sincronización. |
+| Mixto | Se muestra solo en Configuración de costos > página Fuente de medios, cuando las aplicaciones de una integración tienen estados diferentes. Abre la página de integración para ver el estado de cada aplicación. No se muestra en el dashboard de estado. |
 
 </Accordion>
 
-## Cost integration and agencies
+## Integración de costos y agencias
 
-If an advertiser uses an agency to run their campaigns, we recommend that the agency, and not the advertiser, integrate with the relevant partners. Otherwise, cost data is duplicated if both the advertiser and agency integrate with a media source using the same credentials for the same app.
+Si un anunciante utiliza una agencia para ejecutar sus campañas, recomendamos que sea la agencia, y no el anunciante, quien se integre con los partners relevantes. De lo contrario, si tanto el anunciante como la agencia se integran con un partner utilizando las mismas credenciales para la misma aplicación, los datos de costos se duplican.
 
-If an advertiser stops working with an agency, cost data is still pulled if the agency still has cost configured for the app. The advertiser must ask the agency to delete their cost integration to stop this data from being pulled.
+Si un anunciante deja de trabajar con una agencia, los datos de costo se siguen extrayendo si la agencia sigue teniendo configurado el costo para la aplicación. El anunciante debe pedir a la agencia que elimine su integración de costos para dejar de extraer estos datos.
 
-## Traits and limitations
+## Rasgos y limitaciones
 
-| Trait | Remarks |
+| Caducado | Comentarios |
 | --- | --- |
-| Agencies | Agencies can't use Cost settings to perform cost integrations across multiple apps simultaneously, but can use the Cost tab in Partner Marketplace to do so. |
-| Future apps automatically inherit the cost settings feature in account-level Cost settings | Currently not supported. |
-| Cost data behavior when the advertiser and agency connect to the same ad network | If both an advertiser and an agency connect to cost integration for the same ad network account (for example, Google Ads), cost data is pulled from the account that receives attribution. Example: the advertiser connects using advertiser credentials, the agency connects using agency credentials, and attribution is assigned to the agency account. Result: ROI360 pulls cost data from the agency connection, and the advertiser connection shows as No data. |
-| Google cost integration automatic disconnection | Cost integrations that show a No data or Invalid credentials status for more than 365 consecutive days are automatically disconnected. This currently applies only to Google cost integrations. |
-| TikTok advertiser ID list configuration | Configure the advertiser ID list at the account level using only advertiser IDs connected to the TikTok user in the ad network. Advertiser IDs added to the list that aren't aligned with the user in the ad network don't return cost data. |
+| Agencias | Las agencias no pueden usar Configuración de costos para realizar integraciones de costos en varias aplicaciones a la vez, pero sí pueden usar la pestaña Costo en Partner Marketplace para hacerlo. |
+| Las aplicaciones futuras heredan automáticamente la función de configuración de costos en la configuración de costos a nivel de cuenta | Actualmente no soportado. |
+| Comportamiento de los datos de costos cuando el anunciante y la agencia se conectan a la misma ad network | Si tanto un anunciante como una agencia se conectan a la integración de costos para la misma cuenta de ad network (por ejemplo, Google Ads), los datos de costos se obtienen de la cuenta que recibe la atribución. Ejemplo: el anunciante se conecta con credenciales de anunciante, la agencia se conecta con credenciales de agencia y la atribución se asigna a la cuenta de la agencia. Resultado: ROI360 extrae los datos de costo de la conexión de la agencia y la conexión del anunciante aparece como Sin datos. |
+| Desconexión automática de la integración de costos de Google | Las integraciones de costos que muestren el estado Sin datos o Credenciales no válidas durante más de 365 días consecutivos se desconectan automáticamente. Actualmente, esto solo se aplica a las integraciones de costos de Google. |
+| Configuración de la lista de ID de anunciante de TikTok | Configura la lista de ID de anunciante a nivel de cuenta usando solo los ID de anunciante conectados al usuario de TikTok en la ad network. Los ID de anunciante que se añaden a la lista y no están alineados con el usuario en la ad network no devuelven datos de costo. |
 
-<div data-zendesk-anchors="h_01K9S0A1PRMX3VBGHTNQ8C5FJW=overview h_01M43Y9WQ83AK0KTKB9XM8FGM6=note h_01K9S0A1PTQW9YJM3C4LKZRHFB=create-a-new-api-cost-integration h_01K9S0A1PVCXZ3NQ7MWFKTJRH8=additional-steps-specific-media-sources-only h_01M43Y9WQ8HNRN4ZKWRBT9QY9G=map-apps-to-package-names-or-bundle-ids site-id-mapping=map-apps-to-site-ids h_01K3DGA6SKDTTPY8Q1JBTCTY7H=map-apps-to-site-ids h_01M43Y9WQ8V94HB74M6CAKC9PB=note-1 h_01M43Y9WQ8P3XATJS0TBB27ZPQ=select-which-ad-account-to-pull-cost-from deleting-cost-integrations=edit-and-delete-an-integration h_01K3DGA6SKF8ZA5M9AW6DA0V3J=edit-and-delete-an-integration h_01K9S0A1PWRNK08ZQXCF5V3YTM=view-cost-api-status h_01K9S0A1PXJQF2NVC9ZRMLK6HT=view-status-in-cost-settings h_01K9S0A1PYMBX4RQJZC8TNVK3F=view-status-in-cost-tab h_01K9S0A1PZQXN4RTC7VWBLKM9H=cost-integration-and-agencies specification-and-limitation=traits-and-limitations h_01K3DGA6SKVZ347ZDY599S0Y7Y=traits-and-limitations" />
+<div data-zendesk-anchors="overview=resumen h_01K9S0A1PRMX3VBGHTNQ8C5FJW=resumen h_01M43Y9WQ83AK0KTKB9XM8FGM6=nota create-a-new-api-cost-integration=crear-una-nueva-integraci%C3%B3n-de-costos-mediante-api h_01K9S0A1PTQW9YJM3C4LKZRHFB=crear-una-nueva-integraci%C3%B3n-de-costos-mediante-api h_01K9S0A1PVCXZ3NQ7MWFKTJRH8=additional-steps-specific-media-sources-only h_01M43Y9WQ8HNRN4ZKWRBT9QY9G=asigna-aplicaciones-a-nombres-de-paquete-o-id-de-paquete site-id-mapping=asigna-aplicaciones-a-id-de-sitio h_01K3DGA6SKDTTPY8Q1JBTCTY7H=asigna-aplicaciones-a-id-de-sitio h_01M43Y9WQ8V94HB74M6CAKC9PB=nota-1 h_01M43Y9WQ8P3XATJS0TBB27ZPQ=selecciona-de-qu%C3%A9-cuenta-publicitaria-extraer-el-costo deleting-cost-integrations=editar-y-eliminar-una-integraci%C3%B3n h_01K3DGA6SKF8ZA5M9AW6DA0V3J=editar-y-eliminar-una-integraci%C3%B3n view-cost-api-status=ver-el-estado-de-la-api-de-costos h_01K9S0A1PWRNK08ZQXCF5V3YTM=ver-el-estado-de-la-api-de-costos h_01K9S0A1PXJQF2NVC9ZRMLK6HT=view-status-in-cost-settings h_01K9S0A1PYMBX4RQJZC8TNVK3F=view-status-in-cost-tab cost-integration-and-agencies=integraci%C3%B3n-de-costos-y-agencias h_01K9S0A1PZQXN4RTC7VWBLKM9H=integraci%C3%B3n-de-costos-y-agencias specification-and-limitation=rasgos-y-limitaciones h_01K3DGA6SKVZ347ZDY599S0Y7Y=rasgos-y-limitaciones" />

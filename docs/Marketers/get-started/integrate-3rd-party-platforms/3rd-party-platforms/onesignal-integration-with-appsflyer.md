@@ -1,5 +1,5 @@
 ---
-title: OneSignal integration with AppsFlyer
+title: Integración de OneSignal con AppsFlyer
 metadata:
   keywords:
     - Advertisers
@@ -13,37 +13,38 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2020-11-29T08:11:41Z'
-  edited_at: '2026-08-14T16:22:59Z'
+  edited_at: '2026-08-22T00:11:46Z'
   id: 360015926437
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360015926437-OneSignal-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/360015926437
 ---
-> **At a glance:** OneSignal is the market-leading push notification and in-app messaging provider, supporting over 1 million developers and marketers with a best-of-breed engagement platform.
+> **At a glance:** OneSignal es el proveedor líder del mercado de notificaciones push y mensajes in-app, y presta soporte a más de 1 millón de desarrolladores y profesionales del marketing con una plataforma de engagement de primer nivel.
 
 ![onesignal-logo-stack__3_.png](https://files.readme.io/49c50c481c00391f25cf8cc7eb2c35cc166f6a88a10db9120769a7d11affa26a-13013733757841.png)
 
-OneSignal delivers 8 billion messages every day across the globe. Powered by superior architecture and an easy-to-use platform, the OneSignal delivers messages faster, more efficiently, and at a greater scale than any other solution in the world. Learn more at [onesignal.com](https://onesignal.com/?utm_medium=partner&utm_source=appsflyer)
+OneSignal envía 8 billion mensajes cada día en todo el mundo. Impulsado por una arquitectura superior y una plataforma fácil de usar, OneSignal envía mensajes más rápido, de forma más eficiente y a mayor escala que cualquier otra solución del mundo. Más información en [onesignal.com](https://onesignal.com/?utm_medium=partner&utm_source=appsflyer)
 
 > 🚧 **Important**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> **Importante:**
+>
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up OneSignal
+## Configuración de OneSignal
 
-The integration with OneSignal includes inserting a few lines of code to the AppsFlyer SDK in your app and then activating the integration in AppsFlyer.
+La integración con OneSignal incluye insertar unas pocas líneas de código en el SDK de AppsFlyer de tu app y, después, activar la integración en AppsFlyer.
 
-### Set up the AppsFlyer SDK
+### Configurar el SDK de AppsFlyer
 
-When using Android, integrating with OneSignal requires that the OneSignal Player ID (OneSignal unique user identifier) is populated in AppsFlyer Android SDK. This parameter is sent with every postback and enables the identification of each user.
+Al usar Android, la integración con OneSignal requiere que el OneSignal Player ID (identificador de usuario único de OneSignal) se complete en el SDK de Android de AppsFlyer. Este parámetro se envía con cada postback y permite la identificación de cada usuario.
 
-**To set up the AppsFlyer Android SDK:**
+**Para configurar el SDK de AppsFlyer para Android:**
 
-1. Make sure that the SDK version you use is 2.3.1.18 and above.
-2. Insert the following lines of code in your app's code - [after OneSignal SDK was launched](https://documentation.onesignal.com/docs/android-sdk-setup) and before the initialization code for AppsFlyer SDK.
-   * For Android devices using OneSignal SDK version 3.x.x:
+1. Asegúrate de que la versión del SDK que usas sea la 2.3.1.18 o posterior.
+2. Inserta las siguientes líneas de código en el código de tu app, [después de iniciar el SDK de OneSignal](https://documentation.onesignal.com/docs/android-sdk-setup) y antes del código de inicialización del SDK de AppsFlyer.
+   * Para dispositivos Android que usan la versión 3.x.x del SDK de OneSignal:
 
      ```http
      OSPermissionSubscriptionState status = OneSignal.getPermissionSubscriptionState();
@@ -52,7 +53,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
 
                  customData.put("onesignalCustomerId", deviceId);
      ```
-   * For Unity SDK:
+   * Para el SDK de Unity:
 
      ```http
      var status = OneSignal.GetPermissionSubscriptionState();
@@ -61,7 +62,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
 
                  customData.put("onesignalCustomerId", deviceId);
      ```
-   * For Android devices using OneSignal Native SDK version 4+:
+   * Para dispositivos Android que usan la versión 4+ del SDK nativo de OneSignal:
 
      ```http
      OSDeviceState device = OneSignal.getDeviceState();
@@ -71,11 +72,11 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
                  customData.put("onesignalCustomerId", deviceId);
      ```
 
-**To set up the AppsFlyer iOS SDK:**
+**Para configurar el SDK de AppsFlyer para iOS:**
 
-1. Make sure that the SDK version you use is 2.3.1.18 and above.
-2. Insert the following lines of code in your app's code - [after OneSignal SDK was launched](https://documentation.onesignal.com/docs/android-sdk-setup) and before the initialization code for AppsFlyer SDK.
-   * For iOS devices using OneSignal SDK version 2.x.x:
+1. Asegúrate de que la versión del SDK que usas sea la 2.3.1.18 o posterior.
+2. Inserta las siguientes líneas de código en el código de tu app, [después de iniciar el SDK de OneSignal](https://documentation.onesignal.com/docs/android-sdk-setup) y antes del código de inicialización del SDK de AppsFlyer.
+   * Para dispositivos iOS que usan la versión 2.x.x del SDK de OneSignal:
 
      <Tabs>
      <Tab title="Swift">
@@ -99,7 +100,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
      </Tab>
      </Tabs>
 
-   * For iOS devices using OneSignal Native SDK version 3+:
+   * Para dispositivos iOS que usan OneSignal Native SDK versión 3+:
 
      <Tabs>
      <Tab title="Swift">
@@ -124,98 +125,98 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
      </Tab>
      </Tabs>
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Configurar la integración de ASA**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below:
+1. **Para activar:** En AppsFlyer, desde el menú lateral, selecciona **Colaborar** > **Partner Marketplace**.  
+   **Para editar:** En AppsFlyer, desde el menú lateral, selecciona **Colaborar** > **Integraciones Activas**.
+2. Selecciona la aplicación correspondiente.
+3. Busca al partner (`rokuads_int`) y selecciónalo.
+4. En la pestaña de **Integración** selecciona la aplicación para la integración y haz clic en **Activar partner**  
+   **Nota:** El selector debe estar encendido<Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado) mientras</Anchor> trabajes con el partner. **Nota:** El selector debe estar <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor> mientras trabajes con el partner. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación:
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
 ![onesignal-integration-tab.png](https://files.readme.io/95ec88041360d492367ed383aa3242bebe1cd5c5abcff8fba64e7888f0a9c052-360017329277.png)
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-Must be enabled for as long as you work with the partner.  
-Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
+Debe estar activado mientras trabajes con el partner.  
+Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activación del partner</Anchor>.
 
-### General settings
+### Configuración general
 
 #### OneSignal AppID
 
-To connect your OneSignal account with AppsFlyer, enter your app ID in **OneSignal AppID** field.  
-Your OneSignal app ID is available in the OneSignal platform under **Settings** > **Keys & IDs**.
+Para conectar tu cuenta de OneSignal con AppsFlyer, introduce el ID de tu app en el campo **OneSignal AppID**.  
+El ID de la aplicación de OneSignal está disponible en la plataforma de OneSignal, en **Settings** > **Keys & IDs**.
 
-![onesignal-app-id-en_us.png](https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png)
+![onesignal-app-id-es_es.png](https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png)
 
-### Default postbacks
+### Postbacks predeterminados
 
-![onesignal-default-postbacks_en-us.png](https://files.readme.io/07e40365685543a318be8a16c9ea83638634d4a60333338eca0f76d140f84bef-360014377697.png)
+![onesignal-default-postbacks_es-es.png](https://files.readme.io/07e40365685543a318be8a16c9ea83638634d4a60333338eca0f76d140f84bef-360014377697.png)
 
-AppsFlyer can send automatic postbacks to OneSignal following user installs. Use this section to define the source of the users that the postbacks are sent to for each event.  
-Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
+AppsFlyer puede enviar postbacks automáticos a OneSignal tras las instalaciones de los usuarios. Utiliza esta sección para definir la fuente de los usuarios a los cuales se envían los postbacks de cada evento.  
+Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks por defecto</Anchor>.
 
-**To send postbacks for any user that downloads the app to OneSignal**, select **All media sources, including organic**.
+**Para enviar postbacks de cualquier usuario que descargue la aplicación a OneSignal**, selecciona **Todas las fuentes de medios, incluidas las orgánicas**.
 
-**To complete the integration configuration,** click **Save Integration**.
+**Para completar la configuración de la integración,** haz clic en **Guardar integración**.
 
-Although all events are sent by AppsFlyer, organic installs are not counted by OneSignal and therefore are ignored by OneSignal API.
+Aunque AppsFlyer envía todos los eventos, OneSignal no cuenta las instalaciones orgánicas y, por lo tanto, OneSignal API las ignora.
 
-Once you have saved the configuration, AppsFlyer sends the following data to OneSignal for every organic and non-organic install:
+Una vez que hayas guardado la configuración, AppsFlyer envía los siguientes datos a OneSignal para cada instalación orgánica y no orgánica:
 
-* Media source
-* Campaign name
-* Device ID
-* Ad ID
+* Nombre de la app
+* Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>.
+* ID de dispositivos
+* Retargeting: Primer inicio después del re-engagement o la reatribución.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for this partner.
+Los enlaces de atribución no están disponibles para este partner.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not applicable in the integration with this partner.
+Los datos de costo no son aplicables en la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not applicable in the integration with this partner.
+Los ingresos por publicidad no son aplicables en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for this partner.
+Los permisos no están disponibles para este partner.
 
 </Accordion>
 
-## View user attribution data in OneSignal
+## Ver datos de atribución de usuarios en OneSignal
 
-You can view attribution in the Segment Editor under the OneSignal tags either as the individual device level or when creating a segment to use in a campaign.
+Puedes ver la atribución en el Editor de segmentos, en las etiquetas de OneSignal, ya sea a nivel de dispositivo individual o al crear un segmento para usarlo en una campaña.
 
-![onesignal-view-attribution_en-us.png](https://files.readme.io/ac23c9310cad560f692598127f3e9efb7c2b905efb6fd5de21efabe90bf58eea-360014377737.png)
+![onesignal-view-attribution_es-es.png](https://files.readme.io/ac23c9310cad560f692598127f3e9efb7c2b905efb6fd5de21efabe90bf58eea-360014377737.png)
 
-<div data-zendesk-anchors="h_01H9HWJTEYDEZ8AGVQBHZZTP7K=setting-up-onesignal h_01H9HWJTEY71PTXR1YSAK709QT=set-up-the-appsflyer-sdk h_01H9HWJTEZC62F9JW1KD4Y1CYS=integration-tab h_01H9HWJTEZH60AEPE7AB43X4YG=activate-partner h_01H9HWJTEZJAK2PTF4HQP3DQ1X=general-settings h_01H9HWJTEZCNZX17K86H9KCRFN=onesignal-appid h_01H9HWJTEZ91KR3ZA8NX5BVZCF=default-postbacks h_01H9HWJTEZZYRBS6PPRBBQAXZ5=attribution-link-tab h_01H9HWJTEZNT0EHJ7G4SFRD8K5=cost-tab h_01H9HWJTEZS7TN4FCAN40QB1NT=ad-revenue-tab h_01H9HWJTEZEY5VKCKDZ1Q7APRG=permissions-tab h_01H9HWJTEZZTJFTZC1Z2A6F5QM=view-user-attribution-data-in-onesignal" />
+<div data-zendesk-anchors="setting-up-onesignal=configuraci%C3%B3n-de-onesignal h_01H9HWJTEYDEZ8AGVQBHZZTP7K=configuraci%C3%B3n-de-onesignal set-up-the-appsflyer-sdk=configurar-el-sdk-de-appsflyer h_01H9HWJTEY71PTXR1YSAK709QT=configurar-el-sdk-de-appsflyer h_01H9HWJTEZC62F9JW1KD4Y1CYS=integration-tab activate-partner=activar-socio h_01H9HWJTEZH60AEPE7AB43X4YG=activar-socio general-settings=configuraci%C3%B3n-general h_01H9HWJTEZJAK2PTF4HQP3DQ1X=configuraci%C3%B3n-general h_01H9HWJTEZCNZX17K86H9KCRFN=onesignal-appid default-postbacks=postbacks-predeterminados h_01H9HWJTEZ91KR3ZA8NX5BVZCF=postbacks-predeterminados h_01H9HWJTEZZYRBS6PPRBBQAXZ5=attribution-link-tab h_01H9HWJTEZNT0EHJ7G4SFRD8K5=cost-tab h_01H9HWJTEZS7TN4FCAN40QB1NT=ad-revenue-tab h_01H9HWJTEZEY5VKCKDZ1Q7APRG=permissions-tab view-user-attribution-data-in-onesignal=ver-datos-de-atribuci%C3%B3n-de-usuarios-en-onesignal h_01H9HWJTEZZTJFTZC1Z2A6F5QM=ver-datos-de-atribuci%C3%B3n-de-usuarios-en-onesignal" />

@@ -1,5 +1,5 @@
 ---
-title: Recording multiple agency/MCC Google Ads accounts
+title: Registro de múltiples cuentas de Google Ads de agencia/MCC
 metadata:
   keywords:
     - Advertisers
@@ -15,106 +15,107 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-09-28T11:11:04Z'
-  edited_at: '2023-03-12T12:50:37Z'
+  edited_at: '2026-08-12T12:19:19Z'
   id: 115004970386
-  locale: en-us
+  locale: es
   section: Google Ads
   section_id: 6551205645457
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115004970386-Recording-multiple-agency-MCC-Google-Ads-accounts
+  url: https://support.appsflyer.com/hc/es/articles/115004970386
 ---
-> **At a glance:** Set up recording for different Google Ads accounts so traffic gets attributed correctly.
+> **En resumen:** Configura el registro de diferentes cuentas de Google Ads para que el tráfico se atribuya correctamente.
 
-## Introduction
+## Introducción
 
-Google Ads traffic often comes from various accounts, such as agencies specializing in Google Ads or even different local teams within the app owner’s organization. It is important to understand how to set up recordings for different Google Ads accounts so that attribution goes to the correct parties.
+El tráfico de Google Ads suele provenir de varias cuentas, como agencias especializadas en Google Ads o incluso de diferentes equipos locales dentro de la organización del propietario de la aplicación. Es importante comprender cómo configurar los registros de diferentes cuentas de Google Ads para que la atribución vaya a las partes correctas.
 
-This article covers these cases, from measuring agencies to using MCCs and also MCCs of MCCs.
+Este artículo cubre estos casos, desde las agencias de medición hasta el uso de MCC y también MCC de MCC.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> The following applies **only** to clients using the Google Ads new API.
+> Lo siguiente es aplicable **solamente** a los clientes que utilizan la nueva API de Google Ads.
 
-For details on agency account configuration on Google Ads <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">click here</Anchor>.
+Para obtener más información sobre la configuración de cuentas de agencia en Google Ads, <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-agencies">haz clic aquí</Anchor>.
 
-## Important definitions
+## Definiciones importantes
 
-* **Link ID** – **a** **unique identifier of a mobile app defined on Google Ads**.
+* **ID de enlace**: **identificador único de una aplicación móvil definido en Google Ads**.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Android and iOS versions of the same app require different link IDs.
+> Las versiones de Android e iOS de la misma aplicación requieren diferentes ID de enlace.
 
-* **Customer ID** – **unique identifier of a Google Ads account**.  
-  Every account can advertise multiple link IDs, for example, for all the apps of the company. When linking agency accounts with existing apps on AppsFlyer’s dashboard, you can define up to 10 customer IDs.
-* **MCC** - A Google Ads manager account (MCC, formerly called My Clients Center) is a Google Ads **tool for handling multiple Google Ads accounts**.  
-  With an MCC account, you can link several accounts so you can view them in a single location (<Anchor target="_blank" href="https://support.google.com/google-ads/answer/6139186?hl=en&ref_topic=7554904">Read more</Anchor>).
+* **ID de cliente**: **identificador único de una cuenta de Google Ads**.  
+  Cada cuenta puede anunciar varios ID de enlace, por ejemplo, para todas las aplicaciones de la empresa. Al enlazar cuentas de agencia con aplicaciones existentes en el panel de control de AppsFlyer, puedes definir hasta 10 ID de cliente.
+* **MCC**: una cuenta de administrador de Google Ads (MCC, anteriormente llamada Mi Centro de Clientes) es una **herramienta de Google Ads para gestionar varias cuentas de Google Ads**.  
+  Con una cuenta MCC, puedes enlazar varias cuentas para poder verlas en una sola ubicación (<Anchor target="_blank" href="https://support.google.com/google-ads/answer/6139186?hl=en&ref_topic=7554904">Leer más</Anchor>).
 
-## Setting up Google Ads recording
+## Configurar el registro de Google Ads
 
-AppsFlyer can record a single link ID per app. **When multiple accounts handle the same app, they should all use the same link ID.** This should be configured on AppsFlyer’s dashboard for attribution purposes.
+AppsFlyer puede registrar un único ID de enlace por aplicación. **Cuando varias cuentas manejan la misma aplicación, todas deben usar el mismo ID de enlace.** Esto debe configurarse en el panel de control de AppsFlyer para fines de atribución.
 
-### Sharing Google link ID with another account
+### Compartir el ID de enlace de Google con otra cuenta
 
-App owners having a single Google Ads account, or that plan on working with agencies running Google Ads traffic should use the following method.
+Los propietarios de aplicaciones que tengan una sola cuenta de Google Ads o que planeen trabajar con agencias que administran tráfico de Google Ads deben usar el método que se describe a continuación.
 
-The app owner can share any link ID with any other account, identified by its customer ID, as the capture below shows. Here are some more details about <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies#setting-up-google-ads-attribution-for-agencies">sharing the link ID with an agency</Anchor>.
+El propietario de la aplicación puede compartir cualquier ID de enlace con cualquier otra cuenta, identificada por su ID de cliente, como se muestra en la captura a continuación. Aquí encontrarás más detalles más sobre cómo <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-agencies#configurar-la-atribución-de-google-ads-para-agencias">compartir el ID del enlace con una agencia</Anchor>.
 
-> 🚧 **Important**
+> 🚧 **Importante**
 >
-> * If MCC is the Recording Manager for subaccounts then there is no need to share the Link ID from the MCC to the subaccounts. However, if a subaccount, under the MCC is its own recording manager, then the MCC must share the Link ID with the subaccount Recording Manager.
-> * Importing Conversions: If MCC is the Recording Manager then the MCC is responsible for importing conversions for the subaccounts controlled by it. However, if a subaccount under the MCC is its own recording manager then that subaccount must also import the conversions.
+> * Si MCC es el administrador de registros para las subcuentas, no es necesario compartir el ID de enlace de MCC con las subcuentas. Sin embargo, si una subcuenta bajo el MCC es su propio administrador de registros, entonces el MCC debe compartir el ID de enlace con el administrador de registros de la subcuenta.
+> * Importación de conversiones: Si el MCC es el administrador de registros, MCC es responsable de importar las conversiones de las subcuentas que controla. Sin embargo, si una subcuenta de MCC es su propio administrador de registros, esa subcuenta también debe importar las conversiones.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * On the Google Ads dashboard click (3 dots) >> ***Linked accounts*** >> ***Third-party app analytics details*** [![](https://files.readme.io/3fa87bcaa7f1eecfdee20d6d7568e71bcc2ffe6ba20334fe473279ae484b2294-115016034186.png)](https://files.readme.io/3fa87bcaa7f1eecfdee20d6d7568e71bcc2ffe6ba20334fe473279ae484b2294-115016034186.png)
-> * The other account needs to approve the "share".
-> * As a result, the other account is authorized to run Google Ads campaigns for the app.
+> * En el panel de control de Google Ads, haz clic en (3 puntos) >> ***Linked accounts (Cuentas enlazadas)*** >> ***Third-party app analytics details (Detalles de análisis de aplicaciones de terceros)*** [![](https://support.appsflyer.com/hc/article_attachments/49754322618641)](https://support.appsflyer.com/hc/article_attachments/49754322618641)
+> * La otra cuenta debe aprobar la "participación".
+> * Como resultado, la otra cuenta está autorizada para publicar campañas de Google Ads para la aplicación.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> AppsFlyer recommends sharing the Link ID from the advertiser’s main account to the other accounts, rather than directly generating link IDs in those accounts. This is the fastest option, and also enables easy detachment between the advertiser and the agencies once the mutual work is completed.
+> AppsFlyer recomienda compartir el ID de enlace de la cuenta principal del anunciante con las otras cuentas, en lugar de generar directamente ID de enlace en esas cuentas. Esta es la opción más rápida, y también permite una fácil separación entre el anunciante y las agencias una vez que se completa el trabajo mutuo.
 
 ## MCC
 
-Agencies or large advertisers, who manage multiple Google Ads accounts, often use an MCC (My Client Center), which enables viewing all their accounts in a single location.
+Las agencias o grandes anunciantes, que administran varias cuentas de Google Ads, a menudo utilizan un MCC (Mi Centro de Clientes), que permite ver todas sus cuentas en una sola ubicación.
 
-During the MCC setup, it is possible to configure whether the MCC or the Subaccounts manage the conversions.
+Durante la configuración del MCC, es posible configurar si el MCC o las subcuentas administran las conversiones.
 
-[![MCC_1_new.png](https://files.readme.io/3320465f5def5f3da9afdb028577e49cdbf0b5b9ddf2f04ce708b8a31c5d9cc3-360001513758.png)](https://files.readme.io/3320465f5def5f3da9afdb028577e49cdbf0b5b9ddf2f04ce708b8a31c5d9cc3-360001513758.png)
+[![MCC_1_new.png](https://support.appsflyer.com/hc/article_attachments/49754339000721)](https://support.appsflyer.com/hc/article_attachments/49754339000721)
 
-This setup can be modified afterward if needed.
+Esta configuración se puede modificar posteriormente si es necesario.
 
-![mmc-googleads-settings.png](https://files.readme.io/d0f0ffda25f88d5a37c8466818170243ed9f0040b3a3ad03e860d9a92bf59d4d-11240341292049.png)
+![mmc-googleads-settings.png](https://support.appsflyer.com/hc/article_attachments/49754322623761)
 
-## MCC of MCCs
+## MCC de los MCC
 
-[![](https://files.readme.io/21ae6517c8d933b654a7fd1b5af7987958b3982310f0ad5249d830abf47e7943-115016041206.png)](https://files.readme.io/21ae6517c8d933b654a7fd1b5af7987958b3982310f0ad5249d830abf47e7943-115016041206.png)
+[![](https://support.appsflyer.com/hc/article_attachments/49754322624017)](https://support.appsflyer.com/hc/article_attachments/49754322624017)
 
-Big advertisers working with multiple agencies may use an MCC of MCCs account. Similar to the standard MCC account. It is recommended that the highest level MCC of MCCs or Advertiser is the one to generate the link ID. The correct setup for this structure requires the subaccounts to select the correct level of MCC (most likely, the highest level of MCC) as the Recording Manager. If this is the setup used, then the Link ID does not need to be shared with subaccounts and the import conversions at the highest level are sufficient.
+Los grandes anunciantes que trabajan con varias agencias pueden usar una cuenta de MCC de MCC. Similar a la cuenta estándar de MCC. Se recomienda que el MCC de nivel más alto de MCC o anunciante sea el que genere el ID de enlace. La configuración correcta de esta estructura requiere que las subcuentas seleccionen el nivel correcto de MCC (muy probablemente, el nivel más alto de MCC) como administrador de registros. Si esta es la configuración utilizada, no es necesario compartir el ID de enlace con las subcuentas y las conversiones de importación en el nivel más alto son suficientes.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> For additional information about MCCs and hierarchies of accounts, see the links below:
+> Para obtener información adicional sobre los MCC y las jerarquías de cuentas, consulta los enlaces a continuación:
 >
-> * <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7456530">Linking accounts to your account manager</Anchor>
-> * <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7519925?hl=en&ref_topic=7554359">Viewing hierarchy for your manager account</Anchor>
-> * <Anchor target="_blank" href="https://support.google.com/google-ads/topic/7554359?hl=en&ref_topic=6031997">Working with managed accounts</Anchor>
+> * <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7456530">Enlazar cuentas a tu administrador de cuentas</Anchor>
+> * <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7519925?hl=en&ref_topic=7554359">Visualización de la jerarquía de la cuenta de administrador</Anchor>
+> * <Anchor target="_blank" href="https://support.google.com/google-ads/topic/7554359?hl=en&ref_topic=6031997">Trabajar con cuentas administradas</Anchor>
 >
-> For questions regarding account structures and recommendations, consult with your Google representative.
+> Si tienes preguntas sobre las estructuras de las cuentas y recomendaciones, consulta con tu representante de Google.
 
-## Opening a Google Ads campaign
+## Abrir una campaña de Google Ads
 
-An MCC can’t open a Google Ads campaign directly. Rather, this must be done via a standard Google Ads subaccount.
+Un MCC no puede abrir una campaña de Google Ads directamente. Más bien, esto debe hacerse a través de una subcuenta estándar de Google Ads.
 
-There are two options for conversion recording:
+Hay dos opciones para el registro de conversiones:
 
-1. **MCC manages subaccount recording**  
-   Common for when there are different teams within the same company, for example, **Google Ads account per geo region in the same company**.  
-   The MCC holds the recording configuration (Recording Manager) for all its subaccounts. Any changes in the recording configuration are done only at the MCC level and all subaccounts inherit it automatically.  
-   The MCC also needs to import the conversions, which is done once and covers all subaccounts, and also get the link IDs shared for the subaccounts.
-2. **Subaccounts manage own recording**  
-   Common for accounts that are not connected except for a single entity serving them, for example, **one agency serving different advertiser client accounts**.  
-   Importing the conversions, in this case, needs to be done with every subaccount separately. AppsFlyer records a single link ID per app, so for mobile recording, the MCC or advertiser must share the link ID with the subaccounts.
+1. **MCC administra el registro de subcuentas**  
+   Común para cuando hay diferentes equipos dentro de la misma empresa, por ejemplo, **una cuenta de Google Ads por cada región geográfica de la misma empresa**.  
+   El MCC mantiene la configuración de registro (Administrador de registros) para todas sus subcuentas. Cualquier cambio en la configuración de registro se realiza solo en el nivel de MCC y todas las subcuentas lo heredan automáticamente.  
+   El MCC también necesita importar las conversiones, lo que se hace una vez y cubre todas las subcuentas, y también obtener los ID de enlace compartidos para las subcuentas.
+2. **Las subcuentas gestionan su propio registro**  
+   Común para las cuentas que no están conectadas, excepto por una sola entidad que las atiende, por ejemplo, **una agencia que atiende a diferentes cuentas de clientes anunciantes**.  
+   La importación de las conversiones, en este caso, debe realizarse con cada subcuenta por separado. AppsFlyer registra un único ID de enlace por aplicación, por lo que para el registro móvil, el MCC o el anunciante deben compartir el ID de enlace con las subcuentas.
 
-The conversions on Google Ads can be imported ONLY after the first instance of any conversion occurs, whether install or in-app event.
+Las conversiones en Google Ads SOLO se pueden importar después de que ocurra la primera instancia de cualquier conversión, ya sea de instalación o evento in-app.
+
+<div data-zendesk-anchors="introduction=introducci%C3%B3n important-definitions=definiciones-importantes setting-up-google-ads-recording=configurar-el-registro-de-google-ads sharing-google-link-id-with-another-account=compartir-el-id-de-enlace-de-google-con-otra-cuenta mcc-of-mccs=mcc-de-los-mcc opening-a-google-ads-campaign=abrir-una-campa%C3%B1a-de-google-ads" />

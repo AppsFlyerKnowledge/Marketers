@@ -1,5 +1,5 @@
 ---
-title: Measure podcast-based campaigns
+title: Medir campañas basadas en podcasts
 metadata:
   keywords:
     - Advertisers
@@ -16,61 +16,60 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2019-12-22T15:49:12Z'
-  edited_at: '2026-06-11T10:00:09Z'
+  edited_at: '2026-08-12T11:57:34Z'
   id: 360004494318
-  locale: en-us
+  locale: es
   section: Attribution scenarios
   section_id: 6551328497041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360004494318-Measure-podcast-based-campaigns
+  url: https://support.appsflyer.com/hc/es/articles/360004494318
 ---
-> **At a glance:** Overcome the attribution challenge of mobile app advertising on podcasts by using one of several AppsFlyer solutions.
+> **En resumen:** Supera el reto de la atribución de la publicidad de aplicaciones móviles en podcasts utilizando una de las soluciones de AppsFlyer.
 
-## Podcast attribution methods
+## Métodos de atribución de podcasts
 
-Podcasts are a relatively untapped source of mobile user traffic. Podcast users may react favorably to mobile app ads, but attribution is a challenge. That is because podcasts don’t have a visual interface that generates user impressions or clicks.
+Los podcasts son una fuente de tráfico de usuarios móviles relativamente poco explotada. Los usuarios de podcasts pueden reaccionar favorablemente a los anuncios de aplicaciones móviles, pero la atribución supone un reto. Esto se debe a que los podcasts no tienen una interfaz visual que genere impresiones o clics de los usuarios.
 
-However, there are options that bypass these limitations to successfully perform podcast attribution:
+Sin embargo, hay opciones que permiten superar estas limitaciones para realizar correctamente la atribución de podcasts:
 
-* Dedicated landing page
-* Firing a OneLink click from a dedicated Podcast app
+* Página de aterrizaje específica
+* Activación de un clic de OneLink desde una aplicación de podcast específica
 
-### Dedicated landing page
+### Página de aterrizaje específica
 
-A podcast call-to-action (CTA), when it advertises a mobile app, usually involves mentioning an app name so users can search for it.
+Una llamada a la acción (CTA) en un podcast, cuando anuncia una aplicación móvil, suele consistir en mencionar el nombre de una aplicación para que los usuarios puedan buscarla.
 
-* In a dedicated landing-page scenario, the CTA is a specific web destination on a landing page.
-* This page includes a web element (button, banner, etc.), powered by OneLink. To easily create dynamic landing-page banners without coding, we recommend using <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners</Anchor>.
-* Users who engage with this element, and install the mobile app, are attributed according to the OneLink parameters.
+* En un escenario con una página de aterrizaje específica, la CTA es un destino web concreto dentro de una página de aterrizaje.
+* Esta página incluye un elemento web (botón, banner, etc.) impulsado por OneLink. Para crear fácilmente banners dinámicos para páginas de aterrizaje sin necesidad de programar, recomendamos usar <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners</Anchor>.
+* Los usuarios que interactúan con este elemento e instalan la aplicación móvil se atribuyen según los parámetros de OneLink.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> You decide to promote your app on Joe Rogan's podcast and use a dedicated landing page.
+> Decides promocionar tu aplicación en el podcast de Joe Rogan y utilizar una página de aterrizaje específica.
 >
-> Joe smokes, speaks about your app, and then finishes with "go to www.greatapp.com/joe and get 25% off".
+> Joe fuma, habla de tu aplicación y luego termina con «ve a www.greatapp.com/joe y consigue un 25% de descuento».
 >
-> The landing page has a **Download app** banner with a OneLink URL. The URL includes the media source "podcast" (&pid=podcast) and the campaign name "joe" (&c=joe).
+> La página de aterrizaje tiene un banner de **Descargar app** con una URL de OneLink. La URL incluye la fuente de medios «podcast» (&pid=podcast) y el nombre de la campaña «joe» (&c=joe).
 >
-> Users, who click the OneLink URL and install the app, are attributed in the AppsFlyer platform, to the "podcast" media source and the "joe" campaign.
+> Los usuarios que hacen clic en la URL de OneLink e instalan la aplicación se atribuyen, en la plataforma de AppsFlyer, a la fuente de medios «podcast» y a la campaña «joe».
 
-### Firing OneLink click from a Podcast app
+### Activación de un clic de OneLink desde una aplicación de podcast
 
-This method overcomes the lack of visual interface and allows user attribution without visiting a dedicated landing page.
+Este método supera la falta de interfaz visual y permite la atribución de usuarios sin visitar una página de aterrizaje específica.
 
-* In a Firing OneLink Click scenario, the Podcast app fires a OneLink URL click (or impression) when a user is exposed to the ad.
-* Normally this occurs at the end of an ad, but it can be timed differently.
-* Users, who install an app after listening to a podcast ad, are attributed according to the OneLink parameters.
+* En un escenario de activación de un clic de OneLink, la aplicación de podcast activa un clic en una URL de OneLink (o una impresión) cuando un usuario está expuesto al anuncio.
+* Normalmente esto ocurre al final de un anuncio, pero se puede programar de otra forma.
+* Los usuarios que instalan una aplicación después de escuchar un anuncio de podcast se atribuyen según los parámetros de OneLink.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> You decide to promote your app on the "Making history" podcast, which supports firing OneLink directly after users listen to the ad.
+> Decides promocionar tu aplicación en el pódcast «Making history», que permite activar OneLink directamente después de que los usuarios escuchen el anuncio.
 >
-> The OneLink URL contains device ID, media source "podcast" (&pid=podcast), and the campaign name "making history" (&c=making%20history).
+> La URL de OneLink contiene el ID de dispositivo, la fuente de medios «podcast» (&pid=podcast) y el nombre de la campaña «making history» (&c=making%20history).
 >
-> The ad mentions the name of your app several times, but without a specific URL. Yet, in AppsFlyer, users that install the app are attributed to the "podcast" media source and the "making history" campaign.
+> El anuncio menciona varias veces el nombre de tu aplicación, pero sin una URL específica. Sin embargo, en AppsFlyer, los usuarios que instalan la aplicación se atribuyen a la fuente de medios «podcast» y a la campaña «making history».
 
-#### Who gets the attribution?
+#### ¿Quién obtiene la atribución?
 
-In AppsFlyer, the "podcast" media source is considered a custom media source, and not an integrated partner. However, by integrating with AppsFlyer, Podcast app owners can receive postbacks for installs attributed to them. Podcast app owners are welcome to <Anchor target="_blank" href="https://www.appsflyer.com/get-started/partners">contact</Anchor> AppsFlyer's partner development group.
+En AppsFlyer, la fuente de medios «podcast» se considera una fuente de medios personalizada, y no un partner integrado. Sin embargo, al integrarse con AppsFlyer, los propietarios de aplicaciones de pódcast pueden recibir postbacks de las instalaciones que se les atribuyan. Los propietarios de aplicaciones de pódcast pueden <Anchor target="_blank" href="https://www.appsflyer.com/get-started/partners">ponerse en contacto</Anchor> con el grupo de desarrollo de partners de AppsFlyer.
 
-<div data-zendesk-anchors="01JB9NB6DY4ZTS1VAK9S0QSM2R=podcast-attribution-methods 01JB9NB6E5BHETTEY7Q0WD8JXE=dedicated-landing-page 01JB9NB6E9DZXTJTGDPT6HA3FS=example 01JB9NB6EANCCA0FG7ZQY48VSB=firing-onelink-click-from-a-podcast-app 01JB9NB6EDW22XGAM2HCA3CY9Q=example-1 01JB9NB6EDFJ3YNP1JYKDGPHEX=who-gets-the-attribution" />
+<div data-zendesk-anchors="podcast-attribution-methods=m%C3%A9todos-de-atribuci%C3%B3n-de-podcasts 01JB9NB6DY4ZTS1VAK9S0QSM2R=m%C3%A9todos-de-atribuci%C3%B3n-de-podcasts dedicated-landing-page=p%C3%A1gina-de-aterrizaje-espec%C3%ADfica 01JB9NB6E5BHETTEY7Q0WD8JXE=p%C3%A1gina-de-aterrizaje-espec%C3%ADfica 01JB9NB6E9DZXTJTGDPT6HA3FS=ejemplo firing-onelink-click-from-a-podcast-app=activaci%C3%B3n-de-un-clic-de-onelink-desde-una-aplicaci%C3%B3n-de-podcast 01JB9NB6EANCCA0FG7ZQY48VSB=activaci%C3%B3n-de-un-clic-de-onelink-desde-una-aplicaci%C3%B3n-de-podcast 01JB9NB6EDW22XGAM2HCA3CY9Q=ejemplo-1 who-gets-the-attribution=qui%C3%A9n-obtiene-la-atribuci%C3%B3n 01JB9NB6EDFJ3YNP1JYKDGPHEX=qui%C3%A9n-obtiene-la-atribuci%C3%B3n" />

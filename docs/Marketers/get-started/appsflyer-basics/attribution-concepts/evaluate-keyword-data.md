@@ -1,5 +1,5 @@
 ---
-title: Evaluate Keyword data
+title: Datos de palabras clave
 metadata:
   keywords:
     - Marketers
@@ -12,68 +12,67 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-07-25T08:19:25Z'
-  edited_at: '2026-06-11T08:43:58Z'
+  edited_at: '2026-08-12T11:57:00Z'
   id: 17255366785553
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/17255366785553-Evaluate-Keyword-data
+  url: https://support.appsflyer.com/hc/es/articles/17255366785553
 ---
-> **At a glance:** Get detailed keyword data that lets you see which search terms are most popular, so you can optimize organic conversions.
+> **En resumen:** Obtén datos detallados de palabras clave que te permiten ver qué términos de búsqueda son los más populares, para que puedas optimizar las conversiones orgánicas.
 
-## Keyword data
+## Datos de palabras clave
 
-Organic search is a valuable traffic source for your apps. Organic users don't incur acquisition costs and are usually among the most engaged cohorts.
+La búsqueda orgánica es una fuente de tráfico valiosa para tus aplicaciones. Los usuarios orgánicos no incurren en costos de adquisición y suelen estar entre las cohortes más comprometidas.
 
-With a few tweaks to your app page, it is possible to increase the amount of new organic installs. To optimize organic searches, you need to get organic keyword data for your app.
+Con algunos ajustes en la página de tu aplicación, es posible aumentar la cantidad de nuevas instalaciones orgánicas. Para optimizar las búsquedas orgánicas, necesitas obtener datos de palabras clave orgánicas para tu aplicación.
 
-### iOS keywords
+### palabras clave de iOS
 
-If you work with Apple Ads, you can get <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#get-keyword-data">detailed keyword data</Anchor> for your **non-organic** users attributed to Apple Ads. In iOS, **organic** keyword data is not available.
+Si trabajas con Apple Search Ads, puedes obtener datos detallados de palabras clave para tus usuarios no orgánicos atribuidos a Apple Search Ads. En iOS, los datos de palabras clave orgánicas no están disponibles.
 
-### Android keywords
+### Palabras clave de Android
 
-Google shares organic keyword data (on the Referrer URL) for users that do the following:
+Google comparte datos de palabras clave orgánicas (en la URL de referencia) para los usuarios que hacen lo siguiente:
 
-* Use Android devices
-* Use Chrome browser
-* Visit Google.com and perform a search
-* Install an app from the Google results page
-* Launch the app
+* Usa dispositivos Android
+* Usa el navegador Chrome
+* Visita Google.com y realiza una búsqueda
+* Instalar una aplicación desde la página de resultados de Google
+* Inicie la aplicación.
 
-The SDK extracts the keywords when provided by Google in the *&utm\_term* parameter of the referrer if it is part of the link to Google Play. The values where possible are contained in the following AppsFlyer raw data fields: *http\_referrer*, g*p\_broadcast\_referrer*, *keywords.*
+El SDK extrae las palabras clave cuando son proporcionadas por Google en el parámetro &utm\_term del referente si es parte del enlace a Google Play. Los valores donde sea posible se encuentran en los siguientes campos de datos en bruto de AppsFlyer: http\_referrer, gp\_broadcast\_referrer, keywords.
 
-**Expect that less than 1% of organic Android users follow this funnel and have organic keyword data**.
+Se espera que menos del 1% de los usuarios orgánicos de Android sigan este embudo y tengan datos de palabras clave orgánicas.
 
-In other scenarios, Google does not share organic keyword data. For example, users searching in Google Play don't have organic keyword data.
+En otros escenarios, Google no comparte datos de palabras clave orgánicas. Por ejemplo, los usuarios que buscan en Google Play no tienen datos de palabras clave orgánicas.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> This limitation is applied by Google to all external vendors, including all attribution vendors.
+> Esta limitación es aplicada por Google a todos los proveedores externos, incluidos todos los proveedores de atribución.
 
-### Using the keyword data
+### Usando los datos de palabras clave
 
-Organic keyword data is found in the following:
+Los datos de palabras clave orgánicas se encuentran en lo siguiente:
 
-* **Raw organic data reports**  
-  In AppsFlyer, from the side menu, select **Export** > **Raw Data Export** to view the breakdown of used organic keywords.
-* **Advanced reports**   
-  Go to <Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot</Anchor>, <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Retention, and Cohort</Anchor> reports and group by keywords.  
-  Compare the quality of organic users based on their keywords.
-* <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API</Anchor> messages
+* Informes de datos orgánicos en bruto  
+  En AppsFlyer, desde el menú lateral, selecciona Informe > Exportación de Datos en Crudo para ver el desglose de las palabras clave orgánicas utilizadas.
+* Informes avanzados   
+  Ve a los informes de Pivot, Retención y Cohorte y agrupa por palabras clave.  
+  Compara la calidad de los usuarios orgánicos según sus palabras clave.
+* Mensajes de <Anchor target="_blank" href="/marketers/es/docs/push-api-streaming-raw-data">Push API</Anchor>
 
-### Testing organic keyword data
+### Pruebas de datos de palabras clave orgánicas
 
-1. Use an <Anchor target="_blank" href="/marketers/docs/registering-test-devices">allowlisted</Anchor> Android device.
-2. Open Chrome browser and go to Google.com.
-3. Use a strong keyword to search for your app.   
-   This example uses "**hotels tonight**".  
+1. Usa un dispositivo Android <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices">incluido en la lista de permitidos</Anchor>.
+2. Abre el navegador Chrome y ve a Google.com.
+3. Utiliza una palabra clave fuerte para buscar tu aplicación.   
+   Este ejemplo utiliza "hoteles esta noche".  
      
    [<Image alt="organic_keywords_search.jpg" src="https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg" width="426px" />](https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg)
-4. Click ***Install*** to be redirected to the Google Play Store.
-5. Install and launch the app.  
+4. Haga clic en Instalar para ser redirigido a Google Play Store.
+5. Instala y lanza la aplicación.  
    [<Image alt="Hotels_Tonight_3.png" src="https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png" width="373px" />](https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png)
-6. Search for the keyword in the AppsFlyer sources described above.
+6. Busque la palabra clave en las fuentes de AppsFlyer descritas arriba.
 
-<div data-zendesk-anchors="h_01HKA1D1TW1R20X6K05Q9GX904=keyword-data h_01HKA1D1TW9YXBMGERHW4EHZZN=ios-keywords h_01HKA1D1TWT1VQ6NZ789BTCZJX=android-keywords h_01HKA1D1TW7E2RM7SXC9R5SA99=note using-the%C2%A0keyword%C2%A0data=using-thekeyworddata h_01HKA1D1TWRPGTNGJKF7T1R71B=using-thekeyworddata testing-organic%C2%A0keyword%C2%A0data=testing-organickeyworddata h_01HKA1D1TW5W9A72V2NMPX932H=testing-organickeyworddata" />
+<div data-zendesk-anchors="keyword-data=datos-de-palabras-clave h_01HKA1D1TW1R20X6K05Q9GX904=datos-de-palabras-clave ios-keywords=palabras-clave-de-ios h_01HKA1D1TW9YXBMGERHW4EHZZN=palabras-clave-de-ios android-keywords=palabras-clave-de-android h_01HKA1D1TWT1VQ6NZ789BTCZJX=palabras-clave-de-android h_01HKA1D1TW7E2RM7SXC9R5SA99=nota using-the%C2%A0keyword%C2%A0data=usando-los-datos-de-palabras-clave h_01HKA1D1TWRPGTNGJKF7T1R71B=usando-los-datos-de-palabras-clave testing-organic%C2%A0keyword%C2%A0data=pruebas-de-datos-de-palabras-clave-org%C3%A1nicas h_01HKA1D1TW5W9A72V2NMPX932H=pruebas-de-datos-de-palabras-clave-org%C3%A1nicas" />

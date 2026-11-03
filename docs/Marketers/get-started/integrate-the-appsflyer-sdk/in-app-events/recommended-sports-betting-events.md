@@ -1,5 +1,5 @@
 ---
-title: Recommended sports betting events
+title: Eventos recomendados para apuestas deportivas
 metadata:
   keywords:
     - Developers
@@ -13,280 +13,279 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-11-11T13:24:45Z'
-  edited_at: '2023-12-04T11:47:06Z'
+  edited_at: '2026-08-12T12:01:46Z'
   id: 4410672219025
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4410672219025-Recommended-sports-betting-events
+  url: https://support.appsflyer.com/hc/es/articles/4410672219025
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your sports betting app.
+> **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su viaje como usuarios registrando estos eventos in-app sugeridos para tu aplicación de apuestas deportivas.
 
-## <Image alt="soccer_ball.png" src="https://files.readme.io/2c5150b2c50ec166878cd976154dc81c0dc8a1e710fa8869aa582b535313b464-4413968925585.png" width="71px" /> Sports betting
+## <Image alt="balón_de_fútbol.png" src="https://files.readme.io/2c5150b2c50ec166878cd976154dc81c0dc8a1e710fa8869aa582b535313b464-4413968925585.png" width="71px" /> Apuestas deportivas
 
-Sports betting apps allow bettors to place bets on a range of sports markets. The typical events that we suggest recording are deposits, placing bets, and withdrawals.
+Las aplicaciones de apuestas deportivas permiten a los apostantes realizar apuestas en una variedad de mercados deportivos. Los eventos típicos que sugerimos registrar son los depósitos, realizar apuestas y las retiradas.
 
-Recording events can help you determine:
+Registrar estos eventos puede ayudarte a determinar:
 
-* Quality of your app users
-* How engaged users are
-* Revenue that is generated through bets
-* What type of bets generate the lowest or highest revenue
+* Calidad de los usuarios de tu aplicación
+* Cuán involucrados están los usuarios.
+* Ingresos generados a través de las apuestas
+* Qué tipos de apuestas generan los ingresos más bajos o más altos
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * (Coming soon) To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=gaming">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=gaming&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * (Próximamente) Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=gaming">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=gaming&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Puedes encontrar instrucciones detalladas para tu desarrollador en el **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.**
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para obtener más información sobre la grabación de eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía de eventos in-app</Anchor>.
 
 [![In_appEvents_UserJourneys_-_Sports_betting__5_.png](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the sports betting vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos típicas del vertical de apuestas deportivas. Cada estructura incluye un nombre de evento predefinido y los parámetros del evento sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Iniciar sesión (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Disparador**
 
-Whenever the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Completar registro (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Learn how many users installed the app and completed the signup process, and what signup methods your users prefer.
+Descubrir cuántos usuarios instalaron la aplicación y completaron el proceso de registro, y qué métodos de registro prefieren tus usuarios.
 
-**Trigger**
+**Disparador**
 
-When the user completes the signup process and the registration is confirmed by the app (without errors).
+Cuando el usuario completa el proceso de registro y la aplicación confirma el registro (sin errores).
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | email, Facebook |
+| af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides an event structure that includes a custom event name and the suggested event parameter to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una estructura de evento que incluye un nombre de evento personalizado y los parámetros del evento sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="first-time-deposit-first_time_deposit" />
 
-<Accordion title="First time deposit (first_time_deposit)">
+<Accordion title="Primer depósito (first_time_deposit)">
 
-**Purpose**
+**Finalidad**
 
-Recording this event can help you determine:
+Registrar este evento puede ayudarte a determinar:
 
-* When users make a first-time deposit
-* Revenue generated by first-time deposits
+* Cuando los usuarios realizan un primer depósito
+* Ingresos generados por los primeros depósitos
 
-In addition, ad network partners can optimize your advertising campaigns by targeting users that have made first-time deposits.
+Además, los Partners de ad network pueden optimizar tus campañas publicitarias mediante targeting a usuarios que han realizado un primer depósito.
 
-**Trigger**
+**Disparador**
 
-First time the user makes a deposit into their betting account
+La primera vez que el usuario realiza un depósito en su cuenta de apuestas
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Monetary value of the deposit that was made | 200 |
-| af\_currency | Currency in which the deposit was made | AUD |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Valor monetario del depósito realizado | 200 |
+| af\_currency | Moneda en la que se realizó el depósito | AUD |
 
 </Accordion>
 
 <div id="deposit-deposit" />
 
-<Accordion title="Deposit (deposit)">
+<Accordion title="Depósito (deposit)">
 
-**Purpose**
+**Finalidad**
 
-Determine the value of the deposits being made by your users.
+Determina el valor de los depósitos que realizan tus usuarios.
 
-**Trigger**
+**Disparador**
 
-Subsequent deposit the user makes after the first time deposit
+Depósito posterior que el usuario realiza después del primer depósito
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Monetary value of the deposit that was made | 200 |
-| af\_currency | Currency in which the deposit was made | AUD |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Valor monetario del depósito realizado | 200 |
+| af\_currency | Moneda en la que se realizó el depósito | AUD |
 
 </Accordion>
 
 <div id="placed-bet-placed_bet" />
 
-<Accordion title="Placed bet (placed_bet)">
+<Accordion title="Apuesta realizada (placed_bet)">
 
-**Purpose**
+**Finalidad**
 
-Learn which events drive the least amount of revenue, and which events drive the most.
+Descubre qué eventos generan la menor cantidad de ingresos y cuáles generan la mayor.
 
-**Trigger**
+**Disparador**
 
-When a bet is successfully placed
+Cuando se realiza una apuesta correctamente
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Monetary value of the bet that was placed | 100 |
-| af\_currency | Currency in which the bet was placed | AUD |
-| event\_number | Unique identifier of the event that the bet was placed on | 123789 |
-| event\_date | Date of the event that was bet on | 13122021 |
-| event\_time | Time of the event that was bet on | 17:30 |
-| transaction\_id | ID of the placed bet | 221 |
+| af\_price | Valor monetario de la apuesta realizada | 100 |
+| af\_currency | Moneda en la que se realizó la apuesta | AUD |
+| event\_number | Identificador único del evento en el que se realizó la apuesta | 123789 |
+| Cadena | Fecha del evento en el que se apostó | 13122021 |
+| event\_time | Hora del evento en el que se apostó | 17:30 |
+| transaction\_id | ID de la apuesta realizada | 221 |
 
 </Accordion>
 
 <div id="withdrawal-withdrawal" />
 
-<Accordion title="Withdrawal (withdrawal)">
+<Accordion title="Retirada (retirada)">
 
-**Purpose**
+**Finalidad**
 
-Learn when users withdraw money that they previously deposited into their betting account.
+Descubre cuándo los usuarios retiran dinero que habían depositado previamente en su cuenta de apuestas.
 
-**Trigger**
+**Disparador**
 
-When a user withdraws money from their betting account
+Cuando un usuario retira dinero de su cuenta de apuestas
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Monetary value of the withdrawal. Record as a negative revenue value. | -100 |
-| af\_currency | Currency that was withdrawn | AUD |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Valor monetario de la retirada. Regístralo como un valor de ingresos negativo. | -100 |
+| af\_currency | Moneda que se retiró | AUD |
 
 </Accordion>
 
 <div id="bonus-bet-bonus_bet" />
 
-<Accordion title="Bonus bet (bonus_bet)">
+<Accordion title="Apuesta de bonificación (bonus_bet)">
 
-**Purpose**
+**Finalidad**
 
-Bonus bets are optional bets that app owners can use to award bettors as a sign-up or deposit incentive, or as a promotion to place a certain bet type.
+Las apuestas de bonificación son apuestas opcionales que los propietarios de apps pueden usar para recompensar a los apostantes como incentivo de registro o depósito, o como promoción para realizar un determinado tipo de apuesta.
 
-Recording this event helps you determine the total value of bonus bets given to users and the number of users that placed a bonus bet.
+Registrar este evento te ayuda a determinar el valor total de las apuestas de bonificación otorgadas a los usuarios y el número de usuarios que realizaron una apuesta de bonificación.
 
-**Trigger**
+**Disparador**
 
-When a bet is successfully placed
+Cuando se realiza una apuesta correctamente
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Monetary value of the bet placed | 100 |
-| af\_currency | Currency that bet was placed in | AUD |
-| event\_number | Unique identifier of the event that the bet was placed on | 123789 |
-| event\_date | Date of the event that was bet on | 13122021 |
-| event\_time | Time of the event that was bet on | 17:30 |
-| bonus\_id | ID of the bonus bet | 221 |
+| af\_price | Valor monetario de la apuesta realizada | 100 |
+| af\_currency | Moneda en la que se realizó la apuesta | AUD |
+| event\_number | Identificador único del evento en el que se realizó la apuesta | 123789 |
+| Cadena | Fecha del evento en el que se apostó | 13122021 |
+| event\_time | Hora del evento en el que se apostó | 17:30 |
+| bonus\_id | ID de la apuesta de bonificación | 221 |
 
 </Accordion>
 
 <div id="cancels-bet-canceled_bet" />
 
-<Accordion title="Cancels bet (canceled_bet)">
+<Accordion title="Cancela la apuesta (canceled_bet)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you:
+Este evento puede ayudarte a:
 
-* Log users that constantly cancel bets
-* Learn how many bets are canceled
-* Learn the reasons why a bet is canceled
+* Registrar a los usuarios que cancelan apuestas constantemente
+* Saber cuántas apuestas se cancelan
+* Conocer los motivos por los cuales se cancela una apuesta
 
-**Trigger**
+**Disparador**
 
-When the user cancels a bet
+Cuando el usuario cancela una apuesta
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Monetary value of the bet placed | 100 |
-| af\_currency | Currency that bet was placed in | AUD |
-| event\_number | Unique identifier of the event that the bet was placed on | 123789 |
-| event\_date | Date of the event that was bet on | 13122021 |
-| event\_time | Time of the event that was bet on | 17:30 |
+| af\_price | Valor monetario de la apuesta realizada | 100 |
+| af\_currency | Moneda en la que se realizó la apuesta | AUD |
+| event\_number | Identificador único del evento en el que se realizó la apuesta | 123789 |
+| Cadena | Fecha del evento en el que se realizó la apuesta | 13122021 |
+| event\_time | Hora del evento en el que se realizó la apuesta | 17:30 |
 
 </Accordion>
 
 <div id="account-deducted-account_deducted" />
 
-<Accordion title="Account deducted (account_deducted)">
+<Accordion title="Cuenta debitada (account_deducted)">
 
-**Purpose**
+**Finalidad**
 
-Log and record debits to user accounts
+Registrar y guardar los débitos en las cuentas de usuario
 
-**Trigger**
+**Disparador**
 
-When a bet is lost
+Cuando se pierde una apuesta
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Monetary value of the bet placed | 100 |
-| af\_currency | Currency that bet was placed in | AUD |
-| account\_number | Unique identifier of the user's account | 15780 |
-| event\_number | Unique identifier of the event that the bet was placed on | 123789 |
-| event\_date | Date of the event that was bet on | 13122021 |
-| event\_time | Time of the event that was bet on | 17:30 |
+| af\_price | Valor monetario de la apuesta realizada | 100 |
+| af\_currency | Moneda en la que se realizó la apuesta | AUD |
+| account\_number | Identificador único de la cuenta del usuario | 15780 |
+| event\_number | Identificador único del evento en el que se realizó la apuesta | 123789 |
+| Cadena | Fecha del evento en el que se realizó la apuesta | 13122021 |
+| event\_time | Hora del evento en el que se realizó la apuesta | 17:30 |
 
 </Accordion>
 
 <div id="account-credited-account_credited" />
 
-<Accordion title="Account credited (account_credited)">
+<Accordion title="Cuenta acreditada (account_credited)">
 
-**Purpose**
+**Propósito**
 
-Log and record credits to user accounts
+Registrar y guardar los créditos en las cuentas de usuario
 
-**Trigger**
+**Disparador**
 
-When a bet is won
+Cuando se gana una apuesta
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Nota | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Monetary value of the bet placed | 100 |
-| af\_currency | Currency that bet was placed in | AUD |
-| account\_number | Unique identifier of the user's account | 15780 |
-| event\_number | Unique identifier of the event that the bet was placed on | 123789 |
-| event\_date | Date of the event that was bet on | 13122021 |
-| event\_time | Time of the event that was bet on | 17:30 |
+| af\_price | Valor monetario de la apuesta realizada | 100 |
+| af\_currency | Divisa en la que se realizó la apuesta | AUD |
+| account\_number | Identificador único de la cuenta del usuario | 15780 |
+| event\_number | Identificador único del evento en el que se realizó la apuesta | 123789 |
+| Cadena | Fecha del evento en el que se apostó | 13122021 |
+| event\_time | Hora del evento en el que se apostó | 17:30 |
 
 </Accordion>
 
-<div data-zendesk-anchors="sports-betting=-sports-betting h_01HGTAE0AT9KD9RKX7XPR7A4AT=-sports-betting h_01HGTAE0ATTMEART2R1BD1ZDSB=important h_01HGTAE0ATYW0RDDZZD5EAR7BZ=recommended-structures-for-predefined-events h_01HGTAE0ATMBJVKS14SGWGK0DG=login-af_login h_01HGTAE0ATHZWSM0R9A6R9BV96=complete-registration-af_complete_registration h_01HGTAE0ATJQDWWBB8D836QRJ5=recommended-structures-for-custom-events h_01HGTAE0AT3ZBH5G16QJW4MGQ1=first-time-deposit-first_time_deposit h_01HGTAE0ATTRCNX1Y4AFJ8VGWC=deposit-deposit h_01HGTAE0ATNW97Y8WJWWXTXX7V=placed-bet-placed_bet h_01HGTAE0ATPB6KHMHHBW7T9B0Q=withdrawal-withdrawal h_01HGTAE0ATGS9VS7QY1974XAPY=bonus-bet-bonus_bet h_01HGTAE0AVKKGGJCB9WWXMWT0D=cancels-bet-canceled_bet h_01HGTAE0AVMB59TDT6AM65DE94=account-deducted-account_deducted h_01HGTAE0AVXMY0J983V9NTYQ2J=account-credited-account_credited" />
+<div data-zendesk-anchors="sports-betting=-apuestas-deportivas h_01HGTAE0AT9KD9RKX7XPR7A4AT=-apuestas-deportivas h_01HGTAE0ATTMEART2R1BD1ZDSB=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAE0ATYW0RDDZZD5EAR7BZ=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAE0ATMBJVKS14SGWGK0DG=login-af_login h_01HGTAE0ATHZWSM0R9A6R9BV96=complete-registration-af_complete_registration recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAE0ATJQDWWBB8D836QRJ5=estructuras-recomendadas-para-eventos-personalizados h_01HGTAE0AT3ZBH5G16QJW4MGQ1=first-time-deposit-first_time_deposit h_01HGTAE0ATTRCNX1Y4AFJ8VGWC=deposit-deposit h_01HGTAE0ATNW97Y8WJWWXTXX7V=placed-bet-placed_bet h_01HGTAE0ATPB6KHMHHBW7T9B0Q=withdrawal-withdrawal h_01HGTAE0ATGS9VS7QY1974XAPY=bonus-bet-bonus_bet h_01HGTAE0AVKKGGJCB9WWXMWT0D=cancels-bet-canceled_bet h_01HGTAE0AVMB59TDT6AM65DE94=account-deducted-account_deducted h_01HGTAE0AVXMY0J983V9NTYQ2J=account-credited-account_credited" />

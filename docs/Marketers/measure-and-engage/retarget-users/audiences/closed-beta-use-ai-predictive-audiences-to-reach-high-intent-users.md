@@ -1,5 +1,7 @@
 ---
-title: '[Closed beta] Use AI Predictive Audiences to reach high-intent users'
+title: >-
+  [Beta cerrada] Utiliza AI Predictive Audiences para llegar a usuarios con alta
+  intención
 metadata:
   keywords:
     - Premium
@@ -14,109 +16,108 @@ x-zendesk:
     - Marketers
     - Audience Segmentation
   created_at: '2026-04-15T09:20:36Z'
-  edited_at: '2026-04-27T10:30:56Z'
+  edited_at: '2026-08-12T12:25:51Z'
   id: 45762246838801
-  locale: en-us
+  locale: es
   section: Audiences
   section_id: 6551336428945
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/45762246838801--Closed-beta-Use-AI-Predictive-Audiences-to-reach-high-intent-users
+  url: https://support.appsflyer.com/hc/es/articles/45762246838801
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Predictive Audiences uses AI to create an audience of users most likely to take a key action, such as purchasing, so you can reach high-intent users, reduce wasted spend, and maximize campaign impact.
+> **Resumen:** Predictive Audiences utiliza IA para crear una audiencia de usuarios con mayor probabilidad de realizar una acción clave, como una compra, para que puedas llegar a usuarios con alta intención, reducir el gasto desperdiciado y maximizar el impacto de las campañas.
 
-<Embed title="[Closed beta] Use AI Predictive Audiences to reach high-intent users" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
+<Embed title="[Beta cerrada] Utiliza AI Predictive Audiences para llegar a usuarios con alta intención" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
 
-## About Predictive Audiences
+## Sobre Predictive Audiences
 
-Predictive Audiences, part of AppsFlyer <Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor>, helps you create AI-powered audiences of users most likely to take a key action. Use it to predict who is most likely to purchase within the next 7 days, so you can focus your campaigns on high-intent users and improve campaign efficiency.
+Predictive Audiences, parte de <Anchor target="_blank" href="/marketers/es/docs/audiences-guide">Audiences</Anchor> de AppsFlyer, te ayuda a crear audiencias impulsadas por IA de usuarios con mayor probabilidad de realizar una acción clave. Utilízalo para predecir quién tiene más probabilidades de realizar una compra durante los próximos 7 días, para que puedas enfocar tus campañas en usuarios con alta intención y mejorar la eficiencia de las campañas.
 
-You can adjust the likelihood range to create a narrower audience of higher-intent users or a broader audience with greater reach, then connect the audience to your partners for activation. Once created, the audience refreshes daily and is automatically and continuously sent to your connected partners.
+Puedes ajustar el rango de probabilidad para crear una audiencia más reducida de usuarios con mayor intención o una audiencia más amplia con mayor alcance, y luego conectar la audiencia con tus partners para activarla. Una vez creada, la audiencia se actualiza diariamente y se envía de forma automática y continua a los partners conectados.
 
-## Create a predictive audience
+## Crear una audiencia predictiva
 
-### Prerequisites
+### Requisitos previos
 
-To get started using Predictive Audiences, follow the steps below:
+Para comenzar a utilizar Predictive Audiences, sigue los pasos a continuación:
 
-* **Prerequisite:** An AppsFlyer <Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor> subscription. Predictive Audiences is currently in beta and is enabled per account. To gain access, contact your CSM.
+* **Requisito previo:** Una suscripción a <Anchor target="_blank" href="/marketers/es/docs/audiences-guide">Audiences</Anchor> de AppsFlyer. Predictive Audiences se encuentra actualmente en beta y se habilita por cuenta. Para obtener acceso, contacta a tu CSM.
 
 <div id="step-1-define-the-goal" />
 
-<Accordion title="Step 1: Define the goal">
+<Accordion title="Paso 1: Definir el objetivo">
 
-In this step, you define what you want Predictive Audiences to predict by selecting the app, target event, and prediction goal for the audience.
+En este paso, defines lo que deseas que Predictive Audiences prediga seleccionando la app, el evento objetivo y el objetivo de predicción para la audiencia.
 
-**To define the goal:**
+**Para definir el objetivo:**
 
-1. Access Audiences by clicking **Engage > Audiences** in the AppsFlyer side menu.
-2. In **Audiences**, click **New predictive audience**.
-3. Enter an audience name.
+1. Accede a Audiences haciendo clic en **Engage > Audiences** en el menú lateral de AppsFlyer.
+2. En **Audiences**, haz clic en **Nueva audiencia predictiva**.
+3. Ingresa un nombre para la audiencia.
 
    [<Image alt="Define goal (values entered).png" src="https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png" width="1666px" />](https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png)
-4. Select an app.
-5. Select a target event.
-6. Select a prediction goal (**Likely to purchase**).
-7. Click **Continue**.
+4. Selecciona una app.
+5. Selecciona un evento objetivo.
+6. Selecciona un objetivo de predicción (**Probabilidad de compra**).
+7. Haz clic en **Continuar**.
 
 </Accordion>
 
 <div id="step-2-set-the-probability-range" />
 
-<Accordion title="Step 2: Set the probability range">
+<Accordion title="Paso 2: Configurar el rango de probabilidad">
 
-In this step, you set the probability range to balance precision and reach. Higher minimum thresholds create smaller, higher-intent audiences, while lower minimum thresholds expand reach while maintaining high performance.
+En este paso, configuras el rango de probabilidad para equilibrar precisión y alcance. Los umbrales mínimos más altos crean audiencias más pequeñas y con mayor intención, mientras que los umbrales mínimos más bajos amplían el alcance manteniendo un alto rendimiento.
 
-You can select a suggested preset or drag the chart markers to customize the range. As you adjust it, the estimated audience size updates in real time, helping you understand the trade-off between scale and conversion likelihood.
+Puedes seleccionar una configuración predefinida sugerida o arrastrar los marcadores del gráfico para personalizar el rango. A medida que lo ajustas, el tamaño estimado de la audiencia se actualiza en tiempo real, ayudándote a comprender el equilibrio entre escala y probabilidad de conversión.
 
-**To set the probability range:**
+**Para configurar el rango de probabilidad:**
 
-1. Choose a preset (**High intent**, **Balanced**, or **Maximum reach**) to set a default range. We recommend selecting **Balanced**.
+1. Elige una configuración predefinida (**Alta intención**, **Equilibrada** o **Máximo alcance**) para establecer un rango predeterminado. Recomendamos seleccionar **Equilibrada**.
 
-**Or**
+**O**
 
-2. To customize the range, drag the minimum and maximum markers on the graph.
+2. Para personalizar el rango, arrastra los marcadores mínimo y máximo en el gráfico.
 
    <Image alt="Set probability range Correct version.png" src="https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png" width="1898px" />
 
-   The **Estimated audience size** updates in real time based on your selections.
+   El **Tamaño estimado de la audiencia** se actualiza en tiempo real según tus selecciones.
 
-#### Compare audiences (optional):
+#### Comparar audiencias (opcional):
 
-Compare Audiences is an optional feature that lets you compare your predictive audience with one or more existing audiences. It allows you to compare performance across key indicators (KPIs), such as return on ad spend (ROAS) and conversion rate. You can select any audience to compare; however, performance data is currently available only for campaigns connected to Facebook, TikTok, Google, or Snap.
+Comparar Audiences es una funcionalidad opcional que te permite comparar tu audiencia predictiva con una o más audiencias existentes. Te permite comparar el rendimiento según indicadores clave (KPIs), como el retorno de la inversión publicitaria (ROAS) y la tasa de conversión. Puedes seleccionar cualquier audiencia para comparar; sin embargo, los datos de rendimiento actualmente solo están disponibles para campañas conectadas a Facebook, TikTok, Google o Snap.
 
 </Accordion>
 
 <div id="step-3-connect-to-partners" />
 
-<Accordion title="Step 3: Connect to partners">
+<Accordion title="Paso 3: Conectar con partners">
 
-In this step, you connect the predictive audience to your partners so it can be activated and uploaded upon creation.
+En este paso, conectas la audiencia predictiva con tus partners para que pueda activarse y cargarse al momento de su creación.
 
-**To connect to partners and activate the audience:**
+**Para conectar partners y activar la audiencia:**
 
-1. Select existing partner connections or add a new connection.
+1. Selecciona conexiones de partners existentes o agrega una nueva conexión.
 
    [<Image alt="Connect to partners.png" src="https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png" width="1633px" />](https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png)
-2. Review your selections in the **Summary** on the right.
-3. Click **Connect and finish**.
+2. Revisa tus selecciones en el **Resumen** del lado derecho.
+3. Haz clic en **Conectar y finalizar**.
 
-Your first predictive audience will be ready within 24 hours and automatically activated with your partners.
+Tu primera audiencia predictiva estará lista dentro de las próximas 24 horas y se activará automáticamente con tus partners.
 
-After creation, your new predictive audience will appear in the **Audiences** table.
+Después de su creación, tu nueva audiencia predictiva aparecerá en la tabla **Audiences**.
 
 </Accordion>
 
-## Traits and limitations
+## Características y limitaciones
 
-| Trait | Description |
+| Caducado | Descripción |
 | --- | --- |
-| Availability | Beta feature enabled per account and requires explicit opt-in. Available currently for ecommerce apps only. |
-| Prediction window | Predicts the likelihood of purchase within 7 days. |
-| One app per audience | Multi-app predictive audiences aren’t supported. |
-| Eligibility-based selection & data limitations | Only eligible apps and events with a minimum amount of data will appear in selection drop-downs (e.g., 1000 active users in the last 30 days). |
-| Data protection | Your audience data may be processed to support AI-powered Audiences capabilities. Your account data is never shared and is used only to improve internal models and predictions. |
-| Daily refresh | The audience is refreshed and uploaded to partners daily. |
+| Disponibilidad | Funcionalidad beta habilitada por cuenta y que requiere activación explícita. Actualmente disponible únicamente para apps de ecommerce. |
+| Ventana de predicción | Predice la probabilidad de compra dentro de los próximos 7 días. |
+| Una app por audiencia | Las audiencias predictivas multi-app no son compatibles. |
+| Selección basada en elegibilidad y limitaciones de datos | Solo las apps y eventos elegibles con una cantidad mínima de datos aparecerán en los menús desplegables de selección (por ejemplo, 1.000 usuarios activos durante los últimos 30 días). |
+| Protección de datos | Los datos de tu audiencia pueden procesarse para respaldar las capacidades de Audiences impulsadas por IA. Los datos de tu cuenta nunca se comparten y se utilizan únicamente para mejorar los modelos internos y las predicciones. |
+| Actualización diaria | La audiencia se actualiza y se carga a los partners diariamente. |
 
-<div data-zendesk-anchors="h_01KP871KNVB69BFATSZYVK9SMM=about-predictive-audiences h_01KP871KNVC3W8WNA9XVCFYCMA=create-a-predictive-audience h_01KP871KNVHD2VK8BQMGQ42QX0=prerequisites h_01KP8835A2Z5QRHGJKR7BH6H1W=step-1-define-the-goal h_01KP8835A2746F64JRHCF9CVF2=step-2-set-the-probability-range h_01KPJJH00TMZ2NQKPDN07RW1B1=compare-audiences-optional h_01KP8835A203NTEVCS3VPQDB0D=step-3-connect-to-partners h_01KP871KNVWVAQMXYXNT6Q0D0P=traits-and-limitations" />
+<div data-zendesk-anchors="about-predictive-audiences=sobre-predictive-audiences h_01KP871KNVB69BFATSZYVK9SMM=sobre-predictive-audiences create-a-predictive-audience=crear-una-audiencia-predictiva h_01KP871KNVC3W8WNA9XVCFYCMA=crear-una-audiencia-predictiva prerequisites=requisitos-previos h_01KP871KNVHD2VK8BQMGQ42QX0=requisitos-previos h_01KP8835A2Z5QRHGJKR7BH6H1W=step-1-define-the-goal h_01KP8835A2746F64JRHCF9CVF2=step-2-set-the-probability-range compare-audiences-optional=comparar-audiencias-opcional h_01KPJJH00TMZ2NQKPDN07RW1B1=comparar-audiencias-opcional h_01KP8835A203NTEVCS3VPQDB0D=step-3-connect-to-partners traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01KP871KNVWVAQMXYXNT6Q0D0P=caracter%C3%ADsticas-y-limitaciones" />

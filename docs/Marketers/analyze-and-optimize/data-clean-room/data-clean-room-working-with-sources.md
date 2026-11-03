@@ -1,5 +1,5 @@
 ---
-title: Data Clean Room—Working with sources
+title: 'Data Clean Room: trabajar con fuentes'
 metadata:
   keywords:
     - Advertisers
@@ -14,475 +14,482 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2022-03-27T10:58:23Z'
-  edited_at: '2026-08-14T16:22:51Z'
+  edited_at: '2026-08-22T00:06:02Z'
   id: 5041487011601
-  locale: en-us
+  locale: es
   section: Data Clean Room
   section_id: 4591191779217
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/5041487011601-Data-Clean-Room-Working-with-sources
+  url: https://support.appsflyer.com/hc/es/articles/5041487011601
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** Set up the custom data sources you share with the Data Clean Room (DCR) for matching with attribution data and creating DCR reports.
+> **At a glance:** Configura las fuentes de datos personalizadas que compartes con Data Clean Room (DCR) para emparejarlas con los datos de atribución y crear reportes de DCR.
 
-## Introduction
+## Introducción
 
-Many DCR reports are designed to match your **attribution data** with data from your **custom data sources.** This article contains everything you need to know about working with your custom data sources, including how to:
+Muchos reportes de DCR están diseñados para emparejar tus **datos de atribución** con los datos de tus **fuentes personalizadas.** Este artículo contiene todo lo que necesitas saber para trabajar con tus fuentes personalizadas, incluyendo cómo:
 
-* [Format the data source](/docs/data-clean-room-working-with-sources#source-requirements)
-* [Create the source](/docs/data-clean-room-working-with-sources#creating-a-source) within the DCR
-  * [Name the source](/docs/data-clean-room-working-with-sources#1-name-the-source)
-  * [Specify the location](/docs/data-clean-room-working-with-sources#2-specify-the-source-location) from which the DCR will retrieve the data source
-  * [Define the structure](/docs/data-clean-room-working-with-sources#3-define-the-source-structure) of the source (labeling fields as metrics, dimensions, and identifiers)
-  * [Save the source](/docs/data-clean-room-working-with-sources#4-save-the-source)
-* [Update source data](/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing) on a regular basis to trigger report processing
-* [Work with existing sources](/docs/data-clean-room-working-with-sources#working-with-existing-sources)
+* [Formatear los datos de las fuentes](/docs/data-clean-room-working-with-sources#requisitos-de-los-datos-de-las-fuentes)
+* [Crear la fuente](/docs/data-clean-room-working-with-sources#crear-una-fuente) dentro de DCR
+  * [Asignar un nombre a la fuente](/docs/data-clean-room-working-with-sources#1-name-the-source)
+  * [Especificar la ubicación](/docs/data-clean-room-working-with-sources#2-specify-the-source-location) desde la que DCR recuperará los datos de las fuentes
+  * [Definir la estructura](/docs/data-clean-room-working-with-sources#3-define-the-source-structure) de la fuente (etiquetando los campos como métricas, dimensiones e identificadores)
+  * [Guardar la fuente](/docs/data-clean-room-working-with-sources#4-save-the-source)
+* [Actualiza los datos de origen](/docs/data-clean-room-working-with-sources#actualización-de-las-fuentes-para-activar-el-procesamiento-de-reportes) de forma regular para activar el procesamiento de reportes
+* [Trabajar con fuentes existentes](/docs/data-clean-room-working-with-sources#trabajar-con-fuentes-existentes)
 
 > 🚧 **Important**
 >
-> **Before you begin**
+> **Antes de comenzar**
 >
-> Before you create custom data sources, you should first:
+> Antes de crear fuentes personalizadas, primero debes hacer lo siguiente:
 >
-> * [Required] <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services">Set up the cloud services</Anchor> from which the DCR will retrieve the data. Two types of cloud services are supported:
->   * **Data warehouses:** BigQuery and Snowflake
->   * **Cloud storage buckets:** Amazon S3 (AWS) and GCS
-> * [Optional] <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#creating-inbound-connections">Create inbound connections</Anchor> in the AppsFlyer platform to connect these cloud services to the DCR.
->   * If these connections were not set up previously, you will be prompted to set them up during source creation.
+> * [Obligatorio] <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services">Configura los servicios en la nube</Anchor> desde los que DCR recuperará los datos. Se admiten dos tipos de servicios en la nube:
+>   * **Almacenes de datos:** BigQuery y Snowflake
+>   * **Buckets de almacenamiento en la nube:** Amazon S3 (AWS) y GCS
+> * [Opcional] <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#crear-conexiones-entrantes">Crea conexiones entrantes</Anchor> en la plataforma AppsFlyer para conectar estos servicios en la nube a DCR.
+>   * Si estas conexiones no se configuraron previamente, se te pedirá que las establezcas durante la creación de la fuente.
 
-## Source requirements
+## Requisitos de los datos de las fuentes
 
-Sources must meet these requirements in order to prevent errors in source creation and report processing.
+Las fuentes deben cumplir estos requisitos para evitar errores en la creación de fuentes y en el procesamiento de reportes.
 
 <div id="data-format" />
 
-<Accordion title="Data format (relevant to all data sources)">
+<Accordion title="Formato de los datos (relevante para todas las fuentes)">
 
-Data within sources must meet these requirements:
+Los datos dentro de las fuentes deben cumplir estos requisitos:
 
-* **Date and time:**
-  * **Format:** yyyy-MMM-dd hh:mm:ss (*for example*, `2023-APR-18 15:30:35`)
-  * **Time zone:** UTC
-* **Numbers:** maximum 2 digits following the decimal point
-* **String length:** maximum of 256 characters
-* **Character limitations:**
-  * **For field names (column headers):** no spaces or special characters
-  * **All other data:** no limitations (all characters are valid)
+* **Fecha y hora:**
+  * **Formato:** aaaa-MMM-dd hh:mm:ss (*por ejemplo*, `2023-APR-18 15:30:35`)
+  * **Zona horaria:** UTC
+* **Números:** máximo 2 dígitos después del punto decimal
+* **Longitud de la cadena:** máximo 256 caracteres
+* **Limitaciones de caracteres:**
+  * **Para los nombres de campo (encabezado de columna):** sin espacios ni caracteres especiales
+  * **Todos los demás datos:** sin limitaciones (todos los caracteres son válidos)
 
 </Accordion>
 
 <div id="table-columns" />
 
-<Accordion title="Table columns (relevant only to data sources in data warehouses)">
+<Accordion title="Columnas de la tabla (relevantes solo para las fuentes en almacenes de datos)">
 
-In addition to data shared for processing, source tables in BigQuery or Snowflake must include 2 additional columns – one for **date** and one for **version:**
+Además de los datos compartidos para su procesamiento, las tablas de fuentes en BigQuery o Snowflake deben incluir 2 columnas adicionales, una para la **fecha** y otra para la **versión:**
 
-* **Date:**
-  * **Column header:** `dt`
-  * **Column type:** date
-  * **Data format:** yyyy-mm-dd (*for example*, `2023-04-18`)
-  * **Additional:** BigQuery tables must be <Anchor target="_blank" href="https://cloud.google.com/bigquery/docs/partitioned-tables">partitioned</Anchor> by this column
-* **Version:**
-  * **Column header:** `v`
-  * **Column type:** string
-  * **Data format:** number (for example, `1`, `2`, `3`, `10`)
-  * **Important!** A new version of a report is triggered each time the DCR detects a new value in this column. To ensure the completeness of your report, be sure to populate the source table with a complete set of data whenever the column value is changed.
+* **Fecha:**
+  * **Encabezado de columna:** `dt`
+  * **Tipo de columna:** fecha
+  * **Formato de los datos:** aaaa-mm-dd (*por ejemplo*, `2023-04-18`)
+  * **Adicional:** las tablas de BigQuery deben estar <Anchor target="_blank" href="https://cloud.google.com/bigquery/docs/partitioned-tables">particionadas</Anchor> por esta columna
+* **Versión:**
+  * **Encabezado de columna:** `v`
+  * **Tipo de columna:** cadena
+  * **Formato de los datos:** número (por ejemplo, `1`, `2`, `3`, `10`)
+  * **Nota:** **Importante:** Una nueva versión de un reporte se activa cada vez que DCR detecta un nuevo valor en esta columna. Para garantizar la integridad de tu reporte, asegúrate de rellenar la tabla de la fuente con un conjunto completo de datos cada vez que se cambie el valor de la columna.
 
 </Accordion>
 
 <div id="file-format" />
 
-<Accordion title="File name and format (relevant only to data sources in cloud storage buckets)">
+<Accordion title="Nombre y formato del archivo (relevante solo para las fuentes en los buckets de almacenamiento en la nube)">
 
-Data source files stored in Amazon S3 or GCS must meet these file name and format requirements:
+Los archivos de fuentes almacenados en Amazon S3 o GCS deben cumplir los siguientes requisitos de nombre y formato de archivo:
 
-* File name must comply with <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>
-* CSV or GZIP format
-  * The file underlying GZIP compression must be a CSV file.
-* Number of data source files per [data folder](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version):
-  * **CSV:** Maximum of 1
-  * **GZIP:** Maximum of 1 single-part file. Multi-part GZIP files are supported when named as follows: `filename_part01.gz`, `filename_part02.gz`, etc.
+* El nombre del archivo debe cumplir los <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">requisitos de nomenclatura de DCR</Anchor>
+* Formato CSV o GZIP
+  * El archivo que se encuentra bajo la compresión GZIP debe ser un archivo CSV.
+* Número de archivos de fuentes de datos por [carpeta de datos](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version):
+  * **CSV:** máximo 1
+  * **GZIP:** máximo 1 archivo de una sola parte. Los archivos GZIP de varias partes son compatibles cuando se denominan de la siguiente manera: `filename_part01.gzip`, `filename_part02.gzip`, etc.
 
 </Accordion>
 
-## Creating a source
+## Crear una fuente
 
-The process of creating a source consists of **all the steps described below.** They are separated into tabs simply for ease of reading.
+El proceso de creación de una fuente consiste en **todos los pasos descritos a continuación.** Se separan en pestañas simplemente para facilitar la lectura.
 
-**Follow these steps to create a source:**
+**Sigue estos pasos para crear una fuente:**
 
 <div id="1-name-the-source" />
 
-<Accordion title="#1: Name the source">
+<Accordion title="#1: Asignar un nombre a la fuente">
 
-1. Go to the **Sources** tab of the **Data Clean Room.**
-2. Click the **+ New source** button.  
-   The **New source** page opens.
-3. Enter the name of the source in the upper-left corner.
-   * This can be any unique name that will help you identify the source in the DCR platform. For cloud integrations, the name doesn't need to match the file name.
-   * **Important!** Ensure that the source name is different from all other sources in your account or you won't be able to [save the source](/docs/data-clean-room-working-with-sources#4-save-the-source).
-   * Source name requirements:
-     * Length: 2-80 characters
-     * Valid characters:
-       * letters `(A-Z, a-z)`
-       * numbers `(0-9)`, *cannot be the first character of a name;*
-     * Invalid characters:
-       * spaces
-       * all other symbols or special characters
+1. Ve a la pestaña **Fuentes** de **Data Clean Room.**
+2. Haz clic en el botón **+ Nueva fuente**.  
+   Se abre la página **Nueva fuente**.
+3. Introduce el nombre de la fuente en la esquina superior izquierda.
+   * Este puede ser cualquier nombre único que te ayude a identificar la fuente en la plataforma DCR. No es necesario que coincida con el nombre del archivo.
+   * **¡Importante!** Asegúrate de que el nombre de la fuente sea diferente en todas las demás fuentes de tu cuenta o no podrás [guardar la fuente](/docs/data-clean-room-working-with-sources#4-save-the-source).
+   * Requisitos del nombre de la fuente:
+     * Longitud: 2-80 caracteres
+     * Caracteres válidos:
+       * letras `(A-Z, a-z)`
+       * números `(0-9)`, *no pueden ser el primer carácter de un nombre;*
+     * Caracteres inválidos:
+       * espacios
+       * todos los demás símbolos o caracteres especiales
 
 </Accordion>
 
 <div id="2-specify-the-source-location" />
 
-<Accordion title="#2: Specify the source location">
+<Accordion title="#2: Especificar la ubicación de la fuente">
 
-**To specify the data source location:**
+**Para especificar la ubicación de la fuente:**
 
-1. Select the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#overview">connection</Anchor> in which the source will be (or has been) created.
-   * If there are no connections defined in your account, the **New connection** dialog will open, prompting you to create one. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection">these instructions</Anchor> to create it.
-   * If you have existing connections but want to use a new one, click the ![dcr_new_connection_button.png](https://files.readme.io/0a6766bcb5deef0b2264b372592b82485cc59b11e454cdcbd4a1718de4df951d-14989643499153.png) button to open the **New connection** dialog. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection">these instructions</Anchor> to create it.
-2. Continue with the relevant instructions below based on where the data for your source is located.
+1. Selecciona la <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services#visión-general">conexión</Anchor> en la que se creará (o se creó) la fuente.
+   * Si no hay conexiones definidas en tu cuenta, se abrirá el cuadro de diálogo **Nueva conexión**, pidiéndote que crees una. Sigue <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#completa-la-conexión">estas instrucciones</Anchor> para crearla.
+   * Si tienes conexiones existentes pero quieres usar una nueva, haz clic en el botón ![dcr_new_connection_button.png](https://files.readme.io/ea74c7dd6653a544216addddc5fda2a15126a6a26ba2e3ea0a954c58f4fe479e-13916096900753.png) para abrir el cuadro de diálogo **Nueva conexión**. Sigue <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#completa-la-conexión">estas instrucciones</Anchor> para crearla.
+2. Continúa con las instrucciones relevantes a continuación, en función de dónde se encuentren los datos de tu fuente.
 
-#### Source locations in BigQuery
+#### Fuentes ubicadas en BigQuery
 
-**To complete specifying the data source location for BigQuery sources:**
+**Para terminar de especificar la ubicación de las fuentes de BigQuery:**
 
-1. Select the dataset in which the source table is located.
-2. Select the table in which the source data is located.
+1. Selecciona el conjunto de datos en el que se encuentra la tabla de la fuente.
+2. Selecciona la tabla en la que se encuentran los datos de la fuente.
 
-The lists from which you make these selections contain the available datasets and tables, respectively, in the BigQuery project you specified when creating the connection.
+Las listas a partir de las que haces estas selecciones contienen los conjuntos de datos y tablas disponibles, respectivamente, en el proyecto de BigQuery que especificaste al crear la conexión.
 
-#### Source locations in Snowflake
+#### Fuentes ubicadas en Snowflake
 
-**To complete specifying the source location for Snowflake sources:**
+**Para terminar de especificar la ubicación de las fuentes de Snowflake:**
 
-1. Select the share containing the source data.
-2. Select the schema in which the source table is located.
-3. Select the table in which the source data is located.
+1. Selecciona el recurso compartido que contiene los datos de la fuente.
+2. Selecciona el esquema en el que se encuentra la tabla de la fuente.
+3. Selecciona la tabla en la que se encuentran los datos de la fuente.
 
-The lists from which you make these selections contain the shares, schemas, and tables, respectively, in the Snowflake account you specified when creating the connection.
+Las listas a partir de las que haces estas selecciones contienen los recursos compartidos, esquemas y tablas, respectivamente, en la cuenta de Snowflake que especificaste al crear la conexión.
 
-#### Source locations in cloud storage buckets
+#### Fuentes ubicadas en buckets de almacenamiento en la nube
 
-Source locations in Amazon S3 or GCS consist of the cloud storage bucket specified by the connection and the underlying folder path from which the DCR reads the source file each time it is updated.
+Las ubicaciones de fuente en Amazon S3 o GCS constan del bucket de almacenamiento en la nube especificado por la conexión y de la ruta de la carpeta subyacente desde la que DCR lee el archivo de fuente cada vez que se actualiza.
 
-Once you have specified the connection, AppsFlyer can automatically generate the required underlying folder path as part of the source creation process.
+Una vez especificada la conexión, AppsFlyer puede generar automáticamente la ruta de la carpeta subyacente requerida como parte del proceso de creación de la fuente.
 
-* Allowing AppsFlyer to generate the folders makes the process easy. However, you can choose to manually create them instead, according to the instructions <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services">detailed here</Anchor>.
+* Permitir que AppsFlyer genere las carpetas facilita el proceso. Sin embargo, puedes optar por crearlas manualmente en su lugar, de acuerdo con las instrucciones <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services">detalladas aquí</Anchor>.
 
-- or -
+- o -
 
-* You can upload a prototype version of the source file directly from its connection.
-  * If you select this option, there's one additional choice to make:
-    * Allow AppsFlyer to automatically create the source folder structure; or
-    * Create the source folder structure manually
+* Puedes subir una versión de prototipo del archivo fuente directamente desde su conexión.
+  * Si seleccionas esta opción, tendrás que hacer una elección adicional:
+    * Permitir que AppsFlyer cree automáticamente la estructura de carpetas fuente; o
+    * Crear la estructura de carpetas de fuente manualmente
 
-If AppsFlyer generates the folders, the only additional information required is the name you want to give the **source folder.** (This is the top-level folder in which you update the source each time your want to use it for running a new report version.) You can also indicate whether you want the source folder to be created underneath a parent folder – often named **input.**
+Si AppsFlyer genera las carpetas, la única información adicional requerida es el nombre que deseas dar a la **carpeta fuente.** (Esta es la carpeta de nivel superior en la que se actualiza la fuente cada vez que desees utilizarla para ejecutar una nueva versión del reporte). También puedes indicar si deseas que la carpeta fuente se cree debajo de una carpeta principal, a menudo denominada **input.**
 
-**To complete specifying a source location in a cloud storage bucket, enter the source folder name.**
+**Para terminar de especificar la ubicación de la fuente en un bucket de almacenamiento de datos, introduce el nombre de la carpeta de la fuente.**
 
-* By default, the displayed source folder name:
-  * Is based on the [name you gave the source](/docs/data-clean-room-working-with-sources#1-name-the-source). You can change the folder name to meet your needs, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>.
-  * Indicates that it will be generated within a parent folder named **input.** This folder serves as the parent folder for all sources you upload to the DCR.
-    * The **input** folder is not required, and you can remove it or name it something different, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>.
-    * Although this folder is not required, having an **input** folder (or an equivalent folder of a different name) is considered best practice. It is even more highly recommended when you are using the same cloud storage bucket both for uploading data files (input) and receiving reports (output).
+* Por defecto, el nombre de la carpeta fuente mostrada:
+  * Se basa en el [nombre que le diste a la fuente](/docs/data-clean-room-working-with-sources#1-name-the-source). Puedes cambiar el nombre de la carpeta para adaptarlo a tus necesidades, siempre que cumpla los <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">requisitos de nomenclatura de DCR</Anchor>.
+  * Indica que se generará dentro de una carpeta principal denominada **input.** Esta carpeta sirve como carpeta principal para todas las fuentes que cargues en DCR.
+    * La carpeta **input** no es obligatoria y puedes eliminarla o asignarle un nombre diferente, siempre y cuando cumpla con los <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">requisitos de nomenclatura de DCR</Anchor>.
+    * Aunque esta carpeta no es obligatoria, se considera una buena práctica disponer de una carpeta **input** (o una carpeta equivalente con un nombre diferente). Se recomienda aún más cuando se utiliza el mismo bucket de almacenamiento en la nube, tanto para subir archivos de datos (entrada) como para recibir reportes (salida).
 
 > 🚧 **Important**
 >
-> If you manually created the folder path, make sure the connection and path you enter in the **Source location** section match the path you manually created.
+> **Importante:**
+>
+> Si creaste manualmente la ruta de la carpeta, asegúrate de que la conexión y la ruta que introduzcas en la sección **Ubicación de la fuente** coincidan con la ruta que creaste manualmente.
 
 </Accordion>
 
 <div id="3-define-the-source-structure" />
 
-<Accordion title="#3: Define the source structure">
+<Accordion title="#3: Definir la estructura de la fuente">
 
-For all sources that you share with the DCR for processing, AppsFlyer needs to know how each data field should be used in order to create reports. Defining the source structure consists of:
+Para todas las fuentes que compartas con DCR para su procesamiento, AppsFlyer necesita saber cómo se debe usar cada campo de datos con el fin de crear los reportes. La definición de la estructura de la fuente consiste en:
 
-* [Loading the source fields](/docs/data-clean-room-working-with-sources#loading-source-fields)
-* [Categorizing each field](/docs/data-clean-room-working-with-sources#categorize-fields) (column) as one of the following types:
-  * **Identifier:** Field that identifies a unique app user (examples might include CUID, AppsFlyer ID, etc.)
-    * The primary purpose of identifiers in the context of the DCR is to join data sources so that corresponding user-level data can be matched.
-  * **Dimension:** An attribute by which you categorize app users (examples might include geo, install date, campaign, etc.)
-  * **Metric:** Numeric data you have collected with respect to an app user (examples might include revenue, number of app opens, LTV, etc.)
-    * A data field identified as a metric can contain **only numeric values.**
+* [Cargar los campos de la fuente](/docs/data-clean-room-working-with-sources#cargar-los-campos-de-la-fuente)
+* [Categorizar cada campo](/docs/data-clean-room-working-with-sources#clasificar-los-campos) (columna) como uno de los siguientes tipos:
+  * **Identificador:** Campo que identifica a un usuario único de la aplicación (por ejemplo, CUID, ID de AppsFlyer, etc.)
+    * El objetivo principal de los identificadores en el contexto de DCR es unir las fuentes de datos para poder cotejar los datos de nivel de usuario correspondientes.
+  * **Dimensión:** Un atributo por el que categorizas a los usuarios de la aplicación (por ejemplo, geolocalización, fecha de instalación, campaña, etc.)
+  * **Métrica:** Datos numéricos que has recopilado con respecto a un usuario de la aplicación (algunos ejemplos podrían ser los ingresos, el número de aperturas de la aplicación, el valor de vida útil (LTV), etc.)
+    * Un campo de datos identificado como métrica puede contener **solo valores numéricos.**
 
-#### Loading source fields
+#### Cargar los campos de la fuente
 
-Load source fields using the relevant instructions below:
+Carga los campos de la fuente siguiendo las instrucciones correspondientes a continuación:
 
-**Data warehouse sources**
+**Fuentes de almacén de datos**
 
-To load fields from a data source located in a data warehouse (BigQuery or Snowflake), click the ![dcr_load_fields_from_source.png](https://files.readme.io/667761e044a45e9a63bf904ada0ba07917014b5b446379213742510278b5a2dd-14986195290897.png) button.
+Para cargar campos de una fuente ubicada en un almacén de datos (BigQuery o Snowflake), haz clic en el botón ![dcr_load_fields_from_source.png](https://files.readme.io/667761e044a45e9a63bf904ada0ba07917014b5b446379213742510278b5a2dd-14986195290897.png).
 
 > 🚧 **Important**
 >
-> If the selected source table does not include the required [date and version columns](/docs/data-clean-room-working-with-sources#table-columns), you will receive an error.
+> **Importante:**
+>
+> Si la tabla de la fuente seleccionada no incluye las [columnas de fecha y versión](/docs/data-clean-room-working-with-sources#table-columns) requeridas, recibirás un error.
 
-**Cloud storage bucket sources**
+**Fuentes de bucket de almacenamiento en la nube**
 
-To load fields from a data source located in a cloud storage bucket (Amazon S3 or GCS), you must upload a prototype source file.
+Para cargar los campos de una fuente ubicada en un bucket de almacenamiento en la nube (Amazon S3 o GCS), debes subir un archivo de fuente prototipo.
 
-For purposes of defining the source structure:
+Para definir la estructura de la fuente:
 
-* You can upload a prototype version of the data source from a local file.
-  * If you select this option, AppsFlyer always creates the source folder path automatically.
+* Puedes cargar una versión prototipo de la fuente desde un archivo local.
+  * Si seleccionas esta opción, AppsFlyer siempre crea la ruta de la carpeta fuente automáticamente.
 
-- or -
+- o -
 
-* You can upload a prototype version of the source file directly from its connection.
-  * If you select this option, there's one additional choice to make:
-    * Allow AppsFlyer to automatically create the source folder structure; or
-    * Create the source folder structure manually
+* Puedes subir una versión de prototipo del archivo fuente directamente desde su conexión.
+  * Si seleccionas esta opción, tendrás que hacer una elección adicional:
+    * Permitir que AppsFlyer cree automáticamente la estructura de carpetas fuente; o
+    * Crear la estructura de carpetas de fuente manualmente
 
-**To upload your prototype source file, follow the instructions in the relevant tab below:**
+**Para cargar el archivo fuente de prototipo, sigue las instrucciones de la pestaña correspondiente a continuación:**
 
 <Tabs>
-<Tab title="Local file">
+<Tab title="Archivo local">
 
-1. In the **Source structure** section, click the <Image alt="DCR_load_fields_from_file.png" src="https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png" width="125px" /> button.
-2. In the window that opens, select **Upload a local file.**
-3. Specify the CSV or GZIP file you want to upload, then click OK.
-
-</Tab>
-
-<Tab title="Connection (automatic creation)">
-
-**To load the file from its connection and allow AppsFlyer to create the source folder structure:**
-
-1. In the **Source structure** section, click the <Image alt="DCR_load_fields_from_file.png" src="https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png" width="125px" /> button.
-2. In the window that opens, select **Load from connection.**
-3. Click the **Generate folders** link.
-   * AppsFlyer automatically creates the required folder structure and source folder (on the connection you specified, with the source folder name you specified).
-4. After the source folder structure has been created, a confirmation message is displayed, including a link to the source folder. Click the provided link to upload your prototype file to the source folder.
-5. Once the file has finished uploading, click **OK.**
+1. En la sección **Estructura de la fuente**, haz clic en el botón <Image alt="DCR_load_fields_from_file.png" src="https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png" width="125px" />.
+2. En la ventana que se abre, selecciona **Cargar un archivo local.**
+3. Especifica el archivo CSV o GZIP que deseas cargar y, a continuación, haz clic en Aceptar.
 
 </Tab>
 
-<Tab title="Connection (manual creation)">
+<Tab title="Conexión (creación automática)">
 
-**To upload the source file from a structure you created manually:**
+**Para cargar el archivo desde su conexión y permitir que AppsFlyer cree la estructura de carpetas de la fuente:**
 
-1. In the **Source structure** section, click the <Image alt="DCR_load_fields_from_file.png" src="https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png" width="125px" /> button.
-2. In the window that opens, select **Load from connection.**
-3. **DO NOT** click **Generate folders.** Instead, upload the file directly to the source folder you created for it.
-4. Once the file has finished uploading, click **OK.**
+1. En la sección **Estructura de la fuente**, haz clic en el botón <Image alt="DCR_load_fields_from_file.png" src="https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png" width="125px" />.
+2. En la ventana que se abre, selecciona **Cargar desde la conexión.**
+3. Haz clic en el enlace **Generar carpetas**.
+   * AppsFlyer crea automáticamente la estructura de carpetas y la carpeta de la fuente requeridas (en la conexión especificada, con el nombre de carpeta de fuente especificado).
+4. Una vez creada la estructura de carpetas fuente, se muestra un mensaje de confirmación, incluido un enlace a la carpeta fuente. Haz clic en el enlace proporcionado para cargar tu archivo de prototipo en la carpeta fuente.
+5. Una vez que el archivo haya terminado de cargarse, haz clic en **Aceptar.**
+
+</Tab>
+
+<Tab title="Conexión (creación manual)">
+
+**Para cargar el archivo fuente de una estructura creada manualmente:**
+
+1. En la sección **Estructura de la fuente**, haz clic en el botón <Image alt="DCR_load_fields_from_file.png" src="https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png" width="125px" />.
+2. En la ventana que se abre, selecciona **Cargar desde la conexión.**
+3. **NO** hagas clic en **Generar carpetas.** En su lugar, sube el archivo directamente a la carpeta de la fuente que creaste para él.
+4. Una vez que el archivo haya terminado de cargarse, haz clic en **Aceptar.**
 
 </Tab>
 </Tabs>
 
-#### Categorize fields
+#### Clasificar los campos
 
-After you load the fields, AppsFlyer analyzes the file, and a list of all data fields (columns) is displayed in the **Available fields** list.
+Después de cargar los campos, AppsFlyer analiza el archivo y se muestra una lista de todos los campos de datos (columnas) en la lista **Campos disponibles**.
 
-**To categorize the fields:**
+**Para clasificar los campos:**
 
-1. Select one or more fields in the **Available fields** list on the left and use the buttons in the middle of the screen to categorize them as [identifiers, dimensions, or metrics](/docs/data-clean-room-working-with-sources#3-define-the-source-structure).
-   * Once you categorize a field, it is displayed in the relevant category list on the right side of the screen.
-   * You can use the search bar to search for fields in the lists.
-   * To remove a field from a category it's been assigned to, select it in the relevant category list and use the **Remove** button to return it to the **Available fields** list.
-2. Repeat this process until you have categorized each field you want to include in DCR reports.
-   * There is no requirement to categorize every field in the **Available fields** list. However, a field must be categorized in order to use it later in a report.
-3. If you edit the source before [saving the source](/docs/data-clean-room-working-with-sources#4-save-the-source) and want to use fields from the edited source data, click the **Reload fields** link at the bottom of the **Available fields** list.
-   * Note that reloading the source will overwrite the field names in the Available fields list. Any fields that you previously categorized will remain in the **Identifiers, Dimensions,** or **Metrics** lists.
-   * If a previously categorized field is not found in the reloaded source data, it will still display in the relevant category list, but it will be marked with an error icon.
+1. Selecciona uno o varios campos en la lista **Campos disponibles** de la izquierda y utiliza los botones del centro de la pantalla para clasificarlos como [identificadores, dimensiones o métricas.](/docs/data-clean-room-working-with-sources#3-define-the-source-structure)
+   * Una vez categorizado un campo, se muestra en la lista de categorías relevantes en el lado derecho de la pantalla.
+   * Puedes utilizar la barra de búsqueda para buscar campos en las listas.
+   * Para eliminar un campo de una categoría a la que ha sido asignado, selecciónalo en la lista de categorías correspondiente y utiliza el botón **Eliminar** para devolverlo a la lista **Campos disponibles**.
+2. Repite este proceso hasta que hayas categorizado cada campo que desees incluir en los reportes de DCR.
+   * No es necesario categorizar cada campo en la lista **Campos disponibles**. Sin embargo, un campo debe ser categorizado para poder utilizarlo posteriormente en un reporte.
+3. Si editas la fuente antes de [guardarla](/docs/data-clean-room-working-with-sources#4-save-the-source) y deseas utilizar campos de los datos de la fuente editados, haz clic en el enlace **Recargar campos** en la parte inferior de la lista **Campos disponibles**.
+   * Ten en cuenta que al volver a cargar la fuente se sobrescribirán los nombres de los campos en la lista Campos disponibles. Los campos que hayas categorizado previamente permanecerán en las listas **Identificadores,** **Dimensiones,** o **Métricas**.
+   * Si un campo previamente categorizado no se encuentra en los datos de la fuente recargados, seguirá apareciendo en la lista de categorías correspondiente, pero se marcará con un icono de error.
 
 > 📘 **Note**
 >
-> If you decide to use additional fields from this source after saving it, you can do so by [editing the source structure](/docs/data-clean-room-working-with-sources#editing-the-source-structure).
+> **Nota:**
+>
+> Si decides utilizar campos adicionales de esta fuente después de guardarla, puedes hacerlo [editando la estructura de la fuente](/docs/data-clean-room-working-with-sources#editing-the-source-structure).
 
 </Accordion>
 
 <div id="4-save-the-source" />
 
-<Accordion title="#4: Save the source">
+<Accordion title="#4: Guardar la fuente">
 
-**To save the source:**
+**Para guardar la fuente:**
 
-1. [Optional] Click <Image alt="DCR_test_source.png" src="https://files.readme.io/c8d2bb2e7062d062a2ed7ddb84472c5acd02fc93b178b2299515b2374a3ad3e3-11240865384849.png" width="43px" /> to check for errors in the format or validity of the source fields.
-2. Click **Save** to save the source.
+1. [Opcional] Haz clic en <Image alt="DCR_test_source.png" src="https://files.readme.io/c8d2bb2e7062d062a2ed7ddb84472c5acd02fc93b178b2299515b2374a3ad3e3-11240865384849.png" width="43px" /> para comprobar si hay errores en el formato o la validez de los campos de la fuente.
+2. Haz clic en **Guardar** para guardar la fuente.
 
-   The source is created and a confirmation message is displayed.
+   Se crea la fuente y aparece un mensaje de confirmación.
 
-   * If you uploaded the source from a local file, saving the source triggers the automatic creation of the folder structure, and the displayed confirmation message includes a link to the source folder.
+   * Si has cargado la fuente desde un archivo local, al guardar la fuente se activa la creación automática de la estructura de carpetas, y el mensaje de confirmación que aparece incluye un enlace a la carpeta de la fuente.
 
-   The new source is displayed in the list of all existing sources in the **Sources** tab of the Data Clean Room.
+   La nueva fuente se muestra en la lista de todas las fuentes existentes en la pestaña **Fuentes** de Data Clean Room.
 
 </Accordion>
 
-## Updating sources to trigger report processing
+## Actualización de las fuentes para activar el procesamiento de reportes
 
-Each time you want AppsFlyer to process a data source file and run a report based on it, you upload a new version of the file to the source folder, within a series of nested subfolders indicating the date and version number (plus one extra subfolder to let AppsFlyer know where the data is).
+Cada vez que deseas que AppsFlyer procese un archivo de fuente de datos y ejecute un reporte basado en él, subes una nueva versión del archivo a la carpeta fuente, dentro de una serie de subcarpetas anidadas que indican la fecha y el número de versión (más una subcarpeta adicional para que AppsFlyer sepa dónde están los datos).
 
-AppsFlyer continually scans for new versions of source files for the **current date and 2 days prior.** A new version of a report is triggered each time new versions of the source files are found (including [\_SUCCESS files](/docs/data-clean-room-working-with-sources#_success-files), as further detailed below).
+AppsFlyer busca continuamente nuevas versiones de archivos fuente para la **fecha actual y 2 días antes.** Se activa una nueva versión de un reporte cada vez que se encuentran nuevas versiones de los archivos fuente (incluidos los [archivos \_SUCCESS](/docs/data-clean-room-working-with-sources#_success-files), como se detalla a continuación).
 
 <div id="nested-subfolders-for-each-date-and-version" />
 
-<Accordion title="Nested subfolders for each date and version">
+<Accordion title="Subcarpetas anidadas para cada fecha y versión">
 
-The structure of nested subfolders is as follows:
+La estructura de las subcarpetas anidadas es la siguiente:
 
-* Within the source folder --> 1 subfolder for each date ("date folder")
-  * **Format:** `dt=yyyy-mm-dd/`
-  * **Example:** `dt=2022-12-15/`
-* Within each date folder --> 1 subfolder for each version on that date ("version folder")
-  * **Format:** `v=n/`
-  * **Example:** `v=1/`
-  * **Note:** The version folder is required even if you only upload the file one time per day.
-* Within each version folder --> 1 subfolder to indicate the location of the data ("data folder")
-  * **Format:** `data/`
-  * The data folder is the location to which the source file is uploaded.
+* Dentro de la carpeta fuente --> 1 subcarpeta para cada fecha ("carpeta de fecha")
+  * **Formato:** `dt=yyyy-mm-dd/`
+  * **Ejemplo:** `dt=2022-12-15/`
+* Dentro de cada carpeta de fecha --> 1 subcarpeta para cada versión en esa fecha ("carpeta de versión")
+  * **Formato:** `v=n/`
+  * **Ejemplo:**`v=1/`
+  * **Nota:** La carpeta de versión es necesaria aunque solo se cargue el archivo una vez al día.
+* Dentro de cada carpeta de versión --> 1 subcarpeta para indicar la ubicación de los datos ("carpeta de datos")
+  * **Formato:** `data/`
+  * La carpeta de datos es la ubicación a la que se carga el archivo fuente.
 
-In most cases, you use API calls or other available programmatic means to create the date/version/data folders automatically each time the data source file is uploaded. For additional information, see the API reference for your cloud service: <Anchor target="_blank" href="https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html">AWS</Anchor>, <Anchor target="_blank" href="https://cloud.google.com/storage/docs/reference/libraries">GCS</Anchor>.
+En la mayoría de los casos, usarías llamadas a la API u otros medios programáticos disponibles para crear las carpetas de fecha/versión/datos automáticamente cada vez que se cargue el archivo fuente de datos. Para obtener más información, consulta la referencia de la API para tu servicio en la nube: <Anchor target="_blank" href="https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html">AWS</Anchor>, <Anchor target="_blank" href="https://cloud.google.com/storage/docs/reference/libraries">GCS</Anchor>.
 
 </Accordion>
 
 <div id="_success-files" />
 
-<Accordion title="_SUCCESS files">
+<Accordion title="Archivos _SUCCESS">
 
-Once the upload of a source file to the data folder is complete, an empty file named `_SUCCESS` should be uploaded to the **version** folder. This alerts AppsFlyer that a new file is available to be processed. In most cases, you use an API script to automatically generate and upload this file.
+Una vez completada la carga de un archivo de fuente de datos en la carpeta de datos, se debe cargar un archivo vacío denominado `_SUCCESS` en la carpeta de **versiones**. Esto alerta a AppsFlyer de que hay un nuevo archivo disponible para procesar. En la mayoría de los casos, usarías un script de API para generar y cargar automáticamente este archivo.
 
-**Important!** The `_SUCCESS` file must be uploaded to the **version** folder, outside the data folder.
+**¡Importante!** El archivo `_SUCCESS` se carga en la carpeta de **versión**, fuera de la carpeta de datos.
 
-The filename for the \_SUCCESS file:
+El nombre del archivo \_SUCCESS:
 
-* Must be in ALL CAPS
-* Must be preceded by an underscore `(_)`
-* Should not have a file extension
+* Debe estar todo en MAYÚSCULAS
+* Debe ir precedido de un guión bajo `(_)`
+* No debe tener una extensión de archivo
 
-For multi-part GZIP files:
+Para archivos GZIP de varias partes:
 
-* Only one `_SUCCESS` file should be uploaded for all file parts.
-* The `_SUCCESS` file should be uploaded only after all file part uploads are complete.
+* Solo debe cargarse un archivo `_SUCCESS` para todas las partes del archivo.
+* El archivo `_SUCCESS` debe cargarse solo después de que se haya completado la carga de todas las partes del archivo.
 
 </Accordion>
 
 <div id="example-after-uploading-files" />
 
-<Accordion title="Example (after uploading files)">
+<Accordion title="Ejemplo (después de cargar los archivos)">
 
-After uploading source files on 2 days (and programmatically creating date/version/data folders and `_SUCCESS` files), your bucket/folder structure might look something like this:
+Después de cargar los archivos fuente en 2 días (y de crear programáticamente carpetas de fecha/versión/datos y archivos `_SUCCESS`), tu estructura de bucket/carpetas podría tener este aspecto:
 
 ![dcr_file_structure_after_uploads.png](https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png)
 
 </Accordion>
 
-## Working with existing sources
+## Trabajar con fuentes existentes
 
-There are several ways in which you might want to work with existing sources. You initiate these processes from the **Sources** tab of the Data Clean Room:
+Hay varias formas de trabajar con las fuentes existentes. Estos procesos se inician desde la pestaña **Sources** de Data Clean Room:
 
-* [Editing the source name](/docs/data-clean-room-working-with-sources#editing-the-source-name)
-* [Editing the source structure](/docs/data-clean-room-working-with-sources#editing-the-source-structure)
-* [Deleting a source](/docs/data-clean-room-working-with-sources#deleting-a-source) (if it's not being used for a report)
+* [Editar el nombre de la fuente](/docs/data-clean-room-working-with-sources#editing-the-source-name)
+* [Editar la estructura de la fuente](/docs/data-clean-room-working-with-sources#editing-the-source-structure)
+* [Eliminar una fuente](/docs/data-clean-room-working-with-sources#deleting-a-source) (si no se utiliza para un reporte)
 
 <div id="editing-the-source-name" />
 
-<Accordion title="Editing the source name">
+<Accordion title="Editar el nombre de la fuente">
 
-To edit the source name:
+Para editar el nombre de la fuente:
 
-1. Go to the **Sources** tab of the **Data Clean Room.**
-2. In the list of sources, hover over the row of the source you want to edit.
-3. Click the edit button ![edit_button.png](https://files.readme.io/aeb81045ac5e49107cfb1e6cb0b49d5184ea1d70a20e3c58f684bc44f6e25c66-5366594803473.png) that displays on the right side of the row.
-4. On the **Edit source** page, edit the name of the source.
-5. Click the **Save** button to save the source with the new name or **Cancel** to undo your changes.
+1. Ve a la pestaña **Fuentes** de **Data Clean Room.**
+2. En la lista de fuentes, pasa el cursor por encima de la fila de la fuente que desees editar.
+3. Haz clic en el botón de edición ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) que aparece a la derecha de la fila.
+4. En la página **Editar fuente**, edita el nombre de la fuente.
+5. Haz clic en el botón **Guardar** para guardar la fuente con el nuevo nombre o en **Cancelar** para deshacer los cambios.
 
 </Accordion>
 
 <div id="editing-the-source-structure" />
 
-<Accordion title="Editing the source structure">
+<Accordion title="Editar la estructura de la fuente">
 
-To edit the source structure:
+Para editar la estructura de la fuente:
 
-1. Go to the **Sources** tab of the **Data Clean Room.**
-2. In the list of sources, hover over the row of the source you want to edit.
-3. Click the edit button ![edit_button.png](https://files.readme.io/aeb81045ac5e49107cfb1e6cb0b49d5184ea1d70a20e3c58f684bc44f6e25c66-5366594803473.png) that displays on the right side of the row.
-4. On the **Edit source** page, the fields that were previously categorized as [identifiers, dimensions, or metrics](/docs/data-clean-room-working-with-sources#3-define-the-source-structure) will display in the relevant category lists on the right side of the screen.
-5. You can move a previously categorized field to a different category without reloading fields from the source file. To do this:
-   1. First, select it in the relevant category list and use the **Remove** button to return it to the **Available fields** list.
-   2. Next, select it in the **Available fields** list and use the buttons in the middle of the screen to categorize it as an identifier, dimension, or metric.
-6. To work with fields in the source file that have not yet been categorized, they must be reloaded from the source location or from a local file. Make this selection by clicking the **Reload fields** link at the bottom of the **Available fields** list.
-7. AppsFlyer analyzes the file, and a list of all previously uncategorized data fields (columns) is displayed in the **Available fields** list.
-   * Fields that were previously categorized as identifiers, dimensions, or metrics will still display in the relevant category lists on the right side of the screen.
-   * If a previously categorized field is not found in the reloaded source file, it will still display in the relevant category list, but it will be marked with an error icon.
-8. Select one or more fields in the **Available fields** list on the left and use the buttons in the middle of the screen to categorize them as identifiers, dimensions, or metrics.
-9. Once you have made all necessary changes, click the **Save** button to save the source with the updated structure or **Cancel** to undo your changes.
+1. Ve a la pestaña **Fuentes** de **Data Clean Room.**
+2. En la lista de fuentes, pasa el cursor por encima de la fila de la fuente que desees editar.
+3. Haz clic en el botón de edición ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) que aparece a la derecha de la fila.
+4. En la página **Editar fuente**, los campos que antes estaban categorizados como [identificadores, dimensiones o métricas](/docs/data-clean-room-working-with-sources#3-define-the-source-structure) se mostrarán en las listas de categorías correspondientes en la parte derecha de la pantalla.
+5. Puedes mover un campo categorizado anteriormente a una categoría diferente sin volver a cargar los campos del archivo de fuente. Para ello:
+   1. En primer lugar, selecciónalo en la lista de categorías correspondiente y utiliza el botón **Eliminar** para devolverlo a la lista **Campos disponibles**.
+   2. A continuación, selecciónalo en la lista **Campos disponibles** y utiliza los botones del centro de la pantalla para clasificarlo como identificador, dimensión o métrica.
+6. Para trabajar con campos en el archivo de fuente que aún no se han categorizado, se deben volver a cargar desde la ubicación de la fuente o desde un archivo local. Realiza esta selección haciendo clic en el enlace **Volver a cargar campos** en la parte inferior de la lista **Campos disponibles**.
+7. AppsFlyer analiza el archivo y se muestra una lista de todos los campos de datos no categorizados anteriormente (columnas) en la lista **Campos disponibles**.
+   * Los campos que se categorizaron previamente como identificadores, dimensiones o métricas seguirán apareciendo en las listas de categorías correspondientes en la parte derecha de la pantalla.
+   * Si un campo previamente categorizado no se encuentra en el archivo de fuente recargado, seguirá apareciendo en la lista de categorías correspondiente, pero se marcará con un icono de error.
+8. Selecciona uno o varios campos en la lista **Campos disponibles** de la izquierda y utiliza los botones del centro de la pantalla para clasificarlos como identificadores, dimensiones o métricas.
+9. Una vez que hayas realizado todos los cambios necesarios, haz clic en el botón **Guardar** para guardar la fuente con la estructura actualizada o en **Cancelar** para deshacer los cambios.
 
 > 🚧 **Important**
 >
-> Don't forget to make corresponding changes reflecting the new source structure in any reports for which this source is used:
+> **Importante:**
 >
-> * Fields that were removed, uncategorized, or changed from their previous categories are automatically removed from any reports in which they are used.
-> * Newly added or categorized fields are not automatically included in existing reports until you edit report definitions to include them.
+> No olvides realizar los cambios correspondientes que reflejen la nueva estructura de la fuente en cualquier reporte para el que se utilice esta fuente:
+>
+> * Los campos que hayan sido eliminados, descategorizados o cambiados de tus categorías anteriores serán eliminados automáticamente de cualquier reporte en el que se utilicen.
+> * Los campos recién agregados o categorizados no se incluirán automáticamente en los reportes existentes hasta que edites las definiciones de los reportes para incluirlos.
 
 </Accordion>
 
 <div id="deleting-a-source" />
 
-<Accordion title="Deleting a source">
+<Accordion title="Eliminar una fuente">
 
-1. Go to the **Sources** tab of the **Data Clean Room.**
-2. In the list of sources, hover over the row of the source you want to delete.
-3. Click the delete button ![delete_button.png](https://files.readme.io/dbdbc085f6b7b5c2143c14494d1694fad5a3902ed57f8b34ded2144260164716-5367408938513.png) that displays on the right side of the row.
-4. In the dialog, confirm that you want to delete the source.
-   * You cannot delete a source that is being used by a report. If this is the case, a message will list the reports in which the source is being used. In order to delete the source, you can either:
-     * Delete the reports in which it is being used; or
-     * Remove the source fields from the definitions of the reports in which they are used.
+1. Ve a la pestaña **Fuentes** de **Data Clean Room.**
+2. En la lista de fuentes, pasa el cursor por encima de la fila de la fuente que desees eliminar.
+3. Haz clic en el botón de eliminación ![delete_button.png](https://files.readme.io/10fbd4d4f09ddb56823a2824629f8bb9362b34c95038b3d9e747ffcde7b30381-24740010666129.png) que aparece a la derecha de la fila.
+4. En el cuadro de diálogo, confirma que deseas eliminar la fuente.
+   * No puedes eliminar una fuente que esté siendo utilizada por un reporte. Si este es el caso, un mensaje enumerará los reportes en los que se está utilizando la fuente. Para eliminar la fuente, puedes:
+     * Eliminar los reportes en los que se está utilizando; o
+     * Eliminar los campos de fuente de las definiciones de los reportes en los que se utilizan.
 
 </Accordion>
 
-## Reference
+## Referencia
 
 <div id="manually-creating-a-folder-structure" />
 
-<Accordion title="Manually creating a storage bucket folder structure (relevant only if you choose to do so)">
+<Accordion title="Creación manual de una estructura de carpetas del bucket de almacenamiento (relevante solo si eliges hacerlo)">
 
-In general, it's easiest to allow AppsFlyer to automatically generate the required folder structure as part of the source creation process. However, if you wish to create these folders manually, you can do so as follows.
+En general, es más fácil permitir que AppsFlyer genere automáticamente la estructura de carpetas requerida como parte del proceso de creación de la fuente. Sin embargo, si deseas crear estas carpetas manualmente, puedes hacerlo de la siguiente manera.
 
-#### Create a DCR key folder
+#### Crear una carpeta de claves de DCR
 
-To ensure maximum security, the folder directly beneath the bucket (the "DCR key folder") must be named with the 8-character, alphanumeric **DCR key** assigned to your account (for example, `01bcc5fb`). *Note that this is different from any other password or key associated with your AppsFlyer account.*
+Para garantizar la máxima seguridad, la carpeta directamente debajo del bucket (la "carpeta de clave DCR") debe tener el nombre de la **clave DCR** alfanumérica de 8 caracteres asignada a tu cuenta (por ejemplo, `01bcc5fb`). *Ten en cuenta que esta es diferente de cualquier otra contraseña o clave asociada a tu cuenta de AppsFlyer.*
 
-The DCR key folder is generally created manually using the interface of your selected cloud service.
+Por lo general, la carpeta de claves DCR se crea manualmente utilizando la interfaz del servicio en la nube seleccionado.
 
-**To get your account's DCR key, click the DCR key button at the top of the main DCR page.**
+**Para obtener la clave de DCR de tu cuenta, haz clic en el botón de clave de DCR en la parte superior de la página principal de DCR.**
 
 ![dcr_key_button.png](https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png)
 
-After creating the DCR key folder, your bucket/folder structure would look something like this:
+Después de crear la carpeta de clave DCR, tu estructura de bucket/carpetas se verá así:
 
 ![dcr_file_structure_dcr_key_folder.png](https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png)
 
-#### Top-level input folder
+#### Carpeta de entrada de nivel superior
 
-Though it is not required, best practice is to create a top-level input folder directly beneath the DCR key folder. This folder will be dedicated to files you upload to the DCR.
+Aunque no es obligatorio, la práctica recomendada es crear una carpeta de entrada de nivel superior directamente debajo de la carpeta de claves DCR. Esta carpeta estará dedicada a los archivos que subas a DCR.
 
-The top-level input folder is generally created manually using the interface of your selected cloud service.
+Por lo general, la carpeta de entrada de nivel superior se crea manualmente utilizando la interfaz del servicio en la nube seleccionado.
 
-* This practice is even more highly recommended when you are using the same bucket both for uploading data files (input) and receiving reports (output).
-* You can name this folder anything you want, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>. For ease of identification, it is usually named `input/`.
+* Esta práctica es aún más recomendable cuando se utiliza el mismo bucket tanto para cargar archivos de datos (entrada) como para recibir reportes (salida).
+* Puedes nombrar esta carpeta como quieras, siempre y cuando cumpla con los <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">requisitos de denominación de DCR</Anchor>. Para facilitar su identificación, suele denominarse `input/`.
 
-After creating the top-level input folder, your bucket/folder structure might look something like this:
+Después de crear la carpeta de entrada de nivel superior, tu estructura de bucket/carpetas se verá así:
 
 ![dcr_file_structure_input_folder.png](https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png)
 
-#### Second-level folder for each data source
+#### Carpeta de segundo nivel para cada fuente de datos
 
-You can regularly upload different data source files to the DCR for processing. Each of these data sources must be assigned a separate folder ("data source folders").
+Puedes cargar regularmente diferentes archivos de origen de datos en DCR para su procesamiento. A cada una de estas fuentes de datos se le debe asignar una carpeta separada ("carpetas de origen de datos").
 
-So, for example, if you plan to upload 2 files to the DCR for processing every day: *BI-data.csv* and *CRM-data.gzip*, you would assign each of these data sources a folder. You could choose to call these folders `BI-data/` and `CRM-data/`.
+Por ejemplo, si planeas cargar 2 archivos a DCR para procesarlos todos los días: *BI-data.csv* y *CRM-data.gzip*, asignarías una carpeta a cada una de estas fuentes de datos. Puedes denominar estas carpetas `BI-data/` y `CRM-data/`.
 
-The data source folders are generally created manually using the interface of your selected cloud service.
+Por lo general, las carpetas de origen de datos se crean manualmente utilizando la interfaz del servicio en la nube seleccionado.
 
-After creating 2 data source folders, your bucket/folder structure might look something like this:
+Después de crear 2 carpetas de origen de datos, tu estructura de bucket/carpetas se verá así:
 
 ![dcr_file_structure_source_folders.png](https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png)
 
-Under each data source folder, [nested subfolders by date and version](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version) must be created each time the source is updated.
+Debajo de cada carpeta de fuente de datos, se deben crear [subcarpetas anidadas por fecha y versión](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version) cada vez que se actualice la fuente.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HPKB2ERNRQG73AFA0X7XEDEF=introduction source-format=source-requirements h_01HPKB2ERPANE0CAXFP9RG5YEH=source-requirements h_01HPKB2ERPQ787V0PAABP7Q2YY=data-format h_01HPKB2ERPJ5PVQ2QM5XCYZE0D=table-columns h_01HPKB2ERPWZFZN2DSCHWNXKXX=file-format h_01HPKB2ERPX2T413N3T93YBBZB=creating-a-source h_01HPKB2ERPQMT0NKTE5NN40KG4=1-name-the-source h_01HPKB2ERQWDMYBEPDZY17T9PG=2-specify-the-source-location h_01HPKB2ERQ28JQ2CK16RYZ38G6=source-locations-in-bigquery h_01HPKB2ERQWFGF8MN8ZYAXWC87=source-locations-in-snowflake h_01HPKB2ERQZT3Y6GNZ2WWWM0M7=source-locations-in-cloud-storage-buckets h_01HPKB2ERQ40VTVZA5DGNR907G=3-define-the-source-structure h_01HPKB2ERQTJPGG68FSEBHVVJA=loading-source-fields h_01HPKB2ERSYCFE1EYTCK550VTK=categorize-fields h_01HPKB2ERS55YGWY3RMRPR02Y4=4-save-the-source uploading-source-files-to-trigger-report-processing=updating-sources-to-trigger-report-processing h_01HPKB2ERSCPAPB6WE3354ECW9=updating-sources-to-trigger-report-processing h_01HPKB2ERSEVBTS3DR2TB6Y1AQ=nested-subfolders-for-each-date-and-version h_01HPKB2ERSJ9KNDK6CEBRQB65C=_success-files h_01HPKB2ERSJKGVE61T6J9HXTCK=example-after-uploading-files h_01HPKB2ERS5PK2P2XTC4ZMPCMC=working-with-existing-sources h_01HPKB2ERTC48MGS0BM5SDR6XV=editing-the-source-name h_01HPKB2ERTS6DEQX0KP0EQTGSP=editing-the-source-structure h_01HPKB2ERVGJYJ9KW1RGX24CGV=deleting-a-source h_01HPKB2ERV1KK3J8YX918GCF3M=reference h_01HPKB2ERVZ88MJ35JC66YDPAB=manually-creating-a-folder-structure creating-a-dcr-key-folder=create-a-dcr-key-folder h_01HPKB2ERV7MQJ9CK44T92GK2G=create-a-dcr-key-folder toplevel-input-folder=top-level-input-folder h_01HPKB2ERVPG4R9FHWZPQ8TCZQ=top-level-input-folder secondlevel-folder-for-each-data-source=second-level-folder-for-each-data-source h_01HPKB2ERVVFMP81RE8ATZ6SZ8=second-level-folder-for-each-data-source" />
+<div data-zendesk-anchors="introduction=introducci%C3%B3n h_01HPKB2ERNRQG73AFA0X7XEDEF=introducci%C3%B3n source-format=requisitos-de-los-datos-de-las-fuentes h_01HPKB2ERPANE0CAXFP9RG5YEH=requisitos-de-los-datos-de-las-fuentes h_01HPKB2ERPQ787V0PAABP7Q2YY=data-format h_01HPKB2ERPJ5PVQ2QM5XCYZE0D=table-columns h_01HPKB2ERPWZFZN2DSCHWNXKXX=file-format creating-a-source=crear-una-fuente h_01HPKB2ERPX2T413N3T93YBBZB=crear-una-fuente h_01HPKB2ERPQMT0NKTE5NN40KG4=1-name-the-source h_01HPKB2ERQWDMYBEPDZY17T9PG=2-specify-the-source-location source-locations-in-bigquery=fuentes-ubicadas-en-bigquery h_01HPKB2ERQ28JQ2CK16RYZ38G6=fuentes-ubicadas-en-bigquery source-locations-in-snowflake=fuentes-ubicadas-en-snowflake h_01HPKB2ERQWFGF8MN8ZYAXWC87=fuentes-ubicadas-en-snowflake source-locations-in-cloud-storage-buckets=fuentes-ubicadas-en-buckets-de-almacenamiento-en-la-nube h_01HPKB2ERQZT3Y6GNZ2WWWM0M7=fuentes-ubicadas-en-buckets-de-almacenamiento-en-la-nube h_01HPKB2ERQ40VTVZA5DGNR907G=3-define-the-source-structure loading-source-fields=cargar-los-campos-de-la-fuente h_01HPKB2ERQTJPGG68FSEBHVVJA=cargar-los-campos-de-la-fuente categorize-fields=clasificar-los-campos h_01HPKB2ERSYCFE1EYTCK550VTK=clasificar-los-campos h_01HPKB2ERS55YGWY3RMRPR02Y4=4-save-the-source uploading-source-files-to-trigger-report-processing=actualizaci%C3%B3n-de-las-fuentes-para-activar-el-procesamiento-de-reportes h_01HPKB2ERSCPAPB6WE3354ECW9=actualizaci%C3%B3n-de-las-fuentes-para-activar-el-procesamiento-de-reportes h_01HPKB2ERSEVBTS3DR2TB6Y1AQ=nested-subfolders-for-each-date-and-version h_01HPKB2ERSJ9KNDK6CEBRQB65C=_success-files h_01HPKB2ERSJKGVE61T6J9HXTCK=example-after-uploading-files working-with-existing-sources=trabajar-con-fuentes-existentes h_01HPKB2ERS5PK2P2XTC4ZMPCMC=trabajar-con-fuentes-existentes h_01HPKB2ERTC48MGS0BM5SDR6XV=editing-the-source-name h_01HPKB2ERTS6DEQX0KP0EQTGSP=editing-the-source-structure h_01HPKB2ERVGJYJ9KW1RGX24CGV=deleting-a-source reference=referencia h_01HPKB2ERV1KK3J8YX918GCF3M=referencia h_01HPKB2ERVZ88MJ35JC66YDPAB=manually-creating-a-folder-structure creating-a-dcr-key-folder=crear-una-carpeta-de-claves-de-dcr h_01HPKB2ERV7MQJ9CK44T92GK2G=crear-una-carpeta-de-claves-de-dcr toplevel-input-folder=carpeta-de-entrada-de-nivel-superior h_01HPKB2ERVPG4R9FHWZPQ8TCZQ=carpeta-de-entrada-de-nivel-superior secondlevel-folder-for-each-data-source=carpeta-de-segundo-nivel-para-cada-fuente-de-datos h_01HPKB2ERVVFMP81RE8ATZ6SZ8=carpeta-de-segundo-nivel-para-cada-fuente-de-datos" />

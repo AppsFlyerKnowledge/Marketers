@@ -1,5 +1,5 @@
 ---
-title: '[Legacy] Receipt validation for in-app purchases'
+title: '[Versión anterior] Validación de recibo de compras in-app'
 deprecated: true
 metadata:
   keywords:
@@ -21,57 +21,56 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2015-02-26T10:30:58Z'
-  edited_at: '2025-12-28T12:17:51Z'
+  edited_at: '2026-08-12T12:00:50Z'
   id: 207032106
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/207032106--Legacy-Receipt-validation-for-in-app-purchases
+  url: https://support.appsflyer.com/hc/es/articles/207032106
 ---
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> This article describes the deprecated Receipt validation feature. For more information, see <Anchor target="_blank" href="/marketers/docs/bulletin-legacy-receipt-validation-is-deprecated">Bulletin: Legacy Receipt validation is deprecated</Anchor>
+> Este artículo describe la función de validación de recibos obsoleta. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/bulletin-legacy-receipt-validation-is-deprecated">Boletín: La validación de recibos heredada está en desuso</Anchor>
 
-> **At a glance:** Implement receipt validation to protect against fraudulent in-app purchases made in iOS and Android app stores, and make sure an in-app purchase occurred as reported. **Note**: This is a legacy feature. Learn more about the new, fully automatic, and improved <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">in-app purchase validation mechanism</Anchor>.
+> **De un vistazo:** Implementa la validación de recibos para proteger contra compras in-app fraudulentas realizadas en las tiendas de aplicaciones de iOS y Android, y asegúrate de que se haya realizado una compra in-app como se informó. **Nota**: Esta es una función heredada. Saber más sobre el nuevo mecanismo de validación de compras in-app, totalmente automático y mejorado <Anchor target="_blank" href="/marketers/es/docs/purchase-and-subscription-validation-overview">mecanismo de validación de compras in-app</Anchor>.
 
-## Receipt validation flow
+## Flujo de validación de recibos
 
-The receipt validation flow is as follows:
+El flujo de validación de recibos es el siguiente:
 
-1. The user performs an in-app purchase.
-2. The app store notifies the app of the successful purchase.
-3. The app developer calls the SDK Receipt Validation function.
+1. El usuario realiza una compra in-app.
+2. La tienda de aplicaciones notifica a la aplicación de la compra exitosa.
+3. El desarrollador de la aplicación llama a la función de validación de recibos del SDK.
 
    ```
    validateAndLogInAppPurchase
    ```
-4. The SDK calls the AppsFlyer validation service.
-5. AppsFlyer validates the purchase to make sure it is not fraudulent.
-6. Upon success, AppsFlyer internally creates a regular af\_purchase event. Otherwise, the created event is marked as fraudulent (available via Protect360).
-7. The AppsFlyer validation service transfers the response to the SDK.
-8. The SDK transfers the receipt validation response to the app (either success or fail).  
-   If receipt validation fails, the event displays in the <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#inapp-level-blocked-reasons">blocked in-app events raw-data</Anchor> report (available to Protect360 subscribers).
+4. El SDK llama al servicio de validación de AppsFlyer.
+5. AppsFlyer valida la compra para asegurarse de que no sea fraudulenta.
+6. Al tener éxito, AppsFlyer crea internamente un evento af\_purchase regular. De lo contrario, el evento creado se marca como fraudulento (disponible a través de Protect360).
+7. El servicio de validación de AppsFlyer transfiere la respuesta al SDK.
+8. El SDK transfiere la respuesta de Validación de recibos a la aplicación (ya sea éxito o fallo).  
+   Si la validación de recibos falla, el evento se muestra en el <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#inapp-level-blocked-reasons">reporte de raw data de eventos in-app bloqueados</Anchor> (disponible para los suscriptores de Protect360).
 
-For details about the implementation of receipt validation, see our developer SDK documentation:
+Para detalles sobre la implementación de la validación de recibos, consulta nuestra documentación del SDK para desarrolladores:
 
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-android#validating-purchases">Android</Anchor>
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-ios#purchase-validation-using-validateandloginapppurchase">iOS</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-ios#purchase-validation-using-validateandloginapppurchase">apps de iOS,</Anchor>
 
-**Notes:**
+**Notas:**
 
-* For iOS sandbox apps, meaning apps that are not live in the App Store, receipt validation requires <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/validate-and-log-purchase-ios#testing-purchase-validation-in-sandbox-mode">some additional code</Anchor>.
-* Purchases made in the sandbox environment are recorded as regular af\_purchase events, and their revenue is reflected in AppsFlyer dashboards and reports.
-* The AppsFlyer receipt validation service is free of charge to all account plans.
-* For Android, receipt validation may return a `null` result and consider the validation failed if the end user doesn't have internet access during the purchase.
+* Para iOS aplicaciones sandbox, es decir, aplicaciones que no están disponibles en la App Store, la validación de recibos requiere <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/validate-and-log-purchase-ios#testing-purchase-validation-in-sandbox-mode">algo de código adicional</Anchor>.
+* Las compras realizadas en el entorno de sandbox se registran como eventos af\_purchase regulares, y sus ingresos se reflejan en los dashboards y reportes de AppsFlyer.
+* El servicio de validación de recibos de AppsFlyer es gratuito para todos los planes de cuenta.
+* Para Android, la validación de recibos puede devolver un resultado `null` y considerar que la validación ha fallado si el usuario final no tiene acceso a internet durante la compra.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> Calling `validateAndLogInAppPurchase` also generates an **af\_purchase** in-app event. As such, don't generate an af\_purchase event when validating. Doing so results in duplicate revenue events.
+> Llamar a `validateAndLogInAppPurchase` también genera un evento in-app **af\_purchase**. Por lo tanto, no generes un evento af\_purchase al validar. Hacerlo resulta en eventos de ingresos duplicados.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> * *T*he legacy receipt validation explained here does not support *StoreKit v2*. For the current version, see Set up integration with iOS App Store.
-> * Receipt validation for in-app purchases isn't supported for third-party Android app stores.
+> * *L*a validación de recibos heredada que se explica aquí no es compatible con *StoreKit v2*. Para la versión actual, consulta Configurar la integración con la App Store de iOS.
+> * La validación de recibos para compras in-app no es compatible con tiendas de aplicaciones de Android de terceros.
 
-<div data-zendesk-anchors="h_01KDJ7QZD8X692EVP1XXGV0KY4=important 01JDSM0JDAQXH8QX8ZAXNB0ZMB=receipt-validation-flow 01JDSM0JDT6Q3WYW9K484QHY2M=important-1 01JDSM0JD90J3EDMVN6D6Z9J40=note" />
+<div data-zendesk-anchors="h_01KDJ7QZD8X692EVP1XXGV0KY4=importante receipt-validation-flow=flujo-de-validaci%C3%B3n-de-recibos 01JDSM0JDAQXH8QX8ZAXNB0ZMB=flujo-de-validaci%C3%B3n-de-recibos 01JDSM0JDT6Q3WYW9K484QHY2M=importante-1 01JDSM0JD90J3EDMVN6D6Z9J40=nota" />

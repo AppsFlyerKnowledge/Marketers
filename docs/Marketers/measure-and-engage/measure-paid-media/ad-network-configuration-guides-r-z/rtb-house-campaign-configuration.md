@@ -1,5 +1,5 @@
 ---
-title: RTB House campaign configuration
+title: Configuración de campañas de RTB House
 metadata:
   keywords:
     - Advertisers
@@ -14,128 +14,128 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2018-07-05T08:30:48Z'
-  edited_at: '2026-06-16T12:15:23Z'
+  edited_at: '2026-08-12T12:15:56Z'
   id: 360001274325
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001274325-RTB-House-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360001274325
 ---
-> **At a glance:** RTB House, an AppsFlyer ad network integrated partner, provides retargeting technology for e-commerce and gaming companies. RTB House has developed its own retargeting solution, based on deep learning algorithms, for purchasing online ads in the Real-Time Bidding model. In addition to click-based mobile attribution, RTB House offers retargeting attribution, which can be recorded with AppsFlyer.
+> **En resumen:** RTB House, un partner integrado de la red de publicidad de AppsFlyer, proporciona tecnología de retargeting para empresas de comercio electrónico y gaming. RTB House ha desarrollado su propia solución de retargeting, basada en algoritmos de aprendizaje profundo, para la compra de anuncios online en el modelo de ofertas en tiempo real (RTB). Además de la atribución móvil basada en clics, RTB House ofrece atribución de retargeting, que se puede registrar con AppsFlyer.
 
-## Setting up RTB House
+## Configuración de RTB House
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con el partner.  
+    Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Para ver una descripción detallada del Encabezado de la ventana de configuración de partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-RTB House's configuration window includes 3 active tabs: **Integration, Attribution link**, and **Permissions**. Click on the items below to read about the tabs setup.
+La ventana de configuración de RTB House incluye 3 pestañas activas: Integración, Enlace de atribución y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
+> * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio** para todos los partners.
+> * Todos los demás pasos son descriptivos u **opcionales**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar partner
 
-On the **first visit** here, you will need to toggle on **Activate Partner** to enable setting up the integration parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la pestaña **Integración**, haz clic en **Activar partner**.  
+ El activador debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to RTB House following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a RTB House luego de las instalaciones y reengagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> As an ALL-Installs network, RTB House prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to RTB House.
+> Como red de TODAS las instalaciones, RTB House prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a RTB House.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with RTB House via postbacks.
+En esta sección puedes asignar tus eventos de AppsFlyer a RTB House vía postbacks.
 
-#### Region
+#### Región
 
-Enter the region of your RTB House data center. Possible options: **emea**, **us**, **asia**.
+Introduce la región de tu centro de datos de RTB House. Opciones posibles: **emea**, **us**, **asia**.
 
-#### In-app event postback settings
+#### Configuración de postbacks de eventos in-app
 
-1. Toggle on In-App Event Postbacks
-2. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-3. Click **Add Event** to add an SDK Event to the list
-4. Complete the following parameters:
+1. Activa Postbacks de eventos in-app.
+2. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+3. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+4. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Descripción |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on RTB House's side.  <br />Obtain the corresponding Event ID from RTB House and set in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según lo define RTB House.  <br />Obtén el ID de evento correspondiente de RTB House y configúralo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Create and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Crea y guarda enlaces de atribución y envíalos al partner para que atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To create an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para crear un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costo">
 
-Cost data is supported in the integration with this partner via <Anchor target="_blank" href="/partners/docs/incost-api-for-ad-networks">InCost API</Anchor>.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de ingresos por publicidad">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant RTB House, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for RTB House, the permissions tab is active and you can grant control to RTB House.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a RTB House, ya sea que el partner actúe como red de publicidad, agencia o ambas. Ten en cuenta que incluso si la atribución está deshabilitada para RTB House, la pestaña de permisos está activa y puedes otorgar el control a RTB House.
 
-### Ad network permissions
+### Permisos para red de publicidad
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to set up in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos***: solo a los datos de ingresos atribuidos al partner.
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJRZXXH277REM62TJA907WX0=setting-up-rtb-house h_01HJRZXXH2P8Q15V7DKQT7AVTT=tip h_01HJRZXXH2DJ8WMYPQ0NV08R05=integration-tab h_01HJRZXXH309BVZZ2VRRJQ02N8=activate-partner h_01HJRZXXH3X46N8KQ8GTP4BYYP=default-postbacks h_01HJRZXXH3SDCH4K86YV4VC5VH=note inapp-events-settings=in-app-events-settings h_01HJRZXXH3HJP28D34NW8A8EZN=in-app-events-settings h_01HJRZXXH3E7STC8XVRDP39282=region inapp-event-postback-settings=in-app-event-postback-settings h_01HJRZXXH3336ZJZZD1P8408GP=in-app-event-postback-settings h_01HJRZXXH3R7F4QA9PYWY7EYZZ=attribution-link-tab h_01HJRZXXH30PDV0S32THB0C4FM=cost-tab h_01HJRZXXH37CHDD10ASEXPN7VH=ad-revenue-tab h_01HJRZXXH3CASE2ZTRJDSW9545=permissions-tab h_01HJRZXXH3TJSTVG4Z8ZDQBATG=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-rtb-house=configuraci%C3%B3n-de-rtb-house h_01HJRZXXH277REM62TJA907WX0=configuraci%C3%B3n-de-rtb-house h_01HJRZXXH2P8Q15V7DKQT7AVTT=consejo h_01HJRZXXH2DJ8WMYPQ0NV08R05=integration-tab activate-partner=activar-partner h_01HJRZXXH309BVZZ2VRRJQ02N8=activar-partner default-postbacks=postbacks-predeterminados h_01HJRZXXH3X46N8KQ8GTP4BYYP=postbacks-predeterminados h_01HJRZXXH3SDCH4K86YV4VC5VH=nota inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HJRZXXH3HJP28D34NW8A8EZN=configuraci%C3%B3n-de-eventos-in-app region=regi%C3%B3n h_01HJRZXXH3E7STC8XVRDP39282=regi%C3%B3n inapp-event-postback-settings=configuraci%C3%B3n-de-postbacks-de-eventos-in-app h_01HJRZXXH3336ZJZZD1P8408GP=configuraci%C3%B3n-de-postbacks-de-eventos-in-app h_01HJRZXXH3R7F4QA9PYWY7EYZZ=attribution-link-tab h_01HJRZXXH30PDV0S32THB0C4FM=cost-tab h_01HJRZXXH37CHDD10ASEXPN7VH=ad-revenue-tab h_01HJRZXXH3CASE2ZTRJDSW9545=permissions-tab ad-network-permissions=permisos-para-red-de-publicidad h_01HJRZXXH3TJSTVG4Z8ZDQBATG=permisos-para-red-de-publicidad" />

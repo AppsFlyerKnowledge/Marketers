@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Cohort data includes unattributed sessions and events'
+title: 'Boletín: Los datos de cohorte incluyen sesiones y eventos sin atribuir'
 metadata:
   keywords:
     - Marketers
@@ -13,16 +13,15 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2024-02-29T12:49:36Z'
-  edited_at: '2024-06-03T14:16:24Z'
+  edited_at: '2026-10-20T03:55:39Z'
   id: 22973553145361
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/22973553145361-Bulletin-Cohort-data-includes-unattributed-sessions-and-events
+  url: https://support.appsflyer.com/hc/es/articles/22973553145361
 ---
-| **What's new** | <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#inapp-events-and-how-they-are-attributed">Unattributed sessions and events</Anchor> appear in the Cohort dashboard and reports. |
+| **¿Qué hay de nuevo?** | Las <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#inapp-events-and-how-they-are-attributed">sesiones y eventos sin atribuir</Anchor> aparecen en el dashboard y en los reportes de Cohorte. |
 | --- | --- |
-| **Effective date** | May 26, 2024 |
-| **Where** | <ul><li>Cohort and Retention dashboard</li><li>Cohort API</li><li>Cohort reports via Data Locker</li><li>Advanced aggregated reports via Data Locker [Closed beta]</li></ul> |
-| **What you must know** | <ul><li>Until the effective date, <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#inapp-events-and-how-they-are-attributed">unattributed sessions and events</Anchor> weren't included in the Cohort dashboard and reports. This sometimes caused discrepancies between Cohort other reporting methods, where Cohort showed fewer organic sessions and events (and revenue).</li><li>From the effective date, unattributed sessions and events appear in the Cohort dashboard and reports with "organic" media source. This means:<ul><li>You may see more organic data in Cohort data than before.</li><li>There won't be any more discrepancies between Cohort and other reporting methods caused by unattributed sessions and events.</li></ul></li></ul> |
+| **Fecha de entrada en vigor** | 26 de mayo de 2024 |
+| **Donde** | <ul><li>Dashboard de Cohorte y retención</li><li>API de Cohorte</li><li>Reportes de cohorte a través de Data Locker</li><li>Reportes agregados avanzados a través de Data Locker [beta cerrada]</li></ul> |
+| **Lo que debes saber** | <ul><li>Hasta la fecha de entrada en vigor, las <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#inapp-events-and-how-they-are-attributed">sesiones y eventos sin atribuir</Anchor> no se incluían en el dashboard ni en los reportes de Cohorte. Esto a veces provocaba discrepancias entre Cohorte y otros métodos de reporte, ya que Cohorte mostraba menos sesiones y eventos orgánicos (y ingresos).</li><li>A partir de la fecha de entrada en vigor, las sesiones y eventos sin atribuir aparecen en el dashboard y los reportes de Cohorte con la fuente de medios "orgánico". Esto significa:<ul><li>Es posible que veas más datos orgánicos en los datos de Cohorte que antes.</li><li>Ya no habrá discrepancias entre Cohorte y otros métodos de reporte causadas por sesiones y eventos sin atribuir.</li></ul></li></ul> |

@@ -1,5 +1,5 @@
 ---
-title: Recommended telecommunication app events
+title: Eventos de aplicación recomendados para las telecomunicaciones
 metadata:
   keywords:
     - Advertisers
@@ -14,246 +14,245 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-05-02T11:59:16Z'
-  edited_at: '2023-12-04T11:48:21Z'
+  edited_at: '2026-08-12T12:01:49Z'
   id: 360019896558
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019896558-Recommended-telecommunication-app-events
+  url: https://support.appsflyer.com/hc/es/articles/360019896558
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your telecommunication app.
+> **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de telecomunicaciones.
 
-## <Image alt="telecommunications_icon.png" src="https://files.readme.io/42f1aac3b825957d9d0584d83480c441b9d53665cc6cf1a6b8cd1803bb9b6121-20659194885393.png" width="100px" /> Telecommunication
+## <Image alt="icono_de_telecomunicaciones.png" src="https://files.readme.io/42f1aac3b825957d9d0584d83480c441b9d53665cc6cf1a6b8cd1803bb9b6121-20659194885393.png" width="100px" /> Telecomunicaciones
 
-Telecommunication apps enable users to purchase and manage cell phone plans, data plans, and so on. The typical events that we suggest recording include purchases, top-ups, and subscriptions.
+Las aplicaciones de telecomunicaciones permiten a los usuarios comprar y gestionar planes de telefonía móvil, planes de datos, etc. Los eventos típicos que recomendamos registrar incluyen las compras, las recargas y las suscripciones.
 
-Recording these events can help you determine:
+Registrar estos eventos puede ayudarte a determinar:
 
-* Which gateway plans are most popular
-* What products or packages users can afford
-* Which plans are most likely to get long-term commitments from customers
+* Qué planes de acceso son los más populares.
+* Qué productos o paquetes pueden pagar los usuarios.
+* Qué planes tienen más probabilidades de conseguir un compromiso a largo plazo por parte de los clientes.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=telecommunication">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=telecommunication&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=telecommunication">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=telecommunication&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Puedes encontrar instrucciones detalladas para tu desarrollador en el **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.**
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Flowchart_for_recommended_events_telecommunication_app_user_journey](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
+[![Diagrama de flujo del recorrido del usuario de la app de telecomunicaciones para eventos recomendados](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the telecommunication vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs
+La siguiente sección proporciona una lista de estructuras de eventos que son típicas de la vertical de telecomunicaciones. Cada estructura incluye un tipo de evento predefinido y los parámetros del evento predefinidos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Acceso (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Disparador**
 
-Whenever the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Learn how many users installed the app and completed the signup process, and what signup methods your users prefer.
+Descubrir cuántos usuarios instalaron la aplicación y completaron el proceso de registro, y qué métodos de registro prefieren tus usuarios.
 
-**Trigger**
+**Disparador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | email, Facebook |
+| af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
 
 <div id="content-view-af_content_view" />
 
-<Accordion title="Content view (af_content_view)">
+<Accordion title="Vista de contenido (af_content_view)">
 
-**Purpose**
+**Finalidad**
 
-Determine the view rate of specific products and:
+Determinar la tasa de visualizaciones de productos específicos y:
 
-* Correlate product views with product sales
-* Understand what categories are the most popular according to product views
-* See the correlation between buyers' currency and the products that they view
+* Correlacionar visualizaciones de productos con ventas de productos.
+* Determinar cuáles categorías son las más populares según las visualizaciones de productos.
+* Ver la correlación entre la divisa de los compradores y los productos que visualizan.
 
-**Trigger**
+**Disparador**
 
-When the user views a specific product details page
+Cuando el usuario ve la página de detalles de un producto específico.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Product price | 200 |
-| af\_content\_id | Product ID | 102 |
-| af\_content\_type | Product category | Internet packages |
-| af\_currency | Currency in the product details page | THB, USD |
+| af\_price | Precio del producto | 200 |
+| af\_content\_id | ID del producto | 102 |
+| af\_content\_type | Categoría de producto | Paquetes de Internet |
+| af\_currency | La moneda que figura en la página de detalles del producto | THB, USD |
 
 </Accordion>
 
 <div id="list-view-af_list_view" />
 
-<Accordion title="List view (af_list_view)">
+<Accordion title="Vista de lista (af_list_view)">
 
-**Purpose**
+**Finalidad**
 
-Record which lists (for example, newly added products, related products, or recommended products) buyers view the most.
+Registrar qué listas (por ejemplo, productos recién agregados, productos relacionados o productos recomendados) ven más los compradores.
 
-**Trigger**
+**Disparador**
 
-When the user views a specific list
+Cuando el usuario ve una lista específica.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_content\_type | Type of list | Related, recommended, new arrivals |
-| af\_content\_list | List of content IDs from the category | 001, 092 |
+| af\_content\_type | Tipo de lista | Productos relacionados, recomendados, novedades |
+| af\_content\_list | Lista de ID de contenido de la categoría | 001, 092 |
 
 </Accordion>
 
 <div id="purchase-af_purchase" />
 
-<Accordion title="Purchase (af_purchase)">
+<Accordion title="Compra (af_purchase)">
 
-**Purpose**
+**Finalidad**
 
-Many telecommunications apps allow users to purchase items such as extra data. Recording this event can help you:
+Muchas aplicaciones de telecomunicaciones permiten a los usuarios comprar artículos, como datos adicionales. La atribución de este evento puede ayudarte a:
 
-* Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
-* Determine what offers are most popular with your users
-* Cross-reference campaigns with purchased items in order to optimize campaign targeting
+* Determinar el valor de vida útil (LTV) de tus usuarios y el ROI de tus campañas en todas las agencias y redes de publicidad.
+* Determinar qué ofertas son las más populares entre tus usuarios.
+* Establecer referencias cruzadas entre las campañas y los artículos comprados a fin de optimizar el targeting de las campañas.
 
-**Trigger**
+**Disparador**
 
-When the user lands on the thank you page after a successful purchase
+Cuando el usuario llega a la página de agradecimiento después de una compra exitosa.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Estimated revenue from the purchase | 2050.50 |
-| af\_currency | Currency code | THB |
-| af\_content\_type | Name of the package bought | 5G |
-| af\_order\_id | Order ID | 9277 |
-| payment\_method\_type | Type of payment method | credit card, local payment |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Los ingresos estimados de la compra | 2050.50 |
+| af\_currency | Código de moneda | THB |
+| af\_content\_type | Nombre del paquete comprado | 5G |
+| af\_order\_id | ID del pedido | 9277 |
+| payment\_method\_type | Tipo de método de pago | credit card, local payment |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides an event structure that includes a custom event name and the suggested event parameter to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una estructura de evento que incluye un nombre de evento personalizado y los parámetros del evento sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="select-package-select_package" />
 
-<Accordion title="Select package (select_package)">
+<Accordion title="Seleccionar paquete (select_package)">
 
-**Purpose**
+**Finalidad**
 
-Record when a user decides to buy a package but has not made the payment yet. You can use this data, for example, to retarget users and send them offers about other services.
+Registra cuándo un usuario decide comprar un paquete pero aún no ha realizado el pago. Puedes utilizar estos datos, por ejemplo, para reorientar a los usuarios y enviarles ofertas sobre otros servicios.
 
-**Trigger**
+**Disparador**
 
-When the user selects a package but has not completed the payment
+Cuando el usuario selecciona un paquete pero no ha completado el pago.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| price | Price of the subscription | 50000 |
-| af\_content\_type | Type of content the user selected | Data 5 GB |
+| price | Precio de la suscripción | 50000 |
+| af\_content\_type | Tipo de contenido que seleccionó el usuario | Data 5 GB |
 
 </Accordion>
 
 <div id="topup-success-top_up_success" />
 
-<Accordion title="Top-up success (top_up_success)">
+<Accordion title="Recarga exitosa (top_up_success)">
 
-**Purpose**
+**Finalidad**
 
-Top-up funds can be used to buy any package or any other service offered inside the app. Record this event and compare it with other data to learn more about your users. For example, you can learn what amounts users are willing to deposit into their accounts, and then use the top-up amounts to target them with customized campaigns within their budgets.
+Los fondos de recarga se pueden usar para comprar cualquier paquete o cualquier otro servicio que se ofrezca dentro de la aplicación. Registra este evento y compáralo con otros datos para obtener más información sobre tus usuarios. Por ejemplo, puedes saber qué cantidades están dispuestas a depositar en sus cuentas y usar los montos de recarga para dirigirte a los usuarios con campañas personalizadas dentro de sus presupuestos de recarga.
 
-**Trigger**
+**Disparador**
 
-When the user completes the top-up
+Cuando el usuario completa la recarga.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Amount of the top-up | 2050.50 |
-| top\_up\_id | ID of the top-up | 397 |
-| payment\_method\_type | Type of payment method | credit card, local payment |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Cantidad de la recarga | 2050.50 |
+| top\_up\_id | El ID de la recarga | 397 |
+| payment\_method\_type | Tipo de método de pago | credit card, local payment |
 
 </Accordion>
 
 <div id="topup-unsuccessful-top_up_unsuccessful" />
 
-<Accordion title="Top-up unsuccessful (top_up_unsuccessful)">
+<Accordion title="Recarga fallida (top_up_unsuccessful)">
 
-**Purpose**
+**Finalidad**
 
-Record this event and compare it with other data to learn more about your users. For example, you can learn how many users try to top-up but fail.
+Registra este evento y compáralo con otros datos para obtener más información sobre tus usuarios. Por ejemplo, puedes saber cuántos usuarios intentan recargar pero fallan.
 
-**Trigger**
+**Disparador**
 
-When the user tries to top up but the action fails
+Cuando el usuario intenta recargar pero la acción falla.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| error\_reason | Reason for the top-up failure | exceeded\_daily\_limit |
+| error\_reason | Razón de la falla de la recarga | exceeded\_daily\_limit |
 
 </Accordion>
 
 <div id="subscription-complete-subscription_complete" />
 
-<Accordion title="Subscription complete (subscription_complete)">
+<Accordion title="Suscripción completa (subscription_complete)">
 
-**Purpose**
+**Finalidad**
 
-Recording this event can help you:
+La atribución de este evento puede ayudarte a:
 
-* See which campaigns bring users that subscribe
-* Compare the number of subscribed users against unsubscribed users
-* Record revenue generated from subscriptions and attribute it to campaigns and media sources
+* Ver qué campañas atraen a usuarios que se suscriben.
+* Comparar el número de usuarios suscritos con el de usuarios no suscritos.
+* Registrar los ingresos generados a partir de las suscripciones y atribuirlos a campañas y fuentes de medios.
 
-**Trigger**
+**Disparador**
 
-* When the user successfully subscribes
-* When a subscription is renewed
+* Cuando el usuario se suscribe correctamente.
+* Cuando se renueva una suscripción.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| subscription\_type | Type of subscription | Monthly 30 GB |
-| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Amount of the subscription | 555.50 |
+| subscription\_type | Tipo de suscripción | Monthly 30 GB |
+| <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#revenue-events">af\_revenue</Anchor> | Monto de la suscripción | 555.50 |
 
 </Accordion>
 
-<div data-zendesk-anchors="telecommunication=-telecommunication h_01HGTAGFNFWKWYHPG6F5EK17YD=-telecommunication h_01HGTAGFNG1Z8NAFJ71DP0YSYD=important h_01HGTAGFNG99PQC03F13WQ4CVK=recommended-structures-for-predefined-events h_01HGTAGFNGQ56C8CN7A325SQ7M=login-af_login h_01HGTAGFNG1W5QWGN1D969JHGY=complete-registration-af_complete_registration h_01HGTAGFNGRJHD89332473DZFE=content-view-af_content_view h_01HGTAGFNG10GNZVMDNXRJSYJ9=list-view-af_list_view h_01HGTAGFNGV82NQSZ29B96YJCQ=purchase-af_purchase h_01HGTAGFNG3A2A6KCX8GGQAJBX=recommended-structures-for-custom-events h_01HGTAGFNGE3MKZEDKDZ0B9XDD=select-package-select_package h_01HGTAGFNGFSE2DAYRGG039GT9=topup-success-top_up_success h_01HGTAGFNGXBBYWJEMBVMN1YQS=topup-unsuccessful-top_up_unsuccessful h_01HGTAGFNGT3CJFRS2YC7R57KG=subscription-complete-subscription_complete" />
+<div data-zendesk-anchors="telecommunication=-telecomunicaciones h_01HGTAGFNFWKWYHPG6F5EK17YD=-telecomunicaciones h_01HGTAGFNG1Z8NAFJ71DP0YSYD=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAGFNG99PQC03F13WQ4CVK=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAGFNGQ56C8CN7A325SQ7M=login-af_login h_01HGTAGFNG1W5QWGN1D969JHGY=complete-registration-af_complete_registration h_01HGTAGFNGRJHD89332473DZFE=content-view-af_content_view h_01HGTAGFNG10GNZVMDNXRJSYJ9=list-view-af_list_view h_01HGTAGFNGV82NQSZ29B96YJCQ=purchase-af_purchase recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAGFNG3A2A6KCX8GGQAJBX=estructuras-recomendadas-para-eventos-personalizados h_01HGTAGFNGE3MKZEDKDZ0B9XDD=select-package-select_package h_01HGTAGFNGFSE2DAYRGG039GT9=topup-success-top_up_success h_01HGTAGFNGXBBYWJEMBVMN1YQS=topup-unsuccessful-top_up_unsuccessful h_01HGTAGFNGT3CJFRS2YC7R57KG=subscription-complete-subscription_complete" />

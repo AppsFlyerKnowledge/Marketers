@@ -1,5 +1,5 @@
 ---
-title: Apply Aggregated Advanced Privacy framework
+title: Framework de Privacidad Avanzada Agregada
 metadata:
   keywords:
     - Advertisers
@@ -17,234 +17,233 @@ x-zendesk:
     - SKAdNetwork (SKAN)
     - Ad Networks
   created_at: '2021-03-15T11:32:31Z'
-  edited_at: '2026-06-11T10:21:55Z'
+  edited_at: '2026-08-12T12:23:31Z'
   id: 360018515798
-  locale: en-us
+  locale: es
   section: Preserve user privacy
   section_id: 6551440878097
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360018515798-Apply-Aggregated-Advanced-Privacy-framework
+  url: https://support.appsflyer.com/hc/es/articles/360018515798
 ---
-> **At a glance:** Advertisers use the Aggregated Advanced Privacy (AAP) framework to control which attribution data is made available to partners and ad networks via the AppsFlyer platform.
+> **En resumen:** A partir de la disponibilidad general de iOS 14.5+ y la aplicación de la ATT por parte de Apple, los anunciantes utilizan el framework de Privacidad Avanzada Agregada (AAP) para controlar la disponibilidad de los datos de atribución a nivel de usuario de la plataforma.
 
-## Aggregated Advanced Privacy (AAP) framework
+## Framework de Privacidad Avanzada Agregada (AAP)
 
-The AppsFlyer Aggregated Advanced Privacy (AAP) framework prevents tracking across apps and websites owned by different companies, and the ability to uniquely identify a user or device. AAP utilizes the Apple App Tracking Transparency privacy levels as a minimum benchmark for its privacy-preserving thresholds.
+El framework de Privacidad Avanzada Agregada (AAP) de AppsFlyer evita el seguimiento de aplicaciones y sitios web propios de diferentes empresas y la capacidad de identificar de forma exclusiva a un usuario o dispositivo. AAP utiliza los niveles de privacidad de Apple App Tracking Transparency como referencia mínima para sus umbrales de preservación de la privacidad.
 
-The framework enables advertisers to control the availability of user-level attribution data via the AppsFlyer platform.
+El framework brinda a los anunciantes la capacidad de controlar la disponibilidad de datos de atribución a nivel de usuario a través de la plataforma de AppsFlyer.
 
-When AAP is on, user-level attribution data for users running iOS 14.5+ who have not granted ATT consent will not be available to advertisers or partners. **Note**: Even when AAP is off, user-level data cannot be used to uniquely identify a device.
+A partir de iOS 14.5, la disponibilidad general y el cumplimiento de la ATT de Apple, si la AAP está activada, los datos de atribución a nivel de usuario para usuarios sin consentimiento que ejecutan iOS 14.5+ no estarán disponibles para anunciantes o partners. **Nota**: Incluso cuando AAP está desactivado, los datos a nivel de usuario no se pueden usar para identificar de forma única un dispositivo.
 
-AAP has no impact on the availability of aggregated attribution data and analytics reports to advertisers and partners.
+La AAP no tiene impacto alguno en la disponibilidad de los datos de atribución agregados y los reportes de análisis para anunciantes y partners.
 
-### AAP-impacted features
+### Funciones afectadas por la AAP
 
-If AAP is on, the raw data is affected, and some fields are restricted or unavailable. This affects data provided by the following tools:
+Si la AAP está activada, los datos proporcionados por el raw data se ven afectados y algunos campos están restringidos o no están disponibles. Esto afecta a los datos proporcionados por las siguientes herramientas:
 
-* Data Locker
-* Raw data Pull API
-* Push API
-* Dashboard export page
-* Postbacks to networks
-* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#legacy-use-only-gcd-api-for-deep-linking">Get conversion data (GCD) API</Anchor> in the context of the client-side user-level data API.
+* Casillero de datos
+* Pull API de raw data
+* API Push
+* Página de exportación del dashboard
+* Postbacks a redes
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#legacy-use-only-gcd-api-for-deep-linking">API para obtener datos de conversión (GCD)</Anchor> en el contexto de la API de datos del lado del cliente a nivel de usuario
 
-Data availability is affected when AAP is on as follows:
+La disponibilidad de datos se ve afectada cuando la AAP está activada de la siguiente manera:
 
-* **Attribution data and fraud (Protect360):** <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">Some attribution fields are restricted or not available.</Anchor>
-* **Click, impression, and blocked clicks (fraud) data:** <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#identifier-restriction">User and device-related identifiers</Anchor> aren't available.
-* **Deferred deep linking**: If you implement deferred deep linking in paid media, use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">unified deep linking API (UDL).</Anchor> The legacy API, which uses GCD, can't be used in the context of non-consenting users. In the case of owned media, deferred deep linking for owned media is supported via GCD and the most recent deferred deep linking API.
+* Activa o desactiva la **Privacidad avanzada agregada** según sea necesario.
+* **Clic, impresión y datos de clics bloqueados (fraude):** <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#identifier-restriction">Los identificadores relacionados con el usuario y el dispositivo</Anchor> no están disponibles.
+* **Deferred deep linking**: Si implementas el Deferred Deep Linking en medios pagados, usa la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">API de dep links unificados (UDL).</Anchor> La antigua API, que utiliza GCD, no se puede usar en el contexto de usuarios que no consienten. En el caso de los medios propios, el deferred deep linking es compatible a través de GCD y la API de deferred deep linking más reciente.
 
-## Data availability principles in Aggregated Advanced Privacy
+## Principios de disponibilidad de datos en la Privacidad Avanzada Agregada
 
-When AAP applies to a given user's data, data availability depends on that user's ATT status and the media source bringing the user.
+Cuando la AAP se aplica a los datos de un usuario determinado, la disponibilidad de los datos depende del estado de la ATT de ese usuario y de la fuente de medios que trae al usuario.
 
-**Definitions:**
+**Definiciones:**
 
-* **User-level attribution data:** Data records containing device-level identifiers tied to attribution at the user level
-* **Limited attribution data for advertisers:**
-  * Available: Device-level identifiers. (IDFA is available if user consent is given.)
-  * Unavailable: Attribution parameters received via publisher attribution link (for example, `pid` and `c`). <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields">List of fields restricted and unavailable to advertisers</Anchor> AKA restricted media source.
-* **Limited attribution data for partners:**
-  * Available: Aggregated campaign details.
-  * Unavailable: User-level data that can help identify the user such as AppsFlyer ID, Custom data, Customer user ID (CUID), Click ID, IDFA, IDFV, User-agent, and IP address.
+* **Datos de atribución a nivel usuario:** Registros de datos que contienen identificadores a nivel de dispositivo vinculados a la atribución a nivel de usuario
+* Datos de atribución limitados para anunciantes:
+  * Disponible: Identificadores a nivel de dispositivo. (El IDFA está disponible si se da el consentimiento del usuario).
+  * No disponible: parámetros de atribución recibidos a través del enlace de atribución del publisher (por ejemplo, `pid` y `c`). <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">Lista de campos restringidos y no disponibles para anunciantes</Anchor> AKA fuente de medios restringida.
+* **Datos de atribución limitados para partners:**
+  * Disponible: detalles de campaña agregados.
+  * Datos de nivel de usuario que pueden ayudar a identificar al usuario, como ID de AppsFlyer, datos personalizados, ID de usuario del cliente (CUID), ID de clic, IDFA, IDFV, IMEI, agente de usuario y dirección IP.
 
-The terms defined are used in the figure and sections that follow to describe the data available to advertisers and partners.
+Los términos definidos se utilizan en la figura y las secciones siguientes para describir los datos disponibles para anunciantes y partners.
 
-![Advanced Privacy Framework - Advertisers (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
+![Advanced Privacy Framework: anunciantes (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
+La privacidad avanzada se comporta de manera diferente cuando se sirve en la web y se debe utilizar el parámetro af\_media\_type=web o af\_media\_type=app. Consulta <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks#campañas-web">aquí</Anchor> para obtener más información.
 
-### Paid and owned media data availability
+### Disponibilidad de datos de medios pagados y propios
 
 <div id="paid-media" />
 
-<Accordion title="Paid media">
+<Accordion title="Medios pagados">
 
-Paid media includes mobile ad networks with integrations in the AppsFlyer platform with whom advertisers run campaigns.
+Los medios pagados incluyen ad networks móviles con integraciones en la plataforma de AppsFlyer con las que los anunciantes ejecutan campañas.
 
-#### Paid media data availability by ATT status
+#### Disponibilidad de datos de medios pagados por estado de la ATT
 
-<table><thead><tr><th rowspan="2">Media type</th><th colspan="2">ATT status</th><th colspan="2">Data available to:</th></tr><tr><th>Publisher app</th><th>Advertiser app</th><th>Advertiser</th><th>Ad network</th></tr></thead><tbody><tr><td rowspan="4">App</td><td>Authorized</td><td>Authorized</td><td>User-level attribution data</td><td>User-level attribution data</td></tr><tr><td>Not authorized</td><td>Authorized</td><td>Limited attribution data for advertisers </td><td>Limited attribution data for partners</td></tr><tr><td>Authorized</td><td>Not authorized</td><td>Limited attribution data for advertisers </td><td>Limited attribution data for partners</td></tr><tr><td>Not authorized</td><td>Not authorized</td><td>Limited attribution data for advertisers </td><td>Limited attribution data for partners</td></tr><tr><td> </td><td colspan="4"> </td></tr><tr><td rowspan="2"><p>Web</p></td><td>N/A</td><td>Authorized</td><td>User-level attribution data</td><td>User-level attribution data</td></tr><tr><td>N/A</td><td>Not authorized</td><td>Limited attribution data for advertisers </td><td>Limited attribution data for partners</td></tr></tbody></table>
+<table><thead><tr><th rowspan="2">Tipo de medio</th><th colspan="2">Estado de la ATT</th><th colspan="2">Datos disponibles para:</th></tr><tr><th>Aplicación del publisher</th><th>Aplicación del anunciante</th><th>Anunciante</th><th>Red publicitaria</th></tr></thead><tbody><tr><td rowspan="4">Aplicación</td><td>Autorizado</td><td>Autorizado</td><td>Datos de atribución a nivel usuario</td><td>Datos de atribución a nivel usuario</td></tr><tr><td>No autorizado</td><td>Autorizado</td><td>Datos de atribución limitados para anunciantes </td><td>Datos de atribución limitados para partners</td></tr><tr><td>Autorizado</td><td>No autorizado</td><td>Datos de atribución limitados para anunciantes </td><td>Datos de atribución limitados para partners</td></tr><tr><td>No autorizado</td><td>No autorizado</td><td>Datos de atribución limitados para anunciantes </td><td>Datos de atribución limitados para partners</td></tr><tr><td> </td><td colspan="4"> </td></tr><tr><td rowspan="2"><p>Web</p></td><td>N/D</td><td>Autorizado</td><td>Datos de atribución a nivel usuario</td><td>Datos de atribución a nivel usuario</td></tr><tr><td>N/D</td><td>No autorizado</td><td>Datos de atribución limitados para anunciantes </td><td>Datos de atribución limitados para partners</td></tr></tbody></table>
 
 </Accordion>
 
 <div id="owned-media" />
 
-<Accordion title="Owned media">
+<Accordion title="Medios propios">
 
-The Apple AppTrackingTransparency framework applies only to data collected from different companies. Therefore, owned media user-level attribution data is available to advertisers irrespective of the user ATT consent status.
+El framework de App Tracking Transparency de Apple se aplica solo a los datos recopilados de diferentes empresas. Por lo tanto, los datos de atribución a nivel de usuario de medios propios están disponibles para los anunciantes independientemente del estado de consentimiento de la ATT del usuario.
 
-Owned media includes digital marketing campaigns used by advertisers to reach customers. This includes email campaigns, cross-promotions, push notifications, and so on. In AppsFlyer, campaigns using ad networks aren't regarded as owned media.
+Los medios propios incluyen campañas de marketing digital utilizadas por los anunciantes para llegar a los clientes. Esto incluye campañas de correo electrónico, promociones cruzadas, push notifications, etc. En AppsFlyer, las campañas que usan ad networks no se consideran medios propios.
 
 </Accordion>
 
-## Controlling Advanced Aggregated Privacy
+## Controlando la Privacidad Agregada Avanzada
 
 <div id="aap-central-switch" />
 
-<Accordion title="Aggregated Advanced Privacy (AAP)—app-level toggle">
+<Accordion title="Privacidad Avanzada Agregada (AAP): alternar a nivel de aplicación">
 
-The AAP is an app-level toggle that controls the Advanced Privacy settings for all partners of the selected app. The AAP toggle is located on the **App Settings** page. When the AAP toggle is on, the **Advanced Privacy** toggles for all partners of the selected app are automatically turned on and can't be modified. When off, advertisers can go to each partner integration individually and turn on **Advanced Privacy**.
+La AAP es un selector de nivel de aplicación que controla la configuración de la privacidad avanzada para todos los partners de la aplicación seleccionada. El selector de AAP se encuentra en la página de **Configuración de la aplicación**. Cuando el selector de AAP está activado, los selectores de **Privacidad Avanzada** para todos los partners de la aplicación seleccionada se activan automáticamente y no se pueden modificar. Cuando está desactivado, los anunciantes pueden ir a la integración de cada partner de forma individual y activar la **Privacidad Avanzada**.
 
 ![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
 
-#### AAP enabled
+#### AAP habilitada
 
-* Aggregated attribution is available. This includes, for example, Overview dashboards and reporting tools such as Cohort and the Master API.
-* [Advanced Privacy partner toggles](#partner-advanced-privacy-switch) are turned on and cannot be modified. Note! They are locked in position.
-* The data customers may make available to advertisers and partners is limited to aggregated data only, as defined in the [previous section](/docs/apply-aggregated-advanced-privacy-framework#data-availability-principles-in-aggregated-advanced-privacy).
+* La atribución agregada está disponible. Esto incluye, por ejemplo, dashboard general y herramientas de reportes como Cohorte y Master API.
+* [Los interruptores de partners de privacidad avanzada](#partner-advanced-privacy-switch) están activados y no se pueden modificar. ¡Atención! ¡Nota! Están bloqueados en posición.
+* La disponibilidad de los datos a nivel de usuario hacia anunciantes y partners es limitada, tal como se define en la [sección anterior](/docs/apply-aggregated-advanced-privacy-framework#principios-de-disponibilidad-de-datos-en-la-privacidad-avanzada-agregada).
 
-#### AAP disabled
+#### AAP deshabilitada
 
-* User-level attribution data is available for advertisers.
-* The Advanced Privacy setting per partner can be set individually.
+* Los datos de atribución a nivel de usuario están disponibles para los anunciantes.
+* La configuración de la Privacidad Avanzada por partner se puede establecer individualmente.
 
-*Before turning AAP off, consider if by doing so you will make user-level attribution data available to third parties and how they will use the data. You should work closely with your legal and other professional advisors in relation to how Apple defines tracking. Nothing stated here is legal advice. It is provided for your information and convenience.*
+*Antes de desactivar la AAP, considera si hacerlo hará que los datos de atribución a nivel de usuario estén disponibles para terceros y cómo estos usarán los datos. Debes trabajar estrechamente con tus asesores legales y profesionales en relación con la forma en que Apple define el seguimiento. Nada de lo que se indica aquí es asesoramiento legal. Se proporciona para tu información y comodidad.*
 
-**To set the Aggregated Advanced Privacy setting**:
+**Para establecer la configuración de Privacidad Avanzada Agregada**:
 
-1. In AppsFlyer, from the side menu, select **Settings** > **App Settings**.
-2. Turn **Aggregated Advanced Privacy** on or off as required.
-3. Click **Save**.
+1. En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **Configuración de la aplicación**.
+2. Activa o desactiva **Aggregated Advanced Privacy**  según sea necesario.
+3. Haz clic en **Guardar**.
 
 </Accordion>
 
 <div id="partner-advanced-privacy-switch" />
 
-<Accordion title="Advanced Privacy (AP)—partner-level toggle">
+<Accordion title="Privacidad Avanzada (AP): alternar a nivel de partner">
 
-If AAP is disabled, advertisers can set the Advanced Privacy setting for each ad network individually.
+Si la AAP está deshabilitada, los anunciantes pueden establecer la configuración de Privacidad Avanzada para cada ad network individualmente.
 
 ![APControl.png](https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png)
 
-**To turn off a partner's Advanced Privacy:**
+**Para desactivar la Privacidad Avanzada de un partner:**
 
-1. Verify that the central toggle for AAP is off, in the **App Settings** page.
-2. From the side menu, select **Collaborate** > **Active Integrations**.
-3. Select the ad network.
-4. In the **Integration** tab, toggle off **Advanced Privacy.**
+1. Verifica que el selector central de la AAP esté desactivado, en la página **Configuración de la aplicación**.
+2. En el menú lateral, selecciona **Colaborar** > **Integraciones activas**.
+3. Selecciona la ad network.
+4. En la pestaña **Integración**, desactiva la **Privacidad avanzada.**
 
-**Changing the AAP setting and the impact on the partner's Advanced Privacy setting**
+**Cambiar la configuración de la AAP e impacto en la configuración de Privacidad avanzada del partner**
 
-As previously stated, the AAP setting overrides the Advanced Privacy (AP) setting at the partner level. However, if you later turn off AAP (the central toggle), individual partner-level Advanced Privacy settings revert to their prior status. Meaning as follows:
+Como se indicó anteriormente, la configuración de la AAP anula la configuración de privacidad avanzada (AP) a nivel de partner. Sin embargo, si más tarde desactivas la AAP (el selector central), la configuración de Privacidad avanzada a nivel de partner individual vuelve a su estado anterior. Es decir, de la siguiente manera:
 
-* In the past, you turned AAP off and set some partner AP settings to off.
-* Later you turned AAP on. Remember, when AAP is on, it overrides the partner setting and all partners are regarded as being on.
-* Now you turn AAP off again. Meaning the individual partner settings apply. So for some partners, the setting is already off.
+* En el pasado, has desactivado la AAP y algunas configuraciones de AP de partners.
+* Más tarde activas la AAP. Recuerda, cuando la AAP está activada, anula la configuración de los partners y se considera que todos los partners están activados.
+* Ahora vuelves a desactivar la AAP. Es decir, se aplican las configuraciones individuales de los partners. Entonces, para algunos partners, la configuración ya está desactivada.
 
 </Accordion>
 
-## Advanced Aggregated Privacy implications for your partners
+## Implicaciones de la Privacidad Avanzadas Agregada para tus partners
 
 <div id="ad-networks" />
 
-<Accordion title="Ad networks">
+<Accordion title="Redes publicitarias">
 
-#### **Postbacks to ad network partners**
+#### **Postbacks a partners de ad networks**
 
-<Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">AAP affects ad networks</Anchor> in relation to data shared with them and is aligned with the AAP principles that apply to advertisers in the context of an ad network. Data shared with ad networks is via postbacks which differ between the attributed ad network and the unattributed ad network.
+La <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">AAP afecta a las ad networks</Anchor> en relación con los datos que se comparten con ellas y se alinea con los principios de AAP que se aplican a los anunciantes en el contexto de una ad network. Los datos compartidos con las ad networks se realizan a través de postbacks, que difieren entre la ad network atribuida y la no atribuida.
 
-Data sharing rules described apply to a given ad network if either of the following toggles is on:
+Las reglas de compartición de datos descritas se aplican a una ad network determinada si cualquiera de los siguientes selectores está activado:
 
-* AAP: App-level toggle
-* AP: Partner-level toggle
+* AAP: Toggle a nivel de aplicación
+* AP: Toggle a nivel de partner
 
-#### **Postbacks for attributed ad networks**
+#### **Postbacks para ad networks atribuidas**
 
-In the case of the attributed network the postback type used to share data depends on the user consent status as follows:
+En el caso de la red atribuida, el tipo de postback utilizado para compartir datos depende del estado de consentimiento del usuario de la siguiente manera:
 
-* **Consenting users:** Regular postback containing user-level attribution data including identifiers.
-* **Non-consenting users:** Advanced Privacy (AP) postback containing limited attribution data. It contains campaign details and no identifiers.
-  * **Prerequisite:** For an ad network to get AP postbacks they must have AP integration with AppsFlyer. Without integration, no postback is sent for non-consenting users.
-  * **Exception:** For installs attributed to Apple Ads, when an ad network that doesn't support Advanced Privacy sets the install postbacks to **All media sources, including organic**, Apple Ads still sends install postbacks to the ad network regardless of the Advanced Privacy state on the advertiser's side.
+* **Usuarios que dan su consentimiento:** Postback regular que contiene datos de atribución a nivel de usuario, incluidos identificadores.
+* **Usuarios de iOS que no dan su consentimiento:** Postback de Privacidad Avanzada (AP) que contiene datos de atribución limitados. Contiene detalles de la campaña y no identificadores.
+  * **Requisito previo:** Para que una ad network obtenga postbacks de AP, debe tener integración de AP con AppsFlyer. Sin la integración, no se envía ningún postback para los usuarios que no dan su consentimiento.
+  * **Excepción:** Para las instalaciones atribuidas a Apple Search Ads (ASA), cuando una ad network que no admite Privacidad Avanzada establece los postbacks de instalación en **Todas las fuentes de medios, incluidas las orgánicas**, Apple Search Ads (ASA) aún envía postbacks de instalación a ad networks independientemente del estado de Privacidad Avanzada del lado del anunciante.
 
-The various user consent scenarios and postback types used are illustrated in the figure that follows.
+Los diversos escenarios de consentimiento del usuario y los tipos de postback utilizados se ilustran en la siguiente figura.
 
-![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
+![AAP: anuncio atribuido networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
+La privacidad avanzada se comporta de manera diferente cuando se sirve en la web y se debe utilizar el parámetro af\_media\_type=web o af\_media\_type=app. Consulta <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks#campañas-web">aquí</Anchor> para obtener más información.
 
-#### **Postbacks for unattributed partners**
+#### **Postbacks para partners no atribuidos**
 
-Unattributed postbacks are sent to a network when the sending option in the integrated partner's integration tab is set to *all media sources, including organic* and that partner is not attributed to the event as illustrated in the figure that follows.
+Los postbacks no atribuidos se envían a una red cuando la opción de envío en la pestaña de integración del partner integrado está establecida en *todas las fuentes de medios, incluidas las orgánicas* y ese partner no se atribuye al evento como se ilustra en la figura siguiente.
 
 ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
 
-The various user consent scenarios and postback type used are illustrated in the flowchart that follows.
+Los diversos escenarios de consentimiento del usuario y el tipo de postback utilizado se ilustran en el siguiente diagrama de flujo.
 
 ![AAP - Unattributed ad networks.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
+La privacidad avanzada se comporta de manera diferente cuando se sirve en la web y se debe utilizar el parámetro af\_media\_type=web o af\_media\_type=app. Consulta <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks#campañas-web">aquí</Anchor> para más información.
 
 </Accordion>
 
 <div id="analytics-partners" />
 
-<Accordion title="Analytics partners">
+<Accordion title="Partners de análisis">
 
-AAP affects analytics partners in relation to data shared with them and is aligned with the AAP principles that apply to advertisers in the context of the analytics partner.  Data shared with the partner is via postbacks.
+La AAP afecta a los partners de análisis en relación con los datos compartidos con ellos y está alineado con los principios de AAP que se aplican a los anunciantes en el contexto del partner de análisis.  Los datos se comparten con el partner a través de postbacks.
 
-Data sharing rules described, apply to a given partner if either of the following toggles is on:
+Las reglas de compartición de datos descritas se aplican a un partner determinado si cualquiera de los siguientes selectores está activado:
 
-* AAP: App-level toggle
-* AP: Partner-level toggle
+* AAP: Toggle a nivel de aplicación
+* AP: Toggle a nivel de partner
 
-Postbacks containing user-level attribution data including user identifiers are sent for consenting users. No postback is sent in the case of non-consenting users.
+Los postbacks que contienen datos de atribución a nivel de usuario, incluidos los identificadores de usuarios, se envían para los usuarios que dan su consentimiento. No se envían postbacks en el caso de usuarios que no dan su consentimiento.
 
-The various user consent scenarios and postback type used are illustrated in the figure that follows.
+Los diversos escenarios de consentimiento del usuario y el tipo de postback utilizados se ilustran en la siguiente figura.
 
 ![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
+La privacidad avanzada se comporta de manera diferente cuando se sirve en la web y se debe utilizar el parámetro af\_media\_type=web o af\_media\_type=app. Consulta <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks#campañas-web">aquí</Anchor> para obtener más información.
 
 </Accordion>
 
 <div id="agencies" />
 
-<Accordion title="Agencies">
+<Accordion title="Agencias">
 
-**Data availability**: The impact of AAP on agencies is similar to that of advertisers. If raw data is available to the agency for a given app and AAP applies to a given user's data, the data is available according to the rules of [limited attribution data for advertisers](/docs/apply-aggregated-advanced-privacy-framework#data-availability-principles-in-aggregated-advanced-privacy).
+**Disponibilidad de datos**: El impacto de AAP en las agencias es similar al de los anunciantes. Si el raw data está disponible para la agencia para una aplicación determinada y la AAP se aplica a los datos de un usuario determinado, los datos están disponibles de acuerdo con las reglas de [datos de atribución limitada para anunciantes](/docs/apply-aggregated-advanced-privacy-framework#principios-de-disponibilidad-de-datos-en-la-privacidad-avanzada-agregada).
 
-**Agency changing an ad network's Advanced Privacy setting:**
+**Agencia que cambia la configuración de Privacidad avanzada de una ad network:**
 
-* If AAP is off, the Advanced Privacy setting of each integrated partner can be set.
-* By default, only advertisers can change the Advanced Privacy setting; however, the advertiser can explicitly give the agency permission to set the Advanced Privacy setting of ad networks enabled by the agency.
+* Si la AAP está desactivada, se puede establecer la configuración de Privacidad Avanzada de cada partner integrado.
+* De forma predeterminada, solo los anunciantes pueden cambiar la configuración de Privacidad Avanzada; sin embargo, el anunciante puede dar permiso explícito a la agencia para establecer la configuración de Privacidad Avanzada de las ad networks habilitadas por la agencia.
 
-**Grant an agency permission to set Advanced Privacy**
+**Otorgar permiso a una agencia para establecer la Privacidad Avanzada**
 
 ![agency_advanced_privacy.png](https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png)
 
-**To allow an agency to set Advanced Privacy**:
+**Para permitir que una agencia establezca la Privacidad Avanzada**:
 
-1. From the side menu, select **Collaborate** > **Active Integrations**.
-2. Select the agency.
-3. In the **Permissions** tab, turn on **Change the** **Advanced Privacy setting.**
-4. Click **Save.**
+1. En el menú lateral, selecciona **Colaborar** > **Integraciones activas**.
+2. Seleccionar la agencia.
+3. En la pestaña **Permisos**, activa **Cambiar** **la configuración de privacidad avanzada.**
+4. Haz clic en **Guardar**.
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy guide & postback macros for ad networks</Anchor>
+> * <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Guía de privacidad avanzada y framework de postback para ad networks</Anchor>
 
-<div data-zendesk-anchors="aggregated-advanced-privacy-framework=aggregated-advanced-privacy-aap-framework h_01HDPDE0H3SYFWBHK59HBV2P6N=aggregated-advanced-privacy-aap-framework aapimpacted-features=aap-impacted-features h_01HDPDE0H339BPACN235V70MWW=aap-impacted-features h_01HDPDE0H3QBE60DVBZ1MWNB9N=data-availability-principles-in-aggregated-advanced-privacy h_01HDPDE0H326EXNCQHPVJWXK3H=paid-and-owned-media-data-availability h_01HDPDE0H3TBDSXCNW5Q3E1Q7P=paid-media h_01HDPDE0H3SACYAV19WQD9TCQ3=paid-media-data-availability-by-att-status h_01HDPDE0H4M4XPE1C54K284BGW=owned-media controlling-aap=controlling-advanced-aggregated-privacy h_01HDPDE0H4VQC2DWAV68Q9VDVQ=controlling-advanced-aggregated-privacy h_01HDPDE0H4BHG114REGTWCDBP9=aap-central-switch h_01HDPDE0H4SC810EBK7ZGQ02K0=aap-enabled h_01HKHPGQ1R6HZEXSRTX7ATVWE9=aap-disabled h_01HDPDE0H4FRDXWRCYAWTPZZWE=partner-advanced-privacy-switch 01HKHPEBBFGQ5ZX4J6G50GEN64=advanced-aggregated-privacy-implications-for-your-partners h_01HDPDE0H4PDJ4TC02TED0DB8P=ad-networks h_01HDPDE0H47ENYTWRVFPX0VTZC=postbacks-to-ad-network-partners h_01HDPDE0H4B01YG577QZCG7TA7=postbacks-for-attributed-ad-networks h_01HDPDE0H63ZMV255SN7EKDRMV=postbacks-for-unattributed-partners h_01HDPDE0H67T1XFTEB2N0NN6YN=analytics-partners h_01HDPDE0H6AM91W49W2G2Z94DM=agencies h_01HDPDMX05ZZCAMW4TTWF4M4YN=see-also" />
+<div data-zendesk-anchors="aggregated-advanced-privacy-framework=framework-de-privacidad-avanzada-agregada-aap h_01HDPDE0H3SYFWBHK59HBV2P6N=framework-de-privacidad-avanzada-agregada-aap aapimpacted-features=funciones-afectadas-por-la-aap h_01HDPDE0H339BPACN235V70MWW=funciones-afectadas-por-la-aap data-availability-principles-in-aggregated-advanced-privacy=principios-de-disponibilidad-de-datos-en-la-privacidad-avanzada-agregada h_01HDPDE0H3QBE60DVBZ1MWNB9N=principios-de-disponibilidad-de-datos-en-la-privacidad-avanzada-agregada paid-and-owned-media-data-availability=disponibilidad-de-datos-de-medios-pagados-y-propios h_01HDPDE0H326EXNCQHPVJWXK3H=disponibilidad-de-datos-de-medios-pagados-y-propios h_01HDPDE0H3TBDSXCNW5Q3E1Q7P=paid-media paid-media-data-availability-by-att-status=disponibilidad-de-datos-de-medios-pagados-por-estado-de-la-att h_01HDPDE0H3SACYAV19WQD9TCQ3=disponibilidad-de-datos-de-medios-pagados-por-estado-de-la-att h_01HDPDE0H4M4XPE1C54K284BGW=owned-media controlling-aap=controlando-la-privacidad-agregada-avanzada h_01HDPDE0H4VQC2DWAV68Q9VDVQ=controlando-la-privacidad-agregada-avanzada h_01HDPDE0H4BHG114REGTWCDBP9=aap-central-switch aap-enabled=aap-habilitada h_01HDPDE0H4SC810EBK7ZGQ02K0=aap-habilitada aap-disabled=aap-deshabilitada h_01HKHPGQ1R6HZEXSRTX7ATVWE9=aap-deshabilitada h_01HDPDE0H4FRDXWRCYAWTPZZWE=partner-advanced-privacy-switch 01HKHPEBBFGQ5ZX4J6G50GEN64=implicaciones-de-la-privacidad-avanzadas-agregada-para-tus-partners h_01HDPDE0H4PDJ4TC02TED0DB8P=ad-networks postbacks-to-ad-network-partners=postbacks-a-partners-de-ad-networks h_01HDPDE0H47ENYTWRVFPX0VTZC=postbacks-a-partners-de-ad-networks postbacks-for-attributed-ad-networks=postbacks-para-ad-networks-atribuidas h_01HDPDE0H4B01YG577QZCG7TA7=postbacks-para-ad-networks-atribuidas postbacks-for-unattributed-partners=postbacks-para-partners-no-atribuidos h_01HDPDE0H63ZMV255SN7EKDRMV=postbacks-para-partners-no-atribuidos h_01HDPDE0H67T1XFTEB2N0NN6YN=analytics-partners h_01HDPDE0H6AM91W49W2G2Z94DM=agencies h_01HDPDMX05ZZCAMW4TTWF4M4YN=consulta-tambi%C3%A9n" />

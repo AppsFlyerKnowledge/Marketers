@@ -1,5 +1,5 @@
 ---
-title: Data Collaboration Platform (DCP) guide
+title: Guía de la plataforma de colaboración de datos (DCP)
 metadata:
   keywords:
     - Premium
@@ -13,166 +13,165 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2024-06-25T07:41:51Z'
-  edited_at: '2025-12-18T10:57:39Z'
+  edited_at: '2026-08-12T11:54:02Z'
   id: 26183285566353
-  locale: en-us
+  locale: es
   section: Data Collaboration Platform
   section_id: 26230608274065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/26183285566353-Data-Collaboration-Platform-DCP-guide
+  url: https://support.appsflyer.com/hc/es/articles/26183285566353
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> **At a glance:** The AppsFlyer Data Collaboration Platform provides a seamless, privacy-centric solution for commerce media networks and collaborating brands to leverage their combined data to achieve maximum campaign results and create powerful new ad revenue streams.
+> **En resumen:** La plataforma de colaboración de datos de AppsFlyer ofrece una solución fluida y centrada en la privacidad para que las redes de commerce media y las marcas colaboradoras aprovechen los datos combinados, logren los máximos resultados de campaña y creen nuevas y potentes fuentes de ingresos publicitarios.
 
-<Image alt="53877 Need KB image for a new DCP KB (1) - Blurred.png" src="https://files.readme.io/09539acd55618af4f99fb3a1118c7ba7ed9273ecabf7d80b007f95ca236d82b9-38491408127633.png" width="798px" />
+<Image alt="53877 Se necesita una imagen de KB para una nueva KB de DCP (1) - Blurred.png" src="https://files.readme.io/09539acd55618af4f99fb3a1118c7ba7ed9273ecabf7d80b007f95ca236d82b9-38491408127633.png" width="798px" />
 
-## About the Data Collaboration Platform (DCP)
+## Acerca de la plataforma de colaboración de datos (DCP)
 
-The AppsFlyer Data Collaboration Platform (DCP) is an advanced, next-generation solution that empowers commerce media networks and brands to unlock the potential of their combined data. Through secure, privacy-centric features, the platform enables seamless collaborations, allowing businesses to generate new ad revenue streams and build custom audiences for activation of spot-on campaigns anywhere.
+La plataforma de colaboración de datos de AppsFlyer (DCP) es una solución avanzada de nueva generación que permite a las redes de commerce media y a las marcas desbloquear el potencial de sus datos combinados. Gracias a funciones seguras y centradas en la privacidad, la plataforma facilita colaboraciones fluidas que permiten a las empresas generar nuevas fuentes de ingresos publicitarios y crear audiencias personalizadas para activar campañas muy precisas en cualquier lugar.
 
-DCP processes shared data including user-level data, to generate anonymized insights, ensuring that individual user information remains fully protected from exposure to both AppsFlyer and collaborating partners. Strict governance and compliance are enforced, with all parties agreeing on access and usage policies to prevent unauthorized sharing or misuse of information. By combining data from partner sources, businesses can unlock aggregated insights that are far more comprehensive and impactful than relying solely on their own data.
+DCP procesa datos compartidos, incluidos datos a nivel de usuario, para generar insights anonimizados, lo que garantiza que la información individual de los usuarios permanezca totalmente protegida frente a la exposición tanto a AppsFlyer como a los Partners colaboradores. Se aplican estrictos controles de gobierno y cumplimiento, y todas las party acuerdan políticas de acceso y uso para evitar el intercambio no autorizado o el uso indebido de la información. Al combinar datos de fuentes de partners, las empresas pueden obtener insights agregados mucho más completos y valiosos que si se basaran únicamente en sus propios datos.
 
-With access to a collaborative ecosystem of over 14,000 global brands and thousands of customer data platforms (CDPs), media partners, and enrichment tools, the DCP drives impactful, data-driven collaborations that deliver unparalleled revenue and results. DCP empowers both commerce media networks and brands to achieve maximum campaign results and revenue, strengthen partnerships, and thrive in a competitive digital landscape.
+Con acceso a un ecosistema colaborativo de más de 14.000 marcas globales y miles de plataformas de datos de clientes (CDP), partners de medios y herramientas de enriquecimiento, DCP impulsa colaboraciones impactantes basadas en datos que ofrecen ingresos y resultados sin precedentes. DCP permite tanto a las redes de commerce media como a las marcas lograr los máximos resultados de campaña e ingresos, reforzar las asociaciones y prosperar en un entorno digital competitivo.
 
-**The Data Collaboration Platform (DCP) enables you to:**
+**La plataforma de colaboración de datos (DCP) te permite:**
 
-* Create profitable new revenue streams by empowering non-technical brand-side marketers to build audiences from your data independently and advertise on your site or elsewhere.
-* Measure the performance of campaigns based on collaborative data across all retail media scenarios, with SKU-level granularity, to confidently drive marketing campaign investments for you and the brands you collaborate with.
-* Restructure and normalize data for multiple collaborations and protect sensitive information—all without data specialists.
-* Create and maintain seamless integrations with IDR providers, other clean rooms, and platforms so you can scale, adapt, and collaborate across ecosystems while safeguarding data privacy.
-* Feel secure, knowing you’re growing your business aligned with global and local privacy regulations. Secure and compliant data collaboration is assured across all collaborations.
+* Crear nuevas fuentes de ingresos rentables al permitir que profesionales de marketing de marcas sin conocimientos técnicos creen audiencias a partir de tus datos de forma independiente y se anuncien en tu sitio o en otros lugares.
+* Medir el rendimiento de las campañas basadas en datos colaborativos en todos los escenarios de Retail media, con granularidad a nivel de SKU, para impulsar con confianza las inversiones en campañas de marketing, tanto tuyas como de las marcas con las que colaboras.
+* Reestructurar y normalizar datos para múltiples colaboraciones, y proteger la información confidencial, todo ello sin especialistas en datos.
+* Crear y mantener integraciones fluidas con proveedores de IDR, otras clean rooms y plataformas para que puedas escalar, adaptarte y colaborar entre ecosistemas mientras proteges la privacidad de los datos.
+* Trabaja con seguridad sabiendo que haces crecer tu negocio en línea con las normativas de privacidad globales y locales. La colaboración de datos segura y conforme está garantizada en todas las colaboraciones.
 
-## Use cases
+## CASOS DE USO
 
-See some collaboration use case examples.
+Consulta algunos ejemplos de casos de uso de colaboración.
 
 <div id="personalized-marketing-to-consumers" />
 
-<Accordion title="Personalized marketing to consumers">
+<Accordion title="Marketing personalizado para consumidores">
 
-Exchanging anonymized data between commerce retailers and brands to create tailored ads based on individual shopping behaviors.
+Intercambio de datos anonimizados entre retailers de commerce y marcas para crear anuncios personalizados basados en comportamientos de compra individuales.
 
-> 📄 **Example: Non-endemic advertising**
+> 📄 **Ejemplo: publicidad no endémica**
 >
-> A cross-sector collaboration: An affordable fashion brand engages supermarket customers who frequently purchase diapers (parents or caretakers of young children). They promote their ads for toddler clothing.
+> Una colaboración intersectorial: una marca de moda asequible atrae a clientes de supermercado que compran pañales con frecuencia (padres, madres o cuidadores de niños pequeños). Promocionan sus anuncios de ropa para niños pequeños.
 
-> 📄 **Example: Endemic advertising**
+> 📄 **Ejemplo: publicidad endémica**
 >
-> Reaching a ready-to-buy audience: A food delivery retailer collaborates with a fast-food brand. The retailer leverages its extensive base of users ordering food deliveries and promotes the brand’s special sale directly on its app. The brand gains visibility and a more precise, personalized audience, which increases campaign performance.
+> Llegar a una audiencia lista para comprar: un retailer de reparto de comida colabora con una marca de comida rápida. El Retail aprovecha su amplia base de usuarios que piden entregas de comida y promociona la oferta especial de la marca directamente en su aplicación. La marca gana visibilidad y llega a una audiencia más precisa y personalizada, lo que aumenta el rendimiento de la campaña.
 
 </Accordion>
 
 <div id="audience-segmentation-and-targeting" />
 
-<Accordion title="Audience segmentation and engagement">
+<Accordion title="Segmentación de audiencias y engagement">
 
-Identifying customer segments, such as "value-conscious shoppers" or "brand loyalists", who are considered ready-to-buy audiences, using anonymized purchase history and browsing behavior.
+Identificación de segmentos de clientes, como «compradores sensibles al precio» o «clientes fieles a la marca», que se consideran audiencias listas para comprar, a partir del historial de compras anonimizado y del comportamiento de navegación.
 
-> 📄 **Example: Non-endemic advertising**
+> 📄 **Ejemplo: publicidad no endémica**
 >
-> A brand collaborates with a retailer to promote running shoes. The brand wants to engage shoppers who searched for running shoes within the last 7 days on the retailer's in-app search but didn't make a purchase.
+> Una marca colabora con un Retail para promocionar zapatillas para correr. La marca quiere atraer a compradores que buscaron zapatillas para correr en los últimos 7 días en la búsqueda in-app del Retail, pero no realizaron ninguna compra.
 
-> 📄 **Example: Non-endemic advertising**
+> 📄 **Ejemplo: publicidad no endémica**
 >
-> A clothing brand collaborates with a CMN hotel chain to promote its summer collection to travelers visiting tropical destinations.
+> Una marca de ropa colabora con una cadena hotelera de CMN para promocionar su colección de verano entre viajeros que visitan destinos tropicales.
 
 </Accordion>
 
-## Get started using DCP
+## Empieza a usar DCP
 
-**To get started using DCP, follow the steps below:**
+**Para empezar a usar DCP, sigue los pasos que se indican a continuación:**
 
-<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Prerequisite**
+<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Requisitos previos**
 
-* An AppsFlyer <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">account</Anchor> with DCP access.
+* Una <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">cuenta</Anchor> de AppsFlyer con acceso a DCP.
 
 <div id="step-1-planning" />
 
-<Accordion title="Step 1. Planning">
+<Accordion title="Paso 1. Planificación">
 
-The possibilities are nearly endless for what can be accomplished using data collaborations. When planning, you'll want to:
+Las posibilidades de lo que se puede lograr con las colaboraciones de datos son casi infinitas. Al planificar, querrás:
 
-1. Consider which data to include. Based on your objectives and those of your potential collaborators, determine which data will be useful to include in collaborations. Pinpoint the relevant data you believe will be valuable.
-2. Prepare and consolidate your data.
+1. Considera qué datos incluir. En función de tus objetivos y de los de tus posibles colaboradores, determina qué datos será útil incluir en las colaboraciones. Identifica los datos relevantes que crees que aportarán valor.
+2. Prepara y consolida tus datos.
 
 </Accordion>
 
 <div id="step-2-create-your-cloud-storage-infrastructure" />
 
-<Accordion title="Step 2. Set up your cloud storage infrastructure">
+<Accordion title="2. Configura tu infraestructura de almacenamiento en la nube">
 
-The cloud storage will house your data sources and audiences, which will be part of your collaborations. Setting up your cloud storage involves establishing inbound and outbound connections between your cloud services and DCP.
+El almacenamiento en la nube alojará tus fuentes de datos y audiencias, que formarán parte de tus colaboraciones. Configurar el almacenamiento en la nube implica establecer conexiones entrantes y salientes entre tus servicios en la nube y DCP.
 
-* **Inbound connections** are used to access your first-party data when creating sources.
-* **Outbound connections** serve as destinations for audiences built within the platform.
+* Las **conexiones entrantes** se usan para acceder a tus datos propios al crear fuentes.
+* Las **conexiones salientes** sirven como destinos para las audiencias creadas dentro de la plataforma.
 
-**To set up your cloud storage infrastructure:**
+**Para configurar tu infraestructura de almacenamiento en la nube:**
 
-1. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">Set up your cloud services</Anchor>.
-2. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">Connect your cloud services to AppsFlyer</Anchor>.
+1. /docs/data-collaboration-platform-dcp-set-up-your-cloud-services
+2. <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-add-connections">Conecta tus servicios en la nube a AppsFlyer</Anchor>.
 
 </Accordion>
 
 <div id="step-3-create-your-data-sources" />
 
-<Accordion title="Step 3. Create your sources">
+<Accordion title="3. Crea tus fuentes">
 
-Sources refer to your first-party data ingested into the Data Collaboration Platform (DCP). You'll be able to securely share your sources with specific collaborators later on. Learn how to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">create your sources</Anchor>.
+Las fuentes hacen referencia a tus datos de first-party incorporados en la plataforma de colaboración de datos (DCP). Más adelante, podrás compartir de forma segura tus fuentes con colaboradores concretos. Aprende a <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">crear tus fuentes</Anchor>.
 
 </Accordion>
 
 <div id="step-4-create-a-collaboration" />
 
-<Accordion title="Step 4. Create a collaboration">
+<Accordion title="4. Crea una colaboración">
 
-The collaboration is where all the action happens. It entails inviting a collaborator, setting <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-sharing-permissions">permissions</Anchor> defining what your collaborator can do with the shared data, and finally, sharing your data. Learn how to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration">create a collaboration</Anchor>.
+La colaboración es donde ocurre toda la actividad. Implica invitar a un colaborador, configurar los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-sharing-permissions">permisos</Anchor> que definen qué puede hacer tu colaborador con los datos compartidos y, por último, compartir tus datos. Aprende a <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-a-collaboration">crear una colaboración</Anchor>.
 
 </Accordion>
 
 <div id="step-5-run-campaigns-and-measure-the-results" />
 
-<Accordion title="Step 5. Build audiences and run campaigns">
+<Accordion title="Paso 5. Crea audiencias y ejecuta campañas">
 
-Next, you and your collaborator can <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">build audiences</Anchor> from the collaborative data, and then use them to run campaigns.
+A continuación, tú y tu colaborador podéis <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">crear audiencias</Anchor> a partir de los datos de la colaboración y luego usarlas para ejecutar campañas.
 
 </Accordion>
 
 <div id="h_01JRA57G544BRSJ5JNJRZ4BV4X" />
 
-<Accordion title="Step 6. Set up measurement and gain insights">
+<Accordion title="Paso 6. Configura la medición y obtén insights">
 
-Now it's time to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview">set up measurement</Anchor> to see how your collaborative campaigns performed. Afterwards, check out the campaign results in the collaboration dashboard!
+Ahora es el momento de <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-collaboration-measurement-overview">configurar la medición</Anchor> para ver cómo han funcionado tus campañas colaborativas. Después, consulta los resultados de la campaña en el Dashboard de la colaboración.
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
-See additional information about the Data Collaboration Platform.
+Consulta información adicional sobre la plataforma de colaboración de datos.
 
 <div id="data-clean-room-dcr-and-dcp" />
 
-<Accordion title="Data Clean Room (DCR) and DCP">
+<Accordion title="Data Clean Room (DCR) y DCP">
 
-The Data Collaboration Platform (DCP) functions as the central point for data collaboration, including audience creation and activation. DCP relies on the advanced technology of the <Anchor target="_blank" href="/marketers/docs/data-clean-room-overview">Data Clean Room (DCR)</Anchor> to ensure data privacy and security for the collaboration and audience management processes.
+La Plataforma de Colaboración de Datos (DCP) funciona como el punto central para la colaboración de datos, incluyendo la creación y activación de audiencias. DCP se basa en la tecnología avanzada de <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-overview">Data Clean Room (DCR)</Anchor> para garantizar la privacidad y seguridad de los datos en los procesos de colaboración y gestión de audiencias.
 
 </Accordion>
 
 <div id="commonly-used-terms::8d835d5a" />
 
-<Accordion title="Commonly used terms">
+<Accordion title="Términos de uso común">
 
-Understanding some key terms used in relation to the Data Collaboration Platform.
+Comprende algunos términos clave relacionados con la plataforma de colaboración de datos.
 
-| Term | Description |
+| Término | Nota |
 | --- | --- |
-| <span id="audiences"></span><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">**Audiences**</Anchor> | Segmented data files created within the DCP from combined datasets. Based on the agreed permissions, the audience is used for activation either with media partners or sent to the collaborator's cloud connections. |
-| <span id="data-connections"></span><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">**Data connections**</Anchor> | A connection to the cloud services in which your first-party data is stored. This is used to either share your data with collaborators or receive audiences created on the DCP. |
-| <span id="data-sources"></span><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">**Data sources**</Anchor> | A structured folder with a location of your first-party data files that are used in the DCP. This is used when querying the data and building audiences within the platform. |
-| <span id="endemic-advertising"></span>**Endemic Advertising** | Ad placement that’s natural to a market and describes the products that are typically sold by the e-commerce site where the search is taking place. |
-| <span id="nonendemic-advertising"></span>**Non-endemic Advertising** | The practice of buying and selling retailer ad inventory to promote a product or service from a brand that isn’t sold by the retailer, but is relevant or complementary to the retailer’s customer and their needs. |
-| <span id="onsiteoffsite-advertising"></span>**Onsite/Offsite advertising** | The distinction between advertising efforts conducted on a company's own digital properties (onsite) and those carried out on external platforms or websites (offsite). |
+| <span id="audiences"></span><Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">**Audiencias**</Anchor> | Archivos de datos segmentados creados en DCP a partir de conjuntos de datos combinados. Según los permisos acordados, la audiencia se usa para la activación, ya sea con partners de medios o enviándola a las conexiones en la nube del colaborador. |
+| <span id="data-connections"></span><Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-add-connections">**Conexiones de datos**</Anchor> | Una conexión con los servicios en la nube en los que se almacenan tus datos de first-party. Se usa para compartir tus datos con colaboradores o para recibir audiencias creadas en DCP. |
+| <span id="data-sources"></span><Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">**Fuentes de datos**</Anchor> | Una carpeta estructurada con la ubicación de tus archivos de datos de first-party que se usan en DCP. Se usa al consultar los datos y crear audiencias en la plataforma. |
+| <span id="endemic-advertising"></span>**Publicidad endémica** | Ubicación de anuncios natural para un mercado que describe los productos que suele vender el sitio de comercio electrónico donde se realiza la búsqueda. |
+| <span id="nonendemic-advertising"></span>**Publicidad no endémica** | Práctica de comprar y vender inventario de anuncios de un retailer para promocionar un producto o servicio de una marca que el retailer no vende, pero que es relevante o complementaria para el cliente del retailer y sus necesidades. |
+| <span id="onsiteoffsite-advertising"></span>**Publicidad onsite/offsite** | Distinción entre las acciones publicitarias realizadas en las propiedades digitales propias de una empresa (onsite) y las que se llevan a cabo en plataformas o sitios web externos (offsite). |
 
 </Accordion>
 
-<div data-zendesk-anchors="introduction=about-the-data-collaboration-platform-dcp h_01J174QBCMPNBXTVVPZ9WD1C1R=about-the-data-collaboration-platform-dcp h_01JHDBF48CTRKJR1R2YAPP9XWG=use-cases h_01J33KXXC6X89TN05H79DHAAK7=personalized-marketing-to-consumers h_01J32PY189N0K2PCFND6V261GS=example-non-endemic-advertising 01J3D16C8F3RME6WN9ZGT7GPZC=example-endemic-advertising h_01J33KXXC78BCB2P0BS7RQ88QS=audience-segmentation-and-targeting 01J3D16M70KGAB8WVC5NE4YRMQ=example-non-endemic-advertising-1 01J3D16RNT2D313G6VGNND86P2=example-non-endemic-advertising-2 h_01JF5ECVHPW0FS8E4KVK4WDDNE=get-started-using-dcp 01JH5GQ7QEZNVWS1F3Y3AD4VHE=step-1-planning 01JH5GQ7QFBDRW6TGHK66Z077M=step-2-create-your-cloud-storage-infrastructure 01JH5GQ7QG2W6SER068XPMWEW7=step-3-create-your-data-sources 01JH5GQ7QGB8K1V5B8B5BMSP3C=step-4-create-a-collaboration 01JH5GQ7QH0YB0MX1J1P6MFCTW=step-5-run-campaigns-and-measure-the-results h_01JFW684HVGJWKXHN0W2JVQ21D=additional-information 01JH5F1ZTFJC4WKD588T112P0D=data-clean-room-dcr-and-dcp 01JH5F1ZTGJRJV8631WVJ2DDZ8=commonly-used-terms::8d835d5a" />
+<div data-zendesk-anchors="introduction=acerca-de-la-plataforma-de-colaboraci%C3%B3n-de-datos-dcp h_01J174QBCMPNBXTVVPZ9WD1C1R=acerca-de-la-plataforma-de-colaboraci%C3%B3n-de-datos-dcp use-cases=casos-de-uso h_01JHDBF48CTRKJR1R2YAPP9XWG=casos-de-uso h_01J33KXXC6X89TN05H79DHAAK7=personalized-marketing-to-consumers h_01J32PY189N0K2PCFND6V261GS=ejemplo-publicidad-no-end%C3%A9mica 01J3D16C8F3RME6WN9ZGT7GPZC=ejemplo-publicidad-end%C3%A9mica h_01J33KXXC78BCB2P0BS7RQ88QS=audience-segmentation-and-targeting 01J3D16M70KGAB8WVC5NE4YRMQ=ejemplo-publicidad-no-end%C3%A9mica-1 01J3D16RNT2D313G6VGNND86P2=ejemplo-publicidad-no-end%C3%A9mica-2 get-started-using-dcp=empieza-a-usar-dcp h_01JF5ECVHPW0FS8E4KVK4WDDNE=empieza-a-usar-dcp 01JH5GQ7QEZNVWS1F3Y3AD4VHE=step-1-planning 01JH5GQ7QFBDRW6TGHK66Z077M=step-2-create-your-cloud-storage-infrastructure 01JH5GQ7QG2W6SER068XPMWEW7=step-3-create-your-data-sources 01JH5GQ7QGB8K1V5B8B5BMSP3C=step-4-create-a-collaboration 01JH5GQ7QH0YB0MX1J1P6MFCTW=step-5-run-campaigns-and-measure-the-results additional-information=informaci%C3%B3n-adicional h_01JFW684HVGJWKXHN0W2JVQ21D=informaci%C3%B3n-adicional 01JH5F1ZTFJC4WKD588T112P0D=data-clean-room-dcr-and-dcp 01JH5F1ZTGJRJV8631WVJ2DDZ8=commonly-used-terms::8d835d5a" />

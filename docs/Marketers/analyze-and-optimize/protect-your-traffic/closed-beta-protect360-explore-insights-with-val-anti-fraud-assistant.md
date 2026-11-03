@@ -1,5 +1,5 @@
 ---
-title: 'Closed Beta: Protect360 Explore insights with Val anti-fraud assistant'
+title: 'Beta cerrada: Protect360 Explora insights con el asistente antifraude Val'
 metadata:
   keywords:
     - Marketers
@@ -12,64 +12,63 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2025-06-23T14:26:18Z'
-  edited_at: '2025-07-28T11:12:52Z'
+  edited_at: '2026-08-12T11:54:45Z'
   id: 36467082193553
-  locale: en-us
+  locale: es
   section: Protect your traffic
   section_id: 6551015912465
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/36467082193553-Closed-Beta-Protect360-Explore-insights-with-Val-anti-fraud-assistant
+  url: https://support.appsflyer.com/hc/es/articles/36467082193553
 ---
-> **At a glance:** Val is a preemptive anti-fraud assistant in Protect360 that provides weekly insights to help highlight trends, recommend actions, and improve fraud protection. By surfacing actionable intelligence, Val transforms fraud detection from reactive to proactive.
+> **De un vistazo:** Val es un asistente antifraude preventivo de Protect360 que proporciona insights semanales para ayudar a destacar tendencias, recomendar acciones y mejorar la protección contra el fraude. Al sacar a la luz inteligencia procesable, Val transforma la detección de fraude de reactiva a proactiva.
 
-## About Val anti-fraud assistant
+## Acerca del asistente antifraude Val
 
-Val is a data intelligence capability in Protect360 that automatically analyzes recent traffic patterns to uncover potential fraud risks. It delivers weekly insights that highlight trends, recommend actions, and provide benchmark comparisons to help reduce fraud, strengthen security, and optimize performance.
+Val es una capacidad de inteligencia de datos de Protect360 que analiza automáticamente patrones de tráfico recientes para detectar posibles riesgos de fraude. Ofrece insights semanales que destacan tendencias, recomiendan acciones y proporcionan comparativas de referencia para ayudar a reducir el fraude, reforzar la seguridad y optimizar el rendimiento.
 
-With Val, advertisers can:
+Con Val, los anunciantes pueden:
 
-* Investigate fraud spikes across networks.
-* Detect legacy or vulnerable SDK versions.
-* Improve fraud validation rules.
-* Take immediate action based on pre-analyzed data.
+* Investigar picos de fraude en distintas redes.
+* Detectar versiones de SDK antiguas o vulnerables.
+* Mejorar las reglas de validación del fraude.
+* Tomar medidas inmediatas basadas en datos previamente analizados.
 
-Note: Insights are not available to partners.
+Nota: Los insights no están disponibles para los partners.
 
-## Insight types
+## Tipos de insights
 
-Val provides the following insight types and the following user actions to take direct steps to improve fraud detection and overall security:
+Val ofrece los siguientes tipos de insights y las siguientes acciones de usuario para dar pasos directos que mejoren la detección de fraude y la seguridad general:
 
-| Insight type | Description | User actions |
+| Tipo de insight | Nota | Acciones del usuario |
 | --- | --- | --- |
-| **Fraud spike** | <ul><li>Highlights abnormal increases or decreases in fraud for specific networks or sources.</li><li>Provides a comparative analysis of fraud trends at the app level to better understand whether they are expected or an anomaly.</li></ul> | <ul><li>Investigate further in the Protect360 dashboard.</li><li>Share the insight as a PNG.</li><li>Dismiss the insight for one week.</li></ul> |
-| **Old SDK version** | Detects apps using SDKs older than one year, which may lack up-to-date fraud protection and be prone to fraud attacks. | <ul><li>Learn more about SDK updates.</li><li>Share the insight as a PNG.</li><li>Dismiss the insight for one week.</li></ul> |
-| **Fraudulent SDK version** | Identifies traffic originating from SDK versions, and broken down by app versions, known to have been affected by high fraud rates. | <ul><li>Access the Validation Rules setup page.</li><li>Share the insight as a PNG.</li><li>Dismiss the insight for one week.</li></ul> |
+| **Pico de fraude** | <ul><li>Destaca aumentos o descensos anómalos del fraude en redes o fuentes específicas.</li><li>Proporciona un análisis comparativo de las tendencias de fraude a nivel de aplicación para entender mejor si son esperadas o una anomalía.</li></ul> | <ul><li>Investigar más a fondo en el Dashboard de Protect360.</li><li>Compartir el insight como un PNG.</li><li>Descartar el insight durante una semana.</li></ul> |
+| **Versión antigua del SDK** | Detecta aplicaciones que usan SDK con más de un año de antigüedad, que pueden no contar con protección contra el fraude actualizada y ser vulnerables a ataques de fraude. | <ul><li>Saber más sobre las actualizaciones del SDK.</li><li>Compartir el insight como un PNG.</li><li>Descarta el insight durante una semana.</li></ul> |
+| **Versión fraudulenta del SDK** | Identifica el tráfico procedente de versiones del SDK, desglosado por versiones de la aplicación, que se sabe que se han visto afectadas por altas tasas de fraude. | <ul><li>Accede a la página de configuración de las Reglas de validación.</li><li>Comparte el insight como PNG.</li><li>Descarta el insight durante una semana.</li></ul> |
 
-## How Val works
+## Cómo funciona Val
 
-Each week, Explore Insights analyzes traffic from the prior 7–14 days. It surfaces only the most relevant anomalies and vulnerabilities as insights. Prioritization logic ensures each insight adds value.
+Cada semana, Explore Insights analiza el tráfico de los 7–14 días anteriores. Solo muestra como insights las anomalías y vulnerabilidades más relevantes. La lógica de priorización garantiza que cada insight aporte valor.
 
-Note: Insights are generated weekly on Mondays and cover traffic data from the previous 7–14 days (UTC)
+Nota: Insights se generan semanalmente los lunes y cubren los datos de tráfico de los 7–14 días anteriores (UTC)
 
-To ensure insights remain relevant, they follow a predefined lifecycle:
+Para garantizar que los insights sigan siendo relevantes, siguen un ciclo de vida predefinido:
 
-| Timeframe | Behavior |
+| Periodo de tiempo | Comportamiento |
 | --- | --- |
-| Days 1–7 | Insights are shown daily unless dismissed. |
-| Day 8 | Insights are removed automatically. |
-| Dismissed | Insights won't return unless a new issue is detected. |
+| Días 1–7 | Los insights se muestran a diario, a menos que los descartes. |
+| Día 8 | Los insights se eliminan automáticamente. |
+| Descartado | Los insights no volverán a aparecer a menos que se detecte un problema nuevo. |
 
-Note: Once an insight is dismissed, it won’t appear again for the current week.
+Nota: Cuando se descarta un insight, no vuelve a aparecer durante la semana en curso.
 
-## How to access and use Explore Insights (Val)
+## Cómo acceder a Explore Insights (Val) y usarlo
 
-1. To access Explore Insights, click the **Explore Insights** button at the top right of the Protect360 page.
+1. Para acceder a Explore Insights, haz clic en el botón **Explore Insights** situado arriba a la derecha de la página de Protect360.
 2. <Image alt="Screenshot 2025-07-27 at 15.51.34.png" src="https://files.readme.io/7fafbd4b22ac860913ff452b81c659cff77170fc400ec8e1f4939e0e2fe1410c-37563710382225.png" width="1962px" />
-3. Click the **Take action** button to take user action on the insight.  
-   The actions you can perform are listed in [Insight type](/docs/closed-beta-protect360-explore-insights-with-val-anti-fraud-assistant#insight-types).
-4. The arrows on the left and right will move you to the next or previous action item.
-5. The widgets below the action item provide information that assists you in making a decision.
+3. Haz clic en el botón **Take action** para realizar una acción del usuario en el insight.  
+   Las acciones que puedes realizar se enumeran en [Tipo de insight](/docs/closed-beta-protect360-explore-insights-with-val-anti-fraud-assistant#tipos-de-insights).
+4. Las flechas de la izquierda y la derecha te llevarán al siguiente o al anterior elemento de acción.
+5. Los widgets situados debajo del elemento de acción te proporcionan información para ayudarte a tomar una decisión.
 
 <Image alt="image (11).png" src="https://files.readme.io/0b3d88e18897b7f38c1f70c779e7e5cdcf09565fb5cb7bdc6d9d72309d58e6ad-37563710384529.png" width="1060px" />
 
-<div data-zendesk-anchors="about-val-antifraud-assistant=about-val-anti-fraud-assistant h_01JYEJW1KXSVXXRA1ZDQQZZ46W=about-val-anti-fraud-assistant h_01JYEJW1M0DT985B1GARTFBPMQ=insight-types h_01JYEJW1M8CFEKZBHBE70AQD4G=how-val-works h_01JYEJW1MGP0FMS24GVBYJ890R=how-to-access-and-use-explore-insights-val" />
+<div data-zendesk-anchors="about-val-antifraud-assistant=acerca-del-asistente-antifraude-val h_01JYEJW1KXSVXXRA1ZDQQZZ46W=acerca-del-asistente-antifraude-val insight-types=tipos-de-insights h_01JYEJW1M0DT985B1GARTFBPMQ=tipos-de-insights how-val-works=c%C3%B3mo-funciona-val h_01JYEJW1M8CFEKZBHBE70AQD4G=c%C3%B3mo-funciona-val how-to-access-and-use-explore-insights-val=c%C3%B3mo-acceder-a-explore-insights-val-y-usarlo h_01JYEJW1MGP0FMS24GVBYJ890R=c%C3%B3mo-acceder-a-explore-insights-val-y-usarlo" />

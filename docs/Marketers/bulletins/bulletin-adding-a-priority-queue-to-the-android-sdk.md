@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Adding a priority queue to the Android SDK'
+title: 'Boletín: incorporación de una cola de prioridad al SDK de Android'
 metadata:
   keywords:
     - Marketers
@@ -13,14 +13,13 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-06-19T13:46:02Z'
-  edited_at: '2026-08-18T09:13:22Z'
+  edited_at: '2026-10-20T03:56:35Z'
   id: 6971914107025
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/6971914107025-Bulletin-Adding-a-priority-queue-to-the-Android-SDK
+  url: https://support.appsflyer.com/hc/es/articles/6971914107025
 ---
-| **What's new** | In version 6.7.0 we introduced some changes to the way the SDK is handling the various requests to the AppsFlyer servers.<br /><br />We've noticed that there are apps that try and send in-app events before they have started the SDK. By introducing this change, we're making sure things are executed in the right order. |
+| **¿Qué hay de nuevo?** | En la versión 6.7.0, introdujimos algunos cambios en la forma en que el SDK gestiona las distintas solicitudes a los servidores de AppsFlyer.<br /><br />Hemos detectado que hay apps que intentan enviar eventos in-app antes de haber iniciado el SDK. Con este cambio, nos aseguramos de que todo se ejecute en el orden correcto. |
 | --- | --- |
-| **What's changing** | **Before the change**: In earlier versions of the SDK, the app could send in-app events to AppsFlyer before calling the SDK’s `start` method (which means before the conversion was sent to the server).<br /><br />**After the change**: Starting with this version, the conversion request is prioritized and all the in-app events that take place before calling `start` are stored and wait for the conversion request to be sent. |
+| **Qué ha cambiado** | **Antes del cambio**: en versiones anteriores del SDK, la aplicación podía enviar eventos in-app a AppsFlyer antes de llamar al método `start` del SDK (es decir, antes de que la conversión se enviara al servidor).<br /><br />**Después del cambio**: a partir de esta versión, la solicitud de conversión tiene prioridad y todos los eventos in-app que se producen antes de llamar a `start` se almacenan y esperan a que se envíe la solicitud de conversión. |

@@ -1,5 +1,5 @@
 ---
-title: Data Collaboration Platform (DCP) - Build and activate audiences
+title: Plataforma de Colaboración de Datos (DCP) - Construir y activar audiencias
 metadata:
   keywords:
     - Marketers
@@ -12,287 +12,285 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2024-04-25T12:55:13Z'
-  edited_at: '2026-07-28T11:30:35Z'
+  edited_at: '2026-08-12T11:53:39Z'
   id: 24522739719057
-  locale: en-us
+  locale: es
   section: Data Collaboration Platform
   section_id: 26230608274065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/24522739719057-Data-Collaboration-Platform-DCP-Build-and-activate-audiences
+  url: https://support.appsflyer.com/hc/es/articles/24522739719057
 ---
-> **At a glance:** Build high-value audiences in DCP collaborations using shared data and activate them on media partner sites or cloud services for maximum campaign impact.
+> **En resumen:** Crea audiencias de alto valor en colaboraciones de DCP con datos compartidos y actívalas en sitios de partners de medios o en servicios en la nube para maximizar el impacto de la campaña.
 
-## About DCP audiences
+## Sobre DCP
 
-Build audiences in a DCP collaboration by combining datasets to create enriched audience segments and reach specific consumer groups. Audiences can be based on one collaborator's data or on intersecting users across both collaborators' datasets, based on the permissions defined by the data source owner. After an audience is built, it can be sent to media partners for activation or to a cloud storage bucket.
+El proceso de construir audiencias a partir de un vasto conjunto de datos implica combinar conjuntos de datos para generar datos enriquecidos, que pueden ser aprovechados para alcanzar precisamente a los consumidores que deseas alcanzar. La audiencia puede ser creada utilizando conjuntos de datos combinados de ambas partes o proporcionados solo por una parte. En ambos casos, el colaborador que proporciona los datos otorga permisos y derechos de acceso de acuerdo con los términos acordados. Después de construir la audiencia, puedes enviarla a tus partners de medios para activación o a tu servicio en la nube.
 
-## Build an audience
+## Construye tu audiencia
 
-The following tools are available for building your audiences:
+Las siguientes herramientas están disponibles para construir tus audiencias:
 
-* [Visual audience builder](/docs/data-collaboration-platform-dcp-build-and-activate-audiences#visual-audience-builder) - The visual audience builder is a user-friendly tool that allows non-technical users to create audience segments without needing SQL skills. It allows for advanced audience segmentation using a graphical interface.
-* [SQL audience builder](#sql-audience-builder) (requires SQL expertise) - An SQL query that allows querying the data without restrictions. Requires SQL expertise.
+* **Constructor visual de audiencias:** El constructor visual de audiencias es una herramienta fácil de usar que permite a los usuarios no técnicos crear segmentos de audiencia sin necesidad de habilidades en SQL. Permite una segmentación avanzada de audiencias utilizando una interfaz gráfica.
+* **Creador de audiencias SQL:** Una consulta SQL que permite consultar los datos sin restricciones. Requiere experiencia en SQL.
 
-#### Key features
+#### Características principales
 
-| Visual audience builder | SQL audience builder |
+| Constructor visual de audiencias | Creador de audiencias SQL |
 | --- | --- |
-| <span id="supports-using-one-source-from-each-collaborating-party"></span>Supports using either one source from each collaborating party or multiple sources from one collaborator | Supports multiple sources from both parties |
-| <span id="supports-using-overlapping-data-only"></span>For one source for each collaborator, supports using overlapping data only | Supports querying all the data |
-| <span id="supports-retrieving-values-within-the-selected-attribute-range"></span>Supports retrieving values within the selected attribute range. | Supports querying values beyond the attribute range |
+| <span id="supports-using-one-source-from-each-collaborating-party"></span>Soporta el uso de una fuente de cada parte colaboradora o múltiples fuentes de un colaborador | Soporta múltiples fuentes de ambas partes |
+| <span id="supports-using-overlapping-data-only"></span>Para una fuente de cada colaborador, solo soporta el uso de datos superpuestos | Soporta consultar todos los datos |
+| <span id="supports-retrieving-values-within-the-selected-attribute-range"></span>Soporta recuperar valores dentro del rango de atributos seleccionados. | Admite consultar valores más allá del rango de atributos |
 
-Learn how to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion">prepare source data</Anchor> to maximize match rates between collaborator datasets.
+Descubre cómo <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion">preparar los datos de origen</Anchor> para maximizar las tasas de coincidencia entre los conjuntos de datos de los colaboradores.
 
 <div id="visual-audience-builder" />
 
-<Accordion title="Visual audience builder">
+<Accordion title="Constructor visual de audiencias">
 
-**Follow the steps below to build your audiences using the Visual Audience Builder:**
+**Sigue los pasos a continuación para construir tus audiencias utilizando el Constructor de Audiencias Visual:**
 
 > 📘 **Note**
 >
-> Make sure you have the Build audiences <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-sharing-permissions">permission</Anchor> to create an audience.
+> Asegúrate de tener el permiso de <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">Construir audiencias</Anchor> para crear una audiencia.
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
+1. En AppsFlyer, desde el menú lateral, ve a **Colaborar** > **Data Clean Room**.
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2c1d9c18f9b28619e3e24cd4743ae0b98c7f04924baa2b915ec6323452a75088-42800679689105.png" width="245px" />
-2. From the **Collaborations** tab, click the relevant collaboration.
+   <Image alt="Haz clic en Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="245px" />
+2. Desde la pestaña **Colaboraciones**, haz clic en la colaboración relevante.
 
    <Image alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
-3. In the collaboration, click **New audience** > **Visual audience builder**.  
-   **Note:** At least one source must be associated before you can build an audience.
+3. En la colaboración, haz clic en **Nueva audiencia** > **Constructor de audiencias visual**.  
+   **Nota:** Al menos una fuente debe estar asociada antes de que puedas construir una audiencia./strong>
 
    <Image alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
-4. Proceed with the **Audience builder** walkthrough steps below:
+4. Procede con los pasos del viaje del **Constructor de audiencias** a continuación:
 
-#### Step 1: Details and sources
+#### Paso 1: Detalles y fuentes
 
-The audience can be created using data from a single collaborator or by merging one source from each collaborator to enable a combined data source.
+La audiencia se puede crear utilizando datos de un solo colaborador o fusionando una fuente de cada colaborador para habilitar una fuente de datos combinada.
 
-![New aud.png](https://files.readme.io/c110dcda7524ddcb4ce255ac5eb1f33ffec61103219e35f54f1d5687135cf915-35683488156433.png)
+![Nueva aud.png](https://files.readme.io/c110dcda7524ddcb4ce255ac5eb1f33ffec61103219e35f54f1d5687135cf915-35683488156433.png)
 
-1. **Audience name:** Name the audience collaboration.
-2. **Select sources:** Select a source from the dropdown list:
-   * For a one-sided collaboration: select either your own source or your collaborator's source.
-   * For a two-sided collaboration: select one of your own sources and one of your collaborator's sources.
+1. **Nombre de audiencia:** Nombra la colaboración de audiencia.
+2. **Seleccionar fuentes:** Selecciona una fuente de la lista desplegable:
+   * Para una colaboración unilateral: selecciona tu propia fuente o la fuente de tu colaborador.
+   * Select a media partner connection.png
 
-     > 📘 **Note**
+     > 📘 **Advertencia**
      >
-     > * When both sources share intersecting users, the right pane shows a summary of the source intersection, providing an estimated count of users common to both sources.
-     > * Transactional data sources will not be available in the source dropdown. See [Working with transactional data sources](#working-with-transactional-data-sources) below.
+     > * **Nota:** Cuando ambas fuentes comparten usuarios en común, el panel derecho muestra un resumen de la intersección de fuentes, proporcionando un conteo estimado de usuarios comunes a ambas fuentes.
+     > * Las fuentes de datos transaccionales no estarán disponibles en el menú desplegable de origen. Consulta [Trabajo con fuentes de datos transaccionales](#trabajar-con-fuentes-de-datos-transaccionales) más abajo.
 
-3. **Data combination method:** Select which data you want to build the audience from:
-   * **Intersecting users** - Includes only users that appear in both sources (yours and your collaborator's).
-   * **Users from my source only** - Includes only users unique to your source. Excludes all users appearing in your collaborator's source.
-   * **Users from the collaborator's source only** - Includes only users unique to your collaborator's associated source. Excludes all users appearing in your source.  
+3. **Método de combinación de datos:** Selecciona de qué datos deseas construir la audiencia:
+   * **Usuarios en común** - Incluye solo usuarios que aparecen en ambas fuentes (la tuya y la de tu colaborador).
+   * **Usuarios solo de mi fuente** - Incluye solo usuarios de tu fuente. Excluye a todos los usuarios que aparecen en la fuente de tu colaborador.
+   * **Usuarios solo de la fuente del colaborador** - Incluye solo usuarios únicos de la fuente asociada de tu colaborador. Excluye a todos los usuarios que aparecen en tu fuente.  
 
-     **Note:** All three options will only be available if the source permissions have "**Build Audiences**" > "**Can use all data** - **Universal dataset**" enabled. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions">Learn more about source permissions</Anchor>  
+     **Nota:** Las tres opciones solo estarán disponibles si los permisos de la fuente tienen "**Construir Audiencias**" > "**Pueden usar todos los datos** - **Conjunto de datos universal**" habilitados. <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#permisos-de-uso-compartido">Saber más sobre los permisos de la fuente</Anchor>  
 
      <Image alt="can use all data permision enabled w arrow.png" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
-4. Click **Next**.
+4. Haz clic en **Siguiente**.
 
-#### Step 2: Define the audience
+#### Paso 2: Definir la audiencia
 
-After the data sources are selected, this step involves choosing which attributes and values to include in your audience.
+Después de seleccionar las fuentes de datos, este paso implica elegir qué atributos y valores incluir en tu audiencia.
 
-1. Click **Select column** to see the list of attributes from the sources.
-2. Select an attribute, operator, and attribute value.
-   * **Numerical and date attributes** can be filtered with the operators:  
-     Equals, Not equals, Greater than, Lower than, Greater than or equals,  
-     Lower than or equals, Between, Last "X" days (can also include the current day)
-   * **Text attributes** can be filtered with the operators:  
-     Equals or Non-equals
+1. Haz clic en **Seleccionar columna** para ver la lista de atributos de las fuentes.
+2. Selecciona un atributo, operador y valor de atributo.
+   * **Atributos numéricos y de fecha** se pueden filtrar con los operadores:  
+     Iguales, Diferentes, Mayor que, Menor que, Mayor o igual que,  
+     Menor o igual que, Entre, Últimos "X" días (también puede incluir el día actual)
+   * **Atributos de texto** se pueden filtrar con los operadores:  
+     Iguales o Diferentes
 
-     > 📘 **Note**
+     > 📘 **Nota**
      >
-     > * If an attribute isn't selected, all the attributes are included by default.
-     > * Once attribute values are selected, the audience size is adjusted.
+     > * Si no se selecciona un atributo, todos los atributos se incluyen por defecto.
+     > * Una vez que se seleccionan los valores de los atributos, se ajusta el tamaño de la audiencia.
 
-3. [Optional] Click **+ Condition** to add another attribute, and select its values.  
-   Repeat as needed.
-4. Click **Next**.
-5. Continue with the next step [Send the audience](#send-an-audience-for-activation) to activate the audience.
+3. [Opcional] Haz clic en **+ Condición** para agregar otro atributo y seleccionar sus valores.  
+   Repite según sea necesario.
+4. Haz clic en **Siguiente**.
+5. Continúa con el siguiente paso [Enviar la audiencia](#enviar-audiencia-para-activación) para activar la audiencia.
 
 <Image alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
 
-#### Summary (Right-side preview pane)
+#### Resumen (panel de vista previa de la derecha)
 
-The Summary panel updates in real time as you define your audience. It provides an **estimated range of unique users** that can be activated, based on the identifiers available in the selected data sources and their overlap.  
-Because audience activation depends on which identifiers media partners use at runtime, the audience size is shown as a range rather than a single number.
+El panel Resumen se actualiza en tiempo real a medida que defines tu audiencia. Proporciona un **rango estimado de usuarios únicos** que se pueden activar, en función de los identificadores disponibles en las fuentes de datos seleccionadas y su solapamiento.  
+Como la activación de la audiencia depende de qué identificadores usan los partners de medios en el momento de la ejecución, el tamaño de la audiencia se muestra como un rango en lugar de como un único número.
 
-**Source rows vs. unique users**
+**Filas de fuente vs. usuarios únicos**
 
-Source data may contain multiple rows per user.  
-For example, the same person may appear several times due to:
+Los datos de origen pueden contener varias filas por usuario.  
+Por ejemplo, la misma persona puede aparecer varias veces debido a:
 
-* Multiple events
-* Multiple devices
-* Multiple identifiers (e.g., CUID, email, phone)
+* Varios eventos
+* Varios dispositivos
+* Varios identificadores (p. ej., CUID, correo electrónico, teléfono)
 
-  Audience size estimates in DCP are always based on unique users, not raw rows.
+  Las estimaciones del tamaño de la audiencia en DCP siempre se basan en usuarios únicos, no en filas sin procesar.
 
-**Identifiers and estimated user range**
+**Identificadores y rango estimado de usuarios**
 
-A single source can include more than one identifier for the same user (for example, both a CUID and a hashed email) because different media partners support different identifiers, and DCP can't predict which identifier will be used during activation.
+Una sola fuente puede incluir más de un identificador para el mismo usuario (por ejemplo, tanto un CUID como un correo electrónico con hash), ya que distintos partners de medios admiten distintos identificadores y DCP no puede predecir qué identificador se usará durante la activación.
 
-DCP estimates the audience size as a minimum-maximum range:
+DCP estima el tamaño de la audiencia como un rango mínimo-máximo:
 
-* **Minimum:** assumes the strongest possible overlap between identifiers
-* **Maximum:** assumes identifiers represent different users
+* **Mínimo:** asume el mayor solapamiento posible entre identificadores
+* **Máximo:** asume que los identificadores representan a usuarios distintos
 
-The actual activated audience will fall somewhere within this range, depending on partner capabilities and identifier matching.
+La audiencia activada real estará en algún punto dentro de este rango, en función de las capacidades del partner y de la coincidencia de identificadores.
 
-**Understanding the Summary panel:**
+**Cómo entender el panel Resumen:**
 
-**Total users**  
-Shows the maximum number of unique users available across all selected sources before overlap is applied.
+**Usuarios totales**  
+Muestra el número máximo de usuarios únicos disponibles en todas las fuentes seleccionadas antes de aplicar el solapamiento.
 
-**Source contribution**  
-Displays the number of unique users each source contributes and where they overlap with other sources.
+**Filtrar audiencias:** Selecciona filtrar por tus audiencias o aquellas compartidas contigo.
 
-**Estimated data pool**  
-Represents the estimated number of unique users shared across sources, expressed as:
+**Conjunto de datos estimado**  
+Representa el número estimado de usuarios únicos compartidos entre las fuentes, expresado como:
 
-* A user range
-* A percentage of your source contribution
+* Un rango de usuarios
+* Un porcentaje de tu contribución de origen
 
-This pool determines the maximum audience that can be jointly activated.
+Este grupo determina la audiencia máxima que se puede activar conjuntamente.
 
-**Estimated audience size**  
-The Estimated audience size reflects the expected range of unique users that match your audience definition and can be activated. The range:
+**Tamaño estimado de la audiencia**  
+El tamaño estimado de la audiencia refleja el rango esperado de usuarios únicos que coinciden con la definición de tu audiencia y que se pueden activar. El rango:
 
-* Accounts for identifier duplication
-* Accounts for cross-source overlap (if applicable)
-* Adjusts dynamically as filters, sources, or rules change
+* Tiene en cuenta la duplicación de identificadores
+* Tiene en cuenta la superposición entre fuentes (si corresponde)
+* Se ajusta dinámicamente a medida que cambian los filtros, las fuentes o las reglas
 
 ![image (20).png](https://files.readme.io/0ba94f26978e2d3f984bd0c8c2fa8e60159420f5765cff358cdd80d6f05e271c-43432443225489.png)
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> The activated audience on the media partner side may be smaller than the audience you send due to differing match rates by media partners.
+> La audiencia activada del lado del partner de medios puede ser menor que la audiencia que envías debido a las distintas tasas de coincidencia de los partners de medios.
 
-#### Working with transactional data sources
+#### Trabajar con fuentes de datos transaccionales
 
-Transactional data sources, such as purchases, orders, or events that contain multiple records per user, can't be used directly in the visual audience builder. This is because using transactional data without aggregation can result in incorrect audience counts, inflated audience sizes, and unexpected segmentation results.
+Las fuentes de datos transaccionales, como compras, pedidos o eventos que contienen varios registros por usuario, no se pueden usar directamente en el creador visual de audiencias. Esto se debe a que usar datos transaccionales sin agregación puede dar lugar a recuentos de audiencia incorrectos, tamaños de audiencia inflados y resultados de segmentación inesperados.
 
-To use transactional data for audience creation, you must first aggregate it into a user-level dataset using the Data View tool. **To aggregate:**
+Para usar datos transaccionales para la creación de audiencias, primero debes agregarlos en un conjunto de datos de nivel de usuario mediante la herramienta Data View. **Para agregar:**
 
-1. Open the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-customized-data-views">**Data View**</Anchor> tool and create a Data View from the transactional source.
-2. Apply aggregation functions (such as Count, Sum, or Average) to produce one row per user.
-3. Associate the aggregated Data View with the collaboration.
-4. Use the aggregated Data View as your source in the Audience Builder.
+1. Abre la herramienta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-customized-data-views">**Data View**</Anchor> y crea una Data View a partir de la fuente transaccional.
+2. Aplica funciones de agregación (como Count, Sum o Average) para generar una fila por usuario.
+3. Asocia la Data View agregada con la colaboración.
+4. Usa la Data View agregada como tu fuente en el Creador de audiencias.
 
-<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-customized-data-views#transactional-data-sources">Learn how to aggregate transactional data using a Data View</Anchor>
+<Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-customized-data-views#transactional-data-sources">Descubre cómo agregar datos transaccionales con una Data View</Anchor>
 
 </Accordion>
 
 <div id="sql-audience-builder" />
 
-<Accordion title="SQL audience builder">
+<Accordion title="Creador de audiencias SQL">
 
-**Follow the steps below to build your audience using the SQL audience builder:**
+Sigue los pasos a continuación para construir tu audiencia utilizando el creador de audiencia SQL.
 
 > 📘 **Note**
 >
-> Make sure you have the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">Build audiences</Anchor> permission to create an audience.
+> Asegúrate de tener el permiso de <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">Construir audiencias</Anchor> para crear una audiencia.
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
+1. En AppsFlyer, desde el menú lateral, ve a **Colaborar** > **Data Clean Room**.
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2c1d9c18f9b28619e3e24cd4743ae0b98c7f04924baa2b915ec6323452a75088-42800679689105.png" width="40.57%" />
-2. From the **Collaborations** tab, click the relevant collaboration.
+   <Image alt="Haz clic en Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="40.57%" />
+2. Desde la pestaña **Colaboraciones**, haz clic en la colaboración relevante.
 
    <Image alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
-3. In the collaboration, click **New audience** > **SQL audience builder**.
+3. En la colaboración, haz clic en **Nueva audiencia** > **creador de audiencia SQL**.
 
    <Image alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
-4. Proceed with the **Audience builder** walkthrough steps:
+4. Procede con los pasos del viaje del **Generador de audiencia**:
 
-#### Set details
+#### Establecer detalles
 
-Name the audience, and click **Next**.
+Nombra la audiencia y haz clic en **Siguiente**.
 
-#### Build query
+#### Construir consulta
 
-1. Click the editor to open the [SQL builder](#sql-audience-builder).
-2. Write your SQL query to build your audience. You can use joined or one-sided sources.
+1. Haz clic en el editor para abrir el [creador SQL](#sql-audience-builder).
+2. Escribe tu consulta SQL para construir tu audiencia. Puedes usar fuentes unidas o de un solo lado.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> If your query includes a transactional data source, it must include aggregation logic, such as COUNT, SUM, AVG, MIN, or MAX, to reduce the data to one row per user before it can be used for audience creation. Queries that use transactional data without aggregation aren't supported. See [supported and unsupported query patterns](#transactional-data-in-sql-queries) below.
+> Si tu consulta incluye una fuente de datos transaccional, debe incluir lógica de agregación, como COUNT, SUM, AVG, MIN o MAX, para reducir los datos a una fila por usuario antes de poder usarla para la creación de audiencias. No se admiten las consultas que usan datos transaccionales sin agregación. Consulta [los patrones de consulta compatibles y no compatibles](#datos-transaccionales-en-consultas-sql) a continuación.
 
-3. Click **Test** and review the query results (audience sample) shown beneath the query statement.
-4. Click **Continue** and then **Next** to proceed with the next step of the **Audience builder** walkthrough, or **Save as draft** and resume later.
-5. Continue to [Send the audience](#send-an-audience-for-activation).
+3. Haz clic en **Probar** y revisa los resultados de la consulta (audiencia de prueba) que se muestran debajo de la declaración de consulta.
+4. Haz clic en **Continuar** y luego en **Siguiente** para proceder con el siguiente paso del recorrido del **Creador de audiencia**, o **Guardar como borrador** y reanudar más tarde.
+5. Continúa a [Enviar la audiencia](#enviar-audiencia-para-activación).
 
-#### The SQL audience builder
+#### El creador de audiencia SQL
 
-Use the SQL builder to query the data and create an audience. The following table outlines the sections in the builder:
+Usa el creador SQL para consultar los datos y crear una audiencia. La siguiente tabla describe las secciones en el generador:
 
-| Section | Description |
+| Sección | Hallazgos clave |
 | --- | --- |
-| <span id="left-pane"></span>Left pane | Presents all available sources for creating your audience. This may include your sources and those shared with you. You'll only be able to view sources to which you have the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">**Build audience**</Anchor> permission.<br /><br />Selecting a source expands it to reveal corresponding columns. |
-| <span id="topmiddle-section-text-editor"></span>Top-middle section (query editor) | The query editor for writing your SQL statements. |
-| <span id="bottommiddle-section-context-panel"></span>Bottom-middle section (context panel) | This section dynamically shows details based on the selected object from the left pane:<ul><li>**When selecting a source:** Shows the column names ("Field name") and their corresponding types ("Type").</li><li>**When a column is selected:** Shows the column values ("Distinct values") and the row count for each value ("Count").</li><li>**Following query execution:** Shows a sample of the query results.<br />**Note:** As a privacy measure, the results table doesn't display hashed values, such as emails and IDs. These values are shown as "Restricted".</li></ul> |
-| <span id="right-pane"></span>Right pane | This section dynamically shows details based on the selected object:<ul><li>**When selecting a source:** Shows the permissions granted for the source.</li><li>**While writing the SQL query:**<ul><li>Shows the query validity status on the top right of the page. This may include any of the following statuses:</li><li>**Ready to run:** No issues found. You can test the query and proceed to the next step.</li><li>**Syntax error:** An error in syntax was detected along with guidance on resolving it.</li><li>**Permission error:** Indicates a lack of required permissions, with a tooltip detailing which <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#view-permissions-for-collaborator%E2%80%99s-source">access rights are provided for the source</Anchor>.</li><li>Shows a **Test** button on the top right of the page. Once you've completed writing your query, you must test it to confirm the accuracy of the intended audience.<br />Click **Test** to test your query and examine the results.</li></ul></li></ul> |
+| <span id="left-pane"></span>Panel izquierdo | Presenta todas las fuentes disponibles para crear tu audiencia. Esto puede incluir tus fuentes y las que se compartieron contigo. Solo podrás ver las fuentes a las que tienes el <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">**Permiso para construir audiencia**</Anchor>.<br /><br />Seleccionar una fuente la expande para revelar las columnas correspondientes. |
+| <span id="topmiddle-section-text-editor"></span>Sección superior-media (editor de consultas) | El editor de consultas para escribir tus declaraciones SQL. |
+| <span id="bottommiddle-section-context-panel"></span>Sección inferior-media (panel de contexto) | Esta sección muestra dinámicamente detalles basados en el objeto seleccionado del panel izquierdo:<ul><li>**Al seleccionar una fuente:** Muestra los nombres de las columnas ("Nombre del campo") y sus tipos correspondientes ("Tipo").</li><li>**Cuando se selecciona una columna:** Muestra los valores de las columnas ("Valores distintos") y el conteo de filas para cada valor ("Conteo").</li><li>**Después de la ejecución de la consulta:** Muestra una muestra de los resultados de la consulta.<br />**Nota:** Como medida de privacidad, la tabla de resultados no muestra valores encriptados, como correos electrónicos e IDs. Estos valores se muestran como “Restringido”.</li></ul> |
+| <span id="right-pane"></span>Panel derecho | Esta sección muestra dinámicamente detalles basados en el objeto seleccionado:<ul><li>**Al seleccionar una fuente:** Muestra los permisos otorgados para la fuente.</li><li>**Mientras escribes la consulta SQL:**<ul><li>Muestra el estado de validez de la consulta en la parte superior derecha de la página. Esto puede incluir cualquiera de los siguientes estados:</li><li>**Listo para ejecutar:** No se encontraron problemas. Puedes probar la consulta y proceder al siguiente paso.</li><li>**Error de sintaxis:** Se detectó un error de sintaxis junto con orientación sobre cómo resolverlo.</li><li>**Error de permiso:** Indica la falta de permisos requeridos, con un tooltip que detalla qué <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#view-permissions-for-collaborator%E2%80%99s-source">derechos de acceso se proporcionan para la fuente</Anchor>.</li><li>Muestra un **Botón de Prueba** en la parte superior derecha de la página. Una vez que hayas terminado de escribir tu consulta, debes probarla para confirmar la precisión de la audiencia prevista.<br />Haz clic en **Prueba** para probar tu consulta y examinar los resultados.</li></ul></li></ul> |
 
-#### Transactional data in SQL queries
+#### Datos transaccionales en consultas SQL
 
-When working with transactional data sources in the SQL Builder, the following query patterns apply.
+Al trabajar con fuentes de datos transaccionales en el Creador de SQL, se aplican los siguientes patrones de consulta.
 
-**Supported query patterns**
+**Patrones de consulta compatibles**
 
-| Pattern | Description |
+| Patrón | Descripción |
 | --- | --- |
-| <span id="single-transactional-source-with-aggregation"></span>Single transactional source with aggregation | A query that aggregates a transactional source into one row per user. For example, aggregating purchase records to produce a total purchase count per user. |
-| <span id="transactional-source-joined-to-a-profileuserlevel-source"></span>Transactional source joined to a profile/user-level source | Allowed when the transactional side is aggregated before the join. For example, aggregating purchase history by user, then joining the result to a customer profile dataset. |
-| <span id="aggregated-transactional-output-in-downstream-joins"></span>Aggregated transactional output in downstream joins | Once aggregated to the user level, the output can be used in further joins and audience-building workflows, and is treated similarly to a profile-level dataset. |
+| <span id="single-transactional-source-with-aggregation"></span>Fuente transaccional única con agregación | Una consulta que agrega una fuente transaccional para obtener una fila por usuario. Por ejemplo, agregar registros de compra para obtener un recuento total de compras por usuario. |
+| <span id="transactional-source-joined-to-a-profileuserlevel-source"></span>Fuente transaccional unida a una fuente de perfil o de nivel de usuario | Se permite cuando el lado transaccional se agrega antes de la unión. Por ejemplo, agregar el historial de compras por usuario y, después, unir el resultado a un conjunto de datos de perfil de cliente. |
+| <span id="aggregated-transactional-output-in-downstream-joins"></span>Salida transaccional agregada en uniones posteriores | Una vez agregada al nivel de usuario, la salida se puede usar en otras uniones y flujos de trabajo de creación de audiencias, y se trata de forma similar a un conjunto de datos de nivel de perfil. |
 
-**Unsupported query patterns**
+**Patrones de consulta no compatibles**
 
-| Pattern | Description |
+| Patrón | General |
 | --- | --- |
-| <span id="transactional-source-joined-directly-to-another-transactional-source"></span>Transactional source joined directly to another transactional source | Direct joins between two transactional datasets, such as purchases joined to orders, aren't supported. These joins are blocked before execution because they can multiply records, produce incorrect audience results, and create transactional expansion. |
-| <span id="nonaggregated-transactional-query"></span>Non-aggregated transactional query | Queries that use transactional records directly, without aggregation, aren't supported. |
+| <span id="transactional-source-joined-directly-to-another-transactional-source"></span>Fuente transaccional unida directamente a otra fuente transaccional | No se admiten uniones directas entre dos conjuntos de datos transaccionales, como compras unidas a pedidos. Estas uniones se bloquean antes de la ejecución porque pueden multiplicar registros, producir resultados de audiencias incorrectos y crear expansión transaccional. |
+| <span id="nonaggregated-transactional-query"></span>Consulta transaccional no agregada | No se admiten las consultas que usan registros transaccionales directamente, sin agregación. |
 
 </Accordion>
 
-## Send an audience for activation
+## Enviar audiencia para activación
 
-After an audience is built, activate it where it can drive results. Select a destination, such as media partners for campaign targeting or a cloud storage bucket for downstream use, and DCP refreshes and delivers the audience daily based on the latest source data and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions">permissions</Anchor>.
+Después de crear una audiencia, actívala donde pueda impulsar resultados. Selecciona un destino, como partners de medios para el targeting de campañas o un bucket de almacenamiento en la nube para su uso posterior, y DCP actualiza y entrega la audiencia a diario en función de los datos más recientes de la fuente y de los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#permisos-de-uso-compartido">permisos</Anchor>.
 
-* [**Connect an audience to media partners**](#connect-an-audience-to-media-partners) - Media partner platforms include Meta Ads, Google Ads, and many more. Connect your audience to media partners when you want to run paid campaigns, remarketing, or look-alike expansion.
-* [**Export an audience to cloud storage**](#export-to-cloud-storage) - Connect your audience to cloud storage when you need the file in BI models, CDPs, or internal enrichment pipelines.
+* [**Conectar la audiencia a partners de medios**](#h_01J8HNKQ08EVKXA75C9MZB7AW9) - Las plataformas de partners de medios incluyen Meta Ads, Google Ads y muchas más. Conecta tu audiencia a partners de medios cuando quieras ejecutar campañas de pago, remarketing o expansión de públicos similares.
+* [**Exportar la audiencia a tus servicios en la nube**](#h_01HZPCCXTT91FQSTSEXN8GS2Y5)- El almacenamiento en la nube se gestiona a través de AppsFlyer Data Locker. Conecta a tu audiencia con servicios en la nube cuando necesites el archivo en modelos BI, CDPs o canales de enriquecimiento interno.
 
 > 📘 **Note**
 >
-> * The audience is sent for activation as a list of user IDs. This list is continually refreshed and sent to the selected destinations daily.
-> * With every update to the source data, the audience is automatically refreshed and sent to the selected destinations.
+> * Los datos que se envían para activación son una lista de IDs de usuario. Esta lista se actualiza continuamente y se envía a los destinos seleccionados a diario.
+> * Con cada actualización de los datos de origen, la audiencia se reenvía automáticamente a los destinos seleccionados.
 
 <div id="connect-an-audience-to-media-partners" />
 
-<Accordion title="Connect an audience to media partners">
+<Accordion title="Conectar una audiencia con partners de medios">
 
-Send the audience for activation directly in your preferred media partner platforms, such as Meta Ads and <Anchor target="_blank" href="https://support.google.com/google-ads/answer/10010286?hl=en">Google Ads</Anchor>. The system forwards a CSV of user IDs, hashed automatically if the partner requires it.
+Envía la audiencia para activación directamente en tus plataformas de partners de medios preferidas, como Meta Ads y <Anchor target="_blank" href="https://support.google.com/google-ads/answer/10010286?hl=en">Google Ads</Anchor>. El sistema reenvía un CSV de IDs de usuario, encriptados automáticamente si el partner lo requiere.
 
 > 📘 **Note**
 >
-> * When you build an audience using your collaborator's source data, the activation options you see depend on the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-sharing-permissions">permissions</Anchor> granted by your collaborator. Only the activation partners they allowed for that source will be available to you during activation.
-> * If your collaborator didn't grant you permissions to publish or export audiences, you can still submit an activation request. In this case, your activation request is sent to your collaborator for activation on their side.
+> * Cuando creas una audiencia con los datos de la fuente de tu colaborador, las opciones de activación que ves dependen de los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-sharing-permissions">permisos</Anchor> que te haya concedido tu colaborador. Durante la activación, solo tendrás disponibles los partners de activación que haya permitido para esa fuente.
+> * Si tu colaborador no te concedió permisos para publicar o exportar audiencias, igualmente puedes enviar una solicitud de activación. En este caso, tu solicitud de activación se envía a tu colaborador para que la active por su parte.
 
-**To connect the audience to media partners:**
+**Para conectar la audiencia a partners de medios:**
 
-1. Within the audience builder, turn on **Connect audiences to media partners**.  
+1. Dentro del generador de audiencias, activa **Conectar audiencias a partners de medios**.  
 
    ![Connect audience to media partners.png](https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png)
-2. Click **+ Partner connection**.
-3. If no partner connections were established, create a new partner connection:
-   1. Click **+ Add connections**.
-   2. Select the relevant media partner (Meta Ads, Google Ads, Pinterest, TikTok, DV360, or The Trade Desk).
-   3. Enter a name for the connection.
-   4. Click **Login with [partner name]**. You'll be directed to the partner login page. Choose the account to receive the audience. Then, you'll be directed back to the dialog window.
-   5. Click **Select account ID** and select the relevant account ID.
-   6. Click **Save**.
-4. Click **Save & send**.
+2. Haz clic en **+ Conexión de partners**.
+3. Si no se establecieron conexiones con partners, crea una nueva conexión con un partners:
+   1. Haz clic en **+ Agregar conexión**.
+   2. Selecciona el partner de medios relevante (Meta Ads, Google Ads, DV360 o TikTok).
+   3. Ingresa un nombre para la conexión.
+   4. Haz clic en **Iniciar sesión con [nombre del partner]**. Serás enviado a la página de inicio de sesión del partner. Elige la cuenta para recibir la audiencia. Luego, serás dirigido de vuelta a la ventana de diálogo.
+   5. Haz clic en **Seleccionar ID de cuenta** y selecciona el ID de cuenta relevante.
+   6. Haz clic en **Guardar**.
+4. Haz clic en **Guardar y enviar**.
 
 ![image (21).png](https://files.readme.io/bb7785936d3e79e18adffe31ca8121b5c0a65392508ef0aea76c7dc75e9ce9eb-43432561109777.png)
 
@@ -300,119 +298,119 @@ Send the audience for activation directly in your preferred media partner platfo
 
 <div id="export-to-cloud-storage" />
 
-<Accordion title="Export to cloud storage">
+<Accordion title="Exportar a servicios en la nube">
 
-Send the audience directly to your cloud storage bucket. With every audience update, DCP automatically exports the latest version to your selected destination. You can also download the audience as a CSV file at any time.
+Envía la audiencia directamente a tu bucket de almacenamiento en la nube. Con cada actualización de la audiencia, DCP exporta automáticamente la versión más reciente al destino que hayas seleccionado. También puedes descargar la audiencia como archivo CSV en cualquier momento.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> Before exporting, make sure your cloud storage bucket is set up and connected to DCP. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">Set up your cloud services</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">Add connections</Anchor> for instructions.
+> Antes de exportar, asegúrate de que tu bucket de almacenamiento en la nube esté configurado y conectado a DCP. Envía a la audiencia a tus servicios en la nube. La audiencia se exporta al servicio en la nube seleccionado utilizando tus <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">conexiones de AppsFlyer Data Locker</Anchor>.
 
-**To export the audience to cloud storage:**
+**Export audience to cloud.png**
 
-1. Within the audience builder, turn on **Export to cloud storage**.
-2. From the **Cloud storage connections** dropdown, select an existing connection.
-   * If you don't have a connection yet, click **+ New cloud connection**. The connection dialog opens directly on this page, without leaving DCP. Complete the setup and click **Save**. The new connection is selected automatically.
-3. Click **Save & send**.
+1. Dentro del generador de audiencias, activa **Exportar audiencias a la nube**.
+2. En el menú desplegable **Conexiones de almacenamiento en la nube**, selecciona una conexión existente.
+   * Si todavía no tienes una conexión, haz clic en **+ New cloud connection**. El cuadro de diálogo de conexión se abre directamente en esta página, sin salir de DCP. Haz clic en **Guardar y enviar**. La nueva conexión se selecciona automáticamente.
+3. [**Descargar CSV**](#export-audience-to-cloud-services): Descarga la audiencia como un archivo CSV.
 
 </Accordion>
 
-## Manage audiences
+## Gestionar las audiencias
 
-View and manage audiences associated with a collaboration.
+Ver y gestionar las audiencias asociadas con una colaboración.
 
 <div id="access-audience-management" />
 
-<Accordion title="Access audience management">
+<Accordion title="Constructor visual de audiencias">
 
-**To view and manage audiences associated with a collaboration:**
+**Para ver y gestionar las audiencias asociadas con una colaboración:**
 
-1. In DCP, go to the **Collaborations** tab and click the relevant collaboration.
-2. Click the **Audiences** section.  
-   <Image alt="Audiences section new UI.png" src="https://files.readme.io/8f8170d6848da0158c7db76938bdb4fa64cb3a9702218fe549e6b6e859d64140-small-43777994824977.png" width="2836px" />
+1. Puedes ver y gestionar las audiencias asociadas desde la sección **Audiencias** del dashboard de colaboración relevante.
+2. [Constructor de audiencias SQL](#sql-audience-builder) (requiere experiencia en SQL)  
+   <Image alt="Audiences section.png" src="https://files.readme.io/8f8170d6848da0158c7db76938bdb4fa64cb3a9702218fe549e6b6e859d64140-small-43777994824977.png" width="2836px" />
 
-**What you can do from this page:**
+**Lo que puedes hacer desde esta página:**
 
-* **Search for an audience:** Search by either the source name or the audience name.
-* **Sort audiences:** Sort audiences by clicking on any of the column headings.
-* **View audience details:** See details such as the collaborator's name, statistics on overlapping users, [audience status](#view-audience-statuses), and activation location.
-* **More actions:** Clicking the 3-dot menu icon of an audience card opens additional available actions:
-  * [**Edit:**](#edit-the-audience-activation-destination) Modify the audience activation destination.
-  * **Duplicate:** Create a new, independent copy of the audience.
-    * The new audience's sources and data combination method carry over locked (can't be changed); filters and activation destinations carry over pre-filled but are fully editable.
-    * Duplicate is disabled for SQL audience builder audiences and for audiences with an "Invalid" status.
-  * **View history:** See all instances of the audience activation, with details such as the connection and activation status.
-  * [**Delete:**](#delete-an-audience) Delete the audience.
-  * **Pause audience:** Prevents the audience from being updated and re-activated when the data source is modified.
+* **Buscar una audiencia:** Busca por el nombre de la fuente o el nombre de la audiencia.
+* **Ordenar audiencias:** Ordena las audiencias haciendo clic en cualquiera de los encabezados de columna.
+* **Ver detalles de la audiencia:** Ver detalles, como el nombre del colaborador, estadísticas sobre usuarios superpuestos, [estado de la audiencia](#audience-statuses), y ubicación de activación.
+* **Más acciones:** Hacer clic en el ícono del menú de 3 puntos de una tarjeta de audiencia abre acciones adicionales disponibles:
+  * [**Editar:**](#edit-the-audience-activation-destination) Modifica el destino de activación de la audiencia.
+  * **Duplicar:** Crea una copia nueva e independiente de la audiencia.
+    * Las fuentes y el método de combinación de datos de la nueva audiencia se mantienen bloqueados (no se pueden cambiar); los filtros y los destinos de activación se mantienen precompletados, pero son totalmente editables.
+    * Duplicar está deshabilitado para las audiencias del Creador de audiencias SQL y para las audiencias con el estado "Invalid".
+  * **Ver historial de audiencia:** Ve todas las instancias de la activación de la audiencia, con detalles como la conexión y el estado de activación.
+  * [**Eliminar:**](#delete-an-audience) Elimina la audiencia.
+  * **Pausar:** Evita que la audiencia sea actualizada y reactivada cuando se modifica la fuente de datos.
 
 </Accordion>
 
 <div id="edit-the-audience-activation-destination" />
 
-<Accordion title="Edit the audience activation destination">
+<Accordion title="Edita el destino de activación de la audiencia">
 
-While building an audience, you can save it as a draft and then return to it and edit the activation destination (depending on your permissions).
+Mientras construyes una audiencia, puedes guardarla como un borrador y luego volver a ella y editar el destino de activación (dependiendo de tus permisos).
 
-**To edit the audience activation destination:**
+**Para editar el destino de activación de la audiencia:**
 
-1. From the **Collaborations** tab, click the relevant collaboration.
-2. Click the **Audiences** section and locate the relevant audience.
-3. Click the 3-dot menu icon that appears when hovering on the audience > **Edit**.
-4. Under **Connect and export** (at the bottom of the audience page), turn on the relevant toggle:
+1. Desde la pestaña **Colaboraciones**, haz clic en la colaboración relevante.
+2. Haz clic en la sección **Audiencias** y localiza la audiencia relevante.
+3. Haz clic en el ícono de menú de 3 puntos que aparece al pasar el cursor sobre la audiencia > **Editar**.
+4. En “Conectar y exportar” (en la parte inferior de la página de la audiencia), activa lo que sea relevante:
 
-   * [Connect to media partners](#connect-an-audience-to-media-partners)
-   * [Export to cloud storage](#export-to-cloud-storage)
+   * [Conectar con partners de medios](#connect-an-audience-to-media-partners)
+   * [Exportar audiencia a servicios en la nube](#export-to-cloud-storage)
 
 </Accordion>
 
 <div id="delete-an-audience" />
 
-<Accordion title="Delete an audience">
+<Accordion title="Eliminar una audiencia">
 
-You can delete an audience created in your account. Doing so removes it permanently from your account.
+Puedes eliminar una audiencia creada en tu cuenta. Hacer esto la elimina permanentemente de tu cuenta.
 
-**To delete an audience:**
+**Para eliminar una audiencia:**
 
-1. From the **Collaborations** tab, click the relevant collaboration.
-2. Click the **Audiences** section and locate the relevant audience.
-3. Click the 3-dot menu icon that appears when hovering on the audience > **Delete**.
-4. Confirm deletion.
+1. Desde la pestaña **Colaboraciones**, haz clic en la colaboración relevante.
+2. Haz clic en la sección **Audiencias** y localiza la audiencia relevante.
+3. Haz clic en el ícono de menú de 3 puntos que aparece al pasar el cursor en audiencia > **Eliminar**.
+4. Confirma la eliminación.
 
 </Accordion>
 
 <div id="view-audience-statuses" />
 
-<Accordion title="View audience statuses">
+<Accordion title="Estados de la audiencia">
 
-You can view the **Last upload status** of audiences associated with a collaboration.
+Puedes ver los estados de las audiencias asociadas con una colaboración.
 
 <Image alt="image (26).png" src="https://files.readme.io/5659a3e30aac91226ecf8d1cf08618b698f063d1412522f2c231459fdfc7fb03-43541066537105.png" width="860px" />
 
-There are various statuses an audience can have:
+Hay varios estados que una audiencia puede tener:
 
-* **Active:** The audience was successfully sent to the destination platform(s) and is available for use in campaigns.
-* **Draft:** The audience was saved as a draft (it was never connected, exported, or delivered).
-* **Invalid:** Indicates that a source or data view used for the audience has expired, been deleted, removed from the collaboration, or no longer has valid permissions.
-* **Pending delivery:** The audience was sent to the collaborator for activation, and it's pending activation.
-* **Paused:** The audience has been manually paused and won't be sent when new data becomes available.
-* **Suspended:** The collaboration and its associated audiences have been suspended.
+* **Activo:** La audiencia fue enviada con éxito a la(s) plataforma(s) de destino y está disponible para su uso en campañas.
+* **Borrador:** La audiencia fue guardada como un borrador (nunca fue conectada, exportada o entregada).
+* **Inválido**: Indica que una fuente o vista de datos utilizada para la audiencia ha expirado, ha sido eliminada o retirada de la colaboración.
+* **Entrega pendiente:** La audiencia fue enviada al colaborador para activación, y está pendiente de activación.
+* **Pausado**: La audiencia ha sido pausada manualmente y no se enviará cuando nuevos datos estén disponibles.
+* **Suspendido**: La colaboración y sus audiencias asociadas han sido suspendidas.
 
-You can also view the **Upload history** status of an audience.
+También puedes ver el estado de **Historial de carga** de una audiencia.
 
-**To view the upload history:**
+Para ver el historial de carga:
 
-Click the dropdown next to the specific audience and select **View history**.
+Haz clic en el menú desplegable junto a la audiencia específica y selecciona **Ver historial**.
 
 ![View history doctored .png](https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png)
 
-**Upload history statuses include:**
+**Los estados del historial de carga incluyen:**
 
-* **Processing:** The audience is currently being prepared.
-* **Success:** The audience was successfully sent to all connections.
-* **Partial failure:** The audience could not be sent to one or more connections.
-* **Failure:** There was an issue processing the audience (e.g., due to mismatched data, platform restrictions, or platform errors).
-* **N/A:** The audience is in draft or pending status. Upload history status is not applicable.
+* **No conectado:** La audiencia fue recibida de un colaborador para activación, pero aún no está conectada.
+* **Éxito**: La audiencia fue enviada con éxito a todas las conexiones.
+* **Fallo parcial**: La audiencia no pudo ser enviada a una o más conexiones.
+* **Error**: Hubo un problema al procesar la audiencia (por ejemplo, debido a datos incompatibles, restricciones de plataforma o errores de plataforma).
+* **N/A:** La audiencia está en estado de borrador o pendiente. El estado del historial de cargas no es aplicable.
 
 </Accordion>
 
-<div data-zendesk-anchors="overview=about-dcp-audiences h_01HWG1P909NHBXC5VF23BDVVPH=about-dcp-audiences key-features=build-an-audience h_01HWG5B2MEJH7M8E9BWA3FQFQ2=build-an-audience 01KFDX0R4BYSTE1V5G7ATQ6FZS=key-features h_01HWG62BA9X4VRRDXAEKA07FTJ=visual-audience-builder h_01HZMBFKV40PHFN1B8PVVCMWQQ=note step-1-join-sources=step-1-details-and-sources h_01HWFRRGP99KKGBSQ6QB10RD26=step-1-details-and-sources h_01KT94AC4N81MBE0DAT7TX2QA7=note-1 step-2-build-audiences=step-2-define-the-audience h_01HWFRRPFTCFGEHY1AW8G4VMY4=step-2-define-the-audience h_01JSEPSRF3FFJJ4S20GJJPJVWF=note-2 summary-rightside-preview-pane=summary-right-side-preview-pane h_01KBMPR7BHCTTVE8DR1TCRYAHJ=summary-right-side-preview-pane h_01KBMPK2HXMZ6YNQMJTST9BD8Y=note-3 h_transactional-data-visual-builder=working-with-transactional-data-sources h_01HWG62BAAD46MTK385756T4AQ=sql-audience-builder h_01HZM8X9RZ1A9CKWYNM61QW515=note-4 step-1-set-details=set-details h_01HWG9VX0QB3GFZDARAT5QKHV0=set-details step-2-build-query=build-query h_01HWG9Y6B9X3T1FFM9ZR8TVBVC=build-query h_01KT6SCS53699DZXE4EF92WC44=note-5 h_01HZM9P2GNCPGJDEA51HCV1Y99=the-sql-audience-builder h_transactional-data-sql-patterns=transactional-data-in-sql-queries send-audience-for-activation=send-an-audience-for-activation h_01HZMCHKMVXRWK7RXZ7NN65JQX=send-an-audience-for-activation h_01HZMCRJBBXFEV6JXEHGFXZDZW=note-6 h_01KFG12R13ADFBY4XBDRGE956V=connect-an-audience-to-media-partners h_01HZMDXEEABQRQE8XMZNE86SRF=note-7 h_01KFG12R13R9B6ATHTBTKAVAMX=export-to-cloud-storage h_01KY2FJV90NYBVTQBN6K63K9DS=note-8 h_01HZPWTG23YQ5Y1GAPXT65DK07=manage-audiences h_01KFBA379S9ZZAKN7FC7X2S297=access-audience-management h_01KFB4HVDZZ0MA4Q69DXKH4YY7=edit-the-audience-activation-destination h_01KFB4HVDZJ08STDXGA7ZP8MM3=delete-an-audience h_01KFB4HVDZFCJNYG6VVWTWVAQ8=view-audience-statuses" />
+<div data-zendesk-anchors="overview=sobre-dcp h_01HWG1P909NHBXC5VF23BDVVPH=sobre-dcp key-features=construye-tu-audiencia h_01HWG5B2MEJH7M8E9BWA3FQFQ2=construye-tu-audiencia 01KFDX0R4BYSTE1V5G7ATQ6FZS=caracter%C3%ADsticas-principales h_01HWG62BA9X4VRRDXAEKA07FTJ=visual-audience-builder h_01HZMBFKV40PHFN1B8PVVCMWQQ=note step-1-join-sources=paso-1-detalles-y-fuentes h_01HWFRRGP99KKGBSQ6QB10RD26=paso-1-detalles-y-fuentes h_01KT94AC4N81MBE0DAT7TX2QA7=advertencia step-2-build-audiences=paso-2-definir-la-audiencia h_01HWFRRPFTCFGEHY1AW8G4VMY4=paso-2-definir-la-audiencia h_01JSEPSRF3FFJJ4S20GJJPJVWF=nota summary-rightside-preview-pane=resumen-panel-de-vista-previa-de-la-derecha h_01KBMPR7BHCTTVE8DR1TCRYAHJ=resumen-panel-de-vista-previa-de-la-derecha h_01KBMPK2HXMZ6YNQMJTST9BD8Y=advertencia-1 h_transactional-data-visual-builder=trabajar-con-fuentes-de-datos-transaccionales working-with-transactional-data-sources=trabajar-con-fuentes-de-datos-transaccionales h_01HWG62BAAD46MTK385756T4AQ=sql-audience-builder h_01HZM8X9RZ1A9CKWYNM61QW515=note-1 step-1-set-details=establecer-detalles h_01HWG9VX0QB3GFZDARAT5QKHV0=establecer-detalles step-2-build-query=construir-consulta h_01HWG9Y6B9X3T1FFM9ZR8TVBVC=construir-consulta h_01KT6SCS53699DZXE4EF92WC44=advertencia-2 the-sql-audience-builder=el-creador-de-audiencia-sql h_01HZM9P2GNCPGJDEA51HCV1Y99=el-creador-de-audiencia-sql h_transactional-data-sql-patterns=datos-transaccionales-en-consultas-sql transactional-data-in-sql-queries=datos-transaccionales-en-consultas-sql send-audience-for-activation=enviar-audiencia-para-activaci%C3%B3n h_01HZMCHKMVXRWK7RXZ7NN65JQX=enviar-audiencia-para-activaci%C3%B3n h_01HZMCRJBBXFEV6JXEHGFXZDZW=note-2 h_01KFG12R13ADFBY4XBDRGE956V=connect-an-audience-to-media-partners h_01HZMDXEEABQRQE8XMZNE86SRF=note-3 h_01KFG12R13R9B6ATHTBTKAVAMX=export-to-cloud-storage h_01KY2FJV90NYBVTQBN6K63K9DS=advertencia-3 manage-audiences=gestionar-las-audiencias h_01HZPWTG23YQ5Y1GAPXT65DK07=gestionar-las-audiencias h_01KFBA379S9ZZAKN7FC7X2S297=access-audience-management h_01KFB4HVDZZ0MA4Q69DXKH4YY7=edit-the-audience-activation-destination h_01KFB4HVDZJ08STDXGA7ZP8MM3=delete-an-audience h_01KFB4HVDZFCJNYG6VVWTWVAQ8=view-audience-statuses" />

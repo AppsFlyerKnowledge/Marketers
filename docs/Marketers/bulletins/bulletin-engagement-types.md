@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Engagement types'
+title: 'Boletín: Tipos de engagements'
 metadata:
   keywords:
     - Marketers
@@ -13,59 +13,66 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2023-11-15T10:50:04Z'
-  edited_at: '2026-08-13T13:34:31Z'
+  edited_at: '2026-10-20T03:55:53Z'
   id: 20161875390865
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/20161875390865-Bulletin-Engagement-types
+  url: https://support.appsflyer.com/hc/es/articles/20161875390865
 ---
+
 <Table>
-  <thead>
-    <tr>
-      <th>
-        Section
-      </th>
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
       <td>
-        **What's new**
+        Sección.
       </td>
       <td>
-        New fields have been added to the raw data reports.<ul><li>engagement\_type</li><li>contributor1\_engagement\_type</li><li>contributor2\_engagement\_type</li><li>contributor3\_engagement\_type</li></ul>These parameters can return the following values: preload, click\_to\_download, click\_to\_app, engaged\_click, engaged\_view, view, listening, or if not reported it will be empty
+        Description
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **¿Qué hay de nuevo?**
+      </td>
+      <td>
+        Se han agregado nuevos campos a los reportes de raw data.
 
-        |  |  |
+        * engagement\_type
+        * contributor1\_engagement\_type
+        * contributor2\_engagement\_type
+        * contributor3\_engagement\_type
+
+        Estos parámetros pueden devolver los siguientes valores: precarga, click\_to\_download, click\_to\_app, engaged\_click, engaged\_view, vista, listening, o si no se reporta, estará vacío
+
+        | Tipo de engagement: | Description |
         | --- | --- |
-        | Engagement type | Description |
-        | preload | The app is preloaded by the OEM at the factory or by the provider the first time the device is activated. Alternatively, a wizard prompts users to download the app when the device is first activated. |
-        | click\_to\_download | When the user engages with an ad, the app is automatically downloaded and installed on the device without redirecting to an app store. |
-        | click\_to\_app | An ad click, QR code scan, deep link, or any other click that redirects the user to the app or to the relevant app store to download the app. |
-        | engaged\_click | A click that keeps the user in the same context, engaging with the ad, and does NOT direct that user to the app store or to launch the app. |
-        | engaged\_view | An engaged view is when a meaningful view takes place. Some examples are when a user watches at least 10 seconds or more of a skippable video ad or a video completion |
-        | view | An ad view is when an ad is rendered, and an impression takes place. Some examples are banners, interstitials, or non-engaged videos. |
-        | listening | Listening is when a user listens to an audio ad, such as a podcast ad. |
+        | Precarga | La app la precarga el OEM de fábrica o el proveedor la primera vez que se activa el dispositivo. Alternativamente, un asistente pide a los usuarios que descarguen la aplicación cuando el dispositivo se activa por primera vez. |
+        | click\_to\_download | Cuando el usuario hace clic en un anuncio, la app se descarga e instala automáticamente en el dispositivo sin redireccionarlo a una app store. |
+        | click\_to\_app | Un clic en un anuncio, el escaneo de un código QR, un deep link o cualquier otro clic que redireccione al usuario a la aplicación o a la tienda de aplicaciones correspondiente para descargar la aplicación. |
+        | engaged\_click | Un clic que mantiene al usuario en el mismo contexto, interactuando con el anuncio, y NO lo envía a la tienda de aplicaciones o a abrir la aplicación. |
+        | engaged\_view | Una vista comprometida es cuando se produce una vista significativa. Algunos ejemplos son cuando un usuario ve al menos 10 segundos o más de un anuncio de vídeo saltable o una finalización de vídeo |
+        | Ver | Un ad view es cuando se muestra un anuncio y se produce una impresión. Algunos ejemplos son los banners, los anuncios intersticiales o los vídeos sin interacción. |
+        | listening | El listening se produce cuando un usuario escucha un anuncio de audio, como un anuncio de podcast. |
       </td>
     </tr>
     <tr>
       <td>
-        **Effective date**
+        **Fecha de entrada en vigor**
       </td>
       <td>
-        January 17, 2024
+        17 de enero de 2024
       </td>
     </tr>
     <tr>
       <td>
-        **What this impacts**
+        **Esto afecta a**
       </td>
       <td>
-        <ul><li>Advertisers and agencies with access to raw data reports working with Ad networks who report these fields.<ul><li>Preload and click\_to\_app for deep links will be populated by AppsFlyer regardless of whether the Ad networks report the fields.</li></ul></li><li>The raw data reports it affects are: Data Locker, Pull API, Export Page, and Push API.<ul><li>These fields are not selected by default (with the exception of the select all in Push API), to use these fields you must manually select them in the raw data product.</li></ul></li></ul>
+        * Anunciantes y agencias con acceso a reportes de raw data que trabajan con redes publicitarias que reportan estos campos.
+          * AppsFlyer completará preload y click\_to\_app para los deep links independientemente de si las ad networks reportan esos campos.
+        * Los reportes de raw data a los que afecta son: Data Locker, Pull API, Export Page, and Push API.
+          * Estos campos no están seleccionados de forma predeterminada (con la excepción de seleccionar todo en Push API), para usar estos campos debes seleccionarlos manualmente en el producto de raw data.
       </td>
     </tr>
   </tbody>

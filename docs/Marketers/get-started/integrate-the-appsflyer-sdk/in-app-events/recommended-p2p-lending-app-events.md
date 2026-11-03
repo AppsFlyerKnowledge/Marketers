@@ -1,5 +1,5 @@
 ---
-title: Recommended P2P lending app events
+title: Eventos de aplicación recomendados para préstamos P2P
 metadata:
   keywords:
     - Advertisers
@@ -14,304 +14,303 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-04-28T09:01:59Z'
-  edited_at: '2023-12-04T11:55:49Z'
+  edited_at: '2026-08-12T12:01:39Z'
   id: 360019614017
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019614017-Recommended-P2P-lending-app-events
+  url: https://support.appsflyer.com/hc/es/articles/360019614017
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your peer-to-peer (P2P) lending app.
+> **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de préstamos P2P.
 
-## <Image alt="InApp_Events_lending.png" src="https://files.readme.io/e3465ee913a65a215f1c224db20d4f1fd61fd0bf488b798073c94b4e8387d252-20659507679889.png" width="100px" /> P2P lending
+## <Image alt="InApp_Events_lending.png" src="https://files.readme.io/e3465ee913a65a215f1c224db20d4f1fd61fd0bf488b798073c94b4e8387d252-20659507679889.png" width="100px" /> Préstamos P2P
 
-P2P lending is a way for individuals and businesses to lend and borrow money from one another. The typical events that we suggest recording are the activities of individual lenders and borrowers, the types of loans people offer, and loan acceptance and rejection rates.
+Los préstamos P2P son una manera en que las personas y las empresas prestan y toman prestado dinero entre ellas. Los eventos típicos que sugerimos registrar son las actividades de prestamistas y prestatarios individuales, los tipos de préstamos que ofrecen las personas y las tasas de aceptación y rechazo de préstamos.
 
-The data that you gather from event recording can highlight trustworthy borrowers and offer them better interest rates. Similarly, you can see who the most active lenders are and offer them lower fees. In addition, once you know what type of loans are most popular with your users, you can launch marketing campaigns that target these audiences.
+Los datos que recopilas del registro de eventos permiten destacar los prestatarios confiables y ofrecerles mejores tasas de interés. De manera similar, podrás ver quiénes son los prestamistas más activos y ofrecerles tarifas más bajas. Además, una vez que sepas cuáles son los tipos de préstamos más populares entre los usuarios, podrás lanzar campañas de marketing dirigidas a tales audiencias.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=p2p_lending">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=p2p_lending&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=p2p_lending">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=p2p_lending&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Puedes encontrar instrucciones detalladas para tu desarrollador en el **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.**
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+[![Diagrama de flujo del recorrido del usuario de la app de préstamos P2P para eventos recomendados](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the P2P lending vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que son típicas de la vertical de préstamos P2P. Cada estructura incluye un tipo de evento predefinido y los parámetros del evento predefinidos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-Determine how many users actually verify their identity after registering. You can attribute these users to campaigns and see what campaigns generate active users.
+Determinar cuántos usuarios verifican realmente su identidad después de registrarse. Puedes atribuir estos usuarios a campañas y ver de las cuáles campañas generan usuarios activos.
 
-**Trigger**
+**Disparador**
 
-When the user's registration is approved
+Cuando se apruebe el registro del usuario.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | email, Facebook |
+| af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Acceso (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Disparador**
 
-When the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que incluye nombres de eventos personalizados y los parámetros de eventos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="registration-submitted-registration_submitted" />
 
-<Accordion title="Registration submitted (registration_submitted)">
+<Accordion title="Registro enviado (registration_submitted)">
 
-**Purpose**
+**Finalidad**
 
-Since P2P lending is susceptible to abuse, users must first verify their identity. They do so by submitting a registration request. This event can help you:
+Dado que los préstamos P2P son vulnerables al uso indebido, los usuarios primero deben verificar su identidad. Para eso, deben enviar una solicitud de registro. Este evento puede ayudarte a:
 
-* Determine how many users register but never verify their account
-* See the correlation between registration methods, such as email, Facebook, Google, and verification rates
+* Determinar cuántos usuarios se registran, pero nunca verifican su cuenta.
+* Ver la correlación entre el método de registro, como correo electrónico, Facebook, Google, y las tasas de verificación.
 
-**Trigger**
+**Activador**
 
-After the user submits a request to register
+Después de que el usuario envía una solicitud para registrarse.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Type of signup method | Email, Facebook |
+| af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
 
 <div id="fill-loan-form-fill_loan_form_form_name" />
 
-<Accordion title="Fill loan form (fill_loan_form_&lt;FORM_NAME>)">
+<Accordion title="Completa el formulario de préstamo (fill_loan_form_&lt;FORM_NAME>)">
 
-**Purpose**
+**Finalidad**
 
-Determine the drop rate, and retarget borrowers who do not complete their loan applications.
+Determinar la tasa de abandono y reorienta a los prestatarios que no completen sus solicitudes de préstamo.
 
-Note that when you send this event, include the form name in the event name.
+Cuando envíes el evento, incluye el nombre del formulario en el nombre del evento.
 
-**Trigger**
+**Disparador**
 
-When a borrower submits a form
+Cuando un prestatario envía un formulario.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> It is highly recommended that you associate loans with lenders. To do so, make sure to set the Customer User ID. <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Setting the Customer User ID</Anchor> is your way to match lenders with users of your app as they appear in AppsFlyer. By setting the Customer User ID you make sure that any event is sent with the Customer User ID.
+> Es muy recomendable que asocies los préstamos con los prestamistas. Para eso, asegúrate de establecer el ID de usuario de cliente. <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">Establecer el ID de usuario de cliente</Anchor> es tu manera de hacer coincidir los prestamistas con los usuarios de tu aplicación cuando aparecen en AppsFlyer. Al establecer el ID de usuario de cliente, te aseguras de que todos los eventos se envíen con dicho ID.
 
 <div id="submit-loan-application-submit_loan_application" />
 
-<Accordion title="Submit loan application (submit_loan_application)">
+<Accordion title="Enviar solicitud de préstamo (submit_loan_application)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you :
+Este evento puede ayudarte a:
 
-* Determine the overall number of loan applications in your app
-* Learn about the maximum, minimum, and average amount in loan applications
-* Determine the type of loans people apply for
+* Determinar la cantidad total de solicitudes de préstamos en tu aplicación.
+* Conocer el importe máximo, mínimo y promedio de las solicitudes de préstamos.
+* Determinar qué tipos de préstamos solicitan las personas.
 
-**Trigger**
+**Disparador**
 
-When the user successfully submits a loan application
+Cuando el usuario envía con éxito una solicitud de préstamo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| loan\_id | ID of the loan | 1735102 |
-| loan\_amount | Amount requested | 1000 |
-| loan\_type | Loan period | 3 months |
+| loan\_id | ID del préstamo | 1735102 |
+| loan\_amount | Cantidad solicitada | 1000 |
+| tipo de préstamo | Período de préstamo | 3 meses |
 
 </Accordion>
 
 <div id="loan-form-loan_form" />
 
-<Accordion title="Loan form (loan_form)">
+<Accordion title="Formulario de préstamo (loan_form)">
 
-**Purpose**
+**Finalidad**
 
-Review loan applications submitted by borrowers
+Revisar las solicitudes de préstamo enviadas por los prestatarios.
 
-**Trigger**
+**Disparador**
 
-When the borrower successfully submits a loan application
+Cuando el prestatario envía con éxito una solicitud de préstamo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| loan\_id | ID of the loan | 1735102 |
-| loan\_amount | Amount requested | 1000 |
-| loan\_type | Loan period | 3 months |
+| loan\_id | ID del préstamo | 1735102 |
+| loan\_amount | Cantidad solicitada | 1000 |
+| tipo de préstamo | Período de préstamo | 3 meses |
 
 </Accordion>
 
 <div id="submit-credit-check-submit_credit_check" />
 
-<Accordion title="Submit credit check (submit_credit_check)">
+<Accordion title="Enviar verificación de crédito (submit_credit_check)">
 
-**Purpose**
+**Finalidad**
 
-Check the borrower's financial history (for example, past credit, payment habits, and types of loans) to assess the risk level.
+Comprobar el historial financiero del prestatario (por ejemplo, crédito pasado, hábitos de pago y tipos de préstamos) para evaluar el nivel de riesgo.
 
-**Trigger**
+**Disparador**
 
-After the lender receives a request for a loan
+Después de que el prestamista recibe una solicitud de préstamo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| loan\_id | ID of the loan | 1735102 |
-| loan\_amount | Amount requested | 1000 |
-| loan\_type | Loan period | 3 months |
+| loan\_id | ID del préstamo | 1735102 |
+| loan\_amount | Cantidad solicitada | 1000 |
+| tipo de préstamo | Período de préstamo | 3 meses |
 
 </Accordion>
 
 <div id="loan-accepted-loan_accepted" />
 
-<Accordion title="Loan accepted (loan_accepted)">
+<Accordion title="Préstamo aceptado (loan_accepted)">
 
-**Purpose**
+**Finalidad**
 
-Learn about trends in loans and other metrics. This event can help you determine:
+Conocer las tendencias en préstamos y otras métricas. Este evento puede ayudarte a determinar:
 
-* What type of loans are accepted
-* The amount requested in loans that are approved
-* Which lenders accept the most loans
+* Qué tipo de préstamos se aceptan.
+* El monto solicitado en los préstamos que se aprueban.
+* Qué prestamistas aceptan la mayor cantidad de préstamos
 
-**Trigger**
+**Disparador**
 
-When a loan is accepted
+Cuando se acepta un préstamo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| loan\_id | ID of the loan | 1735102 |
-| loan\_amount | Amount requested | 1000 |
-| loan\_type | Loan period | 3 months |
+| loan\_id | ID del préstamo | 1735102 |
+| loan\_amount | Cantidad solicitada | 1000 |
+| tipo de préstamo | Período de préstamo | 3 meses |
 
 </Accordion>
 
 <div id="loan-rejected-loan_rejected" />
 
-<Accordion title="Loan rejected (loan_rejected)">
+<Accordion title="Préstamo rechazado (loan_rejected)">
 
-**Purpose**
+**Finalidad**
 
-Understand the reasons why loans get rejected. You can see the correlation between the loan amount, the loan period, and rejection rates. You can also retarget users whose loan gets rejected and suggest they take a smaller loan.
+Comprender los motivos por los que se rechazan los préstamos. Podrás ver la correlación entre el importe y el período del préstamo y las tasas de rechazo. También podrás usar la función de retargeting con los usuarios a quienes les hayan rechazado un préstamo y sugerirles un préstamo más pequeño.
 
-**Trigger**
+**Disparador**
 
-When a lender rejects a loan
+Cuando un prestamista rechaza un préstamo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| loan\_id | ID of the loan | 1735102 |
+| loan\_id | ID del préstamo | 1735102 |
 
 </Accordion>
 
 <div id="payment-payment" />
 
-<Accordion title="Payment (payment)">
+<Accordion title="Pago (payment)">
 
-**Purpose**
+**Finalidad**
 
-Helps you mark borrowers as trustworthy. Trustworthy borrowers are those that follow their obligation to cover their loans. You can attribute borrowers to campaigns and understand which campaigns generated trustworthy borrowers. In addition, this event can also help you gather data about the minimum, maximum, and average amount of payments.
+Te ayuda a marcar a los prestatarios como confiables. Los prestatarios confiables son aquellos que cumplen con la obligación de pagar los préstamos. Podrás atribuir los prestatarios a campañas y saber cuáles de las campañas generaron prestatarios confiables. Además, este evento puede ayudarte a recopilar datos sobre el importe mínimo, máximo y promedio de los pagos.
 
-**Trigger**
+**Disparador**
 
-When a borrower makes a payment on their loan
+Cuando un prestatario realiza un pago de su préstamo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| loan\_id | ID of the loan | 1735102 |
-| payment\_amount | Amount paid | 100 |
-| payment\_id | ID of the payment | AE12SF |
+| loan\_id | ID del préstamo | 1735102 |
+| payment\_amount | Importe pagado | 100 |
+| id de pago | ID del pago | AE12SF |
 
 </Accordion>
 
 <div id="payment-completed-payment_completed" />
 
-<Accordion title="Payment completed (payment_completed)">
+<Accordion title="Pago completado (payment_completed)">
 
-**Purpose**
+**Finalidad**
 
-Highlight borrowers who follow their obligation to cover a loan. You can also retarget such borrowers and offer them lower interest fees or other promotions.
+Destacar a los prestatarios que siguen su obligación de cubrir un préstamo. También puedes usar la función de retargeting con tales prestatarios y ofrecerles una menor tasa de interés u otras promociones.
 
-**Trigger**
+**Disparador**
 
-When a loan is fully paid back
+Cuando un préstamo se devuelve por completo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Field name | Description | Example value |
+| Nombre de campo | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| loan\_id | ID of the loan | 1735102 |
+| loan\_id | ID del préstamo | 1735102 |
 
 </Accordion>
 
 <div id="payment-received-payment_received" />
 
-<Accordion title="Payment received (payment_received)">
+<Accordion title="Pago recibido (payment_received)">
 
-**Purpose**
+**Finalidad**
 
-Verify that the borrower completes loan payments according to the terms of the loan agreement.
+Verificar que el prestatario complete los pagos del préstamo de acuerdo con los términos del acuerdo del préstamo.
 
-**Trigger**
+**Disparador**
 
-When a borrower makes a payment on their loan
+Cuando un prestatario realiza un pago de su préstamo.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| loan\_id | ID of the loan | 1735102 |
-| payment\_amount | Amount paid | 100 |
-| payment\_id | ID of the payment | AE12SF |
+| loan\_id | ID del préstamo | 1735102 |
+| payment\_amount | Importe pagado | 100 |
+| id de pago | ID del pago | AE12SF |
 
 </Accordion>
 
 </Accordion>
 
-<div data-zendesk-anchors="p2p-lending=-p2p-lending h_01HGTAY6DHKXCTP52P2EPHXN5H=-p2p-lending h_01HGTAY6DHDDG3MVCXEM705MTK=important h_01HGTAY6DH1V6S5NKJEFCVW1PF=recommended-structures-for-predefined-events h_01HGTAY6DHHGW3M6NQ0K3J6HTC=complete-registration-af_complete_registration h_01HGTAY6DHZTKJR94T8B6WEYZ6=login-af_login h_01HGTAY6DH00660DSP5RX3PA9C=recommended-structures-for-custom-events h_01HGTAY6DHETK285KPGW54YV5Z=registration-submitted-registration_submitted h_01HGTAY6DHCQKWMG4YRZDHBMZT=fill-loan-form-fill_loan_form_form_name h_01HGTAY6DHHNJ9EKV3FQ6BKKBF=note h_01HGTAY6DH4D6NV1NHV5717CDH=submit-loan-application-submit_loan_application h_01HGTAY6DHVWFEFJYB4TGK1B9W=loan-form-loan_form h_01HGTAY6DH7V1JSPCDHDTFR4YA=submit-credit-check-submit_credit_check h_01HGTAY6DH22HRQQJ5NQ2T71QM=loan-accepted-loan_accepted h_01HGTAY6DHTMJ22KQSXHNBJ8B3=loan-rejected-loan_rejected h_01HGTAY6DHD8A2H61XKFPXW589=payment-payment h_01HGTAY6DJWJDQBW52RPG7W7P4=payment-completed-payment_completed h_01HGTAY6DJE0K3VC0YNVWAXT29=payment-received-payment_received" />
+<div data-zendesk-anchors="p2p-lending=-pr%C3%A9stamos-p2p h_01HGTAY6DHKXCTP52P2EPHXN5H=-pr%C3%A9stamos-p2p h_01HGTAY6DHDDG3MVCXEM705MTK=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAY6DH1V6S5NKJEFCVW1PF=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAY6DHHGW3M6NQ0K3J6HTC=complete-registration-af_complete_registration h_01HGTAY6DHZTKJR94T8B6WEYZ6=login-af_login recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAY6DH00660DSP5RX3PA9C=estructuras-recomendadas-para-eventos-personalizados h_01HGTAY6DHETK285KPGW54YV5Z=registration-submitted-registration_submitted h_01HGTAY6DHCQKWMG4YRZDHBMZT=fill-loan-form-fill_loan_form_form_name h_01HGTAY6DHHNJ9EKV3FQ6BKKBF=nota h_01HGTAY6DH4D6NV1NHV5717CDH=submit-loan-application-submit_loan_application h_01HGTAY6DHVWFEFJYB4TGK1B9W=loan-form-loan_form h_01HGTAY6DH7V1JSPCDHDTFR4YA=submit-credit-check-submit_credit_check h_01HGTAY6DH22HRQQJ5NQ2T71QM=loan-accepted-loan_accepted h_01HGTAY6DHTMJ22KQSXHNBJ8B3=loan-rejected-loan_rejected h_01HGTAY6DHD8A2H61XKFPXW589=payment-payment h_01HGTAY6DJWJDQBW52RPG7W7P4=payment-completed-payment_completed h_01HGTAY6DJE0K3VC0YNVWAXT29=payment-received-payment_received" />

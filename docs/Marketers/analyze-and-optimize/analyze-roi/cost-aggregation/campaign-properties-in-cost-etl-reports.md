@@ -1,5 +1,5 @@
 ---
-title: Campaign properties in cost ETL reports
+title: Propiedades de la campaña en los reportes ETL de costo
 metadata:
   keywords:
     - cost
@@ -15,110 +15,112 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2021-06-02T17:21:22Z'
-  edited_at: '2025-04-05T11:08:21Z'
+  edited_at: '2026-08-12T11:47:56Z'
   id: 360020994977
-  locale: en-us
+  locale: es
   section: Cost aggregation
   section_id: 6551029483281
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360020994977-Campaign-properties-in-cost-ETL-reports
+  url: https://support.appsflyer.com/hc/es/articles/360020994977
 ---
-> **At a glance:** Learn about campaign properties and how they display in AppsFlyer Cost ETL data.
+> **De un vistazo:** Aprende más sobre las propiedades de las campañas y cómo se muestran en los datos de ETL de costos de AppsFlyer.
 
-## About campaign properties
+## Acerca de las propiedades de campaña
 
-Campaign properties are a special group of dimensions that represent various settings of an advertising campaign, including campaign objective, bid type, and bid amount. These are settings you normally view and edit in your ad network dashboard, but AppsFlyer pulls the campaign properties dimensions and makes the data available in Cost ETL, just as you view other dimensions.
+Las propiedades de campaña son un grupo especial de dimensiones que representan varias configuraciones de una campaña publicitaria, incluidos el objetivo de la campaña, el tipo de oferta y el monto de la oferta. Estas son las configuraciones que normalmente ves y editas en el panel de control de tu red de publicidad, pero AppsFlyer extrae las dimensiones de las propiedades de la campaña y hace que los datos estén disponibles en el ETL de costos, al igual que ves otras dimensiones.
 
-With campaign properties data, you can:
+Con los datos de las propiedades de la campaña, puedes:
 
-* See all bid changes made by your UA team.
-* Measure and analyze the effectiveness of a bid change and whether it had the intended effect.
+* Ver todos los cambios en la oferta realizados por tu equipo UA.
+* Medir y analizar la efectividad de un cambio en la oferta y si tuvo el efecto deseado.
 
-AppsFlyer campaign properties data is available for Meta ads and Google. See what data AppsFlyer pulls, and how it is normalized and mapped to each ad network, in the sections that follow.
+Los datos de las propiedades de la campaña de AppsFlyer están disponibles para Anuncios de Meta y Google. Consulta qué datos extrae AppsFlyer y cómo se normalizan y asignan a cada red de publicidad en las secciones siguientes.
 
 <div id="facebook" />
 
-<Accordion title="Meta ads">
+<Accordion title="Meta Ads">
 
-See what data AppsFlyer pulls, and how it is standardized and mapped to Meta ads, in the table that follows.
+Consulta qué datos extrae AppsFlyer, y cómo se estandarizan y asignan a Anuncios de Meta, en la siguiente tabla.
 
 <Table>
   <thead>
     <tr>
       <th>
-        Dimension
+        Dimensión
       </th>
       <th>
-        Description
+        Descripción
       </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>
-        Campaign objective
+        Objetivo de la campaña
       </td>
       <td>
-        Pulled from: [campaign.objective](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group/insights)
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Cost model
-      </td>
-      <td>
-        Pulled from: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview#opt">adset.optimization\_goal</Anchor>
+        Extraído de: [campaign.objective](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group/insights)
       </td>
     </tr>
     <tr>
       <td>
-        AppsFlyer normalized cost model mapping
+        Modelo de costo
       </td>
       <td>
-        | Cost model | Normalized cost model |
+        Extraído de: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview#opt">adset.optimization\_goal</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Asignación del modelo de costo normalizado de AppsFlyer
+      </td>
+      <td>
+        | Modelo de costo | Modelo de costo normalizado |
         | --- | --- |
-        | <ul><li>LINK_CLICKS</li><li>POST_ENGAGEMENT</li><li>REPLIES</li><li>LANDING_PAGE_VIEWS</li></ul> | CPC |
-        | <ul><li>OFFSITE_ CONVERSIONS</li><li>DERIVED_EVENTS</li><li>LEAD_GENERATION</li></ul> | CPA |
+        | * {"LINK_CLICKS"}<br />* {"POST_ENGAGEMENT"}<br />* REPLIES<br />* {"LANDING_PAGE_VIEWS"} | CPC |
+        | * {"OFFSITE_"} CONVERSIONS<br />* {"DERIVED_EVENTS"}<br />* {"LEAD_GENERATION"} | CPA |
         | APP\_INSTALLS | CPI |
-        | VALUE | ROI |
-        | <ul><li>REACH</li><li>IMPRESSIONS</li><li>SOCIAL_IMPRESSIONS</li></ul> | CPM |
-        | <ul><li>THRUPLAY</li><li>VIDEO_VIEWS</li><li>TWO_SECOND_CONTINUOUS_VIDEO_VIEWS</li></ul> | CPCV |
+        | value | ROI (Retorno de la Inversión) |
+        | * REACH<br />* IMPRESSIONS<br />* SOCIAL\_IMPRESSIONS | CPM |
+        | * THRUPLAY<br />* VIDEO\_VIEWS<br />* TWO\_SECOND\_CONTINUOUS\_VIDEO\_VIEWS | CPCV |
       </td>
     </tr>
     <tr>
       <td>
-        Bid strategy
+        Estrategia de la oferta
       </td>
       <td>
-        Pulled from: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">adset.bid\_strategy</Anchor><br /><br />If there is no bid\_strategy in the adset level, then: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">campaign.bid\_strategy</Anchor>
+        Extraído de: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">adset.bid\_strategy</Anchor>
+
+        Si no hay bid\_strategy en el nivel de adset, entonces: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">campaign.bid\_strategy</Anchor>
       </td>
     </tr>
     <tr>
       <td>
-        AppsFlyer normalized bid strategy
+        Estrategia de oferta normalizada de AppsFlyer
       </td>
       <td>
-        | Bid strategy | Normalized bid strategy |
+        | Estrategia de la oferta | Estrategia de oferta normalizada |
         | --- | --- |
-        | <ul><li>{"LOWEST_COST_"} WITHOUT_CAP</li><li>COST_CAP</li><li>{"LOWEST_COST_"} WITH_MIN_ROAS</li></ul> | Auto bid |
-        | TARGET\_COST | Target bid |
-        | Anything else | Unknown |
+        | * {"LOWEST_COST_"} {"WITHOUT_CAP"}<br />* {"COST_CAP"}<br />* {"LOWEST_COST_"} {"WITH_MIN_ROAS"} | Oferta automática |
+        | TARGET\_COST | Oferta objetivo |
+        | Cualquier otra cosa | Desconocido |
       </td>
     </tr>
     <tr>
       <td>
-        Bid amount
+        Monto de la oferta
       </td>
       <td>
-        Bid amount in advertiser currency
+        Monto de la oferta en la divisa del anunciante
       </td>
     </tr>
     <tr>
       <td>
-        Original bid amount
+        Monto de la oferta original
       </td>
       <td>
-        Pulled from: adset.bid\_amount
+        Extraído de: adset.bid\_amount
       </td>
     </tr>
   </tbody>
@@ -130,9 +132,86 @@ See what data AppsFlyer pulls, and how it is standardized and mapped to Meta ads
 
 <Accordion title="Google">
 
-See what data AppsFlyer pulls, and how it is standardized and mapped to Google, in the table that follows.
+Consulta qué datos extrae AppsFlyer, y cómo se estandarizan y asignan a Google, en la siguiente tabla.
 
-<table><thead><tr><th><font> <span>Dimension</span> </font></th><th><span> <font>Description</font> </span></th></tr></thead><tbody><tr><td><span> <font> <span>Campaign objective</span> </font> </span></td><td><p><font> <span>Pulled from: <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.advertising_channel_sub_type" target="_blank">campaign.advertising_channel_sub_type</a></span> </font></p><p><font> <span>Note: The following fields population depends on the channel_sub_type:</span> </font></p><ul><li><font> <span>AC: APP_CAMPAIGN or APP_CAMPAIGN_FOR_ENGAGEMENT</span> </font></li><li><font> <span>Non-AC: Every other value for channel_sub_type</span> </font></li></ul></td></tr><tr><td><span> <font>Cost model</font> </span></td><td><ul><li><span>For AC, pulled from: <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.app_campaign_setting.bidding_strategy_goal_type" target="_blank">campaign.app_campaign_setting.bidding_strategy_goal_type</a></span></li><li><span>For non-AC, pulled from: <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.bidding_strategy_type" target="_blank">campaign.bidding_strategy_type</a></span></li></ul></td></tr><tr><td><span> <span>AppsFlyer normalized cost model mapping</span> </span></td><td><table><thead><tr><th colspan="2">Cost model</th><th>Normalized cost model</th></tr></thead><tbody><tr><td rowspan="4"><span>AC</span><span><br/></span></td><td><ul><li>OPTIMIZE_INSTALLS_TARGET_INSTALL_COST</li><li>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST</li></ul></td><td><span>CPI</span></td></tr><tr><td><p>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST</p></td><td><span>CPA</span></td></tr><tr><td>OPTIMIZE_RETURN_ON_ADVERTISING_SPEND</td><td><span>ROI</span></td></tr><tr><td><ul><li>UNKNOWN</li><li>UNSPECIFIED</li></ul></td><td><span>Other</span></td></tr><tr><td>Non-AC</td><td><ul><li>REACH</li><li>ENHANCED_CPC</li><li>MANUAL_CPC</li><li>PERCENT_CPC</li><li>TARGET_SPEND</li></ul></td><td><span>CPC</span></td></tr><tr><td> </td><td><ul><li>MANUAL_CPM</li><li>TARGET_CPM</li><li>TARGET_IMPRESSION_SHARE</li></ul></td><td><span>CPM</span></td></tr><tr><td> </td><td>MANUAL_CPV</td><td><span>CPCV</span></td></tr><tr><td> </td><td><ul><li>MAXIMIZE_CONVERSIONS</li><li>TARGET_CPA</li></ul></td><td><span>CPA</span></td></tr><tr><td> </td><td><ul><li>MAXIMIZE_CONVERSION_VALUE</li><li>TARGET_ROAS</li></ul></td><td><span>ROI</span></td></tr><tr><td><span> </span></td><td><ul><li>COMMISSION</li><li>PAGE_ONE_PROMOTED</li><li>TARGET_OUTRANK_SHARE</li><li>UNKNOWN</li><li>UNSPECIFIED</li></ul></td><td><span>Other</span></td></tr></tbody></table></td></tr><tr><td><span> <font>Bid strategy</font> </span></td><td><ul><li><span>For AC, pulled from: <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.app_campaign_setting.bidding_strategy_goal_type" target="_blank">campaign.app_campaign_setting.bidding_strategy_goal_type</a></span></li><li><span>For non-AC, pulled from: <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.bidding_strategy_type" target="_blank">campaign.bidding_strategy_type</a></span></li></ul></td></tr><tr><td><font> <span>AppsFlyer normalized bid strategy</span> </font></td><td><table><thead><tr><th colspan="2"><font> <span>Bid strategy</span> </font></th><th><font> <span>Normalized bid strategy</span> </font></th></tr></thead><tbody><tr><td rowspan="3"><font> <span>AC</span> </font></td><td><ul><li><font> <span>OPTIMIZE_INSTALLS_TARGET_INSTALL_COST</span> </font></li><li><font> <span>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST</span> </font></li></ul></td><td><font> <span>Max bid</span> </font></td></tr><tr><td><ul><li><font> <span>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST</span> </font></li><li><font> <span>OPTIMIZE_RETURN_ON_ADVERTISING_SPEND</span> </font></li></ul></td><td><font> <span>Target bid</span> </font></td></tr><tr><td><ul><li><font> <span>UNKNOWN</span> </font></li><li><font> <span>UNSPECIFIED</span> </font></li></ul></td><td><font> <span>Other</span> </font></td></tr><tr><td rowspan="5"><font> <span>Non-AC</span> </font></td><td><ul><li><font> <span>ENHANCED_CPC</span> </font></li><li><font> <span>MANUAL_CPC</span> </font></li><li><font> <span>MANUAL_CPM</span> </font></li><li><font> <span>MANUAL_CPV</span> </font></li></ul></td><td><font> <span>Manual bid</span> </font></td></tr><tr><td><ul><li><font> <span>MAXIMIZE_CONVERSIONS</span> </font></li><li><font> <span>MAXIMIZE_CONVERSION_VALUE</span> </font></li><li><font> <span>PAGE_ONE_PROMOTED</span> </font></li><li><font> <span>TARGET_IMPRESSION_SHARE</span> </font></li><li><font> <span>TARGET_OUTRANK_SHARE</span> </font></li><li><font> <span>TARGET_SPEND</span> </font></li></ul></td><td><font> <span>Auto bid</span> </font></td></tr><tr><td><ul><li><font> <span>PERCENT_CPC</span> </font></li><li><font> <span>TARGET_CPA</span> </font></li><li><font> <span>TARGET_CPM</span> </font></li><li><font> <span>TARGET_ROAS</span> </font></li></ul></td><td><font> <span>Target bid</span> </font></td></tr><tr><td><ul><li><font> <span>COMMISSION</span> </font></li><li><font> <span>UNKNOWN</span> </font></li><li><font> <span>UNSPECIFIED</span> </font></li></ul></td><td><font> <span>Other</span> </font></td></tr><tr><td><font> <span>Anything else</span> </font></td><td><font> <span>Unknown</span> </font></td></tr></tbody></table></td></tr><tr><td><span> <font>Bid amount</font> </span></td><td><span> <font>Bid amount in advertiser currency</font> </span></td></tr><tr><td><span> <font>Original bid amount</font> </span></td><td><span> <font>Pulled from: </font> </span> <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.target_cpa.target_cpa_micros" target="_blank">campaign.target_cpa.target_cpa_micros</a></td></tr></tbody></table>
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Dimensión
+      </th>
+      <th>
+        Descripción
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Objetivo de la campaña
+      </td>
+      <td>
+        Extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.advertising_channel_sub_type">campaign.advertising\_channel\_sub\_type</Anchor>
+
+        Nota: El relleno de los campos siguientes depende del channel\_sub\_type:
+
+        * AC: APP\_CAMPAIGN o APP\_CAMPAIGN\_FOR\_ENGAGEMENT
+        * No AC: Cualquier otro valor para channel\_sub\_type
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Modelo de costo
+      </td>
+      <td>
+        * Para AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.app_campaign_setting.bidding_strategy_goal_type">campaign.app\_campaign\_setting.bidding\_strategy\_goal\_type</Anchor>
+        * Para no AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.bidding_strategy_type">campaign.bidding\_strategy\_type</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Asignación del modelo de costo normalizado de AppsFlyer
+      </td>
+      <td>
+        <table><thead><tr><th colspan="2">Modelo de costo</th><th>Modelo de costo normalizado</th></tr></thead><tbody><tr><td rowspan="4"> <span>AC</span><span><br/></span> </td><td><ul><li>OPTIMIZE_INSTALLS_TARGET_INSTALL_COST</li><li>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST</li></ul></td><td><span>CPI</span></td></tr><tr><td><p>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST</p></td><td><span>CPA</span></td></tr><tr><td>OPTIMIZE_RETURN_ON_ADVERTISING_SPEND</td><td><span>ROI (Retorno de la Inversión)</span></td></tr><tr><td><ul><li>Desconocido </li><li>UNSPECIFIED</li></ul></td><td><span>Otros</span></td></tr><tr><td>No AC</td><td><ul><li>REACH</li><li>ENHANCED_CPC</li><li>MANUAL_CPC</li><li>PERCENT_CPC</li><li>TARGET_SPEND</li></ul></td><td><span>CPC</span></td></tr><tr><td> </td><td><ul><li>MANUAL_CPM</li><li>TARGET_CPM</li><li>TARGET_IMPRESSION_SHARE</li></ul></td><td><span>CPM</span></td></tr><tr><td> </td><td>MANUAL_CPV</td><td><span>CPCV</span></td></tr><tr><td> </td><td><ul><li>MAXIMIZE_CONVERSIONS</li><li>TARGET_CPA</li></ul></td><td><span>CPA</span></td></tr><tr><td> </td><td><ul><li>MAXIMIZE_CONVERSION_VALUE</li><li>TARGET_ROAS</li></ul></td><td><span>ROI (Retorno de la Inversión)</span></td></tr><tr><td><span> </span></td><td><ul><li>COMMISSION</li><li>PAGE_ONE_PROMOTED</li><li>TARGET_OUTRANK_SHARE</li><li>Desconocido </li><li>UNSPECIFIED</li></ul></td><td><span>Otros</span></td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Estrategia de la oferta
+      </td>
+      <td>
+        * Para AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.app_campaign_setting.bidding_strategy_goal_type">campaign.app\_campaign\_setting.bidding\_strategy\_goal\_type</Anchor>
+        * Para no AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.bidding_strategy_type">campaign.bidding\_strategy\_type</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Estrategia de oferta normalizada de AppsFlyer
+      </td>
+      <td>
+        <table><thead><tr><th colspan="2"><font> <span>Estrategia de la oferta</span> </font></th><th><font> <span>Estrategia de oferta normalizada</span> </font></th></tr></thead><tbody><tr><td rowspan="3"><font> <span>AC</span> </font></td><td><ul><li><font> <span>OPTIMIZE_INSTALLS_TARGET_INSTALL_COST</span> </font></li><li><font> <span>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST</span> </font></li></ul></td><td><font> <span>Oferta máxima</span> </font></td></tr><tr><td><ul><li><font> <span>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST</span> </font></li><li><font> <span>OPTIMIZE_RETURN_ON_ADVERTISING_SPEND</span> </font></li></ul></td><td><font> <span>Oferta objetivo</span> </font></td></tr><tr><td><ul><li><font> <span>Desconocido </span> </font></li><li><font> <span>UNSPECIFIED</span> </font></li></ul></td><td><font> <span>Otros</span> </font></td></tr><tr><td rowspan="5"><font> <span>No AC</span> </font></td><td><ul><li><font> <span>ENHANCED_CPC</span> </font></li><li><font> <span>MANUAL_CPC</span> </font></li><li><font> <span>MANUAL_CPM</span> </font></li><li><font> <span>MANUAL_CPV</span> </font></li></ul></td><td><font> <span>Oferta manual</span> </font></td></tr><tr><td><ul><li><font> <span>MAXIMIZE_CONVERSIONS</span> </font></li><li><font> <span>MAXIMIZE_CONVERSION_VALUE</span> </font></li><li><font> <span>PAGE_ONE_PROMOTED</span> </font></li><li><font> <span>TARGET_IMPRESSION_SHARE</span> </font></li><li><font> <span>TARGET_OUTRANK_SHARE</span> </font></li><li><font> <span>TARGET_SPEND</span> </font></li></ul></td><td><font> <span>Oferta automática</span> </font></td></tr><tr><td><ul><li><font> <span>PERCENT_CPC</span> </font></li><li><font> <span>TARGET_CPA</span> </font></li><li><font> <span>TARGET_CPM</span> </font></li><li><font> <span>TARGET_ROAS</span> </font></li></ul></td><td><font> <span>Oferta objetivo</span> </font></td></tr><tr><td><ul><li><font> <span>COMMISSION</span> </font></li><li><font> <span>Desconocido </span> </font></li><li><font> <span>UNSPECIFIED</span> </font></li></ul></td><td><font> <span>Otros</span> </font></td></tr><tr><td><font> <span>Cualquier otra cosa</span> </font></td><td><font> <span>Desconocido</span> </font></td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Monto de la oferta
+      </td>
+      <td>
+        Monto de la oferta en la divisa del anunciante
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Monto de la oferta original
+      </td>
+      <td>
+        Extraído de:    <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.target_cpa.target_cpa_micros">campaign.target\_cpa.target\_cpa\_micros</Anchor>
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>
 
@@ -144,78 +223,79 @@ See what data AppsFlyer pulls, and how it is standardized and mapped to Google, 
   <thead>
     <tr>
       <th>
-        Dimension
+        Dimensión
       </th>
       <th>
-        Description
+        Nota
       </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>
-        Campaign objective
+        Propiedades de la campaña
       </td>
       <td>
-        Pulled from: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#campaigns">campaign.objective</Anchor>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Cost model
-      </td>
-      <td>
-        Pulled from: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#squad-optimization-goals">adsquad.optimization\_goal</Anchor>
+        Extraído de: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#campaigns">campaign.objective</Anchor>
       </td>
     </tr>
     <tr>
       <td>
-        AppsFlyer normalized cost model mapping
+        Modelo de coste
       </td>
       <td>
-        | Cost model | Normalized cost model |
+        Extraído de: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#squad-optimization-goals">adsquad.optimization\_goal</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Asignación del modelo de costo normalizado de AppsFlyer
+      </td>
+      <td>
+        | Modelo de coste | Modelo de costo normalizado |
         | --- | --- |
-        | <ul><li>SWIPES</li><li>STORY_OPENS</li></ul> | CPC |
-        | <ul><li>USES</li><li>PIXEL_ADD_TO_CART</li><li>PIXEL_PURCHASE</li><li>PIXEL_SIGNUP</li><li>APP_ADD_TO_CART</li><li>APP_PURCHASE</li><li>APP_SIGNUP</li></ul> | CPA |
+        | * Deslizamientos<br />* Aperturas de historias | CPC |
+        | * Usos<br />* Píxel: añadir al carrito<br />* Píxel: compra<br />* Píxel: registro<br />* App: añadir al carrito<br />* App: compra<br />* App: registro | CPA |
         | APP\_INSTALLS | CPI |
-        | <ul><li>IMPRESSIONS</li></ul> | CPM |
-        | <ul><li>VIDEO_VIEWS</li><li>VIDEO_VIEWS_15_SEC</li></ul> | CPCV |
+        | * IMPRESSIONS | CPM |
+        | * VIDEO\_VIEWS<br />* VIDEO\_VIEWS\_15\_SEC | CPCV |
       </td>
     </tr>
     <tr>
       <td>
-        Bid strategy
+        Estrategia de la oferta
       </td>
       <td>
-        Pulled from: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#bid-strategy">adsquad.bid\_strategy</Anchor>
+        Extraído de: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#bid-strategy">adsquad.bid\_strategy</Anchor>
       </td>
     </tr>
     <tr>
       <td>
-        AppsFlyer normalized bid strategy
+        Estrategia de oferta normalizada de AppsFlyer
       </td>
       <td>
-        | Bid strategy | Normalized bid strategy |
+        | Estrategia de la oferta | Estrategia de oferta normalizada |
         | --- | --- |
-        | <ul><li>MIN_ROAS</li><li>AUTO_BID</li></ul> | Auto bid |
-        | {"LOWEST_COST_"} {"WITH_MAX_BID"} | Max bid |
-        | TARGET\_COST | Target bid |
+        | * ROAS mínimo<br />* Puja automática | Oferta automática |
+        | Coste más bajo con puja máxima | Oferta máxima |
+        | TARGET\_COST | Oferta objetivo |
       </td>
     </tr>
     <tr>
       <td>
-        Bid amount
+        Monto de la oferta
       </td>
       <td>
-        Bid amount in advertiser currency
+        Monto de la oferta en la divisa del anunciante
       </td>
     </tr>
     <tr>
       <td>
-        Original bid amount
+        Monto de la oferta original
       </td>
       <td>
-        Pulled from: adsquad.bid\_micro
+        Extraído de: adsquad.bid\_micro
       </td>
     </tr>
   </tbody>
@@ -223,4 +303,4 @@ See what data AppsFlyer pulls, and how it is standardized and mapped to Google, 
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01J1PX98QNCZG9Y9PRZQ4ZEEFK=about-campaign-properties h_01J1PX98QNX2T408GB2WV0RFZH=facebook h_01J1PX98QP22PPG9V84DD5WEM1=google h_01J1PXNDS4V16NQQQGMBND9PAF=snap" />
+<div data-zendesk-anchors="about-campaign-properties=acerca-de-las-propiedades-de-campa%C3%B1a h_01J1PX98QNCZG9Y9PRZQ4ZEEFK=acerca-de-las-propiedades-de-campa%C3%B1a h_01J1PX98QNX2T408GB2WV0RFZH=facebook h_01J1PX98QP22PPG9V84DD5WEM1=google h_01J1PXNDS4V16NQQQGMBND9PAF=snap" />

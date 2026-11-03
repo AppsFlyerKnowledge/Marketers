@@ -1,5 +1,5 @@
 ---
-title: SearchAds.com (by MobileAction) setup
+title: Configuración de SearchAds.com (de MobileAction)
 metadata:
   keywords:
     - Marketers
@@ -12,65 +12,64 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-06-20T13:34:38Z'
-  edited_at: '2026-09-15T11:02:59Z'
+  edited_at: '2026-09-17T00:25:49Z'
   id: 4402846897041
-  locale: en-us
+  locale: es
   section: Apple Ads
   section_id: 6551310453393
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4402846897041-SearchAds-com-by-MobileAction-setup
+  url: https://support.appsflyer.com/hc/es/articles/4402846897041
 ---
-> **At a glance:** Optimize Apple Ads campaigns by using SearchAds.com by MobileAction. When configured, AppsFlyer sends postbacks to SearchAds.com.
+> **En resumen:** Optimiza las campañas de Apple Ads usando SearchAds.com de MobileAction. Una vez configurado, AppsFlyer envía los postbacks a SearchAds.com.
 
-## Enabling Apple Ads attribution
+## Activación de la atribución de Apple Ads
 
-To be able to send postbacks to SearchAds.com, you should first enable attribution for Apple Ads. This can be done by either an advertiser or an agency.
+Para poder enviar postbacks a SearchAds.com, primero debes activar la atribución de Apple Ads. Esto puede hacerlo un anunciante o una agencia.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> If the advertiser or the agency disables attribution for Apple Ads, postbacks for SearchAds.com and other Apple Ads Marketing Partners are stopped.
+> Si el anunciante o la agencia desactiva la atribución de Apple Ads, se detienen los postbacks de SearchAds.com y de otros Apple Ads Marketing Partners.
 
-* **Advertisers**: follow the instructions below on how to enable attribution for Apple Ads.
-* **Agencies**: <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#agency-setup">follow these instructions</Anchor> to enable attribution for Apple Ads.
+* **Anunciantes**: sigue las instrucciones que aparecen abajo para activar la atribución de Apple Ads.
+* **Agencias**: <Anchor target="_blank" href="/marketers/es/docs/apple-ads-integration-setup#agency-setup">sigue estas instrucciones</Anchor> para activar la atribución de Apple Ads.
 
-## Setting up SearchAds.com in AppsFlyer
+## Configuración de SearchAds.com en AppsFlyer
 
-### Getting required information from SearchAds.com
+### Obtención de la información necesaria de SearchAds.com
 
-Before you start configuring SearchAds.com in AppsFlyer, obtain your **api\_key** and your **Apple Ads campaign group ID**.
+Antes de empezar a configurar SearchAds.com en AppsFlyer, obtén tu **api\_key** y el **ID del grupo de campañas de Apple Ads**.
 
-* For api\_key, go to your SearchAds.com dashboard, click **Integrations** > **AppsFlyer**. In the popup that opens, copy the ID. [![SearchAds.com API key](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)
-* For Apple Ads Campaign Group ID: In your **Apple Ads dashboard,** get the Apple Ads Campaign Group ID for the relevant campaign group:
+* Para obtener la api\_key, ve a tu dashboard de SearchAds.com y haz clic en **Integrations** > **AppsFlyer**. En la ventana emergente que se abre, copia el ID. [![Clave API de SearchAds.com](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)
+* Para el ID del grupo de campañas de Apple Ads: en tu **dashboard de Apple Ads,** obtén el ID del grupo de campañas de Apple Ads correspondiente:
 
-  ![apple-search-ads-campaign-group-id.png](https://files.readme.io/dbc7f9d2474a2126a2277db279b7d2fa815770c55138e0d42c71eecb36d5abcc-4402898560017.png)
+  ![apple-search-ads-campaign-group-id.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
 
-### Setting up campaigns in AppsFlyer
+### Configuración de campañas en AppsFlyer
 
-**To set up a SearchAds.com:**
+**Para configurar SearchAds.com:**
 
-1. If required, activate **Apple Ads integration:**
-   1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Partner Marketplace**.
-   2. Search for and select the partner. You're directed to the partner configuration page.
-   3. From the **Integration** tab, turn on **Activate partner**.
-   4. Click **Save Integration**.
-2. **In AppsFlyer, configure SearchAds.com:**
-   1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations.**
-   2. Search for SearchAds.com (by MobileAction).  
-      The list of marketing partners displays.
-   3. Select SearchAds.com (by MobileAction).
-   4. Turn on **Activate Partner**.
-   5. Enter the API key in the **api\_key** field.
-   6. Enter SearchAds.com's **Apple Ads Campaign ID**. Enter the digits (numbers) only.
-   7. Click **Save**.
+1. Si es necesario, activa la **integración de Apple Search Ads:**
+   1. En AppsFlyer, en el menú lateral, selecciona **Collaborate** > **Partner Integrations** > **Partner Marketplace**.
+   2. Busca y selecciona al partner. Serás dirigido a la página de configuración del partner.
+   3. En la pestaña **Integración**, selecciona **Activar partner**.
+   4. Haz clic en **Guardar integración**.
+2. **En AppsFlyer, configura SearchAds.com:**
+   1. En AppsFlyer, en el menú lateral, selecciona **Collaborate** > **Partner Integrations** > **Active Integrations**.
+   2. Busca SearchAds.com (de MobileAction).  
+      Aparece la lista de partners de marketing.
+   3. Selecciona SearchAds.com (de MobileAction).
+   4. Activa **Activar partner.**
+   5. Introduce la clave API en el campo **api\_key**.
+   6. Introduce el **ID de campaña de Apple Ads** de SearchAds.com. Ingresa solo los dígitos (números).
+   7. Haga clic en **Guardar**.
 
-#### Configuring in-app event postbacks
+#### Configuración de postbacks de eventos in-app
 
-**To configure postback that should be sent to SearchAds.com upon in-app events:**
+**Para configurar el postback que debe enviarse a SearchAds.com cuando se produzcan eventos in-app:**
 
-1. Enter the **api\_key**.
-2. Turn on **In-app events postback**.
-3. Select **Send all events**.
-4. Under **Send revenue**, select **Values&Revenue**.
-5. Click **Save Integration**.
+1. Introduce el **api\_key**.
+2. Activa el **postback de eventos in-app**.
+3. Selecciona **Enviar todos los eventos**.
+4. En **Enviar ingresos**, selecciona **Valores&Ingresos**.
+5. Haz clic en **Guardar integración**.
 
-<div data-zendesk-anchors="enabling-apple-search-ads-attribution=enabling-apple-ads-attribution h_01HKW0B2AZ40F0N9A7YYGTHCE0=enabling-apple-ads-attribution h_01HKW0B2AZ411647BAS75M5BG6=note h_01HKW0B2AZWC9AQBAYDWFPAKQN=setting-up-searchadscom-in-appsflyer h_01HKW0B2AZ49R66CMJ747M485M=getting-required-information-from-searchadscom h_01HKW0B2AZ419YS071HNXHPZXY=setting-up-campaigns-in-appsflyer configuring-inapp-event-postbacks=configuring-in-app-event-postbacks h_01HKW0B2AZ4GHJE5SQHB3ZSZ8D=configuring-in-app-event-postbacks" />
+<div data-zendesk-anchors="enabling-apple-search-ads-attribution=activaci%C3%B3n-de-la-atribuci%C3%B3n-de-apple-ads h_01HKW0B2AZ40F0N9A7YYGTHCE0=activaci%C3%B3n-de-la-atribuci%C3%B3n-de-apple-ads h_01HKW0B2AZ411647BAS75M5BG6=nota setting-up-searchadscom-in-appsflyer=configuraci%C3%B3n-de-searchadscom-en-appsflyer h_01HKW0B2AZWC9AQBAYDWFPAKQN=configuraci%C3%B3n-de-searchadscom-en-appsflyer getting-required-information-from-searchadscom=obtenci%C3%B3n-de-la-informaci%C3%B3n-necesaria-de-searchadscom h_01HKW0B2AZ49R66CMJ747M485M=obtenci%C3%B3n-de-la-informaci%C3%B3n-necesaria-de-searchadscom setting-up-campaigns-in-appsflyer=configuraci%C3%B3n-de-campa%C3%B1as-en-appsflyer h_01HKW0B2AZ419YS071HNXHPZXY=configuraci%C3%B3n-de-campa%C3%B1as-en-appsflyer configuring-inapp-event-postbacks=configuraci%C3%B3n-de-postbacks-de-eventos-in-app h_01HKW0B2AZ4GHJE5SQHB3ZSZ8D=configuraci%C3%B3n-de-postbacks-de-eventos-in-app" />

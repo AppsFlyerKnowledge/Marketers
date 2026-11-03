@@ -1,5 +1,5 @@
 ---
-title: About the AppsFlyer mobile app
+title: Acerca de la aplicación móvil de AppsFlyer
 metadata:
   keywords:
     - Appsflyer
@@ -15,88 +15,87 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2017-06-18T11:47:28Z'
-  edited_at: '2026-05-15T19:33:16Z'
+  edited_at: '2026-08-12T11:58:00Z'
   id: 115003020863
-  locale: en-us
+  locale: es
   section: The AppsFlyer platform
   section_id: 6551361489297
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115003020863-About-the-AppsFlyer-mobile-app
+  url: https://support.appsflyer.com/hc/es/articles/115003020863
 ---
-> **At a glance:** Use the AppsFlyer mobile app to review your mobile attribution and marketing analytics right from your phone.
+> **Resumen:** Usa la aplicación móvil de AppsFlyer para revisar la atribución móvil y los análisis de marketing directamente desde tu teléfono.
 
 | [<Image alt="Google_Play_Store.png" src="https://files.readme.io/d3e90dff6b5b007164d1ee1449cf3b9b39f52b6b710034137b4ab7640ce2dc57-360001467125.png" width="299px" />](https://play.google.com/store/apps/details?id=com.appsflyer.analytics) | [<Image alt="ios_App_Store.png" src="https://files.readme.io/516cd93b8a642bdf290e774936457c774e61f2493d3508a050c18c62378d2e7b-360001467145.png" width="299px" />](https://go.onelink.me/RJn0/support) |
 | --- | --- |
 
-## The AppsFlyer Mobile App
+## La aplicación móvil de AppsFlyer
 
-### Log in
+### Iniciar sesión
 
-To log in to the app enter your credentials or sign in with Google.
+Para iniciar sesión en la aplicación, introduce tus credenciales o inicia sesión con Google.
 
 [![](https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png)](https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png)
 
-### My apps
+### Mis aplicaciones
 
-After login, the My Apps screen is displayed.
+Después del login, se muestra la pantalla Mis aplicaciones.
 
-This screen lists all the applications in your account. You can easily filter out apps from different platforms (iOS, Android, Windows) and even filter out pending apps.
+Esta pantalla muestra todas las aplicaciones de tu cuenta. Puedes filtrar fácilmente aplicaciones de distintas plataformas (iOS, Android, Windows) e incluso filtrar las aplicaciones pendientes.
 
 [![](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)
 
-### App overview (LTV)
+### Resumen de la aplicación (LTV)
 
-Tapping on an app name takes you into the app's overview screen.
+Al tocar el nombre de una aplicación, accedes a la pantalla de resumen de la aplicación.
 
-This screen displays a wide range of performance metrics and KPIs. These include:
+Esta pantalla muestra una amplia gama de métricas de rendimiento y KPI. Estos incluyen:
 
-* Installs
-* Clicks
-* Impressions
-* Cost
-* Revenue
-* Sessions
-* Loyal Users
-* Uninstalls
+* Instalaciones asistidas
+* Clics
+* ID de transacción de reembolso
+* Coste
+* Ingresos totales
+* Sesiones
+* usuarios leales
+* Desinstalar
 
-By default, the top 5 media sources are shown for each metric.
+De forma predeterminada, se muestran las 5 fuentes de medios principales para cada métrica.
 
-Each row displays the item, total for the media source, and the share of this metric from the total.
+Cada fila muestra el elemento, el total de la fuente de medios y la proporción de esta métrica respecto del total.
 
-Clicking left or right on the date range moves the changes the dates by the time-span selected. You can also tap to select a specific bar and see its breakdown for a specific day.
+Al hacer clic a la izquierda o a la derecha del intervalo de fechas, las fechas cambian según el período seleccionado. También puedes tocar para seleccionar una barra específica y ver su desglose de un día concreto.
 
-Tap outside the bar to reset your selection.
+Toca fuera de la barra para restablecer la selección.
 
 [![](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)
 
-### Filters
+### Filtros
 
-The filter button in the top right corner of the screen allows you to change and filter your report.
+El botón de filtro de la esquina superior derecha de la pantalla te permite cambiar y filtrar tu reporte.
 
-The filters' menu allows you to filter by Media Source and Geo. In addition, you can change the grouping of your data based on Media Source, Geo, and Organic/Non-Organic. Finally, for even more control, you can choose to filter out organic installs or view a grouping of all other data points not included in the top 5 filters you have selected.
+El menú de filtros te permite filtrar por fuente de medios y geolocalización. Además, puedes cambiar la agrupación de tus datos según fuente de medios, geolocalización y orgánico/no orgánico. Por último, para tener aún más control, puedes optar por excluir las instalaciones orgánicas o ver una agrupación de todos los demás puntos de datos no incluidos en los 5 filtros principales que hayas seleccionado.
 
 [![](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)
 
-### Date selector
+### Selector de fechas
 
-Tapping on the date range opens the date selector view. The date selector view allows you to easily switch between quick selection dates or select custom date ranges (select your required date range on the calendar).
+Al tocar el intervalo de fechas, se abre la vista del selector de fechas. La vista del selector de fechas te permite alternar fácilmente entre fechas de selección rápida o seleccionar intervalos de fechas personalizados (selecciona el intervalo de fechas que necesites en el calendario).
 
 [![](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)
 
-### Account overview
+### Resumen de la cuenta
 
-From the top-left Menu select **Account Overview**. This provides an aggregated account-level view of your marketing performance. The same KPIs and filtering capabilities that are available in the App Overview screen are also available here.
+En el menú superior izquierdo, selecciona **Resumen de la cuenta**. Esto proporciona una vista agregada del rendimiento de marketing a nivel de cuenta. Los mismos KPI y capacidades de filtrado que están disponibles en la pantalla Información general de la app también están disponibles aquí.
 
-Tapping an app name from the list enables you to drill down into the App Overview for that app while maintaining the currently configured dates and filter selection.
+Al tocar el nombre de una app en la lista, puedes profundizar en la sección Información general de la app de esa app y mantener las fechas configuradas actualmente y la selección de filtros.
 
 ![Account_Overview.png](https://files.readme.io/2d425fcb0f53c794a8eeaddd1aebfa8172e51d634d5f90bed74016663adef664-115010568289.png)
 
-### Known limitations
+### Limitaciones conocidas
 
-* The app currently does not support access to the partner dashboards and agency dashboards.
-* The app currently doesn't support 2FA (two-factor authentication). If your account has 2FA enabled, you cannot sign in using the app.
-* The AppsFlyer App only allows you to view app data if you are the owner of the app. Otherwise, you are presented with the following:  
+* Actualmente, la aplicación no admite el acceso a los dashboards de Partners ni a los dashboards de agencias.
+* Actualmente, la aplicación no admite 2FA (autenticación de dos factores). Si tu cuenta tiene 2FA habilitado, no puedes iniciar sesión con la aplicación.
+* La aplicación de AppsFlyer solo te permite ver los datos de una aplicación si eres el propietario de esa aplicación. De lo contrario, verás lo siguiente:  
     
   [<Image alt="" src="https://files.readme.io/ead6e6d3ff75fa9e9f1ee7d7880de5edbccd81f664d1a76d97eb5a55cd3900c2-115016922303.png" width="337px" />](https://files.readme.io/ead6e6d3ff75fa9e9f1ee7d7880de5edbccd81f664d1a76d97eb5a55cd3900c2-115016922303.png)
 
-<div data-zendesk-anchors="h_01HX9M4JG2VQVV5RC6X7FGNWWE=the-appsflyer-mobile-app h_01HX9M4JG21CWAKPQTXQXR3K9X=log-in h_01HX9M4JG245C02PATKGQCBH9F=my-apps h_01HX9M4JG2ZJBG3NZVMFCP8C17=app-overview-ltv h_01HX9M4JG2Z6T6RCG20YXQSPM7=filters h_01HX9M4JG21MQ8EEM3N0B0ASM9=date-selector h_01HX9M4JG2CK8KRCBMMJG15J52=account-overview h_01HX9M4JG2K1J2D1YYQC55Z8MA=known-limitations" />
+<div data-zendesk-anchors="the-appsflyer-mobile-app=la-aplicaci%C3%B3n-m%C3%B3vil-de-appsflyer h_01HX9M4JG2VQVV5RC6X7FGNWWE=la-aplicaci%C3%B3n-m%C3%B3vil-de-appsflyer log-in=iniciar-sesi%C3%B3n h_01HX9M4JG21CWAKPQTXQXR3K9X=iniciar-sesi%C3%B3n my-apps=mis-aplicaciones h_01HX9M4JG245C02PATKGQCBH9F=mis-aplicaciones app-overview-ltv=resumen-de-la-aplicaci%C3%B3n-ltv h_01HX9M4JG2ZJBG3NZVMFCP8C17=resumen-de-la-aplicaci%C3%B3n-ltv filters=filtros h_01HX9M4JG2Z6T6RCG20YXQSPM7=filtros date-selector=selector-de-fechas h_01HX9M4JG21MQ8EEM3N0B0ASM9=selector-de-fechas account-overview=resumen-de-la-cuenta h_01HX9M4JG2CK8KRCBMMJG15J52=resumen-de-la-cuenta known-limitations=limitaciones-conocidas h_01HX9M4JG2K1J2D1YYQC55Z8MA=limitaciones-conocidas" />

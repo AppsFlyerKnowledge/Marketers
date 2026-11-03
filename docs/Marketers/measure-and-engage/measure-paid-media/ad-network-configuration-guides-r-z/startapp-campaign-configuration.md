@@ -1,5 +1,5 @@
 ---
-title: StartApp campaign configuration
+title: Configuración de la campaña de StartApp
 metadata:
   keywords:
     - StartApp
@@ -14,212 +14,211 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-06-30T10:55:10Z'
-  edited_at: '2026-09-07T07:26:10Z'
+  edited_at: '2026-09-09T00:25:15Z'
   id: 210042746
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/210042746-StartApp-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/210042746
 ---
-> **At a glance:** StartApp, an AppsFlyer ad network integrated partner, is an insight-driven mobile tech company that enables its partners to deliver the world's most fulfilling mobile experiences for their users. In addition to click-based mobile attribution, StartApp offers cost, retargeting, and view-through attribution, which can be recorded with AppsFlyer.
+> **Resumen:** StartApp, un partner integrado de la ad network de AppsFlyer, es una empresa de tecnología móvil basada en insights que permite a sus partners ofrecer a sus usuarios las experiencias móviles más satisfactorias del mundo. Además de la atribución móvil basada en clics, StartApp ofrece atribución de costos, retargeting y view-through, que se pueden registrar en AppsFlyer.
 
-To configure your campaigns with StartApp, follow the steps below.
+Para configurar tus campañas con StartApp, sigue los pasos a continuación.
 
-## Setting up StartApp
+## Configuración de StartApp
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace**.  
+   (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
-StartApp's configuration window includes 4 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
+La ventana de configuración de StartApp incluye 4 pestañas activas: Integración, enlace de atribución, Costo y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del encabezado de la ventana de configuración del partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
+> * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio** para todos los partners.
+> * Todos los demás pasos son descriptivos u **opcionales**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to turn on the **Activate Partner** toggle to enable setup of the Integration parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás activar el selector **Activar partner** para habilitar la configuración de los parámetros de integración. El activador debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> As an ALL-Installs network, StartApp prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to StartApp.
+> Como red de TODAS las instalaciones, StartApp prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluida la orgánica. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a StartApp.
 
-### General settings
+### Configuración general
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Turn this on if you want to attribute view-through installs from StartApp. The view-through lookback slider is available on the attribution link tab (described below).
+Actívala si quieres atribuir las instalaciones view-through de StartApp. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to StartApp following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a StartApp después de las instalaciones y re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to StartApp.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to StartApp.
+Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a StartApp.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada a StartApp.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with StartApp via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer a StartApp mediante postbacks.
 
-1. Toggle In-App Event Postbacks to ON
-2. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-3. Click **Add Event** to add an SDK Event to the list
-4. Complete the following parameters:
+1. Activa los postbacks de eventos in-app.
+2. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+3. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+4. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app or from server-to-server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on StartApp's side.  <br />Obtain the corresponding Event ID from StartApp and set it in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos server-to-server.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según lo define StartApp.  <br />Obtén el ID de evento correspondiente de StartApp e introdúcelo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-In this tab, you can create the attribution links you want to send to StartApp for attributing StartApp's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a StartApp para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de StartApp. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-This tab is divided into different sections:
+Esta pestaña se divide en distintas secciones:
 
-### Attribution link parameters
+### Parámetros de enlaces de atribución
 
-In this section, select which parameters you want to add to the attribution link.
+En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
 
-Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí.
 
-* **Campaign** - add it to compare different campaigns running with StartApp.  
-  **Attribution link parameter:** c
-* **Adset** - set ad set names to compare different ad sets within specific StartApp campaigns.  
-  **Attribution link parameter:** af\_adset
-* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns StartApp.  
-  **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
-  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
-  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+* **Campaña** - añádela para comparar distintas campañas en ejecución con StartApp.  
+  **Parámetro de enlace de atribución:** c
+* **Conjunto de anuncios** - define nombres de conjuntos de anuncios para comparar distintos conjuntos de anuncios dentro de campañas específicas de StartApp.  
+  **Parámetro de enlace de atribución:** af\_adset
+* **Nombre del anuncio** - define nombres de anuncios para comparar distintos creativos dentro de conjuntos de anuncios específicos de campañas específicas de StartApp.  
+  **Parámetro de enlace de atribución:** af\_ad
+* **ID de sitio** y **ID de subsitio** - configura el parámetro ID de sitio para atribuir las instalaciones a publishers específicos. Si existen muchos publishers, te sugerimos que limites la cantidad de IDs de sitio usados y utilices el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceder las limitaciones de ID de sitio</Anchor>.  
+  **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
+* **Parámetros de suscriptor** - utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+  **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's attribution link structure and parameters**</Anchor>.
+Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
-### Retargeting settings
+### Configuraciones de retargeting
 
-When enabled, AppsFlyer recognizes a link as a <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting</Anchor> attribution link, rather than a user acquisition link, by adding the `&is_retargeting=true` to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution.  
-**Attribution link parameter:** is\_retargeting.
+Cuando está habilitado, AppsFlyer reconoce un enlace como un enlace de atribución de <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">retargeting</Anchor>, en lugar de un enlace de adquisición de usuarios, al añadir `&is_retargeting=true` al enlace de registro de clics. Ten en cuenta que actualmente el retargeting solo es compatible con la atribución por clics y no con la atribución por impresiones.  
+**Parámetro del enlace de atribución:** is\_retargeting.
 
-The following setup below is displayed when retargeting is enabled.
+Cuando la opción de retargeting está habilitada, se muestra la siguiente configuración.
 
-1. Standard Link vs. OneLink
+1. Enlace estándar vs. OneLink
 
-Select ***standard attribution link*** option if:
+Selecciona la opción ***enlace de atribución estándar*** si:
 
-* You don't need to deep link with the URL or
-* Plan to use only <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">URI schemes</Anchor> for deep linking
+* No necesitas un enlace profundo con la URL o
+* Planea utilizar solo <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">esquemas de URI</Anchor> para Deep Linking
 
-select ***Use OneLink*** for:
+selecciona ***Usar OneLink*** para:
 
-* Using a single link for both Android and iOS apps or
-* Deep linking using Universal or app links
+* Utilizar un solo enlace para aplicaciones de Android y iOS, o
+* Establecer enlaces profundos empleando enlaces universales o de aplicaciones.
 
-Note that selecting OneLink changes the click recording link from app specific to a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink URL</Anchor>.
+Ten en cuenta que, si seleccionas OneLink, el enlace de registro de clics cambia de una URL específica de la aplicación a una <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">URL de OneLink</Anchor>.
 
-2. Deep Link URL
+2. URL de deep link
 
-Use this field if the link is meant to deep link users to any specific activity within your app.  
-**Attribution link parameter:** af\_dp  
-You can find more information about AppsFlyer <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking solution in this guide.</Anchor>
+Utiliza este campo si el enlace está pensado para dirigir mediante Deep Linking a los usuarios a cualquier actividad específica dentro de tu aplicación.  
+**Parámetro del enlace de atribución:** af\_dp  
+Puedes encontrar más información sobre la <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">solución de Deep Linking de AppsFlyer en esta guía.</Anchor>
 
-3. Re-engagement Window
+3. Ventana de recaptación
 
-Set the time period following the re-engagement, where the user's in-app events are attributed to the retargeting media source. You can set the value in days (1-90), hours (up to 23), or even lifetime.
+Defina el plazo posterior al re-engagement, durante el cual los eventos in-app del usuario se atribuyen a la fuente de medios de redireccionamiento. Puede establecer el valor en días (1-90), horas (hasta 23) o incluso durante toda la vida.
 
-**Attribution link parameter:** af\_reengagement\_window
+**Parámetro del enlace de atribución:** af\_reengagement\_window
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to StartApp.
+Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a StartApp.
 
-**Attribution link parameter:** af\_click\_lookback
+**Parámetro del enlace de atribución:** af\_click\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Aquí puedes encontrar más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
-### Click attribution link
+### Haz clic en el enlace de atribución
 
-This is the attribution link that contains all the setup information you have set for it. Send it to StartApp to be activated when leads click on a corresponding ad.
+Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a StartApp para que se active cuando los clientes potenciales hagan clic en un anuncio correspondiente.
 
-### View-through attribution lookback window
+### Ventana de lookback de atribución view-through
 
-This slider allows you to set the **maximum time from impression to install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to StartApp, providing there was no other relevant ad click.
+Este control deslizante te permite establecer el **tiempo máximo desde la impresión hasta la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de esta ventana de lookback, tras la impresión de un anuncio, se atribuyen a StartApp, siempre que no haya habido ningún otro clic relevante en el anuncio.
 
-You can customize this value to 1-23 hours or 1-7 days.
+Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 
-**Attribution link parameter:** af\_viewthrough\_lookback
+**Parámetro del enlace de atribución:** af\_viewthrough\_lookback
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
+Aquí puedes encontrar más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución por impresiones</Anchor>.
 
-### Impressions attribution link
+### Enlace de atribución de impresiones
 
-The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to StartApp to be activated when a corresponding ad is watched, usually for 1 second or more.
+El enlace de atribución de impresiones contiene datos similares a los del enlace de registro de clics, además de una ventana de lookback diferente. Envíalo a StartApp para que se active cuando se vea un anuncio correspondiente, normalmente durante 1 segundo o más.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-StartApp automatically sends encrypted CPI cost data on the attribution link for all installs.
+StartApp envía automáticamente datos cifrados de costos de CPI en el enlace de atribución para todas las instalaciones.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue integration is not available for this partner.
+La integración de ingresos por publicidad no está disponible para este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant StartApp, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for StartApp, the permissions tab is active and you can grant control to StartApp.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a StartApp, tanto si el partner actúa como ad network, agencia o incluso ambas cosas. Ten en cuenta que, incluso si la atribución está deshabilitada para StartApp, la pestaña de permisos está activa y puedes conceder el control a StartApp.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-### Ad network permissions
+### Permisos de ad network
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to set up in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos*a** - solo a los datos de ingresos atribuidos al partner
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJS066SXX0W7DC81VDREFN1T=setting-up-startapp h_01HJS066SXGFZ2FWKQ4F6VR081=tip h_01HJS066SX3R7N34PTFWCP1W5Y=integration-tab h_01HJS066SXE913QSB0CYQMSY04=activate-partner h_01HJS066SX19P84WN0BT4KYC12=note h_01HJS066SX9D6FMANAK0GZ303P=general-settings h_01HJS066SYHCHF56ZYD51JXYSK=default-postbacks inapp-events-settings=in-app-events-settings h_01HJS066SY0SC8R4098V4V19HA=in-app-events-settings h_01HJS066SYSBHM3C3HH8WD2DYE=attribution-link-tab h_01HJS066SYVDYD2Q8K13CQ8HHR=attribution-link-parameters h_01HJS066SY7ZB2ZP98JN7N4M6J=retargeting-settings clickthrough-attribution=click-through-attribution h_01HJS066SYT59WAV9RGYBZXAY9=click-through-attribution h_01HJS066SYF3TAZBFNPMAV40TP=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HJS066SYMRX14D36G4MB6CWW=view-through-attribution-lookback-window h_01HJS066SYECNKHCRW4SE7FPQF=impressions-attribution-link h_01HJS066SYNY9NFSV2YQRJJ08R=cost-tab h_01HJS066SYVQ9C5G21VARRJ7FR=ad-revenue-tab h_01HJS066SYVSNZDT3Z89G0HRWS=permissions-tab h_01HJS066SYH20AG9XFNDWFBM0W=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-startapp=configuraci%C3%B3n-de-startapp h_01HJS066SXX0W7DC81VDREFN1T=configuraci%C3%B3n-de-startapp h_01HJS066SXGFZ2FWKQ4F6VR081=consejo h_01HJS066SX3R7N34PTFWCP1W5Y=integration-tab activate-partner=activar-socio h_01HJS066SXE913QSB0CYQMSY04=activar-socio h_01HJS066SX19P84WN0BT4KYC12=nota general-settings=configuraci%C3%B3n-general h_01HJS066SX9D6FMANAK0GZ303P=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01HJS066SYHCHF56ZYD51JXYSK=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HJS066SY0SC8R4098V4V19HA=configuraci%C3%B3n-de-eventos-in-app h_01HJS066SYSBHM3C3HH8WD2DYE=attribution-link-tab attribution-link-parameters=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n h_01HJS066SYVDYD2Q8K13CQ8HHR=par%C3%A1metros-de-enlaces-de-atribuci%C3%B3n retargeting-settings=configuraciones-de-retargeting h_01HJS066SY7ZB2ZP98JN7N4M6J=configuraciones-de-retargeting clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HJS066SYT59WAV9RGYBZXAY9=atribuci%C3%B3n-por-clic click-attribution-link=haz-clic-en-el-enlace-de-atribuci%C3%B3n h_01HJS066SYF3TAZBFNPMAV40TP=haz-clic-en-el-enlace-de-atribuci%C3%B3n viewthrough-attribution-lookback-window=ventana-de-lookback-de-atribuci%C3%B3n-view-through h_01HJS066SYMRX14D36G4MB6CWW=ventana-de-lookback-de-atribuci%C3%B3n-view-through impressions-attribution-link=enlace-de-atribuci%C3%B3n-de-impresiones h_01HJS066SYECNKHCRW4SE7FPQF=enlace-de-atribuci%C3%B3n-de-impresiones h_01HJS066SYNY9NFSV2YQRJJ08R=cost-tab h_01HJS066SYVQ9C5G21VARRJ7FR=ad-revenue-tab h_01HJS066SYVSNZDT3Z89G0HRWS=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HJS066SYH20AG9XFNDWFBM0W=permisos-de-ad-network" />

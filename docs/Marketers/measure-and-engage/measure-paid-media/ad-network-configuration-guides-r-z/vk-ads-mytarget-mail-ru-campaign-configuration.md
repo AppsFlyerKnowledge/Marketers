@@ -1,5 +1,5 @@
 ---
-title: VK Ads (myTarget, Mail.ru) campaign configuration
+title: Configuración de campaña de VK Ads (myTarget, Mail.ru)
 metadata:
   keywords:
     - mytarget
@@ -14,154 +14,153 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-03-28T11:53:13Z'
-  edited_at: '2026-09-09T13:06:35Z'
+  edited_at: '2026-09-11T00:25:16Z'
   id: 209731913
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/209731913-VK-Ads-myTarget-Mail-ru-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/209731913
 ---
-> **At a glance:** VK Ads is a mobile advertising platform aimed at connecting advertisers with Russian-speaking mobile users. With VK Ads advertisers can place targeted advertising in social networks (Vkontakte, Odnoklassniki, Moi Mir) and the Mail.Ru Group. In addition to click-based mobile attribution, VK Ads also offers retargeting attribution.
+> **Información general:** VK Ads es una plataforma de publicidad móvil orientada a conectar a los anunciantes con usuarios móviles rusohablantes. Con VK Ads, los anunciantes pueden colocar publicidad segmentada en redes sociales (Vkontakte, Odnoklassniki, Moi Mir) y en Mail.Ru Group. Además de la atribución móvil basada en clics, VK Ads también ofrece atribución de retargeting.
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mail.ru.png?v=1)
 
-## Setting up VK Ads
+## Configuración de VK Ads
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace**.  
+   (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Activate partners
+### Activar los partners
 
-On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, tendrás que activar el botón ***Activar Partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### General settings
+### Configuración general
 
-The following general settings are available for VK Ads.
+Los siguientes ajustes generales están disponibles para VK Ads.
 
-### App ID
+### Identificación de la aplicación
 
-This field is not mandatory, and its functionality is TBD. For any further questions, contact VK Ads.
+Este campo no es obligatorio y su funcionalidad está por determinar. Si tienes alguna otra pregunta, ponte en contacto con VK Ads.
 
-### Enable view-through attribution
+### Habilitar la atribución view-through
 
-Activate, if you want to attribute view-through installs from VK Ads. The view-through lookback slider is available in the [***Attribution link***](/docs/vk-ads-mytarget-mail-ru-campaign-configuration#attribution-link-tab) tab.
+Actívalo si deseas atribuir las instalaciones por impresiones de VK Ads. El control deslizante de la ventana retrospectiva por impresiones está disponible en la pestaña del enlace de [***atribución***](/docs/vk-ads-mytarget-mail-ru-campaign-configuration#attribution-link-tab) (se describe a continuación).
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to VK Ads following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a VK Ads tras las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to VK Ads.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to VK Ads.
+Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a VK Ads.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada a VK Ads.
 
-### In-app events postbacks
+### Postbacks de eventos in-app
 
-In this section, you can configure in-app event postbacks that are sent to VK Ads.
+En esta sección, puedes configurar los postbacks de eventos in-app que se envían a VK Ads.
 
-1. Activate ***In-app event postbacks***
-2. Choose whether to report **selected events** to the partner, or **all** of them.
-   * Note: If you choose to report all events, the *af\_app\_opened* event is not reported.
-3. If you choose to manually select events, click ***Add event*** to add an SDK Event to the list.
-4. Complete the following parameters:
+1. Activar ***Postbacks de eventos in-app***
+2. Elige si quieres reportar al partner **eventos seleccionados** o **todos**.
+   * Nota: Si eliges reportar todos los eventos, el evento *af\_app\_opened* no se reporta.
+3. Si eliges seleccionar eventos manualmente, haz clic en ***Agregar evento*** para añadir un evento de SDK a la lista.
+4. Completa los siguientes parámetros:
 
-| Parameter name | Description |
+| Nombre del parámetro | Nota |
 | --- | --- |
-| **SDK event name** *(required for manual selection only)* | The name of the event, as received by AppsFlyer either from the SDK or from server-to-server events.  <br />**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
-| **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to VK Ads.  <br />**All sources, including organic** to have your entire user base available to be reported to the partner |
-| **Send event data** | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
+| **Nombre del evento de SDK** *(obligatorio solo para la selección manual)* | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK o desde eventos de servidor a servidor.  <br />**Consejo**: si no ves el evento que quieres en la lista, actívalo en un dispositivo con una instalación no orgánica y vuelve a comprobarlo. |
+| **Opción de envío** | Selecciona la opción de envío del evento:  <br />**Solo este partner** para eventos que provienen **solo** de usuarios atribuidos a VK Ads.  <br />**Todas las fuentes, incluidas las orgánicas** para que toda tu base de usuarios esté disponible para ser reportada al partner |
+| **Enviar datos de eventos** | <ul><li>**Sin valores ni ingresos:** envía solo el evento en sí sin el valor del evento.</li><li>**Con valores y sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.</li><li>**Con valores e ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento).</li></ul> |
 
-5. Click ***Save***.
+5. Haz clic en ***Guardar***.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes usar un enlace de una sola plataforma o un <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Aprender más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
-**Note**: OneLinks are not supported by VK Ads. Use standard attribution links for retargeting.
+**Nota**: VK Ads no ofrece soporte para OneLinks. Usa enlaces de atribución estándar para retargeting.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de ad network</Anchor> para obtener información completa sobre las dimensiones, métricas y funciones compatibles. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
 <div id="cost-data-sync-status" />
 
-<Accordion title="Cost data sync status">
+<Accordion title="Estado de sincronismo de datos de costos">
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el dashboard de estado de la integración de costos (e ingresos por anuncios) o en el dashboard de la ad network individual.
 
 </Accordion>
 
 <div id="removing-connected-accounts" />
 
-<Accordion title="Removing connected accounts">
+<Accordion title="Eliminar cuentas conectadas">
 
-**To delete a connected account:**
+**Para eliminar una cuenta conectada:**
 
-* <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">In the actions column, hover over an account, click ***Delete connection***</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">En la columna «Acciones», desplaza el cursor sobre una cuenta, haz clic en ***Eliminar conexión***</Anchor>
 
 </Accordion>
 
-> 📘 **Notes**
+> 📘 **Notas**
 >
-> 1. To support cost with VK Ads the advertiser must add the Campaign ID to the link **af\_c\_id=**.
-> 2. Once you set VK Ads cost, do not change the name of any active campaign, asset, or single ad, nor use dynamic macros with the campaign name parameter, as they can cause serious discrepancies or missing cost data.
+> 1. Para dar soporte al costo con VK Ads, el anunciante debe añadir el ID de la campaña al enlace **af\_c\_id=**.
+> 2. Una vez que hayas establecido el costo de VK Ads, no cambies el nombre de ninguna campaña, recurso o anuncio único activo, ni utilices macros dinámicas con el parámetro del nombre de la campaña, ya que pueden provocar discrepancias importantes o la falta de datos de costo.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue data is not supported by VK Ads.
+Los datos de ingresos por publicidad no son compatibles con VK Ads.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant VK Ads, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for VK Ads, the permissions tab is active and you can grant control to VK Ads.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a VK Ads, tanto si el partner actúa como ad network, agencia o incluso ambas. Ten en cuenta que, incluso si la atribución estuviera deshabilitada para VK Ads, la pestaña de permisos está activa y puedes otorgarle el control a VK Ads.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to set up in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos*a** - solo a los datos de ingresos atribuidos al partner
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJZV9DR3A3W91BQCE2548M0P=setting-up-vk-ads h_01HJZV9DR31B2EW88NG57XV2WH=integration-tab h_01HJZV9DR4A51AC03J82BMH8R0=activate-partners h_01HJZV9DR4WXN4985B5YYHN065=general-settings h_01HJZV9DR4RDFCE9FF8P61H5G7=app-id enable-viewthrough-attribution=enable-view-through-attribution h_01HJZV9DR4EFADPVTYYRT4ZYZD=enable-view-through-attribution h_01HJZV9DR408AXGRVRBV6KK9CJ=default-postbacks inapp-events-postbacks=in-app-events-postbacks h_01HJZV9DR43RZ5W4B71SASKY42=in-app-events-postbacks h_01HJZV9DR47N1SFC26DHT4BCCE=attribution-link-tab h_01HJZV9DR4G92S9CZZW3JE5HTS=cost-tab h_01HJZV9DR47Q48ZTJVK1M5DDM8=cost-data-sync-status h_01HJZV9DR5SHYA20GE711S6VT5=removing-connected-accounts h_01HJZV9DR5Q8W34HW2GRWCCMEB=notes h_01HJZV9DR5696R8NE7R5YYZ2JB=ad-revenue-tab h_01HJZV9DR5YQH7HF32M8R1YBKZ=permissions-tab" />
+<div data-zendesk-anchors="setting-up-vk-ads=configuraci%C3%B3n-de-vk-ads h_01HJZV9DR3A3W91BQCE2548M0P=configuraci%C3%B3n-de-vk-ads h_01HJZV9DR31B2EW88NG57XV2WH=integration-tab activate-partners=activar-los-partners h_01HJZV9DR4A51AC03J82BMH8R0=activar-los-partners general-settings=configuraci%C3%B3n-general h_01HJZV9DR4WXN4985B5YYHN065=configuraci%C3%B3n-general app-id=identificaci%C3%B3n-de-la-aplicaci%C3%B3n h_01HJZV9DR4RDFCE9FF8P61H5G7=identificaci%C3%B3n-de-la-aplicaci%C3%B3n enable-viewthrough-attribution=habilitar-la-atribuci%C3%B3n-view-through h_01HJZV9DR4EFADPVTYYRT4ZYZD=habilitar-la-atribuci%C3%B3n-view-through default-postbacks=postbacks-predeterminados h_01HJZV9DR408AXGRVRBV6KK9CJ=postbacks-predeterminados inapp-events-postbacks=postbacks-de-eventos-in-app h_01HJZV9DR43RZ5W4B71SASKY42=postbacks-de-eventos-in-app h_01HJZV9DR47N1SFC26DHT4BCCE=attribution-link-tab h_01HJZV9DR4G92S9CZZW3JE5HTS=cost-tab h_01HJZV9DR47Q48ZTJVK1M5DDM8=cost-data-sync-status h_01HJZV9DR5SHYA20GE711S6VT5=removing-connected-accounts h_01HJZV9DR5Q8W34HW2GRWCCMEB=notas h_01HJZV9DR5696R8NE7R5YYZ2JB=ad-revenue-tab h_01HJZV9DR5YQH7HF32M8R1YBKZ=permissions-tab" />

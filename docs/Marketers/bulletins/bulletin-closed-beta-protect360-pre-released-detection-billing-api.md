@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: [Closed Beta] Protect360 Pre-released detection (Billing API)'
+title: >-
+  Boletín: [beta cerrada] Detección previa al lanzamiento de Protect360 (API de
+  facturación)
 metadata:
   keywords:
     - Marketers
@@ -13,19 +15,18 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2024-08-05T16:11:54Z'
-  edited_at: '2026-05-04T09:19:39Z'
+  edited_at: '2026-10-20T03:57:13Z'
   id: 27286254350481
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/27286254350481-Bulletin-Closed-Beta-Protect360-Pre-released-detection-Billing-API
+  url: https://support.appsflyer.com/hc/es/articles/27286254350481
 ---
-| **What's new** | Protect360 has added the ability to reflect the detection of logics which are not yet in production. The data of this additional detection is deducted from your package (to Appsflyer). This is becasue it reflects non-legitimate conversions which should not be consumed in the package. |
+| **¿Qué hay de nuevo?** | Protect360 ha añadido la capacidad de reflejar la detección de lógicas que aún no están en producción. Los datos de esta detección adicional se deducen de tu paquete (para AppsFlyer). Esto se debe a que refleja conversiones no legítimas que no deberían consumirse del paquete. |
 | --- | --- |
-| **Released date [Beta]** | July, 2024 |
-| **What you need to know** | <ul><li>The pre-release detection data will be available in **Account Management** -> **Usage report** -> **Conversion source** -> **Pre-released detection**</li><li>The pre-release detection is aggregated and divided by Non-organic conversions and Organic conversions.</li><li>The pre-release detection will be updated daily. However, the final calculations will be provided on the 10th of the following month.</li><li>The pre-released detection is not reflected to partners (as this detection is not yet in production) and therefore is not applicable for reconciliation processes with partners</li><li>Pre-released detection numbers are available since July 1st, 2024</li></ul> |
-| **Implications** | Pre-released detections can be found in your Usage report. This pre-release detection reduced your cost, crediting detected fraud back to your package plan.<br /><br />Pre-released detections reflect additional conversions to deduct from the Appsflyer package. |
-| **Additional information** | Below are screenshots showing the usage report with the pre-release filter and data visual.<br /><br />**<span id="usage-report-showing-where-to-find-the-filter"></span>Usage report - showing where to find the filter.**<br /><br />![Usage_protect1.jpg](https://files.readme.io/efdbb5f45e800a762c7c1acca6798845b70c81ce79330123fef90a1909b51b61-27361610892561.jpg)<br /><br />**<span id="billable-report-filtered-to-show-only-deduction-due-to-protect360-prereleased-detection-therefore-in-minus"></span>Billable report - filtered to show only deduction due to Protect360 pre-released detection (Therefore in minus).**<br /><br />![Usage_protect2.jpg](https://files.readme.io/0f5a8caef0d223878f8aee8bcc409313ec69cdef517f91cc0fe68ab8dc0abe16-27361550181905.jpg)<br /><br />**<span id="pie-chart-reflecting-the-total-billable-conversions-breakdown-after-the-deduction-of-the-prereleased-detection"></span>Pie chart reflecting the total billable conversions breakdown after the deduction of the pre-released detection.**<br /><br />![Usage_protect3.jpg](https://files.readme.io/4c327a495a21a16f7b03e6aaa216e79601b8ab31c29a9e1abf48381d345e6bc4-27361610894225.jpg) |
+| **Fecha de lanzamiento [beta]** | Julio de 2024 |
+| **Lo que debes saber:** | <ul><li>Los datos de detección previa al lanzamiento estarán disponibles en **Gestión de la cuenta** -> **Reporte de uso** -> **Fuente de conversión** -> **Detección previa al lanzamiento**</li><li>La detección previa al lanzamiento se agrega y se desglosa en conversiones no orgánicas y conversiones orgánicas.</li><li>La detección previa al lanzamiento se actualizará a diario. Sin embargo, los cálculos finales se proporcionarán el día 10 del mes siguiente.</li><li>La detección previa al lanzamiento no se refleja a los partners (ya que esta detección aún no está en producción) y, por lo tanto, no se aplica a los procesos de conciliación con partners</li><li>Las cifras de detección previa al lanzamiento están disponibles desde el 1 de julio de 2024</li></ul> |
+| **Implicaciones** | Puedes encontrar las detecciones previas al lanzamiento en tu reporte de uso. Esta detección previa al lanzamiento ha reducido tu costo, abonando al plan de tu paquete el fraude detectado.<br /><br />Las detecciones previas al lanzamiento reflejan conversiones adicionales que se deducen del paquete de AppsFlyer. |
+| **Información adicional** | A continuación se muestran capturas de pantalla del reporte de uso con el filtro de versión previa al lanzamiento y la visualización de datos.<br /><br />**<span id="usage-report-showing-where-to-find-the-filter"></span>Reporte de uso: dónde encontrar el filtro.**<br /><br />![Usage_protect1.jpg](https://files.readme.io/efdbb5f45e800a762c7c1acca6798845b70c81ce79330123fef90a1909b51b61-27361610892561.jpg)<br /><br />**<span id="billable-report-filtered-to-show-only-deduction-due-to-protect360-prereleased-detection-therefore-in-minus"></span>Reporte facturable: filtrado para mostrar solo la deducción debida a la detección prelanzada de Protect360 (por tanto, en negativo).**<br /><br />![Usage_protect2.jpg](https://files.readme.io/0f5a8caef0d223878f8aee8bcc409313ec69cdef517f91cc0fe68ab8dc0abe16-27361550181905.jpg)<br /><br />**<span id="pie-chart-reflecting-the-total-billable-conversions-breakdown-after-the-deduction-of-the-prereleased-detection"></span>Gráfico circular que refleja el desglose total de conversiones facturables tras la deducción de la detección previa al lanzamiento.**<br /><br />![Usage_protect3.jpg](https://files.readme.io/4c327a495a21a16f7b03e6aaa216e79601b8ab31c29a9e1abf48381d345e6bc4-27361610894225.jpg) |
 
 <div data-zendesk-anchors="h_01J4RBNRXRME4HVFBD793PYRPQ=usage-report-showing-where-to-find-the-filter h_01J4RBNWQ8B4XZA5CW9AX1F5C2=billable-report-filtered-to-show-only-deduction-due-to-protect360-prereleased-detection-therefore-in-minus h_01J4RBQWNBFDFZRSFHSBVDS89S=pie-chart-reflecting-the-total-billable-conversions-breakdown-after-the-deduction-of-the-prereleased-detection" />

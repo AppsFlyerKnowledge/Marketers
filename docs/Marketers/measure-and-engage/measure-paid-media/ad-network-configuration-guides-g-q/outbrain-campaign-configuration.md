@@ -1,5 +1,5 @@
 ---
-title: Outbrain campaign configuration
+title: Configuración de la campaña de Outbrain
 metadata:
   keywords:
     - Advertisers
@@ -14,48 +14,47 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-08-09T13:26:55Z'
-  edited_at: '2026-06-16T09:33:37Z'
+  edited_at: '2026-08-12T12:15:02Z'
   id: 115003981026
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115003981026-Outbrain-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/115003981026
 ---
-> **At a glance:** Outbrain, an AppsFlyer integrated partner, is a premium discovery platform that helps connect marketers to their target audience through personalized recommendations on the world's leading publishers.
+> **De un vistazo:** Outbrain, un partner integrado de AppsFlyer, es una plataforma premium de discovery que ayuda a conectar a los profesionales del marketing con su audiencia objetivo mediante recomendaciones personalizadas en los principales publisher del mundo.
 
-## Setting up Outbrain integration
+## Configuración de la integración de Outbrain
 
-AppsFlyer integration with Outbrain supports click attribution.
+La integración de AppsFlyer con Outbrain admite la atribución por clic.
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/outbrain.png?v=1)
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de [ponerte en contacto con el partner](#) y abrir una cuenta con ellos. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración.   
+   **Nota importante:** El interruptor **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Más información</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-If necessary, make additional settings changes according to the campaigns and postbacks you run with the partner.
+Si es necesario, realiza cambios adicionales en la configuración según las campañas y los postbacks que ejecutes con el partner.
 
-| Settings tab | Remarks |
+| Pestaña de configuración | Nota |
 | --- | --- |
-| **Integration** | Configure additional <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">integration</Anchor> settings as required. |
-| **Attribution link** | Generate <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">attribution links.</Anchor> |
-| **Cost** | Not available for this partner |
-| **Ad revenue** | Not available for this partner |
-| **Permissions** | Set ad network <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor> as required. |
+| **Integración** | Configura ajustes adicionales de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">integración</Anchor> según sea necesario. |
+| **Enlace de atribución** | Genera <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">enlaces de atribución.</Anchor> |
+| **Coste** | No disponible para este partner |
+| **Cadena** | No disponible para este partner |
+| **Permisos** | Configura los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos</Anchor> de la ad network según sea necesario. |
 
-**Edit existing integration:**
+**Editar integración existente:**
 
-In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
+Busca al partner y selecciónalo.
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations</Anchor>.
+Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners</Anchor>.
 
-<div data-zendesk-anchors="h_01HKW7YJ8PN19J2HSZR3CPB36D=setting-up-outbrain-integration" />
+<div data-zendesk-anchors="setting-up-outbrain-integration=configuraci%C3%B3n-de-la-integraci%C3%B3n-de-outbrain h_01HKW7YJ8PN19J2HSZR3CPB36D=configuraci%C3%B3n-de-la-integraci%C3%B3n-de-outbrain" />

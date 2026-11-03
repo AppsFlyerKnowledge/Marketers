@@ -1,5 +1,5 @@
 ---
-title: Implement validation rules to prevent fraud
+title: Implementa reglas de validación para evitar el fraude
 metadata:
   keywords:
     - Advertisers
@@ -14,489 +14,488 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2017-09-14T14:43:46Z'
-  edited_at: '2026-09-09T07:57:33Z'
+  edited_at: '2026-11-02T01:04:24Z'
   id: 115004703926
-  locale: en-us
+  locale: es
   section: Protect your traffic
   section_id: 6551015912465
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115004703926-Implement-validation-rules-to-prevent-fraud
+  url: https://support.appsflyer.com/hc/es/articles/115004703926
 ---
-> **At a glance:** Validation rules add a custom layer of protection against incorrectly targeted campaigns and fraud. The rules enable app owners to control which installs and in-app event attributions get blocked, or attributed to the last valid source.
+> **At a glance:** Las reglas de validación añaden una capa personalizada de protección contra campañas mal segmentadas y el fraude. Las reglas permiten a los propietarios de apps controlar qué atribuciones de instalaciones y eventos in-app se bloquean o se atribuyen a la última fuente válida.
 
 ![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
 
-## Overview
+## Descripción general
 
-* Validation rules are defined in the rule builder using customized conditions and logic that filter and select which app installs or in-app event attributions to keep or block.
-* Rules are based on a variety of parameters for multiple use cases, including:
-  * Untargeted installs for your campaign (wrong geo, OS version, etc.)
-  * Installs that do not meet the insertion order signed with the ad network
-  * Hijacked installs by fraudulent networks
-  * Fake installs or in-app events sent from bots, emulators, or device farms
-* Rules defined for in-app events only take effect on in-app events associated with installs that were not previously blocked.
-* Rules that include an ad network are visible to that ad network's personnel (but they cannot see other ad networks included in the rule). This is in the interest of transparency, and to help ad networks better understand the performance of the traffic they provide.
-* The rules run in realtime and take immediate action. Learn more in the [outcome](/docs/implement-validation-rules-to-prevent-fraud#outcomes) section.
-* Tagged mode lets you test validation rules against live traffic before blocking attribution. When a rule is set to Tagged, AppsFlyer flags matching installs and in-app events for reporting and analysis, but attribution isn’t affected. Use Tagged mode to monitor rule behavior, identify possible false positives, and confirm the rule’s impact before changing the rule status to Implemented. See more in [VR tagged mode](/docs/implement-validation-rules-to-prevent-fraud#view-validation-rule-impact).
-* Additional validation rule options are available to <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor> customers, on top of the automatic Protect360 fraud blocking and detection. These conditions are known to help in the detection of various install-hijacking, fake install, and fake in-app event fraud types.  
-  **Note**: Validation Rules only validate installs/in-app events that were not identified as fraud by Protect360.
+* Las reglas de validación se definen en el creador de reglas mediante condiciones y lógicas personalizadas que filtran y seleccionan qué instalaciones de aplicaciones o eventos in-app conservar o bloquear.
+* Las reglas se basan en una variedad de parámetros para múltiples casos de uso, que incluyen:
+  * Instalaciones no dirigidas para tu campaña (versión de SO, geolocalización incorrecta, etc.)
+  * Instalaciones que no cumplen con el orden de inserción firmado con la ad network
+  * Instalaciones secuestradas por ad networks
+  * Instalaciones falsas o eventos in-app enviados desde bots, emuladores o granjas de dispositivos
+* Las reglas definidas para eventos in-app solo tienen efecto en los eventos in-app asociados con instalaciones que no se bloquearon previamente.
+* Las reglas que incluyen una ad network son visibles para el personal de esa ad network (pero no pueden ver otras ad networks incluidas en la regla). Esto es en interés de la transparencia y para ayudar a las ad networks a comprender mejor el rendimiento del tráfico que proporcionan.
+* Las reglas se ejecutan en tiempo real y entran en acción inmediatamente. Obtén más información en la sección de [resultados](/docs/implement-validation-rules-to-prevent-fraud#outcomes).
+* El modo Tagged te permite probar reglas de validación con tráfico en vivo antes de bloquear la atribución. Cuando una regla se configura como Tagged, AppsFlyer marca las instalaciones y los eventos in-app que coinciden para reportes y análisis, pero la atribución no se ve afectada. Utiliza el modo Tagged para supervisar el comportamiento de la regla, identificar posibles falsos positivos y confirmar el impacto de la regla antes de cambiar su estado a Implemented. Consulta más información en [modo Tagged de VR](/docs/implement-validation-rules-to-prevent-fraud#view-validation-rule-impact).
+* Hay opciones adicionales de reglas de validación disponibles para los clientes de <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide">Protect360</Anchor>, además del bloqueo y detección del fraude automáticos de Protect360. Estas condiciones son conocidas por ayudar en la detección de diversos tipos de fraude de instalaciones, instalaciones falsas y eventos in-app falsos.  
+  **Nota**: Las reglas de validación solo validan instalaciones/eventos in-app que Protect360 no identificó como fraude.
 
-<Accordion title="Outcomes">
+<Accordion title="Resultados">
 
 * For installs: Validation rules, depending on the selected action, either block the attribution and correct to the last valid media source, or block the attribution completely.
-* For in-app events: Validation rules block the attribution of the in-app event.
-* See the following table showing the validation rule block type outcomes.
+* Para eventos in-app: las reglas de validación bloquean la atribución del evento in-app.
+* Consulta la siguiente tabla que muestra los resultados del tipo de bloqueo de la regla de validación.
 
-<table><thead><tr><th> </th><th>Block type</th><th>Description</th><th>Where install data can be viewed</th><th>In-app events that follow</th></tr></thead><tbody><tr><td rowspan="2"><strong>Installs</strong></td><td>Block attribution and correct to last valid media source</td><td><ul><li><span>Selected when you consider the install real, but your conditions determine which sources should or shouldn’t be attributed for it.</span></li><li><span>Attribution is corrected, and the install is attributed to the last valid media source.</span></li><li><span>If no valid media source is identified, the install is marked as organic.</span></li></ul></td><td><ul><li>AppsFlyer dashboards and raw data reports as a regular install (attributed to the last valid media source)</li><li>With Protect360 Premium plan:<ul><li><a href="./protect360-dashboard#installs-dashboard" target="_blank">Protect 360 installs dashboard</a></li><li>Protect360 installs raw data report (<span>with the blocked media source)</span></li></ul></li><li>Without Protect360 Premium plan:<ul><li>Protect360 installs raw data report (<span>with the blocked media source)</span></li></ul></li></ul></td><td><ul><li>Has the same corrected attribution as the install</li><li>Data available with Protect360 Premium plan:<ul><li>With corrected attribution in AppsFlyer dashboards and reports as a regular IAE</li><li>With blocked media source in the Protect360 IAE dashboard and Protect360 blocked IAE raw data report</li></ul></li></ul></td></tr><tr><td>Mark installs as invalid and don't attribute them</td><td><ul><li><span>Selected when installs that are invalid based on the rule’s conditions are considered fake.</span></li><li><span>The install is not attributed at all (neither as non-organic nor organic)</span></li></ul></td><td><ul><li>With Protect360 Premium plan:<ul><li><a href="./protect360-dashboard#installs-dashboard" target="_blank">Protect 360 installs dashboard</a></li><li>Protect360 installs raw data report (<span>with the blocked media source)</span></li></ul></li><li>Without Protect360 Premium plan:<ul><li>Protect360 installs raw data report (<span>with the blocked media source)</span></li></ul></li></ul></td><td><ul><li><span>Blocked</span></li><li><span>Data available with Protect360 Premium plan in Protect360 IAE dashboard and blocked IAE raw data report</span></li></ul></td></tr><tr><td rowspan="2"><strong>In-app events</strong></td><td>Block attribution </td><td><ul><li><span>Selected when in-app events that are invalid based on the rule’s conditions are considered fake.</span></li></ul></td><td><ul><li><span>With Protect360 Premium plan:</span><ul><li><a href="./protect360-dashboard#in-app-events-dashboard" target="_blank">Protect360 IAE dashboard</a></li><li>Protect360 in-app events raw data report</li></ul></li><li>Without Protect360 Premium plan: N/A</li></ul></td><td><ul><li><span>Data available with Protect360 Premium plan in Protect360 </span><a href="./protect360-dashboard#in-app-events-dashboard" target="_blank"><span>IAE dashboard</span></a><span> and blocked in-app events raw data report</span></li></ul></td></tr><tr><td>Remove from AppsFlyer entirely</td><td><ul><li><span>Recommended for use when there are in-app events that you don't need any data for.</span></li><li><span>AppsFlyer does not record these events at all. </span></li></ul></td><td><span></span></td><td><span></span></td></tr></tbody></table>
+<table><thead><tr><th> </th><th>Tipo de bloqueo</th><th>Description</th><th>Dónde se pueden ver los datos de instalación</th><th>Eventos in-app que siguen</th></tr></thead><tbody><tr><td rowspan="2"><strong>Instalaciones</strong></td><td>Bloquear la atribución y corregirla a la última fuente de medios válida.</td><td><ul><li><span>Se selecciona cuando consideras que la instalación es real, pero tus condiciones determinan qué fuentes deben o no recibir atribución.</span></li><li><span>La atribución se corrige y la instalación se atribuye a la última fuente de medios válida.</span></li><li><span>Si no se identifica una fuente de medios válida, la instalación se marca como orgánica.</span></li></ul></td><td><ul><li>En los dashboard de AppsFlyer y los reportes de raw data como una instalación normal (atribuida a la última fuente de medios válida)</li><li>Con el plan Protect360 Premium::<ul><li><a href="./protect360-dashboard#panel-de-control-de-instalaciones" target="_blank">Dashboard de instalaciones de Protect360</a></li><li>Reporte de raw data de instalaciones de Protect360 (<span>con la fuente de medios bloqueada)</span> </li></ul></li><li>Sin el plan Protect360 Premium:<ul><li>Reporte de raw data de instalaciones de Protect360 (<span>con la fuente de medios bloqueada)</span> </li></ul></li></ul></td><td><ul><li>Tiene la misma atribución corregida que la instalación</li><li>Datos disponibles con el plan Protect360 Premium:<ul><li>Con atribución corregida en los dashboards y reportes de AppsFlyer como un IAE normal</li><li>Con la fuente de medios bloqueada en el dashboard de IAE de Protect360 y en el reporte de raw data de IAE bloqueados de Protect360</li></ul></li></ul></td></tr><tr><td>Marcar las instalaciones como no válidas y no atribuirlas</td><td><ul><li><span>Se selecciona cuando las instalaciones que son inválidas en función de las condiciones de la regla se consideran falsas.</span></li><li><span>La instalación no se atribuye en absoluto (ni como no orgánica ni orgánica)</span></li></ul></td><td><ul><li>Con el plan Protect360 Premium::<ul><li><a href="./protect360-dashboard#panel-de-control-de-instalaciones" target="_blank">Dashboard de instalaciones de Protect360</a></li><li>Reporte de raw data de instalaciones de Protect360 (<span>con la fuente de medios bloqueada)</span> </li></ul></li><li>Sin el plan Protect360 Premium:<ul><li>Reporte de raw data de instalaciones de Protect360 (<span>con la fuente de medios bloqueada)</span> </li></ul></li></ul></td><td><ul><li><span>Bloqueada</span></li><li><span>Datos disponibles con el plan Protect360 Premium en el dashboard de eventos in-app de Protect360 y en el reporte de raw data de eventos in-app bloqueados.</span></li></ul></td></tr><tr><td rowspan="2"><strong>Eventos dentro de la app</strong></td><td>Bloquear atribución </td><td><ul><li><span>Se selecciona cuando los eventos in-app que no son válidos según las condiciones de la regla se consideran falsos.</span></li></ul></td><td><ul><li> <span>Con el plan Protect360 Premium::</span><ul><li><a href="./protect360-dashboard#panel-de-control-de-eventos-in-app" target="_blank">Dashboard de IAE de Protect360</a></li><li>Reporte de raw data de eventos in-app de Protect360</li></ul></li><li>Sin el plan Protect360 Premium: N/D</li></ul></td><td><ul><li> <span>Datos disponibles con el plan Protect360 Premium en Protect360 </span><a href="./protect360-dashboard#panel-de-control-de-eventos-in-app" target="_blank"><span>dashboard de IAE</span></a><span> y en el reporte de raw data de eventos in-app bloqueados</span> </li></ul></td></tr><tr><td>Eliminar de AppsFlyer por completo</td><td><ul><li><span>Recomendado cuando existen eventos in-app para los que no necesitas ningún dato.</span></li><li><span>AppsFlyer no registra estos eventos en absoluto. </span></li></ul></td><td><span></span></td><td><span></span></td></tr></tbody></table>
 
-* Ad networks and agencies can only view data if the advertiser gives them the required <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#protect360-fraud-and-validation-rules">permissions</Anchor>.
-* When an install attribution is blocked or attributed to a valid media source in real-time, a rejected postback is instantly sent to the blocked ad network, to streamline your reconciliation flow. When attribution is blocked and corrected to the last valid media source, a postback is also sent to the last valid ad network.
-* When an in-app event attribution is blocked, a rejection postback is instantly sent to the blocked ad network.  
-  **Note**:
-  * A postback is only sent if the ad network set to receive it is integrated with AppsFlyer to receive postbacks.
-  * Postbacks and rejected postbacks reports are available on the export page.
-  * Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">postbacks</Anchor> and <Anchor target="_blank" href="/partners/docs/rejected-attribution-postbacks-to-integrated-partners">rejected postbacks</Anchor>.
-* Install and IAE attribution blocking, only affects how and where data is reported in AppsFlyer. They do not prevent app usage by your end-users.
-  * If needed, you can use the <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports">blocked install and blocked IAE raw data reports</Anchor> (available via export, pull API, and data locker), to get the list of app users to be disabled.
-* Blocked installs/IAE reports and rejected postbacks contain the name of the rules that blocked the installs/IAE under the block reason. See the [multiple rules](/docs/implement-validation-rules-to-prevent-fraud#multiple-rules) section if there is more than one rule.
-  * When installs/in-app events are blocked by the Protect360 anti-fraud engine, even if there is also a validation rule, the Protect360 reasons are displayed.
-* Rules can result in reporting discrepancies between AppsFlyer and SRNs like <Anchor target="_blank" href="/marketers/docs/meta-ads-discrepancies">Meta ads</Anchor> and <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-faq-and-discrepancies">Google Adwords</Anchor> as they deploy their own logic to validate installs.
-
-</Accordion>
-
-<Accordion title="Multiple rules">
-
-* Multiple validation rules can run on the same install/IAE. This happens when the install meets the conditions of multiple rules.
-* The install/IAE is classified as invalid when it does not comply with the conditions of any of the rules separately.
-* In raw data reports and rejected postbacks, the **block reason value** field contains the names of all the rules that classify the install or in-app event as invalid.
-* Multiple rules for the same install are sequenced to run in the following order, based on the block types of the rules:
-
-| Rule/block types | Order |
-| --- | --- |
-| Block installs | Random |
-| Block attribution | Random |
-| Block in-app event | Random |
-| Remove from AppsFlyer entirely and anything else | Removed from AppsFlyer. Other rules are ignored. |
-| Block installs and block attribution | <ol><li>Block install rules (in random order)</li><li>Block attribution rules (in random order)</li></ol> |
-| Block installs and block attribution with Protect360 engine and validation rules | <ol><li>Block installs from Protect360 engine</li><li>Block install from validation rules</li><li>Block attribution from Protect360 engine</li><li>Block attribution from validation rules</li></ol> |
-| Block in-app events with Protect360 engine and validation rules | <ol><li>Block IAE from Protect360 engine</li><li>Block IAE from validation rules</li></ol> |
+* Las ad networks y las agencias solo pueden ver los datos si el anunciante les otorga los <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview#protect360-fraud-and-validation-rules">permisos necesarios</Anchor>.
+* Cuando la atribución de una instalación se bloquea o se atribuye a una fuente de medios válida en tiempo real, se envía inmediatamente un postback rechazado a la ad network bloqueada para agilizar tu proceso de conciliación. Cuando la atribución se bloquea y se corrige a la última fuente de medios válida, también se envía un postback a la última ad network válida.
+* Cuando se bloquea la atribución de un evento in-app, se envía instantáneamente un postback de rechazo a la ad network bloqueada.  
+  **Nota**:
+  * Un postback solo se envía si la red de publicidad configurada para recibirlo está integrada con AppsFlyer para recibir postbacks.
+  * Los reportes de postbacks y postbacks rechazados están disponibles en la página de exportación.
+  * Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">postbacks</Anchor> y <Anchor target="_blank" href="/partners/es/docs/rejected-attribution-postbacks-to-integrated-partners">postbacks rechazados</Anchor>.
+* El bloqueo de atribución de instalaciones e IAE solo afecta cómo y dónde se reportan los datos en AppsFlyer. No impiden el uso de la aplicación por parte de tus usuarios finales.
+  * Si es necesario, puedes usar los <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports">reportes de raw data de instalaciones bloqueadas y de IAE bloqueados</Anchor> (disponibles a través de exportación, Pull API y Data Locker) para obtener la lista de usuarios de la app que se deben deshabilitar.
+* Los reportes de instalaciones/IAE bloqueados y los postbacks rechazados contienen el nombre de las reglas que bloquearon las instalaciones/IAE en el campo de motivo del bloqueo. Consulta la sección [reglas múltiples](/docs/implement-validation-rules-to-prevent-fraud#multiple-rules) si hay más de una regla.
+  * Cuando las instalaciones/eventos in-app son bloqueados por el motor antifraude de Protect360, incluso si también existe una regla de validación, se muestran los motivos de Protect360.
+* Las reglas pueden dar lugar a discrepancias en los reportes entre AppsFlyer y las SRN, como <Anchor target="_blank" href="/marketers/es/docs/meta-ads-discrepancies">Meta ads</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-faq-and-discrepancies">Google Adwords</Anchor> as they deploy their own logic to validate installs.
 
 </Accordion>
 
-## Rule builder
+<Accordion title="Múltiples reglas">
 
-The rule builder user interface is designed for interactive rule building. **Tip!** Familiarize and experiment with the rule builder before reviewing this article in detail.
+* Varias reglas de validación pueden ejecutarse sobre la misma instalación/IAE. Esto ocurre cuando la instalación cumple las condiciones de varias reglas.
+* La instalación/IAE se clasifica como no válida cuando no cumple las condiciones de cualquiera de las reglas por separado.
+* En los reportes de raw data y los postbacks rechazados, el campo **block reason value** contiene los nombres de todas las reglas que clasifican la instalación o el evento in-app como no válidos.
+* Varias reglas para la misma instalación se ejecutan en el siguiente orden, según los tipos de bloqueo de las reglas:
 
-### Use categorized dimensions
-
-When adding rule conditions, parameters are grouped into categories to make rule setup easier. Categories and parameters are shown based on the selected event type and your account permissions.
-
-You can search across all categories simultaneously. Matching categories expand automatically.
-
-Parameters that aren’t relevant to the selected event type, or aren’t included in your permissions, are hidden.
-
-| Category | Parameters |
+| Tipos de regla/bloqueo | Orden |
 | --- | --- |
-| Campaign & source | Media source, Campaign, Campaign ID, Site ID, Ad set name, Ad set ID, Ad ID, AF Sub 1-5 |
-| Geography & device | Geo, Platform, OS version, Device model, Carrier, User agent |
-| Attribution | CTIT, Lookback days, Lookback hours, Attribution touch type |
-| Identity | Customer user ID, IDFA, Advertiser ID, IP address |
-| App & SDK | App version, SDK version, Installer/Store, Custom Installer/Store, Is preinstalled, Is Deeplink |
-| End-user event | Event name, Event value, Install to event time, Event source, Currency, Revenue |
-| Engagements | Engagement |
+| Bloquear instalaciones | Aleatorio |
+| Bloquear atribución | Aleatorio |
+| Bloquear evento in-app | Aleatorio |
+| Eliminar de AppsFlyer por completo y de cualquier otra cosa | Eliminado de AppsFlyer. Las demás reglas se ignoran. |
+| Bloquear instalaciones y bloquear atribución | <ol><li>Bloquear reglas de instalación (en orden aleatorio)</li><li>Bloquear reglas de atribución (en orden aleatorio)</li></ol> |
+| Bloquear instalaciones y bloquear atribución con el motor Protect360 y las reglas de validación | <ol><li>Bloquear instalaciones mediante el motor Protect360</li><li>Bloquear instalación mediante reglas de validación</li><li>Bloquear atribución desde el motor Protect360</li><li>Bloquear atribución mediante reglas de validación</li></ol> |
+| Bloquear eventos in-app con el motor Protect360 y las reglas de validación | <ol><li>Bloquear IAE mediante el motor Protect360</li><li>Bloquear eventos in-app desde reglas de validación</li></ol> |
+
+</Accordion>
+
+## Creador de reglas
+
+La interfaz de usuario del generador de reglas está diseñada para crear reglas de forma interactiva. **¡Consejo!** Familiarízate y experimenta con el generador de reglas antes de revisar este artículo en detalle.
+
+### Usa dimensiones clasificadas por categorías
+
+Al añadir condiciones de regla, los parámetros se agrupan en categorías para facilitar la configuración de las reglas. Las categorías y los parámetros se muestran en función del tipo de evento seleccionado y de los permisos de tu cuenta.
+
+Puedes buscar en todas las categorías a la vez. Las categorías coincidentes se expanden automáticamente.
+
+Los parámetros que no son relevantes para el tipo de evento seleccionado o que no están incluidos en tus permisos se ocultan.
+
+| Categoría | Parámetros |
+| --- | --- |
+| Campaña & fuente | Fuente de medios, campaña, ID de campaña, ID del sitio, nombre del conjunto de anuncios, ID del conjunto de anuncios, ID del anuncio, AF Sub 1-5 |
+| Geografía & dispositivo | Geolocalización, plataforma, versión del SO, modelo del dispositivo, operador, agente de usuario |
+| Atribución | CTIT, días de lookback, horas de lookback, tipo de toque de atribución |
+| Identidad | ID de usuario del cliente, IDFA, ID del anunciante, dirección IP |
+| Aplicación & SDK | Versión de la aplicación, versión del SDK, instalador/tienda, instalador/tienda personalizado, está preinstalada, es un deep link |
+| Evento de usuario final | Nombre del evento, valor del evento, tiempo entre la instalación y el evento, fuente del evento, moneda, ingresos |
+| Engagements | Participación |
 
 ![New Validation Rule page.jpg](https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png)
 
-The rule builder contains the following sections:
+El generador de reglas contiene las siguientes secciones:
 
-| Section | Remarks |
+| Sección. | Comentarios |
 | --- | --- |
-| General details | <ul><li>**Rule name -** Enter a name for the new rule.</li><li>**Rule type -** Select the rule type, **Real time**, or **Post attribution**.</li><li>**Events** - Select the event type for which the rule is applied, **Installs** or **In-app events**.</li><li>**App selection -** Select **Selected apps**, or **All apps.**<ul><li>If **Selected apps** is selected:<br />**Select apps -** Select the apps for which the rule is applied: A single app, multiple apps, or all apps in the account.</li><li>If **All apps** is selected:<br />Option to check **Include future apps -** This allows future apps to be included in this rule.</li></ul></li></ul>The selections affect the options available in the following sections (agency, media source, campaign, etc.)<br /><br /><br /><br />**Note**<br />App version must only contain numbers. For example 2.2.1<br /><br />Note:<br /><br />Numeric app versions (for example, 2.2.1) supports all operators (equals, greater than, lower than, etc.).<br /><br />If the app version is custom text (for example, version123 or our\_latest\_version), only the "equals" or "doesn't equal" operators work; "greater than" or "lower than" won't apply. |
-| Traffic sources | Traffic source for which the rule is applied. [See also Protect360 sources](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-and-inapp-event-sources) |
-| Conditions | Choose whether you want to block installs/in-app events that "Match" or "Don't match" the defined conditions.<ul><li>**Match conditions -** Attribution will be blocked for installs/in-app events that match the defined conditions, and the action you select below will apply to all of these.</li><li>**Do not match conditions -** Attribution will be blocked for installs/in-app events that don’t match the following conditions, and the action you select below will apply to all the rest.</li></ul>See also Protect360 conditions for [installs](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-conditions) and [in-app events](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions). |
-| Actions | For installs, select what to do with the installs meeting the specified conditions:<ul><li>**Mark installs as invalid and don’t attribute them**. Installs won’t appear in AppsFlyer dashboards except Protect360 and reports.</li><li>**Block attribution and correct to last valid media source**. If no valid media source is identified, the install is considered organic.</li></ul>For in-app events, select what to do with the installs meeting the specified conditions:<ul><li>**Block attribution, but show in Protect360 data**. Events aren’t attributed but show in the Protect360 dashboard and raw data.</li><li>**Remove from AppsFlyer**. Events will not show in the AppsFlyer platform at all.</li></ul>See [Outcomes](/docs/implement-validation-rules-to-prevent-fraud#outcomes) for more information. |
+| Información general | <ul><li>**Nombre de la regla -** Introduce un nombre para la nueva regla.</li><li>**Tipo de regla -** selecciona el tipo de regla, **tiempo real** o **posterior a la atribución**.</li><li>**Eventos**: selecciona el tipo de evento al que se aplica la regla, **Instalaciones** o **Eventos in-app**.</li><li>**Selección de aplicaciones:** selecciona **Aplicaciones seleccionadas** o **Todas las aplicaciones.**<ul><li>Si se selecciona **Aplicaciones seleccionadas**:<br />**Seleccionar aplicaciones -** selecciona las aplicaciones a las que se aplica la regla: una sola aplicación, varias aplicaciones o todas las aplicaciones de la cuenta.</li><li>Si se selecciona **Todas las aplicaciones**:<br />Opción para marcar **Incluir aplicaciones futuras -** Esto permite incluir aplicaciones futuras en esta regla.</li></ul></li></ul>Las selecciones afectan a las opciones disponibles en las siguientes secciones (agencia, fuente de medios, campaña, etc.)<br /><br /><br /><br />**Nota**<br />La versión de la app solo debe contener números. Por ejemplo, 2.2.1<br /><br />Note:<br /><br />Las versiones numéricas de la app (por ejemplo, 2.2.1) admiten todos los operadores (igual a, mayor que, menor que, etc.).<br /><br />Si la versión de la app es un texto personalizado (por ejemplo, version123 u our\_latest\_version), solo funcionan los operadores "igual a" y "distinto de"; los operadores "mayor que" y "menor que" no se aplican. |
+| Fuentes de tráfico | Fuente de tráfico a la que se aplica la regla. [Consulta también las fuentes de Protect360](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-and-inapp-event-sources) |
+| CONDICIONES | Elige si quieres bloquear instalaciones/eventos in-app que «Coincidan» o «No coincidan» con las condiciones definidas.<ul><li>**Coincidencia de condiciones -** La atribución se bloqueará para las instalaciones/eventos in-app que coincidan con las condiciones definidas, y la acción que selecciones a continuación se aplicará a todos ellos.</li><li>**No coincidencia de condiciones -** La atribución se bloqueará para las instalaciones/eventos in-app que no coincidan con las siguientes condiciones, y la acción que selecciones a continuación se aplicará a todos los demás.</li></ul>Consulta también las condiciones de Protect360 para [instalaciones](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-conditions) y [eventos in-app](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions). |
+| Acciones | Para las instalaciones, selecciona qué hacer con las instalaciones que cumplen las condiciones especificadas:<ul><li>**Marca las instalaciones como inválidas y no las atribuyas**. Las instalaciones no aparecerán en los dashboards de AppsFlyer, excepto en Protect360 y en los reportes.</li><li>**Bloquea la atribución y corrígela a la última fuente de medios válida**. Si no se identifica una fuente de medios válida, la instalación se considera orgánica.</li></ul>Para los eventos in-app, selecciona qué hacer con los eventos que cumplen las condiciones especificadas:<ul><li>**Bloquea la atribución, pero muéstrala en los datos de Protect360**. Los eventos no se atribuyen, pero se muestran en el dashboard de Protect360 y en el raw data.</li><li>**Eliminar de AppsFlyer**. Los eventos no se mostrarán en absoluto en la plataforma de AppsFlyer.</li></ul>Consulta [Resultados](/docs/implement-validation-rules-to-prevent-fraud#outcomes) para obtener más información. |
 
-## Validation rule examples
+## Ejemplos de reglas de validación
 
-<Accordion title="Install sources">
+<Accordion title="Fuentes de instalación">
 
-The **Sources** section is where you define the traffic sources of the installs the rule applies to.
+La sección **Fuentes** es donde defines las fuentes de tráfico de las instalaciones a las que se aplica la regla.
 
-There are three primary options:
+Existen tres opciones principales:
 
-* **All traffic:** Includes both organic and non-organic installs. Source information is unavailable for organic installs. This option includes all media sources, including those added in the future.  
-  *Example*: Apply a rule to all traffic with app version lower than X.
-* **All traffic of Non-organic:** Applies to all agency and non-agency non-organic traffic sources, including new sources added later.  
-  *Example*: Block non-organic traffic from a specific geo where you don’t run UA or retargeting campaigns.
-* **Selected traffic of Non-organic:** Applies the rule to specific agencies or media sources only. You must manually select or add media sources when editing the rule.  
-  *Example*: Block installs from a specific media source if the CTIT is longer than X days.
+* **Todo el tráfico:** incluye instalaciones orgánicas y no orgánicas. La información de la fuente no está disponible para las instalaciones orgánicas. Esta opción incluye todas las fuentes de medios, incluidas las que se añadirán en el futuro.  
+  *Ejemplo*: aplica una regla a todo el tráfico con una versión de la aplicación inferior a X.
+* **Todo el tráfico no orgánico:** se aplica a todas las fuentes de tráfico no orgánico de agencias y no agencias, incluidas las nuevas fuentes que se añadan posteriormente.  
+  *Ejemplo*: bloquea el tráfico no orgánico de una geolocalización específica donde no ejecutas campañas de UA o retargeting.
+* **Tráfico no orgánico seleccionado:** aplica la regla únicamente a agencias o fuentes de medios específicas. Debes seleccionar o añadir manualmente las fuentes de medios al editar la regla.  
+  *Ejemplo*: bloquea las instalaciones de una fuente de medios específica si el CTIT es superior a X días.
 
-Additional source options are available for Protect360 customers for [installs](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-and-inapp-event-sources) and [in-app events](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions).
+Hay opciones adicionales de fuentes disponibles para los clientes de Protect360 para [instalaciones](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-and-inapp-event-sources) y [eventos in-app](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions).
 
-<table><thead><tr><th>Field</th><th>Operator</th><th>Value</th><th>Remarks</th></tr></thead><tbody><tr><td>Agency</td><td><ul><li>In</li></ul></td><td><ul><li>Agency and non-agency traffic</li><li>Non-agency traffic</li><li>Transparent agencies (menu)</li></ul></td><td><p><span>Transparent agencies:</span></p><ul><li>These are agencies that specify their media sources.</li><li>Agencies that are transparent for only some of your selected apps, display in the non-transparent agencies menu.</li><li>All agencies are required to share their media sources.&lt;/li&gt;&lt;li&gt;Agencies that share media sources for only some of your selected apps appear in the Transparent agencies menu.&lt;/li&gt;&lt;/ul&gt;</li></ul></td></tr><tr><td>Media source</td><td><ul><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li><li><span>Contains</span></li><li><span>Doesn't contain</span></li><li><span>Starts with</span></li><li><span>Ends with</span></li><li><span>Matches regular expression</span><span></span></li></ul></td><td><ul><li><span>Search for desired value.</span></li><li><span>Select from menu.</span></li><li><span>Free text (for values that don’t exist in your search results).</span></li></ul></td><td rowspan="6"><ul><li><span>Menu is based on:</span><ul><li>Selected apps and agencies.</li><li>Traffic of the past 30 days, ordered by traffic volume.</li></ul></li><li><span>Free text must be typed exactly as it appears in raw data.</span></li></ul></td></tr><tr><td>Campaign</td><td rowspan="5"><ul><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li><li><span>Contains</span></li><li><span>Doesn't contain</span></li><li><span>Starts with</span></li><li><span>Ends with</span></li><li><span>Is empty</span></li><li><span>Isn't empty</span></li><li><span>Matches regular expression</span></li></ul></td><td><ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul></td></tr><tr><td>Campaign ID</td><td rowspan="4"><ul><li><span>Free text only.</span></li><li><span>Possible to add multiple values separated by spaces.</span></li></ul></td></tr><tr><td>Ad ID</td></tr><tr><td>Ad set ID</td></tr><tr><td>Ad set name</td></tr></tbody></table>
-
-</Accordion>
-
-<Accordion title="Install conditions">
-
-The **Conditions** section is where you define the conditions that determine when install attributions are blocked, or attributed to the last valid source.
-
-You can add multiple conditions, and groups of conditions to every rule.
-
-Conditions are defined as per the conditions, operators, and values outlined in the table that follows.
-
-#### Bulk upload
-
-When selecting the operators **In list** or **not in list** inside of conditions that support it, you have the option to bulk upload a CSV file when adding new items.
-
-To do this:
-
-1. Select a condition with an **In list** or **not in list** operator.
-2. Select **In list** or **not in list** from the operator dropdown list.
-3. Select **Upload CSV file** from the **Add new items** box.
-
-Note: The CSV file can contain up to 17K values.
-
-Additional condition options are available for Protect360 customers, for [installs](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-conditions) and [in-app events](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions).
-
-<table><thead><tr><th><span>Condition</span></th><th><span>Operator</span></th><th><span>Value</span></th><th><span>Remarks</span></th></tr></thead><tbody><tr><td><span>Campaign</span></td><td rowspan="6"><ul><li><span>Equals</span></li><li><span>Doesn't equal</span></li><li><span>Doesn't contain</span></li><li><span>Contains</span></li><li><span>Starts with</span></li><li><span>Ends with</span></li><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Matches regular expression</span></li><li><span>Is empty</span></li><li><span>Isn't empty</span></li></ul></td><td><ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul></td><td rowspan="11"><ul><li><span>Menu is based on:</span><ul><li>Selected apps and agencies.</li><li>Traffic of the past 30 days, ordered by traffic frequency.</li></ul></li><li><span>Free text must be typed exactly as it appears in raw data.</span></li></ul></td></tr><tr><td><span>Campaign ID</span></td><td rowspan="5"><ul><li><span>Free text only.</span></li><li><span>Possible to add multiple values separated by spaces.</span></li></ul></td></tr><tr><td><span>Ad ID</span></td></tr><tr><td><span>Ad set ID</span></td></tr><tr><td><span>Ad set name</span></td></tr><tr><td><span>Device type</span></td></tr><tr><td><span>Geo</span></td><td rowspan="3"><ul><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li></ul></td><td><ul><li><span>Search required value (based on country name, country code, state, or city).</span></li><li><span>Select value from menu.</span></li></ul></td></tr><tr><td><span>Platform</span></td><td><span>Select value from menu.</span></td></tr><tr><td><span>Currency</span></td><td><p>Currency only. Possible values:</p><p>USD, NZD, SGD, IMP, ANG, MNT, BIF, BBD, HUF, ERN, AZN, AOA, PYG, MYR, GYD, VUV, SLL', FKP, DJF, GNF, LVL, MMK, MRO, RSD, CLF, XDR, ZAR, TND, PHP, KGS, XPD, RON, RUB, KMF, SCR, GIP, TRY, JEP, UYU, XCD, FJD, GHS, MVR, AWG, UGX, TOP, CVE, MKD, COP, CUC, GTQ, KZT, MXN, MGA, AUD, BDT, ISK, KRW, DZD, GGP, OMR, ZMW, MOP, CUP, JPY, SHP, LSL, ETB, BWP, MAD, AED, NGN, BRL, GEL, IDR, EUR, GBP, WST, XAF, SZL, XOF, SEK, UZS, KES, KYD, ILS, KWD, NPR, BZD, QAR, UAH, BTN, HTG, DKK, VND, SBD, JMD, IQD, LBP, XPT, HRK, HKD, JOD, PAB, CDF, VEF, XAU, BAM, CNY, SOS, XPF, GMD, DOP, XAG, KPW, BOB, BHD, BYN, BYR, LRD, BGN, AMD, CZK, CAD, LAK, EEK, MTL, PLN, LKR, BTC, MWK, LTL, ZMK, PGK, YER, PEN, KHR, RWF, BSD, AFN, ZWL, LYD, TMT, HNL, TWD, IRR, MUR, THB, ALL, TJS, SDG, BMD, CRC, NOK, SRD, MZN, CLP, STD, SYP, TZS, EGP, ARS, MDL, INR, SAR, PKR, TTD, NIO, BND, NAD, SVC, CHF</p></td></tr><tr><td><span>Revenue</span></td><td><ul><li><span>Lower then</span></li><li><span>Lower than or equals</span></li><li><span>Greater than</span></li><li><span>Greater than or equals</span></li><li><span>Is between</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li></ul></td><td><ul><li><span>Free text only.</span></li></ul></td></tr><tr><td><span>OS version</span></td><td><ul><li><span>Lower than</span></li><li><span>Lower than or equals</span></li><li><span>Greater than</span></li><li><span>Greater than or equals</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li><li><span>Is between</span></li><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Is empty</span></li><li><span>Isn’t empty</span></li></ul></td><td><ul><li><span>Search for desired value.</span></li><li><span>Select from menu.</span></li><li><span>Free text (for values that don’t exist in your search results).</span></li></ul></td></tr><tr><td><span>App version</span></td><td><ul><li><span>Lower than</span></li><li><span>Lower than or equals</span></li><li><span>Greater than</span></li><li><span>Greater than or equals</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li><li><span>Is Between</span></li><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Not in last</span></li><li><span>Not in last (major)</span></li><li><span>Is empty</span></li><li><span>Isn’t empty</span></li></ul></td><td><ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul></td><td><ul><li><span>Menu is based on t</span>raffic of the past 30 days, ordered by traffic frequency.</li><li><span>Free text must be typed exactly as it appears in raw data.</span></li><li><span>For "Not in last," if you have more than one series of versions, select "Not in last (major)". </span><a href="./implement-validation-rules-to-prevent-fraud#how-do-the-not-in-last-conditions-work"><span>Learn more</span></a></li></ul></td></tr><tr><td><span>Lookback days</span></td><td><ul><li><span>Lower than</span></li><li><span>Greater than or equals</span></li><li><span>Is between</span></li></ul></td><td><ul><li><span>Free text: A single numeric value.</span></li></ul></td><td><ul><li><span>Refers to the impression/click lookback window in days.</span></li><li><span>Ensures you don’t pay for installs with an attribution link that was modified to allow a longer attribution period.</span></li><li><span>Does not replace the configuration of the lookback window in your attribution link.</span></li><li><span>[Recommended] Use in combination with the attribution touch type condition (</span><a href="./implement-validation-rules-to-prevent-fraud#protect360-install-conditions"><span>available with Protect360</span></a><span>)</span></li></ul></td></tr><tr><td><span>Is preinstalled</span></td><td rowspan="2"><ul><li><span>Yes</span></li><li><span>No</span></li></ul></td><td rowspan="2"><ul><li>No value (operator is the value)</li></ul></td><td><ul><li><span>Validates all types of preinstalls:</span><ul><li><span>Factory preinstalls, meaning an app that comes on the device as part of the OS.</span></li><li><span>Offered preinstalls, meaning an app promoted and offered to users as soon as the device is initialized. This is done by media sources designated for preinstalls.</span></li></ul></li><li>For installs with multiple clicks/ sources, this condition validates whether one of the sources is a preinstall.</li></ul></td></tr><tr><td><span>Is deeplink</span></td><td><span>An empty deep link field in raw data is considered to be Is deeplink = No</span></td></tr></tbody></table>
-
-> 📘 **Note**
->
-> Organic installs have no associated campaign or media source, so fields like **Campaign** and **Ad set name** are always **null** for them, not empty strings. A rule that uses **Match conditions** with an **Is empty** operator on these fields won't match organic installs, so it won't block them.
->
-> To also catch organic traffic, configure the rule with **Don't match conditions** instead, combining your conditions with **Or**, using **Isn't empty** on the same fields (for example, **Campaign isn't empty** **Or** **Ad set name isn't empty**, plus any other conditions the rule needs). Inverting the logic this way lets the rule match null values along with empty strings.
+<table><thead><tr><th>Campo</th><th>Operador</th><th>Valor</th><th>Comentarios</th></tr></thead><tbody><tr><td>Agency</td><td><ul><li>En</li></ul></td><td><ul><li>Tráfico de agencia y no agencia</li><li>Tráfico de no agencias</li><li>Agencias transparentes (menú)</li></ul></td><td><p><span>Agencias transparentes:</span></p><ul><li>Estas son agencias que especifican sus fuentes de medios.</li><li>Las agencias que son transparentes solo para algunas de las apps seleccionadas aparecen en el menú de agencias no transparentes.</li><li>Todas las agencias deben compartir sus fuentes de medios.&lt;/li&gt;&lt;li&gt;Las agencias que comparten fuentes de medios solo para algunas de las apps seleccionadas aparecen en el menú de Agencias transparentes.&lt;/li&gt;&lt;/ul&gt;</li></ul></td></tr><tr><td>Fuente de medios</td><td><ul><li><span>En la lista</span></li><li><span>No está en la lista</span></li><li><span>Igual a</span></li><li><span>Distinto de</span></li><li><span>Contiene</span></li><li><span>No contiene</span></li><li><span>Empieza por</span></li><li><span>Termina en</span></li><li> <span>Coincide con la expresión regular</span><span></span> </li></ul></td><td><ul><li><span>Buscar el valor deseado.</span></li><li><span>Selecciona desde el menú.</span></li><li><span>Texto libre (para valores que no existen en tus resultados de búsqueda).</span></li></ul></td><td rowspan="6"><ul><li> <span>El menú se basa en:</span><ul><li>Aplicaciones y agencias seleccionadas.</li><li>Tráfico de los últimos 30 días, ordenado por volumen de tráfico.</li></ul></li><li><span>El texto libre debe introducirse exactamente como aparece en el raw data.</span></li></ul></td></tr><tr><td>Campaña</td><td rowspan="5"><ul><li><span>En la lista</span></li><li><span>No está en la lista</span></li><li><span>Igual a</span></li><li><span>Distinto de</span></li><li><span>Contiene</span></li><li><span>No contiene</span></li><li><span>Empieza por</span></li><li><span>Termina en</span></li><li><span>Está vacío</span></li><li><span>No está vacío</span></li><li><span>Coincide con la expresión regular</span></li></ul></td><td><ul><li>Buscar el valor deseado.</li><li>Selecciona un valor del menú.</li><li>Texto libre (para valores que no existen en tus resultados de búsqueda).</li></ul></td></tr><tr><td>Campaign ID</td><td rowspan="4"><ul><li><span>Solo texto libre.</span></li><li><span>Es posible agregar varios valores separados por espacios.</span></li></ul></td></tr><tr><td>Ad ID</td></tr><tr><td>ID de conjunto de anuncios</td></tr><tr><td>Nombre de conjunto de anuncios</td></tr></tbody></table>
 
 </Accordion>
 
-<Accordion title="In-app event sources">
+<Accordion title="Condiciones de instalación">
 
-When **In-app events** is selected in the **Events** section, then in addition to the [regular source options](/docs/implement-validation-rules-to-prevent-fraud#install-sources), customers have another source option to define which in-app events their rule applies to. 
+La sección **Condiciones** es donde se definen las condiciones que determinan cuándo se bloquean las atribuciones de instalación o se atribuyen a la última fuente válida.
 
-The source is defined as per the field, operators, and values outlined in the table that follows.
+Puedes añadir varias condiciones y grupos de condiciones a cada regla.
 
-**Note**: All other in-app events sources are based on the source of the install the IAE is associated with (for example, agency, media source, campaign, campaign ID, site ID, etc.).
+Las condiciones se definen según las condiciones, los operadores y los valores descritos en la siguiente tabla.
 
-| Field | Operator | Value | Remarks |
+#### Carga masiva
+
+Al seleccionar los operadores **En la lista** o **No está en la lista** en las condiciones que lo admiten, tienes la opción de cargar en masa un archivo CSV al añadir nuevos elementos.
+
+Para hacerlo:
+
+1. Selecciona una condición con un operador **En la lista** o **No está en la lista** .
+2. Selecciona **En la lista** o **No está en la lista** en la lista desplegable del operador.
+3. Selecciona **Cargar archivo CSV** en el cuadro **Añadir nuevos elementos**.
+
+Nota: El archivo CSV puede contener hasta 17 mil valores.
+
+Hay opciones adicionales de condiciones disponibles para los clientes de Protect360, tanto para [instalaciones](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-conditions) como para [eventos in-app](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions).
+
+<table><thead><tr><th><span>Condición</span></th><th><span>Operador</span></th><th><span>Valor</span></th><th><span>Comentarios</span></th></tr></thead><tbody><tr><td><span>Campaña</span></td><td rowspan="6"><ul><li><span>Igual a</span></li><li><span>Distinto de</span></li><li><span>No contiene</span></li><li><span>Contiene</span></li><li><span>Empieza por</span></li><li><span>Termina en</span></li><li><span>En la lista</span></li><li><span>No está en la lista</span></li><li><span>Coincide con la expresión regular</span></li><li><span>Está vacío</span></li><li><span>No está vacío</span></li></ul></td><td><ul><li>Buscar el valor deseado.</li><li>Selecciona un valor del menú.</li><li>Texto libre (para valores que no existen en tus resultados de búsqueda).</li></ul></td><td rowspan="11"><ul><li> <span>El menú se basa en:</span><ul><li>Aplicaciones y agencias seleccionadas.</li><li>Tráfico de los últimos 30 días, ordenado por frecuencia de tráfico.</li></ul></li><li><span>El texto libre debe introducirse exactamente como aparece en el raw data.</span></li></ul></td></tr><tr><td><span>Campaign ID</span></td><td rowspan="5"><ul><li><span>Solo texto libre.</span></li><li><span>Es posible agregar varios valores separados por espacios.</span></li></ul></td></tr><tr><td><span>Ad ID</span></td></tr><tr><td><span>ID de conjunto de anuncios</span></td></tr><tr><td><span>Nombre de conjunto de anuncios</span></td></tr><tr><td><span>Tipo de dispositivo</span></td></tr><tr><td><span>Geolocalización</span></td><td rowspan="3"><ul><li><span>En la lista</span></li><li><span>No está en la lista</span></li><li><span>Igual a</span></li><li><span>Distinto de</span></li></ul></td><td><ul><li><span>Busca el valor deseado (según el nombre del país, el código de país, el estado o la ciudad).</span></li><li><span>Selecciona un valor del menú.</span></li></ul></td></tr><tr><td><span>Platform</span></td><td><span>Selecciona un valor del menú.</span></td></tr><tr><td><span>Moneda</span></td><td><p>Solo moneda. Valores posibles:</p><p>USD, NZD, SGD, IMP, ANG, MNT, BIF, BBD, HUF, ERN, AZN, AOA, PYG, MYR, GYD, VUV, SLL', FKP, DJF, GNF, LVL, MMK, MRO, RSD, CLF, XDR, ZAR, TND, PHP, KGS, XPD, RON, RUB, KMF, SCR, GIP, TRY, JEP, UYU, XCD, FJD, GHS, MVR, AWG, UGX, TOP, CVE, MKD, COP, CUC, GTQ, KZT, MXN, MGA, AUD, BDT, ISK, KRW, DZD, GGP, OMR, ZMW, MOP, CUP, JPY, SHP, LSL, ETB, BWP, MAD, AED, NGN, BRL, GEL, IDR, EUR, GBP, WST, XAF, SZL, XOF, SEK, UZS, KES, KYD, ILS, KWD, NPR, BZD, QAR, UAH, BTN, HTG, DKK, VND, SBD, JMD, IQD, LBP, XPT, HRK, HKD, JOD, PAB, CDF, VEF, XAU, BAM, CNY, SOS, XPF, GMD, DOP, XAG, KPW, BOB, BHD, BYN, BYR, LRD, BGN, AMD, CZK, CAD, LAK, EEK, MTL, PLN, LKR, BTC, MWK, LTL, ZMK, PGK, YER, PEN, KHR, RWF, BSD, AFN, ZWL, LYD, TMT, HNL, TWD, IRR, MUR, THB, ALL, TJS, SDG, BMD, CRC, NOK, SRD, MZN, CLP, STD, SYP, TZS, EGP, ARS, MDL, INR, SAR, PKR, TTD, NIO, BND, NAD, SVC, CHF</p></td></tr><tr><td><span>Ingresos</span></td><td><ul><li><span>Menor que</span></li><li><span>Menor o igual que</span></li><li><span>Mayor que</span></li><li><span>Mayor o igual que</span></li><li><span>Está entre</span></li><li><span>Igual a</span></li><li><span>Distinto de</span></li></ul></td><td><ul><li><span>Solo texto libre.</span></li></ul></td></tr><tr><td><span>Versión de SO</span></td><td><ul><li><span>Menor que</span></li><li><span>Menor o igual que</span></li><li><span>Mayor que</span></li><li><span>Mayor o igual que</span></li><li><span>Igual a</span></li><li><span>Distinto de</span></li><li><span>Está entre</span></li><li><span>En la lista</span></li><li><span>No está en la lista</span></li><li><span>Está vacío</span></li><li><span>No está vacío</span></li></ul></td><td><ul><li><span>Buscar el valor deseado.</span></li><li><span>Selecciona desde el menú.</span></li><li><span>Texto libre (para valores que no existen en tus resultados de búsqueda).</span></li></ul></td></tr><tr><td><span>App version</span></td><td><ul><li><span>Menor que</span></li><li><span>Menor o igual que</span></li><li><span>Mayor que</span></li><li><span>Mayor o igual que</span></li><li><span>Igual a</span></li><li><span>Distinto de</span></li><li><span>Está entre</span></li><li><span>En la lista</span></li><li><span>No está en la lista</span></li><li><span>No en las últimas</span></li><li><span>No en la(s) última(s) (principal(es))</span></li><li><span>Está vacío</span></li><li><span>No está vacío</span></li></ul></td><td><ul><li>Buscar el valor deseado.</li><li>Selecciona un valor del menú.</li><li>Texto libre (para valores que no existen en tus resultados de búsqueda).</li></ul></td><td><ul><li> <span>El menú se basa en el </span>tráfico de los últimos 30 días, ordenado por frecuencia de tráfico.</li><li><span>El texto libre debe introducirse exactamente como aparece en el raw data.</span></li><li> <span>Para "No está entre las últimas", si tienes más de una serie de versiones, selecciona "No está entre las últimas (principal)". </span><a href="./implement-validation-rules-to-prevent-fraud#how-do-the-not-in-last-conditions-work"><span>Saber más</span></a> </li></ul></td></tr><tr><td><span>Días de retrospectiva</span></td><td><ul><li><span>Menor que</span></li><li><span>Mayor o igual que</span></li><li><span>Está entre</span></li></ul></td><td><ul><li><span>Texto libre: un solo valor numérico.</span></li></ul></td><td><ul><li><span>Hace referencia a la ventana de lookback de impresiones/clics en días.</span></li><li><span>Garantiza que no pagues por instalaciones con un enlace de atribución que se modificó para permitir un período de atribución más largo.</span></li><li><span>No sustituye la configuración de la ventana de lookback de tu enlace de atribución.</span></li><li> <span>[Recomendado] Úsalo en combinación con la condición de tipo de toque de atribución (</span><a href="./implement-validation-rules-to-prevent-fraud#protect360-install-conditions"><span>disponible con Protect360</span></a><span>)</span> </li></ul></td></tr><tr><td><span>Está preinstalada</span></td><td rowspan="2"><ul><li><span>Sí</span></li><li><span>No</span></li></ul></td><td rowspan="2"><ul><li>Sin valor (el operador es el valor)</li></ul></td><td><ul><li> <span>Valida todos los tipos de preinstalaciones:</span><ul><li><span>Preinstalaciones de fábrica, es decir, una app que viene en el dispositivo como parte del sistema operativo.</span></li><li><span>Preinstalaciones promocionadas, es decir, una app promocionada y ofrecida a los usuarios tan pronto como se inicializa el dispositivo. Esto lo realizan fuentes de medios designadas para preinstalaciones.</span></li></ul></li><li>Para instalaciones con múltiples clics/fuentes, esta condición valida si una de las fuentes es una preinstalación.</li></ul></td></tr><tr><td><span>Es deeplink</span></td><td><span>Un campo de enlace profundo vacío en el raw data se considera como Es enlace profundo = No</span></td></tr></tbody></table>
+
+> 📘 **Nota**
+>
+> Las instalaciones orgánicas no tienen ninguna campaña ni fuente de medios asociada, por lo que campos como **Campaña** y **Nombre del conjunto de anuncios** siempre son **null** en ellas, no cadenas vacías. Una regla que usa **Coincidir condiciones** con un operador **Está vacío** en estos campos no coincidirá con las instalaciones orgánicas, por lo que no las bloqueará.
+>
+> Para incluir también el tráfico orgánico, configura la regla con **No coincidir condiciones** y combina las condiciones con **O**, usando **No está vacío** en los mismos campos (por ejemplo, **Campaña no está vacía** **O** **Nombre del conjunto de anuncios no está vacío**, además de cualquier otra condición que necesite la regla). Al invertir la lógica de esta forma, la regla puede coincidir tanto con valores null como con cadenas vacías.
+
+</Accordion>
+
+<Accordion title="Fuentes de eventos in-app">
+
+Cuando se selecciona **Eventos in-app** en la sección **Eventos**, además de las [opciones de fuentes habituales](/docs/implement-validation-rules-to-prevent-fraud#install-sources), los clientes tienen otra opción de fuente para definir a qué eventos in-app se aplica su regla. 
+
+La fuente se define según el campo, los operadores y los valores descritos en la siguiente tabla.
+
+**Nota**: Todas las demás fuentes de eventos in-app se basan en la fuente de instalación con la que está asociado el IAE (por ejemplo, agencia, fuente de medios, campaña, ID de campaña, ID de sitio, etc.).
+
+| Campo | Operador | Valor | Observaciones |
 | --- | --- | --- | --- |
-| Event name | <ul><li>In list</li><li>Not in list</li><li>Equals</li><li>Doesn’t equal</li><li>Contains</li><li>Doesn’t contain</li><li>Starts with</li><li>Ends with</li><li>Is empty</li><li>Isn’t empty</li><li>Matches regular expression</li></ul> | <ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul> | <ul><li>Free text must be typed exactly as it appears in raw data.</li></ul> |
+| Nombre del evento | <ul><li>En la lista</li><li>Fuera de la lista</li><li>Igual a</li><li>No es igual a</li><li>Contiene</li><li>No contiene</li><li>Comienza con</li><li>Termina con</li><li>Está vacío</li><li>No está vacío</li><li>Coincide con la expresión regular</li></ul> | <ul><li>Buscar el valor deseado.</li><li>Seleccionar el valor del menú.</li><li>Texto libre (para valores que no existen en tus resultados de búsqueda).</li></ul> | <ul><li>El texto libre debe escribirse exactamente como aparece en el raw data.</li></ul> |
 
 </Accordion>
 
-<Accordion title="In-app event conditions">
+<Accordion title="Condiciones de eventos in-app">
 
-When **In-app events** is selected in the **Events** section, customers have additional condition options to define which in-app events their rule applies to. These conditions can be mixed and matched with any of the non-Protect360 conditions [listed previously](/docs/implement-validation-rules-to-prevent-fraud#install-conditions).
+Cuando se selecciona **Eventos in-app** en la sección **Eventos**, los clientes tienen opciones de condición adicionales para definir a qué eventos in-app se aplica su regla. Estas condiciones se pueden mezclar y combinar con cualquiera de las condiciones que no son de Protect360 [listadas anteriormente](/docs/implement-validation-rules-to-prevent-fraud#install-conditions).
 
-Protect360 conditions are defined as per the conditions, operators, and values outlined in the table that follows.
+Las condiciones de Protect360 se definen según las condiciones, los operadores y los valores descritos en la siguiente tabla.
 
-| Condition | Operator | Value | Remarks |
+| Condición | Operador | Valor | Observaciones |
 | --- | --- | --- | --- |
-| Event name | <ul><li>In list</li><li>Not in list</li><li>Equals</li><li>Doesn’t equal</li><li>Contains</li><li>Doesn’t contain</li><li>Starts with</li><li>Ends with</li><li>Is empty</li><li>Isn’t empty</li><li>Matches regular expression</li></ul> | <ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul> | <ul><li>Free text must be typed exactly as it appears in raw data.</li></ul> |
-| App version | <ul><li>Lower than</li><li>Lower than or equals</li><li>Greater than</li><li>Greater than or equals</li><li>Equals</li><li>Doesn't equal</li><li>Is Between</li><li>In list</li><li>Not in list</li><li>Not in last</li><li>Not in last (major)</li><li>Is empty</li><li>Isn’t empty</li></ul> | <ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul> | <ul><li>Menu is based on traffic of the past 30 days, ordered by traffic frequency.</li><li>Free text must be typed exactly as it appears in raw data.</li><li>For "Not in last," if you have more than one series of versions, select "Not in last (major)". [Learn more](/docs/implement-validation-rules-to-prevent-fraud#how-do-the-not-in-last-conditions-work)</li></ul> |
+| Nombre del evento | <ul><li>En la lista</li><li>Fuera de la lista</li><li>Igual a</li><li>Igual a</li><li>Contiene</li><li>No contiene</li><li>Comienza con</li><li>Termina con</li><li>Está vacío</li><li>Igual a</li><li>Coincide con la expresión regular</li></ul> | <ul><li>Versión del sistema operativo</li><li>Seleccionar el valor del menú.</li><li>Texto libre (para valores que no existen en tus resultados de búsqueda).</li></ul> | <ul><li>El texto libre debe escribirse exactamente como aparece en el raw data.</li></ul> |
+| Aleatorio | <ul><li>Menor que</li><li>Menor o igual que</li><li>Mayor que</li><li>Mayor o igual que</li><li>Igual a</li><li>No es igual a</li><li>Entre</li><li>En la lista</li><li>Fuera de la lista</li><li>Igual a</li><li>No en la(s) última(s) (principal(es))</li><li>Igual a</li><li>No está vacío</li></ul> | <ul><li>Buscar el valor deseado.</li><li>Selecciona el valor del menú:</li><li>Texto libre (para valores que no existen en tus resultados de búsqueda).</li></ul> | <ul><li>El menú se basa en el tráfico de los últimos 30 días, ordenado por frecuencia de tráfico.</li><li>El texto libre debe escribirse exactamente como aparece en el raw data.</li><li>Para "No en la(s) última(s)", si tienes más de una serie de versiones, selecciona "No en la(s) última(s) (principal(es))". [Saber más](/docs/implement-validation-rules-to-prevent-fraud#how-do-the-not-in-last-conditions-work)</li></ul> |
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Event name conditions are not case sensitive. All event names are automatically converted to lowercase before evaluation. For example, if you enter **Submit Form**, the system treats it as **submit form**.
+> Las condiciones de los nombres de eventos no distinguen entre mayúsculas y minúsculas. Todos los nombres de eventos se convierten automáticamente a minúsculas antes de la evaluación. Por ejemplo, si ingresas a **Enviar formulario**, el sistema lo trata como **enviar formulario**.
 
 </Accordion>
 
-<Accordion title="Protect360 install and in-app event sources">
+<Accordion title="Fuentes de eventos in-app e instalación de Protect360">
 
-In addition to the [regular source options](/docs/implement-validation-rules-to-prevent-fraud#install-sources), Protect360 customers have another source option to define which installs their rule applies to. The source is defined as per the field, operators, and values outlined in the table that follows.
+Además de las [opciones de fuente habituales](/docs/implement-validation-rules-to-prevent-fraud#install-sources), los clientes de Protect360 tienen otra opción de fuente para definir a qué instalaciones se aplica su regla. La fuente se define según el campo, los operadores y los valores descritos en la siguiente tabla.
 
-| Field | Operator | Value | Remarks |
+| Campo | Operador | Valor | Observaciones |
 | --- | --- | --- | --- |
-| Site ID | <ul><li>In list</li><li>Not in list</li><li>Equals</li><li>Doesn’t equal</li><li>Contains</li><li>Doesn’t contain</li><li>Starts with</li><li>Ends with</li><li>Is empty</li><li>Isn’t empty</li><li>Matches regular expression</li></ul> | <ul><li>Free text only.</li><li>Possible to add multiple values separated by spaces.</li></ul> | <ul><li>Free text must be typed exactly as it appears in raw data.</li></ul> |
+| ID del sitio | <ul><li>En la lista</li><li>Fuera de la lista</li><li>Igual a</li><li>No es igual a</li><li>Contiene</li><li>No contiene</li><li>Comienza con</li><li>Termina con</li><li>Está vacío</li><li>No está vacío</li><li>Coincide con la expresión regular</li></ul> | <ul><li>Solo texto libre.</li><li>Es posible agregar varios valores separados por espacios.</li></ul> | <ul><li>El texto libre debe escribirse exactamente como aparece en el raw data.</li></ul> |
 
 </Accordion>
 
-<Accordion title="Protect360 install conditions">
+<Accordion title="Condiciones de instalaciones de Protect360">
 
-Protect360 customers have an additional set of conditions to validate their installs. These conditions can be mixed and matched with any of the non-Protect360 conditions [listed previously](/docs/implement-validation-rules-to-prevent-fraud#install-conditions).
+Los clientes de Protect360 tienen un conjunto adicional de condiciones para validar sus instalaciones. Estas condiciones se pueden mezclar y combinar con cualquiera de las condiciones que no son de Protect360 [listadas anteriormente](/docs/implement-validation-rules-to-prevent-fraud#install-conditions).
 
-Protect360 conditions are defined as per the conditions, operators, and values outlined in the table that follows.
+Las condiciones de Protect360 se definen según las condiciones, los operadores y los valores descritos en la siguiente tabla.
 
-<table><thead><tr><th><span>Condition</span></th><th><span>Operator</span></th><th><span>Value</span></th><th><span>Remarks</span></th></tr></thead><tbody><tr><td><span>CTIT (Click Time to Install Time)</span></td><td><ul><li><span>Lower than</span></li><li><span>Greater than or equals</span></li><li><span>Is between</span></li></ul></td><td><ul><li><span>Free text: A single numeric value.</span></li></ul></td><td><ul><li><span>Only use this field if you are certain of a specific CTIT (usually in a specific geo). Otherwise, you may cause false-positive blocked installs.</span><br/><span><strong>Note</strong>: The Protect360 anti-fraud engine has built-in sophisticated ways to identify complex CTIT anomalies due to attribution hijacking, click flooding, fake installs by bots, and more.</span></li><li><span>Consider using this field together with the following fields:</span><ul><li>Is pre-installed</li><li>Is deeplink</li><li>Geo</li></ul></li></ul><p>Note: The CTIT install condition does not support blocking installs attributed to engaged click engagement type, only 'regular' clicks.</p></td></tr><tr><td><span>Customer user ID (CUID)</span></td><td><ul><li><span>Equals</span></li><li><span>Doesn't equal</span></li><li><span>Doesn't contain</span></li><li><span>Contains</span></li><li><span>Starts with</span></li><li><span>Ends with</span></li><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Matches regular expression</span></li><li><span>Is empty</span></li><li><span>Isn't empty</span></li></ul></td><td><ul><li><span>Free text only.</span></li><li><span>Possible to add multiple values separated by spaces.</span></li></ul></td><td><ul><li><span>Menu is based on t</span>raffic of the past 30 days, ordered by traffic frequency.</li><li><span>Free text must be typed exactly as it appears in raw data.</span></li></ul></td></tr><tr><td><span>SDK version</span></td><td><ul><li><span>Lower than</span></li><li><span>Lower than or equals</span></li><li><span>Greater than</span></li><li><span>Greater than or equals</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li><li><span>Is Between</span></li><li><span>In list</span></li><li><span>Not in list</span></li></ul></td><td><ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul></td><td><ul><li><span>Menu is based on t</span>raffic of the past 30 days, ordered by traffic frequency.</li><li><span>Free text must be typed exactly as it appears in raw data.</span></li></ul></td></tr><tr><td><span>Installer/Store</span></td><td rowspan="3"><ul><li>In list</li><li>Not in list</li><li>Equals</li><li>Doesn’t equal</li></ul></td><td><p><span>Select value from menu:</span></p><ul><li>Google Play</li><li>Other stores</li><li>Out of store</li></ul></td><td><ul><li>Google Play: AppsFlyer identifies that the install package is <code>com.android.vending</code>.</li><li>Other stores: AppsFlyer identifies that the install is from a third-party Android store.</li><li>Out of store: AppsFlyer identifies an APK that is not in any Android store.</li></ul><p><span>In the event that a user's device does not provide the installer/store parameter to AppsFlyer, the rule does not take effect.</span></p></td></tr><tr><td>Custom Installer/Store</td><td>Free text (for values that don’t exist in your search results).</td><td><ul><li>If the client picked a condition of "other" AND also a condition of custom installer=X - the bocking will be only for installer X</li><li>If the client picked a condition of "other" OR  a condition of custom installer=X - the bocking will be for ALL "other" installers / stores - and X is a part of that group</li></ul></td></tr><tr><td><span>Attribution touch type</span></td><td><ul><li><span>Click</span></li><li><span>Impression</span></li></ul></td><td><ul><li>[Recommended] Use in combination with the lookback days condition.</li><li>To simply not attribute for impressions, you can <a href="./measure-view-through-engagements#turn-off-viewthroughattribution" target="_blank">turn off view-through attribution</a>.</li></ul></td></tr><tr><td><span>Carrier</span></td><td><ul><li>In list</li><li>Not in list</li><li>Equals</li><li>Doesn't equal</li></ul></td><td><ul><li><span>Free text only</span></li></ul></td><td> </td></tr><tr><td><span>User agent</span></td><td><ul><li>Contains</li><li>Doesn't contain</li></ul></td><td><ul><li><span>Free text only</span></li></ul></td><td> </td></tr><tr><td><span>IP address</span></td><td><ul><li>In list</li><li>Not in list</li><li>Equals</li><li>Doesn't equal</li></ul></td><td><ul><li><span>Free text only</span></li></ul></td><td> </td></tr></tbody></table>
+<table><thead><tr><th><span>Condición</span></th><th><span>Operador</span></th><th><span>Valor</span></th><th><span>Observaciones</span></th></tr></thead><tbody><tr><td><span>CTIT (Tiempo del clic la a instalación)</span></td><td><ul><li><span>Menor que</span></li><li><span>Mayor o igual que</span></li><li><span>Entre</span></li></ul></td><td><ul><li><span>Texto libre: Un solo valor numérico.</span></li></ul></td><td><ul><li> <span>Utiliza este campo solo si estás seguro de un CTIT específico (generalmente en una geolocalización específica). De lo contrario, puedes provocar instalaciones bloqueadas con falsos positivos.</span><br/><span><strong>Nota</strong>: El motor antifraude Protect360 tiene maneras sofisticadas integradas para identificar anomalías complejas de CTIT debido al secuestro de atribuciones, inundaciones de clics, instalaciones falsas de bots y más.</span> </li><li> <span>Considera usar este campo junto con los siguientes campos:</span><ul><li>Está preinstalado</li><li>Es deeplink</li><li>Geografía</li></ul></li></ul><p>Nota: La condición de instalación CTIT no admite el bloqueo de instalaciones atribuidas al tipo de interacción engaged click, solo a clics "normales".</p></td></tr><tr><td><span>ID de usuario de cliente (CUID)</span></td><td><ul><li><span>Igual a</span></li><li><span>No es igual a</span></li><li><span>No contiene</span></li><li><span>Contiene</span></li><li><span>Comienza con</span></li><li><span>Termina con</span></li><li><span>En la lista</span></li><li><span>Fuera de la lista</span></li><li><span>Coincide con la expresión regular</span></li><li><span>Está vacío</span></li><li><span>No está vacío</span></li></ul></td><td><ul><li><span>Solo texto libre.</span></li><li><span>Es posible agregar varios valores separados por espacios.</span></li></ul></td><td><ul><li> <span>El menú se basa en el</span> tráfico de los últimos 30 días, ordenado por frecuencia de tráfico.</li><li><span>El texto libre debe escribirse exactamente como aparece en el raw data.</span></li></ul></td></tr><tr><td><span>Versión del SDK</span></td><td><ul><li><span>Menor que</span></li><li><span>Menor o igual que</span></li><li><span>Mayor que</span></li><li><span>Mayor o igual que</span></li><li><span>Igual a</span></li><li><span>No es igual a</span></li><li><span>Está entre</span></li><li><span>En la lista</span></li><li><span>Fuera de la lista</span></li></ul></td><td><ul><li>Buscar el valor deseado.</li><li>Seleccionar el valor del menú.</li><li>Texto libre (para valores que no existen en tus resultados de búsqueda).</li></ul></td><td><ul><li> <span>El menú se basa en el</span> tráfico de los últimos 30 días, ordenado por frecuencia de tráfico.</li><li><span>El texto libre debe escribirse exactamente como aparece en el raw data.</span></li></ul></td></tr><tr><td><span>Instalador/Tienda</span></td><td rowspan="3"><ul><li>En la lista</li><li>Fuera de la lista</li><li>Igual a</li><li>No es igual a</li></ul></td><td><p><span>Asignación de datos en Data Locker:</span></p><ul><li>Google Play</li><li>Otras tiendas</li><li>Fuera de la tienda</li></ul></td><td><ul><li>Google Play: AppsFlyer identifica que el paquete de instalación es <code>com.android.vending</code>.</li><li>Otras tiendas: AppsFlyer identifica que la instalación proviene de una tienda Android de terceros.</li><li>Fuera de la tienda: AppsFlyer identifica un APK que no está en ninguna tienda Android.</li></ul><p><span>En el caso de que el dispositivo de un usuario no proporcione el parámetro del instalador/tienda a AppsFlyer, la regla no tiene efecto.</span></p></td></tr><tr><td>Instalador/tienda personalizado</td><td>Texto libre (para valores que no existen en tus resultados de búsqueda).</td><td><ul><li>Si el cliente eligió una condición de "otro" Y también una condición de instalador personalizado=X, el bloqueo será solo para el instalador X</li><li>Si el cliente eligió una condición de "otro" O una condición de instalador personalizado=X, el bloqueo será para TODOS los "otros" instaladores/tiendas, y X es parte de ese grupo.</li></ul></td></tr><tr><td><span>Tipo de toque para la atribución</span></td><td><ul><li><span>Clic</span></li><li><span>Impresión</span></li></ul></td><td><ul><li>[Recomendado] Utilízalo en combinación con la condición de días de lookback.</li><li>Para simplemente no atribuir las impresiones, puedes <a href="./measure-view-through-engagements#turn-off-viewthroughattribution" target="_blank">desactivar la atribución por impresiones</a>.</li></ul></td></tr><tr><td><span>Operador</span></td><td><ul><li>En la lista</li><li>tagged_sub_reason</li><li>Igual a</li><li>No es igual a</li></ul></td><td><ul><li><span>Solo texto libre</span></li></ul></td><td> </td></tr><tr><td><span>Agente de usuario</span></td><td><ul><li>Contiene</li><li>No contiene</li></ul></td><td><ul><li><span>Solo texto libre</span></li></ul></td><td> </td></tr><tr><td><span>Dirección IP</span></td><td><ul><li>En la lista</li><li>Fuera de la lista</li><li>Igual a</li><li>No es igual a</li></ul></td><td><ul><li><span>Solo texto libre</span></li></ul></td><td> </td></tr></tbody></table>
 
 </Accordion>
 
-<Accordion title="Protect360 in-app event conditions">
+<Accordion title="Condiciones de eventos in-app de Protect360">
 
-When **In-app events** is selected in the **Events** section, Protect360 customers have additional condition options to define which in-app events their rule applies to. These conditions can be mixed and matched with any of the non-Protect360 conditions [listed previously](/docs/implement-validation-rules-to-prevent-fraud#install-conditions).
+Cuando se selecciona **Eventos in-app** en la sección **Eventos**, los clientes de Protect360 tienen opciones de condición adicionales para definir a qué eventos in-app se aplica su regla. Estas condiciones se pueden mezclar y combinar con cualquiera de las condiciones que no son de Protect360 [listadas anteriormente](/docs/implement-validation-rules-to-prevent-fraud#install-conditions).
 
-Protect360 conditions are defined as per the conditions, operators, and values outlined in the table that follows.
+Las condiciones de Protect360 se definen según las condiciones, los operadores y los valores descritos en la siguiente tabla.
 
-| Condition | Operator | Value | Remarks |
+| Condición | Operador | Valor | Observaciones |
 | --- | --- | --- | --- |
-| Event source | <ul><li>In list</li><li>Not in list</li><li>Equals</li><li>Doesn’t equal</li></ul> | <ul><li>Search for desired value.</li><li>Select value from menu.</li></ul> | Select either SDK or Server-to-server. |
-| Event value | <ul><li>In list</li><li>Not in list</li><li>Equals</li><li>Doesn’t equal</li><li>Contains</li><li>Doesn’t contain</li><li>Starts with</li><li>Ends with</li><li>Is empty</li><li>Isn’t empty</li><li>Matches regular expression</li></ul> | <ul><li>Free text only.</li><li>Possible to add multiple values separated by spaces.</li></ul> | <ul><li>Select your preferred values.</li></ul> |
-| Install to event time (in seconds) | <ul><li>Lower than</li><li>Greater than or equals</li><li>Is between</li></ul> | Free text. A single numeric value. | <ul><li>Based on your app’s flow, you decide the valid time to pass between the app install and an IAE.<ul><li>Example: Time to reach level 5, time to first-time-deposit (FTD), time to checkout, etc.</li></ul></li><li>Time is in seconds, but you can validate minutes, hours, or days using the seconds equivalent.</li></ul> |
+| Origen del evento | <ul><li>En la lista</li><li>Fuera de la lista</li><li>Igual a</li><li>No es igual a</li></ul> | <ul><li>Buscar el valor deseado.</li><li>Seleccionar el valor del menú.</li></ul> | Selecciona SDK o Servidor a servidor. |
+| Valor del evento | <ul><li>En la lista</li><li>Fuera de la lista</li><li>Igual a</li><li>No es igual a</li><li>Contiene</li><li>No contiene</li><li>Comienza con</li><li>Termina con</li><li>Está vacío</li><li>No está vacío</li><li>Coincide con la expresión regular</li></ul> | <ul><li>Solo texto libre.</li><li>Es posible agregar varios valores separados por espacios.</li></ul> | <ul><li>Selecciona tus valores preferidos.</li></ul> |
+| Tiempo de la instalación al evento (en segundos) | <ul><li>Menor que</li><li>Mayor o igual que</li><li>Entre</li></ul> | Texto libre. Un solo valor numérico. | <ul><li>Según el flujo de tu aplicación, decides el tiempo válido que debe pasar entre la instalación de la aplicación y un evento in-app.<ul><li>Ejemplo: Tiempo hasta alcanzar el nivel 5, tiempo hasta el primer depósito (FTD), tiempo hasta el checkout, etc.</li></ul></li><li>El tiempo se expresa en segundos, pero puedes validar minutos, horas o días utilizando su equivalente en segundos.</li></ul> |
 
 </Accordion>
 
-<Accordion title="Logic between conditions and condition groups">
+<Accordion title="Lógica entre condiciones y grupos de condiciones">
 
-If you add multiple conditions or condition groups to a rule, select the logical relation between them using either: 
+Si agregas varias condiciones o grupos de condiciones a una regla, selecciona la relación lógica entre ellos usando: 
 
-* **And**: Meaning the install complies with all the defined conditions.
-* **Or**: Meaning the install complies with at least one of the defined conditions.
+* **Y**: Significa que la instalación cumple con todas las condiciones definidas.
+* **O**: Significa que la instalación cumple al menos una de las condiciones definidas.
 
-For example, if you want to validate installs based on both platform and OS, you must select **and**. That way, the defined platform must always accompany the defined OS. If you want to validate installs based on either platform or OS, you must select **or**.
-
-</Accordion>
-
-## Additional features
-
-<Accordion title="View rule list">
-
-**To view all the rules created in your account**:
-
-1. In AppsFlyer, go to **Settings** > **Validation Rules.**  
-   The Validation Rules window opens, with the list of validation rules.
-2. Select your preferred table view using the **List view/Details view** toggle.
-3. Filter the rules in the list using the search and the filter options.
-   * You can search by rule name, source, condition name, and value.
-   * For example, type **7** to find all rules defined for an OS version that contains 7. (e.g.: “2.7.4”, “7.1”, etc.). Or type **Canada** to find rules defined with Canada in the Geo condition.
-
-The Validation Rules table shows 25 rules per page by default. You can change the number of rules shown per page to 10, 25, or 50.
-
-Search and filters apply to the full rule set, regardless of the page you’re viewing.
+Por ejemplo, si deseas validar las instalaciones según la plataforma y el sistema operativo, debes seleccionar **y**. De esa forma, la plataforma definida debe acompañar siempre al SO definido. Si deseas validar las instalaciones según la plataforma o el sistema operativo, debes seleccionar **o**.
 
 </Accordion>
 
-<Accordion title="Add rule">
+## Funciones adicionales
 
-**To set up a new rule**:
+<Accordion title="Ver la lista de reglas">
 
-1. In AppsFlyer, go to **Settings** > **Validation Rules.**  
-   The Validation Rules window opens.
-2. Click **Add Rule.**  
-   The Add new rule window opens.
-3. Insert a **rule name**. Use a unique name that:
-   * accurately describes the rule.
-   * is not offensive to ad networks, as it displays in the blocked installs report, as well as in the rejected postbacks to ad networks.
-4. Complete the [rule builder sections](/docs/implement-validation-rules-to-prevent-fraud#rule-builder).
-5. [Optional] Add conditions and/or condition groups, as required. Make sure to select the relevant [logic between conditions/condition groups](/docs/implement-validation-rules-to-prevent-fraud#logic-between-conditions-and-condition-groups).
-6. [Optional] Click **Estimate traffic impact** to [see how your rule will affect traffic](/docs/implement-validation-rules-to-prevent-fraud#view-validation-rule-impact).
-7. Click **Save**.
+**Para ver todas las reglas creadas en tu cuenta**:
 
-> 📘 **Note**
->
-> App version must only contain numbers. For example 2.2.1
->
-> Note:
->
-> Numeric app versions (for example, 2.2.1) supports all operators (equals, greater than, lower than, etc.).
->
-> If the app version is custom text (for example, version123 or our\_latest\_version), only the "equals" or "doesn't equal" operators work; "greater than" or "lower than" won't apply.
+1. En AppsFlyer, ve a **Configuración** > **Reglas de validación.**  
+   Se abre la ventana reglas de validación, con la lista de reglas de validación.
+2. Selecciona tu vista de tabla preferida utilizando el selector **Vista de lista/Vista detallada**.
+3. Filtra las reglas de la lista mediante las opciones de búsqueda y filtro.
+   * Puedes buscar por nombre de la regla, fuente, nombre de la condición y valor.
+   * Por ejemplo, escribe **7** para encontrar todas las reglas definidas para una versión del sistema operativo que contenga 7 (por ejemplo: “2.7.4”, “7.1”, etc.). (p. ej.: «2.7.4», «7.1», etc.). O escribe **Canada** para encontrar reglas definidas con Canada en la condición Geo.
+
+La tabla de reglas de validación muestra 25 reglas por página de forma predeterminada. Puedes cambiar el número de reglas mostradas por página a 10, 25 o 50.
+
+La búsqueda y los filtros se aplican al conjunto completo de reglas, independientemente de la página que estés viendo.
 
 </Accordion>
 
-<Accordion title="VR tagged mode">
+<Accordion title="Agregar regla">
 
-Use Tagged mode to test validation rules on live traffic before blocking attribution. Tagged rules flag installs and in-app events that match the rule conditions, but attribution isn’t affected.
+**Para configurar una regla nueva**:
 
-Tagged mode supports installs and in-app events only.
+1. En AppsFlyer, ve a **Configuración** > **Reglas de validación.**  
+   Se abre la ventana reglas de validación.
+2. Haz clic en **Agregar regla.**  
+   Se abre la ventana “Agregar nueva regla”.
+3. Inserta un **nombre de regla**. Utiliza un nombre único que:
+   * Describe exactamente la regla.
+   * no resulte ofensivo para las ad networks, ya que aparecerá en el reporte de instalaciones bloqueadas y en los postbacks rechazados enviados a las ad networks.
+4. Completa las [secciones del generador de reglas](/docs/implement-validation-rules-to-prevent-fraud#creador-de-reglas).
+5. [Opcional] Agrega condiciones y/o grupos de condiciones, según sea necesario. Asegúrate de seleccionar la [lógica relevante entre condiciones/grupos de condiciones](/docs/implement-validation-rules-to-prevent-fraud#logic-between-conditions-and-condition-groups).
+6. [Opcional] Haz clic en **Estimar el impacto del tráfico** para [ver cómo afectará tu regla al tráfico](/docs/implement-validation-rules-to-prevent-fraud#view-validation-rule-impact).
+7. Haz clic en **Guardar**.
 
-Use Tagged mode to:
+> 📘 **Nota:**
+>
+> La versión de la aplicación solo debe contener números. Por ejemplo, 2.2.1.
+>
+> Nota:
+>
+> Las versiones numéricas de aplicaciones (por ejemplo, 2.2.1) admiten todos los operadores (igual, mayor, menor, etc.).
+>
+> Si la versión de la aplicación es texto personalizado (por ejemplo, version123 o our\_latest\_version), solo funcionan los operadores "igual" o "no es igual"; no se aplicarán los términos "mayor" o "inferior".
 
-* Test complex rules on live traffic before blocking attribution.
-* Identify possible false positives.
-* Review why a rule would have triggered before you enforce the rule.
-* Understand the real traffic impact before changing the rule status to Implemented.
+</Accordion>
 
-Best practice: Create the rule in Tagged mode first, review the flagged traffic in Data Locker, and change the rule status to Implemented when you’re confident in the rule accuracy. Aim to complete this review in less than 7 days to maintain active protection.
+<Accordion title="Modo Tagged de VR">
 
-#### How Tagged mode works
+Utiliza el modo Tagged para probar las reglas de validación con tráfico en vivo antes de bloquear la atribución. Las reglas Tagged marcan las instalaciones y los eventos in-app que cumplen las condiciones de la regla, pero la atribución no se ve afectada.
 
-When you create or edit a validation rule, select the Detection status in the Rule outcome section.
+El modo Tagged solo admite instalaciones y eventos in-app.
 
-* Tagged: The rule flags matching data for reporting and analysis. Attribution isn’t affected.
-* Implemented: The rule actively blocks attribution according to the selected rule outcome.
+Utiliza el modo Tagged para:
 
-Note: Tagged mode applies only to live traffic from the moment the rule is saved. It doesn’t tag historical data.
+* Probar reglas complejas con tráfico en vivo antes de bloquear la atribución.
+* Identificar posibles falsos positivos.
+* Revisar por qué se habría activado una regla antes de implementarla.
+* Comprender el impacto real en el tráfico antes de cambiar el estado de la regla a Implemented.
 
-#### Rule outcome configuration
+Práctica recomendada: Primero crea la regla en modo Tagged, revisa el tráfico marcado en Data Locker y cambia el estado de la regla a Implemented cuando tengas la certeza de que la regla es precisa. Intenta completar esta revisión en menos de 7 días para mantener la protección activa.
 
-The Rule outcome section, formerly Action, defines how AppsFlyer handles traffic that matches the rule conditions. It also provides a high-level summary of the rule configuration so you can verify the expected impact before saving the rule.
+#### Cómo funciona el modo Tagged
 
-| Detection status | Effect on attribution | Data availability |
+Al crear o editar una regla de validación, selecciona el Detection status en la sección Rule outcome.
+
+* Tagged: La regla marca los datos que coinciden para su reporte y análisis. La atribución no se ve afectada.
+* Implemented: La regla bloquea activamente la atribución según el resultado de regla seleccionado.
+
+Nota: El modo Tagged solo se aplica al tráfico en vivo a partir del momento en que se guarda la regla. No marca datos históricos.
+
+#### Configuración del resultado de la regla
+
+La sección Rule outcome, anteriormente Action, define cómo AppsFlyer gestiona el tráfico que cumple las condiciones de la regla. También proporciona un resumen general de la configuración de la regla para que puedas verificar el impacto esperado antes de guardarla.
+
+| Estado de detección | Efecto en la atribución | Disponibilidad de datos |
 | --- | --- | --- |
-| Tagged | No impact. Traffic is attributed normally. | Visible in Data Locker and raw data export reports. |
-| Implemented | Active block. Attribution is blocked according to the selected rule outcome. | Visible in Protect360 dashboards and export reports. |
+| Tagged | No afectan. El tráfico se atribuye con normalidad. | Visible en los reportes de Data Locker. |
+| Implemented | Bloqueo activo. La atribución se bloquea según el Rule outcome seleccionado. | Visible en los dashboards de Protect360 y en los reportes de exportación. |
 
-#### What to expect when configuring a rule
+#### Qué puedes esperar al configurar una regla
 
-As you configure the rule, a dynamic info panel shows the expected rule behavior based on:
+Mientras configuras la regla, un panel de información dinámico muestra el comportamiento esperado de la regla en función de:
 
-* Match or Do not match logic
-* App selection
-* Detection status
+* Lógica de coincidencia o no coincidencia
+* Selección de app
+* Estado de detección
 
-When Detection status is set to Tagged, the rule acts as a discovery tool. AppsFlyer shows a notification confirming that matching data is flagged in export reports, including Data Locker, but isn’t blocked from attribution.
+Cuando el estado de detección se configura como Tagged, la regla actúa como una herramienta de detección. AppsFlyer muestra una notificación que confirma que los datos coincidentes se marcan en los reportes de exportación, incluido Data Locker, pero no se bloquean para la atribución.
 
-When Detection status is set to Implemented, installs or in-app events that match the rule criteria are blocked from attribution or reattributed according to the selected rule outcome. The info panel summarizes the active outcome before you save the rule.
+Cuando el estado de detección se configura como Implemented, las instalaciones o los eventos in-app que cumplen los criterios de la regla se bloquean para la atribución o se reatribuyen según el Rule outcome seleccionado. El panel de información resume el resultado activo antes de que guardes la regla.
 
-#### Example: Match logic
+#### Ejemplo: Lógica de coincidencia
 
-For detected installs that meet the rule conditions for the selected apps, the info panel can indicate that the installs are:
+Para las instalaciones detectadas que cumplen las condiciones de la regla para las apps seleccionadas, el panel de información puede indicar que las instalaciones:
 
-* Blocked from attribution or detected as post-attribution.
-* Reattributed to the last valid non-organic or organic source.
-* Visible in export reports.
+* Se bloquean para la atribución o se detectan como posterior a la atribución.
+* Se reatribuyen a la última fuente válida no orgánica u orgánica.
+* Son visibles en los reportes de exportación.
 
-#### Example: Do not match logic
+#### Ejemplo: No coincidir con la lógica
 
-For detected installs that don’t meet the rule conditions for the selected apps, including future apps, the info panel can indicate that the installs are:
+Para las instalaciones detectadas que no cumplen las condiciones de la regla para las apps seleccionadas, incluidas las futuras apps, el panel de información puede indicar que las instalaciones:
 
-* Blocked from attribution or detected as post-attribution.
-* Marked as fraud without attribution correction.
-* Visible in export reports.
+* Se bloquean para la atribución o se detectan como post-attribution.
+* Se marcan como fraude sin corregir la atribución.
+* Son visibles en los reportes de exportación.
 
-All other installs that meet the rule conditions within these apps aren’t blocked.
+Todas las demás instalaciones que cumplen las condiciones de la regla dentro de estas apps no se bloquean.
 
-#### Set a rule to Tagged mode
+#### Configurar una regla en modo Tagged
 
-To test a validation rule with Tagged mode:
+Para probar una regla de validación con el modo Tagged:
 
-1. In AppsFlyer, go to Settings > Validation Rules.
-2. Select an existing rule or click Add Rule.
-3. Complete the rule details, traffic sources, and conditions.
-4. In the Rule outcome section, set Detection status to Tagged.
-5. Click Save.
+1. En AppsFlyer, ve a Configuración > Reglas de validación.
+2. Selecciona una regla existente o haz clic en Agregar Regla.
+3. Completa los detalles de la regla, las fuentes de tráfico y las condiciones.
+4. En la sección Resultado de la regla, establece el estado de Detección en Tagged.
+5. Haz clic en Guardar.
 
-After the rule is saved, AppsFlyer flags matching live traffic for reporting and analysis. Attribution continues as usual.
+Después de guardar la regla, AppsFlyer marca el tráfico en vivo que coincide para su reporte y análisis. La atribución continúa con normalidad.
 
-#### Analyze tagged data
+#### Analizar datos Tagged
 
-Tagged validation rule data isn’t visible in the Protect360 dashboard or Fraud Protection Suite.
+Los datos Tagged de las reglas de validación no son visibles en el dashboard de Protect360 ni en el paquete de protección contra el fraude.
 
-To analyze the impact of tagged rules, use Data Locker or raw data export reports. Tagged data is available for installs and in-app events, so you can compare tagged traffic with valid attributions.
+Para analizar el impacto de las reglas Tagged, utiliza Data Locker para exportar los datos Tagged. Los datos Tagged se incluyen en los reportes de instalaciones y eventos in-app, para que puedas comparar el tráfico Tagged con las atribuciones válidas.
 
-**Tagged data mapping:**
+**Asignación de datos etiquetados:**
 
-| Tagged data | Data Locker | Raw data report |
+| Datos Tagged | Reporte de Data Locker | Reporte de raw data |
 | --- | --- | --- |
-| Tagged installs | Installs report | Tagged Installs |
-| Tagged in-app events | In-app Events report | Tagged In-app Events report |
+| Instalaciones Tagged | Reporte de instalaciones | Instalaciones Tagged |
+| Eventos in-app Tagged | Reporte de eventos in-app | Reporte de eventos in-app etiquetados |
 
-**Tagged data fields**
+**Campos de datos etiquetados**
 
-Use the following columns in Data Locker and Raw data exports to identify traffic flagged by validation rules:
+Utiliza las siguientes columnas en las exportaciones de Data Locker para identificar el tráfico marcado por las reglas de validación:
 
-| Column | Description |
+| Columna | Descripción |
 | --- | --- |
-| Rule name<br /><br />(Raw data reports) | The name of the validation rule that flagged the record. |
-| Rule ID<br /><br />(Raw data reports) | The unique ID of the validation rule that flagged the record. |
-| detected\_rule\_name<br /><br />(Data Locker) | The name of the validation rule that flagged the record. |
-| detected\_rule\_id<br /><br />(Data Locker) | The unique ID of the validation rule that flagged the record. |
+| Nombre de la regla<br /><br />(Reportes de raw data) | Nombre de la regla de validación que marcó el registro. |
+| ID de la regla<br /><br />(Reportes de raw data) | ID único de la regla de validación que marcó el registro. |
+| detected\_rule\_name<br /><br />(Data Locker) | Nombre de la regla de validación que marcó el registro. |
+| detected\_rule\_id<br /><br />(Data Locker) | ID único de la regla de validación que marcó el registro. |
 
-#### Change a tagged rule to Implemented
+#### Cambiar una regla Tagged a Implemented
 
-After you review the tagged data and confirm that the rule works as expected, change the rule status to Implemented.
+Después de revisar los datos Tagged y confirmar que la regla funciona según lo previsto, cambia el estado de la regla a Implemented.
 
-To change a rule from Tagged to Implemented:
+Para cambiar una regla de Tagged a Implemented:
 
-1. In AppsFlyer, go to Settings > Validation Rules.
-2. Select the rule.
-3. In the Rule outcome section, set Detection status to Implemented.
-4. Click Save.
+1. En AppsFlyer, ve a Configuración > Reglas de validación.
+2. Selecciona la regla.
+3. En la sección Rule outcome, configura Detection status como Implemented.
+4. Haz clic en Guardar.
 
-From the moment the rule is saved, AppsFlyer actively blocks matching traffic according to the selected rule outcome.
-
-</Accordion>
-
-<Accordion title="Edit or delete a rule">
-
-**To edit, delete, enable, or disable a rule**:
-
-* In the [rule list](/docs/implement-validation-rules-to-prevent-fraud), select the action you want to perform for a specific rule.
-  * Under **Active**: enable or disable the rule.
-  * Under **Action**: edit or delete the rule.
+A partir del momento en que se guarda la regla, AppsFlyer bloquea activamente el tráfico que coincide según el Rule outcome seleccionado.
 
 </Accordion>
 
-## FAQ
+<Accordion title="Editar o eliminar una regla">
 
-<Accordion title="What is a 'regular expression'?">
+**Para editar, eliminar, habilitar o deshabilitar una regla**:
 
-A regular expression pattern is composed of characters for which you want to find a match. Simple patterns are constructed with characters for which you want to find a direct match. When the search for a match requires something more than a direct match, you can include special characters in the pattern.
+* En la [lista de reglas](/docs/implement-validation-rules-to-prevent-fraud), selecciona la acción que quieras realizar para una regla específica.
+  * En **Activar**: habilita o deshabilita la regla.
+  * En **Acción**: edita o elimina la regla.
 
-**Examples**:
+</Accordion>
 
-| **Regular expression** | **Description** |
+## Preguntas frecuentes
+
+<Accordion title="¿Qué es una 'expresión regular'?">
+
+Un patrón de expresión regular está compuesto por caracteres para los que quieres encontrar una coincidencia. Los patrones simples se construyen con caracteres para los que quieres encontrar una coincidencia directa. Cuando la búsqueda de una coincidencia requiere algo más que una coincidencia directa, puedes incluir caracteres especiales en el patrón.
+
+**Ejemplos**:
+
+| **Expresión regular** | **Descripción** |
 | --- | --- |
-| ^abc | Starts with abc |
-| xyz$ | Ends with xyz |
-| ^abc.*xyz$ | Starts with abc and ends with xyz |
-| ^abc.*(?&lt;xyz)$ | Starts with abc and doesn’t end with xyz |
-| ^([0-9]`{2}`) | Starts with 2 digits |
-| "example\_param":"[5\|6] | Specified parameter's value begins with 5 or 6. |
-| ^.\{0\}$\|^\{\}$ | Is empty, or is only \{\} |
+| ^abc | Empieza con abc |
+| xyz$ | Termina con xyz |
+| ^abc.*xyz$ | Empieza con abc y termina con xyz |
+| ^abc.*(?&lt;xyz)$ | Empieza con abc y no termina con xyz |
+| ^([0-9]`{2}`) | Empieza con 2 dígitos |
+| "example\_param":"[5\|6] | El valor del parámetro especificado comienza con 5 o 6. |
+| ^.\{0\}$\|^\{\}$ | Está vacío, o solo es \{\} |
 
 </Accordion>
 
-<Accordion title="Why doesn't the source or condition display as a suggested value when I search for it?">
+<Accordion title="¿Por qué la fuente o la condición no aparecen como un valor sugerido cuando las busco?">
 
-There are two possible reasons:
+Hay dos razones posibles:
 
-* Make sure the relevant app/s are selected. If the app isn't selected, values don't display in search results.
-* Results display only if the value you are searching for appeared in your traffic during the past 30 days. Additionally, there is a lag of up to 1 day between when the conversion occurs, and when the source or condition displays as a menu option.
+* Asegúrate de que las aplicaciones correspondientes estén seleccionadas. Si la aplicación no está seleccionada, los valores no se muestran en los resultados de búsqueda.
+* Los resultados se muestran solo si el valor que estás buscando apareció en tu tráfico durante los últimos 30 días. Además, hay un desfase de hasta 1 día entre el momento en que se produce la conversión y el momento en que la fuente o la condición se muestra como una opción del menú.
 
-If the value does not appear as a search result, you can type the value as free text and press the Enter key on your keyboard.
-
-</Accordion>
-
-<Accordion title="Why do my media source options only include Meta ads and X Ads?">
-
-The Media Sources field options are affected by your Agency selection.
+Si el valor no aparece como resultado de la búsqueda, puedes escribir el valor como texto libre y pulsar la tecla “Enter” en tu teclado.
 
 </Accordion>
 
-<Accordion title="Is it necessary to have 'and/or' both within specific conditions and between condition groups?">
+<Accordion title="¿Por qué mis opciones de fuentes de medios solo incluyen Meta Ads y X Ads?">
 
-It depends on your use case. Sometimes either option achieves the same results. Other times, both options are necessary.
-
-For example, if in USA you support installs only on OS V10 or later, but in Brazil, you support from V7 and later, you'll need a rule like:
-
-`{[Geo = US] and [OS version = 10]} OR {[Geo = Brazil] and [OS version = 7]}`
+Las opciones del campo fuente de medios dependen de la selección realizada en agencia.
 
 </Accordion>
 
-<Accordion title="Do validation rules block clicks?">
+<Accordion title="¿Es necesario utilizar 'Y/O' tanto dentro de las condiciones específicas como entre los grupos de condiciones?">
 
-No. Validation rules can block installs, block attribution to an install’s sources (that prevents the media source of a click/impression from receiving attribution), or block in-app events. However, none of these options blocks the actual click, and click KPIs are not affected by executing validation rules.
+Depende de tu caso de uso. En ocasiones, cualquiera de las dos opciones produce el mismo resultado. Otras veces, ambas opciones son necesarias.
 
-</Accordion>
+Por ejemplo, si en EE. UU. solo admites instalaciones con la versión 10 del sistema operativo o superior, pero en Brasil admites la versión 7 o superior, necesitarás una regla como esta:
 
-<Accordion title="Looking at the raw data, I see that installs I expected to be blocked by validation rules have a different block reason than my rule name. Why is that?">
-
-This means the block was due to the <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-reasons">Protect360 engine</Anchor> and not a validation rule. See also [multiple rules](/docs/implement-validation-rules-to-prevent-fraud#multiple-rules).
+`{[Geo = US] y [versión del OS = 10]} OR {[Geo = Brazil] y [versión del OS = 7]}`
 
 </Accordion>
 
-<Accordion title="Do existing rules automatically apply for newly-integrated agency traffic?">
+<Accordion title="¿Bloquean las reglas de validación los clics?">
 
-This depends on your **Source** settings, as described in the table below.
-
-If the rule is not automatically applied, you must edit the rule:
-
-* Change the Agency field to either **Agency and non-agency traffic**, or select the specific agency.
-
-<table><thead><tr><th>Source setting</th><th>Agency field selection</th><th>Is rule applied if rule was created before any agency integration with one of your apps?</th><th>Is rule applied if rule was created after at least one agency integration with one of your apps?</th></tr></thead><tbody><tr><td>All traffic</td><td>N/R</td><td>Yes</td><td>Yes</td></tr><tr><td rowspan="3">Non-organic only</td><td>N/R</td><td>No</td><td>N/R</td></tr><tr><td>Agency and non-agency traffic</td><td>N/R</td><td>Yes</td></tr><tr><td><p>Non-agency traffic and/or</p><p>specific agencies</p></td><td>N/R</td><td>No</td></tr></tbody></table>
+N.º Las reglas de validación pueden bloquear instalaciones, bloquear la atribución a las fuentes de una instalación (lo que impide que la fuente de medios de un clic o una impresión reciba la atribución) o bloquear eventos in-app. Sin embargo, ninguna de estas opciones bloquea el clic en sí, y los KPIs de clics no se ven afectados por la ejecución de las reglas de validación.
 
 </Accordion>
 
-<Accordion title="How do the 'not in last' conditions work?">
+<Accordion title="Al revisar el raw data, veo que las instalaciones que esperaba que fueran bloqueadas por las reglas de validación muestran un motivo de bloqueo diferente al nombre de mi regla. ¿Por qué?">
 
-Use **Not in last** to allow installs from your **most recent app versions** and block installs from **older versions**.
+Esto significa que el bloqueo se debió al <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#motivos-de-bloqueo">motor de Protect360</Anchor> y no a una regla de validación. Consulta también [múltiples reglas](/docs/implement-validation-rules-to-prevent-fraud#multiple-rules).
 
-* **Not in last** ***X*** **versions**: Allows installs from the **last X versions** of the selected app, and **blocks** installs from **all earlier versions**.
-* **Not in last (major)** ***X*** **versions**: Use when your versioning includes **multiple major version series** (for example, 1.x and 2.x). This condition allows the **last X versions within each major series**, and blocks earlier versions in each series.
+</Accordion>
 
-##### Example: Not in last
+<Accordion title="¿Las reglas existentes se aplican automáticamente al tráfico de agencias integradas recientemente?">
 
-You have these existing app versions:
+Esto depende de la configuración de la **fuente**, como se describe en la siguiente tabla.
+
+Si la regla no se aplica automáticamente, debes editarla:
+
+* Cambia el campo Agencia a **Tráfico de agencia y no agencia** o selecciona la agencia específica.
+
+<table><thead><tr><th>Configuración de fuente</th><th>Selección de campo de agencia</th><th>¿La regla se aplica si se creó antes de integrar cualquier agencia con alguna de tus apps?</th><th>¿La regla se aplica si se creó después de integrar al menos una agencia con alguna de tus apps?</th></tr></thead><tbody><tr><td>Todo el tráfico</td><td>N/R</td><td>Sí</td><td>Sí</td></tr><tr><td rowspan="3">Solo no orgánico</td><td>N/R</td><td>No</td><td>N/R</td></tr><tr><td>Tráfico de agencia y no agencia</td><td>N/R</td><td>Sí</td></tr><tr><td><p>Tráfico de no agencia y/o</p><p>agencias específicas</p></td><td>N/R</td><td>No</td></tr></tbody></table>
+
+</Accordion>
+
+<Accordion title="¿Cómo funcionan las condiciones 'No en la(s) última(s)'?">
+
+Utiliza **No en las últimas** para permitir instalaciones de las **versiones más recientes de tu aplicación** y bloquear instalaciones de las **versiones anteriores**.
+
+* **No en las últimas** ***X*** **versiones**: Permite instalaciones de las **últimas X versiones** de la app seleccionada y **bloquea** las instalaciones de **todas las versiones anteriores**.
+* **No en las últimas (mayores)** ***X*** **versiones**: Utilízalo cuando tu esquema de versiones incluya **varias series de versiones principales** (por ejemplo, 1.x y 2.x). Esta condición permite las **últimas X versiones de cada serie principal** y bloquea las versiones anteriores de cada serie.
+
+##### Ejemplo: No en las últimas
+
+Tienes estas versiones existentes de la app:
 
 * 1.0.01
 * 1.0.02
@@ -505,104 +504,123 @@ You have these existing app versions:
 * 2.0.02
 * 2.0.03
 
-A rule defined with **Not in last 2 versions**:
+Una regla definida con **No en las últimas 2 versiones**:
 
-* **Allows**:
+* **Permite**:
   * 2.0.02
   * 2.0.03
-* **Blocks**:
+* **Bloquea**:
   * 1.0.01
   * 1.0.02
   * 1.0.03
   * 2.0.01
 
-##### Example: Not in last (major)
+##### Ejemplo: No en las últimas (mayores)
 
-Using the same versions list above, a rule defined with **Not in last (major) 2 versions**:
+Usando la misma lista de versiones anterior, una regla definida con **No en los últimos (mayores) 2 versiones**:
 
-* **Allows**:
+* **Permite**:
   * 1.0.02
   * 1.0.03
   * 2.0.02
   * 2.0.03
-* **Blocks**:
+* **Bloquea**:
   * 1.0.01
   * 2.0.01
 
-##### **Understand how the condition works with multiple apps**
+##### **Comprende cómo funciona esta condición con varias apps**
 
-If you select **multiple apps** in the rule, AppsFlyer evaluates the **Not in last** condition **separately for each app**.
+Si seleccionas **varias apps** en la regla, AppsFlyer evalúa la condición **No en las últimas** **por separado para cada app**.
 
-For example, if you set **Not in last 3 versions** and select App A, App B, and App C:
+Por ejemplo, si configuras **No en las últimas 3 versiones** y seleccionas la App A, la App B y la App C:
 
-* App A allows its **last 3 versions** based on **App A’s** version history.
-* App B allows its **last 3 versions** based on **App B’s** version history.
+* La App A permite sus **últimas 3 versiones** según el historial de versiones de la **App A**.
+* La App B permite sus **últimas 3 versiones** según el historial de versiones de la **App B**.
 
-App C allows its **last 3 versions** based on **App C’s** version history.
+La App C permite sus **últimas 3 versiones** según el historial de versiones de la **App C**.
 
-</Accordion>
+##### Cómo AppsFlyer determina la versión más reciente
 
-<Accordion title="How do I block attribution for installs or in-app events from impressions?">
+Las versiones más recientes que usan las condiciones **Not in last** no son simplemente los números de versión más nuevos de tu tráfico. AppsFlyer calcula a diario la lista de versiones más recientes mediante un mecanismo de protección diseñado para evitar que los defraudadores hagan spoofing de una versión más reciente falsa para eludir la regla.
 
-Use a validation rule when you want to prevent attribution from impression-based engagements and keep attribution only for valid clicks. If no valid click-based media source is found, the install is attributed as organic. This setup can help address attribution scenarios related to install hijacking.
+AppsFlyer añade una versión a la lista de versiones más recientes de una aplicación solo si esa versión cumple estas tres condiciones ese día:
 
-To configure the rule:
+* Se atribuyó a partir de una red de autorreporte (SRN).
+* Tiene al menos 100 instalaciones atribuidas ese día.
+* Esas instalaciones representan al menos el 70% de las instalaciones atribuidas por SRN de ese día para la aplicación.
 
-* Under **Traffic sources**, select **All non-organic traffic.**
-* Under **Conditions**, select **Attribution touch type**.
-  * Set the operator to **In list**.
-  * Select **Impression**.
-* Under **Action**, select **Block attribution and correct to last valid media source**.
+##### Ejemplo: cálculo de la versión más reciente
 
-Don’t select **Mark installs as invalid and don’t attribute them** for this use case. That action is intended for installs you consider invalid or fake. If the install is real, but you don’t want to attribute it to impression-based engagement, use **Block attribution and correct to last valid media source** instead.
+En un día determinado, una aplicación recibe 300 instalaciones atribuidas por SRN: 210 en la v6.1.0, 45 en la v6.2.0 y 45 en la v6.3.0.
 
-</Accordion>
+* v6.1.0 cumple las tres condiciones: se atribuye a SRN, tiene más de 100 instalaciones y alcanza una cuota del 70%. AppsFlyer la añade a la lista de versiones más recientes y pasa a formar parte de la referencia con la que se compara la regla.
+* v6.2.0 y v6.3.0 no cumplen los requisitos. Cada una tiene menos de 100 instalaciones y una cuota inferior al 70%.
 
-<Accordion title="Does Tagged mode support all condition types?">
-
-Yes. Tagged mode supports all validation rule operators and fields, including And/Or logic, Geo, OS version, SDK version, and Event value.
+Si ninguna versión cumple las tres condiciones en un día determinado, AppsFlyer no actualiza la lista de versiones más recientes ese día. Esto significa que la regla podría no bloquear el tráfico como se espera hasta que una versión cumpla los requisitos.
 
 </Accordion>
 
-<Accordion title="Will tagged data appear in blocked reports?">
+<Accordion title="¿Cómo puedo bloquear la atribución de instalaciones o eventos in-app procedentes de impresiones?">
 
-No. Tagged data isn’t classified as blocked traffic. Tagged traffic maps as Tagged and is considered a subset of valid traffic. It’s visible in valid reports in Data Locker.
+Utiliza una regla de validación cuando quieras evitar la atribución procedente de interacciones basadas en impresiones y mantener la atribución únicamente para clics válidos. Si no se encuentra una fuente de medios válida basada en clics, la instalación se atribuye como orgánica. Esta configuración puede ayudar a abordar escenarios de atribución relacionados con el secuestro de instalaciones.
 
-</Accordion>
+Para configurar la regla:
 
-<Accordion title="Where can I view tagged data?">
+* En **Fuentes de tráfico**, selecciona **Todo el tráfico no orgánico.**
+* En **Condiciones**, selecciona **Tipo de toque de atribución**.
+  * Configura el operador como **En la lista**.
+  * Selecciona **Impresiones**.
+* En **Acción**, selecciona **Bloquear atribución y corregir a la última fuente de medios válida**.
 
-Use Data Locker or raw data export reports to view tagged validation rule data. Tagged installs are available in tagged installs reports, and tagged in-app events are available in tagged in-app events reports.
-
-Tagged data isn’t visible in the Protect360 dashboard or Fraud Protection Suite.
-
-</Accordion>
-
-<Accordion title="Can I change a rule from Tagged to Implemented at any time?">
-
-Yes. After you review the export data and confirm that the rule works as expected, edit the rule, set Detection status to Implemented, and save the rule. From that moment, the rule actively blocks matching traffic according to the selected rule outcome.
+No selecciones **Marcar instalaciones como inválidas y no atribuirlas** para este caso de uso. Esa acción está pensada para instalaciones que consideras no válidas o falsas. Si la instalación es real, pero no quieres atribuirla a una interacción basada en impresiones, utiliza **Bloquear atribución y corregir a la última fuente de medios válida** en su lugar.
 
 </Accordion>
 
-<Accordion title="Is there a limit to how many rules can be set to Tagged?">
+<Accordion title="¿El modo Tagged admite todos los tipos de condiciones?">
 
-Tagged mode is available for Premium customers. There is no strict limit to the number of rules that can be set to Tagged. As a best practice, review tagged rules and change them to Implemented when you’re confident in the rule accuracy.
+Sí. El modo Tagged admite todos los operadores y campos de las reglas de validación, incluida la lógica And/Or, Geo, OS version, SDK version y Event value.
 
 </Accordion>
 
-<Accordion title="Traits and limitations">
+<Accordion title="¿Los datos Tagged aparecerán en los reportes de elementos bloqueados?">
 
-| Trait | Description |
+N.º Los datos Tagged no se clasifican como tráfico bloqueado. El tráfico Tagged se identifica como Tagged y se considera un subconjunto del tráfico válido. Es visible en los reportes válidos de Data Locker.
+
+</Accordion>
+
+<Accordion title="¿Dónde puedo ver los datos Tagged?">
+
+Utiliza Data Locker para ver los datos Tagged de las reglas de validación. Las instalaciones Tagged están disponibles en el informe de instalaciones y los eventos in-app Tagged están disponibles en el reporte de evento in-app.
+
+Los datos Tagged no son visibles en el dashboard de Protect360 ni en el paquete de protección contra el fraude.
+
+</Accordion>
+
+<Accordion title="¿Puedo cambiar una regla de Tagged a Implemented en cualquier momento?">
+
+Sí. Después de revisar los datos exportados y confirmar que la regla funciona según lo previsto, edita la regla, configura la detección como Implemented y guarda la regla. A partir de ese momento, la regla bloquea activamente el tráfico que coincide según el Rule outcome seleccionado.
+
+</Accordion>
+
+<Accordion title="¿Existe un límite en la cantidad de reglas que pueden configurarse como Tagged?">
+
+El modo Tagged está disponible para los clientes Premium. No existe un límite estricto para la cantidad de reglas que pueden configurarse como Tagged. Como práctica recomendada, revisa las reglas Tagged y cámbialas a Implemented cuando tengas la certeza de que son precisas.
+
+</Accordion>
+
+<Accordion title="Rasgos y limitaciones">
+
+| Caducado | Descripción |
 | --- | --- |
-| Account user access | Only account users with <Anchor target="_blank" href="/marketers/docs/user-management">appropriate permissions</Anchor> can view, add, and edit Validation Rules. |
-| User acquisition | Validation rules apply to installs, re-installs, and re-attributions (when the app was removed from the device). They do not apply in cases of re-engagement, meaning when the app is still on the device. |
-| Automatic rule deactivation | If you create rules:<ul><li>using Protect360 sources or conditions, and then your Protect360 license or trial expires, the rules are automatically deactivated.</li></ul> |
-| Ad networks | Require advertiser permission to **View validation rules** to view rule details. **Note**: Rule names are always visible (including in raw data).<br /><br /><Anchor target="_blank" href="/partners/docs/validation-rules-for-ad-networks-and-agencies">Learn more about validation rules for ad networks</Anchor> |
-| Agencies | Require advertiser permission to:<ul><li>**View validation rules** to view rule details. **Note**: Rule names are always visible (including in raw data).</li><li>**Add validation rules** to add and edit rules. **Note**: Agencies can't edit rules created by advertisers.</li><li>**Access Protect360 dashboard & raw data** to view and add rules with Protect360 conditions.</li></ul><Anchor target="_blank" href="/partners/docs/validation-rules-for-ad-networks-and-agencies">Learn more about validation rules for agencies</Anchor> |
-| Unique users | If you have more than 100 in-app events configured, then even if you use Validation Rules to invalidate certain in-app events, the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#limitations">limitation for unique users count</Anchor> still applies. Meaning events over 100 don't have unique users counted, even if they are invalidated by Validation Rules. |
-| SKAN | Not supported |
-| Engagement condition | The **Engagement** condition supports blocking only the **click\_to\_app** and **view** engagement types. Other engagement types aren't supported. |
+| Acceso de usuario a la cuenta | Solo los usuarios de la cuenta con los <Anchor target="_blank" href="/marketers/es/docs/user-management">permisos adecuados</Anchor> pueden ver, agregar y editar reglas de validación. |
+| Adquisición de usuarios | Las reglas de validación se aplican a las instalaciones, reinstalaciones y reatribuciones (cuando la aplicación se eliminó del dispositivo). No se aplican en casos de re-engagement, es decir, cuando la aplicación aún está en el dispositivo. |
+| Desactivación automática de reglas | Si creas reglas:<ul><li>que utilizan fuentes o condiciones de Protect360 y, posteriormente, tu licencia o prueba de Protect360 caduca, las reglas se desactivan automáticamente.</li></ul> |
+| Redes publicitarias | Requieren el permiso del anunciante **Ver reglas de validación** para ver los detalles de las reglas. **Nota**: Los nombres de las reglas siempre son visibles (también en el raw data).<br /><br /><Anchor target="_blank" href="/partners/es/docs/validation-rules-for-ad-networks-and-agencies">Saber más sobre las reglas de validación para las ad networks</Anchor> |
+| Agencias | Requieren permiso del anunciante para:<ul><li>**Ver reglas de validación** para ver los detalles de las reglas. **Nota**: Los nombres de las reglas siempre son visibles (también en el raw data).</li><li>**Agregar reglas de validación** para agregar y editar reglas. **Nota**: Las agencias no pueden editar las reglas creadas por los anunciantes.</li><li>**Acceder al dashboard de Protect360 y al raw data** para ver y agregar reglas con las condiciones de Protect360.</li></ul><Anchor target="_blank" href="/partners/es/docs/validation-rules-for-ad-networks-and-agencies">Saber más sobre las reglas de validación para agencias</Anchor> |
+| Usuarios únicos | Si tienes configurados más de 100 eventos in-app, aunque utilices reglas de validación para invalidar determinados eventos in-app, la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#limitations">limitación del recuento de usuarios únicos</Anchor> seguirá aplicándose. Esto significa que los eventos que superen los 100 no contabilizarán usuarios únicos, aunque se invaliden mediante reglas de validación. |
+| SKÁN | No compatible |
+| Aleatorio | La condición de **engagement** admite el bloqueo únicamente de los tipos de engagement **click\_to\_app** y **view**. No se admiten otros tipos de engagement. |
 
 </Accordion>
 
-<div data-zendesk-anchors="01H8VFA2ADGT4AMC0NGDFXRB6Z=overview 01H8VFA2ADQVCR8RYV9SBG52R7=rule-builder h_01KTHT74EKM95D26AJJNCFG0XZ=use-categorized-dimensions h_01JK5G66CM9TCDK6GATNZC4QMW=note-2 h_01KQER0NTPGGC7RYVBGKTZP02S=validation-rule-examples h_01J4HRXAH6DEXXQZZ3YAWHY4TP=bulk-upload h_01M22JGTYB4YJXBRVWB8RDBK86=note h_01JWX0RVRCNAQ0SVRDMAJ5HPW1=note-1 procedures=additional-features 01H8VFA2AF6M84FKKVDTCXJEFR=additional-features h_01JK5GDDGAZRKBVXZCCZ0RRB56=note-2 h_01KQERXDE5SPB182AFA2CM2C78=how-tagged-mode-works h_01KQERXDE6668BR0EFDX9F5CYZ=rule-outcome-configuration h_01KQERXDE9AM8TWAAQK6XHETSA=what-to-expect-when-configuring-a-rule h_01KQERXDEAQHC3SVFRT8V5X5S3=example-match-logic h_01KQERXDEA63J9ST9YSF27JKRD=example-do-not-match-logic h_01KQERXDEBEKF59KBVYTBWS471=set-a-rule-to-tagged-mode h_01KQERXDEC1574K0V677N6ZGSY=analyze-tagged-data h_01KQERXDEG3ZQPEYTSXAMMJNYC=change-a-tagged-rule-to-implemented 01H8VFA2AG5DW5Z9G9FPSWM464=faq h_01KHRB9CBYYPK73K7SVC3N4B6A=example-not-in-last h_01KHRB9CC3BBTC41SXC482S7EY=example-not-in-last-major h_01KHRB9CC6GJDNH97N0GSHDNKE=understand-how-the-condition-works-with-multiple-apps" />
+<div data-zendesk-anchors="overview=descripci%C3%B3n-general 01H8VFA2ADGT4AMC0NGDFXRB6Z=descripci%C3%B3n-general rule-builder=creador-de-reglas 01H8VFA2ADQVCR8RYV9SBG52R7=creador-de-reglas use-categorized-dimensions=usa-dimensiones-clasificadas-por-categor%C3%ADas h_01KTHT74EKM95D26AJJNCFG0XZ=usa-dimensiones-clasificadas-por-categor%C3%ADas h_01JK5G66CM9TCDK6GATNZC4QMW=nota-2 validation-rule-examples=ejemplos-de-reglas-de-validaci%C3%B3n h_01KQER0NTPGGC7RYVBGKTZP02S=ejemplos-de-reglas-de-validaci%C3%B3n bulk-upload=carga-masiva h_01J4HRXAH6DEXXQZZ3YAWHY4TP=carga-masiva h_01M22JGTYB4YJXBRVWB8RDBK86=nota h_01JWX0RVRCNAQ0SVRDMAJ5HPW1=nota-1 procedures=funciones-adicionales 01H8VFA2AF6M84FKKVDTCXJEFR=funciones-adicionales h_01JK5GDDGAZRKBVXZCCZ0RRB56=nota-2 how-tagged-mode-works=c%C3%B3mo-funciona-el-modo-tagged h_01KQERXDE5SPB182AFA2CM2C78=c%C3%B3mo-funciona-el-modo-tagged rule-outcome-configuration=configuraci%C3%B3n-del-resultado-de-la-regla h_01KQERXDE6668BR0EFDX9F5CYZ=configuraci%C3%B3n-del-resultado-de-la-regla what-to-expect-when-configuring-a-rule=qu%C3%A9-puedes-esperar-al-configurar-una-regla h_01KQERXDE9AM8TWAAQK6XHETSA=qu%C3%A9-puedes-esperar-al-configurar-una-regla example-match-logic=ejemplo-l%C3%B3gica-de-coincidencia h_01KQERXDEAQHC3SVFRT8V5X5S3=ejemplo-l%C3%B3gica-de-coincidencia example-do-not-match-logic=ejemplo-no-coincidir-con-la-l%C3%B3gica h_01KQERXDEA63J9ST9YSF27JKRD=ejemplo-no-coincidir-con-la-l%C3%B3gica set-a-rule-to-tagged-mode=configurar-una-regla-en-modo-tagged h_01KQERXDEBEKF59KBVYTBWS471=configurar-una-regla-en-modo-tagged analyze-tagged-data=analizar-datos-tagged h_01KQERXDEC1574K0V677N6ZGSY=analizar-datos-tagged change-a-tagged-rule-to-implemented=cambiar-una-regla-tagged-a-implemented h_01KQERXDEG3ZQPEYTSXAMMJNYC=cambiar-una-regla-tagged-a-implemented faq=preguntas-frecuentes 01H8VFA2AG5DW5Z9G9FPSWM464=preguntas-frecuentes h_01KHRB9CBYYPK73K7SVC3N4B6A=ejemplo-no-en-las-%C3%BAltimas h_01KHRB9CC3BBTC41SXC482S7EY=ejemplo-no-en-las-%C3%BAltimas-mayores h_01KHRB9CC6GJDNH97N0GSHDNKE=comprende-c%C3%B3mo-funciona-esta-condici%C3%B3n-con-varias-apps h_01M6BACJ5QD39N6V4G455EFA96=c%C3%B3mo-appsflyer-determina-la-versi%C3%B3n-m%C3%A1s-reciente h_01M6BACJ5QAZZNGT5MMGB9Q8WY=ejemplo-c%C3%A1lculo-de-la-versi%C3%B3n-m%C3%A1s-reciente" />

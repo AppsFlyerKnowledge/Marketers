@@ -1,5 +1,5 @@
 ---
-title: OneLink Standalone Deep Linking Suite
+title: Standalone Deep Linking Suite de OneLink
 metadata:
   keywords:
     - Marketers
@@ -12,66 +12,65 @@ x-zendesk:
     - Marketers
     - Smart Banners and Scripts
   created_at: '2026-03-12T13:38:32Z'
-  edited_at: '2026-07-08T13:07:11Z'
+  edited_at: '2026-08-12T12:24:14Z'
   id: 44703014449809
-  locale: en-us
+  locale: es
   section: Deep linking using OneLink
   section_id: 6551203111057
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/44703014449809-OneLink-Standalone-Deep-Linking-Suite
+  url: https://support.appsflyer.com/hc/es/articles/44703014449809
 ---
-> **At a glance:** The OneLink Standalone Deep Linking Suite gives you deep linking and redirection for owned media journeys (email-to-app, web-to-app, QR-to-app, social-to-app, referrals, SMS/text, etc.), without requiring a paid media attribution package.
+> **De un vistazo:** la Standalone Deep Linking Suite de OneLink te ofrece Deep Linking y redirección para recorridos en medios propios (de correo electrónico a app, de web a app, de QR a app, de redes sociales a app, referencias, SMS/texto, etc.), sin necesidad de un paquete de atribución de medios pagados.
 
-## About the OneLink Standalone Deep Linking Suite
+## Acerca de la Standalone Deep Linking Suite de OneLink
 
-The Standalone Deep Linking Suite is built for teams that need **reliable, scalable deep linking, redirection, and attribution for owned channels**, without integrations involving paid media channels and partner postbacks.
+La Standalone Deep Linking Suite está diseñada para equipos que necesitan **Deep Linking, redirección y atribución fiables y escalables para canales propios**, sin integraciones que impliquen canales de medios pagados ni postbacks de Partners.
 
-It is available in three subscription plans:
+Está disponible en tres planes de suscripción:
 
-* Standard
+* Estándar
 * Advanced
 * Premium
 
-### What’s included
+### Lo que incluye
 
-All Standalone Deep Linking Suite plans support core owned media use cases, including:
+Todos los planes de la Standalone Deep Linking Suite admiten casos de uso principales de medios propios, entre ellos:
 
-* **Deep linking and deferred deep linking** to route users to the right in-app destination
-* **Cross-platform redirection and fallback behavior** when the app isn’t installed
-* **Self-serve link creation and management** in the AppsFlyer UI
+* **Deep Linking y Deferred deep linking** para dirigir a los usuarios al destino correcto in-app
+* **Redirección multiplataforma y comportamiento de fallback** cuando la app no está instalada
+* **Creación y gestión de enlaces en autoservicio** en la interfaz de usuario de AppsFlyer
 
-The plans differ mainly by scale, link management capabilities, and access to advanced features such as branded domains, bulk link creation, Smart Banners, OneLink API, ESP integration, and Data Locker.
+Los planes se diferencian principalmente por la escala, las capacidades de gestión de enlaces y el acceso a funciones avanzadas como dominios de marca, creación masiva de enlaces, Smart Banners, la API de OneLink, integración con ESP y Data Locker.
 
-## Standalone Deep Linking Suite plans comparison
+## Comparación de planes de la Standalone Deep Linking Suite
 
-### Key differences
+### Diferencias clave
 
-| Plan | Best for | Highlights |
+| Plan | Ideal para | Aspectos destacados |
 | --- | --- | --- |
-| **Standard** | Getting started with owned deep linking | Includes core deep linking and deferred deep linking capabilities for owned media journeys, as well as Smart Script and User Invites. |
-| **Advanced** | Scaling link operations across teams | Includes everything in **Standard**, plus bulk link creation, branded domains, Smart Banners, OneLink API (up to 100K requests per month), and UI raw data export. |
-| **Premium** | Running advanced owned deep linking programs | Includes everything in **Advanced**, plus higher OneLink API limits (up to 7.5M requests per month), ESP integration, and Data Locker. |
+| **Estándar** | Primeros pasos con Deep Linking de medios propios | Incluye funcionalidades principales de deep linking y deferred deep linking para recorridos de medios propios, así como Smart Script y User Invites. |
+| **Advanced** | Escalar las operaciones de enlaces entre equipos | Incluye todo lo de **Standard**, además de creación masiva de enlaces, dominios de marca, Smart Banners, la API de OneLink (hasta 100K solicitudes al mes) y exportación de raw data desde la interfaz de usuario. |
+| **Premium** | Ejecutar programas avanzados de Deep Linking de medios propios | Incluye todo lo de **Advanced**, además de límites más altos en la API de OneLink (hasta 7,5M solicitudes al mes), integración con ESP y Data Locker. |
 
-### Feature comparison
+### Comparación de funciones
 
-| Capability | Standard | Advanced | Premium |
+| Capacidad | Estándar | Advanced | Premium |
 | --- | --- | --- | --- |
-| User Invites | ✓ | ✓ | ✓ |
-| Smart Banners | **x** | ✓ | ✓ |
-| Smart Script | ✓ | ✓ | ✓ |
-| Branded domains | **x** | ✓ | ✓ |
-| Bulk Links | **x** | ✓ | ✓ |
-| OneLink API | **x** | Up to 100K requests/mo. | Up to 7.5M requests/mo. |
-| ESP integration | **x** | **x** | ✓ |
-| Data Locker | **x** | **x** | ✓ |
-| UI raw data export | **x** | ✓ | ✓ |
-| Customer Success Manager | **x** | ✓ | ✓ |
+| Invitaciones de usuarios | ✓ | ✓ | ✓ |
+| Banners inteligentes | . | ✓ | ✓ |
+| Script inteligente | ✓ | ✓ | ✓ |
+| Dominios de marca | . | ✓ | ✓ |
+| Enlaces en masa | . | ✓ | ✓ |
+| API de OneLink | . | Hasta 100K solicitudes/mes. | Hasta 7,5M solicitudes/mes. |
+| Integración ESP | . | . | ✓ |
+| Casillero de datos | . | . | ✓ |
+| Exportación de raw data desde la interfaz de usuario | . | ✓ | ✓ |
+| Gestor de Éxito de Clientes | . | ✓ | ✓ |
 
-> 📘 **Notes**
+> 📘 **Notas**
 >
-> * The Standalone Deep Linking Suite is intended for owned media use cases only. Paid media attribution partner integrations aren’t included in these plans.
-> * Most OneLink features require a paid <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">AppsFlyer subscription plan</Anchor>.
-> * If your subscription plan is canceled, most OneLink features will no longer be available, and relevant end-user flows may be negatively affected.
-> * Deferred deep linking is not supported for Zero plan subscriptions.
+> * La suite independiente de Deep Linking está pensada solo para casos de uso de medios propios. Las integraciones con partners de atribución de medios pagados no están incluidas en estos planes.
+> * La mayoría de las funciones de OneLink requieren un <Anchor target="_blank" href="/marketers/es/docs/account-management-plans-payments-and-billing#appsflyer-plans">plan de suscripción de pago de AppsFlyer</Anchor>.
+> * Si se cancela tu plan de suscripción, la mayoría de las funciones de OneLink dejarán de estar disponibles y los flujos relevantes de usuario final pueden verse afectados negativamente.
+> * El deferred deep linking no es compatible con las suscripciones al plan Zero.
 
-<div data-zendesk-anchors="about-onelink-standalone=about-the-onelink-standalone-deep-linking-suite h_01KKH4TJ3NGERKNRB3T5CH45HR=about-the-onelink-standalone-deep-linking-suite what%E2%80%99s-included=whats-included h_01KKH59BENG1KH3CBTS5MKC47J=whats-included onelink-standalone-plans-comparison=standalone-deep-linking-suite-plans-comparison h_01KKH4TJ3N974VR9QNR0R7JSC7=standalone-deep-linking-suite-plans-comparison h_01KKH4TJ3NMQFNZNJK6NZBFTGQ=key-differences h_01KKH4TJ3NHNZHYCN37CHNKHF0=feature-comparison h_01KKH5C2G8AFK7NVA0GTGKQZ7K=notes" />
+<div data-zendesk-anchors="about-onelink-standalone=acerca-de-la-standalone-deep-linking-suite-de-onelink h_01KKH4TJ3NGERKNRB3T5CH45HR=acerca-de-la-standalone-deep-linking-suite-de-onelink what%E2%80%99s-included=lo-que-incluye h_01KKH59BENG1KH3CBTS5MKC47J=lo-que-incluye onelink-standalone-plans-comparison=comparaci%C3%B3n-de-planes-de-la-standalone-deep-linking-suite h_01KKH4TJ3N974VR9QNR0R7JSC7=comparaci%C3%B3n-de-planes-de-la-standalone-deep-linking-suite key-differences=diferencias-clave h_01KKH4TJ3NMQFNZNJK6NZBFTGQ=diferencias-clave feature-comparison=comparaci%C3%B3n-de-funciones h_01KKH4TJ3NHNZHYCN37CHNKHF0=comparaci%C3%B3n-de-funciones h_01KKH5C2G8AFK7NVA0GTGKQZ7K=notas" />

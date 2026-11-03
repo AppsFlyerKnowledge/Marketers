@@ -1,5 +1,5 @@
 ---
-title: Cohort analytics via Data Locker
+title: Análisis de cohortes a través de Data Locker
 metadata:
   keywords:
     - Advertisers
@@ -14,83 +14,83 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2021-10-14T08:46:00Z'
-  edited_at: '2025-03-10T14:46:25Z'
+  edited_at: '2026-08-12T11:49:40Z'
   id: 4408945472529
-  locale: en-us
+  locale: es
   section: Analytics and aggregate reporting/APIs
   section_id: 6550976670225
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4408945472529-Cohort-analytics-via-Data-Locker
+  url: https://support.appsflyer.com/hc/es/articles/4408945472529
 ---
-> **At a glance**: Cohort analytics in Data Locker contains aggregated data of all elements in the advertising hierarchy. Reports contain data of users attributing in the previous 365 days. This report is available to advertisers who have raw data or Cohort API, or both as part of their subscription. It means that a Data Locker subscription isn't required for this report.
+> **En resumen:** El análisis de cohortes en Data Locker incluye datos agregados de todos los elementos de la estructura publicitaria. Los reportes recogen datos de los usuarios atribuidos en los últimos 365 días. Este reporte está disponible para los anunciantes que tengan raw data, API de cohorte o ambos, como parte de su suscripción. Esto significa que no se requiere una suscripción a Data Locker para este reporte.
 
-## Cohort analytics in Data Locker
+## Análisis de cohortes en Data Locker
 
-In some cases, attribution raw data in AppsFlyer is <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">restricted</Anchor> due to media source data-sharing policies or your <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">privacy-preserving policies.</Anchor> The restriction includes all attribution-related fields like campaign and adset. Cohort reports provide you with aggregated data that can be used as an alternative to raw data.
+En algunas ocasiones, la atribución de raw data en AppsFlyer está <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">restringida</Anchor> debido a políticas de compartición de datos de las fuentes de medios o de tus <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">políticas de preservación de la privacidad.</Anchor> Esta restricción incluye todos los campos relacionados con la atribución, como campaña y conjunto de anuncios. Los reportes de cohorte te proporcionan datos agregados que se pueden utilizar como alternativa a los raw data.
 
-<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8q_4xv83wHkl4fs6jndEffRu-RHsPobBRfxDG-bUNXb0pOnvJH4QT0nXKdWvi3JPtVUBegTFbxIEe/pub?output=xlsx">Download example report</Anchor>
+<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8q_4xv83wHkl4fs6jndEffRu-RHsPobBRfxDG-bUNXb0pOnvJH4QT0nXKdWvi3JPtVUBegTFbxIEe/pub?output=xlsx">Descargar reporte de ejemplo</Anchor>
 
 <div id="enable-data-locker" />
 
-<Accordion title="Enable Data Locker">
+<Accordion title="Habilitar Data Locker">
 
-The report is available to Data Locker, Cohort API, and raw data subscribers. To enable the report in <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker,</Anchor> complete one of the following procedures.
+El reporte está disponible para los suscriptores de Data Locker, API de cohorte y raw data. Para habilitar el reporte en <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">Data Locker,</Anchor> completa uno de los siguientes procedimientos.
 
-| Do you currently get data via Data Locker? | Procedure |
+| ¿Obtienes datos actualmente a través de Data Locker? | Procedimiento |
 | --- | --- |
-| Yes | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/13d984aa18df9aacf5a8977c7dd3f8ca950df5a34e371014a72836981718399c-33338207213329.png)To add the Cohort reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Report > Data Locker**.</li><li>Select all the reports in the **Cohort analytics** section.</li><li>Click **Save configuration**.<br />The reports will be available on the next day by 10:00 UTC.</li></ol> |
-| No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/13d984aa18df9aacf5a8977c7dd3f8ca950df5a34e371014a72836981718399c-33338207213329.png)**To set up Data Locker**:<ol><li>Complete the first-time Data Locker ( <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#set-up-data-locker">advertiser</Anchor> \| <Anchor target="_blank" href="/partners/docs/data-locker-for-partners">partner</Anchor> ) setup.</li><li>Add the Cohort reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Report > Data Locker**.</li><li>Select all the reports in the **Cohort analytics** section.</li><li>Click **Save configuration**.<br />The reports will be available on the next day by 10:00 UTC.</li></ol></li></ol> |
+| Sí | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)Para agregar los reportes de cohorte a Data Locker:<ol><li>En AppsFlyer, desde el menú lateral, selecciona **Reporte > Data Locker**.</li><li>Selecciona todos los reportes en la sección **Análisis de cohorte**.</li><li>Haz clic en **Guardar configuración**.<br />Los reportes estarán disponibles al día siguiente a las 10:00 UTC.</li></ol> |
+| No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)**Para configurar Data Locker**:<ol><li>Completa la configuración inicial de Data Locker (<Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers#set-up-data-locker">anunciante</Anchor> \| <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners">partner</Anchor>).</li><li>Agrega los reportes de cohorte a Data Locker:<ol><li>En AppsFlyer, desde el menú lateral, selecciona **Reporte > Data Locker**.</li><li>Selecciona todos los reportes en la sección **Análisis de cohorte**.</li><li>Haz clic en **Guardar configuración**.<br />Los reportes estarán disponibles al día siguiente a las 10:00 UTC.</li></ol></li></ol> |
 
 </Accordion>
 
-You can load the data into your BI systems and use them as part of your campaign performance and optimization processes.
+Puedes cargar los datos en tus sistemas de BI y usarlos como parte de tus procesos de rendimiento y optimización de campañas.
 
-**Metrics available**
+**Métricas disponibles**
 
-The metrics available are revenue, unique users performing an event and the number of event occurrences. To calculate cost-related metrics like ROI, and ROAS you need both revenue and cost metrics. Revenue metrics are in Cohort, and cost metrics are provided by <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">ROI360 Cost ETL</Anchor>.
+Las métricas disponibles incluyen ingresos, usuarios únicos que realizan un evento y el número de veces que ocurre el evento. Para calcular métricas relacionadas con el costo, como ROI y ROAS, se necesitan tanto métricas de ingresos como de costos. Las métricas de ingresos están en el cohorte y las métricas de costos son proporcionadas por <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports">ROI360 Cost ETL</Anchor>.
 
 <div id="facts" />
 
-<Accordion title="Cohort analytics facts">
+<Accordion title="Datos sobre análisis de cohortes">
 
-| Reports available | The following reports are available for download. The reports types are described in more detail in <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard#cohort-principles">Cohort dashboard.</Anchor><ul><li>**User acquisition:** attributed to a user acquisition media source including LTV occurring during re-engagement windows.</li><li>**Retargeting:** attributed to a retargeting media source for events occurring:<ul><li>During a re-engagement window</li><li>As a result of re-attributions</li></ul></li><li>**Unified:** display data under the last touch media source bringing the user according to AppsFlyer <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">double attribution</Anchor> rules. Meaning that LTV occurring during re-engagements displays under the retargeting media source and not under the UA media source.</li></ul> |
+| Reportes disponibles | Los reportes siguientes están disponibles para descargar. Los tipos de reportes se describen con más detalle en el <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard#cohort-principles">Dashboard de cohorte</Anchor>.<ul><li>**Adquisición de usuarios:** se atribuye a una fuente de medios de adquisición de usuarios, incluyendo el LTV durante las ventanas de reactivación.</li><li>**Retargeting:** se atribuye a una fuente de medios de retargeting para eventos que ocurren:<ul><li>Durante una ventana de re-engagement</li><li>Como resultado de reatribuciones</li></ul></li><li>**Unificado:** muestra datos bajo la última fuente de medios táctiles que lleva al usuario de acuerdo con las reglas de <Anchor target="_blank" href="/marketers/es/docs/resolve-retargeting-double-attribution">doble atribución</Anchor> de AppsFlyer. Esto significa que el LTV durante los re-engagements se muestra bajo la fuente de medios de retargeting y no bajo la de UA.</li></ul> |
 | --- | --- |
-| Reporting period | Users converting during the previous 365 days. In other words, each day the reports include the user converting during the previous 365 days. |
-| Report structure | The schema of each report (the dimensions and metrics included) is fixed and can't be edited. See [report structure](/docs/cohort-analytics-via-data-locker#report-structure). |
-| Report delivery | See [Enable Cohort reports in Data Locker](/docs/cohort-analytics-via-data-locker#enable-data-locker). |
-| Data freshness | <ul><li>Daily.</li><li>Metrics are calculated using data available at midnight UTC. In other words, at the end of the day.</li><li>Reports are available in Data Locker in the date-time (dt) folder by 10:00 UTC. For example, Monday's data is available on Tuesday at 10:00 UTC in the Monday folder.</li></ul> |
-| Impact of partner retention policies | Consider that some partners implement a data retention policy. In this case, events occurring after the end of the retention period are considered organic in the Cohort reports.<br /><br />Example: SRN A has a data retention policy of 180 days. User events until day 180 are attributed to SRN A. Events that occur after 180 days are considered organic. |
+| Periodo del reporte | Usuarios que han convertido en los últimos 365 días. Es decir, cada día el reporte incluye a los usuarios que han convertido en los 365 días anteriores. |
+| Estructura del reporte | El esquema de cada reporte (las dimensiones y métricas incluidas) es fijo y no se puede modificar. Consulta [estructura del reporte](/docs/cohort-analytics-via-data-locker#report-structure). |
+| Entrega de reportes | Consulta [Habilitar reportes de cohorte en Data Locker](/docs/cohort-analytics-via-data-locker#enable-data-locker). |
+| Actualización de datos | <ul><li>A diario.</li><li>Las métricas se calculan utilizando los datos disponibles a medianoche en horario UTC. Es decir, al final del día.</li><li>Los reportes están disponibles en Data Locker en la carpeta de fecha-hora (dt) a las 10:00 UTC. Por ejemplo, los datos del lunes están disponibles el martes a las 10:00 UTC en la carpeta del lunes.</li></ul> |
+| Impacto de las políticas de retención de partners | Considera que algunos partners implementan una política de retención de datos. En este caso, los eventos ocurridos después del fin del periodo de retención se consideran orgánicos en los reportes de cohorte.<br /><br />Ejemplo: La SRN A tiene una política de retención de datos de 180 días. Los eventos de usuario hasta el día 180 se atribuyen al SRN A. Los eventos que ocurren después de 180 días se consideran orgánicos. |
 
 </Accordion>
 
 <div id="report-structure" />
 
-<Accordion title="Report structure">
+<Accordion title="Estructura del reporte">
 
-The report is comprised of dimensions and metrics.
+El reporte se compone de dimensiones y métricas.
 
-The format of the fields is as follows:
+El formato de los campos es como se indica a continuación:
 
-* **Dimensions**: String. The maximum length of the string is dynamic and in most instances depends on how you populate the elements of the advertising hierarchy
-* **Metrics**: Number. **Note:** The selected\_currency field format is a string.
+* **Dimensiones**: Cadena. La longitud máxima de la cadena es dinámica y, en la mayoría de los casos, depende de cómo se llenen los elementos de la jerarquía publicitaria.
+* **Métricas**: Número. **Nota:** El formato del campo selected\_currency es una cadena de texto.
 
-#### Dimensions
+#### Dimensiones
 
 <Table>
   <thead>
     <tr>
       <th>
-        Field name
+        Nombre del campo
       </th>
       <th>
-        Description
+        Descripción
       </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>
-        app\_id
+        id\_aplicación
       </td>
       <td>
         --
@@ -98,7 +98,7 @@ The format of the fields is as follows:
     </tr>
     <tr>
       <td>
-        media\_source
+        fuente\_de\_medios
       </td>
       <td>
         --
@@ -106,105 +106,113 @@ The format of the fields is as follows:
     </tr>
     <tr>
       <td>
-        conversion\_type
+        tipo\_de\_conversión
       </td>
       <td>
-        Possible values: install, install\_unified (representing installs in the unified report), re-engagement, re-attribution
-      </td>
-    </tr>
-    <tr>
-      <td>
-        attributed\_touch\_type
-      </td>
-      <td>
-        Possible values: click, impressions, pre-install, unknown, tv, null
+        Valores posibles: install, install\_unified (para instalaciones en el reporte unificado), re-engagement, re-attribution.
       </td>
     </tr>
     <tr>
       <td>
-        days\_post\_attribution
+        tipo\_táctil\_atribuido
       </td>
       <td>
-        <ul><li>The number of days elapsed since the conversion date (not the specific conversion timestamp).</li><li>Tip! Use this to calculate retention and KPI days</li></ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        event\_date
-      </td>
-      <td>
-        <ul><li>The date a user performs a given event.</li><li>Format: yyyy-mm-dd</li><li>Example: The date a user performed a given in-app event. In the case of a conversion.</li><li>Note! If the event\_name is af\_conversion, then the event date and conversion date will be the same.</li></ul>
+        Valores posibles: click, impressions, pre-install, unknown, tv, null.
       </td>
     </tr>
     <tr>
       <td>
-        conversion\_date
+        días\_post\_atribución
       </td>
       <td>
-        <ul><li>The date the conversion occurred</li><li>Format: yyyy-mm-dd</li><li>Example: The install date</li></ul>
+        * Número de días transcurridos desde la fecha de conversión (no desde la marca de tiempo específica de la conversión).
+        * Consejo: ¡Consejo! Utiliza esto para calcular los días de retención y KPIs.
       </td>
     </tr>
     <tr>
       <td>
-        event\_name
+        Cadena
       </td>
       <td>
-        Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.
+        * Fecha en que un usuario realiza un evento específico.
+        * Formato: aaaa-mm-dd
+        * Ejemplo: Fecha en que un usuario realizó un evento determinado en la aplicación. En caso de conversión.
+        * ¡Atención! ¡Nota! Si event\_name es af\_conversion, la fecha del evento y la fecha de conversión serán iguales.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        fecha\_de\_conversión
+      </td>
+      <td>
+        * Fecha de la conversión.
+        * Formato: aaaa-mm-dd
+        * Ejemplo: Fecha de instalación.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        nombre\_del\_evento
+      </td>
+      <td>
+        Identifica el evento. Algunos nombres de eventos tienen un significado específico, mientras que otros se refieren a eventos in-app establecidos por el anunciante. 
 
-        | event\_name | What did the user do |
+        | nombre\_del\_evento | ¿Qué hizo el usuario? |
         | --- | --- |
-        | af\_conversion | User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution. |
-        | af\_session | Opened the app |
-        | cohort\_uninstalls | Uninstalled the app |
-        | Advertiser defined in-app event | Performed an in-app event in the app |
+        | af\_conversion | Usuario convertido. Utiliza conversion\_type para identificar si se trata de una instalación, un re-engagement o una reatribución. |
+        | af\_session | Abrió la aplicación. |
+        | cohort\_uninstalls | Desinstaló la aplicación. |
+        | Evento in-app definido por el anunciante. | Se realizó un evento in-app. |
       </td>
     </tr>
     <tr>
       <td>
-        campaign
+        campaña única
       </td>
       <td>
-        Campaign hierarchy<br /><br />Consider: Campaign name changes not supported. Consequently, multiple names can be associated with a given campaign ID.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        campaign\_id
-      </td>
-      <td>
-        Campaign hierarchy
+        Jerarquía de campañas.
+
+        Considera: No se admiten cambios de nombre de campaña. Por lo tanto, varios nombres pueden estar asociados a un ID de campaña.
       </td>
     </tr>
     <tr>
       <td>
-        adset
+        id\_campaña
       </td>
       <td>
-        Campaign hierarchy
-      </td>
-    </tr>
-    <tr>
-      <td>
-        adset\_id
-      </td>
-      <td>
-        Campaign hierarchy
+        Jerarquía de campañas.
       </td>
     </tr>
     <tr>
       <td>
-        ad
+        conjunto de anuncios
       </td>
       <td>
-        Campaign hierarchy
+        Jerarquía de campañas.
       </td>
     </tr>
     <tr>
       <td>
-        ad\_id
+        id\_anuncio
       </td>
       <td>
-        Campaign hierarchy
+        Jerarquía de campañas.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        anuncio
+      </td>
+      <td>
+        Jerarquía de campañas.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        id\_adset
+      </td>
+      <td>
+        Jerarquía de campañas.
       </td>
     </tr>
     <tr>
@@ -212,55 +220,58 @@ The format of the fields is as follows:
         channel
       </td>
       <td>
-        Campaign hierarchy.<br /><br />[Updated October 27, 2021] At present, Meta ads doesn't populate channel in data provided via the Google Install Referrer mechanism.
+        Jerarquía de campaña.
+
+        [Actualizado el 27 de octubre de 2021] Actualmente, los Meta Ads no rellenan el canal en los datos proporcionados a través del mecanismo Google Install Referrer.
       </td>
     </tr>
     <tr>
       <td>
-        site\_id
+        id\_sitio
       </td>
       <td>
-        Campaign hierarchy
-      </td>
-    </tr>
-    <tr>
-      <td>
-        is\_primary\_attribution
-      </td>
-      <td>
-        Use to identify and deduplicate retargeting data.
+        Jerarquía de campañas.
       </td>
     </tr>
     <tr>
       <td>
-        geo
+        es\_atribución\_primaria
       </td>
       <td>
-        The ISO country code derived from the user IP address.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        agency
-      </td>
-      <td>
-        <ul><li>Agency transparency supported.</li><li>In the case of non-transparent agencies, there can be multiple rows containing the same campaign name if the advertiser and the agency both run campaigns with the same name. Don't worry. The rows aren't duplicated.</li></ul>
+        Utilízalo para identificar y deduplicar datos de retargeting.
       </td>
     </tr>
     <tr>
       <td>
-        install\_app\_store
+        geolocalización
       </td>
       <td>
-        Android apps only: The Android store from where the app was downloaded. Populated by advertisers implementing <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">multi-store Android attribution</Anchor>. If blank, it means Google Play Store.
+        Código de país ISO derivado de la dirección IP del usuario.
       </td>
     </tr>
     <tr>
       <td>
-        keywords
+        agencia
       </td>
       <td>
-        Word(s) used in the user's online search. As reported by the ad network
+        * Compatibilidad con la transparencia de agencias.
+        * En el caso de agencias no transparentes, puede haber varias filas con el mismo nombre de campaña si el anunciante y la agencia realizan campañas con el mismo nombre. No te preocupes. Las filas no están duplicadas.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        instalar\_tienda\_aplicaciones
+      </td>
+      <td>
+        Solo para aplicaciones Android: La tienda de Android desde donde se descargó la aplicación. Rellenado por los anunciantes que implementan la <Anchor target="_blank" href="/marketers/es/docs/set-up-multi-store-android-attribution">atribución en Android para múltiples tiendas</Anchor>. Si está en blanco, significa Google Play Store.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        palabras clave
+      </td>
+      <td>
+        Palabra(s) utilizada(s) en la búsqueda online del usuario. reporte de la ad network.
       </td>
     </tr>
     <tr>
@@ -268,69 +279,69 @@ The format of the fields is as follows:
         keyword\_id
       </td>
       <td>
-        [Field available starting April 27, 2022] Keyword ID returned by the ad network.
+        [Campo disponible desde el 27 de abril de 2022] ID de palabra clave devuelto por la ad network.
       </td>
     </tr>
   </tbody>
 </Table>
 
-#### Metrics
+#### Métricas
 
-| Field name | Description | Format |
+| Nombre del campo | Descripción | Formato |
 | --- | --- | --- |
-| unique\_users | Number of on-day unique users performing the event. | Number |
-| revenue\_usd | <ul><li>Amount of revenue in USD. For example, $100.56 is reflected as 100.56.</li><li>Maximum of 2 places after the decimal point.</li></ul> | Number |
-| event\_count | Number of event occurrences. | Number |
-| selected\_currency | 3-letter currency code (USD, EUR) set by you in the app settings. Format <Anchor target="_blank" href="http://www.xe.com/symbols.php#section1">ISO-4217</Anchor>. This is the same currency used to display revenue in Cohort in the user interface. | String |
-| revenue\_selected\_currency | <ul><li>Amount of revenue in the selected currency. For example, if the selected currency is EUR, then €1234.56 is reflected as 1234.56</li><li>Maximum of 2 places after the decimal point</li></ul> | Number |
+| usuarios\_únicos | Número de usuarios únicos que realizaron el evento en ese día. | Número |
+| ingresos\_usd | <ul><li>Monto de ingresos en USD. Por ejemplo, $100.56 se refleja como 100.56.</li><li>Máximo de 2 posiciones después del punto decimal.</li></ul> | Número |
+| recuento\_eventos | Número de veces que ocurrió el evento. | Número |
+| selected\_currency | Código de moneda de 3 letras (USD, EUR) configurado por ti en los ajustes de la aplicación. Formato <Anchor target="_blank" href="http://www.xe.com/symbols.php#section1">ISO-4217</Anchor>. Es la moneda usada para mostrar ingresos en Cohorte en la interfaz de usuario. | Cadena |
+| revenue\_selected\_currency | <ul><li>Cantidad de ingresos en la moneda seleccionada. Por ejemplo, si la moneda seleccionada es EUR, entonces €1234.56 se refleja como 1234.56.</li><li>Máximo de 2 posiciones después del punto decimal</li></ul> | Número |
 
 </Accordion>
 
 <div id="bi-developer-considerations" />
 
-<Accordion title="BI developer considerations">
+<Accordion title="Consideraciones para desarrolladores de BI">
 
-**Scope of data in the report**
+**Alcance de los datos en el reporte**
 
-The reports contain user acquisition installs and retargeting re-attributions and re-engagements, and their related in-app events.
+Los reportes incluyen instalaciones de adquisición de usuarios, reatribución de retargeting y re-engagements, y sus eventos in-app relacionados.
 
-You can load unified, user acquisition, and retargeting reports separately or together into your BI. If you load them together and want to filter the views on your own:
+Puedes cargar reportes unificados, de adquisición de usuarios y de retargeting por separado o todos juntos en tu BI. Si los cargas juntos y deseas filtrar las vistas por tu cuenta:
 
-* For unified, use the is\_primary\_attribution=true or null field.
-* For user acquisition, use conversion\_type=Install.
-* For retargeting, use conversion\_type=re-engagement or re-attribution.
+* Para unificados, utiliza el campo is\_primary\_attribution=true o null.
+* Para adquisición de usuarios, utiliza conversion\_type=Install.
+* Para retargeting, utiliza conversion\_type=re-engagement o re-attribution.
 
-If you just use the unified view in your data loading process, you can use logic to split the data between campaign types, which means, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type=install, install\_unified, re-engagement, or re-attribution. See <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">Double attribution of retargeting events.</Anchor>
+Si solo utilizas la vista unificada en tu proceso de carga de datos, puedes usar la lógica para dividir los datos entre tipos de campaña, es decir, atribución de usuarios (instalaciones) y retargeting (re-engagements). Para hacerlo, usa conversion\_type=install, install\_unified, re-engagement o re-attribution. Consulta <Anchor target="_blank" href="/marketers/es/docs/resolve-retargeting-double-attribution">Doble atribución de eventos de retargeting.</Anchor>
 
-**Field-level considerations**
+**Consideraciones a nivel de campo**
 
-* Use post-attribution days to enable easy calculation of retention metrics.
-* Calculating unique users using campaign name and campaign ID dimensions: If you can disregard campaign name granularity, you can sum unique count on campaign ID and the metrics are correct.
-* You can aggregate the data using the campaign hierarchy fields.
-* Revenue in USD is calculated using the exchange rate on the event day.
-* Ad revenue events are included where available but can update with a lag of up to 3 days.
+* Usa los días posteriores a la atribución para facilitar el cálculo de métricas de retención.
+* Cálculo de usuarios únicos usando las dimensiones de nombre de campaña e ID de campaña: Si puedes ignorar la precisión del nombre de la campaña, puedes sumar el recuento único por ID de campaña y las métricas serán correctas.
+* Puedes agregar los datos usando los campos de jerarquía de la campaña.
+* Los ingresos en USD se calculan usando el tipo de cambio del día del evento.
+* Los eventos de ingresos publicitarios se incluyen cuando están disponibles, pero pueden actualizarse con un retraso de hasta 3 días.
 
-**General considerations**
+**Consideraciones generales**
 
-The data of all apps is provided in a single file. Use the App ID field to segregate data per app or set Data Locker to segregate by app.
+Los datos de todas las aplicaciones se proporcionan en un solo archivo. Usa el campo ID de aplicación para segregar los datos por aplicación o configura Data Locker para hacerlo.
 
 </Accordion>
 
 <div id="use-cases" />
 
-<Accordion title="Use cases">
+<Accordion title="Casos de uso">
 
-The following are examples of some popular, practical applications of Cohort data that BI developers can extract via Data Locker. Each example is illustrated by an SQL statement and sample Excel visual.
+A continuación, algunos ejemplos de aplicaciones prácticas y populares de datos de cohorte que los desarrolladores de BI pueden extraer a través de Data Locker. Cada ejemplo se ilustra mediante una declaración SQL y un ejemplo visual en Excel.
 
-#### **1. Calculating retention**
+#### **1. Cálculo de la retención**
 
-In the following example, we:
+En el siguiente ejemplo:
 
-* Calculate retention Day 1 and Day 7, as well as the total number of installs per campaign and ad.
-* Sum the event count per conversion event by filtering `event_name`to be `af_conversion`.
-* Specifically, analyze user acquisition campaigns in the Unified report by filtering the data so that `conversion_type IN (install, install_unified)`.
+* Calculamos la retención del día 1 y del día 7, así como el número total de instalaciones por campaña y anuncio.
+* Sumamos el recuento de eventos por evento de conversión filtrando `event_name` para que sea `af_conversion`.
+* Específicamente, analizamos las campañas de adquisición de usuarios en el reporte unificado filtrando los datos para que `conversion_type IN (install, install_unified)`.
 
-**SQL statement**
+**Consulta SQL**
 
 ```sql
 select
@@ -345,25 +356,25 @@ where
 group by 1,2
 ```
 
-**Excel example**
+**Ejemplo en Excel**
 
-| Campaign ID | Ad ID | Installs | Retention Day 1 | Retention Day 7 |
+| ID de campaña | ID del anuncio | Instalaciones | Día 1 de retención | Día 7 de retención |
 | --- | --- | --- | --- | --- |
 | 12345678 | 987654 | 100 | 30% | 10% |
-| 98765432 | 123456 | 200 | 25% | 15% |
-| 07315466 | 613770 | 300 | 20% | 12% |
+| 98765432 | 123456 | 200 | 25% | 15 % |
+| 07315466 | 613770 | 300 | 20% | 12 % |
 
-#### **2. Calculating ARPU of multiple in-app events**
+#### **2. Cálculo del ARPU de múltiples eventos in-app**
 
-In the following example, we:
+En el siguiente ejemplo:
 
-* Calculate ARPU of multiple in-app events per campaign.
-* Specifically analyze retargeting campaigns by filtering the data so that `conversion_type=re-engagement` and `conversion_type=re-attribution`.
-* Sum the event count per conversion event by filtering `event_name`to be `af_conversion`.
-* Sum the revenue of multiple events, in this case `af_purchase`and `af_coins`.
-* Set `days_post_attribution` to the minimum needed (in this case, 7) to minimize the data processing load.
+* Calculamos el ARPU de múltiples eventos in-app por campaña.
+* Analizamos específicamente las campañas de retargeting filtrando los datos de modo que `conversion_type=re-engagement` y `conversion_type=re-attribution`.
+* Sumamos el recuento de eventos por evento de conversión filtrando `event_name` para que sea `af_conversion`.
+* Sumamos los ingresos de múltiples eventos, en este caso `af_purchase` y `af_coins`.
+* Establece `days_post_attribution` en el mínimo necesario (en este caso, 7) para minimizar la carga de procesamiento de datos.
 
-**SQL statement**
+**Consulta SQL**
 
 ```sql
 select
@@ -380,24 +391,24 @@ where
 group by 1
 ```
 
-**Excel example**
+**Ejemplo en Excel**
 
-| Campaign ID | Conversion type | ARPU<br /><br />Day 1 | ARPU<br /><br />Day 3 | ARPU<br /><br />Day 7 |
+| ID de campaña | Tipo de conversión | OPCIONAL<br /><br />Día 1 | OPCIONAL<br /><br />Día 3 | OPCIONAL<br /><br />Día 7 |
 | --- | --- | --- | --- | --- |
 | 12345678 | re-engagement | 6.23 | 5.11 | 2.34 |
 | 98765432 | re-engagement | 3.57 | 1.34 | 4.86 |
-| 07315466 | re-attribution | 7.41 | 6.79 | 5.29 |
+| 07315466 | Reatribución | 7.41 | 6.79 | 5.29 |
 
-#### **3. Calculating in-app event conversion rate for a specific cohort day**
+#### **3. Cálculo de la tasa de conversión de eventos in-app para un día de cohorte específico**
 
-In the following example, we:
+En el siguiente ejemplo:
 
-* Calculate the Day 0 in-app event conversion rate for multiple dimensions (in this case, conversion date, geo, campaign, ad, and site ID).
-* Analyze unified data (both UA and retargeting campaigns) by filtering the data so that `is_primary_attribution=true`.
-* Sum the event count per conversion event by filtering `event_name`to be `af_conversion`.
-* Set `days_post_attribution` to the minimum needed (in this case, 7) to minimize the data processing load.
+* Calcula la tasa de conversión del evento in-app del día 0 para múltiples dimensiones (como fecha de conversión, región, campaña, anuncio e ID del sitio).
+* Analiza datos unificados (tanto campañas de UA como de retargeting) filtrando los datos de modo que `is_primary_attribution=true`.
+* Sumamos el recuento de eventos por evento de conversión filtrando `event_name` para que sea `af_conversion`.
+* Establece `days_post_attribution` en el mínimo necesario (en este caso, 7) para minimizar la carga de procesamiento de datos.
 
-**SQL statement**
+**Consulta SQL**
 
 ```sql
 select
@@ -406,28 +417,28 @@ select
 from YOUR_DATA_LOCKER_REPORT
 where
     conversion_date between '2023-06-01' and '2023-06-08'
-    and is_primary_attribution = true
+    and is_primary = true
     and app_id = YOUR_APP
 group by 1,2,3,4,5
 ```
 
-**Excel example**
+**Ejemplo en Excel**
 
-| Conversion date | Geo | Campaign ID | Ad ID | Site ID | Day 0 af\_complete\_tutorial |
+| Fecha de conversión | Geografía | ID de campaña | ID del anuncio | ID del sitio | Día 0 de af\_complete\_tutorial |
 | --- | --- | --- | --- | --- | --- |
-| 2022-11-07 | US | 12345678 | 123456 | site\_123 | 45% |
-| 2022-11-05 | UK | 98765432 | null | site\_654 | 70% |
-| 2022-10-31 | KR | 07315466 | null | null | 63% |
+| 7 de noviembre de 2022 | Estados Unidos | 12345678 | 123456 | site\_123 | 45% |
+| 5 de noviembre de 2022 | Reino Unido | 98765432 | nulo | site\_654 | 70% |
+| 31 de octubre de 2022 | Corea | 07315466 | nulo | nulo | El 63 % |
 
-#### **4. Calculating daily installs**
+#### **4. Cálculo de instalaciones diarias**
 
-In the following example, we:
+En el siguiente ejemplo:
 
-* Calculate the number of installs per app ID, conversion date, media source, event name, and conversion type.
-* In the Unified report, filter the data to show UA installs (not retargeting) by setting `conversion_type` to `install` or `install_unified`.
-* Sum the installs by setting `event_name`to be `af_conversion`.
+* Calcula el número de instalaciones por ID de aplicación, fecha de conversión, fuente de medios, nombre de evento y tipo de conversión.
+* En el reporte unificado, filtra los datos para mostrar instalaciones de UA (no de retargeting) configurando `conversion_type` como `install` o `install_unified`.
+* Suma las instalaciones configurando `event_name` como `af_conversion`.
 
-**SQL statement**
+**Consulta SQL**
 
 ```sql
 select
@@ -440,30 +451,29 @@ select
 from YOUR_DATA_LOCKER_REPORT
 where
     conversion_date between '2023-06-01' and '2023-06-08'
-    // If you're querying data from unified reports, edit the line below to: and conversion_type IN ('install', 'install_unified')
     and conversion_type = 'install'
     and event_name = 'af_conversion'
     and app_id = YOUR_APP
 group by 1,2,3,4,5
 ```
 
-**Excel example**
+**Ejemplo en Excel**
 
-| App ID | Conversion date | Media source | Event name | Total |
+| ID de aplicación | Fecha de conversión | Fuente de medios | Nombre del evento | Total |
 | --- | --- | --- | --- | --- |
-| id123456789 | 2022-11-07 | adnet1\_int | af\_conversion | 105 |
-| id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
-| id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
+| id123456789 | 7 de noviembre de 2022 | adnet1\_int | af\_conversion | 105 |
+| id123456789 | 5 de noviembre de 2022 | adnet2\_int | af\_conversion | 216 |
+| id123456789 | 31 de octubre de 2022 | adnet3\_int | af\_conversion | 327 |
 
-#### **5. Calculating revenue from Facebook Ads**
+#### **5. Cálculo de los ingresos de Facebook Ads**
 
-In the following example, we:
+En el siguiente ejemplo:
 
-* Calculate Day 3 revenue from Facebook by conversion date and app ID.
-* Analyze Facebook data by filtering the data so that `media_source='Facebook Ads'`.
-* Set `days_post_attribution` to the minimum needed (in this case, 3) to minimize the data processing load.
+* Calcula los ingresos del día 3 de Facebook por fecha de conversión e ID de aplicación.
+* Analiza los datos de Facebook filtrándolos para que `media_source='Facebook Ads'`.
+* Establece `days_post_attribution` en el mínimo necesario (en este caso, 3) para reducir la carga de procesamiento de datos.
 
-**SQL statement**
+**Consulta SQL**
 
 ```sql
 select
@@ -478,25 +488,26 @@ where
     and media_source = 'Facebook Ads'
     and app_id in (APP_ID1, APP_ID2, ...)
 group by 1,2,3
+group by 1,2,3
 ```
 
-**Excel example**
+**Ejemplo en Excel**
 
-| Conversion date | App ID | Media source | Revenue<br /><br />Day 3 |
+| Fecha de conversión | ID de aplicación | Fuente de medios | Ingresos<br /><br />Día 3 |
 | --- | --- | --- | --- |
-| 2022-11-07 | id123456789 | adnet1\_int | 400.45 |
-| 2022-11-05 | id123456789 | adnet2\_int | 99.23 |
-| 2022-10-31 | id123456789 | adnet3\_int | 13.34 |
+| 7 de noviembre de 2022 | id123456789 | adnet1\_int | 400.45 |
+| 5 de noviembre de 2022 | id123456789 | adnet2\_int | 99.23 |
+| 31 de octubre de 2022 | id123456789 | adnet3\_int | 13.34 |
 
-#### **6. Calculating ARPU per ASA keyword ID for up to 365 cohort days**
+#### **6. Cálculo del ARPU por ID de palabra clave de ASA para hasta 365 días de cohorte**
 
-In the following example, we:
+En el siguiente ejemplo:
 
-* Calculate ARPU from Apple Search Ads per keyword ID until cohort day 365.
-* Analyze Apple Search Ads data by filtering the data so that `media_source='Apple Search Ads'`.
-* Sum the event count per conversion event by filtering `event_name`to be `af_conversion`.
+* Calcula el ARPU de Apple Search Ads por ID de palabra clave hasta el día 365 de cohorte.
+* Analiza los datos de Apple Search Ads filtrando los datos de modo que `media_source='Apple Search Ads'`.
+* Sumamos el recuento de eventos por evento de conversión filtrando `event_name` para que sea `af_conversion`.
 
-**SQL statement**
+**Consulta SQL**
 
 ```sql
 select
@@ -511,28 +522,28 @@ where
 group by 1
 ```
 
-**Excel example**
+**Ejemplo en Excel**
 
-| Media source | Keyword ID | ARPU<br /><br />Day 365 |
+| Fuente de medios | ID de palabra clave | OPCIONAL<br /><br />Día 365 |
 | --- | --- | --- |
-| adnet1\_int | 123456 | 57,019.93 |
-| adnet2\_int | 987654 | 64,867.84 |
-| adnet3\_int | 666854 | 48,160.02 |
+| adnet1\_int | 123456 | 57.019,93 |
+| adnet2\_int | 987654 | 64.867,84 |
+| adnet3\_int | 666854 | 48.160,02 |
 
-#### **7. Calculating ARPU Days 7 by attribution time per geo**
+#### **7. Calculando el ARPU del día 7 por tiempo de atribución por geo**
 
-The following example illustrates how to use <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard#trend-type%E2%80%94kpi-by-attribution-time">KPIs by attribution time</Anchor>. In the example, we:
+El siguiente ejemplo muestra cómo utilizar los <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard#trend-type%E2%80%94kpi-by-attribution-time">KPIs por tiempo de atribución</Anchor>. En este ejemplo, nosotros:
 
-* Calculate ARPU Days 7 by attribution date per geo.
-* Results are sorted by the number of conversions, with the top 20 geos displaying.
-* Data is filtered so that `conversion_type='install'`.
-* The first column shows geo. The second column shows the total conversions. The columns thereafter show the revenue days 7 for every day specified to be a row in the query.
+* Calculamos el ARPU del día 7 por fecha de atribución para cada geo.
+* Los resultados están ordenados por número de conversiones, mostrando las 20 principales geografías.
+* Datos filtrados para que `conversion_type='install'`.
+* La primera columna muestra la geo. La segunda columna muestra las conversiones totales. Las columnas siguientes muestran los ingresos del día 7 para cada día especificado como fila en la consulta.
 
-**SQL statement**
+**Consulta SQL**
 
 ```sql
 select
-    geo,
+    geolocalización,
     sum(if(event_name = 'af_conversion', event_count, 0)) total_conversions,
     sum(if(cohort_day = '2023-07-11' and days_post_attribution <= 7, revenue_usd, 0)) / sum(if(cohort_day = '2023-07-11' and event_name = 'af_conversion', event_count, 0)) as ARPU_day7_2023_07_11,
     sum(if(cohort_day = '2023-07-12' and days_post_attribution <= 7, revenue_usd, 0)) / sum(if(cohort_day = '2023-07-12' and event_name = 'af_conversion', event_count, 0)) as ARPU_day7_2023_07_12,
@@ -544,7 +555,7 @@ from YOUR_DATA_LOCKER_REPORT
 where
     conversion_date between '2023-07-11' and '2023-07-16'
     and days_post_attribution <= 7
-    // If you're querying data from unified reports, edit the line below to: and conversion_type IN ('install', 'install_unified')
+    // Si estás consultando datos de reportes unificados, edita la línea siguiente a: and conversion_type IN ('install', 'install_unified')
     and conversion_type = 'install'
     and app_id = 'YOUR_APP'
 group by 1
@@ -552,42 +563,42 @@ order by 2 desc
 limit 20
 ```
 
-**Excel example**
+**Ejemplo en Excel**
 
-| Geo | Total conversions | ARPU Day 7 for 2023-07-11 | ARPU Day 7 for 2023-07-12 | ARPU Day 7 for 2023-07-13 | ARPU Day 7 for 2023-07-14 | ARPU Day 7 for 2023-07-15 | ARPU Day 7 for 2023-07-16 |
+| Geografía | Conversiones totales | ARPU Día 7 para el 11/07/2023 | ARPU Día 7 para el 12/07/2023 | ARPU Día 7 para el 13/07/2023 | ARPU Día 7 para el 14/07/2023 | ARPU Día 7 para el 15/07/2023 | ARPU Día 7 para el 16/07/2023 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| South Korea | 120,660 | $7,798.89 | $6,997.37 | $8,258.95 | $9,050.21 | $10,018.04 | $13,765.73 |
-| Canada | 35,099 | $64,867.84 | $7,050.19 | $5,656.33 | $9,553.75 | $8,632.41 | $11,308.06 |
-| Chile | 26,750 | $48,160.02 | $21,249.55 | $22,584.57 | $24,033.07 | $31,118.91 | $41,145.22 |
+| Corea del Sur | 120.660 | $7.798,89 | $6.997,37 | $8.258,95 | $9.050,21 | $10.018,04 | $13.765,73 |
+| Canadá | 35.099 | $64.867,84 | $7.050,19 | $5.656,33 | $9.553,75 | $8.632,41 | $11.308,06 |
+| Chile | 26.750 | $48.160,02 | $21.249,55 | $22.584,57 | $22.584,57 | $31.118,91 | $41.145,22 |
 
 </Accordion>
 
-## Additional information
+## Información adicional
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Características y limitaciones">
 
-| Trait |  |
+| Caducado |  |
 | --- | --- |
-| Cost data | <ul><li>Not available. <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">Use Cost ETL</Anchor>.</li><li>See also <Anchor target="_blank" href="/marketers/docs/combine-cost-etl-and-cohort-reports-via-data-locker">combine Cost ETL with cohort reports</Anchor>.</li></ul> |
-| Campaign name changes | Not supported. |
-| Data freshness | Daily UTC. Reports are in the Data Locker date-time (dt) folder of the reporting day by 10:00 UTC of the next day. |
-| Ad revenue | <ul><li>Available</li><li>For af\_ad\_revenue events, the unique users metric isn't available for dates between October 5, 2022-February 16, 2023.</li></ul> |
-| Currency | USD and app-specific currency are both available per row |
-| Timezone | <ul><li>UTC</li><li>App-specific timezone is available with the <Anchor target="_blank" href="/marketers/docs/advanced-aggregated-reports-in-data-locker">Advanced aggregated cohort timezone versioned report</Anchor>.</li></ul> |
-| Organic data | Available |
-| Days post-conversion (install, re-attribution, re-engagement) | <ul><li>365 days of post-install data is available.</li><li>1,095 days is available with <Anchor target="_blank" href="/marketers/docs/advanced-aggregated-reports-in-data-locker">advanced aggregated reports</Anchor>.</li></ul> |
-| Agency transparency | <ul><li>Supported</li><li>X Ads and Meta ads data is always transparent</li></ul> |
-| App segregation | Supported |
-| SKAN data | Not included. Meaning, the data provided by iOS postbacks. |
-| Reinstalls | <ul><li>If post-reinstall events are considered unattributed organic:<ul><li>They're included only as of May 26, 2024. <Anchor target="_blank" href="/marketers/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Learn more</Anchor></li><li>The install time is based on the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor> field.</li><li>They aren't counted toward unique user and retention measurements.</li></ul></li><li>If post-reinstall events are attributed to the first install, they're always included. <Anchor target="_blank" href="/marketers/docs/unique-users">Learn more</Anchor></li></ul> |
+| Datos de costos | <ul><li>No disponible. <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports">Usar Cost ETL</Anchor>.</li><li>Ver también <Anchor target="_blank" href="/marketers/es/docs/combine-cost-etl-and-cohort-reports-via-data-locker">combinar Cost ETL con reportes de cohorte</Anchor>.</li></ul> |
+| Cambios de nombre de la campaña | No está soportado. |
+| Actualización de datos | Diario UTC. Los reportes están en la carpeta de fecha y hora (dt) del Data Locker del día del reporte, a las 10:00 UTC del día siguiente. |
+| Ingresos de anuncios | <ul><li>Disponible</li><li>Para los eventos af\_ad\_revenue, la métrica de usuarios únicos no está disponible para las fechas entre el 5 de octubre de 2022 y el 16 de febrero de 2023.</li></ul> |
+| Truemoney | El USD y la moneda específica de la app están disponibles por fila |
+| Zona horaria | <ul><li>UTC</li><li>La zona horaria específica de la aplicación está disponible con el <Anchor target="_blank" href="/marketers/es/docs/advanced-aggregated-reports-in-data-locker">reporte avanzado con zona horaria de cohorte agregada</Anchor>.</li></ul> |
+| Datos orgánicos | Disponible |
+| Días posteriores a la conversión (instalación, reatribución, re-engagement) | <ul><li>Se dispone de 365 días de datos posteriores a la instalación.</li><li>1.095 días disponibles con <Anchor target="_blank" href="/marketers/es/docs/advanced-aggregated-reports-in-data-locker">reportes agregados avanzados</Anchor>.</li></ul> |
+| Transparencia de agencia | <ul><li>Compatible</li><li>Los datos de X Ads y Meta Ads siempre son transparentes.</li></ul> |
+| Segregación de apps | Compatible |
+| Datos de SKAN | No incluidos. Es decir, los datos proporcionados por postbacks de iOS. |
+| Reinstalaciones | <ul><li>Si los eventos posteriores a la reinstalación son considerados orgánicos no atribuidos:<ul><li>Se incluirán solo a partir del 26 de mayo de 2024. <Anchor target="_blank" href="/marketers/es/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Saber más</Anchor></li><li>El tiempo de instalación se basa en el campo <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor>.</li><li>No se cuentan para las mediciones de usuarios únicos y de retención.</li></ul></li><li>Si los eventos posteriores a la reinstalación se atribuyen a la primera instalación, siempre se incluyen. <Anchor target="_blank" href="/marketers/es/docs/unique-users">Saber más</Anchor></li></ul> |
 
 </Accordion>
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/combine-cost-etl-and-cohort-reports-via-data-locker">Combine Cost ETL and cohort reports</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort dashboard</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/combine-cost-etl-and-cohort-reports-via-data-locker">Combinar Cost ETL y reportes de cohorte</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard">Dashboard de cohorte</Anchor>
 
-<div data-zendesk-anchors="01H7WG3CA1DDAN79D1PBPE0RJ3=cohort-analytics-in-data-locker 01H7WG3CA1ZMNTGZ5B8FNXNC4A=enable-data-locker 01H7WG3CA179D6VCWYPCJ1G49M=facts 01H7WG3CA1R3PZCKSGWC90E7RC=report-structure 01H7WG3CA14PQ2PJ58FX8TE6ZH=dimensions 01H7WG3CA24VQKFVP99S82GCXZ=metrics 01H7WG3CA2C3HV8YT5ZMP9E0QY=bi-developer-considerations 01H7WG3CA2YF03SC6RBMCJYYVX=use-cases h_01HMTZ0DZWN54HBQ0ZTY0VFNFM=1-calculating-retention 2-calculating-arpu-of-multiple-inapp-events=2-calculating-arpu-of-multiple-in-app-events h_01HMTZ0DZWHZ77RYWYAQEJV7X5=2-calculating-arpu-of-multiple-in-app-events 3-calculating-inapp-event-conversion-rate-for-a-specific-cohort-day=3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day h_01HMTZ0DZW7VA6T6MQY7BY1JZT=3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day h_01HMTZ0DZWARZFAQ9R4VF56YN3=4-calculating-daily-installs h_01HMTZ0DZW74HWW6Z3VDWDMGRF=5-calculating-revenue-from-facebook-ads h_01HMTZ0DZWSN83V0TEHVM2H5XS=6-calculating-arpu-per-asa-keyword-id-for-up-to-365-cohort-days calculating-arpu-days-0-7-by-attribution-time-per-geo=7-calculating-arpu-days-7-by-attribution-time-per-geo 01H8XYTJVQ1YFBHPWVPP9D7MJ8=7-calculating-arpu-days-7-by-attribution-time-per-geo 01H7WG3CA255TG9HW150RW1QTX=additional-information 01H7WG3CA2Y59D2EVMN3YFFY1W=traits-and-limitations h_01HDNZ8A0QH74CGSEG6TKKARJP=see-also" />
+<div data-zendesk-anchors="cohort-analytics-in-data-locker=an%C3%A1lisis-de-cohortes-en-data-locker 01H7WG3CA1DDAN79D1PBPE0RJ3=an%C3%A1lisis-de-cohortes-en-data-locker 01H7WG3CA1ZMNTGZ5B8FNXNC4A=enable-data-locker 01H7WG3CA179D6VCWYPCJ1G49M=facts 01H7WG3CA1R3PZCKSGWC90E7RC=report-structure dimensions=dimensiones 01H7WG3CA14PQ2PJ58FX8TE6ZH=dimensiones metrics=m%C3%A9tricas 01H7WG3CA24VQKFVP99S82GCXZ=m%C3%A9tricas 01H7WG3CA2C3HV8YT5ZMP9E0QY=bi-developer-considerations 01H7WG3CA2YF03SC6RBMCJYYVX=use-cases 1-calculating-retention=1-c%C3%A1lculo-de-la-retenci%C3%B3n h_01HMTZ0DZWN54HBQ0ZTY0VFNFM=1-c%C3%A1lculo-de-la-retenci%C3%B3n 2-calculating-arpu-of-multiple-inapp-events=2-c%C3%A1lculo-del-arpu-de-m%C3%BAltiples-eventos-in-app h_01HMTZ0DZWHZ77RYWYAQEJV7X5=2-c%C3%A1lculo-del-arpu-de-m%C3%BAltiples-eventos-in-app 3-calculating-inapp-event-conversion-rate-for-a-specific-cohort-day=3-c%C3%A1lculo-de-la-tasa-de-conversi%C3%B3n-de-eventos-in-app-para-un-d%C3%ADa-de-cohorte-espec%C3%ADfico h_01HMTZ0DZW7VA6T6MQY7BY1JZT=3-c%C3%A1lculo-de-la-tasa-de-conversi%C3%B3n-de-eventos-in-app-para-un-d%C3%ADa-de-cohorte-espec%C3%ADfico 4-calculating-daily-installs=4-c%C3%A1lculo-de-instalaciones-diarias h_01HMTZ0DZWARZFAQ9R4VF56YN3=4-c%C3%A1lculo-de-instalaciones-diarias 5-calculating-revenue-from-facebook-ads=5-c%C3%A1lculo-de-los-ingresos-de-facebook-ads h_01HMTZ0DZW74HWW6Z3VDWDMGRF=5-c%C3%A1lculo-de-los-ingresos-de-facebook-ads 6-calculating-arpu-per-asa-keyword-id-for-up-to-365-cohort-days=6-c%C3%A1lculo-del-arpu-por-id-de-palabra-clave-de-asa-para-hasta-365-d%C3%ADas-de-cohorte h_01HMTZ0DZWSN83V0TEHVM2H5XS=6-c%C3%A1lculo-del-arpu-por-id-de-palabra-clave-de-asa-para-hasta-365-d%C3%ADas-de-cohorte calculating-arpu-days-0-7-by-attribution-time-per-geo=7-calculando-el-arpu-del-d%C3%ADa-7-por-tiempo-de-atribuci%C3%B3n-por-geo 01H8XYTJVQ1YFBHPWVPP9D7MJ8=7-calculando-el-arpu-del-d%C3%ADa-7-por-tiempo-de-atribuci%C3%B3n-por-geo additional-information=informaci%C3%B3n-adicional 01H7WG3CA255TG9HW150RW1QTX=informaci%C3%B3n-adicional 01H7WG3CA2Y59D2EVMN3YFFY1W=traits-and-limitations h_01HDNZ8A0QH74CGSEG6TKKARJP=consulta-tambi%C3%A9n" />

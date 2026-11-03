@@ -1,5 +1,5 @@
 ---
-title: Protecting against phishing attacks
+title: Protección contra ataques de phishing
 metadata:
   keywords:
     - Marketers
@@ -12,84 +12,83 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2025-07-16T09:39:30Z'
-  edited_at: '2025-07-17T00:01:09Z'
+  edited_at: '2026-10-20T03:57:27Z'
   id: 37207216165905
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/37207216165905-Protecting-against-phishing-attacks
+  url: https://support.appsflyer.com/hc/es/articles/37207216165905
 ---
-Phishing is a deceptive tactic used by cybercriminals to obtain sensitive information such as login credentials, financial details, or personal data. These attacks typically involve fraudulent emails, messages, or websites that impersonate legitimate organizations or individuals, with the intention of manipulating recipients into disclosing confidential information.
+El phishing es una táctica engañosa que utilizan los ciberdelincuentes para obtener información confidencial, como credenciales de login, datos financieros o datos personales. Estos ataques suelen implicar correos electrónicos, mensajes o sitios web fraudulentos que suplantan a organizaciones o personas legítimas con la intención de manipular a los destinatarios para que revelen información confidencial.
 
-At AppsFlyer, we are committed to maintaining the security and integrity of our digital environment. This article outlines how to identify phishing attempts and protect yourself from malicious activity, with particular emphasis on verifying the legitimacy of communications related to AppsFlyer.
+En AppsFlyer, nos comprometemos a mantener la seguridad y la integridad de nuestro entorno digital. En este artículo se explica cómo identificar intentos de phishing y protegerte frente a actividades maliciosas, con especial atención a verificar la legitimidad de las comunicaciones relacionadas con AppsFlyer.
 
-## **Official AppsFlyer domain**
+## **Dominio oficial de AppsFlyer**
 
-The only official AppsFlyer domain is: [https://www.appsflyer.com](https://www.appsflyer.com)
+El único dominio oficial de AppsFlyer es: [https://www.appsflyer.com](https://www.appsflyer.com)
 
-Any other domain is not affiliated with AppsFlyer and may be used as part of a phishing scheme. Users are strongly advised to exercise caution when accessing websites or clicking on links purporting to represent AppsFlyer.
+Cualquier otro dominio no está afiliado a AppsFlyer y puede usarse como parte de un esquema de phishing. Se recomienda encarecidamente a los usuarios que extremen la precaución al acceder a sitios web o hacer clic en enlaces que pretendan representar a AppsFlyer.
 
-Always verify that the domain in use is accurate and corresponds exactly to our official website.
+Verifica siempre que el dominio utilizado sea correcto y coincida exactamente con nuestro sitio web oficial.
 
-## **Identifying a phishing attempt**
+## **Cómo identificar un intento de phishing**
 
-Phishing attempts can be highly sophisticated. The following guidelines can assist in recognizing suspicious activity:
+Los intentos de phishing pueden ser muy sofisticados. Las siguientes pautas pueden ayudar a reconocer actividad sospechosa:
 
-1. Verify the URL
+1. Verifica la URL
 
-Phishing websites often use URLs that are intentionally misleading, including:
+Los sitios web de phishing suelen utilizar URL intencionadamente engañosas, como por ejemplo:
 
-* Minor misspellings (e.g., appsflyerr.com)
-* Similar-looking or hyphenated variants (e.g., appflyer-login.com)
+* Errores ortográficos leves (p. ej., appsflyerr.com)
+* Variantes con aspecto similar o con guion (p. ej., appflyer-login.com)
 
-Before interacting with a link, hover over it to preview the destination and ensure it aligns with the legitimate domain.
+Antes de interactuar con un enlace, pasa el cursor sobre él para previsualizar el destino y asegurarte de que coincide con el dominio legítimo.
 
-2. Confirm Website Authenticity
+2. Confirma la autenticidad del sitio web
 
-Always confirm that you are accessing AppsFlyer services through the official domain:[https://www.appsflyer.com](https://www.appsflyer.com). Bookmarking the official site can help prevent unintentional navigation to illegitimate domains.
+Confirma siempre que accedes a los servicios de AppsFlyer a través del dominio oficial:[https://www.appsflyer.com](https://www.appsflyer.com). Añadir el sitio oficial a marcadores puede ayudar a evitar la navegación involuntaria a dominios ilegítimos.
 
-3. Check Domain Registration
+3. Comprueba el registro del dominio
 
-If you encounter an unfamiliar domain, services such as WHOIS can be used to review the domain’s registration details. Domains that are newly registered, anonymized, or exhibit unusual structures should be treated with suspicion.
+Si encuentras un dominio desconocido, puedes utilizar servicios como WHOIS para revisar los datos de registro del dominio. Los dominios registrados recientemente, anonimizados o con estructuras inusuales deben tratarse con sospecha.
 
-4. Unusual Requests
+4. Solicitudes inusuales
 
-If you encounter unusual requests for information, actions or upfront fees be very wary and avoid collaborating with such requests. It is recommended that you first check online to see if such request fits with known common scams so you can avoid them. 
+Si te encuentras con solicitudes inusuales de información, acciones o pagos por adelantado, desconfía mucho y evita colaborar con este tipo de peticiones. Se recomienda que primero compruebes en internet si este tipo de solicitud coincide con estafas habituales conocidas, para poder evitarlas. 
 
-5. Communication via Messaging Apps
+5. Comunicación a través de apps de mensajería
 
-If you encounter requests to communicate via messaging apps, such as WhatsApp, Telegram etc. you should view such requests as very suspicious and avoid such requests. 
+Si recibes solicitudes para comunicarte a través de apps de mensajería, como WhatsApp, Telegram, etc., debes considerarlas muy sospechosas y evitarlas. 
 
-## **Be aware of employment scams**
+## **Mantente alerta ante las estafas de empleo**
 
-A recent common scam is an employment scam in which scammers pretend to  be employers or recruiters in order to trick people into giving personal information, paying for fake job offers, or other forms of financial exploitation.   
-Therefore, you should be aware of the following warning signs:
+Una estafa común reciente es una estafa de empleo en la que los estafadores fingen ser empleadores o reclutadores para engañar a la gente y lograr que entregue información personal, pague por ofertas de trabajo falsas u otras formas de explotación financiera.   
+Por eso, debes estar atento a las siguientes señales de alerta:
 
-* Unsolicited Job Offers: Receiving a job offer without applying for the position is a common red flag.
-* Request for Upfront Fees: Legitimate employers never ask for money to process applications, training, for the work or equipment.
-* Vague Job Descriptions: Scammers often provide unclear or overly broad job descriptions.
-* Requests for Personal Information: Legitimate employers do not ask for sensitive personal information (like Social Security numbers or bank account details) early in the hiring process.
+* Ofertas de trabajo no solicitadas: recibir una oferta de trabajo sin haber solicitado el puesto es una señal de alerta habitual.
+* Solicitud de pagos por adelantado: los empleadores legítimos nunca piden dinero para tramitar solicitudes, formación, el trabajo o el equipo.
+* Descripciones vagas del puesto: los estafadores suelen ofrecer descripciones del puesto poco claras o demasiado generales.
+* Solicitudes de información personal: los empleadores legítimos no piden información personal sensible (como números de la Seguridad Social o datos de cuentas bancarias) al inicio del proceso de contratación.
 
-## **Reporting suspicious activity**
+## **Cómo reportar actividades sospechosas**
 
-If you receive a communication or encounter a website that appears to be affiliated with AppsFlyer but does not use the official domain, please proceed as follows:
+Si recibes una comunicación o encuentras un sitio web que parece estar afiliado a AppsFlyer pero no utiliza el dominio oficial, sigue estos pasos:
 
-* Do not engage with or respond to the communication.
-* Avoid clicking on any links or downloading attachments.
-* Document the incident by capturing a screenshot or saving the message.
-* Report the activity promptly to our security team at: security@appsflyer.com.
+* No interactúes con la comunicación ni respondas a ella.
+* Evita hacer clic en cualquier enlace o descargar archivos adjuntos.
+* Documenta el incidente haciendo una captura de pantalla o guardando el mensaje.
+* Reporta la actividad lo antes posible a nuestro equipo de seguridad en: security@appsflyer.com.
 
-Your proactive reporting enables us to respond swiftly and helps protect the wider community.
+Tu reporte proactivo nos permite responder con rapidez y ayuda a proteger a la comunidad en general.
 
-## **Best practices for online safety**
+## **Mejores prácticas para la seguridad online**
 
-To further safeguard your digital interactions, we recommend the following best practices:
+Para proteger aún más tus interacciones digitales, te recomendamos las siguientes mejores prácticas:
 
-* Utilize strong, unique passwords for all accounts and consider using a reputable password manager.
-* Enable two-factor authentication (2FA) wherever possible.
-* Regularly update your software, operating systems, and web browsers.
-* Remain cautious of unsolicited requests for personal or financial information, regardless of how credible the source may appear.
-* Do not transfer or pay any fees for “work” offered.
+* Utiliza contraseñas seguras y únicas para todas tus cuentas y considera usar un gestor de contraseñas de confianza.
+* Activa la autenticación en dos factores (2FA) siempre que sea posible.
+* Actualiza periódicamente tu software, tus sistemas operativos y tus navegadores web.
+* Mantente alerta ante solicitudes no solicitadas de información personal o financiera, por muy creíble que pueda parecer la fuente.
+* No transfieras ni pagues ninguna tarifa por el «trabajo» ofrecido.
 
-<div data-zendesk-anchors="h_01K099JNN6S9KNFCS0QHGPV7EA=official-appsflyer-domain h_01K099KBRJ33VYPHP5RNQJM1G8=identifying-a-phishing-attempt h_01K099KZPWS68VWEYYHMWH3SQ8=be-aware-of-employment-scams h_01K099MBMXZQYVC91PAB4THG9Z=reporting-suspicious-activity h_01K099MGCZP8X97A1852N35FTG=best-practices-for-online-safety" />
+<div data-zendesk-anchors="official-appsflyer-domain=dominio-oficial-de-appsflyer h_01K099JNN6S9KNFCS0QHGPV7EA=dominio-oficial-de-appsflyer identifying-a-phishing-attempt=c%C3%B3mo-identificar-un-intento-de-phishing h_01K099KBRJ33VYPHP5RNQJM1G8=c%C3%B3mo-identificar-un-intento-de-phishing be-aware-of-employment-scams=mantente-alerta-ante-las-estafas-de-empleo h_01K099KZPWS68VWEYYHMWH3SQ8=mantente-alerta-ante-las-estafas-de-empleo reporting-suspicious-activity=c%C3%B3mo-reportar-actividades-sospechosas h_01K099MBMXZQYVC91PAB4THG9Z=c%C3%B3mo-reportar-actividades-sospechosas best-practices-for-online-safety=mejores-pr%C3%A1cticas-para-la-seguridad-online h_01K099MGCZP8X97A1852N35FTG=mejores-pr%C3%A1cticas-para-la-seguridad-online" />

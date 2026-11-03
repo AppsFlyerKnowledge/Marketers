@@ -1,26 +1,26 @@
 ---
-title: People Based Attribution (PBA)
+title: Atribución basada en personas (PBA)
 table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2026-02-05T16:13:56Z'
   id: 43560588808721
-  locale: en-us
+  locale: es
   parent_section_id: 15329056926353
   type: section
   url: >-
-    https://support.appsflyer.com/hc/en-us/sections/43560588808721-People-Based-Attribution-PBA
+    https://support.appsflyer.com/hc/es/sections/43560588808721-Atribuci%C3%B3n-basada-en-personas-PBA
 ---
-- [People-Based Attribution (PBA)—Overview](/docs/people-based-attribution-pba-overview)
-- [Onboarding guide to People-Based Attribution](/docs/onboarding-guide-to-people-based-attribution)
-- [PBA brand bundles and settings](/docs/pba-brand-bundles-and-settings)
-- [PBA Web SDK integration guide](/docs/pba-web-sdk-integration-guide)
-- [Web Server-to-server events API for PBA (Web-S2S)](/docs/web-server-to-server-events-api-for-pba-web-s2s)
-- [Test PBA web SDK integration](/docs/test-pba-web-sdk-integration)
-- [Troubleshooting the web SDK](/docs/troubleshooting-the-web-sdk)
-- [PBA media source attribution rules](/docs/pba-media-source-attribution-rules)
-- [PBA website attribution URL best practices](/docs/pba-website-attribution-url-best-practices)
-- [PBA raw data reports](/docs/pba-raw-data-reports)
-- [Integrating Google Ads auto-tagging (gclid) campaign data into PBA](/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba)
-- [People-Based Attribution vs. Google Analytics](/docs/people-based-attribution-vs-google-analytics)
+- [Atribución basada en las personas (PBA): Descripción general](/docs/people-based-attribution-pba-overview)
+- [Guía de onboarding a la atribución basada en personas](/docs/onboarding-guide-to-people-based-attribution)
+- [Paquetes y configuraciones de marca de PBA](/docs/pba-brand-bundles-and-settings)
+- [Guía de integración del SDK web para la PBA](/docs/pba-web-sdk-integration-guide)
+- [API de eventos web de servidor a servidor para PBA (Web-S2S)](/docs/web-server-to-server-events-api-for-pba-web-s2s)
+- [Prueba la integración del SDK web de PBA](/docs/test-pba-web-sdk-integration)
+- [Resolución de problemas del SDK web](/docs/troubleshooting-the-web-sdk)
+- [Reglas de atribución de fuentes de medios de PBA](/docs/pba-media-source-attribution-rules)
+- [Mejores prácticas de atribución de URL de sitios web de PBA](/docs/pba-website-attribution-url-best-practices)
+- [Reportes de raw data de PBA](/docs/pba-raw-data-reports)
+- [Integración de los datos de campaña del etiquetado automático (gclid) de Google Ads en PBA](/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba)
+- [La atribución basada en las personas frente a Google Analytics](/docs/people-based-attribution-vs-google-analytics)

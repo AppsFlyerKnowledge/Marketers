@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: Action required—Get Meta ads raw data using Google Install Referrer'
+title: >-
+  Boletín: Acción requerida: obtén raw data de Anuncios de Meta usando el
+  referente de instalación de Google
 metadata:
   keywords:
     - Advertisers
@@ -14,12 +16,157 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-10-21T07:02:51Z'
-  edited_at: '2023-11-26T12:46:19Z'
+  edited_at: '2026-10-20T03:56:30Z'
   id: 4409322107537
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/4409322107537-Bulletin-Action-required-Get-Meta-ads-raw-data-using-Google-Install-Referrer
+  url: https://support.appsflyer.com/hc/es/articles/4409322107537
 ---
-<table><tbody><tr><td><p><strong>What's new</strong></p></td><td>Get Meta ads campaign raw data of ads that direct to Google Play Store using the Install Referrer. </td></tr><tr><td><p><strong>What's changing</strong></p><p><strong><img alt="Information_icon.png" src="https://files.readme.io/cc1ff74668360a2be64ec90db8f771d751b0a95847ecaee582c2e31c60e310cf-20445036062993.png"/></strong></p></td><td><p>Starting October 29, 2021, user-level attribution data (raw data) of users brought by Meta ads <strong>after</strong> this date are restricted. Meta ads makes this data available to MMPs like AppsFlyer, but not to advertisers.</p><p>However, if the ad directs users to Google Play Store, attribution fields are available to advertisers in the Google Install Referrer which must be <a href="./basic-sdk-integration-guide#attribute-apps-published-on-google-play" target="_blank">integrated into your app.</a> The fields provided via the referrer populate AppsFlyer raw data reports available to you and enable AppsFlyer to attribute users who don't have an advertising ID (LAT-enabled).</p><p>Using the referrer mechanism requires AppsFlyer SDK V5.4+</p><p><strong>Note:</strong> Referrer data has priority over data provided by API and isn't restricted. </p><p>Data in the referrer is encrypted by Meta ads and is decrypted using a key available to you in your Meta ads developer account. You must provide us with the decryption key described in the actions required row. </p><p><strong>Campaign attribution fields available via the referrer:</strong></p><ul><li><span>Ad ID</span></li><li><span>Ad name</span></li><li><span>Adset ID</span></li><li><span>Adset name</span></li><li><span>Campaign ID</span></li><li><span>Campaign name</span></li><li><span>Account ID</span></li><li>Channel</li><li>Ad type (this field is not yet available)</li></ul><p><strong>Note</strong>:  </p><ul><li>No other fields are available via the referrer.</li><li>This solution applies to click-through attribution and not view-through attribution.</li><li>Referrer data isn't applicable to re-engagement campaigns, as users don't go through the store.</li></ul><p><strong>When will AppsFlyer roll out this change?</strong></p><ul><li>Starting October 29, 2021:<ul><li>Meta ads restrictions to click-through data (in other words attribution raw data) are implemented.</li><li>Advertisers can update the referrer decryption key in AppsFlyer.</li></ul></li><li>Starting November 3, 2021:<ul><li>AppsFlyer populates raw data and attributes using data provided by the referrer mechanism.</li></ul></li></ul></td></tr><tr><td><strong>Data availability summary</strong> </td><td><table><tbody><tr><th rowspan="2">How attributed</th><th rowspan="2">Attribution data source</th><th colspan="2">Data available to advertisers </th><th>Remarks</th></tr><tr><th>Raw data</th><th>Aggregate data</th><th> </th></tr><tr><td>Click-through</td><td>Referrer (applies to Android apps downloaded from Google Play Store)</td><td>Available</td><td>Available</td><td><ul><li>LAT users attribution data available.</li><li>Referrer takes priority over MMP data if both are available.</li><li>Not applicable to re-engagement campaigns.</li></ul></td></tr><tr><td>Click-through</td><td>MMP API</td><td>Restricted\*</td><td>Available</td><td> </td></tr><tr><td>View-through</td><td>MMP API</td><td>Restricted\*</td><td>Available</td><td>Referrer mechanism not supported.</td></tr><tr><td colspan="5"><p><strong>Note:</strong> When data availability is restricted:</p><ul><li><ul><li>Install and in-app event postbacks are sent to the restricting ad networks only. Third-party partners, such as analytics partners, don't get postbacks for restricted attribution. </li><li>Unattributed postbacks (not containing attribution fields) are sent to ad networks that were configured to receive all events (including organic and unattributed). This includes Meta campaign management partners.</li></ul></li></ul></td></tr></tbody></table></td></tr><tr><td><p><strong>Action required</strong></p></td><td><p><strong>To get your decryption key from Meta ads:</strong></p><p>[The following information is based on information provided to us by Facebook]</p><ol><li>Log in to your Meta developer portal.</li><li>Navigate to <strong>My Apps</strong> in the upper right-hand corner.</li><li>Select the app for which you would like to access your decryption key.</li><li>Navigate to <strong>Settings</strong> &gt; <strong>Basic</strong> on the left-hand side of the page.<p><a href="https://files.readme.io/7581629ac17217154300bc796fd54416c1b04c08353b21ae7b93662fe182f694-4409669308049.png"><img alt="FBUIforKey.png" src="https://files.readme.io/7581629ac17217154300bc796fd54416c1b04c08353b21ae7b93662fe182f694-4409669308049.png"/></a></p></li><li>Scroll down to the <strong>Android</strong> section and you will see your decryption key labeled <strong>Install Referrer decryption key</strong> underneath the <strong>Package Names</strong> field. <strong>Note</strong>: This is the same section in which you configured your package name and the Google Play Store.</li></ol><p><strong>To enable the referrer mechanism in AppsFlyer.</strong> </p><ol><li>[Mandatory] Verify that AppsFlyer SDK V5.4+ is adopted in your app. Don't rely on earlier versions. </li><li>Do one of the following:<ol><li>[Coming soon] Set the decryption key via API.</li><li>To set the decryption key via the user interface: <ol><li>In AppsFlyer, go to <strong>Configuration</strong> &gt; <strong>Active Integrations</strong>.</li><li>Select Meta ads.<br/><p><img alt="meta-ads-install-referrer-decryption-key.png" src="https://files.readme.io/adf6caa8d7cee493695eb8fb7db1b61c60e6a1cef0273e615c43a05ad8a9485d-13963525463825.png"/></p></li></ol></li><li>In the <strong>Integration</strong> tab, paste the key in <strong>Install Referrer</strong> <strong>Decryption Key</strong>.</li><li>Click <strong>Save integration</strong>.</li></ol></li></ol></td></tr><tr><td><p><strong>Update the decryption key via API</strong></p></td><td><p><strong>[Coming soon]</strong></p><p>We will release an API that updates the decryption key.</p></td></tr><tr><td><p><strong>Raw data availability going forward</strong> </p></td><td><ul><li>If the attribution data is obtained via the referrer mechanism the data is unrestricted and is available via the raw data reports.</li><li>If the attribution data is obtained via API, then raw data of users brought by Meta ads is assigned to the <em>restricted</em> media source</li><li>This change has no impact on the raw data of users brought before the change. In other words before October 29, 2021, 08:00 UTC.</li></ul></td></tr><tr><td><p><strong>What's staying the same</strong> </p></td><td><p>AppsFlyer continues to receive device-level data from Meta ads, meaning that our attribution and reporting abilities (including multi-touch attribution, LTV, ROI, cohort, retention reports, fraud protection, Audiences, and other services) remain unchanged. See <a href="./aggregated-and-analytics-reporting-overview" target="_blank">aggregate and analytics reporting tools</a>.</p><p><strong>Note</strong>: If you provide us with the decryption key, we can attribute users who don't have an advertising ID (LAT-enabled). This improves attribution accuracy.</p></td></tr><tr><td><p><strong>Changes to attribution</strong></p></td><td><p>Deferred deeplinking via GCD will be available for Android apps using the Google Install Referrer mechanism. It isn't available for iOS apps.</p></td></tr><tr><td><p><strong>FAQs</strong></p></td><td><ul><li><strong>Does the install referrer decryption key need to be updated?</strong><br/>Once submitted, the decryption key doesn't need to be updated.</li><li><strong>When can I see user-level data in raw data reports?</strong><br/>User-level data is displayed in raw date reports once a valid install referrer decryption key is submitted and an install is attributed to Meta ads.</li><li><strong>Is user-level attribution data available for installs that occurred between October 29, 2021, and November 3, 2021?</strong><br/>Unfortunately, this data is not available.</li></ul></td></tr></tbody></table>
+
+<Table>
+  <tbody>
+    <tr>
+      <td>
+        **¿Qué hay de nuevo?**
+      </td>
+      <td>
+        Obtén raw data de la campaña de Anuncios de Meta de los anuncios que dirigen a Google Play Store mediante el referente de instalación.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Qué ha cambiado**
+
+        **![Information_icon.png](https://files.readme.io/cc1ff74668360a2be64ec90db8f771d751b0a95847ecaee582c2e31c60e310cf-20445036062993.png)**
+      </td>
+      <td>
+        A partir del 29 de octubre de 2021, los datos de atribución a nivel de usuario (raw data) de los usuarios traídos por Meta Ads **después** de esta fecha están restringidos. Anuncios de Meta pone estos datos a disposición de MMP como AppsFlyer, pero no a disposición de los anunciantes.
+
+        Sin embargo, si el anuncio dirige a los usuarios a Google Play Store, los campos de atribución están disponibles para los anunciantes en la Referencia de instalación de Google, que debe <Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play">integrarse en tu aplicación.</Anchor> Los campos proporcionados a través del referente completan los reportes de raw data de AppsFlyer disponibles para ti y permiten que AppsFlyer atribuya a los usuarios que no tienen un ID de publicidad (habilitado para LAT).
+
+        El uso del mecanismo de referente requiere AppsFlyer SDK V5.4+
+
+        **Nota:** Los datos del referente tienen prioridad sobre los datos proporcionados por la API y no están restringidos.
+
+        Anuncios de Meta cifra los datos del referente y los descifra utilizando una clave disponible en tu cuenta de desarrollador de Anuncios de Meta. Debes proporcionarnos la clave de descifrado que se describe en la fila de acciones requeridas.
+
+        **Campos de atribución de campaña disponibles a través del referente:**
+
+        * Ad ID
+        * Nombre de anuncio
+        * ID de adset
+        * Nombre del conjunto de anuncios
+        * Campaign ID
+        * Nombre de la campaña
+        * ID de cuenta
+        * Channel
+        * Tipo de anuncio (este campo aún no está disponible)
+
+        **Nota**:
+
+        * No hay otros campos disponibles a través del referente.
+        * Esta solución se aplica a la atribución por clics y no a la atribución por impresiones.
+        * Los datos del referente no se aplican a las campañas de re-engagement, ya que los usuarios no pasan por la tienda.
+
+        **¿Cuándo implementará AppsFlyer este cambio?**
+
+        * A partir del 29 de octubre de 2021:
+          * Se implementan restricciones de Anuncios de Meta a los datos de clics (en otras palabras, el raw data de atribución).
+          * Los anunciantes pueden actualizar la clave de descifrado del referente en AppsFlyer.
+        * A partir del 3 de noviembre de 2021:
+          * AppsFlyer completa el raw data y atribuye utilizando los datos proporcionados por el mecanismo de referente.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Resumen de disponibilidad de datos**
+      </td>
+      <td>
+        <table><tbody><tr><th rowspan="2">Cómo se atribuye</th><th rowspan="2">Fuente de datos de atribución</th><th colspan="2">Datos disponibles para anunciantes </th><th>Comentarios</th></tr><tr><th>Datos sin procesar</th><th>Datos agregados</th><th> </th></tr><tr><td>Por clics</td><td>Referente (se implementa en las aplicaciones de Android descargadas de Google Play Store)</td><td>disponible</td><td>disponible</td><td><ul><li>Datos de atribución de usuarios LAT disponibles.</li><li>El referente tiene prioridad sobre los datos de MMP si ambos están disponibles.</li><li>No es aplicable a las campañas de re-engagement.</li></ul></td></tr><tr><td>Por clics</td><td>MMP API</td><td>Restringido\*</td><td>disponible</td><td> </td></tr><tr><td>Por impresiones</td><td>MMP API</td><td>Restringido\*</td><td>disponible</td><td>El mecanismo de referente no es compatible.</td></tr><tr><td colspan="5"><p><strong>Nota:</strong> Cuando la disponibilidad de los datos está restringida:</p><ul><li><ul><li>Las postbacks de eventos de instalación e in-app se envían solo a las redes de publicidad restrictivas. Los partners externos, como los partners de analíticas, no reciben postbacks para la atribución restringida. </li><li>Los postbacks no atribuidos (que no contienen campos de atribución) se envían a las redes de publicidad que se configuraron para recibir todos los eventos (incluidos los orgánicos y los no atribuidos). Esto incluye a los partners de administración de campañas de Meta.</li></ul></li></ul></td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Acción requerida**
+      </td>
+      <td>
+        **Para obtener tu clave de descifrado de Anuncios de Meta:**
+
+        [La siguiente información se basa en la información proporcionada por Facebook]
+
+        1. Inicia sesión en tu portal del desarrollador de Meta.
+        2. Ve a **Mis aplicaciones** en la esquina superior derecha.
+        3. Selecciona la aplicación para la que deseas acceder a tu clave de descifrado.
+        4. Ve a **Configuración** > **Básica** en el lado izquierdo de la página.
+
+           [![FBUIforKey.png](https://files.readme.io/7581629ac17217154300bc796fd54416c1b04c08353b21ae7b93662fe182f694-4409669308049.png)](https://files.readme.io/7581629ac17217154300bc796fd54416c1b04c08353b21ae7b93662fe182f694-4409669308049.png)
+        5. Desplázate hacia abajo hasta la sección **Android** y verás tu clave de descifrado con la etiqueta **Clave de descifrado de la Referencia de instalación** debajo del campo **Nombres de paquete**. **Nota**: Esta es la misma sección en la que configuraste el nombre de tu paquete y Google Play Store.
+
+        **Para habilitar el mecanismo de referente en AppsFlyer.**
+
+        1. [Obligatorio] Verifica que AppsFlyer SDK V5.4+ esté adoptado en tu aplicación. No confíes en versiones anteriores.
+        2. Realice una de las siguientes acciones:
+           1. [Próximamente] Configura la clave de descifrado a través de la API.
+           2. Para establecer la clave de descifrado a través de la interfaz de usuario:
+              1. En AppsFlyer, ve a **Configuración** > **Integraciones activas**.
+              2. Selecciona Meta ads.  
+
+                 ![meta-ads-install-referrer-decryption-key.png](https://files.readme.io/adf6caa8d7cee493695eb8fb7db1b61c60e6a1cef0273e615c43a05ad8a9485d-13963525463825.png)
+           3. En la pestaña **Integración**, pega la clave en **Referencia de instalación** **Clave de descifrado**.
+           4. Haz clic en **Guardar integración**.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Actualizar la clave de descifrado a través de API**
+      </td>
+      <td>
+        **[En breve]**
+
+        Lanzaremos una API que actualiza la clave de descifrado.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Disponibilidad de raw data en el futuro**
+      </td>
+      <td>
+        * Si los datos de atribución se obtienen a través del mecanismo de referente, los datos no están restringidos y están disponibles a través de los reportes de raw data.
+        * Si los datos de atribución se obtienen a través de la API, entonces los raw data de los usuarios traídos por Meta Ads se asignan a la fuente de medios *restringida*
+        * Este cambio no tiene ningún impacto en el raw data de los usuarios traídos antes del cambio. En otras palabras, antes del 29 de octubre de 2021, 08:00 UTC.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Qué sigue igual**
+      </td>
+      <td>
+        AppsFlyer sigue recibiendo datos a nivel de dispositivo de los anuncios de Meta, lo que significa que nuestras capacidades de atribución e informes (incluyendo la atribución multitáctil, LTV, ROI, análisis de cohortes, informes de retención, protección contra fraudes, audiencias, y otros servicios) permanecen sin cambios. Consulta las <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview">herramientas de generación de reportes agregados y analíticos</Anchor>.
+
+        **Nota**: Si nos proporcionas la clave de descifrado, podemos atribuir a los usuarios que no tienen un ID de publicidad (habilitado para LAT). Esto mejora la precisión de la atribución.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Cambios en la atribución**
+      </td>
+      <td>
+        El Deferred Deep Linking a través de GCD estará disponible para las aplicaciones Android mediante el mecanismo de referente de instalación de Google. No está disponible para aplicaciones de iOS.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Preguntas ftecuentes**
+      </td>
+      <td>
+        * **¿Es necesario actualizar la clave de descifrado del referente de instalación?**  
+          Una vez enviada, no es necesario actualizar la clave de descifrado.
+        * **¿Cuándo puedo ver los datos de nivel de usuario en los reportes de raw data?**  
+          Los datos de nivel de usuario se muestran en los reportes de raw data una vez que se envía una clave de descifrado de referente de instalación válida y se atribuye una instalación a Anuncios de Meta.
+        * **¿Están disponibles los datos de atribución de nivel de usuario para las instalaciones que ocurrieron entre el 29 de octubre de 2021 y el 3 de noviembre de 2021?**  
+          Lamentablemente, estos datos no están disponibles.
+      </td>
+    </tr>
+  </tbody>
+</Table>

@@ -1,5 +1,5 @@
 ---
-title: '[Beta] AppsFlyer MCP'
+title: '[beta] MCP de AppsFlyer'
 metadata:
   keywords:
     - Marketers
@@ -13,153 +13,152 @@ x-zendesk:
     - Marketers
     - MCP
   created_at: '2025-06-19T07:19:33Z'
-  edited_at: '2026-10-26T10:38:35Z'
+  edited_at: '2026-11-03T01:47:50Z'
   id: 36349070304785
-  locale: en-us
+  locale: es
   section: AI
   section_id: 36348470056081
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/36349070304785--Beta-AppsFlyer-MCP
+  url: https://support.appsflyer.com/hc/es/articles/36349070304785
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-> **At a glance:** AppsFlyer MCP connects your AppsFlyer data to large language models (LLMs), such as Claude, ChatGPT, Gemini CLI, Copilot CLI, and VS Code. Ask questions, get performance insights, and retrieve AppsFlyer information directly in your AI chat or development environment.
+> **En resumen:** El MCP de AppsFlyer conecta tus datos de AppsFlyer a cualquier modelo de lenguaje grande (LLM), como Claude o VS Code. Haz preguntas, obtén insights sobre el rendimiento y toma medidas directamente en tu chat de IA.
 
-<Embed title="[Beta] AppsFlyer MCP" typeOfEmbed="youtube" url="https://www.youtube.com/embed/jAw7oocIx6o?si=-s107vTaTTwO076n" providerUrl="https://www.youtube.com" />
+<Embed title="[beta] MCP de AppsFlyer" typeOfEmbed="youtube" url="https://www.youtube.com/embed/jAw7oocIx6o?si=-s107vTaTTwO076n" providerUrl="https://www.youtube.com" />
 
 <div id="disclaimer" />
 
-<Accordion title="Disclaimer">
+<Accordion title="Advertencia">
 
-**The AppsFlyer MCP Server is a service currently in beta phase, provided by AppsFlyer for evaluation purposes.**
+**El servidor AppsFlyer MCP es un servicio que actualmente se encuentra en fase Beta, proporcionado por AppsFlyer para fines de evaluación.**
 
-By using it to connect third-party AI tools, you agree that AppsFlyer has no responsibility or liability for such tools, their outputs, results, performance, operation, legality, or reliability. AppsFlyer does not control, endorse, or verify these tools or their results and expressly disclaims all warranties, express or implied, relating thereto. AppsFlyer is not responsible for data storage, retention, processing, or use by such tools. You are solely responsible for ensuring compliance with applicable laws and your own internal policies. You represent that you have all necessary rights and consents to connect these tools to the MCP Server and provide them access to your data. The service is provided "as-is" for supported use cases only. Use outside this scope is at your sole risk. Use is subject to the terms of the <Anchor target="_blank" href="https://www.appsflyer.com/legal/msa/">Master Services Agreement</Anchor>, or if a definitive agreement has been signed, then the terms of such agreement.
+Al usarlo para conectar herramientas de IA de terceros, aceptas que AppsFlyer no tiene responsabilidad ni obligación por tales herramientas, sus resultados, rendimiento, operación, legalidad o fiabilidad. AppsFlyer no controla, respalda ni verifica estas herramientas o sus resultados y renuncia expresamente a todas las garantías, expresas o implícitas, relacionadas con ello. AppsFlyer no es responsable del almacenamiento, retención, procesamiento o uso de datos por tales herramientas; tú eres el único responsable de garantizar el cumplimiento de las leyes aplicables y tus propias políticas internas. Eres el único responsable de garantizar el cumplimiento de la legislación aplicable y de tus propias políticas internas. Declara que tiene todos los derechos y consentimientos necesarios para conectar estas herramientas al servidor MCP y proporcionarles acceso a sus datos. El servicio se proporciona «tal cual» solo para los casos de uso compatibles. El uso fuera de este ámbito es por tu cuenta y riesgo. El uso está sujeto a los términos del <Anchor target="_blank" href="https://www.appsflyer.com/legal/msa/">Acuerdo de Servicios Maestros</Anchor>, o si se ha firmado un acuerdo definitivo, entonces a los términos de dicho acuerdo.
 
 </Accordion>
 
-## What is AppsFlyer MCP?
+## ¿Qué es el MCP de AppsFlyer?
 
-AppsFlyer MCP lets you securely connect LLMs to the AppsFlyer platform so you can interact with your marketing data through simple conversation. AppsFlyer MCP helps you make smarter, faster decisions based on real-time data.
+Te permite conectar de forma segura los LLMs a la plataforma de AppsFlyer para que puedas interactuar con tus datos de marketing a través de una simple conversación. El MCP de AppsFlyer te ayuda a tomar decisiones más inteligentes y rápidas basadas en datos en tiempo real.
 
-With MCP, you can:
+Con MCP, podrás:
 
-* Get instant campaign performance, trends, and KPI information.
-* Compare metrics like ROAS, installs, and LTV.
-* Create OneLink links, and audit and troubleshoot OneLink templates and links.
-* Audit and troubleshoot Audiences connections.
-* Retrieve setup guidance or product documentation.
+* Obtener insights instantáneos sobre el rendimiento, las tendencias y los KPIs de las campañas.
+* Compara métricas como ROAS, instalaciones y LTV.
+* Crea enlaces de OneLink y audita y soluciona problemas de plantillas y enlaces de OneLink.
+* Audita y soluciona problemas de las conexiones de audiencias.
+* Recupera la guía de configuración o la documentación del producto.
 
-## Set up AppsFlyer MCP
+## Configuración del MCP de AppsFlyer
 
-AppsFlyer MCP can connect to chat assistants, CLIs, IDEs, automation platforms, and self-hosted agents. Setup depends on the client you use and the authentication method it supports.
+AppsFlyer MCP puede conectarse a asistentes de chat, CLI, IDE, plataformas de automatización y agentes alojados en entornos propios. La configuración depende del cliente que uses y del método de autenticación que admita.
 
-> 📘 **Note**
+> 📘 **Advertencia**
 >
-> Some platforms might require admin approval to connect MCP servers. If you don't see the setup options described below, contact your IT or workspace admin.
+> Nota: Algunas plataformas de chat pueden requerir aprobación de administrador para conectar el MCP. Si no ves las opciones de configuración que se describen a continuación, ponte en contacto con tu equipo de TI o con el administrador de tu espacio de trabajo.
 
-## Authentication methods
+## Métodos de autenticación
 
-AppsFlyer MCP supports two authentication methods. Use the method that matches how you plan to connect to AppsFlyer MCP.
+AppsFlyer MCP ofrece soporte para dos métodos de autenticación. Usa el método que se ajuste a cómo piensas conectarte a AppsFlyer MCP.
 
-| Authentication method | Used by | Best for | Access duration |
+| Método de autenticación | Utilizado por | Ideal para | Duración del acceso |
 | --- | --- | --- | --- |
-| Browser-based OAuth login | Gemini CLI, Copilot CLI, ChatGPT, Claude.ai, and Claude Desktop | Ad hoc questions, exploratory analysis, and one-off reports | Valid for 7 days from connection. Re-authentication is required at the end of the session |
-| Bearer token authentication | Claude Code, automation platforms, self-hosted agents, and integrations | Automations, scheduled tasks, background agents, and non-interactive workflows | Valid until manually revoked |
+| Inicio de sesión OAuth basado en navegador | Gemini CLI, Copilot CLI, ChatGPT, Claude.ai y Claude Desktop | Preguntas ad hoc, análisis exploratorio e informes puntuales | Válido durante 7 días desde la conexión. Se requiere volver a autenticarse al final de la sesión |
+| Autenticación mediante token Bearer | Claude Code, plataformas de automatización, agentes alojados en entornos propios e integraciones | Automatizaciones, tareas programadas, agentes en segundo plano y flujos de trabajo no interactivos | Válido hasta que se revoque manualmente |
 
-### Browser-based OAuth login
+### Inicio de sesión OAuth basado en navegador
 
-Browser-based OAuth login lets you connect interactively through your browser. When you connect, the MCP client opens a browser window and asks you to log in to AppsFlyer. After you approve access, the client connects to your AppsFlyer account.
+El inicio de sesión OAuth basado en navegador te permite conectarte de forma interactiva a través del navegador. Cuando te conectas, el cliente MCP abre una ventana del navegador y te pide que inicies sesión en AppsFlyer. Después de aprobar el acceso, el cliente se conecta a tu cuenta de AppsFlyer.
 
-Use this method for interactive sessions, exploratory analysis, and one-off reports.
+Usa este método para sesiones interactivas, análisis exploratorio e informes puntuales.
 
-### Bearer token authentication
+### Autenticación con token Bearer
 
-Bearer token authentication lets non-interactive tools connect to AppsFlyer MCP by using an AppsFlyer MCP token. The token is passed in the request header:
+La autenticación con token Bearer permite que las herramientas no interactivas se conecten a AppsFlyer MCP mediante un token de AppsFlyer MCP. El token se pasa en el encabezado de la solicitud:
 
 ```http
 Authorization: Bearer <YOUR_MCP_TOKEN>
 ```
 
-Use this method for automations, scheduled tasks, background agents, and integrations that can't use a browser login.
+Usa este método para automatizaciones, tareas programadas, agentes en segundo plano e integraciones que no pueden usar un login en el navegador.
 
-To create a token, go to **Account menu > Security Center > AppsFlyer Tokens** and create an MCP token.
+Para crear un token, ve a **menú de la cuenta > Centro de seguridad > Tokens de AppsFlyer** y crea un token MCP.
 
-## Set up by client
+## Configuración por el cliente
 
 <div id="h_claude-ai-and-claude-desktop" />
 
-<Accordion title="Claude Chat and Cowork">
+<Accordion title="Claude Chat y Cowork">
 
-Use Claude chat and Claude Cowork with browser-based OAuth login. These instructions apply to Claude on web, desktop, and Cowork.
+Usa Claude Chat y Claude Cowork con login de OAuth basado en el navegador. Estas instrucciones se aplican a Claude en la web, en el escritorio y en Cowork.
 
-> 📘 **Note**
+> 📘 **Característica**
 >
-> For Team and Enterprise plan users, only Owners or Admins can add organization-wide integrations.
+> En los planes Team y Enterprise, solo los propietarios o administradores pueden añadir integraciones para toda la organización.
 
-#### Set up Claude chat and Cowork
+#### Configura Claude chat y Cowork
 
-1. Click your name in the lower-left corner and select **Settings**. Alternatively, in a new chat, click **Search & tools** > **Manage connectors**.
-2. Open the <Anchor target="_blank" href="https://claude.ai/settings/integrations">Connectors</Anchor> tab.
-3. Switch to the **Organization connectors** tab.
-4. In the connectors section, click **Add connector**.
-5. Enter the following connector details:
-   * **Connector name:** AppsFlyer
-   * **Connector URL:** `https://mcp.appsflyer.com/auth/mcp`
-6. Click **Add**.
-7. Switch to the **Your connectors** tab.
-8. In the connectors section, click **Connect** next to the AppsFlyer connection.
-9. Log in to AppsFlyer when prompted.
+1. Haz clic en tu nombre en la esquina inferior izquierda y selecciona **Settings**. También puedes, en un chat nuevo, hacer clic en **Search & tools** > **Manage connectors**.
+2. Abre la pestaña <Anchor target="_blank" href="https://claude.ai/settings/integrations">**Conectores**</Anchor>.
+3. Cambia a la pestaña **Conectores de organización**.
+4. En las secciones de conectores, haz clic en **Agregar conector.**
+5. Introduce los siguientes datos del conector:
+   * Nombre del conector: AppsFlyer
+   * URL del conector: https://mcp.appsflyer.com/auth/mcp
+6. Haz clic en **Agregar**.
+7. Cambia a la pestaña **Tus conectores**.
+8. En la sección de conectores, haz clic en **Conectar** junto a la conexión de AppsFlyer.
+9. Inicia sesión en AppsFlyer cuando se te indique.
 
-#### Test the Claude connection
+#### Probar la conexión de Claude
 
-1. In any chat window, click the settings button.   
+1. En cualquier ventana de chat, haz clic en el botón de configuración.  
    <Image alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
-2. If AppsFlyer MCP was set up correctly, the AppsFlyer tools appear in the menu.
+2. Si la integración de AppsFlyer se configuró correctamente, verás una lista de herramientas en el menú.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> **Get started faster with Cowork: save as a Skill.** If your team works in Claude Cowork, use the <Anchor target="_blank" href="https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit">Claude Cowork starter kit for marketers</Anchor> to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
+> **Empieza más rápido con Cowork: guárdalo como una Skill.** Si tu equipo trabaja en Claude Cowork, usa el <Anchor target="_blank" href="https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit">kit de inicio de Claude Cowork para profesionales del marketing</Anchor> para configurarlo más rápido. El kit de inicio incluye un plan de activación, plantillas listas para usar y prompts para copiar y pegar para trabajar con tus datos de AppsFlyer mediante IA desde el primer día, para que no tengas que crear desde cero tus primeros flujos de trabajo, reportes o briefs.
 
 </Accordion>
 
 <div id="h_claude-code" />
 
-<Accordion title="Claude Code">
+<Accordion title="Claude chat y código">
 
-Use Claude Code with bearer token authentication for automation, scheduling, and non-interactive workflows.
+Usa Claude Code con autenticación mediante token Bearer para automatización, programación y flujos de trabajo no interactivos.
 
-#### Add AppsFlyer MCP to Claude Code
+#### /docs/beta-appsflyer-mcp#vs-code
 
-1. In AppsFlyer, go to **Account menu > Security Center > AppsFlyer Tokens**.
-2. Create an MCP token.
-3. In Terminal, add the AppsFlyer MCP server:
+1. En AppsFlyer, ve a **Menú de la cuenta > Centro de seguridad > Tokens de AppsFlyer**.
+2. Para una guía rápida sobre cómo construir un agente con n8n / Make.com + AppsFlyer MCP, consulta nuestro blog.
+3. ¿Puede cualquier usuario hacer lo que quiera con el MCP de AppsFlyer?
 
    ```bash
-   claude mcp add-json appsflyer '{"type":"http","url":"https://mcp.appsflyer.com/auth/mcp","headers":{"Authorization":"Bearer YOUR_APPSFLYER_MCP_TOKEN"}}'
+   En .vscode/mcp.json, agrega: { "appsFlyer": "https://mcp.appsflyer.com/auth/mcp" }
    ```
-4. Start Claude Code:
+4. Inicia Claude Code:
 
    ```bash
    claude .
    ```
-5. Verify that the MCP server was added:
+5. Verifica que se haya añadido el servidor MCP:
 
    ```bash
    claude mcp list
    ```
-6. Confirm that `appsflyer` appears in the list of configured MCP servers.
-7. Ask an AppsFlyer question. For example:
+6. Confirma que `appsflyer` aparece en la lista de servidores MCP configurados.
+7. Haz una pregunta sobre AppsFlyer. Por ejemplo,
 
    ```text
-   What apps are in my AppsFlyer account?
+   ¿El servidor MCP de AppsFlyer almacena mis datos o credenciales?
    ```
 
    ```text
-   What were my top media sources in the US last week for "Mypets.android.com"?
+   ¿La versión beta está abierta para todos los usuarios de AppsFlyer?
    ```
 
    ```text
-   Create a summary of the performance of "Mypets.android.com" in the last day, segmented by campaign.
+   “Muestra instalaciones por campaña en los últimos 7 días.”
    ```
 
 </Accordion>
@@ -168,12 +167,12 @@ Use Claude Code with bearer token authentication for automation, scheduling, and
 
 <Accordion title="Cursor IDE">
 
-Use Cursor IDE to connect AppsFlyer MCP from your local development environment.
+Para habilitar el acceso al servidor MCP de AppsFlyer desde tu entorno de desarrollo local mediante Cursor IDE, sigue estos pasos:
 
-1. Create or open a configuration file, depending on the scope:
-   * **Global configuration:** `~/.cursor/mcp.json`
-   * **Project-specific configuration:** `.cursor/mcp.json`
-2. Add the following entry under the `mcpServers` field in your JSON file:
+1. Crea o localiza el archivo de configuración:
+   * **Configuración global**: `~/.cursor/mcp.json`
+   * **Configuración específica del proyecto**: `.cursor/mcp.json`
+2. **Agrega la siguiente entrada** en el campo `mcpServers` de tu archivo JSON:
 
    ```json
    {
@@ -184,8 +183,8 @@ Use Cursor IDE to connect AppsFlyer MCP from your local development environment.
      }
    }
    ```
-3. Restart Cursor IDE to apply the new configuration.
-4. Authenticate when prompted to access AppsFlyer MCP services.
+3. **Reinicia el Cursor IDE** para aplicar la nueva configuración.
+4. **Identifícate** cuando se te indique mediante acceso para obtener acceso a los servicios de MCP.
 
 </Accordion>
 
@@ -193,20 +192,15 @@ Use Cursor IDE to connect AppsFlyer MCP from your local development environment.
 
 <Accordion title="VS Code">
 
-1. Press `Cmd+Shift+P` or `Ctrl+Shift+P` to open the Command Palette.
-2. Select **Configure MCP Servers**.
-3. In `.vscode/mcp.json`, add the AppsFlyer MCP server configuration:
+1. Pulsa `Cmd+Shift+P` o `Ctrl+Shift+P` para abrir la paleta de comandos.
+2. Selecciona **Configurar servidores MCP**.
+3. **Añade la definición de tu servidor MCP:**  
+   En `settings.json`, bajo la clave `mcpServers`, añade un bloque que defina tu servidor MCP de AppsFlyer.
 
    ```json
-   {
-     "servers": {
-       "appsflyer": {
-         "url": "https://mcp.appsflyer.com/auth/mcp"
-       }
-     }
-   }
+   Claude chat y código: Admitido en planes Pro, Max, Team y Enterprise en web y de ordenador.
    ```
-4. Save the file and restart Copilot Chat.
+4. Guarda el archivo y reinicia el chat de Copilot.
 
 </Accordion>
 
@@ -214,40 +208,41 @@ Use Cursor IDE to connect AppsFlyer MCP from your local development environment.
 
 <Accordion title="ChatGPT">
 
-There are two ways to use ChatGPT with AppsFlyer MCP.
+Hay dos formas de usar ChatGPT con AppsFlyer.
 
-* [Custom GPT](#add-the-appsflyer-custom-gpt): Best for simple access to an AppsFlyer assistant.
-* [MCP in ChatGPT](#add-appsflyer-mcp-in-chatgpt): Best for users who want to bring AppsFlyer data into ChatGPT conversations.
+* [GPT personalizado](#cómo-agregar-el-gpt-personalizado-de-appsflyer): ideal para acceder de forma sencilla a un asistente de AppsFlyer.
+* [MCP en ChatGPT](/docs/beta-appsflyer-mcp#mcp-in-chatgpt-supported-for-plus-or-pro-users-in-chatgpt-beta-mode): ideal para **usuarios avanzados** que desean integrar datos de AppsFlyer en *cualquier* conversación de ChatGPT y aportar otros datos a la conversación.
 
-#### Add the AppsFlyer custom GPT
+#### Cómo agregar el GPT personalizado de AppsFlyer
 
-1. Click <Anchor target="_blank" href="https://chatgpt.com/g/g-68b6a92eb8e0819194cbb81e1e635c0d-appsflyer">AppsFlyer custom GPT</Anchor>.
-2. Save the GPT to your sidebar for easy access.
-3. Open the custom GPT.
-4. Ask a question. For example:
+1. Haz clic en este enlace: [GPT personalizado](https://chatgpt.com/g/g-68b6a92eb8e0819194cbb81e1e635c0d-appsflyer) de AppsFlyer para agregar el GPT personalizado a tu cuenta.
+2. Para facilitar el acceso, se recomienda guardar el GPT en tu barra lateral.
+3. Abre el GPT personalizado.
+4. Preguntas Frecuentes Por ejemplo,
 
    ```text
-   Show me my Meta campaign performance from last week.
+   Comienza a hacer preguntas como:  
+   "Muéstrame el rendimiento de mi campaña de Meta de la semana pasada".
    ```
 
-#### Add AppsFlyer MCP in ChatGPT
+#### Usando el conector de AppsFlyer en ChatGPT
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Admin setup might be required to add and publish a connector to your organization.
+> Puede que se requiera configuración de administrador para añadir y publicar un conector en tu organización.
 
-1. Add a connector and publish it to your organization.
-2. Enter the following connector details:
-   * **Name:** AppsFlyer MCP
-   * **URL:** `https://mcp.appsflyer.com/auth/mcp`
-   * **Authentication:** OAuth
-3. To connect for the first time, go to **Settings > Apps & Sources > AppsFlyer MCP**.
-4. Connect to AppsFlyer MCP.
-5. Follow the steps to connect and log in with your AppsFlyer credentials.
+1. Añadir un conector y publicarlo en tu organización.
+2. Introduce los siguientes datos del conector:
+   * Nombre: AppsFlyer MCP
+   * **URL:** https://mcp.appsflyer.com/auth/mcp
+   * Autenticación: OAuth (predeterminado)
+3. Para conectarte por primera vez, ve a **Configuración > Apps & Sources > AppsFlyer MCP**.
+4. Conéctate al AppsFlyer MCP.
+5. Sigue los pasos para conectarte e iniciar sesión usando tus credenciales de AppsFlyer.
 
-After setup, open a chat, select **Sources** or **Connectors**, and turn on the AppsFlyer connection.
+Selecciona **Fuentes** (o **Conectores**, dependiendo de tu versión de UI) y activa la conexión de AppsFlyer.
 
-For security, AppsFlyer MCP disconnects approximately every 10 hours. To reconnect, repeat the connection flow.
+Por seguridad, el AppsFlyer MCP se desconecta cada 10 horas. Para reconectar, sigue los pasos anteriores.
 
 </Accordion>
 
@@ -255,41 +250,41 @@ For security, AppsFlyer MCP disconnects approximately every 10 hours. To reconne
 
 <Accordion title="Gemini CLI">
 
-Use Gemini CLI with browser-based OAuth login.
+Usa Gemini CLI con login de OAuth basado en el navegador.
 
-#### Add AppsFlyer MCP to Gemini CLI
+#### Para agregar el AppsFlyer MCP a Gemini CLI:
 
-1. In Terminal, add the AppsFlyer MCP server:
-
-   ```bash
-   gemini mcp add appsflyer https://mcp.appsflyer.com/auth/mcp -t http
-   ```
-2. Start Gemini CLI:
+1. /docs/beta-appsflyer-mcp#analyze-skan-performance
 
    ```bash
-   gemini
+   GPT personalizado: el mejor por simplicidad y escala: un asistente de AppsFlyer con un solo clic, accesible para cualquier cliente de ChatGPT (incluidos los usuarios gratuitos).
    ```
-3. In the Gemini CLI prompt, enter:
+2. Inicia Gemini CLI:
+
+   ```bash
+   géminis
+   ```
+3. En el prompt de Gemini CLI, introduce:
 
    ```text
    auth
    ```
-4. Complete the authentication flow in your browser, and then return to Terminal.
-5. Ask an AppsFlyer question. For example:
+4. Completa el flujo de autenticación en tu navegador y, después, vuelve a la terminal.
+5. Haz una pregunta sobre AppsFlyer. Por ejemplo,
 
    ```text
-   What apps are in my AppsFlyer account?
+   ¿Debo tener una cuenta de AppsFlyer para usarlo?
    ```
 
-#### Troubleshoot Gemini CLI authentication
+#### Solucionar problemas de autenticación de Gemini CLI
 
-If authentication fails, start Gemini CLI in debug mode:
+Si la autenticación falla, inicia Gemini CLI en modo de depuración:
 
 ```bash
 GEMINI_LOG_LEVEL=debug gemini
 ```
 
-Then enter `auth` again in the Gemini CLI prompt.
+Después, vuelve a introducir `auth` en el prompt de Gemini CLI.
 
 </Accordion>
 
@@ -297,572 +292,647 @@ Then enter `auth` again in the Gemini CLI prompt.
 
 <Accordion title="Copilot CLI">
 
-Use Copilot CLI with browser-based OAuth login.
+Usa Copilot CLI con login de OAuth basado en navegador.
 
-#### Add AppsFlyer MCP to Copilot CLI
+#### ¿Es seguro el MCP de AppsFlyer?
 
-1. Open Terminal.
-2. Start Copilot CLI:
+1. Abre la terminal.
+2. Inicia Copilot CLI:
 
    ```bash
    copilot
    ```
-3. If you're not logged in, enter the following command in the Copilot CLI prompt:
+3. Si no has iniciado sesión, introduce el siguiente comando en el prompt de Copilot CLI:
 
    ```text
-   /login
+   /iniciar sesión
    ```
-4. Complete the browser login.
-5. In the Copilot CLI prompt, enter:
+4. Completa el login en el navegador.
+5. En el prompt de Copilot CLI, introduce:
 
    ```text
    /mcp add
    ```
-6. Enter the following MCP server details:
+6. Introduce los siguientes datos del servidor MCP:
 
-| Field | Value |
+| Campo | value |
 | --- | --- |
-| Server Name | `appsflyer` |
-| Server Type | `HTTP` |
+| Nombre del servidor | `appsflyer` |
+| Tipo de servidor | `HTTP` |
 | URL | `https://mcp.appsflyer.com/auth/mcp` |
-| Tools | `*` |
+| Herramienta | `*` |
 
-7. Press **Ctrl+S** to save the configuration.
-8. When prompted, complete the AppsFlyer authentication flow in your browser.
-9. Return to Terminal.
-10. Ask an AppsFlyer question. For example:
+7. Pulsa **Ctrl+S** para guardar la configuración.
+8. Cuando se te pida, completa el flujo de autenticación de AppsFlyer en tu navegador.
+9. Vuelve al Terminal.
+10. Haz una pregunta sobre AppsFlyer. Por ejemplo,
 
     ```text
-    What apps are in my AppsFlyer account?
+    ¿Qué certificaciones de seguridad posee AppsFlyer?
     ```
 
 </Accordion>
 
 <div id="h_third-party-and-self-hosted-platforms" />
 
-<Accordion title="Third-party and self-hosted platforms">
+<Accordion title="Plataformas de terceros y autoalojadas">
 
-Use an MCP token to authenticate third-party or self-hosted systems with AppsFlyer MCP. This supports automation and AI integrations with platforms like n8n, Make, or your own LLM-powered agents.
+Usa tu **token MCP** para autenticar sistemas de terceros o autoalojados con **AppsFlyer MCP**. Esto permite la automatización y las integraciones de IA con plataformas como *n8n*, *Make*, o tus propios agentes impulsados por LLM.
 
-The MCP token is an account-level bearer token that inherits the permissions of the admin who created it. You can access and manage it from <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">Security Center > AppsFlyer Tokens</Anchor>.
+El token MCP es un **token portador a nivel de cuenta** que hereda los permisos del administrador que lo creó.  
+ Puedes acceder y gestionarlo desde <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">**Centro de Seguridad → Tokens de AppsFlyer**</Anchor> *(solo para administradores)*
 
-#### MCP connection details
+#### Detalles de conexión MCP
 
-To connect your automation or agent platform to AppsFlyer MCP, use the following configuration:
+Para conectar tu plataforma de automatización o agente a AppsFlyer MCP, usa la siguiente configuración:
 
-* **Auth Type:** Bearer Token
-* **Base URL / Endpoint:** `https://mcp.appsflyer.com/auth/mcp`
-* **Bearer Token:** Your MCP token
+* **Tipo de autenticación:** token de portador
+* **URL Base / Endpoint:** `https://mcp.appsflyer.com/auth/mcp`
+* **Token de portador:** tu token de MCP
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Never share or publish your token publicly. Treat it as a private credential. Your MCP token grants direct access to your MCP environment.
+> Nunca compartas ni publiques tu token públicamente. Trátalo como una credencial privada. Tu token MCP otorga acceso directo a tu entorno MCP.
 
-#### Example use cases
+#### Ejemplos de casos de uso
 
-| Category | Example |
+| Categoría | Ejemplo |
 | --- | --- |
-| Custom agents | Build an AI agent that uses MCP to fetch data, analyze it, and send recommendations. |
-| LLM integrations | Let a self-hosted LLM query campaign performance metrics through MCP. |
+| Agentes personalizados | Construye un agente de IA que use MCP para obtener datos, analizarlos y enviar recomendaciones. |
+| Integraciones de LLM | Permite que un LLM autoalojado consulte métricas de rendimiento de campañas a través de MCP. |
 
 </Accordion>
 
 <div id="h_other-platforms" />
 
-<Accordion title="Other platforms">
+<Accordion title="Otras plataformas">
 
-AppsFlyer MCP also supports connections to the following platforms:
+El MCP de AppsFlyer también es compatible con conexiones a las siguientes plataformas:
 
-| Platform | Redirect URI | Reference |
+| Platform | URI de redirección | Referencia |
 | --- | --- | --- |
-| Microsoft 365 Copilot | `https://teams.microsoft.com/api/platform/v1.0/oAuthRedirect` | <Anchor target="_blank" href="https://github.com/MicrosoftDocs/m365copilot-docs/blob/main/docs/plugin-mcp-apps.md">Microsoft 365 Copilot: Plugins & MCP apps</Anchor> |
-| Microsoft Azure AI Foundry | `https://cas.services.azure-ai.net/app/oauth/redirect` | <Anchor target="_blank" href="https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/mcp-authentication">Azure AI Foundry: MCP authentication</Anchor> |
-| Microsoft Copilot Studio / Power Platform (custom connector) | `https://global.consent.azure-apim.net/redirect/{connector-slug}` | <Anchor target="_blank" href="https://learn.microsoft.com/en-us/graph/mcp-server/use-enterprise-mcp-server-copilot-studio">Use an enterprise MCP server in Copilot Studio</Anchor> |
-| Google Gemini Enterprise | `https://vertexaisearch.cloud.google.com/oauth-redirect` | <Anchor target="_blank" href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server">Set up a custom MCP server</Anchor> |
-| Amazon Quick (formerly QuickSight) | `https://{region}.quicksight.aws.amazon.com/sn/oauthcallback` | <Anchor target="_blank" href="https://docs.aws.amazon.com/quick/latest/userguide/mcp-integration.html">MCP integration – Amazon Quick</Anchor> |
+| Microsoft 365 Copilot | `https://teams.microsoft.com/api/platform/v1.0/oAuthRedirect` | <Anchor target="_blank" href="https://github.com/MicrosoftDocs/m365copilot-docs/blob/main/docs/plugin-mcp-apps.md">Microsoft 365 Copilot: plugins & aplicaciones de MCP</Anchor> |
+| Microsoft Azure AI Foundry | `https://cas.services.azure-ai.net/app/oauth/redirect` | <Anchor target="_blank" href="https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/mcp-authentication">Azure AI Foundry: autenticación de MCP</Anchor> |
+| Microsoft Copilot Studio / Power Platform (conector personalizado) | `https://global.consent.azure-apim.net/redirect/{connector-slug}` | <Anchor target="_blank" href="https://learn.microsoft.com/en-us/graph/mcp-server/use-enterprise-mcp-server-copilot-studio">Usa un servidor MCP empresarial en Copilot Studio</Anchor> |
+| Google Gemini Enterprise | `https://vertexaisearch.cloud.google.com/oauth-redirect` | <Anchor target="_blank" href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server">Configura un servidor MCP personalizado</Anchor> |
+| Amazon Quick (anteriormente QuickSight) | `https://{region}.quicksight.aws.amazon.com/sn/oauthcallback` | <Anchor target="_blank" href="https://docs.aws.amazon.com/quick/latest/userguide/mcp-integration.html">Integración de MCP – Amazon Quick</Anchor> |
 
-We're continuously expanding this list as we validate and document more platforms. If the platform you're using isn't listed here, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com) and we'll help you get connected.
+Seguimos ampliando esta lista a medida que validamos y documentamos más plataformas. Si la plataforma que usas no aparece aquí, ponte en contacto con tu CSM o envía un correo electrónico a [hello@appsflyer.com](mailto:hello@appsflyer.com) y te ayudaremos a conectarla.
 
 </Accordion>
 
 <div id="h_use-multiple-accounts-or-agencies" />
 
-<Accordion title="Use multiple accounts or agencies">
+<Accordion title="Para comenzar a construir agentes utilizando herramientas de terceros rápidamente, puedes usar estas dos plantillas .">
 
-AppsFlyer MCP connects to one AppsFlyer account at a time.
+El MCP de AppsFlyer usa datos de la cuenta predeterminada solamente
 
-#### Switch between accounts (browser-based OAuth)
+#### Cambiar entre cuentas (OAuth basado en navegador)
 
-If you manage multiple AppsFlyer accounts under the same email, you can switch which account MCP connects to:
+Si gestionas varias cuentas de AppsFlyer con el mismo correo electrónico, puedes cambiar la cuenta a la que se conecta MCP:
 
-1. In AppsFlyer, set the account you want to connect to as your primary account.
-2. Log in again in your MCP client.
+1. Primera vez conectando:
+2. Inicia sesión de nuevo en tu cliente MCP.
 
-You can't view or query multiple accounts side-by-side in a single connection.
+No puedes ver ni consultar varias cuentas en paralelo en una sola conexión.
 
-#### Connect multiple accounts simultaneously (bearer token)
+#### Una vez habilitado, puedes comenzar a hacer preguntas como:
 
-To connect to several accounts at the same time, for example for agency use, use a multi-agent flow instead of browser-based OAuth:
+Para conectarte a varias cuentas al mismo tiempo, por ejemplo para uso de agencia, utiliza un flujo con varios agentes en lugar de OAuth basado en navegador:
 
-1. For each account, create an MCP token in **Account menu > Security Center > AppsFlyer Tokens**.
-2. In your agent platform, connect each account separately using its own bearer token.
+1. Para cada cuenta, crea un token de MCP en **Menú de la cuenta > Centro de seguridad > Tokens de AppsFlyer**.
+2. En tu plataforma de agentes, conecta cada cuenta por separado con su propio token de portador.
 
-See an example of this flow in <Anchor target="_blank" href="https://www.youtube.com/watch?v=o5oK-yWuE5E">this video</Anchor>.
+Consulta un ejemplo de este flujo en <Anchor target="_blank" href="https://www.youtube.com/watch?v=o5oK-yWuE5E">este vídeo</Anchor>.
 
 </Accordion>
 
-## Use AppsFlyer MCP
+## Uso del MCP de AppsFlyer
 
-### Use cases and prompts
+### Casos de uso y prompts
 
-AppsFlyer MCP gives you a set of tools and resources designed to help you retrieve marketing analytics, performance insights, and configuration information.
+El MCP de AppsFlyer te brinda un conjunto de herramientas y recursos diseñados para ayudarte a recuperar análisis de marketing, insights de rendimiento y realizar tareas de configuración.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> Answers generated through AppsFlyer MCP are only reliable when used for the supported use cases listed below. Responses outside of these use cases have not been validated by AppsFlyer and might be inaccurate or misleading. We can't guarantee the precision or correctness of AI-generated answers that fall outside the intended scope of the AppsFlyer MCP integration.
+> Las respuestas generadas a través del MCP de AppsFlyer solo son confiables cuando se utilizan para los casos de uso compatibles que se enumeran a continuación. AppsFlyer no ha validado las respuestas fuera de estos casos de uso y pueden ser inexactas o engañosas. No podemos garantizar la precisión o corrección de las respuestas generadas por IA que están fuera del alcance previsto de la integración del MCP de AppsFlyer.
 
-Some example use cases and prompts are:
+Algunos casos de uso y prompts de ejemplo son:
 
 <div id="analyze-performance" />
 
-<Accordion title="Analyze performance">
+<Accordion title="Analizar el rendimiento">
 
-Explore aggregated marketing performance data in real time. You can identify top- and low-performing campaigns, run comparisons, spot trends, and uncover insights to help guide decision-making.
+Explora los datos agregados de rendimiento de marketing en tiempo real. Puedes identificar las campañas de mayor y menor rendimiento, realizar comparaciones, detectar tendencias y descubrir insights para ayudar a guiar la toma de decisiones.
 
-**Prompt:** "What were my top media sources in the US last week for Mypets.android.com?"
+**Prompt:** "¿Cuáles fueron mis principales fuentes de medios en los Estados Unidos la semana pasada para Mypets.android.com?"
 
-**Expected AI response:** The AI retrieves top-performing media sources, including installs, revenue, and ROAS.
+**Respuesta esperada de la IA:** La IA recupera fuentes de medios de alto rendimiento, incluidas instalaciones, ingresos y ROAS.
 
-**Prompt:** "What is the best campaign in terms of ROAS where total installs are at least 5000?"
+**Prompt:** "¿Cuál es la mejor campaña en términos de ROAS donde el total de instalaciones es de al menos 5000?"
 
-**Expected AI response:** The AI identifies and ranks campaigns meeting the criteria with performance insights.
+**Respuesta esperada de la IA:** La IA identifica y clasifica las campañas que cumplen los criterios con insights de rendimiento.
 
-**Prompt:** "How many installs did we have yesterday in China for Mypets.android.com app?"
+**Prompt:** "¿Cuántas instalaciones tuvimos ayer en China para la aplicación Mypets.android.com?"
 
-**Expected AI response:** The AI fetches the number of installs in China for that day and app.
+**Respuesta esperada de la IA:** La IA obtiene la cantidad de instalaciones en China para ese día y aplicación.
 
-**Prompt:** "Create a summary of the performance of Mypets.android.com in the last day, segmented by campaign."
+**Prompt:** "Crea un resumen de los rendimientos de la aplicación Mypets.android.com en el último día, segmentados por campaña."
 
-**Expected AI response:** The AI returns a campaign-segmented performance report for that app.
+**Respuesta esperada de la IA:** La IA devuelve un reporte de rendimiento segmentado por campañas para esa aplicación.
 
-**Prompt:** "Compare D1 retention last week vs. the week before, grouped by media source."
+**Prompt:** “Compara entre la retención del primer semestre de la semana pasada y la anterior, agrupa por fuente de medios”
 
-**Expected AI response:** The AI performs a week-over-week comparison of D1 retention rates, grouped by media source.
+**Respuesta esperada de la IA:** La IA realiza una comparación semana tras semana de las tasas de retención del D1 entre la semana pasada y la anterior, agrupadas por fuente de medios.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> **Get started faster with Cowork: save as a Skill.** If your team works in Claude Cowork, use the <Anchor target="_blank" href="https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit">Claude Cowork starter kit for marketers</Anchor> to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
+> **Empieza más rápido con Cowork: guárdalo como una Skill.** Si tu equipo trabaja en Claude Cowork, usa el <Anchor target="_blank" href="https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit">kit de inicio de Claude Cowork para profesionales del marketing</Anchor> para configurarlo más rápido. El kit de inicio incluye un plan de activación, plantillas listas para usar y prompts para copiar y pegar para trabajar con tus datos de AppsFlyer mediante IA desde el primer día, para que no tengas que crear desde cero tus primeros flujos de trabajo, reportes o briefs.
+
+</Accordion>
+
+<div id="h_analyze-creative-performance" />
+
+<Accordion title="Analiza el rendimiento creativo">
+
+<Embed title="[beta] MCP de AppsFlyer" typeOfEmbed="youtube" url="https://www.youtube.com/embed/FdZhZ497684" providerUrl="https://www.youtube.com" />
+
+Explora datos de rendimiento a nivel de creativo (gasto, instalaciones, CPI, ROAS, retención y cohortes de ingresos) en redes, campañas y aplicaciones. Desglósalo por nombre del creativo, tipo, tamaño, duración, antigüedad, end card, evento in-app (por ejemplo, nivel alcanzado, primer depósito o compra) y mucho más. Usa esta información para identificar tus creativos con mejor y peor rendimiento, detectar pronto la fatiga creativa y consultar vistas previas de los activos junto a los números.
+
+**Prompt:** "What were my top-performing creatives by ROAS last month for Mypets.android.com?"
+
+**Respuesta esperada de la IA:** La IA recupera los mejores creativos clasificados por ROAS, incluido el gasto, las instalaciones y el ROAS de cada uno.
+
+**Prompt:** "Which creative type (video, image, HTML, or text) had the best CPI in the US this quarter?"
+
+**Respuesta esperada de la IA:** La IA desglosa el rendimiento por tipo de creativo y devuelve el CPI de cada uno, destacando el de mejor rendimiento.
+
+**Prompt:** "Muéstrame creativos de Meta que lleven más de 2 semanas en funcionamiento y estén mostrando un ROAS a la baja (posible fatiga)."
+
+**Respuesta esperada de la IA:** La IA devuelve una tendencia diaria de ROAS por creativo y marca los creativos con una tendencia descendente sostenida.
+
+**Prompt:** "Muéstrame mis 5 mejores creativos por cohorte de ingresos del día 7 para Mypets.android.com, con vistas previas."
+
+**Respuesta esperada de la IA:** La IA devuelve los 5 mejores creativos clasificados por ingresos del día 7, incluidos enlaces a los assets para que puedas ver cada creativo junto a sus datos.
+
+**Prompt:** "¿Qué end card impulsa la mejor retención en mis creativos de vídeo y cómo varía según la antigüedad del creativo?"
+
+**Respuesta esperada de la IA:** La IA desglosa la retención por tipo de end card y antigüedad del creativo, destacando qué combinaciones funcionan mejor.
+
+**Prompt:** "¿Qué campaña tuvo el costo de instalación más alto el mes pasado y cuáles fueron los 3 creativos principales que lo impulsaron?"
+
+**Respuesta esperada de la IA:** La IA identifica la campaña con el costo más alto y clasifica sus creativos por gasto o instalaciones.
+
+**Prompt:** "¿Qué creativos impulsaron la mayor cantidad de primeros depósitos el mes pasado y cuál fue el costo por primer depósito de cada uno?"
+
+**Respuesta esperada de la IA:** La IA desglosa los eventos de primer depósito por creativo y devuelve el volumen y el costo por evento, junto con el gasto y las instalaciones.
+
+**Prompt:** "Muéstrame el ROAS y los eventos de subida de nivel por tipo de creativo durante los últimos 30 días en Meta."
+
+**Respuesta esperada de la IA:** La IA devuelve el ROAS y el recuento de eventos de subida de nivel por tipo de creativo, destacando el tipo con mejor rendimiento.
 
 </Accordion>
 
 <div id="h_analyze-incrementality-experiments" />
 
-<Accordion title="Analyze Incrementality for UA experiments">
+<Accordion title="Analiza la incrementalidad de los experimentos de UA">
 
-Retrieve your Incrementality for UA experiments and their results, including lift, incremental conversions, incrementality factor, and cost per incremental conversion. Use this information to see which campaigns drove real, incremental growth and where to shift budget.
+Recupera tus experimentos de incrementalidad para UA y sus resultados, incluidos el lift, las conversiones incrementales, el factor de incrementalidad y el costo por conversión incremental. Usa esta información para ver qué campañas impulsaron un crecimiento real e incremental y dónde reasignar presupuesto.
 
-**Prompt:** "Which incrementality experiments ran for Mypets.android.com in the US last quarter?"
+**Prompt:** "¿Which incrementality experiments ran for Mypets.android.com in the US last quarter?"
 
-**Expected AI response:** The AI returns the experiments matching that app, country, and date range, including each experiment's status, media source, measured event, and test period.
+**Respuesta esperada de la IA:** La IA devuelve los experimentos que coinciden con esa aplicación, país e intervalo de fechas, incluido el estado de cada experimento, la fuente de medios, el evento medido y el periodo de prueba.
 
-**Prompt:** "Summarize the results of Incrementality experiment 12345"
+**Prompt:** "Resume los resultados del experimento de Incrementality 12345"
 
-**Expected AI response:** The AI returns the experiment's lift, incremental conversions, incrementality factor compared to classic attribution, and cost per incremental conversion, with the credible interval at the experiment's confidence level.
+**Respuesta esperada de la IA:** La IA devuelve el lift del experimento, las conversiones incrementales, el factor de incrementalidad en comparación con la atribución clásica y el costo por conversión incremental, con el intervalo de credibilidad en el nivel de confianza del experimento.
 
-**Prompt:** "Compare cost per incremental action and Incremental ROAS across all my Incrementality experiments in the past 6 months."
+**Prompt:** "Compara el costo por acción incremental y el ROAS incremental en todos mis experimentos de Incrementality de los últimos 6 meses."
 
-**Expected AI response:** The AI compares the efficiency of your completed experiments from the last 6 months side by side, highlighting which campaigns delivered the most incremental value per dollar of ad spend.
+**Respuesta esperada de la IA:** La IA compara en paralelo la eficiencia de tus experimentos completados de los últimos 6 meses y destaca qué campañas generaron el mayor valor incremental por cada dólar de gasto en anuncios.
 
 </Accordion>
 
 <div id="analyze-skan-performance" />
 
-<Accordion title="Analyze SKAN performance">
+<Accordion title="Analiza el rendimiento de SKAN">
 
-Gain insights into iOS campaign performance using Apple's SKAdNetwork framework. Identify top-performing campaigns and analyze KPI trends to support decision-making.
+Obtén insights sobre el rendimiento de las campañas de iOS con el framework SKAdNetwork de Apple. Identifica las campañas de mejor rendimiento y analiza las tendencias de KPI para apoyar la toma de decisiones.
 
-**Prompt:** "What was the ROI by network for the last month?"
+**Reinicia Gemini CLI** para aplicar la nueva configuración.
 
-**Expected AI response:** The AI retrieves ROI results for the selected period and highlights the top networks.
+**Prompt:** "¿Cuál fue el ROI por red en el último mes?"  
+**Respuesta esperada de la IA:** La IA recupera los resultados de ROI para el período seleccionado y destaca las principales redes.
 
-**Prompt:** "Which campaigns have the lowest CPI?"
+**Crea o abre un archivo** de configuración según el alcance:
 
-**Expected AI response:** The AI identifies campaigns with the lowest CPI, ranking the top performers.
+**Prompt:** "¿Qué campañas tienen el CPI más bajo?"  
+**Respuesta esperada de la IA:** La IA identifica campañas con el CPI más bajo, clasificando a los mejores desempeñadores.
 
-**Prompt:** "What were the weekly conversion rates for the event af\_subscribed in the last month?"
+**Tipo de Autenticación:** Token Portador
 
-**Expected AI response:** The AI provides a week-by-week breakdown of conversion rates for the event and indicates the overall trend.
+**Prompt:** "¿Cuáles fueron las tasas de conversión semanales para el evento af\_subscribed en el último mes?"  
+**Respuesta esperada de la IA:** La IA proporciona un desglose semana a semana de las tasas de conversión para el evento e indica la tendencia general.
 
-**Prompt:** "Which networks have the highest null rates, and which campaigns under them show the highest null rates?"
+**Uso de datos**: Los datos se cifran, procesan en tiempo real y nunca se almacenan.
 
-**Expected AI response:** The AI identifies networks with the highest null rates and outlines the campaigns contributing most to those rates.
+**Prompt:** "¿Qué redes tienen las tasas nulas más altas y qué campañas bajo ellas muestran las tasas nulas más altas?"  
+**Respuesta esperada de la IA:** La IA identifica redes con las tasas nulas más altas y describe las campañas específicas que más contribuyen a esas tasas.
 
 </Accordion>
 
 <div id="onelink-management" />
 
-<Accordion title="OneLink management">
+<Accordion title="Gestión de OneLink">
 
-Create OneLink links, query and audit templates, and Smart Banners to support consistent routing and accurate user journeys. MCP can help you troubleshoot issues, verify link setup at scale, and create new links from a conversation.
+Crea enlaces de OneLink, consulta y audita plantillas y Smart Banners para dar soporte a un enrutamiento coherente y recorridos de usuario precisos. MCP puede ayudarte a resolver problemas, verificar la configuración de enlaces a escala y crear enlaces nuevos a partir de una conversación.
 
-**Prompt:** "Create a OneLink link under the HolidayPush2025 template for our email newsletter, with the campaign name black\_friday and deep link value sale\_page."
+**Prompt:** "Crea un enlace de OneLink en la plantilla HolidayPush2025 para nuestro boletín de correo electrónico, con el nombre de campaña black\_friday y el valor del deep link sale\_page."
 
-**Expected AI response:** The AI finds the template and its domain, summarizes the link parameters, and asks you to confirm. After you approve, it creates the link and returns the short URL.
+**Respuesta esperada de la IA:** La IA encuentra la plantilla y su dominio, resume los parámetros del enlace y te pide que confirmes. Después de que lo apruebes, crea el enlace y devuelve la URL corta.
 
-**Prompt:** "Audit the HolidayPush2025 template and show all links with parameters."
+**Prompt:** "Audita la plantilla 'HolidayPush2025' y muestra todos los enlaces con parámetros."
 
-**Expected AI response:** The AI returns a CSV table with short links and associated parameter values.
+**Respuesta esperada de la IA:** Tabla CSV con enlaces cortos y valores de parámetros asociados.
 
-**Prompt:** "Why does this OneLink redirect to the App Store for existing users?"
+**Prompt:** "¿Por qué este OneLink redirecciona a la App Store para los usuarios existentes?"
 
-**Expected AI response:** The AI returns troubleshooting insights based on link parameters and fallback logic.
+**Respuesta esperada de la IA:** Solución de problemas de insights que combinan parámetros de enlace y lógica alternativa.
 
-**Prompt:** "List all QR-enabled OneLinks for app TravelBuddy."
+**Prompt:** "Lista todos los enlaces OneLink con QR habilitados para la aplicación TravelBuddy".
 
-**Expected AI response:** The AI returns a list of generated OneLinks with QR links and associated metadata.
+**Respuesta esperada de la IA:** Una lista de OneLinks generados con enlaces QR y metadatos asociados.
 
-**Prompt:** "What parameters, capabilities, and redirect behavior does this link have: https://mypets.onelink.me/abc123?"
+**Prompt:** "¿Qué parámetros, capacidades y comportamiento de redirección tiene este enlace: https://mypets.onelink.me/abc123?"
 
-**Expected AI response:** The AI returns the link's parameters by category, its enabled capabilities such as deep linking and retargeting, and how it redirects users by device, platform, and install status.
+**Respuesta esperada de la IA:** La IA devuelve los parámetros del enlace por categoría, sus capacidades habilitadas, como deep linking y retargeting, y cómo redirige a los usuarios según el dispositivo, la plataforma y el estado de instalación.
 
-**Prompt:** "List all active Smart Banners for my account."
+**Solicitud:** "Enumera todos los Smart Banners activos de mi cuenta."
 
-**Expected AI response:** The AI returns banner metadata including banner ID, name, group, website, and banner type.
+**Respuesta esperada de la IA:** La IA devuelve los metadatos del banner, incluidos el ID del banner, el nombre, el grupo, el sitio web y el tipo de banner.
 
-**Prompt:** "Compare the performance of my two Smart Banner creatives over the last 30 days."
+**Solicitud:** "Compara el rendimiento de mis dos creatividades de Smart Banner durante los últimos 30 días."
 
-**Expected AI response:** The AI returns impressions, clicks, and installs for the selected banners side by side.
+**Respuesta esperada de la IA:** La IA devuelve impresiones, clics e instalaciones de los banners seleccionados en paralelo.
 
 </Accordion>
 
 <div id="knowledge-base-and-developer-support" />
 
-<Accordion title="Knowledge base and developer support">
+<Accordion title="Base de conocimientos y soporte para desarrolladores">
 
-Quickly access AppsFlyer documentation and DevHub resources. Get answers about SDK setup, product behavior, and measurement logic directly in your AI chat.
+Accede rápidamente a la documentación de AppsFlyer y a los recursos de DevHub. Obtén respuestas precisas sobre la configuración del SDK, el comportamiento del producto y la lógica de medición, directamente en tu chat de IA.
 
-**Prompt:** "How do I set up in-app event deduplication on Android?"
+**Indicador**: "¿Cómo configuro la desduplicación de eventos in-app en Android?"
 
-**Expected AI response:** The AI provides setup steps, code snippets, and best practices.
+**Respuesta de IA esperada**: La IA proporciona pasos de configuración, fragmentos de código y mejores prácticas.
 
-**Prompt:** "What's the attribution lookback window for TikTok installs?"
+**Prompt:** "¿Cuál es la ventana de lookback de atribución para las instalaciones de TikTok?"
 
-**Expected AI response:** The AI explains the latest platform-specific attribution rules.
+**Respuesta de IA esperada**: Explicación basada en las últimas reglas de atribución específicas de la plataforma.
 
-**Prompt:** "What's the best way to optimize my app's ROAS using AppsFlyer?"
+**Prompt:** "¿Cuál es la mejor manera de optimizar el ROAS de mi aplicación con AppsFlyer?"
 
-**Expected AI response:** The AI outlines strategic levers like segmentation, partner optimization, and LTV measurement best practices.
+**Respuesta de IA esperada**: La IA describe palancas estratégicas como la segmentación, la optimización de partners y las mejores prácticas de medición del LTV.
 
 </Accordion>
 
 <div id="apps-management" />
 
-<Accordion title="Apps management">
+<Accordion title="Gestión de aplicaciones">
 
-Retrieve key app configuration details such as attribution windows, session timeouts, re-engagement settings, and more. Use this information to audit and compare app settings across your portfolio.
+Comprende tus aplicaciones facilmente recuperando detalles de configuración clave como ventanas de atribución, tiempos de espera de la sesión, configuración de re-engagement y más. Te permite auditar y comparar la configuración de las aplicaciones en todo tu portfolio para garantizar la coherencia, mejorar la gestión e identificar rápidamente las discrepancias impulsadas por la configuración en tus datos de medición.
 
-**Prompt:** "What is the attribution window set for my gaming apps?"
+**Indicador**: "¿Cuál es la ventana de atribución configurada para mis aplicaciones de juegos?"
 
-**Expected AI response:** The AI returns a list of apps with their configured attribution windows, highlighting any deviations from the standard.
+**Respuesta de IA esperada**: Una lista de aplicaciones con sus ventanas de atribución configuradas, que destacan cualquier desviación del estándar.
 
-**Prompt:** "In which of my apps do I have a different lookback window?"
+**Indicador**: "¿En cuál de mis aplicaciones tengo una ventana de lookback diferente?"
 
-**Expected AI response:** The AI surfaces apps with non-standard lookback windows and shows their configured values.
+**Respuesta de IA esperada**: La IA coloca en la superficie las aplicaciones con ventanas de lookback no estándar y muestra sus valores configurados.
 
-**Prompt:** "List all of my iOS pinned apps that are active."
+**Indicador**: "Enumera todas mis aplicaciones ancladas a iOS que están activas".
 
-**Expected AI response:** The AI returns a list of pinned iOS apps that are currently active, including app IDs and names.
+**Respuesta de IA esperada**: Una lista de aplicaciones iOS ancladas que están actualmente activas, incluidos los IDs y nombres de las aplicaciones.
 
-**Prompt:** "What is the current session timeout setting for the AppsFlyer gaming app and could it affect my re-engagement from being attributed?"
+**Indicador**: "¿Cuál es la configuración de tiempo de espera de la sesión actual para la aplicación de juegos de AppsFlyer y podría afectar a la atribución de mi re-engagement?"
 
-**Expected AI response:** The AI returns the session timeout setting and explains its impact on re-engagement.
+**Respuesta esperada de la IA:** La IA devuelve la configuración de tiempo de espera de la sesión y explica su impacto en el re-engagement.
 
 </Accordion>
 
-<div id="zd-audiences-management" />
+<div id="h_01M6DQ8W2JQ9ECH5VEZPRT7221" />
 
-<Accordion title="Audiences management">
+<Accordion title="Gestión de integraciones de Partners">
 
-### Audiences management
+Recupera el estado y la configuración de la integración de partners para tus aplicaciones: qué partners están activos, cómo están configurados y si los mapeos de eventos y la configuración de atribución están configurados según lo esperado. Úsalo para auditar el estado de las integraciones y solucionar problemas específicos de partners sin abrir la IU de AppsFlyer HQ.
 
-Gain visibility into audience structure, ownership, partner connections, and active tests. Monitor upload health, detect failed connections, identify stale audiences, and understand how each audience is configured. Use this information to streamline cross-functional campaign management.
+> 📘 **Note**
+>
+> La gestión de integraciones de partners es actualmente de solo lectura. Puedes recuperar y auditar la configuración mediante MCP de AppsFlyer, pero los cambios se siguen teniendo que hacer en la interfaz de usuario de AppsFlyer HQ.
 
-**Prompt:** "Give me all active audiences for the FinancePro app."
+**Prompt:** "¿Qué partners están activos para Mypets.android.com?"
 
-**Expected AI response:** The AI returns a list of audiences with metadata such as creation date, owner, and partners.
+**Respuesta esperada de la IA:** La IA devuelve una lista de integraciones de partners activas para esa aplicación, incluida la categoría del partner, el nombre del partner y la plataforma.
 
-**Prompt:** "Who last updated the audience Churned Users - Tier A?"
+**Prompt:** "¿Qué partners tecnológicos usamos para Mypets.android.com?"
 
-**Expected AI response:** The AI returns the user ID or email with the timestamp of the last modification.
+**Respuesta esperada de la IA:** La IA devuelve el subconjunto de integraciones activas clasificadas como partners tecnológicos (integraciones de tipo analítica) para esa aplicación.
 
-**Prompt:** "List all audiences currently in a split test with Meta and TikTok."
+**Prompt:** «¿Qué ventana de atribución está configurada para AppLovin en esta aplicación?»
 
-**Expected AI response:** The AI returns a list of active audiences with test configuration and split percentages.
+**Respuesta esperada de la IA:** La IA devuelve la ventana de lookback de atribución de instalación configurada para la integración de AppLovin.
 
-**Prompt:** "I want to test Moloco vs. Google, give me all the audiences connected to Google."
+**Prompt:** «Muéstrame la configuración completa de Moloco en Mypets.android.com.»
 
-**Expected AI response:** The AI returns a list of audiences connected to Google with their current status and configuration.
+**Respuesta esperada de la IA:** La IA devuelve la configuración completa de la integración, incluida la configuración de atribución, los controles para compartir datos y los mapeos de eventos in-app.
 
-**Prompt:** "I'm about to close (network), give me a list of the active audiences running."
+</Accordion>
 
-**Expected AI response:** The AI returns all active audiences with their connected partners and current status.
+<div id="audiences-management" />
 
-**Prompt:** "Give me a list of all active audiences, their connected partners, and their current splits."
+<Accordion title="Gestión de audiencias">
 
-**Expected AI response:** The AI returns a full list of audiences with each partner connection and its split percentage.
+Obtén visibilidad instantánea de la estructura, la propiedad, las conexiones de los partners y las pruebas activas de la audiencia. Supervisa el estado de las cargas, detecta conexiones fallidas, identifica audiencias obsoletas y comprende cómo está configurada cada audiencia. Usa esta información para optimizar la gestión de campañas multifuncionales.
 
-**Prompt:** "Are any of my Meta audiences currently failing to upload?"
+**Indicador**: "Dame todas las audiencias activas para la aplicación FinancePro".
 
-**Expected AI response:** The AI returns a list of Meta-connected audiences with a failed upload status, including the error message for each.
+**Respuesta de IA esperada**: Lista de audiencias con metadatos como fecha de creación, propietario y partners.
 
-**Prompt:** "I want to check my TikTok campaigns, which audiences connected to TikTok are failing and since when?"
+**Indicador**: "¿Quién actualizó por última vez a la audiencia 'Usuarios abandonados - Nivel A'?"
 
-**Expected AI response:** The AI returns all TikTok-connected audiences with a failed status and their last successful upload time.
+**Respuesta de IA esperada**: ID de usuario o correo electrónico con marca de tiempo de la última modificación.
 
-**Prompt:** "Give me all audiences that had no successful upload in the last 7 days."
+**Indicador**: "Enumera todas las audiencias actualmente en una prueba dividida con Meta y TikTok".
 
-**Expected AI response:** The AI returns a list of audiences with no successful upload in the last 7 days and their current connection statuses.
+**Respuesta de IA esperada**: Lista de audiencias activas con configuración de prueba y porcentajes divididos.
+
+**Prompt:** "Quiero hacer una prueba de Moloco frente a Google; dame todas las audiencias conectadas a Google."
+
+**Respuesta de IA esperada:** La IA devuelve una lista de audiencias conectadas a Google con su estado actual y su configuración.
+
+**Prompt:** "Voy a cerrar (red), dame una lista de las audiencias activas en funcionamiento."
+
+**Respuesta de IA esperada:** La IA devuelve todas las audiencias activas con sus partners conectados y su estado actual.
+
+**Prompt:** "Dame una lista de todas las audiencias activas, sus partners conectados y sus divisiones actuales."
+
+**ChatGPT: Admitido en todos los planes**/span>/strong>
+
+**Prompt:** "¿Alguna de mis audiencias de Meta está fallando actualmente al cargarse?"
+
+**Respuesta de IA esperada:** La IA devuelve una lista de audiencias conectadas a Meta con estado de carga fallida, incluido el mensaje de error de cada una.
+
+**Prompt:** "Quiero revisar mis campañas de TikTok; ¿qué audiencias conectadas a TikTok están fallando y desde cuándo?"
+
+**Respuesta de IA esperada:** La IA devuelve todas las audiencias conectadas a TikTok con estado fallido y la hora de su última carga correcta.
+
+**Prompt:** "Dame todas las audiencias que no hayan tenido ninguna carga correcta en los últimos 7 días."
+
+**Respuesta de IA esperada:** La IA devuelve una lista de audiencias que no han tenido ninguna carga exitosa en los últimos 7 días y sus estados de conexión actuales.
 
 </Accordion>
 
 <div id="feedback-tool" />
 
-<Accordion title="Feedback tool">
+<Accordion title="Herramienta de feedback">
 
-Submit feedback about your experience using AppsFlyer MCP directly through the assistant interface. Your feedback helps us improve and shape the future of the product.
+Envía comentarios sobre tu experiencia de uso del MCP de AppsFlyer directamente a través de la interfaz del asistente. Nos ayudará a mejorar y dar forma al futuro del producto.
 
-**Prompt:** "The analytics provided in the analysis tool are amazing and helpful for our decision-making. I'd like to see in-app event measurement added as an option in the analysis."
+**Indicador**: "Los análisis proporcionados en la herramienta de análisis son increíbles, muy útiles para nuestra toma de decisiones. Me gustaría que se añadiera la medición de eventos in-app como opción en el análisis."
 
-**Expected AI response:** The AI submits the feedback to the AppsFlyer MCP product team.
+**Respuesta de IA esperada**: La IA envía la información del mensaje al equipo de producto MCP de AppsFlyer.
 
 </Accordion>
 
 <div id="cost-configuration-integration" />
 
-<Accordion title="Cost configuration integration">
+<Accordion title="Integración de configuración de costos">
 
-Gain visibility and control over your cost data with the Cost Configuration MCP. This integration helps you maximize cost coverage, detect integration gaps early, and keep cost data complete and accurate across ad networks.
+Obtén visibilidad y control total sobre tus datos de costos con el MCP de Configuración de Costos.  
+ Esta integración te ayuda a maximizar la cobertura de costos, detectar brechas de integración temprano y asegurar que los datos de costos permanezcan completos y precisos en todas las redes publicitarias.
 
-**Prompt:** "What active cost integrations do I have in my AppsFlyer account?"
+**Indicador**: “¿Qué integraciones de costos activas tengo en mi cuenta de AppsFlyer?”
 
-**Expected AI response:** The AI lists all enabled cost integrations in your AppsFlyer account, along with their linked app IDs and current status.
+**Respuesta de IA esperada**: Lista todas las integraciones de costos habilitadas en la cuenta de AppsFlyer del usuario junto con sus IDs de aplicación vinculadas y estado actual.
 
-**Prompt:** "Show me the issues I have in my active cost integrations."
+**Indicador**: “Muéstrame los problemas que tengo en mis integraciones de costos activas.”
 
-**Expected AI response:** The AI displays active cost integrations that had issues in the last 7 days, ordered by ad network and connected apps.
+**Respuesta de IA esperada**: Muestra una lista de integraciones de costos activas (habilitadas) que tuvieron problemas en los últimos 7 días, ordenadas por red publicitaria y aplicaciones conectadas.
 
-**Prompt:** "Which cost integrations should I connect based on my recent attribution data?"
+**Indicador**: “¿Qué integraciones de costos debería conectar según mis datos de atribución recientes?”
 
-**Expected AI response:** The AI shows ad networks that support cost integration but aren't connected yet, ranked by recent traffic volume by app.
+**Respuesta esperada de la IA:** La IA muestra las ad networks que admiten la integración de costos, pero que aún no están conectadas, clasificadas según el volumen de tráfico reciente por aplicación.
 
 </Accordion>
 
 <div id="ad-revenue-integrations" />
 
-<Accordion title="Ad revenue integrations">
+<Accordion title="Integraciones de ingresos por publicidad">
 
-Gain visibility and control over your ad revenue integrations using AppsFlyer MCP. You can use MCP to confirm which ad revenue integrations are enabled, monitor their health, detect gaps early, and keep ad revenue data flowing consistently across your apps and monetization partners.
+Obtén visibilidad y control sobre tus integraciones de ingresos por anuncios con AppsFlyer MCP. Puedes usar MCP para confirmar qué integraciones de ingresos por anuncios están habilitadas, supervisar su estado, detectar brechas a tiempo y mantener un flujo constante de datos de ingresos por anuncios en tus aplicaciones y partners de monetización.
 
-**Prompt:** "What active ad revenue integrations do I have in my AppsFlyer account?"
+**Token Portador:** Tu token MCP personal (generado en **AppsFlyer → Centro de Seguridad → Tokens de AppsFlyer**)
 
-**Expected AI response:** The AI lists all enabled ad revenue integrations in your AppsFlyer account, including connected apps and current integration status.
+Si inicio sesión, ¿tendrá acceso la IA a todos mis datos almacenados en la plataforma de AppsFlyer?
 
-**Prompt:** "Show me the issues I have in my active ad revenue integrations."
+En cualquier chat, haz clic en el **Más** botón (⚙️ o + ícono junto al cuadro de entrada).
 
-**Expected AI response:** The AI displays enabled ad revenue integrations that had issues in the last 7 days, grouped by mediation partner, integration type, and app.
+**Respuesta de IA esperada:** La IA muestra las integraciones de ingresos por anuncios habilitadas que tuvieron problemas en los últimos 7 días, agrupadas por partner de mediación, tipo de integración y app.
 
 </Accordion>
 
 <div id="user-management-and-role-control" />
 
-<Accordion title="User management and role control">
+<Accordion title="Gestión de usuarios y control de roles">
 
-Retrieve user and role information from your AppsFlyer account. This helps administrators maintain a clear user database and manage access controls efficiently.
+Optimiza la administración de tu cuenta de AppsFlyer recuperando información completa de usuarios y roles. Esta herramienta permite a los administradores mantener una base de datos clara y garantizar los controles de acceso adecuados de manera eficiente.
 
-**Prompt:** "List any inactive users who haven't logged into AppsFlyer in the last 6 months."
+**Indicador**: "Lista de usuarios inactivos que no iniciaron sesión en AppsFlyer en los últimos 6 meses"
 
-**Expected AI response:** The AI returns users with last login dates older than 6 months, or no login at all, including email addresses, roles, and last login timestamps.
+**Respuesta de IA esperada**: Una lista filtrada que muestra a los usuarios con fechas de último inicio de sesión superiores a 6 meses, o sin ningún inicio de sesión, incluidas sus direcciones de correo electrónico, roles y marcas de tiempo exactas del último inicio de sesión para ayudar a identificar a los usuarios para desactivarlos.
 
-**Prompt:** "Show me all users grouped by their permission levels and highlight any admin users."
+**Indicador**: "Muéstrame todos los usuarios agrupados por sus niveles de permisos y resalta cualquier usuario administrador."
 
-**Expected AI response:** The AI organizes users by role type and highlights admin users, including associated apps and geographical access permissions.
+**Respuesta de IA esperada**: Usuarios organizados por tipos de roles (Administrador, miembro del equipo, Espectador, etc.) con los usuarios administradores resaltados claramente, mostrando sus aplicaciones asociadas y los permisos de acceso geográfico.
 
-**Prompt:** "One of the team members has complained they can't log into AppsFlyer. Can you check if their user exists and what their current status is?"
+**Indicador**: "Uno de los miembros del equipo se ha quejado de que no puede iniciar sesión en AppsFlyer. ¿Puedes verificar si su usuario existe y cuál es su estado actual?"
 
-**Expected AI response:** The AI verifies whether the user exists and returns the user's current role, associated apps, last login date, and potential access restrictions.
+**Respuesta esperada de la IA:** La IA verifica si el usuario existe y devuelve el rol actual del usuario, las aplicaciones asociadas, la fecha del último login y las posibles restricciones de acceso.
 
-**Prompt:** "Which users have access to more than 5 apps, and what are their roles?"
+**Indicador**: "¿Qué usuarios tienen acceso a más de 5 aplicaciones y cuáles son sus funciones?"
 
-**Expected AI response:** The AI returns users with extensive app access, their roles, and the full list of apps they can access.
+**Control de acceso**: Todo el acceso a la API se rige por tu rol de usuario de AppsFlyer.
 
 </Accordion>
 
-## Other information
+## Otra información
 
 <div id="h_privacy-and-security" />
 
-<Accordion title="Privacy and security">
+<Accordion title="Privacidad y seguridad">
 
-AppsFlyer MCP lets your selected AI tool query AppsFlyer data based on your existing permissions.
+AppsFlyer MCP permite que la herramienta de IA que selecciones consulte datos de AppsFlyer en función de tus permisos existentes.
 
-#### Data processing
+#### Procesamiento de datos
 
-AppsFlyer MCP acts as a secure proxy. It fetches AppsFlyer data in real time and returns the data needed to answer the query. AppsFlyer MCP doesn't archive or store query results long term.
+El MCP de AppsFlyer actúa como proxy seguro. Obtiene datos en tiempo real y devuelve solo lo necesario para la consulta. AppsFlyer MCP no archiva ni almacena los resultados de las consultas a largo plazo.
 
-#### Credentials
+#### Credenciales
 
-Your AppsFlyer login lets AppsFlyer MCP make API calls on your behalf. Your AppsFlyer credentials aren't shared with the AI tool.
+Tu acceso habilita las llamadas de la API en tu nombre, pero tus credenciales nunca se comparten. Los datos a los que se accede a través del MCP de AppsFlyer no se utilizan para entrenar modelos de idiomas grandes (LLM) como Claude. Tus credenciales de AppsFlyer no se comparten con la herramienta de IA.
 
-#### Permissions
+#### Permisos
 
-AppsFlyer MCP uses your existing AppsFlyer permissions. Users can only access the apps and data they already have permission to view in AppsFlyer.
+AppsFlyer MCP usa tus permisos existentes de AppsFlyer. Accede usando tus credenciales de AppsFlyer y la IA solo verá a lo que puedes acceder.
 
-There's no separate permission layer to configure for MCP access.
+No hay ninguna capa de permisos independiente que configurar para el acceso a MCP.
 
-#### Read and write access
+#### Acceso de lectura y escritura
 
-Most AppsFlyer MCP tools are read and query only. The exception is create\_onelink\_link, which creates OneLink links in your account. Before a link is created, the AI shows you its details and asks for confirmation. Nothing is created unless you approve.
+La mayoría de las herramientas de MCP de AppsFlyer son solo de lectura y consulta. La excepción es create\_onelink\_link, que crea enlaces de OneLink en tu cuenta. Antes de crear un enlace, la IA te muestra sus detalles y te pide confirmación. No se crea nada hasta que lo apruebes.
 
-#### AI provider data usage
+#### Uso de datos del proveedor de IA
 
-The data retrieved by AppsFlyer MCP may be shared with your selected AI tool to answer your query. Only the data needed to generate the response is shared.
+Los datos recuperados por AppsFlyer MCP pueden compartirse con la herramienta de IA que selecciones para responder a tu consulta. Solo se comparten los datos necesarios para generar la respuesta.
 
-AppsFlyer doesn't control whether your selected AI tool stores, processes, or learns from the data. Review your AI provider's terms and data usage policies before connecting AppsFlyer MCP.
+AppsFlyer no controla si la herramienta de IA que has seleccionado almacena, procesa o aprende a partir de los datos. Revisa los términos y las políticas de uso de datos de tu proveedor de IA antes de conectar AppsFlyer MCP.
 
-#### Certifications
+#### Certificaciones
 
-AppsFlyer is ISO 27001 and SOC 2 certified. ISO 42001 certification is in progress.
+AppsFlyer cuenta con las certificaciones ISO 27001, ISO 42001 y SOC 2. ISO 42001 es la norma internacional para los sistemas de gestión de IA.
 
 </Accordion>
 
 <div id="tool-mapping" />
 
-<Accordion title="Tool mapping">
+<Accordion title="Asignación de herramientas">
 
-By default, all tools are enabled. We recommend keeping them enabled to ensure full functionality and prevent issues during use.
+Por defecto, todas las herramientas están habilitadas. Recomendamos mantenerlos habilitados para garantizar una funcionalidad completa y evitar problemas durante el uso.
 
-Each tool is mapped to a functional category, such as Analyze performance, apps management, or OneLink management. Some categories might include multiple tools.
+Cada herramienta se asigna a una categoría funcional, como analizar el rendimiento, la gestión de aplicaciones o la gestión de OneLink. Algunas categorías pueden incluir múltiples herramientas.
 
-See the table below for the complete list of tools and their category mappings.
+Consulta la tabla a continuación para obtener una lista completa de herramientas y sus asignaciones de categorías.
 
-<table><thead><tr><th>Category</th><th>Tool</th><th>Description</th></tr></thead><tbody><tr><td><a href="#analyze-performance">Analyze performance</a></td><td>fetch_aggregated_data</td><td>Retrieves aggregated dashboard data with custom date ranges, groupings, metrics, and filters.</td></tr><tr><td rowspan="2"><a href="#h_analyze-incrementality-experiments">Analyze Incrementality for UA experiments</a></td><td>incrementality_list_experiments</td><td>Lists incrementality experiments, filtered by status, app, country, media source, and date range.</td></tr><tr><td>incrementality_get_experiment_results</td><td>Gets results for a specific experiment, including lift, incremental conversions, incrementality factor, and cost per incremental conversion.</td></tr><tr><td rowspan="2"><a href="#apps-management">Apps management</a></td><td>get_apps</td><td>Lists all permitted apps organized by pinned and unpinned status with transfer requests.</td></tr><tr><td>get_app_settings</td><td>Gets app configuration settings including attribution windows, privacy controls, session management, and platform-specific configurations.</td></tr><tr><td><a href="#cost-configuration-integration">Cost configuration integration</a></td><td><p>get_active_cost_integrations</p><p>list_cost_supported_media_source</p></td><td>Gets an overview of active cost integration status and missing cost integrations in your account.</td></tr><tr><td><a href="#ad-revenue-integrations">Ad revenue integrations</a></td><td><p>list_adrevenue_supported_media_sources</p><p>get_active_adrevenue_integrations</p></td><td>Checks which integrations are enabled, monitors health, detects configuration gaps, and helps keep ad revenue data consistent.</td></tr><tr><td><a href="#analyze-skan-performance">SKAN performance</a></td><td>skan_get_app_data</td><td>Retrieves aggregated SKAN performance data grouped by network, campaign, or event across custom date ranges.</td></tr><tr><td rowspan="4"><a href="#onelink-management">OneLink management</a></td><td>get_onelink_templates</td><td>Lists all OneLink templates.</td></tr><tr><td>get_onelink_template_links</td><td>Gets all OneLink links created from a specific template.</td></tr><tr><td>get_onelink_details</td><td>Gets configuration details for a specific OneLink.</td></tr><tr><td>discover_onelink</td><td>Discovers a link's parameters, capabilities, and redirection behavior from a short or long URL.</td></tr><tr><td> </td><td>create_onelink_link</td><td>Creates a new short link under an existing OneLink template. Requires user confirmation before the link is created.</td></tr><tr><td> </td><td>list_smart_banners</td><td><p>Lists Smart Banners for the account with metadata, filterable by active status and creation date.</p><p><strong>Note:</strong> list_smart_banners returns at most 30 banners per account, ordered by active banners first and then by last modified.</p></td></tr><tr><td> </td><td>get_smart_banner_performance</td><td>Gets Smart Banner performance for specific banner IDs, at total or daily granularity.</td></tr><tr><td rowspan="3"><a href="#zd-audiences-management">Audiences management</a></td><td>list_active_audiences</td><td>Lists all active audiences that are calculated daily.</td></tr><tr><td>list_audiences_connections</td><td>Lists advertising partner integrations for audience data.</td></tr><tr><td>get_audience_connections</td><td>Gets partner connections for a specific audience.</td></tr><tr><td><a href="#knowledge-base-and-developer-support">Knowledge base and developer support</a></td><td>get_public_knowledge</td><td>Searches AppsFlyer Knowledge Base and DevHub documentation.</td></tr><tr><td><a href="#feedback-tool">Feedback tool</a></td><td>send_feedback</td><td>Submits feedback about the tools or system.</td></tr><tr><td><a href="#user-management-and-role-control">User management and role control</a></td><td>get_users</td><td>Lists users and roles from AppsFlyer.</td></tr></tbody></table>
+<table><thead><tr><th>Categoría</th><th>¿Por qué no funciona la herramienta?</th><th>Descripción</th></tr></thead><tbody><tr><td><a href="An%C3%A1lisis">Analizar el rendimiento</a></td><td>fetch_aggregated_data</td><td>Recupera datos agregados del dashboard con rangos de fechas, agrupaciones, métricas y filtros personalizados.</td></tr><tr><td><a href="#analiza-el-rendimiento-creativo">Analiza el rendimiento creativo</a></td><td>get_creative_performance</td><td>Recupera datos de performance agregados a nivel de creativo (gasto, instalaciones, CPI, ROAS, cohortes de retención y de ingresos) en redes, campañas y aplicaciones, desglosados por nombre del creativo, tipo, tamaño, duración, antigüedad, end card, nombre del evento in-app y más. Incluye enlaces de recursos para las vistas previas de creativos.</td></tr><tr><td rowspan="2"><a href="#h_analyze-incrementality-experiments">Analizar la incrementalidad para experimentos de UA</a></td><td>incrementality_list_experiments</td><td>Enumera los experimentos de incrementalidad filtrados por estado, aplicación, país, fuente de medios e intervalo de fechas.</td></tr><tr><td>incrementality_get_experiment_results</td><td>Obtiene los resultados de un experimento específico, incluidos el lift, las conversiones incrementales, el factor de incrementalidad y el costo por conversión incremental.</td></tr><tr><td rowspan="2"><a href="./beta-appsflyer-mcp#audiences-management">Gestión de aplicaciones</a></td><td>get_apps</td><td>Enumera todas las aplicaciones permitidas organizadas por estado anclado/no anclado con solicitudes de transferencia.</td></tr><tr><td>get_app_settings</td><td>Obtiene todos los ajustes de configuración de la aplicación, incluidas las ventanas de atribución, los controles de privacidad, la gestión de sesiones y las configuraciones específicas de la plataforma.</td></tr><tr><td><a href="#h_01M6DQ8W2JQ9ECH5VEZPRT7221">Gestión de integraciones de Partners</a></td><td>get_app_partner_integration_configuration</td><td>Obtiene la configuración completa de una integración de partner específica, incluida la configuración de atribución, el uso compartido de datos y las asignaciones de eventos in-app.</td></tr><tr><td><a href="./beta-appsflyer-mcp#cost-configuration-integration">Integración de configuración de costos</a></td><td><p>get_active_cost_integrations</p><p>list_cost_supported_media_source</p></td><td>Obtén una visión clara del estado de las integraciones de costos activas junto con las integraciones de costos faltantes en tu cuenta para hacer que el informe de costos sea más completo y preciso.</td></tr><tr><td><a href="#ad-revenue-integrations">Integraciones de ingresos por publicidad</a></td><td><p>list_adrevenue_supported_media_sources</p><p>get_active_adrevenue_integrations</p></td><td>Comprueba qué integraciones están habilitadas, supervisa su estado, detecta deficiencias de configuración y ayuda a mantener la coherencia de los datos de ingresos por anuncios.</td></tr><tr><td><a href="An%C3%A1lisis">Rendimiento de SKAN</a></td><td>skan_get_app_data</td><td>Recupera datos de rendimiento de SKAN agregados. Los datos pueden agruparse por red, campaña o evento, y analizarse en rangos de fechas personalizados.</td></tr><tr><td rowspan="4"><a href='Haz%20clic%20en%20tu%20nombre%20(abajo%20a%20la%20izquierda)%20&gt;%20&lt;strong%20data-start="1494"%20data-end="1506"&gt;Configuraci%C3%B3n,&lt;/strong&gt;%20o%20en%20un%20chat%20nuevo,%20haz%20clic%20en%20&lt;strong&gt;B%C3%BAsqueda%20y%20herramientas&lt;/strong&gt;%20&gt;%20&lt;strong&gt;Administrar%20conectores&lt;/strong&gt;.'>Gestión de OneLink</a></td><td>get_onelink_templates</td><td>Enumera todas las plantillas de OneLink (configuraciones de enrutamiento básicas).</td></tr><tr><td>get_onelink_template_links</td><td>Obtiene todos los enlaces de OneLink creados a partir de una plantilla específica.</td></tr><tr><td>get_onelink_details</td><td>Obtiene detalles de configuración completos para un OneLink específico.</td></tr><tr><td>discover_onelink</td><td>Detecta los parámetros, las capacidades y el comportamiento de redirección de un enlace a partir de una URL corta o larga.</td></tr><tr><td> </td><td>create_onelink_link</td><td>Crea un nuevo enlace corto en una plantilla de OneLink existente. Requiere la confirmación del usuario antes de que se cree el enlace.</td></tr><tr><td> </td><td>list_smart_banners</td><td><p>Enumera los Smart Banners de la cuenta con metadatos, y permite filtrarlos por estado activo y fecha de creación.</p><p><strong>Nota:</strong> list_smart_banners devuelve como máximo 30 banners por cuenta, ordenados primero por los banners activos y después por la fecha de la última modificación.</p></td></tr><tr><td> </td><td>get_smart_banner_performance</td><td>Obtiene el rendimiento de Smart Banner para ID de banner específicos, con granularidad total o diaria.</td></tr><tr><td rowspan="3"><a href="Requisito%20previo%20-%20Se%20necesita%20administrador">Gestión de audiencias</a></td><td>list_active_audiences</td><td>Enumera todas las audiencias activas que se calculan diariamente.</td></tr><tr><td>list_audiences_connections</td><td>Enumera todas las integraciones de partners publicitarios para los datos de audiencia.</td></tr><tr><td>get_audience_connections</td><td>Obtiene conexiones de partners para una audiencia específica.</td></tr><tr><td><a href="Admitido%20en%20planes%20Pro,%20Max,%20Team%20y%20Enterprise%20en%20web%20y%20de%20ordenador.">Base de conocimientos y soporte para desarrolladores</a></td><td>get_public_knowledge</td><td>Busca documentación en la base de conocimientos de AppsFlyer y en el DevHub.</td></tr><tr><td><a href="Actualizaci%C3%B3n">Herramienta de feedback</a></td><td>send_feedback</td><td>Envía comentarios sobre las herramientas o el sistema.</td></tr><tr><td><a href="./beta-appsflyer-mcp#user-management-and-role-control">Gestión de usuarios y control de roles</a></td><td>get_users</td><td>Enumera usuarios y roles de AppsFlyer.</td></tr></tbody></table>
 
 </Accordion>
 
 <div id="traits-and-limitations" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Características y limitaciones">
 
-| Trait | Description |
+| Caducado | Descripción |
 | --- | --- |
-| Multi-account use | AppsFlyer MCP uses data from the default account only. To switch accounts or connect several accounts at once, see [Use multiple accounts or agencies](#h_use-multiple-accounts-or-agencies). |
-| OneLink links | <ul><li>**OneLink link creation:**</li></ul><ul><li>Up to 10 links can be created per day, per account.</li><li>Links are created under an existing OneLink template.</li></ul><ul><li>The get\_onelink\_template\_links tool includes only links created from the OneLink Management page, not links created via API, SDK, or bulk creation.</li><li>Discover OneLink (discover\_onelink) has no such restriction. It supports all AppsFlyer link types, including single-platform (legacy) links, branded domains, and links created via the UI, API, SDK, or bulk creation.</li></ul> |
-| Rate limits | <ul><li>Analytics: 20 requests per minute</li><li>Audiences: 350 requests per minute</li><li>SKAN: Up to 10,000 rows per query</li></ul> |
-| Date range | <ul><li>Analytics: 3 years</li><li>SKAN: Maximum 90 days per request</li></ul> |
-| Groupings | <ul><li>Analytics: 4 groupings per request</li><li>SKAN: As available in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#metrics">SKAN dashboard</Anchor></li></ul> |
-| App limits | <ul><li>Analytics: 10 apps per request</li><li>SKAN: One app per request, iOS only</li></ul> |
-| Supported dimensions | Analytics supports all dimensions available in My Dashboards. |
-| Aggregated data | Aggregated data is supported. This includes weekly and monthly granularity levels and custom metrics. |
-| Freshness | SKAN data is available with up to a 3-day delay, in UTC. |
-| Currency and time zone | SKAN data is available in USD by default. Alternative currencies are supported by using `revenue_alt = true`. Data is reported in UTC. |
-| Disabling MCP | <ul><li>MCP is enabled by default and can be disabled by an admin in **Account & Profile > AI capabilities**.</li><li>When MCP is disabled, users can't access AppsFlyer data through MCP in external AI tools.</li><li>Existing connections might continue until the current session expires.</li><li>Disabling MCP doesn't affect regular API connections or other AI capabilities in AppsFlyer.</li><li>If an MCP token is in use, delete it first in **Security Center > AppsFlyer Tokens**.</li></ul> |
+| Uso de múltiples cuentas | AppsFlyer MCP usa datos solo de la cuenta predeterminada. Para cambiar de cuenta o conectar varias cuentas a la vez, consulta [Uso de varias cuentas o agencias](#h_use-multiple-accounts-or-agencies). |
+| Enlaces de OneLink | <ul><li>**Creación de enlaces de OneLink:**</li></ul><ul><li>Se pueden crear hasta 10 enlaces al día por cuenta.</li><li>Los enlaces se crean en una plantilla de OneLink existente.</li></ul><ul><li>La herramienta get\_onelink\_template\_links solo incluye enlaces creados desde la página de gestión de OneLink, no enlaces creados mediante API, SDK o creación masiva.</li><li>Discover OneLink (discover\_onelink) no tiene esta restricción. Es compatible con todos los tipos de enlace de AppsFlyer, incluidos los enlaces de una sola plataforma (heredados), los dominios de marca y los enlaces creados mediante la interfaz de usuario, API, SDK o creación masiva.</li></ul> |
+| Integraciones de socios | <ul><li>Los detalles de configuración no están disponibles para las integraciones de partners de tipo agencia a través de esta herramienta.</li><li>Las integraciones de partners de tipo agencia y de tipo red publicitaria no son compatibles.</li><li>Las configuraciones de permisos no están disponibles.</li></ul> |
+| Límites de tasas | <ul><li>20 solicitudes/minuto</li><li>Audiencias: 350 solicitudes por minuto</li><li>SKAN: Hasta 10.000 filas por consulta</li></ul> |
+| Límite de filas | Las consultas de performance de creativos devuelven un máximo de 300 filas por solicitud. La paginación no es compatible actualmente. Si una consulta coincide con más de 300 creativos o campañas, acótala por intervalo de fechas, fuente de medios u otro filtro para mantenerte por debajo del límite. |
+| Rango de fechas | <ul><li>3 años</li><li>Máximo 90 días por solicitud</li></ul> |
+| Agrupaciones | <ul><li>4 agrupaciones por solicitud</li><li>Como está disponible en el <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#metrics">tablero de SKAN</Anchor></li></ul> |
+| Límites de la aplicación | <ul><li>10 aplicaciones por solicitud</li><li>Una aplicación por solicitud (solo iOS)</li></ul> |
+| Dimensiones admitidas | Soporta todas las dimensiones disponibles en Mis Tableros |
+| Datos agregados | Los datos agregados no son compatibles. Esto incluye niveles de granularidad semanales y mensuales y métricas personalizadas. |
+| Actualización | Los datos de SKAN están disponibles con un retraso de hasta 3 días, en UTC. |
+| Moneda y zona horaria | Los datos de SKAN están disponibles en USD de forma predeterminada. Se admiten monedas alternativas usando `revenue_alt = true`. Los datos se reportan en UTC. |
+| Desactivación de MCP | <ul><li>MCP está habilitado de forma predeterminada y un administrador puede deshabilitarlo en **Cuenta & Perfil > Funciones de IA**.</li><li>Cuando MCP está desactivado, los usuarios no pueden acceder a los datos de AppsFlyer a través de MCP en herramientas de IA externas.</li><li>Las conexiones existentes pueden seguir funcionando hasta que expire la sesión actual.</li><li>Desactivar MCP no afecta a las conexiones habituales de la API ni a otras funciones de IA en AppsFlyer.</li><li>Si se está utilizando un token MCP, primero debes eliminarlo en **Centro de seguridad > Tokens de AppsFlyer**.</li></ul> |
 
 </Accordion>
 
-## Troubleshoot connection issues
+## Solucionar problemas de conexión
 
-If the AppsFlyer MCP connection isn't working, follow the steps for your authentication method.
+Si la conexión de AppsFlyer MCP no funciona, sigue los pasos correspondientes a tu método de autenticación.
 
 <div id="h_troubleshoot-browser-based-oauth-login" />
 
-<Accordion title="Browser-based OAuth login">
+<Accordion title="Login de OAuth basado en el navegador">
 
-Use this section for clients that connect through browser login, such as Gemini CLI, Copilot CLI, ChatGPT, Claude.ai, and Claude Desktop.
+Usa esta sección para clientes que se conectan mediante login en el navegador, como Gemini CLI, Copilot CLI, ChatGPT, Claude.ai y Claude Desktop.
 
-1. **Re-authenticate your session.** OAuth sessions expire approximately every 7 days. Re-run the connection flow and complete the browser login again.
-2. **Complete the authentication flow.** Make sure the browser login completes successfully. When prompted, click **Allow** or **Approve**, and then return to your MCP client.
-3. **Restart the session.** Restart your CLI, chat, or application session. Then reconnect to the MCP server.
-4. **Verify the MCP server configuration.** Confirm the following values:
+1. **Vuelve a autenticar tu sesión.** Las sesiones de OAuth caducan aproximadamente cada 7 días. Vuelve a ejecutar el flujo de conexión y completa de nuevo el login en el navegador.
+2. **Completa el flujo de autenticación.** Asegúrate de que el login en el navegador se complete correctamente. Cuando se te solicite, haz clic en **Permitir** o **Aprobar** y, a continuación, vuelve a tu cliente MCP.
+3. **Reinicia la sesión.** Reinicia la sesión de tu CLI, chat o aplicación. A continuación, vuelve a conectarte al servidor MCP.
+4. **Verifica la configuración del servidor MCP.** Confirma los siguientes valores:
 
-| Field | Value |
+| Campo | value |
 | --- | --- |
-| Server Type | `HTTP` |
+| Tipo de servidor | `HTTP` |
 | URL | `https://mcp.appsflyer.com/auth/mcp` |
 
-5. **Check user permissions.** Make sure your AppsFlyer user has access to the relevant apps and requested data.
+5. **Comprueba los permisos del usuario.** Asegúrate de que tu usuario de AppsFlyer tenga acceso a las apps relevantes y a los datos solicitados.
 
 </Accordion>
 
 <div id="h_troubleshoot-bearer-token-authentication" />
 
-<Accordion title="Bearer token authentication">
+<Accordion title="Autenticación con token Bearer">
 
-Use this section for Claude Code, n8n, Make, self-hosted agents, and other automation tools.
+Usa esta sección para Claude Code, n8n, Make, agentes alojados por tu cuenta y otras herramientas de automatización.
 
-1. **Check whether the token was revoked.** Tokens can be manually revoked. Tokens created before **March 10, 2026, 19:00 UTC** might no longer work.
-2. **Create a new MCP token.** To restore access:
-   1. Log in to AppsFlyer.
-   2. Go to **Account menu > Security Center > Token Management**.
-   3. Locate revoked tokens.
-   4. Delete the revoked token.
-   5. Create a new MCP token.
-   6. Update your MCP client or automation with the new token.
-3. **Check the Authorization header.** Make sure the header uses this exact format:
+1. **Comprueba si se revocó el token.** Los tokens se pueden revocar manualmente. Es posible que los tokens creados antes del **10 de marzo de 2026, 19:00 UTC** ya no funcionen.
+2. **Crea un token MCP nuevo.** Para restaurar el acceso:
+   1. Envíanos tus comentarios con el mensaje "Envía comentarios a AppsFlyer" y contacta con el equipo de soporte de AppsFlyer.
+   2. Ve a **Menú de la cuenta > Centro de seguridad > Gestión de tokens**.
+   3. Localiza los tokens revocados.
+   4. Elimina el token revocado.
+   5. Crea un token MCP nuevo.
+   6. Actualiza tu cliente MCP o automatización con el nuevo token.
+3. **Comprueba el encabezado de Authorization.** Asegúrate de que el encabezado use exactamente este formato:
 
    ```http
    Authorization: Bearer <YOUR_MCP_TOKEN>
    ```
-4. **Verify the MCP server configuration.** Confirm the following values:
+4. **Verifica la configuración del servidor MCP.** Confirma los siguientes valores:
 
-| Field | Value |
+| Campo | value |
 | --- | --- |
 | URL | `https://mcp.appsflyer.com/auth/mcp` |
-| Transport | `HTTP` |
-| Header | `Authorization: Bearer <YOUR_MCP_TOKEN>` |
+| Transporte | `HTTP` |
+| Encabezado | `Authorization: Bearer <YOUR_MCP_TOKEN>` |
 
-5. **Verify that the server is registered.** For Claude Code, run:
+5. **Verifica que el servidor esté registrado.** Para Claude Code, ejecuta lo siguiente:
 
    ```bash
    claude mcp list
    ```
-6. **Re-add the MCP server, if needed.**
+6. **Vuelve a añadir el servidor MCP si es necesario.**
 
    ```bash
-   claude mcp remove appsflyer
-   claude mcp add-json appsflyer '{"type":"http","url":"https://mcp.appsflyer.com/auth/mcp","headers":{"Authorization":"Bearer YOUR_APPSFLYER_MCP_TOKEN"}}'
+   https://support.appsflyer.com/hc/en-us/articles/36349070304785--Closed-Beta-MCP#create-and-manage-attribution-links
    ```
-7. **Check token permissions.** The MCP token inherits permissions from the admin who created it. Make sure the token has access to the relevant apps and requested data.
+7. **Comprueba los permisos del token.** El token de MCP hereda los permisos del administrador que lo creó. Asegúrate de que el token tenga acceso a las apps pertinentes y a los datos solicitados.
 
 </Accordion>
 
 <div id="h_access-and-permission-issues" />
 
-<Accordion title="Access and permission issues">
+<Accordion title="Problemas de acceso y permisos">
 
-If authentication succeeds but access still fails:
+Si la autenticación se realiza correctamente pero el acceso sigue fallando:
 
-* MCP access might be restricted by your AppsFlyer admin.
-* If you don't have access to Account & Profile settings, MCP access might be blocked.
-* Contact your AppsFlyer admin to enable access.
-* Make sure your user or token has access to the relevant apps and requested data.
+* Tu administrador de AppsFlyer puede haber restringido el acceso a MCP.
+* Si no tienes acceso a la configuración de Account & Profile, es posible que el acceso a MCP esté bloqueado.
+* Contacta con tu administrador de AppsFlyer para habilitar el acceso.
+* Asegúrate de que tu usuario o token tenga acceso a las apps pertinentes y a los datos solicitados.
 
 </Accordion>
 
 <div id="h_general-connection-checks" />
 
-<Accordion title="General checks">
+<Accordion title="Comprobaciones generales">
 
-If the issue persists:
+Si el problema persiste:
 
-* Make sure your client supports MCP.
-* Check whether network or firewall restrictions block the MCP endpoint.
-* Confirm that the MCP URL is correct:
+* Asegúrate de que tu cliente sea compatible con MCP.
+* Comprueba si las restricciones de red o del firewall bloquean el endpoint de MCP.
+* Confirma que la URL de MCP sea correcta:
 
   ```text
   https://mcp.appsflyer.com/auth/mcp
   ```
-* Try reconnecting from a new session or environment.
+* Prueba a volver a conectarte desde una sesión o un entorno nuevos.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01K9CJ9WQ3JJSYWDMNJ5GP7N04=disclaimer h_01JY3G849QAT2GC714FR6CADH2=what-is-appsflyer-mcp h_set-up-appsflyer-mcp=set-up-appsflyer-mcp h_01KT8Y9JEJEZ26BRHK530JDB0D=note h_authentication-methods=authentication-methods h_browser-based-oauth-login=browser-based-oauth-login h_bearer-token-authentication=bearer-token-authentication h_set-up-by-client=set-up-by-client claude-ai-and-claude-desktop=h_claude-ai-and-claude-desktop h_01KT8Y9JEJQNXK3SZ7M0ETH5RN=note-1 h_set-up-claude-ai-and-desktop=set-up-claude-chat-and-cowork set-up-claude-ai-and-desktop=set-up-claude-chat-and-cowork h_test-claude-connection=test-the-claude-connection test-claude-connection=test-the-claude-connection h_01M09YV6XHR3DPYSHZA127XB50=note-5 claude-code=h_claude-code h_add-appsflyer-mcp-to-claude-code=add-appsflyer-mcp-to-claude-code cursor-ide=h_cursor-ide vs-code=h_vs-code chatgpt=h_chatgpt custom-gpt-available-for-all-packages-including-free-enterprise=add-the-appsflyer-custom-gpt mcp-in-chatgpt-supported-for-chatgpt-users-on-all-paid-plans=add-appsflyer-mcp-in-chatgpt h_01KT8Y9JEJ806MVHJACM0VNM0K=note-3 gemini-cli=h_gemini-cli h_add-appsflyer-mcp-to-gemini-cli=add-appsflyer-mcp-to-gemini-cli h_troubleshoot-gemini-cli-authentication=troubleshoot-gemini-cli-authentication copilot-cli=h_copilot-cli h_add-appsflyer-mcp-to-copilot-cli=add-appsflyer-mcp-to-copilot-cli third-party-and-self-hosted-platforms=h_third-party-and-self-hosted-platforms h_mcp-connection-details=mcp-connection-details h_01KT8Y9JEKZRB56RZJXMMN4WV0=note-4 h_example-use-cases=example-use-cases other-platforms=h_other-platforms use-multiple-accounts-or-agencies=h_use-multiple-accounts-or-agencies h_switch-between-accounts=switch-between-accounts-browser-based-oauth switch-between-accounts=switch-between-accounts-browser-based-oauth h_connect-multiple-accounts-simultaneously=connect-multiple-accounts-simultaneously-bearer-token connect-multiple-accounts-simultaneously=connect-multiple-accounts-simultaneously-bearer-token using-appsflyer-mcp=use-appsflyer-mcp h_01JY3G1ZEC5Q30KP49RAA7EHRS=use-appsflyer-mcp h_01JY3WMZ41HHQ4G13DGV8DPJMW=use-cases-and-prompts h_01JZHT6BA2NX8GXNV8675XNVWT=important h_01JY3WZE6G2WB6DCWV68G1T36D=analyze-performance h_01M09YV6XJ7AM6S502BT2A594T=note-5 analyze-incrementality-experiments=h_analyze-incrementality-experiments h_01K7P0A6V86FZ3YQTQ4N5JZ4ZX=analyze-skan-performance h_01JY3VJEQMRDFAFTKZMPZ90RHP=onelink-management h_01JY3VJEQMXD32NSEE0E0FWG60=knowledge-base-and-developer-support h_01K01CE5NQ56HRT967F78ETKMS=apps-management audiences-management=zd-audiences-management h_01K01CE5NQBW6AADMHEPBQQN7S=zd-audiences-management audiences-management::6584184=audiences-management h_01KWBYTJ8GCJ884DN6XXPXZYMJ=audiences-management h_01JY3VJEQNYKZ3Z724XM9JRWZF=feedback-tool h_01K9SHEQBWKK6AC0GD0YQVVJJ9=cost-configuration-integration h_01KGM1A7V6NB16A1Q07V5FQG2M=ad-revenue-integrations h_01K338G5KA09TESMNC6Z88RJCP=user-management-and-role-control h_01JZHTJ1FQMXX9GSAN31E8HAYF=other-information privacy-and-security=h_privacy-and-security h_data-processing=data-processing h_credentials=credentials h_permissions=permissions h_read-only-access=read-and-write-access read-only-access=read-and-write-access h_ai-provider-data-usage=ai-provider-data-usage h_certifications=certifications h_01K044H4H18ED75GYQWMPDRA4R=tool-mapping h_01K01DT8656BQM1GW0HDHXGCY2=traits-and-limitations h_troubleshoot-connection-issues=troubleshoot-connection-issues troubleshoot-browser-based-oauth-login=h_troubleshoot-browser-based-oauth-login troubleshoot-bearer-token-authentication=h_troubleshoot-bearer-token-authentication access-and-permission-issues=h_access-and-permission-issues general-connection-checks=h_general-connection-checks" />
+<div data-zendesk-anchors="h_01K9CJ9WQ3JJSYWDMNJ5GP7N04=disclaimer what-is-appsflyer-mcp=qu%C3%A9-es-el-mcp-de-appsflyer h_01JY3G849QAT2GC714FR6CADH2=qu%C3%A9-es-el-mcp-de-appsflyer h_set-up-appsflyer-mcp=configuraci%C3%B3n-del-mcp-de-appsflyer set-up-appsflyer-mcp=configuraci%C3%B3n-del-mcp-de-appsflyer h_01KT8Y9JEJEZ26BRHK530JDB0D=advertencia h_authentication-methods=m%C3%A9todos-de-autenticaci%C3%B3n authentication-methods=m%C3%A9todos-de-autenticaci%C3%B3n h_browser-based-oauth-login=inicio-de-sesi%C3%B3n-oauth-basado-en-navegador browser-based-oauth-login=inicio-de-sesi%C3%B3n-oauth-basado-en-navegador h_bearer-token-authentication=autenticaci%C3%B3n-con-token-bearer bearer-token-authentication=autenticaci%C3%B3n-con-token-bearer h_set-up-by-client=configuraci%C3%B3n-por-el-cliente set-up-by-client=configuraci%C3%B3n-por-el-cliente claude-ai-and-claude-desktop=h_claude-ai-and-claude-desktop h_01KT8Y9JEJQNXK3SZ7M0ETH5RN=caracter%C3%ADstica h_set-up-claude-ai-and-desktop=configura-claude-chat-y-cowork set-up-claude-ai-and-desktop=configura-claude-chat-y-cowork h_test-claude-connection=probar-la-conexi%C3%B3n-de-claude test-claude-connection=probar-la-conexi%C3%B3n-de-claude h_01M09YV6XHR3DPYSHZA127XB50=nota claude-code=h_claude-code h_add-appsflyer-mcp-to-claude-code=nota add-appsflyer-mcp-to-claude-code=nota cursor-ide=h_cursor-ide vs-code=h_vs-code chatgpt=h_chatgpt custom-gpt-available-for-all-packages-including-free-enterprise=c%C3%B3mo-agregar-el-gpt-personalizado-de-appsflyer mcp-in-chatgpt-supported-for-chatgpt-users-on-all-paid-plans=usando-el-conector-de-appsflyer-en-chatgpt h_01KT8Y9JEJ806MVHJACM0VNM0K=nota-1 gemini-cli=h_gemini-cli h_add-appsflyer-mcp-to-gemini-cli=para-agregar-el-appsflyer-mcp-a-gemini-cli add-appsflyer-mcp-to-gemini-cli=para-agregar-el-appsflyer-mcp-a-gemini-cli h_troubleshoot-gemini-cli-authentication=solucionar-problemas-de-autenticaci%C3%B3n-de-gemini-cli troubleshoot-gemini-cli-authentication=solucionar-problemas-de-autenticaci%C3%B3n-de-gemini-cli copilot-cli=h_copilot-cli h_add-appsflyer-mcp-to-copilot-cli=es-seguro-el-mcp-de-appsflyer add-appsflyer-mcp-to-copilot-cli=es-seguro-el-mcp-de-appsflyer third-party-and-self-hosted-platforms=h_third-party-and-self-hosted-platforms h_mcp-connection-details=detalles-de-conexi%C3%B3n-mcp mcp-connection-details=detalles-de-conexi%C3%B3n-mcp h_01KT8Y9JEKZRB56RZJXMMN4WV0=nota-2 h_example-use-cases=ejemplos-de-casos-de-uso example-use-cases=ejemplos-de-casos-de-uso other-platforms=h_other-platforms use-multiple-accounts-or-agencies=h_use-multiple-accounts-or-agencies h_switch-between-accounts=cambiar-entre-cuentas-oauth-basado-en-navegador switch-between-accounts=cambiar-entre-cuentas-oauth-basado-en-navegador h_connect-multiple-accounts-simultaneously=una-vez-habilitado-puedes-comenzar-a-hacer-preguntas-como connect-multiple-accounts-simultaneously=una-vez-habilitado-puedes-comenzar-a-hacer-preguntas-como using-appsflyer-mcp=uso-del-mcp-de-appsflyer h_01JY3G1ZEC5Q30KP49RAA7EHRS=uso-del-mcp-de-appsflyer use-cases-and-prompts=casos-de-uso-y-prompts h_01JY3WMZ41HHQ4G13DGV8DPJMW=casos-de-uso-y-prompts h_01JZHT6BA2NX8GXNV8675XNVWT=importante h_01JY3WZE6G2WB6DCWV68G1T36D=analyze-performance h_01M09YV6XJ7AM6S502BT2A594T=nota-3 analyze-creative-performance=h_analyze-creative-performance analyze-incrementality-experiments=h_analyze-incrementality-experiments h_01K7P0A6V86FZ3YQTQ4N5JZ4ZX=analyze-skan-performance h_01JY3VJEQMRDFAFTKZMPZ90RHP=onelink-management h_01JY3VJEQMXD32NSEE0E0FWG60=knowledge-base-and-developer-support h_01K01CE5NQ56HRT967F78ETKMS=apps-management h_01K01CE5NQBW6AADMHEPBQQN7S=audiences-management h_01JY3VJEQNYKZ3Z724XM9JRWZF=feedback-tool h_01K9SHEQBWKK6AC0GD0YQVVJJ9=cost-configuration-integration h_01KGM1A7V6NB16A1Q07V5FQG2M=ad-revenue-integrations h_01K338G5KA09TESMNC6Z88RJCP=user-management-and-role-control other-information=otra-informaci%C3%B3n h_01JZHTJ1FQMXX9GSAN31E8HAYF=otra-informaci%C3%B3n privacy-and-security=h_privacy-and-security h_data-processing=procesamiento-de-datos data-processing=procesamiento-de-datos h_credentials=credenciales credentials=credenciales h_permissions=permisos permissions=permisos h_read-only-access=acceso-de-lectura-y-escritura read-only-access=acceso-de-lectura-y-escritura h_ai-provider-data-usage=uso-de-datos-del-proveedor-de-ia ai-provider-data-usage=uso-de-datos-del-proveedor-de-ia h_certifications=certificaciones certifications=certificaciones h_01K044H4H18ED75GYQWMPDRA4R=tool-mapping h_01K01DT8656BQM1GW0HDHXGCY2=traits-and-limitations h_troubleshoot-connection-issues=solucionar-problemas-de-conexi%C3%B3n troubleshoot-connection-issues=solucionar-problemas-de-conexi%C3%B3n troubleshoot-browser-based-oauth-login=h_troubleshoot-browser-based-oauth-login troubleshoot-bearer-token-authentication=h_troubleshoot-bearer-token-authentication access-and-permission-issues=h_access-and-permission-issues general-connection-checks=h_general-connection-checks" />

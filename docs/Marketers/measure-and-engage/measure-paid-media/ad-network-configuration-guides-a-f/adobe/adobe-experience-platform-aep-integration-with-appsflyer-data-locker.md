@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Platform (AEP) integration with AppsFlyer Data Locker
+title: Integración de Adobe Experience Platform (AEP) con AppsFlyer Data Locker
 metadata:
   keywords:
     - Advertisers
@@ -13,57 +13,56 @@ x-zendesk:
     - Marketers
     - Data Locker
   created_at: '2023-03-19T06:54:23Z'
-  edited_at: '2023-10-26T12:33:46Z'
+  edited_at: '2026-08-12T12:12:24Z'
   id: 13856826626321
-  locale: en-us
+  locale: es
   section: Adobe
   section_id: 6551419728657
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/13856826626321-Adobe-Experience-Platform-AEP-integration-with-AppsFlyer-Data-Locker
+  url: https://support.appsflyer.com/hc/es/articles/13856826626321
 ---
-> **At a glance:** Set up an integrated solution with Adobe Experience Platform (AEP) to send raw-level event data to the Adobe data lake. AEP is the data layer for all customers centralizing data in Adobe, a customer data platform that captures customer journeys provides and lets you analyze them.
+> **De un vistazo:** configura una solución integrada con Adobe Experience Platform (AEP) para enviar datos de eventos sin procesar al lago de datos de Adobe. AEP es la capa de datos para todos los clientes, ya que centraliza los datos en Adobe, una plataforma de datos de clientes que captura los viajes del cliente, los analiza y los proporciona.
 
-## Overview
+## Visión general
 
-The Data Locker—AEP integration enables you to use AppsFlyer data within the Adobe Experience Platform. The integration uses the out-of-the-Box (OOTB) component, backed by the real-time customer data platform (RTCDP). In order to upload AppsFlyer data into Adobe Experience Platform (AEP), customers should first configure a Data Locker bucket (GCS and AWS) connection and then configure AEP to load the data from the bucket into an existing or new dataset unit.
+La integración de Data Locker con AEP te permite usar los datos de AppsFlyer dentro de Adobe Experience Platform. La integración usa el componente listo para usar (OOTB), respaldado por la plataforma de datos de clientes en tiempo real (RTCDP). Para subir datos de AppsFlyer a Adobe Experience Platform (AEP), los clientes primero deben configurar una conexión del bucket de Data Locker (GCS y AWS) y después configurar AEP para cargar los datos desde el bucket en un conjunto de datos existente o nuevo.
 
-## Setting up the integration
+## Configuración de la integración
 
-<span id="prerequisites"></span>**Prerequisites**:
+<span id="prerequisites"></span>**Requisitos previos**:
 
-* A <Anchor target="_blank" href="/marketers/docs/data-locker">Data Locker</Anchor> subscription
-* An <Anchor target="_blank" href="https://business.adobe.com/products/experience-platform/adobe-experience-platform.html">Experience Platform</Anchor> account with Admin permissions
+* Una suscripción de <Anchor target="_blank" href="/marketers/es/docs/data-locker">Data Locker</Anchor>
+* Una cuenta de <Anchor target="_blank" href="https://business.adobe.com/products/experience-platform/adobe-experience-platform.html">Experience Platform</Anchor> con permisos de administrador
 
-**To set up the integration**:
+**Para configurar la integración**:
 
-1. <span id="step-1-aws-create-an-aws-iam-user-with-bucket-access"></span>Create a bucket with permissions for Data Locker. Follow the instructions for <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor> or <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor> storage.
-2. Set up Data Locker. Follow the <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#set-up-data-locker">Data Locker setup instructions</Anchor>, and when you select your GCS or AWS bucket, make sure you select **Make this connection compatible with Adobe Experience Platform**.
-3. Configure the Data Locker schema in AEP.
-   1. Login to AEP using your admin credentials.
-   2. Create an Adobe XDM [experience event class](https://experienceleague.adobe.com/docs/experience-platform/xdm/classes/experienceevent.html?lang=en#).
-   3. Add a new field group for AppsFlyer fields.
-   4. Create the first field as an object field called AppsFlyer.  
-      This is the parent field. All other fields that are created are children to this object field.
-   5. Add the other Data Locker schema fields. If you are using Adobe CJA, mark customer\_user\_id as business identifier.
-4. Configure the bucket source in AEP.
-   1. In AEP, add a bucket connector (the same AWS or GCS bucket you used in Data Locker).
-   2. Complete the required authentication details.
-   3. Click **Connect to source**.
-5. Configure the data flow in AEP.
-   1. In **AEP Select data**, select the relevant AppsFlyer Data Locker reports from the bucket folder list.
+1. <span id="step-1-aws-create-an-aws-iam-user-with-bucket-access"></span>Crea un bucket con permisos para Data Locker. Sigue las instrucciones para el almacenamiento de <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor>.
+2. Configurar Data Locker. Sigue las <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers#set-up-data-locker">instrucciones de configuración de Data Locker</Anchor> y, cuando selecciones tu bucket de GCS o AWS, asegúrate de seleccionar **Make this connection compatible with Adobe Experience Platform**.
+3. Configura el esquema de Data Locker en AEP.
+   1. Inicia sesión en AEP con tus credenciales de administrador.
+   2. Crea una [clase de evento de experiencia](https://experienceleague.adobe.com/docs/experience-platform/xdm/classes/experienceevent.html?lang=en#) de Adobe XDM.
+   3. Añade un nuevo grupo de campos para los campos de AppsFlyer.
+   4. Crea el primer campo como un campo de objeto llamado AppsFlyer.  
+      Este es el campo principal. Todos los demás campos que se creen serán campos secundarios de este campo de objeto.
+   5. Añade los demás campos del esquema de Data Locker. Si usas Adobe CJA, marca customer\_user\_id como identificador empresarial.
+4. Configura la fuente del bucket en AEP.
+   1. En AEP, añade un conector de bucket (el mismo bucket de AWS o GCS que usaste en Data Locker).
+   2. Completa los datos de autenticación obligatorios.
+   3. Haz clic en **Connect to source**.
+5. Configura el flujo de datos en AEP.
+   1. En **AEP Select data**, selecciona los reportes relevantes de AppsFlyer Data Locker en la lista de carpetas del bucket.
    2. Set:
-      * Data format as Delimited.
-      * Delimiter as ",".
-      * Compression type as Gzip.
-   3. Click **Next**.
-   4. In **Dataflow details**, complete the dataset and data flow details.
-   5. Click **Next**.
-   6. In **Scheduling**, set the frequency to 60 minutes.
-   7. Repeat for each desired Data Locker report.
+      * Formato de datos: delimitado.
+      * Delimitador: ",".
+      * Tipo de compresión: Gzip.
+   3. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
+   4. En **Dataflow details**, completa los detalles del conjunto de datos y del flujo de datos.
+   5. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
+   6. En **Scheduling**, establece la frecuencia en 60 minutos.
+   7. Repite el proceso para cada reporte de Data Locker que desees.
 
-> 📄 **See also**
+> 📄 **Véase también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/adobe-launch-sdk-extension?query=adobe">Adobe Launch SDK Extension</Anchor>
-> * <Anchor target="_blank" href="/marketers/docs/adobe-air-plugin?query=adobe">Adobe Air plugin</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/adobe-launch-sdk-extension?query=adobe">Extensión del SDK de Adobe Launch</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/adobe-air-plugin?query=adobe">Plugin de Adobe Air</Anchor>
 
-<div data-zendesk-anchors="h_01HDNYXDFCQQBNBB6ZQQTJS189=overview h_01HDNYXDFCEVVDS5RANQMP6K3G=setting-up-the-integration h_01HDNZ1AS5YTK6N26PD7S7C0XF=see-also" />
+<div data-zendesk-anchors="overview=visi%C3%B3n-general h_01HDNYXDFCQQBNBB6ZQQTJS189=visi%C3%B3n-general setting-up-the-integration=configuraci%C3%B3n-de-la-integraci%C3%B3n h_01HDNYXDFCEVVDS5RANQMP6K3G=configuraci%C3%B3n-de-la-integraci%C3%B3n h_01HDNZ1AS5YTK6N26PD7S7C0XF=v%C3%A9ase-tambi%C3%A9n" />

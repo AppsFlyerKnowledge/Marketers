@@ -1,5 +1,5 @@
 ---
-title: Braze (formerly Appboy) integration with AppsFlyer
+title: Integración de Braze (anteriormente Appboy) con AppsFlyer
 metadata:
   keywords:
     - Appboy
@@ -16,41 +16,40 @@ x-zendesk:
     - Mobile Attribution
     - Ad Networks
   created_at: '2017-03-30T08:39:03Z'
-  edited_at: '2026-08-14T15:06:14Z'
+  edited_at: '2026-08-22T00:10:52Z'
   id: 115001603343
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/115001603343-Braze-formerly-Appboy-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/115001603343
 ---
-> **At a glance:** Braze, an AppsFlyer integrated partner, offers a lifecycle engagement platform for marketing, growth, and engagement teams. The platform enables marketers to connect human-to-human, at scale, with their customers, driving deep engagement and ROI. The center of our platform is the holistic user profile, which provides a single view of the customer.
+> **At a glance:** Braze, un partner integrado de AppsFlyer, ofrece una plataforma de participación durante el ciclo de vida para equipos de marketing, crecimiento y participación. La plataforma permite a los marketers conectarse de persona a persona, a gran escala, con sus clientes, impulsando un engagement profundo y un ROI. El centro de nuestra plataforma es el perfil de usuario holístico, que proporciona una visión única del cliente.
 
-Learn more at <Anchor target="_blank" href="https://www.braze.com/">braze.com</Anchor>.
+Aprender más en <Anchor target="_blank" href="https://www.braze.com/">braze.com</Anchor>.
 
 > 🚧 **Important**
 >
-> **Important notes**
+> **Notas importantes**
 >
-> * <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
-> * Postbacks won't be sent if the source is organic.
+> * <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+> * No se enviarán postbacks si la fuente es orgánica.
 
-## Integration overview
+## Resumen general de la integración
 
-Follow the instructions below to configure the integration with Braze.
+Siga las instrucciones a continuación para configurar la integración con Braze.
 
-Minimum requirements - AppsFlyer SDK:
+Requisitos mínimos - SDK de AppsFlyer:
 
-* <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">Android</Anchor> (Android SDK – version 2.3.1.18 and above)
-* <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">iOS</Anchor>
+* <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">Android</Anchor> (Android SDK – versión 2.3.1.18 y superiores)
+* <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">apps de iOS,</Anchor>
 
-On Android, integrating with Braze requires that the Braze <Anchor target="_blank" href="https://www.braze.com/docs/partners/advertising_technologies/attribution/appsflyer/#integration">Device ID</Anchor> (Braze unique user identifier) is populated in AppsFlyer Android SDK. This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
+En Android, la integración con Braze requiere que el <Anchor target="_blank" href="https://www.braze.com/docs/partners/advertising_technologies/attribution/appsflyer/#integration">ID del dispositivo</Anchor> Braze (identificador de usuario único de Braze) se complete en el SDK de Android de AppsFlyer. Este parámetro se envía con cada postback y permite la identificación de cada usuario. Para realizar esto debes insertar las siguientes cadenas en el código de tu aplicación:
 
 > 📘 **Note**
 >
-> **Important Note**
+> **Nota Importante**
 >
-> Make sure the lines of code are inserted at the correct place – after Braze SDK is launched and before the initialization code for AppsFlyer SDK (see the Initializing the SDK section in our Android SDK Integration Guide).
+> Asegúrate de que las líneas de código se inserten en el lugar correcto: después de iniciar Braze SDK y antes del código de inicialización de AppsFlyer SDK (consulta la sección Inicialización del SDK en nuestra Guía de integración de Android SDK).
 
 <Tabs>
 <Tab title="Android">
@@ -64,13 +63,13 @@ AppsFlyerLib.getInstance().setAdditionalData(customData);
 
 </Tab>
 
-<Tab title="iOS">
+<Tab title="apps de iOS,">
 
 **Swift**
 
-There are two Swift APIs, one with a completion handler and another using the new Swift concurrency support. They both produce the same value—choosing which to use depends on the context.
+Hay dos API de Swift, una con un controlador de finalización y otra que utiliza el nuevo soporte de concurrencia de Swift. Ambos producen el mismo valor: la elección de cuál utilizar depende del contexto.
 
-**Swift completion handler**
+**Controlador de finalización Swift**
 
 ```swift
 let configuration = Braze.Configuration(
@@ -84,10 +83,10 @@ braze.deviceId {
 }
 ```
 
-**Swift await**
+**En espera de Swift**
 
 ```swift
-let configuration = Braze.Configuration(
+let configuration = Braze. Configuration(
     apiKey: "<BRAZE_API_KEY>",
     endpoint: "<BRAZE_ENDPOINT>")
 configuration.useUUIDAsDeviceId = false
@@ -100,7 +99,7 @@ AppsFlyerLib.shared().customData = ["brazeDeviceId": brazeDeviceId]
 
 ```objectivec
 BRZConfiguration *configurations = [[BRZConfiguration alloc] initWithApiKey:@"BRAZE_API_KEY" endpoint:@"BRAZE_END_POINT"];
-[configurations setUseUUIDAsDeviceId:NO];
+[configurations setUseUUIDAsDeviceId: NO];
 Braze *braze = [[Braze alloc] initWithConfiguration:configurations];
 [braze deviceIdWithCompletion:^(NSString * _Nonnull brazeDeviceId) {
     NSLog(@">>[BRZ]: %@", brazeDeviceId);
@@ -117,107 +116,107 @@ Braze *braze = [[Braze alloc] initWithConfiguration:configurations];
 ```csharp
 Appboy.AppboyBinding.getDeviceID()
 Dictionary<string, string> customData = new Dictionary<string, string>();
-customData.Add("brazeCustomerId", Appboy.AppboyBinding.getDeviceId());
+customData.Add("brazeCustomerId", Appboy. AppboyBinding.getDeviceId());
 AppsFlyer.setAdditionalData(customData);
 ```
 
 </Tab>
 </Tabs>
 
-## Setting up Braze
+## Configuración de Braze
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.  
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations</Anchor>.
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace**.  
+   (**Para editar una integración existente:** Ve a la pestaña **Collaborate > Partner Integrations > Active integrations**.)
+2. Selecciona la aplicación correspondiente.
+3. En la pestaña **Integración**, selecciona la aplicación para la integración y activa **Activar partner**.
+4. En la pestaña **Integración**, activa el selector **Activate partner**.  
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners</Anchor>.
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar partner
 
-On the **first visit** here, you must ***Activate the Partner*** to enable the setup of the integration tab parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, debes ***Activar el Partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### General settings
+### Configuración general
 
-Braze connects with AppsFlyer via a unique API Key and REST Endpoint.
+Braze se conecta con AppsFlyer a través de una clave API única y un punto final REST.
 
-**To get Braze's API Key and REST endpoint:**
+**Para obtener la clave API y el punto final REST de Braze:**
 
-1. In your Braze account, under **Technology Partners,** go to **Attribution**.
-2. Select **AppsFlyer**.
-   ![Select AppsFlyer as the technology partner in Braze](https://files.readme.io/db96e8b5e2363f5250c6c1146a1f7a15e1ed6457fe4543dbe649f8818bb5db78-360017328637.png)
-3. Under **Data Import for Install Attribution**, click Generate API Key.
-4. Copy the generated API Key and the REST endpoint.
-5. In AppsFlyer, insert the Braze API Key and the REST endpoint.
-   ![Enter the Braze API Key and REST endpoint in AppsFlyer](https://files.readme.io/b13aba84c394c0b4603e0aad2edd723525dadf204250349620b571bc47b0ba9d-360001907229.png)
-6. Click **Save and Close**
+1. En tu cuenta de Braze, en **Technology Partners,** ve a **Atribución**.
+2. Selecciona**AppsFlyer**.  ![Selecciona AppsFlyer como partner tecnológico en Braze](https://files.readme.io/db96e8b5e2363f5250c6c1146a1f7a15e1ed6457fe4543dbe649f8818bb5db78-360017328637.png)
+3. En **Data Import for Install Attribution**, haz clic en Generate API Key.
+4. ¡Importante!
+5. En AppsFlyer, inserta la clave API de Braze y el punto final REST.  ![Introduce la clave API y el endpoint REST de Braze en AppsFlyer](https://files.readme.io/b13aba84c394c0b4603e0aad2edd723525dadf204250349620b571bc47b0ba9d-360001907229.png)
+6. Haz clic en **Guardar y Cerrar**.
 
-Once you have saved the configuration, AppsFlyer sends the following data to Braze for every organic and non-organic install:
+Una vez que haya guardado la configuración, AppsFlyer envía los siguientes datos a Braze para cada instalación orgánica y no orgánica:
 
-* Braze Dev\_ID
-* Media Source
-* Campaign name
-* Adgroup name
-* Ad name
+* Identificación de desarrollador de Braze
+* Fuente de medios
+* Nombre de la campaña
+* Nombre adgroup
+* Nombre de anuncio
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Braze user installs. Use this section to define sending these postbacks.
+AppsFlyer puede enviar postbacks automáticos a las instalaciones de usuarios de Braze. Usa esta sección para definir el envío de estos postbacks.
 
-![Default postbacks section](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+ ![Sección de postbacks predeterminados](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png) 
 
-Select **Events attributed to any partner or organic** to send postbacks to Braze for any user that downloads the app.
+Selecciona **Eventos atribuidos a cualquier partner u orgánico** para enviar postbacks a Braze para cualquier usuario que descargue la aplicación.
 
-Click **Save.**
+Haz clic en **Save** (Guardar).
 
 > 📘 **Note**
 >
-> Although all events are sent by AppsFlyer, organic installs are not counted by Braze and therefore are ignored by the Braze API.
+> **Nota:**
+>
+> Aunque todos los eventos son enviados por AppsFlyer, Braze no cuenta las instalaciones orgánicas y, por lo tanto, la API de Braze las ignora.
 
 </Accordion>
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlace de atribución">
 
-Attribution Links are not available for Braze.
-
-</Accordion>
-
-<Accordion title="Cost tab">
-
-Cost data is not supported in the integration with this partner.
+Los enlaces de atribución no están disponibles para Braze.
 
 </Accordion>
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de costo">
 
-Ad Revenue is not supported in the integration with this partner.
-
-</Accordion>
-
-<Accordion title="Permissions tab">
-
-Permissions are not available for Braze.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
-## Viewing user attribution data in Braze
+<Accordion title="Pestaña de ingresos por publicidad">
 
-Your user base can be segmented by attribution data in the Braze dashboard using the Install Attribution filters.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
-![Install Attribution filters in the Braze dashboard](https://files.readme.io/7289491d4d301eb38618298536ac5b895a610024bf162c733409d3f50b10b8f4-360001908045.png)
+</Accordion>
 
-Additionally, attribution data for a particular user is available on each user’s profile in the Braze dashboard.
+<Accordion title="Pestaña de permisos">
 
-![Attribution data on a user profile in Braze](https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png)
+Los permisos no están disponibles para Braze.
 
-<div data-zendesk-anchors="h_01H9FK453A9W5DCPR4X8PR06MZ=integration-overview h_01H9FK453AWXF006KEVKD797QF=setting-up-braze h_01H9FK453AVK4YKF41FEP0YRJN=activate-partner h_01H9FK453AG6AXA7J43X6NGZT1=general-settings h_01H9FK453ASAKVHT7GV8BG56YS=default-postbacks h_01H9FK453AQXG7NNT2841686MJ=viewing-user-attribution-data-in-braze" />
+</Accordion>
+
+## Visualización de datos de atribución de usuarios en Braze
+
+Su base de usuarios se puede segmentar por datos de atribución en el panel de Braze utilizando los filtros de atribución de instalación.
+
+ ![Filtros de atribución de instalación en el dashboard de Braze](https://files.readme.io/7289491d4d301eb38618298536ac5b895a610024bf162c733409d3f50b10b8f4-360001908045.png) 
+
+Además, los datos de atribución de un usuario en particular están disponibles en el perfil de cada usuario en el panel de control de Braze.
+
+ ![Datos de atribución en un perfil de usuario de Braze](https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png)
+
+<div data-zendesk-anchors="integration-overview=resumen-general-de-la-integraci%C3%B3n h_01H9FK453A9W5DCPR4X8PR06MZ=resumen-general-de-la-integraci%C3%B3n setting-up-braze=configuraci%C3%B3n-de-braze h_01H9FK453AWXF006KEVKD797QF=configuraci%C3%B3n-de-braze activate-partner=activar-partner h_01H9FK453AVK4YKF41FEP0YRJN=activar-partner general-settings=configuraci%C3%B3n-general h_01H9FK453AG6AXA7J43X6NGZT1=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01H9FK453ASAKVHT7GV8BG56YS=postbacks-predeterminados viewing-user-attribution-data-in-braze=visualizaci%C3%B3n-de-datos-de-atribuci%C3%B3n-de-usuarios-en-braze h_01H9FK453AQXG7NNT2841686MJ=visualizaci%C3%B3n-de-datos-de-atribuci%C3%B3n-de-usuarios-en-braze" />

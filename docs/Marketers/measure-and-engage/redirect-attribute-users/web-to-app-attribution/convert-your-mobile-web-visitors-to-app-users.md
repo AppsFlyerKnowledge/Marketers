@@ -1,5 +1,5 @@
 ---
-title: Convert your mobile web visitors to app users
+title: Convertir a los visitantes de la web móvil en usuarios de la aplicación.
 metadata:
   keywords:
     - OneLink
@@ -15,86 +15,85 @@ x-zendesk:
     - Marketers
     - Smart Banners and Scripts
   created_at: '2019-03-19T08:54:10Z'
-  edited_at: '2026-09-07T10:17:00Z'
+  edited_at: '2026-09-09T00:33:43Z'
   id: 360001237818
-  locale: en-us
+  locale: es
   section: Web-to-app attribution
   section_id: 6551240476177
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001237818-Convert-your-mobile-web-visitors-to-app-users
+  url: https://support.appsflyer.com/hc/es/articles/360001237818
 ---
-> **At a glance:** Use your mobile website to convert mobile web visitors into new mobile app users.
+> **De un vistazo:** Utiliza tu sitio web móvil para convertir a los visitantes de la web móvil en nuevos usuarios de la aplicación móvil.
 
-## Mobile web-to-app attribution solutions
+## Soluciones móviles de atribución de la web a la aplicación
 
 ![Web_to_app_.png](https://files.readme.io/deb9ba0dfd18671666e9f06dc27440759844ea365988f80e05ce7ac2817a7299-46646996021777.png)
 
-### Benefits of web-to-app campaigns
+### Beneficios de las campañas de la web a la aplicación
 
-Using web-to-app campaigns helps you:
+El uso de campañas de la web a la aplicación te ayuda a:
 
-* Convert mobile web visitors into app users. [See also web-assisted installs.](/docs/convert-your-mobile-web-visitors-to-app-users#web-assisted-installs)
-* Use web or landing pages to increase your users’ understanding of your product/service before they download the app.
-* Find your best- and least- converting web/landing pages.
-* Build more specific offerings to retarget your mobile web users, who are also your app users.
-* Seamlessly deep link users from the site to a specific page in the app.
+* Convierte a los visitantes de la web móvil en usuarios de la aplicación. [Consulta también Instalaciones asistidas por web.](/docs/convert-your-mobile-web-visitors-to-app-users#instalaciones-asistidas-por-web)
+* Usar páginas web o de aterrizaje para aumentar la comprensión de tus usuarios sobre tu producto/servicio antes de que descarguen la aplicación.
+* Encontrar tus páginas web/de aterrizaje de mejor y menor conversión.
+* Crear ofertas más específicas para el retargeting de tus usuarios web móviles, que también son usuarios de tu aplicación.
+* Enlazar profundamente sin problemas a los usuarios desde el sitio a una página específica de la aplicación.
 
-### Attribution solutions
+### Soluciones de atribución
 
-<Embed title="Convert your mobile web visitors to app users" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/kv67fa3rvn" providerUrl="https://fast.wistia.com" />
+<Embed title="Convertir a los visitantes de la web móvil en usuarios de la aplicación." typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/kv67fa3rvn" providerUrl="https://fast.wistia.com" />
 
-For mobile web-to-app users, since there are two clicks (the first that directs to the web page and the second that directs from the web page to the app store), attribution and deep linking are problematic. Users who eventually download the app may be wrongfully attributed, or attributed as organic, even if the first click comes from an ad network, Google click, or owned media source. 
+Para los usuarios móviles de la web a la aplicación, dado que hay dos clics (el primero que dirige a la página web y el segundo que dirige desde la página web a la tienda de aplicaciones), la atribución y los enlaces profundos son problemáticos. Los usuarios que finalmente descargan la aplicación pueden ser atribuidos erróneamente, o atribuidos como orgánicos, incluso si el primer clic proviene de una red de publicidad, clic de Google o fuente de medios propia. 
 
-AppsFlyer provides the following solutions for accurate web-to-app attribution:
+AppsFlyer ofrece las siguientes soluciones para una atribución precisa de la web a la aplicación:
 
-<Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners</Anchor>:
+<Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners</Anchor>:
 
-* Add the Smart Banner web SDK to your website, and then create dynamic banners on the AppsFlyer dashboard.
-* When a user clicks a URL and is directed to your mobile website, a Smart Banner pops up with a CTA to download the app from the app store.
-* The Smart Banner URL is populated based on the parameters/UTMs in the incoming link, and is used for attribution.
+* Añade el SDK web de Smart Banner a tu sitio web y, a continuación, crea banners dinámicos en el dashboard de AppsFlyer.
+* Cuando un usuario hace clic en una URL y es dirigido a tu sitio web móvil, aparece un Smart Banner con un CTA para descargar la aplicación de la tienda de aplicaciones.
+* La URL de Smart Banner se rellena en función de los parámetros y UTM en el enlace entrante y se utiliza para la atribución.
 
-<Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">OneLink Smart Script</Anchor>:
+<Anchor target="_blank" href="/marketers/es/docs/onelink-smart-script-overview">OneLink Smart Script</Anchor>:
 
-* Runs a script on your mobile website.
-* When a user clicks a URL and is directed to your mobile website, they land on a page with buttons urging them to download your app.
-* The script on the web page dynamically generates the outgoing URLs on these buttons based on the incoming URL, which is used for attribution.
-* Replaces the previous mobile landing page attribution <Anchor target="_blank" href="/marketers/docs/deprecated-mobile-landing-page-attribution-script">script</Anchor>. If you are still using the previous script, you should migrate.
+* Ejecuta un script en tu sitio web móvil.
+* Cuando un usuario hace clic en una URL y es dirigido a tu sitio web móvil, aterriza en una página con botones que le instan a descargar tu aplicación.
+* El script en la página web genera dinámicamente las URL salientes en estos botones en función de la URL entrante, que se utiliza para la atribución.
+* Reemplaza el <Anchor target="_blank" href="/marketers/es/docs/deprecated-mobile-landing-page-attribution-script">script</Anchor> de atribución de la página de aterrizaje móvil anterior. Si aún estás usando el script anterior, debes migrar.
 
-Both solutions bridge the gap between the incoming campaign URLs to your website, and the outgoing OneLink URL created for correct attribution and deep linking of the mobile website users.
+Ambas soluciones acortan la brecha entre las URL de campaña entrantes a tu sitio web y la URL saliente de OneLink creada para la atribución correcta y el enlace profundo de los usuarios del sitio web móvil.
 
-The following table compares the two solutions so that you can choose and implement the one most suitable for your needs. **Note**: You can implement both solutions and use them in tandem.
+En la siguiente tabla se comparan las dos soluciones para que puedas elegir e implementar la más adecuada a tus necesidades. **Nota**: Se pueden implementar ambas soluciones y utilizarlas en tándem.
 
-#### Smart Banner vs OneLink Smart Script
+#### Smart Banner vs. OneLink Smart Script
 
-| Characteristic | Smart Banners | OneLink Smart Script |
+| Característica | Banners inteligentes | Smart Script de OneLink |
 | --- | --- | --- |
-| Media sources supported | All media sources supported:<ul><li>Incoming links with pid or UTM params (including SRNs)</li><li>Organic visitors</li></ul> | All media sources supported:<ul><li>Incoming links (including SRNs)</li><li>Organic visitors</li></ul> |
-| Change attribution link parameters | Fast change in AppsFlyer dashboard/wizard access. | Requires developer implementation in the script, but is totally flexible. |
-| Desktop users | Not supported | Supported |
-| Marketer setup | Uses wizard to set up Smart Banners. | Decides parameters and values to be set on the incoming and outgoing URLs (default values are supplied). |
-| Developer setup | <ul><li>Integrates web SDK.</li><li>Alternatively, can be <Anchor target="_blank" href="/marketers/docs/smart-banners-website-code-implementation-for-marketers">implemented by the marketer</Anchor>.</li></ul> | <ul><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator">Implements the script</Anchor> that creates the outgoing URL.</li><li>Alternatively, can be implemented by the marketer via a <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script">tag manager</Anchor>.</li></ul> |
-| Ongoing campaign setup | For click ad networks, set up web campaign-to-app link. | Follow the instructions per media source type. |
-| Availability | Available with a paid subscription plan. | Available with a paid subscription plan. |
+| Fuentes de medios compatibles | Todas las fuentes de medios compatibles:<ul><li>Enlaces entrantes con parámetros pid o UTM (incluidas las SRN)</li><li>Visitantes orgánicos</li></ul> | Todas las fuentes de medios compatibles:<ul><li>Enlaces entrantes (incluidas las SRN)</li><li>Visitantes orgánicos</li></ul> |
+| Cambiar parámetros de enlace de atribución | Cambio rápido en el acceso al panel de control/asistente de AppsFlyer. | Requiere la implementación del desarrollador en el script, pero es totalmente flexible. |
+| Usuarios de escritorio | No se admite | Compatible |
+| Configuración de marketers | Utiliza el asistente para configurar Smart Banners. | Decide los parámetros y valores que se van a establecer en las URL entrantes y salientes (se suministran los valores predeterminados). |
+| Configuración del desarrollador | <ul><li>Integra el SDK web.</li><li>Alternativamente, puede ser <Anchor target="_blank" href="/marketers/es/docs/smart-banners-website-code-implementation-for-marketers">implementado por el marketer</Anchor>.</li></ul> | <ul><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator">Implementa el script</Anchor> que crea la URL saliente.</li><li>Alternativamente, puede ser implementado por el marketer a través de un <Anchor target="_blank" href="/marketers/es/docs/set-up-smart-script-to-convert-web-visitors#configuración-de-smart-script-de-onelink">administrador de etiquetas</Anchor>.</li></ul> |
+| Configuración de campaña en curso | Para redes de publicidad de clic, configura el enlace de la campaña web a la aplicación. | Sigue las instrucciones por tipo de fuente de medios. |
+| Disponibilidad | Disponible con un plan de suscripción de pago. | Disponible con un plan de suscripción de pago. |
 
-**Note:** Smart Banners and OneLink Smart Script are available only with eligible paid <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">subscription plans</Anchor>. Feature access depends on your AppsFlyer plan.
+**Nota:** Smart Banners y OneLink Smart Script solo están disponibles con <Anchor target="_blank" href="/marketers/es/docs/account-management-plans-payments-and-billing#appsflyer-plans">planes de suscripción</Anchor> pagados aptos. Depende de tu plan de cuenta de AppsFlyer
 
-### Web-assisted installs
+### Instalaciones asistidas por web
 
-Web-Assisted Installs occur when users download your app, but not necessarily because of a specific campaign. Before they download your app, they visited your website for whatever reason, perhaps days or weeks earlier. Use <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">PBA</Anchor> Web-Assisted Installs to see a general breakdown of these *assist* touchpoints that eventually lead to the app install.  
+Las instalaciones asistidas por web ocurren cuando los usuarios descargan tu app, pero no necesariamente por una campaña específica. Antes de que descarguen tu app, visitaron tu sitio web por cualquier motivo, quizá días o semanas antes. Usa <Anchor target="_blank" href="/marketers/es/docs/people-based-attribution-pba-overview">PBA</Anchor> Web-Assisted Installs para ver un desglose general de estos *puntos de contacto de asistencia* que finalmente conducen a la instalación de la app.  
 
-#### Web-to-app solutions vs. Web-Assisted Installs
+#### Soluciones móviles de atribución de la web a la aplicación
 
-| Characteristic | Mobile web-to-app solutions | Web-Assisted Installs (PBA) |
+| Característica | Soluciones móviles de la web a la aplicación | Instalaciones asistidas por web (PBA) |
 | --- | --- | --- |
-| Purpose | Gives you tools to run campaigns designed to directly convert web visitors into app users, while attributing the media source responsible for the web visit. | See a breakdown of installs preceded by web visits. |
-| Flows | Direct flow from web to app download. | Direct, deferred, or disjointed flows. Installs can be predated by a web visit (up to 30 days). |
-| User devices | Same device | Same or cross-device |
+| Finalidad | Te brinda herramientas para ejecutar campañas diseñadas para convertir directamente a los visitantes de la web en usuarios de la aplicación, a la vez que atribuye la fuente de medios responsable de la visita web. | Consulta un desglose de las instalaciones precedidas de visitas a la web. |
+| Flujos | Flujo directo de la web a la descarga de la aplicación. | Flujos directos, diferidos o desarticulados. Las instalaciones pueden estar precedidas por una visita a la web (hasta 30 días). |
+| Dispositivos de usuario | Mismo dispositivo | Mismo o multidispositivo |
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| SDK version |  |
-| Match type | `preload_rfr` |
-| Overview dashboard | Engagements count as clicks in aggregate reports and dashboards. They are aggregated at the preload partner (media source) and campaign levels. |
-| Raw data reports | <ul><li>Engagements are available in the clicks reports only via Data Locker.</li><li>In the install reports, the preload events are NOT found in the original URL due to Samsung’s privacy restrictions.</li><li>They can be identified in the `af_engagement_type` parameter as `preload`.</li></ul> |
+| Versión del SDK |  |
+| Tipo de coincidencia | `preload_rfr` |
+| Panel de vista general | Los engagements cuentan como clics en los reportes agregados y dashboards. Se agregan a nivel de partner de precarga (fuente de medios) y campaña. |
+| Reportes de raw data | <ul><li>Los engagements están disponibles en los reportes de clics solo a través de Data Locker.</li><li>En los reportes de instalación, los eventos de precarga NO se encuentran en la URL original debido a las restricciones de privacidad de Samsung.</li><li>Pueden identificarse en el parámetro `af_engagement_type` como `preload`.</li></ul> |
 
-<div data-zendesk-anchors="mobile-webtoapp-attribution-solutions=mobile-web-to-app-attribution-solutions h_01KFAFC9DFAES0JGPVCQQV3GAR=mobile-web-to-app-attribution-solutions benefits-of-webtoapp-campaigns=benefits-of-web-to-app-campaigns h_01KFAFC9DFJ7QWJ6JN60NKVPZ3=benefits-of-web-to-app-campaigns h_01KFAFC9DFH4JH6DE4KZE424Q3=attribution-solutions h_01KFAFC9DFGCYRS1C5SVX1ZSCC=smart-banner-vs-onelink-smart-script webassisted-installs=web-assisted-installs h_01KFAFC9DG4MCVQ5YRGVRQ6K5P=web-assisted-installs webtoapp-solutions-vs-webassisted-installs=web-to-app-solutions-vs-web-assisted-installs h_01KFAFC9DG4YJ55BYQH9TQ2YPQ=web-to-app-solutions-vs-web-assisted-installs" />
+<div data-zendesk-anchors="mobile-webtoapp-attribution-solutions=soluciones-m%C3%B3viles-de-atribuci%C3%B3n-de-la-web-a-la-aplicaci%C3%B3n h_01KFAFC9DFAES0JGPVCQQV3GAR=soluciones-m%C3%B3viles-de-atribuci%C3%B3n-de-la-web-a-la-aplicaci%C3%B3n benefits-of-webtoapp-campaigns=beneficios-de-las-campa%C3%B1as-de-la-web-a-la-aplicaci%C3%B3n h_01KFAFC9DFJ7QWJ6JN60NKVPZ3=beneficios-de-las-campa%C3%B1as-de-la-web-a-la-aplicaci%C3%B3n attribution-solutions=soluciones-de-atribuci%C3%B3n h_01KFAFC9DFH4JH6DE4KZE424Q3=soluciones-de-atribuci%C3%B3n h_01KFAFC9DFGCYRS1C5SVX1ZSCC=smart-banner-vs-onelink-smart-script webassisted-installs=instalaciones-asistidas-por-web h_01KFAFC9DG4MCVQ5YRGVRQ6K5P=instalaciones-asistidas-por-web webtoapp-solutions-vs-webassisted-installs=soluciones-m%C3%B3viles-de-atribuci%C3%B3n-de-la-web-a-la-aplicaci%C3%B3n-1 h_01KFAFC9DG4YJ55BYQH9TQ2YPQ=soluciones-m%C3%B3viles-de-atribuci%C3%B3n-de-la-web-a-la-aplicaci%C3%B3n-1" />

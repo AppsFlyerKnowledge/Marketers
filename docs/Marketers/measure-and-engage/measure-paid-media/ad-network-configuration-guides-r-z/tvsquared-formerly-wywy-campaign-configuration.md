@@ -1,5 +1,5 @@
 ---
-title: TVSquared (formerly Wywy) campaign configuration
+title: Configuración de la campaña de TVSquared (anteriormente WyWy)
 metadata:
   keywords:
     - Advertisers
@@ -15,98 +15,96 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-09-06T08:58:47Z'
-  edited_at: '2026-06-16T09:45:39Z'
+  edited_at: '2026-08-12T12:16:24Z'
   id: 213836263
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/213836263-TVSquared-formerly-Wywy-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/213836263
 ---
-> **At a glance:** TVSquared (formerly WyWy), an AppsFlyer ad network integrated partner, enables the entire digital organization - marketers, product managers, and data scientists - to run the business based on data. TVSquared creates an integrated view of consumers across devices, providing tools to optimize the user experience in real-time.
+> **En resumen:** TVSquared (anteriormente WyWy), partner integrado de ad network de AppsFlyer, permite a toda la organización digital —especialistas en marketing, responsables de producto y científicos de datos— ejecutar el negocio basándose en datos. TVSquared crea una vista integrada de los consumidores en todos los dispositivos y proporciona herramientas para optimizar la experiencia del usuario en tiempo real.
 
-## Setting up TVSquared
+## Configuración de TVSquared
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-**Note:** For TVSquared you need to complete the Integration tab. The remaining tabs are not applicable to TVSquared.
+**Nota:** Para TVSquared, debes completar la pestaña Integración. Las demás pestañas no se aplican a TVSquared.
 
-For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+Para ver una descripción detallada del Partner Configuration Window Header, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-1. Enable ***Activate Partner***.  
-   The Integrations parameters display.  
-   For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
-2. Complete the General Setting fields:
-   * ***SITEID***: Fill in the SITEID you obtained from TVSquared.
-   * ***COLLECTORID***: Fill in the COLLECTORID obtained from TVSquared.
-3. **Default Postbacks**: AppsFlyer sends postbacks to TVSquared after the user installs/re-engagement. Select the Sending Option for which the partner will get postbacks:
-   * **Events attributed to any partner or organic**: All installs, irrespective of source, are reported to TVSquared
-   * **Off**
-4. Complete in-app events settings fields:
+1. Activa ***Activate Partner***.  
+   Se muestran los parámetros de integración.  
+   Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+2. Completa los campos de Configuración general:
+   * ***SITEID***: Introduce el SITEID que obtuviste de TVSquared.
+   * ***COLLECTORID***: Introduce el COLLECTORID que obtuviste de TVSquared.
+3. **Postbacks predeterminados**: AppsFlyer envía postbacks a TVSquared después de la instalación o el re-engagement del usuario. Selecciona la opción de envío para la que el partner recibirá postbacks:
+   * **Eventos atribuidos a cualquier partner u orgánico**: Todas las instalaciones, independientemente de la fuente, se reportan a TVSquared
+   * **Desactivado**
+4. Completa los campos de configuración de los eventos in-app:
 
-* ***SITEID***: Fill in the SITEID you obtained from TVSquared.
-* ***COLLECTORID***: Fill in the COLLECTORID obtained from TVSquared.
-* **customerid:** (optional) You can leave this field blank.
-* (optional) Enable ***In-App Events Postback***: Map your in-app events with TVSquared using postbacks. Configure the parameters as follows:
-  * Click Add Event to add an SDK event to the list and complete the parameters.
-* Click **Save integration.**
+* ***SITEID***: Introduce el SITEID que obtuviste de TVSquared.
+* ***COLLECTORID***: Introduce el COLLECTORID que obtuviste de TVSquared.
+* **customerid:** (opcional) Puedes dejar este campo en blanco.
+* (opcional) Activa ***Postback de eventos in-app***: asigna tus eventos in-app a TVSquared mediante postbacks. Configura los parámetros de la siguiente manera:
+  * Haz clic en Agregar evento para añadir un evento del SDK a la lista y completa los parámetros.
+* Haz clic en **Guardar integración**.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> According to both Meta ads and X Ads terms and conditions, AppsFlyer can't share user-level data with any 3rd party. Therefore, all Meta ads and X Ads installs are sent to TVSquared as organic.
+> De acuerdo con los términos y condiciones de los anuncios de Meta y X Ads, AppsFlyer no puede compartir datos a nivel de usuario con ninguna 3rd party. Por lo tanto, todas las instalaciones de los anuncios de Meta y X Ads se envían a TVSquared como orgánicas.
 >
-> For details on sharing data with 3rd parties, click <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">here</Anchor>.
+> Para obtener más información sobre cómo compartir datos con 3rd parties, haz clic <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention">aquí</Anchor>.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Attribution Links are not available for TVSquared.
+Los enlaces de atribución no están disponibles para TVSquared.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost data is not supported in the integration with this partner.
+Los datos de costos no son compatibles con la integración con este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported in the integration with this partner.
+Los ingresos por publicidad no se admiten en la integración con este partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Permissions are not available for TVSquared.
+Los permisos no están disponibles para TVSquared.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HF9R4JZ504QNYCQQ8TFDM6FV=setting-up-tvsquared h_01HF9R4JZ5VXT1P5T3RVRXN522=integration-tab h_01HF9R4JZ55HMSRD3TNFF05PKZ=activate-partner h_01HF9R4JZ5KWKPCN3ESQ9K27S7=note h_01HF9R4JZ596NM643Z662BGY0M=attribution-link-tab h_01HF9R4JZ50XY445ABGAPDY962=cost-tab h_01HF9R4JZ5BA74FKFRKY4FPTAS=ad-revenue-tab h_01HF9R4JZ5BV6C6H6V6W53BXXK=permissions-tab" />
+<div data-zendesk-anchors="setting-up-tvsquared=configuraci%C3%B3n-de-tvsquared h_01HF9R4JZ504QNYCQQ8TFDM6FV=configuraci%C3%B3n-de-tvsquared h_01HF9R4JZ5VXT1P5T3RVRXN522=integration-tab activate-partner=activar-socio h_01HF9R4JZ55HMSRD3TNFF05PKZ=activar-socio h_01HF9R4JZ5KWKPCN3ESQ9K27S7=nota h_01HF9R4JZ596NM643Z662BGY0M=attribution-link-tab h_01HF9R4JZ50XY445ABGAPDY962=cost-tab h_01HF9R4JZ5BA74FKFRKY4FPTAS=ad-revenue-tab h_01HF9R4JZ5BV6C6H6V6W53BXXK=permissions-tab" />

@@ -1,5 +1,5 @@
 ---
-title: Avow GmbH campaign configuration
+title: Configuración de la campaña de Avow GmbH
 metadata:
   keywords:
     - Agencies
@@ -14,144 +14,144 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2023-09-13T07:21:40Z'
-  edited_at: '2026-06-16T12:14:26Z'
+  edited_at: '2026-08-12T12:13:10Z'
   id: 18523546870929
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (A-F)
   section_id: 6551990971793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/18523546870929-Avow-GmbH-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/18523546870929
 ---
-> **At a glance:** AVOW GmbH (avow1\_int) is an integrated partner with both ad network and agency accounts, that allows advertisers to run User Acquisition campaigns on mobile devices. In addition to click-based mobile attribution, Avow GmbH also offers view-through attribution, which advertisers can record with AppsFlyer.
+> **En resumen:** AVOW GmbH (avow1\_int) es un socio integrado con redes publicitarias y cuentas de agencia, que permite a los anunciantes ejecutar campañas de adquisición de usuarios en dispositivos móviles. Además de la atribución móvil basada en clics, Avow GmbH también ofrece atribución view-through, que los anunciantes pueden grabar con AppsFlyer.
 
 ![avow_icon.png](https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png)
 
-## Activate partner
+## Activar partner
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. **Para activar:** En AppsFlyer, en el menú lateral, selecciona**Colaborar**> **Partner Marketplace.**   
+   **Para editar:** En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la pestaña **Integración** , selecciona la aplicación para la integración y activa **Activar partner**  .  
+    El selector debe estar activado mientras trabajes con el partner.  
+    **Nota:** El botón debe estar on <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado)</Anchor> mientras trabajes con el partner.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Para ver una descripción detallada del Encabezado de la ventana de configuración de partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
-## Setting up Avow GmbH
+## Configuración de Avow GmbH
 
-The integration with Avow GmbH supports click-through and view-through attribution. The general configuration window includes the following tabs: Integration, Attribution link, Cost, Ad revenue, and Permissions. For Avow GmbH, the available tabs are Integration, Attribution link, and Permissions.
+La integración con Avow GmbH admite la atribución click-through y view-through. La ventana de configuración incluye las siguientes pestañas: Integración, Enlace de atribución, Costo, Ingresos por publicidad y Permisos. Para Avow GmbH, las pestañas disponibles son Integración, Enlace de atribución y Permisos.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * Some settings differ for iOS and Android devices
-> * Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">setting up partner integrations</Anchor>
+> * Algunas configuraciones cambian para dispositivos iOS y Android
+> * Aprende más sobre cómo <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">configurar integraciones de partners</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The **Integration** tab includes a number of sections, as described below.
+La pestaña **Integración** incluye una serie de secciones, como se describe a continuación.
 
-#### Activate partner
+#### Activar partner
 
-To configure the integration, you must first <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#activate-partner">turn on</Anchor> the **Activate partner** toggle. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activating and deactivating partner integrations</Anchor>.
+Para configurar la integración, primero debes <Anchor target="_blank" href="/marketers/es/docs/amazon-ads-campaign-configuration#activar-socio">activar</Anchor> el selector **Activar partner**. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activación y desactivación de integraciones de partners</Anchor>.
 
-#### Advanced Privacy
+#### Privacidad Avanzada
 
-For iOS apps only: Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Privacy (for iOS 14.5+ and later)** toggle state:
+Solo para aplicaciones de iOS: Tu control sobre los datos compartidos con el partner a través de postbacks y <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">reportes</Anchor> depende del estado del selector de **Privacidad avanzada (para iOS 14.5+ y posteriores)**:
 
-| Advanced Privacy: On | Advanced Privacy: Off |
+| Privacidad avanzada: activada | Privacidad avanzada: desactivada |
 | --- | --- |
-| Postbacks are sent only for events attributed to the partner | Postbacks are sent according to your configuration:<ul><li>**All media sources, including organic**</li><li>**This partner only**</li></ul> |
-| Postbacks are sent according to the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy template</Anchor> |  |
-| <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated and anonymous data</Anchor> is shared with the partner, meaning no user-level data (device ID) is shared. |  |
+| Los postbacks se envían solo para eventos atribuidos al partner | Los postbacks se envían según tu configuración:<ul><li>**Todas las fuentes de medios, incluidas las orgánicas**</li><li>**Solo este partner**</li></ul> |
+| Los postbacks se envían de acuerdo con la <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">plantilla de Privacidad avanzada</Anchor> |  |
+| <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Los datos agregados y anónimos</Anchor> se comparten con el partner, lo que significa que no se comparten datos a nivel de usuario (ID de dispositivo). |  |
 
-#### General settings
+#### Configuración general
 
-**token**
+**Token**
 
-Add the verification token provided by the AVOW Specialist (AM/BDM).
+Agrega el token de verificación proporcionado por el Especialista AVOW (AM/BDM).
 
-#### Install attribution
+#### Atribución de instalación.
 
-To attribute view-through installs from Avow GmbH, turn on **Install view-through attribution** . The view-through lookback slider is available on the Attribution link tab (described below).
+Para atribuir instalaciones de visualización a través de Avow GmbH, activa **Instalar atribución view-through**. El control deslizante de view-through está disponible en la pestaña del enlace de atribución (descrito a continuación).
 
-#### Default postbacks
+#### Postbacks predeterminados
 
-Postbacks for installs and rejected installs are sent to this partner only.
+Los postbacks para instalaciones e instalaciones rechazadas se envían únicamente a este partner.
 
-#### In-app event settings
+#### Configuración de eventos in-app
 
-**token**
+**Token**
 
-Add the verification token provided by the AVOW Specialist (AM/BDM).
+Agrega el token de verificación proporcionado por el Especialista AVOW (AM/BDM).
 
-#### In-app event postbacks
+#### Postbacks de eventos in-app
 
-Configure mapping of in-app events with Avow GmbH events, sent via postbacks:
+Configura el mapeo de eventos in-app+ con eventos de Avow GmbH, enviados a través de postbacks:
 
-1. Turn on **In-app event postbacks**.
-2. Click **Add event** to add an SDK or server-to-server event to the list. The following table describes the fields to complete:
+1. Activa **Postbacks de eventos in-app**.
+2. Haz clic en **Agregar evento** para agregar un evento de SDK o de servidor a servidor a la lista. En la siguiente tabla se describen los campos que debes completar:
 
-| Parameter name | Description |
+| Nombre de parámetro | Descripción |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
-| **for users from** | **This partner only:** In-app event postbacks are sent only for events attributed to this partner—meaning, the user who performed it came from this partner. |
-| **including** | <ul><li>**No data (default)**: Send only the event itself without any event values.</li><li>**Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: Send all the parameters **excluding** the revenue value.</li></ul> |
+| **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos de servidor a servidor.<br />**Consejo**: ¿No ves el evento que estás buscando?<ul><li>Asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a comprobarlo.</li><li>Escríbelo en **Evento de AppsFlyer**, y luego haz clic en **Crear personalizado**. Leer más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#eventos-personalizados">asignación de eventos personalizados.</Anchor></li></ul> |
+| **Asignado al evento del partner** | El ID o nombre único de cada evento, tal y como lo defina el partner. Existen varias configuraciones de asignación:<ul><li>**Campo de texto:** obtén el ID del evento correspondiente del partner.</li><li>**Cuadro desplegable:** selecciona el evento de AppsFlyer predefinido más adecuado.</li><li>**Tal como está**: envía los eventos tal como están, sin asignación de nombres.</li></ul> |
+| **Para usuarios de** | **Solo para este partner:** Los postbacks de eventos in-app se envían solo para eventos atribuidos a este partner, es decir, el usuario que lo realizó vino de este socio. |
+| **Incluyendo** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí sin los valores del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento).</li><li>**Valores sin ingresos**: envía todos los parámetros **excluyendo** el valor de ingresos.</li></ul> |
 
-3. [Optional] Click the **Add condition**<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/ccd3619229eddf2c91979ab4b0531b95dc2fe1d8fffee5ba61ae965d68e9be99-18523570168081.png" width="30px" />icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
-4. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
-5. Click **Save integration**.
-6. [Optional]After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
-   1. From the top-left corner, under the partner name, click the app name to open the list of apps.
-   2. Select a different app from the drop-down list.
-   3. Repeat the <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#integration-tab">integration steps</Anchor> for the selected app.
+3. [Opcional] Haz clic en el icono **Agregar condición** <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png" width="30px" /> para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer las condiciones</Anchor> de un evento.
+4. Establece la **ventana de postback de eventos in-app**, si es necesario (lee más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app"> configuración de la ventana de postback de eventos in-app</Anchor>).
+5. Haz clic en **Guardar integración**.
+6. [Opcional] Después de guardar la integración, desde la página de configuración, puedes integrar más de tus aplicaciones con el partner:
+   1. En la esquina superior izquierda, debajo del nombre del socio, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
+   2. Selecciona una aplicación diferente en la lista desplegable.
+   3. Repite los <Anchor target="_blank" href="/marketers/es/docs/amazon-ads-campaign-configuration#integration-tab">pasos de integración</Anchor> para la aplicación seleccionada.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> For iOS apps only: Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Privacy (for iOS 14.5+ and later)** <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy">toggle state</Anchor>.
+> Solo para aplicaciones de iOS: Tu control sobre los datos compartidos con el partner a través de postbacks y <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">reportes</Anchor> depende del **estado del selector <Anchor target="_blank" href="/marketers/es/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy">Privacidad avanzada (para iOS 14.5+ y posteriores)</Anchor>**.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>. **To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para atribuir campañas específicas, conjuntos de anuncios o anuncios individuales, tanto para campañas de UA como de retargeting. Puedes usar un enlace de plataforma única o <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>. <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Obtén más información sobre la estructura y los parámetros del enlace de atribución</Anchor>. **Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costo">
 
-Cost data isn't available for Avow GmbH.
+Avow GmbH no dispone de datos sobre el costo.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de ingresos por publicidad">
 
-Ad revenue isn't available for Avow GmbH.
+Avow GmbH no dispone de ingresos por publicidad.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-Select which permissions to grant Avow GmbH to access your data and perform various actions.
+Selecciona qué permisos otorgar a Avow GmbH para acceder a tus datos y realizar diversas acciones.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> * When the integration is <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">deactivated</Anchor> while the Permissions toggle is still turned on, permissions remain granted.
-> * Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">granting permissions</Anchor>.
+> * Cuando la integración se <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">desactiva</Anchor> mientras el selector Permisos aún está activado, se siguen otorgando permisos.
+> * Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">concesión de permisos</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="01H88VAJH3B5ESK12D3ATMMVZ8=activate-partner setting-up-amazon-dsp-integration=setting-up-avow-gmbh 01H88VAJH3VENKYVRQY5RXN63P=setting-up-avow-gmbh 01H88VAJH3BYZSXQGGZZJQ9N0C=note 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::b746d215=activate-partner-1 01H88VAJH34GP7FK1KTJGRDPM7=activate-partner-1 01H88VAJH3G5FAR7RRNDEPNGME=advanced-privacy 01H88VAJH3F2FJK5YP3M2V7RWD=general-settings h_01HA6PNN6RJYTNXRAS3M9EA4M4=install-attribution 01H88VAJH3WE9Z0971WMBRBJRS=default-postbacks inapp-event-settings=in-app-event-settings h_01HA79D908WB6G9FFDKDJNVHEM=in-app-event-settings inapp-event-postbacks=in-app-event-postbacks 01H88VAJH3AS37MVF75GANWX4B=in-app-event-postbacks 01H88VAJH36MYZ9W1YPWA92Z1Z=note-1 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=note-2" />
+<div data-zendesk-anchors="activate-partner=activar-partner 01H88VAJH3B5ESK12D3ATMMVZ8=activar-partner setting-up-amazon-dsp-integration=configuraci%C3%B3n-de-avow-gmbh 01H88VAJH3VENKYVRQY5RXN63P=configuraci%C3%B3n-de-avow-gmbh 01H88VAJH3BYZSXQGGZZJQ9N0C=nota 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::b746d215=activar-partner-1 01H88VAJH34GP7FK1KTJGRDPM7=activar-partner-1 advanced-privacy=privacidad-avanzada 01H88VAJH3G5FAR7RRNDEPNGME=privacidad-avanzada general-settings=configuraci%C3%B3n-general 01H88VAJH3F2FJK5YP3M2V7RWD=configuraci%C3%B3n-general install-attribution=atribuci%C3%B3n-de-instalaci%C3%B3n h_01HA6PNN6RJYTNXRAS3M9EA4M4=atribuci%C3%B3n-de-instalaci%C3%B3n default-postbacks=postbacks-predeterminados 01H88VAJH3WE9Z0971WMBRBJRS=postbacks-predeterminados inapp-event-settings=configuraci%C3%B3n-de-eventos-in-app h_01HA79D908WB6G9FFDKDJNVHEM=configuraci%C3%B3n-de-eventos-in-app inapp-event-postbacks=postbacks-de-eventos-in-app 01H88VAJH3AS37MVF75GANWX4B=postbacks-de-eventos-in-app 01H88VAJH36MYZ9W1YPWA92Z1Z=nota-1 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=nota-2" />

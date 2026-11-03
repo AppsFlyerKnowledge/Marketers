@@ -1,5 +1,5 @@
 ---
-title: '[Legacy] Set up organic search attribution'
+title: '[Legacy] Configura la atribución de búsqueda orgánica'
 deprecated: true
 metadata:
   keywords:
@@ -18,40 +18,41 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-04-28T06:35:08Z'
-  edited_at: '2025-04-05T12:55:18Z'
+  edited_at: '2026-08-12T11:56:22Z'
   id: 210195193
-  locale: en-us
+  locale: es
   section: Attribution concepts
   section_id: 6551394235409
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/210195193--Legacy-Set-up-organic-search-attribution
+  url: https://support.appsflyer.com/hc/es/articles/210195193
 ---
-> **At a glance:** Get detailed organic search attribution data so you can optimize organic conversions. <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">See our updated organic search attribution method</Anchor>.
+> **En resumen:** Obtén datos detallados de atribución de búsqueda orgánica para que puedas optimizar las conversiones orgánicas. <Anchor target="_blank" href="/marketers/es/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Consulta nuestro método actualizado de atribución de búsqueda orgánica</Anchor>.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> We recommend implementing our <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">updated organic search attribution method</Anchor>.
+> Te recomendamos implementar nuestro <Anchor target="_blank" href="/marketers/es/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">método actualizado de atribución de búsqueda orgánica</Anchor>.
 
-## Organic search attribution
+## Atribución de búsqueda orgánica
 
-Organic search attribution is an innovative attribution solution that allows AppsFlyer customers to attribute mobile app opens of users who already have your app installed to organic search.
+La atribución de búsqueda orgánica es una innovadora solución de atribución que permite a los clientes de AppsFlyer atribuir las aperturas de aplicaciones móviles de usuarios que ya tienen tu aplicación instalada a la búsqueda orgánica.
 
-Use organic search attribution to attribute these existing users who re-engage with your app after an organic web search.
+Usa la atribución de búsqueda orgánica para atribuir a estos usuarios existentes que vuelven a interactuar con tu aplicación después de una búsqueda web orgánica.
 
-#### FLOW
+#### FLUJO
 
 ![Organic_SEO_attribution_flow.png](https://files.readme.io/1772808df9d9e521204153d9f0689b3f9f156dd8c0ab8555673b1d321f28aece-15320495862545.png)
 
-1. A user searches for a term (for example “mens shoes”) on their mobile browser search engine (Google, Bing, etc.). The search engine displays several clickable results.
-2. Some of these search results are mapped by your web developer to open your mobile open using Android App Links and iOS Universal Links. If a user has the app installed, when they click the search result, the app opens (without redirecting to an app store first).
-3. Upon app launch, AppsFlyer collects the required information and is able to attribute the app open to your configured media source (for example search\_engine).
-4. If the user doesn’t have the app installed, they are sent to a web landing page, where you can use any of several AppsFlyer web-to-app solutions (like Smart Banners, Smart Script, or QR codes) to redirect and attribute them.
+1. Un usuario busca un término (por ejemplo, «zapatos de hombre») en el motor de búsqueda de su navegador móvil (Google, Bing, etc.). El motor de búsqueda muestra varios resultados en los que se puede hacer clic.
+2. Tu desarrollador web asigna algunos de estos resultados de búsqueda para que abran tu aplicación móvil mediante Android App Links y iOS Universal Links. Si un usuario tiene la aplicación instalada, cuando hace clic en el resultado de la búsqueda, la aplicación se abre (sin redireccionar primero a una tienda de aplicaciones).
+3. Al iniciar la aplicación, AppsFlyer recopila la información requerida y puede atribuir la apertura de la aplicación a la fuente de medios que hayas configurado (por ejemplo, search\_engine).
+4. Si el usuario no tiene la aplicación instalada, se envía a una landing page web, donde puedes usar cualquiera de varias soluciones de la web a la aplicación de AppsFlyer (como Smart Banners, Smart Script o códigos QR) para redireccionarlo y atribuirlo.
 
-**To set up attribution**:
+**Para configurar la atribución**:
 
-1. Give your app Android and iOS app developers the domain associated with your app. For Android, this means the domain with Android App Links configured to open the app for existing users. And for iOS, this means the domain with Universal Links is configured to open the app for existing users.
-2. Tell the developers what value to use for the media source (`pid`) parameter. For example: search\_engine.
-3. Tell your developers to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_organic_search_attr">Android</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_organic_search_attr">iOS</Anchor> organic search attribution instructions.  
-   Any installs from organic searches will display with the media source value you chose. For example: search\_engine.
+1. Indica a los desarrolladores de apps de Android e iOS de tu aplicación cuál es el dominio asociado a tu aplicación. En Android, esto significa el dominio con App Links de Android configurados para abrir la aplicación a los usuarios existentes. Y en iOS, esto significa que el dominio con Universal Links está configurado para abrir la aplicación a los usuarios existentes.
+2. Indica a los desarrolladores qué valor deben usar para el parámetro de fuente de medios (`pid`). Por ejemplo: search\_engine.
+3. Indica a tus desarrolladores que sigan las instrucciones de atribución de búsqueda orgánica para <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_organic_search_attr">Android</Anchor> e <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_organic_search_attr">iOS</Anchor>.  
+   Las instalaciones procedentes de búsquedas orgánicas se mostrarán con el valor de fuente de medios que hayas elegido. Por ejemplo: search\_engine.
 
-**Tip!** Learn about <Anchor target="_blank" href="https://gs.statcounter.com/search-engine-market-share">search engine usage breakdown by geo</Anchor>
+**Consejo!** Más información sobre el <Anchor target="_blank" href="https://gs.statcounter.com/search-engine-market-share">desglose del uso de motores de búsqueda por geolocalización</Anchor>
+
+<div data-zendesk-anchors="organic-search-attribution=atribuci%C3%B3n-de-b%C3%BAsqueda-org%C3%A1nica flow=flujo" />

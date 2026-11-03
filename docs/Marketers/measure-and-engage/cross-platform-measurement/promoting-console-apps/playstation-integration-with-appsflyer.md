@@ -1,5 +1,5 @@
 ---
-title: PlayStation integration with AppsFlyer
+title: Integración de PlayStation con AppsFlyer
 metadata:
   keywords:
     - CTV
@@ -13,76 +13,75 @@ x-zendesk:
     - Marketers
     - PC & Console Attribution
   created_at: '2022-11-03T15:12:14Z'
-  edited_at: '2026-09-15T07:20:35Z'
+  edited_at: '2026-09-16T00:20:46Z'
   id: 10342860530961
-  locale: en-us
+  locale: es
   section: Promoting Console apps
   section_id: 15329052471057
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/10342860530961-PlayStation-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/10342860530961
 ---
-> **At a glance:** Learn how to integrate your PlayStation app with AppsFlyer and how to measure ads that run on PlayStation.
+> **At a glance:** Descubre cómo integrar tu aplicación de PlayStation con AppsFlyer y cómo medir los anuncios que se ejecutan en PlayStation.
 
-This article covers two related but distinct integrations.
+Este artículo abarca dos integraciones relacionadas, pero distintas.
 
-* [Integrate your PlayStation app with AppsFlyer](#integrate-your-playstation-app-with-appsflyer): receive attribution and event data for your PlayStation app, regardless of where your users come from.
-* [Measure ads that run on PlayStation](#measure-ads-that-run-on-playstation): activate the PlayStation Ads integration to measure ads that run on PlayStation consoles and drive installs of your app.
+* [Integra tu aplicación de PlayStation con AppsFlyer](#integra-tu-aplicación-de-playstation-con-appsflyer): recibe datos de atribución y de eventos de tu aplicación de PlayStation, independientemente de dónde procedan tus usuarios.
+* [Mide los anuncios que se ejecutan en PlayStation](#mide-anuncios-que-se-publican-en-playstation): activa la integración de PlayStation Ads para medir los anuncios que se ejecutan en las consolas PlayStation e impulsar las instalaciones de tu aplicación.
 
-## Integrate your PlayStation app with AppsFlyer
+## Integra tu aplicación de PlayStation con AppsFlyer
 
-The PlayStation OS for console and CTV (Connected TV) apps runs across all PlayStation devices.
+El sistema operativo de PlayStation para las apps de consola y CTV (Connected TV) se ejecuta en todos los dispositivos PlayStation.
 
-Apps running on PlayStation can integrate with AppsFlyer via S2S (server-to-server) API to receive attribution data and performance measurements about which sources and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+Las aplicaciones que se ejecutan en PlayStation pueden integrarse con AppsFlyer a través de la API S2S (server-to-server) para recibir datos de atribución y mediciones de rendimiento sobre qué fuentes y campañas impulsan la apertura de la aplicación y los eventos in-app. Los marketers confían en estos insights para medir y optimizar las actividades de marketing.
 
-The PlayStation API integration supports:
+La integración de la API de PlayStation admite:
 
 * PlayStations.
-* Attribution and event recording for PlayStation apps, which means attribution and recording on a user's PlayStation device.
+* Atribución y registro de eventos para aplicaciones de PlayStation, lo que significa atribución y registro en el dispositivo PlayStation de un usuario.
 
-### Example attribution flow
+### Ejemplo de flujo de atribución
 
-The following is an example flow that highlights the most important steps in a user journey from ad engagement to attribution. It includes the AppsFlyer-recommended cross-platform landing page. **Note**: While we recommend using the cross-platform landing page, you can also use direct attribution links.
+El siguiente es un flujo de ejemplo que destaca los pasos más importantes del viaje de un usuario, desde la interacción con el anuncio hasta la atribución. Incluye la página de inicio multiplataforma recomendada por AppsFlyer. **Nota**: Si bien recomendamos usar la landing page multiplataforma, también puedes usar enlaces de atribución directa.
 
-<Image alt="Diagram of the attribution flow from a marketing touchpoint through a cross-platform landing page to installing a PlayStation app" src="https://files.readme.io/eaa57bd6977d5eae5dff2d135bc80e847040103eacb00dff6add79e02b450763-small-49667524948369.jpg" width="3938px" />
+<Image alt="Diagrama del flujo de atribución desde un punto de contacto de marketing, a través de una landing page multiplataforma, hasta la instalación de una aplicación de PlayStation" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" width="3938px" />
 
-1. <span id="marketing-touchpoint"></span>Marketing touchpoints: Customers interact with your brand through online or offline channels. These can include email and newsletters, social media, mobile web, and more.
-2. Game landing page: A game landing page directs customers to your download app page. This step is important for collecting UTM (Urchin Tracking Module) and other URL parameters to attribute customers from the click/install to the original media sources or to your owned media sources.  
-   The landing page is also useful because it provides links to the various platforms your game supports. For example, you can also have links to your Xbox, Microsoft Store, and Steam page on your landing page.
-3. App page: This is the URL to your PlayStation app page that hosts your app for customers to download.
-4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
+1. <span id="marketing-touchpoint"></span>Puntos de contacto de marketing: Los clientes interactúan con tu marca a través de canales online u offline. Estos pueden incluir el correo electrónico y los boletines informativos, las redes sociales, la web móvil y más.
+2. Página de inicio del juego: La página de inicio del juego dirige a los clientes a la página de descarga de su aplicación. Este paso es importante para recopilar UTM (Urchin Tracking Module) y otros parámetros de URL a fin de atribuir a los clientes desde el clic o la instalación hasta las fuentes de medios originales o tus medios propios.  
+   La landing page también es útil porque proporciona enlaces a las distintas plataformas compatibles con el juego. Por ejemplo, también puedes tener enlaces a tu Xbox, tienda de Microsoft y página de Steam en tu página de destino.
+3. Página de la aplicación: Esta es la URL de la página de tu aplicación de PlayStation que aloja tu aplicación para que los clientes la descarguen.
+4. Instalación del juego: El usuario instala el juego, lo que activa la atribución y la grabación de eventos y sesiones en la aplicación.
 
-### Integration procedures
+### Procedimientos de integración
 
-The following table lists the tasks required to integrate your PlayStation app with AppsFlyer.
+En la siguiente tabla se enumeran las tareas necesarias para integrar tu aplicación PlayStation con AppsFlyer.
 
-| Task | Actions | Who's involved |
+| Tarea | Acciones | ¿Quiénes están involucrados? |
 | --- | --- | --- |
-| App setup | <ul><li><Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Create an AppsFlyer account</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/user-management">Add account users with appropriate permissions</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">Add your PlayStation app to AppsFlyer</Anchor></li></ul> | Marketer |
-| API integration with your app (via S2S) | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview">Integrate the AppsFlyer API</Anchor> into your app with commands to report the following events to AppsFlyer.<ul><li>First opens</li><li>In-app events</li><li>Sessions</li></ul>**Note**:<ul><li>Report the first app open event before in-app events and sessions.</li><li>For the `device_ids` parameter, select the type `custom`.<ul><li>The `custom` generated ID for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id">first opens</Anchor> must match the ID you use for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id">in-app events</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_session-app-platform-app-id">sessions</Anchor>.</li></ul></li><li>Send events using the API. Tell your developer which events to send. When you set up the API, verify that you've mapped the events you want to send to AppsFlyer.</li><li>The `psid` device ID type is intended for use as an advertising ID. At the moment, PlayStation does not support advertising ID matching, so there is no need to use this device ID type.</li><li>We recommend sharing the `psn_uid`, which is the PlayStation account ID in the `customer_user_id` field. Make sure to anonymize the value before sharing it.</li></ul>To report owned media engagements, integrate the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">impression engagement API.</Anchor> | App developer |
-| Cross-platform landing page setup | **Recommended**: A cross-platform landing page running the AppsFlyer Smart Script lets you perform web-to-app attribution. It's recommended when your campaign promotes an app that's also available on other platforms, like Epic and Native PC.<br /><br /><Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Learn about cross-platform landing pages</Anchor><br /><br /><Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Learn how to set up a cross-platform landing page</Anchor><br /><br />**Note**:<br /><br />For PlayStation, the following parameters are required:<ul><li>**platform**: playstation</li><li>**app\_id**: The ID of the app</li><li>**media\_source**</li></ul>The following parameters are not required but recommended:<ul><li>**campaign**</li><li>**ad**</li><li>**ad\_set**</li></ul> | Marketer (may require developer assistance) |
-| Link setup | If you don't use a cross-platform landing page, you can create direct attribution links to place behind ads.<br /><br /><Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor> | Marketer |
-| Report setup/view data | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor> | Marketer/Data engineer |
+| Configuración de la aplicación | <ul><li><Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Crear una cuenta AppsFlyer</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/user-management">Añadir usuarios de cuenta con los permisos adecuados</Anchor></li><li><Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">Añade tu aplicación de PlayStation a AppsFlyer</Anchor></li></ul> | Comercializador |
+| Integración API con tu aplicación (a través de S2S) | <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview">Integra la API de AppsFlyer</Anchor> en tu aplicación con comandos para informar de los siguientes eventos a AppsFlyer.<ul><li>Primeras aperturas</li><li>Eventos dentro de la aplicación</li><li>Sesiones</li></ul>**Nota**:<ul><li>Reporta el evento de primera apertura de la aplicación antes de los eventos in-app y las sesiones.</li><li>Para el `device_ids` parámetro, seleccione el tipo `custom`.<ul><li>El ID generado `personalizado` para las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id">primeras aperturas</Anchor> debe coincidir con el ID que usas para los <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id">eventos in-app</Anchor> y las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_session-app-platform-app-id">sesiones</Anchor>.</li></ul></li><li>Envía eventos usando la API. Dile a tu desarrollador qué eventos debe enviar. Cuando configures la API, verifica que has mapeado los eventos que quieres enviar a AppsFlyer.</li><li>El tipo de ID de dispositivo `psid` está pensado para usarse como ID de publicidad. Por el momento, PlayStation no admite la coincidencia de ID de publicidad, por lo que no es necesario usar este tipo de ID de dispositivo.</li><li>Te recomendamos compartir el `psn_uid`, que es el ID de la cuenta de PlayStation, en el campo `customer_user_id`. Asegúrate de anonimizar el valor antes de compartirlo.</li></ul>Para informar sobre engagements con medios propios, integra la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">API de engagement con impresiones.</Anchor> | Tu desarrollador de aplicaciones |
+| Configuración de la landing page multiplataforma | **Recomendado**: La landing page multiplataforma que ejecuta AppsFlyer Smart Script te permite realizar atribución web-to-app. Se recomienda cuando tu campaña promociona una aplicación que también está disponible en otras plataformas, como Epic y Native PC.<br /><br /><Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Más información sobre las landing pages multiplataforma</Anchor><br /><br /><Anchor target="_blank" href="/marketers/es/docs/cross-platform-landing-pages-with-smart-script">Más información sobre cómo configurar una landing page multiplataforma</Anchor><br /><br />**Nota**:<br /><br />Para PlayStation, se requieren los siguientes parámetros:<ul><li>**plataforma**: playstation</li><li>**app\_id**: El ID de la aplicación</li><li>**fuente\_de\_medios**</li></ul>Los siguientes parámetros no son obligatorios pero sí recomendados:<ul><li>**campaña única**</li><li>**anuncio**</li><li>**ad\_set**</li></ul> | Marketer (puede requerir la asistencia del desarrollador) |
+| Configuración del enlace | Si no utilizas una landing page multiplataforma, puedes crear enlaces de atribución directos para colocarlos detrás de los anuncios.<br /><br /><Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor> | Comercializador |
+| Configuración/visualización de datos de reportes | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Obtén más insights sobre la disponibilidad de datos en dashboards y reportes</Anchor> | Marketer/Ingeniero de datos |
 
-## Measure ads that run on PlayStation
+## Mide anuncios que se publican en PlayStation
 
-AppsFlyer supports measurement for ads that run on PlayStation consoles and drive installs of your PlayStation app. This flow is separate from the general integration in [Integration procedures](#integration-procedures) above, it only applies if PlayStation is also one of your ad sources, and it's available to advertisers who already have an active PlayStation app set up in AppsFlyer.
+AppsFlyer admite la medición de anuncios que se publican en consolas PlayStation y generan instalaciones de tu aplicación de PlayStation. Este flujo es independiente de la integración general de [Procedimientos de integración](#procedimientos-de-integración) anterior. Solo se aplica si PlayStation también es una de tus fuentes de anuncios y está disponible para anunciantes que ya tengan una aplicación de PlayStation activa configurada en AppsFlyer.
 
-To run and measure PlayStation ads:
+Para ejecutar y medir anuncios de PlayStation:
 
-1. **Create an attribution link.** Follow the guidelines in <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">CTV, PC, and console platform direct attribution links</Anchor>, and set the platform value to `playstation`.
-2. **Send the link to PlayStation.** Ask your PlayStation ads management team to place the attribution link in your ads.
-3. **Activate the PlayStation Ads integration in AppsFlyer.** Use partner ID `playstation_int`. For the general activation steps, see <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">Set up an integrated partner</Anchor>.
-4. **View the results in AppsFlyer.** Performance appears in your standard AppsFlyer dashboards and reports, attributed to the PlayStation media source.
+1. **Crea un enlace de atribución.** Sigue las directrices de <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">enlaces de atribución directa para plataformas de CTV, PC y consolas</Anchor> y establece el valor de la plataforma en `playstation`.
+2. **Envía el enlace a PlayStation.** Pide a tu equipo de gestión de anuncios de PlayStation que incluya el enlace de atribución en tus anuncios.
+3. **Activa la integración de anuncios de PlayStation en AppsFlyer.** Usa el ID de partner `playstation_int`. Para consultar los pasos generales de activación, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">Configurar un partner integrado</Anchor>.
+4. **Consulta los resultados en AppsFlyer.** La performance aparece en tus dashboards y reportes estándar de AppsFlyer, atribuida a la fuente de medios de PlayStation.
 
-> 🚧 **Important**
+> 🚧 **Importante**
 >
-> At this stage, you can't share signals, such as conversions, events, or postbacks, back to the PlayStation ads team. Measurement data stays in AppsFlyer and isn't sent back to PlayStation for optimization.
+> En esta fase, no puedes compartir señales, como conversiones, eventos o postbacks, con el equipo de anuncios de PlayStation. Los datos de medición permanecen en AppsFlyer y no se envían de vuelta a PlayStation para su optimización.
 
-### Sample attribution links
+### Ejemplos de enlaces de atribución
 
-The following are sample click and impression attribution links for PlayStation.
+A continuación tienes ejemplos de enlaces de atribución de clics e impresiones para PlayStation.
 
-**Click**
+**Clic**
 
 ```
 https://engagements.appsflyer.com/v1.0/s2s/click/app/playstation/10000000
@@ -92,7 +91,7 @@ https://engagements.appsflyer.com/v1.0/s2s/click/app/playstation/10000000
 &af_campaign={campaign_name}
 ```
 
-**Impression**
+**Impresión**
 
 ```
 https://engagements.appsflyer.com/v1.0/s2s/impression/app/playstation/10000000
@@ -102,22 +101,22 @@ https://engagements.appsflyer.com/v1.0/s2s/impression/app/playstation/10000000
 &af_campaign={campaign_name}
 ```
 
-| Placeholder | Type | Meaning |
+| Marcador de posición | Tipo | Significado |
 | --- | --- | --- |
-| 10000000 | Path parameter | The advertiser's PlayStation app ID in AppsFlyer. Replace with the real app ID, with no platform prefix. |
-| s2s / c2s | Path parameter | Whether the request is sent server-to-server (s2s) or client-to-server (c2s). Replaces the s2s segment shown in the example URLs above. The PlayStation Ads team decides which one applies. |
-| `{campaign_id}` | Query parameter | Campaign ID, populated by PlayStation. |
-| `{campaign_name}` | Query parameter | Campaign name, populated by PlayStation. |
-| `{USER_IP}` | Query parameter | End-user IP address, populated by PlayStation. |
+| 10000000 | Parámetro de ruta | El App ID de la aplicación de PlayStation del anunciante en AppsFlyer. Sustitúyelo por el App ID real, sin prefijo de plataforma. |
+| s2s / c2s | Parámetros de ruta | Indica si la solicitud se envía de servidor a servidor (s2s) o de cliente a servidor (c2s). Sustituye el segmento s2s que se muestra en las URL de ejemplo anteriores. El equipo de anuncios de PlayStation decide cuál corresponde. |
+| `{campaign_id}` | Parámetro de consulta | ID de campaña, completado por PlayStation. |
+| `{campaign_name}` | Parámetro de consulta | Nombre de la campaña, completado por PlayStation. |
+| `{USER_IP}` | Parámetro de consulta | Dirección IP del usuario final, completada por PlayStation. |
 
-## Traits and limitations
+## Especificaciones y limitaciones
 
-| Trait | Description |
+| Caducado | Descripción |
 | --- | --- |
-| Cost data | Send cost data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Ad Spend Ingestion</Anchor>, using the upload file by email method. |
+| Datos de costo | Envía los datos de costo mediante <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Ad Spend Ingestion</Anchor>, usando el método de carga de archivos por correo electrónico. |
 
-> 📄 **See also**
+> 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">CTV, PC, and console platform overview</Anchor>
+> * <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Resumen general de la plataforma de CTV, PC y consola</Anchor>
 
-<div data-zendesk-anchors="01H7Z1HPD0AB0VP6REMBF2HCR8=integrate-your-playstation-app-with-appsflyer h_01HP1Q8B11P0Q8F2Z2FRDSPNDE=example-attribution-flow 01H7Z19FJ54WZ7XV91Y36EKYQ6=marketing-touchpoint 01H7Z1HPD0VAMPEHBPN8MAT3ST=integration-procedures run-and-measure-ads-on-playstation=measure-ads-that-run-on-playstation h_01M2FS60HDHKN7GZWFADVMAEKD=measure-ads-that-run-on-playstation h_01M2FS60HDVJVBNN2MGCA8CVXG=important h_01M2FS60HDQGDT1KCSGCPJAFJC=sample-attribution-links 01H7Z1HPD0CS7CTX2KS2RVD3VA=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />
+<div data-zendesk-anchors="integrate-your-playstation-app-with-appsflyer=integra-tu-aplicaci%C3%B3n-de-playstation-con-appsflyer 01H7Z1HPD0AB0VP6REMBF2HCR8=integra-tu-aplicaci%C3%B3n-de-playstation-con-appsflyer example-attribution-flow=ejemplo-de-flujo-de-atribuci%C3%B3n h_01HP1Q8B11P0Q8F2Z2FRDSPNDE=ejemplo-de-flujo-de-atribuci%C3%B3n 01H7Z19FJ54WZ7XV91Y36EKYQ6=marketing-touchpoint 01H7Z1HPD0VAMPEHBPN8MAT3ST=procedimientos-de-integraci%C3%B3n run-and-measure-ads-on-playstation=mide-anuncios-que-se-publican-en-playstation h_01M2FS60HDHKN7GZWFADVMAEKD=mide-anuncios-que-se-publican-en-playstation h_01M2FS60HDVJVBNN2MGCA8CVXG=importante sample-attribution-links=ejemplos-de-enlaces-de-atribuci%C3%B3n h_01M2FS60HDQGDT1KCSGCPJAFJC=ejemplos-de-enlaces-de-atribuci%C3%B3n traits-and-limitations=especificaciones-y-limitaciones 01H7Z1HPD0CS7CTX2KS2RVD3VA=especificaciones-y-limitaciones h_01HE0T79YSNWGB3W4S7WEBW1B5=consulta-tambi%C3%A9n" />

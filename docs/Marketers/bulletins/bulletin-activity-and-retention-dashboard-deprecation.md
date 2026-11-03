@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Activity and Retention dashboard deprecation'
+title: 'Boletín: desuso del dashboard de actividad y retención'
 metadata:
   keywords:
     - Marketers
@@ -13,17 +13,16 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2025-08-06T13:20:51Z'
-  edited_at: '2026-03-19T11:42:56Z'
+  edited_at: '2026-10-20T03:54:35Z'
   id: 37857170718481
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/37857170718481-Bulletin-Activity-and-Retention-dashboard-deprecation
+  url: https://support.appsflyer.com/hc/es/articles/37857170718481
 ---
-| Section | Details |
+| Sección. | Detalles |
 | --- | --- |
-| **What’s New** | Starting October 1, 2025:<ul><li>The **Retention Dashboard** will no longer be available.</li><li>The **Activity Dashboard** will redirect to the new **Activity View** page in <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards.</Anchor></li></ul>If needed, you can still access the old Activity Dashboard by clicking **Go back to legacy activity**. |
-| **Effective Date** | October 1, 2025 |
-| **What you need to know** | As part of the transition from the Activity Dashboard to Activity View, AppsFlyer is introducing an updated flow to help ensure a smoother customer experience during the transition period.<br /><br />When you click **Activity Dashboard** under the **Analyze** tab, you will be redirected to the **Activity View**. To access the legacy Activity Dashboard, click **Go back to legacy activity**.<br /><br />Use <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor> to recreate saved views or reports currently based on the Activity or Retention dashboards. <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor> offers advanced customization and visualization options for improved insight.<br /><br />This change is part of our continuous efforts to provide a more powerful and flexible analytics experience. <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor> includes enhanced features such as:<ul><li>Customizable widget layouts</li><li>Filterable and savable views</li><li>Improved chart options</li></ul> |
-| **What you need to do** | Transition to <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor> to continue analyzing performance and retention trends. |
+| **¿Qué hay de nuevo?** | A partir del 1 de octubre de 2025:<ul><li>El **Dashboard de retención** dejará de estar disponible.</li><li>El **dashboard de actividad** te redirigirá a la nueva página **Activity View** en <Anchor target="_blank" href="/marketers/es/docs/my-dashboards">My Dashboards.</Anchor></li></ul>Si lo necesitas, puedes seguir accediendo al dashboard de actividad anterior haciendo clic en **Go back to legacy activity**. |
+| **Fecha de entrada en vigor** | 1 de octubre de 2025 |
+| **Lo que debes saber:** | Como parte de la transición del dashboard de actividad a Activity View, AppsFlyer está implementando un flujo actualizado para ayudar a garantizar una experiencia del cliente más fluida durante el periodo de transición.<br /><br />Cuando hagas clic en **Activity Dashboard** en la pestaña **Analizar**, se te redirigirá a **Activity View**. Para acceder al dashboard de actividad heredado, haz clic en **Go back to legacy activity**.<br /><br />Utiliza <Anchor target="_blank" href="/marketers/es/docs/my-dashboards">My Dashboards</Anchor> para recrear vistas o reportes guardados que actualmente se basan en los dashboards de actividad o retención. <Anchor target="_blank" href="/marketers/es/docs/my-dashboards">My Dashboards</Anchor> ofrece opciones avanzadas de personalización y visualización para obtener mejores insights.<br /><br />Este cambio es parte de nuestros esfuerzos continuos para proporcionar una experiencia de análisis más potente y flexible. <Anchor target="_blank" href="/marketers/es/docs/my-dashboards">My Dashboards</Anchor> incluye funciones mejoradas como:<ul><li>Diseños de widgets personalizables</li><li>Vistas con filtros y guardables</li><li>Opciones de gráficos mejoradas</li></ul> |
+| **Lo que debes hacer** | Cámbiate a <Anchor target="_blank" href="/marketers/es/docs/my-dashboards">My Dashboards</Anchor> para seguir analizando el rendimiento y las tendencias de retención. |

@@ -1,5 +1,5 @@
 ---
-title: Custom dashboards
+title: Paneles de control personalizados
 metadata:
   keywords:
     - custom dashboard
@@ -14,132 +14,132 @@ x-zendesk:
     - Marketers
     - Marketing Analytics
   created_at: '2016-09-15T11:06:24Z'
-  edited_at: '2026-03-18T09:05:20Z'
+  edited_at: '2026-08-12T11:50:34Z'
   id: 212750286
-  locale: en-us
+  locale: es
   section: Dashboards
   section_id: 6550925337873
-  url: https://support.appsflyer.com/hc/en-us/articles/212750286-Custom-dashboards
+  url: https://support.appsflyer.com/hc/es/articles/212750286
 ---
-> **At a glance:** Build your own customized dashboards inside AppsFlyer. You can easily select, name, and position the data in your own customized reports.
+> **En resumen:** Crea tus propios paneles de control personalizados dentro de AppsFlyer. Puedes seleccionar, nombrar y colocar fácilmente los datos en tus propios reportes personalizados.
 
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 
-## Custom Dashboards
+## Paneles de control personalizados
 
-Each custom dashboard consists of one or more widgets containing user acquisition metrics. You configure the widget using the widget wizard to select metrics, presentation format, apps, and so on.
+Cada panel de control personalizado consta de uno o más widgets que contienen métricas de adquisición de usuarios. Puedes configurar el widget utilizando el asistente del widget para seleccionar las métricas, el formato de presentación, las aplicaciones, etc.
 
-The metrics available are similar to the Overview dashboard user acquisition view metrics. Note! **Don't** compare to Overview unified **nor** retargeting view.
+Las métricas disponibles son similares a las métricas de adquisición de usuarios del panel de control general. ¡Atención! Nota: **no** lo compares con la vista general unificada **ni** con la vista de retargeting.
 
-Once a custom dashboard is defined, it's available to all users in the account.
+Una vez definido un panel de control personalizado, estará disponible para todos los usuarios de la cuenta.
 
-## Dashboard personalization
+## Personalización del panel de control
 
-You can personalize a dashboard by moving and sizing widgets.
+Puedes personalizar un panel de control moviendo y dimensionando widgets.
 
-| Personalization Option | Description |
+| Opción de personalización | Descripción |
 | --- | --- |
-| Resize widget | Drag the bottom-right corner of a widget to resize it |
-| Widget position | Drag and drop a widget to change its location in a dashboard |
-| Actions | Hover over a widget in the top-right corner, click actions. The following actions are available per widget:<ul><li>Edit</li><li>Duplicate</li><li>Delete</li><li>Export CSV</li></ul> |
+| Cambiar el tamaño del widget | Arrastra la esquina inferior derecha de un widget para cambiar su tamaño. |
+| Posición del widget | Arrastra y suelta un widget para cambiar su ubicación en un panel de control. |
+| Acciones | Coloca el cursor sobre un widget en la esquina superior derecha y haz clic en acciones. Las siguientes acciones están disponibles por widget:<ul><li>Editar</li><li>Duplicar</li><li>Borrar</li><li>Exportar CSV</li></ul> |
 
-## Procedures
+## Procedimientos
 
 <div id="managing-dashboards" />
 
-<Accordion title="Dashboard actions">
+<Accordion title="Acciones del panel de control">
 
-| Action | Description |
+| Acción | Descripción |
 | --- | --- |
-| Duplicate | Makes a copy of the current dashboard |
-| Rename | Change the dashboard name |
-| Export PNG | Creates and downloads a PNG file |
-| Delete | Remove the dashboard |
+| Duplicar | Realiza una copia del panel de control actual |
+| Cambiar nombre | Cambiar el nombre del panel de control |
+| Exportar PNG | Crea y descarga un archivo PNG |
+| Borrar | Eliminar el panel de control |
 
 </Accordion>
 
 <div id="add-a-custom-dashboard" />
 
-<Accordion title="Add a custom dashboard">
+<Accordion title="Agregar un panel de control personalizado">
 
-**To add a custom dashboard:**
+**Para agregar un panel de control personalizado:**
 
-1. In AppsFlyer, from the side menu, select **Analyze** > **Custom Dashboards**.  
-   A dashboard displays.
-2. Click + (Add new dashboard).
-3. Enter **Your dashboard title**.
-4. Click **Add.**
-5. Add one or more widgets as described in the section that follows.
+1. En AppsFlyer, desde el menú lateral, selecciona **Analizar**> **Paneles de control personalizados**.  
+   Aparece un panel de control.
+2. Haz clic en + (Agregar nuevo panel de control).
+3. Ingresa el **título de tu panel de control**.
+4. Haz clic en **Agregar**.
+5. Agrega uno o más widgets como se describe en la sección siguiente.
 
 </Accordion>
 
 <div id="managing-widgets" />
 
-<Accordion title="Managing widgets">
+<Accordion title="Administración de widgets">
 
-**To add a widget:**
+**Para agregar un widget:**
 
-1. Click Add widget.
-2. The widget window displays.
+1. Haz clic en Agregar widget.
+2. Aparecerá la ventana de widgets.
 
    [![WidgetConfigure_us-en.png](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)
-3. Configure the widget. Use the widget settings guide that follows.
-4. Add more widgets as required.
+3. Configura el widget. Utiliza la guía de configuración del widget que sigue.
+4. Agrega más widgets según sea necesario.
 
-**Widget settings guide**
+**Guía de configuración de widgets**
 
-| Setting | Description |
+| Configuración | Descripción |
 | --- | --- |
-| Widget type | ![WidgetType_us-en.png](https://files.readme.io/00174da67c1b5046033655aad2f0af815d5abb3229cdc7c2f225f689c8adc7d8-360015793638.png)<br /><br />Select a widget type:<ul><li>Pie chart</li><li>Bar chart</li><li>Line chart</li><li>Data table</li><li>Geo map</li><li>Metric</li><li>Funnel chart</li></ul> |
-| Description | Enter a widget description |
-| Apps | Select 1–more or all apps to include in the widget data. Note if you select all it means the top-100 apps in your account. |
-| KPIs | <ul><li>Select KPIs to display in the widget</li><li>Data table and bar chart are sorted according to the first KPI selected</li></ul> |
-| Group by | Select group by |
-| Show top | Enter the number of values to display. |
-| Pre-Covid | If selected, show data of a pre-COVID-19 date range of November 1-30, 2019. |
-| Filters | Use filters to limit data in the widget:<ul><li>**Countries (geo)**</li><li>**Media sources**</li><li>**Campaigns**</li><li>**Channels**</li></ul>Select **Exclude organic** to explicitly exclude data not attributed to a media source. |
+| Tipo de widget | ![WidgetType_us-en.png](https://files.readme.io/00174da67c1b5046033655aad2f0af815d5abb3229cdc7c2f225f689c8adc7d8-360015793638.png)<br /><br />Selecciona un tipo de widget:<ul><li>Gráfico circular</li><li>Gráfico de barras</li><li>Gráfico lineal</li><li>Tabla de datos</li><li>Geomapa</li><li>Métrica</li><li>Gráfico de embudo</li></ul> |
+| Descripción | Escribe una descripción del widget. |
+| Apps | Selecciona una, varias o todas las aplicaciones para incluir en los datos del widget. Ten en cuenta que si seleccionas todo, significa las 100 mejores aplicaciones en tu cuenta. |
+| KPIs | <ul><li>Selecciona KPI para mostrar en el widget.</li><li>La tabla de datos y el gráfico de barras se ordenan según el primer KPI seleccionado.</li></ul> |
+| Agrupar por | Selecciona agrupar por |
+| Mostrar principales | Ingresa el número de valores que deseas mostrar. |
+| Pre-Covid | Si se selecciona, se muestran datos de un intervalo de fechas previo al COVID-19, del 1 al 30 de noviembre de 2019. |
+| Filtros | Usa filtros para limitar los datos en el widget:<ul><li>**Países (geolocalización)**</li><li>**Fuentes de medios**</li><li>**campañas**</li><li>**Canales**</li></ul>Selecciona **Excluir orgánicos** para excluir explícitamente los datos no atribuidos a una fuente de medios. |
 
 </Accordion>
 
 <div id="export-widget-data" />
 
-<Accordion title="Export widget data">
+<Accordion title="Exportar datos de widgets">
 
 ![Widget_table.png](https://files.readme.io/b04e80e16d0d34946e6783103fc6fbbdf89b390842db27226b4fdba6c1f7e506-360015717057.png)
 
-**To download widget data to a CSV file**:
+**Para descargar los datos del widget a un archivo CSV**:
 
-1. Make sure the widget contains a title and data.
-2. Select **Actions** in a widget.
-3. Select **Export CSV**.  
-   The file downloads.  
-   Dates in CSV files have the format dd/mm/yyyy. You can <Anchor target="_blank" href="https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother-mso_2010/how-to-convert-ddmmyyyy-to-mmddyyyy/41119ed6-4057-4598-a44c-1ebfdf301a43">convert them to a different format</Anchor>, like mm/dd/yyyy in Excel.
+1. Asegúrate de que el widget contenga un título y datos.
+2. Selecciona **Acciones** en un widget.
+3. Selecciona **Exportar CSV**.  
+   El archivo se descarga.  
+   Las fechas en los archivos CSV tienen el formato dd/mm/aaaa. Puedes <Anchor target="_blank" href="https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother-mso_2010/how-to-convert-ddmmyyyy-to-mmddyyyy/41119ed6-4057-4598-a44c-1ebfdf301a43">convertirlas a un formato diferente</Anchor>, como mm/dd/aaaa en Excel.
 
 </Accordion>
 
-## Traits and limitations
+## Características y limitaciones
 
 <div id="traits-and-limitations::6693dfa7" />
 
-<Accordion title="Traits and limitations">
+<Accordion title="Características y limitaciones">
 
-| Trait | Remarks |
+| Caducado | Observaciones |
 | --- | --- |
-| Ad network access to report | No |
-| Agencies | Not supported |
-| Agency transparency | Yes |
-| App-specific timezone | If all apps housed in the account have the same timezone setting, data displays using the app-specific timezone. If this is not the case: data displays in UTC. |
-| App-specific currency | If all apps housed in the account have the same currency setting, data displays in app-specific currency. If this is not the case, data displays in USD. |
-| Cost data | Only available if there is at least 1 recorded install. <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports">Learn more</Anchor> |
-| Organic data | Available |
-| Non-organic data | Available |
-| eCPA | <ul><li>In Custom dashboards, the eCPA formula is: Total spend / Number of actions = eCPA</li><li>This differs from other dashboards, including Overview, where the formula is: Total spend / **unique users** who performed an action = eCPA</li></ul> |
-| Data freshness | <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">Real-time</Anchor>. Equivalent to the Overview Dashboard |
-| Account user access | Yes |
-| Limitations | <ul><li>Full page export to PDF option is not available.</li><li>Export to PNG is not supported in the following browsers: Edge, Firefox 69 (Max).</li><li>Searching for a specific campaign is limited to cases where there are less than 100 campaigns. If necessary, narrow the time period and search again.</li><li>KPI availability: User acquisition LTV KPIs are available. Retargeting, retention, activity, and Protect360 KPIs aren't available. Note! Don't compare Custom dashboard metrics to Overview unified or retargeting view metrics.</li><li>Campaign name changes aren't supported.</li></ul> |
-| Timezones | <ul><li>If all apps in the account have the same timezone name, data is displayed using the app timezone. If not, UTC will be used.</li></ul> |
-| Historical data | LTV data is available for up to 25 months (2 years + 1 month). |
+| Acceso a la red de publicidad para reportar | No |
+| Agencias | No compatible |
+| Transparencia de agencias | Sí |
+| Zona horaria específica de la aplicación | Si todas las aplicaciones alojadas en la cuenta tienen la misma configuración de zona horaria, los datos se muestran utilizando la zona horaria específica de la aplicación. Si este no es el caso: los datos se muestran en UTC. |
+| Moneda específica de la aplicación | Si todas las aplicaciones alojadas en la cuenta tienen la misma configuración de moneda, los datos se muestran en la moneda específica de la aplicación. Si este no es el caso, los datos se muestran en USD. |
+| Datos de costos | Solo están disponibles si hay al menos 1 instalación grabada. <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports">Aprender más</Anchor> |
+| Datos orgánicos | Disponible |
+| Datos no orgánicos | Disponible |
+| Costo Efectivo por Adquisición (eCPA) | <ul><li>En los paneles de control personalizados, la fórmula de eCPA es: Gasto total / Número de acciones = eCPA</li><li>Esto difiere de otros paneles de control, incluido el en resumen general, donde la fórmula es: Gasto total / **usuarios únicos** que realizaron una acción = eCPA</li></ul> |
+| Actualización de datos | <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">En tiempo real</Anchor>. Equivalente al panel de control general |
+| Acceso de usuario a la cuenta | Sí |
+| Limitaciones | <ul><li>La opción de exportación de página completa a PDF no está disponible.</li><li>La exportación a PNG no es compatible con los siguientes navegadores: Edge, Firefox 69 (máx.).</li><li>La búsqueda de una campaña específica se limita a los casos en los que hay menos de 100 campañas. Si es necesario, delimita el periodo de tiempo y vuelve a buscar.</li><li>Disponibilidad de KPI: Están disponibles los KPI LTV de adquisición de usuarios. Los KPI de retargeting, retención, actividad y Protect360 no están disponibles. ¡Atención! Nota: Nota: no compares las métricas del panel de control personalizado con las métricas de la vista general unificada o de retargeting.</li><li>No se admiten cambios de nombre de campaña.</li></ul> |
+| Zonas horarias | <ul><li>Si todas las aplicaciones de la cuenta tienen el mismo nombre de zona horaria, los datos se muestran utilizando la zona horaria de la aplicación. De lo contrario, se utilizará UTC.</li></ul> |
+| Datos históricos | Los datos de LTV están disponibles hasta 25 meses (2 años + 1 mes). |
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW1YXVNE5R4XA2T089WP4SV=custom-dashboards h_01HKW1YXVN36YFAQNHXBDS8Z50=dashboard-personalization h_01HKW1YXVNK44TB98N3S1N0B8N=procedures h_01HKW1YXVNX1J1BFHW2KMS0XEV=managing-dashboards h_01HKW1YXVNRFR7F3G3G870NPP0=add-a-custom-dashboard h_01HKW1YXVNRS55CTY4461NGEM1=managing-widgets h_01HKW1YXVN94CWPFFGWM6SYBAD=export-widget-data h_01HKW1YXVNSNAT7FGWH7BGBKH1=traits-and-limitations h_01HKW1YXVNTWXPZKD79MTPH556=traits-and-limitations::6693dfa7" />
+<div data-zendesk-anchors="custom-dashboards=paneles-de-control-personalizados h_01HKW1YXVNE5R4XA2T089WP4SV=paneles-de-control-personalizados dashboard-personalization=personalizaci%C3%B3n-del-panel-de-control h_01HKW1YXVN36YFAQNHXBDS8Z50=personalizaci%C3%B3n-del-panel-de-control procedures=procedimientos h_01HKW1YXVNK44TB98N3S1N0B8N=procedimientos h_01HKW1YXVNX1J1BFHW2KMS0XEV=managing-dashboards h_01HKW1YXVNRFR7F3G3G870NPP0=add-a-custom-dashboard h_01HKW1YXVNRS55CTY4461NGEM1=managing-widgets h_01HKW1YXVN94CWPFFGWM6SYBAD=export-widget-data traits-and-limitations=caracter%C3%ADsticas-y-limitaciones h_01HKW1YXVNSNAT7FGWH7BGBKH1=caracter%C3%ADsticas-y-limitaciones h_01HKW1YXVNTWXPZKD79MTPH556=traits-and-limitations::6693dfa7" />

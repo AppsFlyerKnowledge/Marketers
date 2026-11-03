@@ -1,5 +1,5 @@
 ---
-title: LINE Ads Platform campaign configuration
+title: Configuración de campaña de LINE Ads Platform
 metadata:
   keywords:
     - Advertisers
@@ -14,154 +14,153 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-08-10T15:26:17Z'
-  edited_at: '2026-09-09T13:00:38Z'
+  edited_at: '2026-09-11T00:24:06Z'
   id: 213050543
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (G-Q)
   section_id: 6552006535953
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/213050543-LINE-Ads-Platform-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/213050543
 ---
-> **At a glance:** LINE Ads Platform, an AppsFlyer integrated partner combines a bidding and customized targeting system. In addition to click-based mobile attribution, LINE Ads Platform also offers retargeting attribution, which you can record with AppsFlyer.
+> **En resumen:** LINE Ads Platform, un partner integrado de AppsFlyer, combina un sistema de ofertas y orientación personalizado. Además de la atribución móvil basada en clics, LINE Ads Platform también ofrece atribución de retargeting, que puedes registrar con AppsFlyer.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 
-## Setting up LINE Ads platform
+## Configurando LINE Ads platform
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Una cuenta con el Partners. Si no tienes una cuenta, contacta con el Partners para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Collaborate > Partner Integrations > Marketplace** .  
+   (**Para editar una integración existente:** Ve a la pestaña **Collaborate > Partner Integrations > Active integrations** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el Partners y selecciona **Integrate**.
+4. En la pestaña **Integración**, activa el interruptor **Activate partner**.   
+   **Nota:** El interruptor **debe permanecer activado (activo) mientras trabajes con el Partners**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de integración">
 
-The Integration Tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> As an ALL-Installs network, LINE prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to LINE. This can only be performed by the account owner.
+> Como red de TODAS las instalaciones, LINE prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluida la orgánica. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a LINE. Esto sólo lo puede realizar el propietario de la cuenta.
 
-### Activate partner
+### Activar partner
 
-On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### General settings
+### Configuración general
 
-**Account ID and App ID**
+**ID de cuenta e ID de aplicación**
 
-LINE Ads Platform connects with AppsFlyer via a unique account and app ID, LINE\_Ad\_account\_id, and LINE\_Ad\_app\_ID.  
-**To connect your LINE Ads account to AppsFlyer:**
+LINE Ads Platform se conecta con AppsFlyer a través de un LINE\_Ad\_account\_id y LINE\_Ad\_app\_ID únicos.  
+**Para habilitar la integración:** Ingresa tu <Anchor target="_blank" href="https://lineforbusiness.com/th-en/service/line-ads/manual#Tracking:~:text=Tracking%20app%20conversions">LINE\_Ad\_account\_id y LINE\_Ad\_app\_ID</Anchor>únicos.
 
-* Enter your unique **LINE\_Ad\_account\_id** and your **LINE\_Ad\_app\_ID**.   
-  See <Anchor target="_blank" href="https://lineforbusiness.com/th-en/service/line-ads/manual#Tracking:~:text=Tracking%20app%20conversions">Line Line Ads documentation on creating a business ID</Anchor>.
+* Introduce tu **LINE\_Ad\_account\_id** único y tu **LINE\_Ad\_app\_ID**.   
+  Consulta la <Anchor target="_blank" href="https://lineforbusiness.com/th-en/service/line-ads/manual#Tracking:~:text=Tracking%20app%20conversions">documentación de Line Ads sobre cómo crear un ID de empresa</Anchor>.
 
-#### Connect multiple accounts and apps
+#### Conecta varias cuentas y aplicaciones
 
-You can connect multiple Line Ads accounts and apps to AppsFlyer by manually adding an account ID or app ID parameter to an attribution link, after its creation.
+Puedes conectar varias cuentas y aplicaciones de Line Ads a AppsFlyer añadiendo manualmente un parámetro de ID de cuenta o de ID de aplicación a un enlace de atribución, después de crearlo.
 
-> 📘 **Note**
+> 📘 **Nota**
 >
-> Parameters existing in both the attribution link and under the **General settings** lead to conflicts. To avoid this, see the **Parameter priority logic** described below before adding parameters to the attribution link.
+> Los parámetros que existen tanto en el enlace de atribución como en **Configuración general** provocan conflictos. Para evitarlo, consulta la **lógica de prioridad de parámetros** que se describe más abajo antes de añadir parámetros al enlace de atribución.
 
-**Parameter priority logic**
+**Lógica de prioridad de parámetros**
 
-* When both parameter types, account ID and app ID (line\_ad\_account\_id, line\_ad\_app\_id), are included in the attribution link, any corresponding ID set in the General settings gets overridden.
-* When one of the parameter types is missing from the attribution link but has been set in the General settings, the value set in the general settings will be included for the connection.
-* When both parameter types, account ID and app ID, are missing from the General settings and attribution links, the integration may not function as intended.
+* Cuando ambos tipos de parámetros, ID de cuenta e ID de aplicación (line\_ad\_account\_id, line\_ad\_app\_id), se incluyen en el enlace de atribución, se sobrescribe cualquier ID correspondiente configurado en Configuración general.
+* Cuando falta uno de los tipos de parámetros en el enlace de atribución, pero se ha configurado en la Configuración general, el valor configurado en la Configuración general se incluirá en la conexión.
+* Cuando faltan ambos tipos de parámetros, el ID de cuenta y el ID de aplicación, tanto en la Configuración general como en los enlaces de atribución, es posible que la integración no funcione como se espera.
 
-**To connect multiple account ID and app ID parameters:**
+**Para conectar varios parámetros de ID de cuenta e ID de aplicación:**
 
-1. Set up one or more <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">attribution links</Anchor>.
-2. Add to each attribution link an account ID and app ID parameter, using lower-case letters. See the highlighted part in the example below.
+1. Configura uno o varios <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">enlaces de atribución</Anchor>.
+2. Añade a cada enlace de atribución un parámetro de ID de cuenta y uno de ID de aplicación con letras minúsculas. Consulta la parte resaltada en el ejemplo siguiente.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> An example attribution link with an account ID and app ID parameters:
+> Ejemplo de enlace de atribución con parámetros de ID de cuenta e ID de aplicación:
 >
 > ```http
 > https://app.appsflyer.com/id123456789?pid=example_int;...line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&...;redirect=false
 > ```
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to LINE Ads Platform following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+Envía postbacks automáticos a LINE Ads Platform después de las instalaciones y nuevas interacciones del usuario. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-Select **Only events attributed to this partner** for events coming only from users attributed to LINE Ads Platform.  
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to LINE Ads Platform.
+Selecciona **Solo eventos atribuidos a este partner** para eventos que provienen únicamente de usuarios atribuidos a LINE Ads Platform.  
+Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para informar a LINE Ads Platform.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section you can map your AppsFlyer events with LINE Ads Platform via postbacks.
+En esta sección puedes mapear tus eventos de AppsFlyer con LINE Ads Platform mediante postbacks.
 
-1. Enter the LINE\_Ad\_app\_ID and LINE\_Ad\_account\_id again.
-2. Toggle In-App Event Postbacks to ON.
-3. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-4. From the dropdown list select an ***SDK Event Name***.
-5. From the ***Partner Event Identifier*** dropdown list, select the corresponding option.
-6. Click ***Add Event*** to add additional Event Names.
-7. Complete the following parameters:
+1. Ingresa LINE\_Ad\_app\_ID y LINE\_Ad\_account\_id nuevamente.
+2. Activa los Postbacks de eventos in-app con el selector.
+3. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner  
+   **- Eventos atribuidos a cualquier partner u orgánico** para tener toda tu base de usuarios disponible para ser reportada al partner
+4. En la lista desplegable, selecciona un ***Nombre de evento del SDK***.
+5. Desde el ***Identificador de Evento de Partner*** lista desplegable, seleccione la opción correspondiente.
+6. Haz clic en ***Agregar evento*** para agregar nombres de eventos adicionales.
+7. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Descripción |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on LINE Ads Platform's side.  <br />Obtain the corresponding Event ID from LINE Ads Platform and set it in the text field. |
-| **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento SDK** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK integrado con tu aplicación o desde eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de Evento de Partner** | El nombre o ID único de cada evento tal como se define en el lado de la plataforma LINE Ads.  <br />Obtén el ID de evento correspondiente de LINE Ads Platform y configúralo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Cuando está marcada**: se envían todos los parámetros incluyendo el valor de ingresos (si existe en el evento). |
 
-### Custom in-app events mapping
+### Asignación de eventos in-app personalizados
 
-AppsFlyer allows you to map any custom in-app event to send to LINE, by using the CUSTOM Partner Event Identifier option.
+AppsFlyer te permite asignar cualquier evento personalizado en la aplicación para enviarlo a LINE, utilizando la opción Identificador de evento de partner PERSONALIZADO.
 
-The event name and the event value (including the event parameters) configured in the SDK are forwarded to LINE, as is.
+El nombre y el valor del evento (incluidos sus parámetros) configurados en el SDK se reenvían a Facebook, tal como están.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlace de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
-<Anchor target="_blank" href="https://lineforbusiness.com/th-en/service/line-ads/manual">Follow these instructions</Anchor> to activate the attribution link in LINE Ads Platform.
+[Sigue estas instrucciones](https://help.line.me/admanager/web/categoryId/20007423/pc) para activar el enlace de atribución en LINE Ads Platform.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de Costo">
 
-Cost data is not supported by this partner.
+Este partner no admite datos de costos.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de ingresos publicitarios">
 
-Ad Revenue is not supported by this partner.
+Este partner no admite ingresos publicitarios.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-No permission configurations are available for LINE Ads Platform.
+No hay configuraciones de permisos disponibles para LINE Ads Platform.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HKW2TJ83EZSV30XH3CM0HHB7=setting-up-line-ads-platform h_01HKW2TJ83RG7W6F2PZMAY7BXZ=integration-tab h_01HKW2TJ83VEK727ZH9FPH6TPJ=note h_01HKW2TJ83VPWD1GK99S4MY3ZB=activate-partner h_01HKW2TJ83PFS3TCPHKZ9HY5PE=general-settings h_01JAA89AWAQ4JZS3522EVZZN8D=connect-multiple-accounts-and-apps 01JB6YF9SFD2TWTZGR0RPVEBTC=note-1 01JAT9SYW9C06P185S9TWKAFM0=example h_01HKW2TJ838FFTAR7NQC9WX295=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW2TJ833VC6SGSRNJSZ53WR=in-app-events-settings custom-inapp-events-mapping=custom-in-app-events-mapping h_01HKW2TJ83GQ7SFKV6YPM49QP1=custom-in-app-events-mapping h_01HKW2TJ83JPB6DSW8Z5PCY1SC=attribution-link-tab h_01HKW2TJ839R8NS3PFHCAJGXTZ=cost-tab h_01HKW2TJ835JT0WD3GN4H3XHT5=ad-revenue-tab h_01HKW2TJ83MPGHKGEMDQQYGGJ1=permissions-tab" />
+<div data-zendesk-anchors="setting-up-line-ads-platform=configurando-line-ads-platform h_01HKW2TJ83EZSV30XH3CM0HHB7=configurando-line-ads-platform h_01HKW2TJ83RG7W6F2PZMAY7BXZ=integration-tab h_01HKW2TJ83VEK727ZH9FPH6TPJ=nota activate-partner=activar-partner h_01HKW2TJ83VPWD1GK99S4MY3ZB=activar-partner general-settings=configuraci%C3%B3n-general h_01HKW2TJ83PFS3TCPHKZ9HY5PE=configuraci%C3%B3n-general connect-multiple-accounts-and-apps=conecta-varias-cuentas-y-aplicaciones h_01JAA89AWAQ4JZS3522EVZZN8D=conecta-varias-cuentas-y-aplicaciones 01JB6YF9SFD2TWTZGR0RPVEBTC=nota-1 01JAT9SYW9C06P185S9TWKAFM0=ejemplo default-postbacks=postbacks-predeterminados h_01HKW2TJ838FFTAR7NQC9WX295=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HKW2TJ833VC6SGSRNJSZ53WR=configuraci%C3%B3n-de-eventos-in-app custom-inapp-events-mapping=asignaci%C3%B3n-de-eventos-in-app-personalizados h_01HKW2TJ83GQ7SFKV6YPM49QP1=asignaci%C3%B3n-de-eventos-in-app-personalizados h_01HKW2TJ83JPB6DSW8Z5PCY1SC=attribution-link-tab h_01HKW2TJ839R8NS3PFHCAJGXTZ=cost-tab h_01HKW2TJ835JT0WD3GN4H3XHT5=ad-revenue-tab h_01HKW2TJ83MPGHKGEMDQQYGGJ1=permissions-tab" />

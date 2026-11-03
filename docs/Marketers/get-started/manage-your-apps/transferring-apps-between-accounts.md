@@ -1,5 +1,5 @@
 ---
-title: Transferring apps between accounts
+title: Transferencia de aplicaciones entre cuentas
 metadata:
   keywords:
     - Account
@@ -20,101 +20,100 @@ x-zendesk:
     - Platform essentials
     - Agencies
   created_at: '2018-07-24T07:56:37Z'
-  edited_at: '2026-09-22T10:53:22Z'
+  edited_at: '2026-09-24T00:07:50Z'
   id: 360001336005
-  locale: en-us
+  locale: es
   section: Manage your apps
   section_id: 6551015977105
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001336005-Transferring-apps-between-accounts
+  url: https://support.appsflyer.com/hc/es/articles/360001336005
 ---
-> **At a glance:** Transfer apps between AppsFlyer accounts by following the steps described in this article (for admins of both the sender and receiver accounts).
+> **At a glance:** Transfiere aplicaciones entre cuentas de AppsFlyer siguiendo los pasos descritos en este artículo (para administradores de las cuentas del remitente y del receptor).
 
-![App transfer process animation showing the transfer wizard steps](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
+![Animación del proceso de transferencia de apps que muestra los pasos del asistente de transferencia](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
 
-## App transfer between accounts
+## Transferencia de aplicaciones entre cuentas
 
-In order to transfer an app between AppsFlyer accounts, both the sending and receiving app owners (as represented by their AppsFlyer account admins) must complete the necessary transfer prerequisites and agree to the transfer.
+Para transferir una aplicación entre cuentas de AppsFlyer, tanto los propietarios de aplicaciones que envían como los que reciben (representados por los administradores de sus cuentas de AppsFlyer) deben completar los requisitos previos de transferencia necesarios y aceptar la transferencia.
 
-### Prerequisites
+### Requisitos previos
 
-* Make sure you have emails of both the sender and the receiver's account (owner)
-* Both accounts are active. Suspended accounts can't send or receive apps.
-* Neither account has unpaid invoices
-* Transferring apps between accounts can only be done by an <Anchor target="_blank" href="/marketers/docs/user-management#account-owner">account owner</Anchor>. It can't be performed by an admin role.
-* App transfer must be to an account with a Growth or Enterprise plan. <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">Learn more</Anchor>
+* Asegúrate de tener los correos electrónicos tanto del remitente como de la cuenta del destinatario (admin).
+* Ambas cuentas están activas. Las cuentas suspendidas no pueden enviar ni recibir aplicaciones.
+* Ninguna cuenta tiene facturas sin pagar.
+* La transferencia de aplicaciones entre cuentas solo puede realizarla el <Anchor target="_blank" href="/marketers/es/docs/user-management#propietario-de-la-cuenta">propietario de la cuenta</Anchor>. No puede realizarlo un rol de administrador.
+* La transferencia de la app debe hacerse a una cuenta con un plan de Growth o Enterprise. <Anchor target="_blank" href="/marketers/es/docs/account-management-plans-payments-and-billing#appsflyer-plans">Más información</Anchor>
 
-### App transfer process
+### Proceso de transferencia de aplicaciones
 
-The following is an overview of the app transfer process:
+A continuación se muestra un resumen del proceso de transferencia de aplicaciones:
 
-1. The sender requests that AppsFlyer transfer the selected apps and enters the receiver admin's email address.
-2. The receiver is notified and agrees to receive the apps.
-3. Both sender and receiver admins receive notice of the pending transfer (by email and on the **My apps** page).   
-   **Note:** While the transfer is pending, either admin can delete the app transfer request (cancel the transfer).
-4. AppsFlyer transfers the apps. If a prerequisite is incomplete, AppsFlyer contacts the relevant party to ensure completion.
+1. El remitente solicita que AppsFlyer transfiera las aplicaciones seleccionadas e introduce la dirección de correo electrónico del administrador destinatario.
+2. El receptor es notificado y acepta recibir las aplicaciones.
+3. Tanto los administradores del remitente como los del destinatario reciben un aviso de la transferencia pendiente (por correo electrónico y en la página **Mis aplicaciones** ).   
+   **Nota:** Mientras la transferencia está pendiente, cualquiera de los administradores puede eliminar la solicitud de transferencia de la aplicación (cancelar la transferencia).
+4. AppsFlyer transfiere las aplicaciones. Si un requisito previo está incompleto, AppsFlyer se comunica con la parte correspondiente para asegurarse de que se complete.
 
-<Accordion title="App transfer scope">
+<Accordion title="Alcance de la transferencia de aplicaciones">
 
-The following table details which app features and settings are transferred. Note that the sender can, at its discretion, delete certain settings and configuration information before the transfer.
+En la siguiente tabla se detalla qué funciones y configuración de la aplicación se transfieren. Ten en cuenta que el remitente puede, a su discreción, eliminar ciertas funciones e información de configuración antes de la transferencia.
 
-<table><thead><tr><th>Item</th><th>Transferred/<br/>not transferred</th><th>Details/discretionary considerations</th></tr></thead><tbody><tr><td>App settings </td><td>Transferred</td><td><strong>Discretion:</strong> Sender can delete Firebase/GCM server key before transfer. </td></tr><tr><td rowspan="2">Integrated partners</td><td>Transferred</td><td><p>Integration, cost, and revenue configurations (including cost and revenue data)</p><p><strong>Discretion:</strong> If the receiver doesn't need integrated partners to be transferred, the sender should deactivate them and delete their configurations and credentials (including cost and ad revenue configurations).</p></td></tr><tr><td>Not transferred</td><td><p>Ad network and agency permissions</p><p>Twitter configurations and credentials</p></td></tr><tr><td>Link management</td><td>Not transferred</td><td><p>OneLink templates and links are not transferred automatically but can be transferred by your CSM. </p><p><strong>To transfer templates and links:</strong> Contact your CSM or send message to <a href="mailto:hello@appsflyer.com">hello@appsflyer.com</a>. <br/><strong>Note:</strong> Bulk links are automatically transferred along with the template.</p><ul><li>The sender can delete obsolete links before transfer.</li><li>OneLink API tokens are not transferable between accounts. You'll need to use a <a href="./managing-appsflyer-tokens" target="_blank">token</a> from your new account.</li></ul><p>The domain redirect allowlist also isn't transferred automatically. If the receiving account's allowlist doesn't already include the transferred app's domains, links using those domains will break after the transfer. Make sure to <a href="./set-up-your-domain-redirect-allowlist" target="_blank">set up the domain redirect allowlist</a> in the receiving account before or immediately after the transfer.</p></td></tr><tr><td>Push API</td><td>Transferred</td><td><p><strong>Discretion:</strong></p><ul><li>If the receiver doesn't need Push API configurations (endpoints) to be transferred, the sender should delete the settings. Otherwise, data will continue to be delivered to sender-defined endpoints.</li><li>Alternatively, the receiver can change the settings on receipt to ensure the sender doesn't receive user-level data. </li></ul></td></tr><tr><td>Smart Banners</td><td>Not transferred</td><td>Banners, Banner groups, creatives, websites are not transferred. </td></tr><tr><td>Smart Script</td><td>Not transferred</td><td>Smart Scrips that created within the AppsFlyer UI will not be available in the new account. </td></tr><tr><td>Agencies</td><td>Not transferred</td><td>Agencies lose access to the app.</td></tr><tr><td>Audiences</td><td>Not transferred</td><td>Audiences are deleted.</td></tr><tr><td>Cost import</td><td>N/A</td><td>Historical cost import files are not accessible to the receiver. This does not impact cost history. </td></tr><tr><td>Data Locker</td><td>Not transferred</td><td>App is removed from Data Locker configuration, and the sender account stops receiving app data. </td></tr><tr><td>Historical data</td><td>Transferred</td><td> </td></tr><tr><td>PBA brand bundles</td><td>Not transferred</td><td><p>Bundle is no longer available to the sender if any of its related apps are transferred. The receiver can't access PBA data.</p><p>This means that if the client needs to keep using PBA in their new account, they need to delete their web bundle before the app transfer is completed, otherwise they won't be able to create the same web bundle in their new account.</p></td></tr><tr><td>Protect360 data</td><td>Transferred</td><td><p>If an app is transferred from an account without a Protect360 asset to one that has one: </p><ul><li>Fraud detection starts only after the transfer is complete.</li><li>If the receiving account has the asset only for part of the time, fraud data is available starting from the asset's start date only, and not retroactively.</li><li>No fraud detection occurs during the transfer process.</li></ul></td></tr><tr><td>Raw &amp; aggregate data</td><td>Transferred</td><td> </td></tr><tr><td>SDK dev key</td><td>Transferred</td><td> </td></tr><tr><td>Validation rules</td><td>Transferred</td><td> </td></tr></tbody></table>
-
-</Accordion>
-
-## Transfer procedures
-
-To request the transfer of one or more apps to another AppsFlyer account, start the process, and you'll be guided by the wizard in the user interface.
-
-<Accordion title="Sender">
-
-**To submit a transfer request**:
-
-1. Contact the receiver admin:
-   1. Review and agree on the [app transfer scope](/docs/transferring-apps-between-accounts#app-transfer-scope). Make sure that you both understand what is and isn't transferred and that you both are properly prepared.
-   2. Request that the receiver provides you with the Admin email address they use in AppsFlyer.
-2. Do one of the following:
-   * To transfer one app: From the top menu bar > **My Apps** > Open app action menu (...) > Select **Transfer app**.
-   * To transfer 2 or more apps: From the top menu bar > **My Apps** > Open app action menu (...) > Select **Transfer app**.
-3. Choose the app or apps to transfer.
-4. Click **Next**.
-5. Enter the receiver Admin's email address.
-6. Click **Next**.
-7. Read and sign the terms and conditions.
-   * You and the receiver are notified (via email) that the request has been submitted successfully.
-   * You are notified (by popup) if the request requires handling by AppsFlyer.
-   * Apps appear on your **My apps** page as pending transfer to `<receiver email>`. At this stage, it is still possible to delete the request.
-
-     ![Sender's My apps page showing an app listed as pending transfer, with a Delete request option](https://files.readme.io/5e4762461afd7953657b91074054bd79a63ad5bf8a06d084ee4c655ac60088aa-360010128998.jpg)
+<table><thead><tr><th>Elemento</th><th>Transferido/<br/>no transferido</th><th>Detalles/consideraciones discrecionales</th></tr></thead><tbody><tr><td>Configuración App </td><td>Transferido</td><td> <strong>Discreción:</strong> el remitente puede eliminar la clave de servidor de Firebase/GCM antes de la transferencia. </td></tr><tr><td rowspan="2">Socios integrados</td><td>Transferido</td><td><p>Configuraciones de integración, costos e ingresos (incluyendo datos de costos e ingresos)</p><p><strong>Discreción:</strong> si el destinatario no necesita que se transfieran los partners integrados, el remitente debe desactivarlos y eliminar sus configuraciones y credenciales (incluidas las configuraciones de costo e ingresos por anuncios).</p></td></tr><tr><td>No transferido</td><td><p>Permisos de red de publicidad y agencia</p><p>Configuraciones y credenciales de Twitter</p></td></tr><tr><td>Gestión de enlaces</td><td>No transferido</td><td><p>Las plantillas y los enlaces de OneLink no se transfieren automáticamente, pero pueden ser transferidos por tu CSM. </p><p><strong>Para transferir plantillas y enlaces:</strong> ponte en contacto con tu CSM o envía un mensaje a <a href="mailto:hello@appsflyer.com">hello@appsflyer.com</a>. <br/><strong>Nota:</strong> Los enlaces masivos se transfieren automáticamente junto con la plantilla.</p><ul><li>El remitente puede eliminar enlaces obsoletos antes de la transferencia.</li><li>Los tokens de la API de OneLink no se pueden transferir entre cuentas. Tendrás que usar un <a href="./managing-appsflyer-tokens" target="_blank">token</a> de tu nueva cuenta.</li></ul><p>La lista de permitidos de redirección de dominios tampoco se transfiere automáticamente. Si la lista de permitidos de la cuenta de destino no incluye ya los dominios de la app transferida, los enlaces que usen esos dominios dejarán de funcionar después de la transferencia. Asegúrate de <a href="./set-up-your-domain-redirect-allowlist" target="_blank">configurar la lista de permitidos de redirección de dominios</a> en la cuenta de destino antes de la transferencia o inmediatamente después.</p></td></tr><tr><td>API push</td><td>Transferido</td><td><p><strong>Discreción:</strong></p><ul><li>Si el destinatario no necesita que se transfieran las configuraciones de Push API (puntos de conexión), el remitente debe eliminar la configuración. De lo contrario, los datos seguirán enviándose a los puntos de conexión definidos por el remitente.</li><li>Alternativamente, el receptor puede cambiar la configuración en la recepción para asegurarse de que el remitente no reciba datos a nivel de usuario. </li></ul></td></tr><tr><td>Banners inteligentes</td><td>No transferido</td><td>Los banners, los grupos de banners, las creatividades y los sitios web no se transfieren. </td></tr><tr><td>Script inteligente</td><td>No transferido</td><td>Los Smart Scripts creados dentro de la interfaz de usuario de AppsFlyer no estarán disponibles en la nueva cuenta. </td></tr><tr><td>Agencias</td><td>No transferido</td><td>Las agencias pierden el acceso a la aplicación.</td></tr><tr><td>Audiencias</td><td>No transferido</td><td>Las audiencias se eliminan.</td></tr><tr><td>Importación de costos</td><td>N/D</td><td>El receptor no puede acceder a los archivos de importación de costos históricos. Esto no afecta al historial de costos. </td></tr><tr><td>Casillero de datos</td><td>No transferido</td><td>La aplicación se quita de la configuración de Data Locker y la cuenta del remitente deja de recibir datos de la aplicación. </td></tr><tr><td>Historial de datos</td><td>Transferido</td><td> </td></tr><tr><td>Paquetes de marca de PBA</td><td>No transferido</td><td><p>El paquete deja de estar disponible para el remitente si se transfiere cualquiera de sus aplicaciones relacionadas. El destinatario no puede acceder a los datos de la PBA.</p><p>Esto significa que si el cliente necesita seguir usando PBA en su nueva cuenta, debe eliminar su paquete web antes de que se complete la transferencia de la aplicación, de lo contrario, no podrá crear el mismo paquete web en su nueva cuenta.</p></td></tr><tr><td>Datos de Protect 360</td><td>Transferido</td><td><p>Si una aplicación se transfiere de una cuenta sin un recurso de Protect360 a otra que sí lo tiene: </p><ul><li>La detección de fraude empieza solo cuando se completa la transferencia.</li><li>Si la cuenta de destino tiene el recurso solo durante una parte del tiempo, los datos de fraude solo estarán disponibles a partir de la fecha de inicio del recurso, y no de forma retroactiva.</li><li>No se realiza ninguna detección de fraude durante el proceso de transferencia.</li></ul></td></tr><tr><td>Raw data y datos agregados</td><td>Transferido</td><td> </td></tr><tr><td>Clave de desarrollador de SDK</td><td>Transferido</td><td> </td></tr><tr><td>Reglas de validación</td><td>Transferido</td><td> </td></tr></tbody></table>
 
 </Accordion>
 
-<Accordion title="Receiver">
+## Procedimientos de transferencia
 
-1. Contact the sender admin to review and agree on the [app transfer scope](/docs/transferring-apps-between-accounts#app-transfer-scope). Make sure that you both understand what is and isn't transferred and that you both are properly prepared.
-2. You will receive an email notification that the sender has initiated the transfer request.
-3. On the **My apps** page, click **Review request**. A request can include one or more apps.
+Para solicitar la transferencia de una o más aplicaciones a otra cuenta de AppsFlyer, inicia el proceso y el asistente te guiará en la interfaz de usuario.
 
-   ![Receiver's My apps page showing a pending app transfer request with a Review request option](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)
-4. Review and approve or reject each request.
-5. Read and, if acceptable, sign the terms and conditions.
-6. You and the sender are notified by email that the request has been accepted.
-7. Transferred apps appear on your **My apps** page.
+<Accordion title="Remitente">
+
+**Para enviar una solicitud de transferencia**:
+
+1. Ponte en contacto con el administrador remitente:
+   1. Revisa y acuerda el [alcance de la transferencia de aplicaciones](/docs/transferring-apps-between-accounts#app-transfer-scope). Asegúrate de que ambos entiendan lo que se transfiere y lo que no se transfiere y que ambos estén debidamente preparados.
+   2. Solicita que el destinatario te proporcione la dirección de correo electrónico de administrador que utiliza en AppsFlyer.
+2. Realiza una de las siguientes acciones:
+   * Para transferir una aplicación: En la barra de menú superior > **Mis aplicaciones** > Abre el menú de acciones de la aplicación (...) > Selecciona **Transferir aplicación**.
+   * Para transferir 2 o más aplicaciones: En la barra de menú superior > **Mis aplicaciones** > Abre el menú de acciones de la aplicación (...) > Selecciona **Transferir aplicación**.
+3. Elige la aplicación o aplicaciones que deseas transferir.
+4. Haz clic en **Siguiente**.
+5. Ingresa la dirección de correo electrónico del administrador destinatario.
+6. Haz clic en **Siguiente**.
+7. Lee y firma los términos y condiciones.
+   * Tú y el destinatario reciben una notificación (por correo electrónico) de que la solicitud se ha enviado correctamente.
+   * Se te notificará (mediante un pop-up) si la solicitud requiere ser manejada por AppsFlyer.
+   * Las apps aparecen en tu página **Mis aplicaciones** como pendientes de transferencia a `<receiver email>`. En esta etapa, todavía es posible eliminar la solicitud.
+
+     ![Página Mis aplicaciones del remitente que muestra una aplicación incluida como transferencia pendiente, con una opción para eliminar la solicitud](https://files.readme.io/5e4762461afd7953657b91074054bd79a63ad5bf8a06d084ee4c655ac60088aa-360010128998.jpg)
 
 </Accordion>
 
-<Accordion title="Delete transfer request">
+<Accordion title="Destinatario">
 
-Before the transfer is finalized, an app transfer process can be deleted (canceled) by either the sender or receiver admin.
+1. Ponte en contacto con el administrador remitente para revisar y acordar el [alcance de la transferencia de aplicaciones](/docs/transferring-apps-between-accounts#app-transfer-scope). Asegúrate de que ambos entiendan lo que se transfiere y lo que no se transfiere y que ambos estén debidamente preparados.
+2. Recibirás una notificación por correo electrónico de que el remitente ha iniciado la solicitud de transferencia.
+3. En la página **Mis aplicaciones**, haz clic en **Revisar solicitud**. Una solicitud puede incluir una o varias aplicaciones.
 
-**To delete an app transfer request:**
-
-* **Sender admin**: From the top menu bar > **My Apps** > **Pending transfer to [email]** section > Click **Delete request**.   
-  Both the sender and receiver admins are notified (email).
-* **Receiver admin**:
-* From the top menu bar > **My Apps** > **Apps pending transfer** section > Click **Reject**.   
-  Both the sender and receiver admins are notified (email).
+   ![Página Mis aplicaciones del destinatario que muestra una solicitud de transferencia de aplicación pendiente con una opción para revisar la solicitud](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)
+4. Revisa y aprueba o rechaza cada solicitud.
+5. Lee y, si son aceptables, firma los términos y condiciones.
+6. Tú y el remitente reciben una notificación por correo electrónico de que se ha aceptado la solicitud.
+7. Las aplicaciones transferidas aparecen en **Mis aplicaciones** .
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJR1G7Q71H5DAH1G9QFSYK35=app-transfer-between-accounts h_01HJR1G7Q7T1Q768MTTR3Y542X=prerequisites h_01HJR1G7Q7EDJZ4E1T17GWYGTP=app-transfer-process h_01HJR1G7Q7JB0XD3NGT0MWYJZ5=transfer-procedures" />
+<Accordion title="Eliminar la solicitud de transferencia">
+
+Antes de que finalice la transferencia, el administrador del remitente o del receptor puede eliminar (cancelar) un proceso de transferencia de aplicaciones.
+
+**Para eliminar una solicitud de transferencia de aplicaciones:**
+
+* **Administrador remitente**: en la barra de menú superior > **Mis aplicaciones** > sección **Transferencia pendiente a [correo electrónico]** > haz clic **Eliminar solicitud**.   
+  Se notifica tanto al administrador remitente como al destinatario (correo electrónico).
+* **Administrador del receptor**:
+* En la barra de menú superior > **Mis aplicaciones** > **Aplicaciones pendientes de transferencia** sección > haz clic **Rechazar**.   
+  Se notifica tanto al administrador remitente como al destinatario (correo electrónico).
+
+</Accordion>
+
+<div data-zendesk-anchors="app-transfer-between-accounts=transferencia-de-aplicaciones-entre-cuentas h_01HJR1G7Q71H5DAH1G9QFSYK35=transferencia-de-aplicaciones-entre-cuentas prerequisites=requisitos-previos h_01HJR1G7Q7T1Q768MTTR3Y542X=requisitos-previos app-transfer-process=proceso-de-transferencia-de-aplicaciones h_01HJR1G7Q7EDJZ4E1T17GWYGTP=proceso-de-transferencia-de-aplicaciones transfer-procedures=procedimientos-de-transferencia h_01HJR1G7Q7JB0XD3NGT0MWYJZ5=procedimientos-de-transferencia" />

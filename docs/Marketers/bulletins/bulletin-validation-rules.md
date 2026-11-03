@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Validation Rules'
+title: 'Boletín: Reglas de validación'
 metadata:
   keywords:
     - Advertisers
@@ -15,19 +15,99 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2020-11-22T09:00:27Z'
-  edited_at: '2023-10-26T17:14:38Z'
+  edited_at: '2026-10-20T03:57:06Z'
   id: 360015724037
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360015724037-Bulletin-Validation-Rules
+  url: https://support.appsflyer.com/hc/es/articles/360015724037
 ---
-<table><thead><tr><td><p><strong>What's new</strong></p></td><td><p><span>Validation Rules page has a new layout and increased functionality.<br/><br/></span></p><p><a href="https://files.readme.io/ed1bfe9c2d4a806bd1c00449f6245a965d2be4257a39076f1b33abd24ec8836a-360014789398.jpg"><img src="https://files.readme.io/ed1bfe9c2d4a806bd1c00449f6245a965d2be4257a39076f1b33abd24ec8836a-360014789398.jpg"/></a></p></td></tr></thead><tbody><tr><td><strong>Where</strong></td><td><ul><li><span>Validation Rules page </span></li><li><span>Raw data reports</span></li><li><span>Rejection postbacks</span></li></ul></td></tr><tr><td><strong>Required actions</strong></td><td><ul><li><strong><span>Who:</span></strong><span> Advertisers</span></li><li><strong><span>What:</span></strong><ul><li>Familiarize yourself with the new layout and features.</li><li><strong>No action is required for existing rules; they are automatically migrated.</strong></li><li>Advertisers with the Protect360 Premium plan should use Protect360 fraud reports for installs, in-app events, and install postbacks, instead of the Targeting validation rules reports.</li></ul></li></ul></td></tr><tr><td><strong>Effective Date</strong></td><td><p><span>December 7, 2020</span></p></td></tr><tr><td><strong>Highlights</strong></td><td><p><span>Starting on the effective date, the new layout and functionality becomes available. </span></p><p><span>Changes:</span></p><ul><li><strong><span>Rules list</span></strong><span>: The rules</span><span> page lists all the rules contained in your account.</span></li><li><strong><span>Rule builder</span></strong><span>: </span><ul><li>Multiple rule combinations are allowed.</li><li>Rules can be applied to single or multiple apps. </li><li>Rules can be applied to all sources of traffic: Organic, non-organic, agency, SRN, etc.</li><li>One rule builder for campaign targeting rules and Protect360 rules (additional options available for Protect360 customers). </li><li>Protect360 customers can also create rules to block in-app events.</li><li>New rule conditions are available. </li><li>New options for rules to either block installs or block attribution.</li><li>Installs/in-app events can be blocked by multiple rules.</li></ul></li><li><strong><span>Raw data reports</span></strong><span>:</span><br/><table><thead><tr><th rowspan="2">Targeting validation rules reports </th><th colspan="2">Where data is now available</th></tr><tr><th>With Protect360 Premium plan</th><th>Without Protect360 Premium plan</th></tr></thead><tbody><tr><td>Invalid installs</td><td><p><span>Protect360 installs raw data report</span></p></td><td><p><span>Protect360 installs raw data report</span></p></td></tr><tr><td>Invalid in-app events</td><td><p><span>Protect360 in-app events raw data report</span></p></td><td>-</td></tr><tr><td>Invalid install postbacks</td><td><span>Protect360 blocked install postback report</span></td><td><span>Protect360 blocked install postback report</span></td></tr></tbody></table><ul><li>Raw data reports contain the rule name entered by the rule creator/editor as the <span>blocked_reason_value</span>; not the rule ID.</li></ul></li><li><strong>Postbacks</strong>: Contain the rule name entered by the rule creator/editor as the <span>blocked_reason_value; not the rule ID.</span></li></ul></td></tr><tr><td><strong>What you must know</strong></td><td><ul><li>Ad networks and agencies need <a href="./set-up-an-integrated-partner#permissions-tab" target="_blank">permissions</a> to access raw data reports.</li><li>Ad networks and agencies of non-Protect360 customers are not able to access the Protect360 dashboards to view validation rule data.</li><li><span>Rules with a <strong>CTIT</strong> condition, are changed during migration to <strong>CTIT</strong> AND <strong>is_preinstalled=no</strong> AND <strong>is_deeplink=no</strong>.</span></li></ul></td></tr></tbody></table>
 
-> 📄 **See also**
+<Table>
+  <tbody>
+    <tr>
+      <td>
+        **¿Qué hay de nuevo?**
+      </td>
+      <td>
+        La página Reglas de validación tiene un nuevo diseño y más funcionalidades.
+
+        [![](https://files.readme.io/ed1bfe9c2d4a806bd1c00449f6245a965d2be4257a39076f1b33abd24ec8836a-360014789398.jpg)](https://files.readme.io/ed1bfe9c2d4a806bd1c00449f6245a965d2be4257a39076f1b33abd24ec8836a-360014789398.jpg)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Donde**
+      </td>
+      <td>
+        * Página de Reglas de validación
+        * Reportes de raw data
+        * Postbacks de rechazo
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Acciones requeridas**
+      </td>
+      <td>
+        * **Quién:** Anunciantes
+        * **Qué:**
+          * Familiarízate con el nuevo diseño y las nuevas funciones.
+          * **No tienes que hacer nada con las reglas existentes; se migran automáticamente.**
+          * Los anunciantes con el plan Protect360 premium deben usar los reportes de fraude de Protect360 para instalaciones, eventos in-app y postbacks de instalación, en lugar de los reportes de reglas de validación de targeting.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Fecha de entrada en vigor**
+      </td>
+      <td>
+        7 de diciembre de 2020
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Destaques**
+      </td>
+      <td>
+        A partir de la fecha de entrada en vigor, el nuevo diseño y la nueva funcionalidad estarán disponibles. 
+
+        Cambios:
+
+        * **Lista de reglas**: Las reglas página enumera todas las reglas contenidas en tu cuenta.
+        * **Creador de reglas**: 
+          * Se permiten varias combinaciones de reglas.
+          * Las reglas se pueden aplicar a una o varias aplicaciones.
+          * Las reglas se pueden aplicar a todas las fuentes de tráfico: orgánico, no orgánico, agencia, SRN, etc.
+          * Un único creador de reglas para las reglas de targeting de campaña y las reglas de Protect360 (con opciones adicionales para los clientes de Protect360).
+          * Los clientes de Protect360 también pueden crear reglas para bloquear eventos in-app.
+          * Hay nuevas condiciones de reglas.
+          * Nuevas opciones para que las reglas bloqueen instalaciones o la atribución.
+          * Varias reglas pueden bloquear instalaciones o eventos in-app.
+        * **Reportes de raw data**:  
+
+        <table><thead><tr><th rowspan="2">Reportes de reglas de validación de targeting </th><th colspan="2">Dónde están disponibles ahora los datos</th></tr><tr><th>Con el plan Protect360 Premium</th><th>Sin el plan Protect360 Premium</th></tr></thead><tbody><tr><td>Instalaciones inválidas</td><td><p><span>Reporte de raw data de instalaciones de Protect360</span></p></td><td><p><span>Reporte de raw data de instalaciones de Protect360</span></p></td></tr><tr><td>Eventos in-app inválidos</td><td><p><span>Reporte de raw data de eventos in-app de Protect360</span></p></td><td>-</td></tr><tr><td>Postbacks de instalaciones inválidas</td><td><span>Reporte de postbacks de instalaciones bloqueadas de Protect360</span></td><td><span>Reporte de postbacks de instalaciones bloqueadas de Protect360</span></td></tr></tbody></table>
+
+          * Los reportes de raw data contienen el nombre de la regla introducido por quien crea o edita la regla como blocked\_reason\_value; no el ID de la regla.
+        * **Postbacks**: contienen el nombre de la regla introducido por quien crea o edita la regla como blocked\_reason\_value; no el ID de la regla.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Lo que debes saber**
+      </td>
+      <td>
+        * Las ad networks y las agencias necesitan <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos</Anchor> para acceder a los reportes de raw data.
+        * Las ad networks y las agencias de clientes que no usan Protect360 no pueden acceder a los dashboards de Protect360 para ver los datos de las reglas de validación.
+        * Las reglas con una condición **CTIT**, se cambian durante la migración a **CTIT** AND **is\_preinstalled=no** AND **is\_deeplink=no**.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+> 📄 **Consulte también**
 >
-> * <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">Validation Rules for app owners</Anchor>
-> * What's new in AppsFlyer
+> * <Anchor target="_blank" href="/marketers/es/docs/implement-validation-rules-to-prevent-fraud">Reglas de validación para propietarios de aplicaciones</Anchor>
+> * Novedades en AppsFlyer
 
-<div data-zendesk-anchors="h_01HDPFM863RB69KWQ8NV0SQ5NK=see-also" />
+<div data-zendesk-anchors="h_01HDPFM863RB69KWQ8NV0SQ5NK=consulte-tambi%C3%A9n" />

@@ -1,24 +1,24 @@
 ---
-title: Creative Optimization
+title: Optimización creativa
 excerpt: >-
-  Analyze your creative performance to gain critical insights before planning,
-  selecting, or producing your next batch of creatives
+  Analiza tu rendimiento creativo para obtener insights críticos antes de
+  planificar, seleccionar o producir tu próximo lote de creatividades
 table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2022-01-30T14:12:26Z'
   id: 4419063475217
-  locale: en-us
+  locale: es
   parent_section_id: 6550901627921
   type: section
   url: >-
-    https://support.appsflyer.com/hc/en-us/sections/4419063475217-Creative-Optimization
+    https://support.appsflyer.com/hc/es/sections/4419063475217-Optimizaci%C3%B3n-creativa
 ---
-- [Creative Optimization—onboarding guide](/docs/creative-optimization-onboarding-guide)
-- [Creative Optimization guide](/docs/creative-optimization-guide)
-- [Creative Optimization Overview dashboard](/docs/creative-optimization-overview-dashboard)
-- [Creative Optimization Discovery AI dashboard](/docs/creative-optimization-discovery-ai-dashboard)
-- [Creative Optimization partner integrations](/docs/creative-optimization-partner-integrations)
-- [Creative Management](/docs/creative-management)
-- [Creative Optimization ETL reporting](/docs/creative-optimization-etl-reporting)
+- [Optimización creativa: guía de Onboarding](/docs/creative-optimization-onboarding-guide)
+- [Guía de Optimización Creativa](/docs/creative-optimization-guide)
+- [Optimización creativa: Dashboard general](/docs/creative-optimization-overview-dashboard)
+- [Optimización Creativa: Dashboard Discovery AI](/docs/creative-optimization-discovery-ai-dashboard)
+- [Optimización Creativa: integraciones de partners](/docs/creative-optimization-partner-integrations)
+- [Gestión de creatividades](/docs/creative-management)
+- [Optimización creativa: reportes de ETL](/docs/creative-optimization-etl-reporting)

@@ -1,5 +1,5 @@
 ---
-title: Recommended ride-hailing app events
+title: Eventos de aplicación recomendados para transporte privado
 metadata:
   keywords:
     - Advertisers
@@ -14,290 +14,289 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-04-29T08:42:34Z'
-  edited_at: '2023-12-04T11:56:22Z'
+  edited_at: '2026-08-12T12:01:42Z'
   id: 360019651957
-  locale: en-us
+  locale: es
   section: In-app events
   section_id: 6551285343761
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019651957-Recommended-ride-hailing-app-events
+  url: https://support.appsflyer.com/hc/es/articles/360019651957
 ---
-> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your ride-hailing app.
+> **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de transporte privado.
 
-## <Image alt="InApp_Events_ride.png" src="https://files.readme.io/3901cfcc0cc821cc9c93edbe806bc2d570698be366b76b3710cb60e9aa190d91-20659532208401.png" width="100px" /> Ride-hailing
+## <Image alt="Eventos_en_la_aplicación_paseo.png" src="https://files.readme.io/3901cfcc0cc821cc9c93edbe806bc2d570698be366b76b3710cb60e9aa190d91-20659532208401.png" width="100px" /> Servicios de transporte
 
-Ride-hailing has become very popular recently, especially in urban areas where most residents don't own a car. The typical events that we suggest recording are ride requests and bookings.
+Recientemente, las aplicaciones de transporte privado se han vuelto muy populares, en especial en zonas urbanas donde la mayoría de los residentes no tienen automóvil. Los eventos típicos que recomendamos registrar incluyen las solicitudes y reservas de viajes.
 
-Recording events can help you determine:
+Registrar estos eventos puede ayudarte a determinar:
 
-* How passengers and drivers interact
-* Countries where more people use your ride-hailing service
-* Metrics about price, rides, and ride distance
+* Cómo interactúan los pasajeros y los conductores.
+* Los países donde más personas usan tu servicio de transporte privado.
+* Las métricas relacionadas con precios, viajes y distancias de viaje.
 
-> 🚧 **Important!**
+> 🚧 **¡Importante!**
 >
-> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
-> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ride_hailing">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ride_hailing&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
+> * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
+> * Para agilizar el proceso de implementación, usa nuestro <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ride_hailing">generador de eventos in-app</Anchor>. Esta herramienta incluye todos los eventos in-app típicos que se describen en este artículo y te permite modificar los eventos de acuerdo con tus necesidades comerciales. Una vez completado, comparte el archivo con tu desarrollador.
+> * Para cada evento recomendado incluido en este artículo, hay <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ride_hailing&view=code">ejemplos de código</Anchor> para desarrolladores de iOS, Android y Unity.
+> * Puedes encontrar instrucciones detalladas para tu desarrollador en el **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">centro para desarrolladores de AppsFlyer</Anchor>.**
 >
-> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
+> Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
+[![Diagrama de flujo del recorrido del usuario en una app de transporte con conductor para eventos recomendados](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
 
-## Recommended structures for predefined events
+## Estructuras recomendadas para eventos predefinidos
 
-The following section provides a list of event structures that are typical to the ride-hailing vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que son típicas de la vertical de transporte privado. Cada estructura incluye un tipo de evento predefinido y los parámetros del evento predefinidos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="complete-registration-af_complete_registration" />
 
-<Accordion title="Complete registration (af_complete_registration)">
+<Accordion title="Registro completo (af_complete_registration)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you:
+Este evento puede ayudarte a:
 
-* Learn what sign-up method your users prefer
-* Understand how many users actually sign up after downloading and installing the app
-* See registration trends across countries to determine the countries whose users are most likely to use your app
+* Saber cuáles métodos de registro prefieren tus usuarios.
+* Determinar cuántos usuarios efectivamente se registran después de descargar e instalar la aplicación.
+* Ver las tendencias en cuanto al registro en distintos países para determinar en cuáles países es más probable que los usuarios utilicen tu aplicación
 
-**Trigger**
+**Disparador**
 
-When the user completes the signup process
+Cuando el usuario completa el proceso de registro.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_registration\_method | Platform or method through which the user signs up | Facebook |
-| country\_code | Country code (phone code) | 66 |
+| af\_registration\_method | La plataforma o el método mediante el cual se registra el usuario. | Facebook |
+| código\_de\_país | Código del país (código de teléfono) | 66 |
 
 </Accordion>
 
 <div id="login-af_login" />
 
-<Accordion title="Login (af_login)">
+<Accordion title="Acceso (af_login)">
 
-**Purpose**
+**Finalidad**
 
-Understand the retention of your registered users
+Comprender la retención de tus usuarios registrados.
 
-**Trigger**
+**Disparador**
 
-When the user successfully logs in
+Cuando el usuario accede correctamente.
 
-**Event parameters**
+**Parámetros del evento**
 
-Can be sent without any additional parameters
+Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
 
 <div id="add-payment-info-af_add_payment_info" />
 
-<Accordion title="Add payment info (af_add_payment_info)">
+<Accordion title="Agregar información de pago (af_add_payment_info)">
 
-**Purpose**
+**Finalidad**
 
-Helps you categorize users. You can:
+Te ayuda a clasificar a los usuarios. Podrás hacer lo siguiente:
 
-* Learn how long it takes a user to add their payment info
-* What payment methods are most popular, for example, credit card or eWallets
-* Set up campaigns and collaborate with popular payment method providers
+* Saber cuánto tarda un usuario en agregar su información de pago.
+* Cuáles son los métodos de pago más populares, por ejemplo, tarjeta de crédito o billeteras electrónicas
+* Configurar campañas y colaborar con los proveedores de métodos de pago más populares.
 
-**Trigger**
+**Disparador**
 
-When the user successfully adds payment info to their account
+Cuando el usuario agrega la información de pago correctamente en su cuenta.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_success | Whether the payment method is successful | true |
-| credit\_card\_type | Credit card type (optional) | Visa, Mastercard |
-| payment\_method\_type | Type of payment method | credit card, eWallet |
+| af\_success | Si el método de pago fue exitoso. | Verdadero |
+| tipo\_de\_tarjeta\_de\_crédito | Tipo de tarjeta de crédito (opcional) | Visa, Mastercard |
+| payment\_method\_type | Tipo de método de pago | tarjeta de crédito, billetera electrónica |
 
 </Accordion>
 
 <div id="spent-credits-af_spent_credits" />
 
-<Accordion title="Spent credits (af_spent_credits)">
+<Accordion title="Créditos gastados (af_spent_credits)">
 
-**Purpose**
+**Finalidad**
 
-The [Ride booking completed event](/docs/recommended-ride-hailing-app-events#ride-booking-completed-ride_booking_completed) includes a parameter named `credits_earned`. This parameter logs the credits that a passenger earns for each ride. Passengers can trade credits for vouchers and discounts.
+El evento [Finalización de reserva de viaje](/docs/recommended-ride-hailing-app-events#ride-booking-completed-ride_booking_completed) incluye un parámetro llamado `credits_earned`. Este parámetro registra los créditos que un pasajero gana por cada viaje. A continuación, los pasajeros puede canjear estos créditos por vales o descuentos.
 
-This event can help you:
+Este evento puede ayudarte a:
 
-* See how many passenger trade credits for vouchers
-* See what sort of vouchers and discounts passengers prefer
+* Ver cuántos pasajeros canjean créditos por vales.
+* Ver qué tipos de vales y descuentos prefieren los pasajeros.
 
-**Trigger**
+**Activador**
 
-When a passenger spends credits
+Cuando un pasajero gasta créditos.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_content | Type of voucher or discount | Single movie ticket |
-| credits\_used | How many credits used | 1000 |
-| credits\_remaining | How many credits left in the account | 2090 |
-| invoice\_id | ID of the invoice that is created for spending credits | KO215123SD |
+| af\_content | Tipo de cupón o descuento | Entrada de cine individual |
+| credits\_used | Cuántos créditos se usaron | 1000 |
+| créditos\_restantes | Cuántos créditos quedan en la cuenta | 2090 |
+| id\_de\_factura | El ID de la factura que se crea por gastar créditos | KO215123SD |
 
 </Accordion>
 
-## Recommended structures for custom events
+## Estructuras recomendadas para eventos personalizados
 
-The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+La siguiente sección proporciona una lista de estructuras de eventos que incluye nombres de eventos personalizados y los parámetros de eventos sugeridos para usar. Ten en cuenta que los eventos in-app pueden incluir cualquier parámetro de evento que cumpla con las necesidades de tu negocio.
 
 <div id="ride-booking-requested-ride_booking_requested" />
 
-<Accordion title="Ride booking requested (ride_booking_requested)">
+<Accordion title="Reserva de viaje solicitada (ride_booking_requested)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you:
+Este evento puede ayudarte a:
 
-* Learn about popular destinations
-* Learn about trends, where people ride to and from where
-* See the average distance of a ride
-* See what cities, regions, and countries most users come from
+* Conocer los destinos populares
+* Conocer las tendencias, adónde y desde dónde viajan las personas.
+* Ver la distancia promedio de un viaje.
+* Ver de qué ciudades, regiones y países proviene la mayor cantidad de usuarios.
 
-In addition, recording this event along with the other booking-related events can help you record successful transactions. Then, you can compare successful transactions with unsuccessful transactions. For example, you can see how many ride bookings are requested and how many ride bookings are completed or canceled.
+Además, el registro de este evento, junto con otros eventos relacionados con la reserva, puede ayudarte a registrar las transacciones correctas. Luego, podrás comparar transacciones exitosas con transacciones fallidas. Por ejemplo, podrás ver cuántas reservas de viaje se solicitan y cuántas se finalizan o se cancelan.
 
-**Trigger**
+**Activador**
 
-When the passenger created a ride-booking request
+Cuando el pasajero creó una solicitud de reserva de viaje.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Quoted price for the ride | 22.4 |
-| af\_currency | Currency | SGD |
-| af\_destination\_a | Point of departure | Plaza Singapura |
-| af\_destination\_b | Point of arrival | Marina Bay Sands |
-| distance | Distance between the two destinations | 5.2 |
-| af\_content\_type | Type of transportation | Taxi |
-| payment\_method\_type | Type of payment method | credit card, eWallet |
-| af\_city | City where the ride is booked | Singapore |
-| af\_region | Region where the ride is booked | SFA |
-| af\_country | Country where the ride is booked | Singapore |
-| order\_id | Order ID | 135790 |
+| af\_price | Precio cotizado del viaje | 22.4 |
+| af\_currency | Truemoney | SGD |
+| af\_destination\_a | Punto de partida | Plaza Singapura |
+| af\_destination\_b | Punto de llegada | Marina Bay Sands |
+| distance | La distancia entre dos destinos | 5.2 |
+| af\_content\_type | Tipo de transporte | Taxi |
+| payment\_method\_type | Tipo de método de pago | tarjeta de crédito, billetera electrónica |
+| af\_city | La ciudad donde se reserva el viaje | Singapur |
+| af\_region | La región donde se reserva el viaje | SFA |
+| af\_country | El país donde se reserva el viaje | Singapur |
+| order\_id | ID del pedido | 135790 |
 
 </Accordion>
 
 <div id="ride-booking-confirmed-ride_booking_confirmed" />
 
-<Accordion title="Ride booking confirmed (ride_booking_confirmed)">
+<Accordion title="Reserva de viaje confirmada (ride_booking_confirmed)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you:
+Este evento puede ayudarte a:
 
-* Learn who the most active drivers are
-* See what destinations are common among drivers
-* See the average and overall ride prices for each driver
+* Saber quiénes son los conductores más activos.
+* Ver cuáles son los destinos más frecuentes entre conductores.
+* Ver los precios de viajes promedio y totales de cada conductor.
 
-In addition, recording this event along with the other three booking-related events can help you better understand driver activity. You can see, for example, which drivers confirm the most ride-booking requests, and which drivers choose short rides as opposed to long rides.
+Además, el registro de este evento, junto con los otros tres eventos relacionados con la reserva de viajes, puede ayudarte a entender mejor la actividad de los conductores. Podrás ver qué conductores confirman la mayor cantidad de solicitudes de reserva de viajes, qué conductores eligen viajes cortos en lugar de viajes largos, etc.
 
-#### **Trigger**
+#### **Activador**
 
-When the booking is accepted by a driver
+Cuando un conductor acepta la reserva.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Quoted price for the ride | 22.4 |
-| af\_currency | Currency | SGD |
-| af\_destination\_a | Point of departure | Plaza Singapura |
-| af\_destination\_b | Point of arrival | Marina Bay Sands |
-| distance | Distance between the two destinations | 5.2 |
-| af\_content\_type | Type of transportation | Taxi |
-| driver\_id | ID of the driver who confirmed performing the ride | 1706 |
-| payment\_method\_type | Type of payment method | credit card, eWallet |
-| af\_city | City where the ride is booked | Singapore |
-| af\_region | Region where the ride is booked | SFA |
-| af\_country | Country where the ride is booked | Singapore |
-| af\_order\_id | Order ID | 135790 |
+| af\_price | Precio cotizado del viaje | 22.4 |
+| af\_currency | Truemoney | SGD |
+| af\_destination\_a | Punto de partida | Plaza Singapura |
+| af\_destination\_b | Punto de llegada | Marina Bay Sands |
+| distance | La distancia entre dos destinos | 5.2 |
+| af\_content\_type | Tipo de transporte | Taxi |
+| id\_del\_conductor | El ID del conductor que realizó el viaje | 1706 |
+| payment\_method\_type | Tipo de método de pago | tarjeta de crédito, billetera electrónica |
+| af\_city | La ciudad donde se reserva el viaje | Singapur |
+| af\_region | La región donde se reserva el viaje | SFA |
+| af\_country | El país donde se reserva el viaje | Singapur |
+| af\_order\_id | ID del pedido | 135790 |
 
 </Accordion>
 
 <div id="ride-booking-canceled-ride_booking_canceled" />
 
-<Accordion title="Ride booking canceled (ride_booking_canceled)">
+<Accordion title="Reserva de viaje cancelada (ride_booking_canceled)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you:
+Este evento puede ayudarte a:
 
-* Log drivers or passengers that constantly cancel
-* Learn how many rides are canceled
-* Correlate cancellation rate with attributes such as price, destination, distance, and cities
-* Learn the reasons why a ride is canceled
+* Registrar los conductores o pasajeros que cancelan viajes constantemente.
+* Saber cuántos viajes se cancelan.
+* Correlacionar la tasa de cancelación con atributos como el precio, el destino, la distancia y las ciudades.
+* Conocer los motivos por los cuales se cancela un viaje.
 
-**Trigger**
+**Activador**
 
-When the booking is canceled
+Cuando se cancela la reserva.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Quoted price for the ride | 22.4 |
-| af\_currency | Currency | SGD |
-| af\_destination\_a | Point of departure | Plaza Singapura |
-| af\_destination\_b | Point of arrival | Marina Bay Sands |
-| distance | Distance between the two destinations | 5.2 |
-| af\_content\_type | Type of transportation | Taxi |
-| driver\_id | ID of the driver who confirmed the ride | 1706 |
-| cancelation\_reason | Reason the ride is canceled | price is too high, driver didn't show up, passenger didn't show up |
-| payment\_method\_type | Type of payment method | credit card, eWallet |
-| af\_city | City where the ride is booked | Singapore |
-| af\_region | Region where the ride is booked | SFA |
-| af\_country | Country where the ride is booked | Singapore |
-| order\_id | Order ID | 135790 |
-| canceled\_by | Whether the ride is canceled by the passenger or driver | Passenger |
+| af\_price | Precio cotizado del viaje | 22.4 |
+| af\_currency | Truemoney | SGD |
+| af\_destination\_a | Punto de partida | Plaza Singapura |
+| af\_destination\_b | Punto de llegada | Marina Bay Sands |
+| distance | La distancia entre dos destinos | 5.2 |
+| af\_content\_type | Tipo de transporte | Taxi |
+| id\_del\_conductor | El ID del conductor que confirmó el viaje | 1706 |
+| motivo\_de\_cancelación | El motivo por el cual se cancela el viaje | El precio es muy alto, el conductor no apareció, el pasajero no apareció |
+| payment\_method\_type | Tipo de método de pago | tarjeta de crédito, billetera electrónica |
+| af\_city | La ciudad donde se reserva el viaje | Singapur |
+| af\_region | La región donde se reserva el viaje | SFA |
+| af\_country | El país donde se reserva el viaje | Singapur |
+| order\_id | ID del pedido | 135790 |
+| cancelado\_por | Si al viaje lo cancela el pasajero o el conductor | Pasajero |
 
 </Accordion>
 
 <div id="ride-booking-completed-ride_booking_completed" />
 
-<Accordion title="Ride booking completed (ride_booking_completed)">
+<Accordion title="Reserva de viaje completada (ride_booking_completed)">
 
-**Purpose**
+**Finalidad**
 
-This event can help you:
+Este evento puede ayudarte a:
 
-* Learn about passenger spending and driver earnings
-* Correlate completed rides with attributes such as destination, distance, payment type, and driver ID
-* See the average and overall distance for drivers and passengers
-* Compare completed rides with canceled ones
-* Log and record the score of drivers
+* Conocer cuánto gastan los pasajeros y cuánto ganan los conductores.
+* Correlacionar los viajes finalizados con atributos como el destino, la distancia, el tipo de pago y el ID del conductor.
+* Ver la distancia promedio y total para conductores y pasajeros.
+* Comparar los viajes finalizados con los cancelados.
+* Registrar la puntuación de los conductores.
 
-**Trigger**
+**Activador**
 
-When the journey is complete
+Cuando el viaje se complete.
 
-**Event parameters**
+**Parámetros del evento**
 
-| Name | Description | Example value |
+| Nombre | Descripción | Valor de ejemplo |
 | --- | --- | --- |
-| af\_price | Quoted price for the ride | 22.4 |
-| af\_currency | Currency | SGD |
-| af\_destination\_a | Point of departure | Plaza Singapura |
-| af\_destination\_b | Point of arrival | Marina Bay Sands |
-| distance | Distance between the two destinations | 5.2 |
-| af\_content\_type | Type of transportation | Taxi |
-| driver\_id | ID of the driver who confirmed performing the ride | 1706 |
-| payment\_method\_type | Type of payment method | credit card, eWallet |
-| af\_city | City where the ride is booked | Singapore |
-| af\_region | Region where the ride is booked | SFA |
-| af\_country | Country where the ride is booked | Singapore |
-| order\_id | Order ID | 135790 |
-| credits\_earned | Credits that the passenger earned for completing a ride | 248 |
+| af\_price | Precio cotizado del viaje | 22.4 |
+| af\_currency | Truemoney | SGD |
+| af\_destination\_a | Punto de partida | Plaza Singapura |
+| af\_destination\_b | Punto de llegada | Marina Bay Sands |
+| distance | La distancia entre dos destinos | 5.2 |
+| af\_content\_type | Tipo de transporte | Taxi |
+| id\_del\_conductor | El ID del conductor que realizó el viaje | 1706 |
+| payment\_method\_type | Tipo de método de pago | tarjeta de crédito, billetera electrónica |
+| af\_city | La ciudad donde se reserva el viaje | Singapur |
+| af\_region | La región donde se reserva el viaje | SFA |
+| af\_country | El país donde se reserva el viaje | Singapur |
+| order\_id | ID del pedido | 135790 |
+| credits\_earned | Los créditos que ganó el pasajero por finalizar un viaje | 248 |
 
 </Accordion>
 
-<div data-zendesk-anchors="ridehailing=-ride-hailing h_01HGTAZ7J64RZE35JP8XPKMTPZ=-ride-hailing h_01HGTAZ7J6N36EH492QDXCQYB1=important h_01HGTAZ7J6FJ8R9VXKK0F1A1E1=recommended-structures-for-predefined-events h_01HGTAZ7J6FQQKV7JB0Z9MG8CD=complete-registration-af_complete_registration h_01HGTAZ7J6YM8DJ96E7Q4M4Y8Q=login-af_login h_01HGTAZ7J67MNJ8T9B9W4NJ5Y9=add-payment-info-af_add_payment_info h_01HGTAZ7J6Z3EX03JTPZFHJJF6=spent-credits-af_spent_credits h_01HGTAZ7J6Z6NE8D5A10CRJJH4=recommended-structures-for-custom-events h_01HGTAZ7J6WCY2BQJPSNSTJRQ0=ride-booking-requested-ride_booking_requested h_01HGTAZ7J78J1X3VAYMH8Q3ZBA=ride-booking-confirmed-ride_booking_confirmed h_01HGTAZ7J7C4R7A7KT2S95835J=trigger h_01HGTAZ7J797KA791H1621F9TE=ride-booking-canceled-ride_booking_canceled h_01HGTAZ7J789CJ8P6X8B0V7A64=ride-booking-completed-ride_booking_completed" />
+<div data-zendesk-anchors="ridehailing=-servicios-de-transporte h_01HGTAZ7J64RZE35JP8XPKMTPZ=-servicios-de-transporte h_01HGTAZ7J6N36EH492QDXCQYB1=importante recommended-structures-for-predefined-events=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAZ7J6FJ8R9VXKK0F1A1E1=estructuras-recomendadas-para-eventos-predefinidos h_01HGTAZ7J6FQQKV7JB0Z9MG8CD=complete-registration-af_complete_registration h_01HGTAZ7J6YM8DJ96E7Q4M4Y8Q=login-af_login h_01HGTAZ7J67MNJ8T9B9W4NJ5Y9=add-payment-info-af_add_payment_info h_01HGTAZ7J6Z3EX03JTPZFHJJF6=spent-credits-af_spent_credits recommended-structures-for-custom-events=estructuras-recomendadas-para-eventos-personalizados h_01HGTAZ7J6Z6NE8D5A10CRJJH4=estructuras-recomendadas-para-eventos-personalizados h_01HGTAZ7J6WCY2BQJPSNSTJRQ0=ride-booking-requested-ride_booking_requested h_01HGTAZ7J78J1X3VAYMH8Q3ZBA=ride-booking-confirmed-ride_booking_confirmed trigger=activador h_01HGTAZ7J7C4R7A7KT2S95835J=activador h_01HGTAZ7J797KA791H1621F9TE=ride-booking-canceled-ride_booking_canceled h_01HGTAZ7J789CJ8P6X8B0V7A64=ride-booking-completed-ride_booking_completed" />

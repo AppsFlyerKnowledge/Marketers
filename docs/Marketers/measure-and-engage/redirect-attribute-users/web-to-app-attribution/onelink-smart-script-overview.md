@@ -1,5 +1,5 @@
 ---
-title: OneLink Smart Script overview
+title: Entendiendo las características de OneLink Smart Script
 metadata:
   keywords:
     - OneLink
@@ -23,79 +23,78 @@ x-zendesk:
     - Marketers
     - Smart Banners and Scripts
   created_at: '2018-12-12T16:32:47Z'
-  edited_at: '2024-11-19T13:16:26Z'
+  edited_at: '2026-08-12T12:25:23Z'
   id: 360000677217
-  locale: en-us
+  locale: es
   section: Web-to-app attribution
   section_id: 6551240476177
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360000677217-OneLink-Smart-Script-overview
+  url: https://support.appsflyer.com/hc/es/articles/360000677217
 ---
-> **At a glance:** Use OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.
+> **En resumen:** Utiliza OneLink Smart Script para convertir y atribuir a los visitantes de tu sitio web móvil, procedentes de cualquier fuente, en usuarios de la aplicación móvil.
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
-## About OneLink Smart Script
+## Sobre Smart Script de OneLink
 
-Users arrive at your mobile website before reaching your app store page, either organically, or after engaging with advertising campaigns. However, there are two clicks as follows:
+Los usuarios llegan a tu sitio web móvil antes de llegar a la página de tu tienda de aplicaciones, ya sea orgánicamente o después de interactuar con campañas publicitarias. Sin embargo, hay dos clics:
 
-* Direct to the web page
-* Direct from the web page to the app store
+* Directo a la página web
+* Directo de la página web a la tienda de aplicaciones
 
-In this scenario, attribution and deep linking are problematic. Installs by users who eventually download the app may be wrongfully attributed, or attributed as organic. This can occur even if the first click comes from an ad network, Google click, or owned media source.
+En este escenario, la atribución y deep linking generan problemas. Las instalaciones de los usuarios que finalmente descargan la aplicación podrían atribuirse erróneamente o como orgánicas. Esto puede ocurrir incluso si el primer clic procede de una ad network, un clic de Google o una fuente de medios propia.
 
-OneLink Smart Script solves these problems in that it:
+Smart Script de OneLink resuelve estos problemas de la siguiente manera:
 
-* Uses the incoming URLs leading to the web page to dynamically generate unique outgoing OneLink long URLs leading to the app store.
-* Provides accurate web-to-app attribution for all media sources, including ad networks, SRNs, Google clicks, and owned media.
-* Can be used for deep linking.
-* Runs seamlessly on any web page or landing page.
-* Doesn't require the use of Smart Banners.   
-  **Note**: Smart Banners can be a great conversion tool for many verticals and do not require a developer to set up, but they add another step, the banner, to the user journey.
-* Can be set up by the marketer in Google Tag Manager.
+* Utiliza las URLs entrantes que llevan a la página web para generar dinámicamente URLs largas de salida de OneLink únicas que llevan a la tienda de aplicaciones.
+* Proporciona una atribución web-to-app precisa para todas las fuentes de medios, incluidas ad networks, SRNs, clics de Google y medios propios.
+* Puede utilizarse para deep linking.
+* Se ejecuta sin problemas en cualquier página web o landing page.
+* No requiere el uso de Smart Banners.   
+  **Nota**: Los Smart Banners pueden ser una gran herramienta de conversión para muchas verticales y no requieren un desarrollador para su instalación, pero añaden otro paso, el banner, al viaje del usuario.
+* El marketer puede configurarlo en Google Tag Manager.
 
-There are two versions of OneLink Smart Script:
+Hay dos versiones de Smart Script de OneLink:
 
-<Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors">**OneLink Smart Script V2 (recommended)**</Anchor>: If you are setting up OneLink Smart Script for the first time, this is the preferred version to use. It can be configured in the AppsFlyer UI, the developer work portion is easier, and it can also be set up using Google Tag Manager.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-smart-script-to-convert-web-visitors">**OneLink Smart Script V2 (recomendado)**</Anchor>: Si estás configurando OneLink Smart Script por primera vez, esta es la versión preferida. Se puede configurar en la interfaz de usuario de AppsFlyer, la parte de trabajo del desarrollador es más sencilla, y también se puede configurar mediante Google Tag Manager.
 
-<Anchor target="_blank" href="/marketers/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1 (legacy)**</Anchor>: If you already have Onelink Smart Script set up, use the documentation for this version to maintain and edit this script. **Note**: Although not mandatory, consider migrating to V2. 
+<Anchor target="_blank" href="/marketers/es/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1 (antigua)**</Anchor>: Si ya tienes configurado Onelink Smart Script, utiliza la documentación de esta versión para mantener y editar este script. **Nota**: Aunque no es obligatorio, considera la posibilidad de migrar a la V2. 
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Not sure whether OneLink Smart Script is the right solution for you? <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users">Compare</Anchor> OneLink Smart Script with other AppsFlyer web-to-app solutions.
+> ¿No estás seguro de si Smart Script de OneLink es la solución adecuada para ti? ¿No estás seguro de si Smart Script de OneLink es la solución adecuada para ti? <Anchor target="_blank" href="/marketers/es/docs/convert-your-mobile-web-visitors-to-app-users">Compara</Anchor> Smart Script de OneLink con otras soluciones web-to-app de AppsFlyer.
 
-### Examples
+### Ejemplos
 
-The examples in this section demonstrate how OneLink Smart Script is used to generate outgoing OneLink URLs that provide accurate attribution, or deep linking functionality. For use cases of campaign types with particular media sources, see <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#use-cases">Use cases</Anchor>.
+Los ejemplos de esta sección demuestran cómo se utiliza el Smart Script de OneLink para generar URLs de salida de OneLink que proporcionan una atribución precisa o funcionalidad de deep linking. Para ver casos de uso de tipos de campaña con fuentes de medios concretas, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-smart-script-to-convert-web-visitors#casos-de-uso">Casos de uso</Anchor>.
 
 <div id="attribution" />
 
-<Accordion title="Attribution">
+<Accordion title="Atribución">
 
-Mark is the marketer for a hotel chain. He sends an email advertising a hotel vacation in Orlando, Florida. The link in the email looks like this: https://hotel.me/pid=email&c=orlando
+Mark es el responsable de marketing de una cadena hotelera. Envía un correo electrónico anunciando unas vacaciones en un hotel de Orlando (Florida). El enlace del correo electrónico es el siguiente: https://hotel.me/pid=email&c=orlando
 
-The link redirects users to the hotel’s mobile website. There, users see buttons inviting them to download the hotel’s mobile app. The OneLink Smart Script automatically generates a URL that contains the same **pid** and **c** parameters as the original link in the email. The link looks like this: https://hotel.onelink.me/Ac4G?pid=email&c=orlando
+El enlace envía a los usuarios a la web móvil del hotel. Allí, los usuarios ven botones que los invitan a descargar la aplicación móvil del hotel. El Smart Script de OneLink genera automáticamente una URL que contiene los mismos parámetros **pid** y **c** que el enlace original del correo electrónico. El enlace es el siguiente: https://hotel.onelink.me/Ac4G?pid=email&c=orlando
 
-When users click the buttons on the mobile site to download the app, the app install is attributed to Mark’s Orlando email campaign.
+Cuando los usuarios hacen clic en los botones del sitio móvil para descargar la aplicación, la instalación de la misma se atribuye a la campaña de correo electrónico de Mark sobre el hotel de Orlando.
 
 </Accordion>
 
 <div id="deep-linking" />
 
-<Accordion title="Deep linking">
+<Accordion title="Enlaces profundos">
 
-Emma gets an email advertising a hotel vacation in Orlando, Florida.
+Emma recibe un correo electrónico en el que se anuncian unas vacaciones en un hotel de Orlando (Florida).
 
-The link in the email looks like this: https://hotel.me?type=email&campaign=Florida&city=orlando
+El enlace del correo electrónico es el siguiente: https://hotel.me?type=email&campaign=Florida&city=orlando
 
-When she clicks the link, it redirects her to the hotel’s mobile website. There, she sees buttons inviting her to download the hotel’s mobile app. The OneLink Smart Script automatically generates a URL that contains the same **pid** and **c** parameters as the original link in the email. The link looks like this: https://hotel.onelink.me/Ac4G?pid=email&c=Florida&deep_link_value=orlando
+Cuando hace clic en el enlace, se la envía al sitio web móvil del hotel. Allí, ve botones que la invitan a descargar la aplicación móvil del hotel. El Smart Script de OneLink genera automáticamente una URL que contiene los mismos parámetros **pid** y **c** que el enlace original del correo electrónico. El enlace es el siguiente: https://hotel.onelink.me/Ac4G?pid=email&c=Florida&deep_link_value=orlando
 
-**When Emma clicks the buttons on the mobile site, she is redirected to the app store. And when she downloads and launches the app, she is deep linked to the Orlando vacation page in the app.**
+**Cuando Emma pulsa los botones del sitio web móvil, es redireccionada a la tienda de aplicaciones. Y cuando descarga e inicia la aplicación, se encuentra con la página de vacaciones de Orlando en la aplicación.**
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The deep linking is in accordance with the app settings implemented by the app developers. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">Learn more</Anchor>.
+> Deep linking está de acuerdo con la configuración de la aplicación implementada por los desarrolladores de la aplicación. <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#crear-un-enlace-de-onelink">Saber más</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HE7RW9G26CNME9TP350GFGS4=about-onelink-smart-script h_01HE7RW9G2BV2NFJ0YZ9QKAA2V=note h_01HE7RW9G2WBZ1A0RS66CJ7BNH=examples h_01HE7RW9G24Y604NTZFGKJJXSS=attribution h_01HE7RW9G2ZDDWE1M1B2G175ZF=deep-linking h_01HE7RW9G3W5GKQ2CD2BZW8YAW=note-1" />
+<div data-zendesk-anchors="about-onelink-smart-script=sobre-smart-script-de-onelink h_01HE7RW9G26CNME9TP350GFGS4=sobre-smart-script-de-onelink h_01HE7RW9G2BV2NFJ0YZ9QKAA2V=nota examples=ejemplos h_01HE7RW9G2WBZ1A0RS66CJ7BNH=ejemplos h_01HE7RW9G24Y604NTZFGKJJXSS=attribution h_01HE7RW9G2ZDDWE1M1B2G175ZF=deep-linking h_01HE7RW9G3W5GKQ2CD2BZW8YAW=nota-1" />

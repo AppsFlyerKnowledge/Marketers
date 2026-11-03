@@ -1,5 +1,5 @@
 ---
-title: Luna Labs integration with AppsFlyer
+title: Integración de Luna Labs con AppsFlyer
 metadata:
   keywords:
     - postbacks
@@ -17,66 +17,67 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2021-04-21T15:51:20Z'
-  edited_at: '2026-06-16T09:38:55Z'
+  edited_at: '2026-08-12T11:59:12Z'
   id: 360019465017
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360019465017-Luna-Labs-integration-with-AppsFlyer
+  url: https://support.appsflyer.com/hc/es/articles/360019465017
 ---
-> **At a glance:** Luna Labs is an end-to-end platform that allows its customers to create, manage, and optimize playables and video ads.
+> **De un vistazo:** Luna Labs es una plataforma integral que permite a sus clientes crear, gestionar y optimizar playables y anuncios de video.
 
-> 🚧 **Important!**
+> 🚧 **Dos puntos (:)**
 >
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
-## Setting up Luna Labs
+## Configuración de Luna Labs
 
-**Prerequisite:** Before setting up the integration, make sure you contact the partner and open an account with them.
+**Requisito previo:** Antes de configurar la integración, asegúrese de ponerse en contacto con el socio y abrir una cuenta con ellos.
 
-**New integration:**
+**Nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-2. Select the relevant app.
-3. Search for Luna Labs and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle. Keep it on as long as you work with Luna Labs.
-5. Complete the configuration using the relevant tabs, as described below.
+1. En la pestaña de **Integración** selecciona la aplicación para la integración y haz clic en **Activar partner**  
+   **Nota:** El selector debe estar encendido <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado) mientras</Anchor> trabajes con el partner.
+2. Selecciona la aplicación correspondiente.
+3. Busca Luna Labs y selecciona **Integrar**.
+4. En la pestaña de **Integración** selecciona la aplicación para la integración y haz clic en **Activar partner**  
+   **Nota:** El selector debe estar encendido<Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado) mientras</Anchor> trabajes con el partner. Mantenlo activado mientras trabajes con Luna Labs.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-**Edit existing integration:**
+**Editar integración existente:**
 
-In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
+Busca al partner y selecciónalo.
 
-## Integration
+## Integración
 
-Use the Integration tab for the configuration. The remaining tabs are inactive.
+Usa la pestaña de integración para la configuración. Las pestañas restantes están inactivas.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> Luna Labs doesn't use its own attribution links. They get postbacks from ad networks that run campaigns with advertisers. Luna Labs only receives postbacks for their own creatives and only postbacks which include the `af_addpb=1` parameter and value. See further explanation below.
+> Luna Labs no usa sus propios enlaces de atribución. Reciben postbacks de ad networks que ejecutan campañas con anunciantes. Luna Labs solo recibe postbacks de sus propios creativos y solo postbacks que incluyen el parámetro y valor `af_addpb=1`. Consulta más abajo una explicación detallada.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you need to turn on **Activate partner** to enable the setup of the integration tab's parameters. **The toggle must be on for as long as you work with the partner**.  
-Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation/deactivation</Anchor>.
+En la **primera visita**, debes activar **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. **El selector debe estar activado mientras trabajes con el partner**.  
+Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación/desactivación del partner</Anchor>.
 
-### Default postbacks
+### Postbacks predeterminados
 
-AppsFlyer can send automatic postbacks to Luna Labs following user installs.
+AppsFlyer puede enviar postbacks automáticos a Luna Labs tras las instalaciones de los usuarios.
 
-**Note:** Luna Labs can receive postbacks only for their own creatives.
+**Nota:** Luna Labs solo puede recibir postbacks de sus propios creativos.
 
-**To send postbacks to Luna Labs:**
+**Para enviar postbacks a Luna Labs:**
 
-1. Make sure that the ad network you are working with together with Luna Labs is activated and integrated with AppsFlyer.
-2. Make sure that the ad network adds the parameter `af_addpb=1` to the attribution link sent to AppsFlyer and to Luna Labs by the ad network.  
-   This parameter enables sending the postback to Luna Labs, and lets them know that the click came from their creative.
-3. Select **Events attributed to any partner or organic**.
+1. Asegúrate de que la ad network con la que trabajas junto con Luna Labs esté activada e integrada con AppsFlyer.
+2. Asegúrate de que la ad network añada el parámetro `af_addpb=1` al enlace de atribución que la ad network envía a AppsFlyer y a Luna Labs.  
+   Este parámetro permite enviar el postback a Luna Labs y les indica que el clic procedía de su creativo.
+3. Selecciona **Eventos atribuidos a cualquier partner o de origen orgánico**.
 
-For example, if ad-network-X is working with a certain app (id1234567890), and wants to send postbacks to Luna Labs, then the URL should look like this:
+Por ejemplo, si ad-network-X trabaja con una determinada app (id1234567890) y quiere enviar postbacks a Luna Labs, entonces la URL debería tener este aspecto:
 
 ```http
 https://app.appsflyer.com/id1234567890?pid=ad-network-X_int&af_siteid={ApplicationId}_{ApplicationName}&c={CampaignName}&af_adset={adgroup_name}&af_ad={CreativeName}&clickid={DynamicParameter}&af_addpb=1
 ```
 
-<div data-zendesk-anchors="h_01H9FKCW1FJ2QCVVE6HEE640H9=important h_01HJR5M5C0P759S4X5SSJCY501=setting-up-luna-labs h_01H9FKCW1FE6JCY5FAFF3Y4TGH=integration h_01H9FKCW1FNPCF1M7SRWTMNDCW=note h_01H9FKCW1FV00605GYK498JZN9=activate-partner h_01H9FKCW1FGMA3FKAY5B9YCJVH=default-postbacks" />
+<div data-zendesk-anchors="h_01H9FKCW1FJ2QCVVE6HEE640H9=dos-puntos- setting-up-luna-labs=configuraci%C3%B3n-de-luna-labs h_01HJR5M5C0P759S4X5SSJCY501=configuraci%C3%B3n-de-luna-labs integration=integraci%C3%B3n h_01H9FKCW1FE6JCY5FAFF3Y4TGH=integraci%C3%B3n h_01H9FKCW1FNPCF1M7SRWTMNDCW=nota activate-partner=activar-socio h_01H9FKCW1FV00605GYK498JZN9=activar-socio default-postbacks=postbacks-predeterminados h_01H9FKCW1FGMA3FKAY5B9YCJVH=postbacks-predeterminados" />

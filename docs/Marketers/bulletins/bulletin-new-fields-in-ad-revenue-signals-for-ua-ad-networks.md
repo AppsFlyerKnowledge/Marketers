@@ -1,5 +1,7 @@
 ---
-title: 'Bulletin: New fields in ad revenue signals for UA ad networks'
+title: >-
+  Boletín: nuevos campos en las señales de ingresos por anuncios para las ad
+  network de UA
 metadata:
   keywords:
     - Marketers
@@ -13,52 +15,50 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2024-07-24T09:03:32Z'
-  edited_at: '2024-09-19T12:06:23Z'
+  edited_at: '2026-10-20T03:55:09Z'
   id: 26957246184209
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/26957246184209-Bulletin-New-fields-in-ad-revenue-signals-for-UA-ad-networks
+  url: https://support.appsflyer.com/hc/es/articles/26957246184209
 ---
+
 <Table>
-  <thead>
-    <tr>
-      <th>
-        **What's new?**
-      </th>
-      <th>
-        Ad revenue signals have new fields.
-      </th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
       <td>
-        **Effective date**
+        **Novedades**
       </td>
       <td>
-        September 19, 2024
+        Las señales de ingresos por anuncios tienen nuevos campos.
       </td>
     </tr>
     <tr>
       <td>
-        **What you should know**
+        **Fecha de entrada en vigor**
       </td>
       <td>
-        The following table shows which fields are being added to ad revenue signals for UA ad networks. See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor> for definitions and details of each field.
+        19 de septiembre de 2024
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **Lo que debes saber**
+      </td>
+      <td>
+        La siguiente tabla muestra qué campos se están añadiendo a las señales de ingresos por anuncios para las ad network de UA. Consulta el <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">diccionario de campos de raw data</Anchor> para ver las definiciones y los detalles de cada campo.
 
-        | Report | API field names |
+        | Informe | Nombres de campos API |
         | --- | --- |
-        | <Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">Ad revenue signals for UA ad networks</Anchor> | <ul><li>ad_unit</li><li>placement</li><li>mediation_network</li><li>ad_revenue_ad_type</li><li>engagement_type</li></ul> |
+        | <Anchor target="_blank" href="/partners/es/docs/ad-revenue-signals-for-ua-ad-networks">Señales de ingresos publicitarios para ad networks de UA</Anchor> | * ad\_unit<br />* placement<br />* mediation\_network<br />* ad\_revenue\_ad\_type<br />* engagement\_type |
       </td>
     </tr>
     <tr>
       <td>
-        **What you need to do**
+        **Lo que debes hacer**
       </td>
       <td>
-        Configure your BI systems to ingest and use the new fields.
+        Configura tus sistemas de BI para ingerir y usar los nuevos campos.
       </td>
     </tr>
   </tbody>

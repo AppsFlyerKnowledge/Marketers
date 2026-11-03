@@ -1,20 +1,20 @@
 ---
-title: Data delivery tools
-excerpt: Use Push API, Pull API, or download options to access your data
+title: Herramientas de entrega de datos
+excerpt: Utiliza Push API, Pull API u opciones de descarga para acceder a tus datos
 table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2022-06-02T11:22:49Z'
   id: 6550995484561
-  locale: en-us
+  locale: es
   parent_section_id: 6550901627921
   type: section
   url: >-
-    https://support.appsflyer.com/hc/en-us/sections/6550995484561-Data-delivery-tools
+    https://support.appsflyer.com/hc/es/sections/6550995484561-Herramientas-de-entrega-de-datos
 ---
-- [Aggregated data export page](/docs/aggregated-data-export-page)
-- [Raw data export page](/docs/raw-data-export-page)
-- [Pull API raw data](/docs/pull-api-raw-data)
-- [Push API streaming raw data](/docs/push-api-streaming-raw-data)
-- [Pull API aggregate data](/docs/pull-api-aggregate-data)
+- [Página de exportación de datos agregados](/docs/aggregated-data-export-page)
+- [Página de exportación de datos en bruto](/docs/raw-data-export-page)
+- [Obtener raw data desde la Pull API](/docs/pull-api-raw-data)
+- [Transmisión	 de raw data de la Push API](/docs/push-api-streaming-raw-data)
+- [Datos agregados de Pull API](/docs/pull-api-aggregate-data)

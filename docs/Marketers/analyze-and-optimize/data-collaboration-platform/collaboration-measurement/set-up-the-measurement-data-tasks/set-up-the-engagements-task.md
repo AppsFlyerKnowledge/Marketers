@@ -1,5 +1,5 @@
 ---
-title: Set up the Engagements task
+title: Configurar la tarea de Engagements
 metadata:
   keywords:
     - Marketers
@@ -12,138 +12,137 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2025-08-18T10:19:20Z'
-  edited_at: '2026-05-27T09:33:55Z'
+  edited_at: '2026-08-12T11:53:06Z'
   id: 38188042548113
-  locale: en-us
+  locale: es
   section: Set up the measurement data tasks
   section_id: 38035061674769
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/38188042548113-Set-up-the-Engagements-task
+  url: https://support.appsflyer.com/hc/es/articles/38188042548113
 ---
-> **At a glance:** Learn how to configure engagement events for on-site and combined campaigns (on-site and off-site campaigns).
+> **De un vistazo:** Aprende a configurar eventos de engagement para campañas on-site y combinadas (campañas on-site y off-site).
 
-<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#engagements">Engagement events</Anchor> capture user interactions—such as ad views or clicks—that occur before a conversion. They are configured only for on-site campaigns, either alone or combined with off-site campaigns. (For off-site campaigns, engagement data is provided directly by external partners such as Meta or Google. This article explains how to configure engagements by campaign type.
+<Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#engagements">Los eventos de engagement</Anchor> capturan interacciones de los usuarios, como visualizaciones de anuncios o clics, que se producen antes de una conversión. Se configuran solo para campañas on-site, ya sea por sí solas o combinadas con campañas off-site. (En el caso de las campañas off-site, los datos de engagement los proporcionan directamente partners externos, como Meta o Google. En este artículo se explica cómo configurar engagements por tipo de campaña.
 
-## Prerequisites
+## Prerrequisitos
 
-Before the Engagements task can be set up, the collaboration owner needs to assign it to the collaborator who owns the platform where the engagement events are generated. For more information, see Assign configuration tasks
+Antes de poder configurar la tarea de Engagements, el propietario de la colaboración debe asignársela al colaborador propietario de la plataforma donde se generan los eventos de engagement. Para obtener más información, consulta Asignar tareas de configuración
 
-## Set up engagements for on-site or combined campaigns
+## Configurar engagements para campañas on-site o combinadas
 
-In the context of on-site and combined campaigns, all engagement events originate from the collaborator’s owned properties—such as their app, website, or in-store systems. These engagement events are typically collected using the AppsFlyer SDK or submitted via custom data sources and are attributed solely to on-site user activity.
+En el contexto de las campañas on-site y combinadas, todos los eventos de engagement se originan en las propiedades del colaborador, como su aplicación, sitio web o sistemas en tienda. Estos eventos de engagement suelen recopilarse mediante el SDK de AppsFlyer o enviarse a través de fuentes de datos personalizadas, y se atribuyen exclusivamente a la actividad de los usuarios on-site.
 
 <div id="1-prepare-engagement-data" />
 
-<Accordion title="1. Prepare engagement data">
+<Accordion title="1. Preparar datos de engagement">
 
-Before you set up the custom engagement source in DCP, you can provide engagement data in one of two ways:
+Antes de configurar la fuente de engagement personalizada en DCP, puedes proporcionar datos de engagement de una de estas dos formas:
 
-* **Custom source file:** Create an engagement source file and upload it to your cloud service. For more information, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme">Prepare custom source files for engagements</Anchor>.
-* **AppsFlyer SDK:** Integrate the AppsFlyer SDK into your app to automatically send in-app engagement events to DCP. For more information, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events">Prepare in-app events for engagements</Anchor>.
+* **Archivo de fuente personalizada:** Crea un archivo de fuente de engagement y cárgalo en tu servicio en la nube. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme">Preparar archivos de fuente personalizados para engagements</Anchor>.
+* **SDK de AppsFlyer:** Integra el SDK de AppsFlyer en tu aplicación para enviar automáticamente eventos de engagement in-app a DCP. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events">Preparar eventos in-app para engagements</Anchor>.
 
 </Accordion>
 
 <div id="2-open-engagement-settings" />
 
-<Accordion title="2. Open engagement settings">
+<Accordion title="2. Abrir la configuración de engagement">
 
-The **Measurement settings** page is where you configure, as part of the collaboration measurement setup, how engagements are collected and attributed.
+En la página **Configuración de la medición** configuras, como parte de la configuración de la medición de la colaboración, cómo se recopilan y atribuyen los engagements.
 
-To open the **Measurement settings** page, follow these steps:
+Para abrir la página **Configuración de la medición**, sigue estos pasos:
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
-2. On the **Data Collaboration Platform** page, select the collaboration you want to set.
-3. At the bottom of the collaboration page, click **Set up measurement.**
-   * If the link is grayed out, set up the collaboration's <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">data sources</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiences</Anchor>.
-4. On the **Measurement Setting** page, click the **Engagements** pane to open the **Engagements** dialog.
+1. En AppsFlyer, en el menú lateral, ve a **Colaborar** > **Data Clean Room**.
+2. En la página **Data Collaboration Platform**, selecciona la colaboración que deseas configurar.
+3. En la parte inferior de la página de colaboración, haz clic en **Configurar medición.**
+   * Si el enlace aparece atenuado, configura las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">fuentes de datos</Anchor> y las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiencias</Anchor> de la colaboración.
+4. En la página **Configuración de la medición**, haz clic en el panel **Engagements** para abrir el cuadro de diálogo **Engagements**.
 
-   > 📘 **Note**
+   > 📘 **Nota:**
    >
-   > * If the **Engagements** dialog is locked, it means that the Engagements task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
-   > * If the **Engagements** pane is grayed out, ask the collaboration owner to assign you the Engagements task.
+   > * Si el cuadro de diálogo **Engagements** está bloqueado, significa que la tarea de Engagements se ha asignado a tu colaborador y que no puedes ver su contenido. Si eres el propietario de la colaboración, puedes desbloquearla reasignándote la tarea. Sin embargo, se eliminará cualquier configuración anterior y la tarea se restablecerá.
+   > * Si el panel **Engagements** aparece en gris, pide al propietario de la colaboración que te asigne la tarea de Engagements.
 
 
 </Accordion>
 
 <div id="3-set-data-provision-method" />
 
-<Accordion title="3. Set data provision method">
+<Accordion title="3. Establecer el método de suministro de datos">
 
-Engagement data is provided to DCP either via in-app events, custom source, or both:
+Los datos de engagement se proporcionan a DCP mediante eventos in-app, una fuente personalizada o ambas opciones:
 
-* **In-app events** — The origin of the engagement event data is the AppsFlyer SDK integrated into your mobile app. The SDK sends engagement events in real time from your app whenever the user performs a defined action.
-* **Custom source** — The origin of the engagement events is a custom source file stored in your cloud.
+* **Eventos in-app** — El origen de los datos de los eventos de engagement es el SDK de AppsFlyer integrado en tu aplicación móvil. El SDK envía eventos de engagement en tiempo real desde tu aplicación cada vez que el usuario realiza una acción definida.
+* **Fuente personalizada** — El origen de los eventos de engagement es un archivo de fuente personalizado almacenado en tu servicio en la nube.
 
-To set up the engagement provision method in DCP, follow these steps:
+Para configurar el método de suministro de datos de engagement en DCP, sigue estos pasos:
 
-1. In the **Engagements** dialog, select the engagement provisioning type: in-app events, custom source file, or both.
-2. Depending on your provisioning method, enter the following details:
-   * **In-app events:**
-     1. Select the app that sends the in-app events containing the engagement data.
-     2. In the **Select ad engagement event** list, select which of the in-app events sent by the AppsFlyer SDK is the engagement event.
-     3. In the **Select advertised item (SKU)** list, select the parameter in the in-app event that contains the SKU value.
-   * **Custom source:**
-     1. Click + **New engagement source**.
-     2. In the **New engagement source** dialog, enter the engagement source's name in the **Source name** field according to the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines">requirements and guidelines</Anchor>.
-3. Click **Next**.
+1. En el cuadro de diálogo **Engagements**, selecciona el tipo de suministro de engagement: eventos in-app, archivo de fuente personalizado o ambos.
+2. Según el método de suministro, introduce los siguientes datos:
+   * **Eventos in-app:**
+     1. Selecciona la aplicación que envía los eventos in-app que contienen los datos de engagement.
+     2. En la lista **Select ad engagement event**, selecciona cuál de los Eventos in-app enviados por el SDK de AppsFlyer es el evento de engagement.
+     3. En la lista **Select advertised item (SKU)**, selecciona el parámetro del evento in-app que contiene el valor del SKU.
+   * **Fuentes personalizadas:**
+     1. Haz clic en + **Nueva fuente de engagement**.
+     2. En el cuadro de diálogo **Nueva fuente de engagement**, introduce el nombre de la fuente de engagement en el campo **Nombre de la fuente** de acuerdo con los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#requisitos-y-directrices">requisitos y directrices</Anchor>.
+3. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
 
 </Accordion>
 
 <div id="4-set-source-location" />
 
-<Accordion title="4. Set source location">
+<Accordion title="4. Establecer ubicación de la fuente">
 
-If a custom source is used to provide engagement events to DCP, set the details that enable DCP to access it in your cloud service.
+Si se usa una fuente personalizada para proporcionar eventos de engagement a DCP, configura los datos que permiten a DCP acceder a ella en tu servicio en la nube.
 
-1. In the **Set source location** step, select the connection from which the source is accessed.
-   * If your account does not have connections defined, the **New connection** dialog will open, prompting you to create one.
-   * If you have existing connections but want to use a new one, open the **Select connection** list and select **+ New connection.**
-2. Set the source access details according to your cloud service:
-   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-bigquery">BigQuery</Anchor>
-   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-snowflake">Snowflake</Anchor>
-   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-cloud-storage-buckets">Amazon S3 and GCS</Anchor>
-   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files">Local file system</Anchor>
-3. Select how new data should be handled. For more information, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Set source sync method</Anchor>.
-4. Click **Next**.
+1. En el paso **Establecer ubicación de la fuente** , selecciona la conexión desde la que se accede a la fuente.
+   * Si tu cuenta no tiene conexiones definidas, se abrirá el cuadro de diálogo **Nueva conexión** para que crees una.
+   * Si ya tienes conexiones, pero quieres usar una nueva, abre la lista **Seleccionar conexión** y selecciona **+ Nueva conexión.**
+2. Configura los detalles de acceso a la fuente según tu servicio en la nube:
+   * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#fuentes-ubicadas-en-bigquery">BigQuery</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#fuentes-ubicadas-en-snowflake">Snowflake</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#fuentes-ubicadas-en-buckets-de-almacenamiento-en-la-nube">Amazon S3 y GCS</Anchor>
+   * <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#ubicación-de-la-fuente-como-archivos-locales">Sistema de archivos local</Anchor>
+3. Selecciona cómo deben gestionarse los datos nuevos. Para más información, consulta: <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Establecer el método de sincronización de la fuente</Anchor>.
+4. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
 
 </Accordion>
 
 <div id="5-map-engagement-source-fields" />
 
-<Accordion title="5. Map engagement source fields">
+<Accordion title="5. Asignar campos de la fuente de engagement">
 
-If a custom source is used to provide engagement events to DCP, map your custom engagement source fields to their corresponding DCP fields.
+Si se usa una fuente personalizada para proporcionar eventos de engagement a DCP, asigna los campos de tu fuente de engagement personalizada a sus campos correspondientes en DCP.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> The **DCP conversion events database** stores all the conversion events of the current collaboration under a unitary scheme, including conversion events originating from **in-app events** or **off-site campaigns** (if you’re running a combined on-site off-site campaign).
+> La **base de datos de eventos de conversión de DCP** almacena todos los eventos de conversión de la colaboración actual en un esquema unificado, incluidos los eventos de conversión procedentes de **Eventos in-app** o de **campañas off-site** (si estás ejecutando una campaña combinada on-site y off-site).
 
-**Load engagement source fields**
+**Cargar campos de la fuente de engagement**
 
-If the engagement source fields are not already loaded, you might have to load them manually to have them mapped to DCP fields.
+Si los campos de la fuente de engagement aún no se han cargado, puede que tengas que cargarlos manualmente para asignarlos a los campos de DCP.
 
-To load engagement source fields, follow these steps:
+Para cargar los campos de la fuente de engagement, sigue estos pasos:
 
-1. In the **Map source fields** step, click **Load fields from source**.
-2. For information about how to manually load fields, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields">Load your source fields</Anchor>.
+1. En el paso **Map source fields**, haz clic en **Load fields from source**.
+2. Para obtener información sobre cómo cargar campos manualmente, consulta: <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-carga-tus-campos-de-la-fuente">Cargar tus campos de fuente</Anchor>.
 
-**Auto-map engagement fields**
+**Asignación automática de campos de engagement**
 
-When engagement source fields are loaded, DCP automatically maps them to their corresponding DCP fields. Auto mapping can take up to 10 seconds. A banner displays the mapping result, showing how many fields were mapped and listing any source columns that could not be matched.
+Cuando se cargan los campos de la fuente de engagement, DCP los asigna automáticamente a sus campos de DCP correspondientes. La asignación automática puede tardar hasta 10 segundos. Se muestra un banner con el resultado de la asignación, que indica cuántos campos se han asignado y enumera las columnas de la fuente que no se han podido hacer coincidir.
 
-To re-trigger auto mapping, click **Update mapping**.
+Para volver a activar la asignación automática, haz clic en **Actualizar asignación**.
 
-**Map engagement fields**
+**Asignar campos de engagement**
 
-If the engagement source fields are loaded, you can map them to the DCP fields.
+Si los campos de la fuente de engagement están cargados, puedes asignarlos a los campos de DCP.
 
-To map the engagement custom source fields, follow these steps
+Para asignar los campos de fuente personalizados de engagement, sigue estos pasos
 
-1. If you are setting a combined **On-site and Off-site campaign**, in the **Map source fields** step, expand the **Data for on-site attribution;** else, skip to the step below.
-2. Map all required fields under **Required**.
-3. (Optional) Expand **Optional enrichment data** to map additional fields.
-4. Click **Save**. The **`{source name}` source created** message is displayed.[<Image alt="" src="https://files.readme.io/670c7ca42d066bf2d874785108d84318387e393512973d2fff5056ab3f5a45cd-38381396764817.png" width="40.62%" />](https://files.readme.io/670c7ca42d066bf2d874785108d84318387e393512973d2fff5056ab3f5a45cd-38381396764817.png)
+1. Si estás configurando una campaña combinada **On-site and Off-site campaign**, en el paso **Map source fields**, expande **Data for on-site attribution;** de lo contrario, pasa al paso siguiente.
+2. Asigna todos los campos obligatorios en **Required**.
+3. (Opcional) Expande **Datos de enriquecimiento opcionales** para asignar campos adicionales.
+4. Haz clic en **Guardar**. Aparece el mensaje **fuente `{source name}` creada** .[<Image alt="" src="https://files.readme.io/7741040e43860b110ad1ffa63a55dc08c51cf595717c2fde28f8e7501a1fddfc-38345272613265.png" width="40.62%" />](https://files.readme.io/7741040e43860b110ad1ffa63a55dc08c51cf595717c2fde28f8e7501a1fddfc-38345272613265.png)
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01K3EFVGA56P7FB605JY1BQ34M=prerequisites set-up-engagements-for-onsite-or-combined-campaigns=set-up-engagements-for-on-site-or-combined-campaigns h_01K3EFVGA6GT10BXJYE9SFM9TE=set-up-engagements-for-on-site-or-combined-campaigns h_01K3EFVGA6NM4YKZ8MEEYXX58B=1-prepare-engagement-data h_01K3EFVGA65CFME4H3ZC89X471=2-open-engagement-settings h_01K3EFVGA618KT7PGSVQXF6JSV=note h_01K3EFVGA6BKGAS5GZR3GW2N2M=3-set-data-provision-method h_01K3EFVGA64CQTKZ8C227042PY=4-set-source-location h_01K3EFVGA6J7PX1QE8TRA42QEY=5-map-engagement-source-fields h_01K3EFVGA6E3WH7FEYCW09P74V=note-1" />
+<div data-zendesk-anchors="prerequisites=prerrequisitos h_01K3EFVGA56P7FB605JY1BQ34M=prerrequisitos set-up-engagements-for-onsite-or-combined-campaigns=configurar-engagements-para-campa%C3%B1as-on-site-o-combinadas h_01K3EFVGA6GT10BXJYE9SFM9TE=configurar-engagements-para-campa%C3%B1as-on-site-o-combinadas h_01K3EFVGA6NM4YKZ8MEEYXX58B=1-prepare-engagement-data h_01K3EFVGA65CFME4H3ZC89X471=2-open-engagement-settings h_01K3EFVGA618KT7PGSVQXF6JSV=nota h_01K3EFVGA6BKGAS5GZR3GW2N2M=3-set-data-provision-method h_01K3EFVGA64CQTKZ8C227042PY=4-set-source-location h_01K3EFVGA6J7PX1QE8TRA42QEY=5-map-engagement-source-fields h_01K3EFVGA6E3WH7FEYCW09P74V=nota-1" />

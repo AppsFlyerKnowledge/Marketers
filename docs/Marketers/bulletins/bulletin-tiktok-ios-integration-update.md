@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: TikTok iOS integration update'
+title: 'Boletín: actualización de la integración de TikTok para iOS'
 metadata:
   keywords:
     - Marketers
@@ -13,16 +13,15 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2026-05-26T09:57:55Z'
-  edited_at: '2026-06-02T14:44:06Z'
+  edited_at: '2026-10-20T03:54:11Z'
   id: 47060384221457
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/47060384221457-Bulletin-TikTok-iOS-integration-update
+  url: https://support.appsflyer.com/hc/es/articles/47060384221457
 ---
-| Section | Details |
+| Sección. | Detalles |
 | --- | --- |
-| **What's new** | AppsFlyer is updating the privacy configuration for the Advanced Self-Reporting Network (SRN) integration with TikTok for iOS. Here's what's changing:<ul><li>The existing **Advanced Privacy (AP)** toggle is being replaced by a new **Advanced Data Sharing (ADS)** toggle, bringing TikTok in line with other SRN integrations in AppsFlyer.</li><li>With this change, AppsFlyer will share all conversion events with TikTok regardless of whether an Advertising ID (IDFA) is available.</li></ul>This means more of your iOS conversions get attributed, and TikTok can optimize your campaigns against a more complete picture of performance. |
-| **Effective date** | June 23, 2026 |
-| **What you need to know** | Your settings will be migrated automatically — no action is required. Here's how your current configuration maps to the new toggle:<ul><li>If **Advanced Privacy** is currently **OFF** → **Advanced Data Sharing** will be set to **ON**</li><li>If **Advanced Privacy** is currently **ON** → **Advanced Data Sharing** will be set to **OFF**</li></ul> |
+| **¿Qué hay de nuevo?** | AppsFlyer está actualizando la configuración de privacidad de la integración Advanced Self-Reporting Network (SRN) con TikTok para iOS. Esto es lo que cambia:<ul><li>El interruptor actual de **Advanced Privacy (AP)** se está sustituyendo por un nuevo interruptor de **Advanced Data Sharing (ADS)**, para alinear TikTok con otras integraciones SRN en AppsFlyer.</li><li>Con este cambio, AppsFlyer compartirá todos los eventos de conversión con TikTok independientemente de si hay disponible un Advertising ID (IDFA).</li></ul>Esto significa que se atribuirán más conversiones de iOS y que TikTok podrá optimizar tus campañas con una visión más completa del performance. |
+| **Fecha de entrada en vigor** | 23 de junio de 2026 |
+| **Lo que debes saber:** | Tu configuración se migrará automáticamente; no es necesario realizar ninguna acción. Así es como tu configuración actual se trasladará al nuevo interruptor:<ul><li>Si **Advanced Privacy** está actualmente en **OFF** → **Advanced Data Sharing** se configurará en **ON**</li><li>Si **Advanced Privacy** está actualmente en **ON** → **Advanced Data Sharing** se configurará en **OFF**</li></ul> |

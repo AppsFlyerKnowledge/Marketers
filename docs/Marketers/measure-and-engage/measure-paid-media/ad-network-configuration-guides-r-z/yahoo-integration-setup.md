@@ -1,5 +1,5 @@
 ---
-title: Yahoo integration setup
+title: Configuración de la integración de Yahoo
 metadata:
   keywords:
     - Advertisers
@@ -17,200 +17,199 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-08-25T13:09:48Z'
-  edited_at: '2026-09-09T12:41:37Z'
+  edited_at: '2026-09-11T00:25:29Z'
   id: 212067546
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/212067546-Yahoo-integration-setup
+  url: https://support.appsflyer.com/hc/es/articles/212067546
 ---
-> **At a glance:** Yahoo, an AppsFlyer ad network integrated partner, offers search and native advertising in one advertising platform. In addition to click-based mobile attribution, Yahoo offers cost and view-through attribution, which can be recorded with AppsFlyer.
+> **De un vistazo:** Yahoo, un partner integrado de ad network de AppsFlyer, ofrece publicidad de búsqueda y nativa en una sola plataforma publicitaria. Además de la atribución móvil basada en clics, Yahoo ofrece atribución de costos y view-through, que se pueden registrar en AppsFlyer.
 
-## Setting up Yahoo
+## Configuración de Yahoo
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace**.  
+   (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas**.)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners</Anchor>
 
-> 👍 **Tip**
+> 👍 **Consejo**
 >
-> The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory**. All other steps are descriptive or **optional**.
+> El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña Integración es **obligatorio**. Todos los demás pasos son descriptivos u **opcional**.
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-### Advertiser configuration
+### Configuración del anunciante
 
-The Integration tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partner
+### Activar socio
 
-On the **first visit** here, you will need to switch on the ***Activate Partner*** toggle to enable the setup of the Integration tab parameters. The toggle MUST be ON for as long as you work with the partner.
+En tu **primera visita** aquí, tendrás que activar el selector ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña integración. El interruptor DEBE estar ENCENDIDO mientras trabajes con el partner.
 
-For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
-### General settings
+### Configuración general
 
-Follow these steps for the general settings of Yahoo.
+Sigue estos pasos para la configuración general de Yahoo.
 
-### Click-through attribution
+### Atribución por clic
 
-This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Yahoo.
+Este control deslizante te permite establecer el **tiempo máximo del clic a la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Yahoo.
 
-You can customize this value to 1-23 hours or 1-30 days. We recommend setting the Click-through lookback window to 7 days, to align with Yahoo.
+Puedes personalizar este valor para que sea de 1-23 horas o de 1-30 días. Te recomendamos configurar la ventana de lookback por clics en 7 días para que coincida con Yahoo.
 
-More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback por clic aquí</Anchor>.
 
-**Enable View-Through attribution**
+**Habilitar la atribución por impresiones**
 
-Turn this to on if you want to attribute view-through installs from Yahoo. The view-through lookback slider is available on the attribution link tab (described below).
+Activa esta opción si quieres atribuir las instalaciones view-through de Yahoo. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-You can customize this value to 1-23 hours or 1-7 days. We recommend setting the View-through lookback window to 1 day, to align with Yahoo.
+Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días. Te recomendamos configurar la ventana de lookback view-through en 1 día para alinearla con Yahoo.
 
-### Agency configuration
+### Configuración de agencia
 
-Before you start working with Yahoo, the advertiser should activate the integration on their side, otherwise conversions cannot be attributed to you.
+Antes de empezar a trabajar con Yahoo, el anunciante debe activar la integración por su parte; de lo contrario, las conversiones no se podrán atribuir a ti.
 
-For your Yahoo account, enter your Yahoo account ID. For Yahoo DSP, enter the Advertiser ID.
+Para tu cuenta de Yahoo, introduce el ID de tu cuenta de Yahoo. Para Yahoo DSP, introduce el ID del anunciante.
 
 **Note:**
 
-* In case the Advertiser and Agency both promote the app on Yahoo, they need to work with separate Yahoo accounts.
-* Agency can use only one account at Yahoo.
+* Si el anunciante y la agencia promocionan la aplicación en Yahoo, deben trabajar con cuentas de Yahoo independientes.
+* La agencia solo puede usar una cuenta en Yahoo.
 
-To find your account ID, log into the Yahoo dashboard, click the cog icon to open the ***Settings*** menu, and select ***Billing***:
+Para encontrar tu ID de cuenta, inicia sesión en el dashboard de Yahoo, haz clic en el icono de engranaje para abrir el menú de ***Configuración*** y selecciona ***Facturación***:
 
 ![gemini-account-number.png](https://files.readme.io/77f464c6dadefc54acb3a84d97ab0d0751610b253d2da90523bc117f1f26683c-50705625726865.png)
 
-Click-through and view-through lookback windows are in read-only mode and should be configured by the advertiser.
+Las ventanas de lookback por clics y view-through están en modo de solo lectura y las debe configurar el anunciante.
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can map your AppsFlyer events with Yahoo via postbacks.
+En esta sección, puedes asignar tus eventos de AppsFlyer a Yahoo mediante postbacks.
 
-1. Enter the Dot Tag ID provided by Yahoo.  
-   To find it on the Yahoo dashboard, click the cog icon to open the **Settings** menu and select **View Dot tag code**. Copy the code from the dashboard:
+1. Introduce el ID de Dot Tag proporcionado por Yahoo.  
+   Para encontrarlo en el Dashboard de Yahoo, haz clic en el icono de engranaje para abrir el menú **Settings** y selecciona **View Dot tag code**. Copia el código del dashboard:
 
    [![yahoo-dot-tag.png](https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png)](https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png)
-2. Turn on In-App Event Postbacks
-3. Select the Sending Option for all SDK-defined events.  
-   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
-   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
-4. Click **Add Event** to add an SDK Event to the list
-5. Complete the following parameters:
+2. Activa los postbacks de eventos in-app
+3. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
+    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+4. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
+5. Completa los siguientes parámetros:
 
-| Parameter Name | Description |
+| Nombre de parámetro | Nota |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app or from server-to-server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on the Yahoo side.  <br />Obtain the corresponding Event ID from Yahoo and set in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **Nombre de evento del SDK** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos server-to-server.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
+| **Identificador de evento de partner** | El nombre o ID único de cada evento según lo define Yahoo.  <br />Obtén el ID de evento correspondiente de Yahoo e introdúcelo en el campo de texto. |
+| **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
 
 **Note:**
 
-For agencies, the ***Sending option*** and the list of events available for mapping depend on the permissions given to the agency by the advertiser.
+Para las agencias, la ***opción de envío*** y la lista de eventos disponibles para la asignación dependen de los permisos que el anunciante haya concedido a la agencia.
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-This tab is not applicable for Yahoo.
+Esta pestaña no aplica a Yahoo.
 
-> 📘 **Note**
+> 📘 **Nota:**
 >
-> For all SRNs, such as Meta ads, Apple Search Ads, Adwords, Snapchat, etc. this tab is not functional, as they do not use external attribution links.
+> Para todas las SRN, como anuncios de Meta, Apple Search Ads, Adwords, Snapchat, etc., esta pestaña no es funcional, ya que no utilizan enlaces de atribución externos.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-### Enabling and testing Yahoo cost integration
+### Habilitar y probar la integración de costos de Yahoo
 
-The cost integration provides the following aggregated data:
+La integración de costos proporciona los siguientes datos agregados:
 
-* Cost data for your campaigns, adsets, ads, and geos/countries. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.  
-  **Note:** Cost data requires an <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> subscription.
-* Data on clicks, impressions, and enriched data (keywords, campaign names, and adset).
+* Datos de costos para tus campañas, conjuntos de anuncios, anuncios y geos/países. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de ad network</Anchor> para obtener todos los detalles sobre las dimensiones, métricas y funciones compatibles.  
+  **Nota:** Los datos de costos requieren una <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview?query=xpend">suscripción a ROI360</Anchor> .
+* Datos sobre clics, impresiones y datos enriquecidos (palabras clave, nombres de campañas y conjunto de anuncios).
 
-**To enable the cost API**:
+**Para habilitar la API de costos**:
 
-* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer datos de costos coincidentes, ya sea en el dashboard de estado de la integración de costos (y de ingresos por anuncios) o en el dashboard de la ad network individual.
 
-> ❗️ **Warning**
+> ❗️ **Advertencia**
 >
-> Once you set Yahoo's cost do not change the name of any running campaign, ad set, or single ad, as it may cause serious discrepancies or missing cost data.
+> Una vez definido el costo de Yahoo, no cambies el nombre de ninguna campaña, conjunto de anuncios o anuncio individual en funcionamiento, ya que puede provocar discrepancias graves o la ausencia de datos de costos.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad Revenue is not supported by this partner.
+Este partner no admite ingresos publicitarios.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Yahoo. Note that even if attribution is disabled for Yahoo, the permissions tab is active and you can grant control to Yahoo.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a Yahoo. Ten en cuenta que, incluso si la atribución está deshabilitada para Yahoo, la pestaña de permisos está activa y puedes otorgar control a Yahoo.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to set up in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue data*** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles***: solo a los datos de usuarios fieles propios del partner.
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos***: solo a los datos de ingresos atribuidos al partner
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-## Marking events as conversions in Yahoo
+## Marcar eventos como conversiones en Yahoo
 
-You can mark as conversions the events that AppsFlyer sends to Yahoo through in-app event postbacks:
+Puedes marcar como conversiones los eventos que AppsFlyer envía a Yahoo mediante postbacks de eventos in-app:
 
 ![yahoo-conversion-rules.png](https://files.readme.io/17a3fdd1619d4e4d0bfcca35e4fd51e7f270ce7446f9e70fb6f7787291e2e022-50705625729297.png)
 
-## Yahoo raw report
+## Reporte raw Yahoo
 
-AppsFlyer receives the following parameters from Yahoo and maps them to the following fields in the raw reports.
+AppsFlyer recibe los siguientes parámetros de Yahoo y los asigna a los siguientes campos en los reportes raw.
 
-| Yahoo Parameters | AppsFlyer Raw Report Parameters |
+| Parámetros de Yahoo | Parámetros del reporte raw de AppsFlyer |
 | --- | --- |
-| Creative ID | Ad ID |
-| Creative Name | Ad |
-| Adgroup ID | Adset ID |
-| Adgroup Name | Adset |
-| Campaign ID | Campaign ID |
-| Campaign Name | Campaign |
-| Site ID | Site ID |
+| Creative ID | Retargeting: Primer inicio después del re-engagement o la reatribución. |
+| Nombre de la creatividad | El valor puede tener hasta 4 dígitos. |
+| ID de grupo de anuncios | ID del adset |
+| Nombre de grupo de anuncios | Conjunto de anuncios |
+| Cadena | Cadena |
+| Nombre de la campaña | Apps asociadas que pertenecen a una plantilla OneLink relacionada para atribución multiplataforma |
+| Parámetros de seguimiento adicionales utilizados para la atribución. | Parámetros de seguimiento adicionales utilizados para la atribución. |
 
-## Limitations
+## Limitaciones
 
-* When you enable attribution for the first time, it takes up to 4 hours to be reflected in the Yahoo UI.
+* Cuando habilitas la atribución por primera vez, pueden pasar hasta 4 horas antes de que se refleje en la interfaz de usuario de Yahoo.
 
-## SKAdNetwork support
+## Soporte SKAdNetwork
 
-SKAdNetwork interoperation with Yahoo is available.
+La interoperabilidad de SKAdNetwork con Yahoo está disponible.
 
-<div data-zendesk-anchors="h_01HJR1D3NZJPKDK3DJ7DT3VZ44=setting-up-yahoo h_01HJR1D3P0RS08SJZJYF2487MM=tip h_01HJR1D3P0TMSSJBKDG130RV2E=integration-tab h_01HJR1D3P05WQGP8SFZ5H5AD6A=advertiser-configuration h_01HJR1D3P0WC1W6H8MKHKR9MX9=activate-partner h_01HJR1D3P0C5TNMHRGWG8JR2TQ=general-settings clickthrough-attribution=click-through-attribution h_01HJR1D3P0V155S0QFVP2RDPP8=click-through-attribution h_01HJR1D3P02HSHKFR45HRQWGCE=agency-configuration inapp-events-settings=in-app-events-settings h_01HJR1D3P0PAT8B60P5313GMQQ=in-app-events-settings h_01HJR1D3P0G9P4FQ5QZWXD9PW8=attribution-link-tab h_01HJR1D3P03WM14AYT4TKXVX0X=note h_01HJR1D3P0YHSB6QDQJ77WFR45=cost-tab h_01HJR1D3P10YRNVR68AAJNMY6K=enabling-and-testing-yahoo-cost-integration h_01HJR1D3P10EF6X40X3YPKRTF0=warning h_01HJR1D3P18KB4AXKN31ZKCHRC=ad-revenue-tab h_01HJR1D3P10GR6AZ7MNS0Q7NWZ=permissions-tab h_01HJR1D3P1D817ABQ7D92KJ1QK=marking-events-as-conversions-in-yahoo h_01HJR1D3P19SM0JFZ7Q2XND911=yahoo-raw-report h_01HJR1D3P1YAJJMCC6TX2NSCTG=limitations h_01HJR1D3P1HBBBCVMRGZ96DC1E=skadnetwork-support" />
+<div data-zendesk-anchors="setting-up-yahoo=configuraci%C3%B3n-de-yahoo h_01HJR1D3NZJPKDK3DJ7DT3VZ44=configuraci%C3%B3n-de-yahoo h_01HJR1D3P0RS08SJZJYF2487MM=consejo h_01HJR1D3P0TMSSJBKDG130RV2E=integration-tab advertiser-configuration=configuraci%C3%B3n-del-anunciante h_01HJR1D3P05WQGP8SFZ5H5AD6A=configuraci%C3%B3n-del-anunciante activate-partner=activar-socio h_01HJR1D3P0WC1W6H8MKHKR9MX9=activar-socio general-settings=configuraci%C3%B3n-general h_01HJR1D3P0C5TNMHRGWG8JR2TQ=configuraci%C3%B3n-general clickthrough-attribution=atribuci%C3%B3n-por-clic h_01HJR1D3P0V155S0QFVP2RDPP8=atribuci%C3%B3n-por-clic agency-configuration=configuraci%C3%B3n-de-agencia h_01HJR1D3P02HSHKFR45HRQWGCE=configuraci%C3%B3n-de-agencia inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HJR1D3P0PAT8B60P5313GMQQ=configuraci%C3%B3n-de-eventos-in-app h_01HJR1D3P0G9P4FQ5QZWXD9PW8=attribution-link-tab h_01HJR1D3P03WM14AYT4TKXVX0X=nota h_01HJR1D3P0YHSB6QDQJ77WFR45=cost-tab enabling-and-testing-yahoo-cost-integration=habilitar-y-probar-la-integraci%C3%B3n-de-costos-de-yahoo h_01HJR1D3P10YRNVR68AAJNMY6K=habilitar-y-probar-la-integraci%C3%B3n-de-costos-de-yahoo h_01HJR1D3P10EF6X40X3YPKRTF0=advertencia h_01HJR1D3P18KB4AXKN31ZKCHRC=ad-revenue-tab h_01HJR1D3P10GR6AZ7MNS0Q7NWZ=permissions-tab marking-events-as-conversions-in-yahoo=marcar-eventos-como-conversiones-en-yahoo h_01HJR1D3P1D817ABQ7D92KJ1QK=marcar-eventos-como-conversiones-en-yahoo yahoo-raw-report=reporte-raw-yahoo h_01HJR1D3P19SM0JFZ7Q2XND911=reporte-raw-yahoo limitations=limitaciones h_01HJR1D3P1YAJJMCC6TX2NSCTG=limitaciones skadnetwork-support=soporte-skadnetwork h_01HJR1D3P1HBBBCVMRGZ96DC1E=soporte-skadnetwork" />

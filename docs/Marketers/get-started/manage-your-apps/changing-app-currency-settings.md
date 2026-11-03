@@ -1,5 +1,5 @@
 ---
-title: Changing app currency settings
+title: Cambiar la configuración de moneda de la aplicación
 metadata:
   keywords:
     - Marketers
@@ -12,83 +12,82 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2025-12-24T08:22:42Z'
-  edited_at: '2025-12-25T00:01:08Z'
+  edited_at: '2026-08-12T12:04:57Z'
   id: 42223406543249
-  locale: en-us
+  locale: es
   section: Manage your apps
   section_id: 6551015977105
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/42223406543249-Changing-app-currency-settings
+  url: https://support.appsflyer.com/hc/es/articles/42223406543249
 ---
-> **At a glance:** Easily manage your app’s currency settings to align your revenue reporting with your business needs. This article clarifies how currency changes impact your historical and future data, helps you understand who can make changes, and outlines the required approval steps.
+> **Resumen:** Gestiona fácilmente la configuración de moneda de tu aplicación para alinear tus reportes de ingresos con las necesidades de tu negocio. En este artículo se aclara cómo afectan los cambios de moneda a tus datos históricos y futuros, quién puede hacer estos cambios y cuáles son los pasos de aprobación necesarios.
 
-## **About changing app currency settings**
+## **Información sobre cómo cambiar la configuración de moneda de la aplicación**
 
-By default, your AppsFlyer dashboards display data using your selected local currency. You can easily switch to USD view at any time without changing the actual currency settings of your app.
+De forma predeterminada, tus dashboards de AppsFlyer muestran los datos con la moneda local seleccionada. Puedes cambiar a la vista en USD en cualquier momento sin modificar la configuración de moneda real de tu aplicación.
 
-If you're viewing data from multiple apps with different local currencies, the dashboard defaults to USD automatically.
+Si estás viendo datos de varias aplicaciones con distintas monedas locales, el dashboard se establece automáticamente en USD de forma predeterminada.
 
-## **Who can change the app currency?**
+## **¿Quién puede cambiar la moneda de la aplicación?**
 
-Currency changes depend on your app's existing data:
+Los cambios de moneda dependen de los datos existentes de tu aplicación:
 
-* **Apps without revenue or cost:** You can change the currency directly.
-* **Apps with revenue or cost:** Only an **AppsFlyer admin** can perform the change.  
-  To request a currency change:
+* **Aplicaciones sin ingresos ni costos:** Puedes cambiar la moneda directamente.
+* **Aplicaciones con ingresos o costos:** Solo un **administrador de AppsFlyer** puede realizar el cambio.  
+  Para solicitar un cambio de moneda:
 
-1. Contact your AppsFlyer representative or submit a support ticket.
-2. Provide your app details.
-3. Attach written approval acknowledging the impact on reporting.
+1. Ponte en contacto con tu representante de AppsFlyer o envía un ticket de soporte.
+2. Proporciona los datos de tu aplicación.
+3. Adjunta una aprobación por escrito en la que se reconozca el impacto en los reportes.
 
-## **How currency changes impact your data**
+## **Cómo afectan los cambios de moneda a tus datos**
 
-Changing your app currency impacts revenue data display and accuracy:
+Cambiar la moneda de tu aplicación afecta a la visualización y a la precisión de los datos de ingresos:
 
 <div id="future-data" />
 
-<Accordion title="Future data">
+<Accordion title="Datos futuros">
 
-Once the currency changes, all future events with the af\_revenue parameter use the new currency. Reports after the change will reflect this, but reports spanning the change date may show mixed currencies.
+Una vez que cambie la moneda, todos los eventos futuros con el parámetro af\_revenue usarán la nueva moneda. Los reportes posteriores al cambio lo reflejarán, pero los reportes que abarquen la fecha del cambio pueden mostrar una mezcla de monedas.
 
 </Accordion>
 
 <div id="historical-data-accuracy" />
 
-<Accordion title="Historical data accuracy">
+<Accordion title="Precisión de los datos históricos">
 
-Historical data remains, but becomes inaccurate:
+Los datos históricos se conservan, pero dejan de ser precisos:
 
-* Revenue events before the change remain in the old currency.
-* Revenue events after the change use the new currency.
-* This mixture causes inaccuracies in metrics like LTV and ROAS.
+* Los eventos de ingresos anteriores al cambio permanecen en la moneda anterior.
+* Los eventos de ingresos posteriores al cambio usan la nueva moneda.
+* Esta mezcla provoca imprecisiones en métricas como LTV y ROAS.
 
-The impact varies:
+El impacto varía:
 
-* **Extensive revenue history:** Significant discrepancies.
-* **Minimal revenue history:** Lesser impact.
+* **Historial amplio de ingresos:** Discrepancias significativas.
+* **Historial mínimo de ingresos:** Menor impacto.
 
 </Accordion>
 
-### **Example**
+### **Ejemplo**
 
 <div id="reporting-impacts" />
 
-<Accordion title="Reporting impacts">
+<Accordion title="Impactos en los reportes">
 
-If you change your app currency on **October 1**, here's how revenue reporting methods are affected:
+Si cambias la moneda de tu aplicación el **1 de octubre**, así es como se ven afectados los métodos de reporte de ingresos:
 
-| **Reporting method** | **Before Oct 1** | **Spanning Oct 1** | **After Oct 1** |
+| **Método de reporte** | **Antes del 1 de oct** | **Abarca el 1 de oct** | **Después del 1 de oct** |
 | --- | --- | --- | --- |
-| **LTV & Cohort (D0–180)** | Mixed currencies (inaccurate) | Mixed currencies (inaccurate) | Accurate |
-| **Activity** | Shows previous currency | Mixed currencies (inaccurate) | Accurate |
-| **SSOT** | Accurate up to 7 days before the change | Mixed currencies (inaccurate) | Accurate |
+| **LTV & cohorte (D0–180)** | Monedas mixtas (inexactas) | Monedas mixtas (inexactas) | Preciso |
+| **ACTIVIDAD** | Muestra la moneda anterior | Monedas mixtas (inexactas) | Preciso |
+| **Métricas orgánicas del día 7** | Preciso hasta 7 días antes del cambio | Monedas mixtas (inexactas) | Preciso |
 
 </Accordion>
 
-> 🚧 **Important!**
+> 🚧 **Dos puntos (:)**
 >
-> * Currency changes are **permanent**.
-> * Historical data **cannot be converted or restored**.
-> * Confirm all implications with your AppsFlyer account manager before making changes.
+> * Los cambios de moneda son **permanentes**.
+> * Los datos históricos **no se pueden convertir ni restaurar**.
+> * Confirma todas las implicaciones con tu gerente de cuenta de AppsFlyer antes de hacer cambios.
 
-<div data-zendesk-anchors="h_01KD7Q6FR8VKG3HGXDJC6YB5J3=about-changing-app-currency-settings h_01KD7Q6FR96NRV4SBRQ8YEW12X=who-can-change-the-app-currency h_01KD7Q6FRB9TCV2N0KT2N4599A=how-currency-changes-impact-your-data h_01KD7QJQ4FF197R69RAD5Q6KKT=future-data h_01KD7QM57R8TJY5T10R36EB1P9=historical-data-accuracy h_01KD7QW856FFEQ779153KNCYW6=example h_01KD7QG6CB2KFGXE6D4M46B65H=reporting-impacts h_01KD7QS7EYS21KX0Q9WB7ETV99=important" />
+<div data-zendesk-anchors="about-changing-app-currency-settings=informaci%C3%B3n-sobre-c%C3%B3mo-cambiar-la-configuraci%C3%B3n-de-moneda-de-la-aplicaci%C3%B3n h_01KD7Q6FR8VKG3HGXDJC6YB5J3=informaci%C3%B3n-sobre-c%C3%B3mo-cambiar-la-configuraci%C3%B3n-de-moneda-de-la-aplicaci%C3%B3n who-can-change-the-app-currency=qui%C3%A9n-puede-cambiar-la-moneda-de-la-aplicaci%C3%B3n h_01KD7Q6FR96NRV4SBRQ8YEW12X=qui%C3%A9n-puede-cambiar-la-moneda-de-la-aplicaci%C3%B3n how-currency-changes-impact-your-data=c%C3%B3mo-afectan-los-cambios-de-moneda-a-tus-datos h_01KD7Q6FRB9TCV2N0KT2N4599A=c%C3%B3mo-afectan-los-cambios-de-moneda-a-tus-datos h_01KD7QJQ4FF197R69RAD5Q6KKT=future-data h_01KD7QM57R8TJY5T10R36EB1P9=historical-data-accuracy example=ejemplo h_01KD7QW856FFEQ779153KNCYW6=ejemplo h_01KD7QG6CB2KFGXE6D4M46B65H=reporting-impacts h_01KD7QS7EYS21KX0Q9WB7ETV99=dos-puntos-" />

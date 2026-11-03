@@ -1,5 +1,5 @@
 ---
-title: Spotify campaign configuration
+title: Configuración de la campaña de Spotify
 metadata:
   keywords:
     - Advertisers
@@ -13,110 +13,108 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2020-11-05T07:36:01Z'
-  edited_at: '2026-06-16T10:01:47Z'
+  edited_at: '2026-08-12T12:16:04Z'
   id: 360015074677
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (R-Z)
   section_id: 6552025468305
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360015074677-Spotify-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/360015074677
 ---
-> **At a glance:** Spotify, an AppsFlyer ad network integrated partner, uses its enhanced mobile advertising solution to cultivate strategic, scalable, and smart campaigns to meet the needs of mobile users. In Spotify, clicks are generated when a user clicks on a CTA button while watching or hearing an ad.
+> **De un vistazo:** Spotify, un partner integrado de ad network de AppsFlyer, utiliza su solución mejorada de publicidad móvil para cultivar campañas estratégicas, escalables e inteligentes que satisfacen las necesidades de los usuarios móviles. En Spotify, los clics se generan cuando un usuario hace clic en un botón de CTA mientras ve o escucha un anuncio.
 
 <Image alt="Spotify_Full_Logo_RGB_Black.png" src="https://files.readme.io/e3908e19ec71c506c2ff135652cea6529f128743d8284c02c1a481f24485b3a6-small-37818004235409.png" width="53.91%" />
 
-## Setting up Spotify
+## Configuración de Spotify
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 
-**To set up a new integration:**
+**Para activar o editar la integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below.
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+   **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
+2. Selecciona la aplicación correspondiente.
+3. Haz clic en **Configurar integración**.
+4. En la **primera visita** aquí, deberás activar **Activar partner** para habilitar la configuración de los parámetros de integración. El selector debe estar activado mientras trabajes con Medialyzer. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
 
-Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">partner configuration window header</Anchor>.
+Saber más sobre el <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">encabezado de la ventana de configuración del partner</Anchor>.
 
-Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation rules</Anchor>.
+Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">reglas de activación del partner</Anchor>.
 
-> 🚧 **Important**
+> 🚧 **Importante**
 >
-> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">general settings</Anchor> step in the Integration tab is **mandatory** for all partners.
-> * All the rest of the steps are either descriptive or **optional.**
+> * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">configuración general</Anchor> en la pestaña Integración es **obligatorio** para todos los partners.
+> * Todos los demás pasos son descriptivos u **opcionales.**
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The Integration tab is divided into different sections as described below.
+La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
-### General settings
+### Configuración general
 
-**Enable view-through attribution**
+**Habilitar la atribución view-through**
 
-If you want to attribute view-through installs from Spotify, enable this toggle. To set the view-through lookback window, go to the attribution link tab (described below).
+Si quieres atribuir instalaciones view-through de Spotify, activa este interruptor. Para configurar la ventana de lookback view-through, ve a la pestaña del enlace de atribución (se describe a continuación).
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Spotify has a server-to-server integration with AppsFlyer, so attribution links are not used for campaign measurement. When you select your app as the conversion measurement source during Spotify campaign setup, the AppsFlyer integration will automatically be activated, and Spotify will send AppsFlyer impression and click data with the necessary identifiers for attribution.
+Spotify tiene una integración de servidor a servidor con AppsFlyer, por lo que no se utilizan enlaces de atribución para la medición de campañas. Cuando seleccionas tu aplicación como fuente de medición de conversiones durante la configuración de la campaña de Spotify, la integración de AppsFlyer se activará automáticamente y Spotify enviará a AppsFlyer datos de impresiones y clics con los identificadores necesarios para la atribución.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost integration is not available for Spotify.
+La integración de costos no está disponible para Spotify.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue is not available for Spotify.
+Los ingresos por publicidad no están disponibles para Spotify.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant Spotify, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Spotify, the permissions tab is active and you can grant control to Spotify.
+En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Spotify, tanto si el partner actúa como ad network, como agencia o incluso como ambas. Ten en cuenta que, aunque la atribución esté deshabilitada para Spotify, la pestaña de permisos está activa y puedes otorgar el control a Spotify.
 
-After you enable granting permissions to Spotify, you can add team members to grant them access to the data according to the selected permissions.  
-Permissions can be granted only to Spotify employees who have an ad network team member account on AppsFlyer.  
-**To grant permissions to ad network team members:**
+Después de habilitar la concesión de permisos a Spotify, puedes agregar miembros del equipo para otorgarles acceso a los datos según los permisos seleccionados.  
+Los permisos solo se pueden otorgar a empleados de Spotify que tengan una cuenta de miembro del equipo de ad network en AppsFlyer.  
+**Para otorgar permisos a miembros del equipo de ad network:**
 
-1. Click **Add team member.**
-2. Enter the ad network team member's email.
-3. Click **Add**.
+1. Haz clic en **Añadir miembro del equipo.**
+2. Ingresa el correo electrónico del miembro del equipo de la ad network.
+3. Haz clic en **Añadir**.
 
-> 🚧 **Important!**
+> 🚧 **Importante:**
 >
-> * When you give Spotify permissions to configure the integration and to change in-app event postbacks, you allow them to potentially access all attribution events, including organic and non-organic traffic from all media sources.
-> * Changes that Spotify makes override the current configuration, even if set by the advertiser.
+> * Cuando otorgas a Spotify permisos para configurar la integración y cambiar los postbacks de eventos in-app, permites que pueda acceder potencialmente a todos los eventos de atribución, incluido el tráfico orgánico y no orgánico de todas las fuentes de medios.
+> * Los cambios que realiza Spotify anulan la configuración actual, aunque la haya establecido el anunciante.
 
-The following are the permissions types that advertisers can grant Spotify:
+Estos son los tipos de permisos que los anunciantes pueden otorgar a Spotify:
 
-* **Allow to configure integration** - permit the partner to set up the integration tab (except in-app event postbacks).
-* **Allow to configure in-app event postbacks** - permit the partner to set up in-app event postbacks mapping to itself on the integration tab.
-* **Allow access to your retention report** - only to the partner's own retention data.
-* **Allow access to your aggregate loyal user data** - only to the partner's own loyal user data.
-* **Allow access to your aggregate in-app events data** - only to the partner's own in-app events data.
-* **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner.
-* **Allow access to your Protect360 dashboard & raw data via API** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser.
+* **Permitir configurar la integración**: permite que el partner configure la pestaña Integración (excepto los postbacks de eventos in-app).
+* **Permitir configurar los postbacks de eventos in-app** - permite que el partner configure la asignación de postbacks de eventos in-app para sí mismo en la pestaña de integración.
+* **Permitir el acceso a tu reporte de retención** - solo a los datos de retención del propio partner.
+* **Permitir el acceso a tus datos agregados de usuarios fieles** - solo a los datos de usuarios fieles del propio partner.
+* **Permitir el acceso a tus datos agregados de eventos in-app** - solo a los datos de eventos in-app del propio partner.
+* **Permitir el acceso a tus datos agregados de ingresos** - solo a los datos de ingresos atribuidos al partner.
+* **Permitir el acceso a tu dashboard de Protect360 & raw data mediante API** - solo a los datos de Protect360 del propio partner, siempre que la función esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJS1DB7YV8T6RNXH1JRNTGDN=setting-up-spotify h_01HJS1DB7YKBY0Q7GY7QT9DHKZ=important h_01HJS1DB7YQKM7DRR0MJGHX95G=integration-tab h_01HJS1DB7YEQZ7JQ0T2NWFBQBM=general-settings h_01HJS1DB7YHN0PCMFWQ9SZKE27=attribution-link-tab h_01HJS1DB7ZVSQCYJZENWJ9G77H=cost-tab h_01HJS1DB7Z03PTQSQB0JVJEFY0=ad-revenue-tab h_01HJS1DB7Z6CBDQFVNC75X2Z6Z=permissions-tab h_01HJS1DB7ZPZET71JAZ8E4CZ7S=important-1" />
+<div data-zendesk-anchors="setting-up-spotify=configuraci%C3%B3n-de-spotify h_01HJS1DB7YV8T6RNXH1JRNTGDN=configuraci%C3%B3n-de-spotify h_01HJS1DB7YKBY0Q7GY7QT9DHKZ=importante h_01HJS1DB7YQKM7DRR0MJGHX95G=integration-tab general-settings=configuraci%C3%B3n-general h_01HJS1DB7YEQZ7JQ0T2NWFBQBM=configuraci%C3%B3n-general h_01HJS1DB7YHN0PCMFWQ9SZKE27=attribution-link-tab h_01HJS1DB7ZVSQCYJZENWJ9G77H=cost-tab h_01HJS1DB7Z03PTQSQB0JVJEFY0=ad-revenue-tab h_01HJS1DB7Z6CBDQFVNC75X2Z6Z=permissions-tab h_01HJS1DB7ZPZET71JAZ8E4CZ7S=importante-1" />

@@ -1,5 +1,7 @@
 ---
-title: Data Collaboration Platform (DCP) - Prepare source data for ingestion
+title: >-
+  Plataforma de Colaboración de Datos (DCP): prepara los datos fuente para su
+  ingestión
 metadata:
   keywords:
     - Marketers
@@ -12,112 +14,111 @@ x-zendesk:
     - Marketers
     - Data Management
   created_at: '2026-01-26T12:08:32Z'
-  edited_at: '2026-07-27T10:44:15Z'
+  edited_at: '2026-08-12T11:53:57Z'
   id: 43205325114897
-  locale: en-us
+  locale: es
   section: Data Collaboration Platform
   section_id: 26230608274065
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/43205325114897-Data-Collaboration-Platform-DCP-Prepare-source-data-for-ingestion
+  url: https://support.appsflyer.com/hc/es/articles/43205325114897
 ---
-> **At a glance:** Prepare your source data to maximize match rates between collaborator datasets and optimize collaboration outcomes.
+> **Resumen:** Prepara tus datos fuente para maximizar las tasas de coincidencia entre los conjuntos de datos de los colaboradores y optimizar los resultados de la colaboración.
 
-## About data preparation
+## Acerca de la preparación de datos
 
-The AppsFlyer <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP)</Anchor> is designed to ingest and process large-scale transactional data, user-level data, or a combination of both from multiple collaborators. Once ingested, the DCP can match users across datasets using shared identifiers (for example, hashed email or hashed phone) and enable collaboration workflows based on that data.
+La <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-guide">Plataforma de Colaboración de Datos (DCP)</Anchor> de AppsFlyer está diseñada para ingerir y procesar datos transaccionales a gran escala, datos a nivel de usuario o una combinación de ambos de varios colaboradores. Una vez ingeridos los datos, la DCP puede hacer coincidir usuarios entre conjuntos de datos mediante identificadores compartidos (por ejemplo, correo electrónico con hash o teléfono con hash) y habilitar flujos de trabajo de colaboración basados en esos datos.
 
-This article outlines:
+En este artículo se explica lo siguiente:
 
-* The kinds of data the DCP can process (transactional, user-level, or a combination)
-* How to structure data to maximize match rates between collaborators, and for optimal matching by activation partners
-* Which data structures are recommended and which aren't
-* How to handle multi-value identifiers when using CSV files
+* Los tipos de datos que la DCP puede procesar (transaccionales, a nivel de usuario o una combinación de ambos)
+* Cómo estructurar los datos para maximizar las tasas de coincidencia entre colaboradores y lograr una coincidencia óptima por parte de los partners de activación
+* Qué estructuras de datos se recomiendan y cuáles no
+* Cómo gestionar identificadores con varios valores al usar archivos CSV
 
-## Understand data types
+## Comprender los tipos de datos
 
-Most sources used in collaborations involve one or both of the following data types:
+La mayoría de las fuentes utilizadas en las colaboraciones incluyen uno o ambos de los siguientes tipos de datos:
 
-* **User-level (identity) data**
-  * **Goal:** Represent each user and the identifiers used for matching
-  * **Recommended structure:** One row per user
-* **Transactional (event) data**
-  * **Goal:** Represent user actions (purchases, visits, transactions)
-  * **Typical structure:** Multiple rows per user (because a user can have many transactions)
+* **Datos a nivel de usuario (identidad)**
+  * **Objetivo:** representar a cada usuario y los identificadores utilizados para la coincidencia
+  * **Estructura recomendada:** una fila por usuario
+* **Datos transaccionales (eventos)**
+  * **Objetivo:** representar las acciones de los usuarios (compras, visitas, transacciones)
+  * **Estructura habitual:** varias filas por usuario (porque un usuario puede tener muchas transacciones)
 
-## Data structuring guidelines
+## Directrices para estructurar los datos
 
-This section outlines DCP data structuring guidelines and best practices.
+En esta sección se describen las directrices y mejores prácticas para estructurar datos en la DCP.
 
 <div id="workflow-and-structuring-guidelines" />
 
-<Accordion title="Recommended data structures">
+<Accordion title="Estructuras de datos recomendadas">
 
-**To structure your source data for optimal ingestion and maximum outcomes in DCP:**
+**Para estructurar tus datos fuente para una ingestión óptima y maximizar los resultados en la DCP:**
 
-1. Ensure it <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-data-requirements">meets source data formatting requirements</Anchor>.
-2. For best results, **structure identity data as one row per user and include all available identifiers for that user.** See [Recommended identifier structures](#recommended-identifier-structures).
-   * If users have multiple email addresses or phone numbers, use array-based formats (such as Parquet, BigQuery, or Snowflake).
-3. Check that [hashing guidelines](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-e-hashed-data-formatting-guidelines-by-media-partner) are followed.
-4. For transactional datasets (and other data types where applicable), **use the DCP Data View tool** to create a business-oriented, privacy-safe subset of your data optimized for collaboration, and share it instead of raw tables. [Why Data Views are recommended](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-c-why-dataviews-matter-and-recommended).
+1. Asegúrate de que <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#requisitos-de-los-datos-de-las-fuentes">cumple los requisitos de formato de los datos fuente</Anchor>.
+2. Para obtener los mejores resultados, **estructura los datos de identidad con una fila por usuario e incluye todos los identificadores disponibles de ese usuario.** Consulta [Estructuras de identificadores recomendadas](#estructuras-de-identificadores-recomendadas).
+   * Si los usuarios tienen varias direcciones de correo electrónico o números de teléfono, usa formatos basados en matrices (como Parquet, BigQuery o Snowflake).
+3. Comprueba que se sigan las [directrices de Hashing](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-e-hashed-data-formatting-guidelines-by-media-partner).
+4. Para los conjuntos de datos transaccionales (y otros tipos de datos, cuando corresponda), **usa la herramienta DCP Data View** para crear un subconjunto de tus datos orientado al negocio, seguro en términos de privacidad y optimizado para la colaboración, y compártelo en lugar de las tablas sin procesar. [Por qué se recomiendan las Data Views](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-c-why-dataviews-matter-and-recommended).
 
-While other structures can be used, they may not be ideally suited for getting the most out of DCP. See [Data structures that aren't recommended](#data-structures-that-arent-recommended).
+Aunque se pueden usar otras estructuras, puede que no sean las más adecuadas para sacar el máximo partido a DCP. Consulta [Estructuras de datos no recomendadas](#data-structures-that-arent-recommended).
 
-#### Recommended identifier structures
+#### Estructuras de identificadores recomendadas
 
-To maximize match rates, it's recommended to send user-level identity data as a single row per user whenever possible and to include all available identifiers in a structure that accurately reflects how users are represented.
+Para maximizar las tasas de coincidencia, se recomienda enviar los datos de identidad a nivel de usuario en una sola fila por usuario siempre que sea posible e incluir todos los identificadores disponibles en una estructura que refleje con precisión cómo se representa a los usuarios.
 
-**Option 1: One row per user, one value per identifier type**
+**Opción 1: Una fila por usuario y un valor por tipo de identificador**
 
-**Simple and effective.**
+**Sencillo y eficaz.**
 
-Use this when each user has at most one hashed email address, one hashed phone number, and so on.
+Usa esta opción cuando cada usuario tenga como máximo una dirección de correo electrónico con Hashing, un número de teléfono con Hashing, etc.
 
-**Example**
+**Ejemplo**
 
-| User ID | Hashed Email | Hashed Phone |
+| ID de usuario | Correo electrónico con Hashing | Teléfono con Hashing |
 | --- | --- | --- |
 | 123 | 5d41402 | 152d234b70 |
 | 456 | 7d793037 |  |
 | 789 |  | 0e6e5414 |
 
-**Why this is recommended**
+**Por qué se recomienda**
 
-* Simplest to prepare and ingest
-* Easy to validate and troubleshoot
-* Strong matching performance when identifiers are complete and consistent (for matching with collaborator datasets and activation media partner matching)
+* Es lo más sencillo de preparar e ingerir
+* Fácil de validar y solucionar problemas
+* Buen rendimiento de coincidencia cuando los identificadores están completos y son coherentes (para la coincidencia con conjuntos de datos de colaboradores y la coincidencia de Partners de medios para la activación)
 
-**Best fit**
+**Más adecuado para**
 
-* Great for CSV-based uploads
-* Also works well in Parquet / BigQuery / Snowflake
+* Ideal para cargas basadas en CSV
+* También funciona bien en Parquet / BigQuery / Snowflake
 
-**Option 2: Arrays (lists) of identifiers for multi-value fields**
+**Opción 2: Matrices (listas) de identificadores para campos con varios valores**
 
-**Best for accuracy when users have multiple emails and phones.**
+**La mejor opción para mantener la precisión cuando los usuarios tienen varios correos electrónicos y teléfonos.**
 
-Use this when a user can have multiple values of the same identifier type, such as:
+Utiliza esta opción cuando un usuario puede tener varios valores del mismo tipo de identificador, como:
 
-* Multiple hashed emails
-* Multiple hashed phones
+* Varios correos electrónicos con hash
+* Varios teléfonos con hash
 
-This structure should be represented as **native arrays**.
+Esta estructura debe representarse como **matrices nativas**.
 
-**Example**
+**Ejemplo**
 
-| User ID | Hashed Emails | Hashed Phones | MAID |
+| ID de usuario | Correos electrónicos con hash | Teléfonos con hash | MAID |
 | --- | --- | --- | --- |
 | u\_0001 | [a1b2 · c3d4 · e5f6] | [p1q2 · r3s4] | m001 |
 | u\_0002 | [z9y8 · x7w6] |  | m002 |
 | u\_0003 |  | [t1u2 · v3w4 · x5y6] |  |
 
-**Why this is preferred**
+**Por qué se prefiere esta opción**
 
-* Reflects how identity data is often stored internally
-* No need to guess how many “email columns” might be needed
-* Avoids ongoing schema changes
-* Maximizes matching potential (for collaborator datasets and for activation media partner matching) by allowing multiple identifiers per user
+* Refleja cómo suelen almacenarse internamente los datos de identidad
+* No hace falta adivinar cuántas «columnas de correo electrónico» pueden hacer falta
+* Evita cambios continuos en el esquema
+* Maximiza el potencial de coincidencia (para conjuntos de datos de colaboradores y para la coincidencia de partners de medios de activación) al permitir varios identificadores por usuario
 
-**Best fit**
+**La mejor opción**
 
 * Parquet (S3/GCS)
 * BigQuery
@@ -127,301 +128,301 @@ This structure should be represented as **native arrays**.
 
 <div id="practical-checklist-for-dcp-collaborators" />
 
-<Accordion title="Practical checklist for data structuring">
+<Accordion title="Lista de comprobación práctica para estructurar datos">
 
-#### Identity (user-level) dataset checklist
+#### Lista de comprobación del conjunto de datos de identidad (a nivel de usuario)
 
-* One row represents one user.
-* Include all available identifiers (hashed email, hashed phone, MAID, and so on).
-* If multiple values exist (for example, multiple emails), use native arrays where possible.
-* Avoid lists in cells, avoid “email\_1/email\_2/email\_3,” and avoid multi-row identity structures.
+* Una fila representa a un usuario.
+* Incluye todos los identificadores disponibles (correo electrónico con hash, teléfono con hash, MAID, etc.).
+* Si existen varios valores (por ejemplo, varios correos electrónicos), usa arrays nativos siempre que sea posible.
+* Evita las listas en las celdas, evita «correo electrónico\_1/correo electrónico\_2/correo electrónico\_3» y evita las estructuras de identidad de varias filas.
 
-#### Transactional (events) dataset checklist
+#### Lista de comprobación del conjunto de datos transaccionales (eventos)
 
-* Keep event/transaction rows as-is. See [Transactional data examples](#appendix-a-transactional-data-examples)
-* Use [Data Views](#appendix-c-why-dataviews-matter-and-recommended) to create collaboration-ready user-level summaries when appropriate.
+* Mantén las filas de eventos/transacciones tal cual. Consulta los [ejemplos de datos transaccionales](#appendix-a-transactional-data-examples)
+* Usa las [Data Views](#appendix-c-why-dataviews-matter-and-recommended) para crear resúmenes a nivel de usuario listos para la colaboración cuando corresponda.
 
-#### Data Views checklist
+#### Lista de comprobación de Data Views
 
-* Build business-oriented [Data Views](#appendix-c-why-dataviews-matter-and-recommended) (audience-ready, summarized, standardized).
-* Share Data Views instead of raw sensitive tables whenever possible.
-* Minimize shared fields to only what’s needed (for privacy and business protection).
-* Consider aggregations to reduce access to sensitive data and improve efficiency.
+* Crea [Data Views](#appendix-c-why-dataviews-matter-and-recommended) orientadas al negocio (listas para audiencias, resumidas y estandarizadas).
+* Comparte Data Views en lugar de tablas sensibles sin procesar siempre que sea posible.
+* Minimiza los campos compartidos a solo lo necesario (por privacidad y protección del negocio).
+* Considera usar agregaciones para reducir el acceso a datos sensibles y mejorar la eficiencia.
 
 </Accordion>
 
 <div id="supported-ingestion-cloud-services-and-formats" />
 
-<Accordion title="Supported ingestion cloud services and formats">
+<Accordion title="Servicios y formatos de ingesta en la nube compatibles">
 
-The DCP supports ingestion through multiple cloud services, such as:
+El DCP permite la ingesta a través de varios servicios en la nube, como:
 
 * AWS S3
 * GCS (Google Cloud Storage)
 * BigQuery
 * Snowflake
 
-#### Format guidance
+#### Guía de formatos
 
-* Use **CSV (comma-separated)** when each user has **one value per identifier type** (one email, one phone, and so on).
-* When users can have **multiple values** of the same identifier type (for example, multiple hashed emails), prefer **array-capable formats**:
-  * Parquet (common in big data)
-  * BigQuery (arrays are built-in)
-  * Snowflake (arrays are built-in)
+* Usa **CSV (separado por comas)** cuando cada usuario tenga **un valor por tipo de identificador** (un correo electrónico, un teléfono, etc.).
+* Cuando los usuarios puedan tener **varios valores** del mismo tipo de identificador (por ejemplo, varios correos electrónicos con hash), prioriza los **formatos compatibles con matrices**:
+  * Parquet (habitual en big data)
+  * BigQuery (los arrays están integrados)
+  * Snowflake (los arrays están integrados)
 
-**Notes:**
+**Notas:**
 
-* “Arrays” just means “a list of values.”
-* Parquet and arrays in BigQuery/Snowflake are standard, and most data teams can support this naturally.
+* «Arrays» simplemente significa «una lista de valores».
+* Parquet y los arrays en BigQuery/Snowflake son estándar, y la mayoría de los equipos de datos pueden dar soporte a esto de forma natural.
 
-See [Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake).](#appendix-b-connectorspecific-example-assets-aws-s3-gcs-bigquery-snowflake)
+Consulta [activos de ejemplo específicos del conector (AWS S3, GCS, BigQuery, Snowflake).](#appendix-b-connectorspecific-example-assets-aws-s3-gcs-bigquery-snowflake)
 
 <div id="data-structures-that-arent-recommended" />
 
-<Accordion title="Data structures that aren't recommended">
+<Accordion title="Estructuras de datos no recomendadas">
 
-Certain types of data structuring are ideally suited for ingestion into DCP, and others are not. The following is a list of data structures that **are not recommended**:
+Algunos tipos de estructuración de datos son idóneos para la ingesta en DCP, y otros no. A continuación se muestra una lista de estructuras de datos que **no se recomiendan**:
 
-#### Avoid: Multiple columns for the same identifier type
+#### Evita: varias columnas para el mismo tipo de identificador
 
-Examples like “primary/secondary/third email” are discouraged.
+No se recomiendan ejemplos como «correo electrónico principal/secundario/terciario».
 
-**Example to avoid**
+**Ejemplo que debes evitar**
 
-| User ID | Email Hash 1 | Email Hash 2 | Email Hash 3 |
+| ID de usuario | Hash de correo electrónico 1 | Hash de correo electrónico 2 | Hash de correo electrónico 3 |
 | --- | --- | --- | --- |
 | 123 | a1b2 | c3d4 |  |
 | 456 | z9y8 |  |  |
 
-**Why to avoid**
+**Por qué debes evitarlo**
 
-* The number of values per user is unpredictable
-* Leads to column proliferation and schema maintenance issues
+* El número de valores por usuario es impredecible
+* Provoca proliferación de columnas y problemas de mantenimiento del esquema
 
-#### Avoid: “Lists inside a single cell” (free text)
+#### Evita: «Listas dentro de una sola celda» (texto libre)
 
-Even if it looks convenient, it’s error-prone.
+Aunque parezca práctico, es propenso a errores.
 
-**Example to avoid**
+**Ejemplo que debes evitar**
 
-| User ID | Hashed Emails (text) |
+| ID de usuario | Correos electrónicos con hash (texto) |
 | --- | --- |
 | 123 | a1b2 · c3d4 · e5f6 |
 
-**Why to avoid**
+**Por qué debes evitarlo**
 
-* Not a true array type
-* Formatting/escaping issues are common
-* Small inconsistencies can break ingestion
+* No es un tipo de array real
+* Los problemas de formato/escape son habituales
+* Las pequeñas incoherencias pueden interrumpir la ingesta de datos
 
-#### Avoid: Multiple rows per user for identifiers (when your goal is a user identity table)
+#### Evita: varias filas por usuario para los identificadores (cuando tu objetivo es una tabla de identidad de usuario)
 
-Don’t split identity data across rows when you can keep one row per user.
+No dividas los datos de identidad entre varias filas cuando puedas mantener una fila por usuario.
 
-**Example to avoid**
+**Ejemplo que debes evitar**
 
-| User ID | Identifier Type | Identifier Value |
+| ID de usuario | Tipo de identificador | Valor del identificador |
 | --- | --- | --- |
 | 123 | hashed\_email | a1b2 |
 | 123 | hashed\_email | c3d4 |
 
-**Why to avoid**
+**Por qué debes evitarlo**
 
-* Requires extra processing to reconstruct users
-* Higher risk of duplicates and inconsistencies
-* Less efficient at scale
+* Requiere procesamiento adicional para reconstruir usuarios
+* Mayor riesgo de duplicados e incoherencias
+* Menos eficiente a escala
 
-**Note:** Multiple rows per user are normal for transactional tables, but not ideal for the identity (user-level) table used for matching.
-
-</Accordion>
+**Nota:** Varias filas por usuario son normales en las tablas transaccionales, pero no son lo ideal para la tabla de identidad (a nivel de usuario) que se usa para la coincidencia.
 
 </Accordion>
 
-## Additional information
+</Accordion>
 
-This section provides additional, in-depth information on relevant topics.
+## Información adicional
+
+Esta sección proporciona información adicional y detallada sobre temas relevantes.
 
 <div id="appendix-a-transactional-data-examples" />
 
-<Accordion title="Transactional data examples">
+<Accordion title="Ejemplos de datos transaccionales">
 
-Transactional/event data may have multiple rows per user:
+Los datos transaccionales/de evento pueden tener varias filas por usuario:
 
-| Transaction ID | User ID | Transaction Date | Amount | Category |
+| ID de la transacción | ID de usuario | Fecha de la transacción | Cantidad | Categoría |
 | --- | --- | --- | --- | --- |
-| t\_001 | 123 | 2025-12-01 | 120.00 | Grocery |
-| t\_002 | 123 | 2025-12-15 | 45.00 | Pharmacy |
-| t\_003 | 456 | 2025-12-20 | 300.00 | Electronics |
+| t\_001 | 123 | 01-12-2025 | 120.00 | Alimentación |
+| t\_002 | 123 | 12-15-2025 | 45.00 | Farmacia |
+| t\_003 | 456 | 12-20-2025 | 300.00 | Electrónica |
 
-**Recommended**
+**Recomendado**
 
-* Ingest transactional data in its natural structure
-* Use the Data View tool to produce a collaboration-ready user-level view (for example, spend in last 30 days, category affinity, recency/frequency summaries)
+* Ingiere los datos transaccionales en su estructura natural
+* Usa la herramienta Data View para generar una vista a nivel de usuario lista para colaborar (por ejemplo, gasto en los últimos 30 días, afinidad por categorías y resúmenes de antigüedad/frecuencia)
 
 </Accordion>
 
 <div id="appendix-b-connectorspecific-example-assets-aws-s3-gcs-bigquery-snowflake" />
 
-<Accordion title="Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake)">
+<Accordion title="Recursos de ejemplo específicos del conector (AWS S3, GCS, BigQuery, Snowflake)">
 
-### What does “array/list of identifiers” mean?
+### ¿Qué significa «array/lista de identificadores»?
 
-Sometimes a single user can have more than one email or phone (for example, a personal and a work email). Instead of forcing these into extra columns or messy text fields, we represent them as a list of values.
+A veces, un solo usuario puede tener más de un correo electrónico o teléfono (por ejemplo, un correo electrónico personal y otro del trabajo). En lugar de forzarlos en columnas adicionales o en campos de texto desordenados, los representamos como una lista de valores.
 
-| User ID | Hashed Emails (List) |
+| ID de usuario | Correos electrónicos con Hashing (lista) |
 | --- | --- |
 | u\_0001 | [a1b2 · c3d4 · e5f6] |
 | u\_0002 | [z9y8 · x7w6] |
 
-### 1. AWS S3 and GCS connector (Parquet)
+### 1. Conector de AWS S3 y GCS (Parquet)
 
-**What the identity sample should contain (schema)**
+**Qué debe contener la muestra de identidad (esquema)**
 
-| Field | Type | Notes |
+| Campo | Tipo de valor esperado | Notas |
 | --- | --- | --- |
-| user\_id | string | One row per user |
-| hashed\_emails | array of strings | Multi-value identifier (recommended) |
-| hashed\_phones | array of strings | Multi-value identifier (recommended) |
-| maid | string | Optional additional identifier |
+| user\_id | string | Una fila por usuario |
+| hashed\_emails | Matriz de cadenas | Identificador multivalor (recomendado) |
+| hashed\_phones | Matriz de cadenas | Identificador multivalor (recomendado) |
+| maid | string | Identificador adicional opcional |
 
-Parquet supports lists natively, which is why it’s recommended when users have multiple emails/phones.
+Parquet ofrece soporte nativo para listas, por lo que se recomienda cuando los usuarios tienen varios correos electrónicos o teléfonos.
 
-### 2. BigQuery connector (table preview and schema screenshot)
+### 2. Conector de BigQuery (vista previa de la tabla y captura de pantalla del esquema)
 
-**Example identity schema (BigQuery)**
+**Esquema de identidad de ejemplo (BigQuery)**
 
-| Field | Type | Mode |
+| Campo | Tipo de valor esperado | Modo |
 | --- | --- | --- |
 | user\_id | STRING | NULLABLE |
-| hashed\_emails | STRING | REPEATED (ARRAY) |
-| hashed\_phones | STRING | REPEATED (ARRAY) |
-| maid | STRING | NULLABLE |
+| hashed\_emails | CADENA | REPETIDO (ARRAY) |
+| hashed\_phones | CADENA | REPETIDO (ARRAY) |
+| maid | CADENA | ADMITE NULOS |
 
-Arrays are native in BigQuery (REPEATED fields). This is the recommended approach when multiple emails/phones exist.
+Las matrices son nativas en BigQuery (campos REPEATED). Este es el enfoque recomendado cuando existen varios correos electrónicos o teléfonos.
 
-### 3. Snowflake connector (table preview and schema screenshot)
+### 3. Conector de Snowflake (vista previa de la tabla y captura de pantalla del esquema)
 
-**Example identity schema (Snowflake)**
+**Esquema de identidad de ejemplo (Snowflake)**
 
-| Field | Type | Notes |
+| Campo | Tipo de valor esperado | Notas |
 | --- | --- | --- |
-| USER\_ID | VARCHAR | One row per user |
-| HASHED\_EMAILS | ARRAY | Multi-value identifier |
-| HASHED\_PHONES | ARRAY | Multi-value identifier |
-| MAID | VARCHAR | Optional |
+| ID\_USUARIO | VARCHAR | Una fila por usuario |
+| CORREOS\_ELECTRÓNICOS\_HASHEADOS | ARRAY | Identificador multivalor |
+| TELÉFONOS\_HASHEADOS | ARRAY | Identificador multivalor |
+| MAID | VARCHAR | Opcional |
 
-Snowflake supports list-like fields (arrays). This is preferred over creating email\_1/email\_2/email\_3 columns.
+Snowflake admite campos de tipo lista (arrays). Esto se prefiere a crear columnas email\_1/email\_2/email\_3.
 
 </Accordion>
 
 <div id="appendix-c-why-dataviews-matter-and-recommended" />
 
-<Accordion title="Why Data Views are recommended">
+<Accordion title="Por qué se recomiendan las Data Views">
 
-<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-customized-data-views">Data views</Anchor> are customized subsets of your existing data sources that you can create without changing the original dataset. They let you perform functions that modify, refine, and summarize the data so you can share only what’s relevant in collaborations, keeping the data you share clear and focused, and all other data private and secure. Use Data Views in collaborations because they:
+Las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-customized-data-views">Data views</Anchor> son subconjuntos personalizados de tus fuentes de datos existentes que puedes crear sin modificar el conjunto de datos original. Te permiten ejecutar funciones que modifican, refinan y resumen los datos para que puedas compartir en las colaboraciones solo lo que es relevante, manteniendo los datos que compartes claros y enfocados, y todos los demás datos privados y seguros. Utiliza Data Views en las colaboraciones porque:
 
-#### Are business-oriented and easier to collaborate with
+#### Están orientadas al negocio y facilitan la colaboración
 
-* Data Views let you present the data in a clean, business-friendly structure (for example, “Customer Identity View”, “Eligible Audience View”, “Purchase Summary View”) rather than raw logs or complex transactional schemas.
-* They help standardize definitions (for example, “active customer”, “total spend last 30 days”) so both sides are aligned and using the same logic.
+* Data Views te permiten presentar los datos en una estructura clara y orientada al negocio (por ejemplo, «Vista de identidad del cliente», «Vista de audiencia apta», «Vista de resumen de compras») en lugar de registros sin procesar o esquemas transaccionales complejos.
+* Ayudan a estandarizar definiciones (por ejemplo, «cliente activo», «gasto total de los últimos 30 días») para que ambas partes estén alineadas y utilicen la misma lógica.
 
-#### Are more privacy-safe by design
+#### Son más seguras para la privacidad por diseño
 
-* Data Views support data minimization: you can share only the fields and rows needed for the collaboration, instead of exposing full raw datasets.
-* They reduce privacy risk by allowing you to:
-  * Exclude unnecessary attributes
-  * Limit granularity (for example, share aggregated metrics instead of line-level transactions)
-  * Share only the identifiers needed for matching (and not additional sensitive columns)
+* Data Views permiten la minimización de datos: puedes compartir solo los campos y las filas necesarios para la colaboración, en lugar de exponer conjuntos completos de raw data.
+* Reducen el riesgo para la privacidad al permitirte:
+  * Excluir atributos innecesarios
+  * Limitar la granularidad (por ejemplo, compartir métricas agregadas en lugar de transacciones a nivel de línea)
+  * Compartir solo los identificadores necesarios para la coincidencia (y no columnas sensibles adicionales)
 
-#### Protect sensitive business data
+#### Protegen los datos empresariales sensibles
 
-* Raw transactional tables can contain highly sensitive business signals (for example, detailed purchase behavior, pricing patterns, merchant relationships, internal IDs).
-* Data Views let you share only what’s required for the collaboration:
-  * Example: share category-level aggregates instead of item-level details
-  * Example: share spend buckets or summary metrics instead of exact line items
-* This reduces the risk of unintentionally revealing competitive or proprietary information.
+* Las tablas transaccionales sin procesar pueden contener señales empresariales muy sensibles (por ejemplo, comportamiento de compra detallado, patrones de precios, relaciones con comercios, IDs internos).
+* Data Views te permiten compartir solo lo necesario para la colaboración:
+  * Ejemplo: comparte agregados a nivel de categoría en lugar de detalles a nivel de artículo
+  * Ejemplo: comparte buckets de gasto o métricas de resumen en lugar de elementos de línea exactos
+* Esto reduce el riesgo de revelar sin querer información competitiva o propietaria.
 
-#### Can make your data more cost-effective and performant
+#### Pueden hacer que tus datos sean más rentables y tengan mejor rendimiento
 
-Data Views can be structured to be lighter and more efficient, which often reduces:
+Data Views pueden estructurarse para ser más ligeras y eficientes, lo que a menudo reduce:
 
-* Data scanned
-* Processing time
-* Compute costs
+* Datos analizados
+* Tiempo de procesamiento
+* Costos de computación
 
-Pre-structuring a collaboration-ready view (especially aggregated views) may make collaboration faster and more operationally predictable.
+Estructurar previamente una vista lista para la colaboración (especialmente vistas agregadas) puede hacer que la colaboración sea más rápida y operativamente más predecible.
 
 </Accordion>
 
 <div id="appendix-d-multiple-ids-keys-upload-and-matching-behavior-by-platform" />
 
-<Accordion title="Multiple IDs/keys upload and matching behavior by platform">
+<Accordion title="Comportamiento de carga y coincidencia de varios ID/claves por plataforma">
 
-**DCP identifiers upload**
+**Carga de identificadores de DCP**
 
-| Partner/Platform | Supported Identifier Types | Upload Mode | Upload Behavior | Identifier Priority (for single-type partners) |
+| Partner/plataforma | Tipos de identificador admitidos | Modo de carga | Comportamiento de la carga | Prioridad de identificadores (para partners de un solo tipo) |
 | --- | --- | --- | --- | --- |
-| Meta | Email, Phone, IDFA, GAID, Android ID, First Name, Last Name, DOB, City, State, Zip, Country | All supported types | Uploads all supported identifier types | N/A - uploads all |
-| Google | Email, Phone, IDFA, GAID, Android ID, Customer ID | Single type | Uploads one identifier type per audience | 1. Email 2. Phone 3. Mobile IDs 4. Customer ID |
-| TikTok | Email, Phone, IDFA, GAID, Android ID | All supported types | Uploads all supported identifier types | N/A - uploads all |
-| Pinterest | Email, Phone, IDFA, GAID | Single type | Uploads one identifier type per audience | 1. Email 2. Phone 3. Mobile IDs |
-| Infillion | Email, Phone, IDFA, GAID, MM-UUID | All supported types | Uploads all supported types grouped into up to 3 files | N/A - uploads all |
-| TheTradeDesk | Email, Phone | Single type | Uploads one identifier type per audience | 1. Email 2. Phone |
-| AppsFlyer Data Locker | All available identifiers | All types combined | Delivers all identifiers in a single combined file | N/A - delivers all |
+| Meta | Correo electrónico, teléfono, IDFA, GAID, ID de Android, nombre, apellidos, fecha de nacimiento, ciudad, provincia, código postal, país | Todos los tipos admitidos | Carga todos los tipos de identificador admitidos | No aplica: los carga todos |
+| Google | Correo electrónico, teléfono, IDFA, GAID, ID de Android, ID de cliente | Un solo tipo | Carga un tipo de identificador por audiencia | 1. Email 2. Teléfono 3. IDs móviles 4. ID de cliente |
+| TikTok | Correo electrónico, teléfono, IDFA, GAID, ID de Android | Todos los tipos admitidos | Carga todos los tipos de identificador admitidos | No aplica: los carga todos |
+| Pinterest | Correo electrónico, teléfono, IDFA, GAID | Un solo tipo | Carga un tipo de identificador por audiencia | 1. Email 2. Teléfono 3. IDs móviles |
+| Infillion | Correo electrónico, teléfono, IDFA, GAID, MM-UUID | Todos los tipos admitidos | Carga todos los tipos admitidos agrupados en hasta 3 archivos | N/A: los carga todos |
+| TheTradeDesk | Correo electrónico, teléfono | Un solo tipo | Carga un tipo de identificador por audiencia | 1. Email 2. Teléfono |
+| AppsFlyer Data Locker | Todos los identificadores disponibles | Todos los tipos combinados | Entrega todos los identificadores en un único archivo combinado | N/A: los entrega todos |
 
-| Platform | Can you send multiple IDs per user? | Can they match on any of them? | Can they combine multiple IDs? | Matching model (practical) | Notes |
+| Destino de engagement | ¿Puedes enviar varios ID por usuario? | ¿Pueden hacer coincidir cualquiera de ellos? | ¿Pueden combinar varios ID? | Modelo de coincidencia (práctico) | Notas |
 | --- | --- | --- | --- | --- | --- |
-| Meta | Yes | Yes | Yes | Deterministic, any-ID / combo | Email, phone, MAID, fbp/fbc all evaluated; strongest “any-of-them” behavior |
-| Google | Yes | Limited | No | Deterministic, prioritized | One ID resolves the user; IDs are not combined to form a match |
-| TikTok | Yes | Yes | Yes | Deterministic, any-ID / combo | Very similar to Meta; ttclid strong for events |
-| Pinterest | Yes | Partial | Limited | Deterministic, ID-centric | Primarily email + MAID; limited cross-ID reinforcement |
-| The Trade Desk (TTD) | Yes | Via ID graph | Yes (via graph) | Deterministic via identity graph | UID2 + MAID + cookies resolved through EUID/UID2 graph |
-| Infillion | Yes | Via ID graph | Yes (via graph) | Deterministic via partner graph | Relies on OmniID / partner identity resolution |
+| Meta | Sí | Sí | Sí | Determinista, cualquier ID / combinación | Se evalúan correo electrónico, teléfono, MAID y fbp/fbc; comportamiento de «cualquiera de ellos» más sólido |
+| Google | Sí | Limitado | No | Determinista, priorizado | Un ID resuelve al usuario; los ID no se combinan para formar una coincidencia |
+| TikTok | Sí | Sí | Sí | Determinista, cualquier ID / combinación | Muy similar a Meta; ttclid es potente para eventos |
+| Pinterest | Sí | Parcial | Limitado | Determinista, centrado en ID | Principalmente correo electrónico + MAID; refuerzo cruzado entre ID limitado |
+| The Trade Desk (TTD) | Sí | A través de un grafo de ID | Sí (a través del grafo) | Determinístico a través del grafo de identidad | UID2 + MAID + cookies resueltos a través del grafo EUID/UID2 |
+| Infillion | Sí | A través del grafo de ID | Sí (a través del grafo) | Determinístico a través del grafo de Partners | Se basa en OmniID o en la resolución de identidad de Partners |
 
-**Takeaways for activation planning**
+**Conclusiones para la planificación de la activación**
 
-* **Meta and TikTok**
-  * Send everything you have
-  * True “any-ID” behavior
-  * Best platforms for identity-rich clean room activation
+* **Meta y TikTok**
+  * Envía todo lo que tengas
+  * Verdadero comportamiento de «cualquier ID»
+  * Las mejores plataformas para la activación en clean rooms con muchas identidades
 * **Google**
-  * Send multiple IDs for coverage
-  * Do not expect cross-ID reinforcement
-  * Email/phone dominance is real
-* **TTD and Infillion**
-  * Matching quality depends more on identity graph participation
-  * UID2 / OmniID coverage matters more than raw identifier count
+  * Envía varios ID para ampliar la cobertura
+  * No esperes refuerzo entre ID diferentes
+  * El predominio del correo electrónico/teléfono es real
+* **TTD e Infillion**
+  * La calidad de la coincidencia depende más de la participación en el grafo de identidad
+  * La cobertura de UID2/OmniID importa más que el número bruto de identificadores
 * **Pinterest**
-  * Behaves closer to Google than Meta
-  * Limited upside beyond email + MAID
+  * Su comportamiento se parece más al de Google que al de Meta
+  * Ventaja limitada más allá de correo electrónico + MAID
 
 **TL;DR**
 
-* Only Meta and TikTok do “any-of-them” matching natively
-* Google is deterministic but single-ID resolved
-* Open web platforms match via identity graphs, not raw IDs
+* Solo Meta y TikTok realizan de forma nativa coincidencias de «cualquiera de ellos»
+* Google es determinístico, pero se resuelve con un único ID
+* Las plataformas de la web abierta establecen coincidencias mediante grafos de identidad, no mediante ID sin procesar
 
 </Accordion>
 
 <div id="appendix-e-hashed-data-formatting-guidelines-by-media-partner" />
 
-<Accordion title="Hashed data formatting guidelines by media partner">
+<Accordion title="Directrices de formato de datos con hash por Partners de medios">
 
-**Universal normalization rules:**  
-Before hashing any data, almost all platforms require the following normalization steps to ensure matching accuracy:
+**Reglas de normalización universales:**  
+Antes de aplicar hash a cualquier dato, casi todas las plataformas exigen los siguientes pasos de normalización para garantizar la precisión de la coincidencia:
 
-* **Text:** Convert to lowercase and trim all leading/trailing whitespace.
-* **Phone:** Convert to E.164 format (e.g., +15551234567)
-* **Hashing:** SHA-256 is the industry standard, though some platforms accept MD5 or SHA-1.
+* **Texto:** Convierte el texto a minúsculas y recorta todos los espacios en blanco iniciales y finales.
+* **Teléfono:** conviértelo al formato E.164 (p. ej., +15551234567)
+* **Hashing:** SHA-256 es el estándar de la industria, aunque algunas plataformas aceptan MD5 o SHA-1.
 
-| Media Partner | Email Guidelines | Phone Number Guidelines | Mobile ID (MAID) Guidelines | Specific Platform Nuances & Matching Logic | Relevant Reference |
+| Partner de medio | Pautas de correo electrónico | Pautas del número de teléfono | Pautas del ID móvil (MAID) | Matices específicos de la plataforma & lógica de coincidencia | Referencia relevante |
 | --- | --- | --- | --- | --- | --- |
-| Google Ads / DV360 | Format: Lowercase, trim whitespace. Include domain. Gmail Rule: For @gmail.com / @googlemail.com, remove periods (.) before the "@" and suffixes after (+). Hashing: SHA-256 (Hex encoded). | Format: E.164 (e.g., +16505551212). Must include country code. Hashing: SHA-256. | Format: IDFA (iOS) or GAID (Android). Hashing: Do not hash. | Matching Priority: Deterministic and prioritized (1. Email, 2. Phone, 3. Mobile IDs). It does not combine multiple IDs to form a match (single-ID resolution). DV360 PAIR: DV360 also supports the PAIR protocol for secure publisher-advertiser reconciliation. | <Anchor target="_blank" href="https://developers.google.com/google-ads/api/docs/remarketing/audience-segments/customer-match/get-started">Get started with Customer Match (Google Ads API)</Anchor> |
-| Meta (Facebook/ Instagram) | Format: Lowercase, trim whitespace. Hashing: SHA-256 required.<br /><br />**Note:** Meta doesn't remove dots from email addresses as part of its hashing normalization. Only lowercase + whitespace trimming should be applied before hashing for Meta. Sending a dot-stripped hashed email ("Hashed email (no dots)" in DCP source mapping) won't match Meta's own hash and will result in reduced match rates for email-domain users. This identifier variant is intended for partners that do require dot-removal (e.g., Google Ads) and should not be used for Meta/Facebook activations. | Format: Remove symbols, letters, and leading zeros. Include country code (e.g., 16505551212). Hashing: SHA-256. | Format: IDFA or GAID. Hashing: Do not hash. Lowercase, keep hyphens. | Matching Logic: Uses "any-of-them" logic; combines multiple IDs (Email, Phone, MAID, etc.) to resolve a user, providing strong cross-ID reinforcement.<br /><br />CAPI: Requires unhashed client\_ip\_address and client\_user\_agent for browser matching. | <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters/">Customer Information Parameters - Conversions API</Anchor> |
-| TikTok | Format: Lowercase, remove all spaces. Hashing: SHA-256. | Format: E.164 (+[country code][number]). Also accepts without +. Hashing: SHA-256. | Format: GAID (Android) or IDFA (iOS). Case: All upper or all lower. Hashing: SHA-256 or MD5. | Matching Logic: Similar to Meta, uses "any-of-them" deterministic matching logic where any single valid ID is sufficient.<br /><br />Audience Size: Requires a minimum of 1,000 matched users to activate a Custom Audience. | <Anchor target="_blank" href="https://ads.tiktok.com/help/article/how-to-create-a-custom-audience-with-a-customer-file">How to create a Custom Audience with a customer file</Anchor> |
-| The Trade Desk (UID2) | Format: Same "Gmail Rule" as Google (remove dots/plus). Encoding: Base64-encode the raw bytes (result is 44 chars). | Format: E.164. Hashing: SHA-256. Encoding: Base64-encode the raw bytes. | Format: AAID (lowercase) / IDFA (uppercase). Hashing: SHA-256, MD5, or SHA-1. | Matching Logic: Deterministic via identity graph. Matching depends on graph participation rather than raw ID coverage.<br /><br />Critical Nuance: You must base64-encode the raw bytes of the hash. Encoding the hex string will fail. |  |
-| Pinterest | Format: Must include "@". Hashing: SHA-256, MD5, or SHA-1. | Format: E.164. Remove special characters (spaces, hyphens). Hashing: SHA-256, MD5, or SHA-1. | Format: IDFA or GAID. Hashing: SHA-256, MD5, or SHA-1. | Matching Logic: "ID-Centric." Matching is primarily driven by Email and MAID. There is "limited upside" to providing other IDs as cross-ID reinforcement is weak compared to Meta. Upload Behavior: Uploads one identifier type per audience. | DCP Data Ingestion and Structuring Guidelines |
+| Google Ads / DV360 | Formato: minúsculas, recorta los espacios en blanco. Incluye el dominio. Regla de Gmail: para @gmail.com / @googlemail.com, elimina los puntos (.) antes de la "@" y los sufijos después del (+). Hashing: SHA-256 (codificación hexadecimal). | Formato: E.164 (p. ej., +16505551212). Debe incluir el código de país. Hashing: SHA-256. | Formato: IDFA (iOS) o GAID (Android). Hashing: no aplicar hash. | Prioridad de coincidencia: determinista y priorizada (1. Correo electrónico, 2. Teléfono, 3. ID móviles). No combina varios ID para formar una coincidencia (resolución de un solo ID). DV360 PAIR: DV360 también da soporte al protocolo PAIR para la conciliación segura entre publisher y anunciante. | <Anchor target="_blank" href="https://developers.google.com/google-ads/api/docs/remarketing/audience-segments/customer-match/get-started">Primeros pasos con Customer Match (API de Google Ads)</Anchor> |
+| Meta (Facebook/ Instagram) | Formato: en minúsculas, recorta los espacios en blanco. Hashing: SHA-256 obligatorio.<br /><br />**Nota:** Meta no elimina los puntos de las direcciones de correo electrónico como parte de la normalización del Hashing. Antes del Hashing para Meta, solo se deben aplicar las minúsculas y el recorte de espacios en blanco. Enviar un correo electrónico con Hashing sin puntos («Hashed email (no dots)» en la asignación de fuente de DCP) no coincidirá con el hash propio de Meta y dará como resultado tasas de coincidencia más bajas para usuarios de dominios de correo electrónico. Esta variante de ID está pensada para partners que sí requieren eliminar los puntos (p. ej., Google Ads) y no debe usarse para activaciones de Meta/Facebook. | Formato: elimina símbolos, letras y ceros iniciales. Incluye el código de país (p. ej., 16505551212). Hashing: SHA-256. | Formato: IDFA o GAID. Hashing: no aplicar hash. En minúsculas, conserva los guiones. | Lógica de coincidencia: usa una lógica de «cualquiera de ellos»; combina varios ID (correo electrónico, teléfono, MAID, etc.) para resolver un usuario, lo que proporciona una sólida consolidación entre ID.<br /><br />CAPI: requiere client\_ip\_address y client\_user\_agent sin hash para la coincidencia en navegador. | <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters/">Parámetros de información del cliente - Conversions API</Anchor> |
+| TikTok | Formato: en minúsculas, elimina todos los espacios. Hashing: SHA-256. | Formato: E.164 (+[código de país][número]). También se acepta sin +. Hashing: SHA-256. | Formato: GAID (Android) o IDFA (iOS). Caso: todo en mayúsculas o todo en minúsculas. Hashing: SHA-256 o MD5. | Lógica de coincidencia: al igual que Meta, usa una lógica de coincidencia determinista de «cualquiera de ellos», en la que basta con cualquier ID válido individual.<br /><br />Tamaño de la audiencia: se requiere un mínimo de 1.000 usuarios coincidentes para activar una audiencia personalizada. | <Anchor target="_blank" href="https://ads.tiktok.com/help/article/how-to-create-a-custom-audience-with-a-customer-file">Cómo crear una audiencia personalizada con un archivo de clientes</Anchor> |
+| The Trade Desk (UID2) | Formato: la misma «regla de Gmail» que Google (eliminar puntos/signo +). Codificación: codifica en Base64 los bytes sin procesar (el resultado tiene 44 caracteres). | Formato: E.164. Hashing: SHA-256. Codificación: codifica en Base64 los bytes sin procesar. | Formato: AAID (en minúsculas) / IDFA (en mayúsculas). Hashing: SHA-256, MD5 o SHA-1. | Lógica de coincidencia: determinista mediante el grafo de identidad. La coincidencia depende de la participación en el grafo, en lugar de la cobertura bruta de ID.<br /><br />Matiz crítico: debes codificar en Base64 los bytes sin procesar del hash. La codificación de la cadena hexadecimal fallará. |  |
+| Pinterest | Formato: debe incluir «@». Hashing: SHA-256, MD5 o SHA-1. | Formato: E.164. Elimina los caracteres especiales (espacios, guiones). Hashing: SHA-256, MD5 o SHA-1. | Formato: IDFA o GAID. Hashing: SHA-256, MD5 o SHA-1. | Lógica de coincidencia: «centrada en el ID». La coincidencia se basa principalmente en el correo electrónico y el MAID. Aportar otros ID tiene un «beneficio limitado», ya que el refuerzo cruzado entre ID es débil en comparación con Meta. Comportamiento de carga: carga un tipo de identificador por audiencia. | Directrices para la ingesta y estructuración de datos del DCP |
 
 </Accordion>
 
-<div data-zendesk-anchors="about-dcp-ingestion-and-preparation-of-data=about-data-preparation h_01KFX4HVTT50TZMY2YF37B1C4R=about-data-preparation data-types=understand-data-types h_01KFX4HVTTAMFEGJQEYXXWG9PT=understand-data-types data-ingestion-recommendations=data-structuring-guidelines h_01KFX4HVTT2Q2EV4GAC6M8R4A2=data-structuring-guidelines h_01KFZJ2PK9XADZ2143VJB3YZ55=workflow-and-structuring-guidelines h_01KFXB0KEF59QCYET0R8XNH84D=recommended-identifier-structures h_01KFZN8104KSPFRSS5SED7VT19=practical-checklist-for-dcp-collaborators identity-userlevel-dataset-checklist=identity-user-level-dataset-checklist h_01KFZNGRC0XX7YYBYT09M49YFA=identity-user-level-dataset-checklist h_01KFZNJ7YKCT1YFYE400CNY6SP=transactional-events-dataset-checklist dataviews-checklist=data-views-checklist h_01KFZNKBXJQ4S89YHCGKP8J5F4=data-views-checklist h_01KFZJ2PK9TT2RZQ366Y2THS7E=supported-ingestion-cloud-services-and-formats h_01KFX6XSNACVR9JWZWZW12F6C4=format-guidance h_01KFZJ2PK92Y5HHFC2D1H8AD9B=data-structures-that-arent-recommended h_01KFX72MNYH1CSKWZAGZ2XETXY=avoid-multiple-columns-for-the-same-identifier-type avoid-%E2%80%9Clists-inside-a-single-cell%E2%80%9D-free-text=avoid-lists-inside-a-single-cell-free-text h_01KFX70V3BHNK93SKCRGGDVY3W=avoid-lists-inside-a-single-cell-free-text h_01KFX70V3BJE2PR7132QE27C4V=avoid-multiple-rows-per-user-for-identifiers-when-your-goal-is-a-user-identity-table h_01KFZJ2PNKB4X962VKCKSYVFFB=additional-information h_01KFX6XSJYGYFF052EM8NHNMYQ=appendix-a-transactional-data-examples h_01KFX6XSJYZNCTGD5CNSKN5KF7=appendix-b-connectorspecific-example-assets-aws-s3-gcs-bigquery-snowflake what-does-%E2%80%9Carraylist-of-identifiers%E2%80%9D-mean=what-does-arraylist-of-identifiers-mean h_01KFX4HVTVPHZQFNRWDH9VCEZQ=what-does-arraylist-of-identifiers-mean h_01KFX4HVTVNQZY9A8AGEBBHF6Y=1-aws-s3-and-gcs-connector-parquet h_01KFX4HVTVCMB0H1B76TCK36SF=2-bigquery-connector-table-preview-and-schema-screenshot h_01KFX4HVTVN9MSWFB7ZRT9MVCG=3-snowflake-connector-table-preview-and-schema-screenshot h_01KFX6XSJYF4V3ZTX8X07J0FGS=appendix-c-why-dataviews-matter-and-recommended are-businessoriented-and-easier-to-collaborate-with=are-business-oriented-and-easier-to-collaborate-with h_01KFX4HVTV43QFEQARSB2N49Z5=are-business-oriented-and-easier-to-collaborate-with are-more-privacysafe-by-design=are-more-privacy-safe-by-design h_01KFX4HVTVJA8Q3FTQB8A94MA1=are-more-privacy-safe-by-design h_01KFX4HVTVF8A0PM90FA6XA0V5=protect-sensitive-business-data can-make-your-data-more-costeffective-and-performant=can-make-your-data-more-cost-effective-and-performant h_01KFX4HVTVJ70HV606Y8KE4JD1=can-make-your-data-more-cost-effective-and-performant h_01KFX6XSJY4WGJDBP5JEQXC6E3=appendix-d-multiple-ids-keys-upload-and-matching-behavior-by-platform h_01KGFDYKG8KPYR7H5VBKVTXTQS=appendix-e-hashed-data-formatting-guidelines-by-media-partner" />
+<div data-zendesk-anchors="about-dcp-ingestion-and-preparation-of-data=acerca-de-la-preparaci%C3%B3n-de-datos h_01KFX4HVTT50TZMY2YF37B1C4R=acerca-de-la-preparaci%C3%B3n-de-datos data-types=comprender-los-tipos-de-datos h_01KFX4HVTTAMFEGJQEYXXWG9PT=comprender-los-tipos-de-datos data-ingestion-recommendations=directrices-para-estructurar-los-datos h_01KFX4HVTT2Q2EV4GAC6M8R4A2=directrices-para-estructurar-los-datos h_01KFZJ2PK9XADZ2143VJB3YZ55=workflow-and-structuring-guidelines recommended-identifier-structures=estructuras-de-identificadores-recomendadas h_01KFXB0KEF59QCYET0R8XNH84D=estructuras-de-identificadores-recomendadas h_01KFZN8104KSPFRSS5SED7VT19=practical-checklist-for-dcp-collaborators identity-userlevel-dataset-checklist=lista-de-comprobaci%C3%B3n-del-conjunto-de-datos-de-identidad-a-nivel-de-usuario h_01KFZNGRC0XX7YYBYT09M49YFA=lista-de-comprobaci%C3%B3n-del-conjunto-de-datos-de-identidad-a-nivel-de-usuario transactional-events-dataset-checklist=lista-de-comprobaci%C3%B3n-del-conjunto-de-datos-transaccionales-eventos h_01KFZNJ7YKCT1YFYE400CNY6SP=lista-de-comprobaci%C3%B3n-del-conjunto-de-datos-transaccionales-eventos dataviews-checklist=lista-de-comprobaci%C3%B3n-de-data-views h_01KFZNKBXJQ4S89YHCGKP8J5F4=lista-de-comprobaci%C3%B3n-de-data-views h_01KFZJ2PK9TT2RZQ366Y2THS7E=supported-ingestion-cloud-services-and-formats format-guidance=gu%C3%ADa-de-formatos h_01KFX6XSNACVR9JWZWZW12F6C4=gu%C3%ADa-de-formatos h_01KFZJ2PK92Y5HHFC2D1H8AD9B=data-structures-that-arent-recommended avoid-multiple-columns-for-the-same-identifier-type=evita-varias-columnas-para-el-mismo-tipo-de-identificador h_01KFX72MNYH1CSKWZAGZ2XETXY=evita-varias-columnas-para-el-mismo-tipo-de-identificador avoid-%E2%80%9Clists-inside-a-single-cell%E2%80%9D-free-text=evita-listas-dentro-de-una-sola-celda-texto-libre h_01KFX70V3BHNK93SKCRGGDVY3W=evita-listas-dentro-de-una-sola-celda-texto-libre avoid-multiple-rows-per-user-for-identifiers-when-your-goal-is-a-user-identity-table=evita-varias-filas-por-usuario-para-los-identificadores-cuando-tu-objetivo-es-una-tabla-de-identidad-de-usuario h_01KFX70V3BJE2PR7132QE27C4V=evita-varias-filas-por-usuario-para-los-identificadores-cuando-tu-objetivo-es-una-tabla-de-identidad-de-usuario additional-information=informaci%C3%B3n-adicional h_01KFZJ2PNKB4X962VKCKSYVFFB=informaci%C3%B3n-adicional h_01KFX6XSJYGYFF052EM8NHNMYQ=appendix-a-transactional-data-examples h_01KFX6XSJYZNCTGD5CNSKN5KF7=appendix-b-connectorspecific-example-assets-aws-s3-gcs-bigquery-snowflake what-does-%E2%80%9Carraylist-of-identifiers%E2%80%9D-mean=qu%C3%A9-significa-arraylista-de-identificadores h_01KFX4HVTVPHZQFNRWDH9VCEZQ=qu%C3%A9-significa-arraylista-de-identificadores 1-aws-s3-and-gcs-connector-parquet=1-conector-de-aws-s3-y-gcs-parquet h_01KFX4HVTVNQZY9A8AGEBBHF6Y=1-conector-de-aws-s3-y-gcs-parquet 2-bigquery-connector-table-preview-and-schema-screenshot=2-conector-de-bigquery-vista-previa-de-la-tabla-y-captura-de-pantalla-del-esquema h_01KFX4HVTVCMB0H1B76TCK36SF=2-conector-de-bigquery-vista-previa-de-la-tabla-y-captura-de-pantalla-del-esquema 3-snowflake-connector-table-preview-and-schema-screenshot=3-conector-de-snowflake-vista-previa-de-la-tabla-y-captura-de-pantalla-del-esquema h_01KFX4HVTVN9MSWFB7ZRT9MVCG=3-conector-de-snowflake-vista-previa-de-la-tabla-y-captura-de-pantalla-del-esquema h_01KFX6XSJYF4V3ZTX8X07J0FGS=appendix-c-why-dataviews-matter-and-recommended are-businessoriented-and-easier-to-collaborate-with=est%C3%A1n-orientadas-al-negocio-y-facilitan-la-colaboraci%C3%B3n h_01KFX4HVTV43QFEQARSB2N49Z5=est%C3%A1n-orientadas-al-negocio-y-facilitan-la-colaboraci%C3%B3n are-more-privacysafe-by-design=son-m%C3%A1s-seguras-para-la-privacidad-por-dise%C3%B1o h_01KFX4HVTVJA8Q3FTQB8A94MA1=son-m%C3%A1s-seguras-para-la-privacidad-por-dise%C3%B1o protect-sensitive-business-data=protegen-los-datos-empresariales-sensibles h_01KFX4HVTVF8A0PM90FA6XA0V5=protegen-los-datos-empresariales-sensibles can-make-your-data-more-costeffective-and-performant=pueden-hacer-que-tus-datos-sean-m%C3%A1s-rentables-y-tengan-mejor-rendimiento h_01KFX4HVTVJ70HV606Y8KE4JD1=pueden-hacer-que-tus-datos-sean-m%C3%A1s-rentables-y-tengan-mejor-rendimiento h_01KFX6XSJY4WGJDBP5JEQXC6E3=appendix-d-multiple-ids-keys-upload-and-matching-behavior-by-platform h_01KGFDYKG8KPYR7H5VBKVTXTQS=appendix-e-hashed-data-formatting-guidelines-by-media-partner" />

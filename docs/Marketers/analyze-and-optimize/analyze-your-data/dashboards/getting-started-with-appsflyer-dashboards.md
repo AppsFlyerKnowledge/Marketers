@@ -1,5 +1,5 @@
 ---
-title: Getting started with AppsFlyer dashboards
+title: Cómo empezar a usar los paneles de control de AppsFlyer
 metadata:
   keywords:
     - dashboard
@@ -16,20 +16,21 @@ x-zendesk:
     - Marketing Analytics
     - Agencies
   created_at: '2016-03-21T08:30:02Z'
-  edited_at: '2023-02-15T13:15:05Z'
+  edited_at: '2024-08-21T13:03:36Z'
   id: 209680753
-  locale: en-us
+  locale: es
   section: Dashboards
   section_id: 6550925337873
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/209680753-Getting-started-with-AppsFlyer-dashboards
+  url: https://support.appsflyer.com/hc/es/articles/209680753
 ---
-> **At a glance:** The platform contains multiple dashboards. These dashboards enable you to view your campaign performance and app behavior.
+> **De un vistazo:** La plataforma contiene varios paneles de control. Estos paneles te permiten ver el rendimiento de tu campaña y el comportamiento de las aplicaciones.
 
-## AppsFlyer dashboards
+## Paneles de control de AppsFlyer
 
 ![OverviewBasic.png](https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png)
 
-The primary dashboard is the Overview dashboard. This contains the lifetime value (LTV) performance of user acquisition (UA) and retargeting campaigns.
+El panel principal es el panel de Resumen general. Contiene el rendimiento del valor de por vida (LTV) de las campañas de adquisición de usuarios (UA) y retargeting.
 
-List of additional <Anchor target="_blank" href="/marketers/docs/dashboards">dashboards</Anchor>.
+Lista de <Anchor target="_blank" href="/marketers/es/docs/dashboards">paneles de control</Anchor> adicionales.
+
+<div data-zendesk-anchors="appsflyer-dashboards=paneles-de-control-de-appsflyer" />

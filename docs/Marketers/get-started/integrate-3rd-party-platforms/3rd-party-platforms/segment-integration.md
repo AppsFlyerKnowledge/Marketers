@@ -1,5 +1,5 @@
 ---
-title: Segment integration
+title: Integración de Segment
 metadata:
   keywords:
     - Integration
@@ -16,34 +16,33 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-06-30T07:54:38Z'
-  edited_at: '2025-07-08T07:14:01Z'
+  edited_at: '2026-08-12T11:59:33Z'
   id: 210041606
-  locale: en-us
+  locale: es
   section: 3rd-party platforms
   section_id: 6551199962257
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/210041606-Segment-integration
+  url: https://support.appsflyer.com/hc/es/articles/210041606
 ---
-> **At a glance:** Send your Segment analytics data to AppsFlyer.
+> **En resumen:** Envía tus datos de análisis de Segment a AppsFlyer.
 
-## Introduction
+## Introducción
 
-Segment makes it easy to send your data to AppsFlyer. Once you have recorded your data through Segment's open source libraries, the data is translated and routed to AppsFlyer in the appropriate format. AppsFlyer helps marketers to pinpoint targeting, optimize ad spend, and boost ROI.
+Segment facilita el envío de tus datos a AppsFlyer. Una vez que hayas registrado tus datos a través de las bibliotecas de código abierto de Segment, los datos se traducen y se envían a AppsFlyer en el formato adecuado. AppsFlyer ayuda a los marketers a identificar el targeting, optimizar la inversión publicitaria y aumentar el ROI.
 
-## Integrating Segment with AppsFlyer
+## Integración de Segment con AppsFlyer
 
-Follow <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/">this guide from Segment</Anchor> to learn how to integrate Segment with AppsFlyer.
+Seguir <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/">esta guía de Segment</Anchor> para aprender a integrar Segment con AppsFlyer.
 
-## FAQs
+## Preguntas Frecuentes
 
 <div id="how-can-i-integrate-segment-with-appsflyer" />
 
-<Accordion title="How can I integrate Segment with AppsFlyer?">
+<Accordion title="¿Cómo puedo integrar Segment con AppsFlyer?">
 
-To integrate Segment with AppsFlyer, follow these steps:
+Para integrar Segment con AppsFlyer, sigue estos pasos:
 
-* <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/#getting-started">Configure your Segment dashboard</Anchor> to connect to AppsFlyer
-* Implement [the Segment Wrapper SDK](/docs/segment-integration#how-does-the-sdk-wrapper-work) in your app:
+* <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/#getting-started">Configurar el panel de control de Segment</Anchor> para conectarse a AppsFlyer
+* Implementa [el wrapper del SDK de Segment](/docs/segment-integration#how-does-the-sdk-wrapper-work) en tu aplicación:
   * <Anchor target="_blank" href="https://github.com/segment-integrations/analytics-swift-appsflyer">Native iOS</Anchor>
   * <Anchor target="_blank" href="https://github.com/segment-integrations/analytics-kotlin-appsflyer">Native Android</Anchor>
 
@@ -51,77 +50,77 @@ To integrate Segment with AppsFlyer, follow these steps:
 
 <div id="what-sdks-do-i-need-to-add-to-my-app" />
 
-<Accordion title="What SDKs do I need to add to my app?">
+<Accordion title="¿Qué SDK debo agregar a mi aplicación?">
 
-You only need to add the Segment SDK wrapper. When you add the Segment SDK wrapper dependency, the app build process automatically adds Segment SDK and the AppsFlyer SDK to your app.
+Solo tienes que agregar el wrapper del SDK de Segment. Cuando agregas la dependencia wrapper del SDK de Segment, el proceso de creación de apps agrega automáticamente el SDK de Segment y el SDK de AppsFlyer a tu app.
 
 </Accordion>
 
 <div id="how-does-the-sdk-wrapper-work" />
 
-<Accordion title="How does the SDK wrapper work?">
+<Accordion title="¿Cómo funciona el wrapper del SDK?">
 
-The Segment SDK wrapper connects Segment SDK and the AppsFlyer SDK.
+El wrapper del SDK de Segment conecta el SDK de Segment y el SDK de AppsFlyer.
 
-When you use the Segment SDK wrapper to call Segment's methods for recording installs and in-app events, the SDK wrapper calls both Segment's and AppsFlyer methods.
+Cuando usas el wraper del SDK de Segment para llamar a los métodos de Segment y así registrar instalaciones y eventos in-app, el wrapper del SDK llama a los métodos de Segment y AppsFlyer.
 
-This saves you time and effort and requires less coding.
+Esto te ahorra tiempo y esfuerzo y requiere menos codificación.
 
-> ❗️ **Warning**
+> ❗️ **Advertencia**
 >
-> Warning - **DO NOT USE** methods from both the Segment SDK wrapper and the AppsFlyer SDK. Doing so could lead to errors and data discrepancies.
+> Advertencia- **NO UTILIZAR** métodos tanto del wrapper del SDK de Segment como del SDK de AppsFlyer. Si lo hace, podría producirse errores y discrepancias en los datos.
 >
-> **Use only methods from the Segment SDK wrapper.**
+> **Utiliza solo los métodos del wrapper del SDK de Segment.**
 
 </Accordion>
 
 <div id="is-there-any-difference-in-functionality-between-the-segment-sdk-wrapper-and-the-appsflyer-sdk" />
 
-<Accordion title="Is there any difference in functionality between the Segment SDK wrapper and the AppsFlyer SDK?">
+<Accordion title="¿Hay alguna diferencia en la funcionalidad entre el wrapper del SDK de Segment y el SDK de AppsFlyer?">
 
-No, there is no change in functionality. All functions in the AppsFlyer SDK are available in the Segment SDK wrapper.
+No, no hay cambios en la funcionalidad. Todas las funciones del SDK de AppsFlyer están disponibles en el wrapper del SDK de Segment.
 
 </Accordion>
 
 <div id="i-dont-see-inapp-event-data-in-the-appsflyer-dashboard" />
 
-<Accordion title="I don't see in-app event data in the AppsFlyer dashboard">
+<Accordion title="No veo los datos de eventos in-app en el panel de control de AppsFlyer">
 
-* Make sure to follow the instructions for implementing the track method in Segment SDK wrapper:
+* Asegúrate de seguir las instrucciones para implementar el método track en el wrapper del SDK de Segment:
   * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AppsFlyer-Segment-Integration#adding_events">Android</Anchor>
-  * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/segment-appsflyer-ios/blob/master/examples/SwiftPodsSample/SwiftPodsSample/ViewController.swift">iOS</Anchor>
-* Make sure to <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/#getting-started">specify your dev key</Anchor> when integrating AppsFlyer in Segment's dashboard.
+  * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/segment-appsflyer-ios/blob/master/examples/SwiftPodsSample/SwiftPodsSample/ViewController.swift">apps de iOS,</Anchor>
+* Asegúrate de <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/#getting-started">especificar la clave de desarrollo</Anchor> al integrar AppsFlyer en el panel de control de Segment.
 
 </Accordion>
 
 <div id="install-and-inapp-events-data-in-segment-and-appsflyer-doesnt-match" />
 
-<Accordion title="Install and in-app events data in Segment and AppsFlyer doesn't match">
+<Accordion title="Los datos de instalación y eventos in-app en Segment y AppsFlyer no coinciden">
 
-Make sure that to only use the Segment SDK Wrapper Do not combine the Segment SDK Wrapper with AppsFlyer SDK. See [here](/docs/segment-integration#how-does-the-sdk-wrapper-work) for more info.
+Asegúrate de usar solo el wrapper de SDK de Segment. No combines el wrapper de SDK de Segment con el SDK de AppsFlyer. Ver [aquí](/docs/segment-integration#how-does-the-sdk-wrapper-work) para más información.
 
-[The FAQ above](/docs/segment-integration#i-dont-see-inapp-event-data-in-the-appsflyer-dashboard) also specifies reasons why data might not align between Segment and AppsFlyer.
+[Las preguntas frecuentes anteriores](/docs/segment-integration#i-dont-see-inapp-event-data-in-the-appsflyer-dashboard) también especifica las razones por las que los datos podrían no coincidir entre Segment y AppsFlyer.
 
 </Accordion>
 
 <div id="im-getting-a-validation-error-when-testing-events-in-segment" />
 
-<Accordion title="I'm getting a validation error when testing events in Segment">
+<Accordion title="Recibo un error de validación al probar eventos en Segment">
 
-When you test events using the ***Event Tester*** in the ***Destination*** page, you might get an error: ***Validation Error AppsFlyer Device ID ('integrations.AppsFlyer.appsFlyerId') is required to send server to server events***.
+Al probar eventos con el método ***Probador de eventos*** en ***Destino***, es posible que recibas un error: ***Error de validación ID de dispositivo de AppsFlyer ('integrations.AppsFlyer.appsFlyerId') para enviar eventos de servidor a servidor***.
 
-This error doesn't mean that there is an issue with the integration between Segment and AppsFlyer. The Event Tester allows you to test sending server-to-server from Segment to AppsFlyer. Any event that is sent using server-to-server requires the AppsFlyerID which is why the event tester throws the error.
+Este error no significa que haya un problema con la integración entre Segment y AppsFlyer. El Probador de Eventos te permite probar el envío de servidor a servidor de Segment a AppsFlyer. Cualquier evento que se envíe mediante servidor a servidor requiere el AppsFlyerID, por lo que el probador de eventos lanza el error.
 
-However, this is only relevant for server-to-server events. When you use Segment SDK API to record events, events are sent from the SDK to both Segment and AppsFlyer. For the AppsFlyer API call, the AppsFlyer Device ID is included.
+Sin embargo, esto solo es relevante para eventos de servidor a servidor. Cuando usas la API del SDK de Segment para registrar eventos, los eventos se envían desde el SDK tanto a Segment como a AppsFlyer. Para la llamada a la API de AppsFlyer, se incluye el ID de dispositivo de AppsFlyer.
 
 </Accordion>
 
 <div id="im-using-a-thirdparty-analytics-tool-should-i-integrate-it-with-both-appsflyer-and-segment" />
 
-<Accordion title="I'm using a third-party analytics tool. Should I integrate it with both AppsFlyer and Segment?">
+<Accordion title="Estoy usando una herramienta de análisis de terceros. ¿Debería integrarlo tanto con AppsFlyer como con Segment?">
 
-No, you should only use the Segment dashboard to enable the 3rd party analytics tools.
+No, solo debes usar el panel de control de Segment para habilitar las herramientas de análisis de terceros.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01JZMD855TA62KQ4AWJ5F6WSDP=introduction h_01JZMD855TNEYZG1MDZY7FWV8S=integrating-segment-with-appsflyer h_01JZMD855TAEBDPAMEAEH66F27=faqs h_01JZMD855T2BXFR1AKRNAA7M51=how-can-i-integrate-segment-with-appsflyer h_01JZMD855TG3WEKQH21JJ1PT43=what-sdks-do-i-need-to-add-to-my-app h_01JZMD855TW07PGDA6QHFWPN67=how-does-the-sdk-wrapper-work h_01JZMD855TNZGKVY2G98FPM22Z=warning h_01JZMD855T0BEENPF0BMQDBFS8=is-there-any-difference-in-functionality-between-the-segment-sdk-wrapper-and-the-appsflyer-sdk h_01JZMD855TV6J44PAV1A7JCKT5=i-dont-see-inapp-event-data-in-the-appsflyer-dashboard h_01JZMD855TH07JNZBT8CN4026W=install-and-inapp-events-data-in-segment-and-appsflyer-doesnt-match h_01JZMD855TY8X2PV1HB8Y0QT6Z=im-getting-a-validation-error-when-testing-events-in-segment h_01JZMD855TCE97QW8TSBEN1DYY=im-using-a-thirdparty-analytics-tool-should-i-integrate-it-with-both-appsflyer-and-segment" />
+<div data-zendesk-anchors="introduction=introducci%C3%B3n h_01JZMD855TA62KQ4AWJ5F6WSDP=introducci%C3%B3n integrating-segment-with-appsflyer=integraci%C3%B3n-de-segment-con-appsflyer h_01JZMD855TNEYZG1MDZY7FWV8S=integraci%C3%B3n-de-segment-con-appsflyer faqs=preguntas-frecuentes h_01JZMD855TAEBDPAMEAEH66F27=preguntas-frecuentes h_01JZMD855T2BXFR1AKRNAA7M51=how-can-i-integrate-segment-with-appsflyer h_01JZMD855TG3WEKQH21JJ1PT43=what-sdks-do-i-need-to-add-to-my-app h_01JZMD855TW07PGDA6QHFWPN67=how-does-the-sdk-wrapper-work h_01JZMD855TNZGKVY2G98FPM22Z=advertencia h_01JZMD855T0BEENPF0BMQDBFS8=is-there-any-difference-in-functionality-between-the-segment-sdk-wrapper-and-the-appsflyer-sdk h_01JZMD855TV6J44PAV1A7JCKT5=i-dont-see-inapp-event-data-in-the-appsflyer-dashboard h_01JZMD855TH07JNZBT8CN4026W=install-and-inapp-events-data-in-segment-and-appsflyer-doesnt-match h_01JZMD855TY8X2PV1HB8Y0QT6Z=im-getting-a-validation-error-when-testing-events-in-segment h_01JZMD855TCE97QW8TSBEN1DYY=im-using-a-thirdparty-analytics-tool-should-i-integrate-it-with-both-appsflyer-and-segment" />

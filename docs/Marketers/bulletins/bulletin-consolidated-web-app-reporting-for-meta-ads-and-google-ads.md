@@ -1,5 +1,5 @@
 ---
-title: 'Bulletin: Consolidated Web+App reporting for Meta Ads and Google Ads'
+title: 'Boletín: reporte consolidado de Web+App para Meta Ads y Google Ads'
 metadata:
   keywords:
     - Marketers
@@ -13,19 +13,18 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2025-10-05T12:17:10Z'
-  edited_at: '2025-10-23T11:50:56Z'
+  edited_at: '2026-10-20T03:54:31Z'
   id: 39686956300433
-  locale: en-us
+  locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/39686956300433-Bulletin-Consolidated-Web-App-reporting-for-Meta-Ads-and-Google-Ads
+  url: https://support.appsflyer.com/hc/es/articles/39686956300433
 ---
-| Section | Details |
+| Sección. | Detalles |
 | --- | --- |
-| **What's new** | <ul><li>Any attribution to `metaweb_int` will now be reported as `Facebook Ads`.</li><li>Any attribution to `googleads_int` will now be reported as `googleadwords_int`.</li><li>The change only impacts new attributions. Existing attribution isn't changed retroactively.</li><li>This change applies across all reporting tools — including dashboards and raw data exports.</li><li>The translation to the “official” media source (e.g., Facebook Ads, Google Adwords\_int) automatically **occurs on the back end**.</li><li>The complete web cost of Meta Web and Google Web is reported in the dashboard and Cost ETL under the main PID = `facebook_int` and `googleadwords_int`, respectively.</li></ul> |
-| **General Availability date** | November 02, 2025 |
-| **Why should you care?** | The consolidation provides holistic reporting of ALL your campaigns from a specific network, such as Meta or Google, including full mobile and web cost reporting. |
-| **What you need to do** | <ul><li>**No change to the campaign setting process**. Continue using the original PIDs (`metaweb_int` and `googleads_int`). These ensure AppsFlyer routes postbacks correctly via the appropriate web integrations.</li><li>**In raw data tools:**<ul><li>the `original_url` field will still display the original PID used in the ad,</li><li>the attribution media source fields will reflect the updated naming.</li></ul></li><li>**To get the web cost** include the campaign ID in the attribution link to get the web cost from Meta Web and Google Web,</li></ul> |
-| **Best practices** | <ul><li>Include campaign type in campaign names to simplify classification.</li><li>To enable full cost reporting for web campaigns, connect your network account under the “Cost” tab of the respective main integration (Facebook Ads, googleadwords\_int).</li></ul> |
-| **Future support** | <ul><li>AppsFlyer plans to introduce a new dimension (`engagement_platform_group`) to indicate campaign type (App or Web).</li><li>Upcoming PIDs for CAPI integration will include:</li></ul><ul><li>`snapweb_int` → mapped to **snapchat\_int**</li><li>`tiktokweb_int` → mapped to **tiktokglobal\_int**</li><li>`twitterweb_int` → mapped to **Twitter**</li></ul>**<span id="h_01K6T5WZKJ2XP34V3T64TWG153"></span>Note**<br />These mappings are already active — any attributions using the above PIDs are automatically translated to the main SRN PIDs, even prior to full integration support. |
+| **¿Qué hay de nuevo?** | <ul><li>Cualquier atribución a `metaweb_int` ahora se reportará como `Facebook Ads`.</li><li>Cualquier atribución a `googleads_int` ahora se reportará como `googleadwords_int`.</li><li>El cambio solo afecta a las atribuciones nuevas. La atribución existente no se modifica de forma retroactiva.</li><li>Este cambio se aplica a todas las herramientas de reporte, incluidos los dashboards y las exportaciones de raw data.</li><li>La conversión a la fuente de medios «oficial» (por ejemplo, Facebook Ads, Google Adwords\_int) **se produce automáticamente en el back end**.</li><li>El costo web completo de Meta Web y Google Web se reporta en el dashboard y en Cost ETL con el PID principal = `facebook_int` y `googleadwords_int`, respectivamente.</li></ul> |
+| **Fecha de disponibilidad general** | 02 de noviembre de 2025 |
+| **¿Por qué debería importarte?** | La consolidación ofrece un reporte integral de TODAS tus campañas de una red específica, como Meta o Google, incluida la medición completa de costos para móvil y web. |
+| **Lo que debes hacer** | <ul><li>**No hay cambios en el proceso de configuración de campañas**. Sigue usando los PID originales (`metaweb_int` y `googleads_int`). Así te aseguras de que AppsFlyer enrute los postbacks correctamente a través de las integraciones web correspondientes.</li><li>**En las herramientas de raw data:**<ul><li>el campo `original_url` seguirá mostrando el PID original usado en el anuncio,</li><li>los campos de fuente de medios de atribución reflejarán la nomenclatura actualizada.</li></ul></li><li>**Para obtener el costo web,** incluye el ID de campaña en el enlace de atribución para obtener el costo web de Meta Web y Google Web,</li></ul> |
+| **Mejores prácticas** | <ul><li>Incluye el tipo de campaña en los nombres de las campañas para simplificar la clasificación.</li><li>Para habilitar el reporte completo de costos de las campañas web, conecta tu cuenta de la red en la pestaña «Costo» de la integración principal correspondiente (Facebook Ads, googleadwords\_int).</li></ul> |
+| **Soporte futuro** | <ul><li>AppsFlyer tiene previsto incorporar una nueva dimensión (`engagement_platform_group`) para indicar el tipo de campaña (Aplicación o Web).</li><li>Los próximos PID para la integración de CAPI incluirán:</li></ul><ul><li>`snapweb_int` → asignado a **snapchat\_int**</li><li>`tiktokweb_int` → asignado a **tiktokglobal\_int**</li><li>`twitterweb_int` → asignado a **Twitter**</li></ul>**<span id="h_01K6T5WZKJ2XP34V3T64TWG153"></span>Nota**<br />Estas asignaciones ya están activas; cualquier atribución que utilice los PID anteriores se traduce automáticamente a los PID SRN principales, incluso antes de que haya soporte completo para la integración. |

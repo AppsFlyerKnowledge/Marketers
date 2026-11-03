@@ -1,5 +1,5 @@
 ---
-title: People-Based Attribution vs. Google Analytics
+title: La atribución basada en las personas frente a Google Analytics
 metadata:
   keywords:
     - Google Analytics
@@ -17,155 +17,154 @@ x-zendesk:
     - Marketers
     - Cross-Platform Measurement
   created_at: '2019-03-28T07:22:04Z'
-  edited_at: '2023-02-15T13:15:05Z'
+  edited_at: '2023-02-15T15:01:25Z'
   id: 360001305617
-  locale: en-us
+  locale: es
   section: People Based Attribution (PBA)
   section_id: 43560588808721
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/360001305617-People-Based-Attribution-vs-Google-Analytics
+  url: https://support.appsflyer.com/hc/es/articles/360001305617
 ---
-> **At a glance:** The differences between People-based Attribution (PBA) and Google Analytics
+> **De un vistazo**: Diferencias entre la atribución basada en las personas (PBA) y Google Analytics.
 
-## PBA compared to Google Analytics
+## La PBA en comparación con Google Analytics
 
-PBA and Google Analytics are web analytics and conversion measurement solutions. Each focuses on different measurement aspects. PBA also offers additional benefits.
+La PBA y Google Analytics son soluciones de análisis web y de medición de conversiones. Cada una se centra en diferentes aspectos de la medición. La PBA también ofrece beneficios adicionales.
 
-* PBA is an independent, unbiased attribution authority that focuses on attribution measurement. PBA attributes conversions and revenue to media sources and campaigns that bring users to your website.
-* Google Analytics focuses more on web analytics. It gathers, analyzes, and aggregates data related to user behavior. With Google Analytics you can analyze, for example, user behavior, funnels, web events.
+* La PBA es una autoridad de atribución independiente e imparcial que se centra en la medición de la atribución. La PBA atribuye conversiones e ingresos a fuentes de medios y campañas que atraen a los usuarios a tu sitio web.
+* Google Analytics se centra más en el análisis web. Reúne, analiza y agrega datos relacionados con el comportamiento del usuario. Con Google Analytics puedes analizar, por ejemplo, el comportamiento de los usuarios, los embudos y los eventos web.
 
-### Benefits of PBA over Google Analytics
+### Beneficios de la PBA por sobre Google Analytics
 
-The following are the benefits of PBA over Google Analytics:
+Los siguientes son los beneficios de la PBA por sobre Google Analytics:
 
-* PBA includes:
-  * Web-to-app measurement. This metric tells you how many users move from your website to your app. It also tells you which media sources and campaigns bring users to your website who subsequently install your app.
-  * <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">Raw data for conversions and events</Anchor> that you can pull into your own BI systems. This gives you the ability and power to run your analysis.
+* La PBA incluye:
+  * Medición de la web a aplicación. Esta métrica te indica cuántos usuarios se mueven de tu sitio web a tu aplicación. También te indica qué fuentes de medios y campañas atraen a los usuarios a tu sitio web que luego terminan instalando tu aplicación.
+  * <Anchor target="_blank" href="/marketers/es/docs/pba-raw-data-reports">Raw data de conversiones y eventos</Anchor> que puedes incorporar a tus propios sistemas de Business Intelligence. Esto te brinda la capacidad y el poder de ejecutar tu análisis.
 
-### Reasons for differences
+### Los motivos de las diferencias
 
-If you compare data from PBA and Google Analytics, refer to the following reasons for differences in data.
+Si comparas datos de la PBA y de Google Analytics, consulta los siguientes motivos de las diferencias en los datos.
 
-#### SDK implementation
+#### Implementación de SDK
 
-The way you implement PBA and Google Analytics could affect data collection.
+La forma en que implementas la PBA y Google Analytics podría afectar la recopilación de datos.
 
 <div id="google-analytics-shows-more-sessions-and-visitors" />
 
-<Accordion title="Google Analytics shows more sessions and visitors">
+<Accordion title="Google Analytics muestra más sesiones y visitantes">
 
-#### Cause
+#### Causa
 
-If Google Analytics loads before the Web SDK users that bounce or users that spend short periods of time on your website are not counted in PBA. This causes discrepancies in data for sessions and visitors.
+Si Google Analytics se carga cuando los usuarios del SDK web rebotan o cuando los usuarios pasan períodos de tiempo cortos en tu sitio web no se cuentan en la PBA. Esto origina discrepancias en los datos de sesiones y visitantes.
 
-#### Solution
+#### SOLUCIÓN
 
-We strongly recommend positioning the Web SDK such that it loads as early as possible.
+Te recomendamos posicionar el SDK web de modo que se cargue lo antes posible.
 
-Whether you <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#integrating-the-web-sdk-into-the-website">load the SDK directly or through Google Tag Manager</Anchor>, late loading of the SDK can cause significant discrepancies.
+Ya sea que cargues <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#integración-del-sdk-web-en-el-sitio-web">el SDK directamente o mediante Google Tag Manager</Anchor>, la carga tardía del SDK puede originar discrepancias significativas.
 
 </Accordion>
 
 <div id="google-analytics-shows-more-data-for-sessions-campaign-and-conversions" />
 
-<Accordion title="Google Analytics shows more data for sessions, campaign, and conversions">
+<Accordion title="Google Analytics muestra más datos para sesiones, campañas y conversiones">
 
-#### Cause
+#### Causa
 
-The Web SDK is present only on certain pages. Google Analytics is present on all pages. As a result, Google Analytics collects data from all over your website whereas the Web SDK collects data only from certain pages. This causes discrepancies in data for sessions, visitors, campaigns, and conversions.
+El SDK web solo está presente en ciertas páginas. Google Analytics está presente en todas las páginas. Como resultado, Google Analytics recopila datos de todo tu sitio web, mientras que el SDK web solo recopila datos de ciertas páginas. Esto origina discrepancias en los datos de sesiones, visitantes, campañas y conversiones.
 
-#### Solution
+#### SOLUCIÓN
 
-Implement the Web SDK on all pages of your website.
+Implementa el SDK web en todas las páginas de tu sitio web.
 
 </Accordion>
 
-### Dashboard settings
+### Configuración del panel de control
 
-Dashboard settings such as timezone and data filter could affect how data is presented to you.
+La configuración del panel de control, como la zona horaria y el filtro de datos, podrían afectar la forma en que se te presentan los datos.
 
 <div id="timezone-settings-discrepancies-in-data" />
 
-<Accordion title="Timezone settings - discrepancies in data">
+<Accordion title="Configuración de zona horaria: discrepancias en los datos">
 
-#### Cause
+#### Causa
 
-If the timezone settings in your Google Analytics are different from those in your PBA dashboard, you might encounter discrepancies.
+Si la configuración de la zona horaria en Google Analytics es diferente de la de tu panel de control de la PBA, es posible que encuentres discrepancias.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Your AppsFlyer dashboard is configured to UTC and your GA dashboard is configured to UTC +13. This means that your GA dashboard is ahead of your AppsFlyer dashboard by one day.
+> Tu panel de control de AppsFlyer está configurado para UTC y tu panel de control de GA está configurado para UTC +13. Esto significa que tu panel de control de GA está un día por delante de tu panel de AppsFlyer.
 >
-> Therefore, data that appears in the AppsFlyer dashboard for March 2nd only appears in your GA dashboard if you choose March 3rd in the date range filter.
+> Por lo tanto, los datos que aparecen en el panel de control de AppsFlyer para el 2 de marzo solo aparecen en tu panel de control de GA si eliges el 3 de marzo en el filtro de rango de fechas.
 
-#### Solution
+#### SOLUCIÓN
 
-Make sure time zone settings are the same in both AppsFlyer and Google Analytics.
+Asegúrate de que la configuración de la zona horaria sea la misma tanto en AppsFlyer como en Google Analytics.
 
 </Accordion>
 
 <div id="data-filters--discrepancies-in-data" />
 
-<Accordion title="Data filters - discrepancies in data">
+<Accordion title="Filtros de datos: discrepancias en los datos">
 
-#### Issue
+#### Problema
 
-Both AppsFlyer and Google Analytics allow you to filter data according to date, attributed media sources, campaigns, and events. Different filters in AppsFlyer and Google Analytics can generate different views for the same data.
+Tanto AppsFlyer como Google Analytics te permiten filtrar datos por fecha, fuentes de medios atribuidas, campañas y eventos. Los diferentes filtros en AppsFlyer y Google Analytics pueden generar diferentes vistas para los mismos datos.
 
-#### Solution
+#### SOLUCIÓN
 
-When you compare data from the two dashboards, make sure no filters are applied to the data set.
+Cuando compares datos de los dos paneles de control, asegúrate de que no hayan filtros aplicados al conjunto de datos.
 
 </Accordion>
 
-### Conversions and events
+### Conversiones y eventos
 
-Different attribution models, lookback windows, how you send events, and cookie settings, can all affect data collection and processing.
+Los diferentes modelos de atribución, las ventanas retrospectivas, la forma en que envías los eventos y la configuración de las cookies pueden afectar la recopilación y el procesamiento de datos.
 
 <div id="lookback-window-discrepancies-in-conversion-measurement" />
 
-<Accordion title="Lookback window - discrepancies in conversion measurement">
+<Accordion title="Ventana retrospectiva: discrepancias en la medición de la conversión">
 
-#### Cause
+#### Causa
 
-If you have different lookback windows in Google Analytics and PBA, discrepancies might occur in attribution data.
+Si tienes diferentes ventanas retrospectivas en Google Analytics y la PBA, pueden producirse discrepancias en los datos de atribución.
 
-#### Solution
+#### SOLUCIÓN
 
-PBA's lookback window is always 30 days. Make sure to set a 30-day lookback window in Google Analytics when you <Anchor target="_blank" href="https://support.google.com/analytics/answer/1665189">choose your attribution model</Anchor>.
+La ventana retrospectiva de la PBA es siempre de 30 días. Asegúrate de establecer una ventana retrospectiva de 30 días en Google Analytics cuando elijas <Anchor target="_blank" href="https://support.google.com/analytics/answer/1665189">tu modelo de atribución</Anchor>.
 
 </Accordion>
 
 <div id="attribution-model--discrepancies-in-conversion-measurement" />
 
-<Accordion title="Attribution model - discrepancies in conversion measurement">
+<Accordion title="Modelo de atribución: discrepancias en la medición de la conversión">
 
-#### Cause
+#### Causa
 
-Different attribution models in PBA and Google Analytics can cause discrepancies in attribution data.
+Los diferentes modelos de atribución en la PBA y Google Analytics pueden originar discrepancias en los datos de atribución.
 
-#### Solution
+#### SOLUCIÓN
 
-Google Analytics offers <Anchor target="_blank" href="https://support.google.com/analytics/answer/1665189?hl=en">default attribution models</Anchor> that you can choose from. However, PBA operates in a last non-direct touch, 30-day lookback window attribution model. Make sure to choose a last non-direct touch attribution model in Google Analytics.
+Google Analytics ofrece <Anchor target="_blank" href="https://support.google.com/analytics/answer/1665189?hl=en">modelos de atribución predeterminados</Anchor> entre los cuales puedes elegir. Sin embargo, la PBA opera con un modelo de atribución de ventana retrospectiva de toque indirecto de 30 días. Asegúrate de elegir un último modelo de atribución de toque indirecto en Google Analytics.
 
 </Accordion>
 
 <div id="sending-events" />
 
-<Accordion title="Sending events">
+<Accordion title="Envío de eventos">
 
-#### Issue
+#### Problema
 
-Both Google Analytics SDK and the Web SDK allow you to send events. If you implement one logic for sending events to Google Analytics and another for sending events to PBA, discrepancies might arise.
+Tanto el SDK de Google Analytics como el SDK web te permiten enviar eventos. Si implementas una lógica para enviar eventos a Google Analytics y otra para enviar eventos a la PBA, pueden originarse discrepancias.
 
-#### Solution
+#### SOLUCIÓN
 
-When you send events, verify the following:
+Cuando envíes eventos, verifica lo siguiente:
 
-* Make sure that the same trigger applies to both
-* Make sure you send the event to both Google Analytics and PBA
+* Asegúrate de que el mismo disparador se aplique a ambos.
+* Asegúrate de enviar el evento a Google Analytics y a la PBA.
 
-Click <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#principles-of-event-recording">here</Anchor> to learn how to send events using the Web SDK.
+Haz clic <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide#principios-de-registro-de-eventos">aquí</Anchor> para obtener información sobre cómo enviar eventos mediante el SDK web.
 
 </Accordion>
 
@@ -173,40 +172,40 @@ Click <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guid
 
 <Accordion title="Cookies">
 
-Both PBA and Google Analytics use cookies to recognize users.
+Tanto la PBA como Google Analytics usan cookies para reconocer a los usuarios.
 
-#### Cookie settings in Google Analytics
+#### Configuración de cookies en Google Analytics
 
-Although it is recommended to let Google Analytics SDK automatically handle cookie settings, you can still <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id">configure and change cookie settings</Anchor>. Any change in cookie settings might cause discrepancies.
+Aunque se recomienda permitir que el SDK de Google Analytics maneje automáticamente la configuración de cookies, puedes <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id">configurar y cambiar la configuración de las cookies</Anchor>. Cualquier cambio en la configuración de las cookies puede originar discrepancias.
 
-#### Setting Cookie Expiration
+#### Configuración de la caducidad de las cookies
 
-Google Analytics allows you to set cookie expiry. If you set the Google Analytics cookie to expire before the Web SDK cookie does, it might cause discrepancies.
+Google Analytics te permite configurar la caducidad de las cookies. Si configuras la cookie de Google Analytics para que caduque antes que la cookie del SDK web, se pueden originar discrepancias.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> Mark is a constant visitor to your website for over a year now and considers subscribing to premium content.
+> Mark es un visitante constante de tu sitio web desde hace más de un año y considera suscribirse al contenido premium.
 >
-> Your developer set the Google Analytics cookie to expire after a year. The Web SDK, however, sets the cookie to expire after two years.
+> Tu desarrollador configuró la cookie de Google Analytics para que caduque después de un año. Sin embargo, el SDK web establece que la cookie caduque después de dos años.
 >
-> When Mark finally subscribes and conversion is registered, the Google Analytics cookie is no longer valid and another is set in its stead.
+> Cuando Mark finalmente se suscribe y se registra la conversión, la cookie de Google Analytics ya no es válida y en su lugar se ha establecido otra.
 >
-> The end result is that Google Analytics shows two users, both of them are Mark, with only one of them having a conversion associated with it. PBA however, shows one user for Mark and the same user that has a conversion associated with it.
+> El resultado final es que Google Analytics muestra dos usuarios, ambos son Mark, y solo uno de ellos tiene una conversión asociada. Sin embargo, la PBA muestra un usuario para Mark y el mismo usuario que tiene una conversión asociada.
 >
-> This means that your conversion rate in Google Analytics is lower than that in PBA.
+> Esto significa que tu tasa de conversión en Google Analytics es inferior a la de la PBA.
 
-#### Setting Cookie Subdomain
+#### Configuración de cookies para subdominios
 
-Google Analytics allows you to set cookies for subdomains whereas PBA only sets cookies on the top-level domain.
+Google Analytics te permite configurar cookies para subdominios, mientras que la PBA solo establece cookies en el dominio de nivel superior.
 
-> 📄 **Example**
+> 📄 **Ejemplo**
 >
-> You set a cookie to the subdomain **store.mywebsite.com**. Sharon visits your website and then goes to your online store at **store.mywebsite.com**. Google Analytics considers her **as two different users**.
+> Estableces una cookie para el subdominio **store.mywebsite.com**. Sharon visita tu sitio web y luego accede a tu tienda en línea en **store.mywebsite.com**. Google Analytics considera a Sharon **como dos usuarios diferentes**.
 >
-> Since PBA only sets cookies on the top-level domain **mywebsite.com**, it considers Sharon in **mywebsite.com** and **store.mywebsite.com** as the same user.
+> Como la PBA solo establece cookies en el dominio de nivel superior **mywebsite.com**, considera a Sharon en **mywebsite.com** y **store.mywebsite.com** como el mismo usuario.
 >
-> The end result is two users in Google Analytics and one user in PBA.
+> El resultado final es dos usuarios en Google Analytics y un usuario en PBA.
 
 </Accordion>
 
-<div data-zendesk-anchors="cause::49d3e519=cause-1 solution::447e7ac9=solution-1 cause::30244d2c=cause-2 solution::f1a0e066=solution-2 data-filters-%C2%A0discrepancies-in-data=data-filters--discrepancies-in-data solution::df8f3921=solution-3 cause::b346571c=cause-3 solution::4bb14ac9=solution-4 attribution-model%C2%A0-discrepancies-in-conversion-measurement=attribution-model--discrepancies-in-conversion-measurement cause::2296f6c1=cause-4 solution::b2be4a33=solution-5 issue::b412f5ba=issue-1 solution::39b4d7d6=solution-6" />
+<div data-zendesk-anchors="pba-compared-to-google-analytics=la-pba-en-comparaci%C3%B3n-con-google-analytics benefits-of-pba-over-google-analytics=beneficios-de-la-pba-por-sobre-google-analytics reasons-for-differences=los-motivos-de-las-diferencias sdk-implementation=implementaci%C3%B3n-de-sdk cause=causa solution=soluci%C3%B3n cause::49d3e519=causa-1 solution::447e7ac9=soluci%C3%B3n-1 dashboard-settings=configuraci%C3%B3n-del-panel-de-control cause::30244d2c=causa-2 solution::f1a0e066=soluci%C3%B3n-2 data-filters-%C2%A0discrepancies-in-data=data-filters--discrepancies-in-data issue=problema solution::df8f3921=soluci%C3%B3n-3 conversions-and-events=conversiones-y-eventos cause::b346571c=causa-3 solution::4bb14ac9=soluci%C3%B3n-4 attribution-model%C2%A0-discrepancies-in-conversion-measurement=attribution-model--discrepancies-in-conversion-measurement cause::2296f6c1=causa-4 solution::b2be4a33=soluci%C3%B3n-5 issue::b412f5ba=problema-1 solution::39b4d7d6=soluci%C3%B3n-6 cookie-settings-in-google-analytics=configuraci%C3%B3n-de-cookies-en-google-analytics setting-cookie-expiration=configuraci%C3%B3n-de-la-caducidad-de-las-cookies setting-cookie-subdomain=configuraci%C3%B3n-de-cookies-para-subdominios" />

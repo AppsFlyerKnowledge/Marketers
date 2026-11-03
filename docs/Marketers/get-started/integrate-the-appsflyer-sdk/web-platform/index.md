@@ -1,5 +1,5 @@
 ---
-title: Web platform
+title: Plataforma web
 deprecated: false
 hidden: false
 table_of_contents: false
@@ -8,9 +8,9 @@ x-zendesk:
   category_id: 6550444307985
   created_at: '2026-09-15T09:10:22Z'
   id: 50896333547281
-  locale: en-us
+  locale: es
   parent_section_id: 6551164458257
   type: section
-  url: https://support.appsflyer.com/hc/en-us/sections/50896333547281-Web-platform
+  url: https://support.appsflyer.com/hc/es/sections/50896333547281-Plataforma-web
 ---
-- [Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk-web-platform)
+- [Integrar el SDK web de AppsFlyer](/docs/integrate-appsflyer-web-sdk-web-platform)

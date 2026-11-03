@@ -1,5 +1,5 @@
 ---
-title: AdColony campaign configuration
+title: Configuración de la campaña de AdColony
 metadata:
   keywords:
     - Adcolony
@@ -14,133 +14,132 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2016-03-06T10:58:12Z'
-  edited_at: '2026-09-09T12:34:54Z'
+  edited_at: '2026-09-11T00:22:41Z'
   id: 208005106
-  locale: en-us
+  locale: es
   section: Ad network configuration guides (A-F)
   section_id: 6551990971793
-  url: >-
-    https://support.appsflyer.com/hc/en-us/articles/208005106-AdColony-campaign-configuration
+  url: https://support.appsflyer.com/hc/es/articles/208005106
 ---
-> **At a glance:** AdColony, an AppsFlyer ad network integrated partner, is a premium video advertising network, providing advertisers and brands with an engaged and responsive audience and offers monetization solutions to publishers and developers. In addition to click-based mobile attribution, AdColony also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer.
+> **De un vistazo:** AdColony, un partner integrado de ad network de AppsFlyer, es una red de publicidad en vídeo premium que proporciona a anunciantes y marcas una audiencia comprometida y receptiva, y ofrece soluciones de monetización a publishers y desarrolladores. Además de la atribución móvil basada en clics, AdColony también ofrece atribución de costos, ingresos por publicidad y view-through, que puedes registrar con AppsFlyer.
 
-## Setting up AdColony
+## Configuración de AdColony
 
-**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
 
-**To set up a new integration:**
+**Para configurar una nueva integración:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
-   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
-2. Select the relevant app.
-3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
-5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
+1. En AppsFlyer, ve a la pestaña **Colaborar > Integraciones de Partners > Marketplace** .  
+   (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas** .)
+2. Selecciona la aplicación correspondiente.
+3. Busca el partner y selecciona **Integrar**.
+4. En la pestaña **Integración**, activa el selector **Activar partner**.   
+   **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
+5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de Partners</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Integration tab">
+<Accordion title="Pestaña de Integración">
 
-The **Integration** tag is divided into different sections as described below.
+La pestaña **Integración** está dividida en distintas secciones, tal como se describe a continuación.
 
-### Activate partners
+### Activar los partners
 
-The <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner must be activated</Anchor> by switching on the ***Activate partner*** toggle on the first visit, to enable its setup.
+Para habilitar la configuración, debes <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activar el partner</Anchor> en la primera visita mediante el conmutador ***Activar partner***.
 
-### General settings
+### Configuración general
 
-#### Enable View-Through attribution
+#### Habilitar la atribución por impresiones
 
-Toggle this ON if you want to attribute view-through installs from AdColony. The view-through lookback slider is available on the ***Attribution link*** tab.
+Activa esta opción si quieres atribuir instalaciones view-through de AdColony. El control deslizante de lookback view-through está disponible en la pestaña ***Enlace de atribución***.
 
-### Default postbacks
+### Postbacks predeterminados
 
-Send automatic postbacks to AdColony following installs and rejected installs. Use this section to define the **source of the users** for the postbacks.
+Envía postbacks automáticos a AdColony tras las instalaciones y las instalaciones rechazadas. Utiliza esta sección para definir la **fuente de los usuarios** para los postbacks.
 
-Select ***This partner only*** for installs coming only from users attributed to AdColony.  
-Select ***All sources, including organi*c** to have your entire user base available to be reported to AdColony.
+Selecciona ***Solo este partner*** para las instalaciones que provengan únicamente de usuarios atribuidos a AdColony.  
+Selecciona ***Todas las fuentes, incluidas las orgáni*cas** para que toda tu base de usuarios esté disponible para reportarla a AdColony.
 
-Rejected installs can be sent for **This partner only**.
+Las instalaciones rechazadas se pueden enviar a **Solo este partner**.
 
-#### Launch postbacks
+#### Postbacks de lanzamiento
 
-As of July 1, 2020, we no longer send launch postbacks to AdColony. If your integration was set up prior to this date, there may be changes to your configurations. The following table explains possible changes and your actions, where applicable:
+A partir del 1 de julio de 2020, ya no enviamos postbacks de lanzamiento a AdColony. Si tu integración se configuró antes de esta fecha, puede haber cambios en tus configuraciones. La siguiente tabla explica los posibles cambios y las acciones que debes realizar, cuando corresponda:
 
-| Your configuration | Will be updated to | Your next actions |
+| Tu configuración | Se actualizará a | Tus próximas acciones |
 | --- | --- | --- |
-| Send to AdColony **all launches** (from all media sources, including organic) | Send to AdColony:<ul><li>**all installs** (from all media sources, including organic)</li><li>**all** `af_app_opened` **events** (from all media sources, including organic)</li></ul> | No further actions required. This update has no actual impact on the configuration. |
-| Send to AdColony **attributed first launches only** | Send to AdColony **installs** attributed to AdColony only | If you wish to send `af_app_open` events as well:<ul><li>In AppsFlyer, on AdColony integration page, configure sending the event under the ***In-app event postbacks*** section</li></ul> |
-| Send to AdColony **all launches** (from all media sources, including organic)<br /><br />**BUT**<br /><br />No conversions have been attributed to AdColony in the 3 months prior to July 1, 2020 | Send **all installs**<br /><br />**AND**<br /><br />For 30 days after July 1, 2020, **all launches** | If you wish to send `af_app_open` events as well:<ul><li>In AppsFlyer, on AdColony integration page, configure sending the event under the ***In-app event postbacks*** section.</li></ul>If done during the 30 days period, we will discontinue sending all launches and start sending all `af_app_open` events instead.<br /><br />If done after the 30 days period, we will stop sending launches and won't send `af_app_open` events until configured otherwise. |
+| Enviar a AdColony **todos los lanzamientos** (de todas las fuentes de medios, incluidas las orgánicas) | Enviar a AdColony:<ul><li>**todas las instalaciones** (de todas las fuentes de medios, incluidas las orgánicas)</li><li>**todos los eventos** `af_app_opened` (de todas las fuentes de medios, incluidas las orgánicas)</li></ul> | No se requieren más acciones. Esta actualización no tiene ningún impacto real en la configuración. |
+| Enviar a AdColony **solo las primeras aperturas atribuidas** | Enviar a AdColony **instalaciones** atribuidas solo a AdColony | Si también quieres enviar eventos `af_app_open`:<ul><li>En AppsFlyer, en la página de integración de AdColony, configura el envío del evento en la sección ***Postbacks de eventos in-app***</li></ul> |
+| Enviar a AdColony **todas las aperturas** (de todas las fuentes de medios, incluidas las orgánicas)<br /><br />**PERO**<br /><br />No se ha atribuido ninguna conversión a AdColony en los 3 meses anteriores al 1/07/2020 | Enviar **todas las instalaciones**<br /><br />**Y**<br /><br />Durante los 30 días posteriores al 1/07/2020, **todas las aperturas** | Si también quieres enviar eventos `af_app_open`:<ul><li>En AppsFlyer, en la página de integración de AdColony, configura el envío del evento en la sección ***Postbacks de eventos in-app***.</li></ul>Si lo haces durante el periodo de 30 días, dejaremos de enviar todas las aperturas y empezaremos a enviar en su lugar todos los eventos `af_app_open`.<br /><br />Si lo haces después del periodo de 30 días, dejaremos de enviar aperturas y no enviaremos eventos `af_app_open` hasta que se configure de otro modo. |
 
-### In-app events settings
+### Configuración de eventos in-app
 
-In this section, you can configure in-app event postbacks that are sent to AdColony.
+En esta sección, puedes configurar los postbacks de eventos in-app que se envían a AdColony.
 
-**To configure in-app event postbacks:**
+**Para configurar postbacks de eventos in-app:**
 
-1. Activate ***In-app event postbacks***
-2. Click ***Add event*** to add an SDK Event to the list
+1. Activar ***Postbacks de eventos in-app***
+2. Haz clic en ***Agregar evento*** para agregar un evento del SDK a la lista
 3.
-   | Parameter name | Description |
+   | Nombre del parámetro | Nota |
    | --- | --- |
-   | **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK, or from server-to-server events.  <br />**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
-   | **Partner event identifier** | The unique name or ID of each event as defined on the partner's side. Select the most suitable pre-defined event for your SDK event. |
-   | **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to AdColony.  <br />**All sources, including organic** to have your entire user base available to be reported to the partner |
-   | **Send event data** | * **No values & no revenue:** sends only the event itself without the event value.<br />* **Values & no revenue:** sends all the parameters excluding the revenue value.<br />* **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
+   | **Nombre de evento SDK** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea desde el SDK o desde eventos de servidor a servidor.  <br />**Consejo**: si no ves el evento que quieres en la lista, actívalo en un dispositivo con una instalación no orgánica y vuelve a comprobarlo. |
+   | **Identificador de evento de partner** | El nombre exclusivo o ID de cada evento definido por el socio. Selecciona el evento predefinido más adecuado para tu evento SDK. |
+   | **Opción de envío** | Selecciona la opción de envío del evento:  <br />**Solo este partner** para eventos que provienen **solo** de usuarios atribuidos a AdColony.  <br />**Todas las fuentes, incluidas las orgánicas** para que toda tu base de usuarios esté disponible para ser reportada al partner |
+   | **Enviar datos de eventos** | * **Sin valores ni ingresos:** envía solo el evento en sí sin el valor del evento.<br />* **Con valores y sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.<br />* **Con valores e ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento). |
 
-4. Click ***Save***.
+4. Haz clic en ***Save*** (Guardar).
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Attribution link tab">
+<Accordion title="Pestaña de enlaces de atribución">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.
+Genera y guarda enlaces de atribución y envíalos al partner para que te atribuya campañas específicas, conjuntos de anuncios o anuncios únicos, tanto para campañas de UA como de retargeting. Puedes utilizar un enlace de plataforma única o un OneLink.
 
-<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+<Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Aprende más sobre la estructura y los parámetros de los enlaces de atribución</Anchor>.
 
-**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+**Para generar un enlace de atribución,** sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">estas instrucciones</Anchor>.
 
 </Accordion>
 
 <div id="cost-tab" />
 
-<Accordion title="Cost tab">
+<Accordion title="Pestaña de costos">
 
-Cost integration via API isn't available for this partner.
+La integración de costos a través de API no está disponible para este partner.
 
 </Accordion>
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Ad revenue tab">
+<Accordion title="Pestaña de Ingresos publicitarios">
 
-Ad revenue isn't currently supported for this partner integration.
+Los ingresos por publicidad no son compatibles actualmente con esta integración de partner.
 
 </Accordion>
 
 <div id="permissions-tab" />
 
-<Accordion title="Permissions tab">
+<Accordion title="Pestaña de permisos">
 
-In this tab, you can select the permissions to grant AdColony. Note that even if attribution is disabled for AdColony, the permissions tab is active and you can grant control to AdColony.
+En esta pestaña, puedes seleccionar los permisos que quieres conceder a AdColony. Ten en cuenta que, aunque la atribución esté deshabilitada para AdColony, la pestaña de permisos está activa y puedes otorgar el control a AdColony.
 
-Use these toggles to give the ad network permissions to handle its own configuration for your app:
+Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
-### Ad network permissions
+### Permisos de ad network
 
-* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report*** - only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user dataost data sync
-* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
-* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
+* ***Permitir acceso a tus datos agregados de usuarios fieles*** - solo a los datos de usuarios fieles propios del partner
+* ***Permitir acceso a tus datos agregados de eventos in-app**:* solo a los datos de eventos in-app propios del partner.
+* ***Permitir acceso a tus datos agregados de ingresos***: solo a los datos de ingresos atribuidos al partner.
+* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
-Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01HJR62VJZXTFPXYRMYT05EV1X=setting-up-adcolony h_01HJR62VJZZZQRBHAA6FT8D6GY=integration-tab h_01HJR62VJZQRBWFACANBJ6HG14=activate-partners h_01HJR62VJZFDKC4N7BC5P1TSZK=general-settings enable-viewthrough-attribution=enable-view-through-attribution h_01HJR62VJZEC4E5FZVCKWDXNEY=enable-view-through-attribution h_01HJR62VJZR34JMT4TM0YG1DC6=default-postbacks h_01HJR62VJZJX57VMDNEQFKFB9C=launch-postbacks inapp-events-settings=in-app-events-settings h_01HJR62VJZJHHH4Q8P8ZERXVRM=in-app-events-settings h_01HJR62VK0980EE3ZKYT2KFB5H=attribution-link-tab h_01HJR62VK0G62A2S3WTW49150C=cost-tab h_01HJR62VK0869W4K5R1JF7V0C4=ad-revenue-tab h_01HJR62VK0GMA3TTGPPS3ND64F=permissions-tab h_01HJR62VK0AHRTPN92TGGCMC5D=ad-network-permissions" />
+<div data-zendesk-anchors="setting-up-adcolony=configuraci%C3%B3n-de-adcolony h_01HJR62VJZXTFPXYRMYT05EV1X=configuraci%C3%B3n-de-adcolony h_01HJR62VJZZZQRBHAA6FT8D6GY=integration-tab activate-partners=activar-los-partners h_01HJR62VJZQRBWFACANBJ6HG14=activar-los-partners general-settings=configuraci%C3%B3n-general h_01HJR62VJZFDKC4N7BC5P1TSZK=configuraci%C3%B3n-general enable-viewthrough-attribution=habilitar-la-atribuci%C3%B3n-por-impresiones h_01HJR62VJZEC4E5FZVCKWDXNEY=habilitar-la-atribuci%C3%B3n-por-impresiones default-postbacks=postbacks-predeterminados h_01HJR62VJZR34JMT4TM0YG1DC6=postbacks-predeterminados launch-postbacks=postbacks-de-lanzamiento h_01HJR62VJZJX57VMDNEQFKFB9C=postbacks-de-lanzamiento inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01HJR62VJZJHHH4Q8P8ZERXVRM=configuraci%C3%B3n-de-eventos-in-app h_01HJR62VK0980EE3ZKYT2KFB5H=attribution-link-tab h_01HJR62VK0G62A2S3WTW49150C=cost-tab h_01HJR62VK0869W4K5R1JF7V0C4=ad-revenue-tab h_01HJR62VK0GMA3TTGPPS3ND64F=permissions-tab ad-network-permissions=permisos-de-ad-network h_01HJR62VK0AHRTPN92TGGCMC5D=permisos-de-ad-network" />
