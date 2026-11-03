@@ -1,0 +1,171 @@
+---
+title: Configuração de campanhas da Webpals mobile
+metadata:
+  keywords:
+    - ClicksMob
+    - Advertisers
+    - Webpals mobile
+    - Webpals
+    - Marketers
+    - Mobile Attribution
+x-zendesk:
+  category: Marketers
+  category_id: 6550444307985
+  content_tags:
+    - pm-ravid-naori
+    - Marketers
+    - Mobile Attribution
+  created_at: '2016-06-27T13:49:23Z'
+  edited_at: '2026-09-10T00:26:07Z'
+  id: 211395903
+  locale: pt
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  url: https://support.appsflyer.com/hc/pt/articles/211395903
+---
+> **Resumo:** a Webpals Mobile, uma ad network parceira integrada da AppsFlyer com cobertura global, é líder em aquisição de usuários mobile e maximização de receita.
+
+Para configurar suas campanhas com a Webpals mobile, siga as etapas abaixo.
+
+## Configurando a Webpals mobile
+
+**Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
+
+**Para ativar a integração:**
+
+1. Na aba **Integração**, habilite **Ativar parceiro**.  
+   **Para editar**: **Na AppsFlyer, vá para o menu lateral e selecione** Colaborar **>** **Integrações ativas**.
+2. Selecione o aplicativo correspondente.
+3. Na aba **Integração**, selecione o aplicativo e clique em **Ativar parceiro**.
+4. Na **primeira visita** aqui, você precisará ativar a opção ***Ativar parceiro*** para habilitar a configuração dos parâmetros de integração. A opção **deve** permanecer ativada enquanto você trabalhar com o parceiro.  
+      
+   Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.
+5. Complete a configuração utilizando as abas relevantes, conforme descrito abaixo. Para obter uma descrição detalhada do header da Janela de Configuração de Parceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.
+
+A configuração da Webpals mobile inclui 3 guias ativas: **Integração**, **Link de atribuição**, e **Permissões**. Clique nas abas abaixo para ler sobre a configuração das abas.
+
+<div id="integration-tab" />
+
+<Accordion title="Aba Integração">
+
+A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
+
+### Ativar parceiro
+
+Na **primeira visita** aqui, você precisará ativar o toggle **Ativar parceiro** para habilitar a configuração dos parâmetros da aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
+
+### Postbacks padrão
+
+Envie postbacks automáticos para a Webpals mobile após instalações e reengajamentos do usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
+
+Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à Webpals Mobile.
+
+### Configurações de eventos in-app
+
+Nesta seção, você pode mapear seus eventos da AppsFlyer com a Webpals mobile por meio de postbacks.
+
+1. Ative postbacks de eventos in-app
+2. Selecione a opção de envio para todos os eventos definidos pelo SDK.  
+   **- Somente eventos atribuídos a esse parceiro** **apenas** para eventos de usuários atribuídos a esse parceiro.  
+    **- Eventos atribuídos a qualquer parceiro ou eventos orgânicos** para que toda a base de usuários esteja disponível para ser relatada ao parceiro.
+3. Clique em **Add Event** (Adicionar Evento) para adicionar um evento do SDK à lista
+4. Complete os seguintes parâmetros:
+
+| Nome do parâmetro | A descrição |
+| --- | --- |
+| **SDK Event Name (Nome do evento do SDK)** | O nome do evento, conforme recebido pela AppsFlyer do SDK integrado ao seu aplicativo ou de eventos de servidor para servidor.  <br />**Dica** - não está encontrando o evento desejado na lista? Certifique-se de ativar o evento em um dispositivo com uma instalação não orgânica e verifique novamente. |
+| **Identificador de evento do parceiro** | O nome exclusivo ou ID de cada evento, conforme definido no lado do Webpals Mobile.  <br />Obtenha o ID do evento correspondente do Webpals Mobile e defina-o no campo de texto. |
+| **Send Revenue (Enviar receita)** | **Quando desmarcado** - todos os parâmetros de evento in-app avançado são enviados para o parceiro, exceto o parâmetro de receita, que está contido no parâmetro **af\_revenue**.  <br />**Quando marcado** - todos os parâmetros, incluindo o valor da receita (caso exista no evento), são enviados. |
+
+</Accordion>
+
+<div id="attribution-link-tab" />
+
+<Accordion title="Separador de Links de Atribuição">
+
+Nesta guia, você pode criar os links de atribuição que deseja enviar ao Webpals Mobile para atribuir campanhas, conjuntos de anúncios ou até mesmo anúncios individuais do Webpals Mobile. Observe que a AppsFlyer NÃO salva seus links de atribuição gerados pelo parceiro.
+
+Essa guia está dividida em diferentes seções:
+
+### Parâmetros de link de atribuição
+
+Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
+
+A adição de parâmetros ao link de atribuição aqui permite que você realize análises de detalhamento completas mais tarde. Os parâmetros que já estão definidos no link de atribuição podem ser editados adicionando-os junto com seus novos valores aqui.
+
+* **Campanha** - adicione para comparar diferentes campanhas em execução na Webpals Mobile.  
+  **Parâmetro de link de atribuição:** c
+* **Conjunto de anúncios** - defina nomes de conjuntos de anúncios para comparar diferentes conjuntos de anúncios em campanhas específicas da Webpals mobile.  
+  **Parâmetro de link de atribuição:** af\_adset
+* **Nome do anúncio** - defina nomes de anúncios para comparar diferentes criativos em conjuntos de anúncios específicos dentro de campanhas específicas da Webpals Mobile.  
+  **Parâmetro de link de atribuição:** af\_ad
+* **ID do site** e **ID do subsite** - defina o parâmetro ID do site para atribuir instalações a publishers específicos. Caso existam muitos publishers, aconselhamos limitar o número de IDs de site usados e usar o parâmetro de ID de subsite, para evitar <Anchor target="_blank" href="/marketers/pt/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceder as limitações de ID de site</Anchor>.  
+  **Parâmetros do link de atribuição:** af\_siteid e af\_sub\_siteid
+* **Parâmetros de assinante** - use qualquer um dos 5 parâmetros de assinante para inserir valores úteis. Observe que esses parâmetros são analisados e aparecem no relatório de dados brutos, o que os torna muito úteis para realizar agregação ou filtragem de dados.  
+  **Parâmetros do link de atribuição:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+
+Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**Estrutura e Parâmetros de Link de Atribuição da AppsFlyer**</Anchor>.
+
+### Atribuição de click-through
+
+Essa barra deslizante permite que você defina o **tempo máximo entre o clique e a instalação**. Somente as instalações (primeiras inicializações) que ocorrerem dentro da janela de lookback podem ser atribuídas à Webpals mobile.
+
+**Parâmetro do link de atribuição:** af\_click\_lookback
+
+Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
+
+### Clique no link de atribuição
+
+Este é o link de atribuição que contém todas as informações de configuração definidas para ele. Envie-o ao Webpals Mobile para ser ativado quando os leads clicarem em um anúncio correspondente.
+
+</Accordion>
+
+<div id="cost-tab" />
+
+<Accordion title="Aba de Custos">
+
+Os dados de custo não são compatíveis com a integração desse parceiro.
+
+</Accordion>
+
+<div id="ad-revenue-tab" />
+
+<Accordion title="Receita de anúncios">
+
+A receita de anúncios não é compatível com a integração desse parceiro.
+
+</Accordion>
+
+<div id="permissions-tab" />
+
+<Accordion title="Aba permissões">
+
+Nesta aba, você pode selecionar as permissões a serem concedidas à Webpals Mobile, independentemente de o parceiro atuar como ad network, agência ou até mesmo ambos. Observe que, mesmo que a atribuição esteja desativada para a Webpals Mobile, a guia de permissões estará ativa e você poderá conceder controle à Webpals Mobile.
+
+Use essas chaves seletoras para conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
+
+### Permissões da rede de anúncios
+
+* ***Permitir a configuração da integração*** – permite que o parceiro configure a aba de integração (exceto postbacks de evento in-app)
+* ***Permitir a configuração de postbacks de evento in-app*** – permite que o parceiro configure o mapeamento de postbacks de evento in-app para si mesmo na guia de integração
+* ***Permitir o acesso ao relatório de retenção*** – somente aos próprios dados de retenção do parceiro
+* ***Permitir acesso aos seus dados agregados de usuários fidelizados*** - apenas aos dados agregados de usuários fidelizados do próprio parceiro
+* ***Permitir acesso aos seus dados agregados de eventos in-app** -* apenas aos dados de eventos in-app do próprio parceiro
+* ***Permitir acesso aos dados agregados de receita*** — apenas aos dados da receita atribuídos ao parceiro
+* ***Permitir o acesso ao painel Protect360*** – somente aos próprios dados do Protect360 do parceiro e desde que o recurso esteja ativado para o anunciante
+
+Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões de ad networks</Anchor>.
+
+### Permissões da agência
+
+Use essas chaves seletoras a fim de conceder permissões à agência para gerenciar sua própria configuração do aplicativo:
+
+* ***Alternador principal*** - defina como Ativado para revelar as opções de permissões da agência
+* ***Permitir configurar postbacks de eventos in-app*** - permite que a agência configure o mapeamento de postbacks de eventos in-app para si mesma na guia de integração
+* ***Permitir acesso ao seu relatório de retenção*** - somente aos próprios dados de retenção da agência
+
+Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissões-da-agência">permissões da agência</Anchor>.
+
+</Accordion>
+
+<div data-zendesk-anchors="setting-up-webpals-mobile=configurando-a-webpals-mobile h_01HJZW1R6FFQZ5WETP6FCMW7VN=configurando-a-webpals-mobile h_01HJZW1R6F51BEYH46VPZ23X1B=integration-tab activate-partner=ativar-parceiro h_01HJZW1R6GKV9ZD222NSWDXVNE=ativar-parceiro default-postbacks=postbacks-padr%C3%A3o h_01HJZW1R6G1S7M82QVKQPKKDSE=postbacks-padr%C3%A3o inapp-events-settings=configura%C3%A7%C3%B5es-de-eventos-in-app h_01HJZW1R6GWT322E28533S7F8N=configura%C3%A7%C3%B5es-de-eventos-in-app h_01HJZW1R6G3Z21RK8ANKRP5BRY=attribution-link-tab attribution-link-parameters=par%C3%A2metros-de-link-de-atribui%C3%A7%C3%A3o h_01HJZW1R6GVEGEWJHWAW8N368X=par%C3%A2metros-de-link-de-atribui%C3%A7%C3%A3o clickthrough-attribution=atribui%C3%A7%C3%A3o-de-click-through h_01HJZW1R6G6F4Z010A7FYG6HF9=atribui%C3%A7%C3%A3o-de-click-through click-attribution-link=clique-no-link-de-atribui%C3%A7%C3%A3o h_01HJZW1R6GC6G4T3NV3FZYZ0RN=clique-no-link-de-atribui%C3%A7%C3%A3o h_01HJZW1R6GHK1TKD0BC72QFB0S=cost-tab h_01HJZW1R6GHP4S7BFTZZS6NDPA=ad-revenue-tab h_01HJZW1R6GV3AB25V5SA0Y3YR2=permissions-tab ad-network-permissions=permiss%C3%B5es-da-rede-de-an%C3%BAncios h_01HJZW1R6G1486DSCDP92P4MGJ=permiss%C3%B5es-da-rede-de-an%C3%BAncios agency-permissions=permiss%C3%B5es-da-ag%C3%AAncia h_01HJZW1R6HXXRVWM3773VSM8WC=permiss%C3%B5es-da-ag%C3%AAncia" />
