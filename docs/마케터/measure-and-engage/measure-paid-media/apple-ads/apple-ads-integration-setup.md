@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어 SRN 파트너인 Apple Search Ads(ASA)는 사용자가 키워드를 통해 Apple의 앱 스토어에서 앱을 찾을 수 있도록 도와주는 광고 플랫폼입니다.
 
-<Image alt="apple_search_ads.png" src="https://support.appsflyer.com/hc/article_attachments/51912992764049" width="217px" />
+<Image alt="apple_search_ads.png" src="https://files.readme.io/cd589369bcfe75bc327d21b3a593a71d5b5b902e8b9cbc879bbebd30f28d4f79-51912992764049.png" width="217px" />
 
 검색어에 대한 반응으로 어떤 광고가 노출될지는 앱의 연관성에 따라 결정되며, 사용자가 광고에 반응하는 정도는 광고의 연관성 신호로 간주됩니다. ASA는 이러한 사용자 반응을 기반으로 어떤 광고를 더 자주 노출할지 결정합니다.
 

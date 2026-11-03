@@ -66,7 +66,7 @@ x-zendesk:
 
 > 📘 **참고사항**
 >
-> * 구글 애즈 대시보드에서 3개의 점을 클릭 >> ***연결된 계정*** >> ***타사 앱 분석 세부 정보*** [![](https://support.appsflyer.com/hc/article_attachments/51858059772945)](https://support.appsflyer.com/hc/article_attachments/51858059772945)
+> * 구글 애즈 대시보드에서 3개의 점을 클릭 >> ***연결된 계정*** >> ***타사 앱 분석 세부 정보*** [![](https://files.readme.io/bb36fb31e18577f1a7d4e57f5122e51a3edf5b5e4da94f90ab78281707c91f57-51858059772945.png)](https://files.readme.io/bb36fb31e18577f1a7d4e57f5122e51a3edf5b5e4da94f90ab78281707c91f57-51858059772945.png)
 > * 다른 계정은 "공유"를 승인해야 합니다.
 > * 이에 따라, 다른 계정은 해당 앱에 대한 구글 애즈 캠페인을 운영하도록 승인 받았습니다.
 
@@ -80,11 +80,11 @@ x-zendesk:
 
 MCC를 설정하는 중에, MCC 또는 하위 계정이 전환을 관리하는지를 설정할 수 있습니다.
 
-[![MCC_1_new.png](https://support.appsflyer.com/hc/article_attachments/51858059773073)](https://support.appsflyer.com/hc/article_attachments/51858059773073)
+[![MCC_1_new.png](https://files.readme.io/8c51c51d1808271a73f93f7a4002332447ef61d91fed2480045c81cc5773fc8b-51858059773073.png)](https://files.readme.io/8c51c51d1808271a73f93f7a4002332447ef61d91fed2480045c81cc5773fc8b-51858059773073.png)
 
 필요한 경우, 나중에 이 설정을 수정할 수 있습니다.
 
-![mmc-googleads-settings.png](https://support.appsflyer.com/hc/article_attachments/51858050900625)
+![mmc-googleads-settings.png](https://files.readme.io/077df22cde5479a95c19faa7e37c946088bb95794cb64a9f053f31066875d751-51858050900625.png)
 
 ## MCC 중 MCC
 

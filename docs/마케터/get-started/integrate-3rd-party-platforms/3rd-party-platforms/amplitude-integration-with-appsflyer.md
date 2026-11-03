@@ -407,7 +407,7 @@ Amplitude에 대한 권한이 제공되지 않습니다.
 
 > 🚧 **중요!**
 >
-> 경우에 따라 Amplitude는 앱스플라이어에서 전송된 데이터를 “차단됨"으로 표시합니다. Amplitude에서 앱스플라이어 데이터를 볼 수 없는 경우, 차단된 이벤트로 정의되어 있는지 확인하십시오.![amplitude-blocked-data.png](https://support.appsflyer.com/hc/article_attachments/51912986509329)
+> 경우에 따라 Amplitude는 앱스플라이어에서 전송된 데이터를 “차단됨"으로 표시합니다. Amplitude에서 앱스플라이어 데이터를 볼 수 없는 경우, 차단된 이벤트로 정의되어 있는지 확인하십시오.![amplitude-blocked-data.png](https://files.readme.io/1d1a327cca509f002110d6908087c0b4f628e8643eee1a96aa7bdb018d96734e-51912986509329.png)
 
 ## Amplitude 이벤트를 앱스플라이어로 전송하기
 

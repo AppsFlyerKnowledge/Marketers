@@ -35,7 +35,7 @@ Data View Builder 도구에는 다음 기능이 있습니다.
 
 ## 데이터 뷰 빌더
 
-[![](https://support.appsflyer.com/hc/article_attachments/51912738864145)](https://support.appsflyer.com/hc/article_attachments/51912738864145)
+[![](https://files.readme.io/33957c796bf0e45fa01a7c079ef0a9ae4ad988d153b38a2ef7e94a12beabd53b-51912738864145.png)](https://files.readme.io/33957c796bf0e45fa01a7c079ef0a9ae4ad988d153b38a2ef7e94a12beabd53b-51912738864145.png)
 
 Data View Builder 페이지는 두 가지 섹션이 있습니다.
 
@@ -169,7 +169,7 @@ Data View Builder 페이지는 두 가지 섹션이 있습니다.
 
 협업하는 다른 브랜드의 제품을 가리키면서 공동 작업자로부터 구매한 제품을 표시하고 싶습니다.
 
-[![](https://support.appsflyer.com/hc/article_attachments/51912738865041)](https://support.appsflyer.com/hc/article_attachments/51912738865041)
+[![](https://files.readme.io/f27f134083694e7453df113960a240b5dfa92c921b0288995bbd432a0c08c01c-51912738865041.png)](https://files.readme.io/f27f134083694e7453df113960a240b5dfa92c921b0288995bbd432a0c08c01c-51912738865041.png)
 
 #### **통합 함수**
 
@@ -183,13 +183,13 @@ Data View Builder 페이지는 두 가지 섹션이 있습니다.
 
 사용자당 총 구매 횟수를 계산하고 총 구매 가격을 합산할 수 있습니다.
 
-[![](https://support.appsflyer.com/hc/article_attachments/51912723197713)](https://support.appsflyer.com/hc/article_attachments/51912723197713)
+[![](https://files.readme.io/ed5c27acd42890958753ed77080f95be39a32c3d4560154804831fc7d809d6d1-51912723197713.png)](https://files.readme.io/ed5c27acd42890958753ed77080f95be39a32c3d4560154804831fc7d809d6d1-51912723197713.png)
 
 #### 예시: 조건이 있는 집약
 
 독일에 거주하고 P&G 제품을 구매한 유저의 최근 구매에 대한 데이터를 원합니다.
 
-[![](https://support.appsflyer.com/hc/article_attachments/51912738874001)](https://support.appsflyer.com/hc/article_attachments/51912738874001)
+[![](https://files.readme.io/e88bda9e19c4dbfa3bd479c2bf622c11c5d0259bfdff454a1ac49ff891b58a17-51912738874001.png)](https://files.readme.io/e88bda9e19c4dbfa3bd479c2bf622c11c5d0259bfdff454a1ac49ff891b58a17-51912738874001.png)
 
 </Accordion>
 
@@ -315,7 +315,7 @@ Data View Builder 페이지는 두 가지 섹션이 있습니다.
 
 1. 앱스플라이어의 사이드 메뉴에서 **협업** > **데이터 클린룸**을 선택합니다.
 2. **소스** 탭에서 소스 이름을 클릭합니다. 연관된 데이터 뷰가 표시됩니다.
-3. 삭제하려는 데이터 화면 위로 마우스를 가져가서 행 끝에 있는 <Image alt="delete.jpeg" src="https://support.appsflyer.com/hc/article_attachments/51912738874257" width="2.3%" /> 를 클릭합니다.
+3. 삭제하려는 데이터 화면 위로 마우스를 가져가서 행 끝에 있는 <Image alt="delete.jpeg" src="https://files.readme.io/a763fd0bf1379242e3f1bc6b4433e3f9b58329af1a708a9a0e8127af2973c8e3-51912738874257.jpg" width="2.3%" /> 를 클릭합니다.
 4. 삭제 확인 창에서 **삭제** 를 클릭합니다. 데이터 뷰가 삭제되었습니다.
 
 </Accordion>
@@ -328,7 +328,7 @@ Data View Builder 페이지는 두 가지 섹션이 있습니다.
 
 1. 앱스플라이어의 사이드 메뉴에서 **협업** > **데이터 클린룸**을 선택합니다.
 2. **소스** 탭에서 소스 이름을 클릭합니다. 연관된 데이터 뷰가 표시됩니다.
-3. 공유할 데이터 화면 위로 마우스를 가져가서 행 끝에 있는 <Image alt="share-icon.jpeg" src="https://support.appsflyer.com/hc/article_attachments/51912723203345" width="3.01%" /> (공유 아이콘) 을 클릭합니다.
+3. 공유할 데이터 화면 위로 마우스를 가져가서 행 끝에 있는 <Image alt="share-icon.jpeg" src="https://files.readme.io/1d8b59793e030a27e22fed2400f3c6ce28346615edff3c9c4545dc81a35d603c-51912723203345.jpg" width="3.01%" /> (공유 아이콘) 을 클릭합니다.
 4. 공동 작업자의 이메일 주소를 입력하고 **다음**을 클릭하세요.
 5. 해당하는 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources#공유-권한">공유 권한을 선택합니다</Anchor>.
 6. **저장 및 전송** 을 클릭합니다.

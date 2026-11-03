@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **요약:** 공장 출하 전에 디바이스에 추가된 앱에 대해 앱 인스톨을 디바이스 제조업체로 어트리뷰션합니다. **참고**: <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model#preload-campaigns">다른 모든 프리로드 어트리뷰션 방법</Anchor>을 참조하십시오.
 
-![pre-install-intro-breakdown.png](https://support.appsflyer.com/hc/article_attachments/51857559113617)
+![pre-install-intro-breakdown.png](https://files.readme.io/cb21162bd0fa0850cdfd7d380841ca47eda40173f5a05b95dab87bf602583d25-51857559113617.png)
 
 ## 소개
 
@@ -359,9 +359,9 @@ OR
 
 안드로이드 스튜디오에서 앱을 빌드하여 시험 디바이스에 인스톨합니다. 애플리케이션이 시작되면 안드로이드 스튜디오에서 Logcat을 열고 "AppsFlyer"로 필터링합니다. 어트리뷰션된 인스톨이 모든 세부사항과 함께 표시될 것입니다. 아래 스크린샷을 참고하세요.
 
-![pre_install_logcat.png](https://support.appsflyer.com/hc/article_attachments/51857544690065)
+![pre_install_logcat.png](https://files.readme.io/260ce97a8f4a5e494e16de1ea31b68190fe8c72351fe6267b85d4add2e01163e-51857544690065.png)
 
-![pre_install_logcat_2.png](https://support.appsflyer.com/hc/article_attachments/51857559114257)
+![pre_install_logcat_2.png](https://files.readme.io/a1f0091ec7adc31247433b690c93530ad709bfd93e00831fb8043133dbad4ee1-51857559114257.png)
 
 </Accordion>
 
@@ -375,13 +375,13 @@ OR
 
 1. 개요 페이지에서 미디어 소스로 필터링하고 미디어 소스를 선택하세요.  
 
-   ![choose_media_source.png](https://support.appsflyer.com/hc/article_attachments/51857544690577)
+   ![choose_media_source.png](https://files.readme.io/e35689cfc07cd634c0e533f314d48da3f0f2e2a49cf9ca71397a3ed4815a187c-51857544690577.png)
 2. ***캠페인별 분석*** 그래프에서 'my 미디어 소스'로 측정된 인스톨이 사전 설치 캠페인에서 비롯된 것을 확인할 수 있습니다.  
 
     [![](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)  
    또한 *집약형 성과 리포트를 확인하여 설치가 올바르게 어트리뷰션되었는지 확인할 수 있습니다*. 리포트에서 미디어 소스와 캠페인을 볼 수 있습니다. 아래 스크린샷에서 '내 미디어 소스'가 미디어 소스이고 캠페인이 사전 설치인 경우를 참고하세요.  
 
-    [![](https://support.appsflyer.com/hc/article_attachments/51857544690833)](https://support.appsflyer.com/hc/article_attachments/51857544690833)
+    [![](https://files.readme.io/495ed305a2379b4d22bc6f2b920bf4213c49b7bcba069e45b8a5a03f53502ac5-51857544690833.png)](https://files.readme.io/495ed305a2379b4d22bc6f2b920bf4213c49b7bcba069e45b8a5a03f53502ac5-51857544690833.png)
 3. 사전 설치 캠페인에 협업하는 모든 제조업체나 미디어 소스에 대해 이 과정을 반복하세요.
 
 </Accordion>

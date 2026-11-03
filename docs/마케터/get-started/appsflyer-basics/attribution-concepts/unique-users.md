@@ -72,7 +72,7 @@ The install and re-attribution have the same device ID (AppsFlyer ID is the same
 
 <Accordion title="Install and re-engagement">
 
-![](https://support.appsflyer.com/hc/article_attachments/51857471946257)
+![](https://files.readme.io/0b6b073fe5f67ac978a1c34fb4766088703673fc0e3a0373e81a728f4436d4a7-51857471946257.png)
 
 The install and re-engagement have the same device ID/AppsFlyer ID. However, in this case (just like for re-attributions), AppsFlyer also takes into account the parameter `is_retargeting=true` so the event after the re-engagement is counted as an additional unique user. Therefore, 2 unique users are counted.
 

@@ -574,7 +574,7 @@ altAppsFlyerAdmin\_us-en.pngalt고정 모드를 사용하여 컨버전 스튜디
 * CV 매핑 표를 CSV 파일로 다운로드하세요. **매핑 파일 다운로드**를 클릭하세요.
 * <Anchor target="_blank" href="/marketers/ko/docs/skan-cv-schema-api-for-advertisers">광고주를 위한 SKAN CV 스키마 API</Anchor>를 사용하여 CV 매핑을 가져옵니다.
 
-![CVmapping.png](https://support.appsflyer.com/hc/article_attachments/51912585911953)
+![CVmapping.png](https://files.readme.io/a4f11a200c33df0e6116388ba228af7b6140110af6683dc0a2e8bf04e56df67d-51912585911953.png)
 
 #### CSV 매핑 파일의 열
 

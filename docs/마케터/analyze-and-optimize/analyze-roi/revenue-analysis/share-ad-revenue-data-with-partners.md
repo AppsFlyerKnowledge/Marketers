@@ -101,7 +101,7 @@ UA 신호를 수신할 수 있는 광고 네트워크와 협력할 수 있습니
 
 | UA 애드 네트워크 | af\_ad\_revenue를 매핑할 이벤트 | 스크린샷 |
 | --- | --- | --- |
-| ironSource | 광고 수익 | [![](https://support.appsflyer.com/hc/article_attachments/51912485192465)](https://support.appsflyer.com/hc/article_attachments/51912485192465) |
+| ironSource | 광고 수익 | [![](https://files.readme.io/f5f6987d04e98536fb5dd6925fd9f95a478ee96fbffe8c1808f333ecca073963-51912485192465.png)](https://files.readme.io/f5f6987d04e98536fb5dd6925fd9f95a478ee96fbffe8c1808f333ecca073963-51912485192465.png) |
 | Unity Ads | ad\_revenue |  |
 | Moloco | 매핑 필요 없음 |  |
 | Mintegral | 매핑 필요 없음 |  |

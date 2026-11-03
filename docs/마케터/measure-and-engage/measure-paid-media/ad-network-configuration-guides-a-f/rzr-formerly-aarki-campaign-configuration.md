@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > 한눈에 보기:  Pinterest는 클릭 기반 및 뷰-쓰루 모바일 어트리뷰션을 모두 제공합니다. 또한 Pinterest는 앱스플라이어로 기록할 수 있는 클릭 기반 리타겟팅도 제공합니다.
 
-<Image alt="Aarki-logo.png" src="https://support.appsflyer.com/hc/article_attachments/51912636702865" width="207px" />
+<Image alt="Aarki-logo.png" src="https://files.readme.io/7771a303a92fa22e0fc216038a7a367b3e249daa354593a81f4776f97b59afc6-51912636702865.png" width="207px" />
 
 
 **<span id="setting-up-aarki"></span>전제 조건:** 연동 설정 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락</Anchor>하여 계정을 개설하세요.

@@ -82,7 +82,7 @@ X Ads 계정에서 앱스플라이어의 연결을 해제할 수 있습니다. �
    ![twitter_assign_account2.PNG](https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png)
 3. Jenny는 자신의 X Ads 계정에 계정 관리자로 접속할 수 있는 권한을 @nivi에게 부여합니다.  
 
-   [![twitter_edit_access_to_account.png](https://support.appsflyer.com/hc/article_attachments/51858129584401)](https://support.appsflyer.com/hc/article_attachments/51858104747537)
+   [![twitter_edit_access_to_account.png](https://files.readme.io/6aedc7c9987dfb88658e53b4be6deccfda7d36a2dc867bc91e0889ee344419c0-51858129584401.png)](https://support.appsflyer.com/hc/article_attachments/51858104747537)
 4. Jenny는 앱스플라이어 계정에 로그인하고 X Ads 옵션>> 활성 연동으로 이동합니다
 5. 이 단계에서, Jenny는 자신의 X Ads 계정 또한 나타난 것을 볼 수 있습니다.
 6. Jenny는 이제 그녀의 X Ads 계정을 볼 수 있으며, 연동을 설정할 수 있습니다. 계정 관리자는 연결된 모든 X Ads 계정을 볼 수 있습니다.  

@@ -89,7 +89,7 @@ CTV, PC, 콘솔 플랫폼에서 앱을 마케팅할 때, 광고 디스플레이(
 
 크로스 플랫폼 원링크 링크는 확률적 모델링 어트리뷰션 방식(IP 주소 기반)만 지원합니다. 따라서 여러 유저가 여러 번 설치하면 동일한 노출로 어트리뷰션될 수 있습니다. 어트리뷰션 흐름은 다음 다이어그램에 설명되어 있습니다.
 
-![CTV attribution flow - Cross-platform Onelink link attribution flow (1).png](https://support.appsflyer.com/hc/article_attachments/51912608491665)
+![CTV attribution flow - Cross-platform Onelink link attribution flow (1).png](https://files.readme.io/15c73c4667e0bd40f4f826f40a5b048bc2148f6833c8d070c00fe435951e9244-51912608491665.png)
 
 가능한 모든 앱 대상/플랫폼은 원링크 템플릿에 구성됩니다. 이를 위해 크로스 플랫폼 원링크 링크에는 URL에 특정 앱 ID나 특정 플랫폼 정보가 포함되지 않습니다. 대신 URL에는 가능한 모든 앱 대상/플랫폼이 구성된 템플릿 ID가 포함됩니다.
 

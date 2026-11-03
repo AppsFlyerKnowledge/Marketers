@@ -138,7 +138,7 @@ x-zendesk:
 | 네이버 | <Image alt="Naver_Logotype.svg.png" src="https://files.readme.io/d236f0f4e89b68c3b4d6c085674cd2c98e397358f5e29f0f4de72b88fe3d1b12-33356334901905.png" width="128px" /> | API key | <ul><li>IDFA(해시됨)</li><li>GAID(해시됨)</li></ul> |
 | Olimob | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/olimob.png" width="95px" /> | API key | <ul><li>IDFA(해시됨)</li><li>GAID(해시됨)</li></ul> |
 | Opera Mobile | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/operamobile.png" width="128px" /> | API key | <ul><li>IDFA(해시됨)</li><li>GAID(해시됨)</li></ul> |
-| Oracle | <Image alt="oracle.png" src="https://support.appsflyer.com/hc/article_attachments/51912819887633" width="128px" /> | [Oracle](/docs/audiences-partner-connections#oracle-data-cloud)에 대한 연결 지침 | <ul><li>IDFA(해시됨)</li><li>GAID(해시됨)</li></ul> |
+| Oracle | <Image alt="oracle.png" src="https://files.readme.io/d534a357dbabdbfc75bad31860110b9ee7759442ae02ebc37058793c0b3e860f-51912819887633.png" width="128px" /> | [Oracle](/docs/audiences-partner-connections#oracle-data-cloud)에 대한 연결 지침 | <ul><li>IDFA(해시됨)</li><li>GAID(해시됨)</li></ul> |
 | Paytunes | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/paytunes.png" width="128px" /> | API key | <ul><li>IDFA(해시됨)</li><li>GAID(해시됨)</li></ul> |
 | PerformanPBI | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/performanpbi.png" width="128px" /> | API key | <ul><li>IDFA(해시됨)</li><li>GAID(해시됨)</li></ul> |
 | Personaly | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/persona.ly.png" width="128px" /> | API key | <ul><li>IDFA(해시됨)</li><li>GAID(해시됨)</li></ul> |
@@ -602,7 +602,7 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 
 1. 아래 스크린샷과 같이, 새로운 오라클 데이터 클라우드 연결을 생성합니다.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/51912835495953)](https://support.appsflyer.com/hc/article_attachments/51912835495953)
+   [![](https://files.readme.io/69d5178b2f366283b00ec160462433dea83fbf497c583649f755d94939a02820-51912835495953.png)](https://files.readme.io/69d5178b2f366283b00ec160462433dea83fbf497c583649f755d94939a02820-51912835495953.png)
 2. 앱스플라이어의 **Seat ID**를 복사하고, Oracle Data Cloud 계정 담당자에게 이를 허용 목록에 추가해 달라고 요청합니다. 이를 통해 앱스플라이어는 사용자 대신 카테고리를 생성할 수 있습니다.
 3. **Seat ID**와 **Site ID**를 삽입합니다 (Oracle Data Cloud 계정 담당자로부터 받을 수 있습니다).
 4. 사용자의 **Seat ID**를 확인하고 나면, 드롭다운 목록에 사용자의 모든 **Parent Categories**가 표시됩니다:

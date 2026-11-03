@@ -81,7 +81,7 @@ x-zendesk:
 
    <Accordion title="안드로이드">
 
-   [<Image alt="" src="https://support.appsflyer.com/hc/article_attachments/51912959808273" width="233px" />](https://support.appsflyer.com/hc/article_attachments/51912959808273)
+   [<Image alt="" src="https://files.readme.io/b794c8176cd4884bd1b66372353770485403ca841787e1c0fa3e2759f9c945a0-51912959808273.png" width="233px" />](https://files.readme.io/b794c8176cd4884bd1b66372353770485403ca841787e1c0fa3e2759f9c945a0-51912959808273.png)
 
    **링크:** [Google Play](https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid&hl=en) 및 [비공식 스토어](https://apkpure.com/my-device-id-by-appsflyer/com.appsflyer.android.deviceid)
 
@@ -91,7 +91,7 @@ x-zendesk:
 
    <Accordion title="iOS">
 
-   [<Image alt="" src="https://support.appsflyer.com/hc/article_attachments/51912933340561" width="233px" />](https://support.appsflyer.com/hc/article_attachments/51912933340561)
+   [<Image alt="" src="https://files.readme.io/ad4981f255d185e8fea7be468e66e49c6180d27efe3e24bad7d7c7caf1a0c34f-51912933340561.png" width="233px" />](https://files.readme.io/ad4981f255d185e8fea7be468e66e49c6180d27efe3e24bad7d7c7caf1a0c34f-51912933340561.png)
 
    </Accordion>
 

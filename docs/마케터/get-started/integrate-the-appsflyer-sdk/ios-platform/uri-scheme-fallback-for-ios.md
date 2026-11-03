@@ -36,7 +36,7 @@ x-zendesk:
 
 ### 시나리오 흐름도
 
-![Copy_of_Ios_fall_back_-_scenarios_flowchart__2_.png](https://support.appsflyer.com/hc/article_attachments/51912778632465)
+![Copy_of_Ios_fall_back_-_scenarios_flowchart__2_.png](https://files.readme.io/aec44d772261fb7461b3cfeb6331c93659206c6b7ad62f5914f26c0bd2cab407-51912778632465.png)
 
 ## 활용 사례
 
@@ -54,7 +54,7 @@ x-zendesk:
 
 #### **흐름도**
 
-![Copy_of_Ios_fall_back_-_browsers_that_can_use_URI_schemes_by_default__2_.png](https://support.appsflyer.com/hc/article_attachments/51912794392721)
+![Copy_of_Ios_fall_back_-_browsers_that_can_use_URI_schemes_by_default__2_.png](https://files.readme.io/32ac106ee5fdfc433d4b4cc4afb6063293b73dbc872834ec7a45a4e6d338e9b4-51912794392721.png)
 
 </Accordion>
 

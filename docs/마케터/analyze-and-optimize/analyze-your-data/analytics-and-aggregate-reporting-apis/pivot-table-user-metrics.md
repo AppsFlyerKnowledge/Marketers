@@ -27,7 +27,7 @@ x-zendesk:
 
 > **간단히 보기**: 다양한 사용자 메트릭 보기—LTV, 활동, Protect360 및 유지율. BI 시스템에서 사용할 수 있도록 결과를 CSV 파일로 다운로드합니다. 피봇은 단일 쿼리로 다중 앱을 지원합니다. 마스터 API 호출을 생성하는 데 사용합니다.
 
-![Full_Funnel.gif](https://support.appsflyer.com/hc/article_attachments/51912582394385)
+![Full_Funnel.gif](https://files.readme.io/f74b45f8fcaa29cc0941a90d6cca5ef7fb87a8034edb36697d8d595a6be7b3a5-51912582394385.gif)
 
 ## 피벗 보고서 페이지에 대하여
 

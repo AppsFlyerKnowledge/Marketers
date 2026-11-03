@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 비활성 사용자를 대상으로 한 리타겟팅을 통해 성과 증가분을 높일 수 있습니다. 미디어 소스별 비활성 기간 설정하기.
 >
-> ![](https://support.appsflyer.com/hc/article_attachments/51912966877329)
+> ![](https://files.readme.io/d18c3ba0a4693866646e3dec57ea2c56ac4df1468bf92f5b38f0a864e3ead50c-51912966877329.png)
 
 ## 비활성 기간
 
@@ -104,7 +104,7 @@ x-zendesk:
 4. **비활성 윈도우 설정.** (1-30일 사이.)
 5. **연동 저장**을 클릭하세요.
 
-[![Inactivity_window_SRN.png](https://support.appsflyer.com/hc/article_attachments/51912966881937)](https://support.appsflyer.com/hc/article_attachments/51912966881937)
+[![Inactivity_window_SRN.png](https://files.readme.io/a25c3ef3bf92179354072914552f234426981ac47e06a11b02a267593c1da4c8-51912966881937.png)](https://files.readme.io/a25c3ef3bf92179354072914552f234426981ac47e06a11b02a267593c1da4c8-51912966881937.png)
 
 </Accordion>
 
@@ -120,7 +120,7 @@ x-zendesk:
 4. **비활성 윈도우 설정.** (1-30일 사이.)  
    **비활성 기간** 파라미터를 어트리뷰션 링크에 추가합니다. 예: "&af\_inactivity\_window=7d". 기능이 비활성화되어 있다면, 어트리뷰션 링크에 포함되지 않습니다.
 
-[![Inactivity_window_non-SRN.png](https://support.appsflyer.com/hc/article_attachments/51912966884881)](https://support.appsflyer.com/hc/article_attachments/51912966884881)
+[![Inactivity_window_non-SRN.png](https://files.readme.io/d57b6537f1d9953a5a89e95deef1083a3b9c3e4fcc92f91a161770fdbcd233ae-51912966884881.png)](https://files.readme.io/d57b6537f1d9953a5a89e95deef1083a3b9c3e4fcc92f91a161770fdbcd233ae-51912966884881.png)
 
 </Accordion>
 
