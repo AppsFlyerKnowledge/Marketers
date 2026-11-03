@@ -61,7 +61,7 @@ Le script intelligent d'une page de destination multiplateforme utilise le lien 
 
 1. Associez les paramètres des liens entrants aux paramètres que les liens d'attribution directe sortants doivent contenir (source média, campagne, nom de l'annonce, etc.). En savoir plus sur les <Anchor target="_blank" href="/marketers/fr/docs/set-up-smart-script-to-convert-web-visitors#arguments">arguments</Anchor> dans le script qui traite l'URL entrante.
 2. Demandez à votre développeur d'initialiser les arguments du Smart Script et d'utiliser la méthode Smart Script pour créer un lien pour chaque plateforme\/application. Consultez la <Anchor target="_blank" href="https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/">démo</Anchor> et les <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/create-direct-click-url">instructions</Anchor> destinées aux développeurs.  
-   **Remarque : Le développeur doit ajouter les paramètres suivants :  
+   Remarque : Le développeur doit ajouter les paramètres suivants :  
 
 | Paramètre\/Argument | Remarques | Enregistrez vos réponses (à utiliser par vous ou votre développeur) |
 | --- | --- | --- |
@@ -69,7 +69,6 @@ Le script intelligent d'une page de destination multiplateforme utilise le lien 
 | app\_id | <ul><li>ID d'app</li><li>Exemple : 123456</li></ul> |  |
 | URL de redirection | <ul><li>L'URL vers laquelle l'utilisateur de la plateforme\/application doit être redirigé.</li><li>Exemple :</li></ul> |  |
 
-**
 
 </Accordion>
 

@@ -162,8 +162,8 @@ Le jeton Ad Spend est utilisé pour vérifier que l'expéditeur de l'e-mail est 
 
 **Pour accorder l'autorisation d'importation des coûts au réseau publicitaire, procédez comme suit :**
 
-1. Dans AppsFlyer, l'**annonceur** doit accéder au menu latéral et sélectionner **Collaborate** > **Active Integrations.   
-   À propos de la page partenaire intégré**
+1. Dans AppsFlyer, l'<strong>annonceur</strong> doit accéder au menu latéral et sélectionner <strong>Collaborate</strong> > Active Integrations.   
+   À propos de la page partenaire intégré
 2. Sélectionnez le partenaire intégré.
 3. Allez dans l'onglet **Autorisations**.    
     [<Image alt="PermissionAdNetwork.png" src="https://files.readme.io/c3551ced28104a5576eda62ea0684fa9088349a401f6336d91d1b350c231963a-360004994898.png" width="221px" />](https://files.readme.io/c3551ced28104a5576eda62ea0684fa9088349a401f6336d91d1b350c231963a-360004994898.png)

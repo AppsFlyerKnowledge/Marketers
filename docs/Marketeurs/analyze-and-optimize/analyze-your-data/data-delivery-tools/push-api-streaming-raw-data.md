@@ -200,8 +200,8 @@ Votre serveur doit suivre conformément les exigences suivantes :
 
 1. Rendez-vous dans **Intégration** > **Accès API.** Faites défiler jusqu'à la section API Push.
 2. Sélectionnez **SKAdNetwork** comme entité d'attribution.
-3. Cliquez sur **Ajouter un point de terminaison.   
-   Remarque** : vous pouvez définir un seul point de terminaison SKAdNetwork par app.
+3. Cliquez sur Ajouter un point de terminaison.   
+   Remarque : vous pouvez définir un seul point de terminaison SKAdNetwork par app.
 4. Choisissez une méthode HTTP : **POST** ou **GET**
 5. Saisissez **l'URL** **du point de terminaison**. Si vous voyez le message *cette URL n'est pas sécurisée*, contactez l'assistance AppsFlyer.
 6. Nous n'envoyons pas les champs nuls/vides et la clé associée. Merci de le prendre en compte lorsque vous prévoyez vos procédures d'importation et de préparation.

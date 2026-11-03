@@ -32,7 +32,7 @@ x-zendesk:
 
 **Pour activer ou modifier l'intégration :**
 
-1. **Activation :** dans AppsFlyer, dans le menu latéral, sélectionnez Collaboration**** > Marketplace partenaire.  
+1. <strong>Activation :</strong> dans AppsFlyer, dans le menu latéral, sélectionnez Collaboration > Marketplace partenaire.  
    **Modification :** dans AppsFlyer, dans le menu latéral, sélectionnez Collaboration > **Intégrations actives**.
 2. Sélectionnez le partenaire de votre choix.
 3. Cliquez sur **Configurer l'intégration**. Vous êtes alors dirigé vers la page de configuration de l'intégration.

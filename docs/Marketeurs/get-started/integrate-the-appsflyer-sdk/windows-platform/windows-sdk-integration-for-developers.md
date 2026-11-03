@@ -39,5 +39,5 @@ Vous trouverez les documents ci-dessous:
 1. SDK Windows Phone d’AppsFlyer (v1.2)
 2. Guide d’intégration du SDK Windows Phone
 
-* <span id="attachment_item_923101695"></span>[![AF-WindowsPhone-Integration-Guide-v1.0.pdf](/images/defaults/page_white_acrobat.png "<span id="attachment_list_2766742664"></span>AF-WindowsPhone-Integration-Guide-v1.0.pdf (public)")](https://support.appsflyer.com/attachments/token/N2WICjTVwbc9G1t6YYfJwVj7i/?name=AF-WindowsPhone-Integration-Guide-v1.0.pdf) <Anchor target="_blank" href="https://support.appsflyer.com/attachments/token/N2WICjTVwbc9G1t6YYfJwVj7i/?name=AF-WindowsPhone-Integration-Guide-v1.0.pdf">AF-WindowsPhone-Integration-Guide-v1.0.pdf</Anchor>
-* <span id="attachment_item_1023545695"></span>[![AF-Windows-SDK-v1.2.dll](/images/defaults/page_white.png "AF-Windows-SDK-v1.2.dll (public)")](https://support.appsflyer.com/attachments/token/KeAdpusEkY6S9GNAdnKjvsfuT/?name=AF-Windows-SDK-v1.2.dll) <Anchor target="_blank" href="https://support.appsflyer.com/attachments/token/KeAdpusEkY6S9GNAdnKjvsfuT/?name=AF-Windows-SDK-v1.2.dll">AF-Windows-SDK-v1.2.dll</Anchor>
+* <Anchor target="_blank" href="https://support.appsflyer.com/attachments/token/N2WICjTVwbc9G1t6YYfJwVj7i/?name=AF-WindowsPhone-Integration-Guide-v1.0.pdf">AF-WindowsPhone-Integration-Guide-v1.0.pdf</Anchor>
+* <Anchor target="_blank" href="https://support.appsflyer.com/attachments/token/KeAdpusEkY6S9GNAdnKjvsfuT/?name=AF-Windows-SDK-v1.2.dll">AF-Windows-SDK-v1.2.dll</Anchor>

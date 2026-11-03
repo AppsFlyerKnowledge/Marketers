@@ -126,8 +126,8 @@ AppsFlyer.setAdditionalData(customData);
 
 **Pour activer ou modifier l'intégration :**
 
-1. **Pour activer :** Dans AppsFlyer, dans le menu latéral, sélectionnez Collaborer** > **Marketplace Partenaire**.  
-   **Pour modifier** : Dans AppsFlyer, dans le menu latéral, sélectionnez **Collaborer** > **Intégrations actives.
+1. <strong>Pour activer :</strong> Dans AppsFlyer, dans le menu latéral, sélectionnez Collaborer<strong> > </strong>Marketplace Partenaire.  
+   <strong>Pour modifier</strong> : Dans AppsFlyer, dans le menu latéral, sélectionnez <strong>Collaborer</strong> > Intégrations actives.
 2. Recherchez le partenaire et sélectionnez-le.
 3. Cliquez sur **Configurer l'intégration**. Vous êtes dirigé vers la page de configuration de l'intégration.
 4. Dans l'onglet **Intégration**, sélectionnez l'application pour l'intégration et activez **Activer le partenaire**.  

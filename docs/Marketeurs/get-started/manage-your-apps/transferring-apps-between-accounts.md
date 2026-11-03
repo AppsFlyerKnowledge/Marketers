@@ -75,7 +75,7 @@ Pour demander le transfert d'une ou plusieurs apps vers un autre compte AppsFlye
    1. Déterminez et acceptez le [cadre du transfert de l'application](/docs/transferring-apps-between-accounts#app-transfer-scope). Assurez-vous de bien comprendre ce qui est et n'est pas transféré et que vous êtes tous les deux correctement préparés.
    2. Demandez au destinataire de vous fournir l'e-mail d'admin qu'il utilise dans AppsFlyer.
 2. Effectuez l'une des opérations suivantes : *** Pour transférer une application : Dans la barre de menu supérieure > **Mes Apps** > Ouvrir le menu d'action de l'application (...) > Sélectionnez l'**Transfer app**
-   * Pour transférer 2 ou plusieurs applications: Dans la barre de menu supérieure > **Mes Apps** > Ouvrir le menu d'action de l'application (...) > Sélectionnez l'**Transfer app****
+   * Pour transférer 2 ou plusieurs applications: Dans la barre de menu supérieure > <strong>Mes Apps</strong> > Ouvrir le menu d'action de l'application (...) > Sélectionnez l'<strong>Transfer app</strong>
 3. Choisissez l'application ou les applications à transférer.
 4. Cliquez sur **Suivant**.
 5. Saisissez l'e-mail de l'admin destinataire

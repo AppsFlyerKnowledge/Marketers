@@ -55,7 +55,7 @@ Le tableau ci-dessous précise la <Anchor target="_blank" href="/marketers/fr/do
 
 Lorsqu'un type d'engagement n'est pas signalé, la priorité par défaut est définie*(click\_to\_app* pour les clics, *view* pour les impressions).
 
-**Les fenêtres de rétroaction pour `engaged_click` et `engaged_view` ne peuvent être définies que pour les réseaux non-SRN.
+Les fenêtres de rétroaction pour `engaged_click` et `engaged_view` ne peuvent être définies que pour les réseaux non-SRN.
 
 ## Quels réseaux peuvent signaler l'EET à AppsFlyer ?
 
@@ -240,7 +240,7 @@ Le tableau ci-dessous précise, pour les clients Beta, la priorité d'attributio
 
 Lorsqu'un type d'engagement n'est pas signalé, la priorité par défaut est définie*(click\_to\_app* pour les clics, *view* pour les impressions).
 
-**Les fenêtres de rétroaction pour `engaged_click` et `engaged_view` ne peuvent être définies que pour les réseaux non-SRN.
+Les fenêtres de rétroaction pour `engaged_click` et `engaged_view` ne peuvent être définies que pour les réseaux non-SRN.
 
 ### Définir l'attribution de l'enrichissement engagé pour les non-SRN (participants BETA uniquement)
 

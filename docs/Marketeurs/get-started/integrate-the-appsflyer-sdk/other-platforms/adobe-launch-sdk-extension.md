@@ -106,7 +106,7 @@ Installez les extensions suivantes dans Adobe Launch :
 
 1. Sélectionnez à nouveau ***Extensions***.
 2. Recherchez et installez ***Extension SDK AppsFlyer***.
-3. Sous ***ID d’app iOS AppsFlyer,***indiquez l'identifiant de l'app iOS que vous avez obtenu à l'étape Conditions techniques.
+3. Sous <strong><em>ID d’app iOS AppsFlyer,</em></strong>indiquez l'identifiant de l'app iOS que vous avez obtenu à l'étape Conditions techniques.
 4. Dans ***Clé dev AppsFlyer*** indiquez la clé dév que vous avez obtenue à l'étape des Conditions techniques.
 5. Activez ***Envoyer les données d'attribution à Adobe Analytics***. Notez qu'il existe certaines <Anchor target="_blank" href="/marketers/fr/docs/user-level-data-retention">restrictions concernant le partage des données relatives aux utilisateurs avec des plateformes d'analyse tierces</Anchor>.
 6. Cliquez sur ***Enregistrer***.

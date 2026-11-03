@@ -32,7 +32,7 @@ L'Id de bundle Apple est un identifiant unique associé aux apps iOS.
 
 1. Connectez-vous à votre compte [iTunes Connect](https://itunesconnect.apple.com/).
 2. Cliquez sur l'app concernée.
-3. Allez dans **Général** > **Infos sur l'app.  
-   L'ID de bundle** s'affiche.  
+3. Allez dans <strong>Général</strong> > Infos sur l'app.  
+   L'ID de bundle s'affiche.  
 
    ![iTunes-connect-app-information-en-us.png](https://files.readme.io/236967e7c254e40c3a76565a6da8cc5599e86be1c16e568c7c5b31072b570bd2-360011702958.png)

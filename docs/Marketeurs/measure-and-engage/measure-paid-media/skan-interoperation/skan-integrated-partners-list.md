@@ -52,9 +52,9 @@ Les champs supplémentaires disponibles sont les suivants :
 
 *Réseaux publicitaires avec + de 10 % de leur trafic SKAN à partir de la version 4
 
-**skan\_campaign\_id n'est pas rapporté
+skan\_campaign\_id n'est pas rapporté
 
-***Disponible pour les postbacks SKAN version 4 et +
+Disponible pour les postbacks SKAN version 4 et +
 
 ^ Agrégé avec post-clic
 
