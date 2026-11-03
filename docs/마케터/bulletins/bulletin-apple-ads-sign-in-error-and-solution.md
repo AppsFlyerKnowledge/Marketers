@@ -1,5 +1,5 @@
 ---
-title: '업데이트 알림:'
+title: 'Bulletin: Apple Ads sign-in error and solution'
 metadata:
   keywords:
     - Apple Search Ads
@@ -16,16 +16,17 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-05-05T07:23:13Z'
-  edited_at: '2026-10-14T10:37:46Z'
+  edited_at: '2026-06-11T08:36:34Z'
   id: 360019957558
-  locale: ko
+  locale: en-us
   section: Bulletins
   section_id: 6551161473041
-  url: https://support.appsflyer.com/hc/ko/articles/360019957558
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360019957558-Bulletin-Apple-Ads-sign-in-error-and-solution
 ---
-> **한눈에 보기:**
+> **At a glance:** Solve the sign-in error that displays during Apple Ads cost integration.
 
-|  |  |
+| **Issue date** | From May 5, 2021 |
 | --- | --- |
-| **Error** | [![](https://files.readme.io/cb6b1d144ff755dec1545110e77d0a3a68aa4d8fe84d832648bf43e1962387f3-360019847618.jpg)](https://files.readme.io/cb6b1d144ff755dec1545110e77d0a3a68aa4d8fe84d832648bf43e1962387f3-360019847618.jpg) |
-| **해결 방안** |  |
+| **Error** | When you try to sign in to Apple Ads for AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/apple-ads-integration-setup#cost-tab">cost integration</Anchor>, the following error message may display:<br /><br />[![](https://files.readme.io/cb6b1d144ff755dec1545110e77d0a3a68aa4d8fe84d832648bf43e1962387f3-360019847618.jpg)](https://files.readme.io/cb6b1d144ff755dec1545110e77d0a3a68aa4d8fe84d832648bf43e1962387f3-360019847618.jpg) |
+| **Solution** | <ol><li>Close all of your open browsers.</li><li>Relaunch the AppsFlyer dashboard.</li><li>Try to <Anchor target="_blank" href="/marketers/ko/docs/apple-ads-integration-setup#cost-tab">enable Apple Ads cost integration</Anchor> again.</li></ol> |

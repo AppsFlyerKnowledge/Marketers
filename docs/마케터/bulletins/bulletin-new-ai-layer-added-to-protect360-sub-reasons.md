@@ -1,5 +1,5 @@
 ---
-title: '업데이트 알림:'
+title: 'Bulletin: New AI layer added to Protect360 sub reasons'
 metadata:
   keywords:
     - Protect360
@@ -13,15 +13,16 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2024-08-04T08:57:34Z'
-  edited_at: '2026-10-14T10:33:26Z'
+  edited_at: '2024-08-05T17:41:35Z'
   id: 27250541538705
-  locale: ko
+  locale: en-us
   section: Bulletins
   section_id: 6551161473041
-  url: https://support.appsflyer.com/hc/ko/articles/27250541538705
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27250541538705-Bulletin-New-AI-layer-added-to-Protect360-sub-reasons
 ---
-| **새로운 소식** |  |
+| **What's new** | To protect your data, ensure its security, and reduce fraud, we have added an AI model to enhance detection capabilities for identifying fraudulent devices and installation activities. |
 | --- | --- |
-| **시행일** |  |
-| **중요 사항** |  |
-| **영향** |  |
+| **Effective date** | August 5th, 2024 |
+| **What you need to know** | <ul><li>The new AI detection layer is a new kind of approach rather than a new logic.</li><li>it will be reflected as a new fraud sub-reason in reporting and dashboard.</li></ul> |
+| **Implications** | The AI layer brings new and important protection capabilities. By constantly analyzing large amounts of data points it ensures the accuracy of the detection. It can be found in the dashboard or reports under the <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data-reports#install-level-blocked-reasons">block sub reasons</Anchor> |

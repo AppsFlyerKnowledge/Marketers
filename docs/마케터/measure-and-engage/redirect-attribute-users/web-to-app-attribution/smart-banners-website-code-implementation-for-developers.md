@@ -1,5 +1,5 @@
 ---
-title: 개발자를 위한 스마트 배너 웹사이트 코드 구현
+title: Smart Banners website code implementation for developers
 metadata:
   keywords:
     - Developers
@@ -14,10 +14,19 @@ x-zendesk:
     - Marketers
     - Smart Banners and Scripts
   created_at: '2021-11-09T09:33:43Z'
-  edited_at: '2026-10-14T10:36:05Z'
+  edited_at: '2023-12-18T12:29:45Z'
   id: 4410472474001
-  locale: ko
+  locale: en-us
   section: Web-to-app attribution
   section_id: 6551240476177
-  url: https://support.appsflyer.com/hc/ko/articles/4410472474001
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4410472474001-Smart-Banners-website-code-implementation-for-developers
 ---
+> 📘 **Note**
+>
+> The original article appearing in the URL is deprecated.
+>
+> * Go to the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Dev Hub</Anchor> to learn about smart banners website code implementation for developers
+> * Go to <Anchor target="_blank" href="/marketers/ko/docs/smart-banners-website-code-implementation-for-marketers">here</Anchor> to learn about smart banners website code implementation for marketers.
+
+<div data-zendesk-anchors="h_01HHYE22GM644Z5HB8DQD264CZ=note" />
