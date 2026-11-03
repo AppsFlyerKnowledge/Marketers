@@ -378,10 +378,10 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 
 **アプリ名:あなたが選択した名前**
 
-**アプリID:アプリのID逆DNS表記を使用して見つかりました：`<tld>`.`<company_name>`.`<app_name>`  
+アプリID:アプリのID逆DNS表記を使用して見つかりました：`<tld>`.`<company_name>`.`<app_name>`  
 最低2つのセグメントを含む必要があります。各セグメントは文字で始まり、次の文字から構成される必要があります: `A-Z` `a-z` `0-9.` `-`  
 
-例：com.company.myapp**
+例：com.company.myapp
 
 詳細については、<Anchor target="_blank" href="https://developer.amazon.com/docs/vega/0.21/manifest-package.html#fields">Amazon Vega OS ドキュメント</Anchor>の「id」フィールドを参照してください。
 

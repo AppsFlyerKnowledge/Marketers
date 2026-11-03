@@ -1,5 +1,5 @@
 ---
-title: Google Marketing Platform - Display &amp; Video 360（DV360）の統合
+title: Google Marketing Platform - Display & Video 360（DV360）の統合
 metadata:
   keywords:
     - Advertisers

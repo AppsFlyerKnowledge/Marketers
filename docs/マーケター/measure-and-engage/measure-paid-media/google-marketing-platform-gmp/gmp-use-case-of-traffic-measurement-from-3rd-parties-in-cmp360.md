@@ -32,7 +32,7 @@ Google Marketing Platform (GMP)は、広告と分析を連携することで、�
 
 #### ステップ2:
 
-1. 2. **注： 計測リンクには、報告する実際のメディアソースが含まれている必要があります。これは、GMPではなく、サードパーティメディアソースである必要があります。例えば、サードパーティメディアソースがRocketfuelの場合、pid=doubleclick\_int ではなく、pid=rocketfuel\_int を使用してください。<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">詳細はこちら</Anchor>を参照してください。
+1. 2. 注： 計測リンクには、報告する実際のメディアソースが含まれている必要があります。これは、GMPではなく、サードパーティメディアソースである必要があります。例えば、サードパーティメディアソースがRocketfuelの場合、pid=doubleclick\_int ではなく、pid=rocketfuel\_int を使用してください。<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">詳細はこちら</Anchor>を参照してください。
 
       **計測リンクの例：**
 

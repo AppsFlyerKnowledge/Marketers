@@ -50,7 +50,7 @@ x-zendesk:
    注意：パートナーとの連携を利用している間は、**このトグルをオン（有効）にしておく必要があります**。<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">詳しく見る</Anchor>
 5. 以下の説明に従い、該当するタブで設定を完了します。
 
-Game Analyticsの設定で使用するのは、***［連携］***タブのみです。
+Game Analyticsの設定で使用するのは、<strong><em>［連携］</em></strong>タブのみです。
 
 <div id="integration-tab" />
 
@@ -60,7 +60,7 @@ Game Analyticsの設定で使用するのは、***［連携］***タブのみで
 
 ### パートナーを有効化
 
-**初めて設定する場合**は、***［パートナーを有効化］***をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
+<strong>初めて設定する場合</strong>は、<strong><em>［パートナーを有効化］</em></strong>をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
 
 ### 一般設定

@@ -149,7 +149,7 @@ Batchとの連携を設定する前に、**Batch Rest API Key**と**Batch API Ke
 
 ### デフォルトポストバック
 
-<strong>［デフォルトポストバック］</strong>の<strong>［送信オプション］</strong>ドロップダウンで、**［すべてのパートナーまたはオーガニックのイベント］***を選択します。*
+<strong>［デフォルトポストバック］</strong>の<strong>［送信オプション］</strong>ドロップダウンで、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong><em>を選択します。</em>
 
 ![batch-default-postbacks.png](https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png)
 

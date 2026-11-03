@@ -57,7 +57,7 @@ APIの実装には、管理画面から取得できる以下の認証情報が�
 
 **認証情報の取得方法：**
 
-1. AppsFlyerの上部メニューから**マイアプリ** > **ブランドバンドルを表示*を選択します。***バンドルの一覧が表示されます。
+1. AppsFlyerの上部メニューから<strong>マイアプリ</strong> > <strong>ブランドバンドルを表示<em>を選択します。</em></strong>バンドルの一覧が表示されます。
 2. 適切な内容をコピーして記録します：
    * ***Brand bundle ID***
    * ***Web dev key***
@@ -269,7 +269,7 @@ print(response.text.encode('utf8'))
 **訪問者のブラウザから afUserId を取得する方法：**
 
 1. ブラウザで自社Webサイトを開きます。
-2. 右クリックし、***Inspect（検証）を選択します。***ブラウザの検査ウィンドウが開きます。
+2. 右クリックし、<strong><em>Inspect（検証）を選択します。</em></strong>ブラウザの検査ウィンドウが開きます。
 
    [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
 3. (A) ***Application***タブを開きます。

@@ -93,7 +93,7 @@ Metaは、2025年6月17日から<strong>Advanced Mobile Measurement（AMM）</st
 
 <Accordion title="Meta広告の連携設定">
 
-1. AppsFlyerで、**［連携］>［パートナー連携］>［マーケットプレイス］**タブに移動します。
+1. AppsFlyerで、<strong>［連携］>［パートナー連携］>［マーケットプレイス］</strong>タブに移動します。
 2. Meta広告を検索し、選択します。
 3. <strong>［連携する］</strong>をクリックします。連携設定ページが表示されます。
 4. <strong>［連携］</strong>タブで、<strong>［パートナーを有効にする］</strong>をオンにします。  

@@ -62,7 +62,7 @@ OneLinkテンプレートには、次の特徴があります。
    > * テンプレート名は内部管理にのみ使用されます。マーケティングのアトリビューションデータには影響せず、ユーザーにも表示されません。
 
 4. ［**サブドメイン**］フィールドに、<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-knowledge-base-glossary#サブドメイン">サブドメイン</Anchor>名を入力します。
-   * ブランドに合ったサブドメインを選択してください。例えば、Webサイトがwww.abcd.comの場合、サブドメインにはabcdを選択します。
+   * ブランドに合ったサブドメインを選択してください。例えば、Webサイトが[www.abcd.com](https://www.abcd.com)の場合、サブドメインにはabcdを選択します。
    * このサブドメインは、リンクURLの一部としてユーザーに表示されます。例：`https://abcd.onelink.me/RPsv/37e5cd36`。
    * このテンプレートをもとにカスタムリンクを作成すると、サブドメインは変更できなくなります。
    * 使用できる文字は、英小文字、数字、ハイフン（-）のみです。
@@ -136,7 +136,7 @@ OneLinkテンプレートには、次の特徴があります。
    <Tabs>
    <Tab title="iOS Universal Links">
 
-   Universal Linksは通常のWebリンクと同じ形式（例：https://yourbrand.onelink.meまたはhttps://www.yourbrand.com）を使用するため、サブドメインの設定が必要です（[前のガイド](/docs/create-a-onelink-template#onelinkテンプレートの作成)で説明しています）。 OneLinkは独自の<Anchor target="_blank" href="/marketers/ja/docs/brand-onelink-with-your-domain">ブランドドメイン</Anchor>にも対応していますが、このガイドの手順を完了するうえで設定は必須ではありません。
+   Universal Linksは通常のWebリンクと同じ形式（例：[https://yourbrand.onelink.me](https://yourbrand.onelink.me)または[https://www.yourbrand.com](https://www.yourbrand.com)）を使用するため、サブドメインの設定が必要です（[前のガイド](/docs/create-a-onelink-template#onelinkテンプレートの作成)で説明しています）。 OneLinkは独自の<Anchor target="_blank" href="/marketers/ja/docs/brand-onelink-with-your-domain">ブランドドメイン</Anchor>にも対応していますが、このガイドの手順を完了するうえで設定は必須ではありません。
 
    **Universal Linksを使用してアプリを開くには**：
 
@@ -156,7 +156,7 @@ OneLinkテンプレートには、次の特徴があります。
 
    <Tab title="Android App Links">
 
-   App Linksは通常のWebリンクと同じ形式（例：https://yourbrand.onelink.meまたはhttps://www.yourbrand.com）を使用するため、サブドメインの設定が必要です（[前のガイド](/docs/create-a-onelink-template#onelinkテンプレートの作成)で説明しています）。 OneLinkは独自の<Anchor target="_blank" href="/marketers/ja/docs/brand-onelink-with-your-domain">ブランドドメイン</Anchor>にも対応していますが、このガイドの手順を完了するうえで設定は必須ではありません。
+   App Linksは通常のWebリンクと同じ形式（例：[https://yourbrand.onelink.me](https://yourbrand.onelink.me)または[https://www.yourbrand.com](https://www.yourbrand.com)）を使用するため、サブドメインの設定が必要です（[前のガイド](/docs/create-a-onelink-template#onelinkテンプレートの作成)で説明しています）。 OneLinkは独自の<Anchor target="_blank" href="/marketers/ja/docs/brand-onelink-with-your-domain">ブランドドメイン</Anchor>にも対応していますが、このガイドの手順を完了するうえで設定は必須ではありません。
 
    **作業を始める前に**：
 
@@ -236,7 +236,7 @@ OneLinkで生成したQRコードには、次のカスタマイズが可能で�
 1. AppsFlyerのサイドメニューから、［**Engage**］>［**OneLinkカスタムリンク**］を選択します。
 2. 編集するテンプレートの［**アクション**］アイコンにカーソルを合わせ、［**QRコードをカスタマイズ**］をクリックします。  
    QRコードエディターが開きます。
-3. ロゴがホストされているURLを入力します。例：https://yourbrand.com/logo.png。  
+3. ロゴがホストされているURLを入力します。例：[https://yourbrand.com/logo.png](https://yourbrand.com/logo.png)。  
    ロゴの要件：
 
    * PNG形式またはJPG形式

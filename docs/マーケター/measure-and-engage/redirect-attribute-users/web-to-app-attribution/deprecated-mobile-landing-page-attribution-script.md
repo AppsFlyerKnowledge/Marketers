@@ -99,7 +99,7 @@ Meta adsはクロスプラットフォームのアトリビューションにも
 
 ランディングページのスクリプトは、リンクを変更しません。スクリプトは、ユーザーがFacebookアプリから訪問したかどうかを検出します。 Facebookアプリからの訪問を検出した場合は、何も処理しません。ランディングページに設定されているアプリストアへの直接リンクを、そのまま使用します。これにより、CTRに影響する可能性のある追加のクリックが記録されるのを防ぎます。
 
-Facebookアプリから訪問したユーザーに対する処理の詳細は、スクリプト内の***isFacebook()***メソッドを確認してください。
+Facebookアプリから訪問したユーザーに対する処理の詳細は、スクリプト内の<strong><em>isFacebook()</em></strong>メソッドを確認してください。
 
 </Accordion>
 
@@ -125,7 +125,7 @@ Google広告への対応は、2つの部分で構成されます。
 >
 > GCLIDを使用するこの方法は、Googleが公式にサポートまたは推奨しているものではありません。
 > GoogleがGCLIDパラメータを廃止した場合は、その変更に対応するようスクリプトを更新します。
-> 記事や添付スクリプトの更新通知を受け取れるよう、記事上部の***［フォロー］***ボタンをクリックして、この記事をフォローすることをおすすめします。
+> 記事や添付スクリプトの更新通知を受け取れるよう、記事上部の<strong><em>［フォロー］</em></strong>ボタンをクリックして、この記事をフォローすることをおすすめします。
 
 #### 手順：
 
@@ -318,7 +318,7 @@ Webサイトにモバイルのオーガニック流入が多い場合は、自�
 
 #### 手順：
 
-モバイルのオーガニック訪問者の成果を紐づけるには、Webサイトに***［ダウンロード］***または***［インストール］***ボタンを設置し、リンク先にOneLinkのアトリビューションリンクを設定します。 OneLinkはデバイスの種類を判別し、それに応じたアプリストアへ見込み顧客をリダイレクトします。
+モバイルのオーガニック訪問者の成果を紐づけるには、Webサイトに<strong><em>［ダウンロード］</em></strong>または<strong><em>［インストール］</em></strong>ボタンを設置し、リンク先にOneLinkのアトリビューションリンクを設定します。 OneLinkはデバイスの種類を判別し、それに応じたアプリストアへ見込み顧客をリダイレクトします。
 
 OneLink URLの設定・作成方法は、<Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template">こちら</Anchor>を参照してください。
 
@@ -607,18 +607,18 @@ function generateUrl(isDebug) {
 
 ### 手順
 
-1. ユーザーが直接訪問する可能性があり、モバイルアプリの***［ダウンロード］***ボタンを設置しているWebサイト内の各ページで、読み込み時に***generateUrl***スクリプトを実行します。  
+1. ユーザーが直接訪問する可能性があり、モバイルアプリの<strong><em>［ダウンロード］</em></strong>ボタンを設置しているWebサイト内の各ページで、読み込み時に<strong><em>generateUrl</em></strong>スクリプトを実行します。  
 
    > 🚧 **重要**
    >
-   > ***［ダウンロード］*ボタンには、デフォルトでiTunesとGoogle Playのアプリページへの直接リンクを設定してください<strong>。これらのリンクを変更しない場合（AppsFlyerのアトリビューションリンクやMeta adsからの訪問など）、</strong>*generateUrl***は' 'を返します。それ以外の場合は、両方のダウンロードボタンで使用するURLを返します（この場合は、OneLinkを使い、両アプリに対応する***［ダウンロード］***ボタンを1つだけ設置することもできます）。
+   > <strong><em>［ダウンロード］</em>ボタンには、デフォルトでiTunesとGoogle Playのアプリページへの直接リンクを設定してください<strong>。これらのリンクを変更しない場合（AppsFlyerのアトリビューションリンクやMeta adsからの訪問など）、</strong><em>generateUrl</em></strong>は' 'を返します。それ以外の場合は、両方のダウンロードボタンで使用するURLを返します（この場合は、OneLinkを使い、両アプリに対応する<strong><em>［ダウンロード］</em></strong>ボタンを1つだけ設置することもできます）。
 
 2. ***oneLinkURL***パラメータの値を、自社の基本となるOneLink URLに置き換えます。プレースホルダーの`https://yourapp.onelink.me/abcd`と同じ形式にしてください。  
    Meta adsの有料広告を除くすべてのSRNと、モバイルのオーガニック訪問者の成果を紐づけるために必須です。
 3. ***webFormURL***パラメータの値を、自社のWebフォームへのリンクに置き換えます。 WebフォームではユーザーのメールアドレスまたはSMSの送信先を取得し、アプリをダウンロードするためのOneLink URLを含むメッセージをモバイルデバイスに送信できるようにします。  
    デスクトップからの訪問者の成果を紐づけるために必須です。
 4. モバイルのオーガニックユーザーをwebsite以外のメディアソースに紐づけたい場合は、***partnerIDParam***パラメータの値を置き換えます。
-5. ランディングページURLで別のキャンペーン名（`&c={CAMPAIGN_NAME}`）を指定していない場合、デフォルトでは、ユーザーが***［ダウンロード］***ボタンをクリックしたWebページに成果が紐づきます。この設定を変更するには、***campaignParam***パラメータの値を置き換えます。  
+5. ランディングページURLで別のキャンペーン名（`&c={CAMPAIGN_NAME}`）を指定していない場合、デフォルトでは、ユーザーが<strong><em>［ダウンロード］</em></strong>ボタンをクリックしたWebページに成果が紐づきます。この設定を変更するには、<strong><em>campaignParam</em></strong>パラメータの値を置き換えます。  
    Meta adsの有料広告を除くすべてのケースで任意の設定です。
 
 ## 結果の確認
@@ -653,6 +653,6 @@ AppsFlyerは、ソーシャルメディアアプリ向けにさまざまなラ�
 
 1. <Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template#onelinkテンプレートの作成">OneLinkテンプレート</Anchor>を設定します。
 2. そのテンプレートを基に<Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#onelinkリンクの作成">OneLink URL</Anchor>を作成します。
-3. スクリプト内のhttps://yourapp.onelink.me/abcdを、自社のOneLink URLに置き換えます。
+3. スクリプト内の[https://yourapp.onelink.me/abcd](https://yourapp.onelink.me/abcd)を、自社のOneLink URLに置き換えます。
 
 <div data-zendesk-anchors="the-upsides=%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88 the-downsides=%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88 the-challenges-of-mobile-attribution-on-landing-pages=%E3%83%A9%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E8%AA%B2%E9%A1%8C the-solution=%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%B3%95 landing-page-scenarios=%E3%83%A9%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E5%88%A9%E7%94%A8%E3%82%B1%E3%83%BC%E3%82%B9 description=%E8%AA%AC%E6%98%8E conclusion=%E5%AF%BE%E5%BF%9C%E3%81%AE%E8%A6%81%E7%82%B9 instructions=%E6%89%8B%E9%A0%86 what-the-script-does=%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E5%8B%95%E4%BD%9C description::7888dd9d=%E8%AA%AC%E6%98%8E-1 conclusion::11bed45=%E5%AF%BE%E5%BF%9C%E3%81%AE%E8%A6%81%E7%82%B9-1 instructions::5aa3290f=%E6%89%8B%E9%A0%86-1 what-the-script-does::2a675257=%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E5%8B%95%E4%BD%9C-1 description::650e3f28=%E8%AA%AC%E6%98%8E-2 conclusion::a982e4bd=%E5%AF%BE%E5%BF%9C%E3%81%AE%E8%A6%81%E7%82%B9-2 instructions::afffc83f=%E6%89%8B%E9%A0%86-2 what-the-script-does::3fd4ce35=%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E5%8B%95%E4%BD%9C-2 description::9c3fcdaa=%E8%AA%AC%E6%98%8E-3 conclusion::bf993a93=%E5%AF%BE%E5%BF%9C%E3%81%AE%E8%A6%81%E7%82%B9-3 instructions::350b4cb1=%E6%89%8B%E9%A0%86-3 what-the-script-does::3dda504d=%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E5%8B%95%E4%BD%9C-3 description::5150e1b5=%E8%AA%AC%E6%98%8E-4 conclusion::d51c1aec=%E5%AF%BE%E5%BF%9C%E3%81%AE%E8%A6%81%E7%82%B9-4 instructions::e083609=%E6%89%8B%E9%A0%86-4 what-the-script-does::85ffec6c=%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E5%8B%95%E4%BD%9C-4 description::f5a2038b=%E8%AA%AC%E6%98%8E-5 conclusion::4593a93c=%E5%AF%BE%E5%BF%9C%E3%81%AE%E8%A6%81%E7%82%B9-5 instructions::2e4dd2ee=%E6%89%8B%E9%A0%86-5 what-the-script-does::d6370587=%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E5%8B%95%E4%BD%9C-5 description::e20640cf=%E8%AA%AC%E6%98%8E-6 conclusion::c818491=%E5%AF%BE%E5%BF%9C%E3%81%AE%E8%A6%81%E7%82%B9-6 instructions::ba61ae3e=%E6%89%8B%E9%A0%86-6 what-the-script-does::3668d917=%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E5%8B%95%E4%BD%9C-6 landing-page-javascript=%E3%83%A9%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9A%E3%83%BC%E3%82%B8%E7%94%A8javascript instructions::10da52a9=%E6%89%8B%E9%A0%86-7 viewing-the-results=%E7%B5%90%E6%9E%9C%E3%81%AE%E7%A2%BA%E8%AA%8D onelink-for-landing-page-solution=%E3%83%A9%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%9A%E3%83%BC%E3%82%B8%E5%90%91%E3%81%91%E3%81%AEonelink%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" />

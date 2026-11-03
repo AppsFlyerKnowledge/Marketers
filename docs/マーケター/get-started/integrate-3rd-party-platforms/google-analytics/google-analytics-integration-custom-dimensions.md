@@ -56,10 +56,10 @@ Google Analyticsには、ユーザー単位のセグメント分けに使用で�
 ### 手順1：Google Analyticsでの定義
 
 1. GAメニューから、対象のアプリを選択します。
-2. GA管理画面の上部で、***［管理］***を選択します。
-3. ***［プロパティ］***列で、***［カスタム定義］***を選択します。
-4. ***［カスタムディメンション］***を選択します。 ![Google Analyticsの管理パネルのカスタムディメンション](https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png)
-5. 新しいディメンションを作成します。名前を**AppsFlyer Media Source**にし、範囲に***［ユーザー］***を選択します。これにより、複数のセッションにわたってデータが保持されます。 ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
+2. GA管理画面の上部で、<strong><em>［管理］</em></strong>を選択します。
+3. <strong><em>［プロパティ］</em></strong>列で、<strong><em>［カスタム定義］</em></strong>を選択します。
+4. <strong><em>［カスタムディメンション］</em></strong>を選択します。 ![Google Analyticsの管理パネルのカスタムディメンション](https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png)
+5. 新しいディメンションを作成します。名前を<strong>AppsFlyer Media Source</strong>にし、範囲に<strong><em>［ユーザー］</em></strong>を選択します。これにより、複数のセッションにわたってデータが保持されます。 ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
 
    各ディメンションにはインデックスが割り当てられます。後でアプリからGA APIを使用する際に必要なため、控えておいてください。この例では、新しいディメンションのインデックスは10です。
 

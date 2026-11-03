@@ -245,11 +245,11 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 >
 > **このイベントの条件は次のように設定されています:**
 >
-> * レベル が***10***に等しいとき、*`fb_mobile_level_acheived`*にマップします。
+> * レベル が<strong><em>10</em></strong>に等しいとき、<em>`fb_mobile_level_acheived`</em>にマップします。
 >   それ以外の場合（**または**）、
-> * レベル が***50***に等しいとき、*`fb_mobile_level_acheived`*にマップします。
+> * レベル が<strong><em>50</em></strong>に等しいとき、<em>`fb_mobile_level_acheived`</em>にマップします。
 >   それ以外の場合（**または**）、
-> * コスト が***3***に等しいとき、*`fb_mobile_purchase`*にマップします。
+> * コスト が<strong><em>3</em></strong>に等しいとき、<em>`fb_mobile_purchase`</em>にマップします。
 
 **イベントの条件を設定するには:**
 

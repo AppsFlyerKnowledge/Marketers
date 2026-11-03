@@ -55,7 +55,7 @@ AppsFlyerは、主要なアドネットワークと協力し、業界全体の�
 
 *エンゲージメントタイプが報告されない場合は、デフォルトの優先順位（クリックは2、インプレッションは3）が適用されます。
 
-**`engaged_click`と`engaged_view`のルックバック期間を個別に設定できるのは、非SRNのアドネットワークのみです。 SRNでは、`engaged_click`と`engaged_view`にクリックと同じルックバック期間が適用されるため、**Install Click-Through Attribution Lookback**のスライダーで設定します。
+<strong>`engaged_click`と`engaged_view`のルックバック期間を個別に設定できるのは、非SRNのアドネットワークのみです。 SRNでは、`engaged_click`と`engaged_view`にクリックと同じルックバック期間が適用されるため、</strong>Install Click-Through Attribution Lookbackのスライダーで設定します。
 
 ## エンゲージビューとエンゲージクリックを報告できるアドネットワーク
 

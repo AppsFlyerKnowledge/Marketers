@@ -113,7 +113,7 @@ SKAN Conversion Studioでは、CVを設定するために複数のモードを�
 
 > 🚧 **重要！**
 >
-> SKAN Conversion StudioでCVを設定できるのは、管理者、または**SKAN Conversion Studio**の**［管理\*］**権限を持つアカウントユーザーです。
+> SKAN Conversion StudioでCVを設定できるのは、管理者、または<strong>SKAN Conversion Studio</strong>の<strong>［管理\*］</strong>権限を持つアカウントユーザーです。
 >
 > **ユーザーの権限を確認・変更する手順：**
 >

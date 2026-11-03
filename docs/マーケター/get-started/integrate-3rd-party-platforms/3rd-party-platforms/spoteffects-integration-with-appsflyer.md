@@ -43,7 +43,7 @@ x-zendesk:
    注意：パートナーとの連携を利用している間は、**このトグルをオン（有効）にしておく必要があります**。<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">詳しく見る</Anchor>
 5. 以下の説明に従い、該当するタブで設定を完了します。
 
-Spoteffectsの設定で使用するのは、***［連携］***タブのみです。
+Spoteffectsの設定で使用するのは、<strong><em>［連携］</em></strong>タブのみです。
 
 パートナー設定画面のヘッダーについて詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">こちら</Anchor>を参照してください。
 

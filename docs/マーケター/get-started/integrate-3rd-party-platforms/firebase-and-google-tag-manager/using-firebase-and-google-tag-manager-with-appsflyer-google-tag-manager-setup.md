@@ -51,12 +51,12 @@ x-zendesk:
 
 GoogleタグマネージャーからAppsFlyerにイベントを送信する際は、必ずAppsFlyer IDとDevキーを含める必要があります。 Devキーにより、GoogleタグマネージャーとAppsFlyerのサーバーが通信できます。 AppsFlyer IDにより、イベントをどのユーザーに紐付けるかをAppsFlyerが判別できます。
 
-1. Googleタグマネージャーで***［変数］***、***［新規］***の順にクリックします。
-2. 変数名を「AppsFlyer Dev Key」にし、***［変数の設定］***をクリックします。
-3. ***［イベントパラメータ］***を選択します。
-4. ***［カスタムパラメータ］***を選択します。
-5. ***［イベントパラメータ］***フィールドに「dev\_key」と入力して保存します。
-6. AppsFlyer IDについても同様に、変数名を「AppsFlyer Device ID」にし、***［イベントパラメータ］***フィールドに「af\_id」と入力します。
+1. Googleタグマネージャーで<strong><em>［変数］</em></strong>、<strong><em>［新規］</em></strong>の順にクリックします。
+2. 変数名を「AppsFlyer Dev Key」にし、<strong><em>［変数の設定］</em></strong>をクリックします。
+3. <strong><em>［イベントパラメータ］</em></strong>を選択します。
+4. <strong><em>［カスタムパラメータ］</em></strong>を選択します。
+5. <strong><em>［イベントパラメータ］</em></strong>フィールドに「dev\_key」と入力して保存します。
+6. AppsFlyer IDについても同様に、変数名を「AppsFlyer Device ID」にし、<strong><em>［イベントパラメータ］</em></strong>フィールドに「af\_id」と入力します。
 
 > 📘 **Note**
 >
@@ -81,8 +81,8 @@ GoogleタグマネージャーからAppsFlyerにイベントを送信する際�
 ほとんどのアプリ内イベントには、イベント値のパラメータが必要です。この例ではaf\_revenueとaf\_priceを使用しますが、任意のイベントパラメータを送信できます。アプリでイベントを設定したら、Googleタグマネージャーで収益と価格の変数を作成します。これらの変数は、後でPurchaseイベントのタグに使用します。
 
 1. Googleタグマネージャーで、af\_revenueとaf\_priceの2つのイベントパラメータ変数を作成します。
-2. 「af\_revenue」の変数名を「Revenue」にし、***［イベントパラメータキー］***を「af\_revenue」に設定します。
-3. 「af\_price」の変数名を「Price」にし、***［イベントパラメータキー］***を「af\_price」に設定します。
+2. 「af\_revenue」の変数名を「Revenue」にし、<strong><em>［イベントパラメータキー］</em></strong>を「af\_revenue」に設定します。
+3. 「af\_price」の変数名を「Price」にし、<strong><em>［イベントパラメータキー］</em></strong>を「af\_price」に設定します。
 
 > 📘 **Note**
 >
@@ -109,11 +109,11 @@ GoogleタグマネージャーからAppsFlyerにイベントを送信する際�
 
 GoogleタグマネージャーがAppsFlyerへの送信対象イベントを判断できるように、イベントのトリガーを設定します。
 
-1. Googleタグマネージャーで***［トリガー］***、***［新規］***の順にクリックします。
-2. トリガー名を「Purchase」にし、***［トリガーの設定］***をクリックします。
-3. ***［カスタム］***を選択します。
-4. ***［一部のイベント］***を選択します。
-5. 条件として、***［イベント名］***が「af\_purchase」と等しい場合にトリガーが発火するよう設定します。
+1. Googleタグマネージャーで<strong><em>［トリガー］</em></strong>、<strong><em>［新規］</em></strong>の順にクリックします。
+2. トリガー名を「Purchase」にし、<strong><em>［トリガーの設定］</em></strong>をクリックします。
+3. <strong><em>［カスタム］</em></strong>を選択します。
+4. <strong><em>［一部のイベント］</em></strong>を選択します。
+5. 条件として、<strong><em>［イベント名］</em></strong>が「af\_purchase」と等しい場合にトリガーが発火するよう設定します。
 6. ［***保存***］をクリックします。
 
 > 📘 **Note**
@@ -132,22 +132,22 @@ GoogleタグマネージャーがAppsFlyerへの送信対象イベントを判�
 
 必要な変数とイベントトリガーを設定したら、Purchaseイベントのタグを作成できます。
 
-1. Googleタグマネージャーで***［タグ］***、***［新規］***の順にクリックします。
-2. タグ名を「Purchase」にし、***［タグの設定］***をクリックします。
+1. Googleタグマネージャーで<strong><em>［タグ］</em></strong>、<strong><em>［新規］</em></strong>の順にクリックします。
+2. タグ名を「Purchase」にし、<strong><em>［タグの設定］</em></strong>をクリックします。
 3. ***AppsFlyer***を選択します。
-4. ***［アプリケーションID］***フィールドに、組み込み変数のApp IDを設定します。
+4. <strong><em>［アプリケーションID］</em></strong>フィールドに、組み込み変数のApp IDを設定します。
 
    > 🚧 **Important**
    >
    > **重要**
    >
-   > iOSでは、***［アプリケーションID］***フィールドにカスタム変数「apple\_app\_id」を設定します。
+   > iOSでは、<strong><em>［アプリケーションID］</em></strong>フィールドにカスタム変数「apple\_app\_id」を設定します。
 
-5. ***［Devキー］***フィールドで、「AppsFlyer Dev Key」変数を選択します。
-6. ***［AppsFlyerデバイスID］***フィールドで、「AppsFlyer Device ID」変数を選択します。
+5. <strong><em>［Devキー］</em></strong>フィールドで、「AppsFlyer Dev Key」変数を選択します。
+6. <strong><em>［AppsFlyerデバイスID］</em></strong>フィールドで、「AppsFlyer Device ID」変数を選択します。
 7. ［イベント名］フィールドに、組み込み変数の***Event Name***を設定します。
-8. ***［イベント通貨］***フィールドに、USDなどの通貨コードを設定します。
-9. ***［イベント値を追加］***を2回クリックします。
+8. <strong><em>［イベント通貨］</em></strong>フィールドに、USDなどの通貨コードを設定します。
+9. <strong><em>［イベント値を追加］</em></strong>を2回クリックします。
 10. 次のように設定します。  
     ***キー***：af\_revenue、***値***：イベントパラメータ変数「Revenue」を選択  
     ***キー***：af\_price、***値***：イベントパラメータ変数「Price」を選択

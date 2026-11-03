@@ -95,7 +95,7 @@ PBA ローデータレポートの項目
 | original\_url | 帰属するWebサイト訪問時に、ユーザーをWebサイトにリダイレクトするURLアドレス | 文字列 | https://www.brandpitt.com/signin?utm_source=Googleg&utm_term=shoes&utm_campaign=cool&c=summer&af_siteid=publisher&af_sub1=helloworld |
 | platform | プラットフォーム | 文字列 | macOS |
 | postal\_code | IPアドレスを使用して解決 | 文字列 | 10977 |
-| query\_params | リダイレクトURLのクエリパラメータ（? の後）リダイレクトURL上のクエリパラメーター (? の後)。例： https://www.brandpitt.com/signin?utm_source=Google&utm_term=shoes&utm_campaign=cool&c=summer&af_siteid=publisher&af_sub1=helloworld&af_keyword=shoesURLにクエリパラメーターがない場合、この値は null になります | JSON |  |
+| query\_params | リダイレクトURLのクエリパラメータ（? の後）リダイレクトURL上のクエリパラメーター (? の後)。例： [https://www.brandpitt.com/signin?utm_source=Google&utm_term=shoes&utm_campaign=cool&c=summer&af_siteid=publisher&af_sub1=helloworld&af_keyword=shoesURL](https://www.brandpitt.com/signin?utm_source=Google&utm_term=shoes&utm_campaign=cool&c=summer&af_siteid=publisher&af_sub1=helloworld&af_keyword=shoesURL)にクエリパラメーターがない場合、この値は null になります | JSON |  |
 | referrer | 成果が紐づくWebサイト訪問のHTTPドキュメントリファラ | 文字列 | https://www.google.com/ |
 | region | IPアドレスを使用して解決 | 文字列 | NA |
 | 州 | IPアドレスを使用して解決 | 文字列 | NY |

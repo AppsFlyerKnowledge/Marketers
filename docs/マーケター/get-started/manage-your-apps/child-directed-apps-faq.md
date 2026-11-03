@@ -101,7 +101,7 @@ x-zendesk:
 
 <Accordion title="利用しているアドネットワークがコンプライアンスに準拠しているか分からない場合、どうすれば良いですか？">
 
-多くの場合、連携しているアドネットワークが関連する法律に準拠しているかどうかは不明です。この質問は、アドネットワークに照会することができます。アドネットワークが準拠していない場合、あるいは確信が持てない場合は、データの共有を控えることができます。**<Anchor target="_blank" href="/marketers/ja/docs/additional-sdk-integration-guide#exclude-partners-from-getting-data">`setSharingFilterForPartners`ファンクション</Anchor>**を使用して、アプリデータの受信をブロックするアドネットワークを指定できます。また、このファンクションを使用してすべてのアドネットワークをブロックすることも可能です。その他のコンプライアンスツールの例を参照してください。
+多くの場合、連携しているアドネットワークが関連する法律に準拠しているかどうかは不明です。この質問は、アドネットワークに照会することができます。アドネットワークが準拠していない場合、あるいは確信が持てない場合は、データの共有を控えることができます。<strong><Anchor target="_blank" href="/marketers/ja/docs/additional-sdk-integration-guide#exclude-partners-from-getting-data">`setSharingFilterForPartners`ファンクション</Anchor></strong>を使用して、アプリデータの受信をブロックするアドネットワークを指定できます。また、このファンクションを使用してすべてのアドネットワークをブロックすることも可能です。その他のコンプライアンスツールの例を参照してください。
 
 </Accordion>
 

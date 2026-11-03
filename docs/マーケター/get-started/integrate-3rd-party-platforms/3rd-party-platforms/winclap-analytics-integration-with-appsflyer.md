@@ -43,7 +43,7 @@ x-zendesk:
 >    **注意：** パートナーとの連携を利用している間は、**このトグルをオン（有効）にしておく必要があります**。<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">詳しく見る</Anchor>
 > 5. 以下の説明に従い、該当するタブで設定を完了します。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner">パートナー連携</Anchor>を参照してください。
 
-Winclap Analyticsの設定で使用するのは、***［連携］***タブのみです。
+Winclap Analyticsの設定で使用するのは、<strong><em>［連携］</em></strong>タブのみです。
 
 <div id="integration-tab" />
 
@@ -53,7 +53,7 @@ Winclap Analyticsの設定で使用するのは、***［連携］***タブのみ
 
 ### パートナーを有効化
 
-**初めて設定する場合**は、***［パートナーを有効化］***をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
+<strong>初めて設定する場合</strong>は、<strong><em>［パートナーを有効化］</em></strong>をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/user-level-data-retention">こちら</Anchor>を参照してください。
 
 ### デフォルトポストバック
@@ -93,9 +93,9 @@ AppsFlyerは、ユーザーのインストールとリエンゲージメント�
 
 [![Winclap Analyticsのアプリ内イベントポストバックの設定](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)
 
-1. ***［アプリ内イベントポストバック］***をオンにします。
-2. 必要に応じて***［アプリ内イベントポストバック期間］***を設定します（<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#アプリ内イベントポストバック期間">アプリ内イベントポストバック期間の設定</Anchor>の詳細を参照）。
-3. ***［イベントを追加］***をクリックし、SDKイベントをリストに追加します。
+1. <strong><em>［アプリ内イベントポストバック］</em></strong>をオンにします。
+2. 必要に応じて<strong><em>［アプリ内イベントポストバック期間］</em></strong>を設定します（<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#アプリ内イベントポストバック期間">アプリ内イベントポストバック期間の設定</Anchor>の詳細を参照）。
+3. <strong><em>［イベントを追加］</em></strong>をクリックし、SDKイベントをリストに追加します。
 4. 以下のパラメータを設定します。
 
 | パラメータ名 | 説明 |
@@ -105,7 +105,7 @@ AppsFlyerは、ユーザーのインストールとリエンゲージメント�
 | **送信オプション** | イベントの送信対象を選択します。  <br />**このパートナーのみ**：このパートナーの成果として計測されたユーザーのイベント**のみ**を送信します。  <br />**オーガニックを含むすべてのメディアソース**：すべてのユーザーをパートナーへのレポート対象にします。 |
 | **イベントデータを送信** | <ul><li>**値も収益も送信しない：** イベント値を含めず、イベント自体のみを送信します。</li><li>**値のみ送信し、収益は送信しない：** 収益値を除くすべてのパラメータを送信します。</li><li>**値と収益を送信する**：収益値を含むすべてのイベントパラメータを送信します（イベントに収益値がある場合）。</li></ul> |
 
-5. ***［保存］*をクリックします。**
+5. <strong><em>［保存］</em>をクリックします。</strong>
 
 この設定を保存すると、AppsFlyerは各非オーガニックイベントについて、次のデータをWinclap Analyticsに送信します。
 

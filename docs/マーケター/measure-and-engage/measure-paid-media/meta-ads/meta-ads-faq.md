@@ -104,8 +104,8 @@ Metaインストールリファラは、デバイスのローカルストレー�
 
 1. Metaの開発者ポータルにログインします。
 2. <strong>［マイアプリ］</strong>に移動し、対象のアプリを選択します。
-3. **［設定］>［ベーシック］**に移動し、［Install Referrer decryption key］を探します。
-4. AppsFlyerで、**［連携］>［連携済みパートナー］>［Meta広告］**に移動します。
+3. <strong>［設定］>［ベーシック］</strong>に移動し、［Install Referrer decryption key］を探します。
+4. AppsFlyerで、<strong>［連携］>［連携済みパートナー］>［Meta広告］</strong>に移動します。
 5. <strong>［インストールリファラ復号キー］</strong>欄にキーを貼り付け、保存します。
 
 </Accordion>

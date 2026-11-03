@@ -354,7 +354,7 @@ AppsFlyerは、次の2つのデフォルトのパスで**pre\_install.appsflyer*
 
 > 👍 **ヒント**
 >
-> キャッシュに関する問題を避け、適切にテストするため、ビルド前にプロジェクトをクリーンアップすることを推奨します。 Android Studioのコンテキストメニューで***［Build］***をクリックし、***［Clean Project］***を選択します。
+> キャッシュに関する問題を避け、適切にテストするため、ビルド前にプロジェクトをクリーンアップすることを推奨します。 Android Studioのコンテキストメニューで<strong><em>［Build］</em></strong>をクリックし、<strong><em>［Clean Project］</em></strong>を選択します。
 
 Android Studioでアプリをビルドし、テストデバイスにインストールします。アプリが起動したら、Android StudioでLogcatを開き、「AppsFlyer」でフィルタリングします。アトリビューションされたインストールの詳細が表示されます。以下のスクリーンショットを参照してください。
 
@@ -375,7 +375,7 @@ AppsFlyerアカウントにアクセスし、テスト対象のアプリのダ�
 1. オーバービューダッシュボードで、メディアソースのフィルターから対象のメディアソースを選択します。  
 
    ![choose_media_source.png](https://files.readme.io/f7fc3f24540cdeb8914a64b19fd0c6450827a63eaed5b9eb6c77470e4a129412-52396508413073.png)
-2. ***［キャンペーン別内訳］***グラフでは、「my media source」にアトリビューションされたインストールが、Pre-installキャンペーンによるものであることを確認できます。  
+2. <strong><em>［キャンペーン別内訳］</em></strong>グラフでは、「my media source」にアトリビューションされたインストールが、Pre-installキャンペーンによるものであることを確認できます。  
 
     [![](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)  
    ***集計パフォーマンスレポート***でも、インストールが正しくアトリビューションされているか確認できます。このレポートでは、メディアソースとキャンペーンを確認できます。以下のスクリーンショットでは、メディアソースが「My Media Source」、キャンペーンがPre-installになっています。  

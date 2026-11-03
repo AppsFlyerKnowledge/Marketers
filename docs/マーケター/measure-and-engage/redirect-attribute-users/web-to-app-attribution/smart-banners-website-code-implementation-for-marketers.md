@@ -142,8 +142,8 @@ x-zendesk:
 4. <strong>［Submitted］</strong>セクションで、次の操作を行います。
    1. 操作メニューをクリックし、<strong>［Build for Staging］</strong>を選択します。
    2. もう一度操作メニューをクリックし、<strong>［Approve for Publishing］</strong>を選択します。
-5. <strong>［Approved］</strong>セクションで操作メニューをクリックし、**［Build & Publish to Production］  
-   を選択します。**これで手順は完了です。
+5. <strong>［Approved］</strong>セクションで操作メニューをクリックし、［Build & Publish to Production］  
+   を選択します。これで手順は完了です。
 
 </Accordion>
 

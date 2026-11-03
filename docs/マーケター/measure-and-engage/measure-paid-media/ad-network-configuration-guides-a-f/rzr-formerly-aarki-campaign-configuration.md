@@ -133,7 +133,7 @@ x-zendesk:
 * <span id="01ECJ9TJKHCZFTSWGGC2XHW6N5"></span><span id="01ECJ9TJKHP90T48TJPV80AP2T"></span>URLにディープリンクを使う必要がない
 * <span id="01ECJ9TJKHYPT6RQ5NTVPV8FA2"></span>ディープリンクに<Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page"><span id="01ECSNC07ND552HVWJD2GF8YSD"></span>URI スキーム</Anchor>のみを使用する予定である
 
-<span id="01ECJ9TJKH6GTCN390D87MYPHV"></span>次の場合は***Use OneLink* （OneLinkを使用）**を選択します。
+<span id="01ECJ9TJKH6GTCN390D87MYPHV"></span>次の場合は<strong><em>Use OneLink</em> （OneLinkを使用）</strong>を選択します。
 
 * <span id="01ECJ9TJKHVJCE2XM6X6AJS4YY"></span><span id="01ECJ9TJKHSJAC8HW8YERAKDVC"></span>AndroidとiOSの両方のアプリで1つのリンクを共用する
 * <span id="01ECJ9TJKH0W7PXF4EJKM20ZRQ"></span>ユニバーサルリンクまたはapp linksを使用したディープリンク

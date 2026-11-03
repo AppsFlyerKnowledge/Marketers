@@ -136,8 +136,8 @@ x-zendesk:
 
 Pull APIトークンが必要です。<Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens">管理者ユーザー</Anchor>からトークンを取得してください。
 
-1. **レポート > APIアクセス  
-   に移動します。**<Anchor target="_blank" href="/marketers/ja/docs/pull-api-raw-data">Pull API</Anchor>ページが開きます。
+1. レポート > APIアクセス  
+   に移動します。<Anchor target="_blank" href="/marketers/ja/docs/pull-api-raw-data">Pull API</Anchor>ページが開きます。
 2. Protect360不正レポートのセクションで、必要なPull APIの呼び出しを選択します。
 3. 必要に応じてパラメータを入力します。パラメータは次の表に記載されています。
 4. レポートを取得します。

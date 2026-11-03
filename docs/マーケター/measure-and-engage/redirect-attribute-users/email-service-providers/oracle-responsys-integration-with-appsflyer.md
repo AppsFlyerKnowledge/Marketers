@@ -139,7 +139,7 @@ SDKは、キャンペーン詳細を取得するために、クリックドメ�
 #### Xcodeでのクリックドメインの関連付け
 
 1. Xcodeでプロジェクトをクリックします。
-3. ***Associated Domain（関連付ドメイン）***をオンにします。
+3. <strong><em>Associated Domain（関連付ドメイン）</em></strong>をオンにします。
 4. [+] 記号をクリックし、クリックドメインを追加します。例：applinks:click.example.com.
 
 

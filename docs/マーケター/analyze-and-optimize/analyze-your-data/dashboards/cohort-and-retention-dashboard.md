@@ -1,5 +1,5 @@
 ---
-title: コホート &amp; リテンションレポート
+title: コホート & リテンションレポート
 metadata:
   keywords:
     - Cohort
