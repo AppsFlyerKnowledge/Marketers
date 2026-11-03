@@ -546,8 +546,8 @@ Prioritas dijelaskan dengan sangat baik dalam [contoh terperinci](/docs/skan-con
 6. Lengkapi bidang sesuai antarmuka pengguna.
    * Pertimbangkan bahwa prioritas dapat terdiri dari pendapatan, in-app event, atau keduanya.
    * Nilai rentang kejadian dan pendapatan event harus dalam urutan menaik (meningkat) dan berkelanjutan. Misalnya, rentang berikut meningkat dan berkelanjutan: 1-5, 5-8, 8-10, dan seterusnya. Rentang tertentu dapat digunakan lebih dari sekali (berulang) jika kedua kalinya yang digunakan adalah bagian dari kombinasi unik dan merupakan rentang yang sama dengan prioritas terakhir dengan rentang. Misalnya, 1-5, 1-5 + tambahkan ke troli.
-7. Klik **Validate.  
-   Prioritas adalah pesan yang valid** ditampilkan. Jika tidak demikian, perbaiki prioritas Anda sebelum melanjutkan.
+7. Klik Validate.  
+   Prioritas adalah pesan yang valid ditampilkan. Jika tidak demikian, perbaiki prioritas Anda sebelum melanjutkan.
 8. Lakukan salah satu dari berikut ini:
    * Untuk menambahkan prioritas, klik **+ Add priority (Tambah prioritas).** Prioritas 1 yang ada digeser ke bawah dan menjadi prioritas 2. Selesaikan pengaturan prioritas seperti yang dijelaskan sebelumnya.
    * Untuk menghapus prioritas, klik … > **Delete (Hapus).**

@@ -203,8 +203,8 @@ Pastikan server Anda mematuhi persyaratan berikut:
 1. Buka **Integrasi** > **Akses API**.  
    Gulir ke bawah ke sesi Push API.
 2. Pilih **SKAdNetwork** sebagai entitas atribusi.
-3. Klik **Add Endpoint   
-   (Tambahkan Titik Akhir). Catatan** : Anda dapat menentukan 1-3 titik akhir SKAdNetwork per aplikasi.
+3. Klik Add Endpoint   
+   (Tambahkan Titik Akhir). Catatan : Anda dapat menentukan 1-3 titik akhir SKAdNetwork per aplikasi.
 4. Pilih metode HTTP: ***POST***atau **GET**
 5. Masukkan URL **Titik Akhir** . Jika Anda mendapatkan pesan *URL ini tidak aman*, hubungi tim dukungan AppsFlyer.
 6. Kami tidak mengirim bidang null/kosong dan kunci terkait. Pertimbangkan ini saat merencanakan proses impor/parsing Anda.
