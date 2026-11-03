@@ -1,5 +1,5 @@
 ---
-title: 公告：
+title: 'Bulletin: Ad revenue reporting change'
 metadata:
   keywords:
     - ad revenue
@@ -16,34 +16,52 @@ x-zendesk:
     - Agencies
     - ROI360
   created_at: '2020-05-05T15:30:21Z'
-  edited_at: '2026-10-14T10:06:53Z'
+  edited_at: '2023-02-15T13:15:06Z'
   id: 360007980057
-  locale: zh-cn
+  locale: en-us
   section: Bulletins
   section_id: 6551161473041
-  url: https://support.appsflyer.com/hc/zh-cn/articles/360007980057
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360007980057-Bulletin-Ad-revenue-reporting-change
 ---
-* 更新内容
-* 变更内容
+* **What's changing**: The date of Ad revenue data (user-level and aggregate-level) in the platform is the day of the ad display event itself (the day the ad revenue occurs), instead of the day after. Meaning if an ad displays on Monday, the revenue displays under Monday. This gives advertisers a more accurate and actionable understanding of their ad revenue data.
+* **Who is impacted**: App owners, agencies
+* **Where is it changing**: Essentially, data alignment to the day of the ad display event is active in all reports and APIs, for all types of network integrations. See the following table for where and when the alignment took effect.
 
+#### Ad revenue reporting change
 
-| <span id="ad-revenue-reporting-change"></span>报告方式 |  |  |
+| Reporting method | Effective date (date change occurs) | Publication date (date of announcement) |
 | --- | --- | --- |
-| 群组报告 | 5月 | 5月 |
-| 原始数据报告 | **2022 年 6 月** | **2022 年 6 月** |
-|  | **2022 年 6 月** | **2022 年 6 月** |
-| 活跃数据面板 | **2022 年 6 月** | **2022 年 6 月** |
-|  | 2023年8月14日 | 2023年8月14日 |
-|  | 2024年9月19日 | 2023年8月14日 |
+| Cohort reports | May 13, 2020 | May 7, 2020 |
+| Raw data reports | June 17, 2020 | June 14, 2020 |
+| Pull API (for raw data) | June 17, 2020 | June 14, 2020 |
+| Activity dashboard | June 17, 2020 | June 14, 2020 |
+| Data Locker (h=23 folder) | August 3, 2020 | August 3, 2020 |
+| Pull API (for aggregate data) | September 1, 2020 | August 31, 2020 |
 
-### 更新前
+### Before the change
 
-### 更新后：
+The date of Ad revenue data in the platform is the day after the ad display event itself. Meaning if an ad displays on Monday, the revenue displays under Tuesday. The data is available in the platform on Wednesday, after processing.
 
-请参见下面的示例。
+This means that the ad revenue date is not aligned with actual user engagement. For some verticals, this lack of alignment distorts KPIs significantly.
 
-> 📄 **示例**
+### After the change
+
+The change is dependent on the integration type between the app and the monetization network as follows:
+
+* This change affects user-level and aggregate-level ad revenue available via the reporting methods outlined in the table prior.
+* The date of ad revenue data in the platform is the day of the ad display event itself. Meaning if an ad displays on Monday, the revenue displays under Monday. The data is available in reports from Wednesday after processing.
+* There is no change to historical data recorded before the effective date.
+* The revenue on the effective date includes two days' revenue, meaning the revenue of the effective date and the previous day’s revenue. Depending on the reporting scenario, you may discern a revenue spike on this day.
+
+See the example that follows.
+
+> 📄 **Example**
+>
+> * Ads display and ad revenue occurs on Day 0 (the day of user acquisition).
+> * Ad revenue data is pulled on Day 1.
+> * Ad revenue data is processed and available in the AppsFlyer platform on Day 2.
+> * Ad revenue data is reported under Day 0.
+>   * In the Activity dashboard, Data Locker (h=23 folder), and raw data reports, the ad display time is also available.
 >
 > [![](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)
-
-<div data-zendesk-anchors="before-the-change=%E6%9B%B4%E6%96%B0%E5%89%8D after-the-change=%E6%9B%B4%E6%96%B0%E5%90%8E" />

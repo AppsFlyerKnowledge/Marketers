@@ -1,5 +1,5 @@
 ---
-title: 公告：
+title: 'Bulletin: Smart Banners support multiple media sources for attribution'
 metadata:
   keywords:
     - OneLink
@@ -16,16 +16,17 @@ x-zendesk:
     - Marketers
     - Smart Banners and Scripts
   created_at: '2021-08-24T07:01:05Z'
-  edited_at: '2026-10-14T09:59:19Z'
+  edited_at: '2024-01-27T12:04:03Z'
   id: 4406100924689
-  locale: zh-cn
+  locale: en-us
   section: Bulletins
   section_id: 6551161473041
-  url: https://support.appsflyer.com/hc/zh-cn/articles/4406100924689
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4406100924689-Bulletin-Smart-Banners-support-multiple-media-sources-for-attribution
 ---
-| **最新动态** |  |
+| **What's new** | Smart Banner settings allow you to choose multiple media source types for attribution. They are no longer limited to one type of web-to-app URL. |
 | --- | --- |
-| **生效日期** | 2023年8月14日 |
-| **面板位置** |  |
-| 各每份报告的接收 | **更新前**：<br /><br />**更新后**： |
-| **重要须知** | [![](https://files.readme.io/35d3888899ee7d95cb81152ab5a72de5bfcf1df40568b7f2fea00c947658fd42-4406108511633.png)](https://files.readme.io/35d3888899ee7d95cb81152ab5a72de5bfcf1df40568b7f2fea00c947658fd42-4406108511633.png) |
+| **Effective date** | August 25, 2021 |
+| **Where** | Smart Banners - banner group setup |
+| **What** | **Before the change:** One media source type was supported per banner group. Users needed to choose between using incoming attribution link parameters, **OR** incoming links with UTM parameters, **OR** the default attribution parameters (which were also used as a fallback). This meant AppsFlyer looked for either "pid" or “utm\_source” in the incoming URL.<br /><br />**After the change:** Banner groups are not limited to one media source type. They can be configured to support one or more of the above media sources. Meaning, users can choose between incoming attribution link parameters **AND/OR** incoming link UTM parameters **AND/OR** the default attribution parameters. This provides greater flexibility to customize the link behind the banner and provide the best web-to-app experience for the end-user. |
+| **What you must know** | <ul><li>If you have existing Smart Banners and banner groups, your settings remain the same.</li><li>For new banner groups, the UI has changed to allow you to choose more than one media source option.</li><li>You must have the current <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#smart-banners-only">Smart Banners Web SDK</Anchor> integrated; this feature is not supported by the old (deprecated) Web SDK.</li></ul>[![](https://files.readme.io/35d3888899ee7d95cb81152ab5a72de5bfcf1df40568b7f2fea00c947658fd42-4406108511633.png)](https://files.readme.io/35d3888899ee7d95cb81152ab5a72de5bfcf1df40568b7f2fea00c947658fd42-4406108511633.png) |

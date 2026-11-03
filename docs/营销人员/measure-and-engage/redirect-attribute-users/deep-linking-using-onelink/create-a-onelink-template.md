@@ -62,7 +62,7 @@ OneLink模板具有以下特点：
    > * 该模板名称仅在内部使用。它不会影响营销归因数据，也不会被用户看到。
 
 4. 填写**子域名**字段。
-   * 选择与您的品牌匹配的子域。举例来说，假设您的网站是www.abcd.com，那么您可以将abcd作为您的子域名。
+   * 选择与您的品牌匹配的子域。举例来说，假设您的网站是[www.abcd.com](https://www.abcd.com)，那么您可以将abcd作为您的子域名。
    * 用户会在链接URL中看到这个子域名，使用场景示例:`https://abcd.onelink.me/RPsv/37e5cd36`。
    * 基于该模板创建自定义链接后，即无法更改其子域名。
    * 仅限填写小写字母、数字或连字符（-）。
@@ -138,7 +138,7 @@ OneLink模板具有以下特点：
    <Tabs>
    <Tab title="iOS Universal Link">
 
-   Universal Link的格式与常规网页链接相同（如https://yourbrand.onelink.me或 https://www.yourbrand.com） ，因此需要设置一个子域名（具体请见[上一篇指南](/docs/create-a-onelink-template#创建onelink模板)）。OneLink还支持全面<Anchor target="_blank" href="/marketers/zh/docs/brand-onelink-with-your-domain">品牌化的域名</Anchor>，但这不是本指南的要点。
+   Universal Link的格式与常规网页链接相同（如[https://yourbrand.onelink.me](https://yourbrand.onelink.me)或 [https://www.yourbrand.com](https://www.yourbrand.com)） ，因此需要设置一个子域名（具体请见[上一篇指南](/docs/create-a-onelink-template#创建onelink模板)）。OneLink还支持全面<Anchor target="_blank" href="/marketers/zh/docs/brand-onelink-with-your-domain">品牌化的域名</Anchor>，但这不是本指南的要点。
 
    **如需通过Universal Link调起应用**，请按以下步骤操作：
 
@@ -158,7 +158,7 @@ OneLink模板具有以下特点：
 
    <Tab title="安卓App Link">
 
-   App Link的格式与常规网页链接相同（如https://yourbrand.onelink.me或https://www.yourbrand.com），因此需要设置一个子域名（具体见[上一篇指南](/docs/create-a-onelink-template#创建onelink模板) ）。OneLink还支持全面<Anchor target="_blank" href="/marketers/zh/docs/brand-onelink-with-your-domain">品牌化的域名</Anchor>，但这不是本指南的要点。
+   App Link的格式与常规网页链接相同（如[https://yourbrand.onelink.me](https://yourbrand.onelink.me)或[https://www.yourbrand.com](https://www.yourbrand.com)），因此需要设置一个子域名（具体见[上一篇指南](/docs/create-a-onelink-template#创建onelink模板) ）。OneLink还支持全面<Anchor target="_blank" href="/marketers/zh/docs/brand-onelink-with-your-domain">品牌化的域名</Anchor>，但这不是本指南的要点。
 
    **前期准备** ：
 
@@ -238,7 +238,7 @@ OneLink模板具有以下特点：
 1. 从AppsFlyer后台的侧边栏中选择**互动** > **OneLink自定义链接**。
 2. 选定要编辑的模版，将鼠标悬停在对应的**操作**图标上，然后点击**定制二维码**。  
    界面会打开二维码编辑器。
-3. 输入您品牌logo图片的URL，如https://yourbrand.com/logo.png。  
+3. 输入您品牌logo图片的URL，如[https://yourbrand.com/logo.png](https://yourbrand.com/logo.png)。  
    品牌logo图片须符合以下要求：
 
    * PNG或JPG格式

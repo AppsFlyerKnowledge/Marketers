@@ -573,9 +573,9 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 
    [![moengage_dashboard.png](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)
 3. 在网页浏览器的地址栏中查看MoEngage面板的地址，从中获取**MoEngage Data Center**的编号：
-   * 如果您MoEngage面板的地址是https://dashboard-01.moengage.com，表示您的账户被分配到Data Center 1。
-   * 如果该地址是https://dashboard-02.moengage.com，表示您的账户被分配到Data Center 2。
-   * 如果该地址是https://dashboard-03.moengage.com，表示您的账户被分配到Data Center 3。
+   * 如果您MoEngage面板的地址是[https://dashboard-01.moengage.com](https://dashboard-01.moengage.com)，表示您的账户被分配到Data Center 1。
+   * 如果该地址是[https://dashboard-02.moengage.com](https://dashboard-02.moengage.com)，表示您的账户被分配到Data Center 2。
+   * 如果该地址是[https://dashboard-03.moengage.com](https://dashboard-03.moengage.com)，表示您的账户被分配到Data Center 3。
 4. 从AppsFlyer后台的受众共享面板进入**连接**选项卡，并点击**添加新连接**。
 5. 在“合作伙伴名称”中选择**MoEngage**，并为该连接命名。
 

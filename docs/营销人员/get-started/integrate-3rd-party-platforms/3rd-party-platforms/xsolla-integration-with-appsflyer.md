@@ -135,7 +135,7 @@ Xsolla的渠道对接不支持广告收入数据。
 **如需设置对接：**
 
 1. **在AppsFlyer后台：** <Anchor target="_blank" href="/marketers/zh/docs/adding-an-app-to-appsflyer?query=adding%20an%20app">添加Xsolla应用</Anchor>。将平台选择为<Anchor target="_blank" href="/marketers/zh/docs/adding-an-app-to-appsflyer#web-pba">Web（PBA）</Anchor>，并填写以下信息：
-   * 将你的Web Shop域名用作Web app URL，例如：如果你的Web Shop域名是www.webshop.com，则该URL即为你的Web app URL。
+   * 将你的Web Shop域名用作Web app URL，例如：如果你的Web Shop域名是[www.webshop.com](https://www.webshop.com)，则该URL即为你的Web app URL。
    * 应用名称可设置为任意值。
 2. **在AppsFlyer后台进行如下操作：** <Anchor target="_blank" href="/marketers/zh/docs/pba-brand-bundles-and-settings#add-brand-bundle">添加Xsolla套件</Anchor>，详细信息如下：
    1. 1. 套件名称可设置为任意名称。

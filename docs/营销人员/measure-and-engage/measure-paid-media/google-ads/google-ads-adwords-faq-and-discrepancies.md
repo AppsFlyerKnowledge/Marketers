@@ -90,7 +90,7 @@ Google Ads的点击和展示数据于2018年8月发布，先用于Android应用�
 1. **验证AppsFlyer中的事件回传**（有关逐步说明，请参见<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended">在AppsFlyer上设置Google Ads。</Anchor>）
    1. 前往AppsFlyer中的**Google Ads集成标签**。
    2. 确保为每个您想要测量的应用内事件正确配置回传。
-   3. 在**来自**下，选择*所有媒体来源，包括自然流量，*以确保Google Ads接收事件数据。
+   3. 在<strong>来自</strong>下，选择<em>所有媒体来源，包括自然流量，</em>以确保Google Ads接收事件数据。
    4. （可选）初始设置后，如有需要，调整此选择以适应特定事件。
 2. **触发测试应用内事件**
    1. 启动您的应用。

@@ -79,9 +79,7 @@ x-zendesk:
 
 <span id="how-to-access-the-report-in-dl"></span>构成报告路径的文件夹结构如下：
 
-格式：\`/t=attributed_ad_revenue/dt=
-
-/h=23/\`
+格式：`<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
 
 #### 报告文件夹的层次结构
 
@@ -176,9 +174,7 @@ bucket
 
 <span id="how-to-access-the-report-in-your-bucket"></span>构成报告路径的文件夹结构如下：
 
-\`/t=attributed_ad_revenue_v2/dt=
-
-/version=&lt;9999999>/\`
+`<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
 
 #### 报告文件夹的层次结构
 
@@ -244,9 +240,7 @@ bucket
 
 <span id="how-to-access-the-report-in-aws-the-bucket"></span>构成报告路径的文件夹结构如下：
 
-\`/t=attributed_adrevenue_sdk_impression_level/dt=
-
-/h=\`
+`<bucket-name>/t=attributed_adrevenue_sdk_impression_level/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
 #### 报告文件夹的层次结构
 
@@ -303,9 +297,7 @@ bucket
 
 <span id="how-to-access-the-report-in-your-bucket::b136ba80"></span>构成报告路径的文件夹结构如下：
 
-\`/t=stores_rawdata/dt=
-
-/h=\`
+`<bucket-name>/t=stores_rawdata/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
 #### 报告文件夹的层次结构
 
@@ -366,9 +358,7 @@ bucket
 
 <span id="how-to-access-the-report-in-the-aws-bucket"></span>构成报告路径的文件夹结构如下：
 
-\`/t=stores_devicedata/dt=
-
-/version=&lt;999999999>\`
+`<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
 
 #### 报告文件夹的层次结构
 

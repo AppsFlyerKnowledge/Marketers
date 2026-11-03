@@ -245,11 +245,11 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 >
 > **该广告主应对相关事件及其条件做如下设置：**
 >
-> * 当***level***等于***10***时，映射到*`fb_mobile_level_acheived`*
+> * 当<strong><em>level</em></strong>等于<strong><em>10</em></strong>时，映射到<em>`fb_mobile_level_acheived`</em>
 >   或（**OR**），
-> * 当***level***等于***50***时，映射到*`fb_mobile_level_acheived`*
+> * 当<strong><em>level</em></strong>等于<strong><em>50</em></strong>时，映射到<em>`fb_mobile_level_acheived`</em>
 >   或（**OR**)，
-> * 当***cost***等于***3***时，映射到*`fb_mobile_purchase`*
+> * 当<strong><em>cost</em></strong>等于<strong><em>3</em></strong>时，映射到<em>`fb_mobile_purchase`</em>
 
 **请按以下步骤为事件设置发送条件：**
 

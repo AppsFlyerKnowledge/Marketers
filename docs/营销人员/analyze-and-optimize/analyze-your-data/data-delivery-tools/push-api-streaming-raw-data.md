@@ -156,7 +156,7 @@ x-zendesk:
 
 #### 请按以下步骤添加AppsFlyer归因端点：
 
-1. 在AppsFlyer中，从侧边栏打开**导出 > API访问。**向下滚动到Push API部分。
+1. 在AppsFlyer中，从侧边栏打开<strong>导出 > API访问。</strong>向下滚动到Push API部分。
 2. 单击**添加端点。**
 3. 选择HTTP方法： **POST**或者**GET**
 4. 输入**端点URL**。 如果收到*this URL is not safe*（该URL不安全）的消息，请联系AppsFlyer技术支持。
@@ -193,7 +193,7 @@ x-zendesk:
 
 **请按以下步骤添加SKAdNetwork Push API端点：**
 
-1. 在AppsFlyer中，从侧边栏打开**导出 > API访问。**向下滚动到Push API部分。
+1. 在AppsFlyer中，从侧边栏打开<strong>导出 > API访问。</strong>向下滚动到Push API部分。
 2. 选择**SKAdNetwork**作为归因实体。
 3. 单击**添加端点。**  
    **请注意**：您可以为每个应用定义1-3个SKAdNetwork端点。
@@ -224,7 +224,7 @@ x-zendesk:
 
 **请按以下步骤修改端点设置：**
 
-1. 在AppsFlyer中，从侧边栏打开**导出 > API访问。**向下滚动到Push API部分。
+1. 在AppsFlyer中，从侧边栏打开<strong>导出 > API访问。</strong>向下滚动到Push API部分。
 2. 找到要修改的端点。
 3. 进行修改。
 4. 点击**Save**。

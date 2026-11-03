@@ -369,7 +369,7 @@ AF\_STORE API上报字段在原始数据和群组报告中显示字段名称为 
 
 即带有中国国旗标识的归因链接： https://app.aflink.com (aflink.com)
 
-对于OneLink归因链接，请使用带有中国国旗标识的归因链接：https://go.onelnk.com（onelnk.com）注意：在使用onelnk.com域名之前，请联系您的AppsFlyer客户经理。
+对于OneLink归因链接，请使用带有中国国旗标识的归因链接：[https://go.onelnk.com](https://go.onelnk.com)（onelnk.com）注意：在使用onelnk.com域名之前，请联系您的AppsFlyer客户经理。
 
 请注意，在微信中，只有 **onelnk.com** 被列入白名单，可以完成跳转，而 **onelink.me** 被阻止
 

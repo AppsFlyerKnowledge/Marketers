@@ -268,7 +268,7 @@ AppsFlyer与X Ads的集成使得可以测量应用活动——包括安装、重
 要测量来自X非应用活动的应用活动并获得有关用户行为的有价值见解，请在X Ads管理器中按照以下步骤操作：
 
 1. 前往X Ads管理器中的活动创建表单。
-2. 在**交付**部分，开启**应用转化**测量，以启用跟踪由该活动产生的安装和应用内转化。在<Anchor target="_blank" href="https://business.x.com/en/help/campaign-setup/create-an-app-installs-campaign/mobile-app-measurement-and-attribution">X Ads文档</Anchor>中查看更多详细信息（在*"测量非应用目标上的应用转化"*下）。
+2. 在<strong>交付</strong>部分，开启<strong>应用转化</strong>测量，以启用跟踪由该活动产生的安装和应用内转化。在<Anchor target="_blank" href="https://business.x.com/en/help/campaign-setup/create-an-app-installs-campaign/mobile-app-measurement-and-attribution">X Ads文档</Anchor>中查看更多详细信息（在<em>"测量非应用目标上的应用转化"</em>下）。
 
 > 🚧 **重要提示！**
 >

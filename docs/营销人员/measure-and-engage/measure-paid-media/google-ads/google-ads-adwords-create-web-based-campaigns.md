@@ -140,7 +140,7 @@ AppsFlyer 支持与 Google Ads 集成（`googleads_int` ) 通过 Google Offline 
 2. 点击 **+ New conversion action**。
 3. 选择 **“导入”** 作为转换数据源，然后选择以下任一选项：
    * **Manual import using API or uploads > Track conversions from clicks**（通过API或上传手动导入 > 跟踪点击带来的转化）。
-   * **CRM, files, or other data sources > Track conversions from clicks**（CRM、文件或其他数据来源 > 跟踪点击带来的转化），然后在*Data source（数据来源）*部分下选择Skip this step and set up data source later（跳过这一步，之后再设置数据来源）。
+   * <strong>CRM, files, or other data sources > Track conversions from clicks</strong>（CRM、文件或其他数据来源 > 跟踪点击带来的转化），然后在<em>Data source（数据来源）</em>部分下选择Skip this step and set up data source later（跳过这一步，之后再设置数据来源）。
 4. 点击**继续**，进入下一步。
 5. 在**Conversion goal**（转化目标）中选择一个转化操作类别。
 6. 输入**Conversion name**（转化名称）。

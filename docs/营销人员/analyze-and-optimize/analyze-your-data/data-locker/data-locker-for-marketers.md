@@ -439,7 +439,7 @@ Data Locker以分级的目录结构将数据写入存储桶中，分级维度为
 
 | 区隔类型 | 说明 |
 | --- | --- |
-| 【默认】合并 | 所有应用的数据合并在统一的数据文件中。取数时请使用行级的app\_id field字段来区分不同应用的数据。<br /><br />**示例：h=2文件夹下为数据文件**<br /><br />![UnifiedByApp.png](https://files.readme.io/dbc39c2ce99c1ff607fd553b9c9034e55728c102f31fd18a501cc00910267b28-18107874522513.png)<br /><br />数据文件的命名方式为unique\_id.gz。<ul><li>您的数据拉取流程必须符合以下要求：<ul><li>必须在\_SUCCESS标签设置完毕后再拉取数据。</li><li>必须拉取扩展名为*.gz*的文件夹中的所有文件。在数据入库流程中使用分卷编号逻辑。</li></ul></li></ul> |
+| 【默认】合并 | 所有应用的数据合并在统一的数据文件中。取数时请使用行级的app\_id field字段来区分不同应用的数据。<br /><br /><strong>示例：h=2文件夹下为数据文件</strong><br /><br />![UnifiedByApp.png](https://files.readme.io/dbc39c2ce99c1ff607fd553b9c9034e55728c102f31fd18a501cc00910267b28-18107874522513.png)<br /><br />数据文件的命名方式为unique\_id.gz。<ul><li>您的数据拉取流程必须符合以下要求：<ul><li>必须在\_SUCCESS标签设置完毕后再拉取数据。</li><li>必须拉取扩展名为<em>.gz</em>的文件夹中的所有文件。在数据入库流程中使用分卷编号逻辑。</li></ul></li></ul> |
 | 分应用取数 | 文件夹中包含分应用的子文件夹。具体应用的数据文件保存在该应用的文件夹中。下图中的h=19文件夹含有应用文件夹，每个应用文件夹中包含相关的数据文件。请注意：数据文件名称中没有app\_id，必须通过文件夹名称中的app\_id来识别。<br /><br />![DLSegregateByApp.png](https://files.readme.io/90639507da82f7dafacfa5bfb67fa96a8277747cd0eee226d74498bf5ff16869-32966264040977.png)<br /><br />各应用文件夹的命名方式为unique\_id.gz：<ul><li>您的数据拉取流程必须符合以下要求：<ul><li>必须在\_SUCCESS标签设置完毕后再拉取数据。</li><li>必须拉取扩展名为*.gz*的文件夹中的所有文件。在数据入库流程中使用分卷编号逻辑。</li></ul></li></ul>局限性：PBA报告无此选项。 |
 
 </Accordion>
@@ -655,7 +655,7 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 2. 选择**New Bookmark**（新建书签），打开配置窗口。
 3. 在第一个字段（在下面的截图中标记为 [1]）中选择 **Amazon S3。** [![DataDuckSmall2.png](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)
 4. 填写以下字段：
-   * **昵称：** 自定义文本****
+   * <strong>昵称：</strong> 自定义文本
    * **Server**（服务器）：s3.amazonaws.com
    * **Access Key ID（访问密钥ID）：复制AppsFlyer后台的证书栏中显示的AWS Access Key。**
    * **Secret access key（秘密访问密钥）：复制AppsFlyer后台的证书栏中显示的Bucket Secret Key。**

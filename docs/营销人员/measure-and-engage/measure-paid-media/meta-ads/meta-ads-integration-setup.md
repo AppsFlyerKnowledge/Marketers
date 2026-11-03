@@ -96,8 +96,8 @@ AppsFlyer是根据App ID来归因数据的，您可以使用同一个Facebook Ap
 1. 从AppsFlyer的侧边栏中选择**协作** > **Partner Marketplace**。
 2. 搜索并选择Meta ads。
 3. 点击**设置对接**，界面会跳转到对接设置页。
-4. 打开渠道**对接**选项卡中的**启用该渠道开关。  
-   **注意：** 在您与该渠道合作期间，请确保该开关总是处于打开（即<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">启用</Anchor>）状态。**
+4. 打开渠道<strong>对接</strong>选项卡中的启用该渠道开关。  
+   <strong>注意：</strong> 在您与该渠道合作期间，请确保该开关总是处于打开（即<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">启用</Anchor>）状态。
 5. 在**通用设置**部分：
 
    [![](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)

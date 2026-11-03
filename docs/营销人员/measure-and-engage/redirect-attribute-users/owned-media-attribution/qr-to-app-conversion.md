@@ -88,7 +88,7 @@ x-zendesk:
 
 1. 从AppsFlyer面板进入**用户体验与深度链接** > **OneLink管理**。
 2. 界面会打开二维码编辑器。
-3. 输入您品牌logo图片的URL，如https://yourbrand.com/logo.png。  
+3. 输入您品牌logo图片的URL，如[https://yourbrand.com/logo.png](https://yourbrand.com/logo.png)。  
 
    品牌logo图片须符合以下要求：
 

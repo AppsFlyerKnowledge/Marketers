@@ -119,7 +119,7 @@ x-zendesk:
         * **示例：** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest&hl=en&gl=GB
         * **重要提示！**
           * 如果您的应用**未**在美国的 Google Play 商店上架：
-            * URL 必须包含应用实际上架的国家或地区代码，如上述示例所示：**&gl=`{country_code}`。**如果未填写国家或地区代码，添加应用时会报错。
+            * URL 必须包含应用实际上架的国家或地区代码，如上述示例所示：<strong>&gl=`{country_code}`。</strong>如果未填写国家或地区代码，添加应用时会报错。
             * 语言代码为可选项： **&hl=`{language_code}`**
           * 如果应用**已**在美国的 Google Play 商店上架，国家或地区代码和语言代码均为可选项。
       </td>

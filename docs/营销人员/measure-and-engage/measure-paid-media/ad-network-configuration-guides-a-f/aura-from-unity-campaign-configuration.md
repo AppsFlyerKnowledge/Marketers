@@ -123,7 +123,7 @@ You can give Aura from Unity permission to view information or configure changes
    * **Allow to configure in-app event postbacks**: Permit the partner to map in-app event postbacks to itself on the integration tab.
    * **Allow access to your retention report**: Only permit access to the partner's own retention data.
    * **Allow access to your aggregate loyal user data**: Only permit access to the partner's own loyal user data.
-   * **Allow access to your aggregate in-app events data***: O*nly permit access to the partner's own in-app events data.
+   * <strong>Allow access to your aggregate in-app events data</strong><em>: O</em>nly permit access to the partner's own in-app events data.
    * **Allow access to your aggregate revenue data:** Only permit access to the revenue data attributed to the partner.
    * **Allow spend ingestion**: Permit the partner to upload ad spend data for this app.
    * **Allow access to your Protect360 dashboard**: Only to the partner's own **Protect360** data if the feature is enabled for the advertiser.

@@ -199,7 +199,7 @@ Mark负责一个水果售卖应用的营销工作。他想要通过深度链接�
 | 链接有效期（TTL） | 对于通过SDK用户邀请生成的OneLink短链，其默认有效期（TTL）为60天。每次有用户点击该链接时，有效期就会自动延长60天。 |
 | 定价 | 各类账户套餐皆可免费使用 |
 | iOS 14+ | 由于用户邀请不使用IDFA进行归因，因此完全不受iOS 14影响。 |
-| URL ID | 您可以更改URL ID（即短链ID），以凸显您的推广内容，例如：https://myapp.onelink.me/abc123/apples。URL ID不能超过50个字符，可以同时包含字母和数字。默认长度为8个字符。<br /><br />**请注意**：您仅可更改当前未被使用的URL ID。 |
+| URL ID | 您可以更改URL ID（即短链ID），以凸显您的推广内容，例如：[https://myapp.onelink.me/abc123/apples](https://myapp.onelink.me/abc123/apples)。URL ID不能超过50个字符，可以同时包含字母和数字。默认长度为8个字符。<br /><br />**请注意**：您仅可更改当前未被使用的URL ID。 |
 
 </Accordion>
 

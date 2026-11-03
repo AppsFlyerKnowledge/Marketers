@@ -432,7 +432,7 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 
 * example.com✅
 * shop.example.com✅（如果example.com是主要域名，则无需添加）
-* https://example.com→example.com✅（协议前缀已移除）
+* [https://example.com](https://example.com)→example.com✅（协议前缀已移除）
 * example.com/path❌（不允许包含路径）
 * example.com:8080❌（不允许包含端口）
 

@@ -229,8 +229,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)请按以下步骤在转化值操作台中使用固定模式手动设置转化值：**
 
 1. 从AppsFlyer面板进入配置 > **SKAN转化值操作台**。
-2. 点击（⋮*** 确认SKAN衡量开关已打开。 **请注意**：如果未打开该开关，则SDK不会调用registerAppForAdNetworkAttribution和updateConversionValue等SKAN功能。
-   * 【可选】[启用S2S事件发送功能](/docs/skan-conversion-studio#report-events-by-servertoserver-api)。该功能在收入、转化或互动模式中可用。**
+2. 点击（⋮<strong><em> 确认SKAN衡量开关已打开。 </em></strong>请注意：如果未打开该开关，则SDK不会调用registerAppForAdNetworkAttribution和updateConversionValue等SKAN功能。
+   * 【可选】[启用S2S事件发送功能](/docs/skan-conversion-studio#report-events-by-servertoserver-api)。该功能在收入、转化或互动模式中可用。
 3. 选择一个固定衡量模式。
 4. 根据下表信息和说明完成选定固定衡量模式的设置。
 5. 点击**保存**。
@@ -255,8 +255,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 **解析模式的使用方式如下**：
 
 1. 从AppsFlyer面板进入配置 > **SKAN转化值操作台**。
-2. 点击（⋮*** 确认SKAN衡量开关已打开。 **请注意**：如果未打开该开关，则SDK不会调用registerAppForAdNetworkAttribution和updateConversionValue等SKAN功能。
-   * 上传您的解析映射文档。**
+2. 点击（⋮<strong><em> 确认SKAN衡量开关已打开。 </em></strong>请注意：如果未打开该开关，则SDK不会调用registerAppForAdNetworkAttribution和updateConversionValue等SKAN功能。
+   * 上传您的解析映射文档。
 3. 点击**保存**。
 4. 确认您配置的事件能映射到渠道的应用内事件回传中。
 

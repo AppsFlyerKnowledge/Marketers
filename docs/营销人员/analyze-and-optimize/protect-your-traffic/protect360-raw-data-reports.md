@@ -137,7 +137,7 @@ x-zendesk:
 
 您需要一个Pull API token，请让相关账户的<Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens">管理员</Anchor>为您提供该token。
 
-1. 进入**报告 > API数据接口。**界面会打开<Anchor target="_blank" href="/marketers/zh/docs/pull-api-raw-data">Pull API</Anchor>页面。
+1. 进入<strong>报告 > API数据接口。</strong>界面会打开<Anchor target="_blank" href="/marketers/zh/docs/pull-api-raw-data">Pull API</Anchor>页面。
 2. 在Protect360假量报告部分中选择所需的Pull API。
 3. 根据需要填充参数。下表列出了各项参数。
 4. 拉取报告。

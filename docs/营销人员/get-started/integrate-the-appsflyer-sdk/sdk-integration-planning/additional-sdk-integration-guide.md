@@ -166,9 +166,9 @@ AppsFlyer能够衡量通过各种平台投放的推送通知广告，包括Googl
 
 例如:
 
-* 一个用户通过Google搜索并点击了您的网站**www.example.com**：
-* 如果用户未安装相关应用，他们会跳转到关联网站（www.example.com）。
-* 如果用户已安装相关应用，他们会通过深度链接打开该应用（即与www.example.com相关联的应用）。而这个session就会归因给SDK中所配置的媒体渠道（`pid`参数）。
+* 一个用户通过Google搜索并点击了您的网站<strong>www.example.com</strong>：
+* 如果用户未安装相关应用，他们会跳转到关联网站（[www.example.com](https://www.example.com)）。
+* 如果用户已安装相关应用，他们会通过深度链接打开该应用（即与[www.example.com](https://www.example.com)相关联的应用）。而这个session就会归因给SDK中所配置的媒体渠道（`pid`参数）。
 
 另请参考以下开发者文档：
 

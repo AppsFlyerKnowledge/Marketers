@@ -371,8 +371,8 @@ Protect360面板提供下列筛选和分组选项：
 
 **要在应用内活动信息中心中启用应付款事件**：
 
-* **在应用内事件假量面板中的筛选条件一栏中，打开“应付事件”的开关。  
-  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)**
+* 在应用内事件假量面板中的筛选条件一栏中，打开“应付事件”的开关。  
+  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)
 
 **要配置应付事件**：
 

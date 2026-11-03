@@ -71,7 +71,7 @@ x-zendesk:
         您可以在Pinterest**Business Manager**或Pinterest**转化**报告中找到AppsFlyer的转化报告广告帐户ID。
 
         1. 登录您的Pinterest企业帐户（只有在企业资料中您才能看到Hub选项）。
-        2. 在浏览器中输入或粘贴网址https://www.pinterest.com/business/hub/，然后按Enter键访问。
+        2. 在浏览器中输入或粘贴网址[https://www.pinterest.com/business/hub/](https://www.pinterest.com/business/hub/)，然后按Enter键访问。
         3. 查看左侧深灰色导航栏。如该栏已折叠，请点击左上角的 “≡”图标以展开。
         4. 下滑找到“Manage business”部分。
         5. 点击Conversion（位于“Manage business”下方）。此操作将打开Conversions面板，您可在此查看发送至Pinterest的AppsFlyer转化数据。

@@ -136,8 +136,6 @@ AppsFlyerLib.shared().customData = customData
         **用法示例**
       </td>
       <td>
-        \`
-\`
 <Accordion title="Objective-C">
 
 
@@ -147,7 +145,6 @@ AppsFlyerLib.shared().customData = customData
 
 
 </Accordion>
-\`
 <Accordion title="Swift">
 
 
@@ -190,8 +187,6 @@ AppsFlyerLib.shared().setUserPhone(countryCode: "1", phoneNumber: "(650) 555-121
         **用法示例**
       </td>
       <td>
-        \`
-\`
 <Accordion title="Objective-C">
 
 
@@ -202,7 +197,6 @@ NSArray *emails = @[@"name@domain.com"];
 
 
 </Accordion>
-\`
 <Accordion title="Swift">
 
 
@@ -239,8 +233,6 @@ let emails: Array = ["name@domain.com"]
         **用法示例**
       </td>
       <td>
-        \`
-\`
 <Accordion title="Objective-C">
 
 
@@ -250,7 +242,6 @@ let emails: Array = ["name@domain.com"]
 
 
 </Accordion>
-\`
 <Accordion title="Swift">
 
 
@@ -330,8 +321,6 @@ AppsFlyerLib.getInstance().setAdditionalData(customDataMap)
         **用法示例**
       </td>
       <td>
-        \`
-\`
 <Accordion title="Java">
 
 
@@ -341,7 +330,6 @@ AppsFlyerLib.getInstance().setUserPhone("1", "(650) 555-1212");
 
 
 </Accordion>
-\`
 <Accordion title="Kotlin">
 
 
@@ -386,8 +374,6 @@ AppsFlyerLib.getInstance().setUserPhone("1", "(650) 555-1212")
         **用法示例**
       </td>
       <td>
-        \`
-\`
 <Accordion title="Java">
 
 
@@ -401,7 +387,6 @@ AppsFlyerLib.getInstance().setUserEmails(
 
 
 </Accordion>
-\`
 <Accordion title="Kotlin">
 
 

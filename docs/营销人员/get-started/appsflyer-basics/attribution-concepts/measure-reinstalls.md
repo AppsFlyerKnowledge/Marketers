@@ -76,7 +76,7 @@ x-zendesk:
 * 后续所有的应用内事件都会被归因到再营销渠道（详情请见[应用内事件](/docs/measure-reinstalls#应用内事件)）
 * 激活回传会发送到相关的再营销渠道。
 
-如需进一步了解再营销归因，请参考<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">此文档</Anchor>。](/docs/set-up-re-attribution-window#再归因窗口)
+如需进一步了解再营销归因，请参考<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">此文档</Anchor>。
 
 </Accordion>
 

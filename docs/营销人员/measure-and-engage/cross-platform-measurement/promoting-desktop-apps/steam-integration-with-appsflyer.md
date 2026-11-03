@@ -120,7 +120,7 @@ Steam\_user\_journey.jpg
         * **platform**: steam
         * **steam\_app\_id**:  
 
-          您可以在地址栏的URL中找到您的应用ID，也可以进入https://steamdb.info/并在其中搜索您的游戏。使用场景示例:
+          您可以在地址栏的URL中找到您的应用ID，也可以进入[https://steamdb.info/](https://steamdb.info/)并在其中搜索您的游戏。使用场景示例:
 
           ```http
           https://store.steampowered.com/app/12345678/

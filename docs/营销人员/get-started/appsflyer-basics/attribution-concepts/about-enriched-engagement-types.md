@@ -55,7 +55,7 @@ AppsFlyer与业界领先的广告平台多方协作，推出了新的广告交�
 
 若未上报互动类型，系统会为其设置默认的归因优先级（点击为2，展示为3）。
 
-**`engaged_click`和`engaged_view`的回溯窗口仅限于SRN平台。对于SRN，`engaged_click`和`engaged_view`的回溯窗口和点击相同，因此需通过**安装点击归因回溯**滑块设置。
+<strong>`engaged_click`和`engaged_view`的回溯窗口仅限于SRN平台。对于SRN，`engaged_click`和`engaged_view`的回溯窗口和点击相同，因此需通过</strong>安装点击归因回溯滑块设置。
 
 ## 哪些广告平台可以上报深度浏览和深度点击？
 

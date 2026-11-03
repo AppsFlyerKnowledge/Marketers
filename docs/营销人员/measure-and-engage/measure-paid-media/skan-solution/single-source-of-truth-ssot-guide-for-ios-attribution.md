@@ -77,9 +77,9 @@ SSOT机制会标记出同时被SKAN和非SKAN方式重复归因的激活。AF会
 2. 从AppsFlyer后台进入**面板** > **数据总览面板**。   
    <Image alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. 点击▼。
-4. **选择数据总览轻量版。  
+4. 选择数据总览轻量版。  
    界面会显示SSOT开关。  
-   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />**
+   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. 启用单一可信数据源（SSOT）机制
 6. 完成操作后会出现以下两种结果：
    * 界面会显示面板指标和图表，  

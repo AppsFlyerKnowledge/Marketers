@@ -52,7 +52,7 @@ x-zendesk:
 
 *指SKAN流量中至少有10%来自SKAN 4的广告平台
 
-**不上报skan\_campaign\_id
+不上报skan\_campaign\_id
 
 *** 适用于SKAN 4及以上版本的回传
 
