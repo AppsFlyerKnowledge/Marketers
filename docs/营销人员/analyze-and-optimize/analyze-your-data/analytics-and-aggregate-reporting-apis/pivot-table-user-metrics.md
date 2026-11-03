@@ -27,7 +27,7 @@ x-zendesk:
 
 > **概要**：您可以使用数据透视表查看各类用户指标——包括LTV维度、活跃维度、Protect360以及留存数据，并以CSV文件的形式下载查询结果，用于相关数据的BI入库。数据透视表支持一次查询多个应用的数据。您还可以使用该面板生成Master API接口。
 
-![](https://support.appsflyer.com/hc/article_attachments/51911409860369) altFull\_Funnel.gif
+![](https://files.readme.io/890612985a8346e6b5dcdd66d3e7ad47ac4e46b5b98bf7457b19e328cd9b6c1f-51911409860369.gif) altFull\_Funnel.gif
 
 ## 关于透视报告页面
 

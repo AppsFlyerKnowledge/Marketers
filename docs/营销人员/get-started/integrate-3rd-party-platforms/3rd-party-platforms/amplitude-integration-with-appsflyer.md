@@ -407,7 +407,7 @@ Amplitude 不提供权限。
 
 > 🚧 **重要提示！**
 >
-> 在某些情况下，Amplitude 将来自 AppsFlyer 的数据显示为 "已阻止"。如果您在 Amplitude 中看不到 AppsFlyer 数据，请检查它是否被定义为阻止事件。![amplitude-blocked-data.png](https://support.appsflyer.com/hc/article_attachments/51911907937553)
+> 在某些情况下，Amplitude 将来自 AppsFlyer 的数据显示为 "已阻止"。如果您在 Amplitude 中看不到 AppsFlyer 数据，请检查它是否被定义为阻止事件。![amplitude-blocked-data.png](https://files.readme.io/5ddc286461bdd74abb3922fb97dc38e56e03e1475e255116ffaaa07844e6c0cc-51911907937553.png)
 
 ## 将 Amplitude 事件发送到 AppsFlyer
 

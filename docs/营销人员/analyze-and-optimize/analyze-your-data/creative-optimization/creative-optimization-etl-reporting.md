@@ -49,7 +49,7 @@ Creative Optimization ETL使用<Anchor target="_blank" href="/marketers/zh/docs/
 1. 1. 按<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers#set-up-data-locker">此文档</Anchor>中的说明完成相关操作。
 2. 2. 设置Data Locker时，在Data Locker配置页面的**报告类型**部分中选择Creative（素材）。
 
-![数据存储 - 选择创意优化.jpg](https://support.appsflyer.com/hc/article_attachments/51911142204305)
+![数据存储 - 选择创意优化.jpg](https://files.readme.io/d69a0f361c585dbb7c2d9fe0f47bc87d79712a954a3fb347de7b32b6e73fbb90-51911142204305.jpg)
 
 </Accordion>
 
@@ -64,7 +64,7 @@ Creative Optimization ETL使用<Anchor target="_blank" href="/marketers/zh/docs/
 1. 从AppsFlyer后台左侧的菜单栏中选择**导出 > Data Locker**。
 2. 在数据存储配置页面，选择 **选择报告**，选择 **创意优化**。
 
-![数据存储 - 选择创意优化.jpg](https://support.appsflyer.com/hc/article_attachments/51911142204305)
+![数据存储 - 选择创意优化.jpg](https://files.readme.io/d69a0f361c585dbb7c2d9fe0f47bc87d79712a954a3fb347de7b32b6e73fbb90-51911142204305.jpg)
 
 </Accordion>
 

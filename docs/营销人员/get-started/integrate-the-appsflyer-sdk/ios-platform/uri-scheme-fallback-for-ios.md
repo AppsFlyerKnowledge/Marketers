@@ -54,7 +54,7 @@ x-zendesk:
 
 #### **链路图**
 
-![Copy_of_Ios_fall_back_-_browsers_that_can_use_URI_schemes_by_default__2_.png](https://support.appsflyer.com/hc/article_attachments/51911709482641)
+![Copy_of_Ios_fall_back_-_browsers_that_can_use_URI_schemes_by_default__2_.png](https://files.readme.io/0059288afb39247fd2d08ff2a1d1bef6f43d958b7f5d20bc921a431b65dacc58-51911709482641.png)
 
 </Accordion>
 

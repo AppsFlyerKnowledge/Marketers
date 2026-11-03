@@ -82,7 +82,7 @@ Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and
    ![twitter_assign_account2.PNG](https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png)
 3. Jenny then gives @nivi access to her X Ads Account as or Account administrator  
 
-   [![twitter_edit_access_to_account.png](https://support.appsflyer.com/hc/article_attachments/51165513102737)](https://support.appsflyer.com/hc/article_attachments/51165541518225)
+   [![twitter_edit_access_to_account.png](https://files.readme.io/20cd9e11cf72c49a49ee0cd01776918de4570cae527f51a58c777f7d71fd13b9-51165513102737.png)](https://support.appsflyer.com/hc/article_attachments/51165541518225)
 4. Jenny logs into the AppsFlyer account and goes to Active Integrations >> X Ads option
 5. At this stage, she can see her X Ads Account also listed.
 6. She can now see her X Ads account and configure the integration. The account admin can see all connected X Ads accounts.
@@ -130,7 +130,7 @@ If your app was subscribed to another attribution provider in the past, which wa
 
 Alternatively, the following error may also appear:  
 
-[![](https://support.appsflyer.com/hc/article_attachments/51165513103377)](https://support.appsflyer.com/hc/article_attachments/51165513103377)
+[![](https://files.readme.io/e00cef2eff33bf291086f5a35fc9981d647f68b5d22a92cbb566a8c58b54931d-51165513103377.png)](https://files.readme.io/e00cef2eff33bf291086f5a35fc9981d647f68b5d22a92cbb566a8c58b54931d-51165513103377.png)
 
 **Error: Error has occurred while saving X Ads configuration. Some accounts failed to update: XX Multiple provider ids to same (appid, conversionType) for event appid2872.**
 

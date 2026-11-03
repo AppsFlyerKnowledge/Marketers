@@ -101,7 +101,7 @@ UA合作渠道可通过以下两种方式接收广告收入数据：
 
 | UA广告平台 | af\_ad\_revenue的渠道映射事件 | 截屏 |
 | --- | --- | --- |
-| ironSource | adRevenue | [![](https://support.appsflyer.com/hc/article_attachments/51911214455953)](https://support.appsflyer.com/hc/article_attachments/51911214455953) |
+| ironSource | adRevenue | [![](https://files.readme.io/c7e01c7c83a955fca0479d3b5f9ab3c781d0ecdf3cfaf2757e861013eb39f149-51911214455953.png)](https://files.readme.io/c7e01c7c83a955fca0479d3b5f9ab3c781d0ecdf3cfaf2757e861013eb39f149-51911214455953.png) |
 | Unity Ads | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png) |
 | Moloco | 无需映射 |  |
 | Mintegral | 无需映射 |  |

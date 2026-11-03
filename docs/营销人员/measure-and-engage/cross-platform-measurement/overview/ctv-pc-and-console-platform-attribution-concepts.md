@@ -89,7 +89,7 @@ AppsFlyer为广告主提供全面的跨端归因解决方案，可配合传统�
 
 跨平台OneLink链接仅支持概率模型归因（以IP地址为基础），因此可以将多个用户的多次激活归因到同一个广告展示。具体归因流程如下图所示。
 
-![CTV attribution flow - Cross-platform Onelink link attribution flow (1).png](https://support.appsflyer.com/hc/article_attachments/51911195677329)
+![CTV attribution flow - Cross-platform Onelink link attribution flow (1).png](https://files.readme.io/926ecf50c96dc72b05d107f1cf7b17b8c343b6e31f3755a1c39c801496568f50-51911195677329.png)
 
 由于OneLink模板中含有所有可能出现的应用端/平台，因此跨平台OneLink链接的URL中不包含具体的应用ID或平台信息，而是使用相关的OneLink模板ID，以传递模板中配置的应用端/平台信息。
 

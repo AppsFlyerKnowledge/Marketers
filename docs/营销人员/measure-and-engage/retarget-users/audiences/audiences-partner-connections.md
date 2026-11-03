@@ -138,7 +138,7 @@ x-zendesk:
 | NAVER | <Image alt="Naver_Logotype.svg.png" src="https://files.readme.io/d236f0f4e89b68c3b4d6c085674cd2c98e397358f5e29f0f4de72b88fe3d1b12-33356334901905.png" width="128px" /> | API key | <ul><li>IDFA（哈希加密）</li><li>GAID（哈希加密）</li></ul> |
 | Olimob | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/olimob.png" width="95px" /> | API key | <ul><li>IDFA（哈希加密）</li><li>GAID（哈希加密）</li></ul> |
 | Opera Mobile | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/operamobile.png" width="128px" /> | API key | <ul><li>IDFA（哈希加密）</li><li>GAID（哈希加密）</li></ul> |
-| Oracle | <Image alt="oracle.png" src="https://support.appsflyer.com/hc/article_attachments/51911738711313" width="128px" /> | [Oracle](/docs/audiences-partner-connections#oracle-data-cloud)的连接说明 | <ul><li>IDFA（哈希加密）</li><li>GAID（哈希加密）</li></ul> |
+| Oracle | <Image alt="oracle.png" src="https://files.readme.io/c983f213b498b82cf51a73d0e69fb74bf9bddf50d599c45756c88dae87a6567d-51911738711313.png" width="128px" /> | [Oracle](/docs/audiences-partner-connections#oracle-data-cloud)的连接说明 | <ul><li>IDFA（哈希加密）</li><li>GAID（哈希加密）</li></ul> |
 | Paytunes | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/paytunes.png" width="128px" /> | API key | <ul><li>IDFA（哈希加密）</li><li>GAID（哈希加密）</li></ul> |
 | PerformanPBI | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/performanpbi.png" width="128px" /> | API key | <ul><li>IDFA（哈希加密）</li><li>GAID（哈希加密）</li></ul> |
 | Personaly | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/persona.ly.png" width="128px" /> | API key | <ul><li>IDFA（哈希加密）</li><li>GAID（哈希加密）</li></ul> |
@@ -610,12 +610,12 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 
 1. 添加新的Oracle Data Cloud连接, 如下图所示:
 
-   [![](https://support.appsflyer.com/hc/article_attachments/51911738713233)](https://support.appsflyer.com/hc/article_attachments/51911738713233)
+   [![](https://files.readme.io/cbb2cbc3559d73c2446da2a59cfdedb1ee631165c189d2bf87e8ef4c625914f6-51911738713233.png)](https://files.readme.io/cbb2cbc3559d73c2446da2a59cfdedb1ee631165c189d2bf87e8ef4c625914f6-51911738713233.png)
 2. 复制**AppsFlyer的Seat ID**，然后请您的Oracle Data Cloud客户经理将其列入白名单。加白后，AppsFlyer就可以代您创建对应的类别。
 3. 添加**Seat ID**和**Site ID** （您可以咨询Oracle Data Cloud客户经理获取这两个ID）。
 4. 验证您的**SeatID**之后 ，下拉列表中会显示所有的**Parent Categories**：
 
-   [![](https://support.appsflyer.com/hc/article_attachments/51911721849745)](https://support.appsflyer.com/hc/article_attachments/51911721849745)
+   [![](https://files.readme.io/a91a14c8d37b8ec399c58722e3083d6f6c050699352b58e6db5255894a0d84a2-51911721849745.png)](https://files.readme.io/a91a14c8d37b8ec399c58722e3083d6f6c050699352b58e6db5255894a0d84a2-51911721849745.png)
 5. 选择一个**Parent Category**，在其中创建所需的子类别。
 6. 点击**Add Connection**。
 

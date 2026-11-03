@@ -598,7 +598,7 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 * 点击**下载映射文件**，就能下载CSV格式的CV映射表。
 * 您也可以使用<Anchor target="_blank" href="/marketers/zh/docs/skan-cv-schema-api-for-advertisers">广告主的SKAN CV映射构架API</Anchor>获取CV映射信息。
 
-![CVmapping.png](https://support.appsflyer.com/hc/article_attachments/51911424397585)
+![CVmapping.png](https://files.readme.io/b337ac089f70a5eff76ac6a56841b420cff9f4bff7aba8c18acddd04acfd82f6-51911424397585.png)
 
 #### CV映射文件各列说明
 

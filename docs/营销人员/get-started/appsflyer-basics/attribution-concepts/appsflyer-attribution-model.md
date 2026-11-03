@@ -75,7 +75,7 @@ AppsFlyer使用以下各种方法进行归因：
 
 如果在一个新增激活前发生了多个有效互动，**AppsFlyer会把该激活优先归因到点击，其次是展示；并会优先使用确定性归因，其次是概率匹配**。下图展示了Appsflyer的归因优先级。
 
-![Attribution method priorities 23.png](https://support.appsflyer.com/hc/article_attachments/51911487537937)
+![Attribution method priorities 23.png](https://files.readme.io/d88dcebc9095b2f92e24817ab0041d015c80201ab8cda6233a41ea4b626aa998-51911487537937.png)
 
 以下内容详细阐释了AppsFlyer的各个归因模型。
 

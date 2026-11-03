@@ -40,7 +40,7 @@ Using iOS 6.0 and later, you can implement App Banners in Safari to promote apps
 
 **Example banner in Safari**
 
-<Image alt="AppleBanner_en-us.jpg" src="https://support.appsflyer.com/hc/article_attachments/51165531547153" width="278px" />
+<Image alt="AppleBanner_en-us.jpg" src="https://files.readme.io/3682c7d613246e51608356ce773e6924276d43acdf40cdc7b63f5c9132bb71de-51165531547153.jpg" width="278px" />
 
 Before implementing iOS App Banners consider:
 

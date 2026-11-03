@@ -179,7 +179,7 @@ x-zendesk:
 
 * 广告收入对接正常时的状态信息如下：
   * <Anchor target="_blank" href="/marketers/zh/docs/dashboard-cost-and-ad-revenue-status">成本和广告收入对接状态面板</Anchor>：集中查看账户下已对接相关应用（一个或多个）广告收入的渠道列表。
-  * 一些合作伙伴允许测试广告变现API的连接状态。这种情况下界面会显示**测试连接**按钮。<Image alt="mceclip0.png" src="https://support.appsflyer.com/hc/article_attachments/51911279045009" width="104px" />
+  * 一些合作伙伴允许测试广告变现API的连接状态。这种情况下界面会显示**测试连接**按钮。<Image alt="mceclip0.png" src="https://files.readme.io/e6c10f093c5d7ecdabd87e7e26cfb3c41a77194ca7677442470d33af4e6b9d0b-51911279045009.png" width="104px" />
   * 验证API连接是否正常：
   * 点击**测试连接**。  
     此时界面会显示消息“**API key verified**”（API key已验证）。若未出现此消息，请按下表中的说明进行排查和纠错。

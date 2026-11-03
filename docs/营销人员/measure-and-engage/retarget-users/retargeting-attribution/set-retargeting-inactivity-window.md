@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 向不活跃的用户定向投放再营销广告，可有效提升增量效果。您可以分渠道设置用户的不活跃窗口期，精准衡量再营销广告的效果。
 >
-> ![](https://support.appsflyer.com/hc/article_attachments/51911937664913)
+> ![](https://files.readme.io/c96cda4d05b2724c6f8b30b5ec19f218eb763bd6d9cbf1cb842e0b57ad0902db-51911937664913.png)
 
 ## 不活跃时长
 
@@ -104,7 +104,7 @@ x-zendesk:
 4. 设置**不活跃窗口**。可用范围为1-30天。
 5. 点击**保存对接**。
 
-[![Inactivity_window_SRN.png](https://support.appsflyer.com/hc/article_attachments/51911937665553)](https://support.appsflyer.com/hc/article_attachments/51911937665553)
+[![Inactivity_window_SRN.png](https://files.readme.io/158a1c56acc330dc8bb25a2199e1ad8b643e4f94a22d55caadae485d4a8a753d-51911937665553.png)](https://files.readme.io/158a1c56acc330dc8bb25a2199e1ad8b643e4f94a22d55caadae485d4a8a753d-51911937665553.png)
 
 </Accordion>
 
@@ -120,7 +120,7 @@ x-zendesk:
 4. 设置**不活跃窗口**。可用范围为1-30天。  
    该设置会将**不活跃时长阈值**参数`af_inactivity_window`添加到归因链接中，如“&af\_inactivity\_window=7d”。该功能关闭时，归因链接中不会带有这个参数。
 
-[![Inactivity_window_non-SRN.png](https://support.appsflyer.com/hc/article_attachments/51911937666193)](https://support.appsflyer.com/hc/article_attachments/51911937666193)
+[![Inactivity_window_non-SRN.png](https://files.readme.io/10c1921e449c0cfbaed7d0fc07837f8dd9720dc2316d44c966d91b5baddcfbf4-51911937666193.png)](https://files.readme.io/10c1921e449c0cfbaed7d0fc07837f8dd9720dc2316d44c966d91b5baddcfbf4-51911937666193.png)
 
 </Accordion>
 

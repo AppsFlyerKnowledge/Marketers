@@ -35,7 +35,7 @@ x-zendesk:
 
 ## 数据视图构建器
 
-[![](https://support.appsflyer.com/hc/article_attachments/51911637005457)](https://support.appsflyer.com/hc/article_attachments/51911637005457)
+[![](https://files.readme.io/281dbd296fee9118ca4dc9729a624f9127e9b4d05436448f06d235e2a7d762ea-51911637005457.png)](https://files.readme.io/281dbd296fee9118ca4dc9729a624f9127e9b4d05436448f06d235e2a7d762ea-51911637005457.png)
 
 数据视图构建器页面包括两个部分：
 
@@ -169,7 +169,7 @@ x-zendesk:
 
 您想指示从合作者处购买的产品，同时掩盖与您合作的其他品牌的购买。
 
-[![](https://support.appsflyer.com/hc/article_attachments/51911620451217)](https://support.appsflyer.com/hc/article_attachments/51911620451217)
+[![](https://files.readme.io/1ce74573ea075baa4d7bf8299abc7dbf01fdb4afce870bc9282ed7c3ab1f5bd9-51911620451217.png)](https://files.readme.io/1ce74573ea075baa4d7bf8299abc7dbf01fdb4afce870bc9282ed7c3ab1f5bd9-51911620451217.png)
 
 #### **聚合函数**
 
@@ -183,13 +183,13 @@ x-zendesk:
 
 您想计算每个用户的总购买次数，并汇总他们支付的总价格。
 
-[![](https://support.appsflyer.com/hc/article_attachments/51911637008017)](https://support.appsflyer.com/hc/article_attachments/51911637008017)
+[![](https://files.readme.io/e9ed7aa29fb6e25d16076089b848496aa9a42355ceba17c18210d0d6596a677f-51911637008017.png)](https://files.readme.io/e9ed7aa29fb6e25d16076089b848496aa9a42355ceba17c18210d0d6596a677f-51911637008017.png)
 
 #### 示例：带条件的聚合
 
 您想获取位于德国的用户最近购买的 P&G 产品的数据。
 
-[![](https://support.appsflyer.com/hc/article_attachments/51911620451729)](https://support.appsflyer.com/hc/article_attachments/51911620451729)
+[![](https://files.readme.io/9d7e3774e21d6f48deeef05eb3f1ef98de4cc44b590cb23603e8ed8679f8a7fd-51911620451729.png)](https://files.readme.io/9d7e3774e21d6f48deeef05eb3f1ef98de4cc44b590cb23603e8ed8679f8a7fd-51911620451729.png)
 
 </Accordion>
 
@@ -315,7 +315,7 @@ x-zendesk:
 
 1. 在AppsFlyer中，从侧边菜单中选择 **协作** > **数据清理室**。
 2. 在 **来源** 标签中，点击来源名称。相关的数据视图将显示。
-3. 将鼠标悬停在您想要删除的数据视图上，然后点击 <Image alt="delete.jpeg" src="https://support.appsflyer.com/hc/article_attachments/51911637009809" width="2.3%" />（垃圾桶图标）在行的末尾。
+3. 将鼠标悬停在您想要删除的数据视图上，然后点击 <Image alt="delete.jpeg" src="https://files.readme.io/9ba72d22f765e7fc7f0f8c17a53aa3bc15111e410bfb82d809a62b2a9021fc76-51911637009809.jpg" width="2.3%" />（垃圾桶图标）在行的末尾。
 4. 在删除确认窗口中，点击 **删除**。数据视图已被删除。
 
 </Accordion>
@@ -328,7 +328,7 @@ x-zendesk:
 
 1. 在AppsFlyer中，从侧边菜单中选择 **协作** > **数据清理室**。
 2. 在 **来源** 标签中，点击来源名称。相关的数据视图将显示。
-3. 将鼠标悬停在您想要共享的数据视图上，然后点击 <Image alt="share-icon.jpeg" src="https://support.appsflyer.com/hc/article_attachments/51911637010065" width="3.01%" />（共享图标）在行的末尾。
+3. 将鼠标悬停在您想要共享的数据视图上，然后点击 <Image alt="share-icon.jpeg" src="https://files.readme.io/83b3d977775b0e2bdf4a096eab856990c52cc65bb95408b68f3db25e039ba480-51911637010065.jpg" width="3.01%" />（共享图标）在行的末尾。
 4. 输入合作者的电子邮件地址，然后点击 **下一步**。
 5. 选择相关的 <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#共享权限">共享权限</Anchor>。
 6. 点击 **保存并发送**。

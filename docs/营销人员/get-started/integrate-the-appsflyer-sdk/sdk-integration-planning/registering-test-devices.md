@@ -81,7 +81,7 @@ x-zendesk:
 
    <Accordion title="安卓">
 
-   [<Image alt="" src="https://support.appsflyer.com/hc/article_attachments/51911871701649" width="233px" />](https://support.appsflyer.com/hc/article_attachments/51911871701649)
+   [<Image alt="" src="https://files.readme.io/a3fd43836c7f489ab37a2d03263e9e873f1ec700c4f6a9c10771775b38295333-51911871701649.png" width="233px" />](https://files.readme.io/a3fd43836c7f489ab37a2d03263e9e873f1ec700c4f6a9c10771775b38295333-51911871701649.png)
 
    **链接：** [Google Play](https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid&hl=en)和[第三方商店](https://apkpure.com/my-device-id-by-appsflyer/com.appsflyer.android.deviceid)
 
@@ -91,7 +91,7 @@ x-zendesk:
 
    <Accordion title="iOS">
 
-   [<Image alt="" src="https://support.appsflyer.com/hc/article_attachments/51911871705489" width="233px" />](https://support.appsflyer.com/hc/article_attachments/51911871705489)
+   [<Image alt="" src="https://files.readme.io/bdd0aaaf73063815527e0b44784db783e88a99dd7430ec48dad90bb67cebc696-51911871705489.png" width="233px" />](https://files.readme.io/bdd0aaaf73063815527e0b44784db783e88a99dd7430ec48dad90bb67cebc696-51911871705489.png)
 
    </Accordion>
 

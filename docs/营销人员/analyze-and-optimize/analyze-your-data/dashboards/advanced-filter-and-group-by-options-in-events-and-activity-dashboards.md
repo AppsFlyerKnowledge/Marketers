@@ -56,7 +56,7 @@ Select the Media Source for which you want to view the data.
 
 Use the **Geo** dropdown to select a specific geo region and view app activities for that region.
 
-![](https://support.appsflyer.com/hc/article_attachments/51165178055441)
+![](https://files.readme.io/ee6a039980af5baddd6277b905927751306dced369eb1c2c2c9ed7c2239c25b7-51165178055441.png)
 
 ## Group by options
 
