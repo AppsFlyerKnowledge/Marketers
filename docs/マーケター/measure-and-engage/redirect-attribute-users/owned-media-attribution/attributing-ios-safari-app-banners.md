@@ -40,7 +40,7 @@ iOS 6.0以降、SafariにSmart App Bannersを実装して、App Storeで配信�
 
 **Safariのバナー例**
 
-<Image alt="AppleBanner_en-us.jpg" src="https://support.appsflyer.com/hc/article_attachments/51444659311121" width="278px" />
+<Image alt="AppleBanner_en-us.jpg" src="https://files.readme.io/a45e35278a22e7c272e9af8b5caa2b134fed70f29bb5fbcf1605ed1662d9eddf-51444659311121.jpg" width="278px" />
 
 iOSアプリバナーを実装する前に、次の点を考慮してください。
 

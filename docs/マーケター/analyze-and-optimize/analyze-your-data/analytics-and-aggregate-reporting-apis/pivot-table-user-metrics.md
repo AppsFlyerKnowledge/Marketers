@@ -27,7 +27,7 @@ x-zendesk:
 
 > **概要**：異なるユーザーメトリクスを表示—LTV、アクティビティ、Protect360、およびリテンション。自社BIシステムに取り込むためにCSVファイルをダウンロードできます。Pivotレポートでは、1つのクエリに複数アプリを含めることができます。Pivotは、Master APIコールを生成するために使用されます。
 
-![Full_Funnel.gif](https://support.appsflyer.com/hc/article_attachments/51909644198929)
+![Full_Funnel.gif](https://files.readme.io/ff9cf90460ac2cc695ad5d1d9c2c35fa9843cb221c3a096fdfb9d92f4364f208-51909644198929.gif)
 
 ## ピボットレポートページについて
 

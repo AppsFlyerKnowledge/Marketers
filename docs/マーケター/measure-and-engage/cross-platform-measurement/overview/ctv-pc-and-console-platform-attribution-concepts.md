@@ -99,7 +99,7 @@ CTV、PC、コンソールプラットフォーム上でアプリをマーケテ
 
 クロスプラットフォームの OneLink リンクは、確率論的モデリングアトリビューション方法（IPアドレスに基づく）のみに対応しています。このため、複数のユーザーによる複数のインストールは、同一のインプレッションとして計測される可能性があります。アトリビューションフローを次の図で説明します。
 
-![CTV attribution flow - Cross-platform Onelink link attribution flow (1).png](https://support.appsflyer.com/hc/article_attachments/51909661153809)
+![CTV attribution flow - Cross-platform Onelink link attribution flow (1).png](https://files.readme.io/116067569c92e06fec0ed75fa4385e0f3dc6a155cf35e63bd2ed2ebf84c0c73f-51909661153809.png)
 
 可能なすべてのアプリのリンク先・プラットフォームは、OneLink テンプレートで設定されます。そのため、クロスプラットフォームの OneLink リンクには、URL に特定のアプリIDや特定のプラットフォーム情報が含まれていません。代わりに、可能なすべてのアプリのリンク先・プラットフォームが設定されているテンプレート ID が、URL に含まれています。
 

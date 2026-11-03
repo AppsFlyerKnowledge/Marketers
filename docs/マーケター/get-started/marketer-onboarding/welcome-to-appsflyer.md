@@ -78,7 +78,7 @@ AppsFlyerアカウントにログインする方法はいくつかあります�
 1. **メニューバーから、** メールアドレスのドロップダウン > アカウントの切り替えへ移動します。
 2. ログインするアカウントを選択してください。
 
-![switch between accounts3.jpg](https://support.appsflyer.com/hc/article_attachments/51909721461393)
+![switch between accounts3.jpg](https://files.readme.io/a1ad8bbbd55451f1988420814217b3a48bcf6103121381d69d0a2fcb24353180-51909721461393.jpg)
 
 ## まずはじめに
 

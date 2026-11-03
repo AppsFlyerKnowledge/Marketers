@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerのSRN媒体であるApple Search Ads（ASA）は、ユーザーがキーワードを使用してApp Storeでアプリを見つけるのに役立ちます。
 
-<Image alt="apple_search_ads.png" src="https://support.appsflyer.com/hc/article_attachments/51910174096657" width="217px" />
+<Image alt="apple_search_ads.png" src="https://files.readme.io/5f884c88c860c7fa0c987c1a9108c2c54aff319bd143d37516ff3556940bcd81-51910174096657.png" width="217px" />
 
 アプリとの関連性は、App Store上での検索クエリに応じて表示される広告があなたの広告であるかどうかを判断します。アプリ広告に対するユーザーの反応が、広告の関連性を判定する要素になります。ASAは、ユーザーの反応をシグナルとしてどの広告を最も多く表示するかを決定します。
 

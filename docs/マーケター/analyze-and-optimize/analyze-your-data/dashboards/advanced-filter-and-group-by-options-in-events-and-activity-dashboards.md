@@ -54,7 +54,7 @@ AppsFlyerには、データを絞り込み、最も関連性の高い情報を�
 
 また、[**国**]のドロップダウンリストを使用して特定の国を選択し、その地域のみのデータを表示することも可能です。
 
-![](https://support.appsflyer.com/hc/article_attachments/51444182095889)
+![](https://files.readme.io/e10b0f2c135d2a9e28fd5c3d7b9148f047400b29ebeb57ee4445cebe95837b0a-51444182095889.png)
 
 ## グループ化の選択肢
 

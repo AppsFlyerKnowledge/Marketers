@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > 概要：  Pinterestは、クリックベースのモバイルアトリビューションとビュースルーモバイルアトリビューションの両方を提供しています。さらに、Pinterestは、AppsFlyerで計測できるクリックベースのリターゲティングも提供しています。
 
-<Image alt="Aarki-logo.png" src="https://support.appsflyer.com/hc/article_attachments/27311413456657" width="207px" />
+<Image alt="Aarki-logo.png" src="https://files.readme.io/f3c0366b10049471106e18218c4ee668d656970768f7fba642e125a3c17ffda0-27311413456657.png" width="207px" />
 
 
 **<span id="setting-up-aarki"></span>前提条件：** 連携を設定する前に、必ず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに連絡し</Anchor>、アカウントを開設してください。

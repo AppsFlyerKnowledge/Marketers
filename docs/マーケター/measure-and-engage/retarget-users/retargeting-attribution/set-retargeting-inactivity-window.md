@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 概要：休眠（非アクティブ）ユーザーをリターゲティングすることで、キャンペーン効果を向上させます。メディアソースごとに休眠期間を設定しましょう。
 >
-> ![](https://support.appsflyer.com/hc/article_attachments/51910196789521)
+> ![](https://files.readme.io/1029124dc36a3881628f870cc725315afc262a20dc8652e5ff6cdd47653e7984-51910196789521.png)
 
 ## 休眠期間
 
@@ -104,7 +104,7 @@ x-zendesk:
 4. **休眠期間**を設定します（1-30日間）。
 5. **連携を保存**をクリックします。
 
-[![Inactivity_window_SRN.png](https://support.appsflyer.com/hc/article_attachments/51910208455057)](https://support.appsflyer.com/hc/article_attachments/51910208455057)
+[![Inactivity_window_SRN.png](https://files.readme.io/29e80edb6f42ae129b24b05280e9c1605ef5b089ccecf1c0a7f2888b1a4f593a-51910208455057.png)](https://files.readme.io/29e80edb6f42ae129b24b05280e9c1605ef5b089ccecf1c0a7f2888b1a4f593a-51910208455057.png)
 
 </Accordion>
 
@@ -120,7 +120,7 @@ x-zendesk:
 4. **休眠期間**を設定します（1-30日間）。  
    この機能が無効の場合、計測リンクには追加されません。
 
-[![Inactivity_window_non-SRN.png](https://support.appsflyer.com/hc/article_attachments/51910208455953)](https://support.appsflyer.com/hc/article_attachments/51910208455953)
+[![Inactivity_window_non-SRN.png](https://files.readme.io/6670efad2795ddb22197506d8d98050f23c9d515375d99b012a6e7426de9470f-51910208455953.png)](https://files.readme.io/6670efad2795ddb22197506d8d98050f23c9d515375d99b012a6e7426de9470f-51910208455953.png)
 
 </Accordion>
 

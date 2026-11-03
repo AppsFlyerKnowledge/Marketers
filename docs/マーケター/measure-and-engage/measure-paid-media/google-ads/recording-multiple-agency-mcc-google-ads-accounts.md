@@ -66,7 +66,7 @@ AppsFlyerで登録できるリンクIDは、アプリごとに1つです。<stro
 
 > 📘 **注意**
 >
-> * Google Ads管理画面で、3点メニュー>>***リンク済みアカウント***>>***サードパーティのアプリ分析の詳細***の順にクリックします。 [![](https://support.appsflyer.com/hc/article_attachments/52396751401361)](https://support.appsflyer.com/hc/article_attachments/52396751401361)
+> * Google Ads管理画面で、3点メニュー>>***リンク済みアカウント***>>***サードパーティのアプリ分析の詳細***の順にクリックします。 [![](https://files.readme.io/24a2046dd2f3144490e052af68a645e536ad4ebc0a8730798c75c943056f1d05-52396751401361.png)](https://files.readme.io/24a2046dd2f3144490e052af68a645e536ad4ebc0a8730798c75c943056f1d05-52396751401361.png)
 > * 他のアカウントは「共有」を承認する必要があります。
 > * これにより、共有先アカウントに、そのアプリのGoogle Adsキャンペーンを配信する権限が付与されます。
 
@@ -80,15 +80,15 @@ AppsFlyerで登録できるリンクIDは、アプリごとに1つです。<stro
 
 MCCの設定中に、MCCとサブアカウントのどちらでコンバージョンを管理するかを設定できます。
 
-[![MCC_1_new.png](https://support.appsflyer.com/hc/article_attachments/52396712542097)](https://support.appsflyer.com/hc/article_attachments/52396712542097)
+[![MCC_1_new.png](https://files.readme.io/6ed2807f635631ff9061bdacc475953e62ef72595ee2da3f455767dc217d292e-52396712542097.png)](https://files.readme.io/6ed2807f635631ff9061bdacc475953e62ef72595ee2da3f455767dc217d292e-52396712542097.png)
 
 この設定は、必要に応じて後で変更できます。
 
-![mmc-googleads-settings.png](https://support.appsflyer.com/hc/article_attachments/52396751408529)
+![mmc-googleads-settings.png](https://files.readme.io/0fccf363fb21e8afcbbe6b6774fd53aabf6c8aea72c2636f6f67c75e2208e2a6-52396751408529.png)
 
 ## 複数のMCCを統括するMCC
 
-[![](https://support.appsflyer.com/hc/article_attachments/52396712543121)](https://support.appsflyer.com/hc/article_attachments/52396712543121)
+[![](https://files.readme.io/3557abec0be782fccb10897de0b7ae705b1464216f7fc160d217b506df9a73b9-52396712543121.png)](https://files.readme.io/3557abec0be782fccb10897de0b7ae705b1464216f7fc160d217b506df9a73b9-52396712543121.png)
 
 複数の代理店と取引する大規模な広告主は、複数のMCCを統括するMCCアカウントを利用する場合があります。これは通常のMCCアカウントに似ています。このとき、MCCアカウントの中で最上位のMCCアカウント、または広告主アカウントがリンクIDを生成することを推奨します。この構造を正しく設定するには、サブアカウント側で、適切な階層のMCC（通常は最上位のMCC）をコンバージョンアカウントとして選択する必要があります。このように設定されている場合は、リンクIDをサブアカウントと共有する必要はなく、最上位のアカウントでコンバージョンのインポートをするだけで十分です。
 

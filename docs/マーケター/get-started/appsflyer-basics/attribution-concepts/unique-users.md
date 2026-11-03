@@ -72,7 +72,7 @@ x-zendesk:
 
 <Accordion title="インストールとリエンゲージメント">
 
-![](https://support.appsflyer.com/hc/article_attachments/51444293138065)
+![](https://files.readme.io/a49b8278816429295138e6c6a154194f423512ba2b7ba78fd756d346430dbd12-51444293138065.png)
 
 インストールとリエンゲージメントは、同じデバイスID／AppsFlyer IDを持ちます。ただし、リアトリビューションと同様に、`is_retargeting=true`も考慮されるため、リエンゲージメント後のイベントは、追加のユニークユーザーとして計上されます。そのため、ユニークユーザーは2人として計上されます。
 
