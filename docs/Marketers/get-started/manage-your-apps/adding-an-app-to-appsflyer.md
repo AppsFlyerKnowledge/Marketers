@@ -275,7 +275,7 @@ Usa la plataforma web para crear una nueva aplicación web y medir las visitas a
 
 * **Longitud:** 1-100 caracteres
 * **Caracteres permitidos:** Letras (de cualquier idioma), números, espacios (no al principio ni al final) y caracteres especiales: . - \_ :
-* **Caracteres bloqueados:** ; \`{ }\` $ < > \` \
+* **Caracteres bloqueados:** ; \`{ }\` $ &lt; > \` \
 
 **Ejemplo:** My Online Store, Corporate Website 2024, E-Commerce\_Production
 

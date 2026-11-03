@@ -996,7 +996,7 @@ Asegurarte de que todos los eventos seleccionados ocurran dentro de la primera v
 
 ✅ Todos los eventos ≥ 3 % de instalaciones
 
-⚠️ Uno o más eventos < 3 %
+⚠️ Uno o más eventos &lt; 3 %
 
 </Accordion>
 

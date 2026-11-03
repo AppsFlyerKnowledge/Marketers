@@ -892,7 +892,7 @@ Puedes aplicar una de las siguientes opciones de formato a las celdas de tu tabl
 
   * ROAS ≥ **40%** → **Verde** (rendimiento sólido).
   * ROAS entre **25–39%**, ambos incluidos → **Amarillo** (en línea).
-  * ROAS < **25%** → **Rojo** (por debajo de lo esperado).
+  * ROAS &lt; **25%** → **Rojo** (por debajo de lo esperado).
 
   Este enfoque destaca qué actividades ofrecen resultados sólidos, lo que te permite tomar decisiones más rápidas y basadas en datos sobre la optimización de campañas y la asignación de presupuesto.
 

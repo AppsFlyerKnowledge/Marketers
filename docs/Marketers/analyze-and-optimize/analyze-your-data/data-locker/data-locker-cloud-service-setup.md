@@ -316,7 +316,7 @@ Completa los procedimientos siguientes para conectar Snowflake a Data Locker.
 2. Cambia el rol a **Accountadmin**. Consulta <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/data-share-consumers.html#creating-a-database-from-a-share.">Crear una base de datos a partir de un recurso compartido.</Anchor>
 3. Selecciona **Recursos compartidos**.
 4. Selecciona el recurso compartido de AppsFlyer. Por ejemplo, APPSFLYER\_ACC\_XXX\_DATA\_LOCKER.
-5. Haz clic en **Crear base de datos desde Secure Share** y completa los detalles requeridos. Haz clic en **Siguiente. ¡**Importante!** Debes cargar los datos de la base de datos compartida en tus tablas, porque los datos en la base de datos compartida solo están disponibles por un período limitado (actualmente 14 días).**
+5. Haz clic en **Crear base de datos desde Secure Share** y completa los detalles requeridos. Haz clic en <strong>Siguiente. ¡</strong>Importante!** Debes cargar los datos de la base de datos compartida en tus tablas, porque los datos en la base de datos compartida solo están disponibles por un período limitado (actualmente 14 días).**
 6. En tu base de datos, se muestran las tablas importadas. Los nombres y estructuras de las tablas son equivalentes a los de los buckets de Data Locker.
 
 </Accordion>
