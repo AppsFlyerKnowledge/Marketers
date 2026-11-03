@@ -122,8 +122,8 @@ x-zendesk:
 
        ![](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)
 11. Если у вас есть <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2402582?hl=ru">объект, связанный с приложением Google Ads для iOS</Anchor> (ранее известный как расширение приложения):  
-    Чтобы получить атрибуции из рекламной ссылки, перейдите на вкладку <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#attribution-link-tab">**Ссылка атрибуции**</Anchor>**, создайте одноплатформенную ссылку атрибуции AppsFlyer и вставьте её в объект приложения Google Ads.  
-    **Примечание.** Обязательно добавьте статическое имя кампании.**
+    Чтобы получить атрибуции из рекламной ссылки, перейдите на вкладку <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#attribution-link-tab"><strong>Ссылка атрибуции</strong></Anchor>, создайте одноплатформенную ссылку атрибуции AppsFlyer и вставьте её в объект приложения Google Ads.  
+    <strong>Примечание.</strong> Обязательно добавьте статическое имя кампании.
 
     ![](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)
 12. Перейдите на вкладку **Стоимость**.

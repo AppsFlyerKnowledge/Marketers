@@ -114,7 +114,7 @@ Public class AFApplication extends Application {
 
 При первом запуске приложения пользователю отправляется запрос разрешения READ\_PHONE\_STATE в обратном вызове onResume() в MainActivity.
 
-build.gradle в модуле app****
+build.gradle в модуле app
 
 ```java
 allprojects {

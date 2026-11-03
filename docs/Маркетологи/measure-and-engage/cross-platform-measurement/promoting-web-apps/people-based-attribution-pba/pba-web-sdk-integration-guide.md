@@ -165,7 +165,7 @@ x-zendesk:
 1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">Перейдите в Google Tag Manager.</Anchor>
 2. Создайте новый тег для веб-SDK AppsFlyer.
 
-   ![https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
+   ![](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
 3. Выберите тип тега **Custom HTML**.
 4. Присвойте тегу понятное имя.
 5. Выполните одно из следующих действий:

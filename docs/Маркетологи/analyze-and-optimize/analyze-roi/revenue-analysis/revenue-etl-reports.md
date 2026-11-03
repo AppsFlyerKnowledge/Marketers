@@ -94,9 +94,7 @@ x-zendesk:
 
 Путь к отчёту состоит из следующей иерархии папок:
 
-В следующем формате: \`/t=attributed_ad_revenue/dt=
-
-/h=23/\`
+В следующем формате: `<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
 
 #### Иерархия папок с отчётами
 
@@ -212,9 +210,7 @@ bucket
 
 Путь к отчёту состоит из следующей иерархии папок:
 
-\`/t=attributed_ad_revenue_v2/dt=
-
-/version=&lt;9999999>/\`
+`<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
 
 #### Иерархия папок с отчётами
 
@@ -313,9 +309,7 @@ bucket
 
 Путь к отчёту состоит из следующей иерархии папок:
 
-\`/t=attributed_adrevenue_sdk_impression_level/dt=
-
-/h=\`
+`<bucket-name>/t=attributed_adrevenue_sdk_impression_level/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
 #### Иерархия папок с отчётами
 
@@ -394,9 +388,7 @@ bucket
 
 Путь к отчёту состоит из следующей иерархии папок:
 
-\`/t=stores_rawdata/dt=
-
-/h=\`
+`<bucket-name>/t=stores_rawdata/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
 #### Иерархия папок с отчётами
 
@@ -481,9 +473,7 @@ bucket
 
 Путь к отчёту состоит из следующей иерархии папок:
 
-\`/t=stores_devicedata/dt=
-
-/version=&lt;999999999>\`
+`<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
 
 #### Иерархия папок с отчётами
 
