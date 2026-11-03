@@ -90,7 +90,7 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 
 Постбэки по установкам автоматически отправляются только в TikTok Web.
 
-#### https://support.appsflyer.com/hc/article_attachments/360001712765
+#### https://files.readme.io/8d5c3b6d1dd7542860d58b2cff8581a8eb72880764b730a4c87b8161eb04edab-360001712765.png
 
 Настройте сопоставление постбэков по событиям в приложении, отправляемых в TikTok Web. Эти события можно просмотреть в TikTok Ads Manager
 

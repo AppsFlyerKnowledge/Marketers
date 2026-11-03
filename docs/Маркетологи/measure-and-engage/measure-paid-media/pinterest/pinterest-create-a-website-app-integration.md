@@ -60,13 +60,13 @@ x-zendesk:
 1. В AppsFlyer на странице Pinterest **активный** интеграции > вкладка **интеграция** прокрутите до раздела **In-app event settings**.
 2. Введите значения Ad Account ID и Access Token в соответствующие поля.
 
-### https://support.appsflyer.com/hc/article_attachments/360001712765
+### https://files.readme.io/8d5c3b6d1dd7542860d58b2cff8581a8eb72880764b730a4c87b8161eb04edab-360001712765.png
 
 В этом разделе вы сопоставляете веб-события AppsFlyer с событиями Pinterest через постбэки.
 
 1. В настройках интеграции Pinterest прокрутите страницу до раздела **Постбэки событий в приложении**.
 2. Включите **постбэки событий в приложении**.
-3. https://support.appsflyer.com/hc/article_attachments/360001712765
+3. https://files.readme.io/8d5c3b6d1dd7542860d58b2cff8581a8eb72880764b730a4c87b8161eb04edab-360001712765.png
 4. Выберите настройки постбэков и сопоставления для событий.
 
 | **Название параметра** | **Description(Описание)** |

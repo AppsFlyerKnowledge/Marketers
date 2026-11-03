@@ -206,9 +206,9 @@ AttributionListener myListener = new AttributionListener() {
 
 | Кейс использования | Окно повторного вовлечения | Метод SDK AppsFlyer | Метод mParticle-AF Kit |
 | --- | --- | --- | --- |
-| Отложенный диплинкинг | https://support.appsflyer.com/hc/article_attachments/360016192917 | onConversionDataSuccess | checkForDeferredDeepLinkWithCompletionHandler |
-| Universal Links (универсальные ссылки) | https://support.appsflyer.com/hc/article_attachments/360016192917 | continueUserActivity | continueUserActivity |
-| Открытие приложения | https://support.appsflyer.com/hc/article_attachments/360016192917 | onAppOpenAttribution | checkForDeferredDeepLinkWithCompletionHandler |
+| Отложенный диплинкинг | https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png | onConversionDataSuccess | checkForDeferredDeepLinkWithCompletionHandler |
+| Universal Links (универсальные ссылки) | https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png | continueUserActivity | continueUserActivity |
+| Открытие приложения | https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png | onAppOpenAttribution | checkForDeferredDeepLinkWithCompletionHandler |
 | Отложенный диплинкинг | Android; | onConversionDataSuccess | checkForDeepLink |
 | Ссылки Android-приложения | Android; |  | continueUserActivity |
 | Открытие приложения | Android; | onAppOpenAttribution | checkForDeepLink |

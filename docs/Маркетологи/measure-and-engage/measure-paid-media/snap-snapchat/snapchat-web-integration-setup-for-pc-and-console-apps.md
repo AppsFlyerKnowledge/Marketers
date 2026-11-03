@@ -84,7 +84,7 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 
 Постбэки по установкам автоматически отправляются только в Snapchat Ads web.
 
-https://support.appsflyer.com/hc/article_attachments/360001712765
+https://files.readme.io/8d5c3b6d1dd7542860d58b2cff8581a8eb72880764b730a4c87b8161eb04edab-360001712765.png
 
 Настройте сопоставление постбэков по событиям в приложении, отправляемых в Snapchat Ads web. Эти события можно просматривать в [Snapchat Ads Manager](https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US).
 

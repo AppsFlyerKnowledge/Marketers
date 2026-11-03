@@ -24,5 +24,5 @@ x-zendesk:
 ---
 > **Краткий обзор:** примечания к релизу SDK для iOS и Android.
 
-* <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-ios-sdk-release-notes">https://support.appsflyer.com/hc/article_attachments/360016192917</Anchor>
+* <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-ios-sdk-release-notes">https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png</Anchor>
 * <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-android-sdk-release-notes">Android;</Anchor>

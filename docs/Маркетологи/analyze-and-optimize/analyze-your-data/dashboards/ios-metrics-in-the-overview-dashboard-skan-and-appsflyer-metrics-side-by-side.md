@@ -164,7 +164,7 @@ x-zendesk:
 
 | Разница | AppsFlyer: | SKAN |
 | --- | --- | --- |
-| Платформа | Все | https://support.appsflyer.com/hc/article_attachments/360016192917 |
+| Платформа | Все | https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png |
 | Тип атрибуции | <ul><li>Установки</li><li>Повторные вовлечения</li><li>Реатрибуция</li></ul> | <ul><li>Установки</li><li>Повторные загрузки</li></ul> |
 | Доходы от рекламы | Доступно | <Anchor target="_blank" href="/marketers/ru/docs/skadnetwork-skan-solution-guide#recording-ad-revenue">Ограничено; зависит от партнера-посредника</Anchor>. |
 | Apple Search Ads | Доступно | Неприменимо к атрибуции SKAN |

@@ -88,7 +88,7 @@ Segment позволяет легко отправлять данные в AppsF
 
 * Обязательно следуйте инструкциям по реализации метода отслеживания в обертке Segment SDK:
   * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AppsFlyer-Segment-Integration#adding_events">Android;</Anchor>
-  * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/segment-appsflyer-ios/blob/master/examples/SwiftPodsSample/SwiftPodsSample/ViewController.swift">https://support.appsflyer.com/hc/article_attachments/360016192917</Anchor>
+  * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/segment-appsflyer-ios/blob/master/examples/SwiftPodsSample/SwiftPodsSample/ViewController.swift">https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png</Anchor>
 * Убедитесь, что <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/#getting-started">вы указали свой ключ разработчика</Anchor> при интеграции AppsFlyer на дэшборде Segment.
 
 </Accordion>

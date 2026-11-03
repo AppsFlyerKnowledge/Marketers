@@ -40,7 +40,7 @@ x-zendesk:
 
 **Пример баннера в Safari**
 
-<Image alt="AppleBanner_en-us.jpg" src="https://support.appsflyer.com/hc/article_attachments/49929540112017" width="278px" />
+<Image alt="AppleBanner_en-us.jpg" src="https://files.readme.io/5a907b019c7f3bdc58e76ba7214236e56880f36a8f5e990918d3c2af7eb39553-49929540112017.jpg" width="278px" />
 
 Перед внедрением баннеров приложений iOS учтите следующее:
 

@@ -97,7 +97,7 @@ applinks:<your-onelink-subdomain>.onelink.me
 
 Наконец, реализуйте соответствующие SDK Bloomreach, чтобы измерение кликов корректно работало в мобильных приложениях и в веб-среде.
 
-#### https://support.appsflyer.com/hc/article_attachments/360016192917
+#### https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
 
 Реализуйте <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">мобильный SDK</Anchor> Bloomreach для iOS и убедитесь, что измерение универсальных ссылок настроено правильно. SDK Bloomreach поддерживает измерение универсальных ссылок, чтобы фиксировать взаимодействия пользователей, инициированные через email-кампании.
 

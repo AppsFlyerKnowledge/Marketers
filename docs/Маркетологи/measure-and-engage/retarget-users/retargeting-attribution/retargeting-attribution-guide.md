@@ -220,7 +220,7 @@ clickid={clickid}&af_siteid={publisher}&idfa={device_id_raw}&sha1_idfa={device_i
 
 Для запуска ретаргетинговых кампаний приложение должно соответствовать следующим минимальным требованиям.
 
-* https://support.appsflyer.com/hc/article_attachments/360016192917
+* https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
   * Помимо стандартной интеграции SDK AppsFlyer, необходимо добавить дополнительный код в делегат приложения, см. статью <Anchor target="_blank" href="/marketers/ru/docs/basic-sdk-integration-guide#диплинкинг-с-помощью-onelink">Интеграция SDK</Anchor> (раздел ссылок атрибуции).
   * Для iOS 9 необходимо реализовать код глобального открытия приложений с универсальными ссылками. <Anchor target="_blank" href="/marketers/ru/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">Универсальные ссылки с iOS 9</Anchor>.
 * Android:

@@ -72,7 +72,7 @@ x-zendesk:
 </Tab>
 </Tabs>
 
-#### https://support.appsflyer.com/hc/article_attachments/360016192917
+#### https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
 
 Для iOS параметры доступны во всем приложении. Вы можете получить их с помощью экземпляра AppsFlyerTracker.
 
@@ -164,7 +164,7 @@ x-zendesk:
 </Tab>
 </Tabs>
 
-https://support.appsflyer.com/hc/article_attachments/360016192917
+https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
 
 <Tabs>
 <Tab title="Objective-C">
@@ -289,7 +289,7 @@ if(conversionData?.get("is_first_launch") == true){
 </Tab>
 </Tabs>
 
-#### https://support.appsflyer.com/hc/article_attachments/360016192917
+#### https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
 
 <Tabs>
 <Tab title="Objective-C">

@@ -56,7 +56,7 @@ x-zendesk:
 * [Руководство по интеграции AppsFlyer SDK для Android V.4.5.1](https://support.appsflyer.com/hc/article_attachments/49929333024145)
 * [Руководство по интеграции AppsFlyer SDK для Android V.4.6.0](https://support.appsflyer.com/hc/article_attachments/49929333024273)
 
-## https://support.appsflyer.com/hc/article_attachments/360016192917
+## https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
 
 ![ios_logo.png](https://files.readme.io/72c2f017636f5ed5b14aa63a83b03062dcd919baffdb2f786423bed1291b93af-360001319257.png)
 
