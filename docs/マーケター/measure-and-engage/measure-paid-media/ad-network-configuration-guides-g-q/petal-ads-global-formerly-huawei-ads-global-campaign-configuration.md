@@ -172,8 +172,8 @@ In this tab, you can select the permissions to grant Petal Ads Global. Note that
 
 | Metric | Data source | FAQ | Description |
 | --- | --- | --- | --- |
-| Impressions | Huawei | Huawei impressions < AF impressions | AppsFlyer records all the impressions that Huawei sends to AF, while Petal Ads Global would do some data processing before displaying the impressions on the Petal Ads Global dashboard. |
-| Clicks | Huawei | Huawei clicks < AF clicks | AppsFlyer records all the clicks that Huawei sends to AF, while Petal Ads Global would do some data processing before displaying the clicks on Petal Ads Global. |
+| Impressions | Huawei | Huawei impressions &lt; AF impressions | AppsFlyer records all the impressions that Huawei sends to AF, while Petal Ads Global would do some data processing before displaying the impressions on the Petal Ads Global dashboard. |
+| Clicks | Huawei | Huawei clicks &lt; AF clicks | AppsFlyer records all the clicks that Huawei sends to AF, while Petal Ads Global would do some data processing before displaying the clicks on Petal Ads Global. |
 | Downloads | Huawei | n/a | AF does not have this metric. |
 | Activations | Activations are from AppsFlyer; Activations HMS is from Huawei | Huawei Activations > AF installs | Huawei’s activations are AF's installs. The data discrepancy results from different data reporting logics. <br /><br />For example, a user downloaded the app from AppGallery on Dec 24th, and first-opened the app on Dec 25th. In this case, AF will record the install on Dec 25th, while Petal Ads Global will record this activation on Dec 24th. |
 | Day2 retention and other in-app events | For non-HMS ones, the data sources are AppsFlyer. | Huawei > AF | The data discrepancy results from different data reporting logics. <br /><br />Following the example above, the user registered in the app on Dec 26th, AF overview dashboard will display the registration data on Dec 25th, same as the install date. While Petal Ads Global promotion dashboard will display the registration on Dec 24th, the same as the download date. |

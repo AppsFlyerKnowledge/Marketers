@@ -1,5 +1,5 @@
 ---
-title: お知らせ：
+title: 'Bulletin: Deprecation of AppsFlyer SDKs V5.0x and below'
 metadata:
   keywords:
     - Developers
@@ -14,15 +14,16 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-10-25T10:00:14Z'
-  edited_at: '2026-10-14T09:33:54Z'
+  edited_at: '2022-10-25T11:10:49Z'
   id: 10113358959121
-  locale: ja
+  locale: en-us
   section: Bulletins
   section_id: 6551161473041
-  url: https://support.appsflyer.com/hc/ja/articles/10113358959121
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/10113358959121-Bulletin-Deprecation-of-AppsFlyer-SDKs-V5-0x-and-below
 ---
-> **概要：**
+> **At a glance:** As of Oct. 31, 2022, AppsFlyer SDK versions 5.0x or older, for Android and iOS, are deprecated.
 
-| **変更点** |  |
+| **What's changing** | As of Oct. 31, 2022, AppsFlyer SDK versions 5.0x or below, for Android and iOS, are deprecated. Apps that have these SDKs will continue to work, but no data will be collected in AppsFlyer for these apps. |
 | --- | --- |
-| **お知らせ事項** |  |
+| **What you must know** | <ul><li>If your apps contain SDK V5.0.x or older you MUST integrate the latest SDK versions to continue collecting measurement data, use deep linking, get fraud protection, and more.</li><li>Visit <Anchor target="_blank" href="/marketers/ja/docs/sdk-integration-overview">here</Anchor> to see what new information and features the updated AppsFlyer SDKs can supply you.</li></ul> |

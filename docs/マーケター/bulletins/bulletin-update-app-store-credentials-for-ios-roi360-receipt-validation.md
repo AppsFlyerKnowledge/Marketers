@@ -44,7 +44,7 @@ x-zendesk:
 4. **Notification Version** で、**Version 2 Notifications** を選択します。
 5. **Save**をクリックしてください。
 6. **App Store Server Notifications** セクションで、**Sandbox Server URL** の **Edit** をクリックします。
-7. ステップ3~5を繰り返します。
+7. ステップ3&#126;5を繰り返します。
 
 </Accordion>
 
