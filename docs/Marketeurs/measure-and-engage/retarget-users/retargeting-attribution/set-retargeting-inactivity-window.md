@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **En bref :** augmentez le saut incrémentiel en reciblant les utilisateurs inactifs, définissez les fenêtres d'inactivité par source média.
 >
-> ![](https://support.appsflyer.com/hc/article_attachments/9479865167761)
+> ![](https://files.readme.io/f55130956ae4fcb32fff4f0590fc942f3d3c024bc09de99968e1f29933ceb26b-9479865167761.png)
 
 ## Période d'inactivité
 
@@ -104,7 +104,7 @@ Cette fonctionnalité est configurée dans l'onglet Intégration des SRN qui pre
 4. Définissez la **fenêtre d'inactivité.** (1-30 jours)
 5. Cliquez sur **Enregistrer l'intégration**.
 
-[![Inactivity_window_SRN.png](https://support.appsflyer.com/hc/article_attachments/9479906225553)](https://support.appsflyer.com/hc/article_attachments/9479906225553)
+[![Inactivity_window_SRN.png](https://files.readme.io/9390ebcab781c6203dd8137183a20284f3d0943d33e609e00a3902a5ef14d848-9479906225553.png)](https://files.readme.io/9390ebcab781c6203dd8137183a20284f3d0943d33e609e00a3902a5ef14d848-9479906225553.png)
 
 </Accordion>
 
@@ -120,7 +120,7 @@ Cette fonctionnalité est configurée dans l'onglet Intégration des SRN qui pre
 4. Définissez la **fenêtre d'inactivité.** (1-30 jours)  
    Le paramètre **Période d'inactivité** `af_inactivity_window` est ajouté au lien d'attribution, exemple : « &af\_inactivity\_window=7d ». Si la fonctionnalité est désactivée, elle ne figure pas dans le lien d'attribution.
 
-[![Inactivity_window_non-SRN.png](https://support.appsflyer.com/hc/article_attachments/9479958030353)](https://support.appsflyer.com/hc/article_attachments/9479958030353)
+[![Inactivity_window_non-SRN.png](https://files.readme.io/36ca6b8903ac80b6bc7bab1dc84ab5d046d0d86a5d3a6fee3cd47da7e3c6d3fb-9479958030353.png)](https://files.readme.io/36ca6b8903ac80b6bc7bab1dc84ab5d046d0d86a5d3a6fee3cd47da7e3c6d3fb-9479958030353.png)
 
 </Accordion>
 

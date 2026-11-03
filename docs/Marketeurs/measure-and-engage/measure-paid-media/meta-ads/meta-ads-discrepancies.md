@@ -47,7 +47,7 @@ Par défaut, la fenêtre rétrospective post-clic des Meta ads est définie sur 
 
 Pour comparer les fenêtres d'attribution post clic et post vue sur Meta ads avec celles d'AppsFlyer, merci de consulter le site Meta ads. Nous vous recommandons de configurer les fenêtres d'attribution sur AppsFlyer d'après les valeurs de Meta ads, telles qu'indiquées dans la capture d'écran suivante :
 
-![Facebook_Discrepancies.png](https://support.appsflyer.com/hc/article_attachments/4411036047505)
+![Facebook_Discrepancies.png](https://files.readme.io/e8caa7986ffa66c5bfdbef7457de5630899043256ca484f0cfdfdda8ac481c7e-4411036047505.png)
 
 > 📄 **Exemple**
 >

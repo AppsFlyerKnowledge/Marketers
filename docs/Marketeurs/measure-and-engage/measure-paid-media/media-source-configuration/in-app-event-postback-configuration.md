@@ -295,7 +295,7 @@ La liste des événements disponibles pour le mappage ne comprend que les évén
 1. Saisissez le nom de l'événement.
 2. Cliquez sur **Créer personnalisé**
 
-   [![In-app_event_postbacks_en-us.png](https://support.appsflyer.com/hc/article_attachments/7901768117905)](https://support.appsflyer.com/hc/article_attachments/7901768117905)
+   [![In-app_event_postbacks_en-us.png](https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png)](https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png)
 3. Mappez l'événement à l'identifiant du partenaire.
 4. Cliquez sur **Enregistrer l'intégration** pour vous assurer que le mappage est sauvegardé.
 

@@ -251,7 +251,7 @@ Effectuez les opérations suivantes pour connecter Snowflake à Data Locker.
 2. Dans la barre des menus, sélectionnez votre nom.  
    Votre ID de compte et votre région s'affichent.  
 
-   [![SnowflakeAccountId.png](https://support.appsflyer.com/hc/article_attachments/4412207884433)](https://support.appsflyer.com/hc/article_attachments/4412207884433)
+   [![SnowflakeAccountId.png](https://files.readme.io/146dc699865a8a72780ba409d37ca1206767943e27221bec635b9fb49ffc7223-4412207884433.png)](https://files.readme.io/146dc699865a8a72780ba409d37ca1206767943e27221bec635b9fb49ffc7223-4412207884433.png)
 
 **Pour connecter Data Locker à Snowflake** :
 

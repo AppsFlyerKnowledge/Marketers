@@ -92,7 +92,7 @@ Vous pouvez personnaliser cette valeur en heures (de 1 à 23) ou en jours (de 1 
 
 Obtenez plus de détails concernant la <Anchor target="_blank" href="/marketers/fr/docs/set-up-lookback-windows">fenêtre rétrospective de clic ici</Anchor>.
 
-<Image alt="snap-click-window.png" src="https://support.appsflyer.com/hc/article_attachments/360011563618" width="552px" />
+<Image alt="snap-click-window.png" src="https://files.readme.io/07eb4b7d4a5ec37791cdef31e0fbb77e22f0b65cd189a426bf293d166827b44a-360011563618.png" width="552px" />
 
 #### Fenêtre rétrospective d'attribution post vue
 
@@ -102,7 +102,7 @@ Vous pouvez personnaliser cette valeur en heures (1 à 23) ou en jours (1 à 7).
 
 Obtenez plus de détails concernant <Anchor target="_blank" href="/marketers/fr/docs/set-up-lookback-windows">l'attribution post vue ici</Anchor>.
 
-<Image alt="snap-viewthrough-window.png" src="https://support.appsflyer.com/hc/article_attachments/360011482617" width="663px" />
+<Image alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" width="663px" />
 
 #### Attribution du ré-engagement
 
@@ -126,7 +126,7 @@ Définissez la durée de la fenêtre rétrospective de réengagement post vue (l
 
 Définissez la durée de la **Fenêtre de réengagement** (période au cours de laquelle les événements in-app de l'utilisateur sont attribués à la source média de retargeting). Vous pouvez définir la valeur en jours (1-90), en heures (jusqu'à 23) ou même en valeur vie :
 
-<Image alt="snap-reengagement-window.png" src="https://support.appsflyer.com/hc/article_attachments/360008512418" width="557px" />
+<Image alt="snap-reengagement-window.png" src="https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png" width="557px" />
 
 #### Paramètres de postback d'évènements in-app
 

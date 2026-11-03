@@ -78,7 +78,7 @@ Note that deactivation only impacts postbacks. Cost and Revenue, if configured, 
 1. In the warning message, click **Review and deactivate**.  
    The list of partners displays.   
 
-   ![partner-bulk-deactivation-en_us.png](https://support.appsflyer.com/hc/article_attachments/360015159897/partner-bulk-deactivation-en_us.png)
+   ![partner-bulk-deactivation-en_us.png](https://files.readme.io/bb414bc6a92149adc0904fee4c1b0b97aea5605ad0ef0eb8b0321f1db1ececca-360015159897.png)
 2. Select the partners to deactivate.
 3. Click **Deactivate**.
 

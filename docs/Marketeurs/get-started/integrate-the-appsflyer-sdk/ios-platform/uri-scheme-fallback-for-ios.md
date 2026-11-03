@@ -36,7 +36,7 @@ x-zendesk:
 
 ### Les scénarios
 
-![Copy_of_Ios_fall_back_-_scenarios_flowchart__2_.png](https://support.appsflyer.com/hc/article_attachments/4425164762257)
+![Copy_of_Ios_fall_back_-_scenarios_flowchart__2_.png](https://files.readme.io/4814c80b9622fd33adf32ea649c14e5d9516958cbedb4f1e5dc1a0dcff6682a3-4425164762257.png)
 
 ## Cas d’utilisation
 
@@ -56,7 +56,7 @@ Parfois, les liens universels ne parviennent pas à ouvrir l'application, soit p
 
 #### **Scénarios**
 
-![Copy_of_Ios_fall_back_-_browsers_that_can_use_URI_schemes_by_default__2_.png](https://support.appsflyer.com/hc/article_attachments/4425166478481)
+![Copy_of_Ios_fall_back_-_browsers_that_can_use_URI_schemes_by_default__2_.png](https://files.readme.io/fae8ea628ff8bbfb343bb8de51af01f596e850a2a24afdc08e15e0a1b981e631-4425166478481.png)
 
 </Accordion>
 

@@ -130,7 +130,7 @@ Les utilisateurs sont classés en cohorte selon le nombre de **jours** qui suit 
 * Pour la granularité hebdomadaire, le nombre maximal de semaines est de 156.
 * Pour la granularité mensuelle, le nombre maximum de mois est de 36.
 
-![DaysPost.jpg](https://support.appsflyer.com/hc/article_attachments/360005455377)
+![DaysPost.jpg](https://files.readme.io/dbeb30f800b198ea0ce2c7b69f2d3652f54384630dab9e8e77a7960a3d9471fb-360005455377.jpg)
 
 * **Sélectionnez une métrique, une fonction et cochez «par utilisateur»**— **Remarque :** toutes les combinaisons de métrique, fonction et «par utilisateur» ne sont pas possibles.
   * Métriques : Revenus, <Anchor target="_blank" href="/marketers/fr/docs/measure-sessions">Sessions</Anchor>, Désinstallations, ROI, Événement in-app, ROAS.
@@ -157,7 +157,7 @@ Les utilisateurs sont classés en cohorte selon le nombre de **jours** qui suit 
 
 Les utilisateurs sont regroupés en cohortes par **heure d'attribution.**
 
-![KPIdays.jpg](https://support.appsflyer.com/hc/article_attachments/360005458837)
+![KPIdays.jpg](https://files.readme.io/dfac4a4f84aad39d6526cdb416e8a2ec6c9e95dd6a2ca06e3c7fd10d31b76272-360005458837.jpg)
 
 * **Sélectionnez une métrique, une fonction, les jours de KPI et cochez «par utilisateur»**— **Remarque :** Toutes les combinaisons de métrique, fonction et «par utilisateur» ne sont pas possibles.
   * Métriques : Revenus, Sessions (non disponibles en affichage unifié), Désinstallations, ROI, événement in-app, ROAS.
@@ -276,11 +276,11 @@ Pour un certain jour dans la plage de données de conversion, si le nombre de jo
 
 **Tableau : revenu par utilisateur cumulé**
 
-[![CohortGraph.png](https://support.appsflyer.com/hc/article_attachments/360003206697)](https://support.appsflyer.com/hc/article_attachments/360003206697)
+[![CohortGraph.png](https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png)](https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png)
 
 **Tableau : revenu par jour**
 
-[![CohortTable.png](https://support.appsflyer.com/hc/article_attachments/360003206717)](https://support.appsflyer.com/hc/article_attachments/360003206717)
+[![CohortTable.png](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)
 
 #### Conversion d'évènement in-app
 

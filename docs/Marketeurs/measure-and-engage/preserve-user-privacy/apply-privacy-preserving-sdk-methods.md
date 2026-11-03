@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **En bref :** limiter ou interrompre le transfert des données à AppsFlyer pour vous conformer aux réglementations sur la protection de la vie privée telles que le RGPD ou CCPA.
 
-![OptInOptOut_us-en.png](https://support.appsflyer.com/hc/article_attachments/360010352638)
+![OptInOptOut_us-en.png](https://files.readme.io/bd2cd3e2fa3c443b9cc6a736e3c6b60834f165ad13510b829d40005740615496-360010352638.png)
 
 **Questions sur la confidentialité AppsFlyer**: le contrat de confidentialité établi entre vous et AppsFlyer est régi par la <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">politique de confidentialité des services AppsFlyer.</Anchor> Pour toute question relative à la présente Politique de confidentialité de nos services, ou pour contacter notre délégué à la protection des données, veuillez nous envoyer un e-mail à [privacy@appsflyer.com](mailto:privacy@appsflyer.com). Aux fins de l'article 27 du Règlement général sur la protection des données, le représentant d'AppsFlyer au sein de l'UE est AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Allemagne (e-mail [privacy@appsflyer.com](mailto:privacy@appsflyer.com); tel +49-30-166373500).
 
@@ -54,7 +54,7 @@ Dans les scénarios où le refus est activé, l'identifiant AppsFlyer est haché
 
 ### Refus à l'installation
 
-**![coppa_compliant_appsflyer.png](https://support.appsflyer.com/hc/article_attachments/360002519649)**
+**![coppa_compliant_appsflyer.png](https://files.readme.io/0f2588ad5a4e9d78df88958c6855f5e71498588e35c7a88c3b13c6ef676507f9-360002519649.png)**
 
 **Quand** : lors du premier lancement (Ex. <Anchor target="_blank" href="https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule">Conformité COPPA</Anchor>)
 
@@ -124,7 +124,7 @@ Empêcher le partage des données d'événements via :
 
 ### Refus ponctuel
 
-![OpenGDPR-logo-BLK.png](https://support.appsflyer.com/hc/article_attachments/360002512925)
+![OpenGDPR-logo-BLK.png](https://files.readme.io/87560c35c45bf34d8eb7ede3e6bbf90fb4391ab41c7f3186e33a93d8f4f68a6e-360002512925.png)
 
 **Quand** : n'importe quand (RGPD)
 
@@ -159,7 +159,7 @@ Au premier lancement, utilisez plutôt la méthode `start` avec ***requestListen
 **Données envoyées à AppsFlyer :**
 
 * **Au moment de l'installation :** les données d'attribution intégrales sont envoyées à AppsFlyer.
-* **Après l'installation** : les données des événements in-app et les données de session sont envoyées à AppsFlyer sans les données d'attribution. Dès réception, l'ID de l'utilisateur est anonymisé et l'identifiant AppsFlyer et l'adresse IP sont hachés. L'image suivante montre un exemple de données anonymisées et hachées. [![DataSample_anonymized.png](https://support.appsflyer.com/hc/article_attachments/360018851737)](https://support.appsflyer.com/hc/article_attachments/360018851737)
+* **Après l'installation** : les données des événements in-app et les données de session sont envoyées à AppsFlyer sans les données d'attribution. Dès réception, l'ID de l'utilisateur est anonymisé et l'identifiant AppsFlyer et l'adresse IP sont hachés. L'image suivante montre un exemple de données anonymisées et hachées. [![DataSample_anonymized.png](https://files.readme.io/71af1933aee76c2f7a77d24d941ef1976a15f35821448d50eb97db684ed9723c-360018851737.png)](https://files.readme.io/71af1933aee76c2f7a77d24d941ef1976a15f35821448d50eb97db684ed9723c-360018851737.png)
 
 > 📄 **Exemple**
 >

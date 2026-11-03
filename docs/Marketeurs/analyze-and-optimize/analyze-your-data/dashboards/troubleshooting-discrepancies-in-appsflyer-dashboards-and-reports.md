@@ -128,7 +128,7 @@ Même si vous sélectionnez un seul jour de données de rétention, vous pouvez 
 
 Le rapport de cohorte est similaire au rapport de rétention, mais comporte plus que les métriques de sessions. Ces métriques, tels que le revenu, les sessions et les évènements in-app, sont des données LTV.
 
-[![CohortForLTV_us-en.jpg](https://support.appsflyer.com/hc/article_attachments/360008407377/CohortForLTV_us-en.jpg)](https://support.appsflyer.com/hc/article_attachments/360008407377/CohortForLTV_us-en.jpg)
+[![CohortForLTV_us-en.jpg](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)
 
 </Accordion>
 
@@ -136,7 +136,7 @@ Le rapport de cohorte est similaire au rapport de rétention, mais comporte plus
 
 Les données d'évènement du Tableau de <Anchor target="_blank" href="/marketers/fr/docs/activity-dashboard">bord d'activité</Anchor> sont basées sur les sessions et les revenus et sont **la base de l'activité**. Elles sont relatives chronologiquement à tous les utilisateurs d'app actifs durant une période donnée.
 
-[![Activity_us-en.jpg](https://support.appsflyer.com/hc/article_attachments/360008510978/Activity_us-en.jpg)](https://support.appsflyer.com/hc/article_attachments/360008510978/Activity_us-en.jpg)
+[![Activity_us-en.jpg](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)
 
 </Accordion>
 

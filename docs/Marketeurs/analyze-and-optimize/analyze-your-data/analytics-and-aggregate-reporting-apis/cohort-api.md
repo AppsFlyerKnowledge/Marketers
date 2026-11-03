@@ -382,11 +382,11 @@ La version API contient les options supplémentaires suivantes :
 * Sélection du fuseau horaire
 * Filtrage par période
 
-[![CohortMapping.jpg](https://support.appsflyer.com/hc/article_attachments/360012218018)](https://support.appsflyer.com/hc/article_attachments/360012218018) [![Cohortmapping2.jpg](https://support.appsflyer.com/hc/article_attachments/360006378018)](https://support.appsflyer.com/hc/article_attachments/360006378018)
+[![CohortMapping.jpg](https://files.readme.io/28b5973a6c476407f342cbc55dbf03162fdd3047d4fd9b93b78a6de8dff11cdb-360012218018.jpg)](https://files.readme.io/28b5973a6c476407f342cbc55dbf03162fdd3047d4fd9b93b78a6de8dff11cdb-360012218018.jpg) [![Cohortmapping2.jpg](https://files.readme.io/59f2e9fd5120b7efbb81a937a42ee4a8145fd7ae74ddf855ec6ba13f061ba6c2-360006378018.jpg)](https://files.readme.io/59f2e9fd5120b7efbb81a937a42ee4a8145fd7ae74ddf855ec6ba13f061ba6c2-360006378018.jpg)
 
 Différence entre les types d'agrégation
 
-![CohortRevnueCumulative.jpg](https://support.appsflyer.com/hc/article_attachments/360006379038)
+![CohortRevnueCumulative.jpg](https://files.readme.io/1c9ca17e217a941e989556637d4397147bac9d1ab65e7485a10c0757a70dec41-360006379038.jpg)
 
 </Accordion>
 

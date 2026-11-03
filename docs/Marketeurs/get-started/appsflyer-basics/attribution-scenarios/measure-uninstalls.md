@@ -161,7 +161,7 @@ Pour mesurer les désinstallations sous Android, vous devez configurer la mesure
       * Étape de lancement du rôle  : sélectionnez **Disponibilité générale**.
    6. Recherchez puis sélectionnez `cloudmessaging.messages.create`.  
 
-      ![AddPermissions.png](https://support.appsflyer.com/hc/article_attachments/5542178507665)
+      ![AddPermissions.png](https://files.readme.io/efd461ecb74a61c15232e30a6e10eaaecac18f2e24a28565ba8b208ce0654d1a-5542178507665.png)
    7. Cliquez sur **Ajouter**.
    8. Cliquez sur **Créer** .
 3. **Pour attribuer à AppsFlyer le rôle de désinstallation FCM :**

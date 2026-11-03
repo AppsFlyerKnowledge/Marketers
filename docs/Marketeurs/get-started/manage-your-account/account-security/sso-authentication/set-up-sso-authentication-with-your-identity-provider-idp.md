@@ -197,7 +197,7 @@ Vous pouvez obtenir les données relatives au fichier de certificat soit à part
 1. Ouvrez l'URL <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-metadata">des métadonnées d'AppsFlyer</Anchor> et trouvez `use="encryption"`.
 2. Copiez les données de l’élement `X509Certificate`, de l’élément `use="encryption"` (voir les données de l'élément surlignées dans l'image ci-dessous).
 
-![appsflyer certificate-signing.jpg](https://support.appsflyer.com/hc/article_attachments/24887540886929)
+![appsflyer certificate-signing.jpg](https://files.readme.io/989a2a99c54add8a3879cd2f5b4f20121f97f53b103c1a3f53c37d5eafaaa144-24887540886929.jpg)
 
 <span id="h_01HVK231WJFS9YWNHJJR18RXBF"></span>**2. Création du fichier texte du certificat :**
 
@@ -346,7 +346,7 @@ Vous pouvez obtenir les données relatives au fichier de certificat soit à part
 1. Ouvrez l'URL <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-metadata">des métadonnées d'AppsFlyer</Anchor> et trouvez `use="encryption"`.
 2. Copiez les données de l’élement `X509Certificate`, de l’élément `use="encryption"` (voir les données de l'élément surlignées dans l'image ci-dessous).
 
-![appsflyer certificate-signing.jpg](https://support.appsflyer.com/hc/article_attachments/24887540886929)
+![appsflyer certificate-signing.jpg](https://files.readme.io/989a2a99c54add8a3879cd2f5b4f20121f97f53b103c1a3f53c37d5eafaaa144-24887540886929.jpg)
 
 **2. Création du fichier texte du certificat :**
 

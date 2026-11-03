@@ -587,7 +587,7 @@ Le principe de priorité est expliqué plus en détails dans cet [exemple](/docs
 * Téléchargez le tableau de mappage des CV au format .CSV. Cliquez sur **Télécharger le fichier de mappage.**
 * Pour obtenir le mappage des CV utilisez l'<Anchor target="_blank" href="/marketers/fr/docs/skan-cv-schema-api-for-advertisers">API de schéma CV SKAN pour les annonceurs</Anchor>.
 
-![CVmapping.png](https://support.appsflyer.com/hc/article_attachments/4407788932113)
+![CVmapping.png](https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png)
 
 #### Les colonnes du fichier de mappage CSV
 

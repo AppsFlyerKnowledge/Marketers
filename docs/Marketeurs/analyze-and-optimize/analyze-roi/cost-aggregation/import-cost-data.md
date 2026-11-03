@@ -104,7 +104,7 @@ Le format de fichier CSV, le schéma et les règles de validation des dépenses 
 
 Avant de poursuivre la lecture, prenez note des erreurs les plus courantes commises lors de la préparation du fichier CSV, comme illustré dans la capture d'écran suivante.
 
-![importfile_en-us.png](https://support.appsflyer.com/hc/article_attachments/360007902297)
+![importfile_en-us.png](https://files.readme.io/75f6be4a65a5b9ad3a4faf68d3a65ddda034a0b7ab726ed2fd698e638249d451-360007902297.png)
 
 Le format de fichier CSV, le schéma et les règles de validation des dépenses publicitaires sont décrits en détail dans les sections suivantes. Si vous utilisez Excel ou Google Sheets pour créer le fichier, vous devez consulter les instructions de [mise en forme d'Excel](/docs/import-cost-data#using-excel-to-format-date-and-spend-fields-of-csv-files).
 
@@ -166,7 +166,7 @@ Le jeton Ad Spend est utilisé pour vérifier que l'expéditeur de l'e-mail est 
    À propos de la page partenaire intégré**
 2. Sélectionnez le partenaire intégré.
 3. Allez dans l'onglet **Autorisations**.    
-    [<Image alt="PermissionAdNetwork.png" src="https://support.appsflyer.com/hc/article_attachments/360004994898" width="221px" />](https://support.appsflyer.com/hc/article_attachments/360004994898)
+    [<Image alt="PermissionAdNetwork.png" src="https://files.readme.io/c3551ced28104a5576eda62ea0684fa9088349a401f6336d91d1b350c231963a-360004994898.png" width="221px" />](https://files.readme.io/c3551ced28104a5576eda62ea0684fa9088349a401f6336d91d1b350c231963a-360004994898.png)
 4. Activez **les autorisations du réseau publicitaire** si ce n'est pas déjà fait.
 5. (facultatif) Ajoutez des utilisateurs au compte.
 6. Activez **Autoriser l'importation des dépenses.**
@@ -213,7 +213,7 @@ Le jeton Ad Spend est utilisé pour vérifier que l'expéditeur de l'e-mail est 
 4. Si un message d'erreur s'affiche pendant le téléchargement : rectifiez l'erreur et répétez les étapes correspondantes.
 5. La fenêtre **Importation des coûts : résumé du fichier** s'ouvre.
 
-   ![AdspendInestionFileSummary.png](https://support.appsflyer.com/hc/article_attachments/360005116138)
+   ![AdspendInestionFileSummary.png](https://files.readme.io/409f35838ebea83406208d196b42dbe387f933300e40977f0e598c641aa041f8-360005116138.png)
 6. Effectuez l'une des opérations suivantes :
    * Abandonnez le téléchargement, cliquez sur **Annuler l'importation**.
    * Terminez le processus d'importation, cliquez sur **Importer le fichier.**  
@@ -243,7 +243,7 @@ Sur la page Importation des coûts, vous pouvez effectuer les actions suivantes.
 
 **Pour consulter l'état de l'importation au niveau du fichier :**
 
-* Dans AppsFlyer, dans le menu latéral, sélectionnez **Paramètres** > Importation des **coûts.** La page Cost Import affiche la liste des fichiers chargés. [![](https://support.appsflyer.com/hc/article_attachments/360005029737)](https://support.appsflyer.com/hc/article_attachments/360005029737)
+* Dans AppsFlyer, dans le menu latéral, sélectionnez **Paramètres** > Importation des **coûts.** La page Cost Import affiche la liste des fichiers chargés. [![](https://files.readme.io/04de9ba6a135c94e852c266082050029a6378139b0da17c9bbb43087121b4b0c-360005029737.png)](https://files.readme.io/04de9ba6a135c94e852c266082050029a6378139b0da17c9bbb43087121b4b0c-360005029737.png)
 * Si vous êtes autorisé à accéder à toutes les applications contenues dans le fichier, utilisez la commande **Action** pour :  
   * Télécharger le fichier CSV Il s'agit d'une copie du fichier CSV qui a été chargé.
   * **Téléchargez un rapport inégalé** pour toutes les applications du fichier.
@@ -253,7 +253,7 @@ Sur la page Importation des coûts, vous pouvez effectuer les actions suivantes.
 * Sélectionnez le fichier.  
   La page au niveau de l'application s'affiche. La liste des applications figurant dans le fichier des dépenses publicitaires s'affiche.
 
-  ![Adspendimports2.png](https://support.appsflyer.com/hc/article_attachments/360005029797)
+  ![Adspendimports2.png](https://files.readme.io/586cfa3c9dd1b716686e5bf896208ef6a5bf8e674b5dd5a11e27152a88342f93-360005029797.png)
 * Effectuez des actions au niveau du fichier ou de l'application comme décrit ici.
 * **Au niveau du fichier :** Si vous êtes autorisé à accéder à toutes les applications contenues dans le fichier, vous pouvez utiliser les commandes situées en haut à droite de la page pour :
   * **Annulez** (annulez) l'importation des coûts pour toutes les applications du fichier.
@@ -307,7 +307,7 @@ Le rapport Unmatched contient une colonne, is matching, qui peut avoir une valeu
 
 **Page d'importation des coûts affichant le pourcentage de lignes correspondantes**
 
-![Adpsendmatching.png](https://support.appsflyer.com/hc/article_attachments/360004979278)
+![Adpsendmatching.png](https://files.readme.io/e29381833db2c632fb0b696b22c4a80d02448e4c02f79463bc518e3b44c0a0b5-360004979278.png)
 
 </Accordion>
 

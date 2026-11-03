@@ -213,7 +213,7 @@ Pour l'attribution d'événements in-app :
            [<Image alt="FacebookSkadNetworkSetup.jpg" src="https://files.readme.io/8720d8f951915091df74bbe1b1154a1c5af80a547f81bb70bf66ac74f5ff6e54-40032652609297.jpg" width="503px" />](https://files.readme.io/8720d8f951915091df74bbe1b1154a1c5af80a547f81bb70bf66ac74f5ff6e54-40032652609297.jpg)
         2. Allez dans l'onglet **Paramètres**.  
 
-           [![mceclip0.png](https://support.appsflyer.com/hc/article_attachments/360016584877)](https://support.appsflyer.com/hc/article_attachments/360016584877)
+           [![mceclip0.png](https://files.readme.io/0db272073a261c6e1b214110aa722dda53c73d5cf07a6590b2afd8f2b6f16126-360016584877.png)](https://files.readme.io/0db272073a261c6e1b214110aa722dda53c73d5cf07a6590b2afd8f2b6f16126-360016584877.png)
         3. Dans la section Configurer des événements d'app pour SKAN, cliquez sur Configurer les événements.
 
            [![mceclip1.png](https://files.readme.io/61d55b6fe05055fbc9b8db5a412c6da7d80807abec4b6b31a7b357fb76fcdf34-40032652611729.png)](https://files.readme.io/61d55b6fe05055fbc9b8db5a412c6da7d80807abec4b6b31a7b357fb76fcdf34-40032652611729.png)

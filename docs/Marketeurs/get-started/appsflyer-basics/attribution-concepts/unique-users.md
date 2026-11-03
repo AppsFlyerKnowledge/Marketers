@@ -72,7 +72,7 @@ L'installation et la réattribution ont le même ID d'appareil/ID AppsFlyer. Mai
 
 <Accordion title="Installation et réengagement">
 
-![](https://support.appsflyer.com/hc/article_attachments/27458250919441)
+![](https://files.readme.io/04adbd0d79f5999ca1c39f49f4e0469571c80f1be7918e9e2d8617a0ae8abccf-27458250919441.png)
 
 L'installation et le ré-engagement ont le même ID d'appareil/ID AppsFlyer. Mais dans ce cas précis (comme pour les réattributions), AppsFlyer prend aussi en compte le paramètre `is_retargeting=true`, l'événement qui se produit après le ré-engagement est donc comptabilisé comme un utilisateur unique supplémentaire. Au final, 2 utilisateurs uniques sont comptabilisés.
 
