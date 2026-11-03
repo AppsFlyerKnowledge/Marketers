@@ -1,5 +1,5 @@
 ---
-title: Google Marketing Platform - Intégration de Display &amp; Video 360 (DV360)
+title: Google Marketing Platform - Intégration de Display & Video 360 (DV360)
 metadata:
   keywords:
     - Advertisers
