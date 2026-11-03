@@ -1,0 +1,27 @@
+---
+title: Quảng cáo Facebook Ads
+excerpt: >-
+  Phân bổ lưu lượng truy cập Facebook Ads, Instagram và Facebook Marketing
+  Partner (FMP)
+table_of_contents: false
+x-zendesk:
+  category: Marketers
+  category_id: 6550444307985
+  created_at: '2022-06-02T11:27:42Z'
+  id: 6551109855761
+  locale: vi
+  parent_section_id: 6550990672401
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/vi/sections/6551109855761-Qu%E1%BA%A3ng-c%C3%A1o-Facebook-Ads
+---
+- [Thiết lập tích hợp quảng cáo Meta](/docs/meta-ads-integration-setup)
+- [Meta Ads—Create web campaigns for website apps](/docs/meta-ads-create-web-campaigns-for-website-apps)
+- [Meta Ads—Web integration setup for PC and console apps](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps)
+- [Meta Ads— Create web-based campaigns](/docs/meta-ads-create-web-based-campaigns)
+- [Ánh xạ sự kiện trong ứng dụng của quảng cáo Meta](/docs/meta-ads-in-app-event-mapping)
+- [Câu hỏi thường gặp về Meta ads](/docs/meta-ads-faq)
+- [Những khác biệt của quảng cáo Meta](/docs/meta-ads-discrepancies)
+- [Meta Ads—Aggregate Event Measurement (AEM) for iOS](/docs/meta-ads-aggregate-event-measurement-aem-for-ios)
+- [Attributing app installs to non-mobile ads from Meta ads](/docs/attributing-app-installs-to-non-mobile-ads-from-meta-ads)
+- [Instagram mobile app install ads configuration](/docs/instagram-mobile-app-install-ads-configuration)
