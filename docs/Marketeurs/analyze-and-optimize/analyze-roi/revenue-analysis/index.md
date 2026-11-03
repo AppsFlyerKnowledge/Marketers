@@ -1,0 +1,26 @@
+---
+title: Analyse des revenus
+excerpt: >-
+  Comptez les revenus générés par les achats in-app, les vues publicitaires et
+  les abonnements
+table_of_contents: false
+x-zendesk:
+  category: Marketers
+  category_id: 6550444307985
+  created_at: '2022-06-02T11:26:19Z'
+  id: 6551069075089
+  locale: fr
+  parent_section_id: 6551026275217
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/fr/sections/6551069075089-Analyse-des-revenus
+---
+- [Purchase and subscription validation](/docs/purchase-and-subscription-validation)
+- [ROI360 - revenue attribution overview](/docs/roi360-revenue-attribution-overview)
+- [Guide d'attribution des revenus publicitaires](/docs/roi360-guide-ad-revenue-attribution)
+- [Set up tax and store commission rates with the Net Revenue API](/docs/set-up-tax-and-store-commission-rates-with-the-net-revenue-api)
+- [Guide sur l’intégration du connecteur SDK ROI360 des revenus publicitaires génériques de niveau impression](/docs/integrate-the-roi360-ad-revenue-sdk-api)
+- [Rapports Data Locker Revenus ETL ROI360](/docs/revenue-etl-reports)
+- [Share ad revenue data with partners](/docs/share-ad-revenue-data-with-partners)
+- [Compare ROI360 ad revenue data with partner data](/docs/compare-roi360-ad-revenue-data-with-partner-data)
+- [Set up ROI360 ad revenue partner integrations via API](/docs/set-up-roi360-ad-revenue-partner-integrations-via-api)
