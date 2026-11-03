@@ -1,5 +1,5 @@
 ---
-title: Google 마케팅 플랫폼 - Display &amp; Video 360 (DV360) 연동
+title: Google 마케팅 플랫폼 - Display & Video 360 (DV360) 연동
 metadata:
   keywords:
     - Advertisers

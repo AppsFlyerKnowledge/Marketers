@@ -218,7 +218,7 @@ APK/매니페스트에 설정된 안드로이드 패키지 이름과 채널의 �
 <Accordion title="사용자를 페이스북에서 아마존 앱 스토어로 유도">
 
 1. 메타 앱 설정의 안드로이드 **섹션**에서 앱에 대한 URL 링크를 구성합니다 .
-2. 메타에 앱 관리자로 로그인하고 <Anchor target="_blank" href="https://developers.facebook.com/apps/">https://developers.facebook.com/apps/로 이동하여</Anchor> , 앱을 선택합니다.
+2. 메타에 앱 관리자로 로그인하고 <Anchor target="_blank" href="https://developers.facebook.com/apps/">[https://developers.facebook.com/apps/](https://developers.facebook.com/apps/)로 이동하여</Anchor> , 앱을 선택합니다.
 3. 설정으로 이동하여 안드로이드 설정을 찾거나, 아직 안드로이드를 구성하지 않았으면 플랫폼을 추가합니다.
 4. 앱 특정의 Amazon 앱 스토어 URL과 같은 필수 세부 항목을 입력합니다.  
 

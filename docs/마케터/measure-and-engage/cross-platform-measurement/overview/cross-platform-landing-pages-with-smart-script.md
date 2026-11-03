@@ -61,7 +61,7 @@ x-zendesk:
 
 1. 유입 링크 파라미터를 나가는 직접 어트리뷰션 링크에 포함해야 하는 파라미터(미디어 소스, 캠페인, 광고 이름 등)에 매핑합니다. 들어오는 URL을 처리하는 스크립트의 <Anchor target="_blank" href="/marketers/ko/docs/set-up-smart-script-to-convert-web-visitors#arguments">인수</Anchor>에 대해 더 알아보세요.
 2. 개발자에게 스마트 스크립트 인수를 초기화하고 스마트 스크립트 메서드를 실행하여  각 플랫폼/앱에 대한 링크를 생성하도록 요청하세요. 개발자 <Anchor target="_blank" href="https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/">데모</Anchor> 및 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/create-direct-click-url">지침</Anchor>을 확인하세요.  
-   **참고: 개발자는 다음 파라미터를 추가해야 합니다.  
+   참고: 개발자는 다음 파라미터를 추가해야 합니다.  
 
 | 파라미터/인수 | 비고 | 개발자 또는 사용자가 참고할 수 있도록 응답 내용을 기록하세요 |
 | --- | --- | --- |
@@ -69,7 +69,6 @@ x-zendesk:
 | 앱\_ID | <ul><li>앱 ID</li><li>예시: 123456</li></ul> |  |
 | 리다이렉트URL | <ul><li>플랫폼/앱 사용자가 리다이렉션되어야 할 URL입니다.</li><li>예시:</li></ul> |  |
 
-**
 
 </Accordion>
 

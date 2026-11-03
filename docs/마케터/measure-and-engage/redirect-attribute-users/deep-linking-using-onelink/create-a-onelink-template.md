@@ -62,7 +62,7 @@ x-zendesk:
    > * 이 템플릿 이름은 내부에서만 사용됩니다. 따라서 마케팅 어트리뷰션 데이터에 영향을 미치지 않으며 사용자에게 표시되지 않습니다.
 
 4. **하위 도메인** 입력란에 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-knowledge-base-glossary#하위-도메인">하위 도메인</Anchor> 이름을 입력합니다.
-   * 브랜드에 맞는 하위 도메인을 선택하세요. 예를 들어, 웹 사이트가 www.abcd.com이면 하위 도메인으로 abcd를 선택합니다.
+   * 브랜드에 맞는 하위 도메인을 선택하세요. 예를 들어, 웹 사이트가 [www.abcd.com](https://www.abcd.com)이면 하위 도메인으로 abcd를 선택합니다.
    * 사용자는 이 서브 도메인을 링크 URL의 일부로 보게 됩니다. 예시: `https://abcd.onelink.me/RPsv/37e5cd36`.
    * 이 템플릿을 바탕으로 사용자 지정 커스텀 링크가 생성된 후에는 서브 도메인을 변경할 수 없습니다.
    * 영문 소문자, 숫자, 하이픈(-)만 사용할 수 있습니다.

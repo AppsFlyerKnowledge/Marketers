@@ -70,8 +70,8 @@ x-zendesk:
      * 하위 계정은 **전환을** `first_open`**직접 가져와야 합니다**.
 
    Google Ads MCC 계정에 대한 자세한 내용은 다음을 참조하세요: <Anchor target="_blank" href="/marketers/ko/docs/recording-multiple-agency-mcc-google-ads-accounts#mcc">MCC</Anchor>.
-2. **제거된** `first_open`**전환&lt;3> 확인하기  
-   <Anchor target="_blank" href="https://ads.google.com/aw/conversions">전환 요약</Anchor> 페이지에서 `first_open` 전환 이벤트가 제거되었는지 확인하세요. 제거된 경우, 지원을 위해 Google 지원에 문의하세요.**
+2. <strong>제거된</strong> `first_open`전환&lt;3> 확인하기  
+   <Anchor target="_blank" href="https://ads.google.com/aw/conversions">전환 요약</Anchor> 페이지에서 `first_open` 전환 이벤트가 제거되었는지 확인하세요. 제거된 경우, 지원을 위해 Google 지원에 문의하세요.
 3. **링크 ID 확인**  
    앱스플라이어의 링크 ID가 구글 광고의 링크 ID와 일치하는지 확인하세요.
 
@@ -90,7 +90,7 @@ x-zendesk:
 1. **앱스플라이어에서 이벤트 포스트백 확인** (단계별 지침은 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended">앱스플라이어에서 구글 광고 설정하기.</Anchor>를 참조하세요.)
    1. 앱스플라이어의 **구글 광고 통합 탭**으로 이동하세요.
    2. 측정하려는 각 인앱 이벤트에 대해 포스트백이 올바르게 구성되었는지 확인하세요.
-   3. **사용자 출처**에서 *모든 미디어 소스(유기적 포함)*를 선택하여 구글 광고가 이벤트 데이터를 수신하도록 하세요.
+   3. <strong>사용자 출처</strong>에서 <em>모든 미디어 소스(유기적 포함)</em>를 선택하여 구글 광고가 이벤트 데이터를 수신하도록 하세요.
    4. (선택 사항) 초기 설정 후 필요에 따라 특정 이벤트에 대한 이 선택을 조정하세요.
 2. **테스트 인앱 이벤트 트리거**
    1. 앱을 실행하세요.

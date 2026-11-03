@@ -71,7 +71,7 @@ x-zendesk:
 4. **뷰 스루 귀속**으로 스크롤합니다.[![](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)
 5. **크로스 플랫폼 어트리뷰션**을 설정합니다. 이것은 노출 귀속 링크에 `af_xplatform=true` 매개변수를 추가하고 링크에 크로스 플랫폼 귀속 기능을 부여합니다. 이 파라미터가 없으면 URL은 동일한 노출에 여러 인스톨을 표시할 수 없는 일반 노출 URL로 작동합니다.
 6. **크로스플랫폼 뷰쓰루 어트리뷰션 기여 기간을 설정합니다.** 이렇게 하면 `af_xplatform_vt_lookback`af\_xplatform=trueaf\_xplatform\_vt\_lookback 파라미터가 노출 어트리뷰션 링크에 추가되고 노출에 따른 시간(최대 24시간)이 노출에 어트리뷰트할 수 있는 노출 시간을 나타냅니다.
-7. 필요에 따라 추가 귀속 매개변수를 추가합니다. 크로스 플랫폼 앱 캠페인을 식별하는 명명 규칙을 사용합니다. 추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요.추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요.추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요. 샘플 링크:](/docs/about-link-structure-and-parameters)
+7. 필요에 따라 추가 귀속 매개변수를 추가합니다. 크로스 플랫폼 앱 캠페인을 식별하는 명명 규칙을 사용합니다. 추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요.추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요.추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요. 샘플 링크:
 
    ```http
    https://impressions.onelink.me/{template_id}?pid=__media_source__&af_xplatform=true&af_xplatform_vt_lookback=24h&af_siteid=__CSITE__&c=__ctv_to_mobile__&af_channel=__PLACEMENT__&af_c_id=__CAMPAIGN_ID__&af_adset=__AID_NAME__&af_adset_id=__AID__&af_ad=__CID_NAME__&af_ad_id=__CID__&af_source_platform=__source_platform__&af_source_device_category=__device_category__&af_ad_type=__CTYPE__&redirect=false
@@ -80,7 +80,7 @@ x-zendesk:
 
 > 🚧 **중요!**
 >
-> 소유 미디어 및 비통합 파트너에 대해 필요에 따라 매개변수를 추가합니다.  추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요.추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요.추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요.](/docs/about-link-structure-and-parameters)
+> 소유 미디어 및 비통합 파트너에 대해 필요에 따라 매개변수를 추가합니다.  추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요.추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요.추가 데이터 및 메트릭에 추가할 수 있는 매개 변수에 대해 자세히 알아보세요.
 
 </Accordion>
 

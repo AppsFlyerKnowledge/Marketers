@@ -378,10 +378,10 @@ x-zendesk:
 
 **앱 이름: 귀사가 선택한 앱 이름입니다.**
 
-**앱 ID: 앱의 ID. 역 DNS 표기법을 사용하여 찾음: `<tld>`.`<company_name>`.`<app_name>`  
+앱 ID: 앱의 ID. 역 DNS 표기법을 사용하여 찾음: `<tld>`.`<company_name>`.`<app_name>`  
 최소 2개의 세그먼트를 포함해야 합니다. 각 세그먼트는 문자로 시작하고 다음 문자에서 이어져야 합니다: `A-Z` `a-z` `0-9.` `-`  
 
-예: com.company.myapp**
+예: com.company.myapp
 
 자세한 내용은 <Anchor target="_blank" href="https://developer.amazon.com/docs/vega/0.21/manifest-package.html#fields">Amazon Vega OS 문서</Anchor>의 "id" 필드를 참조하십시오.
 

@@ -1,5 +1,5 @@
 ---
-title: '업데이트 알림:'
+title: 'Bulletin: New conditions for Protect360 validation rules'
 metadata:
   keywords:
     - Marketers
@@ -13,15 +13,16 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2024-08-06T12:43:52Z'
-  edited_at: '2026-10-14T10:33:09Z'
+  edited_at: '2026-05-25T07:55:25Z'
   id: 27310438572177
-  locale: ko
+  locale: en-us
   section: Bulletins
   section_id: 6551161473041
-  url: https://support.appsflyer.com/hc/ko/articles/27310438572177
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27310438572177-Bulletin-New-conditions-for-Protect360-validation-rules
 ---
-| **새로운 소식** |  |
+| **What's new** | Two new conditions - **currency** and **revenue** have been added to the Protect360 validation rules. |
 | --- | --- |
-| **시행일** | 2024년 8월 6일 |
-| **중요 사항** |  |
-| 사용 사례 예시 |  |
+| **Effective date** | August, 2024 |
+| **What you need to know** | <ul><li>As part of enhancing the power of validation rules, both **currency** and **revenue** conditions have been added.</li><li>When selecting **revenue**, you must also select **currency** in the same rule.</li><li>These conditions can be found <Anchor target="_blank" href="/marketers/ko/docs/implement-validation-rules-to-prevent-fraud#install-conditions">under the in-app events</Anchor>.</li><li>These condition are available for Protect360 premium users only.</li></ul> |
+| **Example use case** | <ul><li>Some apps may have a minimum purchase amount, and users shouldn't be able to place orders below this specified amount. When such orders occur, these can be flagged as fraudulent.</li></ul> |

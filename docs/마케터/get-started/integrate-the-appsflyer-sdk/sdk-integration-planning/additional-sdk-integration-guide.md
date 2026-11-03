@@ -160,9 +160,9 @@ TV, 앱 제거 또는 사전 설치된 앱을 측정하려는 경우 이러한 �
 
 예를 들어:
 
-* 사용자는 Google을 검색하여 사용자의 도메인 **www.example.com**을 클릭합니다.
+* 사용자는 Google을 검색하여 사용자의 도메인 <strong>www.example.com</strong>을 클릭합니다.
 * 이 때, 엔드유저의 기기에 앱이 설치되지 않았으면 웹사이트(www.example.com)으로 리디렉션 됩니다.
-* 기기에 앱이 설치되어 있으면, www.example.com과 연관된 앱으로 딥링킹됩니다. 세션은 SDK에 설정된 미디어 소스(`pid`pidpid 파라미터)로 어트리뷰트됩니다.
+* 기기에 앱이 설치되어 있으면, [www.example.com](https://www.example.com)과 연관된 앱으로 딥링킹됩니다. 세션은 SDK에 설정된 미디어 소스(`pid`pidpid 파라미터)로 어트리뷰트됩니다.
 
 개발사 설명서는 다음과 같이 제공됩니다.
 

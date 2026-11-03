@@ -55,7 +55,7 @@ x-zendesk:
 
 *인게이지먼트 유형이 보고되지 않으면 기본 우선 순위가 설정됩니다. (클릭수는 2, 노출수는 3)
 
-**`engaged_click` 및 `engaged_view`의 룩백 윈도우는 비 SRN 네트워크에서만 설정할 수 있습니다. SRN의 경우, `engaged_click` 및 `engaged_view`는 클릭수와 동일한 룩백 윈도우를 공유하므로, **인스톨 클릭-쓰루 어트리뷰션 룩백** 슬라이더에 의해 설정됩니다.
+<strong>`engaged_click` 및 `engaged_view`의 룩백 윈도우는 비 SRN 네트워크에서만 설정할 수 있습니다. SRN의 경우, `engaged_click` 및 `engaged_view`는 클릭수와 동일한 룩백 윈도우를 공유하므로, </strong>인스톨 클릭-쓰루 어트리뷰션 룩백 슬라이더에 의해 설정됩니다.
 
 ## 어떤 네트워크가 적극적 조회수와 적극적 클릭수를 리포트할 수 있나요?
 

@@ -240,7 +240,7 @@ SDK는 캠페인 세부 정보를 얻기 위해 클릭 도메인 뒤에 있는 �
    <a href="greatapp.onelink.me/abcd/1234567">Download my great app!</a>
    ```
 
-   이 단계에서 Responsys는 위의 링크를 이전 단계에서 설정한 클릭 도메인으로 래핑합니다. 시나리오 : 세 개의 클릭 도메인이 귀하의 원링크 https://mysubdomain.onelink.me/abCD로 리디렉션됩니다. 앱이 사용자의 기기에 설치되어 있는 경우 클릭 도메인은 앱에 딥 링크됩니다.
+   이 단계에서 Responsys는 위의 링크를 이전 단계에서 설정한 클릭 도메인으로 래핑합니다. 시나리오 : 세 개의 클릭 도메인이 귀하의 원링크 [https://mysubdomain.onelink.me/abCD](https://mysubdomain.onelink.me/abCD)로 리디렉션됩니다. 앱이 사용자의 기기에 설치되어 있는 경우 클릭 도메인은 앱에 딥 링크됩니다.
 
 > 📄 **예시**
 >

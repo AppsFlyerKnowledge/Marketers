@@ -359,7 +359,7 @@ AppsFlyerLib.getInstance().setUserEmail("name@domain.com");
 
 ## S2S 참조 및 코드 샘플
 
-<Anchor target="_blank" href="/marketers/ko/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S</Anchor>를 통해 오디언스용 식별자를 전송할 때, 해시된 ***이메일 주소*를 포함한 **모든 식별자에 `custom_data` 파라미터를 사용하세요. **하나 이상의 식별자를 발송할 수 있습니다.**
+<Anchor target="_blank" href="/marketers/ko/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S</Anchor>를 통해 오디언스용 식별자를 전송할 때, 해시된 <strong><em>이메일 주소</em>를 포함한 </strong>모든 식별자에 `custom_data` 파라미터를 사용하세요. <strong>하나 이상의 식별자를 발송할 수 있습니다.</strong>
 
 <Accordion title="S2S를 통한 식별자 발송">
 

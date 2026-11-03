@@ -1,5 +1,5 @@
 ---
-title: AppsFlyer 모바일 앱
+title: About the AppsFlyer mobile app
 metadata:
   keywords:
     - Appsflyer
@@ -15,41 +15,88 @@ x-zendesk:
     - Marketers
     - Platform essentials
   created_at: '2017-06-18T11:47:28Z'
-  edited_at: '2026-10-14T10:36:45Z'
+  edited_at: '2026-05-15T19:33:16Z'
   id: 115003020863
-  locale: ko
+  locale: en-us
   section: The AppsFlyer platform
   section_id: 6551361489297
-  url: https://support.appsflyer.com/hc/ko/articles/115003020863
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115003020863-About-the-AppsFlyer-mobile-app
 ---
-> **한눈에 보기:**
+> **At a glance:** Use the AppsFlyer mobile app to review your mobile attribution and marketing analytics right from your phone.
 
-| [<Image alt="Google_Play_Store.png" src="https://files.readme.io/d3e90dff6b5b007164d1ee1449cf3b9b39f52b6b710034137b4ab7640ce2dc57-360001467125.png" width="299px" />](https://go.onelink.me/RJn0/support) | [<Image alt="ios_App_Store.png" src="https://files.readme.io/516cd93b8a642bdf290e774936457c774e61f2493d3508a050c18c62378d2e7b-360001467145.png" width="299px" />](https://go.onelink.me/RJn0/support) |
+| [<Image alt="Google_Play_Store.png" src="https://files.readme.io/d3e90dff6b5b007164d1ee1449cf3b9b39f52b6b710034137b4ab7640ce2dc57-360001467125.png" width="299px" />](https://play.google.com/store/apps/details?id=com.appsflyer.analytics) | [<Image alt="ios_App_Store.png" src="https://files.readme.io/516cd93b8a642bdf290e774936457c774e61f2493d3508a050c18c62378d2e7b-360001467145.png" width="299px" />](https://go.onelink.me/RJn0/support) |
 | --- | --- |
 
-## AppsFlyer 모바일 앱
+## The AppsFlyer Mobile App
 
-### 로그인
+### Log in
 
-### 나의 앱
+To log in to the app enter your credentials or sign in with Google.
 
+[![](https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png)](https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png)
 
-<span id="app-overview-ltv"></span>여기에는 다음이 포함됩니다.
+### My apps
 
-* 인스톨
-* 클릭
-* 노출
-* 비용
-* 수익
-* 세션
-* 로열 유저
-* 앱 삭제
+After login, the My Apps screen is displayed.
 
-### 필터
+This screen lists all the applications in your account. You can easily filter out apps from different platforms (iOS, Android, Windows) and even filter out pending apps.
 
-### 4. 날짜 선택
+[![](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)
 
+### App overview (LTV)
+
+Tapping on an app name takes you into the app's overview screen.
+
+This screen displays a wide range of performance metrics and KPIs. These include:
+
+* Installs
+* Clicks
+* Impressions
+* Cost
+* Revenue
+* Sessions
+* Loyal Users
+* Uninstalls
+
+By default, the top 5 media sources are shown for each metric.
+
+Each row displays the item, total for the media source, and the share of this metric from the total.
+
+Clicking left or right on the date range moves the changes the dates by the time-span selected. You can also tap to select a specific bar and see its breakdown for a specific day.
+
+Tap outside the bar to reset your selection.
+
+[![](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)
+
+### Filters
+
+The filter button in the top right corner of the screen allows you to change and filter your report.
+
+The filters' menu allows you to filter by Media Source and Geo. In addition, you can change the grouping of your data based on Media Source, Geo, and Organic/Non-Organic. Finally, for even more control, you can choose to filter out organic installs or view a grouping of all other data points not included in the top 5 filters you have selected.
+
+[![](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)
+
+### Date selector
+
+Tapping on the date range opens the date selector view. The date selector view allows you to easily switch between quick selection dates or select custom date ranges (select your required date range on the calendar).
+
+[![](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)
+
+### Account overview
+
+From the top-left Menu select **Account Overview**. This provides an aggregated account-level view of your marketing performance. The same KPIs and filtering capabilities that are available in the App Overview screen are also available here.
+
+Tapping an app name from the list enables you to drill down into the App Overview for that app while maintaining the currently configured dates and filter selection.
 
 ![Account_Overview.png](https://files.readme.io/2d425fcb0f53c794a8eeaddd1aebfa8172e51d634d5f90bed74016663adef664-115010568289.png)
 
-<div data-zendesk-anchors="the-appsflyer-mobile-app=appsflyer-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1 h_01HX9M4JG2VQVV5RC6X7FGNWWE=appsflyer-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1 log-in=%EB%A1%9C%EA%B7%B8%EC%9D%B8 h_01HX9M4JG21CWAKPQTXQXR3K9X=%EB%A1%9C%EA%B7%B8%EC%9D%B8 my-apps=%EB%82%98%EC%9D%98-%EC%95%B1 h_01HX9M4JG245C02PATKGQCBH9F=%EB%82%98%EC%9D%98-%EC%95%B1 h_01HX9M4JG2ZJBG3NZVMFCP8C17=app-overview-ltv filters=%ED%95%84%ED%84%B0 h_01HX9M4JG2Z6T6RCG20YXQSPM7=%ED%95%84%ED%84%B0 date-selector=4-%EB%82%A0%EC%A7%9C-%EC%84%A0%ED%83%9D h_01HX9M4JG21MQ8EEM3N0B0ASM9=4-%EB%82%A0%EC%A7%9C-%EC%84%A0%ED%83%9D account-overview=4-%EB%82%A0%EC%A7%9C-%EC%84%A0%ED%83%9D known-limitations=4-%EB%82%A0%EC%A7%9C-%EC%84%A0%ED%83%9D h_01HX9M4JG2CK8KRCBMMJG15J52=4-%EB%82%A0%EC%A7%9C-%EC%84%A0%ED%83%9D h_01HX9M4JG2K1J2D1YYQC55Z8MA=4-%EB%82%A0%EC%A7%9C-%EC%84%A0%ED%83%9D" />
+### Known limitations
+
+* The app currently does not support access to the partner dashboards and agency dashboards.
+* The app currently doesn't support 2FA (two-factor authentication). If your account has 2FA enabled, you cannot sign in using the app.
+* The AppsFlyer App only allows you to view app data if you are the owner of the app. Otherwise, you are presented with the following:  
+    
+  [<Image alt="" src="https://files.readme.io/ead6e6d3ff75fa9e9f1ee7d7880de5edbccd81f664d1a76d97eb5a55cd3900c2-115016922303.png" width="337px" />](https://files.readme.io/ead6e6d3ff75fa9e9f1ee7d7880de5edbccd81f664d1a76d97eb5a55cd3900c2-115016922303.png)
+
+<div data-zendesk-anchors="h_01HX9M4JG2VQVV5RC6X7FGNWWE=the-appsflyer-mobile-app h_01HX9M4JG21CWAKPQTXQXR3K9X=log-in h_01HX9M4JG245C02PATKGQCBH9F=my-apps h_01HX9M4JG2ZJBG3NZVMFCP8C17=app-overview-ltv h_01HX9M4JG2Z6T6RCG20YXQSPM7=filters h_01HX9M4JG21MQ8EEM3N0B0ASM9=date-selector h_01HX9M4JG2CK8KRCBMMJG15J52=account-overview h_01HX9M4JG2K1J2D1YYQC55Z8MA=known-limitations" />

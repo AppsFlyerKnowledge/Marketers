@@ -66,7 +66,7 @@ x-zendesk:
 
 | 이름 | 형식 | 수준 |
 | --- | --- | --- |
-| <span id="game-score"></span>게임 점수 | **숫자**: '*ScoreGameB는 29보다 큽니다'*와 같은 규칙을 설정할 수 있습니다. | **앱 수준**: 사용자의 점수는 각 게임마다 기록됩니다.<br /><br />의미: ScoreGameA, ScoreGameB. |
+| <span id="game-score"></span>게임 점수 | <strong>숫자</strong>: '<em>ScoreGameB는 29보다 큽니다'</em>와 같은 규칙을 설정할 수 있습니다. | <strong>앱 수준</strong>: 사용자의 점수는 각 게임마다 기록됩니다.<br /><br />의미: ScoreGameA, ScoreGameB. |
 | <span id="favorite-sport"></span>좋아하는 스포츠 | **문자열:** '*가장 좋아하는 스포츠가 테니스인 사용자를 대상으로'* 규칙을 설정할 수 있습니다.<br /><br />주의! 값은 대소문자를 구분합니다. | **계정 수준**: 앱에 상관없이 유저가 가장 좋아하는 스포츠는 같습니다.<br /><br />주의! 유저는 계정 수준 속성과 연결된 값을 하나만 가질 수 있습니다. |
 
 **규칙 세트의 유저 속성**

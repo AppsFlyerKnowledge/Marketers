@@ -1,5 +1,5 @@
 ---
-title: iOS SDK V6로 업데이트하기 &amp; 플러그인
+title: iOS SDK V6로 업데이트하기 & 플러그인
 metadata:
   keywords:
     - iOS

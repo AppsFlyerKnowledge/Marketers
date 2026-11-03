@@ -241,15 +241,15 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 >
 > 게임 앱을 운영하는 마케터는 수준 10이나 수준 50을 달성한 사용자, 또는 앱 구매에 3달러를 지출한 사용자만을 대상으로 애드 네트워크를 통해 운영되는 캠페인을 최적화하려고 합니다.
 >
-> {"[altin_app_event_condition__1_.pngalt](https:"}//support.appsflyer.com/hc/article_attachments/30448097840657)
+> [altin_app_event_condition__1_.pngalt](https://support.appsflyer.com/hc/article_attachments/30448097840657)
 >
 > **이 이벤트에 대한 조건은 다음과 같이 설정됩니다.**
 >
-> * ***수준*** 이 ***10***과 같으면 *`fb_mobile_level_acheived`*에 매핑합니다.
+> * <strong><em>수준</em></strong> 이 <strong><em>10</em></strong>과 같으면 <em>`fb_mobile_level_acheived`</em>에 매핑합니다.
 >   그렇지 않으면 (**또는**),
-> * ***수준*** 이 ***50***과 같으면 *`fb_mobile_level_acheived`*에 매핑합니다.
+> * <strong><em>수준</em></strong> 이 <strong><em>50</em></strong>과 같으면 <em>`fb_mobile_level_acheived`</em>에 매핑합니다.
 >   그렇지 않으면 (**또는**),
-> * ***비용*** 이 ***3***과 같으면 *`fb_mobile_purchase`*에 매핑합니다.
+> * <strong><em>비용</em></strong> 이 <strong><em>3</em></strong>과 같으면 <em>`fb_mobile_purchase`</em>에 매핑합니다.
 
 **이벤트에 대한 조건을 설정하려면:**
 

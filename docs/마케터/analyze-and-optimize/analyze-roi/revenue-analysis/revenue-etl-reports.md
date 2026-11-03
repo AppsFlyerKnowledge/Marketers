@@ -94,9 +94,7 @@ ROI360 수익 ETL을 사용하면 수익 데이터가 데이터 락커를 통해
 
 리포트 경로는 다음과 같은 폴더 계층으로 구성됩니다.
 
-다음 형식으로: \`/t=attributed_ad_revenue/dt=
-
-/h=23/\`
+다음 형식으로: `<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
 
 #### 리포트 폴더 계층 구조
 
@@ -212,9 +210,7 @@ bucket
 
 보고서 경로는 다음과 같은 폴더 계층으로 구성됩니다.
 
-\`/t=attributed_ad_revenue_v2/dt=
-
-/version=&lt;9999999>/\`
+`<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
 
 #### 보고서 폴더 계층 구조
 
@@ -296,9 +292,7 @@ bucket
 
 보고서 경로는 다음과 같은 폴더 계층으로 구성됩니다.
 
-\`/t=attributed_adrevenue_sdk_impression_level/dt=
-
-/h=\`
+`<bucket-name>/t=attributed_adrevenue_sdk_impression_level/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
 #### 보고서 폴더 계층 구조
 
@@ -377,9 +371,7 @@ bucket
 
 보고서 경로는 다음과 같은 폴더 계층으로 구성됩니다.
 
-\`/t=stores_rawdata/dt=
-
-/h=\`
+`<bucket-name>/t=stores_rawdata/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
 #### 보고서 폴더 계층 구조
 
@@ -464,9 +456,7 @@ bucket
 
 보고서 경로는 다음과 같은 폴더 계층으로 구성됩니다.
 
-\`/t=stores_devicedata/dt=
-
-/version=&lt;999999999>\`
+`<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
 
 #### 보고서 폴더 계층 구조
 

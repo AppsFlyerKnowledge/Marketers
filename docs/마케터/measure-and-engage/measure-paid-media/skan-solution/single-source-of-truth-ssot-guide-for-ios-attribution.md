@@ -77,9 +77,9 @@ SSOT 보기의 데이터는 컨버전 스튜디오에서 Single Source of Truth�
 2. 앱스플라이어에서 **대시보드** > **개요**로 이동합니다.   
    <Image alt="저장된 보고서 선택.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. ▼를 클릭하세요.
-4. **Lite 개요를 선택하세요.  
+4. Lite 개요를 선택하세요.  
    Single Source of Truth 스위치가 표시됩니다.  
-   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />**
+   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. Single Source of Truth를 켜세요.
 6. 다음 중 하나가 나타납니다.
    * 대시보드 지표와 차트가 표시됩니다.  

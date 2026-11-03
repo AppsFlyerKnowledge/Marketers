@@ -371,8 +371,8 @@ CPI 대시보드의 인앱 이벤트 데이터는 LTV 기반입니다. 즉 지�
 
 **인앱 활동 대시보드에서 지불가능 이벤트를 활성화하는 방법**:
 
-* **인앱 활동 대시보드의 필터 항목 섹션에서 지불 가능 이벤트를 활성화합니다.  
-  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)**
+* 인앱 활동 대시보드의 필터 항목 섹션에서 지불 가능 이벤트를 활성화합니다.  
+  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)
 
 **지불가능 이벤트 구성 방법**:
 

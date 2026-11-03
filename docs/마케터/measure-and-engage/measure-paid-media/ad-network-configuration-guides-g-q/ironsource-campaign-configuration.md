@@ -157,7 +157,7 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 * 노출 수준(SDK를 통해)
 * 노출 수준(SDK를 통해)과 디바이스 수준(S2S API를 통해)
 
-광고 수익 어트리뷰션에 대해 자세히 알아보십시오.광고 수익 어트리뷰션에 대해 자세히 알아보십시오.](/docs/roi360-guide-ad-revenue-attribution)
+광고 수익 어트리뷰션에 대해 자세히 알아보십시오.광고 수익 어트리뷰션에 대해 자세히 알아보십시오.
 
 * <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">이 연동 지침</Anchor>을 따르세요.
 

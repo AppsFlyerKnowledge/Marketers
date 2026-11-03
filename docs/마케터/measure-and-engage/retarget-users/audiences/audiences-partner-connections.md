@@ -203,8 +203,8 @@ x-zendesk:
 **오디언스를 AAM에 연결하려면**:
 
 1. [Adobe Marketing Cloud 대시보드에 로그인하기](https://bank.demdex.com/portal/login/Logout.ddx)
-2. Manage Data**** > Data Sources 로 갑니다.
-3. Data Sources**** 페이지에서, 새로운 Data Source 를 생성합니다.
+2. Manage Data > Data Sources 로 갑니다.
+3. Data Sources 페이지에서, 새로운 Data Source 를 생성합니다.
 
    [![](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)
 4. 다음과 같이 형식을 완성합니다.
@@ -214,7 +214,7 @@ x-zendesk:
 5. **저장**을 클릭하세요.  
    **Data Sources** 선택이 표시됩니다.
 6. 나중에 사용할 수 있도록 Data Source ID를 기록합니다.
-7. 좌측 메뉴에서, Administration**** > Groups 로 이동합니다.
+7. 좌측 메뉴에서, Administration > Groups 로 이동합니다.
 8. **권한** 탭으로 이동합니다.
 
    [![](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)
@@ -224,7 +224,7 @@ x-zendesk:
 12. **Admin** > **Users**로 갑니다.
 13. 앱스플라이어 오디언스에서 사용할 new user를 생성하고 필요에 따라 필수 필드를 완성합니다.
 14. **Assigned Groups** 에서, 생성한 그룹을 선택합니다.
-15. User created 필드에 이메일**** 과 비밀 번호 를 기록합니다.
+15. User created 필드에 이메일 과 비밀 번호 를 기록합니다.
 16. **저장**을 클릭하세요.
 17. 앱스플라이어에서 **오디언스**로 이동합니다.
 18. 특정 오디언스 **> 연결** 탭을 선택합니다.
@@ -234,7 +234,7 @@ x-zendesk:
     Adobe Marketing Cloud 연결 창이 표시됩니다.
 22. 이전에 기록해둔 인증 정보를 사용하여 필드를 완성합니다.
 23. **저장**을 클릭하세요.  
-    24시간 후, 오디언스 데이터를 AAM의 Analytics**** > Onboarding Status 아래에서 사용 가능합니다.
+    24시간 후, 오디언스 데이터를 AAM의 Analytics > Onboarding Status 아래에서 사용 가능합니다.
 
 </Accordion>
 
@@ -261,7 +261,7 @@ S3 연동을 생성하면, 앱스플라이어는 오디언스 디바이스 ID를
    ![image__9_.png](https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png)
 6. C **로스 계정 역할 ARN**, **버킷 이름** 및 **지역 이름**을 입력합니다.  
    **참고:** 항상 리전 이름을 입력하는 것이 좋습니다. AWS에서 지역 이름이 기본적으로 자동으로 활성화되지 않으면 여기에 입력해야 하거나 연결을 만들 수 없습니다. AWS 콘솔 홈 페이지에서 지역을 찾으려면 페이지 우측 상단의 국가를 클릭하면 지역이 표시됩니다. <Image alt="region_name.jpg" src="https://files.readme.io/a3b65660a638674cbbe0da2802b4f926929d167d0b528c25c12ded6a90b0e981-31237648137489.jpg" width="355px" />
-7. 나중에 사용할 수 있도록 Account ID**** 와 External ID 를 기록합니다.
+7. 나중에 사용할 수 있도록 Account ID 와 External ID 를 기록합니다.
 8. **AWS** 콘솔에서, **IAM** > **Policies** 로 갑니다.
 9. **정책 만들기**를 클릭합니다.
 10. **JSON**을 클릭합니다.
@@ -565,9 +565,9 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 
    [![moengage_dashboard.png](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)
 3. 웹 브라우저의 주소 표시줄에서 MoEngage 대시보드의 URL을 확인하여 **MoEngage 데이터 센터 번호를 확인하십시오.**
-   * MoEngage 대시보드의 URL이 https://dashboard-01.moengage.com이면 당신의 계정은 데이터 센터 1에 보관됩니다.
-   * URL이 https://dashboard-02.moengage.com이면 당신의 계정은 데이터 센터 2에 보관됩니다.
-   * URL이 https://dashboard-03.moengage.com이면 당신의 계정은 데이터 센터 3에 보관됩니다.
+   * MoEngage 대시보드의 URL이 [https://dashboard-01.moengage.com](https://dashboard-01.moengage.com)이면 당신의 계정은 데이터 센터 1에 보관됩니다.
+   * URL이 [https://dashboard-02.moengage.com](https://dashboard-02.moengage.com)이면 당신의 계정은 데이터 센터 2에 보관됩니다.
+   * URL이 [https://dashboard-03.moengage.com](https://dashboard-03.moengage.com)이면 당신의 계정은 데이터 센터 3에 보관됩니다.
 4. **앱스플라이어 오디언스에서** 연결 **탭으로 이동하여 + 새 연결을 클릭합니다.**
 5. **Braze를 파트너로 선택하고 연결의 이름을 지정합니다.**
 

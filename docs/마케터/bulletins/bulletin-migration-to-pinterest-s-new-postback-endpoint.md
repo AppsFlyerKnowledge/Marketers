@@ -71,7 +71,7 @@ x-zendesk:
         현재 AppsFlyer Pinterest 전환 보고 광고 계정 ID는 Pinterest **비즈니스 관리자** 또는 Pinterest **전환** 보고에서 찾을 수 있습니다.
 
         1. Pinterest 비즈니스 계정에 로그인하세요 (허브 옵션을 보려면 비즈니스 프로필에 있어야 합니다).
-        2. 브라우저에 https://www.pinterest.com/business/hub/를 입력하거나 붙여넣고 Enter 키를 누르세요.
+        2. 브라우저에 [https://www.pinterest.com/business/hub/](https://www.pinterest.com/business/hub/)를 입력하거나 붙여넣고 Enter 키를 누르세요.
         3. 허브의 왼쪽에 있는 어두운 회색 탐색 열을 확인하세요. 열이 축소되어 있으면, 왼쪽 상단 모서리에 있는 작은 “≡” (햄버거) 아이콘을 클릭하여 확장하세요.
         4. 조금 스크롤하여 “비즈니스 관리”라는 제목의 섹션을 찾으세요.
         5. Conversions를 클릭하세요(“비즈니스 관리” 바로 아래에 있습니다). 이것은 Conversions 대시보드를 열어, Pinterest로 전송된 AppsFlyer 전환을 검토할 수 있습니다.
