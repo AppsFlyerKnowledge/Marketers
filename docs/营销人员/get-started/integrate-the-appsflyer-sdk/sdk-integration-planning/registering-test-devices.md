@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **概要：** 进行归因测试时，您需要先为您的测试设备加白，才能让AF后台将每次激活都记录为新增激活。测试设备加白后，重复激活应用不会被AF判定为重装激活。
 
+<div id="why-register-a-test-device" />
+
 ## 测试设备加白的目的
 
 开展归因测试时，再归因窗口期会限制激活归因的次数，每90天内仅记录一次激活。因此，如果您使用同一设备反复测试激活归因，就记录不到任何内容。这种情况下，您就需要将您的测试设备加白。加白后的测试设备反复完成激活时，这些激活不会被判定为重装激活。
+
+<div id="methods-for-registering-a-test-device" />
 
 ## 测试设备加白方式
 
@@ -38,6 +42,8 @@ x-zendesk:
 您可以使用以下任一方式对设备加白：
 
 * [下载并安装名为“My Device ID by AppsFlyer”的应用:](#register-a-device-using-the-appsflyer-device-id-app-admin-only)您在测试设备上安装该应用后，设备就会自动加白，并向您的AppsFlyer账户发送设备ID信息。该设备会被自动列入**测试设备**页面。
+
+  <div id="note" />
 
   > 📘 **注意**
   >
@@ -58,6 +64,8 @@ x-zendesk:
 
 * **安卓：** AID（GAID或OAID）、IMEI、Android ID
 
+  <div id="note-1" />
+
   > 📘 **注意**
   >
   > 为测试设备加白时，建议仅在相关应用收集并使用IMEI或Android ID的情况下添加这些设备标识符。
@@ -66,6 +74,8 @@ x-zendesk:
 * **Windows Phone：** Windows advertising ID
 
 </Accordion>
+
+<div id="managing-test-device-registration" />
 
 ## 管理测试设备加白
 
@@ -181,6 +191,8 @@ x-zendesk:
 
 5. 点击**Save**保存。 该设备会出现在已加白设备的列表中。 **请注意**：虽然该设备会立即出现在已加白设备的列表中，但可能需要等待几分钟才能正式录入系统并正常使用。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 在某些情况下（比如要在同一个设备上同时收集IDFA和IDFV），您可能需要为一个测试设备添加多个标识符。
@@ -207,6 +219,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="registering-an-ios-test-device" />
+
 ## 为iOS测试设备加白
 
 以下流程图展示了iOS测试设备加白时会出现的几种路径。
@@ -219,9 +233,13 @@ x-zendesk:
 
 <Accordion title="使用IDFA为测试设备加白">
 
+<div id="when-to-use-idfa-for-test-device-registration" />
+
 #### **何种情况下需要使用IDFA为测试设备加白？**
 
 如果您的应用中使用了AppTransparency Tracking（即ATT弹窗），而且您想要测试授权用户的归因，可以使用IDFA为测试设备加白。在测试过程中首次打开相关应用时，请确保在ATT弹窗中点击**允许**。
+
+<div id="how-to-register-your-test-device-with-an-idfa" />
 
 #### **如何使用IDFA为测试设备加白？**
 
@@ -233,6 +251,8 @@ x-zendesk:
 
 <Accordion title="使用IDFV为测试设备加白">
 
+<div id="when-to-use-idfv-for-test-device-registration" />
+
 #### **何种情况下需要使用IDFV为测试设备加白？**
 
 当IDFA无法访问时，IDFV是唯一的可选方案。在以下场景中，您**必须使用IDFV**：
@@ -240,11 +260,15 @@ x-zendesk:
 * 相关应用中**使用了ATT弹窗**，但您想要测试不授权用户的归因。在测试过程中首次打开相关应用时，请确保在ATT弹窗中点击**要求App不跟踪**。
 * 相关应用中**没有添加ATT弹窗**。
 
+<div id="how-to-register-your-device-with-idfv" />
+
 #### **使用IDFV为测试设备加白的方法**
 
 1. 使用IDFV为测试设备加白之前，必须先让您的开发人员在测试设备上安装IDFV测试工具应用。您可以让开发人员参考<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-the-idfv-test-tool-app">此文档</Anchor>，查看相关说明。
 2. IDFV测试工具应用安装完毕后，请将其打开，并复制界面中显示的IDFV。
 3. 使用该IDFV[手动为测试设备加白](#register-a-device-manually)。
+
+<div id="note-3" />
 
 > 📘 **注意**
 >

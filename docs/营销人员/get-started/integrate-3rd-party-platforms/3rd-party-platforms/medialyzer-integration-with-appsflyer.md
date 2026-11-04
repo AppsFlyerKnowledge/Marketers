@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 部分渠道限制第三方的数据共享。
+
+<div id="setting-up-medialyzer" />
 
 ## Medialyzer渠道设置
 
@@ -47,13 +51,19 @@ x-zendesk:
 
 <Accordion title="渠道对接选项卡">
 
+<div id="activate-partner" />
+
 #### 启用渠道
 
 请在首次访问该页面时打开**启用该渠道**开关，然后就可以设置对接了。在您与Medialyzer合作期间，请确保该开关总是处于打开状态。详情请见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">渠道启用说明</Anchor>。
 
+<div id="advanced-privacy" />
+
 #### 高级隐私保护
 
 iOS应用的面板中会显示<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">高级隐私</Anchor>开关，此开关打开时可限制渠道共享用户标识符。请注意：如果您在应用配置中打开了<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">汇总层级的高级隐私</Anchor>开关，AppsFlyer会默认开启并锁定**高级隐私（适用于iOS 14.5及以上版本）**。
+
+<div id="default-postbacks" />
 
 #### 默认回传
 
@@ -63,6 +73,8 @@ iOS应用的面板中会显示<Anchor target="_blank" href="/marketers/zh/docs/a
 * **所有媒体渠道，包括自然流量**：
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### 应用内事件回传
 

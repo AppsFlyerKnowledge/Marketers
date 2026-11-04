@@ -22,17 +22,25 @@ x-zendesk:
 ---
 > **概要：** Apple在2023年的全球开发者大会（WWDC23）上发布了最新的隐私清单（Privacy Manifest）政策。Privacy Manifest推出后，应用开发者可以更清晰地阐明其应用的隐私保护措施。AppsFlyer已针对AppsFlyer SDK创建了隐私清单，详情请见下文说明。
 
+<div id="background" />
+
 ## 背景
 
 隐私清单（Privacy Manifest）上线后，应用开发者可以记录其通过相关应用独立收集或通过第三方（如该应用中安装的第三方SDK）收集的数据类别。有了这些信息，应用开发者就能通过面向用户的隐私标签（Nutrition Labels）等方式，更准确地传达其应用中的隐私保护措施。
 
 很多情况下，应用开发者并不了解第三方SDK所收集的数据或具体某个SDK使用数据的目的。第三方SDK能通过隐私清单（Privacy Manifest）便捷地向相关应用开发者传达此信息，帮助开发者创建准确的隐私标签（Nutrition Labels）。
 
+<div id="what-are-nutrition-labels" />
+
 ### 什么是隐私标签（Nutrition Labels）？
 
 隐私标签（Nutrition Labels）以简洁明了、便于理解的呈现方式展示具体应用所采取的隐私保护措施。这样，终端用户就能更清晰地了解相关应用所收集的数据及其用途。如需进一步了解隐私标签，请参考<Anchor target="_blank" href="/marketers/zh/docs/preparing-for-the-app-store-review-nutrition-labels">此文档</Anchor>。
 
+<div id="what-is-in-the-appsflyer-privacy-manifest" />
+
 ## AppsFlyer隐私清单的内容
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -44,6 +52,8 @@ AppsFlyer SDK 6.14.0中带有AppsFlyer隐私清单，其中包含以下信息；
 * [Required Reason API（必须声明使用原因的API）](#必须声明使用原因的apirequired-reason-apis)
 * [跟踪域名](#跟踪域名tracking-domains)
 
+<div id="data-usage" />
+
 ### 数据使用情况
 
 Apple要求应用开发者和SDK开发者记录其收集的数据类别，以及相关应用或第三方SDK收集此类数据的原因。
@@ -51,6 +61,8 @@ Apple要求应用开发者和SDK开发者记录其收集的数据类别，以及
 应用开发者可以使用Xcode创建一个隐私报告，在其中总结有关其数据收集的信息。
 
 下表列出了AppsFlyer SDK收集的数据类型，这些信息也包含在我们的隐私清单中。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -60,6 +72,8 @@ Apple要求应用开发者和SDK开发者记录其收集的数据类别，以及
 | --- | --- | --- | --- | --- |
 | 设备ID（Device ID，即IDFA和IDFV） | NSPrivacyCollectedDataTypeDeviceID | 是 | 是 | NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising |
 | 产品交互（Product Interaction，即应用打开） | NSPrivacyCollectedDataTypeProductInteraction | 否 | 否 | NSPrivacyCollectedDataTypePurposeAnalytics |
+
+<div id="required-reason-apis" />
 
 ### 必须声明使用原因的API（Required Reason APIs）
 
@@ -125,9 +139,13 @@ Apple要求开发方对于指定的一系列API声明其使用原因。使用这
 
 </Accordion>
 
+<div id="tracking-domains" />
+
 ### 跟踪域名（Tracking Domains）
 
 相关应用或第三方SDK中使用的任何跟踪域名（Tracking Domain）都必须在记录在隐私清单中。如果用户未通过应用跟踪透明度框架（即ATT弹窗 ）授权，同意数据跟踪（即opt-out），则iOS操作系统会拦截从用户设备传输到该域名的所有流量。AppsFlyer SDK在执行任何服务器请求之前都会先确认用户的ATT授权状态，然后再根据用户的授权状态执行该请求。
+
+<div id="faq" />
 
 ## 常见问题解答
 

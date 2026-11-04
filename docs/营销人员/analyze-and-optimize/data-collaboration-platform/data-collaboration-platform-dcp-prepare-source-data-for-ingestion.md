@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概览：** 准备您的数据源，以最大程度地提高协作方数据集之间的匹配率，并优化协作成果。
 
+<div id="about-data-preparation" />
+
 ## 关于数据准备
 
 AppsFlyer <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-guide">数据协作平台 (DCP)</Anchor> 旨在摄取和处理来自多个协作方的大规模交易数据、用户级数据或两者的组合。摄取后，DCP 可以使用共享标识符（例如，哈希电子邮件或哈希电话）跨数据集匹配用户，并基于该数据启用协作工作流。
@@ -32,6 +34,8 @@ AppsFlyer <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-pl
 * 推荐使用哪些数据结构，不推荐使用哪些数据结构
 * 使用 CSV 文件时如何处理多值标识符
 
+<div id="understand-data-types" />
+
 ## 了解数据类型
 
 协作中使用的大多数数据源涉及以下一种或两种数据类型：
@@ -42,6 +46,8 @@ AppsFlyer <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-pl
 * **交易（事件）数据**
   * 目标代表用户操作（购买、访问、交易）
   * **典型结构：** 每个用户多行（因为一个用户可以有多次交易）
+
+<div id="data-structuring-guidelines" />
 
 ## 数据结构指南
 
@@ -60,6 +66,8 @@ AppsFlyer <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-pl
 4. 对于交易数据集（以及其他适用的数据类型），请**使用 DCP 数据视图工具**创建一个面向业务、保护隐私的数据子集，以优化协作，并共享该子集而非原始表。[为什么推荐使用数据视图](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-c-why-dataviews-matter-and-recommended)。
 
 虽然可以使用其他结构，但它们可能并不适合充分利用 DCP。请参阅[不推荐的数据结构](#data-structures-that-arent-recommended)。
+
+<div id="recommended-identifier-structures" />
 
 #### 推荐的标识符结构
 
@@ -128,6 +136,8 @@ AppsFlyer <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-pl
 
 <Accordion title="数据结构化实用清单">
 
+<div id="identity-user-level-dataset-checklist" />
+
 #### 身份（用户级）数据集清单
 
 * 一行代表一个用户。
@@ -135,10 +145,14 @@ AppsFlyer <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-pl
 * 如果存在多个值（例如，多个电子邮件），请尽可能使用原生数组。
 * 避免在单元格中使用列表，避免“email\_1/email\_2/email\_3”，并避免多行身份结构。
 
+<div id="transactional-events-dataset-checklist" />
+
 #### 事务（事件）数据集清单
 
 * 保持事件/事务行原样。请参阅 [事务数据示例](#appendix-a-transactional-data-examples)
 * 在适当的情况下，使用 [数据视图](#appendix-c-why-dataviews-matter-and-recommended) 创建可供协作的用户级摘要。
+
+<div id="data-views-checklist" />
 
 #### 数据视图清单
 
@@ -159,6 +173,8 @@ DCP 支持通过多种云服务进行摄取，例如：
 * Google Cloud Storage
 * BigQuery
 * Snowflake
+
+<div id="format-guidance" />
 
 #### 格式指南
 
@@ -181,6 +197,8 @@ DCP 支持通过多种云服务进行摄取，例如：
 
 某些类型的数据结构非常适合摄取到 DCP 中，而另一些则不然。以下是不建议使用的数据结构列表 ：
 
+<div id="avoid-multiple-columns-for-the-same-identifier-type" />
+
 #### 避免：针对同一标识符类型使用多个列
 
 不建议使用“主要/次要/第三电子邮件”之类的示例。
@@ -197,6 +215,8 @@ DCP 支持通过多种云服务进行摄取，例如：
 * 每个用户的数值数量不可预测
 * 导致列激增和架构维护问题
 
+<div id="avoid-lists-inside-a-single-cell-free-text" />
+
 #### 避免：“单个单元格内的列表”（自由文本）
 
 即使看起来很方便，也容易出错。
@@ -212,6 +232,8 @@ DCP 支持通过多种云服务进行摄取，例如：
 * 并非真正的数组类型
 * 格式/转义问题很常见
 * 细微的不一致可能会导致摄取中断
+
+<div id="avoid-multiple-rows-per-user-for-identifiers-when-your-goal-is-a-user-identity-table" />
 
 #### 避免：标识符的每个用户多行（当您的目标是用户身份表时）
 
@@ -235,6 +257,8 @@ DCP 支持通过多种云服务进行摄取，例如：
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 补充信息
 
@@ -263,6 +287,8 @@ DCP 支持通过多种云服务进行摄取，例如：
 
 <Accordion title="连接器特定的示例资产（AWS S3、GCS、BigQuery、Snowflake）">
 
+<div id="what-does-arraylist-of-identifiers-mean" />
+
 ### “标识符数组/列表”是什么意思？
 
 有时，单个用户可能拥有多个电子邮件或电话（例如，个人电子邮件和工作电子邮件）。我们不将其强行放入额外的列或杂乱的文本字段中，而是将其表示为值列表。
@@ -271,6 +297,8 @@ DCP 支持通过多种云服务进行摄取，例如：
 | --- | --- |
 | u\_0001 | [a1b2 · c3d4 · e5f6] |
 | u\_0002 | [z9y8 · x7w6] |
+
+<div id="1-aws-s3-and-gcs-connector-parquet" />
 
 ### 1.AWS S3 和 GCS 连接器 (Parquet)
 
@@ -285,6 +313,8 @@ DCP 支持通过多种云服务进行摄取，例如：
 
 Parquet 原生支持列表，这就是为什么当用户拥有多个电子邮件/电话时推荐使用它的原因。
 
+<div id="2-bigquery-connector-table-preview-and-schema-screenshot" />
+
 ### 2. BigQuery 连接器（表预览和架构截图）
 
 **身份架构示例 (BigQuery)**
@@ -297,6 +327,8 @@ Parquet 原生支持列表，这就是为什么当用户拥有多个电子邮件
 | maid | 字符串 | NULLABLE（可为空） |
 
 数组在 BigQuery 中是原生的（REPEATED 字段）。当存在多个电子邮件/电话时，这是推荐的方法。
+
+<div id="3-snowflake-connector-table-preview-and-schema-screenshot" />
 
 ### 3.Snowflake 连接器（表预览和架构截图）
 
@@ -319,10 +351,14 @@ Snowflake 支持类似列表的字段（数组）。相比创建 email\_1/email\
 
 <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-customized-data-views">数据视图</Anchor>是您现有数据源的自定义子集，您无需更改原始数据集即可创建它们。它们让您能够执行修改、优化和汇总数据的函数，以便您在协作中仅共享相关内容，从而保持共享数据的清晰和专注，并确保所有其他数据私密且安全。在协作中使用数据视图，因为它们：
 
+<div id="are-business-oriented-and-easier-to-collaborate-with" />
+
 #### 以业务为导向，更易于协作
 
 * 数据视图让您能够以清晰、业务友好的结构（例如，“客户身份视图”、“合格受众视图”、“购买汇总视图”）呈现数据，而不是原始日志或复杂的事务模式。
 * 它们有助于标准化定义（例如，“活跃客户”、“过去 30 天总支出”），以便双方保持一致并使用相同的逻辑。
+
+<div id="are-more-privacy-safe-by-design" />
 
 #### 在设计上更注重隐私安全
 
@@ -332,6 +368,8 @@ Snowflake 支持类似列表的字段（数组）。相比创建 email\_1/email\
   * 限制粒度（例如，共享汇总指标而非行级交易）
   * 仅共享匹配所需的标识符（而非其他敏感列）
 
+<div id="protect-sensitive-business-data" />
+
 #### 保护敏感的业务数据
 
 * 原始交易表可能包含高度敏感的业务信号（例如，详细的购买行为、定价模式、商户关系、内部 ID）。
@@ -339,6 +377,8 @@ Snowflake 支持类似列表的字段（数组）。相比创建 email\_1/email\
   * 示例：共享类别级汇总而非项目级详细信息
   * 示例：共享支出区间或汇总指标而非精确的行项目
 * 这降低了无意中泄露竞争性或专有信息的风险。
+
+<div id="can-make-your-data-more-cost-effective-and-performant" />
 
 #### 可以使您的数据更具成本效益且性能更高
 

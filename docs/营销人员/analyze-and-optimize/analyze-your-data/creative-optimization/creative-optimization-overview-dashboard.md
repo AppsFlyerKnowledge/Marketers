@@ -26,6 +26,8 @@ x-zendesk:
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
+<div id="about-the-creative-optimization-overview-dashboard" />
+
 ## 素材优化总览面板简介
 
 您可以将所有媒体渠道上投放的各种素材汇总到<Anchor target="_blank" href="/marketers/zh/docs/creative-optimization-guide">**素材**</Anchor>优化面板中，基于广告系列、流量入口等维度衡量素材效果，以便获取有助于提高规划、选材、产出的关键信息。
@@ -43,11 +45,15 @@ x-zendesk:
 * 追踪素材在不同时间段的表现。
 * 以及更多可助您提升广告效果的洞察。
 
+<div id="get-started" />
+
 ## 启用方式
 
 如果您还未配置素材优化，可以参考<Anchor target="_blank" href="/marketers/zh/docs/creative-optimization-guide#get-started">此文档</Anchor>中的说明进行设置。设置完成后，素材优化面板<Anchor target="_blank" href="/marketers/zh/docs/creative-optimization-guide#dashboard-updates">每天更新一次</Anchor>。
 
 **注意事项：** 成本类数据指标在面板中的呈现方式因您是否订阅了AppsFlyer的ROI360功能而有所不同。<Anchor target="_blank" href="/marketers/zh/docs/creative-optimization-guide#creative-optimization-roi360">详情请见此处说明。</Anchor>
+
+<div id="charts" />
 
 ## 图表
 
@@ -71,6 +77,8 @@ x-zendesk:
 ## 数据表
 
 您可以通过表格深入查看详细数据。支持按多种维度分组，或自定义表格设置，添加所需的维度与指标。您还可以对数据进行排序、查看与对比，从而获取关键洞察。
+
+<div id="zd-table" />
 
 <div id="table" />
 
@@ -116,7 +124,7 @@ x-zendesk:
   * CPM  
     **请注意：** 渠道指标旁会显示“渠道”（Partners）字样。
 
-* #### **应用内事件**
+* #### <span id="in-app-events"></span>**应用内事件**
 
   您可以使用该数据了解具体素材对应用内事件的影响。针对各事件的计算指标包括：
 

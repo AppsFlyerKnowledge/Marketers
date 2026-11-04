@@ -26,15 +26,21 @@ x-zendesk:
 
 [![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
 
+<div id="cohort-and-retention-dashboard" />
+
 ## 群组与留存面板
 
 相关文档： <Anchor target="_blank" href="/marketers/zh/docs/aggregated-and-analytics-reporting-overview#cohort-flavors">群组功能各种形式之间的差异</Anchor>
 
 您只需要选择一个或个多应用的用户，并将其按转化时间分组，可用的群组指标包括收入、ROI和事件转化率等。您可以将相关用户群组按广告系列或媒体渠道等维度进行拆分，以便对比分析。这有助于您发现用户或广告系列的生命周期内出现的某些规律或变化。详情请见<Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">群组功能的使用场景</Anchor>。
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 如需进一步了解群组报告，我们在<Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports">AppsFlyer充电站里为您准备了相关课程</Anchor>，视频虽短，但干货满满！
+
+<div id="using-cohort" />
 
 ## 群组面板使用指南
 
@@ -111,6 +117,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="cohort-concepts" />
+
 ## 群组概念
 
 <div id="cohort-periods" />
@@ -155,16 +163,22 @@ x-zendesk:
 * **用户全生命周期表现**
 * **以归因时间查看KPI**
 
+<div id="user-lifetime-performance" />
+
 #### **用户全生命周期表现**
 
 * 表格中的每一列以及图表中的每一个点分别代表一个单独的群组周期（小时/天/周/月）。转化发生的当前周期为群组第0期，如第0个小时（Hour 0）、第0天（Day 0）、第0周（Week 0）或第0个月（Month 0）；转换后的第一个周期即为群组第1期，如第1个小时（Hour 1）、第1天（Day 1）、第1周（Week 1）或第1个月（Month 1），以此类推。这样，您就能从转化发生的当前周期开始，对用户转化后的效果指标进行对比分析。
 * 您可以通过选择群组周期来指定面板数据的范围，可用的周期数取决于您选定的群组周期颗粒度（小时/天/周/月）。
+
+<div id="kpi-by-attribution-time" />
 
 #### **以归因时间查看KPI**
 
 * 表格中的每一列以及图表中的每一个点分别代表选定日期范围内一个单独的群组周期（小时/天/周/月）。从而评估一段时间内的投放效果变化，并查看基于转化日期的投放KPI。
 * 您在指定面板数据的范围时最多可以选择5个群组周期。
 * 如果您选择以图表而非表格的形式查看数据，相关图表进显示1个群组周期（所选范围内的最小周期数）。
+
+<div id="example-user-lifetime-performance-trend-vs-kpi-by-attribution-time-trend" />
 
 #### 示例：用户生命周期内的投放效果趋势 vs 基于归因时间的KPI趋势
 
@@ -253,6 +267,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="cohort-for-agencies" />
@@ -272,6 +288,8 @@ x-zendesk:
 
 <Accordion title="使用场景">
 
+<div id="revenue-sum-by-geo" />
+
 #### 按国家/地区加总的收入
 
 **图表：用户人均累计收入**
@@ -281,6 +299,8 @@ x-zendesk:
 **表格：每日收入**
 
 [![cohort use case 2.2.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
+
+<div id="in-app-event-conversion" />
 
 #### 应用内事件转化
 

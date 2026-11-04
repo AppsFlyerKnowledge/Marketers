@@ -26,6 +26,8 @@ x-zendesk:
 
 **法律提示：** *以下内容仅供参考，不可作为法律意见使用。请咨询法律顾问及其他专业顾问，以明确GDPR、CCPA或其他相关法律是否适用。* 您与AppsFlyer之间的隐私关系受<Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">《AppsFlyer服务隐私政策》</Anchor>约束。如果您对我们的服务隐私政策有任何疑问，或需要联系我们的数据保护负责人，请发邮件至**privacy@appsflyer.com**。为帮助您遵守《通用数据保护条例》（General Data Protection Regulation）第27条的规定，特此提供AppsFlyer欧盟境内代表人的联系信息：**AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Germany（联系方式：** privacy@appsflyer.com/strong>*；+49-30-166373500）。*
 
+<div id="privacy-regulations" />
+
 ## 隐私法规
 
 本文提及的隐私法规包括下表中的相关法规：
@@ -39,6 +41,8 @@ x-zendesk:
 
 在本文中，隐私法规、GDPR、CCPA、LGPD、PDPA等术语可互换使用。
 
+<div id="the-opendsr-initiative" />
+
 ### OpenDSR倡议
 
 为了响应和处理数据主体根依据隐私法规提交的请求，AppsFlyer联合mParticle、Amplitude和Braze推出了OpenGSR协议（原OpenGDPR）。
@@ -47,6 +51,8 @@ OpenGSR是一个统一的开源框架，旨在技术公司之间的合作, 以�
 
 <Anchor target="_blank" href="https://www.appsflyer.com/company/newsroom/pr/opengdpr-initiative/">进一步了解 OpenDSR 倡议</Anchor>。
 
+<div id="definitions" />
+
 ### 定义
 
 | DSR术语 | AppsFlyer条款 | 说明 |
@@ -54,6 +60,8 @@ OpenGSR是一个统一的开源框架，旨在技术公司之间的合作, 以�
 | 数据对象 | 应用用户或终端用户 | 被收集数据的应用用户 |
 | 数据控制者 | App所有者/广告主 | 应用所有者决定处理个人数据的目的和方式。 |
 | 数据处理者 | AppsFlyer及其合作伙伴 | AppsFlyer及其合作伙伴代表数据控制人处理个人数据 |
+
+<div id="dsr-requirements" />
 
 ### DSR要求
 
@@ -65,6 +73,8 @@ DSR详细说明了数据对象的强制性权利，广告主必须遵守这些�
 | **转移权** | App用户有权以结构化、常用和机器可读的格式 (如 CSV 文件) 接收其所有个人数据。 | 应用程序所有者会收到应用程序用户处理过的个人数据的副本。 |
 | **更正权** | 如果用户发现数据不准确或不真实，有权要求更正。应用程序所有者必须删除或更正不准确或不完整的数据。 | <ul><li>AppsFlyer会删除更正请求提出之前记录的App用户数据。</li><li>此后收到的数据由AppsFlyer记录。</li></ul> |
 | **删除权** | 用户有权要求删除个人数据，应用所有者需在收到请求后10天内完成。 | 删除数据 |
+
+<div id="appsflyer-gdpr-requests-api" />
 
 ## AppsFlyer的GDPR请求API
 
@@ -80,6 +90,8 @@ DSR详细说明了数据对象的强制性权利，广告主必须遵守这些�
 <div id="1-gdpr-request" />
 
 <Accordion title="1. GDPR请求">
+
+<div id="gdpr-request-flow" />
 
 #### GDPR请求流程
 
@@ -100,6 +112,8 @@ GDPR请求类型（访问、转移、更正、删除）的处理流程如下：
 
      **请注意：此10天期限从应用所有者提交请求时开始计算。48小时后，请求状态将变为处理中，此后将在8天内完成，总共10天。**
 
+<div id="gdpr-request-format" />
+
 #### GDPR请求格式
 
 GDPR请求API可以通过HTTP POST提交到以下端点：
@@ -110,9 +124,13 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 
 对于API授权，请使用与Pull API相同的V2 API令牌。管理员可在面板的API token页面获取令牌。在请求头中加入：
 
+<div id="parameters" />
+
 #### 参数说明
 
 <table><thead><tr><th><strong>参数名称</strong></th><th><strong>是否必须配置</strong></th><th><strong>说明</strong></th></tr></thead><tbody><tr><td><strong>subject_request_id</strong></td><td>是</td><td>UUID v4 字符串。由控制器提交请求时生成，可用于查询、更新或取消请求。</td></tr><tr><td><strong>subject_request_type</strong></td><td>是</td><td>表示GDPR请求类型的字符串值。支持的值：<ul><li>erasure（删除）</li><li>portability（转移）</li><li>access（访问）</li><li>rectification（更正）</li></ul></td></tr><tr><td><strong>subject_identities</strong></td><td>是</td><td><ul><li>由身份对象组成的数组，用于定义请求者的身份（见下文）。</li><li>每个请求只能包含一个主体身份。</li></ul></td></tr><tr><td><strong>submitted_time</strong></td><td>是</td><td><ul><li>数据主体原始请求时间的RFC 3339日期字符串</li><li>UTC时间戳</li></ul></td></tr><tr><td><strong>property_id</strong></td><td>是</td><td><p>表示本次请求所对应移动应用的字符串：</p><p><strong>示例</strong>：</p><ul><li> <strong>iOS</strong>: id123456789</li><li> <strong>Android</strong> ：com.example，com.publishers.name</li><li> <strong>第三方安卓商店</strong> ：com.publisher.name-channel <br/><strong>注意</strong> 应用所有者会使用Android Google Play名称来记录非商店版本的归因。在这种情况下，应使用面板中显示的常规应用名称。</li></ul></td></tr><tr><td><strong>api_version</strong></td><td>否</td><td>表示所需GDPR请求API版本的字符串版本</td></tr><tr><td><strong>status_callback_urls</strong></td><td>否（但推荐填写）</td><td><ul><li>最多可配置3个回调端点，用于接收请求状态变更通知。</li><li>仅支持https端点。</li><li>无效的URL会被拒绝。</li></ul></td></tr><tr><td rowspan="2"> <strong>platform</strong><br/><br/> </td><td>否</td><td>值应为以下受支持的DSR平台之一：<br/>可能出现的值为<code>android</code>、<code>ios</code>、<code>web</code>、<code>windowsphone</code> </td></tr><tr><td>是</td><td><p>如为CTV、PC或主机端请求，可使用以下平台： </p><p> <code>nativepc</code>, <code>playstation</code>, <code>roku</code>, <code>steam</code>, <code>webos</code>, <br/><code>vidaa</code>,<code>tizen</code>, <code>smartcast</code>, <code>chatgpt</code>, <code>battlenet</code>, <br/><code>quest</code>, <code>switch</code>, <code>xbox</code>, <code>epic</code></p></td></tr></tbody></table>
+
+<div id="subject_identities-objects" />
 
 #### Subject\_identities对象
 
@@ -121,6 +139,10 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 | identity\_type | 是 | <ul><li>在`android`, `ios`, `web`, `windowsphone`平台上，身份类型（字符串格式）可为以下任一值：<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li><li>Customer user ID（客户用户ID，即CUID）</li></ul></li></ul><ul><li>`CTV`、`PC`和`Console`平台的可选值：<ul><li>appsflyer\_id</li><li>Customer user ID（客户用户ID，即CUID）</li></ul></li></ul><ul><li>示例：`android_advertising_id`</li></ul>**<span id="01JFVT3ATDGJXBX4VN7BHX6JB8"></span>重要提示！**<br />如需在OpenDSR API中使用CUID，应用内事件中必须带有CUID，并与`idfa`/`appsflyer_id`一同发送。支持的事件名称`event_name`包括：`Login - Complete`或`Registration - Account created`。 |
 | identity\_value | 是 | <ul><li>格式：字符串</li><li>示例：“ a7551968-d5d6-44b2-9831-815ac9017798”</li></ul> |
 | identity\_format | 是 | <ul><li>身份值的编码方式，目前仅支持`raw`。</li><li>示例：“ raw”</li></ul> |
+
+<div id="zd-gdpr-erasure-request-code-example" />
+
+<div id="example-gdpr-erasure-request" />
 
 #### 举例来说，GDPR数据删除请求
 
@@ -178,6 +200,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
  ]
 }'
 ```
+
+<div id="gdpr-erasure-request-code-example" />
 
 #### GDPR数据删除请求代码示例
 
@@ -281,6 +305,8 @@ print(res.text)
 3. ***已完成***-请求已完成
 4. ***已取消***-请求已被取消
 
+<div id="status-request-format" />
+
 #### 状态请求格式
 
 状态请求可以通过HTTP GET提交到以下端点:
@@ -288,6 +314,8 @@ print(res.text)
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
+
+<div id="status-response-example" />
 
 #### 状态响应示例
 
@@ -304,6 +332,8 @@ kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j083461xLZ+mUloo3tpsmyI
  "request_status":"pending",
 }
 ```
+
+<div id="status-postbacks" />
 
 #### 状态回传
 
@@ -326,6 +356,8 @@ X-OpenGDPR-Signature: kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j
 "Request_status":"pending"
 }
 ```
+
+<div id="validate-postback" />
 
 #### 验证回传
 
@@ -370,6 +402,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/download/[REQUEST_ID]
 https://hq1.appsflyer.com/api/gdpr/v1/discovery
 ```
 
+<div id="discovery-response-example" />
+
 #### Discovery响应示例
 
 ```http
@@ -404,6 +438,8 @@ Content-Type: application/json
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
 
+<div id="cancellation-response" />
+
 #### 取消响应
 
 当收到GDPR取消请求时, AppsFlyer会返回HTTP 202状态码及其他参数。
@@ -417,6 +453,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 <Accordion title="6. GDPR请求测试API">
 
 该AppsFlyer API是AppsFlyer GDPR请求API的测试API。
+
+<div id="how-does-it-work" />
 
 #### 原理
 
@@ -462,6 +500,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stubcertificate
 https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 ```
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 请求头中必须包含有效的V2 API token，格式如下：
@@ -492,6 +532,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 
 本节详细介绍了GDPR API的HTTP返回代码和错误消息。
 
+<div id="gdpr-api-return-codes" />
+
 #### GDPR API返回代码
 
 | 返回码 | 说明 |
@@ -500,11 +542,15 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 | 202 | Cancellation request received（取消请求已接收） |
 | 400 | Bad request（错误请求）。响应体中会包含错误码与错误信息，见下表。 |
 
+<div id="http-return-code-400---bad-request" />
+
 #### HTTP返回代码400 - 错误请求
 
 当返回码为400时，返回的消息体会包含一个JSON，其中包含错误码和错误信息。
 
 `{ "error": { "code":400, "af_gdpr_code": "%AF error code%", "message":"%error message text%" } }`
+
+<div id="return-code-400-bad-request-messages" />
 
 #### 返回代码400错误请求消息
 
@@ -535,6 +581,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 | e511 | 内部问题，请等待60分钟后重试。如问题仍存在，请联系AppsFlyer支持：support@appsflyer.com |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

@@ -29,9 +29,13 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
+<div id="overview" />
+
 ## 概述
 
 通过高级 SRN 对接，所有获得<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">双重授权</Anchor>的流量都会按照常规 SRN 流量进行归因和报告。对于未获得用户授权的流量，AppsFlyer 可以根据 Snapchat 提供的点击和展示数据，采用<Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns#高级srn的归因原理">其他归因方式</Anchor>进行归因和衡量，同时遵守相关隐私限制。
+
+<div id="set-up-snapchat-integration" />
 
 ## 设置 Snapchat 对接
 
@@ -51,6 +55,8 @@ x-zendesk:
 
 此对接支持点击归因、展示归因、成本数据和受众数据。
 
+<div id="activate-partner" />
+
 #### 启用渠道
 
 首次进入此页面时，您必须开启**启用渠道（Activate Partner）**，才能进行后续设置。  
@@ -61,6 +67,8 @@ x-zendesk:
 开启**启用渠道（Activate Partner）**，以允许 AppsFlyer 对 Snapchat 流量进行归因。
 
 ![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+
+<div id="general-settings" />
 
 #### 常规设置
 
@@ -77,6 +85,8 @@ x-zendesk:
 * 如果代理与您在 Snapchat 广告平台上隶属于同一组织，请仅使用一个 Snap App ID。
 * 如果代理与您在 Snapchat 广告平台上隶属于不同组织，请向代理索取该 App 对应的 Snap App ID，并将其填写到此字段中。此字段支持填写多个 ID。每输入一个 ID 后，请按 Enter 键。
 
+<div id="advanced-privacy" />
+
 #### 高级隐私（Advanced Privacy）
 
 **Advanced Privacy**（AP，高级隐私）开关用于控制 AppsFlyer 向 Snapchat 发送哪些事件。在 Snapchat 端，此设置也称为**Advanced Conversions**（高级转化）。
@@ -89,9 +99,13 @@ x-zendesk:
 >
 > 即使获得广告主授权，代理也无法开启 Advanced Privacy。该设置仅限广告主使用。
 
+<div id="advanced-matching-data-sharing" />
+
 #### 高级匹配数据共享（Advanced Matching data sharing）
 
 开启**Advanced Matching 数据共享**后，如果发送给 AppsFlyer 的事件信息中包含哈希处理后的邮箱、电话号码、名字或姓氏等高级匹配字段，这些字段就会共享给 Snapchat。详情请参阅<Anchor target="_blank" href="/marketers/zh/docs/advanced-matching-data-sharing">高级匹配数据共享</Anchor>。
+
+<div id="install-attribution" />
 
 #### 激活归因
 
@@ -108,6 +122,8 @@ x-zendesk:
 2. 【可选】开启**浏览型激活归因**，并设置回溯窗口：
    * **浏览型激活回溯窗口**可设置为 1-24 小时。**注意：** Snapchat 建议将浏览型激活回溯窗口设置为 1 天，以便与其平台对齐。
 
+<div id="re-engagement-attribution" />
+
 #### 再互动归因
 
 您可以针对仅浏览、点击或与广告互动的现有用户，分别设置不同的归因窗口，以归因其再互动。请注意，只有在回溯窗口内发生的再互动才会归因给 Snapchat。
@@ -122,6 +138,8 @@ x-zendesk:
    * **再互动浏览型回溯窗口**可设置为 1-24 小时。**注意：** Snapchat 建议将再互动浏览型回溯窗口设置为 1 天，以便与其平台对齐。
 3. 将**再互动窗口**设置为 1-23 小时、1-90 天或**整个生命周期**。
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### 再营销时忽略活跃用户
 
 设置一个窗口期，用来忽略在该期间内打开过您应用的用户所产生的<Anchor target="_blank" href="/marketers/zh/docs/set-retargeting-inactivity-window#不活跃时长">再互动和再归因</Anchor>。也就是说，这些用户在窗口期内的行为不会被记录到 AppsFlyer 中。
@@ -132,6 +150,8 @@ x-zendesk:
 
 1. 开启**再营销时忽略活跃用户**。
 2. 设置不活跃窗口。
+
+<div id="in-app-event-postbacks" />
 
 #### 应用内事件回传
 
@@ -224,6 +244,8 @@ Snapchat 不支持归因链接。
 
 </Accordion>
 
+<div id="web-to-app-measuring-app-activity-for-non-app-campaigns" />
+
 ## Web-to-App：衡量非 App 推广活动带来的 App 内活动
 
 通过与 Snapchat 的对接，AppsFlyer 可以全面衡量归因给 Snapchat 的非 App 推广活动所带来的 App 内活动，例如激活、再互动和应用内事件。
@@ -231,6 +253,8 @@ Snapchat 不支持归因链接。
 举例来说，即使广告落地页是网页，也可以衡量由此产生的 App 激活，从而实现对 Web-to-App（W2A）用户路径的衡量。要启用此类衡量，请在 Snapchat Ads Manager 中开启<Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/app-id-tracking">Snap App ID Tracking</Anchor> 开关。
 
 按照上述方式配置后，您就能有效衡量 Snapchat 非 App 推广活动带来的 App 内活动，更好地了解用户行为。
+
+<div id="deep-linking-with-snapchat" />
 
 ## 使用 Snapchat 深度链接
 
@@ -251,12 +275,16 @@ Snapchat 深度链接的原理是：在 Snapchat 平台原生深度链接的基�
 >
 > client://home?pid=snapchat\_int&amp;c=TEST&amp;is\_retargeting=true
 
+<div id="set-up-deep-links-on-the-snap-platform" />
+
 ### 在 Snap 平台上设置深度链接
 
 1. 进入**Drive traffic to app** 推广类型。
 2. 添加深度链接 URI：  
      
    [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+
+<div id="deferred-deep-linking-with-snapchat" />
 
 ### 使用 Snapchat 延迟深度链接
 
@@ -266,9 +294,13 @@ AppsFlyer 提供多种延迟深度链接方案：
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">**GCD（Get Conversions Data）API**</Anchor>：这是在 SDK 层面实时获取 Snapchat 用户转化数据的推荐方式。 GCD API 返回的数据中包含 <Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters#af_dp">`af_dp`</Anchor> 参数，该参数即为实际的深度链接目标（即用户在 App 内的跳转位置）。
 * **使用转化数据参数：** 您也可以使用广告系列名称、广告组名称等其他字段（这些字段会作为 Snapchat 激活归因数据的一部分返回），自行编写逻辑，将用户引导到相应内容。
 
+<div id="set-up-snapchat-for-agencies" />
+
 ## 为代理设置 Snapchat
 
 代理可以代表广告主启用 Snapchat 对接，并开始为其推广活动获取归因数据。但在使用该对接时，代理存在一定限制。
+
+<div id="agency-limitations" />
 
 ### 代理的限制
 
@@ -290,6 +322,8 @@ AppsFlyer 提供多种延迟深度链接方案：
 >
 > 广告主和代理之间不应共享 Snapchat 账户 ID。如果共享了账户 ID，广告主一方的所有激活都会被自动归因到代理的数据面板中。
 
+<div id="raw-data-restrictions" />
+
 ## 原始数据限制
 
 * 自 2023 年 3 月 1 日起，原始数据报告不再包含 Snapchat 的卸载数据。
@@ -301,6 +335,8 @@ AppsFlyer 提供多种延迟深度链接方案：
   * 广告系列名称和 ID（自 2025 年 12 月 15 日起）
   * 广告组名称和 ID（自 2025 年 12 月 15 日起）
 * 自 2026 年 10 月 6 日起，`snapchat_int` 的浏览型归因数据在部分情况下会在原始数据中受到限制。相关限制逻辑由 Snapchat 管理。
+
+<div id="snapchat-data-retention" />
 
 ## Snapchat 数据保留期限
 

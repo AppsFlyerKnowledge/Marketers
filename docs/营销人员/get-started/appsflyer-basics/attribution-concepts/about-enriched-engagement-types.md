@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** 在广告样式不断精细化、复杂化、互动化的同时，数据上报的方式却一直没有出现相应的扩展，仅将浏览和点击归因作为重点。但扩展广告交互类型（Enriched Engagement Types）突破了这方面的局限，帮助广告主全面了解用户在浏览广告或与广告交互时所产生的各种互动层次和意向强度。
 
+<div id="introduction" />
+
 ## 简介
 
 在过去几年中，广告形式不断推陈出新，出现了可玩、可跳过、短视频等多种不同类型的广告，拓展了广告主触达用户的方式。这些新型广告与过去的静态横幅和低保真视频单元大不相同，为广告主带来了大量新的可用功能和样式。
@@ -28,6 +30,8 @@ x-zendesk:
 在广告样式不断精细化、复杂化、互动化的同时，数据上报的重点却一直停留在浏览和点击归因。各种类型的互动具有不同的权重、意向层次和影响力，但当前的归因衡量方法论却忽视了这一发展态势。同时，广告平台自然希望各个层次的用户意向和广告交互能得到准确的体现。这样一来，整个生态系统缺乏统一的数据标准，最终导致广告主无法全面完整地了解其广告投放效果。
 
 AppsFlyer与业界领先的广告平台多方协作，推出了新的广告交互标准，旨在为整个生态系统的所有参与者都带来可信且透明的数据。扩展广告交互类型（Enriched Engagement Types）能帮助广告主全面掌握用户在浏览广告或与广告交互时所产生的各种互动层次和意向强度，覆盖了从短暂曝光到即时反馈等各种级别的互动。这一框架可确保相关数据标准在AppsFlyer的渠道生态系统内外得到全面贯彻。广告主可通过扩展广告交互类型获得高度标准化的详尽效果数据，以便利用这些关键信息来优化预算分配并提升ROAS。
+
+<div id="what-are-enriched-engagement-types" />
 
 ## 什么是扩展广告交互类型
 
@@ -45,6 +49,8 @@ AppsFlyer与业界领先的广告平台多方协作，推出了新的广告交�
 | <span id="view"></span>view | 广告呈现并完成展示，即记为一次广告浏览（ad view）。 |
 | <span id="listening"></span>listening | 指用户聆听音频广告，如播客广告。 |
 
+<div id="eet-attribution-priority-and-lookback-window" />
+
 ## **EET归因优先级和回溯窗口**
 
 扩展广告交互类型框架不会影响交互类型的归因优先级。因此，引入EET预计不会对您的安装量和转化率产生影响。
@@ -56,6 +62,8 @@ AppsFlyer与业界领先的广告平台多方协作，推出了新的广告交�
 若未上报互动类型，系统会为其设置默认的归因优先级（点击为2，展示为3）。
 
 <strong>`engaged_click`和`engaged_view`的回溯窗口仅限于SRN平台。对于SRN，`engaged_click`和`engaged_view`的回溯窗口和点击相同，因此需通过</strong>安装点击归因回溯滑块设置。
+
+<div id="which-networks-can-report-engaged-views-and-engaged-clicks" />
 
 ## 哪些广告平台可以上报深度浏览和深度点击？
 
@@ -98,9 +106,13 @@ AppsFlyer认证的可上报`engaged_clicks`和`engaged_views`的广告平台如�
 
 * TikTok 支持增强型互动类型，但其互动浏览量目前未在报告中得到正确反映。AppsFlyer 正在与 TikTok 合作解决此问题。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 并非所有列出的平台都支持深度点击和深度浏览。要确定某一平台是否支持`engaged_clicks`和`engaged_views`，请查阅原始数据报告，查看该平台的`engagement_type`参数中是否填充了以上数值。
+
+<div id="set-lookback-windows-for-engaged-clicks-and-engaged-views" />
 
 ## 为深度点击和深度浏览设置回溯窗口
 
@@ -110,6 +122,8 @@ AppsFlyer认证的可上报`engaged_clicks`和`engaged_views`的广告平台如�
 2. 选择相关的对接渠道。
 3. 为深度浏览和深度点击归因设置回溯窗口。
 
+   <div id="note-1" />
+
    > 📘 **注意**
    >
    > 与普通的浏览和点击回溯窗口不同，深度点击和深度浏览的回溯窗口总是在**渠道对接**选项卡中设置，而不是在归因链接中设置。
@@ -118,11 +132,17 @@ AppsFlyer认证的可上报`engaged_clicks`和`engaged_views`的广告平台如�
 
 4. 点击**保存对接**。
 
+<div id="view-and-analyze-eet-data" />
+
 ## 查看和分析EET数据
+
+<div id="raw-data-reports" />
 
 ### 原始数据报告
 
 只要广告平台上报`engagement_type`，该数据就会出现在原始数据报告中。助攻渠道的数据也可使用该字段。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -137,19 +157,27 @@ AppsFlyer认证的可上报`engaged_clicks`和`engaged_views`的广告平台如�
 
 如需在原始数据报告中看到广告交互类型数据，请确保在相关原始数据产品中选择这些字段（广告交互类型和助攻交互类型不是默认选定的字段）。
 
+<div id="dashboards" />
+
 ### 面板
 
 AppsFlyer面板中已新增广告交互类型维度。
 
 [![eet-dashboard.png](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > 控制面板中始终包含深度浏览数据，即使浏览归因关闭时也是如此。
 
+<div id="how-to-calculate-installs-per-mille-ipm" />
+
 ### 如何计算**每千次安装（IPM）**
 
 展示包括深度浏览和普通浏览。如需计算IPM，则必须从展示总数中**减去深度浏览**，因为深度浏览是展示的一个子集，如不减去会导致重复计算。
+
+<div id="faqs" />
 
 ## 常见问题解答
 
@@ -184,6 +212,8 @@ Meta仅在其SRN API中上报engagement\_type=engaged\_view。Meta 不支持其�
 即使浏览归因按钮被关闭，深度浏览仍会被衡量和上报。要将这些展示识别为深度浏览，请在数据面板和原始数据报告中使用指标，而不是仅仅依赖于`engagement_type = engaged_views`。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

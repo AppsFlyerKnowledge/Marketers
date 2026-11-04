@@ -24,6 +24,8 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-sdk-user-and-integration-guide" />
+
 ## Web SDK用户与对接指南
 
 * Web SDK JavaScript标签：
@@ -34,6 +36,8 @@ x-zendesk:
 * 建议在移动应用中部署AppsFlyer移动SDK，并在网站端部署Web SDK，从而对用户行为进行统一记录与映射。
 * 发生在网站之外的事件，可通过<Anchor target="_blank" href="/marketers/zh/docs/web-server-to-server-events-api-for-pba-web-s2s">Web S2S event API</Anchor>（Web S2S）进行记录。
 
+<div id="selecting-a-code-snippet" />
+
 ## 选择代码片段
 
 选择与您的集成类型和安全要求相匹配的片段。有两个选项可供选择：
@@ -41,9 +45,13 @@ x-zendesk:
 * [标准Web SDK](#标准web-sdk)：标准集成。
 * [高级SDK验证](#高级sdk验证)：一种增强的集成，为Web SDK增加供应链保护。使用此功能为CDN攻击、DNS劫持和中间人攻击增加额外的安全层。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 如果您正在从标准Web SDK过渡到高级SDK验证，请用新的片段替换现有的片段。请勿在现有片段上添加新的片段。
+
+<div id="standard-web-sdk" />
 
 ### 标准Web SDK
 
@@ -99,6 +107,8 @@ x-zendesk:
 ```
 
 </Accordion>
+
+<div id="advanced-sdk-verification" />
 
 ### 高级SDK验证
 
@@ -177,11 +187,15 @@ x-zendesk:
 
 </Accordion>
 
+<div id="integrating-the-web-sdk-into-the-website" />
+
 ## 在网站中对接Web SDK
 
 <div id="installation-and-integration" />
 
 <Accordion title="安装与对接">
+
+<div id="considerations-and-actions-required" />
 
 #### 注意事项与操作要求
 
@@ -218,15 +232,21 @@ x-zendesk:
 <Tabs>
 <Tab title="原生">
 
+<div id="javascript-code-snippet" />
+
 #### 嵌入JavaScript代码片段
 
 请使用以下方法之一对接Web SDK。
+
+<div id="to-install-the-web-sdk-without-smart-banners" />
 
 #### **如需在不使用智能横幅的情况下安装Web SDK：**
 
 1. 请在网站所有页面中重复以下操作：
 2. 在下面的代码片段中，将`WEB_DEV_KEY`替换为准备阶段获取的WEB\_DEV\_KEY。
 3. 将您在上面选择的代码片段[粘贴](#选择代码片段)到您网站的head标签中。位置尽量靠前。
+
+<div id="to-implement-the-web-sdk-with-smart-banners" />
 
 #### **如需在使用智能横幅的情况下安装Web SDK：**
 
@@ -418,12 +438,16 @@ Web SDK会将访客事件数据发送至AppsFlyer。您可以根据需要开启�
   * Cookie过期时间由Web SDK或浏览器决定；到期后，SDK会恢复至初始设置。
   * SDK设置的Cookie不会影响浏览器自身的Cookie规则。
 
+<div id="sdk-initial-state-setting" />
+
 #### SDK初始状态设置
 
 | 配置 | 代码片段 |
 | --- | --- |
 | [默认] 发送事件 | 对Web SDK代码片段进行以下更改。 如有需要，请添加measurementStatus参数：<br /><br />设置measurementStatus=true<br /><br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:true}` |
 | 不发送事件 | 对Web SDK代码片段进行以下更改。如有必要，添加 measurementStatus 参数：<br /><br />设置measurementStatus=false  <br />  <br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:false}` |
+
+<div id="explicit-control" />
 
 #### 显式控制
 
@@ -439,6 +463,8 @@ Web SDK会将访客事件数据发送至AppsFlyer。您可以根据需要开启�
 <Accordion title="实施内容安全策略 (CSP)">
 
 如果您的网站需要严格的安全或数据隐私协议，请使用以下机制配置Web SDK如何与您的环境和数据交互。
+
+<div id="content-security-policy-csp" />
 
 #### 内容安全策略（CSP）
 
@@ -457,6 +483,8 @@ Web SDK会将访客事件数据发送至AppsFlyer。您可以根据需要开启�
 | `script-src 'nonce-...' 'strict-dynamic'` | 是（推荐） | Nonce覆盖内联脚本和加载器；`strict-dynamic`将信任传播到动态注入的SDK标签。允许列表中不需要CDN来源。 |
 
 CSP政策兼容性
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### 带有CSP nonce片段的高级SDK验证
 
@@ -538,6 +566,8 @@ CSP政策兼容性
 
 您可以使用以下方法丢弃URL、referrer和header\_referer查询参数。
 
+<div id="query-discard-options" />
+
 #### 查询参数丢弃选项
 
 | 方法 | 说明 |
@@ -546,6 +576,8 @@ CSP政策兼容性
 | 丢弃指定查询参数 | 通过设置查询参数掩码，指定要丢弃的参数。  使用`af_url_mask=param`设置丢弃掩码，其中param为参数名称。<br /><br />示例：<br /><br />**带掩码的Url:**<br /><br />`param1=value1&param2=value2&param3=value3&af_url_mask=param2;param3`<br /><br />**丢弃后的Url:**<br /><br />`param1=value1&af_url_mask=param2;param3` |
 
 </Accordion>
+
+<div id="principles-of-event-recording" />
 
 ## 事件记录原则
 
@@ -558,6 +590,8 @@ CSP政策兼容性
 * 转化事件数据可在PBA面板中查看。
 * 转化和标准事件数据可在<Anchor target="_blank" href="/marketers/zh/docs/pba-raw-data-reports">原始数据报告</Anchor>中查看。
 
+<div id="conversion-events" />
+
 ### 转化事件
 
 * 转化事件能够帮助您洞察营销和业务成效，此类事件包括购买、下载、注册和订阅。
@@ -566,11 +600,15 @@ CSP政策兼容性
 * 转化事件还可用于记录收入并计算ROI。
 * 您可将广告在不同媒体渠道的投放成本与这些渠道带来的收入进行对比。
 
+<div id="standard-events" />
+
 ### 标准事件
 
 * 标准事件主要用于验证带来最终转化的用户路径和漏斗。
 * 标准事件可用来衡量用户活跃度，突出带来深度用户的媒体渠道。
 * 记录的用户行为也能帮助您标记用户，以便后续进行再营销活动。
+
+<div id="recording-events" />
 
 ### 事件记录
 
@@ -629,6 +667,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 
 您需要发送的事件类型取决于网站的业务性质。例如：电商网站与新闻网站所需的事件类型可能有所不同。请参阅以下场景，以了解您应该在何时发送何种事件。
 
+<div id="online-store" />
+
 #### 电商网站
 
 假设您正在运营一家电商网站，您可能需要记录以下标准事件与转化事件：
@@ -672,6 +712,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    2. Request Payload与事件参数一致。
 
 </Accordion>
+
+<div id="examples" />
 
 ## 示例
 
@@ -1082,6 +1124,8 @@ setCustomerUserId()函数可以在用户流程中的任意阶段调用，例如�
 请在网页端使用与移动端应用（iOS、Android、Unity）中setCustomerUserId函数相同的CUID值。
 
 </Accordion>
+
+<div id="addtional-information" />
 
 ## 附加信息
 

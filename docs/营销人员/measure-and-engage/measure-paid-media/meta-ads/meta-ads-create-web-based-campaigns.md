@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **概要：** 您可以使用Meta Web对接对Meta Ads带来的网页到应用转化进行归因。
 
+<div id="overview" />
+
 ## 速览
 
 AppsFlyer支持网页端获客广告专用的Meta Ads对接（`metaweb_int`），您可以通过Meta的Conversion API（CAPI）上报相关广告的归因和转化数据。然后，Meta就可以利用这些数据来优化定向投放、衡量广告效果并打造自定义人群包。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > 目前，Meta Web对接尚不支持通过CAPI发送再营销回传数据。
 
+<div id="prerequisites" />
+
 ### 前期准备
 
 在启用Meta Ads对接前，请确保您已在[Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347)中开设了企业账户。
+
+<div id="how-to-create-a-meta-web-ads-campaign" />
 
 ### 如何创建Meta Web广告活动
 
@@ -45,6 +53,8 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`metaweb_int`）�
 
 * [创建带有OneLink智能脚本的落地页](#创建带有onelink智能脚本的落地页)（可选）
 * [创建带有OneLink智能横幅的落地页](#创建带有onelink智能横幅的落地页)（可选）
+
+<div id="set-up-meta-web-ads-integration-in-appsflyer" />
 
 ## 在AppsFlyer中设置Meta Web对接
 
@@ -109,6 +119,8 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
    * **所有媒体渠道，包括自然流量**：回传归因到任何渠道以及自然量的事件。
 7. 在**包括**列中，选择是否将事件与其收入值一起发送。请见<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#回传内容">回传中包含的数据</Anchor>。
 
+   <div id="note-1" />
+
    > 📘 **注意**
    >
    > 如果您设置的是购买事件，请将**包含**列设为**值和收入**。选择其他选项将导致回传失败。
@@ -121,6 +133,8 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
     3. 为选定应用完成对接流程。
 
 </Accordion>
+
+<div id="set-up-appsflyer-integration-in-meta-ads" />
 
 ## 在Meta Ads中配置AppsFlyer对接
 
@@ -137,6 +151,8 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 3. 【可选】如果您想要在上述选项中添加自定义的投放目标，请按以下方式操作：
    1. 在Meta Ads中选择一个要作为投放目标的自定义事件，并将其标记为转化行为（conversion action）。
    2. 进入AppsFlyer面板，在**Meta Web**对接页面中的**应用内事件**部分选择一个AppsFlyer事件，将其映射到渠道侧的自定义事件（在**渠道映射事件**一列中选择CUSTOM），并使用Meta Ads中的转化行为名称（conversion action）为其命名。
+
+      <div id="note-3" />
 
       > 📘 **注意**
       >
@@ -164,6 +180,8 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 
      在以上所有场景中都可以使用带有[智能脚本](#创建带有onelink智能脚本的落地页)或[智能横幅](#创建带有onelink智能横幅的落地页)的落地页。
    * **AF归因链接**：如果您不想让用户访问落地页，而是直接跳转到商店并下载相关应用，建议您使用AF归因链接（包括OneLink链接、单平台链接和跨平台链接）作为目标网址。
+
+     <div id="important" />
 
      > 🚧 **重要提示！**
      >
@@ -218,15 +236,21 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
      https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
      ```
 
+   <div id="note-4" />
+
    > 📘 **注意**
    >
    > 用户点击相关广告时，Meta会自动将`fbclid={{fbclid}}`添加到目标网址（ destination URL）。
 
 
+   <div id="tip" />
+
    > 👍 **提示**
    >
    > 为了简化活动分析，请在活动名称中包含活动类型、网页或移动，作为前缀或后缀（例如，活动名称\_web）
 
+
+<div id="note-5" />
 
 > 📘 **注意**
 >
@@ -242,11 +266,15 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 
 [![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
 
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > 切勿选择**App Events**，否则Meta会通过SRN API来认领这些转化，从而造成数据上报和投放优化之间发生错配。
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## 创建带有OneLink智能脚本的落地页
 
@@ -281,6 +309,8 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 
 1. 为您要投放的广告系列设置一个OneLink模板，用于生成相关的OneLink归因链接。详情请见<Anchor target="_blank" href="/marketers/zh/docs/create-a-onelink-template#创建onelink模板">OneLink模板的创建方式</Anchor>说明。
 2. 创建一个智能脚本。详情请见<Anchor target="_blank" href="/marketers/zh/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink智能脚本的创建方式</Anchor>说明。
+
+   <div id="note-9" />
 
    > 📘 **注意**
    >
@@ -323,12 +353,16 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
      * 创建跨平台落地页时，请参考这些[演示和说明](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/)。
    * 提醒开发人员务必在传出链接中加入传入参数`fbclid`的映射。
 
+     <div id="note-8" />
+
      > 📘 **注意**
      >
      > 如需使相关数据呈现在AppsFlyer的原始数据报告中，必须将传入的`fbclid`参数同时映射到传出的`fbclid`参数和`af_sub[1-5]`参数。
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## 创建带有OneLink智能横幅的落地页
 
@@ -368,15 +402,21 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## 查看网页到应用的归因数据
 
 尽管基于网页的转化事件以原始`metaweb_int` PID发送到Meta，但在AppsFlyer仪表板和原始数据报告中以`Facebook Ads` PID报告。这适用于主要转化事件和转化辅助事件。
 
 此统一报告视图使您能够在一个地方分析网页和应用活动的表现，包括完整的网页和移动成本报告。
 
+<div id="view-in-the-dashboard" />
+
 ### 在仪表板中查看
 
 所有Meta网页到应用的归因都出现在概述和活动仪表板的`Facebook Ads`下。这提供了跨平台活动结果的单一整合视图。使用标准过滤器和细分来比较您的Meta广告数据中的应用和网页流量。
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### 在原始数据和API报告中查看
 
@@ -392,6 +432,8 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 这是由于您在 Meta Ads 中[设置追踪事件](#c-select-tracked-events)时，将其设置为应用事件而非网页事件。请将设置改为网页事件。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特性与局限性
 

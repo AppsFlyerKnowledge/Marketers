@@ -26,6 +26,8 @@ x-zendesk:
 | **重要需知** | Meta 会自动为 AppsFlyer 客户账户启用此选项。在 8 月 6 日之前，您无需采取任何操作。<ul><li>如果在 8 月 6 日之后，您发现按渠道细分的成本数据或广告素材效果数据依然缺失，说明 Meta 尚未为您的账户自动启用此功能。</li></ul> |
 | **待办事项** | 请完成以下操作：<ol><li>在 8 月 6 日之后，请检查您按渠道细分的成本数据（My Dashboards）以及按渠道细分的素材表现数据。</li><li>如果您发现数据缺失，请直接联系 Meta 咨询如何启用此功能，或联系您的 AppsFlyer 代表寻求帮助。</li><li>为您的账户启用此功能后，系统会在随后不久自动回填历史数据，补齐缺失的数据。</li><li>您也可以直接在 Ads Manager 中检查该账户是否已启用 Impression Device（展示设备）。步骤请参见下方的 [在 Ads Manager 中检查展示设备](#在-ads-manager-中检查展示设备)。</li></ol> |
 
+<div id="check-impression-device-in-ads-manager" />
+
 ## 在 Ads Manager 中检查展示设备
 
 如需检查广告账户是否已启用“展示设备”：

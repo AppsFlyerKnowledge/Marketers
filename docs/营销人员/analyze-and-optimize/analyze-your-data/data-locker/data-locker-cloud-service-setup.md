@@ -24,6 +24,8 @@ x-zendesk:
 
 您可以使用Data Locker将数据实时传输到您指定的自有存储工具中，无论是数据存储桶还是数据仓库都适用。下文针对这两类工具分别解释了设置流程，请根据您的实际使用场景参考对应的说明。
 
+<div id="bucket-cloud-storage" />
+
 ## 云端数据存储
 
 <div id="gcs-storage" />
@@ -151,6 +153,8 @@ Data Locker是AppsFlyer提供的一种解决方案，用于将数据实时传输
 7. 点击**Save changes**。
 8. 完成<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers#data-locker报告设置">Data Locker设置流程</Anchor>。
 
+<div id="supported-aws-regions" />
+
 #### **支持的AWS区域**
 
 Data Locker支持以下AWS区域：
@@ -244,6 +248,8 @@ Data Locker是AppsFlyer提供的一种解决方案，用于将数据实时传输
 
 </Accordion>
 
+<div id="data-warehouse-cloud-storage" />
+
 ## 云端数据仓库
 
 <div id="bigquery" />
@@ -265,6 +271,8 @@ Data Locker是AppsFlyer提供的一种解决方案，用于将数据实时传输
 1. 在BigQuery中创建一个Project（项目），也可使用现有项目。
 2. 在该项目中，点击**CREATE DATASET**。[![GCSCreateDataSEt_1_.png](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)
 3. 为该数据集设置一个合适的ID。
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -293,6 +301,8 @@ Data Locker是AppsFlyer提供的一种解决方案，用于将数据实时传输
 
 请按照以下步骤将 Snowflake 连接到 Data Locker。
 
+<div id="snowflake-connector-procedures" />
+
 #### **Snowflake数据连接的设置流程**
 
 **请按以下方式获取您的Snowflake账户ID及地区信息**：
@@ -320,6 +330,8 @@ Data Locker是AppsFlyer提供的一种解决方案，用于将数据实时传输
 6. 数据库中将显示导入的表格。这里的表格名称和结构与Data Locker存储桶中的数据一致。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

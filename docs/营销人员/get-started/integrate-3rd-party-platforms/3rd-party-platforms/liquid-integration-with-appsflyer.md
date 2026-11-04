@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 部分渠道限制第三方的数据共享。
@@ -54,10 +56,14 @@ x-zendesk:
 
 下文说明了对接选项卡中所包含各部分内容。
 
+<div id="activate-partner" />
+
 ### 启用渠道
 
 **第一次访问**时，需要打开***激活合作伙伴***开关以开启对接选项卡内的配置参数。只要仍与该合作伙伴合作，这个开关必须为ON。   
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">此文档</Anchor>。
+
+<div id="general-settings" />
 
 ### 通用设置
 
@@ -65,6 +71,10 @@ api\_token
 
 [![](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)
 
+
+<div id="default-postbacks" />
+
+<div id="obtaining-the-api-token" />
 
 ### 默认回传
 

@@ -26,12 +26,16 @@ x-zendesk:
 ---
 > **概要：** 使用双重身份验证（2FA），为登录流程加强安全防护。使用凭证登录的用户需要通过Google Authenticator或短信验证作为补充。
 
+<div id="highlights" />
+
 ## 主要特点
 
 * 双重身份验证是一项可由管理员启用的功能。
 * 可选的验证方式为**Google Authenticator**和**短信验证。**
 * 启用/停用后对所有账号用户生效。
 * 启用时已存在的账号用户可正常登录，下次登录系统将提示用户设置双重身份验证。
+
+<div id="-admin-managing-2fa" />
 
 ## ![admin.png](https://files.readme.io/d54680123b25ab7929285cebd778e0e74bd0d032df994b04d1bca106381c3dc6-360014518718.png) 管理员： 管理双重身份验证
 
@@ -42,6 +46,8 @@ x-zendesk:
 <Accordion title="启用">
 
 若管理员同时启用了**Google Authenticator**和**短信验证**，则用户可以在两者中自行选择。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -86,6 +92,8 @@ x-zendesk:
 4. 确认停用。
 
 </Accordion>
+
+<div id="account-users-using-google-or-microsoft-authenticator" />
 
 ## 账户用户：使用Google Authenticator验证
 
@@ -132,6 +140,8 @@ x-zendesk:
 4. 点击**验证**，系统将跳转至**我的应用**页面。
 
 </Accordion>
+
+<div id="account-users-using-sms-verification" />
 
 ## 账户用户：使用短信验证
 

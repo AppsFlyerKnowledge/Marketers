@@ -32,6 +32,8 @@ x-zendesk:
 
 * 电子邮件
 
+<div id="integrating-swrve-and-appsflyer" />
+
 > 🚧 **重要提示！**
 >
 > 部分渠道限制第三方的数据共享。
@@ -77,14 +79,22 @@ Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 
 下文说明了对接选项卡中所包含各部分内容。
 
+<div id="activate-partner" />
+
 ### 启用渠道
 
 **第一次访问**时，需要打开***激活合作伙伴***开关以开启对接选项卡内的配置参数。只要仍与该合作伙伴合作，这个开关必须为ON。   
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
 
+<div id="general-settings" />
+
 ### 通用设置
 
 ![Swrve_msc_new_3.png](https://files.readme.io/feb1d5f846629d1909727b70b66e4b36138704ebbe4518e2dc03652b9fe5c57a-360001902065.png)
+
+<div id="swrve-reporting-with-appsflyer-data" />
+
+<div id="default-postbacks" />
 
 ### 默认回传
 

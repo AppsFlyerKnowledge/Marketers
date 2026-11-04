@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > 概览：了解跨平台再互动归因如何衡量用户回流。查看哪些媒体渠道在不同平台上重新激活了现有用户，并获得相应归因。
 
+<div id="about-cross-platform-re-engagement-attribution" />
+
 ## 关于跨平台再互动归因
 
 跨平台再互动归因扩展了<Anchor target="_blank" href="/marketers/zh/docs/beta-user-based-cross-platform-attribution">基于用户的跨平台归因模型</Anchor>。除原始获客渠道外，还会根据用户最近一次广告互动，衡量相应用户群体的后续表现。
@@ -40,6 +42,8 @@ x-zendesk:
 
 再互动归因可与用户获取归因同时使用。您可以在同一个报表视图中同时查看最初获取用户的渠道，以及促使用户回流的渠道。
 
+<div id="how-does-re-engagement-attribution-work" />
+
 ## 再互动归因的工作原理
 
 要将某个应用内事件归因到再互动媒体渠道，必须同时满足以下所有条件：
@@ -48,6 +52,8 @@ x-zendesk:
 * **存在CUID：** 该事件必须包含有效的Customer User ID(CUID)，且该CUID此前已在同一产品线中出现过。AppsFlyer会据此判断该用户是回流用户，而非新用户。
 * 再营销不活跃窗口期已结束：自该CUID上次出现后，该CUID必须在再互动不活跃窗口期内未再次出现。如果事件发生在该窗口期内，则不计为再互动，而是归因到原始获客渠道。
 * 事件发生在再互动窗口期内：检测到符合条件的再互动后，系统会从该时间点开始计算再互动窗口期。只有在该窗口期内发生的应用内事件，才会归因到再互动媒体渠道。窗口期结束后发生的事件，将归因到原始获客渠道。
+
+<div id="cross-platform-re-engagement-user-journey-example" />
 
 ## 跨平台再互动用户旅程示例
 
@@ -89,11 +95,17 @@ Meta获得再互动归因后，系统开始计算再互动窗口期。在该窗�
 
 </Accordion>
 
+<div id="set-up-cross-platform-re-engagement-attribution" />
+
 ## 设置跨平台再互动归因
 
 要设置跨平台再互动归因，您需要先完成产品线设置，然后在AppsFlyer中应用几项与再互动相关的专用设置。更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/product-line-group-apps-for-cross-platform-attribution#如何创建产品线">如何创建产品线</Anchor>。
 
+<div id="view-cross-platform-attribution-results" />
+
 ## 查看跨平台归因结果
+
+<div id="see-also" />
 
 > 📄 **另请参阅**
 >

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 **概览：** 为您的网站应用设置 Pinterest 对接，将网页转化事件发送到 Pinterest，用于广告活动优化和报告。
 
+<div id="set-up-integration" />
+
 ## **设置对接**
 
 **前期准备：**
@@ -39,13 +41,19 @@ x-zendesk:
    **请注意：** 只要您与 Pinterest 合作，就必须始终保持此开关处于<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">（已激活）</Anchor>状态。
 5. 按照以下说明，在 **对接** 选项卡中完成配置。
 
+<div id="integration-tab" />
+
 ## **对接选项卡**
+
+<div id="activate-partner" />
 
 ### **激活合作伙伴**
 
 在 **首次访问** 时，请打开 **启用渠道** 开关，以启用对接选项卡参数的设置。在与 Pinterest 合作期间，请确保此开关处于打开状态。
 
 了解更多有关 <Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">启用渠道</Anchor>的信息。
+
+<div id="in-app-event-settings" />
 
 ### **应用内事件设置**
 
@@ -60,6 +68,8 @@ x-zendesk:
 
 1. 在 AppsFlyer 中，在 Pinterest **活跃对接**页面 > **对接**选项卡中，向下滚动至**应用内事件设置**。
 2. 在相应字段中输入广告账户 ID 和访问令牌值。
+
+<div id="in-app-event-postbacks" />
 
 ### **应用内事件回传**
 

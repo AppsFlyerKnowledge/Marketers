@@ -27,11 +27,15 @@ x-zendesk:
 
 记录这些事件可以帮助您确定：
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 如需详细的开发人员指南，请在**AppsFlyer开发者资源中心**查找<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">。</Anchor>
 >
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -93,6 +97,8 @@ x-zendesk:
 | merchant\_name |  | cineplex |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

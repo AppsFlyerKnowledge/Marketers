@@ -29,6 +29,8 @@ x-zendesk:
 
 ![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
 
+<div id="audiences-basics" />
+
 ## 受众共享功能简介
 
 AppsFlyer的受众共享产品（Audiences）能帮助您快速完成人群分组，并将其连接到您的自有媒体或付费渠道，实现个性化的广告投放，从而提升用户互动和营销效果。您投放定向广告后，还可以在受众共享面板中查看效果指标。
@@ -41,9 +43,13 @@ AppsFlyer的受众共享产品（Audiences）能帮助您快速完成人群分�
 
 向渠道上传人群包数据时要用到的所有信息都在AF后台的合作伙伴连接中配置。您可以使用不同的账户、登录信息等为同一个渠道创建多个连接。为了符合iOS 14.5和其他用户隐私政策的规定，受众共享功能中与渠道共享的标识符完全由广告主决定，不管是在账户层面还是各个渠道连接中都可以调整相关配置。
 
+<div id="audience-split-and-incrementality-testing" />
+
 ### 流量拆分及增量测试
 
 <Anchor target="_blank" href="/marketers/zh/docs/incrementality-for-remarketing-overview">增量</Anchor>测试功能可通过A/B测试精确衡量广告投放的增效幅度——即对比投放广告与不投放广告时的转化量差异，帮助您了解广告投放的真实效果。您可以通过AppsFlyer受众共享面板将人群包拆分到指定渠道以及对照组，作为A/B测试的基础，然后您就可以使用增量分析面板，了解广告投放的真正价值。
+
+<div id="get-started" />
 
 ## 启用方式
 
@@ -57,6 +63,8 @@ AppsFlyer的受众共享产品（Audiences）能帮助您快速完成人群分�
 | 4 | 将人群包连接到一个或多个渠道 |
 | 可选 | [将人群包拆分到多个渠道和一个对照组](/docs/audiences-guide#audience-split-and-control-groups) |
 | 可选 | <Anchor target="_blank" href="/marketers/zh/docs/audiences-create-better-audiences-with-user-attribute-data">导入用户特征</Anchor> |
+
+<div id="create-and-manage-audiences" />
 
 ## 创建并管理人群包
 
@@ -109,6 +117,8 @@ AppsFlyer的受众共享产品（Audiences）能帮助您快速完成人群分�
 * 吸引用户购买
 * 通过购买用户变现
 * 以及众多其他预配人群包
+
+<div id="example-use-case" />
 
 > 📄 **使用场景示例**
 >
@@ -186,6 +196,8 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
     * 将CUID作为标识符创建人群包时，须确保AppsFlyer接收到的相关激活（而不仅仅是激活后事件）中包含其关联的CUID数据，从而完成CUID与相关设备的完整关联，同时添加其它设备标识符（即GAID、IDFA），实现数据扩充。<Anchor target="_blank" href="/marketers/zh/docs/customer-user-id-field-cuid#设置cuid">了解更多</Anchor>
 
 <Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+
+<div id="example-device-id-vs-cuid" />
 
 > 📄 **比如设备ID与CUID**
 >
@@ -337,6 +349,8 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 </Accordion>
 
+<div id="all-about-rulesets" />
+
 ## 规则组合说明
 
 本节解释了如何使用规则组合来定义您的人群包。
@@ -362,11 +376,15 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 <Accordion title="规则组合示例">
 
+<div id="example-location-based-rule" />
+
 > 📄 **示例：基于位置的规则**
 >
 > 上个月卸载了该应用的纽约用户
 >
 > ![example_location_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966552209)
+
+<div id="example-user-attributes-based-rule" />
 
 > 📄 **示例：基于用户特征的规则**
 >
@@ -374,11 +392,15 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 >
 > ![example_user_attributes_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966566801)
 
+<div id="example-revenue" />
+
 > 📄 **示例：收入**
 >
 > 选出在过去7天内激活应用并消费1美元的用户。
 >
 > ![example_revenue.jpg](https://support.appsflyer.com/hc/article_attachments/30258966567825)
+
+<div id="example-owned-media-filter" />
 
 > 📄 **示例：自有媒体筛选条件**
 >
@@ -389,6 +411,8 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 > ![Owned_media_example.jpg](https://support.appsflyer.com/hc/article_attachments/30258966580753)
 >
 > 您可以使用人群包在自有或付费媒体上进行定向投放，通过个性化广告内容吸引这些用户再次使用您的应用，或在投放广告时将这些用户列入禁投名单，避免无效广告打扰用户。
+
+<div id="example-remarketing" />
 
 > 📄 **示例：再营销**
 >
@@ -438,6 +462,8 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 * 不能使用导入的人群包。
 
 </Accordion>
+
+<div id="create-and-manage-partner-connections" />
 
 ## 创建并管理渠道连接
 
@@ -489,6 +515,8 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 </Accordion>
 
+<div id="dashboard-and-metrics" />
+
 ## 面板和指标
 
 本节介绍了面板中的各项功能和投放指标。
@@ -515,7 +543,11 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 <Accordion title="投放指标">
 
+<div id="metrics-hash" />
+
 #### 指标哈希
+
+<div id="campaign-metrics-basics" />
 
 #### 投放指标简介
 
@@ -535,6 +567,8 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 1. 点击受众共享面板顶部的**导出**按钮。
 2. 文件生成后会自动下载。
 
+<div id="summary-view" />
+
 #### 摘要视图
 
 初始的**投放指标**视图会呈现各人群包的投放数据摘要：
@@ -546,6 +580,8 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 | <span id="campaigns"></span>广告系列 | 在选定时间范围内使用了该人群包进行定向投放的广告系列总数（仅限在适用渠道上投放的广告系列） |
 | <span id="campaign-cost"></span>投放成本 | 这些广告系列在选定时间范围内的总成本 |
 | <span id="campaign-revenue"></span>广告产生的收入 | 在选定时间范围内归因到这些广告系列的总收入 |
+
+<div id="detailed-view" />
 
 #### 详情视图
 
@@ -567,6 +603,8 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 | <span id="cost"></span>成本 | 选定时间范围内的投放成本（总成本以及按适用渠道和广告系列细分的成本） |
 | <span id="revenue"></span>收入 | 在选定时间范围内归因到相关广告系列的收入（总收入以及按适用渠道和广告系列细分的收入） |
 | <span id="daily-reach"></span>日均触达量 | 在选定时间范围内浏览过相关广告系列中的广告的日平均独立用户数。 |
+
+<div id="data-sources-and-availability" />
 
 #### 数据来源及可用性
 
@@ -614,6 +652,8 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 特点和局限性
 
 受众共享产品具有以下特点和局限性，敬请留意。
@@ -656,6 +696,8 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 | S2S报告 | 请确保在S2S应用内事件的回传数据中包含用户标识符（IDFV或IDFA），并且该IDFV或IDFA与AppsFlyer SDK所采集的数据一致。这样可以避免数据遗漏，并确保受众相关的统计和分析结果准确无误。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 
 ## <Image alt="ESP 最终主要知识库图像.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
 
+<div id="about-the-appsflyer-esp-integration" />
+
 ## 关于 AppsFlyer ESP 集成
 
 营销人员通常使用电子邮件服务提供商 (ESP) 来发送大规模电子邮件活动。尽管这应该是一个简单的过程，提供可预测的用户旅程，但情况往往并非如此。原因在于典型的 ESP 如何处理其分析，这往往会破坏深度链接并对移动用户体验产生负面影响。因此，用户有时会被引导到移动网站而不是您的应用程序，从而降低转化的可能性。
@@ -34,9 +36,13 @@ AppsFlyer 通过 ESP 集成解决方案解决了这个问题，使 AppsFlyer 能
 
 设置与 AppsFlyer 的 ESP 集成，以在您的电子邮件活动中实现顺畅和安全的深度链接体验，以获得最佳的移动用户参与度和转化率。
 
+<div id="set-up-the-integration" />
+
 ## 如需设置对接：
 
 <span id="h_01J3JHFXRP57VS9D22FEWS2JZW"></span>本节描述如何设置您的 ESP 与 AppsFlyer 的集成。
+
+<div id="prerequisites" />
 
 ### 前期准备
 
@@ -60,12 +66,16 @@ AppsFlyer 通过 ESP 集成解决方案解决了这个问题，使 AppsFlyer 能
 
 **创建一个新的CTD是强制性的**，即使您已经在使用现有的。这确保当前在线电子邮件活动的流量没有影响。
 
+<div id="notes" />
+
 > 📘 **说明**
 >
 > * SSL证书将由AppsFlyer处理（在第3步中）。
 > * 在此阶段，电子邮件链接可能不会被保护，这意味着URL前缀将是HTTP而不是HTTPS。这将在[第5步中解决。](#h_01JMYDQGPF3B9GNH0RY27JW3E4)）
 
 </Accordion>
+
+<div id="h_01JMYD02VRGT8353RDBARRPJ2M" />
 
 <div id="step-2-use-a-oneLink-template-for--your-email-campaign" />
 
@@ -141,6 +151,8 @@ b.复制并发送说明后，点击 **完成**。
 * [配置您的应用以支持深度链接](#配置您的应用以支持深度链接)
 * [配置您的应用以处理网页链接和应用链接](#配置您的应用以处理-web-链接和应用链接)
 
+<div id="configure-your-app-to-support-associated-domains" />
+
 #### **配置您的应用以支持关联域**
 
 AppsFlyer 为您的应用托管应用关联文件，以启用 <Anchor target="_blank" href="/marketers/zh/docs/appsflyer-knowledge-base-glossary#universal-links">Universal Links (iOS)</Anchor> 或 <Anchor target="_blank" href="/marketers/zh/docs/appsflyer-knowledge-base-glossary#android-app-link">App Links (Android)</Anchor>。
@@ -159,6 +171,8 @@ AppsFlyer 为您的应用托管应用关联文件，以启用 <Anchor target="_b
 请注意<strong>：</strong>点击域应添加到已在 Android Manifest 中定义的当前域。
 
 
+<div id="configure-your-app-to-support-deep-linking" />
+
 #### **配置您的应用以支持深度链接**
 
 当点击应用链接或通用链接时，应用应打开。
@@ -172,6 +186,8 @@ AppsFlyer 为您的应用托管应用关联文件，以启用 <Anchor target="_b
 
 2.使用 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">统一深度链接 API</Anchor> 获取深度链接参数并处理深度链接数据。
 
+
+<div id="configure-your-app-to-handle-weblinks-and-application-links" />
 
 #### **配置您的应用以处理 Web 链接和应用链接**
 

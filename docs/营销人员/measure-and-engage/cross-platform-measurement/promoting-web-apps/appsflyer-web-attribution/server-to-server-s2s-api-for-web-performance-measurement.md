@@ -22,17 +22,23 @@ x-zendesk:
 ---
 > **概览：** 网页端效果衡量S2S API支持通过服务器直接向AppsFlyer发送网页访问和事件数据，不受广告拦截器、Cookie限制等浏览器端限制的影响。您可以将S2S API与Web SDK搭配使用，也可以单独使用，以获取更完整、更高质量的归因数据。
 
+<div id="about-the-s2s-api-for-web-attribution" />
+
 ## 关于网页端归因S2S API
 
 AppsFlyer支持使用Web SDK（客户端）或S2S API（服务器对服务器，简称S2S）发送用于归因的网页端数据。您可以根据实际配置和需求单独使用其中一种方式，也可以组合使用。
 
 Web SDK在浏览器中运行。S2S API则支持从自有后端发送相同的数据。S2S API之所以重要，是因为Safari ITP、Firefox ETP和Brave等隐私保护型浏览器及相关功能，以及广告拦截器，都可能阻止或限制客户端衡量。据行业估算，网页端用户中受浏览器端拦截影响的比例约为25%–40%。S2S调用由服务器发起，无需经过浏览器，因此完全不受上述限制影响。
 
+<div id="how-it-works" />
+
 ### 工作原理
 
 1. 用户访问您的网站或在浏览器中触发事件。
 2. 您的服务器接收事件。
 3. 您的服务器将事件直接发送至AppsFlyer服务器进行归因。
+
+<div id="why-use-s2s" />
 
 ### 为什么使用S2S
 
@@ -43,9 +49,13 @@ S2S API主要具有以下优势：
 * **通过后端丰富事件数据：** 通过S2S API发送事件前，您的服务器可以向事件中添加更多数据，包括Customer User ID、经过哈希处理的电子邮件地址或电话号码、CRM属性、订阅状态或任意内部标识符。这样有助于提升身份解析能力和信号质量。
 * **安全性：** 开发者密钥、用户标识符及其他补充数据均保存在您的服务器上，并通过安全连接发送，您可以完全控制哪些数据会传出自有基础架构。
 
+<div id="api-specification" />
+
 ## API规范
 
 基础URL：`https://events.appsflyer.com`
+
+<div id="authentication" />
 
 ### 身份验证
 
@@ -56,9 +66,13 @@ S2S API主要具有以下优势：
 | `Authorization` | API令牌 | 请按以下格式在标头中添加您的S2S API令牌：<br /><br />`Authorization: Bearer {s2s-token}` |
 | `Content-Type` | 字符串 | 必须为`application/json`。所有请求均须包含此项。 |
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 如需创建S2S API令牌，请参阅<Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens#管理token">管理AppsFlyer令牌</Anchor>中的说明。
+
+<div id="measure-an-event" />
 
 ### 衡量事件
 
@@ -125,6 +139,8 @@ S2S API主要具有以下优势：
 
 </Accordion>
 
+<div id="measure-a-visit" />
+
 ### 衡量访问
 
 `POST /v2.0/s2s/visits/app/web/{appId}`
@@ -187,6 +203,8 @@ S2S API主要具有以下优势：
 
 </Accordion>
 
+<div id="set-up-a-fully-server-side-integration" />
+
 ## 配置完全基于服务器端的对接
 
 如果您同时使用Web SDK和S2S，请改为参阅[提取Web SDK的afUserID](#extracting-the-web-sdk-afuserid)。本节仅适用于完全不使用SDK的对接方式。
@@ -234,6 +252,8 @@ Cookie可以任意命名；AppsFlyer读取的是您发送的值，与Cookie名�
 
 </Accordion>
 
+<div id="things-to-consider" />
+
 ## 注意事项
 
 <div id="user-identification" />
@@ -275,10 +295,14 @@ Cookie可以任意命名；AppsFlyer读取的是您发送的值，与Cookie名�
 * `afUserId`参数是Web SDK在用户首次访问网站时设置的唯一标识符。
 * 如需获取`afUserId`，可使用以下任一方法。
 
+<div id="h_01HKW2YAW5FK04C3AWCXGP1XAW" />
+
 #### **从HTTP Cookie标头中获取afUserId**
 
 * 访客浏览器向您的网站发起请求时会发送`afUserId`。
 * 如有需要，可从HTTP Cookie标头中提取该值。
+
+<div id="h_01HKW2YAW5CT2WZ229KJD2FWYK" />
 
 #### **在访客浏览器中查看afUserId**
 

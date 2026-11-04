@@ -24,9 +24,11 @@ x-zendesk:
 > **概要：** 概览： 通过为您的点对点（P2P）借贷应用程序记录这些建议的应用内事件，评估用户在整个用户路径中的质量。
 
 
-<span id="p2p-lending"></span>P2P借贷是个人和企业相互借贷的一种方式。我们建议记录的典型事件有个人贷款人和借款人的行为、人们提供的贷款类型，以及贷款接受率和拒绝率。
+<span id="-p2p-lending"></span><span id="p2p-lending"></span>P2P借贷是个人和企业相互借贷的一种方式。我们建议记录的典型事件有个人贷款人和借款人的行为、人们提供的贷款类型，以及贷款接受率和拒绝率。
 
 您从事件记录中收集的数据可以筛选出值得信赖的借款人，并为他们提供更优惠的利率。同样, 您可以看到谁是最活跃的贷款者, 并向他们提供更低的费用。此外，一旦知道哪种类型的贷款最受用户欢迎，您就可以发起针对这些受众的营销广告活动。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -35,6 +37,8 @@ x-zendesk:
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
 
 [![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -77,6 +81,8 @@ x-zendesk:
 可在无需任何其他参数的情况下发送
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 
@@ -122,6 +128,8 @@ x-zendesk:
 **事件参数**
 
 可在无需任何其他参数的情况下发送
+
+<div id="note" />
 
 > 📘 **注意**
 >

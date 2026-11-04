@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="revenue-etl" />
+
 ## 收入 ETL
 
 **请注意**：
@@ -36,6 +38,8 @@ x-zendesk:
 | [广告收入【SDK展示层级】](/docs/revenue-etl-reports#impression-level-report) | <ul><li>通过SDK上报的展示级别数据。</li><li>由SDK上报的展示级别数据与由S2S API上报的设备级别数据相结合</li></ul> |  | 每小时更新一次<Anchor target="_blank" href="/marketers/zh/docs/roi360-guide-ad-revenue-attribution#data-freshness">详情请见此处说明。</Anchor> |
 |  | IAP和订阅收入的对接流程 |  | 每小时更新一次 |
 |  | IAP和订阅收入的对接流程 |  | 每8小时更新一次 |
+
+<div id="reports" />
 
 ## 报告
 
@@ -55,7 +59,7 @@ x-zendesk:
 广告收入平台的对接方式
 
 
-2. <span id="the-report-data-flow"></span>AppsFlyer的ROI360广告收入报告功能会完成下列数据处理工作：
+2. <span id="data-flow-2"></span><span id="data-flow-1"></span><span id="data-flow"></span><span id="the-report-data-flow"></span>AppsFlyer的ROI360广告收入报告功能会完成下列数据处理工作：
 
    1. 数据规范化
    2. 将收入归因到带来激活的渠道，并进行数据扩充。
@@ -72,7 +76,7 @@ x-zendesk:
 | SDK + S2S |  | 17:00 | 00:00 — 24:00 |
 
 
-1. <span id="how-to-subscribe-to-the-report"></span><span id="how-to-subscribe-to-the-report::67646c99"></span>从AppsFlyer后台的侧边栏中选择**报告 > Data Locker**。
+1. <span id="how-to-subscribe-to-the-report"></span><span id="how-to-subscribe-to-the-report-2"></span><span id="how-to-subscribe-to-the-report::67646c99"></span>从AppsFlyer后台的侧边栏中选择**报告 > Data Locker**。
 
 **请注意：**
 
@@ -80,6 +84,8 @@ x-zendesk:
 <span id="how-to-access-the-report-in-dl"></span>构成报告路径的文件夹结构如下：
 
 格式：`<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
+
+<div id="report-folder-hierarchy" />
 
 #### 报告文件夹的层次结构
 
@@ -167,14 +173,16 @@ bucket
 **请注意：**
 
 
-1. <span id="how-to-subscribe-to-the-report::cae4aa15"></span>从AppsFlyer后台的侧边栏中选择**报告 > Data Locker**。
+1. <span id="how-to-subscribe-to-the-report-1"></span><span id="how-to-subscribe-to-the-report::cae4aa15"></span>从AppsFlyer后台的侧边栏中选择**报告 > Data Locker**。
 
 **请注意：**
 
 
-<span id="how-to-access-the-report-in-your-bucket"></span>构成报告路径的文件夹结构如下：
+<span id="how-to-access-the-report-in-your-bucket-2"></span><span id="how-to-access-the-report-in-your-bucket"></span>构成报告路径的文件夹结构如下：
 
 `<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
+
+<div id="report-folder-hierarchy-2" />
 
 #### 报告文件夹的层次结构
 
@@ -218,6 +226,10 @@ bucket
 
 <Accordion title="广告收入【SDK展示层级】">
 
+<div id="when-is-the-report-data-available-1" />
+
+<div id="data-source" />
+
 #### 数据来源
 
 广告收入平台的对接方式
@@ -238,7 +250,7 @@ bucket
 3. **广告收入【SDK展示层级】**
 
 
-<span id="how-to-access-the-report-in-aws-the-bucket"></span>构成报告路径的文件夹结构如下：
+<span id="how-to-access-the-report-in-your-bucket-3"></span><span id="how-to-access-the-report-in-aws-the-bucket"></span>构成报告路径的文件夹结构如下：
 
 `<bucket-name>/t=attributed_adrevenue_sdk_impression_level/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
@@ -292,12 +304,14 @@ bucket
 |  |  |
 
 
-1. <span id="data-flow::bde19643"></span>从AppsFlyer后台的侧边栏中选择**报告 > Data Locker**。
+1. <span id="data-flow-4"></span><span id="how-to-subscribe-to-the-report-3"></span><span id="when-is-the-report-data-available-2"></span><span id="data-flow::bde19643"></span>从AppsFlyer后台的侧边栏中选择**报告 > Data Locker**。
 
 
-<span id="how-to-access-the-report-in-your-bucket::b136ba80"></span>构成报告路径的文件夹结构如下：
+<span id="how-to-access-the-report-in-your-bucket-4"></span><span id="how-to-access-the-report-in-your-bucket::b136ba80"></span>构成报告路径的文件夹结构如下：
 
 `<bucket-name>/t=stores_rawdata/dt=<dt=yyyy-mm-dd>/h=<hh>`
+
+<div id="report-folder-hierarchy-3" />
 
 #### 报告文件夹的层次结构
 
@@ -347,18 +361,20 @@ bucket
 
 |  |  |  |
 | --- | --- | --- |
-|  | <span id="the-report-data-processing-flow"></span>04:00 - 05:00 | 00:00 — 04:00 |
+|  | <span id="when-are-the-report-versions-available-1"></span><span id="the-report-data-processing-flow"></span>04:00 - 05:00 | 00:00 — 04:00 |
 |  | 12:00 - 13:00 | 00:00 — 12:00 |
 |  | 20:00 - 21:00 | 00:00 — 20:00 |
 |  | 05:00 - 06:00 | 00:00 — 24:00 |
 
 
-1. <span id="how-to-subscribe-to-the-report::a624afde"></span>从AppsFlyer后台的侧边栏中选择**报告 > Data Locker**。
+1. <span id="how-to-subscribe-to-the-report-4"></span><span id="how-to-subscribe-to-the-report::a624afde"></span>从AppsFlyer后台的侧边栏中选择**报告 > Data Locker**。
 
 
 <span id="how-to-access-the-report-in-the-aws-bucket"></span>构成报告路径的文件夹结构如下：
 
 `<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
+
+<div id="report-folder-hierarchy-4" />
 
 #### 报告文件夹的层次结构
 

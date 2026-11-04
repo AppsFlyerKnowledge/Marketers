@@ -22,7 +22,9 @@ x-zendesk:
 > **概要： PC端原生对接支持PC端应用的归因和应用内事件记录（即在用户的PC上进行归因和记录）。**
 
 
-<span id="about-steam-attribution"></span>这些关键信息能够帮助营销人员评估并优化其市场推广工作。
+<span id="about-epic-game-attribution"></span><span id="about-steam-attribution"></span>这些关键信息能够帮助营销人员评估并优化其市场推广工作。
+
+<div id="example-attribution-flow" />
 
 ### 归因链接示例
 
@@ -34,6 +36,8 @@ x-zendesk:
 2. 您可以通过游戏落地页让用户跳转到您的Steam游戏页面。这个步骤对于UTM及其他URL参数的收集至关重要。有了这些参数，AppsFlyer就能将来自相关点击/激活的用户归因到带量的媒体渠道或广告主的自有媒体。  
    如果您的游戏支持多个平台，可以在落地页中提供跳转到各个平台的链接，比如Xbox、Microsoft商店以及Steam页面等。
 4. 游戏激活游戏激活：用户激活游戏时即会触发归因，并开始记录应用内事件和应用打开（session）。
+
+<div id="integration-procedures" />
 
 ## 对接流程
 
@@ -162,12 +166,18 @@ x-zendesk:
 </Table>
 
 
+<div id="traits-and-limitations" />
+
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ## 特点与局限性
 
 | 特点 | 说明 |
 | --- | --- |
 | 再营销 | 目前尚不支持 |
 | 成本数据 | 必须通过邮件<Anchor target="_blank" href="/marketers/zh/docs/import-cost-data">上传</Anchor>的方式来发送成本数据。 |
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

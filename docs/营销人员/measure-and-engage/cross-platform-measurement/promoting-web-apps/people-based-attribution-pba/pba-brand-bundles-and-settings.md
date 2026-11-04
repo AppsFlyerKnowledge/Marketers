@@ -27,9 +27,13 @@ x-zendesk:
 
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
+<div id="about-brand-bundles" />
+
 ## 关于品牌套件
 
 品牌通常在网页和移动端资源共同组成的生态环境内运营。因此，广告主需要了解品牌在网页与移动平台上的整体表现。在PBA中，品牌套件可将移动端与网页属性的数据整合为统一实体，以便广告主进原始数据分析和处理。
+
+<div id="what-is-a-web-app" />
 
 > 📘 **什么是网页应用？**
 >
@@ -45,6 +49,8 @@ x-zendesk:
 * 您无法从一个套件中移除应用或将其转移至另一个套件，除非将原套件删除。
   * 删除品牌套件后，AppsFlyer将停止为该套件归因PBA数据，历史数据也将无法访问。
 
+<div id="accessing-brand-bundles" />
+
 ## 访问品牌套件
 
 您可以通过以下路径进入**品牌套件**页面，以管理套件及其相关设置：
@@ -52,6 +58,8 @@ x-zendesk:
 * 从AppsFlyer后台的顶部菜单栏中选**我的应用 >** **查看品牌套件**。  
                            或
 * 在AppsFlyer后台的侧边栏中选择**设置**> **品牌套件。**
+
+<div id="managing-brand-bundles" />
 
 ## 管理品牌套件
 
@@ -85,6 +93,8 @@ x-zendesk:
      * 移动应用不是创建套件时的必选项。
      * 您可以在套件中可添加任意数量的移动应用，无数量限制。
 4. 点击创建套件。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -161,6 +171,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="faq" />
+
 ## 常见问题解答
 
 <div id="can-i-include-the-same-app-in-more-than-one-bundle" />
@@ -193,6 +205,8 @@ x-zendesk:
 
 <Accordion title="删除品牌套件后会发生什么？">
 
+<div id="faqs-what-happens-if-i-delete-a-bundle" />
+
 #### 删除品牌套件后会发生什么？
 
 如果您删除了某个品牌套件：
@@ -220,6 +234,8 @@ x-zendesk:
 您可能尚未订阅PBA服务。请联系您的客户成功经理或发送邮件至 [hello@appsflyer.com](mailto:hello@appsflyer.com)以升级套餐。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

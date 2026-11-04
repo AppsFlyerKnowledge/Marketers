@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** 本文主要解答了广告主在AppsFlyer中使用Meta ads时经常会碰到的一些问题。
 
+<div id="meta-ads-faq" />
+
 ## Meta ads常见问题解答
 
 <div id="i-dont-see-facebook-campaign-clicks-in-appsflyers-dashboard" />
@@ -82,6 +84,8 @@ Google Play安装引用API允许广告商检索来自Google Play商店的安装�
 
 Meta安装引用提供存储在设备本地的额外活动元数据。这可以通过[AppsFlyer SDK](https://dev.appsflyer.com/hc/docs/install-android-sdk#meta-install-referrer)访问。它通过启用更丰富的数据（包括点击和展示数据）来补充Google Play安装引用，并可能跨多个会话。通过Meta安装引用的归因使用匹配类型，如`fb_referrer`（Facebook）和`ig_referrer`（Instagram）。
 
+<div id="campaign-attribution-fields" />
+
 #### 活动归因字段
 
 * Ad ID
@@ -93,10 +97,14 @@ Meta安装引用提供存储在设备本地的额外活动元数据。这可以�
 * Account ID（账户ID）
 * Channel（流量入口）
 
+<div id="sdk-and-setup-notes" />
+
 #### SDK和设置说明
 
 * Google Play引用数据需要AppsFlyer SDK版本5.4.0及以上。
 * Meta引用支持取决于正确的SDK配置。请参见<Anchor target="_blank" href="/marketers/zh/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">此公告</Anchor>以获取实施细节。
+
+<div id="submitting-the-decryption-key" />
 
 #### 提交解密密钥
 
@@ -259,11 +267,15 @@ iOS Universal Link和Android App Link仅可在付费广告中使用。在非付�
 
   您仍可以通过GCD拉取**广告系列、广告**组和广告名称，但需要<Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions#meta-ads">签署高级</Anchor>移动衡量（AMM）。在这种情况下，您可以使用这些值来应用您自己的**自定义深度链接逻辑**。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > Meta的数据共享政策会影响GCD的数据可用性。请确保对AMM进行签名，以充分利用广告系列层级的数据。
 
 </Accordion>
+
+<div id="meta-ads-cost-faq" />
 
 ## Meta ads成本的常见问题解答
 
@@ -427,6 +439,8 @@ Meta ads不支持在<Anchor target="_blank" href="/marketers/zh/docs/master-api-
 
 </Accordion>
 
+<div id="facebook-sdk-faq" />
+
 ## Facebook SDK疑难解答
 
 <div id="who-needs-facebooks-sdk" />
@@ -455,6 +469,8 @@ Meta ads不支持在<Anchor target="_blank" href="/marketers/zh/docs/master-api-
 * **动态产品广告活动数据**:您只能通过Facebook SDK获取动态产品广告的数据。
 * **其他Meta广告功能**:其他Facebook功能 您可能需要Facebook SDK是出于与归属无关的原因，例如身份验证，广告获利，社交共享，用户邀请等。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 上述关于深度链接和延迟深度链接的信息及建议是基于AF对Facebook广告的全面测试得出的，在这些测试中我们使用的是Meta ads的演示/预览工具，其机制与实际投放的广告并不完全一致。
@@ -474,6 +490,8 @@ Meta ads不支持在<Anchor target="_blank" href="/marketers/zh/docs/master-api-
     请注意：如要启用iOS 14.5+的SKAN归因，必须<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-interoperation-with-meta-ads#in-app-event-mapping">将应用内事件映射到Meta ads。</Anchor>
 
 </Accordion>
+
+<div id="meta-ads-attribution-faq" />
 
 ## Meta ads归因的常见问题解答
 
@@ -510,6 +528,8 @@ Meta ads不允许广告主为第三方应用商店（如百度等）中的安卓
 3. 落地页中必须设计一个**下载应用**按钮，直接链接到APK包所在的第三方商店。
 4. 潜在用户点击按钮后跳转到第三方商店，并完成应用激活。然后AppsFlyer会通过MMP API将该用户归因到Meta ads。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 上述解决方案也适用于Google Play和App Store中的应用，用户需要先跳转到相关的<Anchor target="_blank" href="/marketers/zh/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id">落地页</Anchor>，然后才能进入商店。
@@ -525,6 +545,8 @@ Meta ads不允许广告主为第三方应用商店（如百度等）中的安卓
 Meta Ads是通过Meta ads账号来识别用户的，而有些用户会将同一个Meta ads账户同时关联到其iOS和安卓设备。
 
 如果此类用户在其安卓设备上点击或浏览了相关应用的广告，然后在iOS设备上激活了该应用，Meta ads会将该次激活归因给自己。这种情况就会导致iOS应用的面板中出现安卓广告系列的名称。
+
+<div id="example" />
 
 > 📄 **示例**
 >

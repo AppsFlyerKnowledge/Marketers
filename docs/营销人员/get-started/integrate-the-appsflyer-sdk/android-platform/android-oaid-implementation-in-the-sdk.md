@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 概要：本文介绍了如何收集安卓OAID，从而对第三方安卓应用商店带来的激活进行归因。
 
+<div id="about-oaid" />
+
 ## OAID简介
 
 匿名设备标识符（Open Anonymous Device Identifier，简称OAID）是一种用于安卓设备的唯一标识符，可由用户重置。该标识符由移动安全联盟（MSA）、中国信息通信研究院以及设备厂商合力推出，旨在替代IMEI等不可重置的设备标识符，以保护用户隐私。
@@ -29,6 +31,8 @@ x-zendesk:
 OAID通常用于不支持Google Play Services的设备（即没有Google Advertising ID的设备），以对其进行广告衡量及激活归因。
 
 <span id="supported-devices"></span>MSA提供了专门的SDK，可读取所有设备的OAID。对于华为设备，则可以使用HMS Core SDK。
+
+<div id="integration" />
 
 ## 对接
 
@@ -65,6 +69,8 @@ OAID的集成分为3步：
 * 让您的开发人员按照<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#huawei-hms-sdk-integration">集成指南</Anchor>完成相关操作。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

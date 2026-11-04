@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：概要：启用AppsFlyer与Snapchat的SKAN互通设置后，Snapchat就能向AppsFlyer发送SKAN回传，同时AppsFlyer也能与Snapchat分享广告主的CV值映射构架。**
 
+<div id="skan-interoperability-appsflyer---snapchat" />
+
 ## SKAN互通：
 
 如果您与多个广告平台合作，建议您在AppsFlyer后台配置您与这些渠道的SKAN对接，这样您就可以利用AppsFlyer平台上的其他可用指标（如成本等）来扩充SKAN的效果指标数据。
@@ -43,6 +45,8 @@ x-zendesk:
 * 您必须为每一个在Snap上推广的应用都配置一个[Snap App ID](https://businesshelp.snapchat.com/en-US/a/snap-app-id)。
 * 需要对Snapchat Ad Sets启用SKAN衡量。
 * 一个应用每次最多只能对10个广告组启用SKAN归因。
+
+<div id="enabling-appsflyer-skan-interoperation-with-snapchat" />
 
 ### AppsFlyer与Snapchat的SKAN互通启用方式
 
@@ -118,6 +122,10 @@ x-zendesk:
 
            确认SKAN衡量中设置的**SDK事件名称**正确对应到**渠道事件标识符**（即Snapchat的事件名称）。请务必根据当前选定的SKAN衡量模式或您<Anchor target="_blank" href="/marketers/zh/docs/skan-cv-decode-map-your-cv-to-events">自定义的转化映射</Anchor>构架进行事件映射。**请注意**：默认的衡量模式为收入模式。
 
+           <div id="inapp-event-mapping-guide" />
+
+           <div id="in-app-event-mapping-guide" />
+
            #### 应用内事件映射指南
 
         | 衡量选项 | 映射条件 |
@@ -148,6 +156,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="discrepancies-guide" />
@@ -160,6 +170,8 @@ x-zendesk:
 | 激活日期差异 | **数据差异原因**<br /><br />AppsFlyer与Snapchat的激活日期差异如下：<ul><li>AppsFlyer：也就是说，AF中默认的调整幅度为48小时（均以UTC时间为准）。<Anchor target="_blank" href="/marketers/zh/docs/about-data-freshness-and-timezone-support#skan">详情请见SKAN数据时效性。</Anchor></li><li>SnapchatSnapchat：通常将iOS回传接收时间直接作为激活日期，不加调整。</li></ul>**解决方法**<br /><br />对比两个平台的数据时请注意上述差异。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

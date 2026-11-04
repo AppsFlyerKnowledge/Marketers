@@ -34,6 +34,8 @@ x-zendesk:
 
 ![5888ResolveIpAddress_us-en.png](https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png)
 
+<div id="determining-user-location" />
+
 ## 用户位置的识别方式
 
 用户在设备上的行为会被上报给AppsFlyer，这些行为（事件）中包含多个数据字段，包括设备IP地址。
@@ -53,12 +55,16 @@ AppsFlyer使用全球领先的IP定位数据服务商<Anchor target="_blank" hre
 
 **示例：将IP地址转换为地理位置**![IPTables_us-zh.png](https://files.readme.io/0d7d4d4190face77e18476bdb9e47fdd26ed62ab91cd641f76f728d9a7c8d005-360011787798.png)
 
+<div id="note-regarding-the-united-kingdom-uk" />
+
 > 📘 **关于英国（UK）的说明**
 >
 > <Image alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
 >
 > * 在AppsFlyer平台中，英国的国家代码为UK。
 > * 但根据ISO 3166标准，英国的正式代码为“GB”。尽管“UK”在ISO中被保留用于代表英国，但UK并不是ISO中英国的官方代码。
+
+<div id="location-discrepancies" />
 
 ### 位置差异
 

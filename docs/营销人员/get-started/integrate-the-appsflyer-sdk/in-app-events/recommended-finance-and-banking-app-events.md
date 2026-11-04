@@ -24,7 +24,7 @@ x-zendesk:
 > **概要：** 概览：通过为您的金融和银行应用程序记录这些建议的应用内事件，评估用户在整个用户路径中的质量。
 
 
-<span id="finance-and-banking"></span>财务和银行应用程序使用户能够执行与财务相关的广泛目标，包括注册新的信用卡或申请贷款。
+<span id="-finance-and-banking"></span><span id="finance-and-banking"></span>财务和银行应用程序使用户能够执行与财务相关的广泛目标，包括注册新的信用卡或申请贷款。
 
 记录这些事件可以帮助您确定：
 
@@ -32,11 +32,15 @@ x-zendesk:
 * 用户希望在信用卡中获得哪些好处
 * 用户需要哪些财务援助，以及他们需要多少援助
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 如需详细的开发人员指南，请在**AppsFlyer开发者资源中心**查找<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">。</Anchor>
 >
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -79,6 +83,8 @@ x-zendesk:
 | af\_registration\_method | 注册方式的类型 | 电子邮件，Facebook |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

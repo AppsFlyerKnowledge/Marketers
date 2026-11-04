@@ -28,7 +28,11 @@ x-zendesk:
 
 ![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
 
+<div id="introduction" />
+
 ## 简介
+
+<div id="prerequisites" />
 
 ## 前期准备
 
@@ -43,15 +47,27 @@ x-zendesk:
 </Tabs>
 
 
+<div id="step-1-setting-up-link-branding-in-iterable" />
+
+<div id="setting-up-iterable" />
+
 ### 第1步：
 
+<div id="step-2-uploading-your-ssl-certificate-to-iterable" />
+
 ### 第2步：
+
+<div id="step-2-give-iterable-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### 第2步：
 
 4. 有关更多信息，请参见<Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/360035496511">这里</Anchor> 。
 
 
+
+<div id="step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest" />
+
+<div id="setting-up-your-app" />
 
 #### 第1步：
 
@@ -68,6 +84,8 @@ x-zendesk:
 </activity>
 ```
 
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
+
 #### 第2步：
 
 2.
@@ -75,6 +93,10 @@ x-zendesk:
    AppsFlyerLib.getInstance().setResolveDeepLinkURLs("click.example.com");
    ```
 
+
+<div id="sending-your-first-email" />
+
+<div id="step-1-associating-click-domains-in-xcode" />
 
 #### 第1步：
 
@@ -146,6 +168,8 @@ func allHTTPHeaderFields(forResolveDeepLinkURL URL: URL!) -> [String : String]! 
    ```http
    <a href="greatapp.onelink.me/abcd/1234567">Download my great app!</a>
    ```
+
+<div id="testing-your-links" />
 
 > 📄 **示例**
 >

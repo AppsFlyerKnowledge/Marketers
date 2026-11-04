@@ -27,6 +27,8 @@ x-zendesk:
 
 [![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
 
+<div id="about-user-attributes" />
+
 ## 用户特征简介
 
 用户特征与事件数据不同，是指用户与您分享的常规特征信息，可涵盖性别、年龄、生日和国家等静态信息以及游戏得分等动态信息。
@@ -62,6 +64,8 @@ x-zendesk:
 
 在受众共享面板中创建用户特征（基于最喜欢的运动以及游戏得分），该操作会向规则组合开放CRM数据的访问权限。
 
+<div id="scenario-user-attributes" />
+
 #### 此场景中的用户特征
 
 | 特点 | 格式 | 层级 |
@@ -76,6 +80,8 @@ x-zendesk:
 [<Image alt="UserAttributedExample.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)
 
 </Accordion>
+
+<div id="implement-user-attributes" />
 
 ## 用户特征配置
 
@@ -137,7 +143,7 @@ x-zendesk:
 | --- | --- |
 | <span id="search-and-filter"></span>搜索和筛选 | 可用维度包括用户特征名称、应用名称和用户特征所在层级（应用层级/账户层级）。 |
 | <span id="sort-by"></span>排序方式 | 点击列标题即可调整表格内各行的排序。 |
-| <span id="import-data"></span>导入数据 | <ul><li>[通过CSV文件导入数据](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[通过API导入数据](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
+| <span id="zd-import-data"></span><span id="import-data"></span>导入数据 | <ul><li>[通过CSV文件导入数据](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[通过API导入数据](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
 | <span id="change-api-import-key"></span>更改API导入密钥 | **API导入密钥的更改方式如下：**<ol><li>点击**导入数据**。</li><li>选择**API**。</li><li>点击**刷新导入密钥**。</li></ol>**请注意：** 密钥更新完毕后，请务必对嵌有密钥的脚本做相应的更新。 |
 
 </Accordion>
@@ -247,6 +253,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 }
 ```
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 必须使用带有<Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens#广告主">API token V2.0</Anchor>的Authorization Bearer Header来验证该请求。
@@ -337,15 +345,19 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 
 <Accordion title="局限性">
 
+<div id="general-limitations" />
+
 #### 一般局限性
 
 * CSV/API数据导入方式仅支持整数，不支持小数型数值。**举例来说，**“score”（得分）参数的值可以是90，但不能是90.5。
 * 用户特征数据无法打印或下载。
-* #### 用户特征的参数值限制：
+* #### <span id="attribute-value-limitations"></span>用户特征的参数值限制：
 
   * 参数值内不能包含逗号、点或其他特殊字符。
   * 字符串形式的参数值不能超过40个字符。
   * 参数值不能以0开头。
+
+<div id="api-import-limitations" />
 
 #### API导入限制
 
@@ -358,6 +370,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 "device_id": "39e123.......",
 "customer_id": "",
 ```
+
+<div id="csv-import-limitations" />
 
 #### 详情请见局限性说明部分。
 

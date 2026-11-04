@@ -23,6 +23,8 @@ x-zendesk:
 
 ![awin icon.png](https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png)
 
+<div id="activate-partner" />
+
 ## 启用渠道
 
 **前提条件：** 设置对接前，请务必先<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations#联系相关渠道">联系该渠道</Anchor>并在其平台上开设账户。
@@ -37,16 +39,22 @@ x-zendesk:
    **请注意：** 在您与该渠道合作期间，请确保该开关总是处于打开<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">（启用）</Anchor>状态。
 5. 请按照下文说明，在各个选项卡中完成相关的对接配置。
 
+<div id="setting-up-awin" />
+
 ## 设置Awin
 
 与Awin的集成支持点击归因。
 
 配置窗口包括以下选项卡：渠道对接、归因链接、成本、广告收入和授权。对于Awin，可用的选项卡有集成、归因链接和权限。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 部分设置分iOS和安卓
 > * 进一步了解<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner">渠道对接配置</Anchor>
+
+<div id="prerequisite" />
 
 ### 前期准备
 
@@ -58,9 +66,13 @@ x-zendesk:
 
 **渠道对接**选项卡中包括以下几个部分。
 
+<div id="activate-partner-1" />
+
 #### 启用渠道
 
 在配置对接之前，必须先<Anchor target="_blank" href="/marketers/zh/docs/amazon-ads-campaign-configuration#启用渠道">打开</Anchor>**启用该渠道**开关。详情请见渠道对接的启用和停用说明。有关更多信息，您可以参考<Anchor target="_blank" href="https://developer.awin.com/docs/appsflyer">Awin集成页面</Anchor>.
+
+<div id="advanced-privacy" />
 
 #### 高级隐私保护
 
@@ -72,25 +84,35 @@ x-zendesk:
 | 根据<Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks">高级隐私模板</Anchor>发送回传 |  |
 | 与该渠道分享<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">汇总和匿名数据</Anchor>，即不分享用户级别的数据（设备ID）。 |  |
 
+<div id="general-settings" />
+
 #### 通用设置
 
 **Awin广告主ID**
 
 添加您的Awin商家ID。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 如果您有多个商家ID，请连接主要的一个。
 
+<div id="default-postbacks" />
+
 #### 默认回传
 
 安装的回调仅发送给此合作伙伴。
+
+<div id="in-app-event-settings" />
 
 #### 应用内事件设置
 
 **Awin广告主ID**
 
 添加您的Awin商家ID。
+
+<div id="in-app-event-postbacks" />
 
 #### 应用内事件回传
 
@@ -113,6 +135,8 @@ x-zendesk:
    1. 点击页面左上角渠道名称下方的应用名称，打开应用列表。
    2. 在下拉菜单中选择一个其他应用。
    3. 为选定应用完成<Anchor target="_blank" href="/marketers/zh/docs/amazon-ads-campaign-configuration#integration-tab">对接流程</Anchor>。
+
+<div id="note-2" />
 
 > 📘 **注意事项**
 >
@@ -150,12 +174,16 @@ X Ads的对接不支持广告收入数据。
 
 您可以在这个板块中选择需要向Snapchat开放的数据权限，以便其提供各种功能。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > * 请注意，即使您<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">停用</Anchor>了这个对接，但只要其权限开关处于打开状态，相关权限就仍向Amazon Ads开放。
 > * 进一步了解与<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#permissions-tab">授权</Anchor>相关的信息。
 
 </Accordion>
+
+<div id="deep-linking-and-deferred-deep-linking-using-onelink" />
 
 ## 使用OneLink进行深度链接和延迟深度链接
 
@@ -165,6 +193,8 @@ AWIN作为一个平台支持URI方案，但**不支持**处理iOS通用链接和
 通过AWIN使用OneLink进行深度链接：
 
 * <Anchor target="_blank" href="/marketers/zh/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">设置您的 OneLink URL 和 URI 方案</Anchor>
+
+<div id="note-4" />
 
 > 📘 **注意**
 >

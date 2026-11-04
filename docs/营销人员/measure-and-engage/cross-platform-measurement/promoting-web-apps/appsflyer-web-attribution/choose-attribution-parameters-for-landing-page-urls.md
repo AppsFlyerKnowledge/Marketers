@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概览：** 在网站着陆页链接中添加完整、一致的URL参数，在确保网页端效果衡量准确归因的同时，获得最精细的广告系列数据。
 
+<div id="about-url-attribution-parameter-classes" />
+
 ## URL归因参数类别简介
 
 AppsFlyer会读取着陆页URL（即用户点击的链接）中的广告系列参数，并据此将会话和事件归因到正确的**媒体渠道**、**广告系列**，以及**广告组**和**广告**等更细的层级（如有）。
@@ -36,6 +38,8 @@ URL参数分为两类：PID和UTM。
 * UTM类包括标准UTM参数。
 
 如需详细了解网页端效果衡量如何处理URL参数，请参阅<Anchor target="_blank" href="/marketers/zh/docs/about-traffic-source-resolution">流量来源识别简介</Anchor>。
+
+<div id="supported-pid-and-utm-parameters" />
 
 ### 支持的PID和UTM参数
 
@@ -54,6 +58,8 @@ URL参数分为两类：PID和UTM。
 | 9 | `utm_medium` | 媒体类型 | UTM | 否 | `media_type` |
 | 10 | `utm_campaign` | 广告系列名称 | UTM | 是 | `campaign_name` |
 
+<div id="choose-the-right-attribution-parameters" />
+
 ## 选择合适的归因参数
 
 AppsFlyer会按照特定的优先级顺序，分别检查各报表字段（如媒体渠道或广告系列）对应的URL参数。因此，您可以在同一URL中同时使用**PID类参数**（AppsFlyer原生参数）和**UTM类参数**（标准营销参数），既满足AppsFlyer归因需求，又兼容Google Analytics等其他工具。
@@ -65,6 +71,8 @@ AppsFlyer会按照特定的优先级顺序，分别检查各报表字段（如�
 <Accordion title="场景A：URL仅包含PID类参数（AppsFlyer报表）">
 
 如果主要使用AppsFlyer报表，请选择PID类参数。
+
+<div id="example" />
 
 #### 示例
 
@@ -81,6 +89,8 @@ www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 <Accordion title="场景B：URL仅包含UTM类参数（回退）">
 
 如果缺少`pid`，AppsFlyer会回退至UTM类参数。
+
+<div id="example-1" />
 
 #### 示例
 
@@ -100,6 +110,8 @@ www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 
 AppsFlyer会分别处理媒体渠道和广告系列等归因字段。对于每个字段，系统会按照优先级顺序确定要记录的值。通常，对于同一字段，**PID类参数**的优先级高于**UTM类参数**。
 
+<div id="example-1-overlapping-parameters" />
+
 #### 示例1：同一字段包含两类参数
 
 ```http
@@ -109,6 +121,8 @@ www.website.com?pid=facebook_ads&c=summer_sale&utm_source=facebook&utm_campaign=
 * **媒体渠道：** AppsFlyer同时识别到`pid`和`utm_source`。根据该字段的参数优先级，AppsFlyer会记录`facebook_ads`。
 * **广告系列：** AppsFlyer同时识别到`c`和`utm_campaign`。根据该字段的参数优先级，AppsFlyer会记录`summer_sale`。
 * **结果：** AppsFlyer采用优先级较高的PID类参数值，其他工具仍可读取UTM参数值。
+
+<div id="example-2-mixed-parameter-classes" />
 
 #### 示例2：混合使用不同类别的参数
 
@@ -121,6 +135,8 @@ www.website.com?utm_source=facebook&c=summer_sale
 * **结果：** 由于系统会分别识别各字段的值，AppsFlyer可以结合两类参数的值，成功完成事件归因。
 
 </Accordion>
+
+<div id="other-best-practices" />
 
 ## 其他最佳实践
 

@@ -25,6 +25,8 @@ x-zendesk:
 
 ![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
 
+<div id="activity-dashboard" />
+
 ## 活跃数据面板
 
 * 包含自然量和非自然量数据
@@ -34,9 +36,13 @@ x-zendesk:
   * **平均：** 每天更新一次。比如月活（MAU）、平均日活（DAU）、平均月活（MAU）
 * 筛选条件中的“国家/地区”是指用户激活时所在的位置。
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 如需进一步了解活跃数据面板，我们在<Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7802/play/18621/the-activity-dashboard">AppsFlyer充电站里为您准备了相关课程</Anchor>，视频虽短，但干货满满！
+
+<div id="dashboard-features-and-layout" />
 
 ## 面板功能与布局
 
@@ -122,6 +128,8 @@ x-zendesk:
         日活用户平均收入  
         计算方式为：（第[n]天收入/第[n]天日活）的总和/天数
 
+        <div id="h_01HHYHP1HFZBRTWB8MJ1F6XKZS" />
+
         > 📄 **示例：ARPDAU的计算方式**
         >
         > | 第[n]天 | 当日收入（$） | 日活 | 平均每日用户收入（$） |
@@ -192,6 +200,8 @@ x-zendesk:
 * 每月毛利润：收入、成本、毛利润
 
 </Accordion>
+
+<div id="specifications-and-limitations" />
 
 ## 特点与局限性
 

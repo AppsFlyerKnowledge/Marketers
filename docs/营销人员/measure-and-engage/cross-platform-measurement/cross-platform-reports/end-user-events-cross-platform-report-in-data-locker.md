@@ -25,11 +25,15 @@ x-zendesk:
 
 有关基于用户的归因流程和配置的更多信息，请参见<Anchor target="_blank" href="/marketers/zh/docs/beta-user-based-cross-platform-attribution">基于用户的跨平台归因</Anchor>。
 
+<div id="report-fields" />
+
 ## 报告字段
 
 要了解报告中包含哪些字段，[下载报告样本](https://docs.google.com/spreadsheets/d/e/2PACX-1vRhOl-tyaJvgPd9rxGkGMNrgzHPpr7ZsMMnONOHkzdObor158gJPt7XwCBkreM4ka4OkGIyDmqCp_hh/pub?output=csv)。
 
 报告样本包括所有报告字段及其值。有关字段的定义，请参见<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary">字段字典</Anchor>。
+
+<div id="report-data-freshness" />
 
 ## 报告数据的新鲜度
 
@@ -40,9 +44,13 @@ x-zendesk:
 * 事件被分配到相应的每小时桶中。
   * 示例：在上午3:00到4:00之间进入数据库的事件将出现在上午3:00的桶中。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 事件实际发生与其进入数据库之间通常会有短暂的延迟。报告使用数据库输入时间以确保准确和一致的每小时分组。
+
+<div id="example-of-the-800-am-batch-run" />
 
 ### 上午8:00批处理运行的示例
 
@@ -58,11 +66,15 @@ x-zendesk:
 * 在运行前的最后一小时内的事件不会被处理，以便有足够的时间丰富事件及其相关的CUID。在上述示例中，上午8:00的批处理过程处理在3:00到7:00之间输入数据库的事件。在7:00到8:00之间输入数据库的事件不会被处理。
 * 报告在批处理运行后一个小时内才可用，因为内部过程在该小时内更新批处理。在上述示例中，上午8:00的批处理在上午9:00可用。
 
+<div id="how-to-subscribe-to-the-report" />
+
 ## 如何订阅报告？
 
 1. 从AppsFlyer后台左侧的菜单栏中选择**导出 > Data Locker**。
 2. 在**数据储存库内容**窗格中，向下滚动到**高级报告**部分。
 3. 选择**终端用户事件跨平台。**
+
+<div id="how-to-access-the-report-data-in-your-cloud-bucket" />
 
 ## 如何访问您云存储桶中的报告数据？
 
@@ -72,9 +84,13 @@ x-zendesk:
 <bucket-name>/<DataLocker connection name>/t=end_user_events_user_level_cross_platform/dt=<dt=yyyy-mm-dd>/h=<hour>/
 ```
 
+<div id="dl-report-folder-hierarchy" />
+
 ### 报告文件夹的层次结构
 
 [![](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)
+
+<div id="bi-developer-considerations" />
 
 ## BI开发者注意事项
 
@@ -82,6 +98,8 @@ x-zendesk:
 * 广告收入事件尚未包含。
 * 所有应用的数据都集中在一个文件中。您可以使用App ID字段来区分各应用的数据，或将Data Locker设置为按应用区分数据。建议使用统一的隔离类型。
 * 归因前数据（如成本、点击和展示）应从Cost ETL报告中获取。
+
+<div id="query-examples" />
 
 ### 查询示例
 

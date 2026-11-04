@@ -29,6 +29,8 @@ x-zendesk:
 | **面板位置** |  |
 | 各每份报告的接收 | <ul><li>**如果您的报告中未出现助攻渠道字段（contributor），可以通过**导出数据页面添加。</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **相关文档**
 >
 > * <Anchor target="_blank" href="/marketers/zh/docs/protect360-raw-data-reports#postattribution-reports">归因后识别的假量报告</Anchor>

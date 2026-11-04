@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要**：概要：AppsFlyer推荐的SKAN设置能帮助您更合理地利用转化值，并获取更准确的激活后用户行为信息。
 
+<div id="overview" />
+
 ## 速览
 
 SKAdNetwork（SKAN）是Apple iOS系统的一部分，能让广告主在确保用户隐私的前提下衡量投放效果。SKAN通过数值来衡量激活后的用户行为，这些数值被称为转化值（conversion value，简称CV值），可用的转化值为0-63。
@@ -37,11 +39,15 @@ AppsFlyer的SKAN推荐设置：
 * 帮助您解决CV值设置决策中的一些难题。
 * 以您所在的垂类、国家/地区、用户行为以及SKAN和非SKAN应用数据为基础。
 
+<div id="recommendations" />
+
 ## 推荐设置
 
 <div id="revenue" />
 
 <Accordion title="收入">
+
+<div id="understanding-revenue-recommendations" />
 
 #### **推荐的收入设置**
 
@@ -57,13 +63,19 @@ AppsFlyer每天都会检查您的非SKAN收入数据（这个数据是100%准确
 * 减少范围使用数量，准确衡量收入，节省CV值的用量。
 * 同时涵盖应用内购买和广告收入。
 
+<div id="revenue-recommendations-layout" />
+
 #### **推荐的收入设置布局**
 
 <table><tbody><tr><td colspan="2"><p><img alt="revenue_recommendions_layout.png" src="https://files.readme.io/1595d3f59b6e30154da560a99430e231d8353d1bd54ebed6192ec0f13cd3f5b3-8976338886801.png"/></p></td></tr><tr><td><p><span>A</span></p></td><td><span>您在转化值操作台中设置的用户行为窗口期，SKAN会在此期间衡量收入。</span></td></tr><tr><td><p><span>B</span></p></td><td><span>实际的应用付费用户平均收入（ARPPU）是由AppsFlyer归因模式记录到的精确数据，涵盖自然和非自然用户。</span></td></tr><tr><td><p><span>C</span></p></td><td><p>当前配置的ARPPU（SKAN ARPPU）是指<span>根据您当前在转化值操作台中配置的、用于上报收入的用户行为窗口期和CV值</span>衡量的ARPPU。</p></td></tr><tr><td><span>D</span></td><td><p>详见F和G。</p><p><span><strong>请注意：</strong></span></p></td></tr><tr><td><p><span>E</span></p></td><td><p>近似误差：<span>B和C之间的差异，可能是正误差也可能是负误差，具体取决于上报的SKAN ARPRPU值是偏高还是偏低。</span></p><p><span>比如示例：如果实际ARPPU是$10，SKAN ARPPU是$7，那么近似误差就是上报值偏低30%（每个用户-$3）。</span></p></td></tr><tr><td><p><span>F</span></p></td><td><p>推荐的SKAN收入配置。选择您想要在配置中使用的范围数量。</p></td></tr><tr><td><p><span>G</span></p></td><td><p><span>转化值操作台中的当前收入配置。</span><span></span></p></td></tr></tbody></table>
 
+<div id="using-revenue-recommendations" />
+
 #### **使用推荐的收入设置**
 
 **前期准备： 使用条件：如需使用AppsFlyer推荐的收入设置，必须有至少14天的收入数据。**
+
+<div id="note" />
 
 > 📘 **注意**
 >

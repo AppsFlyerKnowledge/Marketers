@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概览：** AppsFlyer已对网页端衡量解决方案进行升级，旧版基于用户的归因(PBA)将更新为「网页端效果衡量」。本文将为您介绍本次升级的具体变化和迁移步骤，以及报告和服务器端对接所涉及的完整字段映射。
 
+<div id="why-were-upgrading-your-web-measurement" />
+
 ## 为何升级网页端衡量方案
 
 网页端衡量的重要性日益凸显。许多用户会在网站上完成转化，网站也是用户进入移动应用的重要起点。网站不只是落地页，还承载着问答流程、个性化新客引导、付费墙和网页端商店等完整获客流程，往往能够以更低的获客成本吸引意向更高的用户。
@@ -42,9 +44,13 @@ AppsFlyer正在以移动端的衡量标准对网页端衡量能力进行更新�
 >
 > 迁移后，部分数据可能会出现差异。网页端效果衡量采用更先进、更灵活的归因逻辑，因此数据结果可能会与PBA存在差异。
 
+<div id="web-performance-measurement-vs-pba" />
+
 ## 网页端效果衡量与PBA对比
 
 <table><thead><tr><th>功能</th><th>说明</th><th>与PBA对比</th><th>网页端效果衡量</th></tr></thead><tbody><tr><td colspan="4"><strong>数据</strong></td></tr><tr><td>数据时效性</td><td>数据多久后可在报表中显示</td><td>✗每天更新</td><td>✓报表每小时更新，数据延迟约2小时</td></tr><tr><td>数据模型</td><td>数据结构与移动端归因数据是否一致</td><td>✗与移动端不同</td><td>✓与移动端一致，便于合并和分析</td></tr><tr><td colspan="4"><strong>报表</strong></td></tr><tr><td>活跃数据面板</td><td>按事件发生时间统计的数据面板</td><td>✓支持</td><td>✓支持</td></tr><tr><td>群组面板</td><td>获客群组表现随时间变化</td><td>✗不支持</td><td>✓支持</td></tr><tr><td>Data Locker原始数据</td><td>通过Data Locker导出并访问原始归因数据</td><td>✓支持</td><td>✓支持</td></tr><tr><td>广告层级数据颗粒度</td><td>报告可从广告系列逐层细分至广告层级</td><td>✗仅面板支持，原始数据不支持</td><td>✓面板和原始数据均支持完整的广告系列层级粒度</td></tr><tr><td>跨平台LTV</td><td>打通网页端和移动端用户旅程，呈现统一的LTV</td><td>✗不支持</td><td>✓支持</td></tr><tr><td colspan="4"><strong>成本与信号</strong></td></tr><tr><td>网页端成本</td><td>接收并报告网页端广告的支出数据</td><td>✗不支持</td><td>✓支持</td></tr><tr><td>优化回传</td><td>向广告平台回传优化信号</td><td>✗不支持</td><td>✓支持</td></tr><tr><td colspan="4"><strong>实施</strong></td></tr><tr><td>网页端SDK(Pixel)</td><td>用于衡量网页访问和事件的客户端SDK</td><td>✓支持</td><td>✓沿用原有SDK，无需对代码进行调整</td></tr><tr><td>S2S支持</td><td><b>对访问和事件进行完整的服务器端衡量</b></td><td>✗仅支持事件</td><td>✓支持事件和访问可通过服务器端实施。</td></tr><tr><td colspan="4"><strong>归因引擎</strong></td></tr><tr><td>归因窗口</td><td>可配置回溯窗口、归因窗口、再互动窗口和非活跃窗口</td><td>✗仅支持点击回溯窗口</td><td>✓支持5个可配置窗口（完全掌控）</td></tr><tr><td>自定义UA事件</td><td>定义除首次访问外还定义哪些事件属于获客事件</td><td>✗仅限首次访问</td><td>✓支持任意自定义事件，例如注册、购买</td></tr><tr><td>UA与再营销</td><td>分别对新用户获取和再互动进行归因</td><td>✗无UA概念，事件归因至最终触点</td><td>✓提供独立的UA和再营销视图，并支持双重归因</td></tr></tbody></table>
+
+<div id="migrate-to-web-performance-measurement" />
 
 ## 迁移步骤
 
@@ -62,6 +68,8 @@ AppsFlyer正在以移动端的衡量标准对网页端衡量能力进行更新�
 >
 > 迁移后，部分数据可能会出现差异。网页端效果衡量采用更先进、更灵活的归因逻辑，因此数据结果可能会与PBA存在差异。**<Anchor target="_blank" href="/marketers/zh/docs/about-traffic-source-resolution#步骤-1记录识别访问">应用打开记录逻辑</Anchor>保持不变。按照行业标准，系统仍会将30分钟内的用户活动记录为同一次应用打开。**
 
+<div id="capabilities-being-discontinued" />
+
 ## 停用的功能
 
 | 功能 | 具体变化 | 详细说明 |
@@ -71,6 +79,8 @@ AppsFlyer正在以移动端的衡量标准对网页端衡量能力进行更新�
 | 回溯重算 | 除默认延迟的30分钟外，系统不会回溯重算此前数据。 | 系统将在延迟30分钟内确定归因结果，用户可在此期间完成身份识别。 |
 | 原始数据字段 | 网页端不再支持移动端相关字段。部分字段将重命名，部分字段值也会发生变化。 | 请参阅下方的[原始数据字段映射附录](#附录原始数据报告变更)。 |
 | 延迟传入的S2S事件 | 如果事件在发生当日UTC时间结束30分钟后才传入，系统仍会接收该事件，但会将事件时间替换为AppsFlyer收到事件的时间。 | 请实时发送事件，最好在事件发生后30分钟内发送，不要将事件汇总后每日一次性上传。为确保归因准确，请尽量在事件发生后及时传入数据。这会使网页端与移动端现有的处理逻辑保持一致。 |
+
+<div id="raw-data-field-mapping" />
 
 ## 附录：原始数据报告变更
 
@@ -240,6 +250,8 @@ Scan the codebase for any filter, CASE, join key, or dashboard grouping keyed on
 
 </Accordion>
 
+<div id="pba-web-s2s-to-new-s2s-api-migration" />
+
 ## 附录：从PBA Web-S2S迁移至新版S2S API
 
 如果目前通过<Anchor target="_blank" href="/marketers/zh/docs/web-server-to-server-events-api-for-pba-web-s2s">网页端服务器到服务器事件API(Web-S2S)</Anchor>向PBA报告事件，请迁移至<Anchor target="_blank" href="/marketers/zh/docs/server-to-server-s2s-api-for-web-performance-measurement">新版S2S API</Anchor>。新版API同时支持访问和事件，因此网站可以完全通过服务器端运行；PBA S2S仅支持接收事件。
@@ -381,6 +393,8 @@ Present this inventory to me and wait for my confirmation before proceeding.
 ```
 
 </Accordion>
+
+<div id="traffic-source-resolution-pba-vs-web-performance-measurement" />
 
 ## 附录：PBA与网页端效果衡量的流量来源识别对比网页端效果衡量
 

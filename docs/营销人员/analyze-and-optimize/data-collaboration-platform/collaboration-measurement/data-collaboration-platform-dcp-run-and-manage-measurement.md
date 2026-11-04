@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** 在您配置现场或非现场测量后，可以将其作为实时测量或历史测量运行。选择最符合您目标的模式：持续测量性能或验证特定时间段的结果。
 
+<div id="about-the-measurement-run-modes" />
+
 ## 关于测量运行模式
 
 在您<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#站内与站外广告系列归因">配置现场或非现场测量</Anchor>后，您可以选择如何运行测量。
@@ -29,6 +31,8 @@ x-zendesk:
 
 * **实时测量**：持续测量，定期更新，因此您可以在实时仪表板上监控性能，随着新数据的添加而不断更新。
 * **历史测量**：在特定日期范围内进行的一次性测量，您可以在历史仪表板上查看和分析。
+
+<div id="live-vs-historical-measurements" />
 
 ### 实时与历史测量
 
@@ -39,6 +43,8 @@ x-zendesk:
 | 支持的源类型 | <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">追加</Anchor>和<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">覆盖（快照）</Anchor> | <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">附加类型自定义源</Anchor> |
 | 时间范围选择 | 选择一个**开始和结束日期**（从可用数据中） | 选择一个**仅开始日期**（平台在激活时计算历史时间范围，并持续累积数据） |
 | 每次测量多少 | 多应用 | 一个 |
+
+<div id="choose-the-measurement-you-need" />
 
 ### 选择您需要的测量
 
@@ -58,6 +64,8 @@ x-zendesk:
 
 **提示：** 如果您首先在测试设置或验证特定期间，请从**历史测量**开始。当您准备好进行持续监控时，切换到**实时测量**以获取持续更新。
 
+<div id="run-a-live-measurement" />
+
 ## 进行实时测量
 
 **前期准备：** <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#站内与站外广告系列归因">在测量设置页面配置现场或非现场测量活动</Anchor>.
@@ -66,6 +74,8 @@ x-zendesk:
 
    如果**立即运行**被禁用，您的测量任务不完整。完成所有必需的设置任务以运行测量。
 2. 在**准备运行**对话框中，选择**实时仪表板**。
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -76,6 +86,8 @@ x-zendesk:
 4. 选择**测量开始日期**。默认是今天的日期，但您可以从日期选择器中选择过去的日期。（您只能选择在数据源中存在的日期。）
 5. 点击**开始**以开始实时测量。您将被重定向到协作测量页面。
 6. 在协作测量页面上，自动验证检查成功完成后，点击**立即运行**。
+
+<div id="run-a-historical-measurement" />
 
 ## 运行历史测量
 
@@ -91,9 +103,13 @@ x-zendesk:
 5. 点击 **开始** 开始历史测量。您将被重定向到协作测量页面。
 6. 在协作测量页面上，自动验证检查成功完成后，点击**立即运行**。
 
+<div id="manage-measurements" />
+
 ## 管理衡量
 
 在您设置并运行测量后，从协作测量页面的测量面板管理它。您可以暂停或重新启动实时测量，调整日期，重新运行历史测量，或复制测量以创建新的运行。
+
+<div id="the-collaboration-measurement-page" />
 
 ### 协作测量页面
 
@@ -102,6 +118,8 @@ x-zendesk:
 <div id="pause-or-restart-live-measurement" />
 
 <Accordion title="暂停或重新启动实时测量">
+
+<div id="legend" />
 
 #### 图例
 

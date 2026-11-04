@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：概要：本文将帮助您排查Google Ads相关的常见问题以及数据差异。**
 
+<div id="google-ads-faq" />
+
 ## Google Ads常见问题解答
 
 <div id="why-am-i-not-seeing-clicks-from-google-ads" />
@@ -52,12 +54,16 @@ Google Ads的点击和展示数据于2018年8月发布，先用于Android应用�
 
 按照此检查清单排查缺失的安装：
 
+<div id="quick-fix" />
+
 #### 快速修复
 
 1. **在 AppsFlyer 中激活 Google Ads**  
    在 AppsFlyer 中，从侧边栏打开 **协作 > 活跃集成**，搜索 **Google Ads**，并确认集成已激活。
 2. **在 Google Ads 中导入**`first_open` **转换**  
    在 Google Ads 中，转到 <Anchor target="_blank" href="https://ads.google.com/aw/conversions">转换摘要</Anchor> 页面，确保 `first_open` 转换事件已被导入。有关更多信息，请参见 导入您的应用转换。
+
+<div id="still-not-working" />
 
 #### 仍然无法正常工作？
 
@@ -83,6 +89,8 @@ Google Ads的点击和展示数据于2018年8月发布，先用于Android应用�
 
 使用此检查清单确保您的应用内事件在AppsFlyer和Google Ads之间正确设置和同步。
 
+<div id="quick-fix-checklist" />
+
 #### 快速修复检查清单
 
 按照以下步骤快速解决最常见的问题：
@@ -101,10 +109,14 @@ Google Ads的点击和展示数据于2018年8月发布，先用于Android应用�
    2. 检查**转换操作摘要**。
    3. 导入相关的应用内事件。有关更多信息，请参见导入您的应用转换。
 
+      <div id="note" />
+
       > 📘 **注意**
       >
       > 转换可能需要最多6小时才能在事件执行后显示。
 
+
+<div id="still-not-working-1" />
 
 #### 仍然无法正常工作？
 
@@ -195,6 +207,8 @@ Google Ads的并行追踪使您的落地页加载速度更快，从而减少访�
 
 关于Parallel Tracking的完整说明，请点击<Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">这里</Anchor> 。
 
+<div id="what-is-needed" />
+
 #### 如何操作？
 
 为了保证并行追踪（Parallel tracking）能正常生效，跳转终点的URL必须与Google Ads广告链接（Campaign URL）中的网址一致，且该网址必须设置在<Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348?hl=en">Google的 ValueTrack参数</Anchor>中。
@@ -228,6 +242,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 <Accordion title="如何为安卓或iOS应用配置广告投放？">
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > AppsFlyer支持所有的Google Ads广告系列。
@@ -242,6 +258,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 为了进行Android应用归因，请确保您的应用支持GAID（Google广告ID）收集，并通过SDK将该值传递给AppsFlyer。
 
+<div id="creating-conversion-recording-installs" />
+
 #### 创建转化记录（激活）
 
 有关创建转化记录的详细说明，请见<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">此文档</Anchor>。
@@ -249,6 +267,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 <span id="inapp_events"></span>Google Ads - 安卓配置 - 发送应用内事件
 
 如果您想进一步衡量Google移动应用安装广告系列在Google中的成功程度，则可以从AppsFlyer帐户向您的Google Ads帐户发送应用内事件。
+
+<div id="create-a-conversion-in-app-events" />
 
 #### 创建转化（应用内事件）
 
@@ -260,6 +280,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 <Accordion title="Google Ads的iOS配置">
 
+<div id="google-ads---ios-configuration-app-campaigns" />
+
 #### Google Ads — iOS配置：App Campaign类广告系列
 
 投放App Campaign类广告可以一次性配置Google Search（搜索广告）、YouTube、Display（展示广告）等多种广告形式，用于推广您的iOS应用。
@@ -268,13 +290,19 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 反之，对于在**Google Search App**上投放的广告，Google Ads就可以对App Campaign带来的iOS搜索进行归因。
 
+<div id="creating-conversion-recording-installs-1" />
+
 #### 创建转换记录（激活）
 
 有关创建转化记录的详细说明，请见<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">此文档</Anchor>。
 
+<div id="google-ads---ios-configuration---sending-in-app-events" />
+
 #### Google Ads - iOS配置 - 发送应用内事件
 
 如果您想进一步衡量Google移动应用安装广告系列在Google中的成功程度，则可以从AppsFlyer帐户向您的Google Ads帐户发送应用内事件。
+
+<div id="creating-a-conversion-in-app-events" />
 
 #### 创建转化（应用内事件）
 
@@ -296,11 +324,15 @@ Google Ads要求归因提供商在安装后6个月内删除其用户级数据。
 
 </Accordion>
 
+<div id="google-ads-discrepancies" />
+
 ## Google Ads的数据差异
 
 Google Ads面板和AppsFlyer面板之间有时会出现数据差异。
 
 尽管我们与Google Ads紧密合作以最大程度地减少数据差异，但广告主仍应注意以下原因：
+
+<div id="both-ios-and-android" />
 
 #### 同时适用于iOS和安卓的数据差异
 
@@ -320,11 +352,15 @@ Google Ads面板和AppsFlyer面板之间有时会出现数据差异。
 | **first\_open events** | Google Ads从Firebase获取事件，其中DMA正确实施，随后声明DMA同意的事件。 | Google Ads还从AppsFlyer获取相同的事件，其中DMA实施不正确，导致所有事件被报告为非DMA同意，Google不予声明。<ul><li>要检查DMA是否正确实施，<Anchor target="_blank" href="/marketers/zh/docs/raw-data-export-page#download-report">下载原始数据报告</Anchor>并关注<Anchor target="_blank" href="/marketers/zh/docs/bulletin-dma-support-in-raw-data-reports">本公告</Anchor>中指定的字段。</li><li>请参见[开发者中心](https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance)以了解如何在SDK中实施DMA。</li></ul> |
 | **重定向事件** | Google Ads可以在响应中声明与`ad_type=ClickToDownload`的重新参与。 | AppsFlyer将`ad_type=ClickToDownload`计为UA转换事件，而不是重新参与。因此，AppsFlyer中的重新参与数量可能会更低。 |
 
+<div id="notes" />
+
 > 📘 **说明**
 >
 > * Google Ads会在后台集中显示某个再营销广告系列产生的所有激活，而AppsFlyer的数据总览面板会分UA、再营销和统一视图分别显示新增激活、再归因以及两者相结合的数据。
 > * 在比较Google Ads和AppsFlyer的数据时，请确保Google Ads面板的数据是从第三方分析平台（AppsFlyer）导入的数据。从Firebase或Google Play导入的数据结构与AppsFlyer不同，因此无法进行全面的对比。如需了解如何将数据从AppsFlyer导入到Google Ads面板，请参考<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">此文档</Anchor>。
 > * 要比较安装事件（在Google Ads中为first\_open），请确保在Google Ads的转化报告中分层查看安装事件。Google Ads可能会显示所有转化（可能是安装、购买、订阅），这就是为什么仅从所有转化事件中选择安装事件的重要原因。
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

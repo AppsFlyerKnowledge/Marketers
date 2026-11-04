@@ -31,6 +31,8 @@ x-zendesk:
 
 [![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
+<div id="ad-revenue-attribution" />
+
 ## 广告收入归因
 
 * 广告主可以在相关应用中通过横幅、积分墙、插屏等形式展示广告，从而产生广告收入。
@@ -61,6 +63,8 @@ x-zendesk:
 | 由SDK上报的展示级别数据与由S2S API上报的设备级别数据相结合 | <ul><li>可对第X天由SDK上报的展示级别数据进行归因并展示在报告中，然后切换到第X+1天由API上报的设备级别数据。**请注意**：对于安卓应用，未知设备（即无可用设备ID）的SDK上报数据不会被API上报数据覆盖。</li><li>使用此类对接可以获得兼具时效性和准确性的数据（简称F2A）。也就是说，您可以在第X天获得当天数据，并在第X+1天及之后获得准确数据。</li><li>支持SKAN归因。</li><li>可以通过以下两种方式与广告网络共享数据 <Anchor target="_blank" href="/marketers/zh/docs/share-ad-revenue-data-with-partners">回传和用户代理信号</Anchor>.</li><li>安卓应用商店包括：请确保开发人员已启用 AppSet\_id 的收集，因为一些媒介可能仅提供此标识符。请参阅开发人员说明 [收集 AppSet ID](https://dev.appsflyer.com/hc/docs/install-android-sdk#collecting-appset-id).</li></ul> |
 
 </Accordion>
+
+<div id="implementation" />
 
 ## 启用方式
 
@@ -157,12 +161,16 @@ x-zendesk:
   * **af\_app\_opened**事件默认可用。
 * 请勿在使用广告收入对接的同时通过应用内事件上报广告收入金额，否则会导致面板中出现重复的广告收入数据。这是因为AppsFlyer会通过对接获取变现渠道的收入数据。
 
+<div id="aggregate-ad-revenue-using-events" />
+
 #### 按事件汇总广告收入
 
 | 事件类型 | 触发方式 | 注意事项 |
 | --- | --- | --- |
 | 特有变现事件 | <ul><li>在展示广告时触发应用内事件</li><li>这样就可以记录到准确的用户行为次数，从而得出更准确的eRPA</li><li>您还可以为每个变现渠道分别配置应用内事件，这样就能按平台细分收入，从而进一步打磨数据<br />各种方式的对比请见下文表格。</li></ul> | <ul><li>需要开发人员修改应用</li><li>可以在面板中按变现渠道细分收入</li></ul> |
 | af\_app\_opened event | <ul><li>默认情况下，af\_app\_opened事件由AppsFlyer SDK发送</li><li>每次用户打开应用时触发该事件</li></ul> | <ul><li>无需修改应用</li><li>启用快捷</li><li>每个session只能对应到一个应用，否则eRPA值会严重失真</li><li>无法按变现渠道细分收入</li><li>该事件仅说明用户打开了应用，但不表示用户愿意观看广告</li></ul> |
+
+<div id="comparison-of-in-app-event-methods" />
 
 #### 应用内事件配置方式对比
 
@@ -192,6 +200,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="ad-revenue-data" />
+
 ## 广告收入数据
 
 您可以通过AppsFlyer面板和原始数据报告查看广告收入数据。
@@ -215,6 +225,8 @@ x-zendesk:
   * 可在活跃数据面板中查看
   * 广告收入原始数据
 
+<div id="overview-dashboard---aggregated-performance-report" />
+
 #### **数据总览面板——汇总效果报告**
 
 [![](https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png)](https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png)
@@ -231,6 +243,8 @@ x-zendesk:
 
 * 面板中的收入等各种数据是活跃维度的（即按用户行为发生日期计算），详情请见<Anchor target="_blank" href="/marketers/zh/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV数据与活跃数据的差异</Anchor>。
 * **用户平均操作次数**用于说明用户在应用中完成广告交互的可能性。
+
+<div id="examples" />
 
 > 📄 **示例**
 >
@@ -320,6 +334,8 @@ x-zendesk:
   * **通用字段：** 与其他原始数据报告相似的字段，如事件名称、事件值、货币等。
 * AppsFlyer将广告收入事件归因到相关用户的拉新渠道，并以此为基础来填充相应字段。也就是说，这些字段按最初的拉新转化事件信息来填充，如媒体渠道和广告系列。这些字段不包含在下表所列范围内。
 
+<div id="fields-populated-by-ad-revenue" />
+
 #### 广告收入填充字段
 
 | api\_name | 字段名称 | 字段类型 | 说明 |
@@ -336,6 +352,8 @@ x-zendesk:
 | <span id="impressions"></span>impressions | Impressions | 专用 | 用户看到广告的次数 |
 | <span id="mediation_network"></span>mediation\_network | Mediation Network | 专用 | 将事件上报给AppsFlyer的变现平台 |
 | <span id="customer_user_id"></span>customer\_user\_id | 客户用户ID | 通用 | 如果广告商提供，则填充：<ul><li>展示层级的SDK对接：通过以下方式收集： `setCustomerUserId()` 在 AppsFlyer SDK 中。</li><li>对于设备级（API）集成：从中介 API 收集（通过中介 SDK 设置的用户 ID 或发布商用户 ID）。</li><li>不支持 Odeeo 和 Appodeal。</li></ul> |
+
+<div id="fields-by-network" />
 
 #### 分变现渠道的字段填充情况
 
@@ -386,6 +404,8 @@ x-zendesk:
 | ***版本化的每日广告收入报告（从设备层级进行汇总）*** | 每日报告中包含以下内容：<ul><li>一天多次的收入报告在收入产生当天（即第X天）每4小时生成一次。当日数据通过SDK API收集。</li><li>全天版本的报告以S2S API报告中的数据为基础，在第2、3、7和13天生成。</li></ul>也就是说，一天中可能生成的各种报告版本如下：<ul><li>第X天的00:00 — 04:00。</li><li>第X天的00:00 — 08:00 【SDK API】</li><li>第X天的00:00 — 12:00 【SDK API】</li><li>第X天的00:00 — 24:00 【SDK API】</li><li>第X+1天的00:00 — 24:00【S2S】</li><li>第X+2天的00:00 — 24:00【S2S】</li><li>第X+1天的00:00 — 24:00【S2S】</li><li>第X+1天的00:00 — 24:00【S2S】</li><li>第X+13天的00:00 — 24:00【S2S】</li></ul> | 报告的各个版本都包含Attributed（非自然广告收入）、Organic（自然广告收入）、和Retargeting AdRevenue（再营销广告收入）几个部分。 |
 | ***展示级别的广告收入报告*** | 展示级别的广告收入记录每小时写入单独的文件中。 |  |
 
+<div id="h_01KRKHJN2G5SER73D3EZB14GDS" />
+
 > 📄 **另请参阅**
 >
 > * <Anchor target="_blank" href="/marketers/zh/docs/revenue-etl-reports">收入 ETL 报告</Anchor>
@@ -393,6 +413,8 @@ x-zendesk:
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

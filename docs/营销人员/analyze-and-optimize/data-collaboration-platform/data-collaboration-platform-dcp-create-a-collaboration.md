@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** 合作使商业媒体网络和品牌能够利用组合数据来创造新的广告收入来源并实现最大的营销活动效果。
 
+<div id="about-collaborations" />
+
 ## 关于合作
 
 应用传单 <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-guide">数据协作平台 （DCP）</Anchor> 使商业媒体网络和品牌能够合作并释放其第一方数据的潜力，以吸引高意向用户。这个安全、以隐私为中心的平台可实现无缝协作，使合作伙伴能够产生新的广告收入来源，并从协作数据中构建自定义受众，以便在商业媒体网络或 Meta、Google 等媒体渠道中激活。
+
+<div id="create-a-collaboration" />
 
 ## 创建协作
 
@@ -130,6 +134,8 @@ x-zendesk:
 
 就是这样！您的协作已准备就绪。现在是时候让您和您的合作者 <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-build-and-activate-audiences">创建受众</Anchor> 并开展活动。之后 <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-collaboration-measurement-overview">设置测量</Anchor> 并分析结果以获得见解。
 
+<div id="manage-collaborations" />
+
 ## 管理协作
 
 本节介绍如何管理现有协作。
@@ -148,11 +154,15 @@ x-zendesk:
    <Image alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 
+<div id="associate-new-sources" />
+
 #### 关联新来源
 
 **要关联新源，请执行以下作：** 点击 **+ 关联来源** > 从下拉菜单中选择来源>单击 **救**.  
 
 <Image alt="将源关联到现有collaboration.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
+
+<div id="manage-sources" />
 
 #### 管理数据源
 
@@ -177,6 +187,8 @@ x-zendesk:
 2. 在协作仪表板中，单击右上角的作（3 个点）菜单，然后选择特定作。   
 
    <Image alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+
+<div id="notes-on-suspended-collaborations" />
 
 > 📘 **暂停合作的注意事项**
 >

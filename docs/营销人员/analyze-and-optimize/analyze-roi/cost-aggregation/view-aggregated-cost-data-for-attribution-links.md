@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **概要：** 如果广告平台通过归因链接上报每个点击的广告成本，广告主可以在AppsFlyer中查看这些成本的汇总数据。
 
+<div id="basic-cost-reporting" />
+
 ## 基础的成本上报方式
 
 成本数据可通过以下方式发送到AppsFlyer：

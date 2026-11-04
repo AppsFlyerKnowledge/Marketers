@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要： 本文介绍了Xbox应用与AppsFlyer的对接方式。对接完成后，您就可以针对Xbox上的广告收集归因和事件数据。**
 
+<div id="about-xbox-attribution" />
+
 ## Xbox归因简介
 
 适用于主机和CTV应用的Xbox操作系统可在所有Xbox设备中运行。
@@ -31,6 +33,8 @@ Xbox API对接适用于：
 
 * Xbox设备。
 * Xbox应用的归因和事件记录（即在用户的Xbox设备上进行归因和记录）。
+
+<div id="integration-procedures" />
 
 ## 对接流程
 
@@ -52,6 +56,8 @@ Xbox API对接适用于：
 | 成本数据 | 必须使用<Anchor target="_blank" href="/marketers/zh/docs/import-cost-data">成本导入</Anchor>功能，通过邮件上传数据文件，以实现成本数据的发送。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

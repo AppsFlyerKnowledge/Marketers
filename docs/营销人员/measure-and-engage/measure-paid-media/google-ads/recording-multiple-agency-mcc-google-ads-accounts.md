@@ -24,11 +24,15 @@ x-zendesk:
 ---
 > **概要：** 概要：本文说明了同时记录多个Google Ads账号的设置方式，以确保流量的正确归因。
 
+<div id="introduction" />
+
 ## 简介
 
 广告主的Google Ads流量通常会分多个账号输送，比如专营Google Ads的代理，或广告主公司内部的各个本地团队等等。这种情况下，您必须妥善设置不同Google Ads账号的数据记录，才能确保各方的正确归因。
 
 本文将重点说明这类场景中的代理效果衡量、MCC使用方式以及多级MCC等内容。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -36,9 +40,13 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-agencies">如需详细了解Google Ads中的代理账号配置方式，请参见此文档。</Anchor>
 
+<div id="important-definitions" />
+
 ## 重要概念释义
 
 * **Link ID** – **您在Google Ads中设定相关应用后，Google Ads为其分配的唯一标识符**。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -49,9 +57,13 @@ x-zendesk:
 * **MCC** - Google Ads上的经理账号（简称MCC，原名My Clients Center），用于在Google Ads平台中**处理多个Google Ads账号**。  
   设立MCC账号后，您可以绑定多个账号，以便统一查看（<Anchor target="_blank" href="https://support.google.com/google-ads/answer/6139186?hl=en&ref_topic=7554904">了解详情</Anchor>）。
 
+<div id="setting-up-google-ads-recording" />
+
 ## 设置Google Ads数据记录
 
 AppsFlyer针对每个应用记录一个Link ID。<strong>如果有多个账户处理同一个应用的投放，请确保这些账户都使用同一个Link ID。</strong>您需要在AppsFlyer的面板上配置Link ID，用于归因。
+
+<div id="sharing-google-link-id-with-another-account" />
 
 ### 与其他账户分享Google Link ID
 
@@ -59,16 +71,22 @@ AppsFlyer针对每个应用记录一个Link ID。<strong>如果有多个账户�
 
 广告主可以与任何具有Customer ID的账号共享任何Link ID（如下文截图所示）。与代理共享Link ID的具体方法请见<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-agencies#setting-up-google-ads-attribution-for-agencies">此文档</Anchor>。
 
+<div id="important" />
+
 > 🚧 **重要提示**
 >
 > * 如果相关MCC是其子账户的Recording Manager，则该MCC无需再与其子账户共享Link ID。但如果相关MCC下的某个子账户是其自身的Recording Manager，则该MCC必须与该Recording Manager子账户共享Link ID。
 > * 导入转化（Import Conversions）：如果相关MCC是Recording Manager，则该MCC需要为其下所有的子账户导入转化。但如果该MCC下的某个子账户是其自身的Recording Manager，则该子账户也需要完成导入转化操作。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
 > * 在Google Ads面板中点击菜单图标（三点）>> ***Linked accounts*** >> ***Third-party app analytics details*** [![](https://files.readme.io/a13ca54ec48a70db5c745c27709c3ae890fdadbe4d75cf3d276c5e29fc9f20f3-51165480046865.png)](https://files.readme.io/a13ca54ec48a70db5c745c27709c3ae890fdadbe4d75cf3d276c5e29fc9f20f3-51165480046865.png)
 > * 对方账户需要同意“共享”。
 > * 操作完成后，对方账户就可获得授权，为相关应用投放Google Ads广告。
+
+<div id="tip" />
 
 > 👍 **提示**
 >
@@ -86,11 +104,15 @@ AppsFlyer针对每个应用记录一个Link ID。<strong>如果有多个账户�
 
 ![mmc-googleads-settings.png](https://files.readme.io/279e31bff45a5d8cbc95cf472f905a5c07179b9a648ecb2f4687dcb29a6bb0e8-51165480047377.png)
 
+<div id="mcc-of-mccs" />
+
 ## 多级MCC
 
 [![](https://files.readme.io/3024bbf6848c56502c90040e280f92cdf23c284b215f28e08e050f241409afd9-51165480047889.png)](https://files.readme.io/3024bbf6848c56502c90040e280f92cdf23c284b215f28e08e050f241409afd9-51165480047889.png)
 
 与多个代理合作的大型广告主可能会通过一个MCC账户来管理多个MCC。这跟常规的MCC账户类似。这种情况中，建议由级别最高的MCC或广告主来生成Link ID。在这类结构中，子账户必须正确选择对应级别的MCC作为Recording Manager（一般是最高级别的MCC）。如果该结构设置无误，则无需再将Link ID共享给子账户，且只需通过级别最高的MCC导入转化即可。
+
+<div id="tip-1" />
 
 > 👍 **提示**
 >
@@ -101,6 +123,8 @@ AppsFlyer针对每个应用记录一个Link ID。<strong>如果有多个账户�
 > * <Anchor target="_blank" href="https://support.google.com/google-ads/topic/7554359?hl=en&ref_topic=6031997">使用客户帐号</Anchor>
 >
 > 如果您对于账户结构和推荐设置有任何疑问，请咨询您的Google客户经理。
+
+<div id="opening-a-google-ads-campaign" />
 
 ## 创建Google Ads广告系列
 

@@ -26,6 +26,8 @@ x-zendesk:
 
 ![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
 
+<div id="overview" />
+
 ## 速览
 
 * **再互动（沉睡用户唤醒）：**
@@ -43,6 +45,8 @@ x-zendesk:
   * 【推荐】**conversion\_type**：可能出现的参数值为install（激活）或re-engagement（再互动）
   * is\_retargeting：如果该参数值为true，则表示相关数据与再营销广告有关
 
+<div id="attribution-relative-to-the-re-engagement-window" />
+
 #### 与再互动窗口相关的归因
 
 | 媒体渠道 | 再互动窗口前 | 再互动窗口期内 | 再互动窗口期后 |
@@ -50,15 +54,21 @@ x-zendesk:
 | 用户获取 | 主要<br /><br />is\_primary\_attributionTrue<br /><br />conversion\_type: install<br /><br />is\_retargetingFalse | 此外，<br /><br />is\_primary\_attribution否<br /><br />conversion\_type: re-engagement<br /><br />is\_retargetingFalse | 主要<br /><br />is\_primary\_attributionTrue<br /><br />conversion\_type: install<br /><br />is\_retargetingFalse |
 | 再营销 | 不适用 | 主要<br /><br />is\_primary\_attributionTrue<br /><br />conversion\_type: re-engagement<br /><br />is\_retargetingTrue | 不适用 |
 
+<div id="support-for-dashboard-view-types" />
+
 ## 适用的面板视图类型
 
 部分面板和群组报告提供多种视图选项，包括统一、用户获取和再营销。这些视图类型所使用的归因逻辑与原始数据相同。
 
 ![](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
 
+<div id="data-filtering-by-view-type-using-the-conversion_type-field" />
+
 #### 可使用conversion\_type字段按视图类型筛选数据
 
 <table><thead><tr><th>视图类型</th><th>conversion_type</th><th>is_primary</th><th>归因</th></tr></thead><tbody><tr><td rowspan="2">用户获取</td><td>install</td><td>对或错</td><td>归因到拉新渠道的激活</td></tr><tr><td>re-engagement</td><td>否</td><td>归因到拉新渠道的再营销事件</td></tr><tr><td>再营销</td><td>re-engagement或re-attribution</td><td>True</td><td>归因到再营销渠道的再营销事件</td></tr><tr><td>统一</td><td>install或re-engagement</td><td>True</td><td>归因到末次触达渠道的所有事件</td></tr></tbody></table>
+
+<div id="how-do-i-identify-double-attributed-retargeting-events-in-user-acquisition-in-app-reports" />
 
 ## 如何在用户获取的应用内事件报告中识别双重归因的再营销事件？
 

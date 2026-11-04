@@ -27,6 +27,8 @@ x-zendesk:
 
 * （即在用户的Xbox设备上进行归因和记录）。
 
+<div id="integration-procedures" />
+
 ## 对接流程
 
 下表列出了Steam应用对接到AppsFlyer时需要完成的工作。请下载这张Excel表，以便记录您的对接进度。
@@ -49,6 +51,8 @@ x-zendesk:
 | 成本数据 | 必须使用<Anchor target="_blank" href="/marketers/zh/docs/import-cost-data">成本导入</Anchor>功能，通过邮件上传数据文件，以实现成本数据的发送。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

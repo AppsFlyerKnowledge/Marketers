@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **概要：** 通过将 AppsFlyer 与您的身份提供者 (IdP) 集成，AppsFlyer 账户用户可以使用单点登录 (SSO) 登录 AppsFlyer。了解如何在 AppsFlyer 和您的 IdP 平台中设置 SSO 身份验证。
 
+<div id="considerations" />
+
 ## 注意事项
 
 * **前期准备：** 用户必须在两个系统 (AppsFlyer 和 IdP) 中使用相同的电子邮件进行设置。
@@ -37,15 +39,21 @@ x-zendesk:
 * 使用 SSO 时不支持 2FA。
 * 不建议同时启用用户名和密码的 SSO。
 
+<div id="access-the-sso-configuration-page" />
+
 ## 访问 SSO 配置页面
 
 1. 从页面顶部导航栏打开账户菜单（点击右上角的邮箱地址，打开下拉菜单）> **安全中心**。
 2. 在 **增强登录安全性** 下，选择 **配置登录方法**。
 3. 在 **登录安全性** 页面，点击 **配置 SSO**。
 
+<div id="set-up-sso" />
+
 ## 设置 SSO
 
 SSO 配置在 IdP 平台和 AppsFlyer 中完成，具体步骤如下。 配置状态可以是 **活动**（当 SSO 设置完成时），或 **未配置**（当没有设置配置或配置已被删除时）。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -66,6 +74,8 @@ SSO 配置在 IdP 平台和 AppsFlyer 中完成，具体步骤如下。 配置�
 * <Anchor target="_blank" href="/marketers/zh/docs/configure-appsflyer-sso-in-onelogin">OneLogin</Anchor>
 * <Anchor target="_blank" href="/marketers/zh/docs/configure-appsflyer-sso-in-ping-identity">Ping Identity</Anchor>
 
+<div id="setup-overview-for-other-idp-platforms" />
+
 #### 其他 IdP 平台的设置概述
 
 配置其他 IdP 平台的过程如下所示：
@@ -73,6 +83,8 @@ SSO 配置在 IdP 平台和 AppsFlyer 中完成，具体步骤如下。 配置�
 * 在 IdP 平台上使用 SAML 2.0 协议创建一个 AppsFlyer 应用，并在 IdP 平台中集成 [AppsFlyer 认证证书](#the-authentication-certificate)。
 * 将用户分配到新创建的 AppsFlyer 应用。
 * 检索 IdP 证书或元数据以在 AppsFlyer 中使用（如 [第 2 步中提到的：设置 AppsFlyer --> 5。提供 IdP 元数据](#step-5-provide-idp-metadata)）。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -99,19 +111,27 @@ SSO 配置在 IdP 平台和 AppsFlyer 中完成，具体步骤如下。 配置�
    * [服务提供者 (AppsFlyer)](#服务提供商appsflyer)
 2. 点击**Next**。
 
+<div id="identity-provider-idp" />
+
 #### 身份提供者 (IdP)
 
 用户通过 IdP 认证插件或网页登录，然后在认证后被引导到 AppsFlyer。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > 通过选择此选项，用户可以通过 IdP 和服务提供商（AppsFlyer）登录。
+
+<div id="service-provider-appsflyer" />
 
 #### 服务提供商（AppsFlyer）
 
 用户通过点击 <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">AppsFlyer SSO 登录页面</Anchor> 中的 **使用 SSO 登录** 并输入他们的电子邮件地址进入 AppsFlyer。然后，他们被引导到 IdP 进行认证，并重定向到 AppsFlyer 主页。
 
 [<Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -140,6 +160,8 @@ AppsFlyer 提供两种类型的公共加密密钥证书来加密数据和签署 
 **执行此步骤：**
 
 * 选择证书类型并点击 **下一步**.
+
+<div id="note-5" />
 
 > 📘 **注意**
 >
@@ -183,6 +205,8 @@ AppsFlyer 提供两种类型的公共加密密钥证书来加密数据和签署 
 
 在两个平台（IdP 和 AppsFlyer）上完成 SSO 配置后，检查用户是否可以通过 **任一** [URL 回调方法&lt;2>：您的 IdP 或服务提供商（AppsFlyer），但不能同时使用。](#single-signon-url-configuration)
 
+<div id="test-authentication-via-your-idp" />
+
 #### 通过您的 IdP 测试认证
 
 如果您已配置通过 IdP 登录的认证，请检查用户是否可以通过 IdP 插件或网页进入 AppsFlyer：
@@ -191,6 +215,8 @@ AppsFlyer 提供两种类型的公共加密密钥证书来加密数据和签署 
 2. 在隐身模式下打开网页。
 3. 访问您的 IdP 网页。由于您未登录到 IdP，您将经历一个认证过程。使用相关用户登录。
 4. 搜索并选择 AppsFlyer。您将被引导到 AppsFlyer 主页。这表明过程成功。
+
+<div id="test-authentication-via-your-service-provider-appsflyer" />
 
 #### 通过您的服务提供商（AppsFlyer）测试认证
 
@@ -210,11 +236,15 @@ AppsFlyer 提供两种类型的公共加密密钥证书来加密数据和签署 
 
 </Accordion>
 
+<div id="manage-sso-configuration" />
+
 ## 管理 SSO 配置
 
 一旦您设置了 SSO 配置，您可以编辑该配置或将其删除。
 
 查看如何 [访问 SSO 配置页面](#访问-sso-配置页面)。
+
+<div id="zd-edit-sso" />
 
 <div id="edit-sso" />
 
@@ -265,6 +295,8 @@ AppsFlyer 提供两种类型的公共加密密钥证书来加密数据和签署 
 | 电子邮件地址中的符号 | SSO不支持带有+符号的电子邮件地址。<br /><br />例如：my+customer@demo.com<br /><br />拥有此项将导致登录失败。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

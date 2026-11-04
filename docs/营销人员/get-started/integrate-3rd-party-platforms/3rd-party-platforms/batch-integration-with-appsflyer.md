@@ -29,10 +29,16 @@ x-zendesk:
 > 部分渠道限制第三方的数据共享。
 
 
+<div id="setting-customer-user-id" />
+
+<div id="integrating-batch-and-appsflyer" />
+
 ### 获取客户用户ID
 
 <Tabs>
 <Tab title="Android">
+
+<div id="batch" />
 
 #### 批次
 
@@ -94,7 +100,7 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 </Tabs>
 
 
-**<span id="setting-up-batch-in-appsflyer-dashboard"></span>前期准备：** 设置对接前，请务必先<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations#联系相关渠道">联系相关渠道</Anchor>并在其平台上开设账户。
+**<span id="setting-up-batch"></span><span id="setting-up-batch-in-appsflyer-dashboard"></span>前期准备：** 设置对接前，请务必先<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations#联系相关渠道">联系相关渠道</Anchor>并在其平台上开设账户。
 
 **请按以下方式启用或修改该对接：**
 
@@ -110,14 +116,22 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 <Accordion title="渠道对接选项卡">
 
+<div id="activate-partner" />
+
 ### 渠道激活
 
 **第一次访问**时，需要打开**激活合作伙伴**开关以开启对接选项卡内的配置参数。只要仍与该合作伙伴合作，这个开关必须为ON。   
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
 
+<div id="general-settings" />
+
 ### 常规设置
 
 ![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
+
+<div id="viewing-appsflyer-data-in-the-batch-dashboard" />
+
+<div id="default-postbacks" />
 
 ### 默认回传
 

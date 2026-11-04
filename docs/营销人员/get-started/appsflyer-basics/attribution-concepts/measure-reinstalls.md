@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要**：如果用户在激活应用后，将其卸载再重新激活，AppsFlyer就会将该行为视为重装激活。重装激活的归因结果包括以下几种：非自然重装激活、自然重装激活或再归因（再营销）。衡量重装激活可以避免为卸载后再次安装的用户重复买量。
 
+<div id="what-is-a-reinstall" />
+
 ## 什么是重装激活
 
 某个应用的用户删除该应用后在<Anchor target="_blank" href="/marketers/zh/docs/set-up-re-attribution-window#再归因窗口">再归因窗口期</Anchor>内重新安装并激活该应用，即构成一次重装激活。
@@ -43,9 +45,13 @@ x-zendesk:
 | 自然或非自然流量 | 是 | 否 | 是或否 | Reinstall（重装激活） |
 | 自然或非自然流量 | 否 | 否 | 是或否 | 新增激活 |
 
+<div id="why-are-reinstalls-important" />
+
 ## 重装激活的意义
 
 对重装激活的准确归因不仅能说明流失用户的召回情况以及广告投放成功与否，还能帮助广告主避免为再归因窗口期内卸载重装的用户重复付费。
+
+<div id="reinstall-flow-and-outcome" />
 
 ## 重装激活的归因链路和结果
 
@@ -79,6 +85,8 @@ x-zendesk:
 如需进一步了解再营销归因，请参考<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">此文档</Anchor>。
 
 </Accordion>
+
+<div id="post-reinstall-in-app-events" />
 
 ## 应用内事件
 
@@ -136,6 +144,8 @@ Reinstall（重装激活）
 
 (2) 仅在原始数据中可见。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 如果您将重装激活后的应用内事件归因设置为**归因到初始激活**，则面板中的自然量KPI数据会变低，这是因为其中的部分流量会被归因到非自然媒体渠道。
@@ -145,6 +155,8 @@ Reinstall（重装激活）
 <div id="examples" />
 
 <Accordion title="示例">
+
+<div id="examples-for-first-install-mode-attribution" />
 
 #### 假设您将重装激活后的应用内事件归因设置为**归因到初始激活**。
 
@@ -197,11 +209,17 @@ Reinstall\_1.jpg
 
 </Accordion>
 
+<div id="how-does-the-data-appear-in-the-appsflyer-dashboards" />
+
 ## 数据在AppsFlyer面板中的呈现方式
 
 <table><tbody><tr><th colspan="2"> </th><th>非自然重装激活</th><th>自然重装激活 </th><th>再归因（reattribution）</th></tr><tr><td colspan="2">重装激活本身</td><td>不显示</td><td>不显示</td><td><span>再营销媒体渠道\*</span></td></tr><tr><td rowspan="2">后续的应用内事件归因</td><td>重装激活后的事件归因设置为<strong>归因为自然应用内事件</strong> </td><td>未归因的自然事件</td><td>未归因的自然事件</td><td><span>再营销媒体渠道</span></td></tr><tr><td>重装激活后的事件归因设置为<strong>归因到初始激活</strong> </td><td>初始媒体渠道</td><td>初始媒体渠道</td><td>再营销广告活动</td></tr><tr><td colspan="5">\*仅在总览面板中可见</td></tr></tbody></table>
 
+<div id="reinstalls-raw-data-reports" />
+
 ## 重装激活原始数据报告
+
+<div id="prerequisites" />
 
 > 🚧 **前期准备**
 >
@@ -209,9 +227,13 @@ Reinstall\_1.jpg
 
 * <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtlerXtCVImurv-JyuG7JMPvLN6p2w79pmbMNBx6WBnLwnYq5bUqXiUuoy2l_UTzEjIr8UkDdclRxf/pub?output=csv">CSV格式的重装激活报告示例</Anchor>
 
+<div id="how-the-install-and-in-app-events-are-attributed" />
+
 #### 激活和应用内事件的归因方式
 
 <table><tbody><tr><th colspan="2"> </th><th>非自然重装激活</th><th>自然重装激活 </th><th>再归因（reattribution）</th><th>非自然激活</th><th>自然激活</th></tr><tr><td colspan="2">归因到  </td><td>拉新广告</td><td>自然量</td><td>再营销广告活动</td><td>拉新广告</td><td>自然量</td></tr><tr><td rowspan="2">后续的事件归因</td><td>重装激活后的事件归因设置为<strong>归因为自然应用内事件</strong> </td><td>自然量</td><td>自然量</td><td>再营销广告活动</td><td>拉新广告</td><td>自然量</td></tr><tr><td>重装激活后的事件归因设置为<strong>归因到初始激活</strong> </td><td>首次安装</td><td>首次安装</td><td>再营销广告活动</td><td>拉新广告</td><td>自然量</td></tr></tbody></table>
+
+<div id="availability-of-reinstall-reports" />
 
 ### 重装激活报告的可用性
 

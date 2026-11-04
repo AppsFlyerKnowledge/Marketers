@@ -25,6 +25,8 @@ x-zendesk:
 
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 
+<div id="custom-dashboards" />
+
 ## 自定义控制面板
 
 请注意：
@@ -35,6 +37,8 @@ x-zendesk:
 |  |  |
 |  |  |
 | 可用操作 | <ul><li>编辑</li><li>复制</li><li>删除</li><li>导出CSV文件</li></ul> |
+
+<div id="procedures" />
 
 ## 配置流程
 
@@ -70,6 +74,8 @@ x-zendesk:
 3. 选择**导出CSV** 。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

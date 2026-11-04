@@ -25,6 +25,8 @@ x-zendesk:
 
 > **概要：** 概要：本文说明了自定义数据源文件的设置方式。您可以与数据净室（DCR）共享数据源，将其与归因数据进行匹配，并生成DCR报告。
 
+<div id="introduction" />
+
 ## 简介
 
 大部分DCR报告的目的是将您的**归因数据**与**指定来源**的数据进行匹配。本文将为您详细解释如何在DCR中使用自定义数据源，包括：
@@ -46,7 +48,7 @@ x-zendesk:
 >   * 如果您前期未设置数据连接，则会在创建自定义数据源时收到弹窗提示，指引您设置连接。
 
 
-<span id="source-format"></span>自定义数据源必须具备以下条件，否则在创建数据源和处理数据、生成报告的过程中可能会出现错误。
+<span id="source-requirements"></span><span id="source-format"></span>自定义数据源必须具备以下条件，否则在创建数据源和处理数据、生成报告的过程中可能会出现错误。
 
 自定义来源的数据必须符合以下要求：
 
@@ -94,6 +96,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="creating-a-source" />
+
 ## 创建数据源
 
 下文介绍了数据源创建流程中涉及的**所有步骤**。我们把这些步骤分在单独的标签中，以便查阅。
@@ -130,6 +134,8 @@ x-zendesk:
    * 请按照对话框中的指引说明创建数据连接。
 2. 根据您使用的数据源按下文中的相关说明继续进行设置。
 
+<div id="source-locations-in-bigquery" />
+
 #### BigQuery中的数据源位置
 
 设置BigQuery数据源位置的方法如下：
@@ -138,6 +144,8 @@ x-zendesk:
 2. 选择相关数据所在的表格。
 
 创建数据连接时供您完成上述选择的列表包含您指定的BigQuery项目中可用的数据集和表格。
+
+<div id="source-locations-in-snowflake" />
 
 #### Snowflake中的数据源位置
 
@@ -148,6 +156,8 @@ x-zendesk:
 3. 选择相关数据所在的表格。
 
 创建数据连接时供您完成上述选择的列表包含您指定的Snowflake账户中可用的共享位置（share）、模式（schema）和表格。
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### 云端存储桶中的数据源位置
 
@@ -182,6 +192,8 @@ Amazon S3或GCS中的数据源位置信息包括数据连接中指定的云存�
   * dimension 维度：您对应用用户分类时使用的特征信息（如地理位置、激活日期、广告系列等）。/span>/strong>
   * 指标指标：有关某应用用户的数值型数据（如收入、应用打开次数、LTV等）
     * 标识为“指标”的字段仅可包含数值。
+
+<div id="loading-source-fields" />
 
 #### 加载数据源字段
 
@@ -242,6 +254,8 @@ Amazon S3或GCS中的数据源位置信息包括数据连接中指定的云存�
 </Tab>
 </Tabs>
 
+<div id="categorize-fields" />
+
 #### 字段分类
 
 字段加载完毕后，AppsFlyer会解析该文件，并在**可用字段**列表中列出其中的所有字段（列）。
@@ -279,6 +293,8 @@ Amazon S3或GCS中的数据源位置信息包括数据连接中指定的云存�
    在数据净室的**数据源**选项卡中，现有数据源的完整列表下会显示新的数据源。
 
 </Accordion>
+
+<div id="updating-sources-to-trigger-report-processing" />
 
 ## 更新数据以触发报告处理流程
 
@@ -336,6 +352,8 @@ AppsFlyer会反复查找**当天和2天前的**数据源文件更新版本，且
 <Image alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
 
 </Accordion>
+
+<div id="working-with-existing-sources" />
 
 ## 现有数据源的使用方式
 
@@ -399,6 +417,8 @@ AppsFlyer会反复查找**当天和2天前的**数据源文件更新版本，且
 
 </Accordion>
 
+<div id="reference" />
+
 ## 详细说明
 
 <div id="manually-creating-a-folder-structure" />
@@ -406,6 +426,8 @@ AppsFlyer会反复查找**当天和2天前的**数据源文件更新版本，且
 <Accordion title="手动创建存储桶文件夹结构 （仅在选择手动操作时适用）">
 
 一般情况下，最简便的方法是让AppsFlyer自动生成必要的文件夹结构，从而完成数据源创建流程。但如果您想要手动创建这些文件夹，可以按下问说明进行操作。
+
+<div id="create-a-dcr-key-folder" />
 
 #### 创建一个DCR密钥文件夹
 
@@ -421,6 +443,8 @@ DCR密钥文件夹一般需要通过云服务平台的界面手动创建。
 
 <Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
+<div id="top-level-input-folder" />
+
 #### 顶层输入型文件夹
 
 创建顶层输入型文件夹时最好将其直接置于DCR密钥文件夹下一层。该文件夹专用于向DCR上传文件。
@@ -433,6 +457,8 @@ DCR密钥文件夹一般需要通过云服务平台的界面手动创建。
 创建顶层输入型文件夹后，您的存储桶/文件夹架构入下：
 
 <Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### 为各数据源设置第二层文件夹
 

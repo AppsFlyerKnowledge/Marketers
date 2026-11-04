@@ -26,6 +26,8 @@ x-zendesk:
 
 <Embed title="YouTube视频播放器" typeOfEmbed="youtube" url="https://www.youtube.com/embed/B71XCosnTXo?si=gAgmyUqH7PKsQsf-" providerUrl="https://www.youtube.com" />
 
+<div id="about-signal-hub" />
+
 ## 关于 Signal Hub
 
 AppsFlyer Signal Hub 是一个先进的隐私安全解决方案，帮助品牌获取领先品牌（包括领先金融公司）的高价值第一方数据，解锁远超自身数据的用户洞察。通过用真实的购买信号丰富受众，营销人员可以更早识别高价值用户，根据经验证的消费行为对营销活动进行个性化，并即时激活 Meta、Google 和 TikTok 等主要媒体平台上的受众。
@@ -44,6 +46,8 @@ AppsFlyer Signal Hub 是一个先进的隐私安全解决方案，帮助品牌�
   使用经过加密的假名标识符在净室环境中安全激活。绝不会移动、共享或导出原始数据。
 * **提高全漏斗清晰度**  
   通过 AppsFlyer 的全漏斗全渠道衡量，衡量细分受众对安装、购买、留存、SKU 层级衡量和收入的影响。
+
+<div id="get-started-using-signal-hub" />
 
 ## 开始使用 Signal Hub
 
@@ -85,6 +89,8 @@ AppsFlyer Signal Hub 是一个先进的隐私安全解决方案，帮助品牌�
 
 </Accordion>
 
+<div id="use-cases" />
+
 ## 使用场景
 
 Signal Hub 的使用案例几乎不胜枚举。以下是几个针对具体行业的示例。
@@ -112,6 +118,8 @@ Signal Hub 的使用案例几乎不胜枚举。以下是几个针对具体行业
 某消费电子品牌希望推广新型智能电视。通过利用流媒体平台数据（例如设备所有权、订阅购买和娱乐应用程序的互动），他们能够识别高级家庭并运行针对性强的营销活动。这样可以提高大额商品的转化率。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

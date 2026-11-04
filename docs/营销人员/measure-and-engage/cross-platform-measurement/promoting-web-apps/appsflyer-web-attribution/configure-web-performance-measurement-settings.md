@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概览：** 配置网页端归因，控制AppsFlyer如何将网站访问、转化和用户活动归因至广告系列。设置项包括归因窗口、获客事件、再互动规则和排除域名。
 
+<div id="overview" />
+
 ## 概览
 
 网页端归因设置决定AppsFlyer如何衡量网站上的用户活动并完成归因。这些设置决定：
@@ -31,9 +33,13 @@ x-zendesk:
 * 何时将再次访问网站的用户判定为再互动或再次获取。
 * 归因时排除哪些域名。
 
+<div id="who-should-configure-these-settings" />
+
 ### 应由谁配置这些设置
 
 营销团队和增长负责人通常会根据业务目标配置这些设置。SDK对接和域名配置可能需要技术团队参与。
+
+<div id="accessing-web-attribution-settings" />
 
 ### 访问网页端归因设置
 
@@ -42,6 +48,8 @@ x-zendesk:
 1. 在AppsFlyer中，前往**我的应用**
 2. 从列表中选择您的网页端应用
 3. 前往**应用设置**>**归因**
+
+<div id="quick-reference" />
 
 ## 快速参考
 
@@ -64,6 +72,8 @@ x-zendesk:
 **限制条件：**  
 再互动休眠窗口的时长必须**小于或等于**再次获取休眠窗口的时长。否则，用户可能尚未满足再营销条件，就已被判定为再次获取。
 
+<div id="basic-settings" />
+
 ## **基本设置**
 
 网页端应用的基本设置包括：
@@ -76,6 +86,8 @@ x-zendesk:
 
 有关详情，请参阅<Anchor target="_blank" href="/marketers/zh/docs/adding-an-app-to-appsflyer#web">将应用添加到AppsFlyer</Anchor>。
 
+<div id="user-acquisition-settings" />
+
 ## 获客设置
 
 获客（UA）设置决定AppsFlyer何时将用户判定为首次获取，以及如何将该次获取归因至营销来源。
@@ -86,11 +98,15 @@ x-zendesk:
 
 用于触发获客的事件。这一重要业务行为用于判定用户何时才算真正完成获客。
 
+<div id="why-customize" />
+
 #### 为何自定义
 
 默认的**首次访问**通常无法充分反映用户价值。用户可能误点广告，也可能进入网站后立即离开。自定义此设置后，系统会将长期价值（LTV）归因至真正促成有效行为的营销来源，避免仅根据一次随意点击进行归因。
 
 **默认值：** 首次访问（用户首次访问网站时即完成获客）
+
+<div id="common-alternatives-by-industry" />
 
 #### 各行业常用选项
 
@@ -101,6 +117,8 @@ x-zendesk:
 | 外卖 | first\_order |
 | SaaS/订阅 | subscription\_start |
 | 游戏 | sign\_up、tutorial\_complete或first\_purchase |
+
+<div id="how-it-works" />
 
 #### 运作方式
 
@@ -114,6 +132,8 @@ x-zendesk:
 * 从首次访问网站到完成该事件，用户将进入<strong>「获客前阶段」</strong>。
 * 在获客前阶段，系统会将事件归因至回溯窗口内最近一次非自然触点（末次触点归因）。
 * 触发自定义UA事件后，系统会生成一条**获客转化**，并开始长期归因。
+
+<div id="example-scenario-ua-event--sign_up" />
 
 #### 示例场景（UA事件=sign\_up）：
 
@@ -137,15 +157,21 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 
 **范围：** 1小时至90天
 
+<div id="how-it-works-1" />
+
 #### 运作方式
 
 用户触发UA事件（例如sign\_up）后，AppsFlyer会在回溯窗口内查找最近一次非自然触点，并将此次获客归因至对应的营销来源。
+
+<div id="example-1-30-day-lookback" />
 
 #### 示例1（30天回溯窗口）：
 
 * **第0天：** 用户点击Facebook广告并访问网站
 * **第25天：** 用户再次访问网站（直接访问），并完成sign\_up事件
 * **结果：** 获客归因至Facebook（在30天回溯窗口内）
+
+<div id="example-2-window-expired" />
 
 #### 示例2（回溯窗口已过期）：
 
@@ -155,6 +181,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 **结果：** 获客标记为自然量（已超出30天回溯窗口）
 
 </Accordion>
+
+<div id="re-engagement-settings" />
 
 ## 再互动设置
 
@@ -172,6 +200,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 
 **范围：** 1小时至90天
 
+<div id="how-it-works-2" />
+
 #### 运作方式
 
 完成获客的用户通过非自然来源（例如再营销广告）再次访问网站，并符合再互动条件时，系统会生成一条**再营销转化**。此窗口内发生的事件会进行**双重归因**：
@@ -180,6 +210,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
    * 目的：将事件归因至再营销广告系列
 2. **辅助归因**→最初的获客来源
    * 目的：支持UA视图，将用户完整的生命周期价值（LTV）归因至最初的获客来源
+
+<div id="example-within-window" />
 
 #### 示例（在窗口期内）：
 
@@ -208,6 +240,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 
 **范围：** 0天（停用）至30天
 
+<div id="how-it-works-3" />
+
 #### 运作方式
 
 **停用时：**
@@ -223,6 +257,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 
 * 不得超过休眠窗口（再次获取）
 
+<div id="example-7-day-inactivity-window" />
+
 #### 示例（休眠窗口为7天）：
 
 * **第0天：** 用户通过Facebook广告完成获客
@@ -231,6 +267,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 * **第15天：** 用户点击再营销广告→**生成再营销转化**（已连续12天未活跃）
 
 </Accordion>
+
+<div id="re-acquisition-settings" />
 
 ## 再次获取设置
 
@@ -248,6 +286,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 
 **范围：** 1至180天
 
+<div id="how-it-works-4" />
+
 #### 运作方式
 
 **用户被标记为「已流失」后：**
@@ -261,6 +301,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 * 用户完成再次获取事件→生成新的UA转化
 * 召回广告系列被记为新的获客来源
 * 在报表中，此次再次获取按全新的获客处理
+
+<div id="example-90-day-window" />
 
 #### 示例（90天休眠窗口）：
 
@@ -285,6 +327,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 
 **常用替代事件：** sign\_in或purchase
 
+<div id="how-it-works-5" />
+
 #### 运作方式
 
 **如果设置为自定义事件（例如sign\_in**）：
@@ -293,6 +337,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 * 完成再次获取前，用户可以多次访问网站
 * 采用更严格的标准判定用户是否真正完成再次获取
 
+<div id="example-re-acquisition-event--sign_in" />
+
 #### 示例（再次获取事件=sign\_in）：
 
 * 用户连续90天未活跃后被标记为已流失
@@ -300,6 +346,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 * 一天后，用户登录→生成再次获取转化，并归因至邮件广告系列
 
 </Accordion>
+
+<div id="attribution-window" />
 
 ## 归因窗口
 
@@ -315,6 +363,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 
 </Accordion>
 
+<div id="excluded-domains" />
+
 ## 排除域名
 
 归因时需要排除的域名。用户在指定域名与您的网站之间跳转时，AppsFlyer不会对由此产生的访问或事件进行归因。
@@ -328,6 +378,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 
 <Accordion title="域名类型">
 
+<div id="primary-required-automatic" />
+
 #### 主要域名（必填，自动）
 
 * 创建应用时设置的主要网站域名
@@ -337,6 +389,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
   * 示例：example.com会自动排除shop.example.com、blog.example.com等子域名
 * **排除后的影响：** 不会发生自归因
 
+<div id="internal-optional" />
+
 #### 内部域名（可选）
 
 * 同一品牌下未涵盖在主要域名中的其他域名
@@ -344,9 +398,13 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 * 示例：使用不同顶级域名的品牌网站，例如example.co.uk、example.in
 * **排除后的影响：** 不会发生自归因
 
+<div id="external-optional" />
+
 #### 外部域名（可选）
 
 外部排除域名分为两类：
+
+<div id="external-listed-by-you" />
 
 #### 外部域名（由您添加）
 
@@ -355,6 +413,8 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 * 最多可添加99个域名
 * 示例：auth0.com、okta.com、facebook.com、google.com
 * **排除后的影响：** 系统会忽略相关访问
+
+<div id="external-listed-by-appsflyer" />
 
 #### 外部域名（AppsFlyer预设）
 
@@ -422,11 +482,15 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 
 <Accordion title="要求与验证">
 
+<div id="domain-format" />
+
 #### 域名格式：
 
 * 仅输入域名，不含协议、路径或端口
 * 每个域名最多500个字符
 * 系统会自动移除协议前缀（https://），并将域名转换为小写
+
+<div id="examples" />
 
 #### 示例：
 
@@ -436,11 +500,15 @@ AppsFlyer向前回溯多长时间，以查找促成获客的营销触点。
 * example.com/path❌（不允许包含路径）
 * example.com:8080❌（不允许包含端口）
 
+<div id="limits" />
+
 #### 数量限制：
 
 * 最多可添加100个域名（包括1个主要域名）
 
 </Accordion>
+
+<div id="migrating-from-people-based-attribution-pba" />
 
 ## 从People-Based Attribution（PBA）迁移
 

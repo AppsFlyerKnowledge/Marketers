@@ -29,6 +29,8 @@ x-zendesk:
 
 > **概要：** 通过该API获取指定的LTV、活跃、群组、Protect360、和留存等维度的投放效果指标（CSV或JSON格式）。选择一个或多个应用。
 
+<div id="master-apiuser-acquisition-metrics-via-api" />
+
 ## Master API — 通过API获取拉新指标
 
 Master API：
@@ -250,6 +252,8 @@ Master API：
 
    </Accordion>
 
+   <div id="calculated-kpis" />
+
    #### 推算KPI
 
    除上文所述的KPI之外，您也可以在Master API报告中添加推算KPI，这样您就能在Master API报告中配置自定义的推算报告。
@@ -259,6 +263,8 @@ Master API：
    Master API支持标准的算术运算符，包括转码为%2b的加号（+）、减号（-）、乘号（*）和转码为%2f的除号（/）。
 
    推算KPI的字段键**必须**以“calculated\_kpi\_”开头，后接任意有效字符串，如“calculated\_kpi\_purchaserate”。
+
+   <div id="example" />
 
    > 📄 **示例**
    >
@@ -318,6 +324,8 @@ Master API：
    | timezone | 使用应用配置中的指定时区 | timezone=preferred | 否 |
 
    </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

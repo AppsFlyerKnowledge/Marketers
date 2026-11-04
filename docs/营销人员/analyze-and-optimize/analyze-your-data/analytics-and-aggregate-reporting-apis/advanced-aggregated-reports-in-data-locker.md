@@ -25,6 +25,8 @@ x-zendesk:
 
 > **概要**：Data Locker中的高级汇总报告具有最高的时效性和准确性，可呈现颗粒度最细的数据，且对数据量没有限制。
 
+<div id="advanced-aggregated-reports-in-data-locker" />
+
 ## Data Locker中的高级汇总报告
 
 Data Locker中的高级汇总报告具有下列优势：
@@ -33,6 +35,8 @@ Data Locker中的高级汇总报告具有下列优势：
 * 您可以将该数据入库到BI，用于投放效果分析和优化。
 * 提供最佳的F2A数据：<Anchor target="_blank" href="/marketers/zh/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">一天多次</Anchor>拉取数据，每次都使用当天所有可用数据更新相关报告，并以版本化的形式呈现。
 * 当原始数据受到媒体渠道数据共享政策或广告主<Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions">隐私保护政策</Anchor>的<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">限制</Anchor>时，高级汇总报告可帮助您扩充原始数据。这样的限制会影响到与归因有关的字段，如广告系列和广告组。
+
+<div id="setup" />
 
 ## 设置方式
 
@@ -43,11 +47,15 @@ Data Locker中的高级汇总报告具有下列优势：
 | 是 | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)将报告添加到Data Locker：<ol><li>从AppsFlyer后台左侧的菜单栏中选择**导出 > Data Locker**。</li><li>选择您需要的所有报告。</li><li>点击**保存配置**。<br />相关报告将于次日制作完毕。</li></ol> |
 | 否 | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)**完成Data Locker的设置**：<ol><li>完成Data Locker的初始设置（<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers#set-up-data-locker">广告主指南</Anchor>｜<Anchor target="_blank" href="/partners/zh/docs/data-locker-for-partners">渠道指南</Anchor>）。</li><li>将相关报告添加到Data Locker：<ol><li>从AppsFlyer后台左侧的菜单栏中选择**导出 > Data Locker**。</li><li>选择您需要的所有报告。</li><li>点击**保存配置**。<br />相关报告将于次日制作完毕。</li></ol></li></ol> |
 
+<div id="reports-available" />
+
 ## 可用报告
 
 <div id="cohort-versioned-report" />
 
 <Accordion title="高级汇总（版本化的群组数据）报告">
+
+<div id="report-facts" />
 
 ### 详情说明
 
@@ -61,6 +69,8 @@ Data Locker中的高级汇总报告具有下列优势：
 | 目录与文件名结构 | [详情请见此处说明。](/docs/advanced-aggregated-reports-in-data-locker#报告结构) |
 | 渠道的数据保存期限 | 有些渠道设有数据保存期限。对于数据保存期限之后发生的事件，群组报告会将其记录为自然量。<br /><br />举例说明：SRN A的数据保存期限为180天。第180天之前发生的用户事件会被归因到SRN A，第180天之后发生的事件被记录为自然量。 |
 
+<div id="report-structure" />
+
 ### 报告结构
 
 报告由不同的维度和指标组成。
@@ -70,6 +80,8 @@ Data Locker中的高级汇总报告具有下列优势：
 * **维度**：以字符串格式呈现，长度不定，一般取决于广告层级的填充方式。
 * **指标**：以数字的形式呈现。**请注意：** selected\_currency字段以字符串的格式呈现。  
   可用指标为收入、完成某事件的独立用户数以及事件发生次数。ROI、ROAS等成本指标的计算需要同时用到收入和成本数据。收入数据可通过群组报告获取，而成本数据则需使用<Anchor target="_blank" href="/marketers/zh/docs/set-up-and-use-roi360-cost-etl-reports">ROI360 Cost ETL。</Anchor>
+
+<div id="dimensions" />
 
 #### 维度
 
@@ -283,6 +295,8 @@ Data Locker中的高级汇总报告具有下列优势：
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### 指标
 
 | 字段名称 | 说明 | 格式 |
@@ -294,11 +308,15 @@ Data Locker中的高级汇总报告具有下列优势：
 | revenue\_selected\_currency | <ul><li>以指定货币为单位的收入数额。假设指定货币为EUR，则1234.56欧元会显示为1234.56。</li><li>最多精确到小数点后2位。</li></ul> | 数字 |
 | first\_inapp | <ul><li>转化后首次完成相关应用内事件的用户数量。</li><li>将first\_inapp指标加总后可得出该事件的累计独立用户数。</li></ul> | 数字 |
 
+<div id="directory-and-filename-structure" />
+
 #### 目录与文件名结构
 
 构成报告路径的文件夹结构如下：
 
 格式：`/t=cohort_unified_versioned/dt=/version=/`
+
+<div id="report-folder-hierarchy" />
 
 #### 报告文件夹的层次结构
 
@@ -338,6 +356,8 @@ bucket
 * **t**：报告类型。
 * **version**：相关版本的创建时间，以Unix时间戳表达。
 
+<div id="report-versions-and-data-freshness" />
+
 ### 报告版本和数据时效性
 
 * 一天更新多次，每数小时发送一次报告。
@@ -363,6 +383,8 @@ bucket
 
 <Accordion title="高级汇总（按本地时区版本化的群组数据）报告">
 
+<div id="report-facts-1" />
+
 ### 详情说明
 
 | 速览 | 按本地时区版本化的群组数据报告中包含所有按群组汇总的数据，并提供所有投放维度，细化到所有颗粒度。该报告数小时更新一次，确保最高的数据时效性和准确性。<br /><br /><Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQk1cZkeJhlx3trW13SjGbD4aWX3LmXZJRDJRApuAJkjB7XAg4nSFUyN0_YoirX-QMHkhFeMHwEmiVj/pub?output=xlsx">下载报告样例</Anchor> |
@@ -375,6 +397,8 @@ bucket
 | 目录与文件名结构 | [详情请见此处说明。](/docs/advanced-aggregated-reports-in-data-locker#报告结构-1) |
 | 渠道的数据保存期限 | 有些渠道设有数据保存期限。这种情况下，在数据保存期限之后发生的事件不会出现在群组报告中。<br /><br />举例说明：SRN A的数据保存期限为180天。第180天之前发生的用户事件会被归因到SRN A，第180天之后发生的事件会被忽略。<br /><br />**请注意**：这些事件在总览面板中显示为自然量。 |
 
+<div id="report-structure-1" />
+
 ### 报告结构
 
 报告由不同的维度和指标组成。
@@ -384,6 +408,8 @@ bucket
 * **维度**：以字符串格式呈现，长度不定，一般取决于广告层级的填充方式。
 * **指标**：以数字的形式呈现。**请注意：** selected\_currency字段以字符串的格式呈现。  
   可用指标为收入、完成某事件的独立用户数以及事件发生次数。ROI、ROAS等成本指标的计算需要同时用到收入和成本数据。收入数据可通过群组报告获取，而成本数据则需使用<Anchor target="_blank" href="/marketers/zh/docs/set-up-and-use-roi360-cost-etl-reports">ROI360 Cost ETL。</Anchor>
+
+<div id="dimensions-1" />
 
 #### 维度
 
@@ -609,6 +635,8 @@ bucket
   </tbody>
 </Table>
 
+<div id="metrics-1" />
+
 #### 指标
 
 | 字段名称 | 说明 | 格式 |
@@ -620,11 +648,15 @@ bucket
 | revenue\_selected\_currency | <ul><li>以指定货币为单位的收入数额。假设指定货币为EUR，则1234.56欧元会显示为1234.56。</li><li>最多精确到小数点后2位。</li></ul> | 数字 |
 | first\_inapp | <ul><li>转化后首次完成相关应用内事件的用户数量。</li><li>将first\_inapp指标加总后可得出该事件的累计独立用户数。</li></ul> | 数字 |
 
+<div id="directory-and-filename-structure-1" />
+
 #### 目录与文件名结构
 
 构成报告路径的文件夹结构如下：
 
 格式：`/t=cohort_unified_timezone_versioned/dt=/version=/`
+
+<div id="report-folder-hierarchy-1" />
 
 #### 报告文件夹的层次结构
 
@@ -664,6 +696,8 @@ bucket
 * **t**：报告类型。
 * **version**：相关版本的创建时间，以Unix时间戳表达。
 
+<div id="report-versions-and-data-freshness-1" />
+
 ### 报告版本和数据时效性
 
 * 一天更新多次，每数小时发送一次报告。
@@ -696,6 +730,8 @@ bucket
 | 21 | 第8天午夜00:00 | 第0天完整的转化和应用内事件数据，以及通过S2S发送的完整广告收入数据，这些数据已经根据变现平台侧可能出现的任何问题进行了调整。 | 第8天早上6点 |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 
@@ -748,6 +784,8 @@ AppsFlyer支持所有应用的数据配置，您可以将多个应用的数据�
 
 本节列举了一些通过Data Locker拉取数据并用于BI的常见使用场景，且每个示例都配以相关的SQL语句及Excel表格数据作为详细说明。
 
+<div id="1-calculate-retention" />
+
 #### **1. 计算留存率**
 
 在这个示例中，我们需要完成以下工作：
@@ -780,6 +818,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30% | 10% |
 | 98765432 | 123456 | 200 | 25% | 15% |
 | 07315466 | 613770 | 300 | 20% | 12% |
+
+<div id="2-calculate-arpu-of-multiple-in-app-events" />
 
 #### **2. 计算多个应用内事件的ARPU**
 
@@ -817,6 +857,8 @@ group by 1
 | 98765432 | re-engagement | 3.57 | 1.34 | 4.86 |
 | 07315466 | re-attribution | 7.41 | 6.79 | 5.29 |
 
+<div id="3-calculate-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. 针对具体的群组日期计算应用内事件的转化率**
 
 在这个示例中，我们需要完成以下工作：
@@ -847,6 +889,8 @@ group by 1,2,3,4,5
 | 2022-11-07 | US | 12345678 | 123456 | site\_123 | 45% |
 | 2022-11-05 | UK | 98765432 | null | site\_654 | 70% |
 | 2022-10-31 | KR | 07315466 | null | null | 63% |
+
+<div id="4-calculate-daily-installs" />
 
 #### **4. 计算每日激活量**
 
@@ -884,6 +928,8 @@ group by 1,2,3,4,5
 | id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculate-revenue-from-facebook-ads" />
+
 #### **5. 计算由Facebook Ads带来的收入**
 
 在这个示例中，我们需要完成以下工作：
@@ -917,6 +963,8 @@ group by 1,2,3
 | 2022-11-05 | id123456789 | adnet2\_int | 99.23 |
 | 2022-10-31 | id123456789 | adnet3\_int | 13.34 |
 
+<div id="6-calculate-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6. 分ASA关键词ID计算365天以内的ARPU**
 
 在这个示例中，我们需要完成以下工作：
@@ -947,6 +995,8 @@ group by 1
 | adnet1\_int | 123456 | 57,019.93 |
 | adnet2\_int | 987654 | 64,867.84 |
 | adnet3\_int | 666854 | 48,160.02 |
+
+<div id="7-calculate-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. 分国家/地区按归因时间计算7日ARPU**
 
@@ -989,6 +1039,8 @@ limit 20
 | Canada | 35,099 | $64,867.84 | $7,050.19 | $5,656.33 | $9,553.75 | $8,632.41 | $11,308.06 |
 | Chile | 26,750 | $48,160.02 | $21,249.55 | $22,584.57 | $24,033.07 | $31,118.91 | $41,145.22 |
 
+<div id="8-calculate-purchases-day-7-after-conversion" />
+
 #### **8. 计算转化后第7天的购买事件数量**
 
 在这个示例中，我们需要完成以下工作：
@@ -1029,6 +1081,8 @@ group by 1,2,3,4,5
 | id123456789 | 2024-03-05 | adnet1\_int | campaign\_1 | adset\_1 | 100 | 20 | 20% |
 | id123456789 | 2024-03-07 | adnet2\_int | campaign\_2 | adset\_2 | 200 | 10 | 5% |
 | id123456789 | 2024-03-31 | adnet3\_int | campaign\_3 | adset\_3 | 150 | 15 | 10% |
+
+<div id="9-calculate-dau" />
 
 #### **9. 计算DAU**
 
@@ -1089,6 +1143,8 @@ group by 1,2,3
 | 重装激活 | <ul><li>如果重装激活发生后的事件被记录为未归因的自然量：<ul><li>2024年5月26日之后的报告不呈现该数据。<Anchor target="_blank" href="/marketers/zh/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">详情请见此处说明。</Anchor></li><li>激活时间以<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor>字段的值为准。</li><li>不计入独立用户数和留存指标。</li></ul></li><li>如果重装激活后发生的事件被归因到首次激活，则报告中总是包含该数据。<Anchor target="_blank" href="/marketers/zh/docs/unique-users">详情请见此处说明。</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

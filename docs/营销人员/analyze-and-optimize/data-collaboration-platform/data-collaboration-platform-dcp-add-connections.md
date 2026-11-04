@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** 设置 DCP 连接以连接数据源、丰富数据并将受众导出到云存储和媒体合作伙伴。
 
+<div id="about-dcp-connections" />
+
 ## 关于 DCP 连接
 
 连接决定了 DCP 如何摄取您的数据和导出受众。<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">设置云服务</Anchor>后，使用**管理连接模式将它们连接**到 DCP。以下连接类型可用：
@@ -58,9 +60,13 @@ DCP 为不同的连接方向支持不同的云服务。使用下表查看每种�
 
 您也可以在设置源时直接创建源连接。有关说明，请参阅<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources">创建和管理来源</Anchor>。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 创建与 Amazon S3 或 GCS 的传入源连接会自动创建匹配的传出云存储连接（反之亦然）。删除 Amazon S3 或 GCS 连接也会自动删除另一个连接。由于它实际上是一个基础连接，因此将其从任一选项卡中删除都会将其移除到任何使用的地方。
+
+<div id="cloud-service-connections-for-source-data" />
 
 #### 源数据的云服务连接
 
@@ -72,6 +78,8 @@ Snowflake在 “**新建连接**” 对话框中，输入包含源**数据的账
 
 **账户管理员** > **账户** > 将鼠标悬停在相关账户上 > **复制账户**标识符。有关详细信息，请参阅 <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">Snowflake 文档</Anchor>。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 寻找标有 “**定位器**” 的 ID。**这**与创建出站 Snowflake 连接时使用的 ID 不同。
@@ -79,6 +87,8 @@ Snowflake在 “**新建连接**” 对话框中，输入包含源**数据的账
 **亚马逊 S3 和 GCS：** 在 “**新建连接**” 对话框中，输入<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound">您创建的专供 AppsFlyer 数据净化室 (DCR) 使用的存储分区的</Anchor>名称。
 
 **Salesforce 云/CRM：** 查看<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">如何设置 Salesforce 连接</Anchor>。
+
+<div id="local-file-connection" />
 
 #### 本地文件连接
 
@@ -148,6 +158,8 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
 | part-NNNNN--c000.csv | 此交付的输出文件之一 — 请参阅下面的文件格式和拆分。 |
 | \_SUCCESS | 导出完成写入所有零件文件后写入的空标记文件。 |
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 此文件夹结构是自动创建和管理的。不要手动对其进行重命名或重构——读取这些文件的任何自动流程都应遵循此路径模式，并且应等待 \_SUCCESS 出现后再处理零件文件，以避免读取部分交付。
@@ -202,6 +214,8 @@ c1d3e5f7a9b1c3d5e7f9a1b3c5d7e9f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3,hashed_phone_nu
 #### ID5
 
 <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">使用 ID5 标识符丰富您的第一方数据</Anchor>，以统一分散的用户数据，提高与激活合作伙伴的匹配率，并增加合作伙伴端的受众规模。
+
+<div id="see-also" />
 
 > 📄 **另请参阅**
 >

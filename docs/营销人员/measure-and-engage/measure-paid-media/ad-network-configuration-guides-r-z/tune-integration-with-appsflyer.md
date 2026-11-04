@@ -47,10 +47,16 @@ x-zendesk:
 | **授权** |  |
 
 
+<div id="prerequisite" />
+
+<div id="enabling-deep-linking-into-your-app" />
+
 ### 前期准备
 
 * iOS：
 * 安卓：
+
+<div id="step-1-configure-links-for-your-campaigns" />
 
 ### 第1步：
 
@@ -61,6 +67,10 @@ x-zendesk:
       
 
     ![branded-link-esp-cname-fail-message.png](https://files.readme.io/94f159a089152437111fc6e4308464bc48512ee18f5e249460006bfda05252c2-21323447961105.png)
+
+<div id="example" />
+
+<div id="step-2-set-up-the-attribution-link" />
 
 ### 第2步：
 

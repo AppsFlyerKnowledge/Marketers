@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="53877 需要 KB 图片来制作新的 DCP KB (1).png" src="https://files.readme.io/27a6b28b44ac27fdfb811a72a14f1b8ee1470d877b042c23b80550c81d8ed576-51911266419729.png" width="798px" />
 
+<div id="about-the-data-collaboration-platform-dcp" />
+
 ## 关于数据协作平台（DCP）
 
 AppsFlyer 数据协作平台 (DCP) 是先进的下一代解决方案，帮助商业媒体平台和品牌发挥组合数据的潜力。通过安全、以隐私为中心的功能，该平台可以实现无缝协作，让企业能够产生新的广告收入流，并建立自定义受众，以便在任何地方激活现场营销活动。
@@ -42,6 +44,8 @@ DCP处理包括用户级数据在内的共享数据，以生成匿名深入分�
 * 创建和维护与 IDR 供应商、其他净室和平台的无缝对接，以便在保护数据隐私的同时，跨生态系统进行扩展、调整和协作。
 * 了解您的业务是按照全球和当地的隐私法规发展，请放心。所有协作都能确保安全合规的数据协作。
 
+<div id="use-cases" />
+
 ## 使用场景
 
 请参阅一些协作用例示例。
@@ -52,9 +56,13 @@ DCP处理包括用户级数据在内的共享数据，以生成匿名深入分�
 
 在商业零售商和品牌之间交换匿名数据，根据个人购物行为创建量身定制的广告。
 
+<div id="example-non-endemic-advertising" />
+
 > 📄 **举例来说，非地方性广告**
 >
 > 跨部门协作：一个物美价廉的时尚品牌会吸引经常购买尿布的超市客户（父母或幼儿看护者）。他们推广幼儿服装广告。
+
+<div id="example-endemic-advertising" />
 
 > 📄 **举例来说，地方性广告**
 >
@@ -68,15 +76,21 @@ DCP处理包括用户级数据在内的共享数据，以生成匿名深入分�
 
 使用匿名购买历史记录和浏览行为，识别被视为可购买受众的细分客户，例如“有价值购物者”或“品牌忠实用户”。
 
+<div id="example-non-endemic-advertising-1" />
+
 > 📄 **举例来说，非地方性广告**
 >
 > 某品牌与零售商合作推广跑鞋。该品牌希望与过去 7 天内在零售商应用内搜索中搜索过跑鞋但未购买的用户进行互动。
+
+<div id="example-non-endemic-advertising-2" />
 
 > 📄 **举例来说，非地方性广告**
 >
 > 某服装品牌与 CMN 连锁酒店合作，向热带游客推广夏季系列。
 
 </Accordion>
+
+<div id="get-started-using-dcp" />
 
 ## 开始使用 DCP
 
@@ -144,6 +158,8 @@ DCP处理包括用户级数据在内的共享数据，以生成匿名深入分�
 现在是时候<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-collaboration-measurement-overview">设置衡量</Anchor>标准，看看协作营销活动的效果如何。之后，在协作控制面板中查看广告活动结果！
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

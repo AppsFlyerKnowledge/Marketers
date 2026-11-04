@@ -28,6 +28,8 @@ x-zendesk:
 
 **延伸阅读：** <Anchor target="_blank" href="/marketers/zh/docs/about-advertiser-apis">广告主 API 列表</Anchor>
 
+<div id="get-app-list-api" />
+
 ## 获取应用列表 API
 
 以下章节介绍使用此 API 所需的信息。
@@ -59,6 +61,8 @@ GET https://hq1.appsflyer.com/api/mng/apps
 | 查询参数 | 说明 |
 | --- | --- |
 |  | 此 API 无必需的查询参数。 |
+
+<div id="pagination-mechanism" />
 
 #### **分页机制**
 

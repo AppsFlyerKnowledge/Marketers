@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** 您可以使用该API获取数据点更充足、维度更丰富的SKAN效果数据。这些数据与SKAdNetwork面板中的数据类似，按激活日期或回传送达日期进行汇总。
 
+<div id="skan-aggregated-performance-report-api" />
+
 ## SKAN汇总效果报告API（SKAN aggregated performance report API）
 
 该API可返回由Apple SKAdNetwork上报的归因指标等数据点（真实数据），按激活日期或回传送达日期汇总。返回的报告结构与<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN面板</Anchor>中的数据结构相同。
@@ -37,6 +39,8 @@ x-zendesk:
 2. 将该API token发送给您的开发人员，用于认证头（Authentication Header）中。
 3. 将下表所列的相关参数发送给您的开发人员，让其在调用API时输入这些参数。这些参数用于界定报告的重点内容、信息梳理方式以及报告覆盖的时间范围。
 4. 让您的开发人员按照开发者资源中心的<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-performance-report-api-get">SKAN汇总效果报告API指南</Anchor>进行操作。
+
+<div id="parameters" />
 
 #### 参数
 
@@ -60,6 +64,8 @@ x-zendesk:
 * 部分指标（收入、广告交互、转化）取决于SKAN<Anchor target="_blank" href="/marketers/zh/docs/skan-conversion-studio">广告效果衡量的设置方式</Anchor>。
 * 报告中仅包含用户在数据上报周期内完成的应用内事件，因此每个报告中应用内事件字段的数量和顺序可能有所不同。基于这个因素，请不要按照字段顺序来设计您的数据导入流程。
 * 示例： [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vSmnyUITQjRxNp6-rz8Xzscu-Rr4Kn2DW1du2VppS-QrpyQSZ0GKQ_qZdWNdNoLuwJAmgh2O-bWiuU3/pub?gid=0&single=true&output=csv) | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQogLd4w3xgrjQBmEiHLfcvz1e9dtWez_Rdg1OxV8bSRHRE-wxZJItfT6azLr4iZAgsW2Vxr_WVmEYo/pub?gid=0&single=true&output=csv">V2</Anchor>
+
+<div id="report-fields" />
 
 #### 报告字段
 

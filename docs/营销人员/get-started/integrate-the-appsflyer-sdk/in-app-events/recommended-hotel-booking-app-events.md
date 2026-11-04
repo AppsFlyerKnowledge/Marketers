@@ -24,7 +24,7 @@ x-zendesk:
 > **概要：** 概览： 通过为您的酒店预订应用程序记录这些建议的应用内事件，评估用户在整个用户路径中的质量。
 
 
-<span id="hotel-booking"></span>航班预订 App 允许旅客轻松预订航班, 同时从最优价格中进行选择。
+<span id="-hotel-booking"></span><span id="hotel-booking"></span>航班预订 App 允许旅客轻松预订航班, 同时从最优价格中进行选择。
 
 记录事件可以帮助您确定：
 
@@ -33,11 +33,15 @@ x-zendesk:
 
 您可以将酒店分数、季节、国家和随行未成年人等偏好数据归因到特定的媒体渠道。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 如需详细的开发人员指南，请在**AppsFlyer开发者资源中心**查找<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">。</Anchor>
 >
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -283,6 +287,8 @@ x-zendesk:
 |  |  | true |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

@@ -25,11 +25,15 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 部分渠道限制第三方的数据共享。对于通过这些渠道获得的用户设备级别数据，AppsFlyer无法将其分享给第三方平台或服务商。这种情况下，由这些渠道带来的激活全部都会上报为自然量。
 >
 > 详情请见<Anchor target="_blank" href="/marketers/zh/docs/user-level-data-retention">此文档</Anchor>，其中列出了所有限制第三方数据共享的媒体渠道。
+
+<div id="setting-up-liftoff" />
 
 ## 设置Liftoff
 
@@ -51,9 +55,13 @@ x-zendesk:
 
 下文说明了对接选项卡中所包含各部分内容。
 
+<div id="activate-partners" />
+
 ### 启用渠道
 
 请在首次访问时开启 <Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation#渠道对接的启用方式">**激活合作伙伴**</Anchor> 开关以激活该合作伙伴，激活之后可对渠道进行归因配置。
+
+<div id="general-settings" />
 
 ### 通用设置
 
@@ -61,12 +69,16 @@ x-zendesk:
 
 如果要启用Liftoff的展示归因，请激活这里。可在 [**归因链接**](/docs/liftoff-campaign-configuration-in-appsflyer#attribution-link-tab)选项卡中配置展示归因窗口期。
 
+<div id="default-postbacks" />
+
 ### 默认回传
 
 在用户安装、安装被拒、再互动之后，AppsFlyer可以自动回传这些事件至Liftoff。您可以在这个板块中设置可用回传的**事件来源**。
 
 选择 **仅此伙伴**只会回传归因给Liftoff渠道的用户事件。   
 选择<strong>所有渠道（包括自然渠道）</strong>会将所有用户的数据回传给Liftoff。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -129,6 +141,8 @@ AppsFlyer通过API获取成本信息。详情请见广告平台成本对接表�
 
 在该选项卡中，您可以选择要授予该渠道的权限。请注意，即使禁用 Liftoff的归因，授权选项卡仍处于有效状态，仍然可以对 Liftoff进行授权。
 
+<div id="ad-network-permissions" />
+
 ### 广告平台权限
 
 在该选项卡中，您可以选择要授予该渠道的权限。请注意，即使禁用 Liftoff的归因，授权选项卡仍处于有效状态，仍然可以对 Liftoff进行授权。
@@ -144,6 +158,8 @@ AppsFlyer通过API获取成本信息。详情请见广告平台成本对接表�
 * **允许访问Protect360面板**——仅访问该渠道的Protect360数据（需广告主事先开通该功能）
 
 如需进一步了解广告平台权限的详细说明，请参考<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#permissions-tab">此文档</Anchor>。
+
+<div id="agency-permissions" />
 
 ### 代理权限
 
@@ -169,6 +185,8 @@ AppsFlyer通过API获取成本信息。详情请见广告平台成本对接表�
 
 
 3. <span id="set-up-skadnetwork-integration-with-liftoff"></span>使用场景示例:
+
+<div id="product-feed-retargeting-with-liftoff" />
 
 ## 使用Liftoff再营销广告Feed
 

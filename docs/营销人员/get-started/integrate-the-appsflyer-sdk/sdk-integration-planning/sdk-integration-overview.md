@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **概要：概要**：本文介绍了AppsFlyer SDK已上线的功能，并解释了安卓和iOS应用分别应适配哪些API。
 
+<div id="about-the-sdk" />
+
 ## SDK简介
 
 本视频将为您介绍SDK对接的总体情况。
@@ -79,6 +81,8 @@ SDK用于记录应用激活和事件，也就是说，您可以使用SDK记录�
 </Tab>
 </Tabs>
 
+<div id="sdk-compatibility" />
+
 ## SDK兼容性
 
 AppsFlyer SDK与下列平台兼容：
@@ -110,13 +114,19 @@ AppsFlyer SDK与下列平台兼容：
 </Tab>
 </Tabs>
 
+<div id="sdk-integration" />
+
 ## SDK对接
 
 SDK的安装和对接需要产品经理和移动端开发人员合作完成。在接入SDK**之前**，请先全面了解该流程中所涉及的工作，并明确您的应用需要用到哪些功能。
 
+<div id="sdk-planning-checklist" />
+
 ### SDK规划清单
 
 为便于您上手，我们准备了一个<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTD4OimHC93iw2AJCcAY45yAc9lOBfJe8PskI_0NFZTnWnrIq1hjPBvCztkbom9acMDDd4d1d5mMFfi/pub?output=xlsx">任务清单</Anchor>来帮助您跑通整个规划流程，并针对每一项工作都提供了市场人员和开发人员的专用指南。
+
+<div id="sdk-integration-tasks" />
 
 ### SDK对接工作
 
@@ -139,6 +149,8 @@ SDK的安装和对接需要产品经理和移动端开发人员合作完成。�
 | 确定<Anchor target="_blank" href="/marketers/zh/docs/additional-sdk-integration-guide#应用打开sessions">用户session上报机制</Anchor>。 | 30分钟 |
 | 确定<Anchor target="_blank" href="/marketers/zh/docs/additional-sdk-integration-guide#自有媒体">自有媒体</Anchor>的归因方式。 | 1小时 |
 | 管理<Anchor target="_blank" href="/marketers/zh/docs/additional-sdk-integration-guide#用户隐私">用户隐私</Anchor>政策，确保您的应用符合相关隐私条例（如GDPR和CCPA） | 1小时 |
+
+<div id="note" />
 
 > 📄 **相关文档**
 >

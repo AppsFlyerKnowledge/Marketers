@@ -24,20 +24,28 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
+<div id="measurement-of-cm360-with-non-dv360-third-party-media-sources" />
+
 ## 使用非DV360第三方媒体渠道在CM360中进行衡量
 
 Google Marketing Platform（GMP）可整合广告与分析功能，帮助您建立高质量的用户联系、深入洞察用户行为并提升营销效果。
 
 在AppsFlyer的使用场景中，GMP中的标准DV360 SRN对接（dv360\_int）可对**CM360管理**的DV360活动进行归因，无需归因链接即可实现。通过该对接，AppsFlyer可利用DV360 SRN回传数据对激活和再互动进行归因。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * AppsFlyer通过标准DV360 SRN对接归因CM360管理的DV360广告活动，无需链接即可完成归因。 激活和再互动会通过DV360 SRN的回传机制进行归因。如果您正在通过CM360投放DV360广告，请参考<Anchor target="_blank" href="/marketers/zh/docs/google-marketing-platform-display-video-360-dv360-integration">DV360对接指南</Anchor>。
 > * 如果第三方媒体渠道本身是SRN，AppsFlyer建议不要使用本文所述方法进行对接，以避免在同一合作渠道通过两种不同方式上报转化时出现冲突。例如，若您已在AppsFlyer中启用Meta Ads的SRN对接，同时又通过CM360按本文方法上报Meta Ads流量（facebook\_int），则可能同时收到Meta Ads和CM360的转化数据，CM360可能会捕捉到原本应由Meta Ads主对接归因的部分转化。
 
+<div id="measuring-third-party-traffic-running-via-cm360" />
+
 ### 衡量来自CM360的第三方流量
 
 以下是通过CM360管理第三方媒体渠道，并在AppsFlyer和CM360中同时进行衡量的推荐操作步骤：
+
+<div id="step-1-integrate-the-third-party-media-source-and-gmp-with-appsflyer" />
 
 #### 第1步：将第三方媒体渠道与GMP和AppsFlyer进行对接
 
@@ -46,9 +54,13 @@ Google Marketing Platform（GMP）可整合广告与分析功能，帮助您建�
 * 确保相关第三方媒体渠道已在AppsFlyer中完成对接并启用。归因将归于该第三方媒体渠道，而不是CM360。启用GMP（dv360\_int）仅用于确保数据可以回传至CM360。
 * 如果该第三方媒体渠道尚未与AppsFlyer对接，则应将其作为自有媒体渠道或自定义渠道处理。此时需要使用归因链接，并在链接中设置任意PID（media source）值。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 关于代理归因：AppsFlyer需要代理名称才能对激活进行归因。请在归因链接中使用`af_prt`参数，或通过URL中的referrer参数添加代理名称。
+
+<div id="step-2-create-the-required-attribution-links" />
 
 #### 第2步：创建所需的归因链接
 
@@ -110,9 +122,13 @@ Google Marketing Platform（GMP）可整合广告与分析功能，帮助您建�
       * 了解更多关于 <Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters?">iOS和Android归因链接结构和参数</Anchor>的说明。
       * 了解更多关于 <Anchor target="_blank" href="/marketers/zh/docs/ctv-pc-and-console-platform-direct-attribution-links">CTV、主机端和PC端归因链接结构和参数</Anchor>的说明。
 
+<div id="step-3-set-in-app-event-postbacks" />
+
 #### 第3步：应用内事件回传
 
 为确保CM360能收到这些广告活动产生的应用内事件数据，建议在dv360\_int中将事件回传范围设置为“所有媒体渠道（包括自然流量）”。
+
+<div id="using-the-attribution-link" />
 
 ### 使用归因链接
 

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **核心要点：** 使用产品线，将不同平台的应用归入同一品牌。基于统一的客户用户 ID（CUID），实现跨平台归因，洞察用户在移动端、网页端和联网电视（CTV）应用中的完整旅程。
 
+<div id="about-product-line" />
+
 ## 产品线简介
 
 产品线可以将同一应用在不同平台上的版本（例如 Android、iOS、网页端和 CTV）归入同一品牌，简化应用管理，并基于客户用户标识符（CUID）实现无缝的跨平台归因。
@@ -38,13 +40,19 @@ x-zendesk:
 
 如需全面了解产品线，请参阅<Anchor target="_blank" href="/marketers/zh/docs/beta-user-based-cross-platform-attribution">基于用户的跨平台归因概述</Anchor>。
 
+<div id="how-to-set-up-a-product-line" />
+
 ## 如何设置产品线
+
+<div id="prerequisites" />
 
 ### 前提条件
 
 * <strong>CUID（客户用户标识符）</strong>必须是在所有平台上保持一致的用户标识，例如登录 ID 或经过哈希处理的电子邮件地址。
 * 完成 **CUID SDK 或** [**S2S 对接**](https://dev.appsflyer.com/hc/docs/set-customer-user-id)。
 * 确保应用在每次启动时都设置 CUID，以便在不同设备和会话中识别同一用户。
+
+<div id="how-to-create-a-product-line" />
 
 ### 如何创建产品线
 
@@ -68,6 +76,8 @@ x-zendesk:
 <div id="how-to-remove-an-app-from-a-product-line" />
 
 <Accordion title="如何从产品线中移除应用">
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -97,6 +107,8 @@ x-zendesk:
 
 <Accordion title="如何删除产品线">
 
+<div id="important-1" />
+
 > 🚧 **重要！**
 >
 > 不建议删除产品线。删除产品线后，相关的跨平台归因设置会被重置；在重新建立映射关系之前，后续事件将无法参与跨平台归因。
@@ -106,6 +118,8 @@ x-zendesk:
 3. 选择**Delete product line（删除产品线）**。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 产品线的特点与限制
 
@@ -117,6 +131,8 @@ x-zendesk:
 | CUID 要求 | 仅在使用跨平台归因时需要。 |
 | 非活跃期恢复窗口 | 14–390 天，默认值为 90 天。 |
 | 移除应用的影响 | 移除应用会重置归因设置。<br /><br />从产品线中移除应用后，后续的跨平台归因将受到影响。<br /><br />• 被移除应用今后上报的应用内事件将不再符合该产品线的跨平台归因条件，因为只有来自产品线内应用的事件才能参与跨平台归因。<br /><br />• 历史结果不会追溯重新处理。 |
+
+<div id="faqs" />
 
 ## 常见问题
 

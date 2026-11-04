@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
 
+<div id="attribution-measurement-in-an-att-environment" />
+
 ## ATT环境中的移动归因与衡量
 
 对于应用到应用的付费广告，SKAN可提供确定性归因。自有媒体、网页到应用及Apple Search Ads等其他类型的广告仍可通过AppsFlyer的传统归因工具进行归因。这些传统归因工具可提供长期的LTV衡量数据，而SKAN只衡量激活后较短一段时间内的用户行为。
@@ -106,7 +108,11 @@ iOS 14平台中的激活可能会同时由传统归因方式和SKAN面板重复�
 
 </Accordion>
 
+<div id="ios-attribution-and-privacy-important-knowledge" />
+
 ## iOS 14重点内容
+
+<div id="ios-attribution-skan-and-privacy-articles-and-links" />
 
 #### iOS 14及SKAN相关的文档和链接
 
@@ -128,6 +134,8 @@ iOS 14平台中的激活可能会同时由传统归因方式和SKAN面板重复�
 
 <Accordion title="iOS对归因和衡量的影响">
 
+<div id="metrics" />
+
 #### **指标**
 
 对于拒绝ATT授权的用户，其相关指标会出现以下变化：
@@ -139,6 +147,8 @@ iOS 14平台中的激活可能会同时由传统归因方式和SKAN面板重复�
 | 再营销 | 自然激活及应用内事件 | 再互动、再归因 |  |
 | Apple Search Ads | -- | -- | 无变化。无论用户授权与否，都会得到正确归因。 |
 
+<div id="deep-linking" />
+
 #### **深度链接**
 
 使用<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-legacy-apis#deferred-deep-linking">onConversionDataSuccess</Anchor>这一历史方法实现的延迟深度链接在iOS 14.5中可能会失效，因为这类链接所需的归因数据可能会受到隐私保护机制的影响而不可用。
@@ -146,6 +156,8 @@ iOS 14平台中的激活可能会同时由传统归因方式和SKAN面板重复�
 建议您使用<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl-1">Unified Deep Linking（UDL）</Anchor>，详情请见此处说明。
 
 </Accordion>
+
+<div id="faqios-attribution-and-att" />
 
 ## 常见问题解答—iOS 14+
 
@@ -167,6 +179,8 @@ iOS 14平台中的激活可能会同时由传统归因方式和SKAN面板重复�
 不一定。仅当您需要*跟踪*用户和/或收集IDFA时才需要获得ATT授权。
 
 </Accordion>
+
+<div id="faqskan" />
 
 ## 常见问题解答—SKAN
 
@@ -223,6 +237,8 @@ iOS 14平台中的激活可能会同时由传统归因方式和SKAN面板重复�
 举例来说，
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

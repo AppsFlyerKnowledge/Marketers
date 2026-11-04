@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="campaign-name-changes" />
+
 ## 广告系列名称变更
 
 AppsFlyer显示广告系列数据时以广告系列ID为标识。
@@ -45,6 +47,8 @@ AppsFlyer显示广告系列数据时以广告系列ID为标识。
 | Cost ETL | 是 |
 | SKAN总览面板 | 否 |
 
+<div id="example" />
+
 > 📄 **示例**
 >
 > ####
@@ -62,7 +66,9 @@ AppsFlyer显示广告系列数据时以广告系列ID为标识。
 >
 >
 >
-> <table><tbody><tr><th><p><span><span id="overview-dashboard-display-before-the-behavior-change"></span>Campaign</span></p></th><th><p><span>即广告系列的ID</span></p></th><th><p><span>激活假量</span></p></th><th><p><span>广告消耗数据</span></p></th></tr><tr><td><p><span>example_a2</span></p></td><td><p><span>123</span></p></td><td><p><span>300</span></p></td><td><p><span>$300</span></p></td></tr><tr><td colspan="4"><p>结果：</p></td></tr></tbody></table>
+> <table><tbody><tr><th><p><span><span id="overview-dashboard-display"></span><span id="overview-dashboard-display-before-the-behavior-change"></span>Campaign</span></p></th><th><p><span>即广告系列的ID</span></p></th><th><p><span>激活假量</span></p></th><th><p><span>广告消耗数据</span></p></th></tr><tr><td><p><span>example_a2</span></p></td><td><p><span>123</span></p></td><td><p><span>300</span></p></td><td><p><span>$300</span></p></td></tr><tr><td colspan="4"><p>结果：</p></td></tr></tbody></table>
+
+<div id="best-practice" />
 
 ### 【推荐方式】：
 

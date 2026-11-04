@@ -23,6 +23,8 @@ x-zendesk:
 
 网页广告归因
 
+<div id="pba-website-attribution" />
+
 ## PBA网页端归因
 
 广告主可以使用网页端归因面板深入了解访问量和转化量背后的媒体渠道。
@@ -36,6 +38,8 @@ x-zendesk:
 | --- | --- |
 | ![Icon1.png](https://files.readme.io/b20da70a56d881dd2fe31b18df8919db43b47e3e2338b89da7ef5ef6467590d6-360013383937.png) | **投放效率**<br /><br />哪些拉新渠道的投放效果指标（如转化率或ARPU等）最好？ |
 | ![s4.png](https://files.readme.io/9a426232668022a9b4d006e685d2384d61efe4814c377aa9295e9b7887f14fef-360013383957.png) | **对比分析** |
+
+<div id="dashboard-reference" />
 
 ## 面板使用方式
 

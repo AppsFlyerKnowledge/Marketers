@@ -32,7 +32,11 @@ x-zendesk:
 
 ![pre-install-intro-breakdown.png](https://files.readme.io/bf586f87419027778cae169e8c19b7f188326173417550fe3a747db8c7dab72d-51165335908369.png)
 
+<div id="introduction" />
+
 ## 简介
+
+<div id="what-is-a-pre-install-campaign" />
 
 ### 什么是预装推广？
 
@@ -42,9 +46,13 @@ x-zendesk:
 
 预装推广也包括与第三方渠道合作，让其代表广告主通过设备生产商实现预装。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 用户首次启动应用时，AppsFlyer会记录一次激活。因此，AppsFlyer中呈现的预装数量是指激活应用的用户数量，而不是预装了该应用的设备数量。
+
+<div id="benefits-of-recording-installs-from-pre-install-campaigns" />
 
 ### 记录预装推广带来的激活有何意义
 
@@ -54,17 +62,25 @@ x-zendesk:
 * 各设备生产商带来的用户数量
 * 用户LTV，并以此来判断带来高价值用户的生产商
 
+<div id="how-can-i-measure-pre-install-campaigns" />
+
 ### 如何衡量预装推广？
 
 预装推广的衡量方式共有四种。详情请见本文的[设置](/docs/appsflyer-factory-preinstall-using-manifest-android#设置方式)部分。
+
+<div id="viewing-pre-install-data" />
 
 ### 查看预装数据
 
 与其他激活一样，预装激活在AppsFlyer面板中会呈现在获得归因的渠道下。但是，这些激活的广告系列名称总是显示为**Pre-install** 。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 您可以使用[SDK API方法](/docs/appsflyer-factory-preinstall-using-manifest-android#sdk-api-method)为预装激活配置不同的广告系列名称。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -72,6 +88,8 @@ x-zendesk:
 >
 > * 在原始数据报告中，预装推广的Match\_type（匹配类型）显示为`preload_conf`preload\_confpreload\_conf。
 > * AppsFlyer会在面板中展示促成预装的广告平台以及促成应用首次打开的广告平台。详情请见<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-attribution-model#preload-campaigns">预装推广</Anchor>。
+
+<div id="setup" />
 
 ## 设置方式
 
@@ -94,6 +112,8 @@ x-zendesk:
 
 系统属性（System Properties）方法需要应用开发人员和设备生产商双方都完成相应的操作。
 
+<div id="developer" />
+
 #### 开发人员
 
 您需要向设备生产商或媒体渠道APK。该方法只需要用到默认APK，无需提供其他单独的APK。
@@ -114,6 +134,8 @@ x-zendesk:
 com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
 ```
 
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > 使用此方案时，请务必注意以下事项：
@@ -125,11 +147,15 @@ com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some
 
 pre\_install.appsflyer配置完毕后，请将其连同APK一起发送给媒体渠道或设备生产商。
 
+<div id="manufacturer" />
+
 #### 设备生产商
 
 设备生产商需要将***pre\_install.appsflyer***放置在其指定的文件路径中，并将**pre\_install.appsflyer**的文件权限设置为744。
 
 然后，设备生产商需要在该系统属性文件中添加一个键值对，以指向***pre\_install.appsflyer***。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -154,11 +180,15 @@ adb shell chmod 744 /system/build.prop
 adb reboot
 ```
 
+<div id="advantages" />
+
 #### 优势
 
 无需分媒体渠道或厂商单独维护APK。对于在Google Play上架的应用，无需在其代码中添加路径。厂商可以使用自定义路径，并能在不同设备上预装多个应用，且这些应用之间不存在依赖关系。
 
 此方法可确保将激活归因到预装广告系列和媒体渠道。即使用户在打开应用前先进行了更新，或在点击广告后才激活应用，AppsFlyer仍会将预装激活归因到预装渠道或厂商。
+
+<div id="disadvantages" />
 
 #### 缺点
 
@@ -176,12 +206,16 @@ SDK API方法可以在本机层面指定预装激活的归因厂商或渠道名�
 
 `setPreinstallAttribution(String mediaSource, String campaign, String siteId)`
 
+<div id="when-working-with-a-media-source" />
+
 #### 与媒体渠道合作时
 
 ```java
 AppsFlyerLib.getInstance().setPreinstallAttribution("MEDIA_SOURCE_NAME", "CAMPAIGN_NAME", "123");
 AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplicationContext());
 ```
+
+<div id="when-working-with-a-manufacturer" />
 
 #### 与厂商合作时
 
@@ -190,16 +224,22 @@ AppsFlyerLib.getInstance().setPreinstallAttribution(android.os.Build.MANUFACTURE
 AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplicationContext());
 ```
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > * 媒体渠道是必须配置的参数。
 > * 使用此属性获取厂商名称时，同一厂商的不同设备可能会以不同的格式呈现该名称。请确保该属性中包含您预期的厂商名称。
+
+<div id="advantages-1" />
 
 #### 优势
 
 您可以使用SDK API以程序化的方式拉取厂商名称信息。无论您与哪个厂商合作，SDK方法都可以直接从设备中读取该厂商的名称。也就是说，即使您与多个厂商合作，也只需要维护一个APK。
 
 您可以将各个厂商或媒体渠道划分为不同的广告系列，而不是全都设置为“Pre-install”广告系列。
+
+<div id="disadvantages-1" />
 
 #### 缺点
 
@@ -211,6 +251,8 @@ AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplication
 
 * 用户使用新设备直接通过Google Play更新预装应用，然后才完成该应用的首次打开，这时AF会将该激活记录为自然量。
 * 用户在新设备上点击广告后通过Google Play更新预装应用，这时AF会将该激活归因到展示广告的媒体渠道。
+
+<div id="tip" />
 
 > 👍 **提示**
 >
@@ -240,9 +282,13 @@ AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplication
 
 应用首次启动时，AppsFlyer SDK在manifest文件中检测到这个元数据标签，并根据该标签对激活进行归因。
 
+<div id="advantages-2" />
+
 #### 优势
 
 这是一种是较为简便的预装归因方案，只需要在Manifest中添加一个标签便可完成。此外，该方法也不涉及任何渠道或厂商侧的操作。
+
+<div id="disadvantages-2" />
 
 #### 缺点
 
@@ -259,17 +305,23 @@ AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplication
 
 <Accordion title="路径">
 
+<div id="note-4" />
+
 > 📘 **注意**
 >
 > 该方法适用于4.5.0及以上版本的SDK。
 
 此方法同时涉及开发侧和厂商侧的操作。
 
+<div id="developer-1" />
+
 #### 开发人员
 
 使用此方法时，您可以指定一个文件路径，该文件中含有预装渠道或厂商的名称。您需要完成三个步骤：
 
 1. 创建一个包含键值对的文件，并将该文件命名为***pre\_install.appsflyer***。  
+
+   <div id="passing-additional-pre-install-parameters" />
 
    #### 传递其他预装参数
 
@@ -278,6 +330,8 @@ AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplication
    ```json
    com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
    ```
+
+   <div id="important-2" />
 
    > 🚧 **重要提示！**
    >
@@ -298,11 +352,15 @@ AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplication
          android:value="/data/local/temp/pre_install.appsflyer" />
    ```
 
+<div id="manufacturer-1" />
+
 #### 设备生产商
 
 厂商需要将文件放在约定的路径中，并将pre\_install.appsflyer的文件权限设置为744。
 
 应用启动后，SDK会读取到manifest文件中指定的路径，并根据该路径找到相应的文件，然后根据其中指定的媒体渠道对激活进行归因。
+
+<div id="advantages-3" />
 
 #### 优势
 
@@ -316,11 +374,15 @@ OR
 
 部分厂商会选择将文件放在非默认路径中。这时，您可以在manifest文件中指定相应的非默认路径。
 
+<div id="important-3" />
+
 > 🚧 **重要提示！**
 >
 > 如需使用非默认路径，必须接入4.8及以上版本的SDK。
 >
 > 虽然我们支持非默认路径，但更建议您使用[系统属性](/docs/appsflyer-factory-preinstall-using-manifest-android#system-properties-method-recommended)方法。
+
+<div id="disadvantages-3" />
 
 #### 缺点
 
@@ -335,9 +397,13 @@ OR
 
 </Accordion>
 
+<div id="testing-pre-install-configuration" />
+
 ## 测试预装配置
 
 本节说明了预装配置的测试和验证方法。
+
+<div id="important-4" />
 
 > 🚧 **重要提示！**
 >
@@ -351,6 +417,8 @@ OR
 <div id="verifying-the-configuration-in-the-app" />
 
 <Accordion title="验证应用中的配置">
+
+<div id="tip-1" />
 
 > 👍 **提示**
 >
@@ -382,6 +450,8 @@ OR
 3. 针对各个预装推广合作厂商和渠道分别完成上述流程。
 
 </Accordion>
+
+<div id="special-cases" />
 
 ## 特殊场景
 

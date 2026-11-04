@@ -24,6 +24,8 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 部分渠道限制第三方的数据共享。
@@ -47,13 +49,21 @@ x-zendesk:
 
 下文说明了对接选项卡中所包含各部分内容。
 
+<div id="activate-partner" />
+
 ### 启用渠道
 
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation#渠道对接的启用方式">渠道启用说明</Anchor>。
 
+<div id="general-settings" />
+
 ### 通用设置
 
+<div id="default-postbacks" />
+
 ### 默认回传
+
+<div id="in-app-events-settings" />
 
 ### 应用内事件设置
 

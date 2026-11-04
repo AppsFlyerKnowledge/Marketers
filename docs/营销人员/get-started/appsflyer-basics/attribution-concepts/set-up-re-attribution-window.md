@@ -29,11 +29,15 @@ x-zendesk:
 ---
 > **概要：** 本文讲解了再归因窗口期的作用原理，在该窗口期内发生的重装激活不会被归因为新增激活。
 
+<div id="re-attribution-window" />
+
 ## 再归因窗口
 
 再归因窗口期从用户首次激活应用开始计算，其时长由广告主设定（默认为90天）。AF不会将再归因窗口期内发生的重装激活记录为新增激活，也不会生成新增激活的回传（由**再营销广告**带来的重装激活除外）。
 
 [![ReAttributionWindow_us-en.png](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)
+
+<div id="setting-the-re-attribution-window" />
 
 ### 再归因窗口期的设置
 
@@ -54,6 +58,8 @@ AF会根据激活发生当下的设置来判断激活。因此如果您更改了
   * 广告主在9月2日更改再归因窗口期。
   * 10月15日发生重装激活。AF会将其记录为重装激活，因为激活当下的再归因窗口期是90天。
   * 12月15日发生重装激活。AF会将其记录为新增激活，因为从9月1日到12月15日已经超过了90天。
+
+<div id="re-attribution-window-use-cases" />
 
 ## 再归因窗口使用场景
 

@@ -26,6 +26,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="setup" />
+
 ## 设置方式
 
 OneLink 智能脚本 有两个版本：
@@ -34,12 +36,16 @@ OneLink 智能脚本 有两个版本：
 
 <Anchor target="_blank" href="/marketers/zh/docs/legacy-onelink-smart-script-v1-setup">**OneLink 智能脚本 V1（旧版）**</Anchor>：如果您已设置 OneLink 智能脚本，请使用此版本的文档来维护和编辑该脚本。**注意**：虽然不是强制要求，但建议您迁移到 V2，以便使用 OneLink 智能脚本 正确获取<Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">浏览型归因</Anchor>。
 
+<div id="set-up-onelink-smart-script" />
+
 ### 设置 OneLink 智能脚本
 
 要设置智能脚本，您可以选择以下任一方式：
 
 * 将脚本嵌入您的网站。
 * 使用 Google Tag Manager。
+
+<div id="scope-of-work" />
 
 #### 工作范围
 
@@ -105,6 +111,8 @@ OneLink 智能脚本 有两个版本：
     5. 告知您的网站开发者如何处理生成的出站 URL。例如，将其放置在移动网站的 CTA 按钮下方，或在桌面网站上显示二维码。<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#use-google-tag-manager">开发人员相关说明</Anchor>
 13. 已保存的脚本可在[下拉菜单](/docs/set-up-smart-script-to-convert-web-visitors#how-to-edit-or-delete-a-script)中查看。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > 每次更新脚本后，都需要重新部署
@@ -124,6 +132,8 @@ OneLink 智能脚本 有两个版本：
 2. 点击您要编辑的脚本旁边的铅笔图标
    1. 按照[如何创建 OneLink 智能脚本](/docs/set-up-smart-script-to-convert-web-visitors#设置-onelink-智能脚本)中的步骤操作
 3. 点击垃圾桶图标以删除智能脚本
+
+<div id="important-1" />
 
 > 🚧 **重要！**
 >
@@ -163,6 +173,8 @@ OneLink 智能脚本 使用参数，根据传入 URL 的参数以及脚本中定
 
 OneLink 智能脚本 使用参数，根据传入 URL 的参数以及脚本中定义的参数生成传出 URL。
 
+<div id="arguments-parameters-and-values-to-implement-the-smart-script" />
+
 #### 用于实现智能脚本的参数（参数及其值）
 
 <table><thead><tr><th colspan="2">参数</th><th>备注说明</th><th>记录您的响应内容（供您或开发者使用）</th></tr></thead><tbody><tr><td colspan="2">oneLinkURL（必填）</td><td><ul><li>提供 OneLink 模板域名 + 模板 ID。<strong>注意：</strong>不是 OneLink 自定义链接 URL！</li><li>示例：<strong>yourbrand.onelink.me/A1b2</strong> </li><li>品牌域名示例：<strong>click.yourbrand.com/A1b2</strong> </li></ul></td><td> </td></tr><tr><td rowspan="9"><p>afParameters</p><p>（必填）</p></td><td><p>媒体渠道</p><p>（必填）</p></td><td><ul><li>用于媒体渠道的配置对象。</li><li>示例：<ul><li>键：['incoming_mediasource', 'utm_source']</li><li>默认值：['any_source']</li><li>覆盖值：`{twitter: 'twitter_int', orig_src: 'new_src'}</li></ul></li></ul></td><td><p>键：</p><p>默认值：</p><p>覆盖值：</p></td></tr><tr><td>广告系列</td><td><ul><li>用于广告系列的配置对象。</li><li>如：<ul><li>键：['incoming_campaign', 'utm_campaign']</li><li>默认值：['any_campaign_name']</li><li>覆盖值：{campaign_name: 'new_campaign_name'}</li></ul></li></ul></td><td><p>键：</p><p>默认值：</p><p>覆盖值：</p></td></tr><tr><td>渠道</td><td><ul><li>渠道的配置对象。</li><li>例如：<ul><li>键：['incoming_channel', 'utm_channel']</li><li>默认值：['any_video']</li><li>覆盖值：{video: 'new_video'}</li></ul></li></ul></td><td><p>键：</p><p>默认值：</p><p>覆盖值：</p></td></tr><tr><td>广告</td><td><ul><li>广告的配置对象。</li><li>例如：<ul><li>键：['incoming_ad', 'utm_ad']</li><li>默认值：['any_ad_name']</li><li>覆盖值：{ad_name: 'new_ad_name'}</li></ul></li></ul></td><td><p>键：</p><p>默认值：</p><p>覆盖值：</p></td></tr><tr><td>广告组</td><td><ul><li>用于广告组的配置对象。</li><li>示例：<ul><li>键：['incoming_adset', 'utm_adset']</li><li>默认值：['any_ad_name']</li><li>覆盖值：{adset_name: 'new_adset_name'}</li></ul></li></ul></td><td><p>键：</p><p>默认值：</p><p>覆盖值：</p></td></tr><tr><td>deepLinkValue</td><td><ul><li>用于 <strong>deep_link_value</strong> 的配置对象。</li><li>示例：<ul><li>键：['product_id', 'page_name']</li><li>默认值：'new_offers_page'</li><li>覆盖值：{twenty_percent_off: 'thirty_percent_off'}</li></ul></li></ul></td><td><p>键：</p><p>默认值：</p><p>覆盖值：</p></td></tr><tr><td>afSub1-5</td><td>用于 <strong>af_sub[1-5]</strong> 的配置对象。</td><td><p>键：</p><p>默认值：</p><p>覆盖值：</p></td></tr><tr><td>googleClickIdKey</td><td>指定携带 <a href="https://support.google.com/google-ads/answer/9744275?hl=en" target="_blank">GCLID</a> 的参数名称。<br/><strong>注意</strong>！<span>如需显示在 AppsFlyer 原始数据报告中，该参数必须是 <strong>af_sub[1-5]</strong> 之一。 </span> </td><td> </td></tr><tr><td> <span>其他（自定义）查询参数</span><br/> </td><td><ul><li>列出您希望包含在传出 OneLink URL 中用于归因或深度链接的所有其他参数，以及它们各自的配置对象。</li><li>自定义参数的名称由开发者在配置对象中列为 paramKey。<span></span> </li><li>例如：<ul><li>paramKey: 'deep_link_sub1'</li><li>键：['page_id']</li><li>默认值：'page1'</li><li>覆盖值：{page12: 'new_page12'}`</li></ul></li></ul></td><td><p>参数键：</p><p>键：</p><p>默认值：</p><p>覆盖值：</p></td></tr></tbody></table>
@@ -175,11 +187,15 @@ OneLink 智能脚本 使用参数，根据传入 URL 的参数以及脚本中定
 
 下表介绍了技术能力较强的营销人员或开发者可在智能脚本中实施的参数。
 
+<div id="advanced-arguments-parameters-and-values-to-implement-in-the-smart-script" />
+
 #### 在智能脚本中实施的高级参数（参数和值）
 
 <table><thead><tr><th colspan="2">参数</th><th>备注说明</th><th>记录您的回答（供您或开发者使用）</th></tr></thead><tbody><tr><td colspan="2"> <br/>referrerSkipList</td><td><ul><li>特定点击的 HTTP referrer 中的字符串列表（例如 Twitter 或 Facebook）；如果找到这些字符串，智能脚本会返回 <code>null</code>。这对于 X Ads 和 Meta Ads 之类的 SRN 很有用，因为这些平台的点击已被报告。</li><li>实施此参数后，脚本将不会生成 OneLink URL。</li></ul></td><td> </td></tr><tr><td colspan="2">urlSkipList</td><td><ul><li>特定点击的 URL 中的字符串列表（例如 af_r）；如果找到这些字符串，智能脚本会返回 <code>null</code>。如果您使用带有 af_r 的 AppsFlyer 归因链接将用户重定向到您的移动网页端，并且不希望原始点击数据丢失，这会很有用。</li><li>使用此参数后，脚本将不会生成 OneLink URL。</li></ul></td><td> </td></tr><tr><td colspan="2">SEO</td><td><ul><li>启用后，如果<strong>URL parameter mapping</strong>部分未能识别媒体渠道，系统会根据用户的 web referrer URL 判断其是否来自某个搜索引擎，并据此设置媒体渠道。（自 2.10.3 版本起可用）</li></ul></td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## 使用场景
 
@@ -230,6 +246,8 @@ Google Ads 广告系列安装归因的常规流程（此类广告系列带有 GC
 
 1. 通过 CSV 从 **af\_sub[1-5]** 参数中获取 GCLID 数据，或通过 Push API 实时获取每次安装的 GCLID 数据。
 2. 通过 <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">手动</Anchor>或通过 <Anchor target="_blank" href="https://developers.google.com/google-ads/api/docs/start">Google Ads API</Anchor> 将 GCLID 数据上传到 Google。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -292,6 +310,8 @@ TikTok、X（原 Twitter）和 Snap 广告系列的安装归因依赖于各广�
 
 **结果**：对于这些 SRN/媒体渠道，传入链接中媒体渠道参数和广告系列参数的值将用于填充传出链接中的 **media\_source** and **campaign** 参数值。
 
+<div id="example" />
+
 > 📄 **示例**
 >
 > **传入 URL**：https://hotel.me/incoming_mediasource=twitter&incoming_campaign=big_social
@@ -309,6 +329,8 @@ TikTok、X（原 Twitter）和 Snap 广告系列的安装归因依赖于各广�
 **操作：** 使用 **urlSkipList** 参数列出 **af\_r** 参数。
 
 **结果**：当智能脚本在传入链接中发现 **af\_r** 参数时，智能脚本不会生成传出 URL，开发者必须决定将哪个链接作为传出 URL，并完成相应实现。
+
+<div id="example-1" />
 
 > 📄 **示例**
 >
@@ -383,6 +405,8 @@ Web referrer 映射可帮助您了解用户是从哪个页面进入您的网站�
 
 **结果**：脚本会显示二维码，而不是显示带有 URL 的按钮。
 
+<div id="example-2" />
+
 > 📄 **示例**
 >
 > **传入 URL**：
@@ -416,11 +440,15 @@ OneLink 智能脚本 可用于统计您网站上的曝光。为此，开发人�
 2. 请告知您的开发者在 智能脚本 中<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#fire-an-impression">调用曝光函数</Anchor>。
 3. 请确保已开启 <Anchor target="_blank" href="/marketers/zh/docs/measure-view-through-engagements">浏览型归因</Anchor>。
 
+<div id="important-2" />
+
 > 🚧 **重要！**
 >
 > 自 2023 年 2 月 1 日起（Chrome 110 stable release），Google 已进行一些变更，以<Anchor target="_blank" href="https://developer.chrome.com/en/docs/privacy-sandbox/user-agent/">减少 User-Agent 数据</Anchor>。要使用 OneLink 智能脚本 正确获取<Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">浏览型归因</Anchor>，您应使用 2.3 及以上版本的 OneLink 智能脚本。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 更多信息
 
@@ -428,13 +456,19 @@ OneLink 智能脚本 可用于统计您网站上的曝光。为此，开发人�
 
 <Accordion title="常见问题">
 
+<div id="will-the-incoming-url-for-onelink-link-generation-work-if-the-user-browses-to-a-different-page-on-the-website" />
+
 #### **如果用户浏览网站上的其他页面，用于生成 OneLink 链接的传入 URL 还会生效吗？**
 
 是的。传入 URL 参数会在整个会话期间存储，并应用于由 智能脚本 生成的 OneLink 链接的传出参数。如需了解更多实施信息，请<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_script_v2#preserve-incoming-url-parameters-across-pages">参阅我们的开发者中心</Anchor>。
 
+<div id="why-do-i-get-an-error-when-implementing-smart-script-via-google-tag-manager" />
+
 #### **为什么通过 Google Tag Manager 实施 智能脚本 时会报错？**
 
 有时，您在 AppsFlyer 中生成 智能脚本 并尝试将其插入 Google Tag Manager（GTM）时，会显示「JavaScript too long」错误。如果发生这种情况，请删除 GTM 标签并重新创建一个。
+
+<div id="can-i-add-parameters-that-are-not-listed" />
 
 #### **我可以添加未列出的参数吗？**
 
@@ -448,9 +482,13 @@ OneLink 智能脚本 可用于统计您网站上的曝光。为此，开发人�
 
 ![Smart_Script_Custom.jpg](https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg)
 
+<div id="adset-and-other-parameters-are-not-showing-in-the-dropdown" />
+
 #### **广告组和其他参数未显示在下拉菜单中**
 
 我们建议您在创建或添加新参数时，关闭浏览器中已启用的所有广告拦截器。有时，如果某个选项中包含「广告」一词，广告拦截器会将其移除。
+
+<div id="what-browsers-does-smart-script-work-on" />
 
 #### **智能脚本 支持哪些浏览器？**
 

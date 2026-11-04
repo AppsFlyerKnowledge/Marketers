@@ -35,6 +35,10 @@ AppsFlyer SDK为移动应用提供安装和应用内事件的追踪。
 
 您可以追踪安装、更新和互动以及应用安装以外的其他应用内事件（包括应用内购买、游戏级别等），以评估 ROI 和用户互动水平。
 
+<div id="important-1" />
+
+<div id="1-integration-steps" />
+
 ## 1. 对接流程
 
 [![](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)
@@ -42,6 +46,10 @@ AppsFlyer SDK为移动应用提供安装和应用内事件的追踪。
 [![](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)
 
 [![](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)
+
+<div id="recording-app-launchasynchronously" />
+
+<div id="2-sdk-initialization--installation-event-minimum-requirement-for-attributing" />
 
 ## 2.
 
@@ -71,6 +79,8 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 }
 ```
 
+<div id="3-in-app-event-recording-api-optional" />
+
 ## 3.
 
 ```csharp
@@ -78,6 +88,10 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 ```
 
 * 您可以输入任意正负数值。
+
+<div id="recording-events-asynchronously" />
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -103,10 +117,16 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 }
 ```
 
+<div id="45-c--cx-integration-example" />
+
+<div id="44-getconversiondataasync-optional" />
+
+<div id="4-advanced-integration" />
+
 ## 4. 高级对接
 
 
-<span id="51-set-currency-code-optional"></span>除了随着应用内事件发送到 AppsFlyer 的指定货币代码外，您还可以使用下面的 API 来设置全球货币代码。
+<span id="41-set-currency-code-optional"></span><span id="51-set-currency-code-optional"></span>除了随着应用内事件发送到 AppsFlyer 的指定货币代码外，您还可以使用下面的 API 来设置全球货币代码。
 
 使用以下 API 设置货币代码：
 
@@ -115,14 +135,14 @@ tracker.currencyCode = "GBP";
 ```
 
 
-<span id="52-getappsflyeruid-optional"></span>用户每次安装一个应用后，AF都会为其匹配一个非重的AppsFlyer ID。
+<span id="42-getappsflyeruid-optional"></span><span id="52-getappsflyeruid-optional"></span>用户每次安装一个应用后，AF都会为其匹配一个非重的AppsFlyer ID。
 
 ```csharp
 public string getAppsFlyerUID()
 ```
 
 
-<span id="53-customer-user-id-optional"></span>该 ID 可以通过 Postback API 在 AppsFlyer CSV 报告中得到，用于与您的内部 ID 交叉引用。
+<span id="43-customer-user-id-optional"></span><span id="53-customer-user-id-optional"></span>该 ID 可以通过 Postback API 在 AppsFlyer CSV 报告中得到，用于与您的内部 ID 交叉引用。
 
 请按以下方式设置您的客户用户ID：
 

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概览：** 为您的网站应用设置 Google Ads 集成，以便通过离线转化 API (OCI) 向 Google 发送网络转化信号。
 
+<div id="overview" />
+
 ## 概览
 
 AppsFlyer 支持与 Google Ads 集成（`googleads_int` ) 通过 Google Offline Conversion API (OCI) 获取网站应用营销活动和报告转化数据。
@@ -242,6 +244,8 @@ Google Ads 广告系列的网络归因数据可在跨平台控制面板和原始
 确保回传中的应用内事件映射到正确的转化操作ID（Conversion Action ID）。如需在Google Ads中查找转化操作ID，请参考[此处说明](#step-2-create-conversion-actions)。创建转化操作。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特性与限制
 

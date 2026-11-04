@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了AppsFlyer提供的各种套餐以及可附加购买的高阶付费功能、套餐用量和账单的计算方式以及账户的管理方式。
 
+<div id="appsflyer-plans-and-usage" />
+
 ## AppsFlyer套餐及额度
 
 <div id="appsflyer-plans" />
@@ -57,15 +59,19 @@ x-zendesk:
 
 您的套餐费用是根据您的**套餐使用量**以及您购买的**高阶付费功能**计算的。
 
+<div id="plan-usage" />
+
 #### 套餐使用量
 
 套餐的主体内容是针对某个具体的[单位](/docs/account-management-plans-payments-and-billing#套餐额度单位)所提供的衡量服务，单位用量按月或按年结算。套餐周期（月或年）内所消耗的单位数量会从总体套餐额度中扣除。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > 如需深入了解您的单位用量信息，可以[下载使用量报告](/docs/account-management-plans-payments-and-billing#下载用量报告)。
 
-<span id="premium-features"></span>**使用量超出套餐额度**
+<span id="zd-premium-features"></span><span id="premium-features"></span>**使用量超出套餐额度**
 
 如果您在套餐周期中使用的单位数量超出了您的套餐额度，则需要支付额外的费用。您可以在[**套餐详情**](/docs/account-management-plans-payments-and-billing#details)部分查看总体费用信息。为了帮助您避免超出套餐额度或减少额外费用，我们会在发生以下情况时通过通知中心向您发送提醒：
 
@@ -87,6 +93,8 @@ x-zendesk:
 
 如需进一步了解这些附加功能以及它们能为您的业务带来的价值，请咨询您的CSM或联系[hello@appsflyer.com](mailto:hello@appsflyer.com)。
 
+<div id="plan-units" />
+
 #### 套餐额度单位
 
 套餐额度的计算单位分为以下几种：
@@ -100,6 +108,8 @@ x-zendesk:
 | In-app events（应用内事件） | 用户在激活应用后完成的任何操作，如登录、新手教程、购买、通关等等。 | <Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor> |
 | Non-direct web conversions  <br />（网页端间接转化，适用于PBA套餐） | 具有以下特征的用户行为：<ul><li>您定义为转化的事件</li><li>归因为转介访问的行为（即来自网页端广告的流量）</li></ul> | <Anchor target="_blank" href="/marketers/zh/docs/people-based-attribution-pba-overview">基于用户的归因（PBA）</Anchor> |
 
+<div id="premium-add-on-units" />
+
 #### 高阶附加功能的计费单位
 
 计算高阶附加功能所提供的额外衡量服务时会用到以下几种计费单位：
@@ -107,6 +117,8 @@ x-zendesk:
 | 计费单位 | 说明 | 详情请见此处说明。 |
 | --- | --- | --- |
 | ROI360以美元为计费单位 | 通过ROI360付费功能记录到的广告成本、应用内广告收入和应用内购买收入（包括订阅），以美元为单位进行计费。ROI360每记录到1美元（$1）即视为一个计费单位。 | <Anchor target="_blank" href="/marketers/zh/docs/roi360-guide-cost-and-revenue-data">ROI360—成本与收入数据</Anchor> |
+
+<div id="roi360-dollar-units" />
 
 #### ROI360以美元为计费单位
 
@@ -124,6 +136,8 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 
 </Accordion>
 
+<div id="account-page" />
+
 ## 账户管理页面
 
 该页面分为3个选项卡：**我的套餐**、**支付与账单**以及**付款信息**。您可以通过这个页面完成以下操作：
@@ -132,6 +146,8 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 * 对您的套餐进行升级
 * 查看并下载账单和报告
 * 更新您的联系信息和付款信息
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -157,12 +173,16 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 | <span id="addons"></span>**附加功能** | 您套餐中包含的附加功能以及其生效/失效日期。附加功能都是高阶付费功能，包括：<ul><li><Anchor target="_blank" href="/marketers/zh/docs/protect360-anti-fraud-guide">Protect360</Anchor>：移动作弊保护</li><li><Anchor target="_blank" href="/marketers/zh/docs/roi360-cost-aggregation-overview">ROI360</Anchor>：成本数据</li><li><Anchor target="_blank" href="/marketers/zh/docs/audiences-guide">受众共享（Audiences）</Anchor></li><li><Anchor target="_blank" href="/marketers/zh/docs/pivot-table-user-metrics">数据透视表</Anchor></li><li><Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers">Data Locker</Anchor></li></ul>如需进一步了解这些附加功能及其具体的业务价值，请咨询您的CSM或联系[hello@appsflyer.com](mailto:hello@appsflyer.com)。 |
 | <span id="future"></span>**后续套餐** | 如果您已经订购了后续的套餐，就能看到这部分内容，其中包括您后续套餐的详细信息。 |
 
+<div id="usage-report" />
+
 ### 用量报告
 
 用量报告页面会显示计费转化（适用于所有广告主）以及投资回报率（适用于购买了ROI360的广告主）。您可以通过这个页面完成以下操作：
 
 * 按日期、应用、媒体渠道、事件来源以及事件类型来筛选数据。
 * [下载](#下载用量报告)按指定条件筛选得出的数据报告。
+
+<div id="access-to-the-usage-report-page" />
 
 #### 用量报告页的访问权限
 
@@ -176,9 +196,13 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 
 * 从[**账户管理**](#账户管理页面)页面进入**我的套餐**，然后点击右上角的**用量报告**。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 月活用户（MAU）套餐不提供用量报告。
+
+<div id="data-included-in-the-usage-report" />
 
 #### 用量报告中的数据
 
@@ -195,10 +219,14 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 * 默认情况下，面板会显示从当月1日至当天的数据。您可以在表格顶部的筛选条件中选择不同的日期，调整数据的时间范围。
 * 该报告中的数据会保留24个月。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > * 使用量报告和账单按UTC+0时区计算。因此，使用量报告跟面板数据、群组报告和其他汇总报告之间可能会出现轻微的数据差异。
 > * 不论您是否打开了<Anchor target="_blank" href="/partners/zh/docs/getting-started-agency-onboarding#代理数据透明化设置">**允许数据透明化**</Anchor>的开关，用量报告中的数据总是**不透明**的。也就是说，该报告中仅显示代理名称，不显示获得归因的具体渠道。
+
+<div id="usage-report-fields" />
 
 #### 用量报告中的字段
 
@@ -236,11 +264,15 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 
 </Accordion>
 
+<div id="download-a-usage-report" />
+
 #### 下载用量报告
 
 1. 进入**我的套餐**页面并点击**用量报告**。
 2. 选定所需日期范围以及任何其它筛选条件。
 3. 点击表格顶部的**下载**按钮， 下载CSV格式的文件。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -249,11 +281,15 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 > * 数据筛选条件：用量报告根据您选定的筛选条件呈现数据
 > * [数据完整性：](#用量报告中的数据)报告中可能包含不完整数据，具体取决于当天日期以及选定的时间范围。
 
+<div id="account-status" />
+
 ### 账户状态
 
 您可以在账户管理页的左上角看到您的账户状态。可能出现的账户状态有以下几种；
 
 <table><thead><tr><th>账户状态</th><th>说明</th><th>注意事项</th></tr></thead><tbody><tr><td rowspan="2">使用中的账户</td><td>所有的<strong>Welcome</strong>和<strong>Zero</strong>套餐</td><td>不需要添加支付方式</td></tr><tr><td> 已添加支付方式的<strong>Growth</strong>和<strong>Enterprise</strong>套餐，且没有逾期未付的账单</td><td> </td></tr><tr><td>即将暂停服务</td><td>该账户有一个或多个逾期未付的账单。逾期30天后，我们会暂停该账户的服务。</td><td> <a href="./account-management-plans-payments-and-billing#支付逾期账单">支付账单</a>款项后，即可使账户恢复“使用中”的状态。 </td></tr><tr><td>已暂停服务</td><td>该账户下有逾期超过30的账单。</td><td>除“我的套餐”、“用户管理”和“付款”外，您无法访问账户中的其他版块。<br/>支付账单款项后，即可使账户恢复“使用中”的状态。 </td></tr></tbody></table>
+
+<div id="upgrade-downgrade-or-delete-an-account" />
 
 #### 账户的升级、降级和删除
 
@@ -273,9 +309,13 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 * 下载账单（PDF）
 * 更新**Growth**和**Enterprise**定制套餐的支付方式：电汇或信用卡
 
+<div id="note-5" />
+
 > 📘 **注意**
 >
 > 仅当您订购的套餐需要您提供支付信息时（即除**Welcome或Zero**之外的套餐），才能看到[支付和账单](/docs/account-management-plans-payments-and-billing#appsflyer-plans)选项卡。
+
+<div id="payment-methods-easy--secure-invoicing" />
 
 ### 付款方式
 
@@ -298,6 +338,8 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
    * **如需使用信用卡支付：** 输入必要的信息，然后点击**绑定信用卡**。
    * **如需通过电汇支付：** 输入付款信息，然后点击**保存**。
 
+<div id="invoices" />
+
 ### 账单
 
 您可以在这个部分查看并下载已支付和未支付的账单，也可以[支付逾期账单](/docs/account-management-plans-payments-and-billing#支付逾期账单)。我们会在每个月的第一周之后为您开具上个月的账单。
@@ -311,6 +353,8 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 | **Status** | **已付**、**到期**、**逾期未付** |
 | **PDF** | 点击**查看**按钮可打开PDF格式的账单。 |
 
+<div id="pay-overdue-invoices" />
+
 #### 支付逾期账单
 
 您可以使用信用卡快捷地支付逾期账单，不必按照平时的方式完成付款，而且我们**不会**保存相关信用卡的信息。[对于](/docs/account-management-plans-payments-and-billing#账户状态)**即将暂停服务**和**已暂停服务**的账户，完成支付后即可恢复**使用中**的状态。
@@ -323,11 +367,15 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 
 </Accordion>
 
+<div id="zd-billing-details" />
+
 <div id="billing-details" />
 
 <Accordion title="付款信息">
 
 您可以在这个选项卡中查看并更新付款公司和账单联系人信息。[![billing_details_tab2.png](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)
+
+<div id="company-billing-details" />
 
 ### 公司付款信息
 
@@ -339,12 +387,16 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 2. 阅读法律条款并勾选“同意”。
 3. 点击**提交**。 界面会显示弹窗消息，提示更改后的信息是否保存成功。
 
+<div id="note-7" />
+
 > 📘 **注意**
 >
 > * 如果您更改公司名称或地址，则会显示AppsFlyer法律条款，且须接受该条款。 如果有任何问题，请联系[accounting@appsflyer.com](mailto:accounting@appsflyer.com)。
 > * 如果您提供的信息有所缺失或无效，则无法保存付款信息。使用场景示例:
 >   * 如果您所在的国家要求提供[公司税号](/docs/account-management-plans-payments-and-billing#公司税号)，请务必以正确的格式输入该信息。
 >   * 邮政编码（ZIPcode）必须与所选地区相匹配。
+
+<div id="billing-contacts" />
 
 ### 账单联系人
 
@@ -355,6 +407,8 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 1. 点击**添加联系人**并输入[必填信息](/docs/account-management-plans-payments-and-billing#billing-details)，或修改当前的联系信息。
 2. 点击**保存付款信息**。请确保付款信息中至少有一个账单联系人。
 3. 界面会显示弹窗消息，提示更改后的信息是否保存成功。
+
+<div id="note-8" />
 
 > 📘 **注意**
 >
@@ -367,9 +421,13 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 | 公司付款信息 | <ul><li>**付款公司名称：** 根据注册表格自动填写</li><li>**公司税号：** 请参见[下文](/docs/account-management-plans-payments-and-billing#公司税号)说明。</li><li>**公司账单名称**（英文）：账单中显示的公司名称</li><li>**货币：** USD，ILS，EUR或GBP</li><li>**街道地址：** 根据注册表格自动填写：<ul><li>街道地址</li><li>城市（英语）</li><li>邮政编码：必须与所选地区匹配</li><li>国家/地区：从列表中选择</li></ul></li><li>如果相关，请添加省、市、区信息</li><li>如有需要，可在平台内或联系[accounting@appsflyer.com](mailto:accounting@appsflye.com)来更新账单明细</li></ul> |
 | 账单联系人 | 输入联系人的必填信息：<ul><li>**姓名：** 仅可使用英文</li><li>**邮箱地址、电话：** 必须提供</li></ul> |
 
+<div id="company-tax-number" />
+
 ### 公司税号
 
 部分国家（详见下文表格）要求AppsFlyer记录您的公司税号并在您的账单中添加VAT。如果您公司所在的国家有此要求，您必须以相关国家规定的格式提供公司税号，否则无法保存付款信息。
+
+<div id="countries-requiring-company-tax-number" />
 
 #### 要求提供公司税号的国家
 
@@ -378,6 +436,8 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 | 加拿大 | <Anchor target="_blank" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/you-need-a-business-number-a-program-account.html">GST/HST税号</Anchor> |
 | 欧盟国家 | <Anchor target="_blank" href="https://ec.europa.eu/taxation_customs/vies/#/vat-validation">增值税信息交换系统（VIES）</Anchor> |
 | 以色列 | <Anchor target="_blank" href="https://www.avalara.com/vatlive/en/country-guides/africa-and-middle-east/israel/israel-vat-registration.html">以色列VAT税号</Anchor> |
+
+<div id="conversion-measurement-options-for-ios-app-billing" />
 
 ### iOS应用的转化衡量计费方式
 

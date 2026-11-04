@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** 本文说明了iOS用户点击OneLink自定义链接后，Universal Link未能调起应用时的用户链路。
 
+<div id="about-uri-fallback-for-ios" />
+
 ## 适用于iOS的URI备用方案简介
 
 * Universal Link是在iOS设备上调起应用的最佳方案。自2016年iOS系统升级后，作为Universal Link备用方案的URI scheme开始受到诸多限制。这些限制是操作系统内置的，与AppsFlyer无关。如果您在其他链接中使用URI scheme调起应用，这些链接也会受到影响。
@@ -34,7 +36,11 @@ x-zendesk:
 * 由于URI scheme的稳定性不强，因此其他浏览器默认不支持这种应用调起方式。这时，用户点击相关链接后很可能会跳转到App Store（如果您在链接中设置了参数，则跳转到该参数指定的网址）。
 * 详情请见下文的用户链路图和使用场景说明。
 
+<div id="scenarios-flowchart" />
+
 ### 用户链路图
+
+<div id="use-cases" />
 
 ## 使用场景
 
@@ -51,6 +57,8 @@ x-zendesk:
 * Naver
 * Naver-Blog
 * 微博
+
+<div id="flowchart" />
 
 #### **链路图**
 
@@ -89,6 +97,8 @@ x-zendesk:
   8. 如果用户点击**OK**，就会跳转到App Store。
   9. 如果用户点击**Cancel**（取消），就会留在落地页中。
 
+<div id="flowchart-1" />
+
 #### **链路图**
 
 ![Copy_of_Ios_fall_back_-_safari.png](https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png)
@@ -118,6 +128,8 @@ x-zendesk:
 4. 如果用户点击**Close**（关闭），则界面会显示背景中的落地页。  
    [![](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)
 5. 用户点击App Store徽章后跳转到App Store。
+
+<div id="flowchart-2" />
 
 #### **链路图**
 

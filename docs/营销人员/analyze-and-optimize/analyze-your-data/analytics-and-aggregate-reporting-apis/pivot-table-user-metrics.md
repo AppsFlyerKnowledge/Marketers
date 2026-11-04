@@ -29,6 +29,8 @@ x-zendesk:
 
 ![](https://files.readme.io/890612985a8346e6b5dcdd66d3e7ad47ac4e46b5b98bf7457b19e328cd9b6c1f-51911409860369.gif) altFull\_Funnel.gif
 
+<div id="about-pivot-reports-page" />
+
 ## 关于透视报告页面
 
 您可以使用数据透视表面板生成包含UA指标的自定义报告。该面板提供多种预定义报告，您可以将其作为一个模板，在此基础上创建您的自定义报告。由账户下的某个用户创建的报告对其他所有用户都可见。
@@ -40,6 +42,8 @@ x-zendesk:
 * 成本分析
 
 **请注意**：要在透视中查看活动数据，活动必须有安装。
+
+<div id="pivot-procedures" />
 
 ## 数据透视面板的使用方式
 
@@ -170,6 +174,8 @@ x-zendesk:
 | （5）操作 | [报告列表](/docs/pivot-table-user-metrics#view-a-pivot-report)中各报告的可用操作可能有所不同，点击具体报告一行中的操作图标后即可查看可用操作。 |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

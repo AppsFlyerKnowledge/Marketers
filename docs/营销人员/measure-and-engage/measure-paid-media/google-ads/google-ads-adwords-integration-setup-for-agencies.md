@@ -111,6 +111,10 @@ x-zendesk:
 
 （仅**Google Ads**管理员账户可执行以下操作）
 
+<div id="important-1" />
+
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 您必须打开应用并触发需要映射的应用内事件，才能让**Google Ads**记录新增的转化。如需测试iOS应用，则必须收集IDFA才能看到该事件。添加事件转化后最多需等待6小时才能生效。添加完毕后，您就可以导入这些事件。导入后，新增转化的状态就会从“No recent conversion”（最近无转化）变为“recording conversion”（正在记录转化）。
@@ -122,6 +126,10 @@ x-zendesk:
 3. 在转化类型列表中选择**App**，然后选择**Third-party app analytics**并点击**Continue**。  
     [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)
 4. 请勾选相关应用中需要导入的事件（**first\_open**必须勾选）。  
+
+   <div id="note-1" />
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -135,6 +143,10 @@ x-zendesk:
 6. 点击**Status**并选择**All**查看所有事件，包括已停用或删除的事件。  
     [![conversion_action_status__6_.png](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)
 7. 完成上述操作后，您就能通过AppsFlyer来衡量Google Ads移动广告了。
+
+<div id="agencies-collecting-cost-clicks-and-impression-data" />
+
+<div id="note-2" />
 
 > 📘 **注意**
 >

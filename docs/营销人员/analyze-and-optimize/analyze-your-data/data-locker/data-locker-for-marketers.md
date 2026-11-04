@@ -57,6 +57,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="set-data-locker-report-settings" />
+
 ## Data Locker报告设置
 
 如需配置Data Locker，请按照以下步骤完成云服务对接、导出设置以及报告内容的自定义：
@@ -83,6 +85,8 @@ x-zendesk:
 <Accordion title="2. 添加云服务连接">
 
 在完成云服务账号与Data Locker的对接配置后（参见上文设置云服务），您需要在Data Locker中使用账号凭证创建一个连接。每个账号最多可以创建2个连接。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -190,6 +194,8 @@ x-zendesk:
 
 6. 点击<strong>保存。</strong>系统将显示**报告输出设置**部分。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 您可以通过[审计日志](#track-connection-changes-in-the-audit-log)确认连接是否已创建、更新或删除，并查看操作的执行者。
@@ -210,6 +216,8 @@ x-zendesk:
    * Snappy（仅限Parquet文件）
    * GZIP
 4. 选择单个文件中的最大行数：可选值为10k，25k，50，100k，200k，或500k。 行数越多，生成的文件数量越少，单个文件越大。
+
+   <div id="note-2" />
 
    > 📘 **注意**
    >
@@ -335,9 +343,13 @@ x-zendesk:
 1. 打开历史字段选项卡。
 2. 关闭：**在报告中包含旧版字段（Include legacy fields in the report）**。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > 如果您希望在报告中包含旧版字段，但字段列表呈灰色且被锁定，请联系您的客户成功经理（CSM）。
+
+<div id="non-empty-legacy-fields" />
 
 #### 非空值历史字段
 
@@ -356,11 +368,15 @@ x-zendesk:
 
 点击**保存**，首次数据转储将在3小时内写入您的云服务。此后，数据更新频率视具体报告而定。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 对Data Locker设置的任何更改最多3小时后才能生效。
 
 </Accordion>
+
+<div id="set-user-permissions" />
 
 ## 设置用户权限
 
@@ -369,11 +385,17 @@ x-zendesk:
 * 管理员可以访问Data Locker页面、创建并管理所有的连接、开放编辑权限、指定现有连接的所有者。
 * 团队成员可以访问Data Locker页面、编辑现有连接（需具备所有者权限）、创建新连接。他们 **不能** 管理所有权（设置所有者和编辑者），即使他们是账户所有者。
 
+<div id="manage-data-locker-access-and-ownership-admins" />
+
 ### 管理数据存储器访问和所有权（管理员）
+
+<div id="give-data-locker-access" />
 
 #### 赋予数据存储器访问权限
 
 * 如需向某个团队成员开放Data Locker的权限，请为其分配一个带有**Data Locker**管理权限的角色。
+
+<div id="manage-ownership-and-editors" />
 
 #### 管理所有权和编辑
 
@@ -383,6 +405,8 @@ x-zendesk:
 2. 精选 **管理所有权**.
 3. 更改连接所有者或添加编辑器。
 
+<div id="review-filters-after-changing-ownership" />
+
 #### 更换所有权后的审核过滤器
 
 如果你将数据存储器连接的所有者更改为一个有数据访问限制（例如受应用、媒体来源、机构或国家限制）的用户，则该连接已存在 [全球层面](#select-global-level-filters) 或 [报告级过滤器](#7-select-the-reportlevel-filters) 可能会重置以匹配新所有者的权限。
@@ -391,11 +415,17 @@ x-zendesk:
 
 有关数据访问限制的更多信息，请参见 <Anchor target="_blank" href="/marketers/zh/docs/user-management#数据访问权限">用户管理>数据访问</Anchor>.
 
+<div id="note-4" />
+
 > 📘 **注意**
 >
 > 在 AF AWS 连接中，即使是管理员也没有 **管理所有权** 选项，因为只有管理员可以编辑、删除或创建新的 AF AWS 连接。采取此预防措施是为了防止暴露存储桶凭据。
 
+<div id="data-storage-architecture" />
+
 ## 数据存储结构
+
+<div id="zd-overview" />
 
 <div id="overview" />
 
@@ -458,6 +488,8 @@ Data Locker以分级的目录结构将数据写入存储桶中，分级维度为
 
 <Accordion title="存储工具选项">
 
+<div id="caution" />
+
 > ❗️ **注意：**
 >
 > 如果您使用的是广告主侧自有存储工具：
@@ -486,6 +518,8 @@ Data Locker以分级的目录结构将数据写入存储桶中，分级维度为
 | 存储容量 | 由AppsFlyer管理 | 由广告主侧管理 |
 | 使用带存储桶策略的VPC端点读取数据 | 不适用 | 【可选】如果您在AWS的存储桶层级采取了VPC端点安全防护措施，必须将AppsFlyer的服务器加白。 |
 
+<div id="notice-to-security-officers-in-the-case-of-customer-controlled-storage" />
+
 #### **广告主自有存储桶的数据安全负责人须知**
 
 考虑：
@@ -512,6 +546,8 @@ Data Locker以分级的目录结构将数据写入存储桶中，分级维度为
 * 如需查看连接详情、创建连接副本或删除连接，请点击⋮（选项图标）。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 
@@ -573,6 +609,8 @@ Data Locker以分级的目录结构将数据写入存储桶中，分级维度为
 
 </Accordion>
 
+<div id="aws-data-retrieval" />
+
 ## AWS数据拉取
 
 本节解释了AWS数据拉取工具的使用方式，这些工具包括AWS CLI、Cyberduck、Amazon S3浏览器。请注意：下文说明是针对AppsFlyer存储桶编写的。如果您使用的自有存储桶，请根据实际情况调整相关操作。
@@ -605,6 +643,8 @@ Data Locker以分级的目录结构将数据写入存储桶中，分级维度为
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/
 ```
+
+<div id="listing-files-and-folders" />
 
 ### 列出文件和文件夹
 
@@ -694,6 +734,8 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
    完成上述操作后，您就能访问Data Locker文件了。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

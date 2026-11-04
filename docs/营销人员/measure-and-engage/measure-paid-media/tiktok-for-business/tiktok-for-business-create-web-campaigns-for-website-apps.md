@@ -23,19 +23,27 @@ x-zendesk:
 ---
 > 概览：为您的网站应用设置TikTok Web Ads集成，通过事件API向TikTok发送网络转化信号。
 
+<div id="overview" />
+
 ## 概览
 
 AppsFlyer支持与TikTok Web Ads（`tiktokweb_int`）的集成，用于网站应用广告活动，让您可以通过TikTok的事件API直接报告归因和转化数据。Meta可以利用这些数据来优化定向投放、衡量广告效果并打造自定义人群包。
 
 其工作原理如下：当用户点击TikTok广告并访问您的网站，然后完成网站事件（例如，购买或注册）时，AppsFlyer通过事件API向TikTok发送转化信号。TikTok利用这些数据来优化广告定位和衡量广告活动的表现。
 
+<div id="see-also" />
+
 > 📄 **另请参阅**
 >
 > * <Anchor target="_blank" href="/marketers/zh/docs/web-performance-measurement-overview">AppsFlyer网络归因 - 概述</Anchor>
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 目前，该集成不支持通过事件API发送重新参与的回调。
+
+<div id="prerequisites" />
 
 ### 前期准备
 
@@ -44,12 +52,16 @@ AppsFlyer支持与TikTok Web Ads（`tiktokweb_int`）的集成，用于网站应
 * 在AppsFlyer中设置了一个网站应用
 * 在<Anchor target="_blank" href="https://getstarted.tiktok.com/grow-your-business-gb">TikTok广告管理平台</Anchor>中拥有一个商业账户
 
+<div id="how-to-set-up-tiktok-web-ads-for-your-website-app" />
+
 ### 如何为您的网站应用设置TikTok Web Ads
 
 设置过程包括定义TikTok Web Ads与AppsFlyer之间的集成，并在TikTok广告管理平台中配置广告活动。它包括以下部分：
 
 * 第二部分：在AppsFlyer中设置Meta Web对接 （必须完成）
 * 第二部分：在TikTok Web Ads中设置AppsFlyer集成（必需）
+
+<div id="part-1-set-up-tiktok-web-ads-integration-in-appsflyer" />
 
 ## 第一部分：在AppsFlyer中设置TikTok Web Ads集成
 
@@ -68,6 +80,8 @@ AppsFlyer支持与TikTok Web Ads（`tiktokweb_int`）的集成，用于网站应
 5. **Pixel ID：输入相关的Pixe ID。您可以生成它或通过遵循<Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">TikTok文档</Anchor>中的说明从您的TikTok广告管理平台中检索它。**
 6. Access token输入相关的token。要生成或检索它，请遵循相同的 <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">抖音文档</Anchor>。
 7. **限制抖音网页广告对用户个人信息的使用（CCPA）：** 打开此开关可确保数据的使用方式符合相关的<Anchor target="_blank" href="/marketers/zh/docs/send-opendsr-api-requests">数据保护法</Anchor>规定。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -95,12 +109,16 @@ AppsFlyer支持与TikTok Web Ads（`tiktokweb_int`）的集成，用于网站应
 8. 【可选】点击**添加条件**图标，设置事件的<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#带条件的应用内事件回传">映射条件</Anchor>。
 9. 点击**保存对接**。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 如果您设置的是购买事件，请将**包含**列设为**值和收入**。选择其他选项将导致回传失败。
 > * 目前，仅购买事件支持包含收入。
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-tiktok-web-ads" />
 
 ## 第二部分：在抖音网页广告中设置AppsFlyer集成。
 
@@ -136,6 +154,8 @@ AppsFlyer支持与TikTok Web Ads（`tiktokweb_int`）的集成，用于网站应
 | `af_ad` | `__cid_name__` |
 | `af_ad_id` | `__cid__` |
 
+   <div id="note-3" />
+
    > 📘 **注意**
    >
    > 为了简化活动分析，请在活动名称中包含活动类型（网页或移动）作为前缀或后缀，例如，`campaign-name_web`。
@@ -149,6 +169,8 @@ AppsFlyer支持与TikTok Web Ads（`tiktokweb_int`）的集成，用于网站应
    https://www.example.com?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__
    ```
 
+   <div id="note-4" />
+
    > 📘 **注意**
    >
    > 当广告被点击时，TikTok 会自动将 `ttclid={{ttclid}}` 添加到目标 URL。
@@ -156,11 +178,15 @@ AppsFlyer支持与TikTok Web Ads（`tiktokweb_int`）的集成，用于网站应
 
 </Accordion>
 
+<div id="view-web-attribution-data" />
+
 ## 查看网页归因数据
 
 网页转化事件在 `tiktokweb_int` PID 下报告，位于 `media_source` 字段中。要查看网页归因数据，请使用原始数据报告并按 `media_source = tiktokweb_int` 过滤，以隔离 TikTok 网站应用转化。
 
 网站应用活动的仪表板报告尚不可用。计划在未来发布一个统一的报告视图，让您可以分析网页活动的表现与其他渠道的表现。
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

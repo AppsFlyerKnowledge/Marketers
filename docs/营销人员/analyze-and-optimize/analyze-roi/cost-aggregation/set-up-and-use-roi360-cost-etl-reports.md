@@ -102,6 +102,8 @@ x-zendesk:
 
 <Accordion title="文件字段">
 
+<div id="fieldsdimensions" />
+
 #### 字段/维度
 
 | **字段** | **说明** | **是否默认填充** | **格式** | **是否包含在总结文件中** |
@@ -134,11 +136,21 @@ x-zendesk:
 | bid\_amount | 该字段是广告系列属性的一部分，<Anchor target="_blank" href="/marketers/zh/docs/campaign-properties-in-cost-etl-reports">详情请见此处说明。</Anchor> | 否 | 整数 | - |
 | original\_bid\_amount | 该字段是广告系列属性的一部分，<Anchor target="_blank" href="/marketers/zh/docs/campaign-properties-in-cost-etl-reports">详情请见此处说明。</Anchor> | 否 | 整数 | - |
 
+<div id="metrics" />
+
 #### 指标
 
 <table><thead><tr><th><strong>字段</strong></th><th><strong>说明</strong></th><th><strong>是否默认填充</strong></th><th><strong>格式</strong></th><th><strong>是否包含在总结文件中</strong></th></tr></thead><tbody><tr><td>impressions</td><td><ul><li>由AppsFlyer统计。</li><li>同时包含UA和再营销数据。</li><li> </li></ul></td><td rowspan="13"><p>是</p><p>如果某个指标没有可用值，则以0填充。</p></td><td>整数</td><td><span>✓</span></td></tr><tr><td>clicks</td><td><ul><li>由AppsFlyer统计。</li><li>同时包含UA和再营销数据。</li><li> </li></ul></td><td>整数</td><td><span>✓</span></td></tr><tr><td>reported_impressions</td><td>由渠道统计</td><td>整数</td><td><span>✓</span></td></tr><tr><td>reported_clicks</td><td>由渠道统计</td><td>整数</td><td><span>✓</span></td></tr><tr><td>installs</td><td>点击率。</td><td>整数</td><td><span>✓</span></td></tr><tr><td>reported_conversions</td><td>由渠道统计</td><td>整数</td><td> </td></tr><tr><td>re_engagements</td><td>点击率。</td><td>整数</td><td><span>✓</span></td></tr><tr><td>re_attributions</td><td>点击率。</td><td>整数</td><td><span>✓</span></td></tr><tr><td>cost</td><td>广告消耗金额（包括相关的代理费用）</td><td>参数值</td><td><span>✓</span></td></tr><tr><td>original_cost</td><td>由广告平台上报的成本数据，以广告平台设定的货币为单位（未经换算），加上由AppsFlyer计算的相关代理费用（若有）</td><td>参数值 </td><td><span>-</span></td></tr><tr><td>impressions_discrepancy</td><td><ul><li>广告平台和AppsFlyer之间的数据统计差异。</li><li>如果出现以下情况，请忽略该指标：<ul><li>成本与归因结果不匹配。</li><li>广告平台不支持<a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank">上报展示成本</a>。 </li></ul></li></ul></td><td>整数</td><td><span>-</span></td></tr><tr><td>clicks_discrepancy</td><td><ul><li>广告平台和AppsFlyer之间的数据统计差异。</li><li>如果出现以下情况，请忽略该指标：<ul><li>成本与归因结果不匹配。</li><li>广告平台不支持<a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank">上报点击成本</a>。 </li></ul></li></ul></td><td>整数</td><td><span>-</span></td></tr><tr><td>installs_discrepancy</td><td><ul><li>广告平台和AppsFlyer之间的数据统计差异。</li><li>如果出现以下情况，请忽略该指标：<ul><li>成本与归因结果不匹配。</li><li>广告平台不支持<a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank">上报转化成本</a>。 </li></ul></li></ul></td><td>整数</td><td><span>-</span></td></tr><tr><td>fees</td><td><span>代理商在广告成本以外额外收取的费用。由AppsFlyer统计</span></td><td>是</td><td>整数</td><td><span>-</span></td></tr><tr><td>cost_without_fees</td><td>剔除代理费后的成本。点击率。</td><td>是</td><td>整数</td><td><span>-</span></td></tr><tr><td>original_cost_without_fees</td><td>广告平台上报的原始成本数据，不含代理费用</td><td>是</td><td>整数</td><td><span>-</span></td></tr><tr><td>ctr</td><td><ul><li>点击率点击率。</li><li>计算方式为：点击量/展示量</li></ul></td><td rowspan="12"><p>否</p></td><td>整数</td><td><span>-</span></td></tr><tr><td>cvr</td><td><ul><li>由AppsFlyer统计的点击率。</li><li>计算方式为：激活量/点击量</li></ul></td><td>整数 </td><td><span>-</span></td></tr><tr><td>ecpm</td><td><ul><li>点击率。</li><li>计算方式为：（成本/展示量）\* 1000  </li></ul></td><td>整数</td><td><span>- </span></td></tr><tr><td>cpi</td><td><ul><li>点击率。</li><li>计算方式为：成本/激活量</li></ul></td><td>整数</td><td><span>- </span></td></tr><tr><td>ccvr</td><td><ul><li>每次转化的平均成本</li><li><span>计算方式为：成本/（激活量+再归因+再互动）</span></li></ul></td><td>整数</td><td><span>- </span></td></tr><tr><td>cvvr</td><td><ul><li>由AppsFlyer统计的点击率。</li><li>计算方式为：视频完播量/展示量</li></ul></td><td>整数</td><td><span>-</span></td></tr><tr><td>reported_cvr</td><td><ul><li>广告平台上报的转化率</li><li>计算方式为：上报转化量/上报点击量</li></ul></td><td>整数</td><td><span>- </span></td></tr><tr><td>ecpc</td><td><ul><li>点击率。</li><li>计算方式为：成本/点击量</li></ul></td><td>整数</td><td><span>-</span></td></tr><tr><td>video_25p_views</td><td>由广告平台上报的由广告平台上报</td><td>整数</td><td><span>- </span></td></tr><tr><td>video_50p_views</td><td>由广告平台上报的由广告平台上报</td><td>整数</td><td><span>- </span></td></tr><tr><td>video_75p_views</td><td>由广告平台上报的由广告平台上报</td><td>整数</td><td><span>- </span></td></tr><tr><td>video_completions</td><td>由广告平台上报</td><td>整数</td><td><span>- </span></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="change-from-cost-etl-to-data-locker-connection" />
+
+<div id="change-data-locker-connection" />
+
+<div id="edit-connection" />
+
+<div id="procedures" />
 
 ## 配置流程
 
@@ -246,6 +258,8 @@ AppsFlyer将数据写入您的存储桶时，AWS平台默认该数据的所有�
 6. 点击**Save**。
 
 
+<div id="best-practices" />
+
 ## 最佳实践
 
 <div id="report-schedule" />
@@ -314,6 +328,8 @@ Cost ETL提供的信息涵盖您所有的成本数据。Cost ETL中有时会出�
 您可以将Cost ETL报告和高级汇总群组报告（或Data Locker中的常规群组报告）相结合，导入BI系统。这两种报告合并后可以提供最全面、最准确、时效性最高的营销效果信息，其中包含点击、展示、成本、收入、应用内事件等各种数据。您还可以使用合并后的数据计算ROAS、CPA等等。<Anchor target="_blank" href="/marketers/zh/docs/combine-cost-etl-and-cohort-reports-via-data-locker">详情请见此处说明。</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

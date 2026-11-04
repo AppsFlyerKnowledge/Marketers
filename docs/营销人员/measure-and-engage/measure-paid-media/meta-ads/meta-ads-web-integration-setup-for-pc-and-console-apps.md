@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** 本文说明了PC和主机端应用通过AppsFlyer与Meta Web对接的方式，并介绍了Meta Web中的投放设置方式。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 此对接仅适用于PC或主机端的应用，包括Steam、Epic及PC端原生应用。如需了解适用于移动端应用的对接，请参阅<Anchor target="_blank" href="/marketers/zh/docs/meta-ads-integration-setup">Meta ads对接设置</Anchor>说明。
+
+<div id="overview" />
 
 ## 速览
 
@@ -33,9 +37,13 @@ x-zendesk:
 * [在AppsFlyer中设置Meta Web对接](#在appsflyer中设置meta-web对接)。
 * [在Meta中为相关PC和主机端应用设置广告投放](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps#在meta-web中为相关pc和主机端应用设置广告投放)。
 
+<div id="prerequisite" />
+
 ### 前期准备
 
 在启用Meta Web对接前，请确保您已在[Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347)中开设了企业账户。
+
+<div id="activating-partner-in-appsflyer" />
 
 ## 在AppsFlyer后台启用Meta Web
 
@@ -47,6 +55,8 @@ x-zendesk:
 4. 在**渠道对接**选项卡中，打开**启用该渠道**开关。  
    **请注意：** 在您与该渠道合作期间，请确保该开关总是处于打开（即<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">启用</Anchor>）状态。
 5. 参考下文说明，根据您的具体需求在相关选项卡中完成各项配置。
+
+<div id="setting-up-meta-web-in-appsflyer" />
 
 ## 在AppsFlyer中设置Meta Web对接
 
@@ -60,9 +70,13 @@ Meta Web对接仅支持发送激活和应用内事件的回传。
 
 **渠道对接**选项卡中包括以下几个部分。
 
+<div id="activate-partner" />
+
 #### 启用渠道
 
 在配置对接之前，必须先打开**启用该渠道**开关。
+
+<div id="general-settings" />
 
 #### 通用设置
 
@@ -75,6 +89,8 @@ Meta Web对接仅支持发送激活和应用内事件的回传。
 * **Access token（访问令牌）：** 输入相关的token。您可以按照[这里的操作说明](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)来获取此信息。
 * **限制Meta ads对用户个人信息的使用（CCPA）：** 打开此开关可确保数据的使用方式符合相关的<Anchor target="_blank" href="/marketers/zh/docs/send-opendsr-api-requests">数据保护法</Anchor>规定。  
   **请注意：** 在CCPA隐私条例合规的情况下，来自美国加州Meta ads用户的数据会受到限制。
+
+<div id="enable-view-through-attribution" />
 
 #### 启用浏览型归因
 
@@ -92,12 +108,16 @@ AppsFlyer支持通过启用<Anchor target="_blank" href="/marketers/zh/docs/meta
 6. 下滑到**浏览型归因**部分并设置**浏览归因回溯窗口**（最长24小时）。
 7. 点击**保存对接**以应用您的设置。
 
+<div id="default-postbacks" />
+
 #### 默认回传
 
 激活回传自动发送到Meta Web，不会回传给其他任何渠道。在**用户来源**字段中，选择以下选项之一：
 
 * **仅此合作伙伴**以确保应用内事件回调仅针对来自此合作伙伴的用户执行的事件。
 * <strong>所有媒体来源，包括自然流量，</strong>确保应用内事件回调针对来自此合作伙伴、其他合作伙伴或自然来源的用户执行的事件。
+
+<div id="in-app-event-postbacks" />
 
 #### 应用内事件回传
 
@@ -160,6 +180,8 @@ Meta Web的对接不支持广告收入数据。
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-meta-web-for-pc-and-console-apps" />
+
 ## 在Meta Web中为相关PC和主机端应用设置广告投放
 
 **设置新的广告系列时请完成以下操作**：
@@ -174,20 +196,28 @@ Meta Web的对接不支持广告收入数据。
   * 网站落地页（一个应用在多个平台中上架时建议使用该方式）
   * 商店URL（相关应用仅在一个平台的一个应用商店中上架时建议使用该方式）
 
+<div id="view-web-to-app-attribution-data" />
+
 ## 查看网页到应用的归因数据
 
 尽管基于网页的转化事件以原始`metaweb_int` PID发送到Meta，但它们在AppsFlyer仪表板和原始数据报告中以`Facebook Ads` PID报告。这适用于主要转化事件和转化辅助事件。
 
 此统一报告视图让您在一个地方分析网页和应用活动的表现，包括完整的网页和移动成本报告。
 
+<div id="view-in-the-dashboard" />
+
 ### 在仪表板中查看
 
 所有Meta网页到应用的归因在概览和活动仪表板下显示为`Facebook Ads`。这提供了跨平台活动结果的单一、综合视图。使用标准过滤器和细分来比较您的Meta广告数据中的应用和网页流量。
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### 在原始数据和API报告中查看
 
 * **原始数据导出和API响应**在Meta网页活动的`media_source`字段中包含`Facebook Ads` PID。要验证网页活动设置的详细信息，请参考显示`metaweb_int`作为创建网页活动时使用的PID的`original_url`字段。
 * **回调报告**显示`metaweb_int`作为发送回调的原始媒体来源。
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

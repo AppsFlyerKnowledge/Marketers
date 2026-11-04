@@ -83,6 +83,8 @@ Cohort API旨在帮助广告主从AppsFlyer平台获取不同用户群组的投�
 
 <table><thead><tr><th> </th><th> </th><th colspan="5">功能</th></tr><tr><th rowspan="2">默认/可选 </th><th rowspan="2">KPI（维度名称） </th><th>数量</th><th>cvr（转化率）</th><th>Rate</th><th>总和</th><th>独立用户数</th></tr><tr><th>数字</th><th>百分比</th><th>百分比</th><th>数字</th><th>数字</th></tr></thead><tbody><tr><td>默认</td><td>users</td><td><span>Y</span></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>默认</td><td>ecpi</td><td>-</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>默认</td><td>cost</td><td>-</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>可选</td><td> <code>"event_name"</code>(4) </td><td><span>Y</span></td><td><span>Y</span></td><td>-</td><td><span>Y (3)</span></td><td><span>Y</span></td></tr><tr><td>可选</td><td>revenue</td><td><span>Y</span></td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>可选</td><td>roas</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td>可选</td><td>roi</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td>可选</td><td>sessions</td><td><span>Y</span></td><td>-</td><td><span>Y</span></td><td>-</td><td><span>Y(1)</span></td></tr><tr><td>可选</td><td>uninstalls (2)</td><td><span>Y</span></td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td colspan="7"><p>(1) <em>aggregation_type=on_day</em> 时返回独立session（应用打开）数据。</p><p>(2) cohort_type=unified时不可用。 </p><p>(3) 这里的总和是指定事件产生的收入总和，在报告中显示为<code>sum_event_name"</code>sum_event_name"</p><p>(4) 请注意：事件名称区分大小写。</p></td></tr></tbody></table>
 
+<div id="formatting-kpi-functions" />
+
 #### 设置KPI函数的格式
 
 您可以使用下列参数设置报告中的KPI格式。
@@ -104,6 +106,8 @@ Cohort API旨在帮助广告主从AppsFlyer平台获取不同用户群组的投�
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="using-period-filters" />
@@ -116,6 +120,8 @@ Period是指归因后的天数，period 0即为归因当天（归因日）。假
 
 * period可以是0-180之间的一个或多个值，如0、1、2、30、180。
 * 如果没有指定period，则报告会根据默认值0、1、2到30、60、90和180返回数据。
+
+<div id="example-period-filter" />
 
 > 📄 **period筛选条件使用示例**
 >

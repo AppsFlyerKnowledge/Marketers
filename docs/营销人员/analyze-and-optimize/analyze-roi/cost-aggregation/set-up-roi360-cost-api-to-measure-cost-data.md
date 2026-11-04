@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概览：** 通过Cost API，在应用或媒体渠道账号层级获取汇总营销成本数据（包括与成本相关的LTV表现指标）。
 
+<div id="overview" />
+
 ## 概览
 
 ROI360提供应用层级和账号层级的成本衡量能力，便于相关方按应用分析投放支出明细，或对媒体渠道账号进行汇总分析。
@@ -96,6 +98,8 @@ ROI360提供应用层级和账号层级的成本衡量能力，便于相关方�
 
 如需确认某个媒体渠道需采用哪种方式，可在媒体渠道成本对接表中的**对接方法**列查看。
 
+<div id="map-apps-to-site-ids" />
+
 ## 子渠道映射
 
 在上报成本数据时，<Anchor target="_blank" href="/marketers/zh/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">部分渠道对接</Anchor>允许广告主选择<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary#attribution::e9b53459">子渠道</Anchor>字段的填充方式。这种方法可以确保AppsFlyer归因链接中的宏与媒体渠道预期的取值一致。
@@ -107,6 +111,8 @@ ROI360提供应用层级和账号层级的成本衡量能力，便于相关方�
 
 1. 在对接合作伙伴**成本**选项卡中，前往**Site ID映射**，然后从下拉菜单中选择配置。
 2. 点击**保存成本**。更改后的设置将从UTC时间的次日起生效。
+
+<div id="edit-and-delete-an-integration" />
 
 ## 删除成本对接
 
@@ -277,6 +283,8 @@ ROI360客户可以在**成本设置**和**成本**选项卡中创建和编辑账
 > 您也可通过InCost广告平台接入更多媒体渠道。如需获取InCost支持的广告平台完整列表，请联系您的CSM。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特性与限制
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="export-onelink-urls" />
+
 ## 导出OneLink URL：
 
 * 媒体渠道
@@ -32,6 +34,8 @@ x-zendesk:
 **请注意**：
 
 1. 从AppsFlyer后台进入用户体验与深度链接 > **OneLink批量链接**。
+
+<div id="traits-and-limitations" />
 
 ### 特点与局限性
 

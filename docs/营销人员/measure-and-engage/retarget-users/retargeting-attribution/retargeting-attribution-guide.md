@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **概要：概要：再营销广告能促使沉睡用户再次打开并使用应用，或让已卸载的用户重新下载并激活应用。**
 
+<div id="retargeting-fundamentals" />
+
 ## 再营销的基本原理
 
 当用户点击[再营销归因链接](/docs/retargeting-attribution-guide#retargeting-attribution-links)或<Anchor target="_blank" href="/marketers/zh/docs/create-a-onelink-template">深度链接</Anchor>时，就构成了与在营销广告的互动，这时就会发生再营销归因。再营销归因的结果分以下两种：
@@ -38,6 +40,8 @@ x-zendesk:
 ![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
 
 在投放再营销广告之前，请先查看下一节中的再互动归因规则以及示例，然后再根据本文所述的再营销流程设置再营销归因。建议您先熟悉AppsFlyer的<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-attribution-model">归因模型</Anchor>以及相关的归因窗口期，以便于理解本文内容。
+
+<div id="tip" />
 
 > 👍 **提示**
 >
@@ -62,6 +66,8 @@ x-zendesk:
 
 下表说明了再营销归因的相关窗口期。
 
+<div id="inclusion-windows" />
+
 #### 归因窗口期
 
 | 窗口期类型 | 说明 |
@@ -70,6 +76,8 @@ x-zendesk:
 | 点击回溯 | 用户从点击广告到打开应用的最长间隔时间。<br /><br />归因链接<br /><br />**时长**：<ul><li>默认7天</li><li>范围：12-1512小时（63天）</li></ul>SRN相关说明：请确认您使用的SRN是否有其特定的回溯窗口期规定。 |
 | Re-engagement（再互动） | 请注意再互动窗口期的以下相关事项：<ul><li>用户与再营销渠道互动后首次打开应用时，该窗口期开始计时。</li><li>在该窗口期内发生的应用内事件会得到<Anchor target="_blank" href="/marketers/zh/docs/resolve-retargeting-double-attribution">双重归因</Anchor>，即同时归因给再营销渠道和拉新渠道。</li><li>该窗口期的时长由广告主在AF后台的应用配置页中设置，或取决于具体的SRN。</li><li>如果用户在再互动窗口期内与其他的再营销广告进行了互动，且互动时间不在排除窗口期内，则当前的再互动窗口期立即终止，并重新开始另一轮再互动窗口期的计时。</li><li>直到发生新激活、重装激活为止，或以数据保留规定为准。</li></ul>归因链接<ul><li>默认30天</li><li>范围：</li></ul>如果您更改了该窗口期的设置，新设置会对之后的再互动生效，但不会影响已经记录到的再互动。 |
 
+<div id="exclusion-windows" />
+
 #### 排除窗口期
 
 | 窗口期类型 | 说明 |
@@ -77,6 +85,8 @@ x-zendesk:
 | 再互动转化间的最短时间 | AF不会在这个排除窗口期内记录再互动。<br /><br />**再互动转化间的最短时间**<ul><li>该窗口期从再互动发生时开始计时，在该窗口期内发生的应用内事件会同时归因到再营销（主）和拉新（次）投放。</li><li>这样，您就能衡量再营销广告的投放效果了。</li><li>如果在该窗口期内有另一个广告平台或广告系列带来了一次再互动：<ul><li>【默认】当前的再互动窗口期结束，记录到一次新的再互动，且之后的应用内事件会归因到最近的那一次再互动。</li><li>为了防止出现以上情况，建议设置再互动转化之间的最短间隔时间，这样就能仅记录过了这段时间之后发生的再互动。</li></ul></li><li>如果再互动窗口期比您设置的最短间隔还要短，那么这个最短间隔等于无效。举例来说，举例说明：如果再互动窗口期为1天，而最短间隔设置为4天，那么该设置完全不会影响到任何一次再互动。</li><li>该设置不会限定激活和再互动之间的时间间隔。</li></ul>**时长**：<ul><li>默认无</li><li>范围：12-1512小时（63天）</li></ul> |
 | <Anchor target="_blank" href="/marketers/zh/docs/set-retargeting-inactivity-window">最短沉睡时长</Anchor> | AF不会在这个排除窗口期内记录再互动和再归因。<br /><br />配置方位：相关渠道配置页面的对接选项卡。<br /><br />**时长**：<ul><li>默认无</li><li>0-30天</li></ul>SRN相关说明：请注意，SRN通常设有自己的沉睡时长规则。如果您的设置与SRN不同，会导致数据差异。 |
 | <Anchor target="_blank" href="/marketers/zh/docs/set-up-re-attribution-window">再归因（reattribution）</Anchor> | 再归因窗口期仅对再归因生效，不会影响到再互动。<br /><br />用户与再营销广告互动后，在再归因窗口期内重新安装并激活相关应用，该用户就会被归因到对应的再营销渠道。相关文档：<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-attribution-model#reinstalls">重装激活</Anchor><br /><br />应用配置 |
+
+<div id="example-flow-implementing-the-rules" />
 
 #### 再营销归因链路示例
 
@@ -104,6 +114,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="retargeting-operations" />
+
 ## 再营销设置
 
 <div id="retargeting-settings" />
@@ -116,6 +128,8 @@ x-zendesk:
 | --- | --- | --- |
 | Re-engagement（再互动） | <ol><li>从AppsFlyer后台的侧边栏中选择**配置** > **应用配置**。</li><li>检查**再互动归因**开关是否处于打开状态。</li><li>从AppsFlyer的侧边栏中选择**协作** > **活跃对接**，然后选择相关的SRN。</li><li>打开**再互动归因**开关。</li></ol> | <ol><li>从AppsFlyer后台的侧边栏中选择**配置** > **应用配置**。</li><li>检查**再互动归因**开关是否处于打开状态。</li><li>在归因链接中添加下文所述的再营销参数。</li></ol> |
 | 再归因（reattribution） | <ol><li>从AppsFlyer的侧边栏中选择协作 > 活跃对接。</li><li>打开**重装激活归因**开关。</li></ol> | <ol><li>无需在面板中设置。</li><li>在归因链接中添加下文所述的再营销参数。</li></ol> |
+
+<div id="non-srn-settings" />
 
 #### **非SRN设置**
 
@@ -169,6 +183,8 @@ x-zendesk:
 | 再营销浏览回溯窗口 | <ul><li>再营销<Anchor target="_blank" href="/marketers/zh/docs/set-up-lookback-windows">浏览回溯窗口</Anchor>与拉新广告的浏览回溯窗口原理相同。</li><li>这个窗口期从用户浏览广告开始计算，在窗口期内发生的转化才会被归因到该次浏览。</li><li>默认为1天。</li><li>该回溯窗口是通过以下参数设置的：</li></ul>`af_viewthrough_lookback={time}`<br /><br /><br /><br />**<span id="01ECF12NKTE8W4K72VATN9RM2X"></span>示例**<br />如需将浏览窗口期设置为5小时，请在再营销广告系列的归因链接中添加以下参数： `&af_viewthrough_lookback=5h`&af\_viewthrough\_lookback=5h&af\_viewthrough\_lookback=5h | 否 |
 | 再互动窗口期 | <ul><li>您可以在AF后台的归因链接部分配置**再互动窗口**，该操作用于设置归因链接中的**af\_reengagement\_window**参数。您也可以手动添加该参数。</li><li>默认值为30天。</li><li>可用的再互动窗口期范围如下：</li><li>若以小时为单位：1-23小时</li><li>1-90天60天。</li><li>全周期：不限：窗口期一直延续到用户卸载应用或再次与应用互动为止，对应的参数为af\_reengagement\_window=lifetime</li></ul>举例来说，**af\_reengagement\_window=60d**表示再互动发生后60天内上报的事件会被归因到再营销渠道。 | 否 |
 
+<div id="retargeting-view-through-lookback-period" />
+
 #### 再营销浏览回溯窗口
 
 ```http
@@ -211,6 +227,8 @@ clickid={clickid}&af_siteid={publisher}&idfa={device_id_raw}&sha1_idfa={device_i
 | 助攻字段 | 不适用于再互动 |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 
@@ -257,6 +275,8 @@ AF的再营销衡量从2021年2月17日起开始支持概率模型归因，但�
 | **在哪些情况下attributed touch time（记录到的广告触达时间）与install time（激活时间）的值是相同的？**<ul><li>通过universal link或Android app link实现的深度链接可直接将用户跳转到应用中，无需先发送到AppsFlyer服务器。</li><li>当用户打开应用且SDK记录到新的再互动时，AppsFlyer会使用该次应用打开的时间戳来展示点击数据，因而使再互动与应用打开的时间相同。</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

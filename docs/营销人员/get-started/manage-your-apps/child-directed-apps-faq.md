@@ -25,9 +25,13 @@ x-zendesk:
 ---
 **内容概要：** 解答有关面向儿童的应用的常见问题。
 
+<div id="overview" />
+
 ## 概述
 
 为保护儿童隐私，面向儿童的应用需要遵守多项政策、法律和法规，主要包括《儿童在线隐私保护法》（COPPA）和《通用数据保护条例》（GDPR）。近年来，iOS 和 Android 等平台也陆续出台了相关政策，以加强对儿童隐私的保护。创建应用时，首先需要确定目标受众是仅面向儿童，还是同时面向儿童和成人。如需了解如何为面向儿童的应用实施符合相关法规要求的归因解决方案，请参阅<Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">儿童应用合规指南</Anchor>。
+
+<div id="adding-a-child-directed-app" />
 
 ## 添加面向儿童的应用
 
@@ -76,6 +80,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="implementing-appsflyer-compliance-tools" />
+
 ## 使用 AppsFlyer 合规工具
 
 <div id="how-do-i-know-which-tool-to-use" />
@@ -83,6 +89,8 @@ x-zendesk:
 <Accordion title="如何确定该使用哪种工具？">
 
 如果您的应用面向儿童，或同时面向儿童和成人，可以从<Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">儿童应用合规指南</Anchor>推荐的工具中，选择符合相关法规要求的工具。更多 SDK 相关资源，详见本文末尾。 
+
+<div id="examples-of-compliance-tools-and-their-use" />
 
 #### 合规工具示例及其用途
 
@@ -150,6 +158,8 @@ x-zendesk:
 SDK 用于记录应用事件，例如安装、再互动和应用内事件。没有 SDK，就无法实现归因。您可以<Anchor target="_blank" href="/marketers/zh/docs/additional-sdk-integration-guide#用户隐私">通过 SDK 保护用户隐私</Anchor>，仅展示汇总数据。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **另请参阅**
 >

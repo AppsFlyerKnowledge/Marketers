@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** 本文重点解释了Amazon Ads和AppsFlyer之间的归因模式差异。
 
+<div id="overview" />
+
 ## 速览
 
 Amazon Ads和AppsFlyer在移动端获客营销生态体系中都扮演着重要的角色，而双方都使用自己特有的归因模型，因此两者的面板之间可能会有一些数据差异。虽然我们一直与Amazon Ads保持紧密的合作，以尽可能地减少这样的差异，但广告主仍需了解可能会造成数据差异的各种因素。
+
+<div id="differences-in-attribution-models" />
 
 ## 归因模型的差异
 

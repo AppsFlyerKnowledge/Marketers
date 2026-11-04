@@ -25,6 +25,8 @@ x-zendesk:
 
 > **概要：** 通过 API 为您的 AppsFlyer 帐户或单个应用配置广告收入合作伙伴集成。
 
+<div id="ad-revenue-partner-integration-api" />
+
 ## 广告收入合作伙伴集成 API
 
 广告收入合作伙伴集成 API 用于：
@@ -42,6 +44,8 @@ x-zendesk:
 2. 准备要包含在 API 请求中的参数，如下表所述。
 3. 给开发人员提供参数值，并告诉他们遵循开发中心中的<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_integrations">Set integrations API说明</Anchor>。  
    整合于次日 00:00 UTC 生效。
+
+<div id="request-parameters" />
 
 #### 请求参数
 
@@ -69,6 +73,8 @@ x-zendesk:
 2. 告诉你的开发人员按照开发中心中的<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_integrations">List集成API说明</Anchor>。
 
 </Accordion>
+
+<div id="specs-and-limitations" />
 
 ### 规格和限制
 

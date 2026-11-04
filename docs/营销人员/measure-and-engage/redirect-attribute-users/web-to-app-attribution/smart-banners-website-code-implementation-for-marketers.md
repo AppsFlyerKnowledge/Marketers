@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **概要：** 概要：本文讲解了如何将智能横幅代码添加到您的网站中，从而将网站流量转化为移动应用的用户。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > AppsFlyer智能横幅网页SDK v1已于2023年11月8日下线。如需在您的网站中展示智能横幅，请升级到v2。<Anchor target="_blank" href="/marketers/zh/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">详情请见此处说明。</Anchor>
+
+<div id="website-code-implementation" />
 
 ## 网页代码添加方式
 
@@ -212,6 +216,8 @@ x-zendesk:
 4. 点击Update File。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

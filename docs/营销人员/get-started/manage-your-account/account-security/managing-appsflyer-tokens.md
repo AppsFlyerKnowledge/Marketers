@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** Token可以帮助您强化数据安全。能让广告主通过AppsFlyer API获取数据，或使用服务器到服务器（S2S）的调用指令来接收事件数据。AF账户管理员可以在保障数据不中断的情况下管理多个token。Token管理包括API和S2S token的创建、重命名和移除等操作，具体取决于您的实际需求。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)
@@ -33,6 +35,8 @@ x-zendesk:
 > * 只有AppsFlyer账户的管理员才能查看和管理token。账户用户无法访问令牌页面。
 > * 请妥善保存好您的token，因为这关系到您的数据读取权限。切勿在公共代码库中发布这些token。
 > * 建议您每180天更换一次token。
+
+<div id="about-appsflyer-tokens" />
 
 ## AppsFlyer token简介
 
@@ -45,10 +49,14 @@ x-zendesk:
 * 在测试中使用
 * 在特定功能中使用，如OneLink API
 
+<div id="reaching-the-tokens-page" />
+
 ## Tokens页面
 
 1. 从页面顶部导航栏打开账户菜单（点击右上角的邮箱地址，打开下拉菜单）> **安全中心**。
 2. 向下滚动到**AppsFlyer API token**部分，点击**管理您的AppsFlyer token。** 界面会显示当前正在使用的token。
+
+<div id="token-types" />
 
 ## Token类型
 
@@ -61,9 +69,13 @@ x-zendesk:
 | <span id="s2s-token"></span>S2S token | 通过调用S2S API发送数据时使用。 |
 | <span id="mcp-token"></span>MCP token： | 用于验证第三方或自托管系统与 AppsFlyer MCP。 |
 
+<div id="manage-your-tokens" />
+
 ## 管理token
 
 AppsFlyer账户管理员具有多个token的管理权限，包括token的创建、重命名、和移除，主要用于现行token换新。换新时需要先[创建](#token的创建方式)新token并将其部署到您的系统中，等到新token正式可用后将旧的token[删除](#token的删除方式)。
+
+<div id="retrieve-tokens" />
 
 ### token的获取方式
 
@@ -72,12 +84,16 @@ AppsFlyer账户管理员具有多个token的管理权限，包括token的创建�
 3. 界面会显示可用token。
 4. 根据实际需要复制相关token。
 
+<div id="create-a-token" />
+
 ### token的创建方式
 
 1. 在[**Tokens**页面](#tokens页面)中点击 **+新token**。
 2. 输入token名称。
 3. 选择token类型。
 4. 单击**创建token**。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -90,7 +106,11 @@ AppsFlyer账户管理员具有多个token的管理权限，包括token的创建�
 2. 重新命名该token。
 3. 点击**保存**。
 
+<div id="delete-a-token" />
+
 ### token的删除方式
+
+<div id="warning" />
 
 > ❗️ **注意事项**
 >
@@ -102,9 +122,13 @@ AppsFlyer账户管理员具有多个token的管理权限，包括token的创建�
 2. 确认要删除该token时必须键入“Delete token”。
 3. 点击**删除token**。
 
+<div id="applications-of-the-api-v2-token" />
+
 ## API V2 token的使用方式
 
 下表列出了广告主和广告平台的API V2 token使用场景：
+
+<div id="advertiser" />
 
 ### 广告主
 
@@ -122,6 +146,8 @@ AppsFlyer账户管理员具有多个token的管理权限，包括token的创建�
 | <Anchor target="_blank" href="/marketers/zh/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor> |
 | 导入受众API |
 
+<div id="ad-network" />
+
 ### 广告平台
 
 | API V2 token |
@@ -131,9 +157,13 @@ AppsFlyer账户管理员具有多个token的管理权限，包括token的创建�
 | <Anchor target="_blank" href="/partners/zh/docs/protect360-for-integrated-partners#protect360的广告平台数据上报api">对接渠道的Protect360报告</Anchor> |
 | <Anchor target="_blank" href="/partners/zh/docs/incost-api-for-ad-networks">InCost</Anchor> |
 
+<div id="applications-of-the-s2s-token" />
+
 ## S2S token的使用方式
 
 广告主和使用 S2S 令牌的广告主的用例：
+
+<div id="advertiser-1" />
 
 ### 广告主
 
@@ -142,21 +172,29 @@ AppsFlyer账户管理员具有多个token的管理权限，包括token的创建�
 | <Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-api-for-mobile-s2s-mobile">移动端应用内事件S2S API</Anchor> |
 | <Anchor target="_blank" href="/marketers/zh/docs/server-to-server-s2s-api-for-web-performance-measurement">网络事件 S2S API</Anchor> |
 
+<div id="ad-network-1" />
+
 ### 广告平台
 
 | S2S token |
 | --- |
 | <Anchor target="_blank" href="/marketers/zh/docs/set-up-appsflyer-preload-referrer-attribution">AppsFlyer预装referrer归因</Anchor> |
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 对于大多数广告网络，S2S 令牌生成不再是自助服务。因此，管理员在用户界面中不会看到生成 S2S 令牌的选项。自助令牌生成仅适用于特定的托管合作伙伴。
+
+<div id="applications-for-the-onelink-token" />
 
 ## OneLink token的用途
 
 广告主的OneLink API token使用场景包括：
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/create-onelink-attribution-link">创建</Anchor>、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-attribution-link">获取</Anchor>、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/update-onelink-attribution-link">更新</Anchor>和<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/delete-onelink-attribution-link">删除</Anchor>带有自定义参数的OneLink短链。
+
+<div id="applications-for-the-mcp-token" />
 
 ## MCP 令牌的申请
 

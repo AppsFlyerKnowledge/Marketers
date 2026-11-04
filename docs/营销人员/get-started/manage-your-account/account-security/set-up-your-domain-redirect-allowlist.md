@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** 设置用于跳转的域名白名单后，可保证用户跳转到经过验证的可靠地址，保障用户的数据安全以及贵司的品牌形象。
 
+<div id="about-the-redirect-allowlist" />
+
 ## <Image alt="Main redirect allowlist image.png" src="https://files.readme.io/a13b1c4641f4b265ef93ba9b65c57b0a7891336d6f6c21e94dd2ff5d83b948d6-30258741325713.png" width="1340px" />关于跳转白名单
 
 您可以通过跳转白名单为特定的根域名和子域名加白，仅允许相关链接跳转到带有这些域名的地址，防止您的链接受到未授权跳转、钓鱼攻击和作弊的侵害。启用白名单后，您通过AppsFlyer创建的链接仅会跳转到含有加白域名的网址。若网址中的域名未加白，用户点击链接后就会进入适配的应用商店。跳转白名单的适用范围包括：<Anchor target="_blank" href="/marketers/zh/docs/onelink-guide">OneLink</Anchor>链接、通过<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#attribution-link-tab">渠道对接</Anchor>设置的单平台归因链接以及用于CTV、PC以及主机端的<Anchor target="_blank" href="/marketers/zh/docs/ctv-pc-and-console-platform-direct-attribution-links">直接归因链接</Anchor>。跳转白名单（以及自定义网页重跳转）功能仅对Growth和Enterprise套餐用户开放。
+
+<div id="set-up-your-redirect-allowlist" />
 
 ## 跳转白名单的设置方式
 
@@ -108,6 +112,8 @@ x-zendesk:
 **请注意：** 更新后的跳转白名单会在一小时内对相关点击生效。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

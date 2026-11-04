@@ -22,19 +22,27 @@ x-zendesk:
 ---
 > **概要：** 如果用户浏览广告（即发生广告展示）后安装并激活应用，AppsFlyer会通过浏览型归因将这类用户匹配到相应的广告展示。
 
+<div id="overview" />
+
 ## 速览
 
 浏览型归因用于衡量已浏览但未点击广告的用户所完成的激活、再归因和再互动。
 
+<div id="view-through-attribution-flow" />
+
 ### 浏览型归因链路
 
 ![Retargeting_-_View-through__1_.png](https://files.readme.io/86d32778a8a0966499a0c5c91c1b2d8aed6d5bb24214b1a32fd484779c105a98-4412917609489.png)
+
+<div id="terminology" />
 
 ### 概念定义
 
 * **展示（impression）：** 每当渠道向用户呈现一条广告时，无论用户是否完成广告点击或其他交互行为，都视为一次展示。
 * **转化**：本文中提到的转化包括激活、再归因和再互动。
 * **浏览型归因：** 用户看到广告展示后发生转化，AppsFlyer会将该转化归因到展示广告的媒体渠道。
+
+<div id="view-through-attribution-principles" />
 
 ### 浏览型归因的原理
 
@@ -47,12 +55,16 @@ x-zendesk:
 * 如果AppsFlyer发现多个相关的广告展示，则取最近发生的那一次广告展示。
 * 广告点击的归因优先级高于广告展示。也就是说，如果点击回溯窗口内发生了点击，则相关转化会归因到最近的一次点击，而最近的一次展示会归因为助攻（assist）。
 
+<div id="view-through-lookback-window" />
+
 ### 浏览型回溯窗口
 
 * 在设置非SRN的浏览回溯窗口期时，可选的时长范围为1-24小时。SRN的回溯窗口可能会更长。
 * 窗口期的设置方式如下：
   * **非SRN：** 请通过展示归因链接中的`af_viewthrough_lookback`参数来设置窗口期时长。如果不设置该参数，AppsFlyer会使用默认的24小时窗口期。
   * **SRN**：取决于您使用的具体SRN。建议您在AppsFlyer中设置的窗口期与SRN侧的窗口期保持一致。
+
+<div id="view-through-attribution-reporting-and-metrics" />
 
 ### 浏览型归因的报告和指标
 
@@ -63,6 +75,8 @@ x-zendesk:
   * AppsFlyer可提供通过浏览型归因匹配到的用户级别数据（即原始数据），数据呈现方式与点击归因产生的用户级别数据相同，但部分渠道会限制这类数据的可用性。
   * AppsFlyer可提供展示数据（呈现方式与点击数据相同）。
   * 以字段值为*impression*的attributed\_touch\_type字段来标记广告展示。
+
+<div id="view-through-operations" />
 
 ## 浏览型归因的配置方式
 

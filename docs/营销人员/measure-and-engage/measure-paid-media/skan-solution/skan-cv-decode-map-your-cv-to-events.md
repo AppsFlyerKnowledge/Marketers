@@ -24,11 +24,15 @@ x-zendesk:
 
 ![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
 
+<div id="decode-skan-conversion-value" />
+
 ## 解析SKAN转换值
 
 如果广告主不想使用<Anchor target="_blank" href="/marketers/zh/docs/skan-conversion-studio">转化值操作台</Anchor>中提供的选项，可以将转化值解析作为一种替代方案。若您选择使用解析模式（Decode），须自行负责<Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/4097267-updatepostbackconversionvalue">updatePostbackConversionValue</Anchor>的设置，使其符合相关应用的业务逻辑。
 
 除了应用中的转化值（CV）配置之外的其他流程、功能以及数据上报方式都与<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-solution-guide">SKAN解决方案指南</Anchor>中所述一致。也就是说，由广告主设定的用户行为窗口期结束后，iOS会向广告平台发送回传，并由平台转发给AppsFlyer。AppsFlyer会根据您的映射配置将转化值解析为事件，与SDK解析CV值的处理方式相同。
+
+<div id="custom-conversion-valuedecode" />
 
 ## 自定义CV值解析（Decode）
 
@@ -66,6 +70,8 @@ x-zendesk:
   * 汇总报告和面板按此范围的平均值计算收入。举例来说，假设min\_revenue=4，且max\_revenue=10，则计算出得出的收入为7。
   * 原始数据报告中包含计算后得出的收入（skad\_revenue）、min\_revenue以及max\_revenue。
 
+<div id="meta-specific-rules" />
+
 #### **针对Meta ads对接的要求**
 
 如果您对接了Meta ads，请按以下要求配置映射架构：
@@ -73,6 +79,8 @@ x-zendesk:
 * 某个具体转化值所对应的收入范围中，最小值和最大值不能相等，必须使用不同的值。
 * 收入范围之间不能有重叠，并且必须依次构成连续的数值。请参考下表中conversion\_value为1、2和62时对应的收入范围。
 * event\_counter：Meta ads不会计算该参数值。【最佳配置】：用1值填充该参数。
+
+<div id="example-decode-mapping" />
 
 ### 示例：解析模式下的映射配置
 
@@ -90,12 +98,16 @@ x-zendesk:
 | 62 | af\_purchase | \{fgh) | 10 | 17 | 2 | 72 |
 | 62 | event\_a | `{klm}` |  |  | 3 | 72 |
 
+<div id="example-a-fine-conversion-value-1" />
+
 ### 示例A：精细转化值为1
 
 | event\_name | skad\_revenue | min\_revenue | max\_revenue | event\_value |
 | --- | --- | --- | --- | --- |
 | install |  |  |  |  |
 | af\_purchase | 1.5 | 0 | 3 | `{abc}` |
+
+<div id="example-b-fine-conversion-value-2" />
 
 ### 示例B：精细转化值为2
 
@@ -105,6 +117,8 @@ x-zendesk:
 | af\_purchase | 65 | 3 | 10 | `{def}` |
 | af\_purchase | 65 | 3 | 10 | `{def}` |
 | af\_purchase | 65 | 3 | 10 | `{def}` |
+
+<div id="example-c-fine-conversion-value-21" />
 
 ### 示例C：精细转化值为21
 
@@ -122,6 +136,8 @@ x-zendesk:
 | event\_f |  |  |  |  |
 | event\_g |  |  |  |  |
 
+<div id="example-d-fine-conversion-value-62" />
+
 ### 示例D：精细转化值为62
 
 | event\_name | skad\_revenue | min\_revenue | max\_revenue | event\_value |
@@ -134,6 +150,8 @@ x-zendesk:
 | event\_a |  |  |  | `{klm}` |
 
 </Accordion>
+
+<div id="zd-decode-csv-file-specification" />
 
 <div id="decode-csv-file-specification" />
 
@@ -190,6 +208,8 @@ CSV文件的内容须反映转化值的映射方式，一个转化值可以映�
 
 </Accordion>
 
+<div id="troubleshooting-the-csv-upload-errors-file" />
+
 ## CSV文件上传中的问题排查
 
 <div id="upload-error-messages" />
@@ -207,6 +227,8 @@ CSV文件的内容须反映转化值的映射方式，一个转化值可以映�
 如果您使用Excel/Google Sheets创建CSV文件，请务必先确认event\_revenue\_usd一列的格式正确无误，然后再将文件保存为CSV格式。
 
 保存CSV文件之后，请再次检查其格式是否正确无误。**请注意**：请勿使用Excel来检查文件格式，而须在[编辑器](/docs/skan-cv-decode-map-your-cv-to-events#visual-inspection-of-the-csv-file-without-excel)中检查。
+
+<div id="formatting-event_revenue_usd-cells-in-excel" />
 
 #### 在Excel调整event\_revenue\_usd单元格的格式
 

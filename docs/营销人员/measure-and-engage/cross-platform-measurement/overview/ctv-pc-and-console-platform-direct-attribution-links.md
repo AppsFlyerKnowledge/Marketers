@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：**  本文针对适用于CTV、PC和主机端的AppsFlyer归因链接，介绍了其结构和参数。**请注意**：如需了解适用于安卓和iOS应用的归因链接，包括PC端的安卓游戏，请参考<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">移动端归因链接说明</Anchor>。
 
+<div id="overview" />
+
 ## 速览
 
 广告主能通过**CTV、PC和主机端**的直接归因链接为用户实现跳转，并在点击发生之后收集数据。直接归因链接是一种AppsFlyer链接，支持**单平台应用的单平台跳转和归因**，跳转后到达的网址通过链接中af\_r参数的值来表达。
@@ -31,6 +33,8 @@ x-zendesk:
 您可以直接创建归因链接并将其设置在广告中。如需创建此类链接，请按照本文说明操作。
 
 另外，您也可以使用<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_click-app-platform-app-id">Engagements API</Anchor>通过S2S的方式创建链接。如选择这种方式，需要引入开发人员协助。**请注意**：通过S2S的方式创建的链接也可以收集展示数据。
+
+<div id="attribution-link" />
 
 ### 归因链接
 
@@ -42,6 +46,8 @@ x-zendesk:
 | 其他参数 | [查看所有参数](/docs/ctv-pc-and-console-platform-direct-attribution-links#参数) |
 | 链接结构 | `https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source={media_source}&af_campaign_id={campaign_id}&af_r={app_store_url}` |
 | 示例URL | `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=aloha&af_campaign_id=1234&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello` |
+
+<div id="parameters" />
 
 ### 参数
 
@@ -71,6 +77,8 @@ x-zendesk:
 | af\_device\_id\_type | 不适用 | <span id="query-getImpressionAppPlatformApp_id_af_device_id_type__description"></span>设备标识符类型。可以是以下任意一种：<ul><li>vida</li><li>tifa</li><li>rida</li><li>lgudid</li><li>fire</li><li>advertising\_id</li><li>fire</li><li>custom</li></ul> | 字符串 |
 | af\_device\_id\_value | 不适用 | <span id="query-getImpressionAppPlatformApp_id_af_device_id_value__description"></span>设备的标识符类型 | 字符串 |
 | af\_r | 不适用 | <ul><li>跳转到适配应用商店的或落地页的链接</li><li>af\_r参数中包含的所有值都必须编码。如果其末尾添加了UTM参数值，这些值也需要编码。</li></ul>**请注意：** 请确保在<Anchor target="_blank" href="/marketers/zh/docs/set-up-your-domain-redirect-allowlist">跳转白名单</Anchor>中加入af\_r参数使用的URL域名。 | 字符串 |
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

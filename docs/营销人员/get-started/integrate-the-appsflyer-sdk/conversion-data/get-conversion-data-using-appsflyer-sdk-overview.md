@@ -29,6 +29,8 @@ x-zendesk:
 
 由于数据准确性和延时之间存在此消彼长的关系，因此同一个设备ID的转化数据可能会因API而异。
 
+<div id="get-conversion-data" />
+
 ## 获取转化数据
 
 AppsFlyer SDK会通过以下API返回转化数据：

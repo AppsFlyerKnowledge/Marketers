@@ -24,6 +24,8 @@ x-zendesk:
 
 > **概要：** 概要：您可以设置一个或多个数据仓库（BigQuery、Snowflake）和/或云端数据存储桶（Amazon S3、GCS），用于与数据净室共享数据，并从其中接收报告。
 
+<div id="overview" />
+
 ## 速览
 
 使用数据净室（DCR）之前，您需要先设置以下内容：
@@ -36,6 +38,8 @@ x-zendesk:
 * **第1步—** 启用DCR前，通过您选用的云服务平台完成相应的准备工作（即本文内容）。
 * **第2步—** 通过AppsFlyer平台将云服务连接到DCR（参见<Anchor target="_blank" href="/marketers/zh/docs/data-clean-room-working-with-connections">数据净室——数据连接使用指南</Anchor>）。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 如需全面了解AppsFlyer对自定义来源数据的要求，请参见<Anchor target="_blank" href="/marketers/zh/docs/data-clean-room-working-with-sources#source-format">数据净室——数据连接使用指南</Anchor>：
@@ -43,20 +47,28 @@ x-zendesk:
 > * 表格栏位*（适用于数据仓库中的数据源）*
 > * 文件名称和格式*（适用于云存储桶中的数据源）*
 
+<div id="supported-cloud-services" />
+
 ### 适配的云服务
 
 DCR的数据传入和传出连接支持两种类型的云服务：
 
 您可以使用这些服务中的任意一种或多种组合，来创建数据传入和传出连接。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 如果您需要在一个报告中使用多个自定义数据源，必须将这些数据源都放在云端数据存储桶中。
 > * 使用Amazon S3或GCS上的同一个数据存储桶同时用于数据的传入和传出是非常普遍的做法。请务必按照[这种设置的专用说明](/docs/data-clean-room-setting-up-cloud-services#同时用于数据传入和传出的存储桶设置)进行操作。
 
+<div id="setting-up-cloud-services-for-inbound-connections" />
+
 ## 向DCR传入数据的云服务连接设置
 
 请根据下文各小节的说明，针对向DCR传入数据的云服务完成相应的前期配置。
+
+<div id="data-warehouses--bigquery-and-snowflake" />
 
 ### 数据仓库：BigQuery和Snowflake
 
@@ -119,6 +131,12 @@ DCR的数据传入和传出连接支持两种类型的云服务：
 9. 点击**Create Share**按钮。
 
 </Accordion>
+
+<div id="code-snippet" />
+
+<div id="step-4" />
+
+<div id="cloud-storage-buckets--amazon-s3-and-gcs" />
 
 ### 云端数据存储桶——Amazon S3和GCS
 
@@ -225,6 +243,8 @@ DCR的数据传入和传出连接支持两种类型的云服务：
 
 </Accordion>
 
+<div id="setting-up-cloud-services-for-outbound-connections" />
+
 ## 向DCR传出数据的云服务连接设置
 
 DCR会通过<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>向您选定的云服务平台发送DCR报告。
@@ -232,6 +252,8 @@ DCR会通过<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-mar
 * **请注意：** 请注意：接收DCR报告不需要Data Locker的付费功能。如果您需要通过Data Locker接收其他的AppsFlyer报告，请联系您的CSM或发送邮件至[hello@appsflyer.com](mailto:hello@appsflyer.com)咨询详情。
 
 我们可以向您云服务平台中的一个或多个位置发送DCR报告（无论您是否同时使用该平台向DCR传入数据）。请根据下文各小节的说明，为用于数据传出的云服务平台完成相应的前期配置。
+
+<div id="data-warehouses--bigquery-and-snowflake-1" />
 
 ### 数据仓库：BigQuery和Snowflake
 
@@ -274,6 +296,8 @@ DCR会通过<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-mar
 
 </Accordion>
 
+<div id="cloud-storage-buckets--amazon-s3-and-gcs-1" />
+
 ### 云端数据存储桶——Amazon S3和GCS
 
 为云端存储桶完成数据传出连接的前期配置与[传入连接](/docs/data-clean-room-setting-up-cloud-services#向dcr传入数据的云服务连接设置)的前期配置（包括针对两种云存储服务平台的操作说明）十分相似。
@@ -299,6 +323,8 @@ DCR会通过<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-mar
 
 </Accordion>
 
+<div id="setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections" />
+
 ## 同时用于数据传入和传出的存储桶设置
 
 如前文所述，使用Amazon S3或GCS上的同一个数据存储桶同时用于数据的传入和传出是非常普遍的做法。
@@ -314,9 +340,13 @@ DCR会通过<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-mar
 
 <Accordion title="Amazon S3">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections" />
+
 #### 创建新的数据存储桶用于数据的传入/传出
 
 请按说明创建[用于传入数据的Amazon S3存储桶](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound)（勿更变该流程）。
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker" />
 
 #### 对之前专用于Data Locker的存储桶进行修改
 
@@ -368,11 +398,15 @@ DCR会通过<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-mar
 
 <Accordion title="GCS">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections-1" />
+
 #### 创建新的数据存储桶用于数据的传入/传出
 
 请按说明创建[用于传入数据的GCS存储桶](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound)。  
 `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`  
 `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker-1" />
 
 #### 对之前专用于Data Locker的存储桶进行修改
 

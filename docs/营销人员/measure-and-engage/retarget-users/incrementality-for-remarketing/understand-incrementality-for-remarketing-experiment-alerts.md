@@ -24,9 +24,13 @@ x-zendesk:
 
 ![exp_alerts_doctored.jpg](https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg)
 
+<div id="about-experiment-alerts" />
+
 ## 增量分析实验中的提醒消息简介
 
 <Anchor target="_blank" href="/marketers/zh/docs/run-an-incrementality-for-remarketing-experiment">设置增量分析实验</Anchor>后，您可能会在增量分析面板中看到一些提醒消息。这些消息旨在帮助您找出影响实验结果完整性和准确性的问题所在。这些消息可提供相关问题的具体信息以及推荐的解决方式，以确保准确的实验结果。本文全面综述了各类提醒消息，以及对应的推荐解决方式。
+
+<div id="alert-types" />
 
 ## 提醒消息类型
 
@@ -36,6 +40,8 @@ x-zendesk:
 
 <Accordion title="实验设置">
 
+<div id="audience-deletion-or-control-group-removal" />
+
 #### 人群包删除或对照组移除
 
 关联到相关实验的人群包被删除，或拆分人群包中的对照组被移除。若发生这两种情况，您在访问实验页面时会看到404报错。
@@ -43,6 +49,8 @@ x-zendesk:
 **请按以下方式解决此问题并修复实验结果：**  
 如果**人群包已删除** - 请联系您的CSM，让他们帮您手动复原相关人群包。  
 如果**对照组已移除** - 请重新拆分相关人群包，以之前的拆分比例设置对照组。
+
+<div id="more-suitable-campaign-srns-only" />
 
 #### 发现更合适的广告系列（仅限SRN）
 
@@ -52,6 +60,8 @@ x-zendesk:
 **建议措施：** 检查相关实验是否已关联到合适的广告系列。
 
 **请注意：** 另一种方法是确保该人群包未配置为其他广告系列的定向人群。
+
+<div id="no-impressions-non-srns-only" />
 
 #### 无展示（仅限非SRN）
 
@@ -66,6 +76,8 @@ x-zendesk:
 <div id="experiment-background-environment" />
 
 <Accordion title="实验背景环境">
+
+<div id="background-campaign-one-or-multiple" />
 
 #### 实验背景中的广告系列（一个或多个）
 
@@ -90,6 +102,8 @@ x-zendesk:
 
 <Accordion title="关联广告系列的投放效果">
 
+<div id="audience-overlap" />
+
 #### 目标人群重合
 
 关联到实验的广告系列所投放的人群有重合。也就是说，相关广告系列的定向配置中包含多个人群包。  
@@ -97,6 +111,8 @@ x-zendesk:
 
 **建议措施：**  
 调整该广告系列的定向配置，移除测试人群包以外的其他所有人群包。
+
+<div id="control-group-is-targeted" />
 
 #### 对照组在定向投放范围内
 
@@ -113,11 +129,15 @@ x-zendesk:
 
 如果相关广告系列在对照组中的曝光程度不高，则只需停止对照组的定向投放即可。调整完毕后，请跟进相关实验的面板提示，检查该提醒消息在数天后是否仍然出现。
 
+<div id="detailed-targeting-toggle-is-enabled" />
+
 #### 精细化定向（Detailed targeting）开关处于打开状态
 
 部分广告平台提供精细化定向功能（Detailed targeting），让广告主对相关广告的目标投放群体进行微调。如果实验中的广告系列启用了精细化定向，面板就会显示这条提醒消息。启用该功能后，相关广告系列就能定向投放到指定人群包以外的用户。
 
 **建议措施：** 请确保在渠道侧的配置中，相关广告系列的精细化定向开关处于关闭状态。
+
+<div id="low-activity" />
 
 #### 活跃度过低
 
@@ -125,12 +145,16 @@ x-zendesk:
 
 **建议措施：** 检查渠道侧是否出现问题，了解相关广告系列不发布广告的原因。
 
+<div id="multiple-audiences-connected" />
+
 #### 关联到多个人群包
 
 该广告系列的定向配置中包含多个人群包。这可能会导致相关广告被投放到在测人群包以外的用户或对照组，最终影响测试结果。
 
 **建议措施：**  
 配置增量分析实验的最佳方式是使在测广告系列仅针对一个人群包进行定向投放。
+
+<div id="out-of-audience-targeting" />
 
 #### 定向到人群包以外的用户
 

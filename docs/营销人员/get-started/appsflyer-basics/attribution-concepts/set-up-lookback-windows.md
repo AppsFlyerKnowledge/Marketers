@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** 您可以根据您与渠道之间的合作模式来调整点击和浏览的回溯窗口。
 
+<div id="lookback-windows" />
+
 ## 回溯窗口
 
 AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广告主根据其与渠道的合作模式来调整归因窗口期。
@@ -36,11 +38,15 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 * **深度浏览回溯窗口:** 从深度浏览（engaged view）到应用激活之间的最长间隔，在此期间发生的激活可以被归因到相关深度浏览。 如果用户在该窗口期过后完成激活，该激活会被记录为自然量。
 * **浏览型回溯窗口**：从浏览广告到应用激活之间的最长间隔，在此期间发生的激活可以被归因到相关广告。如果用户在该窗口期过后完成激活，该激活会被记录为自然量。
 
+<div id="configurable-lookback-windows-per-attribution-type" />
+
 #### 各归因类型对应的可配置回溯窗口
 
 <table><thead><tr><th rowspan="2"><p><strong>归因类型</strong></p></th><th rowspan="2"><p><strong>归因方法</strong></p></th><th colspan="2"><strong>回溯窗口</strong></th></tr><tr><th><strong>范围</strong></th><th><strong>默认</strong></th></tr></thead><tbody><tr><td rowspan="3"><p>点击型归因</p><p>（所有媒体渠道）</p></td><td>Referrer、ID匹配</td><td>1-30天或<br/>1-23小时</td><td>7天</td></tr><tr><td>概率模型（移动端）</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">自动调整</a></td><td>最多24小时</td></tr><tr><td>概率建模（CTV、PC和主机 - 单一平台链接）</td><td>最长7天（在<code>af_lookback_window</code>链接参数中设置。）</td><td>7天</td></tr><tr><td rowspan="2"><p>深度点击型归因</p><p>(选择的非SRN <a href="./about-enriched-engagement-types#哪些广告平台可以上报深度浏览和深度点击" target="_blank">媒体来源</a>\*)</p></td><td>ID匹配</td><td>1-7天或1-23小时</td><td>2天</td></tr><tr><td>概率模型（移动端）</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">自动调整</a></td><td>最多24小时</td></tr><tr><td rowspan="2"><p>深度浏览型归因</p><p>(选择的非SRN <a href="./about-enriched-engagement-types#哪些广告平台可以上报深度浏览和深度点击" target="_blank">媒体来源</a>\*)</p></td><td>ID匹配</td><td>1-7天或1-23小时</td><td>2天</td></tr><tr><td>概率模型（移动端）</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">自动调整</a></td><td>最多24小时</td></tr><tr><td rowspan="4"><p>浏览型归因</p><p>（部分<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">媒体渠道</a>）</p></td><td>ID匹配</td><td><p>1-24小时</p><p>【2021年12月15日之前，该窗口最长可设置到7天】</p></td><td>24小时</td></tr><tr><td>概率模型（移动端）</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">自动调整</a></td><td>最多24小时</td></tr><tr><td>概率建模（CTV、PC和主机 - 单一平台链接）</td><td>最长7天（在<code>af_lookback_window</code>链接参数中设置。）</td><td>24小时</td></tr><tr><td>概率建模（CTV、PC和主机端 - <a href="./set-up-cross-platform-links-for-multi-device-campaigns#特点与局限性" target="_blank">跨平台OneLink归因链接</a>）</td><td>最长72天（在<code>af_xplatform_vt_lookback</code>链接参数中设置。）</td><td>24小时</td></tr></tbody></table>
 
 <strong>`engaged_click`和`engaged_view`的回溯窗口仅限于SRN平台。对于SRN，`engaged_click`和`engaged_view`的回溯窗口和点击相同，因此需通过</strong>激活点击归因回溯滑块设置。
+
+<div id="probabilistic-modeling-lookback-window" />
 
 ### 概率模型回溯窗口
 
@@ -53,6 +59,8 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-attribution-model#probabilistic-modeling">AppsFlyer的概率模型归因方式</Anchor>。
 
+<div id="lookback-window-setup" />
+
 ## 回溯窗口的设置方式
 
 下文分别列出了SRN和归因链接场景中的回溯窗口设置流程。
@@ -60,7 +68,13 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 <Tabs>
 <Tab title="SRN回溯窗口">
 
+<div id="attribution-lookback-window-for-srns" />
+
 ### SRN的归因回溯窗口
+
+<div id="attribution-lookback-window-with-attribution-links" />
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -87,6 +101,8 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 
 <Tab title="非SRN回溯窗口">
 
+<div id="non-srn-attribution-lookback-window-for-click-through-and-view-through" />
+
 ### 非SRN归因回溯窗口用于点击型和浏览型归因数据
 
 1. 从AppsFlyer面板左侧的菜单栏中选择**协作** > **活跃对接**。
@@ -101,12 +117,16 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 
 <div id="h_01JKWVQB6TTA24VAZ9WVJMGY4X" />
 
+<div id="non-srn-attribution-lookback-window-for-engaged-click-through-and-engaged-view-through" />
+
 ### 非SRN归因回溯窗口用于深度点击型和深度浏览型归因数据
 
 1. 从AppsFlyer面板左侧的菜单栏中选择**协作** > **活跃对接**。
 2. 搜索并选择相关渠道。
 3. 在对接选项卡中，向下滚动到**深度点击（engaged click）到激活回溯窗口**滑块或**深度浏览（engaged view）到激活回溯窗口**滑块。
 4. 使用滑块设置回溯窗口。
+
+<div id="tip" />
 
 > 👍 **提示**
 >
@@ -126,6 +146,8 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 </Tab>
 </Tabs>
 
+<div id="distribution-of-first-app-launches" />
+
 ## 应用首次打开的分布情况
 
 下图展示了用户与广告互动之后的应用激活时间分布情况，
@@ -137,6 +159,8 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 在激活应用的用户中，有超过97%的用户在与广告互动后的7天内完成激活。其余2%的用户在广告互动7天后到回溯窗口（30天）结束前完成激活。
 
 实际上，在广告互动后的15分钟内完成激活的用户占到近62%，在1小时内完成激活的用户占到72%。
+
+<div id="scenarios-and-examples" />
 
 ## 场景与示例
 
@@ -183,6 +207,8 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 此外，应用开发侧还可以识别出由此次限时推广带来的用户，并向其提供广告中所承诺的特价优惠。
 
 </Accordion>
+
+<div id="tip-1" />
 
 > 👍 **提示**
 >

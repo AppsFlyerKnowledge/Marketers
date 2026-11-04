@@ -22,13 +22,19 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了SRN和非SRN用户链路中的再归因和再互动在转化数据中的呈现方式。
 
+<div id="retargeting-conversion" />
+
 ## 再营销转化
 
 再营销转化分为再归因和再互动两种类型。
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 某些情况下，您可能无法通过再营销转化数据明确地判断转化类型，具体请参考[其他的转化数据来源](#转化数据的其他来源)说明。
+
+<div id="re-attribution-with-srns" />
 
 ## SRN带来的再归因
 
@@ -36,9 +42,13 @@ x-zendesk:
 
 这种情况下，AppsFlyer无法在SDK层级确定某个激活是否来自再营销广告，只能通过广告系列名称来识别再营销广告带来的流量。
 
+<div id="note" />
+
 > 📘 **注意事项**
 >
 > 即使您在广告系列名称中标识出再营销也**无法确保**一定能识别出再营销广告。详情请见[示例](#用户获取与再归因混合场景)部分的说明。
+
+<div id="re-attribution-with-regular-ad-networks" />
 
 ## 常规广告平台带来的再归因
 
@@ -48,6 +58,8 @@ x-zendesk:
 
 <Accordion title="Criteo上的再营销广告">
 
+<div id="attribution-link" />
+
 #### 归因链接
 
 ```http
@@ -55,6 +67,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### 转化数据payload
 
@@ -96,6 +110,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ## 延迟深度链接带来的再归因
 
 您可能经常需要为再归因（即卸载后重新安装相关应用）的用户部署深度链接。假设您为了召回已卸载的流失用户而投放广告，在广告中推广某个产品或服务，并让用户在重新安装并打开应用后直接进入该产品或服务的页面。
@@ -107,6 +123,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 <Accordion title="在SRN中使用延迟深度链接">
 
 SRN广告中设定的深度链接参数在SRN之外不可用，其中包括含有应用内scheme路径的`af_dp`参数。因此，如需在SRN广告中使用延迟深度链接，您必须在其中添加额外的逻辑。您可以使用`onConversionSuccess`响应中的数据，如广告系列、广告组（adset、adgroup）等，以程序化的方式实现用户跳转。
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Meta ads中延迟深度链接的转化数据
 
@@ -182,6 +200,8 @@ SRN广告中设定的深度链接参数在SRN之外不可用，其中包括含�
 
 您可以使用getConversionData响应中的数据，如广告系列、广告组等，以程序化的方式为用户实现跳转，并向其展示相关内容。
 
+<div id="note-1" />
+
 > 📄 **示例**
 >
 > 假设您有一个运动服装类电商应用。有一个未安装该应用的用户与某个广告互动后激活了应用。在应用首次启动时，SDK会返回相应的转化数据。开发人员让该应用打开店铺中的**夏季跑鞋系列**页面（与广告系列对应），并展示**女士跑鞋**类别（与广告组对应）。
@@ -193,6 +213,8 @@ SRN广告中设定的深度链接参数在SRN之外不可用，其中包括含�
 <Accordion title="通过归因链接实现延迟深度链接">
 
 深度链接的实现方式共有以下三种：
+
+<div id="uri-schemes" />
 
 #### URI scheme
 
@@ -250,6 +272,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true`——出现该参数且参数值为true时，请查看`scheme`和`host`字段
 * `scheme`和`host`——这两个字段来自归因链接中的`af_dp`参数，用于说明相关scheme以及通过深度链接向用户展示的页面
 
+<div id="ios-universal-links-and-android-app-links" />
+
 #### iOS Universal Link和安卓App Link
 
 这两种方式也可以实现深度链接。
@@ -289,6 +313,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 * `shortlink`字段用于说明带来用户的具体OneLink。开发人员可根据此信息设置应用打开后跳转的页面和展示的内容。`campaign`等其他字段也具有此用途。
 
+  <div id="important" />
+
   > 🚧 **注意事项！**
   >
   > 使用OneLink长链时，payload中不会出现`shortlink`字段。
@@ -296,19 +322,27 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
   > 不管您使用长链还是短链，都建议您添加一个自定义参数来说明相关的跳转内容，例如：`&deep_link_activity=shoes_cateogry`。
 
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 只有在OneLink场景中才能使用Universal Link和App Link。
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ## SRN带来的再互动
 
 与再归因相同，当用户通过SRN上的广告再次打开应用（即完成再互动）时，转化数据无法体现该流量是否来自再互动广告。如需解决此问题，您可以在广告系列名称中标识出再互动广告类型。
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ## 常规广告平台带来的再互动
 
 在该场景中，转化数据payload也无法体现出该流量是否来自再归因广告。如需解决此问题，您可以在广告系列名称中标识出再互动广告类型。
+
+<div id="re-engagement-with-deep-linking" />
 
 ## 深度链接带来的再互动
 
@@ -346,6 +380,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 * 应用开发人员可以根据`af_dp`和广告系列名称等参数将用户引导到应用内的具体页面并向其展示相关内容。
 
+<div id="important-1" />
+
 > 🚧 **注意事项！**
 >
 > 建议使用OneLink短链。详情请见<Anchor target="_blank" href="/marketers/zh/docs/understand-onelink-short-vs-long-urls">此文档</Anchor>。
@@ -360,12 +396,18 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ## 转化数据的其他来源
 
 * Push API可提供详细的转化数据payload，其中会标识出再归因和再互动。Push API的payload中包含`re_targeting_conversion_type`字段，该字段可说明转化类型，即再归因或再互动。详情请见<Anchor target="_blank" href="/marketers/zh/docs/push-api-streaming-raw-data">Push API指南</Anchor>。
 * 原始数据报告也会标识出转化类型。再营销转化的原始数据报告中包含***Event Name***（事件名称）字段，该字段中可能出现的值为**re-engagement**（再互动）或***re-attribution*** （再归因），用于说明转化类型。
 
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
+
 ## 用户获取与再归因混合场景
+
+<div id="note-3" />
 
 > 📄 **示例**
 >

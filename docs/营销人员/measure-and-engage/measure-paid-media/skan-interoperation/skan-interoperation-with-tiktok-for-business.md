@@ -23,13 +23,19 @@ x-zendesk:
 ---
 > **概要：** 启用AppsFlyer与TT4B的SKAN互通设置后，TikTok就能向AppsFlyer发送SKAN回传，同时AppsFlyer也能与TikTok分享广告主的CV值映射构架。
 
+<div id="skan-interoperability-appsflyer---tiktok" />
+
 ## SKAN互通：AppsFlyer &lt;-> TikTok
 
 如果您与多个广告平台合作，建议您在AppsFlyer后台设置您与这些渠道的SKAN互通，这样您就可以利用AppsFlyer平台上的其他可用指标（如成本等）来扩充SKAN的效果指标数据。
 
+<div id="scope-of-skan-interoperability-with-tiktok" />
+
 ### AppsFlyer与TikTok的SKAN互通作用范围
 
 AppsFlyer和TikTok会共享SKAN转化值（CV）的映射信息（在AppsFlyer后台设置），这样广告主就能同时收到来自这两个平台的投放效果指标。在启用TikTok for Business对接时（无论是历史对接还是<Anchor target="_blank" href="/marketers/zh/docs/tiktok-for-business-advanced-srn-integration-setup">Advanced SRN</Anchor>对接），AppsFlyer将向TikTok提供数据事件用于广告优化。详情请见TikTok支持的<Anchor target="_blank" href="/marketers/zh/docs/skan-integrated-partners-list">扩展字段列表</Anchor>。
+
+<div id="tiktok-for-business-guidance" />
 
 ### TikTok for Business投放配置
 
@@ -56,6 +62,8 @@ TikTok支持的SKAN功能如下：
 * 通过转化衡量API对广告投放进行监测和优化。
 * 上报TT4B中iOS专用广告系列的数据。
 
+<div id="campaign-limits-for-dedicated-ios-14-campaigns" />
+
 ### iOS 14专用广告系列的投放限制
 
 由于SKAN API的限制，专用于iOS 14的TT4B广告（包括用于拉新的App Install应用安装广告以及Dynamic Product Ads动态展示广告）具有以下局限性：
@@ -64,6 +72,8 @@ TikTok支持的SKAN功能如下：
 * iOS专用广告系列：
   * 可以由多个广告账户创建，但在投的广告系列总数不能超过15个。
   * 所有相关目标下的广告系列都会计入该投放额度（15个），且达到上限后，广告主必须先停投、关闭或删除一个/多个在投的广告系列以空出相应的额度，然后等待至少72个小时，才能开始投放新的广告系列。
+
+<div id="enabling-interoperation" />
 
 ### 启用互通设置
 
@@ -76,6 +86,8 @@ TikTok支持的SKAN功能如下：
 | <span id="1"></span>1 | 应用侧的前期准备 | <ul><li>在您的应用中接入最新版本的AppsFlyer SDK。</li></ul> |
 | <span id="2"></span>2 | 检查SKAN设置 | 设置并启用AppsFlyer的<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-solution-guide">SKAN解决方案</Anchor>。<br /><br />**请按以下方式查看SKAN设置**：<ol><li>从AF后台进入**配置** > **SKAN转化值操作台**。</li><li>点击选项图标（⋮），并确认**SKAN衡量**开关已打开。<br />![skan-settings.png](https://files.readme.io/5a5b9b8b8a809336055340a14e49dacc16c5c0e95cda62c6dfb2ca9a11618d71-27548444964497.png)</li><li>选择适合您需求的衡量模式。<br />详情请见<Anchor target="_blank" href="/marketers/zh/docs/skan-conversion-studio">SKAN转化值操作台</Anchor>。</li><li>记下应用内事件的准确名称，在下一步流程中会用到。</li></ol> |
 | <span id="3"></span>3 | 应用内事件映射 | 检查TT4B的应用内事件映射是否正确，并做必要修改。<br /><br />**请按以下步骤查看并设置应用内事件映射**：<ol><li>从AppsFlyer后台进入**配置** > **活跃对接**。</li><li>搜索并选择**TikTok For Business**。</li><li>确保**渠道对接**选项卡中TikTok for Business的对接已启用且已配置完毕。</li><li>在**应用内事件回传**板块：<ol><li>【必要设置】确保**应用内事件回传**开关已打开。</li><li>确认您在<Anchor target="_blank" href="/marketers/zh/docs/skan-conversion-studio">SKAN转化值操作台</Anchor>中的应用内事件已映射到TT4B事件或您<Anchor target="_blank" href="/marketers/zh/docs/skan-cv-decode-map-your-cv-to-events">自定义转化架构</Anchor>中的事件。<br />**请注意：** 仅当您的SKAN转化模型用于衡量整体收入时，才能将`af_skad_revenue`映射到TikTok的`Purchase`事件。<br />[![](https://files.readme.io/a5b5f9cccacd4cc531a09413e4e5040a8214abc3a8a7f795fbec678e81ab603e-25706935571217.jpg)](https://files.readme.io/a5b5f9cccacd4cc531a09413e4e5040a8214abc3a8a7f795fbec678e81ab603e-25706935571217.jpg)</li></ol></li><li>点击**保存对接**。</li></ol> |
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

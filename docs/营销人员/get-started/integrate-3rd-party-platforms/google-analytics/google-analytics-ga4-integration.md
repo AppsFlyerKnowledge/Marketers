@@ -21,14 +21,20 @@ x-zendesk:
 ---
 > **概要：** 广告主可以借助AppsFlyer与Google Analytics (GA4)的对接，将归因数据及部分选定的应用内事件从AppsFlyer发送至GA4。此对接适用于已部署[Google Analytics for Firebase SDK](https://firebase.google.com/docs/analytics)的iOS和Android应用。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 此对接适用于已部署[Google Analytics for Firebase SDK implemented](https://firebase.google.com/docs/analytics)的iOS和Android应用。 为确保对接成功，AppsFlyer SDK必须从Firebase SDK收集`app_instance_id`值。请参见相关说明，了解如何[从FirebaseSDK 获取应用实例ID](#5-retrieve-app-instance-id-in-appsflyer-sdk)。
+
+<div id="how-does-it-work" />
 
 ## 工作原理
 
 * **发生新的激活**时，AppsFlyer会将触点详情（媒体渠道、广告活动名称和广告活动ID）发送至GA4。同时还会发送Firebase SDK的`app_instance_id`，确保该用户的触点被GA4记录。
 * **发生应用内事件**时，GA4会将该事件归因于最后触点。
+
+<div id="set-up-google-analytics-ga4-integration" />
 
 ## 设置Google Analytics (GA4)对接
 
@@ -68,6 +74,8 @@ Google Analytics配置仅包括**对接**选项卡。
 4. 开启**客户用户ID**以发送客户用户ID（CUID），而不是广告ID（IDFA）。
 5. 在**默认回传**部分，在<strong>来自（for users from）</strong>中选择**所有媒体来源，包括自然流量**。
 
+   <div id="note" />
+
    > 📘 **注意**
    >
    > 激活回传仅包含触点详情（媒体渠道、广告活动名称和广告活动ID）。
@@ -80,6 +88,8 @@ Google Analytics配置仅包括**对接**选项卡。
 <Accordion title="3. 应用内事件回传">
 
 在**对接**选项卡中，将AppsFlyer应用内事件映射到Google Analytics（GA4）事件，并通过回传发送。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -111,16 +121,22 @@ Google Analytics配置仅包括**对接**选项卡。
 * **AF event：** AppsFlyer事件名称。
 * **Mapped to Google event：** Google Analytics中的事件名称。
 
+  <div id="important-1" />
+
   > 🚧 **重要提示！**
   >
   > 请勿使用任何[Google保留事件](#google保留事件名称)为自定义Google Analytics事件命名。
 
 * **AF event parameters（必填）：** 发送至Google Analytics的事件回传中必须包含的预定义AppsFlyer事件参数。
 
+  <div id="important-2" />
+
   > 🚧 **重要提示！**
   >
   > 事件定义中必须准确包含表中所列的所有预定义AF事件参数；否则，Google Analytics将拒绝回传。
 
+
+<div id="the-event-mapping-table" />
 
 #### 事件映射表
 
@@ -160,6 +176,8 @@ Google Analytics配置仅包括**对接**选项卡。
 |  | [view\_promotion](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_promotion) | <Anchor target="_blank" href="/marketers/zh/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/zh/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/zh/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/zh/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/zh/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
 |  | [view\_search\_results](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_search_results) |  |
 | af\_ad\_view | [ad\_impression](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#ad_impression) | <Anchor target="_blank" href="/marketers/zh/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>，<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
+
+<div id="reserved-google-event-names" />
 
 #### Google保留事件名称
 
@@ -210,6 +228,8 @@ Google Analytics配置仅包括**对接**选项卡。
 
 1. 从Firebase收集`app_instance_id`字段。
 2. 在首次启动前调用`setAdditionalData`，将应用实例ID包含在激活、打开以及应用内事件中。
+
+<div id="important-3" />
 
 > 🚧 **重要提示！**
 >
@@ -306,6 +326,8 @@ GA4应用打开ID`ga_session_id`用于标识Firebase应用的某一次应用打�
 1. 从Firebase收集`ga_session_id`字段。
 2. 在首次启动前调用`setAdditionalData`，将会话ID包含在数据中。
 3. 调用API时使用密钥`ga_session_id`。
+
+<div id="important-4" />
 
 > 🚧 **重要提示！**
 >

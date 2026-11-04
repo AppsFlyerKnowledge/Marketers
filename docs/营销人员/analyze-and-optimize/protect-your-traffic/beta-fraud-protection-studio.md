@@ -26,6 +26,8 @@ x-zendesk:
 
 > **概要：** Protect360的作弊防护操作台（简称FPS）能让广告主自主管控假量检测的生效方式，与常规模式相比提供更高的自由度。FPS配置针对假量检测数据提供多种可选的处理方式，包括拦截、上报为假量或进行流量标记，让广告主能够按需定制假量管理方式。
 
+<div id="about-fraud-protection-studio" />
+
 ## 作弊防护操作台简介
 
 我们在FPS中引入了一个新的检测状态，即“已标记”。
@@ -36,15 +38,21 @@ x-zendesk:
 * 自主管控：根据您的业务模式和需求实施定制化的检测结果处理方式。
 * 数据透明：您可以通过已标记的数据深入了新增的假量防护机制。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 只有行政、市场负责人、团队经理和安全人员 <Anchor target="_blank" href="/marketers/zh/docs/user-management#管理角色">权限角色</Anchor> 能够访问欺诈保护工作室。
+
+<div id="how-the-fraud-protection-studio-works" />
 
 ## 作弊防护操作台的原理
 
 <div id="key-concepts" />
 
 <Accordion title="核心理念">
+
+<div id="fps-modes" />
 
 #### FPS模式
 
@@ -69,9 +77,13 @@ FPS有两种模式，**已实施**和**已标记**。广告主可以根据自己
 
 [<Image alt="Image description" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 在标记模式下，AppsFlyer会对检测到的所有假量进行标记，但仍按照客户的配置将这些数据保留在有效转化中，并从套餐额度中扣除这些转化，不予返还。
+
+<div id="where-is-tagged-detection-reflected" />
 
 #### 查看已标记的检测结果
 
@@ -93,6 +105,8 @@ FPS有两种模式，**已实施**和**已标记**。广告主可以根据自己
 * 已识别的假量，可按“标记类型”、“标记原因”、“详细标记原因”分组（3）
 
 </Accordion>
+
+<div id="how-to-use-fraud-protection-studio" />
 
 ## 作弊防护操作台的使用方式
 
@@ -126,10 +140,16 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 
 下载点击撞库报告数据样例
 
+<div id="important-2" />
+
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > * 选择标记检测结果后，所有检测结果都会通过原始数据报告上报，而不会呈现在假量报告中。
 > * 您可以针对具体应用配置点击撞库的标记，可关闭实时拦截或归因后的处理。也就是说，配置标记模式后，您的自然和非自然激活数据可能会遭受假量侵蚀。
+
+<div id="how-to-access-click-flood" />
 
 #### 点击撞库选项卡的访问方式
 
@@ -137,6 +157,8 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 2. 在面板左侧的菜单栏中点击**配置 > Protect360 > 作弊防护操作台**。
 3. 使用页面顶部的应用下拉菜单，选择您想要配置的应用。
 4. 从左侧菜单栏中选择**点击撞库**选项卡。
+
+<div id="click-flood-page" />
 
 ### 点击撞库页面
 
@@ -146,6 +168,8 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 
 [当前检测状态](/docs/beta-fraud-protection-studio#当前检测状态)
 
+<div id="detection-status" />
+
 #### 检测状态
 
 * [检测状态](/docs/beta-fraud-protection-studio#点击撞库选项卡的访问方式) - 可供您选择[检测](/docs/beta-fraud-protection-studio#fps模式)模式，即**已实施**或**已标记**
@@ -153,6 +177,8 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
   * 当前检测微件
   * 点击撞库检测细分微件
   * 分媒体渠道的点击撞库微件
+
+<div id="how-to-adjust-the-detection-status" />
 
 #### **检测状态的调整方式**
 
@@ -162,6 +188,8 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 2. 点击页面底部的**保存**按钮。
 
    [<Image alt="可放大的图像" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
+
+<div id="current-detection-status" />
 
 #### **当前检测状态**
 
@@ -200,9 +228,13 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 
 下载“最新发布”的报告数据样例
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 我们会将一个或多个检测更新组合起来一起发布，即检测更新包。
+
+<div id="how-this-works" />
 
 #### 作用原理
 
@@ -212,6 +244,8 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 * 对于当前已生效的更新包，您可以进行评估并启用。
 * 发布更新包时，通知铃铛图标会显示新消息，提醒您查看更新。
 
+<div id="how-to-access-new-releases" />
+
 #### 最新发布板块的访问方式
 
 1. 登入AppsFlyer。
@@ -219,12 +253,16 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 3. 使用页面顶部的应用下拉菜单，选择您想要配置的应用。
 4. 从左侧菜单栏中选择**最新发布**选项卡。
 
+<div id="new-releases-page" />
+
 ### 最新发布页面
 
 最新发布页面分为以下两个部分：
 
 * [未发布](/docs/beta-fraud-protection-studio#最新发布板块的访问方式)——您可以在更新包正式生效之前标记检测结果（最长14天），评估其业务影响。
 * [已发布](/docs/beta-fraud-protection-studio#当前已生效更新包的评估和启用)——对于当前已生效的更新包，您可以监测其检测效果，以便评估和启用。
+
+<div id="how-to-set-the-tagged-mode-time-period-for-future-packages" />
 
 #### 针对未发布的更新包设置标记模式的时长
 
@@ -235,10 +273,14 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 
 <Image alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > * 该设置仅对未来的更新包生效。当前已生效的更新包不会延迟生效或发生变更。
 > * 如果在下拉框中选择0天，相当于选择[立即实施](/docs/beta-fraud-protection-studio#启用处于标记模式的已发布更新包)，并且会覆盖此更新包的[未发布](/docs/beta-fraud-protection-studio#最新发布板块的访问方式)设置。
+
+<div id="how-to-evaluate-and-implement-current-active-packages" />
 
 #### 当前已生效更新包的评估和启用
 
@@ -251,12 +293,16 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 * 导出详细报告
 * 跳过“未发布”设置，直接立即使用此更新包。
 
+<div id="to-implement-the-current-package-if-in-tagged-status" />
+
 #### 启用处于标记模式的已发布更新包
 
 1. 在FPS选项卡中打开**最新发布**窗口。
 2. 使用该数据表以及可导出的报告监测假量检测效果。
 3. 准备就绪后，点击**立即实施**，启用更新。  
    [![](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)
+
+<div id="note-3" />
 
 > 📘 **注意**
 >
@@ -280,12 +326,16 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 > * 应用检测评估的标签是在应用层面进行，可以防止Protect360逻辑的阻断或归因后实现。也就是说，配置标记模式后，您的自然和非自然激活数据可能会遭受假量侵蚀。
 > * 任何定义并激活的验证规则都会始终保持在实现模式。要暂停任何验证规则的实施，请访问验证规则页面并在那里将其停用.
 
+<div id="how-to-access-app-detection-evaluation" />
+
 #### **如何访问应用检测评估**
 
 1. 登录AppsFlyer。
 2. 在面板左侧的菜单栏中点击配置 > Protect360 > 作弊防护操作台。
 3. 使用页面顶部的应用下拉菜单，选择您想要配置的应用。
 4. 在左侧菜单中，选择 **应用检测评估** 卡片。
+
+<div id="app-detection-evaluation-page" />
 
 #### 应用检测评估
 
@@ -308,6 +358,8 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
     * 应用层面——这个KPI让你了解被标记的部分内容是应用检测评估卡的标签造成的。KPI中反映的数字是实施检测状态后预期的增长。
     * 其他标签——你可以在防欺诈工作室中为多种功能（卡片）标记检测。
 
+<div id="how-to-adjust-the-detection-status-1" />
+
 #### 检测状态的调整方式
 
 检测状态允许你选择 [检测](/docs/beta-fraud-protection-studio#fps模式) 模式。你可以选择实现和标记（默认是实现）
@@ -325,11 +377,15 @@ Protect360中的再参与劫持检测扩展了针对重新参与活动的标准�
 
 默认情况下，该检测在 [标记模式](/docs/beta-fraud-protection-studio#fps模式)，允许您在实施前评估其有效性和潜在影响。
 
+<div id="how-this-works-1" />
+
 #### 作用原理
 
 * 重新交战劫机检测默认设置为标记模式。你可以在不影响实时归因数据的情况下评估其检测性能。
 * 实施后，检测发生在归因后，即欺诈性重新参与被识别并从归因记录中删除。
 * 实现后，检测移除后的所有应用内事件将重新归因于原始用户获取（UA）提供商，或如果没有有效的用户获取提供商，则标记为自然事件。
+
+<div id="how-to-access" />
 
 #### 访问方式
 
@@ -337,6 +393,8 @@ Protect360中的再参与劫持检测扩展了针对重新参与活动的标准�
 2. 在面板左侧的菜单栏中点击**配置 > Protect360 > 作弊防护操作台**。
 3. 通过顶部的应用下拉菜单选择你想配置的应用。
 4. 从左侧菜单中选择 **重新交战劫机** 卡片。
+
+<div id="re-engagement-hijacking-page" />
 
 #### 重新参与劫持页面
 
@@ -373,6 +431,8 @@ Protect360中的再参与劫持检测扩展了针对重新参与活动的标准�
 3. 使用页面顶部的应用下拉菜单，选择您想要配置的应用。
 4. 在左侧菜单中，选择 **基于应用的检测** 卡片。
 
+<div id="the-in-app-based-detection-page" />
+
 #### 基于应用的检测页面
 
 应用内的基地检测页面分为两个部分。
@@ -404,12 +464,18 @@ Protect360中的再参与劫持检测扩展了针对重新参与活动的标准�
 
 实时审查安卓应用中安装候选网络攻击的高级安全模块检测数据。这有助于确保只有经过验证的流量才能到达你的应用。
 
+<div id="how-to-access-2" />
+
+<div id="how-to-access-1" />
+
 #### 访问方式
 
 1. 登入AppsFlyer。
 2. 在面板左侧的菜单栏中点击**配置 > Protect360 > 作弊防护操作台**。
 3. 使用页面顶部的应用下拉菜单，选择您想要配置的应用。
 4. 在左侧菜单中，选择 **高级安全模块** 卡片。
+
+<div id="the-advanced-security-module-page" />
 
 #### 高级安全模块页面
 
@@ -423,11 +489,15 @@ Protect360中的再参与劫持检测扩展了针对重新参与活动的标准�
 * **标签** —— 流量被标记为可疑但仍有归属，所以你可以在执行前审核。这是默认的检测模式。
 * **未标记** ——安装模块未标记的候选方案。
 
+<div id="note-4" />
+
 > 📘 **注意**
 >
 > 有关完整设置、需求和详细报告，请参见 <Anchor target="_blank" href="/marketers/zh/docs/beta-advanced-security-protect360-module">[测试版]高级安全保护360模块</Anchor>.
 
 </Accordion>
+
+<div id="faqs" />
 
 ## 常见问题解答
 

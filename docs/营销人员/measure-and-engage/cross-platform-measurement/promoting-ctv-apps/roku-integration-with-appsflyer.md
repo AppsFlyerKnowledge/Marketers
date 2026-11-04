@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** Rokuads\_int是一种SRN类型的对接方式，可帮助广告主将其移动端或Roku CTV应用与Roku Ads连接，以获取Roku Ads的归因和事件数据。
 
+<div id="about-roku-ads-attribution" />
+
 ## 关于Roku Ads归因
 
 Roku是一个独特的广告平台，其广告资源覆盖连接电视（CTV）和移动应用两大渠道。通过将AppsFlyer与Roku Ads的SRN对接，广告主可以衡量多种用户路径，包括：
@@ -31,9 +33,13 @@ Roku是一个独特的广告平台，其广告资源覆盖连接电视（CTV）�
 * 移动端到移动端：移动端广告带来的移动应用的激活与事件。
 * CTV到移动端/移动端到CTV：一个平台上的广告展示带来的另一平台的应用激活与事件。
 
+<div id="roku-attribution-flow" />
+
 ### Roku归因流程
 
 [<Image alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />](https://support.appsflyer.com/hc/article_attachments/39815161656977)
+
+<div id="setting-up-roku-ads-integration-for-advertisers" />
 
 ## 广告主如何设置Roku Ads对接
 
@@ -55,11 +61,15 @@ Roku是一个独特的广告平台，其广告资源覆盖连接电视（CTV）�
 
 <Accordion title="渠道对接选项卡">
 
+<div id="general-settings" />
+
 #### 通用设置
 
 * **Event Group ID：** 输入从Roku Ads管理器获得的Event Group ID，将您的应用与AppsFlyer连接。有关更多信息，请参见<Anchor target="_blank" href="https://help.ads.roku.com/en/articles/11885912-setting-up-an-integration-with-appsflyer-a-mobile-measurement-partner-mmp">Roku ads说明文档</Anchor>。
 * **高级数据共享（Advanced data sharing）：** 开启后，Roku将接收所有设备（包括未提供广告标识符IDFA的设备）的回传和事件数据（包含IP地址）。若保持关闭状态，Roku仅接收已提供IDFA的设备回传与事件数据。
 * **有限的数据使用（Limited Data Usage）：** 启用后，Roku Ads会在美国特定州限制其在指定事件中对个人信息的使用。有关更多信息，请参见<Anchor target="_blank" href="https://help.ads.roku.com/en/articles/8766138-limited-data-use">Roku ads说明文档</Anchor>。
+
+<div id="install-attribution" />
 
 #### 激活归因
 
@@ -67,6 +77,8 @@ Roku是一个独特的广告平台，其广告资源覆盖连接电视（CTV）�
 
 * 设置**点击型激活回溯窗口**，可用的时长范围为1-23小时或1-14天。请注意<strong>：</strong>Roku Ads建议将此设置为14天。
 * 【可选】打开**浏览型激活归因**，并设置**浏览型激活归因窗口**，可用的时长范围为1–23小时或1–14天。**请注意**：**Roku Ads建议将此设置为14天。**
+
+<div id="re-engagement-attribution" />
 
 #### 再互动归因
 
@@ -76,6 +88,8 @@ Roku是一个独特的广告平台，其广告资源覆盖连接电视（CTV）�
 
 进一步了解再互动归因的[规则和窗口期](#)。
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### 再营销广告中忽略活跃用户
 
 打开这个开关并设置其窗口期后，AppsFlyer会<Anchor target="_blank" href="/marketers/zh/docs/set-retargeting-inactivity-window#不活跃时长">忽略在此期间打开相关应用的用户所完成的再互动和再归因</Anchor>。也就是说，在此时间范围内的用户活动将不会被归因。有关更多信息，请参见<Anchor target="_blank" href="/marketers/zh/docs/set-retargeting-inactivity-window#不活跃时长">非活跃期</Anchor>。
@@ -83,12 +97,16 @@ Roku是一个独特的广告平台，其广告资源覆盖连接电视（CTV）�
 1. 打开**在再营销广告中忽略活跃用户**的开关。
 2. 设置**不活跃窗口**。
 
+<div id="cross-platform-attribution" />
+
 #### 跨平台归因
 
 该功能在此对接中默认启用。
 
 * 将**跨平台回溯窗口**设置为1-23小时或1-3天。
 * [可选] 启用**跨平台平等优先级**。启用后，Roku报告的跨平台曝光将提升至与其他渠道点击相同的优先级。若启用，可将**跨平台平等优先级窗口**设置为1-6小时（默认：3小时）。
+
+<div id="in-app-events-postbacks" />
 
 #### 应用内事件回传
 
@@ -151,10 +169,14 @@ Roku Ads不提供广告收入。
 2. 输入广告平台团队成员的电子邮箱地址。
 3. 点击**添加**。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 当您授予Roku Ads配置对接或修改应用内事件回传的权限时，即表示允许其访问所有归因事件数据，包括来自所有媒体渠道的自然和非自然流量。
 > * 此外，Roku Ads在此权限下所做的任何更改都会覆盖您（广告主）现有的配置。
+
+<div id="types-of-permissions-advertisers-can-grant-to-roku-ads" />
 
 #### 广告主可授予Roku Ads的权限类型
 
@@ -173,9 +195,13 @@ Roku Ads不提供广告收入。
 
 </Accordion>
 
+<div id="setting-up-roku-ads-integration-for-agencies" />
+
 ## 代理如何设置Roku广告对接
 
 代理可代表广告主启用Roku Ads对接并获取其活动的归因数据。 但是代理在使用该对接时有一定的局限性。
+
+<div id="agency-limitations" />
 
 ### 代理限制
 
@@ -188,6 +214,8 @@ Roku Ads不提供广告收入。
 2. 查找并选择**Roku Ads（rokuads\_int）**。
 3. 输入您代理的**Roku Ads账户ID**。这是为了识别代理流量，并将其与广告主的流量区分开来。
 4. 点击**保存对接** 。
+
+<div id="warning" />
 
 > ❗️ **重要提示**
 >

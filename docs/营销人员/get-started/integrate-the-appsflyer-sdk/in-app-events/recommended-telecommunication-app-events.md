@@ -24,13 +24,15 @@ x-zendesk:
 > **概要：概览：** 通过为您的电信应用程序记录这些建议的应用内事件，评估用户在整个用户路径中的质量/strong>。
 
 
-<span id="telecommunication"></span>电信应用程序使用户能够购买和管理手机计划，数据计划等。
+<span id="-telecommunication"></span><span id="telecommunication"></span>电信应用程序使用户能够购买和管理手机计划，数据计划等。
 
 记录这些事件可以帮助您确定：
 
 * 哪些网关计划最受欢迎
 * 用户可以负担哪些产品或套餐
 * 哪些计划最有可能获得客户的长期承诺
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -39,6 +41,8 @@ x-zendesk:
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
 
 [![Flowchart_for_recommended_events_telecommunication_app_user_journey](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -157,6 +161,8 @@ x-zendesk:
 | payment\_method\_type | 付款方式类型 | 信用卡，本地付款 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

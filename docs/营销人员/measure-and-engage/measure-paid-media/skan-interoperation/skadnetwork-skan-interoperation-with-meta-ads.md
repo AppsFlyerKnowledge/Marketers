@@ -27,9 +27,13 @@ x-zendesk:
 
 <Embed title="AppsFlyer与Meta ads的SKAN互通指南" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/15jnbml3h7" providerUrl="https://fast.wistia.com" />
 
+<div id="skan-interoperability-appsflyer---meta-ads" />
+
 ## SKAN互通：AppsFlyer &lt;-> Meta ads
 
 如果您通过多个渠道投放广告，建议您在AppsFlyer后台完成互通设置。这样您就可以利用AppsFlyer平台上的其他可用指标（如成本等）来扩充SKAN的效果指标数据。
+
+<div id="scope-of-skan-interoperability-with-meta-ads" />
 
 #### AppsFlyer与Meta ads的SKAN互通作用范围
 
@@ -54,12 +58,16 @@ x-zendesk:
 * <Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns#ios-145-srn-attribution">iOS 14.5对SRN数据上报的影响</Anchor>
 * 我们与Meta Ads的MMP对接设置会默认打开*Advertiser Tracking Enabled*（启用广告主追踪）功能。（（基于2021年2月Meta ads移动广告规范中的iOS 14广告设置流程）
 
+<div id="considerations" />
+
 #### 注意事项
 
 * 启用互通设置后，您更改衡量设置时无需再重复本指南中的MMP对接流程。也就是说，您无需再次复制相关MMP对接的URL。
 * 如果您在AppsFlyer后台关闭了SKAN衡量开关，那么Meta ads就无法获得CV值的映射信息。
 * AppsFlyer SDK与Facebook SDK的对比：Facebook SDK适用于仅使用Meta ads投放广告的场景。如果是多渠道投放，还是建议您使用AppsFlyer的SDK，因为这样您就可以查看所有渠道的数据。
 * 关于可能出现的数据差异，请参阅本文中的[相关部分](/docs/skadnetwork-skan-interoperation-with-meta-ads#troubleshooting-discrepancies-and-faq)。
+
+<div id="meta-ads-app-install-ads-guidance" />
 
 #### Meta ads中的应用激活广告配置指南
 
@@ -70,6 +78,8 @@ x-zendesk:
 * 不同的AppsFlyer衡量类型适用于不同的Meta ads优化方式，具体的对应关系如下：
   * **启用收入衡量**：VO和AEO
   * **转化衡量：AEO——包括Meta ads的标准事件和购买事件。请确保将AppsFlyer中设置的事件准确映射到Meta ads。**
+
+<div id="interoperation-procedures" />
 
 ## 互通设置流程
 
@@ -112,6 +122,8 @@ x-zendesk:
 <Accordion title="与Meta ads分享CV值映射构架">
 
 ![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+
+<div id="enabling-appsflyer-skan-interoperation-with-meta-ads" />
 
 #### AppsFlyer与Meta ads的SKAN互通启用方式
 
@@ -181,11 +193,13 @@ x-zendesk:
              ![in-app_events_fb_en-us.png](https://files.readme.io/98e2c8048444331c5d24343e683605e8388ee93bbfcb70aa5e8dad183c995859-40032591364241.png)
            * 请确认SKAN衡量模式中设置的应用内事件（即**AppsFlyer事件**）正确映射到Meta ads的事件标识符（即**渠道映射事件**）。若不设置事件映射，Meta ads就无法优化投放，仅能记录激活数。
 
+             <div id="h_01H8XRMVR5GY77K7GJ4TXGWEHS" />
+
              > 📘 **注意**
              >
              > 在SKAN转化值操作台中添加、更改或删除转化值（CV）时，请确保相关事件已映射到**应用内事件回传**。否则Meta ads无法呈现CV值的更新。
              >
-             > #### 应用内事件映射指南
+             > #### <span id="inapp-event-mapping-guide"></span>应用内事件映射指南
 
 
         | 衡量选项 | 映射条件 |
@@ -251,6 +265,8 @@ x-zendesk:
 </Table>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 
@@ -327,6 +343,8 @@ ads\_read权限允许Meta ads客户通过API拉取广告效果数据，用于自
 | <span id="modeled-data-differences-in-appsflyer-and-facebook-ads-manager"></span>AppsFlyer和Meta ads Manager中的模型推算数据差异 | AppsFlyer模型可以推算出基础SKAN归因无法提供的汇总数据。<Anchor target="_blank" href="/marketers/zh/docs/skan-modeled-data">了解详情</Anchor><br /><br />由于AppsFlyer仅取用已确认的、中立的数据，因此AF模型不使用Meta ads模型推算出来的数据。所以Meta ads Manager的报告和AppsFlyer的报告之间可能会有数据和颗粒度的差异。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

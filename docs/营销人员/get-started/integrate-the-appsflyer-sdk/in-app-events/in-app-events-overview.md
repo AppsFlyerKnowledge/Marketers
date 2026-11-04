@@ -31,11 +31,15 @@ x-zendesk:
 ---
 > **概要：** 记录激活后的应用内事件（如登录、注册或内购），将其归因到媒体渠道和广告活动。
 
+<div id="why-record-in-app-events" />
+
 ## 为什么要记录应用内事件？
 
 应用内事件能让您深入了解用户动态，帮助您有效识别用户价值以及**来自不同媒体渠道的流量质量**。记录应用内事件有助于您衡量ROI（投资回报率）和LTV（生命周期价值）等各项KPI。
 
 当用户进行注册、完成教程、将商品添加到购物车或购买商品时，应用内事件数据会记录这些事件及其详细信息。如果要分析激活后的用户行为，就必须启用应用内事件。
+
+<div id="about-in-app-events" />
 
 ## 关于应用内事件
 
@@ -43,9 +47,13 @@ x-zendesk:
 
 ![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 如需进一步了解应用内事件，我们在<Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7774/play/18613/in-app-events-and-integrated-partners-part-1">AppsFlyer充电站里为您准备了相关课程</Anchor>，视频虽短，但干货满满！
+
+<div id="predefined-and-custom-events" />
 
 ### 预定义和自定义事件
 
@@ -55,6 +63,8 @@ x-zendesk:
   * 预定义命名允许事件与合作伙伴之间的顺利映射。
   * 如果AppsFlyer决定更改任何事件的名称或参数，您的设置是可以向下兼容的。
 * **自定义型：** 这类事件名称和参数是由您自行根据应用中出现的特定用户场景来定义的。您可以使用任何自定义的事件名称或参数名称字符串，但请注意自定义事件是需要您的开发人员去维护的。详情请见相关[建议](/docs/in-app-events-overview#tips)和[限制](/docs/in-app-events-overview#limitations)。
+
+<div id="revenue-in-in-app-events" />
 
 ## 应用内事件中的收入
 
@@ -105,6 +115,8 @@ x-zendesk:
 * 由于没有预定义的 SDK 常量`af_net_revenue`您必须将其作为自定义参数发送，并带有密钥。`af_net_revenue` 。
 * 净收入为<Anchor target="_blank" href="/marketers/zh/docs/my-dashboards#metrics">“我的仪表盘”</Anchor>中的净指标（净收入、净投资回报率、净广告支出回报率、净每用户平均收入和净毛利润）提供支持。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 如果您使用<Anchor target="_blank" href="/marketers/zh/docs/about-roi360-store-revenue">ROI360 商店收入</Anchor>`af_net_revenue`应用内购买和订阅事件会自动填充这些信息，因此您无需发送。`af_net_revenue`针对这些赛事。净收入等于总收入减去应用商店费用和税款。
@@ -131,7 +143,11 @@ AppsFlyer会通过货币换算来调和应用配置中的指定货币与应用�
 
 AppsFlyer使用<Anchor target="_blank" href="https://openexchangerates.org/">Open Exchange Rates</Anchor>进行货币换算，其中的汇率每小时更新一次。AppsFlyer总是使用最近一小时内更新的汇率进行货币换算。
 
+<div id="currency-conversion" />
+
 #### 货币换算
+
+<div id="h_01HDBZW9XERK3VN1GS8GHM911W" />
 
 > 📄 **示例**
 >
@@ -148,9 +164,13 @@ AppsFlyer使用<Anchor target="_blank" href="https://openexchangerates.org/">Ope
 >
 > 这里AppsFlyer先将收入从欧元换算到美元，然后再换算到英镑。假设这时的汇率为€1 = $1.13，那么€200就是$226.85。接下来，AppsFlyer再将收入从美元换算到英镑。假设这时的汇率为$1 = £0.78，那么$226.85就是£176.92。
 
+<div id="currency-display" />
+
 #### 货币显示
 
 <Anchor target="_blank" href="/marketers/zh/docs/app-settings#localization-currency">货币单位是在应用配置中设置的</Anchor>。您在应用配置中设置的货币单位就是面板数据的货币单位。无论您的应用内事件是以什么货币发送的，面板总是会按您在应用配置中设置的货币来显示收入数据。
+
+<div id="h_01HDBZW9XEQNG1RDH7A8H002ZD" />
 
 > 📄 **示例**
 >
@@ -162,7 +182,7 @@ AppsFlyer使用<Anchor target="_blank" href="https://openexchangerates.org/">Ope
 > 2. 事件B的收入为**171**，货币为**EUR**（欧元）
 > 3. 事件C的收入为**171**，且**没有货币**信息
 >
-> #### 面板中的收入数据
+> #### <span id="revenue-data-in-the-dashboard"></span>面板中的收入数据
 >
 > AF会先将应用内事件的货币换算到美元，再换算到应用配置中的指定货币，然后在面板中呈现这个**换算值**。
 >
@@ -178,7 +198,7 @@ AppsFlyer使用<Anchor target="_blank" href="https://openexchangerates.org/">Ope
 >
 >
 >
-> #### 原始数据报告中的收入数据
+> #### <span id="revenue-data-in-raw-data-reports"></span>原始数据报告中的收入数据
 >
 > 如果您在应用配置中将货币设置为**GBP**，但您发送的应用内事件中使用的货币不是GBP，则原始数据报告中会同时显示以GBP为单位的收入以及以应用内事件原始货币为单位的收入。
 >
@@ -196,6 +216,8 @@ AppsFlyer使用<Anchor target="_blank" href="https://openexchangerates.org/">Ope
 
 </Accordion>
 
+<div id="sending-events" />
+
 ## 发送事件
 
 您可通过多种方式将应用内事件发送给AppsFlyer：
@@ -204,6 +226,8 @@ AppsFlyer使用<Anchor target="_blank" href="https://openexchangerates.org/">Ope
 * <Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-api-for-mobile-s2s-mobile">**服务器到服务器（S2S）API**</Anchor>：使用S2S API可以直接向AppsFlyer发送在移动应用以外发生的事件。例如，如果您有用户同时活跃于Web端和移动端，您可以通过这类API同时记录来自这两个端的事件，并在AppsFlyer中将这些事件匹配到同一个用户。它可以是应用内事件，也可以是其他事件，例如：网站事件、呼叫中心事件或实体店购买事件。
 * <Anchor target="_blank" href="/marketers/zh/docs/purchase-and-subscription-validation-overview">**收据验证**</Anchor>：苹果和谷歌等支付平台可以通过这个安全的机制来验证报告中所呈现的应用内购事件是否真实发生。验证购买是防止内购刷单的主要手段。您还可以通过该机制查看真实的收入数据，并筛除未完成的应用内购买。
 * <Anchor target="_blank" href="/marketers/zh/docs/in-app-events-for-hybrid-apps">**混合应用**</Anchor>：这类应用结合了原生视图和HTML内容，同时也可以记录应用内事件。但由于SDK只能从原生侧发送事件，因此开发人员需要将所有事件数据转发到原生代码。
+
+<div id="setting-up-in-app-events" />
 
 ## 设置应用内事件
 
@@ -225,6 +249,8 @@ AppsFlyer使用<Anchor target="_blank" href="https://openexchangerates.org/">Ope
 1. 基于您想要记录的场景，选择最合适的事件名称。
 2. 考虑一下哪些参数能为该事件提供更多背景、使数据更丰富，请根据您的业务需求选择合适的参数，从而掌握更多的上下文信息并扩充相关数据。
 3. 应用内事件生成器会根据您的设置生成相应代码并打包成压缩文件，请在生成器页面下载该文件并发送给您的开发人员。
+
+<div id="h_01HDBZW9XFN2B8AC18VW99G8Z6" />
 
 > 📄 **示例**
 >
@@ -286,6 +312,8 @@ AppsFlyer使用<Anchor target="_blank" href="https://openexchangerates.org/">Ope
 
   请注意，原始数据报告是高阶功能。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 应用内事件的参数值仅可在<Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview#应用内事件">原始数据的应用内事件报告</Anchor>中查看。它们不会显示在概览、事件或活动面板中，也不会出现在汇总数据报表中。
@@ -323,6 +351,8 @@ AppsFlyer使用<Anchor target="_blank" href="https://openexchangerates.org/">Ope
 * Meta ads对于事件名称和参数设有限制。<Anchor target="_blank" href="https://developers.facebook.com/docs/app-events/faq#limits">点击此处</Anchor>查看限制详情。
 
 </Accordion>
+
+<div id="faq" />
 
 ## 常见问题解答
 
@@ -370,6 +400,8 @@ AppsFlyer会将应用内事件归因到最初带来应用激活的那个媒体�
 3. 而一旦收到了发送成功的回复，缓存中的事件就会被再次发送到服务器。
 4. 如果缓存中有多个事件，这些事件会依次被发送到服务器。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > SDK缓存最多可存储40个事件，这意味着只有离线时发生的最初40个事件会被保存。在这之后发生的所有事件都会被删除，直到下一次发送成功为止。
@@ -386,6 +418,8 @@ AppsFlyer会将应用内事件归因到最初带来应用激活的那个媒体�
 
 要构建复杂的应用内事件，请将 `af_content` 用作JSON数组。数组中的每个对象都必须包含 `id` 和 `quantity`。`af_content_list` 是可选的，可以省略。
 
+<div id="h_01KSMX2ECGTDXQP3G9PZW1PFQD" />
+
 > 📄 **示例**
 >
 > ```json
@@ -396,6 +430,8 @@ AppsFlyer会将应用内事件归因到最初带来应用激活的那个媒体�
 >   "af_content": "[{"id":"ID1","quantity":"1"},{"id":"ID2","quantity":"1"},{"id":"ID3","quantity":"2"}]"
 > }
 > ```
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -413,6 +449,8 @@ AppsFlyer会将应用内事件归因到最初带来应用激活的那个媒体�
 
 您可以在单笔交易中添加多个商品。您可以用多件商品的数组来描述一笔交易，商品之间用逗号区隔开，不需要针对每件商品分开填写参数值。格式是JSON字符串。
 
+<div id="h_01HDBZW9XFB9TAT8W4CGNP1892" />
+
 > 📄 **示例**
 >
 > Smith先生在一家美国线上商店下单，在这一单中他分别购买了两件相同的衬衫、一双鞋和一个帽子。每件商品的罗列次序必须与各参数完全一致。
@@ -423,7 +461,7 @@ AppsFlyer会将应用内事件归因到最初带来应用激活的那个媒体�
 >
 > 多商品事件一般会以数组的形式<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration">回传</Anchor>。目前，Meta ads和X Ads都无法正确解析数组。为协助解决这个问题，AppsFlyer不再把多件商品以数组形式发送给SRN，而是对商品数量（af\_quantity）进行加总。在上述案例中，Meta ads就会收到**af\_quantity=4**。
 >
-> **<span id="h_01HDBZW9XFJ68WSM3066NVRATS"></span>注意**
+> **<span id="notes"></span><span id="h_01HDBZW9XFJ68WSM3066NVRATS"></span>注意**
 >
 > * 在 AppsFlyer <Anchor target="_blank" href="/marketers/zh/docs/audiences-guide#limitations">Audiences</Anchor> 中，事件属性内不支持数组，仅支持数字或字符串。
 > * 您可以在以下应用内事件中使用多商品描述：
@@ -445,6 +483,8 @@ AppsFlyer会将应用内事件归因到最初带来应用激活的那个媒体�
 * Event value
 * 应用ID
 * AppsFlyer ID
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -474,6 +514,8 @@ AppsFlyer会根据对接类型和合作渠道的要求保留原始的用户级�
 * 对于<Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S API</Anchor>，自2021年7月1日起，iOS应用必须发送OS（操作系统）参数。如果您不发送这个参数，那么系统就会默认数据来自iOS 14.5的用户，这会影响<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">原始数据的呈现方式</Anchor>。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

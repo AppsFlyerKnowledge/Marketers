@@ -31,9 +31,13 @@ x-zendesk:
 
 [![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > AppsFlyer智能横幅网页SDK v1已于2023年11月8日下线。如需在您的网站中展示智能横幅，请升级到v2。<Anchor target="_blank" href="/marketers/zh/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">了解详情</Anchor>
+
+<div id="smart-banners" />
 
 ## 智能横幅
 
@@ -87,6 +91,8 @@ x-zendesk:
 
 ---
 
+<div id="example" />
+
 > 📄 **示例**
 >
 > Mark负责食品配送服务商Feed Me的市场营销工作。
@@ -99,9 +105,13 @@ x-zendesk:
 >
 > 然后，AppsFlyer**会将点击/激活归因到Mark指定的媒体渠道和广告**。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > AppsFlyer的智能横幅和iOS Safari的Smart App Banner两者之间只能选择一种，切勿同时使用，否则会使移动端网页无法正常显示，并造成归因差异。
+
+<div id="setup" />
 
 ## 设置
 
@@ -113,6 +123,8 @@ x-zendesk:
 <div id="1-website-workplace-setup" />
 
 <Accordion title="1. 网页配置中心的设置">
+
+<div id="prepare-your-mobile-site-to-display-smart-banners-for-the-first-time" />
 
 #### 首次在移动端网站中投放智能横幅前，您需要先完成以下准备工作：
 
@@ -126,6 +138,8 @@ x-zendesk:
    * 如需通过其他平台添加该代码，或根据实际需求（包括添加参数、深度链接、隐藏横幅或结合PBA使用智能横幅等）更改该代码，请参考<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">开发人员专用的智能横幅网页代码添加指南</Anchor>。
 7. 【可选】复制**Web Key**（该密钥已经包含在代码片段中）。
 8. 点击**下一步**。
+
+<div id="to-create-website-workplaces-after-the-first-time" />
 
 #### 后续创建网站配置中心的方式
 
@@ -186,6 +200,8 @@ x-zendesk:
 9. 【推荐】建议设置默认归因参数**Channel name**（流量入口名称），这样就能将所有来自智能横幅的激活归因到具体的流量入口，并能在**群组报告**、**数据总览面板**、**留存报告**等多种报告中将同一个流量入口下多个媒体渠道的数据进行汇总。
 10. <span id="2-banner-group-setup-step10"></span>【可选】如果您想要使用该横幅组来记录用户点击横幅后的再互动情况，请打开**再营销**开关。如需进一步了解再营销解决方案，请参阅<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">再营销归因指南</Anchor>。
 
+    <div id="important-1" />
+
     > 🚧 **重要提示！**
     >
     > 如需使用再营销功能，您需要完成以下操作：
@@ -225,6 +241,8 @@ x-zendesk:
 19. 点击**创建横幅组**。
 20. 【可选】再次编辑横幅组，将鼠标悬停在**定向及行为**上，然后点击**编辑**。
 
+<div id="example-1" />
+
 > 📄 **示例**
 >
 > Mark负责食品配送服务商“Feed Me”的市场营销工作，他决定要宣传该应用的李子促销活动。他决定群发短信，并在广告平台和Google投放广告。
@@ -246,6 +264,8 @@ x-zendesk:
 > * 进入Feed Me应用的下载页面，完成应用激活。
 > * 首次打开应用时直接进入李子促销页面。
 > * AF将用户正确归因给将其带入Feed Me移动端网站的媒体渠道。
+
+<div id="targeting--behavior" />
 
 #### 定向与行为
 
@@ -298,6 +318,8 @@ x-zendesk:
 5. 新的素材创建完毕并保存后，横幅状态变为“在投”。您可以使用**状态**开关切换横幅状态，让其变为**在投**或**停投**。
 6. 点击**全部保存**以保存您的配置，或点击**全部保存并关闭**在保存配置后关闭该横幅设置页面。
 
+<div id="example-2" />
+
 > 📄 **示例**
 >
 > 另请参考<Anchor target="_blank" href="https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing">此文档</Anchor>，查看相关使用技巧、窍门和笔记。
@@ -320,6 +342,8 @@ x-zendesk:
 4. 点击**编辑素材**返回素材配置页面，或点击**完成**保存素材。
 
 </Accordion>
+
+<div id="view-banner-performance" />
 
 ## 考察横幅效果
 
@@ -372,6 +396,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="banner-group-display-logic" />
@@ -400,6 +426,8 @@ AppsFlyer在判定是否显示智能横幅/显示哪个智能横幅时会考虑�
 您可以在效果面板中对比各横幅的投放效果，从而对横幅进行A/B测试。如需获取额外的归因相关数据，建议您添加`af_adset`、 `af_ad`或其他归因参数（`pid`、`c`和`channel`除外），并为每个横幅素材或横幅组配置独立的值。这样，您就能在AppsFlyer的面板和报告中使用这些参数来对比各横幅组的投放效果。
 
 </Accordion>
+
+<div id="faq" />
 
 ## 常见问题解答
 
@@ -495,6 +523,8 @@ AppsFlyer在判定是否显示智能横幅/显示哪个智能横幅时会考虑�
 不会。如果删除智能横幅，归因数据不会被删除。
 
 </Accordion>
+
+<div id="troubleshooting--traits-and-limitations" />
 
 ## 问题排查 & 特点和局限性
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 ![KB_toggle_final.jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
 
+<div id="about-the-experiment" />
+
 ## 增量分析实验简介
 
 <Anchor target="_blank" href="/marketers/zh/docs/incrementality-for-remarketing-overview">增量</Anchor>测试功能可通过A/B测试精确衡量广告投放的增效幅度——即对比投放广告与不投放广告时的转化量差异，帮助您了解再营销广告的真实效果。
@@ -34,6 +36,8 @@ x-zendesk:
 您可以从增量实验的结果中攫取非常关键的信息，帮助您了解营销投入所产出的真实价值。您可以通过增量分析测试客观地观测到具体流量入口和广告系列的效果，从而优化预算分配和广告投放。
 
 AppsFlyer的增量分析测试从人群包创建开始，该流程完全自动化，非常易于上手。打开“衡量增量效果”开关后，AF就会自动将新建的人群包拆分到对接的渠道和对照组。对照组会保留相关人群包中的一部分流量不发送给渠道，这是增量测试中必不可少的部分。人群包保存成功后，AF就会自动创建增量分析实验。在渠道侧投放广告，并将相关的广告系列正确关联到增量分析实验后，您就能在增量分析面板中看到相关实验的结果。
+
+<div id="get-started" />
 
 ## 启用方式
 
@@ -45,6 +49,8 @@ AppsFlyer的增量分析测试从人群包创建开始，该流程完全自动�
 | 2 | [**创建并拆分目标受众的人群包**](/docs/run-an-incrementality-for-remarketing-experiment#create-the-target-audience-and-split-groups)<br /><br />在<Anchor target="_blank" href="/marketers/zh/docs/audiences-guide">受众共享</Anchor>面板中：<ul><li>配置相关人群包。</li><li>将人群包关联到广告平台。</li><li>打开增量分析开关后（仅限购买了增量分析功能的客户在2023年1月11日以后创建的人群包）AF会自动将该人群包拆分到测试组和对照组。<br />AppsFlyer的受众共享面板会将测试组的用户上传到广告平台，并保留对照组的用户。</li></ul> |
 | 3 | [**投放广告并开启实验**](/docs/run-an-incrementality-for-remarketing-experiment#launch-the-campaign-and-experiment)<ul><li>在广告平台上面向人群包中的目标受众创建并投放广告系列。</li><li>AF会自动创建增量分析实验（仅限购买了增量分析功能的客户）。</li></ul>测试组的用户会看到广告，但对照组的用户不会。 |
 | 4 | [**分析结果**](/docs/run-an-incrementality-for-remarketing-experiment#analyze-the-results)<ul><li>增量分析会呈现在<Anchor target="_blank" href="/marketers/zh/docs/incrementality-for-remarketing-overview#增量分析面板">增量分析面板</Anchor>中。</li><li>设备层级用户数据会呈现在<Anchor target="_blank" href="/marketers/zh/docs/incrementality-for-remarketing-overview#原始数据报告">增量分析原始数据报告</Anchor>中（通过Data Locker拉取）。</li></ul>设计合理的增量分析实验能够产出有价值的关键信息，帮助您优化营销投放，充分提升广告效果。比如帮助您发现对某个目标人群最有效的文案、素材、推广活动、媒体渠道等等。 |
+
+<div id="set-up-the-experiment" />
 
 ## 设置实验
 
@@ -62,6 +68,8 @@ AppsFlyer的增量分析测试从人群包创建开始，该流程完全自动�
 | 对照组占比 | AF会将对照组自动设置为相关人群包的15%（推荐配置为15%到25%）。 |
 | 测试组 | 确定您要测试的广告平台。测试组的流量会在广告平台之间平均分配（您也可以手动调整各平台收到的流量比例）。<br /><br />**推荐配置：** 1-3个广告平台 |
 | 假设 | 定义该实验的预期结果。<br /><br />在测试开始前就让您预测测试结果看起来可能不合常理，但结果假设是实验设计中极为重要的元素。有了结果假设，您才能解读实验结果。<br /><br />**推荐配置：** 使用确切的百分比值来设置一个易于测试的假设结果，避免模糊的预估值。使用场景示例:<ul><li>“***超过15%的用户会购买升级产品***”是一个易于测试的假设结果。</li><li>“***购买升级产品的用户会有大幅提升***”是一个较难测试的假设结果。</li></ul> |
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -104,7 +112,7 @@ AppsFlyer的增量分析测试从人群包创建开始，该流程完全自动�
 * 实验期间切勿更改人群包配置。更改渠道、人群包名称或其他设置会导致统计结果不准确。  
   **推荐方式：** 即使您需要在实验结束后更改其中的人群包定义，也必须先创建该人群包的副本，然后在副本中进行相关修改。这是为了确保增量分析面板中历史数据的完整性。
 * 更改现有人群包的拆分比例和渠道配置会自动终止正在进行中的增量分析实验，并创建新实验。
-* #### 检查人群扩展功能的使用情况：
+* #### <span id="check-for-audience-expansion-features"></span>检查人群扩展功能的使用情况：
 
 Meta ads和Google Ads提供的可选功能可让广告主将相关广告投放到指定的人群包之外的用户，以扩大广告的触达范围。如果您启用了该功能，会使增量分析实验产生偏差，导致结果不准确。**因此请务必关闭该功能。**
 
@@ -123,12 +131,16 @@ Meta ads和Google Ads提供的可选功能可让广告主将相关广告投放�
 
 **请完成以下操作：**
 
+<div id="1-configure-campaigns-on-ad-networks" />
+
 #### 1. 在广告平台中配置广告系列
 
 首先，您需要创建一个面向指定人群的广告系列，然后将其投放到广告平台（需要对相关人群包关联到的每个广告平台都完成该操作）。
 
 * <strong>重要提示！</strong>为了得到准确的测试结果，请务必将广告系列配置为**仅**投放给测试人群包中的用户，切勿投放到其他来源的用户。
 * 新建的测试人群包对接到相关广告平台最多可能需要24小时。
+
+<div id="2-ensure-the-correct-campaign-is-linked-to-the-experiment" />
 
 #### 2. 确保关联到增量实验的广告系列正确无误。
 
@@ -158,6 +170,8 @@ Meta ads和Google Ads提供的可选功能可让广告主将相关广告投放�
 
 保存完毕即表示该广告系列已成功关联到实验。
 
+<div id="manually-create-an-experiment" />
+
 #### 手动创建实验
 
 如果您购买了增量分析产品且您的人群包添加日期在2023年1月11日之后，则无需手动创建实验。AF会针对您的人群包自动创建实验，这些实验会以“[Auto]”为标题前缀呈现在增量分析面板中。如果您需要针对2023年1月11日以前添加的人群包手动创建实验，请完成以下各步骤的操作。
@@ -167,6 +181,8 @@ Meta ads和Google Ads提供的可选功能可让广告主将相关广告投放�
 * 从AppsFlyer后台的侧边栏中选择**优化** > **增量分析**。
 * 在**增量分析实验**页面中点击**新实验**按钮。
 * 按页面向导工具的提示创建相关实验。该流程中的每一步都会有详细说明。
+
+  <div id="notes" />
 
   > 📘 **注意**
   >
@@ -208,6 +224,8 @@ Meta ads和Google Ads提供的可选功能可让广告主将相关广告投放�
 您可以通过Data Locker拉取<Anchor target="_blank" href="/marketers/zh/docs/incrementality-for-remarketing-overview#原始数据报告">增量分析原始数据报告</Anchor>。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **概要：** 设备层级数据（即原始数据）用于说明与用户有关的各种事件，如激活、应用内事件、网页浏览、被Protect360拦截的激活、变现收入以及回传给渠道的用户相关数据。广告主可以通过文件下载、API和Data Locker获取原始数据报告。
 
+<div id="raw-data-reportingtools-and-reports" />
+
 ## 原始数据的上报——工具与报告
 
 您可以使用原始数据报告分析用户行为及用户链路、核对广告平台账目、扩充CRM和BI系统，从而提升分析、优化能力，改善用户与应用的互动。
 
 您可以通过各种报告工具拉取原始数据报告。这些工具各有特点，因而适用于不同的场景。举例来说，如果您要核对广告平台的账目，可以在导出数据页面按需下载报告。而如果您需要将用户行为数据入库到您的BI系统，则可以使用Data Locker或Pull API，以程序化的方式拉取数据。
+
+<div id="tip" />
 
 > 👍 **提示**
 >
@@ -51,13 +55,19 @@ x-zendesk:
 * 报告的日期范围是用户行为维度的（即事件实际发生的日期），这与<Anchor target="_blank" href="/marketers/zh/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV维度</Anchor>的汇总报告不同。
 * 字段说明——请见<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary">原始数据字段词典</Anchor>。
 
+<div id="reporting-tools" />
+
 #### 报告工具
 
 <table><thead><tr><th>工具</th><th>说明</th><th>多/单应用 (1)</th><th>数据时效性（2）</th><th>是否嵌入脚本</th><th>时区</th><th>货币</th></tr></thead><tbody><tr><td><a href="./raw-data-export-page" target="_blank">原始数据导出页面</a></td><td><ul><li>从面板下载报告</li><li>格式：CSV文件</li></ul></td><td>单应用</td><td>持续滚动更新</td><td><span><strong>x</strong></span></td><td>取决于应用层级的配置</td><td>取决于应用层级的配置</td></tr><tr><td><a href="./pull-api-raw-data" target="_blank">Pull API\*</a></td><td><ul><li>通过调用API下载报告</li><li>格式：CSV文件</li></ul></td><td>单应用</td><td>持续滚动更新</td><td><span>✓</span></td><td><ul><li>可选</li><li>默认UTC</li></ul></td><td><ul><li>可选</li><li>默认USD</li></ul></td></tr><tr><td> <a href="./data-locker-for-marketers" target="_blank">Data Locker</a> <span><strong>P</strong></span> </td><td><ul><li>数据写入<a href="./data-locker-cloud-service-setup" target="_blank">云端存储桶</a> </li><li>无行数限制</li><li>数据可用期限14天。</li><li>格式：CSV或parquet</li></ul></td><td>多应用</td><td>持续滚动更新，有数小时延迟</td><td><span>✓</span></td><td>UTC</td><td>USD </td></tr><tr><td> <a href="./push-api-streaming-raw-data" target="_blank">Push API<span></span></a> <span><strong>P</strong></span> </td><td><ul><li>用户链路数据（激活、应用内事件、再营销、SKAN）实时发送到您的服务器</li><li>格式：JSON或查询参数</li></ul></td><td>可使用同一个端点</td><td>AppsFlyer后台记录到事件的数分钟后更新</td><td><span>✓</span></td><td>UTC + 应用层级配置</td><td>USD + 应用层级配置</td></tr><tr><td> <a href="./conversion-data-payloads-and-scenarios" target="_blank">SDK转化数据</a> (3)</td><td><ul><li>从应用侧获取归因转化数据</li><li>格式：JSON</li></ul></td><td>不适用</td><td>应用首次上线的几秒钟内</td><td><span>✓</span></td><td>UTC</td><td>不适用</td></tr><tr><td colspan="7"> <strong>备注与缩略词</strong>:<br/>(1) 是否支持多个应用同时上报<br/>(2) 实际的数据时效性取决于报告本身，有些报告是每天更新一次的。<br/>（3） SDK转换数据在应用首次上线后几秒钟内获取用户归因数据，因此是最不准确的方法。<br/><span><strong>(P)</strong></span><span>高级功能</span><br/><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) 报告有行数上线</a> </td></tr></tbody></table>
 
+<div id="tool-limitations" />
+
 #### 报告工具的局限性
 
 <table><thead><tr><th>局限性 </th><th>Pull API (\*)</th><th>Push API</th><th>Data Locker</th><th>SDK<br/>转化数据</th></tr></thead><tbody><tr><td>数据限制</td><td>每次调用限100万行</td><td>不适用</td><td>N/A</td><td>N/A</td></tr><tr><td>数据选项</td><td>数据类型可选，字段选项有限。</td><td>可以选择数据类型、字段、应用内事件</td><td>可以选择数据类型、字段、应用内事件</td><td>否</td></tr><tr><td>数据可用期限</td><td>90天</td><td>N/A</td><td>14天 </td><td>用户生命周期内可用（数据来自SDK）</td></tr><tr><td colspan="5"><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) 报告有行数上线</a></td></tr></tbody></table>
+
+<div id="integration-considerations" />
 
 #### 对接中的注意事项
 
@@ -93,6 +103,8 @@ x-zendesk:
 
 为便于理解，我们根据不同场景对用户链路字段进行了分组。
 
+<div id="user-journey-raw-data-field-groups" />
+
 #### 用户链路原始数据字段分组
 
 | 字段分组 | 是否与自然量相关 | 字段示例 |
@@ -105,6 +117,8 @@ x-zendesk:
 | 事件 | 是 | 在应用内事件报告中填充的字段：<br /><br />Event name（事件名称）、event value（事件值）、event revenue（事件收入） |
 
 </Accordion>
+
+<div id="user-journey-reports" />
 
 ## 用户链路报告
 
@@ -150,6 +164,8 @@ x-zendesk:
 * 报告中可包含自然量和/或非自然量数据，具体的数据可用性请见下表说明。
 * 以往的原始数据报告也受到数据保存期限的限制，具体取决于您所使用的报告工具以及原始数据的来源。一般情况下，过去90天内的数据是可用的。**请注意**！汇总数据不受数据保存期限的限制。
 
+<div id="user-journey-reports-1" />
+
 #### 用户链路报告
 
 <table><thead><tr><th>类别</th><th>仅限Data Locker</th><th>报告主题</th><th>自然量</th><th>非自然量</th></tr></thead><tbody><tr><td>用户获取</td><td><span>✓</span></td><td>点击</td><td colspan="2">N/A</td></tr><tr><td>再营销</td><td><span>✓</span></td><td>再营销广告的点击 </td><td colspan="2">再营销只记录非自然量</td></tr><tr><td>用户获取</td><td><span>✓</span></td><td>展示</td><td colspan="2">N/A</td></tr><tr><td>再营销</td><td><span>✓</span></td><td>再营销广告的展示</td><td colspan="2">再营销只记录非自然量</td></tr><tr><td>用户获取</td><td>-</td><td>激活假量 </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>用户获取</td><td>-</td><td>应用内事件 </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>用户获取</td><td>-</td><td>记录到的变现收入</td><td>-</td><td><span>✓</span></td></tr><tr><td>用户获取</td><td>-</td><td>自然广告收入</td><td><span>✓</span></td><td>-</td></tr><tr><td>再营销</td><td>-</td><td>再营销变现收入</td><td colspan="2">再营销只记录非自然量</td></tr><tr><td>再营销</td><td>-</td><td>再营销转化（再互动及再归因）</td><td colspan="2">再营销只记录非自然量</td></tr><tr><td>再营销</td><td>-</td><td>再营销应用内事件（再互动及再归因）</td><td colspan="2">再营销只记录非自然量</td></tr><tr><td>再营销</td><td><span>✓</span></td><td>再营销session（再互动及再归因）</td><td colspan="2">再营销只记录非自然量</td></tr><tr><td>用户获取</td><td><span>✓</span></td><td>应用打开（Sessions）</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>用户获取</td><td>-</td><td>非自然安装卸载 </td><td>-</td><td><span>✓</span></td></tr><tr><td>用户获取</td><td>-</td><td>自然卸载</td><td><span>✓</span></td><td>-</td></tr><tr><td>用户获取</td><td><span>✓</span></td><td>跨平台广告交互</td><td><span>✓</span></td><td><span>✓</span></td></tr></tbody></table>
@@ -159,6 +175,8 @@ x-zendesk:
 <div id="user-journey-report-descriptions" />
 
 <Accordion title="用户链路报告说明">
+
+<div id="clicks-and-impressions" />
 
 #### 点击和展示
 
@@ -171,9 +189,13 @@ x-zendesk:
 | 说明 | SRN数据不可用。 |
 | 受限用户 | 有些情况下由于隐私政策的规定，会导致展示或点击数据受限（无用户标识符）或不可用。具体的数据可用性取决于媒体渠道和操作系统。 |
 
+<div id="installs-and-retargeting-conversions" />
+
 #### 激活和再营销转化
 
 <table><thead><tr><th rowspan="2">报告名称 </th><th rowspan="2"><p>用户获取（UA）：激活假量</p></th><th rowspan="2">再营销：转化</th></tr></thead><tbody><tr><td>通用</td><td><p>用户首次打开应用。</p></td><td><p>用户与再营销广告互动后打开应用即为再营销转化。再营销转化包括再互动和再归因。</p> 详情请见<a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">再营销归因指南</a>。 </td></tr><tr><td>使用场景</td><td><ul><li>使用AppsFlyer分析工具中不可用的字段，生成汇总报告。</li><li>结合其他报告，形成进阶跨维度分析。</li><li>分析城市、都会区等不同维度的效果数据。 </li><li>按国家、城市和语言对用户进行分组，用于定向投放。</li><li>获取用户的设备ID，用于再营销。</li></ul></td><td>与激活类似。</td></tr><tr><td>自然量与非自然量对比</td><td><ul><li> <strong>非自然量</strong>：填充归因与助攻归因字段组。</li><li> <strong>自然量</strong> 媒体渠道字段为空/null/organic，数据入库时需要注意这一点。 </li></ul></td><td>不适用</td></tr><tr><td>报告示例</td><td><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2yvNGmZp8ataHBj89CFq856PmDixnyjKK75O8fQcS9TjT8J2jBAnJoTn3350NV-7pCSlaT0oh8ebs/pub?output=csv" target="_blank">激活假量</a></td><td>再营销转化报告的结构与激活报告相同，填充再营销场景中的部分字段。详见<a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">再营销原始数据</a>。 </td></tr></tbody></table>
+
+<div id="in-app-events" />
 
 #### 应用内事件
 
@@ -263,6 +285,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="sessions" />
+
 #### 应用打开（Sessions）
 
 | 报告 | 说明 |
@@ -271,6 +295,8 @@ x-zendesk:
 | 说明 | session报告的结构与应用内事件报告相同。由于session（应用打开事件）的数量较大，因此分开在单独的报告中显示。 |
 | 使用场景 | 用于了解用户与应用的互动情况。 |
 | 报告示例 | Session报告与应用内事件报告类似。请注意：session在原始数据中的事件名称为*launch*。 |
+
+<div id="uninstalls" />
 
 #### 卸载
 
@@ -288,9 +314,13 @@ x-zendesk:
 
 <Accordion title="各报告工具的用户链路报告可用性">
 
+<div id="ad-engagement-report-by-tool" />
+
 #### 各报告工具的广告互动报告
 
 <table><thead><tr><th>报告</th><th>导出数据</th><th>Pull API</th><th>Data Locker</th><th>Push API</th><th>SDK<br/>转化数据</th></tr></thead><tbody><tr><td>展示 (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td>点击 (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td colspan="6">（1）只有非SRN平台才会提供点击和展示数据，SRN不提供此类信息。</td></tr></tbody></table>
+
+<div id="user-acquisition-reports-by-tool" />
 
 #### 各报告工具的用户获取报告
 
@@ -300,6 +330,8 @@ x-zendesk:
 | 应用打开（Sessions） | - | - | ✓ | - | - |
 | 应用内事件 | ✓ | ✓ | ✓ | ✓ | - |
 | 卸载 | ✓ | ✓ | ✓ | - | - |
+
+<div id="retargeting-raw-data-reports-by-tool" />
 
 #### 各报告工具的再营销原始数据报告
 
@@ -333,18 +365,18 @@ x-zendesk:
 
 > 📄 **示例**
 >
-> #### 活跃用户——强互动
+> #### <span id="engaged-userstrong"></span>活跃用户——强互动
 >
 > * 某用户在8月20日09:31激活应用。
 > * 合并报告显示该用户在8月20日10:31、8月22日15:22以及8月25日16:47分别完成了购买事件。
 > * 基于此信息，我们可以判断该用户是活跃用户，因其在首次打开应用的一小时后就完成了购买事件，且在激活之后的数天中持续下单。
 >
-> #### 活跃用户——若互动
+> #### <span id="engaged-userweak"></span>活跃用户——若互动
 >
 > * 某用户在7月30日激活应用。合并报告显示该用户在8月15日将某商品添加至购物车，但之后没有完成购买事件。
 > * 基于此信息，可推测该用户正在犹豫是否要下单，因此您可以通过其加购的商品对其进行再营销。
 >
-> #### 分析用户链路可推动投放优化
+> #### <span id="analyzing-the-user-journey-for-campaign-optimization"></span>分析用户链路可推动投放优化
 >
 > * 某旅游应用的拉新（UA）经理下载了激活报告和应用内事件报告，并将两个报告合并。
 > * 然后他通过AppsFlyer ID筛选或汇总报告中的数据，以查看用户在应用中的链路。
@@ -354,6 +386,8 @@ x-zendesk:
 > * 通过分析用户链路，这位经理找出了用户与应用互动不足的原因，可能是因为该广告系列的内容太具体、受众面太窄了。
 
 </Accordion>
+
+<div id="feature-reports" />
 
 ## 功能报告
 
@@ -380,6 +414,8 @@ x-zendesk:
 * 从2021年3月起，该报告会根据相关广告平台的Advanced Privacy（高级隐私保护）设置来填充字段。也就是说，Advanced Privacy处于启用状态时，用户标识符等字段不填充。详见<Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">广告平台的Advanced Privacy回传配置</Anchor>。
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_app-id-postbacks-v5">通过Pull API获取回传报告</Anchor>
 
+<div id="postback-reports-available-via-the-export-data-page-and-pull-api" />
+
 #### 回传报告（通过导出数据或Pull API拉取）
 
 | 报告主题 | 回传给渠道的事件 |
@@ -388,6 +424,8 @@ x-zendesk:
 | 应用内事件 | 非自然安装应用内事件 |
 | 再营销转化回传 | 再营销（再互动与再归因） |
 | 再营销应用内事件 | 再营销应用内事件 |
+
+<div id="additional-fields-in-postback-reports" />
 
 #### 回传报告中的其他字段
 
@@ -415,6 +453,8 @@ x-zendesk:
 4. 如需开放应用内事件（CPA）面板的权限，请打开**访问汇总应用内事件数据**的开关。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

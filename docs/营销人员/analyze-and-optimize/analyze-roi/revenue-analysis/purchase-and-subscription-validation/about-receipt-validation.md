@@ -25,9 +25,13 @@ x-zendesk:
 
 收据验证对所有账户方案免费开放。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 建议您使用我们的高级ROI360商店收入解决方案，以使用净收入计算、完整漏斗衡量、处理退款以及自动化购买识别与去重等功能。如需详细信息，或两种方案的对比，请参阅<Anchor target="_blank" href="/marketers/zh/docs/purchase-and-subscription-validation-overview#购买和订阅验证的两种解决方案">购买与订阅验证的两种解决方案</Anchor>。
+
+<div id="how-does-receipt-validation-work" />
 
 ## 收据验证的工作原理
 
@@ -43,6 +47,8 @@ x-zendesk:
 8. AppsFlyer验证服务将结果返回给SDK。
 9. SDK将验证结果（成功或失败）返回给应用。
 
+<div id="activate-receipt-validation" />
+
 ## 启用收据验证
 
 请按照以下步骤启用收据验证：
@@ -52,9 +58,13 @@ x-zendesk:
 3. 在步骤1**选择产品类型**中，选择**收据验证**。
 4. 点击**保存并继续**，进入收据验证流程。
 
+<div id="set-up-receipt-validation" />
+
 ## 设置收据验证
 
 有关详细信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/set-up-receipt-validation">设置收据验证。</Anchor>
+
+<div id="in-app-purchase-events-and-parameters-for-receipt-validation" />
 
 ## 收据验证的应用内购买事件和参数
 
@@ -91,6 +101,8 @@ x-zendesk:
 
 * 在SDK调用中传入的任何自定义参数，都会显示在原始数据报告的`custom_data`字段中。
 
+<div id="switch-from-roi360-store-revenue-to-receipt-validation" />
+
 ## 从ROI360商店收入切换至收据验证
 
 如果您当前使用的是ROI360商店收入，并希望切换为收据验证，请按以下步骤操作：
@@ -108,6 +120,8 @@ x-zendesk:
 7. 切换完成后，**产品类型**将更新为**收据验证**，界面将显示为简化配置。
 8. 您需要重新验证以下内容：
    * 用于validateAndLog方法的**SDK部署**
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

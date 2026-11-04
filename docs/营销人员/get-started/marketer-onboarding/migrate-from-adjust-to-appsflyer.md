@@ -23,13 +23,19 @@ x-zendesk:
 
 <Image alt="" src="https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png" width="1765px" />
 
+<div id="about-migrating-to-appsflyer" />
+
 ## 迁移至 AppsFlyer 概述
 
 迁移至 AppsFlyer，您将获得全面、可靠的归因与营销分析平台，实现顺畅的迁移过渡。 AppsFlyer 提供安全、公正的解决方案，以及一整套先进工具，帮助品牌应对行业变化。凭借遍布全球的客户支持团队，以及对产品持续优化的专注，AppsFlyer 致力于为企业提供所需的工具和洞察，助力业务增长并灵活应对变化。
 
+<div id="compare-measurement-between-appsflyer-and-adjust" />
+
 #### 对比 AppsFlyer 与 Adjust 的衡量结果
 
 在规划迁移时，您可能希望针对相同的媒体渠道和广告活动，对比 AppsFlyer 与 Adjust 的归因衡量结果。但并非所有媒体渠道都支持同时使用多个移动归因平台（MMP）进行衡量。即使支持，也可能存在一些限制和挑战，以避免归因结果出现差异。详情请参阅 <Anchor target="_blank" href="/marketers/zh/docs/measuring-attribution-with-multiple-mmps">使用多个 MMP 进行归因衡量</Anchor>。
+
+<div id="tasks" />
 
 ## 迁移任务
 
@@ -103,6 +109,8 @@ x-zendesk:
 
 设备迁移可以解决与已下载 App 并由 Adjust 完成归因的现有用户相关的数据问题。例如 SRN 重复计费问题：如果某用户最初由 Adjust 归因到某个自归因网络（SRN），且该用户仍处于回溯窗口期内，那么在切换到 AppsFlyer 后，该 SRN 可能会再次认领这名用户，从而造成重复计费。
 
+<div id="example" />
+
 > 📄 **示例**
 >
 > * 某新用户在 Facebook 应用上点击了一则广告，并于 6 月 15 日安装了您的 App。
@@ -116,6 +124,8 @@ x-zendesk:
 * **再营销：** 再归因和再互动数据将正常显示。
 * **活跃数据：** 正常显示。
 * **留存和群组数据：** 已迁移的设备没有安装记录。因此，这些设备不会关联到任何群组，也不会出现在群组和留存报告中。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -143,6 +153,8 @@ x-zendesk:
 
 以下各部分将说明针对不同类型的媒体渠道（SRN、非 SRN 广告平台、自有媒体和 SKAN）启用 AppsFlyer 衡量所需的操作。
 
+<div id="srns" />
+
 #### SRN
 
 当移动衡量合作伙伴（MMP）就特定设备的互动情况发起查询时，SRN 会做出回复。如果 AppsFlyer 与 Adjust 就同一设备的同一次安装，向同一个 SRN 发起查询，可能会导致重复计费。
@@ -151,10 +163,14 @@ x-zendesk:
 
 * 在 AppsFlyer 中激活并配置相关的 <Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns#与appsflyer对接的srn">SRN</Anchor>。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * SRN 可以同时对接多个 MMP（Meta ads 和 Twitter 除外）。
 > * Meta ads 无法对应用内事件进行去重。
+
+<div id="non-srn-ad-networks" />
 
 #### 非 SRN 广告平台
 
@@ -165,6 +181,8 @@ x-zendesk:
 1. 在 AppsFlyer 中<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner">启用</Anchor>相关的广告平台。
 2. 为每个广告平台<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#attribution-link-tab">生成 AppsFlyer 归因链接</Anchor>。
 3. 将各广告系列中的现有链接替换为 AppsFlyer 归因链接。
+
+<div id="owned-media" />
 
 #### 自有媒体
 
@@ -215,6 +233,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 补充信息
 
 <div id="attributed-migration" />
@@ -222,6 +242,8 @@ x-zendesk:
 <Accordion title="归因迁移">
 
 通过此方式迁移至 AppsFlyer 的设备，其应用内事件和打开（session）数据将按照此前归因工具所上报的媒体渠道，以及相关广告平台的数据保留政策进行记录和展示。
+
+<div id="attributed-device-migration-csv-structure" />
 
 #### 归因设备迁移 CSV 文件结构
 
@@ -259,6 +281,8 @@ x-zendesk:
 <Accordion title="非归因迁移">
 
 通过此方式迁移至 AppsFlyer 的设备，会被记录为自然用户（但不会显示）。这些设备的应用内事件和打开（session）数据，也会被记录并显示为自然量。
+
+<div id="non-attributed-device-migration-csv-file-structure" />
 
 #### 非归因设备迁移 CSV 文件结构
 

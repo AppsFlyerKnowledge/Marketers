@@ -21,19 +21,27 @@ x-zendesk:
 ---
 > 概览：为您的网站应用设置 Snapchat 网络广告集成，通过转换 API 向 Snapchat 发送网络转换信号。
 
+<div id="overview" />
+
 ## 概览
 
 AppsFlyer 支持与 Snapchat Web Ads (`snapweb_int`) 集成，用于网站应用活动，让您直接通过 Snapchat 的转化 API 报告归属和转化数据。Meta可以利用这些数据来优化定向投放、衡量广告效果并打造自定义人群包。
 
 其工作原理如下：当用户点击Snapchat广告并登陆您的网站，然后完成网站事件(例如购买或注册 ) , AppsFlyer通过转换API向Snapchat发送转换信号。Snapchat使用这些数据来优化广告定位和衡量广告活动绩效。
 
+<div id="see-also" />
+
 > 📄 **另请参阅**
 >
 > * <Anchor target="_blank" href="/marketers/zh/docs/web-performance-measurement-overview">AppsFlyer Web 署名 - 概述</Anchor>
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 目前，集成尚不支持通过 Conversions API 发送再参与回传数据。
+
+<div id="prerequisites" />
 
 ### 前期准备
 
@@ -42,12 +50,16 @@ AppsFlyer 支持与 Snapchat Web Ads (`snapweb_int`) 集成，用于网站应用
 * AppsFlyer中设置的网站应用
 * <Anchor target="_blank" href="https://ads.snapchat.com/">Snapchat广告管理</Anchor>器中的企业帐户
 
+<div id="how-to-set-up-snapchat-ads-for-your-website-app" />
+
 ### 如何为您的网站应用设置Snapchat网页广告
 
 设置涉及定义 Snapchat Web Ads 和 AppsFlyer 之间的集成，并在 Snapchat Ads Manager 中配置活动。它包括以下步骤：
 
 * 第二部分：在AppsFlyer中设置Snapchat Web广告对接 （必须完成）
 * 第二部分：在Snapchat Web Ads中设置AppsFlyer对接 （必须完成）
+
+<div id="part-1-set-up-snapchat-ads-integration-in-appsflyer" />
 
 ## 第一部分：在AppsFlyer中设置Snapchat Web广告对接
 
@@ -88,12 +100,16 @@ AppsFlyer 支持与 Snapchat Web Ads (`snapweb_int`) 集成，用于网站应用
 8. 【可选】点击**添加条件**图标，设置事件的<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#带条件的应用内事件回传">映射条件</Anchor>。
 9. 点击**保存对接**。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 如果您设置的是购买事件，请将**包含**列设为**值和收入**。选择任何其他选项将导致回传失败。
 > * 目前，仅购买事件支持包含收入。
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-snapchat-ads" />
 
 ## 第二部分：在Snapchat网页广告中设置AppsFlyer集成
 
@@ -138,11 +154,15 @@ AppsFlyer 支持与 Snapchat Web Ads (`snapweb_int`) 集成，用于网站应用
    https://www.example.com?pid=snapweb_int&c={{campaign.name}}&af_c_id={{campaign.id}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_channel={{site_source_name}}
    ```
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > 用户点击相关广告时，Meta会自动将`ScCid={{ScCid}}`添加到目标网址（ destination URL）。
 
 </Accordion>
+
+<div id="view-web-attribution-data" />
 
 ## 查看 Web 归属数据
 
@@ -155,12 +175,16 @@ AppsFlyer 支持与 Snapchat Web Ads (`snapweb_int`) 集成，用于网站应用
 >
 > 网站应用活动的仪表板报告尚未提供。计划在未来发布一个统一的报告视图，让您可以与其他渠道一起分析网络活动绩效。
 
+<div id="measure-web-attribution-data-with-web-cost" />
+
 ## 用网络成本衡量网络归属数据
 
 要从Snapchat广告、仪表板和<Anchor target="_blank" href="/marketers/zh/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">成本ETL报告</Anchor>中获得网页归属数据和网页成本数据的完整性能视图，请确保您拥有<Anchor target="_blank" href="/marketers/zh/docs/roi360-onboarding-guide#roi360简介">ROI360软件包</Anchor>，并完成以下设置：
 
 1. 通过"**成本**"选项卡或"**成本设置**"页中的`snapchat_int`(不是通过`snapweb_int`)将成本连接到您的网站应用程序。有关如何连接到成本的详细信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/set-up-roi360-cost-api-to-measure-cost-data#启用cost-api">设置ROI360成本API以测量成本数据</Anchor>。
 2. 在登录页 URL 中包含活动 ID(`af_c_id`)。确保 URL 包括完整的活动层次结构，以查看成本、点击和印象，并在最细粒度级别与 Web 归属匹配。
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

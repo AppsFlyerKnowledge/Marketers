@@ -24,6 +24,8 @@ x-zendesk:
 
 <Embed title="SKAN 4转化值操作台（包含锁定窗口功能）" typeOfEmbed="iframe" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
 
+<div id="skan-conversion-studio-basics" />
+
 ## SKAN转化值操作台基础操作指南
 
 在SKAN的归因链路中，iOS设备会在每个衡量窗口结束后发送SKAN回传数据，其中包含最近更新的转化值（conversion value，简称CV）。
@@ -88,6 +90,8 @@ x-zendesk:
   * 面板版式会根据每天UTC时间凌晨时在用的衡量模式自动更新。一般情况下，您可以在UTC时间05:00前看到更新后的版式。
   * 在SKAN 4的自定义（Custom）和解析（Decode）模式下，应用内事件和总收入的自然量数据不可用。
 
+<div id="s2s-principles" />
+
 #### **S2S原理**
 
 可衡量的用户行为可以通过[服务器到服务器（S2S）](/docs/skan-conversion-studio#report-events-by-servertoserver-api) API上报。各个模式的S2S适配情况如下：
@@ -97,6 +101,8 @@ x-zendesk:
 * 【历史版本】收入、转化和互动模式：在发送事件之前，您必须先打开[S2S事件记录](/docs/skan-conversion-studio#report-events-by-servertoserver-api)开关。
 
 </Accordion>
+
+<div id="setting-up-conversion-values-in-skan-conversion-studio" />
 
 ## 在SKAN转化值操作台中设置转化值
 
@@ -110,6 +116,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
   * 广告交互
 
 下文分章节介绍了各种不同的衡量模式。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -207,6 +215,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 
 <Accordion title="【历史版本】固定模式">
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 自2024年6月23日起，固定模式不再对新增应用开放。  AppsFlyer通过自定义模式和SKAN 4模式支持所有相关功能。
@@ -236,6 +246,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 5. 点击**保存**。
 6. 确认您配置的事件能映射到渠道的应用内事件回传中。
 
+<div id="fixed-mode-measurement" />
+
 #### 固定衡量模式
 
 | 衡量模式 | 说明 |
@@ -261,6 +273,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 4. 确认您配置的事件能映射到渠道的应用内事件回传中。
 
 </Accordion>
+
+<div id="measurement-components" />
 
 ## 衡量维度
 
@@ -588,6 +602,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="view-cv-mapping" />
@@ -599,6 +615,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 * 您也可以使用<Anchor target="_blank" href="/marketers/zh/docs/skan-cv-schema-api-for-advertisers">广告主的SKAN CV映射构架API</Anchor>获取CV映射信息。
 
 ![CVmapping.png](https://files.readme.io/b337ac089f70a5eff76ac6a56841b420cff9f4bff7aba8c18acddd04acfd82f6-51911424397585.png)
+
+<div id="csv-mapping-file-columns" />
 
 #### CV映射文件各列说明
 
@@ -638,6 +656,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 
 <Accordion title="自定义模式下CV值完全消耗示例">
 
+<div id="example-1" />
+
 #### 示例 1
 
 | 组成部分 | 说明 |
@@ -646,6 +666,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 | 收入 | <ul><li>通过单个应用内事件上报总体收入</li><li>收入范围：15</li></ul> |
 | 应用内事件 | 无 |
 | 漏斗 | 3个应用内事件 |
+
+<div id="example-2" />
 
 #### 示例 2
 
@@ -656,6 +678,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 | 转化事件 | 1个用于衡量转化的应用内事件，每个事件配有1个范围 |
 | 漏斗 | 无 |
 
+<div id="example-3" />
+
 #### 示例3
 
 | 组成部分 | 说明 |
@@ -664,6 +688,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 | 收入 | <ul><li>通过单个应用内事件上报总体收入</li><li>收入范围：3</li></ul> |
 | 互动事件 | <ul><li>2个用户衡量互动次数的应用内事件</li><li>事件发生次数范围：每个事件配有3个范围</li></ul> |
 | 漏斗 | 无 |
+
+<div id="example-4" />
 
 #### 示例4
 
@@ -694,6 +720,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 * 每个优先级可包含收入范围和/或应用内事件发生次数范围。
 * 范围值：范围中不包含其最小值，但包含最大值。比如在$5-$10这个范围中，不包含5，但包含10。
 
+<div id="measurement-priorities-setting-example" />
+
 #### 优先级设置示例
 
 <table><thead><tr><th>优先级序号</th><th>收入范围</th><th>应用内事件</th></tr></thead><tbody><tr><td>1【最高优先级】</td><td>$5-$10</td><td>send_recommendation</td></tr><tr><td>2</td><td>$5-$10</td><td>--</td></tr><tr><td>3</td><td>$0-$5</td><td>send_recommendation</td></tr><tr><td>4</td><td>$0-$5</td><td>--</td></tr><tr><td>5</td><td>--</td><td>send_recommendation<br/>add_to_cart</td></tr><tr><td>6</td><td>--</td><td>send_recommendation</td></tr><tr><td>7【最低优先级】</td><td>--</td><td>add_to_cart</td></tr><tr><td colspan="3">-- 未设置值</td></tr></tbody></table>
@@ -704,6 +732,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 
 * 用户行为之间以 > 隔开。
 * 括号中的值指用户行为发生后由AppsFlyer判定的优先级。AppsFlyer会根据该优先级来更新应用中的CV。
+
+<div id="user-journey-scenarios" />
 
 #### 用户链路场景
 
@@ -721,9 +751,13 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 
 <Accordion title="【历史版本】固定模式示例">
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 自2024年6月23日起，固定模式不再对新增应用开放。AppsFlyer通过自定义模式和SKAN 4模式支持所有相关功能。
+
+<div id="example-a-revenue-measurement" />
 
 #### 示例A：衡量收益
 
@@ -734,6 +768,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 | 指标选择 | 与收入相关的可用指标<ul><li>激活：20</li><li>收入：$125</li><li>转化：15</li><li>ARPU：$6.25</li><li>ROI：316%</li></ul> |
 | 各报告中的原始数据行数 | <Anchor target="_blank" href="/marketers/zh/docs/skan-raw-data-reports">您可以通过Data Locker拉取原始数据报告</Anchor><ul><li>设备回传：20行</li><li>激活：20行</li><li>应用内事件：15行请注意：多次购买的用户在报告中仅以1行显示，收入为10美元。</li></ul> |
 | 开发侧注意事项 | 带着金额的事件会被记录到 |
+
+<div id="example-b-conversion-measurement" />
 
 #### 示例B：衡量转化
 
@@ -758,6 +794,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
         * 5个用户（A-E）激活应用
         * 他们完成了0-3个不同的应用内事件，具体如下表所示
         * 广告平台通过API上报的成本为30美元。
+
+        <div id="inapp-events-performed-by-users" />
 
         #### 各用户完成的应用内事件
 
@@ -786,6 +824,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
         指标选择
       </td>
       <td>
+        <div id="inapp-related-metrics-available" />
+
         #### 与应用内事件相关的可用指标
 
         | 指标 | 应用 | 事件1 | 事件2 | 事件3 |
@@ -822,6 +862,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
   </tbody>
 </Table>
 
+<div id="example-c-engagement-measurement" />
+
 #### 示例C：衡量事件
 
 <Table>
@@ -843,6 +885,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
       </td>
       <td>
         5个用户激活应用后分别打开应用若干次，具体如下：
+
+        <div id="app-opens" />
 
         #### App opens（应用打开）
 
@@ -925,6 +969,8 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 
 </Accordion>
 
+<div id="additional-procedures" />
+
 ## 其他操作
 
 <div id="change-skan-measurement-mode" />
@@ -994,6 +1040,8 @@ SDK和<Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-a
 
 <Accordion title="在固定衡量模式中添加SSOT">
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 自2024年6月23日起，固定模式不再对新增应用开放。AppsFlyer通过自定义模式和SKAN 4模式支持所有相关功能。
@@ -1025,6 +1073,8 @@ SDK和<Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-a
      **请注意**！必须符合以下条件才能够使用该开关：
      * 进行操作之前，相关应用已保存在转化值操作台的SKAN 4模式中
      * 进行操作的用户具有编辑权限
+
+<div id="examples" />
 
 #### 示例
 
@@ -1072,6 +1122,8 @@ SDK和<Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-a
 <Accordion title="支持匿名用户">
 
 打开**支持匿名用户**的开关后，可在保护<Anchor target="_blank" href="/marketers/zh/docs/apply-privacy-preserving-sdk-methods#用户信息匿名化">匿名用户</Anchor>隐私的同时，确保其SKAN转化值得到准确的更新。
+
+<div id="important-1" />
 
 > 🚧 **重要提示！**
 >

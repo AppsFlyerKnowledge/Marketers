@@ -23,6 +23,10 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="setting-up-your-campaign-on-wechat" />
+
+<div id="introduction" />
+
 ## 简介
 
 
@@ -37,7 +41,7 @@ x-zendesk:
 
 
 
-<span id="setting-up-wechat-campaign-as-an-agency"></span>请先进入**Partner Marketplace平台**搜索该渠道，然后前往<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations">活跃对接</Anchor>页面完成其设置操作。
+<span id="setting-up-wechat-on-appsflyer"></span><span id="setting-up-wechat-campaign-as-an-agency"></span>请先进入**Partner Marketplace平台**搜索该渠道，然后前往<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations">活跃对接</Anchor>页面完成其设置操作。
 
 > 📘 **注意**
 >
@@ -67,20 +71,28 @@ x-zendesk:
 
 下文说明了对接选项卡中所包含各部分内容。
 
+<div id="activate-partner" />
+
 ### 启用渠道
 
 **第一次访问**时，需要打开***激活合作伙伴***开关以开启对接选项卡内的配置参数。只要仍与该合作伙伴合作，这个开关必须为ON。   
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 作为“全安装”网络，Liftoff希望获取所有渠道（包括自然渠道）新增安装的数据回传。
+
+<div id="general-settings" />
 
 ### 通用设置
 
 **合作伙伴 ID**
 
 <Image alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
+
+<div id="default-postbacks" />
 
 ### 默认回传
 
@@ -90,6 +102,8 @@ AppsFlyer可以在用户安装和再互动后自动给AD\_NETWORK发送回传。
 
 若选择**仅该合作渠道**，则仅回传由ironSource带来的用户所完成的事件。  
 若选择**所有媒体渠道，包括自然流量**：将所有用户的相关事件数据都上报给ironSource。
+
+<div id="in-app-events-settings" />
 
 ### 应用内事件设置
 
@@ -120,6 +134,8 @@ AppsFlyer可以在用户安装和再互动后自动给AD\_NETWORK发送回传。
 
 该选项卡可分成几个不同部分：
 
+<div id="attribution-link-parameters" />
+
 ### 归因链接参数
 
 在本节中, 选择要添加到归因链接中的参数。
@@ -141,6 +157,8 @@ AppsFlyer可以在用户安装和再互动后自动给AD\_NETWORK发送回传。
 
 只需在新参数框中输入, 即可将任何其他参数添加到归因链接中。更多详情, 请参阅 **<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">AppsFlyer 归因链接结构和参数</Anchor>。**
 
+<div id="click-through-attribution" />
+
 ### 点击型归因
 
 可以拖曳这个滑块来设置**点击到安装时间的最长时间**。只有发生在归因窗口期内的安装（首次启动）才有可能会被归因给Twitter。
@@ -150,6 +168,8 @@ AppsFlyer可以在用户安装和再互动后自动给AD\_NETWORK发送回传。
 点击查看更多关于<Anchor target="_blank" href="/marketers/zh/docs/set-up-lookback-windows">点击归因窗口</Anchor>的信息。
 
 [![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)
+
+<div id="click-attribution-link" />
 
 ### 点击归因链接
 

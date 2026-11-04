@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：概要：本文介绍了使用Google对接时如何与AppsFlyer共享您iOS应用的SKAN回传数据。**
 
+<div id="get-skan-postback-data-from-google-ads" />
+
 ## 从Google Ads拉取SKAN回传数据
 
 如果您与多个广告平台合作，建议您在AppsFlyer后台设置您与这些渠道的SKAN互通，这样您不仅能获得所有平台的SKAN效果指标，还可以利用AppsFlyer平台上的其他可用指标（如成本等）来扩充这些数据。
@@ -40,6 +42,8 @@ x-zendesk:
 
 * 汇总报告和面板会回滚更新。
 * <Anchor target="_blank" href="/marketers/zh/docs/skan-raw-data-reports">原始数据报告</Anchor>不会回滚。Data Locker中的文件夹按Google将数据发送到AppsFlyer的日期（即数据接收日期）命名。
+
+<div id="set-up-interoperation" />
 
 ## 设置SKAN互通
 
@@ -90,6 +94,8 @@ x-zendesk:
 11. 详情请见[衡量数据差异说明](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads)。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 
@@ -145,6 +151,8 @@ x-zendesk:
 | <span id="agencies"></span>代理 | 如果代理商在广告主的Google Ads账户中具有管理员用户的身份，那么他们可以直接代表广告主完成本文所述的SKAN互通操作，广告主则无需再登录到其Google Ads账号。广告主账户会对代理登录进行标记。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

@@ -21,21 +21,29 @@ x-zendesk:
 ---
 > **概要：** 学习如何计算每日和每月活跃用户，以获取有关您活动的有价值见解
 
+<div id="overview" />
+
 ## 概览
 
 每日活跃用户（DAU）和每月活跃用户（MAU）是理解应用参与度和整体用户行为的关键指标。它们提供了有关您的活跃用户基础的有价值见解，包括用户粘性、活动表现和随时间的增长趋势。
 
 本文解释了如何使用两个数据锁定原始数据表中的查询来计算 DAU 和 MAU，这些表代表用户获取和重定向流量：`sessions`和`sessions_retargeting`表。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 从 2025 年 2 月开始，AppsFlyer 中的活动仪表板默认显示统一（UA 和重定向）数据。您可能会注意到原始数据和仪表板数字之间存在轻微差异，原因是 <Anchor target="_blank" href="/marketers/zh/docs/activity-metrics-in-my-dashboards#特点与局限性">批准的算法调整</Anchor>。
+
+<div id="querying-for-active-unique-users" />
 
 ### 查询活跃的独立用户
 
 要计算独立用户，请在查询中使用 `advertising_id` 作为主要标识符。如果 `advertising_id` 不可用，请用 `appsflyer_id` 替代。此方法仅适用于配置为 <Anchor target="_blank" href="/marketers/zh/docs/measure-reinstalls#attributed-to-the-first-install">首次安装模式</Anchor> 的应用。
 
 对于不使用此模式的应用，我们建议改用 `count(distinct appsflyer_id)`。
+
+<div id="calculate-daily-active-users-dau" />
 
 ## 计算每日活跃用户（DAU）
 
@@ -123,6 +131,8 @@ FROM all_sessions;
 ```
 
 </Accordion>
+
+<div id="calculate-monthly-active-users-mau" />
 
 ## **计算月活跃用户 (MAU)**
 

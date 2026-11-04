@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** 将AppsFlyer与Amplitude集成，以共享用户归因数据和事件分析，从而更好地洞察用户参与度、留存率和收入。根据您的用例和分析需求，在**两个集成版本——V1或V2**之间进行选择。
 
+<div id="about-the-integration" />
+
 ## 关于集成
 
 Amplitude是AppsFlyer的集成合作伙伴，是一个产品分析平台，供产品、增长和营销团队使用，以了解用户在移动和网络上的行为。该集成允许AppsFlyer在安装后将关键事件数据发送到Amplitude，从而实现全面的用户级分析。
@@ -43,10 +45,14 @@ Amplitude是AppsFlyer的集成合作伙伴，是一个产品分析平台，供�
 | **V1** | Attribution API | 广告ID（AdID） | 仅激活 |
 | **V2** | HTTP V2 API | `user_id`, `device_id`（回退逻辑） | 安装和应用内事件 |
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 选择 Amplitude V1 或 V2 集成。**请勿同时使用**。同时使用两个版本可能会导致重复事件发送到 Amplitude。
 > * 某些媒体来源限制与第三方共享数据。即使已配置，受限事件的回传也不会发送给此合作伙伴。
+
+<div id="prerequisites" />
 
 ## 前期准备
 
@@ -57,6 +63,8 @@ Amplitude是AppsFlyer的集成合作伙伴，是一个产品分析平台，供�
 * 确保您避免从 Amplitude SDK 和 AppsFlyer 同时发送相同的事件，以防止重复。
 * 请查看 Amplitude V2 集成的额外前提条件。
 
+<div id="additional-prerequisites-for-the-amplitude-v2-integration" />
+
 ### Amplitude V2 集成的额外前提条件
 
 V2 集成需要设置：
@@ -64,6 +72,8 @@ V2 集成需要设置：
 * [Amplitude 设备 ID](/docs/amplitude-integration-with-appsflyer#amplitude-设备-id)
 * [Customer user ID](/docs/amplitude-integration-with-appsflyer#customer-user-id)
 * [Amplitude 会话 ID](/docs/amplitude-integration-with-appsflyer#amplitude-会话-id)
+
+<div id="amplitude-device-id" />
 
 #### Amplitude 设备 ID
 
@@ -167,6 +177,8 @@ appsFlyerSdk.setAdditionalData(data);
 用于设置客户用户ID（CUID）。这是一个通常在用户注册期间由应用所有者生成和设置的唯一标识符。  
 由应用所有者在用户注册期间设置。<Anchor target="_blank" href="/marketers/zh/docs/customer-user-id-field-cuid?utm_source=chatgpt.com">详情请见此处说明。</Anchor>
 
+<div id="amplitude-session-id" />
+
 #### Amplitude 会话 ID
 
 设置 Amplitude 会话 ID 并将其传递给 AppsFlyer（可选）。<Anchor target="_blank" href="https://amplitude.com/docs/data/sources/instrument-track-sessions">详情请见此处说明。</Anchor>
@@ -264,6 +276,8 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="set-up-the-integration" />
+
 ## 如需设置对接：
 
 **如需设置对接：**
@@ -293,12 +307,18 @@ appsFlyerSdk.setAdditionalData(data);
 
 下文说明了对接选项卡中所包含各部分内容。
 
+<div id="activate-partner" />
+
 ### 启用渠道
 
 请在首次访问该页面时打开**启用该渠道**开关，然后就可以设置对接了。在您与该渠道合作期间，请确保该开关总是处于打开状态。  
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">渠道启用说明</Anchor>。
 
+<div id="general-settings" />
+
 ### 通用设置
+
+<div id="advanced-data-sharing" />
 
 #### 高级数据共享（Advanced data sharing）
 
@@ -343,9 +363,13 @@ Amplitude 通过唯一的 API 密钥与 AppsFlyer 连接。如果您还没有，
    <Image alt="" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />Amplitude
 5. 继续在 AppsFlyer 仪表板中配置 Amplitude。
 
+<div id="default-postbacks" />
+
 ### 默认回传
 
 AppsFlyer 可以在用户安装后自动向 Amplitude 发送回调。使用此部分定义每个事件的回调发送用户的来源。了解更多关于 <Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#default-postbacks">默认回调</Anchor> 的信息。
+
+<div id="in-app-event-settings" />
 
 ### 应用内事件设置
 
@@ -360,6 +384,8 @@ AppsFlyer 可以在用户安装后自动向 Amplitude 发送回调。使用此�
 * Campaign name
 
 向 iOS 设备发送 IDFA 需遵循 <Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">用户的 ATT 同意和高级隐私设置</Anchor>。
+
+<div id="in-app-event-postbacks" />
 
 ### 应用内事件回传
 
@@ -399,15 +425,21 @@ Amplitude 不提供权限。
 
 </Accordion>
 
+<div id="viewing-attribution-data-in-the-amplitude-console" />
+
 ## 在 Amplitude 控制台查看归因数据
 
 从 AppsFlyer 发送到 Amplitude 的归因数据在您的仪表板中显示为以 **[AppsFlyer]** 为前缀的事件和属性：
 
 ![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
 
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > 在某些情况下，Amplitude 将来自 AppsFlyer 的数据显示为 "已阻止"。如果您在 Amplitude 中看不到 AppsFlyer 数据，请检查它是否被定义为阻止事件。![amplitude-blocked-data.png](https://files.readme.io/5ddc286461bdd74abb3922fb97dc38e56e03e1475e255116ffaaa07844e6c0cc-51911907937553.png)
+
+<div id="sending-amplitude-events-to-appsflyer" />
 
 ## 将 Amplitude 事件发送到 AppsFlyer
 

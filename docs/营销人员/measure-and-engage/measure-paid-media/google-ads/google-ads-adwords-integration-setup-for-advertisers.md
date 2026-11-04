@@ -33,6 +33,8 @@ x-zendesk:
 
 在 AppsFlyer 中设置 Google Ads 集成，以测量和归因来自您的 Google Ads 活动的安装和应用内事件。在 AppsFlyer 中，此集成被称为 `googleadwords_int`，归因结果在媒体来源 `googleadwords_int` 下报告。
 
+<div id="google-ads-attribution-flow-with-advanced-data-sharing" />
+
 ## Google Ads 归因流程与高级数据共享
 
 [![Google ads attribution flow.png](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)
@@ -43,6 +45,8 @@ x-zendesk:
 4. AppsFlyer 使用其自己的概率模型验证非确定性声明。仅接受经过验证的声明。
 5. 验证后，Google 声明（如果被接受）进入归因决策步骤，AppsFlyer 将其与其他潜在的归因候选者（例如，其他 SRN、基于点击的网络、自然流量）进行比较。安装根据 AppsFlyer 的归因逻辑和优先规则归因于获胜来源。
 6. 如果声明被接受并选为获胜候选，安装将归因于 Google。在原始数据报告中，确定性声明将显示 <Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary#attribution::cecc12c5">匹配类型</Anchor> 为 `srn`，而非确定性声明将显示匹配类型为 “`probabilistic`”。
+
+<div id="configuring-google-ads-attribution-for-advertisers" />
 
 ## 广告主的Google Ads归因配置指南
 
@@ -121,6 +125,8 @@ x-zendesk:
 
    不需要单独的回顾窗口配置，因为重新安装归因使用您安装归因设置中的值。有关更多信息，请参见 <Anchor target="_blank" href="/marketers/zh/docs/measure-reinstalls">衡量重新安装</Anchor>。
 
+   <div id="important" />
+
    > 🚧 **重要提示！**
    >
    > 重装激活的转化数据在Google Ads控制面板上**记录为session\_start** ，而AppsFlyer则会对其归因并在面板上将其记录为再归因。
@@ -143,6 +149,8 @@ x-zendesk:
 14. 点击**Connect Google Ads**按钮并登录到您的Google帐户，这样您就能在AppsFlyer上查看所有的Google Ads投放成本了。 更多详情, 请<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-cost-and-ad-revenue">点击此处</Anchor>
 15. 点击**保存**。
 
+<div id="stop" />
+
 > ❗️ **重要提示！**
 >
 > * 如需在Google Ads中查看AppsFlyer归因到的激活和再互动数据，必须导入以下AppsFlyer事件：
@@ -156,6 +164,8 @@ x-zendesk:
 
 <Accordion title="第4步：导入应用转化（必须完成）">
 
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > 您必须打开应用并触发需要映射的应用内事件，才能让**Google Ads**记录新增的转化。如需测试iOS应用，则必须收集IDFA才能看到该事件。添加事件转化后最多需等待6小时才能生效。添加完毕后，您就可以导入这些事件。导入后，新增转化的状态就会从“No recent conversion”（最近无转化）变为“recording conversion”（正在记录转化）。
@@ -167,6 +177,8 @@ x-zendesk:
 * 将 **first\_open** 事件设置为所有应用的转化事件（安装测量所需）。
 * 如果您计划测量与 Google 的重新参与，请将 **session\_start** 事件设置为转化事件。
 * 对您希望与 Google 测量的每个应用内事件重复此过程。
+
+  <div id="note" />
 
   > 📘 **注意**
   >
@@ -190,6 +202,8 @@ x-zendesk:
 [![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
 
 1. 进入**对接**选项卡，向下滚动到**应用内事件回传**部分。
+
+   <div id="note-1" />
 
    > 📘 **注意**
    >
@@ -217,9 +231,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > Google Ads API对接默认包含Google Ads再营销功能，因此您在完成该对接并向Google Ads发送事件后，就可以直接在Google Ads中创建再营销受众列表，而无需再进行任何其他对接。
+
+<div id="granting-permissions-to-google-ads-team-members" />
 
 ## 如何为Google Ads团队成员开放权限
 
@@ -238,15 +256,21 @@ x-zendesk:
 
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#permissions-tab">如何为广告平台授权</Anchor> 。
 
+<div id="enabling-google-ads-attribution-for-agencies" />
+
 ## 代理如何启用Google Ads归因
 
 AppsFlyer支持Google Ads的代理配置，但广告主和代理必须各自有单独的Google Ads帐户，这样AppsFlyer才能对数据进行正确的归因。有关详细信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-agencies">Google Ads 集成的代理配置</Anchor>。
+
+<div id="running-with-multiple-google-ads-accounts" />
 
 ## 多个Google Ads帐号同时投放
 
 如果您同时使用多个Google Ads帐户推广同一个应用，AppsFlyer也能衡量其投放效果。您只需要在Google Ads中共享Link ID并将事件导入各个Google Ads帐户中即可。
 
 有关更多详细信息，请参阅<Anchor target="_blank" href="https://support.google.com/google-ads/answer/7365001">Google 文档，了解如何共享您的 Google Ads 链接 ID</Anchor> 。
+
+<div id="ios-app-campaigns" />
 
 ## iOS应用广告
 
@@ -265,6 +289,8 @@ ATT实行后，由于Google iOS应用不使用ATT弹窗，因此Google Ads产品
 * 任何 iOS ACI 活动都可以通过 ICM 进行归因。当设备 ID 在广告商应用、发布者应用或两者中都不可用时适用。
 * 谷歌目前仅声称 iOS 上的点击。它不声称展示次数。
 
+<div id="using-deferred-deep-linking-in-app-campaigns" />
+
 ## 在应用广告中使用延迟深度链接
 
 **深度链接的含义和作用原理**
@@ -282,6 +308,10 @@ ATT实行后，由于Google iOS应用不使用ATT弹窗，因此Google Ads产品
 3. 从AppsFlyer后台进入**配置** > **活跃对接**。 选择**Google Ads (Adwords)**。
 4. 在**对接**选项卡中，启用**Google Ads的延迟深度链接**。
 5. 点击**保存对接**。
+
+<div id="populate-the-channel-parameter" />
+
+<div id="google-ads-parameter-mapping" />
 
 ## Google Ads参数映射
 
@@ -308,11 +338,17 @@ Google Ads不发送`Channel(af_channel)`参数。AppsFlyer会按Google Ads侧的
 
 有关 Google 响应中可用的广告类型的更多信息，请参阅<Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">Google 请求和响应规范</Anchor>。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > 当谷歌通过概率归因 (ICM) 归因安装时，谷歌不会与 AppsFlyer 分享 `network_type`。因此，网络类型缺失，渠道值为 `ACI_`（没有后缀）。
 
+<div id="campaign-type-app-campaigns" />
+
 ### 广告系列类型：应用广告系列
+
+<div id="changes-to-campaign-names-by-google-ads" />
 
 #### Google Ads的广告系列名称变更
 
@@ -324,15 +360,21 @@ Google Ads不发送`Channel(af_channel)`参数。AppsFlyer会按Google Ads侧的
 
 **请注意：** 广告系列名称类型取决于点击或展示日期而非激活日期。
 
+<div id="engaged-view-parameter-in-raw-data-reports" />
+
 ### 原始数据报告中的engaged view参数
 
 Engaged view（深度观看）是指用户观看时间超过10秒的视频广告展示，它的归因优先级与点击相同。 在Android设备上，“深度观看”会在原始数据报表中`Engagement Type`和`Sub Param 5`参数下显示为`engaged_view`。   
 当“深度观看”发生在 AppsFlyer 中定义的点击回溯窗口期内（最长为 3 天），就会被计入归因。
 
+<div id="important-2" />
+
 > 🚧 **重要提示！**
 >
 > * 谷歌是一个SRN (自归因渠道)。有关这些网络归因流程如何运作的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns">自我报告网络 (SRN)</Anchor> 。
 > * 也就是说，AppsFlyer可以呈现Google提供的所有投放信息。广告类型（搜索、视频、展示）和相关信息取决于Google。更多信息，请参阅<Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">Google 请求和响应规范</Anchor>。
+
+<div id="optimize-google-ads-campaigns-for-conversions-without-device-id" />
 
 ## 没有设备ID时如何优化Google Ads投放
 
@@ -348,6 +390,8 @@ iOS14.5+和Android 12+上线后，Google Ads推出了多种新的标识符，以
 在谷歌广告和 AppsFlyer 中，广告商可以接收没有设备 ID 的流量的活动级数据，用于重新参与、安装和重新归因活动。然而，谷歌不共享广告组和广告级数据。  
 **这个环节无需广告主进行任何操作。**
 
+<div id="data-visibility-by-operating-system" />
+
 ### 分操作系统的数据可用性
 
 **安卓应用：**
@@ -358,6 +402,8 @@ iOS14.5+和Android 12+上线后，Google Ads推出了多种新的标识符，以
 
 对于没有设备ID的流量，广告主可以在Google Ads和AppsFlyer后台看到完整的再营销投放数据。
 
+<div id="advertising-without-the-firebase-sdk" />
+
 ## 没有 Firebase SDK 的广告
 
 在未实现 Firebase SDK 的情况下使用 Google Ads 广告时，适用以下限制。
@@ -366,6 +412,8 @@ iOS14.5+和Android 12+上线后，Google Ads推出了多种新的标识符，以
 | --- | --- |
 | 不支持 tROAS | tROAS（目标广告支出回报）优化仅在使用 Firebase SDK 收入事件时可用。AppsFlyer 收入事件以及来自所有其他 MMP 的事件不符合此优化的资格。 |
 | 不支持受众排除 | 广告主只能在广告活动针对 Firebase SDK 事件优化时排除用户，而不是 MMP 事件。 |
+
+<div id="google-probabilistic-attribution-icm-traits-and-limitations" />
 
 ## 谷歌概率归因 (ICM) 特征和限制
 
@@ -379,6 +427,8 @@ iOS14.5+和Android 12+上线后，Google Ads推出了多种新的标识符，以
 | Attributed touch time | 谷歌概率声明的时间戳四舍五入到15分钟的间隔（00:00，00:15，00:30等） |
 | 掩盖IP | 使用 IP 地址掩码可能会影响 ICM 性能。谷歌建议禁用 IP 地址掩码，因为它可能会影响谷歌广告的衡量和效果。请参阅<Anchor target="_blank" href="/marketers/zh/docs/apply-ip-masking-to-user-data#掩盖ip">“将 IP 地址掩码应用于用户数据”</Anchor> 。 |
 | IDFV | Google 要求在应用安装、应用打开和应用内事件中发送<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-knowledge-base-glossary#idfv">IDFV</Anchor> （如果可用），以最大限度地提高 ICM 性能。 |
+
+<div id="h_01HDP0SBEE75MAT4A4S9E7Y7FF" />
 
 > 📄 **相关文档**
 >

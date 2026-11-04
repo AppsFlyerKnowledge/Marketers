@@ -24,7 +24,7 @@ x-zendesk:
 > **概要：** 概览：通过为您的娱乐应用程序记录这些建议的应用内事件，评估用户在整个用户路径中的质量。
 
 
-<span id="entertainment"></span>随着用户对点播内容的需求不断增长，娱乐应用市场的竞争变得异常激烈。我们建议记录的典型事件有用户订阅、流媒体内容以及下载和保存内容。
+<span id="-entertainment"></span><span id="entertainment"></span>随着用户对点播内容的需求不断增长，娱乐应用市场的竞争变得异常激烈。我们建议记录的典型事件有用户订阅、流媒体内容以及下载和保存内容。
 
 记录事件可以帮助您确定：
 
@@ -38,11 +38,15 @@ x-zendesk:
 * 苹果电视 (tvOS)
 * Amazon Fire TV
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 如需详细的开发人员指南，请在**AppsFlyer开发者资源中心**查找<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">。</Anchor>
 >
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -109,6 +113,8 @@ x-zendesk:
 | trial\_method | 激活试用的方式 | 免费通过新手机，免费通过运营商、促销活动、优惠券代码 |
 | trial\_method\_identifier | 试用方式的标识符 | 运营商名称，例如**Vodafone**<br /><br />优惠券代码，例如**TRA123** |
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 如果您要让这个事件对应到Meta ads的StartTrial（开始试用）事件，并关联收入，请把参数设为af\_price，而不是af\_revenue。
@@ -145,6 +151,8 @@ x-zendesk:
 | expiration\_date | 订阅的到期日期 | 2018/07/18 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

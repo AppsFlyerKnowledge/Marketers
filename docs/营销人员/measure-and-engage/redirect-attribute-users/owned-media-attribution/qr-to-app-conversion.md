@@ -26,6 +26,8 @@ x-zendesk:
 
 ![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
 
+<div id="converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users" />
+
 ## 引导移动端、非移动端和线下流量转化为移动端应用用户
 
 在投放到PC端、电视、CTV或线下的广告中发布通过OneLink生成的二维码，这类推广方式包括店内陈列、宣传手册、产品包装等，具有下列优势：
@@ -41,6 +43,8 @@ x-zendesk:
 <div id="qr-to-app-conversion" />
 
 <Accordion title="二维码到应用的转化">
+
+<div id="manual-qr-code-setup" />
 
 #### 二维码的手动设置方式
 

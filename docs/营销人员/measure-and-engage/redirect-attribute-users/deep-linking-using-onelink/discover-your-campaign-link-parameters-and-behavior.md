@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **概要：** 通过解析AppsFlyer广告链接中所包含的参数，了解该链接可实现的用户体验和链接行为。
 
+<div id="about-link-discovery" />
+
 ## 关于链接解析
 
 链接解析（Link Discovery）功能可帮助您查看AppsFlyer广告链接的相关信息，包括链接参数以及可实现的用户体验。
+
+<div id="benefits" />
 
 ### 优势
 
@@ -36,6 +40,8 @@ x-zendesk:
 * 排查反常的链接行为。
 * 了解归因参数，更有针对性地查看面板数据。
 
+<div id="information-available-via-link-discovery" />
+
 ### 链接解析（Link Discovery）页面中的可用信息
 
 您可以通过链接解析（Link Discovery）页面查看某条具体链接的下列信息：
@@ -46,12 +52,16 @@ x-zendesk:
 * **功能**：该链接中配置的各种功能，如再营销、深度链接、社交媒体预览以及社交媒体落地页等。
 * **跳转**：简要说明该链接的跳转逻辑，即如何根据用户的设备、操作平台即相关应用激活状态等跳转到对应的终点。
 
+<div id="using-link-discovery" />
+
 ## 链接解析（Link Discovery）的用法
 
 **使用链接解析（Link Discovery）页面获取具体链接信息的方法如下：**
 
 1. 从AppsFlyer后台的侧边栏中选择**互动** > **链接解析**。
 2. 输入链接，并点击**解析**。
+
+<div id="specifications-and-limitations" />
 
 ## 特点与局限性
 

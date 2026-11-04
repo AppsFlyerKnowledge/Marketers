@@ -28,9 +28,13 @@ x-zendesk:
 ---
 > **概要：** 概要：您可以使用CUID对同一个用户通过不同设备、渠道或流量入口完成的事件进行统一衡量。
 
+<div id="what-is-cuid" />
+
 ## **CUID的定义**
 
 客户用户ID（CUID）是一种具有唯一性的用户标识符。该标识符通常由应用所有者（广告主）在用户完成注册时生成并设置。广告主能依据CUID将不同设备中的用户行为串联起来，形成完整的用户链路。
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -41,6 +45,8 @@ x-zendesk:
 > * 如果该应用的用户在不同设备（手机、平板、电视、PC端）上完成应用内购买，该应用的广告主就可以使用CUID将这些购买事件关联到同一个用户，集中查看。
 > * 如果用户在多个平台（PC端、移动端、电视）上安装了同一个游戏，可使用CUID对其使用情况进行跨平台共享，从而对用户体验形成一体化的理解。
 
+<div id="setting-the-cuid" />
+
 ## **设置CUID**
 
 建议在SDK初始化流程中尽早设置CUID。CUID设置得越早，能关联到CUID的事件就越多。
@@ -50,6 +56,8 @@ x-zendesk:
 
 只有在CUID设置完毕后发生的事件才能关联到CUID。
 
+<div id="associate-the-cuid-with-the-install-event" />
+
 ### **将激活关联到CUID**
 
 如果您需要将激活关联到CUID，就必须在调用`start`startstart之前完成CUID的设置。
@@ -58,15 +66,21 @@ x-zendesk:
 
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/basic-sdk-integration-guide#选择启动sdk的类class">在合适的类（Class）中启动SDK</Anchor>。
 
+<div id="if-the-sdk-starts-in-the-application-class" />
+
 #### 在Application类中启动SDK
 
 该方法可将SDK置于等待模式，等到CUID设置完毕后启动。
 
 请注意： 请注意：如果CUID设置失败，SDK会一直处于等待模式，不发送任何事件。
 
+<div id="if-the-sdk-starts-in-an-activity-class" />
+
 #### 在Activity类中启动SDK
 
 如果您想要在`Activity`ActivityActivity类中启动SDK时将CUID关联到激活，无需延迟发送激活，
+
+<div id="developer-instructions" />
 
 #### 开发人员相关说明
 
@@ -81,6 +95,8 @@ x-zendesk:
 
 * 如果在`start`startstart之后调用customerUserId，则只有在CUID设置完毕之后发生的事件会关联到CUID
 
+<div id="developer-instructions-1" />
+
 #### 开发人员相关说明
 
 让您的开发人员参考开发者资源中心（Dev Hub）中的[客户用户ID（Customer User ID）设置说明](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#setting-the-customer-user-id)文档。
@@ -88,6 +104,8 @@ x-zendesk:
 </Tab>
 
 <Tab title="Unity">
+
+<div id="developer-instructions-2" />
 
 #### 开发人员相关说明
 
@@ -97,12 +115,16 @@ x-zendesk:
 
 <Tab title="React Native">
 
+<div id="developer-instructions-3" />
+
 #### 开发人员相关说明
 
 让您的开发人员参考开发者资源中心（Dev Hub）中的[setCustomerUserId](https://dev.appsflyer.com/hc/docs/rn_api#setcustomeruserid) API说明。
 
 </Tab>
 </Tabs>
+
+<div id="cuid-and-privacy" />
 
 ## **CUID与隐私保护**
 
@@ -111,6 +133,8 @@ AppsFlyer重视并尊重您用户的隐私，因此我们[不允许收集敏感�
 为了确保用户的隐私不受侵犯，在设计CUID时切勿涉及任何能直接识别用户身份的信息。这类信息包括社保号码和身份证号码等。
 
 此外，如果CUID中包含用户的邮箱地址或电话号码，请务必确保这些信息在发送到AppsFlyer时已进行哈希加密，禁止向AppsFlyer发送带有未哈希的个人数据的CUID。
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

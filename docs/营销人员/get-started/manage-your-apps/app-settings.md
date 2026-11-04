@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** 了解应用设置如何影响各媒体渠道的应用归因和数据分析。
 
+<div id="app-settings" />
+
 ## 应用设置
 
 **权限：**
@@ -39,9 +41,13 @@ x-zendesk:
 2. 在「应用设置」页面查看相关配置，并根据需要进行修改。
 3. 点击**保存设置**。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 您也可以一次性修改多个应用的部分设置，无需逐一操作。对于支持批量修改的设置，请查找设置项旁边的**应用于其他应用**按钮。了解详情，请参阅<Anchor target="_blank" href="/marketers/zh/docs/apply-settings-to-multiple-apps-at-once">一次性将设置应用于多个应用</Anchor>。
+
+<div id="general-app-settings" />
 
 ### 常规应用设置
 
@@ -145,6 +151,8 @@ x-zendesk:
           * 添加新应用时，需要指定应用货币。
         * 即将支持一次性修改多个应用的此项设置。了解详情，请参阅<Anchor target="_blank" href="/marketers/zh/docs/apply-settings-to-multiple-apps-at-once">一次性将设置应用于多个应用</Anchor>。
 
+        <div id="reporting-tools-impacted-by-app-currency" />
+
         #### 应用货币对报表工具的影响
 
         | 报表工具 | 可用货币选项 |
@@ -160,7 +168,11 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="attribution-settings" />
+
 ### 归因设置
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -175,6 +187,8 @@ x-zendesk:
 | <span id="organic-search-seo-mobile-app-attribution"></span>SEO（自然搜索）和 AEO 移动应用再互动归因 | 相关说明请参阅<Anchor target="_blank" href="/marketers/zh/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">自然搜索归因</Anchor>。<br /><br />**启用 SEO/AEO 归因：**<ul><li>在 AppsFlyer 侧边栏中，依次选择**设置** > **应用设置**，开启**SEO（自然搜索）和 AEO 移动应用再互动归因**。</li></ul>您也可以一次性修改多个应用的此项设置。了解详情，请参阅<Anchor target="_blank" href="/marketers/zh/docs/apply-settings-to-multiple-apps-at-once">一次性将设置应用于多个应用</Anchor>。 |
 | <span id="uninstall-measurement"></span>卸载衡量 | <Anchor target="_blank" href="/marketers/zh/docs/measure-uninstalls">卸载衡量</Anchor>与「卸载衡量」开启期间发生的安装相关联。<br /><br />此设置仅适用于 iOS 和 Android 应用。<br /><br />**启用卸载衡量：**<ol><li>按操作系统分别完成以下配置：<ul><li>**iOS：** 实现了iOS 卸载归因功能的应用，需要在此处上传 P12 证书。</li><li>**Android：** 应用需要在此处配置 Firebase/GCM 服务器密钥，以支持Android 卸载归因。</li></ul></li><li>开启**卸载衡量**。</li><li>点击**保存设置**。</li></ol>**停止卸载衡量：**<ol><li>关闭**卸载衡量**。</li><li>点击**保存设置**。</li></ol>即将支持一次性修改多个应用的此项设置。了解详情，请参阅<Anchor target="_blank" href="/marketers/zh/docs/apply-settings-to-multiple-apps-at-once">一次性将设置应用于多个应用</Anchor>。 |
 
+<div id="advanced-settings" />
+
 ### 高级设置
 
 | 设置项 | 说明 |
@@ -184,6 +198,8 @@ x-zendesk:
 | <span id="ios-103-redirect-fallback"></span>iOS 10.3 跳转回退机制 | （已弃用）适用于 iOS 10.3 及以上版本。我们已简化 iOS 用户的跳转流程，该参数目前已不再使用。详情请参阅<Anchor target="_blank" href="/marketers/zh/docs/uri-scheme-fallback-for-ios">iOS 跳转</Anchor>。<br /><br />此选项仅适用于 iOS 应用。 |
 | <span id="change-app-name"></span>修改应用名称 | <ul><li>设置应用名称，该名称将显示在面板及数据报表中。如果同一应用存在多个版本（例如因区域分发需求而设置的不同版本），此设置会非常实用。</li><li>此修改仅影响应用的显示名称。用于在调用 AppsFlyer 各类 API 时识别应用的应用 ID **不会发生变化**。</li><li>名称长度上限为 50 个字符。</li></ul> |
 | <span id="outofstore-app-url"></span>应用商店外下载链接 | <ul><li>设置应用下载 URL，该链接将作为与该应用关联的归因链接的默认跳转目的地。</li><li>对于设置为「应用商店外应用」的 Android 应用，此字段为必填项。</li><li>设置完成后，该 URL 将在约 1 小时内生效，成为默认跳转目的地。</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **另请参阅**
 >

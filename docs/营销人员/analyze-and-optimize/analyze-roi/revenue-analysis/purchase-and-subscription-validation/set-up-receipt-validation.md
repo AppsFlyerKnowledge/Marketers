@@ -21,7 +21,11 @@ x-zendesk:
 ---
 > **概要：** 了解如何通过收据验证对应用内购买和订阅收入进行衡量，并与应用商店校验，从而确保收入衡量的准确性。
 
+<div id="overview" />
+
 ## 概览
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -36,6 +40,8 @@ x-zendesk:
 3. [测试 validateAndLog SDK API 实现](#第3步验证sdk实现)：在 iOS 和 Android 上执行沙盒测试购买和订阅，以验证收据验证事件是否生成并被 AppsFlyer 正确记录。
 4. [验证并更新设置](#第4步验证并更新设置)：确认产品类型设置为收据验证，并检查商店密钥和 SDK 集成状态，以确保准确、持续的收入测量。
 5. [发布带有 validateAndLog SDK API 的应用版本](#第5步发布带有-validateandlog-sdk-api-的应用版本)：发布集成了 `validateAndLog` SDK API 的更新应用版本，确保沙盒标志已禁用，并且所需的应用内事件未被验证规则阻止。
+
+<div id="step-1-ios-set-up-app-store-connect-keys" />
 
 ## 步骤 1（iOS）设置 App Store Connect 密钥
 
@@ -91,6 +97,8 @@ x-zendesk:
 5. 单击**保存并继续**。
 
 </Accordion>
+
+<div id="step-1-android-set-up-service-account-key-and-permissions" />
 
 ## 步骤 2（Android）：设置服务账户密钥和权限
 
@@ -203,6 +211,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="step-2-implement-sdk" />
+
 ## 第2步：2.实施SDK V6
 
 在此步骤中，您准备开发人员集成SDK `validateAndLog` API，并设置一个用于测试的沙盒环境。支持最新`validateAndLog` API的最低SDK版本为Android的**6.17.5**和iOS的**6.17.8**。
@@ -219,6 +229,8 @@ x-zendesk:
 
    此处包含了开发人员进行对接和测试所需的全部信息。
 3. 点击**Next**。**验证SDK实现**步骤已打开。
+
+<div id="step-3-verify-sdk-implementation" />
 
 ## 第3步：验证SDK实现
 
@@ -275,6 +287,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="step-4-verify-and-update-settings" />
+
 ## 第4步：验证并更新设置。
 
 完成上述设置配置并保存后，您将被重定向到活动配置视图，在此您可以验证或更新以下设置：
@@ -285,6 +299,8 @@ x-zendesk:
 
    * **App Store 密钥** 设置。
    * **SDK 集成** 设置。
+
+<div id="step-5-release-the-app-versions-with-the-validateandlog-sdk-api" />
 
 ## 第5步：发布带有 validateAndLog SDK API 的应用版本。
 

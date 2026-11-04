@@ -29,6 +29,10 @@ x-zendesk:
 
 ![CTV_attribution_flow_-_Vizio__1_.png](https://files.readme.io/f4ab4b6c9e045fe00b537814fa9f10746b525a5512e5805e62eb0c2e4c9a8615-6318406872337.png)
 
+<div id="integration-procedures" />
+
+<div id="vizio-attribution-flow" />
+
 ## 对接流程
 
 下表列出了Steam应用对接到AppsFlyer时需要完成的工作。
@@ -52,6 +56,8 @@ x-zendesk:
 | 成本数据 | 必须使用<Anchor target="_blank" href="/marketers/zh/docs/import-cost-data">成本导入</Anchor>功能，通过邮件上传数据文件，以实现成本数据的发送。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

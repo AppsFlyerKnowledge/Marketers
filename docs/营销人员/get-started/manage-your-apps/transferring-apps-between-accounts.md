@@ -31,9 +31,13 @@ x-zendesk:
 
 ![应用迁移流程动画：展示应用迁移向导的各个操作步骤。](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
 
+<div id="app-transfer-between-accounts" />
+
 ## 账户间应用迁移
 
 在不同 AppsFlyer 账户之间迁移应用时，转出方和接收方的应用所有者（即双方 AppsFlyer 账户的所有者）都必须满足相应的迁移条件，并同意此次迁移。
+
+<div id="prerequisites" />
 
 ### 迁移前提条件
 
@@ -42,6 +46,8 @@ x-zendesk:
 * 双方账户均无未支付的账单。
 * 只有<Anchor target="_blank" href="/marketers/zh/docs/user-management#账户所有者">账户所有者</Anchor>可以迁移应用。账户管理员角色无权执行此操作。
 * 应用只能迁移至采用 Growth 或 Enterprise 套餐的账户。<Anchor target="_blank" href="/marketers/zh/docs/account-management-plans-payments-and-billing#appsflyer-plans">了解详情</Anchor>。
+
+<div id="app-transfer-process" />
 
 ### 应用迁移流程
 
@@ -60,6 +66,8 @@ x-zendesk:
 <table><thead><tr><th>项目</th><th>是否迁移</th><th>说明及注意事项</th></tr></thead><tbody><tr><td>应用设置 </td><td>是</td><td> <strong>转出方可自行决定：</strong>迁移前可以删除 Firebase/GCM 服务器密钥。 </td></tr><tr><td rowspan="2">已对接的合作伙伴</td><td>是</td><td><p>对接配置、成本配置和收入配置均会迁移，包括相关成本数据和收入数据。</p><p><strong>转出方可自行决定：</strong>如果接收方不需要迁移已对接的合作伙伴，转出方应先停用这些合作伙伴，并删除相关配置和凭据，包括成本及广告收入配置。</p></td></tr><tr><td>否</td><td><p>广告平台和代理机构的权限</p><p>Twitter 配置和凭据</p></td></tr><tr><td>链接管理</td><td>否</td><td><p>OneLink 模板和链接不会自动迁移，但可以联系客户成功经理（CSM）协助迁移。 </p><p><strong>迁移模板和链接：</strong>请联系您的 CSM，或发送邮件至 <a href="mailto:hello@appsflyer.com">hello@appsflyer.com</a>。 <br/><strong>注意：</strong>批量链接会随所属模板自动迁移。</p><ul><li>转出方可以在迁移前删除不再使用的链接。</li><li>OneLink API 令牌无法在不同账户之间迁移。您需要使用新账户中的<a href="./managing-appsflyer-tokens" target="_blank">令牌</a>。</li></ul><p>域名跳转允许列表也不会自动迁移。如果接收方账户的允许列表中尚未包含待迁移应用使用的域名，迁移后，使用这些域名的链接将无法正常跳转。请务必在迁移前或迁移完成后立即，在接收方账户中<a href="./set-up-your-domain-redirect-allowlist" target="_blank">配置域名跳转允许列表</a>。</p></td></tr><tr><td>Push API</td><td>是</td><td><p><strong>转出方可自行决定：</strong></p><ul><li>如果接收方不需要迁移 Push API 配置（端点），转出方应提前删除相关设置。否则，数据仍会发送至转出方配置的端点。</li><li>接收方也可以在收到应用后修改相关设置，确保转出方无法继续接收用户级数据。 </li></ul></td></tr><tr><td>Smart Banners</td><td>否</td><td>横幅、横幅组、创意素材和网站均不会迁移。 </td></tr><tr><td>Smart Script</td><td>否</td><td>在 AppsFlyer 界面中创建的 Smart Script 不会在新账户中显示。 </td></tr><tr><td>代理机构</td><td>否</td><td>代理机构将失去对该应用的访问权限。</td></tr><tr><td>受众群体</td><td>否</td><td>受众群体将被删除。</td></tr><tr><td>成本导入</td><td>不适用</td><td>接收方无法访问历史成本导入文件。但不会影响历史成本数据。 </td></tr><tr><td>Data Locker</td><td>否</td><td>该应用将从 Data Locker 配置中移除，转出方账户也将停止接收该应用的数据。 </td></tr><tr><td>历史数据</td><td>是</td><td> </td></tr><tr><td>PBA 品牌套件</td><td>否</td><td><p>如果转出方迁移了品牌套件中的任何一个关联应用，该品牌套件将不再对转出方可用。接收方也无法访问 PBA 数据。</p><p>这意味着，如果客户希望在新账户中继续使用 PBA，必须在应用迁移完成前删除原有的 Web 套件，否则将无法在新账户中创建相同的 Web 套件。</p></td></tr><tr><td>Protect360 数据</td><td>是</td><td><p>如果应用从未启用 Protect360 的账户迁移至已启用 Protect360 的账户： </p><ul><li>只有在应用迁移完成后，系统才会开始检测作弊行为。</li><li>如果接收方账户仅在部分时间段内启用了 Protect360，则只能查看该功能启用日期之后的作弊数据，无法追溯获取此前的数据。</li><li>应用迁移期间不会进行作弊检测。</li></ul></td></tr><tr><td>原始数据和汇总数据</td><td>是</td><td> </td></tr><tr><td>SDK 开发密钥</td><td>是</td><td> </td></tr><tr><td>验证规则</td><td>是</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="transfer-procedures" />
 
 ## 迁移操作流程
 

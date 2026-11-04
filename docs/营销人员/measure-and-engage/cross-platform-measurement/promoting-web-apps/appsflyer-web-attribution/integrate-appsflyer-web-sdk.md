@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概览：** 在网站中安装AppsFlyer Web SDK（也称为Pixel），向AppsFlyer上报用户访问和事件，并设置长期有效的客户用户ID（CUID），统一跨平台用户旅程。
 
+<div id="overview" />
+
 ## 概览
 
 Web SDK可记录访客与网站的互动情况，并将相关信息发送至AppsFlyer。Web SDK是一个40–60KB的插件模块，可将用户访问和在网站上的操作上报至AppsFlyer平台。
@@ -39,6 +41,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 7. [管理隐私。](#5管理隐私)控制用户是否参与效果衡量，并配置安全和数据过滤功能（内容安全策略和丢弃查询参数）。
 8. [Web SDK Cookie说明。](#web-sdk-cookie说明)查看Web SDK设置或使用的Cookie，包括用途、有效期和作用域。
 
+<div id="1-obtain-your-keys" />
+
 ## 1获取密钥
 
 **获取Web SDK ID（也称为Web Dev Key）：**
@@ -52,6 +56,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 1. 在AppsFlyer侧边菜单中，打开**互动**>**Web to App**>**智能横幅**。
 2. 复制所需的智能横幅密钥。
 
+<div id="2-select-a-code-snippet" />
+
 ## 2选择代码片段
 
 根据对接类型和安全要求选择相应的代码片段。有以下两种方案：
@@ -62,6 +68,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 > 🚧 **重要！**
 >
 > 如果要从标准Web SDK迁移至高级SDK验证，请使用新代码片段替换现有代码片段。不要在现有代码片段的基础上再添加新代码片段。
+
+<div id="standard-web-sdk" />
 
 ### 标准Web SDK
 
@@ -121,6 +129,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 ```
 
 </Accordion>
+
+<div id="advanced-sdk-verification" />
 
 ### 高级SDK验证
 
@@ -201,6 +211,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 
 </Accordion>
 
+<div id="3-deploy-the-snippet" />
+
 ## 3部署代码片段
 
 使用以下任一方式部署您在第2步中选择的代码片段。每次加载页面时，只加载一次SDK。
@@ -259,6 +271,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 
 <Accordion title="方式C：通过Adobe Launch Tag Manager部署">
 
+<div id="create-a-property-in-adobe-experience-cloud" />
+
 #### 在Adobe Experience Cloud中创建属性
 
 1. 打开Adobe Experience Cloud>Launch。
@@ -268,6 +282,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 5. 在**平台**下，选择**网页端**。
 6. 输入网站域名。
 7. 点击**保存**。
+
+<div id="add-the-snippet-to-the-adobe-launch-property" />
 
 #### 将代码片段添加到Adobe Launch属性
 
@@ -282,6 +298,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
    * 点击**保留更改**，关闭代码编辑器。
 5. 点击**保存**。
 
+<div id="add-the-adobe-launch-tag-to-the-website" />
+
 #### 将Adobe Launch标签添加到网站
 
 1. 在**我的网页端属性**页面中，选择**环境**选项卡。
@@ -289,6 +307,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 3. 在**安装**列中，点击相应行的方框图标。
 4. 在**网页端安装说明**对话框中，复制脚本代码片段并关闭对话框。
 5. 将代码片段粘贴到网站的head部分。
+
+<div id="publish-the-adobe-launch-environment" />
 
 #### 发布Adobe Launch环境
 
@@ -308,6 +328,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
    * 点击操作菜单，然后选择**生成并发布到生产环境**。
 
 </Accordion>
+
+<div id="4-make-sure-the-sdk-is-working" />
 
 ## 2确认SDK正常运行
 
@@ -331,6 +353,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
    * 状态码为200。
 8. 确认`site_id`与AppsFlyer顶部菜单中**我的应用**下的`WEB_SDK_KEY`一致。
 9. 确认SDK只加载一次。多次加载SDK可能会导致SDK停止运行。
+
+<div id="5-set-and-record-events" />
 
 ## 3设置和记录事件
 
@@ -406,6 +430,8 @@ window.onload = function(){
 
 这种方式会在「感谢」页面加载时触发代码，从而记录邮件简报订阅等成功转化。
 
+<div id="1-set-up-a-thank-you-page" />
+
 #### 1设置「感谢」页面
 
 以下HTML结构先加载GTM，再由GTM加载Web SDK。此外，该结构还演示了如何通过函数或`localStorage`向GTM提供数据。
@@ -433,6 +459,8 @@ window.onload = function(){
 </body>
 </html>
 ```
+
+<div id="2-configure-the-gtm-tag" />
 
 #### 2配置GTM代码
 
@@ -505,6 +533,8 @@ window.onload = function(){
 
 此方法使用GTM的内置变量和触发器，采集点击**结账**按钮等具体操作。
 
+<div id="1-set-up-a-checkout-page" />
+
 #### 1设置结账页面
 
 ```html
@@ -525,6 +555,8 @@ window.onload = function(){
 </html>
 ```
 
+<div id="2-configure-gtm-variables-and-triggers" />
+
 #### 2配置GTM变量和触发器
 
 1. 在GTM中，点击**变量**>**配置**，然后在内置变量列表中启用**点击元素**。
@@ -533,6 +565,8 @@ window.onload = function(){
    * 触发器类型：**点击–所有元素**。
    * 此触发器的触发条件：**某些点击**。
    * 条件：**点击元素**与CSS选择器`#checkout`匹配。
+
+<div id="3-create-the-interaction-tag" />
 
 #### 3创建互动代码
 
@@ -562,6 +596,8 @@ window.onload = function(){
 
 </Accordion>
 
+<div id="6-set-customer-user-id" />
+
 ## 4设置客户用户ID
 
 完成事件衡量配置后，使用`setCustomerUserId`设置长期有效的身份标识，将网页端活跃数据与移动端、PC和CTV等其他平台关联，统一查看用户的跨平台旅程。
@@ -588,6 +624,8 @@ window.onload = function(){
 * 服务器为用户生成唯一CUID。
 * 用户进入注册完成后的感谢页面后，网站会向服务器查询新CUID。
 * 根据服务器返回的响应，使用Web SDK的`setCustomerUserId()`方法设置AppsFlyer CUID。
+
+<div id="a-sign-up-form-example" />
 
 #### 注册表单示例
 
@@ -622,6 +660,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 </body>
 </html>
 ```
+
+<div id="a-thank-you-page-example" />
 
 #### 感谢页面示例
 
@@ -736,6 +776,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 </Accordion>
 
+<div id="7-manage-privacy" />
+
 ## 5管理隐私
 
 完成事件衡量配置后，您可能还需要根据组织或地区标准设置特定的安全与隐私限制。
@@ -745,6 +787,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 <Accordion title="选择是否发送事件">
 
 您可以通过以下两种方式控制效果衡量：
+
+<div id="sdk-initial-state-setting-in-the-snippet" />
 
 #### SDK初始状态设置（在代码片段中）
 
@@ -756,6 +800,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 > 📘 **注意**
 >
 > 如果`measurementStatus`为空或值为`NULL`，AppsFlyer会按`measurementStatus:true`处理。
+
+<div id="explicit-control" />
 
 #### 显式控制
 
@@ -778,6 +824,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 如果网站需要遵循严格的安全或数据隐私协议，请使用以下机制配置Web SDK与运行环境及数据的交互方式。
 
+<div id="content-security-policy-csp" />
+
 #### 内容安全策略（CSP）
 
 如果网站要求通过CSP保护JavaScript，Web SDK可根据您的CSP配置和第2步所选的代码片段采用以下两种方案。
@@ -795,6 +843,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 | `script-src 'nonce-...' 'strict-dynamic'` | 是（推荐） | nonce涵盖内联脚本和加载器；`strict-dynamic`会将信任传递给动态注入的SDK脚本标签。无需将CDN源添加到允许列表。 |
 
 CSP策略兼容性
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### 使用CSP nonce的高级SDK验证代码片段
 
@@ -868,6 +918,8 @@ CSP策略兼容性
 
 </Accordion>
 
+<div id="discard-query-parameters" />
+
 #### 丢弃查询参数
 
 如果URL查询参数包含敏感信息，可让AppsFlyer丢弃URL、引荐来源网址和`header_referer`中的查询参数。
@@ -881,6 +933,8 @@ CSP策略兼容性
 * 结果：`param1=value1&af_url_mask=param2;param3`
 
 </Accordion>
+
+<div id="web-sdk-cookies-reference" />
 
 ## Web SDK Cookie说明
 

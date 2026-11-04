@@ -26,15 +26,21 @@ x-zendesk:
 ---
 > 内容概要： 了解移动广告归因的基本概念，以及 AppsFlyer 如何帮助营销人员精准定位目标受众、优化广告支出并提高投资回报率（ROI）。
 
+<div id="what-is-app-attribution" />
+
 ## 什么是应用归因？
 
 App 归因用于确定哪些广告活动、合作伙伴和渠道为您的 App 带来了安装及安装后的事件，例如应用内购买。营销人员可以利用这些数据洞察，衡量并优化用户获取和再营销活动的效果。
+
+<div id="what-can-you-do-with-appsflyer" />
 
 ## AppsFlyer 能为您提供哪些帮助？
 
 <Embed title="欢迎使用 AppsFlyer" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/471j74dt90" providerUrl="https://fast.wistia.com" />
 
 > 内容概要： 了解如何首次登录账户，以及如何在多个账户之间切换。
+
+<div id="first-login" />
 
 ## 首次登录
 
@@ -48,18 +54,26 @@ App 归因用于确定哪些广告活动、合作伙伴和渠道为您的 App �
 * 使用 Google 登录：通过 Google 账户登录。
 * <Anchor target="_blank" href="/marketers/zh/docs/set-up-sso-authentication-with-your-identity-provider-idp">使用 SSO 登录</Anchor>
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 如果您的管理员为您的账户配置了双重身份验证（2FA），您需要通过另一种身份验证方式完成登录验证。
+
+<div id="using-multiple-accounts" />
 
 ## 使用多个账户
 
 用户可以加入多个账户，并在不同账户中拥有不同的角色和权限。您可以在这些账户之间切换，无需重新输入登录凭据。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 所有登录方式均支持切换账户和更改主账户，包括用户名和密码、双重身份验证（2FA）以及单点登录（SSO）。无论使用哪种登录方式，切换账户时都需要输入发送至用户邮箱的 6 位验证码。
 > * 目前，账户切换功能仅适用于广告主账户。
+
+<div id="primary-account" />
 
 ### 主账户
 
@@ -73,6 +87,8 @@ App 归因用于确定哪些广告活动、合作伙伴和渠道为您的 App �
 2. 查看您的账户列表：选择 All accounts (x)，其中 x 表示账户总数。
 3. 在 My accounts（我的账户）对话框中，点击要设为主账户的账户旁边的三点菜单图标，然后选择Set as primary（设为主账户）。系统会显示提示消息，确认主账户已更改。
 
+<div id="switch-between-accounts" />
+
 ### 在账户之间切换
 
 1. 在顶部菜单栏中，点击电子邮箱地址下拉菜单 > 切换账户（Switch accounts）。  
@@ -84,19 +100,27 @@ App 归因用于确定哪些广告活动、合作伙伴和渠道为您的 App �
 4. 点击 Switch account（切换账户）。  
    <Image alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 验证码的有效期为 15 分钟，且只能使用一次。
 
+<div id="get-started" />
+
 ## 开始使用
 
 如需开始使用 AppsFlyer，请参阅我们的分步入门指南。
+
+<div id="tip" />
 
 > 👍 **提示**
 >
 > 想进一步了解移动生态系统？欢迎访问 AppsFlyer Learning Portal，参加这门简短实用的在线课程。
 
 相关阅读： <Anchor target="_blank" href="/marketers/zh/docs/convert-your-mobile-web-visitors-to-app-users">移动归因</Anchor> | <Anchor target="_blank" href="/marketers/zh/docs/ctv-pc-and-console-platform-attribution-concepts">CTV 归因</Anchor>
+
+<div id="see-also" />
 
 > 📄 **另请参阅**
 >

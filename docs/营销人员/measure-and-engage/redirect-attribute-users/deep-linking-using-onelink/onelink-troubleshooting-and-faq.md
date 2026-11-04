@@ -22,9 +22,15 @@ x-zendesk:
 ---
 > **概要：** 如果OneLink自定义链接在测试和调试过程中出现跳转/功能问题，您可以在本文中快速找到解决方法。
 
+<div id="onelink-troubleshooting-guide" />
+
 ## OneLink故障排查指南
 
+<div id="onelink-frequently-asked-questions" />
+
 ## OneLink常见问题答疑
+
+<div id="onelink-template-faq" />
 
 ### OneLink模板常见问题解答
 
@@ -36,6 +42,8 @@ x-zendesk:
 
 **App Links：** 适用于6.0及以上版本的安卓用户。**请注意**：三星的操作系统无法通过安卓App Links打开应用。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 使用Universal Link和App Link调起应用时，都需要证明用户所点击的URL中的域名（即OneLink自定义域名或品牌域名）属于且关联到要打开的应用。您可以通过**Apple App Site Association（AASA）文件**（适用于iOS）和**Assetlinks**文件（适用于安卓）来关联域名。
@@ -46,6 +54,8 @@ x-zendesk:
 
 * 为6.0以下版本的安卓用户打开应用（在总体安卓用户中的占比不到15%）
 * Universal Link和App Link失效或尚未设置时，作为备用方式打开应用<strong>请注意：</strong>将URI scheme作为Universal Link的备用方案时，其功能性会受到iOS相关限制的影响。详情请见<Anchor target="_blank" href="/marketers/zh/docs/uri-scheme-fallback-for-ios">此文档</Anchor>。
+
+<div id="deep-linking" />
 
 #### 深度链接
 
@@ -190,6 +200,8 @@ Universal Link、App Link和URI scheme都是安全的应用**打开**方式。�
 
 **请注意：** 如果您的链接中包含`af_web_dp`，则AppsFlyer不会记录该链接来自PC端的点击。
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 建议让PC端用户跳转到含有网页专用表单的网页URL，可通过SMS或邮件向PC端用户的移动设备发送OneLink链接。详情请见<Anchor target="_blank" href="/marketers/zh/docs/set-up-smart-script-to-convert-web-visitors#desktop">OneLink智能脚本</Anchor>，其中详细解释了这一方案。
@@ -211,6 +223,8 @@ AppsFlyer将Chromebooks上的应用视为安卓应用。
    通过链接设置添加URL时，该URL在您的链接中会以`af_android_url`参数表达。
 
 </Accordion>
+
+<div id="onelink-link-faq" />
 
 ### OneLink链接常见问题解答
 
@@ -273,6 +287,8 @@ AppsFlyer将Chromebooks上的应用视为安卓应用。
 
 为了应对这些问题，您可以通过备用URL和强制深度链接来优化用户体验。
 
+<div id="fallback-urls" />
+
 #### 备用URL
 
 应用调起或深度链接失败时，备用URL可让用户跳转到指定的网页。**注意：** 备用链接会将未安装应用的用户一并送往备用网页，而非应用商店。因此，请仅在向已安装应用的现有用户进行再营销投放时使用此方式。
@@ -282,6 +298,8 @@ AppsFlyer将Chromebooks上的应用视为安卓应用。
 [![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
 
 该设置会在备用链接中添加`af_ios_url`和`af_android_url`参数，表示跳转终点，让iOS用户跳转到`af_ios_url`参数中指定的页面，安卓用户跳转到`af_android_url`参数中指定的页面。
+
+<div id="tip-1" />
 
 > 📄 **示例**
 >
@@ -297,10 +315,14 @@ AppsFlyer将Chromebooks上的应用视为安卓应用。
 > * iOS用户：www.yoursite.com/ios-bonus
 > * 安卓用户：www.yoursite.com/android-bonus
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 如果您在URL的参数值中使用井号（#），必须对其进行编码。
 > * 发生跳转时，OneLink链接参数会传递到`af_ios_url`或`af_android_url`中指定的页面。若要防止此行为，请在OneLink中添加参数`af_param_forwarding=false`。
+
+<div id="forced-deep-linking" />
 
 #### 强制深度链接
 
@@ -341,6 +363,8 @@ AppsFlyer将Chromebooks上的应用视为安卓应用。
 请进入OneLink面板的**其它参数**部分，打开<strong>记录激活成本（CPI）</strong>开关，然后您就可以对该链接带来的激活设定具体的CPI值。
 
 请选择成本货币并输入**数值**（可精确到小数点后4位）作为CPI。该操作会在链接中添加af\_cost\_currency和af\_cost\_value参数。
+
+<div id="tip-2" />
 
 > 📄 **示例**
 >
@@ -487,6 +511,8 @@ OneLink子域名：**demo.onelink.me**
 
 </Accordion>
 
+<div id="onelink-parameter-faq" />
+
 ### OneLink参数常见问题答疑
 
 <div id="what-parameters-are-mandatory-for-onelink-custom-links" />
@@ -504,6 +530,8 @@ OneLink子域名：**demo.onelink.me**
 **可以**，您可以在短链后添加任何参数。
 
 <strong>重要提示！</strong>短链后拼接的参数无法覆盖该链接中已配置的参数。
+
+<div id="tip-3" />
 
 > 📄 **示例**
 >
@@ -565,6 +593,8 @@ OneLink子域名：**demo.onelink.me**
 
 </Accordion>
 
+<div id="integrated-partner-faq" />
+
 ### 对接渠道的常见问题解答
 
 <div id="can-i-use-onelink-in-social-apps-unpaid" />
@@ -587,6 +617,8 @@ OneLink子域名：**demo.onelink.me**
 
 **可以**，但OneLink主要用于自有媒体，而非广告平台。 这是因为广告平台通常在流量侧应用中投放广告（也就是说，他们掌握用户的操作平台、设备ID等信息），因此您只需针对不同的应用和操作平台配置归因链接即可，无需使用OneLink。 但如果广告平台无法预判用户的操作平台（比如通过广告平台投放邮件或SMS广告时），就需要使用OneLink解决此问题。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 通过OneLink在广告平台中进行投放时，必须使用OneLink长链。
@@ -596,6 +628,8 @@ OneLink子域名：**demo.onelink.me**
 * 按照<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#attribution-link-tab">广告平台的归因链接说明</Anchor>进行操作，并在界面弹出OneLink提示时选择**使用OneLink**。
 
 正确无误地将适用于安卓和iOS的所有参数添加到OneLink自定义链接后，用户点击该链接就能跳转到对应的平台，且用户激活应用后，必要参数会通过回传发送到广告平台。
+
+<div id="tip-4" />
 
 > 📄 **示例**
 >
@@ -671,6 +705,8 @@ Facebook上的广告通常支持应用调起和深度链接。但如果出现以
 
 </Accordion>
 
+<div id="testing-faq" />
+
 ### 有关测试的常见问题解答
 
 <div id="how-can-i-ab-test-the-social-app-landing-page" />
@@ -709,6 +745,8 @@ Facebook上的广告通常支持应用调起和深度链接。但如果出现以
 
 </Accordion>
 
+<div id="deep-linking-faq" />
+
 ### 深度链接常见问题解答
 
 <div id="what-deep-linking-methods-should-be-implemented" />
@@ -732,6 +770,8 @@ iOS的Universal Link和安卓的App Link是用于**调起应用的方法，不�
 **建议您在自定义链接设置页面中添加自定义参数。**
 
 </Accordion>
+
+<div id="ios-14-faq" />
 
 ### 与iOS 14相关的常见问题解答
 

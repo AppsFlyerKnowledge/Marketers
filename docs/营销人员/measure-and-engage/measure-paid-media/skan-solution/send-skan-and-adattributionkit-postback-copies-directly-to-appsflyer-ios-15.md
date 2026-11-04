@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 从iOS 15开始，除了向广告平台发送回传数据外，您还可以通过应用内的配置额外向AppsFlyer发送回传备份。这样，AppsFlyer就能验证转化值（CV）并核实渠道回传数据的真实性。**配置完成后，您可以对AppsFlyer的Push API进行相应配置，从而向多个指定端点转发回传备份。**
 
+<div id="why-send-postback-copies-to-appsflyer" />
+
 ## 向AppsFlyer发送回传备份的优势
 
 * 一站式获取所有回传回传包含对广告主至关重要的信息—特别是用于评估用户质量的转化值 (CV)。由于回传数据中的CV值既没有加密也不构成回传签名，因此广告平台上报的CV值无法得到验证，并且有可能被篡改。AppsFlyer可以通过Push API将回传数据转发到您指定的端点，从而实现数据的验证和核实。
@@ -30,6 +32,8 @@ x-zendesk:
 * 查看触点类型/广告互动信息。
 
 **请注意**AppsFlyer仍需接收广告平台的回传数据，因为其中包含广告平台所提供的其他数据（如广告系列名称）。
+
+<div id="configure-your-app-to-send-postback-copies-to-appsflyer" />
 
 ## 向AppsFlyer发送回传备份的应用配置方法
 
@@ -42,11 +46,17 @@ x-zendesk:
 3. 新版应用上架后（非TestFlight），SKAN回传将会发送到AppsFlyer。
 4. 您可以在<Anchor target="_blank" href="/marketers/zh/docs/skan-raw-data-reports">回传备份报告</Anchor>中查看回传内容。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 即使完成了相关配置，如果应用当前没有SKAN流量，您仍会看到以下提示：您的应用尚未完成将iOS回传备份（iOS 15及以上）发送至AppsFlyer的设置。请务必确认您的SKAN衡量数据完整、准确且有效。”
 
+<div id="common-misconceptions" />
+
 ## 常见误区
+
+<div id="dont-believe-everything-you-hear" />
 
 > 📘 **警惕“伪科普”的误导！**
 >
@@ -59,9 +69,13 @@ x-zendesk:
 > * 只要我额外设置了一个端点，就能将所有回传备份发送到这个新添加的端点。
 >   * **False。** 额外的端点功能仅适用于运行iOS 15+的设备。使用旧版本的设备不会发送回传备份。
 
+<div id="traits-and-limitations" />
+
 ## 特点与局限性
 
 完成向AppsFlyer发送回传备份的应用配置后，相关数据反映到面板上可能需要几天的时间。
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

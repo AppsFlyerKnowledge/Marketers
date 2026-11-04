@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要： 概要：本文介绍了PlayStation应用与AppsFlyer的对接方式。对接完成后，您就可以针对PlayStation上的广告收集归因和事件数据。**
 
+<div id="integrate-your-playstation-app-with-appsflyer" />
+
 ## PlayStation归因简介
 
 适用于主机和CTV应用的PlayStation操作系统可在所有PlayStation设备中运行。
@@ -33,6 +35,8 @@ PlayStation API对接适用于：
 * PlayStation设备。
 * PlayStation应用的归因和事件记录（即在用户的PlayStation设备上进行归因和记录）。
 
+<div id="example-attribution-flow" />
+
 ### 归因链接示例
 
 下文所示的归因流程重点说明了从广告互动到归因的用户链路中最关键的几个环节。其中还包含AppsFlyer推荐的跨平台落地页。 **请注意**：请注意：虽然我们建议您使用跨平台落地页，但您仍可以选择直接归因链接。
@@ -43,6 +47,8 @@ User\_windows.jpg
 2. 这个步骤对于UTM及其他URL参数的收集至关重要。有了这些参数，AppsFlyer就能将来自相关点击/激活的用户归因到带量的媒体渠道或广告主的自有媒体。  
    如果您的游戏支持多个平台，可以在落地页中提供跳转到各个平台的链接，比如Xbox、Microsoft商店以及Steam页面等。
 4. 游戏激活游戏激活：用户激活游戏时即会触发归因，并开始记录应用内事件和应用打开（session）。
+
+<div id="integration-procedures" />
 
 ## 对接流程
 
@@ -66,6 +72,8 @@ User\_windows.jpg
 | 成本数据 | 必须通过邮件<Anchor target="_blank" href="/marketers/zh/docs/import-cost-data">上传</Anchor>的方式来发送成本数据。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

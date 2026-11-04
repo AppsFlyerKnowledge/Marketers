@@ -29,7 +29,7 @@ x-zendesk:
 <Image alt="inmobi_icon.png" src="https://files.readme.io/cbe0e88492041fc8e1781b397b67a3c8c3a09591974f2cf4fa145a18ca9e6a8d-10602685724817.png" width="128px" />
 
 
-**<span id="setting-up-glispa"></span>前期准备：** 设置对接前，请务必先<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations#联系相关渠道">联系该渠道</Anchor>并在其平台上开设账户。
+**<span id="setting-up-inmobi"></span><span id="setting-up-glispa"></span>前期准备：** 设置对接前，请务必先<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations#联系相关渠道">联系该渠道</Anchor>并在其平台上开设账户。
 
 **请按以下方式启用或修改该对接：**
 
@@ -43,6 +43,8 @@ x-zendesk:
 
 如需进一步了合作伙伴配置页面中各选项卡的详细说明，请参考<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">此文档</Anchor>。
 
+<div id="tip" />
+
 > 👍 **建议**
 >
 > * 对接页面中的<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#d-general-settings">通用设置</Anchor>是广告主**必须**为所有合作渠道都配置的内容。
@@ -52,14 +54,20 @@ x-zendesk:
 
 <Accordion title="对接选项卡">
 
+<div id="activate-partners" />
+
 ### 启用渠道
 
 **第一次访问**时，需要打开**激活合作伙伴**开关以开启对接选项卡内的配置参数。只要仍与该合作伙伴合作，这个开关必须为ON。   
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 作为“全安装”网络，Liftoff希望获取所有渠道（包括自然渠道）新增安装的数据回传。请在对接配置的“事件来源”一栏选择“**所有媒体渠道，包括自然流量**”。
+
+<div id="general-settings" />
 
 ### 通用设置
 
@@ -71,12 +79,16 @@ x-zendesk:
 
 如果希望获取该AD\_NETWORK的浏览型归因，要把这里设置为开启。您可以使用归因链接选项卡中对应的滑块来调整浏览回溯窗口。
 
+<div id="default-postbacks" />
+
 ### 默认回传
 
 用户完成激活和再互动后自动向ironSource发送回传。您可以在这个板块中设置可用回传的**事件来源**。
 
 若选择**仅该合作渠道**，则仅回传由ironSource带来的用户所完成的事件。  
 若选择**所有媒体渠道，包括自然流量**：将所有用户的相关事件数据都上报给ironSource。
+
+<div id="in-app-events-settings" />
 
 ### 应用内事件设置
 
@@ -107,6 +119,8 @@ x-zendesk:
 
 该选项卡可分成几个不同部分：
 
+<div id="attribution-link-parameters" />
+
 ### 归因链接参数
 
 在本节中, 选择要添加到归因链接中的参数。
@@ -127,6 +141,8 @@ x-zendesk:
 [![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
 
 只需在新参数框中输入, 即可将任何其他参数添加到归因链接中。更多详情, 请参阅 **<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">AppsFlyer 归因链接结构和参数</Anchor>。**
+
+<div id="retargeting-settings" />
 
 ### 再营销设置
 
@@ -162,6 +178,8 @@ x-zendesk:
 
 **归因链接参数:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### 点击型归因
 
 可以拖曳这个滑块来设置**点击到安装时间的最长时间**。只有发生在归因窗口期内的安装（首次启动）才有可能会被归因给Twitter。
@@ -172,9 +190,13 @@ x-zendesk:
 
 [![](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)
 
+<div id="click-attribution-link" />
+
 ### 点击归因链接
 
 这就是包含了所有设置信息的归因链接。把这个归因链接发给Liftoff，当潜在客户点击相应广告时，该链接会被激活。
+
+<div id="view-through-attribution-lookback-window" />
 
 ### 浏览型归因窗口期
 
@@ -187,6 +209,8 @@ x-zendesk:
 更多关于<Anchor target="_blank" href="/marketers/zh/docs/set-up-lookback-windows">展示归因的信息在这里</Anchor>。
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+
+<div id="impressions-attribution-link" />
 
 ### 展示归因链接
 
@@ -221,6 +245,8 @@ AppsFlyer通过API获取成本信息。详情请见广告平台成本对接表�
 <Accordion title="授权选项卡">
 
 您可以在这个板块中选择需要向Snapchat开放的<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#permissions-tab">数据权限</Anchor>，以便其提供各种功能。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >

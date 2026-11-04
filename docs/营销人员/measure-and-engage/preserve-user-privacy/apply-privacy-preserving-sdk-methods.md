@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **概要：** 您可以通过多种AppsFlyer SDK设置方式来保护您用户的隐私。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 本文意图仅在于帮助应用开发人员了解可用的技术手段，用以调控应用所有者、广告平台和社交平台之间的用户数据共享。**本文所提供的信息既不包含也不构成对COPPA、GDPR或任何具体隐私保护条例的合规性指导。**
@@ -37,9 +39,13 @@ AppsFlyer SDK为应用所有者提供多种保护用户隐私和控制数据收�
 
 下面我们来分别探讨各个配置方法。
 
+<div id="use-start-and-stop-methods" />
+
 ## 使用start和stop方法
 
 只有在调用`start`方法后，SDK才会向AppsFlyer发送激活和应用内事件。SDK不会上报任何在`start`调用之前发生的事件。同样，如果后续通过调用`start`方法撤销了之前的`stop`，则此后将不再发送任何事件。
+
+<div id="impact-on-attribution" />
 
 ### 对归因的影响
 
@@ -48,6 +54,8 @@ AppsFlyer SDK为应用所有者提供多种保护用户隐私和控制数据收�
 * `start`方法未调用。
 * 调用`stop`方法撤销了先前的start。
 
+<div id="common-use-cases" />
+
 ### 常见使用场景
 
 | 使用场景 | 描述 |
@@ -55,6 +63,8 @@ AppsFlyer SDK为应用所有者提供多种保护用户隐私和控制数据收�
 | 用户在启动应用时授权或拒绝授权 | 在用户首次启动应用时同意共享数据，则调用`start` 。  <br />如果用户拒绝共享数据，则不调用  <br />`start`。 |
 | 分session授权 | 每次应用打开时请求授权，并根据用户的授权决定选择性调用`start`startstart。 |
 | 一次性拒绝授权（用户同意共享数据后又决定拒绝共享） | 调用`stop`，让SDK不再发送后续事件。 |
+
+<div id="developer-reference" />
 
 ### 开发者参考资料
 
@@ -74,21 +84,29 @@ AppsFlyer SDK为应用所有者提供多种保护用户隐私和控制数据收�
 </Tab>
 </Tabs>
 
+<div id="prevent-sharing-data-with-networks" />
+
 ## 防止与平台共享数据
 
 与广告平台或自归因平台（SRN）对接时，您可以选择是否与其共享用户级别的信息。您还可以**根据终端用户的偏好**，在SDK中使用`setSharingFilterForPartners`方法进一步细化相关应用与所有或部分渠道的数据共享。
 
 使用此方法时，AppsFlyer会在所有适用的数据传输工具中停止与您指定的平台共享用户数据，包括回传、API、原始数据报告等。
 
+<div id="impact-on-attribution-1" />
+
 ### 对归因的影响
 
 * 如果您选择不与某个广告平台（非SRN）共享数据，则AppsFlyer会对**来自该广告平台**的激活进行归因，但不会以任何方式通知该平台。
 * 如果您选择**不**与某个**SRN**共享数据，则来自该SRN的激活不会被归因，其数据也不会与您的对接渠道共享。
 
+  <div id="note-1" />
+
   > 📘 **注意**
   >
   > 当某个SRN被排除在您的数据共享范围之外时，AppsFlyer无法将互动数据归因到该SRN。
 
+
+<div id="developer-reference-1" />
 
 ### 开发者参考资料
 
@@ -108,6 +126,8 @@ AppsFlyer SDK为应用所有者提供多种保护用户隐私和控制数据收�
 </Tab>
 </Tabs>
 
+<div id="anonymize-user-information" />
+
 ## 用户信息匿名化
 
 您可以在配置SDK时使用`anonymizeUser`方法，让AppsFlyer删除所有用户身份识别信息。这种情况下，SDK向AppsFlyer发送激活和应用内事件后，所有的身份识别信息会被删除或进行哈希加密处理：
@@ -119,13 +139,19 @@ AppsFlyer SDK为应用所有者提供多种保护用户隐私和控制数据收�
 
 [![](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)
 
+<div id="impact-on-attribution-2" />
+
 ### 对归因的影响
 
 如果您在`start`之前调用了`anonymizeUser`，则不会发生任何归因。所有应用内事件都记录为自然事件或不做记录，具体取决于您使用的面板
 
+<div id="note-2" />
+
 > 👍 **提示**
 >
 > 如需对激活进行归因，请务必先确认SDK已经将相关激活发送到AppsFlyer，然后再调用`anonymizeUser`。该流程可确保激活后发生的所有应用内事件在发送到AppsFlyer时都不带有标识符信息，也因此不会被归因。
+
+<div id="developer-reference-2" />
 
 ### 开发者参考资料
 
@@ -145,11 +171,15 @@ AppsFlyer SDK为应用所有者提供多种保护用户隐私和控制数据收�
 </Tab>
 </Tabs>
 
+<div id="remove-specific-device-identifiers" />
+
 ## 删除特定的设备标识符
 
 您可以让SDK不收集且不向AppsFlyer发送特定的设备标识符。与`anonymizeUser`方法不同，使用该方式时您可以保留您需要的标识符。
 
 您可以使用以下方法通过SDK API禁用特定标识符：
+
+<div id="android-identifiers" />
 
 ### 安卓标识符
 
@@ -158,12 +188,16 @@ AppsFlyer SDK为应用所有者提供多种保护用户隐私和控制数据收�
 | `setdisableadvertisingIdentifiers` | <ul><li>GAID-Google Advertising ID</li><li>Open Anonymous Device Identifier（OAID）</li><li>Amazon Advertising ID（AAID）</li></ul> |
 | [`setcollectoaid`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid) | Open Anonymous Device Identifier（OAID） |
 
+<div id="ios-identifiers" />
+
 ### iOS标识符
 
 | 方法 | 禁用标识符 |
 | --- | --- |
 | `disableAdvertisingIdentifier` | IDFA（iOS 13及以下版本） |
 | `disableIDFVCollection` | IDFV |
+
+<div id="developer-reference-3" />
 
 ### 开发者参考资料
 
@@ -182,6 +216,8 @@ AppsFlyer SDK为应用所有者提供多种保护用户隐私和控制数据收�
 
 </Tab>
 </Tabs>
+
+<div id="note-3" />
 
 > 📘 **对AppsFlyer的数据隐私有疑问？**
 >

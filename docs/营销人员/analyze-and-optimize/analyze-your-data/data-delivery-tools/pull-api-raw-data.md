@@ -26,6 +26,8 @@ x-zendesk:
 
 [![PullAPIRaw_us-en.png](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)
 
+<div id="pull-api-raw-data" />
+
 ## Pull API原始数据报告
 
 * Pull API能够帮助您拉取到CSV格式的原始数据报告。<Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview">详情请见原始数据报告说明。</Anchor>
@@ -33,6 +35,8 @@ x-zendesk:
 * Pull API的其他功能包括：
   * 选择货币
   * 选择时区
+
+<div id="raw-data-reports-available-via-pull-api" />
 
 #### Pull API能够拉取到的原始数据报告
 
@@ -48,6 +52,8 @@ x-zendesk:
 2. 将该API token发送给您的开发人员，用于认证头（Authentication Header）中。
 3. 将下表所列的相关参数发送给您的开发人员，让其在调用API时输入这些参数。这些参数用于界定报告的重点内容、信息梳理方式以及报告覆盖的时间范围。
 4. 让您的开发人员按照开发者资源中心的<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-5">Pull API原始数据指南</Anchor>进行操作。
+
+<div id="parameters" />
 
 #### 参数
 
@@ -199,6 +205,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="traits-and-limitations" />
@@ -232,6 +240,8 @@ x-zendesk:
 | 所选时间段中有数据缺失，或原始数据和汇总数据报告之间有数据差异。 | 请检查`timezone`时区参数是否已配置。如果未配置该参数，则数据会以UTC时间发送，而非应用层级的指定时区。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

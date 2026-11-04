@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **概要：** 本文解释了汇总数据中某些维度显示为*exceeded*（超限）的原因，以及避免数据超限的方法。
 
+<div id="what-are-exceeded-dimensions" />
+
 ## 超限维度的含义
 
 AppsFlyer会收集您的激活和事件数据并对其进行汇总。数据汇总的原理是将唯一值填充到给定的维度，而某个维度中唯一值的数量即称为基数（Cardinality，在数据表中体现为行数）。大部分的数据分析及汇总工具都有分维度的行数限制。当某个维度中的唯一值数量超出该限制时，超出部分的数据就会被另行分组为*exceeded*（超限），单独分行显示。当媒体渠道维度中的唯一值数量超出行数限制时，剩余的渠道数据，**包括所有相关维度的渠道细分数据**都会被归到*exceeded*分组下。
 
 关于行数限制对具体报告的影响，请见下文示例。
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -64,6 +68,8 @@ AppsFlyer会收集您的激活和事件数据并对其进行汇总。数据汇�
 
 <table><tbody><tr><th>维度</th><th>超限数据的分组名称</th><th>限制类型的维度</th><th>每天的数据行数限制 </th><th>Protect360每日数据行数</th></tr><tr><td>广告</td><td>Exceeded_Ad_Limit</td><td>媒体渠道</td><td>1000</td><td>-</td></tr><tr><td>广告ID</td><td>Exceeded_AdID_Limit</td><td>媒体渠道</td><td>1000</td><td>-</td></tr><tr><td>广告组</td><td>Exceeded_AdSet_Limit</td><td>媒体渠道</td><td>1000</td><td>-</td></tr><tr><td>广告组ID</td><td>Exceeded_AdSetID_Limit</td><td>媒体渠道</td><td>1000</td><td>-</td></tr><tr><td>广告系列</td><td>Exceeded_Campaign_Limit</td><td>媒体渠道</td><td>3000</td><td><ul><li>激活/应用内事件：3000</li><li>展示/点击：100 </li></ul></td></tr><tr><td>广告系列ID</td><td>Exceeded_CampaignID_Limit</td><td>媒体渠道</td><td>3000</td><td><ul><li>激活/应用内事件：3000</li><li>展示/点击：100 </li></ul></td></tr><tr><td>流量入口（Channel）</td><td>Exceeded_Channels_Limit</td><td>媒体渠道</td><td>20</td><td>20</td></tr><tr><td>子渠道ID</td><td>Exceeded_SiteID_Limit</td><td>媒体渠道</td><td>1000\*\*</td><td><ul><li>激活/应用内事件/展示/点击：1000\*\*</li></ul></td></tr><tr><td>事件</td><td>Exceeded_Events_Limit</td><td>应用 </td><td>300 </td><td>激活/应用内事件：300 </td></tr><tr><td>关键词</td><td>Exceeded_Keywords_Limit</td><td>媒体渠道</td><td>1000</td><td>-</td></tr><tr><td>媒体渠道名称\*</td><td>Exceeded_MediaSource_Limit</td><td>应用</td><td>1000</td><td><ul><li>激活/应用内事件：1000</li><li>展示/点击：100 </li></ul></td></tr><tr><td colspan="5"><p>\*当<span>媒体渠道维度中的唯一值数量超出行数限制时，剩余的渠道数据</span><strong>，包括所有相关维度的渠道细分数据</strong><span>都会被归到</span><em>exceeded</em><span>分组下。</span></p><p><span>\*\*详情请见<a href="./measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">Exceeded_SiteID_Limit</a>部分的说明。</span></p></td></tr></tbody></table>
 
+<div id="cardinality-limits-per-dimension" />
+
 ## 每个维度的数据行数限制
 
 <div id="exceeded_adset_limit-and-exceeded_ad_limit" />
@@ -72,6 +78,8 @@ AppsFlyer会收集您的激活和事件数据并对其进行汇总。数据汇�
 
 * 每个媒体渠道下，独立广告组名称的数量上限为1000个，独立广告名称的数量上限也是1000。
   * 也就是说，任意一天内，从第1001个开始的所有广告组信息都会被归到名为**Exceeded\_AdSet\_Limit**的渠道分组下。同理，超限广告的信息会被归到名为**Exceeded\_Ad\_Limit**的渠道分组下。
+
+<div id="tip" />
 
 > 👍 **提示**
 >
@@ -98,6 +106,8 @@ AppsFlyer会收集您的激活和事件数据并对其进行汇总。数据汇�
 
 * 一天内独立广告系列名称的数量上限为3000个。
   * 也就是说任意一天内，从第3001个开始的所有广告系列都会被归到名为**Exceeded\_Campaign\_Limit**的渠道分组中。
+
+<div id="tip-1" />
 
 > 👍 **提示**
 >
@@ -133,12 +143,16 @@ AppsFlyer会收集您的激活和事件数据并对其进行汇总。数据汇�
 * 一天内独立事件名称的数量上限为300个。
   * 也就是说任意一天内，从第301个开始的所有事件名称都会被归到名为**Exceeded\_Events\_Limit**的分组中。
 
+<div id="tip-2" />
+
 > 👍 **提示**
 >
 > 如需解决超限问题，使数据表中不再出现**Exceeded\_Events\_Limit**分组，可使用以下方式：
 >
 > * 配置<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件</Anchor>。设置少量通用事件名称（最好不超过20个），减少独立事件的上报数量。使用动态事件值来区分这些事件。这样您就可以根据事件值参数来优化投放，并使用<Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview">应用内事件原始数据报告</Anchor>中的事件值进行数据分析。
 > * 利用<Anchor target="_blank" href="/marketers/zh/docs/implement-validation-rules-to-prevent-fraud">验证规则</Anchor>，将多余的应用内事件从AppsFlyer平台中移除。
+
+<div id="example-1" />
 
 > 📄 **示例**
 >
@@ -174,11 +188,15 @@ AppsFlyer会收集您的激活和事件数据并对其进行汇总。数据汇�
   * 也就是说任意一天内的单个媒体渠道下，从第1001个开始的所有子渠道ID都会被归到名为**Exceeded\_SiteID\_Limit**的子渠道分组中。因此，如果您的数据表中出现名为**Exceeded\_SiteID\_Limit**的子渠道ID，即表示相关渠道下的子渠道ID数量超限，此时若针对子渠道ID进行流量优化，其准确性和有效性会有所下降。
 * 从2024年8月19日起，如果一点内单个媒体渠道下的子渠道ID数量超过5000个，则数据表仅显示其中的10个子渠道ID。剩余的所有子渠道ID都会被归到一个名为**Exceeded\_SiteID\_Limit**的子渠道ID下。
 
+<div id="tip-3" />
+
 > 👍 **提示**
 >
 > 出现超限情况时，可以使用“分治法”来解决数据细分问题。建议您在归因链接中增加一个名为**af\_sub\_siteid**的参数，避免在一个渠道下出现上千个子渠道ID，导致汇总数据失真。您可以设置少量通用的子渠道ID（最好不超过50个），然后将之前所有的子渠道ID作为次级子渠道ID，放到这些通用子渠道ID下。这一方法可以帮助您：
 > 1. Prevent seeing **Exceeded\_SiteID\_Limit**2. 根据重要的子渠道流量有效优化投放。
 > 3. 根据原始数据中的子渠道ID和次级子渠道ID进行深度分析。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -186,7 +204,11 @@ AppsFlyer会收集您的激活和事件数据并对其进行汇总。数据汇�
 
 </Accordion>
 
+<div id="how-to-avoid-getting-exceeded-sources" />
+
 ## 避免数据超限的方法
+
+<div id="the-long-term-solution" />
 
 ### 长期方案
 
@@ -194,11 +216,15 @@ AppsFlyer会收集您的激活和事件数据并对其进行汇总。数据汇�
 
 如果您遇到了**Exceeded**超限分组，很可能是因为您的一个或多个渠道在广告系列名称、子渠道ID、广告组名称或广告名称中使用了动态值。应用代码中的动态应用内事件也可能会导致事件数量超限，并产生**Exceeded\_Events\_Limit**超限分组。
 
+<div id="tip-4" />
+
 > 👍 **提示**
 >
 > 建议在应用内事件、广告系列、子渠道ID、广告组和广告名称中仅使用静态值，避免出现**Exceeded**数据超限分组。
 >
 > 另请参见上文针对各个**Exceeded**超限分组的具体解决方式。
+
+<div id="the-short-term-solution" />
 
 ### 短期方案
 
@@ -207,6 +233,8 @@ AppsFlyer会收集您的激活和事件数据并对其进行汇总。数据汇�
 在此期间，如需解决当前的数据超限问题，可参考下文说明。
 
 如前文所述，当AppsFlyer在一天内收到N+1个点击（或事件）带量渠道时，数据表中就会出现**Exceeded**超限分组。这时有可能发生这样的情况：某个较为重要的渠道由于数据送达时间较晚而被归到**Exceeded**超限分组中。这种情况下，您可以使用以下方式来减轻**Exceeded**分组带来的影响：
+
+<div id="tip-5" />
 
 > 👍 **提示**
 >

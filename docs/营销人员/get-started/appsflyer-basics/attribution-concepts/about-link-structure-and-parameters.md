@@ -62,6 +62,8 @@ x-zendesk:
 ---
 > **概要：**  本文重点介绍了AppsFlyer归因链接的结构和参数。
 
+<div id="overview" />
+
 ## 速览
 
 广告主可利用归因链接收集用户的广告互动数据。归因链接是广告背后的链接，当用户与广告互动时，该链接就会向AppsFlyer上报该行为。用户点击或浏览广告即形成广告互动， 这时AppsFlyer就会收到一条归因链接的副本。
@@ -78,14 +80,20 @@ x-zendesk:
 | 链接结构 | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
 | 示例 | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > AppsFlyer仅支持通过HTTPS协议传输的互动流量，即点击和展示。
+
+<div id="attribution-link-parameters" />
 
 ## 归因链接参数
 
 * 归因链接中的可用参数如下表所列。
 * **字段类型**一列说明了参数值的字数限制。详情请见<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary">参数值长度限制</Anchor>。
+
+<div id="attribution-link-parametersua-and-retargeting" />
 
 ### 归因链接参数——拉新及再营销
 
@@ -140,12 +148,16 @@ x-zendesk:
 | <span id="af_og_description"></span>af\_og\_description | 不适用 | 在社交媒体上分享链接时，可使用开放图谱（Open Graph，简称OG）描述来生成描述预览。 | 字符串限长300 |
 | <span id="af_og_image"></span>af\_og\_image | 不适用 | 在社交媒体上分享链接时，可使用开放图谱（Open Graph，简称OG）图像来生成图像预览。 |  |
 
+<div id="attribution-link-parametersretargeting-only" />
+
 ### 归因链接参数——仅限再营销
 
 | 参数 | 原始数据中的字段名称 | 说明 | 字段类型及长度限制 |
 | --- | --- | --- | --- |
 | <span id="is_retargeting"></span>is\_retargeting | Is Retargeting (campaign) | 所有再营销广告的点击链接里都应含有`&is_retargeting=true`。  <br />如果不包括该参数或其值为 "false"，则AF会视其为拉新广告。 | 5字符枚举 |
 | <span id="af_reengagement_window"></span>af\_reengagement\_window | 再互动窗口期 | 该参数用于调整<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide#reengagement-rules-and-windows">再互动归因窗口期</Anchor>。<br /><br />可在以下范围内调整：<ul><li>1-90天或1-36小时</li><li>全周期：即再互动窗口期无限延长。示例：`&af_reengagement_window=lifetime`</li></ul>默认值：30天<br /><br />示例：`&af_reengagement_window=30d`表示再互动窗口期是30天。 | 不适用 |
+
+<div id="viewability-parameters" />
 
 ### 可见性参数
 
@@ -160,6 +172,8 @@ x-zendesk:
 | <span id="af_ad_displayed_percent"></span>af\_ad\_displayed\_percent | % | 广告在设备屏幕上的最大占比 |
 | <span id="af_audio_total_length"></span>af\_audio\_total\_length | 秒数 | 音频总时长 |
 | <span id="af_audio_played_length"></span>af\_audio\_played\_length | 秒数 | 音频播放时长 |
+
+<div id="android-specific-parameters" />
 
 ### 安卓专用参数
 
@@ -182,6 +196,8 @@ x-zendesk:
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | 不适用 | Amazon Fire Advertising ID |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Google Console中的自定义商店详情页（Custom Store Listing） | 字符串 |
 
+<div id="ios-specific-parameters" />
+
 ### iOS专用参数
 
 | 参数 | 显示名称 | 说明 |
@@ -198,6 +214,8 @@ x-zendesk:
 | <span id="md5_idfv"></span>md5\_idfv | 不适用 | 通过MD5加密的IDFV。 |
 | <span id="sha1_mac"></span>sha1\_mac | 不适用 | 通过SHA1加密的设备mac地址。需要广告平台支持。 |
 
+<div id="example" />
+
 > 📄 **示例**
 >
 > ```http
@@ -206,6 +224,8 @@ x-zendesk:
 > ```
 
 这些参数在<Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview">激活报告</Anchor>、<Anchor target="_blank" href="/marketers/zh/docs/analytics-and-aggregate-reporting-apis">分析工具、报告工具、API</Anchor>中都可用。
+
+<div id="custom-parameters" />
 
 ### 自定义参数
 
@@ -230,11 +250,15 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 
 每个 <Anchor target="_blank" href="http://appsflyer.com/partners">集成的合作伙伴</Anchor> 具有唯一的 PID 值，后缀为 *\_int* 。 使用时 OneLink链接 您可以将PID设置为您喜欢的任何值，只要它是 次要维度 被集成的合作伙伴保留。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > AppsFlyer 阻止使用保留的 <Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns#与appsflyer对接的srn">SRN</Anchor> 在自定义媒体源中使用名称作为PID值，例如电子邮件 和短信。 此限制**不适用**于ASRN。
 
 重要集成保留发布者 ID 的示例：有机， googleadwords\_int（Google AdWords），facebook\_int（Meta广告）， 及 twitter\_int（X 广告）。您可以为非集成的使用任何名称 所有媒体渠道都提供 例如电子邮件、SMS 或邮件鸽子。
+
+<div id="avoid-common-pid-issues" />
 
 #### 如何避免常见的PID问题：
 
@@ -245,6 +269,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
   * 点击或安装在仪表板下显示 ***af\_invalid\_param***
   * 归因链接无法得到归因
   * 点击中的深度链接功能无法正常生效
+
+<div id="tip" />
 
 > 👍 **提示**
 >
@@ -269,6 +295,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 
 要包含附加信息，例如广告类型、投放， 或 在应用内的两者，例如横幅、插页式或视频， 使用子站点ID参数。
 
+<div id="example-1" />
+
 > 📄 **示例**
 >
 > 以下归因链接中包含：
@@ -284,6 +312,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 > * ABCD = 合作来源（子发布者），出版商 正在合作的
 > * 4567 = 应用内的广告类型位置，例如横幅， 插页式或视频
 
+<div id="faq-why-does-traffic-result-in-many-blocked-installs" />
+
 #### **FAQ：为何流量中有很多被屏蔽的激活？**
 
 激活被屏蔽可能是由以下原因导致的：
@@ -295,6 +325,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 为了避免被封锁的安装，请确保您发送一个单一的网站ID 参数 每个发布者，如示例所示。
 
 </Accordion>
+
+<div id="levels-of-data-granularity" />
 
 ## 数据粒度级别
 
@@ -313,6 +345,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 * `Ad set (af_adset=)`
 * `Ad name (af_ad=)`
 
+<div id="example-2" />
+
 > 📄 **示例**
 >
 > 以下归因链接运用了4种颗粒度，记录在“network”平台上投放的“winter”广告系列中”coats“广告组下的“cashmere”广告。
@@ -321,6 +355,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 > https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&
 > af_adset=coats&af_ad=cashmere
 > ```
+
+<div id="frequently-asked-questions" />
 
 ## 常见问题
 
@@ -371,6 +407,8 @@ https://app.appsflyer.com/com.travelco?pid=globalwide_int&clickid=#reqid#
 
 Subscriber Parameters（自配参数），即af\_sub1、af\_sub2…af\_sub\_5，可用于记录任何您关注的KPI。您可以在原始数据报告中查看解析后的自配参数，以便对数据进行汇总或筛选。
 
+<div id="example-3" />
+
 > 📄 **示例**
 >
 > 一款名为Luber的打车应用有3种颜色的素材模板：蓝色、黄色和红色。Luber的移动营销人员Linda想要测试哪种颜色的模板能带来更多激活。因此她在所有非自归因平台的蓝色广告的归因链接里添加了`&af_sub3=blue`，黄色和红色广告以此类推。然后Linda在原始数据报告里查看解析后的相关信息，就能分析出不同颜色广告的效果并找出转化率最高的那一个。
@@ -385,6 +423,8 @@ Subscriber Parameters（自配参数），即af\_sub1、af\_sub2…af\_sub\_5，
 * 广告系列名称的不能以空格开头或结尾，否则会导致面板和报告的数据之间产生差异。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

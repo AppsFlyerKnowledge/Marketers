@@ -50,9 +50,13 @@ x-zendesk:
 | 消息内容（字段） | <ul><li>消息结构为`key:value`。</li><li>请参考AppsFlyer归因<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary#field-availability-by-reporting-tool">Push API</Anchor>的可用字段。</li><li>每个键值对代表一个原始数据字段。详情请见<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary#data-fields-dictionary">AppsFlyer的原始数据字段说明</Anchor>。</li><li>若键值为空或null，则不会出现在消息中。</li><li>以下所附示例中同时包含了null和空白字段，但实际回传中不会出现这两种字段。示例的文件格式为JSON。<ul><li>[iOS](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=0&single=true&output=csv)</li><li>[安卓](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=233131974&single=true&output=csv)</li></ul></li></ul> |
 | 时间戳字段的格式： | <ul><li>UTC时间戳：`yyyy-mm-dd hh:mm:ss.sss`。 举例来说，如果时间戳显示为`2019-09-17 00:09:00.123`。就表示在东京时间18:00发生了一个事件，系统会自动将事件时间将转换为UTC时间，即09:00。记录的时间是UTC时间。</li><li>选定时区（取决于应用层级的配置）时间戳：`yyyy-mm-dd hh:mm:ss.sss±th:tm`。使用场景示例:就表示在东京时间18:00发生了一个事件，显示的事件时间记录为18:00+09:00。09:00为东京时区。</li></ul> |
 
+<div id="available-message-types" />
+
 #### 可用的消息类型
 
 <table><thead><tr><th>归因场景</th><th>消息类型</th><th>conversion_type字段</th><th>campaign_type字段</th><th>event_name字段</th><th>event_type字段</th></tr></thead><tbody><tr><td>用户获取</td><td>激活\*</td><td>install</td><td><p>非自然量UA（用户获取）</p><p>自然：organic</p></td><td>install</td><td><ul><li>install</li><li>organic-install</li></ul></td></tr><tr><td>用户获取 </td><td>UA应用内事件</td><td><span>install</span></td><td><p>非自然量UA（用户获取）</p><p>自然：organic</p></td><td>广告主侧定义的事件名称</td><td><ul><li>install-in-app-event</li><li>organic-install-in-app-event</li></ul></td></tr><tr><td>再营销</td><td>Re-engagement（再互动）</td><td>re-engagement</td><td>retargeting（再营销）</td><td>re-engagement</td><td>re-attribution</td></tr><tr><td>再营销 </td><td>再互动应用内事件</td><td>re-engagement</td><td>retargeting（再营销）</td><td>广告主侧定义的事件名称</td><td>re-engagement-in-app-event</td></tr><tr><td>再营销 </td><td>再归因（reattribution） </td><td>reinstall</td><td>retargeting（再营销）</td><td>re-attribution</td><td>re-attribution</td></tr><tr><td>用户获取 </td><td>Reinstall（重装激活）</td><td>reinstall</td><td><p>非自然量UA（用户获取）</p><p>自然：organic</p></td><td>reinstall</td><td><ul><li>reinstall</li><li>organic-reinstall</li></ul></td></tr><tr><td>再营销</td><td>再归因应用内事件</td><td>reinstall</td><td>retargeting（再营销）</td><td>广告主侧定义的事件名称</td><td>re-attribution-in-app-event</td></tr><tr><td colspan="6">\*一部分浏览型激活会被归因到<a href="./about-raw-data-identifier-restrictions" target="_blank">restricted media source</a>（受限媒体渠道）。 </td></tr></tbody></table>
+
+<div id="unique-fields" />
 
 #### 专属字段
 
@@ -76,6 +80,8 @@ x-zendesk:
 | 数据时效性 | <ul><li>激活、重装和应用内事件：<ul><li>按天进行数据处理</li><li>AppsFlyer收到iOS回传后的第二天发送到您设置的端点</li><li>您会在UTC时间的08:00–11:00接收到事件消息（具体时间可能会有所波动）</li><li>举例来说，周一接收到的回传数据会在周二UTC时间的05:00开始发送</li></ul></li><li>来自iOS的回传和回传副本：AppsFlyer收到消息后将很快发送。</li></ul> |
 | 消息示例 | 请见表格。示例的文件格式为JSON。 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0CO6W7jgx6zxMeSGIo-hbqLbFh3AO0OT6qp4cWmgdbWVMjLJ-2dermVz49jmAXexewiOGzR1YjGzu/pub?output=xlsx">SKAN示例消息</Anchor>。 |
 
+<div id="message-types-for-skan-attribution" />
+
 #### SKAN归因的消息类型
 
 | 消息类型 | event\_name字段 | skad\_redownload字段 | event\_type字段 |
@@ -88,7 +94,11 @@ x-zendesk:
 
 </Accordion>
 
+<div id="set-up-push-api-endpoints" />
+
 ## 设置Push API端点
+
+<div id="caution" />
 
 > ❗️ **注意事项**
 >
@@ -102,6 +112,8 @@ x-zendesk:
 
 请按下表所列的步骤设置Push API。
 
+<div id="push-api-setup-checklist" />
+
 #### Push API设置流程
 
 <table><thead><tr><th>步骤顺序 </th><th>AppsFlyer归因</th><th>SKAdNetwork归因  </th></tr></thead><tbody><tr><td>1</td><td colspan="2"><p>如果您已经有正在使用中的Push API端点，请跳过这一步。 </p><p>请确保您的服务器符合<a href="./push-api-streaming-raw-data#serverside-requirements-your-server">相关要求</a>。</p></td></tr><tr><td>2</td><td>若要使用AppsFlyer归因，请按照<a href="./push-api-streaming-raw-data#push-api-planning-checklist-for-appsflyer-attribution">Push API设置规划表</a>来规划端点的设置。 </td><td>不适用</td></tr><tr><td>3</td><td><a href="./push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">设置AppsFlyer归因端点</a></td><td><a href="./push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint">设置SKAdNetwork归因端点</a></td></tr></tbody></table>
@@ -111,6 +123,8 @@ x-zendesk:
 <Accordion title="服务器端须符合的要求（广告主侧）">
 
 请确保您的服务器符合以下要求：
+
+<div id="server-side-requirements" />
 
 #### 服务器端要求
 
@@ -136,6 +150,8 @@ x-zendesk:
 
 [![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
 
+<div id="endpoint-planning-table" />
+
 #### 端点规划表
 
 | 不可以。 | 配置 | 说明 | 在本栏中记录您的设置规划 |
@@ -153,6 +169,8 @@ x-zendesk:
 <Accordion title="设置AppsFlyer归因端点">
 
 所有有权限访问API的团队成员都可以更改Push API设置。其他类型的用户只能查看该设置。
+
+<div id="add-an-appsflyer-attribution-endpoint" />
 
 #### 请按以下步骤添加AppsFlyer归因端点：
 
@@ -173,6 +191,8 @@ x-zendesk:
 8. 点击**保存**。  
    该Push API就开始生效，将转化数据发送到端点。
 9. 请按以下步骤测试端点。
+
+<div id="test-the-endpoint" />
 
 #### 测试端点：
 
@@ -214,6 +234,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-proceduresmanaging-endpoints" />
+
 ## 其他操作 — 端点管理
 
 所有有权限访问API的团队成员都可以更改Push API设置。其他类型的用户只能查看该设置。
@@ -243,6 +265,8 @@ x-zendesk:
    端点被删除。
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## 问题排查、特点和局限性
 
@@ -331,6 +355,8 @@ https://your.server.com?consumer_key=abc456
 ```
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

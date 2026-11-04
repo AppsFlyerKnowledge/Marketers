@@ -25,6 +25,8 @@ x-zendesk:
 | **重要须知** | <ul><li>Unity将推出新的成本API对接。</li><li>旧版成本API对接在2024年10月1日下线前仍可获取成本数据。</li></ul> |
 | **待办事项** | 请务必更新您的证书信息，以启用新的Unity成本API对接，确保在2024年10月1日之后仍能正常获取成本信息。<br /><br />必要的证书信息如下：<ul><li>Organization Core ID</li><li>Service Account Secret Key</li><li>Service Account Key ID</li></ul>请按照下文说明在AppsFlyer后台更新您的Unity成本对接。更新流程分为以下两个步骤：<ol><li>[获取新的Unity证书](/docs/bulletin-unity-ads-cost-api-integration-update#get-unity-credentials)。</li><li>[在AppsFlyer后台输入新的证书信息，更新Unity成本API的对接。](/docs/bulletin-unity-ads-cost-api-integration-update#set-up-unity-cost-api-integration-in-appsflyer)</li></ol> |
 
+<div id="unity-cost-api-integration-procedures" />
+
 ## Unity成本API对接流程
 
 Unity成本API的对接流程分为以下两个步骤：

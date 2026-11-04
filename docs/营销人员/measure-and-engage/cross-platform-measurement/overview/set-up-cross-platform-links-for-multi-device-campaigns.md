@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **概要：本文介绍了AppsFlyer如何对发生在不同设备上的应用激活和广告展示进行匹配，帮助广告主开展跨平台的应用推广和衡量工作。比如将移动端的应用激活归因到CTV设备上的广告展示、将掌机端或CTV设备上的应用激活归因到移动端或PC端（网页）的广告展示等等。**
 
+<div id="overview" />
+
 ## 概览
 
 使用AppsFlyer的跨平台归因链接（展示URL）后，您就可以将一个平台上发生的激活归因到另一个平台上的广告展示。此外，该功能还可以将一所住宅内的多个激活归因到同一个跨平台广告展示。
+
+<div id="create-a-onelink-templatefor-cross-platform-attribution" />
 
 ## 创建或编辑OneLink模板，用于跨平台归因。
 
@@ -36,9 +40,13 @@ x-zendesk:
 2. 进入**跨平台归因**板块，点击**编辑按钮 ->** **启用跨平台归因**。
 3. 在相关系统平台的下拉菜单中，选择需要使用跨平台归因的应用。**注意**： 每个应用只能添加到一个启用跨平台归因的 OneLink 模板中。[<Image alt="跨平台归因.png" src="https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png" width="476px" />](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)
 
+<div id="set-up-cross-platform-partner-integration" />
+
 ## 设置跨平台合作伙伴集成
 
 要使用跨平台印象 URL 设置跨平台归因，请为每个目标应用配置合作伙伴集成。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -84,6 +92,8 @@ x-zendesk:
    ```
 8. 让广告平台将该链接放在CTV、PC端货主机端广告中。
 
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > 请根据实际需求为自有媒体和非对接渠道添加适用的参数。 如需进一步了解其他可用参数及其对应的数据和指标，请参考<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">此文档</Anchor>。
@@ -101,6 +111,8 @@ x-zendesk:
 1. 在跨平台设置部分，选中 **相等优先级** 复选框。
 2. 点击**保存**。
 
+<div id="note" />
+
 > 📘 **注意事项**
 >
 > 启用相等优先级可能会导致 AppsFlyer 优先考虑其自身的归因，而不是其他来源。谨慎使用此设置，仅在其与您的整体归因策略一致时使用。
@@ -110,6 +122,8 @@ x-zendesk:
 ## 广告平台列表
 
 如需了解哪些广告平台能在CTV、PC端和主机端展示广告且支持跨平台归因，请先登入您的AppsFlyer账号，然后在<Anchor target="_blank" href="https://hq1.appsflyer.com/partner-marketplace/explore?integrationLevels=CROSS_PLATFORM">AppsFlyer的Partner Marketplace</Anchor>渠道平台中查看相关列表。
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 
@@ -125,6 +139,8 @@ x-zendesk:
 | <span id="cross-platform-attribution-links-in-mobile-devices"></span>移动设备中的跨平台归因链接 | 当用户在移动端设备上看到跨平台归因链接时，AF会通过常规的移动端概率模型逻辑对该用户进行归因，而不使用<Anchor target="_blank" href="/marketers/zh/docs/ctv-pc-and-console-platform-attribution-concepts#tv-screens">CTV</Anchor>、PC和主机端专用的跨平台归因流程。因此，移动端的展示不能使用同等归因优先级设置、[延长的回溯窗口期](#step-3-enable-equal-priority-for-crossplatform-impressions)或[基于住宅的归因](#attribution-window)，这些设置只支持真实的跨平台展示。 |
 | <span id="agency-permissions"></span>代理权限 | 代理商无法在其端切换“跨平台相等归因优先级”。此配置直接复制自特定广告网络的广告主设置。 |
 
+<div id="discrepancies" />
+
 ## 数据差异
 
 AppsFlyer和tvScientific的归因模式不同，因此两者的面板之间可能会有一些数据差异。具体的差异原因请见下表：
@@ -135,6 +151,8 @@ AppsFlyer和tvScientific的归因模式不同，因此两者的面板之间可�
 | 回溯窗口 | 最长30天 | 最长72天 |
 | 再营销 | 同时支持新用户（激活）以及老用户（再互动）的归因 | 仅支持新用户（激活）的归因 |
 | 成本归因 | 成本归因到展示，不分操作系统 | 成本归因到iOS和安卓系统中对应的展示 |
+
+<div id="faq" />
 
 ## 常见问题解答
 

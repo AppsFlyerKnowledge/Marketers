@@ -25,6 +25,8 @@ x-zendesk:
 
 ![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
 
+<div id="overview" />
+
 ## 简介
 
 * 广告主可以在AppsFlyer后台的规则配置页面中界定流量的验证规则。我们提供多种可定制的条件和逻辑，帮助广告主筛选出需要保留或拦截的应用激活或应用内事件。
@@ -86,6 +88,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="rule-builder" />
+
 ## 规则配置界面
 
 规则配置界面旨在为您提供更具互动性的规则配置体验。**小贴士：** 建议您在细读本文前先探索一下规则配置界面中的各种选项，熟悉其中的内容。
@@ -100,6 +104,8 @@ x-zendesk:
 | 流量来源 | 设定这条规则所适用的流量。[另请参阅Protect360流量来源说明部分](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-and-inapp-event-sources) |
 | 条件 | 选择拦截“符合”或“不符合”指定条件的激活/应用内事件。<ul><li>**符合条件** - 对于符合指定条件的所有激活/应用内事件，AppsFlyer会阻断其归因，并执行您在“操作”部分指定的操作。</li><li>**不符合条件** - 对于不符合指定条件的所有激活/应用内事件，AppsFlyer会阻断其归因，并根据您在下个部分中指定的方式进行处理。</li></ul>另请参见适用于[激活](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-conditions)和[应用内事件](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions)的Protect360条件。 |
 | 可用操作 | 对于符合指定条件的激活，设置AppsFlyer的处理方式：<ul><li>**将这些激活标记为无效，并不对其进行归因**。这些激活不会出现在Protect360面板及报告以外的AppsFlyer面板中。</li><li>**阻断当前渠道的归因并将结果纠正到上一个有效渠道**。如果未发现有效渠道，则相关激活会被判定为自然量。</li></ul>对于符合指定条件的应用内事件，设置AppsFlyer的处理方式：<ul><li>**阻断归因，但在Protect360数据中呈现该事件**。相关事件不会被归因，但会出现在Protect360的面板和原始数据报告中。</li><li>**从AppsFlyer中删除**。相关事件完全不会出现在AppsFlyer平台中。</li></ul>详情请见[验证结果](/docs/implement-validation-rules-to-prevent-fraud#outcomes)说明部分 。 |
+
+<div id="validation-rule-examples" />
 
 ## 验证规则示例
 
@@ -133,6 +139,8 @@ x-zendesk:
 每一条规则下都可以添加多个条件和条件组合。
 
 下表列出了设置条件时可用的维度、运算符和值。
+
+<div id="bulk-upload" />
 
 #### 批量上传
 
@@ -179,6 +187,8 @@ x-zendesk:
 | 条件 | Operator | 字段值 | 说明 |
 | --- | --- | --- | --- |
 | 事件名称 | <ul><li>In list（在列表中）</li><li>Not in list（不在列表中）</li><li>Equals（等于）</li><li>Doesn’t equal（不等于）</li><li>Contains（包含）</li><li>Doesn’t contain（不包含）</li><li>Starts with（开头是）</li><li>Ends with（结尾是）</li><li>Is empty（是空值）</li><li>Isn’t empty（不是空值）</li><li>Matches regular expression（匹配正则表达式）</li></ul> | <ul><li>搜索所需的值。</li><li>从菜单中选择所需值。</li><li>输入自定义文本（用于未出现在搜索结果中的值）。</li></ul> | <ul><li>输入的自定义文本必须与原始数据中的名称完全一致。</li></ul> |
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -239,6 +249,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-features" />
+
 ## 其他功能
 
 <div id="view-rule-list" />
@@ -274,6 +286,8 @@ x-zendesk:
 6. 点击【可选】**预估流量变化**，查看[这条规则会对流量产生什么样的影响](/docs/implement-validation-rules-to-prevent-fraud#view-validation-rule-impact)。
 7. 点击**保存**。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 应用版本仅限数字。如 2.2.1
@@ -301,6 +315,8 @@ x-zendesk:
 
 推荐方法：首先在标记模式中创建规则，审查数据存储中的标记流量，并在对规则的准确性有信心时将规则状态更改为已实施。力争在7天内完成此审查，以保持主动保护。
 
+<div id="how-tagged-mode-works" />
+
 #### 标记模式的工作原理
 
 当您创建或编辑验证规则时，在规则结果部分选择检测状态。
@@ -310,6 +326,8 @@ x-zendesk:
 
 请注意：标记模式仅适用于规则保存后的实时流量。它不会标记历史数据。
 
+<div id="rule-outcome-configuration" />
+
 #### 规则结果配置
 
 规则结果部分，之前称为操作，定义了AppsFlyer如何处理符合规则条件的流量。它还提供了规则配置的高级摘要，以便您在保存规则之前验证预期的影响。
@@ -318,6 +336,8 @@ x-zendesk:
 | --- | --- | --- |
 | 已标记 | 无影响流量正常归因。 | 在数据锁定报告中可见。原始数据报告的可用性计划在第二季度。 |
 | 或实施假量处理 | 主动阻止。根据所选规则结果，归因被阻止。 | 在Protect360仪表板和导出报告中可见。 |
+
+<div id="what-to-expect-when-configuring-a-rule" />
 
 #### 配置规则时的预期情况
 
@@ -331,6 +351,8 @@ x-zendesk:
 
 当检测状态设置为已实施时，符合规则标准的安装或应用内事件将被阻止归因或根据所选规则结果重新归因。信息面板在您保存规则之前总结了活动结果。
 
+<div id="example-match-logic" />
+
 #### 示例：匹配逻辑
 
 对于符合所选应用规则条件的检测到的安装，信息面板可以指示这些安装为：
@@ -338,6 +360,8 @@ x-zendesk:
 * 被阻止归因或被检测为后归因。
 * 重新归因于最后一个有效的非自然或自然来源。
 * 在导出报告中可见。
+
+<div id="example-do-not-match-logic" />
 
 #### 示例：不要匹配逻辑
 
@@ -348,6 +372,8 @@ x-zendesk:
 * 在导出报告中可见。
 
 所有其他满足这些应用程序规则条件的安装不会被阻止。
+
+<div id="set-a-rule-to-tagged-mode" />
 
 #### 将规则设置为标记模式
 
@@ -360,6 +386,8 @@ x-zendesk:
 5. 点击保存。
 
 规则保存后，AppsFlyer会标记匹配的实时流量以便报告和分析。归因照常进行。
+
+<div id="analyze-tagged-data" />
 
 #### 分析标记数据
 
@@ -382,6 +410,8 @@ x-zendesk:
 | tagged\_sub\_reason | 表示流量是通过验证规则标记的。 |
 | detected\_rule\_name | 标记记录的验证规则名称。 |
 | detected\_rule\_id | 标记记录的验证规则的唯一 ID。 |
+
+<div id="change-a-tagged-rule-to-implemented" />
 
 #### 将标记的规则更改为已实施。
 
@@ -411,6 +441,8 @@ x-zendesk:
 </Accordion>
 
 </Accordion>
+
+<div id="faq" />
 
 ## 常见问题解答
 
@@ -506,6 +538,8 @@ x-zendesk:
 * **最近未安装** ***X*** **版本**：允许从所选应用的 **最后 X 版本** 安装，并 **阻止** 从 **所有早期版本** 安装。
 * **最近未安装 (主要)** ***X*** **版本**：当您的版本控制包括 **多个主要版本系列** 时使用（例如，1.x 和 2.x）。此条件允许 **每个主要系列中的最后 X 版本**，并阻止每个系列中的早期版本。
 
+<div id="example-not-in-last" />
+
 ##### 示例：Not in last（不在最后n个版本中）
 
 您有这些现有的应用版本：
@@ -528,6 +562,8 @@ x-zendesk:
   * 1.0.03
   * 2.0.01
 
+<div id="example-not-in-last-major" />
+
 ##### 示例：Not in last (major)（不在主版本的最后n个次版本中）
 
 使用上面的相同版本列表，定义的规则为 **最近未安装 (主要) 2 版本**：
@@ -540,6 +576,8 @@ x-zendesk:
 * **阻止**：
   * 1.0.01
   * 2.0.01
+
+<div id="understand-how-the-condition-works-with-multiple-apps" />
 
 ##### **了解条件如何与多个应用一起工作**
 

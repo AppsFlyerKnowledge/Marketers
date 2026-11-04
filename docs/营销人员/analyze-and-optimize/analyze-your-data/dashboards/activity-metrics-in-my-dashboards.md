@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** 借助My Dashboards中的活动指标，您可以准确、灵活、快速地评估任意时间范围内的应用表现，洞察用户互动趋势、收入情况，并及早发现问题。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 净收入指标将在2026年7月至8月间逐步向客户推广。如果你还没看到他们，就不需要采取任何行动;这些文件将在这段时间内为您的账户开放。参见 <Anchor target="_blank" href="/marketers/zh/docs/bulletin-cohort-and-activity-metrics-update-in-my-dashboards">公告：My Dashboards 中的群组与活跃数据指标更新</Anchor>
+
+<div id="about-activity-metrics" />
 
 ## 关于活跃维度指标
 
@@ -37,6 +41,8 @@ My Dashboards中的活动指标可帮助您在统一视图中分析活动、LTV�
 * **按日或按月**灵活自定义（活跃用户）报表拆分数据。
 
 注意：在My Dashboards中，**活跃维度数据**（Activity）已更名为**实际**（Actual）。此调整旨在明确这些指标反映的是所选时间范围内的真实用户行为，而非基于LTV聚合的数据。同时，Actual也是应用打开（Sessions）、毛利润（Gross Profit）和总收入（Total Revenue）的默认统计周期。
+
+<div id="dashboard-information" />
 
 ## 面板信息
 
@@ -56,6 +62,8 @@ My Dashboards中的活动指标可帮助您在统一视图中分析活动、LTV�
 
 如需了解详细操作步骤，请参见此处说明。
 
+<div id="available-activity-metrics" />
+
 ## 可用的活动指标
 
 * 除了活跃用户、过去31天的活跃用户和DAU/MAU之外，其余所有指标均支持群组周期和LTV分析。
@@ -71,6 +79,8 @@ My Dashboards中的活动指标可帮助您在统一视图中分析活动、LTV�
 | 首次访问 | 首次访问网页应用的次数。计入行数，conversion\_name = first\_visit。仅适用于网页应用。 |
 | 重演 | 非自然回访网页应用的次数。计为conversion\_name=重访的行。仅适用于网页应用。 |
 | 用户获取 | 支持跨平台归属或网页应用。对于网页应用，用户获取反映的是首次访问次数，除非设置了用户获取事件。对于移动应用来说，用户获取等于安装量。当同时查看多个应用时，用户获取 = 安装次数 + 首次访问次数（或客户端配置的自定义网页事件）。 |
+
+<div id="available-in-app-metrics" />
 
 ## 可用应用内指标
 
@@ -105,6 +115,8 @@ My Dashboards中的活动指标可帮助您在统一视图中分析活动、LTV�
 * 如果两者均未提供净收入，指标显示为N/A。
 
 参见 <Anchor target="_blank" href="/marketers/zh/docs/about-roi360-store-revenue">关于ROI360门店收入</Anchor> 以及 <Anchor target="_blank" href="/marketers/zh/docs/in-app-events-event-structure">应用内事件 - 事件结构</Anchor>.
+
+<div id="supported-filter-and-group-by-dimensions" />
 
 ## 支持的筛选与分组维度
 
@@ -141,6 +153,8 @@ My Dashboards中的活动指标可帮助您在统一视图中分析活动、LTV�
   * 月份
   * 媒体渠道
   * 代理
+
+<div id="specifications-and-limitations" />
 
 ## 特点与局限性
 

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** 如何通过AppsFlyer进行购买与订阅收入，以及两种解决方案的对比：收据验证与ROI360商店收入。
 
+<div id="about-purchase-and-subscription-validation" />
+
 ## 关于购买和订阅验证
 
 购买与订阅验证可以帮助您提高收入数据的真实性与可信度。用户在应用内完成一次性购买或订阅后，您可以通过与应用商店（Apple App Store和Google Play）核验交易，确保只有真实完成付款的交易被纳入衡量与归因。
@@ -29,7 +31,11 @@ AppsFlyer为您提供了两种验证和衡量应用内购买及订阅收入的�
 
 本文将对两种方案进行整体介绍，并通过[功能对比](#收据验证与roi360商店收入对比)，帮助您判断哪一种更适合您。
 
+<div id="the-two-solutions-for-purchase-and-subscription-validation" />
+
 ## 购买和订阅验证的两种解决方案
+
+<div id="receipt-validation" />
 
 ### 收据验证
 
@@ -45,7 +51,11 @@ AppsFlyer为您提供了两种验证和衡量应用内购买及订阅收入的�
 
 * <Anchor target="_blank" href="/marketers/zh/docs/set-up-receipt-validation">设置收据验证</Anchor>
 
+<div id="roi360-store-revenuepremium" />
+
 ### ROI360 商店收入溢价
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -62,6 +72,8 @@ ROI360商店收入是AppsFlyer的高阶解决方案，面向需要高精度收�
 * <Anchor target="_blank" href="/marketers/zh/docs/about-roi360-store-revenue">关于ROI360商店收入</Anchor>
 
 * <Anchor target="_blank" href="/marketers/zh/docs/set-up-roi360-store-revenue">设置ROI360商店收入</Anchor>
+
+<div id="compare-receipt-validation-and-roi360-store-revenue" />
 
 ## 收据验证与ROI360商店收入对比
 

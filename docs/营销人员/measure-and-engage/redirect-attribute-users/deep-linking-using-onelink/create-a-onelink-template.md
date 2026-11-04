@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了OneLink模板的配置方式。后续创建的OneLink链接将以模板中的跳转逻辑为基础，用于各类营销投放。您必须先配置模板，然后才能创建链接并打造终端用户体验。
 
+<div id="onelink-templates" />
+
 ## OneLink模板
 
 <Embed title="创建OneLink模板" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />
@@ -34,6 +36,8 @@ OneLink模板具有以下特点：
   * **未安装应用的新用户**：跳转到与其设备适配的应用商店或网址
   * **已安装应用的现有用户**：通过安卓的App Link、iOS的Universal Link或URI scheme调起应用需要协同开发人员完成相关设置。
   * **请注意**：网站或应用商店的跳转可以分链接单独设置。
+
+<div id="create-a-onelink-template" />
 
 ## 创建OneLink模板
 
@@ -54,6 +58,8 @@ OneLink模板具有以下特点：
    进入 OneLink模板设置页面。  
    [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
 3. 在**OneLink模板名称**字段中为其命名。
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -213,6 +219,8 @@ OneLink模板具有以下特点：
 
 6. 点击**更新OneLink模板**。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 保存或更新OneLink模板时，AppsFlyer的系统会自动生成AASA和/或Digital Asset Link的JSON文件用于域名验证，并为您保存在服务器中。如果验证失败，Universal Link和App Link可能无法正常跳转。
@@ -252,6 +260,8 @@ OneLink模板具有以下特点：
 
 ## 特点与局限性
 
+<div id="key-traits-and-limitations" />
+
 <div id="traits-and-limitations" />
 
 <Accordion title="特性与限制">
@@ -269,6 +279,8 @@ OneLink模板具有以下特点：
 </Accordion>
 
 对OneLink模板有疑问？我们的<Anchor target="_blank" href="/marketers/zh/docs/onelink-troubleshooting-and-faq#onelink模板常见问题解答">常见问题解答</Anchor>文档可以帮助您找到答案！
+
+<div id="next-step" />
 
 ## 下一步
 

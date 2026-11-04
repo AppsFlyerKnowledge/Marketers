@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概览：** 如您在使用 AppsFlyer 产品过程中遇到问题，或者需要操作指导时，可通过 Customer Assistant Chatbot 客服助手机器人获取帮助。机器人不仅能为您解答问题，还能在必要时帮助您向相关团队提交工单。
 
+<div id="overview" />
+
 ## 概览
 
 Customer Assistant Chatbot 能够根据您遇到的问题类型，将您引导至相应的团队进行处理，无论是账户管理、费用问题、产品指导、还是技术支持。在此过程中，该机器人将引导您填写必要信息，以便为您提供准确的支持，减少补充资料的时间。
@@ -35,6 +37,8 @@ Customer Assistant Chatbot 能够根据您遇到的问题类型，将您引导�
    <Image alt="Bildschirmfoto 2026-08-26 um 12.17.34.png" src="https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png" width="75%" />
 
    3. 点击**提交**
+
+<div id="viewing-support-tickets" />
 
 ## 如何查看工单的处理进度？
 

@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了AppsFlyer SDK的版本管理政策以及目前给予维护的SDK版本。
 
+<div id="about-versioning" />
+
 ## 版本管理说明
 
 AppsFlyer历年来发布了多个版本的SDK。每个版本的SDK调用的API版本都有所不同。为了界定每个API在各版本SDK中的使用时长，我们制定了版本管理政策。
+
+<div id="why-do-we-need-version-control" />
 
 ## 版本管理的意义
 
@@ -38,15 +42,21 @@ AppsFlyer历年来发布了多个版本的SDK。每个版本的SDK调用的API�
 * 增强稳定性（向下兼容范围为2.5年），避免广告主在使用非常陈旧的SDK时出现意外的问题。
 * 帮助广告主利用新版SDK支持的新功能。
 
+<div id="sdk-version-lifecycles" />
+
 ## SDK版本的生命周期
 
 每个版本的API至少可运行2.5年。每当有新的主要或次要SDK版本上线时，AppsFlyer会为此前的次要版本（包括其各版补丁）设定下线日期。
 
 <strong>AppsFlyer将按照原计划，在六个月的周期内，逐步停止对iOS和Android旧版SDK的支持。</strong>此机制旨在为广告主预留充足时间，以便开发团队提前规划和升级，确保应用功能不受影响。请及时升级到最新版SDK，体验最新功能、更高稳定性和持续的技术支持。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 为了确保平稳过渡，建议应用开发者在停止支持日期前完成SDK升级。
+
+<div id="end-of-support-vs-deprecated" />
 
 ## 停止支持与弃用的区别
 
@@ -55,11 +65,15 @@ AppsFlyer历年来发布了多个版本的SDK。每个版本的SDK调用的API�
 * **已弃用的版本**由于存在已知问题（如严重Bug），官方不再推荐使用的SDK版本。这些版本仍然可以向AppsFlyer发送数据，但不鼓励开发者继续使用，我们强烈建议您升级到受支持的版本。
 * **停止支持版本：** 不再进行任何数据衡量的SDK版本。在iOS和Android平台上，激活、应用打开和应用内事件都将无法被记录。来自这类版本的请求（除非被AppsFlyer特别豁免）将收到400错误码，表示虽然SDK会继续尝试发送请求，但AppsFlye 服务器将拒绝处理，数据也不会被接收或存储。
 
+<div id="what-happens-when-an-sdk-version-has-reached-its-end-of-support-date" />
+
 ## 当SDK版本达到其支持结束日期时会发生什么？
 
 一旦SDK的版本达到其支持结束日期，AppsFlyer服务器将不再测量安装、会话和应用内事件。发送到这些端点的事件会直接被拦截。
 
 鉴于应用更新后的采纳周期，**强烈建议**您的开发人员在下线日期之前预留出充分的时间，提前完成SDK升级。
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：高级安全软件包是** 专为企业级身份管理、令牌访问控制和扩展审计可见性而设计的高级产品，可增强对账户的保护。
 
+<div id="intro" />
+
 ## 引言
 
 高级安全软件包汇集了三个关键功能，可提升贵组织的安全性：
@@ -29,6 +31,8 @@ x-zendesk:
 * **审计日志 API，可延长保留时间**：获得平台活动的长期可见性，并将审计事件整合到监控堆栈中。
 * **SCIM 配置**：通过身份提供商实现用户访问控制的自动化和集中化。
 * **允许登录的 IP 地址列表：** 防止未经授权的访问，确保仅从受信任的网络和 IP 登录 AppsFlyer 仪表板
+
+<div id="compare-the-standard-and-enterprise-grade-packages" />
 
 ### 比较标准套餐和高级套餐：
 
@@ -48,12 +52,16 @@ x-zendesk:
 
 每种类型（API、S2S、OneLink）最多可创建和管理**30 个令牌**，并有**服务级别限制**，以提高令牌的可扩展性、安全性和控制力。
 
+<div id="key-features" />
+
 #### 主要功能
 
 * 与标准令牌的 2 个令牌相比，管理员可为**每种类型**创建多达**30** 个令牌，从而为更大的团队和复杂的工作流程提供支持。
 * 为 API 标记分配特定于服务的访问权限，限制对敏感操作的访问。
 * 代币可以撤销或轮换，而不会破坏集成或自动化。
 * 通过特定令牌权限，简化与内部团队和外部合作伙伴的协作。
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -63,9 +71,13 @@ x-zendesk:
 >
 > **仅用于设置的访问令牌：** 发布一个令牌，让内部团队管理配置设置，但不允许他们提取数据。这就将管理功能与数据访问隔离开来。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 有关标准令牌的一般信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens">管理 AppsFlyer 令牌</Anchor>。
+
+<div id="how-to-access-and-control-tokens" />
 
 #### 如何访问和控制令牌
 
@@ -92,6 +104,8 @@ x-zendesk:
 * 单独删除令牌
 * 监控审计日志中的令牌活动
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 标记不可编辑。更改访问权限、删除和重新创建令牌。
@@ -104,6 +118,8 @@ x-zendesk:
 
 该功能增强了现有的审计日志功能，引入了用于审计日志消耗的 API，并将数据保留时间从 90 天延长至 180 天。对于需要长期访问用户操作日志或将审计事件集成到SOC 和 SEIM 等外部监控工具中的团队来说，它是理想之选。
 
+<div id="key-features-1" />
+
 #### 主要功能
 
 * 使用专用 API 以编程方式访问审计日志
@@ -112,9 +128,13 @@ x-zendesk:
 * 使用特定于服务的令牌来隔离日志访问
 * 将数据导出到 SIEM 工具、仪表板或云存储中
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 有关标准审计日志的一般信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/audit-log">标准审计日志</Anchor>。
+
+<div id="how-to-access-the-audit-log-via-api" />
 
 ### **如何通过 API 访问审计日志**
 
@@ -126,6 +146,8 @@ x-zendesk:
 4. 使用现有的**API 令牌**或创建新的**API 令牌**。
 5. 在**访问限制**下，选择**审计日志**服务。
 6. 使用令牌验证对审计日志 API 端点的请求。
+
+<div id="note-3" />
 
 > 📘 **注意**
 >
@@ -141,11 +163,15 @@ SCIM 配置通过直接从身份提供商 (IdP)（如 Okta、Entra ID (Azure)、
 
 通过 SCIM 同步用户，您可以实时全面控制访问权限。与 SAML 2.0 SSO 相结合，可为企业客户提供完整的身份和访问管理解决方案。
 
+<div id="key-features-2" />
+
 #### **主要功能**
 
 * 根据身份提供商（IdP）记录在 AppsFlyer 中自动创建用户。
 * 用户角色或 IdP 状态的变化会立即反映在 AppsFlyer 中。
 * 使用**SAML 2.0**进行安全 SSO，使用**SCIM**进行配置，与 Okta 和 Azure AD 等领先的 IdP 兼容。
+
+<div id="how-to-set-up-scim-provisioning" />
 
 #### **如何设置 SCIM 配置**
 
@@ -153,6 +179,8 @@ SCIM 配置通过直接从身份提供商 (IdP)（如 Okta、Entra ID (Azure)、
 
 1. [设置 SSO](/docs/enterprise-grade-security-package#sso-设置)
 2. [启用 SCIM](/docs/enterprise-grade-security-package#启用-scim)
+
+<div id="sso-set-up" />
 
 #### SSO 设置
 
@@ -162,7 +190,11 @@ SCIM 配置通过直接从身份提供商 (IdP)（如 Okta、Entra ID (Azure)、
 * <Anchor target="_blank" href="/marketers/zh/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-set-up-appsflyer">在 AppsFlyer 中设置 SSO</Anchor>
 * <Anchor target="_blank" href="/marketers/zh/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-configuration">测试 SSO 配置</Anchor>
 
+<div id="enable-scim" />
+
 #### 启用 SCIM
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -176,9 +208,15 @@ SCIM 配置通过直接从身份提供商 (IdP)（如 Okta、Entra ID (Azure)、
 * 添加[角色](/docs/enterprise-grade-security-package#角色)
 * 添加[外部命名空间](/docs/enterprise-grade-security-package#external-namespace)
 
+<div id="idp-instruction-links" />
+
 #### IdP 指令链接
 
+<div id="the-instructions-for-the-idps-can-be-found-below-okta-entra-id-azure-onelogin-jumpcloud" />
+
 ##### IDP 的使用说明如下。<Anchor target="_blank" href="https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm">Okta</Anchor>, <Anchor target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service">Entra ID (Azure)</Anchor>, <Anchor target="_blank" href="https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010298">OneLogin</Anchor>, <Anchor target="_blank" href="https://jumpcloud.com/support/get-started-identity-management-connectors">跳云</Anchor>
+
+<div id="scim-connections" />
 
 #### SCIM 连接
 
@@ -190,6 +228,8 @@ SCIM 配置通过直接从身份提供商 (IdP)（如 Okta、Entra ID (Azure)、
 | 用户唯一标识符字段 | userName |
 | 验证方法：名为 "授权 "的 HTTP 标头 | 承载器 &lt;<Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens">您的 AppsFlyer API 标记</Anchor>> |
 
+<div id="scim-attributes" />
+
 #### SCIM 属性
 
 | **属性** | **类型** | **必须配置** | **字段名称** | **外部命名空间** | **说明** |
@@ -197,6 +237,8 @@ SCIM 配置通过直接从身份提供商 (IdP)（如 Okta、Entra ID (Azure)、
 | 角色 | 字符串 | ✅ | 角色 | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | <ul><li>为用户分配预定义或自定义角色。</li><li>请参阅以下必须输入的 AppsFlyer 角色列表</li></ul> |
 | 开放所有后续应用的权限 | Boolean | ❌ | allowAccessToAllFutureApps | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | 如果启用，用户将自动获准访问新应用程序。 |
 | 允许的应用程序 ID | 字符串 | ❌ | appIDs | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | 以逗号分隔的应用程序 ID 列表。所有应用程序留空，无应用程序则设置为 "无"。 |
+
+<div id="roles" />
 
 #### 角色
 
@@ -215,6 +257,8 @@ SCIM 配置通过直接从身份提供商 (IdP)（如 Okta、Entra ID (Azure)、
 | 质量保证 | 质量保证 |
 | 自定义角色 | [输入自定义角色值］ |
 
+<div id="limitations" />
+
 #### 局限性
 
 | **局限性** | **说明** |
@@ -228,6 +272,8 @@ SCIM 配置通过直接从身份提供商 (IdP)（如 Okta、Entra ID (Azure)、
 <Accordion title="IP 白名单">
 
 增强的 IP 允许列表功能可防止未经授权的访问，确保只有受信任的网络才能与平台互动，从而提高安全性。这一功能对于执行严格的安全策略或管理远程访问的企业尤为重要。
+
+<div id="key-features-3" />
 
 #### 主要功能
 

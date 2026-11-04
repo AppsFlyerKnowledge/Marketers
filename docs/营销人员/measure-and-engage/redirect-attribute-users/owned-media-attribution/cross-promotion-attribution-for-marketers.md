@@ -27,6 +27,8 @@ x-zendesk:
 
 ![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
 
+<div id="about-cross-promotion" />
+
 ## 交叉推广
 
 交叉推广广告非常适用于现有应用的营销以及新发应用的获客。与大部分其他流量渠道相比，这类广告能带来更高的转化率和留存率。由于交叉推广使用自有媒体进行投放，因此广告主可以根据[设备ID](/docs/cross-promotion-attribution-for-marketers#交叉推广的归因)对新增激活进行确定性的归因。交叉推广归因对所有账号开放，无论您使用哪一种AppsFlyer套餐。
@@ -34,6 +36,8 @@ x-zendesk:
 下图针对交叉推广的应用展示了相应的面板数据，其中对自有媒体（**af\_cross\_promotion**）及其他渠道上的广告投放指标进行了拆解。您可以看到交叉推广的激活数量和转化率要显著高于其他渠道。
 
 [![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+
+<div id="how-does-cross-promotion-work" />
 
 ### 交叉推广的原理
 
@@ -46,6 +50,8 @@ x-zendesk:
    * 带来这次新增激活的应用（即source app，流量侧应用）会显示为该交叉推广渠道的**子渠道**。
 6. SDK会自动生成一个应用内事件。  
    在安卓应用中，该事件的名称是为`af_cross_promotion`；在iOS应用中，事件名为`af_cross_promotion_clicked`。
+
+<div id="attributing-cross-promotion" />
 
 ## 交叉推广的归因
 
@@ -63,6 +69,8 @@ x-zendesk:
 | GAID | 支持Google Play的安卓设备 |  |  |
 | OAID、Android ID、IMEI、Fire ID | 不支持Google Play的安卓设备 |  |  |
 
+<div id="setting-up-cross-promotion" />
+
 ## 交叉推广归因的配置
 
 交叉推广归因的配置流程涉及AppsFlyer SDK中额外的代码部署，需要营销人员和开发人员合作完成。
@@ -77,7 +85,11 @@ x-zendesk:
 | 4 | 营销人员 | 在[受推广应用的面板](/docs/cross-promotion-attribution-for-marketers#受推广应用的面板)中查看交叉推广广告带来的流量，并对您的投放进行相应的优化。 |  |
 | 5【可选】 | 营销人员 | 创建[自定义面板](/docs/cross-promotion-attribution-for-marketers#自定义面板)，就交叉推广带来的流量进行对比分析，并与该账户下的其他用户分享数据。 |  |
 
+<div id="viewing-cross-promotion-data" />
+
 ## 交叉推广数据的查看方式
+
+<div id="promoted-app-dashboard" />
 
 ### 受推广应用的面板
 
@@ -89,9 +101,13 @@ x-zendesk:
 2. 在媒体渠道一栏中选择**af\_cross\_promotion**（或您自定义的渠道名称）。
 3. 选择**子渠道ID**对面板数据进行分组，表格中就会列出所有的流量侧应用。[![CrossPromo_SiteID](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)
 
+<div id="analysis" />
+
 #### 数据分析
 
 如果您在多个流量侧应用中投放广告宣传同一个应用，可以使用这些流量侧应用的激活、点击、展示和转化率数据进行亲和度分析。转化率最高的流量侧应用（即子渠道）与受推广应用的亲和度最高，前者的用户安装后者的可能性最高。得到这些关键信息后，您就可以对您的交叉推广投放进行相应的优化。
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -106,11 +122,15 @@ x-zendesk:
 > * 在Golfing上全量铺开交叉推广投放。
 > * 在点击归因之外，增加对<Anchor target="_blank" href="/marketers/zh/docs/measure-view-through-engagements#浏览型归因链路">展示的归因</Anchor> 。由于您最初仅对您的广告配置了点击归因，因此如果用户仅浏览而未点击该广告，而随后又安装了新应用，他们会被记为自然激活（但这些其实是非自然流量）。也就是说，这种情况下您无法全面了解每个流量侧应用的投放效果。
 
+<div id="custom-dashboard" />
+
 ### 自定义面板
 
 受推广应用的面板能帮助您清晰地了解多个流量侧应用各自的带量水平。但如果您在某一个现有应用中推广多个新应用，这时应如何评估投放效果呢？这种情况下，自定义面板可以完美解决这个问题。
 
 您可以使用<Anchor target="_blank" href="/marketers/zh/docs/custom-dashboards">自定义面板</Anchor>在同一个界面中查看多个受推广应用的信息，包括交叉推广带来的流量。此外，您还可以通过自定义面板与您账户下的其他用户快捷地共享数据。
+
+<div id="example-1" />
 
 > 📄 **示例**
 >

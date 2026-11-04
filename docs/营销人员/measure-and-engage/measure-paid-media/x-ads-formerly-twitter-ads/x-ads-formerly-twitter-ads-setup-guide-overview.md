@@ -24,9 +24,13 @@ x-zendesk:
 
 <Image alt="X Ads logo.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
 
+<div id="mobile-app-promotion-on-x-ads" />
+
 ## 在 X 广告上推广移动应用
 
 X 广告移动应用推广是一种在 X 广告上推广应用的方法。该产品能让广告主使用优质的卡片式设计素材来推广他们的移动应用，从而提升新增激活、应用互动以及深度链接转化。用户可以直接从Twitter的时间线（Timeline）中下载并使用广告主推广的应用，操作十分便捷。
+
+<div id="x-ads-user-privacy" />
 
 ## X 广告用户隐私
 
@@ -44,6 +48,8 @@ Twitter用户可以决定将自己的哪些信息共享给广告主，具体如�
 请注意：加入AMM计划前产生的用户级数据无法导出。
 
 如需进一步了解AMM计划的相关信息，请联系您的Twitter客户经理。
+
+<div id="x-ads-and-appsflyer-skan-interoperation" />
 
 ## Twitter Ads与AppsFlyer之间的SKAN互通性
 

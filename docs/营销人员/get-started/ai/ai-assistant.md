@@ -24,11 +24,15 @@ x-zendesk:
 
 <Embed title="AI 助手" typeOfEmbed="youtube" url="https://www.youtube.com/embed/F9PDfKmoUEo" providerUrl="https://www.youtube.com" />
 
+<div id="about-ai-assistant" />
+
 ## **AI 助手简介**
 
 AI 助手是您的自助分析与指导伙伴，旨在帮助您发掘洞察，并借助 AppsFlyer 做出更明智的决策。结合面板中的数据使用 AI 助手，可以快速分析营销表现，了解关键指标及其变化趋势。
 
 <Image alt="AppsFlyer 中 AI 助手聊天窗口的动画演示" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
+
+<div id="what-you-can-do" />
 
 ## **AI 助手的功能**
 
@@ -40,6 +44,8 @@ AI 助手是您的自助分析与指导伙伴，旨在帮助您发掘洞察，�
 * **分析 Agent Hub 运行结果：** 直接针对已完成的 Agent Hub 任务运行结果提问。详情请参阅<Anchor target="_blank" href="/marketers/zh/docs/beta-agent-hub-overview#使用-ai-助手分析活动">“Agent Hub 概述 [测试版]”</Anchor>。
 
 AI 助手会根据问题选择合适的呈现方式，以文本、表格或图表形式展示回答。
+
+<div id="where-to-open-it" />
 
 ## **如何打开 AI 助手**
 
@@ -54,6 +60,8 @@ AI 助手会根据问题选择合适的呈现方式，以文本、表格或图�
 3. 查看 AI 助手以文本、表格或图表形式提供的回答。
 4. 根据后续推荐的问题继续提问，进一步完善分析或细化问题。
 
+<div id="tip" />
+
 > 👍 **小贴士**
 >
 > AI 助手会根据提问所在的页面，提供不同的回答。
@@ -61,6 +69,8 @@ AI 助手会根据问题选择合适的呈现方式，以文本、表格或图�
 > * 在 **My Dashboards** 中使用聊天功能时，AI 助手默认根据当前选定的 App 提供回答，除非您在提问时另行指定。
 > * 在其他页面中使用 AI 助手时，默认根据账户中的第一个 App 提供回答，除非您在提问时另行指定。
 > * 单次最多可分析 20 个 App。
+
+<div id="other-features" />
 
 ### 其他功能
 
@@ -92,6 +102,8 @@ AI 助手会根据问题选择合适的呈现方式，以文本、表格或图�
 
 </Accordion>
 
+<div id="conversation-history" />
+
 ## **对话历史**
 
 AI 助手会保留您的对话历史记录，方便您从上次中断处继续，而不必重复说明上下文。您的历史记录是私密的。您的对话仅您自己可见，账号中的其他用户无法查看。
@@ -115,6 +127,8 @@ AI 助手会保留您的对话历史记录，方便您从上次中断处继续�
 
 * 重新打开较早的对话时，其中显示的数据为当时检索到的结果；若在该对话中提出新问题，AI 助手会基于最新数据作答。
 * 超过一段时间未操作、点击"新对话"，或重新登录后，系统会自动开启新对话，此前的对话将保存至历史记录中。
+
+<div id="other-information" />
 
 ## **其他信息**
 

@@ -33,6 +33,8 @@ x-zendesk:
 
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
+<div id="protect360-overview" />
+
 ## Protect360简介
 
 * 保护广告主不受归因作弊的侵害，其中的动态工具可用于识别作弊并拦截假量。
@@ -117,6 +119,8 @@ x-zendesk:
 
 Protect360防作弊措施及其成效
 
+<div id="using-protect360" />
+
 ## Protect360的使用方式
 
 <div id="dashboard" />
@@ -186,6 +190,8 @@ Protect360防作弊措施及其成效
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 特点与局限性
 
 <div id="traits-and-limitations::a07033c3" />
@@ -207,6 +213,8 @@ Protect360防作弊措施及其成效
 特点与局限性
 
 </Accordion>
+
+<div id="faq-and-tips" />
 
 ## 疑难解答及使用技巧
 
@@ -252,9 +260,13 @@ Protect360防作弊措施及其成效
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 想要了解更多关于防止欺诈的知识吗？我们在<Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7809/play/18635/mobile-app-fraud-and-protect360">AppsFlyer充电站里为您准备了相关课程</Anchor>，视频虽短，但干货满满！
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

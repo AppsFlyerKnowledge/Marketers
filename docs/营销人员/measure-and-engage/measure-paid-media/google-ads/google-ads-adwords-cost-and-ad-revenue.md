@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：概览：本文介绍了如何将Google Ads的成本和广告收入数据同步到AppsFlyer。**
 
+<div id="cost-clicks-and-impressions" />
+
 ## 成本、点击和展示
 
 成本对接可提供下列汇总数据：
@@ -55,17 +57,23 @@ x-zendesk:
 >
 > 如果账号不正确，请先登出当前账号，然后换一个邮箱地址登入其他Google账号。
 
+<div id="cost-data-sync-status" />
+
 ### 成本数据同步状态
 
 <Anchor target="_blank" href="/marketers/zh/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api状态">您可以在成本（及广告收入）对接状态面板或单独的广告平台面板中查看AppsFlyer最近一次获取匹配成本数据的时间以及</Anchor> API状态。
 
 Google Ads允许您同步多个帐户以获取成本数据。对于已完成对接的账户，AppsFlyer会显示成本对接的状态以及最近一次拉取到匹配成本数据的时间。
 
+<div id="stopping-google-cost-sync" />
+
 ### 停止Google成本同步
 
 **如需停止同步Google的成本数据，请删除相关的Google账户连接：**
 
 * <Anchor target="_blank" href="/marketers/zh/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">进入成本选项卡，将鼠标悬停在相关账户的“操作”栏，然后点击“删除连接”。</Anchor> 连接删除后，AppsFlyer就不会再接收成本数据，但不影响历史数据。
+
+<div id="recording-ad-revenue-with-google-ads" />
 
 ## 记录Google Ads的广告收入
 

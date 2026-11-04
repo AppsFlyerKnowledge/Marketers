@@ -29,6 +29,8 @@ x-zendesk:
 
 * （即在用户的Xbox设备上进行归因和记录）。
 
+<div id="integration-procedures" />
+
 ## 对接流程
 
 下表列出了Steam应用对接到AppsFlyer时需要完成的工作。
@@ -52,6 +54,8 @@ x-zendesk:
 | 归因 |  |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

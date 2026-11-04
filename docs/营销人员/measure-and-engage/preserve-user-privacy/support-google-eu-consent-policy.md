@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer旨在帮助广告主根据《数字市场法案》（DMA）的要求完成合规工作，并提升其Google广告的价值。本文解答了与DMA合规以及广告价值优化相关的常见问题。
 
+<div id="overview" />
+
 ## 简要说明
 
 为了应对即将生效的欧盟<Anchor target="_blank" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en">《数字市场法案》</Anchor>（DMA），Google正在对其<Anchor target="_blank" href="https://www.google.com/about/company/user-consent-policy/?sjid=15416941068016224808-NA">欧盟用户意见征求政策</Anchor>进行更新。作为Google的<Anchor target="_blank" href="https://ads.google.com/lp/appcampaigns/attribution/">App Attribution Partner</Anchor>（应用归因合作伙伴），AppsFlyer也在做必要调整，以支持Google的政策更新，同时帮助广告主充分发掘其Google广告的价值。新政策自2024年3月6日起生效。
+
+<div id="relevant-integrations-and-continued-use-of-google-features" />
 
 ## 相关对接及Google功能的持续使用
 
@@ -39,6 +43,8 @@ Google的欧盟用户意见征求新政会影响到以下对接：
 * GMP DV360（`dv360_int`）
 
 如果您的应用通过这些对接收集欧洲经济区（EEA）境内终端用户的数据，请务必采取必要措施，以确保您符合Google欧盟用户意见征求新政的规定。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -54,6 +60,8 @@ Google的欧盟用户意见征求新政会影响到以下对接：
 
 </Accordion>
 
+<div id="updating-the-appsflyer-sdk" />
+
 ## 更新AppsFlyer SDK
 
 <div id="what-steps-do-i-need-to-take-to-update-the-appsflyer-sdk" />
@@ -66,6 +74,8 @@ AppsFlyer SDK（Android - v6.13.0+, iOS - v6.13.1+）可在每个事件中发送
 * SDK升级完毕后，请参考适用于DMA合规的<Anchor target="_blank" href="/marketers/zh/docs/additional-sdk-integration-guide#send-consent-for-dma-compliance">SDK接入说明</Anchor>。
 
 </Accordion>
+
+<div id="sending-consent-data" />
 
 ## 发送授权数据
 
@@ -101,6 +111,8 @@ AppsFlyer SDK（Android - v6.13.0+, iOS - v6.13.1+）可在每个事件中发送
 
 </Accordion>
 
+<div id="sending-consent-datafaq" />
+
 ### 发送授权数据 - 常见问题解答
 
 <div id="do-i-have-control-over-consent-data-for-nonue-users" />
@@ -108,6 +120,8 @@ AppsFlyer SDK（Android - v6.13.0+, iOS - v6.13.1+）可在每个事件中发送
 <Accordion title="能否不向Google发送授权数据？">
 
 如果广告主认为DMA的规定不适用于其终端用户（比如其应用仅面向欧盟境外的用户），可以在AppsFlyer后台的相关对接页面中打开相应的开关，避免向Google发送授权数据。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -170,19 +184,27 @@ AppsFlyer建议您咨询法务团队，确保以符合DMA要求的方式获取�
 
 </Accordion>
 
+<div id="preparing-for-the-upcoming-changes" />
+
 ## 如何为应对新政做好准备？
 
 <div id="how-can-i-prepare-for-the-upcoming-changes" />
 
 <Accordion title="建议您做好如下准备工作：">
 
+<div id="address-user-consent-in-the-european-economic-area-eea" />
+
 #### 探讨欧洲经济区（EEA）境内用户授权事宜的处理方式
 
 与贵司法务沟通，向其咨询欧洲用户意见征求政策对您与Google等合作渠道共享的数据有何影响。如果该政策适用于您的应用，请在其中部署“隐私设置”（Privacy Settings）或“隐私选项”（Privacy Choices）等隐私配置弹窗，从应用用户侧采集营销和广告相关的用户授权信号（consent signals）。
 
+<div id="verify-cmp-compliance-and-tcf-2223-support" />
+
 #### 检验CMP合规性以及TCF 2.2支持
 
 请确保您使用的CMP支持TCF2.2，即最新版的透明度和同意框架（Transparency and Consent Framework，简称TCF）。此外还请确保您的CMP通晓Google欧盟意见征求新规，并能够指导您通过TCF达到其要求。
+
+<div id="implement-the-newest-sdkserver-to-server-s2s-apis" />
 
 #### 接入最新版本的SDK/服务器到服务器（S2S）API
 
@@ -194,11 +216,15 @@ AppsFlyer建议您咨询法务团队，确保以符合DMA要求的方式获取�
 * **通过<Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-api-for-mobile-s2s-mobile?">S2S</Anchor> API发送数据：**
   * 向AppsFlyer发送应用内事件之前，请先更新您的API，为每个事件都添加`consent_data`对象。详细操作说明请见<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">此文档</Anchor>。
 
+<div id="transition-from-the-legacy-gmp-integration-doubleclick" />
+
 #### 从GMP历史对接（DoubleClick）迁移到新对接
 
 如果您仍在使用AppsFlyer的GMP历史对接（doubleclick\_int），请在2024年Q1结束前迁移到新对接（dv360\_int）。历史对接**不符合欧盟意见征求政策**的规定，即将下线。如需了解详情，请参阅<Anchor target="_blank" href="/marketers/zh/docs/bulletin-google-marketing-platform-gmp-integration-transition">此文档</Anchor>。
 
 </Accordion>
+
+<div id="impact-on-advertising-activityfaq" />
 
 ## 对广告活动的影响 - 常见问题解答
 
@@ -218,6 +244,8 @@ AppsFlyer建议您咨询法务团队，确保以符合DMA要求的方式获取�
 此次政策更新会影响到Google再营销广告的受众人群以及您人群包中的EEA用户数量。EEA境内的用户与Google共享其信息之前需要先同意授权。拒绝授权的用户会被排除在Google的定向投放人群之外，不会向其投放您的广告。这里涉及到获取用户授权的方式及其对您业务及营销工作的影响。如需进一步了解受众共享工具的相应更新，请参考<Anchor target="_blank" href="/marketers/zh/docs/audiences-user-identifier-policy#eu-digital-markets-act">此文档</Anchor>。
 
 </Accordion>
+
+<div id="further-information-and-contact-details" />
 
 ## 更多信息和联系方式
 

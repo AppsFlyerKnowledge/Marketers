@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > 概览：为您的网站应用设置 Google Ads 集成，以通过离线转化 API（OCI）向 Google 发送网络转化信号。
 
+<div id="overview" />
+
 ## 概览
 
 AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用广告活动，并通过 Google 离线转化 API（OCI）报告转化数据。
@@ -32,9 +34,13 @@ AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用�
 
 广告活动流程始于用户点击 Google 广告并访问您的网站。当用户完成网站事件（例如，购买或注册）时，AppsFlyer 通过 OCI 向 Google Ads 发送转化信号。Google 使用这些数据来优化广告定位和衡量广告活动的表现。
 
+<div id="see-also" />
+
 > 📄 **另请参阅**
 >
 > * <Anchor target="_blank" href="/marketers/zh/docs/web-performance-measurement-overview">AppsFlyer 网络归因 - 概述</Anchor>
+
+<div id="prerequisites" />
 
 ### 前期准备
 
@@ -44,12 +50,16 @@ AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用�
 * 在您的网站上部署了 AppsFlyer Web SDK
 * 拥有适当角色或权限的 AppsFlyer 账户
 
+<div id="how-to-set-up-a-google-ads-web-campaign" />
+
 ### 如何设置 Google Ads 网络广告活动
 
 设置分为两个部分：
 
 1. 在AppsFlyer中设置Google Ads对接 （必须完成）
 2. 在 Google Ads 中设置广告活动（必需）
+
+<div id="set-up-the-google-ads-integration-in-appsflyer" />
 
 ## 在 AppsFlyer 中设置 Google Ads 集成
 
@@ -65,6 +75,8 @@ AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用�
 4. 在应用下拉菜单中，选择网络应用。
 5. 在**渠道对接**选项卡中，打开**启用该渠道**开关。
 
+   <div id="note" />
+
    > 📘 **注意**
    >
    > 在您与该渠道合作期间，请确保该开关总是处于打开（即启用）状态。
@@ -79,6 +91,8 @@ AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用�
 8. 选择相关经理账号（即您在第7步中获取到Customer ID的MCC账号）中的管理员。
 9. 点击**Allow**。
 
+   <div id="note-1" />
+
    > 📘 **注意**
    >
    > 在您通过Google登录并按照下方步骤允许AppsFlyer获取token后，*令牌缺失*的错误提示将不再显示。如果在登录后错误仍然存在，请验证您的令牌是否具有所需的权限。
@@ -92,6 +106,8 @@ AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用�
 
 将您的网站事件映射到 Google Ads 转换操作。AppsFlyer 通过 OCI 将这些事件发送到 Google，以支持基于转换的优化。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 对于网站应用，所有事件都是网页事件，没有安装事件。您希望 Google 优化的每个事件必须映射到相应的 Google Ads 转换操作 ID。
@@ -100,6 +116,8 @@ AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用�
 2. 如有需要，请设置 **应用内事件回传窗口**。窗口在用户的第一次网站转换事件发生时打开（相当于移动安装日期的网页事件）。
 3. 点击**添加事件**。
 4. 在 **AppsFlyer 事件** 列中，选择您想要发送的网站事件（例如，`purchase`，`sign_up`）。
+
+   <div id="note-3" />
 
    > 📘 **注意**
    >
@@ -114,6 +132,8 @@ AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用�
 8. 点击**保存对接**。
 
 </Accordion>
+
+<div id="set-up-a-web-conversion-campaign-in-google-ads" />
 
 ## 在 Google Ads 中设置网页转换活动
 
@@ -147,11 +167,15 @@ AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用�
 5. 在**Conversion goal**（转化目标）中选择一个转化操作类别。
 6. 输入**Conversion name**（转化名称）。
 
+   <div id="important" />
+
    > 🚧 **重要提示！**
    >
    > 如需在使用GCLID的基础上，通过GBRAID/WBRAID搭配Offline Conversions API，请确保转化操作中的**Count**字段设置为**Every**（默认），而非*One*。
 
 7. 输入**转化名称**并点击**添加**。
+
+   <div id="note-5" />
 
    > 📘 **注意**
    >
@@ -173,6 +197,8 @@ Google<Anchor target="_blank" href="https://support.google.com/google-ads/answer
 2. 找到您需要的广告，点击该行中的编辑图标。
 3. 在**最终网址字段**中，输入您的着陆页的URL。
 
+   <div id="important-1" />
+
    > 🚧 **重要提示！**
    >
    > 切勿将最终到达网址设置为任何AppsFlyer网址（即OneLink链接或单平台归因链接），否则会导致您的广告系列被拒审。仅使用没有重定向的直接网址。
@@ -186,11 +212,15 @@ Google<Anchor target="_blank" href="https://support.google.com/google-ads/answer
    > ```
 
 
+<div id="note-6" />
+
 > 📘 **注意**
 >
 > Google网页广告活动每次互动可以使用两个网址：最终网址和跟踪模板网址。但是，对于广告目标是网站的网页应用活动，跟踪模板网址不是必需的。只有当活动目标是网页到移动时，才可能需要跟踪模板网址。有关更多信息，请参见<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-create-web-based-campaigns">Google Ads网页到应用活动文章</Anchor>。
 
 </Accordion>
+
+<div id="view-web-performance-measurement-data" />
 
 ## 查看网络归因数据
 
@@ -200,9 +230,13 @@ Google Ads 活动的网络归因数据可在跨平台仪表板和原始数据导
 * 原始数据导出网络归因数据也可以在<Anchor target="_blank" href="/marketers/zh/docs/raw-data-export-page">原始数据导出页面</Anchor>中获取。
   * `media_source`字段显示归因于 Google Ads 的网络事件的`googleadwords_int`。
 
+<div id="note-7" />
+
 > 📘 **注意**
 >
 > 这个统一的报告视图让您可以在一个地方分析网络和应用活动的表现，包括完整的移动和网络成本报告。
+
+<div id="measure-web-performance-data-with-web-cost" />
 
 ## 通过网络成本测量网络归因数据
 
@@ -210,6 +244,8 @@ Google Ads 活动的网络归因数据可在跨平台仪表板和原始数据导
 
 1. 通过`googleadwords_int`将成本连接到您的网站应用（而不是通过`googleads_int`）从**成本**选项卡或**成本设置**页面。有关如何连接成本的更多信息，请参见<Anchor target="_blank" href="/marketers/zh/docs/set-up-roi360-cost-api-to-measure-cost-data#启用cost-api">设置 ROI360 成本 API 以测量成本数据</Anchor>。
 2. 在着陆页 URL 中包含活动 ID（`af_c_id`）。确保 URL 包含完整的活动层级，以便在最细粒度的级别查看与网络归因匹配的成本、点击和展示次数。
+
+<div id="troubleshooting-in-app-event-postbacks" />
 
 ## 应用内事件回传问题排查
 
@@ -244,6 +280,8 @@ Google Ads 活动的网络归因数据可在跨平台仪表板和原始数据导
 确保回传中的应用内事件映射到正确的转化操作ID（Conversion Action ID）。如需在Google Ads中查找转化操作ID，请参考[此处说明](#step-2-create-conversion-actions)。创建转化操作。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

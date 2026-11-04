@@ -32,6 +32,8 @@ x-zendesk:
 
 **A word from our lawyers:** *Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how Apple policies apply to you.*
 
+<div id="nutrition-labels-and-the-app-store-review" />
+
 ## Nutrition labels and the App Store review
 
 * In order to generate the privacy labels, app developers must answer a questionnaire when submitting their app to App Store Connect that includes the following sections:
@@ -45,6 +47,8 @@ x-zendesk:
 * According to the AppsFlyer understanding of the Apple policy, AppsFlyer doesn't *track.* That said, App developers must respond to the questionnaire in accordance with their specific uses and partner integrations.
 * If you do use collected data for tracking purposes, you must implement the ATT prompt.
 * The following assumes AppsFlyer software default configurations. App developers are responsible for ensuring that they adapt accordingly in line with their specific configurations and uses.
+
+<div id="data-types-collected" />
 
 #### Data types collected
 
@@ -65,6 +69,8 @@ x-zendesk:
 | **Diagnostics data**<ul><li>Crash data</li><li>Performance data</li><li>Other diagnostics data</li></ul> | <ul><li>No</li><li>Yes</li><li>No</li></ul> | Launch time and/or battery levels may be received for fraud detection. |
 | **Other data**<ul><li>Other data types</li><li>IDFV</li></ul> | Yes | <ul><li>Technical device information (for example, OS, device type, language, screen size, etc.) or network information (for example, IP address, HTTP user agent) is received by AppsFlyer.</li><li>AppsFlyer applies an install ID to each app install called the AF ID.</li><li>IDFV is collected</li></ul> |
 
+<div id="data-use-purposes" />
+
 ### Data use purposes
 
 Apple has a list of purposes from which app developers must choose, as detailed in the table that follows. You must identify the relevant purposes for each data type related to your specific use.
@@ -78,11 +84,15 @@ Apple has a list of purposes from which app developers must choose, as detailed 
 | App functionality | Yes |
 | Other purposes | Select if you use the data for any purpose not otherwise stated. |
 
+<div id="data-linked-to-an-identity" />
+
 ### Data linked to an identity
 
 Data types collected through AppsFlyer are typically connected to an identifier like device ID (when available), or other identifiers like customer-issued IDs when configured.
 
 Therefore, app developers should select **Yes** when asked if the data is linked to an identity.
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

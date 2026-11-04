@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** 本文分别介绍并对比了用于归因数据汇总和分析的报告、工具和API。
 
+<div id="aggregated-and-analytics-performance-reporting-overview" />
+
 ## 投放效果数据的汇总和分析工具简介
 
 AppsFlyer中的数据汇总和分析工具能为广告主提供各种指标，让其全面了解相关应用、广告和用户的表现。
@@ -95,6 +97,8 @@ AppsFlyer通过以下多种方式提供群组数据：<Anchor target="_blank" hr
 
 </Accordion>
 
+<div id="user-journey-reports" />
+
 ### 用户链路报告
 
 本节介绍的报告可通过导出数据页或Pull API获取。
@@ -114,9 +118,13 @@ AppsFlyer通过以下多种方式提供群组数据：<Anchor target="_blank" hr
 
 CSV文件中的日期字段格式为yyyy-mm-dd。当您在Excel中打开CSV文件时，日期字段将使用您计算机日期和时间格式设置。因此请确保在<Anchor target="_blank" href="https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows">Excel</Anchor>中选择合适的日期显示格式。
 
+<div id="examples-of-aggregate-reports" />
+
 #### 汇总报告示例
 
 [Excel格式的报告示例](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
+
+<div id="fields-in-ua-aggregate-reports" />
 
 #### UA汇总报告中的字段
 
@@ -134,6 +142,8 @@ CSV文件中的日期字段格式为yyyy-mm-dd。当您在Excel中打开CSV文�
 
 如需通过Pull API拉取再营销报告，请在效果报告的URI末尾添加*&reattr=true*参数。
 
+<div id="aggregate-ltv-retargeting-reports" />
+
 #### LTV维度的再营销汇总报告
 
 | 报告名称 | 分组维度： |
@@ -143,6 +153,8 @@ CSV文件中的日期字段格式为yyyy-mm-dd。当您在Excel中打开CSV文�
 | 分日期的用户行为 | 日期、代理、媒体渠道、广告系列 |
 | 国家 | 国家、代理、媒体渠道、广告系列 |
 | 分日期的国家数据 | 日期、国家、代理、媒体渠道、广告系列 |
+
+<div id="aggregate-ltv-retargeting-reports-1" />
 
 #### LTV维度的再营销汇总报告
 
@@ -168,6 +180,8 @@ CSV文件中的日期字段格式为yyyy-mm-dd。当您在Excel中打开CSV文�
 
 </Accordion>
 
+<div id="feature-reports" />
+
 ## 功能报告
 
 <div id="skadnetwork" />
@@ -190,6 +204,8 @@ CSV文件中的日期字段格式为yyyy-mm-dd。当您在Excel中打开CSV文�
 
 日期范围以激活日期为准。
 
+<div id="aggregate-protect360-reports-available-via-pull-api" />
+
 #### 可通过Pull API拉取的Protect360报告
 
 | 报告名称 |
@@ -203,6 +219,8 @@ CSV文件中的日期字段格式为yyyy-mm-dd。当您在Excel中打开CSV文�
 **局限性：** 即使真正的拦截原因为**应用版本**或**CUID缺失**，报告中的拦截原因仍会显示为**Bots**。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

@@ -32,6 +32,8 @@ x-zendesk:
 
 Creative Optimization ETL使用<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers">Data Locker</Anchor>将您的素材优化数据发送到云存储平台。我们提供多种存储方案供您选择，包括AppsFlyer的AWS存储桶或您在AWS、GCS、Yandex、BigQuery、Snowflake等各种平台上的自有存储桶。Data Locker支持多宿端数据传输，也就是说您可以将数据同时传输到多个宿端，或分宿端传输不同的数据，并根据您的实际需求调整数据的传输方式。如需使用Creative Optimization ETL，需购买**素材优化高阶付费套餐**。
 
+<div id="get-started" />
+
 ## 启用方式
 
 本节介绍如何为创意优化报告设置 Data Locker。

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** 还可以通过归因数据，
 
+<div id="attribution-android-apps-in-the-chinese-domestic-market" />
+
 ## 中国国内安卓市场归因指南
 
 针对国内安卓市场的特殊性，广告主通常面临如下挑战：
@@ -37,6 +39,8 @@ AppsFlyer为您提供了以下解决方案：
 * 鉴于国内安卓生态不会使用GAID，我们将根据 OAID 或设备IMEI进行归因，以替代GAID
 * 除了提供归因的媒体渠道字段，还会提供商店/渠道包字段，保证每一条激活数据包含用户完整转化路径：从渠道的点击/曝光数据，到最终APK下载来源，可以轻松识别商店劫持
 * 配置为中国市场专门制定的归因链接（即点击监测链接）。
+
+<div id="preparing-the-app" />
 
 ## 准备应用
 
@@ -300,6 +304,8 @@ Android API level 22 或以下用户授权后可收集IMEI
 
 * 假设应用程序已在AppsFlyer中添加，可使用此方法。要使用该方法继续至[准备APK /manifest](/docs/measure-attribution-in-the-chinese-domestic-market#准备apk-manifest)下面的部分。
 
+<div id="adding-the-app-in-appsflyer" />
+
 ### 在AppsFlyer中添加应用程序
 
 （1）使用Pending App，暨**待批准或尚未发布** 选项创建应用程序，在使用此方案之前可咨询您的客户经理。 （2）使用常规安卓商店外APK追踪(out of store)方式添加应用，请注意用这种方式添加，除了在面板操作，还需要客户端配置相对应的channel名称。具体步骤如下。
@@ -313,6 +319,8 @@ Android API level 22 或以下用户授权后可收集IMEI
    * **App URL**
 
 **请注意**：注意 ：App URL指APK下载地址或第三方商店产品页地址。添加app后如需修改跳转地址，可通过在链接中添加“&af\_r”跳转参数修改。
+
+<div id="preparing-the-apkmanifest" />
 
 ### 准备APK /manifest
 
@@ -343,6 +351,8 @@ AF\_STORE API上报字段在原始数据和群组报告中显示字段名称为 
 * <Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview">原始数据报告</Anchor>
 
 </Accordion>
+
+<div id="additional-attribution-considerations" />
 
 ## 其他注意事项
 

@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **概要：** 本文重点讲解了如何测试安卓或iOS端与AppsFlyer的SDK对接。
 
+<div id="overview" />
+
 ## 速览
 
 SDK对接完毕后，建议您测试该SDK是否能正常向AppsFlyer服务器发送数据。市场人员可选择以下任一方式进行测试：
@@ -41,16 +43,22 @@ SDK对接完毕后，建议您测试该SDK是否能正常向AppsFlyer服务器�
 
 CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试ctv)。
 
+<div id="testing-using-the-sdk-integration-tests-page" />
+
 ## 使用SDK对接测试页面进行测试
 
 请使用**SDK对接测试**页面查看实时事件数据，包括激活、广告收入和应用内事件，了解这些事件在应用中的实际触发情况。您也可以测试非自然激活、应用内事件及深度链接（再营销），找出对接中存在的问题。我们对该页面进行了更新，以实时事件查看器取代了先前的应用内事件测试工具。
 
 **仅适用于iOS**SDK对接测试页面仅适用于启用了ATT弹窗的iOS应用。如需测试无ATT弹窗的应用，请参考[此文档](https://dev.appsflyer.com/hc/docs/testing-ios#apps-that-dont-implement-att)中的具体流程。
 
+<div id="prepare-a-test-device" />
+
 ### **准备测试设备**
 
 1. 准备一部未安装相关应用的设备（安卓或iOS）。如果您要使用的设备上已经安装了相关应用，请先将其卸载。
 2. <Anchor target="_blank" href="/marketers/zh/docs/registering-test-devices">将该设备注册为测试机。</Anchor>
+
+<div id="perform-the-integration-tests" />
 
 ### 进行对接测试
 
@@ -133,6 +141,8 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 5. 点击**继续**，然后按照向导工具的提示，完成各个步骤的操作。
 
 </Accordion>
+
+<div id="testing-using-attribution-links" />
 
 ## 通过归因链接进行测试
 
@@ -275,6 +285,8 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
 </Accordion>
 
+<div id="testing-retargeting-using-attribution-links" />
+
 ## 通过归因链接测试再营销
 
 以下章节说明了再营销归因的测试流程。
@@ -402,6 +414,8 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
 </Accordion>
 
+<div id="testing-organic-installs" />
+
 ## 测试自然激活
 
 建议您先测试自然激活。
@@ -414,6 +428,8 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 该应用的面板上会显示一个新增自然激活。自然激活的数据更新最多会有30分钟的延时，请耐心等待。
 
 [![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+
+<div id="testing-ctv" />
 
 ## 测试CTV
 

@@ -26,9 +26,13 @@ x-zendesk:
 
 ![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
 
+<div id="about-partner-integrations" />
+
 ## 渠道对接简介
 
 渠道对接可以将您在相关渠道上投放的广告素材持续不断地无缝导入<Anchor target="_blank" href="/marketers/zh/docs/creative-optimization-guide">素材优化</Anchor>面板。
+
+<div id="data-availability" />
 
 ### 数据可用性
 
@@ -37,9 +41,13 @@ x-zendesk:
 * 系统会回填过去90天内的素材数据和AppsFlyer效果数据。素材优化面板一般会在24小时内呈现这些数据。
 * AppsFlyer会以一天两次的频率持续从对接渠道侧拉取素材优化数据。系统会在这些数据中糅和其它AppsFlyer效果数据，并将两者进行匹配，这类效果数据包括归因、广告消耗、点击、展示、收入等等（AppsFlyer效果数据每小时更新一次）。素材优化面板综合呈现上述所有处理流程所得出数据，并且每天在**UTC+10**时更新（最近90天的所有素材数据都会更新）。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 如需查看AppsFlyer成本数据（如ROAS），必须购买<Anchor target="_blank" href="/marketers/zh/docs/roi360-cost-aggregation-overview">ROI360</Anchor>。
+
+<div id="media-partner-integrations" />
 
 ## 媒体渠道对接
 
@@ -119,6 +127,8 @@ x-zendesk:
 4. 选择您要推广的应用。
 5. 输入 AppLovin **账户 ID**、**活动管理 API 密钥**和**报告 API** 密钥。
 6. 然后点击 **保存**。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -436,6 +446,8 @@ x-zendesk:
 6. 完成登录流程并提供您的权限信息。请注意，为了确保AppsFlyer能拉取到完整的数据，您最好具备所有权限。
 7. 点击**保存**。
 
+<div id="notes" />
+
 > 📘 **注意**
 >
 > * 2023年1月30日，我们上线了新的**TikTok for Business高级SRN**对接`tiktokglobal_int`，**TikTok for Business**的历史对接`bytedanceglobal_int`将逐步下线，到2024年3月完全停用。详情请见这篇<Anchor target="_blank" href="/marketers/zh/docs/bulletin-tiktok-for-business-advanced-srn">公告文档</Anchor>。
@@ -466,6 +478,8 @@ x-zendesk:
 
 **请注意：** 如缺少相关权限，请联系Unity广告客户成功经理。
 
+<div id="instructions-for-retrieving-the-credentials" />
+
 #### 相关证书信息的获取方式说明
 
 **Key ID和Secret key的获取方式如下：**
@@ -489,6 +503,8 @@ x-zendesk:
    ![Get Organization core ID instructions 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
 5. 复制该**Organization core ID**。
 
+<div id="to-select-a-service-account-organization-role" />
+
 #### **请按以下方式选择Service Account组织角色：**
 
 1. 在Unity面板中点击**Administration**。  
@@ -506,6 +522,8 @@ x-zendesk:
 5. 点击**Save**。
 
 **请注意：** 如果您没有这些角色的访问权限，请联系您的Unity客户成功经理或发送邮件至[unityads-support@unity3d.com](mailto:unityads-support@unity3d.com)让Unity侧开放必要权限。
+
+<div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **请按以下方式在素材面板中添加Unity对接：**
 
@@ -570,6 +588,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="creative-integrations-dashboard" />
@@ -593,6 +613,8 @@ x-zendesk:
 
 <Accordion title="代理对接">
 
+<div id="add-an-agency-integration" />
+
 #### 请按以下方式添加代理对接：
 
 您可以与您的合作代理对接，将代理侧的数据拉取到素材面板。
@@ -615,6 +637,8 @@ x-zendesk:
 * 如果您想要在素材面板中查看某个代理的素材数据，必须单独创建一个渠道对接，并打开其中的“代理”开关。
 * 仅数据透明的代理有可用数据。<Anchor target="_blank" href="/marketers/zh/docs/view-agency-data">了解详情</Anchor>
 * 素材数据仅从相关代理侧拉取。以上图为例，假设您选择了Google Ads作为合作代理，但您同时又在Google Ads上直接投放广告，这时您就需要为Google Ads单独再创建一个对接。
+
+<div id="grant-dashboard-access-to-an-agency" />
 
 #### 授予代理访问仪表板的权限
 

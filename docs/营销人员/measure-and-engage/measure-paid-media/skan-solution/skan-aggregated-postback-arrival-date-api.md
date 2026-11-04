@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 这些数据是按回传接收日期来汇总的。
 
+<div id="skan-aggregated-postback-arrival-date-api" />
+
 ## SKAN回传接收日期汇总报告API
 
 该API会按回传数据的接收日期，返回汇总的SKAN回传数据。
@@ -37,6 +39,8 @@ SKAN回传接收日期汇总报告API
 1. 获取API token。只有相关账户的管理员才能获取该token。
 2. 将该API token发送给您的开发人员，用于认证头（Authentication Header）中。
 3. 将下表所列的相关参数发送给您的开发人员，让其在调用API时输入这些参数。这些参数用于界定报告的重点内容、信息梳理方式以及报告覆盖的时间范围。
+
+<div id="parameters" />
 
 #### 参数
 
@@ -111,6 +115,8 @@ SKAN回传接收日期汇总报告API
 | 相关账户下的用户权限 | 账户管理员可以在面板中获取授权token。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

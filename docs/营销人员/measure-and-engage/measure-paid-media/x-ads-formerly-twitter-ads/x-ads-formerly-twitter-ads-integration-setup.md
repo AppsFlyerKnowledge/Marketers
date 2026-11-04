@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了如何将X Ads账户与AppsFlyer进行对接，以便在AppsFlyer面板中查看X Ads的归因数据。
 
+<div id="overview" />
+
 ## 概览
 
 X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所有用户的转化事件进行归因，包括缺少广告标识符（ID）的用户。
+
+<div id="x-ads-attribution-flow-in-appsflyer" />
 
 ### X-Ads归因流程在AppsFlyer中
 
@@ -43,7 +47,13 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
 
    [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## 将X Ads账户对接到AppsFlyer
+
+<div id="h_01HDJVBAEZATGM580CNC7BCVTN" />
+
+<div id="note" />
 
 > 📘 **注意事项**
 >
@@ -69,6 +79,8 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
     **请注意：** 在您与该渠道合作期间，请确保该开关总是处于打开（即启用）状态。详情请见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">渠道激活</Anchor>。
 13. 选择您的X Ads账户将其激活，然后点击**保存并关闭**。
 
+<div id="x-ads-attribution-setup" />
+
 ## X Ads归因设置
 
 请点击<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner">此处</Anchor>查看渠道配置页的标头（Header）示例。
@@ -79,6 +91,8 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
 
 下文说明了**对接选项卡**中所包含的各个部分。您必须先<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">激活渠道</Anchor>才能看到该渠道对接选项卡中的具体内容。
 
+<div id="ad-account-connected" />
+
 ### 广告账户已连接
 
 请选择要启用归因的账户。
@@ -86,6 +100,8 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
 ![X-Ads_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
 
 **请注意：** 您可以在AppsFlyer中连接最多200个广告账户。为了避免达到此限制并确保所有活跃账户的持续归因，我们建议删除任何不再使用的广告账户。
+
+<div id="advanced-privacy" />
 
 ### 高级隐私保护
 
@@ -95,10 +111,14 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
 * 将基于
 * X Ads提供的高级隐私模板<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">发送回传。仅共享</Anchor><Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">汇总和匿名</Anchor>数据；不包含任何设备级标识符。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 启用X Ads对接时，高级隐私保护开关**默认**处于打开状态。
 > * 根据X Ads的说明，保持高级隐私**开启**状态可能会导致活动事件的回传量
+
+<div id="click-through-attribution" />
 
 ### 偏低<strong>，从而限制在X Ads平台上的效果优化能力。点击型归因</strong>
 
@@ -108,6 +128,8 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
 
 ![X-Ads_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### 浏览型归因窗口
 
 您可以使用滑块来设置**浏览型回溯窗口期**，在广告展示之后，在没有其他相关点击的情况下，只有发生在归因窗口期内的激活（首次启动）才有可能会被归因给X Ads。
@@ -116,15 +138,21 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
 
 ![X-Ads_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
 
+<div id="reinstall-settings" />
+
 ### 重装激活设置
 
 打开**重装激活归因**开关，以启用重装激活归因。
 
 重装激活归因的回溯窗口期沿用激活归因中的设置，因此这里无需再配置。
 
+<div id="re-engagement-settings" />
+
 ### 再互动设置
 
 对于X Ads上的再营销活动，AppsFlyer仅支持<strong>再互动（Re-engagement）</strong>表现衡量。再互动指的是用户在互动发生时已激活应用，并通过再营销广告再次产生互动。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -134,11 +162,15 @@ X Ads的再营销归因仅支持再互动转化。
 
 如需对X Ads启用再互动归因，请在对接选项卡中打开**再互动归因**开关。
 
+<div id="re-engagement-click-through-lookback-window" />
+
 #### 点击型再互动回溯窗口
 
 请设置**点击型再互动回溯窗口**，界定用户从点击广告到再互动转化之间的最长时限，仅在该窗口期中发生的再互动转化才会被归因到相关的再营销广告。您可以在1-23小时或1-30天的范围内自行调整该窗口期。
 
 ![X-Ads-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### 浏览型再互动回溯窗口
 
@@ -148,15 +180,21 @@ X Ads的再营销归因仅支持再互动转化。
 
 ![X-Ads-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
 
+<div id="re-engagement-window" />
+
 #### 再互动窗口期
 
 请设置**再互动窗口期**。仅在该窗口期内发生的应用内事件才会被归因到相关的再营销渠道。这个值可以设置为数天（1-90天）、数小时（至多23小时）甚至是终生：
 
 <Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### 再营销广告中忽略活跃用户
 
 设置不活跃窗口期后，可忽略在此期间的活跃用户，避免将其行为记录为再营销转化。详情请见<Anchor target="_blank" href="/marketers/zh/docs/set-retargeting-inactivity-window">再营销中的不活跃窗口</Anchor>说明。
+
+<div id="in-app-event-postback-settings" />
 
 ### 应用内事件回传设置
 
@@ -188,6 +226,8 @@ X Ads的再营销归因仅支持再互动转化。
 <Accordion title="归因链接选项卡">
 
 X Ads不使用归因链接进行归因。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -229,6 +269,8 @@ X Ads的对接不支持广告收入数据。
 
 您可以使用权限开关向广告平台授权，让其处理与自己相关的配置：
 
+<div id="ad-network-permissions" />
+
 ### 广告平台权限
 
 * **允许配置对接**——允许该渠道设置对接选项卡（应用内事件回传除外）
@@ -241,11 +283,15 @@ X Ads的对接不支持广告收入数据。
 
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#permissions-tab">广告平台权限</Anchor>。
 
+<div id="agency-permissions" />
+
 ### 代理权限
 
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#代理权限">代理授权指南</Anchor>。
 
 </Accordion>
+
+<div id="x-ads-features" />
 
 ## X-Ads功能
 
@@ -269,6 +315,8 @@ AppsFlyer与X Ads的集成使得可以测量应用活动——包括安装、重
 
 1. 前往X Ads管理器中的活动创建表单。
 2. 在<strong>交付</strong>部分，开启<strong>应用转化</strong>测量，以启用跟踪由该活动产生的安装和应用内转化。在<Anchor target="_blank" href="https://business.x.com/en/help/campaign-setup/create-an-app-installs-campaign/mobile-app-measurement-and-attribution">X Ads文档</Anchor>中查看更多详细信息（在<em>"测量非应用目标上的应用转化"</em>下）。
+
+<div id="important-1" />
 
 > 🚧 **重要提示！**
 >
@@ -309,6 +357,8 @@ X Ads广告主和用户可以控制他们如何与广告主和商业伙伴共享
 
 </Accordion>
 
+<div id="advanced-srn-parameter-names" />
+
 ## 高级SRN参数名称
 
 在X Ads的高级SRN集成中，以下字段**替换**其在AppsFlyer仪表板、汇总报告和事件级原始数据中的旧版对应项。
@@ -323,6 +373,8 @@ X Ads广告主和用户可以控制他们如何与广告主和商业伙伴共享
 | **Ad Name** | Tweet ID | Ad Name  <br />（如可用） |
 | **Ad ID** | Tweet ID | Tweet ID |
 | **匹配类型** | srn | 如: id\_matching、probabilistic |
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

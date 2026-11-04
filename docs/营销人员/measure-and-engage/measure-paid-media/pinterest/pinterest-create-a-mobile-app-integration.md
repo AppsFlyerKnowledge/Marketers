@@ -23,12 +23,16 @@ x-zendesk:
 ---
 > **概要：** 作为AppsFlyer的对接渠道，是博客作者和品牌的重要流量来源。Pinterest支持点击归因和浏览归因，同时提供基于点击的再营销归因，相关数据可通过AppsFlyer记录。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 自2021年6月起，Pinterest不再支持CPI广告。因此，AppsFlyer不再向Pinterest发送激活回传。
 > * 接受Pinterest广告条款后，您还需在<Anchor target="_blank" href="https://ads.pinterest.com/terms/app_install/">这里</Anchor>接受Pinterest的移动衡量条款和条件。
 > * Pinterest要求归因服务商在应用激活发生的6个月后删除相关用户的设备级别数据。6个月后用户产生的事件将被视为自然行为，但历史汇总数据不受影响。
 > * 自2023年9月4日起，Pinterest要求归因提供商<Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions#媒体渠道数据限制">对原始数据报告中某些字段的可用性进行限制</Anchor>，以保护用户隐私并满足合规要求。
+
+<div id="set-up-pinterest" />
 
 ## 设置Pinterest对接
 
@@ -52,10 +56,14 @@ Pinterest的配置窗口中有以下4个选项卡：渠道对接、归因链接�
 
 <Accordion title="渠道对接选项卡">
 
+<div id="activate-partner" />
+
 ### 启用渠道
 
 请在首次访问该页面时打开**启用该渠道**开关，然后就可以设置对接了。在您与该渠道合作期间，请确保该开关总是处于打开状态。  
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
+
+<div id="general-settings" />
 
 ### 通用设置
 
@@ -64,6 +72,8 @@ Pinterest的配置窗口中有以下4个选项卡：渠道对接、归因链接�
 **启用浏览型归因**
 
 如需获取来自Pinterest的浏览型归因，请打开此选项。您可以使用归因链接选项卡中对应的滑块来调整浏览回溯窗口。
+
+<div id="in-app-events-settings" />
 
 ### 应用内事件设置
 
@@ -103,11 +113,17 @@ Pinterest的配置窗口中有以下4个选项卡：渠道对接、归因链接�
 
 请按照<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#attribution-link-tab">相关说明</Anchor>**生成归因链接**。
 
+<div id="attribution-link-for-retargeting-campaign" />
+
 #### 用于再营销广告的归因链接
 
 Pinterest建议广告主为不同操作系统单独设置再营销广告归因链接。选择**使用单一平台链接**选项，并在再营销归因链接中添加必要参数。
 
+<div id="deep-link-url" />
+
 #### 深度链接URL
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -124,6 +140,8 @@ Pinterest建议广告主为不同操作系统单独设置再营销广告归因�
 
 配置成本对接后，请勿修改任何正在投放中的广告系列、广告组或广告名称，也不要在广告名称中使用动态宏，避免出现数据缺失或成本偏差。
 
+<div id="enabling-and-testing-pinterest-integration" />
+
 ### 启用和测试Pinterest对接
 
 AppsFlyer通过API获取成本信息。详情请见<Anchor target="_blank" href="/marketers/zh/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">广告平台成本对接表</Anchor>，其中详细说明了适用维度、指标和功能。**请注意**：您需要购买ROI360才能获得成本数据。
@@ -132,9 +150,13 @@ AppsFlyer通过API获取成本信息。详情请见<Anchor target="_blank" href=
 
 * 请按照<Anchor target="_blank" href="/marketers/zh/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">对接指南</Anchor>进行操作。
 
+<div id="cost-data-sync-status" />
+
 ### 成本数据同步状态
 
 <Anchor target="_blank" href="/marketers/zh/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api状态">您可以在成本（及广告收入）对接状态面板或单独的广告平台面板中查看AppsFlyer最近一次获取匹配成本数据的时间以及</Anchor> API状态。
+
+<div id="stop-pinterest-cost-sync" />
 
 ### 停止成本同步
 
@@ -161,6 +183,8 @@ AppsFlyer通过API获取成本信息。详情请见<Anchor target="_blank" href=
 </Accordion>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## 问题排查
 

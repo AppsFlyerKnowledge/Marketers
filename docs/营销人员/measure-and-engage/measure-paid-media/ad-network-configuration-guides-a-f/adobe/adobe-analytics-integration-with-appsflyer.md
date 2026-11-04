@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **概要：** [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html)（原Omniture）是一套可以与第三方渠道对接的预测和实时分析工具。该工具套件包括Marketing Reports and Analytics（也称 SiteCatalyst）、Ad Hoc Analysis（Adobe Discover）以及Insight等应用程序，能通过将用户交互转化为洞察，帮助企业全面了解业务运营情况。
 
+<div id="overview" />
+
 ## 概览
 
 此对接可实现Adobe与AppsFlyer之间的双向数据传输。为确保对接成功，您需要在应用中部署相应代码，且需同时满足AppsFlyer和Adobe的对接要求，以获取完整功能。
 
+<div id="setting-up-adobe-analytics-integration" />
+
 ## 设置Adobe Analytics对接
 
 如您使用Adobe Analytics的报告套件分析整体广告效果和创建人群包，那么您可以通过AppsFlyer与Adobe Analytics的对接将归因数据从AppsFlyer自动传输到Adobe。
+
+<div id="prerequisites" />
 
 ### 前期准备：
 
 * 根据<Anchor target="_blank" href="https://developer.adobe.com/client-sdks/documentation/">Adobe Experience Platform移动SDK文档</Anchor>进行设置
 * <Anchor target="_blank" href="https://marketing.adobe.com/resources/help/en_US/mcvid/">Marketing Cloud Visitor ID</Anchor>或Experience cloud ID service
 * 每个Report Suite中需预留三个eVar，仅用于本次对接
+
+<div id="step-1-share-adobe-experience-cloud-id-ecid-marketing-cloud-id-or-visitor-id-with-appsflyer" />
 
 ### 第1步：与AppsFlyer共享Adobe Experience Cloud ID（ECID、Marketing Cloud ID或Visitor ID）。
 
@@ -137,6 +145,8 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
 
 </Accordion>
 
+<div id="step-2-configure-adobe-analytics-in-appsflyer" />
+
 ### 第2步：在AppsFlyer中配置Adobe Analytics
 
 **前期准备：** 在设置对接之前，请确保已将[Adobe Marketing Cloud Visitor ID成功发送至AppsFlyer SDK](/docs/adobe-analytics-integration-with-appsflyer#第1步与appsflyer共享adobe-experience-cloud-idecidmarketing-cloud-id或visitor-id)。
@@ -162,9 +172,13 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
 * 媒体渠道
 * 广告活动名称
 
+<div id="note" />
+
 > 📘 **注意事项**
 >
 > 根据Meta Ads和X Ads的服务条款，AppsFlyer不得与第三方共享用户层级数据。也就是说，Meta Ads和X Ads的激活数据将被视为自然流量。
+
+<div id="step-3-map-data-to-evars-in-adobe-analytics" />
 
 ### 第3步：将数据映射到Adobe Analytics中的eVars
 
@@ -180,6 +194,8 @@ AppsFlyer上下文数据变量的映射方式如下：
 
 如果您在通过处理规则映射 AppsFlyer 上下文数据变量时遇到问题，请联系您的 Adobe 客户经理以获取进一步支持。
 
+<div id="step-4-optional-set-up-your-marketing-channel" />
+
 ### 步骤 4 [可选]：设置您的营销渠道
 
 请参阅<Anchor target="_blank" href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels.html">Adobe Analytics文档</Anchor>，了解如何在其平台上设置您的营销渠道。在配置识别规则时，请选择以下字段：
@@ -187,6 +203,8 @@ AppsFlyer上下文数据变量的映射方式如下：
 1. "由Adobe Web Beacon设置的转化变量值"：选择**AppsFlyer**和**Exists**。
 2. "将渠道标识为"：选择**Mobile App Attribution**。
 3. "将渠道的值设置为"：选择**AppsFlyer Campaign**。
+
+<div id="domain-and-security-details" />
 
 ## 域名和安全性说明
 

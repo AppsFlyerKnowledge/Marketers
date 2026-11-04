@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **概要：** 您可以使用Snapchat Web对接对Snapchat Ads带来的网页到应用转化进行归因
 
+<div id="overview" />
+
 ## 概览
 
 AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`），您可以通过Meta的Conversion API（CAPI）上报相关广告的归因和转化数据。Meta可以利用这些数据来优化定向投放、衡量广告效果并打造自定义人群包。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
 > 目前，Meta Web对接尚不支持通过CAPI发送再营销回传数据。
 
+<div id="prerequisites" />
+
 ### 前期准备
 
 在启用Snapchat Web对接前，请确保您已在Snapchat Web对接中开设了企业账户。
+
+<div id="how-to-create-a-snapchat-ads-web-campaign" />
 
 ### 如何创建Snapchat Ads网页广告
 
@@ -46,6 +54,8 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 
 * [创建带有OneLink智能脚本的落地页](#创建带有onelink智能脚本的落地页)（可选）
 * [创建带有OneLink智能横幅的落地页](#创建带有onelink智能横幅的落地页)（可选）
+
+<div id="set-up-snapchat-ads-web-integration-in-appsflyer" />
 
 ## 在AppsFlyer中设置Snapchat Ads网页对接
 
@@ -103,6 +113,8 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 6. 在**事件来源**一列，选择**仅限该合作渠道**，确保仅回传Meta Ads带来的用户所完成的事件。
 7. 在**包括**列中，选择是否将事件与其收入值一起发送。请见回传中包含的数据。
 
+   <div id="note" />
+
    > 📘 **注意**
    >
    > * 如果您设置的是购买事件，请将**包含**列设为**值和收入**。选择其他选项将导致回传失败。
@@ -117,6 +129,8 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 
 </Accordion>
 
+<div id="set-up-appsflyer-integration-in-snapchat-ads" />
+
 ## 在Snapchat Ads中配置AppsFlyer对接
 
 本节所述步骤主要在Snapchat Ads Manager中完成。
@@ -126,6 +140,8 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 <Accordion title="1.设置投放类型、投放目标和转化目标">
 
 您可以选择从 AppsFlyer 发送的任何预定义 INAPP 事件作为您的营销活动目标，或者如果您想针对移动应用安装进行优化，请选择“PAGE\_VIEW”。
+
+<div id="warning" />
 
 > ❗️ **重要提示**
 >
@@ -203,6 +219,8 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
   https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=snapweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
   ```
 
+  <div id="note-1" />
+
   > 📘 **注意**
   >
   > 用户点击相关广告时，Meta会自动将`ScCid={{ScCid}}`添加到目标网址（ destination URL）。
@@ -214,6 +232,8 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## 创建带有OneLink智能脚本的落地页
 
@@ -249,6 +269,10 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 1. 为您要投放的广告系列设置一个OneLink模板，用于生成相关的OneLink归因链接。详情请见<Anchor target="_blank" href="/marketers/zh/docs/create-a-onelink-template#创建onelink模板">OneLink模板的创建方式</Anchor>说明。
 2. 创建一个智能脚本。详情请见<Anchor target="_blank" href="/marketers/zh/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink智能脚本的创建方式</Anchor>说明。
 
+   <div id="note-5" />
+
+   <div id="note-2" />
+
    > 📘 **注意**
    >
    > 下文内容主要针对使用智能脚本的Snapchat Ads广告系列，说明了具体的设置步骤。如需了解更具普适性的智能脚本投放设置方式，请参考<Anchor target="_blank" href="/marketers/zh/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink智能脚本V2设置说明</Anchor>中的<Anchor target="_blank" href="/marketers/zh/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink智能脚本创建方式</Anchor>部分。
@@ -260,6 +284,8 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 
      1. 在**映射对象**一栏中选择**自定义参数**。
      2. 在**出链参数**和**入链参数**字段中输入**ScCid**。
+
+     <div id="note-3" />
 
      > 📘 **注意**
      >
@@ -289,12 +315,16 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 
 * 提醒开发人员务必在传出链接中加入传入参数`ScCid`的映射。
 
+  <div id="note-4" />
+
   > 📘 **注意**
   >
   > 如需使相关数据呈现在AppsFlyer的原始数据报告中，必须将传入的`ScCid`参数同时映射到传出的`ScCid`参数和`af_sub[1-5]`参数。
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## 创建带有OneLink智能横幅的落地页
 
@@ -334,6 +364,8 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
    * 请确保所有相关的URL参数都已添加到传入链接末尾。
    * 如需查看附加在传入链接末尾的参数，请打开Snapchat Ads Manager，检查您在[创建目标网址](#2-set-destination-url)（Destination URL）时设置的URL参数。
 
+   <div id="note-6" />
+
    > 📘 **注意**
    >
    > 其中最重要的两个参数是`pid=snapweb_int`和`ScCid`。请务必确保传入链接中包含这两个参数，这样智能横幅才能收集相关信息。如果缺少这两个参数，就无法对相关流量进行归因，也无法向Meta Ads发送回传。
@@ -341,20 +373,28 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## **查看网页至应用归因数据**
 
 虽然网页端转化事件是通过原始的`snapweb_int` PID发送到Snapchat的，但AppsFlyer面板和原始数据报告会通过`snapchat_int` PID上报。这既适用于主要转化事件，也适用于转化辅助事件。
 
 该统一报告视图使您能够在同一位置分析网页和应用广告活动绩效，包括全面的移动端和网络端成本报告。
 
+<div id="view-in-the-dashboard" />
+
 ### **面板中的视图**
 
 所有Snapchat的网页到应用归因都会显示在数据总览和活跃面板的`snapchat_int`下。这样，您就可以一站式查看跨平台的广告投放效果。您可以使用标准的筛选条件和细分条件来对比Snapchat数据中的应用流量和网页流量。
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### **在原始数据和API报告中查看**
 
 * **原始数据导出和API响应**在Google网页活动的`media_source`字段中包含`snapchat_int`PID。要验证网页广告设置的详细信息，请参阅`original_url`字段，其中显示的`snapchat_int`是网页广告创建过程中使用的PID。
 * **回传报告**显示`snapweb_int`为回传发送到的原始媒体渠道。
+
+<div id="traits-and-limitations" />
 
 ## 特性与局限性
 

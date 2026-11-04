@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **概要：** 本文解释了如何将相关应用内事件从AppsFlyer发送到Meta ads。
 
+<div id="meta-in-app-events-mapping" />
+
 ## Meta应用内事件映射
 
 广告主需要将SDK或S2S应用内事件映射到Meta侧的预定义事件。广告主还可以向Meta发送每个<Anchor target="_blank" href="/marketers/zh/docs/measure-sessions">应用打开</Anchor>或<Anchor target="_blank" href="/marketers/zh/docs/measure-uninstalls#卸载事件映射">应用卸载</Anchor>的回传。
 
 广告主可以通过事件回传充分利用Meta的高级优化功能，并搭建自定义人群包和相似受众人群包。
+
+<div id="predefined-event-mapping" />
 
 ### 预定义事件的映射
 
@@ -63,6 +67,8 @@ Meta ads提供<Anchor target="_blank" href="https://developers.facebook.com/docs
 * *af\_ad\_revenue*事件仅对购买了<Anchor target="_blank" href="/marketers/zh/docs/roi360-guide-cost-and-revenue-data">ROI360高级套餐</Anchor>的账号开放。
   * 没有ROI360套餐的账号可以使用其他事件名称发送广告收入数据。
 
+<div id="custom-in-app-events-mapping" />
+
 ### 自定义应用内事件的映射
 
 在AppsFlyer平台中，您可以使用“CUSTOM”选项（自定义的Meta事件标识符）将自定义应用内事件映射到Meta。
@@ -73,9 +79,13 @@ AppsFlyer会将SDK中配置的事件名称和事件值（包括事件参数）�
 
 [![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
 
+<div id="automatic-parameter-mapping-with-the-custom-event" />
+
 ### 自定义事件的自动参数映射
 
 基于AppsFlyer与Meta的深度对接，AppsFlyer的众多标准SDK事件参数可自动映射到Meta侧的预定义参数。比如**af\_revenue**参数会转换为Meta中的 **\_valueToSum**参数，这样您就可以发送每个事件的收入，用于数据衡量和Meta中的投放优化。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -135,7 +145,7 @@ AppsFlyer会将SDK中配置的事件名称和事件值（包括事件参数）�
 
 |  |  |
 | --- | --- |
-| <span id="value-to-sum"></span>fb\_mobile\_level\_achieved | none |
+| <span id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter"></span><span id="value-to-sum"></span>fb\_mobile\_level\_achieved | none |
 | fb\_mobile\_add\_payment\_info | none |
 | fb\_mobile\_add\_to\_cart | af\_price |
 | fb\_mobile\_add\_to\_wishlist | af\_price |
@@ -150,6 +160,8 @@ AppsFlyer会将SDK中配置的事件名称和事件值（包括事件参数）�
 | fb\_mobile\_content\_view | af\_price |
 | StartTrial | af\_price |
 | Subscribe | af\_revenue |
+
+<div id="event-and-parameter-limitations" />
 
 ## 事件和参数限制
 
@@ -171,6 +183,8 @@ AppsFlyer会将SDK中配置的事件名称和事件值（包括事件参数）�
 * 您可以使用Meta侧的事件名称来命名AppsFlyer中的事件（如fb\_price），但这类事件不能作为CUSTOM事件发送给Meta。  
   **为了避免回传映射问题，建议您不要使用Meta侧的事件名称来命名AppsFlyer事件。**
 * 如需将应用内事件回传映射到Meta，请向其发送所有渠道的事件数据，包括自然量。
+
+<div id="important-1" />
 
 > 🚧 **重要提示！**
 >

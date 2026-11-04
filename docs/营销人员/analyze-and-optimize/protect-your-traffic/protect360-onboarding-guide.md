@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** 按照本指南的分步流程，在6周内快速高效地启用Protect360，为您的营销投入提供最大程度的保护。
 
+<div id="onboarding-timeline-and-what-to-expect" />
+
 ## **入驻时间表及预期内容**
 
 本指南涵盖了为期6周的阶段性入驻流程：
@@ -29,6 +31,8 @@ x-zendesk:
 * **优化阶段（第3-5周）**：根据初步数据进行优化。
 * **核对阶段（第5–6周）**：与广告合作渠道核对作弊数据。
 * **进阶防护（第6周起）[可选]**：启用高级作弊防护层。
+
+<div id="about-protect360" />
 
 ## **关于Protect360**
 
@@ -47,9 +51,13 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 * **SDK**：无需操作。
 * <strong>Server-to-Server（S2S）</strong>确保事件通过API3发送。<Anchor target="_blank" href="/marketers/zh/docs/bulletin-upgrading-the-appsflyer-s2s-api">点击此处了解具体操作方法。</Anchor>
 
+<div id="note" />
+
 > 📘 **注意事项**
 >
 > 如果不确定您应使用哪种方式，请与开发团队或营销运营团队确认。
+
+<div id="fraud-protection-studio-settings" />
 
 #### **作弊防护操作台设置**
 
@@ -60,6 +68,8 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 * **已实施**（默认）：实时拦截作弊行为；若在激活后识别出作弊，则标记为“归因后假量”。若您的目标是实时防作弊，这是最理想的设置。
 * **已标记**：检测到作弊行为但不阻止归因，仅进行标记，便于后续分析和评估。若您更偏好先进行灵活分析再决定是否拦截，可选择该设置。
 
+<div id="note-1" />
+
 > 📘 **注意事项**
 >
 > <Anchor target="_blank" href="/marketers/zh/docs/user-management">管理员账号</Anchor>可根据业务目标，随时在**已实施**和**已标记**模式之间进行切换。<Anchor target="_blank" href="/marketers/zh/docs/beta-fraud-protection-studio#key-concepts">点击此处了解详情</Anchor>。
@@ -68,19 +78,27 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 
 提示：在熟悉Protect360的过程中，我们强烈建议您的团队前往作弊防护操作台中的“应用检测评估”（App detection evaluation）卡片，基于应用层级测试并理解各项设置。
 
+<div id="data-connection-setup" />
+
 #### **数据连接设置**
 
 您可以通过三种方式导出Protect360数据：<Anchor target="_blank" href="/marketers/zh/docs/protect360-raw-data-reports#protect360原始数据报告简介">原始数据报告</Anchor>、<Anchor target="_blank" href="/marketers/zh/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor>或<Anchor target="_blank" href="/marketers/zh/docs/protect360-raw-data-reports#data-locker">Data Locker</Anchor>。无论选择哪种方式，请务必正确配置数据连接，以确保作弊数据报告的准确性和分析的有效性。
 
 <Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 为充分发挥Protect360的价值，请在每月8日导出一次<Anchor target="_blank" href="/marketers/zh/docs/protect360-raw-data-reports#postattribution-reports">归因后报告</Anchor>，以便与广告合作渠道进行核对。
 
+<div id="how-to-display-hijacked-installs-correctly-in-your-bi" />
+
 #### **如何在BI系统中查看被劫持的激活数据**
 
 如需在内部系统中实现更精细化的作弊数据管理，可在BI系统中通过原始数据报告、Pull API或Data Locker准确查看被劫持的激活数据。
+
+<div id="raw-data-report" />
 
 #### **原始数据报告**
 
@@ -94,6 +112,8 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 * 空白 - 非劫持激活
 * 自然量 - 改归因为自然流量
 * Contributor1, contributor2, contributor3 等 - 正确归因到具体媒体渠道
+
+<div id="note-2" />
 
 > 📘 **注意事项**
 >
@@ -132,15 +152,21 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 * 自然量 - 改归因为自然流量
 * Contributor1, contributor2, contributor3 等 - 正确归因到具体媒体渠道
 
+<div id="validation-rules" />
+
 #### **验证规则**
 
 通过验证规则，您可以基于营销策略设置作弊防护机制，根据不同参数和使用场景灵活设置将哪些激活判定为“有效”，哪些判定为“无效”。
 
 请联系您的客户成功经理或客户经理，获取适用于您所在领域的最佳实践建议。
 
+<div id="note-3" />
+
 > 📘 **注意事项**
 >
 > 为使验证规则发挥最大效果，建议您检查当前的用户获取策略、营销策略或媒体投放策略，并判断哪些类型的激活或应用事件符合您的业务目标，以便制定拦截规则。例如：如果您未在某个国家/地区（GEO）进行投放，则可以设定规则自动拦截来自该区域的流量。您可创建多个规则，使防护逻辑与营销策略保持一致。
+
+<div id="working-with-dashboards" />
 
 #### **配合面板进行分析**
 
@@ -154,6 +180,8 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 
 <Accordion title="优化阶段（第3-5周）">
 
+<div id="campaign-optimization" />
+
 #### **广告投放优化**
 
 在此阶段，您可以开始优化广告活动，以充分发挥Protect360的防护功能。建议您完成以下操作：
@@ -162,15 +190,21 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 * [检查作弊防护设置](/docs/protect360-onboarding-guide#检查作弊防护设置)
 * [设置LVL](/docs/protect360-onboarding-guide#设置lvl)
 
+<div id="best-practices" />
+
 #### 最佳实践
 
 * 结合实时数据与归因后数据，从用户质量（如留存率、应用内事件等）和作弊情况两个维度评估广告活动表现。
 * 基于site\_id或subsite\_id进行广告活动优化。
 * 分析不同合作渠道的作弊率与作弊类型。
 
+<div id="review-your-fraud-protection-settings" />
+
 #### 检查作弊防护设置
 
 请检查您的[作弊防护操作台](/docs/protect360-onboarding-guide#作弊防护操作台设置)设置，确保其仍与您的业务目标保持一致。
+
+<div id="note-4" />
 
 > 📘 **注意事项**
 >
@@ -188,6 +222,8 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 
 <Accordion title="核对阶段（第5–6周）">
 
+<div id="fraud-data-reconciliation" />
+
 #### **欺诈数据核对**
 
 在启用Protect360并积累数周的作弊检测数据后，您可以开始与广告合作渠道核对作弊数据。
@@ -201,6 +237,8 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 <div id="advanced-protection-setup-week-6--optional" />
 
 <Accordion title="进阶防护（第6周起）[可选]">
+
+<div id="advanced-security-module" />
 
 #### **高级安全模块**
 

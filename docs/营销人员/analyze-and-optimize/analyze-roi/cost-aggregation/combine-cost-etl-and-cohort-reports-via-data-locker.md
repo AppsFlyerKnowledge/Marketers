@@ -23,6 +23,8 @@ x-zendesk:
 
 ![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
 
+<div id="about-combining-cost-etl-and-cohort-reports" />
+
 ## Cost ETL与群组报告的合并方式简介
 
 Cost ETL报告以及Data Locker中的群组报告（常规及高级汇总均适用）分别具有其各自专属的特点。比如Cost ETL报告中包含展示、点击和成本数据，而群组报告则提供详细的归因、应用内事件和收入数据。
@@ -34,6 +36,8 @@ Cost ETL报告以及Data Locker中的群组报告（常规及高级汇总均适�
 * 可提供时效性最强、准确性最高、颗粒度最细的数据，帮助您全面了解营销效果。
 * 将贵司的内部BI与AppsFlyer面板数据对齐。
 * 有助于重要指标的计算，如广告支出回报率（ROAS）以及平均用户行为成本（CPA）。
+
+<div id="queries-to-combine-reports" />
 
 ## 用于合并报告的查询语句
 
@@ -57,6 +61,8 @@ Cost ETL报告以及Data Locker中的群组报告（常规及高级汇总均适�
   * 不同报告的时效性有所差异。比如Cost ETL每天最多更新四次，而高级汇总群组报告的更新更为频繁。
   * 高级汇总群组报告覆盖最近1095天内转化的用户，更早之前转化的用户会被忽略。
   * Cost ETL报告中，数据的时区与AppsFlyer中储存的数据一致。高级汇总群组报告则包含UTC时区的数据版本和本地时区的数据版本。**推荐设置**：与Cost ETL报告合并时，建议使用按本地时区分版本的报告。
+
+<div id="query" />
 
 #### 查询语句
 
@@ -161,6 +167,8 @@ GROUP BY ALL;
   * 不同报告的时效性有所差异。比如Cost ETL每天最多更新四次，而Data Locker中的群组报告一天更新一次。
   * Cost ETL报告中，数据的时区与AppsFlyer中储存的数据一致，而Data Locker中的群组报告则按UTC时间呈现。
 
+<div id="query-1" />
+
 #### 查询语句
 
 ```sql
@@ -246,6 +254,8 @@ GROUP BY ALL;
 ```
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

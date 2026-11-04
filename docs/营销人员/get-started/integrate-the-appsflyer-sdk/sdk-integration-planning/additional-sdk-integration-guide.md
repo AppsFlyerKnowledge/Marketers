@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **概要：** 除了基础功能外，您还可以使用其他的SDK功能，并与开发人员合作部署卸载衡量、用户邀请归因、推送通知和隐私设置等API。
 
+<div id="additional-attribution-methods" />
+
 ## 其他归因方式
 
 如果您需要衡量电视推广、应用卸载或预装推广，可以考虑另外再使用以下各种归因方式。
@@ -66,6 +68,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="sessions" />
+
 ## 应用打开（Sessions）
 
 通过计算指定时段内的用户session次数来衡量用户与应用的互动情况。
@@ -91,6 +95,8 @@ x-zendesk:
 您可以<Anchor target="_blank" href="/marketers/zh/docs/measure-sessions#session-reporting-by-the-app-sdk">手动上报用户session</Anchor>。这种方式适用于一般在后台运行的工具类应用。
 
 </Accordion>
+
+<div id="owned-media" />
 
 ## 自有媒体
 
@@ -178,6 +184,8 @@ AppsFlyer能够衡量通过各种平台投放的推送通知广告，包括Googl
 **提示**您可以使用<Anchor target="_blank" href="/marketers/zh/docs/convert-your-mobile-web-visitors-to-app-users#attribution-solutions">OneLink Smart Script</Anchor>将网页端用户导流到移动端。
 
 </Accordion>
+
+<div id="user-privacy" />
 
 ## 用户隐私
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 > **概览：** 网页端效果衡量可帮助您了解哪些媒体渠道和广告系列为网站带来用户，并衡量这些访问对用户后续行为产生的影响。网页端效果衡量可以端到端采集用户互动并完成归因，覆盖从首次访问到生命周期价值衡量的全过程，同时支持新客获取（首次访问者）和再互动衡量。
 
+<div id="about-web-performance-measurement" />
+
 ## 关于网页端效果衡量
 
 网页端归因指识别哪些媒体渠道和广告系列为网站带来用户，以及这些渠道和广告系列如何影响用户的后续行为。
@@ -35,9 +37,13 @@ x-zendesk:
 
 本文将为您介绍网页端效果衡量的完整流程，说明从用户首次访问网站直至衡量生命周期价值的整个过程中，如何采集、识别和衡量用户互动。借助这一流程，衡量引擎既能识别首次访问网站的用户并完成归因，也能衡量再营销或再互动广告系列对再次访问用户的影响。
 
+<div id="if-you-use-people-based-attribution-pba" />
+
 #### 如果您正在使用People-Based Attribution（PBA）
 
 如果您目前使用<Anchor target="_blank" href="/marketers/zh/docs/people-based-attribution-pba">People-Based Attribution（PBA）</Anchor>，建议迁移至网页端效果衡量，以获得更精细的归因结果和更多数据信号。
+
+<div id="the-web-performance-measurement-flow" />
 
 ### 网页端效果衡量流程
 
@@ -52,6 +58,8 @@ x-zendesk:
 7. [新客获取前阶段](#7-preacquisition-period)：对首次访问与新客获取事件之间发生的事件进行归因。
 8. [再互动与再次获取](#8-reengagement-and-reacquisition)：根据休眠窗口对再次访问用户（再次访问）进行归因，并判断此次再次访问属于再互动还是再次获取。
 9. [LTV衡量](#9-ltv-measurement)：在归因窗口范围内，对后续事件和收入进行归因，以衡量用户生命周期价值。
+
+<div id="the-web-performance-measurement-process---step-by-step" />
 
 ## 网页端效果衡量流程详解
 

@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **概要：** 您可以通过启用或停用渠道对接来控制渠道的数据访问和面板操作权限。
 
+<div id="activation-overview" />
+
 ## 启用渠道对接
 
 渠道对接分为活跃和不活跃两种状态。在渠道对接配置的主页面中打开**启用该渠道**的开关后，该对接就变为活跃对接。渠道对接分为多种不同的类型。即使**启用该渠道**的开关处于关闭状态，只要您启用了其他任何[对接类型](#id)，AppsFlyer则会将该对接视为活跃对接。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -66,6 +70,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="activate-a-partner-integration" />
+
 ## 渠道对接的启用方式
 
 **如需为当前选定应用启用或修改主要对接（渠道对接选项卡）：**
@@ -78,9 +84,13 @@ x-zendesk:
 
 查看[其他对接类型](#id)。
 
+<div id="caution" />
+
 > ❗️ **注意事项**
 >
 > 切勿使用**启用渠道**开关来暂停或关停广告，否则会对在投广告的归因衡量造成不可逆的破坏。
+
+<div id="who-can-activate-an-integration" />
 
 #### 启用渠道的操作权限
 
@@ -90,6 +100,8 @@ x-zendesk:
 | --- | --- | --- |
 | 广告主 | 可以为自己或为代理启用SRN | 可为自己启用非SRN |
 | 代理 | 无法启用SRN | 可启用指定的非SRN |
+
+<div id="deactivate-a-partner-integration" />
 
 ## 停用渠道对接
 
@@ -109,9 +121,13 @@ x-zendesk:
    2. 在下拉菜单中选择一个其他应用。
    3. 重复第2-4步。
 
+<div id="partner-and-agency-access-to-dashboards" />
+
 ## 渠道和代理的面板权限
 
 渠道和代理的面板视图和配置选项各不相同，具体取决于广告主的授权情况。
+
+<div id="partner-visibility" />
 
 ### 渠道可见的面板内容
 
@@ -122,6 +138,8 @@ x-zendesk:
 | --- | --- |
 | 广告主 | 是 |
 | 代理 | 否 |
+
+<div id="agency-permissions" />
 
 ### 代理权限
 
@@ -134,10 +152,14 @@ x-zendesk:
 3. 进入**授权**选项卡并打开**代理权限**开关。
 4. 【可选】向代理开放其他<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#代理权限">权限</Anchor>。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * **代理**可以打开或关闭**非SRN**的**启用渠道**开关。
 > * **广告主**可以打开或关闭**SRN**的**启用渠道**开关。启用后，相关SRN带来的激活**不会归因到代理**。
+
+<div id="disabled-agency-permissions" />
 
 #### 关闭代理权限
 
@@ -152,6 +174,8 @@ x-zendesk:
 
 以下示例说明了广告主在关闭代理权限后的流量归因方式：
 
+<div id="example-1" />
+
 > 📄 **示例 1**
 >
 > **代理通过非SRN（使用归因链接的渠道）投放**
@@ -159,6 +183,8 @@ x-zendesk:
 > 流量会归因到自然量或之前的转化（若仍在回溯窗口期内）， 但不会归因到该代理。
 >
 > 该示例也适用于AppsFlyer通过点击归因链接和相关渠道的API获取信息的场景。
+
+<div id="example-2" />
 
 > 📄 **示例 2**
 >

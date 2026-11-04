@@ -28,6 +28,8 @@ x-zendesk:
 | **须知要点** | Referrer数据的优先级高于通过Meta ads对接获取的数据，且会在原始数据报告中呈现。该解决方案同时适用于点击型归因和浏览型归因。 |
 | **具体影响** | <ul><li>基于以上因素，原始数据中归因到Meta的激活数量可能会少有上涨。</li><li>来自Instagram的</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **相关文档**
 >
 > * <Anchor target="_blank" href="/marketers/zh/docs/meta-ads-integration-setup#userlevel-data">Meta install referrer</Anchor>

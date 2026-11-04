@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：使用 My Dashboards 自定义设计您的专属面板，自由添加微件、图表和数据表，根据您的需求轻松查看投放效果指标。**
 
+<div id="about-my-dashboards" />
+
 ## 关于 My Dashboards
 
 <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/euXEfhL0cmE?si=SI8qQAd7EpSeEaJk" providerUrl="https://www.youtube.com" />
@@ -41,11 +43,15 @@ My Dashboards 是新一代 AppsFlyer 分析平台的核心模块，兼具灵活�
 * 获得关键营销洞察，以优化整体营销策略并制定未来计划。
 * 创建自定义维度，按符合报告需求的业务类别对仪表板数据进行分组和筛选。
 
+<div id="get-started" />
+
 ## 启用方式
 
 My Dashboards 的交互式界面支持用户自定义设置面板。你可以参考本文内容，了解如何新建面板、添加微件、使用可用指标、筛选条件和进行不同维度的分组等功能。
 
 **提示**：深入阅读本文前，建议先通过实际操作熟悉平台界面和使用体验。
+
+<div id="proceduresusing-the-platform" />
 
 ## 操作步骤——使用该平台
 
@@ -136,6 +142,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * 增强报告：创建符合您的报告需求的自定义仪表板视图。
 * 做出更明智的决定：在 KPI 中添加特定业务背景，从而更容易识别趋势、模式和优化机会。
 
+<div id="suggested-custom-dimensions" />
+
 #### 建议的自定义尺寸
 
 | **建议尺寸** | **说明** |
@@ -143,6 +151,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | 广告活动目标 | 按优化目标对广告系列进行分类，以并排比较效果。 |
 | 地区 | 将各个地理区域映射到业务区域以分析地域表现。 |
 | 付费 vs.自有数据 | 将媒体资源分为高级类别，以比较付费、自然和自有媒体的表现。 |
+
+<div id="example-use-cases" />
 
 #### 使用场景示例
 
@@ -152,6 +162,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | 按 UA 经理对媒体来源进行分组 | 根据媒体来源创建自定义维度，按团队成员对不同的媒体来源进行分组。例如，在 Kevin 下对谷歌和 Meta 广告系列进行分组，将抖音和 Instagram 广告系列分组在 Natasha 之下。 |
 | 比较地理等级 | 按业务优先级或收入潜力对国家进行分组，以比较各层级的绩效。 |
 | 分析产品或业务线绩效 | 根据 Campaign 创建自定义维度，按推广的产品或服务对活动进行分组。这可以帮助您了解在不同网络上投放多个产品的广告系列时，哪个产品能带来最多的安装量或收入。 |
+
+<div id="procedures" />
 
 ### **配置流程**
 
@@ -264,6 +276,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 默认情况下，“我的控制面板” 使用默认的表格排序逻辑对表格数据进行排序。当您选择排序依据的指标时，AppsFlyer 会根据所选指标提取并显示排名靠前的行。
 
+<div id="limitations" />
+
 #### 局限性
 
 有些指标不支持排序。目前不支持订购：
@@ -277,6 +291,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 <div id="skan-data" />
 
 <Accordion title="SKAN 数据">
+
+<div id="skan-and-appsflyer-data-scope-differences" />
 
 #### SKAN和AppsFlyer数据范围的差异
 
@@ -293,6 +309,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | 币种 | 应用配置中的指定货币 | USD |
 
 您可以在 My Dashboards 中直接查看多种 <strong>SKAdNetwork（SKAN）</strong>指标，在同一个界面中了解完整的 **iOS 投放表现**，包括 SKAN、经典归因和单一可信数据源。需要更长安装后观察期或查看空白 CV 数据的高级用户，仍可通过 <Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">**SKAN Overview**</Anchor> 获取更深入的分析洞察。
+
+<div id="available-skan-metrics" />
 
 #### 可用的 SKAN 指标
 
@@ -313,6 +331,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | 应用内事件 | CPA | SKAN 事件独立用户数/成本 | D1-D2 |
 | 应用内事件 | 收入 | min\_event\_revenue | D1-D2 |
 
+<div id="supported-dimensions" />
+
 #### 支持的维度
 
 1. App ID
@@ -325,6 +345,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 8. 代理
 9. 归因到的触点类型
 10. 归因类型
+
+<div id="how-to-use" />
 
 #### 使用方法
 
@@ -340,9 +362,13 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 <Accordion title="跨平台仪表板">
 
+<div id="intro" />
+
 #### 引言
 
 传统上，归因是以设备为中心，将事件和转化与单个设备关联。通过新的跨平台模型，这可以转变为基于用户的归因。用户在多个设备和平台上的交互通过一个单一标识符统一：客户用户ID（CUID）。提供更清晰的用户旅程洞察、提高的归因准确性和更明智的营销决策。
+
+<div id="prerequisites" />
 
 #### 前期准备
 
@@ -351,6 +377,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * 在 AppsFlyer 中，将您的应用程序分配到产品线，选择启用跨平台归因、再互动跨平台归因，并指定不活跃状态恢复窗口。有关更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/product-line-group-apps-for-cross-platform-attribution#如何设置产品线">设置产品线</Anchor>和<Anchor target="_blank" href="/marketers/zh/docs/beta-user-based-cross-platform-re-engagement-attribution">跨平台再互动</Anchor>归因。
 * 在您的应用中，设置AppsFlyer SDK以发送带有CUID的事件。有关开发者说明，请参见[设置客户用户ID](https://dev.appsflyer.com/hc/docs/set-customer-user-id).  
   您还可以通过服务器到服务器（S2S）集成发送CUID。
+
+<div id="dashboard-overview" />
 
 #### 仪表板概述
 
@@ -365,6 +393,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 当前的视图类型是**统一**和**用户获取**。
 
 <Image alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
+
+<div id="widgets" />
 
 #### 微件
 
@@ -383,9 +413,13 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * **再互动次**数-再互动次数统计了在选定日期范围内跨平台带回现有用户的媒体渠道的合格跨平台再互动转化次数。  
   **注意：** 启用跨平台再互动归因后，仪表板结果可以反映原始采集来源和计入跨平台再互动的媒体来源，具体取决于所选指标、小工具和归因上下文。
 
+<div id="metrics-and-dimensions" />
+
 #### 指标和维度
 
 在[我的仪表板](/docs/my-dashboards#metrics)中找到的所有指标都可以用于跨平台归因。有一些独特的指标和维度仅与跨平台归因相关。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -399,6 +433,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * **平台组** - 将所有平台聚合成组。例如，一个移动平台组将由 Android 和 iOS 组成。一个CTV平台组将包括Roku、三星、LG等。<Anchor target="_blank" href="/marketers/zh/docs/ctv-pc-and-console-platform-attribution-concepts#适配平台">在这里查看完整列表</Anchor>。
 * 产品线 - 属于单一品牌的平台特定应用。如需了解详情，请参阅<Anchor target="_blank" href="/marketers/zh/docs/product-line-group-apps-for-cross-platform-attribution">此文档</Anchor>。
 
+<div id="web-attribution-in-the-cross-platform-dashboard" />
+
 #### 跨平台仪表板中的网络归因
 
 一旦您的网络应用成为启用了跨平台归因的产品线的一部分（参见上面的先决条件），网络会话和事件就会包含在跨平台控制面板中。使用 CUID 将网络活动与移动、CTV、PC 和主机活动整合在一起，因此您可以看到完整的用户旅程，而不是孤立的网络访问。
@@ -409,6 +445,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * **自定义用户获取事件之前的事件将从群组中排除-如果您设置了自定义用户获取事件而不是默认的首次访问事件**，则在该事件之前发生的网络事件将被归类为群组指标`PRE_USER_ACQUISITION`并排除在群组指标中，因为群组基于获取日期。
 * **结果可能与独立的网络归因报告有所不同** ——一旦将网络活动整合到完整的跨平台画面中，与<Anchor target="_blank" href="/marketers/zh/docs/export-web-performance-measurement-report-data-from-data-locker">网络归因报告相比，归因</Anchor>可能会发生变化。
 * **检查每个指标的归因方法**-标有 Classic 的指标反映的是设备或平台级别的归因，而不是跨平台（基于 CUID）的视图。选择跨平台查看整合到统一用户旅程中的 Web 数据。
+
+<div id="limitations-1" />
 
 #### **局限性**
 
@@ -450,15 +488,21 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
    <Image alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
 
+<div id="theme" />
+
 #### 主题
 
 选择仪表板主题。选择浅色或深色模式。
+
+<div id="auto-save" />
 
 #### 自动保存
 
 自动保存布局更改和控件调整。
 
 注意：[筛选器更改](/docs/my-dashboards#view-dashboard)不会自动保存，必须手动保存才能在下次打开仪表板时应用。
+
+<div id="data-labels" />
 
 #### 数据标签
 
@@ -468,6 +512,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 </Accordion>
 
+<div id="concepts" />
+
 ## 概念
 
 <div id="metrics" />
@@ -475,6 +521,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 <Accordion title="指标">
 
 以下表格列出了可用于微件（表格、KPI 和图表）的指标。
+
+<div id="custom-metrics" />
 
 > 🚧 **自定义指标**
 >
@@ -575,6 +623,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | 平台 | 应用程序运行的平台，例如 Android、iOS、三星、LG、Roku 等。 |
 | 平台组 | 将所有平台（见上面的平台）聚合成组。例如，一个移动平台组将由 Android 和 iOS 组成。一个 CTV 平台组将由 Roku、三星、LG 等组成。<Anchor target="_blank" href="/marketers/zh/docs/ctv-pc-and-console-platform-attribution-concepts#适配平台">在这里查看完整列表</Anchor>。 |
 
+<div id="ssot-supported-dimension-metrics" />
+
 #### SSOT 支持的维度指标。
 
 | 维度 | 说明 |
@@ -598,11 +648,15 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 并非我的控制面板中的所有指标都支持所有分组。指标兼容性取决于指标配置，包括时段、时间细分和归因方法。  
 请在下文中查看每个指标集支持哪些分组。
 
+<div id="installs-re-attributions-re-engagements" />
+
 #### 成本/（激活量+再归因+再互动）
 
 | **时间周期** | **时间分解** | **归因方法** | **支持的维度** |
 | --- | --- | --- | --- |
 | - | Daily / Weekly / monthly | 经典 | 适用维度 |
+
+<div id="cost-impressions-clicks-ctr-click-to-install-rate-ipm-ecpi" />
 
 #### 成本、曝光量、点击量、点击率、点击安装率、IPM、ECPI
 
@@ -610,11 +664,15 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | --- | --- | --- | --- |
 | - | 每日更新 | - | 产品线、平台、平台组、转换类型 |
 
+<div id="click-through-view-through" />
+
 #### 点击浏览，透视查看
 
 | **时间周期** | **时间分解** | **归因方法** | 支持的维度 |
 | --- | --- | --- | --- |
 | - | 每日更新 | 经典 | 产品线、平台、平台组、转换类型、应用程序版本、操作系统版本 |
+
+<div id="total-revenue-roas-roi-arpu-gross-profit-sessions" />
 
 #### 总收入、广告支出回报率、投资回报率、每股收益率、毛利润、会话
 
@@ -627,6 +685,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 净收入、净支出回报率、净投资回报率、净ARPU和净毛利支持与其总收入相同的细分，**仅适用于活动和群组时段**（不包括LTV）。
 
+<div id="total-revenue-roas-roi-arpu-gross-profit-sessions-retention-rate" />
+
 #### 总收入、广告支出回报率、投资回报率、ARPU、毛利润、会话、留存率
 
 | **时间周期** | **时间分解** | **归因方法** | 支持的维度 |
@@ -636,6 +696,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | M0–36 | 每月进行 | 经典 | 来源、产品线、平台、平台群组、安装应用商店、商店产品页面、参与类型 |
 
 注意：留存率仅适用于基于群组的指标。
+
+<div id="in-app-events-unique-users-count-revenue-ecpi-conversion-rate-average-count" />
 
 #### 应用内事件：独立用户数、数量、收入、ECPI、转化率、平均数量
 
@@ -649,6 +711,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | D0–1 | 每日更新 | SKAN | 产品线、平台、平台组、转换类型 |
 | D2, D7 | 每日更新 | SSOT | 产品线、平台、平台组、转换类型 |
 
+<div id="active-users" />
+
 #### 活跃用户
 
 | **时间周期** | **时间分解** | **归因方法** | **支持的维度** |
@@ -656,11 +720,15 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | 实际 | 每日更新 | 经典 | 应用程序、媒体来源、活动、活动 ID、地理位置、代理商 |
 | 实际 | 每月进行 | 经典 | 应用程序、媒体来源、活动、活动 ID、地理位置、代理商 |
 
+<div id="active-users-last-31-days" />
+
 #### 最近31天内的活跃用户
 
 | **时间周期** | **时间分解** | **归因方法** | **支持的维度** |
 | --- | --- | --- | --- |
 | 实际 | 每日更新 | 经典 | 应用程序、媒体来源、活动、活动 ID、地理位置、代理商 |
+
+<div id="daumau" />
 
 #### 日活用户数/月活用户数
 
@@ -668,6 +736,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | --- | --- | --- | --- |
 | 实际 | 每日更新 | 经典 | 应用程序、媒体来源、活动、活动 ID、地理位置、代理商 |
 | 第 2 行单元格内容 | 第 2 行单元格内容 | 第 2 行单元格内容 |  |
+
+<div id="uninstalls" />
 
 #### 卸载
 
@@ -678,17 +748,23 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | W0–156 | 每周 | 经典 | 来源、产品线、平台、平台组、安装应用商店、商店产品页面 |
 | M0–36 | 每月进行 | 经典 | 来源、产品线、平台、平台组、安装应用商店、商店产品页面 |
 
+<div id="assisted-installs" />
+
 #### 助攻激活
 
 | **时间周期** | **时间分解** | **归因方法** | **支持的维度** |
 | --- | --- | --- | --- |
 | - | 每日更新 | 经典 | 媒体渠道 + 广告系列： |
 
+<div id="skan-duplicates" />
+
 #### SKAN重复数据
 
 | **时间周期** | **时间分解** | **归因方法** | **支持的维度** |
 | --- | --- | --- | --- |
 | - | 每日更新 | SSOT | 产品线、平台、平台组、转换类型、应用程序版本、操作系统版本 |
+
+<div id="first-visits-re-visits" />
 
 #### 首次访问，再次访问
 
@@ -698,12 +774,16 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | --- | --- | --- | --- |
 | 全部 | 全部 | 全部 | 商店产品页面、平台组、产品线、转换类型 |
 
+<div id="multiple-metrics-in-a-table" />
+
 #### 表中有多个指标
 
 * 如果所选分组不支持某些指标，则只有这些指标显示 **N/A**。  
   支持的指标继续显示数据。
 * 如果某个指标不适用于所选配置，则会显示以下消息：  
   **“此指标不适用于选定的分组或筛选条件。“**
+
+<div id="multiple-groupings-in-a-table" />
 
 #### 表格中的多个分组
 
@@ -720,6 +800,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 用户可以在面板和微件层级分别配置日期范围。
 
+<div id="dashboard-level" />
+
 #### 面板级别
 
 <Image alt="image__9_.png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
@@ -727,6 +809,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * 默认情况下，面板采用**按微件设置**（Per widget）的日期范围。在此模式下，每个微件根据其各自的设置显示数据。
 * 每个微件选定的时间范围会显示在副标题中。
 * 当不借助**按微件设置**设置日期范围时，面板中的所有微件将统一更新为所选的时间范围。
+
+<div id="widget-level" />
 
 #### 微件层级
 
@@ -823,6 +907,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 您还可以按百分比变化对表格进行排序，以快速显示增减幅度最大的部分。
 
+<div id="comparison-period-options" />
+
 ### 比较周期选项
 
 根据所选日期范围，以下比较周期可用：
@@ -833,12 +919,16 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * 上个月对于上个月的范围，将每个日期与正好4周前的日期进行比较（天数相同，不一定是日历月份）。
 * **自定义模式（Custom）：** 选择自定义结束日期时，前一个周期会自动匹配相同的天数。
 
+<div id="how-to-add-a-compare-to-in-tables" />
+
 ### 如何在表格中添加比较
 
 1. 在表格小部件中，转到编辑表格。
 2. 在小部件设置标题中，点击 **比较到.**
 3. 选择一个周期。比较的周期应根据所选周期进行选择。
 4. 是否保存更改？
+
+<div id="use-case-example" />
 
 ### 使用案例示范
 
@@ -852,6 +942,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 <Accordion title="条件格式">
 
 条件格式化帮助您一目了然地可视化仪表板中的性能趋势。通过直接在您的表格小部件上应用基于颜色的指示器，您可以快速识别模式、异常值和需要关注的数值，而无需手动扫描数字。
+
+<div id="available-formatting-types" />
 
 #### 可用的格式化类型
 
@@ -876,6 +968,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
   这种方法突出了哪些活动带来了强劲的结果，从而加快了基于数据的决策，优化了活动和预算分配。
 
   <Image alt="" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />altimage (9).png
+
+<div id="how-to-apply-conditional-formatting" />
 
 #### 如何应用条件格式化
 
@@ -916,13 +1010,19 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 <Accordion title="活动延迟日期">
 
+<div id="understand-event-dates-and-late-events" />
+
 #### 了解活动日期和晚间活动
 
 一些仪表板小工具使用每日处理服务来聚合数据，该服务**每天在** UTC 时间 02:00 **左右运行一次**。因此，**UTC 午夜之后不久到达的应用内事件**可能会在控制面板中显示与预期日期不同的事件日期。
 
+<div id="what-are-late-events" />
+
 ##### 什么是晚间活动？
 
 延迟事件是指在世界**标准时间 00:00 至 02:00 之间到达AppsFlyer的应用内事件**。
+
+<div id="how-dashboards-determine-the-event-date" />
 
 ##### 仪表板如何确定活动日期
 
@@ -932,6 +1032,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * **仪表板时区视图**（例如，**UTC** 或选定的**本地时区**）
 
 在 UTC **时间 00:00 — 02:00 之间到达的事件可以显示之前的 UTC** 日期。
+
+<div id="example-event-date-differences-between-utc-and-utc-8" />
 
 ##### 举例来说，UTC 和 UTC-8 之间的事件日期差异
 
@@ -943,6 +1045,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 **注意：** 如果您选择的时区**晚于 UTC**（例如，**UTC-8**），则与 UTC 视图相比，仪表板可以将事件日期显示为第 **1 天**，尤其是在午夜左右和晚期事件处理期间。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 
@@ -981,6 +1085,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 自**2026年6月30** 日起，旧版事件、概览和活动数据面板将不再支持访问。
 
+<div id="match-legacy-dashboards-to-my-dashboards" />
+
 #### 将旧版仪表板与 “我的仪表板”
 
 | 旧版仪表板 | 在 “我的控制面板” 中使用此模板或视图 | 用它来 |
@@ -988,6 +1094,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 | 事件 | 活动模板 | 分析应用内事件性能、收入事件和基于事件的 KPI。 |
 | 概览 | 绩效分析或营销概述模板 | 分析营销绩效、活动结果和高级业务关键绩效指标。 |
 | 活动 | 活跃维度视图 | 分析活动数据、活跃用户、会话和活动趋势。 |
+
+<div id="open-the-replacement-template-or-view" />
 
 #### 打开替换模板或视图
 
@@ -1012,6 +1120,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * 包含多达100,000行的表格可以下载。
 * 数据在15分钟内准备好下载。
 
+<div id="how-it-works" />
+
 #### 运行方式
 
 1. 从您的仪表板中选择导出。
@@ -1029,6 +1139,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 在**我的仪表板**中可用的KPI取决于广告商授予代理机构和广告网络的**权限**。这些权限控制合作伙伴可以访问哪些数据源、指标和归因视图。
 
+<div id="agency-access" />
+
 #### 代理访问权限
 
 当广告商授予**代理权限**时，代理机构可以查看归因于他们管理的活动的性能数据。默认情况下可以访问应用内事件和收入。根据额外的权限，代理机构还可以查看自然和汇总数据。
@@ -1042,6 +1154,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
   **注意：** 代理机构只能查看广告商授予的权限中包含的KPI。
 
+<div id="ad-network-access" />
+
 #### 广告平台访问权限
 
 当广告商授予**广告网络权限**时，广告网络可以查看与他们交付的流量相关的性能数据。与代理机构不同，应用内事件和收入的可见性取决于广告商启用的特定权限。
@@ -1054,6 +1168,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * **SKAN**指标，当适用时
 
 **注意：** 广告商控制应用内事件和收入是否可用。广告网络可以查看与其媒体来源相关的流量数据。
+
+<div id="configure-settings" />
 
 #### 配置设置
 

@@ -34,6 +34,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="about-onelink-smart-script" />
+
 ## OneLink智能脚本简介
 
 用户通过自然或非自然（与广告互动）的方式从您的移动端网站进入应用商店的相关页面，这条链路中涉及到两个点击：
@@ -59,9 +61,13 @@ OneLink智能脚本有两个版本：
 
 <Anchor target="_blank" href="/marketers/zh/docs/legacy-onelink-smart-script-v1-setup">**OneLink智能脚本V1（旧版）**</Anchor>：如果您已经有现成的OneLink智能脚本配置，请参照该版本的相关文档对脚本进行维护和编辑。 **请注意**：虽然AF不规定必须使用V2，但仍建议您迁移到V2。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 建议您将OneLink智能脚本与其他的AppsFlyer网页到应用解决方案一一<Anchor target="_blank" href="/marketers/zh/docs/convert-your-mobile-web-visitors-to-app-users">对比</Anchor>，找出最适合您的解决方案。
+
+<div id="examples" />
 
 ### 示例
 
@@ -90,6 +96,8 @@ Emma收到奥兰多酒店度假项目的宣传邮件。
 她点击该链接后，跳转到酒店的移动端网站。她在网站上看到吸引她下载该酒店应用的CTA按钮。OneLink智能脚本自动生成一条URL，其中包含与邮件中的原始链接相同的**pid**和**c**参数，具体链接如下：https://hotel.onelink.me/Ac4G?pid=email&c=Florida&deep_link_value=orlando
 
 **Emma点击网站上的按钮后，跳转到应用商店。她下载并打开应用，然后通过深度链接进入应用中的奥兰多度假页面。**
+
+<div id="note-1" />
 
 > 📘 **注意**
 >

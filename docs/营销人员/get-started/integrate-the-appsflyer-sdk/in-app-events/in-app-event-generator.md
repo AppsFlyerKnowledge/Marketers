@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 概要：本文介绍了如何使用应用内事件生成器来自动生成应用代码（安卓和iOS原生代码以及Unity代码），根据您的业务需求定义相关事件的名称和内容，用于应用内事件的发送。
 
+<div id="introduction" />
+
 ## 简介
 
 应用内事件可衡量应用激活后的用户行为，是**广告主评估各渠道用户质量**的主要途径，常用于CPA营销推广中。
@@ -37,9 +39,13 @@ AppsFlyer的<Anchor target="_blank" href="https://evgen.appsflyer.com/">应用�
 * 将**自动生成的代码发送**给相关的安卓和iOS移动端开发人员——**这可以节省数天的工作量，避免无效沟通和潜在坑点。**
 * **重复利用工作成果**，应对后续的事件更新和新增，以及新应用的需求。
 
+<div id="using-the-in-app-event-generator" />
+
 ## 应用内事件生成器的使用方法
 
 您使用应用内事件生成器为新应用创建事件或更新现有的事件组合。
+
+<div id="creating-a-new-event-set" />
 
 ### 创建新的事件组合
 
@@ -50,6 +56,8 @@ AppsFlyer的<Anchor target="_blank" href="https://evgen.appsflyer.com/">应用�
 3. 根据您的业务需求添加或移除事件和参数。
 5. 点击**下载zip文件**，将事件组合保存下来，以备后用，或同步给开发等人员，以便协调工作。
 
+<div id="updating-an-existing-event-set" />
+
 ### 更新现有的事件组合
 
 **请按以下方式更新现有的事件组合：**
@@ -59,6 +67,8 @@ AppsFlyer的<Anchor target="_blank" href="https://evgen.appsflyer.com/">应用�
 3. 根据您的业务需求添加或移除事件和参数。
 5. 点击**下载zip文件**，将事件组合保存下来，以备后用，或同步给开发等人员，以便协调工作。
 
+<div id="adding-events" />
+
 ### 添加事件
 
 **请按以下方式在事件组合中添加新的事件：**
@@ -66,6 +76,8 @@ AppsFlyer的<Anchor target="_blank" href="https://evgen.appsflyer.com/">应用�
 3. 输入该事件的目的并描述相关的业务场景。
 4. 输入该事件的触发操作，说明该事件用户链路中的发送节点。我们会将这部分说明以备注的形式添加到生成的代码中，便于开发人员参考。
 5. 【可选】在该事件中添加一个或多个参数。
+
+<div id="adding-parameters" />
 
 ### 添加参数
 
@@ -78,6 +90,8 @@ AppsFlyer的<Anchor target="_blank" href="https://evgen.appsflyer.com/">应用�
 5. 输入简要介绍、字段类型或应用中参数值的来源，便于开发人员理解。这部分说明会以备注的形式呈现在生成的代码中。
 
 **请注意**：请注意：<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview#predefined-and-custom-events">预定义名称</Anchor>/span>支持事件和参数的自动映射，这也是我们推荐的映射方式。
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

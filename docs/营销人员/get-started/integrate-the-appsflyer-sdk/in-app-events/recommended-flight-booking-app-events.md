@@ -24,7 +24,7 @@ x-zendesk:
 > **概要：** 概览：通过为您的航班预订应用程序记录这些建议的应用内事件，评估用户在整个用户路径中的质量。
 
 
-<span id="flight-booking"></span>航班预订 App 允许旅客轻松预订航班, 同时从最优价格中进行选择。
+<span id="-flight-booking"></span><span id="flight-booking"></span>航班预订 App 允许旅客轻松预订航班, 同时从最优价格中进行选择。
 
 记录事件可以帮助您：
 
@@ -32,11 +32,15 @@ x-zendesk:
 * 分析季节性趋势
 * 了解用户偏爱的热门航空公司
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 如需详细的开发人员指南，请在**AppsFlyer开发者资源中心**查找<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">。</Anchor>
 >
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -221,6 +225,8 @@ x-zendesk:
 | af\_receipt\_id | 订单ID，需要CRITEO和Google AdWords再营销对接 | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 > **概要：** 本文解释了如何衡量再营销广告带来的增量。
 
+<div id="what-is-incrementality" />
+
 ## 什么是增量分析？
 
 我们可以通过以下示例来直观地理解增量分析这一概念：
@@ -43,11 +45,15 @@ x-zendesk:
 
 因此，“总转化量”与“自然转化量”之间的差值，就是所谓的**增量提升**（incremental lift，或简称**lift**），这是判断活动真实价值的关键指标。但要精确衡量这一差值并不简单，而这正是AppsFlyer增量分析所提供的功能。
 
+<div id="incrementality-experiments" />
+
 ### 增量实验
 
 增量分析可通过科学的实验方法，帮助您衡量增量提升。其核心思路是将用户划分为行为特征相似的群组。被营销活动触达的用户被分为 **"测试组"**，而未被营销活动触达的用户则被分为 **"对照组"**。
 
 <Anchor target="_blank" href="/marketers/zh/docs/run-an-incrementality-for-remarketing-experiment">通过对比两组的转化表现，即可清晰了解广告活动带来的真实增量。</Anchor>
+
+<div id="calculation-methodology" />
 
 ## 计算方法
 
@@ -64,9 +70,13 @@ AppsFlyer增量分析使用两种不同的方法计算 增量提升：
 
 在评估广告活动表现时，**基于触达法**更为理想， 但这种方法需要广告平台提供额外的数据， 而并非所有平台能提供这样的数据。在这类平台上， 将采用ITT方法。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 在2021年12月16日之前， 系统仅通过ITT的方法计算增量提升。此后，历史数据已更新为在适用的情况下采用基于触达法计算。 因此，您可以重新查看早期实验，并根据新的方法论来解读结果。
+
+<div id="itt-based-lift" />
 
 #### 基于ITT的增量计算
 
@@ -83,6 +93,8 @@ AppsFlyer增量分析在SRN（自归因网络）中使用ITT方法。
 **结果解读**
 
 由于ITT方法假设实验组所有用户都接触了广告，这可能会导致转化率偏低，从而出现增量提升值较低的情况。
+
+<div id="reach-based-lift" />
 
 #### 基于触达的增量计算
 
@@ -102,6 +114,8 @@ AppsFlyer增量分析在非SRN（基于归因链接的广告平台）中采用�
 **结果解读**
 
 由于基于触达的方法仅考虑真正看到广告的实验组用户，因此其结果通常会被“放大”：正向增量提升会更高，负向增量提升会更低。
+
+<div id="best-practices" />
 
 #### 最佳实践
 
@@ -134,6 +148,8 @@ AppsFlyer增量分析在非SRN（基于归因链接的广告平台）中采用�
 
 在计算[群组层级指标](/docs/incrementality-for-remarketing-overview#::2c5f08ec)（非[用户层级指标](/docs/incrementality-for-remarketing-overview#::6143ff4f)）时，将基于按比例缩放的对照组计算增量。 也就是说，系统会调整对照组规模，使其与每个媒体渠道的对照组规模保持一致。
 
+<div id="example" />
+
 > 📄 **示例**
 >
 > 假设以下场景：
@@ -151,6 +167,12 @@ AppsFlyer增量分析在非SRN（基于归因链接的广告平台）中采用�
 > 最终将基于对照组规模100人和22个增量转化来计算增量提升。
 
 </Accordion>
+
+<div id="::6ba593ae" />
+
+<div id="::3b361a96" />
+
+<div id="incrementality-dashboard" />
 
 ## 增量分析面板
 
@@ -356,6 +378,8 @@ AppsFlyer增量分析在非SRN（基于归因链接的广告平台）中采用�
 
 </Accordion>
 
+<div id="raw-data-reports" />
+
 ## 原始数据报告
 
 使用增量分析原始数据报表，可以深入分析用户与再营销活动的互动情况：
@@ -399,6 +423,8 @@ AppsFlyer增量分析在非SRN（基于归因链接的广告平台）中采用�
 
 字段的可用性视报告类型而有所不同：
 
+<div id="fields-unique-to-incrementality-per-report-type" />
+
 #### 增量分析专属字段（按报表类型区分）
 
 | 字段 | 说明 | 首次识别 | 应用内事件 | 应用打开（Sessions） | 卸载 |
@@ -412,11 +438,15 @@ AppsFlyer增量分析在非SRN（基于归因链接的广告平台）中采用�
 | <span id="timestamp"></span>timestamp | 事件时间戳 YYYY-MM-DD HH:MM |  | Y | Y |  |
 | <span id="app_ids"></span>app\_ids | 关联到共享受众规则的 App ID | Y |  |  |  |
 
+<div id="other-incrementality-report-fields-per-report-type" />
+
 #### 其他增量报告字段（按报告类型）
 
 <table><thead><tr><th>字段</th><th>显示名称\*</th><th>首次识别</th><th>应用内事件</th><th>应用打开（Sessions）</th><th>卸载</th></tr></thead><tbody><tr><td><span id="advertising_id"></span>advertising_id</td><td>广告ID (GAID)</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="android_id"></span>android_id</td><td>Android ID</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="app_id"></span>app_id</td><td>App ID（应用ID）</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="app_name"></span>app_name</td><td>应用名称</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="app_version"></span>app_version</td><td>应用版本</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="appsflyer_id"></span>appsflyer_id</td><td>AppsFlyer ID</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="revenue_alt"></span>revenue_alt</td><td>应用配置中的指定货币</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="bundle_id"></span>bundle_id</td><td>Bundle ID</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="country"></span>country</td><td>国家代码</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="currency"></span>currency</td><td>货币代码</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="customer_user_id"></span>customer_user_id</td><td>Customer user ID</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="brand"></span>brand</td><td>设备品牌</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="device_category"></span>device_category</td><td>设备类别</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="model"></span>model</td><td>设备型号</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="device_model"></span>device_model</td><td>设备型号</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="device_type"></span>device_type</td><td>设备类型</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="event_name"></span>event_name</td><td>事件名称</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="event_revenue"></span>event_revenue</td><td>事件收入</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="event_revenue_currency"></span>event_revenue_currency</td><td>事件收入货币</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="event_revenue_u_s_d"></span>event_revenue_u_s_d</td><td>以美元为单位的事件收入</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="event_time"></span>event_time</td><td>事件时间</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="event_value"></span>event_value</td><td>事件值</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="idfa"></span>idfa</td><td>IDFA</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="idfv"></span>idfv</td><td>IDFV</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="imei"></span>imei</td><td>IMEI</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="is_purchase_validated"></span>is_purchase_validated</td><td>收入已验证</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="os_version"></span>os_version</td><td>OS version</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="platform"></span>platform</td><td>系统平台</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="sdk_version"></span>sdk_version</td><td>SDK version</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td colspan="6"><span id="-according-to-raw-data-specification"></span>\* <a href="./raw-data-field-dictionary#data-fields-dictionary" target="_blank">根据原始数据规则</a> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="incrementality-specifications-and-limitations" />
 
 ## 增量功能特性与局限性
 
@@ -433,6 +463,8 @@ AppsFlyer增量分析在非SRN（基于归因链接的广告平台）中采用�
 | 自然量数据 | 包含 |
 | S2S事件 | 如需将<Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-api-for-mobile-s2s-mobile#移动设备的s2s事件api">S2S事件</Anchor>计入增量分析，其数据中必须包含广告ID（iOS需包含IDFA，Android需包含GAID）。 |
 | 时区 | UTC |
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

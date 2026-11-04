@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** 创建和管理数据源，以便安全地与其他协作者共享您的第一方数据。
 
+<div id="about-dcp-sources" />
+
 ## 关于 DCP 数据源
 
 在数据协作平台 (DCP) 中，数据源是指数据集，通常从您的云存储上传到 AppsFlyer。这些数据源构成了任何协作的基础，为您的协作者提供可用于创建和激活受众的数据。本文包含您需要了解的有关创建和管理数据源的全部内容，包括：
@@ -28,6 +30,8 @@ x-zendesk:
 * [数据源要求](#数据源要求)
 * [创建数据源](#创建数据源)
 * [管理您的数据源](#管理您的数据源)
+
+<div id="source-data-requirements" />
 
 ## 数据源要求
 
@@ -79,6 +83,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="create-a-source" />
+
 ## 创建数据源
 
 **前提条件：** 在创建您的数据源之前，请先<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">设置云服务</Anchor>，AppsFlyer DCP 将使用这些服务来检索您的数据源数据。如果这些连接尚未设置，系统会在创建数据源时提示您进行设置。
@@ -100,6 +106,8 @@ x-zendesk:
 <Accordion title="步骤 2：设置数据源名称">
 
 输入数据源名称。该名称可以是任意唯一名称，帮助您识别该数据源。您还可以选择添加关于该数据源的说明，帮助您轻松识别其中包含的内容（例如「2025 年的所有购买数据」）。
+
+<div id="requirements-and-guidelines" />
 
 #### 要求和指南
 
@@ -128,6 +136,8 @@ x-zendesk:
 
 **注意：** 当数据量较大时，为获得最佳性能，您的部分数据可能会被单独存储。当数据源更新时，此数据也会更新；当删除数据源时，此数据也会被删除。
 
+<div id="source-locations-in-bigquery" />
+
 #### BigQuery 数据源位置
 
 **设置 BigQuery 的数据源位置：**
@@ -136,6 +146,8 @@ x-zendesk:
 2. 选择源数据所在的数据表。
 
 您进行这些选择时，所用的列表分别包含您在创建连接时指定的 BigQuery 项目中的可用数据集和表。
+
+<div id="source-locations-in-snowflake" />
 
 #### Snowflake 数据源位置
 
@@ -146,6 +158,8 @@ x-zendesk:
 3. 选择源数据所在的数据表。
 
 您进行这些选择时，所用的列表分别包含您在创建连接时指定的 Snowflake 账户中的共享（share）、架构（schema）和表。
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### 云存储桶的数据源位置
 
@@ -165,10 +179,14 @@ Amazon S3 或 GCS 的数据源位置由两部分组成：连接所指定的云�
     * **input** 文件夹不是必需的，您可以将其移除或改为其他名称，但必须符合<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements">DCR 命名要求</Anchor>。
     * 虽然该文件夹不是必需的，但设置 **input** 文件夹（或其他名称的等效文件夹）仍属于最佳实践。尤其是在您使用同一个云端存储桶同时上传数据文件（input）和接收报告（output）时，更建议这样做。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 如果您手动创建了文件夹路径，请确保您在**数据源位置**部分输入的连接和路径与您手动创建的路径一致。
 
+
+<div id="source-location-as-local-files" />
 
 #### 本地文件的数据源位置
 
@@ -179,6 +197,8 @@ Amazon S3 或 GCS 的数据源位置由两部分组成：连接所指定的云�
 1. **数据源文件夹设置**
 
 <Image alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+
+<div id="note" />
 
 > 📘 **备注**
 >
@@ -197,10 +217,16 @@ Amazon S3 或 GCS 的数据源位置由两部分组成：连接所指定的云�
 
 <Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > 请在选择前先确定哪种方法最适合您。选择某个选项并点击 **Generate folders** 后，系统会在您所选的云服务中创建文件路径以及处理数据上传的说明。为防止文件夹重复和出现错误，在首次选择后，您**只能更改一次同步方法**。
 
+
+<div id="h_01K2A7MAWTCYF3VAWJRRRJFNN5" />
+
+<div id="snapshot-upload-requirements" />
 
 #### Snapshot 上传要求
 
@@ -228,6 +254,8 @@ Amazon S3 或 GCS 的数据源位置由两部分组成：连接所指定的云�
 | `data/` **子文件夹** | 整理您的文件 | 将 Parquet / CSV / Avro 文件存储在此文件夹中 |
 | `_SUCCESS` **标记** | 指示 DCP 开始采集数据 | 在所有数据文件都上传完成后，在 `v=` 文件夹内上传一个名为 `_SUCCESS` 的空文件 |
 | **支持的文件类型和大小** |  | <ul><li>支持的文件类型：.csv 或 .gz</li><li>最大文件大小：5 GB</li></ul> |
+
+<div id="important-2" />
 
 > 🚧 **重要提示！**
 >
@@ -280,6 +308,8 @@ source_name1/
 
 [<Image alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
 
+
+<div id="append-upload-requirements" />
 
 #### Append 上传要求
 
@@ -361,6 +391,8 @@ source_name/
 4. [测试源数据](#4-测试源数据)
 5. [保存数据源](#5-保存数据源)
 
+<div id="1-load-your-source-fields" />
+
 #### 1. 加载您的数据源字段
 
 数据源字段会自动加载。如果需要手动加载，请根据数据源位置按照以下说明操作：
@@ -368,6 +400,8 @@ source_name/
 **数据仓库中的数据源**
 
 如需加载位于数据仓库（BigQuery 或 Snowflake）中的数据源字段，请点击 **从数据源加载字段**。
+
+<div id="important-3" />
 
 > 🚧 **重要性**
 >
@@ -425,14 +459,20 @@ source_name/
 </Tab>
 </Tabs>
 
+<div id="2-configure-the-source-fields" />
+
 #### 2. 配置数据源字段
 
 加载数据源字段后，每个数据源字段（列）都会显示一个 DCP 字段与之对应。检查每个数据源字段，并从旁边的下拉列表中将其映射到相应的 DCP 字段。注意事项：
+
+<div id="note-1" />
 
 > 📘 **备注**
 >
 > * 当双方共享各自的源数据时，**必须至少将一个字段设为标识符**，这样才能在相应数据源之间匹配用户层级数据。标识符是可唯一标识用户的字段（例如 CUID、AppsFlyer ID 或加密 email）。
 > * 虽然无需配置每个已上传的数据源字段（列），但这对分类、有效解读数据、协助创建受众、提供洞察，以及高效促进验证都很重要。
+
+<div id="ai-assisted-field-type-detection" />
 
 #### AI 辅助字段类型检测
 
@@ -449,10 +489,14 @@ DCP 可以基于列名，使用 AI 为每个数据源列建议一个 DCP 字段�
 * **已映射：** AI 找到了一个可信的唯一匹配项。请检查后接受，或手动更改。
 * **无法映射：** AI 无法确定字段。手动映射，或保留为未映射。
 
+<div id="limitations" />
+
 #### 局限性
 
 * **列数限制：** AI 检测每个数据源最多支持 100 列。列数更多的数据源会显示“超出限制”信息。
 * #configure-the-source-fields
+
+<div id="important-4" />
 
 > 🚧 **重要！**
 >
@@ -525,17 +569,25 @@ DCP 可以基于列名，使用 AI 为每个数据源列建议一个 DCP 字段�
   * App ID
   * 文本列表
 
+<div id="identifier-vs-list-of-identifiers" />
+
 #### **标识符与标识符列表：**
 
 标识符类型每行仅包含一个值（例如，每行一个 email 或一个 CUID）。标识符列表类型每行包含一个值数组（例如，单行可包含多个哈希处理后的 email 或设备 ID）——当某个数据源需要针对每条记录中的多个标识符进行匹配时，请使用此类型。
+
+<div id="important-5" />
 
 > 🚧 **重要提示！**
 >
 > 如果某个数据源包含任何映射到 **列表...** 类型（标识符列表、数值列表或文本列表）的字段，则必须以 Parquet 格式上传或连接数据源文件。 CSV 和 GZ 文件不支持数组类型的列，因此可能无法从这些格式中正确摄取列表字段。
 
+<div id="reload-source-fields" />
+
 #### 重新加载数据源字段
 
 如果您的某个数据文件配置已发生变化，您可以更新数据源文件以反映这些更改。
+
+<div id="note-2" />
 
 > 📘 **备注**
 >
@@ -549,15 +601,21 @@ DCP 可以基于列名，使用 AI 为每个数据源列建议一个 DCP 字段�
    * 对于来自您的云服务的文件：点击**从云存储桶加载**，然后按照说明操作。
 3. 点击 **OK**。现在将显示更新后的文件。
 
+<div id="3-verify-eu-user-inclusion" />
+
 #### 3. 验证是否包含欧盟用户
 
 * 对于以下问题，选择**是** 或 **否**：**您的数据源是否包含受欧盟 DMA 法规约束的欧洲用户？**
 
 详细了解欧盟《数字市场法案》相关的隐私法规。
 
+<div id="4-test-the-source-data" />
+
 #### 4. 测试源数据
 
 * 【可选】点击**测试**，检查数据源字段的格式或有效性是否存在错误。
+
+<div id="5-save-the-source" />
 
 #### 5. 保存数据源
 
@@ -565,11 +623,15 @@ DCP 可以基于列名，使用 AI 为每个数据源列建议一个 DCP 字段�
 
 确认后，新数据源会添加到**数据源**标签页下。
 
+<div id="note-3" />
+
 > 📘 **备注**
 >
 > 如果您从本地文件上传了数据源，保存数据源会自动创建文件夹结构，且显示的确认信息中包含指向源文件夹的链接。
 
 </Accordion>
+
+<div id="manage-your-sources" />
 
 ## 管理您的数据源
 
@@ -582,9 +644,13 @@ DCP 可以基于列名，使用 AI 为每个数据源列建议一个 DCP 字段�
 3. 在**编辑数据源**页面中，按如下所述编辑相关字段。
 4. 点击**保存**。
 
+<div id="edit-the-source-name" />
+
 #### 编辑数据源名称
 
 编辑数据源名称时，请确保[遵循这些命名要求](#要求和指南)。
+
+<div id="edit-the-source-location" />
 
 #### 编辑数据源位置
 
@@ -593,10 +659,14 @@ DCP 可以基于列名，使用 AI 为每个数据源列建议一个 DCP 字段�
 3. [可选] [测试](#4-测试源数据)数据源。
 4. 点击**保存**。
 
+<div id="edit-the-field-mapping" />
+
 #### 编辑字段映射
 
 1. 前往字段映射并进行必要的更改：更改字段，或更新其映射的 DCP 字段。
 2. 点击**保存**。
+
+<div id="important-6" />
 
 > 🚧 **重要性**
 >
@@ -618,9 +688,13 @@ DCP 可以基于列名，使用 AI 为每个数据源列建议一个 DCP 字段�
 
 </Accordion>
 
+<div id="sharing-permissions" />
+
 ## 共享权限
 
 在<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-a-collaboration">创建协作</Anchor>时，您可以授予协作者查看和使用您的数据源数据的权限。了解更多关于<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-sharing-permissions">共享权限</Anchor>的信息。
+
+<div id="additional-information" />
 
 ## 更多信息
 
@@ -629,6 +703,8 @@ DCP 可以基于列名，使用 AI 为每个数据源列建议一个 DCP 字段�
 <Accordion title="手动创建存储桶文件夹结构（可选）">
 
 一般情况下，最简便的方法是让 AppsFlyer 在创建数据源过程中自动生成所需的文件夹结构。不过，如果您希望手动创建这些文件夹，可以按以下说明操作。
+
+<div id="create-a-dcr-key-folder" />
 
 #### 创建 DCR 密钥文件夹
 
@@ -646,6 +722,8 @@ DCR 密钥文件夹通常需要通过您所选云服务的界面手动创建。
 
 <Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
+<div id="top-level-input-folder" />
+
 #### 顶层输入文件夹
 
 虽然这不是必需项，但最佳实践是直接在 DCR 密钥文件夹下创建一个顶层输入文件夹。此文件夹专用于您上传到 DCR 的文件。
@@ -658,6 +736,8 @@ DCR 密钥文件夹通常需要通过您所选云服务的界面手动创建。
 创建顶层输入文件夹后，您的存储桶/文件夹结构可能如下所示：
 
 <Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### 各数据源的第二层级文件夹
 
@@ -675,6 +755,8 @@ DCR 密钥文件夹通常需要通过您所选云服务的界面手动创建。
 
 </Accordion>
 
+<div id="privacy-regulations" />
+
 ## 隐私规定
 
 本节概述与当前隐私规定相关的重要信息。
@@ -683,12 +765,16 @@ DCR 密钥文件夹通常需要通过您所选云服务的界面手动创建。
 
 作为 Google 执行《数字市场法案》（DMA）的一部分，Google 已于 2024 年 3 月 6 日更新其欧盟用户同意政策。作为 Google 的应用归因合作伙伴，AppsFlyer 已做出必要调整，以支持其政策要求，同时确保广告主能够充分发挥 Google Ads 营销渠道的价值。
 
+<div id="note-4" />
+
 > 📘 **备注**
 >
 > * Google 对《数字市场法案》（DMA）的执行适用于所有平台。
 > * 了解更多：
 >   * <Anchor target="_blank" href="https://www.appsflyer.com/hubs/dma/">关于《数字市场法案》的洞察与资源</Anchor>
 >   * <Anchor target="_blank" href="https://support.google.com/google-ads/answer/14310715">Google 常见问题解答</Anchor>
+
+<div id="adding-consent-fields" />
 
 #### 添加同意字段
 
@@ -697,6 +783,8 @@ DCR 密钥文件夹通常需要通过您所选云服务的界面手动创建。
 **附加同意字段及其响应值：**
 
 <table><thead><tr><th>字段名称</th><th>响应值</th><th>字段用途</th></tr></thead><tbody><tr><td><span id="eea"></span><code>eea</code></td><td>真/假</td><td>该用户是否位于 DMA 适用的 EEA（欧洲经济区）？</td></tr><tr><td><span id="ad_personalization"></span><code>ad_personalization</code></td><td>\*真/假</td><td>用户是否已同意 Google 将其数据用于个性化广告？</td></tr><tr><td><span id="ad_user_data"></span><code>ad_user_data</code></td><td>\*真/假</td><td>用户是否已同意将其用户数据发送给 Google？ </td></tr><tr><td colspan="3"><span id="when--true--appsflyer-sends-user-identifiers-for-users-who-have-granted-consent-to-google--when--false--appsflyer-abstains-from-sending-them"></span>\* 当为「<strong>true</strong>」时，AppsFlyer 会包含您为已给予同意的用户发送的用户标识符。<br/>   当为「<strong>false</strong>」时：AppsFlyer 不会包含这些标识符，因为它们未发送到 AppsFlyer。</td></tr></tbody></table>
+
+<div id="potential-impact-on-the-audience-size" />
 
 #### 对受众规模的潜在影响
 

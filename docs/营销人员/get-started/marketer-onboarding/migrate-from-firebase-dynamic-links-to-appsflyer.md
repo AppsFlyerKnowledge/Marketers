@@ -23,6 +23,10 @@ x-zendesk:
 
 
 
+<div id="migrate-from-firebase-to-appsflyer" />
+
+<div id="about-the-migration" />
+
 ## 如何从Firebase迁移到AppsFlyer
 
 **前期准备**
@@ -74,6 +78,8 @@ x-zendesk:
 
 按照以下步骤将AppsFlyer SDK接入您的应用中。
 
+<div id="appsflyer-sdk-integration-steps" />
+
 #### AppsFlyer SDK对接流程
 
 1. 将AppsFlyer SDK接入相关应用。  
@@ -108,6 +114,8 @@ x-zendesk:
 
 迁移到AppsFlyer时，您可以参考此表，为当前所有现行参数进行映射。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 若有未列出的Firebase参数，那是因为AppsFlyer已在 OneLink模板设置中涵盖了该参数，因而无需在链接中另行添加。
@@ -135,6 +143,8 @@ x-zendesk:
 |  | <Anchor target="_blank" href="/marketers/zh/docs/set-up-smart-script-to-convert-web-visitors">智能脚本</Anchor> | 如果您希望在网页中创建动态长链，用于网页到应用的用户体验 |  |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

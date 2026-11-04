@@ -16,6 +16,8 @@ x-zendesk:
 ---
 > **概览：** ChatGPT Ads是OpenAI的广告平台，也是AppsFlyer的对接合作伙伴。完成对接设置后，即可衡量并归因由ChatGPT Ads广告系列带来的移动应用安装、应用内事件和网站转化。
 
+<div id="about-the-integration-with-chatgpt-ads" />
+
 ## 关于与ChatGPT Ads的对接
 
 AppsFlyer与ChatGPT Ads（OpenAI）的对接可帮助您衡量并归因由ChatGPT Ads广告系列带来的应用安装、应用内事件和网站转化。该对接同时支持移动应用和网站衡量。
@@ -24,6 +26,8 @@ AppsFlyer与ChatGPT Ads（OpenAI）的对接可帮助您衡量并归因由ChatGP
 * **网页端** - AppsFlyer可将AppsFlyer Web SDK采集的网站事件（如页面浏览、内容浏览和购买）转发至ChatGPT Ads的Conversions API（CAPI），也可配合或替代ChatGPT Ads JavaScript Pixel使用。
 
 如果您的网站同时部署了ChatGPT Ads Pixel，ChatGPT Ads会通过共享的事件ID，对服务端（CAPI）事件与Pixel事件进行去重。因此，两者可以同时使用，不会造成转化次数重复统计。
+
+<div id="set-up-the-integration" />
 
 ## 设置对接
 
@@ -43,6 +47,8 @@ AppsFlyer与ChatGPT Ads（OpenAI）的对接可帮助您衡量并归因由ChatGP
 * [**移动端**](#对接移动应用) - 将安装、再互动和应用内事件归因至ChatGPT Ads广告系列。
 * [**网页端**](#对接网站) - 将网站转化事件转发至ChatGPT Ads的Conversions API，并与ChatGPT Ads Pixel事件去重。
 
+<div id="integrate-your-mobile-app" />
+
 ## 对接移动应用
 
 按照以下步骤，为移动应用配置ChatGPT Ads归因和应用内事件回传。
@@ -59,6 +65,8 @@ AppsFlyer与ChatGPT Ads（OpenAI）的对接可帮助您衡量并归因由ChatGP
 
 <Accordion title="对接选项卡">
 
+<div id="activate-partner" />
+
 #### 激活合作伙伴
 
 **激活对接：**
@@ -67,6 +75,8 @@ AppsFlyer与ChatGPT Ads（OpenAI）的对接可帮助您衡量并归因由ChatGP
 
 **重要提示：** 使用ChatGPT Ads期间，请始终保持**开启**此开关。关闭对接后，广告系列的归因和事件回传都会停止。  
 详细了解<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">合作伙伴激活</Anchor>。
+
+<div id="general-settings" />
 
 #### 常规设置
 
@@ -78,11 +88,15 @@ AppsFlyer与ChatGPT Ads（OpenAI）的对接可帮助您衡量并归因由ChatGP
 
 **高级匹配数据共享：** 开启此项以与 ChatGPT Ads 共享高级匹配字段（例如哈希处理后的电子邮件、哈希处理后的电话号码、哈希处理后的名字和哈希处理后的姓氏），前提是这些字段包含在发送给 AppsFlyer 的事件信息中。详情请见：<Anchor target="_blank" href="/marketers/zh/docs/advanced-matching-data-sharing">高级匹配数据共享</Anchor>。
 
+<div id="default-postbacks" />
+
 #### 默认回传
 
 回传（Postback）是AppsFlyer发送至ChatGPT Ads的服务器到服务器（S2S）通知，用于上报已归因的事件（例如安装或应用内操作）。本部分显示当前配置的回传。了解如何<Anchor target="_blank" href="/marketers/zh/docs/set-up-re-attribution-window">设置安装和重新归因回传</Anchor>。
 
 详细了解<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#default-postbacks">默认回传设置</Anchor>。
+
+<div id="in-app-event-settings" />
 
 #### 应用内事件设置
 
@@ -92,6 +106,8 @@ AppsFlyer与ChatGPT Ads（OpenAI）的对接可帮助您衡量并归因由ChatGP
 * API密钥
 
 具体说明请参阅上文的[常规设置](#常规设置)。
+
+<div id="in-app-event-postbacks" />
 
 #### 应用内事件回传
 
@@ -134,6 +150,8 @@ ChatGPT Ads支持以下标准事件；对于未包含在下表中的事件，可
 
 ChatGPT Ads（OpenAI）支持归因链接。
 
+<div id="choose-your-attribution-type" />
+
 #### 选择您的归因类型
 
 根据您的广告系列需求，决定使用单平台归因链接还是 <Anchor target="_blank" href="/marketers/zh/docs/onelink-guide">OneLink</Anchor> 作为您的最终 URL。
@@ -143,6 +161,8 @@ ChatGPT Ads（OpenAI）支持归因链接。
 * 如果您使用 OneLink，可能会收到较低的质量评分，这会影响广告投放，因为 ChatGPT Ads 的广告审核流程包括抓取最终 URL。
 
 **推荐：** 使用落地页作为广告目标页面，并使用 <Anchor target="_blank" href="/marketers/zh/docs/onelink-smart-script-overview">Smart Script</Anchor> 或 <Anchor target="_blank" href="/marketers/zh/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banner</Anchor> 将用户引导至 App Store 或 Google Play。
+
+<div id="select-parameters" />
 
 #### 选择参数
 
@@ -192,6 +212,8 @@ AppsFlyer无法从ChatGPT Ads获取广告收入数据。如需共享广告收入
 
 </Accordion>
 
+<div id="integrate-your-website" />
+
 ## 对接网站
 
 按照以下步骤，为您的网站设置向ChatGPT Ads转发服务端事件。
@@ -207,6 +229,8 @@ AppsFlyer无法从ChatGPT Ads获取广告收入数据。如需共享广告收入
 
 <Accordion title="对接选项卡">
 
+<div id="activate-partner-1" />
+
 #### 激活合作伙伴
 
 **激活对接：**
@@ -216,6 +240,8 @@ AppsFlyer无法从ChatGPT Ads获取广告收入数据。如需共享广告收入
 **重要提示：** 使用ChatGPT Ads期间，请始终保持**开启**此开关。停用对接后，网站事件将停止转发。  
 详细了解<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">合作伙伴激活</Anchor>。
 
+<div id="in-app-event-settings-1" />
+
 #### 应用内事件设置
 
 如需将事件回传至ChatGPT Ads，请填写以下凭证：
@@ -224,6 +250,8 @@ AppsFlyer无法从ChatGPT Ads获取广告收入数据。如需共享广告收入
 * **API密钥** - 调用Events API时，需要使用API密钥进行身份验证。您可以在ChatGPT Ads Manager账户的转化选项卡中获取。
 
 **高级匹配数据共享：** 开启此项以与 ChatGPT Ads 共享高级匹配字段（例如哈希处理后的电子邮件、哈希处理后的电话号码、哈希处理后的名字和哈希处理后的姓氏），前提是这些字段包含在发送给 AppsFlyer 的事件信息中。详情请见：<Anchor target="_blank" href="/marketers/zh/docs/advanced-matching-data-sharing">高级匹配数据共享</Anchor>。
+
+<div id="in-app-event-postbacks-1" />
 
 #### 应用内事件回传
 
@@ -271,11 +299,15 @@ AppsFlyer无法从ChatGPT Ads获取广告收入数据。如需共享广告收入
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 特性与限制
 
 | 特性 | 说明 |
 | --- | --- |
 | 支持的国家/地区 | 目前，ChatGPT Ads仅支持在以下国家/地区投放广告系列：美国、加拿大、澳大利亚、新西兰、英国、日本和韩国。墨西哥和巴西即将开放支持。 |
+
+<div id="see-also" />
 
 > 📄 **另请参阅**
 >

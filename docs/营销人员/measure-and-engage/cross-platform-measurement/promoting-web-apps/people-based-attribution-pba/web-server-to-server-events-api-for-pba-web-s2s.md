@@ -26,6 +26,8 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-server-to-server-events-api-for-pba" />
+
 ## 适用于移动设备的服务器到服务器事件API
 
 面向基于人群的归因的Web-S2S API补充了<Anchor target="_blank" href="/marketers/zh/docs/pba-web-sdk-integration-guide">Web SDK</Anchor>，允许营销人员报告发生在其网站上的事件，但超出了Web SDK的范围。例如，网站的访客（网络用户）触发了一个在线支付事件，由后端系统处理。处理后，后端使用S2S API将事件报告给AppsFlyer。
@@ -35,6 +37,8 @@ x-zendesk:
 * 与Web SDK报告的事件记录方式相似
 * 如果设置为转化事件，则包含在PBA仪表板中
 * 用*event\_source field*填充PBA原始数据，设置为*web S2S*
+
+<div id="api-use-instructions" />
 
 ## API使用说明
 
@@ -63,6 +67,8 @@ API实现需要在仪表板中可用的以下凭据：
    * 品牌套件 ID
    * (WEB\_DEV\_KEY)。
 
+<div id="web-s2s-api-basics" />
+
 #### Web S2S API基础知识
 
 | 路径 | `https://webs2s.appsflyer.com/v1/bundleId/method`<ul><li>回传数据接收时间：应用包ID是否在仪表板中可用。</li><li>完成以下任一操作：<ul><li>[event](/docs/web-server-to-server-events-api-for-pba-web-s2s#event-method)：发送可报告的后端事件</li><li>[setCuId:](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method) 在将afUserId与您的CUID关联时发送</li></ul></li></ul> |
@@ -84,6 +90,8 @@ API实现需要在仪表板中可用的以下凭据：
 | 使用场景 | 将CUID与您网站的访客关联时。例如，每当您将网络`afUserId`与您的客户用户ID匹配时。这样可以使PBA匹配来自各种来源的数据。这类似于<Anchor target="_blank" href="/marketers/zh/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">setCustomerUserId</Anchor>在网站上的用法。 |
 | 方法路径 | `https://webs2s.appsflyer.com/v1/bundleId/setcuid` |
 | Payload | JSON有效负载由此处列出的参数组成。所有参数都是必需的。<ul><li>[customerUserID](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method)</li><li>[afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid)</li><li>[webDevKey](/docs/web-server-to-server-events-api-for-pba-web-s2s#webdevkey)</li></ul> |
+
+<div id="curl-example-setcuid" />
 
 #### Curl示例setCuId
 
@@ -111,6 +119,8 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 </Accordion>
 
+<div id="event-method-details" />
+
 ## 事件方法详细信息
 
 <div id="payload-parameters" />
@@ -122,12 +132,16 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 * \_user\_id您必须至少发送一个用户ID参数。
 * event\_根据需要发送必需参数和可选参数。
 
+<div id="user-identifier-parameters-send-at-least-one-parameter" />
+
 #### 用户标识符参数（至少发送一个参数）
 
 | 用户ID参数 | 说明 |
 | --- | --- |
 | <span id="customeruserid"></span>customerUserId | <Anchor target="_blank" href="/marketers/zh/docs/customer-user-id-field-cuid">客户用户ID（CUID）</Anchor>是由您设置的唯一标识符。<ul><li>使用相同的标识符通过任何方式报告的事件到 AppsFlyer。这意味着在 Web SDK、移动 SDK 和 S2S API 中使用相同的标识符。</li><li><Anchor target="_blank" href="/marketers/zh/docs/pba-web-sdk-integration-guide#setting-customer-user-id-after-signup">Web SDK 客户用户 ID</Anchor></li><li>格式：字符串</li><li>例如： `"customerUserId" : "663274"`</li><li>填充原始数据字段：`customer_user_id`</li></ul> |
 | <span id="afuserid"></span>afUserId | Web SDK 为每个访问您网站的用户分配的唯一用户 ID。您需要将 cookie 值传递给您的后端服务器。<ul><li>Cookie 详情：<ul><li>名称：afUserId</li><li>值：将 *afUserId* 设置为此值</li><li>域：网站域名</li></ul></li><li>示例：`"afUserId" : "unique_cookie_uuid"`</li><li>填充原始数据字段：`af_web_id`</li></ul> |
+
+<div id="event-parameters" />
 
 #### 事件参数
 
@@ -232,6 +246,8 @@ print(response.text.encode('utf8'))
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="getting-the-web-dev-key" />
@@ -255,10 +271,14 @@ print(response.text.encode('utf8'))
 * `afUserId`是一个唯一标识符，由Web SDK在用户首次访问您的网站时设置。
 * 如果您需要`afUserId`，请使用以下方法之一。
 
+<div id="get-afuserid-from-the-http-cookie-header" />
+
 #### **从HTTP cookie头中获取afUserId**
 
 * `afUserId`由访问者的浏览器在调用您的网站时发送。
 * 如有需要，从HTTP cookie头中提取。
+
+<div id="viewing-afuserid-in-the-visitors-browser" />
 
 #### **在访问者的浏览器中查看afUserId**
 

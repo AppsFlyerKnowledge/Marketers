@@ -23,6 +23,8 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
 
+<div id="activate-partner" />
+
 ## 启用渠道
 
 **前期准备：** 设置对接前，请务必先<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations#联系相关渠道">联系该渠道</Anchor>并在其平台上开设账户。
@@ -38,6 +40,8 @@ x-zendesk:
    **请注意：** 在您与该渠道合作期间，请确保该开关总是处于打开（即<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">启用</Anchor>）状态。
 5. 参考下文说明，根据您的具体需求在相关选项卡中完成各项配置。
 
+<div id="complete-the-setup-in-amazon-ads" />
+
 ## 在Amazon Ads中进行设置
 
 请在Amazon Ads中完成以下步骤：
@@ -45,9 +49,13 @@ x-zendesk:
 1. 请确保您已在Amazon Ads中完成应用注册。请参见Amazon Ads文档中的<Anchor target="_blank" href="https://advertising.amazon.com/help/GF97FJUFXBDM32P4">注册应用</Anchor>。
 2. 创建Amazon Ads广告系列时，请将需要衡量的转化与该广告系列关联。请参见 Amazon Ads 文档中的 <Anchor target="_blank" href="https://advertising.amazon.com/help/GMQBB4PRFK8C33AE">将转化事件关联到广告系列</Anchor>。
 
+<div id="setting-up-amazon-ads" />
+
 ## Amazon Ads的对接配置
 
 Amazon Ads的对接支持点击和展示归因。配置窗口包括以下选项卡：渠道对接、归因链接、成本、广告收入和授权。在Amazon Ads对接中，可用的选项卡为“渠道对接”和“权限”。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -59,9 +67,13 @@ Amazon Ads的对接支持点击和展示归因。配置窗口包括以下选项�
 
 **渠道对接**选项卡中包括以下几个部分。
 
+<div id="activate-partner-1" />
+
 #### 启用渠道
 
 在配置对接之前，必须先[打开](/docs/amazon-ads-campaign-configuration#启用渠道)**启用该渠道**开关。详情请见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation#渠道对接的启用方式">渠道对接的启用和停用说明</Anchor>。
+
+<div id="general-settings" />
 
 #### 通用设置
 
@@ -84,6 +96,8 @@ Amazon Ads的对接支持点击和展示归因。配置窗口包括以下选项�
 * <Anchor target="_blank" href="/marketers/zh/docs/set-up-multi-store-android-attribution#查看多个商店数据单一应用面板-vs-多个应用面板">**单面板应用**</Anchor>（针对AppsFlyer中的同一个应用，在同一个面板中同时结合Google Play和Amazon商店两方的数据）：请输入Android软件包名称作为应用ID。  
   **注意：** 请确保在相关Amazon Ads账号中将该应用<Anchor target="_blank" href="https://advertising.amazon.com/help/GF97FJUFXBDM32P4">注册</Anchor>为安卓应用。
 
+<div id="install-attribution" />
+
 #### 激活归因
 
 设置点击型和浏览型的激活归因（即首次应用打开）窗口期。请注意，仅在相关回溯窗口内发生的激活才会被归因到Amazon Ads。
@@ -95,6 +109,8 @@ Amazon Ads的对接支持点击和展示归因。配置窗口包括以下选项�
 2. 【可选】打开**浏览型激活归因**，并设置**浏览型激活归因窗口**，可用的时长范围为1-24小时。   
    **请注意：** Amazon Ads建议您将浏览型回溯窗口设置为14天，与其归因窗口保持一致，避免出现数据差异。
 
+<div id="re-engagement-attribution" />
+
 #### 再互动归因
 
 打开**再互动归因**的开关，设置不同的归因窗口期，将现有用户的再互动行为归因到相关的广告浏览、点击或其他***广告交互***形式。请注意，仅在相关回溯窗口内发生的再互动才会被归因到Amazon Ads。
@@ -105,9 +121,13 @@ Amazon Ads的对接支持点击和展示归因。配置窗口包括以下选项�
    * 设置**浏览型再互动回溯窗口**，可用的时长范围为1-23小时或1-14天。
 3. 设置**再互动窗口**，可用的时长范围为1-23小时、1-90天或用户的**整个生命周期**。
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### 再营销广告中忽略活跃用户
 
 打开这个开关并设置其窗口期后，AppsFlyer就会<Anchor target="_blank" href="/marketers/zh/docs/set-retargeting-inactivity-window#不活跃时长">忽略在此期间打开相关应用的用户所完成的再互动和再归因</Anchor>。也就是说，这些用户在该窗口期内的行为不会被记录到AppsFlyer中。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -116,6 +136,8 @@ Amazon Ads的对接支持点击和展示归因。配置窗口包括以下选项�
 1. 打开**在再营销广告中忽略活跃用户**的开关。
 2. 设置**不活跃窗口**，可用的时长范围为1-30天。  
    **请注意：** Amazon Ads建议您将不活跃窗口设置为7天，与其平台侧设置保持一致，避免出现数据差异。
+
+<div id="in-app-event-postbacks" />
 
 #### 应用内事件回传
 
@@ -132,6 +154,8 @@ Amazon Ads的对接支持点击和展示归因。配置窗口包括以下选项�
 | **渠道映射事件** | Amazon Ads为每个事件定义的专属名称或ID。从预定义的渠道事件列表中选择与相关应用事件（即AppsFlyer事件）对应的事件。<br /><br />**请注意：**<ul><li>如果您需要的应用内事件没有直接对应的渠道映射事件，请选择“其他”。</li><li>启用再互动衡量后，建议不要映射`af_app_opened`事件，或仅将其映射到`OTHER`。这样可以避免发送该事件时出现重复。</li></ul> |
 | **事件来源** | 选择事件回传的范围：<ul><li>**仅该合作渠道**：仅回传归因到该渠道的事件。</li><li>**所有媒体渠道，包括自然流量**：回传所有带量渠道的事件，以及自然量。</li></ul> |
 | **回传内容** | <ul><li>**不发送值与收入（默认）**：仅发送事件本身，不带任何事件值。</li><li>**发送值与收入**：发送所有事件参数，**包括**收入（若有）。</li><li>**仅发送值**：发送**除**收入以外的所有参数。</li></ul> |
+
+   <div id="note-2" />
 
    > 📘 **注意**
    >
@@ -176,6 +200,8 @@ Amazon Ads的对接不支持广告收入数据。
 
 您可以在这个板块中选择需要向Amazon Ads开放的数据和操作权限。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > * 请注意，即使您<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">停用</Anchor>了这个对接，但只要其权限开关处于打开状态，相关权限就仍向Amazon Ads开放。
@@ -183,10 +209,14 @@ Amazon Ads的对接不支持广告收入数据。
 
 </Accordion>
 
+<div id="see-also" />
+
 > 📄 **相关文档**
 >
 > * <Anchor target="_blank" href="/marketers/zh/docs/setting-up-amazon-fire-tv-ad-attribution">Amazon Fire TV广告归因设置指南</Anchor>
 > * <Anchor target="_blank" href="/marketers/zh/docs/attribution-discrepancies-between-amazon-ads-and-appsflyer">AppsFlyer与Amazon Ads之间的归因差异</Anchor>
+
+<div id="deferred-deep-linking" />
 
 ## 延迟深度链接
 
@@ -195,9 +225,13 @@ Amazon Ads的对接不支持广告收入数据。
   * [UDL](https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl)（Unified Deep Link）——不支持SRN
   * [GCD](https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking) （Get Conversion Data）——犹豫Amazon Ads的归因数据[受限](/docs/amazon-ads-campaign-configuration#原始数据限制)，因此不适用于Amazon Ads。
 
+<div id="raw-data-restrictions" />
+
 ## 原始数据限制
 
 来自Amazon Ads的原始数据<Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions#媒体渠道数据限制">在AppsFlyer平台中的呈现会受到限制</Anchor>。在原始数据中，该平台的媒体渠道名称会显示为“restricted”（受限），且广告系列信息为null。原始数据报告中不包含来自Amazon ads的点击和展示。
+
+<div id="ctv-to-mobile-attribution" />
 
 ## CTV到移动端归因
 
@@ -205,15 +239,21 @@ Amazon可能会将移动应用安装归因到CTV（联网电视）广告系列�
 
 **请注意：** 报告中**不会明确标识**广告系列是否属于CTV广告系列。为方便识别和衡量，建议在适用情况下在广告系列名称中添加`CTV`。
 
+<div id="support-amazon-eu-consent-policy" />
+
 ## 支持Amazon欧盟用户同意政策
 
 为配合<Anchor target="_blank" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en">《数字市场法案》（DMA）</Anchor>的实施，Amazon Ads正在更新欧盟用户同意政策。作为Amazon的应用归因合作伙伴，AppsFlyer也将根据此次政策调整进行相应更新，帮助广告主充分发挥Amazon广告的投放效果。更新后的政策将于2026年6月30日生效。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
 > 更新后的欧盟同意政策仅适用于来自欧盟、英国或瑞士（CH）用户的数据（包括安装、重新互动及应用内事件）。
 
 为满足相关要求，请采用与Google DMA用户同意信息<Anchor target="_blank" href="/marketers/zh/docs/support-google-eu-consent-policy">相同的方式，将DMA用户同意信息发送给AppsFlyer。</Anchor>
+
+<div id="dma-consent-methods" />
 
 ### DMA用户同意信息传递方式
 
@@ -224,14 +264,20 @@ AppsFlyer目前支持以下两种DMA用户同意信息传递方式：
 | **手动** | 亚马逊要求的唯一必填字段为`ad_user_data_enabled`。 |
 | <Anchor target="_blank" href="https://iabeurope.eu/transparency-consent-framework/">**TCF**</Anchor> **(透明度与同意框架)** | 如果您使用同意管理平台（CMP），请确保将亚马逊广告供应商ID（**793**）添加到供应商白名单列表中。 |
 
+<div id="note-5" />
+
 > 📘 **注意**
 >
 > Amazon也支持通过<Anchor target="_blank" href="https://iabtechlab.com/gpp/">Global Privacy Platform（GPP）</Anchor>传递用户同意信号，但AppsFlyer目前尚不支持这种方式。
+
+<div id="see-also-1" />
 
 > 📄 **相关文档**
 >
 > * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance">通过AppsFlyer SDK发送DMA用户同意信息</Anchor>
 > * `consent_data`<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-overview">通过AppsFlyer S2S发送DMA用户同意信息</Anchor>（搜索 ）
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

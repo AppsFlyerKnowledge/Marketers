@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
+<div id="about-creative-optimization" />
+
 ## 素材优化产品简介
 
 **素材优化产品**（Creative Optimization）能够针对您在所有广告投放中用到的全部素材，一站式衡量其投放效果。您可以使用这一产品轻松拉取到所有媒体渠道上的素材资产，并将其统一汇总到AppsFlyer面板，也可以将其入库到您的BI系统，从而根据您指定的维度分析其在各个广告系列、流量入口等方面的投放效果。素材效果优化功能可以帮助您按不同的指标和KPI对数据进行多角度拆解，以便在规划、选取、产出下一批素材之前掌握关键的素材效果信息。
@@ -48,6 +50,8 @@ x-zendesk:
 * 针对不同时间段/渠道/广告系列中的素材，检测其投放效果下滑的情况，并做出相应的优化决策
 * 以及其他
 
+<div id="creative-assets" />
+
 ## 素材资产
 
 本节主要说明了我们衡量的素材资产。
@@ -63,6 +67,8 @@ x-zendesk:
 * 轮播（仅限Meta）
 * HTML（包括可玩型素材）
 * 文本
+
+<div id="notes" />
 
 > 📘 **说明**
 >
@@ -91,6 +97,8 @@ x-zendesk:
 
 Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）中可使用包含多种资产的广告素材。但AppsFlyer不会按资产来拆分数据。Meta ads提供的数据最细可拆分到**广告层级**，Google数据最多只拆分到**广告组**层级。对于这类广告素材，AppsFlyer会使用数据模型来解析各个资产的效果数据。
 
+<div id="example" />
+
 > 📄 **示例**
 >
 > 假设您在Facebook上使用了一个包含多种资产的广告素材。Meta共将100个激活归因到自己平台并将其细分到素材资产层级，具体的衡量结果为：**资产A**带来了60个激活，**资产B**带来了40个激活。假设AppsFlyer将50个激活归因到Meta上的这条广告（由于AppsFlyer和<Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns">SRN</Anchor>之间的核心归因模式不同，因此数据会有差异）。为了分析素材资产层级的投放效果，AppsFlyer会根据这个素材资产层级的指标比例来分配效果数据（展示、点击、激活和成本），具体方式如下图所示：
@@ -109,6 +117,8 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="using-the-dashboard" />
 
 ## 使用面板
 
@@ -276,6 +286,8 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 
 下载文件：<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=csv">CSV</Anchor>、<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=xlsx">XLS</Anchor>
 
+<div id="to-set-up-partner-metrics" />
+
 #### **请按以下方式设置渠道指标：**
 
 只需添加一个新的<Anchor target="_blank" href="/marketers/zh/docs/creative-optimization-partner-integrations">渠道对接</Anchor>，适配渠道的指标就会自动同步到素材优化面板（**Unity Ads除外，详见特别说明**）。设置完毕后，这些指标一旁会标有“渠道”字样。
@@ -349,6 +361,8 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
         ![Get Organization ID instructions 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
      5. 复制该**Organization ID**。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 建议您在设置新的渠道对接时就输入相关的渠道指标证书，但这不是必须完成的操作。您可以先保存对接，之后再添加证书信息。但这里需要注意，我们会从渠道对接创建之时起拉取90天内的渠道数据，这时如果您未提供渠道指标证书，可能会导致数据缺失。
@@ -365,6 +379,8 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 
 **请注意**：如果您更改面板设置后没有保存，当前视图名称右侧就会出现橘色圆点，以示提醒。
 
+<div id="save-private-dashboard-view" />
+
 #### **保存私人面板视图**
 
 **请按以下方式保存私人面板视图（即仅对自己可见）：**
@@ -373,6 +389,8 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
    ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
 2. 为您的面板命名，然后点击**保存**。
 3. 后续您可以使用菜单图标编辑或删除面板视图、更改共享设置（将“私人”切换为“共享”），或收藏视图使其在登入时默认呈现。
+
+<div id="save-shared-dashboard-view" />
 
 #### **保存共享面板视图**
 
@@ -384,6 +402,8 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
    保存完毕后，该视图会出现在账户下所有其他用户的面板视图列表中。
 3. 后续您可以使用菜单图标编辑或删除面板视图、更改共享设置（将“共享”切换为“私人”），或收藏视图使其在登入时默认呈现。
 
+<div id="share-view-url" />
+
 #### **分享视图链接**
 
 **请按以下方式与账户下的其他用户分享视图链接：**
@@ -393,6 +413,8 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
   **请注意**：即使是私人面板，也可以通过链接进行分享。当其他人打开您的私人面板链接时，报告名称会显示为“未保存的报告”。
 
 </Accordion>
+
+<div id="custom-tags" />
 
 ## 自定义标签
 
@@ -524,6 +546,8 @@ CSV文件的下载和上传流程如下：
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

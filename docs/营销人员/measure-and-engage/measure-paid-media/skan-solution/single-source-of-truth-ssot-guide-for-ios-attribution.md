@@ -25,6 +25,8 @@ x-zendesk:
 
 <Embed title="iOS归因的单一可信数据源（SSOT）指南" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/545isomgo1" providerUrl="https://fast.wistia.com" />
 
+<div id="about-single-source-of-truthtrue-ios-performance-data" />
+
 ## 单一可信数据源简介——真实的iOS效果数据
 
 iOS 14上线后，AppsFlyer就开始通过多种来源的数据对用户进行归因，这些数据来源包括SKAdNetwork、ATT授权用户、概率模型、增量洞察以及Apple Search Ads的专用API。在没有IDFA的况下结合使用多种归因方式时，几乎无法避免重复数据的出现。
@@ -52,6 +54,8 @@ SSOT机制会标记出同时被SKAN和非SKAN方式重复归因的激活。AF会
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/skan-conversion-studio">SKAN转化值操作台</Anchor>
 
 </Accordion>
+
+<div id="overview-dashboard-single-source-of-truth-view" />
 
 ## 数据总览面板的SSOT视图
 
@@ -106,6 +110,8 @@ SSOT机制会标记出同时被SKAN和非SKAN方式重复归因的激活。AF会
 * **时区**（Timezone）：由AppsFlyer上报的激活和事件按UTC时间或<Anchor target="_blank" href="/marketers/zh/docs/app-settings">应用配置</Anchor>中的指定时区呈现。由SKAN上报的激活和事件按UTC时间呈现，但Meta和Google的SKAN数据除外，这些数据会根据您在对应的Meta和Google账户中所设置的时区来显示。
 * **货币**：按USD或<Anchor target="_blank" href="/marketers/zh/docs/app-settings">应用配置</Anchor>中的指定货币显示。
 * **收入指标 (D2, D7):** 包括建模数据，以考虑不完整或缺失的SKAN回传（空转换值）
+
+<div id="filter-considerations" />
 
 #### 筛选条件的注意事项
 
@@ -171,6 +177,8 @@ SSOT面板中的可用指标：
 
 </Accordion>
 
+<div id="how-does-ssot-work" />
+
 ## SSOT机制的作用原理
 
 <div id="understanding-skanaf-modeled-attribution-duplication" />
@@ -221,6 +229,8 @@ SSOT机制在用户设备（即集成到您应用中的AppsFlyer SDK）以及App
 **注意事项**
 
 * 一般情况下，AppsFlyer不统计重装激活。SSOT机制不考虑重装激活状态。也就是说，SSOT分析报告中不会对来自重装激活的SKAN激活进行去重，且此类激活不会影响af\_attribution flag的值。
+
+<div id="attribution-flag-field" />
 
 #### **归因标记字段**
 
@@ -283,6 +293,8 @@ SSOT机制在用户设备（即集成到您应用中的AppsFlyer SDK）以及App
 | 应用内事件 | 仅符合以下条件的应用内事件及其指标可用作分组维度：<ul><li>在窗口1期间发生的事件</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

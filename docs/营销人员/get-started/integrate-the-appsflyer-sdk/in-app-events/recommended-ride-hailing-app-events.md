@@ -24,13 +24,15 @@ x-zendesk:
 > **概要：** 概览：通过为您的网约车应用程序记录这些建议的应用内事件，评估用户在整个用户路径中的质量。
 
 
-<span id="ridehailing"></span>共享出行最近变得非常流行, 尤其是在大多居民没有私家车的城市地区。
+<span id="-ride-hailing"></span><span id="ridehailing"></span>共享出行最近变得非常流行, 尤其是在大多居民没有私家车的城市地区。
 
 记录事件可以帮助您确定：
 
 * 乘客和司机如何互动
 * 更多使用您共享出行服务的国家。
 * 有关价格、行程和乘车距离的指标
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -39,6 +41,8 @@ x-zendesk:
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
 
 [![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -141,6 +145,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## 自定义事件的推荐结构
 
 以下部分提供事件结构列表，其中包括自定义事件名称和建议使用的事件参数。请注意，应用内事件可以包括满足您业务需求的任何事件参数。
@@ -195,6 +201,8 @@ x-zendesk:
 * 查看每名司机的行程均价和总价
 
 此外, 记录此事件与其他三个预订相关事件可以帮助您更好地了解司机的行为。您可以看到哪些司机确认的行程预订请求最多, 哪些司机选择短途或长途行程等。
+
+<div id="trigger" />
 
 #### **触发**
 

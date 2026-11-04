@@ -24,13 +24,19 @@ x-zendesk:
 ---
 > **概要：** 部分渠道要求AppsFlyer在特定的原始数据报告中限制某些字段的呈现，其他渠道则会要求第三方平台共享回传时掩去媒体渠道信息。本文解释了相关的限制及其影响。
 
+<div id="raw-data-restriction" />
+
 ## 原始数据限制
 
 为了符合广告主的<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">AAP</Anchor>设置，或遵守相关广告平台的数据共享政策，AppsFlyer会限制原始数据报告中部分字段的可用性。具体的限制内容取决于报告的类型以及限制原因。
 
+<div id="media-source-restrictions" />
+
 ### 媒体渠道数据限制
 
 下表列出了各媒体渠道对于转化、点击和展示的数据限制。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -50,6 +56,8 @@ x-zendesk:
 | <span id="snapchat"></span>Snapchat | <ul><li>从2023年3月1日开始，原始数据报告不再呈现Snapchat的卸载（Uninstalls）数据</li><li>浏览型归因受到限制，原始数据传输工具中相关字段限制如下：<ul><li>Media source（snapchat\_int）</li><li>Channel</li><li>Attributed touch type（广告互动类型，显示为“impression”）</li><li>Attributed touch time（广告互动时间，该字段仅上报日期，格式为“dd/mm/yyyy”）</li><li>Campaign（显示为“*restricted*”）</li></ul></li><li>来自Snapchat的点击和展示不包含在原始数据报告中</li></ul> |
 | <span id="tiktok-for-business"></span>TikTok for Business | <ul><li>Media source（显示为bytedanceglobal\_int和tiktokglobal\_int）<ul><li>Channel</li><li>Attributed touch type（广告互动类型，显示为“impression”）</li><li>Attributed touch time（广告互动时间，该字段仅上报日期，格式为“dd/mm/yyyy”）</li><li>Campaign（显示为“*restricted*”）</li></ul></li><li>来自bytedanceglobal\_int的展示在原始数据中受限</li><li>Data Locker的点击和展的原始数据报告中不包含tiktokglobal\_int的点击和展示数据。</li></ul> |
 | <span id="x-ads-formerly-twitter"></span>X Ads（前身为Twitter） | <ul><li>在某些情况下，X Ads不允许AppsFlyer呈现原始数据，这时原始数据报告中不会包含相关的事件。</li><li>来自X Ads的点击和展示不包含在原始数据报告中</li></ul> |
+
+<div id="raw-data-context" />
 
 ### 原始数据报告类型
 
@@ -163,6 +171,8 @@ AppsFlyer的用户级别归因数据是通过以下原始数据传输工具传�
 
 </Accordion>
 
+<div id="faq" />
+
 ## 常见问题解答
 
 <div id="what-events-are-restricted" />
@@ -183,6 +193,8 @@ AppsFlyer的用户级别归因数据是通过以下原始数据传输工具传�
 **报告示例：** <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vScXJznEex0WwdCy78Bm8LtrhbCk1jNy14O_t7etrq5ab5v4CIEiInfFD4B1EsZCE-_w-dVRAxl_cu4/pub?output=csv">原始数据受限</Anchor>的激活报告（CSV文件）。其他原始数据报告的填充方式相同。
 
 </Accordion>
+
+<div id="how-does-the-restricted-media-source-impact-postbacks-sent-to-partners" />
 
 <div id="what-is-the-impact-on-postbacks-to-partners-when-the-media-source-is-restricted" />
 
@@ -215,6 +227,8 @@ AppsFlyer的用户级别归因数据是通过以下原始数据传输工具传�
 与助攻相关的数据是归因数据，因此不可用。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

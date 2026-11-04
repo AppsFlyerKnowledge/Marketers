@@ -29,6 +29,8 @@ x-zendesk:
 
 > **概要：** Protect360面板针对作弊流量以及按验证规则拦截的激活，提供关键的分析信息。
 
+<div id="about-protect360-dashboard" />
+
 ## Protect360面板简介
 
 Protect360面板具有以下特点：
@@ -79,6 +81,8 @@ Protect360面板提供下列筛选和分组选项：
 
 </Accordion>
 
+<div id="installs-dashboard" />
+
 ## 激活假量面板
 
 激活假量面板中呈现LTV维度的数据，也就是说，该面板中的数据与选定日期范围内发生的激活、再归因和再互动有关。
@@ -116,6 +120,8 @@ Protect360面板提供下列筛选和分组选项：
 
 <Accordion title="激活假量——图表">
 
+<div id="identified-fraud-trend-chart" />
+
 #### 已识别的假量趋势图
 
 已识别的假量趋势图按天显示激活、再归因和再互动假量变化，可细分到以下两个维度：
@@ -125,6 +131,8 @@ Protect360面板提供下列筛选和分组选项：
 * **流量类型**：非自然量和自然量
 
 您可以选择曲线图或柱状图来呈现该信息。
+
+<div id="hijacked-installs-attribution-correction-chart" />
 
 #### 被劫持的激活归因更正图表
 
@@ -141,6 +149,8 @@ Protect360面板提供下列筛选和分组选项：
 * 该图表仅对广告主开放，代理商和广告平台无访问权限。
 * 归因劫持行为被实时拦截时，Protect360以外的AppsFlyer面板和报告中也会显示正确的归因结果。但如果相关转化在归因后才被识别为归因劫持，则正确的归因结果仅显示在Protect360原始数据中。
 * 该图表可显示从付费渠道纠正**到自然量**的归因，但没有**从自然量**纠正到渠道的数据。
+
+<div id="identified-fraud-chart" />
 
 #### 已识别的假量图表
 
@@ -159,6 +169,8 @@ Protect360面板提供下列筛选和分组选项：
 <div id="installs-table" />
 
 <Accordion title="激活假量——数据表">
+
+<div id="identified-fraud-breakdown" />
 
 #### 已识别的假量细分数据
 
@@ -179,6 +191,8 @@ Protect360面板提供下列筛选和分组选项：
 * 按用户呈现数据。也就是说，相关AppsFlyer账户下每个具有Protect360权限的用户都可以对该表格的结构进行调整，形成自己的定制化数据表。另请查看[其他表格选项](/docs/protect360-dashboard#其他表格选项)。
 
 [![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### 已识别的假量细分数据表内容
 
@@ -241,6 +255,8 @@ Protect360面板提供下列筛选和分组选项：
 | CTIT > 60分钟 | 广告点击和首次应用打开之间的时间间隔超过60分钟的激活、再归因和再互动。该指标仅计算CTIT短于25小时的激活（不涵盖所有激活）。一般情况下，约有30%的首次应用打开会在应用下载的60分钟后发生。 |
 | CTIT > 5小时 | 广告点击和首次应用打开之间的时间间隔超过5小时的激活、再归因和再互动。该指标仅计算CTIT短于25小时的激活（不涵盖所有激活）。一般情况下，约有20%的首次应用打开会在应用下载的5小时后发生。 |
 
+<div id="additional-table-options" />
+
 #### 其他表格选项
 
 * 点击**导出CSV文件**可下载CSV格式的数据表。
@@ -259,6 +275,8 @@ Protect360面板提供下列筛选和分组选项：
 激活面板中的应用内事件数据是LTV维度的，也就是说其中所有的应用内事件都与指定日期范围内发生的激活有关。
 
 </Accordion>
+
+<div id="in-app-events-dashboard" />
 
 ## 应用内事件控制面板
 
@@ -285,6 +303,8 @@ Protect360面板提供下列筛选和分组选项：
 
 <Accordion title="应用内事件——趋势图">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### **作弊趋势图**
 
 作弊趋势图显示各天的事件假量，并将其细分到以下几类：
@@ -292,6 +312,8 @@ Protect360面板提供下列筛选和分组选项：
 * **实时拦截**：被实时拦截的应用内事件假量
 * **归因后**：归因后被识别为假量的应用内事件
 * **非作弊**
+
+<div id="top-iae-fraud-by-media-source-chart" />
 
 #### **应用内事件假量最多的媒体渠道图表**
 
@@ -327,6 +349,8 @@ Protect360面板提供下列筛选和分组选项：
 
 [![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
 
+<div id="content-of-the-in-app-event-fraud-breakdown-table" />
+
 #### 应用内事件假量的细分数据表内容
 
 | 表格栏位 | 说明 |
@@ -351,6 +375,8 @@ Protect360面板提供下列筛选和分组选项：
 | 已拦截的IAE | 根据验证规则被拦截的IAE。 |
 | 更正为自然量 | 最后一个正常的流量来源为自然量的激活劫持。 |
 | 更正为非自然量 | 最后一个正常的流量来源是非自然媒体渠道的激活劫持。 |
+
+<div id="additional-table-options-1" />
 
 #### 其他表格选项
 
@@ -406,6 +432,8 @@ Protect360面板提供下列筛选和分组选项：
 | 数据时效性 | 每日更新。<ul><li>激活（CPI）假量面板每天在UTC时间的16:00更新</li><li>应用内事件（CPA）假量面板每天在UTC时间的21:00更新</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

@@ -24,7 +24,7 @@ x-zendesk:
 > **概要：** 概览：通过为您的游戏类应用程序记录这些建议的应用内事件，评估用户在整个用户路径中的质量。
 
 
-<span id="gaming"></span>游戏类应用程序包括街机游戏、策略游戏、教育游戏和博彩游戏。我们建议记录的典型事件有应用内购买、在社交媒体上的分享和对友人的邀请。此外，您还可以包括诸如升级和完成游戏中教程之类的事件。
+<span id="-gaming"></span><span id="gaming"></span>游戏类应用程序包括街机游戏、策略游戏、教育游戏和博彩游戏。我们建议记录的典型事件有应用内购买、在社交媒体上的分享和对友人的邀请。此外，您还可以包括诸如升级和完成游戏中教程之类的事件。
 
 记录事件可以帮助您确定：
 
@@ -41,11 +41,15 @@ x-zendesk:
 * Xbox
 * Windows移动设备
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 如需详细的开发人员指南，请在**AppsFlyer开发者资源中心**查找<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">。</Anchor>
 >
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -209,6 +213,8 @@ x-zendesk:
 | af\_description | 邀请的背景情况 | Try this app |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

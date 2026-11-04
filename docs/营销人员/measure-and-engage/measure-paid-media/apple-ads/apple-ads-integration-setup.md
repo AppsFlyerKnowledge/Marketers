@@ -39,6 +39,8 @@ x-zendesk:
 > * AppsFlyer现已支持Apple Search Ads的点击归因、用户<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">再营销</Anchor>以及通过API获取的<Anchor target="_blank" href="/marketers/zh/docs/roi360-cost-aggregation-overview">成本数据</Anchor>（需订阅 ROI360）。
 > * 自2025年3月27日起，AppsFlyer新增了对Apple Search Ads展示归因的支持。
 
+<div id="set-up-apple-ads-integration" />
+
 ## ASA对接设置指南
 
 <div id="get-started" />
@@ -104,6 +106,8 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 
 </Accordion>
 
+<div id="set-up-agencies-and-apple-ads-marketing-partners" />
+
 ## 设置代理和ASA营销伙伴
 
 <div id="principles" />
@@ -116,6 +120,8 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 
 代理商和营销合作伙伴之间的区别已列出 具体请参考下方表格；
 
+<div id="agency-vs-marketing-partner" />
+
 #### 代理商与营销合作伙伴对比表
 
 |  | Agency（代理） | 平台官方合作渠道 |
@@ -123,9 +129,13 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 | AppsFlyer是否发送回传 | 否 | 是 |
 | 技术 | 广告代投 | 可通过附加值技术方案优化投放 |
 
+<div id="configuring-agencies-and-marketing-partners" />
+
 #### 如何配置代理商和营销合作伙伴
 
 使用以下检查表以确保您完成所有步骤 在配置过程中。详细说明包含在 每种合作伙伴类型的后续部分中。
+
+<div id="configuration-steps-checklist" />
 
 #### 配置操作清单
 
@@ -188,6 +198,8 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 * 请勿在Campaign Group名称中使用特殊则符或空格。
 * 当您使用 Apple 登录时，ASA 活动组的授权 不是累积的。这意味着当您集成一个新应用时， 之前选择的活动组的授权将被撤销，除非再次选择。 您需要选择有限访问 和每个相关的活动 组（与您想要为广告主连接的应用相关）。 转到 集成 标签，打开
 
+<div id="advertiser-actions" />
+
 #### **广告主需要完成的操作**
 
 **前期准备**：
@@ -202,6 +214,8 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 4. 从侧边菜单中，选择 协作 > 当一个代理与 Apple 搜索广告营销合作伙伴合作时， 重装激活归因
 5. 点击**保存**。
 
+<div id="agency-actions" />
+
 #### **代理需要完成的操作**
 
 1. **从Apple Search Ads后台**随单赠送 campaign\_group\_id使用以下屏幕截图作为指南 以定位 ID。请仅复制数字部分。 ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
@@ -214,6 +228,8 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 > 📘 **注意**
 >
 > Apple 搜索广告配置页面和营销合作伙伴 之间。 配置页面。
+
+<div id="cost-clicks-and-impressions-data" />
 
 ### 成本、点击和展示数据
 
@@ -247,6 +263,8 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="asa-attribution" />
@@ -276,6 +294,8 @@ ASA的归因不依赖IDFA，而是通过来自设备的token完成（确定性�
 * 如果某个广告系列的展示次数少于100次，则不会上报其展示、点击或分国家/地区成本数据。
 * 在AppsFlyer中按照Geo进行分组时，不会显示数据不可用的Geo，并且不可用的数据总数将显示在N/A下。
 
+<div id="retargeting-related-discrepancies" />
+
 ### 再营销相关的数据差异
 
 除了衡量拉新广告以外，AppsFlyer还提供再营销归因机制，可让广告主衡量并分析再营销投放。
@@ -289,6 +309,8 @@ ASA的归因不依赖IDFA，而是通过来自设备的token完成（确定性�
 **再营销停用时**
 
 [![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+
+<div id="additional-reasons-for-discrepancies" />
 
 ### 其他可能产生数据差异的原因
 

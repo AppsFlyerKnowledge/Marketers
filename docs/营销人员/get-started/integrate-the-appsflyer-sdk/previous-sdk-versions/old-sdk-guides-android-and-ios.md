@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="overview" />
+
 ## 速览
 
 随着时间的推移, 我们的 SDK 集成指南也在更新。它们被更新、更敏捷、更灵活和技术先进的 SDK 所取代。
@@ -31,13 +33,15 @@ x-zendesk:
 
 如果你的应用仍然使用旧版本的 SDK , 我们强烈建议你升级到最新的Android 或 iOS SDK 版本。
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 通过从旧的 SDK 版本升级到新版本, 您可以获得许多改进、新功能和错误修复。它还有助于保护您免受欺诈者的侵害, 并确保您符合 GDPR 标准。
 >
 > 我们建议至少每6个月更新一次 SDK 版本。
 >
-> ## 安卓
+> ## <span id="android"></span>安卓
 
 ![android_logo.png](https://files.readme.io/ccac58a8cad4bb58890de7781c54ae9ad17184b9f121467a258978a2112aff7d-360001394358.png)
 
@@ -72,6 +76,8 @@ x-zendesk:
 * [AppsFlyer SDK Integration Guide iOS V.4.4.1](https://support.appsflyer.com/hc/article_attachments/49929333030545)
 * [AppsFlyer SDK Integration Guide iOS V.4.5.2](https://support.appsflyer.com/hc/article_attachments/49929333032593)
 * [AppsFlyer SDK Integration Guide iOS V.4.5.3](https://support.appsflyer.com/hc/article_attachments/49929333032849)
+
+<div id="windows-phone" />
 
 ## Windowsphone
 

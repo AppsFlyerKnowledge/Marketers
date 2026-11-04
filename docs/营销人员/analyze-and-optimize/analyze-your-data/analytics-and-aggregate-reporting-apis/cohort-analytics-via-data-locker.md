@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要**：Data Locker的群组分析报告覆盖各广告层级的汇总数据，其中包含过去365天内的用户归因数据。即使您未购买Data Locker，只要您的套餐中包含原始数据和/或群组API，就可以获取该报告。
 
+<div id="cohort-analytics-in-data-locker" />
+
 ## Data Locker中的群组分析报告
 
 AppsFlyer中的原始归因数据有时会受到媒体渠道数据共享政策或广告主<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">隐私保护政策的</Anchor><Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions">限制</Anchor>，这样的限制会影响到所有与归因有关的字段，如广告系列和广告组。这种情况下，您可以使用群组报告以汇总数据的形式来代替原始数据。
@@ -72,6 +74,8 @@ AppsFlyer中的原始归因数据有时会受到媒体渠道数据共享政策�
 
 * **维度**：以字符串格式呈现，长度不定，一般取决于广告层级的填充方式。
 * **指标**：以数字的形式呈现。**请注意：** selected\_currency字段以字符串的格式呈现。
+
+<div id="dimensions" />
 
 #### 维度
 
@@ -285,6 +289,8 @@ AppsFlyer中的原始归因数据有时会受到媒体渠道数据共享政策�
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### 指标
 
 | 字段名称 | 说明 | 格式 |
@@ -333,6 +339,8 @@ AppsFlyer中的原始归因数据有时会受到媒体渠道数据共享政策�
 
 本节列举了一些通过Data Locker拉取群组数据用于BI的常见使用场景，且每个示例都配以相关的SQL语句及Excel表格数据作为详细说明。
 
+<div id="1-calculating-retention" />
+
 #### **1. 计算留存率**
 
 在这个示例中，我们需要完成以下工作：
@@ -365,6 +373,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30% | 10% |
 | 98765432 | 123456 | 200 | 25% | 15% |
 | 07315466 | 613770 | 300 | 20% | 12% |
+
+<div id="2-calculating-arpu-of-multiple-in-app-events" />
 
 #### **2. 计算多个应用内事件的ARPU**
 
@@ -401,6 +411,8 @@ group by 1
 | 98765432 | re-engagement | 3.57 | 1.34 | 4.86 |
 | 07315466 | re-attribution | 7.41 | 6.79 | 5.29 |
 
+<div id="3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. 针对具体的群组日期计算应用内事件的转化率**
 
 在这个示例中，我们需要完成以下工作：
@@ -431,6 +443,8 @@ group by 1,2,3,4,5
 | 2022-11-07 | US | 12345678 | 123456 | site\_123 | 45% |
 | 2022-11-05 | UK | 98765432 | null | site\_654 | 70% |
 | 2022-10-31 | KR | 07315466 | null | null | 63% |
+
+<div id="4-calculating-daily-installs" />
 
 #### **4. 计算每天的激活量**
 
@@ -468,6 +482,8 @@ group by 1,2,3,4,5
 | id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculating-revenue-from-facebook-ads" />
+
 #### **5.计算由Facebook Ads带来的收入**
 
 在这个示例中，我们需要完成以下工作：
@@ -501,6 +517,8 @@ group by 1,2,3
 | 2022-11-05 | id123456789 | adnet2\_int | 99.23 |
 | 2022-10-31 | id123456789 | adnet3\_int | 13.34 |
 
+<div id="6-calculating-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6.分ASA关键词ID计算365天以内的ARPU**
 
 在这个示例中，我们需要完成以下工作：
@@ -531,6 +549,8 @@ group by 1
 | adnet1\_int | 123456 | 57,019.93 |
 | adnet2\_int | 987654 | 64,867.84 |
 | adnet3\_int | 666854 | 48,160.02 |
+
+<div id="7-calculating-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. 分国家/地区按归因时间计算7日ARPU**
 
@@ -575,6 +595,8 @@ limit 20
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="traits-and-limitations" />
@@ -597,6 +619,8 @@ limit 20
 | 重装激活 | <ul><li>如果重装激活发生后的事件被记录为未归因的自然量：<ul><li>2024年5月26日之后的报告不呈现该数据。<Anchor target="_blank" href="/marketers/zh/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">详情请见此处说明。</Anchor></li><li>激活时间以<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor>字段的值为准。</li><li>不计入独立用户数和留存指标。</li></ul></li><li>如果重装激活后发生的事件被归因到首次激活，则报告中总是包含该数据。<Anchor target="_blank" href="/marketers/zh/docs/unique-users">详情请见此处说明。</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

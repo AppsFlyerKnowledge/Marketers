@@ -24,6 +24,8 @@ x-zendesk:
 
 <Image alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
 
+<div id="delete-user-history" />
+
 ## 删除用户的历史记录
 
 GDPR和CCPA等一部分隐私监管条例规定用户*有权清除*其数据。
@@ -31,6 +33,8 @@ GDPR和CCPA等一部分隐私监管条例规定用户*有权清除*其数据。
 **场景：** 某用户要求您删除与其相关的数据。根据GDPR的规定，您必须在30天内完成这项请求。
 
 **必要操作：** 使用<Anchor target="_blank" href="/marketers/zh/docs/send-opendsr-api-requests">OpenDSR API</Anchor>发送数据清除请求。
+
+<div id="stop-attributing-installs-to-a-media-source" />
 
 ## 停止对特定渠道进行激活归因
 
@@ -50,13 +54,19 @@ AppsFlyer会根据您配置的媒体渠道收集激活和事件信息。如果�
 * **自有媒体：**
   * 停止使用相关的OneLink自定义链接。
 
+<div id="remove-or-delete-an-app" />
+
 ## 移除或删除应用
 
 您可以选择暂时移除应用。
 
+<div id="temporarily-removing-an-app" />
+
 #### 暂时移除应用
 
 当应用被暂时移除时，数据记录会停止，应用不会显示在仪表板上，并且在“我的应用”页面上显示为灰色。但是，该应用仍与账户关联，并且可以恢复。恢复应用后，应用设置、已批准代理和令牌等历史数据将被保留。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -73,9 +83,13 @@ AppsFlyer会根据您配置的媒体渠道收集激活和事件信息。如果�
 
 * 请联系您的 CSM 或发送电子邮件至 [hello@appsflyer.com](mailto:hello@appsFlyer.com) 以启动该流程。一旦 CSM 恢复了该应用，您就可以将其重新添加到您的账户中。
 
+<div id="transfer-apps-between-accounts" />
+
 ## 在不同账户之间迁移应用
 
 详细说明请参见这篇文档：<Anchor target="_blank" href="/marketers/zh/docs/transferring-apps-between-accounts">在不同账户之间迁移应用</Anchor>。
+
+<div id="delete-your-account-or-downgrade-your-subscription-plan" />
 
 ## 删除账户或套餐降级
 

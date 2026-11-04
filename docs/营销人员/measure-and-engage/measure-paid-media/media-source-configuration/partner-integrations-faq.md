@@ -38,6 +38,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="use-partner-integrations" />
+
 ## Partner Marketplace平台的使用方法
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
@@ -82,6 +84,8 @@ x-zendesk:
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">通过Partner Marketplace平台对接新渠道</Anchor>的说明文档。
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## 问题排查
 

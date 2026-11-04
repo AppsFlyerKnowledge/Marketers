@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **概要：** 本文针对代理数据提供了详细说明，帮助广告主解读AppsFlyer数据中的代理流量。
 
+<div id="about-agency-data" />
+
 ## 代理数据
 
 广告主与代理合作时，就能在AppsFlyer的面板和报告中看到由代理产生的流量。也就是说代理默认向广告主公开其使用的媒体渠道。
+
+<div id="viewing-agency-traffic-in-reports" />
 
 ### 在报告中查看代理流量
 
@@ -43,6 +47,8 @@ x-zendesk:
 1. 从AppsFlyer的侧边栏中选择**报告**> **汇总数据导出**。
 2. 下载一个带有媒体渠道维度的报告。
 
+<div id="viewing-agency-traffic-in-the-overview-dashboard" />
+
 ### 在总览面板中查看代理流量
 
 **请按以下方式查看代理流量：**
@@ -53,6 +59,8 @@ x-zendesk:
    面板会显示这些代理所使用的媒体渠道。
 
 **请注意**： 使用**分组维度**选项时，您还可以将数据按代理分组。在代理筛选条件中选择多个代理，并在分组维度中选择代理，就能在面板中对比不同代理之间的投放效果。
+
+<div id="viewing-agency-traffic-in-the-retention-dashboard" />
 
 ### 在留存面板中查看代理流量
 

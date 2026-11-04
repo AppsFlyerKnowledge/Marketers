@@ -23,9 +23,11 @@ x-zendesk:
 > **概要：** 本文针对电子类钱包应用提供了事件记录推荐，帮助您衡量全链路的用户质量。
 
 
-<span id="sports-betting"></span>记录事件可以帮助您确定：
+<span id="-sports-betting"></span><span id="sports-betting"></span>记录事件可以帮助您确定：
 
 * 用户进行互动的程度如何
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -34,6 +36,8 @@ x-zendesk:
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
 
 [![In_appEvents_UserJourneys_-_Sports_betting__5_.png](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -74,6 +78,8 @@ x-zendesk:
 | af\_registration\_method | 注册方式的类型 | 电子邮件，Facebook |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

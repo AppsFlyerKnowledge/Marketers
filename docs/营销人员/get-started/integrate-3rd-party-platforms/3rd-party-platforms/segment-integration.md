@@ -25,13 +25,19 @@ x-zendesk:
 ---
 > **概要：** 本文为您介绍了将Segment分析数据发送至AppsFlyer的方法。
 
+<div id="introduction" />
+
 ## 简介
 
 Segment可将您的数据传送到AppsFlyer。通过Segment的开源库采集数据后，数据会被转换为相应格式并传输至AppsFlyer。借助AppsFlyer，营销人员能够更精准地锁定目标受众、优化广告支出并提升ROI。
 
+<div id="integrating-segment-with-appsflyer" />
+
 ## Segment与AppsFlyer的对接
 
 请参考<Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/">Segment的指南</Anchor>，了解如何将Segment与AppsFlyer的对接。
+
+<div id="faqs" />
 
 ## 常见问题解答
 
@@ -65,6 +71,8 @@ Segment SDK Wrapper连接了Segment SDK与AppsFlyer SDK。
 当您使用Segment SDK Wrapper来调用Segment提供的接口以记录激活和应用内事件时，SDK Wrapper会同时调用Segment和AppsFlyer的接口。
 
 这样能够节省开发时间和人力，减少额外的编码工作。
+
+<div id="warning" />
 
 > ❗️ **重要提示**
 >

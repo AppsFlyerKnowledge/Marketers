@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
+<div id="sessions-counting-principles" />
+
 ## session统计的原理
 
 用户完成的session（即应用打开）数量是评估用户与应用的互动情况时需要用到的重要指标。AppsFlyer在多种报告和面板中都提供该指标。session数量还会用于计算下列指标：
@@ -39,6 +41,8 @@ x-zendesk:
 * 忠实用户数（以完成3次应用打开的默认标准计算）
 
 **请注意：** 自然量的session数据呈现在活跃数据和群组面板中，总览面板不提供该数据。
+
+<div id="sessions-calculation" />
 
 ### session的计算方式
 
@@ -55,6 +59,8 @@ x-zendesk:
 * 在安卓应用中，开发人员可手动设置session上报。比如总是在后台运行的工具类应用会使用这种方式上报session。
 
 **Session指标**
+
+<div id="minimum-time-between-sessions-mechanism" />
 
 ## Session之间的最短间隔机制
 
@@ -97,6 +103,8 @@ Session统计的流程如下：统计到一个session → 开始倒计时 → �
 
 </Accordion>
 
+<div id="sessions-related-topics" />
+
 ## 与session相关的事项
 
 <div id="retargeting-sessions" />
@@ -125,6 +133,8 @@ Session统计的流程如下：统计到一个session → 开始倒计时 → �
 * 如需发送session回传，请将*af\_app\_opened*手动映射到渠道侧的对应事件。请注意：在Data Locker的AppsFlyer原始数据报告中，该事件以*launch*的形式呈现。
 * 请注意：这是一个量级较大的事件，很多渠道不希望接收这类事件。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 只有启用了**Send Sessions**的渠道才能支持`af_app_opened`的映射。
@@ -139,12 +149,16 @@ Session统计的流程如下：统计到一个session → 开始倒计时 → �
 
 **服务器侧：然后按照与其他应用内事件相同的<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-attribution-model">归因规则</Anchor>，对统计到的session进行归因。**
 
+<div id="explicit-sessions-reporting-by-the-developer-android-apps-only" />
+
 #### **开发人员手动设置的session上报（仅适用于安卓）**
 
 您可以在安卓应用中使用<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#logsession">logSession</Anchor>来手动上报session。iOS中没有等效的调用方式。
 
 * 如果相关应用长时间时间在后台运行，您可能需要让开发人员在其中部署session上报逻辑。常见的此类应用包括电池管理、桌面启动、锁屏、杀毒等工具类软件。对于这类应用，可以考虑在每天午夜上报一个session，或按适合相关应用的频率来上报session。
 * 除了上述方式，您也可以在用户完成特定应用内操作时记录session，比如点击*清除内存*按钮等等。
+
+<div id="setting-minimum-time-between-app-launches" />
 
 #### **设置应用打开之间的最短间隔**
 

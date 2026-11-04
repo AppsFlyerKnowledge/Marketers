@@ -23,11 +23,19 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="ip-masking" />
+
 ## 掩盖IP
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > * 如果您在应用配置中打开了<Anchor target="_blank" href="/marketers/zh/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aem数据共享">掩盖IP地址的开关</Anchor>，则S2S和SDK事件都不支持AEM数据共享，也就是说不会与Meta ads共享数据。
+
+<div id="turn-on-ip-masking" />
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -55,6 +63,8 @@ x-zendesk:
 启用 IP 屏蔽
 
 1. 从AppsFlyer后台的侧边栏中选择**配置** > 应用配置。
+
+<div id="ip-masking-in-raw-data-reports" />
 
 ## 在原始数据报告中启用IP屏蔽
 

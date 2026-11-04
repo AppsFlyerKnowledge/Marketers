@@ -51,14 +51,20 @@ x-zendesk:
 
 与AD\_NETWORK的对接仅支持默认回传中的安装事件。
 
+<div id="activate-partner" />
+
 ### 渠道激活
 
 **第一次访问**时，需要打开***激活合作伙伴***开关以开启对接选项卡内的配置参数。只要仍与该合作伙伴合作，这个开关必须为ON。   
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
 
+<div id="enable-view-through-attribution" />
+
 ### 启用展示归因
 
 如果希望获取该AD\_NETWORK的浏览型归因，要把这里设置为开启。您可以使用归因链接选项卡中对应的滑块来调整浏览回溯窗口。
+
+<div id="default-postbacks" />
 
 ### 默认回传
 
@@ -73,6 +79,8 @@ x-zendesk:
 可以在这个标签页创建要发送给Liftoff的归因链接，以归因Liftoff的广告系列、广告组或者广告。请注意, AppsFlyer 不会保存生成的合作伙伴归因链接。
 
 该选项卡可分成几个不同部分：
+
+<div id="attribution-link-parameters" />
 
 ### 归因链接参数
 
@@ -95,6 +103,8 @@ x-zendesk:
 
 只需在新参数框中输入, 即可将任何其他参数添加到归因链接中。更多详情, 请参阅 **<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">AppsFlyer 归因链接结构和参数</Anchor>。**
 
+<div id="click-through-attribution" />
+
 ### 点击型归因
 
 可以拖曳这个滑块来设置**点击到安装时间的最长时间**。只有发生在归因窗口期内的安装（首次启动）才有可能会被归因给Twitter。
@@ -105,9 +115,13 @@ x-zendesk:
 
 ![viewthrough_en-us.png](https://files.readme.io/47ff5d900d8edfdc30f2d2c0588f5e06fc3b44e71aeab630d1b5df2ea8c2db47-50900334036625.png)
 
+<div id="attribution-link" />
+
 ### 归因链接
 
 这就是包含了所有设置信息的归因链接。把这个归因链接发给Liftoff，当潜在客户点击相应广告时，该链接会被激活。
+
+<div id="view-through-attribution-lookback-window" />
 
 ### 浏览型归因窗口期
 
@@ -120,6 +134,8 @@ x-zendesk:
 更多关于<Anchor target="_blank" href="/marketers/zh/docs/set-up-lookback-windows">展示归因的信息在这里</Anchor>。
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+
+<div id="impressions-attribution-link" />
 
 ### 展示归因链接
 

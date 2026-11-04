@@ -50,10 +50,14 @@ x-zendesk:
 
 <Accordion title="对接页面">
 
+<div id="activate-partner" />
+
 ### 渠道激活
 
 **第一次访问**时，需要打开***激活合作伙伴***开关以开启对接选项卡内的配置参数。只要仍与该合作伙伴合作，这个开关必须为ON。   
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
+
+<div id="general-settings" />
 
 ### 通用设置
 
@@ -61,9 +65,13 @@ x-zendesk:
 
 如果希望获取该AD\_NETWORK的浏览型归因，要把这里设置为开启。您可以使用归因链接选项卡中对应的滑块来调整浏览回溯窗口。
 
+<div id="default-postbacks" />
+
 ### 默认回传
 
 ![mceclip2.png](https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png)
+
+<div id="in-app-events-settings" />
 
 ### 应用内事件设置
 
@@ -93,6 +101,8 @@ x-zendesk:
 
 该选项卡可分成几个不同部分：
 
+<div id="attribution-link-parameters" />
+
 ### 归因链接参数
 
 在本节中, 选择要添加到归因链接中的参数。
@@ -114,6 +124,8 @@ x-zendesk:
 
 只需在新参数框中输入, 即可将任何其他参数添加到归因链接中。更多详情, 请参阅 **<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">AppsFlyer 归因链接结构和参数</Anchor>。**
 
+<div id="click-through-attribution" />
+
 ### 点击型归因
 
 可以拖曳这个滑块来设置**点击到安装时间的最长时间**。只有发生在归因窗口期内的安装（首次启动）才有可能会被归因给Twitter。
@@ -124,9 +136,13 @@ x-zendesk:
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
 
+<div id="click-attribution-link" />
+
 ### 点击归因链接
 
 这就是包含了所有设置信息的归因链接。把这个归因链接发给Liftoff，当潜在客户点击相应广告时，该链接会被激活。
+
+<div id="view-through-attribution-lookback-window" />
 
 ### 浏览型归因窗口期
 
@@ -139,6 +155,8 @@ x-zendesk:
 更多关于<Anchor target="_blank" href="/marketers/zh/docs/set-up-lookback-windows">展示归因的信息在这里</Anchor>。
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+
+<div id="impressions-attribution-link" />
 
 ### 展示归因链接
 
@@ -170,6 +188,8 @@ x-zendesk:
 您可以在这个选项卡中为Twitter开放各种权限。即使您没有对Twitter启用归因，仍可以使用授权选项卡向Twitter授予各类权限。
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### 广告平台权限
 

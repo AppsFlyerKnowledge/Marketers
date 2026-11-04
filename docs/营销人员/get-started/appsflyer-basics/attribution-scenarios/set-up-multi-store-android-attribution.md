@@ -31,15 +31,21 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="multi-store-android-attribution" />
+
 ## 多个安卓第三方商店归因
 
 AppsFlyer的归因支持多家应用商店的场景。（英文表述中，我们会将第三方安卓应用商店称为out-of-market stores或alternate Android stores）广告主在AppsFlyer后台，可以选择（1）在单一应用面板下查看所有商店的数据，也可以选择（2）一个应用对应一个三方商店，多个应用下分别查看对应商店的数据。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > * AppsFlyer的安卓归因解决方案全面支持各设备ID，包括GAID和<Anchor target="_blank" href="/marketers/zh/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor> 等。
 
 ![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+
+<div id="single-dashboard-vs-dashboard-per-store" />
 
 ### 查看多个商店数据：单一应用面板 vs. 多个应用面板
 
@@ -48,11 +54,15 @@ AppsFlyer的归因支持多家应用商店的场景。（英文表述中，我�
 
 <table><thead><tr><th> </th><th>单一面板<br/>【推荐】</th><th> 多个应用面板</th></tr></thead><tbody><tr><td><span id="android-package-name"></span>安卓包名</td><td colspan="2">单一应用需要物理包名一致；多个应用面板，物理包名通常需要一致，通过后缀channel区分。 </td></tr><tr><td><span id="channel-name"></span>流量入口名称</td><td>/</td><td><ul><li>通过<span><strong>Android Out-of-Store APK</strong></span>入口添加App，并注意设置channel值。</li><li><span>channel值可用作标识商店，如channel-amazon。</span></li><li>物理包名+channel值的组合，代表您在AppsFlyer后台显示的完整App包名，并对应各自的商店。 </li><li>举例来说， </li><li>如果APK Manifest中设置了channel值，但是AppsFlyer后台并没有配置该channel值的应用，那么该APK的归因数据将上报给原本无channel值的包名。如有上架Google Play, 且包名一致，那么数据就会上报给您Google Play对应的应用面板。 </li></ul></td></tr><tr><td><span id="populating-the-install_app_store-field"></span>上报install_app_store字段</td><td><ul><li>各应用商店/下载渠道的唯一标示</li><li>如仅上架Google Play, 无需使用该字段。 </li><li>支持manifest配置和API方法上报。</li></ul></td><td>不适用</td></tr><tr><td><span id="onelink-template"></span><a href="./create-a-onelink-template#创建onelink模板" target="_blank">OneLink模板</a></td><td> </td><td>不适用 </td></tr><tr><td><span id="measurementattribution-links"></span>归因链接 </td><td><ul><li>归因链接相同。</li><li>确保用户被跳转至正确的商店，请使用<a href="./set-up-multi-store-android-attribution#single-dashboard-attribution-links">＆af_r</a>参数设置重定向URL。(国内媒体如涉及异步监测，即跳转链接带有is_redirect=false参数的，可忽略af_r参数)</li></ul></td><td><ul><li>每个应用/商店对应各自的归因链接。</li><li> </li><li>App ID是物理包名_channel的组合。示例：com.abc.def-def_store <br/>所以，各个App对应的归因链接也是不同的。 </li></ul></td></tr><tr><td><span id="reporting-options-available-having-install_app_store-field"></span>可查看install_app_store的面板和报告</td><td> </td><td>不适用 </td></tr><tr><td><span id="considerations"></span>注意事项</td><td><ul><li>归因准确性 </li><li><span>自然激活：一个面板下显示所有商店/渠道APK包的自然激活</span></li><li> </li></ul></td><td><ul><li>归因准确性</li><li> <span>在AppsFlyer的各个应用面板上分别查看</span>各渠道/商店包的  自然  和非自然  激活和应用内事件。 </li><li><span>如需在一个面板下汇总所有商店数据，可以借助群组报告或自定义面板等工具实现。</span></li><li> </li></ul></td></tr></tbody></table>
 
+<div id="set-up-tasks" />
+
 ## 设置方法
 
 请参考本章节进行设置。具体的操作步骤需要由市场人员和开发人员共同配合完成。
 
 针对 多个应用面板 选项，需要针对每个应用面板/商店重复步骤。
+
+<div id="before-you-begin" />
 
 ### **开始之前**
 
@@ -62,6 +72,8 @@ AppsFlyer的归因支持多家应用商店的场景。（英文表述中，我�
 
 <table><thead><tr><th>参数</th><th>说明</th><th>单一面板<br/>【推荐】</th><th>多个应用面板</th></tr></thead><tbody><tr><td>安卓包名</td><td>各商店/渠道包包名一致</td><td colspan="2">如果APK包已经上架Google Play，可以直接选择使用该App面板查看多个商店数据。示例： comb.abc.def</td></tr><tr><td>流量入口名称</td><td>各个渠道/商店包的唯一名称 （命名由广告主自定义）</td><td>无需设置 </td><td><p>每个APK包/渠道包对应一个channel名/渠道号。需要通过打包时在manifest配置，同时在添加App时填写完全一致的channel名，此处务必注意技术与运营配合一致。 </p></td></tr><tr><td>install_app_store</td><td>各个渠道/商店包的唯一名称 （命名由广告主自定义）</td><td>每个APK包/渠道包对应一个channel名/渠道号。或者API的方式赋值（如渠道包数量较多，建议直接用API的方式）。</td><td> 无需设置</td></tr></tbody></table>
 
+<div id="tasks" />
+
 ### 配置流程
 
 | 步骤 | 负责人员 | 单一面板 | 多个应用面板 |
@@ -70,6 +82,8 @@ AppsFlyer的归因支持多家应用商店的场景。（英文表述中，我�
 | 2 | 营销人员 | 如果面板已经有包名相同的Google Play App存在，且团队愿意在一个面板下同时查看Google Play包和第三方应用商店包的数据，则无需操作此处，直接使用原有面板进行配置。如果仍需单独添加新的应用面板，作为集合各APK包数据的单一面板，请参考文档：中国国内安卓市场归因指南 | 在AppsFlyer中添加相关应用。 |
 | 3 | 营销人员 | [准备归因链接。](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | 分App(包名+channel名)准备归因链接。 |
 | 4 | 市场人员和研发人员互相配合 | [测试](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [测试](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
+
+<div id="procedures" />
 
 ## 配置流程
 
@@ -170,6 +184,8 @@ AF\_STORE对应AppsFlyer原始数据中的install\_app\_store字段。目前包�
 
 <Accordion title="测试方法">
 
+<div id="non-organic-installs" />
+
 #### **非自然安装**
 
 **测试非自然激活的方式如下：**
@@ -189,6 +205,8 @@ AF\_STORE对应AppsFlyer原始数据中的install\_app\_store字段。目前包�
 | --- | --- |
 | <ol><li>在导出数据页面的原始数据报告里查看您测试的激活数据。</li><li>测试成功后，您会看到一条媒体信息（media source）为test的激活数据。在 **Install App Store**栏，您会看到配置的AF\_STORE数据。</li></ol> | <ol><li>前往与完整包名对应的应用面板下。</li><li>在数据导出的原始数据或数据总览里查看您的激活测试数据。</li><li>您应该会看到来自“test”媒体渠道的一个安装转化。</li></ol> |
 
+<div id="organic-installs" />
+
 #### **Organic installs（自然激活）**
 
 **测试自然激活：**
@@ -197,6 +215,8 @@ AF\_STORE对应AppsFlyer原始数据中的install\_app\_store字段。目前包�
 2. 2. 安装已集成了AppsFlyer归因SDK的测试版应用并打开该应用。
 3. 查看数据：
 
+<div id="expected-results" />
+
 #### 如测试成功，您会看到：
 
 | 单一面板 | 多个应用面板 |
@@ -204,6 +224,8 @@ AF\_STORE对应AppsFlyer原始数据中的install\_app\_store字段。目前包�
 | 前往数据总览面板，查看是否有新增自然激活。目前，在使用单一应用方法时，还无法区分自然安装的来源。 | <ol><li>进入已测试商店的应用控制面板上的数据总览页面。</li><li>您应该会看到来自“organic”媒体渠道的一个安装转化。</li></ol> |
 
 </Accordion>
+
+<div id="additional-features" />
 
 ## 其他功能
 
@@ -238,11 +260,17 @@ AF\_STORE对应AppsFlyer原始数据中的install\_app\_store字段。目前包�
 * 协作方举例来说，
 
 
+<div id="troubleshooting" />
+
 ## 问题排查
+
+<div id="installs-attributed-to-the-default-app" />
 
 ### 激活归因给默认的应用
 
 如果没有建立默认的Google Play App，则数据无法被记录。
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer通过iOS回传以及SKAN原始数据回传接收到相关数据后，对其进行解析并生成设备级数据，然后将这些设备级数据呈现在SKAN原始数据报告中。您可以通过<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers">Data Locker</Anchor>和<Anchor target="_blank" href="/marketers/zh/docs/push-api-streaming-raw-data">Push API</Anchor>获取相关数据。如果您订购的套餐中已包含原始数据权限，则无需再单独购买Data Locker。
 
+<div id="skan-raw-data-reports" />
+
 ## SKAN原始数据报告
 
 原理：
@@ -59,6 +61,8 @@ x-zendesk:
 
 * 广告平台未提供campaign\_name（广告系列名称）、ad\_network\_campaign\_id（广告系列ID）、ip等非必要的数据扩充字段。
 * 受Apple的阈值规定限制，该数据不开放。受影响的字段包括source\_app\_id、skad\_campaign\_id、skad\_conversion\_value。
+
+<div id="skan-raw-data-report-format-and-content" />
 
 ## SKAN原始数据报告格式及内容
 
@@ -206,6 +210,8 @@ x-zendesk:
 
 <Accordion title="原始数据字段格式类别">
 
+<div id="field-formats" />
+
 #### 字段格式
 
 | 格式名称 | 说明 |
@@ -236,6 +242,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="traits-and-limitations" />
@@ -256,6 +264,8 @@ x-zendesk:
 | 相关账户下的用户权限 | 可用。具体取决于账户授权。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 **概要：** 学习如何配置DCP以根据转化、参与和活动映射数据执行SKU级归因。
 
+<div id="overview" />
+
 ## 速览
 
 在<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement">准备转化、参与和活动映射</Anchor>数据后，您可以配置DCP以使用它们进行测量和归因：
@@ -29,6 +31,8 @@ x-zendesk:
 2. [**分配任务**](#分配配置任务) – 拥有者将每个配置任务分配给具有相关数据访问权限的合作者。
 3. [**配置任务**](#站内与站外广告系列归因) – 合作者配置转化、参与和活动映射。这包括设置现场和非现场活动，以便所有数据都连接、映射并准备好进行归因。
 4. <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-run-and-manage-measurement">**运行和管理测量**</Anchor> - 运行实时或历史测量，复制它们，重新运行它们或更改其范围。
+
+<div id="start-the-measurement-setup" />
 
 ## 开始测量设置
 
@@ -42,6 +46,8 @@ x-zendesk:
 
 [![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
 
+<div id="select-campaign-type-on-site-off-site-or-both" />
+
 ## 选择活动类型：现场、非现场或两者。
 
 由于现场和非现场活动类型在转化发生的位置和归因处理方式上有所不同，因此协作拥有者必须在配置协作测量之前指定活动类型。详情请见：<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaign-measurement">现场与。站外活动测量</Anchor>。
@@ -53,6 +59,8 @@ x-zendesk:
    * [配置现场活动](#站内与站外广告系列归因)，
    * [配置离线活动](#configure-offsite-campaign-measurement)，
    * [配置结合现场和离线活动](#configure-combined-onsite-and-offsite-campaign-measurement)。
+
+<div id="assign-configuration-task" />
 
 ## 分配配置任务
 
@@ -92,6 +100,8 @@ DCP账户所有者可以将任务分配给合作者，以确保数据隐私并�
 2. 在相关配置步骤中，从**受托人**列表中移除已分配的合作者。
 
 </Accordion>
+
+<div id="configure-on-site-and-off-site-campaign-measurement" />
 
 ## 站内与站外广告系列归因
 

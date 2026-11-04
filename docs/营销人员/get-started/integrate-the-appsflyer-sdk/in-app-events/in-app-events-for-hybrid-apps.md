@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **概要：** 记录发生在移动应用内嵌网页视图（web-views）中的应用内事件，即使用户交互发生在应用的网页内容中，也能实现完整的事件衡量。
 
+<div id="introduction" />
+
 ## 简介
 
 <Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">应用内事件</Anchor>（即在相关应用内发生的事件）通过SDK上报，那么应用之外发生的事件要如何上报呢？
@@ -41,6 +43,8 @@ x-zendesk:
 
 本文说明适用于混合模式下的使用场景,解释了如何记录HTML视图中的事件，并将其发送到相关应用，从而打通HTML和原生视图之间的数据传输。
 
+<div id="example" />
+
 > 📄 **示例**
 >
 > 贵司开发了一个混合模式的应用，并向用户提供订阅套餐。您在网页视图中添加了订阅表格，该视图通过您的网站加载。
@@ -51,12 +55,16 @@ x-zendesk:
 >
 > [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
 
+<div id="recording-in-app-events-in-hybrid-apps" />
+
 ### 在混合模式下记录应用内事件
 
 本文针对混合模式下的应用内事件，介绍了以下两种事件记录方式：
 
 * **【推荐】**[**JavaScript接口**](/docs/in-app-events-for-hybrid-apps#javascript接口)：使用原生JavaScript接口，打通HTML/网页视图（Web View）和原生代码之间的数据传输， 以便将应用内事件的相关数据从网页视图发送到原生代码。原生代码收到这些数据后，即通过SDK将其发送到AppsFlyer。
 * [**URL加载**](/docs/in-app-events-for-hybrid-apps#url加载)：您可以让原生代码监听特定URL的加载事件， 并从URL参数重提取数据，然后将这些数据传递给SDK。
+
+<div id="javascript-interface" />
 
 ## JavaScript接口
 
@@ -80,6 +88,8 @@ x-zendesk:
 <div id="android" />
 
 <Accordion title="安卓">
+
+<div id="html-code-for-android" />
 
 #### 适用于安卓的HTML代码
 
@@ -112,6 +122,8 @@ function recordEvent(){
   ```
 * 为了避免任何可能出现的问题，AppsFlyer建议您仅使用小写字母和数字（a-z 和0-9）来命名您的应用内事件。
 
+<div id="webactivity-class" />
+
 #### WebActivity类
 
 使用以下代码创建一个WebActivity类：
@@ -133,6 +145,8 @@ public class WebActivity extends AppCompatActivity {
 ```
 
 上述代码可创建一个名为**app**的对象，用于连接网页视图与原生代码。
+
+<div id="javascript-interface-class" />
 
 #### JavaScript接口类
 
@@ -184,6 +198,8 @@ public class MainJsInterface {
 
 <Accordion title="iOS">
 
+<div id="html-code-for-ios" />
+
 #### 适用于iOS的HTML代码
 
 请将以下HTML代码添加到网页视图或网页：
@@ -219,11 +235,15 @@ public class MainJsInterface {
   ```
 * 为了避免任何可能出现的问题，AppsFlyer建议您仅使用小写字母和数字（a-z 和0-9）来命名您的应用内事件。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 上述HTML代码适用于Objective C和Swift。
 
 #### Objective c
+
+<div id="web-view-controller" />
 
 #### 网页视图控制器
 
@@ -277,6 +297,8 @@ public class MainJsInterface {
 ```
 
 上述代码会接收网页视图发出的消息，该消息中包含事件名称和事件值。当该代码检测到有消息传入时，会将消息传递给`recordEvent`方法，然后该方法会解析这些事件值，并调用原生SDK的`logEvent`方法。
+
+<div id="swift-webview-controller" />
 
 #### 适用于Swift的WebView控制器
 
@@ -335,6 +357,8 @@ import JavaScriptCore
 
 </Accordion>
 
+<div id="url-loading" />
+
 ## URL加载
 
 安卓和iOS都部署了可监听URL加载事件的原生方法。您可以使用该方法完成以下操作：
@@ -348,7 +372,11 @@ import JavaScriptCore
 1. 将HTML代码添加到网页视图或网页
 2. 配置用于URL加载的原生代码
 
+<div id="webview-implementation" />
+
 ### WebView部署方式
+
+<div id="html-code-for-both-android-webview-and-ios-wkwebview" />
 
 #### HTML代码（适用于安卓WebView和iOS WKWebView）
 
@@ -395,10 +423,16 @@ import JavaScriptCore
   ```
 * 建议仅使用小写字母和数字（a-z 和0-9）来命名您的应用内事件，以避免在传递数据时出现任何问题。
 
+<div id="native-implementation" />
+
 ### 原生部署
 
 <Tabs>
 <Tab title="Android">
+
+<div id="ios-implementation" />
+
+<div id="android-implementation" />
 
 #### 安卓部署方式
 

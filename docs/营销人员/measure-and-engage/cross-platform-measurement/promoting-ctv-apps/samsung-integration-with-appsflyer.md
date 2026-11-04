@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要： 本文介绍了三星Connected TV (CTV)与AppsFlyer的对接方式。对接完成后，您就可以针对三星Connected TV (CTV)上的广告收集归因和事件数据。**
 
+<div id="about-samsung-ctv-attribution" />
+
 ## 关于三星CTV归因
 
 三星的流媒体操作系统Tizen OS应用于所有三星电视。
@@ -35,9 +37,13 @@ x-zendesk:
 * 三星智能电视。
 * CTV-to-CTV的归因和事件记录。（即在用户的三星设备上进行归因和记录）。
 
+<div id="samsung-attribution-flow" />
+
 ### 三星归因流程
 
 ![CTV_attribution_flow_-_Samsung__1_.png](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
+
+<div id="integration-procedures" />
 
 ## 接入流程
 

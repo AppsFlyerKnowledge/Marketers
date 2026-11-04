@@ -32,6 +32,10 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="note" />
+
+<div id="attribution-discrepancies" />
+
 ## 归因差异
 
 移动归因生态系统中所有参与者使用的归因模型存在固有差异。这同样适用于 AppsFlyer 和主要应用商店、iTunes 应用商店和 Google Play。 **请注意**：

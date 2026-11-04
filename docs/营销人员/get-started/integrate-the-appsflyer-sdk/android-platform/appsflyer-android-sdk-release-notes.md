@@ -26,9 +26,13 @@ x-zendesk:
 
 <strong>AppsFlyer将按照原计划，在六个月的周期内，逐步停止对iOS和Android旧版SDK的支持。</strong>此机制旨在为广告主预留充足时间，以便开发团队提前规划和升级，确保应用功能不受影响。请及时升级到最新版SDK，体验最新功能、更高稳定性和持续的技术支持。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 为了确保平稳过渡，建议应用开发者在停止支持日期前完成SDK升级。
+
+<div id="end-of-support-vs-deprecated" />
 
 ## 停止支持与弃用的区别
 
@@ -36,6 +40,8 @@ x-zendesk:
 
 * **已弃用的版本**由于存在已知问题（如严重Bug），官方不再推荐使用的SDK版本。这些版本仍然可以向AppsFlyer发送数据，但不鼓励开发者继续使用，我们强烈建议您升级到受支持的版本。
 * **停止支持版本：** 不再进行任何数据衡量的SDK版本。在iOS和Android平台上，激活、应用打开和应用内事件都将无法被记录。来自这类版本的请求（除非被产品团队特别豁免）将收到400错误码，表示虽然SDK会继续尝试发送请求，但AppsFlye 服务器将拒绝处理，数据也不会被接收或存储。
+
+<div id="android-sdk-releases" />
 
 ## Android SDK版本说明
 
@@ -75,6 +81,8 @@ x-zendesk:
 | 6.10.1 | 2023-03-01 | <ul><li>修复了SDK在三星设备中初始化时导致应用关闭的问题。该问题的影响范围为接入了SDK V6.6.0及以上版本的应用。</li></ul> |
 | 6.10.0 | 2023-02-13 | <ul><li>新增AppsFlyer域名，用于SDK和AppsFlyer服务器之间的数据传输。</li><li>更改了发送空值或null值时的setHost API<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#sethost">详情请见此处说明。</Anchor></li></ul> |
 
+<div id="unsupported-sdk-versions" />
+
 ## 不再支持的SDK版本
 
 以下SDK版本已进入**停止支持**状态。这些版本将无法再向AppsFlyer发送任何数据，来自这些版本的所有请求都会被拒绝处理。
@@ -112,6 +120,8 @@ x-zendesk:
 | 6.1.0  <br />停止支持：2024-08-31 | 2020-11-09 | <ul><li>更新后支持<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl">Unified deep linking API</Anchor></li></ul> |
 | 6.0.1  <br />停止支持：2024-08-31 | 2020-10-28 | SDK维护 |
 | 6.0.0  <br />停止支持：2024-08-31 | 2020-10-14 | <ul><li>对SDK功能性和API做出了重大调整，包括方法弃用和方法名称变更。[详情请见此处说明。](/docs/appsflyer-android-sdk-release-notes#android-v600-release-notes)</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

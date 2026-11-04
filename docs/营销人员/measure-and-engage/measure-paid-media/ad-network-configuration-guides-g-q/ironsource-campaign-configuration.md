@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
+<div id="note" />
+
 > 📘 **注意事项**
 >
 > 由于ironSource支持所有类型的激活归因，因此该平台更希望广告主向其发送所有渠道（包括自然流量）的激活回传。请在对接配置的“事件来源”一栏选择“**所有媒体渠道，包括自然流量**”。
@@ -54,28 +56,40 @@ ironSource的配置窗口中有以下5个选项卡：渠道对接、归因链接
 
 <Accordion title="对接选项卡">
 
+<div id="activate-partners" />
+
 ### 启用渠道
 
 请在首次访问该页面时打开**启用该渠道**开关，然后就可以设置对接了。在您与该渠道合作期间，请确保该开关总是处于打开状态。  
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
 
+<div id="advanced-privacy" />
+
 #### 高级隐私保护
 
 启用<strong>高级隐私保护（iOS 14.5+）</strong>后，您可以<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#b-advanced-privacy">自行调整</Anchor>在回传和报告中与ironSource分享哪些信息。请注意：该功能仅适用于iOS应用。
+
+<div id="transaction-id" />
 
 ### 交易ID
 
 仅适用于iOS应用。打开**共享SKAN交易ID**开关就表示您允许AppsFlyer与ironSource<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">共享SKAdNetwork回传的交易ID</Anchor>。共享此ID后，ironSource就可以解析您的SKAdNetwork转化值。
 
+<div id="note-2" />
+
 > 📘 **注意事项**
 >
 > 如需启用ironSource与AppsFlyer的SKAN互通设置，请联系您的ironSource客户经理，让ironSource<Anchor target="_blank" href="https://developers.is.com/ironsource-mobile/general/universal-skan-reporting/#step-1">向MMP发送SKAN数据</Anchor>。
+
+<div id="general-settings" />
 
 ### 通用设置
 
 **Advertiser ID**
 
 ironSource通过专属的Advertiser ID（由6位数字组成）和密码与AppsFlyer对接。如果您还不知道您的Advertiser ID和密码，请先在ironSource后台查看这些信息，然后才能继续完成对接。如果您已经有这些信息，请将ID和密码复制粘贴到相应的字段中。
+
+<div id="install-and-re-engagement-attribution" />
 
 ### 激活和再互动归因
 
@@ -91,6 +105,8 @@ ironSource通过专属的Advertiser ID（由6位数字组成）和密码与AppsF
 1. 打开**浏览型再互动归因**开关。
 2. 在**归因链接选项卡**中配置[浏览](/docs/ironsource-campaign-configuration#attribution-link-tab)回溯窗口的时长。
 
+<div id="default-postbacks" />
+
 ### 默认回传
 
 用户完成激活和再互动后自动向ironSource发送回传。您可以在这个板块中设置可用回传的**事件来源**。
@@ -98,9 +114,13 @@ ironSource通过专属的Advertiser ID（由6位数字组成）和密码与AppsF
 若选择**仅该合作渠道**，则仅回传由ironSource带来的用户所完成的事件。  
 若选择**所有媒体渠道，包括自然流量**：将所有用户的相关事件数据都上报给ironSource。
 
+<div id="note-3" />
+
 > 📘 **注意事项**
 >
 > 请注意：由于ironSource支持所有类型的激活归因，因此该平台更希望广告主向其发送所有渠道（包括自然流量）的激活回传。请在对接配置的“事件来源”一栏选择**所有媒体渠道，包括自然流量**。
+
+<div id="in-app-event-postbacks" />
 
 ### 应用内事件回传
 
@@ -122,6 +142,8 @@ ironSource通过专属的Advertiser ID（由6位数字组成）和密码与AppsF
    1. 点击页面左上角渠道名称下方的应用名称，打开应用列表。
    2. 在下拉菜单中选择一个其他应用。
    3. 为选定应用完成对接设置。
+
+<div id="note-4" />
 
 > 📘 **注意事项**
 >
@@ -185,6 +207,8 @@ AppsFlyer通过API获取成本信息。详情请见<Anchor target="_blank" href=
 
 您可以使用权限开关向广告平台授权，让其处理与自己相关的配置：
 
+<div id="ad-network-permissions" />
+
 ### 广告平台权限
 
 * **允许配置对接**——允许该渠道设置对接选项卡（应用内事件回传除外）
@@ -196,6 +220,8 @@ AppsFlyer通过API获取成本信息。详情请见<Anchor target="_blank" href=
 * **允许访问Protect360面板**——仅访问该渠道的Protect360数据（需广告主事先开通该功能）
 
 如需进一步了解广告平台权限的详细说明，请参考<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#permissions-tab">此文档</Anchor>。
+
+<div id="agency-permissions" />
 
 ### 代理权限
 

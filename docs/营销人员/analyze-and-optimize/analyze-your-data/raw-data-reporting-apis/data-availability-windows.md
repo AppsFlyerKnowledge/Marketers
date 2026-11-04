@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **概要：** 数据可用性取决于报告类型和定义的可用性窗口。
 
+<div id="data-availability-windows" />
+
 ## 数据可用期限
 
 * **可用性窗口**和**数据保留**这两个术语的含义不同。<Anchor target="_blank" href="https://www.appsflyer.com/legal/services-privacy-policy/">数据保留</Anchor>是指原始数据在服务器上保留的时间，其时长超过可用窗口期。
 * 窗口期时长取决于您的套餐。
 * 本文不适用于<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers">Data Locker</Anchor>。
+
+<div id="raw-data-availability-window" />
 
 ### 数据可用期限
 
@@ -38,6 +42,8 @@ x-zendesk:
 | 归因到的转化 | 自然激活、非自然激活、再营销转化、卸载 | 在过去的 90 天中有 60 天 |
 | 应用内事件 | 自然应用内事件、非自然应用内事件、再营销应用内事件 | 在过去的 90 天中有 31 天 |
 
+<div id="aggregated-data-availability-window" />
+
 ### 汇总数据可用性窗口
 
 Pull API和汇总数据导出页面的数据可用性窗口期有限。窗口期的时长取决于报告类型，详见下表。
@@ -45,6 +51,8 @@ Pull API和汇总数据导出页面的数据可用性窗口期有限。窗口期
 | 报告 | 可用窗口期 |
 | --- | --- |
 | 汇总报告 | 25个月（2年+1个月），<Anchor target="_blank" href="/marketers/zh/docs/bulletin-aggregated-ltv-data-availability">从首次安装</Anchor>应用开始 |
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

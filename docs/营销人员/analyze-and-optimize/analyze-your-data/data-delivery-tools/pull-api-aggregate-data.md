@@ -34,9 +34,13 @@ x-zendesk:
 
 [![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
 
+<div id="looking-for-pull-api-raw-data" />
+
 > 👍 **需要Pull API原始数据？**
 >
 > 请参考<Anchor target="_blank" href="/marketers/zh/docs/pull-api-raw-data">此文档</Anchor>。
+
+<div id="pull-api-aggregate-data" />
 
 ## Pull API汇总数据
 
@@ -46,6 +50,8 @@ x-zendesk:
 * Pull API的其他功能包括：
   * 添加归因触点类型
   * 选择时区
+
+<div id="aggregate-performance-reports-available-via-pull-api" />
 
 #### 可通过Pull API拉取的汇总效果报告
 
@@ -103,6 +109,8 @@ x-zendesk:
 | 广告系列名称变更 | Pull API报告不支持广告系列名称变更 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

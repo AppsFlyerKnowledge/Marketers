@@ -24,18 +24,26 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了如何使用应用事件数据来衡量应用互动及用户质量，并优化投放。
 
+<div id="overview" />
+
 ## 速览
 
 广告主可通过应用内事件衡量用户与应用的互动，并比较不同渠道的用户质量，以打造高度契合的拉新策略。广告平台可通过实时发送的回传获得应用内事件数据，并使用该信息优化广告投放或投放CPA/CPE广告。<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">进一步了解富应用内事件</Anchor>。
+
+<div id="postback-in-app-event-selection" />
 
 ## 选择要回传的应用内事件
 
 广告主可以通过本文所述的回传设置，选择向广告平台发送哪些事件的回传。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 应用内事件也包括**被拦截的事件**，即被Protect360屏蔽的应用内事件，或不符合指定验证规则的事件。
 > * 如果**对接**选项卡中不存在**应用内事件回传**部分，说明该渠道尚未在其初步配置中设置AppsFlyer应用内事件记录。有此情况的渠道可以通过<Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">渠道支持微件</Anchor>联系AppsFlyer渠道团队，从而完成对接。
+
+<div id="in-app-event-postback-window" />
 
 ## 应用内事件回传窗口期
 
@@ -56,17 +64,25 @@ x-zendesk:
 | 1月15日 | 窗口期更改为20天。 |
 | 1月18日 | 用户再次完成购买事件。<br /><br />向广告平台发送该事件的回传，因为该事件仍在当前窗口期（20天）的范围内。 |
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 当选择 该[所有媒体来源，包括有机设置](#回传中的事件来源选项)时，此规则不适用。在这种情况下，配置此设置的合作伙伴会收到每个转化事件的回调，即使该事件被归因于其他合作伙伴，只要事件发生在为配置该设置的合作伙伴定义的回调窗口内。
+
+<div id="default-postback-window" />
 
 ### 默认回传窗口
 
 首次设置应用内事件回传时，窗口期默认为六个月。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 对于2019年7月30日之前开始的应用内事件回传，窗口期默认为“全周期”。也就是说，在这种情况下AF总是会向广告平台发送应用内事件回传。
+
+<div id="who-can-configure-postback-windows" />
 
 ### 回传窗口期配置权限
 
@@ -74,6 +90,8 @@ x-zendesk:
 * 代理商，前提是广告主事先向其开放**配置应用内事件回传**<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#代理权限">权限</Anchor>。  
   请注意<strong>：</strong>广告主和代理同时在同一个广告平台上投放时，可各自根据其与广告平台协定的计费方式分开设置单独的回传窗口期。
 * 合作渠道，前提是广告主事先向其开放**配置应用内事件回传**<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#permissions-tab">权限</Anchor>。
+
+<div id="event-mapping" />
 
 ## 事件映射
 
@@ -83,9 +101,13 @@ x-zendesk:
 
 因此，您必须对事件名称进行映射，这样才能确保广告主侧的事件能正确地匹配到对应的渠道事件。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > 在具体渠道配置页面的对接选项卡中设置的事件映射对标准回传和<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">SKAN回传</Anchor>都生效。
+
+<div id="mapping-methods" />
 
 ### 映射方式
 
@@ -94,6 +116,8 @@ x-zendesk:
 * [输入渠道事件ID](/docs/in-app-event-postback-configuration#h_c513e6d4-d46f-4070-a98d-1888a5ea939d)
 * [从列表中选择相关事件ID](/docs/in-app-event-postback-configuration#select-an-event-id-from-the-list)
 * [按原样发送事件（不映射）](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped)
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -106,6 +130,8 @@ x-zendesk:
 
 * **AppsFlyer事件**：从应用事件的下拉列表中选择一个事件。
 * **渠道映射事件**：在文本字段中输入与您的应用事件（即AppsFlyer事件）对应的渠道侧事件ID。
+
+<div id="note-5" />
 
 > 📘 **注意**
 >
@@ -138,6 +164,8 @@ x-zendesk:
 * 手动添加<strong>：</strong>选择具体的事件。
 * **发送所有事件（卸载和session除外）**：将您的所有事件都发送给渠道，但这不包括卸载、session（即应用打开）和`af_app_opened`事件。
 
+<div id="note-6" />
+
 > 📘 **注意**
 >
 > 为了防止广告主无意中与第三方分析平台分享过多信息, 我们已从2019年3月起移除了这些平台的**发送所有事件**（卸载和session除外）选项。在此之前配置的分析平台仍保留此设置选项。
@@ -166,12 +194,16 @@ x-zendesk:
 
 如需进一步了解事件映射，请参考<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">应用内事件回传</Anchor>说明文档。
 
+<div id="options-for-sending-postbacks" />
+
 ### 回传中的事件来源选项
 
 您可以为每个事件设置回传发送对象（在回传窗口内），共有以下两个选项：
 
 * **仅该合作渠道**：仅回传归因到该渠道的事件，也就是说完成这些事件的用户来自该渠道。
 * **所有媒体渠道，包括自然流量**：回传归因到任何渠道以及自然量的事件，也就是说完成这些事件的用户来自各个渠道。**请注意**：选择“所有媒体渠道，包括自然流量”时，对于归因到其他渠道的事件，其回传中不包含归因数据。
+
+<div id="data-to-include-in-the-postbacks" />
 
 ### 回传内容
 
@@ -182,11 +214,15 @@ x-zendesk:
 * **发送值与收入**：发送所有事件参数，包括收入（若有）。
 * 事件值、收入和净收入发送所有事件参数，包括收入值和净收入值（如果它们在事件中存在）。
 
+<div id="note-7" />
+
 > 📘 **注意**
 >
 > 选项需要一个**ROI360高级**订阅，并且仅适用于`af_purchase*`和`af_ars_*`事件。
 
 收入共享并不是必须配置的内容，但如果您想让广告平台帮助您优化投放并提升投放效果，建议您与其共享收入数据。请确保仅为事件值中带有`af_revenue`或`af_projected_revenue`的事件开放收入共享，否则广告平台会收到收入值为空的事件。
+
+<div id="share-revenue" />
 
 #### 共享收入
 
@@ -202,13 +238,19 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&content
 https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-monetary=(net-monetary)&content_id=(af_content_id)
 ```
 
+<div id="note-8" />
+
 > 📘 **注意**
 >
 > 选择**无值和无收入**或**值和无收入**时，相应的参数会被标记为N/A。
 
+<div id="tip" />
+
 > 📘 **提示**
 >
 > 您还可以配置您的应用内事件回调，以在标准收入（货币)参数中发送净收入，而不是毛收入。要获取此配置的访问权限，请联系您的客户成功经理（CSM）。
+
+<div id="h_01HBZCRNKGBEDSBZEY87KYQ60G" />
 
 > 📄 **示例**
 >
@@ -229,6 +271,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 > | **发送值与收入** | `{"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_content_type":"category_a"}&monetary=50.87&content_id=1234567` | 50.87 | USD | N/A |
 > | **事件值、收入和净收入** | `{"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_net_revenue":35.61,"af_content_type":"category_a"}&monetary=50.87&net-monetary=35.61&content_id=1234567` | 50.87 | USD | 35.61 |
 
+<div id="conditional-in-app-event-postbacks" />
+
 ### 带条件的应用内事件回传
 
 您可以将应用内事件映射到多个渠道，然后使用多重条件筛选这些事件的回传，仅将符合条件的事件发送给相应的渠道，包括SRN和数据分析平台。这一功能主要用于：
@@ -236,6 +280,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 * 优化人群分组、内容个性化以及改善用户留存
 * 避免发送多余数据
 * 保护用户隐私
+
+<div id="h_01HBZCRNKHRTMHP3JPFVCS8D6N" />
 
 > 📄 **示例**
 >
@@ -261,6 +307,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
    * 满足条件时的渠道映射事件（从[映射选项](/docs/in-app-event-postback-configuration#映射方式)中选择任意一种）
 4. 完成现有条件中的所有字段后，您可以添加其他条件。
 5. 点击**保存对接**。
+
+<div id="considerations" />
 
 #### 注意事项
 
@@ -289,10 +337,14 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 </Accordion>
 
+<div id="note-9" />
+
 > 📘 **注意**
 >
 > * 建议您在全面启用该功能前先通过测试应用或次要事件进行测试，了解其对投放优化的具体影响。
 > * 如需查看<Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview">回传内容</Anchor>，请下载原始数据回传报告。
+
+<div id="editing-multiple-events" />
 
 ### 批量编辑事件
 
@@ -313,6 +365,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 [![In-app_event_postbacks_en-us.png](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
 
+<div id="custom-events" />
+
 ### 自定义事件
 
 可映射的事件列表中仅显示SDK或S2S已经上报过的事件。如果下拉菜单中没有您想要映射的事件，可能是由下列情况造成的：
@@ -329,6 +383,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 4. 将该事件关联到该渠道中对应的事件标识符。
 5. 点击**保存对接**，确保将映射设置录入系统。
 
+<div id="note-10" />
+
 > 📘 **注意**
 >
 > * 在回传配置页面中添加自定义事件后，这一操作本身不能自动从您的应用中拉取这些事件。您必须先在SDK或S2S中配置这些事件，才能正常进行回传。详情请见<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview#发送事件">向AppsFlyer发送事件的方式</Anchor>说明。
@@ -339,6 +395,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 * 无法添加自定义事件
 * 仅在广告主添加事件并开放相关<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#permissions-tab">权限</Anchor>后才能查看和/或映射事件
+
+<div id="event-mapping-by-ad-networks" />
 
 ## 广告平台的事件映射
 
@@ -351,9 +409,13 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 广告平台获得权限后，就能按[在文本字段中输入事件ID](/docs/in-app-event-postback-configuration#映射方式)的方式进行事件映射。
 
+<div id="event-mapping-by-agencies" />
+
 ## 代理的事件映射
 
 广告主可为代理开放权限，让代理配置应用内事件回传。
+
+<div id="note-11" />
 
 > 📘 **注意**
 >
@@ -367,6 +429,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 4. 选择该代理可共享的具体事件。
 
 ![agency-events.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+
+<div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 
 > 📄 **相关文档**
 >

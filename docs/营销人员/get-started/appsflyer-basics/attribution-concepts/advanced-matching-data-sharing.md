@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概览：** 高级匹配数据共享功能允许将哈希用户标识符（例如电子邮件和电话号码）从 AppsFlyer 转发到选定的广告网络，从而使合作伙伴能够在没有设备 ID 的情况下将事件归因于广告互动。
 
+<div id="about-advanced-matching-data-sharing" />
+
 ## 关于高级匹配数据共享
 
 随着设备标识符越来越少，广告网络越来越依赖第一方数据来匹配广告互动。高级匹配数据共享通过以符合隐私规定的格式将哈希标识符转发给支持的合作伙伴来弥补这一差距。
@@ -30,6 +32,8 @@ x-zendesk:
 > 🚧 **重要提示！**
 >
 > 所有标识符在到达 AppsFlyer 之前都必须使用 SHA-256 进行哈希处理，无论是在设备上通过 SDK 还是在服务器端通过 S2S API。纯文本数据永远不会被接收、存储或转发，任何未通过验证的值都会在摄取时被丢弃。
+
+<div id="supported-partners" />
 
 ### 适用渠道：
 
@@ -46,6 +50,8 @@ x-zendesk:
 | Reddit（reddit\_int） | CAPI | 安装量、​​重新互动、应用内事件 |
 | Roku（rokuads\_​​int） | SRN + CAPI | 应用内事件 |
 
+<div id="the-end-to-end-flow" />
+
 ## 端到端流程
 
 以下是从获取标识符到将其传递给合作伙伴之间发生的过程：
@@ -59,6 +65,8 @@ x-zendesk:
 > 📘 **注意**
 >
 > 只有在启用高级匹配数据共享功能的情况下，才会将哈希标识符转发给合作伙伴。当开启/关闭功能关闭时，即使事件中存在标识符，也不会与该合作伙伴共享任何哈希数据。
+
+<div id="how-hashed-user-identifiers-reach-appsflyer" />
 
 ## AppsFlyer 如何获取哈希用户标识符
 
@@ -109,6 +117,8 @@ SDK 会拒绝无效值并报错，且不会将无效值发送到 AppsFlyer。
 
 </Tab>
 </Tabs>
+
+<div id="normalize-and-hash-identifiers" />
 
 ## 规范化和哈希标识符
 
@@ -179,6 +189,8 @@ SDK 会拒绝无效值并报错，且不会将无效值发送到 AppsFlyer。
 
 </Accordion>
 
+<div id="turn-on-advanced-matching-data-sharing" />
+
 ## 启用高级匹配数据共享
 
 高级匹配数据共享是按合作伙伴和应用程序控制的，必须为每个网络明确启用。
@@ -195,6 +207,8 @@ SDK 会拒绝无效值并报错，且不会将无效值发送到 AppsFlyer。
 > 📘 **注意**
 >
 > 关闭高级匹配数据共享功能后，将立即停止与该合作伙伴的哈希数据共享。其他集成设置，包括回传和事件数据，不受影响。
+
+<div id="privacy-and-data-handling" />
 
 ## 隐私和数据处理
 

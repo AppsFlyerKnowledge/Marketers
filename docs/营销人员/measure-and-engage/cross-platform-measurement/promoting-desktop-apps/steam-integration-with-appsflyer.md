@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **概要： 概要：本文介绍了Steam上的游戏/应用与AppsFlyer的对接方式。对接完成后，您就可以获得Steam广告的归因和事件数据。Steam对接支持针对用户Steam设备上的Steam应用进行归因和事件记录。**
 
+<div id="about-steam-attribution" />
+
 ## Steam归因简介
 
 Steam平台可在Windows和Mac设备、Steam Deck及其他以Steam为操作系统的设备中运行。
 
 在PC端运行的应用可以通过S2S API或SDK与AppsFlyer对接，从而获得归因数据和投放效果指标，了解应用打开和应用内事件的流量来源和带量广告。这些关键信息能够帮助营销人员评估并优化其市场推广工作。
+
+<div id="example-attribution-flow" />
 
 ### 归因链接示例
 
@@ -40,6 +44,8 @@ Steam\_user\_journey.jpg
    ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
 3. <span id="marketing-touchpoint"></span>Steam应用页面即您的Steam商店页面，其中包含可供用户下载的Steam应用。
 4. 游戏激活游戏激活：用户激活游戏时即会触发归因，并开始记录应用内事件和应用打开（session）。
+
+<div id="integration-procedures" />
 
 ## 对接流程
 
@@ -168,12 +174,18 @@ Steam\_user\_journey.jpg
 </Table>
 
 
+<div id="traits-and-limitations" />
+
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ## 特点与局限性
 
 | 特点 | 说明 |
 | --- | --- |
 | 再营销 | 目前尚不支持 |
 | 成本数据 | 必须通过邮件<Anchor target="_blank" href="/marketers/zh/docs/import-cost-data">上传</Anchor>的方式来发送成本数据。 |
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了自归因平台（简称SRN）的归因方式、深度链接、iOS应对方案，并提供常见问题答疑。
 
+<div id="srns-integrated-with-appsflyer" />
+
 ## 与AppsFlyer对接的SRN
 
 | **SRN** | **Logo** |
@@ -49,6 +51,8 @@ x-zendesk:
 
 **请注意：** 各SRN都有其自己的<Anchor target="_blank" href="/marketers/zh/docs/user-level-data-retention">用户级别数据使用和保留政策</Anchor>。
 
+<div id="attribution" />
+
 ## 归因
 
 非SRN平台通过归因链接向AppsFlyer上报事件，而SRN则使用设备ID对AppsFlyer发出的激活信息进行匹配，从而完成自归因。在iOS应用中，相关流量的归因通过<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-solution-guide">SKAN</Anchor>和<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">汇总层级的高级隐私保护机制</Anchor>完成。
@@ -57,6 +61,8 @@ x-zendesk:
 
 * 末次触达和多点触达方法论。
 * AppsFlyer的标准归因逻辑，用于对相关的展示和点击数据进行排序。
+
+<div id="how-does-attribution-work-with-srns" />
 
 ### SRN的归因原理
 
@@ -68,9 +74,13 @@ SRN会通过以下方式向AppsFlyer上报新增激活和应用内事件等数�
 
 AppsFlyer完成归因后，会该<Anchor target="_blank" href="/marketers/zh/docs/user-level-data-retention#渠道的数据保留期限">SRN的数据保留期限</Anchor>内向其发送应用内事件回传。
 
+<div id="how-does-attribution-work-with-advanced-srns" />
+
 ### 高级SRN的归因原理
 
 高级SRN的归因原理与常规SRN相同，但高级SRN可以在没有设备ID（IDFA）的情况下对广告交互行为进行归因，这是通过<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-knowledge-base-glossary#aggregated-advanced-privacy">汇总层级的高级隐私保护j</Anchor>机制完成的。某些情况下，AF会通过双授权用户（在广告主应用和媒体侧应用中都授权允许广告跟踪）的ID匹配来完成归因，而对于部分高级SRN，AF则会通过API互通点击和展示数据，并根据<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-attribution-model#probabilistic-modeling">概率建模</Anchor>来完成归因。
+
+<div id="install-attribution" />
 
 ### 激活归因
 
@@ -83,6 +93,8 @@ AppsFlyer完成归因后，会该<Anchor target="_blank" href="/marketers/zh/doc
   * 相关用户是否带有设备ID（Advertising ID）。
 * 如果同时符合这两个条件，AppsFlyer就会使用相关设备ID向SRN发出查询请求。
 * AppsFlyer在考量SRN的认领响应后得出归因结果。
+
+<div id="install-attribution-examples" />
 
 #### 激活归因示例
 
@@ -118,6 +130,8 @@ AppsFlyer会向广告主提供助攻数据（即在激活之前发生但未获�
 
 </Accordion>
 
+<div id="attribution-windows" />
+
 ### 归因窗口期
 
 归因窗口期点击型和浏览型回溯窗口。 部分SRN会按CPM（千次展示成本）和CPA（特定行为成本）计价模式向广告主收取激活流量的费用，这些费用是根据1-28天的期限内发生的点击或展示来计算的。
@@ -130,6 +144,8 @@ AppsFlyer会向广告主提供助攻数据（即在激活之前发生但未获�
 * 这是因为AppsFlyer会根据广告主设置的条件上报真实的eCPI和eCPA。
 * 由于SRN通常会设定自己的计费条款，因此可收获短期利益。但广告主可通过第三方归因服务商来更正计费结果。
 
+<div id="deep-linking-with-srns" />
+
 ## 在SRN中使用深度链接
 
 如需让用户点击链接后触发应用调起，您仅需设置App Link、Universal Link或URI scheme即可。但如需通过深度链接或延迟深度链接将用户引导到应用中的特定页面，各SRN会使用自己特有的方法来实现，不涉及AppsFlyer的深度链接方法。
@@ -141,6 +157,8 @@ AppsFlyer会向广告主提供助攻数据（即在激活之前发生但未获�
 <Accordion title="直接深度链接">
 
 用户设备平台执行深度链接时，不会调用AppsFlyer的深度链接方法，而是完成SRN的直接深度链接。在下文示例中，点击广告的现有用户会通过Facebook的方法直接跳转到应用内的具体页面，而新用户则会根据AppsFlyer得到的转化数据获得同样的体验。详情请见<Anchor target="_blank" href="/marketers/zh/docs/meta-ads-faq#who-needs-facebooks-sdk">在Meta ads中使用OneLink实现深度链接</Anchor>
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -165,6 +183,8 @@ Google Ads、Snapchat和TikTok for Business使用实际深度链接值来支持�
 
 </Accordion>
 
+<div id="ios-implications" />
+
 ## iOS政策的应对方式
 
 大部分SRN都支持SKAN，并与AppsFlyer做了必要的对接。
@@ -174,6 +194,8 @@ Google Ads、Snapchat和TikTok for Business使用实际深度链接值来支持�
 <Accordion title="iOS 14.5中的SRN归因方式">
 
 从iOS 14.5开始，如果SRN带来的用户在广告主应用和媒体侧应用中都完成了ATT授权（<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-knowledge-base-glossary#dual-consent">即双授权用户</Anchor>），则<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN面板</Anchor>和传统面板中都会显示这些SRN激活。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -192,12 +214,16 @@ SRN在收到事件回传后，需要使用其中包含的设备ID信息，才能
 * 发送到SRN的事件回传数量减少
 * SRN和AppsFlyer之间的事件回传数量存在差异——这是因为AppsFlyer会记录所有事件。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 在没有IDFA的情况下，激活、应用打开或应用内事件的回传不会被发送到SRN。[但在部分场景中，AppsFlyer会在设备ID缺失时仍向SRN发送回传](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)。
 > * 广告点击平台不受此限制影响，因为这些平台不使用设备ID，而是使用自己的交易ID（transaction ID）根据事件回传中的信息进行自归因。
 
 </Accordion>
+
+<div id="faq" />
 
 ## 常见问题解答
 
@@ -236,6 +262,8 @@ SRN应针对特定人群定向投放广告，但无法总是确保定向的准�
 
 **结论：** 如果在投放拉新广告时获得了再营销事件，说明发生了预算浪费。
 
+<div id="is-mistargeting-a-problem" />
+
 #### 定向误差问题大吗？
 
 AppsFlyer的数据分析师考察了某月内Meta ads中的**拉新**广告投放情况。
@@ -246,6 +274,8 @@ AppsFlyer的数据分析师考察了某月内Meta ads中的**拉新**广告投�
 * **结论：在SRN的拉新投放中，有10%看到广告的用户是现有用户。**
 
 [![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+
+<div id="solving-the-mistargeting-problem" />
 
 #### 定向误差的解决方式
 

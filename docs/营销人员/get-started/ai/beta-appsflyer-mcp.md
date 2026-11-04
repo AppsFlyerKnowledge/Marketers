@@ -36,6 +36,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="what-is-appsflyer-mcp" />
+
 ## 什么是AppsFlyer MCP？
 
 AppsFlyer MCP可帮助您将LLM安全连接到AppsFlyer平台，以便您可以通过简单的对话与营销数据进行交互。借助AppsFlyer MCP，您可以基于实时数据做出更快速、更明智的决策。
@@ -47,13 +49,19 @@ MCP可以帮助您：
 * 审核OneLink模板、链接和受众连接并对其进行故障排除。
 * 检索配置指南或产品文档。
 
+<div id="set-up-appsflyer-mcp" />
+
 ## 设置AppsFlyer MCP
 
 AppsFlyer MCP 可以连接聊天助手、CLI、IDE、自动化平台和自托管代理。设置取决于你使用的客户端及其支持的认证方式。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 有些平台可能需要管理员批准才能连接MCP服务器。如果你看不到下面描述的设置选项，请联系你的IT或工作空间管理员。
+
+<div id="authentication-methods" />
 
 ## 认证方法
 
@@ -64,11 +72,15 @@ AppsFlyer MCP 支持两种认证方式。使用与你计划连接 AppsFlyer MCP 
 | 基于浏览器的OAuth登录 | Gemini CLI、Copilot CLI、ChatGPT、Claude.ai 和 Claude Desktop | 临时提问、探索性分析和一次性报告 | 自连接起有效期为7天。会话结束时需要重新认证 |
 | 持有令牌认证 | Claude 代码、自动化平台、自托管代理及集成 | 自动化、定时任务、后台代理和非交互式工作流程 | 有效直到被人工撤销 |
 
+<div id="browser-based-oauth-login" />
+
 ### 基于浏览器的OAuth登录
 
 基于浏览器的OAuth登录允许您通过浏览器进行交互式连接。连接后，MCP客户端会打开浏览器窗口，要求你登录AppsFlyer。在你批准访问权限后，客户端会连接到你的AppsFlyer账户。
 
 将此方法用于互动会议、探索性分析和一次性报告。
+
+<div id="bearer-token-authentication" />
 
 ### 持有令牌认证
 
@@ -82,6 +94,8 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 
 要创建令牌，请前往 **账户菜单 > 安全中心 > AppsFlyer 代币** 并创建一个MCP令牌。
 
+<div id="set-up-by-client" />
+
 ## 由客户设置
 
 <div id="h_claude-ai-and-claude-desktop" />
@@ -90,9 +104,13 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 
 使用 Claude.ai 和Claude桌面版，并使用基于浏览器的OAuth登录。这些说明适用于 Claude 的网页版和桌面版。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 对于团队和企业计划用户，只有所有者或管理员可以添加全组织的集成。
+
+<div id="set-up-claude-chat-and-cowork" />
 
 #### 设置 Claude.ai 和Claude桌面
 
@@ -108,6 +126,8 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 8. 在连接器部分中，单击AppsFlyer连接旁边的**连接** 。
 9. 按提示登录AppsFlyer。
 
+<div id="test-the-claude-connection" />
+
 #### 测试Claude连接
 
 1. 在任意聊天窗口中，点击设置按钮。   
@@ -121,6 +141,8 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 <Accordion title="克劳德密码">
 
 使用Claude Code配合持有令牌认证进行自动化、调度和非交互式工作流程。
+
+<div id="add-appsflyer-mcp-to-claude-code" />
 
 #### 将 AppsFlyer MCP 添加到 Claude Code
 
@@ -213,6 +235,8 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 * [定制GPT](#添加appsflyer自定义gpt):最适合简单访问AppsFlyer助理。
 * [ChatGPT中的MCP](#在chatgpt中添加appsflyer-mcp):最适合想将 AppsFlyer 数据带入 ChatGPT 对话的用户。
 
+<div id="add-the-appsflyer-custom-gpt" />
+
 #### 添加AppsFlyer自定义GPT
 
 1. 咔哒 <Anchor target="_blank" href="https://chatgpt.com/g/g-68b6a92eb8e0819194cbb81e1e635c0d-appsflyer">AppsFlyer 定制 GPT</Anchor>.
@@ -224,7 +248,11 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
    Show me my Meta campaign performance from last week.
    ```
 
+<div id="add-appsflyer-mcp-in-chatgpt" />
+
 #### 在ChatGPT中添加AppsFlyer MCP
+
+<div id="note-3" />
 
 > 📘 **注意**
 >
@@ -275,6 +303,8 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
    What apps are in my AppsFlyer account?
    ```
 
+<div id="troubleshoot-gemini-cli-authentication" />
+
 #### 排查Gemini CLI认证
 
 如果认证失败，启动 Gemini CLI 的调试模式：
@@ -292,6 +322,8 @@ GEMINI_LOG_LEVEL=debug gemini
 <Accordion title="Copilot CLI">
 
 使用Copilot CLI并基于浏览器的OAuth登录。
+
+<div id="add-appsflyer-mcp-to-copilot-cli" />
 
 #### 将 AppsFlyer MCP 添加到 Copilot CLI
 
@@ -340,6 +372,8 @@ GEMINI_LOG_LEVEL=debug gemini
 
 MCP 令牌是一个账户级别的持有人令牌，继承创建它的管理员的权限。你可以从以下渠道访问和管理它 <Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens">Security Center > AppsFlyer 代币</Anchor>.
 
+<div id="mcp-connection-details" />
+
 #### MCP连接详情
 
 要将您的自动化或代理平台连接到 AppsFlyer MCP，请使用以下配置：
@@ -348,9 +382,13 @@ MCP 令牌是一个账户级别的持有人令牌，继承创建它的管理员�
 * **基础网址 / 端点：** `https://mcp.appsflyer.com/auth/mcp`
 * **持有人代币：** 你的MCP令牌
 
+<div id="note-4" />
+
 > 📘 **注意**
 >
 > 切勿公开分享或发布你的代币。把它当作私人凭证。你的MCP令牌可以直接访问你的MCP环境。
+
+<div id="example-use-cases" />
 
 #### 使用场景示例
 
@@ -375,6 +413,8 @@ MCP 令牌是一个账户级别的持有人令牌，继承创建它的管理员�
 
 AppsFlyer MCP 一次连接一个 AppsFlyer 账户。
 
+<div id="switch-between-accounts-browser-based-oauth" />
+
 #### 在账户间切换（基于浏览器的OAuth）
 
 如果你在同一邮箱下管理多个AppsFlyer账户，你可以切换MCP连接的账户：
@@ -383,6 +423,8 @@ AppsFlyer MCP 一次连接一个 AppsFlyer 账户。
 2. 在你的MCP客户端重新登录。
 
 你不能在同一次连接中并排查看或查询多个账户。
+
+<div id="connect-multiple-accounts-simultaneously-bearer-token" />
 
 #### 同时连接多个账户（持有人令牌）
 
@@ -395,11 +437,17 @@ AppsFlyer MCP 一次连接一个 AppsFlyer 账户。
 
 </Accordion>
 
+<div id="use-appsflyer-mcp" />
+
 ## 使用 AppsFlyer MCP
+
+<div id="use-cases-and-prompts" />
 
 ### 使用场景与示例提示
 
 AppsFlyer MCP为您提供了一套工具和资源，旨在帮助您获取营销分析、效果洞察，并执行配置任务。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -641,6 +689,8 @@ AppsFlyer MCP为您提供了一套工具和资源，旨在帮助您获取营销�
 
 </Accordion>
 
+<div id="other-information" />
+
 ## 其他信息
 
 <div id="h_privacy-and-security" />
@@ -649,13 +699,19 @@ AppsFlyer MCP为您提供了一套工具和资源，旨在帮助您获取营销�
 
 AppsFlyer MCP 允许您选择的 AI 工具基于现有权限查询 AppsFlyer 数据。
 
+<div id="data-processing" />
+
 #### 数据处理
 
 AppsFlyer MCP作为安全代理，它实时获取 AppsFlyer 数据，返回回答查询所需的数据。AppsFlyer MCP 不会长期归档或存储查询结果。
 
+<div id="credentials" />
+
 #### 登录信息
 
 你的 AppsFlyer 登录让 AppsFlyer MCP 代表你调用 API。你的AppsFlyer凭证不会与AI工具共享。
+
+<div id="permissions" />
 
 #### 授权
 
@@ -663,15 +719,21 @@ AppsFlyer MCP 使用您已有的 AppsFlyer 权限。用户只能访问他们已�
 
 没有单独的权限层来配置MCP访问。
 
+<div id="read-and-write-access" />
+
 #### 只读访问
 
 AppsFlyer MCP 目前仅为读取和查询。没有你，它不会在 AppsFlyer 里采取行动。
+
+<div id="ai-provider-data-usage" />
 
 #### 人工智能提供商数据的使用
 
 AppsFlyer MCP检索的数据可能会与您选择的AI工具共享，以回答您的疑问。仅共享生成响应所需的数据。
 
 AppsFlyer 无法控制您所选的 AI 工具是否存储、处理或从数据中学习。在连接AppsFlyer MCP之前，请先阅读您的AI服务提供商的条款和数据使用政策。
+
+<div id="certifications" />
 
 #### 认证
 
@@ -712,6 +774,8 @@ AppsFlyer 获得了 ISO 27001 和 SOC 2 认证。ISO 42001认证正在进行中�
 | 禁用MCP | <ul><li>MCP 默认启用，管理员可以关闭 **账户与个人资料>人工智能能力**.</li><li>禁用 MCP 后，用户无法通过外部 AI 工具中的 MCP 访问 AppsFlyer 数据。</li><li>现有连接可能会持续到当前会话结束。</li><li>禁用MCP不会影响AppsFlyer中的常规API连接或其他AI功能。</li><li>如果有 MCP 令牌正在使用，请先删除它 **Security Center > AppsFlyer 代币**.</li></ul> |
 
 </Accordion>
+
+<div id="troubleshoot-connection-issues" />
 
 ## 排查连接问题
 

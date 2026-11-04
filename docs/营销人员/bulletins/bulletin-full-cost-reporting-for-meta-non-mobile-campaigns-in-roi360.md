@@ -29,7 +29,11 @@ x-zendesk:
 | **What you need to do** | If you apply in-house logic to complete the cost from Meta in the Channel and Geo reports, remove this logic after the update goes live to avoid over-reporting the cost. |
 | **What you should know** | **Channel report**<ul><li>Change: Today, ROI360 measures only the cost that clearly maps to a mobile app (iOS or Android). After this update, ROI360 reports the total cost of Meta non-mobile campaigns and resolves the apps using attribution data and cost-split logic. This closes the known discrepancy with Meta.</li><li>Impact: The total cost in the Channel report increases at the campaign and app levels to match your actual Meta spend.</li></ul>For an example, see the [Channel report example](#REPLACE_CHANNEL_EXAMPLE_ID).<br /><br />**Geo report**<ul><li>Change: Today, geo-level cost for Meta non-mobile campaigns is available only to beta customers. After this update, geo-level cost is available to all customers in the dashboard and in the Cost ETL Geo report. ROI360 allocates costs across geos and attributed apps using cost-split logic.</li><li>Impact: The total cost measured from Meta with Geo granularity increases at the campaign and app levels.</li></ul>For an example, see the [Geo report example](#REPLACE_GEO_EXAMPLE_ID).<br /><br />**Clicks metric**<ul><li>Change: **After this update, ROI360 uses a different Meta metric for clicks.** Today, ROI360 uses Meta's Inline clicks metric, which measures only the number of clicks on links to selected destinations or experiences, on or off Meta-owned properties. After this update, ROI360 uses Meta's clicks metric, which measures the total number of ad clicks. This can include inline link clicks, page likes, post comments, and event responses.</li><li>Impact: Reported clicks from Meta increase.</li></ul> |
 
+<div id="examples" />
+
 ## Examples
+
+<div id="channel-report-example" />
 
 ### Channel report example
 
@@ -62,6 +66,8 @@ ROI360 reports only the cost that clearly maps to mobile apps. It doesn't report
 | **Total** |  | **$350** |
 
 ROI360 reports all the cost at the campaign level, aligned with Meta reporting. It splits the cost across the attributed apps (mobile and non-mobile).
+
+<div id="geo-report-example" />
 
 ### Geo report example
 

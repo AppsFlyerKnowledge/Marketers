@@ -54,10 +54,14 @@ x-zendesk:
 
 与AD\_NETWORK的对接仅支持默认回传中的安装事件。
 
+<div id="activate-partner" />
+
 ### 渠道激活
 
 **第一次访问**时，需要打开***激活合作伙伴***开关以开启对接选项卡内的配置参数。只要仍与该合作伙伴合作，这个开关必须为ON。   
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
+
+<div id="default-postbacks" />
 
 ### 默认回传
 
@@ -72,6 +76,8 @@ x-zendesk:
 请注意, AppsFlyer 不会保存生成的合作伙伴归因链接。
 
 该选项卡可分成几个不同部分：
+
+<div id="attribution-link-parameters" />
 
 ### 归因链接参数
 
@@ -94,6 +100,8 @@ x-zendesk:
 
 只需在新参数框中输入, 即可将任何其他参数添加到归因链接中。更多详情, 请参阅 **<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">AppsFlyer 归因链接结构和参数</Anchor>。**
 
+<div id="click-through-attribution" />
+
 ### 点击型归因
 
 可以拖曳这个滑块来设置**点击到安装时间的最长时间**。只有发生在归因窗口期内的安装（首次启动）才有可能会被归因给Twitter。
@@ -103,6 +111,8 @@ x-zendesk:
 点击查看更多关于<Anchor target="_blank" href="/marketers/zh/docs/set-up-lookback-windows">点击归因窗口</Anchor>的信息。
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+
+<div id="attribution-link" />
 
 ### 归因链接
 
@@ -133,6 +143,8 @@ x-zendesk:
 您可以在这个选项卡中为Twitter开放各种权限。请注意：即使您停用了ironSource归因，仍可以使用授权选项卡向ironSource开放各类权限。
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### 广告平台权限
 

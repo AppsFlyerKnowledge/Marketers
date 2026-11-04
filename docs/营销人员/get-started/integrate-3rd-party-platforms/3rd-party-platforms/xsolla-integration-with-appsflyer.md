@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** Xsolla是AppsFlyer的对接合作伙伴，专注于游戏电商技术，尤其擅长处理非传统应用商店平台的支付流程。通过与AppsFlyer的对接，Xsolla可将Web Shop中的购买与收入数据自动回传至AppsFlyer，呈现完整ROAS和LTV数据，包括在Xsolla Web Shop中完成的交易。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > <Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions#媒体渠道数据限制">部分渠道</Anchor>限制第三方的数据共享。 这时，我们不会向渠道发送受限事件的回传，不论您是否在回传配置部分选择了该事件。
+
+<div id="integration-types" />
 
 ## 对接类型
 
@@ -36,6 +40,8 @@ x-zendesk:
 
 * 设置对接前，请务必先<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations#联系相关渠道">联系该渠道</Anchor>并在其平台上开设账户。
 * 为确保对接正常运行，请将Customer User ID（CUID）与AppsFlyer共享，并确保CUID与提供给Xsolla的用户ID一致。只有完成这一步骤，用户才能成功登录Xsolla的Web Shop，其数据才能被准确归因并同步到AppsFlyer中。
+
+<div id="setting-up-the-tech-partner-integration" />
 
 ## 设置技术合作伙伴对接
 
@@ -57,13 +63,19 @@ x-zendesk:
 
 <Accordion title="渠道对接选项卡">
 
+<div id="activate-partner" />
+
 #### 启用渠道
 
 请在首次访问该页面时打开**启用该渠道**开关，然后就可以设置对接了。在您与Xsolla合作期间，请确保该开关总是处于打开状态。详情请见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">渠道启用说明</Anchor>。
 
+<div id="advanced-privacy" />
+
 #### 高级隐私保护
 
 iOS应用的面板中会显示<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">高级隐私</Anchor>开关，此开关打开时可限制渠道共享用户标识符。请注意：如果您在应用配置中打开了<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">汇总层级的高级隐私</Anchor>开关，AppsFlyer会默认开启并锁定**高级隐私（适用于iOS 14.5及以上版本）**。
+
+<div id="default-postbacks" />
 
 #### 默认回传
 
@@ -74,6 +86,8 @@ iOS应用的面板中会显示<Anchor target="_blank" href="/marketers/zh/docs/a
 * **所有媒体渠道，包括自然流量：** 发送来自所有渠道以及自然流量的激活回传。
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### 应用内事件回传
 
@@ -128,6 +142,8 @@ Xsolla的渠道对接不支持广告收入数据。
 
 </Accordion>
 
+<div id="setting-up-the-pba-web-sdk-integration" />
+
 ## 设置PBA Web SDK对接
 
 对接后，您可以在PBA面板中查看LTV（数据与相关洞察，分析应用表现。
@@ -149,6 +165,8 @@ Xsolla的渠道对接不支持广告收入数据。
    5. 在**AppsFlyer Dev Key**字段中，输入 AppsFlyer 网络开发者密钥。请参见下文了解如何[在 AppsFlyer 中获取密钥](/docs/xsolla-integration-with-appsflyer#在appsflyer中查找网络开发者密钥)。
    6. 点击**连接**。
 
+<div id="finding-the-web-dev-key-in-appsflyer" />
+
 #### 在AppsFlyer中查找网络开发者密钥
 
 1. 在**我的应用**页面，点击**查看品牌套件**。
@@ -156,7 +174,11 @@ Xsolla的渠道对接不支持广告收入数据。
 
 ![xsolla-brand-bundle2.jpg](https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg)
 
+<div id="identifying-xsollas-events-in-appsflyer" />
+
 ## 在AppsFlyer中识别Xsolla的事件
+
+<div id="tech-partner-s2s-integration" />
 
 ### 技术合作伙伴 (S2S) 对接方式：
 
@@ -166,6 +188,8 @@ Xsolla会向AppsFlyer发送2类应用内事件：
 * **xsolla-billing-refund** - 代表用户发起了购买退款
 
 这两个事件都会作为应用内事件出现在AppsFlyer中。
+
+<div id="web-sdk-integration" />
 
 ### Web SDK对接方式：
 
@@ -179,6 +203,8 @@ Xsolla的网页事件将展示在PBA的网页归因数据中，并可在DataLock
 PC / 主机端 - 目前，AppsFlyer与Xsolla的对接不支持PC或主机端应用。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

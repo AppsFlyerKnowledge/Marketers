@@ -27,13 +27,19 @@ x-zendesk:
 
 <Embed title="[封闭测试] 利用 AI 预测受众触达高意向用户" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
 
+<div id="about-predictive-audiences" />
+
 ## 关于预测受众
 
 作为 AppsFlyer <Anchor target="_blank" href="/marketers/zh/docs/audiences-guide">Audiences</Anchor> 的一部分，“预测受众”功能可帮助您创建由人工智能驱动的受众群体，这些用户最有可能采取关键行动。利用该功能预测未来7天内最有可能购买的用户，从而将营销活动聚焦于购买意愿强烈的用户，从而提升营销活动效率。
 
 您可以调整意向范围，从而创建一个意向更强烈的精确定众，或一个覆盖面更广的受众群体，然后将该受众与合作伙伴对接以进行营销激活。受众创建完成后，系统会每天更新，并自动持续推送给您关联的合作伙伴。
 
+<div id="create-a-predictive-audience" />
+
 ## 创建预测受众
+
+<div id="prerequisites" />
 
 ### 前期准备
 
@@ -81,6 +87,8 @@ x-zendesk:
 
    **预计受众规模**会根据您的选择实时更新。
 
+<div id="compare-audiences-optional" />
+
 #### 比较受众（可选）：
 
 “比较受众”是一项可选功能，可让您将预测受众与一个或多个现有受众进行比较。它允许您对比各项关键绩效指标（KPI）的表现，例如广告投资回报率（ROAS）和转化率。您可以选择任意受众群体进行对比；但目前仅提供与 Facebook、TikTok、Google 或 Snap 关联的广告系列的表现数据。
@@ -106,6 +114,8 @@ x-zendesk:
 创建完成后，您的新预测受众将显示在 **“受众**”表格中。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

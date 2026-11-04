@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了iOS和安卓平台中消息推送型广告的衡量方式。
 
+<div id="overview" />
+
 ## 速览
 
 AppsFlyer可以衡量所有推送服务平台的推送消息广告，以及直接通过Firebase Cloud Messaging或Apple Push Notification Services（APNS）投放的广告。
@@ -35,6 +37,8 @@ AppsFlyer可以衡量所有推送服务平台的推送消息广告，以及直�
 * 在推送消息的有效信息（payload）中发送带有`af`参数JSON对象（早前方式）。
 
 配置完成后，您就可以在数据总览面板的“统一”或“再营销”视图中看到相关转化。
+
+<div id="how-does-it-work" />
 
 ## 原理
 
@@ -48,9 +52,13 @@ AppsFlyer可以衡量所有推送服务平台的推送消息广告，以及直�
 
 如果您使用OneLink并为其配置了应用中具体页面的跳转，上述链路会触发深度链接流程。
 
+<div id="prerequisites" />
+
 ## 前期准备
 
 在进入下一个环节之前，请先确保您已在相关应用中<Anchor target="_blank" href="/marketers/zh/docs/basic-sdk-integration-guide">接入AppsFlyer SDK</Anchor> **，并且**该应用可以接收推送消息。
+
+<div id="steps" />
 
 ## 步骤
 
@@ -67,12 +75,16 @@ AppsFlyer可以衡量所有推送服务平台的推送消息广告，以及直�
 
 首先，请使用以下任一方式创建一个带有归因数据的推送消息。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 在下文示例中，我们使用Firebase作为消息推送平台。但本文说明适用于任何推送服务平台，各平台之间一般没有或仅有略微差异。详情请参考您使用的推送服务平台所提供的说明问文档。
 
 <Tabs>
 <Tab title="OneLink（推荐方式）">
+
+<div id="using-onelink-recommended" />
 
 #### **OneLink（推荐方式）**
 
@@ -81,6 +93,8 @@ AppsFlyer可以衡量所有推送服务平台的推送消息广告，以及直�
 1. 创建一条<Anchor target="_blank" href="/marketers/zh/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">用于再营销的OneLink链接，并完成相应设置。</Anchor>  
    **请注意**：OneLink长链和短链均可使用。
 2. 在推送消息的自定义数据中，添加该Onelink链接，确保链接中包含您想要发送到AppsFlyer的归因数据。
+
+<div id="note-1" />
 
 > 📄 **Firebase示例**
 >
@@ -94,7 +108,11 @@ AppsFlyer可以衡量所有推送服务平台的推送消息广告，以及直�
 
 <div id="using-json-legacy" />
 
+<div id="using-json" />
+
 #### **JSON（早前方式）**
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -105,6 +123,8 @@ AppsFlyer可以衡量所有推送服务平台的推送消息广告，以及直�
 * `pid`
 * `is_retargeting`
 * `c`
+
+<div id="note-3" />
 
 > 📄 **Firebase示例**
 >

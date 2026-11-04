@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 概要：AppsFlyer可以通过预装referrer将激活归因到预装推广。预装推广是指营销人员与设备生产商（OEM）、移动运营商和应用推广平台合作，在设备出厂或首次启动时将其应用预装到设备中。
 
+<div id="overview" />
+
 ## 速览
 
 在预装推广场景中，设备生产商（OEM）、移动运营商和应用推广平台会在触达用户之前就将相关应用预先安装到设备上。预装有两种实现方式，可以由OEM在设备出厂时完成，也可以由服务商在设备首次激活时完成。
@@ -35,9 +37,13 @@ x-zendesk:
 * 支持应用更新和重新下载（redownload）数据的呈现
 * 显示并衡量设备初次激活以及应用首次打开，这样您就可以了解具体渠道的预装设备激活数量，以及相关应用的首次打开时间。
 
+<div id="partners-supporting-preload-referrer-campaigns" />
+
 ## 支持预装referrer投放的渠道
 
 <table><thead><tr><th rowspan="2">Partner</th><th rowspan="2">PID</th><th colspan="2">预装referrer投放选项<a href="./set-up-appsflyer-preload-referrer-attribution#预装referrer选项"><span>了解详情</span> </a> </th></tr><tr><th>预装推广</th><th>点击下载</th></tr></thead><tbody><tr><td><a href="#特点与局限性">Samsung</a></td><td>samsung_int</td><td><span>✓</span></td><td> </td></tr><tr><td>Digital Turbine On Device</td><td>digitalturbine_int</td><td><span>✓</span></td><td>即将更新</td></tr><tr><td>Aura from Unity</td><td>aura_int</td><td><span>✓</span></td><td>即将更新</td></tr><tr><td>Appnext</td><td>appnext_int</td><td><span>✓</span></td><td>即将更新</td></tr><tr><td>Glance<br/> </td><td>glance_int</td><td><span>✓</span></td><td><span>✓</span></td></tr></tbody></table>
+
+<div id="preload-referrer-options" />
 
 ## 预装referrer选项
 
@@ -55,6 +61,8 @@ Referrer可以用来对预装激活和点击下载进行归因。详情请见下
 
 * 数据总览面板 并按预装渠道和广告系列汇总。
 * **原始数据**原始数据：仅可通过Data Locker获取点击报告中的互动数据。可在初始URL字段查看该数据，并通过af\_engagement\_type参数识别预装（preload）或点击下载（click\_to\_download）。有关激活数据的说明请见上一节中的表格，其中解释了原始数据中呈现匹配类型的方式。
+
+<div id="set-up-preload-referrer-attribution" />
 
 ## 设置预装referrer归因
 
@@ -76,6 +84,12 @@ Referrer可以用来对预装激活和点击下载进行归因。详情请见下
 7. 通知预装渠道已开通其预装投放的归因。
 
 
+
+<div id="traits-and-limitations" />
+
+<div id="set-up-samsung-preload-referrer-attribution" />
+
+<div id="samsung-preload-referrer" />
 
 ### 特点与局限性
 

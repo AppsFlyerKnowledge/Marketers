@@ -23,6 +23,8 @@ x-zendesk:
 
 使用测量仪表板查看和分析活动表现。 它包含了表现关键绩效指标、长期趋势、展示量和点击量、收入和其他指标。
 
+<div id="the-measurement-dashboard" />
+
 ## 测量仪表板
 
 [![](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)
@@ -83,6 +85,8 @@ x-zendesk:
 
 <Accordion title="E - 查看图表">
 
+<div id="performance-comparison-charts" />
+
 ### **性能比较图表**
 
 [![](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)
@@ -90,6 +94,8 @@ x-zendesk:
 图表设置<strong>：</strong>
 
 （A）维度和指标
+
+<div id="trend-over-time-comparison" />
 
 ### **趋势随时间变化比较**
 

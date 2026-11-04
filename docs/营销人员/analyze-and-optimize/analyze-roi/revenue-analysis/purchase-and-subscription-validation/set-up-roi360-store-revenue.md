@@ -25,7 +25,11 @@ x-zendesk:
 
 > **概要：** 设置 AppsFlyer ROI360 应用商店收入解决方案。
 
+<div id="overview" />
+
 ## 概览
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -43,6 +47,8 @@ x-zendesk:
 4. [验证 SDK 实现](#第4步验证-sdk-的实现)：在两个平台上测试应用内购买和订阅功能，以确认 AppsFlyer 能正确接收并处理 SDK 事件和服务器通知。
 5. [验证并更新设置](#第5步验证并更新设置)：审查并确认购买验证、退款处理、订阅统计和商店集成等环节的状态，以确保跨平台收入归因的准确性和持续性。
 6. [应用版本](#第6步发布已对接sdk-connector的应用版本)：发布已集成 SDK Connector 的更新版应用，确保已禁用沙盒标记，且验证规则允许所需的收入事件。
+
+<div id="step-1-ios-set-up-app-store-connect-keys" />
 
 ## 步骤2（iOS）：设置App Store Connect密钥
 
@@ -98,6 +104,8 @@ x-zendesk:
 5. 点击**保存并继续**。
 
 </Accordion>
+
+<div id="step-1-android-set-up-service-account-key-and-permissions" />
 
 ## 步骤 2（Android）：设置服务账户密钥和权限
 
@@ -221,6 +229,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="step-2-ios-set-up-app-store-server-notifications" />
+
 ## 步骤2（iOS）：设置App Store服务器通知
 
 在步骤2中，设置通过AppsFlyer接收App Store通知的方式。
@@ -321,6 +331,8 @@ x-zendesk:
    * 确认是否已收到有效通知。
    * 一条状态消息，表示未找到任何通知。
 
+   <div id="note-2" />
+
    > 📘 **注意**
    >
    > Apple 可能需要几秒钟才能发送测试消息。
@@ -330,6 +342,8 @@ x-zendesk:
    * 测试成功后，或者当您准备继续时，请点击 **“保存并下一步**”。
 
 </Accordion>
+
+<div id="step-2-android-set-up-google-play-server-notifications" />
 
 ## 步骤 2（Android）：设置Google Play服务器通知
 
@@ -449,6 +463,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="step-3-implement-sdk-connector" />
+
 ## 第3步：部署SDK connector
 
 在此步骤中，您需要请开发人员对AppsFlyer Purchase SDK connector进行对接，并配置沙盒环境以进行测试。
@@ -464,9 +480,13 @@ x-zendesk:
 
 此处包含了开发人员进行对接和测试所需的全部信息。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > 该连接器使用自动事务检测。作为另一种方法，您可以调用 SDK 方法`validateAndLog`来手动记录每笔交易。此方法不支持连接器提供的所有功能。有关这两种 SDK 集成选项的详细信息，请参阅 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation">DevHub 文档</Anchor>。
+
+<div id="step-4-verify-sdk-implementation" />
 
 ## 第4步：验证 SDK 的实现
 
@@ -480,6 +500,8 @@ x-zendesk:
 
 1. 在 **“验证 SDK 实现**”步骤中，点击 **“测试 SDK 实现”**。
 2. 查看结果，包括 AppsFlyer 接收到的最新有效负载的时间戳。
+
+   <div id="note-4" />
 
    > 📘 **注意**
    >
@@ -548,6 +570,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="step-5-verify-and-update-settings" />
+
 ## 第5步：验证并更新设置
 
 完成上述设置的配置并保存最后一步后，系统将自动跳转至当前配置视图，您可以在该视图中验证或更新以下设置：
@@ -562,6 +586,8 @@ x-zendesk:
    * **App Store 密钥**设置
    * **服务器通知端**点的设置
    * 实施并测试 SDK 连接器
+
+<div id="step-6-release-the-app-versions-with-the-sdk-connector" />
 
 ## 第6步:发布已对接SDK connector的应用版本
 
@@ -578,6 +604,8 @@ x-zendesk:
 
 **注意：** 仅当用户更新至包含SDK connector的应用版本后，事件才会开始生成。因此，在更新后的应用版本被全面采用之前，预计应用的收入数据与商店数据之间会出现差异。
 
+<div id="switch-to-roi360-store-revenue-from-receipt-validation" />
+
 ## 切换至 ROI360 店铺收入（来自收据验证）
 
 如果您已完成“收据验证”的入门设置，但希望启用 ROI360 Store 收入产品，请执行以下操作：
@@ -589,6 +617,8 @@ x-zendesk:
 5. 执行 **“启用 App Store 服务器通知**”步骤。如需了解更多信息，请参阅[“设置 App Store 服务器通知](#步骤2ios设置app-store服务器通知)”或[“设置 Google Play 服务器通知”](#步骤-2android设置google-play服务器通知)。
 6. 在“**购买与订阅**”部分，请确认“**产品类型**”现已设置为 **ROI360**。
 7. 请检查您当前的 SDK 配置，以确保其能够支持您所需的 ROI360 Store 收入功能。
+
+<div id="note-5" />
 
 > 📘 **注意**
 >

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** 在AppsFlyer后台完成渠道对接配置后，您就可以对来自该渠道的流量进行归因、将数据回传给渠道，并启用其他对接功能。
 
+<div id="overview" />
+
 ## 概览
 
 渠道、媒体和第三方平台通过API与AppsFlyer对接。本文将指导您如何激活并配置非SRN广告平台的对接，包括如何生成归因链接等。
@@ -63,6 +65,8 @@ x-zendesk:
 
 * 从AppsFlyer后台的侧边栏中选择**协作** > **Partner Marketplace**。然后使用筛选条件选项缩小渠道范围。
 
+<div id="invite-new-partners-to-appsflyer" />
+
 #### 在AppsFlyer中添加新的对接渠道
 
 如果您使用的渠道还未与AppsFlyer对接，您可以向他们<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations#在appsflyer中添加新的对接渠道">发送邀请链接</Anchor>。
@@ -74,6 +78,8 @@ x-zendesk:
 <Accordion title="活跃对接渠道">
 
 合作伙伴集成中的 “活跃集成” 选项卡显示所有<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">活跃</Anchor>的集成合作伙伴。您可以在此页面中了解相关渠道的详情并管理其对接。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -103,13 +109,19 @@ x-zendesk:
   * **取消更改：** 撤销最近一次更改且不保存。
   * **保存：** 仅保存当前选项卡中的设置。
 
+<div id="applicable-settings-tabs-per-partner-type" />
+
 #### 适用于各类渠道的设置选项卡
 
 <table><thead><tr><th> </th><th colspan="2">设置选项卡</th><th> </th></tr><tr><th>渠道类型</th><th>对接 </th><th>授权</th><th>说明</th></tr></thead><tbody><tr><td>媒体渠道</td><td>Y</td><td>Y</td><td><p><strong>其他可用选项卡</strong>包括：成本、广告收入、归因链接</p><p>这类渠道包括广告平台、联盟营销平台、直接发行商、程序化广告平台、中国国内广告平台和再营销平台。<br/>归因链接不适用于SRN。</p></td></tr><tr><td>Agency（代理） </td><td>N</td><td>Y</td><td>不作为广告平台的纯代理</td></tr><tr><td>第三方平台</td><td>Y</td><td>N</td><td>分析或营销自动化平台</td></tr><tr><td>平台官方合作渠道 </td><td>Y</td><td>N</td><td> </td></tr></tbody></table>
 
 </Accordion>
 
+<div id="set-up-a-partner-non-srn" />
+
 ## 设置渠道对接（非SRN）
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -118,6 +130,8 @@ x-zendesk:
 **如需查看对接设置并配置您在该渠道上的投放，请按以下方式操作：**
 
 [从 “合作伙伴集成” 中搜索并选择您的合作伙伴](/docs/set-up-an-integrated-partner#partners-in-the-marketplace)。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -132,6 +146,8 @@ x-zendesk:
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 请填写完成必填字段。
+
+<div id="integration-sections" />
 
 #### 渠道对接部分详解
 
@@ -305,6 +321,8 @@ x-zendesk:
       <td>
         启用渠道对接后，就会向渠道发送默认回传，与其共享应用打开前发生的用户行为，如激活、被拦截的激活以及再互动等。
 
+        <div id="01H80XGTBQ4MPGGKSZW0D9GG9H" />
+
         > 📘 **注意**
         >
         > * 被拦截的假量是指被<Anchor target="_blank" href="/marketers/zh/docs/protect360-anti-fraud-guide">Protect360</Anchor>屏蔽的应用内事件，或者未通过自定义验证规则的事件。如果出现被拦截的假量，请与渠道确认他们已启用AppsFlyer的假量拦截对接。
@@ -415,6 +433,8 @@ x-zendesk:
 3. 根据需要添加用于<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters#安卓专用参数">安卓</Anchor>和<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters#ios专用参数">iOS</Anchor>应用的参数。
 4. 【可选】选择其他的归因参数。
 
+<div id="attribution-link-parameters" />
+
 #### 归因链接参数
 
 [![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
@@ -422,6 +442,8 @@ x-zendesk:
 在归因链接中添加参数后，您可以对数据进行深度剖析。归因链接中预定义的参数，可以通过添加参数和定义新值的方式进行编辑。保存归因链接时，系统会保存此选项卡中配置的所有参数。
 
 选择要添加到归因链接的参数。
+
+<div id="attribution-link-parameters-1" />
 
 #### 归因链接参数
 
@@ -434,6 +456,8 @@ x-zendesk:
 | 可配置参数 | 您共有5个可配置参数可以使用，并为其添加对应的参数值。请注意，这些参数会被解析并出现在原始数据报告中，便于汇总或筛选数据。 | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
 
 您可在新参数框中键入其他参数，从而将其添加到归因链接中，这些参数包括<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">AppsFlyer的所有可用URL参数</Anchor>。请注意：在归因链接中，只有URI scheme和OneLink参数是加密的。
+
+<div id="retargeting-settings" />
 
 #### 再营销设置
 
@@ -453,6 +477,8 @@ x-zendesk:
 5. 设置再互动窗口期。用户再次打开应用后，在该窗口期以内的应用内事件会归因到再营销渠道。
    * 这个值可以设置为数天（1-90天）、数小时（至多23小时）或用户的整个生命周期。
    * 再互动窗口期会以af\_reengagement\_window参数的形式体现在归因链接中。
+
+<div id="click-through-attribution" />
 
 #### 点击型归因
 
@@ -476,6 +502,8 @@ x-zendesk:
 2. 将生成的链接复制下来。
 
 当您的潜在客户点击广告时，您可将链接发送给相应的渠道进行激活。
+
+<div id="view-through-attribution-lookback-window" />
 
 #### 浏览型归因窗口期
 
@@ -512,15 +540,21 @@ x-zendesk:
 * 建议您配置Cost API（需要购买ROI360）。
 * 成本API包括点击次数和展现次数报告。详情请见<Anchor target="_blank" href="/marketers/zh/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">广告平台成本对接表</Anchor>，其中详细说明了适用维度、指标和功能。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 如果广告主通过代理商投放广告，代理商需要与相关渠道进行对接，而广告主不需要。如果广告主和代理商使用同一个证书针对同一个应用与渠道对接，成本数据就会出现重复。
+
+<div id="enabling-cost-data-by-api" />
 
 #### 通过API启用成本数据
 
 **成本API的启用方式如下**：
 
 * 请按照<Anchor target="_blank" href="/marketers/zh/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">对接指南</Anchor>进行操作。
+
+<div id="cost-data-sync-status" />
 
 #### 成本数据同步状态
 
@@ -534,10 +568,14 @@ x-zendesk:
 
 如果您作为发行商在应用程序中展示广告，就可以使用广告收入功能将广告收入归因到带来用户的媒体渠道。<Anchor target="_blank" href="/marketers/zh/docs/roi360-guide-ad-revenue-attribution">详情请见广告收入归因。</Anchor>
 
+<div id="enable-ad-revenue-attribution" />
+
 #### 启用广告收入归因
 
 1. 确认渠道支持的<Anchor target="_blank" href="/marketers/zh/docs/roi360-guide-ad-revenue-attribution#list-of-ad-revenue-integrated-partners">归因级别</Anchor>（汇总级别或用户级别）。
 2. 按照<Anchor target="_blank" href="/marketers/zh/docs/roi360-guide-ad-revenue-attribution#启用方式">广告收入对接指南</Anchor>进行设置。
+
+<div id="ad-revenue-api-status-messages" />
 
 #### 广告收入API状态信息
 
@@ -565,9 +603,13 @@ x-zendesk:
 * 如果对方仅作为代理与您合作，请忽略**广告平台权限**部分，在**代理权限**部分中进行权限管理。通过开启代理权限开关，您可以允许代理机构控制广告网络权限。有关更多信息，请参阅<Anchor target="_blank" href="/partners/zh/docs/getting-started-agency-onboarding#广告主授权的作用">获得营销人员许可意味着什么</Anchor>中的注释。
 * 授权仅对当前选定应用生效。
 
+<div id="ad-network-permissions" />
+
 #### 广告平台权限
 
 开启**广告平台权限**后，广告平台即可访问您的面板，您也可以再向其授予其他权限，详情请见下表。
+
+<div id="note-3" />
 
 > 📘 **注意**
 >
@@ -597,9 +639,13 @@ x-zendesk:
 | <span id="access-protect360-dashboard-raw-data"></span>访问Protect360面板和原始数据 | 广告平台可以：<ul><li>访问其Protect360面板（包括<Anchor target="_blank" href="/marketers/zh/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>）。</li><li>查看Protect360、验证规则、以及原始数据（如果套餐中包含）。ProtectLITE不包括原始数据权限。</li></ul>**请注意：** 如果您购买了<Anchor target="_blank" href="/marketers/zh/docs/protect360-anti-fraud-guide">Protect360</Anchor>，广告平台就能看到完整的面板。如果没有Protect360，则该平台只能看到精简面板。 |
 | <span id="access-ad-revenue-raw-data"></span>访问广告收入原始数据 | <Anchor target="_blank" href="/partners/zh/docs/ad-revenue-signals-for-ua-ad-networks">广告平台可以访问其广告收入数据，用于UA优化</Anchor>。  <br />**请注意：** 此权限仅在已购买<Anchor target="_blank" href="/marketers/zh/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor>的应用下可用。 |
 
+<div id="agency-permissions" />
+
 #### 代理权限
 
 如需详细了解各项代理权限的具体内容，请参考<Anchor target="_blank" href="/partners/zh/docs/getting-started-agency-onboarding#广告主授权的作用">此文档</Anchor>。
+
+<div id="important-1" />
 
 > 🚧 **重要提示！**
 >
@@ -636,9 +682,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="test-the-integration" />
+
 ## 测试对接
 
 完成渠道配置后，强烈建议您在正式投放前先对新添加的渠道进行对接测试。由于设置过程中最容易发生错误，因此建议提前测试，避免在投入大量资源后才发现归因数据丢失或有误。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -695,6 +745,8 @@ Meta ads、Apple Search Ads和Google Ads等SRN不依赖外部归因链接进行�
 2. 选择已测试完毕的媒体渠道。
 3. 激活后最多需要等待15分钟，然后下载激活报告。
 4. 确认报告中包含来自该渠道的激活记录，并正常显示媒体渠道、广告系列名称、触达时间和类型、设备ID（如适用）、代理名称（报告中显示为 "Partner"）等参数。
+
+<div id="important-2" />
 
 > 🚧 **重要提示！**
 >

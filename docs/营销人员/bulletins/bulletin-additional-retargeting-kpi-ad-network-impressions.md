@@ -30,9 +30,15 @@ x-zendesk:
 * 变更内容
 * 1月18日
 
+<div id="before-the-change" />
+
 #### 更新前
 
 不适用
+
+<div id="what-you-need-to-do-to-prepare-for-the-change" />
+
+<div id="after-the-change" />
 
 #### 更新后：
 

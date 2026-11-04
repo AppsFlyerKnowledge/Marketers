@@ -25,6 +25,8 @@ x-zendesk:
 
 请按以下步骤针对您在Unity Ads上投放的广告配置对接。
 
+<div id="setting-up-unity-ads" />
+
 ## 启用Unity Ads对接
 
 **前期准备：** 设置对接前，请务必先<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations#联系相关渠道">联系该渠道</Anchor>并在其平台上开设账户。
@@ -52,10 +54,14 @@ x-zendesk:
 
 <Accordion title="渠道对接选项卡">
 
+<div id="activate-partners" />
+
 ### 启用渠道
 
 请在首次访问该页面时打开**启用该渠道**开关，然后就可以设置对接了。在您与Unity Ads合作期间，请确保该开关总是处于打开状态。  
 有关启用渠道的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
+
+<div id="general-settings" />
 
 ### 通用设置
 
@@ -79,6 +85,8 @@ Unity Ads平台中每个账户下的各个应用只有一个对应的Unity Ads G
 
 Unity\_ads\_msc\_new\_3.png
 
+<div id="default-postbacks" />
+
 ### 默认回传
 
 ![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
@@ -88,15 +96,23 @@ Unity\_ads\_msc\_new\_3.png
 * **仅该合作渠道**：仅回传由Unity Ads带来的用户所产生的事件。
 * **所有媒体渠道，包括自然流量**：向Unity Ads回传所有用户的事件。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 由于Unity Ads支持所有类型的激活归因，因此该平台更希望广告主向其回传所有来源的全部新增激活，并建议您在对接配置的“事件来源”一栏选择**所有媒体渠道，包括自然流量**。
+
+<div id="in-app-events-settings" />
 
 ### 应用内事件设置
 
 通过回传将AppsFlyer事件映射到渠道。启用回传后，被拦截的应用内事件（被Protect360屏蔽的事件或未通过验证的事件）也会被一并发送。
 
 [![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+
+<div id="important" />
+
+<div id="to-configure-in-app-event-postbacks" />
 
 #### 请按以下步骤配置应用内事件回传：
 
@@ -112,6 +128,8 @@ Unity\_ads\_msc\_new\_3.png
 | **渠道映射事件** | 渠道侧为每个事件定义的专属名称或ID。映射配置包括以下几种：<ul><li>**文本字段：** 从渠道处获取相应的事件ID。</li><li>**下拉菜单：** 选择最合适的AppsFlyer预定义事件。</li><li>**按原样**：按原样发送事件，不进行名称映射。</li></ul> |
 | **事件来源** | 选择事件回传的范围：<ul><li>**仅该合作渠道**：仅回传归因到该渠道的事件。</li><li>**所有媒体渠道，包括自然流量**：回传归因到任何渠道以及自然量的事件。</li></ul> |
 | **回传内容** | <ul><li>**无数据（默认）**：仅发送事件本身，不带事件值</li><li>**值和收入** ：发送所有事件参数，**包括**收入（若有）。</li><li>**仅发送值：** 发送**除**收入以外的所有参数。</li></ul> |
+
+<div id="note-1" />
 
 > 📘 **注意**
 >

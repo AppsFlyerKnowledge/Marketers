@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** 本文重点解释了TikTok for Business和AppsFlyer之间的归因模式差异。
 
+<div id="overview" />
+
 ## 速览
 
 TikTok for Business和AppsFlyer在移动端获客营销生态体系中都扮演着重要的角色，而双方都使用自己特有的归因模型。这会使两者的面板之间产生一些数据差异。虽然我们一直与TikTok for Business保持紧密的合作，以尽可能地减少这样的差异，但广告主仍需了解可能会造成数据差异的各种因素。
+
+<div id="differences-in-attribution-models" />
 
 ## 归因模型的差异
 
@@ -33,9 +37,13 @@ TikTok for Business和AppsFlyer在移动端获客营销生态体系中都扮演�
 
 <table><thead><tr><th>原因</th><th>TikTok Ads Manager</th><th>AppsFlyer</th></tr></thead><tbody><tr><td><span id="click-attribution-lookback-window"></span><p><strong>点击型归因窗口期</strong></p></td><td><p>默认窗口为7天。但安卓应用以及切换到SRN版TikTok的应用可使用不同的配置（TikTok—SRN）。</p></td><td><p>默认窗口期为7天。该窗口期的可用配置范围为1-30天。请确保您在AppsFlyer中设置的窗口期与TikTok侧的归因窗口保持一致。</p></td></tr><tr><td><span id="viewthrough-attribution-lookback-window"></span><p><strong>浏览型归因窗口期</strong></p></td><td><p>默认窗口期为1天。但安卓应用以及切换到SRN版TikTok的应用可使用不同的配置（TikTok—SRN）。</p></td><td><p>默认窗口期为1天。该窗口期的可用配置范围为1-48小时。请确保您在AppsFlyer中设置的窗口期与TikTok侧的归因窗口保持一致。</p></td></tr><tr><td><span id="multichannel-sourceattribution"></span><p><strong>多源归因</strong></p></td><td><p>TikTok无视其他渠道的广告互动，将激活归因给自己。</p></td><td><p>AppsFlyer使用末次点击归因（详情请见<a href="./appsflyer-attribution-model" target="_blank">AppsFlyer归因模型</a> ）。</p></td></tr><tr><td><span id="crossdevice-attribution"></span><p><strong>跨设备归因</strong></p></td><td><p>Tiktok对用户在不同设备上完成的的互动和激活进行跨端归因，包括iOS、安卓和PC端设备。</p></td><td><p>AppsFlyer对用户在同一个设备上完成的互动和激活进行归因。</p></td></tr><tr><td><span id="different-time-zones"></span><p><strong>不同时区</strong></p></td><td><p>日期范围旁的<a href="https://ads.tiktok.com/help/article/time-zone" target="_blank">TikTok时区</a>无法调整，这是您在创建广告账号时设置的时区。</p></td><td><p>AppsFlyer中默认的应用时区为UTC+0。如需对齐AppsFlyer和TikTok Ads Manager的时区，请在AF后台的<a href="./app-settings#localization-time-zone" target="_blank">应用配置页面</a>中更改相关应用的时区设置。</p></td></tr><tr><td><span id="ios-attribution"></span><p><strong>iOS归因</strong></p></td><td><p>对于iOS应用，TikTok Ads Manager仅显示SKAN的归因结果。</p></td><td><p>对于iOS应用，AppsFlyer在显示SKAN归因结果的同时还会呈现SRN和高级SRN的归因数据，以及去重后的SSOT数据。在两个平台中保持一致的数据仅限SKAN归因结果。 </p></td></tr><tr><td><span id="in-app-event-attribution-periods"></span><p><strong>应用内事件的归因窗口期</strong></p></td><td colspan="2"><p>两个平台上的归因结果可能会由于初次激活后的归因窗口期不同而产生差异，具体如下：</p></td></tr><tr><td><span id="day-1-90"></span><p>第1-90天</p></td><td colspan="2"><p>无归因差异。两个平台都会将应用内事件归因到初次激活。</p></td></tr><tr><td><span id="day-91-180"></span><p>第91-180天</p></td><td rowspan="2"><p>TikTok不上报初次激活的90天以后发生的应用内事件。</p></td><td><div><div><div>AppsFlyer会将事件归因到初始激活。</div></div></div></td></tr><tr><td><span id="day-180"></span><p>第180+天</p></td><td><div><div><div>由于<a href="./user-level-data-retention#渠道的数据保留期限" target="_blank">TikTok的数据保留政策</a>的限制，这些事件会被归因为自然量。</div></div></div></td></tr></tbody></table>
 
+<div id="differences-in-installs" />
+
 ## 激活数据的差异
 
 某些情况下，TikTok for Business侧的激活会包含AppsFlyer拦截的流量或不记录为新增激活的流量。
+
+<div id="re-engagement-campaigns" />
 
 ### 再互动广告
 
@@ -45,26 +53,38 @@ TikTok for Business和AppsFlyer在移动端获客营销生态体系中都扮演�
 
 另一方面，在初次激活的**指定再归因窗口期内**发生的激活则会被AppsFlyer记录为再归因，您可以在AppsFlyer后台的再营销页面中看到这些激活。但TikTok for Business会把这些流量记录为新增激活。
 
+<div id="rejected-installs-when-using-validation-rules-and-protect360" />
+
 ### 使用验证规则和Protect360时被拦截的激活
 
 <Anchor target="_blank" href="/marketers/zh/docs/implement-validation-rules-to-prevent-fraud">验证规则</Anchor>和<Anchor target="_blank" href="/marketers/zh/docs/protect360-anti-fraud-guide">Protect360</Anchor>是AppsFlyer提供的归因防护功能，用于拦截（屏蔽）特定的激活。使用这些功能时，AppsFlyer可能会拦截某些由TikTok for Business带来的激活，但TikTok for Business仍会将这些激活归因到自己的平台。
+
+<div id="example" />
 
 > 📄 **示例**
 >
 > GreatApp的UA经理Jeff创建了一个名为SPNA的广告系列，定向投放到生活在北美的西班牙语用户。为了确保这一点，Jeff定义了一个验证规则，该规则是仅接受来自加拿大和美国的用户。
 > 这时，某个位于西班牙的TikTok for Business用户点击了该广告并激活应用，TikTok for Business就会将该次激活归因给自己，而AppsFlyer则会因为该激活不符合验证规则而将其拦截下来。
 
+<div id="reducing-discrepancies" />
+
 ## 减少数据差异的方式
 
 虽然两个平台的归因模式有所差别，但您仍可在部分情况下减少数据差异。
+
+<div id="click-through-and-view-through-attribution" />
 
 ### 点击型和浏览型归因
 
 AppsFlyer支持点击型归因和浏览型归因。为了减少TikTok for Business和AppsFlyer之间的数据差异，请确保您在AF中设置的点击和展示回溯窗口与TikTok for Business中对应的窗口期保持一致。
 
+<div id="example-1" />
+
 > 📄 **示例**
 >
 > 假设您有一个名为`com.greatapp`的应用，并在AppsFlyer中为该应用设置了1天的点击回溯窗口期，而在TikTok for Business中使用了7天的默认窗口期。如果用户在Tiktok中点击了Greatapp宣传广告后的2-7天才首次打开该应用，AppsFlyer会将这些用户记录为自然量，而这时TikTok for Business则会将这些用户归因到自己的平台。
+
+<div id="in-app-event-attribution" />
 
 ### 应用内事件归因
 

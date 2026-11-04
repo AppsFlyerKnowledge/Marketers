@@ -29,9 +29,13 @@ x-zendesk:
 ---
 > **概要：** 本文将指导您如何与移动端或CTV端开发人员合作，在安卓或iOS应用中接入并安装SDK。基础的对接工作完成后，您就可以对该应用的激活进行归因，并衡量其应用内事件。
 
+<div id="implementing-the-dev-key-in-your-app" />
+
 ## **在相关应用中添加dev key**
 
 这是AppsFlyer对您的帐户进行唯一性标识的方式。dev key是对接SDK时的必填字段，因为SDK需要通过dev key才能安全地发送/拉取属于您账户的数据。您的开发人员需要在相关应用中安装并对接SDK，然后嵌入dev key。
+
+<div id="retrieve-the-dev-key" />
 
 #### 获取dev key
 
@@ -40,12 +44,16 @@ x-zendesk:
 1. 从AppsFlyer后台的侧边栏中选择**配置** > **应用配置**。
 2. 复制dev key，并发送给您的移动端开发人员。[![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
 
+<div id="provide-the-dev-key-to-your-developer" />
+
 #### 将dev key提供给您的开发人员
 
 将dev key、应用程序 ID 和 AppsFlyer API v2 token提供给您的移动开发人员，并附上说明：
 
 * 请使用<Anchor target="_blank" href="https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration">SDK对接向导</Anchor>（SDK Integration Wizard）完成自动化SDK安装与对接。
 * 您也可以按照分步骤指南手动<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">安装</Anchor>并<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">对接SDK</Anchor>。
+
+<div id="where-to-start-the-sdk" />
 
 ## **SDK初始化节点**
 
@@ -58,7 +66,11 @@ x-zendesk:
 <Tabs>
 <Tab title="安卓原生">
 
+<div id="starting-the-sdk-in-android-native" />
+
 ### 在安卓端原生环境中启动SDK
+
+<div id="select-in-what-class-to-start-the-sdk" />
 
 #### 选择启动SDK的类（Class）
 
@@ -66,6 +78,8 @@ x-zendesk:
 
 * **如果在全局**`Application`**类中启动SDK：** 一般情况下，推荐在全局`Application`类/子类中启动SDK，因为`Application`类会在应用界面打开之前加载并初始化。这可以确保SDK在任何场景中都能启动，包括深度链接。
 * **在**`Activity`**类中启动SDK（延迟启动）**：适用于需要用户授权共享数据的场景。这是因为请求用户授权需要用到`Activity`类中的用户界面（UI）。
+
+<div id="android-developer-instructions" />
 
 #### 安卓端开发人员相关说明
 
@@ -80,6 +94,8 @@ x-zendesk:
 <Tab title="iOS原生">
 
 <div id="starting-the-sdk-in-ios" />
+
+<div id="starting-the-sdk-in-ios-native" />
 
 ### 在iOS端原生环境中启动SDK
 
@@ -111,6 +127,8 @@ AppsFlyer的SDK提供`waitForATTUserAuthorization`方法，用于**配置SDK在�
 
 <div id="starting-the-sdk-in-Unity" />
 
+<div id="starting-the-sdk-in-unity" />
+
 ### 在Unity中启动SDK
 
 请将这篇<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#manual-integration">开发者文档</Anchor>发送给您的开发人员，其中说明了SDK的启动方式。
@@ -121,6 +139,8 @@ AppsFlyer的SDK提供`waitForATTUserAuthorization`方法，用于**配置SDK在�
 
 <div id="starting-the-sdk-in-react" />
 
+<div id="starting-the-sdk-in-react-native" />
+
 ### 在React Native中启动SDK
 
 请将这篇<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#startsdk">开发者文档</Anchor>发送给您的开发人员，其中说明了SDK的启动方式。
@@ -128,11 +148,15 @@ AppsFlyer的SDK提供`waitForATTUserAuthorization`方法，用于**配置SDK在�
 </Tab>
 </Tabs>
 
+<div id="select-your-privacy-preserving-strategy" />
+
 ## 选择您的隐私保护策略
 
 选择您**保护用户隐私的方式**。可选方案包括在应用激活时停用SDK、禁止第三方共享数据、对用户数据进行匿名化处理或禁用某些标识符。
 
 如需进一步了解保护用户隐私的SDK配置，请参阅<Anchor target="_blank" href="/marketers/zh/docs/apply-privacy-preserving-sdk-methods">此文档</Anchor>。
+
+<div id="attribution" />
 
 ## **归因**
 
@@ -270,7 +294,11 @@ AppsFlyer支持第三方应用商店的归因，具体如下：
 
 若使用IDFA进行归因，一定要在应用**首次启动时发送IDFA。** 为此，AppsFlyer SDK专门提供了`waitForATTUserAuthorization`方法以确保相关数据的发送。
 
+<div id="waitforattuserauthorization-overview" />
+
 #### waitForATTUserAuthorization功能简介
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -331,6 +359,8 @@ AppsFlyer支持第三方应用商店的归因，具体如下：
 
 <Accordion title="适用于SKAN归因的配置">
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 要全面支持SKAN归因，您需要先升级到iOS SDK V6.2.3以上版本。
@@ -367,6 +397,8 @@ SKAN是iOS中用来验证非自然激活的一种方式，其中的应用激活�
 </Accordion>
 
 </Accordion>
+
+<div id="recording-in-app-events" />
 
 ## **记录应用内事件**
 
@@ -418,6 +450,8 @@ AppsFlyer的SDK可通过服务器验证机制对应用内购进行验证。应�
 请参考<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview#recommended-events-by-business-vertical">按垂类梳理的应用内事件推荐</Anchor>，其中包括旅游、游戏、电商等各种垂类。
 
 </Accordion>
+
+<div id="deep-linking-with-onelink" />
 
 ## **OneLink™深度链接**
 
@@ -471,6 +505,8 @@ OneLink是AppsFlyer专为跨平台归因、**跳转和深度链接**而设计的
 
 </Accordion>
 
+<div id="accessing-attribution-and-deep-linking-data" />
+
 ## **拉取归因和深度链接数据**
 
 下表罗列了归因和深度链接数据的各种拉取方式：
@@ -488,12 +524,16 @@ OneLink是AppsFlyer专为跨平台归因、**跳转和深度链接**而设计的
 * 在付费媒体或自有媒体中使用UDL时，仍可获取深度链接数据。
 * 在付费媒体中使用GCD时，数据受限且不包含归因和深度链接的具体数据。
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 建议您按以下方式拉取数据：
 >
 > * 使用Push API拉取归因数据，将其发送到您的服务器上做进一步处理。使用这种方式时，API会等待归因结果，然后再回传数据，因此准确性较高，而且几乎是实时的。GCD虽然能实时返回数据，但由于系统至少需要5秒钟才能判断最终的归因结果，因此有时会出现不准确的现象。
 > * 使用Pull API定期（如每天）拉取数据作为对实时归因数据的补充，同时也能弥补数据传输中可能发生的错误。
+
+<div id="testing-your-sdk-integration" />
 
 ## **测试SDK对接**
 
@@ -502,6 +542,8 @@ SDK对接配置完成后，您就可以到AppsFlyer面板，进入SDK对接测�
 请参阅<Anchor target="_blank" href="/marketers/zh/docs/testing-the-sdk-integration-for-marketers">SDK对接测试</Anchor>说明，了解测试场景和相关指南。
 
 **请注意：** 进行归因测试时，您需要先为您的<Anchor target="_blank" href="/marketers/zh/docs/registering-test-devices">测试设备加白</Anchor>（安卓或iOS），才能让AF后台将每次激活都记录为新增激活。测试设备加白后，重复激活应用不会被AF判定为重装激活。
+
+<div id="note-1" />
 
 > 📄 **相关文档**
 >

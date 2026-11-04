@@ -24,12 +24,18 @@ x-zendesk:
 
 您可以选择接收AppsFlyer通知的方式，以便在发生特定事件及时收到通知。在**通知偏好设置**中，选择开启或关闭相应的通知类型。
 
+<div id="accessing-and-configuring-notification-preferences" />
+
 ## 访问并配置通知偏好设置
+
+<div id="to-access-notifications" />
 
 ### 查看通知
 
 * 从页面顶部导航栏打开账户菜单（点击右上角的邮箱地址，打开下拉菜单）> **通知**。
 * 平台内的铃声图标 > **点击设置图标。**
+
+<div id="configuring-notifications" />
 
 ### 配置通知
 
@@ -38,6 +44,8 @@ x-zendesk:
 如需停止接收，请将其关闭。
 
 注意：有些通知只能通过电子邮件发送。您可以在仅通过电子邮件发送通知的选项卡中进行[设置。](/docs/notifications#仅通过邮件发送通知)
+
+<div id="what-notifications-can-i-receive" />
 
 ## 我可以接收哪些通知？
 
@@ -57,6 +65,8 @@ x-zendesk:
   * 例如，如果公司未购买AppsFlyer的Push API功能，则不会显示与此功能相关的通知开关。
 * <strong>可用选项取决于您的用户权限。</strong>如某项通知关联的功能或模块超出您的权限范围，开关将处于禁用状态，无法开启或关闭。
   * 例如，如果您没有添加或编辑对接渠道的权限，与对接渠道配置相关的通知开关将处于禁用状态。
+
+<div id="when-will-i-receive-notifications" />
 
 ## 我会在何时收到通知？
 
@@ -84,6 +94,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="where-will-i-receive-notifications" />
+
 ## 我可以在哪里接收通知？
 
 您可以通过[铃声](/docs/notifications#bell-notification)图标、[电子邮件](/docs/notifications#email-notification)或[Slack](/docs/notifications#slack-notification)对接接收通知。
@@ -106,9 +118,13 @@ x-zendesk:
 
 有些通知只能通过电子邮件发送。您可以在**仅通过电子邮件发送的通知**选项卡中进行设置。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > AppsFlyer的所有邮件通知均由[notifications@appsflyer.com](mailto:notifications@appsflyer.com)发出。
+
+<div id="email-only-notifications" />
 
 #### 仅通过邮件发送通知
 

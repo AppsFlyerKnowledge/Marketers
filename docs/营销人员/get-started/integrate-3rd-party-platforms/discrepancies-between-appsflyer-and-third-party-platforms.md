@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **概要：** 了解 AppsFlyer 与第三方平台在归因方面存在差异的原因。
 
+<div id="overview" />
+
 ## 速览
 
 由于媒体来源的数据共享政策，并非所有用户级别的<Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions#媒体渠道数据限制">数据都会与第三方平台（例如分析和营销平台）共享</Anchor>。由于这些原因，第三方平台上显示的数据与 AppsFlyer 中的数据之间可能存在归因差异。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > 来自AppsFlyer的汇总和分析数据不受限制，仍然可用。
 
+<div id="postback-restrictions-on-third-party-platforms" />
+
 ## 第三方平台的回传限制
 
 当向第三方平台发送回传消息时，媒体来源限制有不同级别。回传信息可以完全不发送，可以不注明出处发送，也可以不受限制地发送。
+
+<div id="types-of-postback-restrictions" />
 
 #### 回发限制的类型
 
@@ -57,6 +65,8 @@ x-zendesk:
 * Bing
 * Yahoo（Oath:Ad Platforms / Yahoo Gemini)
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 对于 Meta 广告，回传行为取决于广告主是否接受了高级移动衡量 (AMM) 条款：
@@ -76,6 +86,8 @@ x-zendesk:
 
 <table><colgroup><col/><col/><col/><col/><col/><col/></colgroup><thead><tr><th colspan="6">回传限制适用于所有与 AppsFlyer 集成的第三方平台，包括以下平台：</th></tr></thead><tbody><tr><td><span id="airship"></span>飞艇</td><td>Amplitude</td><td>批次</td><td>Braze</td><td>CleverTap</td><td>云</td></tr><tr><td><span id="convertro"></span>Convertro</td><td>deltaDNA</td><td>欧拉</td><td>GameAnalytics</td><td>IBM UBX</td><td>Insider</td></tr><tr><td><span id="itunes"></span>iTunes</td><td>卡胡纳</td><td>Leanplum</td><td>液体</td><td>局部分析</td><td>Luna labs</td></tr><tr><td><span id="Medialyzer"></span>Medialyzer</td><td>Mixpanel</td><td>MoEngage</td><td>mParticle</td><td>OneSignal</td><td>Rocketbox</td></tr><tr><td><span id="salesforce"></span>Salesforce</td><td>市场</td><td>MobilePush</td><td>Segment</td><td>斑点效应</td><td>斯沃夫</td></tr><tr><td><span id="tapcart"></span>塔普卡特</td><td>茶树</td><td>WebEngage</td><td>Winclap 分析</td><td>Google Analytics</td><td> </td></tr></tbody></table>
 
+<div id="examples-of-discrepancies" />
+
 ## 差异示例
 
 <div id="example-1" />
@@ -84,6 +96,8 @@ x-zendesk:
 
 <Tabs>
 <Tab title="AMM 不被接受">
+
+<div id="note-2" />
 
 > 📄 **示例 1**
 >
@@ -98,6 +112,8 @@ x-zendesk:
 </Tab>
 
 <Tab title="AMM 被接受">
+
+<div id="note-3" />
 
 > 📄 **示例 1**
 >
@@ -118,6 +134,8 @@ x-zendesk:
 
 <Accordion title="MoEngage上的原始数据限制">
 
+<div id="note-4" />
+
 > 📄 **示例 2**
 >
 > 广告商利用 Pinterest 投放广告。他们还与 MoEngage 合作，以获取有关客户参与度的见解。广告商会查看上个月有多少次“添加到愿望清单”事件归功于 Pinterest：
@@ -134,6 +152,8 @@ x-zendesk:
 
 <Accordion title="对飞艇的限制">
 
+<div id="note-5" />
+
 > 📄 **示例3**
 >
 > 广告商使用必应投放广告。他们还与 Airship 合作，优化其移动应用程序的用户体验。广告商会查看上个月有多少购买事件归功于必应搜索：
@@ -145,6 +165,8 @@ x-zendesk:
 > | 广告商看到 35 起购买事件归因于 Bing。 | 广告主从自然流量中获得了 84 次购买事件。其中 35 个购买记录来自 Bing，但他们并不知道这一点，因为这些购买事件看起来像是自然发生的。 |
 
 </Accordion>
+
+<div id="note-6" />
 
 > 📄 **相关文档**
 >

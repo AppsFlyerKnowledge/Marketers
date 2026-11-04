@@ -25,6 +25,8 @@ x-zendesk:
 >
 > 数据协作平台 (DCP) 作为数据协作的中心点，包含受众创建和激活。DCP 依赖于数据清理室 (DCR) 的先进技术，以确保协作和受众管理过程中的数据隐私和安全。
 
+<div id="about-dcp-audiences" />
+
 ## 速览
 
 从庞大的数据集中构建受众的过程涉及组合数据集以生成丰富的数据，这可以用来精确接触您想要接触的消费者。受众可以使用双方的组合数据集创建，或仅由一方提供。在这两种情况下，提供数据的协作者根据他们商定的条款授予权限和访问权。构建受众后，您可以将其发送给您的媒体合作伙伴进行激活或发送到您的云服务。
@@ -35,6 +37,10 @@ x-zendesk:
 
 * **可视化受众构建器:** 可视化受众构建器是一个用户友好的工具，允许非技术用户在不需要 SQL 技能的情况下创建受众细分。它允许使用图形界面进行高级受众细分。
 * **受众构建智能体**： 一个允许无限制查询数据的 SQL 查询。需要 SQL 专业知识。
+
+<div id="key-features" />
+
+<div id="build-an-audience" />
 
 #### 主要功能
 
@@ -57,6 +63,8 @@ x-zendesk:
 
 **按照以下步骤使用可视化受众构建器构建你的受众：**
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 确保你拥有<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">建立受众</Anchor>的权限以创建受众。
@@ -72,6 +80,8 @@ x-zendesk:
 
    <Image alt="新受众可视化受众构建器.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. 继续进行以下**受众构建器**的逐步指导：
+
+<div id="step-1-details-and-sources" />
 
 #### 第1步：详细信息和来源
 
@@ -94,6 +104,8 @@ x-zendesk:
      <Image alt="可以使用所有数据权限已启用 w arrow.png" src="https://support.appsflyer.com/hc/article_attachments/34588579107345" width="87.42%" />
 4. 点击**Next**。
 
+<div id="step-2-define-the-audience" />
+
 #### 第2步：定义受众
 
 在选择数据来源后，此步骤涉及选择要包含在您的观众中的属性和值。
@@ -105,6 +117,8 @@ x-zendesk:
      小于或等于，介于，过去 "X" 天（也可以包括当前一天）
    * **文本属性** 可以使用以下运算符进行过滤：  
      等于或不等于
+
+     <div id="note-2" />
 
      > 📘 **注意事项**
      >
@@ -126,6 +140,8 @@ x-zendesk:
 
 按照以下步骤使用 SQL 受众构建器构建您的受众。
 
+<div id="note-4" />
+
 > 📘 **注意**
 >
 > 确保你拥有<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">建立受众</Anchor>的权限以创建受众。
@@ -141,9 +157,13 @@ x-zendesk:
    <Image alt="新受众 SQL 受众构建器.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. 继续进行 **受众构建器** 的演练步骤：
 
+<div id="set-details" />
+
 #### 设置详细信息
 
 命名受众，然后点击 **下一步**。
+
+<div id="build-query" />
 
 #### 构建查询
 
@@ -152,6 +172,8 @@ x-zendesk:
 3. 点击 **测试** 并查看查询语句下方显示的查询结果（受众样本）。
 4. 点击 **继续** 然后 **下一步** 以继续进行 **受众构建器** 的下一步演练，或 **保存为草稿** 并稍后继续。
 5. 继续 [发送给观众](#发送受众以进行激活)。
+
+<div id="the-sql-audience-builder" />
 
 #### SQL 观众构建器
 
@@ -166,12 +188,16 @@ x-zendesk:
 
 </Accordion>
 
+<div id="send-an-audience-for-activation" />
+
 ## 发送受众以进行激活
 
 当您完成定义受众时，您选择希望将受众发送到的位置（考虑所需的<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#共享权限">权限</Anchor>）。这意味着组成受众的用户 ID 列表会不断刷新，并每天发送到您选择的目的地。提供两个目的地。您可以：
 
 * [**将受众连接到媒体合作伙伴**](#将人群包连接到渠道) - 媒体合作伙伴平台包括 Meta 广告、谷歌广告等。在您想要进行付费活动、再营销或相似受众扩展时，将您的受众连接到媒体合作伙伴。
 * [**将受众导出到您的云服务**](#将受众导出到云服务) - 云存储通过 AppsFlyer 数据锁定器进行管理。当您需要在 BI 模型、CDP 或内部丰富管道中使用文件时，将您的受众连接到云服务。
+
+<div id="note-6" />
 
 > 📘 **注意**
 >
@@ -181,6 +207,8 @@ x-zendesk:
 #### 将人群包连接到渠道
 
 直接在您首选的媒体合作伙伴平台上发送受众以进行激活，例如 Meta 广告和 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/10010286?hl=en">Google Ads</Anchor>。系统会转发用户 ID 的 CSV 文件，如果合作伙伴要求，自动进行哈希处理。
+
+<div id="note-7" />
 
 > 📘 **注意**
 >
@@ -217,6 +245,8 @@ x-zendesk:
 2. 点击 **选择连接** 从列表中选择现有的云连接以发送受众，或点击 **+ 新连接** 来 <Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers#set-up-data-locker">在数据存储中创建新连接</Anchor>。请查看这里的操作方法。
 3. 点击**保存并发送**。您的受众正在发送到所选的云服务。此过程可能需要最多 15 分钟才能完成。
 
+<div id="manage-audiences" />
+
 ## 管理人群包
 
 您可以从相关协作仪表板的 **受众** 部分查看和管理相关受众。
@@ -235,6 +265,8 @@ x-zendesk:
   * **暂停：** 当数据源被修改时，防止受众被更新和重新激活。
   * 删除删除人群包
 
+<div id="edit-the-audience-activation-destination" />
+
 ### 编辑受众激活目标
 
 在构建受众时，您可以将其保存为草稿，然后返回并编辑激活目标（具体取决于您的权限）。
@@ -247,6 +279,8 @@ x-zendesk:
 4. 在连接和导出（受众页面底部）下，打开相关开关：
    * [连接到媒体合作伙伴](#将人群包连接到渠道)
    * [导出到云服务](#将受众导出到云服务)
+
+<div id="delete-an-audience" />
 
 ### 删除受众
 

@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** 使用转换和聚合函数以及数据过滤工具从数据源创建自定义数据视图。您可以预览修改后的数据样本，反映您在进展中的更改。
 
+<div id="about-data-views" />
+
 ## 速览
 
 数据视图构建器使您能够创建数据源的自定义版本，并使其与您预期的受众相关，而无需修改原始数据集。不需要 SQL 知识、数据专家或数据工程师，允许您在预览数据并进行调整的同时执行修改、精炼和汇总数据的功能。
+
+<div id="data-view-functions" />
 
 ### 数据视图功能
 
@@ -32,6 +36,8 @@ x-zendesk:
 * **转换:** 修改数据的格式、结构或值，以便为分析做好准备。这会创建新列，以纳入现有数据的见解。
 * 汇总结合多个数据记录，使用求和、平均、计数、最小值和最大值等函数生成摘要或组。
 * **过滤:** 通过应用所选属性（如时间范围、类别或自定义参数）来缩小数据范围，以专注于特定相关信息。
+
+<div id="the-data-view-builder" />
 
 ## 数据视图构建器
 
@@ -51,6 +57,8 @@ x-zendesk:
 
 页面右侧的侧边面板展示了两组数据，一组来自原始来源，另一组来自由此创建的数据视图。每组包括表名和描述、字段数量和行数，以及包含五行数据的示例表。当对数据视图应用函数和过滤器时，侧边面板会反映这些变化，使您能够在修改数据时验证数据，并与原始版本进行比较。
 
+<div id="create-a-data-view" />
+
 ## 设置数据视图
 
 了解如何在AppsFlyer中创建和自定义数据视图，以转换、聚合和过滤数据，使其与您的目标受众相关，而无需修改原始数据集。
@@ -66,6 +74,8 @@ x-zendesk:
    * 数据视图名称输入数据视图的名称。这可以是任何唯一的名称，帮助您识别它。请参见下面的 [命名要求和指南](#命名要求和指南)。
    * 说明提供描述。当将鼠标悬停在 **来源** 标签下的数据视图名称上时，这将作为工具提示显示。建议突出主要目标和执行的数据操作。
    * **添加标签：** 您可以选择最能代表视图的结构和数据的标签。
+
+<div id="naming-requirements-and-guidelines" />
 
 #### 命名要求和指南
 
@@ -145,6 +155,8 @@ x-zendesk:
 4. 输入一个值
 5. [可选] 点击 **+ 条件**以向过滤器添加条件。
 
+   <div id="note" />
+
    > 📘 **注意**
    >
    > * 您可以根据需要添加任意数量的条件，使用AND和OR操作。
@@ -153,9 +165,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="zd-list-of-functions-and-use-case-examples" />
+
 <div id="list-of-functions-and-use-case-examples" />
 
 <Accordion title="函数列表和用例示例">
+
+<div id="transformation-functions" />
 
 #### **转换函数**
 
@@ -165,11 +181,15 @@ x-zendesk:
 * LEAST返回两个值中的最低值
 * GREATEST返回两个值中的最高值
 
+<div id="example-transformation" />
+
 #### **示例：转换**
 
 您想指示从合作者处购买的产品，同时掩盖与您合作的其他品牌的购买。
 
 [![](https://files.readme.io/1ce74573ea075baa4d7bf8299abc7dbf01fdb4afce870bc9282ed7c3ab1f5bd9-51911620451217.png)](https://files.readme.io/1ce74573ea075baa4d7bf8299abc7dbf01fdb4afce870bc9282ed7c3ab1f5bd9-51911620451217.png)
+
+<div id="aggregate-functions" />
 
 #### **聚合函数**
 
@@ -179,11 +199,15 @@ x-zendesk:
 * 最小值返回两个数字的最小值
 * 最大值返回两个数字的最大值
 
+<div id="example-aggregation" />
+
 #### **示例：汇总**
 
 您想计算每个用户的总购买次数，并汇总他们支付的总价格。
 
 [![](https://files.readme.io/e9ed7aa29fb6e25d16076089b848496aa9a42355ceba17c18210d0d6596a677f-51911637008017.png)](https://files.readme.io/e9ed7aa29fb6e25d16076089b848496aa9a42355ceba17c18210d0d6596a677f-51911637008017.png)
+
+<div id="example-aggregation-with-a-condition" />
 
 #### 示例：带条件的聚合
 
@@ -200,6 +224,8 @@ x-zendesk:
 <Accordion title="选择字段">
 
 数据视图结构包括来自原始数据源的字段和在数据视图构建器中创建的任何自定义数据字段。在这里，您可以删除字段（标识符字段除外）或重新排列它们的顺序。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -255,6 +281,8 @@ x-zendesk:
 * 点击 **保存** 在页面底部。
 
 </Accordion>
+
+<div id="manage-data-views" />
 
 ## 编辑数据视图
 
@@ -332,6 +360,8 @@ x-zendesk:
 4. 输入合作者的电子邮件地址，然后点击 **下一步**。
 5. 选择相关的 <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#共享权限">共享权限</Anchor>。
 6. 点击 **保存并发送**。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >

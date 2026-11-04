@@ -34,6 +34,8 @@ x-zendesk:
 * 有多少买家完成了付费
 * 有多少买家是回头客，有多少一次性买家
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 请阅读面向营销人员的<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview#设置应用内事件">操作指南</Anchor>，以了解如何设置应用内事件。
@@ -44,6 +46,8 @@ x-zendesk:
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -270,6 +274,8 @@ x-zendesk:
 | af\_receipt\_id | Order ID<br /><br />**用于验证购买行为的 CRITEO 和 Google Ads 所需参数** | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

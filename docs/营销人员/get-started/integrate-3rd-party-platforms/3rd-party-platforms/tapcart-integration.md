@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **概要：** 通过Tapcart对接AppsFlyer功能，全面提升您的应用表现
 
+<div id="introduction" />
+
 ## 简介
 
 Tapcart可以帮助您轻松将数据传送至AppsFlyer，并充分利用其各项功能。在使用Tapcart构建应用时，会默认在应用中设置AppsFlyer SDK。通过Tapcart采集的数据，包括自然激活与非自然激活，都将同步展示在AppsFlyer平台上。
+
+<div id="integrating-tapcart-with-appsflyer" />
 
 ## 将Tapcart对接至AppsFlyer
 
 AppsFlyer的SDK支持多种功能，包括：追踪激活与卸载、referral、用户与推送通知的交互、深度链接跳转、处理用户隐私场景等。
 
 您可以参考<Anchor target="_blank" href="https://tapcart.com/integrations/appsflyer">Tapcart的官方说明</Anchor>，了解如何将Tapcart对接至AppsFlyer。
+
+<div id="default-in-app-events-configured-in-the-appsflyer-sdk" />
 
 ## AppsFlyer SDK中预设的应用内事件
 
@@ -47,6 +53,8 @@ AppsFlyer的SDK支持多种功能，包括：追踪激活与卸载、referral、
 * 已完成购买
 * 从购物车移除
 * 首次购买
+
+<div id="enable-deep-linking-with-appsflyer" />
 
 ## 启用与AppsFlyer的深度链接
 

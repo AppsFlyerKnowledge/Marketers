@@ -27,17 +27,25 @@ x-zendesk:
 ---
 > **概要：** 用户级别原始数据的保留政策取决于相关法律以及AppsFlyer和SRN（**渠道**）的使用条款。
 
+<div id="caution" />
+
 > ❗️ **注意事项**
 >
 > AppsFlyer在本文中提供的数据限制说明仅供参考。  *本文所述的所有内容仅供参考，不构成法律建议。*
+
+<div id="data-retention-and-deletion-obligations" />
 
 ## 数据保留与删除义务
 
 AppsFlyer接收到的用户级数据来自应用、渠道以及其他数据来源。
 
+<div id="availability-of-user-level-data-to-advertisers" />
+
 ### 广告主可访问的用户级别数据
 
 通常情况下，如果广告主订阅的套餐包含原始数据访问权限，并且仍在90天访问期内（详见<Anchor target="_blank" href="/marketers/zh/docs/data-availability-windows">数据可访问时间窗口</Anchor>），就可以通过原始数据报表工具访问用户级数据。不过在某些情况下，<Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions">原始数据</Anchor>也可能受到限制。
+
+<div id="data-retention" />
 
 ### 数据保留
 
@@ -63,6 +71,8 @@ AppsFlyer会在有限的时间内保留用户级数据。原始数据的保留�
   * 渠道的数据共享政策
   * <Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework">汇总层级的高级隐私保护</Anchor>（AAP）处于启用状态
 
+<div id="partner-data-retention-periods" />
+
 #### 渠道的数据保留期限
 
 | SRN/渠道 | 渠道ID（PID） | 用户激活的[x]月之后删除数据 |
@@ -80,6 +90,8 @@ AppsFlyer会在有限的时间内保留用户级数据。原始数据的保留�
 | Snapchat（<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/article/attribution-terms">TOS</Anchor>） | snapchat\_int | 6 |
 | TikTok for Business | tiktokglobal\_int | 13 |
 | X Ads（原Twitter） | twitter\_int | 3 |
+
+<div id="note" />
 
 > 📘 **注意：**
 >

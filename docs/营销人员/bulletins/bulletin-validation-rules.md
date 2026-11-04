@@ -82,6 +82,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="see-also" />
+
 > 📄 **相关文档**
 >
 > * <Anchor target="_blank" href="/marketers/zh/docs/implement-validation-rules-to-prevent-fraud">验证规则使用指南（广告主适用）</Anchor>

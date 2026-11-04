@@ -26,6 +26,8 @@ x-zendesk:
 
 ![SBSDB.png](https://files.readme.io/550c465c329eac484d2b2e5a65c8f48831c350c3c4b967315e3b2059ab95a36d-4409263804049.png)
 
+<div id="finding-the-best-ios-14-campaign-performance-metrics" />
+
 ## 找到最理想的iOS 14+投放效果指标
 
 从iOS 14+开始，SKAN归因和<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-attribution-model">AF模型归因</Anchor>都能产出投放效果指标。这两种框架的归因方式不同，特点和局限性也不同，因此两者之间经常会有数据差异。比如SKAN不包含ASA和自有媒体上的广告投放指标，而AF模型的SRN指标则不包含未授权用户的激活信息。此外，SKAN仅在用户激活后的1-3天内衡量其使用情况，而AppsFlyer则会衡量用户整个生命周期内的数据（即LTV数据）。
@@ -93,6 +95,8 @@ x-zendesk:
 | 示例 | ![mceclip1.png](https://files.readme.io/98fc80d1e995ba8ef0cce267fa12f22d48a77d7e25db4add1108144c6de7136d-4406111715217.png)<ul><li>实际激活数为激活数较高的归因框架所产出的激活指标。</li><li>eCPI计算公式：成本/激活数。</li></ul> |
 
 </Accordion>
+
+<div id="using-side-by-side" />
 
 ## 并列视图的使用方式
 

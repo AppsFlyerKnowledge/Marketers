@@ -24,6 +24,8 @@ x-zendesk:
 
 > **概要：** 创意管理帮助您更快地集中管理、审核和上线创意。利用它同步创意存储中的创意，了解跨媒体源的创意活动状态，轻松找到相关创意，并直接上传到支持的媒体来源活动中。
 
+<div id="about-creative-management" />
+
 ## 关于素材管理
 
 创意管理是一个集中管理创意资产生命周期的中心中心，从存储同步到媒体源上传。
@@ -38,6 +40,8 @@ x-zendesk:
 * 回顾上传结果，看看哪些创意成功上传或失败。
 
 创意管理为规模设计，帮助市场营销和创意团队减少手工工作，优化上线时间，并提升活动表现。
+
+<div id="get-started" />
 
 ## 启用方式
 
@@ -59,6 +63,8 @@ x-zendesk:
 
 * [Google Drive](#连接google-drive)
 * [Dropbox](#连接dropbox)
+
+<div id="connect-google-drive" />
 
 #### 连接Google Drive。
 
@@ -84,6 +90,8 @@ x-zendesk:
 <Image alt="" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />altimage (9).png
 
 10. 点击**连接**。
+
+<div id="connect-dropbox" />
 
 #### 连接Dropbox
 
@@ -117,6 +125,8 @@ x-zendesk:
 每张创意卡代表一个创意人士。创意作品可能包含多个版本，比如不同的分辨率或格式。通过卡片，你可以快速了解创意在媒体源上的新、活跃还是非活跃，并查看高级元数据，如首次上线时间及与创意管理同步时间。每个新创意都会被自动分析和评分，帮助你在上线前挑选出最合适的。分数从C（不太成功）到A（准备扩展），帮助您自信地优先考虑高绩效素材。
 
 <Image alt="" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />altimage (9).png
+
+<div id="filter-creatives" />
 
 #### 滤镜创意
 
@@ -172,6 +182,8 @@ x-zendesk:
 
 <Image alt="点击上传到谷歌Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 在首次上传大量内容之前，我们建议先用单个创意进行测试，确认它是否正确出现在所选媒体源中。
@@ -217,6 +229,8 @@ x-zendesk:
 
 #### Unity Ads
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 对于Unity广告，目前你只能将创意上传到Unity的创意库。即将加入直接上传到活动的功能。
@@ -229,6 +243,8 @@ x-zendesk:
 6. 咔哒 **上传到 Unity 广告**.
 
 #### Mintegral
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -286,6 +302,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 特性与限制
 
 | 特性 | 说明 |
@@ -296,6 +314,8 @@ x-zendesk:
 | 上传方式因网络而异 | 上传方式因网络而异。  <br />Google Ads、Meta Ads 和 TikTok 支持直接上传到广告活动中（作为广告或创意集）;Unity Ads 和 Mintegral 目前仅支持上传到网络的创意库。 |
 | 资产需求 | 创意文件格式、尺寸、时长和大小必须满足每个网络的要求。 |
 | 上传历史范围 | 上传历史反映的是上传结果，而非创意的持续交付或审核状态。 |
+
+<div id="see-also" />
 
 > 📄 **另请参阅**
 >

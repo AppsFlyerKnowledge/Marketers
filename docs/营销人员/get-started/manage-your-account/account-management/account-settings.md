@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** 使用**账户设置**页面，一站式管理您的个人档案、账户层级设置和 AI 功能。
 
+<div id="about-account-settings" />
+
 ## **账户设置简介**
 
 **账户设置**页面有三个选项卡：
@@ -29,15 +31,21 @@ x-zendesk:
 * 账户管理帐户层级设置
 * [**AI功能**](/docs/account-settings#ai功能)：AI 驱动的产品和访问权限控制
 
+<div id="profile" />
+
 ## **账户信息**
 
 **个人资料**部分显示您的个人帐户详细信息，例如帐户名称、所有者电子邮件、网站和帐户ID。
 
 使用此部分查看您的账户信息并更新支持的个人资料字段。
 
+<div id="account" />
+
 ## **账户管理**
 
 **账户**部分包括账户级别的安全设置。后续可能会添加其他自助帐户设置
+
+<div id="unique-dev-key" />
 
 ### <Anchor target="_blank" href="/marketers/zh/docs/dev-key-management">**唯一开发者密钥**</Anchor>
 
@@ -47,9 +55,13 @@ x-zendesk:
 
 请注意：该设置仅适用于启用后创建的应用。它不会改变现有应用的开发者密钥。
 
+<div id="ai-capabilities" />
+
 ## **AI功能**
 
 账户管理员可以在**AI功能**部分管理该账户支持的AI产品。
+
+<div id="ai-assistant" />
 
 ### <Anchor target="_blank" href="/marketers/zh/docs/ai-assistant">AI 助手</Anchor>
 
@@ -71,6 +83,8 @@ AppsFlyer MCP可将您的AppsFlyer数据与任意LLM（如Claude或VS Code）连
 ### <Anchor target="_blank" href="/marketers/zh/docs/beta-agent-hub-overview">Agent Hub</Anchor>
 
 Agent Hub 是 AppsFlyer 的集中式平台，用于管理 AI 驱动的智能体，主动将可行的营销洞察直接引入工作流程。这些智能体不断分析您的数据，以产出有价值的数据，并推荐可行的步骤，所有这些都在团队的协作环境中进行。
+
+<div id="permissions" />
 
 ## **授权**
 

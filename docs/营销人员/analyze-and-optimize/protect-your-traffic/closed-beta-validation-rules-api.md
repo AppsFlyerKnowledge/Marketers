@@ -24,9 +24,13 @@ x-zendesk:
 
 > **At a glance:** 自动创建和管理验证规则。验证规则 API 支持技术团队通过程序创建、更新、局部修改和删除规则，不受 UI 中规则值数量限制的约束，同时减少手动管理规则所需的工作量。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 验证规则 API 面向 Protect360 客户开放。目前，该功能处于封闭测试阶段，仅限部分账户使用，需要单独开通。如需申请使用权限，请联系您的客户成功经理（CSM）。
+
+<div id="about-the-validation-rules-api" />
 
 ## 验证规则 API 概述
 
@@ -61,6 +65,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="how-it-works" />
+
 ## 工作原理
 
 <Accordion title="身份验证">
@@ -70,6 +76,8 @@ x-zendesk:
 1. 在您的 AppsFlyer 账户中，进入 **Security Center**（安全中心） > **API tokens**（API 令牌）。
 2. 生成一个令牌。
 3. 在 API 请求的 **Authorization** 请求头中附带该令牌。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -92,6 +100,8 @@ x-zendesk:
 局部修改（Patch）接口在高频更新场景中尤为实用。您只需更新发生变化的部分，而无需重写整条规则。这种方式非常适合诸如“每日更新作弊流量来源拦截列表”这类工作流程。
 
 </Accordion>
+
+<div id="scope-and-supported-configurations" />
 
 ## 适用范围与支持的配置
 
@@ -156,6 +166,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="faq" />
+
 ## 常见问题
 
 <Accordion title="谁可以使用验证规则 API？">
@@ -211,6 +223,8 @@ API 会返回错误信息，指明具体触发了哪项限制。请将大规模�
 仅支持安装事件，此版本尚不支持应用内事件。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **另请参阅**
 >

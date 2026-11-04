@@ -24,7 +24,9 @@ x-zendesk:
 > **概要：** 概览： 通过为您的医疗保健应用程序记录这些建议的应用内事件，评估用户在整个用户路径中的质量。
 
 
-<span id="healthcare"></span>用户可以使用医疗保健类应用执行各种操作，如购买医疗保险、预约挂号、在线问诊等等。在这类应用中，建议您记录登录、注册和其他不涉及个人或医疗信息的常规事件。
+<span id="-healthcare"></span><span id="healthcare"></span>用户可以使用医疗保健类应用执行各种操作，如购买医疗保险、预约挂号、在线问诊等等。在这类应用中，建议您记录登录、注册和其他不涉及个人或医疗信息的常规事件。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -33,6 +35,8 @@ x-zendesk:
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
 
 ![In_appEvents_UserJourneys_-_Copy_of_Healthcare__1_.png](https://files.readme.io/54174e697c8dfe2d0d388c19fdd5fa0fbf9703c0155b9c250b40b5d0bcf19698-8232949117073.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -127,6 +131,8 @@ x-zendesk:
 | payment\_method\_type | 使用的付款方式 | 信用卡，本地 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

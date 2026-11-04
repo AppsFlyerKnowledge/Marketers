@@ -24,6 +24,8 @@ x-zendesk:
 
 > **概要：** 利用 ROI360 商店收入数据来验证应用内购买和订阅情况、防止重复计费，并计算净收入。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > ROI360 商店收入功能仅面向订阅 ROI360 高级套餐的客户开放。如需查看您的套餐或进行升级，请联系您的客户成功经理（CSM）。
@@ -37,9 +39,13 @@ ROI360 应用商店收入是 AppsFlyer 推出的一款高端解决方案，旨�
 | Data Sources。 | <ul><li>AppsFlyer 购买 SDK 连接器（适用于 Android 和 iOS）</li><li>设置App Store服务器通知</li><li>Google Play 实时开发者通知 (RTDN)</li></ul> |
 | 报告与数据可用性 | 收入数据可在 AppsFlyer 仪表盘和报告中查看，也可通过回传与合作伙伴共享。 |
 
+<div id="warning" />
+
 > ❗️ **重要提示**
 >
 > 在使用 ROI360 商店收入时，请勿发送应用内购买事件，否则会导致收入报告重复。
+
+<div id="how-does-roi360-store-revenue-work" />
 
 ## ROI360 的收入存储机制是怎样的？
 
@@ -55,6 +61,8 @@ ROI360 应用商店收入是 AppsFlyer 推出的一款高端解决方案，旨�
    * 与未知交易相关的通知会被忽略。
    * 对于iOS平台的所有服务器通知，您可以更改其发送路径，将其发送到您自己的服务器。
 
+<div id="activate-roi360-store-revenue" />
+
 ## 启用 ROI360 店铺收入
 
 要启用 ROI360 店铺收入测量功能，请按照以下步骤操作：
@@ -64,13 +72,19 @@ ROI360 应用商店收入是 AppsFlyer 推出的一款高端解决方案，旨�
 3. 在 **“1**”下，**选择“产品类型**”，然后选择 **“ROI360**”。
 4. 点击 **“下一步**”继续。
 
+<div id="set-up-roi360-store-revenue" />
+
 ## 设置ROI360商店收入
 
 请参阅《<Anchor target="_blank" href="/marketers/zh/docs/set-up-roi360-store-revenue">设置 ROI360 店铺收入</Anchor>》一文
 
+<div id="reference" />
+
 ## 其他参考信息
 
 以下各节将详细介绍ROI360应用内购买（IAP）和订阅收入测量的关键方面。其中包括应用内购和订阅事件的相关事件及参数、净收入（支持毛收入转净收入的计算），以及ROI360应用内购和订阅收入测量解决方案的一般特性与限制。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -987,11 +1001,15 @@ SDK connector针对处于计费周期内的订阅用户收到通知，但尚未�
 
 Net revenue 是一个专为支持 ROI360 Store 收入解决方案而构建的业务逻辑层。AppsFlyer会按照这层逻辑对接收到的每一笔交易信息实时自动计算净收入值，并将这些数据纳入报告中。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 净收入会在原始数据报告中显示，并可通过应用内事件回调实时发送。在<Anchor target="_blank" href="/marketers/zh/docs/my-dashboards">“我的仪表盘”</Anchor>中，它以净指标（净收入、净投资回报率、净广告支出回报率、净每用户平均收入、净毛利润）的形式提供。
 >
 > 若要在回调中发送净收入，请在应用内事件配置中选择 **“值、收入和净收入**”选项。详情请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#回传内容">“应用内事件回调配置</Anchor>”。
+
+<div id="tip" />
 
 > 📘 **提示**
 >

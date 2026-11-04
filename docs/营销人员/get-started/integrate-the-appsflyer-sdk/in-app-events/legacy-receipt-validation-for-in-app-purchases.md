@@ -28,11 +28,15 @@ x-zendesk:
   section_id: 6551285343761
   url: https://support.appsflyer.com/hc/zh-cn/articles/207032106
 ---
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 本文为您介绍的是已下线的收据验证功能。如需了解更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/bulletin-legacy-receipt-validation-is-deprecated">公告：旧版收据验证已弃用</Anchor>
 
 > **概要：** 收据验证可有效防止iOS或Android应用商店中的虚假应用内购买，并确保相关购买事件真实有效。**请注意**：本文为您介绍的是“历史版本”功能。如需了解最新的全自动增强型<Anchor target="_blank" href="/marketers/zh/docs/purchase-and-subscription-validation-overview">应用内购买验证机制</Anchor>，请参阅相关文档。
+
+<div id="receipt-validation-flow" />
 
 ## 收据验证流程
 
@@ -64,9 +68,13 @@ x-zendesk:
 * AppsFlyer的收据验证服务 对所有账户免费开放。
 * 对于Android端应用，如果用户购买时没有连接网络，系统可能会返回`null`作为验证结果，将其视为验证失败。
 
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > 调用`validateAndLogInAppPurchase`时，系统会自动生成一个**af\_purchase**应用内事件。因此，请勿在验证过程中手动生成该事件，以免收入数据重复。
+
+<div id="note" />
 
 > 📘 **注意**
 >

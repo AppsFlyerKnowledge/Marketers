@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)
 
+<div id="about-user-invite-attribution" />
+
 ## 用户邀请归因简介
 
 用户邀请是指您的现有用户分享推广链接，引导其他人（比如好友）下载/打开您的应用。
@@ -45,6 +47,8 @@ x-zendesk:
 
 用户与他人分享的邀请链接实际就是OneLink自定义链接（短链），这些链接由接入您应用的AppsFyer SDK生成。您可以通过调整OneLink链接的设置，确保受邀用户跳转到正确的位置—不管是进入适配的应用商店、打开相关应用，还是通过深度链接/延迟深度链接进入应用中的具体页面。<Anchor target="_blank" href="/marketers/zh/docs/onelink-guide">进一步了解OneLink</Anchor>
 
+<div id="flow" />
+
 ### 链路
 
 用户邀请场景中的归因链路如下：
@@ -57,6 +61,8 @@ x-zendesk:
    * 尚未在其设备中安装相关应用，这时用户B会跳转到适配的应用商店。用户B可以通过延迟深度链接，在应用首次打开时进入某个具体页面，并且/或者获得奖励。
    * 用户B完成某个应用内事件后，用户A可以获得奖励。
 
+<div id="viewing-data" />
+
 ## 数据查看方式
 
 您可以通过AppsFlyer的面板或报告来获取用户邀请相关的数据。在AppsFlyer面板中，您可以按下列维度筛选出用户邀请的归因数据：
@@ -66,6 +72,8 @@ x-zendesk:
 * **营销活动**:由营销人员设定。
 
 在AppsFlyer报告中，用户邀请的媒体渠道信息（即参数`pid`）由SDK发送，并以默认值填充`af_app_invites`。
+
+<div id="procedures" />
 
 ## 设置流程
 
@@ -105,6 +113,8 @@ x-zendesk:
 
 <Accordion title="参数">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-in-the-sdk" />
+
 #### 下表列出了可以写入SDK的参数，您可以在空白列中填入所需的值，然后发送给开发人员进行部署。
 
 <table><thead><tr><th>参数/值</th><th>说明</th><th>记录需要部署的参数值/使用场景</th></tr></thead><tbody><tr><td>OneLink template ID</td><td>包含所有基础设置，用作所有用户邀请链接的基础。使用场景示例:H5hv</td><td> </td></tr><tr><td>Channel</td><td>流量入口的名称，用于在AppsFlyer面板中按流量入口对归因到的转化进行分组，便于查看。</td><td> </td></tr><tr><td>Campaign</td><td>广告系列的名称，用于在AppsFlyer面板中按广告名称对归因到的转化进行分组，便于查看。</td><td> </td></tr><tr><td> <span>is_retargeting=true</span><br/> </td><td>用于标识针对现有用户进行再营销的广告系列。</td><td> </td></tr><tr><td>deep_link_value</td><td>可在受邀用户的设备中形成特定的体验，常用于指定用户跳转的页面。比如在一个售卖水果的应用中，可以通过深度链接让用户跳转到苹果的详情页。</td><td> </td></tr><tr><td>deep_link_sub1</td><td rowspan="10">可在受邀用户的设备中形成特定的体验，一般情况下，引导用户进入具体页面的行为通过deep_link_value来实现，因此这些参数可用于您需要的任何其他功能，例如发放奖励/优惠，或记录发起邀请/推荐的用户。 </td><td> </td></tr><tr><td>deep_link_sub2</td><td> </td></tr><tr><td>deep_link_sub3</td><td> </td></tr><tr><td>deep_link_sub4</td><td> </td></tr><tr><td>deep_link_sub5</td><td> </td></tr><tr><td>deep_link_sub6</td><td> </td></tr><tr><td>deep_link_sub7</td><td> </td></tr><tr><td>deep_link_sub8</td><td> </td></tr><tr><td>deep_link_sub9</td><td> </td></tr><tr><td>deep_link_sub10</td><td> </td></tr><tr><td>【可选】pid</td><td><p>您生成的链接中默认包含参数值为<code>af_app_invites</code>的媒体渠道（即<code>pid</code>参数）。 </p><p>如需更改该默认值，请让您的开发人员另行添加一个名为的自定义参数，并在其中填充您指定的值。<strong>请注意</strong>：在安卓平台中，此方式仅适用于V6.4.2及以上版本的SDK。</p></td><td> </td></tr><tr><td>Branded name</td><td>即品牌域名，用于在AppsFlyer面板中按品牌域名对归因到的转化进行分组，便于查看。</td><td> </td></tr></tbody></table>
@@ -131,6 +141,8 @@ Mark负责一个水果售卖应用的营销工作。他想要通过深度链接�
 | Campaign | summer\_sale | 用于归因以及AppsFlyer中的数据呈现。 |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** 广告主可以通过Data Locker获取各种汇总和原始数据报告。
 
+<div id="reports-available-via-data-locker-for-advertisers" />
+
 ## 广告主可通过Data Locker获取的报告
 
 <table><colgroup><col/><col/><col/></colgroup><thead><tr><th>数据类型</th><th>报告分组</th><th>需要购买Data Locker</th></tr></thead><tbody><tr><td>原始数据</td><td>用户链路——原始数据</td><td>是（2）</td></tr><tr><td>原始数据</td><td>Protect360</td><td>是</td></tr><tr><td>原始数据</td><td>基于用户的归因（PBA） </td><td>否 </td></tr><tr><td>原始数据</td><td>增量分析</td><td>否 </td></tr><tr><td>原始数据</td><td>SKAN</td><td>否</td></tr><tr><td>原始数据</td><td>收入</td><td><p>购买了Data Locker套餐的广告主可查看次日最终版的广告收入报告。</p><p>购买了ROI360高阶套餐的广告主可查看所有其他报告。</p></td></tr><tr><td>原始数据</td><td>CTV、PC和主机端应用</td><td>是</td></tr><tr><td>汇总数据</td><td>群组分析</td><td>否</td></tr><tr><td>高级汇总数据</td><td>群组分析</td><td>否</td></tr><tr><td>汇总数据</td><td>素材优化</td><td><p>否</p><p>需购买素材优化高阶付费套餐。</p></td></tr><tr><td>汇总数据</td><td>SSOT</td><td>否</td></tr><tr><td colspan="3"><p>（1）没有Data Locker套餐的广告主必须提供其<a href="./data-locker-for-marketers#storage-options" target="_blank">自有的存储空间</a>，才能获取相关报告。</p><p>（2）跨平台的广告交互除外。</p><p>（3）购买了Data Locker套餐或数据分析API产品套件的广告主可获取相关数据。</p></td></tr></tbody></table>
@@ -40,6 +42,8 @@ x-zendesk:
 | 每日更新，次日可用 | 广告收入数据次日可用。举例来说，对于周一产生的数据，对应的报告会在周二UTC时间20:00之后写入周一的h=23文件夹中，可供使用。详情请见<Anchor target="_blank" href="/marketers/zh/docs/roi360-guide-ad-revenue-attribution#data-freshness">广告收入数据时效性</Anchor>。 |
 
 </Accordion>
+
+<div id="raw-data-reports" />
 
 ## 原始数据报告
 
@@ -157,6 +161,8 @@ PBA数据每日更新 ，并在前一天结束后的10-12小时后可用（UTC�
 
 </Accordion>
 
+<div id="advanced-raw-data-reports-beta" />
+
 ## 高级原始数据报告（测试版）
 
 高级报告引入了一代新的原始数据报告，旨在提供结构化、经过验证的和**AI准备好的数据集**。它们能够使用仅三个报告来摄取和分析**整个用户旅程，从第一次接触到转化和安装后的活动**。  
@@ -186,6 +192,8 @@ PBA数据每日更新 ，并在前一天结束后的10-12小时后可用（UTC�
 | --- | --- | --- | --- |
 | 用户获取和重新定向指南 | 转化 | 1–24小时 | ✅ |
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 此报告不包括重新安装。
@@ -203,6 +211,8 @@ PBA数据每日更新 ，并在前一天结束后的10-12小时后可用（UTC�
 | 用户获取和重新定向指南 | 最终用户事件 | 1–24小时 | ✅ |
 
 </Accordion>
+
+<div id="aggregated-reports" />
 
 ## 汇总报告
 

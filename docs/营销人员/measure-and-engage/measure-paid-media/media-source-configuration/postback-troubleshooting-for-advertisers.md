@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** 概要：如果您的合作渠道无法正常接收回传，本文可帮助您排查具体的问题成因和解决方案。请根据您遇到的问题对照以下各章节的主题，找到适用于该问题的内容。
 
+<div id="check-the-integration-toggles" />
+
 ## 检查对接开关
 
 对接配置中的各种功能分别有其对应的开关，这些开关的使用状态可能会影响回传的接收。
@@ -66,6 +68,8 @@ Meta install referrer与 AppsFlyer就不会向渠道发送事件回传。
    ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
 
 </Accordion>
+
+<div id="check-the-event-configuration" />
 
 ## 检查事件配置
 
@@ -140,6 +144,8 @@ AppsFlyer会根据您设置的<Anchor target="_blank" href="/marketers/zh/docs/i
 
 </Accordion>
 
+<div id="privacy-restrictions" />
+
 ## 隐私限制
 
 在以下情况中，AppsFlyer会受到隐私政策的限制而不发送回传。
@@ -171,6 +177,8 @@ SDK中部署了数据共享的筛选条件，阻止相关渠道接收信息。�
 详情请见
 
 </Accordion>
+
+<div id="miscellaneous" />
 
 ## 其他
 
@@ -247,6 +255,8 @@ SDK中部署了数据共享的筛选条件，阻止相关渠道接收信息。�
 根据<Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks#用于发送回传的各类模版">高级隐私模板</Anchor>发送回传
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

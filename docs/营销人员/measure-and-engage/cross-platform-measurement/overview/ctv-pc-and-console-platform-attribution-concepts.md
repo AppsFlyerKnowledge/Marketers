@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="the-appsflyer-cross-platform-solution" />
+
 ## AppsFlyer的跨端归因方案
 
 在当今的互联网营销行业中，要在多个设备和平台中触达用户是用户增长方面的一大难题。传统的衡量方法无法捕捉到完整的跨平台用户链路。如果要了解营销推广的效果并作出明智的决策，就必须进行跨平台的归因衡量。
@@ -36,6 +38,8 @@ AppsFlyer为广告主提供全面的跨端归因解决方案，可配合传统�
 推广相关应用时，广告主可以选择在该应用的平台中投放广告，也可以在其他平台上进行推广。举例来说，广告主可以在Steam平台上投放广告，推广其Steam应用，也可以通过Google Ads等渠道在PC端投放该Steam应用的广告。
 
 无论广告主采取哪一种营销策略，都可以与AppsFlyer对接并针对其CTV、PC和主机端应用的激活和激活后事件，获取流量来源（自然或非自然）及带量广告的归因和效果数据。营销人员可以利用这些关键信息计算其用户的生命周期价值（LTV），进而对营销工作进行评估和优化。<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-attribution-model">进一步了解AppsFlyer归因</Anchor>
+
+<div id="supported-platforms" />
 
 ### 适配平台
 
@@ -47,7 +51,9 @@ AppsFlyer为广告主提供全面的跨端归因解决方案，可配合传统�
 1. **从AppsFlyer的侧边栏中选择协作** > Partner Marketplace。
 
 
-1. **<span id="list-of-specified-platforms"></span>从AppsFlyer的侧边栏中选择协作** > Partner Marketplace。
+1. **<span id="integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms"></span><span id="list-of-specified-platforms"></span>从AppsFlyer的侧边栏中选择协作** > Partner Marketplace。
+
+<div id="cross-platform-attribution-flows" />
 
 ## 跨平台归因流程
 
@@ -149,6 +155,8 @@ SRN归因目前仅适用于同平台投放，也就是说营销触点（点击�
 * <Anchor target="_blank" href="/marketers/zh/docs/cross-platform-landing-pages-with-smart-script">如需了解如何设置带有智能脚本的跨平台落地页，请参考此文档。</Anchor>
 
 </Accordion>
+
+<div id="data-availability" />
 
 ## 数据可用性
 

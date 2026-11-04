@@ -24,6 +24,8 @@ x-zendesk:
 
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 
+<div id="branded-domains" />
+
 ## 品牌域名
 
 * 如上图所示，品牌域名的原理就是使用您的品牌名称和域名为归因链接打上品牌标签。
@@ -39,6 +41,8 @@ x-zendesk:
   * 进行邮件营销时无需担心链接与发件人的邮箱不匹配而被标记为垃圾邮件。
   * AppsFlyer付费<Anchor target="_blank" href="/marketers/zh/docs/account-management-plans-payments-and-billing">订阅计划</Anchor>包含品牌域名。
 
+<div id="principles-of-implementation" />
+
 ### 部署原理
 
 品牌域名的作用原理是将您在Domain Name System（域名系统，简称DNS）中定义的完整域名关联到某个OneLink子域名（AppsFlyer CNAME）。您需要在DNS中使用标准设置，并在AppsFlyer后台设置一个品牌域名。此外，您还需要对应用作一些微调，使其支持品牌域名。
@@ -46,6 +50,8 @@ x-zendesk:
 具体的部署工作需要DNS管理员的协助，DNS管理员通常是您的IT团队成员或DNS托管服务商以及应用开发人员。
 
 一个OneLink子域名可关联多个完整域名。也就是说，同一个OneLink子域名可用于多个品牌。
+
+<div id="setting-up-branded-domains" />
 
 ### 品牌域名的设置
 
@@ -57,6 +63,8 @@ x-zendesk:
 | 2 | 开发人员 | [在应用中设置品牌域名](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | 对应用代码进行微调。 |
 | 3 | 营销人员 | [使用并测试品牌域名](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
 | 按需 | 营销人员 | [修改或删除品牌域名](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
+
+<div id="procedures" />
 
 ### 设置流程
 
@@ -93,6 +101,8 @@ x-zendesk:
      界面会显示消息“AppsFlyer CNAME was found”（找到了AppsFlyer CNAME）。
    * 如果未找到CNAME，请复制相关的AppsFlyer CNAME并将其发送给您的DNS管理员，让他们确保您的完整域名映射到这个CNAME。DNS管理员必须将完整域名映射到AppsFlyer CNAME，否则您创建的品牌域名将无法生效。
 
+     <div id="note" />
+
      > 📘 **注意**
      >
      > CNAME记录的映射必须在7天内完成，从品牌域名创建之日起开始计算，到确认窗口中显示的具体日期为止。  
@@ -101,15 +111,21 @@ x-zendesk:
 
 7. 点击**完成**。完成以上步骤后，您就可以使用您的品牌域名在该OneLink模板下创建新链接。
 
+   <div id="note-1" />
+
    > 📘 **注意**
    >
    > * 如果您已经基于OneLink模板创建了不含品牌域名的链接，这些链接仍然有效。
    > * 品牌域名从创建到生效最长需要24小时。
 
 
+<div id="renew-the-7-day-period-for-mapping-the-cname-record" />
+
 #### 刷新CNAME记录的7天映射期限
 
 如果完整域名的CNAME记录未在品牌域名创建后的7天内映射到AppsFlyer，则新建的品牌域名无法生效。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -121,9 +137,13 @@ x-zendesk:
 2. 找到尚未映射到AppsFlyer的品牌域名。您可以通过警示图标（![alert.png](https://files.readme.io/7df53739ca5c629ec0bda789563f59717da9699986222705228f57e0d947c8de-30192946335761.png)）定位到相关域名。
 3. 点击刷新图标（<Image alt="refresh.png" src="https://files.readme.io/052b47c423612c1b0549f37ed6394373d37f28331e09f4c709601a7e5473bf2b-30192959741585.png" width="18px" />），刷新7天的映射期限。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > 如果您决定不刷新7天的映射期限，可以点击删除图标（<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />）删除该品牌域名。您只能删除尚未映射到AppsFlyer的品牌域名。
+
+<div id="custom-ssl-certificate-optional" />
 
 #### 自定义 SSL 证书（可选）
 
@@ -142,6 +162,8 @@ AppsFlyer 管理的 SSL 是大多数客户的默认和推荐选项，无需额�
 6. 一旦他们给你新的 SSL 证书，就把它上传回 AppsFlyer。
 
 <Image alt="上传新的 SSL 证书到 AF.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -287,6 +309,8 @@ AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.g
 
 <Accordion title="修改、验证及删除品牌域名">
 
+<div id="edit-a-branded-domain-mapping" />
+
 #### **请按以下步骤修改品牌域名的映射：**
 
 您可以修改现有完整域名的映射，将其关联到另一个OneLink子域名，无需再设置一个CNAME。
@@ -298,9 +322,13 @@ AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.g
 5. 点击<strong>下一步。</strong>无需再设置一个CNAME。
 6. 点击**完成**。
 
+<div id="important" />
+
 > ❗️ **警告**
 >
 > 修改在投广告的品牌域名可能会使链接功能发生变化或失效。
+
+<div id="verify-a-branded-domain-mapping" />
 
 #### **验证品牌域名的映射**
 
@@ -310,20 +338,28 @@ AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.g
 2. 进入您想要验证的品牌域名。
 3. 点击验证图标（<Image alt="verify-2.png" src="https://files.readme.io/4ac94a535e9101b3e727351f67df8917c0870d6ede8ec963de8c5528893b8e2b-30192946342929.png" width="17px" />）。
 
+<div id="note-5" />
+
 > 📘 **注意**
 >
 > 如果由于CNAME记录尚未映射而导致验证失败，请在验证失败的消息弹窗中指定的日期之前（即7天内）完成映射。
 > 如果相关的CNAME记录在截止日期前未完成映射，您需要刷新7天的映射期限。
 
+<div id="domain-cname-record-no-longer-pointing-to-appsflyer" />
+
 #### **域名CNAME记录不再指向AppsFlyer**
 
 如果您将CNAME记录修改为不再指向AppsFlyer，您的品牌域名将被AppsFlyer中删除。
+
+<div id="delete-a-branded-domain-mapping" />
 
 #### **删除品牌域名的映射**
 
 如需删除某个品牌域名，请联系您的CSM或发邮件至hello@appsflyer.com。
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## 问题排查、特点和局限性
 

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** 为了应对iOS 14.5全量上线、Apple推行ATT后的隐私政策，广告主可以使用汇总层级的高级隐私保护（AAP）框架，在AF后台调整用户层级级别归因数据的可用性。
 
+<div id="aggregated-advanced-privacy-aap-framework" />
+
 ## 基于高级隐私保护的汇总数据框架
 
 AppsFlyer汇总层级的高级隐私保护（AAP）框架可阻断不同厂商的应用和网站之间的用户跟踪，并防止用户或设备被精确识别。AAP将Apple的应用跟踪透明度（App Tracking Transparency）原则作为隐私保护的最低标准。
@@ -35,6 +37,8 @@ AppsFlyer汇总层级的高级隐私保护（AAP）框架可阻断不同厂商�
 iOS 14.5全量上线、Apple推行ATT以后，如果您启用了AAP，那么对于拒绝授权的iOS 14.5+用户，广告主和渠道将无法获取其用户级别的归因数据。
 
 AAP不影响广告主和渠道对于汇总归因数据和分析报告的获取。
+
+<div id="aap-impacted-features" />
 
 ### 受AAP影响的功能
 
@@ -52,6 +56,8 @@ AAP启用时对数据可用性的影响如下：
 * **归因数据与作弊检测（Protect360）:** <Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions">部分归因字段将受限或无法获取。</Anchor>
 * **点击、展示及被拦截的点击（作弊）数据：** <Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions#identifier-restriction">用户和设备相关标识符信息</Anchor>将不可用。
 * **延迟深度链接**：如果您计划在付费媒体中投放延迟深度链接，请使用<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">Unified Deep Linking API（UDL）。</Anchor>如果在付费媒体中使用GCD历史API实现延迟深度链接，则该链接对拒绝授权的用户无法生效。在自有媒体场景中，GCD历史API和新版深度链接API都可使延迟深度链接生效。
+
+<div id="data-availability-principles-in-aggregated-advanced-privacy" />
 
 ## AAP中的数据可用性原则
 
@@ -73,6 +79,8 @@ AAP启用时对数据可用性的影响如下：
 
 高级隐私保护模式对于网页广告和应用内广告的生效方式有所不同，因此必须使用af\_media\_type=web或af\_media\_type=app参数来说明媒体类型。点击<Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks#网页广告">这里了解更多信息。</Anchor>
 
+<div id="paid-and-owned-media-data-availability" />
+
 ### 付费及自有媒体的数据可用性
 
 <div id="paid-media" />
@@ -80,6 +88,8 @@ AAP启用时对数据可用性的影响如下：
 <Accordion title="付费媒体">
 
 付费媒体包括与AppsFlyer对接的移动广告平台，广告主会在这些平台上投放广告。
+
+<div id="paid-media-data-availability-by-att-status" />
 
 #### 分ATT授权状态的付费媒体数据可用性
 
@@ -97,6 +107,8 @@ Apple的AppTrackingTransparency（应用跟踪透明度，简称ATT）框架仅�
 
 </Accordion>
 
+<div id="controlling-advanced-aggregated-privacy" />
+
 ## 汇总层级高级隐私保护设置的调控方式
 
 <div id="aap-central-switch" />
@@ -107,11 +119,15 @@ AAP是一个用于调控应用级别高级隐私保护设置的开关。您在�
 
 ![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
 
+<div id="aap-enabled" />
+
 #### AAP开启时
 
 * 汇总的归因数据仍可用，这包括数据总览面板以及群组和Master API等报告工具。
 * 相关应用下所有渠道的[高级隐私保护开关都处于打开状态，且无法在渠道层级更改。请注意：以上设置已被锁定，无法调整位置。](#partner-advanced-privacy-switch)
 * 广告主和渠道的用户级别数据可用性会受到限制，这在[上文相关部分](/docs/apply-aggregated-advanced-privacy-framework#aap中的数据可用性原则)有详细解说明。
+
+<div id="aap-disabled" />
 
 #### AAP关闭时
 
@@ -153,11 +169,15 @@ AAP关闭时，广告主仍可为各广告平台单独设置高级隐私保护�
 
 </Accordion>
 
+<div id="advanced-aggregated-privacy-implications-for-your-partners" />
+
 ## 汇总层级高级隐私保护对于合作渠道的影响
 
 <div id="ad-networks" />
 
 <Accordion title="广告平台">
+
+<div id="postbacks-to-ad-network-partners" />
 
 #### **发送到广告平台的回传数据**
 
@@ -167,6 +187,8 @@ AAP关闭时，广告主仍可为各广告平台单独设置高级隐私保护�
 
 * AAP:应用层级开关
 * AP:渠道层级开关
+
+<div id="postbacks-for-attributed-ad-networks" />
 
 #### **广告平台获得归因时收到的回传**
 
@@ -182,6 +204,8 @@ AAP关闭时，广告主仍可为各广告平台单独设置高级隐私保护�
 ![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
 
 高级隐私保护模式对于网页广告和应用内广告的生效方式有所不同，因此必须使用af\_media\_type=web或af\_media\_type=app参数来说明媒体类型。点击<Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks#网页广告">这里了解更多信息。</Anchor>
+
+<div id="postbacks-for-unattributed-partners" />
 
 #### **渠道未获得归因时收到的回传**
 
@@ -241,6 +265,8 @@ AAP会影响数据分析平台接收到的共享数据，其原理与AAP对广�
 4. 点击**保存**。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

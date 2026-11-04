@@ -24,15 +24,21 @@ x-zendesk:
 
 > **概要：** 通过高级安全模块加强 Android 应用的欺诈防护。此实时解决方案在归因安装之前检测并阻止归因欺骗和操纵流量。专为高流量应用和Protect360客户端设计，特别是那些与分支机构合作的客户。该模块完全可由您配置，允许初始设置和持续维护，以适应不断发展的欺诈模式并保护数据完整性。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > Protect360 高级安全模块测试版现已面向所有 Protect360 用户开放。如需加入，请联系您的客户成功经理 (CSM)。
+
+<div id="what-is-sdk-spoofing" />
 
 ## 什么是 SDK 欺骗？
 
 SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器发送虚假的安装和应用内事件请求，而无需在真实设备上安装或运行应用。应用程序 SDK 未被黑客攻击或修改。相反，欺诈者会模仿真实应用发出的网络请求，使活动看起来合法。
 
 对于广告商而言，SDK 欺骗可能导致从未发生的安装和参与、安装量膨胀、AppsFlyer 和应用商店号之间的差异以及广告支出的浪费。
+
+<div id="about-the-advanced-security-module" />
 
 ## 关于高级安全模块
 
@@ -44,6 +50,8 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 
 该模块在首次应用启动(由 SDK 记录)后触发，但在安装属性确定之前触发。要使用高级安全模块，您必须使用 Android SDK v6.15.2 或更高版本。
 
+<div id="set-the-advanced-security-module" />
+
 ## 设置高级安全模块
 
 设置高级安全模块，以验证应用内流量是否来自已签名的应用构建，并检测(并可选地阻止)欺骗流量。
@@ -52,12 +60,16 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 
 <Accordion title="配置高级安全模块">
 
+<div id="step-1-open-and-select-an-app" />
+
 #### 第4步：打开并选择应用程序'%1'
 
 1. 在 AppsFlyer 中，转到**设置 > Protect360 > 高级安全模块**。
 2. 单击**开始**或**添加构建**。
 3. 选择要在其上实施高级安全模块解决方案的应用程序。
 4. 点击**Next**。
+
+<div id="step-2-add-certificate" />
 
 #### 第4步：添加证书
 
@@ -68,17 +80,23 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 
 注意：向开发人员询问用于对应用程序进行签名的所有[证书哈希](https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint)。安全模块使用这些证书来验证流量是否来自您的应用，因此应包含所有相关哈希。
 
+<div id="step-3-excluded-app-versions-from-detection" />
+
 #### 第4步：从检测中排除的应用版本
 
 * 添加应从高级安全检测中排除的应用版本。典型的情况是：
   * 集成高级安全模块之前发布的版本。
   * 不包括模块的测试或遗留构建。
 
+<div id="step-4-build-activation" />
+
 #### 第4步：生成激活
 
 1. 单击**激活构建**。
 2. 您的构建将进入**进行中**，直到构建完成。这可能需要10-15分钟。
 3. 完成后，单击构建上的**复制代码**按钮复制代码，并将其发送给开发人员以集成到应用程序 SDK 中。"
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -92,6 +110,8 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 
 欺诈技术会随着时间而变化，恶意行为者可能会尝试逆向设计检测逻辑。定期维护可确保持续有效。
 
+<div id="when-to-update-the-configuration" />
+
 #### **何时更新配置**
 
 如果您发现以下情况，请更新您的设置：
@@ -100,6 +120,8 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 * 交通模式的变化
 * 新的应用版本或证书更改
 * 降低现有保护措施的有效性
+
+<div id="what-you-can-update" />
 
 #### **您可以更新的内容**
 
@@ -110,6 +132,8 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 * 重建和重新部署安全模块
 * 根据展开状态调整检测模式
 
+<div id="best-practices" />
+
 #### **最佳实践**
 
 * 定期查看高级安全见解
@@ -118,6 +142,8 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 * 定期重新评估配置，以领先于新出现的欺诈方法
 
 </Accordion>
+
+<div id="data-visibility" />
 
 ## **数据可见性**
 
@@ -153,6 +179,8 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 
 高级安全模块可以在防欺诈工作室页面找到。
 
+<div id="how-to-access" />
+
 #### 如何访问
 
 要访问高级安全模块，请执行以下操作：
@@ -162,17 +190,23 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 3. 使用页面顶部的应用下拉菜单，选择您想要配置的应用。
 4. 从左侧菜单中选择高级安全模块卡。
 
+<div id="the-advanced-security-module-page" />
+
 #### “高级安全模块”页面
 
 <Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 高级安全模块页面分为三个部分。
 
+<div id="detection-status" />
+
 ##### 检测状态
 
 * 显示检测模式。这两个选项被实现并标记。默认情况下，它设置为**标记**。
 
 注意：要更改检测状态，请与 CSM 联系。
+
+<div id="top-app-versions-by-detection-status" />
 
 ##### 按检测状态排名靠前的应用版本
 
@@ -181,6 +215,8 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
     * **未标记** - 安装高级安全模块未检测到的候选项。
     * **已标记** - 在标记模式下安装高级安全模块检测到的候选项。
     * **已阻止** - 安装高级安全模块在实现模式下检测到的候选项。每个被阻止的安装候选项都不会继续。
+
+<div id="insights" />
 
 ##### 深入分析
 
@@ -196,33 +232,49 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 
 <Accordion title="常见问题解答">
 
+<div id="what-is-advanced-security" />
+
 #### 什么是高级安全？
 
 高级安全是 AppsFlyer Android SDK 的附加保护层，可帮助防止归属欺骗，这是一种欺诈，即使没有真实用户安装或使用应用程序，也会报告虚假安装或事件。
+
+<div id="what-problem-does-advanced-security-solve" />
 
 #### 高级安全能解决什么问题？
 
 高级安全有助于防止由 AppsFlyer 中出现的但应用商店或后端系统中不存在的欺骗导致的虚假安装和应用内活动。这样可以减少夸大的安装数量、数据差异和浪费的广告支出。
 
+<div id="what-is-attribution-spoofing" />
+
 #### 什么是归因欺骗？
 
 属性欺骗是一种欺诈技术，攻击者生成虚假的安装或应用内事件数据，并将其发送到 AppsFlyer,同时假装这些数据来自您的应用。没有实际发生真正的应用安装或用户活动。
+
+<div id="how-does-advanced-security-prevent-attribution-spoofing" />
 
 #### 高级安全如何防止归属欺骗？
 
 高级安全性 通过为每个请求添加唯一的验证签名，验证安装和应用内事件数据是否真正来自应用的 SDK。AppsFlyer 会检查此签名，以确认数据是真实的，没有被欺骗或篡改。
 
+<div id="does-advanced-security-affect-the-app-or-user-experience" />
+
 #### 高级安全性会影响应用程序或用户体验吗？
 
 否。高级安全在后台运行，不会改变用户安装或使用应用程序的方式。任何额外的处理都发生在幕后，用户不会注意到。
+
+<div id="who-should-use-advanced-security" />
 
 #### 谁应该使用高级安全？
 
 高级安全对于大量使用非 SRN 或附属网络的应用最为相关，它们看到应用商店安装和 AppsFlyer 数据之间无法解释的差距，或者怀疑存在使用标准方法难以检测的复杂欺诈。
 
+<div id="is-advanced-security-available-for-all-platforms" />
+
 #### 高级安全是否适用于所有平台？
 
 否。高级安全目前仅适用于 Android 应用程序，并且提供给 Protect360 高级客户。它还兼容所有 AppsFlyer 插件。
+
+<div id="how-do-i-know-advanced-security-is-working" />
 
 #### 如何知道高级安全功能在起作用？
 

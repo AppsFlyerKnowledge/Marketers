@@ -24,13 +24,15 @@ x-zendesk:
 > **概要：** 概览：通过为您的在线教育应用程序记录这些建议的应用内事件，评估用户在整个用户路径中的质量。
 
 
-<span id="online-education"></span>在线教育应用程序使用户可以远程学习。
+<span id="-online-education"></span><span id="online-education"></span>在线教育应用程序使用户可以远程学习。
 
 记录事件可以帮助您确定：
 
 * 用户最想要什么课程，并为您提供定向思路
 * 可以重新定向哪些用户，并提醒他们需要额外的教程才能完成课程
 * 哪些课程和证书的需求量最大
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -39,6 +41,8 @@ x-zendesk:
 > 有关记录应用内事件的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview">富应用内事件指南</Anchor>。
 
 [![Flowchart_for_recommended_events_online_education_app_user_journey](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 预定义事件的推荐结构
 
@@ -136,6 +140,8 @@ x-zendesk:
 | af\_receipt\_id | 收据ID | 9277 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构
 

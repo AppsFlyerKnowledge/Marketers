@@ -31,6 +31,8 @@ x-zendesk:
 
 SKAdNetwork（SKAN）是Apple iOS系统的一部分，能让广告主在确保用户隐私的前提下衡量投放效果。SKAN的归因不涉及IDFA或其他设备ID，且无需用户进行ATT授权。
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > * iOS 15上线后，建议您将<Anchor target="_blank" href="/marketers/zh/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15">SKAN的回传数据备份发送</Anchor>给AppsFlyer，这样AppsFlyer就能够验证回传中的转化值是否被篡改。
@@ -65,6 +67,8 @@ SKAdNetwork（SKAN）是Apple iOS系统的一部分，能让广告主在确保�
 
 </Accordion>
 
+<div id="appsflyer-skan-solution" />
+
 ## AppsFlyer的SKAN解决方案
 
 AppsFlyer会根据iOS的SKAN回传来提供汇总的iOS归因结果。这些回传数据先由iOS发送到广告平台，再由广告平台转发到AppsFlyer，其中包含经匿名化处理的归因记录，且每次回传都带有对应的转化值（CV）。转化值是由广告主设置的，用于在激活后最初的一段时间内衡量用户质量。
@@ -78,6 +82,8 @@ AppsFlyer的SKAN解决方案能为广告主提供以下功能：
 <div id="principles-and-flow" />
 
 <Accordion title="原理和流程">
+
+<div id="skan-attribution-flow" />
 
 #### **SKAN归因流程。**
 
@@ -123,6 +129,8 @@ AppsFlyer<Anchor target="_blank" href="/marketers/zh/docs/skan-conversion-studio
 | 可配置 | <Anchor target="_blank" href="/marketers/zh/docs/skan-cv-decode-map-your-cv-to-events">Decode（解析）</Anchor> | <ul><li>手动创建用于事件映射的CV值，并在应用中进行对应的CV设置。该方案适用于无法在应用中接入AppsFlyer SDK的广告主。Decode（解析）模式的启用方式如下：从AF后台进入**SKAN转化值操作台**，点击“⋮”选项图标，选择**上传自定义解析映射文件**。</li></ul> | 12-1512小时（63天） |
 
 </Accordion>
+
+<div id="additional-skadnetwork-information" />
 
 ## 关于SKAN的其他信息
 
@@ -222,6 +230,8 @@ SKAN面板中的自然量指标是通过以下机制计算的：
 
 </Accordion>
 
+<div id="skan-integrated-partners" />
+
 ## SKAN对接渠道
 
 <div id="recording-ad-revenue" />
@@ -253,6 +263,8 @@ AppsFlyer会把SKAN归因相关的回传数据发送给对接渠道（若使用S
 | <span id="inapp-event-mapping-verification"></span>应用内事件映射验证 | **<span id="1611499069.009700"></span>必要的前期工作**：请务必确保SKAN衡量中设置的<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#映射方式">应用内事件</Anchor>在渠道侧有准确的映射，这样渠道才能以正确的方式记录回传数据。<br /><br />投放SKAN广告的渠道需要确保按照正确的衡量模式设置应用内事件。<br /><br />**请按以下步骤确认或更改渠道的事件映射**：<ol><li>从AppsFlyer后台进入**协作** > **活跃对接**。</li><li>选择您要查看的渠道，</li><li>进入**对接**选项卡。</li><li>确认设置是否符合以下描述，若不符合，请更改设置：<ol><li>打开**应用内事件回传**开关。</li><li>在SKAN衡量中设置的应用内事件、**SDK事件名称**与**渠道的事件标识符**准确对应。</li></ol></li><li>点击**保存对接**。</li></ol> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

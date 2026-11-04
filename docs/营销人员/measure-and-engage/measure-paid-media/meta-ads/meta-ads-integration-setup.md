@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **概要：** 本文主要讲解了如何完成Meta ads与AppsFlyer的对接配置。
 
+<div id="meta-ads-setup-guide" />
+
 ## Meta ads设置指南
 
 如要使用AppsFlyer来对Meta ads上的应用广告进行归因，最初的对接流程需要多长时间？
@@ -36,6 +38,8 @@ x-zendesk:
 如果您已经在您的<Anchor target="_blank" href="/marketers/zh/docs/integrate-the-appsflyer-sdk">应用中接入了AppsFlyer SDK</Anchor>，并且在Meta ads上定义了您的应用，那么只需要不到一分钟的时间就能完成对接！
 
 完成对接后，您无需登陆Facebook或在应用中接入Facebook SDK，即可进行移动归因。请按下文所述的[基础设置步骤](#meta-ads基础归因设置)说明进行操作，完成后可以进一步了解Meta ads的[高阶设置选项](#meta-ads高级归因设置)。
+
+<div id="basic-meta-ads-attribution-setup" />
 
 ## Meta ads基础归因设置
 
@@ -78,6 +82,8 @@ AppsFlyer是根据App ID来归因数据的，您可以使用同一个Facebook Ap
 1. 进入<Anchor target="_blank" href="https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fadvanced_mobile_measurement%2Fterms">Meta ads</Anchor>。
 2. 选择相关的应用 ID。
 3. 接受Meta的高级移动衡量条款。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -123,6 +129,8 @@ AppsFlyer是根据App ID来归因数据的，您可以使用同一个Facebook Ap
 
 </Accordion>
 
+<div id="advanced-meta-ads-attribution-setup" />
+
 ## Meta ads高级归因设置
 
 Meta ads的基础归因设置完成之后，您可以进一步设置一些高级对接配置。
@@ -137,6 +145,8 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
 
 #### **Meta install referrer**
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > Meta install referrer允许AppsFlyer从设备的本地存储中获取广告活动的元数据。请参阅[开发者中心（Dev Hub）](https://dev.appsflyer.com/hc/docs/install-android-sdk#meta-install-referrer)了解如何启用SDK以访问Meta install referrer。
@@ -147,6 +157,8 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
 * Meta install referrer可包含多个session的数据，而Google Play Install Referrer API仅可传递末次session的数据（相关设备必须在同一个session中完成点击和激活）。
 
 基于以上因素，原始数据中归因到Meta的激活数量可能会少有上涨。通过Google Play Install Referrer API或Meta install referrer对激活进行归因时，相关数据会出现在原始数据报告中。通过Meta install referrer获取的字段会在原始数据报告的匹配类型（match type）一列标记出来，用于归因。来自Facebook的数据标记为`fb_referrer`，来自Instagram的数据标记为`ig_referrer`。这些数据仅当同时满足以下条件时才会出现：1）解密密钥已提交；2）有归因到Meta ads 的激活。Meta install referrer的解密密钥与Google Play Install Referrer的解密密钥相同，因此无需在AppsFlyer中重复提交。
+
+<div id="campaign-attribution-fields-available-via-the-referrer" />
 
 #### **由Referrer提供的广告系列归因字段如下：**
 
@@ -159,6 +171,8 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
 * Account ID（账户ID）
 * 流量入口（Channel）
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * **Google Play Install Referrer API：**
@@ -166,6 +180,8 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
 >   * 流量入口（Channel）字段的值取决于Google Play Install Referrer API传递的channel值（由Meta发送到Google Play）。如果AppsFlyer接收到的channel值为空字符串，则流量入口字段显示为“None”。
 >
 > * **Meta install referrer：** 请参阅公告中的<Anchor target="_blank" href="/marketers/zh/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">前提条件和必要操作</Anchor>。
+
+<div id="meta-install-referrerfaq" />
 
 #### Meta install referrer—常见问题解答
 
@@ -188,6 +204,8 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
 * 精准定向：按用户兴趣、行为和高级人口特征细分人群时将定向要求设置为“relaxed”（宽松）。
 * 自定义人群包：将定向要求设置为“relaxed”（宽松）。
 * 将定向要求设置为“relaxed”时，必须针对相关广告系列勾选“Advantage detailed targeting”，如下图所示：[![](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)
+
+<div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
 #### 来自Google Play Referrer API或Meta install referrer的加密数据
 
@@ -238,10 +256,14 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
 
 **如需删除绑定的Meta ads账户，请按以下方式操作：** 在行动栏中，将鼠标悬停在账户上，点击**删除连接**。
 
+<div id="notes" />
+
 > 📘 **注意**
 >
 > * 如果您已经登入Meta Ads，则点击**f login**按钮时，窗口会出现闪退，这是正常现象。
 > * 如果有多名用户具备Meta ads权限，建议让这些用户都完成登录操作，<Anchor target="_blank" href="/marketers/zh/docs/meta-ads-faq#why-doesnt-cost-data-include-data-from-all-campaigns">以避免出现数据不完整的问题</Anchor>。
+
+<div id="cost-data-sync-status" />
 
 #### 成本数据同步状态
 
@@ -283,6 +305,8 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
   * 非拉丁（英文）字母的字符集：自2020年1月12日起，Meta ads不再支持中文字符。AppsFlyer尚未测试其他字符集，因此您在使用其他字符集之前，请先确认Meta ads是否支持回传中出现这些字符。
 * 事件名称区分大小写。为避免差异，请确保在所有媒体源和应用程序版本的事件名称中使用正确的大小写。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > Meta广告可以根据您的广告收入数据通过<Anchor target="_blank" href="/marketers/zh/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization">将 af\_ad\_revenue 事件映射到正确的Meta广告事件</Anchor>，以优化您的广告系列。
@@ -312,6 +336,8 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
 
 深入了解<Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns#在srn中使用深度链接">通过深度链接实现Meta ads等SRN上的用户跳转</Anchor>。
 
+<div id="whatsapp-retargeting-campaign-attribution" />
+
 #### WhatsApp重定向广告归因
 
 AppsFlyer支持通过深度链接归因在iOS和Android上测量用于重新参与的WhatsApp营销消息活动。
@@ -331,6 +357,8 @@ AppsFlyer支持通过深度链接归因在iOS和Android上测量用于重新参�
 此外，启用**高级数据共享**后，AppsFlyer 会对这些事件进行归因。该功能关闭时，仅限带有IDFA的设备所产生的回传和事件才会得到共享和归因。
 
 这种方法可对iOS点击和浏览带来的激活，以及iOS深度链接带来的再互动进行归因，适用于关闭广告标识符或同时关闭广告标识符和ATT授权的设备。基于最后触点归因，最长归因窗口期为24小时。
+
+<div id="note-3" />
 
 > 📘 **注意**
 >
@@ -358,6 +386,8 @@ CCPA隐私条例规定限制来自美国加州Meta ads用户的数据。
 
 如果您的应用通过Meta Audience Network Ad Revenue进行广告变现，您就可以使用AppsFlyer记录来自Meta ads的收入。无论您的应用是否存在应用内购数据，该方法都可以让您**全面了解用户带来的收入**。
 
+<div id="record-meta-audience-network-ad-revenue" />
+
 #### 记录Meta Audience Network的广告收入
 
 1. 进入**广告收入**页面，打开**获取广告收入数据**开关。
@@ -384,9 +414,13 @@ CCPA隐私条例规定限制来自美国加州Meta ads用户的数据。
 
 </Accordion>
 
+<div id="aggregate-event-measurement-aem-for-ios" />
+
 ## 适用于iOS的Aggregate Event Measurement（AEM）
 
 AppsFlyer支持<Anchor target="_blank" href="/marketers/zh/docs/meta-ads-aggregate-event-measurement-aem-for-ios">Meta ads的Aggregated Event Measurement</Anchor>（全事件衡量，简称AEM）。该解决方案可用于优化Meta ads上的iOS转化及应用内事件，同时对iOS再互动进行归因。
+
+<div id="meta-ads-integration-troubleshooting" />
 
 ## Meta ads对接问题排查
 
@@ -458,9 +492,13 @@ Facebook App ID在AppsFlyer后台中配置有误。
 
 </Accordion>
 
+<div id="ios-14-updates-relating-to-meta-ads" />
+
 ### 与Meta ads有关的iOS 14更新
 
 我们会确保AppsFlyer与Meta Ads的MMP对接总是使用*Advertiser Tracking Enabled*标记，因此广告主无需在AppsFlyer后台进行任何操作。这是继Meta ads在2021年2月推出iOS 14应用指南后做出的更新。
+
+<div id="see-also-1" />
 
 > 📄 **相关文档**
 >

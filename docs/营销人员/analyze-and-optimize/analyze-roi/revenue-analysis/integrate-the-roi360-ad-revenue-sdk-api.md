@@ -30,6 +30,8 @@ x-zendesk:
 
 ![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
 
+<div id="impression-level-ad-revenue-reporting-by-sdk-api" />
+
 ## 通过SDK API上报展示级别的广告收入数据
 
 **广告收入的上报方式**
@@ -44,6 +46,8 @@ x-zendesk:
 
 * 广告收入展示数据由AppsFlyer收集并处理，但不计入您的应用内事件套餐使用量。
 * 详见<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue">支持Ad Revenue SDK API的SDK插件完整列表</Anchor>。
+
+<div id="reporting-ad-revenue-using-the-sdk-api" />
 
 ### 使用SDK API上报广告收入
 
@@ -80,6 +84,8 @@ x-zendesk:
 * **在Data Locker展示级别的主题下，从1AM开始呈现数据，且每1小时更新一次；**
 * **在AppsFlyer的活跃数据和群组报告中，从UTC时间5AM开始呈现数据，且每4小时更新一次。**
 
+<div id="implementing-appsflyer-ad-revenue-sdk-api" />
+
 ## AppsFlyer ad revenue SDK APII的部署方式
 
 **请按以下方式部署AppsFlyer ad revenue SDK API**：
@@ -87,6 +93,8 @@ x-zendesk:
 1. 从AppsFlyer面板进入相关渠道的对接页面，<Anchor target="_blank" href="/marketers/zh/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">启用SDK级别的广告收入对接</Anchor>。**请注意**：该操作需分应用单独完成。
 2. 让您的开发人员按照<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue">相关说明</Anchor>部署AppsFlyer ad revenue SDK API。
 3. 如需在SKAN面板中记录广告收入，请参照<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-solution-guide#recording-ad-revenue">SKAN广告收入说明</Anchor>进行操作。
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

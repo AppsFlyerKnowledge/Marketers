@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** 了解AEM解决方案，以优化iOS转化和应用内事件，并为Meta广告上的iOS重新参与进行归因。
 
+<div id="overview" />
+
 ## 速览
 
 AppsFlyer支持<Anchor target="_blank" href="https://www.facebook.com/business/help/721422165168355">Meta ads的Aggregated Event Measurement</Anchor>（全事件衡量，简称AEM）解决方案。该解决方案支持使用以下归因方法来测量iOS 14+设备的网页和应用事件：
@@ -34,9 +36,13 @@ AppsFlyer支持<Anchor target="_blank" href="https://www.facebook.com/business/h
 
 * [检查您的应用事件是否符合AEM资格](#检查您的应用事件是否符合aem资格)
 
+<div id="app-aem-for-re-engagement" />
+
 ## 针对再互动的应用AEM
 
 启用AEM功能后，Meta ads可以在没有设备ID的情况下获取iOS用户的深度链接再互动归因信息。
+
+<div id="attribution-flow" />
 
 ### 归因链路
 
@@ -45,6 +51,8 @@ Meta ads会在深度链接中附加归因数据以及AEM `campaign_ids`campaign\
 * 向Meta ads回传汇总上报数据
 * 根据Meta ads提供的深度链接信息完成归因
 * 在原始数据报告和汇总数据报告中写入相关深度链接的归因数据
+
+<div id="attribution-data-parameters" />
 
 ### 归因数据参数
 
@@ -55,6 +63,8 @@ AppsFlyer报告中包含由Meta ads上报的下列归因数据参数：
 * `campaign_id`
 * `campaign_group_id`
 * `account_id`
+
+<div id="faqs-on-deep-link-re-engagement-attribution" />
 
 ### 深度链接再互动归因疑难解答
 
@@ -86,7 +96,11 @@ AppsFlyer报告中包含由Meta ads上报的下列归因数据参数：
 
 </Accordion>
 
+<div id="app-aem-for-app-promotion" />
+
 ## 针对拉新推广的应用AEM
+
+<div id="aem-eligibility" />
 
 ### AEM适用性
 
@@ -94,9 +108,13 @@ AppsFlyer报告中包含由Meta ads上报的下列归因数据参数：
 
 <Image alt="aem_meta_ads_platform.png" src="https://support.appsflyer.com/hc/article_attachments/19228698538769" width="563px" />
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 如果您在AEM资格方面遇到问题，请参见[检查您的应用事件是否符合AEM资格](#检查您的应用事件是否符合aem资格)。
+
+<div id="aem-data-sharing" />
 
 ### AEM数据共享
 
@@ -107,6 +125,8 @@ AppsFlyer报告中包含由Meta ads上报的下列归因数据参数：
 
 aem
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > * 所有事件包含激活、应用打开和应用内事件。
@@ -114,9 +134,13 @@ aem
 > * 对于通过服务器到服务器（S2S）发送的应用内事件，Meta要求事件负载中包含**IP地址**和**供应商标识符（IDFV）**。没有这些标识符，事件将不符合Meta的AEM归因资格。
 > * Meta AEM用于应用推广也可能包括非确定性的查看归因。要支持通过Meta AEM进行非确定性的查看归因，请确保应用级**启用v通过概率建模进行查看归因**开关已打开。有关详细信息，请参见<Anchor target="_blank" href="/marketers/zh/docs/app-settings#viewthrough-attribution-via-probabilistic-modeling">通过概率建模进行查看归因</Anchor>。
 
+<div id="check-if-your-app-events-are-eligible-for-aem" />
+
 ## 检查您的应用事件是否符合AEM资格
 
 您可以访问Meta事件管理器检查您的应用事件是否符合AEM资格。一旦您的应用事件符合资格，您可以在广告管理器中查看所选AEM活动的结果。要了解如何检查您的应用事件是否符合 AEM 的资格，请参阅 <Anchor target="_blank" href="https://www.facebook.com/business/help/716239976391518?id=1877298665783613">元文档</Anchor>。
+
+<div id="enable-aem-summary" />
 
 ## 如何启用 AEM - 概要
 
@@ -128,6 +152,8 @@ aem
 | **AEM 应用推广（安装）** | 高级数据共享（Advanced data sharing） | 合作伙伴集成（Meta 广告） | 启用 AEM 进行应用推广，包括与 Meta 共享来自 ATT 选择退出用户的事件，并接受非确定性索赔（如适用）。 |
 | **AEM 应用推广（安装）** | 通过概率建模实现浏览归因 | 应用配置 | 启用非确定性索赔的查看归因。 |
 
+<div id="troubleshooting" />
+
 ## 问题排查
 
 <div id="troubleshooting-ineligible-events-in-meta-aem" />
@@ -135,6 +161,8 @@ aem
 <Accordion title="排查 Meta AEM 中不合格事件的问题">
 
 如果 Meta 广告将您的应用事件标记为不合格——显示错误如 **“缺少选择退出事件”** 或其他与 AEM 相关的消息——通常是由于缺少或配置错误的数据。使用下面的检查清单来诊断和修复常见问题。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -197,6 +225,8 @@ Meta 接受有限数量缺失或为零的 IDFA 事件。如果您的应用超出
 
 </Accordion>
 
+<div id="still-not-working" />
+
 #### 仍然无法工作？
 
 如果特定事件仍然不合格：
@@ -204,6 +234,8 @@ Meta 接受有限数量缺失或为零的 IDFA 事件。如果您的应用超出
 1. 前往 Meta 的事件管理器并按照屏幕上的指导操作。
 2. 选择受影响的应用事件。
 3. 将 **MMP 流量** 设置为首选连接方式。
+
+<div id="need-help" />
 
 #### 如需支持，
 

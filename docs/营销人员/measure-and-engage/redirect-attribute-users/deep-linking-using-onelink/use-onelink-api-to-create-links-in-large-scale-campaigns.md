@@ -26,6 +26,8 @@ x-zendesk:
 
 > **概要：** OneLink API可以生成大量个性化链接，用于大规模广告投放，帮助您提高自有媒体的利用率，有效吸引终端用户。该解决方案需要市场人员和开发人员共同实施。
 
+<div id="about-onelink-api" />
+
 ## OneLink API
 
 OneLink API是一个高阶功能，可用于：

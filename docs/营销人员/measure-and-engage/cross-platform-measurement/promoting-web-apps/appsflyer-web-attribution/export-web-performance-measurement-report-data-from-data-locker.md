@@ -28,6 +28,8 @@ x-zendesk:
 >
 > 您需要订阅Data Locker，才能访问其中的网页端效果衡量报表。
 
+<div id="about-the-web-performance-measurement-reports" />
+
 ## 关于网页端效果衡量报表
 
 Data Locker为网页端效果衡量提供两类报表：**终端用户事件**和**转化**，分别适用于不同的分析需求。
@@ -42,6 +44,8 @@ Data Locker为网页端效果衡量提供两类报表：**终端用户事件**�
   * *用户获取事件*（注册或首次存款等表示已获取用户的自定义事件）。
 * 系统之后会将所有用户事件关联到这些转化，并为事件沿用相应的广告系列详情。
 
+<div id="report-fields" />
+
 ## 报表字段
 
 如需了解报表中包含哪些字段，请下载各报表的示例文件：
@@ -51,12 +55,16 @@ Data Locker为网页端效果衡量提供两类报表：**终端用户事件**�
 
 示例报表包含所有报表字段及对应值。有关字段定义，请参阅<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary">字段字典</Anchor>。
 
+<div id="report-timing-and-data-freshness" />
+
 ## 报表更新时间和数据时效性
 
 以下信息说明新数据何时写入报表，以及近期事件何时可在报表中查看。
 
 * **报表更新频率**：每小时写入一次新数据。
 * **数据时效性**：事件发生后通常会在2至3小时内显示在报表中。
+
+<div id="heres-how-each-batch-works" />
 
 ### 每批数据的处理方式如下：
 
@@ -67,9 +75,13 @@ Data Locker为网页端效果衡量提供两类报表：**终端用户事件**�
 
 [![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
 
+<div id="when-will-these-events-appear-in-the-report" />
+
 ### 这些事件何时会显示在报表中？
 
 事件会在**处理完成后**写入报表。例如，**08:00–09:00**发生的事件会在10:00批次中完成归因，并显示在**11:00发布的报表版本**中。
+
+<div id="example-what-the-1000-am-batch-does" />
 
 ### 示例：10:00批次的处理内容
 
@@ -79,9 +91,13 @@ Data Locker为网页端效果衡量提供两类报表：**终端用户事件**�
 | 2026-01-28 | 12:00 | 09:00–10:00 | 10:00–10:30 |
 | 2026-01-28 | 13:00 | 10:00–11:00 | 10:00–11:30 |
 
+<div id="download-report-data-from-your-cloud-bucket" />
+
 ## 如何访问云存储桶中的报表数据
 
 有关如何访问云存储桶中报表数据的更多信息，请参阅<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers#folder-structure">Data Locker文件夹结构</Anchor>。
+
+<div id="bi-developer-considerations" />
 
 ## BI开发者注意事项
 
@@ -151,6 +167,8 @@ Data Locker为网页端效果衡量提供两类报表：**终端用户事件**�
 
 * **按转化类型筛选（可选）：** 添加`WHERE conversion_type = 'USER_ACQUISITION'`或`WHERE conversion_type = 'RETARGETING'`，根据广告系列类型筛选归因数据。
 
+<div id="filter-summary-table" />
+
 #### 筛选条件汇总表
 
 | 筛选要求 | SQL逻辑 | 应用场景 |
@@ -189,6 +207,8 @@ COALESCE(customer_user_id, appsflyer_id_value)
 * 筛选特定用户
 * 按用户关联数据表
 * 计算任何用户层级指标
+
+<div id="example-count-distinct-users" />
 
 #### 示例：统计独立用户数
 
@@ -448,6 +468,8 @@ ORDER BY cohort_date, cohort_users DESC
 </Accordion>
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特性和限制
 

@@ -29,6 +29,8 @@ x-zendesk:
 
 > **概要：** 您可以通过Protect360原始数据报告查看被Protect360引擎拦截的激活和应用内事件，以及根据您手动添加的验证规则（Validation Rules）拦截的流量。
 
+<div id="about-protect360-raw-data-reports" />
+
 ## Protect360原始数据报告简介
 
 原始数据报告：
@@ -42,6 +44,8 @@ x-zendesk:
 * 报告类型及其可用性在各类数据传输方式中有所不同，分为下载、API和Data Locker（S3存储桶）几种，具体请见下文说明。
 * 历史原始数据报告最多保留90天，具体取决于数据传输方式以及原始数据来源。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 由于原始数据会受到数据隐私方面的限制，因此原始数据报告中会出现空值字段，比如助攻渠道字段的值可能为空。
@@ -49,6 +53,8 @@ x-zendesk:
 <div id="report-types" />
 
 <Accordion title="报告类型">
+
+<div id="protect360-raw-data-report-types" />
 
 #### Protect360原始数据报告分为以下几类：
 
@@ -76,6 +82,8 @@ x-zendesk:
   * 后台面板：每个日历月内限一个媒体渠道。
   * Pull API：包含所有媒体平台 。限制条件：仅对广告主（应用所有者）开放。
 
+<div id="using-post-attribution-reports" />
+
 #### **归因后报告的使用方式**
 
 * 根据实际需要选择一种激活/IAE组合以及检测日期范围。
@@ -85,6 +93,8 @@ x-zendesk:
   * 将激活日期范围设置为60天前-当天。
   * 将“detect-from/detect-to”的范围设置为当天的前一天。  
     这样，您就能获得前一天的归因后假量报告。如果您已有数天没有拉取该报告，请根据实际情况调整检测日期范围，然后拉取报告。
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -98,11 +108,15 @@ x-zendesk:
 
 <Accordion title="分数据传输方式的原始数据可用性">
 
+<div id="protect360-raw-data-availability-by-tool-type" />
+
 #### 各种数据传输工具中的Protect 360原始数据可用性
 
 <table><thead><tr><th>报告</th><th>数据时效性</th><th>Pull API</th><th>导出数据页面</th><th>Data Locker</th></tr></thead><tbody><tr><td>激活假量</td><td>实时</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>已拦截的应用内事件</td><td>实时</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>点击</td><td>实时</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>已拦截的激活回传</td><td>实时</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>归因后判定为假量的激活</td><td><p>每天UTC时间10:00更新</p></td><td><p><span>✓</span></p></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>归因后识别为假量的应用内事件</td><td><p>每天UTC时间10:00更新</p></td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr></tbody><tfoot><tr><td colspan="5"><p>\*通过Data Locker获取报告的限制：</p><ul><li>不支持代理数据透明化。也就是说，代理流量中不包含带来激活的媒体渠道的名称。 </li><li>该报告中有一组专属字段，是其他Data Locker报告中所没有的，且这组字段无法更改。 </li><li>激活报告中不包含再营销数据，只有归因后识别的激活假量报告中会呈现该信息。 </li></ul></td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="getting-raw-data-reports" />
 
 ## 获取原始数据报告
 
@@ -142,6 +156,8 @@ x-zendesk:
 3. 根据需要填充参数。下表列出了各项参数。
 4. 拉取报告。
 
+<div id="pull-api-raw-data-report-parameters" />
+
 #### Pull API原始数据报告参数
 
 | 参数 | 说明 | 格式 | 是否必须发送 |
@@ -169,11 +185,15 @@ x-zendesk:
 
 </Accordion>
 
+<div id="protect360-report-structure" />
+
 ## Protect360报告结构
 
 Protect360报告的总体结构与用户获取报告一致。
 
 除了常规的<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary">原始数据报告字段</Anchor>，Protect360报告还包含再营销和拦截原因字段，具体如下：
+
+<div id="blocked-reasons" />
 
 ### 拦截原因（Blocked reason）
 
@@ -204,6 +224,8 @@ Protect360报告的总体结构与用户获取报告一致。
 
 下表列出了可能出现的激活层级拦截原因：
 
+<div id="install-level-fake-install-block-sub-reasons" />
+
 #### 激活层级：适用于虚假激活的拦截原因
 
 | 拦截原因（Blocked reason） | 详细拦截原因 （Blocked sub reason） | 说明 |
@@ -215,6 +237,8 @@ Protect360报告的总体结构与用户获取报告一致。
 | validation\_bots | invalid\_device\_parameters | 特定设备字段出现反常值，具体由客户定义 |
 | validation\_bots | validation\_rules | 由于广告主自定义的验证规则而被拦截的激活 |
 | bots | ai\_layer | AppsFlyer利用AI模型分析海量数据点，针对作弊设备和作弊激活提升假量识别能力 |
+
+<div id="install-level-attribution-hijacking-block-sub-reasons" />
 
 #### 激活层级：适用于归因劫持的拦截原因
 
@@ -240,6 +264,8 @@ AppsFlyer检测到有规律的作弊行为时，会将作弊平台加入黑名�
 
 下表列出了可能出现的激活层级拦截原因：
 
+<div id="cluster-level-fake-install-block-reasons" />
+
 #### 聚类层级：适用于虚假激活的拦截原因
 
 | 拦截原因（Blocked reason） | 详细拦截原因 （Blocked sub reason） | 说明 |
@@ -248,6 +274,8 @@ AppsFlyer检测到有规律的作弊行为时，会将作弊平台加入黑名�
 | bots, site\_blacklist | device\_emulators | 通过虚拟环境中的自动化脚本大批量生成的激活 |
 | site\_blacklist | device\_farms | 未知（新）设备占比过高 |
 | behavioral\_anomalies | behavioral\_anomalies | 有异于普通应用用户行为模式的可疑应用内行为 |
+
+<div id="cluster-level-attribution-hijacking-block-reasons" />
 
 #### 聚类层级：适用于归因劫持的拦截原因
 
@@ -271,6 +299,8 @@ AppsFlyer检测到有规律的作弊行为时，会将作弊平台加入黑名�
 
 下表列出了可能出现的应用内事件拦截原因。
 
+<div id="in-app-level-block-reasons" />
+
 #### 应用内事件层级的拦截原因
 
 | 拦截原因（Blocked reason） | 详细拦截原因 （Blocked sub reason） | 说明 |
@@ -281,6 +311,8 @@ AppsFlyer检测到有规律的作弊行为时，会将作弊平台加入黑名�
 | validation\_inapps | validation\_rules | 根据广告主自定义的验证规则判定 |
 
 </Accordion>
+
+<div id="retargeting" />
 
 ### 再营销
 
@@ -294,6 +326,8 @@ Protect360原始数据中包含由再营销广告代带来的激活和应用打�
 Protect360再营销原始数据中包含实时拦截以及归因后识别的假量，具体如下：
 
 <table><thead><tr><th>报告 </th><th>导出数据</th><th>Pull API</th><th>Data Locker</th></tr></thead><tbody><tr><td>激活假量</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>归因后判定为假量的激活</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\*再互动数据不可用</span><span><br/></span> </td></tr></tbody></table>
+
+<div id="hijacked-installs-attribution-correction" />
 
 ### 被劫持的激活归因更正
 

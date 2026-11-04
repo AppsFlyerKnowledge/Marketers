@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** 您可以使用Audiences Additional Identifiers API将用户标识符从您的内部系统（如BI和CRM）中批量上传到AppsFlyer的受众共享，以便让相关渠道根据这些标识符更广泛地触达目标群体。
 
+<div id="about-the-api" />
+
 ## Audiences Additional Identifiers API简介
 
 您可以使用Audiences Additional Identifiers API将您内部系统中的用户标识符添加到AppsFlyer的受众共享中：
@@ -34,9 +36,13 @@ x-zendesk:
 
 您可以向您的受众共享渠道发送这些标识符（具体取决于您<Anchor target="_blank" href="/marketers/zh/docs/audiences-user-identifier-policy">账户层级的用户标识符共享规则</Anchor>），帮助其精准匹配到您的目标客群。请注意：并非所有渠道都支持全部标识符。
 
+<div id="when-should-i-use-this-api" />
+
 ### Audiences Additional Identifiers API的用途
 
 该API专用于上传大批量标识符数据，通常适用于在较长一段时间内收集到的数据（比如在过去12个月内从某个应用中收集到的所有用户的加密邮箱地址）。如需对特定设备的标识符进行单独的实时更新，您可以在AppsFlyer SDK或S2S-mobile API中<Anchor target="_blank" href="/marketers/zh/docs/audiences-configure-additional-identifiers-for-partner-audience-creation">配置所需的额外标识符</Anchor>。
+
+<div id="important" />
 
 > 🚧 **重要提示！**
 >
@@ -44,14 +50,20 @@ x-zendesk:
 >
 > **使用时间：** 为了确保标识符的精准匹配，您可以在AppsFlyer SDK上报主要标识符后的**第二天**（以UTC时间为准）使用Audiences Additional Identifiers API。举例来说，假设主要标识符在2022年1月3日（UTC时间）上报，您可在2022年1月4日或之后通过此API来更新这些标识符。
 
+<div id="actions" />
+
 ## 可用操作
 
 * [添加/修改标识符](/docs/upload-additional-identifiers-to-audiences-via-api#addmodify-identifiers-put)
 * [删除标识符](/docs/upload-additional-identifiers-to-audiences-via-api#remove-identifiers-delete)
 
+<div id="authentication" />
+
 ## 身份验证
 
 发送请求时，HTTP请求头中必须包含您AF账号的<Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens">AppsFlyer V2.0 API token。您可以让账号管理员为您提供此token信息。</Anchor>
+
+<div id="api-specifications-and-sample-code" />
 
 ## API配置要求和示例代码
 
@@ -111,6 +123,8 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 | `{hashed_emails}` | 以数组的形式呈现，最多可包含2个加密的邮箱地址<br /><br />格式：<ul><li>小写</li><li>无空格</li><li>须经过SHA256加密</li></ul>加密前的参数值示例：name@domain.com | 否 |
 | `{phone_number_sha256}` | 电话号码（见下文说明）<br /><br />格式：<ul><li>无符号、字母，不能以零开头</li><li>需包含国家代码</li><li>须经过SHA256加密</li></ul>加密前的参数值示例：<br /><br />442070313000 | 否 |
 | `{phone_number_e164_sha256}` | E164格式的电话号码（见下文说明）<br /><br />格式<ul><li>E164格式的电话号码</li><li>须经过SHA256加密</li></ul>加密前的参数值示例：<br /><br />+442070313000 | 否 |
+
+<div id="notes" />
 
 > 📘 **注意**
 >

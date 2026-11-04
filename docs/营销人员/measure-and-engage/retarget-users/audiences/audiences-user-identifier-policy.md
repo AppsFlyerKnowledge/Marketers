@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** 您可以通过**账户级别**的用户标识符共享规则调控您与渠道共享的受众数据。
 
+<div id="about" />
+
 ## 背景
 
 <Anchor target="_blank" href="/marketers/zh/docs/audiences-partner-connections">您在受众共享面板中设定人群包后，AppsFlyer就会将该人群包中用户的标识符发送到您选定的</Anchor>推广渠道。这样，渠道就能仅向这些用户投放您的广告。
@@ -35,6 +37,8 @@ x-zendesk:
 * 渠道连接层级
 
 本文解释了用户标识符共享规则在账户级别的管理流程。如需进一步了解渠道连接层级的标识符共享规则管理方式，请参考受众共享产品指南中的<Anchor target="_blank" href="/marketers/zh/docs/audiences-guide#manage-connections">管理连接</Anchor>部分。
+
+<div id="user-identifiers" />
 
 ## 用户标识符
 
@@ -72,6 +76,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="setting-account-level-user-identifier-policy" />
+
 ## 设置账户层级的用户标识符共享规则
 
 用户标识符共享规则仅可由AppsFlyer账户的管理员设置。
@@ -86,6 +92,8 @@ x-zendesk:
 4. 点击**保存**。
 
 您对IDFA共享规则所做的变更自Apple发布iOS 14.5起生效。您对所有其他用户标识符共享规则所做的变更自下次渠道上传起生效。
+
+<div id="privacy-regulations" />
 
 ## 隐私监管政策
 
@@ -145,7 +153,7 @@ x-zendesk:
   2024年3月6日之前的Google侧现存人群包不受上述政策影响，相关用户仍会保留在对应的人群包中。仅新建人群包或在现存人群包中新添加的EEA用户设备在上传到Google时需要带有用户授权信息。
 * **上传的人群包大小**  
   AF预估的人群包大小和实际上传的数量可能会有差异，具体取决于同意或拒绝授权的用户数量。
-* #### **导入人群包**
+* #### <span id="importing-audiences"></span>**导入人群包**
 
   * **导入标准人群包** - AppsFlyer会在其中添加由SDK收集到的用户授权数据，并移除拒绝授权或未指明授权状态的用户设备，然后再将人群包发送到Google。
   * **按原样导入的人群包** - 通过<Anchor target="_blank" href="/marketers/zh/docs/audiences-import-audience-segments-from-internal-systems#import-a-csv-file">CSV文件上传</Anchor>或<Anchor target="_blank" href="/marketers/zh/docs/audiences-import-audience-segments-from-internal-systems#use-the-import-audience-api">API</Anchor>按原样导入人群包时，需要另外添加以下两个授权信息字段：
@@ -156,6 +164,8 @@ x-zendesk:
 | <span id="ad_user_data"></span>ad\_user\_data\_enabled | ad\_user\_data | true/false | 用于说明该用户是否同意将其数据发送到Google |
 
 如果以上授权信息字段中没有填充字段值，相关用户就会被标记为“Unspecified”，发送到Google。
+
+<div id="note" />
 
 > 📘 **注意**
 >

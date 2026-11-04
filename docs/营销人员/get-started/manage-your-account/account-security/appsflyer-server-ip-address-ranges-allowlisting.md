@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **概要：** 概览：用于发出API请求的AppsFlyer IP地址。
 
+<div id="appsflyer-server-ip-address-ranges" />
+
 ## AppsFlyer服务器IP地址范围
 
 所列的IP地址是由AppsFlyer控制并供其使用。
@@ -38,6 +40,10 @@ AppsFlyer API为广告主和合作伙伴提供归因和报告服务。这些服�
 
 * [45.92.116.0/22]
 * [194.28.46.0/23]
+
+<div id="pull-api-and-server-to-server-s2s" />
+
+<div id="uploading-audiences" />
 
 ### 上传受众
 

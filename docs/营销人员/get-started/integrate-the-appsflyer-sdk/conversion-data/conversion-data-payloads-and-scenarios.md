@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了如何利用转化数据识别各种转化场景、打造定制化用户体验等等。
 
+<div id="overview" />
+
 ## 速览
 
 下文说明了各种用户转化场景及其对应的转化数据有效信息（payloads）。
@@ -43,7 +45,11 @@ x-zendesk:
 
 由于数据准确性和延时之间存在此消彼长的关系，因此同一个设备ID的转化数据可能会因API而异。
 
+<div id="non-organic-conversion-data-payload-fields" />
+
 ### 非自然转化数据的payload字段
+
+<div id="fields-always-available" />
 
 #### 总是呈现的字段
 
@@ -67,11 +73,15 @@ x-zendesk:
 | `retargeting_conversion_type` | Retargeting Conversion Type（再营销转化类型） | “none”或者retargeting\_conversion\_type |
 | `af_sub[n] (n=1—5)` | Sub Param [n]（n=1–5） |  |
 
+<div id="fields-available-in-some-cases" />
+
 #### 部分情况下会呈现的字段
 
 下表列出了部分情况下会出现的字段，具体取决于SRN对于相关事件的填充方式。
 
 <table><thead><tr><th>payload字段名称</th><th>原始数据字段名称</th><th>说明</th><th> </th></tr></thead><tbody><tr><td><code>af_channel</code></td><td>流量入口（Channel）</td><td><p>会填充该字段的SRN包括：</p><ul><li>AppLovin</li><li>Google Ads</li><li>Meta ads</li><li>Snapchat</li><li>TikTok for Business</li><li>X Ads</li></ul><p>举例来说，Facebook—Instagram、Google—YouTube </p></td><td> </td></tr><tr><td><code>orig_cost</code></td><td> </td><td>备注（1）</td><td> </td></tr><tr><td><code>cost_cents_USD</code></td><td> </td><td>备注（1）</td><td> </td></tr><tr><td><code>af_cpi</code></td><td> </td><td>备注（1）</td><td> </td></tr><tr><td colspan="4"><p><strong>注意事项</strong></p><p>（1）成本字段的值由广告平台提供。您必须在<a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank"><strong>活跃对接</strong></a>页面中打开成本对接，才能让广告平台将成本数据分享给AppsFlyer。部分SRN支持成本数据的批量分享，这时事件层级的成本字段返回的值为0。 </p></td></tr></tbody></table>
+
+<div id="additional-fields" />
 
 ### 可选的非默认字段
 
@@ -79,6 +89,8 @@ x-zendesk:
 * 您可以在归因链接中添加参数，添加完毕后，这些参数就会出现在payload中
 
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary#data-fields-dictionary">原始数据字段词典</Anchor>
+
+<div id="limitations" />
 
 ### 局限性
 
@@ -94,6 +106,8 @@ x-zendesk:
 
 ---
 
+<div id="ua-conversion-data-with-srns" />
+
 ## SRN的UA转化数据
 
 <Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns">自归因平台</Anchor>（SRN）是指实行其自有归因机制的广告平台，如Meta ads和Google。
@@ -105,6 +119,8 @@ SRN不使用归因链接。也就是说：
 
 SRN会向AppsFlyer上报转化数据，然后AppsFlyer将这些转化数据呈现在相关应用的面板中。其中可用的字段因SRN而异，详情请见下文的SRN部分。
 
+<div id="a-note-about-meta-ads" />
+
 #### Meta ads注意事项
 
 如果您在Meta ads上投放广告，但未签署Meta的服务条款，AppsFlyer仍能对相关的激活进行归因，但报告可用性会有以下限制：
@@ -114,6 +130,8 @@ SRN会向AppsFlyer上报转化数据，然后AppsFlyer将这些转化数据呈�
 
 <Tabs>
 <Tab title="Meta ads">
+
+<div id="meta-ads-conversion-data" />
 
 ### Meta ads转化数据
 
@@ -276,6 +294,8 @@ SRN会向AppsFlyer上报转化数据，然后AppsFlyer将这些转化数据呈�
 </Tab>
 </Tabs>
 
+<div id="ua-conversion-with-other-ad-networks" />
+
 ## 其他广告平台的UA转化
 
 对于非自归因的常规广告平台，相关<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">归因链接中的参数</Anchor>会直接影响到payload中的数据。
@@ -287,6 +307,8 @@ SRN会向AppsFlyer上报转化数据，然后AppsFlyer将这些转化数据呈�
 <div id="applovin" />
 
 <Accordion title="Applovin">
+
+<div id="attribution-link" />
 
 #### 归因链接:
 
@@ -344,6 +366,8 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
 <div id="ironsource" />
 
 <Accordion title="ironSource">
+
+<div id="attribution-link-1" />
 
 #### 归因链接:
 
@@ -405,6 +429,8 @@ ironSource会通过`orig_cost`、`cost_cents_USD`和`af_cost_value`字段在转�
 
 </Accordion>
 
+<div id="retargeting-conversion-data" />
+
 ## 再营销转化数据
 
 再营销转化分为再归因和再互动两种类型。
@@ -412,6 +438,8 @@ ironSource会通过`orig_cost`、`cost_cents_USD`和`af_cost_value`字段在转�
 > 👍 **提示**
 >
 > 某些情况下，您可能无法通过再营销转化数据明确地判断转化类型，具体请参考[其他的转化数据来源](#转化数据的其他来源)说明。
+
+<div id="re-attribution-with-srns" />
 
 ### SRN带来的再归因
 
@@ -423,6 +451,8 @@ ironSource会通过`orig_cost`、`cost_cents_USD`和`af_cost_value`字段在转�
 >
 > 即使您在广告系列名称中标识出再营销也**无法确保**一定能识别出再营销广告。详情请见[示例](#用户获取与再归因混合场景)部分的说明。
 
+<div id="re-attribution-with-regular-ad-networks" />
+
 ### 常规广告平台带来的再归因
 
 非SRN广告平台的归因一般通过归因链接完成。不论您通过常规归因链接还是OneLink投放再营销广告，其链接中总是包含`is_retargeting=true`参数。
@@ -431,6 +461,8 @@ ironSource会通过`orig_cost`、`cost_cents_USD`和`af_cost_value`字段在转�
 
 <Accordion title="Criteo上的再营销广告">
 
+<div id="attribution-link-2" />
+
 #### 归因链接
 
 ```http
@@ -438,6 +470,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### 转化数据payload
 
@@ -479,6 +513,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ### 延迟深度链接带来的再归因
 
 您可能经常需要为再归因（即卸载后重新安装相关应用）的用户部署深度链接。假设您为了召回已卸载的流失用户而投放广告，在广告中推广某个产品或服务，并让用户在重新安装并打开应用后直接进入该产品或服务的页面。
@@ -490,6 +526,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 <Accordion title="在SRN中使用延迟深度链接">
 
 SRN广告中设定的深度链接参数在SRN之外不可用，其中包括含有应用内scheme路径的`af_dp`参数。唯一的例外情况是<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-advertisers#在应用广告中使用延迟深度链接">Google的信息流应用广告</Anchor>（App campaigns in Feeds）如需再SRN广告中使用延迟深度链接，您必须在其中添加额外的逻辑。您可以使用`onConversionSuccess`响应中的数据，如广告系列、广告组（adset、adgroup）等，以程序化的方式实现用户跳转。
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Meta ads中延迟深度链接的转化数据
 
@@ -569,6 +607,8 @@ SRN广告中设定的深度链接参数在SRN之外不可用，其中包括含�
 
 深度链接的实现方式共有以下三种：
 
+<div id="uri-schemes" />
+
 #### URI scheme
 
 在归因链接和OneLink中使用URI scheme时，相关归因链接和payload如下：
@@ -625,6 +665,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true`——出现该参数且参数值为true时，请查看`scheme`和`host`字段
 * `scheme`和`host`——这两个字段来自归因链接中的`af_dp`参数，用于说明相关scheme以及通过深度链接向用户展示的页面
 
+<div id="ios-universal-links-and-android-app-links" />
+
 #### iOS Universal Link和安卓App Link
 
 这两种方式也可以实现深度链接。
@@ -677,13 +719,19 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ### SRN带来的再互动
 
 与再归因相同，当用户通过SRN上的广告再次打开应用（即完成再互动）时，转化数据无法体现该流量是否来自再互动广告。如需解决此问题，您可以在广告系列名称中标识出再互动广告类型。
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ### 常规广告平台带来的再互动
 
 在该场景中，转化数据payload也无法体现出该流量是否来自再归因广告。如需解决此问题，您可以在广告系列名称中标识出再互动广告类型。
+
+<div id="re-engagement-with-deep-linking" />
 
 ### 深度链接带来的再互动
 
@@ -735,10 +783,14 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ### 转化数据的其他来源
 
 * Push API可提供详细的转化数据payload，其中会标识出再归因和再互动。Push API的payload中包含`re_targeting_conversion_type`字段，该字段可说明转化类型，即再归因或再互动。详情请见<Anchor target="_blank" href="/marketers/zh/docs/push-api-streaming-raw-data">Push API指南</Anchor>。
 * 原始数据报告也会标识出转化类型。再营销转化的原始数据报告中包含***Event Name***（事件名称）字段，该字段中可能出现的值为re-engagement（再互动）或***re-attribution*** （再归因），用于说明转化类型。
+
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 
 ### 用户获取与再归因混合场景
 

@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** 通过Google Ads网页广告活动推广您的PC及主机端应用，实现归因分析。AppsFlyer支持使用跨平台落地页或直接归因链接的Google网页广告。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 本文重点关注用于推广PC或主机端应用的网页广告活动。如需创建推广移动应用的网页广告活动，请参阅<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-create-web-based-campaigns">Google Ads（AdWords）- 网页端广告活动</Anchor>。
+
+<div id="overview" />
 
 ## 速览
 
@@ -35,6 +39,8 @@ x-zendesk:
 * [在AppsFlyer中配置Google Ads Web对接](/docs/google-ads-web-integration-for-pc-and-console-apps#setting-up-Googleadsweb-in-appsflyer)。
 * [在Google Ads中设置PC和主机端应用广告](/docs/google-ads-web-integration-for-pc-and-console-apps#在google-ads-web中设置pc和主机端应用的广告)。
 
+<div id="prerequisites" />
+
 ### 前期准备
 
 在启用Google Ads Web对接之前，请确保您已具备以下条件：
@@ -43,6 +49,8 @@ x-zendesk:
 * 具备一个AppsFlyer账户
 * 具备必要<Anchor target="_blank" href="https://developers.google.com/identity/protocols/oauth2/scopes">OAuth权限</Anchor>的Google访问令牌。您可在Google Developer Console中验证访问令牌的权限范围。
 * 设置该对接的AppsFlyer<Anchor target="_blank" href="/marketers/zh/docs/user-management">用户具有必要的角色/权限</Anchor>，并有权访问相关应用
+
+<div id="activate-partner-in-appsflyer" />
 
 ## 在AppsFlyer中激活合作渠道
 
@@ -54,6 +62,8 @@ x-zendesk:
 4. 在**渠道对接**选项卡中，打开**启用该渠道**开关。  
    **请注意：** 在您与该渠道合作期间，请确保该开关总是处于打开（即<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">启用</Anchor>）状态。
 5. 参考下文说明，根据您的具体需求在相关选项卡中完成各项配置。
+
+<div id="set-up-google-ads-web-in-appsflyer" />
 
 ## 在AppsFlyer中配置Google Ads Web对接
 
@@ -67,11 +77,17 @@ Google Ads Web对接仅支持激活和应用内事件的回传。
 
 **渠道对接**选项卡中包括以下几个部分。
 
+<div id="activate-partner" />
+
 #### 启用渠道
 
 在配置对接之前，必须先打开**启用该渠道**开关。
 
+<div id="general-settings" />
+
 #### 通用设置
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -88,6 +104,8 @@ Google Ads Web对接仅支持激活和应用内事件的回传。
 3. 如需允许AppsFlyer将转化数据上传到Google Ads，请点击**使用Google登录**。
 4. 在Google中，选择MCC账号（即您在以上步骤中获取到Customer ID的MCC账号）中的管理员。
 5. 点击**Allow**。
+
+<div id="enable-view-through-attribution" />
 
 #### 启用浏览型归因
 
@@ -107,9 +125,13 @@ AppsFlyer支持通过启用<Anchor target="_blank" href="/marketers/zh/docs/goog
 6. 下滑到**浏览型归因**部分并设置所需的**浏览归因回溯窗口**（最长24小时）。
 7. 点击**保存对接**以应用更改。
 
+<div id="default-postbacks" />
+
 #### 默认回传
 
 激活回传自动发送到Google Ads Web，不会发送到其他渠道。
+
+<div id="in-app-event-postbacks" />
 
 #### 应用内事件回传
 
@@ -146,11 +168,15 @@ AppsFlyer支持通过启用<Anchor target="_blank" href="/marketers/zh/docs/goog
 | 跨平台落地页 | **推荐**：如果您要推广的应用在Epic和Steam等多个平台中上架，建议使用这种方式。<br /><br /><Anchor target="_blank" href="/marketers/zh/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">进一步了解跨平台落地页</Anchor><br /><br /><Anchor target="_blank" href="/marketers/zh/docs/cross-platform-landing-pages-with-smart-script">了解跨平台落地页的设置方式</Anchor><ul><li>请确保所有相关URL参数（即智能脚本要抓取的参数）都已添加到广告链接中。</li><li>请确保智能脚本能从入链中抓取GCLID，并将其添加到生成的链接中。也就是说，传出链接GCLID（即智能脚本生成的链接）中的参数`gclid`必须映射到传入链接中`gclid`参数。**请注意**：如需让AppsFlyer的原始数据报告呈现该数据，还必须将传入的`gclid`参数与`af_sub[1-5]`参数之一进行映射。</li></ul> | 营销人员（可能需要开发人员协助） |
 | 直接归因链接 | 如果您要推广的应用仅在1个平台中上架，因而决定不使用跨平台落地页，可以创建直接归因链接，将其附在广告背后。<br /><br /><Anchor target="_blank" href="/marketers/zh/docs/ctv-pc-and-console-platform-direct-attribution-links">了解直接归因链接的创建方式</Anchor><ul><li>请务必在您的链接中添加下列参数：<ul><li>af\_media\_source</li><li>af\_campaign\_id</li><li>af\_r<br />**请注意**：如果您使用Google Ads的<Anchor target="_blank" href="https://support.google.com/google-ads/answer/3095550?hl=en">自动标记（auto-tagging）</Anchor>功能，Google会自动将这个<Anchor target="_blank" href="https://support.google.com/google-ads/answer/9744275?hl=en">Google点击标识符</Anchor>参数添加到生成的链接中。如果您的Google Ads中禁用了自动标记功能，请在Google广告跟踪模板URL中添加`gclid={gclid}`。</li></ul></li><li>配置af\_camapign\_id、af\_adset\_id和af\_ad\_id参数时，可以使用Google的[ValueTrack参数](https://support.google.com/google-ads/answer/6305348)(即动态URL参数）宏。所有其他参数都需要手动设置。</li><li>切勿添加af\_dp参数。</li></ul>**适用于大多数平台（Epic、Steam、Xbox、PlayStation 等）的模板**如下：<br /><br />`https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}? af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**用于Steam的链接示例**：`https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**仅适用于Google PC和Mac应用的模板**如下：<br /><br />`https://app.appsflyer.com/{app_id}?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**用于Google PC的链接示例**：`https://app.appsflyer.com/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}` | 营销人员 |
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 为了简化广告系列分析，请在广告系列名称中包含广告系列类型、网页或移动，作为前缀或后缀（例如，广告系列名称\_web）
 
 </Accordion>
+
+<div id="set-up-campaigns-in-google-ads-web-for-pc-and-console-apps" />
 
 ## 在Google Ads Web中设置PC和主机端应用的广告
 
@@ -231,6 +257,8 @@ AppsFlyer支持通过启用<Anchor target="_blank" href="/marketers/zh/docs/goog
 3. 选择 **离线转化** 作为您的转化操作数据源。
 4. 从转化类型（Conversion Types）列表中选择**Import**，然后选择**Manual import using API or uploads** > **Track conversions from clicks**。
 
+   <div id="note-2" />
+
    > 📘 **注意**
    >
    > 如果无法**使用API或手动**上传：
@@ -251,20 +279,28 @@ AppsFlyer支持通过启用<Anchor target="_blank" href="/marketers/zh/docs/goog
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data-from-november-2-2025" />
+
 ## 查看网页到应用的归因数据（自 2025 年 11 月 2 日起）
 
 尽管基于网页的转化事件以原始 `googleads_int` PID 发送到 Google，但在 AppsFlyer 仪表板和原始数据报告中以 `googleadwords_int` PID 报告。这适用于主要转化事件和转化辅助事件。
 
 此统一报告视图使您能够在一个地方分析网页和应用广告系列的表现，包括完整的移动和网页成本报告。
 
+<div id="view-in-the-dashboard" />
+
 ### 在仪表板中查看
 
 所有 Google 网页到应用的归因都出现在概览和活动仪表板的 `googleadwords_int` 下。这提供了跨平台广告系列结果的单一、综合视图。使用标准过滤器和细分来比较您的 Google Ads 数据中的应用和网页流量。
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### 在原始数据和 API 报告中查看
 
 * **原始数据导出和 API 响应** 在 `media_source` 字段中包含 `googleadwords_int` PID，用于 Google 网页活动。要验证网页广告系列设置的详细信息，请参考显示 `googleads_int` 作为创建网页广告系列时使用的 PID 的 `original_url` 字段。
 * **回传报告** 显示 `googleads_int` 作为发送回传的原始媒体来源。
+
+<div id="traits-and-limitations" />
 
 ## 特点与局限性
 

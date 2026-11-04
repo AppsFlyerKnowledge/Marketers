@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** **内容概要：** 流量来源解析会根据落地页加载时可获取的 URL 参数和引荐来源数据，识别每次网页访问的初始媒体渠道、广告系列和渠道类型。解析结果为后续网页事件的归因提供流量来源信息，包括用户获取事件。
 
+<div id="what-is-traffic-source-resolution" />
+
 ## 什么是流量来源解析？
 
 在网页归因中，落地页加载（**即网页访问**）是用户与网站发生的首次互动。 AppsFlyer 会根据当时可获取的信息（例如 URL 参数和引荐来源数据），识别用户的媒体渠道、广告系列和渠道类型。
@@ -36,6 +38,8 @@ x-zendesk:
 
 了解流量来源解析的工作机制，有助于构建准确的 URL。如需了解如何创建结构清晰的 URL，请参阅<Anchor target="_blank" href="/marketers/zh/docs/choose-attribution-parameters-for-landing-page-urls">为落地页 URL 选择归因参数</Anchor>。
 
+<div id="the-traffic-source-resolution-flow" />
+
 ## 流量来源解析流程
 
 流量来源解析分多个步骤进行，逐步完善每次网页访问的归因信息。每个步骤都会补充特定的信息，从记录访问本身，到为报表目的对流量进行分类。流程所需的数据由 Web SDK 或 Web S2S 采集。
@@ -47,11 +51,15 @@ x-zendesk:
 3. [广告系列解析](#步骤-3广告系列解析)：解析出与已识别媒体渠道相关联的更精细颗粒度的广告系列信息，以支持精细化的效果分析。
 4. [渠道分类](#步骤-4渠道分类)：根据已解析的媒体渠道，将每次访问归入某个高层级渠道，为报告和分析提供标准化视图。
 
+<div id="step-1-visit-recording" />
+
 ## 步骤 1：记录/识别访问
 
 记录访问是网页效果衡量（Web Performance Measurement）流程的第一步。这一步发生在媒体渠道解析和归因之前，作为预处理阶段，负责采集用户的原始访问行为，为后续处理做好准备。
 
 该逻辑分为两个阶段进行。首先，会对**引荐来源**进行分类（即用户到达您网站之前所在的域名）。然后，根据引荐来源的类型，检查用户的应用打开状态及是否存在媒体渠道信息，以决定是否记录此次访问。
+
+<div id="stage-1-referrer-classification" />
 
 #### 第 1 阶段：引荐来源分类
 
@@ -60,6 +68,8 @@ AppsFlyer 会将引荐来源分为以下三类：
 * **排除的外部来源**：例如支付处理平台，或您已设置为排除项的任何域名。
 * **排除的内部来源**：例如，您自己的子域名或登录流程。
 * **其他来源**：不属于上述两类的所有其他引荐来源。
+
+<div id="stage-2-session-evaluation-and-visit-recording" />
 
 #### 第 2 阶段：检查应用打开状态并记录访问
 
@@ -75,6 +85,8 @@ AppsFlyer 会根据引荐来源的类型检查应用打开状态，并决定是�
   * 如果应用打开状态为活跃，但没有媒体渠道信息，则本次应用打开期间不会记录新的访问。
 
 <Image alt="流量来源解析流程图" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+
+<div id="step-2-media-source-resolution" />
 
 ## 第 2 步：媒体渠道解析
 
@@ -121,12 +133,16 @@ AppsFlyer 会按优先级顺序解析媒体渠道。一旦成功识别出某个�
 
 如果在 URL 中找不到 PID，AppsFlyer 会评估 `utm_source` 和 `utm_medium` 参数，以识别媒体渠道。最终的解析结果由这两个字段的组合决定。
 
+<div id="how-utm-logic-works" />
+
 #### **UTM 逻辑的工作原理**
 
 * 在大多数情况下，AppsFlyer 会提取 `utm_source` 的原始值，并直接将其用作媒体渠道。
 * 如果 `utm_medium` 为 `email`、`mail` 或 `e-mail`，媒体渠道会自动解析为 `e-mail`。
 * 如果存在 `utm_medium` 且该值不属于邮件（email）类型，AppsFlyer 会根据特定的自定义映射规则检查该值（请参阅下方映射表）。
 * 如果缺少 `utm_medium`，或者没有匹配到任何自定义规则，AppsFlyer 会回退为使用 `utm_source` 作为媒体渠道。
+
+<div id="utm-mapping-rules" />
 
 #### **UTM 映射规则**
 
@@ -179,6 +195,8 @@ AppsFlyer 使用以下点击 ID 映射对访问进行归因：
 
 如果在 URL 中未找到查询参数（PID、UTM 或点击 ID），AppsFlyer 会使用 `http_referrer` 来识别流量来源。这依赖于一种内部解析机制，该机制会提取域名host并将其映射到媒体渠道。
 
+<div id="the-parsing-mechanism" />
+
 #### **解析机制**
 
 为识别流量来源，AppsFlyer 会对引荐来源字符串进行如下清理：
@@ -189,6 +207,8 @@ AppsFlyer 使用以下点击 ID 映射对访问进行归因：
 
 *示例：引荐来源为*`www.mywebsite.com?param=example` *时，会被解析为媒体渠道* `mywebsite`。
 
+<div id="referrer-mapping-rules" />
+
 #### **引荐来源映射规则**
 
 | 如果域名主机包含… | 解析后的媒体渠道 |
@@ -198,6 +218,8 @@ AppsFlyer 使用以下点击 ID 映射对访问进行归因：
 | `googleads.g.doubleclick.net` | googleadwords\_int |
 | `tpc.googlesyndication.com` | dv360\_int |
 
+<div id="search-engine-mapping" />
+
 #### **搜索引擎映射**
 
 | 如果域名主机包含… | 解析后的媒体渠道 |
@@ -205,6 +227,8 @@ AppsFlyer 使用以下点击 ID 映射对访问进行归因：
 | `google。` | Google 搜索 |
 | `search.yahoo` | Yahoo 搜索 |
 | `bing.com` | Bing 搜索 |
+
+<div id="android-app-referrers" />
 
 #### **Android 应用引荐来源**
 
@@ -219,6 +243,8 @@ AppsFlyer 使用以下点击 ID 映射对访问进行归因：
 | `org.telegram.messenger` | telegram |
 
 </Accordion>
+
+<div id="step-3-campaign-resolution" />
 
 ## 步骤 3：广告系列解析
 
@@ -236,15 +262,21 @@ AppsFlyer 按优先级顺序从以下 URL 参数中提取广告系列信息：
 | `af_ad_id` | 广告 ID | — |
 | `af_keywords` | 关键词 | — |
 
+<div id="step-4-channel-classification" />
+
 ## 步骤 4：渠道分类
 
 除了识别媒体渠道外，AppsFlyer 还会将每次访问归入相应的渠道。这一分类可在原始数据报告和数据面板中，为流量类型提供统一的高层级视图。
+
+<div id="overriding-the-channel-with-af_channel" />
 
 ### 使用 af\_channel 覆盖渠道
 
 如需指定自定义渠道值，请在落地页 URL 中添加 `af_channel` 参数。例如，`af_channel=ig` 会将渠道设置为 `ig`，从而让您按标准类别无法体现的颗粒度（例如具体广告位）来细分流量。
 
 `af_channel` 仅在该次访问同时识别出媒体渠道时才会被解析。如果该次访问为自然流量（未识别到媒体渠道），无论是否存在 `af_channel`，都会始终解析为 `Direct`。
+
+<div id="default-channel-classification" />
 
 ### 默认渠道分类
 

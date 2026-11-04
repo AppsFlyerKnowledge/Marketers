@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **概要：** 了解什么是基于用户的跨平台归因，它是如何运作的，以及如何在 AppsFlyer 中设置它。
 
+<div id="what-is-user-based-attribution" />
+
 ## 什么是基于用户的归因？
 
 基于用户的归因是一种跨平台模型，依赖于持久的 <Anchor target="_blank" href="/marketers/zh/docs/customer-user-id-field-cuid">客户用户 ID (CUID)</Anchor> 来链接跨平台的转化事件。使用 CUID，该模型将所有活动归因于驱动用户首次转化事件的原始媒体来源。
+
+<div id="a-cross-platform-user-journey-example" />
 
 ### 跨平台用户旅程示例
 
 例如，用户点击 Google 网页广告，注册并在桌面浏览器上完成购买。后来，同一用户点击 Instagram 移动广告，安装移动应用，并进行另一次应用内购买。一周后，用户安装品牌的 CTV 应用，使用相同的 CUID 登录，并在此处开始付费订阅。
 
 因为 CUID 一致地识别跨平台的用户，而 Google 网页活动是与该 CUID 相关的第一个非有机启动事件，所以所有后续活动 - 包括移动应用购买和 CTV 订阅 - 都归因于 Google 活动。
+
+<div id="user-based-vs-device-based-attribution" />
 
 ### 基于用户的归因与基于设备的归因
 
@@ -49,6 +55,8 @@ x-zendesk:
 | 应用内购买 | 归因于 **YouTube** (基于最近的设备级交互) | 归因于 **Meta** (通过 CUID 识别的同一用户) |
 | **总购买额** ($150) | **$50 归因于自然流量**, **$100 归因于 YouTube** (在多个活动中分配) | **$150 总计** 归因于 Meta (单一统一来源) |
 
+<div id="what-makes-an-event-a-candidate-for-cross-platform-attribution" />
+
 ### 什么使事件成为跨平台归因的候选？
 
 如果事件满足 **所有** 以下条件，则该事件被视为 **跨平台归因的候选**：
@@ -59,6 +67,8 @@ x-zendesk:
 * **属于产品线：** 生成事件的应用必须是 **产品线** 的一部分 — 一组相关应用（例如，iOS、Android、CTV）在同一品牌下，归因范围和配置是集体的。有关更多信息，请参见 <Anchor target="_blank" href="/marketers/zh/docs/product-line-group-apps-for-cross-platform-attribution#产品线简介">跨平台归因的组应用程序</Anchor>。
 * **在非活动恢复窗口内：** 事件必须在 **非活动窗口** 内发生——这是一个可配置的时间段（例如，7到390天），在此期间，CUID 仍被视为活跃并有资格在特定产品线内进行归因。如果在此窗口内未见到 CUID，则其先前的归因映射将被丢弃。
 * **设备级归因字段存在：** 事件必须已经包含有效的 **设备级归因参数**（例如，媒体来源、活动 ID），这些参数源自 AppsFlyer 的经典基于设备的归因模型。
+
+<div id="how-is-the-attribution-source-determined" />
 
 ### 如何确定归因来源？
 
@@ -75,6 +85,8 @@ x-zendesk:
 > 📘 **注意**
 >
 > AppsFlyer 仅在 **同一产品线内** 匹配相同的 CUID。我们不尝试在不同的产品线或客户之间匹配、推断或共享 CUID。这确保了严格的隐私优先方法，使每个客户的数据保持孤立和独立。
+
+<div id="the-cuid-enrichment-processing-window" />
 
 #### CUID 丰富处理窗口
 
@@ -102,12 +114,16 @@ CUID 丰富处理窗口是一个时间段（1-4 小时），在此期间，AppsF
 >
 > 为了最大化跨平台匹配，始终在每个发送的应用内事件中包含CUID。
 
+<div id="set-up-cross-platform-attribution" />
+
 ## 跨平台归因的设置方式
 
 要设置跨平台归因，您需要在AppsFlyer中应用一些设置，并在您的应用代码中实现特定的SDK功能。
 
 * **在AppsFlyer中**，将您的应用分配到一个产品线，选择加入跨平台归因，并指定不活动恢复窗口。有关更多信息，请参见<Anchor target="_blank" href="/marketers/zh/docs/product-line-group-apps-for-cross-platform-attribution#如何设置产品线">设置产品线</Anchor>。
 * **在您的应用中**，设置AppsFlyer SDK以发送带有CUID的事件。有关开发者说明，请参见[设置客户用户 ID](https://dev.appsflyer.com/hc/docs/set-customer-user-id)。
+
+<div id="view-cross-platform-attribution-results" />
 
 ## 查看跨平台归因结果
 

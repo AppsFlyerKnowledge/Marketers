@@ -25,11 +25,15 @@ x-zendesk:
 
 > **概要：** 您可以将贵司内部系统（如BI和CRM）中的预定义人群分组导入到AppsFlyer的受众共享面板（Audiences），以便使用受众共享功能将这些人群对接到您合作的广告平台并对其进行维护。
 
+<div id="why-import-audiences" />
+
 ## 导入人群包的意义
 
 在某些情况下，您的内部系统中可能存在预定义的人群分组。将这些人群包（以设备和/或用户标识符列表的形式呈现）导入AppsFlyer之后，您就可以把受众共享面板作为一个人群管理枢纽，将所有人群包都对接到您合作的广告平台并对其进行维护。此外，您还可以利用受众共享所提供的标识符匹配、数据扩充和相关投放指标等其他功能，充分汲取关键信息。
 
 请参考以下使用场景：
+
+<div id="examples" />
 
 > 📄 **示例**
 >
@@ -50,9 +54,13 @@ x-zendesk:
 > 2. 将该人群包关联到您投放相关广告的合作平台。
 > 3. 在这些平台上设置广告，使其定向投放到对应的用户。
 
+<div id="audiences-import-v20" />
+
 ## 受众共享的人群包导入功能V2.0
 
 本文解释了人群包导入功能V2.0的作用原理和操作流程（涵盖CSV和API两种导入方式）。
+
+<div id="imported-audience-types" />
 
 ## 可用的人群包类型
 
@@ -70,12 +78,16 @@ x-zendesk:
 * 向渠道上传这类人群包时不考虑相关账户的用户标识符共享规则（即将您导入的所有标识符都上传到渠道）。
 * 可以使用本文所述的V2.0导入功能完成人群包的导入。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > * 截至2021年11月23日的所有现存人群包都会以“按原样”的方式处理，且无法将其更改为标准人群包。您仍然可以通过本文所述的V2.0导入功能对这些人群包进行必要的更新。
 > * 您最多可以同时有500个活跃的导入人群包。
 > * 仅账户管理员可以将新的导入人群包设定为“按原样”。
 > * 将CUID作为标识符导入人群包时，须确保AppsFlyer接收到的相关激活（而不仅仅是激活后事件）中包含其关联的CUID数据，从而完成CUID与相关设备的完整关联，同时添加其它设备标识符（即GAID、IDFA），实现数据扩充。<Anchor target="_blank" href="/marketers/zh/docs/customer-user-id-field-cuid#设置cuid">详情请见此处说明。</Anchor>
+
+<div id="audience-import-procedures" />
 
 ## 人群包导入流程
 
@@ -96,6 +108,8 @@ x-zendesk:
 * 如果您使用Excel制作该文件，请将其另存为**CSV (Comma delimited) (\*.csv)** 文件，如下图所示：
 
   <Image alt="CSV.jpg" src="https://support.appsflyer.com/hc/article_attachments/18502652300561" width="339px" />
+
+<div id="identifier-hash" />
 
 #### 标识符哈希
 
@@ -174,6 +188,8 @@ x-zendesk:
 
 此时，该人群包已通过您上传的CSV文件完成更新。但请注意，更新后的人群包无法立即上传到渠道，这是因为AF对于导入人群包的处理频次为<Anchor target="_blank" href="/marketers/zh/docs/about-data-freshness-and-timezone-support#eod">每天一次</Anchor>。
 
+<div id="error-messages" />
+
 ### 报错
 
 | 响应消息 | 原因 | 应对措施 |
@@ -231,6 +247,8 @@ x-zendesk:
 12. 创建一个包含用户/设备标识符的API请求，然后通过POST方式将其发送到AppsFlyer。
 
 **请注意：** 通过API导入人群包时，相关人群包会在24小时内更新。
+
+<div id="response-codes" />
 
 ### 响应代码
 

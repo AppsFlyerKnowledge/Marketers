@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** 请按照本指南中的入驻指南设置AppsFlyer Web归因。设置完毕后，您就可以对网站访问量和网页事件进行衡量，并将其归因到相应的营销渠道，了解哪些因素促成了有意义的网站效果，并支持跨平台衡量。
 
+<div id="about-web-performance-measurement" />
+
 ## AppsFlyer网页归因简介
 
 <Embed title="【Beta】启用AppsFlyer网页归因" typeOfEmbed="youtube" url="https://www.youtube.com/embed/tJ_LoaQinzY" providerUrl="https://www.youtube.com" />
@@ -31,6 +33,8 @@ x-zendesk:
 AppsFlyer 网页归因功能可帮助您将网站中的访问和网页事件与相应的营销渠道联系起来。也就是说，面板会显示哪些媒体渠道和营销活动将用户带到您的网站，并影响他们下一步的行动，以便您衡量绩效并优化投资回报率。
 
 如需在AppsFlyer中衡量网站访问量和网页事件，请按照下方AppsFlyer网页归因设置清单中的启用步骤进行操作。
+
+<div id="web-performance-measurement-setup-checklist" />
 
 ## AppsFlyer网页归因设置清单
 

@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要**：本文主要介绍了应用卸载率的衡量方式以及优质用户来源（媒体渠道、广告系列、广告素材及地理位置）的识别方式。
 
+<div id="overview" />
+
 ## 速览
 
 要洞察应用用户的价值，就必须同时分析应用的激活率和卸载率。您可以通过卸载指标衡量应用的使用情况，并了解用户流失的节点和原因。
+
+<div id="how-does-it-work" />
 
 ### 原理
 
@@ -37,6 +41,8 @@ x-zendesk:
 > 📘 **注意事项**
 >
 > 该指标仅在UA视图中可用。
+
+<div id="how-to-use-uninstall-data" />
 
 ## 卸载数据的使用方式
 
@@ -103,6 +109,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="setting-up-uninstall-measurement" />
+
 ## 设置卸载衡量
 
 卸载衡量的设置流程同时涉及营销人员和开发人员，因此两方需合作完成设置。具体的启用方式取决于应用运行的操作系统。
@@ -135,9 +143,13 @@ x-zendesk:
 </Tab>
 </Tabs>
 
+<div id="implementation-procedures" />
+
 ## 启用流程
 
 如需启用卸载衡量，您的移动端开发人员需要在应用中写入一个推送通知响应机制。具体的启用方式取决于操作系统。
+
+<div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### 将Firebase Cloud Messaging连接到AppsFlyer（安卓）
 
@@ -210,6 +222,8 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 
 </Accordion>
 
+<div id="configure-uninstall-measurement-in-appsflyer" />
+
 ### 在AppsFlyer后台配置卸载衡量
 
 <Tabs>
@@ -249,6 +263,8 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 
 </Tab>
 </Tabs>
+
+<div id="testing-uninstall-measurement" />
 
 ## 卸载衡量测试
 
@@ -291,6 +307,8 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 </Tab>
 </Tabs>
 
+<div id="mapping-the-uninstall-event" />
+
 ## 卸载事件映射
 
 ![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
@@ -302,10 +320,14 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 * AppsFlyer发送回传的前提条件是事件发生且被AppsFlyer记录到。
 * 如果您没有在数据总览面板或原始数据报告中看到卸载数据，就表示没有卸载数据回传到渠道，即使您已完成**af\_uninstall**事件的映射。
 
+<div id="limitations" />
+
 #### 局限性
 
 * 应用内事件回传报告中不包含卸载事件。
 * **af\_uninstall**事件适用于所有渠道。如果您想要将卸载事件映射到某渠道，但该渠道的对接选项卡中没有可用的卸载事件，请联系您的CSM或发送邮件至[hello@appsflyer.com](mailto:hello@appsflyer.com)。
+
+<div id="turning-off-uninstall-measurement" />
 
 ## 如何停用卸载衡量
 
@@ -324,6 +346,8 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 </Tabs>
 
 **请注意：** 如需上报卸载，请在用户安装应用前就**启用卸载衡量**。只有在**启用卸载衡量**开关打开后发生的激活才能记录到其卸载。
+
+<div id="to-turn-off-uninstall-measurement" />
 
 #### **关闭卸载衡量的方法如下**：
 

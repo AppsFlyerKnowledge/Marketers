@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了如何根据您的实际需求创建OneLink链接，打造理想的用户体验。用户点击链接后会跳转到与其设备适配的应用商店、网址或进入应用，并被归因到相应的带量渠道。
 
+<div id="onelink-links-and-experiences" />
+
 ## OneLink链接与用户体验
 
 <Embed title="为您的广告系列创建 OneLink 链接" typeOfEmbed="youtube" url="https://www.youtube.com/embed/KZBrxGEjVUE" providerUrl="https://www.youtube.com" />
@@ -35,6 +37,8 @@ x-zendesk:
 * 分用户体验的专用设置
 * 深度链接及跳转设置
 * 其他参数设置
+
+<div id="create-a-onelink-link" />
 
 ## 创建OneLink链接
 
@@ -51,6 +55,8 @@ x-zendesk:
 3. 点击**添加链接**。
 4. 选择您想要打造的[用户体验](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#experiences)。
 5. 选择一个媒体渠道或输入自定义媒体渠道名称。AppsFlyer后台会将该链接产生的数据展示在这个渠道名称下。媒体渠道在您的链接中表达为`pid`参数值。
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -118,6 +124,8 @@ x-zendesk:
    * 另选一个域名来代表您的品牌。<Anchor target="_blank" href="/marketers/zh/docs/brand-onelink-with-your-domain">了解详情</Anchor>
    * <span id="url-id"></span>修改URL ID来凸显该广告系列的内容。URL ID默认为8个字符，最多可包含50个字符，默认长度为8个字符。
 
+<div id="enable-retargeting-for-the-app" />
+
 #### 在应用配置中启用再营销
 
 如果您的应用从未启用过再营销功能，您需要先启用一次。 <Anchor target="_blank" href="/marketers/zh/docs/app-settings#归因设置">了解详情</Anchor>
@@ -179,6 +187,8 @@ x-zendesk:
 
 <Accordion title="社交应用落地页">
 
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > Meta ads现可支持iOS Universal Link。
@@ -214,9 +224,13 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
 * **如果用户已安装应用**：点击后调起应用。
 * **如果用户未安装应用**：跳转到对应的应用商店，并在激活应用后通过延迟深度链接进入应用中的具体页面（详情请见[深度链接与延迟深度链接](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking)）。
 
+<div id="note-2" />
+
 > 📘 **注意事项**
 >
 > 社交应用落地页仅支持OneLink短链。
+
+<div id="to-use-the-social-app-landing-page" />
 
 #### **如需启用社交应用落地页，请按以下步骤操作：**
 
@@ -226,6 +240,8 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
 3. 社交应用落地页仅支持OneLink短链。
 
 这里的归因结果取决于您的归因设置。
+
+<div id="to-set-up-the-social-apps-landing-page" />
 
 #### **社交应用落地页的设置方式如下：**
 
@@ -280,6 +296,8 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
        * 点击回溯窗口最长不能超过15分钟。
      * **请注意**：如果您已经在使用OneLink进行深度链接，那么您可能是通过<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">安卓</Anchor>和<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_gcd_legacy">iOS</Anchor>的历史API方式实现的，而不是UDL。  
 
+       <div id="tips" />
+
        > 👍 **提示**
        >
        > **deep\_link\_value**可以是商品SKU、社交媒体帖子ID、URL路径或任何其他值。
@@ -314,6 +332,8 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
       </Tabs>
 
    3. 在**其它参数**部分，根据实际需要添加自定义参数**deep\_link\_sub2-10**及对应的值，具体取决于您与开发人员的共同决策。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -358,6 +378,8 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
 * 未安装应用的新用户
 * 已安装应用的现有用户
 
+<div id="new-users-without-your-app-installed" />
+
 #### 未安装应用的新用户
 
 **前期准备**：没有安装应用但已<Anchor target="_blank" href="/marketers/zh/docs/registering-test-devices">加白的测试设备</Anchor>。
@@ -380,6 +402,8 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
    这个新增激活应该显示在链接中指定媒体渠道（如test）和广告系列的名称下。
 
 如果您的链接效果不符合预期，请查看<Anchor target="_blank" href="/marketers/zh/docs/onelink-troubleshooting-and-faq">OneLink疑难解答及问题排查指南</Anchor>。
+
+<div id="existing-users-with-your-app-installed" />
 
 #### 已安装应用的现有用户
 
@@ -404,6 +428,8 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
 如果您的链接效果不符合预期，请查看<Anchor target="_blank" href="/marketers/zh/docs/onelink-troubleshooting-and-faq">OneLink疑难解答及问题排查指南</Anchor>。
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## 其他操作
 
@@ -484,6 +510,8 @@ Apple新上线的iOS 15系统为iCloud用户提供了<Anchor target="_blank" hre
 
 该方案结合了OneLink短链与iOS的App Clip技术，可以让用户在不安装完整应用的情况下获得特定的产品体验。OneLink短链能为广告主提供用户归因数据，并把用户带入指定的App Clip体验，这与DDL的功能类似。您还可以在App Clip中添加一条路径，把用户从App Clip引导到完整版应用。**请注意**：如果用户在卸载完整版应用后，又通过App Clip进行了重新安装，那么这次激活在AppsFlyer面板上会记为自然量。 
 
+<div id="flow" />
+
 #### **链路**
 
 基于App Clip的DDL方案链路如下：
@@ -519,6 +547,8 @@ Apple新上线的iOS 15系统为iCloud用户提供了<Anchor target="_blank" hre
 
 <Accordion title="剪贴板解决方案">
 
+<div id="flow-1" />
+
 #### **链路**
 
 基于剪贴板的DDL解决方案链路如下：
@@ -535,6 +565,8 @@ Apple新上线的iOS 15系统为iCloud用户提供了<Anchor target="_blank" hre
 5. 用户点击**下载应用**。
 6. 用户跳转到App Store并下载应用，然后在首次启动应用时进入指定的页面。
 
+<div id="requirements" />
+
 #### **要求**
 
 如果您要使用复制/粘贴落地页DDL解决方案，需确保以下几点：
@@ -544,6 +576,8 @@ Apple新上线的iOS 15系统为iCloud用户提供了<Anchor target="_blank" hre
 * 接入AppsFlyer iOS SDK V6及以上版本。
 * 您的iOS应用开发人员需要添加代码，把剪贴板里的延迟深度链接数据粘贴到URL中。该操作不在AppsFlyer SDK的控制范围内。
 * 用户勾选弹窗中的复选框（默认勾选）。如果没有勾选，则无法复制URL，延迟深度链接也无法生效。
+
+<div id="setup" />
 
 #### **设置**
 
@@ -558,6 +592,8 @@ Apple新上线的iOS 15系统为iCloud用户提供了<Anchor target="_blank" hre
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

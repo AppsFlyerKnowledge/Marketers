@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **概要：** 您在AppsFlyer后台创建的OneLink链接可同时具备归因、跳转和深度链接功能，帮助您将自有和付费媒体的用户转化为应用用户，且不受设备、操作系统、流量入口和平台的限制。您可以在各种自有媒体中使用这些链接，无论是网站、横幅、社交媒体帖子、邮件还是短信文案，为用户带来最丝滑流畅的体验，从而推动他们的转化。
 
+<div id="introduction-video" />
+
 ## 视频简介
 
 <Embed title="YouTube视频播放器" typeOfEmbed="youtube" url="https://www.youtube.com/embed/golT4p9D8MA" providerUrl="https://www.youtube.com" />
+
+<div id="benefits" />
 
 ## 优势
 
@@ -39,6 +43,8 @@ AppsFlyer的用户体验和深度链接产品套件以OneLink为核心技术，�
 
 AppsFlyer将该产品套件免费提供给所有账户使用。
 
+<div id="experiences" />
+
 ## 用户体验
 
 AppsFlyer的用户体验和深度链接产品包以OneLink为核心技术，广告主使用该产品所创建的链接能够为各种来源的用户带来最佳的体验。该产品支持下列用户体验的配置：
@@ -51,6 +57,8 @@ AppsFlyer的用户体验和深度链接产品包以OneLink为核心技术，广�
 * **短信到应用**：创建专用于短信和短消息营销的链接，通过文字消息与用户互动。
 * **推荐到应用**：创建用户邀请链接，让用户以及博主邀请其他人使用您的应用或分享应用中的指定内容（如文章）。
 * **自定义**：不论您的用户来自PC端还是移动端，线上还是线下，自有媒体还是付费媒体，OneLink都能按您的要求对其进行导流。
+
+<div id="setting-up-onelink" />
 
 ## 设置OneLink
 
@@ -70,6 +78,8 @@ AppsFlyer的用户体验和深度链接产品包以OneLink为核心技术，广�
 | 创建OneLink模板 | <ul><li>市场人员/产品经理在AppsFlyer后台设置模板。</li><li>安卓开发人员配置现有用户的应用打开方式（使用安卓App Lin和URI scheme）</li><li>iOS开发人员配置现有用户的应用打开方式（使用iOS Universal Link和URI scheme）。</li></ul> | <ul><li>AppsFlyer面板</li><li><Anchor target="_blank" href="/marketers/zh/docs/create-a-onelink-template">市场人员指南</Anchor></li><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">安卓</Anchor>及<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup">iOS</Anchor>开发人员指南</li></ul> |
 | 创建OneLink链接 | <ul><li>市场人员/产品经理在AppsFlyer后台设置链接，选择所需的用户体验并添加相关的归因或深度链接参数。</li><li>安卓和iOS开发人员在应用中写入深度链接的UDL方法（如需使用深度链接）。</li></ul> | <ul><li><Anchor target="_blank" href="/marketers/zh/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">市场人员指南</Anchor></li><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_unified_deep_linking">安卓</Anchor>及<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_unified_deep_linking">iOS</Anchor>开发人员指南</li><li>应用示例（Github）</li></ul> |
 
+<div id="additional-options" />
+
 ## 其他选项
 
 如果您已完成面板中的部分或所有设置，可以考虑使用下文所述的各种其他功能。
@@ -83,9 +93,13 @@ AppsFlyer的用户体验和深度链接产品包以OneLink为核心技术，广�
 * <Anchor target="_blank" href="/marketers/zh/docs/understand-onelink-short-vs-long-urls">长链</Anchor>：您可以在OneLink自定义链接中添加参数，或通过简单的工作表公式生成大量OneLink自定义链接。
 * <Anchor target="_blank" href="/marketers/zh/docs/redirect-app-users-to-a-website">实现从应用到网页的跳转</Anchor>：您可以让用户从您的应用中跳转到某个网站或社交媒体平台中的某个页面。
 
+<div id="troubleshooting-and-faq" />
+
 ## 故障排查和FAQ
 
 如果OneLink链接在测试和调试过程中出现跳转/功能问题，请参阅<Anchor target="_blank" href="/marketers/zh/docs/onelink-troubleshooting-and-faq">OneLink故障排查指南</Anchor>，快速找到解决方法。
+
+<div id="limitations" />
 
 ## 局限性
 

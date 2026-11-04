@@ -24,6 +24,8 @@ x-zendesk:
 
 ![迁移流程](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
 
+<div id="about-migrating-to-appsflyer-from-other-vendors" />
+
 ## 从其他归因平台迁移到 AppsFlyer
 
 从其他归因平台迁移到 AppsFlyer 时需完成以下事项：
@@ -38,17 +40,25 @@ x-zendesk:
 * 先完成以上全部流程，然后再上线带有 AppsFlyer SDK 的新版本应用。
 * 着手迁移设备 ID 之前，请先暂停现行广告的投放。
 
+<div id="compare-measurement-between-appsflyer-and-other-mmps" />
+
 ### 比较 AppsFlyer 与其他 MMP 衡量方式上的差异
 
 考虑从其他移动归因合作伙伴（MMP）迁移至 AppsFlyer 时，广告主可能希望在相同的媒体渠道和广告系列中，对比两个 MMP 的归因衡量结果。但并非所有媒体渠道都支持同时使用多个 MMP 进行衡量。即使支持，也可能存在一些限制和挑战，需要特别注意，以避免归因结果出现差异。详情请参阅<Anchor target="_blank" href="/marketers/zh/docs/measuring-attribution-with-multiple-mmps">《使用多个 MMP 衡量归因》</Anchor>。
+
+<div id="tasks" />
 
 ## 迁移流程
 
 下表列出了各项工作的具体内容。如需查看各项常规任务的详细分解并记录进度，请下载<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQqbJIkE7kD87uSm7MH7zfkPN1VLuBaeotTEHAID2pYFVWM_LuQIA2AE2-8fVnXH-DrbXUQCs2iaiDe/pub?output=xlsx">相应的电子表格</Anchor>。
 
+<div id="scope-of-work" />
+
 #### 工作范围
 
 <table><thead><tr><th>事项</th><th>所需操作</th><th>人员</th><th>预计耗时</th><th>备注说明</th></tr></thead><tbody><tr><td>前期准备</td><td><ol><li> <a href="https://www.appsflyer.com/get-started" target="_blank">创建 AppsFlyer 账户</a>。</li><li> 在 AppsFlyer 中<a href="./adding-an-app-to-appsflyer" target="_blank">添加应用</a>。</li><li>［可选］将默认的 90 天<a href="./set-up-re-attribution-window" target="_blank">再归因窗口</a>调整为符合<span>您对活跃用户的定义</span>。 </li></ol></td><td>投放运营人员/使用 AppsFlyer 面板的用户</td><td>2 小时</td><td> </td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#sdk-对接">SDK 对接</a></td><td><ul><li>将 AppsFlyer SDK 接入您的应用中。</li><li>映射 S2S 或 SDK 应用内事件。</li><li>在应用商店中更新应用版本。</li></ul></td><td>应用开发人员</td><td>1-2 周</td><td><ul><li> <strong>建议：</strong>先在预发布版本的应用中对接 AppsFlyer SDK 并进行测试。</li><li>对于已开发完毕的应用，请务必在完成其他所有步骤后，在应用商店中更新该应用。</li></ul></td></tr><tr><td> <a href="./migration-to-appsflyer-from-other-vendors#设备迁移可选">设备迁移</a>（可选）</td><td>迁移设备 ID 可以避免对现有用户进行重复归因。</td><td>数据工程师</td><td>1-2 周</td><td rowspan="2"><ul><li>更新应用版本后，建议您先暂停在投广告，等到设备 ID 信息迁移完毕后再继续投放。</li><li>建议在过渡期的最后一天重复设备迁移流程，以确保覆盖所有设备。 </li></ul></td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#广告投放迁移">广告投放迁移</a></td><td><ul><li>将您使用的广告平台对接到 AppsFlyer</li><li>迁移现有的广告系列：<ul><li>SRN</li><li>非 SRN 广告平台</li><li>自有媒体</li></ul></li></ul></td><td>营销人员/UA 经理</td><td>1-3 周</td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#数据报告设置">数据报告设置</a></td><td><ul><li>将当前的报告结构按照 AppsFlyer 数据结构进行调整/映射。</li><li>做好准备工作，以便接收 AppsFlyer 数据报告。</li></ul></td><td>数据工程师</td><td>2-4 周</td><td> </td></tr></tbody></table>
+
+<div id="sdk-integration" />
 
 ### SDK 对接
 
@@ -81,6 +91,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="device-migrationoptional" />
+
 ### 设备迁移——可选
 
 <div id="about-device-migration" />
@@ -90,6 +102,8 @@ x-zendesk:
 设备迁移是指将现有用户的设备 ID（IDFA、IDFV、GAID、CUID）列表上传到 AppsFlyer。请务必先完成这个流程，然后再上线带有 AppsFlyer SDK 的新版本应用。设备迁移是指将现有用户的设备 ID 列表（IDFA、IDFV、GAID、CUID）上传至 AppsFlyer 的过程。
 
 设备迁移可以解决现有应用用户的相关数据问题。这些用户之前已经下载应用，并由原归因服务商进行归因。
+
+<div id="example" />
 
 > 📄 **示例**
 >
@@ -104,6 +118,8 @@ x-zendesk:
 * **再营销：** 再归因和再互动数据会正常显示。
 * **活跃数据：** 正常显示。
 * **留存和同期群数据：** 已迁移的设备没有安装记录。因此不会关联到任何同期群，也不会显示在留存和同期群报告中。
+
+<div id="note" />
 
 > 📘 **说明**
 >
@@ -130,6 +146,10 @@ x-zendesk:
 <Accordion title="归因迁移">
 
 对于通过这种方法迁移到 AppsFlyer 的设备，AppsFlyer 会按照之前的归因工具所上报的媒体渠道以及相关广告平台的数据保留政策，记录并呈现其应用内事件和应用打开（sessions）数据，
+
+<div id="note-1" />
+
+<div id="attributed-device-migration-csv-structure" />
 
 #### 用于归因设备迁移的 CSV 文件结构
 
@@ -168,6 +188,8 @@ x-zendesk:
 
 采用此方式迁移至 AppsFlyer 的设备会被记录为自然量用户，但不会显示在相关界面中。这些设备上的应用内事件和应用打开（sessions）也会被记录为自然量，并显示在面板中。
 
+<div id="non-attributed-device-migration-csv-file-structure" />
+
 #### 用于非归因设备迁移的 CSV 文件结构
 
 | 操作 | D. Columns | 使用场景 | 示例 |
@@ -190,6 +212,8 @@ x-zendesk:
 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQPvcJ3zXjsB5Zrn8vqD_-QXFPjguDU9Y8_LfK6-2eOgdlDltmFdGoM-94Ouw-D327oMp9p0ZbFFawF/pub?gid=935533759&single=true&output=csv">查看 CSV 文件范例</Anchor>
 
 </Accordion>
+
+<div id="campaign-migration" />
 
 ### 广告投放迁移
 
@@ -260,6 +284,8 @@ x-zendesk:
 <Anchor target="_blank" href="/marketers/zh/docs/skan-conversion-studio">了解如何在 AppsFlyer 中设置 SKAN 转化值。</Anchor>
 
 </Accordion>
+
+<div id="data-report-setup" />
 
 ### 数据报告设置
 

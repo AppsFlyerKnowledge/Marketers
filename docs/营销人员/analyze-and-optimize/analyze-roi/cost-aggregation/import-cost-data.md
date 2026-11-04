@@ -33,6 +33,8 @@ x-zendesk:
 
 > **概要：** 成本导入（Cost Import）功能是AppsFlyer ROI360解决方案中的一部分。广告主可以上传或通过邮件发送CSV格式的成本数据，全面满足营销成本的上报需求，同时确保数据的完整性和准确性。
 
+<div id="overview" />
+
 ## 速览
 
 成本导入功能适用于以下场景：
@@ -46,6 +48,8 @@ x-zendesk:
 
 * 广告平台也可以为其广告主导入成本文件，但必须先由广告主为其开通必要权限。
 * 代理不能上传数据。但代理可以制备文件，然后将这些文件发送给广告主，由广告主完成上传。
+
+<div id="procedures" />
 
 ## 配置流程
 
@@ -69,9 +73,13 @@ x-zendesk:
 * 请遵循下表所列的文件结构、格式和规范。  
   **请注意**：如果您使用Excel或Google Sheets来创建该文件，请务必参照[Excel和Google Sheets的格式](/docs/import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file)说明进行操作。
 
+<div id="csv-schema" />
+
 #### CSV文件结构
 
 <table><thead><tr><th><p><span>字段名称</span></p><p><span>（区分大小写）</span></p></th><th><span>格式/说明</span></th><th><span>示例</span></th><th><span>是否必须发送</span></th></tr></thead><tbody><tr><td><span>date</span></td><td><ul><li><span>产生相关成本的日期</span></li><li> <span>格式：字符串</span><br/>推荐方法：<ul><li><span>YYYY-MM-DD</span></li><li><span>YYYY-MM-DD</span></li><li><span>MM-DD-YYYY</span></li><li> <span>MM/DD/YYYY<br/> </span> </li></ul></li><li>不允许使用未来的日期</li><li> <strong>推荐设置</strong>：使用您在AppsFlyer后台为相关应用设置的时区。</li><li> <strong>请注意</strong>：如果您使用Excel或者Google Sheets来创建CSV文件，请务必<a href="./import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file">参考相关说明</a>。 </li></ul></td><td><ul><li><span>2019-05-30</span></li><li><span>2019/05/30</span></li><li><span>5-30-2019</span></li><li>5/30/2019</li><li>05-30-2019</li><li>05/30/2019</li></ul></td><td><span>✓</span></td></tr><tr><td><span>app-id</span></td><td><ul><li><span>格式：字符串</span></li><li> <span>即AppsFlyer面板中显示的App ID</span>，</li><li>一个文件中可包含多个App ID。</li><li>所有App ID都必须属于同一个广告主账号。</li></ul></td><td><ul><li><span>com.app.name </span></li><li><span>id12356789</span></li></ul></td><td><span>✓</span></td></tr><tr><td><span>media-source</span></td><td><ul><li><span>格式：字符串</span></li><li><span>这里的媒体渠道名称必须与AppsFlyer面板显示的渠道名称的<strong>完全一致</strong>。<strong>请注意：</strong>如果面板显示的名称中带有后缀_int，也必须一并包含。</span></li><li> <span>每个文件只能包含一个媒体渠道的数据。</span><span></span>同一个媒体渠道的文件中可以包含多个应用的数据。</li></ul></td><td><span>network_x_int</span></td><td><span>✓</span></td></tr><tr><td><span>campaign</span></td><td><ul><li> <span>格式：字符串</span><span></span> </li><li><span>广告系列名称。请确保该名称与广告平台中对应广告系列的名称一致（区分大小写）。</span></li><li>不同应用下切勿使用相同的广告系列名称。</li></ul></td><td>campaign_a</td><td><p><span>✓</span></p><p><span><strong>请注意</strong>：如果归因数据同时带有名称和ID信息，那么CSV文件中也必须同样带有名称和ID。</span></p></td></tr><tr><td><span>spend</span></td><td><ul><li><span>广告消耗的金额</span></li><li><span>最多可精确到小数点后五位</span></li><li><span>可填充零值（0）</span></li><li> <span><strong>请注意</strong>：</span><ul><li>不可使用千位分隔符，如："2,874.12"。</li><li>如果您使用Excel或者Google Sheets来创建CSV文件，请务必<a href="./import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file">参考相关说明</a>。</li></ul></li></ul></td><td><p><span>2874.12345</span></p></td><td><span><span>✓</span></span></td></tr><tr><td><span>geo</span></td><td><ul><li><span>格式：字符串</span></li><li> <span><a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166</a>中的国家代码，由两个字母组成。</span><strong>请注意</strong>：请确保您发送的是2个字符，中间无空格。 </li><li> <span>英国的国家代码是UK</span><span>而非GB。<br/> </span> </li></ul></td><td><p><span>US, CN, AU</span></p></td><td><span>否</span></td></tr><tr><td><span>currency</span></td><td><ul><li><span>格式：字符串</span></li><li> <a href="https://www.iso.org/iso-4217-currency-codes.html" target="_blank">ISO 4217</a>中的货币代码，由三个字母组成。 <strong>请注意</strong>：切勿在代码前后使用空格。</li><li> <span>文件中的每个应用只能对应一个货币代码，不同的</span><span>应用可以使用不同的货币代码。 </span> </li></ul></td><td><span>USD, GBP, EUR, JPY</span></td><td><p><span>不可以。</span></p><p><span>若该字段留空，则默认使用USD（美元）。</span></p></td></tr><tr><td><span>campaign-id</span></td><td>格式：字符串</td><td>abc1234def</td><td rowspan="5"><p>不可以。</p><p><strong>请注意</strong>：如果归因数据同时带有名称和ID信息，那么CSV文件中也必须同样带有名称和ID。</p></td></tr><tr><td><span>adset</span></td><td>格式：字符串 </td><td>my_adset_1</td></tr><tr><td><span>adset-id</span></td><td>格式：字符串</td><td>id5678ghi</td></tr><tr><td><span>ad</span></td><td>格式：字符串 </td><td>my_ad_name</td></tr><tr><td> <span>ad-</span><span>id</span> </td><td>格式：字符串 </td><td>id91011jkl</td></tr><tr><td><span>site-id</span></td><td><ul><li>格式：字符串 </li><li>用于标记媒体的唯一ID。 <a href="./about-link-structure-and-parameters#site-id-parameter" target="_blank">了解详情</a> </li></ul></td><td>id1213mno</td><td>否</td></tr><tr><td><span>channel</span></td><td>格式：字符串 </td><td> video</td><td>否</td></tr><tr><td><span>keywords</span></td><td>格式：字符串</td><td><ul><li>better</li><li>better you app</li><li>better you online</li></ul></td><td>否</td></tr><tr><td><span>agency</span></td><td><ul><li>格式：字符串</li><li>相关代理的名称，<code>af_prt</code> 参数中的值。</li><li>一个文件中仅可包含一个代理，且不能出现非该代理代投的广告系列。</li><li>每行都必须包含该代理的名称。代理字段一列不能出现空白的单元格。</li><li>代理必须具备文件中涵盖的所有应用的权限。</li><li>只有广告主可以上传文件，代理不能上传数据。但代理可以制备文件，然后将这些文件发送给广告主，让广告主完成上传。</li><li>如果在后续提交中包含了相同日期的成本数据和机构名称（<code>af_prt</code>），而在原始提交中缺失，这将导致成本数据重复。</li></ul></td><td>AgencyName</td><td>否</td></tr><tr><td colspan="4"><span><strong>请注意：</strong>如果名称中带有非英文字符，必须使用UTF-8对其进行编码。</span></td></tr></tbody></table>
+
+<div id="csv-format-and-rules" />
 
 #### CSV文件的格式和规范
 
@@ -143,6 +151,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="dashboard" />
+
 ## 面板
 
 成本导入仪表板允许您上传文件并查看之前上传文件的详细信息。
@@ -183,6 +193,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 其他相关信息
 
 <div id="using-excel-or-google-sheets-to-prepare-csv-file" />
@@ -194,6 +206,8 @@ x-zendesk:
 * 设置日期单元格的格式。
 * 设置广告消耗单元格的格式。
 * 检查并确认文件内容的格式正确无误。
+
+<div id="format-date-cells" />
 
 #### 日期单元格的格式设置
 
@@ -207,6 +221,8 @@ x-zendesk:
 4. 在类型（Type）字段中，输入**YYYY-MM-DD**
 5. 点击**OK**。  
    日期格式设置完毕。
+
+<div id="formatting-spend-cells" />
 
 #### 广告消耗单元格的格式设置
 
@@ -225,6 +241,8 @@ x-zendesk:
 5. 【可选】设置数值的**小数点后位数**，默认值为2，最多可精确到小数点后5位。
 6. 点击**OK**。  
    单元格格式化完毕。
+
+<div id="verify-content-format" />
 
 #### 检查文件内容的格式
 
@@ -284,6 +302,8 @@ x-zendesk:
 7. 点击**保存权限**。
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## 问题排查、特点和局限性
 

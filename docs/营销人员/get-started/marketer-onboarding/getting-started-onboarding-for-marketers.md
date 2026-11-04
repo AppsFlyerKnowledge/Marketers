@@ -27,11 +27,15 @@ x-zendesk:
 
 <Embed title="广告主入驻指南" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/gamcb25kgu" providerUrl="https://fast.wistia.com" />
 
+<div id="introduction" />
+
 ## 简介
 
 本文旨在帮助广告主侧（应用所有者）的产品经理**规划并执行AppsFlyer入驻工作**。为此，我们列出了每一项工作的负责人员和预估用时。
 
 请注意：本文中的预估用时是基于我们与大量新客户的合作经验总结得出的，仅供参考。每个广告主、每个应用及其接入情况都会有所不同，因此您的实际用时可能会有出入。
+
+<div id="account-setup" />
 
 ## 账户设置
 
@@ -44,9 +48,13 @@ x-zendesk:
 
 **结果：** 欢迎！您的AppsFlyer账户已激活，且账户下的用户能够正常使用面板。
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 还不太了解AppsFlyer的产品和服务？让这个<Anchor target="_blank" href="/marketers/zh/docs/welcome-to-appsflyer#appsflyer-能为您提供哪些帮助">6分钟视频</Anchor>带您走近AppsFlyer。
+
+<div id="app-onboarding" />
 
 ## 应用入驻
 
@@ -58,6 +66,8 @@ x-zendesk:
 
 1. 在菜单栏中点击用户菜单（即面板右上角的邮箱地址下拉菜单）
 2. 选择“应用入驻”（App onboarding）
+
+<div id="step-1-app-setup" />
 
 ## 第1步：设置应用
 
@@ -71,6 +81,8 @@ x-zendesk:
 | 【可选】将现有用户的信息迁移到AppsFlyer | 2小时 | 如果您已具有数量庞大的现有用户，建议您<Anchor target="_blank" href="/marketers/zh/docs/migration-to-appsflyer-from-other-vendors#设备迁移可选">将其信息迁移到AppsFlyer</Anchor>，以避免为这些用户重复付费。<br /><br />**请注意：** 请让您的AppsFlyer CSM协助您完成这一步，或发邮件至[hello@appsflyer.com](mailto:hello@appsflyer.com))联系技术支持团队寻求协助。 |
 
 **结果：完成上述步骤后**，您的应用在AppsFlyer面板中即已设定完毕。
+
+<div id="step-2-sdk--api-integration" />
 
 ## 第2步：SDK / API对接
 
@@ -88,6 +100,8 @@ x-zendesk:
 
 **结果：** 完成上述步骤后，您就可以对相关应用进行激活归因、应用内事件衡量并使用其他不涉及开发的AppsFlyer功能。
 
+<div id="step-3-attribution-setup" />
+
 ## 第3步：归因设置
 
 对于在[第1步：应用设置](/docs/getting-started-onboarding-for-marketers#第1步设置应用)中添加到AppsFlyer后台的每一个应用，请完成以下操作：设置应用：
@@ -101,6 +115,8 @@ x-zendesk:
 | 【可选】启用再营销功能 | 产品经理 | 2分钟 | <Anchor target="_blank" href="/marketers/zh/docs/app-settings#reengagement-attribution">在应用配置页面中打开再营销开关</Anchor>。<br /><br />了解更多<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">再营销指南</Anchor> |
 
 **结果：** 完成上述步骤后，所有为您的应用带量的媒体渠道会在吸引到新老用户与其互动时得到归因。
+
+<div id="step-4-additional-setup" />
 
 ## 第4步：其他设置
 
@@ -120,6 +136,8 @@ x-zendesk:
 | 跨流量入口、跨平台、跨设备梳理整合用户链路 | 产品经理/  <br />应用开发人员 | <Anchor target="_blank" href="/marketers/zh/docs/people-based-attribution-pba-overview">基于用户的归因（PBA）</Anchor> |
 | 确保隐私合规：GDPR、CCPA等 | 产品经理/  <br />应用开发人员 | 允许用户<Anchor target="_blank" href="/marketers/zh/docs/apply-privacy-preserving-sdk-methods">拒绝授权</Anchor>进行归因 |
 
+<div id="enrich-your-knowledge" />
+
 ## 扩展知识点
 
 建议所有AppsFlyer用户都了解以下信息：
@@ -132,11 +150,17 @@ x-zendesk:
 | 了解<Anchor target="_blank" href="/marketers/zh/docs/aggregated-and-analytics-reporting-overview">汇总报告及分析工具</Anchor> | 30分钟 |
 | 了解<Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview">原始数据报告</Anchor> | 30分钟 |
 
+<div id="related" />
+
 ## 相关信息
+
+<div id="tip-1" />
 
 > 👍 **提示**
 >
 > 刚开始接触UA（用户获取）？<Anchor target="_blank" href="https://www.appsflyer.com/resources/ecommerce/getting-started-user-acquisition-apps-complete-guide/">这篇文档</Anchor>将帮助您了解用户获取的规划、执行和持续优化过程中最棘手的难题和最关键的要素。
+
+<div id="note" />
 
 > 📘 **注意**
 >

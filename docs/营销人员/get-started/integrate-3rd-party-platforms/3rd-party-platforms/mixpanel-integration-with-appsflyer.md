@@ -33,9 +33,13 @@ x-zendesk:
 
 AppsFlyer与Mixpanel之间的集成使您能够将来自AppsFlyer的获取活动信息导入到Mixpanel。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 部分渠道限制第三方的数据共享。 这时，我们不会向渠道发送受限事件的回传，不论您是否在回传配置部分选择了该事件。
+
+<div id="setting-up-mixpanel" />
 
 ## 设置Mixpanel
 
@@ -58,6 +62,8 @@ AppsFlyer与Mixpanel之间的集成使您能够将来自AppsFlyer的获取活动
 <Accordion title="渠道对接选项卡">
 
 下文说明了对接选项卡中所包含各部分内容。
+
+<div id="general-settings" />
 
 ### 通用设置
 
@@ -82,11 +88,15 @@ AppsFlyer与Mixpanel之间的集成使您能够将来自AppsFlyer的获取活动
     * events开启以将安装数据发送到Mixpanel事件端点。
     * 人员启用此选项以将安装数据发送到 Mixpanel People 端点。  
 
+      <div id="note" />
+
       > 📘 **注意**
       >
       > 要将安装回调发送到 Mixpanel，必须启用两个端点中的至少一个，**事件** 或 **用户**。
 
     * 高级数据共享启用此选项以向 Mixpanel 发送附加信息：c（活动）、network（pid）、impression\_based（是否为展示）。
+
+<div id="default-postbacks" />
 
 ### 默认回传
 
@@ -94,11 +104,15 @@ AppsFlyer 可以在用户安装后自动将回调发送到 Mixpanel，包括安�
 
 [![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
 
+<div id="in-app-events-settings" />
+
 ### 应用内事件设置
 
 ![mixpanel-in-app-events-settings.png](https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png)
 
 在此部分，您通过回调将 AppsFlyer 事件与 Mixpanel 进行映射。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -164,6 +178,8 @@ AppsFlyer 可以在用户安装后自动将回调发送到 Mixpanel，包括安�
 
 </Accordion>
 
+<div id="integrating-with-mixpanel-when-using-a-login-mechanism" />
+
 ## 在使用登录机制时与 Mixpanel 集成
 
 以下是集成步骤的示例：
@@ -224,9 +240,13 @@ AppsFlyer 可以在用户安装后自动将回调发送到 Mixpanel，包括安�
 
 7. Mixpanel 从 AppsFlyer 接收 customer\_user\_id，作为用户 ID 的别名（例如，电子邮件地址）。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 如果您在应用程序中没有使用任何注册流程，请按照上述步骤 1-3 实施。
+
+<div id="viewing-appsflyer-data-in-mixpanel" />
 
 ## 在 Mixpanel 中查看 AppsFlyer 数据
 

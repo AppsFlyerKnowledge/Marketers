@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：概要：Salesforce Marketing Cloud MobilePush是一个用户互动平台，适用于营销、用户增长和促活工作。该平台是AppsFlyer的对接渠道之一。**
 
+<div id="overview" />
+
 ## 速览
 
 广告主可以利用Salesforce Marketing Cloud MobilePush，根据跨渠道的用户数据，针对指定用户群体创建并发送推送消息。这种营销方式能够引导用户使用相关应用，并提升其ROI。您可以通过MobilePush掌握用户在您应用中的行进轨迹，了解他们浏览的商品以及在各个页面上停留的时间等等。对接MobilePush后，您就可以：
@@ -30,35 +32,53 @@ x-zendesk:
 * 轻松投放跨渠道广告
 * 分组定时发送推送消息
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 部分渠道限制第三方的数据共享。
+
+<div id="setting-up-salesforce-marketing-cloud-mobilepush" />
 
 ## Salesforce Marketing Cloud MobilePush的设置方法
 
 大部分的设置工作都集中在Salesforce后台（第1-4步），只有第5步需要在AppsFlyer后台完成。
 
+<div id="step-1-set-up-mobilepush-sdk" />
+
 ### 第1步：
 
 * <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_get_started.htm&type=5">接入MobilePush SDK设置</Anchor>
 
+<div id="step-2-provision-for-push-notifications" />
+
 ### 第2步：第2步：使用推送通知之前的准备工作
+
+<div id="step-3-enable-app-push-notifications" />
 
 ### 第3步：第3步：启用应用推送通知
 
 * <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-configureforpush.html">启用推送通知</Anchor>
 
+<div id="step-4-set-up-app-push-notifications" />
+
 ### 第4步：第4步：设置应用推送通知
 
 * 创建并向移动端推送消息。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > 在Salesforce Marketing Cloud上创建推送通知时，必须添加<Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_custom_keys.htm&type=5">custom key</Anchor>（自定义密钥），这样AppsFlyer才能使用正确的PID和投放参数正常地完成归因。
 
+<div id="step-5-set-up-push-notifications-in-appsflyer" />
+
 ### 第4步：第5步：在AppsFlyer平台中设置推送通知
 
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications-ios#addpushnotificationdeeplinkpath-recommended">使用OneLink配置iOS SDK（链接文档中的第3步）</Anchor>
+
+<div id="note-1" />
 
 > 📘 **注意**
 >

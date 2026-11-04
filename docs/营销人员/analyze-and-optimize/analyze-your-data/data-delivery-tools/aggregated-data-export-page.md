@@ -33,6 +33,8 @@ x-zendesk:
 
 **<span id="download-aggregate-data-reports"></span>报告的下载方式如下：**
 
+<div id="see-also" />
+
 > 📄 **相关文档**
 >
 > * <Anchor target="_blank" href="/marketers/zh/docs/aggregated-and-analytics-reporting-overview">数据汇总及分析功能简介</Anchor>

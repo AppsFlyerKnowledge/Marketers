@@ -37,6 +37,8 @@ x-zendesk:
 
  [![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
 
+<div id="what-is-attribution" />
+
 ## 什么是归因？
 
 **归因**用于判断是什么原因促使用户下载应用，或在激活应用后进行各种操作（如再次打开或重新安装）。归因结果分为以下两种：
@@ -49,6 +51,8 @@ x-zendesk:
 > 👍 **提示**
 >
 > 如需进一步了解归因，我们在<Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7766/play/18609/attribution-101-part-1">AppsFlyer充电站里为您准备了相关课程</Anchor>，视频虽短，但干货满满！
+
+<div id="what-is-an-app-install" />
 
 ## 如何计算一次激活？
 
@@ -65,11 +69,15 @@ x-zendesk:
   * **再互动**
   * **再归因（reattribution）**
 
+<div id="attribution-methods" />
+
 ## 归因方法
 
 AppsFlyer使用以下各种方法进行归因：
 
 <table><thead><tr><th>方法</th><th>用户设备ID</th><th>技术</th><th>归因方</th><th><p>安卓（Google Play和第三方商店）</p></th><th>iOS </th><th>Universal Windows Platform（UWP）</th><th>CTV、PC和主机平台（3）</th></tr></thead><tbody><tr><td> <a href="#install-referrer-android-only">Referrer</a>归因（1）</td><td>否</td><td>确定性匹配</td><td>AppsFlyer</td><td>是（2）</td><td>否</td><td>是</td><td>否</td></tr><tr><td> <a href="#device-id-matching">设备ID匹配</a>（1）</td><td>是</td><td>确定性匹配</td><td>AppsFlyer</td><td>是 </td><td>是</td><td>是</td><td>是</td></tr><tr><td> <a href="#probabilistic-modeling">概率模型</a>（1）</td><td>否</td><td>概率匹配</td><td>AppsFlyer</td><td>是 </td><td>是 </td><td>否</td><td>是</td></tr><tr><td> <a href="#aggregated-advanced-privacy-aap">汇总层级的高级隐私保护（AAP）</a>（1）</td><td>否</td><td>汇总</td><td>AppsFlyer</td><td>否</td><td>是</td><td>否</td><td>否</td></tr><tr><td> <a href="#preload-campaigns">预装归因</a>（1）</td><td>否</td><td>确定性匹配</td><td>AppsFlyer</td><td>是</td><td>否</td><td>是</td><td>否</td></tr><tr><td> <a href="./skadnetwork-skan-solution-guide" target="_blank">SKAdNetwork</a>（SKAN）</td><td>否</td><td>确定性匹配</td><td>苹果</td><td>否</td><td>是</td><td>否</td><td>否</td></tr><tr><td> <a href="./apple-ads-integration-setup" target="_blank">Apple Search Ads</a>（1）</td><td>否</td><td>确定性匹配</td><td>苹果</td><td>否</td><td>是</td><td>否</td><td>否</td></tr><tr><td> <a href="./appsflyer-attribution-model#deep-link">深度链接</a>（1）</td><td>否</td><td>确定性匹配</td><td>AppsFlyer</td><td>是</td><td>是</td><td>是</td><td>否</td></tr><tr><td colspan="7"><p>（1）AppsFlyer面板和报告中有时会称其为传统（Classic）归因方式。</p><p>（2）第三方商店可用</p><p>（3）参见<a href="./ctv-pc-and-console-platform-attribution-concepts#适配平台" target="_blank"><span>CTV、PC端和主机</span>平台完整列表</a></p></td><td> </td></tr></tbody></table>
+
+<div id="attribution-method-priorities-attribution-waterfall" />
 
 ### 各种归因方式的优先级（归因瀑布流）
 
@@ -197,6 +205,8 @@ AAP将Apple SKAdNetwork作为隐私保护的最低标准。除自有媒体和ATT
 
 </Accordion>
 
+<div id="attribution-methods-per-media-source-and-appsflyer-feature" />
+
 ### 按渠道类型梳理的归因方法和AF功能
 
 在下面的章节中，我们按以下三个纬度详细剖析了各种归因方法的适配情况：
@@ -220,6 +230,8 @@ AAP将Apple SKAdNetwork作为隐私保护的最低标准。除自有媒体和ATT
 <table><thead><tr><th rowspan="2">Media source（媒体渠道）</th><th colspan="3">归因方法</th></tr><tr><th>安卓</th><th>iOS</th><th><strong>CTV、PC和主机平台</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRN</a></td><td>设备ID匹配</td><td><ul><li>设备ID匹配</li><li>AAP（iOS 14.5+）</li><li>SKAdNetwork（iOS 14+）</li></ul></td><td>设备ID匹配</td></tr><tr><td><ul><li>通过<a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">渠道归因链接</a>对接的广告平台（非SRN） </li><li><span>CTV、PC和主机平台</span></li></ul></td><td><ul><li>安装来源追踪码</li><li>设备ID匹配</li><li>概率模型</li></ul></td><td><ul><li>设备ID匹配</li><li>概率匹配（iOS 14.5之前的版本）</li><li>AAP（iOS 14.5+）</li><li>SKAdNetwork（iOS 14+）</li></ul></td><td> </td></tr><tr><td><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">随设备预装</a></td><td>预装</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="user-engagement-attribution-types" />
 
 ## 用户互动归因类型
 
@@ -267,6 +279,8 @@ AAP将Apple SKAdNetwork作为隐私保护的最低标准。除自有媒体和ATT
 
 </Accordion>
 
+<div id="advanced-attribution-topics" />
+
 ## 高级归因话题
 
 <div id="in-app-events" />
@@ -307,6 +321,8 @@ AppsFlyer会将这些形成助攻的渠道作为促成激活的辅助方记录�
 如需进行设备测试和多次激活，请在AppsFlyer系统中为相关设备<Anchor target="_blank" href="/marketers/zh/docs/registering-test-devices">加白</Anchor>。对于未加白的设备，AF仅记录第一次激活。
 
 请注意：AppsFlyer可以对没有设备ID的iOS重装激活进行更准确的归因，但需要您在AF后台的<Anchor target="_blank" href="/marketers/zh/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only">应用配置页</Anchor>中打开这个功能。
+
+<div id="reinstalling-ios-apps-that-are-backed-up-in-icloud" />
 
 #### 重新激活在iCloud中备份过的iOS应用
 

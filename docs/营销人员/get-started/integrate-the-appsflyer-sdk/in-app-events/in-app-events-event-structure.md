@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **概要：** 本文列出了广告主可以选择的预定义事件名称和参数，用于记录激活后的应用内事件（如登录、注册、应用内购买等）。
 
+<div id="overview" />
+
 ## 速览
 
 您的开发人员需要在应用中的相关位置添加代码后您才能发送对应的应用内事件。本文对各种预定义事件名称和及其对应参数做了详细说明。
 
 如果您不确定需要记录哪些事件和参数，请参考我们按垂类梳理的<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview#recommended-events-by-business-vertical">推荐事件（含示例和流程）</Anchor>。
+
+<div id="predefined-event-names" />
 
 ## 预定义事件名称
 
@@ -634,6 +638,8 @@ x-zendesk:
 * [af\_currency](/docs/in-app-events-event-structure#af_currency)
 * [af\_subscription\_id](/docs/in-app-events-event-structure#af_subscription_id)
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 如果您要让这个事件对应到Meta ads的StartTrial（开始试用）事件，并关联收入，请把参数设为af\_price，而不是af\_revenue。
@@ -765,13 +771,19 @@ x-zendesk:
 
 </Accordion>
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 除了本章中提到的预定义事件名称以外，<Anchor target="_blank" href="/marketers/zh/docs/meta-ads-in-app-event-mapping#预定义事件的映射">Meta ads还提供额外的预定义事件选项</Anchor> ，这些事件是不能设置参数的。
 
+<div id="predefined-event-parameters" />
+
 ## 预定义事件参数
 
 本章为您列举了预定义事件参数，并针对每个事件参数都列出了Meta ads、Google Ads、Snap、X Ads和Criteo的相应字段，用于事件映射。您可以在一个事件中添加任意事件参数。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -1341,6 +1353,8 @@ x-zendesk:
 
 **说明**: 购买事件的总体金额。在AppsFlyer平台中，af\_revenue是记录收入的参数。该参数也能统计取消订单或退款等事件造成的<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview#revenue-events">负收入</Anchor>。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 收入值中不能包含逗号分隔符、货币、特殊字符或文字。比如1234.56就是一个有效的收入值。AppsFlyer能支持精确到小数点后五位的收入值。
@@ -1521,6 +1535,8 @@ x-zendesk:
 * af\_tutorial\_id
 * af\_virtual\_currency\_name
 * af\_duration\_seconds
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

@@ -22,12 +22,16 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了广告主可访问或更新数据的API接口。
 
+<div id="advertiser-api-list-and-interfaces" />
+
 ## 广告主API清单和接口说明
 
 <span id="01EEQJERAWW3HY59HVPY3YWA0B"></span>有关数据报告和API接口信息，请查看：
 
 * <span id="01EEQJERAW2ZTBWBQKBCDSC76Z"></span><span id="01EEQJERAWQ2WCPV0207XM6FR4"></span><Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview"><span id="01EEQJERAX0W7RCYQWVM2M5S13"></span>原始数据报告/API</Anchor>
 * <span id="01EEQJERAWA09P200SGR985846"></span><span id="01EEQJERAW6AC6WR7E46T5DMHW"></span><Anchor target="_blank" href="/marketers/zh/docs/aggregated-and-analytics-reporting-overview">汇总数据和分析数据报告/API</Anchor>
+
+<div id="interfaces-for-advertisers" />
 
 #### 广告主可用接口
 

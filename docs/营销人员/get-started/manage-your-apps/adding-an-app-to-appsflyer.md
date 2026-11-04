@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **核心要点：** 了解如何在 AppsFlyer 中添加应用，以获取安装和应用内事件的归因数据，并使用 AppsFlyer 提供的各种工具分析数据。
 
+<div id="overview" />
+
 ## 概述
 
 如果您尚未在 AppsFlyer 面板中添加应用，登录 AppsFlyer 后，系统会显示应用接入页面。该页面将引导您完成添加应用的所有步骤，并帮助您为归因做好准备。
+
+<div id="entering-the-wizard-for-adding-an-app" />
 
 ### 进入添加应用向导
 
@@ -37,6 +41,8 @@ x-zendesk:
 **通过应用接入页面进入向导：**
 
 * 在 **Add your app（添加应用）** 步骤中，点击 **Add app（添加应用）**，然后按照提示操作。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -52,6 +58,8 @@ x-zendesk:
 
 <Image alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
+<div id="adding-an-app" />
+
 ## 添加应用
 
 进入 [添加应用](#进入添加应用向导) 向导后，按照以下步骤操作：
@@ -61,6 +69,8 @@ x-zendesk:
 3. 点击 **Add my app（添加我的应用）**。
 4. 复制 Dev Key，供 <Anchor target="_blank" href="/marketers/zh/docs/getting-started-onboarding-for-marketers#第2步sdk--api对接">SDK 对接</Anchor>时使用（您也可以稍后在 <Anchor target="_blank" href="/marketers/zh/docs/app-settings#常规应用设置">应用设置</Anchor>页面中查看该密钥）。
 5. 点击 **Done（完成）**，或点击 <strong>+ Add another app（添加另一个应用）</strong>继续添加其他应用。重复上述步骤即可。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -73,6 +83,8 @@ x-zendesk:
 * 在合作伙伴市场中将应用与合作伙伴关联。
 
 请参阅<Anchor target="_blank" href="/marketers/zh/docs/getting-started-onboarding-for-marketers">完整的应用接入流程说明</Anchor>，了解如何完成后续步骤。
+
+<div id="enter-app-details" />
 
 ### 填写应用详细信息
 
@@ -167,9 +179,13 @@ x-zendesk:
         </application>
         ```
 
+        <div id="note-2" />
+
         > 📘 **注意**
         >
         > 不建议使用 channel 参数实现多商店归因。为简化对接流程并采用更标准化的实现方式，建议改用 af\_store 参数。
+
+        <div id="important" />
 
         > 🚧 **重要提示！**
         >
@@ -218,6 +234,8 @@ x-zendesk:
 
 <Accordion title="Web（PBA）">
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > Web 应用用于定义一个网站，并将其纳入 People-Based Attribution（PBA，基于用户的归因）功能所使用的品牌组合。
@@ -242,6 +260,8 @@ URL 需要包含 –
 * 最长为 100 个字符
 * 不允许使用 XSS 标签
 
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > 创建网页端应用后，如果要修改其属性（URL 和应用名称），必须先删除该应用，再重新创建；**这也意味着您必须**<Anchor target="_blank" href="/marketers/zh/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle">**删除该应用所属的品牌组合**</Anchor>。
@@ -260,10 +280,14 @@ URL 需要包含 –
 
 使用网页端平台创建新的网页端应用，通过网页端Performance Measurement（网页效果衡量）衡量网站访问和转化。
 
+<div id="before-you-begin" />
+
 #### **开始之前**
 
 * 旧版 People-Based Attribution（PBA）Web 应用会显示在<strong>「Web（PBA）」</strong>分类下，并标记为<strong>「Legacy（旧版）」</strong>。
 * 如果您正在从旧版 PBA网页端应用迁移，可以继续使用现有的 PBA网页端Dev Key。
+
+<div id="to-add-a-web-app" />
 
 #### **添加网页端应用**
 
@@ -346,6 +370,8 @@ URL 需要包含 –
 * 主域名会自动以 **PRIMARY** 类型添加到 **Excluded Domains（排除域名）**。
 
 每个旧版 **Web Dev Key 只能用于一个**新的网页端应用。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -535,26 +561,38 @@ URL 需要包含 –
 
 </Accordion>
 
+<div id="enter-additional-information-not-applicable-to-web-apps" />
+
 ### 填写其他信息（不适用于网页端应用）：
 
 <Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+
+<div id="select-currency" />
 
 #### **选择币种**
 
 选择应用数据在面板中显示时使用的币种。系统会根据事件发生时适用的汇率，将收入和支出事件转换为所选币种。<Anchor target="_blank" href="/marketers/zh/docs/app-settings#localization-currency">详情请参阅</Anchor>有关应用币种设置及其影响的说明。
 
+<div id="important-2" />
+
 > 🚧 **重要提示！**
 >
 > 请谨慎选择应用币种。一旦系统记录了成本和收入数据，就无法再更改币种。
+
+<div id="select-timezone" />
 
 #### **选择时区**
 
 此处选择的时区应与您在其他归因合作伙伴平台（例如 Meta Ads 和 Google Ads）中设置的时区保持一致。这样可以尽可能确保 AppsFlyer 面板中的数据与合作伙伴提供的数据相匹配。
 
+<div id="note-5" />
+
 > 📘 **注意**
 >
 > * 设置时区后，该设置会被锁定，直到次日才能更改。
 > * <Anchor target="_blank" href="/marketers/zh/docs/changing-app-time-zone-settings">详情请参阅</Anchor>有关应用时区设置及其影响的说明。
+
+<div id="define-app-audience" />
 
 #### **定义应用受众**
 
@@ -564,22 +602,32 @@ URL 需要包含 –
 1. 打开并阅读有关如何为面向儿童的应用实施合规要求的<Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">指南</Anchor>。
 2. 勾选确认框，确认您已阅读该指南，并将按照指南要求实施相应的控制措施。
 
+<div id="note-6" />
+
 > 📘 **注意**
 >
 > * 添加应用两周后，系统会向您发送通知，要求您确认已为面向儿童的应用实施隐私控制措施。确认后，您将收到确认消息。您可以随时在通知中心查看该消息，也可以在<Anchor target="_blank" href="/marketers/zh/docs/audit-log">审计日志</Anchor>中查看确认详情。
 > * 有关面向儿童的应用，请参阅<Anchor target="_blank" href="/marketers/zh/docs/child-directed-apps-faq">常见问题</Anchor>。
 
+<div id="manage-your-apps-in-bulk-via-api" />
+
 #### 通过 API 批量管理应用
 
 账户管理员可以通过<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/app-management-v2-overview">专用 API 批量管理多个应用</Anchor>。该 API 支持界面中的主要功能，包括添加和删除应用，以及更新应用设置。该 API 同时还采用了相同的错误验证机制。
+
+<div id="note-7" />
 
 > 📘 **注意**
 >
 > 目前，通过 API 添加应用和更新应用设置仅适用于移动应用；删除应用则适用于所有平台。
 
+<div id="add-a-debug-or-testing-app" />
+
 ### 添加调试或测试应用
 
 如果开发人员创建了**调试**、**沙盒**或**测试应用**，您必须先将其添加到面板。开发人员开始使用该应用进行测试后，相关数据便会显示在该应用的面板中。
+
+<div id="note-8" />
 
 > 📘 **注意**
 >
@@ -590,6 +638,8 @@ URL 需要包含 –
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-android#creating-an-android-debug-app">Android 说明</Anchor>
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-ios#creating-an-ios-debug-app">iOS 说明</Anchor>
 
+<div id="about-pending-apps" />
+
 ## 关于待发布应用
 
 在调试应用或测试 AppsFlyer SDK 时，将应用设置为待发布状态会很有帮助。
@@ -597,6 +647,8 @@ URL 需要包含 –
 应用在面板中显示为待发布状态，不会影响数据采集和衡量。无论应用在应用商店中处于待发布状态还是已正式上线，只要用户安装并使用该应用，安装数据和应用内事件数据都会照常记录在面板中。
 
 待发布应用正式上线后，AppsFlyer 会自动检测并更新其状态，因此您无需重新添加应用。详情请参阅有关待发布应用的说明，以及如何手动刷新应用状态的可选操作步骤，请<Anchor target="_blank" href="/marketers/zh/docs/why-is-my-app-still-pending">了解更多</Anchor>。
+
+<div id="troubleshooting" />
 
 ## 故障排查
 
@@ -645,6 +697,8 @@ URL 需要包含 –
 这是因为，如果用户的设备之前安装过该应用，操作系统仍可能允许用户重新安装。因此，即使应用已不再出现在 App Store 中，用户仍可能安装该应用，而这些安装仍会计入 AppsFlyer 的统计数据。
 
 </Accordion>
+
+<div id="other-information" />
 
 ## 其他信息
 

@@ -28,9 +28,13 @@ x-zendesk:
 
 <Image alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
 
+<div id="overview" />
+
 ## 速览
 
 高级SRN对接意味着所有包含广告ID的流量都会被归因并上报为常规SRN流量。在广告ID不可用的情况下，AppsFlyer会根据TikTok的点击和展示来衡量归因。
+
+<div id="set-up-tiktok-for-business" />
 
 ## TikTok for Business对接设置说明
 
@@ -60,9 +64,13 @@ x-zendesk:
 
 **对接**选项卡中包含多个板块，下文做了详细说明。
 
+<div id="activate-partner" />
+
 #### 启用渠道
 
 在配置对接之前，必须先打开**启用该渠道**开关。有关<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation#渠道对接的启用方式">启用和停用合作伙伴</Anchor>的更多信息，请参阅对接。
+
+<div id="advanced-data-sharing" />
 
 #### 高级隐私保护
 
@@ -78,6 +86,8 @@ x-zendesk:
 >
 > * 启用对接（`tiktokglobal_int`）时，**高级隐私保护**开关默认处于打开状态。
 > * 从历史对接（`bytedanceglobal_int`）迁移到新对接（`tiktokglobal_int`）时**高级隐私保护**开关默认打开，与迁移前的启用状态无关。
+
+<div id="general-settings" />
 
 #### 通用设置
 
@@ -98,6 +108,8 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 > * 迁移到新对接（`tiktokglobal_int`）时，系统会自动使用历史对接（`bytedanceglobal_int`）中的值来填充对应字段。
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">详情请见iOS 14中与TikTok App ID相关的注意事项。</Anchor>
 
+<div id="default-postbacks" />
+
 #### 默认回传
 
 配置**激活**回传的发送方式。**被拦截的激活**和**再互动**仅回传到TikTok for Business。
@@ -109,6 +121,8 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 >
 > * 仅适用于iOS应用：仅适用于iOS应用：通过回传和<Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions">报告</Anchor>与共享渠道数据时，您对这些数据的控制范围取决于**高级隐私模式（用于iOS14.5+）**[的启用状态](#高级隐私保护)：
 > * 从历史对接（`bytedanceglobal_int`）迁移到新对接（`tiktokglobal_int`）时激活回传默认设置为**仅限该合作渠道**，不受迁移前的设置影响。
+
+<div id="install-attribution" />
 
 #### 激活归因
 
@@ -134,6 +148,8 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 >     广告系列上报为“restricted”（受限）这表示该数据在GCD中不可用。汇总数据报告中仍会显示浏览型转化。
 > * 从历史对接（`bytedanceglobal_int`）迁移到新对接（`tiktokglobal_int`）时，回溯窗口（点击型和浏览型）自动设为**默认值**，不受迁移前的设置影响。您后续可以更新这些设置。
 
+<div id="reinstall-attribution" />
+
 #### 重装激活归因
 
 重装激活归因功能可帮助您衡量在再归因窗口期内重装激活应用的用户，并将其归因到符合条件的TikTok点击和展示。
@@ -146,6 +162,8 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 >
 > * 无需为重装激活设置单独的回溯窗口。重装激活归因的点击和浏览状态以及回溯窗口与您的激活归因设置相同。
 > * 启用后，符合条件的重装激活回传会发送到TikTok。
+
+<div id="re-engagement-attribution" />
 
 #### 再次互动归因
 
@@ -167,6 +185,8 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 
 进一步了解再互动归因的<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide#reengagement-rules-and-windows">规则和窗口期</Anchor>。
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### 再营销广告中忽略活跃用户
 
 打开这个开关并设置其窗口期后，AppsFlyer就会<Anchor target="_blank" href="/marketers/zh/docs/set-retargeting-inactivity-window#不活跃时长">忽略在此期间打开相关应用的用户所完成的再互动和再归因</Anchor>。也就是说，这些用户在该窗口期内的行为不会被记录到AppsFlyer中。
@@ -177,6 +197,8 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 
 1. 打开**在再营销广告中忽略活跃用户**的开关。
 2. 设置不活跃窗口。
+
+<div id="in-app-event-postbacks" />
 
 #### 应用内事件回传
 
@@ -241,6 +263,8 @@ SRN依靠自己的平台完成归因，而高级SRN的归因则结合了广告�
 
 6. 点击**保存成本**。
 
+<div id="for-roi360-subscribers" />
+
 #### ROI360客户的专享配置
 
 * 在`bytedanceglobal_int`历史对接和`tiktokglobal_int`新对接中都启用了Cost API的广告主和代理可能会看到重复的成本数据。如需避免此问题，请进入`bytedanceglobal_int`对接页面 > **成本选项卡**，然后关闭成本数据开关。  
@@ -273,9 +297,13 @@ SRN依靠自己的平台完成归因，而高级SRN的归因则结合了广告�
 
 </Accordion>
 
+<div id="deep-linking-with-tiktok-for-business" />
+
 ## 在TikTok for Business中使用深度链接
 
 <Anchor target="_blank" href="https://ads.tiktok.com/help/article/understanding-deeplinks-and-deferred-deeplinks?lang=en">TikTok支持在多种投放目标中使用深度链接和延迟深度链接</Anchor>。您可以在创建广告系列、广告组或广告时，在广告层级进行配置。您可以创建深度链接将用户引导到应用内的具体页面，这样您就能根据用户与TikTok广告的交互方式，有针对性地向其展示定制化内容。
+
+<div id="access-tiktok-conversion-data-via-appsflyers-gcd-api-for-deep-linking" />
 
 ### 在深度链接场景中使用AppsFlyer的GCD API获取TikTok转化数据
 
@@ -284,6 +312,8 @@ AppsFlyer针对延迟深度链接提供多种解决方案：
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">**Unified Deep Linking (UDL)**</Anchor> TikTok点击中包含一个<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters#deep_link_value">deep\_link\_value</Anchor>（深度链接）字段，UDL解决方案支持该字段。
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">**GCD（Get Conversions Data，获取转化数据）API**</Anchor>：这是用于实时获取TikTok用户转化数据的推荐方式，可直接从SDK层级抓取数据。GCD API返回的数据中包含参数，该参数用于传递实际的深度链接终点（即应用调起后用户进入的具体页面）。
 * **转化数据参数的使用方式如下：** 您可以创建自定义逻辑，使用其他参数将相关用户引导到指定的页面，这些参数包括广告系列名称、广告组名称以及该API返回的TikTok激活归因数据中的其他字段。
+
+<div id="web-to-app-measure-app-activity-for-non-app-campaigns" />
 
 ## 网页到应用衡量非应用广告带来的应用流量
 
@@ -298,9 +328,13 @@ AppsFlyer与TikTok的集成使得对应用活动的全面测量成为可能—�
 3. 点击**保存**。
 4. 这些步骤适用于您活动中的所有相关广告。
 
+<div id="set-up-tiktok-for-business-for-agencies" />
+
 ## 代理的TikTok for Business对接设置
 
 帮助广告主代为投放的代理商可以启用TikTok for Business的对接，并对其投放的广告进行归因。但是代理商在使用该对接时有一定的局限性。
+
+<div id="agency-limitations" />
 
 ### 代理限制
 
@@ -324,11 +358,15 @@ AppsFlyer与TikTok的集成使得对应用活动的全面测量成为可能—�
 >
 > 广告主和代理之间切勿共享TikTok for Business账户ID，否则所有的广告主侧激活全部都会被自动记录到代理面板中。
 
+<div id="smart-plus-campaigns-reporting" />
+
 ## Smart Plus广告系列报告
 
 Smart Plus 是 TikTok 推出的一种新型广告系列，能让广告主在同一个广告单元中测试多个素材，通过自动化素材测试优化投放效果。
 
 <Anchor target="_blank" href="https://ads.tiktok.com/help/article/about-smart-plus-campaign?lang=en">了解有关 Smart Plus 营销活动的更多信息</Anchor>
+
+<div id="how-smart-plus-campaigns-are-structured" />
 
 ### Smart Plus 广告系列的结构
 
@@ -338,6 +376,8 @@ Smart Plus 是 TikTok 推出的一种新型广告系列，能让广告主在同�
 2. 广告组
 3. Ad
 4. 素材
+
+<div id="how-smart-plus-data-is-reported-in-appsflyer" />
 
 ### 如何在AppsFlyer中报告Smart Plus数据
 

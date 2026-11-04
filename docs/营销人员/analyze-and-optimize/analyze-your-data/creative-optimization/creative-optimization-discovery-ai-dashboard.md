@@ -27,11 +27,15 @@ x-zendesk:
 
 [![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
 
+<div id="about-the-creative-optimization-discovery-ai-dashboard" />
+
 ## 关于素材优化AI解析面板
 
 您可以将您在所有媒体渠道上投放的各种素材汇集到<Anchor target="_blank" href="/marketers/zh/docs/creative-optimization-guide">**素材**</Anchor>优化面板中，根据选定维度衡量这些素材在多个广告系列、流量入口等各方面的投放效果，以便在规划、选取、产出下一批素材之前掌握关键的素材效果信息。
 
 **素材优化AI驱动的解析面板**，能为您的素材团队提供所有必要信息，助其产出爆款素材。该面板可呈现详尽的表现数据，让您深入了解素材中的具体元素或内容对整体素材效果的影响，从而做出更明智的决策。有了这个面板，您就能利用实际数据持续产出并维护高效素材，充分提升营销影响力。您可以根据选定的主要筛选条件查看素材库，或将其拆解到单独的场景和元素。
+
+<div id="get-started" />
 
 ## 启用方式
 
@@ -41,6 +45,8 @@ x-zendesk:
 
 * 成本数据指标在面板中的呈现方式基于ROI360套餐的订阅情况而有所不同。<Anchor target="_blank" href="/marketers/zh/docs/creative-optimization-guide#creative-optimization-roi360">详情请见此处说明。</Anchor>
 * 如需查看展示和点击数据，请在合作渠道中开启成本数据。<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#cost-tab">详情请见此处说明</Anchor>。
+
+<div id="proceduresusing-the-discovery-ai-dashboard" />
 
 ## 操作指南：如何使用Discovery AI面板
 
@@ -104,6 +110,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="concepts" />
+
 ## 相关概念解析
 
 <div id="discovery-ai-search" />
@@ -122,11 +130,13 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 
 搜索查询应仅涉及创意内容，例如视觉、文本、音频、主题或故事元素。请勿按表现指标搜索，例如“IPM超过2的创意”或按创意名称搜索。
 
+<div id="what-you-can-search-for" />
+
 #### 您可以搜索的内容
 
 搜索支持跨多个创意内容维度的自然语言查询。您可以组合元素以生成更精确和上下文相关的结果。
 
-* ##### **视觉元素**：
+* ##### <span id="visual"></span>**视觉元素**：
 
   搜索视觉概念，例如：
 
@@ -140,7 +150,7 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 
 “带有赛车的城市街景”
 
-* ##### **文本**
+* ##### <span id="text"></span>**文本**
 
   搜索特定的信息、标题或微文案。
 
@@ -152,7 +162,7 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 
 “西班牙语字幕”
 
-* ##### **音频**：
+* ##### <span id="audio"></span>**音频**：
 
 搜索音频元素，例如旁白、口音或语言、音乐风格或节奏，以及音效。
 
@@ -162,7 +172,7 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 
 “激励人心的旁白”
 
-* ##### **叙事和高层次概念**
+* ##### <span id="narrative-and-high-level-concepts"></span>**叙事和高层次概念**
 
 搜索更广泛的主题、故事情节和情感基调。
 
@@ -173,6 +183,8 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 “戏剧性的游戏场景”
 
 “问题-解决叙事”
+
+<div id="combining-properties" />
 
 #### 组合属性
 
@@ -187,6 +199,8 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 “日落时的海滩场景，带有快乐的故事情节和柔和的钢琴音乐”
 
 组合属性有助于隔离更清晰的创意模式，并减少分析中的噪音。
+
+<div id="notes" />
 
 > 📘 **说明**
 >
@@ -355,6 +369,8 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 如需查找素材或元素，您可通过点击Discovery卡片上的**查找相似素材**打开具体**标签页**。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 其他相关信息
 

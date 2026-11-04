@@ -31,6 +31,8 @@ x-zendesk:
 
 [![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
 
+<div id="server-to-server-events-api-for-mobile" />
+
 ## 移动设备的S2S事件API
 
 对于iOS 14以上的应用版本，您需要发送OS（操作系统）参数。
@@ -44,6 +46,8 @@ AppsFlyer会将以下信息填充到S2S事件中：
 
 如需通过API发送事件，请让您的开发人员按照<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">服务器到服务器事件API指南</Anchor>完成相关设置。
 
+<div id="populating-parameters" />
+
 ## 填充参数
 
 <div id="difference-between-organic-and-nonorganic" />
@@ -53,6 +57,8 @@ AppsFlyer会将以下信息填充到S2S事件中：
 AppsFlyer处理S2S应用内事件时，会通过AppsFlyer ID来识别相关应用内事件之前的激活事件，从而填充归因字段。
 
 也就是说，AppsFlyer会将某些数据与非自然的S2S应用内事件相关联，而这些数据与自然的S2S应用内事件是不相关的。
+
+<div id="note" />
 
 > 📄 **示例**
 >
@@ -163,9 +169,13 @@ AppsFlyer批量接收S2S事件，并根据其`eventTime`的参数值和送达时
 
 </Accordion>
 
+<div id="note-1" />
+
 > 📘 **注意事项**
 >
 > 如需将S2S事件计入<Anchor target="_blank" href="/marketers/zh/docs/incrementality-for-remarketing-overview">增量分析</Anchor>，其数据中必须包含广告ID（iOS需包含IDFA，Android需包含GAID）。
+
+<div id="increasing-the-volume-of-data-transactions" />
 
 ## 提高数据事务处理量
 
@@ -179,6 +189,8 @@ AppsFlyer批量接收S2S事件，并根据其`eventTime`的参数值和送达时
   * 00:04:00 - 增加到18K TPS
   * …
 * 请务必设置重试机制，以便在接收到错误响应时自动重发请求。
+
+<div id="troubleshooting" />
 
 ## 问题排查
 

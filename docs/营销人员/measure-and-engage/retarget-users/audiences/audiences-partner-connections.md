@@ -24,6 +24,8 @@ x-zendesk:
 
 > **概要：**  与合作渠道共享受众。
 
+<div id="about-partner-connections" />
+
 ## 渠道连接简介
 
 您可以通过渠道连接快捷且持续地向您的合作渠道发送人群包，用于相关广告的定向投放。下文表格中列出了支持受众共享的渠道及其人群包连接要求和适用的用户标识符。
@@ -190,6 +192,8 @@ x-zendesk:
 | YouAppi | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/youappi.png" width="118px" /> | API key | <ul><li>IDFA（哈希加密）</li><li>GAID（哈希加密）</li></ul> |
 | Zoomd DSP | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/zoomd.png" width="118px" /> | API key | <ul><li>IDFA（哈希加密）</li><li>GAID（哈希加密）</li></ul> |
 
+<div id="we-love-working-with-new-audiences-partners" />
+
 > 📘 **除了上述渠道之外，AppsFlyer也竭诚欢迎其他渠道加入受众共享对接。**
 >
 > 如果您需要的渠道不在上述列表中，请随时联系您的CSM。我们会与这些渠道沟通相关事宜，确认可用方案。
@@ -283,6 +287,8 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
     ```
 12. 更改**BUCKET-NAME**（存储桶名称）。AppsFlyer会将相关人群包上传到具有该名称的存储桶中。
 
+    <div id="note" />
+
     > 📘 **注意事项**
     >
     > 存储桶策略中必须仅包含根目录，切勿在路径中加入其他目录，例如像**arn:aws:s3:::BUCKET-NAME/Directory/\***这样的资源是不支持的。如果需要将文件传输到特定目录，请参考第14步的说明。
@@ -320,6 +326,8 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 
 <Accordion title="Braze">
 
+<div id="prerequisite" />
+
 > 🚧 **前期准备**
 >
 > 请确保您的应用中已同时接入Braze和AppsFlyer的SDK。
@@ -329,7 +337,7 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 > * Braze External ID参数
 > * CUID字段
 >
-> #### 使用BRAZE EXTERNAL ID参数
+> #### <span id="using-a-braze-external-id-parameter"></span>使用BRAZE EXTERNAL ID参数
 >
 > 您可以使用AppsFlyer SDK的`setPartnerData`函数将每个用户的Braze External ID发送到AppsFlyer，从而将人群包上传到Braze。用法示例如下：
 >
@@ -358,6 +366,8 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 > </Tab>
 > </Tabs>
 >
+
+<div id="using-the-cuid-field" />
 
 #### 使用CUID字段
 
@@ -525,6 +535,8 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 
 <Accordion title="Leanplum">
 
+<div id="prerequisite-1" />
+
 > 🚧 **前期准备：**
 >
 > 如需向Leanplum上传人群包，须符合以下条件：
@@ -556,6 +568,8 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 <div id="moengage" />
 
 <Accordion title="MoEngage">
+
+<div id="prerequisite-2" />
 
 > 🚧 **前期准备：**
 >
@@ -672,6 +686,8 @@ AppsFlyer会以CSV文件的形式将设备ID上传到您的Slack公共频道（P
 6. 选择您的**公司**和**广告账号** 。
 7. 点击**Save**。  
    人群包上传完毕后，Snapchat面板会在24小时内呈现相关信息。
+
+<div id="note-1" />
 
 > 📘 **注意事项**
 >

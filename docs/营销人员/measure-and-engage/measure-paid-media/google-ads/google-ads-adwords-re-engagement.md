@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 衡量Google Ads再营销广告系列
 
+<div id="google-ads-retargeting-campaigns" />
+
 ## Google Ads再营销广告系列
 
 您可以使用AppsFlyer衡量**Google Ads App Campaigns for Engagement**（以吸引用户互动为目标的应用广告系列，简称ACE）的投放效果。  
@@ -33,6 +35,8 @@ x-zendesk:
 * 未安装应用的用户与再营销广告互动后安装应用，记为一次**重装激活**（Re-install），或称**再归因**（Re-attribution）。
 
 详情请见<Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">Google Ads再营销广告支持文档</Anchor> 。
+
+<div id="setting-up-google-ads-app-campaigns-for-engagement" />
 
 ## 设置Google Ads再营销广告系列
 
@@ -70,6 +74,8 @@ x-zendesk:
 
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">Google Ads中的转化导入说明</Anchor>。
 
+<div id="note" />
+
 > 📘 **注意事项**
 >
 > 与所有其他事件不同，即使您未从AppsFlyer将session\_start导入Google Ads，Google Ads API也可以认领session\_start。
@@ -87,6 +93,8 @@ Google 再营销广告要求<Anchor target="_blank" href="https://support.google
 
 </Accordion>
 
+<div id="dynamic-remarketing-and-shopping-campaigns" />
+
 ## 动态再营销和购物广告
 
 AppsFlyer支持针对应用和购物广告系列的动态再营销，这类广告在AppsFlyer平台中与再互动广告无异。
@@ -94,6 +102,8 @@ AppsFlyer支持针对应用和购物广告系列的动态再营销，这类广�
 * 要了解有关应用动态再营销的信息，请点击<Anchor target="_blank" href="https://support.google.com/adwords/answer/7538938">这里</Anchor>。
 * 要了解购物广告系列，请点击<Anchor target="_blank" href="https://support.google.com/google-ads/answer/2454022?hl=en">这里</Anchor>。
 * 要了解有关Google再营销广告的更多信息，请点击<Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">这里</Anchor> 。
+
+<div id="support-for-non-app-campaigns-demand-gen-and-sem" />
 
 ### 对非应用程序活动（需求生成和搜索引擎营销）的支持
 
@@ -112,6 +122,8 @@ AppsFlyer 仅支持 Google 非应用程序活动的重新参与测量，包括�
 * 来自需求生成或 SEM 活动的 **安装** 在任何平台上都不被归因。
 
 退出 Google 目前不支持选择加入或退出非应用程序活动的测量（与 TikTok 或 Meta 等平台不同）。
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >

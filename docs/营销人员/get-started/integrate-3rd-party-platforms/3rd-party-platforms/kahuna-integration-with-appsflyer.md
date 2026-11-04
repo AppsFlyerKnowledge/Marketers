@@ -25,6 +25,10 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="important-note" />
+
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 部分渠道限制第三方的数据共享。
@@ -71,10 +75,16 @@ NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 
 下文说明了对接选项卡中所包含各部分内容。
 
+<div id="activate-partner" />
+
 ### 启用渠道
 
 **第一次访问**时，需要打开***激活合作伙伴***开关以开启对接选项卡内的配置参数。只要仍与该合作伙伴合作，这个开关必须为ON。   
 有关渠道激活的详细说明请参见<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">此文档</Anchor>。
+
+<div id="obtaining-the-kahuna-secret-key" />
+
+<div id="general-settings" />
 
 ### 通用设置
 
@@ -92,6 +102,12 @@ NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 4.
 
 * 点击**保存**。
+
+<div id="testing-with-sandbox" />
+
+<div id="view-user-attribution-data-in-kahuna" />
+
+<div id="default-postbacks" />
 
 ### 默认回传
 

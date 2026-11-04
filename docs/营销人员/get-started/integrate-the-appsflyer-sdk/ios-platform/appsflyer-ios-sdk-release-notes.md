@@ -26,9 +26,13 @@ x-zendesk:
 
 <strong>AppsFlyer将按照原计划，在六个月的周期内，逐步停止对iOS和Android旧版SDK的支持。</strong>此机制旨在为广告主预留充足时间，以便开发团队提前规划和升级，确保应用功能不受影响。请及时升级到最新版SDK，体验最新功能、更高稳定性和持续的技术支持。
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > 为了确保平稳过渡，建议应用开发者在停止支持日期前完成SDK升级。
+
+<div id="end-of-support-vs-deprecated" />
 
 ## 停止支持与弃用的区别
 
@@ -36,6 +40,8 @@ x-zendesk:
 
 * **弃用版本**由于存在已知问题（如严重Bug），官方不再推荐使用的SDK版本。这些版本仍然可以向AppsFlyer发送数据，但不鼓励开发者继续使用，我们强烈建议您升级到受支持的版本。
 * **停止支持版本：** 不再进行任何数据衡量的SDK版本。在iOS和Android平台上，激活、应用打开和应用内事件都将无法被记录。来自这类版本的请求（除非被AppsFlyer特别豁免）将收到400错误码，表示虽然SDK会继续尝试发送请求，但AppsFlye 服务器将拒绝处理，数据也不会被接收或存储。
+
+<div id="ios-sdk-release-notes" />
 
 ## iOS SDK版本说明
 
@@ -77,6 +83,8 @@ x-zendesk:
 | 6.11.0 | 2023-04-25 | <ul><li>SDK在URL中使用新的AppsFlyer域名向AppsFlyer服务器发送请求。</li><li>更改了发送空值或null值时setHost API的行为。 [了解详情](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#sethost)</li></ul> |
 | 6.10.1 | 2023-04-02 | 在直接深度链接场景的UDL有效信息（payload）中添加了`link`参数 |
 | 6.10.0 | 2023-02-15 | 支持SKAdNetwork 4.0。<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-solution-guide">进一步了解AppsFlyer的SKAN解决方案</Anchor> |
+
+<div id="unsupported-sdk-versions" />
 
 ## 不再支持的SDK版本
 
@@ -128,6 +136,8 @@ x-zendesk:
 | 6.0.2   <br />停止支持：2024-08-31 | 2020-08-27 | <ul><li>API名称变更：<br />deviceLoggingDisabled --> anonymizeUser</li><li>在iOS 14中，需要用户在AppTrackingTransparency（ATT）弹窗中授权后才能收集IDFA</li><li>更新后支持IDFV交叉推广归因</li></ul> |
 | 6.0.1 beta  <br />停止支持：2024-08-31 | 2020-08-06 | <ul><li>更新后支持<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-solution-guide">SKAdNetwork归因</Anchor>，帮助广告主在保护用户隐私的前提下衡量投放效果</li></ul> |
 | 6.0.0 beta  <br />停止支持：2024-08-31 | 2020-08-04 | <ul><li>扩展了联调功能</li><li>对SDK功能性和API做了重大调整。[了解详情](/docs/appsflyer-ios-sdk-release-notes#ios-v600-release-notes)</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **另请参见**
 >

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 通过AppsFlyer获取跨平台（CTV、PC和主机端）报告。**请注意**：对于搭载了安卓和iOS操作系统的平台，<Anchor target="_blank" href="/marketers/zh/docs/aggregated-and-analytics-reporting-overview">汇总数据</Anchor>和<Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview">原始数据报告</Anchor>的可用性与移动端应用保持一致。
 
+<div id="cross-platform-reports" />
+
 ## 跨平台报告
 
 跨平台报告：
@@ -31,6 +33,8 @@ x-zendesk:
 * 覆盖所有媒体渠道数据，包括自然量和非自然量；
 * 报告字段说明请参见<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary">原始数据字段释义</Anchor>。
 
+<div id="report-types-and-availability" />
+
 ### 报告类型及可用性
 
 | 报告 | 说明 | 报告样本 |
@@ -39,6 +43,8 @@ x-zendesk:
 | 跨平台应用内事件 | 需要购买Data Locker | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSrOchvROUOrhb4JuHTT1IqGXD94rhsu2sQ6v_i9bGoavSUXV7IU6kktxTEYHeIPXw4XujZY2aUEzRh/pub?gid=1146236657&single=true&output=csv">下载</Anchor> |
 | 跨平台应用打开（session） | 需要购买Data Locker |  |
 | 跨平台展示 | <ul><li>包括来自跨平台OneLink链接的展示数据。</li><li>无需购买Data Locker。</li></ul> |  |
+
+<div id="see-also" />
 
 > 📄 **相关文档**
 >
