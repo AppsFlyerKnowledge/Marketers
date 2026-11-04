@@ -150,6 +150,8 @@ Protect360面板提供下列筛选和分组选项：
 * 归因劫持行为被实时拦截时，Protect360以外的AppsFlyer面板和报告中也会显示正确的归因结果。但如果相关转化在归因后才被识别为归因劫持，则正确的归因结果仅显示在Protect360原始数据中。
 * 该图表可显示从付费渠道纠正**到自然量**的归因，但没有**从自然量**纠正到渠道的数据。
 
+<div id="affiliate-attribution-model" />
+
 <div id="identified-fraud-chart" />
 
 #### 已识别的假量图表

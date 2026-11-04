@@ -252,6 +252,14 @@ Cookie可以任意命名；AppsFlyer读取的是您发送的值，与Cookie名�
 
 </Accordion>
 
+<div id="option-2-destination-function" />
+
+<div id="option-1-webhooks-actions-destination" />
+
+<div id="note-1" />
+
+<div id="send-events-via-segment-cdp" />
+
 <div id="things-to-consider" />
 
 ## 注意事项

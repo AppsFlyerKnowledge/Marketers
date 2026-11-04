@@ -48,6 +48,8 @@ Batch.User.editor()
     .save();
 ```
 
+<div id="batch-1" />
+
 #### AppsFlyer
 
 ```java
@@ -68,6 +70,8 @@ BatchUserDataEditor *editor = [BatchUser editor];
 [editor setIdentifier:@"user@example.com"];
 [editor save];
 ```
+
+<div id="batch-2" />
 
 #### AppsFlyer
 

@@ -61,6 +61,16 @@ x-zendesk:
   * **n字符枚举**：枚举字段仅可包含特定的值。比如成本的货币单位只能由指定的3字符货币代码组成。
   * **5字符布尔式枚举：** 这类字段的值只有`TRUE`或`FALSE`两种。
 
+<div id="event-2" />
+
+<div id="attribution::860c6c0d-2" />
+
+<div id="device-info::63466612" />
+
+<div id="device-info::5aed5231" />
+
+<div id="field-dictionary" />
+
 <div id="tip" />
 
 > 👍 **提示**

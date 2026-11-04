@@ -687,6 +687,8 @@ AppsFlyer会以CSV文件的形式将设备ID上传到您的Slack公共频道（P
 7. 点击**Save**。  
    人群包上传完毕后，Snapchat面板会在24小时内呈现相关信息。
 
+<div id="x-formerly-twitter" />
+
 <div id="note-1" />
 
 > 📘 **注意事项**

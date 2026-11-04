@@ -26,6 +26,18 @@ x-zendesk:
 ---
 > **概览：** 通过Cost API，在应用或媒体渠道账号层级获取汇总营销成本数据（包括与成本相关的LTV表现指标）。
 
+<div id="additional-steps-specific-media-sources-only" />
+
+<div id="h_01M43Y9WQ8HK1N0GJNW5BH4MPZ" />
+
+<div id="h_01M43Y9WQ8WCXWQ0S9ZAT59CWW" />
+
+<div id="map-apps-to-package-names-or-bundle-ids" />
+
+<div id="create-a-new-api-cost-integration" />
+
+<div id="note" />
+
 <div id="overview" />
 
 ## 概览
@@ -98,6 +110,10 @@ ROI360提供应用层级和账号层级的成本衡量能力，便于相关方�
 
 如需确认某个媒体渠道需采用哪种方式，可在媒体渠道成本对接表中的**对接方法**列查看。
 
+<div id="select-which-ad-account-to-pull-cost-from" />
+
+<div id="note-1" />
+
 <div id="map-apps-to-site-ids" />
 
 ## 子渠道映射
@@ -111,6 +127,22 @@ ROI360提供应用层级和账号层级的成本衡量能力，便于相关方�
 
 1. 在对接合作伙伴**成本**选项卡中，前往**Site ID映射**，然后从下拉菜单中选择配置。
 2. 点击**保存成本**。更改后的设置将从UTC时间的次日起生效。
+
+<div id="h_01M43Y9WQ8H8ANPDEGYCH0T0MF" />
+
+<div id="view-status-in-cost-tab" />
+
+<div id="view-status-in-cost-settings" />
+
+<div id="h_01M43Y9WQ8ANZY2KNHKMV67YNY" />
+
+<div id="h_01M43Y9WQ89XKB2CN2EY4TG2AD" />
+
+<div id="h_01M43Y9WQ804YMN8TZ7HGYSQH7" />
+
+<div id="cost-integration-and-agencies" />
+
+<div id="view-cost-api-status" />
 
 <div id="edit-and-delete-an-integration" />
 

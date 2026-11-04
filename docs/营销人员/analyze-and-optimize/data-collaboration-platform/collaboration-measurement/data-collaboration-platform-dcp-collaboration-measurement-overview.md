@@ -25,6 +25,14 @@ x-zendesk:
 
 DCP对站内和站外广告采取不同的的衡量方式。站内广告是协作者自身平台上投放的广告，站外广告则是在第三方平台上，如Facebook、Google Ads以及其他SRN上投放的广告由于DCP无法直接访问第三方平台的用户交互数据，其归因流程和数据结构与站内广告不同，因此需要采用专门的解决方案。除非特别说明，本文中的信息同时适用于这两种类型的广告。
 
+<div id="combined-onsite-and-offsite-campaigns" />
+
+<div id="onsite-campaigns" />
+
+<div id="offsite-campaigns" />
+
+<div id="on-site-vs-off-site-campaigns" />
+
 <div id="the-three-data-sources-of-measurement" />
 
 ## 三类衡量数据来源
@@ -95,6 +103,54 @@ AppsFlyer可通过将AppsFlyer SDK对接到您的应用中，或借助协作者�
 广告系列映射信息就是AppsFlyer接收的一种自定义数据源接。
 
 </Accordion>
+
+<div id="combined-onsite-and-offsite-measurement-flow" />
+
+<div id="offsite-measurement-flow" />
+
+<div id="onsite-measurement-flow" />
+
+<div id="set-up-collaboration-measurement" />
+
+<div id="5-on-site-and-off-site-conversion-merge" />
+
+<div id="4-off-site-response-enrichment" />
+
+<div id="3-share-with-google-and-meta" />
+
+<div id="2-apply-last-touch-attribution" />
+
+<div id="1-on-site-and-off-site-record-processing-is-performed" />
+
+<div id="7-output-attributed-conversion-dataset" />
+
+<div id="6-google-and-meta-response-enrichment" />
+
+<div id="5-share-with-google-and-meta" />
+
+<div id="4-filter-according-to-last-touch-attribution" />
+
+<div id="3-filter-for-sharing-eligibility" />
+
+<div id="2-deduplicate-conversion-events" />
+
+<div id="1-prepare-conversion-data" />
+
+<div id="8-output-attributed-conversion-dataset" />
+
+<div id="7-apply-attribution-logic" />
+
+<div id="6-deduplicate-conversion-events" />
+
+<div id="5-filter-non-target-skus" />
+
+<div id="4-split-multi-sku-conversions" />
+
+<div id="3-link-conversions-to-engagements" />
+
+<div id="2-prepare-and-map-conversion-data" />
+
+<div id="1-configure-measurement-sources" />
 
 <div id="the-dcp-measurement-process" />
 

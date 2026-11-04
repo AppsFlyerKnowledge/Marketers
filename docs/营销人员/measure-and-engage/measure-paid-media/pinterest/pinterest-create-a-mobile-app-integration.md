@@ -73,7 +73,19 @@ Pinterest的配置窗口中有以下4个选项卡：渠道对接、归因链接�
 
 如需获取来自Pinterest的浏览型归因，请打开此选项。您可以使用归因链接选项卡中对应的滑块来调整浏览回溯窗口。
 
+<div id="legacy-set-tag-id" />
+
 <div id="in-app-events-settings" />
+
+<div id="including" />
+
+<div id="to-users-from" />
+
+<div id="partner-event-name" />
+
+<div id="appsflyer-event-name" />
+
+<div id="in-app-event-postbacks" />
 
 ### 应用内事件设置
 

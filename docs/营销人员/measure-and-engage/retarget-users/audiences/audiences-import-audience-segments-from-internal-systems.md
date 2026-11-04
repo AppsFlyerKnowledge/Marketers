@@ -109,6 +109,8 @@ x-zendesk:
 
   <Image alt="CSV.jpg" src="https://support.appsflyer.com/hc/article_attachments/18502652300561" width="339px" />
 
+<div id="note" />
+
 <div id="identifier-hash" />
 
 #### 标识符哈希

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** 了解什么是基于用户的跨平台归因，它是如何运作的，以及如何在 AppsFlyer 中设置它。
 
+<div id="note" />
+
 <div id="what-is-user-based-attribution" />
 
 ## 什么是基于用户的归因？
@@ -68,6 +70,8 @@ x-zendesk:
 * **在非活动恢复窗口内：** 事件必须在 **非活动窗口** 内发生——这是一个可配置的时间段（例如，7到390天），在此期间，CUID 仍被视为活跃并有资格在特定产品线内进行归因。如果在此窗口内未见到 CUID，则其先前的归因映射将被丢弃。
 * **设备级归因字段存在：** 事件必须已经包含有效的 **设备级归因参数**（例如，媒体来源、活动 ID），这些参数源自 AppsFlyer 的经典基于设备的归因模型。
 
+<div id="note-1" />
+
 <div id="how-is-the-attribution-source-determined" />
 
 ### 如何确定归因来源？
@@ -85,6 +89,8 @@ x-zendesk:
 > 📘 **注意**
 >
 > AppsFlyer 仅在 **同一产品线内** 匹配相同的 CUID。我们不尝试在不同的产品线或客户之间匹配、推断或共享 CUID。这确保了严格的隐私优先方法，使每个客户的数据保持孤立和独立。
+
+<div id="tip" />
 
 <div id="the-cuid-enrichment-processing-window" />
 
@@ -122,6 +128,12 @@ CUID 丰富处理窗口是一个时间段（1-4 小时），在此期间，AppsF
 
 * **在AppsFlyer中**，将您的应用分配到一个产品线，选择加入跨平台归因，并指定不活动恢复窗口。有关更多信息，请参见<Anchor target="_blank" href="/marketers/zh/docs/product-line-group-apps-for-cross-platform-attribution#如何设置产品线">设置产品线</Anchor>。
 * **在您的应用中**，设置AppsFlyer SDK以发送带有CUID的事件。有关开发者说明，请参见[设置客户用户 ID](https://dev.appsflyer.com/hc/docs/set-customer-user-id)。
+
+<div id="different-attribution-date" />
+
+<div id="different-attribution-logic" />
+
+<div id="frequently-asked-questions-faqs" />
 
 <div id="view-cross-platform-attribution-results" />
 

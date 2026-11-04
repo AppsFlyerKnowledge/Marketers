@@ -145,7 +145,7 @@ AppsFlyer会将SDK中配置的事件名称和事件值（包括事件参数）�
 
 |  |  |
 | --- | --- |
-| <span id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter"></span><span id="value-to-sum"></span>fb\_mobile\_level\_achieved | none |
+| <span id="important"></span><span id="example-unified-format-compatible-with-meta-and-tiktok"></span><span id="note-1"></span><span id="send-complex-in-app-events-to-meta-ads"></span><span id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter"></span><span id="value-to-sum"></span>fb\_mobile\_level\_achieved | none |
 | fb\_mobile\_add\_payment\_info | none |
 | fb\_mobile\_add\_to\_cart | af\_price |
 | fb\_mobile\_add\_to\_wishlist | af\_price |

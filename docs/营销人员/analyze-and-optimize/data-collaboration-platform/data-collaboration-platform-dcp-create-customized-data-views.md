@@ -75,6 +75,8 @@ x-zendesk:
    * 说明提供描述。当将鼠标悬停在 **来源** 标签下的数据视图名称上时，这将作为工具提示显示。建议突出主要目标和执行的数据操作。
    * **添加标签：** 您可以选择最能代表视图的结构和数据的标签。
 
+<div id="h_01K4SDE8H7R9YZYXMRVXV5GZSV" />
+
 <div id="naming-requirements-and-guidelines" />
 
 #### 命名要求和指南
@@ -155,6 +157,8 @@ x-zendesk:
 4. 输入一个值
 5. [可选] 点击 **+ 条件**以向过滤器添加条件。
 
+   <div id="group-by" />
+
    <div id="note" />
 
    > 📘 **注意**
@@ -224,6 +228,18 @@ x-zendesk:
 <Accordion title="选择字段">
 
 数据视图结构包括来自原始数据源的字段和在数据视图构建器中创建的任何自定义数据字段。在这里，您可以删除字段（标识符字段除外）或重新排列它们的顺序。
+
+<div id="transactional-data-sources" />
+
+<div id="common-use-cases" />
+
+<div id="h_01JVSEG13462Z4XXD1NE8GW1HE" />
+
+<div id="note-3" />
+
+<div id="use-cases" />
+
+<div id="note-2" />
 
 <div id="note-1" />
 

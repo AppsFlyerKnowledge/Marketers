@@ -273,6 +273,34 @@ SCIM 配置通过直接从身份提供商 (IdP)（如 Okta、Entra ID (Azure)、
 
 增强的 IP 允许列表功能可防止未经授权的访问，确保只有受信任的网络才能与平台互动，从而提高安全性。这一功能对于执行严格的安全策略或管理远程访问的企业尤为重要。
 
+<div id="frequently-asked-questions-about-our-security-package" />
+
+<div id="how-quickly-can-i-implement-these-security-controls" />
+
+<div id="does-this-replace-standard-security-features" />
+
+<div id="how-long-are-audit-logs-retained" />
+
+<div id="what-network-restrictions-can-i-apply" />
+
+<div id="can-i-integrate-with-my-existing-security-tools" />
+
+<div id="how-many-roles-and-api-tokens-can-i-create" />
+
+<div id="what-compliance-standards-does-this-support" />
+
+<div id="how-does-scim-provisioning-work" />
+
+<div id="who-is-the-enterprise-grade-security-package-designed-for" />
+
+<div id="what-is-appsflyers-enterprise-grade-security-package" />
+
+<div id="removing-ips-from-the-list" />
+
+<div id="important" />
+
+<div id="adding-ips-to-the-list" />
+
 <div id="key-features-3" />
 
 #### 主要功能

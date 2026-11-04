@@ -98,6 +98,20 @@ x-zendesk:
 
 </Accordion>
 
+<div id="scan-barcode-success-scan_barcode_success" />
+
+<div id="select-merchant-select_merchant" />
+
+<div id="voucher-redeem-voucher_redeem" />
+
+<div id="promo-promo" />
+
+<div id="bill-payment-success-bill_payment_success" />
+
+<div id="payment-transaction-completed-payment_transaction_completed" />
+
+<div id="wallet-complete-topup-wallet_complete_topup" />
+
 <div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构

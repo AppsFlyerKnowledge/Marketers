@@ -32,6 +32,10 @@ x-zendesk:
   **请注意：** 您需要购买<Anchor target="_blank" href="/marketers/zh/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor>才能获得成本数据。
 * 点击、展示数据以及扩充数据（关键词、广告系列名称以及广告组）。
 
+<div id="tip" />
+
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 支持MCC账户。

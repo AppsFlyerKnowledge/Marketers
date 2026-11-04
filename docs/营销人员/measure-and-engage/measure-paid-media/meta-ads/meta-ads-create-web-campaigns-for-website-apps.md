@@ -127,6 +127,10 @@ AppsFlyer支持专用于网页广告的Meta Ads对接（`metaweb_int`），通�
    * **所有媒体渠道，包括自然流量**：回传所有带量渠道以及自然量的事件。
 7. 在**包括**列中，选择是否将事件与其收入值一起发送。请见<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#回传内容">回传中包含的数据</Anchor>。
 
+   <div id="note-5" />
+
+   <div id="note-4" />
+
    <div id="important" />
 
    > 🚧 **重要提示！**

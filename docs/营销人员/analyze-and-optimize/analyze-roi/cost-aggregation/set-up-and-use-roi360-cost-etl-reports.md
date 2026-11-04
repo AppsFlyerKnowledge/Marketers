@@ -54,6 +54,12 @@ x-zendesk:
 * 建议选择最适合您业务需求的维度和指标，具体的最优解视渠道而定。
 
 
+<div id="data-freshness" />
+
+<div id="cost-etl-connection-directory-structure" />
+
+<div id="data-locker-connection-directory-structure" />
+
 <div id="report-details" />
 
 <div id="directory-and-filename-structure" />
@@ -144,11 +150,17 @@ x-zendesk:
 
 </Accordion>
 
+<div id="aws-object-ownership" />
+
 <div id="change-from-cost-etl-to-data-locker-connection" />
 
 <div id="change-data-locker-connection" />
 
 <div id="edit-connection" />
+
+<div id="edit-or-change-connection" />
+
+<div id="set-up-cost-etl" />
 
 <div id="procedures" />
 
@@ -257,6 +269,8 @@ AppsFlyer将数据写入您的存储桶时，AWS平台默认该数据的所有�
 5. 选择**Bucket owner preferred**。
 6. 点击**Save**。
 
+
+<div id="combine-geo-report-and-all-cost-report" />
 
 <div id="best-practices" />
 

@@ -175,6 +175,14 @@ SRN会向AppsFlyer上报转化数据，然后AppsFlyer将这些转化数据呈�
 
 <Tab title="ASA">
 
+<div id="twitter-conversion-data" />
+
+<div id="tiktok-for-business-conversion-data" />
+
+<div id="x-ads-conversion-data" />
+
+<div id="snapchat-conversion-data" />
+
 <div id="apple-search-ads-conversion-data" />
 
 ### Apple Search Ads转化数据
@@ -429,6 +437,8 @@ ironSource会通过`orig_cost`、`cost_cents_USD`和`af_cost_value`字段在转�
 
 </Accordion>
 
+<div id="tip" />
+
 <div id="retargeting-conversion-data" />
 
 ## 再营销转化数据
@@ -438,6 +448,8 @@ ironSource会通过`orig_cost`、`cost_cents_USD`和`af_cost_value`字段在转�
 > 👍 **提示**
 >
 > 某些情况下，您可能无法通过再营销转化数据明确地判断转化类型，具体请参考[其他的转化数据来源](#转化数据的其他来源)说明。
+
+<div id="note" />
 
 <div id="re-attribution-with-srns" />
 
@@ -526,6 +538,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 <Accordion title="在SRN中使用延迟深度链接">
 
 SRN广告中设定的深度链接参数在SRN之外不可用，其中包括含有应用内scheme路径的`af_dp`参数。唯一的例外情况是<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-advertisers#在应用广告中使用延迟深度链接">Google的信息流应用广告</Anchor>（App campaigns in Feeds）如需再SRN广告中使用延迟深度链接，您必须在其中添加额外的逻辑。您可以使用`onConversionSuccess`响应中的数据，如广告系列、广告组（adset、adgroup）等，以程序化的方式实现用户跳转。
+
+<div id="note-1" />
 
 <div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
@@ -665,6 +679,10 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true`——出现该参数且参数值为true时，请查看`scheme`和`host`字段
 * `scheme`和`host`——这两个字段来自归因链接中的`af_dp`参数，用于说明相关scheme以及通过深度链接向用户展示的页面
 
+<div id="note-2" />
+
+<div id="important" />
+
 <div id="ios-universal-links-and-android-app-links" />
 
 #### iOS Universal Link和安卓App Link
@@ -769,6 +787,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 * 应用开发人员可以根据`af_dp`和广告系列名称等参数将用户引导到应用内的具体页面并向其展示相关内容。
 
+<div id="important-1" />
+
 > 🚧 **重要提示！**
 >
 > 建议使用OneLink短链。详情请见<Anchor target="_blank" href="/marketers/zh/docs/understand-onelink-short-vs-long-urls">此文档</Anchor>。
@@ -789,6 +809,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 * Push API可提供详细的转化数据payload，其中会标识出再归因和再互动。Push API的payload中包含`re_targeting_conversion_type`字段，该字段可说明转化类型，即再归因或再互动。详情请见<Anchor target="_blank" href="/marketers/zh/docs/push-api-streaming-raw-data">Push API指南</Anchor>。
 * 原始数据报告也会标识出转化类型。再营销转化的原始数据报告中包含***Event Name***（事件名称）字段，该字段中可能出现的值为re-engagement（再互动）或***re-attribution*** （再归因），用于说明转化类型。
+
+<div id="note-3" />
 
 <div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 

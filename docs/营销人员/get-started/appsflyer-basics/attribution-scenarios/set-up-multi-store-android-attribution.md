@@ -83,6 +83,8 @@ AppsFlyer的归因支持多家应用商店的场景。（英文表述中，我�
 | 3 | 营销人员 | [准备归因链接。](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | 分App(包名+channel名)准备归因链接。 |
 | 4 | 市场人员和研发人员互相配合 | [测试](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [测试](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
 
+<div id="note-1" />
+
 <div id="procedures" />
 
 ## 配置流程
@@ -224,6 +226,12 @@ AF\_STORE对应AppsFlyer原始数据中的install\_app\_store字段。目前包�
 | 前往数据总览面板，查看是否有新增自然激活。目前，在使用单一应用方法时，还无法区分自然安装的来源。 | <ol><li>进入已测试商店的应用控制面板上的数据总览页面。</li><li>您应该会看到来自“organic”媒体渠道的一个安装转化。</li></ol> |
 
 </Accordion>
+
+<div id="3rd-party-raw-data" />
+
+<div id="referrer-implementation-thirdparty-android-app-stores" />
+
+<div id="getting-the-data-appsflyer-reports" />
 
 <div id="additional-features" />
 

@@ -126,6 +126,8 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 8. 在连接器部分中，单击AppsFlyer连接旁边的**连接** 。
 9. 按提示登录AppsFlyer。
 
+<div id="note-2" />
+
 <div id="test-the-claude-connection" />
 
 #### 测试Claude连接
@@ -446,6 +448,16 @@ AppsFlyer MCP 一次连接一个 AppsFlyer 账户。
 ### 使用场景与示例提示
 
 AppsFlyer MCP为您提供了一套工具和资源，旨在帮助您获取营销分析、效果洞察，并执行配置任务。
+
+<div id="h_01M6DQ8W2JQ9ECH5VEZPRT7221" />
+
+<div id="h_analyze-incrementality-experiments" />
+
+<div id="h_analyze-creative-performance" />
+
+<div id="note-6" />
+
+<div id="note-5" />
 
 <div id="important" />
 

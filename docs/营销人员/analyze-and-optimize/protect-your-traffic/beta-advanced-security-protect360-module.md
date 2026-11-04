@@ -38,6 +38,10 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 
 对于广告商而言，SDK 欺骗可能导致从未发生的安装和参与、安装量膨胀、AppsFlyer 和应用商店号之间的差异以及广告支出的浪费。
 
+<div id="important-1" />
+
+<div id="prerequisites" />
+
 <div id="about-the-advanced-security-module" />
 
 ## 关于高级安全模块

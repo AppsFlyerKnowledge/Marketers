@@ -34,6 +34,10 @@ x-zendesk:
 
 如果您不确定需要记录哪些事件和参数，请参考我们按垂类梳理的<Anchor target="_blank" href="/marketers/zh/docs/in-app-events-overview#recommended-events-by-business-vertical">推荐事件（含示例和流程）</Anchor>。
 
+<div id="lead-lead" />
+
+<div id="app-open-af_app_opened" />
+
 <div id="predefined-event-names" />
 
 ## 预定义事件名称
@@ -782,6 +786,10 @@ x-zendesk:
 ## 预定义事件参数
 
 本章为您列举了预定义事件参数，并针对每个事件参数都列出了Meta ads、Google Ads、Snap、X Ads和Criteo的相应字段，用于事件映射。您可以在一个事件中添加任意事件参数。
+
+<div id="h_01NEWAFNETREVENUE0001" />
+
+<div id="note-3" />
 
 <div id="note-2" />
 

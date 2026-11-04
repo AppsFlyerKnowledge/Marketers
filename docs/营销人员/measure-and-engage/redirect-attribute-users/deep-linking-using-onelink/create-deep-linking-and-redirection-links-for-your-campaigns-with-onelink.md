@@ -38,6 +38,10 @@ x-zendesk:
 * 深度链接及跳转设置
 * 其他参数设置
 
+<div id="create-onelink-links-in-onelink-management" />
+
+<div id="create-onelink-links-from-your-ai-tool" />
+
 <div id="create-a-onelink-link" />
 
 ## 创建OneLink链接
@@ -55,6 +59,8 @@ x-zendesk:
 3. 点击**添加链接**。
 4. 选择您想要打造的[用户体验](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#experiences)。
 5. 选择一个媒体渠道或输入自定义媒体渠道名称。AppsFlyer后台会将该链接产生的数据展示在这个渠道名称下。媒体渠道在您的链接中表达为`pid`参数值。
+
+   <div id="important" />
 
    <div id="note" />
 
@@ -123,6 +129,8 @@ x-zendesk:
 6. 【可选】在**品牌链接**部分：
    * 另选一个域名来代表您的品牌。<Anchor target="_blank" href="/marketers/zh/docs/brand-onelink-with-your-domain">了解详情</Anchor>
    * <span id="url-id"></span>修改URL ID来凸显该广告系列的内容。URL ID默认为8个字符，最多可包含50个字符，默认长度为8个字符。
+
+<div id="note-1" />
 
 <div id="enable-retargeting-for-the-app" />
 
@@ -240,6 +248,8 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
 3. 社交应用落地页仅支持OneLink短链。
 
 这里的归因结果取决于您的归因设置。
+
+<div id="note-3" />
 
 <div id="to-set-up-the-social-apps-landing-page" />
 
@@ -592,6 +602,8 @@ Apple新上线的iOS 15系统为iCloud用户提供了<Anchor target="_blank" hre
 </Accordion>
 
 </Accordion>
+
+<div id="xiaomi-browser" />
 
 <div id="additional-information" />
 

@@ -244,6 +244,10 @@ x-zendesk:
 
 #### Mintegral
 
+<div id="note-3" />
+
+<div id="applovin" />
+
 <div id="note-2" />
 
 > 📘 **注意**

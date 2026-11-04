@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** 向广告投放渠道发送自定义人群包时，您可以额外配置其他的用户标识符。
 
+<div id="about-additional-identifiers" />
+
 ## 其他相关标识符简介
 
 AppsFlyer的受众共享产品支持以下设备标识符，用于向<Anchor target="_blank" href="/marketers/zh/docs/audiences-partner-connections">合作渠道</Anchor>发送自定义人群包：
@@ -36,6 +38,18 @@ AppsFlyer的受众共享产品支持以下设备标识符，用于向<Anchor tar
 部分渠道还支持根据额外配置的用户标识符进行自定义的人群匹配。AppsFlyer的受众共享针对此类标识符提供多种使用方式，但您需要事先通过AppsFlyer SDK或S2S-mobile API对所需的特定标识符进行配置。
 
 **这些额外的标识符还可包括电话号码和邮箱地址，但必须经过SHA256算法加密后才能使用。  使用此类额外标识符时，您还需要遵守额外标识符的使用条款。**
+
+<div id="h_01HNZNWZ9XSY47T58Z5YR7Q65S" />
+
+<div id="ios-sdk-configuration" />
+
+<div id="note" />
+
+<div id="sdk-reference-and-code-samples" />
+
+<div id="available-identifiers" />
+
+<div id="next-steps" />
 
 ## 下一步
 
@@ -68,6 +82,34 @@ AppsFlyer的受众共享产品支持以下设备标识符，用于向<Anchor tar
 * 对于哈希处理的 *电话号码*：
   * SDK v7.0.1 及更高版本：请使用 `setUserPhone`（推荐）。
   * SDK v7.0.0 及更早版本：请结合自定义数据使用 `setAdditionalData`。
+
+<div id="android-sdk-configuration" />
+
+<div id="note-3" />
+
+<div id="usage-example-2" />
+
+<div id="method-signature-2" />
+
+<div id="sdk-v701-and-later" />
+
+<div id="usage-example-1" />
+
+<div id="method-signature-1" />
+
+<div id="sdk-v700-and-earlier" />
+
+<div id="note-2" />
+
+<div id="usage-example" />
+
+<div id="method-signature" />
+
+<div id="sdk-v701-and-later--setuserphone-recommended" />
+
+<div id="note-1" />
+
+<div id="sdk-v700-and-earlier--setadditionaldata" />
 
 > 📘 **注释**
 >
@@ -258,6 +300,32 @@ AppsFlyerLib.shared().setUserEmail("name@domain.com")
   </tbody>
 </Table>
 
+<div id="note-6" />
+
+<div id="usage-example-5" />
+
+<div id="method-signature-5" />
+
+<div id="sdk-v701-and-later-1" />
+
+<div id="usage-example-4" />
+
+<div id="method-signature-4" />
+
+<div id="sdk-v700-and-earlier-1" />
+
+<div id="note-5" />
+
+<div id="usage-example-3" />
+
+<div id="method-signature-3" />
+
+<div id="sdk-v701-and-later--setuserphone-recommended-1" />
+
+<div id="note-4" />
+
+<div id="sdk-v700-and-earlier--setadditionaldata-1" />
+
 > 📘 **注意**
 >
 > 请传入纯文本格式的电子邮件地址。SDK 会在本地对其进行标准化和哈希处理（SHA-256）。请勿进行预哈希处理。每次调用仅接受一个电子邮件地址：再次调用 `setUserEmail` 会覆盖之前设置的值，而不是进行添加。
@@ -439,6 +507,10 @@ AppsFlyerLib.getInstance().setUserEmails(
 > 在 v7.0.1 及更高版本中，每次调用仅接受一个电子邮件地址。不支持多个电子邮件地址：再次调用 `setUserEmail` 会覆盖之前设置的值，而不是进行添加。
 
 </Accordion>
+
+<div id="note-7" />
+
+<div id="s2s-reference-and-code-samples" />
 
 ## S2S参考说明和代码示例
 

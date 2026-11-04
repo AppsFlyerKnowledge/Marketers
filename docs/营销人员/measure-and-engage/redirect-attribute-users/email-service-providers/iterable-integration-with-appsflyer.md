@@ -57,6 +57,10 @@ x-zendesk:
 
 ### 第2步：
 
+<div id="asset-links-for-android" />
+
+<div id="aasa-for-ios" />
+
 <div id="step-2-give-iterable-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### 第2步：
@@ -66,6 +70,8 @@ x-zendesk:
 
 
 <div id="step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest" />
+
+<div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <div id="setting-up-your-app" />
 
@@ -84,6 +90,8 @@ x-zendesk:
 </activity>
 ```
 
+<div id="step-1-for-ios-setting-up-your-app-to-support-universal-links" />
+
 <div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 #### 第2步：
@@ -94,7 +102,13 @@ x-zendesk:
    ```
 
 
+<div id="note" />
+
 <div id="sending-your-first-email" />
+
+<div id="step-2-for-ios-resolve-deep-links" />
+
+<div id="step-2-for-android-resolve-deep-links" />
 
 <div id="step-1-associating-click-domains-in-xcode" />
 

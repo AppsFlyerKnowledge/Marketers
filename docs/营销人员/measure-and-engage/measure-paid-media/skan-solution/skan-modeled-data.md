@@ -38,6 +38,8 @@ SKAN模型推算数据可通过以下方式解决上述问题：
 
 **请注意**：注意：转化值映射构架若发生更改，AppsFlyer需要2天的时间来准备变更后的模型推算数据。
 
+<div id="inapp-event-ltv" />
+
 <div id="modeled-data-types-and-availability" />
 
 ## 模型推算的数据类型和可用性

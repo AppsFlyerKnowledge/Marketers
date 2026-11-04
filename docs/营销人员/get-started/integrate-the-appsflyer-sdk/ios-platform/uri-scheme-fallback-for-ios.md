@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** 本文说明了iOS用户点击OneLink自定义链接后，Universal Link未能调起应用时的用户链路。
 
+<div id="note" />
+
 <div id="about-uri-fallback-for-ios" />
 
 ## 适用于iOS的URI备用方案简介

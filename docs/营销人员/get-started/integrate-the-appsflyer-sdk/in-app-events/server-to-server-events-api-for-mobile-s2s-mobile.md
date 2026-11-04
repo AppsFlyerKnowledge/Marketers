@@ -58,6 +58,8 @@ AppsFlyer处理S2S应用内事件时，会通过AppsFlyer ID来识别相关应�
 
 也就是说，AppsFlyer会将某些数据与非自然的S2S应用内事件相关联，而这些数据与自然的S2S应用内事件是不相关的。
 
+<div id="h_01_including-user-agent-and-ip-address-in-s2s-events" />
+
 <div id="note" />
 
 > 📄 **示例**

@@ -21,6 +21,14 @@ x-zendesk:
 ---
 > **概览：** 为您的网站应用设置 Google Ads 集成，以便通过离线转化 API (OCI) 向 Google 发送网络转化信号。
 
+<div id="note-1" />
+
+<div id="create-a-google-ads-integration-in-appsflyer" />
+
+<div id="create-a-google-ads-web-campaign" />
+
+<div id="prerequisite" />
+
 <div id="overview" />
 
 ## 概览
@@ -63,6 +71,52 @@ AppsFlyer 支持与 Google Ads 集成（`googleads_int` ) 通过 Google Offline 
 3. 点击**设置对接**，然后界面会跳转到活跃对接设置页面。
 4. 在应用下拉菜单中，选择网页应用。
 5. 在**渠道对接**选项卡中，打开**启用该渠道**开关。
+
+   <div id="troubleshooting-in-app-events-postbacks" />
+
+   <div id="view-in-raw-data-and-api-reports" />
+
+   <div id="view-in-the-dashboard" />
+
+   <div id="view-web-to-app-attribution-data" />
+
+   <div id="note-6" />
+
+   <div id="create-a-landing-page-with-onelink-smart-banners" />
+
+   <div id="note-5" />
+
+   <div id="note-4" />
+
+   <div id="create-a-landing-page-with-onelink-smart-script" />
+
+   <div id="using-the-tracking-template-url-with-smart-script-or-smart-banners" />
+
+   <div id="google-tracking-template-url-examples" />
+
+   <div id="note-3" />
+
+   <div id="warning-4" />
+
+   <div id="tip-1" />
+
+   <div id="warning-3" />
+
+   <div id="set-the-tracking-template-url" />
+
+   <div id="warning-2" />
+
+   <div id="warning-1" />
+
+   <div id="set-the-final-url" />
+
+   <div id="warning" />
+
+   <div id="create-a-web-campaign-in-google-ads" />
+
+   <div id="note-2" />
+
+   <div id="tip" />
 
    > 📘 **注意**
    >
@@ -244,6 +298,20 @@ Google Ads 广告系列的网络归因数据可在跨平台控制面板和原始
 确保回传中的应用内事件映射到正确的转化操作ID（Conversion Action ID）。如需在Google Ads中查找转化操作ID，请参考[此处说明](#step-2-create-conversion-actions)。创建转化操作。
 
 </Accordion>
+
+<div id="plan-availability" />
+
+<div id="agency-managed-campaigns" />
+
+<div id="unexpected-srn-attribution" />
+
+<div id="tracking-template-urls" />
+
+<div id="cost-data" />
+
+<div id="reengagement-attribution" />
+
+<div id="dashboard" />
 
 <div id="traits-and-limitations" />
 

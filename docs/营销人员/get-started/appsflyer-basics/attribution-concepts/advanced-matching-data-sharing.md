@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概览：** 高级匹配数据共享功能允许将哈希用户标识符（例如电子邮件和电话号码）从 AppsFlyer 转发到选定的广告网络，从而使合作伙伴能够在没有设备 ID 的情况下将事件归因于广告互动。
 
+<div id="important" />
+
 <div id="about-advanced-matching-data-sharing" />
 
 ## 关于高级匹配数据共享
@@ -50,6 +52,8 @@ x-zendesk:
 | Reddit（reddit\_int） | CAPI | 安装量、​​重新互动、应用内事件 |
 | Roku（rokuads\_​​int） | SRN + CAPI | 应用内事件 |
 
+<div id="note" />
+
 <div id="the-end-to-end-flow" />
 
 ## 端到端流程
@@ -65,6 +69,16 @@ x-zendesk:
 > 📘 **注意**
 >
 > 只有在启用高级匹配数据共享功能的情况下，才会将哈希标识符转发给合作伙伴。当开启/关闭功能关闭时，即使事件中存在标识符，也不会与该合作伙伴共享任何哈希数据。
+
+<div id="send-hashed-identifiers-with-the-s2s-api" />
+
+<div id="send-hashed-identifiers-with-the-sdk" />
+
+<div id="why-are-there-two-phone-number-fields" />
+
+<div id="important-1" />
+
+<div id="note-1" />
 
 <div id="how-hashed-user-identifiers-reach-appsflyer" />
 
@@ -117,6 +131,16 @@ SDK 会拒绝无效值并报错，且不会将无效值发送到 AppsFlyer。
 
 </Tab>
 </Tabs>
+
+<div id="facebook-login-id-fbloginid" />
+
+<div id="first-name-firstnamehashed-and-last-name-lastnamehashed" />
+
+<div id="phone-number-e164-phonenumbere164hashed" />
+
+<div id="phone-number-digits-only-phonenumberhashed" />
+
+<div id="email-emailhashed" />
 
 <div id="normalize-and-hash-identifiers" />
 
@@ -189,6 +213,8 @@ SDK 会拒绝无效值并报错，且不会将无效值发送到 AppsFlyer。
 
 </Accordion>
 
+<div id="note-2" />
+
 <div id="turn-on-advanced-matching-data-sharing" />
 
 ## 启用高级匹配数据共享
@@ -207,6 +233,8 @@ SDK 会拒绝无效值并报错，且不会将无效值发送到 AppsFlyer。
 > 📘 **注意**
 >
 > 关闭高级匹配数据共享功能后，将立即停止与该合作伙伴的哈希数据共享。其他集成设置，包括回传和事件数据，不受影响。
+
+<div id="important-2" />
 
 <div id="privacy-and-data-handling" />
 

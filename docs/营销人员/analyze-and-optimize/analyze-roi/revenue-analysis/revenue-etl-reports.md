@@ -173,7 +173,7 @@ bucket
 **请注意：**
 
 
-1. <span id="how-to-subscribe-to-the-report-1"></span><span id="how-to-subscribe-to-the-report::cae4aa15"></span>从AppsFlyer后台的侧边栏中选择**报告 > Data Locker**。
+1. <span id="report-folder-hierarchy-1"></span><span id="how-to-access-the-report-in-your-bucket-1"></span><span id="how-to-subscribe-to-the-report-1"></span><span id="how-to-subscribe-to-the-report::cae4aa15"></span>从AppsFlyer后台的侧边栏中选择**报告 > Data Locker**。
 
 **请注意：**
 
@@ -181,6 +181,8 @@ bucket
 <span id="how-to-access-the-report-in-your-bucket-2"></span><span id="how-to-access-the-report-in-your-bucket"></span>构成报告路径的文件夹结构如下：
 
 `<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
+
+<div id="transactionlevel-stores-revenue-report" />
 
 <div id="report-folder-hierarchy-2" />
 
@@ -295,6 +297,8 @@ bucket
 
 </Accordion>
 
+<div id="data-flow-3" />
+
 #### Data Sources。
 
 
@@ -310,6 +314,8 @@ bucket
 <span id="how-to-access-the-report-in-your-bucket-4"></span><span id="how-to-access-the-report-in-your-bucket::b136ba80"></span>构成报告路径的文件夹结构如下：
 
 `<bucket-name>/t=stores_rawdata/dt=<dt=yyyy-mm-dd>/h=<hh>`
+
+<div id="devicelevel-stores-revenue-report" />
 
 <div id="report-folder-hierarchy-3" />
 

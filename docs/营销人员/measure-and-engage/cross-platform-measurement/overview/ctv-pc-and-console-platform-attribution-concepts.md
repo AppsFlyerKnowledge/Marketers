@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="tv-screens" />
+
 <div id="the-appsflyer-cross-platform-solution" />
 
 ## AppsFlyer的跨端归因方案
@@ -155,6 +157,8 @@ SRN归因目前仅适用于同平台投放，也就是说营销触点（点击�
 * <Anchor target="_blank" href="/marketers/zh/docs/cross-platform-landing-pages-with-smart-script">如需了解如何设置带有智能脚本的跨平台落地页，请参考此文档。</Anchor>
 
 </Accordion>
+
+<div id="note" />
 
 <div id="data-availability" />
 

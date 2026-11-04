@@ -231,6 +231,8 @@ AAP将Apple SKAdNetwork作为隐私保护的最低标准。除自有媒体和ATT
 
 </Accordion>
 
+<div id="engaged-click-attribution" />
+
 <div id="user-engagement-attribution-types" />
 
 ## 用户互动归因类型
@@ -255,6 +257,8 @@ AAP将Apple SKAdNetwork作为隐私保护的最低标准。除自有媒体和ATT
 </Accordion>
 
 <div id="viewthrough-attribution" />
+
+<div id="engaged-view-attribution" />
 
 <Accordion title="浏览型归因">
 

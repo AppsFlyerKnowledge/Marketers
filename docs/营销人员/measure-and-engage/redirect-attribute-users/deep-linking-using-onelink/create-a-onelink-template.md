@@ -195,6 +195,8 @@ OneLink模板具有以下特点：
 
       <div id="h_01H9Q4E7VR4CAK0PJY269GQ9XJ" />
 
+      <div id="tip" />
+
       > 👍 **提示**
       >
       > * Apple 和 Google 对于应用方案都不强制实施唯一命名。 **为您的品牌选择一个独特的方案名称**，以避免不同应用之间的方案冲突。建议将应用的包名（bundle ID）作为其scheme名称，如com.company.app<strong>。</strong>
@@ -218,6 +220,10 @@ OneLink模板具有以下特点：
    </Tabs>
 
 6. 点击**更新OneLink模板**。
+
+<div id="h_favicon" />
+
+<div id="note-2" />
 
 <div id="note-1" />
 

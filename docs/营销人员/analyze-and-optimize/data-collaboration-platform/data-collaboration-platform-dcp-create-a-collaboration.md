@@ -27,6 +27,8 @@ x-zendesk:
 
 应用传单 <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-guide">数据协作平台 （DCP）</Anchor> 使商业媒体网络和品牌能够合作并释放其第一方数据的潜力，以吸引高意向用户。这个安全、以隐私为中心的平台可实现无缝协作，使合作伙伴能够产生新的广告收入来源，并从协作数据中构建自定义受众，以便在商业媒体网络或 Meta、Google 等媒体渠道中激活。
 
+<div id="optional-set-custom-data-permissions-by-source" />
+
 <div id="create-a-collaboration" />
 
 ## 创建协作
@@ -187,6 +189,16 @@ x-zendesk:
 2. 在协作仪表板中，单击右上角的作（3 个点）菜单，然后选择特定作。   
 
    <Image alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+
+<div id="terms-and-conditions" />
+
+<div id="notes" />
+
+<div id="update-existing-terms-and-conditions" />
+
+<div id="apply-terms-and-conditions" />
+
+<div id="administer-account" />
 
 <div id="notes-on-suspended-collaborations" />
 

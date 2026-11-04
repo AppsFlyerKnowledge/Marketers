@@ -40,6 +40,8 @@ x-zendesk:
 3. 应用打开时，AppsFlyer会收集必要的信息，并能够将此次应用打开归因到该用户使用的搜索引擎。
 4. 对于未安装应用的用户，您可以使用AppsFlyer的网页到应用解决方案（包括智能横幅、智能脚本和二维码）将这些用户引导至落地页，为其实现跳转并进行归因。
 
+<div id="note" />
+
 <div id="setup" />
 
 ## 设置方式
@@ -71,6 +73,10 @@ x-zendesk:
   * `media source`字段会显示带来相关用户的搜索引擎，比如：`google_organic_seo`。
   * `http_referrer`字段中包括搜索结果页面的完整URL，用户从该页面进入应用或跳转到移动端落地页。
   * `channel`字段的值为`seo`。
+
+<div id="note-2" />
+
+<div id="note-1" />
 
 <div id="additional-information" />
 

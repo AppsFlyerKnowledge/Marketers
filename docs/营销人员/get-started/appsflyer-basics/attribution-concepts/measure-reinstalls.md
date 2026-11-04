@@ -86,6 +86,10 @@ x-zendesk:
 
 </Accordion>
 
+<div id="postreinstall-events-attribution-state" />
+
+<div id="note" />
+
 <div id="post-reinstall-in-app-events" />
 
 ## 应用内事件
@@ -155,6 +159,8 @@ Reinstall（重装激活）
 <div id="examples" />
 
 <Accordion title="示例">
+
+<div id="confirm-inapps-are-attributed-to-the-original-install" />
 
 <div id="examples-for-first-install-mode-attribution" />
 

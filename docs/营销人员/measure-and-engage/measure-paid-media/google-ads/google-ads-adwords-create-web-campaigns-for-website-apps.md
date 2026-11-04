@@ -117,6 +117,8 @@ AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用�
 3. 点击**添加事件**。
 4. 在 **AppsFlyer 事件** 列中，选择您想要发送的网站事件（例如，`purchase`，`sign_up`）。
 
+   <div id="note-4" />
+
    <div id="note-3" />
 
    > 📘 **注意**

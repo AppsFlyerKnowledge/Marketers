@@ -289,6 +289,8 @@ ATT实行后，由于Google iOS应用不使用ATT弹窗，因此Google Ads产品
 * 任何 iOS ACI 活动都可以通过 ICM 进行归因。当设备 ID 在广告商应用、发布者应用或两者中都不可用时适用。
 * 谷歌目前仅声称 iOS 上的点击。它不声称展示次数。
 
+<div id="note-2" />
+
 <div id="using-deferred-deep-linking-in-app-campaigns" />
 
 ## 在应用广告中使用延迟深度链接
@@ -366,6 +368,8 @@ Google Ads不发送`Channel(af_channel)`参数。AppsFlyer会按Google Ads侧的
 
 Engaged view（深度观看）是指用户观看时间超过10秒的视频广告展示，它的归因优先级与点击相同。 在Android设备上，“深度观看”会在原始数据报表中`Engagement Type`和`Sub Param 5`参数下显示为`engaged_view`。   
 当“深度观看”发生在 AppsFlyer 中定义的点击回溯窗口期内（最长为 3 天），就会被计入归因。
+
+<div id="send-complex-in-app-events-to-google-ads" />
 
 <div id="important-2" />
 

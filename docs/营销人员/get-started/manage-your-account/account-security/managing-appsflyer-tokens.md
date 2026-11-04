@@ -56,6 +56,8 @@ x-zendesk:
 1. 从页面顶部导航栏打开账户菜单（点击右上角的邮箱地址，打开下拉菜单）> **安全中心**。
 2. 向下滚动到**AppsFlyer API token**部分，点击**管理您的AppsFlyer token。** 界面会显示当前正在使用的token。
 
+<div id="note" />
+
 <div id="token-types" />
 
 ## Token类型

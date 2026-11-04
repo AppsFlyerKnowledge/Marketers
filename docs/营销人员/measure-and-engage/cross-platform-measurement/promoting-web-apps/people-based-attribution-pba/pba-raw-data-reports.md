@@ -35,11 +35,11 @@ x-zendesk:
 
 
 
-* <span id="sample-reports"></span><span id="raw-data-report-fields"></span><span id="rawdata-report-fields"></span>网页事件<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAWrfTDOJmY04jkFNd0OJ3TcQgPiybcMkdQF7XLmIt33HV09GFYy7KwsmWN3Z8TT2JhStf3uQHfH2E/pub?gid=1096347999&single=true&output=csv">CSV</Anchor>
+* <span id="sample-reports"></span><span id="website-visits-and-website-events"></span><span id="raw-data-report-fields"></span><span id="rawdata-report-fields"></span>网页事件<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAWrfTDOJmY04jkFNd0OJ3TcQgPiybcMkdQF7XLmIt33HV09GFYy7KwsmWN3Z8TT2JhStf3uQHfH2E/pub?gid=1096347999&single=true&output=csv">CSV</Anchor>
 * 网页访问量[CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vTAWrfTDOJmY04jkFNd0OJ3TcQgPiybcMkdQF7XLmIt33HV09GFYy7KwsmWN3Z8TT2JhStf3uQHfH2E/pub?gid=432734495&single=true&output=csv)
 
 
-| <span id="field-list-website-visits-and-website-events-report"></span><span id="website-visits-events"></span>字段名称 | 说明 | 格式 | 示例 |
+| <span id="field-release-notes"></span><span id="field-list-website-visits-and-website-events-report"></span><span id="website-visits-events"></span>字段名称 | 说明 | 格式 | 示例 |
 | --- | --- | --- | --- |
 | advertising\_id | 广告 ID (GAID) | 字符串 | 7fzzz3fa-8bad-46c9-bb03-fffffffffffffffffffffffff |
 | af\_web\_id |  | 字符串 | 68972980-58f9-4ca6-8743-c0d633364b6d |
@@ -93,7 +93,13 @@ x-zendesk:
 | 2020-10-04 | 网页到应用 | <ul><li>mobile\_campaign\_id</li><li>web\_campaign\_id</li></ul> |
 
 
+<div id="application-note-downloading-and-combining-data-locker-files" />
+
 <div id="use-cases-for-pba-and-mobile" />
+
+<div id="combining-pba-and-mobile-data" />
+
+<div id="setting-up-pba-reports-in-data-locker" />
 
 <div id="procedures" />
 

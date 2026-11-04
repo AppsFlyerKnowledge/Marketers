@@ -36,6 +36,16 @@ x-zendesk:
   * 选择货币
   * 选择时区
 
+<div id="raw-data-reports-nonorganic" />
+
+<div id="protect360-fraud" />
+
+<div id="ad-revenue-raw-data" />
+
+<div id="retargeting" />
+
+<div id="raw-data-reports-organic" />
+
 <div id="raw-data-reports-available-via-pull-api" />
 
 #### Pull API能够拉取到的原始数据报告

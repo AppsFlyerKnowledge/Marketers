@@ -358,7 +358,13 @@ AppsFlyer支持通过深度链接归因在iOS和Android上测量用于重新参�
 
 这种方法可对iOS点击和浏览带来的激活，以及iOS深度链接带来的再互动进行归因，适用于关闭广告标识符或同时关闭广告标识符和ATT授权的设备。基于最后触点归因，最长归因窗口期为24小时。
 
+<div id="use-deep-links-in-meta-ads-campaigns" />
+
+<div id="advanced_matching_data_sharing" />
+
 <div id="note-3" />
+
+<div id="see-also" />
 
 > 📘 **注意**
 >

@@ -136,6 +136,16 @@ x-zendesk:
 | event\_f |  |  |  |  |
 | event\_g |  |  |  |  |
 
+<div id="ssot-support-for-decode-mode" />
+
+<div id="faq" />
+
+<div id="how-to-enable-ssot-for-decode-mode" />
+
+<div id="key-benefits" />
+
+<div id="overview" />
+
 <div id="example-d-fine-conversion-value-62" />
 
 ### 示例D：精细转化值为62

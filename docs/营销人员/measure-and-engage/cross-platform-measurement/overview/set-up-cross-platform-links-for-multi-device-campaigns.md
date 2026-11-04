@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：本文介绍了AppsFlyer如何对发生在不同设备上的应用激活和广告展示进行匹配，帮助广告主开展跨平台的应用推广和衡量工作。比如将移动端的应用激活归因到CTV设备上的广告展示、将掌机端或CTV设备上的应用激活归因到移动端或PC端（网页）的广告展示等等。**
 
+<div id="how-does-the-attribution-logic-work" />
+
 <div id="overview" />
 
 ## 概览

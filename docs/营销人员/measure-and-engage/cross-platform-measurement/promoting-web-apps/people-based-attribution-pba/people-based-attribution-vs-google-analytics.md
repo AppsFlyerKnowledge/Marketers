@@ -93,6 +93,8 @@ Web SDK仅在某些页面上存在。所有页面上都存在Google Analytics（
 
 <Accordion title="时区设置-数据差异">
 
+<div id="example" />
+
 <div id="cause-2" />
 
 #### 原因
@@ -208,6 +210,8 @@ PBA和Google Analytics均使用Cookies来识别用户。
 
 一般建议让Google Analytics SDK自动处理Cookie设置，但是您仍然可以<Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id">配置和更改Cookie设置</Anchor> 。Cookie设置的任何变动都可能导致差异。
 
+<div id="example-1" />
+
 <div id="setting-cookie-expiration" />
 
 #### 设置Cookie期限
@@ -225,6 +229,8 @@ Google Analytics支持设置Cookie有效期。如果Google Analytics的cookie有
 > 最终结果是Google Analytics显示为两个用户，尽管他们两个都是Mark，却只有一个转化与之关联。但是，PBA会显示一个名为Mark的用户，并把该转化与之关联。
 >
 > 这意味着Google Analytics的转化率低于PBA的转化率。
+
+<div id="example-2" />
 
 <div id="setting-cookie-subdomain" />
 

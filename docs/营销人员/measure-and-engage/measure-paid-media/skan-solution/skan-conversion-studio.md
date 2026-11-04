@@ -862,6 +862,14 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
   </tbody>
 </Table>
 
+<div id="skan-schema-analysis" />
+
+<div id="events-tab" />
+
+<div id="revenue-tab" />
+
+<div id="conversion-values-tab" />
+
 <div id="example-c-engagement-measurement" />
 
 #### 示例C：衡量事件
@@ -1122,6 +1130,16 @@ SDK和<Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-a
 <Accordion title="支持匿名用户">
 
 打开**支持匿名用户**的开关后，可在保护<Anchor target="_blank" href="/marketers/zh/docs/apply-privacy-preserving-sdk-methods#用户信息匿名化">匿名用户</Anchor>隐私的同时，确保其SKAN转化值得到准确的更新。
+
+<div id="ssot-mapping-patterns" />
+
+<div id="faq" />
+
+<div id="how-to-configure-mapping-patterns" />
+
+<div id="pairing" />
+
+<div id="half-and-half" />
 
 <div id="important-1" />
 

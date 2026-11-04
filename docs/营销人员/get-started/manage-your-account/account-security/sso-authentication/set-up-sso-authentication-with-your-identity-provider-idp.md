@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **概要：** 通过将 AppsFlyer 与您的身份提供者 (IdP) 集成，AppsFlyer 账户用户可以使用单点登录 (SSO) 登录 AppsFlyer。了解如何在 AppsFlyer 和您的 IdP 平台中设置 SSO 身份验证。
 
+<div id="note" />
+
 <div id="considerations" />
 
 ## 注意事项
@@ -161,6 +163,20 @@ AppsFlyer 提供两种类型的公共加密密钥证书来加密数据和签署 
 
 * 选择证书类型并点击 **下一步**.
 
+<div id="6-activate-sso" />
+
+<div id="5-add-exception-users" />
+
+<div id="activation-results" />
+
+<div id="note-7" />
+
+<div id="delete-an-exception-user" />
+
+<div id="add-login-methods-for-multiple-users" />
+
+<div id="note-6" />
+
 <div id="note-5" />
 
 > 📘 **注意**
@@ -236,6 +252,12 @@ AppsFlyer 提供两种类型的公共加密密钥证书来加密数据和签署 
 
 </Accordion>
 
+<div id="edit-exception-users-1" />
+
+<div id="note-8" />
+
+<div id="important" />
+
 <div id="manage-sso-configuration" />
 
 ## 管理 SSO 配置
@@ -245,6 +267,8 @@ AppsFlyer 提供两种类型的公共加密密钥证书来加密数据和签署 
 查看如何 [访问 SSO 配置页面](#访问-sso-配置页面)。
 
 <div id="zd-edit-sso" />
+
+<div id="edit-exception-users" />
 
 <div id="edit-sso" />
 

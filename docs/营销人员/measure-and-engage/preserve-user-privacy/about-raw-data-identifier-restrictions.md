@@ -36,6 +36,10 @@ x-zendesk:
 
 下表列出了各媒体渠道对于转化、点击和展示的数据限制。
 
+<div id="uber" />
+
+<div id="discord" />
+
 <div id="note" />
 
 > 📘 **注意**
@@ -56,6 +60,8 @@ x-zendesk:
 | <span id="snapchat"></span>Snapchat | <ul><li>从2023年3月1日开始，原始数据报告不再呈现Snapchat的卸载（Uninstalls）数据</li><li>浏览型归因受到限制，原始数据传输工具中相关字段限制如下：<ul><li>Media source（snapchat\_int）</li><li>Channel</li><li>Attributed touch type（广告互动类型，显示为“impression”）</li><li>Attributed touch time（广告互动时间，该字段仅上报日期，格式为“dd/mm/yyyy”）</li><li>Campaign（显示为“*restricted*”）</li></ul></li><li>来自Snapchat的点击和展示不包含在原始数据报告中</li></ul> |
 | <span id="tiktok-for-business"></span>TikTok for Business | <ul><li>Media source（显示为bytedanceglobal\_int和tiktokglobal\_int）<ul><li>Channel</li><li>Attributed touch type（广告互动类型，显示为“impression”）</li><li>Attributed touch time（广告互动时间，该字段仅上报日期，格式为“dd/mm/yyyy”）</li><li>Campaign（显示为“*restricted*”）</li></ul></li><li>来自bytedanceglobal\_int的展示在原始数据中受限</li><li>Data Locker的点击和展的原始数据报告中不包含tiktokglobal\_int的点击和展示数据。</li></ul> |
 | <span id="x-ads-formerly-twitter"></span>X Ads（前身为Twitter） | <ul><li>在某些情况下，X Ads不允许AppsFlyer呈现原始数据，这时原始数据报告中不会包含相关的事件。</li><li>来自X Ads的点击和展示不包含在原始数据报告中</li></ul> |
+
+<div id="delivery-of-raw-data" />
 
 <div id="raw-data-context" />
 

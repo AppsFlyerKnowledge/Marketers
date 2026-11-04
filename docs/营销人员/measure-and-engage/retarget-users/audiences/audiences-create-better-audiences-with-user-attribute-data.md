@@ -143,7 +143,7 @@ x-zendesk:
 | --- | --- |
 | <span id="search-and-filter"></span>搜索和筛选 | 可用维度包括用户特征名称、应用名称和用户特征所在层级（应用层级/账户层级）。 |
 | <span id="sort-by"></span>排序方式 | 点击列标题即可调整表格内各行的排序。 |
-| <span id="zd-import-data"></span><span id="import-data"></span>导入数据 | <ul><li>[通过CSV文件导入数据](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[通过API导入数据](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
+| <span id="zd-import-data"></span><span id="note"></span><span id="import-data"></span>导入数据 | <ul><li>[通过CSV文件导入数据](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[通过API导入数据](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
 | <span id="change-api-import-key"></span>更改API导入密钥 | **API导入密钥的更改方式如下：**<ol><li>点击**导入数据**。</li><li>选择**API**。</li><li>点击**刷新导入密钥**。</li></ol>**请注意：** 密钥更新完毕后，请务必对嵌有密钥的脚本做相应的更新。 |
 
 </Accordion>

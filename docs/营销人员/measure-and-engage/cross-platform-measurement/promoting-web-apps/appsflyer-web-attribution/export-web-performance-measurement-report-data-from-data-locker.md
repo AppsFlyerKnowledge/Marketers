@@ -28,6 +28,8 @@ x-zendesk:
 >
 > 您需要订阅Data Locker，才能访问其中的网页端效果衡量报表。
 
+<div id="select-a-web-performance-measurement-report" />
+
 <div id="about-the-web-performance-measurement-reports" />
 
 ## 关于网页端效果衡量报表
@@ -468,6 +470,8 @@ ORDER BY cohort_date, cohort_users DESC
 </Accordion>
 
 </Accordion>
+
+<div id="see-also" />
 
 <div id="traits-and-limitations" />
 

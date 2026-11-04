@@ -109,6 +109,8 @@ AppsFlyer支持与TikTok Web Ads（`tiktokweb_int`）的集成，用于网站应
 8. 【可选】点击**添加条件**图标，设置事件的<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#带条件的应用内事件回传">映射条件</Anchor>。
 9. 点击**保存对接**。
 
+<div id="note-2" />
+
 <div id="note-1" />
 
 > 📘 **注意**
@@ -177,6 +179,8 @@ AppsFlyer支持与TikTok Web Ads（`tiktokweb_int`）的集成，用于网站应
 
 
 </Accordion>
+
+<div id="measure-cost-clicks-and-impressions" />
 
 <div id="view-web-attribution-data" />
 

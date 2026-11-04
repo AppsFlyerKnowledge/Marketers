@@ -118,6 +118,12 @@ x-zendesk:
 | --- | --- | --- |
 | ROI360以美元为计费单位 | 通过ROI360付费功能记录到的广告成本、应用内广告收入和应用内购买收入（包括订阅），以美元为单位进行计费。ROI360每记录到1美元（$1）即视为一个计费单位。 | <Anchor target="_blank" href="/marketers/zh/docs/roi360-guide-cost-and-revenue-data">ROI360—成本与收入数据</Anchor> |
 
+<div id="understand-billing-for-extended-platform-apps" />
+
+<div id="what-isnt-billed" />
+
+<div id="what-is-billed" />
+
 <div id="roi360-dollar-units" />
 
 #### ROI360以美元为计费单位
@@ -314,6 +320,26 @@ ROI360付费功能可帮助您衡量广告营销投入的回报率。付费功�
 > 📘 **注意**
 >
 > 仅当您订购的套餐需要您提供支付信息时（即除**Welcome或Zero**之外的套餐），才能看到[支付和账单](/docs/account-management-plans-payments-and-billing#appsflyer-plans)选项卡。
+
+<div id="other-payment-methods" />
+
+<div id="credit-card" />
+
+<div id="ach-for-us-customers-recurring-or-paynow" />
+
+<div id="managing-payment-methods" />
+
+<div id="set-up" />
+
+<div id="paynow-manual-invoice-payment" />
+
+<div id="note-6" />
+
+<div id="hands-free-recurring-payments" />
+
+<div id="payment-types" />
+
+<div id="recommended-for-us-customers-ach-automated-clearing-house" />
 
 <div id="payment-methods-easy--secure-invoicing" />
 

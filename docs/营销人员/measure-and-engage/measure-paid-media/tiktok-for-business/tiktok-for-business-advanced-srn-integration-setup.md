@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** TikTok for Business（tiktokglobal\_int）是一个高级自归因平台（<Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns">SRN</Anchor>），能让广告主在AppsFlyer中根据用户点击和浏览数据进行移动端归因。这些流量包括TikTok应用和非移动端带来的应用激活。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 2023年1月30日，我们上线了新的**TikTok for Business高级SRN**对接`tiktokglobal_int`，**TikTok for Business的历史对接**`bytedanceglobal_int`将逐步下线，到2024年3月20日正式停用。此次变更的过渡事宜将由TikTok负责处理，他们会通知所有相关客户，引导其删除历史对接。<strong>为了避免出现数据丢失问题，请确保新对接和历史对接在过渡期间都处于启用状态。</strong>详情请见相关的<Anchor target="_blank" href="/marketers/zh/docs/bulletin-tiktok-for-business-advanced-srn">公告文档</Anchor>。
@@ -52,6 +54,8 @@ x-zendesk:
 
 配置窗口包括以下选项卡：渠道对接、归因链接、成本、广告收入和授权。TikTok for Business对接页面中的**归因链接**选项卡不可用，其他选项卡为可选配置。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 部分设置区分iOS和安卓设备。
@@ -70,6 +74,10 @@ x-zendesk:
 
 在配置对接之前，必须先打开**启用该渠道**开关。有关<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation#渠道对接的启用方式">启用和停用合作伙伴</Anchor>的更多信息，请参阅对接。
 
+<div id="advanced-matching-data-sharing" />
+
+<div id="note-2" />
+
 <div id="advanced-data-sharing" />
 
 #### 高级隐私保护
@@ -86,6 +94,8 @@ x-zendesk:
 >
 > * 启用对接（`tiktokglobal_int`）时，**高级隐私保护**开关默认处于打开状态。
 > * 从历史对接（`bytedanceglobal_int`）迁移到新对接（`tiktokglobal_int`）时**高级隐私保护**开关默认打开，与迁移前的启用状态无关。
+
+<div id="note-3" />
 
 <div id="general-settings" />
 
@@ -108,6 +118,8 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 > * 迁移到新对接（`tiktokglobal_int`）时，系统会自动使用历史对接（`bytedanceglobal_int`）中的值来填充对应字段。
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">详情请见iOS 14中与TikTok App ID相关的注意事项。</Anchor>
 
+<div id="note-4" />
+
 <div id="default-postbacks" />
 
 #### 默认回传
@@ -121,6 +133,10 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 >
 > * 仅适用于iOS应用：仅适用于iOS应用：通过回传和<Anchor target="_blank" href="/marketers/zh/docs/about-raw-data-identifier-restrictions">报告</Anchor>与共享渠道数据时，您对这些数据的控制范围取决于**高级隐私模式（用于iOS14.5+）**[的启用状态](#高级隐私保护)：
 > * 从历史对接（`bytedanceglobal_int`）迁移到新对接（`tiktokglobal_int`）时激活回传默认设置为**仅限该合作渠道**，不受迁移前的设置影响。
+
+<div id="note-6" />
+
+<div id="note-5" />
 
 <div id="install-attribution" />
 
@@ -148,6 +164,8 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 >     广告系列上报为“restricted”（受限）这表示该数据在GCD中不可用。汇总数据报告中仍会显示浏览型转化。
 > * 从历史对接（`bytedanceglobal_int`）迁移到新对接（`tiktokglobal_int`）时，回溯窗口（点击型和浏览型）自动设为**默认值**，不受迁移前的设置影响。您后续可以更新这些设置。
 
+<div id="note-7" />
+
 <div id="reinstall-attribution" />
 
 #### 重装激活归因
@@ -162,6 +180,10 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 >
 > * 无需为重装激活设置单独的回溯窗口。重装激活归因的点击和浏览状态以及回溯窗口与您的激活归因设置相同。
 > * 启用后，符合条件的重装激活回传会发送到TikTok。
+
+<div id="warning" />
+
+<div id="note-8" />
 
 <div id="re-engagement-attribution" />
 
@@ -184,6 +206,8 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
 > 从历史对接（`bytedanceglobal_int`）迁移到新对接（`tiktokglobal_int`）时**再互动**开关**默认关闭**，与迁移前的启用状态无关。如果您的历史对接中包含<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">再营销广告</Anchor>，`为了确保过渡前后的连贯一致，请务必在新对接中打开再互动开关。`
 
 进一步了解再互动归因的<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide#reengagement-rules-and-windows">规则和窗口期</Anchor>。
+
+<div id="note-9" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -220,6 +244,10 @@ TikTok App ID是在TikTok Ads Manager（TikTok广告管理平台）中生成的�
    1. 点击页面左上角渠道名称下方的应用名称，打开应用列表。
    2. 在下拉菜单中选择一个其他应用。
    3. 为选定应用完成对接设置。
+
+<div id="note-11" />
+
+<div id="note-10" />
 
 > 📘 **注意**
 >
@@ -334,6 +362,10 @@ AppsFlyer与TikTok的集成使得对应用活动的全面测量成为可能—�
 
 帮助广告主代为投放的代理商可以启用TikTok for Business的对接，并对其投放的广告进行归因。但是代理商在使用该对接时有一定的局限性。
 
+<div id="send-complex-in-app-events-to-tiktok" />
+
+<div id="important" />
+
 <div id="agency-limitations" />
 
 ### 代理限制
@@ -376,6 +408,8 @@ Smart Plus 是 TikTok 推出的一种新型广告系列，能让广告主在同�
 2. 广告组
 3. Ad
 4. 素材
+
+<div id="note-12" />
 
 <div id="how-smart-plus-data-is-reported-in-appsflyer" />
 

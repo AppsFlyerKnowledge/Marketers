@@ -52,6 +52,8 @@ Meta ads会在深度链接中附加归因数据以及AEM `campaign_ids`campaign\
 * 根据Meta ads提供的深度链接信息完成归因
 * 在原始数据报告和汇总数据报告中写入相关深度链接的归因数据
 
+<div id="note" />
+
 <div id="attribution-data-parameters" />
 
 ### 归因数据参数
@@ -234,6 +236,8 @@ Meta 接受有限数量缺失或为零的 IDFA 事件。如果您的应用超出
 1. 前往 Meta 的事件管理器并按照屏幕上的指导操作。
 2. 选择受影响的应用事件。
 3. 将 **MMP 流量** 设置为首选连接方式。
+
+<div id="note-3" />
 
 <div id="need-help" />
 

@@ -76,6 +76,12 @@ AppsFlyer与ChatGPT Ads（OpenAI）的对接可帮助您衡量并归因由ChatGP
 **重要提示：** 使用ChatGPT Ads期间，请始终保持**开启**此开关。关闭对接后，广告系列的归因和事件回传都会停止。  
 详细了解<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">合作伙伴激活</Anchor>。
 
+<div id="advanced-matching-data-sharing" />
+
+<div id="note" />
+
+<div id="advanced-privacy" />
+
 <div id="general-settings" />
 
 #### 常规设置
@@ -161,6 +167,8 @@ ChatGPT Ads（OpenAI）支持归因链接。
 * 如果您使用 OneLink，可能会收到较低的质量评分，这会影响广告投放，因为 ChatGPT Ads 的广告审核流程包括抓取最终 URL。
 
 **推荐：** 使用落地页作为广告目标页面，并使用 <Anchor target="_blank" href="/marketers/zh/docs/onelink-smart-script-overview">Smart Script</Anchor> 或 <Anchor target="_blank" href="/marketers/zh/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banner</Anchor> 将用户引导至 App Store 或 Google Play。
+
+<div id="important" />
 
 <div id="select-parameters" />
 

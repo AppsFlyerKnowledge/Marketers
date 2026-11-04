@@ -34,6 +34,12 @@ Partner Marketplace为您呈现已与AppsFlyer对接的渠道，其中囊括了�
 >
 > Partner Marketplace现已对广告主开放，但尚不支持代理和渠道访问。
 
+<div id="what-you-can-do-from-the-active-integrations-tab" />
+
+<div id="note" />
+
+<div id="manage-active-integrations" />
+
 <div id="quick-start" />
 
 ## 快速入门
@@ -67,6 +73,8 @@ Partner Marketplace为您呈现已与AppsFlyer对接的渠道，其中囊括了�
 * [**数据净室（DCR）合作平台：**](#dcr合作平台)提供第一方和第三方数据的技术合作平台，您可以利用这些平台扩充您的数据并优化投放效果。
 * **受同类广告主欢迎的渠道：** 在您的主要垂类中活跃对接数量最多的渠道。
 * **上次浏览的渠道：** 您最近在Marketplace平台上浏览过的渠道。
+
+<div id="filter-the-list-of-partners" />
 
 <div id="partner-cards" />
 
@@ -124,6 +132,14 @@ DCR合作平台是指提供第一方和第三方数据的技术平台。<Anchor 
 * 渠道logo左侧的绿色和橘色圆点用于表示该渠道对接的<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation#integration-activity-indication">活跃</Anchor>程度。
 * 搜索并访问相关渠道后，最近访问的五个渠道会出现在下一次搜索结果中。
 * 您还可以在[您的活跃对接](/docs/partner-integrations#活跃渠道)中搜索。
+
+<div id="note-1" />
+
+<div id="contact-the-partner" />
+
+<div id="what-you-can-see-on-the-partner-page" />
+
+<div id="what-you-can-do-from-the-partner-page" />
 
 <div id="learn-about-partners" />
 
@@ -191,6 +207,8 @@ AppsFlyer可以代您向相关渠道发送介绍函，帮助您与其取得联�
 
 默认图表显示该渠道较为活跃的前10个垂类和国家，覆盖所有平台。您可以使用右上角的筛选条件更改该默认设置，最多可选择10个其他的国家或垂类，以及任何可用平台。
 
+<div id="note-2" />
+
 <div id="integrate-with-a-new-partner" />
 
 ## 对接新渠道
@@ -210,11 +228,15 @@ AppsFlyer可以代您向相关渠道发送介绍函，帮助您与其取得联�
 
 对接配置完毕后，该渠道就会变成<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation#active-partners">活跃</Anchor>对接渠道。您可以点击**分板块显示活跃渠道**，仅查看活跃对接渠道。
 
+<div id="partner-verification" />
+
 <div id="invite-new-partners-to-appsflyer" />
 
 ### 在AppsFlyer中添加新的对接渠道
 
 如果您使用的广告平台还未与AppsFlyer对接，您可以向他们发送邀请链接。
+
+<div id="note-3" />
 
 <div id="validation-period-for-new-integrations" />
 

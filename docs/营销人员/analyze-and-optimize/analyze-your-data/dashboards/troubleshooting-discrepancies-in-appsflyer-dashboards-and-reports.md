@@ -145,6 +145,10 @@ x-zendesk:
 3. 下载应用内事件的原始数据报告。
 4. 使用**激活时间**字段来筛选数据，剔除起始日期之前发生的激活（解决差异1）。
 
+<div id="compare-inapp-event-raw-data-with-the-activity-view" />
+
+<div id="reconcile-raw-data-with-activity-event-metrics" />
+
 <div id="to-retrieve-activity-data-out-of-ltv-data" />
 
 #### 从LTV数据中选取活跃数据：

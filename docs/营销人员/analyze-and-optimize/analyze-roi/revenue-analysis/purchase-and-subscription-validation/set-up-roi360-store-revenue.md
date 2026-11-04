@@ -229,6 +229,12 @@ x-zendesk:
 
 </Accordion>
 
+<div id="note-1" />
+
+<div id="option-2---your-endpoint-as-the-primary-endpoint" />
+
+<div id="option-1-recommended---appsflyer-as-the-primary-endpoint" />
+
 <div id="step-2-ios-set-up-app-store-server-notifications" />
 
 ## 步骤2（iOS）：设置App Store服务器通知

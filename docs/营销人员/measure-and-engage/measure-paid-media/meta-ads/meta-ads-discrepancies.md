@@ -136,6 +136,8 @@ Meta ads会上报跨设备归因，因此有时广告所定向的平台（iOS/�
 > GreatApp的UA经理Jeff创建了一个名为SPNA的广告系列，定向投放到生活在北美的西班牙语用户。为了确保这一点，Jeff定义了一个验证规则，该规则是仅接受来自加拿大和美国的用户。
 > 这时，某个位于西班牙的Meta ads用户点击了该广告并激活应用，Meta ads就会将该次激活归因给自己，而AppsFlyer则会因为该激活不符合验证规则而将其拦截下来。
 
+<div id="meta-probabilistic-modeling-aem-discrepancies-in-ios-apps" />
+
 <div id="sdk-related-discrepancies" />
 
 ## SDK相关的数据差异

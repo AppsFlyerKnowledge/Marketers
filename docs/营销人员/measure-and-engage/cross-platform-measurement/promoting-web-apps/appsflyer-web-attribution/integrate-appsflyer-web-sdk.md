@@ -24,6 +24,12 @@ x-zendesk:
 ---
 > **概览：** 在网站中安装AppsFlyer Web SDK（也称为Pixel），向AppsFlyer上报用户访问和事件，并设置长期有效的客户用户ID（CUID），统一跨平台用户旅程。
 
+<div id="note" />
+
+<div id="integrate-the-sdk-with-an-ai-coding-agent" />
+
+<div id="integrate-the-sdk-manually" />
+
 <div id="overview" />
 
 ## 概览
@@ -55,6 +61,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 
 1. 在AppsFlyer侧边菜单中，打开**互动**>**Web to App**>**智能横幅**。
 2. 复制所需的智能横幅密钥。
+
+<div id="warning" />
 
 <div id="2-select-a-code-snippet" />
 
@@ -211,6 +219,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 
 </Accordion>
 
+<div id="note-1" />
+
 <div id="3-deploy-the-snippet" />
 
 ## 3部署代码片段
@@ -329,6 +339,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
 
 </Accordion>
 
+<div id="note-2" />
+
 <div id="4-make-sure-the-sdk-is-working" />
 
 ## 2确认SDK正常运行
@@ -353,6 +365,8 @@ Web SDK可记录访客与网站的互动情况，并将相关信息发送至Apps
    * 状态码为200。
 8. 确认`site_id`与AppsFlyer顶部菜单中**我的应用**下的`WEB_SDK_KEY`一致。
 9. 确认SDK只加载一次。多次加载SDK可能会导致SDK停止运行。
+
+<div id="important" />
 
 <div id="5-set-and-record-events" />
 
@@ -459,6 +473,8 @@ window.onload = function(){
 </body>
 </html>
 ```
+
+<div id="important-1" />
 
 <div id="2-configure-the-gtm-tag" />
 
@@ -787,6 +803,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 <Accordion title="选择是否发送事件">
 
 您可以通过以下两种方式控制效果衡量：
+
+<div id="note-3" />
 
 <div id="sdk-initial-state-setting-in-the-snippet" />
 

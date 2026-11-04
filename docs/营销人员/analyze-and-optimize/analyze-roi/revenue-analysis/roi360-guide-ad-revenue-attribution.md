@@ -64,6 +64,10 @@ x-zendesk:
 
 </Accordion>
 
+<div id="note-1" />
+
+<div id="note" />
+
 <div id="implementation" />
 
 ## 启用方式
@@ -169,6 +173,8 @@ x-zendesk:
 | --- | --- | --- |
 | 特有变现事件 | <ul><li>在展示广告时触发应用内事件</li><li>这样就可以记录到准确的用户行为次数，从而得出更准确的eRPA</li><li>您还可以为每个变现渠道分别配置应用内事件，这样就能按平台细分收入，从而进一步打磨数据<br />各种方式的对比请见下文表格。</li></ul> | <ul><li>需要开发人员修改应用</li><li>可以在面板中按变现渠道细分收入</li></ul> |
 | af\_app\_opened event | <ul><li>默认情况下，af\_app\_opened事件由AppsFlyer SDK发送</li><li>每次用户打开应用时触发该事件</li></ul> | <ul><li>无需修改应用</li><li>启用快捷</li><li>每个session只能对应到一个应用，否则eRPA值会严重失真</li><li>无法按变现渠道细分收入</li><li>该事件仅说明用户打开了应用，但不表示用户愿意观看广告</li></ul> |
+
+<div id="note-2" />
 
 <div id="comparison-of-in-app-event-methods" />
 

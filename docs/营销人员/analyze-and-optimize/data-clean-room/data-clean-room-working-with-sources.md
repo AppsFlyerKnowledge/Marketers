@@ -39,6 +39,8 @@ x-zendesk:
 * 定期[更新自定义来源数据](/docs/data-clean-room-working-with-sources#更新数据以触发报告处理流程)，触发数据处理流程以生成报告
 * [现有数据源的使用方式](/docs/data-clean-room-working-with-sources#现有数据源的使用方式)
 
+<div id="important" />
+
 > 🚧 **前期准备**
 >
 > 创建自定义数据源之前，请先完成以下工作：
@@ -48,7 +50,7 @@ x-zendesk:
 >   * 如果您前期未设置数据连接，则会在创建自定义数据源时收到弹窗提示，指引您设置连接。
 
 
-<span id="source-requirements"></span><span id="source-format"></span>自定义数据源必须具备以下条件，否则在创建数据源和处理数据、生成报告的过程中可能会出现错误。
+<span id="data-format"></span><span id="source-requirements"></span><span id="source-format"></span>自定义数据源必须具备以下条件，否则在创建数据源和处理数据、生成报告的过程中可能会出现错误。
 
 自定义来源的数据必须符合以下要求：
 
@@ -157,6 +159,8 @@ x-zendesk:
 
 创建数据连接时供您完成上述选择的列表包含您指定的Snowflake账户中可用的共享位置（share）、模式（schema）和表格。
 
+<div id="important-1" />
+
 <div id="source-locations-in-cloud-storage-buckets" />
 
 #### 云端存储桶中的数据源位置
@@ -192,6 +196,8 @@ Amazon S3或GCS中的数据源位置信息包括数据连接中指定的云存�
   * dimension 维度：您对应用用户分类时使用的特征信息（如地理位置、激活日期、广告系列等）。/span>/strong>
   * 指标指标：有关某应用用户的数值型数据（如收入、应用打开次数、LTV等）
     * 标识为“指标”的字段仅可包含数值。
+
+<div id="important-2" />
 
 <div id="loading-source-fields" />
 
@@ -253,6 +259,8 @@ Amazon S3或GCS中的数据源位置信息包括数据连接中指定的云存�
 
 </Tab>
 </Tabs>
+
+<div id="note" />
 
 <div id="categorize-fields" />
 
@@ -352,6 +360,8 @@ AppsFlyer会反复查找**当天和2天前的**数据源文件更新版本，且
 <Image alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
 
 </Accordion>
+
+<div id="important-3" />
 
 <div id="working-with-existing-sources" />
 

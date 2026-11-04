@@ -48,6 +48,12 @@ User\_windows.jpg
    如果您的游戏支持多个平台，可以在落地页中提供跳转到各个平台的链接，比如Xbox、Microsoft商店以及Steam页面等。
 4. 游戏激活游戏激活：用户激活游戏时即会触发归因，并开始记录应用内事件和应用打开（session）。
 
+<div id="sample-attribution-links" />
+
+<div id="important" />
+
+<div id="measure-ads-that-run-on-playstation" />
+
 <div id="integration-procedures" />
 
 ## 对接流程

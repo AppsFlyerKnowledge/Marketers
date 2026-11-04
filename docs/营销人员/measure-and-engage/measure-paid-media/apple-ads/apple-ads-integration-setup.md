@@ -55,6 +55,8 @@ x-zendesk:
 
 您可以在**活跃对接** 页面完成设置，但在添加新合作伙伴前，请先前往<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations">Partner Marketplace</Anchor>。请按照下文说明，在各个选项卡中完成相关的对接配置。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 设置对接前，请务必先<Anchor target="_blank" href="/marketers/zh/docs/partner-integrations#联系相关渠道">联系相关渠道</Anchor>并在其平台上开设账户。
@@ -80,6 +82,8 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 * 广告系列、广告组、国家/地区和关键词维度的成本数据。详情请见<Anchor target="_blank" href="/marketers/zh/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">广告平台成本对接表</Anchor>，其中详细说明了适用维度、指标和功能。  
   **请注意：** 您需要购买ROI360才能获得成本数据。
 * 点击、展示数据以及扩充数据——关键词、广告系列名称以及广告组。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -214,6 +218,8 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 4. 从侧边菜单中，选择 协作 > 当一个代理与 Apple 搜索广告营销合作伙伴合作时， 重装激活归因
 5. 点击**保存**。
 
+<div id="note-3" />
+
 <div id="agency-actions" />
 
 #### **代理需要完成的操作**
@@ -228,6 +234,8 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 > 📘 **注意**
 >
 > Apple 搜索广告配置页面和营销合作伙伴 之间。 配置页面。
+
+<div id="note-4" />
 
 <div id="cost-clicks-and-impressions-data" />
 
@@ -262,6 +270,10 @@ Apple Search Ads是一个自归因渠道（即SRN），它是通过 API与AppsFl
 4. 点击**保存对接**。
 
 </Accordion>
+
+<div id="before-september-1-2026" />
+
+<div id="after-september-1-2026" />
 
 <div id="additional-information" />
 
@@ -309,6 +321,20 @@ ASA的归因不依赖IDFA，而是通过来自设备的token完成（确定性�
 **再营销停用时**
 
 [![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+
+<div id="20260901" />
+
+<div id="h_01M0YZYCC5S0E3HA296KAA0SDZ" />
+
+<div id="missing-conversion-payload-for-gender-and-age-targeted-users" />
+
+<div id="preregistration-click-and-impression-lookback-window-discrepancy" />
+
+<div id="see-also" />
+
+<div id="before-september-1-2026-1" />
+
+<div id="after-september-1-2026-1" />
 
 <div id="additional-reasons-for-discrepancies" />
 

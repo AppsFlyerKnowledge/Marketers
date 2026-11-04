@@ -29,6 +29,8 @@ x-zendesk:
 
 要洞察应用用户的价值，就必须同时分析应用的激活率和卸载率。您可以通过卸载指标衡量应用的使用情况，并了解用户流失的节点和原因。
 
+<div id="note" />
+
 <div id="how-does-it-work" />
 
 ### 原理
@@ -54,6 +56,8 @@ x-zendesk:
 
 您可以对比各种流量来源（媒体渠道、广告系列、广告素材及地理位置）的用户质量，从而识别出卸载率最低的那个媒体渠道，并将预算转移到该渠道。
 
+<div id="note-1" />
+
 > 📄 **示例**
 >
 > 假设您负责推广PlayIt Gaming International的游戏应用，并分别在两个媒体渠道（渠道A和渠道B）上投放广告，推广新上线的应用。
@@ -73,6 +77,10 @@ x-zendesk:
 <Accordion title="与广告平台共享卸载数据，推动投放优化">
 
 您可以将卸载事件回传到您的投放渠道，以推动拉新投放的优化。只需[将卸载事件af\_uninstall映射到您的合作渠道](/docs/measure-uninstalls#卸载事件映射)，即可发送相关数据。映射完成后，每次AF判定有用户卸载应用时，即会向该渠道发送卸载事件。广告平台可以通过该信息判断哪些用户止步于浅层互动，并将资源集中到深度用户的拉新。
+
+<div id="note-3" />
+
+<div id="note-2" />
 
 > 📄 **示例**
 >
@@ -149,6 +157,8 @@ x-zendesk:
 
 如需启用卸载衡量，您的移动端开发人员需要在应用中写入一个推送通知响应机制。具体的启用方式取决于操作系统。
 
+<div id="note-4" />
+
 <div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### 将Firebase Cloud Messaging连接到AppsFlyer（安卓）
@@ -204,6 +214,8 @@ x-zendesk:
 
 <Accordion title="【已弃用】旧版HTTP">
 
+<div id="important" />
+
 > 🚧 **重要提示！**
 >
 > Firebase已于2023年6月20日弃用旧版HTTP API，并于2024年6月21日彻底移除该API。如果您还在使用该旧版API，强烈建议您[改用HTTP v1 API](/docs/measure-uninstalls#http-v1)。<Anchor target="_blank" href="https://firebase.google.com/docs/cloud-messaging/http-server-ref">详情请见此处说明。</Anchor>
@@ -223,6 +235,8 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 </Accordion>
 
 <div id="configure-uninstall-measurement-in-appsflyer" />
+
+<div id="note-5" />
 
 ### 在AppsFlyer后台配置卸载衡量
 
@@ -263,6 +277,8 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 
 </Tab>
 </Tabs>
+
+<div id="note-6" />
 
 <div id="testing-uninstall-measurement" />
 

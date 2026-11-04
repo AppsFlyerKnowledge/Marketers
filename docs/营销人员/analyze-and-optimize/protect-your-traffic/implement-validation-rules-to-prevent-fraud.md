@@ -88,6 +88,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="use-categorized-dimensions" />
+
 <div id="rule-builder" />
 
 ## 规则配置界面
@@ -139,6 +141,8 @@ x-zendesk:
 每一条规则下都可以添加多个条件和条件组合。
 
 下表列出了设置条件时可用的维度、运算符和值。
+
+<div id="note" />
 
 <div id="bulk-upload" />
 
@@ -577,7 +581,11 @@ x-zendesk:
   * 1.0.01
   * 2.0.01
 
+<div id="how-appsflyer-determines-the-latest-version" />
+
 <div id="understand-how-the-condition-works-with-multiple-apps" />
+
+<div id="example-latest-version-calculation" />
 
 ##### **了解条件如何与多个应用一起工作**
 

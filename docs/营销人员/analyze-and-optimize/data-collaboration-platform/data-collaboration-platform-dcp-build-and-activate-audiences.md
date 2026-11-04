@@ -81,6 +81,8 @@ x-zendesk:
    <Image alt="新受众可视化受众构建器.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. 继续进行以下**受众构建器**的逐步指导：
 
+<div id="note-1" />
+
 <div id="step-1-details-and-sources" />
 
 #### 第1步：详细信息和来源
@@ -117,6 +119,12 @@ x-zendesk:
      小于或等于，介于，过去 "X" 天（也可以包括当前一天）
    * **文本属性** 可以使用以下运算符进行过滤：  
      等于或不等于
+
+     <div id="working-with-transactional-data-sources" />
+
+     <div id="note-3" />
+
+     <div id="summary-right-side-preview-pane" />
 
      <div id="note-2" />
 
@@ -163,6 +171,8 @@ x-zendesk:
 
 命名受众，然后点击 **下一步**。
 
+<div id="note-5" />
+
 <div id="build-query" />
 
 #### 构建查询
@@ -172,6 +182,18 @@ x-zendesk:
 3. 点击 **测试** 并查看查询语句下方显示的查询结果（受众样本）。
 4. 点击 **继续** 然后 **下一步** 以继续进行 **受众构建器** 的下一步演练，或 **保存为草稿** 并稍后继续。
 5. 继续 [发送给观众](#发送受众以进行激活)。
+
+<div id="nonaggregated-transactional-query" />
+
+<div id="transactional-source-joined-directly-to-another-transactional-source" />
+
+<div id="aggregated-transactional-output-in-downstream-joins" />
+
+<div id="transactional-source-joined-to-a-profileuserlevel-source" />
+
+<div id="single-transactional-source-with-aggregation" />
+
+<div id="transactional-data-in-sql-queries" />
 
 <div id="the-sql-audience-builder" />
 
@@ -197,6 +219,8 @@ x-zendesk:
 * [**将受众连接到媒体合作伙伴**](#将人群包连接到渠道) - 媒体合作伙伴平台包括 Meta 广告、谷歌广告等。在您想要进行付费活动、再营销或相似受众扩展时，将您的受众连接到媒体合作伙伴。
 * [**将受众导出到您的云服务**](#将受众导出到云服务) - 云存储通过 AppsFlyer 数据锁定器进行管理。当您需要在 BI 模型、CDP 或内部丰富管道中使用文件时，将您的受众连接到云服务。
 
+<div id="connect-an-audience-to-media-partners" />
+
 <div id="note-6" />
 
 > 📘 **注意**
@@ -207,6 +231,10 @@ x-zendesk:
 #### 将人群包连接到渠道
 
 直接在您首选的媒体合作伙伴平台上发送受众以进行激活，例如 Meta 广告和 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/10010286?hl=en">Google Ads</Anchor>。系统会转发用户 ID 的 CSV 文件，如果合作伙伴要求，自动进行哈希处理。
+
+<div id="export-to-cloud-storage" />
+
+<div id="note-8" />
 
 <div id="note-7" />
 
@@ -244,6 +272,10 @@ x-zendesk:
    将受众导出到云端
 2. 点击 **选择连接** 从列表中选择现有的云连接以发送受众，或点击 **+ 新连接** 来 <Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-marketers#set-up-data-locker">在数据存储中创建新连接</Anchor>。请查看这里的操作方法。
 3. 点击**保存并发送**。您的受众正在发送到所选的云服务。此过程可能需要最多 15 分钟才能完成。
+
+<div id="view-audience-statuses" />
+
+<div id="access-audience-management" />
 
 <div id="manage-audiences" />
 

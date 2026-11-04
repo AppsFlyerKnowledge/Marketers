@@ -142,6 +142,8 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 * 增强报告：创建符合您的报告需求的自定义仪表板视图。
 * 做出更明智的决定：在 KPI 中添加特定业务背景，从而更容易识别趋势、模式和优化机会。
 
+<div id="pre-built-retargeting-campaigns-dimension" />
+
 <div id="suggested-custom-dimensions" />
 
 #### 建议的自定义尺寸

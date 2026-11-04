@@ -132,6 +132,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="topup-success-top_up_success" />
+
 <div id="recommended-structures-for-custom-events" />
 
 ## 自定义事件的推荐结构

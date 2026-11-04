@@ -119,6 +119,8 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
    * **所有媒体渠道，包括自然流量**：回传归因到任何渠道以及自然量的事件。
 7. 在**包括**列中，选择是否将事件与其收入值一起发送。请见<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#回传内容">回传中包含的数据</Anchor>。
 
+   <div id="note-2" />
+
    <div id="note-1" />
 
    > 📘 **注意**
@@ -274,6 +276,8 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 
 </Accordion>
 
+<div id="note-6" />
+
 <div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## 创建带有OneLink智能脚本的落地页
@@ -325,6 +329,8 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
      * 2.8.0及以下版本：必须在**智能脚本**页面的**URL参数映射**部分手动配置`fbclid`参数的映射。
        1. 在**映射对象**一栏中选择**自定义参数**。
        2. 在**出链参数**和**入链参数**字段中输入**fbclid**。
+
+     <div id="note-7" />
 
      > 📘 **注意**
      >

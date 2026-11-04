@@ -43,6 +43,8 @@ SDK对接完毕后，建议您测试该SDK是否能正常向AppsFlyer服务器�
 
 CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试ctv)。
 
+<div id="note" />
+
 <div id="testing-using-the-sdk-integration-tests-page" />
 
 ## 使用SDK对接测试页面进行测试
@@ -59,6 +61,8 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 2. <Anchor target="_blank" href="/marketers/zh/docs/registering-test-devices">将该设备注册为测试机。</Anchor>
 
 <div id="perform-the-integration-tests" />
+
+<div id="note-1" />
 
 ### 进行对接测试
 
@@ -141,6 +145,10 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 5. 点击**继续**，然后按照向导工具的提示，完成各个步骤的操作。
 
 </Accordion>
+
+<div id="note-3" />
+
+<div id="note-2" />
 
 <div id="testing-using-attribution-links" />
 
@@ -241,6 +249,8 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
    [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
 
+<div id="tip" />
+
 > 👍 **提示**
 >
 > 您还可以使用以下方法来验证测试结果：
@@ -284,6 +294,8 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 详情请见<Anchor target="_blank" href="/marketers/zh/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">OneLink链接测试指南</Anchor>。
 
 </Accordion>
+
+<div id="note-4" />
 
 <div id="testing-retargeting-using-attribution-links" />
 
@@ -367,6 +379,8 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
    [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
 
+<div id="tip-1" />
+
 > 👍 **提示**
 >
 > 您还可以使用以下方法来验证测试结果：
@@ -428,6 +442,10 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 该应用的面板上会显示一个新增自然激活。自然激活的数据更新最多会有30分钟的延时，请耐心等待。
 
 [![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+
+<div id="traits-and-limitations" />
+
+<div id="note-5" />
 
 <div id="testing-ctv" />
 

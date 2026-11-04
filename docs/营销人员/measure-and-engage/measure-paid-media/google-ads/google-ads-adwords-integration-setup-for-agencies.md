@@ -32,7 +32,7 @@ x-zendesk:
 如需了解详情，请点击<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-advertisers">此处</Anchor>。
 
 
-<span id="enabling-agency-attribution-of-google-ads"></span>AppsFlyer支持Google Ads的代理配置，但广告主和代理必须各自有单独的Google Ads帐户，这样AppsFlyer才能对数据进行正确的归因。
+<span id="agency-step-3-mapping-your-inapp-events"></span><span id="agency-step-2-setting-up-google-ads-on-appsflyer"></span><span id="agency-step-1-accepting-the-link-id"></span><span id="advertiser-prestep-enabling-the-agency-access-to-google-ads"></span><span id="setting-up-google-ads-attribution-for-agencies"></span><span id="enabling-agency-attribution-of-google-ads"></span>AppsFlyer支持Google Ads的代理配置，但广告主和代理必须各自有单独的Google Ads帐户，这样AppsFlyer才能对数据进行正确的归因。
 
 
 <Accordion title="视频教程">

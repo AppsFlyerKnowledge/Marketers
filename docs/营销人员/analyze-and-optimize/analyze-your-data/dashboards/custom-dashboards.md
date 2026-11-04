@@ -38,6 +38,12 @@ x-zendesk:
 |  |  |
 | 可用操作 | <ul><li>编辑</li><li>复制</li><li>删除</li><li>导出CSV文件</li></ul> |
 
+<div id="managing-widgets" />
+
+<div id="add-a-custom-dashboard" />
+
+<div id="managing-dashboards" />
+
 <div id="procedures" />
 
 ## 配置流程

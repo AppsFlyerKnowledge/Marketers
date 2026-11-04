@@ -47,6 +47,10 @@ AF的每种报告类型都设有一个每日可拉取的报告数量限额。具
 | Cohort API | 每个帐户每分钟60次 |
 | SKAN汇总报告 | 每个帐户每分钟60次 |
 
+<div id="note" />
+
+<div id="pull-api-raw-data-daily-quota" />
+
 <div id="raw-data" />
 
 ### 原始数据

@@ -218,6 +218,8 @@ AppsFlyer 使用以下点击 ID 映射对访问进行归因：
 | `googleads.g.doubleclick.net` | googleadwords\_int |
 | `tpc.googlesyndication.com` | dv360\_int |
 
+<div id="ai-answer-engine-referrer-mapping" />
+
 <div id="search-engine-mapping" />
 
 #### **搜索引擎映射**

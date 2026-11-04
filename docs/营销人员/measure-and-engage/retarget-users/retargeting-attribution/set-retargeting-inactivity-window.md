@@ -152,6 +152,8 @@ x-zendesk:
 | Google Ads | <ul><li>无法启用/关闭再营销功能</li><li>代理可以配置不活跃时长阈值，但需要先获得必要权限</li></ul> |
 | Meta ads/X Ads/Snapchat | 代理无法访问再营销及**不活跃时长阈值**设置 |
 
+<div id="traits-and-limitations" />
+
 <div id="non-srn" />
 
 #### 非SRN

@@ -64,6 +64,8 @@ x-zendesk:
   * 如果AppsFlyer决定更改任何事件的名称或参数，您的设置是可以向下兼容的。
 * **自定义型：** 这类事件名称和参数是由您自行根据应用中出现的特定用户场景来定义的。您可以使用任何自定义的事件名称或参数名称字符串，但请注意自定义事件是需要您的开发人员去维护的。详情请见相关[建议](/docs/in-app-events-overview#tips)和[限制](/docs/in-app-events-overview#limitations)。
 
+<div id="note" />
+
 <div id="revenue-in-in-app-events" />
 
 ## 应用内事件中的收入
