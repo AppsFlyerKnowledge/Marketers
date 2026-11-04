@@ -160,6 +160,8 @@ Defina os níveis de acesso do usuário para fontes de mídia e geos. Você pode
 
 Por padrão, a configuração **todos** permite acesso a todas as fontes de mídia dentro da conta. Isso inclui aquelas que podem ser adicionadas no futuro. Selecionar fontes de mídia específicas não inclui acesso a futuras fontes de mídia.
 
+<div id="custom_media_sources" />
+
 <div id="note-1" />
 
 > 📘 **Nota**
