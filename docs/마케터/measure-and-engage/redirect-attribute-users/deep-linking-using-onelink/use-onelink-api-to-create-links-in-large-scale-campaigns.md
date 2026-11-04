@@ -26,6 +26,24 @@ x-zendesk:
 
 > **한눈에 보기:** 원링크 API를 통해 SMS 문자 메시지 등 다양한 경로에서 활용할 수 있는 대규모 캠페인의 개인화된 링크를 생성하여 엔드 유저의 참여를 유도하고 온드 미디어(owned media) 활용도를 높입니다. 원링크 API는 마케터와 개발자가 함께 구현해야 합니다.
 
+<div id="referral-and-advocate-sharing" />
+
+<div id="offline-and-qrbased-engagement" />
+
+<div id="crmpowered-channels-sms-email-whatsapp" />
+
+<div id="crossplatform-journeys-ctv-desktop-webtoapp" />
+
+<div id="traits-and-limitations" />
+
+<div id="use-cases" />
+
+<div id="dashboard" />
+
+<div id="get-started" />
+
+<div id="example" />
+
 <div id="about-onelink-api" />
 
 ## OneLink API

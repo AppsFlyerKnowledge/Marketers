@@ -43,6 +43,8 @@ SDK 연동이 완료되면 SDK가 앱스플라이어 서버와 성공적으로 �
 
 CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-테스트) 문서를 확인하세요.
 
+<div id="note" />
+
 <div id="testing-using-the-sdk-integration-tests-page" />
 
 ## SDK 연동 테스트 페이지를 사용한 테스트
@@ -59,6 +61,8 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 2. <Anchor target="_blank" href="/marketers/ko/docs/registering-test-devices">준비한 디바이스를 테스트 장치로 등록합니다.</Anchor>
 
 <div id="perform-the-integration-tests" />
+
+<div id="note-1" />
 
 ### 연동 테스트 수행하기
 
@@ -141,6 +145,10 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 5. **계속**을 클릭하고 각 마법사 단계를 따릅니다.
 
 </Accordion>
+
+<div id="note-3" />
+
+<div id="note-2" />
 
 <div id="testing-using-attribution-links" />
 
@@ -241,6 +249,8 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
    [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > 다음은 테스트 결과를 확인할 수 있는 다른 대체 방법들에 대해 설명합니다.
@@ -284,6 +294,8 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">원링크 URL 테스트</Anchor>에 대한 가이드를 참조하십시오.
 
 </Accordion>
+
+<div id="note-4" />
 
 <div id="testing-retargeting-using-attribution-links" />
 
@@ -367,6 +379,8 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
    [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
 
+<div id="tip-1" />
+
 > 👍 **팁**
 >
 > 다음은 테스트 결과를 확인할 수 있는 다른 대체 방법들에 대해 설명합니다.
@@ -428,6 +442,10 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 앱의 대시보드에 신규 오가닉 인스톨이 표시됩니다. 인스톨이 표시될 때까지 최대 30분 정도 기다리십시오.
 
 [![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+
+<div id="traits-and-limitations" />
+
+<div id="note-5" />
 
 <div id="testing-ctv" />
 

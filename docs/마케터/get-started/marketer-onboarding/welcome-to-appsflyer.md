@@ -54,6 +54,8 @@ login page.png
 * Google 계정으로 로그인
 * <Anchor target="_blank" href="/marketers/ko/docs/set-up-sso-authentication-with-your-identity-provider-idp">SSO를 사용하여 로그인</Anchor>
 
+<div id="note-1" />
+
 <div id="using-multiple-accounts" />
 
 <div id="note" />
@@ -65,6 +67,8 @@ login page.png
 
 
 <Image alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
+
+<div id="note-2" />
 
 <div id="switch-between-accounts" />
 

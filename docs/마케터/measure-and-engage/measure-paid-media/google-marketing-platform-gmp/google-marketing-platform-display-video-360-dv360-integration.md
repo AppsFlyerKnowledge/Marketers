@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** Google 마케팅 플랫폼 - Display & Video 360 (GMP-DV360)은 앱스플라이어의 자가 리포팅 네트워크(SRN) 파트너로, 광고와 분석을 결합합니다. GMP-DV360 연동(dv360\_int)은 광고와 분석을 통합하여 고객 연계를 강화, 인사이트를 드러내며 마케팅 성과를 향상시킵니다.
 
+<div id="note-5" />
+
 <div id="important-1" />
 
 <div id="important" />
@@ -76,6 +78,8 @@ GMP-DV360 연동은 전환 측정을 위해 링크 ID를 활용합니다. 다음
 | product\_type | af\_channel |
 | external\_customer\_id | network\_account\_id |
 | site\_id | af\_siteid |
+
+<div id="note-1" />
 
 <div id="setting-up-gmp-dv360-for-advertisers" />
 
@@ -137,6 +141,8 @@ GMP-DV360 연동은 전환 측정을 위해 링크 ID를 활용합니다. 다음
 
 1. 설치 클릭-쓰루 룩백 윈도우를 1-23시간 또는 1-30일 중에서 설정하세요.
 2. [선택 가능] 설치 뷰-쓰루 어트리뷰션을 활성화하고 룩백 윈도우를 1-23시간 또는 1-30일로 설정하세요.
+
+<div id="note-2" />
 
 <div id="re-engagement-attribution" />
 
@@ -297,6 +303,8 @@ https://impression.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=%24{UNIVERSA
 | --- | --- |
 | 광고주 | <ol><li>광고주의 GMP-DV360 연동이 완료되었는지 확인하세요.</li><li>앱스플라이어의 측면 메뉴에서 **협업** > **활성화된 연동**을 선택하세요.</li><li>대행사를 선택합니다.</li><li>**권한** 탭으로 이동하여 **에이전시 권한**을 켭니다.</li><li>**[옵션]** 연동 **탭에서 인앱 이벤트 포스트백&lt;3>을 켭니다. 이렇게 하면 대행사가 포스트백을 켜거나 끌 수 있게 됩니다.**</li></ol> |
 | 에이전시 | <ol><li>앱스플라이어의 측면 메뉴에서 **협업** > **활성화된 연동**을 선택하세요.</li><li>**Google 마케팅 플랫폼 - Display & Video 360 (DV360)&lt;2>을 선택하세요..**</li><li>**연동 탭**으로 이동합니다.</li><li>활성화 파트너가 **켜짐** 상태인지 확인하세요. **그렇지 않을 경우, 광고주가 [광고주 GMP-DV360 연동&lt;4>을 완료해야 합니다.](#광고주를-위한-gmp-dv360설정)**</li><li>룩백 기간 및 인앱 이벤트 매핑과 같은 나머지 설정들이 정확한지 확인하세요. 필요하다면, 광고주에게 수정을 요청하세요.</li><li>하나 이상의 **DBM 광고주 ID**를 입력하세요. ID는 귀하의 <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/11415707?hl=en">GMP 대시보드</Anchor>에서 확인할 수 있습니다.</li><li>**저장**을 클릭합니다.</li></ol> |
+
+<div id="see-also" />
 
 <div id="gmp-dv360-discrepancies" />
 

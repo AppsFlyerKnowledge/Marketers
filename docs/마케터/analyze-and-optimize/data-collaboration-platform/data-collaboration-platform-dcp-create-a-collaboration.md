@@ -27,6 +27,8 @@ x-zendesk:
 
 AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-guide">데이터 협업 플랫폼(DCP)</Anchor> 상거래 미디어 네트워크와 브랜드가 파트너 관계를 맺고 1차 데이터의 잠재력을 활용하여 고의도 사용자에게 도달할 수 있도록 지원합니다. 보안 및 개인정보 보호 중심의 플랫폼은 원활한 협업을 가능하게 하여 파트너가 새로운 광고 수익 흐름을 생성하고 상거래 미디어 네트워크 또는 Meta, Google 등의 미디어 채널에서 활성화를 위해 협업 데이터에서 맞춤형 잠재고객을 구축할 수 있도록 합니다.
 
+<div id="optional-set-custom-data-permissions-by-source" />
+
 <div id="create-a-collaboration" />
 
 ## 협업 생성
@@ -187,6 +189,16 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 2. 협업 대시보드에서 오른쪽 상단의 작업(3개의 점) 메뉴를 클릭하고 특정 작업을 선택합니다.   
 
    <Image alt="액션 메뉴 열기.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+
+<div id="terms-and-conditions" />
+
+<div id="notes" />
+
+<div id="update-existing-terms-and-conditions" />
+
+<div id="apply-terms-and-conditions" />
+
+<div id="administer-account" />
 
 <div id="notes-on-suspended-collaborations" />
 

@@ -75,6 +75,8 @@ Data View Builder 페이지는 두 가지 섹션이 있습니다.
    * **설명:** 설명을 입력하세요. 이것은 **소스** 탭의 데이터 보기 이름 위에 마우스 오버할 때 도구 설명으로 나타납니다. 주요 목표와 수행된 데이터 조작을 강조하는 것이 좋습니다.
    * **표 추가:** 보기의 구조와 데이터를 가장 잘 나타내는 레이블을 선택할 수 있습니다.
 
+<div id="h_01K4SDE8H7R9YZYXMRVXV5GZSV" />
+
 <div id="naming-requirements-and-guidelines" />
 
 #### 이름 지정 요구 사항 및 지침
@@ -155,6 +157,8 @@ Data View Builder 페이지는 두 가지 섹션이 있습니다.
 4. 값 입력
 5. [선택 사항] 필터에 조건을 추가하려면 **+ 조건**을 클릭합니다.
 
+   <div id="group-by" />
+
    <div id="note" />
 
    > 📘 **참고**
@@ -224,6 +228,18 @@ Data View Builder 페이지는 두 가지 섹션이 있습니다.
 <Accordion title="Fields 보기">
 
 데이터 뷰 구조에는 원래의 데이터 소스의 필드와 데이터 뷰 빌더 내에서 생성된 사용자정의 데이터 필드가 포함됩니다. 여기에서 (식별자 필드 제외) 필드를 제거하거나 순서를 변경할 수 있습니다.
+
+<div id="transactional-data-sources" />
+
+<div id="common-use-cases" />
+
+<div id="h_01JVSEG13462Z4XXD1NE8GW1HE" />
+
+<div id="note-3" />
+
+<div id="use-cases" />
+
+<div id="note-2" />
 
 <div id="note-1" />
 

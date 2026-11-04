@@ -286,6 +286,8 @@ Google Ads 팀원에게 귀사의 앱에 대한 액세스를 부여하려면 다
 * 모든 iOS ACI 캠페인은 ICM을 통해 어트리뷰션이 가능합니다. 이는 광고주 앱, 퍼블리셔 앱 또는 두 앱 모두에서 디바이스 ID를 사용할 수 없는 경우에 적용됩니다.
 * Google은 현재 iOS에서 클릭만 클레임합니다. 노출에 대해서는 클레임하지 않습니다.
 
+<div id="note-2" />
+
 <div id="using-deferred-deep-linking-in-app-campaigns" />
 
 ## 앱 캠페인에서 디퍼드 딥링킹 사용하기
@@ -363,6 +365,8 @@ Google 응답에서 사용할 수 있는 광고 유형에 대한 자세한 내�
 
 적극적 조회란 사용자가 10초 이상 지속된 비디오 광고에 노출된 경우를 의미합니다. 적극적 조회는 클릭과 동일한 어트리뷰션 우선 순위를 가지고 있습니다.  안드로이드의 경우, 적극적 조회는 로데이터 리포트에서 `Engagement Type` 및 `Sub Param 5` 파라미터 아래에 `engaged_view`로 표시됩니다.   
 적극적 조회는 앱스플라이어에서 설정된 클릭 룩백 윈도우 기간 내에 발생한 경우에만 집계되며, 최대 3일까지로 제한됩니다.
+
+<div id="send-complex-in-app-events-to-google-ads" />
 
 <div id="important-2" />
 

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="note" />
+
 <div id="implementing-cross-promotion-attribution-in-the-sdk" />
 
 ## SDK에서 크로스 프로모션 어트리뷰션 구현
@@ -42,7 +44,7 @@ API 메서드에 넘겨주는 표준 매개변수들은  <Anchor target="_blank
 크로스 프로모션한 앱이 처음 실행되면, 모든 매개변수를 SDK의 conversion data API를 통해 확인할 수 있습니다. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-android">안드로이드</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-ios">iOS</Anchor> conversion data API 확인하기
 
 
-<span id="attribute-cross-promotion-clicks"></span><span id="attribute-crosspromotion-clicks"></span>다음 코드를 이용하여 클릭을 어트리뷰션하고 앱스토어의 앱 페이지를 실행하십시오. 이 코드는 어트리뷰션 링크를 생성하고 생성된 어트리뷰션 링크에 디바이스 광고 ID를 추가합니다.
+<span id="note-1"></span><span id="attribute-cross-promotion-clicks"></span><span id="attribute-crosspromotion-clicks"></span>다음 코드를 이용하여 클릭을 어트리뷰션하고 앱스토어의 앱 페이지를 실행하십시오. 이 코드는 어트리뷰션 링크를 생성하고 생성된 어트리뷰션 링크에 디바이스 광고 ID를 추가합니다.
 
 <Tabs>
 <Tab title="안드로이드">

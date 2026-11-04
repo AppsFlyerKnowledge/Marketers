@@ -218,6 +218,8 @@ URL에서 쿼리 파라미터(PID, UTM, 클릭 ID)가 발견되지 않으면 앱
 | `googleads.g.doubleclick.net` | googleadwords\_int |
 | `tpc.googlesyndication.com` | dv360\_int |
 
+<div id="ai-answer-engine-referrer-mapping" />
+
 <div id="search-engine-mapping" />
 
 #### **검색 엔진 매핑**

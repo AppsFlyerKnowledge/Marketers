@@ -51,6 +51,8 @@ x-zendesk:
 
 설정은 **활성 연동** 페이지에서 진행할 수 있지만, 새로운 파트너를 찾으려면 먼저 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations">파트너 마켓플레이스</Anchor>로 이동해야 합니다. 아래 설명된 대로 관련 탭을 사용하여 설정을 완료하십시오.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > 연동을 설정하기 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락하여</Anchor> 함께 계정을 개설해야 합니다.
@@ -72,6 +74,22 @@ Apple Search Ads는 SRN으로 앱스플라이어와 API를 통해 연동되기 �
 * 캠페인, 광고 세트, 지역/국가, 키워드에 대한 비용 데이터 지원되는 디멘션, 지표 및 기능에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">애드 네트워크 비용 연동 표</Anchor>를 참조하세요.  
   **참고:** 비용 데이터를 확인하려면 ROI360을 구독해야 합니다.
 * 클릭 수, 노출 수에 대한 데이터 및 보강된 데이터(키워드, 캠페인 이름, 광고 세트)
+
+<div id="note-3" />
+
+<div id="agency-actions" />
+
+<div id="advertiser-actions" />
+
+<div id="configuration-steps-checklist" />
+
+<div id="configuring-agencies-and-marketing-partners" />
+
+<div id="agency-vs-marketing-partner" />
+
+<div id="set-up-agencies-and-apple-ads-marketing-partners" />
+
+<div id="note-2" />
 
 > 📘 **참고**
 >
@@ -196,6 +214,16 @@ Apple Search Ads는 SRN으로 앱스플라이어와 API를 통해 연동되기 �
 >
 > 대행사가 Apple Search Ads 마케팅 파트너와 협업할 때는 Apple Search Ads 설정 페이지와 마케팅 파트너 설정 페이지 모두에 동일한 캠페인 그룹 ID를 구성해야 합니다.
 
+<div id="before-september-1-2026" />
+
+<div id="after-september-1-2026" />
+
+<div id="additional-information" />
+
+<div id="note-4" />
+
+<div id="cost-clicks-and-impressions-data" />
+
 ### 비용, 클릭수 및 노출 데이터
 
 비용 API를 활성화하면, 앱스플라이어는 API를 통해 ASA로부터 비용,클릭 수 및 노출 데이터를 수신합니다. 지원되는 디멘션, 메트릭 및 기능에 대한 전체 상세 내용은 <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">광고 네트워크 비용 연동 테이블</Anchor>을 참조하십시오. **참고**: 비용 데이터를 확인하려면 ROI360을 구독해야 합니다. ROI360이 없으면 클릭 수와 노출 데이터만 수신됩니다.
@@ -251,6 +279,8 @@ ASA 어트리뷰션은 IDFA에 의존하지 않으며, 디바이스에서 전달
 * 다음은 리포트되지 않습니다: 특정 캠페인에서 노출 수가 100회 미만인 노출 수, 탭 수, 또는 지역의 비용 데이터는 제공되지 않을 수 있습니다.
 * 앱스플라이어에서 지역(Geo)을 기준으로 그룹화할 경우, 데이터가 부족한 지역들은 표시되지 않으며, 해당 누락된 데이터의 총합은 N/A로 나타납니다.
 
+<div id="retargeting-related-discrepancies" />
+
 ### 리타겟팅 관련 불일치
 
 앱스플라이어의 리타겟팅 어트리뷰션 메커니즘을 통해, 광고주는 유저 확보 캠페인뿐만 아니라 리타겟팅 캠페인도 측정하고 분석할 수 있습니다.
@@ -264,6 +294,70 @@ ASA 어트리뷰션은 IDFA에 의존하지 않으며, 디바이스에서 전달
 **리타겟팅 해제**
 
 [![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+
+<div id="20210215" />
+
+<div id="20210307" />
+
+<div id="20210407" />
+
+<div id="20220216" />
+
+<div id="20230207" />
+
+<div id="20260901" />
+
+<div id="target-redownloaders" />
+
+<div id="find-the-best-performing-creative-set" />
+
+<div id="pivot-example" />
+
+<div id="cohort-example" />
+
+<div id="h_01M0YZYCC5S0E3HA296KAA0SDZ" />
+
+<div id="analyze-keyword-cost" />
+
+<div id="compare-the-quality-of-users-based-on-keyword-data" />
+
+<div id="get-keyword-data" />
+
+<div id="missing-conversion-payload-for-gender-and-age-targeted-users" />
+
+<div id="geo-locations" />
+
+<div id="cost-data" />
+
+<div id="conversion-data" />
+
+<div id="time-zone" />
+
+<div id="install-time" />
+
+<div id="winning-click" />
+
+<div id="preregistration-click-and-impression-lookback-window-discrepancy" />
+
+<div id="impression-lookback-window" />
+
+<div id="click-lookback-window" />
+
+<div id="reinstall-a-user-after-installing-the-app-deletes-it-clicks-on-a-search-ad-then-installs-the-app-again" />
+
+<div id="counting-users" />
+
+<div id="limit-ad-tracking-lat-and-att" />
+
+<div id="differences-related-to-appsflyer-sdk-versions" />
+
+<div id="see-also" />
+
+<div id="before-september-1-2026-1" />
+
+<div id="after-september-1-2026-1" />
+
+<div id="additional-reasons-for-discrepancies" />
 
 ### 불일치의 추가적인 원인
 

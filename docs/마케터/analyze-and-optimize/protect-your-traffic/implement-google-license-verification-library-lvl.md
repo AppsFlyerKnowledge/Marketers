@@ -39,6 +39,8 @@ Google Play 라이선스 서비스는 유저에게 앱 사용 라이선스가 �
 
 <div id="note" />
 
+<div id="add-lvl" />
+
 <div id="set-up-lvl" />
 
 ## LVL 설정

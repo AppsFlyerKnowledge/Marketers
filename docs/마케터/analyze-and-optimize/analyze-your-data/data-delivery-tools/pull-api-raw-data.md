@@ -36,6 +36,16 @@ x-zendesk:
   * 통화 선택
   * 시간대 선택
 
+<div id="raw-data-reports-nonorganic" />
+
+<div id="protect360-fraud" />
+
+<div id="ad-revenue-raw-data" />
+
+<div id="retargeting" />
+
+<div id="raw-data-reports-organic" />
+
 <div id="raw-data-reports-available-via-pull-api" />
 
 #### Pull API를 통해 사용할 수 있는 로데이터 리포트

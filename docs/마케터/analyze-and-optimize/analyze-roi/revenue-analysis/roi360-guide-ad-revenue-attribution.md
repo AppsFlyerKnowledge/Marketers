@@ -62,6 +62,10 @@ x-zendesk:
 
 </Accordion>
 
+<div id="note-1" />
+
+<div id="note" />
+
 <div id="implementation" />
 
 ## 구현하기
@@ -158,6 +162,8 @@ x-zendesk:
 | --- | --- | --- |
 | 고유 수익화 인앱 이벤트 | <ul><li>인앱 이벤트가 광고 표시 시점에 설정됩니다.</li><li>이를 통해 사용자 액션을 별도 집계하고, 고급 eRPA 계산이 가능합니다.</li></ul> | <ul><li>개발자가 앱 코드에 구현해야합니다.</li><li>대시보드에서 광고 수익을 광고 수익화 네트워크 별로 구분할 수 있습니다.</li></ul> |
 | af\_app\_opened 이벤트 | <ul><li>af\_app\_opened 이벤트는 앱스플라이어 SDK에 의해 기본으로 전송됩니다.</li><li>매 사용자 세션에 트리거 됩니다.</li></ul> | <ul><li>별도의 앱 코드 작업이 필요하지 않습니다.</li><li>빠르게 구현할 수 있습니다.</li><li>세션 당 한번의 광고만 게재하는 것이 아닌 이상, eRPA 값이 심각하게 왜곡됩니다.</li><li>광고 수익화 네트워크 별로 구분할 수 없습니다.</li><li>이벤트는 앱을 실행한 모든 사용자에 적용되며, 사용자의 광고 시청 의사에 대한 표시가 없습니다.</li></ul> |
+
+<div id="note-2" />
 
 <div id="comparison-of-in-app-event-methods" />
 
@@ -324,6 +330,30 @@ x-zendesk:
   * 컨텍스트 상황: 다른 로데이터 리포트에서 비슷한 의미를 가지는 필드. 예를 들어, event name, event value, currency.
 * 사용자를 유입시킨 미디어 소스로 이벤트를 어트리뷰션한 결과입니다. 즉, 이 필드는 해당 사용자를 유입시킨 전환 이벤트에서 복사된 것입니다. 예를 들어, 미디어 소스 및 캠페인. 이런 필드는 다음의 표에 나열되어 있지 않습니다.
 
+<div id="customer_user_id" />
+
+<div id="mediation_network" />
+
+<div id="impressions" />
+
+<div id="monetization_network" />
+
+<div id="segment" />
+
+<div id="ad_unit" />
+
+<div id="country" />
+
+<div id="event_revenue_xxx" />
+
+<div id="event_revenue_currency" />
+
+<div id="event_revenue" />
+
+<div id="event_name" />
+
+<div id="event_time" />
+
 <div id="fields-populated-by-ad-revenue" />
 
 #### 광고 수익에 의해 채워진 필드
@@ -341,6 +371,8 @@ x-zendesk:
 | monetization\_network | Monetization Network | 특정 | 광고를 전송한 네트워크 |
 | 노출 | 노출 | 특정 | 유저가 광고를 본 횟수 |
 | mediation\_network | Mediation Network | 특정 |  |
+
+<div id="h_01KRKHJN2G5SER73D3EZB14GDS" />
 
 <div id="fields-by-network" />
 

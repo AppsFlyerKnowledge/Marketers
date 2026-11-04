@@ -119,6 +119,8 @@ Meta 웹 광고 통합을 활성화하려면 다음 단계를 따르세요.
    * **오가닉을 포함한 모든 미디어 소스**: 파트너 및 오가닉 이벤트에 어트리뷰트된 이벤트에 대한 포스트백을 전송합니다.
 7. **포함** 열에서 이벤트가 수익 값과 함께 전송될지 여부를 선택합니다. <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration#포스트백에-포함할-데이터">포스트백에 포함할 데이터</Anchor> 참조
 
+   <div id="note-2" />
+
    <div id="note-1" />
 
    > 📘 **참고**
@@ -274,6 +276,8 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 
 </Accordion>
 
+<div id="note-6" />
+
 <div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## 원링크 스마트 스크립트로 랜딩 페이지 만들기
@@ -325,6 +329,8 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
      * 버전 2.8.0 이하: `fbclid` 파라미터는 **스마트 스크립트** 페이지의 **URL 파라미터 매핑** 섹션에서 수동으로 매핑되어야 합니다.
        1. **Mapping for**에서 **사용자정의 파라미터**을 선택합니다.
        2. **발신 URL 파라미터** 와 **수신 URL 파라미터** 에 **fbclid 를** 입력합니다.
+
+     <div id="note-7" />
 
      > 📘 **참고**
      >

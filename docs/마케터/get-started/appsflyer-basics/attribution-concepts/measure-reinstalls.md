@@ -86,6 +86,10 @@ x-zendesk:
 
 </Accordion>
 
+<div id="postreinstall-events-attribution-state" />
+
+<div id="note" />
+
 <div id="post-reinstall-in-app-events" />
 
 ## 인앱 이벤트
@@ -155,6 +159,8 @@ x-zendesk:
 <div id="examples" />
 
 <Accordion title="예시">
+
+<div id="confirm-inapps-are-attributed-to-the-original-install" />
 
 <div id="examples-for-first-install-mode-attribution" />
 

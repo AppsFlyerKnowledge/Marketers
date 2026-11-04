@@ -362,7 +362,13 @@ Google Play 리퍼러 API 또는 Meta 설치 리퍼러에서 얻은 데이터는
 
 이 방법은 iOS 클릭-쓰루 및 뷰-쓰루 설치와 iOS 딥링크 리인게이지먼트를 단일 옵트아웃 기기와 이중 옵트아웃 기기에서도 어트리뷰션합니다. 어트리뷰션은 사용자의 마지막 터치를 기준으로 하며, 어트리뷰션 윈도우는 최대 24시간입니다.
 
+<div id="use-deep-links-in-meta-ads-campaigns" />
+
+<div id="advanced_matching_data_sharing" />
+
 <div id="note-3" />
+
+<div id="see-also" />
 
 > 📘 **참고**
 >

@@ -38,6 +38,8 @@ SKAN 모델링 데이터는 이런 문제를 해결합니다.
 
 **참고**: 참고: 전환 가치 스키마를 변경하면 모델링된 데이터는 2일 후에야 사용할 수 있습니다.
 
+<div id="inapp-event-ltv" />
+
 <div id="modeled-data-types-and-availability" />
 
 ## 모델링된 데이터 형식 및 가용성

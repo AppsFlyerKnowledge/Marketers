@@ -486,6 +486,12 @@ source_name/
 
 소스 필드를 불러온 후, 각 소스 필드(열)에는 DCP 필드가 표시됩니다. 각 소스 필드를 검토하고 옆에 있는 드롭다운 목록에서 적절한 DCP 필드에 매핑하십시오. 다음 사항을 고려하십시오.
 
+<div id="important-4" />
+
+<div id="limitations" />
+
+<div id="ai-assisted-field-type-detection" />
+
 <div id="note-1" />
 
 > 📘 **고려사항:**

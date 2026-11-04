@@ -25,6 +25,14 @@ x-zendesk:
 
 DCP는 현장 캠페인을 비현장 캠페인과 다르게 측정합니다. 협력자의 플랫폼 중 하나에서 현장 캠페인이 진행되는 동안, 오프사이트 캠페인은 Facebook, Google Ads 및 기타 SRN과 같은 제3자 플랫폼에서 진행됩니다. DCP는 이러한 플랫폼에서 참여 데이터를 직접 액세스할 수 없기 때문에, 귀속 흐름과 참여 데이터는 현장 캠페인과 다르며 고유한 솔루션이 필요합니다. 특별히 언급되지 않는 한, 측정 기사에 있는 정보는 두 캠페인 유형 모두에 적용됩니다.
 
+<div id="combined-onsite-and-offsite-campaigns" />
+
+<div id="onsite-campaigns" />
+
+<div id="offsite-campaigns" />
+
+<div id="on-site-vs-off-site-campaigns" />
+
 <div id="the-three-data-sources-of-measurement" />
 
 ## 측정의 세 가지 데이터 소스
@@ -95,6 +103,54 @@ AppsFlyer는 AppsFlyer SDK를 사용하여 귀하의 앱과 통합하거나 협�
 위의 매핑 정보는 커스텀 데이터 소스로 앱스플라이어에 제공됩니다.
 
 </Accordion>
+
+<div id="combined-onsite-and-offsite-measurement-flow" />
+
+<div id="offsite-measurement-flow" />
+
+<div id="onsite-measurement-flow" />
+
+<div id="set-up-collaboration-measurement" />
+
+<div id="5-on-site-and-off-site-conversion-merge" />
+
+<div id="4-off-site-response-enrichment" />
+
+<div id="3-share-with-google-and-meta" />
+
+<div id="2-apply-last-touch-attribution" />
+
+<div id="1-on-site-and-off-site-record-processing-is-performed" />
+
+<div id="7-output-attributed-conversion-dataset" />
+
+<div id="6-google-and-meta-response-enrichment" />
+
+<div id="5-share-with-google-and-meta" />
+
+<div id="4-filter-according-to-last-touch-attribution" />
+
+<div id="3-filter-for-sharing-eligibility" />
+
+<div id="2-deduplicate-conversion-events" />
+
+<div id="1-prepare-conversion-data" />
+
+<div id="8-output-attributed-conversion-dataset" />
+
+<div id="7-apply-attribution-logic" />
+
+<div id="6-deduplicate-conversion-events" />
+
+<div id="5-filter-non-target-skus" />
+
+<div id="4-split-multi-sku-conversions" />
+
+<div id="3-link-conversions-to-engagements" />
+
+<div id="2-prepare-and-map-conversion-data" />
+
+<div id="1-configure-measurement-sources" />
 
 <div id="the-dcp-measurement-process" />
 

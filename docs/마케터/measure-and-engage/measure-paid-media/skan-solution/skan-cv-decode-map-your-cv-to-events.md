@@ -136,6 +136,16 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 | event\_f |  |  |  |  |
 | event\_g |  |  |  |  |
 
+<div id="ssot-support-for-decode-mode" />
+
+<div id="faq" />
+
+<div id="how-to-enable-ssot-for-decode-mode" />
+
+<div id="key-benefits" />
+
+<div id="overview" />
+
 <div id="example-d-fine-conversion-value-62" />
 
 ### 예시 D: 미세한 변환 값 62
@@ -207,6 +217,8 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 8. 파트너가 포스트백을 올바르게 사용할 수 있도록 인앱 이벤트를 파트너가 사용하는 이벤트에 매핑했는지 확인하십시오.
 
 </Accordion>
+
+<div id="upload-error-messages" />
 
 <div id="troubleshooting-the-csv-upload-errors-file" />
 

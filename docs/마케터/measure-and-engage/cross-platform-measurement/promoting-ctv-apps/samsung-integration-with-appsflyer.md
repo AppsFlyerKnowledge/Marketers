@@ -43,6 +43,8 @@ x-zendesk:
 
 ![CTV_attribution_flow_-_Samsung__1_.png](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
 
+<div id="h_01M349521V96NRS5CJKXZKMA6P" />
+
 <div id="integration-procedures" />
 
 ## 통합 절차

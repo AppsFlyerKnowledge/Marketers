@@ -29,6 +29,8 @@ x-zendesk:
 
 귀사의 앱 사용자 가치를 파악하려면 인스톨과 앱 삭제 비율을 모두 분석해야 합니다. 앱 삭제 지표는 귀사의 성과를 측정하고 사용자가 앱을 떠나는 시기와 이유를 이해하는 데 도움이 됩니다.
 
+<div id="note" />
+
 <div id="how-does-it-work" />
 
 ### 어떻게 작동하나요?
@@ -41,6 +43,8 @@ x-zendesk:
 > 📘 **참고**
 >
 > 앱 삭제 지표는 유저 유입 보기에서만 제공합니다
+
+<div id="note-1" />
 
 <div id="how-to-use-uninstall-data" />
 
@@ -73,6 +77,10 @@ x-zendesk:
 <Accordion title="최적화를 위해 애드 네트워크와 앱 삭제 데이터 공유">
 
 협력하는 애드 네트워크에 앱 삭제 이벤트 포스트백을 발송하는 것은 유저 유입 캠페인을 최적화하는 데 유용합니다. 앱 삭제 이벤트는 [af\_uninstall을 애드 네트워크에 매핑하여](/docs/measure-uninstalls#앱-삭제-이벤트-매핑) 발송할 수 있습니다. 매핑이 완료되면, 사용자가 앱을 삭제한 것으로 식별될 때마다 이벤트가 전송됩니다. 애드 네트워크는 이 정보를 활용해 참여도가 낮은 사용자를 판단하고 더 높은 참여도를 가진 사용자 확보에 집중할 수 있습니다.
+
+<div id="note-3" />
+
+<div id="note-2" />
 
 > 📄 **예시**
 >
@@ -149,6 +157,8 @@ x-zendesk:
 
 구현에는 모바일 개발자가 푸시 알림에 대응할 수 있는 메커니즘을 앱에 연동하기 위한 작업이 필요합니다. 구현 지침은 운영 체제에 따라 다릅니다.
 
+<div id="note-4" />
+
 <div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Firebase Cloud 메시징을 앱스플라이어에 연결하기(안드로이드)
@@ -206,6 +216,8 @@ x-zendesk:
 
 <Accordion title="[중단됨] 기존 HTTP">
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > HTTP 기존 API는 2023년 6월 20일에 Firebase에서 지원이 중단되었으며, 2024년 6월 21일에 삭제될 예정입니다. 기존 API를 사용 중인 경우 [HTTP v1 API](/docs/measure-uninstalls#http-v1) 사용을 적극 권장합니다. <Anchor target="_blank" href="https://firebase.google.com/docs/cloud-messaging/http-server-ref">더 보기</Anchor>
@@ -225,6 +237,8 @@ Firebase 메시징을 사용한 앱 삭제 측정은 안드로이드 SDK V4.7.0 
 </Accordion>
 
 <div id="configure-uninstall-measurement-in-appsflyer" />
+
+<div id="note-5" />
 
 ### 앱스플라이어에서 앱 삭제 측정 구성
 
@@ -265,6 +279,8 @@ Firebase 메시징을 사용한 앱 삭제 측정은 안드로이드 SDK V4.7.0 
 
 </Tab>
 </Tabs>
+
+<div id="note-6" />
 
 <div id="testing-uninstall-measurement" />
 

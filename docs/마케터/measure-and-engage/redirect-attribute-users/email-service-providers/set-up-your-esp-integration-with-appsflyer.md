@@ -187,6 +187,12 @@ AppsFlyer는 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-knowledg
 2. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">통합 딥링크 API</Anchor>를 사용하여 딥 링크 매개변수를 가져오고 딥 링크 데이터를 처리합니다.
 
 
+<div id="if-i-have-the-appsflyer-esp-integration-and-sdk-implemented-for-basic-onelink-deep-linking-do-i-need-to-add-both-the-onelink-domain-and-the-esp-click-tracking-domain-to-ios-associated-domains" />
+
+<div id="do-i-need-to-create-an-ssl-certificate-at-any-point" />
+
+<div id="faq" />
+
 <div id="configure-your-app-to-handle-weblinks-and-application-links" />
 
 #### **웹 링크 및 애플리케이션 링크를 처리하도록 앱을 구성하세요**

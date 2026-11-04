@@ -39,6 +39,8 @@ x-zendesk:
 * 리포트 데이터를 트리거하기 위해 정기적으로 [소스 데이터 업데이트](/docs/data-clean-room-working-with-sources#리포트-처리를-트리거하기-위한-소스-업데이트)
 * [기존 소스 작업](/docs/data-clean-room-working-with-sources#기존-소스로-작업하기)
 
+<div id="important" />
+
 > 🚧 **시작하기 전에**
 >
 > 커스텀 소스를 만들기 전에 먼저 다음을 수행해야 합니다.
@@ -48,7 +50,7 @@ x-zendesk:
 >   * 이러한 연결이 이전에 설정되지 않은 경우 소스를 생성하는 동안 설정하라는 메시지가 표시됩니다.
 
 
-<span id="source-requirements"></span><span id="source-format"></span>소스는 소스 생성 및 리포트 처리에서 오류를 방지하기 위해 다음 요구 사항을 충족해야 합니다.
+<span id="data-format"></span><span id="source-requirements"></span><span id="source-format"></span>소스는 소스 생성 및 리포트 처리에서 오류를 방지하기 위해 다음 요구 사항을 충족해야 합니다.
 
 소스 내의 데이터는 다음 요구 사항을 충족해야 합니다.
 
@@ -157,6 +159,8 @@ BigQuery 소스의 소스 위치 지정을 완료하려면 다음 안내를 따�
 
 이러한 선택 목록에는 연결을 생성할 때 지정한 Snowflake 계정의 공유, 스키마 및 테이블이 각각 포함됩니다.
 
+<div id="important-1" />
+
 <div id="source-locations-in-cloud-storage-buckets" />
 
 #### Cloud Storage 버킷의 소스 위치
@@ -192,6 +196,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
   * **\_데이터 기준** 기준: 앱 사용자를 분류하는 속성(예를 들어 지역, 인스톨 날짜, 캠페인 등)/span>
   * 지표 지표: 앱 사용자와 관련하여 수집한 수치 데이터(예로는 수익, 앱 열기 횟수, LTV 등이 포함될 수 있음.)
     * 지표로 식별된 데이터 필드에는 숫자 값만 포함될 수 있습니다.
+
+<div id="important-2" />
 
 <div id="loading-source-fields" />
 
@@ -253,6 +259,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 
 </Tab>
 </Tabs>
+
+<div id="note" />
 
 <div id="categorize-fields" />
 
@@ -352,6 +360,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 <Image alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
 
 </Accordion>
+
+<div id="important-3" />
 
 <div id="working-with-existing-sources" />
 

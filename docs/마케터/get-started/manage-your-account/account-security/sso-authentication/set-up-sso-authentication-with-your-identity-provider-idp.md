@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어를 ID 제공업체(IdP)와 통합하면 앱스플라이어 계정 유저가 SSO(Single Sign-On)를 사용하여 앱스플라이어에 로그인할 수 있습니다. SSO 인증을 AppsFlyer와 IdP 플랫폼에서 설정하는 방법을 배우십시오.
 
+<div id="note" />
+
 <div id="considerations" />
 
 ## 고려 사항
@@ -161,6 +163,20 @@ IdP 인증 플러그인 또는 웹페이지를 통해 로그인하는 사용자�
 
 * 인증서 유형을 선택하고 **다음**을 클릭하세요.
 
+<div id="6-activate-sso" />
+
+<div id="5-add-exception-users" />
+
+<div id="activation-results" />
+
+<div id="note-7" />
+
+<div id="delete-an-exception-user" />
+
+<div id="add-login-methods-for-multiple-users" />
+
+<div id="note-6" />
+
 <div id="note-5" />
 
 > 📘 **참고**
@@ -236,6 +252,12 @@ IdP를 통해 로그인하도록 인증을 구성한 경우, 유저가 IdP 플�
 
 </Accordion>
 
+<div id="edit-exception-users-1" />
+
+<div id="note-8" />
+
+<div id="important" />
+
 <div id="manage-sso-configuration" />
 
 ## SSO 구성을 관리하십시오.
@@ -245,6 +267,8 @@ SSO 구성을 설정한 후에는 구성을 편집하거나 제거할 수 있습
 SSO 구성 페이지에 [접근하는 방법](#sso-구성-페이지에-액세스하십시오)을 확인하십시오.
 
 <div id="zd-edit-sso" />
+
+<div id="edit-exception-users" />
 
 <div id="edit-sso" />
 

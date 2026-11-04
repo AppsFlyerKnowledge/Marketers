@@ -145,6 +145,10 @@ x-zendesk:
 3. 인앱 이벤트 로리포트를 다운로드합니다.
 4. **설치 시간(Install Time)** 칼럼에 필터를 걸어 선택한 기간 이전에 포함되는 날짜를 제거합니다. (이를 통해 1번째 차이점에 대한 문제 해결)
 
+<div id="compare-inapp-event-raw-data-with-the-activity-view" />
+
+<div id="reconcile-raw-data-with-activity-event-metrics" />
+
 <div id="to-retrieve-activity-data-out-of-ltv-data" />
 
 #### LTV 데이터에서 액티비티 데이터를 추출하려면:

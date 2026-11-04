@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 고급 매칭 데이터 공유를 통해 이메일 및 전화번호와 같은 해시 처리된 사용자 식별자를 앱스플라이어 에서 선택한 광고 네트워크로 전달할 수 있으므로 파트너는 기기 ID 없이도 이벤트를 광고 참여와 연결할 수 있습니다.
 
+<div id="important" />
+
 <div id="about-advanced-matching-data-sharing" />
 
 ## 고급 매칭 데이터 공유에 대하여
@@ -50,6 +52,8 @@ x-zendesk:
 | 레딧(reddit\_int) | CAPI | 설치, 재참여, 인앱 이벤트 |
 | 로쿠(rokuads\_int) | SRN + CAPI | 인앱 이벤트 |
 
+<div id="note" />
+
 <div id="the-end-to-end-flow" />
 
 ## 전체 흐름
@@ -65,6 +69,16 @@ x-zendesk:
 > 📘 **참고**
 >
 > 해시 처리된 식별자는 고급 매칭 데이터 공유가 활성화된 파트너에게만 전달됩니다. 켜기/끄기 기능이 꺼져 있는 경우, 이벤트 에 식별자가 있더라도 해시된 데이터는 해당 파트너와 공유되지 않습니다.
+
+<div id="send-hashed-identifiers-with-the-s2s-api" />
+
+<div id="send-hashed-identifiers-with-the-sdk" />
+
+<div id="why-are-there-two-phone-number-fields" />
+
+<div id="important-1" />
+
+<div id="note-1" />
 
 <div id="how-hashed-user-identifiers-reach-appsflyer" />
 
@@ -117,6 +131,16 @@ S2S 인앱 이벤트 API 통해 이벤트를 전송할 때, 식별자는 제출 
 
 </Tab>
 </Tabs>
+
+<div id="facebook-login-id-fbloginid" />
+
+<div id="first-name-firstnamehashed-and-last-name-lastnamehashed" />
+
+<div id="phone-number-e164-phonenumbere164hashed" />
+
+<div id="phone-number-digits-only-phonenumberhashed" />
+
+<div id="email-emailhashed" />
 
 <div id="normalize-and-hash-identifiers" />
 
@@ -189,6 +213,8 @@ Facebook 로그인 SDK 에서 제공하는 그대로의 Facebook 로그인 ID �
 
 </Accordion>
 
+<div id="note-2" />
+
 <div id="turn-on-advanced-matching-data-sharing" />
 
 ## 고급 매칭 데이터 공유를 켜세요
@@ -207,6 +233,8 @@ Facebook 로그인 SDK 에서 제공하는 그대로의 Facebook 로그인 ID �
 > 📘 **참고**
 >
 > 고급 매칭 데이터 공유 기능을 끄면 해당 파트너와의 해시 데이터 공유가 즉시 중지됩니다. 포스트백 및 이벤트 데이터를 포함한 다른 연동 설정은 영향을 받지 않습니다.
+
+<div id="important-2" />
 
 <div id="privacy-and-data-handling" />
 

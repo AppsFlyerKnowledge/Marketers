@@ -58,6 +58,8 @@ API를 통해 이벤트를 발송하려면 개발자에게 <Anchor target="_blan
 
 즉, 앱스플라이어가 논오가닉 S2S 인앱 이벤트와 연관시키는 일부 데이터는 오가닉 S2S 인앱 이벤트와는 연관되지 않습니다.
 
+<div id="h_01_including-user-agent-and-ip-address-in-s2s-events" />
+
 <div id="note" />
 
 > 📄 **예시**

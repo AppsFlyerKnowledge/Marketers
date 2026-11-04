@@ -63,6 +63,8 @@ Google Ads와 앱스플라이어 연동을 통해 1단계에서 어트리뷰션 
 * [원링크 스마트 스크립트로 랜딩 페이지 만들기](#원링크-스마트-스크립트로-랜딩-페이지-만들기) (선택 사항)
 * [원링크 스마트 배너로 랜딩 페이지 만들기](#원링크-스마트-배너로-랜딩-페이지-만들기) (선택 사항)
 
+<div id="note-1" />
+
 <div id="create-a-google-ads-integration-in-appsflyer" />
 
 ## 앱스플라이어에서 Google Ads 연동 생성
@@ -86,6 +88,10 @@ Google Ads와 앱스플라이어 연동을 통해 1단계에서 어트리뷰션 
 6. **첫 번째 열린 전환 ID**에 Google Ads에서 설정한 `First open` 전환 동작의 ID를 입력합니다. ID를 찾으려면 Google Ads로 이동하여 **처음 열린** 전환 동작 페이지의 **세부 정보 탭**을 엽니다. 그런 다음 페이지 URL에서 `ctid=*` 쿼리 매개변수의 값을 복사합니다. 예를 들어, `ctid=123456789`인 경우 `123456789`을 **첫 번째 오픈 전환 작업 ID** 상자에 삽입하세요.
 
    [![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
+
+   <div id="note-2" />
+
+   <div id="tip" />
 
    > 👍 **팁**
    >
@@ -229,6 +235,8 @@ Google Ads에서는 여기에서 선택한 캠페인 유형의 목적과 목표�
 5. **전환 목표**에서 전환 동작 카테고리를 선택합니다.
 6. **전환 이름 입력**에 전환 동작의 이름을 입력합니다.
 
+   <div id="warning" />
+
    > 🚧 **중요!**
    >
    > GBRAID/WBRAID(GCLID 외 추가로)와 함께 오프라인 전환 API를 사용하려면 전환 작업의 **Count** 필드가 **‘매번’** (기본값)으로 설정되어 있고 **‘한 번’** 으로 설정되어 있지 않은지 확인하십시오.
@@ -247,6 +255,10 @@ Google Ads에서는 여기에서 선택한 캠페인 유형의 목적과 목표�
 <Accordion title="3. 캠페인 URL 설정">
 
 Google Web Ads 캠페인은 각 인게이지먼트에 대해 최종 URL과 추적 템플릿 URL이라는 두 URL을 활용합니다. 이러한 URL은 광고를 클릭하면 동시에 활성화되는데, 구글에서는 이 기능을 병렬 추적이라고 합니다. 병렬 추적에 대한 자세한 내용은 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">구글 문서</Anchor>에서 확인할 수 있습니다.
+
+<div id="warning-2" />
+
+<div id="warning-1" />
 
 <div id="set-the-final-url" />
 
@@ -290,6 +302,10 @@ Google Web Ads 캠페인은 각 인게이지먼트에 대해 최종 URL과 추�
      ```
    * 사용자가 스토어로 리디렉션되지 않고 앱을 직접 다운로드하도록 하려는 경우 **앱 APK 파일에 대한 직접 다운로드 링크**.
 
+<div id="tip-1" />
+
+<div id="warning-3" />
+
 <div id="set-the-tracking-template-url" />
 
 #### 추적 템플릿 URL 설정
@@ -316,6 +332,10 @@ Google Ads는 기본적으로 병렬 추적을 사용하므로 추적 템플릿 
        **또는**
      * `af_r` 매개변수는`{lpurl}` Google ValueTrack 파라미터로 설정해야 합니다.
    * **단일 플랫폼 어트리뷰션 링크용 리디렉션 매개변수:** 병렬 추적이 의도한 대로 작동하려면 `{lpurl}` Google ValueTrack 매개변수로 설정하십시오.
+
+     <div id="note-3" />
+
+     <div id="warning-4" />
 
      > 🚧 **중요!**
      >
@@ -360,6 +380,8 @@ https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=tr
 * 추적 템플릿 URL에 어트리뷰션 링크를 **채우고** 사용자가 광고를 클릭한 후 랜딩 페이지의 CTA 버튼을 클릭하면, 한 번이 아닌 두 번의 클릭으로 기록되어 전환율 데이터에 영향을 미칠 수 있습니다.
 
 </Accordion>
+
+<div id="note-4" />
 
 <div id="create-a-landing-page-with-onelink-smart-script" />
 
@@ -422,6 +444,8 @@ W2A 스마트 스크립트 사용 사례는 다음 단계로 구성됩니다.
        2. **발신 URL 매개변수** 및 **수신 URL 매개변수**에 **wbraid**를 입력합니다.
        3. 위 단계를 반복하여 매개변수에 대해 수행합니다.
 
+     <div id="note-5" />
+
      > 📘 **참고**
      >
      > 앱스플라이어 로데이터 보고서에 표시하려면 수신 `gclid`, `gbraid`, `wbraid` 매개변수가 각각 전용 발신 `af_sub[1-5]` 매개변수에 매핑되어야 합니다 (발신 URL `gclid` , `gbraid`, `wbraid`파라미터 외 추가로).
@@ -451,6 +475,14 @@ W2A 스마트 스크립트 사용 사례는 다음 단계로 구성됩니다.
    * 수신 URL에 있는 경우 `gclid` 파라미터는 발신 URL 파라미터로 자동으로 전달되므로 수동 매핑이 필요하지 않습니다(스마트 스크립트 버전 2.8.1부터). 개발자에겐 여전히 `gclid`를 `af_sub` 파라미터 중 하나에 매핑하여 로데이터 리포트에서 사용할 수 있는 옵션이 있습니다. Google Ads GCLID를 참조하세요.
 
 </Accordion>
+
+<div id="view-in-raw-data-and-api-reports" />
+
+<div id="view-in-the-dashboard" />
+
+<div id="view-web-to-app-attribution-data" />
+
+<div id="note-6" />
 
 <div id="create-a-landing-page-with-onelink-smart-banners" />
 
@@ -540,6 +572,8 @@ Google Ads에서 액세스 토큰이 오프라인 전환을 업로드하는 데 
 스마트 스크립트 또는 스마트 배너의 외부 URL에는 Google OCI로 정상적으로 포스트백되어 Google Ads에 등록되도록 하기 위해 `gclid`, `wbraid`, 또는 `gbraid` 중 하나가 반드시 포함되어야 합니다.
 
 </Accordion>
+
+<div id="agency-managed-campaigns" />
 
 <div id="traits-and-limitations" />
 

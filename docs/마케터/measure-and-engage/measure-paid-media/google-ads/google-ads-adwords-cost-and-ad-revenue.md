@@ -32,6 +32,10 @@ x-zendesk:
   **참고:** 비용 데이터를 사용하려면 <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> 구독이 필요합니다.
 * 클릭 수에 대한 데이터, 노출 횟수, 보강된 데이터(키워드, 캠페인 이름, 광고 세트).
 
+<div id="tip" />
+
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > * MCC 계정이 지원됩니다.

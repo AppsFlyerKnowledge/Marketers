@@ -152,6 +152,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="note" />
+
 <div id="procedures" />
 
 ## 절차

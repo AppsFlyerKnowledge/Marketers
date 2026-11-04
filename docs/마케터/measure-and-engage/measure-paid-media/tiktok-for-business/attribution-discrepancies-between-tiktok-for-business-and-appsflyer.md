@@ -29,6 +29,26 @@ x-zendesk:
 
 모바일 유저 유입 생태계의 두 주요 업체인 TikTok for Business와 앱스플라이어는 서로 다른 어트리뷰션 모델을 사용합니다. 이로 인해 TikTok for Business와 앱스플라이어 대시보드 간에 불일치가 발생할 수 있습니다. TikTok for Business와 긴밀히 협력하여 이러한 불일치를 최소화하고 있지만, 광고주는 잠재적인 1. 일으키다. 2. 발생시키다. 원인을 이해해야 합니다.
 
+<div id="day-180" />
+
+<div id="day-91-180" />
+
+<div id="day-1-90" />
+
+<div id="in-app-event-attribution-periods" />
+
+<div id="ios-attribution" />
+
+<div id="different-time-zones" />
+
+<div id="crossdevice-attribution" />
+
+<div id="multichannel-sourceattribution" />
+
+<div id="viewthrough-attribution-lookback-window" />
+
+<div id="click-attribution-lookback-window" />
+
 <div id="differences-in-attribution-models" />
 
 ## 어트리뷰션 모델의 차이점
@@ -83,6 +103,14 @@ x-zendesk:
 > 📄 **예시**
 >
 > 예를 들어, 앱스플라이어에서 TikTok for Business의 클릭-쓰루 룩백 윈도우를 귀사의 앱 `com.greatapp`에 대해 1일로 설정했지만, TikTok for Business에서는 기본값인 7일로 설정되었다고 가정해 보세요. TikTok에서 Greatapp 광고를 클릭한 후 2&#126;7일 후에 처음 앱을 실행하는 유저는 앱스플라이어에서는 오가닉 사용자로, TikTok for Business에서는 자체 보고됩니다.
+
+<div id="missing-event-values-on-tiktok" />
+
+<div id="unsent-revenue" />
+
+<div id="unmapped-events" />
+
+<div id="selfattribution" />
 
 <div id="in-app-event-attribution" />
 

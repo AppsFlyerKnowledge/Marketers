@@ -36,6 +36,10 @@ x-zendesk:
 
 다음 표는 전환, 클릭, 노출에 대한 미디어 소스별 제한 사항을 나열합니다.
 
+<div id="uber" />
+
+<div id="discord" />
+
 <div id="note" />
 
 > 📘 **참고사항**
@@ -56,6 +60,8 @@ x-zendesk:
 | <span id="snapchat"></span>스냅챗 | <ul><li>2023년 3월 1일부터 스냅챗 언인스톨은 로데이터 리포트에 포함되지 않습니다.</li><li>뷰-쓰루 어트리뷰션은 제한적입니다. 다음은 로데이터 전달 도구에 포함되지 않습니다.<ul><li>미디어 소스 (snapchat\_int)</li><li>채널</li><li>어트리뷰트 터치 유형(노출)</li><li>귀속된 터치 시간(날짜로만 보고됨 - "dd\/mm\/yyyy")</li><li>캠페인은 *"제한됨"*으로 보고됩니다.</li></ul></li><li>스냅챗의 클릭 및 노출은 로데이터 리포트에 포함되지 않습니다.</li></ul> |
 | <span id="tiktok-for-business"></span>TikTok for Business | <ul><li>미디어 소스 (bytedanceglobal\_int 및 tiktokglobal\_int)<ul><li>채널</li><li>어트리뷰트 터치 유형(노출)</li><li>귀속된 터치 시간(날짜로만 보고됨 - "dd\/mm\/yyyy")</li><li>캠페인은 *"제한됨"*으로 보고됩니다.</li></ul></li><li>bytedanceglobal\_int의 노출은 로데이터 리포트에서 제한됩니다.</li><li>tiktokglobal\_int의 클릭 및 노출 로데이터 리포트는 데이터 락커를 통해 제한됩니다.</li></ul> |
 | <span id="x-ads-formerly-twitter"></span>X Ads(이전의 트위터) | <ul><li>일부 경우, X Ads는 로데이터를 앱스플라이어 플랫폼에서 사용할 수 없도록 합니다. 이런 경우에는 이벤트가 로데이터 리포트에 나타나지 않습니다.</li><li>X Ads의 클릭 및 노출은 로데이터 리포트에 포함되지 않습니다.</li></ul> |
+
+<div id="delivery-of-raw-data" />
 
 <div id="raw-data-context" />
 

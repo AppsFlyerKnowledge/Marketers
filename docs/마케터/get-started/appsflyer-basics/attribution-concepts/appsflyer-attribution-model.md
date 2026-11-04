@@ -232,6 +232,8 @@ AAP는 Apple의 SKAdNetwork 개인정보 보호 수준을 개인정보 보호 �
 
 </Accordion>
 
+<div id="engaged-click-attribution" />
+
 <div id="user-engagement-attribution-types" />
 
 ## 유저 인게이지먼트 어트리뷰션 유형
@@ -256,6 +258,8 @@ AAP는 Apple의 SKAdNetwork 개인정보 보호 수준을 개인정보 보호 �
 </Accordion>
 
 <div id="viewthrough-attribution" />
+
+<div id="engaged-view-attribution" />
 
 <Accordion title="뷰-쓰루 어트리뷰션">
 

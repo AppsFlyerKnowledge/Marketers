@@ -499,6 +499,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stubcertificate
 https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 ```
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > * 유효한 V2 API 토큰은 다음과 같이 요청 헤더에 삽입되어야 합니다:

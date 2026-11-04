@@ -303,6 +303,8 @@ Excel/Google 시트를 사용하여 CSV 파일을 만드는 경우 파일을 CSV
 
 </Accordion>
 
+<div id="see-also" />
+
 <div id="troubleshooting-traits-and-limitations" />
 
 ## 문제 해결, 특성 및 제한 사항

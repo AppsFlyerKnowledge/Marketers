@@ -24,6 +24,12 @@ x-zendesk:
 
 <Embed title="SKAN 4 컨버전 스튜디오 (잠금 기간 포함)" typeOfEmbed="iframe" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
 
+<div id="setting-up-conversion-values-in-skan-conversion-studio" />
+
+<div id="s2s-principles" />
+
+<div id="skan-conversion-studio-basics" />
+
 ## SKAN 컨버전 스튜디오 기본 사항
 
 SKAdNetwork(SKAN) 어트리뷰션 흐름에서 iOS 디바이스는 각 측정 기간이 끝난 후 가장 최근의 전환 값(CV)을 포함한 SKAN 포스트백을 보냅니다.
@@ -51,6 +57,8 @@ SKAN 4에서는, 각 3개의 창마다 종료된 후, 각각 2일, 7일, 35일 �
 *2024년 6월 23일부터 새로운 앱에서는 고정 모드를 사용할 수 없습니다.  모든 기능은 커스텀 및 SKAN4 모드에서 지원됩니다.
 
 **팁!** 컨버전 스튜디오를 사용해 실험해 보세요. 앱스플라이어에서 > **설정** > **SKAN 컨버전 스튜디오**로 이동합니다.
+
+<div id="measurement-principles-and-definitions" />
 
 <Accordion title="측정 원칙 및 정의">
 
@@ -108,6 +116,12 @@ SKAN 컨버전 스튜디오에서는 전환 값을 설정할 수 있는 여러 �
   * 인게이지먼트
 
 다음 섹션에서 다양한 측정 모드에 대해 더 보기.
+
+<div id="custom" />
+
+<div id="skan-4" />
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -197,7 +211,11 @@ altAppsFlyerAdmin\_us-en.pngalt커스텀 모드를 사용하여 컨버전 스튜
 
 </Accordion>
 
+<div id="fixed-modes" />
+
 <Accordion title="[기존] 고정 모드">
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -229,6 +247,10 @@ altAppsFlyerAdmin\_us-en.pngalt고정 모드를 사용하여 컨버전 스튜디
 5. **저장**을 클릭합니다.
 6. 파트너 인앱 이벤트 포스트백 매핑이 구성한 이벤트와 일치하는지 확인하세요.
 
+<div id="decode" />
+
+<div id="fixed-mode-measurement" />
+
 #### 고정 모드 측정
 
 | 측정 모드 | 설명 |
@@ -253,6 +275,56 @@ altAppsFlyerAdmin\_us-en.pngalt고정 모드를 사용하여 컨버전 스튜디
 4. 파트너 인앱 이벤트 포스트백 매핑이 구성한 이벤트와 일치하는지 확인하세요.
 
 </Accordion>
+
+<div id="inapp-related-metrics-available" />
+
+<div id="inapp-events-performed-by-users" />
+
+<div id="priority-measurement-detailed-example" />
+
+<div id="maximized-custom-cv-examples" />
+
+<div id="conversion-value-capacity-formula" />
+
+<div id="view-cv-mapping" />
+
+<div id="activity-window" />
+
+<div id="lock-window" />
+
+<div id="priority-measurement-component" />
+
+<div id="funnel-component" />
+
+<div id="revenue-component" />
+
+<div id="inapp-event-component" />
+
+<div id="single-source-of-truth" />
+
+<div id="example-b-conversion-measurement" />
+
+<div id="example-a-revenue-measurement" />
+
+<div id="note-1" />
+
+<div id="user-journey-scenarios" />
+
+<div id="measurement-priorities-setting-example" />
+
+<div id="example-4" />
+
+<div id="example-3" />
+
+<div id="example-2" />
+
+<div id="example-1" />
+
+<div id="csv-mapping-file-columns" />
+
+<div id="additional-information" />
+
+<div id="measurement-components" />
 
 ## 측정 구성 요소
 
@@ -687,6 +759,8 @@ altAppsFlyerAdmin\_us-en.pngalt고정 모드를 사용하여 컨버전 스튜디
 
 </Accordion>
 
+<div id="fixed-mode-examples" />
+
 <Accordion title="[기존] 고정 모드 예제">
 
 > 📘 **참고**
@@ -812,6 +886,20 @@ altAppsFlyerAdmin\_us-en.pngalt고정 모드를 사용하여 컨버전 스튜디
       <td>
         5명의 사용자가 앱을 인스톨하고 표에 나열된 횟수만큼 앱을 엽니다.
 
+        <div id="app-opens" />
+
+        <div id="skan-schema-analysis" />
+
+        <div id="skan-conversion-studio-api" />
+
+        <div id="events-tab" />
+
+        <div id="revenue-tab" />
+
+        <div id="conversion-values-tab" />
+
+        <div id="example-c-engagement-measurement" />
+
         #### 앱 열기
 
         |  | 이벤트가 수행되는 횟수 |
@@ -891,6 +979,12 @@ altAppsFlyerAdmin\_us-en.pngalt고정 모드를 사용하여 컨버전 스튜디
 
 </Accordion>
 
+<div id="disable-skan-measurement" />
+
+<div id="change-skan-measurement-mode" />
+
+<div id="additional-procedures" />
+
 ## 추가 절차
 
 <Accordion title="SKAN 측정 모드 변경">
@@ -914,6 +1008,8 @@ SKAdNetwork 측정을 끄려면:
 4. **변경 사항 저장**을 클릭하세요.
 
 </Accordion>
+
+<div id="report-events-by-servertoserver-api" />
 
 <Accordion title="서버-투-서버 API로 이벤트 보고">
 
@@ -950,7 +1046,31 @@ S2S 흐름은 다음과 같습니다:
 
 </Accordion>
 
+<div id="add-ssot-to-fixed-mode-measurements" />
+
 <Accordion title="고정 모드 측정에 SSOT 추가">
+
+<div id="specifications-and-limitations" />
+
+<div id="ssot-mapping-patterns" />
+
+<div id="support-anonymized-users" />
+
+<div id="conversion-value-decrease" />
+
+<div id="faq" />
+
+<div id="how-to-configure-mapping-patterns" />
+
+<div id="pairing" />
+
+<div id="half-and-half" />
+
+<div id="important-1" />
+
+<div id="examples" />
+
+<div id="note-2" />
 
 > 📘 **참고**
 >

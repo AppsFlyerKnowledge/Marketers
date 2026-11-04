@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 크로스 플랫폼 사용자 기반 어트리뷰션이 무엇인지, 어떻게 작동하는지, 그리고 AppsFlyer에서 설정하는 방법을 알아보세요.
 
+<div id="note" />
+
 <div id="what-is-user-based-attribution" />
 
 ## 사용자 기반 어트리뷰션이란?
@@ -68,6 +70,8 @@ CUID가 플랫폼 전반에 걸쳐 사용자를 일관되게 식별하며, 해�
 * **비활성 복원 윈도우 내에서:** 이벤트는 설정 가능한 기간(예: 7&#126;390일)으로 정의된 **비활성 기간(inactivity window)** 내에 포함되어야 합니다. 이 기간 동안 CUID는 여전히 활성으로 간주되며, 지정된 제품 라인 내에서 어트리뷰션 대상이 됩니다. 이 윈도우 내에 CUID가 보이지 않으면 이전 어트리뷰션 매핑이 무시됩니다.
 * **기기 수준 어트리뷰션 필드가 있습니다:** 이벤트는 이미 AppsFlyer의 전통적인 기기 기반 어트리뷰션 모델에서 파생된 유효한 **기기 수준 어트리뷰션 파라미터**(예: 미디어 소스, 캠페인 ID)를 포함해야 합니다.
 
+<div id="note-1" />
+
 <div id="how-is-the-attribution-source-determined" />
 
 ### 어트리뷰션 소스는 어떻게 결정되나요?
@@ -85,6 +89,8 @@ CUID가 플랫폼 전반에 걸쳐 사용자를 일관되게 식별하며, 해�
 > 📘 **참고**
 >
 > AppsFlyer는 동일한 제품군 **내에서** 동일한 CUID를 매칭합니다. 앱스플라이어는 다른 제품군이나 다른 고객을 대상으로 CUID를 매칭, 추정 또는 공유하지 않습니다. 이는 엄격한 개인정보 보호 우선 접근 방식을 보장하며, 각 고객의 데이터를 분리된 독립적인 상태로 유지합니다.
+
+<div id="tip" />
 
 <div id="the-cuid-enrichment-processing-window" />
 
@@ -122,6 +128,12 @@ CUID 보충 처리 창은 AppsFlyer가 새로 도착한 인앱 이벤트를 처�
 
 * **앱스플라이어에서** 앱을 제품 라인에 할당하고, 크로스 플랫폼 어트리뷰션을 선택하고, 비활성화 복구 기간을 지정합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/product-line-group-apps-for-cross-platform-attribution#how-to-set-up-a-product-line">제품 라인 설정</Anchor>을 참조하십시오.
 * 앱스플라이어 SDK를 CUID와 함께 이벤트를 보내도록 **앱에서** 설정합니다. 개발사 지침은 [고객 사용자 ID 설정](https://dev.appsflyer.com/hc/docs/set-customer-user-id) 항목을 참조하십시오.
+
+<div id="different-attribution-date" />
+
+<div id="different-attribution-logic" />
+
+<div id="frequently-asked-questions-faqs" />
 
 <div id="view-cross-platform-attribution-results" />
 

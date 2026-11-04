@@ -59,6 +59,8 @@ x-zendesk:
 
 많은 경우, 어시스트 소스를 통해 잠재적 사용자는 앱에 익숙해지지만, 어떤 이유인지 인스톨까지는 도달하지 못합니다. 따라서 캠페인 최적화 및 측정에 있어 어시스트를 측정하고 인식하는 것이 중요합니다.
 
+<div id="note" />
+
 <div id="assisted-installs-reporting" />
 
 ### 인스톨 어시스트 리포트
@@ -78,6 +80,10 @@ x-zendesk:
 * 연관된 에이전시 이름 (partner), 에이전시가 있는 경우.
 
 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview#유저-여정-리포트">사용자 여정 로데이터</Anchor>를 참조하십시오.
+
+<div id="note-2" />
+
+<div id="total-candidates-field" />
 
 <div id="note-1" />
 

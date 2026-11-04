@@ -73,7 +73,19 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 비용, 권한이�
 
 Pinterest의 뷰-쓰루 설치를 어트리뷰션하려면 이 옵션을 켭니다. 뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에 있습니다(아래 설명 참조).
 
+<div id="legacy-set-tag-id" />
+
 <div id="in-app-events-settings" />
+
+<div id="including" />
+
+<div id="to-users-from" />
+
+<div id="partner-event-name" />
+
+<div id="appsflyer-event-name" />
+
+<div id="in-app-event-postbacks" />
 
 ### 인앱 이벤트 설정
 

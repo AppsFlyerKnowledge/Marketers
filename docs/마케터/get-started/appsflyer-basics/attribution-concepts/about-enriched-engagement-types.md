@@ -31,6 +31,20 @@ x-zendesk:
 
 앱스플라이어는 선도적인 네트워크와의 협업을 통해 생태계 전반에 걸쳐 신뢰와 투명성을 제공하기 위해 인게이지먼트에 대한 새로운 표준을 도입하고 있습니다. 상세 인게이지먼트 유형은 유저가 광고를 보거나 상호작용할 때 보이는 순간적인 노출부터 직접적인 반응에 이르기까지 유저의 모든 인게이지먼트와 의도를 반영합니다. 이 프레임워크의 목표는 상세 인게이지먼트 유형 표준이 앱스플라이어의 파트너 생태계와 그 외의 관련 분야에서도 일관성있게 활용되도록 하는 것입니다. 광고주는 상세 인게이지먼트 유형을 통해 광고 지출 성과에 대한 매우 포괄적이면서도 표준에 입각한 정보를 확보할 수 있으며, 이러한 인사이트를 활용하여 예산을 효과적으로 분배하고 ROAS를 높일 수 있습니다.
 
+<div id="listening" />
+
+<div id="view" />
+
+<div id="engaged_view" />
+
+<div id="engaged_click" />
+
+<div id="click_to_app" />
+
+<div id="click_to_download" />
+
+<div id="preload" />
+
 <div id="what-are-enriched-engagement-types" />
 
 ## 상세 인게이지먼트 유형이란 무엇인가요?
@@ -212,6 +226,10 @@ Meta는 SRN API에서 engagement\_type=engaged\_view만 보고합니다. gp\_ref
 적극적 조회수는 **뷰-쓰루** 토글이 꺼져 있어도 측정 및 리포트됩니다. 해당 노출을 적극적 조회로 구분하려면 대시보드와 로데이터 리포트에서 지표를 사용하고, `engagement_type = engaged_views`에만 단독으로 의존하지 마십시오.
 
 </Accordion>
+
+<div id="owned-media-support" />
+
+<div id="cross-platform-engaged-view-support" />
 
 <div id="traits-and-limitations" />
 

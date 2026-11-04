@@ -87,6 +87,10 @@ x-zendesk:
 
 </Accordion>
 
+<div id="validation-rule-examples" />
+
+<div id="use-categorized-dimensions" />
+
 <div id="rule-builder" />
 
 ## 규칙 빌더
@@ -131,6 +135,10 @@ x-zendesk:
 모든 규칙에 다중 조건 및 조건 그룹을 추가할 수 있습니다.
 
 조건은 다음 표에 요약된 조건, 연산자 및 값에 따라 정의됩니다.
+
+<div id="note-1" />
+
+<div id="note" />
 
 <div id="bulk-upload" />
 
@@ -272,6 +280,22 @@ Protect360 조건은 다음 표에 요약된 조건, 연산자 및 값에 따라
 6. [선택사항] **트래픽 영향 평가**[를 클릭하여](/docs/implement-validation-rules-to-prevent-fraud#view-validation-rule-impact) 규칙이 트래픽에 영향을 주는지를 보십시오.
 7. **저장**을 클릭하세요.
 
+<div id="change-a-tagged-rule-to-implemented" />
+
+<div id="analyze-tagged-data" />
+
+<div id="set-a-rule-to-tagged-mode" />
+
+<div id="example-do-not-match-logic" />
+
+<div id="example-match-logic" />
+
+<div id="what-to-expect-when-configuring-a-rule" />
+
+<div id="rule-outcome-configuration" />
+
+<div id="how-tagged-mode-works" />
+
 <div id="note-2" />
 
 > 📘 **참고**
@@ -324,6 +348,16 @@ Protect360 조건은 다음 표에 요약된 조건, 연산자 및 값에 따라
 </Accordion>
 
 </Accordion>
+
+<div id="example-latest-version-calculation" />
+
+<div id="how-appsflyer-determines-the-latest-version" />
+
+<div id="understand-how-the-condition-works-with-multiple-apps" />
+
+<div id="example-not-in-last-major" />
+
+<div id="example-not-in-last" />
 
 <div id="faq" />
 

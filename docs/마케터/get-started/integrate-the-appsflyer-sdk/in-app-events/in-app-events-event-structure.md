@@ -34,6 +34,10 @@ x-zendesk:
 
 어떤 이벤트와 파라미터를 기록할지 판단하는 데 도움이 되도록, 비즈니스 분야별 예시와 흐름을 포함한 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview#recommended-events-by-business-vertical">문서</Anchor>를 참고하세요.
 
+<div id="lead-lead" />
+
+<div id="app-open-af_app_opened" />
+
 <div id="predefined-event-names" />
 
 ## 사전 정의된 이벤트 이름
@@ -782,6 +786,10 @@ x-zendesk:
 ## 미리 정의된 Event Parameter
 
 다음 섹션에서는 미리 정의된 Event Parameter 목록을 제공합니다. 각 Event Parameter는 Meta Ads, Google Ads, Snap, X Ads 및 Criteo에 대한 매핑이 포함되어 있습니다. 이벤트에 Event Parameter를 포함하도록 선택할 수 있습니다.
+
+<div id="h_01NEWAFNETREVENUE0001" />
+
+<div id="note-3" />
 
 <div id="note-2" />
 

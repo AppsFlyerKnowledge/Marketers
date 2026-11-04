@@ -142,6 +142,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 * 보고 기능 향상: 보고 요구사항에 최적화된 사용자 지정 대시보드 뷰를 생성해 보세요.
 * 더 스마트한 의사결정: KPI에 비즈니스에 특화된 맥락을 더해 트렌드와 패턴, 그리고 최적화 기회를 훨씬 쉽게 식별할 수 있습니다.
 
+<div id="pre-built-retargeting-campaigns-dimension" />
+
 <div id="suggested-custom-dimensions" />
 
 #### 제안된 사용자 지정 디멘션

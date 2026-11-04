@@ -127,6 +127,10 @@ Meta 웹 광고 통합을 활성화하려면 다음 단계를 따르세요.
    * **오가닉을 포함한 모든 미디어 소스** 파트너 매체와 오가닉 이벤트를 구분하지 않고, 성과가 발생한 모든 이벤트에 대해 포스트백 보내기.
 7. **포함** 열에서 이벤트가 수익 값과 함께 전송될지 여부를 선택합니다. <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration#포스트백에-포함할-데이터">포스트백에 포함할 데이터</Anchor> 참조
 
+   <div id="note-5" />
+
+   <div id="note-4" />
+
    <div id="important" />
 
    > 🚧 **중요!**

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: iOS 기기 사용자가 원링크 커스텀 링크를 클릭하고 유니버설 링크가 앱을 열지 못하는 경우의 흐름을 이해합니다.
 
+<div id="note" />
+
 <div id="about-uri-fallback-for-ios" />
 
 ## iOS용 URI 폴백 정보

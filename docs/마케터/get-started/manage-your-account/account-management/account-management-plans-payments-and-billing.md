@@ -118,6 +118,12 @@ x-zendesk:
 | --- | --- | --- |
 | ROI360 달러 단위 | ROI360 애드온을 통해 측정된 귀사의 광고 비용, 인앱 광고 수익, 인앱 구매 수익 (구독 포함)이 기록된 달러 단위입니다. 각 단위는 기록된 ROI360 측정의 1달러를 나타냅니다. | <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-cost-and-revenue-data">ROI360—비용 및 수익 데이터</Anchor> |
 
+<div id="understand-billing-for-extended-platform-apps" />
+
+<div id="what-isnt-billed" />
+
+<div id="what-is-billed" />
+
 <div id="roi360-dollar-units" />
 
 #### ROI360 달러 단위
@@ -314,6 +320,26 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 > 📘 **참고**
 >
 > 탭은 결제가 필요한 플랜([Welcome 또는 Zero](/docs/account-management-plans-payments-and-billing#appsflyer-plans) 이외의 플랜)에만 사용할 수 있습니다.
+
+<div id="other-payment-methods" />
+
+<div id="credit-card" />
+
+<div id="ach-for-us-customers-recurring-or-paynow" />
+
+<div id="managing-payment-methods" />
+
+<div id="set-up" />
+
+<div id="paynow-manual-invoice-payment" />
+
+<div id="note-6" />
+
+<div id="hands-free-recurring-payments" />
+
+<div id="payment-types" />
+
+<div id="recommended-for-us-customers-ach-automated-clearing-house" />
 
 <div id="payment-methods-easy--secure-invoicing" />
 

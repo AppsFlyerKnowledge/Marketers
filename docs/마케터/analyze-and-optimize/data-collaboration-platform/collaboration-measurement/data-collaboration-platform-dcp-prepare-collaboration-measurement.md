@@ -116,6 +116,10 @@ x-zendesk:
 
 </Accordion>
 
+<div id="background-colors" />
+
+<div id="media-partners" />
+
 <div id="prepare-custom-source-files" />
 
 ## 커스텀 소스 파일 준비

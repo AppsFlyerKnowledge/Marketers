@@ -126,6 +126,8 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 8. 커넥터 섹션에서 AppsFlyer connection 옆에 있는 **연결**을 클릭합니다.
 9. 로그인 창이 뜨면 앱스플라이어에 로그인합니다.
 
+<div id="note-2" />
+
 <div id="test-the-claude-connection" />
 
 #### Claude 연결 테스트
@@ -448,6 +450,16 @@ AppsFlyer MCP는 한 번에 하나의 AppsFlyer 계정에 연결됩니다.
 ### 사용 사례 및 프롬프트
 
 앱스플라이어 MCP는 마케팅 분석 정보 및 성과 인사이트를 불러오고 설정 작업을 수행할 수 있도록 툴과 리소스를 제공합니다.
+
+<div id="h_01M6DQ8W2JQ9ECH5VEZPRT7221" />
+
+<div id="h_analyze-incrementality-experiments" />
+
+<div id="h_analyze-creative-performance" />
+
+<div id="note-6" />
+
+<div id="note-5" />
 
 <div id="important" />
 

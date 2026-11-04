@@ -24,6 +24,12 @@ x-zendesk:
 ---
 > **한눈에 보기:** 웹사이트에 앱스플라이어 웹 SDK(픽셀)를 설치하여 사용자 방문 및 이벤트를 앱스플라이어에 보고하고, 고유한 고객 사용자 ID(CUID)를 설정하여 여러 플랫폼 간의 여정을 통합하세요.
 
+<div id="note" />
+
+<div id="integrate-the-sdk-with-an-ai-coding-agent" />
+
+<div id="integrate-the-sdk-manually" />
+
 <div id="overview" />
 
 ## 개요
@@ -55,6 +61,8 @@ x-zendesk:
 
 1. 앱스플라이어 측면 메뉴에서 **인게이지(Engage)** > **웹-to-앱(Web to App)** > **스마트 배너(Smart Banners)** 를 선택합니다.
 2. 필요한 스마트 배너 키를 복사합니다.
+
+<div id="warning" />
 
 <div id="2-select-a-code-snippet" />
 
@@ -211,6 +219,8 @@ Advanced SDK SDK Verification 는 선택 사항입니다. 표준 통합은 여�
 
 </Accordion>
 
+<div id="note-1" />
+
 <div id="3-deploy-the-snippet" />
 
 ## 3. Deploy the 스냅트
@@ -329,6 +339,8 @@ SDK가 페이지 로드 당 한 번 로드되었는지 확인하고 GTM 우선 �
 
 </Accordion>
 
+<div id="note-2" />
+
 <div id="4-make-sure-the-sdk-is-working" />
 
 ## 2. SDK가 작동하는지 확인하십시오.
@@ -353,6 +365,8 @@ SDK가 페이지 로드 당 한 번 로드되었는지 확인하고 GTM 우선 �
    * (E) 상태 코드는 200입니다.
 8. `site_id`가 AppsFlyer > 상단 메뉴 > **내 앱**의 `WEB_SDK_KEY`와 일치하는지 확인합니다.
 9. SDK가 한 번만 로드되도록 하십시오. SDK가 여러 번 로드되면 SDK 기능이 중지될 수 있습니다.
+
+<div id="important" />
 
 <div id="5-set-and-record-events" />
 
@@ -459,6 +473,8 @@ window.onload = function(){
 </body>
 </html>
 ```
+
+<div id="important-1" />
 
 <div id="2-configure-the-gtm-tag" />
 
@@ -787,6 +803,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 <Accordion title="이벤트 보내기를 선택하거나 선택하지 않음">
 
 측정을 두 가지 방법으로 제어할 수 있습니다.
+
+<div id="note-3" />
 
 <div id="sdk-initial-state-setting-in-the-snippet" />
 

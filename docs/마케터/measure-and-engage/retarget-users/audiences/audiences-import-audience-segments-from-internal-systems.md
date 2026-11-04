@@ -109,6 +109,8 @@ CSV 파일을 업로드하거나 오디언스 가져오기 API를 사용하여 �
 
   <Image alt="CSV.jpg" src="https://support.appsflyer.com/hc/article_attachments/18502652300561" width="339px" />
 
+<div id="note" />
+
 <div id="identifier-hash" />
 
 #### 식별자 해시

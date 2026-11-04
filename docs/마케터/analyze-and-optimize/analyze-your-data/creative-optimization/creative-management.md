@@ -244,6 +244,10 @@ Meta 의 경우 기존 광고 세트 내에 광고를 만들 수 있습니다.
 
 #### Mintegral
 
+<div id="note-3" />
+
+<div id="applovin" />
+
 <div id="note-2" />
 
 > 📘 **참고**

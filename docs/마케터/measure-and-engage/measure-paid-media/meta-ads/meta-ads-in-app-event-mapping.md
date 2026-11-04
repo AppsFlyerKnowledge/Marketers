@@ -141,7 +141,7 @@ SDK에 설정된 이벤트 이름 및 이벤트 값(이벤트 파라미터 포�
 | af\_user\_score | fb\_user\_score |
 
 
-| **<span id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter"></span><span id="value-to-sum"></span>Meta event** |  |
+| **<span id="important"></span><span id="example-unified-format-compatible-with-meta-and-tiktok"></span><span id="note-1"></span><span id="send-complex-in-app-events-to-meta-ads"></span><span id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter"></span><span id="value-to-sum"></span>Meta event** |  |
 | --- | --- |
 | fb\_모바일\_수준\_달성 | none |
 | fb\_mobile\_add\_payment\_info | none |

@@ -677,6 +677,8 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 7. **저장**을 클릭합니다.  
    업로드 후 24 시간이 지나면,스냅챗 대시보드에 오디언스가 표시됩니다.
 
+<div id="x-formerly-twitter" />
+
 <div id="note-1" />
 
 > 📘 **참고**

@@ -64,6 +64,8 @@ x-zendesk:
   * 앱스플라이어가 이벤트나 이벤트 파라미터의 이름을 변경하더라도 귀사의 구현은 이전 버전과 호환됩니다.
 * **커스텀:** 이는 귀사의 앱에서 발생하는 특정 사용자 시나리오에 대해 정의한 이벤트 이름과 파라미터입니다. 어떤 커스텀 이벤트 이름이나 파라미터 이름을 사용할 수 있지만, 커스텀 이벤트는 귀사의 개발자가 유지 보수해야 함을 명심하세요. [팁](/docs/in-app-events-overview#tips) 및 [제한 사항](/docs/in-app-events-overview#limitations)을 참조하세요.
 
+<div id="note" />
+
 <div id="revenue-in-in-app-events" />
 
 ## 인앱 이벤트 수익

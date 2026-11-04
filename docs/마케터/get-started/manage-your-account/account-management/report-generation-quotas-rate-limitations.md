@@ -47,6 +47,10 @@ x-zendesk:
 | 코호트 API | 1 분, 1 계정 당 60개 콜 |
 | SKAN 통합 리포트 | 1 분, 1 계정 당 10개 콜 |
 
+<div id="note" />
+
+<div id="pull-api-raw-data-daily-quota" />
+
 <div id="raw-data" />
 
 ### 로데이터

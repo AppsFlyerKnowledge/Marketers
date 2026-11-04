@@ -81,6 +81,8 @@ x-zendesk:
    <Image alt="새로운 Aud 비주얼 오디언스 builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. 아래의 **잠재 고객 작성기** 과정을 진행하십시오.
 
+<div id="note-1" />
+
 <div id="step-1-details-and-sources" />
 
 #### 1단계: 세부 정보 및 소스
@@ -117,6 +119,12 @@ x-zendesk:
      최근 "X" 일 사이의 값보다 작거나 같음(현재 일 포함 가능)
    * 연산자로 필터링할 수 있는 **텍스트 속성**:  
      같음 또는 비슷함
+
+     <div id="working-with-transactional-data-sources" />
+
+     <div id="note-3" />
+
+     <div id="summary-right-side-preview-pane" />
 
      <div id="note-2" />
 
@@ -163,6 +171,8 @@ x-zendesk:
 
 오디언스 이름을 지정하고 **다음**을 클릭합니다.
 
+<div id="note-5" />
+
 <div id="build-query" />
 
 #### 쿼리 생성
@@ -172,6 +182,18 @@ x-zendesk:
 3. **테스트**를 클릭하고 쿼리 문서 아래에 표시된 쿼리 결과(잠재 고객 샘플)를 검토합니다.
 4. 다음 단계의 **오디언스 작성기** 워크스루를 진행하려면 **계속**을 클릭한 다음 **다음**을 클릭하거나 나중에 다시 시작하고 **초안으로 저장**합니다.
 5. 계속하여 [잠재 고객 전송](#오디언스-활성화를-위해-보내기).
+
+<div id="nonaggregated-transactional-query" />
+
+<div id="transactional-source-joined-directly-to-another-transactional-source" />
+
+<div id="aggregated-transactional-output-in-downstream-joins" />
+
+<div id="transactional-source-joined-to-a-profileuserlevel-source" />
+
+<div id="single-transactional-source-with-aggregation" />
+
+<div id="transactional-data-in-sql-queries" />
 
 <div id="the-sql-audience-builder" />
 
@@ -197,6 +219,8 @@ SQL 빌더를 사용하여 데이터를 쿼리하고 오디언스를 생성합�
 * 오디언스를 미디어 파트너와 [**연결시키세요**](#잠재고객을-미디어-파트너에-연결) - 미디어 파트너 플랫폼에는 Meta Ads, Google Ads 등이 있습니다. 유료 캠페인, 리마케팅 또는 유사 확장을 실행할 때 잠재 고객과 미디어 파트너를 연결합니다.
 * [**오디언스를 클라우드 서비스로 내보내기**](#오디언스를-클라우드-서비스로-내보내기) - 클라우드 스토리지는 앱스플라이어 데이터 락커를 통해 관리됩니다. BI 모델, CDP 또는 내부 강화 파이프라인에서 파일이 필요한 경우 잠재 고객을 클라우드 서비스에 연결합니다.
 
+<div id="connect-an-audience-to-media-partners" />
+
 <div id="note-6" />
 
 > 📘 **참고**
@@ -207,6 +231,10 @@ SQL 빌더를 사용하여 데이터를 쿼리하고 오디언스를 생성합�
 #### 잠재고객을 미디어 파트너에 연결
 
 Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/10010286?hl=en">Google Ads</Anchor>와 같은 선호하는 미디어 파트너 플랫폼에서 활성화를 위해 오디언스를 직접 전송합니다. 시스템은 사용자 ID의 CSV를 전달하며, 파트너가 필요한 경우 자동으로 해시합니다.
+
+<div id="export-to-cloud-storage" />
+
+<div id="note-8" />
 
 <div id="note-7" />
 
@@ -244,6 +272,10 @@ Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads
    오디언스를 클라우드로 내보내기
 2. 오디언스를 전송할 수 있는 목록에서 기존 클라우드 연결을 선택하려면 **연결 선택**을 클릭하거나 데이터 락커에서 <Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers#set-up-data-locker">새로운 연결 만들기</Anchor>를 위해 **+ 새 연결** 을 클릭합니다. 사용 방법은 여기를 참조하세요.
 3. **저장하고 닫기를 클릭합니다**. 오디언스가 선택된 클라우드 서비스로 전송됩니다. 이 프로세스는 최대 15분 정도 소요될 수 있습니다.
+
+<div id="view-audience-statuses" />
+
+<div id="access-audience-management" />
 
 <div id="manage-audiences" />
 

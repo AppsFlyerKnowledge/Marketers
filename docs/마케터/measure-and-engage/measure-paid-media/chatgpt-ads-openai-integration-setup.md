@@ -88,6 +88,8 @@ x-zendesk:
 * **API 키** - Events API 호출을 인증하려면 API 키가 필요합니다. ChatGPT Ads Manager 계정의 '전환(Conversions)' 탭에서 확인하세요.   
   **참고:** 필요한 권한을 확보하려면 CAPI 키가 필요하므로, 광고 관리 API 키가 아닌 전환 API 키를 사용해야 합니다.
 
+<div id="note" />
+
 <div id="advanced-privacy" />
 
 ##### **고급 개인정보 보호**

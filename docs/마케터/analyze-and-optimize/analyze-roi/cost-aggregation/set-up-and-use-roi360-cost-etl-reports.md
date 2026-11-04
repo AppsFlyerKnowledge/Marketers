@@ -54,6 +54,12 @@ x-zendesk:
 * 귀사 비즈니스의 요구사항에 가장 잘 맞는 차원과 지표를 사용하시기 바랍니다. 이것은 미디어 소스에 따라 달라질 수 있습니다.
 
 
+<div id="data-freshness" />
+
+<div id="cost-etl-connection-directory-structure" />
+
+<div id="data-locker-connection-directory-structure" />
+
 <div id="report-details" />
 
 <div id="directory-and-filename-structure" />
@@ -144,11 +150,17 @@ x-zendesk:
 
 </Accordion>
 
+<div id="aws-object-ownership" />
+
 <div id="change-from-cost-etl-to-data-locker-connection" />
 
 <div id="change-data-locker-connection" />
 
 <div id="edit-connection" />
+
+<div id="edit-or-change-connection" />
+
+<div id="set-up-cost-etl" />
 
 <div id="procedures" />
 
@@ -259,6 +271,10 @@ AWS에서 앱스플라이어가 귀하의 버킷에 객체를 작성할 기본 �
 5. **버킷 소유자 우선.** 옵션을 선택하세요.
 6. **저장**을 클릭합니다.
 
+
+<div id="combine-geo-report-and-all-cost-report" />
+
+<div id="report-schedule" />
 
 <div id="best-practices" />
 

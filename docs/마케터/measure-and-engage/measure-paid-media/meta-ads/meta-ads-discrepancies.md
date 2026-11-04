@@ -136,6 +136,8 @@ Meta 광고는 교차 기기 기여에 대해 보고합니다. 때로는 어떤 
 > GreatApp의 UA 매니저 제프는 북미의 스페인어 사용자만을 타겟으로 하는 SPNA 캠페인을 만듭니다. 이를 검증하기 위해 제프는 캐나다와 미국 사용자만 수용하는 검증 규칙을 정의합니다.
 > 스페인의 Meta 광고 사용자가 앱을 클릭하여 설치하면 Meta 광고는 설치를 자체 보고하지만 앱스플라이어는 유효성 검사 규칙을 통과하지 못한 설치를 거부합니다.
 
+<div id="meta-probabilistic-modeling-aem-discrepancies-in-ios-apps" />
+
 <div id="sdk-related-discrepancies" />
 
 ## SDK 관련 불일치

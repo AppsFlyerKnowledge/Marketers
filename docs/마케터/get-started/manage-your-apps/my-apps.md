@@ -21,6 +21,12 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어에서 모든 앱을 확인하고, 검색 및 필터링하고, 선호하는 앱을 고정하고, 각 앱에 대해 특정 작업을 수행합니다.
 
+<div id="more-app-options" />
+
+<div id="switch-between-list-and-card-views" />
+
+<div id="add-an-app" />
+
 <div id="overview" />
 
 ## 개요

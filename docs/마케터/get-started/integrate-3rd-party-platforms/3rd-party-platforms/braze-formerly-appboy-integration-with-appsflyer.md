@@ -180,6 +180,8 @@ Braze는 고유한 API 키와 REST 엔드포인트를 통해 앱스플라이어�
 * 광고 그룹 이름
 * 광고 이름
 
+<div id="note-1" />
+
 <div id="default-postbacks" />
 
 ### 기본 포스트백

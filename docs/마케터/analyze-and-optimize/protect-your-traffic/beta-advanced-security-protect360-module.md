@@ -38,6 +38,10 @@ SDK 스푸핑은 공격자가 실제 기기에 앱을 설치하거나 실행하�
 
 광고자에게 SDK 스푸핑은 실제 발생하지 않은 설치 및 참여, 부풀려진 설치 수량, 앱스플라이어와 앱 스토어 데이터 간의 불일치, 그리고 광고비 낭비로 이어질 수 있습니다.
 
+<div id="important-1" />
+
+<div id="prerequisites" />
+
 <div id="about-the-advanced-security-module" />
 
 ## Advanced Security Module에 대해

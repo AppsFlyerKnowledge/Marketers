@@ -47,6 +47,8 @@ x-zendesk:
 | Yes | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)데이터 락커에 리포트를 추가하려면:<ol><li>앱스플라이어의 사이드 메뉴에서 **내보내기 > 데이터 락커**를 선택합니다.</li><li>가져올 리포트를 모두 선택합니다.</li><li>**구성 저장**을 클릭합니다.<br />리포트는 다음 날 사용할 수 있습니다.</li></ol> |
 | 아니요 | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)**To set up Data Locker**:<ol><li>최초 데이터 락커(<Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers#set-up-data-locker">광고주</Anchor> \| <Anchor target="_blank" href="/partners/ko/docs/data-locker-for-partners">파트너</Anchor>) 설정을 완료하십시오.</li><li>데이터 락커에 리포트를 추가합니다.<ol><li>앱스플라이어의 사이드 메뉴에서 **내보내기 > 데이터 락커**를 선택합니다.</li><li>가져올 리포트를 모두 선택합니다.</li><li>**구성 저장**을 클릭합니다.<br />리포트는 다음 날 사용할 수 있습니다.</li></ol></li></ol> |
 
+<div id="cohort-versioned-report" />
+
 <div id="reports-available" />
 
 ## 사용 가능한 리포트
@@ -351,6 +353,8 @@ bucket
 * **dt**: 보고서에 포함된 이벤트가 발생한 날짜.
 * **t:** 보고서 유형.
 * **버전**: 버전이 생성되었을 때의 Unix 타임스탬프.
+
+<div id="cohort-timezone-versioned-report" />
 
 <div id="report-versions-and-data-freshness" />
 

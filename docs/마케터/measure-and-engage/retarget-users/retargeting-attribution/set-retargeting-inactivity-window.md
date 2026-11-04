@@ -152,6 +152,8 @@ x-zendesk:
 | Google Ads | <ul><li>리타겟팅 활성화/비활성화 불가능</li><li>에이전시에게 권한이 있다면, 비활성 기간을 구성할 수 있음</li></ul> |
 | Meta 광고/X 광고/Snapchat | 리타겟팅 및 비활성 기간 설정 접근 불가능 |
 
+<div id="traits-and-limitations" />
+
 #### Non-SRN
 
 리타겟팅을 지원하는 파트너

@@ -84,6 +84,8 @@ x-zendesk:
 | 3 | 마케터 | [어트리뷰션 링크 준비](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | 채널 이름과 결합된 앱 ID로 어트리뷰션 링크를 준비합니다. |
 | 4 | 개발자 및 마케터 | [테스트](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [테스트](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
 
+<div id="note-1" />
+
 <div id="procedures" />
 
 ## 절차
@@ -230,6 +232,8 @@ APK/매니페스트에 설정된 안드로이드 패키지 이름과 채널의 �
 | 새로운 오가닉 인스톨에 대한 개요 페이지를 확인하십시오("오가닉" 미디어 소스 아래). 현재 단일 앱 방식으로는 오가닉 인스톨의 출처에 대한 표시가 없습니다. | <ol><li>테스트한 스토어로 지정된 앱의 대시보드와 개요 페이지로 이동합니다.</li><li>인스톨 전환 하나가 "오가닉" 미디어 소스 아래에 있는 것을 볼 수 있습니다.</li></ol> |
 
 </Accordion>
+
+<div id="3rd-party-raw-data" />
 
 <div id="additional-features" />
 

@@ -85,6 +85,72 @@ x-zendesk:
 
 </Accordion>
 
+<div id="what-happens-if-a-report-runs-more-than-once-on-the-same-day" />
+
+<div id="how-do-i-add-new-inapp-events-to-an-existing-custom-creative-etl-report" />
+
+<div id="can-i-have-multiple-custom-creative-etl-reports-with-different-report-types" />
+
+<div id="can-i-run-both-standard-creative-etl-and-custom-creative-etl-at-the-same-time" />
+
+<div id="whats-the-difference-between-standard-creative-etl-and-custom-creative-etl" />
+
+<div id="custom-creative-etl" />
+
+<div id="see-also" />
+
+<div id="faq" />
+
+<div id="limitations" />
+
+<div id="in-app-events" />
+
+<div id="metrics" />
+
+<div id="note-7" />
+
+<div id="ai-dimensions" />
+
+<div id="dimensions" />
+
+<div id="mandatory-fields" />
+
+<div id="schema-reference" />
+
+<div id="data-delivery" />
+
+<div id="note-6" />
+
+<div id="report-management" />
+
+<div id="important-1" />
+
+<div id="note-5" />
+
+<div id="edit-an-existing-report" />
+
+<div id="important" />
+
+<div id="note-4" />
+
+<div id="note-3" />
+
+<div id="what-is-a-schema" />
+
+<div id="step-3---schema" />
+
+<div id="note-2" />
+
+<div id="step-2---details" />
+
+<div id="step-1---destination" />
+
+<div id="set-up-custom-creative-etl" />
+
+<div id="before-you-begin" />
+
+<div id="note-1" />
+
 <div id="available-data" />
 
 <Accordion title="활용 가능 데이터">

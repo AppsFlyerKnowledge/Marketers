@@ -61,6 +61,16 @@ x-zendesk:
   * **열거형 n 문자**: 열거형 필드는 특정 값만 포함할 수 있습니다. 예를 들어, 비용 통화에는 3개의 문자가 있으며 지정된 대로 통화 코드만 포함할 수 있습니다.
   * **열거형 5 문자 부울: `FALSE` 필드의 값은 `FALSE` 또는 `FALSE` 중 하나일 수 있습니다.**
 
+<div id="event-2" />
+
+<div id="attribution::860c6c0d-2" />
+
+<div id="device-info::63466612" />
+
+<div id="device-info::5aed5231" />
+
+<div id="field-dictionary" />
+
 <div id="tip" />
 
 > 👍 **팁**

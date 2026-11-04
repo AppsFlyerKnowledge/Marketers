@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어는 Google Play 자동 설치l(PAI)를 사용하여 마케터가 모바일 통신사 및 앱 검색 파트너와 계약을 맺고 사용자가 기기를 처음 켤 때 앱을 미리 로드하는 프리로드 캠페인에 설치를 어트리뷰션합니다. **참고**: 이 어트리션 방법은 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-factory-preinstall-using-manifest-android">APK 사전 설치 어트리뷰션</Anchor>과 다릅니다.
 
+<div id="note" />
+
 <div id="pai-preload-attribution" />
 
 ## PAI 프리로드 어트리뷰션
@@ -62,6 +64,8 @@ Google Play 자동 설치(PAI) 사전 로드 성능 데이터는 다음에서 �
 * Match\_type = preload\_pai
 * Campaign\_name = 캠페인 프리로드 기준 `<preloadpartner ID>`
 
+<div id="note-1" />
+
 <div id="set-up-google-play-auto-install-pai-preload-attribution" />
 
 ### Google Play 자동 설치(PAI) 프리로드 어트리뷰션 설정
@@ -74,6 +78,8 @@ Google Play 자동 설치(PAI) 사전 로드 성능 데이터는 다음에서 �
 4. **프리로드 기여 기간**을 설정합니다. 기간: 1-180일.
 5. **연동 저장**을 클릭합니다.
 6. 프리로드 파트너에게 캠페인에 기여할 준비가 되었음을 알립니다.
+
+<div id="note-2" />
 
 <div id="partners-supporting-google-play-auto-install-pai-preload-campaigns" />
 

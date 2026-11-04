@@ -28,6 +28,10 @@ x-zendesk:
 
 앱스플라이어 크로스 플랫폼 OneLink 링크(노출 URL)를 사용하면 한 플랫폼의 인스톨을 다른 플랫폼에 표시된 광고 뷰로 어트리뷰션할 수 있습니다. 동일한 가구 내에서 이루어지는 여러 설치는 동일한 크로스 플랫폼 광고 노출에 어트리뷰트될 수 있습니다.
 
+<div id="set-up-cross-platform-partner-integration" />
+
+<div id="create-a-onelink-templatefor-cross-platform-attribution" />
+
 ## 크로스 플랫폼 어트리뷰션을 위한 원링크 템플릿을 생성하거나 편집합니다.
 
 단일 템플릿이 여러 플랫폼에서 앱을 지원합니다(즉, 하나의 템플릿이 모든 플랫폼에서 작동합니다).
@@ -39,6 +43,18 @@ x-zendesk:
 ## 크로스 플랫폼 파트너 통합 설정
 
 크로스 플랫폼 노출 URL을 사용하여 크로스 플랫폼 귀속을 설정하려면 각 대상 앱에 대해 파트너 통합을 구성합니다.
+
+<div id="equal-priority-advanced-setting" />
+
+<div id="step-2-enable-viewthrough-attribution" />
+
+<div id="h_01K2HBXDWSG3R1WZXT5RB0W48D" />
+
+<div id="note" />
+
+<div id="important-1" />
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -60,6 +76,8 @@ x-zendesk:
 2. **연동 저장**을 클릭합니다.
 
 </Accordion>
+
+<div id="step-4-create-an-attribution-link-crossplatform-impression-url" />
 
 <Accordion title="3단계: 어트리뷰션 링크(크로스 플랫폼 노출 URL)를 만듭니다.">
 
@@ -102,6 +120,34 @@ x-zendesk:
 ## 애드 네트워크 목록
 
 CTV, PC 및 콘솔 플랫폼에 광고를 표시하고 크로스 플랫폼 속성(예: CTV-투-모바일 앱)을 지원하는 광고 네트워크 목록은 <Anchor target="_blank" href="https://hq1.appsflyer.com/partner-marketplace/explore?integrationLevels=CROSS_PLATFORM">앱스플라이어 파트너 마켓플레이스</Anchor>에서 확인할 수 있습니다. 앱스플라이어 계정에 로그인해야 합니다.
+
+<div id="agency-permissions" />
+
+<div id="cross-platform-attribution-links-in-mobile-devices" />
+
+<div id="ctvto-mobile" />
+
+<div id="ip-masking" />
+
+<div id="reporting" />
+
+<div id="household-attribution" />
+
+<div id="attribution-method" />
+
+<div id="retargeting" />
+
+<div id="attribution-window" />
+
+<div id="why-don-t-i-see-impressions-for-my-crossplatform-campaigns-in-the-dashboard" />
+
+<div id="does-enable-viewthrough-attribution-via-probabilistic-modeling-need-to-be-turned-on" />
+
+<div id="faq" />
+
+<div id="discrepancies" />
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제한 사항
 

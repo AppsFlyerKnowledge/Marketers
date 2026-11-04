@@ -171,6 +171,8 @@ Marketplace 탭에는 선택한 앱과 통합할 수 있는 파트너와 통합 
 * 지원되는 기능 파트너가 지원하는 앱스플라이어 연동 기능을 확인하세요.
 * **파트너 세부 정보:** 파트너가 제공한 서비스, 역량, 서비스 약관 등의 정보입니다.
 
+<div id="note-1" />
+
 <div id="contact-the-partner" />
 
 ## 파트너에게 연락하기
@@ -185,6 +187,8 @@ Marketplace 탭에는 선택한 앱과 통합할 수 있는 파트너와 통합 
 
 * **소개하기** 버튼은 파트너가 관련 연락처 정보를 제공한 경우에만 나타납니다.
 * 일부 파트너는 랜딩 페이지를 통해 연락받기를 선호합니다. 이 경우, **나를 소개해주세요** 대신 **파트너에게 연락하기** 버튼이 나타납니다.
+
+<div id="note-2" />
 
 <div id="integrate-with-a-new-partner" />
 
@@ -202,11 +206,15 @@ Marketplace 탭에는 선택한 앱과 통합할 수 있는 파트너와 통합 
 2. 파트너를 검색하여 선택합니다. 파트너 카드 또는 **을 클릭하십시오.** 통합 **통합 설정 페이지를 열기 위한 버튼입니다.**
 3. **파트너 활성화**를 켜고 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner">나머지 연동 섹션을 설정</Anchor>합니다.
 
+<div id="partner-verification" />
+
 <div id="invite-new-partners-to-appsflyer" />
 
 ## 앱스플라이어에 새로운 파트너 초대하기
 
 애드 네트워크가 아직 앱스플라이어에 연동되지 않았다면 초대 링크를 발송할 수 있습니다.
+
+<div id="note-3" />
 
 <div id="validation-period-for-new-integrations" />
 

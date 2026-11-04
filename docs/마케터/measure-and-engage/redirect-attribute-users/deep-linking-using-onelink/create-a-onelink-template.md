@@ -195,6 +195,8 @@ x-zendesk:
 
       <div id="h_01H9Q4E7VR4CAK0PJY269GQ9XJ" />
 
+      <div id="tip" />
+
       > 👍 **팁**
       >
       > * 앱 스킴 이름은 Apple과 Google 모두에서 중복되어도 허용됩니다. **브랜드 고유의 스킴 이름을 선택하여** 여러 애플리케이션에서 스킴이 충돌하지 않도록 하세요. 스킴 이름으로는 일반적으로 앱의 번들 ID를 사용하는 것이 권장됩니다. 예시: **com.company.app**
@@ -218,6 +220,10 @@ x-zendesk:
    </Tabs>
 
 6. **원링크 템플릿 업데이트**를 클릭합니다.
+
+<div id="h_favicon" />
+
+<div id="note-2" />
 
 <div id="note-1" />
 

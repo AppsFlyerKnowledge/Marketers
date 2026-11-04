@@ -229,6 +229,12 @@ iOS 자격 증명을 설정하려면, 다음 단계를 따르십시오:
 
 </Accordion>
 
+<div id="note-1" />
+
+<div id="option-2---your-endpoint-as-the-primary-endpoint" />
+
+<div id="option-1-recommended---appsflyer-as-the-primary-endpoint" />
+
 <div id="step-2-ios-set-up-app-store-server-notifications" />
 
 ## 2단계 (iOS): 앱 스토어 서버 알림 활성화

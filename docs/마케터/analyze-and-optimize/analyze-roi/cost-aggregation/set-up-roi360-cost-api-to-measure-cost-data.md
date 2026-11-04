@@ -26,6 +26,18 @@ x-zendesk:
 ---
 > **요약:** 특정 앱의 비용을 활성화하세요.
 
+<div id="additional-steps-specific-media-sources-only" />
+
+<div id="h_01M43Y9WQ8HK1N0GJNW5BH4MPZ" />
+
+<div id="h_01M43Y9WQ8WCXWQ0S9ZAT59CWW" />
+
+<div id="map-apps-to-package-names-or-bundle-ids" />
+
+<div id="create-a-new-api-cost-integration" />
+
+<div id="note" />
+
 <div id="overview" />
 
 ## 개요
@@ -68,6 +80,30 @@ Cost API를 사용하여 집계된 마케팅 비용 데이터(비용 관련 LTV 
 특정 파트너가 사용하는 방법을 확인하려면 <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">광고 네트워크 비용 통합 표</Anchor>의 **통합 방법** 열을 참조하세요.
 
 </Accordion>
+
+<div id="h_01M43Y9WQ8H8ANPDEGYCH0T0MF" />
+
+<div id="view-status-in-cost-tab" />
+
+<div id="view-status-in-cost-settings" />
+
+<div id="h_01M43Y9WQ8ANZY2KNHKMV67YNY" />
+
+<div id="h_01M43Y9WQ89XKB2CN2EY4TG2AD" />
+
+<div id="h_01M43Y9WQ804YMN8TZ7HGYSQH7" />
+
+<div id="traits-and-limitations" />
+
+<div id="cost-integration-and-agencies" />
+
+<div id="view-cost-api-status" />
+
+<div id="edit-and-delete-an-integration" />
+
+<div id="select-which-ad-account-to-pull-cost-from" />
+
+<div id="note-1" />
 
 <div id="map-apps-to-site-ids" />
 

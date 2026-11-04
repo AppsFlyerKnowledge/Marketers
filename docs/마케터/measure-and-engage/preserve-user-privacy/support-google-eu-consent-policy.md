@@ -44,6 +44,8 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 
 이러한 연동에서 앱의 최종 유저가 유럽 경제 지역(EEA) 또는 영국에 거주하는 경우 Google의 새로운 EU 동의 정책의 요구사항을 준수하기 위해 필요한 조치를 취해야 합니다.
 
+<div id="what-must-i-do-to-continue-using-googles-features" />
+
 <div id="note" />
 
 > 📘 **참고**
@@ -55,6 +57,8 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 마케터가 측정, 개인 맞춤 광고, 리마케팅과 관련된 Google Ads 및 GMP DV360 기능을 계속 사용하려면 EEA 및 영국의 최종 유저의 개인 데이터 사용에 대한 동의를 얻어야 합니다.
 
 
+<div id="what-steps-do-i-need-to-take-to-update-the-appsflyer-sdk" />
+
 <div id="updating-the-appsflyer-sdk" />
 
 ## 앱스플라이어 SDK 업데이트
@@ -65,7 +69,7 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 
 
 
-<span id="sending-consent-data"></span><span id="how-consent-data-is-sent"></span>마케터가 필요한 동의 데이터를 앱스플라이어에 전송하는 옵션에는 두 가지가 있습니다.
+<span id="which-consent-values-does-appsflyer-send-to-google"></span><span id="how-do-i-send-consent-data-to-appsflyer"></span><span id="sending-consent-data"></span><span id="how-consent-data-is-sent"></span>마케터가 필요한 동의 데이터를 앱스플라이어에 전송하는 옵션에는 두 가지가 있습니다.
 
 * [S2S API 또는 **SDK를 통해 직접 전송**:](#앱스플라이어-sdk-업데이트) 마케터는 SDK를 사용하여 동의 데이터를 앱스플라이어에 직접 전송할 수 있습니다. Android 또는 iOS 앱에 적용할 수 있습니다.
 * **TCF 문자열을 통해 전송:** 현재 CMP(동의 관리 플랫폼)를 사용 중이거나 사용할 계획인 마케터는 표준 IAB TCF 문자열(TCF V2.2)을 통해 데이터 필드를 전송할 수 있습니다. 동의한 공급업체 목록에 Google 공급업체 ID(755)를 포함해야 합니다.
@@ -94,6 +98,16 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 <Accordion title="Google에 동의 데이터를 전송하지 않는 옵션이 있나요?">
 
 앱스플라이어는 광고주가 자신의 최종 유저를 GDPR 및 DMA 요구사항의 적용을 받지 않는 최종 유저(예: EU 또는 영국 이외 국가 거주자)라고 생각하는 경우, 동의 데이터를 Google에 전송하지 않도록 할 수 있습니다. 이 작업은 관련 연동 페이지에서 토글을 활성화하여 수행됩니다.
+
+<div id="if-consent-data-is-sent-via-the-firebase-sdk-do-i-still-need-to-update-the-appsflyer-sdk" />
+
+<div id="how-is-appsflyer-translating-tcf-strings-to-google-dma-consent-flags" />
+
+<div id="whats-the-recommended-way-to-ask-for-user-consent-in-a-compliant-way" />
+
+<div id="which-countries-does-googles-eu-consent-policy-cover" />
+
+<div id="is-consent-needed-for-mobile-web-events" />
 
 <div id="important" />
 
@@ -159,7 +173,7 @@ SDK 또는 S2S API 호출을 사용하여 새 동의 필드를 전송하려면 �
 </Accordion>
 
 
-<span id="impact-on-advertising-activityfaq"></span><span id="impact-on-my-advertising-activity"></span>Google에서 광고 목적으로 데이터를 사용하는 데 동의하지 않는 EU 및 영국의 유저는 Google Ads 및 DV360의 어트리뷰션에 관한 요청을 받지 않습니다. 즉, 앱스플라이어는 해당 유저를 어트리뷰션할 수 없습니다.
+<span id="how-will-the-upcoming-change-impact-my-remarketing-campaigns"></span><span id="impact-on-advertising-activityfaq"></span><span id="impact-on-my-advertising-activity"></span>Google에서 광고 목적으로 데이터를 사용하는 데 동의하지 않는 EU 및 영국의 유저는 Google Ads 및 DV360의 어트리뷰션에 관한 요청을 받지 않습니다. 즉, 앱스플라이어는 해당 유저를 어트리뷰션할 수 없습니다.
 
 
 <div id="how-will-the-upcoming-change-affect-my-audiences" />
@@ -171,7 +185,7 @@ SDK 또는 S2S API 호출을 사용하여 새 동의 필드를 전송하려면 �
 </Accordion>
 
 
-<span id="further-information-and-contact-details"></span>추가 질문이나 불확실한 부분이 있는 경우 다음 연락처로 문의할 수 있습니다.
+<span id="see-also"></span><span id="further-information-and-contact-details"></span>추가 질문이나 불확실한 부분이 있는 경우 다음 연락처로 문의할 수 있습니다.
 
 * Google의 요구사항 또는 이러한 업데이트가 Google 데이터에 미칠 수 있는 영향에 대해서는 <Anchor target="_blank" href="https://www.google.com/about/company/user-consent-policy-help/">Google의 도움말</Anchor>을 참조하거나 Google 담당자에게 직접 문의하시기 바랍니다.
 * 앱스플라이어의 EU 최종 유저 동의 필드 지원에 관한 질문은 앱스플라이어 CSM 또는 [hello@appsflyer.com](mailto:hello@appsflyer.com)으로 문의하세요.

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** TikTok for Business(tiktokglobal\_int)는 앱스플라이어를 사용하여 클릭 및 조회 기반 모바일 어트리뷰션을 측정할 수 있는 고급 자체 보고 네트워크(<Anchor target="_blank" href="/marketers/ko/docs/self-reporting-networks-srns">SRN</Anchor>)로, 앱 소유자에게 다양한 기능을 제공합니다. 여기에는 앱과 비모바일 TikTok 캠페인에서 발생한 앱 설치가 포함됩니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > * 2023년 1월 30일에 새 **TikTok for Business—Advanced SRN** 연동 `tiktokglobal_int`이 추가되었습니다. **[기존] TikTok for Business** 연동 `bytedanceglobal_int`는 점차적으로 중단되었으며, 2024년 3월 20일에 공식적으로 중단되었습니다. 전환은 TikTok에서 처리하며, 이전 연동 삭제가 가능할 때 알려드릴 것입니다. **데이터 손실을 방지하려면 전환 단계 동안 두 연동을 모두 활성 상태로 유지하세요**. <Anchor target="_blank" href="/marketers/ko/docs/bulletin-tiktok-for-business-advanced-srn">공지사항</Anchor>에서 자세히 알아보세요.
@@ -52,6 +54,8 @@ Advanced SRN 연동은 광고 ID를 포함하는 모든 트래픽이 일반적�
 
 구성 창에는 다음과 같은 탭이 포함되어 있습니다: 연동, 어트리뷰션 링크, 비용, 광고 수익, 권한. **어트리뷰션 링크** 탭은 TikTok for Business에서 사용할 수 없으며, 나머지 탭은 선택 사항입니다.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > * 일부 설정은 iOS 및 안드로이드 디바이스에서 다릅니다.
@@ -70,6 +74,10 @@ Advanced SRN 연동은 광고 ID를 포함하는 모든 트래픽이 일반적�
 
 연동을 구성하려면 먼저 **파트너 활성화**토글을 켜야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation#파트너-연동-활성화">파트너 활성화 및 비활성화</Anchor>에 대한 자세한 내용은 연동 탭을 참조하세요.
 
+<div id="advanced-matching-data-sharing" />
+
+<div id="note-2" />
+
 <div id="advanced-data-sharing" />
 
 #### Advanced Privacy
@@ -86,6 +94,8 @@ iOS 앱만 해당: 포스트백 및 <Anchor target="_blank" href="/marketers/ko/
 >
 > * 연동(`tiktokglobal_int`)을 활성화할 때 **Advanced Privacy** 토글이 기본적으로 켜집니다.
 > * 기존 연동(`bytedanceglobal_int`)에서 새 연동(`tiktokglobal_int`)으로 마이그레이션하고 활성화하면 마이그레이션 이전 상태와 관계없이 **Advanced Privacy** 토글이 기본으로 켜집니다.
+
+<div id="note-3" />
 
 <div id="general-settings" />
 
@@ -108,6 +118,8 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 > * 새로운 연동(`tiktokglobal_int`)으로 마이그레이션할 때 기존 연동(`bytedanceglobal_int`)의 모든 값이 이 필드에 자동으로 입력됩니다.
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">iOS 14에 대한 TikTok 앱 ID 요구 사항에 대해 더 보기</Anchor>
 
+<div id="note-4" />
+
 <div id="default-postbacks" />
 
 #### 기본 포스트백
@@ -121,6 +133,10 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 >
 > * iOS 앱만 해당: 포스트백 및 <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions">리포트</Anchor>를 통해 파트너와 공유되는 데이터 제어는 **Advanced Privacy( iOS 14.5 이상)** [토글 상태](#advanced-privacy)에 따라 달라집니다.
 > * 기존 연동(`bytedanceglobal_int`)에서 마이그레이션하고 새로운 연동(`tiktokglobal_int`)을 활성화할 때, 마이그레이션 전 상태와 관계없이 포스트백 인스톨의 기본 선택 상태는 **이 파트너만**입니다.
+
+<div id="note-6" />
+
+<div id="note-5" />
 
 <div id="install-attribution" />
 
@@ -148,6 +164,8 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 >     이 데이터는 GCD에서 사용할 수 없습니다. 집계 데이터 보고서에는 뷰-쓰루 전환이 계속 표시됩니다.
 > * 기존 연동 (`bytedanceglobal_int`)에서 새로운 연동 (`tiktokglobal_int`)으로 마이그레이션할 때, 이전 상태와 관계없이 룩백 윈도우 설정(클릭-쓰루 및 뷰-쓰루)이 **기본값**으로 재설정됩니다. 이러한 설정은 업데이트가 가능합니다.
 
+<div id="note-7" />
+
 <div id="reinstall-attribution" />
 
 #### 리인스톨 어트리뷰션
@@ -162,6 +180,10 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 >
 > * 재설치를 위한 별도의 룩백 윈도우 설정은 필요하지 않습니다. 재설치 어트리뷰션은 기존 설치 어트리뷰션 설정과 동일한 클릭스루 및 뷰스루 활성화 상태와 룩백 윈도우 기준을 적용합니다.
 > * 이 기능을 활성화하면, 조건에 부합하는 재설치 포스트백이 TikTok으로 전송됩니다.
+
+<div id="warning" />
+
+<div id="note-8" />
 
 <div id="re-engagement-attribution" />
 
@@ -184,6 +206,8 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 > 기존 연동 (`bytedanceglobal_int`)에서 마이그레이션하고 새로운 연동 (`tiktokglobal_int`)을 활성화하면, 마이그레이션 이전 상태와 관계없이 **리인게이지먼트** 토글이 **기본적으로 비활성화 됩니다**. 기존 연동에 <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide">리타겟팅 캠페인</Anchor>이 있는 경우, 연속성을 위해 **새로운 연동에서 반드시 켜 주시기 바랍니다**.
 
 <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide#reengagement-rules-and-windows">리인게이지먼트 규칙 및 기간</Anchor>에 대해 자세히 알아보세요.
+
+<div id="note-9" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -220,6 +244,10 @@ TikTok for Business 이벤트와 인앱 이벤트 매핑을 구성하여 포스�
    1. 왼쪽 상단 모서리의 파트너 이름 아래에서 앱 이름을 클릭하여 앱 목록을 엽니다.
    2. 드롭다운 목록에서 다른 앱을 선택합니다.
    3. 선택한 앱에 대해 연동 단계를 반복합니다.
+
+<div id="note-11" />
+
+<div id="note-10" />
 
 > 📘 **참고**
 >
@@ -334,6 +362,10 @@ TikTok Ads Manager에서 아래 단계를 진행하면, TikTok 논앱 캠페인�
 
 광고주를 대신하여 일하는 에이전시는 TikTok for Business 통합을 켜고 캠페인에 대한 어트리뷰션을 받을 수 있습니다. 그러나 이 통합에는 에이전시와 관련하여 몇 가지 제한 사항이 있습니다.
 
+<div id="send-complex-in-app-events-to-tiktok" />
+
+<div id="important" />
+
 <div id="agency-limitations" />
 
 ### 에이전시 제한 사항
@@ -376,6 +408,8 @@ Smart Plus는 단일 광고 소재 단위에서 다수의 크리에이티브를 
 2. 광고 세트
 3. 광고
 4. 크리에이티브
+
+<div id="note-12" />
 
 <div id="how-smart-plus-data-is-reported-in-appsflyer" />
 

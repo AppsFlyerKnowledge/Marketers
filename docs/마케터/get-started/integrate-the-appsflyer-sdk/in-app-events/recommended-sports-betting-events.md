@@ -83,6 +83,22 @@ x-zendesk:
 
 </Accordion>
 
+<div id="account-credited-account_credited" />
+
+<div id="account-deducted-account_deducted" />
+
+<div id="cancels-bet-canceled_bet" />
+
+<div id="bonus-bet-bonus_bet" />
+
+<div id="withdrawal-withdrawal" />
+
+<div id="placed-bet-placed_bet" />
+
+<div id="deposit-deposit" />
+
+<div id="first-time-deposit-first_time_deposit" />
+
 <div id="recommended-structures-for-custom-events" />
 
 ## 사용자 지정 이벤트에 대한 권장 구조

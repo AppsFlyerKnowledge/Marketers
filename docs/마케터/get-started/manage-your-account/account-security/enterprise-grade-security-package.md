@@ -273,6 +273,34 @@ SCIM 연결에서 다음 필드를 채워야 합니다.
 
 향상된 IP 허용 목록은 무단 액세스를 방지하여 보안을 강화하고 신뢰할 수 있는 네트워크만 플랫폼과 상호 작용할 수 있도록 합니다. 이 기능은 엄격한 보안 정책을 시행하거나 원격 액세스를 관리하는 기업에 특히 유용합니다.
 
+<div id="frequently-asked-questions-about-our-security-package" />
+
+<div id="how-quickly-can-i-implement-these-security-controls" />
+
+<div id="does-this-replace-standard-security-features" />
+
+<div id="how-long-are-audit-logs-retained" />
+
+<div id="what-network-restrictions-can-i-apply" />
+
+<div id="can-i-integrate-with-my-existing-security-tools" />
+
+<div id="how-many-roles-and-api-tokens-can-i-create" />
+
+<div id="what-compliance-standards-does-this-support" />
+
+<div id="how-does-scim-provisioning-work" />
+
+<div id="who-is-the-enterprise-grade-security-package-designed-for" />
+
+<div id="what-is-appsflyers-enterprise-grade-security-package" />
+
+<div id="removing-ips-from-the-list" />
+
+<div id="important" />
+
+<div id="adding-ips-to-the-list" />
+
 <div id="key-features-3" />
 
 #### 주요 기능

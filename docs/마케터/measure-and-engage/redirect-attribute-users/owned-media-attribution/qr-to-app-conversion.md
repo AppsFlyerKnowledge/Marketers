@@ -45,6 +45,16 @@ QR 코드는 다음 중 하나로 생성할 수 있습니다.
 
 <Accordion title="QR에서 앱으로 전환">
 
+<div id="can-you-bulk-create-qr-codes" />
+
+<div id="what-appsflyer-options-are-available-for-generating-qr-codes" />
+
+<div id="can-you-create-a-qr-code-and-change-the-behavior-behind-it-retroactively-after-printing-the-qr-for-example" />
+
+<div id="qr-with-long-links-vs-short-links---is-there-any-difference" />
+
+<div id="faq" />
+
 <div id="manual-qr-code-setup" />
 
 #### 수동 QR 코드 설정

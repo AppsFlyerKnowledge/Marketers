@@ -38,6 +38,14 @@ x-zendesk:
 * 딥링킹 및 리디렉션 설정
 * 추가 파라미터 설정
 
+<div id="important" />
+
+<div id="note" />
+
+<div id="create-onelink-links-in-onelink-management" />
+
+<div id="create-onelink-links-from-your-ai-tool" />
+
 <div id="create-a-onelink-link" />
 
 ## 캠페인을 위한 원링크 링크 생성하기
@@ -116,6 +124,8 @@ x-zendesk:
 6. [선택 사항] **링크 브랜딩** 하위 섹션에서:
    * 브랜드를 반영할 수 있도록 다른 도메인을 선택하세요. <Anchor target="_blank" href="/marketers/ko/docs/brand-onelink-with-your-domain">더 알아보기</Anchor>
    * <span id="url-id"></span>캠페인 오퍼를 강조 표시하려면 URL ID를 편집합니다. URL ID는 최대 50자여야 하며 문자와 숫자의 조합일 수 있습니다. 기본 세팅은 8자 입니다.
+
+<div id="note-1" />
 
 <div id="enable-retargeting-for-the-app" />
 
@@ -233,6 +243,8 @@ x-zendesk:
 3. 소셜 앱에 원링크 짧은 URL을 게시합니다.
 
 어트리뷰션은 어트리뷰션 설정에 따라 결정됩니다.
+
+<div id="note-3" />
 
 <div id="to-set-up-the-social-apps-landing-page" />
 
@@ -585,6 +597,8 @@ iOS 15 출시와 함께 Apple은 iCloud+ 사용자에게 <Anchor target="_blank"
 </Accordion>
 
 </Accordion>
+
+<div id="xiaomi-browser" />
 
 <div id="additional-information" />
 

@@ -100,6 +100,10 @@ x-zendesk:
 8. [선택 사항] **조건 추가** 아이콘을 클릭하여 이벤트에 대한 <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration#조건부-인앱-이벤트-포스트백">조건을 설정</Anchor>합니다.
 9. **연동 저장**을 클릭하세요.
 
+<div id="note-2" />
+
+<div id="note-1" />
+
 <div id="note" />
 
 > 📘 **참고**

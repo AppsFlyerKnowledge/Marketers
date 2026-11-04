@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 모든 매체 소스에서 귀사의 앱 어트리뷰션 및 분석에 영향을 미치는 설정에 대해 알아보세요.
 
+<div id="note" />
+
 <div id="app-settings" />
 
 ## 앱 설정
@@ -40,6 +42,8 @@ x-zendesk:
 1. 앱스플라이어의 사이드 메뉴에서 **설정** > **앱 설정**을 선택합니다.
 2. 앱 설정 페이지에서 설정을 확인하고 필요에 따라 변경하세요.
 3. **설정 저장**을 클릭하세요.
+
+<div id="minimum-time-between-sessions" />
 
 <div id="general-app-settings" />
 
@@ -149,6 +153,10 @@ x-zendesk:
 </Table>
 
 <div id="attribution-settings" />
+
+<div id="minimum-time-between-reengagement-conversions" />
+
+<div id="note-1" />
 
 ### 어트리뷰션 설정
 

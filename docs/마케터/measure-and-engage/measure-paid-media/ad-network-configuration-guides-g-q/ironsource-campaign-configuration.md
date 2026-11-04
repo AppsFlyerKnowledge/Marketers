@@ -50,6 +50,8 @@ x-zendesk:
 > * 연동 탭의 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#d-general-settings">일반 설정</Anchor> 단계는 모든 파트너에게 **필수** 항목입니다
 > * 나머지 모든 단계는 설명이거나 **선택** 항목입니다
 
+<div id="integration-tab" />
+
 <Accordion title="연동 탭">
 
 ### 파트너 활성화
@@ -74,6 +76,12 @@ iOS 앱에 한해, **SKAN 트랜잭션 ID 공유**가 켜져 있으면 앱스플
 **광고주 ID**
 
 아이언소스는 고유한 광고주 ID(6자리 숫자)와 비밀번호를 통해 앱스플라이어와 연결합니다. 아직 광고주 ID와 비밀번호가 없는 경우 아이언소스에서 광고주 ID와 비밀번호를 받아야 연동을 계속할 수 있습니다. 그렇지 않으면 ID와 비밀번호를 복사하여 해당 필드에 붙여넣어야 합니다.
+
+<div id="note-3" />
+
+<div id="default-postbacks" />
+
+<div id="install-and-re-engagement-attribution" />
 
 ### 인스톨 및 리인게이지먼트 어트리뷰션
 
@@ -100,6 +108,8 @@ iOS 앱에 한해, **SKAN 트랜잭션 ID 공유**가 켜져 있으면 앱스플
 >
 > 아이언소스는 모든 인스톨 네트워크로서 오가닉을 포함한 모든 소스에서 앱의 모든 신규 인스톨에 대한 포스트백을 수신하는 것을 선호합니다. 이렇게 하려면 **모든 파트너 또는 오가닉에 어트리뷰트된 이벤트**를 선택하여 모든 인스톨 포스트백을 아이언소스로 보내야 합니다.
 
+<div id="in-app-event-postbacks" />
+
 ### 인앱 이벤트 포스트백
 
 포스트백을 통해 전송된 ironSource 이벤트와 인앱이벤트의 매핑을 구성합니다.
@@ -121,6 +131,18 @@ iOS 앱에 한해, **SKAN 트랜잭션 ID 공유**가 켜져 있으면 앱스플
    2. 드롭다운 목록에서 다른 앱을 선택합니다.
    3. 선택한 앱에 대해 <Anchor target="_blank" href="/marketers/ko/docs/amazon-ads-campaign-configuration#integration-tab">연동 단계</Anchor>를 반복합니다.
 
+<div id="permissions-tab" />
+
+<div id="ad-revenue-tab" />
+
+<div id="attribution-link-tab" />
+
+<div id="agency-permissions" />
+
+<div id="ad-network-permissions" />
+
+<div id="note-4" />
+
 > 📘 **참고사항**
 >
 > * iOS 앱의 경우: 포스트백 및 <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions">리포트</Anchor>를 통해 파트너와 공유되는 데이터 제어는 **고급 개인정보 보호( iOS 14.5 이상)** <Anchor target="_blank" href="/marketers/ko/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy">토글 상태</Anchor>에 따라 달라집니다.
@@ -137,6 +159,8 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 아이언소스에서 클릭 및 뷰를 정의하는 방법에 대한 자세한 정보를 읽으십시오.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="비용 탭">
 

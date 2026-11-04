@@ -77,6 +77,12 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
 
+<div id="advanced-matching-data-sharing" />
+
+<div id="note" />
+
+<div id="advanced-privacy" />
+
 <div id="general-settings" />
 
 #### 일반 설정
@@ -93,6 +99,8 @@ x-zendesk:
 * Snap 앱 ID는 광고주만 추가할 수 있습니다.
 * 에이전시가 스냅챗 광고 플랫폼에서 귀하와 동일한 조직에 속해 있는 경우 하나의 Snap 앱 ID만 사용하십시오.
 * 에이전시가 스냅챗 광고 플랫폼의 다른 조직에 속해 있는 경우 에이전시에 이 앱에 대한 Snap 앱 ID를 제공하도록 요청하고 이 필드에 입력하십시오. 여러 ID를 입력할 수 있습니다. 각 ID를 입력한 다음에 Enter 키를 누릅니다.
+
+<div id="note-1" />
 
 <div id="install-attribution" />
 
@@ -111,6 +119,8 @@ x-zendesk:
 2. [선택 사항] **설치 뷰-쓰루(view-through) 어트리뷰션**을 켜고 룩백 기간을 설정합니다:
    * **뷰-쓰루 룩백 윈도우 설치를** 1-24시간 사이로 설정합니다. **참고:** 스냅챗에서는 설치 뷰-쓰루 룩백 윈도우를 1일로 설정하여 조정할 것을 권장합니다.
 
+<div id="note-2" />
+
 <div id="re-engagement-attribution" />
 
 #### 리인게이지먼트 어트리뷰션
@@ -126,6 +136,8 @@ x-zendesk:
 2. [선택 사항] **리인게이지먼트 뷰-쓰루 어트리뷰션**을 활성화하고 룩백 윈도우를 설정하세요.
    * **리인게이지먼트 뷰-쓰루 룩백 윈도우**는 1&#126;24시간입니다. **참고:** 스냅챗 추천에 따라 리인게이지먼트 뷰-쓰루 룩백 윈도우를 1일로 설정하세요.
 3. **리인게이지먼트 기간**을 1-23시간, 1-90일, 또는 **생애** 중에서 설정하세요.
+
+<div id="note-3" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -173,6 +185,12 @@ x-zendesk:
 <Accordion title="어트리뷰션 링크 탭">
 
 스냅챗에 대해 어트리뷰션 링크를 사용할 수 없습니다.
+
+<div id="note-6" />
+
+<div id="note-5" />
+
+<div id="note-4" />
 
 > 📘 **참고**
 >
@@ -245,6 +263,8 @@ x-zendesk:
 
 ## 웹에서 앱으로: 비앱 캠페인의 앱 액티비티 측정
 
+<div id="note-7" />
+
 <div id="deep-linking-with-snapchat" />
 
 ## 스냅챗을 통한 딥링킹
@@ -291,6 +311,8 @@ x-zendesk:
 ## 에이전시를 위한 스냅챗 설정하기
 
 광고주를 대신하여 일하는 대행사는 Snapchat 통합을 켜고 캠페인에 대한 어트리뷰션을 시작할 수 있습니다. 그러나 이 통합에는 대행사와 관련하여 몇 가지 제한 사항이 있습니다.
+
+<div id="important" />
 
 <div id="agency-limitations" />
 

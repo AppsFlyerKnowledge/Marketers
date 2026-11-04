@@ -203,6 +203,8 @@ x-zendesk:
 
 <Accordion title="번들을 삭제하면 어떻게 됩니까?">
 
+<div id="page-404" />
+
 <div id="faqs-what-happens-if-i-delete-a-bundle" />
 
 #### 번들을 삭제한 경우 발생하는 일에 대한 자주 묻는 질문

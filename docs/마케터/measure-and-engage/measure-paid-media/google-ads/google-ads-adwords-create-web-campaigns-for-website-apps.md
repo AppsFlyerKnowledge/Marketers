@@ -117,6 +117,8 @@ x-zendesk:
 3. **이벤트 추가**를 클릭하세요.
 4. **AppsFlyer 이벤트** 열에서 전송할 웹사이트 이벤트를 선택하십시오(예: `purchase`, `sign_up`).
 
+   <div id="note-4" />
+
    <div id="note-3" />
 
    > 📘 **참고**

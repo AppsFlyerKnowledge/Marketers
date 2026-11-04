@@ -61,6 +61,8 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 <Tabs>
 <Tab title="Objective-C">
 
+<div id="appsflyer-1" />
+
 #### Batch
 
 ```objectivec
@@ -78,6 +80,8 @@ BatchUserDataEditor *editor = [BatchUser editor];
 </Tab>
 
 <Tab title="Swift">
+
+<div id="appsflyer-2" />
 
 #### Batch
 

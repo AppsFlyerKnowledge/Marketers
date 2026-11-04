@@ -24,6 +24,10 @@ x-zendesk:
 ---
 > **한눈에 보기:** 이 가이드의 온보딩 지침에 따라 앱스플라이어 웹 어트리뷰션을 설정하세요. 설정이 완료되면 웹사이트 방문 및 웹 이벤트를 측정하고 이를 마케팅 소스별로 분류할 수 있으며, 웹사이트의 실질적인 성과에 기여하는 요인을 파악하고, 크로스 플랫폼 측정을 지원할 수 있습니다.
 
+<div id="set-up-network-integrations-postbacks-and-cost-measurement" />
+
+<div id="create-a-web-app-in-appsflyer" />
+
 <div id="about-web-performance-measurement" />
 
 ## 앱스플라이어 웹 어트리뷰션에 대하여

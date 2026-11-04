@@ -28,6 +28,8 @@ x-zendesk:
 >
 > 데이터 락커에서 웹 성능 측정 보고서에 액세스하려면 데이터 락커 구독이 있어야 합니다.
 
+<div id="select-a-web-performance-measurement-report" />
+
 <div id="about-the-web-performance-measurement-reports" />
 
 ## 웹 성과 측정 보고서 정보
@@ -468,6 +470,8 @@ ORDER BY cohort_date, cohort_users DESC
 </Accordion>
 
 </Accordion>
+
+<div id="see-also" />
 
 <div id="traits-and-limitations" />
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="tv-screens" />
+
 <div id="the-appsflyer-cross-platform-solution" />
 
 ## 앱스플라이어 크로스 플랫폼 솔루션
@@ -155,6 +157,8 @@ SRN에 대한 어트리뷰션은 결정론적 매칭을 통해 이루어집니�
 * <Anchor target="_blank" href="/marketers/ko/docs/cross-platform-landing-pages-with-smart-script">스마트 스크립트로 크로스 플랫폼 랜딩 페이지를 설정하는 방법 알아보기</Anchor>
 
 </Accordion>
+
+<div id="note" />
 
 <div id="data-availability" />
 

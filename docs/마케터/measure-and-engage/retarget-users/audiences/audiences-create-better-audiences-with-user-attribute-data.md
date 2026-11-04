@@ -143,7 +143,7 @@ x-zendesk:
 | --- | --- |
 | <span id="search-and-filter"></span>검색 및 필터 | 속성 이름, 앱 이름, 속성 수준별로. |
 | <span id="sort-by"></span>정렬 기준 | 표 행을 정렬하려면 열 머리글을 클릭하세요. |
-| <span id="zd-import-data"></span><span id="import-data"></span>데이터 가져오기 | <ul><li>[CSV로 데이터 가져오기](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[API로 데이터 가져오기](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
+| <span id="zd-import-data"></span><span id="note"></span><span id="import-data"></span>데이터 가져오기 | <ul><li>[CSV로 데이터 가져오기](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[API로 데이터 가져오기](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
 | <span id="change-api-import-key"></span>API 가져오기 키 변경 | **API 가져오기 키를 변경하려면:**<ol><li>**데이터 가져오기**를 클릭합니다.</li><li>**API**를 선택하세요.</li><li>**가져오기 키y** *새로고침*을 클릭합니다.</li></ol>**참고!** 스크립트에 내장된 키가 있는 경우 새 키로 업데이트하세요. |
 
 </Accordion>
