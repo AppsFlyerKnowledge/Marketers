@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Кратко:** атрибуция устройств Android без GAID с использованием OAID или IMEI. Практические рекомендации по просмотру данных атрибуции в AppsFlyer.
 
+<div id="attribution-android-apps-in-the-chinese-domestic-market" />
+
 ## Атрибуция приложений Android на внутреннем рынке Китая
 
 В Китае владельцы приложений сталкиваются с рядом проблем:
@@ -39,6 +41,8 @@ x-zendesk:
 * Использование IMEI устройства в качестве альтернативы GAID на устройствах с Android версии 28 или более ранней
 * Подготовка APK с уникальными идентификаторами для обнаружения перехвата магазинов Android
 * Настройка ссылок атрибуции, распознаваемых в Китае
+
+<div id="preparing-the-app" />
 
 ## Подготовка приложения
 
@@ -283,6 +287,8 @@ AppsFlyerLib.getInstance().setCollectAndroidID(true);
 * **Одно приложение, объединенное с магазином Google Play:** атрибуция как из сторонних магазинов приложений, так и из магазина Google Play отображается как единая сущность. Для этого варианта требуется, чтобы имя пакета в магазине Google Play и в сторонних магазинах было одинаковым. При использовании этого варианта предполагается, что приложение уже определено в AppsFlyer. Чтобы использовать этот метод, перейдите к разделу [Подготовка APK/manifest](/docs/measure-attribution-in-the-chinese-domestic-market#подготовка-apkманифеста), который приведен ниже.
 * **Несколько приложений** означает, что данные атрибуции для каждого магазина отображаются в отдельном приложении. Например, отдельно отображаются Google Play Store, сторонний магазин A, сторонний магазин B и т. д. Чтобы использовать этот метод, см. статью <Anchor target="_blank" href="/marketers/ru/docs/set-up-multi-store-android-attribution">multiple apps</Anchor>. Чтобы использовать этот метод, см. <Anchor target="_blank" href="/marketers/ru/docs/set-up-multi-store-android-attribution">множество приложений</Anchor>.
 
+<div id="adding-the-app-in-appsflyer" />
+
 ### Добавление приложения в AppsFlyer
 
 **Чтобы добавить приложение в AppsFlyer**:
@@ -297,6 +303,8 @@ AppsFlyerLib.getInstance().setCollectAndroidID(true);
    * **Ссылка на приложение**
 
 **Примечание**: вы можете создать приложение, выбрав вариант **Ожидает одобрения или не опубликовано**, но это не рекомендуется. Перед тем как использовать этот метод, проконсультируйтесь со своим CSM.
+
+<div id="preparing-the-apkmanifest" />
 
 ### Подготовка APK/манифеста
 
@@ -329,6 +337,8 @@ AppsFlyerLib.getInstance().setCollectAndroidID(true);
 * <Anchor target="_blank" href="/marketers/ru/docs/raw-data-reporting-overview">Отчеты по необработанным данным</Anchor>
 
 </Accordion>
+
+<div id="additional-attribution-considerations" />
 
 ## Дополнительные аспекты атрибуции
 

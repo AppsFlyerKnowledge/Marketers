@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** **Краткий обзор:** Узнайте о причинах расхождений в атрибуции между AppsFlyer и сторонними платформами.
 
+<div id="overview" />
+
 ## Обзор
 
 Из-за политик обмена данными медиаисточников не все данные на уровне пользователя <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">передаются сторонним платформам</Anchor> (таким как аналитические и маркетинговые платформы). Из-за этого могут возникать несоответствия в атрибуции между данными, отображаемыми на сторонних платформах, и данными в AppsFlyer.
@@ -31,9 +33,13 @@ x-zendesk:
 >
 > Агрегированные и аналитические данные от платформы AppsFlyer доступны без ограничений.
 
+<div id="postback-restrictions-on-third-party-platforms" />
+
 ## Ограничения постбэков на сторонних платформах
 
 Когда речь идет об отправке постбэков в сторонние платформы, существуют различные уровни ограничений для медиаисточников. Постбэки могут либо вообще не отправляться, либо отправляться без атрибуции, либо отправляться без каких-либо ограничений.
+
+<div id="types-of-postback-restrictions" />
 
 #### Типы ограничений для постбэков
 
@@ -79,6 +85,8 @@ x-zendesk:
 </Accordion>
 
 <table><colgroup><col/><col/><col/><col/><col/><col/></colgroup><thead><tr><th colspan="6">Ограничения на постбэки распространяются на все сторонние платформы, интегрированные с AppsFlyer, включая следующие:</th></tr></thead><tbody><tr><td><span id="airship"></span>Airship</td><td>Amplitude</td><td>Batch</td><td>Braze</td><td>CleverTap</td><td>Облачная</td></tr><tr><td><span id="convertro"></span>Convertro</td><td>deltaDNA</td><td>Eulerian</td><td>GameAnalytics</td><td>IBM UBX</td><td>Insider</td></tr><tr><td><span id="itunes"></span>iTunes</td><td>Kahuna</td><td>Leanplum</td><td>Liquid</td><td>Localytics</td><td>Luna labs</td></tr><tr><td><span id="Medialyzer"></span>Medialyzer</td><td>Mixpanel</td><td>MoEngage</td><td>mParticle</td><td>OneSignal</td><td>Rocketbox</td></tr><tr><td><span id="salesforce"></span>salesforce.png</td><td>Маркетинг</td><td>MobilePush</td><td>Подписка IAP</td><td>Spoteffects</td><td>Swrve</td></tr><tr><td><span id="tapcart"></span>Tapcart</td><td>Tealium</td><td>WebEngage</td><td>Winclap Analytics</td><td>Google Analytics</td><td> </td></tr></tbody></table>
+
+<div id="examples-of-discrepancies" />
 
 ## Примеры расхождений
 

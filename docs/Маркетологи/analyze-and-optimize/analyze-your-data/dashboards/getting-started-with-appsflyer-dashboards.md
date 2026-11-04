@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Платформа содержит несколько дэшбордов. Эти дэшборды позволяют просматривать данные об эффективности кампании и поведении в приложении.
 
+<div id="appsflyer-dashboards" />
+
 ## Дэшборды AppsFlyer
 
 ![OverviewBasic.png](https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png)

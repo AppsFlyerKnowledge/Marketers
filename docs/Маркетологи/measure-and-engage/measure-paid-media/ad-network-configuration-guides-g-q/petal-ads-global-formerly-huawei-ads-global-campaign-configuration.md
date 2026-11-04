@@ -28,9 +28,13 @@ x-zendesk:
 
 <Image alt="huaweiadsglobal.png" src="https://files.readme.io/12f1351923768c1afc1ba0f16b267388a8c9b1ae7fc2d6d36b5d1d01381f1bbc-14151449726353.png" width="18.53%" />
 
+<div id="petal-ads-global-introduction" />
+
 ## Обзор Petal Ads Global
 
 Petal Ads Global интегрирован в несколько сторонних приложений и приложений Huawei, таких как HUAWEI Browser, HUAWEI Video, HUAWEI Assistant, HUAWEI Reader и HUAWEI Music, которые являются субпаблишерами медийной сети Petal Ads Global. Кроме того, стандартные рекламные места AppGallery и App Gallery Search Ads также поддерживают атрибуцию AppsFlyer.
+
+<div id="setting-up-petal-ads-global" />
 
 ## Настройка Petal Ads Global
 
@@ -41,6 +45,8 @@ Petal Ads Global интегрирован в несколько сторонни
 | Медийная реклама | huaweiadsglobal | Сопоставление по идентификатору (OAID или GAID), вероятностное моделирование, реферер Huawei | Нажмите <Anchor target="_blank" href="/marketers/ru/docs/android-oaid-implementation-in-the-sdk">здесь</Anchor>, чтобы ознакомиться с руководством по внедрению OAID в Android SDK. Для атрибуции по рефереру Huawei требуется Android SDK 6.14.0 |
 | App Gallery | huaweiappgalleryglobal | Сопоставление по идентификатору (OAID или GAID), реферер Huawei | Для атрибуции по рефереру Huawei требуется Android SDK 6.14.0 |
 | Petal Search | пустое значение | Сопоставление идентификаторов (OAID или GAID), вероятностное моделирование | Нажмите <Anchor target="_blank" href="/marketers/ru/docs/android-oaid-implementation-in-the-sdk">здесь</Anchor>, чтобы ознакомиться с руководством по внедрению OAID в Android SDK |
+
+<div id="setting-up-the-petal-ads-global-integration" />
 
 ### Настройка интеграции с Petal Ads Global
 
@@ -62,11 +68,15 @@ Petal Ads Global интегрирован в несколько сторонни
 
 На вкладке **Интеграция** есть несколько разделов:
 
+<div id="activate-partner" />
+
 #### Активация партнера
 
 Чтобы включить конфигурацию, <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation#активировать-интеграцию-партнера">активируйте партнера</Anchor>.
 
 Этот переключатель должен быть активирован все время, пока вы работаете с этим партнёром.
+
+<div id="general-settings" />
 
 #### Общие настройки
 
@@ -74,9 +84,13 @@ Petal Ads Global интегрирован в несколько сторонни
 
 Чтобы атрибутировать установки по просмотрам из Petal Ads Global, включите этот переключатель. Слайдер окна атрибуции по просмотрам доступен на вкладке **Ссылка атрибуции**.
 
+<div id="default-postbacks" />
+
 #### Постбэки по умолчанию
 
 Отправляйте автоматические постбэки в Petal Ads Global только после установок пользователей, атрибутированных к Petal Ads Global. Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#default-postbacks">постбэках по умолчанию</Anchor>.
+
+<div id="in-app-events-settings" />
 
 #### In-App Events Settings (Настройки внутренних событий приложения)
 
@@ -150,6 +164,8 @@ Petal Ads Global интегрирован в несколько сторонни
 
 </Accordion>
 
+<div id="configuring-campaigns-on-petal-ads-global" />
+
 ## Настройка кампаний в Petal Ads Global
 
 **Чтобы настроить атрибуцию AppsFlyer в Petal Ads Global,** [**нажмите здесь**](https://developer.huawei.com/consumer/en/doc/distribution/promotion/appsflyer-0000001122291488)**, чтобы узнать больше в Центре поддержки Huawei.**
@@ -162,11 +178,15 @@ Petal Ads Global интегрирован в несколько сторонни
 6. Создайте рекламную задачу в Petal Ads Global.
 7. [Просмотрите данные конверсии](https://developer.huawei.com/consumer/en/doc/distribution/promotion/tracking-shu-0000001139892541) в Petal Ads Global.
 
+<div id="data-discrepancies" />
+
 ## Расхождения в данных
 
 **Примечание：** На дэшборде Petal Ads Global данные конверсии (например, установки/активации) поступают из 2 источников: AppsFlyer и HMS. Если вы хотите сравнить данные, например по установкам, между AppsFlyer и дэшбордом Petal Ads Global, выберите на дэшборде Huawei пункт 'Activations', а не 'Activations(HMS)'.
 
 [![](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)
+
+<div id="data-reporting-on-petal-ads-global-and-faqs-of-data-discrepancy" />
 
 #### Отчетность в Petal Ads Global и часто задаваемые вопросы о расхождениях в данных
 

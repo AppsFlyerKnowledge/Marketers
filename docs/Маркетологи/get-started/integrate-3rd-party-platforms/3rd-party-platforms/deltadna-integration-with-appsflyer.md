@@ -31,6 +31,8 @@ x-zendesk:
 >
 > <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">Некоторые медиа-источники</Anchor> ограничивают передачу данных третьим лицам. Поэтому постбэки для ограниченных событий не будут отправляться этому партнеру, независимо от настроенной отправки постбэков.
 
+<div id="integrating-with-deltadna" />
+
 ## Интеграция с deltaDNA
 
 > 🚧 **Important**
@@ -105,6 +107,8 @@ AppsFlyer.setCustomerUserID (DDNA.Instance.UserID)
 > **Примечание:**
 >
 > deltaDNA отклоняет постбэки об установках из AppsFlyer, если не задан Customer User ID или UserID.
+
+<div id="viewing-the-attribution-data-in-the-deltadna-console" />
 
 ## Просмотр данных атрибуции в консоли deltaDNA
 

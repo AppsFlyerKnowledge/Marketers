@@ -28,6 +28,8 @@ x-zendesk:
 
 > **Краткий обзор:** Создавайте рассылки по электронной почте с интегрированными ESP, используя фирменные ссылки OneLink и перенаправление по диплинкам для удобного пользовательского опыта, способствующего конверсии.
 
+<div id="about-esp-integration" />
+
 ## Об интеграции с ESP
 
 Маркетинг-рассылка — это простой и эффективный способ взаимодействия с клиентами и потенциальными покупателями. Многие маркетологи полагаются на поставщиков услуг электронной почты (ESP) для отправки масштабных рассылок своим пользователям. И хотя этот процесс должен быть простым и понятным, обеспечивая идеальный путь мобильного пользователя, обычно это не так.
@@ -46,6 +48,8 @@ x-zendesk:
 Чтобы избежать этих проблем и обеспечить пользователям мобильных устройств наилучший опыт, выберите своего ESP в разделе ниже и следуйте конкретным инструкциям по интеграции. Некоторые ESP поддерживаются в решении для интеграции AppsFlyer, которое позволяет AppsFlyer выступать в качестве посредника между сервером ESP и вашим доменным именем. Эта роль прокси позволяет предоставлять файлы ассоциаций (AASA / ссылки на активы), что облегчает диплинкинг.
 
 Решение для интеграции ESP в AppsFlyer — это премиум-функция. Если вы хотите узнать больше или приступить к работе, свяжитесь с нами по адресу [hello@appsflyer.com](mailto:hello@appsflyer.com).
+
+<div id="supported-esps" />
 
 ## Поддерживаемые ESP
 
@@ -75,6 +79,8 @@ x-zendesk:
 | <Anchor target="_blank" href="/marketers/ru/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="Логотип Sailthru" src="https://files.readme.io/61b721936f4f9cc64ee9551a213865eca2bea188599311f79d92d945204a713b-32378022253841.png" height="40px" /></Anchor> | Да |
 | <Anchor target="_blank" href="/marketers/ru/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="Логотип SendGrid" src="https://files.readme.io/f4c3217e956db7e922a6150597d596c2c4848e5aa0a43b2347824aacbeb2caa3-32378022256785.png" height="40px" /></Anchor> | Да |
 | <Anchor target="_blank" href="/marketers/ru/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="Логотип SparkPost" src="https://files.readme.io/bec55e3c96bb80b736777e110d05df9009e015ef2c1cdd8b3d8088880264f593-32377991460369.png" height="40px" /></Anchor> | Да |
+
+<div id="other-esps" />
 
 ## Другие ESP
 

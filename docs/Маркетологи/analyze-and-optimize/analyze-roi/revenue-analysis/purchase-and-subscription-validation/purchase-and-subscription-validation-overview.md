@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** Разберитесь, как AppsFlyer выполняет валидацию покупок и подписок, и сравните два доступных решения: валидация чека и доход магазина в ROI360.
 
+<div id="about-purchase-and-subscription-validation" />
+
 ## О валидации покупок и подписок
 
 Валидация покупок и подписок необходима для обеспечения точности и надёжности данных о выручке. Когда пользователи совершают покупки в вашем приложении, разовые или по подписке, валидация этих транзакций в магазинах приложений (Apple App Store и Google Play) гарантирует, что измеряются и атрибутируются только подлинные, оплаченные транзакции.
@@ -29,7 +31,11 @@ AppsFlyer предлагает два решения для валидации �
 
 В статье представлено подробное описание каждого решения и [сравнение функций,](#сравнение-валидации-чека-и-доходов-магазина-roi360) которое поможет вам определить, какой вариант подходит для вашего приложения.
 
+<div id="the-two-solutions-for-purchase-and-subscription-validation" />
+
 ## Два решения для валидации покупок и подписок
+
+<div id="receipt-validation" />
 
 ### Валидация чека
 
@@ -44,7 +50,11 @@ AppsFlyer предлагает два решения для валидации �
 * <Anchor target="_blank" href="/marketers/ru/docs/about-receipt-validation">О валидации чека</Anchor>
 * <Anchor target="_blank" href="/marketers/ru/docs/set-up-receipt-validation">Настройка валидации чека</Anchor>
 
+<div id="roi360-store-revenuepremium" />
+
 ### Доход ROI360 в магазине Премиум
+
+<div id="important" />
 
 > 🚧 **Важно!**
 >
@@ -60,6 +70,8 @@ AppsFlyer предлагает два решения для валидации �
 
 * <Anchor target="_blank" href="/marketers/ru/docs/about-roi360-store-revenue">Настройка доходов магазина ROI360</Anchor>
 * <Anchor target="_blank" href="/marketers/ru/docs/set-up-roi360-store-revenue">Настройте Доход магазина ROI360</Anchor>
+
+<div id="compare-receipt-validation-and-roi360-store-revenue" />
 
 ## Сравнение валидации чека и доходов магазина ROI360
 

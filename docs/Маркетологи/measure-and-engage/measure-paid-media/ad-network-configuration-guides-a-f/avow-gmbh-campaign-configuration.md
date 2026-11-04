@@ -25,6 +25,8 @@ x-zendesk:
 
 ![avow_icon.png](https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png)
 
+<div id="activate-partner" />
+
 ## Активация партнера
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -39,9 +41,13 @@ x-zendesk:
     **Примечание.** Этот переключатель должен быть <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активирован</Anchor> все время, пока вы работаете с этим партнером.
 5. Завершите настройку, используя соответствующие вкладки, как описано ниже. Подробное описание заголовка окна настройки параметров партнера см. <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">здесь</Anchor>.
 
+<div id="setting-up-avow-gmbh" />
+
 ## Настройка Avow GmbH
 
 Интеграция с Avow GmbH поддерживает атрибуцию по кликам и просмотрам. Окно общей конфигурации содержит следующие вкладки: Интеграция, Ссылка атрибуции, Затраты, Доход от рекламы, Разрешения. Для Avow GmbH доступны следующие вкладки: Интеграция, Ссылка атрибуции и Разрешения.
+
+<div id="note" />
 
 > 📘 **Примечание**
 >
@@ -54,9 +60,13 @@ x-zendesk:
 
 На вкладке **Интеграция** есть ряд разделов, описанных ниже.
 
+<div id="activate-partner-1" />
+
 #### Активация партнера
 
 Чтобы настроить интеграцию, необходимо сначала <Anchor target="_blank" href="/marketers/ru/docs/amazon-ads-campaign-configuration#активировать-партнера">включить</Anchor> переключатель **Активировать партнера**. Узнайте больше об <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation#активировать-интеграцию-партнера">активации и деактивации партнерских интеграций</Anchor>.
+
+<div id="advanced-privacy" />
 
 #### Расширенные настройки конфиденциальности
 
@@ -68,25 +78,35 @@ x-zendesk:
 | Постбэки отправляются в соответствии с <Anchor target="_blank" href="/partners/ru/docs/advanced-privacy-guide-postback-macros-for-ad-networks">шаблоном Расширенная конфиденциальность</Anchor> |  |
 | Партнеру передаются <Anchor target="_blank" href="/marketers/ru/docs/apply-aggregated-advanced-privacy-framework">агрегированные и анонимные данные</Anchor>, то есть данные на уровне пользователя (ID устройства) не передаются. |  |
 
+<div id="general-settings" />
+
 #### Общие настройки
 
 **Токен**
 
 Добавьте токен верификации, предоставленный специалистом AVOW (AM/BDM).
 
+<div id="install-attribution" />
+
 #### Атрибуция установок
 
 Чтобы атрибутировать установки по просмотрам от Avow GmbH, включите опцию **Атрибуция установок по просмотрам**. На вкладке «Ссылка атрибуции» (описана ниже) имеется шкала для окна атрибуции по просмотрам.
 
+<div id="default-postbacks" />
+
 #### Постбэки по умолчанию
 
 Постбэки по установкам и отклоненным установкам передаются только этому партнеру.
+
+<div id="in-app-event-settings" />
 
 #### Настройки внутренних событий приложения
 
 **Токен**
 
 Добавьте токен верификации, предоставленный специалистом AVOW (AM/BDM).
+
+<div id="in-app-event-postbacks" />
 
 #### Постбэки по внутренним событиям приложений
 
@@ -109,6 +129,8 @@ x-zendesk:
    1. В левом верхнем углу под именем партнера нажмите на название приложения, чтобы открыть список приложений.
    2. Выберите другое приложение из выпадающего списка.
    3. Повторите <Anchor target="_blank" href="/marketers/ru/docs/amazon-ads-campaign-configuration#integration-tab">шаги по интеграции</Anchor> для выбранного приложения.
+
+<div id="note-1" />
 
 > 📘 **Примечание**
 >
@@ -145,6 +167,8 @@ x-zendesk:
 <Accordion title="Вкладка Permissions (Разрешения)">
 
 Выберите, какие разрешения предоставить Avow GmbH для доступа к вашим данным и выполнения различных действий.
+
+<div id="note-2" />
 
 > 📘 **Примечание**
 >

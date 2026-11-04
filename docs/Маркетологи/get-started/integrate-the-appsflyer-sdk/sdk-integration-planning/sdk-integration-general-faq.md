@@ -23,15 +23,21 @@ x-zendesk:
 ---
 > **At a glance:** **Краткий обзор:** AppsFlyer SDK позволяет безопасно рекламировать ваше приложение, атрибутировать его, создавать диплинки и собирать информацию о поведении ваших мобильных пользователей. Вы можете настроить и начать работу с любой рекламной сетью и/или платформой за считанные минуты, а не за недели или месяцы!
 
+<div id="how-to-install-and-update-the-appsflyer-sdk" />
+
 ## Как установить и обновить AppsFlyer SDK?
 
 Чтобы узнать, как установить и обновить SDK AppsFlyer, посетите <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">хаб разработчиков</Anchor>. **Примечание**: Обновление SDK включает выпуск новой версии вашего приложения в магазинах.
+
+<div id="is-it-hard-to-integrate-the-appsflyer-sdk" />
 
 ## Сложно ли интегрировать AppsFlyer SDK?
 
 Опытный разработчик может подготовить приложение для атрибуции с помощью AppsFlyer менее чем за час. Затем потребуется всего несколько минут на приложение.
 
 См. руководства по интеграции AppsFlyer SDK для <Anchor target="_blank" href="/marketers/ru/docs/sdk-integration-overview">Android</Anchor>, <Anchor target="_blank" href="/marketers/ru/docs/sdk-integration-overview">iOS</Anchor>, Unity и других <Anchor target="_blank" href="/marketers/ru/docs/other-platforms">платформ</Anchor>.
+
+<div id="does-the-appsflyer-sdk-affect-app-download-time" />
 
 ## Влияет ли AppsFlyer SDK на время загрузки приложения?
 
@@ -40,11 +46,15 @@ SDK AppsFlyer разработаны для *минимального* влия�
 * **Android SDK:** ~300 КБ
 * **iOS SDK:** ~3,4 МБ
 
+<div id="does-the-appsflyer-sdk-affect-app-performance" />
+
 ## Влияет ли AppsFlyer SDK на производительность Приложения?
 
 API-интерфейсы AppsFlyer SDK в основном являются методами *setter*/ *getter* или быстрыми асинхронными методами веб-сервисов, которые отправляют/получают данные с серверов AppsFlyer. Это означает, что API SDK имеют незначительное влияние на производительность Приложения.
 
 Другими словами, **AppsFlyer SDK** **не влияет на производительность приложения или пользовательский опыт**.
+
+<div id="can-i-record-in-app-events-that-occur-outside-my-app" />
 
 ## Могу ли я записывать внутренние события приложения, которые происходят за его пределами?
 

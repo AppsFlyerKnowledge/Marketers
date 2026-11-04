@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Кратко:** Kuaishou — интегрированный партнер AppsFlyer по рекламной сети.
 
+<div id="setting-up-kuaishou" />
+
 ## Настройка Kuaishou
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -41,14 +43,20 @@ x-zendesk:
 
 <Accordion title="Вкладка «Интеграция»">
 
+<div id="activate-partner" />
+
 ### Activate Partner (Активировать партнера)
 
 При **первом посещении** вам нужно будет включить переключатель ниже. При **первом посещении** вам нужно будет включить переключатель ***Активировать партнера***, чтобы включить настройку параметров на вкладке интеграции. Кнопка ДОЛЖНА оставаться в положении «Включено», пока вы работаете с этим партнером.  
 Дополнительная информация по активации партнеров доступна <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Постбэки по умолчанию
 
 ![mceclip2.png](https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png)
+
+<div id="in-app-events-settings" />
 
 ### In-App Events Settings (Настройки внутренних событий приложения)
 
@@ -102,6 +110,8 @@ x-zendesk:
 На этой вкладке можно выбрать разрешения для Kuaishou в зависимости от того, в каком качестве выступает партнер: как рекламная сеть, как агентство или как оба варианта сразу. Обратите внимание: даже если атрибуция отключена для Kuaishou, вкладка разрешений остается активной, и вы можете предоставить Kuaishou контроль.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### Полномочия для рекламной сети
 

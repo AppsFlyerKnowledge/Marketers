@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Интегрируйте свое приложение Samsung Connected TV (CTV) с AppsFlyer, чтобы получать данные об атрибуции и событиях для ваших кампаний на Samsung.
 
+<div id="about-samsung-ctv-attribution" />
+
 ## Об атрибуции Samsung CTV
 
 Операционная система Samsung Tizen OS для потокового вещания работает на всех телевизорах Samsung.
@@ -35,9 +37,13 @@ x-zendesk:
 * Телевизоры Samsung Smart TV.
 * Атрибуция и регистрация событий CTV-to-CTV, то есть атрибуция и регистрация происходят на устройстве Samsung пользователя.
 
+<div id="samsung-attribution-flow" />
+
 ### Поток атрибуции Samsung
 
 ![[ПОДТВЕРДИТЬ: Схема процесса атрибуции Samsung CTV, показывающая передачу данных об установках, сеансах и событиях внутри приложения из приложения Samsung в AppsFlyer через S2S API или SDK]](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
+
+<div id="integration-procedures" />
 
 ## Процедуры интеграции
 
@@ -50,6 +56,8 @@ x-zendesk:
 | Интеграция партнера | Добавьте Samsung в качестве рекламной сети (интегрированного партнера) в AppsFlyer.<ol><li><Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#a-activate-partner">Активация партнера</Anchor></li><li>[Необязательно] Включите <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#e-install-attribution">**атрибуцию по показам**</Anchor>.</li></ol> | Маркетолог |
 | Настройка ссылки | <Anchor target="_blank" href="/marketers/ru/docs/ctv-pc-and-console-platform-direct-attribution-links">Узнайте, как создавать прямые ссылки атрибуции</Anchor> | Маркетолог |
 | Настройка отчета/просмотр данных | <Anchor target="_blank" href="/marketers/ru/docs/ctv-pc-and-console-platform-attribution-concepts#доступность-данных">Узнайте о доступности данных на дэшбордах и в отчетах</Anchor> | Маркетолог / инженер по обработке и анализу данных |
+
+<div id="traits-and-limitations" />
 
 ## Характеристики и ограничения
 

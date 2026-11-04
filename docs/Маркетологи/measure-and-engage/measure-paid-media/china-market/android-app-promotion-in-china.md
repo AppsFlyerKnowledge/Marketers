@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **Кратко:** практические рекомендации по продвижению вашего Android-приложения на китайском рынке.
 
+<div id="android-apps-in-china" />
+
 ## Android-приложения в Китае
 
 Рассматривайте следующие разделы как контрольный список того, что нужно учесть при продвижении приложения в Китае.
+
+<div id="selecting-an-identifier" />
 
 ### Выбор идентификатора
 
@@ -39,6 +43,8 @@ x-zendesk:
 Для решения этой проблемы в качестве альтернативы GAID используется OAID. OAID (доступный с конца 2019 года) продвигается китайскими производителями устройств, например [Huawei](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/3030304).
 
 См. <Anchor target="_blank" href="/marketers/ru/docs/measure-attribution-in-the-chinese-domestic-market">Интеграция AppsFlyer SDK – Android</Anchor>.
+
+<div id="attribution-solutions-for-the-chinese-market" />
 
 ### Решения для атрибуции на китайском рынке
 
@@ -101,6 +107,8 @@ AppsFlyer предлагает три основных решения для а�
 </Accordion>
 
 Если вы продвигаете свои приложения с помощью нескольких из указанных выше решений и хотите просматривать данные по всем своим кампаниям в Китае в одном представлении дэшборда, вы можете использовать <Anchor target="_blank" href="/marketers/ru/docs/custom-dashboards">пользовательский дэшборд</Anchor>.
+
+<div id="integrated-media-sources" />
 
 ## Интегрированные медиаисточники
 

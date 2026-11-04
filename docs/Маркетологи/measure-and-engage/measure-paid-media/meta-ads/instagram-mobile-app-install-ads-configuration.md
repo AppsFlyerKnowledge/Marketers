@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
 
+<div id="setting-up-instagram" />
+
 ## Настройка Instagram
 
 Настройки для Instagram указаны в разделе Meta ads в разделе «Активные интеграции AppsFlyer» .
@@ -44,6 +46,8 @@ x-zendesk:
 3. Настройте Meta ads в разделе «Конфигурация активных интеграций», добавив идентификатор приложения Facebook.
 4. Если у вас нет идентификатора приложения Facebook, создайте его <Anchor target="_blank" href="https://developers.facebook.com/apps">здесь</Anchor> .  
    [![facebook_app_id.png](https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png)](https://support.appsflyer.com/hc/article_attachments/49468456361489)
+
+<div id="instagram-landing-page-for-deep-linking" />
 
 ## Целевая страница Instagram для диплинкинга
 

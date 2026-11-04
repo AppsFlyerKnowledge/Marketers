@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Кратко:** Оптимизируйте кампании Google AdWords с помощью Adquant by Kenshoo. После настройки AppsFlyer отправляет постбэки в Adquant.
 
+<div id="setting-up-adquant-by-kenshoo" />
+
 ## Настройка Adquant by Kenshoo
 
 **Необходимые условия:** Перед настройкой интеграции обязательно свяжитесь с партнёром и откройте у него аккаунт.
@@ -42,6 +44,8 @@ x-zendesk:
 
 В AppsFlyer перейдите на вкладку **Collaborate > Partner Integrations > Active integrations**, найдите партнера и внесите изменения.
 
+<div id="note" />
+
 > 📘 **Примечание:**
 >
 > Идентификатор клиента Google Ads необходимо вводить **без** дефисов.
@@ -52,6 +56,8 @@ x-zendesk:
 
 7. Введите **Action Identifier**, **Disable\_Country\_Sending** (предоставляется Adquant) и номер **Google Ads Customer ID** в соответствующие поля.
 
+<div id="in-app-events" />
+
 ### События в приложении
 
 1. Чтобы отправлять постбэки событий в приложении в Adquant by Kenshoo, переключите In-App Events Postback в положение **ON**.
@@ -61,6 +67,8 @@ x-zendesk:
 3. Выберите **Send Revenue**, чтобы отправлять все параметры, включая значение дохода (если оно есть в событии).
 
 4. Нажмите **Сохранить**.
+
+<div id="important-note" />
 
 > 📘 **Важное примечание**
 >

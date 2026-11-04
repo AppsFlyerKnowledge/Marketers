@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **Краткий обзор:** Используйте веб-кампании Google Ads для продвижения приложений на ПК и консольных платформах и настройки атрибуции. AppsFlyer поддерживает веб-кампании Google, используя кросс-платформенные целевые страницы или прямые ссылки атрибуции.
 
+<div id="note" />
+
 > 📘 **Примечание:**
 >
 > В этой статье рассказывается о веб-кампаниях, направленных на продвижение приложений для ПК и консолей. Если вы планируете веб-кампании для продвижения мобильных приложений, см. статью <Anchor target="_blank" href="/marketers/ru/docs/google-ads-adwords-create-web-based-campaigns">Google Ads (AdWords) – создание веб-кампаний</Anchor>.
+
+<div id="overview" />
 
 ## Обзор
 
@@ -35,6 +39,8 @@ x-zendesk:
 * [Настройка Google Ads Web в AppsFlyer](/docs/google-ads-web-integration-for-pc-and-console-apps#setting-up-Googleadsweb-in-appsflyer).
 * [Настройка кампаний в Google Ads для приложений для ПК и консолей](/docs/google-ads-web-integration-for-pc-and-console-apps#настройка-кампаний-в-google-ads-web-для-приложений-для-пк-и-консолей).
 
+<div id="prerequisites" />
+
 ### Необходимые условия
 
 Прежде чем активировать веб-интеграцию Google Ads, убедитесь, что у вас есть:
@@ -43,6 +49,8 @@ x-zendesk:
 * Аккаунт AppsFlyer
 * Токен доступа Google с <Anchor target="_blank" href="https://developers.google.com/identity/protocols/oauth2/scopes">необходимой областью OAuth</Anchor>. Вы можете проверить области, связанные с вашим токеном доступа, на Консоли разработчиков Google.
 * Пользователи AppsFlyer <Anchor target="_blank" href="/marketers/ru/docs/user-management">с соответствующими ролями/полномочиями</Anchor> и доступом к соответствующим приложениям
+
+<div id="activate-partner-in-appsflyer" />
 
 ## Активация партнера в AppsFlyer
 
@@ -54,6 +62,8 @@ x-zendesk:
 4. На вкладке **Интеграция** включите **Активировать партнёра**.  
    **Примечание: <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">Переключатель должен оставаться включённым (</Anchor><Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активированным</Anchor>) всё время, пока вы работаете с партнёром.**
 5. Завершите настройку с использованием соответствующих вкладок, как описано в следующем разделе.
+
+<div id="set-up-google-ads-web-in-appsflyer" />
 
 ## Настройка Google Ads Web в AppsFlyer.
 
@@ -67,11 +77,17 @@ x-zendesk:
 
 На вкладке **Интеграция** есть ряд разделов, описанных ниже.
 
+<div id="activate-partner" />
+
 #### Активация партнера
 
 Чтобы настроить интеграцию, необходимо сначала включить переключатель **Активировать партнёра**.
 
+<div id="general-settings" />
+
 #### Общие настройки
+
+<div id="note-1" />
 
 > 📘 **Примечание:**
 >
@@ -88,6 +104,8 @@ x-zendesk:
 3. Чтобы разрешить AppsFlyer загружать конверсии в Google Ads, нажмите **Войти с помощью Google**.
 4. В Google выберите аккаунт администратора MCC, из которого вы получили идентификатор клиента выше.
 5. Нажмите **Allow** (Разрешить).
+
+<div id="enable-view-through-attribution" />
 
 #### Активация атрибуции по просмотрам
 
@@ -107,9 +125,13 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 6. Прокрутите к разделу **Атрибуция по просмотрам** и установите предпочтительное **окно атрибуции по просмотрам** (до 24 часов).
 7. Нажмите **Сохранить интеграцию** для применения изменений.
 
+<div id="default-postbacks" />
+
 #### Постбэки по умолчанию
 
 Постбэки по установкам автоматически отправляются только в Google Ads Web.
+
+<div id="in-app-event-postbacks" />
 
 #### Постбэки по внутренним событиям приложений
 
@@ -146,11 +168,15 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 | Кроссплатформенная целевая страница | **Рекомендация:** для случаев, когда ваша кампания продвигает приложение, которое также доступно на нескольких платформах, например Epic и Steam.<br /><br /><Anchor target="_blank" href="/marketers/ru/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Узнайте о кроссплатформенных целевых страницах</Anchor><br /><br /><Anchor target="_blank" href="/marketers/ru/docs/cross-platform-landing-pages-with-smart-script">Узнайте, как создать кроссплатформенную целевую страницу</Anchor><ul><li>Убедитесь, что все соответствующие параметры URL (которые впоследствии будут считаны Smart Script) добавлены к URL объявления.</li><li>Убедитесь, что скрипт берет GCLID из входящего URL и добавляет его в генерируемую ссылку. То есть, сопоставьте исходящий параметр `gclid` URL-адреса GCLID с входящим параметром URL-адреса `gclid`. **Важно!** Для отображения в отчетах по сырым данным AppsFlyer входящий параметр `gclid` также должен быть сопоставлен с одним из исходящих параметров `af_sub[1-5]`.</li></ul> | Маркетолог (может потребоваться помощь разработчика) |
 | Прямая ссылка атрибуции | Если вы не используете кроссплатформенную целевую страницу, потому что у вас есть только одно приложение на одной платформе, вы можете создать прямые ссылки атрибуции для размещения в объявлениях.<br /><br /><Anchor target="_blank" href="/marketers/ru/docs/ctv-pc-and-console-platform-direct-attribution-links">Узнайте, как создавать прямые ссылки атрибуции</Anchor><ul><li>Убедитесь, что в ссылке указаны обязательные параметры:<ul><li>media\_source (медиа-источник)</li><li>af\_campaign\_id</li><li>af\_r<br />**Внимание**: Этот <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9744275?hl=en">параметр идентификатора клика Google (GCLID)</Anchor> автоматически добавляется Google Ads к любому исходящему клику, если вы используете <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3095550?hl=en">автотеги</Anchor>. Если автоматическое помечание тегами отключено в вашей учётной записи Google Ads, добавьте `gclid={gclid}` к URL-адресу шаблона отслеживания Google Ads.</li></ul></li><li>Для параметров af\_camapign\_id, af\_adset\_id и af\_ad\_id можно использовать макросы Google для [параметров отслеживания значений](https://support.google.com/google-ads/answer/6305348) (динамический параметр URL). Все остальные параметры должны быть установлены вручную.</li><li>Не включайте параметр af\_dp.</li></ul>**Шаблон, который можно использовать для большинства платформ (Epic, Steam, Xbox, PlayStation и т.д.)**:<br /><br />`https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}? af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Образец ссылки, ведущей в Steam**: `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Шаблон, который используется ТОЛЬКО для приложений Google для ПК и Mac**:<br /><br />`https://app.appsflyer.com/{app_id}?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Образец ссылки, ведущей на Google ПК**: `https://app.appsflyer.com/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}` | Маркетолог |
 
+<div id="tip" />
+
 > 👍 **Совет.**
 >
 > Чтобы упростить анализ кампании, указывайте тип кампании -- веб или мобайл -- в префиксе или суффиксе названия кампании (например, название-кампании\_web).
 
 </Accordion>
+
+<div id="set-up-campaigns-in-google-ads-web-for-pc-and-console-apps" />
 
 ## Настройка кампаний в Google Ads Web для приложений для ПК и консолей
 
@@ -231,6 +257,8 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 3. Выберите **Офлайн конверсии** в качестве источника данных для ваших действий конверсии.
 4. Выберите **Импорт** в списке типов конверсий, затем выберите **Ручной импорт с помощью API или загрузок** > **Отслеживать конверсии по кликам**.
 
+   <div id="note-2" />
+
    > 📘 **Примечание:**
    >
    > Если **ручной импорт с использованием API или загрузок** недоступен:
@@ -251,20 +279,28 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data-from-november-2-2025" />
+
 ## Просмотр данных атрибуции web-to-app (со 2 ноября 2025 г.)
 
 Хотя события конверсии, происходящие в вебе, отправляются в Google с исходным PID `googleads_int`, на дэшборде и отчётах о сырых данных AppsFlyer они отображаются под PID `googleadwords_int`. Это относится как к основным событиям конверсии, так и к событиям-ассистам конверсии.
 
 Объединённый формат отчётности позволяет анализировать эффективность как кампаний для веба и приложений в одном месте, включая полные отчёты по затратам в мобильных каналах и вебе.
 
+<div id="view-in-the-dashboard" />
+
 ### Посмотреть на дэшборде
 
 Вся атрибуция Google web-to-app отображается как `googleadwords_int` в Обзорном дэшборде и дэшборде «Активность». Это обеспечивает единое, консолидированное представление результатов кампаний на разных платформах. Используйте стандартные фильтры и разбивки, чтобы сравнивать трафик в приложении и на вебе внутри ваших данных Google Рекламы.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### Просмотр в отчётах о сырых данных и отчетах API
 
 * В **экспортах сырых данных и ответах API** идентификатор `googleadwords_int`PID присутствует в поле `media_source` для веб-активности Google. Чтобы проверить детали настройки веб-кампании, обратитесь к полю `original_url`, которое показывает `googleads_int` как PID, использованный при создании веб-кампаний.
 * **Отчеты о постбэках** показывают `googleads_int` как оригинальный медиаисточник, к которому был отправлен постбэк.
+
+<div id="traits-and-limitations" />
 
 ## Характеристики и ограничения
 

@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **Краткий обзор:** Используйте веб-кампании TikTok Ads, чтобы атрибутировать Web-to-app конверсии из TikTok Ads
 
+<div id="overview" />
+
 ## Информация о компании
 
 AppsFlyer поддерживает интеграцию с TikTok Ads (`tiktokweb_int`) для веб-кампаний по привлечению пользователей, позволяя передавать данные атрибуции и конверсий напрямую через Events API TikTok. Затем TikTok сможет использовать эти данные для оптимизации таргетинга рекламы, измерения эффективности и создания кастомных аудиторий.
+
+<div id="important" />
 
 > 🚧 **Важно!**
 >
 > На данный момент интеграция с TikTok Web не поддерживает отправку постбэков повторного вовлечения в CAPI.
 
+<div id="prerequisites" />
+
 ### Требования
 
 Прежде чем активировать интеграцию TikTok Web, убедитесь, что у вас есть бизнес-аккаунт в [TikTok Ads Manager](https://getstarted.tiktok.com/grow-your-business-gb?lang=en&attr_source=google&attr_source=google&attr_medium=search-br-ad&attr_medium=search-br-ad&attr_adgroup_id=155057567247&attr_adgroup_id=155057567247&attr_term=tiktok%20ads%20manager&attr_term=tiktok%20ads%20manager&no_parent_redirect=1&no_parent_redirect=1&creative=%7BGenZCopy%7D&matchtype=e&gad_source=1&gad_campaignid=20368896948&gbraid=0AAAAACeGRgRdqveOjiUJwxN0-j9g7VjPg&gclid=Cj0KCQjwmYzIBhC6ARIsAHA3IkTKsL0d1xAZLIO_9GIkDDIJR-jZs9jDGVa1hTDbsLzcxZl2j6p7ITcaAhf1EALw_wcB).
+
+<div id="how-to-create-a-tiktok-web-ads-campaign" />
 
 ### Как создать рекламную кампанию TikTok Web Ads
 
@@ -46,6 +54,8 @@ AppsFlyer поддерживает интеграцию с TikTok Ads (`tiktokwe
 
 * <Anchor target="_blank" href="/marketers/ru/docs/meta-ads-create-web-based-campaigns#создание-целевой-страницы-с-помощью-onelink-smart-script">создание целевой страницы с помощью OneLink Smart Script</Anchor> (необязательно)
 * [Создание целевой страницы с помощью OneLink Smart Banners](#создание-целевой-страницы-с-помощью-onelink-smart-banners) (необязательно)
+
+<div id="set-up-tiktok-web-ads-integration-in-appsflyer" />
 
 ## Настройте интеграцию с TikTok Web Ads в AppsFlyer
 
@@ -65,6 +75,8 @@ AppsFlyer поддерживает интеграцию с TikTok Ads (`tiktokwe
 6. **Идентификатор пикселя:** Введите идентификатор пикселя. Вы можете сгенерировать его или получить в TikTok Ads Manager, следуя инструкциям, приведенным <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">ЗДЕСЬ</Anchor>.
 7. **Токен доступа:** Введите токен доступа. Чтобы сгенерировать или получить его, следуйте <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">этим инструкциям</Anchor>
 8. **Ограничение использования персональных данных пользователей в рекламе TikTok (CCPA):** Включите этот переключатель, чтобы обеспечить соблюдение <Anchor target="_blank" href="/marketers/ru/docs/send-opendsr-api-requests">законов о защите данных</Anchor>.
+
+   <div id="note" />
 
    > 📘 **Примечание:**
    >
@@ -109,6 +121,8 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 6. В столбце **For Users From** выберите **This Partner Only** , чтобы постбэки событий в приложении отправлялись исключительно по событиям, выполненным пользователями, пришедшими от этого партнера.
 7. В столбце **including** выберите, будут ли события отправляться со значениями дохода. См.  <Anchor target="_blank" href="/marketers/ru/docs/in-app-event-postback-configuration#данные-для-включения-в-постбэки">Данные для включения в постбэки</Anchor>.
 
+   <div id="note-1" />
+
    > 📘 **Примечание:**
    >
    > * Если вы настраиваете событие покупки, в столбце **«Включая»** установите значение **«Значения и выручка».** Выбор любого другого варианта приведет к сбою в отправке постбэка.
@@ -123,6 +137,8 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 
 </Accordion>
 
+<div id="set-up-appsflyer-integration-in-tiktok-ads" />
+
 ## Настройте интеграцию с AppsFlyer в TikTok Ads
 
 Выполните следующие шаги в TikTok Ads Manager.
@@ -132,6 +148,8 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 <Accordion title="1. Установите тип, цель и задачи кампании">
 
 Вы можете выбрать любое предопределенное in-app событие, отправленное из AppsFlyer, в качестве цели кампании, или выбрать «Download», если вы хотите оптимизировать кампанию под установки мобильного приложения.
+
+<div id="warning" />
 
 > ❗️ **Предупреждение**
 >
@@ -154,6 +172,8 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 2. Нажмите **Создать параметр URL**, чтобы добавить параметры URL к URL (будь то URL-адрес целевой страницы или ссылка атрибуции AF).
 3. В разделе **Настраиваемые параметры** нажмите **Добавить параметр**.
 4. Сопоставьте параметры AppsFlyer с соответствующими значениями в TikTok. Параметры, которые вы будете сопоставлять, зависят от того, ведет ли целевой URL-адрес на целевую страницу, атрибуционную ссылку или в магазин для ПК или консоли.
+
+   <div id="landing-page-or-attribution-link" />
 
    #### Целевая страница или атрибуционная ссылка
 
@@ -178,6 +198,8 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
    ```
 
    Если APK вашего приложения НЕ размещен в Google Play Store, добавьте параметр <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#af_r">`af_r`</Anchor> и сопоставьте с ним URL-адрес магазина, например, `https://Add-your-store-url.com`
+
+   <div id="pc-or-console-store" />
 
    #### Магазин для ПК или консоли
 
@@ -211,12 +233,16 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
    https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=tiktokweb_int&af_campaign_id=__campaign_id__&af_campaign=__campaign_name__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
    ```
 
+   <div id="note-2" />
+
    > 📘 **Примечание:**
    >
    > TikTok автоматически добавляет `ttclid={{ttclid}}` к целевому URL-адресу, когда пользователь кликает по рекламе
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## Создание целевой страницы с помощью OneLink Smart Script
 
@@ -292,12 +318,16 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 
 * Напомните разработчику включить входящий параметр `ttclid` в исходящий URL-адрес.
 
+  <div id="note-5" />
+
   > 📘 **Примечание:**
   >
   > Для отображения в отчетах о сырых данных AppsFlyer входящий параметр `ttclid` также должен быть сопоставлен (в дополнение к исходящему параметру `ttclid` ) с одним из исходящих параметров `af_sub[1-5]` .
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## Создание целевой страницы с помощью OneLink Smart Banners
 
@@ -328,6 +358,8 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 1. Настройте шаблон атрибуционных ссылок OneLink для кампании. Для получения дополнительной информации см. раздел <Anchor target="_blank" href="/marketers/ru/docs/create-a-onelink-template#создание-шаблонов-onelink">Как создавать шаблоны OneLink</Anchor>.
 2. Создайте Smart Banner
 
+   <div id="note-6" />
+
    > 📘 **Примечание:**
    >
    > Приведенные ниже инструкции посвящены конкретным шагам, которые необходимы для настройки кампании TikTok Ads с помощью смарт-баннеров. Подробное руководство по настройке кампаний при помощи смарт-баннеров приведено в <Anchor target="_blank" href="/marketers/ru/docs/smart-banners-mobile-web-to-app-for-marketers#настройки">разделе «Настройка»</Anchor> статьи <Anchor target="_blank" href="/marketers/ru/docs/smart-banners-mobile-web-to-app-for-marketers">Смарт-баннеры: mobile web-to-app (для маркетологов)</Anchor>.
@@ -337,19 +369,27 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Просмотреть данные атрибуции web-to-app
 
 Хотя события конверсии в вебе отправляются в TikTok с исходным PID `tiktokweb_int`, в дэшборде AppsFlyer и отчетах о сырых данных они отображаются под PID `tiktokglobal_int`. Это относится как к основным событиям конверсии, так и к событиям-ассистам конверсии.
 
 Этот унифицированный вид отчетов позволяет анализировать эффективность веб-кампаний и кампаний для приложения в одном месте, включая подробную отчетность по стоимости для веба и мобильных устройств.
 
+<div id="view-in-the-dashboard" />
+
 ### Посмотреть на дэшборде
 
 Вся атрибуция TikTok web-to-app отображается под `tiktokglobal_int` в дэшбордах Overview и Activity. Это обеспечивает единое, консолидированное представление результатов кампаний на разных платформах. Используйте стандартные фильтры и разбивки, чтобы сравнивать трафик в приложении и веб-трафик в ваших данных TikTok Ads.
 
+<div id="view-in-raw-data-and-api-reports" />
+
 ### Просмотр в отчётах о сырых данных и через API
 
 Экспорты сырых данных и ответы API включают PID `tiktokglobal_int` в поле `media_source` для веб-активности TikTok. Чтобы проверить детали настройки веб-кампании, обратитесь к полю `original_url`, в котором указан PID `tiktokweb_int`, использованный при создании веб-кампании.
+
+<div id="measure-cost-clicks-and-impressions" />
 
 ## Измеряйте затраты, клики и показы
 
@@ -359,6 +399,8 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
    Перейдите на вкладку **Расходы** или страницу **Настройки расходов** и подключите через `tiktokglobal_int`. Пошаговые инструкции см. в статье <Anchor target="_blank" href="/marketers/ru/docs/set-up-roi360-cost-api-to-measure-cost-data">Настройка ROI360 Cost API для измерения данных о затратах</Anchor>.
 2. Добавьте идентификатор кампании в URL-адрес целевой страницы:  
    Включите `af_c_id` вместе с полной иерархией кампании в URL-адрес целевой страницы. Это гарантирует, что стоимость, клики и показы сопоставляются с вашими данными веб-атрибуции на максимально гранулярном уровне.
+
+<div id="note-7" />
 
 > 📘 **Примечание**
 >

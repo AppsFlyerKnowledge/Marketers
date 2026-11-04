@@ -26,6 +26,8 @@ x-zendesk:
 
 ![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
 
+<div id="overview" />
+
 ## Обзор
 
 В модели атрибуции AppsFlyer события, происходящие в результате вовлечения пользователя в ретаргетинговую кампанию, атрибутируются как медиа-источнику, мотивировавшему установку, так и медиа-источнику, мотивировавшему повторное вовлечение.
@@ -47,6 +49,8 @@ x-zendesk:
   * [Рекомендуется] **conversion\_type**: установка или повторное вовлечение.
   * is\_retargeting: если true, данные относятся к кампании ретаргетинга.
 
+<div id="attribution-relative-to-the-re-engagement-window" />
+
 #### Атрибуция относительно окна повторного вовлечения
 
 | Медиа-источник | Перед повторным вовлечением | Во время повторного вовлечения | После повторного вовлечения |
@@ -54,15 +58,21 @@ x-zendesk:
 | Привлечение пользователей | Основной<br /><br />is\_primary: True<br /><br />conversion\_type: установка<br /><br />(is\_retargeting: False) | Дополнительный<br /><br />is\_primary: False<br /><br />conversion\_type: повторное вовлечение<br /><br />(is\_retargeting: False) | Основной<br /><br />is\_primary: True<br /><br />conversion\_type: установка<br /><br />(is\_retargeting: False) |
 | Обязательный | Н/Д | Основной<br /><br />is\_primary: True<br /><br />conversion\_type: повторное вовлечение<br /><br />(is\_retargeting: True) | Н/Д |
 
+<div id="support-for-dashboard-view-types" />
+
 ## Поддержка типов представления дэшбордов
 
 Некоторые дэшборды и когортные отчеты содержат несколько вариантов представления, включая объединенный, привлечение пользователей и ретаргетинг. Эти типы представлений используют логику, аналогичную той, что применяется в сырых данных.
 
 ![](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
 
+<div id="data-filtering-by-view-type-using-the-conversion_type-field" />
+
 #### Фильтрация данных по типу представления с помощью поля conversion\_type
 
 <table><thead><tr><th>Тип представления</th><th>conversion_type (тип конверсии)</th><th>is_primary</th><th>Атрибуция</th></tr></thead><tbody><tr><td rowspan="2">Привлечение пользователей</td><td>Установить</td><td>True или False</td><td>События UA, атрибутированные медиа-источнику UA</td></tr><tr><td>false означает, что налог включен в общую выручку.</td><td>false</td><td>События ретаргетинга, атрибутированные медиа-источнику UA.</td></tr><tr><td>Обязательный</td><td>re-engagement или re-attribution</td><td>true</td><td>События ретаргетинга, атрибутированные медиа-источнику ретаргетинга</td></tr><tr><td>Объединенный</td><td>install или re-engagement</td><td>true</td><td>Все события, атрибутированные медиа-источнику последнего взаимодействия</td></tr></tbody></table>
+
+<div id="how-do-i-identify-double-attributed-retargeting-events-in-user-acquisition-in-app-reports" />
 
 ## Как выявить события ретаргетинга с двойной атрибуцией в отчетах о внутренних событиях в результате привлечении пользователей?
 

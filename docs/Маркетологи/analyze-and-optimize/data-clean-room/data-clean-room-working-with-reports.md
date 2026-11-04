@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Кратко:** Работайте с отчетами, которые вы настроили в Data Clean Room (DCR).
 
+<div id="introduction" />
+
 ## Введение
 
 В этой статье рассказывается о работе с отчетами, которые вы уже создали. Полный список этих отчетов и их статусы можно просмотреть на вкладке **Reports** в DCR.  
@@ -32,6 +34,8 @@ x-zendesk:
 
 * <Anchor target="_blank" href="/marketers/ru/docs/data-clean-room-creating-attribution-data-reports">Создание отчетов по данным Атрибуции</Anchor>
 * <Anchor target="_blank" href="/marketers/ru/docs/data-clean-room-creating-in-app-event-reports">Создание отчетов по событиям в приложении</Anchor>
+
+<div id="editing-or-deleting-a-report" />
 
 ## Редактирование или удаление отчета
 

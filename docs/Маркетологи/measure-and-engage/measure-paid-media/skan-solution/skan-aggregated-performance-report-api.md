@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Данные по эффективности SKAN обогащаются дополнительными точками данных. Аналогично данным на дэшборде SKAdNetwork. Агрегирование с использованием даты установки или даты прибытия постбэка.
 
+<div id="skan-aggregated-performance-report-api" />
+
 ## API для агрегированного отчета SKAN об эффективности
 
 API возвращает метрики атрибуции, предоставленные Apple SKAdNetwork (реальные данные) и другие точки данных, используя дату установки или поступления постбэка. Отчет по своей структуре аналогичен данным, представленным на <Anchor target="_blank" href="/marketers/ru/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">дэшборде SKAN</Anchor>.
@@ -37,6 +39,8 @@ API возвращает метрики атрибуции, предоставл
 2. Дайте разработчику токен API, который будет использоваться в заголовке аутентификации.
 3. Предоставьте разработчикам параметры, которые они должны ввести при вызове API, как описано в следующем разделе. Параметры определяют, что содержится в отчете, как он организован, а также устанавливают временные рамки отчетности.
 4. Скажите своему разработчику, чтобы он следовал <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-performance-report-api-get">API для агрегированного отчета SKAN об эффективности</Anchor> в хабе разработчиков.
+
+<div id="parameters" />
 
 #### Параметры
 
@@ -60,6 +64,8 @@ API возвращает файл CSV.
 * Некоторые метрики (доход, вовлечение, конверсия) зависят от <Anchor target="_blank" href="/marketers/ru/docs/skan-conversion-studio">настроек измерения эффективности</Anchor> SKAN.
 * В отчет включаются только внутренние события приложения, которые пользователи совершили за отчетный период. Таким образом, количество и последовательность столбцов внутренних событий приложения могут меняться от отчета к отчету. Не полагайтесь на последовательность столбцов при планировании процесса импорта данных.
 * Примеры: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vSmnyUITQjRxNp6-rz8Xzscu-Rr4Kn2DW1du2VppS-QrpyQSZ0GKQ_qZdWNdNoLuwJAmgh2O-bWiuU3/pub?gid=0&single=true&output=csv) | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQogLd4w3xgrjQBmEiHLfcvz1e9dtWez_Rdg1OxV8bSRHRE-wxZJItfT6azLr4iZAgsW2Vxr_WVmEYo/pub?gid=0&single=true&output=csv">V2</Anchor>
+
+<div id="report-fields" />
 
 #### Поля отчета
 

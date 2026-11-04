@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Найдите основные причины и решения того, почему ваш партнер не получает ожидаемых постбэков. Просмотрите каждую из приведенных ниже тем и выясните, могут ли они быть причиной.
 
+<div id="check-the-integration-toggles" />
+
 ## Проверьте переключатели интеграции
 
 Различные переключатели управляют различными частями интеграции. Состояние переключателя может быть причиной того, что постбэки не приходят.
@@ -66,6 +68,8 @@ x-zendesk:
    ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
 
 </Accordion>
+
+<div id="check-the-event-configuration" />
 
 ## Проверьте настройку событий
 
@@ -127,6 +131,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="privacy-restrictions" />
+
 ## Ограничения конфиденциальности
 
 В следующих случаях AppsFlyer не отправляет постбэки из-за ограничений конфиденциальности.
@@ -158,6 +164,8 @@ x-zendesk:
 Подробнее см: <Anchor target="_blank" href="/marketers/ru/docs/apply-privacy-preserving-sdk-methods#prevent-data-sharing-with-third-parties">Предотвращение передачи данных третьим лицам</Anchor> и <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners">setSharingFilterForPartners</Anchor>.
 
 </Accordion>
+
+<div id="miscellaneous" />
 
 ## Разное
 
@@ -236,6 +244,8 @@ x-zendesk:
 Если включена расширенная конфиденциальность (AP), данные на уровне пользователя для пользователей, не давших согласие, на устройствах с iOS 14.5+ недоступны через постбэки. Постбэки отправляются в соответствии с <Anchor target="_blank" href="/partners/ru/docs/advanced-privacy-guide-postback-macros-for-ad-networks#типы-шаблонов-для-отправки-постбэков">шаблоном «Расширенная конфиденциальность»</Anchor>.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

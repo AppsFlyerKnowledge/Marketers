@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **At a glance:** **Краткий обзор:** Изучите функции SDK (пакет средств разработки ПО) AppsFlyer и определите, какие API вы хотите использовать в вашем Приложении для Android или iOS.
 
+<div id="about-the-sdk" />
+
 ## О SDK (пакет средств разработки ПО)
 
 Посмотрите это видео, чтобы получить общее представление об интеграции SDK.
@@ -79,6 +81,8 @@ SDK обеспечивает функциональность установки
 </Tab>
 </Tabs>
 
+<div id="sdk-compatibility" />
+
 ## Совместимость SDK
 
 AppsFlyer SDK совместим со следующими платформами:
@@ -110,13 +114,19 @@ SDK поддерживает <Anchor target="_blank" href="/marketers/ru/docs/ap
 </Tab>
 </Tabs>
 
+<div id="sdk-integration" />
+
 ## Интеграция SDK
 
 Процесс установки и интеграции SDK требует совместной работы менеджера продукта и мобильного разработчика. **Перед** интеграцией SDK с вашим приложением, ознакомьтесь со всеми задачами интеграции и определите, какие функции вы хотите использовать.
 
+<div id="sdk-planning-checklist" />
+
 ### Контрольный список планирования SDK
 
 Мы подготовили <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTD4OimHC93iw2AJCcAY45yAc9lOBfJe8PskI_0NFZTnWnrIq1hjPBvCztkbom9acMDDd4d1d5mMFfi/pub?output=xlsx">чек-лист</Anchor>, который сориентирует вас в процессе планирования. Для каждой задачи есть ссылки на документацию для маркетологов и разработчиков.
+
+<div id="sdk-integration-tasks" />
 
 ### Задачи интеграции SDK
 

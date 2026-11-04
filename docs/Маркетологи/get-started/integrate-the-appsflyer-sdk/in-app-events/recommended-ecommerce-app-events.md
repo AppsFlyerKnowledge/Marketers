@@ -34,6 +34,8 @@ x-zendesk:
 * Сколько покупателей оформили заказы
 * Количество покупателей: постоянных и совершивших разовую покупку.
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > * Обязательно прочитайте <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview#настройка-событий-в-приложении">инструкции</Anchor> для маркетологов по реализации внутренних событий приложения.
@@ -44,6 +46,8 @@ x-zendesk:
 > Дополнительные сведения о регистрации внутренних событий см. в <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview">Руководстве по внутренним событиям приложения</Anchor>.
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Рекомендуемые структуры для предопределенных событий
 
@@ -270,6 +274,8 @@ x-zendesk:
 | af\_receipt\_id | Идентификатор заказа<br /><br />**Обязательный параметр для проверки покупки через CRITEO и Google Рекламу** | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Рекомендуемые структуры для настраиваемых событий
 

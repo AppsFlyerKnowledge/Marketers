@@ -34,6 +34,8 @@ x-zendesk:
 > * <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">Некоторые медиа-источники</Anchor> ограничивают передачу данных третьим лицам. Поэтому постбэки для ограниченных событий не будут отправляться этому партнеру, независимо от настроенной отправки постбэков.
 > * Постбэки не будут отправляться, если источник — органический.
 
+<div id="integration-overview" />
+
 ## Обзор интеграции
 
 Чтобы настроить интеграцию с Braze, следуйте инструкциям ниже.
@@ -123,6 +125,8 @@ AppsFlyer.setAdditionalData(customData);
 </Tab>
 </Tabs>
 
+<div id="setting-up-braze" />
+
 ## Настройка Braze
 
 **Необходимые условия:** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт. Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -141,10 +145,14 @@ AppsFlyer.setAdditionalData(customData);
 
 На вкладке «Интеграция» есть несколько разделов, которые описаны ниже.
 
+<div id="activate-partner" />
+
 ### Активация партнера
 
 При **первом посещении** вам необходимо ***Активировать партнера***, чтобы включить настройку параметров вкладки интеграции. Кнопка ДОЛЖНА оставаться в положении «Включено», пока вы работаете с этим партнером.  
 Дополнительная информация по активации партнеров доступна <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
+
+<div id="general-settings" />
 
 ### Общие настройки
 
@@ -166,6 +174,8 @@ Braze подключается к AppsFlyer через уникальный кл
 * Название кампании
 * Название группы объявлений
 * Название объявления
+
+<div id="default-postbacks" />
 
 ### Постбэки по умолчанию
 
@@ -208,6 +218,8 @@ AppsFlyer может отправлять автоматические пост�
 Разрешения для Braze недоступны.
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-braze" />
 
 ## Просмотр данных атрибуции пользователя в Braze
 

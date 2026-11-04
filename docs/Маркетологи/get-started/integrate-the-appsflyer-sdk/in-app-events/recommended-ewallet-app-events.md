@@ -33,6 +33,8 @@ x-zendesk:
 * Для оплаты каких услуг пользователи наиболее часто используют электронный кошелек.
 * Какие продавцы пользуются наибольшей популярностью
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > * Обязательно прочитайте <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview#настройка-событий-в-приложении">инструкции</Anchor> для маркетологов по реализации внутренних событий приложения.
@@ -43,6 +45,8 @@ x-zendesk:
 > Дополнительные сведения о регистрации внутренних событий см. в <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview">Руководстве по внутренним событиям приложения</Anchor>.
 
 [![Flowchart_for_recommended_events e-Wallet_app_user_journey](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Рекомендуемые структуры для предопределенных событий
 
@@ -109,6 +113,8 @@ x-zendesk:
 | merchant\_name | Имя продавца | cineplex |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Рекомендуемые структуры для настраиваемых событий
 

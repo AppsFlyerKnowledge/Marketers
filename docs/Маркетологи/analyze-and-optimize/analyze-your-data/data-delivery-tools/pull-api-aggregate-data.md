@@ -34,9 +34,13 @@ x-zendesk:
 
 [![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
 
+<div id="looking-for-pull-api-raw-data" />
+
 > 👍 **Вам нужны сырые данные Pull API?**
 >
 > Узнайте все о них <Anchor target="_blank" href="/marketers/ru/docs/pull-api-raw-data">здесь</Anchor>.
+
+<div id="pull-api-aggregate-data" />
 
 ## агрегированные данные Pull API
 
@@ -46,6 +50,8 @@ x-zendesk:
 * Дополнительные возможности в Pull API:
   * Добавление типа взаимодействия для атрибуции
   * Выбор часового пояса
+
+<div id="aggregate-performance-reports-available-via-pull-api" />
 
 #### Сводный отчет об эффективности доступен через Pull API
 
@@ -103,6 +109,8 @@ x-zendesk:
 | Изменения названия кампании | Отчеты через Pull API не поддерживают изменения названия кампании |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

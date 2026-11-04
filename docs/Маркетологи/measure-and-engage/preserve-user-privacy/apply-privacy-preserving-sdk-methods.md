@@ -39,9 +39,13 @@ AppsFlyer SDK предлагает владельцам приложений н�
 
 Давайте обсудим каждый метод.
 
+<div id="use-start-and-stop-methods" />
+
 ## Использование методов start и stop
 
 SDK отправляет установки и события в приложении в AppsFlyer только после вызова метода `start`. Любое событие, предшествующее вызову `start`, не будет сообщено SDK. Аналогичным образом, если вызов `start` впоследствии будет отменен вызовом метода `stop`, никакие события после этого отправляться не будут.
+
+<div id="impact-on-attribution" />
 
 ### Влияние на атрибуцию
 
@@ -50,6 +54,8 @@ SDK отправляет установки и события в приложе�
 * метод `start` не вызывается.
 * метод `stop` вызывается для отмены предыдущего вызова start.
 
+<div id="common-use-cases" />
+
 ### Распространенные варианты применения
 
 | Пример использования | Описание |
@@ -57,6 +63,8 @@ SDK отправляет установки и события в приложе�
 | Согласие на сбор данных или отказ от него при запуске | Вызовите `start` после того, как пользователь даст согласие на предоставление данных при первом запуске.  <br />Если пользователь не дает согласия на сбор данных, не вызывайте  <br />`start` вообще. |
 | Отказ для сессии | В каждой сессии работы с приложением спрашивайте согласие и, соответственно, вызывайте или не вызывайте `start`. |
 | Однократный отказ от предоставления данных (когда пользователь соглашается, а затем решает отказаться). | Вызовите `stop`, чтобы остановить отправку дальнейших событий из SDK. |
+
+<div id="developer-reference" />
 
 ### Ссылки для разработчика
 
@@ -76,11 +84,15 @@ SDK отправляет установки и события в приложе�
 </Tab>
 </Tabs>
 
+<div id="prevent-sharing-data-with-networks" />
+
 ## Предотвращение обмена данными с сетями
 
 Во время интеграции с рекламной сетью или сетью с самостоятельной атрибуцией (SRN) вы можете выбрать, передавать или не передавать информацию уровня пользователя этому партнеру. В SDK вы можете дополнительно отфильтровать обмен данными со всеми или некоторыми партнерами в **соответствии с предпочтениями конечного пользователя** с помощью метода `setSharingFilterForPartners`.
 
 При использовании этого метода AppsFlyer запретит передачу данных пользователей исключенному партнеру любыми способами, включая постбэки, API, отчеты по сырым данным и т. д.
+
+<div id="impact-on-attribution-1" />
 
 ### Влияние на атрибуцию
 
@@ -93,6 +105,8 @@ SDK отправляет установки и события в приложе�
   >
   > AppsFlyer не может атрибутировать данные о вовлечении для любых SRN, исключенных из получения ваших данных.
 
+
+<div id="developer-reference-1" />
 
 ### Ссылки для разработчика
 
@@ -112,6 +126,8 @@ SDK отправляет установки и события в приложе�
 </Tab>
 </Tabs>
 
+<div id="anonymize-user-information" />
+
 ## Анонимизация пользовательской информации
 
 В отличие от метода `anonymizeUser`, отключение определенных идентификаторов позволяет вам самим решить, какие идентификаторы вы хотите оставить. Вы можете запретить SDK собирать и отправлять определенные идентификаторы устройств в AppsFlyer.
@@ -122,6 +138,8 @@ SDK отправляет установки и события в приложе�
 На следующем изображении показан пример строки сырых данных после анонимизации (удаление и хеширование).
 
 ![Пример строки сырых данных с удаленными и хешированными полями после анонимизации](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)
+
+<div id="impact-on-attribution-2" />
 
 ### Влияние на атрибуцию
 
@@ -148,6 +166,8 @@ SDK отправляет установки и события в приложе�
 >
 > В анонимизированном режиме поддерживаются <Anchor target="_blank" href="/marketers/ru/docs/self-reporting-networks-srns#атрибуция">SRN</Anchor>, <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-attribution-model#probabilistic-modeling">PMOD (probabilistic)</Anchor> и <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-attribution-model#install-referrer-android-only">атрибуция на основе реферера</Anchor>. Сюда входят <Anchor target="_blank" href="/marketers/ru/docs/basic-sdk-integration-guide#реферал-установки-в-google-play">Google Play Install Referrer</Anchor>, рефереры других магазинов (например, <Anchor target="_blank" href="/marketers/ru/docs/set-up-multi-store-android-attribution#referrer-implementation-thirdparty-android-app-stores">Xiaomi, Huawei,</Anchor> <Anchor target="_blank" href="/marketers/ru/docs/set-up-appsflyer-preload-referrer-attribution#реферер-предзагрузки-samsung">и Samsung</Anchor>) и <Anchor target="_blank" href="/marketers/ru/docs/set-up-appsflyer-preload-referrer-attribution?utm_source=chatgpt.com">реферер предустановки AppsFlyer</Anchor>
 
+<div id="developer-reference-2" />
+
 ### Ссылки для разработчика
 
 Ссылки для разработчиков и документация о том, как анонимизировать информацию о пользователях:
@@ -166,11 +186,15 @@ SDK отправляет установки и события в приложе�
 </Tab>
 </Tabs>
 
+<div id="remove-specific-device-identifiers" />
+
 ## Удаление определенных идентификаторов устройств
 
 Вы можете запретить SDK собирать и отправлять определенные идентификаторы устройств в AppsFlyer. В отличие от метода `anonymizeUser`, отключение определенных идентификаторов позволяет вам самим решить, какие идентификаторы вы хотите оставить.
 
 API SDK включает следующие методы отключения идентификаторов.
+
+<div id="android-identifiers" />
 
 ### Идентификаторы Android
 
@@ -179,12 +203,16 @@ API SDK включает следующие методы отключения и
 | [`Установки из исключенных`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers) | <ul><li>Рекламный идентификатор Google (GAID)</li><li>Открытый анонимный идентификатор устройства (OAID)</li><li>Рекламный идентификатор Amazon (AAID)</li></ul> |
 | [`setcollectoaid`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid) | Открытый анонимный идентификатор устройства (OAID) |
 
+<div id="ios-identifiers" />
+
 ### Идентификаторы iOS
 
 | Метод | Идентификатор отключен |
 | --- | --- |
 | [`Согласие на сбор данных или отказ от него при запуске`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier) | IDFA (iOS 13 и ниже) |
 | [`disableIDFVCollection`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableidfvcollection) | IDFV |
+
+<div id="developer-reference-3" />
 
 ### Ссылки для разработчика
 

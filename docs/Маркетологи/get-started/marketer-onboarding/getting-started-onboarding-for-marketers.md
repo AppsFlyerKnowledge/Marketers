@@ -27,11 +27,15 @@ x-zendesk:
 
 <Embed title="Начало работы: интеграция для маркетологов" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/gamcb25kgu" providerUrl="https://fast.wistia.com" />
 
+<div id="introduction" />
+
 ## Введение
 
 Этот документ помогает **менеджерам по продуктам маркетологов приложений) планировать и выполнять интеграцию с AppsFlyer**. Для каждого элемента указан владелец и примерное время реализации.
 
 Обратите внимание, что оценки времени в этой статье даются только для общего представления. Они основаны на нашем опыте работы со многими новыми клиентами. При этом мы понимаем, что для каждого владельца приложения, приложения и внедрения фактически затраченное время будет своим.
+
+<div id="account-setup" />
 
 ## Настройка аккаунта
 
@@ -44,9 +48,13 @@ x-zendesk:
 
 **Результат:** Добро пожаловать! Теперь у вас есть активный аккаунт AppsFlyer и пользователи, которые имеют к нему доступ.
 
+<div id="tip" />
+
 > 👍 **Совет**
 >
 > Впервые в AppsFlyer и не знаете, чем мы можем быть вам полезны? <Anchor target="_blank" href="/marketers/ru/docs/welcome-to-appsflyer#что-можно-делать-с-помощью-appsflyer">Посмотрите это 6-минутное видео</Anchor>.
+
+<div id="app-onboarding" />
 
 ## Интеграция приложения
 
@@ -58,6 +66,8 @@ x-zendesk:
 
 1. В строке меню откройте меню пользователя (раскрывающийся список под адресом электронной почты).
 2. Выберите «Интеграция приложения»
+
+<div id="step-1-app-setup" />
 
 ## Шаг 1: Настройка приложения
 
@@ -71,6 +81,8 @@ x-zendesk:
 | [Необязательно] Перенесите устройства имеющихся пользователей в AppsFlyer | 2 часа | Если у вашего приложения значительная база пользователей, подумайте об <Anchor target="_blank" href="/marketers/ru/docs/migration-to-appsflyer-from-other-vendors#миграция-устройств--необязательно">их переносе в AppsFlyer</Anchor>, чтобы избежать двойной оплаты.<br /><br />**Примечание:** Обратитесь за помощью к вашему менеджеру AppsFlyer или в службу поддержки по адресу [hello@appsflyer.com](mailto:hello@appsflyer.com)). |
 
 **Результат:** теперь ваши приложения определены на дэшборде AppsFlyer.
+
+<div id="step-2-sdk--api-integration" />
 
 ## Шаг 2: Интеграция SDK / API
 
@@ -88,6 +100,8 @@ x-zendesk:
 
 **Результат:** ваши приложения готовы атрибутировать установки, измерять внутренние события и использовать другие функции AppsFlyer без дополнительного привлечения разработчика.
 
+<div id="step-3-attribution-setup" />
+
 ## Шаг 3: Настройка атрибуции
 
 Выполните следующие шаги для каждого приложения, определенного в AppsFlyer в [Шаге 1: Настройка приложения](/docs/getting-started-onboarding-for-marketers#шаг-1-настройка-приложения):
@@ -101,6 +115,8 @@ x-zendesk:
 | [Необязательно] Активируйте ретаргетинговые кампании | Менеджер по продукту | 2 мин. | <Anchor target="_blank" href="/marketers/ru/docs/app-settings#reengagement-attribution">Активируйте ретаргетинг на странице «App Settings»</Anchor> (Настройки приложения).<br /><br />Подробнее: <Anchor target="_blank" href="/marketers/ru/docs/retargeting-attribution-guide">Руководство по ретаргетингу</Anchor> |
 
 **Результат:** все медиа-источники, приносящие трафик в ваши приложения, атрибутируются при каждом взаимодействии с ними новых или вернувшихся пользователей.
+
+<div id="step-4-additional-setup" />
 
 ## Шаг 4: Дополнительная настройка
 
@@ -120,6 +136,8 @@ x-zendesk:
 | Получите единое представление о путях клиента по всем каналам, платформам и устройствам | Менеджер по продукту/   <br />Разработчики | <Anchor target="_blank" href="/marketers/ru/docs/people-based-attribution-pba-overview">Атрибуция на основе людей (PBA)</Anchor> |
 | Обеспечьте соблюдение законов по защите данных : GDPR, CCPA и др. | Менеджер по продукту/   <br />Разработчики | Разрешение пользователям <Anchor target="_blank" href="/marketers/ru/docs/apply-privacy-preserving-sdk-methods">отказаться</Anchor> от атрибуции. |
 
+<div id="enrich-your-knowledge" />
+
 ## Расширяйте свои знания
 
 Рекомендуется для всех пользователей AppsFlyer:
@@ -132,11 +150,17 @@ x-zendesk:
 | Узнайте об <Anchor target="_blank" href="/marketers/ru/docs/aggregated-and-analytics-reporting-overview">аналитике и инструментах агрегированной отчетности</Anchor> | 30 мин. |
 | Узнайте об <Anchor target="_blank" href="/marketers/ru/docs/raw-data-reporting-overview">отчетах по сырым данным</Anchor> | 30 мин. |
 
+<div id="related" />
+
 ## По теме
+
+<div id="tip-1" />
 
 > 👍 **Совет**
 >
 > Недавно занялись привлечением пользователей (UA)? Узнайте <Anchor target="_blank" href="https://www.appsflyer.com/resources/ecommerce/getting-started-user-acquisition-apps-complete-guide/">все</Anchor> об основных проблемах и важных элементах планирования, реализации и постоянной оптимизации усилий по привлечению пользователей.
+
+<div id="note" />
 
 > 📘 **Примечание**
 >

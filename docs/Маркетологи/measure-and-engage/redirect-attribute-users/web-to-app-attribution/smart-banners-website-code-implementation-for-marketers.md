@@ -26,9 +26,15 @@ x-zendesk:
 ---
 > **Краткий обзор.** Добавьте код смарт-баннеров на свой сайт, чтобы конвертировать посетителей вашего сайта в пользователей мобильного приложения.
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > Веб SDK AppsFlyer для смарт-баннеров v1 устарел с 8 ноября 2023 года. Для показа смарт-баннеров на вашем сайте необходимо обновить версию до v2. <Anchor target="_blank" href="/marketers/ru/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">Узнать больше</Anchor>
+
+<div id="google-tag-manager" />
+
+<div id="website-code-implementation" />
 
 ## Внедрение кода веб-сайта
 
@@ -211,6 +217,8 @@ x-zendesk:
 4. Нажмите **Update File** (Обновить файл).
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

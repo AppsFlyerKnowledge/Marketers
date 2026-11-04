@@ -44,6 +44,8 @@ x-zendesk:
 >
 > <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">Некоторые медиа-источники</Anchor> ограничивают передачу данных третьим лицам. Поэтому постбэки для ограниченных событий не будут отправляться этому партнеру, независимо от настроенной отправки постбэков.
 
+<div id="integrating-swrve-and-appsflyer" />
+
 ## Интеграция Swrve и AppsFlyer
 
 Настройка постбэка, который позволяет Swrve измерять LTV и поведение пользователей для разных источников привлечения:
@@ -79,6 +81,8 @@ Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 
 **Шаг 2**: Настройте постбэк в дэшборде AppsFlyer, выполнив следующие действия:
 
+<div id="setting-up-swrve" />
+
 ## Настройка Swrve
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -102,10 +106,14 @@ Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 
 На вкладке «Интеграция» есть несколько разделов, которые описаны ниже.
 
+<div id="activate-partner" />
+
 ### Активация партнера
 
 При **первом посещении** этого раздела необходимо включить переключатель ***Активировать партнера***, чтобы настроить параметры на вкладке «Интеграция». Кнопка ДОЛЖНА оставаться в положении «Включено», пока вы работаете с этим партнером.  
 Дополнительная информация по активации партнеров доступна <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
+
+<div id="general-settings" />
 
 ### Общие настройки
 
@@ -121,6 +129,8 @@ Swrve подключается к AppsFlyer через уникальный ид
 * Введите **api\_key**
 * Выберите **ЕС** для клиентов из ЕС
 * Выберите **Расширенная передача данных**, чтобы отправлять в Swrve следующую дополнительную информацию: cost\_value, channel, keywords, siteID и c (кампания)
+
+<div id="default-postbacks" />
 
 ### Постбэки по умолчанию
 
@@ -172,6 +182,8 @@ AppsFlyer может отправлять автоматические пост�
 Разрешения недоступны для Swrve.
 
 </Accordion>
+
+<div id="swrve-reporting-with-appsflyer-data" />
 
 ## Отчётность Swrve с данными AppsFlyer
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Ответы на часто задаваемые вопросы об использовании маркетплейса партнеров AppsFlyer.
 
+<div id="use-partner-integrations" />
+
 ## Использование маркетплейса партнеров
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
@@ -54,6 +56,8 @@ x-zendesk:
 Узнайте, <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">как интегрировать новых партнеров из маркетплейса партнеров</Anchor>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Устранение неполадок
 

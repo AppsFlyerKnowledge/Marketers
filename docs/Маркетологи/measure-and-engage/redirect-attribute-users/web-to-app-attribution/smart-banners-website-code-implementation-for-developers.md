@@ -21,6 +21,8 @@ x-zendesk:
   section_id: 6551240476177
   url: https://support.appsflyer.com/hc/ru/articles/4410472474001
 ---
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > Оригинальная статья, указанная в URL-адресе, устарела.

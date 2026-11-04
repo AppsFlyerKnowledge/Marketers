@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png" width="79px" />
 
+<div id="setting-up-tune-integration" />
+
 ## Настройка интеграции TUNE
 
 Интеграция AppsFlyer с TUNE поддерживает атрибуцию по кликам.
@@ -52,9 +54,13 @@ x-zendesk:
 
 В AppsFlyer перейдите на вкладку **Сотрудничество> Интеграции партнеров > Активировать интеграции**, найдите партнера и внесите изменения.
 
+<div id="enabling-deep-linking-into-your-app" />
+
 ## Включение диплинкинга в ваше приложение
 
 Используйте <Anchor target="_blank" href="/marketers/ru/docs/brand-onelink-with-your-domain">брендированные ссылки OneLink</Anchor>, созданные в AppsFlyer, для измерения кликов в TUNE. Следующий процесс позволяет направлять пользователей с помощью диплинкинга на определенную страницу в приложении.
+
+<div id="prerequisite" />
 
 ### Необходимое условие
 
@@ -62,6 +68,8 @@ x-zendesk:
 
 * iOS: V4.9.0 or later
 * Android: V4.9.0 or later
+
+<div id="step-1-configure-links-for-your-campaigns" />
 
 ### Шаг 1. Настройка ссылок для ваших кампаний
 
@@ -80,10 +88,14 @@ x-zendesk:
 
     Игнорируйте это сообщение и измените CNAME, как указано выше.
 
+<div id="step-2-set-up-the-attribution-link" />
+
 ### Шаг 2. Настройте ссылку атрибуции
 
 1. Перейдите на вкладку Attribution link и скопируйте только параметры ссылки в разделе **Click attribution link** , как показано ниже.[![](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)
 2. Добавьте скопированные параметры в вашу брендированную ссылку.
+
+   <div id="example" />
 
    > 📄 **Пример:**
    >

@@ -23,6 +23,8 @@ x-zendesk:
 
 ![awin icon.png](https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png)
 
+<div id="activate-partner" />
+
 ## Активация партнёра
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -37,16 +39,22 @@ x-zendesk:
     Дополнительная информация по активации партнеров: нажмите <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
 5. Завершите настройку, используя соответствующие вкладки, как описано ниже. Подробное описание заголовка окна настройки параметров партнера см. <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">здесь</Anchor>.
 
+<div id="setting-up-awin" />
+
 ## Настройка Awin
 
 Интеграция с Awin поддерживает атрибуцию по кликам.
 
 Окно конфигурации включает следующие вкладки: Интеграция, Ссылка атрибуции, Стоимость, Доход от рекламы и Разрешения. Для Awin доступны следующие вкладки: Интеграция, Ссылка атрибуции и Разрешения.
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > * Некоторые настройки отличаются для устройств iOS и Android.
 > * Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner">настройке партнерских интеграций.</Anchor>
+
+<div id="prerequisite" />
 
 ### Необходимое условие
 
@@ -58,9 +66,13 @@ x-zendesk:
 
 На вкладке **Интеграция** есть ряд разделов, описанных ниже.
 
+<div id="activate-partner-1" />
+
 #### Активировать партнера
 
 Чтобы настроить интеграцию, необходимо сначала <Anchor target="_blank" href="/marketers/ru/docs/amazon-ads-campaign-configuration#активировать-партнера">включить</Anchor> переключатель **Активировать партнёра**. Узнайте больше об <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation#активировать-интеграцию-партнера">активации и деактивации партнерских интеграций</Anchor>.. Для получения дополнительной информации перейдите на <Anchor target="_blank" href="https://developer.awin.com/docs/appsflyer">страницу интеграции Awin</Anchor>.
+
+<div id="advanced-privacy" />
 
 #### Расширенные настройки конфиденциальности
 
@@ -72,25 +84,35 @@ x-zendesk:
 | Постбэки отправляются в соответствии с <Anchor target="_blank" href="/partners/ru/docs/advanced-privacy-guide-postback-macros-for-ad-networks">шаблоном Расширенная конфиденциальность</Anchor>. |  |
 | Партнеру передаются <Anchor target="_blank" href="/marketers/ru/docs/apply-aggregated-advanced-privacy-framework">агрегированные и анонимные данные</Anchor>, то есть данные на уровне пользователя (ID устройства) не передаются. |  |
 
+<div id="general-settings" />
+
 #### Общие настройки
 
 **Идентификатор рекламодателя Awin**
 
 Добавьте свой идентификатор продавца Awin.
 
+<div id="note-1" />
+
 > 📘 **Примечание**
 >
 > Идентификатор рекламодателя идентифицирует ваш аккаунт рекламодателя на стороне партнера и необходим для атрибуции AppsFlyer и постбэков. Идентификатор должен присутствовать в ссылке атрибуции.
 
+<div id="default-postbacks" />
+
 #### Постбэки по умолчанию
 
 Постбэки по установкам отправляются только этому партнеру.
+
+<div id="in-app-event-settings" />
 
 #### Настройки внутренних событий приложения
 
 **Идентификатор рекламодателя Awin**
 
 Добавьте свой идентификатор продавца Awin.
+
+<div id="in-app-event-postbacks" />
 
 #### Постбэки событий внутри приложения
 
@@ -113,6 +135,8 @@ x-zendesk:
    1. В верхнем левом углу под именем партнёра нажмите на название приложения, чтобы открыть список приложений.
    2. Выберите другое приложение из раскрывающегося списка.
    3. Повторите <Anchor target="_blank" href="/marketers/ru/docs/amazon-ads-campaign-configuration#integration-tab">шаги интеграции</Anchor> для выбранного приложения.
+
+<div id="note-2" />
 
 > 📘 **Примечание**
 >
@@ -150,12 +174,16 @@ x-zendesk:
 
 Выберите, какие разрешения предоставить Awin для доступа к вашим данным и выполнения различных действий.
 
+<div id="note-3" />
+
 > 📘 **Примечание**
 >
 > * Если интеграция <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">деактивирована</Anchor>, а переключатель «Разрешения» всё ещё включён, разрешения остаются в силе.
 > * См. дополнительные сведения о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#permissions-tab">предоставлении разрешений</Anchor>.
 
 </Accordion>
+
+<div id="deep-linking-and-deferred-deep-linking-using-onelink" />
 
 ## Диплинкинг и отложенный диплинкинг с помощью OneLink
 
@@ -165,6 +193,8 @@ AWIN оборачивает каждую ссылку, размещённую н
 Для диплинкинга с помощью OneLink на AWIN:
 
 * <Anchor target="_blank" href="/marketers/ru/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">Настройте OneLink URL с помощью схемы URI</Anchor>
+
+<div id="note-4" />
 
 > 📘 **Примечание:**
 >

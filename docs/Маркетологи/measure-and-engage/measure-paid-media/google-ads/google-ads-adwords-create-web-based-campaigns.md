@@ -25,6 +25,8 @@ x-zendesk:
 >
 > В этой статье рассказывается о веб-кампаниях, направленных на мобильные приложения. Если вы планируете кампании, направленные на продвижение приложений для ПК или консолей, см. Google Ads Web – Интеграция для приложений для ПК и консолей.
 
+<div id="overview" />
+
 ## Обзор
 
 AppsFlyer поддерживает интеграцию с Google Ads (`googleads_int`) для кампаний веб-приложений и передаёт данные о конверсиях через Google Offline Conversion API (OCI).
@@ -37,6 +39,8 @@ AppsFlyer поддерживает интеграцию с Google Ads (`googlead
 
 Google использует эти данные для оптимизации таргетинга рекламы и измерения эффективности рекламных кампаний.
 
+<div id="prerequisite" />
+
 ### Необходимые условия
 
 Прежде чем активировать интеграцию с Google Ads для кампаний веб-приложений, убедитесь, что у вас есть:
@@ -44,6 +48,8 @@ Google использует эти данные для оптимизации т
 * Мобильное приложение
 * Аккаунт AppsFlyer
 * Учетная запись AppsFlyer с соответствующими ролями или правами доступа
+
+<div id="create-a-google-ads-web-campaign" />
 
 ### Настройте кампанию в Google Ads (обязательно)
 
@@ -56,6 +62,8 @@ Google использует эти данные для оптимизации т
 
 * [Создание целевой страницы с помощью OneLink Smart Script](#создание-целевой-страницы-с-помощью-onelink-smart-script) (необязательно)
 * [Создание целевой страницы с помощью OneLink Smart Banners](#создание-целевой-страницы-с-помощью-onelink-smart-banners) (необязательно)
+
+<div id="create-a-google-ads-integration-in-appsflyer" />
 
 ## Настройка интеграции с Google Ads в AppsFlyer
 
@@ -170,6 +178,8 @@ Google использует эти данные для оптимизации т
 
 </Accordion>
 
+<div id="create-a-web-campaign-in-google-ads" />
+
 ## Как настроить веб-кампанию в Google Ads
 
 Выполните одно из следующих действий:
@@ -236,6 +246,8 @@ Google Ads использует выбранный здесь тип и цели
 
 В кампаниях Google Web Ads для каждого взаимодействия используются два URL-адреса: конечный URL-адрес и URL-адрес шаблона отслеживания. После того как пользователь кликнул по рекламе Google и загрузилась целевая страница, эти параметры становятся доступны на странице. Более подробная информация о доступных параметрах ValueTrack приведена в <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348">документации Google</Anchor>.
 
+<div id="set-the-final-url" />
+
 #### Шаг 3: Установите конечный URL кампании
 
 Google <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU">определяет конечный URL-адрес</Anchor> как «URL-адрес веб-страницы на вашем сайте, на которую попадают люди после того, как кликнут по вашему рекламному объявлению». Также называется «целевой страницей».
@@ -273,6 +285,8 @@ Google <Anchor target="_blank" href="https://support.google.com/google-ads/answe
   https://play.google.com/store/apps/details?id=.com.app.id&hl=en&gl=US&referrer={gclid}&gclid={gclid}&campaignid={campaignid}
   ```
 * **Прямая ссылка для загрузки файла APK приложения**, если вы хотите, чтобы пользователи загружали приложение напрямую без перенаправления в магазин.
+
+<div id="set-the-tracking-template-url" />
 
 #### Настройка URL-адреса шаблона отслеживания
 
@@ -330,6 +344,8 @@ Google <Anchor target="_blank" href="https://support.google.com/google-ads/answe
 >
 > Дополнительные ограничения, связанные с URL шаблона отслеживания, см. в разделе "Особенности и ограничения" данного документа
 
+<div id="google-tracking-template-url-examples" />
+
 #### Примеры URL-шаблонов отслеживания Google
 
 Пример **a** **OneLink** в URL-адресе шаблона отслеживания Google:
@@ -344,6 +360,8 @@ https://subdomain.onelink.me/aAB1?pid=googleads_int&af_force_transparent=true&af
 https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=true&c=examplecamp&af_siteid=123456&af_adset=exampleadset&af_adset_id={adgroupid}&af_c_id={campaignid}&af_ad_id={creative}&af_click_lookback=7d&af_r={lpurl}
 ```
 
+<div id="using-the-tracking-template-url-with-smart-script-or-smart-banners" />
+
 #### Использование URL-шаблона отслеживания со Smart Script и смарт-баннерами
 
 Однако URL шаблона отслеживания не требуется для кампаний веб-приложений, где местом назначения объявления является веб-сайт. Это связано с тем, что эти инструменты автоматически создают ссылку атрибуции, которая регистрируется в AppsFlyer, когда пользователь нажимает кнопку CTA на целевой странице. Тем не менее, есть соображения за и против того, чтобы оставить поле URL-адреса шаблона отслеживания пустым:
@@ -352,6 +370,8 @@ https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=tr
 * Если вы **вставляете** в URL-адрес шаблона отслеживания ссылку атрибуции и пользователь нажимает на рекламу, а затем нажимает кнопки CTA на целевой странице, будет зарегистрировано два клика вместо одного, что может повлиять на данные о коэффициенте конверсии.
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## Создание целевой страницы с помощью OneLink Smart Script
 
@@ -434,6 +454,8 @@ https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=tr
 
 </Accordion>
 
+<div id="create-a-landing-page-with-onelink-smart-banners" />
+
 ## Создание целевой страницы с помощью OneLink Smart Banners
 
 **Путь пользователя:** Пользователь кликает по рекламе Google и переходит на ваш мобильный веб-сайт. Он или она попадает на страницу, где отображается смарт-баннер с призывом загрузить приложение из магазина приложений.
@@ -473,20 +495,28 @@ https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=tr
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Просмотр данных веб-атрибуции
 
 Хотя события конверсии, происходящие в вебе, отправляются в Google с исходным PID `googleads_int`, на дэшборде и отчётах о сырых данных AppsFlyer они отображаются под PID `googleadwords_int`. Это относится как к основным событиям конверсии, так и к событиям-ассистам конверсии.
 
 Объединённый формат отчётности позволяет анализировать эффективность как кампаний для веба и приложений в одном месте, включая полные отчёты по затратам в мобильных каналах и вебе.
 
+<div id="view-in-the-dashboard" />
+
 ### Посмотреть на дэшборде
 
 Вся атрибуция Google web-to-app отображается как `googleadwords_int` в Обзорном дэшборде и дэшборде «Активность». Это обеспечивает единое, консолидированное представление результатов кампаний на разных платформах. Используйте стандартные фильтры и разбивки, чтобы сравнивать трафик в приложении и на вебе внутри ваших данных Google Рекламы.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### Просмотр в отчётах о сырых данных и отчетах API
 
 * **Экспорты сырых данных и ответы API** включают PID `googleadwords_int` в поле `media_source` для веб-активности Google. Чтобы проверить детали настройки веб-кампании, обратитесь к полю `original_url`, которое показывает `googleads_int` как PID, использованный при создании веб-кампаний.
 * **Отчеты о постбэках** показывают `googleads_int` как оригинальный медиаисточник, к которому был отправлен постбэк.
+
+<div id="troubleshooting-in-app-events-postbacks" />
 
 ## Устранение неполадок в постбэках внутренних событий приложений
 
@@ -521,6 +551,8 @@ https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=tr
 Исходящий URL-адрес Smart Script или Smart Banners должен включать `gclid`, `wbraid` или `gbraid`, чтобы постбэк в Google OCI корректно регистрировался в Google Ads.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Характеристики и ограничения
 

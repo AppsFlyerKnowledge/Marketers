@@ -23,6 +23,8 @@ x-zendesk:
 
 Используйте дэшборд измерений для просмотра и анализа эффективности кампании. Он содержит KPI эффективности, динамику показателей во времени, показы и клики, доход и другие метрики.
 
+<div id="the-measurement-dashboard" />
+
 ## Дэшборд измерения
 
 [![](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)
@@ -76,6 +78,8 @@ x-zendesk:
 
 <Accordion title="E - Посмотреть графики">
 
+<div id="performance-comparison-charts" />
+
 ### **Графики сравнения эффективности**
 
 [![](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)
@@ -83,6 +87,8 @@ x-zendesk:
 **Параметры отображения**
 
 (A) Измерения и метрики.
+
+<div id="trend-over-time-comparison" />
 
 ### **Сравнение динамики во времени**
 

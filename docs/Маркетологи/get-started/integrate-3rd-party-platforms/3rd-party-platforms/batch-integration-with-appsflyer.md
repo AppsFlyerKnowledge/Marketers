@@ -32,7 +32,11 @@ Batch помогает рекламодателям максимально по�
 >
 > <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">Некоторые медиа-источники</Anchor> ограничивают передачу данных третьим лицам. Поэтому постбэки для ограниченных событий не будут отправляться этому партнеру, независимо от настроенной отправки постбэков.
 
+<div id="integrating-batch-and-appsflyer" />
+
 ## Интеграция Batch с AppsFlyer
+
+<div id="setting-customer-user-id" />
 
 ### Настройка идентификатора Customer User ID
 
@@ -114,6 +118,8 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 </Tab>
 </Tabs>
 
+<div id="setting-up-batch" />
+
 ### Настройка Batch
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -133,10 +139,14 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 <Accordion title="Вкладка «Интеграция»">
 
+<div id="activate-partner" />
+
 ### Activate Partner (Активировать партнера)
 
 При **первом посещении** этой страницы вам нужно перевести кнопку **Activate Partner** в положение «Включено», чтобы можно было настроить параметры вкладки интеграции. Кнопка ДОЛЖНА оставаться в положении «Включено», пока вы работаете с этим партнером.  
 Дополнительная информация по активации партнеров доступна <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
+
+<div id="general-settings" />
 
 ### Общие настройки
 
@@ -145,6 +155,8 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 После получения двух ключей введите каждый из них в соответствующее поле. В разделе **General Settings** введите **Batch Rest API Key** в поле **BATCH\_REST\_API\_KEY**, а **Batch API Key** — в поле **BATCH\_API\_KEY**.
 
 ![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
+
+<div id="default-postbacks" />
 
 ### Постбэки по умолчанию
 
@@ -187,6 +199,8 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 Разрешения недоступны для Batch.
 
 </Accordion>
+
+<div id="viewing-appsflyer-data-in-the-batch-dashboard" />
 
 ## Просмотр данных AppsFlyer в дэшборде Batch
 

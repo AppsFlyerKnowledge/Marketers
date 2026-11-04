@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Кратко:** Safari поддерживает функцию <Anchor target="_blank" href="http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html">App Banner</Anchor> предоставляя стандартизированный способ продвижения приложений в магазине приложений Apple. **Это не связано с рекомендуемым решением <Anchor target="_blank" href="/marketers/ru/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banner</Anchor> от AppsFlyer.**
 
+<div id="note" />
+
 > 📘 **Примечание:**
 >
 > Мы рекомендуем использовать AppsFlyer Smart Banners, чтобы конвертировать посетителей сайта в пользователей приложения.
@@ -47,6 +49,8 @@ x-zendesk:
 * Не используйте одновременно баннер приложения iOS и AppsFlyer Smart Banners. Это может привести к проблемам с отображением на вашем мобильном сайте.
 * Решение с баннером приложения предназначено только для iOS, то есть не работает в OS X.
 * Баннер приложения работает только в Safari.
+
+<div id="setting-a-web-page-with-an-app-banner-and-click-attribution-link" />
 
 ### Настройка веб-страницы с баннером приложения и ссылкой для атрибуции кликов
 

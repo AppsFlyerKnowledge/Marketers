@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **Кратко:** Оптимизируйте кампании Apple Ads с помощью SplitMetrics Acquire. После настройки AppsFlyer отправляет постбэки в SplitMetrics Acquire.
 
+<div id="enabling-apple-ads-attribution" />
+
 ## Включение атрибуции Apple Ads
 
 Рекламодатели и агентства могут включить атрибуцию для Apple Ads.
+
+<div id="note" />
 
 > 📘 **Примечание:**
 >
@@ -33,7 +37,11 @@ x-zendesk:
 * **Рекламодатели**: выполните приведенные ниже инструкции, чтобы включить атрибуцию для Apple Ads.
 * **Агентства**: <Anchor target="_blank" href="/marketers/ru/docs/apple-ads-integration-setup#agency-setup">выполните эти инструкции</Anchor>, чтобы включить атрибуцию для Apple Ads.
 
+<div id="setting-up-splitmetrics-acquire-on-appsflyer" />
+
 ## Настройка SplitMetrics Acquire в AppsFlyer
+
+<div id="getting-required-information-from-splitmetrics-acquire" />
 
 ### Получение необходимых данных из SplitMetrics Acquire
 
@@ -41,6 +49,8 @@ x-zendesk:
 
 * Чтобы получить client\_id, перейдите на дэшборд SplitMetrics Acquire и кликните **Integrations** > **AppsFlyer**. В открывшемся всплывающем окне скопируйте ID.
 * Для Apple  Ads Campaign Group ID: **на дэшборде Apple Ads** получите параметр Apple Ads Campaign Group ID, связанный со SplitMetrics Acquire. Чтобы найти идентификатор, следуйте указаниям на скриншоте ниже.  ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+
+<div id="setting-up-campaigns-on-appsflyer" />
 
 ### Настройка кампаний в AppsFlyer
 
@@ -60,6 +70,8 @@ x-zendesk:
    2. Найдите и выберите партнера. Вы перенаправлены на страницу конфигурации партнера.
    3. На вкладке **Интеграция** включите **Активировать партнёра**.
    4. Нажмите кнопку **Save Integration** (Сохранить интеграцию).
+
+<div id="configuring-in-app-event-postbacks" />
 
 #### Настройка постбэков по событиям в приложении
 

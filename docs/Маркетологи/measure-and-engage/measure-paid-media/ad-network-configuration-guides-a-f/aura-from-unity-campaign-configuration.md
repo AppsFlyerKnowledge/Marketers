@@ -29,6 +29,8 @@ x-zendesk:
 
 ![aura_logo.png](https://files.readme.io/83bca93f3dfe8f6ce9bd74b9141b8c3b4dc01cfcf8f1904c0f992346beee5014-17313206447889.png)
 
+<div id="aura-from-unity-integration-in-appsflyer" />
+
 ## Интеграция Aura from Unity в AppsFlyer
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.

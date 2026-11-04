@@ -24,19 +24,27 @@ x-zendesk:
 ---
 > **Краткий обзор:** Воспользуйтесь инструкциями по подключению из этого руководства, чтобы настроить Web Performance Measurement. После настройки вы сможете измерять посещения сайта и веб-события и атрибутировать их маркетинговым источникам, понимать, какие источники приводят к значимым результатам на сайте, а также использовать кроссплатформенное измерение.
 
+<div id="about-web-performance-measurement" />
+
 ## Об инструменте Web Performance Measurement
 
 Web Performance Measurement позволяет связать действия на вашем сайте, такие как посещения и веб-события, с маркетинговыми источниками, которые привели к ним. Иными словами, инструмент показывает, какие медиаисточники и рекламные кампании привлекают пользователей на ваш сайт и влияют на их дальнейшие действия, позволяя измерять эффективность и оптимизировать ROI.
 
+<div id="create-a-web-app-in-appsflyer" />
+
 ### Создайте веб-приложение в AppsFlyer
 
 <Embed title="Начало работы с Web Performance Measurement" typeOfEmbed="youtube" url="https://www.youtube.com/embed/MOn_UsirYCU" providerUrl="https://www.youtube.com" />
+
+<div id="set-up-network-integrations-postbacks-and-cost-measurement" />
 
 ### Настройка интеграций с рекламными сетями, постбэков и измерения затрат
 
 <Embed title="Начало работы с Web Performance Measurement" typeOfEmbed="youtube" url="https://www.youtube.com/embed/-sYIv3YQEwo" providerUrl="https://www.youtube.com" />
 
 Чтобы начать измерять посещения сайта и веб-события в AppsFlyer, выполните шаги из приведенного ниже чек-листа по настройке Web Performance Measurement.
+
+<div id="web-performance-measurement-setup-checklist" />
 
 ## Чек-лист по настройке Web Performance Measurement
 

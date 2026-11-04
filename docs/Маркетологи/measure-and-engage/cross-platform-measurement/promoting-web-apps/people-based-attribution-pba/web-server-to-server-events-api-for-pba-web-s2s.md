@@ -26,6 +26,8 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-server-to-server-events-api-for-pba" />
+
 ## API межсерверных событий в вебе для PBA
 
 API веб-S2S для атрибуции People-Based дополняет <Anchor target="_blank" href="/marketers/ru/docs/pba-web-sdk-integration-guide">веб-SDK</Anchor>, позволяя маркетологам сообщать о событиях, происходящих на их сайтах, но не входящих в сферу веб-SDK. Например, посетитель сайта (веб-пользователь) запускает событие онлайн-платежа, которое обрабатывается внутренними системами. После обработки бэкэнд, используя API S2S, сообщает о событии в AppsFlyer.
@@ -35,6 +37,8 @@ API веб-S2S для атрибуции People-Based дополняет <Anchor
 * регистрируются аналогично событиям, сообщаемым через веб-SDK,
 * показаны на дэшбордах PBA, если они указаны как события конверсии,
 * заполняют сырые данные PBA, где для *поля event\_source* установлено *веб-S2S*.
+
+<div id="api-use-instructions" />
 
 ## Инструкции по использованию API
 
@@ -63,6 +67,8 @@ API веб-S2S для атрибуции People-Based дополняет <Anchor
    * ***Идентификатор пакета бренда***
    * ***Веб-ключ разработчика***
 
+<div id="web-s2s-api-basics" />
+
 #### Основы API веб-S2S
 
 | Путь | `https://webs2s.appsflyer.com/v1/bundleId/method`<ul><li>`bundleId`: идентификатор пакета приложения, доступный на дэшборде.</li><li>`method` — одно из следующего:<ul><li>[event](/docs/web-server-to-server-events-api-for-pba-web-s2s#event-method): отправляется для отчётных событиях бэкенда</li><li>[setCuId:](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method) отправляется при ассоциировании afUserId с вашим CUID</li></ul></li></ul> |
@@ -84,6 +90,8 @@ API веб-S2S для атрибуции People-Based дополняет <Anchor
 | Пример использования | О привязке CUID к посетителю вашего сайта. Например, каждый раз, когда вы сопоставляете веб `afUserId` с идентификатором клиента. Это позволяет PBA сопоставлять данные из различных источников. Это аналогично <Anchor target="_blank" href="/marketers/ru/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">setCustomerUserId</Anchor> на сайте. |
 | Путь к методу | `https://webs2s.appsflyer.com/v1/bundleId/setcuid` |
 | Полезная нагрузка | Полезная нагрузка JSON состоит из перечисленных здесь параметров. Все параметры являются обязательными.<ul><li>[customerUserID](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method)</li><li>[afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid)</li><li>[webDevKey](/docs/web-server-to-server-events-api-for-pba-web-s2s#webdevkey)</li></ul> |
+
+<div id="curl-example-setcuid" />
 
 #### Пример Curl setCuId
 
@@ -111,6 +119,8 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 </Accordion>
 
+<div id="event-method-details" />
+
 ## Описание метода события
 
 <div id="payload-parameters" />
@@ -122,12 +132,16 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 * Идентификатор пользователя: Вы должны отправить хотя бы один параметр идентификатора пользователя.
 * Событие: Отправьте обязательные параметры и необязательные по мере необходимости.
 
+<div id="user-identifier-parameters-send-at-least-one-parameter" />
+
 #### Параметры идентификатора пользователя (отправьте хотя бы один параметр)
 
 | Параметр Идентификатор пользователя | Описание |
 | --- | --- |
 | <span id="customeruserid"></span>customerUserId | <Anchor target="_blank" href="/marketers/ru/docs/customer-user-id-field-cuid">Идентификатор клиента (CUID)</Anchor> — это уникальный идентификатор, установленный вами.<ul><li>Используйте идентичный идентификатор для событий, о которых AppsFlyer сообщает любым способом. Это означает, что один и тот же идентификатор используется в веб-SDK, мобильном SDK и S2S API.</li><li><Anchor target="_blank" href="/marketers/ru/docs/pba-web-sdk-integration-guide#setting-customer-user-id-after-signup">Идентификатор клиента в веб-SDK</Anchor></li><li>Формат: Строка</li><li>Пример: `"customerUserId" : "663274"`</li><li>Заполняет поле сырых данных: `customer_user_id`</li></ul> |
 | <span id="afuserid"></span>afUserId | Уникальный идентификатор пользователя, присваиваемый веб-SDK каждому пользователю, который посещает ваш сайт. Вам нужно будет передать значение cookie на внутренние серверы.<ul><li>Подробности о cookie:<ul><li>Имя: afUserId</li><li>Значение: установите *afUserId* в это значение</li><li>Домен: website-domain</li></ul></li><li>Пример: `"afUserId" : "unique_cookie_uuid"`</li><li>Заполняет поле сырых данных: `af_web_id`</li></ul> |
+
+<div id="event-parameters" />
 
 #### Параметры события
 
@@ -232,6 +246,8 @@ print(response.text.encode('utf8'))
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Дополнительные сведения
 
 <div id="getting-the-web-dev-key" />
@@ -255,10 +271,14 @@ print(response.text.encode('utf8'))
 * `afUserId` — это уникальный идентификатор, устанавливаемый в веб-SDK при первом посещении пользователем вашего сайта.
 * Если вам нужен `afUserId`, воспользуйтесь одним из следующих способов.
 
+<div id="get-afuserid-from-the-http-cookie-header" />
+
 #### **Получение afUserId из заголовка HTTP cookie**
 
 * Значение `afUserId` отправляется браузером посетителя при обращении к вашему сайту.
 * При необходимости извлеките его из заголовка HTTP cookie.
+
+<div id="viewing-afuserid-in-the-visitors-browser" />
 
 #### **Просмотр afUserId в браузере посетителя**
 

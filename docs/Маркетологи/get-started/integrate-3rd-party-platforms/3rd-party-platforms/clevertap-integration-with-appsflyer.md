@@ -27,9 +27,13 @@ x-zendesk:
 
 <Image alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">Некоторые медиа-источники</Anchor> ограничивают передачу данных третьим лицам. Поэтому постбэки для ограниченных событий не будут отправляться этому партнёру, независимо от настроек отправки постбэков.
+
+<div id="setting-up-clevertap" />
 
 ## Настройка CleverTap
 
@@ -50,16 +54,22 @@ x-zendesk:
 
 На вкладке «Интеграция» есть несколько разделов, которые описаны ниже.
 
+<div id="activate-partner" />
+
 ### Активация партнера
 
 Этот переключатель должен быть включен все время, пока вы работаете с этим партнером.  
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation#активировать-интеграцию-партнера">активации партнёров</Anchor>.
+
+<div id="general-settings" />
 
 ### Общие настройки
 
 **Токен аккаунта**
 
 CleverTap подключается к AppsFlyer с помощью уникальных токена аккаунта, региона, кода-пароля аккаунта и идентификатора аккаунта. Если у вас их еще нет, для продолжения интеграции вы должны получить их в CleverTap или выполнить следующие шаги.
+
+<div id="important-1" />
 
 > 🚧 **Важно!**
 >
@@ -69,6 +79,8 @@ CleverTap подключается к AppsFlyer с помощью уникаль
 > * В SDK AppsFlyer задайте значение Customer User ID (<Anchor target="_blank" href="/marketers/ru/docs/customer-user-id-field-cuid#установка-cuid">iOS, Android</Anchor>). Рекомендации о том, какой параметр лучше использовать в качестве Customer User ID, см. в [документации CleverTap](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration). Обратите внимание: если Customer User ID пуст, постбэки не будут отправляться в CleverTap.
 
 ![CleverTap_msc_new_2.png](https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png)
+
+<div id="obtain-clevertap-account-token" />
 
 ### Получение токена аккаунта CleverTap
 
@@ -83,6 +95,8 @@ CleverTap подключается к AppsFlyer с помощью уникаль
 2. Чтобы отобразить значения, нажмите на значки «глаза» рядом с каждым полем.
 3. Скопируйте значения и вставьте их на страницу CleverTap в AppsFlyer.
 
+   <div id="note" />
+
    > 📘 **Примечание:**
    >
    > * Регион зависит от URL-адреса дэшборда CleverTap для вашего аккаунта:
@@ -92,6 +106,8 @@ CleverTap подключается к AppsFlyer с помощью уникаль
 
 4. Завершите интеграцию в соответствии с <Anchor target="_blank" href="https://developer.clevertap.com/docs/appsflyer#section-step-2-integration">документацией CleverTap</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Постбэки по умолчанию
 
 AppsFlyer может отправлять автоматические постбэки в CleverTap после установок пользователей. В этом разделе можно определить источник пользователей, которому нужно отправлять постбэки. Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#default-postbacks">постбэках по умолчанию</Anchor>.
@@ -99,6 +115,8 @@ AppsFlyer может отправлять автоматические пост�
 ![clevertap-default-postbacks_en-us.png](https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png)
 
 **Чтобы отправлять постбэки в CleverTap для любого пользователя, который загружает приложение:** выберите **Все медиаисточники, включая органические**.
+
+<div id="in-app-events-settings" />
 
 ### In-App Events Settings (Настройки внутренних событий приложения)
 
@@ -152,6 +170,8 @@ AppsFlyer может отправлять автоматические пост�
 Разрешения для CleverTap недоступны.
 
 </Accordion>
+
+<div id="measure-clevertap-owned-media" />
 
 ## Измерение собственных медиа CleverTap
 

@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vungle.png?v=1" width="91px" />
 
+<div id="setting-up-vungle" />
+
 ## Настройка Vungle
 
 **Необходимые условия.** Если у вас нет аккаунта, перед настройкой интеграции свяжитесь с партнером, чтобы открыть его.
@@ -39,6 +41,8 @@ x-zendesk:
     **Примечание:** переключатель **должен оставаться включенным (активным), пока вы работаете с партнером**. Дополнительная информация по активации партнеров: нажмите <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
 5. Завершите настройку, используя соответствующие вкладки, как описано в следующем разделе. Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner">партнерских интеграциях.</Anchor>
 
+<div id="tip" />
+
 > 👍 **Совет**
 >
 > * Этап <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#d-general-settings">Общие настройки</Anchor> на вкладке Интеграция необходимо **обязательно** выполнять для всех партнеров.
@@ -50,9 +54,13 @@ x-zendesk:
 
 На вкладке «Интеграция» есть несколько разделов, которые описаны ниже.
 
+<div id="activate-partners" />
+
 ### Активация партнеров
 
 Подключите Vungle, активировав интеграцию и задав параметры на вкладке интеграции. Для подключения к AppsFlyer Vungle должен предоставить свой уникальный идентификатор сети ***app\_id***.
+
+<div id="note" />
 
 > 📘 **Примечание**
 >
@@ -127,6 +135,8 @@ AppsFlyer получает информацию о затратах через A
 
 **Примечание**: Vungle можно предоставить разрешения, даже если с ними нет активной интеграции.
 
+<div id="ad-network-permissions" />
+
 ### Ad Network Permissions (Разрешения для рекламной сети)
 
 **Чтобы включить разрешения для рекламной сети:**
@@ -145,6 +155,8 @@ AppsFlyer получает информацию о затратах через A
 | Allow access to your Protect360 dashboard (Разрешить доступ к панели управления Protect360) | [Если включено] Данные партнера Protect360 |
 
 Узнайте больше о предоставлении <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#permissions-tab">разрешений рекламной сети</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Разрешения агентства
 

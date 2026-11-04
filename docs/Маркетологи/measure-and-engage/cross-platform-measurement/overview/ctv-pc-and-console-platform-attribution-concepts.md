@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="Схема кроссплатформенного решения AppsFlyer для атрибуции на CTV, ПК и консолях" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="the-appsflyer-cross-platform-solution" />
+
 ## Кроссплатформенное решение AppsFlyer
 
 В современном цифровом мире специалисты по развитию сталкиваются с проблемой привлечения потребителей на нескольких устройствах и платформах. Традиционные подходы к измерениям не позволяют охватить весь спектр пользовательских перемещений, охватывающих разные платформы. Межплатформенное измерение важно для понимания влияния маркетинговой деятельности и принятия обоснованных решений.
@@ -37,13 +39,19 @@ AppsFlyer предлагает комплексное кроссплатформ
 
 Независимо от своей маркетинговой стратегии рекламодатели интегрируются с AppsFlyer, чтобы получать данные об атрибуции и оценке эффективности источников (неорганических или органических) и кампаний, стимулирующих установку приложений на таких платформах, как CTV, ПК и консоли, а также событий после установки. Маркетологи используют эту информацию для расчета жизненной ценности пользователей (LTV), а также для измерения и оптимизации маркетинговой деятельности. <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-attribution-model">Подробнее об атрибуции AppsFlyer</Anchor>
 
+<div id="supported-platforms" />
+
 ### Поддерживаемые платформы
 
 <table><thead><tr><th rowspan="2">Это ретаргетинг</th><th colspan="2">Метод интеграции AppsFlyer</th></tr><tr><th>S2S</th><th>строка</th></tr></thead><tbody><tr><td>Android TV</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>tvOS (Apple TV)</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>MacOS</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Amazon Fire ТВ</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Chromecast</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Roku</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Vizio</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Samsung</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>LGUDID</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>PlayStation</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>RIDA</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Steam</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Нативный ПК</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Meta Quest (Oculus)</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Эпические игры</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Nintendo Switch</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Xbox</td><td><span>✓</span></td><td><span>-</span></td></tr></tbody></table>
 
+<div id="integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms" />
+
 ### Выберите рекламные сети, поддерживающие указанные платформы CTV/PC/консоли
 
 Список рекламных сетей, которые показывают рекламу на платформах CTV, ПК и консолях и поддерживают кроссплатформенную атрибуцию (например, CTV-to-mobile), можно найти на <Anchor target="_blank" href="https://hq1.appsflyer.com/partner-marketplace/explore?integrationLevels=CROSS_PLATFORM">маркетплейсе партнеров AppsFlyer</Anchor>.
+
+<div id="cross-platform-attribution-flows" />
 
 ## Потоки кроссплатформенной атрибуции
 
@@ -145,6 +153,8 @@ Smart Script на кроссплатформенной целевой стран
 
 </Accordion>
 
+<div id="data-availability" />
+
 ## Доступность данных
 
 Данные платформ CTV, ПК и консолей включают данные об установках, а также данные о внутренних событиях, которые позволяют рекламодателям оценить жизненную ценность (LTV) неорганических и органических пользователей на основе подписок, покупок в приложении и монетизации рекламы. Показатели LTV рассчитываются с даты атрибуции до настоящего времени.
@@ -157,6 +167,8 @@ Smart Script на кроссплатформенной целевой стран
   * <Anchor target="_blank" href="/marketers/ru/docs/raw-data-export-page">Экспорт</Anchor>
   * <Anchor target="_blank" href="/marketers/ru/docs/pull-api-raw-data">Pull API</Anchor>
 * **Показы из кроссплатформенных кампаний** (например, CTV-to-mobile) не отображаются в дэшбордах уровня приложения. Один показ CTV может приводить к нескольким мобильным конверсиям, из-за чего невозможно точно распределить показы между приложениями. Чтобы получить общее количество показов, используйте <Anchor target="_blank" href="/marketers/ru/docs/ctv-pc-and-console-data-via-data-locker">Отчет о кросс-платформенных взаимодействиях на разных платформах через Data Locker.</Anchor>.
+
+<div id="note" />
 
 > 📘 **Примечание:**
 >

@@ -31,6 +31,8 @@ x-zendesk:
 
 ![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
 
+<div id="push-api" />
+
 ## push
 
 Push API передает сырые данные, создаваемые средствами атрибуции AppsFlyer и SKAdNetwork, в виде сообщений на ваши серверы. Вы можете выбрать типы и контент сообщений и задать конечные точки.
@@ -50,9 +52,13 @@ Push API передает сырые данные, создаваемые сре
 | Содержание сообщения (поля) | <ul><li>Сообщения имеют структуру `key:value`.</li><li>См. доступные поля <Anchor target="_blank" href="/marketers/ru/docs/raw-data-field-dictionary#field-availability-by-reporting-tool">Push API</Anchor> для атрибуции AppsFlyer.</li><li>Каждый ключ представляет собой поле с сырыми данными. См. <Anchor target="_blank" href="/marketers/ru/docs/raw-data-field-dictionary#data-fields-dictionary">описание полей с сырыми данными в AppsFlyer</Anchor>.</li><li>Пустые ключи и ключи со значением null не отправляются.</li><li>Примеры содержат пустые поля и поля с нулевым значением. В реальных постбэках нет пустых или нулевых полей. В приведенном примере используется формат JSON.<ul><li>[https://support.appsflyer.com/hc/article\_attachments/360016192917](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=0&single=true&output=csv)</li><li>[Android;](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=233131974&single=true&output=csv)</li></ul></li></ul> |
 | Формат полей меток времени | <ul><li>Временные метки UTC: `yyyy-mm-dd hh:mm:ss.sss`. Например, `2019-09-17 00:09:00.123`. Событие произошло в 18:00 по токийскому времени. Время события преобразуется в UTC: 09:00. Записанное время является временем UTC.</li><li>Выбранные временные метки (для конкретного приложения): `yyyy-mm-dd hh:mm:ss.sss±th:tm`. Например `2019-09-17 18:00:16.000+0900`. Событие произошло в 18:00 по токийскому времени. Указанное время события — 18:00+09:00. 09:00 — часовой пояс Токио.</li></ul> |
 
+<div id="available-message-types" />
+
 #### Доступные типы сообщений
 
 <table><thead><tr><th>Контекст атрибуции</th><th>Тип сообщения</th><th>Поле conversion_type</th><th>Поле campaign_type</th><th>Поле event_name</th><th>Поле event_type</th></tr></thead><tbody><tr><td>Привлечение пользователей</td><td>Установка\*</td><td>Установить</td><td><p>Неорганические: UA</p><p>Органические: organic</p></td><td>Установить</td><td><ul><li>Установить</li><li>organic-install</li></ul></td></tr><tr><td>Привлечение пользователей </td><td>События внутри приложения при установке</td><td><span>Установить</span></td><td><p>Неорганические: UA</p><p>Органические: organic</p></td><td>Имена событий, определяемые рекламодателем</td><td><ul><li>install-in-app-event</li><li>organic-install-in-app-event</li></ul></td></tr><tr><td>Обязательный</td><td>повторное вовлечение</td><td>повторное вовлечение</td><td>ретаргетинг</td><td>повторное вовлечение</td><td>повторная атрибуция</td></tr><tr><td>Обязательный </td><td>События повторного вовлечения внутри приложения</td><td>повторное вовлечение</td><td>ретаргетинг</td><td>Имена событий, определяемые рекламодателем</td><td>re-engagement-in-app-event</td></tr><tr><td>Обязательный </td><td>Ретаргетинг </td><td>Повторные установки</td><td>ретаргетинг</td><td>повторная атрибуция</td><td>повторная атрибуция</td></tr><tr><td>Привлечение пользователей </td><td>Переустановка</td><td>Повторные установки</td><td><p>Неорганические: UA</p><p>Органические: organic</p></td><td>Повторные установки</td><td><ul><li>Повторные установки</li><li>organic-reinstall</li></ul></td></tr><tr><td>Обязательный</td><td>События реатрибуции внутри приложения</td><td>Повторные установки</td><td>ретаргетинг</td><td>Имена событий, определяемые рекламодателем</td><td>re-attribution-in-app-event</td></tr><tr><td colspan="6">\* Некоторые установки, связанные с атрибуцией по просмотрам, атрибутируются <a href="./about-raw-data-identifier-restrictions" target="_blank">ограниченному медиа-источнику.</a> </td></tr></tbody></table>
+
+<div id="unique-fields" />
 
 #### Уникальные поля
 
@@ -76,6 +82,8 @@ Push API передает сырые данные, создаваемые сре
 | Обновление данных | <ul><li>Установки, повторные загрузки и внутренние события приложения:<ul><li>Обрабатываются ежедневно</li><li>Отправляются на вашу конечную точку на следующий день после получения AppsFlyer постбэка iOS</li><li>Ожидайте сообщения о событиях с 08:00 до 11:00 UTC (точное время может меняться)</li><li>Пример: постбэки, полученные в понедельник, отправляются, начиная с 08:00 UTC вторника</li></ul></li><li>Постбэки от iOS и копии постбэков: сообщения отправляются вскоре после поступления в AppsFlyer</li></ul> |
 | Примеры сообщений | Файл содержит примеры сообщений. В приведенном примере используется формат JSON. <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0CO6W7jgx6zxMeSGIo-hbqLbFh3AO0OT6qp4cWmgdbWVMjLJ-2dermVz49jmAXexewiOGzR1YjGzu/pub?output=xlsx">Пример сообщений SKAN</Anchor>. |
 
+<div id="message-types-for-skan-attribution" />
+
 #### Типы сообщений для атрибуции SKAN
 
 | Тип сообщения | Поле event\_name | Поле skad\_redownload | Поле event\_type |
@@ -88,7 +96,13 @@ Push API передает сырые данные, создаваемые сре
 
 </Accordion>
 
+<div id="set-up-push-api-endpoints" />
+
 ## Настройка конечных точек Push API
+
+<div id="01H8E8DET2PBGQAKHJY40R1P9Z" />
+
+<div id="caution" />
 
 > ❗️ **Предупреждение**
 >
@@ -102,6 +116,8 @@ Push API передает сырые данные, создаваемые сре
 
 Чтобы настроить Push API, выполните следующий список действий.
 
+<div id="push-api-setup-checklist" />
+
 #### Чек-лист по настройке Push API
 
 <table><thead><tr><th>Шаг № </th><th>Атрибуция Appsflyer</th><th>Атрибуция SKAdNetwork </th></tr></thead><tbody><tr><td>1</td><td colspan="2"><p>Если у вас уже есть активная конечная точка Push API, этот шаг можно пропустить. </p><p>Заполните <a href="./push-api-streaming-raw-data#serverside-requirements-your-server">требования к серверу</a>.</p></td></tr><tr><td>2</td><td>Для атрибуции AppsFlyer планируйте настройки конечных точек с помощью <a href="./push-api-streaming-raw-data#push-api-planning-checklist-for-appsflyer-attribution">чек-листа для планирования Push API</a>. </td><td>Не применимо</td></tr><tr><td>3</td><td><a href="./push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">Настройка конечной точки для атрибуции AppsFlyer</a></td><td><a href="./push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint">Настройка конечной точки для атрибуции SKAdNetwork</a></td></tr></tbody></table>
@@ -111,6 +127,8 @@ Push API передает сырые данные, создаваемые сре
 <Accordion title="Требования к серверу (ваш сервер)">
 
 Убедитесь, что ваш сервер соответствует следующим требованиям:
+
+<div id="server-side-requirements" />
 
 #### Требования к серверу
 
@@ -136,6 +154,8 @@ Push API передает сырые данные, создаваемые сре
 
 [![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
 
+<div id="endpoint-planning-table" />
+
 #### Таблица планирования конечных точек
 
 | Нет. | Настройка | Подробности | Используйте этот столбец для записи планируемых настроек |
@@ -153,6 +173,8 @@ Push API передает сырые данные, создаваемые сре
 <Accordion title="Настройка конечной точки для атрибуции AppsFlyer">
 
 Все члены команды, имеющие права доступа к API, могут вносить изменения в настройки Push API . Другие пользователи аккаунта могут только просматривать эти настройки.
+
+<div id="add-an-appsflyer-attribution-endpoint" />
 
 #### Чтобы добавить конечную точку атрибуции AppsFlyer
 
@@ -173,6 +195,8 @@ Push API передает сырые данные, создаваемые сре
 8. Нажмите **Сохранить**.  
    Push API активен. Данные о конверсиях отправляются на конечную точку.
 9. Проверьте конечную точку в соответствии с описанной ниже процедурой.
+
+<div id="test-the-endpoint" />
 
 #### Проверить конечную точку:
 
@@ -214,6 +238,8 @@ Push API передает сырые данные, создаваемые сре
 
 </Accordion>
 
+<div id="additional-proceduresmanaging-endpoints" />
+
 ## Дополнительные процедуры: управление конечными точками
 
 Все члены команды, имеющие права доступа к API, могут вносить изменения в настройки Push API . Другие пользователи аккаунта могут только просматривать эти настройки.
@@ -243,6 +269,8 @@ Push API передает сырые данные, создаваемые сре
    Конечная точка удалена.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Поиск и устранение неполадок, особенности и ограничения
 
@@ -331,6 +359,8 @@ https://your.server.com?consumer_key=abc456
 ```
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

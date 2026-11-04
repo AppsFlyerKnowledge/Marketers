@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Отчеты SKAN по сырым данным содержат данные, созданные после преобразования и декодирования постбэков, полученных AppsFlyer от iOS, а также сырые постбэки SKAN. Данные доступны через <Anchor target="_blank" href="/marketers/ru/docs/data-locker-for-marketers">Data Locker</Anchor> и <Anchor target="_blank" href="/marketers/ru/docs/push-api-streaming-raw-data">Push API</Anchor>. Если ваш план подписки включает сырые данные, подписка на Data Locker не требуется.
 
+<div id="skan-raw-data-reports" />
+
 ## Отчеты SKAN по сырым данным
 
 Принципы:
@@ -59,6 +61,8 @@ x-zendesk:
 
 * Необязательные поля обогащения, такие как campaign\_name, ad\_network\_campaign\_id, ip, которые рекламная сеть не предоставила.
 * Apple скрывает эти данные из-за политики пороговых значений Apple. Такие поля, как source\_app\_id, skad\_campaign\_id, skad\_conversion\_value.
+
+<div id="skan-raw-data-report-format-and-content" />
 
 ## Формат и содержание отчетов SKAN по сырым данным
 
@@ -208,6 +212,8 @@ x-zendesk:
 
 <Accordion title="Типы форматов полей сырых данных">
 
+<div id="field-formats" />
+
 #### Форматы полей
 
 | Название формата | Описание |
@@ -238,6 +244,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Дополнительные сведения
 
 <div id="traits-and-limitations" />
@@ -258,6 +266,8 @@ x-zendesk:
 | Доступ пользователей аккаунта | Доступно. Согласно разрешениям аккаунта |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

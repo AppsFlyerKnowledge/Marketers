@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Вкратце:** Интегрируйте свое приложение Amazon Vega OS Connected TV (CTV) с AppsFlyer, чтобы получать данные об атрибуции и событиях для ваших кампаний в Amazon Vega OS.
 
+<div id="about-amazon-vega-os-ctv-attribution" />
+
 ## **Об атрибуции CTV Amazon Vega OS**
 
 Amazon Vega OS для потоковой передачи работает на всех устройствах Amazon Vega OS.
@@ -31,6 +33,8 @@ API-интеграция Amazon Vega OS поддерживает:
 
 * Смарт-ТВ Amazon Vega OS.
 * Атрибуция и регистрация событий между CTV-to-CTV. То есть атрибуцию и запись на устройстве Amazon Vega OS пользователя.
+
+<div id="integration-procedures" />
 
 ## **Процедуры интеграции**
 
@@ -43,6 +47,8 @@ API-интеграция Amazon Vega OS поддерживает:
 | Настройка ссылки | <Anchor target="_blank" href="/marketers/ru/docs/ctv-pc-and-console-platform-direct-attribution-links">Узнайте, как создавать прямые ссылки атрибуции</Anchor> | Маркетолог |
 | Настройка отчета / просмотр данных | <Anchor target="_blank" href="/marketers/ru/docs/ctv-pc-and-console-platform-attribution-concepts#доступность-данных">Узнайте о доступности данных на дэшбордах и в отчетах</Anchor> | Маркетолог/инженер по обработке и анализу данных |
 
+<div id="traits-and-limitations" />
+
 ## Спецификации и ограничения
 
 | Специфика | Примечание |
@@ -50,6 +56,8 @@ API-интеграция Amazon Vega OS поддерживает:
 | Неорганические источники | В разработке |
 | Обязательный | В настоящее время не поддерживается |
 | Данные о затратах | Данные о затратах должны быть отправлены через<Anchor target="_blank" href="/marketers/ru/docs/import-cost-data">импорт данных</Anchor> о затратах методом загрузки файла по электронной почте. |
+
+<div id="see-also" />
 
 ### **Смотрите также**
 

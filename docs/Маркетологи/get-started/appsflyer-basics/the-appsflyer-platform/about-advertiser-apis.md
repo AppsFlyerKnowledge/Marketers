@@ -22,12 +22,16 @@ x-zendesk:
 ---
 > **Краткий обзор:** API, доступные рекламодателям для доступа к данным или обновления данных.
 
+<div id="advertiser-api-list-and-interfaces" />
+
 ## Список и интерфейсы API рекламодателей
 
 <span id="01EEQJERAWW3HY59HVPY3YWA0B"></span>Конкретная информация об отчетах, инструментах отчетности и API отчетности:
 
 * <span id="01EEQJERAW2ZTBWBQKBCDSC76Z"></span><span id="01EEQJERAWQ2WCPV0207XM6FR4"></span><Anchor target="_blank" href="/marketers/ru/docs/raw-data-reporting-overview"><span id="01EEQJERAX0W7RCYQWVM2M5S13"></span>Инструменты и API для отчетов по сырым данным</Anchor>
 * <span id="01EEQJERAWA09P200SGR985846"></span><span id="01EEQJERAW6AC6WR7E46T5DMHW"></span><Anchor target="_blank" href="/marketers/ru/docs/aggregated-and-analytics-reporting-overview">Инструменты и API для отчетов по сводным данным и аналитики</Anchor>
+
+<div id="interfaces-for-advertisers" />
 
 #### Интерфейсы для рекламодателей
 

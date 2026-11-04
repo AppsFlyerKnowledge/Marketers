@@ -27,6 +27,8 @@ x-zendesk:
 
 [![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
 
+<div id="about-user-attributes" />
+
 ## Об атрибутах пользователей
 
 Атрибуты пользователей, несхожие с данными, основанными на событиях, — это общие характеристики, которыми ваши пользователи делятся с вами. Они могут быть статичными, такими как пол, возраст, день рождения и страна; или динамическими, такими как счет пользователя в игре.
@@ -62,6 +64,8 @@ x-zendesk:
 
 В разделе «Аудитории» создайте атрибуты пользователей (любимый вид спорта и счет в игре). Это предоставляет наборам правил доступ к данным CRM.
 
+<div id="scenario-user-attributes" />
+
 #### Атрибуты пользователя в сценарии
 
 | **Часть основной схемы отчета AppsFlyer**: | Фактическое значение идентификатора клика из целевого URL, используемое для отправки сигналов и для разрешения полной иерархии кампании через API партнеров. | Уровень |
@@ -76,6 +80,8 @@ x-zendesk:
 [<Image alt="UserAttributedExample.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)
 
 </Accordion>
+
+<div id="implement-user-attributes" />
 
 ## Внедрение атрибутов пользователей
 
@@ -138,7 +144,7 @@ x-zendesk:
 | --- | --- |
 | <span id="search-and-filter"></span>Поиск и фильтрация | По имени атрибута, имени приложения и уровню атрибута. |
 | <span id="sort-by"></span>Сортировать по | Нажмите на заголовок столбца, чтобы отсортировать строки таблицы. |
-| <span id="import-data"></span>Импорт данных | <ul><li>[Импорт данных через CSV](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[Импорт данных через API](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
+| <span id="zd-import-data"></span><span id="import-data"></span>Импорт данных | <ul><li>[Импорт данных через CSV](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[Импорт данных через API](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
 | <span id="change-api-import-key"></span>Изменить ключ импорта API | **Чтобы изменить ключ импорта API:**<ol><li>Нажмите **Импорт данных**.</li><li>Выберите **API**.</li><li>Кликните **Обновить ключ импорта**.</li></ol>**Примечание!** Если скрипты имеют встроенные ключи, обязательно обновите их, используя новый ключ. |
 
 Управление атрибутами пользователей
@@ -190,6 +196,8 @@ x-zendesk:
 
 * Нет строки заголовка
 * Содержит все столбцы, перечисленные в предыдущей таблице.
+
+<div id="note" />
 
 > 📘 **Примечание:**
 >
@@ -255,6 +263,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
   ]
 }
 ```
+
+<div id="note-1" />
 
 > 📘 **Примечание:**
 >
@@ -346,15 +356,19 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 
 <Accordion title="Ограничения">
 
+<div id="general-limitations" />
+
 #### Общие ограничения
 
 * В данных импорта CSV\/API поддерживаются только целые числа. Числа с плавающей запятой не поддерживаются. **Пример:** Значение атрибута "оценка" может быть равно 90, но не 90,5.
 * Данные об атрибутах пользователя не могут быть распечатаны или загружены.
-* #### Ограничения значений атрибутов:
+* #### <span id="attribute-value-limitations"></span>Ограничения значений атрибутов:
 
   * Внутри значений атрибутов не должно быть запятых, точек и других специальных символов.
   * Для строкового значения атрибута существует ограничение по длине в 40 символов.
   * Значения атрибутов не могут начинаться с 0.
+
+<div id="api-import-limitations" />
 
 #### Ограничения импорта API
 
@@ -367,6 +381,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 "device_id": "39e123.......",
 "customer_id": "",
 ```
+
+<div id="csv-import-limitations" />
 
 #### Ограничения импорта CSV
 

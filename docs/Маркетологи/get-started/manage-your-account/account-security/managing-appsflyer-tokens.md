@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Токены повышают безопасность данных. Они позволяют пользователям получать доступ к данным через API AppsFlyer или получать данные о событиях с помощью вызовов от сервера к серверу. Администраторы могут управлять несколькими токенами, сохраняя непрерывность данных. Это включает в себя создание, переименование и удаление API и токенов для межсерверной аутентификации по мере необходимости.
 
+<div id="important" />
+
 > 🚧 **Двоеточие (:)**
 >
 > ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)
@@ -33,6 +35,8 @@ x-zendesk:
 > * Только администраторы могут просматривать и управлять токенами. Пользователи учетной записи не имеют доступа к странице Токены.
 > * Храните токены в безопасности, поскольку они обеспечивают доступ к вашим данным. Не публикуйте токены в открытых репозиториях кода.
 > * Рекомендуется заменять токены каждые 180 дней.
+
+<div id="about-appsflyer-tokens" />
 
 ## О токенах AppsFlyer
 
@@ -45,10 +49,14 @@ x-zendesk:
 * Цели тестирования
 * Для использования с определенными функциями, такими как API OneLink
 
+<div id="reaching-the-tokens-page" />
+
 ## Открытие страницы “Токены”
 
 1. На верхней панели откройте меню аккаунта (выпадающий список под адресом электронной почты) > **Центр безопасности**.
 2. В разделе **Токены API AppsFlyer** нажмите **Управление токенами API AppsFlyer.** Отобразятся текущие токены.
+
+<div id="token-types" />
 
 ## Типы токенов
 
@@ -61,13 +69,19 @@ x-zendesk:
 | <span id="s2s-token"></span>Токен S2S | Используется для отправки данных с помощью вызовов от сервера к серверу. |
 | <span id="mcp-token"></span>MCP токен: | Используется для аутентификации сторонних или самостоятельно размещенных систем с помощью AppsFlyer MCP. |
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > Если вы интегрируете функцию, для которой требуется отдельный токен API V2 (например, <Anchor target="_blank" href="/marketers/ru/docs/beta-advanced-security-protect360-module">модуль расширенной безопасности</Anchor>), и уже достигли лимита в два токена, вы можете перепрофилировать существующий токен API V2 вместо запроса нового — один и тот же токен может использоваться для нескольких кейсов.
 
+<div id="manage-your-tokens" />
+
 ## Управляйте своими токенами
 
 В качестве администратора вы можете управлять несколькими токенами: создавать, переименовывать и удалять их. В основном они используются для замены текущих токенов на новые. Для этого нужно сначала [создать](#создайте-токен) новый токен, внедрить его в свои системы, а после того, как он станет доступен, [удалить](#удалить-токен) старый токен.
+
+<div id="retrieve-tokens" />
 
 ### Получение токенов
 
@@ -76,12 +90,16 @@ x-zendesk:
 3. Отобразятся доступные Токены.
 4. Скопируйте необходимый токен.
 
+<div id="create-a-token" />
+
 ### Создайте токен
 
 1. На странице [**Токены**](#открытие-страницы-токены) нажмите **+ Новый токен**.
 2. Введите имя токена.
 3. Выберите тип токена.
 4. Нажмите кнопку **Создать токен**.
+
+<div id="note-1" />
 
 > 📘 **Примечание:**
 >
@@ -91,7 +109,11 @@ x-zendesk:
 >   * Используйте токен только после того, как его статус изменится на **Активный**.
 > * Обязательно внедрите новый токен в свои системы
 
+<div id="delete-a-token" />
+
 ### Удалить токен
+
+<div id="warning" />
 
 > ❗️ **Предупреждение**
 >
@@ -103,9 +125,13 @@ x-zendesk:
 2. Вы должны подтвердить удаление токена, набрав “Удалить токен”.
 3. Нажмите **Сохранить**.
 
+<div id="applications-of-the-api-v2-token" />
+
 ## Применение токена API V2
 
 Варианты использования токена API V2 для рекламодателей и рекламных сетей:
+
+<div id="advertiser" />
 
 ### Рекламодатель
 
@@ -124,6 +150,8 @@ x-zendesk:
 | <Anchor target="_blank" href="/marketers/ru/docs/audiences-import-audience-segments-from-internal-systems#imported-audience-management-api">Импортировать API аудитории</Anchor> |
 | <Anchor target="_blank" href="/marketers/ru/docs/beta-advanced-security-protect360-module">Интеграция модуля расширенной безопасности (Android)</Anchor> |
 
+<div id="ad-network" />
+
 ### Рекламная сеть
 
 | Токен API V2 |
@@ -133,9 +161,13 @@ x-zendesk:
 | <Anchor target="_blank" href="/partners/ru/docs/protect360-for-integrated-partners#api-отчетности-по-protect360-для-рекламных-сетей">Отчеты Protect360 для интегрированных партнеров</Anchor> |
 | <Anchor target="_blank" href="/partners/ru/docs/incost-api-for-ad-networks">InCost</Anchor> |
 
+<div id="applications-of-the-s2s-token" />
+
 ## Применение токена S2S
 
 Пользовательские кейсы для рекламодателей и рекламодателей, использующих токен S2S:
+
+<div id="advertiser-1" />
 
 ### Рекламодатель
 
@@ -144,21 +176,29 @@ x-zendesk:
 | <Anchor target="_blank" href="/marketers/ru/docs/server-to-server-events-api-for-mobile-s2s-mobile">Мобильные события в приложении S2S API</Anchor> |
 | <Anchor target="_blank" href="/marketers/ru/docs/server-to-server-s2s-api-for-web-performance-measurement">Веб-события S2S API</Anchor> |
 
+<div id="ad-network-1" />
+
 ### Рекламная сеть
 
 | Токен S2S |
 | --- |
 | <Anchor target="_blank" href="/marketers/ru/docs/set-up-appsflyer-preload-referrer-attribution">Атрибуция рефереров предварительной загрузки AppsFlyer</Anchor> |
 
+<div id="note-2" />
+
 > 📘 **Примечание**
 >
 > Для большинства рекламных сетей генерация токена S2S больше не является самостоятельной. В результате администраторы не будут видеть возможность генерации токена S2S в пользовательском интерфейсе. Самостоятельная генерация токенов доступна только для определённых управляемых партнёров.
+
+<div id="applications-for-the-onelink-token" />
 
 ## Применение токена OneLink
 
 Варианты использования токена API OneLink для рекламодателей:
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/create-onelink-attribution-link">Создавайте</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-attribution-link">получайте</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/update-onelink-attribution-link">обновляйте</Anchor> и <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/delete-onelink-attribution-link">удаляйте</Anchor> короткие URL-адреса OneLink с настраиваемыми параметрами.
+
+<div id="applications-for-the-mcp-token" />
 
 ## Заявки на токен MCP
 

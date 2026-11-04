@@ -26,6 +26,8 @@ x-zendesk:
 
 ![SBSDB.png](https://files.readme.io/550c465c329eac484d2b2e5a65c8f48831c350c3c4b967315e3b2059ab95a36d-4409263804049.png)
 
+<div id="finding-the-best-ios-14-campaign-performance-metrics" />
+
 ## Как найти наилучшие метрики эффективности кампаний на iOS 14+
 
 Начиная с iOS 14+ оба фреймворка атрибуции, как SKAN, так и <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-attribution-model">AppsFlyer</Anchor>, генерируют метрики эффективности кампании. Они по-разному атрибутируют, имеют разные черты и ограничения, и между ними часто возникают расхождения. Например, SKAN не содержит метрик кампаний Apple Search Ads и собственных медиа. И наоборот, метрики AppsFlyer от SRN не включают установки пользователей, не давших согласия на обработку данных. Кроме того, SKAN измеряет эффективность в течение начального окна после установки в 1-3 дня, а AppsFlyer измеряет пожизненную ценность пользователя (<Anchor target="_blank" href="/marketers/ru/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV</Anchor>).
@@ -96,6 +98,8 @@ x-zendesk:
 | Пример | ![mceclip1.png](https://files.readme.io/98fc80d1e995ba8ef0cce267fa12f22d48a77d7e25db4add1108144c6de7136d-4406111715217.png)<ul><li>Фактические установки определяются с помощью фреймворка с наибольшим количеством установок.</li><li>eCPI рассчитывается по формуле: стоимость/количество установок.</li></ul> |
 
 </Accordion>
+
+<div id="using-side-by-side" />
 
 ## Использование режима сравнения
 

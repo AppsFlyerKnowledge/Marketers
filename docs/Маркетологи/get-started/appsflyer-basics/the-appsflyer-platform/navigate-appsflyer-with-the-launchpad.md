@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Кратко:** Используйте Launchpad (Ctrl+K или Cmd+K), чтобы быстро перейти на страницу на дэшборде.
 
+<div id="using-launchpad" />
+
 ## Использование Launchpad
 
 **Чтобы открыть Launchpad:**

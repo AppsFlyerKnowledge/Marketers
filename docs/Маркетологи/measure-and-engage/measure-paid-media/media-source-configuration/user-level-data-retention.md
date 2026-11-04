@@ -27,17 +27,25 @@ x-zendesk:
 ---
 > **Краткий обзор:** Правила хранения и использования необработанных данных на уровне пользователя определяются AppsFlyer, соответствующими законами и условиями использования SRN («**Партнеры**»).
 
+<div id="caution" />
+
 > ❗️ **Предупреждение**
 >
 > AppsFlyer предоставляет пояснения по ограничению данных в этой статье исключительно в информационных целях.  *Информация в данной статье не может считаться рекомендациями юриста. Информация предоставляется только для ознакомления.*
+
+<div id="data-retention-and-deletion-obligations" />
 
 ## Обязательства по удержанию и удалению данных
 
 AppsFlyer получает данные о пользователях из приложений, от партнеров и из других источников.
 
+<div id="availability-of-user-level-data-to-advertisers" />
+
 ### Доступность данных на уровне пользователя для рекламодателей
 
 Обычно данные на уровне пользователей предоставляются рекламодателям через инструменты формирования отчётов по сырым данным, если их пакет подписки включает сырые данные за 90 дней (см. <Anchor target="_blank" href="/marketers/ru/docs/data-availability-windows">окна доступности данных</Anchor>). В некоторых случаях существуют также <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions">ограничения на сырые данные</Anchor>.
+
+<div id="data-retention" />
 
 ### Хранение данных
 
@@ -63,6 +71,8 @@ AppsFlyer сохраняет данные на уровне пользовате
   * Политика обмена данными с партнерами
   * Включена <Anchor target="_blank" href="/marketers/ru/docs/apply-aggregated-advanced-privacy-framework">агрегированная расширенная конфиденциальность</Anchor>
 
+<div id="partner-data-retention-periods" />
+
 #### Установленные партнерами сроки хранения данных
 
 | SRN/партнер | Идентификатор партнера (PID) | Удаление данных через [x] мес. после установки |
@@ -80,6 +90,8 @@ AppsFlyer сохраняет данные на уровне пользовате
 | Snapchat (<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/article/attribution-terms">TOS</Anchor>) | snapchat\_int | 6 |
 | TikTok for Business | tiktokglobal\_int | 13 |
 | X Ads (ранее Twitter) | twitter\_int | 3 |
+
+<div id="note" />
 
 > 📘 **Примечание***
 >

@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** Измеряйте кампании push-уведомлений на устройствах iOS и Android.
 
+<div id="overview" />
+
 ## Обзор
 
 AppsFlyer поддерживает измерение кампаний push-уведомлений от всех push-провайдеров, а также кампаний, реализованных непосредственно на базе Firebase Cloud Messaging или Apple Push Notification Services (APNS).
@@ -38,6 +40,8 @@ AppsFlyer поддерживает измерение кампаний push-ув
 * Отправив объект JSON с ключом `af` в полезной нагрузке push-уведомления (устарело).
 
 Конверсии отображаются на обзорном дэшборде, в ретаргетинге или объединенных представлениях.
+
+<div id="how-does-it-work" />
 
 ## Как это работает?
 
@@ -51,9 +55,13 @@ AppsFlyer поддерживает измерение кампаний push-ув
 
 В сценарии OneLink, если OneLink настроен на направление пользователя на определенный экран в приложении, запускается диплинкинг.
 
+<div id="prerequisites" />
+
 ## Необходимые условия
 
 Прежде чем продолжить, убедитесь, что ваше приложение имеет <Anchor target="_blank" href="/marketers/ru/docs/basic-sdk-integration-guide">интегрированный SDK AppsFlyer</Anchor>  **и** может получать push-уведомления.
+
+<div id="steps" />
 
 ## Шаги
 
@@ -79,6 +87,8 @@ AppsFlyer поддерживает измерение кампаний push-ув
 <Tabs>
 <Tab title="Использование OneLink (рекомендуется) Использование JSON (устарело)">
 
+<div id="using-onelink-recommended" />
+
 #### **Использование OneLink (рекомендуется)**
 
 Это рекомендуемый метод для интеграции AppsFlyer с push-уведомлениями.
@@ -100,6 +110,8 @@ AppsFlyer поддерживает измерение кампаний push-ув
 <Tab title="https://files.readme.io/138aa2abb70cdb0b8a2c1a4b4ce0a8b83b2faae58e29f3223d5653a4d575012b-49839256716049.png">
 
 <div id="using-json-legacy" />
+
+<div id="using-json" />
 
 #### **Использование JSON (устарело)**
 

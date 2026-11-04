@@ -29,6 +29,8 @@ x-zendesk:
 
 > **Краткий обзор:** Когортный API (Cohort API) предоставляет рекламодателям программный способ получения данных когорт. Используйте API для интеграции данных по когортам в системы бизнес-аналитики и автоматизации маркетинга.
 
+<div id="cohort-api" />
+
 ## Когортный API
 
 Когортный API используется для получения когортных данных об эффективности кампаний с платформы AppsFlyer. Функционально он эквивалентен <Anchor target="_blank" href="/marketers/ru/docs/cohort-and-retention-dashboard">когортному дэшборду</Anchor>.
@@ -83,6 +85,8 @@ x-zendesk:
 
 <table><thead><tr><th> </th><th> </th><th colspan="5">Функции</th></tr><tr><th rowspan="2">По умолчанию/ Необязательно </th><th rowspan="2">KPI (название параметра) </th><th>Количество</th><th>cvr (коэффициент конверсии)</th><th>Коэффициент</th><th>Сумма</th><th>Уникальные пользователи</th></tr><tr><th>Число</th><th>Процент</th><th>Процент</th><th>Число</th><th>Число</th></tr></thead><tbody><tr><td>Всегда</td><td>польз.</td><td><span>Д</span></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Всегда</td><td>ecpi</td><td>-</td><td>-</td><td>-</td><td><span>Д</span></td><td>-</td></tr><tr><td>Всегда</td><td>Данные о затратах</td><td>-</td><td>-</td><td>-</td><td><span>Д</span></td><td>-</td></tr><tr><td>НЕОБЯЗАТЕЛЬНОЕ</td><td> <code>"event_name"</code>(4) </td><td><span>Д</span></td><td><span>Д</span></td><td>-</td><td><span>Да (3)</span></td><td><span>Д</span></td></tr><tr><td>НЕОБЯЗАТЕЛЬНОЕ</td><td>выручка</td><td><span>Д</span></td><td>-</td><td>-</td><td><span>Д</span></td><td>-</td></tr><tr><td>НЕОБЯЗАТЕЛЬНОЕ</td><td>roas</td><td>-</td><td>-</td><td><span>Д</span></td><td>-</td><td>-</td></tr><tr><td>НЕОБЯЗАТЕЛЬНОЕ</td><td>roi</td><td>-</td><td>-</td><td><span>Д</span></td><td>-</td><td>-</td></tr><tr><td>НЕОБЯЗАТЕЛЬНОЕ</td><td>sessions (сеансы)</td><td><span>Д</span></td><td>-</td><td><span>Д</span></td><td>-</td><td><span>Y(1)</span></td></tr><tr><td>НЕОБЯЗАТЕЛЬНОЕ</td><td>uninstalls (2)</td><td><span>Д</span></td><td>-</td><td><span>Д</span></td><td>-</td><td>-</td></tr><tr><td colspan="7"><p>(1) Уникальные сессии возвращаются при <em>aggregation_type = on_day</em></p><p>(2) Недоступно, если cohort_type=unified </p><p>(3) Сумма означает общий доход, принесённый событием. В отчете это обозначается как <code>sum_event_name"</code></p><p>(4) Важно! Названия событий чувствительны к регистру.</p></td></tr></tbody></table>
 
+<div id="formatting-kpi-functions" />
+
 #### Форматирование функций KPI
 
 Следующие параметры задают формат возвращаемых KPI.
@@ -104,6 +108,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Дополнительные сведения
 
 <div id="using-period-filters" />
@@ -116,6 +122,8 @@ x-zendesk:
 
 * Значение периода может быть одним или несколькими из следующих 0-180. Например, 0, 1, 2, 30, 180.
 * Если период не указан, то по умолчанию возвращаются значения 0, 1, 2 и так далее до 30, 60, 90 и 180.
+
+<div id="example-period-filter" />
 
 > 📄 **Пример фильтра периодов**
 >

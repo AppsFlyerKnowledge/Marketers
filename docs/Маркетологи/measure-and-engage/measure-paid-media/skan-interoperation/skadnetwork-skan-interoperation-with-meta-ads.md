@@ -27,9 +27,13 @@ x-zendesk:
 
 <Embed title="Взаимодействие SKAdNetwork (SKAN) с Meta ads" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/15jnbml3h7" providerUrl="https://fast.wistia.com" />
 
+<div id="skan-interoperability-appsflyer---meta-ads" />
+
 ## Взаимодействие со SKAN: AppsFlyer &lt;-> Meta реклама
 
 Если вы работаете с несколькими партнерскими рекламными сетями, лучше всего настроить это в AppsFlyer. Таким образом, метрики эффективности SKAN, дополненные другими показателями, такими как стоимость, доступны на платформе AppsFlyer.
+
+<div id="scope-of-skan-interoperability-with-meta-ads" />
 
 #### Область взаимодействия SKAN с Meta реклама
 
@@ -54,12 +58,16 @@ x-zendesk:
 * <Anchor target="_blank" href="/marketers/ru/docs/self-reporting-networks-srns#ios-145-srn-attribution">Воздействие iOS 14.5 на отчетность SRN</Anchor>
 * В нашей MMP-интеграции с Meta Ads всегда реализуется флаг *Отслеживание рекламодателем включено*. (Эта информация предоставляется в соответствии с чек-листом из рекомендаций по iOS 14 для приложений Meta Ads, опубликованным в феврале 2021 года.)
 
+<div id="considerations" />
+
 #### Соображения
 
 * После включения взаимодействия, при любом изменении настроек измерений, вам не нужно повторно выполнять процедуру интеграции MMP, описанную в этой статье. Это означает, что вам не нужно снова копировать URL-адрес для подключения MMP.
 * Если в AppsFlyer отключить измерение SKAN, реклама Meta не сможет получать сопоставление CV.
 * AppsFlyer SDK (пакет средств разработки ПО) vs. Facebook SDK (пакет средств разработки ПО): Facebook SDK (пакет средств разработки ПО) подходит для запуска кампаний только с рекламой Meta. Если вы запускаете кампании с несколькими партнерами, используя AppsFlyer SDK (пакет средств разработки ПО), вы можете просматривать данные всех партнеров.
 * Ознакомьтесь с разделом [несоответствия](/docs/skadnetwork-skan-interoperation-with-meta-ads#troubleshooting-discrepancies-and-faq) в этой статье.
+
+<div id="meta-ads-app-install-ads-guidance" />
 
 #### Руководство по рекламе для установки приложений через Meta Ads
 
@@ -70,6 +78,8 @@ x-zendesk:
 * Между способом оптимизации Meta Ads и типом измерения, выбранным вами в AppsFlyer, существует следующая взаимосвязь:
   * **Измерение дохода**. VO и AEO
   * Измерение конверсии: AEO — включает стандартные события рекламы Meta и событие покупки. Вы должны сопоставить событие приложения в AppsFlyer с соответствующим событием Meta Ads.
+
+<div id="interoperation-procedures" />
 
 ## Процедуры взаимодействия
 
@@ -112,6 +122,8 @@ x-zendesk:
 <Accordion title="Поделитесь схемой CV с Meta ads">
 
 ![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+
+<div id="enabling-appsflyer-skan-interoperation-with-meta-ads" />
 
 #### Включение взаимодействия AppsFlyer SKAN с Meta ads
 
@@ -181,11 +193,13 @@ x-zendesk:
              ![in-app_events_fb_en-us.png](https://files.readme.io/98e2c8048444331c5d24343e683605e8388ee93bbfcb70aa5e8dad183c995859-40032591364241.png)
            * Убедитесь, что события в приложении, заданные в измерении SKAN (**событие AppsFlyer**), сопоставлены с идентификаторами события в Meta реклама (**сопоставлены с партнерским событием**). Если события не сопоставлены, Meta Ads не сможет проводить оптимизацию и будет учитывать только установки.
 
+             <div id="h_01H8XRMVR5GY77K7GJ4TXGWEHS" />
+
              > 📘 **Примечание:**
              >
              > При добавлении, изменении или удалении ценности, значения конверсии (CV) в SKAN Conversion Studio убедитесь, что событие отображено в **постбэках о внутренних событиях приложения**. В противном случае CV не будет обновлено в Meta ads.
              >
-             > #### Руководство по сопоставлению внутренних событий приложения
+             > #### <span id="inapp-event-mapping-guide"></span>Руководство по сопоставлению внутренних событий приложения
 
 
         | Тип измерения | Требования к сопоставлению |
@@ -251,6 +265,8 @@ x-zendesk:
 </Table>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Дополнительная информация
 
@@ -327,6 +343,8 @@ x-zendesk:
 | <span id="modeled-data-differences-in-appsflyer-and-facebook-ads-manager"></span>Различия в смоделированных данных в AppsFlyer и Meta ads Manager | Модели AppsFlyer агрегируют данные, которые базовая отчетность SKAN не может предоставить. <Anchor target="_blank" href="/marketers/ru/docs/skan-modeled-data">Подробнее</Anchor><br /><br />Когда AppsFlyer моделирует данные, то данные, смоделированные в Meta ads, в расчет не принимаются, так как AppsFlyer полагается исключительно на подтвержденные беспристрастные данные. Таким образом, могут быть расхождения в данных и детализации между отчетами Meta ads Manager и отчетами AppsFlyer. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

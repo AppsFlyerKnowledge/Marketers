@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Кратко:** Yahoo, интегрированный партнер AppsFlyer среди рекламных сетей, предлагает поисковую и нативную рекламу на одной рекламной платформе. Помимо мобильной атрибуции по кликам Yahoo также предлагает атрибуцию по стоимости и атрибуцию по просмотрам, которые можно регистрировать в AppsFlyer.
 
+<div id="setting-up-yahoo" />
+
 ## Настройка Yahoo
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -40,6 +42,8 @@ x-zendesk:
     Дополнительная информация по активации партнеров: нажмите <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
 5. Завершите настройку, используя соответствующие вкладки, как описано ниже. Подробное описание заголовка окна настройки параметров партнера см. <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">здесь</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Совет.**
 >
 > Этап <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#d-general-settings">Общие настройки</Anchor> на вкладке интеграции **обязателен**. Все остальные шаги носят описательный характер или являются **необязательными**.
@@ -48,9 +52,13 @@ x-zendesk:
 
 <Accordion title="Вкладка «Интеграция»">
 
+<div id="advertiser-configuration" />
+
 ### Настройка рекламодателя
 
 На вкладке «Интеграция» есть несколько разделов, которые описаны ниже.
+
+<div id="activate-partner" />
 
 ### Активация партнера
 
@@ -59,9 +67,13 @@ x-zendesk:
 
 Этот переключатель должен быть <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активирован</Anchor> все время, пока вы работаете с этим партнером.Дополнительная информация по активации партнеров доступна <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
 
+<div id="general-settings" />
+
 ### Общие настройки
 
 Выполните следующие шаги для общих настроек Yahoo.
+
+<div id="click-through-attribution" />
 
 ### Атрибуция по кликам
 
@@ -76,6 +88,8 @@ x-zendesk:
 Включите эту опцию, если хотите атрибутировать установки по просмотрам с Yahoo. На вкладке «Ссылка атрибуции» (описана ниже) имеется шкала для окна атрибуции по просмотрам.
 
 Это значение можно задать в часах (от 1 до 23) или в днях (от 1 до 7). Мы рекомендуем установить окно атрибуции по просмотрам на 1 день, чтобы это соответствовало Yahoo.
+
+<div id="agency-configuration" />
 
 ### Настройки для агентств
 
@@ -93,6 +107,8 @@ x-zendesk:
 ![gemini-account-number.png](https://files.readme.io/77f464c6dadefc54acb3a84d97ab0d0751610b253d2da90523bc117f1f26683c-50705625726865.png)
 
 Окна атрибуции по кликам и просмотрам доступны только для чтения и должны настраиваться рекламодателем.
+
+<div id="in-app-events-settings" />
 
 ### In-App Events Settings (Настройки внутренних событий приложения)
 
@@ -127,6 +143,8 @@ x-zendesk:
 
 Эта вкладка не применяется для Yahoo.
 
+<div id="note" />
+
 > 📘 **Примечание:**
 >
 > Для всех SRN, таких как Meta ads, Apple Search Ads, Adwords, Snapchat и т. д., эта вкладка не работает, поскольку они не используют внешние ссылки атрибуции.
@@ -136,6 +154,8 @@ x-zendesk:
 <div id="cost-tab" />
 
 <Accordion title="Вкладка «Стоимость»">
+
+<div id="enabling-and-testing-yahoo-cost-integration" />
 
 ### Включение и тестирование интеграции стоимости Yahoo
 
@@ -150,6 +170,8 @@ x-zendesk:
 * Следуйте <Anchor target="_blank" href="/marketers/ru/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">этим инструкциям по интеграции</Anchor>.
 
 <Anchor target="_blank" href="/marketers/ru/docs/set-up-roi360-cost-api-to-measure-cost-data#статус-api-затрат">Просмотрите статус вашего API стоимости</Anchor> и время, когда AppsFlyer в последний раз удалось получить соответствующие данные о стоимости либо на дэшборде статуса интеграции стоимости (и доходов от рекламы), либо на дэшборде отдельной рекламной сети.
+
+<div id="warning" />
 
 > ❗️ **Предупреждение**
 >
@@ -185,11 +207,15 @@ x-zendesk:
 
 </Accordion>
 
+<div id="marking-events-as-conversions-in-yahoo" />
+
 ## Маркировка событий как конверсий в Yahoo
 
 Вы можете отметить как конверсии события, которые AppsFlyer отправляет в Yahoo через постбэки событий в приложении:
 
 ![yahoo-conversion-rules.png](https://files.readme.io/17a3fdd1619d4e4d0bfcca35e4fd51e7f270ce7446f9e70fb6f7787291e2e022-50705625729297.png)
+
+<div id="yahoo-raw-report" />
 
 ## Необработанный отчет Yahoo
 
@@ -205,9 +231,13 @@ AppsFlyer получает следующие параметры от Yahoo и �
 | Название кампании | кампания; |
 | Тип устройства: xiaomi-Redmi Note 8 | Тип устройства: xiaomi-Redmi Note 8 |
 
+<div id="limitations" />
+
 ## Характеристики и ограничения
 
 * При первом включении атрибуции её отображение в интерфейсе Yahoo может занять до 4 часов.
+
+<div id="skadnetwork-support" />
 
 ## SKAdNetwork поддержка
 

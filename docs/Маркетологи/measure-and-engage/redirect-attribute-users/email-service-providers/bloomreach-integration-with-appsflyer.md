@@ -23,11 +23,15 @@ x-zendesk:
 
 <Image alt="Bloomreach + AppsFlyer.png" src="https://files.readme.io/842523ac61d5f702a451b361d435e794f8dedad0f54eecffdf27f596c2cab262-45298084947473.png" width="645px" />
 
+<div id="about-the-integration" />
+
 ## Об интеграции
 
 Bloomreach — это платформа автоматизации email-маркетинга и поставщик услуг электронной почты (ESP), которая помогает брендам создавать персонализированный опыт по всем каналам.
 
 Интеграция между AppsFlyer и Bloomreach обеспечивает плавный диплинкинг из email-кампаний, поддерживает точное измерение трафика как в Bloomreach, так и в AppsFlyer, а также помогает создавать бесшовный пользовательский опыт, который стимулирует конверсию.
+
+<div id="set-up-the-integration" />
 
 ## Настройка интеграции
 
@@ -39,6 +43,8 @@ Bloomreach — это платформа автоматизации email-мар
 
 Сначала настройте OneLink в AppsFlyer и убедитесь, что необходимые настройки хостинга и домена выполнены.
 
+<div id="when-your-app-is-installed" />
+
 #### Когда приложение установлено
 
 Определите поведение перенаправления для пользователей, у которых ваше приложение уже установлено.
@@ -48,12 +54,16 @@ Bloomreach — это платформа автоматизации email-мар
 1. <Anchor target="_blank" href="/marketers/ru/docs/create-a-onelink-template#создание-шаблонов-onelink">Создайте шаблон OneLink</Anchor> и настройте Universal Links/App Links. Этот шаблон будет использоваться позже для создания ссылок OneLink для ваших email-кампаний.
 2. Если у вас уже есть существующий настроенный шаблон OneLink, который активирует ссылки Universal Links/App Links, вы можете использовать его.
 
+<div id="hosting-and-ssl" />
+
 #### Хостинг и SSL
 
 * Ссылки OneLink защищены SSL и размещаются в AppsFlyer.
 * Файл AASA и файлы App Links также размещаются в AppsFlyer.
 
 См. <Anchor target="_blank" href="/marketers/ru/docs/set-up-your-esp-integration-with-appsflyer#настройка-приложения-для-поддержки-диплинкинга">дополнительную информацию и инструкции.</Anchor>
+
+<div id="app-domain-definition" />
 
 #### Определение домена приложения
 
@@ -81,6 +91,8 @@ applinks:<your-onelink-subdomain>.onelink.me
 
 <Image alt="2026-03-31_09-28-18.png" src="https://files.readme.io/4058ab59e2622f26327d9a4a62fa8afdc5965210acba9d9c5bb7a62d53a05503-45298084948753.png" width="73.36%" />
 
+<div id="example" />
+
 > 📄 **Например**
 >
 > Ниже приведен пример необернутой универсальной ссылки с добавленными параметрами отслеживания Bloomreach:
@@ -97,6 +109,8 @@ applinks:<your-onelink-subdomain>.onelink.me
 
 Наконец, реализуйте соответствующие SDK Bloomreach, чтобы измерение кликов корректно работало в мобильных приложениях и в веб-среде.
 
+<div id="ios" />
+
 #### https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
 
 Реализуйте <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">мобильный SDK</Anchor> Bloomreach для iOS и убедитесь, что измерение универсальных ссылок настроено правильно. SDK Bloomreach поддерживает измерение универсальных ссылок, чтобы фиксировать взаимодействия пользователей, инициированные через email-кампании.
@@ -108,6 +122,8 @@ applinks:<your-onelink-subdomain>.onelink.me
 Реализуйте <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">мобильный SDK</Anchor> Bloomreach для Android и настройте App Links аналогично универсальным ссылкам iOS, чтобы обеспечить согласованность атрибуции кликов и измерения.
 
 См. дополнительную информацию и инструкции по <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/android-sdk-app-links#track-android-app-links">Android App Links</Anchor> и <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">мобильным SDK.</Anchor>
+
+<div id="web" />
 
 #### Веб
 
@@ -138,11 +154,15 @@ applinks:<your-onelink-subdomain>.onelink.me
 
 После завершения всех валидаций настройка интеграции будет завершена.
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > Если клики не отображаются на платформе Bloomreach, обратитесь в службу поддержки Bloomreach.
 
 </Accordion>
+
+<div id="important-notes" />
 
 > 📘 **Вкладка «Затраты»**
 >

@@ -33,6 +33,8 @@ x-zendesk:
 
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
+<div id="protect360-overview" />
+
 ## Обзор Protect360
 
 * Защищает от мошенничества, связанного с атрибуцией. Решение включает динамические инструменты, способные обнаруживать мошенничество и блокировать мошенническую атрибуцию.
@@ -117,6 +119,8 @@ x-zendesk:
 
 Protect360: защита от мошенничества и результаты
 
+<div id="using-protect360" />
+
 ## Использование Protect360
 
 <div id="dashboard" />
@@ -186,6 +190,8 @@ Protect360: защита от мошенничества и результаты
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Характеристики и ограничения
 
 <div id="traits-and-limitations::a07033c3" />
@@ -207,6 +213,8 @@ Protect360: защита от мошенничества и результаты
 Характеристики и ограничения
 
 </Accordion>
+
+<div id="faq-and-tips" />
 
 ## Вопросы, ответы и советы
 
@@ -252,9 +260,13 @@ Protect360: защита от мошенничества и результаты
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **Совет**
 >
 > Хотите узнать больше о защите от мошенничества? Ознакомьтесь с этим коротким информативным <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7809/play/18635/mobile-app-fraud-and-protect360">курсом на Портале Обучения AppsFlyer</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

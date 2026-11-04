@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Если у вас игровое приложение, регистрация следующих внутренних событий позволит измерять качество пользователей на протяжении всего их пути.
 
+<div id="-gaming" />
+
 ## <Image alt="InApp_Events_games.png" src="https://files.readme.io/ee2d46ddf11a6a6cacc95399ffd778d6613ecdd905d237cd971073e095cada5b-20659444711953.png" width="100px" /> Игры
 
 К игровым приложениям относятся такие виды игр, как аркады, стратегии, обучающие и азартные игры. Мы рекомендуем регистрировать такие типичные события, как покупки в приложении, посты в социальных сетях и приглашение друзей. Кроме того, можно регистрировать достижение уровней и прохождение обучения в игре (туториала).
@@ -42,6 +44,8 @@ x-zendesk:
 * Xbox
 * Мобильные устройства Windows
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > * Обязательно прочитайте <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview#настройка-событий-в-приложении">инструкции</Anchor> для маркетологов по реализации внутренних событий приложения.
@@ -52,6 +56,8 @@ x-zendesk:
 > Дополнительные сведения о регистрации внутренних событий см. в <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview">Руководстве по насыщенным внутренним событиям</Anchor>.
 
 [![Flowchart_for_recommended_events gaming_app_user_journey](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Рекомендуемые структуры для предопределенных событий
 
@@ -217,6 +223,8 @@ x-zendesk:
 | af\_description | Текст приглашения | Попробуй это приложение! |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Рекомендуемые структуры для настраиваемых событий
 

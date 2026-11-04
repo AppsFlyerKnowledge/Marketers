@@ -37,9 +37,13 @@ SDK AppsFlyer предоставляет функциональность рег
 
 Вы можете регистрировать установки, обновления и сессии (выполнив обязательные шаги ниже), а также дополнительные события в приложении помимо установок приложения (включая покупки в приложении, уровни игры и т. д.) для оценки ROI и уровня вовлеченности пользователей.
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > SDK AppsFlyer для Windows совместим со всеми устройствами <Anchor target="_blank" href="https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide">Universal Windows Platform</Anchor> (UWP), включая мобильные телефоны Windows, ПК, HoloLens и Surface Hub.
+
+<div id="1-integration-steps" />
 
 ## 1. Этапы интеграции
 
@@ -65,12 +69,16 @@ SDK AppsFlyer предоставляет функциональность рег
 
 [![](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)
 
+<div id="important-1" />
+
 > 🚧 **Важно!**
 >
 > AppsFlyer использует пакет Newtonsoft.json. Это стандартная библиотека для парсинга Json в Windows. Вы можете добавить этот пакет через NuGet в Visual Studio. Это устраняет исключение File Not Found в DLL.
 >
 > * В Visual Studio щелкните правой кнопкой мыши References, выберите NuGet-пакет Newtonsoft.json и добавьте его.
 > * Разрешите доступ к интернету в манифесте приложения или используйте вкладку Capabilities в Visual Studio.
+
+<div id="2-sdk-initialization--installation-event-minimum-requirement-for-attributing" />
 
 ## 2. Инициализация SDK & событие установки (минимальное требование для атрибуции)
 
@@ -92,6 +100,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 }
 ```
 
+<div id="recording-app-launchasynchronously" />
+
 ### Асинхронная запись запуска приложения
 
 Вы можете записывать запуск приложения асинхронно. Это полезно в случаях, когда сеть недоступна или не отвечает. Такие случаи можно обрабатывать в функции callback, которую вы передаете методу `TrackAppLaunchAsync`.
@@ -108,6 +118,8 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 }
 ```
 
+<div id="3-in-app-event-recording-api-optional" />
+
 ## 3. 3. API для записи событий в приложении (необязательно)
 
 Этот API позволяет AppsFlyer записывать события после установки. Эти события определяет рекламодатель; помимо имени события они могут включать необязательные значения события. Добавьте следующий код, чтобы записывать события после установки:
@@ -120,6 +132,8 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 * *eventValues* — это словарь параметров события, которые составляют событие. Список рекомендуемых параметров можно найти <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview">здесь</Anchor>.
 * При учете дохода в событиях в приложении используйте имя константного параметра InAppEventParameterName.REVENUE («af\_revenue»), чтобы учитывать доход как часть события в приложении. Этому параметру можно назначить любое числовое значение — положительное или отрицательное.
 
+<div id="example" />
+
 > 📄 **Например**
 >
 > ```csharp
@@ -130,6 +144,8 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 >       eventValues.Add(AppsFlyerLib.AFInAppEventParameterName.CURRENCY, "USD");
 >       tracker.TrackEvent(AppsFlyerLib.AFInAppEventType.ADD_TO_CART, eventValues);
 > ```
+
+<div id="recording-events-asynchronously" />
 
 ### Асинхронная запись событий
 
@@ -149,9 +165,13 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 
 Полный список расширенных событий AppsFlyer в приложении доступен <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview">здесь</Anchor>.
 
+<div id="4-advanced-integration" />
+
 ## 4. Расширенная интеграция
 
 Следующие API являются необязательными и относятся к расширенной интеграции с AppsFlyer SDK.
+
+<div id="41-set-currency-code-optional" />
 
 ### 4.1 Установка кода валюты (необязательно)
 
@@ -165,6 +185,8 @@ USD — значение по умолчанию. Допустимые коды 
 tracker.currencyCode = "GBP";
 ```
 
+<div id="42-getappsflyeruid-optional" />
+
 ### 4.2 getAppsFlyeruid (необязательно)
 
 Для каждой новой установки приложения AppsFlyer создает уникальный идентификатор ID.
@@ -175,6 +197,8 @@ tracker.currencyCode = "GBP";
 public string getAppsFlyerUID()
 ```
 
+<div id="43-customer-user-id-optional" />
+
 ### 4.3 Идентификатор пользователя клиента (необязательно)
 
 Установка собственного идентификатора клиента позволяет сопоставить ваш уникальный идентификатор с идентификатором пользователя AppsFlyer и всеми остальными идентификаторами устройств. Этот идентификатор ID доступен в CSV-отчетах AppsFlyer, а также через API postback для сопоставления с вашими внутренними идентификаторами.
@@ -184,6 +208,8 @@ public string getAppsFlyerUID()
 ```csharp
 tracker.customerUserId = "YOUR_CUSTOMER_USER_ID";
 ```
+
+<div id="44-getconversiondataasync-optional" />
 
 ### 4.4 GetConversionDataAsync (необязательно)
 
@@ -196,6 +222,8 @@ Task.Run(async () =>
    string conversionData = await tracker.GetConversionDataAsync();
 });
 ```
+
+<div id="45-c--cx-integration-example" />
 
 ### 4.5 Пример интеграции C++ / CX
 

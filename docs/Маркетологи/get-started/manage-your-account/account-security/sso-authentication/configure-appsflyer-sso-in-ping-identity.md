@@ -111,6 +111,8 @@ x-zendesk:
 
 <Accordion title="Предоставьте доступ к своим группам и активируйте приложение">
 
+<div id="provide-access-to-your-groups" />
+
 ### Предоставьте доступ к своим группам
 
 1. В меню администратора Ping Identity перейдите в **Connections** > **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** и выберите созданное приложение.  
@@ -118,6 +120,8 @@ x-zendesk:
    ![pi-applications.png](https://files.readme.io/6c8545bc5334747d7da6a090ca745c1b00cfedc3f48e59ccc304c814885cd183-16522614384785.png)
 2. На панели, открывшейся справа, выберите вкладку **Access** и нажмите кнопку Edit.
 3. Выберите созданные группу или группы и нажмите **Save**.
+
+<div id="activate-the-app" />
 
 ### Активируйте приложение
 
@@ -135,6 +139,8 @@ x-zendesk:
 Теперь, когда вы настроили часть IdP, вернитесь в AppsFlyer, чтобы <Anchor target="_blank" href="/marketers/ru/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">завершить настройку</Anchor>. Затем вы можете <Anchor target="_blank" href="/marketers/ru/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process">провести тест</Anchor> , чтобы убедиться, что всё работает.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Смотрите также**
 >

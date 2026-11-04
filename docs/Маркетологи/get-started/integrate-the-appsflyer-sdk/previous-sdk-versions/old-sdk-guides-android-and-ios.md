@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Кратко:** Здесь вы найдете руководства по интеграции SDK AppsFlyer, выпущенные начиная с 2016 года, в формате PDF.
 
+<div id="overview" />
+
 ## Информация о компании
 
 Со временем наши руководства по интеграции SDK тоже обновляются. Их заменяют более новые, более быстрые, гибкие и технологически продвинутые SDK.
@@ -30,6 +32,8 @@ x-zendesk:
 В этой статье вы найдете руководства по интеграции SDK AppsFlyer, выпущенные в  2016 году или даже раньше, в формате PDF.
 
 **Если ваши приложения все еще используют один из этих очень (очень) старых SDK, мы настоятельно рекомендуем обновиться до новейшей версии SDK** для <Anchor target="_blank" href="/marketers/ru/docs/sdk-integration-overview">Android</Anchor> или для <Anchor target="_blank" href="/marketers/ru/docs/sdk-integration-overview">iOS</Anchor>.
+
+<div id="tip" />
 
 > 👍 **Совет**
 >
@@ -55,6 +59,8 @@ x-zendesk:
 * [Руководство по интеграции AppsFlyer SDK для Android V.4.5.0](https://support.appsflyer.com/hc/article_attachments/49929333023889)
 * [Руководство по интеграции AppsFlyer SDK для Android V.4.5.1](https://support.appsflyer.com/hc/article_attachments/49929333024145)
 * [Руководство по интеграции AppsFlyer SDK для Android V.4.6.0](https://support.appsflyer.com/hc/article_attachments/49929333024273)
+
+<div id="ios" />
 
 ## https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
 

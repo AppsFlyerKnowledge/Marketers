@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Скачивайте агрегированные отчеты по пожизненной ценности (LTV), отфильтрованные по дате атрибуции и медиа-источнику.
 
+<div id="aggregate-data-reports" />
+
 ## Отчеты по агрегированным данным
 
 Отчеты по <Anchor target="_blank" href="/marketers/ru/docs/aggregated-and-analytics-reporting-overview#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users">привлечению пользователей</Anchor> и <Anchor target="_blank" href="/marketers/ru/docs/aggregated-and-analytics-reporting-overview#retargeting">ретаргетингу</Anchor> имеют следующие характеристики:
@@ -37,6 +39,8 @@ x-zendesk:
 * Отчеты содержат до 200 тыс. строк.
 * <Anchor target="_blank" href="/marketers/ru/docs/report-generation-quotas-rate-limitations">Ограничение предоставления данных</Anchor>
 
+<div id="download-aggregate-data-reports" />
+
 ### Загрузка отчетов по агрегированным данным
 
 Чтобы скачать отчет:
@@ -45,6 +49,8 @@ x-zendesk:
 2. [Необязательно] Выберите медиа-источник.
 3. Выберите диапазон дат события атрибуции.
 4. Выберите отчет, нажмите **Скачать**.
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

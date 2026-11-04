@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Интеграция аккаунта X Ads с AppsFlyer для отображения данных об атрибуции по всем кампаниям X Ads.
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## Подключение аккаунта X Ads к AppsFlyer
 
 <Accordion title="Посмотреть">
@@ -31,6 +33,8 @@ x-zendesk:
 </Accordion>
 
 <Accordion title="Прочитать">
+
+<div id="before-you-begin" />
 
 > 📘 **Прежде чем начать**
 >
@@ -64,6 +68,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="x-ads-attribution-setup" />
+
 ## Настройка атрибуции X Ads
 
 Подробное описание страницы настроек партнера см. <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner">здесь</Anchor>.
@@ -74,11 +80,15 @@ x-zendesk:
 
 На вкладке **Интеграция** есть несколько разделов, которые описаны ниже. Чтобы задать настройки для партнера, необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активировать этого партнера</Anchor> при первом посещении вкладки.
 
+<div id="ad-account-connected" />
+
 ### Ad Account Connected (Связанный рекламный аккаунт)
 
 Выберите аккаунты, для которых нужно активировать атрибуцию.
 
 ![Twitter_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
+
+<div id="click-through-attribution" />
 
 ### Атрибуция по кликам
 
@@ -88,6 +98,8 @@ x-zendesk:
 
 ![Twitter_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### Окно лукбэк на основе просмотров
 
 На этой шкале можно задать **максимальное время от показа до установки**. К X Ads атрибутируются только те установки (первые запуски), которые произошли в рамках окна атрибуции после показа рекламы, при условии отсутствия других кликов по объявлению, относящихся к этой установке.
@@ -96,19 +108,27 @@ x-zendesk:
 
 ![Twitter_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
 
+<div id="re-engagement-settings" />
+
 ### Настройки повторного вовлечения
 
 Для ретаргетинговых кампаний на X Ads AppsFlyer поддерживает **Re-engagement** только измерение. Это взаимодействие с кампанией повторного таргетинга со стороны пользователя, у которого на момент взаимодействия уже было установлено приложение. **В настоящее время измерение повторной атрибуции не поддерживается в X Ads.**
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > Убедитесь, что для приложения активирован ретаргетинг на странице "App Settings" (Настройки приложения). Для получения подробной информации нажмите <Anchor target="_blank" href="/marketers/ru/docs/app-settings#reengagement-attribution">здесь</Anchor>.
+
+<div id="re-engagement-click-through-lookback-window" />
 
 #### Окно атрибуции повторного вовлечения по кликам
 
 Установите продолжительность **окна атрибуции повторного вовлечения по кликам** — максимальный период времени после клика по объявлению, в течение которого пользователя, на которого нацелен ретаргетинг, можно атрибутировать этому объявлению. Это значение можно задать в часах (до 23) или днях (1–30).
 
 ![twitter-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### Окно атрибуции повторного вовлечения по просмотрам
 
@@ -118,11 +138,15 @@ x-zendesk:
 
 ![twitter-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
 
+<div id="re-engagement-window" />
+
 #### Окно повторного вовлечения
 
 Установите продолжительность **Окно повторного вовлечения** — временной интервал, в течение которого внутренние события приложения пользователя будут атрибутироваться медиа-источнику ретаргетинга. Это значение можно задавать в днях (от 1 до 90), часах (до 23) или даже на весь период использования приложения.
 
 ![Twitter-reengagement-window.png](https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png)
+
+<div id="in-app-event-postback-settings" />
 
 ### Настройки постбэков о внутренних событиях приложений
 
@@ -154,6 +178,8 @@ x-zendesk:
 <Accordion title="Вкладка «Ссылки атрибуции»">
 
 В X Ads ссылки атрибуции не используются.
+
+<div id="note" />
 
 > 📘 **Примечание**
 >
@@ -195,6 +221,8 @@ x-zendesk:
 
 Используйте эти переключатели, чтобы уполномочить рекламную сеть самостоятельно обрабатывать конфигурацию для вашего приложения:
 
+<div id="ad-network-permissions" />
+
 ### Разрешения для рекламной сети
 
 * **Разрешение настраивать интеграцию**: разрешить партнеру управлять настройками на вкладке интеграции (за исключением постбэков по внутренним событиям приложений).
@@ -207,11 +235,15 @@ x-zendesk:
 
 Подробнее о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#permissions-tab">предоставлении разрешений рекламной сети</Anchor>.
 
+<div id="agency-permissions" />
+
 ### Разрешения агентства
 
 См. подробнее о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#разрешения-агентства">предоставлении разрешений для агентства.</Anchor>
 
 </Accordion>
+
+<div id="advanced-x-ads-setup-video" />
 
 ## Видео о расширенной настройке XAds
 

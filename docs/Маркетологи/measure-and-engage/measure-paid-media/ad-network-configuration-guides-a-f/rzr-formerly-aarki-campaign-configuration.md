@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="RZR Logo Horizontal gradient black wordmark (3).png" src="https://files.readme.io/b1064bdec0e836399c583c3f55e5e79a81380a9a8d86eeaee19391b6d09f2bbd-small-46161100230545.png" width="58.83%" />
 
+<div id="setting-up-rzr" />
+
 ## Настройка RZR
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -43,13 +45,19 @@ x-zendesk:
 
 <Accordion title="Вкладка «Интеграция»">
 
+<div id="activate-partner" />
+
 ### Активация партнера
 
 <span id="01ECJ9TJKEFXN53XDEBJ5Z92SS"></span>При **первом посещении** нужно перевести кнопку ***Активировать партнера*** в положение «Включено», чтобы стала доступна настройка параметров вкладки интеграции. Кнопка ДОЛЖНА оставаться в положении «Включено», пока вы работаете с этим партнером. Дополнительная информация по активации партнеров: нажмите <Anchor target="_blank" href="/marketers/ru/docs/user-level-data-retention">здесь</Anchor>.
 
+<div id="note" />
+
 > 📘 **Примечание:**
 >
 > Как сеть, ориентированная на все установки, RZR предпочитает получать постбэки для всех новых установок вашего приложения из любого источника, включая органические. Рекомендуется выбрать **События, атрибутированные любому партнеру**, чтобы отправлять в RZR постбэки по всем установкам.
+
+<div id="general-settings" />
 
 ### Общие настройки
 
@@ -61,11 +69,15 @@ x-zendesk:
 
 <span id="01ECJ9TJKFE4E8GZQ2EN3Z1SM4"></span>Установите этот переключатель в положение «Включено», если хотите атрибутировать установки по просмотрам в RZR. На вкладке «Ссылка атрибуции» (описана ниже) имеется шкала для окна атрибуции по просмотрам.
 
+<div id="default-postbacks" />
+
 ### Постбэки по умолчанию
 
 <span id="01ECJ9TJKFT13WB1T328ET3PGC"></span>Автоматически отправляйте постбэки в RZR после установок и повторного вовлечения пользователей. В этом разделе можно определить **источник пользователей**, который позволяет отправлять постбэки.
 
 <span id="01ECJ9TJKFQH37DQZ3V3NAESRF"></span>Выберите **Только события, атрибутированные этому партнеру** для событий, поступающих только от пользователей, атрибутированных RZR. Выберите **События, атрибутированные любому партнеру или органические**, чтобы вся ваша база пользователей была доступна для отчетности в RZR.
+
+<div id="in-app-events-settings" />
 
 ### In-App Events Settings (Настройки внутренних событий приложения)
 
@@ -100,6 +112,8 @@ x-zendesk:
 
 <span id="01ECJ9TJKFTGNEZ68AR6DGXJNA"></span>На этой вкладке есть несколько разделов:
 
+<div id="attribution-link-parameters" />
+
 ### Параметры ссылки атрибуции
 
 <span id="01ECJ9TJKFJRJ2BYN069CK80C8"></span>В этом разделе можно выбрать параметры для добавления в ссылку атрибуции.
@@ -113,6 +127,8 @@ x-zendesk:
 * <span id="01ECJ9TJKGQPS0GAY5SY562VFS"></span>**Subscriber Parameters** — используйте любой из 5 параметров подписчика, чтобы вставить полезные значения. Обратите внимание, что эти параметры анализируются и отображаются в отчете о сырых данных, что делает их очень удобными для агрегации или фильтрации данных.**Параметры ссылки атрибуции:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 <span id="01ECJ9TJKGQN0Y1H6F2WNHRBCV"></span>Если нужно добавить в ссылку атрибуции другой параметр, просто введите его в поле нового параметра. Дополнительные сведения <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">**<span id="01ECJ9TJKG3AQCMW2FDDZ7HWWB"></span>о структуре и параметрах ссылки атрибуции AppsFlyer**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Настройки ретаргетинга
 
@@ -144,6 +160,8 @@ x-zendesk:
 
 <span id="01ECJ9TJKH449C02X1Y3ESR48Y"></span>**Параметр ссылки атрибуции:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Атрибуция по кликам
 
 <span id="01ECJ9TJKHGWANE9EGZZ0KKEX9"></span>На этой шкале можно задать **максимальное время от клика до установки**. К RZR атрибутируются только те установки (первые запуски), которые произошли в пределах окна атрибуции/лукбэка.
@@ -152,9 +170,13 @@ x-zendesk:
 
 <span id="01ECJ9TJKHY557S7J91YTE5VH8"></span>Подробные сведения об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows"><span id="01ECJ9TJKHWEDC7RP2ZHHPFDNV"></span>окне атрибуции по кликам см. здесь</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Ссылка атрибуции для клика
 
 <span id="01ECJ9TJKJ6TJBPEP5JNEPYTVB"></span>Это ссылка атрибуции, которая содержит все заданные для нее настройки. Отправьте ее в RZR для активации, когда лиды кликают по соответствующей рекламе.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Окно лукбэк на основе просмотров
 
@@ -165,6 +187,8 @@ x-zendesk:
 <span id="01ECJ9TJKJB20VJH63A8NK3KGB"></span>**Параметр ссылки атрибуции:** af\_viewthrough\_lookback
 
 <span id="01ECJ9TJKJNTQ7AJVYKVWYMJNZ"></span>Подробные сведения об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows"><span id="01ECJ9TJKJX8GHDCAW0QQYD4BV"></span>атрибуции по просмотрам см. здесь</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Ссылка на атрибуцию показов
 
@@ -183,6 +207,8 @@ AppsFlyer получает информацию о затратах через A
 * Следуйте <Anchor target="_blank" href="/marketers/ru/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">этим инструкциям по интеграции</Anchor>.
 
 <Anchor target="_blank" href="/marketers/ru/docs/set-up-roi360-cost-api-to-measure-cost-data#статус-api-затрат">Просмотрите статус вашего API данных о затратах</Anchor> и время, когда AppsFlyer получил соответствующие данные о затратах в последний раз, либо на дэшборде статуса интеграции затрат (и доходов от рекламы), либо на дэшборде отдельной рекламной сети. 
+
+<div id="warning" />
 
 #### Предупреждение
 
@@ -206,6 +232,8 @@ AppsFlyer получает информацию о затратах через A
 
 <span id="01ECJ9TJKQFJM45QTAMC6AJQW3"></span>Используйте эти переключатели, чтобы уполномочить рекламную сеть самостоятельно обрабатывать конфигурацию для вашего приложения:
 
+<div id="ad-network-permissions" />
+
 ### Ad Network Permissions (Разрешения для рекламной сети)
 
 * <span id="01ECJ9TJKQAHY9CZ2H3W09GQPZ"></span>***<span id="01ECJ9TJKQXT4HNE0HKH13F4SX"></span>Разрешить настройку интеграции*** — разрешить партнеру настраивать вкладку интеграции (за исключением постбэков по внутренним событиям приложения)
@@ -217,6 +245,8 @@ AppsFlyer получает информацию о затратах через A
 * <span id="01ECJ9TJKQZJGSVZMKFDHE2ACJ"></span>***Разрешить доступ к панели управления Protect360*** — доступ предоставляется только к собственным данным Protect360 этого партнера, при условии что эта функция активирована для рекламодателя.
 
 <span id="01ECJ9TJKQJ0Y1QQK4EM92C06V"></span>См. дополнительные сведения о предоставлении <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#permissions-tab"><span id="01ECJ9TJKQZ5ADC4QSTHP0KN95"></span>разрешений рекламной сети</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Разрешения агентства
 

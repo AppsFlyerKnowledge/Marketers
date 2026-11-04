@@ -27,6 +27,8 @@ x-zendesk:
 
 > **Краткий обзор:** Узнайте, как с помощью инкрементальности измеряется инкрементальный прирост от ретаргетинговых кампаний.
 
+<div id="what-is-incrementality" />
+
 ## Что такое инкрементальность?
 
 Лучше всего понять, что такое инкрементальный анализ, можно на примере:
@@ -43,11 +45,15 @@ x-zendesk:
 
 Эта разница между общим количеством конверсий и теми, которые произошли бы в любом случае, называется **инкрементальный прирост** (или иногда просто **прирост**), и она имеет решающее значение для определения истинной ценности кампании. Измерить прирост бывает довольно сложно, но именно для этого и предназначена функция измерения инкрементальности от AppsFlyer.
 
+<div id="incrementality-experiments" />
+
 ### Эксперименты инкрементальности
 
 Инкрементальность позволяет преодолеть трудности измерения прироста, позволяя создавать научно обоснованные эксперименты для сравнения поведения схожих групп. Эти группы различаются только тем, что некоторые группы (**тестовые**) подвергаются воздействию вашей кампании, а одна группа (**контрольная**) — нет.
 
 <Anchor target="_blank" href="/marketers/ru/docs/run-an-incrementality-for-remarketing-experiment">Узнайте больше о создании и проведении экспериментов инкрементальности</Anchor>
+
+<div id="calculation-methodology" />
 
 ## Методология расчета
 
@@ -64,9 +70,13 @@ x-zendesk:
 
 Хотя **методология, основанная на охвате, предпочтительнее** для оценки эффективности кампании, ее расчет требует измерения точек данных, предоставляемых не всеми рекламными сетями. Для этих сетей вместо этого используется методология «intent-to-treat».
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > До 16 декабря 2021 года прирост рассчитывался исключительно по методу «intent-to-treat». Однако данные за более ранние даты были обновлены, чтобы использовать прирост на основе охвата, где это применимо. Поэтому вы можете пересмотреть исторические эксперименты, чтобы проанализировать их результаты в свете новой методологии.
+
+<div id="itt-based-lift" />
 
 #### Прирост на основе ITT
 
@@ -83,6 +93,8 @@ x-zendesk:
 **Интерпретация результатов**
 
 Предположение о том, что все члены тестовой группы действительно были охвачены кампанией, часто приводит к низким коэффициентам конверсии и, как следствие, к низкому инкрементальному приросту.
+
+<div id="reach-based-lift" />
 
 #### Прирост на основе охвата
 
@@ -102,6 +114,8 @@ x-zendesk:
 **Интерпретация результатов**
 
 Поскольку при расчете прироста на основе охвата учитываются только те члены тестовой группы, которые действительно были охвачены кампанией, сети, которые измеряются с помощью инкрементальности на основе охвата, обычно показывают увеличенные результаты (положительный прирост становится намного выше, а отрицательный — намного ниже).
+
+<div id="best-practices" />
 
 #### Практические рекомендации
 
@@ -134,6 +148,8 @@ x-zendesk:
 
 Для [показателей на уровне тестовой группы](/docs/incrementality-for-remarketing-overview#::2c5f08ec) (в отличие от [показателей для каждого пользователя](/docs/incrementality-for-remarketing-overview#::6143ff4f)) прирост рассчитывается на основе **масштабированной контрольной группы**. Другими словами, размер контрольной группы корректируется в соответствии с размером тестовой группы для каждого медиа-источника.
 
+<div id="example" />
+
 > 📄 **Пример**
 >
 > Предположим следующий сценарий:
@@ -151,6 +167,8 @@ x-zendesk:
 > Прирост будет рассчитан исходя из масштабированной контрольной группы в 100 человек и 22 дополнительных конверсий.
 
 </Accordion>
+
+<div id="incrementality-dashboard" />
 
 ## Дэшборд инкрементальности
 
@@ -362,6 +380,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="raw-data-reports" />
+
 ## Отчеты по сырым данным
 
 Используйте отчеты инкрементальности по сырым данным для анализа взаимодействия пользователей с кампаниями ремаркетинга:
@@ -405,6 +425,8 @@ x-zendesk:
 
 Доступность полей зависит от типа отчета, как указано ниже:
 
+<div id="fields-unique-to-incrementality-per-report-type" />
+
 #### Поля, уникальные для инкрементальности (по типам отчета)
 
 | Поле | Описание | Дата первого показа | Внутренние события приложения | Сессии | Удаления |
@@ -418,11 +440,15 @@ x-zendesk:
 | <span id="timestamp"></span>временная метка | Временная метка события ГГГГ-ММ-ДД ЧЧ:ММ |  | Д | Д |  |
 | <span id="app_ids"></span>app\_ids | Идентификаторы приложений, связанные с правилами аудитории | Д |  |  |  |
 
+<div id="other-incrementality-report-fields-per-report-type" />
+
 #### Другие поля отчета инкрементальности (по типам отчета)
 
 <table><thead><tr><th>Поле</th><th>Отображаемое название\*</th><th>Дата первого показа</th><th>Внутренние события приложения</th><th>Сессии</th><th>Удаления</th></tr></thead><tbody><tr><td><span id="advertising_id"></span>рекламный_идентификатор</td><td>Рекламный идентификатор (GAID)</td><td>Д</td><td>Д</td><td>Д</td><td>Д</td></tr><tr><td><span id="android_id"></span>android_id</td><td>Идентификатор Android</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="app_id"></span>app_id (идентификатор приложения)</td><td>Идентификатор приложения</td><td>Д</td><td>Д</td><td>Д</td><td>Д</td></tr><tr><td><span id="app_name"></span>имя_приложения</td><td>Название приложения</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="app_version"></span>версия_приложения</td><td>Версия приложения</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="appsflyer_id"></span>appsflyer_id</td><td>Идентификатор AppsFlyer</td><td> </td><td>Д</td><td>Д</td><td>Д</td></tr><tr><td><span id="revenue_alt"></span>revenue_alt</td><td>Валюта приложения</td><td> </td><td>Д</td><td> </td><td> </td></tr><tr><td><span id="bundle_id"></span>Авторизовано</td><td>Идентификатор пакета</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="country"></span>Страна</td><td>Код страны</td><td> </td><td>Д</td><td>Д</td><td>Д</td></tr><tr><td><span id="currency"></span>currency (валюта)</td><td>Код валюты</td><td> </td><td>Д</td><td>Д</td><td>Д</td></tr><tr><td><span id="customer_user_id"></span>идентификатор_пользователя_клиента</td><td>Идентификатор пользователя клиента</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="brand"></span>brand</td><td>Бренд устройства</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="device_category"></span>категория_устройства</td><td>Категория устройства</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="model"></span>model</td><td>Модель устройства</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="device_model"></span>device_model</td><td>Модель устройства</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="device_type"></span>тип_устройства</td><td>Тип устройства</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="event_name"></span>имя_события</td><td>Название события</td><td> </td><td>Д</td><td>Д</td><td>Д</td></tr><tr><td><span id="event_revenue"></span>event_revenue</td><td>Доход от события</td><td> </td><td>Д</td><td> </td><td> </td></tr><tr><td><span id="event_revenue_currency"></span>event_currency</td><td>Валюта выручки от события</td><td> </td><td>Д</td><td> </td><td> </td></tr><tr><td><span id="event_revenue_u_s_d"></span>event_revenue_u_s_d</td><td>Выручка от события в долларах США</td><td> </td><td>Д</td><td> </td><td> </td></tr><tr><td><span id="event_time"></span>время_события</td><td>Время события</td><td> </td><td>Д</td><td>Д</td><td>Д</td></tr><tr><td><span id="event_value"></span>event_value</td><td>Значение события</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="idfa"></span>IDFA</td><td>IDFA</td><td>Д</td><td>Д</td><td>Д</td><td>Д</td></tr><tr><td><span id="idfv"></span>IDFV</td><td>IDFV</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="imei"></span>imei</td><td>imei</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="is_purchase_validated"></span>is_purchase_validated</td><td>Подтвержден ли чек</td><td> </td><td>Д</td><td> </td><td> </td></tr><tr><td><span id="os_version"></span>os_version</td><td>Версия ОС</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td><span id="platform"></span>platform</td><td>Платформа</td><td> </td><td>Д</td><td>Д</td><td>Д</td></tr><tr><td><span id="sdk_version"></span>версия_sdk</td><td>Версия SDK</td><td> </td><td>Д</td><td>Д</td><td> </td></tr><tr><td colspan="6"><span id="-according-to-raw-data-specification"></span>\* <a href="./raw-data-field-dictionary#data-fields-dictionary" target="_blank">В соответствии со спецификацией сырых данных</a> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="incrementality-specifications-and-limitations" />
 
 ## Спецификации и ограничения инкрементальности
 
@@ -439,6 +465,8 @@ x-zendesk:
 | Органические данные | Да |
 | События S2S | Чтобы в Инкрементальности были измерены <Anchor target="_blank" href="/marketers/ru/docs/server-to-server-events-api-for-mobile-s2s-mobile#api-событий-от-сервера-к-серверу-для-мобильных-приложений">События S2S</Anchor>, они должны включать в свою полезную нагрузку идентификатор рекламы (IDFA для iOS, GAID для Android). |
 | Часовой пояс | UTC |
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

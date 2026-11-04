@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Sina Weibo Ads, интегрированный партнер AppsFlyer среди рекламных сетей, — одна из самых популярных платформ социальных сетей в Китае.
 
+<div id="setting-up-sina-weibo-ads" />
+
 ## Настройка Sina Weibo Ads
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -44,6 +46,8 @@ x-zendesk:
 <Accordion title="Вкладка «Интеграция»">
 
 Этот раздел используется для подключения партнера к AppsFlyer. Здесь также отображаются сообщения рекламодателю относительно конкретного партнера.
+
+<div id="activate-partners" />
 
 ### Активация партнеров
 
@@ -70,6 +74,8 @@ x-zendesk:
 
 На этой вкладке есть несколько разделов:
 
+<div id="attribution-link-parameters" />
+
 ### Параметры ссылки атрибуции
 
 В этом разделе можно выбрать параметры для добавления в ссылку атрибуции.
@@ -90,6 +96,8 @@ x-zendesk:
 [![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
 
 Если нужно добавить в ссылку атрибуции другой параметр, просто введите его в поле нового параметра. Дополнительные сведения см. в статье <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">**Структура и параметры ссылки атрибуции в AppsFlyer**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Настройки ретаргетинга
 
@@ -131,6 +139,8 @@ x-zendesk:
 
 Прочитайте [как настроить ретаргетинг](/docs/sina-weibo-ads-campaign-configuration#создание-ретаргетинговых-кампаний-на-дэшборде-weibo-ads) на дэшборде Sina Weibo.
 
+<div id="click-through-attribution" />
+
 ### Атрибуция по кликам
 
 Этот ползунок позволяет задать **максимальное время от клика до установки**. К Sina Weibo Ads могут быть атрибутированы только установки (первые запуски), которые происходят в течение окна атрибуции/лукбэка.
@@ -140,6 +150,8 @@ x-zendesk:
 Подробные сведения об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">окне атрибуции по кликам см. здесь</Anchor>.
 
 [![настройки переходов по кликам Sina Weibo](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)
+
+<div id="click-attribution-link" />
 
 ### Ссылка атрибуции для клика
 
@@ -185,6 +197,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="setting-appsflyer-attribution-on-weibo-ads-dashboard" />
+
 ## Настройка атрибуции AppsFlyer на дэшборде Weibo Ads
 
 Войдите в Sina Weibo Ads по этой ссылке: [https://ad.weibo.com/](https://ad.weibo.com)
@@ -201,6 +215,8 @@ Android: введите ссылку на страницу загрузки APK 
 
 iOS: введите ссылку на iTunes.
 
+<div id="setting-the-attribution-link" />
+
 ### Настройка ссылки атрибуции
 
 Перейдите на страницу **Промоакции** и создайте новую серию объявлений
@@ -211,6 +227,8 @@ iOS: введите ссылку на iTunes.
 
 [![](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)
 
+<div id="setup-ad-series" />
+
 ### Настройка серии объявлений
 
 Выберите приложение, которое хотите продвигать:
@@ -220,6 +238,8 @@ iOS: введите ссылку на iTunes.
 Задайте характеристики аудитории, бюджет и периоды продвижения:
 
 [![](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)
+
+<div id="uploading-ad-creatives-and-set-the-attribution-link" />
 
 ### Загрузка рекламных креативов и настройка ссылки атрибуции
 
@@ -236,6 +256,8 @@ Weibo предлагает четыре формата рекламы для п�
 
 Введите ссылку атрибуции AppsFlyer
 
+<div id="example" />
+
 > 📄 **Пример**
 >
 > ```http
@@ -247,10 +269,14 @@ Weibo предлагает четыре формата рекламы для п�
 
 Завершите все дополнительные настройки и опубликуйте рекламное объявление.
 
+<div id="note" />
+
 > 📘 **Примечание:**
 >
 > * Вы можете просмотреть формат рекламы в правой верхней части страницы Ad Creative Setting.
 > * Если вы не используете диплинкинг в рекламной кампании, оставьте поле глубокой ссылки пустым.
+
+<div id="creating-retargeting-campaigns-on-weibo-ads-dashboard" />
 
 ## Создание ретаргетинговых кампаний на дэшборде Weibo Ads
 
@@ -264,6 +290,8 @@ Weibo предлагает четыре формата рекламы для п�
 
    ![sina-weibo-retargeting-deeplink.png](https://files.readme.io/dc5666893ff99dcb808a15aa2e41396b359617e2f6271f246a10893d4b05eebe-360002715557.png)
 
+   <div id="example-1" />
+
    > 📄 **Пример**
    >
    > ```http
@@ -274,6 +302,8 @@ Weibo предлагает четыре формата рекламы для п�
 
    ![sina-weibo-retargeting-links.png](https://files.readme.io/edd0861728e19a0bc0e23641161c2365cf5c41eeccaa801bd4e8c3392215fe83-360002799598.png)
 
+   <div id="example-2" />
+
    > 📄 **Пример**
    >
    > ```http
@@ -281,6 +311,8 @@ Weibo предлагает четыре формата рекламы для п�
    > &md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false&is_retargeting=true
    > ```
 
+
+   <div id="note-1" />
 
    > 📘 **Примечание:**
    >

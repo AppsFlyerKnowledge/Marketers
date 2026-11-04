@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Кратко:** Appodeal, интегрированный партнер AppsFlyer, предоставляет владельцам приложений атрибуцию по кликам и универсальное решение для монетизации рекламы. Доход от рекламы отображается с детализацией на уровне пользователя.
 
+<div id="setting-up-appodeal-integration" />
+
 ## Настройка интеграции с Appodeal
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png)

@@ -24,7 +24,11 @@ x-zendesk:
 ---
 > **Кратко:** Оптимизируйте кампании Apple Ads с помощью Bidalgo. После настройки AppsFlyer отправляет постбэки в Bidalgo.
 
+<div id="enabling-sending-postbacks-to-bidalgo-apple-ads-marketing-partner" />
+
 ## Включение отправки постбэков в Bidalgo (маркетинговому партнеру Apple Ads)
+
+<div id="note" />
 
 > 📘 **Примечание:**
 >
@@ -34,6 +38,8 @@ x-zendesk:
 
 * **Рекламодатели:** следуйте инструкциям ниже, чтобы включить атрибуцию для Apple Ads.
 * **Агентства:** <Anchor target="_blank" href="/marketers/ru/docs/apple-ads-integration-setup#agency-setup">следуйте этим инструкциям</Anchor>, чтобы включить атрибуцию для Apple Ads.
+
+<div id="configuring-bidalgo" />
 
 ### Настройка Bidalgo
 
@@ -56,9 +62,13 @@ x-zendesk:
    5. Введите **идентификатор кампании Apple Ads** в Bidalgo, полученный на предыдущем шаге. Введите только цифры.
    6. Нажмите **Save** (Сохранить).
 
+<div id="default-postbacks" />
+
 ### Постбэки по умолчанию
 
 Установки и повторные вовлечения отправляются автоматически после активации партнера.
+
+<div id="configuring-in-app-events-postbacks" />
 
 ### Настройка постбэков по событиям в приложении
 

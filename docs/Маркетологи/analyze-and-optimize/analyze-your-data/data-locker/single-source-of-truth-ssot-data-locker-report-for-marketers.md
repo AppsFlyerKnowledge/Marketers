@@ -23,13 +23,19 @@ x-zendesk:
 
 <span id="ssot-reports-in-data-locker"></span>Примечание: В отчёте по SSOT от Data Locker содержатся данные на основе LTV, а не активности. Это означает, что данные отражают пожизненную ценность пользователей во всех точках взаимодействия, а не их активность в приложении или событии.
 
+<div id="what-is-data-locker" />
+
 ## Что такое Data Locker
 
 Data Locker — это безопасное решение, которое передает данные непосредственно на основные облачные платформы, такие как AWS, GCS и Snowflake. Это позволяет маркетологам легко интегрировать и использовать данные во внутренних системах бизнес-аналитики для комплексного анализа и отчетности. <Anchor target="_blank" href="/marketers/ru/docs/data-locker-advertiser-reports?query=data%20locker">Подробнее</Anchor>.
 
+<div id="what-is-single-source-of-truth-ssot" />
+
 ## Что такое единый источник истины (SSOT)
 
 Решение «Единый источник истины» (SSOT) призвано решить проблему фрагментации данных, предлагая единый и точный обзор эффективности кампаний для приложений путем объединения данных из различных методов атрибуции, таких как сопоставление идентификаторов и SKAN. <Anchor target="_blank" href="/marketers/ru/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Подробнее</Anchor>.
+
+<div id="benefits-of-ssot-reports-in-data-locker" />
 
 ## Преимущества отчетов SSOT в Data Locker
 
@@ -66,6 +72,8 @@ Data Locker — это безопасное решение, которое пе�
 | Актуальность данных | <ul><li>Ежедневно.</li><li>Метрики рассчитываются на основе данных, доступных в полночь по UTC, то есть на конец дня.</li><li>SLA: Новые отчеты доступны в Data Locker к 16:00 UTC. Каждый день создается новая версия для последних 15 дат установки. [Подробнее](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy)</li></ul> |
 
 </Accordion>
+
+<div id="directory-structure" />
 
 ## Структура каталогов
 
@@ -135,6 +143,8 @@ bucket
 * version: Временная метка Unix, указывающая, когда была создана версия.
 
 </Accordion>
+
+<div id="report-structure" />
 
 ## Структура отчета
 
@@ -530,6 +540,8 @@ AppsFlyer моделирует данные, которые не могут пр
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 ## Информация для разработчиков систем бизнес-аналитики
 
 **Объем данных в отчете:**
@@ -555,6 +567,8 @@ AppsFlyer моделирует данные, которые не могут пр
 <div id="days-postattribution" />
 
 <Accordion title="Дни после атрибуции">
+
+<div id="important" />
 
 > 🚧 **Важно!**
 >

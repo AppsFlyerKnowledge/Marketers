@@ -27,13 +27,19 @@ x-zendesk:
 | [<Image alt="Google_Play_Store.png" src="https://files.readme.io/d3e90dff6b5b007164d1ee1449cf3b9b39f52b6b710034137b4ab7640ce2dc57-360001467125.png" width="299px" />](https://play.google.com/store/apps/details?id=com.appsflyer.analytics) | [<Image alt="ios_App_Store.png" src="https://files.readme.io/516cd93b8a642bdf290e774936457c774e61f2493d3508a050c18c62378d2e7b-360001467145.png" width="299px" />](https://go.onelink.me/RJn0/support) |
 | --- | --- |
 
+<div id="the-appsflyer-mobile-app" />
+
 ## Мобильное приложение AppsFlyer
+
+<div id="log-in" />
 
 ### Вход
 
 Чтобы войти в приложение, введите свои учетные данные или войдите через Google.
 
 [![](https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png)](https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png)
+
+<div id="my-apps" />
 
 ### Мои приложения
 
@@ -42,6 +48,8 @@ x-zendesk:
 На этом экране перечислены все приложения в вашем аккаунте. Вы можете легко отфильтровать приложения с разных платформ (iOS, Android, Windows) и даже отфильтровать приложения, ожидающие публикации.
 
 [![](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)
+
+<div id="app-overview-ltv" />
 
 ### Обзор приложения (LTV)
 
@@ -68,6 +76,8 @@ x-zendesk:
 
 [![](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)
 
+<div id="filters" />
+
 ### Фильтры
 
 Кнопка фильтра в правом верхнем углу экрана позволяет изменить и отфильтровать отчет.
@@ -76,11 +86,15 @@ x-zendesk:
 
 [![](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)
 
+<div id="date-selector" />
+
 ### Выбор даты
 
 Нажатие на диапазон дат открывает окно выбора даты. В окне выбора дат можно быстро переключаться между предустановленными периодами или задать собственный диапазон (выберите нужные даты в календаре).
 
 [![](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)
+
+<div id="account-overview" />
 
 ### Обзор аккаунта
 
@@ -89,6 +103,8 @@ x-zendesk:
 Нажатие на название приложения из списка позволяет глубже изучить обзор приложения для этого приложения, сохраняя текущие настроенные даты и фильтры.
 
 ![Account_Overview.png](https://files.readme.io/2d425fcb0f53c794a8eeaddd1aebfa8172e51d634d5f90bed74016663adef664-115010568289.png)
+
+<div id="known-limitations" />
 
 ### Известные ограничения
 

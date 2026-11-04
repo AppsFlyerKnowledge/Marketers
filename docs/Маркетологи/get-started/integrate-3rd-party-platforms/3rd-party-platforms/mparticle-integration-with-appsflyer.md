@@ -31,6 +31,8 @@ x-zendesk:
 >
 > <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">Некоторые медиа-источники</Anchor> ограничивают передачу данных третьим лицам. Поэтому постбэки для ограниченных событий не будут отправляться этому партнеру, независимо от настроенной отправки постбэков.
 
+<div id="event-integrations" />
+
 ## Интеграции событий
 
 Этот документ содержит сведения о том, как активировать данные событий из mParticle в AppsFlyer.
@@ -38,6 +40,8 @@ x-zendesk:
 1. Клиенты mParticle должны интегрировать набор AppsFlyer Kit в своё приложение. SDK mParticle инициализирует SDK AppsFlyer, а также перенаправляет все необходимые события жизненного цикла в SDK AppsFlyer.
 
 2. Подробнее о том, как настроить AppsFlyer kit с SDK mParticle в вашем приложении, см. в репозиториях GitHub SDK для <Anchor target="_blank" href="https://github.com/mParticle/mParticle-apple-SDK">iOS</Anchor> и <Anchor target="_blank" href="https://github.com/mParticle/mparticle-android-sdk">Android</Anchor>.
+
+<div id="configure-the-appsflyer-event-integration" />
 
 ### Настройка интеграции событий AppsFlyer
 
@@ -87,6 +91,8 @@ AppsFlyer теперь отображается как подключенный 
 
 ![AppsFlyer отображается как подключенный вывод](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
 
+<div id="feed-integrations" />
+
 ## Интеграции фидов
 
 В этом разделе описано, как подключить поток данных из AppsFlyer к mParticle.
@@ -118,6 +124,8 @@ AppsFlyer теперь отображается как подключенный 
 7. Завершите настройку в дэшборде AppsFlyer, используя предоставленные данные аутентификации.
 
 ![Настройка аутентификации в дэшборде AppsFlyer](https://files.readme.io/3c751a38c3891f73485375d75eacde3e07f86969a7d44cd33bf29ace6bfa1875-115015478566.png)
+
+<div id="deferred-deep-linking" />
 
 ## Отложенная глубинная ссылка (диплинкинг)
 
@@ -202,6 +210,8 @@ AttributionListener myListener = new AttributionListener() {
 </Tab>
 </Tabs>
 
+<div id="appsflyermparticle-use-cases" />
+
 ### Сценарии использования AppsFlyer/mParticle
 
 | Кейс использования | Окно повторного вовлечения | Метод SDK AppsFlyer | Метод mParticle-AF Kit |
@@ -212,6 +222,8 @@ AttributionListener myListener = new AttributionListener() {
 | Отложенный диплинкинг | Android; | onConversionDataSuccess | checkForDeepLink |
 | Ссылки Android-приложения | Android; |  | continueUserActivity |
 | Открытие приложения | Android; | onAppOpenAttribution | checkForDeepLink |
+
+<div id="handling-user-flags" />
 
 ### Обработка пользовательских флагов
 
@@ -232,6 +244,8 @@ AppsFlyer также позволяет показывать персонали�
 AppsFlyer использует ***UserDefaults*** в iOS и ***Shared Preferences*** в Android, чтобы указать, открывает ли пользователь приложение впервые и его нужно перенаправить на соответствующую страницу, или приложение уже открывалось и пользователь уже был направлен на эту страницу. Для этого значение `alreadyLoggedAppsflyerConversionData` считывается из UserDefaults/ SharedPreferences и записывается туда, чтобы значение ***af\_dp*** не проверялось при первом запуске.
 
 Подробнее о показе персонализированного контента при диплинкинге <Anchor target="_blank" href="/marketers/ru/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">читайте здесь</Anchor>.
+
+<div id="enabling-appsflyer-uninstall-measurement-in-mparticle" />
 
 ## Включение измерения удалений AppsFlyer в mParticle
 

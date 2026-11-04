@@ -62,6 +62,8 @@ x-zendesk:
 ---
 > **Краткий обзор:**  Узнайте о структуре и параметрах ссылок атрибуции AppsFlyer.
 
+<div id="overview" />
+
 ## Обзор
 
 Ссылки атрибуции позволяют рекламодателям собирать данные о вовлечении пользователей с рекламой. Ссылки атрибуции добавляются к рекламе и уведомляют AppsFlyer, когда пользователи взаимодействуют с рекламой. Вовлечение может происходить через клик по рекламе или при просмотре показов рекламы. Копия URL-адреса атрибуции отправляется в AppsFlyer.
@@ -78,14 +80,20 @@ x-zendesk:
 | Структура URL-адреса | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
 | Пример | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > Для входящего трафика взаимодействия, т.е. кликов и показов, AppsFlyer поддерживает только протокол HTTPS.
+
+<div id="attribution-link-parameters" />
 
 ## Параметры ссылки атрибуции
 
 * Перечисленные параметры доступны для использования в ссылке атрибуции.
 * Столбец **тип поля** указывает ограничение на количество символов для значения параметра. Подробнее об ограничениях на длину значений параметров можно узнать <Anchor target="_blank" href="/marketers/ru/docs/raw-data-field-dictionary">здесь.</Anchor>
+
+<div id="attribution-link-parametersua-and-retargeting" />
 
 ### Параметры ссылки атрибуции — UA и ретаргетинг
 
@@ -140,12 +148,16 @@ x-zendesk:
 | <span id="af_og_description"></span>af\_og\_description | Не применимо | При публикации ссылки в социальных сетях описание Open Graph (OG) сгенерирует предварительный просмотр описания. | Строка 300 |
 | <span id="af_og_image"></span>af\_og\_image | Не применимо | При публикации ссылки в социальных сетях изображение Open Graph (OG) сгенерирует предварительный просмотр изображения. |  |
 
+<div id="attribution-link-parametersretargeting-only" />
+
 ### Параметры атрибуции ссылок — только для ретаргетинга
 
 | Параметр | Отображаемое имя в необработанных данных | Описание | Тип и ширина поля |
 | --- | --- | --- | --- |
 | <span id="is_retargeting"></span>is\_retargeting | Ретаргетинг (кампания) | Клик URL-адрес всех ретаргетинговых кампаний должен включать `&is_retargeting=true`.  <br />Если параметр не включен или его значение равно «false», кампания считается обычной кампанией по привлечению пользователей. | Перечисление 5 символов |
 | <span id="af_reengagement_window"></span>{"af_reengagement"} {"_window"} | Окно повторного вовлечения | Измените <Anchor target="_blank" href="/marketers/ru/docs/retargeting-attribution-guide#reengagement-rules-and-windows">окно атрибуции повторного вовлечения</Anchor>, добавив этот параметр в ссылку атрибуции.<br /><br />Возможные варианты диапазона окна:<ul><li>Дни: 1-90 или Часы 1-36</li><li>Срок действия: Это означает, что окно повторного вовлечения не ограничено. Пример:`&af_reengagement_window=lifetime`</li></ul>Значение по умолчанию: 30 дней<br /><br />Пример:`&af_reengagement_window=30d` устанавливает окно повторного вовлечения на 30 дней. | Не применимо |
+
+<div id="viewability-parameters" />
 
 ### Параметры видимости
 
@@ -160,6 +172,8 @@ x-zendesk:
 | <span id="af_ad_displayed_percent"></span>af\_ad\_displayed\_percent | % | Максимальный процент рекламного блока, видимого на экране устройства |
 | <span id="af_audio_total_length"></span>af\_audio\_total\_length | секунды | Общая возможная длительность аудио |
 | <span id="af_audio_played_length"></span>af\_audio\_played\_length | секунды | Какую часть аудио было прослушано |
+
+<div id="android-specific-parameters" />
 
 ### Параметры, специфичные для Android
 
@@ -182,6 +196,8 @@ x-zendesk:
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | Не применимо | Рекламный идентификатор Amazon Fire |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | страница\_Продукта\_магазина | Пользовательский список магазина в Google Console | строка |
 
+<div id="ios-specific-parameters" />
+
 ### iOS-специфичные параметры
 
 | Параметры | Отображаемое имя | Описание |
@@ -198,6 +214,8 @@ x-zendesk:
 | <span id="md5_idfv"></span>md5\_idfv | Не применимо | IDFV хэширован с помощью MD5 |
 | <span id="sha1_mac"></span>sha1\_mac | Нет | MAC-адрес устройства хэширован с помощью SHA1. Требуется поддержка рекламной сети |
 
+<div id="example" />
+
 > 📄 **Пример**
 >
 > ```http
@@ -206,6 +224,8 @@ x-zendesk:
 > ```
 
 Все параметры доступны в <Anchor target="_blank" href="/marketers/ru/docs/raw-data-reporting-overview">отчете об установке</Anchor> и <Anchor target="_blank" href="/marketers/ru/docs/analytics-and-aggregate-reporting-apis">аналитике, отчетах и API</Anchor>.
+
+<div id="custom-parameters" />
 
 ### Пользовательские параметры
 
@@ -230,11 +250,15 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 
 Каждый партнёр, интегрированный в AppsFlyer через раздел <Anchor target="_blank" href="http://appsflyer.com/partners"> имеет уникальное значение PID, которое заканчивается на суффикс *\_int* . При использовании</Anchor> <Anchor target="_blank" href="/marketers/ru/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Ссылки OneLink</Anchor> вы можете установить PID на любое значение, которое вам нравится, при условии, что оно не зарезервировано интегрированным партнером.
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > AppsFlyer блокирует ссылки атрибуции, которые используют зарезервированные <Anchor target="_blank" href="/marketers/ru/docs/self-reporting-networks-srns#srn-интегрированные-с-appsflyer">SRN</Anchor> названия в качестве значений PID в пользовательских медиаисточниках, таких как электронная почта и SMS. Это ограничение **не** применяется к ASRN.
 
 Примеры важных зарезервированных идентификаторов интегрированных издателей: органические, googleadwords\_int (Google AdWords), facebook\_int (реклама Meta), и twitter\_int (X Ads). Для неинтегрированных источников, таких как email, SMS или даже «почтовые голуби», вы можете использовать любое название.
+
+<div id="avoid-common-pid-issues" />
 
 #### Избегайте распространенных проблем с PID:
 
@@ -245,6 +269,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
   * Клик или установка отображается на панели управления под ***af\_invalid\_param***
   * Ссылки атрибуции не будут приписаны.
   * Возможности диплинкинга не будут работать для кликов.
+
+<div id="tip" />
 
 > 👍 **Совет**
 >
@@ -269,6 +295,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 
 Чтобы включить дополнительную информацию, такую как тип рекламы, размещение, или оба внутри приложения, например, баннер, межстраничная реклама или видео, используйте параметр идентификатора подсайта.
 
+<div id="example-1" />
+
 > 📄 **Пример**
 >
 > Следующая ссылка атрибуции включает:
@@ -284,6 +312,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 > * ABCD = партнёрский источник (суб-издатель), с которым сотрудничает издатель 4567 = тип размещения рекламы в приложении, например баннер, интерстициальный формат или видео
 > * 4567 = тип размещения рекламы в приложении, например, баннер, рекламная вставка или видео
 
+<div id="faq-why-does-traffic-result-in-many-blocked-installs" />
+
 #### **Часто задаваемые вопросы: Почему трафик приводит к большому количеству заблокированных установок?**
 
 Заблокированные установки могут быть вызваны следующими причинами:
@@ -295,6 +325,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 Чтобы избежать блокировки установок, убедитесь, что отправляете один параметр идентификатора сайта на каждого издателя, как показано в примере.
 
 </Accordion>
+
+<div id="levels-of-data-granularity" />
 
 ## Уровни детализации данных
 
@@ -313,6 +345,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 * `Блок рекламы (af_adset=)`
 * `Имя рекламы (af_ad=)`
 
+<div id="example-2" />
+
 > 📄 **Пример**
 >
 > Следующая ссылка атрибуции использует 4 уровня детализации для записи рекламы "кашемир" в наборе объявлений "пальто" в кампании "зима", работающей на интегрированном медиа-источнике "сеть".
@@ -321,6 +355,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 > https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&
 > af_adset=coats&af_ad=cashmere
 > ```
+
+<div id="frequently-asked-questions" />
 
 ## Часто задаваемые вопросы
 
@@ -371,6 +407,8 @@ https://app.appsflyer.com/com.travelco?pid=globalwide_int&clickid=#reqid#
 
 Параметры подписчика, такие как af\_sub1, af\_sub2, ..., af\_sub\_5, можно использовать для записи любых полезных KPI. Эти параметры анализируются и отображаются в отчете о необработанных данных, что делает их очень удобными для агрегации или фильтрации данных.
 
+<div id="example-3" />
+
 > 📄 **Пример**
 >
 > Приложение для заказа такси Luber предлагает креативы с тремя цветовыми шаблонами: синим, желтым и красным. Мобильный маркетолог Luber, Линда, хочет проверить, какой цветовой шаблон принесет больше установок. Для этого она добавляет `&af_sub3=blue` в ссылки атрибуции всех синих реклам во всех медиа, не относящихся к SRN. То же самое делается для желтых и красных реклам. Проанализировав эту информацию и отобразив ее в отчетах о необработанных данных, Линда может оценить успешность различных цветных реклам и выбрать наиболее конвертирующую.
@@ -385,6 +423,8 @@ https://app.appsflyer.com/com.travelco?pid=globalwide_int&clickid=#reqid#
 * Название кампании не должно начинаться с пробела или заканчиваться им, так как это может привести к расхождениям в панелях мониторинга и отчетах.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Особенности и ограничения
 

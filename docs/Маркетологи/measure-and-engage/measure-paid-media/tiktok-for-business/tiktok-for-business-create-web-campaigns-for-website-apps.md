@@ -23,19 +23,27 @@ x-zendesk:
 ---
 > **Краткий обзор:** Настройте интеграцию TikTok Web Ads для веб-приложения, чтобы отправлять сигналы о веб-конверсиях в TikTok через Events API.
 
+<div id="overview" />
+
 ## Обзор
 
 AppsFlyer поддерживает интеграцию с TikTok Web Ads (`tiktokweb_int`) для рекламных кампаний веб-приложений, что позволяет вам отчитываться по данным атрибуции и данных конверсии напрямую через TikTok's Events API. Затем TikTok сможет использовать эти данные для оптимизации таргетинга рекламы, измерения эффективности и создания кастомных аудиторий.
 
 Как это работает: когда пользователь кликает по рекламе TikTok, переходит на ваш сайт и выполняет событие (например, покупку или регистрацию), AppsFlyer отправляет сигнал конверсии в TikTok через Events API. TikTok использует эти данные для оптимизации таргетинга рекламы и измерения эффективности рекламных кампаний.
 
+<div id="see-also" />
+
 > 📄 **См. также**
 >
 > * <Anchor target="_blank" href="/marketers/ru/docs/web-performance-measurement-overview">Измерение эффективности веб-сайта — обзор</Anchor>
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > В настоящее время данная интеграция не поддерживает отправку постбэков повторного вовлечения через Events API.
+
+<div id="prerequisites" />
 
 ### Необходимые условия
 
@@ -44,12 +52,16 @@ AppsFlyer поддерживает интеграцию с TikTok Web Ads (`tikt
 * Веб-приложение, настроенное в AppsFlyer
 * Бизнес-аккаунт в <Anchor target="_blank" href="https://getstarted.tiktok.com/grow-your-business-gb">TikTok Ads Manager</Anchor>
 
+<div id="how-to-set-up-tiktok-web-ads-for-your-website-app" />
+
 ### Как настроить TikTok Web Ads для вашего веб-приложения
 
 Настройка включает в себя определение интеграции между TikTok Web Ads и AppsFlyer, а также настройку кампании в TikTok Ads Manager. Он состоит из следующих частей:
 
 * [Часть 1: Настройте интеграцию TikTok Web Ads в AppsFlyer](#часть-1-настройте-интеграцию-с-tiktok-web-ads-в-appsflyer) (обязательно)
 * [Часть 2: Настройте интеграцию с AppsFlyer в TikTok Web Ads](#часть-2-настройте-интеграцию-с-appsflyer-в-tiktok-web-ads) (обязательно)
+
+<div id="part-1-set-up-tiktok-web-ads-integration-in-appsflyer" />
 
 ## Часть 1: Настройте интеграцию с TikTok Web Ads в AppsFlyer
 
@@ -93,6 +105,8 @@ AppsFlyer поддерживает интеграцию с TikTok Web Ads (`tikt
    * **Все медиаисточники, включая органические** — чтобы отправлять все события независимо от источника атрибуции.
 7. В столбце **включая** выберите, будут ли события отправляться со значениями дохода. См. <Anchor target="_blank" href="/marketers/ru/docs/in-app-event-postback-configuration#данные-для-включения-в-постбэки">Данные для включения в постбэки</Anchor>.
 
+   <div id="note-1" />
+
    > 📘 **Примечание**
    >
    > * Если вы настраиваете событие покупки, установите в столбце **включая** значение **Значения и доход**. Выбор любого другого варианта приведет к сбою в отправке постбэка.
@@ -100,6 +114,8 @@ AppsFlyer поддерживает интеграцию с TikTok Web Ads (`tikt
 
 8. [Необязательно] Нажмите значок **Добавить условие**, чтобы <Anchor target="_blank" href="/marketers/ru/docs/in-app-event-postback-configuration#условные-постбэки-по-событиям-в-приложении">задать условия</Anchor> для события.
 9. Нажмите **Сохранить интеграцию**.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -115,6 +131,8 @@ AppsFlyer поддерживает интеграцию с TikTok Web Ads (`tikt
 > Дополнительную информацию см. в статье <Anchor target="_blank" href="/marketers/ru/docs/integrate-appsflyer-web-sdk">[Бета] Интеграция Web SDK AppsFlyer</Anchor>.
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-tiktok-web-ads" />
 
 ## Часть 2: Настройте интеграцию с AppsFlyer в TikTok Web Ads
 
@@ -150,6 +168,8 @@ AppsFlyer поддерживает интеграцию с TikTok Web Ads (`tikt
 | `af_ad` | `__cid_name__` |
 | `af_ad_id` | `__cid__` |
 
+   <div id="note-3" />
+
    > 📘 **Примечание**
    >
    > Чтобы упростить анализ кампании, указывайте в префиксе или суффиксе тип кампании – веб или мобайл (например, `campaign-name_web`).
@@ -163,6 +183,8 @@ AppsFlyer поддерживает интеграцию с TikTok Web Ads (`tikt
    https://www.example.com?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__
    ```
 
+   <div id="note-4" />
+
    > 📘 **Примечание**
    >
    > TikTok автоматически добавляет`ttclid={{ttclid}}` к целевому URL при клике по объявлению.
@@ -170,11 +192,15 @@ AppsFlyer поддерживает интеграцию с TikTok Web Ads (`tikt
 
 </Accordion>
 
+<div id="view-web-attribution-data" />
+
 ## Просмотреть данные атрибуции веб-сайтов
 
 События веб-конверсии регистрируются под `tiktokweb_int`PID в поле`media_source`. Чтобы просмотреть данные атрибуции, используйте отчеты о сырых данных и примените фильтр,`media_source = tiktokweb_int`чтобы выделить конверсии из веб-приложения TikTok.
 
 Отчетность в дэшборде для рекламных кампаний по веб-приложениям пока недоступна. В одном из будущих релизов планируется внедрить единый интерфейс отчетности, который позволит анализировать эффективность веб-кампаний наряду с другими каналами.
+
+<div id="measure-cost-clicks-and-impressions" />
 
 ## Измерение стоимости, кликов и показов
 
@@ -182,6 +208,8 @@ AppsFlyer поддерживает интеграцию с TikTok Web Ads (`tikt
 
 1. Чтобы получить данные о расходах в TikTok для кампаний в веб-приложении в отчете **«Все затраты**», подключите свою рекламную учетную запись TikTok к сервису интеграции данных о затратах TikTok (`tiktokglobal_int`) через страницу **«Настройки затрат»** или вкладку **«Затраты**». Пошаговые инструкции см. в статье <Anchor target="_blank" href="/marketers/ru/docs/set-up-roi360-cost-api-to-measure-cost-data">Set up ROI360 cost API to measure cost data</Anchor>.
 2. **Добавьте идентификатор кампании в URL лендинга:** добавьте `af_c_id` вместе с полной иерархией кампании в URL лендинга. Это гарантирует, что стоимость, клики и показы будут сопоставлены с данными веб-атрибуции на самом гранулярном уровне.
+
+<div id="traits-and-limitations" />
 
 ## Характеристики и ограничения
 

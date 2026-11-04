@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Кратко:** Baidu Native Ads 2.0 — рекламная сеть, интегрированный партнер AppsFlyer.
 
+<div id="setting-up-baidu-native-ads-20" />
+
 ## Настройка Baidu Native Ads 2.0
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -41,10 +43,14 @@ x-zendesk:
 
 <Accordion title="Вкладка Integration (Интеграция)">
 
+<div id="activate-partner" />
+
 ### Activate Partner (Активировать партнера)
 
 При **первом посещении** вам нужно будет включить переключатель ниже. При **первом посещении** вам нужно будет включить переключатель ***Активировать партнера***, чтобы включить настройку параметров на вкладке интеграции. Кнопка ДОЛЖНА оставаться в положении «Включено», пока вы работаете с этим партнером.  
 Дополнительная информация по активации партнеров доступна <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
+
+<div id="general-settings" />
 
 ### Общие настройки
 
@@ -52,9 +58,13 @@ Baidu Native Ads 2.0 подключается к AppsFlyer с помощью у�
 
 <Image alt="mceclip2.png" src="https://files.readme.io/fe8f44ee7d58fda9ee6289872903f96c716ab6d1191dd831745445cbced8b316-50899807435409.png" width="417px" />
 
+<div id="default-postbacks" />
+
 ### Постбэки по умолчанию
 
 <Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="552px" />
+
+<div id="in-app-events-settings" />
 
 ### In-App Events Settings (Настройки внутренних событий приложения)
 
@@ -82,6 +92,8 @@ Baidu Native Ads 2.0 подключается к AppsFlyer с помощью у�
 
 На этой вкладке есть несколько разделов:
 
+<div id="attribution-link-parameters" />
+
 ### Параметры ссылки атрибуции
 
 В этом разделе можно выбрать параметры для добавления в ссылку атрибуции.
@@ -103,6 +115,8 @@ Baidu Native Ads 2.0 подключается к AppsFlyer с помощью у�
 
 Если нужно добавить в ссылку атрибуции другой параметр, просто введите его в поле нового параметра. Узнать больше о <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">**структуре и параметрах ссылки атрибуции AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Атрибуция по кликам
 
 Этот ползунок позволяет задать **максимальное время от клика до установки**. К Baidu Native Ads 2.0 могут быть атрибутированы только установки (первые запуски), которые происходят в течение окна ретроспективы.
@@ -112,6 +126,8 @@ Baidu Native Ads 2.0 подключается к AppsFlyer с помощью у�
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">окне атрибуции по кликам см. здесь</Anchor>.
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+
+<div id="attribution-link" />
 
 ### Ссылка атрибуции
 

@@ -24,17 +24,25 @@ x-zendesk:
 
 > **Краткий обзор:** Взаимодействие со SKAN позволяет Amazon обмениваться постбэками SKAN с AppsFlyer, а AppsFlyer — передавать Amazon сопоставление измерения значений конверсии.
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > Чтобы принять участие в этом закрытом бета-тестировании, сообщите об этом своему представителю Amazon.
+
+<div id="skan-interoperability-appsflyer---amazon" />
 
 ## Взаимодействие SKAN: AppsFlyer &lt;-> Amazon
 
 Если вы работаете с несколькими партнерами — рекламными сетями, рекомендуется настроить все в AppsFlyer. Таким образом, метрики эффективности SKAN, дополненные другими показателями, такими как стоимость, доступны на платформе AppsFlyer.
 
+<div id="scope-of-skan-interoperability-with-amazon" />
+
 ### Объем взаимодействия SKAN с Amazon
 
 Взаимодействие позволяет AppsFlyer и Amazon обмениваться сопоставлением значений конверсии SKAN (настроенным в AppsFlyer). Это позволяет обеим сторонам предоставлять метрики эффективности. См. <Anchor target="_blank" href="/marketers/ru/docs/skan-integrated-partners-list">список полей обогащения</Anchor>, поддерживаемых Amazon.
+
+<div id="amazon-dsp-app-install-ads-guidance" />
 
 ### Рекомендации по рекламе установки приложений в Amazon DSP
 
@@ -80,6 +88,8 @@ x-zendesk:
 * Рекламная среда: реклама в приложении на ресурсах Amazon и в отдельных сторонних рекламных биржах.
 * Отчетность: инсайты по кампаниям в реальном времени через AppsFlyer.
 
+<div id="enabling-interoperation" />
+
 ### Активация взаимодействия
 
 Взаимодействие осуществляется с помощью настроек на дэшбордах AppsFlyer и Amazon. Функциональная совместимость и изменения в самом приложении не требуются.
@@ -91,6 +101,8 @@ x-zendesk:
 | <span id="1"></span>1 | Минимальные требования для Приложения | <ul><li>Интегрируйте новейший SDK AppsFlyer в свое приложение.</li></ul> |
 | <span id="2"></span>2 | Обзор настроек SKAN | Настройте и включите решение <Anchor target="_blank" href="/marketers/ru/docs/skadnetwork-skan-solution-guide">SKAN от AppsFlyer.</Anchor><br /><br />**Чтобы просмотреть настройки SKAN**:<ol><li>В AppsFlyer перейдите в **Настройки** > **SKAN Conversion Studio**.</li><li>Откройте опции (⋮) и убедитесь, что **измерение SKAN** включено.<br />![skan-settings.png](https://files.readme.io/5a5b9b8b8a809336055340a14e49dacc16c5c0e95cda62c6dfb2ca9a11618d71-27548444964497.png)</li><li>Выберите предпочтительный режим измерения.<br />Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>.</li><li>Запишите точные названия событий. Они потребуются вам на следующем шаге.</li></ol> |
 | <span id="3"></span>3 | Сопоставление событий в приложении | Просмотрите и, при необходимости, внесите изменения в сопоставления событий в приложении Amazon. **Чтобы Amazon мог получить схему и завершить интеграцию, необходимо сопоставить с Amazon хотя бы одно событие в приложении**.<br /><br />**Чтобы просмотреть и настроить сопоставления событий в приложении**:<ol><li>В AppsFlyer перейдите в раздел **Настройки** > **Активные интеграции**.</li><li>Найдите и выберите **Amazon Ads**.</li><li>В разделе **In-app events postback** (Постбэки внутренних событий):<ol><li>[Обязательно] Включите **постбэки внутренних событий приложения**, если они еще не включены.</li><li>Убедитесь, что события в приложении, которые вы настроили в <Anchor target="_blank" href="/marketers/ru/docs/skan-conversion-studio">SKAN conversion studio</Anchor>, сопоставлены с названиями событий Amazon или с событиями в вашей <Anchor target="_blank" href="/marketers/ru/docs/skan-cv-decode-map-your-cv-to-events">пользовательской карте конверсии</Anchor>.<br />**Примечание:** сопоставьте `af_skad_revenue` с названием события Amazon `OFF_AMAZON_purchases`</li></ol></li><li>Нажмите **Сохранить интеграцию**.</li></ol> |
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

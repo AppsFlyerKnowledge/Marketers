@@ -24,6 +24,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
 
+<div id="integrating-google-ads-campaign-data-in-pba" />
+
 ## Интеграция данных кампаний Google Ads в PBA
 
 Подключите один или несколько аккаунтов Google Ads к своему пакету бренда. Данные кампаний Google Ads расширяют возможности аналитики в дэшбордах и дополнительно обогащают отчеты по сырым данным.
@@ -62,6 +64,8 @@ x-zendesk:
 
 * Удалить соединение
 * Включить/отключить подключение
+
+<div id="pbagoogle-ads-status-messages" />
 
 ### Сообщения о статусе PBA—Google Ads
 

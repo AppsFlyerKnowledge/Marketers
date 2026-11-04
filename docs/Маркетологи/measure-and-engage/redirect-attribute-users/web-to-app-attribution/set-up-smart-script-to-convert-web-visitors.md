@@ -26,6 +26,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="setup" />
+
 ## Настройка
 
 Существует две версии OneLink Smart Script:
@@ -34,12 +36,16 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/ru/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1 (устарело)**</Anchor>: Если у вас уже настроен Onelink Smart Script, используйте документацию к этой версии, чтобы поддерживать и редактировать этот скрипт. **Примечание**: Хотя это необязательно, рассмотрите переход на версию V2 для правильного получения <Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">атрибуций по показам</Anchor> посредством OneLink Smart Script.
 
+<div id="set-up-onelink-smart-script" />
+
 ### Настройка OneLink Smart Script
 
 Чтобы настроить Smart Script, вы можете:
 
 * Встроить скрипт на свой сайт.
 * Или использовать Google Tag Manager.
+
+<div id="scope-of-work" />
 
 #### Объем работ
 
@@ -105,6 +111,8 @@ x-zendesk:
     5. Укажите веб-разработчику, что нужно сделать со сгенерированным исходящим URL. Например, разместить его за кнопкой CTA на мобильном сайте или представить QR-код в полной версии сайта. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#embed-the-script-in-your-website">Инструкции для разработчика</Anchor>
 13. Сохраненные скрипты можно просмотреть в [выпадающем меню](/docs/set-up-smart-script-to-convert-web-visitors#how-to-edit-or-delete-a-script).
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > Каждый раз, когда вы обновляете скрипт, его нужно внедрять заново.
@@ -124,6 +132,8 @@ x-zendesk:
 2. Нажмите на значок карандаша рядом со скриптом, который вы хотите отредактировать.
    1. Выполните действия, описанные в разделе [Как создать OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#настройка-onelink-smart-script).
 3. Нажмите на значок корзины, чтобы удалить Smart Script.
+
+<div id="important-1" />
 
 > 🚧 **Важно!**
 >
@@ -163,6 +173,8 @@ OneLink Smart Script использует аргументы для генера
 
 OneLink Smart Script использует аргументы для генерации исходящего URL на основе параметров входящего URL и аргументов, определенных в скрипте.
 
+<div id="arguments-parameters-and-values-to-implement-the-smart-script" />
+
 #### Аргументы (параметры и значения) для реализации Smart Script
 
 <table><thead><tr><th colspan="2">Аргументы</th><th>Замечания</th><th>Запишите свои ответы (для использования вами или вашим разработчиком)</th></tr></thead><tbody><tr><td colspan="2">oneLinkURL (обязательно)</td><td><ul><li>Укажите домен шаблона OneLink + идентификатор шаблона. <strong>Примечание.</strong> Не пользовательский URL-адрес ссылки OneLink!</li><li>Пример: <strong>yourbrand.onelink.me/A1b2</strong> </li><li>Пример брендированного домена: <strong>click.yourbrand.com/A1b2</strong> </li></ul></td><td> </td></tr><tr><td rowspan="9"><p>afParameters</p><p>(обязательно)</p></td><td><p>Медиа-источник</p><p>(обязательно)</p></td><td><ul><li>Объект конфигурации для медиа-источника.</li><li>Пример:<ul><li>Ключи: ['incoming_mediasource’' 'utm_source']</li><li>Значение по умолчанию: ['any_source']</li><li>Переопределить значения: `{twitter: 'twitter_int', orig_src: 'new_src',  seo:'false'}</li></ul></li></ul></td><td><p>Ключи:</p><p>Значение по умолчанию:</p><p>Значения для переопределения:</p></td></tr><tr><td>campaign (кампания)</td><td><ul><li>Объект конфигурации для кампании.</li><li>Пример:<ul><li>Ключи: ['incoming_campaign', 'utm_campaign']</li><li>Значение по умолчанию: ['any_campaign_name']</li><li>Переопределение значений: {campaign_name: 'new_campaign_name'}</li></ul></li></ul></td><td><p>Ключи:</p><p>Значение по умолчанию:</p><p>Значения для переопределения:</p></td></tr><tr><td>channel (канал)</td><td><ul><li>Объект конфигурации для канала.</li><li>Пример:<ul><li>Ключи: ['incoming_channel', 'utm_channel']</li><li>Значение по умолчанию: ['any_video']</li><li>Переопределение значений: {video: 'new_video'}</li></ul></li></ul></td><td><p>Ключи:</p><p>Значение по умолчанию:</p><p>Значения для переопределения:</p></td></tr><tr><td>ad (объявление)</td><td><ul><li>Объект конфигурации для рекламы.</li><li>Пример:<ul><li>Ключи: ['incoming_ad', 'utm_ad']</li><li>Значение по умолчанию: ['any_ad_name']</li><li>Переопределение значений: {ad_name: 'new_ad_name'}</li></ul></li></ul></td><td><p>Ключи:</p><p>Значение по умолчанию:</p><p>Значения для переопределения:</p></td></tr><tr><td>Группа объявлений</td><td><ul><li>Объект конфигурации для группы объявлений.</li><li>Пример:<ul><li>Ключи: ['incoming_adset', 'utm_adset']</li><li>Значение по умолчанию: ['any_ad_name']</li><li>Переопределение значений: {adset_name: 'new_adset_name'}</li></ul></li></ul></td><td><p>Ключи:</p><p>Значение по умолчанию:</p><p>Значения для переопределения:</p></td></tr><tr><td>deepLinkValue</td><td><ul><li>Объект конфигурации для <strong>deep_link_value</strong>.</li><li>Пример:<ul><li>Ключи: ['product_id', 'page_name']</li><li>Значение по умолчанию: 'new_offers_page'</li><li>Переопределение значений: {twenty_percent_off: 'thirty_percent_off'}</li></ul></li></ul></td><td><p>Ключи:</p><p>Значение по умолчанию:</p><p>Значения для переопределения:</p></td></tr><tr><td>afSub1-5</td><td>Объект конфигурации для <strong>af_sub[1-5]</strong>.</td><td><p>Ключи:</p><p>Значение по умолчанию:</p><p>Значения для переопределения:</p></td></tr><tr><td>Ключ googleClickIdKey</td><td>Укажите, как назвать параметр, который несет в себе <a href="https://support.google.com/google-ads/answer/9744275?hl=en" target="_blank">GCLID</a>.<br/><strong>Примечание</strong>! <span>Для отображения в отчетах AppsFlyer по сырым данным параметр должен быть одним из <strong>af_sub[1-5]</strong>.</span> </td><td> </td></tr><tr><td> <span>Другие (настраиваемые) параметры запроса</span><br/> </td><td><ul><li>Перечислите любые другие параметры, которые вы хотите включить в исходящий URL OneLink для атрибуции или диплинкинга, вместе с их объектами конфигурации.</li><li>Название настраиваемого параметра указывается разработчиком как paramKey в объекте конфигурации.<span></span> </li><li>Пример:<ul><li>paramKey: 'deep_link_sub1'</li><li>Ключи: ['page_id']</li><li>Значение по умолчанию: 'page1'</li><li>Переопределение значений: {page12: 'new_page12'}`</li></ul></li></ul></td><td><p>ParamKey:</p><p>Ключи:</p><p>Значение по умолчанию:</p><p>Значения для переопределения:</p></td></tr></tbody></table>
@@ -175,11 +187,15 @@ OneLink Smart Script использует аргументы для генера
 
 В следующей таблице описаны аргументы, которые технически подкованные маркетологи или разработчики могут реализовать в Smart Script.
 
+<div id="advanced-arguments-parameters-and-values-to-implement-in-the-smart-script" />
+
 #### Расширенные аргументы (параметры и значения) для реализации в Smart Script
 
 <table><thead><tr><th colspan="2">Аргумент</th><th>Примечание</th><th>Запишите свои ответы (для использования вами или вашим разработчиком)</th></tr></thead><tbody><tr><td colspan="2"> <br/>Замечания</td><td><ul><li> <span>Список строк в HTTP-реферере для конкретного клика (например, Twitter или Facebook), которые в случае обнаружения приводят к возврату Smart Script</span><code>null</code><span>. Это может быть полезно для таких SRN, как X Ads и Meta Ads, по которым уже зарегистрированы клики.</span> </li><li>Внедрение этого аргумента приводит к тому, что скрипт НЕ генерирует URL OneLink.</li></ul></td><td> </td></tr><tr><td colspan="2">urlSkipList</td><td><ul><li>Список строк в URL для конкретного клика (например, af_r), которые в случае обнаружения приводят к возврату Smart Script<code>null</code>. Это может быть полезно, если вы используете ссылку атрибуции AppsFlyer с параметром af_r для перенаправления пользователей на ваш мобильный сайт и не хотите, чтобы данные из исходного клика были потеряны.</li><li>Внедрение этого аргумента приводит к тому, что скрипт НЕ генерирует URL OneLink.</li></ul></td><td> </td></tr><tr><td colspan="2">SEO</td><td><ul><li>Если этот параметр включен и медиаисточник не определяется в разделе <strong>«Сопоставление параметров URL-адреса»</strong>, мы проверим по URL-адресу веб-реферера, пришли ли пользователи из поисковой системы, и соответствующим образом зададим медиаисточник. (Доступно начиная с версии 2.10.3)</li></ul></td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## Примеры использования
 
@@ -230,6 +246,8 @@ OneLink Smart Script использует аргументы для генера
 
 1. Получите данные GCLID из параметра **af\_sub[1-5]** через CSV или Push API в режиме реального времени для каждой установки.
 2. Загрузите данные GCLID в Google <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">вручную</Anchor> или через <Anchor target="_blank" href="https://developers.google.com/google-ads/api/docs/start">Google Ads API</Anchor>.
+
+<div id="note" />
 
 > 📘 **Примечание:**
 >
@@ -293,6 +311,8 @@ OneLink Smart Script использует аргументы для генера
 
 **Результат:** Для этих SRN / медиа-источников значения параметров медиа-источника и кампании во входящей ссылке используются для заполнения значений параметров **media\_source** и **campaign** в исходящей ссылке.
 
+<div id="example" />
+
 > 📄 **Пример**
 >
 > **Входящий URL**: https://hotel.me/incoming_mediasource=twitter&incoming_campaign=big_social
@@ -310,6 +330,8 @@ OneLink Smart Script использует аргументы для генера
 **Действие:** Используйте аргумент **urlSkipList** для составления списка параметров **af\_r**.
 
 **Результат**: Если Smart Script находит параметр **af\_r** во входящей ссылке, Smart Script не создает исходящий URL, и разработчик должен решить, какую ссылку поместить в качестве исходящего URL, и реализовать ее.
+
+<div id="example-1" />
 
 > 📄 **Пример**
 >
@@ -384,6 +406,8 @@ OneLink Smart Script использует аргументы для генера
 
 **Результат:** Скрипт отображает QR-код вместо кнопки с URL-адресом за ней.
 
+<div id="example-2" />
+
 > 📄 **Пример**
 >
 > **Входящий URL**:
@@ -418,11 +442,15 @@ OneLink Smart Script можно использовать для подсчета
 2. Скажите своему разработчику, чтобы он <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#fire-an-impression">вызвал функцию показов</Anchor> в Smart Script.
 3. Убедитесь, <Anchor target="_blank" href="/marketers/ru/docs/measure-view-through-engagements">что атрибуция по просмотрам включена</Anchor>.
 
+<div id="important-2" />
+
 > 🚧 **Важно!**
 >
 > Начиная с 1 февраля 2023 года (стабильный релиз Chrome 110), компания Google внесла некоторые изменения, чтобы <Anchor target="_blank" href="https://developer.chrome.com/en/docs/privacy-sandbox/user-agent/">уменьшить количество данных User Agent</Anchor>. Чтобы правильно получать <Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">атрибуции по показам</Anchor> посредством OneLink Smart Script, необходимо использовать OneLink Smart Script версии 2.3 и выше.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Дополнительные сведения
 
@@ -430,13 +458,19 @@ OneLink Smart Script можно использовать для подсчета
 
 <Accordion title="Вопросы и ответы">
 
+<div id="will-the-incoming-url-for-onelink-link-generation-work-if-the-user-browses-to-a-different-page-on-the-website" />
+
 #### Будет ли работать входящий URL для генерации ссылок OneLink, если пользователь перейдет на другую страницу сайта?
 
 Да. Параметры входящего URL сохраняются в течение всего сеанса просмотра и применяются к параметрам исходящей ссылки OneLink, созданной Smart Script. Для получения дополнительной информации о реализации см. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_script_v2#preserve-incoming-url-parameters-across-pages">наш хаб разработчиков</Anchor>.
 
+<div id="why-do-i-get-an-error-when-implementing-smart-script-via-google-tag-manager" />
+
 #### **Почему я получаю ошибку при внедрении Smart Script через Google Tag Manager?**
 
 Иногда, когда вы создаете Smart Script в AppsFlyer и пытаетесь вставить его в Google Tag Manager (GTM), появляется ошибка «JavaScript too long» (Слишком длинный JavaScript). Если это произошло, удалите тег GTM и создайте новый.
+
+<div id="can-i-add-parameters-that-are-not-listed" />
 
 #### **Можно добавить параметры, которых нет в списке?**
 
@@ -450,9 +484,13 @@ OneLink Smart Script можно использовать для подсчета
 
 ![Smart_Script_Custom.jpg](https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg)
 
+<div id="adset-and-other-parameters-are-not-showing-in-the-dropdown" />
+
 #### **Группа объявлений и другие параметры не отображаются в выпадающем списке**
 
 При создании или добавлении новых параметров мы рекомендуем отключить все блокировщики рекламы, установленные в вашем браузере. Иногда блокировщики рекламы удаляют опцию, если в ней есть слово «Ad» (реклама).
+
+<div id="what-browsers-does-smart-script-work-on" />
 
 #### **В каких браузерах работает Smart Script?**
 

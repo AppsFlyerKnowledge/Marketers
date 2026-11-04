@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** **Краткий обзор:** Настройте дополнительные идентификаторы пользователей для отправки пользовательских аудиторий рекламным Партнерам.
 
+<div id="about-additional-identifiers" />
+
 ## О дополнительных идентификаторах
 
 AppsFlyer Аудитории автоматически поддерживает следующие идентификаторы устройств для отправки пользовательских аудиторий <Anchor target="_blank" href="/marketers/ru/docs/audiences-partner-connections">рекламным Партнерам</Anchor>:
@@ -39,6 +41,8 @@ AppsFlyer Аудитории автоматически поддерживает
 
 Такие дополнительные идентификаторы могут включать номера телефонов и адреса электронной почты, но их можно **использовать только, если они зашифрованы с использованием хеширования SHA256**.  Использование таких дополнительных идентификаторов регулируется [Условиями использования дополнительных идентификаторов](https://support.appsflyer.com/hc/article_attachments/16567368205201).
 
+<div id="next-steps" />
+
 ## Следующие шаги
 
 1. Выберите дополнительные идентификаторы, которые вы хотите использовать (если таковые имеются), из [таблицы доступных идентификаторов](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting). Заметьте, что не все рекламные Партнеры поддерживают все идентификаторы.
@@ -49,6 +53,8 @@ AppsFlyer Аудитории автоматически поддерживает
    * Установите <Anchor target="_blank" href="/marketers/ru/docs/audiences-user-identifier-policy">политику идентификаторов пользователей на уровне учетной записи</Anchor>
    * Выберите идентификаторы, которые будут загружены в каждое из ваших <Anchor target="_blank" href="/marketers/ru/docs/audiences-guide#manage-connections">подключений с Партнерами</Anchor>.
 
+<div id="available-identifiers" />
+
 ## Доступные идентификаторы
 
 Вы можете настроить один или несколько идентификаторов, указанных в таблице ниже.
@@ -58,6 +64,8 @@ AppsFlyer Аудитории автоматически поддерживает
 <table><tbody><tr><td>Идентификатор</td><td>Имя параметра</td><td>Формат</td><td>Пример значения (до хеширования)</td></tr><tr><td>Адрес электронной почты</td><td>email_sha256</td><td><p><strong>SDK v7.0.0 и более ранние:</strong></p><ul><li>В нижнем регистре</li><li>Без пробелов</li><li>Хешируется на стороне клиента (SHA256) перед передачей</li></ul><p><strong>SDK v7.0.1 и более поздние версии:</strong> Обычный текст. SDK автоматически нормализует и хеширует его.</p></td><td>name@domain.com</td></tr><tr><td>Номер телефона<br/>(см. примечание ниже)</td><td><p><strong>v7.0.0 и более ранние (или S2S):</strong> phone_number_sha256</p><p><strong>v7.0.1 и более поздние:</strong> phone_number_hashed</p></td><td><p><strong>v7.0.0 и более ранние (или S2S):</strong></p><ul><li>Без символов, букв или ведущих нулей</li><li>Включить код страны</li><li>SHA256 хеширование</li></ul><p><strong>v7.0.1 и более поздние:</strong> Обычный текст. SDK объединяет код страны и номер, нормализует и автоматически хеширует их.</p></td><td>442070313000</td></tr><tr><td><p>Номер телефона E164</p><p>(см. примечание ниже)</p></td><td><p><strong>v7.0.0 и более ранние (или S2S):</strong> phone_number_e164_sha256</p><p><strong>v7.0.1 и более поздние:</strong> phone_number_e164_hashed</p></td><td><p><strong>v7.0.0 и более ранние (или S2S):</strong></p><ul><li>E164 номер телефона</li><li>SHA256 хеширование</li></ul><p><strong>v7.0.1 и более поздние:</strong> Обычный текст. SDK объединяет код страны и номер, нормализует и автоматически хеширует их.</p></td><td>+442070313000</td></tr><tr><td colspan="4"><p><br /><br /><strong>Note</strong><br /></p><p><strong><span id="h_01HNZNWZ9XSY47T58Z5YR7Q65S"></span>номер_телефона_e164_sha256</strong></p><p>Разные рекламные Партнеры поддерживают разные форматы телефонных номеров. Поэтому, если вы решите использовать номер телефона, настройте оба идентификатора: <em>Номер телефона</em> и <em>Номер телефона E164.</em></p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="sdk-reference-and-code-samples" />
 
 ## Справочник SDK (пакет средств разработки ПО) и образцы кода
 
@@ -79,6 +87,8 @@ AppsFlyer Аудитории автоматически поддерживает
 >
 > * **Электронная почта:** Начиная с SDK v7.0.1, метод setUserEmails (iOS/Android) полностью удален и заменен на setUserEmail. Это ломающие изменения, а не устаревание. Приложения на v7.0.0 и более ранних версиях должны продолжать использовать setUserEmails. Приложения на v7.0.1 и более поздних версиях должны перейти на setUserEmail. Проверьте версию интегрированного SDK, прежде чем выбирать пример, которому нужно следовать.
 > * **Телефон:** Начиная с SDK v7.0.1, доступен отдельный API setUserPhone. Это рекомендуемый способ отправки идентификаторов номеров телефонов для Advanced Matching. Это не ломающие изменения: setAdditionalData по-прежнему работает. Для новых интеграций, а также для клиентов, обновившихся до версии 7.0.1 или более поздней, мы рекомендуем перейти на setUserPhone. Приложения на v7.0.0 и более ранних версиях должны продолжать использовать setAdditionalData, поскольку setUserPhone не существует в этих версиях SDK.
+
+<div id="ios-sdk-configuration" />
 
 ## Настройка iOS SDK (пакет средств разработки ПО)
 
@@ -116,7 +126,11 @@ Objective-C Swift
 >
 > Перед передачей необходимо предварительно хешировать оба значения (SHA-256).
 
+<div id="sdk-v701-and-later--setuserphone-recommended" />
+
 ### **SDK v7.0.1 и более поздние версии — setUserPhone (рекомендуется)**
+
+<div id="method-signature" />
 
 #### SHA256 хеширование
 
@@ -124,6 +138,8 @@ Objective-C Swift
 - (void)setUserPhone:(NSString *_Nonnull)countryCode
 phoneNumber:(NSString *_Nonnull)phoneNumber;
 ```
+
+<div id="usage-example" />
 
 #### Пример использования
 
@@ -153,7 +169,11 @@ AppsFlyerLib.shared().setUserPhone(countryCode: "1", phoneNumber: "(650) 555-121
 
 Чтобы задать хешированный *адрес электронной почты* как дополнительный идентификатор пользователя:
 
+<div id="sdk-v700-and-earlier" />
+
 ### **SDK v7.0.0 и более ранние версии**
+
+<div id="method-signature-1" />
 
 #### Сигнатура метода
 
@@ -161,6 +181,8 @@ AppsFlyerLib.shared().setUserPhone(countryCode: "1", phoneNumber: "(650) 555-121
 - (void)setUserEmails:(NSArray<NSString *> *_Nullable)userEmails 
 withCryptType:(EmailCryptType)type;
 ```
+
+<div id="usage-example-1" />
 
 #### Пример использования
 
@@ -184,13 +206,19 @@ AppsFlyerLib.shared().setUserEmails(emails, with: EmailCryptTypeSHA256)
 </Tab>
 </Tabs>
 
+<div id="sdk-v701-and-later" />
+
 ### **SDK v7.0.1 и более поздние версии**
+
+<div id="method-signature-2" />
 
 #### Сигнатура метода
 
 ```objectivec
 - (void)setUserEmail:(NSString *_Nonnull)email;
 ```
+
+<div id="usage-example-2" />
 
 #### Пример использования
 
@@ -218,9 +246,13 @@ AppsFlyerLib.shared().setUserEmail("name@domain.com")
 >
 > Передавайте адрес электронной почты в виде обычного текста. SDK нормализует и хеширует его локально (SHA-256). Без предварительного хеширования. За один вызов принимается только один адрес электронной почты: повторный вызов setUserEmail перезаписывает ранее заданное значение, а не добавляет его.
 
+<div id="android-sdk-configuration" />
+
 ## Настройка Android SDK (пакет средств разработки ПО)
 
 Чтобы задать хешированный *номер телефона* как дополнительный идентификатор пользователя:
+
+<div id="sdk-v700-and-earlier--setadditionaldata-1" />
 
 ### **SDK v7.0.0 и более ранние — setAdditionalData**
 
@@ -258,13 +290,19 @@ AppsFlyerLib.getInstance().setAdditionalData(customDataMap)
 >
 > Перед передачей необходимо предварительно хешировать оба значения (SHA-256).
 
+<div id="sdk-v701-and-later--setuserphone-recommended-1" />
+
 ### **SDK v7.0.1 и более поздние — setUserPhone (рекомендуется)**
+
+<div id="method-signature-3" />
 
 #### Аудитории — дополнительные идентификаторы
 
 ```java
 public abstract void setUserPhone(String countryCode, String phoneNumber);
 ```
+
+<div id="usage-example-3" />
 
 #### Пример использования
 
@@ -294,7 +332,11 @@ AppsFlyerLib.getInstance().setUserPhone("1", "(650) 555-1212")
 
 Чтобы задать хешированный *адрес электронной почты* как дополнительный идентификатор пользователя:
 
+<div id="sdk-v700-and-earlier-1" />
+
 ### **SDK v7.0.0 и более ранние**
+
+<div id="method-signature-4" />
 
 #### SHA256 хеширование
 
@@ -304,6 +346,8 @@ public abstract void setUserEmails(
   String... emails
 );
 ```
+
+<div id="usage-example-4" />
 
 #### Пример использования
 
@@ -333,13 +377,19 @@ AppsFlyerLib.getInstance().setUserEmails(
 </Tab>
 </Tabs>
 
+<div id="sdk-v701-and-later-1" />
+
 ### **SDK v7.0.1 и более поздние**
+
+<div id="method-signature-5" />
 
 #### SHA256 хеширование
 
 ```java
 public abstract void setUserEmail(String email);
 ```
+
+<div id="usage-example-5" />
 
 #### Пример использования
 
@@ -352,6 +402,8 @@ AppsFlyerLib.getInstance().setUserEmail("name@domain.com");
 > **Примечание**
 >
 > В v7.0.1 и более поздних версиях за один вызов принимается только один email. Несколько адресов электронной почты не поддерживаются: повторный вызов setUserEmail перезаписывает ранее заданное значение, а не добавляет его.
+
+<div id="s2s-reference-and-code-samples" />
 
 ## Справочник S2S и образцы кода
 

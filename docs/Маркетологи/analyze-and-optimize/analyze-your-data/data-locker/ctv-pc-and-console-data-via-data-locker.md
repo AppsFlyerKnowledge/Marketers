@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Доступ к кроссплатформенным отчётам (CTV, ПК и консольные платформы) через AppsFlyer. **Примечание**: Для платформ с операционными системами Android и iOS доступность отчётов по <Anchor target="_blank" href="/marketers/ru/docs/aggregated-and-analytics-reporting-overview">агрегированным</Anchor> и <Anchor target="_blank" href="/marketers/ru/docs/raw-data-reporting-overview">сырым данным</Anchor> такая же, как и для мобильных приложений.
 
+<div id="cross-platform-reports" />
+
 ## Кроссплатформенные отчёты
 
 Кроссплатформенные отчёты:
@@ -31,6 +33,8 @@ x-zendesk:
 * Данные для всех медиа-источников, как неорганических, так и органических.
 * Описание полей отчётов находится в <Anchor target="_blank" href="/marketers/ru/docs/raw-data-field-dictionary">словаре полей необработанных данных</Anchor>.
 
+<div id="report-types-and-availability" />
+
 ### Типы отчётов и доступность
 
 | Отчёт | Примечания | Пример отчёта |
@@ -39,6 +43,8 @@ x-zendesk:
 | Кроссплатформенные внутренние события приложения | Нужна подписка на Data Locker | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSrOchvROUOrhb4JuHTT1IqGXD94rhsu2sQ6v_i9bGoavSUXV7IU6kktxTEYHeIPXw4XujZY2aUEzRh/pub?output=csv">Скачать</Anchor> |
 | Кроссплатформенные сеансы | Нужна подписка на Data Locker |  |
 | Кроссплатформенные показы | <ul><li>Включает данные о показах из кроссплатформенных ссылок OneLink.</li><li>Не нужна подписка на Data Locker</li></ul> | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_d8Tf0AzwOybJQG1L7d42l7LhMO5SuAcHwguRcV32mdvTZVSk6U-jTVuYFfQtTCo0rte-k7pDeOqi/pub?gid=964292901&single=true&output=csv">Загрузка</Anchor> |
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 
 В этом разделе вопросов и ответов мы обсуждаем распространенные вопросы об интеграции Smart Banners & Smart Script, уделяя особое внимание их воздействию на безопасность и скорость сайта.
 
+<div id="smart-banners-api-security" />
+
 ## Безопасность API smart banners
 
 <div id="what-data-does-the-smart-banner-capture-when-someone-clicks-or-views-it" />
@@ -67,6 +69,8 @@ x-zendesk:
 № № Получить доступ к коду, который определяет web key, используемый в вызове API баннера, и изменить его невозможно. Это означает, что злоумышленники не могут манипулировать расчётом баннера и URL-адресом OneLink, генерируемым для CTA баннера.
 
 </Accordion>
+
+<div id="smart-banners-script-hosting-security" />
 
 ## Безопасность хостинга скрипта смарт-баннеров
 
@@ -121,6 +125,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="smart-banners-performance" />
+
 ## Эффективность смарт-баннеров
 
 <div id="does-the-smart-banner-web-sdk-impact-website-load-speed" />
@@ -163,6 +169,8 @@ x-zendesk:
 * Используйте одинаковую насыщенность шрифта во всем баннере.
 
 </Accordion>
+
+<div id="smart-script-security-and-performance" />
 
 ## Безопасность и производительность Smart Script
 

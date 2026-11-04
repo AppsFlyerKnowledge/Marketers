@@ -24,9 +24,13 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">Некоторые медиа-источники</Anchor> ограничивают передачу данных третьим лицам. Поэтому постбэки для ограниченных событий не будут отправляться этому партнёру, независимо от настроек отправки постбэков.
+
+<div id="setting-up-rockerbox" />
 
 ## Настройка Rockerbox
 
@@ -47,10 +51,14 @@ x-zendesk:
 
 На вкладке «Интеграция» есть несколько разделов, которые описаны ниже.
 
+<div id="activate-partner" />
+
 ### Активация партнера
 
 Этот переключатель должен быть включен все время, пока вы работаете с этим партнером.  
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation#активировать-интеграцию-партнера">активации партнёров</Anchor>.
+
+<div id="general-settings" />
 
 ### Общие настройки
 
@@ -59,11 +67,15 @@ x-zendesk:
 **Чтобы подключить аккаунт Rockerbox к AppsFlyer,** введите ID аккаунта в поле **Rockerbox account ID**.   
 ID аккаунта Rockerbox доступен на платформе Rockerbox в разделе **Settings** > **Account** > **General**.
 
+<div id="default-postbacks" />
+
 ### Постбэки по умолчанию
 
 AppsFlyer может отправлять автоматические постбэки в Rockerbox после установки приложения пользователем. В этом разделе можно определить источник пользователей, постбэки для которых отправляются по каждому событию. Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#default-postbacks">постбэках по умолчанию</Anchor>.
 
 Выберите **All media sources, including organic**, чтобы отправлять постбэки в Rockerbox для любого пользователя, загрузившего приложение.
+
+<div id="in-app-events-settings" />
 
 ### In-App Events Settings (Настройки внутренних событий приложения)
 

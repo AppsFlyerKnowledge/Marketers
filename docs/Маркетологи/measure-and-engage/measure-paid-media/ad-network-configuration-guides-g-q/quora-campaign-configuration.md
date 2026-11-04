@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/quora.png?v=1" width="83px" />
 
+<div id="setting-up-quora" />
+
 ## Настройка Quora
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -43,6 +45,8 @@ x-zendesk:
 
 Подробное описание заголовка окна настройки параметров партнера см. <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">здесь</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Совет.**
 >
 > * Этап <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#d-general-settings">Общие настройки</Anchor> на вкладке Интеграция необходимо **обязательно** выполнять для всех партнеров.
@@ -52,6 +56,8 @@ x-zendesk:
 
 <Accordion title="Вкладка «Интеграция»">
 
+<div id="activate-partner" />
+
 ### Активация партнера
 
 При **первом посещении** включите **Активировать партнера**, чтобы настройка параметров на вкладке интеграции стала возможной. Переключатель должен оставаться во включенном положении все время, которое вы работаете с Medialyzer.Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активации партнеров</Anchor>.
@@ -59,6 +65,8 @@ x-zendesk:
 Постбэки по умолчанию
 
 Отправляйте автоматические постбэки в Quora после установок пользователей.
+
+<div id="note" />
 
 > 📘 **Примечание:**
 >
@@ -100,6 +108,8 @@ x-zendesk:
 На этой вкладке можно выбрать разрешения для Quora в зависимости от того, в каком качестве выступает партнер: как рекламная сеть, агентство или и то, и другое. Обратите внимание, что, даже если атрибуция для Quora отключена, вкладка разрешений остается активной и вы можете предоставить Quora разрешение на управление.
 
 Используйте эти переключатели, чтобы уполномочить рекламную сеть самостоятельно обрабатывать конфигурацию для вашего приложения:
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions (Разрешения для рекламной сети)
 

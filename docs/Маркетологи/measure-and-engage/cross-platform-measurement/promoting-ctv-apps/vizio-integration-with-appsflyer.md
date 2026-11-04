@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Интегрируйте свое приложение Vizio Connected TV (CTV) (канал) с AppsFlyer, чтобы получать данные об атрибуции и событиях для ваших кампаний на Vizio.
 
+<div id="about-vizio-ctv-attribution" />
+
 ## Об атрибуции Vizio CTV
 
 Операционная система Vizio SmartCast для потоковой передачи работает на всех телевизорах Vizio.
@@ -34,9 +36,13 @@ x-zendesk:
 * Смарт-ТВ Vizio.
 * Атрибуция и регистрация событий между CTV-to-CTV. Значение, атрибуция и запись первого открытия приложения Vizio (эквивалент установки) и событий, происходящих на пользовательском устройстве Vizio.
 
+<div id="vizio-attribution-flow" />
+
 ### Порядок атрибуции Vizio
 
 ![CTV_attribution_flow_-_Vizio__1_.png](https://files.readme.io/f4ab4b6c9e045fe00b537814fa9f10746b525a5512e5805e62eb0c2e4c9a8615-6318406872337.png)
+
+<div id="integration-procedures" />
 
 ## Процедуры интеграции
 
@@ -61,6 +67,8 @@ x-zendesk:
 | Данные о затратах | Данные о затратах должны быть отправлены через <Anchor target="_blank" href="/marketers/ru/docs/import-cost-data">Cost Import</Anchor> методом загрузки файла по электронной почте. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

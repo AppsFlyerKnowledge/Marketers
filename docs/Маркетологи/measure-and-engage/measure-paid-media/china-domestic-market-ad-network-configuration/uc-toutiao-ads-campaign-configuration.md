@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** UC Toutiao Ads, интегрированный партнер рекламной сети AppsFlyer, — одно из ведущих новостных приложений-агрегаторов в Китае.
 
+<div id="setting-up-uc-toutiao" />
+
 ## Настройка UC Toutiao
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -43,16 +45,22 @@ x-zendesk:
 
 <Accordion title="Вкладка «Интеграция»">
 
+<div id="activate-partners" />
+
 ### Активация партнеров
 
 При **первом посещении** вам нужно перевести переключатель ***Активировать партнера*** в положение «Включено», чтобы можно было настроить параметры вкладки интеграции. Кнопка ДОЛЖНА оставаться в положении «Включено», пока вы работаете с этим партнером.  
 Дополнительная информация по активации партнеров доступна <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Постбэки по умолчанию
 
 По умолчанию UC Toutiao получает постбэки только по событиям новых установок, атрибутированным ему.
 
 ![uc-toutiao-integration.png](https://files.readme.io/1ed78bd49d9a49d134f5c48655765ad205515752d88528a0a453bd3a091492c0-360002074869.png)
+
+<div id="in-app-events-settings" />
 
 ### In-App Events Settings (Настройки внутренних событий приложения)
 
@@ -86,6 +94,8 @@ x-zendesk:
 
 На этой вкладке есть несколько разделов:
 
+<div id="attribution-link-parameters" />
+
 ### Параметры ссылки атрибуции
 
 В этом разделе можно выбрать параметры для добавления в ссылку атрибуции.
@@ -107,6 +117,8 @@ x-zendesk:
 
 Если нужно добавить в ссылку атрибуции другой параметр, просто введите его в поле нового параметра. Дополнительные сведения см. в статье <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">**Структура и параметры ссылки атрибуции в AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Атрибуция по кликам
 
 Этот ползунок позволяет задать **максимальное время от клика до установки**. Для UC Toutiao атрибутируются только те установки (первые запуски), которые произошли в пределах окна атрибуции/лукбэка.
@@ -116,6 +128,8 @@ x-zendesk:
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">окне атрибуции по клику см. здесь</Anchor>.
 
 ![uc-toutiao-click-through.png](https://files.readme.io/8128e80c365aa223105260a25aa99a61bd9eeccdf19d311804ed3e66b744ef39-360002074929.png)
+
+<div id="click-attribution-link" />
 
 ### Ссылка атрибуции для клика
 
@@ -146,6 +160,8 @@ x-zendesk:
 Для этого партнера настройка разрешений недоступна.
 
 </Accordion>
+
+<div id="create-conversion-at-uc-toutiao-ads" />
 
 ## Создайте конверсию в рекламе uc toutiao ads
 

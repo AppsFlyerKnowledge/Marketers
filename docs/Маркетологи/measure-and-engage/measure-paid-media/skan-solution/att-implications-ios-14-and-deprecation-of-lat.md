@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Краткий обзор**: Начиная с iOS 14, iOS использует ATT для определения предпочтений пользователей в области конфиденциальности, и ограниченное отслеживание рекламы (LAT) устарело.
 
+<div id="att-values" />
+
 ### Значения ATT
 
 * Начиная с iOS 14: Apple <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> (ATT) предоставляет значения статуса для авторизации отслеживания приложений.
@@ -39,6 +41,8 @@ x-zendesk:
 * В некоторых случаях ATT заполняется значениями, определенными AppsFlyer. Они обозначены префиксом *af* в таблица.
 * Если IDFA недоступен, он заполняется нулями.
 
+<div id="att-values-defined-by-apple" />
+
 #### Значения ATT, определенные Apple
 
 | Статус ATT | Наличие IDFA | Поведение |
@@ -48,6 +52,8 @@ x-zendesk:
 | Отклонено | Не доступно | Возникает, если выполняется одно из следующих условий:<ul><li>Устанавливается после отображения запроса</li><li>пользователь отключил функцию *Разрешить приложениям запрашивать отслеживание* (главный переключатель на уровне устройства)</li><li>Перед установкой iOS 14 на устройство LAT был включен</li></ul> |
 | Авторизовано | Доступно | Пользователь явно дал согласие. |
 
+<div id="additional-att-values-defined-by-appsflyer" />
+
 #### Дополнительные значения ATT, определенные AppsFlyer
 
 | Статус ATT | Замечание | Наличие IDFA |
@@ -55,6 +61,8 @@ x-zendesk:
 | af\_unknown | Значение ATT было сообщено рекламодатель, но оно не является известным значением согласно спецификации <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> | Зависит от версии iOS |
 | af\_authorized | Использование IDFA разрешено по одной из следующих причин:<ul><li>Версия iOS устройства: до iOS 14.</li><li>Сообщенное событие содержало IDFA, но не ATT. Например, Приложение с SDK (пакет средств разработки ПО) V5.X на устройстве, работающем под управлением версии iOS до iOS 14.</li></ul> | Доступно |
 | af\_unavailable | <ul><li>Рекламодатель не сообщил об ATT в данном событии, и IDFA недоступен.</li><li>SDK (пакет средств разработки ПО) AppsFlyer версии V5.X не поддерживает ATT и не получает IDFA.</li></ul> | Не доступно |
+
+<div id="is-lat-in-iosconsiderations-and-how-lat-translates-to-att-in-ios-14" />
 
 ### LAT в iOS — соображения и как LAT преобразуется в ATT в iOS 14
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Выявляйте и устраняйте распространённые проблемы и расхождения, связанные с Google Ads.
 
+<div id="google-ads-faq" />
+
 ## Вопросы и ответы по Google Ads
 
 <div id="why-am-i-not-seeing-clicks-from-google-ads" />
@@ -52,12 +54,16 @@ x-zendesk:
 
 Следуйте этому контрольному списку, чтобы устранить проблемы с отсутствующими установками:
 
+<div id="quick-fix" />
+
 #### Быстрое решение
 
 1. **Активируйте Google Ads в AppsFlyer**  
    В AppsFlyer в боковом меню откройте **Сотрудничество > Активные интеграции**, найдите **Google Ads** и подтвердите, что интеграция активна.
 2. **Импортируйте** `first_open`**конверсию в Google Ads**  
    В Google Ads перейдите на страницу <Anchor target="_blank" href="https://ads.google.com/aw/conversions">Сводка конверсий</Anchor> и убедитесь, что `first_open` событие конверсии импортировано. Для получения дополнительной информации смотрите <Anchor target="_blank" href="/marketers/ru/docs/google-ads-adwords-integration-setup-for-advertisers">Импорт конверсий вашего приложения</Anchor>.
+
+<div id="still-not-working" />
 
 #### Все еще не работает?
 
@@ -83,6 +89,8 @@ x-zendesk:
 
 Используйте этот контрольный список, чтобы убедиться, что ваши события в приложении правильно настроены и синхронизированы между AppsFlyer и Google Ads.
 
+<div id="quick-fix-checklist" />
+
 #### Контрольный список для быстрого исправления
 
 Следуйте этим шагам, чтобы быстро решить наиболее распространенные проблемы:
@@ -101,10 +109,14 @@ x-zendesk:
    2. Проверьте **Сводку действий по конверсии**.
    3. Импортируйте соответствующие события в приложении. Для получения дополнительной информации см. <Anchor target="_blank" href="/marketers/ru/docs/google-ads-adwords-integration-setup-for-advertisers">Импортировать конверсии вашего приложения</Anchor>.
 
+      <div id="note" />
+
       > 📘 **Примечание**
       >
       > Конверсии могут появляться до 6 часов после выполнения события.
 
+
+<div id="still-not-working-1" />
 
 #### Все еще не работает?
 
@@ -195,6 +207,8 @@ AppsFlyer поддерживает Link ID, созданные и на уров�
 
 Подробное описание параллельного отслеживания см. <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=ru">здесь</Anchor>.
 
+<div id="what-is-needed" />
+
 #### Что необходимо?
 
 Чтобы параллельное отслеживание работало как положено, конечный URL должен совпадать с тем, что указан в URL кампании, и быть помещен в <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348?hl=ru">параметре ValueTrack `{lpurl}` от Google</Anchor>.
@@ -228,6 +242,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 <Accordion title="Как настраиваются кампании для Android и iOS">
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > AppsFlyer поддерживает все мобильные кампании, включенные в Google Ads.
@@ -242,6 +258,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 Атрибуция для Android-приложений возможна при условии, что это приложение поддерживает GAID (Идентификатор рекламы Google), который должен передаваться в AppsFlyer через наш SDK.
 
+<div id="creating-conversion-recording-installs" />
+
 #### Настройка регистрации конверсий (установок)
 
 Подробное описание настройки регистрации конверсий см. <Anchor target="_blank" href="/marketers/ru/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">здесь</Anchor>.
@@ -249,6 +267,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 <span id="inapp_events"></span>Google Ads – Настройки Android-приложений – Отправка внутренних событий приложения
 
 Для лучшего измерения успеха своих кампаний по продвижению мобильных приложений в Google, вы можете отправлять внутренние события приложения в свою учётную запись Google Ads из своей учётной записи AppsFlyer.
+
+<div id="create-a-conversion-in-app-events" />
 
 #### Создание конверсии (внутренние события приложения)
 
@@ -260,6 +280,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 <Accordion title="Настройки iOS для Google Ads">
 
+<div id="google-ads---ios-configuration-app-campaigns" />
+
 #### Google Ads – Настройки для iOS-приложений: кампании для приложения
 
 Кампании для приложений позволяют продвигать ваше iOS-приложение в Google Search, YouTube и оторбражать его в одном месте.
@@ -268,13 +290,19 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 Однако **Google Ads может атрибутировать поиск iOS в ходе кампаний для приложений** по объявлениям, которые размещаются в **приложении Google Search**.
 
+<div id="creating-conversion-recording-installs-1" />
+
 #### Настройка регистрации конверсий (установок)
 
 Подробное описание настройки регистрации конверсий см. <Anchor target="_blank" href="/marketers/ru/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">здесь</Anchor>.
 
+<div id="google-ads---ios-configuration---sending-in-app-events" />
+
 #### Google Ads – Настройки для iOS-приложений – Отправка внутренних событий приложений
 
 Для лучшего измерения успеха своих кампаний по продвижению мобильных приложений в Google, вы можете отправлять внутренние события приложения в свою учётную запись Google Ads из своей учётной записи AppsFlyer.
+
+<div id="creating-a-conversion-in-app-events" />
 
 #### Создание конверсии (внутренние события приложения)
 
@@ -296,11 +324,15 @@ Google Ads требует от поставщиков атрибуции уда�
 
 </Accordion>
 
+<div id="google-ads-discrepancies" />
+
 ## Расхождения в данных с Google Ads
 
 Иногда возможны расхождения между дэшбордами Google Ads и AppsFlyer.
 
 Мы работаем в тесном контакте с Google Ads, чтобы свести к минимуму такие расхождения, тем не менее рекламодатели должны знать о том, с чем они связаны (см. ниже).
+
+<div id="both-ios-and-android" />
 
 #### Для iOS и Android
 
@@ -320,11 +352,15 @@ Google Ads требует от поставщиков атрибуции уда�
 | **События first\_open** | Google Ads получают события из Firebase, где DMA реализован правильно, и как следствие заявляются события с согласованием DMA. | Google Ads получают те же события также от AppsFlyer, где DMA реализован неверно, что приводит к тому, что все события сообщаются как не согласованные с DMA, и Google не может на них претендовать.<ul><li>Чтобы проверить, правильно ли реализован DMA <Anchor target="_blank" href="/marketers/ru/docs/raw-data-export-page#download-report">скачайте отчет о сырых данных</Anchor> и обратите внимание на поля, указанные в <Anchor target="_blank" href="/marketers/ru/docs/bulletin-dma-support-in-raw-data-reports">этом бюллетене</Anchor>.</li><li>См. [Раздел для разработчиков](https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance), чтобы узнать, как реализовать DMA в SDK</li></ul> |
 | **События ретаргетинга** | Google Ads может заявить о повторном взаимодействии с `ad_type=ClickToDownload` в ответе. | AppsFlyer считает `ad_type=ClickToDownload` событием конверсии UA, а не повторным вовлечением. В результате число повторных вовлечений в AppsFlyer может быть ниже. |
 
+<div id="notes" />
+
 > 📘 **Примечания**
 >
 > * В то время как в Google Ads все установки в рамках ретаргетинговой кампании отображаются в одном месте, на обзорном дэшборде AppsFlyer в представлении UA отображаются новые установки, в представлении ретаргетинга – повторные атрибуции, а в объединенном представлении – оба типа.
 > * Сравнивая данные в дэшборде Google Ads с данными в AppsFlyer, убедитесь, что данные в дэшборде Google Ads – это данные, импортированные из сервиса аналитики сторонних приложений (AppsFlyer). Данные, импортированные из Firebase или Google Play, имеют другую структуру, поэтому их невозможно полностью сопоставить с данными AppsFlyer. Сведения о том, как импортировать данные из AppsFlyer в дэшборд Google Ads, см. <Anchor target="_blank" href="/marketers/ru/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">здесь</Anchor>.
 > * Чтобы сравнить события установки (first\_open в Google Ads), нужно детально проанализировать события установки в отчёте о конверсиях в Google Ads. В Google Ads могут отображаться все конверсии (например, установки, покупки, подписки), поэтому необходимо выбирать из всех событий конверсии только события установки.
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

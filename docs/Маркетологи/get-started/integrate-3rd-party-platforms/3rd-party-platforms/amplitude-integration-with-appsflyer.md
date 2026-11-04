@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** **Краткий обзор:** Интегрируйте AppsFlyer с Amplitude, чтобы делиться данными атрибуции пользователей и аналитикой по событиям для лучшего понимания вовлечённости пользователей, удержания и дохода. Выберите **одну из двух версий интеграции: V1 или V2** в зависимости от ваших целей и потребностей в аналитике.
 
+<div id="about-the-integration" />
+
 ## Об интеграции
 
 Amplitude, интегрированный партнёр AppsFlyer, является платформой для аналитики продуктов, которую используют специалисты по продукту, росту и маркетингу для понимания поведения пользователей на мобильных и веб-платформах. Интеграция позволяет AppsFlyer отправлять ключевые данные о событиях в Amplitude после установки, что позволяет проводить комплексный анализ на уровне пользователей.
@@ -50,6 +52,8 @@ Amplitude, интегрированный партнёр AppsFlyer, являет
 > * Выберите интеграцию Amplitude V1 или V2. **Не используйте обе версии** одновременно. Использование обеих версий одновременно может привести к отправке дублирующихся событий в Amplitude.
 > * Некоторые медиа-источники ограничивают передачу данных третьим лицам. Постбэки для ограниченных событий не будут отправляться этому партнёру, даже если они настроены.
 
+<div id="prerequisites" />
+
 ## Необходимые условия
 
 **Прежде чем начать:**
@@ -59,6 +63,8 @@ Amplitude, интегрированный партнёр AppsFlyer, являет
 * Проверьте, чтобы у вас не отправлялись одни и те же события как из SDK Amplitude, так и из AppsFlyer, чтобы предотвратить дублирование.
 * См. дополнительные необходимые условия для интеграции Amplitude V2.
 
+<div id="additional-prerequisites-for-the-amplitude-v2-integration" />
+
 ### Дополнительные необходимые условия для интеграции Amplitude V2.
 
 Для интеграции V2 необходимо настроить:
@@ -66,6 +72,8 @@ Amplitude, интегрированный партнёр AppsFlyer, являет
 * [Идентификатор устройства Amplitude](/docs/amplitude-integration-with-appsflyer#идентификатор-устройства-amplitude)
 * [Идентификатор пользователя клиента](/docs/amplitude-integration-with-appsflyer#идентификатор-пользователя-клиента)
 * [Идентификатор сессии Amplitude](/docs/amplitude-integration-with-appsflyer#идентификатор-сессии-amplitude)
+
+<div id="amplitude-device-id" />
 
 #### Идентификатор устройства Amplitude
 
@@ -165,10 +173,14 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="customer-user-id" />
+
 #### Идентификатор пользователя клиента
 
 Настройка идентификатора пользователя (CUID). Это уникальный идентификатор, который обычно генерируется и устанавливаемый владельцем приложения во время регистрации пользователя.  
  <Anchor target="_blank" href="/marketers/ru/docs/customer-user-id-field-cuid?utm_source=chatgpt.com">Подробнее</Anchor>
+
+<div id="amplitude-session-id" />
 
 #### Идентификатор сессии Amplitude
 
@@ -268,6 +280,8 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="set-up-the-integration" />
+
 ## Настройка интеграции
 
 **Для настройки интеграции:**
@@ -294,11 +308,17 @@ appsFlyerSdk.setAdditionalData(data);
 
 Вкладка Integration («Интеграция») содержит несколько разделов, которые описаны ниже.
 
+<div id="activate-partner" />
+
 ### Активация партнёра
 
 При **первом заходе** сюда включите **Активацию партнёра**, чтобы настройка параметров на вкладке интеграции стала возможной. Этот переключатель должен быть активирован все время, пока вы работаете с этим партнером.Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активации партнеров</Anchor>.Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активации партнеров</Anchor>.
 
+<div id="general-settings" />
+
 ### Общие настройки
+
+<div id="advanced-data-sharing" />
 
 #### Расширенный обмен данными
 
@@ -321,10 +341,14 @@ appsFlyerSdk.setAdditionalData(data);
 | af\_sub5 | af\_sub5 |
 | Двухбуквенное сокращение названия континента | Двухбуквенное сокращение названия континента |
 
+<div id="amplitude-eu-data-center" />
+
 #### Центр обработки данных Amplitude в ЕС
 
 Когда **Центр обработки данных Amplitude в ЕС** выключен, постбэки об установках отправляются в центр обработки данных в США.  
 Для отправки постбэков об установках в центр обработки данных в ЕС включите Центр обработки данных Amplitude в ЕС.
+
+<div id="api-key" />
 
 #### Ключ API
 
@@ -346,11 +370,15 @@ Amplitude подключается с AppsFlyer через уникальный 
    <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. Перейдите к настройке Amplitude на дэшборде AppsFlyer.
 
+<div id="default-postbacks" />
+
 ### Постбэки по умолчанию
 
 AppsFlyer может отправлять автоматические постбэки в Amplitude после установки пользователя. В этом разделе можно определить источник пользователей, которому нужно отправлять постбэки. Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#default-postbacks">постбэках по умолчанию</Anchor>.
 
 <Image alt="Screenshot 2025-12-03 at 1.57.03 PM.png" src="https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png" width="703px" />
+
+<div id="in-app-event-settings" />
 
 ### Настройки внутренних событий приложения
 
@@ -365,6 +393,8 @@ AppsFlyer может отправлять автоматические пост�
 * Доступно только в <Anchor target="_blank" href="/marketers/ru/docs/about-data-locker-advanced-reports">расширенных отчётах</Anchor>.
 
 Отправка IDFA для устройств iOS осуществляется с согласия пользователя <Anchor target="_blank" href="/marketers/ru/docs/apply-aggregated-advanced-privacy-framework">на ATT и с учётом настроек повышенной конфиденциальности</Anchor>.
+
+<div id="in-app-event-postbacks" />
 
 ### Постбэки по внутренним событиям приложения
 
@@ -396,6 +426,8 @@ AppsFlyer может отправлять автоматические пост�
 
 </Accordion>
 
+<div id="viewing-attribution-data-in-the-amplitude-console" />
+
 ## Просмотр данных атрибуции в консоли Amplitude
 
 Данные атрибуции, отправленные из AppsFlyer в Amplitude, отображаются на ваших дэшбордах в виде событий и свойств с префиксом **[AppsFlyer]**:
@@ -407,6 +439,8 @@ AppsFlyer может отправлять автоматические пост�
 > **Двоеточие (:)**
 >
 > В некоторых случаях Amplitude показывает данные, полученные от AppsFlyer, как «Заблокировано». Если вы не видите данные AppsFlyer в Amplitude, проверьте, не определено ли это событие как заблокированное.
+
+<div id="sending-amplitude-events-to-appsflyer" />
 
 ## Отправка событий Amplitude в AppsFlyer
 

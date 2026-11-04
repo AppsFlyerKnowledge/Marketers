@@ -24,6 +24,8 @@ x-zendesk:
 
 ![emaillabs-af-logo.png](https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png)
 
+<div id="introduction" />
+
 ## Введение
 
 ESP (поставщики услуг электронной почты) могут быть отличными источниками сегментированного пользовательского трафика.
@@ -31,6 +33,8 @@ ESP (поставщики услуг электронной почты) могу
 Одна из сложностей при использовании ESP — записывать клики, сохраняя при этом функциональность диплинкинга. ESP оборачивают URL-адрес диплинка в собственный домен для записи кликов. Это действие часто приводит к сбоям универсальных ссылок iOS.
 
 Однако при использовании ESP, которые поддерживают универсальные ссылки поверх своего домена отслеживания кликов, диплинкинг и отслеживание кликов по-прежнему можно успешно выполнять.
+
+<div id="sdk-version-prerequisites" />
 
 ## Требования к версии SDK
 
@@ -48,6 +52,8 @@ ESP (поставщики услуг электронной почты) могу
 </Tab>
 </Tabs>
 
+<div id="step-1-integration-setup-in-emaillabs" />
+
 ## Шаг 1. Настройка интеграции в EmailLabs
 
 **Чтобы настроить интеграцию в EmailLabs:**
@@ -60,6 +66,8 @@ ESP (поставщики услуг электронной почты) могу
 4. Свяжитесь со службой поддержки EmailLabs по адресу [bok@emaillabs.pl](mailto:bok@emaillabs.pl) и попросите включить SSL.
 5. В EmailLabs перейдите в раздел **Панель** > **Учетные записи** **SMTP** > **Настройки** > **Диплинки** и установите флажок «Активировано». Для приложений iOS введите <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/AppID.html">Apple Application ID</Anchor> в соответствующее поле.  
    ![deeplinking-section-5.png](https://files.readme.io/15a5b45a58c1a130de6bfe2c3e9e3b379537b4fc549c1c3fcce41ef54b8653e9-49839289277073.png)
+
+<div id="step-2-configuring-your-appsflyer-sdk" />
 
 ### Шаг 2: Настройка SDK AppsFlyer
 
@@ -79,6 +87,8 @@ ESP (поставщики услуг электронной почты) могу
    [[AppsFlyerLib shared] resolveDeepLinkURLs = @[@"example.com",@"click.example.com"];
    ```
 3. Когда приложение вызывается кликом по универсальной ссылке, AppsFlyer SDK разрешает диплинк и извлекает ссылку OneLink. Затем все параметры диплинка передаются в API onAppOpenAttribution для выполнения логики диплинка.
+
+<div id="step-3-send-emails-with-onelink-through-emaillabs" />
 
 ## Шаг 3: Отправка электронных писем с OneLink через EmailLabs
 
@@ -111,6 +121,8 @@ ESP (поставщики услуг электронной почты) могу
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="step-4-test-your-links" />
 
 ## Шаг 4: Протестируйте ссылки
 

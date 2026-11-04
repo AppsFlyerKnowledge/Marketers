@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
 
+<div id="introduction" />
+
 ## Введение
 
 ESP (поставщики услуг электронной почты) могут быть отличными источниками сегментированного пользовательского трафика.
@@ -35,6 +37,8 @@ ESP (поставщики услуг электронной почты) могу
 Одна из проблем ESP — запись кликов при сохранении функциональности диплинков. ESP упаковывают URL-адрес диплинка, используя свои собственные домены регистрации кликов. Эта процедура иногда прерывает процесс универсальных ссылок iOS.
 
 Iterable поддерживает универсальные ссылки в дополнение к доменам записи кликов, и с помощью этого решения можно по-прежнему выполнять перенаправление по диплинкам и запись кликов.
+
+<div id="prerequisites" />
 
 ## Необходимые условия
 
@@ -54,7 +58,11 @@ Iterable не поддерживает Android App Links. Однако <Anchor t
 </Tab>
 </Tabs>
 
+<div id="setting-up-iterable" />
+
 ## Настройка Iterable
+
+<div id="step-1-setting-up-link-branding-in-iterable" />
 
 ### Шаг 1: Настройка брендинга ссылок в Iterable
 
@@ -62,9 +70,13 @@ Iterable не поддерживает Android App Links. Однако <Anchor t
 
 Дополнительные сведения о настройке домена записи кликов с помощью Iterable см. <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115002651226-Setting-up-mail-domains">здесь</Anchor>.
 
+<div id="step-2-uploading-your-ssl-certificate-to-iterable" />
+
 ### Шаг 2: Загрузка SSL-сертификата в Iterable
 
 Ваш домен регистрации кликов должен содержать сертификат SSL вашего домена. Сертификат SSL должен быть установлен в вашем аккаунте Iterable. Инструкции по установке сертификатов SSL можно найти <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115000427446-How-to-Set-up-HTTPS-for-Links-for-Click-Tracking">здесь</Anchor>.
+
+<div id="step-2-give-iterable-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Шаг 2: Предоставьте Iterable файл AASA (iOS) и ссылки на ресурсы (Android)
 
@@ -97,6 +109,8 @@ Iterable не поддерживает Android App Links. Однако <Anchor t
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Настройка приложения
 
 Чтобы настроить приложения для поддержки App Links и универсальных ссылок iOS, см. следующее.
@@ -104,6 +118,8 @@ Iterable не поддерживает Android App Links. Однако <Anchor t
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Шаг 1 для Android: Настройка приложения для поддержки App Links">
+
+<div id="step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Шаг 1: Добавление домена кликов к активности в манифесте Android
 
@@ -121,6 +137,8 @@ Iterable не поддерживает Android App Links. Однако <Anchor t
      </intent-filter>
 </activity>
 ```
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 #### Шаг 2: Настройка приложения для разрешения доменов кликов
 
@@ -142,6 +160,8 @@ SDK необходимо разрешить ссылку OneLink в рамках
 <Accordion title="Шаг 1 для iOS: Настройка приложения для поддержки универсальных ссылок">
 
 В этом разделе рассматривается настройка приложения для поддержки универсальных ссылок.
+
+<div id="step-1-associating-click-domains-in-xcode" />
 
 #### Шаг 1: Ассоциирование доменов кликов в Xcode
 
@@ -240,6 +260,8 @@ SDK необходимо разрешить ссылку OneLink в рамках
 
 </Accordion>
 
+<div id="sending-your-first-email" />
+
 ## Отправка первого письма
 
 1. Создайте URL-адрес OneLink на странице управления ссылками (или вручную).
@@ -270,6 +292,8 @@ SDK необходимо разрешить ссылку OneLink в рамках
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Тестирование ссылок
 

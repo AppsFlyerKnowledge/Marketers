@@ -25,13 +25,19 @@ x-zendesk:
 ---
 > **Краткий обзор.** Отправляйте данные аналитики Segment в AppsFlyer.
 
+<div id="introduction" />
+
 ## Введение
 
 Segment позволяет легко отправлять данные в AppsFlyer. После записи данных в библиотеках Segment с открытым исходным кодом эти данные переводятся и направляются в AppsFlyer в соответствующем формате. AppsFlyer помогает маркетологам точно определить таргетинг, оптимизировать расходы на рекламу и повысить ROI.
 
+<div id="integrating-segment-with-appsflyer" />
+
 ## Интеграция Segment с AppsFlyer
 
 Следуйте <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/">этому руководству от Segment</Anchor>, чтобы узнать, как интегрировать Segment с AppsFlyer.
+
+<div id="faqs" />
 
 ## Вопросы и ответы
 
@@ -65,6 +71,8 @@ Segment позволяет легко отправлять данные в AppsF
 Когда вы используете обертку Segment SDK для вызова методов Segment для записи установок и событий в приложении, обертка SDK вызывает методы как Segment, так и AppsFlyer.
 
 Это сэкономит ваше время и усилия и потребует меньше написания кода.
+
+<div id="warning" />
 
 > ❗️ **Предупреждение**
 >

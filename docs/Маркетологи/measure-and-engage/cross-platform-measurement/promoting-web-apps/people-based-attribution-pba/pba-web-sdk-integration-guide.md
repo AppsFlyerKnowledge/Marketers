@@ -24,6 +24,8 @@ x-zendesk:
 
 ![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-sdk-user-and-integration-guide" />
+
 ## Руководство пользователя и по интеграции веб-SDK
 
 * Тег JavaScript для веб-SDK:
@@ -33,6 +35,8 @@ x-zendesk:
   * Размер: 40-60Кб.
 * Внедрите веб-SDK вместе с мобильным SDK AppsFlyer для регистрации и отображения активности пользователей в мобильных приложениях и веб-средах.
 * События, происходящие за пределами веб-сайта, могут быть записаны с помощью <Anchor target="_blank" href="/marketers/ru/docs/web-server-to-server-events-api-for-pba-web-s2s">API server-to-server для событий в браузере</Anchor> (веб-S2S)
+
+<div id="selecting-a-code-snippet" />
 
 ## Выбор фрагмента кода
 
@@ -47,9 +51,13 @@ x-zendesk:
 >
 > Если вы переходите от стандартного веб-SDK к расширенной проверке SDK, замените свой текущий сниппет новым. Не добавляйте новый сниппет поверх существующего.
 
+<div id="standard-web-sdk" />
+
 ### Стандартный Web SDK
 
 Используйте этот сниппет для развертывания стандартной интеграции Web SDK. Вставьте его рядом с верхней частью тега  на всех страницах, где вы хотите загрузить SDK.
+
+<div id="standard-without-smart-banners" />
 
 <Accordion title="Без Smart Banners">
 
@@ -61,6 +69,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="standard-with-smart-banners" />
+
 <Accordion title="С Smart Banners">
 
 ```html
@@ -71,6 +81,8 @@ x-zendesk:
 ```
 
 </Accordion>
+
+<div id="advanced-sdk-verification" />
 
 ### Расширенная проверка SDK
 
@@ -85,6 +97,8 @@ x-zendesk:
 
 Если ваш сайт применяет Политику безопасности контента (CSP) с использованием nonce, смотрите [Политику безопасности контента (CSP)](#content-security-policy-csp) в разделе Управление конфиденциальностью для варианта этого сниппета с расширенным nonce.
 
+<div id="advanced-verification-without-smart-banners" />
+
 <Accordion title="Без Smart Banners">
 
 ```html
@@ -92,6 +106,8 @@ x-zendesk:
 ```
 
 </Accordion>
+
+<div id="advanced-verification-with-smart-banners" />
 
 <Accordion title="С Smart Banners">
 
@@ -101,9 +117,15 @@ x-zendesk:
 
 </Accordion>
 
+<div id="integrating-the-web-sdk-into-the-website" />
+
 ## Интеграция веб-SDK в сайт
 
+<div id="installation-and-integration" />
+
 <Accordion title="Установка и интеграция">
+
+<div id="considerations-and-actions-required" />
 
 #### Соображения и необходимые действия
 
@@ -140,15 +162,21 @@ x-zendesk:
 <Tabs>
 <Tab title="Нативная">
 
+<div id="javascript-code-snippet" />
+
 #### Фрагмент кода JavaScript
 
 Интегрируйте веб-пакет SDK одним из следующих способов.
+
+<div id="to-install-the-web-sdk-without-smart-banners" />
 
 #### **Чтобы установить веб-SDK без смарт-баннеров:**
 
 1. Повторите следующую процедуру на всех страницах вашего сайта.
 2. В следующем фрагменте кода замените `WEB_DEV_KEY` на ключ, указанный в необходимых условиях.
 3. Вставьте [выбранный выше](#step-2-select-a-code-snippet) сниппет кода в тег head вашего сайта. В теге head он должен располагаться ближе к началу.
+
+<div id="to-implement-the-web-sdk-with-smart-banners" />
 
 #### **Чтобы внедрить веб-SDK со смарт-баннерами:**
 
@@ -212,6 +240,8 @@ x-zendesk:
 3. [Добавление тега Adobe Launch на сайт](/docs/pba-web-sdk-integration-guide#add-the-adobe-launch-tag-to-the-website)
 4. [Публикация среды Adobe Launch](/docs/pba-web-sdk-integration-guide#publish-the-adobe-launch-environment)
 
+<div id="create-a-property-in-adobe-experience-cloud" />
+
 <Accordion title="Создание свойства в Adobe Experience Cloud">
 
 ![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
@@ -225,6 +255,8 @@ x-zendesk:
 7. Нажмите **Сохранить**.
 
 </Accordion>
+
+<div id="add-the-web-sdk-to-the-adobe-launch-property" />
 
 <Accordion title="Добавление веб-SDK в свойство Adobe Launch">
 
@@ -243,6 +275,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="add-the-adobe-launch-tag-to-the-website" />
+
 <Accordion title="Добавление тега Adobe Launch на сайт">
 
 ![adobe_tag.png](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)
@@ -257,6 +291,8 @@ x-zendesk:
 4. Вставьте этот фрагмент кода в тег &lt;head> сайта.
 
 </Accordion>
+
+<div id="publish-the-adobe-launch-environment" />
 
 <Accordion title="Публикация среды Adobe Launch">
 
@@ -287,6 +323,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="ensure-that-the-sdk-is-working" />
+
 <Accordion title="Убедитесь, что пакет SDK работает">
 
 После установки проверьте, что веб-SDK AppsFlyer вызывается браузером посетителя и что сообщения отправляются. Это делается путем проверки сообщения о сетевом соединении, о котором сообщается в браузере.
@@ -314,6 +352,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="sending-events-optinoptout" />
+
 <Accordion title="Согласие на отправку событий">
 
 ![5578-VistiorPrivacyOptIn_us-en.png](https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png)
@@ -328,12 +368,16 @@ x-zendesk:
   * Срок действия истекает по истечении периода, установленного веб-SDK или определенного браузером. После истечения срока действия файлов cookie веб-SDK возвращается к исходным настройкам состояния.
   * Файл cookie Web-SDK не вмешивается в настройки файлов cookie, задаваемые в браузере, и всегда подчиняется им.
 
+<div id="sdk-initial-state-setting" />
+
 #### Настройка начального состояния SDK
 
 | Настройка | Фрагмент кода обязателен |
 | --- | --- |
 | [По умолчанию] Отправлять события | Внесите следующие изменения во фрагмент кода веб-SDK. При необходимости добавьте параметр measurementStatus:<br /><br />Установите measurementStatus=true<br /><br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:true}` |
 | Не отправлять события | Внесите следующие изменения во фрагмент кода веб-SDK. При необходимости добавьте параметр measurementStatus:<br /><br />Установите measurementStatus=false  <br />  <br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:false}` |
+
+<div id="explicit-control" />
 
 #### Явный контроль
 
@@ -344,9 +388,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="implement-a-content-security-policy-csp-policy" />
+
 <Accordion title="Реализация политики безопасности контента (CSP)">
 
 Если вашему сайту требуются строгие протоколы безопасности или конфиденциальности данных, используйте следующие механизмы, чтобы настроить взаимодействие Web-SDK с вашей средой и данными.
+
+<div id="content-security-policy-csp" />
 
 #### Политика безопасности контента (CSP)
 
@@ -366,7 +414,11 @@ x-zendesk:
 
 Совместимость политики CSP
 
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
+
 #### Расширенная проверка SDK с фрагментами CSP nonce
+
+<div id="nonce-without-smart-banners" />
 
 <Accordion title="Без Smart Banners">
 
@@ -375,6 +427,8 @@ x-zendesk:
 ```
 
 </Accordion>
+
+<div id="nonce-with-smart-banners" />
 
 <Accordion title="С Smart Banners">
 
@@ -386,11 +440,15 @@ x-zendesk:
 
 </Accordion>
 
+<div id="discard-query-params" />
+
 <Accordion title="Сброс параметров запроса">
 
 Если параметры запроса содержат данные, которые AppsFlyer не должен для вас регистрировать, вы можете указать платформе AppsFlyer отбрасывать некоторые или все параметры запроса. В таком случае они недоступны ни в сырых данных, ни в отчетах.
 
 Вы можете реализовать описанные методы в отношении url, рефереров и header\_referer.
+
+<div id="query-discard-options" />
 
 #### Параметры сброса запросов
 
@@ -401,7 +459,11 @@ x-zendesk:
 
 </Accordion>
 
+<div id="principles-of-event-recording" />
+
 ## Принципы записи событий
+
+<div id="conversion-and-standard-events" />
 
 <Accordion title="Конверсии и стандартные события">
 
@@ -409,6 +471,8 @@ x-zendesk:
 * Используя список <Anchor target="_blank" href="/marketers/ru/docs/pba-brand-bundles-and-settings#web-event-settings">событий конверсии</Anchor>, заданный маркетологом, AppsFlyer разбивает события на стандартные и события конверсии.
 * Данные о событиях конверсии доступны на дэшбордах PBA.
 * Данные о конверсиях и стандартных событиях доступны в <Anchor target="_blank" href="/marketers/ru/docs/pba-raw-data-reports">отчетах по сырым данным.</Anchor>
+
+<div id="conversion-events" />
 
 ### События конверсии
 
@@ -418,17 +482,23 @@ x-zendesk:
 * События конверсии используются для учета дохода и расчета ROI.
 * Используйте их для сравнения бюджета рекламы для конкретных медиа-источников с доходом, полученным от пользователей, которые приходят из этих медиа-источников.
 
+<div id="standard-events" />
+
 ### Стандартные события
 
 * Стандартные события используются для проверки пути пользователя и воронок, которые приводят к конверсиям.
 * Используйте их для измерения активности пользователей и выделения медиа-источников, которые привлекают вовлеченных пользователей.
 * Записывайте действия пользователей, чтобы помечать их для кампаний по повторному вовлечению.
 
+<div id="recording-events" />
+
 ### Запись событий
 
 Запускайте веб-SDK для записи событий при выполнении определенных условий, например, при загрузке целевой страницы или при взаимодействии пользователей с элементами сайта. [Смотрите примеры записи событий](#recording-events::f1e16eae).
 
 </Accordion>
+
+<div id="identifying-users-using-customer-user-id-cuid" />
 
 <Accordion title="Идентификация пользователей с помощью идентификатора клиента (CUID)">
 
@@ -450,6 +520,8 @@ AF('pba', 'setCustomerUserId' , '663274')
 
 </Accordion>
 
+<div id="web-sdk-event-parameters" />
+
 <Accordion title="Параметры событий веб-SDK">
 
 | Имя параметра | Обязательно | Описание |
@@ -464,6 +536,8 @@ AF('pba', 'setCustomerUserId' , '663274')
 
 </Accordion>
 
+<div id="recording-event-scenarios" />
+
 <Accordion title="Запись сценариев событий">
 
 Пример события
@@ -474,6 +548,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 ```
 
 Отправляемые события зависят от характера веб-приложения. Например, для приложения интернет-магазина требуется набор событий, которые отличаются от событий новостного издания. Ознакомьтесь с приведенными ниже сценариями, чтобы получить представление о событиях, которые вы должны отправить, а также о том, когда они должны быть отправлены.
+
+<div id="online-store" />
 
 #### Интернет-магазин
 
@@ -492,6 +568,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 * Покупка подписки: событие конверсии
 
 </Accordion>
+
+<div id="ensuring-that-events-are-sent" />
 
 <Accordion title="Обеспечение отправки событий">
 
@@ -517,7 +595,11 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 
 </Accordion>
 
+<div id="examples" />
+
 ## Примеры
+
+<div id="recording-events::f1e16eae" />
 
 <Accordion title="Запись событий">
 
@@ -727,6 +809,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 
 </Accordion>
 
+<div id="setting-customer-user-id-after-signup" />
+
 <Accordion title="Установка идентификатора клиента после регистрации">
 
 Код, приведенный в этих примерах, приведен только для справки. Не используйте этот код как есть. Если вы не знаете, как использовать этот код, проконсультируйтесь со своим веб-разработчиком. 
@@ -923,7 +1007,11 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 </Accordion>
 
+<div id="addtional-information" />
+
 ## Дополнительные сведения
+
+<div id="web-sdk-cookies" />
 
 <Accordion title="Файлы cookie для веб-SDK">
 
@@ -946,6 +1034,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 </Accordion>
 
+<div id="release-notes" />
+
 <Accordion title="Заметки о выпуске веб-SDK">
 
 | Дата | Версия | Примечания |
@@ -957,6 +1047,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 | 30.07.2020 | 1.0 | <ul><li>Явное управление запуском/остановкой отправки событий</li><li>Изменение начального состояния по умолчанию</li></ul> |
 
 </Accordion>
+
+<div id="deprecations" />
 
 <Accordion title="Прекращение поддержки">
 

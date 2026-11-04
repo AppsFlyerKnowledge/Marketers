@@ -27,13 +27,19 @@ x-zendesk:
 ---
 > **Краткий обзор.** Используйте AppsFlyer с Trusted Web Activities (TWA) для измерения количества установок и регистрации событий в приложении.
 
+<div id="introduction" />
+
 ## Введение
+
+<div id="what-are-trusted-web-activities" />
 
 ### Что такое Trusted Web Activities?
 
 Trusted Web Activities (TWA) — это новый способ интеграции веб-контента в приложение для Android. Сложность с TWA заключается в том, чтобы иметь возможность регистрировать события в приложении. Эта проблема рассматривается в данной статье. Более подробную информацию о TWA смотрите <Anchor target="_blank" href="https://developers.google.com/web/updates/2019/02/using-twa">здесь</Anchor>.
 
 TWA также можно использовать с Progressive Web Apps.
+
+<div id="what-are-progressive-web-apps" />
 
 ### Что такое Progressive Web Apps?
 
@@ -52,6 +58,8 @@ Progressive Web Apps (PWA) — это приложения, которые вы�
 <Accordion title="Отправка событий в приложении из TWA">
 
 События в приложении отправляются с помощью AppsFlyer SDK из активностей нативного приложения. Поскольку TWA имеет веб-основу, а не нативные активности, вы не можете отправлять события в приложении с помощью AppsFlyer SDK. В качестве альтернативы можно использовать <Anchor target="_blank" href="/marketers/ru/docs/server-to-server-events-api-for-mobile-s2s-mobile">события внутри приложения от сервера к серверу</Anchor>. Следуйте приведенным ниже инструкциям, чтобы отправить события с сервера на сервер с помощью TWA.
+
+<div id="prerequisites" />
 
 ### Необходимые условия
 
@@ -92,6 +100,8 @@ Progressive Web Apps (PWA) — это приложения, которые вы�
        import androidx.browser.trusted.TrustedWebActivityIntentBuilder;
        ```
 
+<div id="getting-the-appsflyer-id" />
+
 ### Получение идентификатора AppsFlyer ID
 
 Чтобы отправлять события с сервера на сервер, вам нужен идентификатор AppsFlyer. Вы можете получить AppsFlyer ID из SDK AppsFlyer для Android.
@@ -101,6 +111,8 @@ Progressive Web Apps (PWA) — это приложения, которые вы�
 ```java
 String appsflyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
 ```
+
+<div id="sending-the-appsflyer-id-to-twa" />
 
 ### Отправка AppsFlyer ID в TWA
 
@@ -141,6 +153,8 @@ private void launchTwa(String cuid, String af_id) {
     CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);
 }
 ```
+
+<div id="retrieving-the-appsflyer-id" />
 
 #### Получение идентификатора AppsFlyer ID
 
@@ -199,6 +213,8 @@ private void launchTwa(String cuid, String af_id) {
 }
 ```
 
+<div id="retrieving-the-appsflyer-id-1" />
+
 #### Получение идентификатора AppsFlyer ID
 
 JavaScript не предоставляет API, позволяющего разработчикам получать доступ к заголовкам. Поэтому сервер должен отправить данные о конверсии обратно в веб-активность в виде cookie. Сервер получает пользовательские заголовки, содержащие идентификатор AppsFlyer, анализирует эти данные и отправляет их на веб-страницу в виде cookie.
@@ -219,6 +235,8 @@ console.log(appsflyer_id);
 ```
 
 </Accordion>
+
+<div id="sending-the-in-app-event" />
 
 ### Отправка события в приложении
 
@@ -243,6 +261,8 @@ AppsFlyer SDK предоставляет вам данные о конверси
 * <Anchor target="_blank" href="https://dev.appsflyer.com/docs/api-reference#onappopenattribution">On app open attribution</Anchor> вызывается при переходе пользователя в приложение по диплинку на основе OneLink.
 
 Вы можете использовать данные о конверсии для настройки веб-контента.
+
+<div id="sending-conversion-data-to-twa" />
 
 ### Отправка данных о конверсии в TWA
 
@@ -281,6 +301,8 @@ private void launchTwa(Map<String, String> conversionData, String cuid, String a
     CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);
 }
 ```
+
+<div id="fetching-the-conversion-data-from-the-client-side" />
 
 ### Получение данных о конверсии со стороны клиента
 

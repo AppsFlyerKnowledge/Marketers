@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** Автоматически создавайте и тестируйте код интеграции SDK.
 
+<div id="about-the-sdk-integration-wizard" />
+
 ## О мастере интеграции SDK
 
 Позвольте нашему <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?sourceos=android&utm_source=kb&utm_medium=sdk-int-wizard-orvw">мастеру интеграции SDK</Anchor> провести разработчика приложений через процесс интеграции SDK. Разработчику приложений достаточно указать некоторые учетные данные и параметры настройки, а мастер сгенерирует фрагменты кода, которые нужно скопировать и вставить в проект.
@@ -29,6 +31,8 @@ x-zendesk:
 
 * [Путь разработчика при установке и интеграции](#процесс-установки-и-интеграции): мастер проводит разработчика от установки до успешного тестирования интеграции.
 * [Путь разработчика для in-app событий](#процесс-настройки-событий-в-приложении): мастер помогает разработчику пройти путь от определения событий в приложении до успешного тестирования их передачи в AppsFlyer.
+
+<div id="the-installation-and-integration-flow" />
 
 ## Процесс установки и интеграции
 
@@ -46,6 +50,8 @@ x-zendesk:
 | Должен ли SDK поддерживать AppTrackingTransparency (ATT)? | <Anchor target="_blank" href="/marketers/ru/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support">Узнайте об ATT</Anchor>. |
 | Какой у вас токен аутентификации AppsFlyer v2? (Требуется, только если вы следуете автоматическому тестовому потоку.) | <Anchor target="_blank" href="/marketers/ru/docs/managing-appsflyer-tokens#открытие-страницы-токены">Узнайте, как получить токен v2</Anchor>. |
 
+<div id="the-add-in-app-event-flow" />
+
 ## Процесс настройки событий в приложении
 
 После того как разработчик приложений завершит работу мастера установки и интеграции, SDK AppsFlyer будет успешно интегрирован в ваше приложение. Этот процесс включает тест события в приложении, который подтверждает, что AppsFlyer получает событие при установке вашего приложения.
@@ -57,6 +63,8 @@ x-zendesk:
 | Выберите имя события и его параметры | <Anchor target="_blank" href="/marketers/ru/docs/adding-an-app-to-appsflyer#ввод-данных-приложение">Узнайте, какие предустановленные события вам доступны.</Anchor> Описание каждого события включает его типичные параметры события.  <br />Кроме того, вы можете использовать наш   <br />[генератор событий в приложении](https://evgen.appsflyer.com/). |
 | Должен ли SDK получать подтверждение того, что AppsFlyer получил событие в приложении? | Узнайте о коде, который проверяет, что события были успешно получены в AppsFlyer (<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-android#handling-event-submission-success-and-failure">Android</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-ios#handling-event-submission-success-and-failure">iOS</Anchor>). |
 | Какой у вас токен аутентификации AppsFlyer v2? (Требуется только при использовании сценария автоматического тестирования.) | <Anchor target="_blank" href="/marketers/ru/docs/managing-appsflyer-tokens#открытие-страницы-токены">Узнайте, как получить токен v2</Anchor>. |
+
+<div id="traits-and-limitations" />
 
 ## Спецификации и ограничения
 

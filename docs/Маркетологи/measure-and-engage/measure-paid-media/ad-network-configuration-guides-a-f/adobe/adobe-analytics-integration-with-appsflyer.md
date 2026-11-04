@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **Краткий обзор:** [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) (ранее Omniture) — это набор инструментов для предиктивной аналитики и аналитики в режиме реального времени, которые можно интегрировать в сторонние источники. Он включает в себя приложения для маркетинговых отчетов и аналитики (SiteCatalyst), специального анализа (Adobe Discover) и аналитических заключений, которые помогают создать целостное представление о бизнес-деятельности путем преобразования взаимодействия с клиентами в аналитические сведения.
 
+<div id="overview" />
+
 ## Обзор
 
 Эта интеграция заключается в двустороннем потоке данных между Adobe и AppsFlyer. Для успешной реализации интеграции необходимо внедрить код в приложение. Для полного успеха интеграции должны быть выполнены требования AppsFlyer и Adobe.
 
+<div id="setting-up-adobe-analytics-integration" />
+
 ## Настройка интеграции с Adobe Analytics
 
 Если вы используете Adobe Analytics Report Suite для общего анализа эффективности кампании и создания сегментов, то интеграция AppsFlyer с Adobe Analytics обеспечивает автоматическую передачу данных атрибуции из AppsFlyer в Adobe, чтобы помочь вам достичь ваших целей.
+
+<div id="prerequisites" />
 
 ### Необходимые условия:
 
 * Настройка <Anchor target="_blank" href="https://developer.adobe.com/client-sdks/documentation/">документации мобильного SDK для Adobe Experience Platform</Anchor>
 * Сервис <Anchor target="_blank" href="https://experienceleague.adobe.com/en/docs/id-service/using/home">Marketing Cloud Visitor ID</Anchor> или Experience cloud ID
 * Три eVar в каждом пакете отчетов, которые можно использовать только для этой интеграции
+
+<div id="step-1-share-adobe-experience-cloud-id-ecid-marketing-cloud-id-or-visitor-id-with-appsflyer" />
 
 ### Шаг 1: Передайте идентификатор Adobe Experience Cloud (ECID, идентификатор Marketing Cloud или идентификатор посетителя) в AppsFlyer.
 
@@ -137,6 +145,8 @@ let customerUserID = AppsFlyerLib.shared().customerUserID
 
 </Accordion>
 
+<div id="step-2-configure-adobe-analytics-in-appsflyer" />
+
 ### Шаг 2: Настройка аналитики Adobe в AppsFlyer
 
 **Предварительные условия:** Перед настройкой интеграции не забудьте [передать идентификатор посетителя Adobe Marketing Cloud в SDK AppsFlyer](/docs/adobe-analytics-integration-with-appsflyer#шаг-1-передайте-идентификатор-adobe-experience-cloud-ecid-идентификатор-marketing-cloud-или-идентификатор-посетителя-в-appsflyer).
@@ -163,9 +173,13 @@ let customerUserID = AppsFlyerLib.shared().customerUserID
 * Источник медиа
 * Название кампании
 
+<div id="note" />
+
 > 📘 **Примечание:**
 >
 > В соответствии с условиями предоставления услуг как Meta Ads, так и X Ads AppsFlyer запрещено передавать третьим лицам данные на уровне пользователя. Это означает, что установки Meta Ads и X Ads отправляются как органические.
+
+<div id="step-3-map-data-to-evars-in-adobe-analytics" />
 
 ### Шаг 3: Сопоставление данных с eVar в Adobe Analytics
 
@@ -181,6 +195,8 @@ let customerUserID = AppsFlyerLib.shared().customerUserID
 
 Если у вас возникли проблемы с сопоставлением переменных контекстных данных AppsFlyer с помощью правил обработки, обратитесь за дополнительной поддержкой к команде по работе с аккаунтами Adobe
 
+<div id="step-4-optional-set-up-your-marketing-channel" />
+
 ### Шаг 4 [необязательно]: Настройка маркетингового канала
 
 См. инструкции по настройке маркетингового канала на платформе в <Anchor target="_blank" href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels.html">документации к Adobe Analytics</Anchor>. Обязательно выберите следующие поля в соответствии с правилами идентификации:
@@ -188,6 +204,8 @@ let customerUserID = AppsFlyerLib.shared().customerUserID
 1. «Значение переменной конверсии, заданное веб-маяком Adobe»: выберите **AppsFlyer** и **Существует**.
 2. «Определение канала как»: выберите **Атрибуция мобильных приложений**.
 3. «Установить значение канала:» выберите **Кампания AppsFlyer**.
+
+<div id="domain-and-security-details" />
 
 ## Сведения о домене и безопасности
 

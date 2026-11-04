@@ -26,15 +26,21 @@ x-zendesk:
 
 [![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
 
+<div id="cohort-and-retention-dashboard" />
+
 ## Дэшборд когорт и удержания
 
 Материал по теме: <Anchor target="_blank" href="/marketers/ru/docs/aggregated-and-analytics-reporting-overview#cohort-flavors">Различия между вариантами Cohort</Anchor>
 
 Чтобы использовать когорты, выберите пользователей одного или нескольких приложений и сегментируйте их по дате конверсии. Доступны такие метрики когортного анализа, как доход, рентабельность инвестиций и коэффициент конверсии событий. Для сравнения когорта может быть разбита по таким показателям, как кампания или медиа-источник. Это позволяет обнаруживать закономерности или изменения эффективности в течение жизненного цикла пользователя или кампании. См. <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Сценарии когортного анализа</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Совет**
 >
 > Хотите узнать больше о когортных отчетах? Ознакомьтесь с этим кратким информативным <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports">курсом на учебном портале AppsFlyer</Anchor>.
+
+<div id="using-cohort" />
 
 ## Cohort-inapp
 
@@ -111,6 +117,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="cohort-concepts" />
+
 ## Основные понятия когорт
 
 <div id="cohort-periods" />
@@ -155,16 +163,22 @@ x-zendesk:
 * **Пользователи (4)**
 * **Недоступно для тренда KPI по времени атрибуции.**
 
+<div id="user-lifetime-performance" />
+
 #### **Тип тренда — производительность пользователя в течение жизни**
 
 * Каждый столбец в таблице или точка на диаграмме представляет отдельный когортный период (час/день/неделю/месяц). Период конверсии обозначается как когортный период 0. Первый период после конверсии — это когортный период 1 и так далее. Это позволяет сравнивать показатели пользователя после конверсии, начиная с дня конверсии (день 0).
 * Можно выбрать, для каких когортных периодов получать данные, вплоть до максимума для каждого варианта детализации (час/день/неделя/месяц).
+
+<div id="kpi-by-attribution-time" />
 
 #### **Тип тренда — KPI по времени атрибуции**
 
 * Каждый столбец в таблице или точка на диаграмме представляет собой период когорты (часы/дни/недели/месяцы) в пределах выбранного диапазона дат. Это позволяет оценивать эффективность кампании с течением времени и просматривать ключевые показатели эффективности кампании относительно времени конверсии.
 * Максимальное количество периодов когорты, которые можно выбрать для получения данных, — 5.
 * Если выбрать просмотр данных в виде диаграммы, а не в виде таблицы, диаграмма будет отображать только 1 период когорты (наименьший из выбранных периодов).
+
+<div id="example-user-lifetime-performance-trend-vs-kpi-by-attribution-time-trend" />
 
 #### Пример: динамика эффективности на протяжении жизни пользователя в сравнении с KPI по времени изменения атрибуции.
 
@@ -253,6 +267,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Информация
 
 <div id="cohort-for-agencies" />
@@ -272,6 +288,8 @@ x-zendesk:
 
 <Accordion title="Использование когорты">
 
+<div id="revenue-sum-by-geo" />
+
 #### Сумма дохода по стране
 
 **Диаграмма: кумулятивная прибыль на одного пользователя**
@@ -281,6 +299,8 @@ x-zendesk:
 **Таблица: доход за день**
 
 [![cohort use case 2.2.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
+
+<div id="in-app-event-conversion" />
 
 #### Конверсия событий в приложении
 

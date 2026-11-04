@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** **Краткий обзор:** Используйте данные о конверсии для определения различных сценариев конверсии, настройки пользовательского опыта и многого другого.
 
+<div id="overview" />
+
 ## Обзор
 
 Следующее руководство содержит различные сценарии конверсии пользователей и соответствующие им полезные нагрузки в данных о конверсиях:
@@ -43,7 +45,11 @@ x-zendesk:
 
 Из-за компромисса между точностью и задержкой данные о конверсиях для одних и тех же идентификаторов устройств могут отличаться в разных API.
 
+<div id="non-organic-conversion-data-payload-fields" />
+
 ### Поля в полезной нагрузке данных о неорганических конверсиях
+
+<div id="fields-always-available" />
 
 #### Поля всегда доступны
 
@@ -67,11 +73,15 @@ x-zendesk:
 | `тип_конверсии_ретаргетинга` | Тип конверсии ретаргетинга | "none", или retargeting\_conversion\_type |
 | `af_sub[n] (n=1—5)` | Подпараметр [n] (n=1–5) |  |
 
+<div id="fields-available-in-some-cases" />
+
 #### Поля доступны в некоторых случаях
 
 Поля в следующей таблице доступны в некоторых случаях, в зависимости от того, как SRN заполняет отдельное событие.
 
 <table><thead><tr><th>Название полей полезной нагрузки</th><th>Название поля сырых данных</th><th>Примечания</th><th> </th></tr></thead><tbody><tr><td><code>af_channel</code></td><td>Канал</td><td><p>SRN, заполняющие этот параметр:</p><ul><li>AppLovin</li><li>Google реклама</li><li>Meta реклама</li><li>Snapchat</li><li>TikTok для бизнеса</li><li>Twitter</li></ul><p>Пример: Facebook—Instagram, Google—YouTube </p></td><td> </td></tr><tr><td><code>orig_cost</code></td><td> </td><td>Примечание (1)</td><td> </td></tr><tr><td><code>cost_cents_USD</code></td><td> </td><td>Примечание (1)</td><td> </td></tr><tr><td><code>af_cpi</code></td><td> </td><td>Примечание (1)</td><td> </td></tr><tr><td colspan="4"><p><strong>Примечание</strong></p><p>(1) Поля затрат заполняются значениями, предоставленными рекламной сетью. Для того чтобы рекламная сеть предоставляла затраты в AppsFlyer, необходимо включить интеграцию затрат на странице <a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank"><strong>Активные интеграции</strong></a>. Некоторые SRN поддерживают предоставление данных о затратах в массовом порядке. В этом случае поля стоимости на уровне события возвращаются со значением 0. </p></td></tr></tbody></table>
+
+<div id="additional-fields" />
 
 ### Дополнительные поля
 
@@ -79,6 +89,8 @@ x-zendesk:
 * Вы можете добавить параметры к ссылке атрибуции, они становятся доступными в полезной нагрузке
 
 Дополнительную информацию см. в <Anchor target="_blank" href="/marketers/ru/docs/raw-data-field-dictionary#data-fields-dictionary">словаре полей сырых данных</Anchor>.
+
+<div id="limitations" />
 
 ### Ограничения
 
@@ -94,6 +106,8 @@ x-zendesk:
 
 ---
 
+<div id="ua-conversion-data-with-srns" />
+
 ## Данные о конверсиях UA с SRN
 
 <Anchor target="_blank" href="/marketers/ru/docs/self-reporting-networks-srns">Сети с собственной отчетностью</Anchor> (SRN) — это рекламные сети, использующие собственные механизмы атрибуции, например Meta Ads и Google.
@@ -105,6 +119,8 @@ x-zendesk:
 
 SRN сообщают о конверсиях в AppsFlyer. Данные о конверсиях доступны в приложении. Доступные поля зависят от конкретной SRN и подробно описаны на отдельных вкладках SRN ниже.
 
+<div id="a-note-about-meta-ads" />
+
 #### Примечание о Meta Ads
 
 Если вы проводите кампании в Meta Ads и не подписываете условия обслуживания Meta Ads, установку атрибутирует AppsFlyer. Доступность отчетов ограничена следующим образом:
@@ -114,6 +130,8 @@ SRN сообщают о конверсиях в AppsFlyer. Данные о ко�
 
 <Tabs>
 <Tab title="Meta реклама">
+
+<div id="meta-ads-conversion-data" />
 
 ### Данные о конверсии Meta Ads
 
@@ -207,6 +225,8 @@ SRN сообщают о конверсиях в AppsFlyer. Данные о ко�
 
 <div id="twitter-conversion-data" />
 
+<div id="x-ads-conversion-data" />
+
 ### Данные конверсий X Ads
 
 | Имя поля | Примечания |
@@ -239,6 +259,8 @@ SRN сообщают о конверсиях в AppsFlyer. Данные о ко�
 <Tab title="TikTok">
 
 <div id="tiktok-conversion-data" />
+
+<div id="tiktok-for-business-conversion-data" />
 
 ### Данные конверсий TikTok for Business
 
@@ -280,6 +302,8 @@ SRN сообщают о конверсиях в AppsFlyer. Данные о ко�
 </Tab>
 </Tabs>
 
+<div id="ua-conversion-with-other-ad-networks" />
+
 ## Конверсия UA с другими рекламными сетями
 
 Для других рекламных сетей данные в полезной нагрузке напрямую зависят от параметров <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">в ссылке атрибуции</Anchor>.
@@ -292,6 +316,8 @@ SRN сообщают о конверсиях в AppsFlyer. Данные о ко�
 
 <Accordion title="Applovin">
 
+<div id="attribution-link" />
+
 #### Ссылка атрибуции:
 
 ```http HTTPS
@@ -301,6 +327,8 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
   &af_click_lookback=7d&clickid=10****************
   &advertising_id=50********************************&af_ip=
 ```
+
+<div id="payload" />
 
 #### Полезная нагрузка:
 
@@ -349,6 +377,8 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
 
 <Accordion title="IronSource">
 
+<div id="attribution-link-1" />
+
 #### Ссылка атрибуции:
 
 ```http HTTPS
@@ -361,6 +391,8 @@ https://app.appsflyer.com/id123456789?
   &idfa=01**********************************&af_siteid=123_site_id&
   af_enc_data=cN*********************************************************************
 ```
+
+<div id="payload-1" />
 
 #### Полезная нагрузка:
 
@@ -409,6 +441,8 @@ ironSource делится данными о затратах с AppsFlyer при
 
 </Accordion>
 
+<div id="retargeting-conversion-data" />
+
 ## Данные о конверсиях ретаргетинга
 
 Ретаргетинг включает в себя два типа конверсий: реатрибуция и повторное вовлечение.
@@ -418,6 +452,8 @@ ironSource делится данными о затратах с AppsFlyer при
 > **Совет**
 >
 > Данные о конверсиях для ретаргетинга не всегда дают четкое представление о типе конверсии. См. [альтернативные источники данных о конверсиях](#альтернативные-источники-данных-о-конверсиях).
+
+<div id="re-attribution-with-srns" />
 
 ### Реатрибуция с SRN
 
@@ -431,6 +467,8 @@ ironSource делится данными о затратах с AppsFlyer при
 >
 > Название кампании, которое указывает на ретаргетинг, **не является надежным методом**. [Подробнее см. в примерах](#примеры-смешанного-привлечения-пользователей-и-реатрибуции).
 
+<div id="re-attribution-with-regular-ad-networks" />
+
 ### Реатрибуция с обычными рекламными сетями
 
 Атрибуция к рекламным сетям основывается на ссылках атрибуции. Будь то обычные ссылки атрибуции или OneLink, при использовании для ретаргетинга ссылка атрибуции всегда имеет параметр `is_retargeting=true`.
@@ -439,6 +477,8 @@ ironSource делится данными о затратах с AppsFlyer при
 
 <Accordion title="Ретаргетинговая кампания с Criteo">
 
+<div id="attribution-link-2" />
+
 #### Ссылка атрибуции
 
 ```http
@@ -446,6 +486,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### Полезная нагрузка данных о конверсиях
 
@@ -487,6 +529,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ### Реатрибуция с отложенном диплинкингом
 
 Часто требуется направить по диплинку повторно атрибутированных пользователей, у которых, по определению реатрибуции, приложение не установлено. Например, вы проводите кампанию, цель которой — вернуть пользователей, удаливших приложение. Кампания продвигает продукт или услугу, и вы хотите предоставлять пользователям контент, связанный с рекламируемым продуктом или услугой.
@@ -498,6 +542,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 <Accordion title="Отложенные диплинки в сетях типа SRN">
 
 Параметры диплинкинга, заданные в рекламных кампаниях SRN, за пределами этой SRN недоступны. К этим параметрам относится и параметр `af_dp`, в котором содержится схема пути в приложении. Единственным исключением является использование кампаний <Anchor target="_blank" href="/marketers/ru/docs/google-ads-adwords-integration-setup-for-advertisers#использование-отложенного-диплинкинга-в-кампаниях-для-приложений">Google для приложений в ленте</Anchor>. Для использования отложенного диплинкинга для рекламных кампаний в SRN необходимы дополнительные алгоритмы. Используйте данные в ответе `onConversionSuccess`, такие как кампания, группа объявлений, рекламный блок, чтобы запрограммированно перенаправлять пользователей.
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Данные о конверсиях для отложенного диплинкинга с Meta Ads
 
@@ -587,6 +633,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 Есть три способа диплинкинга пользователей:
 
+<div id="uri-schemes" />
+
 #### Схема URI
 
 При использовании схем URI, как для ссылок атрибуции, так и для OneLink, ссылка атрибуции и полезная нагрузка выглядят следующим образом:
@@ -642,6 +690,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 * `af_deeplink: true` — при появлении этого параметра со значением true найдите поля `scheme` и `host`.
 * `scheme` и `host` — эти поля берутся из параметра `af_dp` в ссылке атрибуции и указывают схему и активность, на которую пользователь должен быть перенаправлен по диплинку.
+
+<div id="ios-universal-links-and-android-app-links" />
 
 #### Универсальные ссылки iOS и Android App Links
 
@@ -699,13 +749,19 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ### Повторное вовлечение с SRN
 
 Как и в случае с кампаниями реатрибуции, когда пользователь повторно вовлекается через SRN, данные о конверсиях не указывают на то, что это кампания повторного вовлечения. Вы можете задать название кампании так, чтобы оно указывало на кампанию повторного вовлечения.
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ### Повторное вовлечение с обычными рекламными сетями
 
 Здесь также данные о конверсиях не указывают на то, что пользователь пришел из кампании по повторному вовлечению. Чтобы преодолеть это ограничение, вы можете задать название кампании, указывающее на повторное вовлечение.
+
+<div id="re-engagement-with-deep-linking" />
 
 ### Повторное вовлечение с диплинкингом
 
@@ -759,10 +815,14 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ### Альтернативные источники данных о конверсиях
 
 * Push API предлагает подробную информацию о конверсиях, которая указывает на реатрибуцию или повторное вовлечение. Полезная нагрузка Push API включает поле под названием `re_targeting_conversion_type`. В этом поле указывается тип конверсии — реатрибуция или повторное вовлечение. Подробнее см. в нашем руководстве по <Anchor target="_blank" href="/marketers/ru/docs/push-api-streaming-raw-data">Push API</Anchor>.
 * Отчеты по сырым данным также содержат указатели на типа конверсии. В отчете по сырым данным для конверсий ретаргетинга есть колонка ***Название события***. Значение в этой колонке — либо ***повторное вовлечение***, либо ***реатрибуция*** в зависимости от типа конверсии.
+
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 
 ### Примеры смешанного привлечения пользователей и реатрибуции
 

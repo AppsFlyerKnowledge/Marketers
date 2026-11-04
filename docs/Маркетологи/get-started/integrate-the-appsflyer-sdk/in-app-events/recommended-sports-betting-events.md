@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Оценивайте качество пользователей на протяжении всего их пути, регистрируя эти рекомендуемые события в приложении для вашего приложения для ставок на спорт.
 
+<div id="-sports-betting" />
+
 ## <Image alt="soccer_ball.png" src="https://files.readme.io/2c5150b2c50ec166878cd976154dc81c0dc8a1e710fa8869aa582b535313b464-4413968925585.png" width="71px" /> Ставки на спорт
 
 Приложения для ставок на спорт позволяют бетторам делать ставки на различные спортивные рынки. Обычно мы рекомендуем регистрировать такие события, как депозиты, размещение ставок и вывод средств.
@@ -33,6 +35,8 @@ x-zendesk:
 * Доход, полученный от ставок
 * Какие типы ставок приносят наименьший или наибольший доход
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > * Обязательно прочитайте <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview#настройка-событий-в-приложении">инструкции</Anchor> для маркетологов по реализации внутренних событий приложения.
@@ -43,6 +47,8 @@ x-zendesk:
 > Дополнительные сведения о регистрации внутренних событий см. в <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview">Руководстве по внутренним событиям приложения</Anchor>.
 
 [![In_appEvents_UserJourneys_-_Sports_betting__5_.png](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Рекомендуемые структуры для предопределенных событий
 
@@ -85,6 +91,8 @@ x-zendesk:
 | af\_метод\_регистрации | Тип способа регистрации | email, Facebook |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Рекомендуемые структуры для настраиваемых событий
 

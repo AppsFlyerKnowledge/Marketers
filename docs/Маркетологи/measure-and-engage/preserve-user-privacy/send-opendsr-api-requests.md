@@ -26,6 +26,8 @@ x-zendesk:
 
 **Важное юридическое примечание:** *информация в данной статье не может считаться рекомендациями юриста. Информация предоставляется только для ознакомления. Чтобы точно определить, необходимо ли вам соблюдать требования GDPR, CCPA или иных правовых норм, вам необходимо проконсультироваться с юристом или иным специалистом. Уровень конфиденциальности ваших данных в AppsFlyer определяется <Anchor target="_blank" href="https://www.appsflyer.com/ru/services-privacy-policy">Политикой конфиденциальности AppsFlyer</Anchor>. По любым вопросам, касающимся данной Политики конфиденциальности, или для связи с нашим специалистом по защите данных отправьте нам письмо по адресу [privacy@appsflyer.com](mailto:privacy@appsflyer.com). Представителем AppsFlyer в ЕС по вопросам соблюдения статьи 27 Общего регламента по защите данных является AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Germany (контактные данные [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).*
 
+<div id="privacy-regulations" />
+
 ## Правила конфиденциальности
 
 В данной статье под законами о защите данных понимаются законы, перечисленные в таблице ниже.
@@ -39,6 +41,8 @@ x-zendesk:
 
 Термины «законы о защите данных», «GDPR», «CCPA», «LGPD» и «PDPA» в данной статье употребляются как взаимозаменяемые.
 
+<div id="the-opendsr-initiative" />
+
 ### Инициатива OpenDSR
 
 Для рассмотрения и обработки запросов субъектов персональных данных, поданных в соответствии с правилами конфиденциальности, компания AppsFlyer, совместно с mParticle, Amplitude и Braze, инициировала протокол OpenDSR (ранее известный как OpenGDPR).
@@ -47,6 +51,8 @@ OpenDSR – это платформа с открытым исходным ко�
 
 <Anchor target="_blank" href="https://www.appsflyer.com/ru/company/newsroom/pr/opengdpr-initiative/">Подробнее об инициативе OpenDSR</Anchor>.
 
+<div id="definitions" />
+
 ### Определения
 
 | Термин DSR | Термин AppsFlyer | Описание |
@@ -54,6 +60,8 @@ OpenDSR – это платформа с открытым исходным ко�
 | Субъект данных | Пользователь приложения или конечный пользователь | Пользователь приложения, о ком собираются данные |
 | Контролёр данных | Владелец приложения или рекламодатель | Владелец приложения определяет цели и способы обработки персональных данных. |
 | Обработчик данных | Компания AppsFlyer и её партнёры | Компания AppsFlyer и её партнёры, которые обрабатывают персональные данные по поручению контролёра данных. |
+
+<div id="dsr-requirements" />
 
 ### Требования DSR
 
@@ -65,6 +73,8 @@ OpenDSR – это платформа с открытым исходным ко�
 | **Переносимость данных** | Все персональные данные должны предоставляться пользователю приложения в структурированном, общепринятом и машиночитаемом формате, например в виде СSV-файла. | Владельцы приложения получают копию обработанных персональных данных пользователя приложения. |
 | **Исправление данных** | Позволяет пользователям приложения вносить исправления в свои данные в случае их неточности или недостоверности. Владельцы приложения обязаны удалить или исправить неточные или неполные данные. | <ul><li>AppsFlyer удаляет данные пользователя приложения, записанные до даты запроса на *исправление*.</li><li>Данные, полученные после запроса, регистрируются.</li></ul> |
 | **Удаление данных** | Право на удаление данных обязывает владельцев приложения удалить персональные данные пользователя в течение 10 дней с момента получения запроса. | Данные удалены. |
+
+<div id="appsflyer-gdpr-requests-api" />
 
 ## API AppsFlyer для запросов GDPR
 
@@ -78,6 +88,8 @@ OpenDSR – это платформа с открытым исходным ко�
 Владельцы приложений обязаны внести изменения в пользовательский интерфейс приложения, чтобы пользователи приложения имели возможность отправлять такие запросы. Обратите внимание, что запросы GDPR рассматриваются по отдельным пользователям.
 
 <Accordion title="1. Запрос GDPR">
+
+<div id="gdpr-request-flow" />
 
 #### Процедура выполнения запросов GDPR
 
@@ -98,6 +110,8 @@ OpenDSR – это платформа с открытым исходным ко�
 
      **Примечание.** Этот 10-дневный период начинается с момента, когда владелец приложения подаёт свой запрос. Через 48 часов статус запроса изменится на **«В процессе»**, и он будет выполнен в течение дополнительных 8 дней, в общей сложности 10 дней.
 
+<div id="gdpr-request-format" />
+
 #### Формат запроса GDPR
 
 В API GDPR для отправки запросов используется HTTP-команда POST в следующую конечную точку:
@@ -108,9 +122,13 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 
 Для авторизации API используйте тот же токен API V2, что и для Pull API. Пользователь-администратор может <Anchor target="_blank" href="/marketers/ru/docs/managing-appsflyer-tokens#получение-токенов">получить токен</Anchor> со страницы токена API на дэшборде Добавьте токен в заголовок запроса следующим образом: `'Authorization': 'Bearer %AuthTokenV2%'` Добавьте токен в заголовок запроса следующим образом: `'Authorization': 'Bearer %AuthTokenV2%'` Добавьте токен в заголовок запроса следующим образом: `'Authorization': 'Bearer %AuthTokenV2%'`
 
+<div id="parameters" />
+
 #### Параметры
 
 <table><thead><tr><th><strong>Свойство</strong></th><th><strong>Обязательно</strong></th><th><strong>Описание</strong></th></tr></thead><tbody><tr><td><strong>subject_request_id</strong></td><td>Да</td><td>Строка UUID v4. Создаётся контролёром при отправке запроса обработчику. Затем её можно использовать для проверки состояния, обновления или отмены запроса.</td></tr><tr><td><strong>subject_request_type</strong></td><td>Да</td><td><p>Строковое значение, определяющее тип запроса GDPR. Допустимые значения:</p><ul><li>удаление данных;</li><li>Переносимость данных</li><li>доступ к данным;</li><li>Исправление данных</li></ul></td></tr><tr><td><strong>subject_identities</strong></td><td>Да</td><td><ul><li>Массив объектов-идентификаторов, определяющих идентификатор инициатора запроса (см. ниже).</li><li>Каждый запрос может содержать только один идентификатор инициатора запроса.</li></ul></td></tr><tr><td><strong>submitted_time</strong></td><td>Да</td><td><ul><li>Строка даты в формате RFC 3339, определяющая время создания исходного запроса субъектом данных</li><li>Метки времени по UTC</li></ul></td></tr><tr><td><strong>property_id</strong></td><td>Да</td><td><p>Строка, определяющая мобильное приложение, к которому относится этот запрос</p><p><strong>Примеры</strong>:</p><ul><li> <strong>iOS</strong>: id123456789</li><li> <strong>Android</strong>: com.пример, com.название.издателя</li><li> <strong>Внемагазинные приложения на Android</strong>: com.название.издателя-канал<br/><strong>Примечание</strong> В некоторых случаях владельцы приложений регистрируют атрибуцию внемагазинных приложений, используя название Google Play для Android. В таких случаях используйте обычное название приложения, как оно указано на дэшборде.</li></ul></td></tr><tr><td><strong>api_version</strong></td><td>Ни один</td><td>Строка версии, определяющая нужную версию API запросов GDPR</td></tr><tr><td><strong>status_callback_urls</strong></td><td>Нет, но рекомендуется</td><td><ul><li>Массив конечных точек до 3 шт. для обратных вызовов со статусами, которые передаются для изменения статуса запроса.</li><li>Поддерживаются только конечные точки HTTPS.</li><li>Недействительные URL-адреса отклоняются.</li></ul></td></tr><tr><td rowspan="2"> <strong>платформа</strong><br/><br/> </td><td>Ни один</td><td>Значение является одной из поддерживаемых платформ DSR:<br/><code>android</code>, <code>ios</code>, <code>web</code>, <code>windowsphone</code> </td></tr><tr><td>Да</td><td><p>Для запроса платформы CTV, ПК или консоли включите любую из приведённых ниже платформ:</p><p><code>nativepc</code>, <code>playstation</code>, <code>roku</code>, <code>steam</code>, <code>webos</code>, <br/><code>vidaa</code>,<code>tizen</code>, <code>smartcast</code>, <code>chatgpt</code>, <code>battlenet</code>, <br/><code>quest</code>, <code>switch</code>, <code>xbox</code>, <code>epic</code></p></td></tr></tbody></table>
+
+<div id="subject_identities-objects" />
 
 #### Объекты Subject\_identities
 
@@ -119,6 +137,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 | identity\_type | Да | <ul><li>Тип идентификатора в строковом формате для платформ `android`, `ios`, `web`, `windowsphone`: любой из приведённых ниже.<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Для платформ `CTV`, `PC`, и `Console` только следующее:<ul><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Пример: `android_advertising_id`</li></ul>**Important**<br />**Двоеточие (:)**<br /><br />Чтобы использовать CUID через OpenDSR API, вы должны отправить CUID с `idfa` / `appsflyer_id` внутри событий приложения, используя `event_name`: `Login - Complete` или `Registration - Account created` |
 | identity\_value | Да | <ul><li>форматирования ячеек с затратами;</li><li>Пример: «a7551968-d5d6-44b2-9831-815ac9017798»</li></ul> |
 | identity\_format | Да | <ul><li>Метод кодирования identity\_value: допустим только `raw`:</li><li>Пример: «raw»</li></ul> |
+
+<div id="example-gdpr-erasure-request" />
 
 #### Пример: запрос GDPR типа «удаление»
 
@@ -176,6 +196,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
  ]
 }'
 ```
+
+<div id="zd-gdpr-erasure-request-code-example" />
 
 <div id="gdpr-erasure-request-code-example" />
 
@@ -343,6 +365,8 @@ using System;
 3. ***completed*** (Выполнен) – запрос выполнен.
 4. ***cancelled*** (Отменен) – запрос отменен.
 
+<div id="status-request-format" />
+
 #### Формат запроса статуса
 
 Для отправки запросов статуса используется HTTP-команда GET в следующую конечную точку:
@@ -350,6 +374,8 @@ using System;
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
+
+<div id="status-response-example" />
 
 #### Пример ответа на запрос статуса
 
@@ -366,6 +392,8 @@ kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j083461xLZ+mUloo3tpsmyI
  "request_status":"pending",
 }
 ```
+
+<div id="status-postbacks" />
 
 #### Постбэки статуса
 
@@ -388,6 +416,8 @@ X-OpenGDPR-Signature: kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j
 "Request_status":"pending"
 }
 ```
+
+<div id="validate-postback" />
 
 #### Проверка постбэка
 
@@ -428,6 +458,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/download/[REQUEST_ID]
 https://hq1.appsflyer.com/api/gdpr/v1/discovery
 ```
 
+<div id="discovery-response-example" />
+
 #### Пример ответа на запрос на обнаружение
 
 ```http
@@ -460,6 +492,8 @@ Content-Type: application/json
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
 
+<div id="cancellation-response" />
+
 #### Ответ на запрос об отмене
 
 При получении запроса на отмену AppsFlyer возвращает HTTP-ответ с кодом состояния 202 и ряд других параметров.
@@ -471,6 +505,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 <Accordion title="6. Тестовый API запросов GDPR">
 
 Этот API AppsFlyer представляет собой тестовый API запросов GDPR.
+
+<div id="how-does-it-work" />
 
 #### Как это работает?
 
@@ -544,6 +580,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 
 В этом разделе приведены HTTP-коды возврата для API GDPR и сообщения об ошибках.
 
+<div id="gdpr-api-return-codes" />
+
 #### Коды возврата для API GDPR
 
 | Код возврата | Обзор |
@@ -552,11 +590,15 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 | 202 | Получен запрос на отмену |
 | 400 | Неверный запрос. В сообщении содержится код ошибки и текст сообщения, как указано в таблице ниже. |
 
+<div id="http-return-code-400---bad-request" />
+
 #### HTTP-код возврата 400 – неверный запрос
 
 В сообщениях с кодом 400 содержится JSON с кодом ошибки и текстом сообщения об ошибке.
 
 `{ "error": { "code":400, "af_gdpr_code": "%AF error code%", "message":"%error message text%" } }`
+
+<div id="return-code-400-bad-request-messages" />
 
 #### Возможные сообщения с кодом 400 – неверный запрос
 
@@ -588,6 +630,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 | e511 | Internal problem, wait 60 minutes and try again. (Внутренняя проблема, подождите 60 минут и повторите попытку.) (Внутренняя проблема, подождите 60 минут и повторите попытку.) (Внутренняя проблема, подождите 60 минут и повторите попытку.) If the problem persists contact AppsFlyer support. support@AppsFlyer.com |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Характеристики и ограничения
 

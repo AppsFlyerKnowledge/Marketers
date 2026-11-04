@@ -28,6 +28,8 @@ x-zendesk:
 >
 > **Важно!** Чтобы использовать отчеты Web Performance Measurement в Data Locker, у вас должна быть подписка на Data Locker.
 
+<div id="about-the-web-performance-measurement-reports" />
+
 ## Об отчетах Web Performance Measurement
 
 Data Locker предоставляет два отчета для Web Performance Measurement: **End User Events** и **Conversions**, каждый из которых предназначен для разных задач анализа.
@@ -44,6 +46,8 @@ Data Locker предоставляет два отчета для Web Performanc
 
 В интерфейсе Data Locker Advanced Reports также указаны **Engagements** и **End User Events Cross-Platform** как отдельные варианты отчетов Web Performance Measurement. В этой статье рассматриваются **End User Events** и **Conversions** — два отчета, которые используются для большинства видов анализа Web Performance Measurement.
 
+<div id="select-a-web-performance-measurement-report" />
+
 ## Выберите отчет Web Performance Measurement
 
 Перед экспортом данных Web Performance Measurement выберите соответствующий отчет в Data Locker.
@@ -52,6 +56,8 @@ Data Locker предоставляет два отчета для Web Performanc
 2. Кликните вкладку **Advanced Reports**.
 3. Выберите **End User Events** или **Conversions** из списка отчетов Web Performance Measurement.
 4. Нажмите **Сохранить конфигурацию**.
+
+<div id="report-fields" />
 
 ## Поля отчета
 
@@ -62,12 +68,16 @@ Data Locker предоставляет два отчета для Web Performanc
 
 Образец отчета включает все поля отчета и их значения. Определения полей см. в <Anchor target="_blank" href="/marketers/ru/docs/raw-data-field-dictionary">словаре полей</Anchor>.
 
+<div id="report-timing-and-data-freshness" />
+
 ## Сроки формирования отчетов и актуальность данных
 
 Используйте эти сведения, чтобы понять, когда добавляются новые данные и когда недавние события становятся доступны в отчете.
 
 * **Частота формирования отчета**: новые данные добавляются каждый час.
 * **Актуальность данных**: события обычно появляются в отчете в течение 2–3 часов после их возникновения.
+
+<div id="heres-how-each-batch-works" />
 
 ### Вот как работает каждый пакетный запуск:
 
@@ -78,9 +88,13 @@ Data Locker предоставляет два отчета для Web Performanc
 
 [![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
 
+<div id="when-will-these-events-appear-in-the-report" />
+
 ### Когда эти события появятся в отчете?
 
 События записываются в отчеты **после завершения обработки**. Например, события за период **08:00–09:00**, атрибутированные в пакете 10:00, появятся в **версии отчета 11:00**.
+
+<div id="example-what-the-1000-am-batch-does" />
 
 ### Пример: что делает пакет 10:00 AM
 
@@ -90,9 +104,13 @@ Data Locker предоставляет два отчета для Web Performanc
 | 01.28.2026 | 12:00 | 09:00 – 10:00 | 10:00 – 10:30 |
 | 01.28.2026 | 13:00 | 10:00 – 11:00 | 12:00 – 13:30 |
 
+<div id="download-report-data-from-your-cloud-bucket" />
+
 ## Загрузите данные отчета из своего облачного бакета
 
 Подробнее о том, как загрузить данные отчета из своего облачного бакета, см. в статье <Anchor target="_blank" href="/marketers/ru/docs/data-locker-for-marketers#folder-structure">структура папок Data Locker</Anchor>.
+
+<div id="bi-developer-considerations" />
 
 ## Информация для разработчиков систем бизнес-аналитики
 
@@ -156,6 +174,8 @@ Data Locker предоставляет два отчета для Web Performanc
 
 * **Фильтр по типу конверсии (необязательно):** Добавьте `WHERE conversion_type = 'USER_ACQUISITION'` или `WHERE conversion_type = 'RETARGETING'`, чтобы выделить данные атрибуции по типу кампании.
 
+<div id="filter-summary-table" />
+
 #### Таблица сводки по фильтрам
 
 | Требование к фильтру | Логика SQL | Контекст реализации |
@@ -192,6 +212,8 @@ COALESCE(customer_user_id, appsflyer_id_value)
 * Фильтровать по конкретным пользователям
 * Объединять таблицы по пользователю
 * Рассчитывать любые метрики на уровне пользователя
+
+<div id="example-count-distinct-users" />
 
 #### Пример: подсчёт уникальных пользователей
 
@@ -426,6 +448,8 @@ ORDER BY cohort_date, cohort_users DESC
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Спецификации и ограничения
 
 Следующие поля **не поддерживаются для веб-данных** и всегда будут пустыми:
@@ -437,6 +461,8 @@ ORDER BY cohort_date, cohort_users DESC
 | `platform_group` | конверсий |
 | `app_version__conversion` | end\_user\_events |
 | Все поля `__assist_*` | конверсий |
+
+<div id="see-also" />
 
 ## Смотрите также
 

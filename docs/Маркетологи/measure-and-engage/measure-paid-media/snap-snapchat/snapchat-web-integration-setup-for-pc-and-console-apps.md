@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **Краткий обзор:** Узнайте, как интегрировать Snapchat Ads web для приложений для ПК и консолей с AppsFlyer и настроить кампании в Snapchat Ads web.
 
+<div id="warning" />
+
 > ❗️ **Предупреждение**
 >
 > Эта интеграция доступна только для приложений для ПК и консолей, таких как Steam, Epic или нативный ПК. Для мобильных приложений см. страницу <Anchor target="_blank" href="/marketers/ru/docs/tiktok-for-business-advanced-srn-integration-setup">настройки интеграции Snapchat Ads</Anchor> .
+
+<div id="overview" />
 
 ## Информация о компании
 
 Эта статья содержит информацию и шаги по настройке и использованию Snapchat Ads web для приложений для ПК и консолей с AppsFlyer.
 
+<div id="prerequisite" />
+
 ### Необходимое условие
 
 Прежде чем активировать интеграцию Snapchat Ads web, убедитесь, что у вас есть бизнес-аккаунт в <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US">Snapchat Ads Manager.</Anchor>
+
+<div id="activating-partner-in-appsflyer" />
 
 ## Активация партнера в AppsFlyer
 
@@ -42,6 +50,8 @@ x-zendesk:
 3. Нажмите **Integrate**. Вы будете перенаправлены на страницу настройки.
 4. На вкладке **Интеграция** включите **Активировать партнера**. Переключатель должен оставаться в положении <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активирован</Anchor> всё время, пока вы работаете с партнером.
 5. Завершите настройку, используя соответствующие вкладки, как описано в следующем разделе.
+
+<div id="setting-up-snapchat-ads-web-in-appsflyer" />
 
 ## Настройка Snapchat Ads web в AppsFlyer
 
@@ -210,6 +220,8 @@ https://files.readme.io/8d5c3b6d1dd7542860d58b2cff8581a8eb72880764b730a4c87b8161
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-snapchat-ads-web-for-pc-and-console-apps" />
+
 ## Настройка кампаний в Snapchat Ads web для приложений для ПК и консолей
 
 Настройте свою кампанию в Snapchat Ads Manager. Более подробную информацию см. здесь: <Anchor target="_blank" href="/marketers/ru/docs/snapchat-create-web-based-campaigns#настройте-интеграцию-appsflyer-в-snapchat-ads">Настройка интеграции AppsFlyer в Snapchat Ads</Anchor>.
@@ -222,20 +234,28 @@ https://files.readme.io/8d5c3b6d1dd7542860d58b2cff8581a8eb72880764b730a4c87b8161
   * Целевая страница на сайте (рекомендуется, если приложение работает на нескольких платформах)
   * URL-адрес магазина (рекомендуется, если ваше приложение находится в одном магазине приложений на одной платформе)
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Посмотреть данные атрибуции web-to-app
 
 Хотя события конверсии на вебе отправляются в Snapchat с исходным PID `snapweb_int`, на дэшборде AppsFlyer и в отчетах о сырых данных они отображаются под PID `snapchat_int`. Это относится как к основным событиям конверсии, так и к событиям-ассистам конверсии.
 
 Этот унифицированный вид отчетов позволяет анализировать эффективность веб-кампаний и кампаний приложений в одном месте, включая подробную отчетность о стоимости для мобильных устройств и веба.
 
+<div id="view-in-the-dashboard" />
+
 ### Посмотреть на дэшборде
 
 Вся атрибуция Snapchat web-to-app отображается как `snapchat_int` на дэшбордах «Обзор» и «Активность». Это обеспечивает единое, консолидированное представление результатов кампаний на разных платформах. Используйте стандартные фильтры и разбивки, чтобы сравнить трафик приложения и веб-трафик в данных Snapchat Ads.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### Просмотр в отчетах о сырых данных и отчетах API
 
 * **Экспорты сырых данных и ответы API** включают PID `snapchat_int` в поле `media_source` для активности Snapchat на вебе. Чтобы проверить детали настройки веб-кампании, обратитесь к полю `original_url`, в котором `snapweb_int` указан как PID, использованный при создании веб-кампаний.
 * **Отчеты о постбэках** показывают `snapweb_int` как исходный медиаисточник, на который был отправлен постбэк.
+
+<div id="traits-and-limitations" />
 
 ## Спецификации и ограничения
 

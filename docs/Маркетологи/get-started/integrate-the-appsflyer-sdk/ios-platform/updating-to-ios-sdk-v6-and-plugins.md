@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Обновите существующую интеграцию SDK/wrapper AppsFlyer для iOS до SDK iOS V6.
 
+<div id="about-ios-sdk-v6" />
+
 ## Об SDK iOS V6
 
 В этой статье идет речь об SDK V6.
@@ -38,6 +40,8 @@ SDK AppsFlyer для iOS V6:
 * Удалите предыдущий плагин и замените его, следуя инструкциям в нашем <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin/tree/dev/sdk-v6-beta">руководство на GitHub</Anchor>.
 
 Для получения полной информации о SDK V6 и о том, как интегрировать его в новое приложение, не имеющее более ранней версии AppsFlyer SDK, читайте наше <Anchor target="_blank" href="/marketers/ru/docs/sdk-integration-overview">руководство по интеграции iOS SDK для маркетологов</Anchor>.
+
+<div id="update-to-ios-sdk-v6" />
 
 ## Обновление до iOS SDK V6
 
@@ -366,6 +370,8 @@ extension AppDelegate: AppsFlyerLibDelegate {
 Следуйте <Anchor target="_blank" href="/marketers/ru/docs/measuring-push-notification-re-engagement-campaigns">инструкциям по работе с push-уведомлениями</Anchor>, чтобы обеспечить интеграцию push-уведомлений с помощью метода handlePushNotificationData.
 
 </Accordion>
+
+<div id="plugins" />
 
 ## Плагины
 

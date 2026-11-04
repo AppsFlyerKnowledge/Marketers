@@ -32,6 +32,8 @@ ESP (поставщики услуг электронной почты) могу
 
 Однако диплинкинг и регистрация кликов все еще возможны с ESP, поддерживающими универсальные ссылки и App Links в дополнение к домену регистрации кликов. Кроме того, можно настроить собственный домен для регистрации кликов.
 
+<div id="prerequisites" />
+
 ## Необходимые условия
 
 * Настройте приложение на поддержку <Anchor target="_blank" href="/marketers/ru/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">диплинкинга с помощью OneLink</Anchor>.
@@ -51,9 +53,13 @@ ESP (поставщики услуг электронной почты) могу
 </Tab>
 </Tabs>
 
+<div id="setting-up-oracle-responsys-click-domain" />
+
 ## Настройка домена регистрации кликов Oracle Responsys
 
 Следуйте указаниям в этом разделе, чтобы настроить домен кликов (домен регистрации кликов) в Oracle Responsys.
+
+<div id="step-1-set-up-a-click-domain-in-oracle-responsys" />
 
 ### Шаг 1: Настройка домена кликов в Oracle Responsys
 
@@ -64,6 +70,8 @@ iOSAndroid
 ![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
 
 После настройки доменов кликов в таблице ссылок компания Responsys использует эти домены для упаковывания OneLinks, которые вы включаете в рассылки. Таким образом, Responsys может регистрировать клики в своей системе, сохраняя при этом функциональность OneLink и диплинкинга.
+
+<div id="step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Шаг 2. Предоставьте Responsys файл AASA (iOS) и файл Asset Links (Android)
 
@@ -95,11 +103,15 @@ iOSAndroid
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Настройка приложения
 
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Шаг 1 для Android: Настройка приложения для поддержки App Links">
+
+<div id="adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Добавление домена кликов к активности в манифесте Android
 
@@ -117,6 +129,8 @@ iOSAndroid
      </intent-filter>
 </activity>
 ```
+
+<div id="setting-up-the-app-to-resolve-click-domains" />
 
 #### Настройка приложения для разрешения доменов кликов
 
@@ -145,6 +159,8 @@ SDK необходимо разрешить ссылку OneLink в рамках
 
 В этом разделе рассматривается настройка приложения для поддержки универсальных ссылок.
 
+<div id="associating-click-domains-in-xcode" />
+
 #### Ассоциирование доменов кликов в Xcode
 
 1. Нажмите на свой проект в Xcode.
@@ -153,6 +169,8 @@ SDK необходимо разрешить ссылку OneLink в рамках
 4. Нажмите на знак + и добавьте свой домен. Например, applinks:click.example.com.
 
 </Accordion>
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 ### Шаг 2: Настройка приложения для разрешения доменов кликов
 
@@ -223,6 +241,8 @@ SDK необходимо разрешить ссылку OneLink в рамках
    </Tab>
    </Tabs>
 
+<div id="sending-your-first-email" />
+
 ## Отправка первого письма
 
 1. Создайте URL OneLink на странице управления ссылками (или вручную).
@@ -253,6 +273,8 @@ SDK необходимо разрешить ссылку OneLink в рамках
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Тестирование ссылок
 

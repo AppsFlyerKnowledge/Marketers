@@ -20,9 +20,13 @@ x-zendesk:
 ---
 > **At a glance:** Используйте атрибуцию органического поиска (SEO) и органических ответов ИИ (AEO), чтобы увидеть, какие поисковые системы и системы ответов ИИ приводят неоплаченный трафик на ваш сайт и в приложение. Атрибутируйте им веб-конверсии, установки приложений и повторные вовлечения.
 
+<div id="about-seo-and-aeo-attribution" />
+
 ## Об атрибуции SEO и AEO
 
 Пользователь выполняет поиск в Google или задает вопрос ChatGPT, а затем кликает по результату, который ведет на ваш сайт. AppsFlyer атрибутирует поисковой системе или системе ответов ИИ визиты и конверсии на вашем сайте, установки приложения и открытия приложения.
+
+<div id="supported-user-journeys" />
 
 ## Поддерживаемые пути пользователя
 
@@ -33,6 +37,8 @@ x-zendesk:
 | Пользователь попадает на ваш сайт | Веб-посещения и веб-конверсии, например регистрации и покупки | SDK AppsFlyer для веб-атрибуции или server-to-server (S2S) интеграция |
 | Пользователь попадает на ваш сайт, а затем нажимает кнопку загрузки, которая ведет в магазин приложений | установки приложения | Мобильный SDK AppsFlyer и Smart Script версии 2.10.3 или выше, с включенной опцией **Media source for organic search installs** |
 | Пользователь попадает на ваш сайт и сразу переходит в уже установленное приложение | Повторные вовлечения в приложении (открытия приложения) | SDK AppsFlyer для Android и iOS версии 6.12.1 или выше, а также Android App Links и iOS Universal Links |
+
+<div id="use-case-1-web-measurement" />
 
 ## Кейс 1: веб-измерение
 
@@ -51,6 +57,8 @@ x-zendesk:
 <Image alt="Google Chrome 2026-11-01 19.17.00.png" src="https://files.readme.io/1188ff2a1b87b4ae825c6a2e2d1d67d7663cd526b1a3cfce7107265886d457a1-52589945729553.png" width="2266px" />
 
 Узнать больше об <Anchor target="_blank" href="/marketers/ru/docs/about-traffic-source-resolution#шаг-2-определение-медиаисточников">определении источника трафика</Anchor>.
+
+<div id="use-case-2-app-install-measurement" />
 
 ## Кейс 2: измерение установок приложения
 
@@ -72,6 +80,8 @@ x-zendesk:
 
 Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping">настройке Smart Scripts для конвертации посетителей сайта</Anchor>.
 
+<div id="use-case-3-app-re-engagement-measurement" />
+
 ## Кейс 3: измерение повторного вовлечения в приложение
 
 Атрибутируйте открытия приложения пользователями, у которых ваше приложение уже установлено.
@@ -91,12 +101,16 @@ x-zendesk:
 
 Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">настройке атрибуции повторного вовлечения для органического поиска (SEO) и органических ответов ИИ (AEO)</Anchor>.
 
+<div id="data-availability" />
+
 ## Доступность данных
 
 SEO- и AEO-трафик отображается в AppsFlyer следующим образом:
 
 * **Дэшборды и отчеты:** поисковые системы отображаются как `<search engine>_organic_seo`, например `google_organic_seo`. AI-сервисы ответов отображаются как `<AI engine>_organic_aeo`, например `chatgpt_organic_aeo`.
 * **Отчеты о сырых данных:** поле `channel` имеет значение `seo` для трафика из поисковых систем и `aeo` для трафика из AI-сервисов ответов.
+
+<div id="supported-search-engines-and-ai-answer-engines" />
 
 ## Поддерживаемые поисковые системы и AI-сервисы ответов
 
@@ -106,23 +120,35 @@ AppsFlyer атрибутирует трафик от следующих сист
 
 **ИИ-системы ответов:** ChatGPT, Claude, Perplexity, Manus, Copilot, Gemini, Grok и DeepSeek.
 
+<div id="faq" />
+
 ## Часто задаваемые вопросы
+
+<div id="is-there-an-additional-fee-for-seo-and-aeo-attribution" />
 
 ### Взимается ли дополнительная плата за атрибуцию SEO и AEO?
 
 № Это включено в вашу подписку. Органические конверсии учитываются в вашем пакете так же, как и неорганические конверсии.
 
+<div id="can-i-customize-the-seo-or-aeo-media-source-name" />
+
 ### Можно ли настроить имя медиаисточника SEO или AEO?
 
 № AppsFlyer задает имя медиаисточника.
+
+<div id="does-appsflyer-attribute-an-install-when-the-user-taps-an-install-button-shown-in-the-search-results" />
 
 ### Атрибутирует ли AppsFlyer установку, когда пользователь нажимает кнопку установки в результатах поиска?
 
 № В этом сценарии AppsFlyer не может собрать информацию, необходимую для Атрибуции.
 
+<div id="is-keyword-search-term-or-prompt-data-available" />
+
 ### Доступны ли данные по ключевому слову, поисковому запросу или запросу prompt?
 
 № Веб-реферер не включает эту информацию.
+
+<div id="see-also" />
 
 ## См.также
 

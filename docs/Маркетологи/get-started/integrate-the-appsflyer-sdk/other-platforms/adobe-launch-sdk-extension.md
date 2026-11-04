@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Выберите или введите сопоставленные данные о конверсиях AppsFlyer и выберите предпочтительный вариант ***Persistence*** (Хранение данных).
 
+<div id="overview" />
+
 ## Обзор
 
 Adobe Launch SDK является неотъемлемой частью платформы Adobe Experience Platform. Adobe Experience Platform помогает компаниям собирать, консолидировать и анализировать данные из различных приложений и платформ. Она позволяет владельцам бизнеса и разработчикам лучше понять поведение клиентов, чтобы оптимизировать опыт и доставку контента. Если ваше приложение использует и Adobe Launch SDK, и AppsFlyer SDK, вы можете отправлять данные на обе платформы с помощью одной реализации **AppsFlyer Adobe Launch SDK Extension**. Это снижает общую сложность процесса разработки и делает кодовую базу более чистой и удобной для обслуживания.
@@ -37,9 +39,13 @@ Adobe Launch SDK является неотъемлемой частью плат
 >
 > Если вы используете расширение Adobe Launch, нет необходимости в стандартной <Anchor target="_blank" href="/marketers/ru/docs/adobe-analytics-integration-with-appsflyer">интеграции Adobe Analytics</Anchor>.
 
+<div id="prerequisites" />
+
 ## Необходимые условия
 
 Перед интеграцией расширения AppsFlyer Adobe SDK необходимо выполнить несколько действий.
+
+<div id="get-your-appsflyer-dev-key" />
 
 <Accordion title="Получение ключа разработчика AppsFlyer (dev key)">
 
@@ -50,6 +56,8 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 </Accordion>
 
+<div id="get-your-app-id" />
+
 <Accordion title="Получите идентификатор приложения">
 
 * Для Android ID приложения — это имя пакета, например example.com.app.
@@ -57,9 +65,13 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 </Accordion>
 
+<div id="step-1-configuring-adobe-launch" />
+
 ## Примечание
 
 Для настройки Adobe Launch следуйте приведенным здесь инструкциям.
+
+<div id="11-creating-a-new-property-in-adobe-launch" />
 
 <Accordion title="1.1 Создание нового свойства в Adobe Launch">
 
@@ -74,6 +86,8 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 </Accordion>
 
+<div id="12-installing-required-adobe-launch-extensions" />
+
 <Accordion title="1.2 Установка необходимых расширений Adobe Launch">
 
 Установите следующие расширения в Adobe Launch:
@@ -84,6 +98,8 @@ Adobe Launch SDK является неотъемлемой частью плат
 * AppsFlyer SDK Extension отправляет данные и события в Adobe и AppsFlyer с помощью Adobe Launch SDK.
 * Adobe Profile позволяет SDK сохранять данные в профиле на стороне клиента.
 * Adobe Mobile Core позволяет настраивать мобильный SDK и предоставляет доступ к событиям и условиям жизненного цикла по умолчанию.
+
+<div id="installing-adobe-analytics-extension" />
 
 #### Установка расширения Adobe Analytics
 
@@ -96,6 +112,8 @@ Adobe Launch SDK является неотъемлемой частью плат
 7. Под ***Наборами отчетов***укажите набор отчетов, который вы создали в шаге 2.
 8. Нажмите кнопку ***Save*** (Сохранить)
 
+<div id="installing-appsflyer-sdk-extension" />
+
 #### Установка расширения AppsFlyer SDK
 
 1. Выберите ***Расширения*** снова.
@@ -104,6 +122,8 @@ Adobe Launch SDK является неотъемлемой частью плат
 4. В разделе ***AppsFlyer Dev Key*** укажите ключ разработчика, полученный на этапе предварительных условий.
 5. Включите ***Отправка данных об атрибуции в Adobe Analytics***. Обратите внимание, что существуют некоторые <Anchor target="_blank" href="/marketers/ru/docs/user-level-data-retention">ограничения на передачу данных на уровне пользователя сторонним аналитическим платформам</Anchor>.
 6. Нажмите кнопку ***Save*** (Сохранить)
+
+<div id="install-profile-and-mobile-core-extension" />
 
 #### Установите расширение Profile и Mobile Core
 
@@ -114,9 +134,13 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 </Accordion>
 
+<div id="step-2-implementing-appsflyer-adobe-sdk-extension" />
+
 ## Выберите вкладку ***Custom Variables*** (Пользовательские переменные) и настройте переменные для сопоставления данных AppsFlyer SDK с данными системы Adobe.
 
 Следуйте инструкциям в этом разделе, чтобы внедрить расширение Adobe SDK в свое приложение.
+
+<div id="21-adding-the-sdk-to-the-app" />
 
 <Accordion title="2.1 Добавление SDK в приложение">
 
@@ -128,6 +152,8 @@ Adobe Launch SDK является неотъемлемой частью плат
 4. Скопируйте фрагменты кода из открывшегося окна и следуйте инструкциям. Если вы маркетолог, настраивающий Adobe, отправьте эти фрагменты кода своему разработчику приложений.
 
 </Accordion>
+
+<div id="22-publishing-the-environment" />
 
 <Accordion title="2.2 Публикация среды">
 
@@ -145,6 +171,8 @@ Adobe Launch SDK является неотъемлемой частью плат
 8. Под кнопкой ***Утвердить***нажмите на три точки рядом с библиотекой и выберите ***Build & Publish to Production*** (Собрать и опубликовать в продакшн).
 
 </Accordion>
+
+<div id="23-adding-android-install-referrer-to-your-app" />
 
 <Accordion title="2.3 Добавление реферера установки для Android к вашему приложению">
 
@@ -195,9 +223,13 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 </Accordion>
 
+<div id="24-setting-required-permissions" />
+
 <Accordion title="2.4. Настройка необходимых разрешений">
 
 Добавление разрешения повышает показатель <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-attribution-model#probabilistic-modeling">атрибуции на основе вероятностного моделирования</Anchor>. Кроме того, это позволяет SDK отправлять больше данных, таких как данные WiFi и сети оператора связи. Эти данные можно получать из <Anchor target="_blank" href="/marketers/ru/docs/raw-data-reporting-overview">отчетов по сырым данным</Anchor> и использовать для анализа и оптимизации кампаний.
+
+<div id="add-required-permissions" />
 
 #### Добавление необходимых разрешений
 
@@ -213,6 +245,8 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 </Accordion>
 
+<div id="using-the-adobe-sdk-extension" />
+
 ## Использование расширения Adobe SDK
 
 Теперь вы можете начать использовать расширение Adobe SDK для отправки данных в Adobe и AppsFlyer.
@@ -222,6 +256,8 @@ Adobe Launch SDK является неотъемлемой частью плат
 > **Примечание**
 >
 > В настоящее время расширение Adobe Launch SDK поддерживает только получение данных о конверсиях и отправку событий. Однако, когда вы добавляете расширение Adobe Launch SDK в свое приложение, AppsFlyer SDK также добавляется. Таким образом, любая функциональность, отсутствующая в расширении Adobe SDK, может быть реализована с помощью AppsFlyer SDK.
+
+<div id="sending-events" />
 
 <Accordion title="Отправка событий">
 
@@ -270,6 +306,8 @@ MobileCore.trackAction("af_purchase", eventMap);
 Данные конверсии доступны в Analysis Workspace в Adobe Analytics. Дополнительные сведения о переносе правил обработки Adobe Mobile Services в Adobe Analytics см. [в документации Adobe](https://experienceleague.adobe.com/en/docs/analytics/technotes/migrate-mobile).
 
 </Accordion>
+
+<div id="getting-data-for-deep-linking-and-deferred-deep-linking" />
 
 <Accordion title="Получение данных для диплинкинга и отложенного диплинкинга.">
 
@@ -337,6 +375,8 @@ AppsFlyerAdobeExtension.registerAppsFlyerExtensionCallbacks(new AppsFlyerExtensi
 
 </Accordion>
 
+<div id="connecting-appsflyer-conversion-data" />
+
 ## Подключение данных о конверсиях AppsFlyer
 
 Данные о конверсии отправляются вместе с событиями на платформу Adobe. Эти переменные позволяют применять логику и правила к измерениям, метрикам или фильтрам отчетности.
@@ -361,6 +401,8 @@ AppsFlyerAdobeExtension.registerAppsFlyerExtensionCallbacks(new AppsFlyerExtensi
 | Время клика AppsFlyer | appsflyer.click\_time |
 | Первоначальная стоимость AppsFlyer | appsflyer.orig\_cost |
 | Кампания AppsFlyer | appsflyer.campaign |
+
+<div id="using-appsflyer-mapped-conversion-data-for-analytics-and-analysis" />
 
 ### Использование данных о конверсии, сопоставленных с AppsFlyer, для аналитики и анализа
 

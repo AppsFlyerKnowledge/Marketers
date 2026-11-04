@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Кратко:** Webpals mobile — партнер по управлению кампаниями Meta (ранее известный как Маркетинговый партнер Facebook), один из интегрированных партнеров AppsFlyer, лидер в области привлечения пользователей и максимизации дохода с глобальным охватом.
 
+<div id="setting-up-webpals-mobile" />
+
 ## Настройка Webpals mobile
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -42,6 +44,8 @@ x-zendesk:
    **Важное примечание:** переключатель **должен оставаться включенным (активным), пока вы работаете с партнером**. <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">Узнать больше</Anchor>
 5. Завершите настройку, используя соответствующие вкладки, как описано ниже.
 
+<div id="in-app-events" />
+
 ### События в приложении
 
 1. Чтобы отправлять постбэки событий в приложении в Webpals mobile — партнеру по управлению кампаниями Meta, введите **Facebook pixel\_id** в разделе ***Настройки событий в приложении***.
@@ -50,6 +54,8 @@ x-zendesk:
 4. Нажмите **Сохранить**.
 
 ![meta_campaign_management_partner_settings_2.png](https://files.readme.io/fdf34ada3d2b6dc645b07d0c1064020011c83baa863191299448e514dfe88e0a-14238447553297.png)
+
+<div id="configuring-on-webpals-mobile" />
 
 ## Настройка в Webpals mobile
 

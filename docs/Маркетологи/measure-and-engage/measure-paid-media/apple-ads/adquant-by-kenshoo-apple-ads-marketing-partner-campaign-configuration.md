@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **Кратко:** Оптимизируйте кампании Apple Ads с помощью Adquant by Kenshoo. После настройки AppsFlyer отправляет постбэки в Adquant.
 
+<div id="enabling-sending-postbacks-to-adquant-apple-ads-marketing-partner" />
+
 ## Включение отправки постбэков в Adquant (маркетинговый партнер Apple Ads)
 
 И рекламодатели, и агентства могут включить атрибуцию для Apple Ads.
+
+<div id="note" />
 
 > 📘 **Примечание:**
 >
@@ -37,6 +41,8 @@ x-zendesk:
 
 * **Рекламодатели:** следуйте приведенным ниже инструкциям, чтобы включить атрибуцию для Apple Ads.
 * **Агентства:** <Anchor target="_blank" href="/marketers/ru/docs/apple-ads-integration-setup#agency-setup">следуйте этим инструкциям</Anchor>, чтобы включить атрибуцию для Apple Ads.
+
+<div id="configuring-adquant-by-kenshoo" />
 
 ### Настройка Adquant by Kenshoo
 
@@ -61,9 +67,13 @@ x-zendesk:
    7. [Необязательно] **Запретить передачу геолокации пользователя:** Чтобы прекратить передачу геолокации пользователя, в поле **Disable\_Country\_Sending** введите `1`.
    8. Нажмите **Save** (Сохранить).
 
+<div id="default-postbacks" />
+
 ### Постбэки по умолчанию
 
 Эти постбэки начинают отправляться автоматически после активации партнера.
+
+<div id="configuring-in-app-events-postback" />
 
 ### Настройка постбэка по событиям в приложении
 

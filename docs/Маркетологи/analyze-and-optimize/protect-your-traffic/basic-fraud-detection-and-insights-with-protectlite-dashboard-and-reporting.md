@@ -39,6 +39,8 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ru/docs/protect360-raw-data
 
 * Доступны в отчете по установкам Protect360 на странице «Экспорт данных» и в Pull API.
 
+<div id="dashboard" />
+
 ## Дэшборд
 
 Чтобы просмотреть дэшборд ProtectLITE, в AppsFlyer перейдите в **Protect360**.
@@ -88,6 +90,8 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ru/docs/protect360-raw-data
 
 Ожидаемая экономия средств и ключевые показатели эффективности указаны в процентах. Это значение показывает, как представленный KPI соотносится с параллельным предыдущим диапазоном дат. Например, за текущую неделю по сравнению с предыдущей или за выбранное количество дней в одном диапазоне дат по сравнению с тем же количеством дней в предыдущем диапазоне дат. Если он показывает, что ожидаемая экономия выросла на X%, это значит, что в предыдущем параллельном диапазоне дат мошеннических установок было на X% меньше.
 
+<div id="estimated-savings" />
+
 #### Ожидаемая экономия средств
 
 [![](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)
@@ -100,11 +104,15 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ru/docs/protect360-raw-data
 
 Подробнее о том, как рассчитывается эта сумма, см. в этом <Anchor target="_blank" href="/marketers/ru/docs/protect360-anti-fraud-guide#faq">FAQ</Anchor>.
 
+<div id="identified-installs" />
+
 #### Выявленные установки
 
 [![](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)
 
 Метрики выявленных установок отображают количество установок, выявленных и заблокированных в режиме реального времени ProtectLITE и в соответствии с правилами проверки.
+
+<div id="suspected-overall-fraud-threat" />
 
 #### Предполагаемая общая угроза мошенничества
 
@@ -121,6 +129,8 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ru/docs/protect360-raw-data
 
 <Accordion title="Установки: график">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### График, отображающий динамику мошенничества
 
 На графике показано количество установок в день, заблокированных ProtectLITE и в соответствии с правилами проверки за период времени, выбранный в фильтре дат.
@@ -130,6 +140,8 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ru/docs/protect360-raw-data
 <div id="installs-table" />
 
 <Accordion title="Установки: таблица">
+
+<div id="identified-fraud-breakdown" />
 
 #### Идентифицированное мошенничество
 
@@ -148,6 +160,8 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ru/docs/protect360-raw-data
 * Изменяйте порядок столбцов, перетаскивая разделы столбцов в настройках столбцов.
 
 [![plite_edit_columns.jpg](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### Содержимое таблицы выявленных случаев мошенничества
 

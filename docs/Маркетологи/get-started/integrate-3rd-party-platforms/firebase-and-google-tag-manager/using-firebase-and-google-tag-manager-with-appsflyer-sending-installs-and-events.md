@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Инструкции по настройке отправки событий через SDK Firebase в AppsFlyer в вашем приложении.
 
+<div id="configuring-events-in-the-app" />
+
 ## Настройка событий в приложении
 
 В этом разделе рассказывается о том, как настроить и создать события в приложении с помощью Google Менеджера тегов (GTM).
@@ -71,6 +73,8 @@ x-zendesk:
 
 </Tab>
 </Tabs>
+
+<div id="ios" />
 
 #### https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
 
@@ -206,6 +210,8 @@ https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6c
 
 </Accordion>
 
+<div id="sending-install-events-to-firebase" />
+
 ## Отправка событий установки в Firebase
 
 Вы также можете отправлять события установки в Firebase со всеми данными, связанными с установкой.
@@ -216,6 +222,8 @@ https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6c
 <Tab title="Java">
 
 Чтобы отправить события установки в Firebase на Android, вы можете использовать объект `conversionData`.
+
+<div id="creating-the-send-event-method" />
 
 #### Создание метода отправки события
 
@@ -236,6 +244,8 @@ public void sendInstallToFirebase(Map<String, String> conversionData){
 
 Этот метод принимает объект `conversionData`. Метод проверяет, есть ли значение NULL для параметров «Время установки», «Медиа-источник» и «Кампания», и если да, то устанавливает для времени установки текущее время, а медиа-источник и кампанию как органические. В противном случае метод берет данные из объекта `conversionData` и отправляет их в Firebase.
 
+<div id="sending-the-install-event" />
+
 #### Отправка события установки
 
 Добавьте следующий код в метод `onConversionDataSuccess`:
@@ -253,6 +263,8 @@ if(conversionData.get("is_first_launch").equals("true")){
 <Tab title="Kotlin">
 
 Чтобы отправить события установки в Firebase на Android, вы можете использовать объект `conversionData`.
+
+<div id="creating-the-send-event-method-1" />
 
 #### Создание метода отправки события
 
@@ -272,6 +284,8 @@ fun sendInstallToFirebase(conversionData: Map<String, Any>) {
 
 Этот метод принимает объект `conversionData`. Метод проверяет, есть ли значение NULL для параметров «Время установки», «Медиа-источник» и «Кампания», и если да, то устанавливает для времени установки текущее время, а медиа-источник и кампанию как органические. В противном случае метод берет данные из объекта `conversionData` и отправляет их в Firebase.
 
+<div id="sending-the-install-event-1" />
+
 #### Отправка события установки
 
 Добавьте следующий код в метод `onConversionDataSuccess`:
@@ -289,10 +303,14 @@ if(conversionData?.get("is_first_launch") == true){
 </Tab>
 </Tabs>
 
+<div id="ios-1" />
+
 #### https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
 
 <Tabs>
 <Tab title="Objective-C">
+
+<div id="creating-the-send-event-method-2" />
 
 #### Создание метода отправки события
 
@@ -332,6 +350,8 @@ if(conversionData?.get("is_first_launch") == true){
 Если установка является неорганической, метод получает соответствующие данные о неорганических установках.
 
 После установки параметров метод отправляет событие установки в Firebase.
+
+<div id="sending-the-install-event-2" />
 
 #### Отправка события установки
 
@@ -388,6 +408,8 @@ func sendInstallToFirebase(_ installData: [AnyHashable : Any]!){
 
 После установки параметров метод отправляет событие установки в Firebase.
 
+<div id="sending-the-install-event-3" />
+
 #### Отправка события установки
 
 В AppDelegate.swift в методе `didFinishLaunchingWithOptions` добавьте `FirebaseApp.configure();`
@@ -411,6 +433,8 @@ if let is_first_launch = data["is_first_launch"] , let launch_code = is_first_la
 
 </Tab>
 </Tabs>
+
+<div id="warning" />
 
 > ❗️ **Предупреждение**
 >

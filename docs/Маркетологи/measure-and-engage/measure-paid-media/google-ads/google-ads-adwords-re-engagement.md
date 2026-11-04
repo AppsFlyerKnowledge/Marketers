@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Измеряйте кампании ретаргетинга Google Ads.
 
+<div id="google-ads-retargeting-campaigns" />
+
 ## Кампании по ретаргетингу в Google Ads
 
 AppsFlyer предоставляет возможность измерять результаты **кампаний по вовлечению для приложений, которые проводятся в Google Ads**.  
@@ -33,6 +35,8 @@ AppsFlyer предоставляет возможность измерять р�
 * Ретаргетинг для вовлечения пользователей, у которых не установлено ваше приложение, называется **повторные установки** или **реатрибуция**.
 
 Подробные сведения см. в <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">справочных документах Google Ads по кампаниям, ориентированным на вовлечение</Anchor>.
+
+<div id="setting-up-google-ads-app-campaigns-for-engagement" />
 
 ## Настройка кампаний Google Ads для вовлечения в приложениях
 
@@ -70,6 +74,8 @@ AppsFlyer предоставляет возможность измерять р�
 
 Инструкции по импорту конверсий в Google Ads см. <Anchor target="_blank" href="/marketers/ru/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">здесь</Anchor>.
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > В отличие от всех других событий, session\_start может быть востребован API Google Ads, даже если вы не импортируете session\_start в Google Ads из AppsFlyer.
@@ -87,6 +93,8 @@ AppsFlyer предоставляет возможность измерять р�
 
 </Accordion>
 
+<div id="dynamic-remarketing-and-shopping-campaigns" />
+
 ## Динамический ремаркетинг и торговые кампании
 
 AppsFlyer поддерживает динамический ремаркетинг для приложений и торговых кампаний. Платформа AppsFlyer относится к ним так же, как и к любым другим кампаниям по повторному вовлечению.
@@ -94,6 +102,8 @@ AppsFlyer поддерживает динамический ремаркетин
 * Подробные сведения о динамическом ремаркетинге для приложений см. <Anchor target="_blank" href="https://support.google.com/adwords/answer/7538938">здесь</Anchor>.
 * Подробные сведения о торговых кампаниях см. <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2454022?hl=en">здесь</Anchor>.
 * Подробные сведения о кампаниях Google Ads для приложений, ориентированных на вовлечение, см. <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">здесь</Anchor>.
+
+<div id="support-for-non-app-campaigns-demand-gen-and-sem" />
 
 ### Поддержка кампаний без привязки к приложению (кампании для создания спроса и поисковый маркетинг)
 
@@ -112,6 +122,8 @@ AppsFlyer поддерживает измерение повторного во�
 * **Установки** из кампаний для создания спроса и SEM не атрибутируются ни на одной платформе.
 
 **Отказ:** В отличие от TikTok и Meta, в Google пока нельзя включать или отключать измерение кампаний вне приложений.
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

@@ -119,6 +119,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="see-also" />
+
 > 📄 **Смотрите также**
 >
 > * <Anchor target="_blank" href="https://developer.okta.com/docs/guides/build-sso-integration/openidconnect/main/">Документация по SSO Okta</Anchor>

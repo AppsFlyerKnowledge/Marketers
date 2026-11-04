@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Настройте интеграцию с Google Analytics с помощью пользовательских измерений.
 
+<div id="custom-dimensions-on-google-analytics" />
+
 ## Пользовательские параметры в Google Analytics
 
 Есть еще один способ отправки данных атрибуции AppsFlyer в Google Analytics: он настраивается в GA, а не в дэшборде AppsFlyer.
@@ -49,9 +51,13 @@ x-zendesk:
 > * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/android/v4/">SDK GA для Android</Anchor>
 > * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/ios/v3/">SDK GA для iOS</Anchor>
 
+<div id="setting-media-source-as-a-custom-dimension-on-google-analytics" />
+
 ### Настройка медиаисточника как пользовательского параметра в Google Analytics
 
 В Google Analytics есть высокоэффективный инструмент сегментации на уровне пользователя, который называется пользовательскими параметрами. Значения пользовательских параметров отправляются с мобильных устройств, и на их основе в вашем дэшборде Google Analytics формируются отчеты.
+
+<div id="step-1-define-it-on-google-analytics" />
 
 ### Шаг 1: определите это в Google Analytics
 
@@ -67,6 +73,8 @@ x-zendesk:
    ![ga3](https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png)
 
    Повторите этот шаг, создайте еще один параметр и назовите его **кампания AppsFlyer**
+
+<div id="step-2-setting-and-sending-the-data-from-the-app" />
 
 ### Шаг 2: настройка и отправка данных из приложения
 
@@ -127,6 +135,8 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 
 </Tab>
 </Tabs>
+
+<div id="step-3-see-the-results-in-google-analytics" />
 
 ### Шаг 3: просмотрите результаты в Google Analytics
 

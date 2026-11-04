@@ -24,13 +24,19 @@ x-zendesk:
 
 <Image alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
 
+<div id="overview" />
+
 ## Обзор
 
 Благодаря интеграции Tealium с AppsFlyer мобильные клиенты могут учитываться через SDK AppsFlyer для мобильной атрибуции, и данные атрибуции о конверсиях будут отправляться непосредственно в профиль Tealium AudienceStream.
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">Некоторые медиа-источники</Anchor> ограничивают передачу данных третьим лицам.  Поэтому постбэки для ограниченных событий не будут отправляться этому партнеру, независимо от настроенной отправки постбэков.
+
+<div id="setting-up-tealium" />
 
 ## Настройка Tealium
 
@@ -39,6 +45,8 @@ x-zendesk:
 * Интеграция на стороне клиента
 * Интеграция на стороне сервера
 
+<div id="client-side-integration" />
+
 ### Интеграция на стороне клиента
 
 Используйте удаленные команды для библиотек iOS и Android, которые позволяют запускать нативный код в SDK AppsFlyer.
@@ -46,6 +54,8 @@ x-zendesk:
 **Чтобы интегрировать Tealium с помощью интеграции на стороне клиента:**
 
 * Следуйте <Anchor target="_blank" href="https://docs.tealium.com/platforms/remote-commands/integrations/appsflyer/">руководству по интеграции с помощью удаленных команд</Anchor>
+
+<div id="server-side-integration" />
 
 ### Интеграция на стороне сервера
 

@@ -27,10 +27,14 @@ x-zendesk:
 >
 > Эта интеграция работает с приложениями iOS и Android, в которых уже [реализован SDK Google Analytics для Firebase](https://firebase.google.com/docs/analytics). Для успешной интеграции SDK AppsFlyer должен собирать значение `app_instance_id` из SDK Firebase. См. инструкцию о том, [как извлечь идентификатор экземпляра приложения из SDK Firebase](#5-retrieve-app-instance-id-in-appsflyer-sdk).
 
+<div id="how-does-it-work" />
+
 ## Как это работает?
 
 * **Когда** **происходит** **новая установка**, AppsFlyer отправляет в GA4 детали точки касания – медиаисточник, название кампании и идентификатор кампании. Также отправляется `app_instance_id` от SDK Firebase, чтобы обеспечить запись точки касания в GA4 для этого пользователя.
 * **Когда** **происходит внутреннее событие приложения**, GA4 будет атрибутировать событие к последней точке касания.
+
+<div id="set-up-google-analytics-ga4-integration" />
 
 ## Настройка интеграции с Google Analytics (GA4)
 
@@ -131,6 +135,8 @@ AppsFlyer может отправлять автоматические пост�
 >
 > Нативный Android Нативный iOS Unity Нативный React
 
+<div id="the-event-mapping-table" />
+
 #### Таблица сопоставления событий
 
 Следующая таблица включает в себя все события Google Аналитики и их предопределённые параметры AppsFlyer. Отправьте своему разработчику таблицу, содержащую только те события, которые вы сопоставили.
@@ -169,6 +175,8 @@ AppsFlyer может отправлять автоматические пост�
 |  | [view\_promotion](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_promotion) | <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
 |  | [просмотр\_результатов\_поиска](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_search_results) |  |
 | af\_ad\_view | [ad\_impression](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#ad_impression) | <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
+
+<div id="reserved-google-event-names" />
 
 #### Зарезервированные названия событий Google
 

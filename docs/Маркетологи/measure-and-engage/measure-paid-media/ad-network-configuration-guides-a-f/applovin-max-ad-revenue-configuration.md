@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png" width="265px" />
 
+<div id="setting-up-applovin-max-integration" />
+
 ## Настройка интеграции Applovin MAX
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -41,6 +43,8 @@ x-zendesk:
    **Важное примечание:** переключатель **должен оставаться включенным (активным), пока вы работаете с партнером**. <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">Узнать больше</Anchor>
 5. Завершите настройку, используя соответствующие вкладки, как описано ниже.
 
+<div id="setting-tabs" />
+
 ### Вкладки настроек
 
 При необходимости обновите содержимое вкладок настроек: доход от рекламы.
@@ -50,6 +54,8 @@ x-zendesk:
 <Accordion title="Дата и время">
 
 AppLovin MAX обеспечивает медиацию дохода от рекламы с агрегированными данными на уровне устройства.
+
+<div id="note" />
 
 > 📘 **Примечание:**
 >
@@ -61,6 +67,8 @@ AppLovin MAX обеспечивает медиацию дохода от рек�
 * Следуйте <Anchor target="_blank" href="/marketers/ru/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">этим инструкциям по интеграции</Anchor>.
 
 </Accordion>
+
+<div id="best-practice" />
 
 ### Практические рекомендации:
 

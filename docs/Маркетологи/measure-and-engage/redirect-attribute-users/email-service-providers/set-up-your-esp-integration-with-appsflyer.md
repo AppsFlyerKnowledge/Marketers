@@ -28,6 +28,8 @@ x-zendesk:
 
 ## <Image alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
 
+<div id="about-the-appsflyer-esp-integration" />
+
 ## Об интеграции AppsFlyer с ESP
 
 Маркетологи часто используют провайдеров услуг электронной почты (ESP) для массовой рассылки в рамках email-кампаний. И хотя это должно быть простым процессом, создающим предсказуемый пользовательский путь, зачастую всё происходит совсем по-другому. Сложность заключается в том, как обычно ESP организуют работу с аналитику, что, как правило, нарушает работу диплинков и негативно сказывается на опыте мобильных пользователей. В результате пользователи иногда перенаправляются на мобильные веб-сайты вместо приложения, что препятствует конверсии.
@@ -38,9 +40,13 @@ AppsFlyer решает эту проблему с помощью решения 
 
 Решение AppsFlyer для интеграции ESP — это премиум-функция. Если вы хотите узнать больше или начать работу, свяжитесь с нами по адресу [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
+<div id="set-up-the-integration" />
+
 ## Настройка интеграции
 
 <span id="h_01J3JHFXRP57VS9D22FEWS2JZW"></span>В этом разделе описан процесс настройки интеграции AppsFlyer с ESP.
+
+<div id="prerequisites" />
 
 ### Необходимые условия
 
@@ -62,6 +68,8 @@ AppsFlyer решает эту проблему с помощью решения 
 Он состоит из субдомена и вашего основного домена, например mail.yourbrand.com. Разные ESP могут называть это брендингом ссылок, доменом отслеживания, доменом кликов, перезаписью ссылок, отслеживанием кликов, или «white label».
 
 **Создание нового CTD обязательно**, даже если вы уже используете существующий. Это гарантирует отсутствие влияния на трафик текущих активных email-кампаний.
+
+<div id="notes" />
 
 > 📘 **Примечания**
 >
@@ -144,6 +152,8 @@ AppsFlyer решает эту проблему с помощью решения 
 * [Настройка приложения для поддержки диплинкинга.](#настройка-приложения-для-поддержки-диплинкинга)
 * [Настройка приложения для обработки веб-ссылок и ссылок на приложения](#настройка-приложения-для-обработки-веб-ссылок-и-ссылок-на-приложения)
 
+<div id="configure-your-app-to-support-associated-domains" />
+
 #### **[Настройка приложения для поддержки связанных доменов](#настройка-приложения-для-поддержки-связанных-доменов).**
 
 AppsFlyer размещает файлы ассоциации приложения, чтобы активировать <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-knowledge-base-glossary#universal-links-универсальные-ссылки">Universal Links (iOS)</Anchor> и <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-knowledge-base-glossary#android-app-link">App Links (Android)</Anchor>.
@@ -162,6 +172,8 @@ AppsFlyer размещает файлы ассоциации приложени�
 **Примечание^** Домен отслеживания кликов должен быть добавлен к текущим доменам, уже определённым в файле манифеста приложения (AndroidManifest.xml).
 
 
+<div id="configure-your-app-to-support-deep-linking" />
+
 #### **Настройка приложения для поддержки диплинкинга.**
 
 Когда пользователь нажимает на ссылку App Link или Universal Link, должно открыться приложение.
@@ -175,6 +187,8 @@ AppsFlyer размещает файлы ассоциации приложени�
 
 2. Используйте <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">Унифицированный API для диплинкинга</Anchor>, чтобы получать параметры диплинков и обрабатывать данные диплинков.
 
+
+<div id="configure-your-app-to-handle-weblinks-and-application-links" />
 
 #### **Настройка приложения для обработки веб-ссылок и ссылок на приложения**
 
@@ -240,6 +254,8 @@ AppsFlyer размещает файлы ассоциации приложени�
 </Accordion>
 
 *Эта интеграция поддерживает следующие ESP: Blueshift, Braze, CleverTap, Customer.io, Emarsys, Expert Sender, Klaviyo, MailExpress, MailGun, Moengage, RDStation, Reteno, Sailthru, Sendgrid, Sparkpost и т. д. См. полный список <Anchor target="_blank" href="/marketers/ru/docs/email-service-provider-esp-integration-guide">здесь</Anchor>. См. полный <Anchor target="_blank" href="/marketers/ru/docs/email-service-provider-esp-integration-guide">список</Anchor>.
+
+<div id="faq" />
 
 ## Часто задаваемые вопросы
 

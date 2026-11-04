@@ -37,6 +37,8 @@ x-zendesk:
 
 [![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
 
+<div id="what-is-attribution" />
+
 ## Что такое атрибуция?
 
 **Атрибуция** — это процесс определения того, что побудило (вызвало) пользователя установить приложение или выполнить действия после установки, такие как повторное вовлечение и повторная атрибуция. Результатом атрибуции является:
@@ -45,6 +47,8 @@ x-zendesk:
 * **Органический**: пользователь не взаимодействовал с медиаисточником. Внимание! Для простоты понимания мы часто говорим, что пользователь *атрибутирован органически*. Мы понимаем, что это не совсем верно, так как пользователи, устанавливающие приложение органически, по сути не атрибутируются.
 
 Атрибуция имеет ключевое значение для оптимизации процесса привлечения пользователей и усилий по повторному вовлечению пользователей.
+
+<div id="what-is-an-app-install" />
 
 ## Что считается установкой приложения?
 
@@ -61,11 +65,15 @@ The **Модель атрибуции** — это набор правил, о�
   * **False означает, что налог включен в общую выручку.**
   * **Реатрибуция**
 
+<div id="attribution-methods" />
+
 ## Методы атрибуции
 
 AppsFlyer использует несколько методов атрибуции, которые перечислены в следующей таблице:
 
 <table><tbody><tr><td>Метод</td><td>Использует идентификатор устройства</td><td>Техника</td><td>Кто атрибутирует</td><td>Android (Google Play и сторонние магазины)</td><td>https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png</td><td>Universal Windows Platform (UWP)</td><td>Платформы CTV, ПК и консолей (3)</td></tr><tr><td> <a href="#install-referrer-android-only">Реферер</a> (1)</td><td>Ни один</td><td>Детерминированный</td><td>AppsFlyer:</td><td>Да (2)</td><td>Ни один</td><td>Да</td><td>Ни один</td></tr><tr><td> <a href="#device-id-matching">Сопоставление идентификаторов устройства</a> (1)</td><td>Да</td><td>Детерминированный</td><td>AppsFlyer:</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td></tr><tr><td> <a href="#probabilistic-modeling">Вероятностное моделирование</a> (1)</td><td>Ни один</td><td>Вероятностный метод</td><td>AppsFlyer:</td><td>Да</td><td>Да</td><td>Ни один</td><td>Да</td></tr><tr><td> <a href="#preload-campaigns">Предварительная загрузка</a> (1)</td><td>Ни один</td><td>Детерминированный</td><td>AppsFlyer:</td><td>Да</td><td>Ни один</td><td>Да</td><td>Ни один</td></tr><tr><td><a href="./skadnetwork-skan-solution-guide" target="_blank">SKAdNetwork (SKAN)</a></td><td>Ни один</td><td>Детерминированный</td><td>Apple</td><td>Ни один</td><td>Да</td><td>Ни один</td><td>Ни один</td></tr><tr><td> <a href="./apple-ads-integration-setup" target="_blank">Apple Search Ads</a> (1)</td><td>Ни один</td><td>Детерминированный</td><td>Apple</td><td>Ни один</td><td>Да</td><td>Ни один</td><td>Ни один</td></tr><tr><td> <a href="#deep-link">Глубокая ссылка</a> (1)</td><td>Ни один</td><td>Детерминированный</td><td>AppsFlyer:</td><td>Да</td><td>Да</td><td>Да</td><td>Ни один</td></tr><tr><td colspan="8">(1) Иногда это называется «классическим» методом атрибуции в дэшбордах и отчетах AppsFlyer.<br/>(2) Поддерживается некоторыми сторонними магазинами приложений.<br/>(3) См. <a href="./ctv-pc-and-console-platform-attribution-concepts#поддерживаемые-платформы" target="_blank">полный список платформ CTV, ПК и консолей</a>.</td></tr></tbody></table>
+
+<div id="attribution-method-priorities-attribution-waterfall" />
 
 ### Приоритеты методов атрибуции (водопад атрибуции)
 
@@ -154,6 +162,8 @@ AppsFlyer применяет вероятностное моделировани
 
 </Accordion>
 
+<div id="attribution-methods-per-media-source-and-appsflyer-feature" />
+
 ### Методы атрибуции по медиа-источникам и функциям AppsFlyer
 
 В следующих разделах вы найдете полную информацию о том, какие методы атрибуции поддерживаются в зависимости от таких критериев, как:
@@ -177,6 +187,8 @@ AppsFlyer применяет вероятностное моделировани
 <table><thead><tr><th rowspan="2">Медиаисточник</th><th colspan="3">Метод атрибуции</th></tr><tr><th>Android;</th><th>https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png</th><th><strong>Платформы CTV, ПК и консоли</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRN:</a></td><td>Сопоставление идентификатора устройства</td><td><ul><li>Сопоставление идентификатора устройства (при наличии согласия ATT)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td>Сопоставление идентификатора устройства</td></tr><tr><td><ul><li>Рекламные сети (не SRN) через <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">ссылки атрибуции для партнеров</a> </li><li><span>Платформы CTV, ПК и консоли</span></li></ul></td><td><ul><li>Install Referrer</li><li>Сопоставление идентификатора устройства</li><li>Вероятностное моделирование</li></ul></td><td><ul><li>Сопоставление идентификатора устройства (при наличии согласия ATT)</li><li>Вероятностное моделирование </li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Предустановленные приложения</a></td><td>Предустановки</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="user-engagement-attribution-types" />
 
 ## Типы атрибуции вовлечения пользователей
 
@@ -269,6 +281,8 @@ AppsFlyer применяет вероятностное моделировани
 
 </Accordion>
 
+<div id="advanced-attribution-topics" />
+
 ## Продвинутые темы атрибуции
 
 <div id="in-app-events" />
@@ -309,6 +323,8 @@ AppsFlyer полностью атрибутирует только одну ис
 Для тестирования устройства и множественных установок <Anchor target="_blank" href="/marketers/ru/docs/registering-test-devices">зарегистрируйте</Anchor> устройство в AppsFlyer. Если вы не зарегистрируете устройство, будет записана только первая установка.
 
 Обратите внимание, что AppsFlyer обеспечивает большую точность атрибуции повторных установок iOS без идентификатора рекламодателя. Включить эту функцию можно на <Anchor target="_blank" href="/marketers/ru/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only">странице настроек приложения</Anchor>.
+
+<div id="reinstalling-ios-apps-that-are-backed-up-in-icloud" />
 
 #### Повторная установка приложений iOS, резервные копии которых находятся в iCloud
 

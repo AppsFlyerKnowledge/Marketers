@@ -15,9 +15,13 @@ x-zendesk:
 ---
 **Кратко:** Установите AppsFlyer Web SDK (также известный как пиксель) на своем сайте, чтобы передавать в AppsFlyer данные о посещениях и событиях пользователей, и задайте постоянный идентификатор пользователя (CUID), чтобы объединить пути пользователей на разных платформах.
 
+<div id="overview" />
+
 ## Обзор
 
 Web SDK позволяет фиксировать, как посетители взаимодействуют с вашим сайтом, и отправляет эту информацию в AppsFlyer. Это подключаемый модуль размером 40–60 КБ, который передает на платформу AppsFlyer данные о посещениях и действиях пользователей на вашем сайте.
+
+<div id="integrate-the-sdk-manually" />
 
 ### Интегрируйте SDK вручную
 
@@ -31,6 +35,8 @@ Web SDK позволяет фиксировать, как посетители �
 6. [Задайте идентификатор пользователя.](#6-установить-идентификатор-пользователя-клиента) Установите постоянный CUID для унификации веб-активности с другими платформами.
 7. [Управление конфиденциальностью.](#7-управление-конфиденциальностью) Управляйте согласием или отказом от измерения, а также настройте параметры безопасности и фильтрации данных (политику безопасности контента и удаление параметров запроса).
 8. [Справочник по файлам cookie Web SDK.](#справочник-файлов-cookie-web-sdk) Просмотрите файлы cookie, которые устанавливает или использует Web SDK, включая их назначение, срок действия и область применения.
+
+<div id="integrate-the-sdk-with-an-ai-coding-agent" />
 
 #### Интегрируйте SDK с помощью ИИ-агента для написания кода.
 
@@ -326,6 +332,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
 
 </Accordion>
 
+<div id="1-obtain-your-keys" />
+
 ## 1. Получите свои ключи
 
 **Получите идентификатор Web SDK (также известный как Web Dev Key):**
@@ -339,6 +347,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
 1. В AppsFlyer в боковом меню перейдите в раздел **Вовлечение** > **Web to App** > **Smart Banners**.
 2. Скопируйте необходимый ключ смарт-баннера.
 
+<div id="2-select-a-code-snippet" />
+
 ## 2. Выберите фрагмент кода
 
 Выберите фрагмент, который соответствует вашему типу интеграции и требованиям безопасности. Доступны следующие две опции:
@@ -349,6 +359,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
 > ❗️ **Warning**
 >
 > Если вы переходите от стандартного Web SDK к расширенной проверке SDK, замените существующий сниппет на новый. Не добавляйте новый сниппет поверх существующего.
+
+<div id="standard-web-sdk" />
 
 ### Стандартный Web SDK
 
@@ -402,6 +414,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
 ```
 
 </Accordion>
+
+<div id="advanced-sdk-verification" />
 
 ### Расширенная проверка SDK
 
@@ -476,6 +490,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
 
 </Accordion>
 
+<div id="3-deploy-the-snippet" />
+
 ## 3. Разверните сниппет
 
 Разверните выбранный вами на Шаге 2 сниппет, используя один из следующих методов. Убедитесь, что SDK загружается только один раз при каждой загрузке страницы.
@@ -528,6 +544,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
 
 <Accordion title="Вариант С: Разверните через Adobe Launch Tag Manager">
 
+<div id="create-a-property-in-adobe-experience-cloud" />
+
 #### Создайте свойство в Adobe Experience Cloud
 
 1. Откройте Adobe Experience Cloud > Launch.
@@ -537,6 +555,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
 5. В разделе **Платформа** выберите **Веб-сайт**.
 6. Укажите домен своего сайта.
 7. Нажмите **Сохранить**.
+
+<div id="add-the-snippet-to-the-adobe-launch-property" />
 
 #### Добавьте сниппет в свойство Adobe Launch
 
@@ -551,6 +571,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
    * Нажмите **Сохранить изменения**, чтобы закрыть Редактор кода.
 5. Нажмите **Сохранить**.
 
+<div id="add-the-adobe-launch-tag-to-the-website" />
+
 #### Добавьте тег Adobe Launch на сайт
 
 1. На странице **Свойства сайта** выберите вкладку **Среды**.
@@ -558,6 +580,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
 3. В колонке **Установка** нажмите на иконку коробки в соответствующей строке.
 4. В диалоговом окне **Инструкции по установке для веб-приложения** скопируйте фрагмент кода скрипта и закройте диалоговое окно.
 5. Вставьте фрагмент кода в раздел &lt;head> сайта.
+
+<div id="publish-the-adobe-launch-environment" />
 
 #### Опубликуйте окружение Adobe Launch
 
@@ -577,6 +601,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
    * Нажмите меню действий > выберите **Собрать и опубликовать в рабочей среде**.
 
 </Accordion>
+
+<div id="4-make-sure-the-sdk-is-working" />
 
 ## 4. Убедитесь, что SDK работает
 
@@ -604,6 +630,8 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
 > 📘 **Note**
 >
 > Чтобы в реальном времени визуально подтвердить установку Web SDK и проверить, что ваши события срабатывают корректно, используйте страницу тестирования Web SDK.
+
+<div id="5-set-and-record-events" />
 
 ## 5. Установите и запишите события
 
@@ -675,6 +703,8 @@ window.onload = function(){
 
 Этот подход используется для записи успешных конверсий, таких как подписка на рассылку, путем срабатывания тега, когда загружается страница "Спасибо".
 
+<div id="1-set-up-a-thank-you-page" />
+
 #### 1. Настройте страницу «Спасибо»
 
 Следующая структура HTML загружает GTM, который, в свою очередь, загружает Web SDK. Она также демонстрирует, как данные могут быть доступны для GTM через функции или `localStorage`.
@@ -702,6 +732,8 @@ window.onload = function(){
 </body>
 </html>
 ```
+
+<div id="2-configure-the-gtm-tag" />
 
 #### 2. Настройте тег GTM
 
@@ -772,6 +804,8 @@ window.onload = function(){
 
 Этот метод фиксирует конкретные действия, такие как нажатие кнопки **Оформить заказ**, используя встроенные переменные и триггеры GTM.
 
+<div id="1-set-up-a-checkout-page" />
+
 #### 1. Настройка страницы оформления заказа
 
 ```html
@@ -792,6 +826,8 @@ window.onload = function(){
 </html>
 ```
 
+<div id="2-configure-gtm-variables-and-triggers" />
+
 #### 2. Настройте переменные и триггеры GTM
 
 1. В GTM нажмите **Переменные** > **Настроить** и включите **Элемент клика** в списке встроенных переменных.
@@ -800,6 +836,8 @@ window.onload = function(){
    * Тип триггера: **Клик - Все элементы**.
    * Этот триггер срабатывает на: **Некоторые клики**.
    * Условие **Элемент клика** соответствует CSS селектору `#checkout`.
+
+<div id="3-create-the-interaction-tag" />
 
 #### 3. Создайте тег взаимодействия
 
@@ -830,6 +868,8 @@ window.onload = function(){
 
 </Accordion>
 
+<div id="6-set-customer-user-id" />
+
 ## 6. Установить идентификатор пользователя клиента
 
 После настройки измерения событий задайте постоянный идентификатор с помощью `setCustomerUserId`, чтобы связать веб-активность пользователя с его активностью на других платформах (мобильных устройствах, ПК и CTV) и получить единое представление о его пути на всех платформах.
@@ -854,6 +894,8 @@ window.onload = function(){
 * Сервер генерирует уникальный CUID для пользователя.
 * На странице «Спасибо» после регистрации вы запрашиваете у сервера новый CUID.
 * Используя ответ сервера, вы устанавливаете CUID AppsFlyer с помощью метода Web SDK `setCustomerUserId()`.
+
+<div id="a-sign-up-form-example" />
 
 #### Пример формы регистрации
 
@@ -888,6 +930,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 </body>
 </html>
 ```
+
+<div id="a-thank-you-page-example" />
 
 #### Пример страницы благодарности
 
@@ -1000,6 +1044,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 </Accordion>
 
+<div id="7-manage-privacy" />
+
 ## 7. Управление конфиденциальностью
 
 После настройки измерения событий может потребоваться применить определенные ограничения безопасности и конфиденциальности в соответствии с требованиями вашей организации или региональными стандартами.
@@ -1007,6 +1053,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 <Accordion title="Согласие на отправку событий или отказ от нее">
 
 Вы можете контролировать измерение двумя способами:
+
+<div id="sdk-initial-state-setting-in-the-snippet" />
 
 #### Настройка начального состояния SDK (в сниппете)
 
@@ -1018,6 +1066,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 > 📘 **Note**
 >
 > Если measurementStatus пуст или имеет значение NULL, AppsFlyer рассматривает это так, как если бы measurementStatus:true.
+
+<div id="explicit-control" />
 
 #### Ручное управление
 
@@ -1038,6 +1088,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 Если ваш веб-сайт требует строгих протоколов безопасности или конфиденциальности данных, используйте следующие механизмы для настройки взаимодействия Web SDK с вашей средой и вашими данными.
 
+<div id="content-security-policy-csp" />
+
 #### Политика безопасности контента (CSP)
 
 Если ваш веб-сайт требует, чтобы JavaScript был защищен CSP, Web SDK поддерживает два подхода в зависимости от вашей конфигурации CSP и сниппета, который вы выбрали на шаге 2.
@@ -1055,6 +1107,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 | `script-src 'nonce-...' 'strict-dynamic'` | Да (рекомендуется) | Nonce охватывает встроенный скрипт и загрузчик; `strict-dynamic` тем самым переносит доверие на динамически вставляемый тег SDK. CDN-источник не требуется в белом списке. |
 
 Совместимость с политикой CSP
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### Расширенная проверка SDK с фрагментами CSP nonce
 
@@ -1126,6 +1180,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 </Accordion>
 
+<div id="discard-query-parameters" />
+
 #### Исключить параметры запроса
 
 Если параметры запроса URL содержат конфиденциальную информацию, настройте AppsFlyer так, чтобы они не сохранялись (в URL, реферерах и `header_referer`).
@@ -1139,6 +1195,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 * Результат:`param1=value1&af_url_mask=param2;param3`
 
 </Accordion>
+
+<div id="web-sdk-cookies-reference" />
 
 ## Справочник файлов cookie Web SDK
 

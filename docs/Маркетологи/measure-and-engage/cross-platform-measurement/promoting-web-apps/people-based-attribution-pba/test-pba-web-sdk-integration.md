@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Протестируйте интеграцию плагина веб-SDK PBA.
 
+<div id="test-pba-web-events" />
+
 ## Тестирование веб-событий PBA
 
 **Принципы использования страницы тестирования**
@@ -32,6 +34,8 @@ x-zendesk:
 * Проанализированы и проверены при получении.
 * Доступны в пользовательском интерфейсе. Сюда входят и ошибки обработки. Если они есть, отправьте исправленные события еще раз, чтобы убедиться, что они обработаны правильно.
 * Обрабатываются как и любые другие события в ходе ежедневной обработки. Это означает, что они добавляются на дэшборды и в сырые данные.
+
+<div id="web-sdk-integration-test-page" />
 
 #### Страница тестирования интеграции веб-SDK
 
@@ -72,6 +76,8 @@ x-zendesk:
     </tr>
   </tbody>
 </Table>
+
+<div id="procedures" />
 
 ## Процедура
 
@@ -148,6 +154,8 @@ x-zendesk:
 | 3 | <Anchor target="_blank" href="/marketers/ru/docs/pba-web-sdk-integration-guide#recording-event-scenarios">Начните отправлять веб-события,</Anchor> чтобы убедиться, что PBA обрабатывает их правильно.<br /><br />**Примечание.**<br /><br />Если не указано иное, `eventRevenue` и `eventRevenueCurrency` заполнены значениями по умолчанию:<ul><li>`eventRevenueCurrency: "USD"`</li><li>`eventRevenue: 0`</li></ul>[![PBAWebSDKTestEventEVENT_en-us.png](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)<br /><br />/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters | [![mceclip5.png](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png)](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png) |
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Устранение неполадок
 

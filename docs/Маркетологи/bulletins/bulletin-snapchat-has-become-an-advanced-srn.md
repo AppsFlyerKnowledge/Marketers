@@ -27,6 +27,8 @@ x-zendesk:
 | **Необходимые действия** | Никаких действий не требуется. |
 | **Что изменилось?** | С 12 сентября 2023 года Snapchat стал расширенной SRN. Это означает:<ul><li>В AppsFlyer отправляются клики и показы, а атрибуция без IDFA будет осуществляться на основе вероятностного моделирования.</li><li>В отчетах по сырым данным конверсии по просмотрам Snapchat <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">частично ограничены</Anchor>.</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **См. также**
 >
 > * <Anchor target="_blank" href="/marketers/ru/docs/snapchat-advanced-srn-integration-setup">Snapchat — Настройка интеграции расширенной SRN</Anchor>

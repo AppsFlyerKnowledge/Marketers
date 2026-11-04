@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **Краткий обзор:** Создавайте ссылки с возможностями атрибуции, перенаправления и диплинкинга, которые конвертируют собственных пользователей или пользователей из платных медиа в пользователей приложений независимо от типа устройства, операционной системы, канала или платформы.  Эти ссылки позволяют обеспечить наилучший пользовательский опыт, независимо от того, какие собственные медиа-источники привели к конверсии этих пользователей: сайты, баннеры, посты в социальных сетях, адреса эл. почты или смс и др.
 
+<div id="introduction-video" />
+
 ## Вводное видео
 
 <Embed title="Руководство по OneLink" typeOfEmbed="youtube" url="https://www.youtube.com/embed/golT4p9D8MA" providerUrl="https://www.youtube.com" />
+
+<div id="benefits" />
 
 ## Преимущества
 
@@ -39,6 +43,8 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/ru/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">API OneLink</Anchor> и <Anchor target="_blank" href="/marketers/ru/docs/perform-onelink-bulk-actions-via-csv">массовое создание ссылок</Anchor>: масштабируйте и одновременно проводите несколько кампаний и быстро и легко создавайте тысячи ссылок OneLink. Чтобы ваш опыт OneLink работал без сбоев, убедитесь, что ваш тарифный план остается активным.
 
+<div id="experiences" />
+
 ## Опыт
 
 Пакет для клиентского опыта и диплинкинга от AppsFlyer на базе OneLink позволяет создавать ссылки, которые обеспечивают оптимальный клиентский опыт для ваших пользователей, независимо от того, откуда они пришли. Вы можете настроить следующий клиентский опыт:
@@ -51,6 +57,8 @@ x-zendesk:
 * **Текст-приложение**: Создайте ссылки для СМС и рассылок, чтобы привлекать пользователей через текстовые сообщения.
 * **Реферал-приложение**: Создайте ссылки для приглашения пользователей, которые позволяют пользователям и влиятельным лицам приглашать других в ваше приложение или делиться конкретным внутренним контентом, например статьей.
 * **Другое**: откуда бы ни пришли ваши пользователи — с компьютера или мобильного устройства, из онлайна или из офлайна, через собственные или платные медиа-источники, — ссылки OneLink позволят легко направить пользователя в нужную точку.
+
+<div id="setting-up-onelink" />
 
 ## Настройка OneLink
 
@@ -73,6 +81,8 @@ x-zendesk:
 | Создание шаблона OneLink | <ul><li>Маркетолог/менеджер продуктов настраивает шаблон в AppsFlyer.</li><li>Разработчик Android настраивает методы открытия приложений для существующих пользователей (Android App Links и схема URI).</li><li>Разработчик iOS настраивает методы открытия приложений для существующих пользователей (универсальные ссылки iOS и схема URI).</li></ul> | <ul><li>Дэшборд AppsFlyer</li><li><Anchor target="_blank" href="/marketers/ru/docs/create-a-onelink-template">Инструкции для маркетолога</Anchor></li><li>Инструкции для разработчиков <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">Android</Anchor> и <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup">iOS</Anchor></li></ul> |
 | Создание ссылки OneLink | <ul><li>Маркетолог/менеджер продукта настраивает ссылку в AppsFlyer, в том числе выбирает желаемый клиентский опыт и добавляет любые желаемые параметры атрибуции или диплинкинга.</li><li>Разработчики Android и iOS реализуют метод UDL для диплинкинга (если требуется диплинкинг).</li></ul> | <ul><li><Anchor target="_blank" href="/marketers/ru/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Инструкции для маркетолога</Anchor></li><li>Инструкции для разработчиков <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_unified_deep_linking">Android</Anchor> и <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_unified_deep_linking">iOS</Anchor></li><li>Образцы приложений (Github)</li></ul> |
 
+<div id="additional-options" />
+
 ## Дополнительные опции
 
 После выполнения некоторых или всех шагов настройки в интерфейсе рассмотрите возможность использования дополнительных функций.
@@ -84,9 +94,13 @@ x-zendesk:
 * <Anchor target="_blank" href="/marketers/ru/docs/understand-onelink-short-vs-long-urls">Длинные URL-адреса</Anchor>: добавляйте параметры к настраиваемым ссылкам OneLink или генерируйте большое количество настраиваемых ссылок OneLink, применяя собственные простые формулы в электронной таблице.
 * <Anchor target="_blank" href="/marketers/ru/docs/redirect-app-users-to-a-website">Перенаправление из приложения в веб (app-to-web)</Anchor>: Перенаправляйте пользователей из приложения на веб-сайт или страницу в социальных сетях.
 
+<div id="troubleshooting-and-faq" />
+
 ## Устранение неполадок и часто задаваемые вопросы
 
 Чтобы быстро находить решения для тестирования и отладки настраиваемых ссылок OneLink при появлении проблем с перенаправлением и поведением, используйте <Anchor target="_blank" href="/marketers/ru/docs/onelink-troubleshooting-and-faq">Руководство по устранению неполадок OneLink</Anchor>.
+
+<div id="limitations" />
 
 ## Ограничения
 

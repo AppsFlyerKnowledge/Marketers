@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Вкратце:**  Узнайте о структуре и параметрах ссылок атрибуции AppsFlyer для платформ CTV, ПК и консолей. **Примечание**: Для приложений Android и iOS, включая игры Android для ПК, используйте <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">инструкции по созданию мобильных ссылок атрибуции</Anchor>.
 
+<div id="overview" />
+
 ## Обзор
 
 Прямые ссылки атрибуции для платформ CTV, ПК и консолей позволяют рекламодателям перенаправлять пользователей и собирать данные после кликов. Эти прямые ссылки атрибуции — это ссылки AppsFlyer, поддерживающие перенаправление и атрибуцию **для одного целевого приложения на одной платформе одновременно**. Цель перенаправления указывается значением параметра af\_r, включенного в ссылку.
@@ -31,6 +33,8 @@ x-zendesk:
 Ссылки атрибуции можно создать самостоятельно и размещать их в рекламе. Чтобы создать такие ссылки, следуйте инструкциям в этой статье.
 
 Кроме того, ссылки можно создавать через S2S, используя <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_click-app-platform-app-id">API для вовлечения</Anchor>. Это требует работы разработчиков. **Примечание**: Ссылки, созданные через S2S, также могут собирать данные о показах.
+
+<div id="attribution-link" />
 
 ### Ссылка атрибуции
 
@@ -42,6 +46,8 @@ x-zendesk:
 | Другие параметры | [См. все параметры](/docs/ctv-pc-and-console-platform-direct-attribution-links#параметры) |
 | Структура URL-адреса | `https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source={media_source}&af_campaign_id={campaign_id}&af_r={app_store_url}` |
 | Пример URL-адреса | `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=aloha&af_campaign_id=1234&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello` |
+
+<div id="parameters" />
 
 ### Параметры
 
@@ -71,6 +77,8 @@ x-zendesk:
 | af\_device\_id\_type | Н/Д | <span id="query-getImpressionAppPlatformApp_id_af_device_id_type__description"></span>Тип идентификатора устройства. Либо:<ul><li>VIDA</li><li>TIFA</li><li>rida</li><li>lgudid</li><li>fire</li><li>рекламный\_идентификатор</li><li>fire</li><li>пользовательский</li></ul> | строка |
 | af\_device\_id\_value | Не применимо | <span id="query-getImpressionAppPlatformApp_id_af_device_id_value__description"></span>Тип идентификатора устройства | строка |
 | af\_r | Не применимо | <ul><li>Содержит ссылку на нужный магазин приложений или целевую страницу.</li><li>Все данные внутри параметра af\_r необходимо кодировать. Сюда входят любые значения параметров UTM, если они добавлены.</li></ul>**Примечание:** Проверьте, чтобы домен URL для af\_r был включен в ваш <Anchor target="_blank" href="/marketers/ru/docs/set-up-your-domain-redirect-allowlist">список разрешенных перенаправлений</Anchor>. | строка |
+
+<div id="traits-and-limitations" />
 
 ## Характеристики и ограничения
 

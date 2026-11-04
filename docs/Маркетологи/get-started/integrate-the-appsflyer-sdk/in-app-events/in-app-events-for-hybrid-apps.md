@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Регистрируйте внутренние события приложения из веб-просмотров, встроенных в ваше мобильное приложение, обеспечивая полное измерение событий, даже если взаимодействие происходит в веб-контенте внутри приложения.
 
+<div id="introduction" />
+
 ## Введение
 
 <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview">События в приложении</Anchor>, произошедшие внутри приложения, сообщаются с помощью SDK. Как быть с событиями, происходящими за пределами приложения?
@@ -41,11 +43,15 @@ x-zendesk:
 
 В этом руководстве рассматривается гибридный сценарий. Узнайте, как преодолеть разрыв между HTML-представлением и нативными представлениями, чтобы регистрировать события в HTML-представлении и отправлять их в приложение.
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > Если ваше приложение интегрирует AppsFlyer **с помощью гибридного плагина** (например, Cordova, Ionic, React Native или Flutter), метод мостового взаимодействия, описанный в этом руководстве, не применим.
 >
 > Мы рекомендуем отправлять события на основе WebView с помощью <Anchor target="_blank" href="/marketers/ru/docs/server-to-server-events-api-for-mobile-s2s-mobile">server-to-server (S2S) API AppsFlyer</Anchor>.
+
+<div id="example" />
 
 > 📄 **Пример**
 >
@@ -57,12 +63,16 @@ x-zendesk:
 >
 > [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
 
+<div id="recording-in-app-events-in-hybrid-apps" />
+
 ### Запись внутренних событий в гибридных приложениях
 
 В этом руководстве мы предлагаем два метода записи событий в гибридных приложениях:
 
 * **[Рекомендуется]** [**Интерфейс JavaScript**](/docs/in-app-events-for-hybrid-apps#интерфейс-javascript): Использует собственный интерфейс JavaScript для установления связи между HTML или веб-представлением и собственным кодом. Такм образом, можно отправлять данные, связанные с внутренними событиями, из веб-представления в нативный код. Получив данные, нативный код с помощью SDK отправляет их в AppsFlyer.
 * [**Загрузка URL**](/docs/in-app-events-for-hybrid-apps#загрузка-url): Нативный код отслеживает события загрузки URL-адреса. Вы можете настроить отслеживание событий загрузки определенных URL-адресов и извлечение данных из параметров URL. Затем данные передаются в SDK.
+
+<div id="javascript-interface" />
 
 ## Интерфейс JavaScript
 
@@ -86,6 +96,8 @@ x-zendesk:
 <div id="android" />
 
 <Accordion title="Android;">
+
+<div id="html-code-for-android" />
 
 #### HTML-код для Android
 
@@ -118,6 +130,8 @@ function recordEvent(){
   ```
 * Во избежание возможных проблем AppsFlyer рекомендует для имен внутренних событий приложений использовать только строчные буквенно-цифровые символы (a-z и 0-9).
 
+<div id="webactivity-class" />
+
 #### Класс WebActivity
 
 Создайте класс веб-активности со следующим кодом:
@@ -139,6 +153,10 @@ public class WebActivity extends AppCompatActivity {
 ```
 
 Приведенный выше код создает объект под названием **app**, который служит мостом между веб-представлением и нативным кодом.
+
+<div id="ios" />
+
+<div id="javascript-interface-class" />
 
 #### Класс интерфейса JavaScript
 
@@ -188,6 +206,8 @@ public class MainJsInterface {
 
 <Accordion title="https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png">
 
+<div id="html-code-for-ios" />
+
 #### HTML-код для iOS
 
 Добавьте следующий HTML-код в веб-представление или на веб-страницу:
@@ -223,11 +243,15 @@ public class MainJsInterface {
   ```
 * Во избежание возможных проблем AppsFlyer рекомендует для имен внутренних событий приложений использовать только строчные буквенно-цифровые символы (a-z и 0-9).
 
+<div id="note-1" />
+
 > 📘 **Примечание**
 >
 > HTML-код подходит и для Objective C, и для Swift.
 
 #### Objective c
+
+<div id="web-view-controller" />
 
 #### Контроллер веб-представления
 
@@ -281,6 +305,8 @@ public class MainJsInterface {
 ```
 
 Приведенный выше код получает сообщение из веб-представления. Сообщение содержит имя и значение события. Когда код обнаруживает входящее сообщение, он передает его методу `recordEvent`, который разбирает значения и вызывает собственный метод SDK `logEvent`.
+
+<div id="swift-webview-controller" />
 
 #### Контроллер Swift WebView
 
@@ -341,6 +367,8 @@ import JavaScriptCore
 
 </Accordion>
 
+<div id="url-loading" />
+
 ## Загрузка URL
 
 И в Android, и в iOS реализован нативный метод, который прослушивает события загрузки url. Этот метод позволяет сделать следующее:
@@ -354,7 +382,11 @@ import JavaScriptCore
 1. HTML-код для веб-представления или веб-страницы.
 2. Реализация нативного кода для загрузки URL
 
+<div id="webview-implementation" />
+
 ### Реализация веб-представления (WebView)
+
+<div id="html-code-for-both-android-webview-and-ios-wkwebview" />
 
 #### HTML-код (для Android WebView и iOS WKWebView)
 
@@ -401,10 +433,16 @@ import JavaScriptCore
   ```
 * Во избежание возможных проблем AppsFlyer рекомендует для имен внутренних событий приложений использовать только строчные буквенно-цифровые символы (a-z и 0-9).
 
+<div id="native-implementation" />
+
 ### Нативная реализация
 
 <Tabs>
 <Tab title="Android">
+
+<div id="ios-implementation" />
+
+<div id="android-implementation" />
 
 #### Реализация Android
 

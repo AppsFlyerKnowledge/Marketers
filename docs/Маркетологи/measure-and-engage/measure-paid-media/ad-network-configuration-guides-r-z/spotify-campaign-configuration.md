@@ -24,6 +24,8 @@ x-zendesk:
 
 <Image alt="Spotify_Full_Logo_RGB_Black.png" src="https://files.readme.io/e3908e19ec71c506c2ff135652cea6529f128743d8284c02c1a481f24485b3a6-small-37818004235409.png" width="53.91%" />
 
+<div id="setting-up-spotify" />
+
 ## Настройка Spotify
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -41,6 +43,8 @@ x-zendesk:
 
 Подробнее о <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation#активировать-интеграцию-партнера">правилах активации партнера</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > * Шаг <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#d-general-settings">«Общие настройки»</Anchor> на вкладке интеграции **обязателен** для всех партнеров.
@@ -51,6 +55,8 @@ x-zendesk:
 <Accordion title="Вкладка «Интеграция»">
 
 На вкладке «Интеграция» есть несколько разделов, которые описаны ниже.
+
+<div id="general-settings" />
 
 ### Общие настройки
 
@@ -97,6 +103,8 @@ x-zendesk:
 1. Нажмите **Добавить участника команды.**
 2. Введите адрес электронной почты члена команды рекламной сети.
 3. Нажмите **Добавить**.
+
+<div id="important-1" />
 
 > 🚧 **Важно!**
 >

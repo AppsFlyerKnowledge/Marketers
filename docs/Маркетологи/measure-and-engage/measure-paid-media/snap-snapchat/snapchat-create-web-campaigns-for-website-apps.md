@@ -21,19 +21,27 @@ x-zendesk:
 ---
 > **Краткий обзор:** Настройте интеграцию Snapchat Web Ads для вашего сайта, чтобы отправлять сигналы конверсии в Snapchat через API конверсий.
 
+<div id="overview" />
+
 ## Обзор
 
 AppsFlyer поддерживает интеграцию с Snapchat Web Ads (`snapweb_int`) для кампаний в приложениях сайтов, позволяя напрямую сообщать о данных об атрибуции и конверсиях через API конверсий Snapchat. Затем Snapchat может использовать эти данные для оптимизации таргетинга рекламы, оценки эффективности и создания пользовательских аудиторий.
 
 Вот как это работает: когда пользователь кликает по рекламе в Snapchat и попадает на ваш сайт, а затем завершает событие на сайте (например, покупку или регистрацию), AppsFlyer отправляет сигнал конверсии в Snapchat через API конверсий. Snapchat использует эти данные для оптимизации таргетинга рекламы и измерения эффективности кампании.
 
+<div id="see-also" />
+
 > 📄 **См. также**
 >
 > * <Anchor target="_blank" href="/marketers/ru/docs/web-performance-measurement-overview">Web Performance Measurement — обзор</Anchor>
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > В настоящее время интеграция не поддерживает отправку постбэков о повторном взаимодействии через API конверсий.
+
+<div id="prerequisites" />
 
 ### Необходимые условия
 
@@ -42,12 +50,16 @@ AppsFlyer поддерживает интеграцию с Snapchat Web Ads (`sn
 * Веб-приложение, созданное в AppsFlyer
 * Бизнес-аккаунт в <Anchor target="_blank" href="https://ads.snapchat.com/">Snapchat Ads Manager</Anchor>
 
+<div id="how-to-set-up-snapchat-ads-for-your-website-app" />
+
 ### Как настроить Snapchat Web Ads для приложения вашего сайта
 
 Настройка включает определение интеграции между Snapchat Web Ads и AppsFlyer, а также настройку кампании в Snapchat Ads Manager. Он включает следующие шаги:
 
 * [Часть 1: Настройте интеграцию Snapchat Web Ads в AppsFlyer (обязательно)](#часть-1-настройте-интеграцию-snapchat-web-ads-в-appsflyer)
 * [Часть 2: Настройка интеграции AppsFlyer в Snapchat Ads (Обязательно)](#часть-2-настройте-интеграцию-appsflyer-в-snapchat-web-ads)
+
+<div id="part-1-set-up-snapchat-ads-integration-in-appsflyer" />
 
 ## Часть 1: Настройте интеграцию Snapchat Web Ads в AppsFlyer
 
@@ -109,6 +121,8 @@ AppsFlyer поддерживает интеграцию с Snapchat Web Ads (`sn
 
 </Accordion>
 
+<div id="part-2-set-up-appsflyer-integration-in-snapchat-ads" />
+
 ## Часть 2: Настройте интеграцию AppsFlyer в Snapchat Web Ads
 
 Выполните следующие шаги в Snapchat Ads Manager.
@@ -152,11 +166,15 @@ AppsFlyer поддерживает интеграцию с Snapchat Web Ads (`sn
    https://www.example.com?pid=snapweb_int&c={{campaign.name}}&af_c_id={{campaign.id}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_channel={{site_source_name}}
    ```
 
+<div id="note-3" />
+
 > 📘 **Примечание**
 >
 > Snapchat добавляет`ScCid={{ScCid}}` к целевому URL-адресу автоматически при нажатии на рекламу
 
 </Accordion>
+
+<div id="view-web-attribution-data" />
 
 ## Просмотр данных по атрибуции веба
 
@@ -169,12 +187,16 @@ AppsFlyer поддерживает интеграцию с Snapchat Web Ads (`sn
 >
 > Отчетность дэшборда для кампаний веб-приложений пока недоступна. Объединённый отчёт, позволяющий анализировать эффективность веб-кампаний наряду с другими каналами, запланирован к выпуску в одном из будущих релизов.
 
+<div id="measure-web-attribution-data-with-web-cost" />
+
 ## Измеряйте данные веб-атрибуции вместе с данными о затратах на веб.
 
 Чтобы получить полный обзор эффективности данных о веб-атрибуции и данных о стоимости веба из Snapchat Ads, в панели управления и в <Anchor target="_blank" href="/marketers/ru/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">Отчеты по стоимости ETL</Anchor>, убедитесь, что у вас есть <Anchor target="_blank" href="/marketers/ru/docs/roi360-onboarding-guide#о-roi360">Пакет ROI360</Anchor>, и вы завершаете следующую настройку:
 
 1. Подключите стоимость к вашему веб-приложению через`snapchat_int` (не через `snapweb_int`) из вкладки**Стоимость** или со страницы**Параметры стоимости** . Дополнительные сведения о подключении к данным о стоимости см. в статье <Anchor target="_blank" href="/marketers/ru/docs/set-up-roi360-cost-api-to-measure-cost-data#включение-api-затрат">«Настройка API ROI360 для измерения данных о стоимости</Anchor>».
 2. Укажите ID кампании (`af_c_id`) в URL целевой страницы. Убедитесь, что URL содержит полную иерархию кампании, чтобы максимально детализировать стоимость, клики и показы, сопоставленные с веб-атрибуцией.
+
+<div id="traits-and-limitations" />
 
 ## Характеристики и ограничения
 

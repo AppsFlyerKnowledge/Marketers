@@ -24,6 +24,8 @@ x-zendesk:
 
 Data Locker позволяет передавать потоковые данные в выбранное вами собственное хранилище – бакет или хранилище данных. Настройте облачный сервис, используя одну из следующих процедур.
 
+<div id="bucket-cloud-storage" />
+
 ## Облачная корзина
 
 <div id="gcs-storage" />
@@ -151,6 +153,8 @@ Data Locker — это решение AppsFlyer для потоковой пе�
 7. Выберите **Сохранить изменения**.
 8. Выполните <Anchor target="_blank" href="/marketers/ru/docs/data-locker-for-marketers#настройка-параметров-отчета-data-locker">процедуру настройки Data Locker</Anchor>.
 
+<div id="supported-aws-regions" />
+
 #### **Поддерживаемые регионы AWS**
 
 Data Locker поддерживает следующие регионы для AWS:
@@ -244,6 +248,8 @@ Data Locker — это решение AppsFlyer для потоковой пе�
 
 </Accordion>
 
+<div id="data-warehouse-cloud-storage" />
+
 ## Облачное хранилище данных
 
 <div id="bigquery" />
@@ -265,6 +271,8 @@ Data Locker — это решение AppsFlyer для потоковой пе�
 1. В BigQuery создайте проект или используйте существующий проект
 2. В проекте нажмите **CREATE DATASET**. [![GCSCreateDataSEt_1_.png](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)
 3. Присвойте набору данных подходящий идентификатор.
+
+   <div id="note" />
 
    > 📘 **Примечание:**
    >
@@ -293,6 +301,8 @@ Data Locker — это решение AppsFlyer для потоковой пе�
 
 Выполните следующие действия, чтобы подключить Snowflake к Data Locker.
 
+<div id="snowflake-connector-procedures" />
+
 #### **Процедура для коннектора Snowflake**
 
 **Чтобы узнать регион и идентификатор аккаунта Snowflake**:
@@ -320,6 +330,8 @@ Data Locker — это решение AppsFlyer для потоковой пе�
 6. В вашей базе данных отображаются импортированные таблицы. Названия и структура таблиц аналогичны используемым в корзинах Data Locker.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Характеристики и ограничения
 

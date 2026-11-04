@@ -28,6 +28,8 @@ x-zendesk:
 
 **Дополнительные материалы**: <Anchor target="_blank" href="/marketers/ru/docs/about-advertiser-apis">Список API для рекламодателей</Anchor>
 
+<div id="get-app-list-api" />
+
 ## API для получения списка приложений
 
 Следующие разделы содержат информацию, необходимую для использования API.
@@ -59,6 +61,8 @@ GET https://hq1.appsflyer.com/api/mng/apps
 | Параметр запроса | Description(Описание) |
 | --- | --- |
 |  | Для этого API нет обязательных параметров запроса |
+
+<div id="pagination-mechanism" />
 
 #### **Механизм пагинации**
 

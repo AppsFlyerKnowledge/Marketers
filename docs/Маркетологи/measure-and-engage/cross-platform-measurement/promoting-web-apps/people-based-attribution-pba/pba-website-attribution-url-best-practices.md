@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Кратко:** лучшие практики по атрибуции кампаний атрибуции веб-сайта с максимально доступной детализацией кампаний.
 
+<div id="pba-website-attribution-urls" />
+
 ## URL-адреса для атрибуции веб-сайтов PBA
 
 Чтобы получить наилучшие результаты по детализации кампаний в сочетании с максимально точной атрибуцией в данных атрибуции веб-сайта, заполняйте URL-адреса (ссылки), по которым пользователи переходят на ваш веб-сайт, следуя рекомендациям, приведенным в этой статье.
+
+<div id="url-parametersgroup-and-priority" />
 
 ### Параметры URL-адреса — группа и приоритет
 
@@ -34,6 +38,8 @@ x-zendesk:
 * [Низший приоритет] UTM
 
 <Anchor target="_blank" href="/marketers/ru/docs/pba-media-source-attribution-rules">Правила атрибуции медиаисточников PBA</Anchor> определяют, как атрибутируется конкретный пользователь. Классы параметров ранжируются по приоритету. Если в ссылке найдено более одного класса параметров, атрибуция присваивается классу с наивысшим приоритетом.
+
+<div id="supported-parameters" />
 
 #### Поддерживаемые параметры
 
@@ -50,7 +56,11 @@ x-zendesk:
 | 9 | utm\_medium | ID аккаунта сети | UTM | Д | media\_type |
 | 10 | utm\_campaign | кампания; | UTM | Д | campaign (кампания) |
 
+<div id="url-parameter-best-practices" />
+
 ## Лучшие практики использования параметров URL-адресов
+
+<div id="selecting-url-parameters" />
 
 ### Выбор параметров URL-адреса
 
@@ -65,6 +75,8 @@ x-zendesk:
   * Однако кампанию определить нельзя, поскольку *c=* относится к классу PID, а pid не включен.
   * Чтобы решить эту проблему, если utm\_source нужен вам для других целей, рассмотрите такой вариант: `www.website.com?pid=facebook_int&c={{campaign.name}}&utm_source=facebook`. При такой структуре AppsFlyer использует класс PID для определения медиаисточника. Можно также включить другие параметры PID, например c=, а utm\_source будет проигнорирован, поскольку у него более низкий приоритет.
 
+<div id="implement-dynamic-urls-using-ad-network-macros" />
+
 ### Используйте динамические URL-адреса с помощью макросов рекламной сети
 
 Используйте макросы сети (также называемые valuetrack params), чтобы сэкономить время при создании шаблонов и применении параметров URL-адресов для платных кампаний.
@@ -77,15 +89,23 @@ x-zendesk:
 * Реклама Snapchat: `www.website.com?af_c_id={{campaign.id}}`
 * Реклама Microsoft (Bing): `www.website.com?af_c_id={campaignid}`
 
+<div id="consistent-case-within-parameters" />
+
 ### Единый регистр в параметрах
 
 Значения параметров чувствительны к регистру. Например, utm\_source=channel1 и utm\_source=CHANNEL1 считаются разными медиаисточниками. Поэтому проверяйте, что вы последовательно используете один и тот же регистр.
+
+<div id="use-google-ads-integration-to-automate-granularity" />
 
 ### Используйте интеграцию Google Ads для автоматизации детализации
 
 Для кампаний Google Ads вы можете получить детализацию кампании, интегрировав PBA со своим <Anchor target="_blank" href="/marketers/ru/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">аккаунтом Google Ads</Anchor>. Это гарантирует, что ваши данные будут заполнены всеми данными иерархии кампании без необходимости использовать PID или UTM-параметры в URL-адресе.
 
+<div id="common-url-parameter-mistakes-to-avoid" />
+
 ## Распространенные ошибки в URL-параметрах, которых следует избегать
+
+<div id="question-marks" />
 
 ### Вопросительные знаки
 
@@ -99,6 +119,8 @@ x-zendesk:
 `www.website.com??параметры`
 
 `www.website.com?parameter1?parameter2`
+
+<div id="anchor-signs" />
 
 ### Символы привязки
 

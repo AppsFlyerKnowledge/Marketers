@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Реализуйте дополнительный код в SDK AppsFlyer, чтобы включить атрибуцию кросс-промо.
 
+<div id="implementing-cross-promotion-attribution-in-the-sdk" />
+
 ## Реализация атрибуции перекрестной рекламы в SDK
 
 > 📘 **Note**
@@ -40,6 +42,8 @@ x-zendesk:
 Список стандартных параметров, которые можно передать в метод API, см. в статье <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">«Параметры атрибуции AppsFlyer»</Anchor>
 
 При первом запуске продвигаемого приложения все исходные параметры доступны через API данных конверсии SDK для <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-android">Android</Anchor> или <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-ios">iOS</Anchor>.
+
+<div id="attribute-cross-promotion-clicks" />
 
 ### Атрибуция кликов по кросс-промо
 
@@ -148,6 +152,8 @@ AppsFlyer.attributeAndOpenStore("123456789","test campaign",parameters);
 >
 > К сгенерированной ссылке можно добавить любой из этих <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#параметры-ссылки-атрибуции">параметров ссылки атрибуции</Anchor>.
 
+<div id="attribute-cross-promotion-impressions" />
+
 ### Атрибуция показов перекрестной рекламы
 
 Для атрибуции показов используйте вызов следующего API. Обязательно используйте предлагаемый идентификатор приложения в том виде, в каком он отображается на дэшборде AppsFlyer.
@@ -222,6 +228,8 @@ AppsFlyer.recordCrossPromoteImpression(string promotedAppID, string campaign);
 
 </Tab>
 </Tabs>
+
+<div id="attribute-cross-promotion-with-non-native-platforms" />
 
 ### Атрибуция кросс-промо на ненативных платформах
 

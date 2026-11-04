@@ -32,9 +32,13 @@ OneSignal ежедневно доставляет 8 миллиардов соо�
 >
 > <Anchor target="_blank" href="/marketers/ru/docs/about-raw-data-identifier-restrictions#ограничения-медиа-источников">Некоторые медиа-источники</Anchor> ограничивают передачу данных третьим лицам. Поэтому постбэки для ограниченных событий не будут отправляться этому партнеру, независимо от настроенной отправки постбэков.
 
+<div id="setting-up-onesignal" />
+
 ## Настройка OneSignal
 
 Интеграция с OneSignal включает добавление нескольких строк кода в SDK AppsFlyer в вашем приложении, а затем активацию интеграции в AppsFlyer.
+
+<div id="set-up-the-appsflyer-sdk" />
 
 ### Настройка AppsFlyer SDK
 
@@ -145,18 +149,26 @@ OneSignal ежедневно доставляет 8 миллиардов соо�
 
 На вкладке «Интеграция» есть несколько разделов, которые описаны ниже.
 
+<div id="activate-partner" />
+
 ### Активация партнера
 
 Этот параметр должен быть включен всё время, пока вы работаете с партнером.  
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation#активировать-интеграцию-партнера">активации партнёров</Anchor>.
 
+<div id="general-settings" />
+
 ### Общие настройки
+
+<div id="onesignal-appid" />
 
 #### AppID OneSignal
 
 Идентификатор приложения OneSignal доступен на платформе OneSignal в разделе **Settings** > **Keys & IDs**.Чтобы подключить аккаунт OneSignal к AppsFlyer, введите идентификатор вашего приложения в поле **OneSignal AppID**.
 
 ![onesignal-app-id-en_us.png](https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png)
+
+<div id="default-postbacks" />
 
 ### Постбэки по умолчанию
 
@@ -211,6 +223,8 @@ AppsFlyer может отправлять автоматические пост�
 Разрешения недоступны для этого партнера.
 
 </Accordion>
+
+<div id="view-user-attribution-data-in-onesignal" />
 
 ## Просмотр данных атрибуции пользователя в OneSignal
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Краткий обзор.** Настройте одно или несколько локальных хранилищ данных (BigQuery, Snowflake) и/или облачных хранилищ (Amazon S3, GCS) для загрузки данных в Data Clean Room и получения отчетов.
 
+<div id="overview" />
+
 ## Обзор
 
 Для использования Data Clean Room (DCR) нужно настроить:
@@ -36,6 +38,8 @@ x-zendesk:
 * **Шаг 1 —** Используйте интерфейсы выбранных облачных сервисов, чтобы подготовить их к использованию с DCR (эта статья).
 * **Шаг 2 —** Используйте платформу AppsFlyer для подключения к DCR. (См. статью: <Anchor target="_blank" href="/marketers/ru/docs/data-clean-room-working-with-connections">Data Clean Room: работа с подключениями</Anchor>).
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > См. <Anchor target="_blank" href="/marketers/ru/docs/data-clean-room-working-with-sources#требования-к-данным-источника">Data Clean Room — Работа с источниками</Anchor> для получения полной информации о требованиях к исходным данным:
@@ -43,6 +47,8 @@ x-zendesk:
 > * Формат данных *(для всех источников)*
 > * Столбцы таблицы *(для источников в локальных хранилищах данных)*
 > * Имя и формат файла *(для источников в облачных корзинах)*
+
+<div id="supported-cloud-services" />
 
 ### Поддерживаемые облачные сервисы
 
@@ -53,14 +59,20 @@ x-zendesk:
 
 Вы можете использовать один или любую комбинацию этих сервисов для входящих и исходящих подключений.
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > * Если вы будете использовать несколько пользовательских источников для одного отчета, они должны быть расположены в облачных корзинах.
 > * Обычно используют одну и ту же облачную корзину на Amazon S3 или GCS для входящих и исходящих подключений. Следуйте специальным инструкциям [для этой настройки](/docs/data-clean-room-setting-up-cloud-services#настройка-одной-и-той-же-облачной-корзины-для-входящих-и-исходящих-подключений).
 
+<div id="setting-up-cloud-services-for-inbound-connections" />
+
 ## Настройка облачных сервисов для входящих подключений
 
 Подготовьте выбранные облачные сервисы для использования с входящими подключениями DCR в соответствии с инструкциями на следующих вкладках.
+
+<div id="data-warehouses--bigquery-and-snowflake" />
 
 ### Локальные хранилища данных — BigQuery и Snowflake.
 
@@ -128,6 +140,8 @@ x-zendesk:
 9. Нажмите кнопку **Create Share** (Создать обмен данными).
 
 </Accordion>
+
+<div id="cloud-storage-buckets--amazon-s3-and-gcs" />
 
 ### Облачные корзины — Amazon S3 и GCS.
 
@@ -236,6 +250,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="setting-up-cloud-services-for-outbound-connections" />
+
 ## Настройка облачных сервисов для исходящих подключений
 
 DCR передает отчеты в выбранные вами облачные сервисы с помощью <Anchor target="_blank" href="/marketers/ru/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>.
@@ -243,6 +259,8 @@ DCR передает отчеты в выбранные вами облачны�
 * **Примечание.** Получение отчетов DCR не требует премиум-подписки на Data Locker. Если вы заинтересованы в получении других отчетов AppsFlyer через Data Locker, свяжитесь с вашим менеджером или отправьте письмо по адресу [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
 Ваши отчеты DCR могут быть доставлены в одно или несколько мест в ваших облачных сервисах (независимо от того, используете ли вы те же сервисы для входящих подключений). Подготовьте их для использования с исходящими подключениями DCR в соответствии с инструкциями на следующих вкладках.
+
+<div id="data-warehouses--bigquery-and-snowflake-1" />
 
 ### Локальные хранилища данных — BigQuery и Snowflake.
 
@@ -288,6 +306,8 @@ DCR передает отчеты в выбранные вами облачны�
 
 </Accordion>
 
+<div id="cloud-storage-buckets--amazon-s3-and-gcs-1" />
+
 ### Облачные корзины — Amazon S3 и GCS.
 
 Процедура подготовки облачных корзин к исходящим подключениям очень похожа на процедуру подготовки их к [входящим подключениям](/docs/data-clean-room-setting-up-cloud-services#настройка-облачных-сервисов-для-входящих-подключений) (включая инструкции, относящиеся к обоим облачным сервисам хранения данных).
@@ -313,6 +333,8 @@ DCR передает отчеты в выбранные вами облачны�
 
 </Accordion>
 
+<div id="setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections" />
+
 ## Настройка одной и той же облачной корзины для входящих и исходящих подключений
 
 Как уже упоминалось, обычно используют одну и ту же облачную корзину на Amazon S3 или GCS для входящих и исходящих подключений.
@@ -328,9 +350,13 @@ DCR передает отчеты в выбранные вами облачны�
 
 <Accordion title="Amazon S3">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections" />
+
 #### Создание новой корзины для входящих и исходящих подключений
 
 Следуйте инструкциям по созданию [корзины Amazon S3 для входящих подключений](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (без каких-либо изменений в этой процедуре).
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker" />
 
 #### Изменение существующей корзины, ранее использовавшейся только для Data Locker
 
@@ -382,11 +408,15 @@ DCR передает отчеты в выбранные вами облачны�
 
 <Accordion title="GCS">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections-1" />
+
 #### Создание новой корзины для входящих и исходящих подключений
 
 Следуйте инструкциям по созданию корзины [GCS для входящих подключений](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound). На шаге 4 этой процедуры введите следующие **2 аккаунта** в поле **Новые пользователи**:  
 `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`  
 `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker-1" />
 
 #### Изменение существующей корзины, ранее использовавшейся только для Data Locker
 

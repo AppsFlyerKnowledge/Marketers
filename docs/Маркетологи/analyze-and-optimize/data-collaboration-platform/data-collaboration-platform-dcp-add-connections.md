@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Настройте подключения DCP, чтобы соединить источники данных, обогатить данные и экспортировать аудиторию в облачные хранилища и медиапартнерам.
 
+<div id="about-dcp-connections" />
+
 ## О подключениях DCP
 
 Подключения определяют, как DCP получает ваши данные и экспортирует вашу аудиторию. После <Anchor target="_blank" href="/marketers/ru/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">настройки облачных сервисов</Anchor> подключите их к DCP с помощью окна **Управление подключениями**. Доступны следующие типы подключений:
@@ -58,9 +60,13 @@ DCP поддерживает разные облачные сервисы для
 
 Кроме того, подключение к источнику можно создать непосредственно при настройке источника. Инструкции см. в разделе <Anchor target="_blank" href="/marketers/ru/docs/data-collaboration-platform-dcp-create-and-manage-sources">Создание источников и управление ими</Anchor>.
 
+<div id="note" />
+
 > 📘 **Примечание**
 >
 > При создании входящего подключения Source к Amazon S3 или GCS автоматически создается соответствующее исходящее подключение к облачному хранилищу (и наоборот). При удалении подключения Amazon S3 или GCS второе подключение также удаляется автоматически. Поскольку на самом деле это одно базовое соединение, при удалении его с любой вкладки оно удаляется везде, где оно используется.
+
+<div id="cloud-service-connections-for-source-data" />
 
 #### Подключения к облачным сервисам для исходных данных
 
@@ -72,6 +78,8 @@ DCP поддерживает разные облачные сервисы для
 
 **ACCOUNTADMIN** > **Учетная запись** > наведите курсор на соответствующую учетную запись > **Скопировать идентификатор учетной записи.** Подробности см. в <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">документации Snowflake</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Важно!**
 >
 > Найдите идентификатор с меткой **Locator**. Это **не** тот идентификатор, который использовался для создания исходящих подключений Snowflake.
@@ -79,6 +87,8 @@ DCP поддерживает разные облачные сервисы для
 **Amazon S3 и GCS** В окне «**Новое подключение**» введите название <Anchor target="_blank" href="/marketers/ru/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound">корзины</Anchor>, созданной для эксклюзивного использования AppsFlyer Data Clean Room (DCR).
 
 **Облако Salesforce/CRM:** Узнайте<Anchor target="_blank" href="/marketers/ru/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">, как настроить подключение к Salesforce</Anchor>.
+
+<div id="local-file-connection" />
 
 #### Подключение к локальным файлам
 
@@ -148,6 +158,8 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
 | part-NNNNN--c000.csv | Один из выходных файлов этой поставки – см. ниже раздел «Формат файла и разбиение». |
 | \_SUCCESS | Пустой маркерный файл, который создаётся после записи всех частей выгрузки. |
 
+<div id="note-1" />
+
 > 📘 **Примечание**
 >
 > Эта структура папок создается и управляется автоматически. Не переименовывайте и не меняйте структуру вручную — любой автоматический процесс, который читает эти файлы, должен быть настроен так, чтобы следовать этой структуре путей и ждать появления файла \_SUCCESS перед обработкой файлов-частей, чтобы не обрабатывать неполную выгрузку.
@@ -202,6 +214,8 @@ c1d3e5f7a9b1c3d5e7f9a1b3c5d7e9f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3,hashed_phone_nu
 #### ID5
 
 <Anchor target="_blank" href="/marketers/ru/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">Обогатите собственные данные идентификаторами ID5</Anchor>, чтобы объединить фрагментированные пользовательские данные, улучшить сопоставление и увеличить аудиторию партнеров.
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

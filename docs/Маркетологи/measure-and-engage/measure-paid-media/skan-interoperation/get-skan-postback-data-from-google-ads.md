@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Краткий обзор.** Разрешите Google делиться содержимым постбэков SKAdNetwork (SKAN) вашего приложения iOS с AppsFlyer.
 
+<div id="get-skan-postback-data-from-google-ads" />
+
 ## Получение данных постбэков SKAN из Google Ads
 
 Если вы работаете с несколькими партнерами — рекламными сетями, рекомендуется настроить все в AppsFlyer. В результате на платформе AppsFlyer будут доступны метрики эффективности SKAN для всех ваших партнеров — рекламных сетей, дополненные другими метриками, например данными о затратах.
@@ -40,6 +42,8 @@ x-zendesk:
 
 * Агрегированные отчеты и дэшборд обновляются задним числом.
 * <Anchor target="_blank" href="/marketers/ru/docs/skan-raw-data-reports">Отчеты по сырым данным</Anchor> не изменяются задним числом. Данные (предоставленные через Data Locker) предоставляются в папках в соответствии с датой, когда Google предоставил данные AppsFlyer (дата поступления данных).
+
+<div id="set-up-interoperation" />
 
 ## Настройте взаимодействие
 
@@ -81,6 +85,8 @@ x-zendesk:
 11. Читайте о [различиях в измерениях](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads).
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Дополнительные сведения
 
@@ -167,6 +173,8 @@ x-zendesk:
 * Для измерения SKAN поддерживаются только iOS-кампании Web-to-app и App-to-app.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >

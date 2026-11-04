@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yjsearch.png" width="121px" />
 
+<div id="yahoo-japan-search-ads-integration-principles" />
+
 ## Принципы интеграции Yahoo Japan Search Ads
 
 Интеграция AppsFlyer с Yahoo Japan Search Ads актуальна только для Android-приложений. 
@@ -80,6 +82,8 @@ x-zendesk:
 
 Когда Yahoo Japan Search Ads регистрирует конверсию, сервис передает нам параметры медиаисточника, указанные в таблице. Эти параметры используются для заполнения аналитических отчетов и отчетов по необработанным данным. В следующей таблице приведено сопоставление параметров Yahoo Japan Search Ads и AppsFlyer.
 
+<div id="yahoo-japan-search-ads-appsflyer-media-source-mapping" />
+
 #### Сопоставление медиаисточников Yahoo Japan Search Ads и AppsFlyer
 
 | Поисковая реклама Yahoo! Япония | AppsFlyer: |
@@ -93,6 +97,8 @@ x-zendesk:
 | account\_id | network\_account\_id |
 
 </Accordion>
+
+<div id="integration-procedures" />
 
 ## Процедуры интеграции
 
@@ -188,6 +194,8 @@ x-zendesk:
 
 Агентства могут запускать кампании в Yahoo Japan Search Ads от вашего имени.
 
+<div id="agency-setup" />
+
 #### Настройка агентства
 
 | Процедура для выполнения | Процедура |
@@ -196,6 +204,8 @@ x-zendesk:
 | Доступно с Android SDK версии 4.8.5 | <ol><li>В AppsFlyer перейдите в **Сотрудничество** > **Партнерские интеграции** > **Активные интеграции**.</li><li>Выберите **Yahoo! Найдите Ads (Yahoo! JAPAN Sponsored Search) - Новый API**.</li><li>Перейдите на вкладку **Интеграция**.</li><li>Убедитесь, что переключатель **Активировать партнера** **включен.** Если это не так, рекламодатель должен выполнить [интеграцию Yahoo Japan Search Ads для рекламодателей](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections).</li><li>Проверьте правильность остальных настроек, таких как окна атрибуции и сопоставление событий в приложении. При необходимости попросите рекламодателя внести изменения.</li><li>Введите **идентификатор клиента Yahoo Japan Search Ads**. Идентификатор доступен в <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=36745&o=default#:~:text=How%20to%20check%20Account%20ID">инструменте управления кампаниями</Anchor>. Обратите внимание: можно подключить только один идентификатор клиента.</li><li>Нажмите **Save** (Сохранить).</li></ol> |
 
 </Accordion>
+
+<div id="subsidiary-procedures" />
 
 ## Дополнительные процедуры
 

@@ -25,6 +25,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mail.ru.png?v=1)
 
+<div id="setting-up-vk-ads" />
+
 ## Настройка VK Ads
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -43,22 +45,32 @@ x-zendesk:
 
 <Accordion title="Вкладка 'Интеграция'">
 
+<div id="activate-partners" />
+
 ### Активация партнеров
 
 При **первом заходе** сюда вам нужно перевести кнопку ***Активация партнера*** в положение «Включено», чтобы настройка параметров вкладки интеграции стала возможной. Кнопка ДОЛЖНА оставаться в положении «Включено», пока вы работаете с этим партнером.  
 Дополнительная информация по активации партнеров: нажмите <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">здесь</Anchor>.
 
+<div id="general-settings" />
+
 ### Общие настройки
 
 Для VK Ads доступны следующие общие настройки.
+
+<div id="app-id" />
 
 ### Идентификатор приложения
 
 Это необязательное поле, его функциональность будет определена позже. За дополнительной информацией обращайтесь в VK Ads.
 
+<div id="enable-view-through-attribution" />
+
 ### Enable View-Through attribution (Активировать атрибуцию по просмотрам)
 
 Включите, если вы хотите атрибутировать установки по просмотрам с Reddit. На вкладке [***Ссылка атрибуции***](/docs/vk-ads-mytarget-mail-ru-campaign-configuration#attribution-link-tab) имеется слайдер окна атрибуции по просмотрам.
+
+<div id="default-postbacks" />
 
 ### Постбэки по умолчанию
 
@@ -66,6 +78,8 @@ x-zendesk:
 
 Выберите **Только события, атрибутируемые этому партнеру** для событий, которые приходят исключительно от пользователей, атрибутированных VK Ads.  
 Выберите **События, атрибутируемые любому партнеру или органические**, чтобы предоставлять VK Ads отчеты о событиях всех пользователей, которые есть в вашей базе.
+
+<div id="in-app-events-postbacks" />
 
 ### Постбэки внутренних событий приложений.
 
@@ -127,6 +141,8 @@ AppsFlyer получает информацию о затратах через A
 * <Anchor target="_blank" href="/marketers/ru/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">В столбце действий наведите курсор на аккаунт и нажмите ***Delete connection*** (Удалить подключение).</Anchor>
 
 </Accordion>
+
+<div id="notes" />
 
 > 📘 **Примечания**
 >

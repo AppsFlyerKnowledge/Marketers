@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Кратко:** Оптимизируйте кампании Apple Ads с помощью SearchAds.com by MobileAction. После настройки AppsFlyer отправляет постбэки в SearchAds.com.
 
+<div id="enabling-apple-ads-attribution" />
+
 ## Включение атрибуции Apple Ads
 
 Чтобы отправлять постбэки в SearchAds.com, сначала включите атрибуцию для Apple Ads. Это может сделать рекламодатель или агентство.
+
+<div id="note" />
 
 > 📘 **Примечание:**
 >
@@ -32,7 +36,11 @@ x-zendesk:
 * **Рекламодатели**: следуйте приведенным ниже инструкциям, чтобы включить атрибуцию для Apple Ads.
 * **Агентства**: <Anchor target="_blank" href="/marketers/ru/docs/apple-ads-integration-setup#agency-setup">следуйте этим инструкциям</Anchor>, чтобы включить атрибуцию для Apple Ads.
 
+<div id="setting-up-searchadscom-in-appsflyer" />
+
 ## Настройка SearchAds.com в AppsFlyer
+
+<div id="getting-required-information-from-searchadscom" />
 
 ### Получение необходимой информации из SearchAds.com
 
@@ -42,6 +50,8 @@ x-zendesk:
 * Для идентификатора группы кампаний Apple Ads: в **дэшборде Apple Ads** получите идентификатор группы кампаний Apple Ads для нужной группы кампаний:
 
   ![apple-search-ads-campaign-group-id.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+
+<div id="setting-up-campaigns-in-appsflyer" />
 
 ### Настройка кампаний в AppsFlyer
 
@@ -61,6 +71,8 @@ x-zendesk:
    5. Введите API-ключ в поле **api\_key**.
    6. Введите **идентификатор кампании Apple Ads** SearchAds.com. Введите только цифры.
    7. Нажмите **Save** (Сохранить).
+
+<div id="configuring-in-app-event-postbacks" />
 
 #### Настройка постбэков по событиям в приложении
 

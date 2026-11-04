@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Кратко:** Bidalgo, интегрированный партнер AppsFlyer (ранее известный как Маркетинговый партнер Facebook), — ведущий поставщик решений на основе искусственного интеллекта, помогающих мобильным маркетологам масштабировать рост.
 
+<div id="setting-up-bidalgo" />
+
 ## Настройка Bidalgo
 
 **Необходимые условия.** Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
@@ -41,6 +43,8 @@ x-zendesk:
    **Важное примечание:** переключатель **должен оставаться включенным (активным) до тех пор, пока вы работаете с партнером**. <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">Узнать больше</Anchor>
 5. Завершите настройку, используя соответствующие вкладки, как описано ниже.
 
+<div id="in-app-events" />
+
 ### События в приложении
 
 1. Чтобы отправлять постбэки по событиям в приложении в Bidalgo, включите **Постбэки по событиям в приложении**.
@@ -48,6 +52,8 @@ x-zendesk:
 3. Нажмите **Сохранить**.
 
 [![meta_campaign_management_partner_settings.png](https://files.readme.io/776ce8b6017e1f39186df6a9e1614b6eeed7585327156369c9650d2f9645f42b-14238309599121.png)](https://support.appsflyer.com/hc/article_attachments/49929462678161)
+
+<div id="configuring-on-bidalgo" />
 
 ## Настройка в Bidalgo
 

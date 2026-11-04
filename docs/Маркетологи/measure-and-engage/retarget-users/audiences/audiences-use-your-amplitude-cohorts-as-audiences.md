@@ -25,15 +25,21 @@ x-zendesk:
 
 > **Вкратце:** Используйте собственные данные, синхронизируя когорты Amplitude с AppsFlyer в качестве импортированных аудиторий.
 
+<div id="about-the-amplitude-integration" />
+
 ## О интеграции с Amplitude
 
 Интеграция **AppsFlyer Audiences-Amplitude** позволяет вам синхронизировать определенные вами в Amplitude когорты напрямую с AppsFlyer в виде <Anchor target="_blank" href="/marketers/ru/docs/audiences-import-audience-segments-from-internal-systems">импортированных аудиторий</Anchor>. AppsFlyer может служить центром для связи и поддержки этих сегментов аудитории с Партнерами, анализа показателей кампаний и объединения ваших данных Amplitude и AppsFlyer для полного их использования.
 
 Когорты Amplitude можно синхронизировать с AppsFlyer либо однократно, либо в запланированном режиме с ежедневными или ежечасными обновлениями.
 
+<div id="setting-up-the-integration" />
+
 ## Настройка интеграции
 
 Настройте интеграцию Audiences-Amplitude из платформы Amplitude.
+
+<div id="define-appsflyer-data-destinations" />
 
 ### Определение мест назначения данных AppsFlyer
 
@@ -58,6 +64,8 @@ x-zendesk:
 | Идентификатор | Инструктируйте AppsFlyer как связать ваши данные Amplitude с данными AppsFlyer, выбрав свойство пользователя Amplitude слева и соответствующий ключ AppsFlyer для сопоставления справа. Выбранный вами ключ AppsFlyer должен быть одним из следующих:<ul><li>**Для аудитории iOS:** идентификатор рекламодателя iOS, идентификатор пользователя Amplitude или идентификатор пользователя клиента AppsFlyer</li><li>**Для аудитории Android:** Идентификатор рекламодателя Google, идентификатор пользователя Amplitude или идентификатор пользователя клиента AppsFlyer</li></ul> |
 
 4. Нажмите **Сохранить**, чтобы сохранить новое назначение AppsFlyer.
+
+<div id="sync-amplitude-cohorts-to-appsflyer-destinations" />
 
 ### Синхронизация когорт Amplitude с целями AppsFlyer
 

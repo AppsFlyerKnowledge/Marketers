@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Краткий обзор:** Интегрируйте свое приложение Vidaa Connected TV (CTV) с AppsFlyer, чтобы получать данные об атрибуции и событиях для ваших кампаний на Vidaa.
 
+<div id="about-vidaa-ctv-attribution" />
+
 ## Об атрибуции Vidaa CTV
 
 ОС Vidaa для потоковой передачи данных работает на всех телевизорах Vidaa.
@@ -32,6 +34,8 @@ x-zendesk:
 
 * Смарт-ТВ Vidaa.
 * Атрибуция и регистрация событий между CTV-to-CTV. То есть атрибуция и запись действий на устройстве Vidaa пользователя.
+
+<div id="integration-procedures" />
 
 ## Процедуры интеграции
 
@@ -55,6 +59,8 @@ x-zendesk:
 | Данные о затратах | Данные о затратах должны быть отправлены через <Anchor target="_blank" href="/marketers/ru/docs/import-cost-data">Cost Import</Anchor> с использованием метода загрузки файла по электронной почте. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **См. также**
 >
