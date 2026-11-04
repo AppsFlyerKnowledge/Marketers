@@ -122,7 +122,7 @@ Le format de fichier CSV, le schéma et les règles de validation des dépenses 
 
 | Élément | Exigence |
 | --- | --- |
-| Personnages interdits | Les champs au format chaîne ne peuvent pas avoir `=` `+-`,, ou `@` comme premier caractère. Par exemple, `@example_campign` ou `=123` sont interdits. |
+| Personnages interdits | Les champs au format chaîne ne peuvent pas avoir `=` `+` `-`,, ou `@` comme premier caractère. Par exemple, `@example_campign` ou `=123` sont interdits. |
 | Source média | <ul><li>Une source multimédia par fichier</li><li>Plusieurs applications pour la même source multimédia sont autorisées</li><li>Limites :<ul><li>N'envoyez pas de données de coûts depuis une source multimédia qui possède déjà une intégration de l'API Cost avec AppsFlyer. L'importation n'est pas autorisée depuis ces sources. Cela inclut les Meta Ads, Apple Search Ads et Snapchat.</li></ul></li></ul> |
 | Propriétaire d'app | Un annonceur (propriétaire de l'application) par fichier est autorisé. Cela signifie que plusieurs applications du même annonceur sont autorisées. |
 | Extension de nom de fichier | Exemple de fichier CSV : abc123.csv |

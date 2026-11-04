@@ -482,8 +482,8 @@ AF('pba', 'setCustomerUserId' , '663274')
 | --- | --- | --- |
 | eventType | Oui | Type d'événement<br /><br />Format : Chaîne<br /><br />Renseignez toujours ce paramètre avec EVENT.<br /><br />Exemple : eventType : « ÉVÉNEMENT » |
 | eventName | Oui | Nom de l'événement<br /><br />Format : Chaîne<br /><br />Exemple : Achat, abonnement |
-| eventCategory | Non | Ce paramètre est obsolète et sera prochainement supprimé du système. Utilisez plutôt le paramètre eventValue. |
-| eventLabel | Non | Ce paramètre est obsolète et sera prochainement supprimé du système. Utilisez plutôt le paramètre eventValue. |
+| ~~eventCategory~~ | Non | Ce paramètre est obsolète et sera prochainement supprimé du système. Utilisez plutôt le paramètre eventValue. |
+| ~~eventLabel~~ | Non | Ce paramètre est obsolète et sera prochainement supprimé du système. Utilisez plutôt le paramètre eventValue. |
 | eventRevenue | Non | Revenus affectés à un événement de conversion<br /><br />Format : Float |
 | eventRevenueCurrency | Non | Devise du revenu<ul><li>Code de devise <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> à 3 caractères.</li><li>Par défaut : USD</li></ul>Format : Chaîne |
 | Valeur de l'événement | Non | Carte des paramètres de l’événement décrivant l’événement. Utilisez ce paramètre pour envoyer des évènements rich in-app, tels que la référence SKU du produit et le prix de l’article.<br /><br />Format : JSON<br /><br />**Exemple :** Pour envoyer le SKU ABC123, de couleur bleue et au prix unitaire de 3,99 $<br /><br />`{"sku": "ABC123", “color": "blue", "unit_price":3.99,"currency": "USD"}`<br /><br />**Limitation :** 1000 caractères. Ne dépassez pas cette limite, sinon la valeur sera tronquée. |
