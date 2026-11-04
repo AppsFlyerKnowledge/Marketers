@@ -399,7 +399,7 @@ POST /opengdpr_callbacks HTTP/1.1 Host: examplecontroller.com Content-Type: appl
 4. Depois de confirmar que o certificado é válido, use-o para validar o header `X-OpenGDPR-Signature` no corpo da solicitação bruta. A AppsFlyer usa SHA256 RSA como um algoritmo de assinatura.
 5. Obtenha uma resposta no header de status:
    1. `202 Accepted` se a validação for bem-sucedida.
-   2. `401 Unauthorized401 Unauthorized` se a assinatura não for validada ou o domínio do processador não estiver em sua lista de permissões.
+   2. `401 Unauthorized` `401 Unauthorized` se a assinatura não for validada ou o domínio do processador não estiver em sua lista de permissões.
 
 </Accordion>
 

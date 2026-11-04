@@ -555,7 +555,7 @@ Se precisar de confirmar o App ID, fale com o seu representante LG WebOS.
 
 **Nome do aplicativo:** O nome que você escolheu para o seu aplicativo.
 
-**App ID:** O App ID do Xbox, conforme aparece no final da URL da loja do Xbox, de onde o aplicativo é baixado. Inclui apenas 12 letras e dígitos (`0-9` `0-90-9`).
+**App ID:** O App ID do Xbox, conforme aparece no final da URL da loja do Xbox, de onde o aplicativo é baixado. Inclui apenas 12 letras e dígitos (`0-9` `0-9` `0-9`).
 
 </Accordion>
 
