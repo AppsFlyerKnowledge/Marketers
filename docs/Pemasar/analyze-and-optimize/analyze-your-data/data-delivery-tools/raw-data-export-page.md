@@ -205,7 +205,7 @@ Anda dapat membuat laporan khusus dengan mengatur filter dan bidangnya.
    * **Geo:** [Opsional] Hanya event yang dikaitkan dengan wilayah geografis yang dipilih akan dimasukkan dalam laporan.
    * **Filter spesifik jenis laporan**: Setiap jenis laporan mungkin memiliki filternya sendiri dari mana Anda dapat memilih kriteria pemfilteran.
 6. [Opsional]: Laporan diisi secara otomatis dengan bidang yang diperlukan. Anda dapat menambah atau menghapus bidang sebagai berikut:
-   1. Buka tab **Laporkan bidang**. Daftar bidang yang dipilih lalu ditampilkan. Anda tidak dapat mengubah pilihan bidang wajib.
+   1. <span class="af-ol-a"></span>Buka tab **Laporkan bidang**. Daftar bidang yang dipilih lalu ditampilkan. Anda tidak dapat mengubah pilihan bidang wajib.
    2. Pilih atau hapus bidang yang dipilih sesuai kebutuhan.
    3. [Opsional] Atur **Urutan bidang Laporan (CSV)** untuk mengatur urutan kolom.
    4. [Opsi] Klik **Pulihkan default** jika diperlukan.

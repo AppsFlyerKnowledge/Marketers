@@ -70,7 +70,7 @@ To activate the Meta Ads integration:
    > The toggle must stay on (<Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with the partner.
 
 5. Complete the **Pixel ID** field. To retrieve your pixel ID from Meta Ads Manager:
-   1. From the <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Ads Manager</Anchor> side menu, go to **All tools** > **Events Manager**.
+   1. <span class="af-ol-a"></span>From the <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Ads Manager</Anchor> side menu, go to **All tools** > **Events Manager**.
 
       > 📘 **Note**
       >

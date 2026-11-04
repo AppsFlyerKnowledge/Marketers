@@ -113,7 +113,7 @@ To set in-app events postbacks, perform the following:
 8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/id/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
 9. Click **Save integration**.
 10. [Optional] After you save the integration, and while you remain on the configuration page, you can integrate additional apps with the partner:
-    1. From the top-left corner, select the app name under the partner name to open the list of apps.
+    1. <span class="af-ol-a"></span>From the top-left corner, select the app name under the partner name to open the list of apps.
     2. Select a different app from the list.
     3. Repeat the above steps for the selected app.
 

@@ -361,7 +361,7 @@ Another reason to use the short version of OneLink is the conversion data struct
 >
 > 1. A user installs your app and then uninstalls it. The act of installation puts the user in a <Anchor target="_blank" href="/marketers/id/docs/set-up-re-attribution-window">re-attribution window</Anchor>. You set a user acquisition (not retargeting) campaign with Meta ads. You also set the AppsFlyer integration with Meta ads to allow retargeting.While still in the re-attribution window, the user sees the ad, clicks on it, and reinstalls the app. As far as AppsFlyer sees it, the user is a re-attributed user. This is due to two factors:
 >
->    1. The configuration with Meta ads allows retargeting
+>    1. <span class="af-ol-a"></span>The configuration with Meta ads allows retargeting
 >    2. The user is in the re-attribution window
 >
 >    In this case, the campaign name doesn't indicate re-attribution.
