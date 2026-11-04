@@ -85,7 +85,7 @@ AppsFlyer поддерживает интеграцию с Meta Ads (`metaweb_in
    > Переключатель должен оставаться в положении <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активирован</Anchor> всё время, пока вы работаете с партнером.
 
 5. Заполните поле **«Идентификатор Pixel**». Чтобы узнать свой идентификатор пикселя в Meta Ads Manager:
-   1. В боковом меню <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Ads Manager</Anchor> перейдите в раздел **Все инструменты** > **Events Manager**.
+   1. <span class="af-ol-a"></span>В боковом меню <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Ads Manager</Anchor> перейдите в раздел **Все инструменты** > **Events Manager**.
 
       <div id="note-2" />
 

@@ -147,7 +147,7 @@ x-zendesk:
 **Чтобы настроить свой сервисный аккаунт, выполните следующие действия**:
 
 1. Создайте или найдите **Service Account**:
-   1. Перейдите в **Service accounts** раздел в Google Cloud Platform и нажмите **Create Service Account**.
+   1. <span class="af-ol-a"></span>Перейдите в **Service accounts** раздел в Google Cloud Platform и нажмите **Create Service Account**.
 
       [![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
    2. Введите данные для сервисного аккаунта.
@@ -166,7 +166,7 @@ x-zendesk:
 
       [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
 2. Скачайте **Service Account Private Key**:
-   1. В Google Cloud Platform перейдите в раздел **Service accounts** , найдите в списке нужный аккаунт (тот, который вы только что создали) и кликните значок **More actions** .
+   1. <span class="af-ol-a"></span>В Google Cloud Platform перейдите в раздел **Service accounts** , найдите в списке нужный аккаунт (тот, который вы только что создали) и кликните значок **More actions** .
    2. Кликните **Управление ключами**.
 
       [![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)

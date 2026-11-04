@@ -33,7 +33,7 @@ x-zendesk:
 
 ### Как это работает?
 
-1. AppsFlyer отправляет ежедневные API-запросы в Firebase Cloud Messaging (FCM) и Apple Push Notification Services (APNS).
+1. <span class="af-ol-a"></span>AppsFlyer отправляет ежедневные API-запросы в Firebase Cloud Messaging (FCM) и Apple Push Notification Services (APNS).
 2. FCM и APNS затем отправляют тихое push-уведомление, чтобы проверить, установлено ли приложение на данном устройстве.
 3. Удаление регистрируется, если в ответе указано, что приложение было удалено (FCM и APNS), или если за последние 270 дней не было зафиксировано никакой активности пользователя (только FCM).
 4. AppsFlyer атрибутирует удаление тому медиа-источнику, который изначально привёл пользователя.
