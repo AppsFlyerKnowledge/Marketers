@@ -318,7 +318,7 @@ Si vous configurez Data Locker avec un service de stockage cloud appartenant à 
       * [Par défaut] **Unifié**
       * **Segmenté par application**
 6. Complétez la section **Data Locker** :
-7. Sélectionnez une ou plusieurs **applications**à inclure dans les rapports. Sélectionnez **tout** pour inclure automatiquement les apps que vous ajouterez par la suite.
+7. Sélectionnez une ou plusieurs **applications**à inclure dans les rapports. <mark>Sélectionnez **tout** pour inclure automatiquement les apps que vous ajouterez par la suite.</mark>
 8. Cliquez sur **Appliquer**.
 9. Sélectionnez une ou plusieurs **sources média** à inclure dans les rapports.
    * Par défaut : toutes Signifie que les sources média ajoutées à l'avenir seront ajoutées automatiquement.
@@ -522,7 +522,8 @@ Avant de commencer :
 
    <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. Saisissez le **nom du compartiment.** Le nom de compartiment est au format suivant : `{Bucket Name}/{Home Folder}`. Les valeurs nécessaires pour le nom du compartiment et le dossier racine s'affichent dans la fenêtre des informations d'identification.
-6. Cliquez sur **Ajouter un compartiment externe.** Le compartiment est créé et s'affiche dans le panneau gauche de la fenêtre.   
+6. Cliquez sur **Ajouter un compartiment externe.**  
+   Le compartiment est créé et s'affiche dans le panneau gauche de la fenêtre.   
    Vous pouvez maintenant accéder aux fichiers Data Locker.
 
 </Accordion>

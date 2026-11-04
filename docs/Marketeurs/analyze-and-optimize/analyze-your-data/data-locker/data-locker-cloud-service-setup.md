@@ -134,7 +134,7 @@ Après avoir créé le compartiment, accordez les autorisations AppsFlyer en sui
       }
       ```
 5. Dans l'extrait de code, remplacez `af-data-locker-my-bucket` par le nom du compartiment que vous avez créé.
-6. [Facultatif] Ajoutez la prise en charge des compartiments chiffrés KMS. Pour ce faire, dans la section **Politique de clé** , choisissez **Passer à l'affichage des politiques** et collez l'extrait suivant dans le tableau **de déclarations.**
+6. [Facultatif] Ajoutez la prise en charge des compartiments chiffrés KMS. Pour ce faire, dans la section **Politique de clé** , choisissez **Passer à l'affichage des politiques** et collez l'extrait suivant dans le tableau **de déclarations.**  
 
    ```json
    {

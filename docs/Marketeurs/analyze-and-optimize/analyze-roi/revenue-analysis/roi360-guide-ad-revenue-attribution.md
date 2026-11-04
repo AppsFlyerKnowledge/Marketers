@@ -184,7 +184,8 @@ La granularité agrégée des revenus publicitaires fonctionne comme suit :
   * <Anchor target="_blank" href="/marketers/fr/docs/dashboard-cost-and-ad-revenue-status">Tableau de bord du statut de l'intégration des coûts et revenus publicitaires</Anchor> : la liste exhaustive des partenaires pour qui l'intégration des revenus publicitaires est activée, et ce pour une ou plusieurs apps hébergées sur votre compte.
   * Certains partenaires vous permettent de tester la connexion API. Dans ce cas, un bouton **Tester la connexion** s'affiche. <Image alt="mceclip0.png" src="https://support.appsflyer.com/hc/article_attachments/360006975517" width="104px" />
   * Pour vérifier que la connexion API est opérationnelle :
-  * Cliquez sur **Tester la connexion.** Le message **Clé API vérifiée s'affiche.** Si le message ne s'affiche pas, suivez les instructions du tableau suivant pour corriger le problème.
+  * Cliquez sur **Tester la connexion.**   
+    Le message **Clé API vérifiée s'affiche.** Si le message ne s'affiche pas, suivez les instructions du tableau suivant pour corriger le problème.
 
 | Statut | Signification | Remarques/actions requises |
 | --- | --- | --- |

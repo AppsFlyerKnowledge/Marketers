@@ -167,7 +167,7 @@ Pour mesurer les désinstallations sous Android, vous devez configurer la mesure
 1. **Pour obtenir l'ID du projet** :
    1. Allez à la [console FCM.](https://console.firebase.google.com/)
    2. Sélectionnez un projet.
-   3. Allez dans **Aperçu du projet** > **Paramètres du projet.**
+   3. Allez dans **Aperçu du projet** > **Paramètres du projet.**  
 
       ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
    4. Copiez l'ID du projet. Vous en aurez besoin plus tard dans le processus.

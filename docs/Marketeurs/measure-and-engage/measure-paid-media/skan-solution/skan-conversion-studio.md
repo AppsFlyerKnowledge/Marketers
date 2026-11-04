@@ -96,7 +96,7 @@ Les actions mesurables peuvent être transmises via l'API [server-to-server (S2S
 
 * SKAN 4 et *Custom* : S2S est toujours activé.
 * Décodage : le S2S n'est pas pris en charge et n'est donc pas disponible. AppsFlyer ne définit pas de VC pour ce mode.
-* Revenus, conversion et modes d'engagement : vous devez forcément activer l'[enregistrement des événements S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api) avant d'envoyer les événements.
+* Revenus, conversion et modes d'engagement : <mark>vous devez forcément activer l'[enregistrement des événements S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api)</mark> avant d'envoyer les événements.
 
 </Accordion>
 
@@ -244,7 +244,7 @@ Au fur et à mesure que vous modifiez les paramètres du mode, la synthèse **de
 
 | Mode de mesure | Description |
 | --- | --- |
-| [Par défaut] Revenus | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Revenus générés durant la fenêtre d'activité de 24 heures**<br /><br />Sélectionnez un taux unité/USD parmi les suivants :<ul><li>0.01 $ pour mesurer jusqu'à 0.63$.</li><li>1$ pour mesurer jusqu'à 63$</li><li>10$ pour mesurer jusqu'à 630$</li></ul>AppsFlyer remplit automatiquement les 63 plages de mesure des revenus. `af_skad_revenue` devraient être mappé. Dans le tableau de bord, le revenu enregistré correspond au seuil maximum de la plage. Exemple, si la plage est comprise entre 60$ et 61$, le revenu enregistré est de 61$. Remarque ! Les revenus personnalisés utilisent une autre méthode de calcul pour définir le montant des revenus.<br /><br />**Métriques disponibles :**<ul><li>Revenu</li><li>ROI</li><li>ROAS</li><li>ARPU  : revenus/utilisateurs installant l'app</li><li>Taux de conversion des utilisateurs : utilisateurs effectuant un achat/installant l'app</li><li>eCPA</li></ul> |
+| [Par défaut] Revenus | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Revenus générés durant la fenêtre d'activité de 24 heures**<br /><br />Sélectionnez un taux unité/USD parmi les suivants :<ul><li>0.01 $ pour mesurer jusqu'à 0.63$.</li><li>1$ pour mesurer jusqu'à 63$</li><li>10$ pour mesurer jusqu'à 630$</li></ul>AppsFlyer remplit automatiquement les 63 plages de mesure des revenus. `af_skad_revenue` devraient être mappé. Dans le tableau de bord, <mark>le revenu enregistré correspond au seuil maximum de la plage.</mark> Exemple, si la plage est comprise entre 60$ et 61$, le revenu enregistré est de 61$. Remarque ! Les revenus personnalisés utilisent une autre méthode de calcul pour définir le montant des revenus.<br /><br />**Métriques disponibles :**<ul><li>Revenu</li><li>ROI</li><li>ROAS</li><li>ARPU  : revenus/utilisateurs installant l'app</li><li>Taux de conversion des utilisateurs : utilisateurs effectuant un achat/installant l'app</li><li>eCPA</li></ul> |
 | Conversion | ![mceclip0.png](https://files.readme.io/29535e45638cb2b1eecdf43e4fbee0fa52665c90aefe064caaaac9d0fc98472f-4406052008593.png)<br /><br />**Événements in-app effectués à une ou plusieurs reprises pendant la fenêtre d'activité de 24 heures**<br /><br />**Réglages** :<ul><li>Sélectionnez dans le menu déroulant 1 à 6 événements in-app à mesurer. Limitation : la liste est limitée aux 300 premiers événements sur les 30 derniers jours.</li><li>Dans le tableau de bord SKAdNetwork, sélectionnez un événement qui désignera l'événement de conversion.</li></ul>**Métriques par événement in-app :**<ul><li>Nombre d'utilisateurs effectuant un événement</li><li>Taux de conversion : utilisateurs effectuant l'événement de conversion/utilisateurs installant l'app</li><li>eCPA</li><li>Sessions (utilise l'événement *af\_app\_opened*)</li></ul>Exemple de comptage des utilisateurs :<ul><li>Inscription complète</li><li>A effectué un achat</li><li>A atteint un niveau de jeu</li></ul>**Clarification :** utilisez la mesure de conversion pour comptabiliser **si** un utilisateur a effectué un événement. Utilisez la mesure de l'engagement pour compter combien de fois un utilisateur effectue un événement. |
 | Engagement | ![mceclip1.png](https://files.readme.io/51b38d6693e843f04fe7ce02706ae2959d88a047606b41cccad6ed09a46eea39-4406058637841.png)<br /><br />**Nombre de fois où l'utilisateur a réalisé un certain événement in-app au cours de la fenêtre d'activité SKAN**<br /><br />**Réglages :**<ul><li>Sélectionnez un événement in-app dans la liste déroulante.</li><li>La sélection in-app est également désignée comme l'événement de conversion.</li><li>Plage de valeurs : 0-63</li></ul>**Métriques de l'événement in-app** :<ul><li>Nombre d'utilisateurs effectuant l'événement</li><li>Nombre moyen d'événements par utilisateur</li><li>de l'installation à la première commande</li><li>eCPA</li><li>Sessions</li></ul>Exemples :<ul><li>Mesurez le nombre de fois :<ul><li>où un utilisateur a ouvert l'app</li><li>où un utilisateur a vu une publicité</li></ul></li></ul> |
 
@@ -420,7 +420,7 @@ Créez une valeur de conversion personnalisée pour le mappage d'événements et
         * **Évènement in-app**
           * Le revenu rapporté selon le type est attribué à un événement in-app choisi et est enregistré via SKAN pour pour ce même événement in-app. L'événement doit être mappé ; `af_skad_revenue` ne doit pas être mappé.
           * Le composant peut être utilisé plusieurs fois.
-          * Si vous signalez les revenus aux réseaux publicitaires via postback, vérifiez que le mappage de vos postbacks d'événements in-app incluent les événements de revenus in-app que vous avez définis.
+          * <mark>Si vous signalez les revenus aux réseaux publicitaires via postback, vérifiez que le mappage de vos postbacks d'événements in-app incluent les événements de revenus in-app que vous avez définis.</mark>
       </td>
     </tr>
     <tr>
@@ -443,7 +443,7 @@ Créez une valeur de conversion personnalisée pour le mappage d'événements et
         **Enregistrer les revenus à l'aide des plages**
 
         * Lorsque les revenus sont rapportés, SKAN associe chaque revenu à la plage concernée. Le revenu enregistré correspond à la plus haute valeur de la plage.
-        * Si le revenu rapporté dépassent la valeur moyenne de la plage la plus élevée, le revenu est compris dans la plage la plus élevée. **Important** ! Le revenu enregistré correspond à la valeur moyenne de cette plage. Le montant réel du revenu est donc ignoré.
+        * Si le revenu rapporté dépassent la valeur moyenne de la plage la plus élevée, le revenu est compris dans la plage la plus élevée. **Important** ! <mark>Le revenu enregistré correspond à la valeur moyenne de cette plage.</mark> Le montant réel du revenu est donc ignoré.
         * Dans les données brutes, le montant réel du revenu et la plage correspondante sont bien proposés.
 
         **Exemple :**
@@ -558,7 +558,8 @@ Le principe de priorité est expliqué plus en détails dans cet [exemple](/docs
 6. Remplissez les champs en suivant l'interface utilisateur.
    * N'oubliez pas qu'une priorité peut se composer d'un revenu, d'un événement in-app, ou bien des deux.
    * Les valeurs de plages des occurrences d'événements et des revenus doivent se suivre dans un ordre croissant. Exemple : les plages suivantes sont classées dans l'ordre croissant et elles se suivent : 1-5, 5-8, 8-10, etc. Une plage peut être utilisée plus d'une fois (elle est répétée) si la deuxième fois où elle est utilisée fait partie d'un ensemble, et a la même durée que la dernière priorité avec une plage. Par exemple, 1-5, 1-5 + ajouter au panier.
-7. Cliquez sur **Valider.** Le message **Priorité validée** s'affiche. Si ce n'est pas le cas, corrigez la priorité avant de continuer.
+7. Cliquez sur **Valider.**  
+   Le message **Priorité validée** s'affiche. Si ce n'est pas le cas, corrigez la priorité avant de continuer.
 8. Effectuez l'une des opérations suivantes :
    * Pour ajouter une priorité, cliquez sur **+ Ajouter une priorité.** La priorité 1 existante change de rang et devient la priorité 2. Complétez les paramètres de priorité comme précédemment.
    * Pour supprimer une priorité, cliquez sur ... > **Supprimer.**
@@ -1038,7 +1039,7 @@ Le flux S2S est le suivant :
    * Si vous avez choisi le mode revenu, conversion ou engagement :
      1. Dans AppsFlyer, ouvrez **Configuration** > **Studio de Conversion SKAN**.
      2. Cliquez pour accéder aux options (⋮).
-     3. Activez **Enregistrer les événements in-app envoyés par l'API S2S**.
+     3. Activez <mark>**Enregistrer les événements in-app envoyés par l'API S2S**</mark>.
 2. Envoyer les événements par S2S.
 
 **Limitation**

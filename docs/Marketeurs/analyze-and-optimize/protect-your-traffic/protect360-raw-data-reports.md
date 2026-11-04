@@ -330,7 +330,7 @@ Les données brutes Protect360 incluent les installations et sessions frauduleus
 
 Les données brutes de retargeting Protect360 sont proposées pour les blocages en temps réel et la fraude identifiée en post attribution comme suit :
 
-<table><thead><tr><th>Rapport </th><th>Données d'exportation</th><th>API pull</th><th>Data Locker</th></tr></thead><tbody><tr><td>d'installations</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Installations post-attribution</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Données de réengagement non disponibles</span><span><br/></span> </td></tr></tbody></table>
+<table><thead><tr><th>Rapport </th><th>Données d'exportation</th><th>API pull</th><th>Data Locker</th></tr></thead><tbody><tr><td>d'installations</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Installations post-attribution</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Données de réengagement non disponibles</span><span></span><br/> </td></tr></tbody></table>
 
 <div id="traits-and-limitations" />
 

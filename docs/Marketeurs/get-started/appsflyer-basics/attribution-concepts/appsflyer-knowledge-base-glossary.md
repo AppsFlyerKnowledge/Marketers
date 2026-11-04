@@ -346,7 +346,8 @@ Identifiant unique qu'Apple utilise pour identifier les apps individuelles. Il p
 
 #### CAC
 
-(EN: Customer acquisition cost) **Coût d'acquisition client**  
+(EN: Customer acquisition cost)  
+**Coût d'acquisition client**  
  Montant dépensé qu'un utilisateur finisse par installer une app ou effectuer tout autre action post-installation.  
 *Formule :* Dépenses vente et marketing / Nombre de nouveaux clients
 
@@ -655,7 +656,8 @@ Indique ce qu'aurait été le CPA si le marketeur avait payé pour des actions u
 #### eCPC
 
 **Coût effectif par clic**  
-Indique ce qu'aurait été le CPA si le marketeur avait payé pour des clics plutôt que pour des impressions ou des conversions. Voir[CPC.](/docs/appsflyer-knowledge-base-glossary#cpc) *Formule :* Dépenses totales / Nombre de clics = eCPC (tel qu'analysé par AppsFlyer)
+Indique ce qu'aurait été le CPA si le marketeur avait payé pour des clics plutôt que pour des impressions ou des conversions. Voir[CPC.](/docs/appsflyer-knowledge-base-glossary#cpc)  
+*Formule :* Dépenses totales / Nombre de clics = eCPC (tel qu'analysé par AppsFlyer)
 
 #### eCPI
 
@@ -702,7 +704,8 @@ Entreprise qui fournit des services de marketing par e-mail, ou de d'emailing à
 
 #### (EN: Event CVR) Taux de conversion d'évènement
 
-(EN: Event conversion rate) **Taux de conversion d'événement**  
+(EN: Event conversion rate)  
+**Taux de conversion d'événement**  
  Le pourcentage d'utilisateurs qui ont effectué une action donnée. Indique le nombre d'utilisateurs convertis par une publicité  
 *Formule :* Événements uniques / Attributions
 
@@ -737,7 +740,8 @@ La fraude publicitaire tente de générer illégalement des revenus d'attributio
 
 #### GCD
 
-(EN: Get Conversion Data) **Obtention des données de conversion**Nom générique qui englobe toute méthode de SDK qui, lors d'une installation, récupère les données d'attribution depuis le SDK.
+(EN: Get Conversion Data) **Obtention des données de conversion**   
+Nom générique qui englobe toute méthode de SDK qui, lors d'une installation, récupère les données d'attribution depuis le SDK.
 
 <div id="geo" />
 

@@ -38,7 +38,7 @@ En les affichant côte à côte, vous voyez les performances des campagnes avec 
 
 **Limitation dans le partage des données** : Les mesures SKAN du tableau de bord général ne sont pas disponibles pour les réseaux publicitaires et les agences.
 
-Si les mesures SKAN ne s'affichent pas dans le tableau de bord, vous devez mettre à jour les [paramètres du tableau](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).
+<mark>Si les mesures SKAN ne s'affichent pas dans le tableau de bord, vous devez mettre à jour les [paramètres du tableau](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).</mark>
 
 L'affichage accolé permet d’analyser les mesures de la campagne. Il vous permet d’évaluer les performances de la campagne en termes de :
 

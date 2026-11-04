@@ -44,7 +44,7 @@ La configuration se fait depuis la page **Intégrations actives**, mais pour tro
 1. Dans AppsFlyer, allez dans **Configuration** et **Marketplace des partenaires**.
 2. Recherchez **TikTok for Business** et sélectionnez-le.
 3. Cliquez sur **Configurer l'intégration**. Vous êtes alors dirigé vers la page de configuration de l'intégration.
-4. Dans l'onglet **Intégration**, activez **Activer le partenaire**.  
+4. Dans l'onglet **Intégration** , activez **Activer le partenaire**.  
    **Remarque :** La case doit rester cochée (<Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">option activée</Anchor>) tant que vous travaillez avec le partenaire.
 5. Cliquez sur **Enregistrer l'intégration**.
 6. Terminez la configuration en suivant les onglets requis, cf description ci-dessous.

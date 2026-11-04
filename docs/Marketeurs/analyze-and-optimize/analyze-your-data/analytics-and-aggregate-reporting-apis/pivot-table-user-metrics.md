@@ -133,9 +133,11 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 
 **To add a pivot report**:
 
-1. Click **Add pivot.** The New pivot window opens.
+1. Click **Add pivot.**  
+   The New pivot window opens.
 2. Enter the pivot name.
-3. Click **Submit.** The Add pivot table window opens.
+3. Click **Submit.**   
+   The Add pivot table window opens.
 4. Select apps, dimensions, and metrics. Set filters and value display settings.  
 
 | Section | Description |

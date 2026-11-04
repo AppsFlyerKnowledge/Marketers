@@ -111,7 +111,7 @@ Les options de politique d'audience pour le partage d'identifiants dans iOS sont
 | --- | --- |
 | Ne jamais télécharger | Cet identifiant n'est pas transmis aux partenaires |
 | Statut ATT : uniquement autorisé | L'identifiant est téléchargé si le statut ATT le plus récent est **authorized** ou **af\_authorized** |
-| Statut ATT : autorisé ou non déterminé | L'identifiant est téléchargé si le statut ATT le plus récent est **autorisé**, **af\_authorized**, **non\_déterminé** ou **af\_unavailable***Option par défaut pour l'IDFA, depuis le lancement d'iOS 14.5 par Apple* |
+| Statut ATT : autorisé ou non déterminé | L'identifiant est téléchargé si le statut ATT le plus récent est **autorisé**, **af\_authorized**, **non\_déterminé** ou **af\_unavailable**  <br />  <br />*Option par défaut pour l'IDFA, depuis le lancement d'iOS 14.5 par Apple* |
 | Toujours télécharger | L'identifiant est téléchargé indépendamment du statut ATT. Assurez-vous que votre application respecte bien ses conditions d'utilisation.  <br />  <br />*Option indisponible pour IDFA* |
 
 **Remarque :** Audiences considère le statut ATT d'un nouvel utilisateur comme **non déterminé** jusqu'à ce qu'il ait vu et répondu à la boîte de dialogue de consentement ATT.

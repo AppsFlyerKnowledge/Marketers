@@ -183,7 +183,7 @@ NSDictionary *adobeInfo = @{@"external_user_id":@"some-adobe-external-id-value"}
 
 **Pour activer ou modifier l'intégration :**
 
-1. **Activation :** dans AppsFlyer, dans le menu latéral, choisissez **Collaboration**> **Partenaire Marketplace**.  
+1. **Activation :** dans AppsFlyer, dans le menu latéral, choisissez **Collaboration** > **Partenaire Marketplace**.  
    **Modification :** dans AppsFlyer, dans le menu latéral, sélectionnez **Collaboration** > **Intégrations actives**.
 2. Recherchez **Adobe Analytics** et sélectionnez-le.
 3. Cliquez sur Configurer l'intégration. Vous êtes alors dirigé vers la page de configuration de l'intégration.

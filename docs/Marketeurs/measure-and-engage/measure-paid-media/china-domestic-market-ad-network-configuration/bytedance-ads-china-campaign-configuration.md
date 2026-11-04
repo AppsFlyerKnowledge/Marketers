@@ -41,7 +41,7 @@ Pour configurer vos campagnes avec ByteDance Ads China, suivez les étapes ci-de
 
 **Pour activer ou modifier l'intégration :**
 
-1. **Pour activer :** dans AppsFlyer, dans le menu latéral, sélectionnez **Collaboration**> **Marketplace partenaire**.  
+1. **Pour activer :** dans AppsFlyer, dans le menu latéral, sélectionnez **Collaboration** > **Marketplace partenaire**.  
    **Pour les modifier :** dans AppsFlyer, dans le menu latéral, sélectionnez **Collaborer** > **Intégrations actives**.
 2. Sélectionnez le partenaire de votre choix.
 3. Cliquez sur **Configurer l'intégration**. Vous êtes alors dirigé vers la page de configuration de l'intégration.

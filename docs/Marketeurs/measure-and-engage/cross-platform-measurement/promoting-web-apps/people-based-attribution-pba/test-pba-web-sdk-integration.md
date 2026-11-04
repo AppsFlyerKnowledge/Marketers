@@ -99,7 +99,8 @@ Si le mode test est activé sur un navigateur donné, quel que soit l'onglet, le
 
 1. **Vérifiez que le SDK est chargé :**
    1. Dans AppsFlyer, dans le menu supérieur, sélectionnez **Mes applications** > **Voir les bundles de marques.**
-   2. Sélectionnez le test d'intégration **SDK web requis.** La page d'intégration s'ouvre. La clé web dev s'affiche.  
+   2. Sélectionnez le test d'intégration **SDK web requis.**  
+      La page d'intégration s'ouvre. La clé web dev s'affiche.  
 
       [![pba_web_sdk_integration_test_web_dev_key_en-us.png](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)
    3. Dans un nouvel onglet du navigateur, accédez à votre site web (sur lequel le SDK web est installé).

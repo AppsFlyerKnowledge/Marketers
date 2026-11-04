@@ -52,7 +52,8 @@ Pour que l'app devienne active, AppsFlyer vérifie son statut dans le store. Si 
 
 1. Dans le coin supérieur droit du tableau de bord, cliquez sur **Mes apps**.  
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
-2. À côté de l'app en attente, cliquez sur **Actualiser le statut.** Si le statut de l'app n'est pas modifié, celle-ci affiche toujours En attente. S'il a été mis à jour, l'app affiche En ligne et le logo est actualisé.
+2. À côté de l'app en attente, cliquez sur **Actualiser le statut.**  
+   Si le statut de l'app n'est pas modifié, celle-ci affiche toujours En attente. S'il a été mis à jour, l'app affiche En ligne et le logo est actualisé.
 
 <div id="store-country" />
 

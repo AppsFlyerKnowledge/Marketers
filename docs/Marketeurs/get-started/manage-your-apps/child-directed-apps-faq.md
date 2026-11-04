@@ -72,7 +72,8 @@ Once confirmed that an app is directed toward children, there are two ways you c
 * **Audit log:**
   1. From the menu bar, access the user menu (email address drop-down).
   2. Select **Security center.**
-  3. In the **Audit log** section, click **View audit log.** You can see the confirmation details under the **My apps** service.
+  3. In the **Audit log** section, click **View audit log.**  
+     You can see the confirmation details under the **My apps** service.
 
 </Accordion>
 

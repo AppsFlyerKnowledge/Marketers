@@ -97,7 +97,8 @@ Une audience personnalisée se fabrique de A à Z, elle utilise les ensembles de
 10. Créez l'audience guidée par l'interface utilisateur. Pour plus d'informations sur les différentes règles, vous pouvez consulter [Tout savoir sur les ensembles de règles](/docs/audiences-guide#tout-savoir-sur-les-ensembles-de-règles).
 11. Combinez des ensembles de règles en utilisant les opérateurs et, ou, exclure.
 12. Lorsque vous créez votre audience, les volets de droite mettent automatiquement à jour les estimations d'audience ainsi que la taille des importations pour chaque partenaire.
-13. Terminez le paramétrage de l'audience, puis cliquez sur **Suivant.** La **fenêtre de connexion de l'audience** s'ouvre. C'est là que vous pouvez connecter l'audience à vos partenaires média/strong>.
+13. Terminez le paramétrage de l'audience, puis cliquez sur **Suivant.**  
+    La **fenêtre de connexion de l'audience** s'ouvre. C'est là que vous pouvez connecter l'audience à vos partenaires média/strong>.
 
 **Remarques :**
 

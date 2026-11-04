@@ -122,11 +122,11 @@ Le format de fichier CSV, le schéma et les règles de validation des dépenses 
 
 | Élément | Exigence |
 | --- | --- |
-| Personnages interdits | Les champs au format chaîne ne peuvent pas avoir `=` `+``-`,, ou `@` comme premier caractère. Par exemple, `@example_campign` ou `=123` sont interdits. |
+| Personnages interdits | Les champs au format chaîne ne peuvent pas avoir `=` `+-`,, ou `@` comme premier caractère. Par exemple, `@example_campign` ou `=123` sont interdits. |
 | Source média | <ul><li>Une source multimédia par fichier</li><li>Plusieurs applications pour la même source multimédia sont autorisées</li><li>Limites :<ul><li>N'envoyez pas de données de coûts depuis une source multimédia qui possède déjà une intégration de l'API Cost avec AppsFlyer. L'importation n'est pas autorisée depuis ces sources. Cela inclut les Meta Ads, Apple Search Ads et Snapchat.</li></ul></li></ul> |
 | Propriétaire d'app | Un annonceur (propriétaire de l'application) par fichier est autorisé. Cela signifie que plusieurs applications du même annonceur sont autorisées. |
 | Extension de nom de fichier | Exemple de fichier CSV : abc123.csv |
-| Structure des fichiers | <ul><li>Format Les fichiers sont au format CSV, ce qui signifie que chaque colonne est séparée par une virgule. Notez que c'est ainsi qu'Excel formate les fichiers CSV par défaut. Si Excel met en forme le fichier avec un point-virgule (;), cela est lié au réglage régional de votre ordinateur.</li><li>**Ligne d'en-tête** : La première ligne est une ligne d'en-tête qui correspond au schéma</li><li>**Lignes de données** : Contient les colonnes obligatoires. **Remarque** : Assurez-vous qu'il n'y a aucun espace à la fin de vos données. Par exemple, [USD] (un espace après le **D**) doit être remplacé par [USD].</li><li>**Lignes vides** : Non autorisé</li><li>**Lignes dupliquées** ayant la même clé : Non autorisé. La clé est dérivée de l'utilisation des champs obligatoires.</li><li>**Cellules vides :** Les valeurs vides ne sont pas autorisées dans le fichier. Si vous ne souhaitez pas charger certains champs, ils ne doivent pas figurer dans le fichier.</li></ul> |
+| Structure des fichiers | <ul><li>Format Les fichiers sont au format CSV, ce qui signifie que chaque colonne est séparée par une virgule. Notez que c'est ainsi qu'Excel formate les fichiers CSV par défaut. Si Excel met en forme le fichier avec un point-virgule (;), cela est lié au réglage régional de votre ordinateur.</li><li>**Ligne d'en-tête** : La première ligne est une ligne d'en-tête qui correspond au schéma</li><li>**Lignes de données** : Contient les colonnes obligatoires. **Remarque** : Assurez-vous qu'il n'y a aucun espace à la fin de vos données. Par exemple, [USD] (un espace après le **D**) doit être remplacé par [USD].</li><li>**Lignes vides** : Non autorisé</li><li>**Lignes dupliquées** ayant la même clé : Non autorisé. La clé est dérivée de l'utilisation des champs obligatoires.</li><li>**Cellules vides :** <mark>Les valeurs vides ne sont pas autorisées dans le fichier.</mark> Si vous ne souhaitez pas charger certains champs, ils ne doivent pas figurer dans le fichier.</li></ul> |
 | Hiérarchie publicitaire | Toutes les données partielles téléchargées à un niveau hiérarchique inférieur remplaceront toutes les données depuis le niveau inférieur de la campagne.<br /><br />Exemple,  Si vous importez un fichier avec le coût de la campagne pour l'ensemble d'annonces 1 et que vous importez séparément un autre fichier pour l'ensemble d'annonces 2 de la même campagne, le coût total de la campagne sera remplacé et seules les données de l'ensemble d'annonces 2 seront affichées. Pour le coût total de la campagne, le fichier que vous importez doit inclure les ensembles d'annonces 1 et 2. |
 
 <div id="matched-rows" />
@@ -226,8 +226,10 @@ Le jeton Ad Spend est utilisé pour vérifier que l'expéditeur de l'e-mail est 
 
 **Pour télécharger le fichier des dépenses publicitaires, procédez comme suit** :
 
-1. Dans AppsFlyer, dans le menu latéral, sélectionnez **Paramètres** > Importation des **coûts.** La page d'importation des coûts s'affiche.
-2. Cliquez sur **+ importer le fichier de dépenses publicitaires**La fenêtre d'importation des dépenses publicitaires s'ouvre.
+1. Dans AppsFlyer, dans le menu latéral, sélectionnez **Paramètres** > Importation des **coûts.**  
+   La page d'importation des coûts s'affiche.
+2. Cliquez sur **+ importer le fichier de dépenses publicitaires**  
+   La fenêtre d'importation des dépenses publicitaires s'ouvre.
 3. Faites glisser le fichier CSV vers la fenêtre **d'importation du fichier de dépenses publicitaires**.  
    Le message Traitement du fichier s'affiche.
 4. Si un message d'erreur s'affiche pendant le téléchargement : rectifiez l'erreur et répétez les étapes correspondantes.

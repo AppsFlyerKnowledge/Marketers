@@ -275,7 +275,7 @@ Pour activer l'attribution post vue, définissez la fenêtre rétrospective dans
 
 Cette fonction est particulièrement utile pour les réseaux publicitaires vidéo présentant traditionnellement de faibles CTRs sur leurs publicités vidéo, mais également pour les réseaux publicitaires conventionnels diffusant des publicités ordinaires.
 
-<table><thead><tr><th><strong>Type d'attribution</strong></th><th><p><strong>Méthode d'attribution</strong></p></th><th><p><strong>Plage</strong></p></th><th><p><strong>Par défaut<br/></strong></p></th></tr></thead><tbody><tr><td rowspan="2"><p>Post vue</p><p>(<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">Partenaires intégrés sélectionnés</a>)</p></td><td><p>ID Matching</p></td><td><p>0-24 heures</p></td><td><p>1 jour</p></td></tr><tr><td><p>Modélisation probabiliste</p></td><td><p>0-24 heures</p></td><td><ul><li>Adaptive</li><li>Déterminé par AppsFlyer</li></ul></td></tr></tbody></table>
+<table><thead><tr><th><strong>Type d'attribution</strong></th><th><p><strong>Méthode d'attribution</strong></p></th><th><p><strong>Plage</strong></p></th><th><p><strong>Par défaut</strong><br/></p></th></tr></thead><tbody><tr><td rowspan="2"><p>Post vue</p><p>(<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">Partenaires intégrés sélectionnés</a>)</p></td><td><p>ID Matching</p></td><td><p>0-24 heures</p></td><td><p>1 jour</p></td></tr><tr><td><p>Modélisation probabiliste</p></td><td><p>0-24 heures</p></td><td><ul><li>Adaptive</li><li>Déterminé par AppsFlyer</li></ul></td></tr></tbody></table>
 
 Dans les cas où à la fois un clic et une impression ont lieu, le clic prévaut toujours, car il s'agit d'un engagement actif.
 

@@ -436,7 +436,8 @@ Pour permettre à AppsFlyer d'envoyer des audiences vers Google Ads, les actions
 4. Saisissez un **nom de connexion.**
 5. Sélectionnez **Google Ads**.  
    [Si l'icône Google Ads ne s'affiche pas, contactez votre CSM ou hello@appsflyer.com](mailto:hello@appsflyer.com) et demandez-leur d'autoriser vos audiences à utiliser Google Adwords.
-6. Cliquez sur **Se connecter à Google Ads.** La **fenêtre de Connexion à Google** s'ouvre.
+6. Cliquez sur **Se connecter à Google Ads.**  
+   La **fenêtre de Connexion à Google** s'ouvre.
 7. Connectez-vous à Google et confirmez vos choix dans Google Ads.   
    La fenêtre se referme.
 8. Sur la plateforme AppsFlyer, **sélectionnez un compte**.

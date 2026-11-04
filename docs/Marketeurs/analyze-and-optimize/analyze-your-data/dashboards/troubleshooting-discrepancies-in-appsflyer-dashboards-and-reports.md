@@ -41,7 +41,7 @@ Il est important de comprendre ce qu'elles signifient et où les trouver. Notez 
 
 #### **Données d'activité**
 
-* Il s'agit d'évènements réalisés par les utilisateurs actifs de l'app au cours d'une période spécifique.
+* Il s'agit d'évènements réalisés par <u>les utilisateurs actifs de l'app</u> au cours d'une période spécifique.
 * Les données d'activité affichent une répartition précise des évènements chronologiques. Elles sont utiles pour mesurer la performance globale des sources médias sur des périodes spécifiques.
 * Par exemple, vous pouvez utiliser les données d'activité pour voir le nombre d'évènements d'achat fournis par tous les utilisateurs du mois de janvier.
 * Utilisez les données d'activité pour comparer le comportement des utilisateurs du mois en cours par rapport au mois précédent.

@@ -84,7 +84,8 @@ Le tableau ci-dessous détaille les limites de cardinalité par jour et par appl
 > 👍 **Astuce**
 >
 > «Diviser pour mieux régner» comme on dit. Définissez un petit nombre de noms d'adset généraux (idéalement jusqu'à 50) et associez tous les noms d'adset précédents à des publicités uniques. Vous pouvez également utiliser les paramètres **af\_sub** dans les liens d'attribution AppsFlyer. Vous pourrez ainsi :
-> 1. Eviter de voir s’afficher **Exceeded\_AdSet\_Limit** ou **Exceeded\_Ad\_Limit.** 2. Optimiser en fonction des adsets et du trafic publicitaire.
+> 1. Eviter de voir s’afficher **Exceeded\_AdSet\_Limit** ou **Exceeded\_Ad\_Limit.**
+> 2. Optimiser en fonction des adsets et du trafic publicitaire.
 > 3. Effectuer des analyses approfondies basées sur les adsets et les noms d’adset dans les données brutes.
 
 </Accordion>
@@ -112,7 +113,8 @@ Le tableau ci-dessous détaille les limites de cardinalité par jour et par appl
 > 👍 **Astuce**
 >
 > Définissez un petit nombre de noms de campagne généraux (idéalement jusqu'à 300), et associez tous les noms de campagne précédents à des adsets. Dans les liens d'attribution AppsFlyer, le paramètre est **af\_adset.** Vous pourrez ainsi :
-> 1. Eviter de voir s’afficher **Exceeded\_Campaign\_Limit.** 2. Optimiser en fonction du trafic des adsets.
+> 1. Eviter de voir s’afficher **Exceeded\_Campaign\_Limit.**
+> 2. Optimiser en fonction du trafic des adsets.
 > 3. Effectuer des analyses approfondies basées sur les campagnes et les noms d’adset dans les données brutes.
 
 </Accordion>

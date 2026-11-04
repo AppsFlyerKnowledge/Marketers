@@ -129,7 +129,7 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 Les paramètres de la charge utile sont divisés en identifiants d'utilisateurs et en paramètres d'événements.
 
-* ID utilisateur : Vous devez envoyer au moins un paramètre d'identification de l'utilisateur.
+* ID utilisateur : <mark>Vous devez envoyer au moins un paramètre d'identification de l'utilisateur.</mark>
 * Événement : Envoyer les paramètres obligatoires et les paramètres optionnels si nécessaire.
 
 <div id="user-identifier-parameters-send-at-least-one-parameter" />
@@ -153,7 +153,7 @@ Les paramètres de la charge utile sont divisés en identifiants d'utilisateurs 
 | <span id="timestamp"></span>Horodatage | Non | Heure à laquelle l'événement s'est produit, en millisecondes. Envoyer sous la forme d'un <Anchor target="_blank" href="https://www.unixtimestamp.com/">horodatage Unix</Anchor> de 13 chiffres.<ul><li>Si aucun horodatage n'est envoyé, l'heure est fixée en utilisant l'heure du serveur.</li><li>**Les événements qui arrivent en retard sont horodatés en fonction de l'heure actuelle du serveur.** L'arrivée tardive signifie l'arrivée après minuit UTC le jour suivant l'événement. Par exemple, un événement survenant le lundi **doit être** traité avant le mardi à minuit UTC.</li><li>Les événements dont l'heure se situe dans le futur (par rapport à l'heure actuelle du serveur) sont horodatés avec l'heure du serveur.</li><li>Format : Int</li><li>Exemple :`"timestamp" : 1584835200123`</li><li>Remplit le champ de données brutes : `event_time`</li></ul> |
 | <span id="eventvalue"></span>Valeur de l'événement | Non | Carte des paramètres de l’événement décrivant l’événement. Utilisez ce paramètre pour envoyer des évènements rich in-app, tels que la référence SKU du produit et le prix de l’article.<ul><li>**Remarque relative aux revenus :** Vous pouvez renseigner ce paramètre avec les détails du revenu. Vous devez également renseigner *eventRevenue* et *eventRevenueCurrency*.</li></ul><ul><li>Format : JSON</li><li>Exemple : Pour envoyer le SKU ABC123, d'une couleur bleue et d'un prix unitaire de 3,99 $, définissez eventValue ainsi :<br />`{"Purchase": {"sku" : "ABC123", "color": "blue", "unit_price":3.99,"currency": "USD"}}`</li><li>**Limitation :** 1000 caractères. Ne dépassez pas cette limite, sinon la valeur sera tronquée.</li><li>Remplit le champ de données brutes : `event_value`</li></ul> |
 | <span id="eventrevenuecurrency"></span>eventRevenueCurrency | Non | Code devise d'un fait générateur de recettes, à savoir un code devise <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> à trois caractères.<ul><li>Par défaut : USD</li><li>Format : chaîne</li><li>Exemple :  `"eventRevenueCurrency" : "EUR"`</li><li>Remplit le champ de données brutes : `event_revenue_currency`</li></ul> |
-| <span id="eventrevenue"></span>eventRevenue | Non | Revenus (valeur monétaire) affectés à un événement.<br /><br />**Important !** Si les recettes sont déclarées dans *eventValue,* elles sont également déclarées dans *eventRevenue* et remplissent eventRevenueCurrency.<ul><li>Les valeurs négatives sont autorisées. Par exemple, un remboursement.</li><li>Format : Float</li><li>Exemple de valeurs : `1``1.2``1234.20``-1234.20`</li><li>Remplit le champ de données brutes : `event_revenue`</li></ul> |
+| <span id="eventrevenue"></span>eventRevenue | Non | Revenus (valeur monétaire) affectés à un événement.<br /><br />**Important !** Si les recettes sont déclarées dans *eventValue,* elles sont également déclarées dans *eventRevenue* et remplissent eventRevenueCurrency.<ul><li>Les valeurs négatives sont autorisées. Par exemple, un remboursement.</li><li>Format : Float</li><li>Exemple de valeurs : `1` `1.2` `1234.20` `-1234.20`</li><li>Remplit le champ de données brutes : `event_revenue`</li></ul> |
 | <span id="eventcategory"></span>eventCategory | Non | Ce paramètre est obsolète et sera supprimé du système à une date ultérieure. Utilisez plutôt eventValue. |
 | <span id="eventlabel"></span>eventLabel | Non | Ce paramètre est obsolète et sera supprimé du système à une date ultérieure. Utilisez plutôt eventValue. |
 | <span id="referrer"></span>Référent | Non | Référent HTTP<ul><li>Format : chaîne</li><li>Exemple :`"referrer" : "https://www.google.com/"`</li><li>Remplit le champ de données brutes : `http_referrer`</li></ul> |
@@ -290,7 +290,8 @@ print(response.text.encode('utf8'))
 **Pour obtenir l'afUserId du navigateur du visiteur :**
 
 1. Dans votre navigateur, allez sur votre site web.
-2. Cliquez avec le bouton droit de la souris et sélectionnez ***Inspecter***La fenêtre d'inspection des éléments du navigateur s'ouvre.
+2. Cliquez avec le bouton droit de la souris et sélectionnez ***Inspecter***  
+   La fenêtre d'inspection des éléments du navigateur s'ouvre.
 
    [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
 3. Aller à la (A) ***Application*** (A).
