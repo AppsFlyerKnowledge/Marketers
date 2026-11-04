@@ -74,7 +74,7 @@ Movable Ink — партнер по оптимизации динамическ�
 | `{{onelink.domain}}` | Ваш домен AppsFlyer | mink.onelink.com |  | UI AppsFlyer |
 | `{{template_id}}` | ID шаблона ссылки, настроенного в AppsFlyer | 1a6f |  | UI AppsFlyer |
 | `{{pid_value}}` | ID ESP / медиаисточника | Название ESP |  | UI AppsFlyer |
-| `{{mi_link_from_creative<br /><br />_tag}}` | Ссылка перехода по клику HREF из креативного тега Movable Ink. Доступно на странице Finish & Export (см. изображение на шаге 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | Ссылка должна быть закодирована. | Movable Ink |
+| `{{mi_link_from_creative`<br /><br />`_tag}}` | Ссылка перехода по клику HREF из креативного тега Movable Ink. Доступно на странице Finish & Export (см. изображение на шаге 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | Ссылка должна быть закодирована. | Movable Ink |
 
    <div id="note" />
 
