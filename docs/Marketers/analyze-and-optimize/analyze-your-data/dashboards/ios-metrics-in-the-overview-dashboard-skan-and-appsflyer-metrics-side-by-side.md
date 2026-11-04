@@ -38,7 +38,7 @@ En paralelo, puedes ver el rendimiento de la campaña utilizando los datos propo
 
 **Limitación del intercambio de datos**: Las métricas de SKAN del panel de control de resumen general no están disponibles para las agencias y redes de publicidad.
 
-Si las métricas de SKAN no aparecen en el panel de control, debes actualizar la [configuración de la tabla](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).
+<mark>Si las métricas de SKAN no aparecen en el panel de control, debes actualizar la [configuración de la tabla](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).</mark>
 
 La vista en paralelo proporciona información sobre las métricas de la campaña. Utilízalo para evaluar las métricas de rendimiento de la campaña en términos de:
 

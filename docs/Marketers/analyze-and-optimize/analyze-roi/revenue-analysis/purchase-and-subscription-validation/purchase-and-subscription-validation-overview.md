@@ -83,12 +83,12 @@ Utiliza las tablas a continuación para determinar qué solución se adapta mejo
 | --- | --- | --- |
 | **Validación de recibos**  <br />Verifica las compras in-app para filtrar las transacciones fraudulentas. | ✔ | ✔ |
 | **Detección automatizada de compras & deduplicación**  <br />Detecta automáticamente las compras in-app (IAP) y las suscripciones, incluidas las transacciones de suscriptores existentes, y elimina los duplicados para generar reportes más limpios. | ✖ | ✔ |
-| **Gestión de reembolsos**  <br />Detecta los reembolsos y los atribuye a la compra original para reflejar los ingresos reales. | ✖ | ✔* |
+| **Gestión de reembolsos**  <br />Detecta los reembolsos y los atribuye a la compra original para reflejar los ingresos reales. | ✖ | ✔<sup>*</sup> |
 | **Medición completa de IAP**  <br />Gestiona el uso compartido en familia y reporta el resultado final de las compras pendientes mediante la confirmación de App Store. | ✖ | ✔ |
 | **Cobertura completa del funnel de suscripción**  <br />Mide renovaciones, mejoras y conversiones para reflejar el valor total de tu base de suscriptores. | ✖ | ✔ |
 | **Cálculo de ingresos netos**  <br />Calcula tanto los ingresos brutos como los netos deduciendo automáticamente las comisiones de la tienda y los impuestos. | ✖ | ✔ |
 
-* La gestión de reembolsos **para compras in-app** solo está disponible en el plan ROI360 Advanced.
+<sup>*</sup> La gestión de reembolsos **para compras in-app** solo está disponible en el plan ROI360 Advanced.
 
 </Accordion>
 
@@ -97,14 +97,14 @@ Utiliza las tablas a continuación para determinar qué solución se adapta mejo
 | **Event name** | **Validación de recibos** | **Ingresos de la tienda ROI360** |
 | --- | --- | --- |
 | af\_compra | ✔ | ✔ |
-| af\_purchase\_refund* | ✖ | ✔ |
+| af\_purchase\_refund<sup>*</sup> | ✖ | ✔ |
 | af\_purchase\_pending | ✖ | ✔ |
-| af\_purchase\_canceled* | ✖ | ✔ |
+| af\_purchase\_canceled<sup>*</sup> | ✖ | ✔ |
 | af\_purchase\_free | ✖ | ✔ |
 | af\_purchase\_sandbox\_sdk | ✔ | ✔ |
-| af\_purchase\_sandbox\_s2s* | ✖ | ✔ |
+| af\_purchase\_sandbox\_s2s<sup>*</sup> | ✖ | ✔ |
 
-* Disponible solo en el plan ROI360 Advanced.
+<sup>*</sup> Disponible solo en el plan ROI360 Advanced.
 
 </Accordion>
 

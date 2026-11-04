@@ -51,7 +51,8 @@ Para que el estado de la aplicación cambie a "activo", AppsFlyer verifica su es
 **Para actualizar manualmente el estado de la aplicación:**
 
 1. En el panel de control, haz clic en **Mis aplicaciones** en la esquina superior derecha.
-2. Junto a la aplicación pendiente, haz clic en **Actualizar estado.** Si el estado de la aplicación no se ha modificado, esta seguirá apareciendo como pendiente. Si se ha actualizado, el estado se muestra como activa y el logotipo se actualiza.  
+2. Junto a la aplicación pendiente, haz clic en **Actualizar estado.**  
+   Si el estado de la aplicación no se ha modificado, esta seguirá apareciendo como pendiente. Si se ha actualizado, el estado se muestra como activa y el logotipo se actualiza.  
 
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
 

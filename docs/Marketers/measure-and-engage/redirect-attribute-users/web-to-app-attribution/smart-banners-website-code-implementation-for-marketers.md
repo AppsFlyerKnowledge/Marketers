@@ -146,7 +146,8 @@ Para agregar el código a través de otras plataformas o para realizar cambios e
 4. En la sección **Submitted** (Enviado):
    1. Haz clic en el menú de acciones y selecciona **Crear para escenario**.
    2. Haz clic de nuevo en el menú de acciones y selecciona **Aprobar para publicar**.
-5. En la sección **Aprobado**, haz clic en el menú de acciones y selecciona **Crear y publicar en producción.** El proceso ya está completo.
+5. En la sección **Aprobado**, haz clic en el menú de acciones y selecciona **Crear y publicar en producción.**  
+   El proceso ya está completo.
 
 </Accordion>
 

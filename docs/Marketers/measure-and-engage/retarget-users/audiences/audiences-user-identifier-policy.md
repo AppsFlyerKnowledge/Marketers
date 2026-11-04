@@ -109,7 +109,7 @@ Las opciones de política de audiencias para compartir identificadores en iOS se
 | --- | --- |
 | Nunca subir | Este identificador no se envía a los socios |
 | Estado de ATT: sólo autorizado | El identificador se envía si el estado ATT más reciente es **autorizado** o **af\_authorized** |
-| Estado de ATT: autorizado o no determinado | El identificador se envía si el estado ATT más reciente es **autorizado**, **af\_autorizado**, **no\_determinado**, o **af\_no\_disponible***Opción predeterminada para IDFA, a partir del lanzamiento de iOS 14.5 de Apple* |
+| Estado de ATT: autorizado o no determinado | El identificador se envía si el estado ATT más reciente es **autorizado**, **af\_autorizado**, **no\_determinado**, o **af\_no\_disponible**  <br />  <br />*Opción predeterminada para IDFA, a partir del lanzamiento de iOS 14.5 de Apple* |
 | Siempre subir | El identificador se envía independientemente del estado de ATT. Asegúrese de cumplir con los términos de uso de su aplicación.  <br />  <br />*Opción no disponible para IDFA* |
 
 **Nota:** Audiences considera el estado ATT de un nuevo usuario como **no determinado** hasta que haya visto y respondido al cuadro de diálogo de consentimiento de ATT.

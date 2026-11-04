@@ -321,11 +321,11 @@ Deferred Deep Linking significa que ofreces a los nuevos usuarios una experienci
        >
        > Por ejemplo, se eligió el **deep\_link\_value** de un tipo de fruta y los desarrolladores hicieron que los valores fueran dinámicos. Esto significa que puedes introducir cualquier fruta sin necesidad de más trabajo por parte de tu equipo de desarrollo.
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=apples``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=apples...`
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=bananas``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=bananas...`
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=peaches``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=peaches...`
 
 2. Después de recibir la confirmación de los desarrolladores de que la aplicación se comporta según los parámetros y valores seleccionados, en la sección **Deep linking y redireccionamiento** de la página de configuración del enlace, introduce el **Valor de deep linking** según lo acordado con los desarrolladores.
 3. [Opcional] Si tus deep links requieren más de una experiencia en la aplicación (por ejemplo, si quieres dirigir a los usuarios a un producto y ofrecerles un descuento por separado), puedes agregar un **Valor adicional de deep linking** (que utiliza el parámetro deep\_link\_sub1) a la carga útil de datos de deep linking. Puedes agregar más parámetros de deep linking (deep\_link\_sub2-10) en la sección **Parámetros adicionales** .

@@ -100,7 +100,7 @@ Supuesto: El tiempo mínimo permitido entre sesiones es de 10 minutos.
 
 **Para establecer el temporizador de tiempo mínimo permitido entre sesiones:**
 
-1. En AppsFlyer, en el menú lateral, selecciona **Configuración**> **Configuración de la aplicación**.
+1. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Configuración de la aplicación**.
 2. Configura el **Tiempo mínimo entre sesiones.**
 3. Haz clic en **Guardar configuración.**   
    El cambio entra en vigor en el transcurso de una hora.

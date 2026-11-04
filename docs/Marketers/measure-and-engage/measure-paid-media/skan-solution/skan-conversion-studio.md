@@ -98,7 +98,7 @@ Las acciones medibles se pueden reportar a través de la API [de servidor a serv
 
 * SKAN 4 y Personalizado: S2S está siempre activo.
 * Descodificar: S2S no es adecuado para el modo de decodificación y no está disponible. AppsFlyer no establece el CV en este modo.
-* [Legado] Modos de ingresos, conversión y participación: Debe activar la [grabación de eventos S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api) antes de enviar eventos.
+* [Legado] Modos de ingresos, conversión y participación: <mark>Debe activar la</mark> [<mark>grabación de eventos S2S</mark>](/docs/skan-conversion-studio#report-events-by-servertoserver-api) antes de enviar eventos.
 
 </Accordion>
 
@@ -256,7 +256,7 @@ Al modificar la configuración del modo, se actualiza el resumen de la **capacid
 
 | Modo de medición | Descripción |
 | --- | --- |
-| Ingresos totales | ![IngresosFijos.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Ingresos generados durante la ventana de actividad de 24 horas.**<br /><br />Seleccione una tasa de conversión a USD de una de las siguientes opciones:<ul><li>0,01 $ para medir hasta 0,63 $</li><li>1 $ para medir hasta 63 $</li><li>10 $ para medir hasta 630 $</li></ul>AppsFlyer completa automáticamente 63 rangos de medición de ingresos. Asegúrese de que el nombre del evento `af_skad_revenue` esté correctamente asignado para los socios. En el panel, los ingresos se registran como el máximo del rango. Por ejemplo, si el rango es $60-$61, el ingreso registrado es $61. ¡Atención! ¡Nota! Los ingresos personalizados utilizan un método diferente para su cálculo.<br /><br />**Métricas disponibles:**<ul><li>Ingresos<ul><li>ROI (Retorno de la Inversión)</li><li>ROAS (Retorno de la Inversión Publicitaria)</li><li>ARPU (Ingresos medios por usuario): Ingresos/usuarios que instalan la aplicación</li><li>Tasa de conversión de usuarios: Usuarios que realizan una compra/usuarios que instalan la aplicación</li><li>Costo Efectivo por Adquisición (eCPA)</li></ul></li></ul> |
+| Ingresos totales | ![IngresosFijos.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Ingresos generados durante la ventana de actividad de 24 horas.**<br /><br />Seleccione una tasa de conversión a USD de una de las siguientes opciones:<ul><li>0,01 $ para medir hasta 0,63 $</li><li>1 $ para medir hasta 63 $</li><li>10 $ para medir hasta 630 $</li></ul>AppsFlyer completa automáticamente 63 rangos de medición de ingresos. Asegúrese de que el nombre del evento `af_skad_revenue` esté correctamente asignado para los socios. En el panel, <mark>los ingresos se registran como el máximo del rango.</mark> Por ejemplo, si el rango es $60-$61, el ingreso registrado es $61. ¡Atención! ¡Nota! Los ingresos personalizados utilizan un método diferente para su cálculo.<br /><br />**Métricas disponibles:**<ul><li>Ingresos<ul><li>ROI (Retorno de la Inversión)</li><li>ROAS (Retorno de la Inversión Publicitaria)</li><li>ARPU (Ingresos medios por usuario): Ingresos/usuarios que instalan la aplicación</li><li>Tasa de conversión de usuarios: Usuarios que realizan una compra/usuarios que instalan la aplicación</li><li>Costo Efectivo por Adquisición (eCPA)</li></ul></li></ul> |
 | Conversión | ![mceclip0.png](https://files.readme.io/29535e45638cb2b1eecdf43e4fbee0fa52665c90aefe064caaaac9d0fc98472f-4406052008593.png)<br /><br />**Eventos in-app realizados una o más veces durante la ventana de actividad de 24 horas.**<br /><br />**Configuración**:<ul><li>Seleccione de 1 a 6 eventos in-app para medir de la lista desplegable. Limitación: La lista se limita a los 300 eventos más importantes ocurridos en los últimos 30 días.</li><li>En el panel de SKAdNetwork, seleccione un evento determinado como el <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings">evento de conversión</Anchor>.</li></ul>**Métricas por evento in-app:**<ul><li>Cantidad de usuarios que realizan un evento<ul><li>Tasa de conversión: Usuarios que realizan el evento de conversión/usuarios que instalan la aplicación</li><li>Costo Efectivo por Adquisición (eCPA)</li><li>Sesiones (utiliza el evento *af\_app\_opened*)</li></ul></li></ul>Ejemplo de recuentos de usuarios:<ul><li>Registro completado</li><li>Realizó una compra</li><li>Alcanzó un nivel de juego</li></ul>**¡Aclaración! ¡Aclaración!** Utilice la medición de conversión para contar **si** un usuario realizó un evento. Para contar cuántas veces un usuario realiza un evento, utilice la medición de interacción. |
 | Participación | ![mceclip1.png](https://files.readme.io/51b38d6693e843f04fe7ce02706ae2959d88a047606b41cccad6ed09a46eea39-4406058637841.png)<br /><br />**Número de veces que el usuario realizó un evento específico en la aplicación durante el periodo de actividad**<br /><br />**Configuración:**<ul><li>Seleccione un evento en la aplicación del menú desplegable.</li><li>La selección dentro de la aplicación también se denomina Evento de Conversión.</li><li>Rango de valores: 0-63</li></ul>**Métricas para el evento en la aplicación**:<ul><li>Cantidad de usuarios que realizan el evento<ul><li>Número medio de eventos por usuario</li><li>Tasa de conversión</li><li>Costo Efectivo por Adquisición (eCPA)</li><li>Sesiones</li></ul></li></ul>Ejemplos:<ul><li>Medir el número de veces:<ul><li>Un usuario abrió la aplicación</li><li>El usuario vio un anuncio</li></ul></li></ul> |
 
@@ -426,7 +426,7 @@ Crea tu propio mapeo de CV a evento y configura el CV en la aplicación tú mism
           * Se puede medir diferentes flujos de ingresos seleccionando eventos concretos en la aplicación dentro del esquema SKAN. Tras añadir la medición de ingresos, seleccione "evento en la aplicación" en la opción de fuente de ingresos. Asegúrese de que todos los eventos estén debidamente mapeados a las redes publicitarias.  
             Nota: Al medir ingresos de eventos específicos en la aplicación, `af_skad_revenue` no debe ser mapeado.
           * El componente se puede utilizar varias veces.
-          * Si informa ingresos vía postback a redes publicitarias, verifique que el mapeo de sus postbacks de eventos en la aplicación incluya los eventos de ingresos que haya configurado.
+          * <mark>Si informa ingresos vía postback a redes publicitarias, verifique que el mapeo de sus postbacks de eventos en la aplicación incluya los eventos de ingresos que haya configurado.</mark>
       </td>
     </tr>
     <tr>
@@ -450,7 +450,7 @@ Crea tu propio mapeo de CV a evento y configura el CV en la aplicación tú mism
 
         * Cuando se reportan los ingresos, SKAN asocia los ingresos al rango adecuado. Los ingresos registrados equivalen al valor promedio del rango.
         * Si los ingresos reportados superan el valor promedio del rango de mayor valor, se asocian a este último.   
-          [Práctica recomendada]: **¡Nota**! El valor registrado de los ingresos es el promedio de este rango. En otras palabras, no se considera el monto exacto de los ingresos.
+          [Práctica recomendada]: **¡Nota**! <mark>El valor registrado de los ingresos es el promedio de este rango.</mark> En otras palabras, no se considera el monto exacto de los ingresos.
         * En los datos sin procesar están disponibles tanto los ingresos registrados como el rango asociado.
 
         **Ejemplo:**
@@ -1110,7 +1110,7 @@ El flujo S2S es el siguiente:
    * Si el modo seleccionado es ingresos, conversión o interacción:
      1. En AppsFlyer, ve a **Configuración** > **SKAN Conversion Studio.**
      2. Haga clic en las opciones (⋮).
-     3. Active **Registrar eventos dentro de la aplicación enviados por la API de servidor a servidor**.
+     3. Active <mark>**Registrar eventos dentro de la aplicación enviados por la API de servidor a servidor**</mark>.
 2. Envíe eventos mediante S2S.
 
 **Limitación**

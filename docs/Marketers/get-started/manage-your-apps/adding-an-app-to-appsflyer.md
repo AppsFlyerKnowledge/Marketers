@@ -410,7 +410,7 @@ Cada **Web Dev Key heredada solo se puede reutilizar para una** nueva aplicació
 **Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
 **ID de la app:** El ID de la app. Se encuentra con la notación DNS inversa:  `<tld>`.`<company_name>`.`<app_name>`  
-Debe contener un mínimo de 2 segmentos. Cada segmento debe empezar con una letra seguida de caracteres de: `A-Z` `a-z` `0-9.``_` `-`.
+Debe contener un mínimo de 2 segmentos. Cada segmento debe empezar con una letra seguida de caracteres de: `A-Z` `a-z` `0-9.` `_` `-`.
 
 Para más información, consulta el campo «id» en la <Anchor target="_blank" href="https://developer.amazon.com/docs/vega/0.21/manifest-package.html#fields">documentación de Amazon Vega OS</Anchor>.
 
@@ -422,7 +422,7 @@ Para más información, consulta el campo «id» en la <Anchor target="_blank" h
 
 **Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**ID de la aplicación:** El ID de la aplicación, tal como lo reconoce Vizio. Comienza con las letras `vz`, seguidas de 2 a 10 caracteres de: `.``-` `0-9``.` `-`. Si necesitas confirmar la ID de la aplicación, consulta con tu representante de Vizio.
+**ID de la aplicación:** El ID de la aplicación, tal como lo reconoce Vizio. Comienza con las letras `vz`, seguidas de 2 a 10 caracteres de: `.` `-` `0-9.` `-`. Si necesitas confirmar la ID de la aplicación, consulta con tu representante de Vizio.
 
 </Accordion>
 
@@ -458,7 +458,7 @@ Por ejemplo, si tu bundle ID es "G15147002586", la URL de tu página será "[htt
 
 * **Formato:**
   * Longitud máxima de 50 caracteres
-  * Caracteres de `A-Z` `a-z``.` `_` tipo de paquete formato. Debe comenzar con letras.
+  * Caracteres de `A-Z` `a-z.` `_` tipo de paquete formato. Debe comenzar con letras.
 * **Ejemplo:** com.mi-empresa.app
 
 Si necesitas confirmar el ID de la aplicación, consulta con tu representante de LB WebOS.
@@ -505,7 +505,7 @@ Si necesitas confirmar el ID de la aplicación, consulta con tu representante de
 
 **Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**ID de la aplicación:** El ID de la aplicación de Xbox, tal como aparece en la URL de la tienda de Xbox desde donde se descarga la aplicación. Incluye solo 12 letras y dígitos (`0-9` `0-9``0-9`).
+**ID de la aplicación:** El ID de la aplicación de Xbox, tal como aparece en la URL de la tienda de Xbox desde donde se descarga la aplicación. Incluye solo 12 letras y dígitos (`0-9` `0-90-9`).
 
 <Image alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
 
@@ -543,7 +543,7 @@ Si necesitas confirmar el ID de la aplicación, consulta con tu representante de
 
 **Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**ID de la aplicación:** El ID de la aplicación de Epic Games, tal como aparece en la tienda desde la que se descarga la aplicación. Incluye entre 3 y 50 caracteres de: `A-Z` `a-z``0-9``.`
+**ID de la aplicación:** El ID de la aplicación de Epic Games, tal como aparece en la tienda desde la que se descarga la aplicación. Incluye entre 3 y 50 caracteres de: `A-Z` `a-z0-9.`
 
 ![](https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png)
 
@@ -555,7 +555,7 @@ Si necesitas confirmar el ID de la aplicación, consulta con tu representante de
 
 **Nombre de la aplicación:** El nombre que has elegido para tu aplicación.
 
-**ID de la aplicación:** El ID de la aplicación nativa de PC. Incluye entre 3 y 50 caracteres de: `A-Z` `a-z``0-9``.`
+**ID de la aplicación:** El ID de la aplicación nativa de PC. Incluye entre 3 y 50 caracteres de: `A-Z` `a-z0-9.`
 
 </Accordion>
 

@@ -99,7 +99,8 @@ Si el modo de prueba está habilitado en un navegador determinado, independiente
 
 1. **Verifica que el SDK esté cargado:**
    1. En AppsFlyer, en el menú superior, selecciona **Mis aplicaciones** > **Ver paquetes de marcas.**
-   2. Selecciona la prueba requerida **de integración del SDK web.** Se abre la página de integración. Se muestra la clave de desarrollo web.  
+   2. Selecciona la prueba requerida **de integración del SDK web.**  
+      Se abre la página de integración. Se muestra la clave de desarrollo web.  
 
       [![pba_web_sdk_integration_test_web_dev_key_en-us.png](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)
    3. En una nueva pestaña del navegador, ve a tu sitio web (que tiene instalado el SDK web).

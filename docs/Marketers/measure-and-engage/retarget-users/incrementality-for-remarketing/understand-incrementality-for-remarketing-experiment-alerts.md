@@ -135,7 +135,8 @@ Si la infracción es relativamente pequeña, basta con asegurarse de que la orie
 
 La segmentación detallada es una característica de ciertas redes publicitarias que permite afinar quién ve sus anuncios. Esta alerta aparecerá si la opción de segmentación detallada de la campaña está activada. Cuando está activada, permitirá a la campaña dirigirse fuera del público configurado.
 
-**Acciones recomendadas:** Verifique que la opción de segmentación detallada esté desactivada en la configuración de la campaña del lado del socio.
+**Acciones recomendadas:**  
+Verifique que la opción de segmentación detallada esté desactivada en la configuración de la campaña del lado del socio.
 
 <div id="low-activity" />
 

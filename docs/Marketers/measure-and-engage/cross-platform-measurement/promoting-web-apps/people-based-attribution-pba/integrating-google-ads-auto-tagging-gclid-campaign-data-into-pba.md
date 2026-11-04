@@ -54,9 +54,10 @@ Los datos de la jerarquía de campañas y anuncios están disponibles en los Das
 
 **Para conectarte a Google Ads:**
 
-1. En AppsFlyer, en el menú lateral, selecciona **Configuración**> **Brand Bundles**
+1. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Brand Bundles**
 2. Ve a la pestaña **integración de Google Ads**.
-3. Haz clic en **Conectar cuenta.** Se abre la página de inicio de sesión de Google Anuncios.
+3. Haz clic en **Conectar cuenta.**  
+   Se abre la página de inicio de sesión de Google Anuncios.
 4. Inicia sesión en la cuenta de Google Anuncios. Completa el proceso para dar acceso a AppsFlyer.
 
 **Gestionar conexiones de Google Anuncios**

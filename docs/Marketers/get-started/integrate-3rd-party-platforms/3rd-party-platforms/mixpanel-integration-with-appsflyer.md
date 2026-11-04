@@ -47,7 +47,7 @@ La integración entre AppsFlyer y Mixpanel te permite importar la información d
 
 **Para activar o editar la integración:**
 
-1. **Para activarla:** En AppsFlyer, en el menú lateral, selecciona**Colaborar**> **Partner Marketplace**.  
+1. **Para activarla:** En AppsFlyer, en el menú lateral, selecciona**Colaborar** > **Partner Marketplace**.  
    **Para editarla**: En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones activas**.
 2. Selecciona la aplicación correspondiente.
 3. Busca al partner (`rokuads_int`) y selecciónalo.

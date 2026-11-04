@@ -46,7 +46,7 @@ La plataforma cuenta con la confianza de más de 40.000 desarrolladores de juego
 
 **Para activar o editar la integración:**
 
-1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Partner Marketplace**.  
    **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
 2. Selecciona la aplicación correspondiente.
 3. Haz clic en **Configurar integración**.

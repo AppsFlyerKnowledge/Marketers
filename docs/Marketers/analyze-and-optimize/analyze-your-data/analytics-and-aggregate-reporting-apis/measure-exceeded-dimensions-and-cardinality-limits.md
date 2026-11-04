@@ -194,7 +194,8 @@ El ID del sitio (por clics, impresiones, instalaciones y eventos in-app) tiene 2
 > 👍 **Consejo**
 >
 > «Divide y vencerás». En lugar de usar miles de ID de sitios por fuente multimedia, lo que distorsiona los datos agregados, usa un segundo parámetro en los enlaces de atribución llamado **af\_sub\_siteid.** Define un número reducido de ID de sitios generales (idealmente hasta 50) y asigna todos los ID de sitios anteriores como ID de subsitios en estos ID de sitios generales. Esto te permite:
-> 1. Prevenir ver **Exceeded\_SITEID\_LIMIT**2. Optimizar de manera eficiente de acuerdo con el tráfico significativo de ID del sitio
+> 1. Prevenir ver **Exceeded\_SITEID\_LIMIT**
+> 2. Optimizar de manera eficiente de acuerdo con el tráfico significativo de ID del sitio
 > 3. Realizar un análisis profundo basado en los ID del sitio y los ID de los subsitios en los raw data.
 
 <div id="note" />

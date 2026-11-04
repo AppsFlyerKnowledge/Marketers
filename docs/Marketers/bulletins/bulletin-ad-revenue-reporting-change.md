@@ -25,7 +25,7 @@ x-zendesk:
 ---
 * **Qué cambia**: La fecha de los datos de ingresos por anuncios (a nivel de usuario y a nivel agregado) en la plataforma pasa a ser el mismo día del evento de visualización del anuncio (el día en que se producen los ingresos por anuncios), en lugar del día siguiente. Esto significa que, si un anuncio se muestra el lunes, los ingresos se muestran el lunes. Esto ofrece a los anunciantes una visión más precisa y útil de sus datos de ingresos publicitarios.
 * **A quién afecta**: propietarios de aplicaciones, agencias
-* **Dónde cambia**: Básicamente, la alineación de los datos con el día del evento de visualización del anuncio está activa en todos los reportes y las API, para todo tipo de integraciones de red. Consulta la siguiente tabla para ver dónde y cuándo entró en vigor la alineación.
+* **Dónde cambia**: Básicamente, la alineación de los datos con el día del evento de visualización del anuncio está activa en todos los reportes y las API, para todo tipo de integraciones de red. Consulta la siguiente tabla para ver dónde y cuándo entró en vigor la alineación.
 
 <div id="ad-revenue-reporting-change" />
 

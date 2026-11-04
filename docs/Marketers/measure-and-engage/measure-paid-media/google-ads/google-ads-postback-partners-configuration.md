@@ -45,7 +45,7 @@ Otros GAPP integrados con AppsFlyer: Blackbox, Appreciate, Marin Software, Miram
 
 ## Configuración del partner de postback de Google Ads
 
-1. En AppsFlyer, en el menú lateral, selecciona**Colaborar**>**Integraciones activas** .
+1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones activas** .
 
 2. Escribe el nombre del GAPP con el que te gustaría trabajar en el cuadro de búsqueda y selecciónalo de la lista desplegable.
 

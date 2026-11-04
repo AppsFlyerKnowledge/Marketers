@@ -45,7 +45,7 @@ De forma predeterminada, Leanplum recopila el IDFV para iOS y el hash MD5 de la 
 
 **Configurar la integración de ASA**
 
-1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Partner Marketplace**.  
+1. **Para activarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Partner Marketplace**.  
    **Para editarla:** en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas**.
 2. Selecciona la aplicación correspondiente.
 3. Haz clic en **Configurar integración**.

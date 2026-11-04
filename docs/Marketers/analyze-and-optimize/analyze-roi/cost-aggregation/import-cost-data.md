@@ -88,7 +88,7 @@ Los anunciantes, las ad networks y agencias pueden preparar el archivo CSV de Co
 | Caracteres prohibidos | Los campos en formato de cadena no pueden tener `=`, `+`, `-` o `@` como primer carácter. Por ejemplo, `@example_campign` o `=123` están prohibidos. |
 | Propietario de la aplicación | Se permite un anunciante (propietario de la aplicación) por archivo. Se permiten múltiples aplicaciones de la misma cuenta de anunciante. |
 | Extensión del nombre de archivo | Ejemplo CSV: abc123.csv |
-| Estructura de archivos | <ul><li>**Formato**: Los archivos tienen un formato CSV, lo que significa que cada columna está separada por una coma.</li><li>**Fila de encabezado**: La primera fila es una fila de encabezado que coincide con el esquema.</li><li>**Filas de datos**: Contiene las columnas obligatorias. **Nota**: Asegúrate de que no haya espacios en blanco al final de los datos. Por ejemplo, [USD] (con un espacio en blanco después de la **D**) debe cambiarse a [USD].</li><li>**Filas en blanco**: No permitido</li><li>**Filas duplicadas** que tienen la misma clave: No está permitido. La clave se deriva del uso de los campos obligatorios.</li><li>**Celdas en blanco:** No se permiten valores vacíos en el archivo. Si no quieres subir ciertos campos, no deben estar en el archivo.</li></ul> |
+| Estructura de archivos | <ul><li>**Formato**: Los archivos tienen un formato CSV, lo que significa que cada columna está separada por una coma.</li><li>**Fila de encabezado**: La primera fila es una fila de encabezado que coincide con el esquema.</li><li>**Filas de datos**: Contiene las columnas obligatorias. **Nota**: Asegúrate de que no haya espacios en blanco al final de los datos. Por ejemplo, [USD] (con un espacio en blanco después de la **D**) debe cambiarse a [USD].</li><li>**Filas en blanco**: No permitido</li><li>**Filas duplicadas** que tienen la misma clave: No está permitido. La clave se deriva del uso de los campos obligatorios.</li><li>**Celdas en blanco:** <mark>No se permiten valores vacíos en el archivo.</mark> Si no quieres subir ciertos campos, no deben estar en el archivo.</li></ul> |
 | Jerarquía publicitaria | El costo debe registrarse a nivel de campaña, siendo opcionales otras dimensiones en la jerarquía publicitaria.<br /><br />Cualquier dato parcial que se suba en una jerarquía inferior anulará todos los datos del nivel de campaña hacia abajo.<br /><br />**Por ejemplo:** Si importas un archivo con el costo de la campaña para el adset 1 e importas por separado otro archivo para el adset 2 de la misma campaña, se reemplazará el costo total de la campaña y solo se mostrarán los datos del adset 2. Para el costo total de la campaña, el archivo que importes debe incluir el adset 1 y el adset 2. |
 
 </Accordion>
@@ -99,12 +99,14 @@ Los anunciantes, las ad networks y agencias pueden preparar el archivo CSV de Co
 
 Los anunciantes y las ad networks pueden cargar archivos CSV de Cost Import.
 
-Para el Reino Unido, utiliza UK, no GB.  
+Para el Reino Unido, utiliza UK, no GB.
 
 **Para cargar el archivo CSV a través de la interfaz de usuario de AppsFlyer**:
 
-1. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Cost Import.** Aparece la página de Cost Import. Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
-2. Haz clic en **+ Importar archivo de costos**Se abre la ventana de importación de costos.
+1. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Cost Import.**  
+   Aparece la página de Cost Import. Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
+2. Haz clic en **+ Importar archivo de costos**  
+   Se abre la ventana de importación de costos.
 3. Arrastra el archivo CSV a la ventana de **Importación de costos**.  
    Se muestra el mensaje procesando archivo.
 4. Si aparece un mensaje de error durante el upload, corrígelo y repite los pasos correspondientes.

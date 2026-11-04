@@ -664,7 +664,8 @@ Cuando los usuarios con dispositivos iOS 14.5+ dan su consentimiento de ATT tant
 #### eCPC
 
 **Costo efectivo por clic**  
- Indica cuál habría sido el CPC si un profesional del marketing hubiera comprado clics en lugar de impresiones o conversiones. Consulta [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc) *Fórmula:* Gasto total / Cantidad de clics = eCPC (según lo analizado por AppsFlyer)
+ Indica cuál habría sido el CPC si un profesional del marketing hubiera comprado clics en lugar de impresiones o conversiones. Consulta [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc)  
+*Fórmula:* Gasto total / Cantidad de clics = eCPC (según lo analizado por AppsFlyer)
 
 <div id="ecpi" />
 
@@ -753,7 +754,8 @@ El fraude publicitario intenta generar ilegalmente ingresos de atribución al de
 
 #### GCD
 
-**Obtener datos de conversión**Nombre general de los métodos del SDK que, tras la instalación, obtienen datos de atribución en el SDK.
+**Obtener datos de conversión**  
+Nombre general de los métodos del SDK que, tras la instalación, obtienen datos de atribución en el SDK.
 
 <div id="geo" />
 

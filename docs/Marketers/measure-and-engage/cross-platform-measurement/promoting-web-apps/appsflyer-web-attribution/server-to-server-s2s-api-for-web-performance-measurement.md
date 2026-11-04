@@ -296,15 +296,18 @@ Todos los campos de datos personales deben estar hashed con SHA256 antes de envi
 
 El SDK web y Segment son dos rutas independientes y paralelas hacia AppsFlyer, no una alimenta a la otra: el SDK web sigue enviando visitas, que incluyen los parámetros de atribución, y Segment envía eventos para las propiedades que no tienen el SDK. Ninguna de las dos rutas conoce la otra; AppsFlyer es donde se unen, vinculando una visita con sus eventos mediante el identificador que envías en ambas.
 
-SDK web: envía visitas
-
-Segment: envía eventos
-
-API S2S
-
-Unidos por `appsflyer_id` or `customer_user_id`
-
-AppsFlyer: visita + evento, unidos
+```mermaid
+flowchart LR
+  sdk["SDK web: envía visitas"] --> join["Unidos por appsflyer_id or customer_user_id"]
+  seg["Segment: envía eventos"] --> s2s["API S2S"] --> join
+  join --> af["AppsFlyer: visita + evento, unidos"]
+  classDef src fill:#e8f1fb,stroke:#7ea6d8,color:#1f3b5c
+  classDef mid fill:#ececec,stroke:#c8c8c8,color:#333333
+  classDef dst fill:#d6f5dd,stroke:#5cb874,color:#14532d
+  class sdk,seg,s2s src
+  class join mid
+  class af dst
+```
 
 El SDK web y Segment son dos rutas paralelas hacia AppsFlyer, unidas por un identificador compartido.
 

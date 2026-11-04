@@ -75,7 +75,8 @@ Una vez confirmado que una aplicación es para niños, hay dos formas de ver la 
 * **Registro de auditoría:**
   1. Desde la barra del menú, accede al menú de usuario (desplegable de correo electrónico).
   2. Selecciona **Centro de seguridad**.
-  3. En la sección**Registro de auditoría** , haz clic en **Ver registro de auditoría.**.Puedes ver los detalles de confirmación en el servicio **Mis aplicaciones**.
+  3. En la sección**Registro de auditoría** , haz clic en **Ver registro de auditoría.**  
+     .Puedes ver los detalles de confirmación en el servicio **Mis aplicaciones**.
 
 </Accordion>
 

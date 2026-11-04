@@ -32,6 +32,7 @@ El ID de paquete de Apple es un identificador único asociado con las aplicacion
 
 1. Inicia sesión en tu cuenta de [iTunes Connect](https://itunesconnect.apple.com/).
 2. Haz clic en la aplicación correspondiente.
-3. Ve a **General** > **App Information (Información de la aplicación).** Se muestra el **Bundle ID (ID de paquete)**.  
+3. Ve a **General** > **App Information (Información de la aplicación).**  
+   Se muestra el **Bundle ID (ID de paquete)**.  
 
    ![iTunes-connect-app-information-en-us.png](https://files.readme.io/236967e7c254e40c3a76565a6da8cc5599e86be1c16e568c7c5b31072b570bd2-360011702958.png)

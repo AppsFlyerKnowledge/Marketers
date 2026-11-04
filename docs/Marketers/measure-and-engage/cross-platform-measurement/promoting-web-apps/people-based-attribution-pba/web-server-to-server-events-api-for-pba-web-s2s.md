@@ -129,7 +129,7 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 Los parámetros de carga útil se dividen en identificadores de usuario y parámetros de evento.
 
-* ID de usuario: debes enviar al menos un parámetro de ID de usuario.
+* ID de usuario: <mark>debes enviar al menos un parámetro de ID de usuario.</mark>
 * Evento: envía los parámetros obligatorios y los parámetros opcionales según sea necesario.
 
 <div id="user-identifier-parameters-send-at-least-one-parameter" />
@@ -153,7 +153,7 @@ Los parámetros de carga útil se dividen en identificadores de usuario y parám
 | <span id="timestamp"></span>timestamp | No | Hora en que se produjo el evento en milisegundos. Se envía como una <Anchor target="_blank" href="https://www.unixtimestamp.com/">marca de tiempo Unix</Anchor> de 13 dígitos.<ul><li>Si no se envía ninguna marca de tiempo, la hora se establece utilizando la hora del servidor.</li><li>**Los eventos que llegan con retraso se registran con la hora actual del servidor.** Por "retraso" se entiende la llegada después de la medianoche UTC del día siguiente al evento. Por ejemplo, un evento que se produzca el lunes **debe** procesarse antes de la medianoche UTC del martes.</li><li>Los eventos que tienen una marca de tiempo en el futuro (relativa a la hora actual del servidor) se marcan con la hora del servidor.</li><li>Formato: Int</li><li>Ejemplo: `"timestamp" : 1584835200123`</li><li>Rellena el campo de raw data: `event_time`</li></ul> |
 | <span id="eventvalue"></span>valor del evento | No | Asignación de parámetros del evento que describen el evento. Utiliza este parámetro para enviar eventos in-app enriquecidos, como el SKU del producto y el precio del artículo.<ul><li>**¡Nota sobre los ingresos!** **Nota sobre los ingresos:** Puedes rellenar este parámetro con los detalles de los ingresos. Además, debes rellenar *eventRevenue* y *eventRevenueCurrency.*</li></ul><ul><li>Formato: JSON</li><li>Ejemplo: Para enviar el SKU ABC123, de color azul y con un precio unitario de $3,99, configura eventValue como:<br />`{"Purchase": {"sku" : "ABC123", "color": "blue", "unit_price":3.99,"currency": "USD"}}`</li><li>Limitación: 1000 caracteres. Si excedes el límite, se truncará.</li><li>Rellena el campo de raw data: `event_value`</li></ul> |
 | <span id="eventrevenuecurrency"></span>eventRevenueCurrency | No | Código de moneda de un evento de ingresos, como código de moneda <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> de tres caracteres.<ul><li>Valor predeterminado: USD</li><li>Formato: cadena</li><li>Ejemplo:  `"eventRevenueCurrency" : "EUR"`</li><li>Rellena el campo de raw data: `event_revenue_currency`</li></ul> |
-| <span id="eventrevenue"></span>eventRevenue | No | Ingresos (valor monetario) asignados a un evento.<br /><br />**¡Atención!** Nota: **Si los ingresos se reportan en *eventValue,* indícalo también en *eventRevenue* y rellena eventRevenueCurrency.**<ul><li>Se admiten valores negativos. Por ejemplo, un reembolso.</li><li>Formato: flotante</li><li>Valores de ejemplo: `1``1.2``1234.20``-1234.20`</li><li>Rellena el campo de raw data: `event_revenue`</li></ul> |
+| <span id="eventrevenue"></span>eventRevenue | No | Ingresos (valor monetario) asignados a un evento.<br /><br />**¡Atención!** Nota: **Si los ingresos se reportan en *eventValue,* indícalo también en *eventRevenue* y rellena eventRevenueCurrency.**<ul><li>Se admiten valores negativos. Por ejemplo, un reembolso.</li><li>Formato: flotante</li><li>Valores de ejemplo: `1` `1.2` `1234.20` `-1234.20`</li><li>Rellena el campo de raw data: `event_revenue`</li></ul> |
 | <span id="eventcategory"></span>eventCategory | No | Este parámetro está obsoleto y se eliminará del sistema en el futuro. Utiliza eventValue en su lugar. |
 | <span id="eventlabel"></span>eventLabel | No | Este parámetro está obsoleto y se eliminará del sistema en el futuro. Utiliza eventValue en su lugar. |
 | <span id="referrer"></span>referrer | No | Referente HTTP<ul><li>Formato: cadena</li><li>Ejemplo:`"referrer" : "https://www.google.com/"`</li><li>Rellena el campo de raw data: `http_referrer`</li></ul> |
@@ -290,7 +290,8 @@ A modo de prueba, envía varios eventos como se indica a continuación:
 **Para obtener el afUserId del navegador del visitante:**
 
 1. En tu navegador, ve a tu sitio web.
-2. Haz clic con el botón derecho del ratón y selecciona ***Inspeccionar***Se abre la ventana de inspección de elementos del navegador.
+2. Haz clic con el botón derecho del ratón y selecciona ***Inspeccionar***  
+   Se abre la ventana de inspección de elementos del navegador.
 
    [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
 3. Ve a la pestaña (A) ***Aplicación***.
