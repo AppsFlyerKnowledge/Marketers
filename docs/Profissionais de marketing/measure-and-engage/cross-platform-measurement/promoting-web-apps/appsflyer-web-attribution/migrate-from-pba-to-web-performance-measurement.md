@@ -184,7 +184,7 @@ Se você já consome os relatórios de dados brutos de visitas ao site e eventos
 | `id_da_campanha` | Atribuído à visita ao site | Inalterado | `campaign_id`. |
 | `cidade` | Resolvido usando o endereço IP | Inalterado | `city`. |
 | `código_país` | Resolvido usando o endereço IP | Inalterado | `country_code`. |
-| `customer_user_  <br />id` | Identificador de Usuário do Cliente (CUID) | Inalterado | `customer_user_id`. |
+| `customer_user_`<br />`id` | Identificador de Usuário do Cliente (CUID) | Inalterado | `customer_user_id`. |
 | `device_type` | O tipo de dispositivo | Renomeado | `device_category`, os valores diferem ("Desktop" vs. "MOBILE\_PHONE" / "TV"). |
 | `dma` | Resolvido usando o endereço IP | Inalterado | `dma`. |
 | `nome_do_evento` | Visitas: sempre "website visit". Eventos: nome do evento enviado | Redefinido | Vazio nas visitas (o PBA registrava "website visit"). Inalterado para eventos. |

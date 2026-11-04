@@ -74,7 +74,7 @@ O Movable Ink é um parceiro de otimização de conteúdo dinâmico que oferece 
 | `{{onelink.domain}}` | Seu domínio da AppsFlyer | mink.onelink.com |  | Interface do usuário da AppsFlyer |
 | `{{template_id}}` | ID do modelo de link configurado na AppsFlyer | 1a6f |  | Interface do usuário da AppsFlyer |
 | `{{pid_value}}` | ID do ESP / canal de mídia | Nome do ESP |  | Interface do usuário da AppsFlyer |
-| `{{mi_link_from_creative<br /><br />_tag}}` | O link clickthrough HREF da tag criativa da Movable Ink. Disponível na página Finish & Export (consulte a imagem na etapa 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | O link deve ser codificado. | Movable Ink |
+| `{{mi_link_from_creative`<br /><br />`_tag}}` | O link clickthrough HREF da tag criativa da Movable Ink. Disponível na página Finish & Export (consulte a imagem na etapa 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | O link deve ser codificado. | Movable Ink |
 
    <div id="note" />
 
