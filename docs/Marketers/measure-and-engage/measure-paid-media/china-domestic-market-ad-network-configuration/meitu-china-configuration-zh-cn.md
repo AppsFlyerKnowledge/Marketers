@@ -28,7 +28,7 @@ x-zendesk:
 
 <div id="请注意-完成美图广告平台的正常归因请务必保证应用收集idfaoaid了解更多信息请查看安卓ios对应的sdk整合指南" />
 
-### 请注意: 完成美图广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看<Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">安卓</Anchor>/<Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">iOS</Anchor>对应的SDK整合指南。
+### 请注意: 完成美图广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看<Anchor target="_blank" href="/marketers/docs/sdk-integration-overview"><u>安卓</u></Anchor>/<Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide"><u>iOS</u></Anchor>对应的SDK整合指南。
 
 <div id="步骤" />
 

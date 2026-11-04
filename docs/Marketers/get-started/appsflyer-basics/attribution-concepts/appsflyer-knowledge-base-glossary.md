@@ -593,7 +593,8 @@ Indicates what the CPA would have been if a marketer paid for designated user ac
 
 #### eCPC
 **Effective Cost per Click**  
-Indicates what the CPC would have been if a marketer had purchased clicks instead of impressions or conversions. See [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc) *Formula:* Total spend / Number of clicks = eCPC (as analyzed by AppsFlyer)
+Indicates what the CPC would have been if a marketer had purchased clicks instead of impressions or conversions. See [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc)  
+*Formula:* Total spend / Number of clicks = eCPC (as analyzed by AppsFlyer)
 
 <div id="ecpi" />
 
@@ -671,7 +672,8 @@ Unique, user-resettable identifier for Google Play Android users. It is used by 
 <div id="gcd" />
 
 #### GCD
-**Get Conversion Data**General name for SDK methods that, upon install, fetch attribution data into the SDK.
+**Get Conversion Data**  
+General name for SDK methods that, upon install, fetch attribution data into the SDK.
 
 <div id="geo" />
 
@@ -1093,7 +1095,8 @@ Metric that measures campaign performance by calculating the revenue generated p
 <div id="roi" />
 
 #### ROI
-**Return on Investment**Metric available in the AppsFlyer Overview dashboard and aggregate reports.  
+**Return on Investment**  
+Metric available in the AppsFlyer Overview dashboard and aggregate reports.  
 *Formula:* (Revenue-cost) / Cost * 100 <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports">[Article]</Anchor>
 
 </Accordion>

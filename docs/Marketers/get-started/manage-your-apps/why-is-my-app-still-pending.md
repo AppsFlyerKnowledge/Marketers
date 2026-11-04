@@ -52,7 +52,8 @@ For the status of the app to change to active, AppsFlyer checks its status in th
 **To manually update the app status:**
 
 1. From the top menu bar, click **My Apps**.
-2. Next to the pending app, click **Refresh Status.** If the status of the app is unchanged, the app is still displayed as Pending. If it has been updated, the status is shown as Live, and the logo is updated.  
+2. Next to the pending app, click **Refresh Status.**  
+   If the status of the app is unchanged, the app is still displayed as Pending. If it has been updated, the status is shown as Live, and the logo is updated.  
 
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
 
@@ -70,7 +71,7 @@ When you <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflye
 
 To change the Apple Store country:
 
-1. In AppsFlyer, from the side menu, select**Settings**> **App Settings.**
+1. In AppsFlyer, from the side menu, select **Settings** > **App Settings.**
 2. Under **App Store Country** choose the correct country
 3. Scroll down and click **Save Settings**
 4. If the app still appears as pending, [click **Refresh Status**](/docs/why-is-my-app-still-pending#refreshing-the-app-status).
@@ -83,7 +84,7 @@ When you <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflye
 
 To change the Google Play country:
 
-1. In AppsFlyer, from the side menu, select**Settings**> **App Settings.**
+1. In AppsFlyer, from the side menu, select **Settings** > **App Settings.**
 2. Under **App Store Country** choose the correct country
 3. Scroll down and click **Save Settings**
 4. If the app still appears as pending, [click **Refresh Status**](/docs/why-is-my-app-still-pending#refreshing-the-app-status).

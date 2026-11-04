@@ -187,7 +187,8 @@ You can use one or more buckets for uploading data to the DCR (on Amazon S3, GCS
 4. <span id="step-4"></span>Grant AppsFlyer bucket permissions:
    1. Select the bucket you created.
    2. Go to the **Permissions** tab.
-   3. In the **Bucket policy** section, click **Edit.** The **Edit bucket policy** window opens.
+   3. In the **Bucket policy** section, click **Edit.**  
+      The **Edit bucket policy** window opens.
    4. <span id="code-snippet"></span>Paste the following code snippet into the window.
 
       ```json
@@ -368,7 +369,8 @@ Modifying an existing bucket that you used previously only for Data Locker requi
 2. Go to the S3 service.
 3. Select the bucket used previously only for Data Locker.
 4. Go to the **Permissions** tab.
-5. In the **Bucket policy** section, click **Edit.** The **Edit bucket policy** window opens.
+5. In the **Bucket policy** section, click **Edit.**  
+   The **Edit bucket policy** window opens.
 6. **Replace the contents** of the window with following code snippet:
 
    ```json

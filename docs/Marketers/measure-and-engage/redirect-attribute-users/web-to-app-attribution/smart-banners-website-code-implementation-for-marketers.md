@@ -147,7 +147,8 @@ To add the code to your website via other platforms, or to make changes to the c
 4. Under the **Submitted** section:
    1. Click the action menu and select **Build for Staging**.
    2. Click the action menu again and select **Approve for Publishing**.
-5. Under the **Approved** section click the action menu and select **Build & Publish to Production.** The process is now complete.
+5. Under the **Approved** section click the action menu and select **Build & Publish to Production.**  
+   The process is now complete.
 
 </Accordion>
 

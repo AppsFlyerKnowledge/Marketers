@@ -99,7 +99,7 @@ Measurable actions can be reported by [server-to-server (S2S)](/docs/skan-conver
 
 * SKAN 4 and Custom: S2S is always on.
 * Decode: S2S isn't suited to decode mode and isn't available. AppsFlyer doesn't set the CV in this mode.
-* [Legacy] Revenue, conversion, and engagement modes: You must turn on [S2S event recording](/docs/skan-conversion-studio#report-events-by-servertoserver-api) before sending events.
+* [Legacy] Revenue, conversion, and engagement modes: <mark>You must turn on</mark> [<mark>S2S event recording</mark>](/docs/skan-conversion-studio#report-events-by-servertoserver-api) before sending events.
 
 </Accordion>
 
@@ -254,7 +254,7 @@ As you make changes to the mode settings, the **Conversion-value capacity** summ
 
 | Measurement mode | Description |
 | --- | --- |
-| Revenue | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Revenue generated during the 24-hour activity window.**<br /><br />Select a unit-to-USD rate from one of the following:<ul><li>$0.01 to measure up to $0.63</li><li>$1 to measure up to $63</li><li>$10 to measure up to $630</li></ul>AppsFlyer automatically populates 63 revenue measurement ranges. Ensure that the event name `af_skad_revenue` is correctly mapped for partners. In the dashboard, revenue is recorded as the maximum of the range. For example, if the range is $60-$61, the revenue recorded is $61. Note! Custom revenue uses a different method to calculate revenue.<br /><br />**Metrics available:**<ul><li>Revenue<ul><li>ROI</li><li>ROAS</li><li>ARPU: Revenue/users installing the app</li><li>Rate of users converting: Users making a purchase/users installing the app</li><li>eCPA</li></ul></li></ul> |
+| Revenue | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Revenue generated during the 24-hour activity window.**<br /><br />Select a unit-to-USD rate from one of the following:<ul><li>$0.01 to measure up to $0.63</li><li>$1 to measure up to $63</li><li>$10 to measure up to $630</li></ul>AppsFlyer automatically populates 63 revenue measurement ranges. Ensure that the event name `af_skad_revenue` is correctly mapped for partners. In the dashboard, <mark>revenue is recorded as the maximum of the range.</mark> For example, if the range is $60-$61, the revenue recorded is $61. Note! Custom revenue uses a different method to calculate revenue.<br /><br />**Metrics available:**<ul><li>Revenue<ul><li>ROI</li><li>ROAS</li><li>ARPU: Revenue/users installing the app</li><li>Rate of users converting: Users making a purchase/users installing the app</li><li>eCPA</li></ul></li></ul> |
 | Conversion | ![mceclip0.png](https://files.readme.io/29535e45638cb2b1eecdf43e4fbee0fa52665c90aefe064caaaac9d0fc98472f-4406052008593.png)<br /><br />**In-app events performed one or more times during the 24-hour activity window**<br /><br />**Settings**:<ul><li>Select 1-6 in-app events to measure from the drop-down list. Limitation: The list is limited to the top 300 events during the previous 30 days.</li><li>In the SKAdNetwork dashboard, select a given event as the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings">conversion event</Anchor>.</li></ul>**Metrics per in-app event:**<ul><li>Count of users performing an event<ul><li>Conversion rate: Users performing the Conversion Event/users installing the app</li><li>eCPA</li><li>Sessions (uses the *af\_app\_opened* event)</li></ul></li></ul>Example of user counts:<ul><li>Completed registration</li><li>Made a purchase</li><li>Reached a game level</li></ul>**Clarification!** Use conversion measurement to count **if** a user performed an event. To count how many times a user performs an event use engagement measurement. |
 | Engagement | ![mceclip1.png](https://files.readme.io/51b38d6693e843f04fe7ce02706ae2959d88a047606b41cccad6ed09a46eea39-4406058637841.png)<br /><br />**Number of times the user performed a specified in-app event during the Activity Window**<br /><br />**Settings:**<ul><li>Select an in-app event from the drop-down list.</li><li>The in-app selection is also designated as the Conversion Event.</li><li>Value range: 0-63</li></ul>**Metrics for the in-app event**:<ul><li>Count of users performing the event<ul><li>Average number of events per user</li><li>Conversion rate</li><li>eCPA</li><li>Sessions</li></ul></li></ul>Examples:<ul><li>Measure the number of times:<ul><li>a user opened the app</li><li>the user viewed an ad</li></ul></li></ul> |
 
@@ -791,7 +791,7 @@ The S2S flow is as follows:
    * If your selected mode is revenue, conversion, or engagement:
      1. In AppsFlyer, go to **Settings** > **SKAN Conversion Studio.**
      2. Click options (⋮).
-     3. Turn on **Record in-app events sent by server-to-server API**.
+     3. Turn on <mark>**Record in-app events sent by server-to-server API**</mark>.
 2. Send events by S2S.
 
 **Limitation**

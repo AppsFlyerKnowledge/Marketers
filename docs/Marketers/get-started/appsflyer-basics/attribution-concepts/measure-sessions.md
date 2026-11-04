@@ -101,7 +101,7 @@ Assumption: The minimum allowed time between sessions setting is 10 minutes and 
 
 **To set the minimum allowed time between sessions timer:**
 
-1. In AppsFlyer, from the side menu, select **Settings**> **App settings**.
+1. In AppsFlyer, from the side menu, select **Settings** > **App settings**.
 2. Set **Minimum time between sessions.**
 3. Click **Save settings.**   
    The change takes effect within an hour.

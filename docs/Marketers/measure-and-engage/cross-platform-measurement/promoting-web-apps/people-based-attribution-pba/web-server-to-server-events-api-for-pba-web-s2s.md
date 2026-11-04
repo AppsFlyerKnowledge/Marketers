@@ -130,7 +130,7 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 Payload parameters are divided into user identifiers and event parameters.
 
-* User ID: You must send at least one user ID parameter.
+* User ID: <mark>You must send at least one user ID parameter.</mark>
 * Event: Send the mandatory parameters and optional parameters as needed.
 
 <div id="user-identifier-parameters-send-at-least-one-parameter" />
@@ -154,9 +154,9 @@ Payload parameters are divided into user identifiers and event parameters.
 | <span id="timestamp"></span>timestamp | No | Time the event occurred in milliseconds. Send as a <Anchor target="_blank" href="https://www.unixtimestamp.com/">Unix timestamp</Anchor> having 13 digits.<ul><li>If no timestamp is sent, the time is set using the server time.</li><li>**Events arriving late are timestamped using the current server time.** Late means arrival after midnight UTC on the day following the event. For example, an event occurring on Monday **must** be processed before midnight UTC Tuesday.</li><li>Events having a timestamp in the future (relative to the current server time) are timestamped with the server time.</li><li>Format: Int</li><li>Example: `"timestamp" : 1584835200123`</li><li>Populates raw data field: `event_time`</li></ul> |
 | <span id="eventvalue"></span>eventValue | No | Map of event parameters describing the event. Use this parameter to send rich in-app events like product SKU, line item price.<ul><li>**Note about revenue!** You can populate this parameter with revenue details. In addition, you must populate *eventRevenue,* and *eventRevenueCurrency.*</li></ul><ul><li>Format: JSON</li><li>Example: To send SKU ABC123, having a blue color and a unit price of $3.99 set eventValue to:<br />`{"Purchase": {"sku" : "ABC123", "color": "blue", "unit_price":3.99,"currency": "USD"}}`</li><li>Limitation: 1000 characters. Do not exceed this; it will be truncated.</li><li>Populates raw data field: `event_value`</li></ul> |
 | <span id="eventrevenuecurrency"></span>eventRevenueCurrency | No | Currency code of a revenue event, being a three-character <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> currency code.<ul><li>Default: USD</li><li>Format: String</li><li>Example:  `"eventRevenueCurrency" : "EUR"`</li><li>Populates raw data field: `event_revenue_currency`</li></ul> |
-| <span id="eventrevenue"></span>eventRevenue | No | Revenue (monetary value) assigned to an event.<br /><br />**Note!** If revenue is reported in *eventValue,* report it also in *eventRevenue* and populate eventRevenueCurrency.<ul><li>Negative values permitted. For example, a refund.</li><li>Format: Float</li><li>Example values: `1``1.2``1234.20``-1234.20`</li><li>Populates raw data field: `event_revenue`</li></ul> |
-| <span id="eventcategory"></span>eventCategory | No | This parameter is deprecated and will be removed from the system at a future date. Use eventValue instead. |
-| <span id="eventlabel"></span>eventLabel | No | This parameter is deprecated and will be removed from the system at a future date. Use eventValue instead. |
+| <span id="eventrevenue"></span>eventRevenue | No | Revenue (monetary value) assigned to an event.<br /><br />**Note!** If revenue is reported in *eventValue,* report it also in *eventRevenue* and populate eventRevenueCurrency.<ul><li>Negative values permitted. For example, a refund.</li><li>Format: Float</li><li>Example values: `1` `1.2` `1234.20` `-1234.20`</li><li>Populates raw data field: `event_revenue`</li></ul> |
+| <span id="eventcategory"></span>~~eventCategory~~ | No | This parameter is deprecated and will be removed from the system at a future date. Use eventValue instead. |
+| <span id="eventlabel"></span>~~eventLabel~~ | No | This parameter is deprecated and will be removed from the system at a future date. Use eventValue instead. |
 | <span id="referrer"></span>referrer | No | HTTP referrer<ul><li>Format: String</li><li>Example:`"referrer" : "https://www.google.com/"`</li><li>Populates raw data field: `http_referrer`</li></ul> |
 | <span id="useragent"></span>userAgent | No | <Anchor target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent">User-agent request</Anchor> sent by the browser to the server.<ul><li>Where possible send this value as it assists in determining the device type.</li><li>Format: String</li><li>Example: `"userAgent" : "Chrome/80.0.3987"`</li><li>Populates raw data field: `user_agent`</li></ul> |
 | <span id="ip"></span>ip | No | User IP address<ul><li>Where possible send the value of this field. It assists in determining the <Anchor target="_blank" href="/marketers/docs/determine-user-location">geo-location</Anchor> of the user.</li></ul><ul><li>Format: String</li><li>Example: `"ip": "192.0.2.1"`</li><li>Populates raw data field: `ip`</li></ul> |
@@ -291,7 +291,8 @@ For testing purposes, send several events as follows:
 **To get the afUserId from the visitor's browser:**
 
 1. In your browser, go to your website.
-2. Right-click, select ***Inspect***The browser's inspect element window opens.
+2. Right-click, select ***Inspect***  
+   The browser's inspect element window opens.
 
    [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
 3. Go to the (A) ***Application*** tab.

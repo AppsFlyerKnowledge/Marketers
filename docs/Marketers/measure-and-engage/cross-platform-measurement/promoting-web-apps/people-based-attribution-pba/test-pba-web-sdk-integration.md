@@ -66,7 +66,8 @@ If test mode is enabled on a given browser, irrespective of the tab; the browser
 
 1. **Verify that the SDK is loaded:**
    1. In AppsFlyer, from the top menu, select **My Apps** > **View brand** **bundles**.
-   2. Select the required **Web SDK integration test.** The integration page opens. The web dev key is displayed.  
+   2. Select the required **Web SDK integration test.**  
+      The integration page opens. The web dev key is displayed.  
 
       [![pba_web_sdk_integration_test_web_dev_key_en-us.png](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)
    3. In a new browser tab, go to your website (that has the Web SDK installed).

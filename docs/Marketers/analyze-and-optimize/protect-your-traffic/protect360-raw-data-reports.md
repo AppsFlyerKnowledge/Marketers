@@ -151,7 +151,8 @@ Raw data reports are available by download, Pull API, and Data Locker (S3 bucket
 
 You need a Pull API token. Get the token from an <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">admin user</Anchor>.
 
-1. Go to **Report > API Access.** The <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data">Pull API</Anchor> page opens.
+1. Go to **Report > API Access.**  
+   The <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data">Pull API</Anchor> page opens.
 2. In the Protect360 fraud reports section, select the necessary Pull API call.
 3. Populate the parameters as required. The table that follows lists the parameters.
 4. Pull the report.

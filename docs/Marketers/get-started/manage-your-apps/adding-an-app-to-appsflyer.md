@@ -413,7 +413,7 @@ Each legacy **Web Dev Key can be reused for only one** new Web app.
 **App name:** The name you have chosen for your app.
 
 **App ID:** The ID of the app. Found using reverse DNS notation:  `<tld>`.`<company_name>`.`<app_name>`  
-Must contain a minimum of 2 segments. Each segment must start with a letter followed by characters from: `A-Z` `a-z` `0-9.``-`  
+Must contain a minimum of 2 segments. Each segment must start with a letter followed by characters from: `A-Z` `a-z` `0-9.` `-`  
 
 Example: com.company.my\_app
 
@@ -427,7 +427,7 @@ For more information, see the “id” field in the <Anchor target="_blank" href
 
 **App name:** The name you have chosen for your app.
 
-**App ID:** The ID of the app, as recognized by Vizio. Starts with `vizio.`, followed by 2-10 characters from: `A-Z` `a-z` `0-9.``-`. If you need to confirm the app ID, check with your Vizio representative.
+**App ID:** The ID of the app, as recognized by Vizio. Starts with `vizio.`, followed by 2-10 characters from: `A-Z` `a-z` `0-9.` `-`. If you need to confirm the app ID, check with your Vizio representative.
 
 </Accordion>
 

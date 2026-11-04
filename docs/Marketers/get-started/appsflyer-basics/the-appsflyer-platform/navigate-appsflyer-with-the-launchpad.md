@@ -35,7 +35,8 @@ x-zendesk:
 
 1. Enter as follows:
    * PC, click **Ctrl+K.**
-   * Mac, click **Cmd+K.** The search bar displays.
+   * Mac, click **Cmd+K.**  
+     The search bar displays.
 2. Enter a search term.  
    The search results display.   
    Launchpad displays links to pages that you have permission to view.

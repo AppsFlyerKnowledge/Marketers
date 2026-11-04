@@ -331,11 +331,11 @@ Deferred deep linking means you give new users a similar deep linking experience
        >
        > For example, the **deep\_link\_value** of a fruit type was chosen and the developers made the values dynamic. This means you can enter any fruit without the need for further work by your dev team.
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=apples``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=apples...`
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=bananas``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=bananas...`
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=peaches``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=peaches...`
 
 2. After receiving confirmation from the developers that the app behaves according to the selected parameters and values, in the **Deep linking and redirection** section of the link setup page, enter the **Deep link value** according to what you decided with the developers.
 3. [Optional] If your deep linking requires more than one in-app experience (for example, you want to direct users to a product, and separately offer them a discount), you can add an **Additional deep link value** (that uses the parameter deep\_link\_sub1) to the deep linking data payload. You can add further deep link parameters  (deep\_link\_sub2-10) in the **Additional parameters** section.

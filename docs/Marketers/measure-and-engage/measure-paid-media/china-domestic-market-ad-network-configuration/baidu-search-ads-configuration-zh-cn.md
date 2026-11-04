@@ -29,7 +29,7 @@ x-zendesk:
 
 <div id="1完成百度搜索广告平台的正常归因请务必保证应用收集idfaoaid了解更多信息请查看安卓ios对应的sdk整合指南" />
 
-#### 1.完成百度搜索广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看<Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">安卓</Anchor>/<Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">iOS</Anchor>对应的SDK整合指南。
+#### 1.完成百度搜索广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看<Anchor target="_blank" href="/marketers/docs/sdk-integration-overview"><u>安卓</u></Anchor>/<Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide"><u>iOS</u></Anchor>对应的SDK整合指南。
 
 <div id="2在百度搜索使用cpc或者ocpc出价模式都可以按照本篇配置文档来操作如果使用cpc出价方式在百度后台保持ocpc处于第一阶段不将模型自动优化功能生效即可" />
 
@@ -65,7 +65,7 @@ x-zendesk:
 
 形如：
 
-[https://app.appsflyer.com/id554782625?af\_siteid=`{{USER_ID}}&c={{PLAN_ID}}&af_adset={{UNIT_ID}}&af_ad={{IDEA_ID}}&pid=baidusearch_int&af_click_lookback=7d&muid={{IMEI}}&idfa={{IDFA}}&android_id={{ANDROID_ID}}&os={{OS}}&af_ip={{IP}}&af_ua={{UA}}&ts={{TS}}&clickid={{CLICK_ID}}&callback_url={{CALLBACK_URL}}&sign={{SIGN}}&redirect=false&callType=v3&md5_imei={{IMEI_MD5}}&android_id={{ANDROID_ID}}`&af\_lang=%e4%b8%ad%e6%96%87](https://app.appsflyer.com/id554782625?af_siteid=%7B%7BUSER_ID%7D%7D&c=%7B%7BPLAN_ID%7D%7D&af_adset=%7B%7BUNIT_ID%7D%7D&af_ad=%7B%7BIDEA_ID%7D%7D&pid=baidusearch_int&af_click_lookback=7d&muid=%7B%7BIMEI%7D%7D&idfa=%7B%7BIDFA%7D%7D&android_id=%7B%7BANDROID_ID%7D%7D&os=%7B%7BOS%7D%7D&af_ip=%7B%7BIP%7D%7D&af_ua=%7B%7BUA%7D%7D&ts=%7B%7BTS%7D%7D&clickid=%7B%7BCLICK_ID%7D%7D&callback_url=%7B%7BCALLBACK_URL%7D%7D&sign=%7B%7BSIGN%7D%7D&redirect=false&callType=v3&md5_imei=%7B%7BIMEI_MD5%7D%7D&android_id=%7B%7BANDROID_ID%7D%7D&af_lang=%e4%b8%ad%e6%96%87)
+<u>[https://app.appsflyer.com/id554782625?af\_siteid=`{{USER_ID}}&c={{PLAN_ID}}&af_adset={{UNIT_ID}}&af_ad={{IDEA_ID}}&pid=baidusearch_int&af_click_lookback=7d&muid={{IMEI}}&idfa={{IDFA}}&android_id={{ANDROID_ID}}&os={{OS}}&af_ip={{IP}}&af_ua={{UA}}&ts={{TS}}&clickid={{CLICK_ID}}&callback_url={{CALLBACK_URL}}&sign={{SIGN}}&redirect=false&callType=v3&md5_imei={{IMEI_MD5}}&android_id={{ANDROID_ID}}`&af\_lang=%e4%b8%ad%e6%96%87](https://app.appsflyer.com/id554782625?af_siteid=%7B%7BUSER_ID%7D%7D&c=%7B%7BPLAN_ID%7D%7D&af_adset=%7B%7BUNIT_ID%7D%7D&af_ad=%7B%7BIDEA_ID%7D%7D&pid=baidusearch_int&af_click_lookback=7d&muid=%7B%7BIMEI%7D%7D&idfa=%7B%7BIDFA%7D%7D&android_id=%7B%7BANDROID_ID%7D%7D&os=%7B%7BOS%7D%7D&af_ip=%7B%7BIP%7D%7D&af_ua=%7B%7BUA%7D%7D&ts=%7B%7BTS%7D%7D&clickid=%7B%7BCLICK_ID%7D%7D&callback_url=%7B%7BCALLBACK_URL%7D%7D&sign=%7B%7BSIGN%7D%7D&redirect=false&callType=v3&md5_imei=%7B%7BIMEI_MD5%7D%7D&android_id=%7B%7BANDROID_ID%7D%7D&af_lang=%e4%b8%ad%e6%96%87)</u>
 
 预配置的AppsFlyer归因链接里的参数与百度搜索广告后台对应的参数结构和含义：
 

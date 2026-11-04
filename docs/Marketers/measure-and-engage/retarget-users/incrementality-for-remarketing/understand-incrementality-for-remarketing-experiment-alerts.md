@@ -136,7 +136,8 @@ If the breach is relatively small, it's enough to make sure the control group ta
 
 Detailed targeting is a feature on certain ad networks that lets you fine-tune who sees your ads. This alert will appear if the campaign’s detailed targeting toggle is enabled. When enabled it will allow the campaign to target outside of the configured audience.
 
-**Actions to take:** Verify that the detailed targeting toggle is off on the partner-side campaign configuration.
+**Actions to take:**  
+Verify that the detailed targeting toggle is off on the partner-side campaign configuration.
 
 <div id="low-activity" />
 

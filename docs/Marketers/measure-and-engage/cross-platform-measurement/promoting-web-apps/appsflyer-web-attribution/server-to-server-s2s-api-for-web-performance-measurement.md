@@ -297,15 +297,18 @@ All personal data fields must be SHA256-hashed before sending. Normalize text (l
 
 The Web SDK and Segment are two separate, parallel paths into AppsFlyer, not one feeding the other: the Web SDK keeps sending visits, which carry the attribution parameters, and Segment sends events for properties that don't have the SDK. Neither path knows about the other; AppsFlyer is where they meet, joining a visit to its events using the identifier you send on both.
 
-Web SDK - sends visits
-
-Segment - sends events
-
-S2S API
-
-Joined by `appsflyer_id` or `customer_user_id`
-
-AppsFlyer - visit + event, joined
+```mermaid
+flowchart LR
+  sdk["Web SDK - sends visits"] --> join["Joined by appsflyer_id or customer_user_id"]
+  seg["Segment - sends events"] --> s2s["S2S API"] --> join
+  join --> af["AppsFlyer - visit + event, joined"]
+  classDef src fill:#e8f1fb,stroke:#7ea6d8,color:#1f3b5c
+  classDef mid fill:#ececec,stroke:#c8c8c8,color:#333333
+  classDef dst fill:#d6f5dd,stroke:#5cb874,color:#14532d
+  class sdk,seg,s2s src
+  class join mid
+  class af dst
+```
 
 The Web SDK and Segment are two parallel paths into AppsFlyer, joined by a shared identifier.
 

@@ -39,7 +39,7 @@ In side-by-side, you view campaign performance using data provided by both frame
 
 **Data sharing limitation**: SKAN metrics in the Overview dashboard aren't available to ad networks and agencies.
 
-If SKAN metrics don't display in the dashboard, you must update the [table settings](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).
+<mark>If SKAN metrics don't display in the dashboard, you must update the [table settings](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).</mark>
 
 The side-by-side view provides insights into campaign metrics. Use it to evaluate campaign performance metrics in terms of:
 
