@@ -35,7 +35,7 @@ x-zendesk:
 
 ### 어떻게 작동하나요?
 
-1. 앱스플라이어는 Firebase Cloud Messaging(FCM)과 Apple 푸시 알림 서비스(APNS)에 매일 API 요청을 보냅니다.
+1. <span class="af-ol-a"></span>앱스플라이어는 Firebase Cloud Messaging(FCM)과 Apple 푸시 알림 서비스(APNS)에 매일 API 요청을 보냅니다.
 2. FCM과 APNS는 앱이 지정된 디바이스에 아직 설치되어 있는지 확인하기 위해 무음 푸시 알림을 발송합니다.
 3. 응답이 앱이 삭제되었다고 표시되는 경우(FCM 및 APNS) 또는 지난 270일 동안 유저 액티비티가 기록되지 않은 경우(FCM만 해당) 앱 삭제가 기록됩니다.
 4. 앱스플라이어는 사용자를 유입시킨 원래 미디어 소스에 앱 삭제를 귀속시킵니다.

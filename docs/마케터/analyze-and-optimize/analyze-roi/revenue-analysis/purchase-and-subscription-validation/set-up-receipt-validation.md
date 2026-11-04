@@ -135,7 +135,7 @@ iOS 자격 증명을 설정하려면 다음 단계를 따르십시오.
 
 1. **서비스 계정**을 만들거나 찾으십시오.
 
-   1. Google Cloud 플랫폼의 **서비스 계정** 섹션으로 이동하고 **서비스 계정 만들기**를 클릭합니다.[![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
+   1. <span class="af-ol-a"></span>Google Cloud 플랫폼의 **서비스 계정** 섹션으로 이동하고 **서비스 계정 만들기**를 클릭합니다.[![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
    2. 서비스 계정 세부 정보를 작성합니다.[![](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)
    3. 이메일 주소를 복사합니다.[![](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)
    4. **만들기 및 계속**을 클릭합니다.
@@ -145,7 +145,7 @@ iOS 자격 증명을 설정하려면 다음 단계를 따르십시오.
       [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
 2. 서비스 계정 개인 키 다운로드:
 
-   1. Google 클라우드 플랫폼에서 **서비스 계정** 섹션으로 이동하여 원하는 계정(지금 만든 계정)을 목록에서 찾고 **다른 작업** 아이콘을 클릭합니다.
+   1. <span class="af-ol-a"></span>Google 클라우드 플랫폼에서 **서비스 계정** 섹션으로 이동하여 원하는 계정(지금 만든 계정)을 목록에서 찾고 **다른 작업** 아이콘을 클릭합니다.
    2. **키 관리**를 클릭합니다.[![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
    3. **키 추가** > **새 키 만들기**를 클릭합니다.
 

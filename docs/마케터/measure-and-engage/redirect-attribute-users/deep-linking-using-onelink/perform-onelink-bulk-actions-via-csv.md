@@ -28,7 +28,7 @@ You can create, view, and edit links generated in bulk. These links are organize
 
 1. In AppsFlyer, go to **Engage** > **Bulk links**.
 2. You will see an intro page with one of the following buttons:
-   1. **Get Started** - Click to create your first collection.
+   1. <span class="af-ol-a"></span> **Get Started** - Click to create your first collection.
    2. **Create a OneLink template** - Make sure you have at least one OneLink template in your account, and a Growth/Enterprise plan. See <Anchor target="_blank" href="/marketers/ko/docs/create-a-onelink-template">OneLink templates</Anchor>.
    3. **Upgrade** - Bulk links are available with the Enterprise or Growth plan. Contact your CSM or write to [hello@appsflyer.com](mailto:hello@appsflyer.com) about upgrading your package.
 
@@ -67,7 +67,7 @@ Creating a new collection is available when the [monthly usage](#managing-your-b
 
 1. Click **New collection**.
 2. Follow the instructions.
-   1. The process follows the same steps as [Creating your first collection](/docs/perform-onelink-bulk-actions-via-csv#creating-your-first-collection).
+   1. <span class="af-ol-a"></span>The process follows the same steps as [Creating your first collection](/docs/perform-onelink-bulk-actions-via-csv#creating-your-first-collection).
 
 </Accordion>
 

@@ -82,7 +82,7 @@ x-zendesk:
    > 파트너와 작업하는 동안에는 토글이 켜져(활성화) 있어야 합니다.
 
 6. **고객 ID**를 입력합니다. Google Ads Manager에서 불러올 수 있습니다.
-   1. Google Ads 계정에 로그인합니다.
+   1. <span class="af-ol-a"></span>Google Ads 계정에 로그인합니다.
    2. 오른쪽 상단에서 Google 계정 아이콘을 클릭하고 고객 ID가 표시되는 위치까지 아래로 스크롤합니다.
    3. 다음 중 하나를 수행하십시오:
       * 앱 캠페인을 운영하는 여러 Google Ads 계정이 있는 경우, 계정 간 전환 추적을 위해 관리자 계정(MCC)의 고객 ID를 사용해야 합니다. 고객 ID 필드와 MCC 고객 ID 텍스트 상자에 MCC ID(특정 계정의 고객 ID가 아님)를 붙여넣고 두 상자에 동일한 ID를 입력합니다.  자세한 내용은 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">구글의 MCC 계정 구성에 대한 지침</Anchor>을 참조하십시오.

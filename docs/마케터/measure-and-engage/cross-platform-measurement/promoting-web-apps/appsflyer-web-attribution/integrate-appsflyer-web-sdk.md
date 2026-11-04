@@ -265,7 +265,7 @@ SDK가 페이지 로드 당 한 번 로드되었는지 확인하고 GTM 우선 �
      6. 필요에 따라 페이지 및 트리거 조건을 설정하십시오.
      7. **저장**을 클릭하세요.
      8. 트리거를 앱스플라이어 웹 SDK 태그에 연결하십시오.
-        1. GTM 기본 창에서 태그를 선택하십시오.합니다.
+        1. <span class="af-ol-a"></span>GTM 기본 창에서 태그를 선택하십시오.합니다.
         2. 이전에 생성한 태그를 선택하십시오.
         3. 트리거 패널에서 펜 아이콘을 클릭하십시오.
         4. 이전에 생성한 페이지 뷰 트리거를 선택하십시오.
@@ -575,7 +575,7 @@ window.onload = function(){
 
 #### 2. GTM 변수 및 트리거 구성
 
-1. GTM에서 **Variables** > **Configure를** 클릭하고 Built-In Variables 목록에서 **Click Element를** 활성화합니다.
+1. <span class="af-ol-a"></span>GTM에서 **Variables** > **Configure를** 클릭하고 Built-In Variables 목록에서 **Click Element를** 활성화합니다.
 2. 새로운 사용자 정의 변수를 만듭니다(Type: **모든 요소**).
 3. 새 **트리거** 만들기:
    * 트리거 유형: **클릭 - 모든 요소**.
@@ -586,7 +586,7 @@ window.onload = function(){
 
 #### 3. Interaction 태그 만들기
 
-1. 결제 작업을 위해 새 **Custom HTML** 태그를 생성합니다.
+1. <span class="af-ol-a"></span>결제 작업을 위해 새 **Custom HTML** 태그를 생성합니다.
 2. 인터랙션 스크립트를 붙여넣으십시오:
 
    ```html

@@ -102,7 +102,7 @@ x-zendesk:
            새로운 포스트백 설정을 위해서는 **광고 계정 ID**와 **액세스 토큰**을 모두 입력해야 합니다(이들은 Pinterest에서 얻을 수 있습니다). **이 값 중 하나라도 누락되면 포스트백이 실패합니다**. Pinterest **활성 통합** 페이지에 두 매개변수가 올바르게 입력되었는지 확인해 주십시오. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/pinterest-create-a-mobile-app-integration#인앱-이벤트-설정">KB 문서</Anchor>를 참조하십시오.  
            원활한 전환을 위해 귀하의 협조가 중요합니다. 지원해 주셔서 감사합니다.
         2. **앱 내 이벤트 매핑 및 포스트백 설정**
-           1. 현재 Pinterest 이벤트 이름을 **파트너 이벤트 이름** 섹션의 새로운 Pinterest 전환 API 이벤트 이름으로 교체하고 매핑해 주십시오. 예를 들어, 현재 파트너 이벤트 섹션에서 `pin_add_to_cart`를 사용하고 있다면, 대신 `add_to_cart`으로 교체하십시오. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/pinterest-create-a-mobile-app-integration#inapp-event-postbacks">KB 문서</Anchor>를 참조하십시오.
+           1. <span class="af-ol-a"></span>현재 Pinterest 이벤트 이름을 **파트너 이벤트 이름** 섹션의 새로운 Pinterest 전환 API 이벤트 이름으로 교체하고 매핑해 주십시오. 예를 들어, 현재 파트너 이벤트 섹션에서 `pin_add_to_cart`를 사용하고 있다면, 대신 `add_to_cart`으로 교체하십시오. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/pinterest-create-a-mobile-app-integration#inapp-event-postbacks">KB 문서</Anchor>를 참조하십시오.
 
         | 이벤트 이름 (구형) | 이벤트 이름 (새 전환 API) |
         | --- | --- |
