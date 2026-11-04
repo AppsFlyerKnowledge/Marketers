@@ -103,7 +103,7 @@ Configure the mapping of in-app event postbacks that are sent to Snapchat Ads we
 4. Set the **In-app event postback window**. For more information, see i<Anchor target="_blank" href="/marketers/fr/docs/in-app-event-postback-configuration#in-app-event-postback-window">n-app event postback window</Anchor>.
 5. Click **Save integration**.
 6. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
-   1. From the top-left corner, under the partner name, click the app name to open the list of apps.
+   1. <span class="af-ol-a"></span>From the top-left corner, under the partner name, click the app name to open the list of apps.
    2. Select a different app from the drop-down list.
    3. Repeat the integration steps for the selected app.
 

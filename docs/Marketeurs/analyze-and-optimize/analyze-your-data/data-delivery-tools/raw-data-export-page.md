@@ -205,7 +205,7 @@ Vous pouvez créer un rapport personnalisé en choisissant les filtres et champs
    * **Géo :** [Facultatif] seuls les événements attribués aux zones géo sélectionnées seront inclus dans le rapport.
    * **Filtre propre à un type de rapport** : chaque type de rapport peut avoir son propre filtre pour lequel vous pouvez sélectionner un critère.
 6. [Optionnel] : les rapports sont automatiquement remplis avec les champs requis. Vous pouvez ajouter ou supprimer un champ comme suit :
-   1. Ouvrez l’onglet **Champs du rapport**, la liste des champs sélectionnés s'affiche. Vous ne pouvez pas modifier la sélection des champs obligatoires.
+   1. <span class="af-ol-a"></span>Ouvrez l’onglet **Champs du rapport**, la liste des champs sélectionnés s'affiche. Vous ne pouvez pas modifier la sélection des champs obligatoires.
    2. Sélectionnez ou supprimez les champs selon vos besoins.
    3. [Facultatif] Définissez l’**ordre des champs du rapport (CSV)** pour créer la suite de colonnes.
    4. [Option] Cliquez sur **Restaurer les valeurs par défaut** si nécessaire.

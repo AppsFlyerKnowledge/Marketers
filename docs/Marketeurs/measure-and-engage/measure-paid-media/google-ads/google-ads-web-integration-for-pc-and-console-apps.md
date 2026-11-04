@@ -245,7 +245,7 @@ In Google Ads, you can either select from the predefined list of conversion acti
 7. For **Goal and action optimization**, select a category to map your conversion action into.  
    **Note**: Google ads campaign optimization is per category; not per specific action). If you only want your campaigns to optimize to a single action, make sure to map only that action to this category. For example, if you want your campaign to optimize towards the "install" action, make sure to map the "install" action to its own category, for example, “Other.” You’ll then be able to select this category as the campaign goal when creating the campaign.
 8. Copy the conversion action ID from Google Ads and enter it in the **mapped to partner event** field. The **Conversion Action ID** is used as the partner event ID when mapping the AppsFlyer event name to the partner event ID  in the in-app event postbacks setup. To copy the conversion action ID from Google Ads perform the following:
-   1. In Google Ads **Conversion Goals** page, click the conversion action you created.
+   1. <span class="af-ol-a"></span>In Google Ads **Conversion Goals** page, click the conversion action you created.
    2. In the Conversion Action **Details** page, copy the **Conversion Action ID** from the URL parameter `ctId=` and paste it.
 9. Click **Create and continue**.
 10. Click **Finish**.

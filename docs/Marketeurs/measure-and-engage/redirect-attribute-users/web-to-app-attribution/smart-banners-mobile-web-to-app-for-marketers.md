@@ -174,14 +174,14 @@ Le groupe de bannières contient une ou plusieurs bannières. De là, vous pouve
 
 1. Dans le tableau de bord AppsFlyer, rendez-vous dans **Expériences et deep linking** > **Web-to-app** > **Bannières intelligentes**.
 2. **Pour créer un premier groupe de bannières**
-   1. Sur le côté gauche, cliquez sur **Ajouter un groupe de bannières**.
+   1. <span class="af-ol-a"></span>Sur le côté gauche, cliquez sur **Ajouter un groupe de bannières**.
    2. Complétez les étapes 5 et suivantes.
 3. **Pour créer des groupes de bannières supplémentaires**
-   1. Ouvrez l'onglet **Studio**.
+   1. <span class="af-ol-a"></span>Ouvrez l'onglet **Studio**.
    2. Cliquez sur **+ Nouveau.**
    3. Complétez les étapes 5 et suivantes.
 4. **Pour dupliquer un groupe de bannières**
-   1. Cliquez sur l'icône **Dupliquer** (à côté de l'icône *Supprimer*).
+   1. <span class="af-ol-a"></span>Cliquez sur l'icône **Dupliquer** (à côté de l'icône *Supprimer*).
 5. Saisissez un **nom de groupe de bannières unique**. Le nom doit refléter un thème commun aux bannières à définir dans le groupe de bannières (par exemple, l'app qui est promue).
 6. Sélectionnez le template OneLink pour le groupe de bannières.
 7. [facultatif] Définissez un **schéma d'URI** pour le groupe de bannières comme solution de secours pour les utilisateurs des liens universels et des liens d'app Android. Ceci est rarement nécessaire car, par défaut, la valeur est prise dans le template OneLink. Définissez cette option pour le groupe de bannières uniquement si vous avez besoin d'une valeur différente de celle du template.
@@ -228,7 +228,7 @@ Le groupe de bannières contient une ou plusieurs bannières. De là, vous pouve
     * Android ou iOS uniquement.
 16. [Facultatif] **Planifiez** l'activation du groupe de bannières : démarrez immédiatement (par défaut) ou définissez une campagne à durée limitée.
 17. [Facultatif] Définissez les **emplacements** pour lesquels le groupe de bannières est activé.
-    1. Sélectionnez **Monde entier** pour diffuser ce groupe de bannières à tous les utilisateurs. Si besoin, vous pouvez exclure les visiteurs provenant de différentes régions, pays ou états.
+    1. <span class="af-ol-a"></span>Sélectionnez **Monde entier** pour diffuser ce groupe de bannières à tous les utilisateurs. Si besoin, vous pouvez exclure les visiteurs provenant de différentes régions, pays ou états.
     2. Sélectionnez **Choisir une région spécifique** pour que ce groupe de bannières ne s'affiche que pour les utilisateurs d'une ou plusieurs régions en particulier.
 18. [Facultatif] Définissez **Afficher sur les pages**. Cela correspond aux pages sur lesquelles le groupe de bannières peut afficher pour les visiteurs :
     * [Par défaut] **Afficher sur toutes les pages** du site web.  
@@ -283,7 +283,7 @@ Le panneau *Targeting et comportement* affiche les paramètres que vous avez dé
 1. Cliquez sur **Créer une bannière** pour ouvrir la page **Modifier les bannières**.
 2. Définissez le **nom** de la bannière.
 3. Cliquez sur **Concevoir la création** :
-   1. Cliquez sur **Concevoir la création** pour créer votre bannière.
+   1. <span class="af-ol-a"></span>Cliquez sur **Concevoir la création** pour créer votre bannière.
 
       Une fenêtre permettant de choisir un template s'ouvre.
 
