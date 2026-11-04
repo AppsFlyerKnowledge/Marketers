@@ -143,7 +143,7 @@ Configure o mapeamento de postbacks de eventos in-app enviados para o Google Ads
 | Nome do parâmetro | Descrição |
 | --- | --- |
 | **Evento AppsFlyer** | O nome do evento, conforme recebido do SDK integrado no aplicativo ou de eventos de servidor para servidor.<ul><li>Clique em **adicionar item**, insira o nome do evento e clique em ![check.png](https://files.readme.io/66d595d0ac8a01489ce810bbd3865fca2556342086dc6b20f26fa3d7b7e3afc2-19124971382289.png).</li></ul> |
-| **mapeado para evento do parceiro** | O Conversion Action ID de cada evento, conforme definido do lado do parceiro.<ol><li>Na página de **Metas de Conversão** do Google Ads, clique na ação de conversão que você criou.</li><li>Na página de **Detalhes** da Ação de Conversão, copie o **Conversion Action ID** do parâmetro `ctId=` da URL.</li><li>Volte para a AppsFlyer e cole esse dado. Por exemplo, se `ctid=123456789`, cole `123456789`.</li></ol> |
+| **mapeado para evento do parceiro** | O Conversion Action ID de cada evento, conforme definido do lado do parceiro.<ol><li><span class="af-ol-a"></span>Na página de **Metas de Conversão** do Google Ads, clique na ação de conversão que você criou.</li><li>Na página de **Detalhes** da Ação de Conversão, copie o **Conversion Action ID** do parâmetro `ctId=` da URL.</li><li>Volte para a AppsFlyer e cole esse dado. Por exemplo, se `ctid=123456789`, cole `123456789`.</li></ol> |
 | **para usuários de** | **Somente esse parceiro:** Os postbacks de eventos in-app são enviados apenas para eventos atribuídos a esse parceiro, ou seja, o usuário que realizou esses eventos chegou ao seu app a partir desse parceiro em específico. |
 | **incluindo** | **Valores e receita:** Todos os parâmetros de eventos, incluindo o valor da receita (se existir), são enviados no postback. |
 
@@ -263,7 +263,7 @@ No Google Ads, você pode selecionar ações e metas de conversão a partir da l
    >
    > Se a **importação manual via API ou uploads** não estiver disponível:
    >
-   > 1. Selecione **CRM, arquivos ou outras fontes de dados** > **rastrear conversões a partir de cliques**.
+   > 1. <span class="af-ol-a"></span>Selecione **CRM, arquivos ou outras fontes de dados** > **rastrear conversões a partir de cliques**.
    > 2. Na **fonte de dados**, selecione **pular etapa e configurar a fonte de dados mais tarde**.
 
 5. Clique em **continuar**.  

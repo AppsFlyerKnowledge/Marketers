@@ -75,7 +75,7 @@ Para saber como definir o tipo de integração, consulte: Conectar-se a parceiro
 1. **Ingestão de dados:** O relatório pode se originar do conector de ad revenue SDK ou da solicitação da API S2S (consulte a seção acima).
 2. **Processamento de dados**: O ROI360 Ad Revenue da AppsFlyer realiza o seguinte:
 
-   1. Normalização de dados,
+   1. <span class="af-ol-a"></span>Normalização de dados,
    2. Atribuição à fonte de instalação e enriquecimento de dados,
    3. Geração de eventos de receita de anúncios,
    4. Os eventos são agregados a nível de dispositivo
@@ -186,7 +186,7 @@ Para saber como definir o tipo de integração, consulte: Conectar-se a parceiro
 1. **Ingestão de dados:** O relatório pode se originar ou do SDK ou da solicitação da API S2S (veja seção acima).
 2. **Processamento de dados:** O ROI360 Ad Revenue da AppsFlyer realiza o seguinte:
 
-   1. Normalização de dados,
+   1. <span class="af-ol-a"></span>Normalização de dados,
    2. Atribuição à fonte de instalação e enriquecimento de dados,
    3. Geração de eventos de receita de anúncios,
    4. Os eventos são agregados a nível de dispositivo
@@ -322,7 +322,7 @@ Para saber como definir o tipo de integração, consulte: Conectar-se a parceiro
 
 1. **Ingestão de dados:** Os dados do relatório se originam de dados a nível de impressão enviados pelo conector ROI360 Ad Revenue SDK e exigem uma integração do tipo SDK.
 2. **Processamento de dados**: O ROI360 Ad Revenue da AppsFlyer realiza o seguinte:
-   1. Normalização de dados,
+   1. <span class="af-ol-a"></span>Normalização de dados,
    2. Atribuição à fonte de instalação e enriquecimento de dados,
    3. Geração de eventos de receita de anúncios a nível de impressão.
 3. **Entrega de dados**: Os eventos de impressão são gravados em arquivos divididos por pastas de acordo com a hora da ocorrência. Cada pasta contém somente impressões que ocorreram durante aquela hora.

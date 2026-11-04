@@ -117,7 +117,7 @@ Para criar um link ID, é necessário **acesso de administrador** à conta do Go
    > Os dados de conversão de reinstalação são **apresentados como session\_start** no painel do Google Ads. Na AppsFlyer, isso é atribuído e visto como uma reatribuição.
 
 10. Configure a **atribuição de reengajamento**:
-    1. <Anchor target="_blank" href="/marketers/pt/docs/app-settings#reengagement-attribution">Habilite o retargeting nas configurações do aplicativo</Anchor>.
+    1. <span class="af-ol-a"></span><Anchor target="_blank" href="/marketers/pt/docs/app-settings#reengagement-attribution">Habilite o retargeting nas configurações do aplicativo</Anchor>.
     2. Ative a atribuição de reengajamento nas configurações de integração do Google Ads.
     3. Configure a **janela de lookback de reengajamento por click-through**, que é o período de tempo que se inicia com o clique no anúncio, durante o qual o aplicativo deve ser iniciado para que o clique seja registrado como um reengajamento. Selecione uma janela de lookback em horas ou dias e configure a barra deslizante para o valor desejado.
     4. Habilite a **atribuição de reengajamento para view-through**.  
